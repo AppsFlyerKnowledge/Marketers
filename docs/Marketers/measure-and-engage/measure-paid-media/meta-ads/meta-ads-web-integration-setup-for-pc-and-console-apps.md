@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to integrate Meta Web for PC and console apps with AppsFlyer and set up campaigns in Meta Web.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta ads integration setup</Anchor> page.
+
+<div id="overview" />
 
 ## Overview
 
@@ -34,9 +38,13 @@ This article contains information and steps on how to set up and use Meta Web fo
 * [Setting up Meta Web in AppsFlyer](#setting-up-meta-web-in-appsflyer).
 * [Setting up campaigns in Meta for PC and console apps](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#setting-up-campaigns-in-meta-web-for-pc-and-console-apps).
 
+<div id="prerequisite" />
+
 ### Prerequisite
 
 Before activating the Meta Web integration, make sure you have a [business account in Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Activating partner in AppsFlyer
 
@@ -48,6 +56,8 @@ Before activating the Meta Web integration, make sure you have a [business accou
 4. In the **Integration** tab, turn on **Activate partner**.  
    **Note:** The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
 5. Complete the configuration using the relevant tabs, as described in the next section.
+
+<div id="setting-up-meta-web-in-appsflyer" />
 
 ## Setting up Meta Web in AppsFlyer
 
@@ -61,9 +71,13 @@ The integration with Meta Web only supports sending postbacks for installs and i
 
 The **Integration** tab includes a number of sections, as described below.
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 To configure the integration, you must first turn on the **Activate partner** toggle.
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -76,6 +90,8 @@ To configure the integration, you must first turn on the **Activate partner** to
 * **Access token:** Enter the access token. To retrieve it, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
 * **Limit Meta ads use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">data protection laws</Anchor>.  
   **Note:** Complying with CCPA privacy regulations limits the data coming from Meta ads users based in California.
+
+<div id="enable-view-through-attribution" />
 
 #### Enable view-through attribution
 
@@ -93,12 +109,16 @@ When a user clicks a Meta Web ad and lands on a <Anchor target="_blank" href="/m
 6. Scroll to the **View-through attribution** section and set the **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply your settings.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Postbacks for installs are automatically sent to Meta Web. In the **For Users From** field, select one of the following:
 
 * **This Partner Only** to ensure that in-app event postbacks are sent exclusively for events performed by users who originated from this partner.
 * **All media sources, including organic,** are to ensure that in-app event postbacks are sent for events performed by users who originated from this partner, other partners, or from organic sources.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -161,6 +181,8 @@ Currently, permissions aren't granted to Meta Web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-meta-web-for-pc-and-console-apps" />
+
 ## Setting up campaigns in Meta Web for PC and console apps
 
 **When you set up your new campaign**:
@@ -175,20 +197,28 @@ Currently, permissions aren't granted to Meta Web.
   * Web landing page (recommended when you have an app on multiple platforms)
   * Store URL (recommended when your app is in a single app store, on a single platform)
 
+<div id="view-web-to-app-attribution-data" />
+
 ## View web-to-app attribution data
 
 Although web-based conversion events are sent to Meta under the original `metaweb_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `Facebook Ads` PID. This applies to both primary conversion events and conversion assist events.
 
 This unified reporting view lets you analyze both web and app campaigns performance in one place, including full web and mobile cost reporting.
 
+<div id="view-in-the-dashboard" />
+
 ### View in the dashboard
 
 All Meta web-to-app attributions appear under `Facebook Ads` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Meta Ads data.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### View in raw data and API reports
 
 * **Raw data exports and API responses** include the `Facebook Ads` PID in the `media_source` field for Meta web activity. To verify web campaign setup details, refer to the `original_url` field that shows `metaweb_int` as the PID used during the creation of web campaigns.
 * **Postback reports** show `metaweb_int` as the original media source to which the postback was sent.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

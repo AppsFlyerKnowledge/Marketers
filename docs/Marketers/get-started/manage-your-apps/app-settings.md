@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the settings that impact the attribution and analytics of your app across all media sources.
 
+<div id="app-settings" />
+
 ## App Settings
 
 **Access:**
@@ -39,9 +41,13 @@ x-zendesk:
 2. View settings and make changes as needed on the App Settings page.
 3. Click **Save settings.**
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > You can also change many of these settings for multiple apps at once, instead of one at a time. Look for the **Apply to additional apps** button next to a changed setting. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.
+
+<div id="general-app-settings" />
 
 ### General app settings
 
@@ -131,7 +137,11 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### Attribution settings
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -146,6 +156,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>SEO (organic search) and AEO mobile app re-engagement attribution | Related reading: <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Organic search attribution</Anchor><br /><br />**To turn on SEO / AEO attribution:**<ul><li>In AppsFlyer, from the side menu, select **Settings** > **App settings**, turn on **SEO (organic search) and AEO mobile app re-engagement attribution.**</li></ul>You can also change this setting for multiple apps at once. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
 | <span id="uninstall-measurement"></span>Uninstall measurement | <Anchor target="_blank" href="/marketers/docs/measure-uninstalls">Measurement of uninstalls</Anchor> relates to installs occurring when uninstall measurement is on.<br /><br />This setting is available only to iOS and Android apps.<br /><br />**To enable uninstall measurement:**<ol><li>Complete per operating system the following:<ul><li>**iOS**: Apps that implement the iOS uninstall attribution feature need to upload the P12 certificate here.</li><li>**Android**: Apps require a Firebase/GCM Server Key to be defined here for Android uninstall attribution.</li></ul></li><li>Turn on **Uninstall measurement**.</li><li>Click **Save settings**</li></ol>**To stop uninstall measurment:**<ol><li>Turn off **Uninstall measurement**.</li><li>Click **Save settings.**</li></ol>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>. |
 
+<div id="advanced-settings" />
+
 ### Advanced settings
 
 | Setting | Description |
@@ -155,6 +167,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>iOS 10.3 redirect fallback | [Deprecated] For iOS 10.3+. We've simplified the flow for iOS users and this parameter is no longer in use. <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">iOS redirections</Anchor>.<br /><br />This option is available only to iOS apps. |
 | <span id="change-app-name"></span>Change app name | <ul><li>The name of the app, which is then displayed throughout the dashboard and data reports. This is useful if you have different versions of the same app, for example, for regional distribution reasons.</li><li>This change impacts the display of the app. The app ID, used to identify the app when using various AppsFlyer APIs, **remains the same**.</li><li>Names are limited to 50 characters.</li></ul> |
 | <span id="outofstore-app-url"></span>Out-of-store app URL | <ul><li>Set the app download URL used as the default redirect destination in attribution links associated with the app.</li><li>This field is mandatory for Android apps specified as out-of-store apps.</li><li>Once set, the URL will be applied as the default redirect destination within about an hour.</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

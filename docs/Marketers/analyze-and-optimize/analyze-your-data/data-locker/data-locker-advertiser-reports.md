@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Aggregate and raw data reports available via Data Locker
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## Reports available via Data Locker for advertisers
 
 <table><colgroup><col/><col/><col/></colgroup><thead><tr><th>Data type</th><th>Report group</th><th>Data Locker subscription required</th></tr></thead><tbody><tr><td>Raw</td><td>User journey—raw data</td><td>Yes (2)</td></tr><tr><td>Raw</td><td>Protect360</td><td>Yes</td></tr><tr><td>Raw</td><td>People-Based Attribution (PBA) </td><td>No </td></tr><tr><td>Raw</td><td>Incrementality</td><td>No </td></tr><tr><td>Raw</td><td>SKAN</td><td>No (1)</td></tr><tr><td>Raw</td><td>Revenue</td><td><p>Ad revenue single version report requires a Data Locker subscription.</p><p>All other reports require a ROI360 Advanced package subscription.</p></td></tr><tr><td>Raw</td><td>CTV, PC, and console apps</td><td>Yes</td></tr><tr><td>Aggregated</td><td>Cohort analytics</td><td>No (1)</td></tr><tr><td>Advanced aggregated</td><td>Cohort analytics</td><td>No (3)</td></tr><tr><td>Aggregated</td><td>Creative Optimization</td><td><p>No (1)</p><p>Requires a Creative Optimization Premium subscription plan.</p></td></tr><tr><td>Aggregated</td><td>SSOT</td><td>No (1)</td></tr><tr><td colspan="3"><p>(1) If you don't have a Data Locker subscription, you must provide <a href="./data-locker-for-marketers#storage-options" target="_blank">storage owned by you</a>.</p><p>(2) Except for Cross-platform engagements.</p><p>(3) Available with Data Locker subscription or with analytics API suite.</p></td></tr></tbody></table>
@@ -41,6 +43,8 @@ Data Locker report availability varies by report type. Depending on the report, 
 | Versioned | Reports in which the same day's data can be published multiple times as newer or more complete data becomes available, with the latest version being the most accurate. | <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports#ad-revenue-versioned">Attributed ad revenue report</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## Raw data reports
 
@@ -158,6 +162,8 @@ See <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-data-via-da
 
 </Accordion>
 
+<div id="advanced-raw-data-reports-beta" />
+
 ## Advanced raw data reports (Beta)
 
 Advanced Reports introduce a new generation of raw data reports designed to provide structured, validated, and **AI-ready datasets**. They enable the ingestion and analysis of the **entire user journey, from the first engagement to conversion and post-install activity, using just three reports**.  
@@ -185,6 +191,8 @@ The Conversions report provides a comprehensive view of all app installations, i
 | --- | --- | --- | --- |
 | User acquisition and retargeting | Conversions | 1–3 hours | ✅ |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * Reinstalls are not included in this report.
@@ -202,11 +210,15 @@ The End User Events report captures detailed in-app event data, including sessio
 | --- | --- | --- | --- |
 | User acquisition and retargeting | End user events | 1–3 hours | ✅ |
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > For extended platform apps, including CTV, PC, and console, retargeting end-user events are not included.
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## Aggregated reports
 

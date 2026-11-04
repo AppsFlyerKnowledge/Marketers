@@ -22,6 +22,8 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/4410472474001-Smart-Banners-website-code-implementation-for-developers
 ---
+<div id="note" />
+
 > 📘 **Note**
 >
 > The original article appearing in the URL is deprecated.

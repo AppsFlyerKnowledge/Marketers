@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** The OneLink Standalone Deep Linking Suite gives you deep linking and redirection for owned media journeys (email-to-app, web-to-app, QR-to-app, social-to-app, referrals, SMS/text, etc.), without requiring a paid media attribution package.
 
+<div id="about-the-onelink-standalone-deep-linking-suite" />
+
 ## About the OneLink Standalone Deep Linking Suite
 
 The Standalone Deep Linking Suite is built for teams that need **reliable, scalable deep linking, redirection, and attribution for owned channels**, without integrations involving paid media channels and partner postbacks.
@@ -31,6 +33,8 @@ It is available in three subscription plans:
 * Standard
 * Advanced
 * Premium
+
+<div id="whats-included" />
 
 ### What’s included
 
@@ -42,7 +46,11 @@ All Standalone Deep Linking Suite plans support core owned media use cases, incl
 
 The plans differ mainly by scale, link management capabilities, and access to advanced features such as branded domains, bulk link creation, Smart Banners, OneLink API, ESP integration, and Data Locker.
 
+<div id="standalone-deep-linking-suite-plans-comparison" />
+
 ## Standalone Deep Linking Suite plans comparison
+
+<div id="key-differences" />
 
 ### Key differences
 
@@ -51,6 +59,8 @@ The plans differ mainly by scale, link management capabilities, and access to ad
 | **Standard** | Getting started with owned deep linking | Includes core deep linking and deferred deep linking capabilities for owned media journeys, as well as Smart Script and User Invites. |
 | **Advanced** | Scaling link operations across teams | Includes everything in **Standard**, plus bulk link creation, branded domains, Smart Banners, OneLink API (up to 100K requests per month), and UI raw data export. |
 | **Premium** | Running advanced owned deep linking programs | Includes everything in **Advanced**, plus higher OneLink API limits (up to 7.5M requests per month), ESP integration, and Data Locker. |
+
+<div id="feature-comparison" />
 
 ### Feature comparison
 
@@ -66,6 +76,8 @@ The plans differ mainly by scale, link management capabilities, and access to ad
 | Data Locker | **x** | **x** | ✓ |
 | UI raw data export | **x** | ✓ | ✓ |
 | Customer Success Manager | **x** | ✓ | ✓ |
+
+<div id="notes" />
 
 > 📘 **Notes**
 >

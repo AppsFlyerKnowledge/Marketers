@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **At a glance:** Export Web Performance Measurement data from Data Locker in two report types that enable you to analyze website performance at the right level. Use End User Events to analyze all visits and events, and use Conversions to count and attribute unique conversion anchors (first visits, revisits, and user-acquisition events).
 
+<div id="warning" />
+
 > ❗️ **Warning**
 >
 > **Important!** You must have a Data Locker subscription to use the Web Performance Measurement reports in Data Locker.
+
+<div id="about-the-web-performance-measurement-reports" />
 
 ## About the Web Performance Measurement reports
 
@@ -45,6 +49,8 @@ Data Locker provides two reports for Web Performance Measurement, **End User Eve
 
 The Data Locker Advanced Reports interface also lists **Engagements** and **End User Events Cross-Platform** as separate Web Performance Measurement report options. This article covers **End User Events** and **Conversions**, the two reports used for most Web Performance Measurement analysis.
 
+<div id="select-a-web-performance-measurement-report" />
+
 ## Select a Web Performance Measurement report
 
 Before you export Web Performance Measurement data, select the relevant report in Data Locker.
@@ -53,6 +59,8 @@ Before you export Web Performance Measurement data, select the relevant report i
 2. Click the **Advanced Reports** tab.
 3. Select **End User Events** or **Conversions** from the list of Web Performance Measurement reports.
 4. Click **Save configuration**.
+
+<div id="report-fields" />
 
 ## Report fields
 
@@ -63,12 +71,16 @@ To learn which fields are contained in the reports, download a sample for each r
 
 The sample report includes all report fields and their values. For the definitions of the fields, see <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">the field dictionary</Anchor>.
 
+<div id="report-timing-and-data-freshness" />
+
 ## Report timing and data freshness
 
 Use these details to understand when new data is added and when recent events become available in the report.
 
 * **Report frequency**: New data is added every hour.
 * **Data freshness**: Events typically appear in the report within 2 to 3 hours of occurrence.
+
+<div id="heres-how-each-batch-works" />
 
 ### Here’s how each batch works:
 
@@ -79,9 +91,13 @@ Use these details to understand when new data is added and when recent events be
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### When will these events appear in the report?
 
 Events are written to reports **after processing finishes**. So, for example, events from **08:00–09:00**, attributed in the 10:00 AM batch, will appear in the **11:00 AM report version**.
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### Example: What the 10:00 AM batch does
 
@@ -91,9 +107,13 @@ Events are written to reports **after processing finishes**. So, for example, ev
 | 2026-01-28 | 12:00 | 09:00 – 10:00 | 10:00–10:30 |
 | 2026-01-28 | 13:00 | 10:00 – 11:00 | 10:00-11:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## Download report data from your cloud bucket
 
 For more information on how to download report data from your cloud bucket, see <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#folder-structure">the Data Locker Folder structure</Anchor>.
+
+<div id="bi-developer-considerations" />
 
 ## BI developer considerations
 
@@ -157,6 +177,8 @@ Apply the following filters to make sure your raw data queries are accurate. Fai
 
 * **Filter by Conversion Type (optional):** Include `WHERE conversion_type = 'USER_ACQUISITION'` or `WHERE conversion_type = 'RETARGETING'` to isolate attribution data based on campaign type.
 
+<div id="filter-summary-table" />
+
 #### Filter Summary table
 
 | Filter Requirement | SQL Logic | Implementation Context |
@@ -193,6 +215,8 @@ Use `COALESCE(customer_user_id, appsflyer_id_value)` whenever you need to:
 * Filter by specific users
 * Join tables by user
 * Calculate any user-level metrics
+
+<div id="example-count-distinct-users" />
 
 #### Example: Count distinct users
 
@@ -427,6 +451,8 @@ ORDER BY cohort_date, cohort_users DESC
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 The following fields are **not supported for web data** and will always be empty:
@@ -438,6 +464,8 @@ The following fields are **not supported for web data** and will always be empty
 | `platform_group` | conversions |
 | `app_version__conversion` | end\_user\_events |
 | All `__assist_*` fields | conversions |
+
+<div id="see-also" />
 
 ## See also
 

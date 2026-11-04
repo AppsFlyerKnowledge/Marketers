@@ -25,11 +25,15 @@ x-zendesk:
 
 Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
 
+<div id="disclaimer" />
+
 #### **Disclaimer**
 
 The information contained in this article is intended to assist in answering the Google Safety Section Questionnaire in relation **only** to what AppsFlyer processes on behalf of customers.
 
 It is provided for information and convenience purposes only. Customers should work closely with legal and other professional advisors to determine exactly how Google policies apply to them and should adapt their responses in line with their specific configurations and uses.
+
+<div id="introduction" />
 
 ## Introduction
 
@@ -37,9 +41,13 @@ As of April 2022, app developers will be required to provide information related
 
 The information provided by each app will be displayed in the Google store listing helping end-users better understand an app’s privacy practices.
 
+<div id="audience" />
+
 ## Audience
 
 All app developers will be required to complete the safety section questionnaire and publish a link to a privacy policy even if they do not collect any of the data types specified by Google.
+
+<div id="google-safety-form-questionnaire" />
 
 ## Google safety form (questionnaire)
 
@@ -55,6 +63,8 @@ With respect to the use of AppsFlyer, app developers are reminded that they have
 
 App developers must respond to the questionnaire in accordance with their specific use cases, configurations, and partner integrations.
 
+<div id="data-collection-and-security" />
+
 ### Data collection and security
 
 In this section, you will be asked a few general yes/no questions:
@@ -64,6 +74,8 @@ In this section, you will be asked a few general yes/no questions:
 3. Do you provide a way for users to request that their data be deleted?
 
 With respect to your use of AppsFlyer, AppsFlyer encrypts all data in transit that is transmitted through the SDK. AppsFlyer also provides customers with the ability to delete specific end-user data through its OpenGDPR framework. For the data types collected, see the table in the [Data types](/docs/fill-out-google-safety-section-form#data-types) section.
+
+<div id="data-types" />
 
 ### Data types
 
@@ -104,13 +116,19 @@ Exceptions include the following:
 
 It is important to note that while AppsFlyer acts solely as a service provider on your behalf and per your instructions if you are sharing data with third-party networks (for example, through postbacks, SRN’s, and audiences ) this would be deemed sharing.  Therefore, each app developer will need to assess his configurations and partner integrations and respond accordingly.
 
+<div id="ephemeral-processing" />
+
 ## Ephemeral processing
 
 Ephemeral processing refers to data processed in memory, only for the period of time needed to process a specific action in real-time and for no other purpose. Given the nature of the AppsFlyer services, the data processed by AppsFlyer on your behalf is not processed ephemerally.
 
+<div id="user-choice" />
+
 ## User choice
 
 In general, the data collected is required to perform the services. With that said, app developers have the ability to subject any data collection to opt-in or opt-out controls.
+
+<div id="purpose" />
 
 ## Purpose
 
@@ -125,6 +143,8 @@ Google has provided a list of purposes from which app developers must choose as 
 | Fraud, prevention, security, and compliance | Yes |
 | Personalization | Select if you use the data for any type of product personalization |
 | Account management | Select if you use the data for the setup and management of user accounts |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Set up the integration with Google Analytics using custom dimensions.
 
+<div id="custom-dimensions-on-google-analytics" />
+
 ## Custom dimensions on Google Analytics
 
 There is another method for sending AppsFlyer's attribution data to Google analytics, that is set up on GA and not on AppsFlyer's dashboard.
+
+<div id="important" />
 
 > 🚧 **Important**
 >
@@ -39,6 +43,8 @@ There is another method for sending AppsFlyer's attribution data to Google analy
 
 Advertisers that use the new <Anchor target="_blank" href="/marketers/docs/google-analytics-ga4-integration">integration with Google Analytics</Anchor> don't need to use the custom dimensions method.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This method requires you to integrate GA SDK into your app.
@@ -46,9 +52,13 @@ Advertisers that use the new <Anchor target="_blank" href="/marketers/docs/googl
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">GA SDK for Android</Anchor>
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">GA SDK for iOS</Anchor>
 
+<div id="setting-media-source-as-a-custom-dimension-on-google-analytics" />
+
 ### Setting media source as a custom dimension on Google Analytics
 
 Google Analytics has a powerful tool to create user-level segmentation called custom dimensions. The custom dimension values are sent from mobile devices and your reports are generated, based on these dimensions from your Google Analytics dashboard.
+
+<div id="step-1-define-it-on-google-analytics" />
 
 ### Step 1: Define it on Google Analytics
 
@@ -65,6 +75,8 @@ Google Analytics has a powerful tool to create user-level segmentation called cu
    ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
 
    Repeat this step and create another dimension and call it **AppsFlyer Campaign**
+
+<div id="step-2-setting-and-sending-the-data-from-the-app" />
 
 ### Step 2: Setting and sending the data from the app
 
@@ -125,6 +137,8 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 </Tab>
 </Tabs>
+
+<div id="step-3-see-the-results-in-google-analytics" />
 
 ### Step 3: See the results in Google Analytics
 

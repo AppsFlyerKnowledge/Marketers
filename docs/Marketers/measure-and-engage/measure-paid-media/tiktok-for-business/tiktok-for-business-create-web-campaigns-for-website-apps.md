@@ -24,19 +24,27 @@ x-zendesk:
 ---
 > **At a glance:** Set up a TikTok Web Ads integration for your website app to send web conversion signals to TikTok via the Events API.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer supports integration with TikTok Web Ads (`tiktokweb_int`) for website app campaigns, letting you report attribution and conversion data directly through TikTok's Events API. TikTok can then use this data to optimize ad targeting, measure performance, and build custom audiences.
 
 Here's how it works: when a user clicks a TikTok ad and lands on your website, and then completes a website event (for example, a purchase or sign-up), AppsFlyer sends the conversion signal to TikTok via the Events API. TikTok uses this data to optimize ad targeting and measure campaign performance.
 
+<div id="see-also" />
+
 > 📄 **See also**
 >
 > * <Anchor target="_blank" href="/marketers/docs/web-performance-measurement-overview">Web Performance Measurement - Overview</Anchor>
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > At present, the integration does not support sending re-engagement postbacks via the Events API.
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
@@ -45,12 +53,16 @@ Before activating the TikTok Web Ads integration for your website app, make sure
 * A website app set up in AppsFlyer
 * A business account in <Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">TikTok Ads Manager</Anchor>
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### How to set up TikTok Web Ads for your website app
 
 The setup involves defining the integration between TikTok Web Ads and AppsFlyer, and configuring the campaign in TikTok Ads Manager. It includes the following parts:
 
 * [Part 1: Set up TikTok Web Ads integration in AppsFlyer](#part-1-set-up-tiktok-web-ads-integration-in-appsflyer) (Required)
 * [Part 2: Set up AppsFlyer integration in TikTok Web Ads](#part-2-set-up-appsflyer-integration-in-tiktok-web-ads) (Required)
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## Part 1: Set up TikTok Web Ads integration in AppsFlyer
 
@@ -69,6 +81,8 @@ To activate the TikTok Web Ads integration:
 5. **Pixel ID:** Enter the Pixel ID. You can generate it or retrieve it from your TikTok Ads Manager by following the instructions in the <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">TikTok documentation</Anchor>.
 6. **Access token:** Enter the access token. To generate or retrieve it, follow the same <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">TikTok documentation</Anchor>.
 7. **Limit TikTok Web Ads' use of users' personal information (CCPA):** Turn on this toggle to enable compliance with <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">data protection laws</Anchor>.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -94,6 +108,8 @@ To set in-app event postbacks:
    * **All media sources, including organic**, to send all events regardless of attribution source.
 7. In the **including** column, select whether events will be sent with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Note**
    >
    > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
@@ -101,6 +117,8 @@ To set in-app event postbacks:
 
 8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -116,6 +134,8 @@ To set in-app event postbacks:
 > For more information, see <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## Part 2: Set up AppsFlyer integration in TikTok Web Ads
 
@@ -151,6 +171,8 @@ You can choose any pre-defined in-app event sent from AppsFlyer as your campaign
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **Note**
    >
    > To simplify campaign analysis, include the campaign type (web or mobile) as a prefix or suffix in the campaign name, for example, `campaign-name_web`.
@@ -164,6 +186,8 @@ You can choose any pre-defined in-app event sent from AppsFlyer as your campaign
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **Note**
    >
    > TikTok automatically adds `ttclid={{ttclid}}` to the destination URL when the ad is clicked.
@@ -171,11 +195,15 @@ You can choose any pre-defined in-app event sent from AppsFlyer as your campaign
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## View web attribution data
 
 Web conversion events are reported under the `tiktokweb_int` PID in the `media_source` field. To view web attribution data, use raw data reports and filter by `media_source = tiktokweb_int` to isolate TikTok website app conversions.
 
 Dashboard reporting for website app campaigns is not yet available. A unified reporting view that lets you analyze web campaign performance alongside other channels is planned for a future release.
+
+<div id="measure-cost-clicks-and-impressions" />
 
 ## Measure cost, clicks, and impressions
 
@@ -183,6 +211,8 @@ Measure TikTok cost, clicks, and impressions alongside your web attribution data
 
 1. **Connect TikTok as a cost integration on your web app:** Go to the **Cost** tab or **Cost Settings** page and connect via `tiktokglobal_int`. For step-by-step instructions, see <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data">Set up ROI360 cost API to measure cost data</Anchor>.
 2. **Add the campaign ID to your landing page URL:** Include `af_c_id` along with the full campaign hierarchy in the landing page URL. This ensures cost, clicks, and impressions are matched to your web attribution data at the most granular level.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

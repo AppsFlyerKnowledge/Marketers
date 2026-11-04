@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Adform, an AppsFlyer ad network integrated partner, provides open and transparent technologies that connect advertisers and agencies with publishers to enable digital advertising across all devices. In addition to click-based mobile attribution, Adform also offers view-through attribution, which you can record with AppsFlyer.
 
+<div id="setting-up-adform" />
+
 ## Setting up Adform
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -40,6 +42,8 @@ x-zendesk:
 
 Adform configuration window includes 2 active tabs: **Integration** and **Attribution link**. Click on the items below to read about the tab setup.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -51,14 +55,20 @@ Adform configuration window includes 2 active tabs: **Integration** and **Attrib
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Adform prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to Adform.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -72,12 +82,16 @@ Adform connects with AppsFlyer via a unique Client Tracking ID. If you don't alr
 
 Toggle this to ON if you want to attribute view-through installs from Adform. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Adform following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Adform.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Adform.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 

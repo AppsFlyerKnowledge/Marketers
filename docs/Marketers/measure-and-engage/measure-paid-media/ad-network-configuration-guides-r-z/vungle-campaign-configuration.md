@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
 
+<div id="setting-up-vungle" />
+
 ## Setting up Vungle
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -38,6 +40,8 @@ x-zendesk:
 4. In the **Integration** tab, turn on the **Activate partner** toggle. **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -49,9 +53,13 @@ x-zendesk:
 
 The Integration tab is divided into different sections as described below.
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 Connect to Vungle by activating and setting parameters in the integration tab. Vungle must supply its unique network ID, ***app\_id***; this is necessary in order to connect with AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -126,6 +134,8 @@ You can give Vungle permission to view information or configure changes in the i
 
 **Note**: It is possible to give Vungle permissions even if there is no active integration with them.
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 **To enable ad-network permissions:**
@@ -144,6 +154,8 @@ You can give Vungle permission to view information or configure changes in the i
 | Allow access to your Protect360 dashboard | [If enabled] Partner’s Protect360 data |
 
 Learn more about giving <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

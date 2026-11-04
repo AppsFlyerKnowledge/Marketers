@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Enable Google to share the content of your SKAdNewtork (SKAN) app iOS postbacks with AppsFlyer.
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Get SKAN postback data from Google Ads
 
 If you work with multiple ad network partners, the best practice is to set it up in AppsFlyer. By doing so, SKAN performance metrics for all your ad network partners, enriched with other metrics like cost, are available via the AppsFlyer platform.
@@ -41,6 +43,8 @@ Because of Google's click-reporting methodology and its retroactive data update 
 
 * Aggregated reports and the dashboard update retroactively.
 * <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">Raw data reports</Anchor> don't change retroactively. Data (provided via Data Locker) is provided in folders according to the date Google provided the data to AppsFlyer (data arrival date).
+
+<div id="set-up-interoperation" />
 
 ## Set up interoperation
 
@@ -81,6 +85,8 @@ In order to see SKAN installs attributed to Google Ads in the AppsFlyer SKAN das
 11. Read about [measurement differences](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -167,6 +173,8 @@ If you've completed the steps above and installs still aren't showing, check the
 * Only Web-to-app and App-to-app iOS campaigns are supported for SKAN measurement.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

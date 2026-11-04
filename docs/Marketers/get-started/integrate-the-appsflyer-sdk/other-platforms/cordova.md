@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate AppsFlyer into your Cordova apps to measure installs, in-app events, media sources, and more.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > On March 1st, 2020, AppsFlyer deprecated old SDK versions. To learn about which versions have been deprecated, how it affects you, and how to update to the latest SDK version, click <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview#about-the-sdk">here</Anchor>.

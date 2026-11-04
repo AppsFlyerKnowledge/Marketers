@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in your app.
 
+<div id="configuring-events-in-the-app" />
+
 ## Configuring events in the app
 
 This section discusses how to set up and create events in the app with Google Tag Manager (GTM).
@@ -34,6 +36,8 @@ When the event is sent, GTM checks to see if there is a tag that is configured t
 <div id="creating-event-variables-for-revenue-and-price" />
 
 <Accordion title="Creating event variables for revenue and price">
+
+<div id="android" />
 
 #### Android
 
@@ -71,6 +75,8 @@ When the event is sent, GTM checks to see if there is a tag that is configured t
 
 </Tab>
 </Tabs>
+
+<div id="ios" />
 
 #### iOS
 
@@ -117,6 +123,8 @@ For iOS, parameters are available across the app. You can retrieve them through 
 The first step is to configure the event in the app. The event is sent using Firebase Event Logging In the event you specify the AppsFlyer ID, event name, and event parameters. The AppsFlyer ID is retrieved from the variable that is created in the <Anchor target="_blank" href="/marketers/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#google-tag-manager-setup">setup step</Anchor>.
 
 <Anchor target="_blank" href="https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables">Google Tag Manager uses Firebase Analytics</Anchor> Events to trigger tag events. Whenever an event is sent to Firebase, Tag Manager recognizes the event and sends it to AppsFlyer as well.
+
+<div id="android-1" />
 
 #### Android
 
@@ -206,9 +214,13 @@ iOS
 
 </Accordion>
 
+<div id="sending-install-events-to-firebase" />
+
 ## Sending install events to Firebase
 
 You can also send install events to Firebase with all install-related data.
+
+<div id="android-2" />
 
 #### Android
 
@@ -216,6 +228,8 @@ You can also send install events to Firebase with all install-related data.
 <Tab title="Java">
 
 To send install events to Firebase in Android, you can use the `conversionData`object.
+
+<div id="creating-the-send-event-method" />
 
 #### Creating the send event method
 
@@ -236,6 +250,8 @@ public void sendInstallToFirebase(Map<String, String> conversionData){
 
 This method accepts a `conversionData` object. The method checks whether install time, media source, and campaign are null and if so sets the install time to the current time and the media source and campaign organic. Otherwise, it takes the data from the `conversionData` object and sends it to Firebase.
 
+<div id="sending-the-install-event" />
+
 #### Sending the install event
 
 Add the following code in the `onConversionDataSuccess` method:
@@ -253,6 +269,8 @@ This code checks if this is the first time the app is launched. If so, it calls 
 <Tab title="Kotlin">
 
 To send install events to Firebase in Android, you can use the `conversionData`object.
+
+<div id="creating-the-send-event-method-1" />
 
 #### Creating the send event method
 
@@ -272,6 +290,8 @@ fun sendInstallToFirebase(conversionData: Map<String, Any>) {
 
 This method accepts a `conversionData` object. The method checks whether install time, media source, and campaign are null and if so sets the install time to the current time and the media source and campaign organic. Otherwise, it takes the data from the `conversionData` object and sends it to Firebase.
 
+<div id="sending-the-install-event-1" />
+
 #### Sending the install event
 
 Add the following code in the `onConversionDataSuccess` method:
@@ -289,10 +309,14 @@ This code checks if this is the first time the app is launched. If so, it calls 
 </Tab>
 </Tabs>
 
+<div id="ios-1" />
+
 #### iOS
 
 <Tabs>
 <Tab title="Objective-C">
+
+<div id="creating-the-send-event-method-2" />
 
 #### Creating the send event method
 
@@ -332,6 +356,8 @@ This method receives the `installData` object and checks if the install is organ
 If the install is non-organic, the method gets the relevant non-organic install data.
 
 Once the parameters are set, the method sends the install event to Firebase.
+
+<div id="sending-the-install-event-2" />
 
 #### Sending the install event
 
@@ -388,6 +414,8 @@ If the install is non-organic, the method gets the relevant non-organic install 
 
 Once the parameters are set, the method sends the install event to Firebase.
 
+<div id="sending-the-install-event-3" />
+
 #### Sending the install event
 
 In AppDelegate.swift, in the method `didFinishLaunchingWithOptions`, add `FirebaseApp.configure();`
@@ -411,6 +439,8 @@ The code snippet above checks if this is the first time the app is launched. If 
 
 </Tab>
 </Tabs>
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >

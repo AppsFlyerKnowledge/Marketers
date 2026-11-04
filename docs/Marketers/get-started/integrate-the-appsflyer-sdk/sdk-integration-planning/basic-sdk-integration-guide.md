@@ -30,9 +30,13 @@ x-zendesk:
 ---
 > **At a glance:** Work with your mobile or CTV app developer to integrate and install the SDK into Android or iOS apps. Once basic integration tasks are complete, your app is ready for install attribution and in-app event measurement.
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **Implementing the dev key in your app**
 
 AppsFlyer uses the dev key to uniquely identify your account. The dev key is mandatory because it allows the SDK to securely send and retrieve data that belongs to your account. Your developer should install and integrate the SDK, and embed the dev key.
+
+<div id="retrieve-the-dev-key" />
 
 #### Retrieve the dev key
 
@@ -43,12 +47,16 @@ Before your developer can install and integrate the SDK, you must retrieve the d
 
    ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
+<div id="provide-the-dev-key-to-your-developer" />
+
 #### Provide the Dev key to your developer
 
 Provide the Dev Key, App ID, and AppsFlyer API v2 token to your mobile developer with instructions to:
 
 * Use the <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration">SDK integration wizard</Anchor> for automated SDK installation and integration.
 * Use the step-by-step instructions to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">install</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">integrate the SDK</Anchor>.
+
+<div id="where-to-start-the-sdk" />
 
 ## **Where to start the SDK?**
 
@@ -61,7 +69,11 @@ However, to comply with privacy-preserving regulations such as GDPR and CCPA, it
 <Tabs>
 <Tab title="Android native">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### Starting the SDK in Android native
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### SELECT IN WHAT CLASS TO START THE SDK
 
@@ -69,6 +81,8 @@ Select whether to start the SDK in the global `Application` class or the `Act
 
 * **Start the SDK in the global** `Application` **class:** Generally, initializing the SDK in the global `Application` class/subclass is a good practice because the `Application` class is loaded and initialized before any app UI is displayed. This ensures that the SDK can start in any scenario, including deep linking.
 * **Start the SDK in an** `Activity` **class (deferred start)** to allow users to opt-in to data sharing. This is because obtaining user consent requires a user interface (UI) rendered in an `Activity` class.
+
+<div id="android-developer-instructions" />
 
 #### ANDROID DEVELOPER INSTRUCTIONS
 
@@ -83,6 +97,8 @@ Select whether to start the SDK in the global `Application` class or the `Act
 <Tab title="iOS native">
 
 <div id="starting-the-sdk-in-ios" />
+
+<div id="starting-the-sdk-in-ios-native" />
 
 ### Starting the SDK in iOS native
 
@@ -114,6 +130,8 @@ Share with your developer the following information:
 
 <div id="starting-the-sdk-in-Unity" />
 
+<div id="starting-the-sdk-in-unity" />
+
 ### Starting the SDK in Unity
 
 Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">this Dev Hub article</Anchor> on how to start the SDK.
@@ -124,6 +142,8 @@ Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/d
 
 <div id="starting-the-sdk-in-react" />
 
+<div id="starting-the-sdk-in-react-native" />
+
 ### Starting the SDK in React Native
 
 Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">this Dev Hub article</Anchor> on how to start the SDK.
@@ -131,11 +151,15 @@ Send your developer <Anchor target="_blank" href="https://dev.appsflyer.com/hc/d
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## Select your privacy preserving strategy
 
 Select **how to preserve user privacy.** For example, select between stopping the SDK at installation, preventing data sharing with third parties, anonymizing user data or disabling specific identifiers.
 
 For more information on the different privacy-preserving methods available, see <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">Privacy preserving methods in the SDK</Anchor>.
+
+<div id="attribution" />
 
 ## **Attribution**
 
@@ -169,11 +193,15 @@ The following sections describe attribution considerations for Google Play Store
 
 <Accordion title="Attribute apps published on Google Play">
 
+<div id="google-play-install-referrer" />
+
 #### GOOGLE PLAY INSTALL REFERRER
 
 The [Google Play Install Referrer API](https://developer.android.com/google/play/installreferrer) improves <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#attribution-methods">attribution</Anchor> accuracy, protects from install fraud, and allows secure retrieval of referral data from Google Play (for example, the app's version at the time when the app was first installed).
 
 It is recommended that you provide your developer with [instructions to add the Google Play Install Referrer API](https://developer.android.com/google/play/installreferrer/library).
+
+<div id="gaid" />
 
 #### GAID
 
@@ -272,7 +300,11 @@ See the Dev Hub for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/d
 
 When attribution occurs using IDFA, it's important IDFA is sent on the **first launch.** For this reason, the SDK provides the `waitForATTUserAuthorization` method.
 
+<div id="waitforattuserauthorization-overview" />
+
 #### waitForATTUserAuthorization overview
+
+<div id="important" />
 
 > 🚧 **Important**
 >
@@ -331,6 +363,8 @@ See the Dev Hub for [developer instructions for customizing the ATT consent dial
 
 <Accordion title="Support for SKAN attribution">
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > To fully support SKAN attribution, upgrade to iOS SDK V6.2.3+.
@@ -371,6 +405,8 @@ To disable SKAN attribution use <Anchor target="_blank" href="https://dev.appsfl
 </Tabs>
 
 </Accordion>
+
+<div id="recording-in-app-events" />
 
 ## **Recording in-app events**
 
@@ -424,6 +460,8 @@ See our <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#re
 
 </Accordion>
 
+<div id="deep-linking-with-onelink" />
+
 ## **Deep linking with OneLink**
 
 OneLink is the AppsFlyer solution for multi-platform attribution, **redirection, and deep linking**.
@@ -470,6 +508,8 @@ See our guide on setting <Anchor target="_blank" href="/marketers/docs/create-d
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **Accessing attribution and deep linking data**
 
 The following table describes the available methods for retrieving attribution and deep linking data:
@@ -487,12 +527,16 @@ Note the following for iOS 14.5+ non-consenting users:
 * When using UDL for paid and owned media, deep linking data is available.
 * When using GCD for paid media, the data is limited and does not include attribution and deep linking details.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > We recommend the following:
 >
 > * Use Push API to retrieve attribution data and send it to your servers for further processing. This method waits for the data to become available, and therefore is highly accurate and close to real-time. GCD returns data in real-time, but may be inaccurate when final attribution decisions are determined after more than 5 seconds.
 > * Use Pull API to periodically (for example, daily) supplement real-time attribution data, and to compensate for any communication errors that might occur.
+
+<div id="testing-your-sdk-integration" />
 
 ## **Testing your SDK integration**
 
@@ -501,6 +545,8 @@ Once the SDK integration is complete, you can go to the AppsFlyer dashboard, and
 For testing scenarios and instructions, see <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers">SDK integration testing</Anchor>.
 
 **Note:** When performing attribution tests, <Anchor target="_blank" href="/marketers/docs/registering-test-devices">register a test device</Anchor> (Android or iOS) to make sure each install is recorded as a new install. A registered test device prevents installs from being recorded as reinstalls.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

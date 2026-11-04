@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Customize the click-through and view-through lookback windows, based on your agreements with media sources.
 
+<div id="lookback-windows" />
+
 ## Lookback windows
 
 Configurable attribution lookback window allows you to customize the attribution period based on your agreement with media sources.
@@ -37,11 +39,15 @@ By setting attribution lookback windows per media source, AppsFlyer attributes a
 * **Engaged view lookback window:** The maximum period of time after an engaged view within which an install can be attributed to the engaged view.  Installs that take place after the lookback window are considered Organic.
 * **View-through lookback window**: Maximum period of time after an ad is viewed within which an install can be attributed to the ad. Installs that take place after the lookback window are considered Organic.
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### Configurable lookback windows per attribution type
 
 <table><thead><tr><th rowspan="2"><p><strong>Attribution type</strong></p></th><th rowspan="2"><p><strong>Attribution method</strong></p></th><th colspan="2"><strong>Lookback window</strong> </th></tr><tr><th><strong>Range</strong></th><th><strong>Default</strong></th></tr></thead><tbody><tr><td rowspan="3"><p>Click-through</p><p>(All media sources)</p></td><td>Referrer, ID matching</td><td>1-30 Days OR<br/>1-23 Hours</td><td>7 days</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td>Probabilistic modeling (CTV, PC and Console - single platform links)</td><td>Up to 7 days. (Set in the <code>af_lookback_window</code> link parameter.)</td><td>7 days</td></tr><tr><td rowspan="2"><p>Engaged click-through</p><p>(Selected non-SRN <a href="./about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks" target="_blank">media sources</a>\*)</p></td><td>ID matching</td><td>1-7 days or 1-23 hours</td><td>2 days</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td rowspan="2"><p>Engaged view-through</p><p>(Selected non-SRN <a href="./about-enriched-engagement-types#which-networks-can-report-engaged-views-and-engaged-clicks" target="_blank">media sources</a>\*)</p></td><td>ID matching</td><td>1-7 days or 1-23 hours</td><td>2 days</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td rowspan="4"><p>View-through</p><p>(Selected <a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">media sources</a>)</p></td><td>ID matching</td><td><p>1-24 hours</p><p>[Until Dec 15, 2021, the upper bound was 7 days]</p></td><td>24 hours</td></tr><tr><td>Probabilistic modeling (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptive</a></td><td>Up to 24 hours</td></tr><tr><td>Probabilistic modeling (CTV, PC and Console - single platform links)</td><td>Up to 7 days. (Set in the <code>af_lookback_window</code> link parameter.)</td><td>24 hours</td></tr><tr><td>Probabilistic modeling (CTV, PC and Console - <a href="./set-up-cross-platform-links-for-multi-device-campaigns#traits-and-limitations" target="_blank">cross-platform OneLink attribution links</a>)</td><td>Up to 72 hours. (Set in the <code>af_xplatform_vt_lookback</code> link parameter.)</td><td>24 hours</td></tr></tbody></table>
 
 *Lookback windows for `engaged_click` and `engaged_view` can only be set for non-SRN networks. For SRNs, `engaged_click` and `engaged_view` parameters share the same lookback window as clicks and are, therefore, set by the **Install Click-Through Attribution Lookback** sliders.
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### Probabilistic modeling lookback window
 
@@ -54,6 +60,8 @@ The Probabilistic modeling lookback window, used to maintain attribution accurac
 
 To learn more, read about the <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#probabilistic-modeling">AppsFlyer Probabilistic modeling method</Anchor>.
 
+<div id="lookback-window-setup" />
+
 ## Lookback window setup
 
 Following, we list the lookback window setup process for SRNs and Attribution Links
@@ -61,7 +69,11 @@ Following, we list the lookback window setup process for SRNs and Attribution Li
 <Tabs>
 <Tab title="SRNs Lookback Window">
 
+<div id="attribution-lookback-window-for-srns" />
+
 ### Attribution lookback window for SRNs
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -90,6 +102,8 @@ See below each SRN lookback window:
 
 <div id="attribution-lookback-window-with-attribution-links" />
 
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
 ### Non-SRN Attribution lookback window for click-through and view-through
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
@@ -104,12 +118,16 @@ See below each SRN lookback window:
 
 <div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
 
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
 ### Non-SRN Attribution lookback window for engaged click-through and engaged view-through
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.
 2. Search and select a partner.
 3. In the Integration tab, scroll down to the **Install engaged click-through lookback window** slider or to the **Install engaged view-through lookback window** slider.
 4. Set the lookback window using the sliders.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -129,6 +147,8 @@ You can set the lookback window in OneLink as well.
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## Distribution of first app launches
 
 Below is a graph that shows the distribution of first app launches from the day of engagement.
@@ -140,6 +160,8 @@ The graph can give you a better sense of the number of users who install the app
 The majority of users, a little over 97%, who launch the app do so within 7 days of engaging with the ad. The remaining 2% do so in the span between day 7 and the end of the lookback window (day 30).
 
 In fact, almost 62% of users who launch the app, do so within 15 minutes of engaging the ad. 72% of users do so within the first hour.
+
+<div id="scenarios-and-examples" />
 
 ## Scenarios and examples
 
@@ -186,6 +208,8 @@ Johnny, SuperShopping's lead marketer, creates an attribution Link and sets the 
 In addition, the app's developer can identify the users that come from this flash campaign and deliver the promotions that the campaign advertises.
 
 </Accordion>
+
+<div id="tip-1" />
 
 > 👍 **Tip**
 >

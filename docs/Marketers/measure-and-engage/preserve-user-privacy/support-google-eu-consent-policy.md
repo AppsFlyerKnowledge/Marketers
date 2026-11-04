@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer is helping marketers comply with the Digital Markets Act (DMA) and improve the value of their ads in Google. Find answers to frequently asked questions about compliance with the DMA and optimizing ad value.
 
+<div id="overview" />
+
 ## Overview
 
 Google is updating its <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">EU user consent policy</Anchor> in preparation for the enforcement of the <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">Digital Markets Act</Anchor> (DMA). As a Google <Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">App Attribution Partner</Anchor>, AppsFlyer is adapting to the policy changes while empowering advertisers to get the most out of their ads in Google. The updated policy is in effect as of March 6, 2024.
+
+<div id="relevant-integrations-and-continued-use-of-google-features" />
 
 ## Relevant integrations and continued use of Google features
 
@@ -40,6 +44,8 @@ The following integrations are relevant to Google's new EU consent policy:
 * GMP DV360 (`dv360_int`)
 
 If end users of your apps via these integrations are based in the European Economic Area (EEA), make sure to take the necessary steps to comply with Google's new EU consent policy.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -55,6 +61,8 @@ Marketers need to obtain end-user consent in the EEA to continue using Google Ad
 
 </Accordion>
 
+<div id="updating-the-appsflyer-sdk" />
+
 ## Updating the AppsFlyer SDK
 
 <div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
@@ -67,6 +75,8 @@ The AppsFlyer SDK (Android - v6.13.0+, iOS - v6.13.1+) can send the necessary co
 * Once the SDK is upgraded, <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance">see here</Anchor> for implementation instructions for supporting the DMA.
 
 </Accordion>
+
+<div id="sending-consent-data" />
 
 ## Sending consent data
 
@@ -102,6 +112,8 @@ End-user consent values are sent to Google for the relevant AppsFlyer integratio
 
 </Accordion>
 
+<div id="sending-consent-datafaq" />
+
 ### Sending consent data—FAQ
 
 <div id="do-i-have-control-over-consent-data-for-nonue-users" />
@@ -109,6 +121,8 @@ End-user consent values are sent to Google for the relevant AppsFlyer integratio
 <Accordion title="Is there an option to avoid sending consent data to Google?">
 
 AppsFlyer enables advertisers who believe the DMA requirements don't apply to their end-users (for example, when they are non-EU) to prevent sending consent data to Google. This is done by activating a toggle in the relevant integration pages.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -171,19 +185,27 @@ Yes. Google requires consent data to be included in each event sent from AppsFly
 
 </Accordion>
 
+<div id="preparing-for-the-upcoming-changes" />
+
 ## Preparing for the upcoming changes
 
 <div id="how-can-i-prepare-for-the-upcoming-changes" />
 
 <Accordion title="Take the following preparatory steps">
 
+<div id="address-user-consent-in-the-european-economic-area-eea" />
+
 #### Address user consent in the European Economic Area (EEA)
 
 Collaborate with your company's legal counsel. They can provide insights into the implications of European user consent policies for the data you share with partners like Google. If relevant, implement privacy prompts such as "Privacy Settings" or "Privacy Choices" to gather marketing and advertising-related user consent signals from your app users.
 
+<div id="verify-cmp-compliance-and-tcf-2223-support" />
+
 #### Verify CMP compliance and TCF 2.2/2.3 support
 
 Make sure your Consent Management Platform (CMP) supports TCF 2.2/2.3, the most recent versions of the Transparency and Consent Framework (TCF). Your CMP should also be well informed about the new Google EU consent requirements and can advise you on how to support them under TCF.
+
+<div id="implement-the-newest-sdkserver-to-server-s2s-apis" />
 
 #### Implement the newest SDK/Server-to-Server (S2S) APIs
 
@@ -195,11 +217,15 @@ Consider the following options for sending the new consent fields, either using 
 * **Using** <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile?">**S2S**</Anchor> **API calls:**
   * Before sending in-app events to AppsFlyer, update your API calls to include the `consent_data` object for each event. See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">how to do this</Anchor>.
 
+<div id="transition-from-the-legacy-gmp-integration-doubleclick" />
+
 #### Transition from the legacy GMP integration (DoubleClick)
 
 If you're still using the legacy AppsFlyer GMP integration (doubleclick\_int), transition to the newer version (dv360\_int), which is available now. The legacy integration is **not EU consent compatible** and will be deprecated soon. See more details <Anchor target="_blank" href="/marketers/docs/bulletin-google-marketing-platform-gmp-integration-transition">here</Anchor>.
 
 </Accordion>
+
+<div id="impact-on-advertising-activityfaq" />
 
 ## Impact on advertising activity—FAQ
 
@@ -221,6 +247,8 @@ The change may affect the number of EEA users who appear in your audiences and a
 
 </Accordion>
 
+<div id="further-information-and-contact-details" />
+
 ## Further information and contact details
 
 In case you have further questions or any uncertainties, you can reach out to the following:
@@ -228,6 +256,8 @@ In case you have further questions or any uncertainties, you can reach out to th
 * For Google's requirements or how these updates may impact your Google data, please review <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy-help/">Google's help articles</Anchor> or reach out directly to your Google representative.
 * For questions regarding AppsFlyer's support of EU end-user consent fields, reach out to your AppsFlyer CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 * See Google's <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/13802165?hl=en">consent mode article</Anchor> for reference definitions.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
 
+<div id="setting-up-glispa" />
+
 ## Setting up Glispa
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,10 +48,14 @@ x-zendesk:
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -59,12 +65,16 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Toggle this to ON if you want to attribute view-through installs from Glispa. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Glispa following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Glispa.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Glispa.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -92,6 +102,8 @@ In this tab, you can create the attribution links you want to send to Glispa for
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -111,6 +123,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Glispa.
@@ -121,9 +135,13 @@ More details about the <Anchor target="_blank" href="/marketers/docs/set-up-look
 
 [![](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Glispa to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -134,6 +152,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 **Attribution link parameter:** af\_viewthrough\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -163,6 +183,8 @@ Ad Revenue is not supported in the integration with this partner.
 
 Use these toggles to give Glispa permissions to handle its own configuration for your app:
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 * ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
@@ -174,6 +196,8 @@ Use these toggles to give Glispa permissions to handle its own configuration for
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

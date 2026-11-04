@@ -28,6 +28,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/89302407b5a7fb98299ce5255393651cc147ed963b0b17a6f74effbc0f7e16e0-4723094404753.png)
 
+<div id="setup" />
+
 ## Setup
 
 There are two versions of OneLink Smart Script:
@@ -57,6 +59,8 @@ There are two versions of OneLink Smart Script:
 
 <Accordion title="Parameters">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-the-smart-script" />
+
 #### Parameters/values provided to the developer to implement the Smart Script
 
 | Param/value | Remarks | Record your responses (for the developer to use) |
@@ -72,6 +76,8 @@ There are two versions of OneLink Smart Script:
 | Other query parameters | <ul><li>List any other parameters you want to be included in the outgoing OneLink URL for attribution or deep linking.</li><li>Add a **deep\_link\_value** for deep linking.<ul><li>In addition to adding the param, you and your developer need to implement the deep linking logic. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#create-a-onelink-link">Learn more</Anchor>.</li></ul></li><li>You can either use parameters from the incoming URL, or force a static value.</li></ul> |  |
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## Use cases
 
@@ -120,6 +126,8 @@ With auto-tagging enabled, the URL contains the *GCLID* parameter.
 1. Get the GCLID data from the param **af\_sub[1-5]** via CSV, or Push API in real-time for every install.
 2. Upload the GCLID data to Google either <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">manually</Anchor> or via an <Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">Adwords API</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This GCLID solution is not officially supported or recommended by Google. In case Google deprecates the GCLID parameter we will change the script to support the changes. Follow this article, by clicking the **Follow** button in the article header, to get informed when there is an update to the article or attached script.
@@ -142,6 +150,8 @@ For these SRNs, script setup is the same as for links from owned media, or other
 
 **Result**: For these SRNs/media sources, the values in the media source and campaign parameters in the incoming link are used to populate the values for the **pid** and **c** parameters in the outgoing link.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > **Incoming URL**: https://hotel.me/af_pid=twitter&af_c=big_social
@@ -157,6 +167,8 @@ For these SRNs, script setup is the same as for links from owned media, or other
 AppsFlyer attribution links can be used when the media source is a click ad network. When you set up such a link in AppsFlyer, you have the option to add a ***Redirection URL path (af\_r)*** parameter with the desired URL path to your mobile website, for web campaign-to-app attribution. 
 
 **Result**: If the **af\_r** and **af\_redirect=true** parameters are on the incoming link, the landing page script makes no changes. It leaves the web/landing page direct links to the app stores as they are. 
+
+<div id="example-1" />
 
 > 📄 **Example**
 >

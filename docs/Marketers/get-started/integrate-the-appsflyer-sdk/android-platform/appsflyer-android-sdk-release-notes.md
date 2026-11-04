@@ -27,9 +27,13 @@ x-zendesk:
 
 **Legacy SDK versions for iOS and Android will stop being supported on a fixed six-month cycle.** This cycle is designed to provide advanced notice, helping teams plan ahead and maintain full app functionality without disruption. Upgrading to the latest SDK ensures access to the newest features, improved stability, and ongoing support.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > To ensure a smooth transition, app developers are encouraged to update to the latest SDK version before the End-of-Support date.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## End of support vs. Deprecated
 
@@ -37,6 +41,8 @@ AppsFlyer distinguishes between **Deprecated** and **End-of-Support** SDK versio
 
 * **Deprecated versions:** SDK versions that are no longer recommended due to known issues, such as critical bugs. These versions can still send data to AppsFlyer, but continued use is discouraged. and upgrading to a supported version is strongly advised.
 * **End-of-Support versions:** SDK versions for which measurement is fully stopped across all platforms. For both Android and iOS, installs, sessions, and in-app events will not be measured. Any traffic from these versions (unless specifically excluded by the Product team) will receive a 400 status code, meaning the SDK will attempt to send API calls as usual, but AppsFlyer servers will reject them, and the data will not be processed.
+
+<div id="android-sdk-releases" />
 
 ## Android SDK Releases
 
@@ -67,6 +73,8 @@ The table below provides release notes for supported Android SDK versions, inclu
 | 6.14.0  <br />End of support:  <br />2027-03-08 | 2024-04-18 | <ul><li>Added support for the updated Purchase Validation flow. This feature is currently in closed beta. Learn more.</li><li>Updated Huawei Referrer integration. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Learn more</Anchor>.</li></ul> |
 | 6.13.1  <br />End of support:  <br />2027-03-08 | 2024-04-03 | SDK maintenance |
 | 6.13.0  <br />End of support:  <br />2027-03-08 | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy (DMA)</li></ul> |
+
+<div id="unsupported-sdk-versions" />
 
 ## Unsupported SDK versions
 
@@ -119,6 +127,8 @@ The following SDK versions have reached **End-of-Support** status. These version
 | 6.1.0  <br />End of support: 2024-08-31 | 2020-11-09 | <ul><li>Added support for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">Unified deep linking API</Anchor></li></ul> |
 | 6.0.1  <br />End of support: 2024-08-31 | 2020-10-28 | SDK maintenance |
 | 6.0.0  <br />End of support: 2024-08-31 | 2020-10-14 | <ul><li>Major changes to SDK functionality and API including deprecation and method name changes. [Learn more](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

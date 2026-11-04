@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance**: A reinstall occurs when a user installs an app, uninstalls it, and then reinstalls it. Reinstalls result in one of the following attribution types: non-organic reinstall, organic reinstall, or re-attribution (retargeting). Reinstalls help avoid multiple charges for users that uninstall and install again.
 
+<div id="what-is-a-reinstall" />
+
 ## What is a reinstall
 
 A reinstall occurs when an app user deletes an app and then reinstalls the app during the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window.</Anchor>
@@ -44,11 +46,15 @@ The table below shows what AppsFlyer would call different reinstalls
 | From an organic or non-organic source | Yes | No | Yes or No | Reinstall |
 | From an organic or non-organic source | No | No | Yes or No | New install |
 
+<div id="why-are-reinstalls-important" />
+
 ## Why are reinstalls important
 
 As well as being a good indication that users are coming back to your app and that your campaigns are working, proper reinstall attribution is important to help avoid multiple charges for users that uninstall and install again within the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window#re-attribution-window">re-attribution window.</Anchor>
 
 Likewise, attributing in-app events from reinstalls to the original media source (first install) provides advertisers with a better picture of how users are engaged. It also shows how effective UA campaigns and Retargeting ads are. For more information see [in-app events](#post-reinstall-in-app-events) below.
+
+<div id="reinstall-flow-and-outcome" />
 
 ## Reinstall flow and outcome
 
@@ -82,6 +88,8 @@ The following happens:
 For more Retargeting Attribution information, click <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">here</Anchor>.
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## Post reinstall in-app events
 
@@ -119,6 +127,8 @@ Re-attribution
 
 <Accordion title="Attributed to the first install (first install mode)">
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The first-install mode automatically applies to apps added to AppsFlyer on or after July 31, 2024. For apps added before this date, we recommend contacting AppsFlyer to migrate your existing apps to the first-install mode.
@@ -132,9 +142,13 @@ The first install mode provides advertisers with a better picture of user engage
 
 (2) You will only see this in the raw data.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Organic KPI data in the dashboard may show a lower value with **Post Reinstall Events Attribution** set to **Attributed to the first install** as some of those numbers may now be attributed to a non-organic media source.
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### Examples for first-install mode attribution.
 
@@ -202,11 +216,17 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## How does the data appear in the AppsFlyer dashboards
 
 <table><thead><tr><th colspan="2"> </th><th>Reinstall non-organic</th><th>Reinstall organic </th><th>Re-attribution</th></tr></thead><tbody><tr><td colspan="2">The Reinstall itself</td><td>Not seen</td><td>Not seen</td><td>Retargeting media source\*</td></tr><tr><td rowspan="2">In-app event attributions going forward</td><td>Post Reinstall Events set to <strong>Attributed as organic in-apps</strong></td><td>Unattributed organic</td><td>Unattributed organic</td><td>Retargeting media source</td></tr><tr><td>Post Reinstall Events set to <strong>Attributed to the first install</strong></td><td>First media source</td><td>First media source</td><td>Retargeting campaign</td></tr><tr><td colspan="5">\*Only in the overview dashboard.</td></tr></tbody></table>
 
+<div id="reinstalls-raw-data-reports" />
+
 ## Reinstalls raw data reports
+
+<div id="prerequisites" />
 
 > 🚧 **Prerequisites**
 >
@@ -214,9 +234,13 @@ You can verify in your raw data report that your post-reinstall in-app events ar
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">Reinstall example report as a CSV file</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### How the install and in-app events are attributed
 
 <table><thead><tr><th colspan="2"> </th><th>Reinstall non-organic</th><th>Reinstall organic </th><th>Re-attribution</th><th>Install non-organic</th><th>Install organic</th></tr></thead><tbody><tr><td colspan="2">Attributed to </td><td>UA campaign</td><td>Organic</td><td>Retargeting campaign</td><td>UA campaign</td><td>Organic</td></tr><tr><td rowspan="2">Event attribution going forward</td><td>Post Reinstall Events set to <strong>Attributed as organic in-apps</strong></td><td>Organic</td><td>Organic</td><td>Retargeting campaign</td><td>UA campaign</td><td>Organic</td></tr><tr><td>Post Reinstall Events set to <strong>Attributed to the first install</strong></td><td>First install</td><td>First install</td><td>Retargeting campaign</td><td>UA campaign</td><td>Organic</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### Availability of reinstall reports
 

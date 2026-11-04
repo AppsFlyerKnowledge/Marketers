@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Sina Weibo Ads, an AppsFlyer ad network integrated partner, is one of the most popular social media platforms in China.
 
+<div id="setting-up-sina-weibo-ads" />
+
 ## Setting up Sina Weibo Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -45,6 +47,8 @@ The Sina Weibo Ads configuration window includes 3 active tabs: Integration, Att
 <Accordion title="Integration tab">
 
 This section is used for connecting the partner with AppsFlyer. Relevant messages for the advertiser regarding the specific partner also appear here.
+
+<div id="activate-partners" />
 
 ### Activate partners
 
@@ -71,6 +75,8 @@ In this tab, you can create the attribution links you want to send to Sina Weibo
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -91,6 +97,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 [![](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)](https://files.readme.io/d3efcf846c2f75515e714e3ae8a7a15000dd76093702f82bc0d8bfb04a3a8aee-360002299609.png)
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -132,6 +140,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 Read here [how to set up retargeting](/docs/sina-weibo-ads-campaign-configuration#creating-retargeting-campaigns-on-weibo-ads-dashboard) on Sina Weibo dashboard.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Sina Weibo Ads.
@@ -141,6 +151,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 [![sina weibo clickthrough settings](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -186,6 +198,8 @@ Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-a
 
 </Accordion>
 
+<div id="setting-appsflyer-attribution-on-weibo-ads-dashboard" />
+
 ## Setting AppsFlyer attribution on Weibo ads dashboard
 
 Login to Sina Weibo Ads, using this link: [https://ad.weibo.com/](https://ad.weibo.com)
@@ -202,6 +216,8 @@ Android: Enter the APK download page (end with .apk) or upload the APK document.
 
 iOS: Enter the iTunes link.
 
+<div id="setting-the-attribution-link" />
+
 ### Setting the attribution link
 
 Go to the **Promotions** page and Create New Ad Series
@@ -212,6 +228,8 @@ If you want to acquire new users for your app, select **Increase App Installs** 
 
 [![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
 
+<div id="setup-ad-series" />
+
 ### Setup ad series
 
 Select the app you want to promote:
@@ -221,6 +239,8 @@ Select the app you want to promote:
 Set the audience features, budget, and promotion periods:
 
 [![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
+
+<div id="uploading-ad-creatives-and-set-the-attribution-link" />
 
 ### Uploading ad creatives and set the attribution link
 
@@ -237,6 +257,8 @@ All of the ad formats support AppsFlyer Attribution.
 
 Enter the AppsFlyer attribution link
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > ```http
@@ -248,10 +270,14 @@ Enter the AppsFlyer attribution link
 
 Complete any additional settings and publish the ad.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * You can preview the Ad Format in the upper right part at Ad Creative Setting Page.
 > * If you are not using deep linking in the ad campaign, leave the deep link box empty.
+
+<div id="creating-retargeting-campaigns-on-weibo-ads-dashboard" />
 
 ## Creating retargeting campaigns on Weibo ads dashboard
 
@@ -265,6 +291,8 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
 
+   <div id="example-1" />
+
    > 📄 **Example**
    >
    > ```http
@@ -275,6 +303,8 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
    ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
 
+   <div id="example-2" />
+
    > 📄 **Example**
    >
    > ```http
@@ -282,6 +312,8 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
    > &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
    > ```
 
+
+   <div id="note-1" />
 
    > 📘 **Note**
    >

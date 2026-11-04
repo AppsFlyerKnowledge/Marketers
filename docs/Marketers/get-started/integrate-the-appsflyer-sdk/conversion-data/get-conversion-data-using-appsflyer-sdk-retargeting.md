@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **At a glance:** Learn how re-attributions and re-engagements reflect in the conversion data for SRNs and non-SRN user journeys.
 
+<div id="retargeting-conversion" />
+
 ## Retargeting conversion
 
 Retargeting includes two types of conversions, re-attribution or re-engagement.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > Conversion data for retargeting doesn't always give a clear indication as to the type of conversion. See [alternative conversion data sources](#alternative-conversion-data-sources).
+
+<div id="re-attribution-with-srns" />
 
 ## Re-attribution with SRNs
 
@@ -37,15 +43,21 @@ When a user is re-attributed through an SRN, the conversion data payload doesn't
 
 What this means is that there is no way to determine, on the SDK level, if an install comes from a retargeting campaign.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Setting the campaign name such that it indicates retargeting **is not a foolproof method**. See [examples to learn more](#examples-of-mixed-user-acquisition-and-re-attribution).
+
+<div id="re-attribution-with-regular-ad-networks" />
 
 ## Re-attribution with regular ad networks
 
 Attribution to ad networks relies on attribution links. Whether regular attribution links or OneLink, with retargeting the attribution link always has the `is_retargeting=true` parameter set in it.
 
 <Accordion title="Retargeting campaign with Criteo">
+
+<div id="attribution-link" />
 
 #### Attribution link
 
@@ -54,6 +66,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### Conversion data payload
 
@@ -95,6 +109,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ## Re-attribution with deferred deep linking
 
 Oftentimes, you want to deep link re-attributed users who, by definition of being re-attributed, don't have the app installed. For example, You set a campaign that aims to bring back users who uninstalled the app. The campaign promotes a product or service and you want to serve the users with content related to the product or service that you advertise.
@@ -104,6 +120,8 @@ This is referred to as Deferred Deep Linking. Conversion data payload for Deferr
 <Accordion title="Deferred deep linking with SRNs">
 
 To implement deferred deep linking with SRNs, additional logic must be applied for SRN campaigns. Use the data in `onConversionSuccess` response, such as campaign, adset, adgroup, to programmatically redirect your users.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Conversion data for deferred deep linking with Meta ads
 
@@ -179,6 +197,8 @@ To implement deferred deep linking with SRNs, additional logic must be applied f
 
 You can use the data in getConversionData response, such as campaign, adset, etc. to programmatically redirect your users and serve them with relevant content.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > The app is an eCommerce app that specializes in sportswear. A user who doesn't have the app installed engages with an ad and installs the app. Once the app launches, the SDK returns the conversion data. The developer makes the app open the **summer running shoe collection** (campaign) activity in the store and serves the **running shoes for women** category (adset).
@@ -188,6 +208,8 @@ You can use the data in getConversionData response, such as campaign, adset, etc
 <Accordion title="Deferred deep linking with attribution links">
 
 There are three ways to deep link users:
+
+<div id="uri-schemes" />
 
 #### URI schemes
 
@@ -245,6 +267,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - when this parameter appears and is set to true, look for the `scheme` and `host` fields
 * `scheme` and `host` - these fields come from the `af_dp` parameter in the attribution link and indicate the scheme and activity to which the user should be deep linked
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### iOS Universal links and Android app links
 
 These are the other two out of the three ways for performing deep linking.
@@ -284,11 +308,15 @@ When using universal links or app links, the OneLink and payload are as follows:
 
 * `shortlink` field - this is the field that indicates the specific OneLink that the user comes from. It helps the developer know how to proceed in terms of launching an activity and serving content. Other fields like `campaign` can also be used for this purpose.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > The field `shortlink` does not appear in the payload when using the long OneLink.
 >
 > In both cases (short or long OneLink) we recommend adding a custom parameter that indicates the activity. For example `&deep_link_activity=shoes_cateogry`
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -296,13 +324,19 @@ When using universal links or app links, the OneLink and payload are as follows:
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ## Re-engagement with SRNs
 
 Much like with Re-Attribution campaigns, when a user is re-engaged through an SRN, the conversion data doesn't indicate that this is a re-engagement campaign.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ## Re-engagement with regular ad networks
 
 Here too, the conversion data payload doesn't indicate that the user comes from a re-engagement campaign. To overcome this limitation, you can set the campaign name to indicate a re-engagement.
+
+<div id="re-engagement-with-deep-linking" />
 
 ## Re-engagement with deep linking
 
@@ -336,6 +370,8 @@ Example:
 
 * The app developer can use such parameters, like `af_dp` and campaign name, to send the user to a specific activity and serve the relevant content.
 
+<div id="important-1" />
+
 > 🚧 **Important**
 >
 > We recommend using the short version of OneLink. Click <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">here</Anchor> to learn more.
@@ -350,12 +386,18 @@ Another reason to use the short version of OneLink is the conversion data struct
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ## Alternative conversion data sources
 
 * Push API offers a detailed conversion payload that indicates re-attribution or re-engagement. Push API payloads include a field called `re_targeting_conversion_type`. This field indicates the type of conversion, either re-attribution or re-engagement. To learn more, see our <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API guide</Anchor>.
 * Raw Data Reports also contain indicators for the type of conversion. In the raw data report for retargeting conversions, there is a column called ***Event Name***. The value in this column is either ***re-engagemen*t** or ***re-attribution*** according to the type of conversion.
 
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
+
 ## Examples of mixed user acquisition and re-attribution
+
+<div id="note-3" />
 
 > 📘 **Note**
 >

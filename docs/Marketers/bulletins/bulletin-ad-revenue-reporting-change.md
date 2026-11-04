@@ -28,6 +28,8 @@ x-zendesk:
 * **Who is impacted**: App owners, agencies
 * **Where is it changing**: Essentially, data alignment to the day of the ad display event is active in all reports and APIs, for all types of network integrations. See the following table for where and when the alignment took effect.
 
+<div id="ad-revenue-reporting-change" />
+
 #### Ad revenue reporting change
 
 | Reporting method | Effective date (date change occurs) | Publication date (date of announcement) |
@@ -39,11 +41,15 @@ x-zendesk:
 | Data Locker (h=23 folder) | August 3, 2020 | August 3, 2020 |
 | Pull API (for aggregate data) | September 1, 2020 | August 31, 2020 |
 
+<div id="before-the-change" />
+
 ### Before the change
 
 The date of Ad revenue data in the platform is the day after the ad display event itself. Meaning if an ad displays on Monday, the revenue displays under Tuesday. The data is available in the platform on Wednesday, after processing.
 
 This means that the ad revenue date is not aligned with actual user engagement. For some verticals, this lack of alignment distorts KPIs significantly.
+
+<div id="after-the-change" />
 
 ### After the change
 
@@ -55,6 +61,8 @@ The change is dependent on the integration type between the app and the monetiza
 * The revenue on the effective date includes two days' revenue, meaning the revenue of the effective date and the previous day’s revenue. Depending on the reporting scenario, you may discern a revenue spike on this day.
 
 See the example that follows.
+
+<div id="example" />
 
 > 📄 **Example**
 >

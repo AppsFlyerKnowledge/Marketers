@@ -28,17 +28,23 @@ x-zendesk:
 ---
 > **At a glance:** Learn about marketing your iOS apps in China.
 
+<div id="apple-in-china" />
+
 ## Apple in China
 
 In China, about 30% of mobile devices are iOS. In 2016, App Annie reported that China has leaped ahead to become the world’s top revenue generator in the iOS App Store with some $1.7 billion earned.
 
 [![](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)
 
+<div id="ios-app-store-is-still-the-apple-app-store" />
+
 ## iOS app store is still the Apple App Store
 
 Similar to the global market, the Apple App Store is still the dominant source for iOS Apps.
 
 Local ad networks direct the audience to the Apple app store to download the App. Apart from local ad networks, many global ad networks have iOS traffic in China, such as Google Ads, AppLovin, UnityAds, Mobvista, Yeahmobi, Inmobi, Glispa, Matomy, Chartboost, etc.
+
+<div id="no-special-requirement-for-ios-sdk" />
 
 ## No special requirement for iOS SDK
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
+<div id="activate-partner" />
+
 ## Activate partner
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -40,9 +42,13 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
+<div id="setting-up-avow-gmbh" />
+
 ## Setting up Avow GmbH
 
 The integration with Avow GmbH supports click-through and view-through attribution. The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Avow GmbH, the available tabs are Integration, Attribution link, and Permissions.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -55,9 +61,13 @@ The integration with Avow GmbH supports click-through and view-through attributi
 
 The **Integration** tab includes a number of sections, as described below.
 
+<div id="activate-partner-1" />
+
 #### Activate partner
 
 To configure the integration, you must first <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#activate-partner">turn on</Anchor> the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner integrations</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Advanced Privacy
 
@@ -69,25 +79,35 @@ For iOS apps only: Your control over data shared with the partner via postbacks 
 | Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
 
+<div id="general-settings" />
+
 #### General settings
 
 **token**
 
 Add the verification token provided by the AVOW Specialist (AM/BDM).
 
+<div id="install-attribution" />
+
 #### Install attribution
 
 To attribute view-through installs from Avow GmbH, turn on **Install view-through attribution** . The view-through lookback slider is available on the Attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Postbacks for installs and rejected installs are sent to this partner only.
+
+<div id="in-app-event-settings" />
 
 #### In-app event settings
 
 **token**
 
 Add the verification token provided by the AVOW Specialist (AM/BDM).
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -110,6 +130,8 @@ Configure mapping of in-app events with Avow GmbH events, sent via postbacks:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -146,6 +168,8 @@ Ad revenue isn't available for Avow GmbH.
 <Accordion title="Permissions tab">
 
 Select which permissions to grant Avow GmbH to access your data and perform various actions.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >

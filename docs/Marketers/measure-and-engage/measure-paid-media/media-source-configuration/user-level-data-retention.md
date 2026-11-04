@@ -28,17 +28,25 @@ x-zendesk:
 ---
 > **At a glance:** Retention and user-level (raw data) use policies are determined by AppsFlyer, relevant laws, and SRNs ("**Partners**") terms of use.
 
+<div id="caution" />
+
 > ❗️ **Caution**
 >
 > AppsFlyer provides the data restriction explanations, in this article, for information purposes only.  *Nothing stated here is legal advice. It is provided for your information and convenience.*
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## Data retention and deletion obligations
 
 AppsFlyer receives user-level data from apps, partners, and other sources.
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### Availability of user-level data to advertisers
 
 Typically, user-level data is made available to advertisers via raw data reporting tools if their subscription package includes raw data during a 90-day access window (See <Anchor target="_blank" href="/marketers/docs/data-availability-windows">data availability windows</Anchor>). In some cases, there are also <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">raw data restrictions</Anchor>.
+
+<div id="data-retention" />
 
 ### Data retention
 
@@ -64,6 +72,8 @@ Consider the following:
   * Partner data sharing policy
   * <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> is on
 
+<div id="partner-data-retention-periods" />
+
 #### Partner data retention periods
 
 | SRN/partner | Partner ID (PID) | After install, delete data after [x] months |
@@ -82,6 +92,8 @@ Consider the following:
 | TikTok for Business* | tiktokglobal\_int | 13 |
 | X Ads (formerly Twitter) | twitter\_int | 3 |
 | Walmart | walmart\_int | 6 |
+
+<div id="note" />
 
 > 📘 **Note***
 >

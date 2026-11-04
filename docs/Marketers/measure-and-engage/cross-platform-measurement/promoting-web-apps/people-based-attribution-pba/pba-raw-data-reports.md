@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance**: PBA raw data reports are available via Data Locker.
 
+<div id="pba-raw-data-reports" />
+
 ## PBA raw data reports
 
 Use PBA raw data reports to analyze user journeys and actions.
+
+<div id="report-descriptions" />
 
 ### Report descriptions
 
@@ -37,11 +41,15 @@ PBA raw data report topics
 | <span id="website-visits"></span>[Website visits](#website-visits-and-website-events) | <ul><li>Visits to the website.</li><li>Measure user exposure and engagement with web traffic campaigns.</li></ul> |
 | <span id="website-events"></span><Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website events</Anchor> | <ul><li>Contain the actions performed by website visitors like subscribe or purchase.</li><li>Events are attributed to the last non-direct web visit occurring in the previous 30 days.</li><li>Attribution parameters associated with the event can include media source, media channel, campaign, and so on.</li><li>Use these parameters to optimize your marketing efforts.</li><li>Analyze user behavior per media source.</li><li>The values for these fields are determined through the attributed visit using <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source attribution rules.</Anchor></li><li>The intent is to associate events with a specific website visit and not a specific page view.</li><li>Use this to find out which sources and campaigns drive users and what actions the users perform.</li></ul> |
 
+<div id="raw-data-report-fields" />
+
 ## Raw-data report fields
 
 <div id="website-visits-and-website-events" />
 
 <Accordion title="Website visits and website events">
+
+<div id="sample-reports" />
 
 #### Sample reports
 
@@ -51,6 +59,8 @@ PBA raw data report topics
 Raw data fields are populated in part from data originating in the mobile app user attribution link and app install event.
 
 [Download field list as CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmRBeUQS-xeiv069vIgnfBoJW8Wfl1ojv0rAK-pcOlAzNveG1lqvExVdhWfgCKIpJxczWksUiHjSa3/pub?gid=0&single=true&output=csv)
+
+<div id="field-list-website-visits-and-website-events-report" />
 
 #### Field list website visits and website events report
 
@@ -114,6 +124,8 @@ Raw data fields are populated in part from data originating in the mobile app us
 
 </Accordion>
 
+<div id="procedures" />
+
 ### Procedures
 
 <div id="setting-up-pba-reports-in-data-locker" />
@@ -154,6 +166,8 @@ Combine mobile app and website data.
   * PBA can determine that a web and a mobile user are the same person.
   * If so, then web reports with PBA include a mobile advertising ID: Android advertising ID, iOS IDFA, OAID, or Amazon advertising ID, as well as `appsflyer_id` and`app_name`.
   * Then, combine mobile and web reports based on mobile advertising ID.
+
+<div id="use-cases-for-pba-and-mobile" />
 
 #### **Use cases for PBA and mobile**
 

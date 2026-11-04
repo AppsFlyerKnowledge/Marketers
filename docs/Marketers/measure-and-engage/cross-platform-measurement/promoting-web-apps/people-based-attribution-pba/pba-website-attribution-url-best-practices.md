@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Best practices to attribute your website attribution campaigns with the best campaign granularity available.
 
+<div id="pba-website-attribution-urls" />
+
 ## PBA website attribution URLs
 
 To get the best campaign granularity results combined with the most accurate attribution in your website attribution data, populate URLs (links), bringing users to your website using the practices detailed in this article.
+
+<div id="url-parametersgroup-and-priority" />
 
 ### URL parameters—group and priority
 
@@ -35,6 +39,8 @@ The AppsFlyer website attribution solution supports several campaign parameter c
 * [Lowest priority] UTM
 
 The <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">PBA media source attribution rules</Anchor> determine how a given user is attributed. Parameter classes are ranked by priority. If more than one parameter class is found on a link, the class having the highest priority is awarded the attribution.
+
+<div id="supported-parameters" />
 
 #### Supported parameters
 
@@ -51,7 +57,11 @@ The <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-r
 | 9 | utm\_medium | Media type | UTM | Y | media\_type |
 | 10 | utm\_campagin | Campaign | UTM | Y | campaign |
 
+<div id="url-parameter-best-practices" />
+
 ## URL parameter best practices
+
+<div id="selecting-url-parameters" />
 
 ### Selecting URL parameters
 
@@ -66,6 +76,8 @@ The use of parameters of multiple classes is illustrated in the context of Meta 
   * However, the campaign can't be determined since *c=* is part of the PID class, but pid isn't included.
   * To solve this, assuming you need the utm\_source for other purposes, consider this option: `www.website.com?pid=facebook_int&c={{campaign.name}}&utm_source=facebook`. With this structure, AppsFlyer uses the PID class to identify the media source. Other PID parameters, such as c=, can be included and the utm\_source is disregarded because it has a lower priority.
 
+<div id="implement-dynamic-urls-using-ad-network-macros" />
+
 ### Implement dynamic URLs using ad network macros
 
 Use network macros (AKA valuetrack params) to save time when building templates and applying URL parameters for paid campaigns.
@@ -78,15 +90,23 @@ Networks use different macros to populate the parameters in the URL. Consequentl
 * Snapchat ads: `www.website.com?af_c_id={{campaign.id}}`
 * Microsoft ads (Bing): `www.website.com?af_c_id={campaignid}`
 
+<div id="consistent-case-within-parameters" />
+
 ### Consistent case within parameters
 
 Parameter values are case-sensitive. For example, utm\_source=channel1 and utm\_source=CHANNEL1 are regarded as different media sources. As such, verify that you are consistent with regard to the letter case.
+
+<div id="use-google-ads-integration-to-automate-granularity" />
 
 ### Use Google Ads integration to automate granularity
 
 In the case of Google Ads campaigns, you can get campaign granularity by integrating PBA with your <Anchor target="_blank" href="/marketers/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads</Anchor> account. This ensures that your data is populated with all campaign hierarchy data without the need for PID or UTM parameters on the URL.
 
+<div id="common-url-parameter-mistakes-to-avoid" />
+
 ## Common URL parameter mistakes to avoid
+
+<div id="question-marks" />
 
 ### Question marks
 
@@ -100,6 +120,8 @@ Example **incorrect** uses: 
 `www.website.com??parameters`
 
 `www.website.com?parameter1?parameter2`
+
+<div id="anchor-signs" />
 
 ### Anchor signs
 

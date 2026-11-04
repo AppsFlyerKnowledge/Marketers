@@ -22,15 +22,21 @@ x-zendesk:
 ---
 > **At a glance:** Get detailed keyword data that lets you see which search terms are most popular, so you can optimize organic conversions.
 
+<div id="keyword-data" />
+
 ## Keyword data
 
 Organic search is a valuable traffic source for your apps. Organic users don't incur acquisition costs and are usually among the most engaged cohorts.
 
 With a few tweaks to your app page, it is possible to increase the amount of new organic installs. To optimize organic searches, you need to get organic keyword data for your app.
 
+<div id="ios-keywords" />
+
 ### iOS keywords
 
 If you work with Apple Ads, you can get <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#get-keyword-data">detailed keyword data</Anchor> for your **non-organic** users attributed to Apple Ads. In iOS, **organic** keyword data is not available.
+
+<div id="android-keywords" />
 
 ### Android keywords
 
@@ -48,9 +54,13 @@ The SDK extracts the keywords when provided by Google in the *&utm\_term* parame
 
 In other scenarios, Google does not share organic keyword data. For example, users searching in Google Play don't have organic keyword data.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This limitation is applied by Google to all external vendors, including all attribution vendors.
+
+<div id="using-thekeyworddata" />
 
 ### Using the keyword data
 
@@ -62,6 +72,8 @@ Organic keyword data is found in the following:
   Go to <Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot</Anchor>, <Anchor target="_blank" href="/marketers/docs/cohort-and-retention-dashboard">Retention, and Cohort</Anchor> reports and group by keywords.  
   Compare the quality of organic users based on their keywords.
 * <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor> messages
+
+<div id="testing-organickeyworddata" />
 
 ### Testing organic keyword data
 

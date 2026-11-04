@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your gaming app.
 
+<div id="-gaming" />
+
 ## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Gaming
 
 Gaming apps include games such as arcade, strategy, educational games, and gambling. The typical events that we suggest recording are in-app purchases, sharing on social media, and inviting friends. In addition, you can include events such as leveling up and completing an in-game tutorial.
@@ -43,6 +45,8 @@ These events are also relevant for gaming apps that run on the following platfor
 * Xbox
 * Windows mobile devices
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
@@ -53,6 +57,8 @@ These events are also relevant for gaming apps that run on the following platfor
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -218,6 +224,8 @@ When the user successfully invited a friend to download and install the app
 | af\_description | Context of invitation | Try this app |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

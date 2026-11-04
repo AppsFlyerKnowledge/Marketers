@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance**: Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements.
 
+<div id="overview" />
+
 ## Overview
 
 SKAdNetwork (SKAN), part of Apple iOS, lets advertisers measure campaign performance while simultaneously preserving user privacy. With SKAdNetwork, post-install activity is measured using only numbers—conversions values— between 0-63.
@@ -38,11 +40,15 @@ AppsFlyer SKAN recommendations:
 * Solves the difficulties you may have in making CV settings decisions.
 * Are based on your specific vertical, geo, SKAN and non-SKAN app data, and user behavior.
 
+<div id="recommendations" />
+
 ## Recommendations
 
 <div id="revenue" />
 
 <Accordion title="Revenue">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **Understanding revenue recommendations**
 
@@ -58,13 +64,19 @@ The recommendations:
 * Save conversion values by using fewer ranges to accurately measure revenue.
 * Take into account both in-app purchases and ad revenue.
 
+<div id="revenue-recommendations-layout" />
+
 #### **Revenue recommendations layout**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>A</span></p></td><td><span>Activity window as saved in your Conversion Studio configuration, during which SKAN revenue is measured.</span></td></tr><tr><td><p><span>B</span></p></td><td><span>Actual app average revenue per paying user (ARPPU) based on precise data from organic and non-organic users attributed via AppsFlyer (AF) methods.</span></td></tr><tr><td><p><span>C</span></p></td><td><p><span>Current configuration ARPPU (SKAN ARPPU), meaning the ARPPU measured <span>based on your current configuration in Conversion Studio for activity window and CV configuration for revenue reporting.</span></span></p></td></tr><tr><td><span>D</span></td><td><p><span>Estimated ARPPU: The expected ARPPU for your selected number of ranges. Calculated by taking all revenue data from the last 14 days for the app regardless of the attribution method (such as SKAN or classic method), divided by the number of paying users. </span><span>See F and G</span></p><p><span><strong>Note:</strong> </span><span>It is important to highlight that this number is not available in other AF dashboards. Here, we show the ARPPU (average revenue per paying user), while in other dashboards, we present the ARPU (average revenue per user).</span></p></td></tr><tr><td><p><span>E</span></p></td><td><p>Approximate error: The d<span>ifference between B and C. This can be a positive or negative error, depending on whether your SKAN ARPPU is overreported or underreported.</span></p><p><span>Example: If actual ARPPU is $10 and SKAN ARPPU is $7, the approximate error is an underreporting of 30% (-$3 dollars per user).</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>Recommendations for your SKAN revenue configuration. Select the number of ranges you want to include in your configuration.</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>Your current revenue configuration as set in Conversion Studio.</span><span></span></p></td></tr></tbody></table>
 
+<div id="using-revenue-recommendations" />
+
 #### **Using revenue recommendations**
 
 **Prerequisite:** Revenue recommendations require at least 14 days of revenue data.
+
+<div id="note" />
 
 > 📘 **Note**
 >

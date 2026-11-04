@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Xbox app with AppsFlyer to receive attribution and event data for your campaigns on Xbox.
 
+<div id="about-xbox-attribution" />
+
 ## About Xbox attribution
 
 The Xbox OS for console and CTV apps runs across all Xboxes.
@@ -32,6 +34,8 @@ The Xbox API integration supports:
 
 * Xboxes.
 * Attribution and event recording for Xbox apps. Meaning, attribution and recording on a user's Xbox device.
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -53,6 +57,8 @@ The following table lists the tasks required to integrate your Xbox app with App
 | Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file by email method. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

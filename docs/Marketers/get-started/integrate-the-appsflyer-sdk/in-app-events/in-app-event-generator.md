@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Automatically create the app code (native Android and iOS, Unity) for sending in-app events by defining the event names and content according to your business needs.
 
+<div id="introduction" />
+
 ## Introduction
 
 In-app events are a major tool for **app owners to measure the quality of their users coming from different sources** based on the actions they take after app installation. Events are also often used for performing CPA-based marketing campaigns.
@@ -38,9 +40,13 @@ By using the In-app event generator marketers can:
 * **Send auto-generated code** to their Android and iOS mobile developers – **saving days of work,** redundant communication, and potential errors.
 * **Re-use their work** if they later update events, add new events, or add new apps.
 
+<div id="using-the-in-app-event-generator" />
+
 ## Using the In-app event generator
 
 **Use the In-app event generator to create an event set for a new app, or to update an existing set.**
+
+<div id="creating-a-new-event-set" />
 
 ### Creating a new event set
 
@@ -52,6 +58,8 @@ By using the In-app event generator marketers can:
 4. Click the **`</>` Code** button to view and copy the generated code for your developers: Java (native Android), Obj-C/Swift (native iOS), or C# (Unity).
 5. Click **Download .zip** to save the event set for future use or for collaborating with devs and colleagues.
 
+<div id="updating-an-existing-event-set" />
+
 ### Updating an existing event set
 
 **To update an existing event set:**
@@ -62,6 +70,8 @@ By using the In-app event generator marketers can:
 4. Click the **`</>` Code** button to view and copy the generated code for your developers: Java (native Android), Obj-C/Swift (native iOS), or C# (Unity).
 5. Click **Download .zip** to save the event set for future use or for collaborating with devs and colleagues.
 
+<div id="adding-events" />
+
 ### Adding events
 
 **To add a new event to the event set:**
@@ -71,6 +81,8 @@ By using the In-app event generator marketers can:
 3. Enter the purpose of the event, describing the business scenario.
 4. Enter the trigger action for the event, explaining the time in the user journey that the event should be sent. This explanation is added as a comment in the generated code for quick reference by the developers.
 5. [Optional] Add one or more parameters to the event.
+
+<div id="adding-parameters" />
 
 ### Adding parameters
 
@@ -83,6 +95,8 @@ By using the In-app event generator marketers can:
 5. To help your developers, type a general description, field type, or the corresponding source for the parameter value in your app. This appears as a comment for each event parameter in the generated code.
 
 **Note**: <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#predefined-and-custom-events">Predefined naming</Anchor> allows automatic mapping of events and parameters to partners and is the recommended method.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

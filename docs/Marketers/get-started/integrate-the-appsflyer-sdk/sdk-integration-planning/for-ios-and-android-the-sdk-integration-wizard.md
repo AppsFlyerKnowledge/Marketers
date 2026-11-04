@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Create and test your SDK integration code automatically.
 
+<div id="about-the-sdk-integration-wizard" />
+
 ## About the SDK integration wizard
 
 Let our <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw">SDK integration wizard</Anchor> guide the app developer through the SDK integration process. The app developer simply provides some credentials and customization choices, and the wizard generates code snippets to be copied and pasted into the project.
@@ -30,6 +32,8 @@ This article enables you to collect and send the app developer all the input and
 
 * [The installation and integration developer journey](#the-installation-and-integration-flow): The wizard takes the developer from installation to successful testing of the integration.
 * [The in-app event developer journey](#the-add-in-app-event-flow): The wizard guides the developer from defining in-app events to successfully testing their transmission to AppsFlyer.
+
+<div id="the-installation-and-integration-flow" />
 
 ## The installation and integration flow
 
@@ -47,6 +51,8 @@ The table below lists the questions that developers need to address during the w
 | Should the SDK support AppTrackingTransparency support (ATT)? | <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Learn about ATT</Anchor>. |
 | What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#reaching-the-tokens-page">Learn how to retrieve your v2 token</Anchor>. |
 
+<div id="the-add-in-app-event-flow" />
+
 ## The add-in-app event flow
 
 After the app developer completes the installation and integration wizard, AppsFlyer SDK will be integrated successfully into your app. The flow includes an in-app event test confirming that the AppsFlyer when your app is installed.
@@ -58,6 +64,8 @@ The table below lists the questions that developers need to address during the w
 | Choose the event name and its event parameters | <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#enter-app-details">Learn which predefined events are available for you.</Anchor> Each event description includes its typical event parameters.  <br />Alternatively, you can use our   <br />[In-app event generator](https://evgen.appsflyer.com/). |
 | Should the SDK receive confirmation that the in-app event was received by AppsFlyer? | Learn about the code that verifies that events were successfully received in AppsFlyer (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure">iOS</Anchor>). |
 | What is your AppsFlyer v2 authentication token? (Required only if you follow the automatic test flow.) | <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#reaching-the-tokens-page">Learn how to retrieve your v2 token</Anchor>. |
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

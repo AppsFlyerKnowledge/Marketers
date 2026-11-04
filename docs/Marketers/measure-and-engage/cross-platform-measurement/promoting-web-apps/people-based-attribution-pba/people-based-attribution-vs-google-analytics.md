@@ -27,12 +27,16 @@ x-zendesk:
 ---
 > **At a glance:** The differences between People-based Attribution (PBA) and Google Analytics
 
+<div id="pba-compared-to-google-analytics" />
+
 ## PBA compared to Google Analytics
 
 PBA and Google Analytics are web analytics and conversion measurement solutions. Each focuses on different measurement aspects. PBA also offers additional benefits.
 
 * PBA is an independent, unbiased attribution authority that focuses on attribution measurement. PBA attributes conversions and revenue to media sources and campaigns that bring users to your website.
 * Google Analytics focuses more on web analytics. It gathers, analyzes, and aggregates data related to user behavior. With Google Analytics you can analyze, for example, user behavior, funnels, web events.
+
+<div id="benefits-of-pba-over-google-analytics" />
 
 ### Benefits of PBA over Google Analytics
 
@@ -42,9 +46,13 @@ The following are the benefits of PBA over Google Analytics:
   * Web-to-app measurement. This metric tells you how many users move from your website to your app. It also tells you which media sources and campaigns bring users to your website who subsequently install your app.
   * <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Raw data for conversions and events</Anchor> that you can pull into your own BI systems. This gives you the ability and power to run your analysis.
 
+<div id="reasons-for-differences" />
+
 ### Reasons for differences
 
 If you compare data from PBA and Google Analytics, refer to the following reasons for differences in data.
+
+<div id="sdk-implementation" />
 
 #### SDK implementation
 
@@ -54,9 +62,13 @@ The way you implement PBA and Google Analytics could affect data collection.
 
 <Accordion title="Google Analytics shows more sessions and visitors">
 
+<div id="cause" />
+
 #### Cause
 
 If Google Analytics loads before the Web SDK users that bounce or users that spend short periods of time on your website are not counted in PBA. This causes discrepancies in data for sessions and visitors.
+
+<div id="solution" />
 
 #### Solution
 
@@ -70,15 +82,21 @@ Whether you <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integratio
 
 <Accordion title="Google Analytics shows more data for sessions, campaign, and conversions">
 
+<div id="cause-1" />
+
 #### Cause
 
 The Web SDK is present only on certain pages. Google Analytics is present on all pages. As a result, Google Analytics collects data from all over your website whereas the Web SDK collects data only from certain pages. This causes discrepancies in data for sessions, visitors, campaigns, and conversions.
+
+<div id="solution-1" />
 
 #### Solution
 
 Implement the Web SDK on all pages of your website.
 
 </Accordion>
+
+<div id="dashboard-settings" />
 
 ### Dashboard settings
 
@@ -88,15 +106,21 @@ Dashboard settings such as timezone and data filter could affect how data is pre
 
 <Accordion title="Timezone settings - discrepancies in data">
 
+<div id="cause-2" />
+
 #### Cause
 
 If the timezone settings in your Google Analytics are different from those in your PBA dashboard, you might encounter discrepancies.
+
+<div id="example" />
 
 > 📄 **Example**
 >
 > Your AppsFlyer dashboard is configured to UTC and your GA dashboard is configured to UTC +13. This means that your GA dashboard is ahead of your AppsFlyer dashboard by one day.
 >
 > Therefore, data that appears in the AppsFlyer dashboard for March 2nd only appears in your GA dashboard if you choose March 3rd in the date range filter.
+
+<div id="solution-2" />
 
 #### Solution
 
@@ -108,15 +132,21 @@ Make sure time zone settings are the same in both AppsFlyer and Google Analytics
 
 <Accordion title="Data filters - discrepancies in data">
 
+<div id="issue" />
+
 #### Issue
 
 Both AppsFlyer and Google Analytics allow you to filter data according to date, attributed media sources, campaigns, and events. Different filters in AppsFlyer and Google Analytics can generate different views for the same data.
+
+<div id="solution-3" />
 
 #### Solution
 
 When you compare data from the two dashboards, make sure no filters are applied to the data set.
 
 </Accordion>
+
+<div id="conversions-and-events" />
 
 ### Conversions and events
 
@@ -126,9 +156,13 @@ Different attribution models, lookback windows, how you send events, and cookie 
 
 <Accordion title="Lookback window - discrepancies in conversion measurement">
 
+<div id="cause-3" />
+
 #### Cause
 
 If you have different lookback windows in Google Analytics and PBA, discrepancies might occur in attribution data.
+
+<div id="solution-4" />
 
 #### Solution
 
@@ -140,9 +174,13 @@ PBA's lookback window is always 30 days. Make sure to set a 30-day lookback wind
 
 <Accordion title="Attribution model - discrepancies in conversion measurement">
 
+<div id="cause-4" />
+
 #### Cause
 
 Different attribution models in PBA and Google Analytics can cause discrepancies in attribution data.
+
+<div id="solution-5" />
 
 #### Solution
 
@@ -154,9 +192,13 @@ Google Analytics offers <Anchor target="_blank" href="https://support.google.com
 
 <Accordion title="Sending events">
 
+<div id="issue-1" />
+
 #### Issue
 
 Both Google Analytics SDK and the Web SDK allow you to send events. If you implement one logic for sending events to Google Analytics and another for sending events to PBA, discrepancies might arise.
+
+<div id="solution-6" />
 
 #### Solution
 
@@ -175,13 +217,19 @@ Click <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guid
 
 Both PBA and Google Analytics use cookies to recognize users.
 
+<div id="cookie-settings-in-google-analytics" />
+
 #### Cookie settings in Google Analytics
 
 Although it is recommended to let Google Analytics SDK automatically handle cookie settings, you can still <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">configure and change cookie settings</Anchor>. Any change in cookie settings might cause discrepancies.
 
+<div id="setting-cookie-expiration" />
+
 #### Setting Cookie Expiration
 
 Google Analytics allows you to set cookie expiry. If you set the Google Analytics cookie to expire before the Web SDK cookie does, it might cause discrepancies.
+
+<div id="example-1" />
 
 > 📄 **Example**
 >
@@ -195,9 +243,13 @@ Google Analytics allows you to set cookie expiry. If you set the Google Analytic
 >
 > This means that your conversion rate in Google Analytics is lower than that in PBA.
 
+<div id="setting-cookie-subdomain" />
+
 #### Setting Cookie Subdomain
 
 Google Analytics allows you to set cookies for subdomains whereas PBA only sets cookies on the top-level domain.
+
+<div id="example-2" />
 
 > 📄 **Example**
 >

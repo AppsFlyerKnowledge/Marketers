@@ -27,11 +27,15 @@ x-zendesk:
 ---
 > **At a glance:** Find conversion rate KPIs in AppsFlyer to understand the strengths and weaknesses found at different stages in your marketing funnel.
 
+<div id="marketing-funnel-stages" />
+
 ## Marketing funnel stages
 
 New users go through a marketing funnel, from the first ad view until revenue is generated. Each of the funnel stages has its own level of success. The more progress a user makes, the better the results for the mobile advertiser. The following image sets out marketing funnel stages.
 
 ![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+
+<div id="marketing-funnel-stages-and-conversion-rates" />
 
 ## Marketing funnel stages and conversion rates
 
@@ -44,6 +48,8 @@ See the table that follows for:
   * **AppsFlyer**: Overview dashboard and <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate reports and analytics</Anchor>
   * **App store**: The data is available only from the app store
 * How advertisers can use the metrics to improve their marketing results
+
+<div id="marketing-funnel-stages-and-conversion-rates-1" />
 
 #### Marketing funnel stages and conversion rates
 
@@ -60,6 +66,8 @@ See the table that follows for:
 | Conversion rate | **Click-to-install rate (installs/clicks)\*100** | Measures how many users installed the app after clicking the ad. | AppsFlyer | <ul><li>Improve audience targeting.</li><li>Reduce app install time.</li></ul> |
 | 6 | In-app event | User performs an in-app action such as a purchase. | AppsFlyer |  |
 | Conversion rate | **Event conversion rate (Event CVR)**<br /><br />**(in-app events/installs)\*100** | <ul><li>Measures how many users perform an in-app event after install. <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#event-cvr">[Article]</Anchor></li><li>Examples: Register, make a purchase, complete a level, etc.</li><li>Enables Cost per Action (CPA) calculations.</li></ul> | AppsFlyer | <ul><li>Provide timely messaging and calls to action.</li><li>Improve the user interface.</li><li>Organize retargeting campaigns using deep links. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Article]</Anchor></li></ul> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

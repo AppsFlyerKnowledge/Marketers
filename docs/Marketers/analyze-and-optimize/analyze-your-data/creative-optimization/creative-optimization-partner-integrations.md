@@ -27,9 +27,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## About partner integrations
 
 A partner integration seamlessly and continuously imports your creatives from campaigns run through the partner, into <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">Creative Optimization</Anchor>.
+
+<div id="data-availability" />
 
 ### Data availability
 
@@ -38,9 +42,13 @@ Once a partner integration is added:
 * The system backfills creative data and AppsFlyer performance data from the past 90 days. The data is typically available in Creative Optimization within 24 hours.
 * Creative data will continue to be pulled from integrated partners twice a day, every day. The data is incorporated, and matched to other performance data points from AppsFlyer such as attribution, spend, clicks, impressions, revenue, etc. (AppsFlyer performance data is refreshed hourly). The **Creative Optimization dashboards display the combined data from all the above processes and are updated once daily** **at UTC + 10** (all creative data from the last 90 days is updated).
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > To see AppsFlyer cost data (such as ROAS), an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">ROI360 subscription</Anchor> is required.
+
+<div id="media-partner-integrations" />
 
 ## Media partner integrations
 
@@ -120,6 +128,8 @@ This section describes how to set up integrations with each partner.
 4. Select the apps that you are promoting.
 5. Enter the AppLovin **Account ID**, **Campaign Management API key**, and **Reporting API Key.**
 6. Then click **Save**.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -437,6 +447,8 @@ This section describes how to set up integrations with each partner.
 6. Complete the sign-in and provide your permissions. Note that in order for AppsFlyer to pull complete data, it is recommended that you have full permissions.
 7. Click **Save**.
 
+<div id="notes" />
+
 > 📘 **Notes**
 >
 > * On January 30, 2023, the new **TikTok for Business—Advanced SRN** integration `tiktokglobal_int` was added, while the **[Legacy] TikTok for Business** integration `bytedanceglobal_int` is gradually phasing out and will be deprecated by March 2024. Learn more in this <Anchor target="_blank" href="/marketers/docs/bulletin-tiktok-for-business-advanced-srn">bulletin</Anchor>.
@@ -467,6 +479,8 @@ This section describes how to set up integrations with each partner.
 
 **Note:** If these roles aren't available to you, please reach out to your Unity Ads CSM.
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### Instructions for retrieving the credentials
 
 **To retrieve the Key ID and Secret key:**
@@ -490,6 +504,8 @@ This section describes how to set up integrations with each partner.
    ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
 5. Copy the **Organization core ID**.
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **To select a service account (organization) role:**
 
 1. In the Unity dashboard, click **Administration**.  
@@ -507,6 +523,8 @@ This section describes how to set up integrations with each partner.
 5. Click **Save**.
 
 **Note:** If you don't have access to these roles, please contact your Unity customer success manager or email [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) to request the required permissions.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **To add a Unity integration to the Creative dashboard:**
 
@@ -571,6 +589,8 @@ YouAppi credentials for integration :
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="creative-integrations-dashboard" />
@@ -594,6 +614,8 @@ Once added, the dashboard displays the status of all your current integrations, 
 
 <Accordion title="Agency integrations">
 
+<div id="add-an-agency-integration" />
+
 #### Add an agency integration
 
 You can integrate with your agency partners to pull their data into the Creative dashboard.
@@ -616,6 +638,8 @@ You can integrate with your agency partners to pull their data into the Creative
 * For each agency whose creative data you want to see on the dashboard, you'll need to create a separate partner integration with the "Agency" checkbox selected.
 * Data is available from transparent agencies only. <Anchor target="_blank" href="/marketers/docs/view-agency-data">Learn more</Anchor>
 * Creative data will be pulled from the agency only. This means that if you selected Google Ads as the partner, as in the example above, but you also have campaigns running directly with Google Ads, you will need to create an additional partner integration for Google ads.
+
+<div id="grant-dashboard-access-to-an-agency" />
 
 #### Grant dashboard access to an agency
 

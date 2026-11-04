@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Allow partners to receive ad revenue information from mediation networks so they can optimize their user acquisition (UA) campaigns. **Note**: This requires an ROI360 Advanced subscription.
 
+<div id="about-sharing-ad-revenue-data-with-partners" />
+
 ## About sharing ad revenue data with partners
 
 You can allow ad networks responsible for user acquisition to receive ad revenue data from mediation networks. The partners can then use the information to optimize their UA campaigns.
@@ -40,6 +42,8 @@ The following table compares the 2 ad-revenue-data-sharing solutions. 
 | --- | --- | --- | --- | --- |
 | UA signals | Daily | Accurate and complete data, commonly used for D3 and D7 optimization. | <ul><li>Impression-level or device-level</li><li>If both are configured, device-level data is sent</li></ul> | ROI360 Advanced |
 | Postbacks | Realtime | Fresh data, commonly used for D0 and D1 optimization. | Impression-level | ROI360 Advanced |
+
+<div id="procedures" />
 
 ## Procedures
 
@@ -87,6 +91,8 @@ You may want to work with ad networks that can receive UA signals. This means th
 <Accordion title="Ad revenue event postbacks for ad networks">
 
 You can configure ad revenue postbacks for ad networks. This means that ad networks responsible for user acquisition can receive real-time data from mediation networks regarding ad revenue and use it to optimize their customers' UA campaigns. 
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -141,6 +147,8 @@ You can configure ad revenue postbacks for ad networks. This means that ad netwo
 * Custom mediation
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Kahuna, an AppsFlyer integrated partner, dedicated to empowering businesses to grow and thrive in the mobile era. We enable a new level of authentic engagement between brands and their customers wherever they are — the web, email, mobile, social channels — through personalized communication at scale. Powered by big data and machine learning, we help create delightful experiences for every customer with the perfect message, delivered on the right channel, at just the right time.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
@@ -38,6 +40,8 @@ Follow the instructions below to configure the integration with Kahuna:
 * iOS – version 3.3.3 and above
 
 2. Integrating with Kahuna requires that the Kahuna <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/deviceid/">Device ID</Anchor> (Kahuna’s unique user identifier) is populated in AppsFlyer's SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+
+<div id="important-note" />
 
 > 📘 **Important Note**
 >
@@ -65,6 +69,8 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 </Tab>
 </Tabs>
 
+<div id="setting-up-kahuna" />
+
 ## Setting up Kahuna
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -87,16 +93,22 @@ The Kahuna configuration window uses only the ***Integration*** tab.
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
 **Kahuna Secret Key, Staging and Production**
 
 Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already have it, you must obtain it from Kahuna to continue with the integration or follow the steps below. [![](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)
+
+<div id="obtaining-the-kahuna-secret-key" />
 
 ### Obtaining the kahuna secret key
 
@@ -117,6 +129,8 @@ Kahuna connects with AppsFlyer via a unique Secret Key. If you don't already hav
 * For the Production environment insert the letter P in the production
 * If you insert both, the events are sent to production
 * Click **Save**
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -169,6 +183,8 @@ Permissions are not available for Kahuna.
 
 </Accordion>
 
+<div id="view-user-attribution-data-in-kahuna" />
+
 ## View user attribution data in Kahuna
 
 The install events can be viewed as Newbies in Kahuna's main dashboard.
@@ -182,6 +198,8 @@ You can search for a specific user or go to “Top People” in your left side n
 Selecting one of the users opens the Mini Profile where you can see the install event “af\_install” in the Top Events section:
 
 [![](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)
+
+<div id="testing-with-sandbox" />
 
 ## Testing with sandbox
 

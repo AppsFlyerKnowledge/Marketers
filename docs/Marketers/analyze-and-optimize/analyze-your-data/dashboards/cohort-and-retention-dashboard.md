@@ -27,15 +27,21 @@ x-zendesk:
 
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Cohort and retention dashboard
 
 Related reading: <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">Differences between Cohort flavors</Anchor>
 
 To use Cohort and retention, select users from one or more apps and segment them by conversion time. Cohort metrics like revenue, ROI, and event conversion rates are available. Break the cohort down, for comparison purposes, into dimensions like campaign or media source. Doing so can uncover patterns or changes in performance over user or campaign life cycles. See <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Cohort use cases</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > Want to know more about cohort reports? Check out this short, informative <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">course on the AppsFlyer Learning Portal</Anchor>.
+
+<div id="using-cohort" />
 
 ## Using Cohort
 
@@ -112,6 +118,8 @@ To use Cohort and retention, select users from one or more apps and segment them
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## Cohort concepts
 
 <div id="cohort-periods" />
@@ -156,16 +164,22 @@ There are 2 cohort trend types:
 * **User lifetime performance**
 * **KPI by attribution time**
 
+<div id="user-lifetime-performance" />
+
 #### **User lifetime performance**
 
 * Each column in the table or point in the chart represents another cohort period (hour/day/week/month). The conversion period is referred to as cohort period 0. The first post-conversion period is cohort period 1 and so on. This enables you to compare user performance post-conversion, starting with the conversion period.
 * You can select which cohort periods to get data for, up to the maximum for each granularity option (hour/day/week/month).
+
+<div id="kpi-by-attribution-time" />
 
 #### **KPI by attribution time**
 
 * Each column in the table or point in the chart represents a cohort period (hours/days/weeks/months) on a period of the selected date range. This enables you to evaluate campaign performance over time and to view campaign KPIs relative to the conversion dates.
 * The maximum number of cohort periods you can select to get data for is 5.
 * If you select to view data as a chart instead of as a table, the chart displays only 1 cohort period (the lowest period selected).
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### Example: User lifetime performance trend vs. KPI by attribution time trend
 
@@ -254,6 +268,8 @@ Use the partial/complete data control to select the data display mode:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="cohort-for-agencies" />
@@ -273,6 +289,8 @@ Use the partial/complete data control to select the data display mode:
 
 <Accordion title="Use cases">
 
+<div id="revenue-sum-by-geo" />
+
 #### Revenue sum by geo
 
 **Chart: Cumulative revenue per user**
@@ -282,6 +300,8 @@ Use the partial/complete data control to select the data display mode:
 **Table: Revenue per day**
 
 [![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+
+<div id="in-app-event-conversion" />
 
 #### In-app event conversion
 

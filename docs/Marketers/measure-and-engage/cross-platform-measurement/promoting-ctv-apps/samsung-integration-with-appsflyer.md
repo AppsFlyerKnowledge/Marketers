@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Samsung Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Samsung.
 
+<div id="about-samsung-ctv-attribution" />
+
 ## About Samsung CTV attribution
 
 The Samsung Tizen OS for streaming runs across all Samsung TVs.
@@ -36,9 +38,13 @@ The Samsung API integration supports:
 * Samsung Smart TVs.
 * CTV-to-CTV attribution and event recording, meaning attribution and recording take place on a user's Samsung device.
 
+<div id="samsung-attribution-flow" />
+
 ### Samsung attribution flow
 
 ![[CONFIRM: Diagram of the Samsung CTV attribution flow, showing install, session, and in-app event data moving from the Samsung app to AppsFlyer via the S2S API or SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -51,6 +57,8 @@ The following table lists the tasks required to integrate your Samsung CTV app w
 | Partner integration | Add Samsung as an ad network (integrated partner) in AppsFlyer.<ol><li><Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#a-activate-partner">Activate partner</Anchor></li><li>[Optional] Turn on <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#e-install-attribution">**View-through attribution**</Anchor>.</li></ol> | Marketer |
 | Link setup | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
 | Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

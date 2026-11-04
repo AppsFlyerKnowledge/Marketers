@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your hotel booking app.
 
+<div id="-hotel-booking" />
+
 ## <Image alt="InApp_Events_hotel.png" src="https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png" width="100px" /> Hotel booking
 
 Hotel booking apps allow travelers to easily book hotels while choosing from the best offers. The typical events that we suggest recording are search, purchase, travel booking, and add to wishlist.
@@ -35,6 +37,8 @@ Recording events can help you determine:
 
 You can attribute preferences such as hotel score, season, country, and the number of kids to users that come from certain media sources. Then, you can optimize your campaigns by targeting these user preferences.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
@@ -45,6 +49,8 @@ You can attribute preferences such as hotel score, season, country, and the numb
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -293,6 +299,8 @@ When the user reaches the thank you page after booking a hotel
 | new\_booking | User's first booking | true |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

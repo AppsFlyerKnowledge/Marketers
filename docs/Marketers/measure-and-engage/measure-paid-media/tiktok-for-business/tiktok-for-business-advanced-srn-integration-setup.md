@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** TikTok for Business (tiktokglobal\_int) is an advanced Self-Reporting Network (SRN) providing app owners the ability to measure click and view-based mobile attribution with AppsFlyer. This includes app installs coming from app and non-mobile TikTok campaigns.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > On January 30, 2023, the new TikTok for Business (Advanced SRN) integration `tiktokglobal_int` was added. The [Legacy] TikTok for Business integration `bytedanceglobal_int` was gradually phased out and officially deprecated on March 20, 2024. TikTok handles the transition, and they will notify you when you can delete the old integration. To avoid any data loss, make sure to keep both integrations live during the transition phase. Learn more in the <Anchor target="_blank" href="/marketers/docs/bulletin-tiktok-for-business-advanced-srn">bulletin</Anchor>.
@@ -30,9 +32,13 @@ x-zendesk:
 
 <Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
+<div id="overview" />
+
 ## Overview
 
 An Advanced SRN integration means that all traffic that includes an advertising ID is attributed and reported as regular SRN traffic. When an advertising ID is unavailable, AppsFlyer measures attribution based on TikTok clicks and impressions, in accordance with privacy restrictions.
+
+<div id="set-up-tiktok-for-business" />
 
 ## Set up TikTok for Business
 
@@ -50,6 +56,8 @@ An Advanced SRN integration means that all traffic that includes an advertising 
 
 The configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. The **Attribution link** tab is not available for TikTok for Business; the remaining tabs are optional.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Some settings differ for iOS and Android devices.
@@ -62,9 +70,13 @@ The configuration window includes the following tabs: Integration, Attribution l
 
 The **Integration** tab includes several sections, as described below.
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 To configure the integration, you will first need to turn on the **Activate partner** toggle. For more information about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating a partner</Anchor>, see integrations.
+
+<div id="advanced-data-sharing" />
 
 #### Advanced Data Sharing
 
@@ -75,13 +87,19 @@ For iOS apps only: Use **Advanced Data Sharing** (ADS) to control how AppsFlyer 
 | AppsFlyer shares all installs and reinstalls with TikTok. | AppsFlyer shares installs and reinstalls only for users who have opted in. |
 | Postbacks are sent according to your configuration:<ul><li>**All media sources, including organic**</li><li>**This partner only**</li></ul> | Postbacks are sent according to the following templates:<ul><li>**Opted-in users:** Postbacks follow the regular template.</li><li>**Opted-out users:** Postbacks follow the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor>.</li></ul> |
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > When activating the integration (`tiktokglobal_int`), the **Advanced Data Sharing** toggle is turned off by default.
 
+<div id="advanced-matching-data-sharing" />
+
 #### Advanced Matching data sharing
 
 When **Advanced Matching data sharing** is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, are shared with TikTok if these fields are included in the event information sent to AppsFlyer. For more information, see <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -96,6 +114,8 @@ A unique code generated in TikTok Ads Manager and used by TikTok to confirm adve
    1. After entering the first app ID, press Enter.
    2. Enter your next TikTok App ID.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Configuring a TikTok App ID does not impact your data in AppsFlyer.
@@ -104,6 +124,8 @@ A unique code generated in TikTok Ads Manager and used by TikTok to confirm adve
 >
 > <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">Learn more about TikTok App ID requirements for iOS 14</Anchor>.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Configure how to send postbacks for app **Installs**. For **Rejected installs** and **Re-engagements**, postbacks are sent to TikTok for Business only.
@@ -111,11 +133,15 @@ Configure how to send postbacks for app **Installs**. For **Rejected installs** 
 * **This partner only** [Default]: Send postbacks only when the event is attributed to this partner, meaning the user who performed it came from this partner.
 * **All media sources including organic**: Send postbacks for events attributed to any partner and for organic events, meaning the user who performed it came from any media source. TikTok for Business recommends changing the selection to **All media sources including organic** for better optimization.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Data Sharing toggle (iOS 14.5+ and later)**.
 >
 > When migrating from the legacy integration (`bytedanceglobal_int`) and activating the new integration (`tiktokglobal_int`), the default selected state for postback installs is "**This partner only**," regardless of its state before the migration.
+
+<div id="install-attribution" />
 
 #### Install attribution
 
@@ -123,12 +149,16 @@ Set the different attribution windows to attribute new installs (first launches)
 
 1. Set the **Install click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** TikTok for Business recommends aligning with them by setting the Install click-through lookback window to 7 days.
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > Setting the click-through lookback window also determines the lookback windows for engaged views and engaged clicks.
 
 1. [Optional] Turn on **Install view-through attribution** and set the lookback windows:
    * **Install view-through lookback window** between 1-24 hours. **Note:** TikTok for Business recommends aligning with them by setting the Install view-through lookback window to 1 day.
+
+<div id="note-6" />
 
 > 📘 **Note**
 >
@@ -142,6 +172,8 @@ Set the different attribution windows to attribute new installs (first launches)
 >
 > When migrating from the legacy integration (`bytedanceglobal_int`) and activating the new integration (`tiktokglobal_int`), the lookback window settings (click-through and view-through) are set to the **default values**, regardless of their state before the migration. You can update these settings.
 
+<div id="reinstall-attribution" />
+
 #### Reinstall attribution
 
 Reinstall attribution lets you measure users who reinstall your app during their re-attribution window and attribute them to eligible TikTok clicks and impressions.
@@ -150,17 +182,23 @@ When turned on, reinstalls are counted as new conversions in TikTok campaigns an
 
 * The **Reinstall attribution** toggle is turned on by default for new integrations.
 
+<div id="note-7" />
+
 > 📘 **Note**
 >
 > Separate lookback windows for reinstalls are not needed. Reinstall attribution uses the same click-through and view-through status and lookback windows as your install attribution settings.
 >
 > When enabled, eligible reinstall postbacks are sent to TikTok.
 
+<div id="re-engagement-attribution" />
+
 #### Re-engagement attribution
 
 Set the different attribution windows to attribute re-engagements of your existing users who viewed, clicked, or engaged with your ad. Note that only re-engagements within the lookback window may be attributed to TikTok for Business.
 
 1. Set the **Re-engagement click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** TikTok for Business recommends aligning with them by setting the Re-engagement click-through lookback window to 7 days.
+
+<div id="note-8" />
 
 > 📘 **Note**
 >
@@ -170,15 +208,21 @@ Set the different attribution windows to attribute re-engagements of your existi
    * **Re-engagement view-through lookback window** between 1-24 hours. **Note:** TikTok for Business recommends aligning with them by setting the Re-engagement view-through lookback window to 1 day.
 2. Set the **Re-engagement window** to either 1-23 hours, 1-90 days, or **Lifetime**.
 
+<div id="warning" />
+
 > ❗️ **Warning**
 >
 > When migrating from the legacy integration (`bytedanceglobal_int`) and activating the new integration (`tiktokglobal_int`), the **Re-engagement** toggle is turned off by default, regardless of its state before the migration. If your legacy integration has <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting campaigns</Anchor>, make sure to turn them on in the new integration to ensure continuity.
 
 Learn more about re-engagement <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#reengagement-rules-and-windows">rules and windows</Anchor>.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignore active users for retargeting
 
 Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">ignore re-engagements and re-attributions</Anchor> of users who launched your app. This means their activity during the window timeframe is not recorded in AppsFlyer.
+
+<div id="note-9" />
 
 > 📘 **Note**
 >
@@ -186,6 +230,8 @@ Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-reta
 
 1. Turn on **Ignore active users for retargeting**.
 2. Set the Inactivity window.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -207,6 +253,8 @@ Configure mapping of in-app events with TikTok for Business events, sent via pos
    1. In the top-left corner, under the partner name, click the app name to open the app list.
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
+
+<div id="note-10" />
 
 > 📘 **Note**
 >
@@ -240,6 +288,8 @@ This integration provides aggregated data on cost, clicks, and impressions for y
 4. After a success message appears in the TikTok window, close it. Your TikTok account details now appear under **Connected accounts**.
 5. From **Advertiser account IDs** > **Advertiser ID**: Enter the TikTok advertiser account ID, and click **Add**.
 
+<div id="note-11" />
+
 > 📘 **Note**
 >
 > To get your **Advertiser ID** from your TikTok business account: Go to **Users** > **Members**, and under the Advertiser account, you can see the ID.
@@ -249,6 +299,8 @@ This integration provides aggregated data on cost, clicks, and impressions for y
 > Connect at least one **Advertiser ID**. You can add up to 30.
 
 1. Click **Save Cost**.
+
+<div id="for-roi360-subscribers" />
 
 #### For ROI360 subscribers
 
@@ -277,9 +329,13 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integra
 
 </Accordion>
 
+<div id="deep-linking-with-tiktok-for-business" />
+
 ## Deep linking with TikTok for Business
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/understanding-deeplinks-and-deferred-deeplinks?lang=en">TikTok supports deep linking and deferred deep linking</Anchor> for multiple campaign objectives on the ad level when creating a campaign, ad group, and ad. Creating deep links for the user to navigate to specific content enables you to serve customized content based on the user's engagement with your TikTok ad.
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
 
 ### Access TikTok conversion data via AppsFlyer's GCD API for deep linking
 
@@ -288,6 +344,8 @@ AppsFlyer provides a number of solutions for deferred deep linking:
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">**UDL (Unified deep linking)**</Anchor>: TikTok clicks include a <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#deep_link_value">deep\_link\_value</Anchor> field (when a deep link is set for the ad), and are supported under the UDL solution.
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD (Get Conversions Data) API**</Anchor>: This is the recommended option to access TikTok user conversion data in real time, directly at the SDK level. The data returned in the GCD API includes the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor> parameter, which holds the actual deep link destination (user destination within the app).
 * **Using conversion data parameters,** you can create custom logic to guide the user to your content using other parameters, such as the Campaign name, Adset name, or any other field returned in the attribution data for TikTok installs.
+
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
 
 ## Web to App: Measure app activity for non-app campaigns
 
@@ -302,9 +360,13 @@ By following the steps below in TikTok Ads Manager, you can effectively measure 
 3. Click **Save**.
 4. Repeat these steps for all relevant ads in your campaign.
 
+<div id="set-up-tiktok-for-business-for-agencies" />
+
 ## Set up TikTok for Business for agencies
 
 Agencies working on behalf of advertisers can turn on the TikTok for Business integration and start getting attribution for their campaigns. However, this integration has some limitations when it comes to agencies.
+
+<div id="agency-limitations" />
 
 ### Agency limitations
 
@@ -328,9 +390,13 @@ The following limitations apply when an agency works with this integration:
 
    <Image alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="664px" />
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > TikTok for Business account IDs must not be shared between the advertiser and the agency. If they are shared, all of the advertiser's installs are automatically attributed on the agency's dashboard.
+
+<div id="send-complex-in-app-events-to-tiktok" />
 
 ## Send complex in-app events to TikTok
 
@@ -338,11 +404,15 @@ To send complex in-app events, events with multiple items, to TikTok, we recomme
 
 TikTok supports up to 7 fields within this object, allowing advertisers to share multiple data points about each item included in the event.
 
+<div id="smart-plus-campaigns-reporting" />
+
 ## Smart Plus campaigns reporting
 
 Smart Plus is a new TikTok campaign type that allows advertisers to test multiple creatives within the same ad unit, helping optimize performance through automated creative testing.
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/about-smart-plus-campaign?lang=en">Learn more about Smart Plus campaigns</Anchor>.
+
+<div id="how-smart-plus-campaigns-are-structured" />
 
 ### How Smart Plus campaigns are structured
 
@@ -352,6 +422,8 @@ Unlike standard TikTok campaigns, which include three levels (campaign, ad group
 2. Ad set
 3. Ad
 4. Creative
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
 
 ### How Smart Plus data is reported in AppsFlyer
 
@@ -363,6 +435,8 @@ AppsFlyer maps TikTok Smart Plus campaign data as follows:
 | Ad group | Ad set | Mapped directly |
 | Ad | Not applicable | Not mapped in AppsFlyer |
 | Creative | Ad | Mapped to the AppsFlyer ad level |
+
+<div id="note-12" />
 
 > 📘 **Note**
 >

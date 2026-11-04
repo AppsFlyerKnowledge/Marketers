@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** OPPO is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-oppo" />
+
 ## Setting Up OPPO
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,10 +46,14 @@ OPPO's configuration window includes 3 active tabs: Integration, Attribution lin
 
 The integration with OPPO only supports the install event in the default postback.
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit**, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default Postbacks
 
@@ -62,6 +68,8 @@ For more details about partner activation please click <Anchor target="_blank" h
 In this tab, you can create the attribution links you want to send to OPPO for attributing OPPO's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution Link Parameters
 
@@ -84,6 +92,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to OPPO.
@@ -93,6 +103,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/4113f5f4f8d4197a8b0ab376d700f421384da959999ee59b187a70b8648b0632-50900028168337.png)
+
+<div id="attribution-link" />
 
 ### Attribution Link
 
@@ -123,6 +135,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant OPPO, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for OPPO, the permissions tab is active and you can grant control to OPPO.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/1538fb9047917631913e5e8cb316cd9f3a9d8c2f862a1a4e8b847b797690180c-50899981130513.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

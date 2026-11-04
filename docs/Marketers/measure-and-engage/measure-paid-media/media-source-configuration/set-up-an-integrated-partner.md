@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Enable attribution measurement, send postbacks to partners, and enable other integration features by setting up the partner connection with AppsFlyer.
 
+<div id="overview" />
+
 ## Overview
 
 Partners, media sources, and third-party platforms integrate with AppsFlyer by API. This article contains the generic instructions to activate and set up the integration, including generating attribution links for non-SRN ad networks.
@@ -64,6 +66,8 @@ All partners, media sources, and other platforms integrated with AppsFlyer are f
 
 * In AppsFlyer, from the side menu, select **Collaboration** > **Partner** **Integrations**. You can use the various search filters.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Invite new partners to AppsFlyer
 
 If the partner you're working with isn't yet integrated with AppsFlyer, you can <Anchor target="_blank" href="/marketers/docs/partner-integrations#invite-new-partners-to-appsflyer">send them an invitation link</Anchor>.
@@ -75,6 +79,8 @@ If the partner you're working with isn't yet integrated with AppsFlyer, you can 
 <Accordion title="Your active integrated partners">
 
 The Active Integrations tab in Partner Integrations shows all your <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">active</Anchor> integrated partners. From this tab, you can learn about the partner and manage the integration.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -104,13 +110,19 @@ The page is structured as follows:
   * **Discard Changes:** Undo the last changes without saving.
   * **Save:** Save the settings of the current tab only.
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### Applicable settings tabs per partner type
 
 <table><thead><tr><th> </th><th colspan="2">Settings tab</th><th> </th></tr><tr><th>Partner type</th><th>Integration </th><th>Permissions</th><th>Remarks</th></tr></thead><tbody><tr><td>Media source</td><td>Y</td><td>Y</td><td><p><strong>Additional tabs available</strong>: Cost, ad revenue, attribution link</p><p>Includes ad networks, affiliate networks, direct publishers, programmatic advertising, China domestic ad networks, and retargeting Networks.<br/>For SRNs the attribution link tab is non-applicable.</p></td></tr><tr><td>Agency </td><td>N</td><td>Y</td><td>Stand-alone agencies that don't function as ad networks</td></tr><tr><td>Third-party platform</td><td>Y</td><td>N</td><td>Analytics or marketing automation platforms</td></tr><tr><td>Marketing partner </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
+<div id="set-up-a-partner-non-srn" />
+
 ## Set up a partner (non-SRN)
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -119,6 +131,8 @@ The page is structured as follows:
 **To access the settings and configure your campaigns with the partner:**
 
 Search for and select your partner, [from Partner Integrations.](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -133,6 +147,8 @@ Partner integrations differ in their requirements and can contain a subset of al
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Complete the sections as required.
+
+<div id="integration-sections" />
 
 #### Integration sections
 
@@ -331,6 +347,8 @@ Generate and save attribution links for the use of click (non-SRN) ad networks, 
 3. Add parameters for <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#android-specific-parameters">Android</Anchor> and <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#ios-specific-parameters">iOS</Anchor>, as needed.
 4. [Optional] Select additional attribution parameters.
 
+<div id="attribution-link-parameters" />
+
 #### Attribution link parameters
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -338,6 +356,8 @@ Generate and save attribution links for the use of click (non-SRN) ad networks, 
 Adding parameters to the attribution link enables you to perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here. When saving the attribution link, all the parameters configured in this tab are saved.
 
 Select which parameters you want to add to the attribution link.
+
+<div id="attribution-link-parameters-1" />
 
 #### Attribution link parameters
 
@@ -350,6 +370,8 @@ Select which parameters you want to add to the attribution link.
 | Subscriber Parameters | Use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 You can add other parameters to the attribution link by typing it in a new parameter box. You can use all <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer available URL parameters.</Anchor> Note that only URI scheme and OneLink parameters are encoded on the attribution link.
+
+<div id="retargeting-settings" />
 
 #### Retargeting settings
 
@@ -369,6 +391,8 @@ To use your link for retargeting:
 5. Set the re-engagement window to determine the time period following the re-engagement, where the user's in-app events are attributed to the retargeting media source.
    * You can set the value in days (1-90), hours (up to 23), or even lifetime.
    * The re-engagement window is added to the link in the af\_reengagement\_window parameter.
+
+<div id="click-through-attribution" />
 
 #### Click-through attribution
 
@@ -392,6 +416,8 @@ This is the attribution link that contains all the set up information you have s
 2. Copy the generated link.
 
 Send the link to the partner to be activated when your leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 #### View-through attribution lookback window
 
@@ -428,15 +454,21 @@ Send it to the partner to be activated when a corresponding ad is watched, usual
 * The best practice is to implement Cost API (ROI360 subscription required).
 * Cost API includes clicks and impressions reports. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > If an advertiser uses an agency to run their campaigns, the agency, and not the advertiser, should integrate with the relevant partners. Otherwise, if both the advertiser and agency integrate with a partner using the same credentials for the same app, cost data is duplicated.
+
+<div id="enabling-cost-data-by-api" />
 
 #### Enabling cost data by API
 
 **To enable the cost API**:
 
 * Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Cost data sync status
 
@@ -450,10 +482,14 @@ Send it to the partner to be activated when a corresponding ad is watched, usual
 
 If you act as a publisher displaying ads in your app, the ad revenue function enables you to attribute ad revenue to the media source that brought the user. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution">About ad revenue attribution.</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### Enable ad revenue attribution
 
 1. Check to see which method, <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">aggregate or user-level attribution</Anchor>, the partner supports.
 2. Follow the appropriate method in the <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#implementation">ad revenue integration guide.</Anchor>
+
+<div id="ad-revenue-api-status-messages" />
 
 #### Ad revenue API status messages
 
@@ -481,9 +517,13 @@ Grant ad networks and agencies specific permissions to access your data and perf
 * If your association with the partner is solely as an agency, use the **Agency permissions** instead of the **Ad network permissions**. By turning on the Agency permissions toggle, you allow the agency to control the Ad network permissions. For more information, see the note in <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer">What does it mean to get permission from a marketer</Anchor>.
 * Permissions are granted for the currently selected app.
 
+<div id="ad-network-permissions" />
+
 #### Ad network permissions
 
 Turning on **Ad network permissions** allows the ad network access to your dashboard and enables granting additional permissions, as detailed in the table below.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -513,9 +553,13 @@ Turning on **Ad network permissions** allows the ad network access to your dashb
 | <span id="access-protect360-dashboard-raw-data"></span>Access Protect360 dashboard & raw data | The ad network can:<ul><li>Access their Protect360 dashboard (including <Anchor target="_blank" href="/marketers/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Access Protect360, Validation Rules, and raw data if they are part of the subscription plan. ProtectLITE doesn't include access to raw data.</li></ul>**Note:** When you have a <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> subscription, the ad network can see the full dashboard. Without a Protect360 subscription, they can see the lite dashboard. |
 | <span id="access-ad-revenue-raw-data"></span>Access ad revenue raw data | The ad network can access their <Anchor target="_blank" href="/partners/docs/ad-revenue-signals-for-ua-ad-networks">ad revenue data to use for UA optimization</Anchor>.   <br />**Note:** This permission is only available for apps with an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription. |
 
+<div id="agency-permissions" />
+
 #### Agency permissions
 
 Read all about <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#what-does-it-mean-to-get-permission-from-a-marketer">what agencies can do</Anchor> when granted permissions.
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >
@@ -552,9 +596,13 @@ Learn more about <Anchor target="_blank" href="/partners/docs/about-agency-accou
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## Test the integration
 
 After completing the partner integration, and before you start running campaigns with the newly added partner, it's important to test the integration. Mistakes are most likely to occur during setup. Testing in advance avoids the risk of spending considerable resources, only to discover your attribution data is missing or wrong. 
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -611,6 +659,8 @@ If your subscription plan with AppsFlyer includes access to raw data, you should
 2. Select the tested media source.
 3. Allow up to 15 minutes from the install and then download the Installs report.
 4. Check the install records from the partner exist and include parameters such as the media source, campaign name, touch time and type, device ID (if applicable), agency name (called "Partner" in the report), and so on.
+
+<div id="important-2" />
 
 > 🚧 **Important!**
 >

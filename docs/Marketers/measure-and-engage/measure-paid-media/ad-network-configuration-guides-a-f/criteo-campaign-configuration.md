@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Criteo, an AppsFlyer ad network integrated partner, drives growth through machine-learning technology, data and performance at scale, and measurable ROI for its clients. In addition to click-based mobile attribution, Criteo also offers retargeting attribution, which you can record with AppsFlyer.
 
+<div id="setting-up-criteo" />
+
 ## Setting up Criteo
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,14 +44,20 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable the setup of integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Criteo prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to Criteo.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -57,6 +65,8 @@ Send automatic postbacks to Criteo following user installs and re-engagements. U
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Criteo.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Criteo.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -74,6 +84,8 @@ In this section, map your AppsFlyer events with Criteo via postbacks.
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Criteo's side.  <br />Obtain the corresponding Event ID from Criteo and set in the text field. |
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >

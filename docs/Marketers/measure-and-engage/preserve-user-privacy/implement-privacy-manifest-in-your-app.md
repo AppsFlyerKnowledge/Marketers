@@ -23,17 +23,25 @@ x-zendesk:
 ---
 > **At a glance:** At WWDC23 Apple introduced new privacy manifests. With Privacy Manifests, app developers are able to provide more accurate descriptions of their apps privacy practices. AppsFlyer has created a Privacy Manifest for the AppsFlyer SDK and the details are explained below.
 
+<div id="background" />
+
 ## Background
 
 With Privacy Manifests, an app developer will be able to create a record of the categories of data that it collects through its app independently and through its use of third-party dependencies, such as third-party SDKs used by the app. This information helps app developers accurately represent privacy practices in their apps including through the nutrition labels they provide to their users.
 
 In many cases, app developers are not aware of what data third-party SDKs are collecting or what a specific SDK is using the data for. The Privacy Manifest enables third-party SDKs to easily pass this information to the app developers, helping them create accurate nutrition labels.
 
+<div id="what-are-nutrition-labels" />
+
 ### What are nutrition labels?
 
 Nutrition Labels provide information about an apps' privacy practices in an easy-to-read and understandable format. End users have more transparency into what data the app is collecting and for what purpose. For more information on Nutrition Labels see <Anchor target="_blank" href="/marketers/docs/preparing-for-the-app-store-review-nutrition-labels">here</Anchor>.
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## What is in the AppsFlyer Privacy Manifest?
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -45,6 +53,8 @@ AppsFlyer SDK 6.14.0 includes the AppsFlyer Privacy Manifest. This includes:
 * [Required Reason APIs](#required-reason-apis)
 * [Tracking domains](#tracking-domains)
 
+<div id="data-usage" />
+
 ### Data usage
 
 Apple requires app and SDK developers to record the category of data, and the reasons, that the app or third-party SDK collects such data.
@@ -52,6 +62,8 @@ Apple requires app and SDK developers to record the category of data, and the re
 App developers can then use Xcode to create a privacy report, summarizing the information about the collected data.
 
 Following are the Data Types collected by the AppsFlyer SDK, that are included in the Privacy Manifest:
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -61,6 +73,8 @@ Following are the Data Types collected by the AppsFlyer SDK, that are included i
 | --- | --- | --- | --- | --- |
 | Device ID (IDFA, IDFV) | NSPrivacyCollectedDataTypeDeviceID | Yes | Yes | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | Product Interaction (Launches) | NSPrivacyCollectedDataTypeProductInteraction | No | No | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### Required Reason APIs
 
@@ -126,9 +140,13 @@ For your convenience, you can copy the following code snippet which includes the
 
 </Accordion>
 
+<div id="tracking-domains" />
+
 ### Tracking Domains
 
 Any Tracking Domain used in an app or a third-party SDK must be recorded in the privacy manifest. If users do not grant permissions (opt-out) through the App Tracking Transparency (ATT) framework, the iOS operating system will block all outgoing traffic to that domain. The AppsFlyer SDK checks the user's ATT status before any server request and executes the request based on whether the user has opted in.
+
+<div id="faq" />
 
 ## FAQ
 

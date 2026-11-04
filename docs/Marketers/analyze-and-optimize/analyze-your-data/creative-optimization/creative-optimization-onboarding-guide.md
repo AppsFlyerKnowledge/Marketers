@@ -24,6 +24,8 @@ x-zendesk:
 
 ![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
 
+<div id="about-creative-optimization" />
+
 ## About Creative Optimization
 
 Creative Optimization is your all-in-one tool for measuring creative performance across campaigns. It centralizes your creative assets from all media channels into one platform or your BI system. Using powerful AI algorithms, creatives used across different campaigns and media sources are analyzed, aggregated, and matched, appearing as one in the dashboards regardless of naming conventions or metadata. You can then analyze performance by various dimensions, metrics, and KPIs.
@@ -36,6 +38,8 @@ After completing the onboarding, you'll be able to:
 * Gain critical insights about your campaigns and their creatives and use this information to optimize.
 
 Follow the onboarding instructions below to get Creative Optimization up and running.
+
+<div id="creative-optimization-onboarding" />
 
 ## Creative Optimization onboarding
 

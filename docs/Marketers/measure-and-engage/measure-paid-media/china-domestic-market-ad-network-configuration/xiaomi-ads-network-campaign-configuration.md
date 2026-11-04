@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Xiaomi, an AppsFlyer ad network integrated partner, operates the Xiaomi Android App Store which ranks in the Top 5 Android App Distribution Platforms in China, with 5 billion app downloads per month. In addition to click-based mobile attribution, Xiaomi also offers view-through attribution, which you can record with AppsFlyer.
 
+<div id="setting-up-xiaomi" />
+
 ## Setting up Xiaomi
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,6 +46,8 @@ Xiaomi's configuration window includes 3 active tabs: Integration, Attribution l
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
@@ -56,6 +60,8 @@ General Settings
 Toggle this to ON if you want to attribute view-through installs from Xiaomi. The view-through lookback slider is available on the attribution link tab (described below).
 
 ![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -101,6 +107,8 @@ In this tab, you can select the permissions to grant Xiaomi, whether the partner
 ![ad_network_permissions.png](https://files.readme.io/2532b798bacccf9028a157e44a9785a285cd81dd521c0c5ec5303ae420827620-50899913924113.png)
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

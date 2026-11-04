@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance**: Use advanced filter and group by options in events and activity dashboards.
 
+<div id="advanced-filter-by-and-group-by-options-in-dashboards" />
+
 ## Advanced filter by and group by options in dashboards
 
 * **Filter by**: Media Source, Geo
@@ -34,6 +36,8 @@ x-zendesk:
 * **Drill-down**: ad set and ad level data
 
 By filtering and grouping the information in the dashboard using the advanced options, you can view the most precise and relevant data for your apps.
+
+<div id="filter-by-options" />
 
 ## Filter by options
 
@@ -58,6 +62,8 @@ Select the Media Source for which you want to view the data.
 Use the **Geo** dropdown to select a specific geo region and view app activities for that region.
 
 ![](https://support.appsflyer.com/hc/en-us/article_attachments/203515273/DB4.png)
+
+<div id="group-by-options" />
 
 ## Group by options
 
@@ -90,6 +96,8 @@ By default, **Media Source / Campaign** is displayed.
 
 When you select **Site ID**, the data displayed is based on your filter selections for Site ID.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Site\_id data is available as of 16 May 2016 and onwards.
@@ -104,6 +112,8 @@ When you select the **Geo** option you are presented with a breakdown of the dat
 
 ![](https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png)
 
+<div id="advanced-filtering" />
+
 ## Advanced filtering
 
 For the advanced filtering options click ![](https://files.readme.io/278e2ad18a60859c446a7a5a6cbc708c012b2200d01c1886c17a662816d1ff27-206127343.png).
@@ -112,6 +122,8 @@ The filter options expand:
 
 ![](https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png)
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Once you select a Campaign/Channel but no Media Source, a warning notification is displayed indicating that you must select a media source first.
@@ -119,6 +131,8 @@ The filter options expand:
 ![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
 
 When the results are shown, the Advance Filter icon changes color from blue to green ![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
+
+<div id="example-user-story" />
 
 ## Example user story
 

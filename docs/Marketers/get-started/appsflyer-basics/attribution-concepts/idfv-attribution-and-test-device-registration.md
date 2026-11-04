@@ -32,6 +32,8 @@ IDFV has the following uses in AppsFlyer:
 * [Cross-promotion attribution](/docs/idfv-attribution-and-test-device-registration#idfv-in-cross-promotion-attribution)
 * [Test device registration](/docs/idfv-attribution-and-test-device-registration#idfv-for-test-device-registration)
 
+<div id="idfv-in-cross-promotion-attribution" />
+
 ## IDFV in cross-promotion attribution
 
 IDFV can be used for matching in a cross-promotion attribution scenario. In this scenario, the user is served an ad within an app your company owns. The ad is promoting another app also owned by your company.
@@ -58,6 +60,8 @@ IDFV matching is employed for cross-promotion attribution in the following scena
 
 </Accordion>
 
+<div id="idfv-for-test-device-registration" />
+
 ## IDFV for test device registration
 
 Advertisers conduct tests during the AppsFlyer onboarding process to verify their app can successfully record and send install events. The IDFV serves as a unique identifier that allows AppsFlyer to recognize the devices used for testing.
@@ -77,6 +81,8 @@ AppsFlyer treats install events that originate from test devices differently to 
 Test device registration can also be done with IDFA. However, an iOS app does not have access to the IDFA when the app does not implement App Tracking Transparency (ATT) or when the user does not consent to share personal data. In these cases, we can use IDFV access to identify the test device because it is not dependent on ATT.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

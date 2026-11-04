@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your entertainment app.
 
+<div id="-entertainment" />
+
 ## <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png" width="100px" /> Entertainment
 
 With the growing requirement by users for on-demand content, the entertainment applications market has become very competitive. The typical events that we suggest recording are user subscriptions, streaming content, and downloading and saving content.
@@ -40,6 +42,8 @@ These events are also relevant for entertainment apps that run on the following 
 * Apple TV (tvOS)
 * Amazon Fire TV
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
@@ -50,6 +54,8 @@ These events are also relevant for entertainment apps that run on the following 
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -118,6 +124,8 @@ When the user opts-in and activates the trial period
 | trial\_method | Method to activate the trial | Free with a new phone, free with a carrier, promotion, coupon code |
 | trial\_method\_identifier | Identifier of the trial method | Name of carrier, for example, **Vodafone**<br /><br />Name of the partner, for example, **Meta ads**<br /><br />Coupon code, for example, **TRA123** |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If you are mapping this event to the Meta ads StartTrial event, and want to associate revenue, use the af\_price parameter instead of the af\_revenue parameter.
@@ -156,6 +164,8 @@ See our Subscription attribution—Overview for more information.
 | expiration\_date | Expiration date of the subscription | 2018/07/18 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

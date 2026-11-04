@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **At a glance:** Measure the broader impact of media sources that engaged your users and assisted before the last touch.
 
+<div id="assisted-installs" />
+
 ## Assisted installs
 
 <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">Assisted installs</Anchor> (AKA multi-touch attribution) are installs where the media source/campaign didn't have the last touch but did touch the user before the install and during the attribution window. One install can have up to 3 assisted installs.
 
 Analytical data of assisted installs are available at both the media source and campaign levels to measure the broader impact of each media source and campaign.
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### View assisted installs metrics in the Overview dashboard
 
@@ -48,9 +52,13 @@ Analytical data of assisted installs are available at both the media source and 
 5. Select the **Assisted installs** metric.  
    The assisted installs chart displays. The blue indicates non-organic installs and the orange indicates assisted installs. ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### Why are assists important
 
 In many cases, potential users get familiar with an app via the assisting source but fail to install it for some reason. Thus measuring and recognizing assists is important in campaign optimization and measurement.
+
+<div id="assisted-installs-reporting" />
 
 ### Assisted installs reporting
 
@@ -73,15 +81,21 @@ For each of the contributing networks, the raw data report includes the followin
 
 See <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#user-journey-reports">user journey raw data.</Anchor>
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > **Media sources with user-level data restrictions** If a <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">media source restricts user-level data</Anchor>, it cannot be attributed as a contributor or an assist to a winning attribution. This means that certain sources, do not appear as contributors even if they engaged the user before the install.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
 > **Agency considerations** Several major ad networks <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">restrict sharing their data with 3rd party platforms</Anchor>, including agencies. Therefore, assisted installs do not appear in the agency dashboard for these networks.
 
 In raw data reports, data on the contributing networks is broken down into separate fields for **Contributors 1–3**.
+
+<div id="total-candidates-field" />
 
 ### Total candidates field
 
@@ -100,6 +114,8 @@ In practice, this means:
 * If there are no contributors, it is for the same reason: the engagements recorded under `total_candidates` were not eligible to serve as contributors.
 
 To summarize, `total_candidates` indicates engagements received, which are not necessarily valid candidates for attribution. It is possible to see value in this field while still having the install attributed to organic or without contributors.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >

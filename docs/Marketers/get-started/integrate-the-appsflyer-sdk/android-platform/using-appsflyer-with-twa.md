@@ -28,13 +28,19 @@ x-zendesk:
 ---
 > **At a glance:** Use AppsFlyer with Trusted Web Activities (TWA) to measure installs and record in-app events.
 
+<div id="introduction" />
+
 ## Introduction
+
+<div id="what-are-trusted-web-activities" />
 
 ### What are Trusted Web Activities?
 
 Trusted web activities (TWA) are a new way to integrate web content with your Android app. The challenge with TWA is to be able to record in-app events. This challenge is addressed in this article. For more information about TWA, see <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">here</Anchor>.
 
 TWA can also be used with Progressive Web Apps.
+
+<div id="what-are-progressive-web-apps" />
 
 ### What are Progressive Web Apps?
 
@@ -46,6 +52,8 @@ This tab discusses PWA that is embedded in a Trusted Web Activity, an in app fu
 
 This form of PWA allows you to measure installs. The other form of PWA, those that are purely web-based, doesn't give you the option to measure installs.
 
+<div id="twa" />
+
 ## TWA
 
 <div id="sending-inapp-events-from-twa" />
@@ -53,6 +61,8 @@ This form of PWA allows you to measure installs. The other form of PWA, those th
 <Accordion title="Sending in-app events from TWA">
 
 In-app events are sent using the AppsFlyer SDK from native app activities. Since TWA is web-based and not a native activity, you cannot send in-app events using the AppsFlyer SDK. You can use <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">server-to-server in-app events</Anchor> as an alternative. Follow the instructions below to send server-to-server events with TWA.
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
@@ -93,6 +103,8 @@ Before you can start sending events from TWA to AppsFlyer, do the following:
        import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
        ```
 
+<div id="getting-the-appsflyer-id" />
+
 ### Getting the AppsFlyer ID
 
 To send server-to-server events, you need the AppsFlyer ID. You can get the AppsFlyer ID from AppsFlyer Android SDK.
@@ -102,6 +114,8 @@ First, make sure to <Anchor target="_blank" href="/marketers/docs/sdk-integratio
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
+
+<div id="sending-the-appsflyer-id-to-twa" />
 
 ### Sending the AppsFlyer ID to TWA
 
@@ -142,6 +156,8 @@ private void launchTwa(String cuid, String af_id) {
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="retrieving-the-appsflyer-id" />
 
 #### Retrieving the AppsFlyer ID
 
@@ -200,6 +216,8 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
+<div id="retrieving-the-appsflyer-id-1" />
+
 #### Retrieving the AppsFlyer ID
 
 JavaScript doesn’t provide an API to allow developers to access headers. Therefore, the server should send the conversion data back to the web activity as a cookie. The server gets the custom headers containing the AppsFlyer ID, parses the data and sends it to the web page as a cookie.
@@ -220,6 +238,8 @@ console.log(appsflyer_id);
 ```
 
 </Accordion>
+
+<div id="sending-the-in-app-event" />
 
 ### Sending the in-app event
 
@@ -244,6 +264,8 @@ The AppsFlyer SDK provides you with conversion data through two APIs:
 * <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">On app open attribution</Anchor> - called when the app is deep-linked into using OneLink.
 
 You can use conversion data to customize web content.
+
+<div id="sending-conversion-data-to-twa" />
 
 ### Sending conversion data to TWA
 
@@ -283,6 +305,8 @@ private void launchTwa(Map<String, String> conversionData, String cuid, String a
 }
 ```
 
+<div id="fetching-the-conversion-data-from-the-client-side" />
+
 ### Fetching the conversion data from the client-side
 
 JavaScript doesn’t provide an API to allow developers to access headers. Therefore, the server should send the conversion data back to the web activity as a cookie. The server gets the custom headers containing the conversion data, parses the data and sends to the web page as a cookie.
@@ -320,6 +344,8 @@ conversion data example:
 To learn more about conversion data use cases, see <Anchor target="_blank" href="/marketers/docs/conversion-data-payloads-and-scenarios">here</Anchor>.
 
 </Accordion>
+
+<div id="pwa" />
 
 ## PWA
 

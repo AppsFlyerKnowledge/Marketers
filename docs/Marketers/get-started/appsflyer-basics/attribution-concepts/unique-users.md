@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn how unique users are counted and used in metrics in AppsFlyer dashboards and reports.
 
+<div id="about-unique-users" />
+
 ## About unique users
 
 A unique user is a term that refers to an attributed device whose presence is counted only once, regardless of how many actions a user performs on the device.
@@ -34,6 +36,8 @@ It's a calculation used in a wide variety of marketing metrics, including:
 * And many more.
 
 The calculation of unique users is based on the device ID (like IDFA or GAID). If no device ID is available (like for iOS SKAN), the AppsFlyer ID is used instead. This ensures that a user is counted once since the device ID or AppsFlyer ID is the same for all the actions, no matter how many sessions or actions they perform.
+
+<div id="use-cases" />
 
 ## Use cases
 

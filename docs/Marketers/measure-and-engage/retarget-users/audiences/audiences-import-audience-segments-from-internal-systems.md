@@ -26,11 +26,15 @@ x-zendesk:
 
 > **At a glance:** Import predefined audience segments from your internal systems (such as BI and CRM) to AppsFlyer Audiences, allowing you to use Audiences to connect and maintain these segments with your advertising partners.
 
+<div id="why-import-audiences" />
+
 ## Why import audiences?
 
 In certain circumstances, you may have predefined audience segments in your internal systems. Importing these audiences (as lists of device and/or user identifiers) to AppsFlyer allows you to use Audiences as your central point for connecting and maintaining all of your audience segments with your advertising partners. Additionally, it enables you to take full advantage of other Audiences features, such as identifier matching/data enrichment and connected campaign metrics.
 
 Consider the following examples:
+
+<div id="examples" />
 
 > 📄 **Examples**
 >
@@ -51,9 +55,13 @@ Consider the following examples:
 > 2. Connect the audience to the partners with which you want to run campaigns.
 > 3. Set up campaigns with the relevant partners to target these users accordingly.
 
+<div id="audiences-import-v20" />
+
 ## Audiences import V2.0
 
 This article describes concepts and procedures related to the new Audiences import feature V2.0 (with options for importing by CSV and API).
+
+<div id="imported-audience-types" />
 
 ## Imported audience types
 
@@ -71,12 +79,16 @@ When you import an audience, you designate it as one of two types, which determi
 * Is uploaded to partners without reference to your account's user identifier policy (meaning all imported identifiers are uploaded to partners).
 * Can be imported using the V2.0 import feature (described in this article).
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * All audiences existing as of November 23, 2021, **are designated as-is audiences and cannot be changed to standard audiences.** You can continue to update these audiences as necessary using either the V2.0 import feature (described in this article).
 > * You can have up to 500 active imported audiences at any one time.
 > * Only an admin can designate a new imported audience as an as-is audience.
 > * When importing an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Learn more</Anchor>
+
+<div id="audience-import-procedures" />
 
 ## Audience import procedures
 
@@ -98,7 +110,11 @@ Prepare a CSV file, with the following specifications:
 
 <Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
+<div id="identifier-hash" />
+
 #### identifier hash
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -185,6 +201,8 @@ Your audience is now visible in the Audiences dashboard, and it has been importe
 
 Your audience has been updated using the CSV file. Note, however, that the revised audience list is not yet uploaded to partners since imported audiences are processed with a <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#eod">data freshness of daily</Anchor>.
 
+<div id="error-messages" />
+
 ### Error messages
 
 | Message | Cause | What to Do |
@@ -244,6 +262,8 @@ The Import Audience API is used to either add or remove devices from an audience
 12. Prepare the API request including the user/device identifiers, and POST it to AppsFlyer.
 
 **Note:** When importing via API, it will take 24 hours for the audience to update.
+
+<div id="response-codes" />
 
 ### Response codes
 

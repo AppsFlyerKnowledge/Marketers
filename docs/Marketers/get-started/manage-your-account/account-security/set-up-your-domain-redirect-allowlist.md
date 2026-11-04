@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Set up a domain redirect allowlist to ensure users are redirected to verified, trustworthy domains, protecting their data and safeguarding your brand integrity.
 
+<div id="about-the-redirect-allowlist" />
+
 ## <Image alt="Main redirect allowlist image.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />About the redirect allowlist
 
 Use the redirect allowlist to define a list of specific root domains and subdomains to which link redirection is allowed, to protect your links from unauthorized redirects, phishing attacks, and fraud. Once your allowlist is active, links you create via AppsFlyer will only redirect users to web URLs whose domains are in the allowlist. Otherwise, users will be sent to the app store. The redirect allowlist applies to <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>, single-platform attribution links via <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">partner integration</Anchor>, and <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">direct attribution links</Anchor> for CTV, PC, and console platforms. The redirect allowlist (and custom web redirection) is available to Zero, Growth, and Enterprise plan subscribers. To prevent abuse, Zero plan subscribers must have a credit card on file (it will not be charged).
+
+<div id="set-up-your-redirect-allowlist" />
 
 ## Set up your redirect allowlist
 
@@ -109,6 +113,8 @@ You can add or delete domains from the allowlist at any time.
 **Note:** Once saved, the updated redirect allowlist will be enforced on clicks within about an hour.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

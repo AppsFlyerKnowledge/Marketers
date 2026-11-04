@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Connecting your X Ads account to AppsFlyer
 
 <Accordion title="Watch">
@@ -32,6 +34,8 @@ x-zendesk:
 </Accordion>
 
 <Accordion title="Read">
+
+<div id="before-you-begin" />
 
 > 📘 **Before you begin**
 >
@@ -65,6 +69,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="x-ads-attribution-setup" />
+
 ## X Ads attribution setup
 
 For a detailed description of the partner configuration page Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">here</Anchor>.
@@ -75,11 +81,15 @@ For a detailed description of the partner configuration page Header, click <Anch
 
 The **Integration Tab** is divided into different sections, as described below. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Partner must be activated</Anchor> on the first visit to enable its setup.
 
+<div id="ad-account-connected" />
+
 ### Ad account connected
 
 Select the accounts to enable attribution.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+
+<div id="click-through-attribution" />
 
 ### Click-through attribution
 
@@ -89,6 +99,8 @@ You can customize this value to 1-23 hours or 1-30 days. We recommend setting th
 
 ![Twitter_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### View-through attribution lookback window
 
 This slider allows you to set the **maximum time from impression to the install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to X Ads, providing there was no other relevant ad click.
@@ -97,19 +109,27 @@ You can customize this value to 1-23 hours or 1-7 days. We recommend setting th
 
 ![Twitter_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="re-engagement-settings" />
+
 ### Re-engagement settings
 
 For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement. **Currently, re-attribution measurement is not supported by X Ads.**
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Ensure Retargeting is enabled for the app on the App Settings page. For details, click <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">here</Anchor>.
+
+<div id="re-engagement-click-through-lookback-window" />
 
 #### Re-engagement click-through lookback window
 
 Set the duration of the **Re-engagement click-through lookback window** (the maximum period of time after an ad is clicked, within which a retargeted user can be attributed to the ad). You can set the value in hours (up to 23) or days (1-30).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Re-engagement view-through lookback window
 
@@ -119,11 +139,15 @@ Then, set the duration of the **Re-engagement view-through lookback window** (th
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### Re-engagement window
 
 Set the duration of the **Re-engagement window** (the period when the user's in-app events are attributed to the retargeting media source). You can set the value in days (1-90), hours (up to 23), or even lifetime:
 
 ![Twitter-reengagement-window.png](https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png)
+
+<div id="in-app-event-postback-settings" />
 
 ### In-app event postback settings
 
@@ -155,6 +179,8 @@ In this section, you can map your AppsFlyer events with your partners via postba
 <Accordion title="Attribution link tab">
 
 X Ads does not use attribution links for attribution.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -196,6 +222,8 @@ In this tab, you can select the permissions to grant X Ads, whether the partner 
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 * **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
@@ -208,11 +236,15 @@ Use these toggles to give the ad network permissions to handle its own configura
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions.</Anchor>
 
+<div id="agency-permissions" />
+
 ### Agency permissions
 
 Learn about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">granting agency permissions</Anchor>.
 
 </Accordion>
+
+<div id="advanced-x-ads-setup-video" />
 
 ## Advanced X Ads setup video
 

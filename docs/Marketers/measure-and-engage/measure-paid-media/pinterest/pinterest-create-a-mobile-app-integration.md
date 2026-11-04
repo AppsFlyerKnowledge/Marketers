@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **At a glance:** Pinterest, an AppsFlyer integrated partner, is one of the top contributors of traffic for bloggers and brands. Pinterest offers both click-based and view-through mobile attribution. In addition, Pinterest also offers click-based retargeting which you can record with AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * After accepting Pinterest Ad Terms, accept Pinterest Mobile Measurement Terms & Conditions <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">here</Anchor>.
 > * Pinterest requires attribution providers to delete their user-level data <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">6 months after the install</Anchor>. This means that the events performed by these users 6 months after they install the app are counted as organic. Past aggregate data remains the same.
 > * Effective September 4, 2023, Pinterest requires attribution providers to <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">restrict the availability of some fields in raw data reports</Anchor> to preserve user privacy and ensure regulation compliance.
+
+<div id="set-up-pinterest" />
 
 ## Set up Pinterest
 
@@ -48,10 +52,14 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit**, you will need to turn on the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
 For more details about partner activation click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -64,6 +72,8 @@ Turn this on if you want to attribute view-through installs from Pinterest. The 
 **Advanced Matching data sharing**
 
 Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Pinterest, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -79,6 +89,8 @@ You can find your Ad Account ID and Access Token directly within the Pinterest A
 1. In AppsFlyer, in the Pinterest **Active integration** page > **Integration** tab, scroll to **In-app event settings.**
 2. Enter the Ad account ID and Access token values in their respective fields.
 
+<div id="legacy-set-tag-id" />
+
 #### [Legacy] Set Tag ID
 
 **To get the Tag ID and set in-app event postbacks:**
@@ -86,6 +98,8 @@ You can find your Ad Account ID and Access Token directly within the Pinterest A
 1. In your Pinterest Business Account, go to Ads > Conversions and copy the Tag ID.  
    If you don't have a tag yet, click Create Tag and complete the creation process. Copy the new tag.
 2. In AppsFlyer, in the Pinterest **Active integration** page > **Integration** tab, scroll to **In-app event settings** and enter the Pinterest Tag ID.
+
+<div id="in-app-event-postbacks" />
 
 ### In-app event postbacks
 
@@ -116,11 +130,17 @@ Generate and save attribution links and send them to the partner for attributing
 
 **To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
 
+<div id="attribution-link-for-retargeting-campaign" />
+
 #### Attribution link for retargeting campaign
 
 Pinterest advises using OS-specific attribution links for retargeting campaigns. Select the **Use a single-platform link** option and add the necessary parameters to the retargeting attribution link.
 
+<div id="deep-link-url" />
+
 #### Deep Link URL
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -136,6 +156,8 @@ Use this field if the link is meant to deep link users to any specific activity 
 
 Once you set Pinterest's cost, don't change the name of any running campaign, ad set, or single ad, nor use dynamic macros with the campaign name parameter, as they may cause serious discrepancies or missing cost data.
 
+<div id="enabling-and-testing-pinterest-integration" />
+
 ### Enabling and testing Pinterest integration
 
 AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features. **Note**: Cost data requires an ROI360 subscription.
@@ -144,9 +166,13 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 
 * Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
+<div id="cost-data-sync-status" />
+
 ### Cost data sync status
 
 <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+
+<div id="stop-pinterest-cost-sync" />
 
 ### Stop Pinterest cost sync
 
@@ -173,6 +199,8 @@ Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-int
 </Accordion>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Troubleshooting
 

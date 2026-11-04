@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure push notification campaigns on both iOS and Android.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer supports the measurement of push notification campaigns from all push providers, as well as campaigns implemented directly on top of Firebase Cloud Messaging or Apple Push Notification Services (APNS).
@@ -37,6 +39,8 @@ There are 2 possible ways to implement the integration:
 * By sending a JSON object with an `af` key in the push notification's payload.
 
 The conversions display in the Overview dashboard, in the retargeting or unified views.
+
+<div id="how-does-it-work" />
 
 ## How does it work?
 
@@ -50,9 +54,13 @@ Once you've completed the steps in this article, your app will work as follows:
 
 In the OneLink scenario, if the OneLink is configured to route the user to a specific location in the app, the deep link flow is triggered.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before continuing, make sure that your app has <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">the AppsFlyer SDK integrated</Anchor> **and** can receive push notifications.
+
+<div id="steps" />
 
 ## Steps
 
@@ -67,12 +75,16 @@ To set up push notification measurement, the following steps must be completed:
 
 First, create a push notification that contains attribution data using one of the following methods.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > In the following demonstration, we're using Firebase as the push provider. The instructions should be applicable to any push provider, with minor differences (if any). Consult the respective push provider's documentation.
 
 <Tabs>
 <Tab title="Using OneLink (recommended)">
+
+<div id="using-onelink-recommended" />
 
 #### **Using OneLink (recommended)**
 
@@ -81,6 +93,8 @@ This is the recommended method of integrating AppsFlyer with push notifications.
 1. Create a <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">OneLink link and set it up for retargeting.</Anchor>  
     **Note**: OneLink short and long URLs are both supported.
 2. In the push notification custom data, add the OneLink that contains the attribution data you want to send to AppsFlyer.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -96,7 +110,11 @@ This is the recommended method of integrating AppsFlyer with push notifications.
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **Using JSON**
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -107,6 +125,8 @@ In the push notification's custom data, add a custom key called `af` that contai
 * `pid`
 * `is_retargeting`
 * `c`
+
+<div id="note-3" />
 
 > 📘 **Note**
 >

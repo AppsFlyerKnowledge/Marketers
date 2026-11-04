@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **At a glance:** When performing attribution tests, register your test device to make sure each install is recorded as a new install. A registered test device prevents installs from being recorded as reinstalls.
 
+<div id="why-register-a-test-device" />
+
 ## Why register a test device
 
 When performing attribution tests, the re-attribution window limits install attributions to one per 90-day window. Therefore, if you repeatedly use the same device to test install attributions, nothing is recorded. Registering a device as a test device prevents repeated installs on the registered device from being recorded as reinstalls.
+
+<div id="methods-for-registering-a-test-device" />
 
 ## Methods for registering a test device
 
@@ -39,6 +43,8 @@ Registering a test device includes selecting the device's operating system (Andr
 You can use one of the following methods to register:
 
 * [Download and install the My Device ID by AppsFlyer app:](#register-a-device-using-the-appsflyer-device-id-app-admin-only) Once you install the app on the test device, you can automatically register the device and share device ID details to your AppsFlyer account. The device will be automatically listed on the **Test devices** page.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -58,6 +64,8 @@ Device identifiers include the following:
 
 * **Android:** AID (GAID or OAID), IMEI, Android ID
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > When registering a test device, you should add IMEI or Android ID device identifiers only if your app collects and uses these identifiers.
@@ -66,6 +74,8 @@ Device identifiers include the following:
 * **Windows Phone:** Windows advertising ID
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## Managing test device registration
 
@@ -177,6 +187,8 @@ Account users can manually register a device:
 
 5. Click **Save**. The device displays in the list of registered devices. **Note**: Although the device displays in the list of registered devices immediately, it may take a few minutes to register in the system and function as intended.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > **Adding more than one identifier**
@@ -203,6 +215,8 @@ A maximum of 200 devices can be registered per account.
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## Registering an iOS test device
 
 The flow chart below illustrates the potential courses of action when registering your iOS test devices.
@@ -213,9 +227,13 @@ Select among the following options when registering your iOS test device:
 
 <Accordion title="Register your test device with IDFA">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **When to use IDFA for test device registration?**
 
 You can register with IDFA if AppTransparency Tracking (ATT) was implemented on your app and you want to run tests as a consenting user. When launching the tested app for the first time, make sure to click **Allow** in the ATT prompt.
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **How to register your test device with an IDFA?**
 
@@ -225,6 +243,8 @@ To register with IDFA, register a device using the AppsFlyer device ID app.
 
 <Accordion title="Register your test device with IDFV">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **When to use IDFV for test device registration?**
 
 When IDFA is not accessible, IDFV is your only option. In the following scenarios you **must use IDFV**:
@@ -232,11 +252,15 @@ When IDFA is not accessible, IDFV is your only option. In the following scenario
 * **ATT was implemented** but you want to run tests as a non-consenting user. When launching the app for the first time, make sure to click **Don't Allow** in the ATT prompt.
 * **ATT was not implemented** at all.
 
+<div id="how-to-register-your-device-with-idfv" />
+
 #### **How to register your device with IDFV**
 
 1. Before you can register the test device with an IDFV, your developer has to install the IDFV test tool app on your test device. For developer instructions you can refer your developer to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-the-idfv-test-tool-app">this article</Anchor>.
 2. After your developer installed the IDFV test tool app, launch it and copy the IDFV displayed.
 3. [Register the test device manually](#register-a-device-manually) using the IDFV.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >

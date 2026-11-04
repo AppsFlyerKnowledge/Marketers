@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **At a glance:** Use Meta Ads Web campaigns to attribute web-to-app conversions from Meta Ads
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer supports integration with Meta Ads (`metaweb_int`) for User Acquisition web-based campaigns, allowing you to report attribution and conversion data directly through Meta's Conversion API (CAPI). Meta can then utilize this data to optimize ad targeting, measure performance, and build custom audiences.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > At present, the integration with Meta Web does not support sending re-engagement postbacks to CAPI.
 
+<div id="prerequisites" />
+
 ### Prerequisites
 
 Before activating the Meta Ads integration, make sure that you have a [business account in Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
+
+<div id="how-to-create-a-meta-web-ads-campaign" />
 
 ### How to create a Meta Web Ads Campaign
 
@@ -46,6 +54,8 @@ And the following optional steps:
 
 * [Create a landing page with OneLink Smart Script](#create-a-landing-page-with-onelink-smart-script) (Optional)
 * [Create a landing page with OneLink Smart Banners](#create-a-landing-page-with-onelink-smart-banners) (Optional)
+
+<div id="set-up-meta-web-ads-integration-in-appsflyer" />
 
 ## Set up Meta Web Ads integration in AppsFlyer
 
@@ -110,6 +120,8 @@ To set in-app events postbacks perform the following:
    * **All media sources, including organic,** send postbacks for events attributed to any partner and organic events.
 7. In the **including** column, select whether events will be sent with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Note**
    >
    > If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option will cause the postback to fail.
@@ -121,11 +133,15 @@ To set in-app events postbacks perform the following:
     2. Select a different app from the drop-down list.
     3. Repeat the integration steps for the selected app.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > If you are sending S2S events to `metaweb_int`, the S2S payload must include the `ua` (User Agent) and `ip` (IP address) parameters. These values are required for Meta CAPI campaign optimization. AppsFlyer includes them automatically for SDK events. For S2S events, advertisers must send them explicitly. See <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">Server-to-server events API for mobile</Anchor>.
 
 </Accordion>
+
+<div id="set-up-appsflyer-integration-in-meta-ads" />
 
 ## Set up AppsFlyer integration in Meta Ads
 
@@ -142,6 +158,8 @@ Perform the next steps in Meta Ads Manager.
 3. [Optional] If you want to add a custom objective to the above options perform the following:
    1. In Meta Ads, select the custom event that you want to set as a campaign objective and mark it as a conversion action in Meta Ads.
    2. In AppsFlyer, in the **Meta Web integration** page, under **In-app event postbacks** map an AppsFlyer event to a custom partner event (under the **mapped to partner event** column) and name it with the same name as the conversion action in Meta Ads.
+
+      <div id="note-3" />
 
       > 📘 **Note**
       >
@@ -169,6 +187,8 @@ Perform the next steps in Meta Ads Manager.
 
      For all these use cases create a [landing page with a Smart Script](#create-a-landing-page-with-onelink-smart-script) or [a Smart Banner](#create-a-landing-page-with-onelink-smart-banners).
    * **AF attribution links:** Using AF attribution links (OneLink, single platform or cross-platform) is recommended when you want the user to be redirected directly to the store to download the app without first visiting a landing page.
+
+     <div id="important" />
 
      > 🚧 **Important!**
      >
@@ -223,15 +243,21 @@ Perform the next steps in Meta Ads Manager.
      https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
      ```
 
+   <div id="note-4" />
+
    > 📘 **Note**
    >
    > Meta adds the `fbclid={{fbclid}}` to the destination URL automatically when the ad is clicked
 
 
+   <div id="tip" />
+
    > 👍 **Tip**
    >
    > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
+
+<div id="note-5" />
 
 > 📘 **Note**
 >
@@ -247,11 +273,15 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 
 [![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > Make sure not to choose **App Events,** otherwise Meta will claim those conversions using the SRN API, which can cause reporting and optimization misalignments.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Create a landing page with OneLink Smart Script
 
@@ -287,6 +317,8 @@ To set up your smart script Meta Ads campaigns perform the following:
 1. Set up the template for the campaign's OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
 2. Create a smart script. For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">How to create a OneLink Smart Script</Anchor>.
 
+   <div id="note-6" />
+
    > 📘 **Note**
    >
    > The instructions below focus on the specific steps required to set up a Meta Ads campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns see the <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">How to create a OneLink Smart Script</Anchor> section of the <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Script V2 setup</Anchor> article.
@@ -300,6 +332,8 @@ To set up your smart script Meta Ads campaigns perform the following:
      * Version 2.8.0 and below: The `fbclid` parameter should be mapped manually in the **URL parameter mapping** section of the **Smart Script** page:
        1. In **Mapping for**, select **Custom parameter**.
        2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **fbclid**.
+
+     <div id="note-7" />
 
      > 📘 **Note**
      >
@@ -328,12 +362,16 @@ To set up your smart script Meta Ads campaigns for cross-platform landing pages 
      * [A demo and instruction](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/) for creating a cross platform landing page.
    * Remind your developer to include the incoming `fbclid` parameter in the outgoing URL.
 
+     <div id="note-8" />
+
      > 📘 **Note**
      >
      > To display in AppsFlyer raw data reports, the incoming `fbclid` parameter must also be mapped (in addition to the outgoing `fbclid` parameter) to one of the outgoing `af_sub[1-5]` parameters.
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## Create a landing page with OneLink Smart Banners
 
@@ -364,6 +402,8 @@ To set up your Smart Banners Meta Ads campaigns perform the following:
 1. Set up the template for the campaign's OneLink attribution links. For more information, see <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">How to create OneLink templates</Anchor>.
 2. Create a Smart Banner.
 
+   <div id="note-9" />
+
    > 📘 **Note**
    >
    > The instructions below focus on the specific steps required to set up a Meta Ads campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers#setup">setup section</Anchor> of the <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners—mobile web-to-app (for marketers)</Anchor> article.
@@ -373,20 +413,28 @@ To set up your Smart Banners Meta Ads campaigns perform the following:
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## View web-to-app attribution data
 
 Although web-based conversion events are sent to Meta under the original `metaweb_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `Facebook Ads` PID. This applies to both primary conversion events and conversion assist events.
 
 This unified reporting view lets you analyze both web and app campaign performance in one place, including full web and mobile cost reporting.
 
+<div id="view-in-the-dashboard" />
+
 ### View in the dashboard
 
 All Meta web-to-app attributions appear under `Facebook Ads` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Meta Ads data.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### View in raw data and API reports
 
 * **Raw data exports and API responses** include the `Facebook Ads` PID in the `media_source` field for Meta web activity. To verify web campaign setup details, refer to the `original_url` field that shows `metaweb_int` as the PID used during the creation of web campaigns.
 * **Postback reports** show `metaweb_int` as the original media source to which the postback was sent.
+
+<div id="traits-and-limitations" />
 
 ## Traits and Limitations
 

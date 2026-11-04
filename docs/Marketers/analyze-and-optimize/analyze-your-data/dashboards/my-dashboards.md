@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Use "My Dashboards" to design your own dashboard, adding and customizing widgets, charts, and tables that display the exact performance metrics you want, in the way you want to view them.
 
+<div id="about-my-dashboards" />
+
 ## About My Dashboards
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/euXEfhL0cmE?si=SI8qQAd7EpSeEaJk" providerUrl="https://www.youtube.com" />
@@ -41,11 +43,15 @@ My Dashboards lets you:
 * Gain critical insights that help you optimize your marketing strategy and plan for the future.
 * Create custom dimensions to group and filter dashboard data by business categories that match your reporting needs.
 
+<div id="get-started" />
+
 ## Get started
 
 The My Dashboards user interface is designed for interactive dashboard building. Use the information in this article to learn how to create new dashboards, add widgets, understand what metrics, filters, and group-by dimensions are available, and more.
 
 **Tip**! Familiarize and experiment with the platform to get a feel for it before reviewing this article in detail.
+
+<div id="proceduresusing-the-platform" />
 
 ## Procedures—Using the platform
 
@@ -136,6 +142,8 @@ Custom dimensions help you:
 * Enhance reporting: Build custom dashboard views that align with your reporting needs.
 * Make smarter decisions: Add business-specific context to your KPIs, making it easier to identify trends, patterns, and optimization opportunities.
 
+<div id="suggested-custom-dimensions" />
+
 #### Suggested custom dimensions
 
 | **Suggested dimension** | **Description** |
@@ -143,6 +151,8 @@ Custom dimensions help you:
 | Campaign Objective | Classify campaigns by optimization objective to compare performance side by side. |
 | Regions | Map individual geos into business regions to analyze geo performance. |
 | Paid vs. Owned data | Group media sources into high-level categories to compare paid, organic, and owned media performance. |
+
+<div id="pre-built-retargeting-campaigns-dimension" />
 
 #### Pre-built Retargeting Campaigns dimension
 
@@ -165,6 +175,8 @@ If your campaign naming convention is different, you can:
 * Duplicate the dimension. Click **Duplicate now**, change the rules, and click **Save**. The original dimension stays unchanged.
 * Create your own dimension from scratch. See [Create a custom dimension](#create-a-custom-dimension).
 
+<div id="example-use-cases" />
+
 #### Example use cases
 
 | **Use case** | **Description** |
@@ -173,6 +185,8 @@ If your campaign naming convention is different, you can:
 | Group media sources by UA manager | Create a custom dimension based on Media source to group different media sources by team members. For example, group Google and Meta campaigns under Kevin, and TikTok and Instagram campaigns under Natasha. |
 | Compare geo tiers | Group countries by business priority or revenue potential to compare performance across tiers. |
 | Analyze product or business line performance | Create a custom dimension based on Campaign to group campaigns by the product or service they promote. This helps you see which product drives the most installs or revenue when campaigns for multiple products run across different networks. |
+
+<div id="procedures" />
 
 ### **Procedures**
 
@@ -285,6 +299,8 @@ In table widgets, you can order data by a specific metric to control which rows 
 
 By default, My Dashboards orders table data using the default table ordering logic. When you choose a metric to order by, AppsFlyer fetches and displays the top rows based on the selected metric.
 
+<div id="limitations" />
+
 #### Limitations
 
 Some metrics don't support ordering. Ordering isn't currently supported for:
@@ -298,6 +314,8 @@ Some metrics don't support ordering. Ordering isn't currently supported for:
 <div id="skan-data" />
 
 <Accordion title="SKAN data">
+
+<div id="skan-and-appsflyer-data-scope-differences" />
 
 #### SKAN and AppsFlyer data scope differences
 
@@ -314,6 +332,8 @@ The following table explains key differences between SKAN data and AppsFlyer att
 | Currency | App-specific currency | USD |
 
 You can explore a wide range of **SKAdNetwork (SKAN) metrics** directly in My Dashboards, allowing you to view most of your **iOS performance (SKAN, Classic, and SSOT)** all in one place. Advanced users who need longer post-install windows or null CV data can still use <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">**SKAN Overview**</Anchor> for deeper insights.
+
+<div id="available-skan-metrics" />
 
 #### Available SKAN metrics
 
@@ -334,6 +354,8 @@ You can explore a wide range of **SKAdNetwork (SKAN) metrics** directly in My Da
 | In-App Events | CPA | SKAN event Unique Users / Cost | D1-D2 |
 | In-App Events | Revenue | SKAN event Revenue | D1-D2 |
 
+<div id="supported-dimensions" />
+
 #### Supported dimensions
 
 1. App ID
@@ -346,6 +368,8 @@ You can explore a wide range of **SKAdNetwork (SKAN) metrics** directly in My Da
 8. Agency
 9. Attributed touch type
 10. Attribution type
+
+<div id="how-to-use" />
 
 #### How to use
 
@@ -361,9 +385,13 @@ You can explore a wide range of **SKAdNetwork (SKAN) metrics** directly in My Da
 
 <Accordion title="Cross-platform dashboard">
 
+<div id="intro" />
+
 #### Intro
 
 Traditionally, attribution has been device-centric, associating events and conversions with individual devices. With the new cross-platform model, this can be shifted to user-based attribution. User interactions across multiple devices and platforms are unified using a single identifier: the Customer User ID (CUID). Providing clearer insights into the full user journey, improved attribution accuracy, and better-informed marketing decisions.
+
+<div id="prerequisites" />
 
 #### Prerequisites
 
@@ -372,6 +400,8 @@ To set up cross-platform attribution, you need to apply a few settings in AppsFl
 * In AppsFlyer, assign your apps to a product line, opt in to cross-platform attribution, re-engagement cross-platform attribution, and specify the inactivity restoration window. For more information, see <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution#how-to-set-up-a-product-line">Set up a product line</Anchor> and <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-re-engagement-attribution">Cross-platform re-engagement attribution.</Anchor>
 * In your app, set the AppsFlyer SDK to send events with CUIDs. For developer instructions, see [Set Customer User ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id).  
   You can also send CUIDs via server-to-server (S2S) integration.
+
+<div id="dashboard-overview" />
 
 #### Dashboard overview
 
@@ -386,6 +416,8 @@ From the top menu bar, you can select the Product line, View type, Date range, a
 The current view types are **Unified** and **User Acquisition**.
 
 <Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+
+<div id="widgets" />
 
 #### Widgets
 
@@ -404,9 +436,13 @@ By default, the template comes with the widgets listed below. However, you can a
 * **Re-engagements** - Re-engagements count total eligible cross-platform re-engagement conversions attributed to the media source that brought an existing user back, across platforms, within the selected date range.  
   **Note:** When cross-platform re-engagement attribution is enabled, dashboard results can reflect both the original acquisition source and the media source credited with cross-platform re-engagement, depending on the selected metric, widget, and attribution context.
 
+<div id="metrics-and-dimensions" />
+
 #### Metrics and Dimensions
 
 All the metrics found in the [My Dashboards](/docs/my-dashboards#metrics) can be used for Cross-platform attribution. There are some unique metrics and dimensions that are only relevant to Cross-platform attribution.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -420,6 +456,8 @@ They are:
 * **Platform group** - An aggregate of all the platforms into groups. For example, a mobile platform group would consist of Android and iOS. A CTV platform group would consist of Roku, Samsung, LG, etc. <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#supported-platforms">see the full list here</Anchor>.
 * Product line - platform-specific apps that belong to a single brand. See more details <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution">here</Anchor>
 
+<div id="web-attribution-in-the-cross-platform-dashboard" />
+
 #### Web attribution in the cross-platform dashboard
 
 Web sessions and events are included in the cross-platform dashboard once your web app is part of a Product Line with cross-platform attribution enabled (see Prerequisites above). Web activity is stitched together with mobile, CTV, PC, and console activity using the CUID, so you see the full user journey instead of the web visit in isolation.
@@ -430,6 +468,8 @@ Here's what to keep in mind when analyzing web data in this dashboard:
 * **Events before a custom user acquisition event are excluded from cohorts** - If you've set a custom user acquisition event instead of the default first-visit, web events that happen before that event are classified as `PRE_USER_ACQUISITION` and excluded from cohort metrics, because cohorts are based on the acquisition date.
 * **Results can differ from the standalone Web Attribution report** - Once web activity is stitched into the full cross-platform picture, attribution can shift compared to the <Anchor target="_blank" href="/marketers/docs/export-web-performance-measurement-report-data-from-data-locker">Web Attribution report</Anchor>.
 * **Check each metric's attribution method** - Metrics labeled Classic reflect device- or platform-level attribution, not the cross-platform (CUID-based) view. Select Cross-platform to see web data stitched into the unified user journey.
+
+<div id="limitations-1" />
 
 #### **Limitations**
 
@@ -471,15 +511,21 @@ To set My Dashboards preferences:
 
    <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
+<div id="theme" />
+
 #### Theme
 
 Choose the dashboard theme. Select Light or Dark mode.
+
+<div id="auto-save" />
 
 #### Auto-save
 
 Saves layout changes and widget adjustments automatically.
 
 Note: [Filter changes](/docs/my-dashboards#view-dashboard) aren't auto-saved and must be saved manually to apply the next time you open the dashboard.
+
+<div id="data-labels" />
 
 #### Data labels
 
@@ -489,6 +535,8 @@ Changes to preferences take effect immediately.
 
 </Accordion>
 
+<div id="concepts" />
+
 ## Concepts
 
 <div id="metrics" />
@@ -496,6 +544,8 @@ Changes to preferences take effect immediately.
 <Accordion title="Metrics">
 
 The metrics available for widgets (tables, KPIs, and charts) are described in the following table.
+
+<div id="custom-metrics" />
 
 > 🚧 **Custom metrics**
 >
@@ -596,6 +646,8 @@ Custom dimensions can also be used to group and filter widget data. Custom dimen
 | Platform | The platform the app is running on such as Android, iOS, Samsung, LG, Roku, etc. |
 | Platform group | An aggregate of all the platforms (see Platform above) into groups. For example, a mobile platform group would consist of Android and iOS. A CTV platform group would consist of Roku, Samsung, LG, etc. <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#supported-platforms">see the full list here</Anchor>. |
 
+<div id="ssot-supported-dimension-metrics" />
+
 #### SSOT supported dimension metrics.
 
 | Dimension | Remarks |
@@ -619,11 +671,15 @@ Custom dimensions can also be used to group and filter widget data. Custom dimen
 Not all metrics in My Dashboards support all groupings. Metric compatibility depends on the metric configuration, including period, time breakdown, and the attribution method.  
 See below which groupings are supported for each metric set.
 
+<div id="installs-re-attributions-re-engagements" />
+
 #### Installs, Re-attributions, Re-engagements
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
 | - | Daily, Weekly, Monthly | Classic | All dimensions supported |
+
+<div id="cost-impressions-clicks-ctr-click-to-install-rate-ipm-ecpi" />
 
 #### Cost, impressions, clicks, CTR, Click-to-install rate, IPM, eCPI
 
@@ -631,11 +687,15 @@ See below which groupings are supported for each metric set.
 | --- | --- | --- | --- |
 | - | Daily | - | Product line, Platform, Platform group, Conversion type |
 
+<div id="click-through-view-through" />
+
 #### Click Through, View Through
 
 | **Period** | **Time breakdown** | **Attribution method** | **Unsupported dimensions** |
 | --- | --- | --- | --- |
 | - | Daily | Classic | Product line, Platform, Platform group, Conversion type, App version, OS version |
+
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions" />
 
 #### Total revenue, ROAS, ROI, ARPU, gross-profit, Sessions
 
@@ -648,6 +708,8 @@ See below which groupings are supported for each metric set.
 
 Net revenue, Net ROAS, Net ROI, Net ARPU, and Net profit support the same breakdowns as their gross counterparts, for **Activity and Cohort periods only** (not LTV).
 
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions-retention-rate" />
+
 #### Total revenue, ROAS, ROI, ARPU, gross-profit, Sessions, Retention rate
 
 | **Period** | **Time breakdown** | **Attribution method** | **Unsupported dimensions** |
@@ -657,6 +719,8 @@ Net revenue, Net ROAS, Net ROI, Net ARPU, and Net profit support the same breakd
 | M0–36 | Monthly | Classic | Source, Product line, Platform, Platform group, Install app store, Store product page, Engagement type |
 
 Note: Retention rate is available only for cohort-based metrics.
+
+<div id="in-app-events-unique-users-count-revenue-ecpi-conversion-rate-average-count" />
 
 #### In-app events: Unique users, Count, Revenue, eCPI, Conversion rate, Average count
 
@@ -670,6 +734,8 @@ Note: Retention rate is available only for cohort-based metrics.
 | D0–1 | Daily | SKAN | Product line, Platform, Platform group, Conversion type |
 | D2, D7 | Daily | SSOT | Product line, Platform, Platform group, Conversion type |
 
+<div id="active-users" />
+
 #### Active users
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
@@ -677,11 +743,15 @@ Note: Retention rate is available only for cohort-based metrics.
 | Actual | Daily | Classic | App, Media source, Campaign, Campaign ID, GEO, Agency |
 | Actual | Monthly | Classic | App, Media source, Campaign, Campaign ID, GEO, Agency |
 
+<div id="active-users-last-31-days" />
+
 #### Active users last 31 days
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
 | Actual | Daily | Classic | App, Media source, Campaign, Campaign ID, GEO, Agency |
+
+<div id="daumau" />
 
 #### DAU/MAU
 
@@ -689,6 +759,8 @@ Note: Retention rate is available only for cohort-based metrics.
 | --- | --- | --- | --- |
 | Actual | Daily | Classic | App, Media source, Campaign, Campaign ID, GEO, Agency |
 | row 2 cell content | row 2 cell content | row 2 cell content |  |
+
+<div id="uninstalls" />
 
 #### Uninstalls
 
@@ -699,17 +771,23 @@ Note: Retention rate is available only for cohort-based metrics.
 | W0–156 | Weekly | Classic | Source, Product line, Platform, Platform group, Install app store, Store product page |
 | M0–36 | Monthly | Classic | Source, Product line, Platform, Platform group, Install app store, Store product page |
 
+<div id="assisted-installs" />
+
 #### Assisted installs
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
 | - | Daily | Classic | App, Media source, Campaign |
 
+<div id="skan-duplicates" />
+
 #### SKAN duplicates
 
 | **Period** | **Time breakdown** | **Attribution method** | **Supported dimensions** |
 | --- | --- | --- | --- |
 | - | Daily | SSOT | Product line, Platform, Platform group, Conversion type, App version, OS version |
+
+<div id="first-visits-re-visits" />
 
 #### First Visits, Re-visits
 
@@ -719,12 +797,16 @@ First Visits and Re-visits aren't supported for any period, time breakdown, or a
 | --- | --- | --- | --- |
 | All | All | All | Store product page, Platform group, Product line, Conversion type |
 
+<div id="multiple-metrics-in-a-table" />
+
 #### Multiple metrics in a table
 
 * If some metrics aren't supported by the selected grouping, only those metrics display **N/A**.  
   Supported metrics continue to show data.
 * If a metric isn't applicable for the selected configuration, the following message appears:  
   **"This metric isn't applicable for the selected groupings or filters."**
+
+<div id="multiple-groupings-in-a-table" />
 
 #### Multiple groupings in a table
 
@@ -741,6 +823,8 @@ When using **two groupings**:
 
 Users can configure the date range at both the dashboard level and widget level.
 
+<div id="dashboard-level" />
+
 #### Dashboard level
 
 <Image alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
@@ -748,6 +832,8 @@ Users can configure the date range at both the dashboard level and widget level.
 * By default, the dashboard follows the **Per widget** date range. In this mode, each widget displays data according to its individual settings.
 * The selected time range for each widget is always displayed as a secondary title.
 * When applying a date range other than **Per widget**, all widgets in the dashboard update to reflect the chosen time frame.
+
+<div id="widget-level" />
 
 #### Widget level
 
@@ -844,6 +930,8 @@ The comparison adds:
 
 You can also sort the table by percentage change to quickly surface segments with the largest increases or decreases.
 
+<div id="comparison-period-options" />
+
 ### Comparison period options
 
 Depending on the selected date range, the following comparison periods are available:
@@ -854,12 +942,16 @@ Depending on the selected date range, the following comparison periods are avail
 * **Previous month:** For a last-month range, compares each date to the date exactly 4 weeks earlier (same number of days, not necessarily calendar month).
 * **Custom:** When selecting a custom end date, the previous period automatically matches the same number of days.
 
+<div id="how-to-add-a-compare-to-in-tables" />
+
 ### How to add a compare to in tables
 
 1. In a table widget, go to Edit table.
 2. In the widget settings header, click **Compare to.**
 3. Select a period. The compared period should be chosen according to the selected period.
 4. Save changes.
+
+<div id="use-case-example" />
 
 ### Use case example
 
@@ -873,6 +965,8 @@ Add a comparison to the previous week and sort by **% Change DESC** to see which
 <Accordion title="Conditional formatting">
 
 Conditional formatting helps visualize performance trends in your dashboard at a glance. By applying color-based indicators directly on your table widgets, you can quickly identify patterns, outliers, and values that require attention, without manually scanning through numbers.
+
+<div id="available-formatting-types" />
 
 #### Available formatting types
 
@@ -897,6 +991,8 @@ You can apply one of the following formatting options to your table cells:
   This approach highlights which activities deliver strong results, allowing faster, data-driven decisions on campaign optimization and budget allocation.
 
   <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+
+<div id="how-to-apply-conditional-formatting" />
 
 #### How to apply conditional formatting
 
@@ -937,13 +1033,19 @@ Note: The retargeting view doesn't contain any cost-related metrics. Use the Use
 
 <Accordion title="Late event dates">
 
+<div id="understand-event-dates-and-late-events" />
+
 #### Understand event dates and late events
 
 Some dashboard widgets aggregate data using a daily processing service that runs **once a day**, at around **02:00 UTC**. Because of this, **in-app events that arrive shortly after midnight UTC** can display an **event date** that differs from the date you expect in the dashboard.
 
+<div id="what-are-late-events" />
+
 ##### What are late events?
 
 Late events are **in-app events arriving to AppsFlyer between 00:00 and 02:00 UTC**.
+
+<div id="how-dashboards-determine-the-event-date" />
 
 ##### How dashboards determine the event date
 
@@ -953,6 +1055,8 @@ Dashboard event dates are affected by:
 * **Dashboard time zone view** (for example, **UTC** or a selected **local time zone**)
 
 Events that arrive between **00:00–02:00 UTC** can be displayed with the **previous UTC date**.
+
+<div id="example-event-date-differences-between-utc-and-utc-8" />
 
 ##### Example: Event date differences between UTC and UTC-8
 
@@ -964,6 +1068,8 @@ Events that arrive between **00:00–02:00 UTC** can be displayed with the **pre
 **Note:** If your selected time zone is **behind UTC** (for example, **UTC-8**), the dashboard can display the event date as **Day-1** compared to the UTC view, especially around midnight and during late-event processing.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -1003,6 +1109,8 @@ My Dashboards replaces the legacy Events, Overview, and Activity dashboards. Use
 
 After **June 30, 2026**, the legacy Events, Overview, and Activity dashboards will no longer be accessible.
 
+<div id="match-legacy-dashboards-to-my-dashboards" />
+
 #### Match legacy dashboards to My Dashboards
 
 | Legacy dashboard | Use this template or view in My Dashboards | Use it to |
@@ -1010,6 +1118,8 @@ After **June 30, 2026**, the legacy Events, Overview, and Activity dashboards wi
 | Events | Events template | Analyze in-app event performance, revenue events, and event-based KPIs. |
 | Overview | Performance Analysis or Marketing Overview template | Analyze marketing performance, campaign results, and high-level business KPIs. |
 | Activity | Activity view | Analyze activity data, active users, sessions, and activity trends. |
+
+<div id="open-the-replacement-template-or-view" />
 
 #### Open the replacement template or view
 
@@ -1034,6 +1144,8 @@ You can export large data from your dashboard to a CSV file for further analysis
 * Tables containing up to 100,000 rows can be downloaded.
 * Data is ready for download within 15 minutes.
 
+<div id="how-it-works" />
+
 #### How it works
 
 1. Select Export from your dashboard.
@@ -1051,6 +1163,8 @@ You can export large data from your dashboard to a CSV file for further analysis
 
 The KPIs available in **My Dashboards** depend on the **permissions granted by the advertiser** to agencies and ad networks. These permissions control which data sources, metrics, and attribution views partners can access.
 
+<div id="agency-access" />
+
 #### Agency access
 
 When advertisers grant **Agency permissions**, agencies can view performance data attributed to the campaigns they manage. Access to in-app events and revenue is available by default. Depending on additional permissions, agencies may also see organic and aggregated data.
@@ -1064,6 +1178,8 @@ Based on the permissions granted, agencies can view the following KPI categories
 
   **Note:** Agencies can view only the KPIs included in the permissions granted by the advertiser.
 
+<div id="ad-network-access" />
+
 #### Ad network access
 
 When advertisers grant **ad network permissions**, ad networks can view performance data related to the traffic they deliver. Unlike agencies, visibility into in-app events and revenue depends on the specific permissions enabled by the advertiser.
@@ -1076,6 +1192,8 @@ Based on the permissions granted, ad networks can view:
 * **SKAN** metrics, when applicable
 
 **Note:** Advertisers control whether in-app events and revenue are available. Ad networks can see data of traffic associated with their media source.
+
+<div id="configure-settings" />
 
 #### Configure settings
 

@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **At a glance:** Add the Smart Banners code to your website to convert your website visitors into mobile app users.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. <Anchor target="_blank" href="/marketers/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Learn more</Anchor>
+
+<div id="website-code-implementation" />
 
 ## Website code implementation
 
@@ -214,6 +218,8 @@ Now, when your website loads on mobile, the banner's active creative will be dis
 4. Click **Update File**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

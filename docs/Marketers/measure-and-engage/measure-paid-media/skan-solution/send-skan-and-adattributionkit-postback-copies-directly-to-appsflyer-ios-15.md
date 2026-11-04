@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** Starting iOS 15, configure your app to send postback copies to AppsFlyer in addition to sending them to ad networks. Doing so enables AppsFlyer to validate the conversion value (CV) and verify postback integrity. Configure AppsFlyer Push API to forward postback copies to an additional selected endpoint.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Throughout this article, references to **SKAN** include both **SKAdNetwork** and the latest **AdAttributionKit (AAK)** framework.
+
+<div id="why-send-postback-copies-to-appsflyer" />
 
 ## Why send postback copies to AppsFlyer?
 
@@ -36,6 +40,8 @@ x-zendesk:
 * View touch-type engagement
 
 **Note!** AppsFlyer must still receive ad network postbacks as they contain additional data provided by the ad network (for example, campaign name).
+
+<div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Configure your app to send postback copies to AppsFlyer
 
@@ -48,11 +54,17 @@ According to Apple's documentation, you can set a single SKAN postback endpoint.
 3. Postbacks will be sent to AppsFlyer as the new version becomes published (not from TestFlight).
 4. You can see the received postbacks in the <Anchor target="_blank" href="/marketers/docs/skan-raw-data-reports">postbacks copy report</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Apps that don't have SKAN traffic will see the following message even after completing setup: 'Your app isn’t set up to send iOS postback copies (iOS 15+) to AppsFlyer. This is required to assure the integrity of your SKAN measurement.'
 
+<div id="common-misconceptions" />
+
 ## Common misconceptions
+
+<div id="dont-believe-everything-you-hear" />
 
 > 📘 **Don't believe everything you hear!**
 >
@@ -65,9 +77,13 @@ According to Apple's documentation, you can set a single SKAN postback endpoint.
 > * As soon as I've set an additional endpoint, copies of all postbacks are sent there.
 >   * **False.** The additional endpoint feature is only available for devices running iOS 15+. Postback copies aren't sent from devices running earlier versions.
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 After an app has been configured to send postback copies to AppsFlyer, it may take a couple of days for it to show on the dashboard.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

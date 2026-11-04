@@ -26,6 +26,8 @@ x-zendesk:
 
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 
+<div id="website-visits-and-web-events" />
+
 ## Website visits and web events
 
 * **Recognizing a visit:** PBA records a visit according to [visit recognition rules.](/docs/pba-media-source-attribution-rules#visit-recognition-rules)
@@ -59,6 +61,8 @@ For ease of understanding, the table that follows contains examples of the deter
 | Email | Owned | Email |
 | googleadwords\_int | Paid | Ad |
 | usatoday.com | Earned | Referral |
+
+<div id="determining-the-media-source" />
 
 ## Determining the media source
 
@@ -116,6 +120,8 @@ The media channel is determined by rules as listed here.
 | utm\_source | utm\_campaign |
 
 </Accordion>
+
+<div id="additional-attribution-rules" />
 
 ## Additional attribution rules
 

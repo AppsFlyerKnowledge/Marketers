@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Set up your cloud services so you can connect your source data to DCP and export audiences to your cloud storage buckets.
 
+<div id="about-cloud-service-setup" />
+
 ## About cloud service setup
 
 DCP uses two types of connections to move data between your cloud services and the platform:
@@ -46,6 +48,8 @@ The table below shows which services are supported for each connection type:
 
 For Amazon S3 and GCS, the same bucket setup and permissions apply for both source and cloud storage connections, so no separate setup is needed for each direction. Creating a source connection automatically creates a matching cloud storage connection (and vice versa), and deleting one deletes the other, since it's really one underlying connection that's shared across both tabs.
 
+<div id="set-up-your-cloud-services" />
+
 ## Set up your cloud services
 
 Select your cloud service below for setup instructions.
@@ -55,6 +59,8 @@ Select your cloud service below for setup instructions.
 <Accordion title="Amazon S3">
 
 Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -108,6 +114,8 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 5. In the snippet, replace `af-dcr-mybucket` (in the two lines in which it appears) with the name of the bucket you created.
 6. Click **Save changes**.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > When replacing the bucket name in the snippet, do not overwrite `/*` in the second line in which the bucket name appears.
@@ -119,6 +127,8 @@ Use the following instructions to prepare an Amazon S3 bucket for use with DCP.
 <Accordion title="Google Cloud Storage (GCS)">
 
 Use the following instructions to prepare a GCS bucket for use with DCP.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -154,6 +164,8 @@ Use the following instructions to prepare a GCS bucket for use with DCP.
 <Accordion title="BigQuery">
 
 BigQuery supports source connections only. Use the following instructions to create a dataset and grant AppsFlyer permissions.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -191,6 +203,8 @@ BigQuery supports source connections only. Use the following instructions to cre
 
 Snowflake supports source connections only. Use the following instructions to create a private share for use by DCP.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > The following procedure must be performed by a Snowflake **Accountadmin**.
@@ -224,6 +238,8 @@ Salesforce Cloud/CRM supports source connections only. See <Anchor target="_blan
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Description |
@@ -232,6 +248,8 @@ Salesforce Cloud/CRM supports source connections only. See <Anchor target="_blan
 | Bucket use | S3 and GCS buckets must be for the exclusive use of DCP. No other service can write data to the bucket. |
 | <span id="dcr-naming-requirements"></span>DCR naming requirements | The following naming requirements apply to all DCR data entities, including buckets, folders, and files:<ul><li>**Maximum length:** 200 characters</li><li>**Valid characters:** letters (A-Z, a-z), numbers (0-9), hyphens (-)</li><li>**Invalid characters:** spaces, and all other symbols or special characters</li><li>Numbers and hyphens cannot be the first character of a name</li><li>**Special-purpose characters only:**<ul><li>Equal signs (=): only in <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">date and version folder names</Anchor></li><li>Underscores {"(_):"} only in <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format">multi-part GZIP file names</Anchor> or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files">{"_SUCCESS"} files</Anchor></li><li>Dots (.): only directly before filename extensions (.csv, .gzip)</li></ul></li></ul> |
 | Bucket naming | Bucket names must begin with `af-dcr-` followed by your text. Example: `af-dcr-example-bucket`.<br /><br />[PENDING R&D: confirm whether af-datalocker- prefix should still be listed as an allowed alternative, or removed] |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

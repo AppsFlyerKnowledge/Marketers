@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Optimize Meta ads campaigns by using Meta campaign management partners (formerly known as Facebook Marketing Partners), such as Kenshoo, Bidalgo, and Smartly. When configured, AppsFlyer sends them the postbacks.
 
+<div id="configure-meta-campaign-management-partners" />
+
 ## Configure Meta campaign management partners
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -41,6 +43,8 @@ x-zendesk:
 4. In the **Integration** tab, turn on the **Activate partner** toggle.   
    Note: The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration as described below:
+
+<div id="in-app-event-postback-setup" />
 
 ## In-app event postback setup
 
@@ -68,6 +72,8 @@ In order for the partner to get postbacks, campaign names **must** be prefixed b
 3. [Optional] Click ![conditional-iae-postbacks-icon.png](https://files.readme.io/5345c5ebe95b3f1a0d0858b88ce29f9965178ce750df86c04cb131a93d006a5e-14050481317393.png) to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for sending certain in-app events to the partner.
 4. [Optional] Click **Add event** to add another SDK or server-to-server event to the list.
 5. Click **Save Integration**.
+
+<div id="important-notes" />
 
 > 📘 **Important Notes**
 >

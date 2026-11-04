@@ -22,15 +22,21 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to create measurement data sources, and how to provide access to them in a way that can be digested by the attribution job.
 
+<div id="overview" />
+
 ## Overview
 
 The first step in setting up the measurement process is to prepare the three inputs that feed it: conversions, engagements, and campaign mapping. These inputs must be prepared based on the predefined schema or event structure, depending on the data provision mode: in-app events or custom source files.
 
 When the provision mode is custom source files, the attribution job is triggered automatically when the required conversion and engagement record folders are uploaded to the cloud. For in-app event mode, the job is triggered when relevant in-app events are selected.
 
+<div id="prepare-in-app-events" />
+
 ## Prepare in-app events
 
 You can send conversion and engagement data via in-app events sent by the AppsFlyer SDK integrated into your app.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -118,6 +124,8 @@ To provide conversion and engagement data through in-app events configure the Ap
 
 </Accordion>
 
+<div id="prepare-custom-source-files" />
+
 ## Prepare custom source files
 
 If you are running an [on-site campaign](#onsite-and-offsite-campaign-measurement) you can use custom source files as the source of your conversions and engagements with the schema outlined in the tables below.
@@ -129,11 +137,15 @@ If you are running an [on-site campaign](#onsite-and-offsite-campaign-measuremen
 Use the scheme in the table below to create a conversion custom source file.   
 The conversion scheme is unitary for off-site and on-site campaign types and for the different media partners.
 
+<div id="media-partners" />
+
 #### Media partners:
 
 **G**: Google
 
 **M**: Meta
+
+<div id="background-colors" />
 
 #### Background colors:
 
@@ -154,6 +166,8 @@ The conversion scheme is unitary for off-site and on-site campaign types and for
 <Accordion title="Prepare the engagement custom source">
 
 Use the schema below to create the engagement data source.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -186,9 +200,13 @@ Use the schema below to create the engagement data source.
 
 For more information about how to prepare sources and upload them to your cloud service, see the [Create and connect custom data sources](#create-and-connect-custom-data-sources) section of this document.
 
+<div id="prepare-campaign-mapping-source" />
+
 ## Prepare campaign mapping source
 
 The source of your campaign mapping data is a custom data source file with the schema outlined in the table below.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -211,6 +229,8 @@ Use the schema below to create the campaign mapping source.
 </Accordion>
 
 For more information about how to create source files and upload them to your cloud service, see the [Create and connect custom data sources](#create-and-connect-custom-data-sources) section of this document.
+
+<div id="attribution-job-ingestion-flow" />
 
 ## Attribution job ingestion flow
 
@@ -263,6 +283,8 @@ Conversion and engagement data can come from in-app events, custom sources, or a
 When configuring in-app events for conversions, engagements, or both, you must specify the app ID and the conversion or engagement event name. At the end of the day, the attribution job selects all events with the specified name and app ID that have the same event date as the conversion day.
 
 </Accordion>
+
+<div id="create-and-connect-custom-data-sources" />
 
 ## Create and connect custom data sources
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Create Attribution data reports to match user-level data from installs/retargeting events with data from your systems.
 
+<div id="creating-an-attribution-data-report" />
+
 ## Creating an Attribution data report
 
 **To create an Attribution data report, follow the steps detailed in the tabs below.**
@@ -57,6 +59,8 @@ x-zendesk:
 
 Specify the data to be used for the report:
 
+<div id="attribution-data-sources" />
+
 #### **Attribution data sources**
 
 * **Apps:** Select one or more of the apps in your AppsFlyer account.
@@ -71,6 +75,8 @@ Specify the data to be used for the report:
 
 * **Timeframe:** Select the number of days of historical data you want the DCR to search for attribution events matching your custom source events (from 1 to 180 days).
 
+<div id="custom-sources" />
+
 #### **Custom sources**
 
 When defining report structure, you can choose to use data from any of the <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources">custom sources you have set up</Anchor>.
@@ -83,6 +89,8 @@ When defining report structure, you can choose to use data from any of the <Anch
 
 To match data among sources, each of the **custom** sources used in the report must include an <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services">identifier</Anchor> mapped to a **key identifier** in the attribution data.
 
+<div id="what-is-a-key-identifier" />
+
 #### **What is a key identifier?**
 
 You can map to either of these attribution data identifiers as **key identifiers:**
@@ -93,13 +101,19 @@ You can map to either of these attribution data identifiers as **key identifiers
 * **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
   * Using CUID to map data requires that your app is configured to <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">send the CUID to AppsFlyer</Anchor> via the SDK or the server-to-server API (S2S).
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Mapping schemes (direct/indirect)**
 
 If the report uses more than one custom source, only one of them needs to be mapped **directly** to an attribution data key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -121,11 +135,15 @@ If the report uses more than one custom source, only one of them needs to be map
 
 <Accordion title="Determine treatment of multiple matching events">
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If the attribution types selected for this report **include only installs and/or organic installs,** this section is irrelevant. Skip to [**Select dimensions**](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).
 
 If the attribution types you select for your report include **re-installs,** **re-engagements, or re-attributions,** it's possible that the attribution data will include more than one event during the selected timeframe with the same key identifier. When this is the case, you must instruct the DCR which matching events it should include in the report.
+
+<div id="matching-all-events" />
 
 #### **Matching all events**
 
@@ -133,6 +151,8 @@ The most comprehensive matching method allows your report to include all matchin
 
 * The identifier in your source that is mapped to install\_time must be in the following format: **yyyy-MM-dd HH:mm:ss.**
 * **Note:** Though the attribution data identifier's name is `install_time`, it actually means **event time** when referring to re-install, re-engagement, or re-attribution events.
+
+<div id="matching-a-single-event" />
 
 #### **Matching a single event**
 
@@ -147,6 +167,8 @@ Single-event matching behavior differs when the AppsFlyer attribution data sourc
 
 Make this selection based on the event you consider to be most relevant to the insights you want to obtain from the report.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > In case of record duplicates, DCR deduplicates records with the same `appsflyer_id`, selecting the latest event based on `event_time`.
@@ -160,6 +182,8 @@ Make this selection based on the event you consider to be most relevant to the i
 Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
 
 A dimension is generally an attribute by which you categorize app users (for example, geo, install date, campaign, etc.).
+
+<div id="selecting-report-dimensions" />
 
 #### **Selecting report dimensions**
 
@@ -177,6 +201,8 @@ Attribution data report dimensions can include:
 
 **Note:** By default, all reports are grouped by the attribution data dimension **media\_source.** If you do not wish to use this dimension in your report, you can remove it from the **Report dimensions** list.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Optional] Customizing dimension display names**
 
 By default, dimension names are displayed in your report exactly as they are named in the attribution data or your custom sources. If you wish, you can customize dimension names for your report.
@@ -188,6 +214,8 @@ By default, dimension names are displayed in your report exactly as they are nam
 3. Change the name to the dimension display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### Preserving privacy while grouping by dimension (regrouping)
 
 Depending on the size of your data set, the number of dimensions you choose, and other factors, it's possible that a report would include one or more groups containing too few users to allow reporting. If the data were reported this way, it would violate restrictions against providing user-level data.
@@ -195,6 +223,8 @@ Depending on the size of your data set, the number of dimensions you choose, and
 * **Important!** The minimum number of users required in order to permit reporting varies by media source.
 
 However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
+
+<div id="regrouping-example" />
 
 > 📄 **Regrouping example**
 >
@@ -254,6 +284,8 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Optional] Managing dimension priority**
 
 By default, attribution data dimensions are eliminated in reverse order from the order in which they appear in the **Report dimensions** list. However, you can modify the default sequence and/or apply regrouping to selected custom source dimensions in order to preserve the dimensions most important to you.
@@ -289,6 +321,8 @@ Metrics are the numeric data you have collected with respect to an app user (exa
 3. To remove a metric, select it from the **Report metrics** list and use the **Remove** button to return it to the **Metrics from sources** list.
 4. Repeat this process until you've added each metric you want to include in the report.
 
+<div id="optional-customizing-metric-display-names" />
+
 #### **[Optional] Customizing metric display names**
 
 By default, metric names are displayed in your report exactly as they are named in the attribution data or your custom sources. If you wish, you can customize metric names for your report.
@@ -299,6 +333,8 @@ By default, metric names are displayed in your report exactly as they are named 
 2. Click the edit button ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) that displays to the right of the metric.
 3. Change the name to the metric display name to be used in your report (up to 50 characters).
 4. Click **OK** to save the display name, or **X** to cancel it.
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Optional] Select identifiers to count**
 
@@ -336,6 +372,8 @@ The DCR delivers reports to your selected cloud services using <Anchor target="
 
 </Accordion>
 
+<div id="when-does-the-report-run" />
+
 ## When does the report run?
 
 Once you have created and saved a report, the report runs whenever new versions of all of the [custom sources it uses](/docs/data-clean-room-creating-attribution-data-reports#custom-sources) are detected:
@@ -345,6 +383,8 @@ Once you have created and saved a report, the report runs whenever new versions 
 * The DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> to a connected cloud account, along with its accompanying \_SUCCESS file.
 
 AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
+
+<div id="reference" />
 
 ## Reference
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** A quota (rate limitation) mechanism limits the number of reports you can generate per day through both Pull API and the data export pages.
 
+<div id="rate-limits-for-reports" />
+
 ## Rate limits for reports
 
 The quota limits the number of reports you can generate per day per report type. The quota varies according to your subscription plan.
@@ -34,6 +36,8 @@ The quota limits the number of reports you can generate per day per report type.
 * **Ad networks:** Reports that ad networks generate don't count toward the advertiser quota.
 * **Day:** Quotas apply per calendar day, starting at 00:00 UTC.
 
+<div id="aggregated-and-analytics-reports" />
+
 ### Aggregated and analytics reports
 
 | Data delivery tool | Quota |
@@ -43,6 +47,8 @@ The quota limits the number of reports you can generate per day per report type.
 | Master API | Unlimited |
 | Cohort API | 60 calls per minute per account |
 | SKAN aggregate reports | 10 calls per minute per account |
+
+<div id="raw-data" />
 
 ### Raw data
 
@@ -58,6 +64,8 @@ The quota limits the number of reports you can generate per day per report type.
 
 For examples, see the FAQ below.
 
+<div id="pull-api-raw-data-daily-quota" />
+
 #### Pull API raw data daily quota
 
 Pull API raw data reports have the following daily quotas:
@@ -67,9 +75,13 @@ Pull API raw data reports have the following daily quotas:
 | Installs | 24 | 120 |
 | In-app events | 12 | 60 |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The quotas apply per report type, so each report type has a separate quota.
+
+<div id="ad-network-postback-reports-daily-quota" />
 
 #### Ad network postback reports daily quota
 
@@ -79,6 +91,8 @@ Ad networks can pull the following postback report types:
 | --- | --- | --- | --- |
 | Postbacks for attribution | <ul><li>Installs</li><li>Retargeting conversions</li></ul> | 24 | 120 |
 | Postbacks for in-app events | <ul><li>In-app events</li><li>In-app events retargeting</li></ul> | 12 | 60 |
+
+<div id="faq" />
 
 ## FAQ
 
@@ -90,6 +104,8 @@ Ad networks can pull the following postback report types:
   A: No. This results in a total of 250 reports, which exceeds the account-level quota of 120.
 * Q: Do agency-generated Pull API reports count against the advertiser's quota?  
   A: No. Agencies and advertisers have separate Pull API quotas. Agency-generated reports don't count against the advertiser quota. The only exception is when an agency uses the advertiser's API token instead of their own, in which case those requests count as advertiser requests.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

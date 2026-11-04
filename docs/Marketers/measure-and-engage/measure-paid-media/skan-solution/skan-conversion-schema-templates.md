@@ -22,10 +22,14 @@ x-zendesk:
 ---
 > **At a glance:** SKAN conversion schema templates are ready-to-use templates. Simplifying the SKAN setup by offering templates based on a combination of industry and specific app data, offering industry insights and best practices. SKAN conversion schema templates can be found in the Conversion Studio.
 
+<div id="key-benefits" />
+
 ## Key benefits
 
 * These templates streamline the SKAN set up by enabling the creation of a conversion schema in just a few clicks.
 * By utilizing industry best practices and insights, marketers can refine their schema and increase confidence in its effectiveness by using templates based on industry data combined with app-specific data.
+
+<div id="how-to-get-started" />
 
 ## How to get started
 
@@ -42,9 +46,13 @@ x-zendesk:
 7. You will be redirected to the **Conversion Studio** edit page
    1. Use the Conversion Studio’s <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#measurement-components">standard features and tools</Anchor> to customize the template according to your app’s needs
 
+<div id="what-are-skan-conversion-schema-templates" />
+
 ## What Are SKAN conversion schema templates?
 
 SKAN conversion templates suggest mappings of conversion values for meaningful user post-install activities, tailored by industry and vertical. The suggestions can be customized to fit specific app needs, combining data-driven insights and industry expertise.
+
+<div id="template-structure" />
 
 ### Template structure
 
@@ -55,9 +63,13 @@ SKAN conversion templates suggest mappings of conversion values for meaningful u
   * Pre-selected events are tailored for each template.
   * Revenue ranges are customized based on app-specific data using advanced revenue recommendation models  When there isn't enough historical data, industry data is used to make suggestions.
 
+<div id="what-is-skan-conversion-schema" />
+
 ## What is SKAN conversion schema?
 
 The SKAN conversion schema defines the measurement setup for the SKAdNetwork (SKAN) framework. It specifies which user engagement metrics (e.g., in-app events or revenue) will be measured and reported. SKAdNetwork does not directly report post-install engagement with the app. Instead, it reports "Conversion Values" which are mapped by the app developer to meaningful post-install activities. This mapping is known as the SKAN conversion schema.
+
+<div id="what-are-these-templates-based-on" />
 
 ## What are these templates based on?
 

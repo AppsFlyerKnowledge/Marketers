@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to integrate Snapchat Ads web for PC and console apps with AppsFlyer and set up campaigns in Snapchat Ads web.
 
+<div id="warning" />
+
 > ❗️ **Warning**
 >
 > This integration is only available for PC and console apps, such as Steam, Epic, or Native PC. For mobile apps, see the <Anchor target="_blank" href="/marketers/docs/tiktok-for-business-advanced-srn-integration-setup">Snapchat Ads integration setup</Anchor> page.
+
+<div id="overview" />
 
 ## Overview
 
 This article contains information and steps on how to set up and use Snapchat Ads web for PC and console apps with AppsFlyer.
 
+<div id="prerequisite" />
+
 ### Prerequisite
 
 Before activating the Snapchat Ads web integration, make sure you have a business account in <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US">Snapchat Ads Manager.</Anchor>
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Activating partner in AppsFlyer
 
@@ -43,6 +51,8 @@ Before activating the Snapchat Ads web integration, make sure you have a busines
 3. Click **Integrate**. You’re directed to the setup page.
 4. In the **Integration** tab, turn on **Activate partner**. The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
 5. Complete the configuration using the relevant tabs, as described in the next section.
+
+<div id="setting-up-snapchat-ads-web-in-appsflyer" />
 
 ## Setting up Snapchat Ads web in AppsFlyer
 
@@ -211,6 +221,8 @@ Currently, permissions aren't granted to Snapchat Ads web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps" />
+
 ## Setting up campaigns in Snapchat Ads web for PC and console apps
 
 Set up your campaign in Snapchat Ads Manager. For more information, see <Anchor target="_blank" href="/marketers/docs/snapchat-create-web-based-campaigns#set-up-appsflyer-integration-in-snapchat-ads">Set up AppsFlyer integration in Snapchat Ads</Anchor>.
@@ -223,20 +235,28 @@ When you set up your new campaign:
   * Web landing page (recommended when you have an app on multiple platforms)
   * Store URL (recommended when your app is in a single app store, on a single platform)
 
+<div id="view-web-to-app-attribution-data" />
+
 ## View web-to-app attribution data
 
 Although web-based conversion events are sent to Snapchat under the original `snapweb_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `snapchat_int` PID. This applies to both primary conversion events and conversion assist events.
 
 This unified reporting view allows you to analyze the performance of both web and app campaigns in one place, including comprehensive web and mobile cost reporting.
 
+<div id="view-in-the-dashboard" />
+
 ### View in the dashboard
 
 All Snapchat web-to-app attributions appear under `snapchat_int` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Snapchat Ads data.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### View in raw data and API reports
 
 * **Raw data exports and API responses** include the `snapchat_int` PID in the `media_source` field for Snapchat web activity. To verify web campaign setup details, refer to the `original_url` field that shows `snapweb_int` as the PID used during the creation of web campaigns.
 * **Postback reports** show `snapweb_int` as the original media source to which the postback was sent.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

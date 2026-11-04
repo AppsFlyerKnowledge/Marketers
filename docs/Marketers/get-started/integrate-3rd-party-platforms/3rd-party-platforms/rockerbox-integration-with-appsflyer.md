@@ -25,9 +25,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-rockerbox" />
 
 ## Setting up Rockerbox
 
@@ -49,10 +53,14 @@ x-zendesk:
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 This toggle must be enabled for as long as you work with the partner.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -61,11 +69,15 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activatio
 **To connect your Rockerbox account with AppsFlyer,** enter your account ID in **Rockerbox account ID**.   
 Your Rockerbox account ID is available in the Rockerbox platform under **Settings** > **Account** > **General**.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Rockerbox following user installs. Use this section to define the source of the users the postbacks are sent to for each event. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 To send postbacks for any user that downloads the app to Rockerbox, select **All media sources, including organic**.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 

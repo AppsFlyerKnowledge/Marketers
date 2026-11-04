@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Create web campaigns to attribute web-to-app conversions from Google Ads
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This article focuses on web campaigns that promote mobile apps. If you want to create campaigns that promote PC or Console apps, see Google Ads Web—Integration for PC and console apps.
+
+<div id="overview" />
 
 ## Overview
 
@@ -38,6 +42,8 @@ Once clicked, these links take the user to the app store to download and install
 
 Google uses this data to optimize ad targeting, measure performance, and build custom audiences.
 
+<div id="prerequisite" />
+
 ### Prerequisite
 
 Before activating the Google Ads integration for web campaigns, make sure you have the following:
@@ -45,6 +51,8 @@ Before activating the Google Ads integration for web campaigns, make sure you ha
 * A mobile app
 * An AppsFlyer account
 * AppsFlyer <Anchor target="_blank" href="/marketers/docs/user-management">users with appropriate roles or permissions</Anchor> and access to the relevant apps
+
+<div id="create-a-google-ads-web-campaign" />
 
 ### Create a Google Ads web campaign
 
@@ -58,6 +66,8 @@ After setting up the attribution links in step one through the Google Ads and Ap
 * [Create a landing page with OneLink Smart Script](#create-a-landing-page-with-onelink-smart-script) (Optional)
 * [Create a landing page with OneLink Smart Banners](#create-a-landing-page-with-onelink-smart-banners) (Optional)
 
+<div id="create-a-google-ads-integration-in-appsflyer" />
+
 ## Create a Google Ads integration in AppsFlyer
 
 Start by activating the integration with Google Ads for web campaigns and setting the postbacks that AppsFlyer sends to the OCI.
@@ -70,6 +80,8 @@ Start by activating the integration with Google Ads for web campaigns and settin
 4. In the **Integration** tab, turn on **Activate Partner**. **Note:** The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with your partner.
 5. Turn off **Advanced Privacy** (if you are setting an iOS app integration).
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > The **Missing token** error message will stop appearing once you sign in with Google and allow AppsFlyer to fetch the token in the step below. If the error persists after you sign in, verify that your token has the required permissions.
@@ -77,6 +89,8 @@ Start by activating the integration with Google Ads for web campaigns and settin
 1. In **First open conversion ID**, enter the ID of the `First open` conversion action you set in Google Ads. To find the ID, go to Google Ads and open the **Details tab** of the **First open** conversion action page. Then, copy the value of the `ctid=*` query parameter from the page URL. For example, if `ctid=123456789`, insert `123456789` to the **First open conversion action ID** box.
 
    ![](https://files.readme.io/bbd7178f688b1844b925ca6f2ec5768a00b548f3ccba5928966278918966c501-26324098042513.png)
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -159,6 +173,8 @@ Installs are currently the only events that trigger automatic default postbacks 
 
 Before creating a OneLink attribution link for your Google Ads campaign, you need to set its template. Then, you can create a OneLink attribution URL based on the template and use it as the Google Tracking template URL.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > The instructions below focus on creating a OneLink template for Google web campaigns with Smart Script. For a comprehensive guide on how to set up OneLink templates, see the How to create OneLink templates section of the OneLink templates article.
@@ -170,6 +186,8 @@ Before creating a OneLink attribution link for your Google Ads campaign, you nee
 2. Click **Create template**.
 
 </Accordion>
+
+<div id="create-a-web-campaign-in-google-ads" />
 
 ## Create a web campaign in Google Ads
 
@@ -220,6 +238,8 @@ To create custom Google Ads conversion actions and goals:
 6. In **Conversion goal**, select a conversion action category.
 7. In **Enter a conversion name**, type the name of the conversion action.
 
+<div id="warning" />
+
 > ❗️ **Warning**
 >
 > To use the Offline Conversions API with GBRAID/WBRAID (in addition to GCLID), make sure the **Count** field in the conversion action is set to **Every** (default) and NOT **One.**
@@ -237,6 +257,8 @@ To create custom Google Ads conversion actions and goals:
 
 Google Web Ads campaigns use two URLs for each engagement: the Final URL and the Tracking Template URL. These URLs are activated simultaneously when the ad is clicked, a feature Google refers to as Parallel Tracking. More information on Parallel Tracking is available in <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">the Google documentation</Anchor>.
 
+<div id="set-the-final-url" />
+
 #### Set the Final URL
 
 Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">defines the Final URL</Anchor> as "the URL address of the webpage in your website that people reach after they click your ad. Also known as the 'landing page.'"
@@ -248,6 +270,8 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
 
    ![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
 3. In **Final URL,** enter the URL of the web landing page.
+
+<div id="warning-1" />
 
 > ❗️ **Warning**
 >
@@ -265,6 +289,8 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
      ```
    * **A store URL** such as the App Store or Google Play.
 
+<div id="warning-2" />
+
 > ❗️ **Warning**
 >
 > Suppose you use the store URL as your Final URL. The only way to send attribution and custom parameter information to AppsFlyer is to insert and map AF parameters to the Tracking Template URL.
@@ -274,6 +300,8 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
   https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
   ```
 * **A direct download link to the app APK file** if you want users to download the app directly without being redirected to a store.
+
+<div id="set-the-tracking-template-url" />
 
 #### Set the Tracking Template URL
 
@@ -290,11 +318,15 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
      * **Single platform attribution link** if the ad click destination is either Google Play or the App Store (see example below).
      * **A OneLink attribution link** if the ad click destination is a Web page (see example below).
 
+<div id="warning-3" />
+
 > ❗️ **Warning**
 >
 > If your Final URL points directly to the Google Play store or the App Store (the user platform is known), use a single-platform attribution link in the Tracking Template URL. Using a OneLink URL in this scenario results in a "Tracking call unsuccessful" error from Google.
 
 * **The PID parameter:** Add the mandatory <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#pid">`pid`</Anchor>`=googleads_int` parameter.
+
+<div id="tip-1" />
 
 > 👍 **Tip**
 >
@@ -308,6 +340,8 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
     **Or**
   * The `af_r` parameter must be set to the `{lpurl}` Google ValueTrack parameter.
 * **Redirection parameter for a single platform attribution link:** For parallel tracking to function as intended, set the `af_r` parameter to the `{lpurl}` Google ValueTrack parameter.
+
+<div id="warning-4" />
 
 > ❗️ **Warning**
 >
@@ -327,9 +361,13 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
   * `af_og_image`
 * Don’t include any parameters that alter the value of the redirection parameter \{lpurl\}. This includes `af_base_params_forward` and `af_param_forwarding`.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > For additional limitations relating to the tracking template URL, see the Traits and limitations section in this document
+
+<div id="google-tracking-template-url-examples" />
 
 #### Google Tracking Template URL examples
 
@@ -345,6 +383,8 @@ An example of **a single platform link** in a Google Tracking Template URL:
 https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
+<div id="using-the-tracking-template-url-with-smart-script-or-smart-banners" />
+
 #### Using the Tracking Template URL with Smart Script or Smart Banners
 
 You don't need to populate the Tracking Template URL with an AppsFlyer attribution link when the ad redirects to a landing page that uses a Smart Script or Smart Banners. This is because these tools automatically create an attribution link that gets registered in AppsFlyer when the user clicks the landing page CTA button. However, there are considerations for and against leaving the Tracking Template URL field empty:
@@ -353,6 +393,8 @@ You don't need to populate the Tracking Template URL with an AppsFlyer attributi
 * If you **populate** the Tracking Template URL with an attribution link and the user clicks the ad and subsequently clicks the landing-page CTA buttons, two clicks will be registered instead of one, which may impact conversion-rate data.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Create a landing page with OneLink Smart Script
 
@@ -389,6 +431,8 @@ To set up your Smart Script for Google web campaigns, perform the following step
 
 1. Create a smart script.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > The instructions below focus on the steps needed to set up a Google web campaign with Smart Script. For a comprehensive guide on how to set up Smart Script campaigns, you can see the How to create a OneLink Smart Script section of the OneLink Smart Script V2 setup article.
@@ -407,6 +451,8 @@ To set up your Smart Script for Google web campaigns, perform the following step
        1. In **Mapping for**, select **Custom parameter**.
        2. In **Outgoing URL parameter** and **Incoming URL parameters** enter **wbraid**.
        3. Repeat the above steps for the `wbraid` parameter.
+
+<div id="note-5" />
 
 > 📘 **Note**
 >
@@ -435,6 +481,8 @@ To set up your Smart Script for Google web campaigns, perform the following step
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-banners" />
+
 ## Create a landing page with OneLink Smart Banners
 
 **User journey:** The user clicks on a Google ad and is directed to your mobile website. They land on a page, and a Smart Banner with a CTA to download the app from the app store is displayed.
@@ -458,6 +506,8 @@ To set up your Smart Script for Google web campaigns, perform the following step
 
 <Accordion title="Set up a Smart Banners landing page">
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > The instructions below focus on the steps needed to set up a Google web campaign with Smart Banners. For a comprehensive guide on how to set up Smart Banners campaigns, see the setup section of the Smart Banners—mobile web-to-app (for marketers) article.
@@ -474,20 +524,28 @@ To set up your Smart Banners for Google web campaigns, perform the following:
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## View web-to-app attribution data
 
 Although web-based conversion events are sent to Google under the original `googleads_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `googleadwords_int` PID. This applies both to primary conversion events and to conversion assist events.
 
 This unified reporting view lets you analyze both web and app campaign performance in one place, including full mobile and web cost reporting.
 
+<div id="view-in-the-dashboard" />
+
 ### View in the dashboard
 
 All Google web-to-app attributions appear under `googleadwords_int` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Google Ads data.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### View in raw data and API reports
 
 * **Raw data exports and API responses** include the `googleadwords_int` PID in the `media_source` field for Google web activity. To verify web campaign setup details, refer to the `original_url` field that shows `googleads_int` as the PID used during the creation of web campaigns.
 * **Postback reports** show `googleads_int` as the original media source to which the postback was sent.
+
+<div id="troubleshooting-in-app-events-postbacks" />
 
 ## Troubleshooting in-app events postbacks
 
@@ -522,6 +580,8 @@ Make sure the postback in-app events are mapped to the correct conversion action
 The Smart Script or Smart Banners outgoing URL must include either `gclid`, `wbraid`, or `gbraid` for the postback to Google OCI to register properly in Google Ads.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 > **At a glance:** Configure ad revenue partner integrations for your AppsFlyer account or individual apps via API.
 
+<div id="ad-revenue-partner-integration-api" />
+
 ## Ad revenue partner integration API
 
 The ad revenue partner integration API is used to:
@@ -43,6 +45,8 @@ The ad revenue partner integration API is used to:
 2. Prepare the parameters to include in the API request, as described in the table that follows.
 3. Give the parameter values your developer and tell them to follow the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">Set integrations API instructions</Anchor> in the dev hub.  
    Integration takes effect at 00:00 UTC the following day.
+
+<div id="request-parameters" />
 
 #### Request parameters
 
@@ -70,6 +74,8 @@ The ad revenue partner integration API is used to:
 2. Tell your developer to follow the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">List integrations API instructions</Anchor> in the dev hub.
 
 </Accordion>
+
+<div id="specs-and-limitations" />
 
 ### Specs and limitations
 

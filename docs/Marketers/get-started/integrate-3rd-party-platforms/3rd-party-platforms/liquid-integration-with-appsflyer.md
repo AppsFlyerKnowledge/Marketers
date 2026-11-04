@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **At a glance:** Liquid, an AppsFlyer integrated partner, automates your campaigns and processes with no need to call your IT. Their intelligent rules engine acts based on user behavior and advanced analytics.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-liquid" />
 
 ## Setting up Liquid
 
@@ -52,10 +56,14 @@ x-zendesk:
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -65,6 +73,8 @@ Liquid connects with AppsFlyer via a unique API Token. If you don't already have
 
 [![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
 
+<div id="obtaining-the-api-token" />
+
 ### Obtaining the API token
 
 You can find the API token by logging in to the Liquid dashboard.
@@ -72,6 +82,8 @@ You can find the API token by logging in to the Liquid dashboard.
 * Click the **Settings** icon
 * Copy the Production API token
 * Insert the APP\_TOKEN you received from Liquid
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 

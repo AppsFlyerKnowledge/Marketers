@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** How to mask app user IP addresses in AppsFlyer raw data reports and in postbacks sent to partners.
 
+<div id="ip-masking" />
+
 ## IP masking
 
 When turning on IP masking:
@@ -31,10 +33,14 @@ When turning on IP masking:
 * User IP addresses aren't listed in raw data reports nor are they provided via postbacks to partners
 * IP address field is populated with the value 1.1.1.1
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * Installs that occurred before IP masking was turned on aren't masked
 > * <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing">AEM data sharing</Anchor> for Meta ads isn't supported for both server-to-server and SDK events when IP masking is turned on. This means data isn't shared with Meta ads.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -66,6 +72,8 @@ When turning on IP masking:
 > | January 9 | Off | User\_A 192.0.2.1  <br />User\_B 1.1.1.1 |
 > | January 15 | Off | User\_A 192.0.2.1  <br />User\_B 1.1.1.1  <br />User\_C 203.0.113.1 |
 
+<div id="turn-on-ip-masking" />
+
 ## Turn on IP masking
 
 IP masking is set per app and affects installs from all sources.
@@ -75,6 +83,8 @@ IP masking is set per app and affects installs from all sources.
 1. In AppsFlyer, from the side menu, select **Settings** > **App Settings.**
 2. Scroll down to **Advanced Settings**.
 3. Turn on **Mask IP addresses**.
+
+<div id="ip-masking-in-raw-data-reports" />
 
 ## IP masking in raw data reports
 

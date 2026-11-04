@@ -60,6 +60,8 @@ The raw data export page provides reports having the features listed in the foll
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Procedures
 
 <div id="create-a-default-report" />
@@ -106,6 +108,8 @@ You can create a custom report by setting its filters and fields.
    * **Maximum rows per file:** [Optional] Set the maximum number of rows a file can include. Select from 100, 200K, 500K, or 1M rows.
    * **Media source:** [Optional] Only the events that were attributed to the selected media sources will be included in the report. You can add a media source to the list by clicking **Add item**.
 
+     <div id="note" />
+
      > 📘 **Note**
      >
      > Self-reporting network (SRN) web PIDs, such as `metaweb_int`, `googleds_int`, or `tiktokweb_int`, do not appear automatically in the Media source drop-down list. To filter for web SRN postbacks, click **Add item** and enter the web media source PID manually.
@@ -150,6 +154,8 @@ You can create a custom report by setting its filters and fields.
    * During report generation, you can continue working, create additional reports, or navigate to other pages.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

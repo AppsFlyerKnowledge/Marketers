@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="Single Source of Truth (SSOT) guide for iOS attribution" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## About Single Source of Truth—True iOS performance data
 
 Starting iOS 14, AppsFlyer attributes iOS users using data from multiple data streams, including SKAdNetwork, ATT consenting users, probabilistic modeling, incrementality-based insights, and dedicated APIs for Apple Ads. The absence of IDFA makes it nearly impossible to tie the attribution methods together without including duplicate data.
@@ -53,6 +55,8 @@ To include the SSOT flag in your data, you must turn on SSOT in the Conversion S
 See <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## Overview dashboard Single Source of Truth view
 
@@ -107,6 +111,8 @@ In the SSOT view:
 * **Timezone**: AppsFlyer-reported installs and events display in UTC or in the app-specific local timezone as set on the <Anchor target="_blank" href="/marketers/docs/app-settings">app settings page</Anchor>. For SKAN-reported data, installs and events display using UTC, with the exception of Meta and Google SKAN data, for which the timezone is based on the timezone configured in your Meta and Google accounts, respectively.
 * **Currency**: Displays in USD or in the app-specific local currency as set on the <Anchor target="_blank" href="/marketers/docs/app-settings">app settings page</Anchor>.
 * **Revenue metrics (D2, D7):** Includes modeled data to account for incomplete or missing SKAN postbacks (Null conversion values). Longer cohorts (D14, D21, D30) are exported via the SSOT Data Locker report
+
+<div id="filter-considerations" />
 
 #### Filter considerations
 
@@ -172,6 +178,8 @@ Metrics available in the SSOT dashboard:
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## How does SSOT work
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -222,6 +230,8 @@ The SSOT mechanism exists in the AppsFlyer SDK in your app on the user device an
 **Considerations**
 
 * In general, AppsFlyer doesn't count reinstalls. In the context of SSOT, the reinstall status isn't considered. This means SSOT doesn't remove duplicate SKAN installs coming from reinstalls in the context of SSOT analytics and they don't affect the setting of the af\_attribution flag.
+
+<div id="attribution-flag-field" />
 
 #### **Attribution flag field**
 
@@ -285,6 +295,8 @@ Formula to calculate example metrics:
 | SKAN postback delay | When SKAN postbacks arrive with significant delay, for example from Google API, which can take up to 15 days, data for later days (like D7) may initially appear lower than earlier days (like D2). This delay can affect the accuracy of the SSOT model. For this reason, we recommend waiting at least 15 days after the install date for the data to fully populate before evaluating model accuracy. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

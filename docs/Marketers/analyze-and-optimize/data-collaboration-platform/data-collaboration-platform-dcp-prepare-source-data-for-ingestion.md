@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Prepare your source data to maximize match rates between collaborator datasets and optimize collaboration outcomes.
 
+<div id="about-data-preparation" />
+
 ## About data preparation
 
 The AppsFlyer <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> is designed to ingest and process large-scale transactional data, user-level data, or a combination of both from multiple collaborators. Once ingested, the DCP can match users across datasets using shared identifiers (for example, hashed email or hashed phone) and enable collaboration workflows based on that data.
@@ -33,6 +35,8 @@ This article outlines:
 * Which data structures are recommended and which aren't
 * How to handle multi-value identifiers when using CSV files
 
+<div id="understand-data-types" />
+
 ## Understand data types
 
 Most sources used in collaborations involve one or both of the following data types:
@@ -43,6 +47,8 @@ Most sources used in collaborations involve one or both of the following data ty
 * **Transactional (event) data**
   * **Goal:** Represent user actions (purchases, visits, transactions)
   * **Typical structure:** Multiple rows per user (because a user can have many transactions)
+
+<div id="data-structuring-guidelines" />
 
 ## Data structuring guidelines
 
@@ -61,6 +67,8 @@ This section outlines DCP data structuring guidelines and best practices.
 4. For transactional datasets (and other data types where applicable), **use the DCP Data View tool** to create a business-oriented, privacy-safe subset of your data optimized for collaboration, and share it instead of raw tables. [Why Data Views are recommended](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended).
 
 While other structures can be used, they may not be ideally suited for getting the most out of DCP. See [Data structures that aren't recommended](#data-structures-that-arent-recommended).
+
+<div id="recommended-identifier-structures" />
 
 #### Recommended identifier structures
 
@@ -129,6 +137,8 @@ This structure should be represented as **native arrays**.
 
 <Accordion title="Practical checklist for data structuring">
 
+<div id="identity-user-level-dataset-checklist" />
+
 #### Identity (user-level) dataset checklist
 
 * One row represents one user.
@@ -136,10 +146,14 @@ This structure should be represented as **native arrays**.
 * If multiple values exist (for example, multiple emails), use native arrays where possible.
 * Avoid lists in cells, avoid “email\_1/email\_2/email\_3,” and avoid multi-row identity structures.
 
+<div id="transactional-events-dataset-checklist" />
+
 #### Transactional (events) dataset checklist
 
 * Keep event/transaction rows as-is. See [Transactional data examples](#appendix-a-transactional-data-examples)
 * Use [Data Views](#appendix-c-why-dataviews-matter-and-recommended) to create collaboration-ready user-level summaries when appropriate.
+
+<div id="data-views-checklist" />
 
 #### Data Views checklist
 
@@ -160,6 +174,8 @@ The DCP supports ingestion through multiple cloud services, such as:
 * GCS (Google Cloud Storage)
 * BigQuery
 * Snowflake
+
+<div id="format-guidance" />
 
 #### Format guidance
 
@@ -182,6 +198,8 @@ See [Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake).](#app
 
 Certain types of data structuring are ideally suited for ingestion into DCP, and others are not. The following is a list of data structures that **are not recommended**:
 
+<div id="avoid-multiple-columns-for-the-same-identifier-type" />
+
 #### Avoid: Multiple columns for the same identifier type
 
 Examples like “primary/secondary/third email” are discouraged.
@@ -198,6 +216,8 @@ Examples like “primary/secondary/third email” are discouraged.
 * The number of values per user is unpredictable
 * Leads to column proliferation and schema maintenance issues
 
+<div id="avoid-lists-inside-a-single-cell-free-text" />
+
 #### Avoid: “Lists inside a single cell” (free text)
 
 Even if it looks convenient, it’s error-prone.
@@ -213,6 +233,8 @@ Even if it looks convenient, it’s error-prone.
 * Not a true array type
 * Formatting/escaping issues are common
 * Small inconsistencies can break ingestion
+
+<div id="avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table" />
 
 #### Avoid: Multiple rows per user for identifiers (when your goal is a user identity table)
 
@@ -236,6 +258,8 @@ Don’t split identity data across rows when you can keep one row per user.
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -264,6 +288,8 @@ Transactional/event data may have multiple rows per user:
 
 <Accordion title="Connector-specific example assets (AWS S3, GCS, BigQuery, Snowflake)">
 
+<div id="what-does-arraylist-of-identifiers-mean" />
+
 ### What does “array/list of identifiers” mean?
 
 Sometimes a single user can have more than one email or phone (for example, a personal and a work email). Instead of forcing these into extra columns or messy text fields, we represent them as a list of values.
@@ -272,6 +298,8 @@ Sometimes a single user can have more than one email or phone (for example, a pe
 | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
+
+<div id="1-aws-s3-and-gcs-connector-parquet" />
 
 ### 1. AWS S3 and GCS connector (Parquet)
 
@@ -286,6 +314,8 @@ Sometimes a single user can have more than one email or phone (for example, a pe
 
 Parquet supports lists natively, which is why it’s recommended when users have multiple emails/phones.
 
+<div id="2-bigquery-connector-table-preview-and-schema-screenshot" />
+
 ### 2. BigQuery connector (table preview and schema screenshot)
 
 **Example identity schema (BigQuery)**
@@ -298,6 +328,8 @@ Parquet supports lists natively, which is why it’s recommended when users have
 | maid | STRING | NULLABLE |
 
 Arrays are native in BigQuery (REPEATED fields). This is the recommended approach when multiple emails/phones exist.
+
+<div id="3-snowflake-connector-table-preview-and-schema-screenshot" />
 
 ### 3. Snowflake connector (table preview and schema screenshot)
 
@@ -320,10 +352,14 @@ Snowflake supports list-like fields (arrays). This is preferred over creating em
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-customized-data-views">Data views</Anchor> are customized subsets of your existing data sources that you can create without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what’s relevant in collaborations, keeping the data you share clear and focused, and all other data private and secure. Use Data Views in collaborations because they:
 
+<div id="are-business-oriented-and-easier-to-collaborate-with" />
+
 #### Are business-oriented and easier to collaborate with
 
 * Data Views let you present the data in a clean, business-friendly structure (for example, “Customer Identity View”, “Eligible Audience View”, “Purchase Summary View”) rather than raw logs or complex transactional schemas.
 * They help standardize definitions (for example, “active customer”, “total spend last 30 days”) so both sides are aligned and using the same logic.
+
+<div id="are-more-privacy-safe-by-design" />
 
 #### Are more privacy-safe by design
 
@@ -333,6 +369,8 @@ Snowflake supports list-like fields (arrays). This is preferred over creating em
   * Limit granularity (for example, share aggregated metrics instead of line-level transactions)
   * Share only the identifiers needed for matching (and not additional sensitive columns)
 
+<div id="protect-sensitive-business-data" />
+
 #### Protect sensitive business data
 
 * Raw transactional tables can contain highly sensitive business signals (for example, detailed purchase behavior, pricing patterns, merchant relationships, internal IDs).
@@ -340,6 +378,8 @@ Snowflake supports list-like fields (arrays). This is preferred over creating em
   * Example: share category-level aggregates instead of item-level details
   * Example: share spend buckets or summary metrics instead of exact line items
 * This reduces the risk of unintentionally revealing competitive or proprietary information.
+
+<div id="can-make-your-data-more-cost-effective-and-performant" />
 
 #### Can make your data more cost-effective and performant
 

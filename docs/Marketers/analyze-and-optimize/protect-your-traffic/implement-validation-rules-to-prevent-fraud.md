@@ -26,6 +26,8 @@ x-zendesk:
 
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
+<div id="overview" />
+
 ## Overview
 
 * Validation rules are defined in the rule builder using customized conditions and logic that filter and select which app installs or in-app event attributions to keep or block.
@@ -83,9 +85,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="rule-builder" />
+
 ## Rule builder
 
 The rule builder user interface is designed for interactive rule building. **Tip!** Familiarize and experiment with the rule builder before reviewing this article in detail.
+
+<div id="use-categorized-dimensions" />
 
 ### Use categorized dimensions
 
@@ -116,6 +122,8 @@ The rule builder contains the following sections:
 | Conditions | Choose whether you want to block installs/in-app events that "Match" or "Don't match" the defined conditions.<ul><li>**Match conditions -** Attribution will be blocked for installs/in-app events that match the defined conditions, and the action you select below will apply to all of these.</li><li>**Do not match conditions -** Attribution will be blocked for installs/in-app events that don’t match the following conditions, and the action you select below will apply to all the rest.</li></ul>See also Protect360 conditions for [installs](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) and [in-app events](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions). |
 | Actions | For installs, select what to do with the installs meeting the specified conditions:<ul><li>**Mark installs as invalid and don’t attribute them**. Installs won’t appear in AppsFlyer dashboards except Protect360 and reports.</li><li>**Block attribution and correct to last valid media source**. If no valid media source is identified, the install is considered organic.</li></ul>For in-app events, select what to do with the installs meeting the specified conditions:<ul><li>**Block attribution, but show in Protect360 data**. Events aren’t attributed but show in the Protect360 dashboard and raw data.</li><li>**Remove from AppsFlyer**. Events will not show in the AppsFlyer platform at all.</li></ul>See [Outcomes](/docs/implement-validation-rules-to-prevent-fraud#outcomes) for more information. |
 
+<div id="validation-rule-examples" />
+
 ## Validation rule examples
 
 <Accordion title="Install sources">
@@ -145,6 +153,8 @@ You can add multiple conditions, and groups of conditions to every rule.
 
 Conditions are defined as per the conditions, operators, and values outlined in the table that follows.
 
+<div id="bulk-upload" />
+
 #### Bulk upload
 
 When selecting the operators **In list** or **not in list** inside of conditions that support it, you have the option to bulk upload a CSV file when adding new items.
@@ -160,6 +170,8 @@ Note: The CSV file can contain up to 17K values.
 Additional condition options are available for Protect360 customers, for [installs](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) and [in-app events](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions).
 
 <table><thead><tr><th><span>Condition</span></th><th><span>Operator</span></th><th><span>Value</span></th><th><span>Remarks</span></th></tr></thead><tbody><tr><td><span>Campaign</span></td><td rowspan="6"><ul><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Doesn't contain</span></li><li><span>Contains</span></li><li><span>Starts with</span></li><li><span>Ends with</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Matches regular expression</span></li><li><span>Is empty</span></li><li><span>Isn't empty</span></li></ul></td><td><ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul></td><td rowspan="11"><ul><li> <span>Menu is based on:</span><ul><li>Selected apps and agencies.</li><li>Traffic of the past 30 days, ordered by traffic frequency.</li></ul></li><li><span>Free text must be typed exactly as it appears in raw data.</span></li></ul></td></tr><tr><td><span>Campaign ID</span></td><td rowspan="5"><ul><li><span>Free text only.</span></li><li><span>Possible to add multiple values separated by spaces.</span></li></ul></td></tr><tr><td><span>Ad ID</span></td></tr><tr><td><span>Ad set ID</span></td></tr><tr><td><span>Ad set name</span></td></tr><tr><td><span>Device type</span></td></tr><tr><td><span>Geo</span></td><td rowspan="3"><ul><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li></ul></td><td><ul><li><span>Search required value (based on country name, country code, state, or city).</span></li><li><span>Select value from menu.</span></li></ul></td></tr><tr><td><span>Platform</span></td><td><span>Select value from menu.</span></td></tr><tr><td><span>Currency</span></td><td><p>Currency only. Possible values:</p><p>USD, NZD, SGD, IMP, ANG, MNT, BIF, BBD, HUF, ERN, AZN, AOA, PYG, MYR, GYD, VUV, SLL', FKP, DJF, GNF, LVL, MMK, MRO, RSD, CLF, XDR, ZAR, TND, PHP, KGS, XPD, RON, RUB, KMF, SCR, GIP, TRY, JEP, UYU, XCD, FJD, GHS, MVR, AWG, UGX, TOP, CVE, MKD, COP, CUC, GTQ, KZT, MXN, MGA, AUD, BDT, ISK, KRW, DZD, GGP, OMR, ZMW, MOP, CUP, JPY, SHP, LSL, ETB, BWP, MAD, AED, NGN, BRL, GEL, IDR, EUR, GBP, WST, XAF, SZL, XOF, SEK, UZS, KES, KYD, ILS, KWD, NPR, BZD, QAR, UAH, BTN, HTG, DKK, VND, SBD, JMD, IQD, LBP, XPT, HRK, HKD, JOD, PAB, CDF, VEF, XAU, BAM, CNY, SOS, XPF, GMD, DOP, XAG, KPW, BOB, BHD, BYN, BYR, LRD, BGN, AMD, CZK, CAD, LAK, EEK, MTL, PLN, LKR, BTC, MWK, LTL, ZMK, PGK, YER, PEN, KHR, RWF, BSD, AFN, ZWL, LYD, TMT, HNL, TWD, IRR, MUR, THB, ALL, TJS, SDG, BMD, CRC, NOK, SRD, MZN, CLP, STD, SYP, TZS, EGP, ARS, MDL, INR, SAR, PKR, TTD, NIO, BND, NAD, SVC, CHF</p></td></tr><tr><td><span>Revenue</span></td><td><ul><li><span>Lower then</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Is between</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li></ul></td><td><ul><li><span>Free text only.</span></li></ul></td></tr><tr><td><span>OS version</span></td><td><ul><li><span>Lower than</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Is between</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Is empty</span></li><li><span>Isn’t empty</span></li></ul></td><td><ul><li><span>Search for desired value.</span></li><li><span>Select from menu.</span></li><li><span>Free text (for values that don’t exist in your search results).</span></li></ul></td></tr><tr><td><span>App version</span></td><td><ul><li><span>Lower than</span></li><li><span>Lower than or equals</span></li><li><span>Greater than</span></li><li><span>Greater than or equals</span></li><li><span>Equals</span></li><li><span>Doesn't equal</span></li><li><span>Is Between</span></li><li><span>In list</span></li><li><span>Not in list</span></li><li><span>Not in last</span></li><li><span>Not in last (major)</span></li><li><span>Is empty</span></li><li><span>Isn’t empty</span></li></ul></td><td><ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul></td><td><ul><li> <span>Menu is based on t</span>raffic of the past 30 days, ordered by traffic frequency.</li><li><span>Free text must be typed exactly as it appears in raw data.</span></li><li> <span>For "Not in last," if you have more than one series of versions, select "Not in last (major)". </span><a href="./implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work"><span>Learn more</span></a> </li></ul></td></tr><tr><td><span>Lookback days</span></td><td><ul><li><span>Lower than</span></li><li><span>Greater than or equals</span></li><li><span>Is between</span></li></ul></td><td><ul><li><span>Free text: A single numeric value.</span></li></ul></td><td><ul><li><span>Refers to the impression/click lookback window in days.</span></li><li><span>Ensures you don’t pay for installs with an attribution link that was modified to allow a longer attribution period.</span></li><li><span>Does not replace the configuration of the lookback window in your attribution link.</span></li><li> <span>[Recommended] Use in combination with the attribution touch type condition (</span><a href="./implement-validation-rules-to-prevent-fraud#protect360-install-conditions"><span>available with Protect360</span></a><span>)</span> </li></ul></td></tr><tr><td><span>Is preinstalled</span></td><td rowspan="2"><ul><li><span>Yes</span></li><li><span>No</span></li></ul></td><td rowspan="2"><ul><li>No value (operator is the value)</li></ul></td><td><ul><li> <span>Validates all types of preinstalls:</span><ul><li><span>Factory preinstalls, meaning an app that comes on the device as part of the OS.</span></li><li><span>Offered preinstalls, meaning an app promoted and offered to users as soon as the device is initialized. This is done by media sources designated for preinstalls.</span></li></ul></li><li>For installs with multiple clicks/ sources, this condition validates whether one of the sources is a preinstall.</li></ul></td></tr><tr><td><span>Is deeplink</span></td><td><span>An empty deep link field in raw data is considered to be Is deeplink = No</span></td></tr></tbody></table>
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -193,6 +205,8 @@ Protect360 conditions are defined as per the conditions, operators, and values o
 | --- | --- | --- | --- |
 | Event name | <ul><li>In list</li><li>Not in list</li><li>Equals</li><li>Doesn’t equal</li><li>Contains</li><li>Doesn’t contain</li><li>Starts with</li><li>Ends with</li><li>Is empty</li><li>Isn’t empty</li><li>Matches regular expression</li></ul> | <ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul> | <ul><li>Free text must be typed exactly as it appears in raw data.</li></ul> |
 | App version | <ul><li>Lower than</li><li>Lower than or equals</li><li>Greater than</li><li>Greater than or equals</li><li>Equals</li><li>Doesn't equal</li><li>Is Between</li><li>In list</li><li>Not in list</li><li>Not in last</li><li>Not in last (major)</li><li>Is empty</li><li>Isn’t empty</li></ul> | <ul><li>Search for desired value.</li><li>Select value from menu.</li><li>Free text (for values that don’t exist in your search results).</li></ul> | <ul><li>Menu is based on traffic of the past 30 days, ordered by traffic frequency.</li><li>Free text must be typed exactly as it appears in raw data.</li><li>For "Not in last," if you have more than one series of versions, select "Not in last (major)". [Learn more](/docs/implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work)</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -245,6 +259,8 @@ For example, if you want to validate installs based on both platform and OS, you
 
 </Accordion>
 
+<div id="additional-features" />
+
 ## Additional features
 
 <Accordion title="View rule list">
@@ -280,6 +296,8 @@ Search and filters apply to the full rule set, regardless of the page you’re v
 6. [Optional] Click **Estimate traffic impact** to [see how your rule will affect traffic](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact).
 7. Click **Save**.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > App version must only contain numbers. For example 2.2.1
@@ -307,6 +325,8 @@ Use Tagged mode to:
 
 Best practice: Create the rule in Tagged mode first, review the flagged traffic in Data Locker, and change the rule status to Implemented when you’re confident in the rule accuracy. Aim to complete this review in less than 7 days to maintain active protection.
 
+<div id="how-tagged-mode-works" />
+
 #### How Tagged mode works
 
 When you create or edit a validation rule, select the Detection status in the Rule outcome section.
@@ -316,6 +336,8 @@ When you create or edit a validation rule, select the Detection status in the Ru
 
 Note: Tagged mode applies only to live traffic from the moment the rule is saved. It doesn’t tag historical data.
 
+<div id="rule-outcome-configuration" />
+
 #### Rule outcome configuration
 
 The Rule outcome section, formerly Action, defines how AppsFlyer handles traffic that matches the rule conditions. It also provides a high-level summary of the rule configuration so you can verify the expected impact before saving the rule.
@@ -324,6 +346,8 @@ The Rule outcome section, formerly Action, defines how AppsFlyer handles traffic
 | --- | --- | --- |
 | Tagged | No impact. Traffic is attributed normally. | Visible in Data Locker and raw data export reports. |
 | Implemented | Active block. Attribution is blocked according to the selected rule outcome. | Visible in Protect360 dashboards and export reports. |
+
+<div id="what-to-expect-when-configuring-a-rule" />
 
 #### What to expect when configuring a rule
 
@@ -337,6 +361,8 @@ When Detection status is set to Tagged, the rule acts as a discovery tool. AppsF
 
 When Detection status is set to Implemented, installs or in-app events that match the rule criteria are blocked from attribution or reattributed according to the selected rule outcome. The info panel summarizes the active outcome before you save the rule.
 
+<div id="example-match-logic" />
+
 #### Example: Match logic
 
 For detected installs that meet the rule conditions for the selected apps, the info panel can indicate that the installs are:
@@ -344,6 +370,8 @@ For detected installs that meet the rule conditions for the selected apps, the i
 * Blocked from attribution or detected as post-attribution.
 * Reattributed to the last valid non-organic or organic source.
 * Visible in export reports.
+
+<div id="example-do-not-match-logic" />
 
 #### Example: Do not match logic
 
@@ -354,6 +382,8 @@ For detected installs that don’t meet the rule conditions for the selected app
 * Visible in export reports.
 
 All other installs that meet the rule conditions within these apps aren’t blocked.
+
+<div id="set-a-rule-to-tagged-mode" />
 
 #### Set a rule to Tagged mode
 
@@ -366,6 +396,8 @@ To test a validation rule with Tagged mode:
 5. Click Save.
 
 After the rule is saved, AppsFlyer flags matching live traffic for reporting and analysis. Attribution continues as usual.
+
+<div id="analyze-tagged-data" />
 
 #### Analyze tagged data
 
@@ -391,6 +423,8 @@ Use the following columns in Data Locker and Raw data exports to identify traffi
 | detected\_rule\_name<br /><br />(Data Locker) | The name of the validation rule that flagged the record. |
 | detected\_rule\_id<br /><br />(Data Locker) | The unique ID of the validation rule that flagged the record. |
 
+<div id="change-a-tagged-rule-to-implemented" />
+
 #### Change a tagged rule to Implemented
 
 After you review the tagged data and confirm that the rule works as expected, change the rule status to Implemented.
@@ -415,6 +449,8 @@ From the moment the rule is saved, AppsFlyer actively blocks matching traffic ac
   * Under **Action**: edit or delete the rule.
 
 </Accordion>
+
+<div id="faq" />
 
 ## FAQ
 
@@ -494,6 +530,8 @@ Use **Not in last** to allow installs from your **most recent app versions** and
 * **Not in last** ***X*** **versions**: Allows installs from the **last X versions** of the selected app, and **blocks** installs from **all earlier versions**.
 * **Not in last (major)** ***X*** **versions**: Use when your versioning includes **multiple major version series** (for example, 1.x and 2.x). This condition allows the **last X versions within each major series**, and blocks earlier versions in each series.
 
+<div id="example-not-in-last" />
+
 ##### Example: Not in last
 
 You have these existing app versions:
@@ -516,6 +554,8 @@ A rule defined with **Not in last 2 versions**:
   * 1.0.03
   * 2.0.01
 
+<div id="example-not-in-last-major" />
+
 ##### Example: Not in last (major)
 
 Using the same versions list above, a rule defined with **Not in last (major) 2 versions**:
@@ -529,6 +569,8 @@ Using the same versions list above, a rule defined with **Not in last (major) 2 
   * 1.0.01
   * 2.0.01
 
+<div id="understand-how-the-condition-works-with-multiple-apps" />
+
 ##### **Understand how the condition works with multiple apps**
 
 If you select **multiple apps** in the rule, AppsFlyer evaluates the **Not in last** condition **separately for each app**.
@@ -540,6 +582,8 @@ For example, if you set **Not in last 3 versions** and select App A, App B, and 
 
 App C allows its **last 3 versions** based on **App C’s** version history.
 
+<div id="how-appsflyer-determines-the-latest-version" />
+
 ##### How AppsFlyer determines the latest version
 
 The latest versions that the **Not in last** conditions use aren’t simply the newest version numbers in your traffic. AppsFlyer calculates the latest-version list daily, using a protection mechanism designed to prevent fraudsters from spoofing a fake latest version to bypass the rule.
@@ -549,6 +593,8 @@ AppsFlyer adds a version to the latest-version list for an app only if the versi
 * It was attributed from a self-reporting network (SRN).
 * It has at least 100 attributed installs that day.
 * Those installs make up at least 70% of that day’s SRN-attributed installs for the app.
+
+<div id="example-latest-version-calculation" />
 
 ##### Example: Latest version calculation
 

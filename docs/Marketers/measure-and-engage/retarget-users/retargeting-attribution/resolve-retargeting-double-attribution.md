@@ -27,6 +27,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## Overview
 
 Double attribution in retargeting campaigns means that in-app events are attributed to both the media source motivating the original install and the media source motivating the re-engagement or re-attribution event.
@@ -48,6 +50,8 @@ To clarify further, the table that follows contains a scenario of how in-app eve
   * [Best practice] **conversion\_type**: install or re-engagement.
   * is\_retargeting: if true, the data relates to the retargeting campaign.
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### Attribution relative to the re-engagement window
 
 | Media source | Before re-engagement | During re-engagement | After re-engagement |
@@ -55,15 +59,21 @@ To clarify further, the table that follows contains a scenario of how in-app eve
 | User acquisition | Primary<br /><br />is\_primary\_attribution: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) | Secondary<br /><br />is\_primary\_attribution: False<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: False) | Primary<br /><br />is\_primary\_attribution: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) |
 | Retargeting | N/A | Primary<br /><br />is\_primary\_attribution: True<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: True) | N/A |
 
+<div id="support-for-dashboard-view-types" />
+
 ## Support for dashboard view types
 
 Some dashboards and cohort reports contain multiple view options being unified, user acquisition, and retargeting. These view types employ similar logic to that employed in raw data.
 
 ![](https://files.readme.io/65d467b9b8c4a24036eac000808113ed794f88fc547994498d48e829d26afda3-9479237101329.png)
 
+<div id="data-filtering-by-view-type-using-the-conversion_type-field" />
+
 #### Data filtering by view type using the conversion\_type field
 
 <table><thead><tr><th>View type</th><th>conversion_type</th><th>is_primary</th><th>Attribution</th></tr></thead><tbody><tr><td rowspan="2">User acquisition</td><td>install</td><td>True or False</td><td>UA events attributed to the UA media source</td></tr><tr><td>re-engagement</td><td>False</td><td>Retargeting events attributed to the UA media source.</td></tr><tr><td>Retargeting</td><td>re-engagement or re-attribution</td><td>True</td><td>Retargeting events attributed to the retargeting media source</td></tr><tr><td>Unified</td><td>install or re-engagement</td><td>True</td><td>All events attributed to the last touch media source</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## How do I identify double-attributed retargeting events in user acquisition in-app reports?
 

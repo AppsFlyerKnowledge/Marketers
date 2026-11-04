@@ -24,6 +24,8 @@ x-zendesk:
 
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 
+<div id="activate-partner" />
+
 ## Activate partner
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -38,16 +40,22 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
+<div id="setting-up-awin" />
+
 ## Setting up Awin
 
 The integration with Awin supports click-through attribution.
 
 The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Awin, the available tabs are Integration, Attribution link, and Permissions.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * Some settings differ for iOS and Android devices
 > * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">setting up partner integrations</Anchor>
+
+<div id="prerequisite" />
 
 ### Prerequisite
 
@@ -59,9 +67,13 @@ Before setting up the integration, make sure to implement the required "commissi
 
 The **Integration** tab includes a number of sections, as described below.
 
+<div id="activate-partner-1" />
+
 #### Activate partner
 
 To configure the integration, you must first <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#activate-partner">turn on</Anchor> the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner integrations</Anchor>. For additional information, you can reference the <Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">Awin integration page</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Advanced Privacy
 
@@ -73,25 +85,35 @@ For iOS apps only: Your control over data shared with the partner via postbacks 
 | Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
 
+<div id="general-settings" />
+
 #### General settings
 
 **Awin advertiser ID**
 
 Add your Awin advertiser (or merchant) ID.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > An advertiser ID identifies your advertiser account on the partner’s side and is necessary for AppsFlyer attribution and postbacks. The ID must appear in the attribution link.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Install postbacks are sent to this partner only.
+
+<div id="in-app-event-settings" />
 
 #### In-app event settings
 
 **Awin advertiser ID**
 
 Add your Awin merchant ID.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -114,6 +136,8 @@ Configure mapping of in-app events with Awin events, sent via postbacks:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -151,12 +175,16 @@ Ad revenue isn't available for Awin.
 
 Select which permissions to grant Awin to access your data and perform various actions.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > * When the integration is <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">deactivated</Anchor> while the Permissions toggle is still turned on, permissions remain granted.
 > * Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">granting permissions</Anchor>.
 
 </Accordion>
+
+<div id="deep-linking-and-deferred-deep-linking-using-onelink" />
 
 ## Deep linking and deferred deep linking using OneLink
 
@@ -166,6 +194,8 @@ AWIN as a platform supports a URI scheme but **doesn’t support** handling the 
 To deep link with OneLink via AWIN:
 
 * <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">Setup your OneLink URL with a URI scheme</Anchor>
+
+<div id="note-4" />
 
 > 📘 **Note**
 >

@@ -35,9 +35,13 @@ The Net Revenue API is implemented through two REST APIs that let you configure 
 
 For more information about how net revenue is calculated, see <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue#true-revenue">Net revenue</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Net revenue is displayed in raw data reports and in My Dashboards as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
+
+<div id="update-tax-rate-rules" />
 
 ## Update tax rate rules
 
@@ -70,6 +74,8 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
    * The parameters and values that specify which taxes to calculate are outlined in the table that follows.
 3. Instruct your developer to use the [Tax rates REST API](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id) to create tax rate rules. The API accepts a JSON file in the body of the POST request. [This JSON file](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub) includes all supported countries and their default tax rates. Your developer can edit the file or use it as-is in the API.
 
+<div id="tax-rate-api-parameters" />
+
 ### Tax Rate API parameters
 
 | Parameter | Mandatory | Remarks |
@@ -81,6 +87,8 @@ To set the tax rate rules using the Net Revenue API, follow these steps:
 | `subdivision` | No | <ul><li>For some countries, there can be an additional state or subdivision.</li><li>Handled according to [ISO 3166-2 subdivision codes](https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm).</li><li>Must include the country code and subdivision code.</li><li>Example: US-CA</li></ul> |
 | `postal_code` | No | <ul><li>String of letters and/or numbers.</li><li>Example: L4J8E3</li></ul> |
 | `deduction_order` | No | <ul><li>Enum, either **0**, **1**, or **2**:<ul><li>**0** means store commission is deducted first from the gross revenue and tax is deducted from the remaining amount.</li><li>**1** means tax is deducted first from the gross revenue and store commission is deducted from the remaining amount.</li><li>**2** means that both tax and store commission are deducted from the total revenue.</li></ul></li></ul> |
+
+<div id="set-up-store-commission-rates" />
 
 ## Set up store commission rates
 
@@ -94,6 +102,8 @@ A few examples:
 * Your store commission changes over time, and because AppsFlyer has no visibility into your store commission status, you need to update the applied rate manually using the Net Revenue API, for example:
   * Applying a reduced commission when your app becomes eligible for a lower store fee
   * Reverting to the default store commission logic when the reduced rate no longer applies
+
+<div id="update-store-commission-with-the-net-revenue-api" />
 
 ### Update store commission with the Net Revenue API
 

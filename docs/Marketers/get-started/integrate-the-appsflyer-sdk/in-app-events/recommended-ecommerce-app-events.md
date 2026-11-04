@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your eCommerce app.
 
+<div id="-ecommerce" />
+
 ## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" /> eCommerce
 
 eCommerce apps allow buyers to easily search for and buy goods online. The typical events that we suggest recording are search, purchase, adding to cart, and adding to wishlist.
@@ -35,6 +37,8 @@ Recording events can help you determine:
 * How many buyers completed a checkout
 * How many buyers are recurring buyers and how many are just one-time buyers
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
@@ -45,6 +49,8 @@ Recording events can help you determine:
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -271,6 +277,8 @@ When the user lands on the thank you page after a successful purchase
 | af\_receipt\_id | Order ID<br /><br />**Required parameter for CRITEO and Google Ad Words for purchase validation** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

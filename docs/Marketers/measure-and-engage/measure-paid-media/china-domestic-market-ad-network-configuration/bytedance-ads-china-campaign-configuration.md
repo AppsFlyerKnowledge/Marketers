@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** ByteDance Ads China (Ocean Engine), an AppsFlyer integrated partner, is an Internet technology company operating several machine learning-enabled content platforms.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If you want to promote your Android Apps with ByteDance Ads China, you are required to send your OAID to AppsFlyer SDK according to the instructions in the <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">AppsFlyer SDK Integration - Android</Anchor>. Google Play service is blocked in China, OAID is the most popular Android Device ID for ad attribution.
@@ -31,6 +33,8 @@ x-zendesk:
 In addition to click-based mobile attribution, ByteDance Ads China also offers view-through attribution, which you can record with AppsFlyer.
 
 To configure your campaigns with ByteDance Ads China, follow the steps below.
+
+<div id="setting-up-bytedance-ads-china" />
 
 ## Setting up ByteDance Ads China
 
@@ -48,6 +52,8 @@ To configure your campaigns with ByteDance Ads China, follow the steps below.
 
 Tip
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners.
@@ -58,6 +64,8 @@ Tip
 <Accordion title="Integration tab">
 
 The Integration Tab is divided into different sections as described below.
+
+<div id="activate-partners" />
 
 ### Activate partners
 
@@ -72,11 +80,15 @@ General Settings
 
 Toggle this to **ON** if you want to attribute view-through installs from ByteDance Ads China. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to ByteDance Ads China following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 ![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -106,6 +118,8 @@ Generate and save attribution links and send them to the partner for attributing
 <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">Learn more about attribution link structure and parameters</Anchor>.
 
 **To generate an attribution link,** follow <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">these instructions</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -143,6 +157,8 @@ Go to **New Ad** >> **Set Budget and Bid** select the conversion you created for
 
 AppsFlyer gets cost details by API. Note that AppsFlyer doesn't support the ad-level cost data for ByteDance, except for campaigns running on the v1.0 ByteDance system.
 
+<div id="api-dimensions-supported" />
+
 ### API dimensions supported
 
 | Geo | Media source | Campaign | Adset | Ad | Other |
@@ -178,6 +194,8 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 In this tab, you can select the permissions to grant ByteDance Ads China, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for ByteDance Ads China, the permissions tab is active and you can grant control to ByteDance Ads China.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

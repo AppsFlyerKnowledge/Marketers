@@ -33,6 +33,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the AppsFlyer SDK functionalities that are available and determine which APIs you want your Android or iOS app to use.
 
+<div id="about-the-sdk" />
+
 ## About the SDK
 
 Watch this video to get the big picture of SDK integration.
@@ -80,6 +82,8 @@ Additional documentation includes the following:
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## SDK compatibility
 
 The AppsFlyer SDK is compatible with the following platforms:
@@ -111,13 +115,19 @@ Starting from SDK V6.0.8, <Anchor target="_blank" href="/marketers/docs/apple-ap
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## SDK integration
 
 The process of installing and integrating the SDK requires the product manager and mobile developer to work together. **Before** integrating the SDK with your app, review all of the integration tasks and consider the functionalities that you want your app to use.
 
+<div id="sdk-planning-checklist" />
+
 ### SDK planning checklist
 
 To get you started, we've prepared a <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">downloadable checklist</Anchor> to help guide you through the planning process. For each task, there are links to the marketer and developer documentation.
+
+<div id="sdk-integration-tasks" />
 
 ### SDK integration tasks
 
@@ -140,6 +150,8 @@ You can work with your mobile developers to implement these additional APIs in t
 | Determine <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#sessions">user session reporting</Anchor>. | 30 mins |
 | Determine the attribution methods to use for <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#owned-media">owned media sources</Anchor>. | 1 hour |
 | Manage <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#user-privacy">user privacy</Anchor> policies to make sure your app complies with privacy regulations (GDPR, CCPA). | 1 hour |
+
+<div id="note" />
 
 > 📘 **Note**
 >

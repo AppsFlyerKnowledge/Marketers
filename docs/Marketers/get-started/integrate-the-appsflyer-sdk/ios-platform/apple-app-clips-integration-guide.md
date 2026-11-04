@@ -25,6 +25,8 @@ x-zendesk:
 
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 
+<div id="app-clip-integration" />
+
 ## App Clip integration
 
 * App Clips provide iOS 14 users with quick, convenient access to an app experience, without the need to download the full app.
@@ -36,11 +38,15 @@ x-zendesk:
     * With iOS 13 or earlier, or Android, are redirected based on your settings in OneLink (to the app store, etc).
   * Users with the app installed are sent to the app based on the Universal Link or App Link setup in OneLink.
 
+<div id="considerations" />
+
 ### Considerations
 
 * App Clips can be up to 10 MB in size. The AppsFlyer SDK is ~1.5 MB.
 * No advertising identifiers available.
 * App Clips are deleted by the OS automatically after a 30-day period of inactivity.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -55,6 +61,8 @@ x-zendesk:
 > * If they do not have the app and have a device with iOS 13 or earlier, or Android, the app store page for the coffee shop app opens.
 >
 > Mark uses the AppsFlyer dashboard and reports to see how many clicks and installs the App Clip receives - and how many users proceed to eventually download the full app.
+
+<div id="metrics-and-reporting" />
 
 ## Metrics and reporting
 
@@ -75,9 +83,13 @@ View App Clip performance in the <Anchor target="_blank" href="/marketers/docs/c
 * See how long it takes users to go from the App Clip to the full app install.
 * Use the in-app conversion metric to compare the performance of different invocation campaigns.
 
+<div id="app-clip-implementation" />
+
 ## App Clip implementation
 
 The following procedure detail what you and the iOS developer need to do to develop and integrate App Clips.
+
+<div id="scope-of-work" />
 
 #### Scope of work
 
@@ -193,6 +205,8 @@ Send the following links to your iOS developer and tell them to follow the instr
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 <div id="traits-and-limitations::26141033" />
@@ -207,6 +221,8 @@ Send the following links to your iOS developer and tell them to follow the instr
 | Protect360 | Protect360 does not support App Clips. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

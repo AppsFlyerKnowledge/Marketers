@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Epic game with AppsFlyer to receive attribution and event data for your Epic campaigns. The Epic integration supports attribution and in-app event recording for Epic games (in other words, attribution and recording on a user's device).
 
+<div id="about-epic-game-attribution" />
+
 ## About Epic game attribution
 
 Games running on Epic can integrate with AppsFlyer via API (both S2S and client-side) to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+
+<div id="example-attribution-flow" />
 
 ### Example attribution flow
 
@@ -37,6 +41,8 @@ The following is an example flow that highlights the most important steps in a u
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
 3. Epic app page: This is your Epic storefront page that hosts your Epic game for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -171,9 +177,13 @@ The following table lists the tasks required to integrate your Epic game with Ap
   </tbody>
 </Table>
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Removing AppsFlyer data when uninstalling the app
 
 To remove all AppsFlyer SDK data when uninstalling the app, please ask your developer to perform the steps specified [here](https://dev.appsflyer.com/hc/docs/epic-vanilla#deleting-appsflyer-data-on-uninstall).
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 
@@ -181,6 +191,8 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 | --- | --- |
 | Retargeting | Not currently supported |
 | Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> using the upload file by email method. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

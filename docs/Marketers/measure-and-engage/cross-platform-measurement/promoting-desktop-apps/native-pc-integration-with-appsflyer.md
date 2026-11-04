@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your PC game or app with AppsFlyer to receive attribution and event data for your PC campaigns. The Native PC integration supports attribution and in-app event recording for PC apps (in other words, attribution and recording on a user's PC).
 
+<div id="about-native-pc-attribution" />
+
 ## About Native PC attribution
 
 Native PC runs across Windows devices, through the installation of an .EXE or .MSI file extension.
@@ -29,6 +31,8 @@ Native PC runs across Windows devices, through the installation of an .EXE or .M
 This is different than the <Anchor target="_blank" href="/marketers/docs/windows-sdk-integration-for-developers">AppsFlyer Windows SDK 2.4.1</Anchor> which works with installs from the Microsoft App Store, Windows phones, and UWP.
 
 Apps running on PC can integrate with AppsFlyer via S2S API or SDK to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+
+<div id="example-attribution-flow" />
 
 ### Example attribution flow
 
@@ -41,6 +45,8 @@ The following is an example flow that highlights the most important steps in a u
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
 3. App page: This is the URL to your Native PC app page that hosts your app for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -56,9 +62,13 @@ The following table lists the tasks required to integrate your PC app with AppsF
 | Direct attribution link setup | <ul><li>If you don’t use a cross-platform landing page, you can create direct attribution links to place behind ads.</li><li>If you do use a cross-platform landing page, we recommend also using direct attribution links and placing them behind the dedicated platform buttons on the landing page.</li><li><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor></li></ul> | Marketer |
 | Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Removing AppsFlyer data when uninstalling the app
 
 To remove all AppsFlyer SDK data when uninstalling the app, please ask your developer to perform the steps specified [here](https://dev.appsflyer.com/hc/docs/nativepc-vanilla#deleting-appsflyer-data-on-uninstall).
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 
@@ -66,6 +76,8 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 | --- | --- |
 | Retargeting | Not currently supported |
 | Cost data | Import cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file **by email** method. You can also pull data **via API** for Google, Meta, or TikTok. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

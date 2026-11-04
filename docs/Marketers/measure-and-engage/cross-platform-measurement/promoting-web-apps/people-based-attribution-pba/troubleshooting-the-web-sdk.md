@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **At a glance:** A troubleshooting guide for AppsFlyer Web SDK added directly to your website or implemented via Google Tag Manager.
 
+<div id="sdk-added-directly" />
+
 ## SDK added directly
 
 You can add the SDK directly to your website.
+
+<div id="no-data-or-partial-data-in-the-pba-dashboard" />
 
 ### No data or partial data in the PBA dashboard
 
@@ -38,6 +42,8 @@ You can add the SDK directly to your website.
 | You placed the web SDK in the body of the page | <ul><li>You can put the web SDK in the body of the page, but this might affect the data that is sent to AppsFlyer.</li><li>We recommend that you put it in the head section of the page.</li></ul> |
 | The web SDK is not placed on all pages on your website | We recommend placing the web SDK on all pages of your website. |
 
+<div id="events-are-not-sent" />
+
 ### Events are not sent
 
 | Cause | Solution |
@@ -47,12 +53,16 @@ You can add the SDK directly to your website.
 | Malformed events | Make sure the event is well-formed.<br /><br />See <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">available event parameters</Anchor> to learn more about well-formed events. |
 | SDK called twice |  |
 
+<div id="conflicting-sdks-and-libraries" />
+
 ### Conflicting SDKs and libraries
 
 Many web SDKs make use of popular JavaScript libraries. Such SDKs also occupy names in the global scope. For example, our web SDK occupies **AF** as the main object that enables the web SDK.
 
 * If some SDK makes use of library X version 1.2 and AppsFlyer SDK makes use of library X 2.1, the two libraries might conflict.
 * If another SDK or library makes use of **AF** (in the global scope) as an object name, the two SDKs conflict, and one SDK might override the other.
+
+<div id="sdk-added-using-google-tag-manager" />
 
 ## SDK added using Google Tag Manager
 
@@ -61,11 +71,15 @@ Many web SDKs make use of popular JavaScript libraries. Such SDKs also occupy na
 
 If you come across issues. Apart from the issues described in the [native implementation of the SDK](/docs/troubleshooting-the-web-sdk#sdk-added-directly), there are some possible issues specific to GTM.
 
+<div id="calling-the-sdk" />
+
 ### Calling the SDK
 
 | Cause | Solution |
 | --- | --- |
 | <ul><li>Our Web SDK guide shows how to add the web SDK using a tag.</li></ul><ul><li>Some users, when creating tags to call events, set the tag to also call the SDK tag again. But this might cause issues.</li></ul>![mceclip0.png](https://files.readme.io/77be12759c5ec5a04a517ee1b99109e8952b97d1d4280b71c51fa36304f5adbf-360003756558.png) | The best approach is to set one tag to load the SDK and set this tag to fire on all pages. For any tags that send events, they should not call the SDK tag again. |
+
+<div id="tag-priority" />
 
 ### Tag priority
 
@@ -75,6 +89,8 @@ GTM allows you to <Anchor target="_blank" href="https://support.google.com/tagma
 | --- | --- |
 | A tag that loads the SDK is set to lower priority than a tag that sends an event on page load. As a result, the SDK is not initialized in time to send the event. | For the tag that loads the SDK, always set higher priority over tags that send events or identify users. |
 
+<div id="triggering-tags" />
+
 ### Triggering tags
 
 In GTM, every tag has a trigger that determines when this tag should be fired.
@@ -83,6 +99,8 @@ In GTM, every tag has a trigger that determines when this tag should be fired.
 | --- | --- |
 | The trigger responsible for firing the tag that loads the SDK is not set to all pages. As a result, not all page visits are logged and some events are not sent. | The best approach is to set an <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en">all-page views</Anchor> trigger for the tag that loads the SDK. |
 | The trigger responsible for firing tags that send events is not configured correctly. As a result, some events are not sent. | Determine the conditions for the trigger. For example,<ul><li>an interaction with DOM elements like a click on a button</li><li>a page visit to a page that has a certain path like **/thank-you-page** or **/confirmation-page**</li></ul> |
+
+<div id="publishing-gtm-containers" />
 
 ### Publishing GTM containers
 

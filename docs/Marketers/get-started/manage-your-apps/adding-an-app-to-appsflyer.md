@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to add your app to AppsFlyer so you can get attribution data on installs and in-app events, and analyze the data using the different tools on AppsFlyer.
 
+<div id="overview" />
+
 ## Overview
 
 If you haven't yet added an app to your dashboard, the app onboarding page will display when you log into AppsFlyer. App onboarding guides you through all the steps to add your app and also get it ready for attribution.
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### Entering the wizard for adding an app
 
@@ -38,6 +42,8 @@ You can enter the wizard for adding apps from the platform or you can add your a
 **To enter the wizard from the app onboarding page:**
 
 * In the **Add your app** step, click **Add app** and follow the instructions for adding an app.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -53,6 +59,8 @@ You can enter the wizard for adding apps from the platform or you can add your a
 
 <Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## Adding an app
 
 After you've [entered the Add an app wizard](#entering-the-wizard-for-adding-an-app), follow these steps:
@@ -62,6 +70,8 @@ After you've [entered the Add an app wizard](#entering-the-wizard-for-adding-an-
 3. Click **Add my app**.
 4. Copy the Dev key, to be used in the <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers#step-2-sdk--api-integration">SDK integration</Anchor> (you can retrieve it later from the <Anchor target="_blank" href="/marketers/docs/app-settings#general-app-settings">App Settings</Anchor> page).
 5. Click **Done** or **+ Add another app** to add more apps. Repeat the process for adding more apps.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -74,6 +84,8 @@ After registering the app, it will appear on the dashboard. To have installs and
 * Connect the app to partners in the Partner Marketplace
 
 See <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers">all the steps</Anchor> for completing the onboarding process.
+
+<div id="enter-app-details" />
 
 ### Enter app details
 
@@ -170,9 +182,13 @@ Use this option for the following platforms:
 
         Note
 
+        <div id="note-2" />
+
         > 📘 **Note**
         >
         > Using the channel parameter for multi-store attribution is not recommended. For a simpler and more standardized implementation, use the af\_store parameter instead.
+
+        <div id="important" />
 
         > 🚧 **Important!**
         >
@@ -221,6 +237,8 @@ Use this option for the following platforms:
 
 <Accordion title="Web (PBA)">
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > A web app is where you define a website to include in a brand bundle for our People-Based Attribution (PBA) feature.
@@ -245,6 +263,8 @@ Include –
 * Maximum length: 100 characters
 * XSS tags not permitted
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > Once you create a web app, you are not able to edit its properties (URL and app name) without deleting it and re-creating it, **which means you also must** <Anchor target="_blank" href="/marketers/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">**delete the brand bundle**</Anchor> **of which it is a part.**
@@ -263,10 +283,14 @@ Include –
 
 Use the Web platform to create a new Web app and measure website visits and conversions using Web Performance Measurement.
 
+<div id="before-you-begin" />
+
 #### **Before you begin**
 
 * Legacy People-Based Attribution (PBA) web apps appear under “**Web (PBA)”** marked as Legacy.
 * If you are migrating from a legacy PBA Web app, you can use your existing PBA Web Dev Key.
+
+<div id="to-add-a-web-app" />
 
 #### **To add a Web app**
 
@@ -349,6 +373,8 @@ Each PBA dev key can only be assigned to **ONE** web app. Once a PBA dev key is 
 * The primary domain is automatically added to **Excluded Domains** as type **PRIMARY**.
 
 Each legacy **Web Dev Key can be reused for only one** new Web app.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -538,26 +564,38 @@ If you need to confirm the app ID, check with your LB WebOS representative.
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### Enter additional information (not applicable to web apps):
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+
+<div id="select-currency" />
 
 #### **Select currency**
 
 Select the currency in which this app's data will be displayed in the dashboard. Revenue and spend events are converted to this currency using the exchange rate in effect at the event time. <Anchor target="_blank" href="/marketers/docs/app-settings#localization-currency">Learn more</Anchor> about an app's currency setting and its impact.
 
+<div id="important-2" />
+
 > 🚧 **Important!**
 >
 > Use care in selecting the currency you want to use for the app. You won't be able to change it once cost and revenue have been recorded.
+
+<div id="select-timezone" />
 
 #### **Select timezone**
 
 Align the timezone you select here with the timezone you set with other attribution partners (such as Meta ads and Google Ads). This ensures the closest match between the data reported in the AppsFlyer dashboard and the data you receive from these partners.
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > * Once the timezone is set, it remains locked and can't be changed until the following day.
 > * <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">Learn more</Anchor> about app timezone setting and its impact.
+
+<div id="define-app-audience" />
 
 #### **Define app audience**
 
@@ -567,22 +605,32 @@ If you've selected **Yes:**
 1. Open and read the <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guide</Anchor> about implementing compliance with child-directed apps.
 2. Select the box to confirm you've read the guide and will implement the controls it specifies.
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > * Two weeks after adding the app, you'll get a notification asking you to confirm you've implemented privacy controls for your child-directed apps. After confirming, you'll get a confirmation message. You can always access the confirmation message from the Notification center or see the confirmation details in the <Anchor target="_blank" href="/marketers/docs/audit-log">Audit log</Anchor>.
 > * See <Anchor target="_blank" href="/marketers/docs/child-directed-apps-faq">frequently asked questions about child-directed apps</Anchor>.
 
+<div id="manage-your-apps-in-bulk-via-api" />
+
 #### Manage your apps in bulk via API
 
 Account admins can <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">manage multiple apps in bulk</Anchor> using a dedicated API that supports the main features of the UI. This includes adding and deleting apps, and updating the app settings. The API also incorporates the same error verification mechanisms.
+
+<div id="note-7" />
 
 > 📘 **Note**
 >
 > At this stage, adding apps and updating the app settings via API is possible for mobile apps only. Deleting apps is possible for all platforms.
 
+<div id="add-a-debug-or-testing-app" />
+
 ### Add a debug or testing app
 
 If your developer creates a **debug**, **sandbox**, or **testing app**, you must add the app to the dashboard. Once your developer starts testing with the app, data displays in the app’s dashboard.
+
+<div id="note-8" />
 
 > 📘 **Note**
 >
@@ -593,6 +641,8 @@ For developer instructions on how to create a debug app and add it to the dashbo
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Android instructions</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">iOS instructions</Anchor>
 
+<div id="about-pending-apps" />
+
 ## About pending apps
 
 Working with an app in pending status can be useful when you are debugging it to test the AppsFlyer SDK.
@@ -600,6 +650,8 @@ Working with an app in pending status can be useful when you are debugging it to
 The status of the app as pending on the dashboard has no effect on data collection and measurement. Whether an app is pending or live on an app store, if users install and interact with it, install and in-app event data is recorded on the dashboard just the same.
 
 Once your pending app goes live, AppsFlyer will detect and automatically update its status, so you don't need to add it again. <Anchor target="_blank" href="/marketers/docs/why-is-my-app-still-pending">Learn more</Anchor> about pending apps and the optional procedure for manually refreshing status.
+
+<div id="troubleshooting" />
 
 ## Troubleshooting
 
@@ -648,6 +700,8 @@ One possible reason for this error is trying to add an Android app without a cou
 This happens because users can reinstall an app via the operating system if it previously existed on their device. Even if the app is no longer available in the App Store, users can still install it, and these installs will be counted in AppsFlyer.
 
 </Accordion>
+
+<div id="other-information" />
 
 ## Other information
 

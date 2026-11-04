@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Measure the uninstall rate for your app and determine which sources (media sources, campaigns, ad creatives, and geo) bring quality users.
 
+<div id="overview" />
+
 ## Overview
 
 To understand the value of your app users, you must analyze both install and uninstall rates. The uninstall metric can help you measure your app's performance, and understand when and why users leave your app.
+
+<div id="how-does-it-work" />
 
 ### How does it work?
 
@@ -35,9 +39,13 @@ To understand the value of your app users, you must analyze both install and uni
 3. An uninstall is recorded if the response indicates that the app was uninstalled (FCM and APNS) or no user activity was recorded for the past 270 days (FCM only).
 4. AppsFlyer attributes the uninstall to the media source that originally brought the user.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Uninstall metrics are available in the Unified dashboard and the user acquisition view.
+
+<div id="how-to-use-uninstall-data" />
 
 ## How to use uninstall data
 
@@ -48,6 +56,8 @@ The following are some examples of what you can learn from measuring uninstalls,
 <Accordion title="Compare the quality of sources">
 
 By comparing the quality of users acquired from different sources (media sources, campaigns, ad creatives, and geo), you can determine the media sources with the lowest uninstall rates, and reallocate funds to them.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -70,6 +80,8 @@ By comparing the quality of users acquired from different sources (media sources
 <Accordion title="Share uninstall data with ad networks for optimization">
 
 Sending uninstall event postbacks to the ad networks you work with is useful for optimizing user acquisition campaigns. You can send the uninstall event by [mapping af\_uninstall to your ad network](/docs/measure-uninstalls#mapping-the-uninstall-event). Once the mapping is complete, an event is sent each time a user is identified as having uninstalled the app. Ad networks can use this information to determine which users are less engaged and focus on getting more engaged users.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -97,6 +109,8 @@ Methods to exclude users include the following:
 * <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview#user-journey-report-availability">Raw-data reports:</Anchor> A manual method in which you retrieve a list of uninstalled users from the **Uninstalls** report and create an exclusion list.
 * <Anchor target="_blank" href="/marketers/docs/audiences-guide">AppsFlyer Audiences:</Anchor> An automatic method in which you define a target audience based on specific criteria (for example, users who **haven't** uninstalled your app). Users that don't meet the criteria are excluded from the audience.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -109,6 +123,8 @@ Methods to exclude users include the following:
 > This allows you to create a more exact retargeting audience. When your retargeting campaign runs, ads will only be served to users defined in your retargeting audience.
 
 </Accordion>
+
+<div id="setting-up-uninstall-measurement" />
 
 ## Setting up uninstall measurement
 
@@ -142,9 +158,13 @@ The flow for the marketer and the developer is as follows:
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## Implementation procedures
 
 Implementation requires your mobile developer to integrate a mechanism that responds to push notifications into your app. Implementation instructions vary according to the operating system.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Connect Firebase Cloud Messaging to AppsFlyer (Android)
 
@@ -190,6 +210,8 @@ Android uninstall measurement is available by configuring uninstall measurement 
    6. Click **Save**.   
       The AppsFlyer service account has been assigned the role of AppsFlyer uninstalls.
 
+      <div id="note-4" />
+
       > 📘 **Note**
       >
       > AppsFlyer uses silent push notifications solely to measure uninstalls or identify inactive users and does not use them for any other purposes.
@@ -200,6 +222,8 @@ Android uninstall measurement is available by configuring uninstall measurement 
 <div id="legacy-http" />
 
 <Accordion title="[Deprecated] Legacy HTTP">
+
+<div id="important" />
 
 > 🚧 **Important**
 >
@@ -219,6 +243,8 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### Configure uninstall measurement in AppsFlyer
 
 <Tabs>
@@ -235,6 +261,8 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
    ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
 4. Click **Test connection**.  
    The success message displays.
+
+   <div id="note-5" />
 
    > 📘 **Note**
    >
@@ -265,6 +293,8 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
 </Tab>
 </Tabs>
 
+<div id="testing-uninstall-measurement" />
+
 ## Testing uninstall measurement
 
 Once the implementation procedures are complete, you can install and then uninstall the app to test that uninstalls are recorded correctly. Uninstalls and uninstall rates are displayed on the Overview dashboard.
@@ -292,6 +322,8 @@ Keep in mind the following when testing iOS apps:
 
 * Uninstalls do not immediately appear in the AppsFlyer dashboard. Due to the Apple Push Notification service, the time it takes uninstalls to appear on the dashboard is a minimum of 9 days. AppsFlyer updates and aggregates metrics for uninstalls every 24 hours.
 
+  <div id="note-6" />
+
   > 📘 **Note**
   >
   > **Example**
@@ -306,6 +338,8 @@ Keep in mind the following when testing iOS apps:
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## Mapping the uninstall event
 
 ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
@@ -317,10 +351,14 @@ Keep in mind the following:
 * AppsFlyer can only send the postback if the event actually occurs and is recorded by AppsFlyer.
 * If you don't see uninstalls in the dashboard Overview page or in the raw-data report, this means that uninstall postbacks were not sent to the partner, even if the **af\_uninstall** event was mapped.
 
+<div id="limitations" />
+
 #### Limitations
 
 * Uninstall events are not included in in-app event postback reports.
 * All partners support the **af\_uninstall** event. If you want to map it to a partner but the event is not available in the partner's Integration tab, contact the partner directly for support.
+
+<div id="turning-off-uninstall-measurement" />
 
 ## Turning off uninstall measurement
 
@@ -339,6 +377,8 @@ If a P12 certificate is provided and validated, app uninstall measurement is ena
 </Tabs>
 
 **Note:** For an uninstall to be reported, **Enable uninstall measurement** must be on at the time the app is installed. Installs occurring when **Enable uninstall measurement** is off aren't reported.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **To turn off uninstall measurement**:
 

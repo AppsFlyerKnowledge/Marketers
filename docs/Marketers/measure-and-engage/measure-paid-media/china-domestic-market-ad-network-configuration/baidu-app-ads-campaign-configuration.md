@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Baidu App Ads (Baitong), an AppsFlyer ad network integrated partners, is one of the biggest App promotion and distribution platforms in the China domestic market, integrating the mobile traffic of App Stores (Baidu Mobile Assistant, Android Market, 91 Mobile Assistant, etc.), Baidu Mobile Search, Super App, and Baidu Affiliates.
 
+<div id="setting-up-baidu-app-ads-baitong" />
+
 ## Setting Up Baidu App Ads (Baitong)
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -47,10 +49,14 @@ Baidu App Ads configuration window includes 3 active tabs: Integration, Attribut
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -69,6 +75,8 @@ The Integration with Baidu Baitong Ads supports only the install event for Defau
 In this tab, you can create the attribution links you want to send to Baidu App Ads (Baitong) for attributing Baidu App Ads (Baitong) campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution link parameters
 
@@ -89,6 +97,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window can be attributed to Baidu App Ads（Baitong).
@@ -96,6 +106,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -126,6 +138,8 @@ Ad Revenue is not supported in the integration with this partner.
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

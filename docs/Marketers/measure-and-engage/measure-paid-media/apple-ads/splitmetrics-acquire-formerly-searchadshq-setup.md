@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** Optimize Apple Ads campaigns by using SplitMetrics Acquire. When configured, AppsFlyer sends postbacks to SplitMetrics Acquire.
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Enabling Apple Ads attribution
 
 Both advertisers and agencies can enable Attribution for Apple Ads.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -34,7 +38,11 @@ Both advertisers and agencies can enable Attribution for Apple Ads.
 * **Advertisers**: follow the instructions below on how to enable attribution for Apple Ads.
 * **Agencies**: <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
 
+<div id="setting-up-splitmetrics-acquire-on-appsflyer" />
+
 ## Setting up SplitMetrics Acquire on AppsFlyer
+
+<div id="getting-required-information-from-splitmetrics-acquire" />
 
 ### Getting required information from SplitMetrics Acquire
 
@@ -42,6 +50,8 @@ Before you start configuring SplitMetrics Acquire on AppsFlyer, obtain your **cl
 
 * For client\_id, go to your SplitMetrics Acquire dashboard, click **Integrations** > **AppsFlyer**. In the popup that opens, copy the ID.
 * For Apple  Ads Campaign Group ID: **In your Apple Ads dashboard,** get the Apple Ads Campaign Group ID parameter related to SplitMetrics Acquire. Use the screenshot that follows as a guide to locating the ID.  ![ASACGroupID.png](https://files.readme.io/a4b2aba5e7d4e0257b455b1dc44b1030a288a4c3892c0da905cdf361496041e5-360017400378.png)
+
+<div id="setting-up-campaigns-on-appsflyer" />
 
 ### Setting up campaigns on AppsFlyer
 
@@ -61,6 +71,8 @@ Before you start configuring SplitMetrics Acquire on AppsFlyer, obtain your **cl
    2. Search for and select the partner. You're directed to the partner configuration page.
    3. From the **Integration** tab, turn on **Activate partner**.
    4. Click **Save Integration**.
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### Configuring in-app event postbacks
 

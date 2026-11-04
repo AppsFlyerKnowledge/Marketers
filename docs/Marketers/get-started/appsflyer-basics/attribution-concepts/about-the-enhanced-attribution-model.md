@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **At a glance:** The Enhanced attribution model improves attribution accuracy by attributing only eligible clicks and impressions when click and impression flooding is detected on the device.
 
+<div id="what-is-the-enhanced-attribution-model" />
+
 ## What is the Enhanced attribution model?
 
 The Enhanced attribution model combats engagement flooding by only considering signals that reflect real user engagement for attribution. When AppsFlyer detects engagement patterns that indicate flooding, AppsFlyer considers eligible clicks and impressions only. As a result, attribution is based on the last eligible click, which is not necessarily the most recent click.
 
 The model works continuously in the background and applies to all relevant traffic without requiring any action from advertisers or partners.
+
+<div id="how-the-enhanced-attribution-model-helps" />
 
 ## How the Enhanced attribution model helps
 
@@ -44,6 +48,8 @@ Enhanced attribution model helps advertisers, ad networks, and partners in the f
   * Maintain consistent and fair attribution competition.
   * Reduce the effect of artificially increased engagement volumes.
 
+<div id="how-the-enhanced-attribution-model-works" />
+
 ## How the Enhanced attribution model works
 
 Here’s how it works:
@@ -51,9 +57,13 @@ Here’s how it works:
 1. AppsFlyer receives engagement records from multiple media sources, such as clicks or impressions.
 2. When AppsFlyer detects a flooding pattern during the attribution process, an additional model helps select eligible engagements.
 
+<div id="where-enhanced-attribution-data-appears-in-appsflyer-reports" />
+
 ## Where Enhanced attribution data appears in AppsFlyer reports
 
 You can view Enhanced attribution data in the following channels:
+
+<div id="raw-data-reports" />
 
 ### Raw data reports
 
@@ -61,9 +71,13 @@ You can view Enhanced attribution data in the following channels:
 
 This metric can indicate potential engagement flooding and helps advertisers understand engagement volume and source patterns. It does not represent the number of devices or users.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The metric can also be greater than zero for organic installs, as organic engagements may still enter the attribution competition prior to validation.
+
+<div id="protect360-dashboards-and-reports" />
 
 ### Protect360 dashboards and reports
 

@@ -32,9 +32,13 @@ x-zendesk:
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > AppsFlyer Smart Banner web SDK v1 was deprecated on Nov. 8th, 2023. To show Smart Banners on your website you need to upgrade to v2. <Anchor target="_blank" href="/marketers/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Learn more.</Anchor>
+
+<div id="smart-banners" />
 
 ## Smart Banners
 
@@ -88,6 +92,8 @@ Approximately 20 minutes.
 
 ---
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > Mark is a marketer working for the successful food delivery service "Feed Me".
@@ -100,9 +106,13 @@ Approximately 20 minutes.
 >
 > AppsFlyer then **attributes the click/install to Mark's defined media source and campaign**.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Use either AppsFlyer Smart Banner or iOS Safari smart app banner, but not both. Using both may cause display issues on your mobile website, and result in attribution discrepancies.
+
+<div id="setup" />
 
 ## Setup
 
@@ -114,6 +124,8 @@ Complete the following procedures to set up a Smart Banner that:
 <div id="1-website-workplace-setup" />
 
 <Accordion title="1. Website workplace setup">
+
+<div id="prepare-your-mobile-site-to-display-smart-banners-for-the-first-time" />
 
 #### Prepare your mobile site to display Smart Banners for the first time
 
@@ -127,6 +139,8 @@ Complete the following procedures to set up a Smart Banner that:
    * To add the code via other platforms, or to make changes to the code based on need (including adding parameters, deep linking, hiding the banner, or integrating PBA with Smart Banners), see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners website code implementation for developers</Anchor>.
 7. [optional] Copy **Web key**. (This key already exists as part of the code snippet.)
 8. Click **Continue**.
+
+<div id="to-create-website-workplaces-after-the-first-time" />
 
 #### To create Website Workplaces after the first time
 
@@ -188,6 +202,8 @@ Banner groups contain one or more banners. Here you can:
 9. [Recommended] Set the default attribution parameter **Channel name** to attribute all installs coming from the Smart Banner to the specified channel. This enables you to aggregate information from multiple media sources under the same channel in the **Cohort report**, **Overview dashboard**, **Retention report**, and more.
 10. <span id="2-banner-group-setup-step10"></span>[Optional] Turn on **Retargeting** if you plan to use the banner group to record re-engagements performed by users clicking on the banner. To learn more on Retargeting see the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting attribution guide</Anchor>.
 
+    <div id="important-1" />
+
     > 🚧 **Important**
     >
     > For retargeting to work, you also need to:
@@ -229,6 +245,8 @@ Banner groups contain one or more banners. Here you can:
 1. Click **Create Banner group**.
 2. [Optional] To edit the banner group again, hover over **Targeting & behavior** and click **Edit**.
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > Mark is the marketer for a food delivery service called "Feed Me". He decides to create a campaign for the app’s plum sale. Mark decides to use an SMS blast, as well as ad networks and Google for the campaign.
@@ -250,6 +268,8 @@ Banner groups contain one or more banners. Here you can:
 > * Arrive at the Feed Me app, download, and install.
 > * Get directed upon app launch to the plum sale.
 > * Are attributed to the correct media sources that led them to the Feed Me mobile site.
+
+<div id="targeting--behavior" />
 
 #### Targeting & behavior
 
@@ -302,6 +322,8 @@ The Targeting & behavior panel shows you the settings you configured for that ba
 5. After finishing and saving the new creative, the banner's status becomes active. Use the **Status** toggle to switch between **Active** and **Paused** statuses.
 6. Click **Save all** to save your work or **Save all and close** to save your work and close the banner setup page.
 
+<div id="example-2" />
+
 > 📄 **Example**
 >
 > For tips and tricks, see our <Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">Smart Banners cheat sheet</Anchor>.
@@ -324,6 +346,8 @@ Once the creative is ready, it's time to put it to the test **before** setting
 4. Click **Edit Creative** to return to the creative configuration, or click **Done** to save the creative.
 
 </Accordion>
+
+<div id="view-banner-performance" />
 
 ## View banner performance
 
@@ -377,6 +401,8 @@ You can view performance data for the past 7 days for any given banner.
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="banner-group-display-logic" />
@@ -405,6 +431,8 @@ If the answer to both questions is yes, meaning there are rules, and the user qu
 You can A/B test banners by comparing their performance in the performance dashboard. For additional attribution-related data, it's recommended to add the `af_adset` , `af_ad` or other attribution parameters (except `pid`, `c`, and `channel`) with a unique value for each banner creative or banner group. Use those parameters to compare each banner group's performance when viewing data in AppsFlyer dashboards and reports.
 
 </Accordion>
+
+<div id="faq" />
 
 ## FAQ
 
@@ -500,6 +528,8 @@ Please note that various changes to the Smart Banner might impact its compatibil
 No. Attribution data is not deleted if a smart banner is deleted.
 
 </Accordion>
+
+<div id="troubleshooting--traits-and-limitations" />
 
 ## Troubleshooting & traits and limitations
 

@@ -28,9 +28,13 @@ x-zendesk:
 
 <Embed title="[Beta] Agent Hub overview" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube.com" />
 
+<div id="about-agent-hub" />
+
 ## About Agent Hub
 
 Each agent takes on a marketing job end to end: it works through your data, reaches its findings, and delivers them where your team works. Agent Hub gives you access to a variety of AppsFlyer-built agents designed to help you optimize marketing activity and uncover growth opportunities, plus Custom Agent, which takes on a job you define yourself. Every agent operates with integrity to support your team's decision-making.
+
+<div id="agent-hub-page" />
 
 ## Agent Hub page
 
@@ -49,9 +53,13 @@ Use this tab to:
 * Manage deployed agents.
 * Monitor the latest run status from the agent card.
 
+<div id="prerequisites-and-permissions" />
+
 #### Prerequisites and permissions
 
 Some Agent Hub capabilities require additional setup, depending on the notification channels you use.
+
+<div id="slack-optional" />
 
 ##### Slack (optional)
 
@@ -82,12 +90,16 @@ Select **AppsFlyer Agent Hub** -> **Add.**
 
 * **Other roles:** Require the AI Tools capability enabled through <Anchor target="_blank" href="/marketers/docs/user-management">User Management</Anchor>.
 
+<div id="email-optional" />
+
 ##### Email (optional)
 
 * Emails can only be sent to email addresses that are connected to an AppsFlyer account.
 * Users must be subscribed to the AppsFlyer mailing list. <Anchor target="_blank" href="/marketers/docs/notifications#what-notifications-can-i-receive">See here for more information</Anchor>.
 
 Note: In each agent, you can configure up to 5 email addresses.
+
+<div id="set-up-an-agent" />
 
 #### Set up an agent
 
@@ -130,6 +142,8 @@ You can filter activity by:
 
 Note: The agent filter is based on the specific agent instance, not the agent type.
 
+<div id="view-activity-output" />
+
 #### View activity output
 
 To view activity output:
@@ -147,6 +161,8 @@ From the expanded run, you can:
 * Provide positive or negative feedback.
 * Add written feedback.
 * Click **Analyze activity** to ask AI Assistant questions about the run.
+
+<div id="analyze-activity-with-ai-assistant" />
 
 #### Analyze activity with AI Assistant
 
@@ -172,6 +188,8 @@ For example, you can ask:
 * What factors did the agent consider?
 * What factors did the agent rule out?
 
+<div id="supported-and-unsupported-questions" />
+
 ##### Supported and unsupported questions
 
 | You can ask about | You can't ask about |
@@ -180,6 +198,8 @@ For example, you can ask:
 | What data the agent used for the run | New analysis that wasn't part of the run |
 | Why findings were prioritized or ruled out | Forward-looking predictions |
 | The context and reasoning of the selected run | General optimization recommendations outside the run context |
+
+<div id="notes" />
 
 #### Notes
 
@@ -191,6 +211,8 @@ Keep the following in mind when using the **Activity** tab and **Analyze activit
 * AI Assistant answers questions about the selected run only. It doesn't perform new analysis, access data outside the run, or make predictions.
 
 </Accordion>
+
+<div id="agent-types" />
 
 ## Agent types
 
@@ -206,9 +228,13 @@ It analyzes the data, executes the specified task, and delivers the requested re
 
 You brief it the way you'd brief an analyst on your team, and it works the same way: it confirms what it understood, shows you how it plans to approach the job and how it defines each term, and only runs once you've agreed.
 
+<div id="create-a-custom-agent" />
+
 #### Create a Custom Agent
 
 Three steps: define the agent, review the plan, then configure and deploy.
+
+<div id="step-1-define-the-agent" />
 
 ##### Step 1: Define the agent
 
@@ -218,6 +244,8 @@ Three steps: define the agent, review the plan, then configure and deploy.
 4. (Optional) Set **Geo** and **Media source** filters. Leave them empty to include everything.
 5. In **Task**, describe the job, or click a ready-to-use prompt and edit it to suit your needs.
 6. Click **Generate plan**.
+
+<div id="step-2-review-the-agent-plan" />
 
 ##### Step 2: Review the agent plan
 
@@ -235,6 +263,8 @@ From here:
 * **Edit** changes any field, then **Save changes**.
 * **Start over** returns you to the task.
 * **Accept plan** moves you on.
+
+<div id="step-3-configure-and-deploy" />
 
 ##### Step 3: Configure and deploy
 
@@ -287,6 +317,8 @@ Aggregated data is in USD and your account currency. Cohorted aggregated data ha
 * When there's no data, the agent shows 0, not N/A.
 * "First visits" and "re-visits" are available only for web apps.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Discrepancies can occur between raw event figures and dashboard data. Event-level figures (raw data) and aggregated (dashboard) figures won't always match; small gaps between the two are expected. Aggregated figures should match My Dashboards for the same app and dates.
@@ -319,6 +351,8 @@ Completed runs appear in **Activity** with the same content sent to Slack or ema
 If a run comes back empty or off-target, read the reasoning before changing the task. In [Analyze activity](#analyze-activity-with-ai-assistant), ask what data the agent used, why it reached that result, and what to change in the plan. Rewriting the task blind usually produces a different wrong answer. Then edit the plan or task and run the agent again.
 
 If the reasoning also comes back empty, you might have requested data that doesn't yet exist. See **Limitations** above, revise the prompt, and try again.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -513,6 +547,8 @@ Keywords that are on target or have no recommendation yet are listed at the end.
 **Set up. To deploy the agent:**
 
 1. In **Cost Settings**, connect Apple Ads with the account that runs your keywords.
+
+   <div id="note-2" />
 
    > 📘 **Note**
    >

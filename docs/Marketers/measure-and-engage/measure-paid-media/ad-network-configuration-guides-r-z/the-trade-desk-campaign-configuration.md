@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** The Trade Desk, an AppsFlyer ad network integrated partner, uses its enhanced mobile advertising solution to cultivate strategic, scalable, and smart campaigns to meet the needs of cross-device users. The Trade Desk offers click-based mobile attribution, view-through mobile attribution, and click-based retargeting, all of which can be recorded through AppsFlyer.
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## Setting up The Trade Desk (TTD)
 
 Follow these steps to enable AppsFlyer campaign measurement.
@@ -99,6 +101,8 @@ In this step, you'll add the click and impression trackers that were created in 
 
 </Accordion>
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If you've chosen for conversions to be attributed by TTD (in [Step 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), you can edit the attribution windows:
@@ -109,6 +113,8 @@ In this step, you'll add the click and impression trackers that were created in 
 >    * **De-duplication Windows:** The number of conversions you can see in a certain period of time.
 >    * **Campaign Attribution Windows:** The period of time from ad exposure to the conversion.
 > 4. Click **SAVE**.
+
+<div id="integrating-ttd-with-appsflyer" />
 
 ## Integrating TTD with AppsFlyer
 
@@ -132,14 +138,20 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with TTD.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Advanced Privacy
 
 For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Enable Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is on in the App Settings, **Enable Advanced Privacy** is turned on and locked by default. 
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -153,6 +165,8 @@ The Trade Desk connects with AppsFlyer via a unique network ID. If you don't alr
 
 Turn on **Enable View-Through attribution** to attribute view-through installs from The Trade Desk. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -162,9 +176,13 @@ Send automatic postbacks to The Trade Desk following user installs and re-engage
 * **This partner only**: for events coming only from users attributed to The Trade Desk.
 * **All media sources including organic**: to have your entire user base available to be reported to The Trade Desks.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > As an all-installs network, The Trade Desk prefers to receive postbacks for all new installs of your app from any source, and they recommend selecting **All media sources including organic** to send all install postbacks to The Trade Desk.
+
+<div id="in-app-events-settings" />
 
 #### In-app events settings
 
@@ -197,6 +215,8 @@ Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, thi
 
 Generate and save attribution links and send them to TTD for attributing specific campaigns, ad sets, or single ads - both for UA and retargeting campaigns. You can use either a single-platform link or <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink</Anchor>.
 
+<div id="attribution-link-parameters" />
+
 #### Attribution link parameters
 
 Adding parameters to the attribution link enables you to perform thorough drill-down analyses. Parameters that are already defined on the attribution link can be edited by adding them and their new values here. When saving the attribution link, all the parameters configured in this tab are saved.
@@ -204,6 +224,8 @@ Adding parameters to the attribution link enables you to perform thorough drill-
 Select which parameters you want to add to the attribution link.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### Default parameters
 
@@ -217,6 +239,8 @@ Select which parameters you want to add to the attribution link.
 
 You can add more parameters for the attribution link. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">setting up the attribution link</Anchor> and about attribution link <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">structure and parameters</Anchor>.
 
+<div id="parameters-for-measuring-ctv" />
+
 #### Parameters for measuring CTV
 
 You can have CTV traffic measured with AppsFlyer by adding the following parameters and values:
@@ -225,6 +249,8 @@ You can have CTV traffic measured with AppsFlyer by adding the following paramet
 | --- | --- | --- |
 | redirect | false |  |
 | af\_xplatform\_vt\_lookback | 1h-72h | Any value between 1-72 hours can be entered |
+
+<div id="click-through-attribution" />
 
 #### Click-through attribution
 
@@ -239,6 +265,8 @@ Attribution link parameter: af\_click\_lookback
 Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window</Anchor>.
 
 **Click-through attribution link:** Contains all the parameters you included in the attribution link setup. You can copy the link and send it to the partner to be activated when your leads click a corresponding ad.
+
+<div id="view-through-attribution" />
 
 #### View-through attribution
 
@@ -281,6 +309,8 @@ In this tab, you can select the permissions to grant The Trade Desk, whether the
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 #### **Ad network permissions**
 

@@ -28,6 +28,8 @@ x-zendesk:
 
 > **At a glance:** Web Performance Measurement enables you to identify which media sources and campaigns drive users to your website and measure how those visits influence downstream actions over time. It enables you to capture and attribute user interactions end-to-end, supporting both user acquisition (first-time visitors) and re-engagement, from the initial visit through lifetime value measurement.
 
+<div id="about-web-performance-measurement" />
+
 ## About Web Performance Measurement
 
 Web attribution is the process of identifying which media sources and campaigns drive users to visit a website and influence their subsequent actions.
@@ -36,9 +38,13 @@ A web visit represents both a browsing activity and an ad engagement that occurr
 
 The purpose of this article is to outline the end-to-end Web Performance Measurement process, explaining how user interactions are captured, identified, and measured from the initial website visit through to lifetime value. This process enables the engine to support both user acquisition, for identifying and attributing first-time visitors, and retargeting or re-engagement, for measuring the impact of campaigns specifically aimed at returning users.
 
+<div id="if-you-use-people-based-attribution-pba" />
+
 #### If you use People-Based Attribution (PBA)
 
 If you currently use <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba">People-Based Attribution (PBA)</Anchor>, consider switching to Web Performance Measurement for more granular attribution and additional signals.
+
+<div id="the-web-performance-measurement-flow" />
 
 ### The Web Performance Measurement flow
 
@@ -53,6 +59,8 @@ The Web Performance Measurement flow follows a structured sequence of steps that
 7. [Pre-acquisition period](#7-preacquisition-period): Attributes intermediate events that occur between the first visit and the UA event.
 8. [Re-engagement and re-acquisition](#8-reengagement-and-reacquisition): Attributes returning users (revisits) based on inactivity windows and determine whether the return is a re-engagement or re-acquisition.
 9. [LTV measurement](#9-ltv-measurement): Attributes ongoing events and revenue to measure the user’s lifetime value, governed by the Attribution Window.
+
+<div id="the-web-performance-measurement-process---step-by-step" />
 
 ## The Web Performance Measurement process - step by step
 

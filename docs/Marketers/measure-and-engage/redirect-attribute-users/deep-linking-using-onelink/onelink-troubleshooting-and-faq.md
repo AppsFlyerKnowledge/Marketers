@@ -23,9 +23,15 @@ x-zendesk:
 ---
 > **At a glance:** Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues.
 
+<div id="onelink-troubleshooting-guide" />
+
 ## OneLink troubleshooting guide
 
+<div id="onelink-frequently-asked-questions" />
+
 ## OneLink frequently asked questions
+
+<div id="onelink-template-faq" />
 
 ### OneLink template FAQ
 
@@ -34,6 +40,8 @@ x-zendesk:
 **Universal Links:** Required for over 98% of iOS users
 
 **App Links:** For Android users with version 6.0+. **Note**: Samsung OS can't open apps using Android App Links.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -45,6 +53,8 @@ x-zendesk:
 
 * For Android users with versions prior to 6.0 (less than 15% of Android users)
 * As a fallback for when Universal Links and App Links don't open the app, either because they don't work, or aren't set up. **Note:** Using URI schemes as a fallback for Universal Links is subject to iOS-based limitations. <Anchor target="_blank" href="/marketers/docs/uri-scheme-fallback-for-ios">Learn more</Anchor>.
+
+<div id="deep-linking" />
 
 #### Deep linking
 
@@ -173,6 +183,8 @@ In the OneLink URL or template, you can redirect desktop users (Windows or Mac) 
 
 **Note:** If your link contains `af_web_dp`, AppsFlyer does not register a click when it comes from a desktop.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > Try redirecting desktop users to a web URL that contains a dedicated web form that sends a OneLink URL to the mobile device of the desktop user via SMS or email. Learn more about this option as part of the OneLink Smart Script solution.
@@ -203,6 +215,8 @@ When a OneLink link is clicked on a desktop, there is no device platform to matc
 * If only one app is associated with the template, the click is recorded for that app.
 
 </Accordion>
+
+<div id="onelink-link-faq" />
 
 ### OneLink link FAQ
 
@@ -270,6 +284,8 @@ There are several possible reasons for this:
 
 Two solutions for improving the user experience are Fallback URLs and forced deep linking.
 
+<div id="fallback-urls" />
+
 #### Fallback URLs
 
 Fallback URLs send users to specified web pages if opening the app or deep linking fails for any reason. **Caution!** They also send users without your app installed to the fallback URL instead of to the correct app store. So, be sure to only use this option if you're retargeting users with your app already installed.
@@ -280,6 +296,8 @@ To implement a fallback URL, in the OneLink template or custom link settings, se
 
 Using this setting adds `af_ios_url` and `af_android_url` as destination parameters for the fallback, which will cause iOS users to be redirected to the page specified by `af_ios_url` and Android users to be redirected to the page specified by `af_android_url`.
 
+<div id="tip-1" />
+
 > 👍 **Tip**
 >
 > Consider, for example, the following OneLink URL:
@@ -289,9 +307,13 @@ Using this setting adds `af_ios_url` and `af_android_url` as destination paramet
 > * iOS: www.yoursite.com/ios-bonus
 > * Android: www.yoursite.com/android-bonus
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > When redirection occurs, OneLink URL parameters pass through to the destination page specified by af\_ios\_url or af\_android\_url. To prevent this behavior, add the parameter af\_param\_forwarding=false to the OneLink.
+
+<div id="forced-deep-linking" />
 
 #### Forced deep linking
 
@@ -330,6 +352,8 @@ Yes. However, on Android, when a user clicks a OneLink link on a Brave browser, 
 Turning on **Enable cost per install** (under **Advanced parameters**) allows you to apply a specific CPI value to each install coming from the link.
 
 Select the cost currency and then a **numeric ONLY value** (with up to 4 digits after the decimal point) representing the CPI. This adds the parameters af\_cost\_currency and af\_cost\_value to the link.
+
+<div id="tip-2" />
 
 > 👍 **Tip**
 >
@@ -450,6 +474,8 @@ The following links are functionally identical and work the same everywhere:
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### OneLink parameter FAQ
 
 <Accordion title="What parameters are mandatory for OneLink custom links?">
@@ -463,6 +489,8 @@ Only the media source (**pid**) parameter is mandatory.
 **Yes,** any parameter can be appended to the short URL.
 
 **Important!** Parameters appended to the short URL do not override the parameters inside the link.
+
+<div id="tip-3" />
 
 > 👍 **Tip**
 >
@@ -516,6 +544,8 @@ For parsed data, use subscriber parameters `af_sub1-5`, each of which has a sepa
 
 </Accordion>
 
+<div id="integrated-partner-faq" />
+
 ### Integrated partner FAQ
 
 <Accordion title="Can I use OneLink in social apps (unpaid)?">
@@ -534,6 +564,8 @@ The following table summarizes when OneLinks can be used in today’s popular so
 
 **Yes,** but note that OneLink is mainly used with owned media, not with ad networks. This is because ad networks usually advertise in apps (which means they know the user's platform, device ID, and so on), app and platform-specific attribution links suffice, so using OneLink isn't necessary. However, for cases in which ad networks don't know the user platform in advance (for example, when they run email or SMS campaigns themselves), OneLink can be the solution.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > When you use OneLink with ad networks, you must use the OneLink long URL.
@@ -543,6 +575,8 @@ The following table summarizes when OneLinks can be used in today’s popular so
 * Follow the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">ad network attribution link instructions</Anchor>, and select **Use OneLink** when prompted.
 
 Once all the parameters for Android and iOS are added correctly, when the OneLink custom link is clicked and the user is redirected to the right platform, the required parameters are sent to the network within a postback after the user installs.
+
+<div id="tip-4" />
 
 > 👍 **Tip**
 >
@@ -619,6 +653,8 @@ When a OneLink custom link is embedded behind the video in a Meta Web Ads paid c
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### Testing FAQ
 
 <Accordion title="How can I A/B test the Social app landing page?">
@@ -653,6 +689,8 @@ If you see an app selection dialog when testing your OneLinks, make sure to <Anc
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### Deep linking FAQ
 
 <Accordion title="What deep linking methods should be implemented?">
@@ -672,6 +710,8 @@ After the app is launched using any of these methods, the AppsFlyer SDK supplies
 **The best practice for adding custom parameters is via the custom link setup page**.
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### iOS 14 FAQ
 

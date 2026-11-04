@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Dashboard view of SDK, operating system (iOS, Android) adoption rates, and iOS ATT consent metrics.
 
+<div id="version-adoption-and-att-consent-dashboard" />
+
 ## Version adoption and ATT consent dashboard
 
 Data in the dashboard is derived from the af\_open (session) event and isn't related to install events. The dashboard has the following main sections: 
@@ -71,6 +73,8 @@ The <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-de
 * Chart metrics are calculated using unique user app-open events on a given date. Meaning, if a user didn't open the app on a given date that user isn't counted in the metrics of that date.
 * iOS and ATT metrics only include the <Anchor target="_blank" href="/marketers/docs/att-implications-ios-14-and-deprecation-of-lat#att-values-defined-by-apple">ATT values defined by Apple</Anchor>; not additional values defined by AppsFlyer.
 * Consent rate metrics are calculated using the formula: Authorized / (Authorized + Denied) x 100
+
+<div id="att-and-ios-adoption-metrics-for-ios-apps" />
 
 #### ATT and iOS adoption metrics for iOS apps
 

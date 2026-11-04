@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** vivo Ads is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-vivo-ads" />
+
 ## Setting Up vivo Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,14 +46,20 @@ vivo Ads configuration window includes 2 active tabs: Integration and Attributio
 
 The integration with vivo Ads only supports the install event in the default postback.
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="enable-view-through-attribution" />
+
 ### Enable View-Through attribution
 
 Toggle this to ON if you want to attribute view-through installs from vivo Ads. The view-through lookback slider is available on the attribution link tab (described below).
+
+<div id="default-postbacks" />
 
 ### Default Postbacks
 
@@ -66,6 +74,8 @@ Toggle this to ON if you want to attribute view-through installs from vivo Ads. 
 In this tab, you can create the attribution links you want to send to vivo Ads for attributing vivo Ads campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution Link Parameters
 
@@ -88,6 +98,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to vivo Ads.
@@ -98,9 +110,13 @@ More details about the <Anchor target="_blank" href="/marketers/docs/set-up-look
 
 ![viewthrough_en-us.png](https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png)
 
+<div id="attribution-link" />
+
 ### Attribution Link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to vivo Ads to be activated when leads click on a corresponding ad. 
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -113,6 +129,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
 [![](https://files.readme.io/786f2212e98741dfd8965c78897e35042ea016918aaa216ff8f6f99d2a46cf2a-50900339201809.png)](https://files.readme.io/786f2212e98741dfd8965c78897e35042ea016918aaa216ff8f6f99d2a46cf2a-50900339201809.png)
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 

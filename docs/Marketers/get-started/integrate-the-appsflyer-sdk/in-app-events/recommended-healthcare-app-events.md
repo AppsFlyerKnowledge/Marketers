@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these sample in-app events for your healthcare app.
 
+<div id="-healthcare" />
+
 ## <Image alt="5669_Healthcare_icon_3.png" src="https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png" width="100px" /> Healthcare
 
 Healthcare apps enable users to perform tasks such as purchasing health insurance, making appointments, and receiving medical advice. The typical events that are recorded include logins, registrations, and other general events with no personal or health information.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -39,6 +43,8 @@ Healthcare apps enable users to perform tasks such as purchasing health insuranc
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -133,6 +139,8 @@ When the user lands on the thank you page after a successful purchase
 | payment\_method\_type | Payment method used | credit card, local |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

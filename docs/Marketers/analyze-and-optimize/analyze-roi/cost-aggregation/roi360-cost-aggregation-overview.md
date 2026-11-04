@@ -29,6 +29,8 @@ x-zendesk:
 
 > **At a glance:** Learn about methods for advertisers to aggregate and view marketing cost data.
 
+<div id="cost-aggregation" />
+
 ## Cost aggregation
 
 ROI360 does the following:
@@ -43,6 +45,8 @@ The following data is available to advertisers without an ROI360 subscription:
 
 * <Anchor target="_blank" href="/marketers/docs/view-aggregated-cost-data-for-attribution-links">Cost data on the attribution link</Anchor>
 * Self-reporting network (SRN) clicks and impressions data, which you configure in the **Cost** tab of the SRN integrated partner
+
+<div id="principles-of-cost-data-aggregation" />
 
 ## Principles of cost data aggregation
 
@@ -68,6 +72,8 @@ The table at the end of this section indicates where cost data is available.
 
 For the purposes of understanding the table, the following explanations apply, unless otherwise indicated in the table remarks:
 
+<div id="cost-in-the-ua-view" />
+
 #### Cost in the UA view
 
 AppsFlyer classifies campaign cost data as user acquisition (UA) based on matching rules that vary by media source, as shown below.
@@ -77,13 +83,19 @@ AppsFlyer classifies campaign cost data as user acquisition (UA) based on matchi
 | Google Ads, DV360, Facebook, TikTok, Apple Search Ads, and Aura | AppsFlyer classifies cost as UA if it records at least one install, click, or impression within ±10 days of the install date (the date the media source reports the cost). |
 | All other media sources | AppsFlyer classifies cost as UA if it records at least one install, click, or impression on the media source's own processing date. No ±10-day window applies. |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This applies to both rows. AppsFlyer bases matches on the media source, campaign ID, and agency.
 
+<div id="cost-in-the-unified-view" />
+
 #### Cost in the Unified view
 
 The Unified view includes cost data for all campaigns of the selected app, regardless of whether installs, clicks, or impressions exist within ±10 days of the cost reporting date (install date).
+
+<div id="example" />
 
 #### Example
 
@@ -91,6 +103,8 @@ The following examples show how the ±10-day window affects where cost appears:
 
 * If a media source that uses the ±10-day window reports the cost for campaign X on March 15, and campaign X has at least one click, install, or impression between March 5 and March 25, the cost for March 15 appears in UA and in Unified.
   * If no activity exists in that time window, the cost for March 15 appears **only in Unified**. For media sources that match by processing date only, the same rule applies to March 15 itself, with no ±10-day window.
+
+<div id="cost-data-availability-and-reports-table" />
 
 #### Cost data availability and reports table
 
@@ -110,6 +124,8 @@ The following examples show how the ±10-day window affects where cost appears:
 | Push API | Raw click data (not aggregated) | Not relevant |  |
 | Raw data Pull API | Raw click data (not aggregated) | Not relevant |  |
 | Data Locker | Raw click data (not aggregated) | Not relevant | Data Locker Cohort doesn't support cost. |
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -138,6 +154,8 @@ The cost prioritization mechanism impacts aggregate data reports and dashboards.
 * If you change cost aggregation methods, the change has a retroactive impact. Historical aggregate cost data can change.
 * A change to the cost aggregation method affects agency-generated traffic the same way. This includes both transparent and non-transparent agencies.
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > **Scenario:** A media source reports cost on the attribution link, but you decide to enable the media source's Cost API.
@@ -156,6 +174,8 @@ AppsFlyer matches apps based on those associated with the campaign's clicks, imp
 
 If the app completion process results in multiple matched apps, AppsFlyer distributes the campaign cost across those apps as follows:
 
+<div id="proportional-split-by-conversions" />
+
 #### Proportional split (by conversions)
 
 If conversions (installs, reattributions, and re-engagements) exist on the reported cost date, AppsFlyer splits the cost proportionally based on each app's number of conversions.
@@ -165,9 +185,13 @@ If conversions (installs, reattributions, and re-engagements) exist on the repor
 * iOS: **$60**
 * Android: **$40**
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > The proportional (conversion-based) split applies only when the conversion granularity available in attribution exactly matches the granularity the media source reports for its cost data. When the two only partially match, AppsFlyer can't map the cost to each app's conversions, so it applies the equal split across the matched apps instead.
+
+<div id="equal-split-no-conversions" />
 
 #### Equal split (no conversions)
 
@@ -178,6 +202,8 @@ If no conversions exist on the reported cost date, AppsFlyer splits the cost equ
 * iOS: **$50**
 * Android: **$50**
 
+<div id="limitations" />
+
 #### Limitations
 
 The following limitations apply to this feature:
@@ -186,6 +212,8 @@ The following limitations apply to this feature:
 * **Google Performance Max (PMAX) campaigns**: The proportional (conversion-based) split doesn't apply. Google's API doesn't report Ad ID or Geo granularity for PMAX campaigns, so AppsFlyer splits the cost equally across the matched apps, regardless of the number of conversions per app. At the campaign level, when all platforms (iOS, Android, etc.) are selected in the dashboard, the total cost still matches Google's reported cost.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -225,6 +253,8 @@ To avoid display anomalies, make sure that:
 **Why do I see cost data with no installs?** This occurs when a media source provides cost at a higher level in the hierarchy (for example, the campaign level) but provides performance information (clicks and installs) at a lower level in the advertising hierarchy (for example, the ad adset level).
 
 AppsFlyer completes the cost data for missing dimensions from an upper-level hierarchy. This guarantees a full view of the cost data at any level and minimizes internal discrepancies.
+
+<div id="example-2" />
 
 > 📄 **Example**
 >

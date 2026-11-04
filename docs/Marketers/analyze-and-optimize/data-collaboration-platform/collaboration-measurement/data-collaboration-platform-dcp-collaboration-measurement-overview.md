@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about collaboration measurement, its basic concepts, and data flow.
 
+<div id="the-three-data-sources-of-measurement" />
+
 ## The three data sources of measurement
 
 The DCP measurement model attributes conversion events to engagement events occurring in a collaboration context. This process requires data from three key data sources: conversions, engagements, and campaign mapping. Each source plays a critical role in the attribution flow.
@@ -91,6 +93,8 @@ The campaign mapping information is provided to AppsFlyer as a custom data sourc
 
 </Accordion>
 
+<div id="on-site-vs-off-site-campaigns" />
+
 ## On-site vs. Off-site campaigns
 
 DCP measures campaigns differently based on where they run — either on a collaborator’s owned site (on-site) or on the media partner platform (off-site). These differences affect how audiences are reached, how data is collected, and how attribution is performed.
@@ -128,6 +132,8 @@ Combined campaigns involve user engagements that occur both on-site and off-site
 
 </Accordion>
 
+<div id="the-dcp-measurement-process" />
+
 ## The DCP measurement process
 
 The DCP measurement process defines how conversion records from SDK in-app events and custom source files are validated, normalized, and matched to campaign engagements across [on-site and off-site campaigns](https://www.notion.so/Collaboration-measurement-Overview-255b7b13af5f80fa83d2dc77e337c960?pvs=21).
@@ -145,6 +151,8 @@ The on-site measurement flow processes conversion and engagement data originatin
 
 Both event types are normalized into a unified structure and processed through the same attribution engine.
 
+<div id="1-configure-measurement-sources" />
+
 ### 1. Configure measurement sources
 
 Collaborators configure the DCP online measurement process:
@@ -152,12 +160,16 @@ Collaborators configure the DCP online measurement process:
 * **In-app events:** Collaborators identify which in-app events (e.g., purchase, signup) should be measured as conversions or engagements. These events must already be collected via the AppsFlyer SDK, and the app and event names must be explicitly selected in the DCP configuration.
 * **Custom source event files:** Collaborators configure access to external data files (e.g., from BigQuery, S3, or Snowflake) and map key fields like user\_id, campaign\_id, and SKU to the DCP schema to support attribution.
 
+<div id="2-prepare-and-map-conversion-data" />
+
 ### 2. Prepare and map conversion data
 
 Conversion events include SKUs and user identifiers that DCP uses to determine campaign-triggered activity.
 
 * DCP maps the campaign mapping data source with the SKUs found in the conversion events to identify conversions triggered by the measured campaign.
 * Conversions that cannot be matched to any campaign are marked as **organic**.
+
+<div id="3-link-conversions-to-engagements" />
 
 ### 3. Link conversions to engagements
 
@@ -168,6 +180,8 @@ DCP links matched conversions to engagements using the following criteria:
 
 This results in attributed conversion records enriched with both campaign and engagement metadata.
 
+<div id="4-split-multi-sku-conversions" />
+
 ### 4. Split multi-SKU conversions
 
 If a conversion event includes multiple SKUs:
@@ -175,11 +189,15 @@ If a conversion event includes multiple SKUs:
 * DCP splits the record into multiple **single-SKU** records.
 * Each record reflects attribution for a single **conversion target**.
 
+<div id="5-filter-non-target-skus" />
+
 ### 5. Filter non-target SKUs
 
 To ensure only relevant conversions are retained:
 
 * DCP filters out records whose SKUs are not defined as conversion targets for the associated campaign.
+
+<div id="6-deduplicate-conversion-events" />
 
 ### 6. Deduplicate conversion events
 
@@ -187,6 +205,8 @@ Before attribution, DCP removes duplicates:
 
 * Duplicate records from the same custom source (e.g., repeated uploads) are discarded.
 * If a matching in-app event (IAE) exists, it overrides the custom source record.
+
+<div id="7-apply-attribution-logic" />
 
 ### 7. Apply attribution logic
 
@@ -196,6 +216,8 @@ DCP applies AppsFlyer’s last-touch attribution model with the following rules:
 * **One engagement linked to multiple conversions**: Only the **first** conversion is attributed to the engagement; additional conversions remain unattributed.
 
 > For more details, see Attribution method priorities (Attribution waterfall).
+
+<div id="8-output-attributed-conversion-dataset" />
 
 ### 8. Output: Attributed conversion dataset
 
@@ -214,6 +236,8 @@ The final output includes:
 
 **Off-site conversion events** are supplied by collaborators through **custom source files** and must include the necessary identifiers for attribution, such as Google click ID (`gclid`) or Facebook click ID (`fbclid`). These events are shared with the external platforms like Google and Meta, which match the data against their campaign records and return **enriched metadata**, including campaign, adset, and creative identifiers.
 
+<div id="1-prepare-conversion-data" />
+
 ### 1. Prepare Conversion Data
 
 Conversion records are standardized based on the collaboration setup:
@@ -221,9 +245,13 @@ Conversion records are standardized based on the collaboration setup:
 * Collaborators map custom fields to a unified conversion DCP schema.
 * Google Ads and Meta Ads require specific fields; validation rules ensure mappings meet each partner’s standards before continuing.
 
+<div id="2-deduplicate-conversion-events" />
+
 ### 2. Deduplicate Conversion Events
 
 Before attribution, DCP removes duplicate records from the same custom source (e.g., repeated uploads) are discarded.
+
+<div id="3-filter-for-sharing-eligibility" />
 
 ### 3. Filter for Sharing Eligibility
 
@@ -237,12 +265,16 @@ DCP checks if off-site conversions meet the criteria for sharing:
 
 Conversions failing any criteria are excluded from partner sharing.
 
+<div id="4-filter-according-to-last-touch-attribution" />
+
 ### 4. Filter according to Last-Touch Attribution
 
 Attribution is assigned based on the most recent touchpoint:
 
 * If a valid Google or Meta click ID is more recent, attribution goes to that partner and is shared with that partner only.
 * If both click IDs exist on the conversion, the most recent wins.
+
+<div id="5-share-with-google-and-meta" />
 
 ### 5. Share with Google and Meta
 
@@ -252,6 +284,8 @@ Eligible conversions are shared securely via partner APIs:
 * **Google:** Offline Conversion API (OCI)
 
 Each conversion is sent to only one partner. Collaborators must configure the destination account (Meta Dataset ID or Google Conversion Action ID).
+
+<div id="6-google-and-meta-response-enrichment" />
 
 ### 6. Google and Meta response enrichment
 
@@ -263,6 +297,8 @@ Google and Meta return enriched attribution data via their Insights APIs, includ
 * Creative ID
 
 AppsFlyer performs attribution based on the enriched records.
+
+<div id="7-output-attributed-conversion-dataset" />
 
 ### 7. Output: Attributed conversion dataset
 
@@ -287,12 +323,16 @@ The DCP off-site and on-site attribution flow deduplicates, attributes, enriches
 
 [<Image alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)
 
+<div id="1-on-site-and-off-site-record-processing-is-performed" />
+
 ### 1. On-site and off-site record processing is performed
 
 Conversion records are standardized based on the collaboration setup:
 
 * On-site processing up to and including step 6 in on-site attribution.
 * Off-site processing up to and including step 4 in off-site attribution.
+
+<div id="2-apply-last-touch-attribution" />
 
 ### 2. Apply Last-Touch Attribution
 
@@ -301,6 +341,8 @@ Attribution is assigned based on the most recent touchpoint:
 * If a CMN (on-site) event is most recent, the conversion is attributed to CMN and not shared with Meta or Google.
 * If a valid Google or Meta click ID is more recent, attribution goes to that partner and is shared with that partner only.
 * If both click IDs exist on the conversion, the most recent wins.
+
+<div id="3-share-with-google-and-meta" />
 
 ### 3. Share with Google and Meta
 
@@ -311,6 +353,8 @@ Eligible conversions are shared securely via partner APIs:
 
 Each conversion is sent to only one partner. Advertisers must configure the destination account (Meta Dataset ID or Google Conversion Action ID).
 
+<div id="4-off-site-response-enrichment" />
+
 ### 4. Off-site response enrichment
 
 Google and Meta return enriched attribution data via their Insights APIs, including:
@@ -319,6 +363,8 @@ Google and Meta return enriched attribution data via their Insights APIs, includ
 * Ad Set ID
 * Ad ID
 * Creative ID
+
+<div id="5-on-site-and-off-site-conversion-merge" />
 
 ### 5. On-site and off-site conversion merge
 
@@ -329,6 +375,8 @@ DCP merges these Off-site conversions with On-site conversions into a final data
 * Ready for dashboards, exports, and performance analytics
 
 </Accordion>
+
+<div id="set-up-collaboration-measurement" />
 
 ## Set up collaboration measurement
 

@@ -22,13 +22,19 @@ x-zendesk:
 ---
 > **At a glance:** Migrate from Firebase Dynamic Links to AppsFlyer OneLink using our step-by-step guide.
 
+<div id="" />
+
 ## ![53375 Firebase migration KB image.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
+
+<div id="about-the-migration" />
 
 ## About the migration
 
 Google’s <Anchor target="_blank" href="https://firebase.google.com/docs/dynamic-links">Firebase Dynamic Links</Anchor> will be deprecated on August 25, 2025. Effective on this date, all links served by Firebase Dynamic Links (both hosted on custom domains and page.link subdomains) will stop working, and new link creation will be disabled. If you use Firebase Dynamic Links, it's essential to take proactive steps as soon as possible to migrate your links elsewhere to prevent disruptions to user journeys from your campaigns.
 
 AppsFlyer OneLink enables you to easily create links with attribution, redirection, and deep linking capabilities on owned or paid media, regardless of device, operating system, channel, or platform. Partner with AppsFlyer to create personalized, contextual user journeys that drive users to your app for maximum conversion and revenue. Follow the instructions below to get started migrating your Firebase Dynamic Links to AppsFlyer.
+
+<div id="migrate-from-firebase-to-appsflyer" />
 
 ## Migrate from Firebase to AppsFlyer
 
@@ -89,6 +95,8 @@ The AppsFlyer SDK integrated into the app is the link between the app and the Ap
 
 Integrate AppsFlyer SDK in your app using the steps below.
 
+<div id="appsflyer-sdk-integration-steps" />
+
 #### AppsFlyer SDK integration steps
 
 1. Integrate the AppsFlyer SDK into the app.  
@@ -125,6 +133,8 @@ The table below lists all of Firebase's parameters and the corresponding AppsFly
 
 Use this table as a reference for all the parameters you currently use when you migrate to AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If a Firebase parameter isn't listed, it is because AppsFlyer covers this in the OneLink template setup without you needing to put a parameter in your links.
@@ -154,6 +164,8 @@ Use the following table to determine which method best works for your use.
 |  | <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors">Smart Script</Anchor> | If you would like to construct a long link dynamically in a web page for a web-to-app experience |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

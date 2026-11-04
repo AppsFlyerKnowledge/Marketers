@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to measure your campaigns with WeChat on AppsFlyer.
 
+<div id="introduction" />
+
 ## Introduction
 
 WeChat, one of AppsFlyer's integrated partners, is a Chinese multi-purpose messaging, social media and mobile payment app developed by Tencent.
 
 To configure your campaigns with WeChat, follow the steps below.
+
+<div id="setting-up-your-campaign-on-wechat" />
 
 ## Setting up your campaign on WeChat
 
@@ -55,6 +59,8 @@ Once you have entered this info, confirm it by clicking the highlighted button. 
 
 Copy the keys and use them when you configure the campaign on AppsFlyer.
 
+<div id="setting-up-wechat-campaign-as-an-agency" />
+
 ### Setting up wechat campaign as an agency
 
 Agencies have different account types on WeChat. Depending on the account type, some agencies can and some cannot create conversion targets.
@@ -62,6 +68,8 @@ Agencies have different account types on WeChat. Depending on the account type, 
 If your account allows you to create a conversion target, you can proceed following the instructions above.
 
 If you’re not allowed to create a conversion target, you can see on WeChat a target created by another account that manages the same app. In this case, ask the advertiser to provide you with the *encrypt \_key* and the *sign\_key* and use them to configure the campaign on AppsFlyer.
+
+<div id="setting-up-wechat-on-appsflyer" />
 
 ## Setting up wechat on AppsFlyer
 
@@ -85,14 +93,20 @@ WeChat's configuration window includes 4 tabs: Integration, Attribution link, Da
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Wechat prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to WeChat.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -108,6 +122,8 @@ If you don't already have the Sign ID, WeChat App ID and Encrypt Key you must ob
 
 <Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to WeChat following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
@@ -116,6 +132,8 @@ AppsFlyer can send automatic postbacks to WeChat following user installs and re-
 
 Select **Only events** **attributed to this partner** for events coming only from users attributed to Wechat.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to WeChat.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -149,6 +167,8 @@ In this tab, you can create the attribution links you want to send to WeChat for
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -170,6 +190,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to WeChat.
@@ -179,6 +201,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 [![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 

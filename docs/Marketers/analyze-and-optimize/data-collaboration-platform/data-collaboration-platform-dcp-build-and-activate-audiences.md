@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Build high-value audiences in DCP collaborations using shared data and activate them on media partner sites or cloud services for maximum campaign impact.
 
+<div id="about-dcp-audiences" />
+
 ## About DCP audiences
 
 Build audiences in a DCP collaboration by combining datasets to create enriched audience segments and reach specific consumer groups. Audiences can be based on one collaborator's data or on intersecting users across both collaborators' datasets, based on the permissions defined by the data source owner. After an audience is built, it can be sent to media partners for activation or to a cloud storage bucket.
+
+<div id="build-an-audience" />
 
 ## Build an audience
 
@@ -32,6 +36,8 @@ The following tools are available for building your audiences:
 
 * [Visual audience builder](/docs/data-collaboration-platform-dcp-build-and-activate-audiences#visual-audience-builder) - The visual audience builder is a user-friendly tool that allows non-technical users to create audience segments without needing SQL skills. It allows for advanced audience segmentation using a graphical interface.
 * [SQL audience builder](#sql-audience-builder) (requires SQL expertise) - An SQL query that allows querying the data without restrictions. Requires SQL expertise.
+
+<div id="key-features" />
 
 #### Key features
 
@@ -49,6 +55,8 @@ Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-pl
 
 **Follow the steps below to build your audiences using the Visual Audience Builder:**
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Make sure you have the Build audiences <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">permission</Anchor> to create an audience.
@@ -65,6 +73,8 @@ Learn how to <Anchor target="_blank" href="/marketers/docs/data-collaboration-pl
    <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. Proceed with the **Audience builder** walkthrough steps below:
 
+<div id="step-1-details-and-sources" />
+
 #### Step 1: Details and sources
 
 The audience can be created using data from a single collaborator or by merging one source from each collaborator to enable a combined data source.
@@ -75,6 +85,8 @@ The audience can be created using data from a single collaborator or by merging 
 2. **Select sources:** Select a source from the dropdown list:
    * For a one-sided collaboration: select either your own source or your collaborator's source.
    * For a two-sided collaboration: select one of your own sources and one of your collaborator's sources.
+
+     <div id="note-1" />
 
      > 📘 **Note**
      >
@@ -91,6 +103,8 @@ The audience can be created using data from a single collaborator or by merging 
      <Image alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. Click **Next**.
 
+<div id="step-2-define-the-audience" />
+
 #### Step 2: Define the audience
 
 After the data sources are selected, this step involves choosing which attributes and values to include in your audience.
@@ -103,6 +117,8 @@ After the data sources are selected, this step involves choosing which attribute
    * **Text attributes** can be filtered with the operators:  
      Equals or Non-equals
 
+     <div id="note-2" />
+
      > 📘 **Note**
      >
      > * If an attribute isn't selected, all the attributes are included by default.
@@ -114,6 +130,8 @@ After the data sources are selected, this step involves choosing which attribute
 5. Continue with the next step [Send the audience](#send-an-audience-for-activation) to activate the audience.
 
 <Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+
+<div id="summary-right-side-preview-pane" />
 
 #### Summary (Right-side preview pane)
 
@@ -167,9 +185,13 @@ The Estimated audience size reflects the expected range of unique users that mat
 
 ![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > The activated audience on the media partner side may be smaller than the audience you send due to differing match rates by media partners.
+
+<div id="working-with-transactional-data-sources" />
 
 #### Working with transactional data sources
 
@@ -192,6 +214,8 @@ To use transactional data for audience creation, you must first aggregate it int
 
 **Follow the steps below to build your audience using the SQL audience builder:**
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > Make sure you have the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">Build audiences</Anchor> permission to create an audience.
@@ -207,14 +231,20 @@ To use transactional data for audience creation, you must first aggregate it int
    <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. Proceed with the **Audience builder** walkthrough steps:
 
+<div id="set-details" />
+
 #### Set details
 
 Name the audience, and click **Next**.
+
+<div id="build-query" />
 
 #### Build query
 
 1. Click the editor to open the [SQL builder](#sql-audience-builder).
 2. Write your SQL query to build your audience. You can use joined or one-sided sources.
+
+<div id="note-5" />
 
 > 📘 **Note**
 >
@@ -223,6 +253,8 @@ Name the audience, and click **Next**.
 3. Click **Test** and review the query results (audience sample) shown beneath the query statement.
 4. Click **Continue** and then **Next** to proceed with the next step of the **Audience builder** walkthrough, or **Save as draft** and resume later.
 5. Continue to [Send the audience](#send-an-audience-for-activation).
+
+<div id="the-sql-audience-builder" />
 
 #### The SQL audience builder
 
@@ -234,6 +266,8 @@ Use the SQL builder to query the data and create an audience. The following tabl
 | <span id="topmiddle-section-text-editor"></span>Top-middle section (query editor) | The query editor for writing your SQL statements. |
 | <span id="bottommiddle-section-context-panel"></span>Bottom-middle section (context panel) | This section dynamically shows details based on the selected object from the left pane:<ul><li>**When selecting a source:** Shows the column names ("Field name") and their corresponding types ("Type").</li><li>**When a column is selected:** Shows the column values ("Distinct values") and the row count for each value ("Count").</li><li>**Following query execution:** Shows a sample of the query results.<br />**Note:** As a privacy measure, the results table doesn't display hashed values, such as emails and IDs. These values are shown as "Restricted".</li></ul> |
 | <span id="right-pane"></span>Right pane | This section dynamically shows details based on the selected object:<ul><li>**When selecting a source:** Shows the permissions granted for the source.</li><li>**While writing the SQL query:**<ul><li>Shows the query validity status on the top right of the page. This may include any of the following statuses:</li><li>**Ready to run:** No issues found. You can test the query and proceed to the next step.</li><li>**Syntax error:** An error in syntax was detected along with guidance on resolving it.</li><li>**Permission error:** Indicates a lack of required permissions, with a tooltip detailing which <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source">access rights are provided for the source</Anchor>.</li><li>Shows a **Test** button on the top right of the page. Once you've completed writing your query, you must test it to confirm the accuracy of the intended audience.<br />Click **Test** to test your query and examine the results.</li></ul></li></ul> |
+
+<div id="transactional-data-in-sql-queries" />
 
 #### Transactional data in SQL queries
 
@@ -256,12 +290,16 @@ When working with transactional data sources in the SQL Builder, the following q
 
 </Accordion>
 
+<div id="send-an-audience-for-activation" />
+
 ## Send an audience for activation
 
 After an audience is built, activate it where it can drive results. Select a destination, such as media partners for campaign targeting or a cloud storage bucket for downstream use, and DCP refreshes and delivers the audience daily based on the latest source data and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">permissions</Anchor>.
 
 * [**Connect an audience to media partners**](#connect-an-audience-to-media-partners) - Media partner platforms include Meta Ads, Google Ads, and many more. Connect your audience to media partners when you want to run paid campaigns, remarketing, or look-alike expansion.
 * [**Export an audience to cloud storage**](#export-to-cloud-storage) - Connect your audience to cloud storage when you need the file in BI models, CDPs, or internal enrichment pipelines.
+
+<div id="note-6" />
 
 > 📘 **Note**
 >
@@ -273,6 +311,8 @@ After an audience is built, activate it where it can drive results. Select a des
 <Accordion title="Connect an audience to media partners">
 
 Send the audience for activation directly in your preferred media partner platforms, such as Meta Ads and <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>. The system forwards a CSV of user IDs, hashed automatically if the partner requires it.
+
+<div id="note-7" />
 
 > 📘 **Note**
 >
@@ -304,6 +344,8 @@ Send the audience for activation directly in your preferred media partner platfo
 
 Send the audience directly to your cloud storage bucket. With every audience update, DCP automatically exports the latest version to your selected destination. You can also download the audience as a CSV file at any time.
 
+<div id="note-8" />
+
 > 📘 **Note**
 >
 > Before exporting, make sure your cloud storage bucket is set up and connected to DCP. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">Set up your cloud services</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections">Add connections</Anchor> for instructions.
@@ -316,6 +358,8 @@ Send the audience directly to your cloud storage bucket. With every audience upd
 3. Click **Save & send**.
 
 </Accordion>
+
+<div id="manage-audiences" />
 
 ## Manage audiences
 

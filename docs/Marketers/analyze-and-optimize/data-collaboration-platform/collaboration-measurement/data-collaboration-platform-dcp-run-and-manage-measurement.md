@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** After you configure on-site or off-site measurement, run it as either a live measurement or a historical measurement. Choose the mode that best matches your goal: measure performance continuously or validate results for a defined period.
 
+<div id="about-the-measurement-run-modes" />
+
 ## About the measurement run modes
 
 After you’ve <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">configured the on-site or off-site measurement</Anchor>, you’re ready to choose how to run the measurement.
@@ -30,6 +32,8 @@ You have two run modes available:
 
 * **Live measurement**: Ongoing measurement that updates at regular intervals, so you can monitor performance continuously as new data is added on the live dashboard.
 * **Historical measurement**: A one-time measurement over a specific date range that you can view and analyze on a historical dashboard.
+
+<div id="live-vs-historical-measurements" />
 
 ### Live vs. historical measurements
 
@@ -40,6 +44,8 @@ You have two run modes available:
 | Supported source types | <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Append</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Overwrite (snapshot)</Anchor> | <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Append-type custom sources</Anchor> |
 | Time frame selection | Select a **start and end date** (from available data) | Select a **start date only** (the platform calculates the historical time frame on activation and continues accumulating data) |
 | How many per measurement | Multiple | One |
+
+<div id="choose-the-measurement-you-need" />
 
 ### Choose the measurement you need
 
@@ -59,6 +65,8 @@ Use the guidance below to decide which measurement fits your goal.
 
 **Tip:** If you’re testing your setup or validating a specific period first, start with **historical measurement**. When you’re ready for ongoing monitoring, switch to **live measurement** for continuous updates.
 
+<div id="run-a-live-measurement" />
+
 ## Run a live measurement
 
 **Before you begin:**  <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configure-on-site-and-off-site-campaign-measurement">Configure the on-site or off-site measurement campaign in the Measurement settings page</Anchor>.
@@ -67,6 +75,8 @@ Use the guidance below to decide which measurement fits your goal.
 
    If **Run now** is disabled, your measurement tasks are incomplete. Complete all required setup tasks to run the measurement.
 2. In the **Prepare to run** dialog, select **Live dashboard**.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -77,6 +87,8 @@ Use the guidance below to decide which measurement fits your goal.
 4. Select the **measurement start date**. The default is today’s date, but you can select a past date from the date picker. (You can only select dates that exist in your data sources.)
 5. Click **Start** to begin the live measurement. You’ll be redirected to the collaboration measurement page.
 6. On the collaboration measurement page, after the automatic validation checks complete successfully, click **Run now**.
+
+<div id="run-a-historical-measurement" />
 
 ## Run a historical measurement
 
@@ -92,9 +104,13 @@ Use the guidance below to decide which measurement fits your goal.
 5. Click **Start** to begin the historical measurement. You’ll be redirected to the collaboration measurement page.
 6. On the collaboration measurement page, after the automatic validation checks complete successfully, click **Run now**.
 
+<div id="manage-measurements" />
+
 ## Manage measurements
 
 After you set up and run your measurement, manage it from the measurement panel of the collaboration measurement page. You can pause or restart live measurement, adjust dates, re-run historical measurements, or duplicate a measurement to create a new run.
+
+<div id="the-collaboration-measurement-page" />
 
 ### The Collaboration measurement page
 
@@ -103,6 +119,8 @@ After you set up and run your measurement, manage it from the measurement panel 
 <div id="pause-or-restart-live-measurement" />
 
 <Accordion title="Pause or restart live measurement">
+
+<div id="legend" />
 
 #### Legend
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png?v=1" width="119px" />
 
+<div id="setting-up-mobusi" />
+
 ## Setting up Mobusi
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,14 +46,20 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the Integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Mobusi following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+
+<div id="in-app-event-postbacks-settings" />
 
 ### In-app event postbacks settings
 
@@ -80,6 +88,8 @@ In this tab, you can create the attribution links you want to send to Mobusi for
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -99,6 +109,8 @@ Adding parameters to the attribution link here enables you to perform thorough d
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Mobusi.
@@ -106,6 +118,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -136,6 +150,8 @@ Ad Revenue is not supported by Mobusi.
 In this tab, you can select the permissions to grant Mobusi, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for Mobusi, the permissions tab is active and you can grant control to Mobusi.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

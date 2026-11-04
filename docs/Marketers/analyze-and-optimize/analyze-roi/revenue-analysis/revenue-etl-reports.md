@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about ROI360 revenue reports, their sources, how they are generated, when they are available, and how you can access them. Learn more about the fields and structure of the reports by downloading the data sample.
 
+<div id="revenue-etl" />
+
 ## Revenue ETL
 
 With ROI360 Revenue ETL, your revenue data is sent via Data Locker to cloud storage for loading into your BI systems.
@@ -39,6 +41,8 @@ The following table shows the available revenue reports. **Note**: With the exce
 | [Ad revenue [SDK impression level]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Impression-level (via SDK)</li><li>Impression-level (via SDK) with device-level (via S2S API)</li></ul> | <ul><li>Contains ad revenue SDK data.</li><li>Provides maximum data freshness and granularity.</li></ul> | Hourly. <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#data-freshness">Learn more</Anchor> |
 | [Transaction-level stores revenue](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the transaction level.</li><li>Provides maximum data freshness and data granularity.</li><li>Includes unique ROI360 monetization-related data and net revenue.</li></ul> | Hourly |
 | [Device-level stores revenue [versioned]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | ROI360 IAP and subscription revenue integration | <ul><li>Contains ROI360 validated in-app purchase and subscription raw data at the device level.</li><li>Includes unique ROI360 net revenue data.</li></ul> | Every 8 hours |
+
+<div id="reports" />
 
 ## Reports
 
@@ -54,6 +58,8 @@ The report shows a single version of ad revenue data of one day aggregated to th
 
 <span id="download-the-report-data-sample"></span>[Download the Ad revenue single version report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx).
 
+<div id="data-sources" />
+
 #### Data sources
 
 Depending on your ad revenue partner integration type, the report data can originate from either:
@@ -62,6 +68,8 @@ Depending on your ad revenue partner integration type, the report data can origi
 * **S2S:** Device-level reports pulled by an API request from partners (mediation or monetization networks).
 
 To learn how to set the integration type, see: Connect to ad revenue integrated partners.
+
+<div id="data-flow" />
 
 #### Data flow
 
@@ -76,12 +84,16 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
    **Note:** A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
 3. **Data delivery**: The device-level data is written to the single report version.
 
+<div id="when-is-the-report-data-available" />
+
 #### When is the report data available?
 
 | Integration type | Version Day (X = revenue event occurrence day) | Version available at | The version includes revenue events occurring between |
 | --- | --- | --- | --- |
 | SDK | Day X+1 | 20:00 | 00:00 — 24:00 |
 | SDK + S2S | Day X+1 | 17:00 | 00:00 — 24:00 |
+
+<div id="how-to-subscribe-to-the-report" />
 
 #### How to subscribe to the report?
 
@@ -91,11 +103,15 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 
 **Note:** You can also select the same report for retargeting and organic  (Retargeting/Organic ad revenue [single version]).
 
+<div id="how-to-access-the-report-in-your-bucket" />
+
 #### How to access the report in your bucket?
 
 The path to the report consists of the following folder hierarchy:
 
 With the following format: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
+
+<div id="report-folder-hierarchy" />
 
 #### Report folder hierarchy
 
@@ -152,6 +168,8 @@ The purpose of collecting multiple versions of the same day is to capture revenu
 
 [Download the Ad revenue versioned report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv).
 
+<div id="data-sources-1" />
+
 #### Data sources
 
 Depending on your partner integration type, the report data can originate from either:
@@ -161,6 +179,8 @@ Depending on your partner integration type, the report data can originate from e
 * **S2S + SDK:** Payloads originating from both SDK and S2S.
 
 To learn how to set the integration type, see: Connect to ad revenue integrated partners.
+
+<div id="data-flow-1" />
 
 #### Data flow
 
@@ -174,6 +194,8 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 
    **Note:** A report can have more than one device-level aggregation for the same device. This may happen because device-level aggregation is based on monetization-related dimensions such as monetization network, placement, and ad type. For example, if the app display ads in two different placements, revenue events from each placement are aggregated separately on the device level.
 3. **Data delivery**: Device-level data is written to multiple report versions according to a predetermined schedule (specified below).
+
+<div id="when-are-the-report-versions-available" />
 
 #### When are the report versions available?
 
@@ -199,6 +221,8 @@ The table provided below outlines the generation schedules for both the S2S and 
 | S2S | Day X+14 | 11:00-12:00 | 00:00 — 24:00 |
 | SDK + S2S | All SDK and S2S versions above |  |  |
 
+<div id="how-to-subscribe-to-the-report-1" />
+
 #### How to subscribe to the report?
 
 1. In AppsFlyer, from the side menu, select **Report**
@@ -208,11 +232,15 @@ The table provided below outlines the generation schedules for both the S2S and 
 
 **Note:** You can also select the same report for retargeting and organic  (Retargeting/Organic ad revenue [versioned]).
 
+<div id="how-to-access-the-report-in-your-bucket-1" />
+
 #### How to access the report in your bucket?
 
 The path to the report consists of the following folder hierarchy:
 
 `<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### Report folder hierarchy
 
@@ -280,11 +308,15 @@ The report shows impression-level data divided into folders by occurrence hour. 
 
 [Download the Ad revenue impression level report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
 
+<div id="data-source" />
+
 #### Data source
 
 The report data originates from impression-level data sent by the ROI360 Ad Revenue SDK connector and requires an SDK-type integration.
 
 To learn how to set the integration type, see: Connect to ad revenue integrated partners.
+
+<div id="data-flow-2" />
 
 #### Data flow
 
@@ -295,11 +327,15 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
    3. Impression-level ad revenue event generation.
 3. **Data delivery**: Impression events are written to files divided by folders according to occurrence hour. Each folder only contains impressions that occurred during that hour.
 
+<div id="when-is-the-report-data-available-1" />
+
 #### When is the report data available?
 
 | Integration type | Version Day (X = revenue event occurrence day) | Version available at |
 | --- | --- | --- |
 | SDK | Day X | At the end of every reported hour |
+
+<div id="how-to-subscribe-to-the-report-2" />
 
 #### How to subscribe to the report?
 
@@ -307,11 +343,15 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
 3. Select **Ad revenue [SDK impression level].**
 
+<div id="how-to-access-the-report-in-your-bucket-2" />
+
 #### How to access the report in your bucket?
 
 The path to the report consists of the following folder hierarchy:
 
 `<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="report-folder-hierarchy-2" />
 
 #### Report folder hierarchy
 
@@ -364,9 +404,13 @@ This report presents raw in-day data at the transaction level, divided into hour
 
 [Download the transaction-level stores report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
 
+<div id="data-sources-2" />
+
 #### Data sources
 
 The report data originates from transactions collected via the ROI360 SDK Purchase connector and server-to-server stores notifications.
+
+<div id="data-flow-3" />
 
 #### Data flow
 
@@ -374,11 +418,15 @@ The report data originates from transactions collected via the ROI360 SDK Purcha
 2. AppsFlyer ROI360 VIAP/Subscriptions processes the data, attributes it, and creates transaction-level events and values.
 3. The transaction-level events are written to the report divided into hourly folders.
 
+<div id="when-is-the-report-data-available-2" />
+
 #### When is the report data available?
 
 | Version Day (X = revenue event occurrence day) | Version available at |
 | --- | --- |
 | Day X | At the end of every reported hour |
+
+<div id="how-to-subscribe-to-the-report-3" />
 
 #### How to subscribe to the report?
 
@@ -386,11 +434,15 @@ The report data originates from transactions collected via the ROI360 SDK Purcha
 2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
 3. Select **Transaction-Level Stores Revenue report.**
 
+<div id="how-to-access-the-report-in-your-bucket-3" />
+
 #### How to access the report in your bucket?
 
 The path to the report consists of the following folder hierarchy:
 
 `<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="report-folder-hierarchy-3" />
 
 #### Report folder hierarchy
 
@@ -443,6 +495,8 @@ The device-level store revenue report specifies in-app purchase and auto-renewab
 
 <span id="download-the-report-data-sample::8cbba4e3"></span>[Download the device-level stores revenue report data sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vSpomvcf2axYeSFcCh0kEx3ShYYRGVfF9WYZXG1UYBkeymeVfh8mcypAOpq2drqE3zhdmbcmrMtahsl/pub?output=csv)
 
+<div id="data-sources-3" />
+
 #### Data sources
 
 The report data originates from transactions collected via:
@@ -450,11 +504,15 @@ The report data originates from transactions collected via:
 1. The ROI360 SDK Purchase connector.
 2. The stores (for example, The App Store and Google Play store) via server-to-server notifications.
 
+<div id="data-flow-4" />
+
 #### Data flow
 
 1. The report data originates from transactions collected via the ROI360 SDK Purchase connector payloads or from S2S stores notifications.
 2. AppsFlyer ROI360 VIAP/Subscriptions processes the data, attributes it, and creates in-app events.
 3. The in-app events are aggregated to the device level and written to a report version every four hours.
+
+<div id="when-are-the-report-versions-available-1" />
 
 #### When are the report versions available?
 
@@ -465,17 +523,23 @@ The report data originates from transactions collected via:
 | Day X | 20:00 - 21:00 | 00:00 — 20:00 |
 | Day X+1 | 05:00 - 06:00 | 00:00 — 24:00 |
 
+<div id="how-to-subscribe-to-the-report-4" />
+
 #### How to subscribe to the report?
 
 1. In AppsFlyer, from the side menu, select **Report** > **Data Locker**.
 2. In the **Data Locker content** pane scroll down to the **ROI360 RevenueETL** tile.
 3. Select **Device-Level Stores Revenue report [versioned]**.
 
+<div id="how-to-access-the-report-in-your-bucket-4" />
+
 #### How to access the report in your bucket?
 
 The path to the report consists of the following folder hierarchy:
 
 `<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
+
+<div id="report-folder-hierarchy-4" />
 
 #### Report folder hierarchy
 

@@ -24,13 +24,19 @@ x-zendesk:
 
 <Image alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
 
+<div id="about-migrating-to-appsflyer" />
+
 ## About migrating to AppsFlyer
 
 Migrating from Adjust to AppsFlyer provides a smooth transition to a reliable and comprehensive platform for attribution and marketing analytics. AppsFlyer offers secure and unbiased solutions alongside a suite of advanced tools designed to help brands navigate changes in the industry. With global customer support and a focus on continuous product improvement, AppsFlyer aims to equip businesses with the tools and insights needed to grow and adapt.
 
+<div id="compare-measurement-between-appsflyer-and-adjust" />
+
 #### Compare measurement between AppsFlyer and Adjust
 
 When considering migration, you might want to compare AppsFlyer and Adjust attribution measurements across the same media sources and campaigns. However, not all media sources support measurement with more than one MMP. Those that do may have certain limitations and challenges to prevent attribution discrepancies. See more about <Anchor target="_blank" href="/marketers/docs/measuring-attribution-with-multiple-mmps">Measuring attribution with multiple MMPs</Anchor>.
+
+<div id="tasks" />
 
 ## Tasks
 
@@ -104,6 +110,8 @@ Device migration is the process of uploading a list of your existing user device
 
 Device migration solves data issues associated with existing app users who downloaded the app, and were attributed by Adjust. For example, SRN double charges, which occur when users originally attributed to an SRN under Adjust, and who are still within the lookback window, are claimed by the SRN again under AppsFlyer.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > * A new user clicks on an ad on the Facebook app and installs your app on June 15.
@@ -117,6 +125,8 @@ Once you migrate devices, data reflects in AppsFlyer as follows:
 * **Retargeting:** Re-attributions and re-engagements are displayed normally.
 * **Activity data:** Displayed normally.
 * **Retention and cohort data:** Migrated devices have no install record. As such, they aren't associated with any cohort, and can't be shown in the cohort and retention reports.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -144,6 +154,8 @@ Switch existing marketing campaigns to AppsFlyer to enable AppsFlyer attribution
 
 The following sections explain what is needed to enable AppsFlyer measurement for different types of media sources: SRNs, non-SRN ad networks, owned media, and SKAN.
 
+<div id="srns" />
+
 #### SRNs
 
 SRNs reply to Mobile Measurement Partners (MMPs) when queried about engagements of specific devices. If AppsFlyer and Adjust query the same SRN about the same device install, you may incur double charges.
@@ -152,10 +164,14 @@ SRNs reply to Mobile Measurement Partners (MMPs) when queried about engagements 
 
 * Activate and configure relevant <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRNs</Anchor> in AppsFlyer.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * SRNs can run multiple MMPs (except Meta ads and Twitter).
 > * Meta ads cannot de-duplicate in-app events.
+
+<div id="non-srn-ad-networks" />
 
 #### Non-SRN ad networks
 
@@ -166,6 +182,8 @@ Ad network attribution links record the engagements of users and are subsequentl
 1. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">Activate</Anchor> the relevant ad networks in AppsFlyer.
 2. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">Generate AppsFlyer attribution links</Anchor> for each ad network.
 3. Switch the existing links in each of your campaigns with the AppsFlyer attribution links.
+
+<div id="owned-media" />
 
 #### Owned media
 
@@ -185,6 +203,8 @@ For these campaigns, AppsFlyer uses <Anchor target="_blank" href="/marketers/doc
 **To change your Adjust links into AppsFlyer OneLink links**:
 
 * Contact your CSM, who will assist you with transforming your owned media links to into OneLink links according to the channels and tools you currently use.
+
+<div id="skan" />
 
 #### SKAN
 
@@ -216,6 +236,8 @@ Before migration, your systems store your attribution data from Adjust according
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="attributed-migration" />
@@ -223,6 +245,8 @@ Before migration, your systems store your attribution data from Adjust according
 <Accordion title="Attributed migration">
 
 Devices migrated to AppsFlyer with this method have their in-app events, and sessions recorded and displayed according to the media source reported by the previous attribution vendor, and according to the ad networks' data retention policies.
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### Attributed device migration CSV structure
 
@@ -260,6 +284,8 @@ Devices migrated to AppsFlyer with this method have their in-app events, and ses
 <Accordion title="Non-attributed migration">
 
 Devices migrated to AppsFlyer with this method are recorded (but do not display) as organic users. Their in-app events and sessions are also recorded and displayed as organic.
+
+<div id="non-attributed-device-migration-csv-file-structure" />
 
 #### Non-attributed device migration CSV file structure
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 <Embed title="Incrementality for UA Guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
+<div id="about-incrementality-for-ua" />
+
 ## About Incrementality for UA
 
 In today's omnichannel marketing environment, understanding true campaign effectiveness requires more than one lens. Last-touch attribution remains essential for real-time performance monitoring and granular insights, but it doesn't provide insight into whether a campaign caused true causal lift. Incrementality for UA adds a critical layer by measuring whether campaigns actually drive new user growth.
@@ -50,6 +52,8 @@ User acquisition teams today face complex challenges, including fragmented user 
 Incrementality for UA uses a geo-based experimental design. Geographical regions are divided into statistically similar groups, based on the app's historical installs or event behavior. One group is exposed to your UA campaign and the other is withheld from exposure. After the experiment runs for a defined period, the difference in performance between the two groups is analyzed to reveal incremental lift. Geo-experimentation is privacy-safe, bias-resistant, and doesn't rely on user-level data.
 
 Incrementality for UA provides the insights you need to understand the true incremental value of your marketing campaigns, unhindered by inconsistent user-level data or targeting overlaps. This will give you the true picture of your campaigns' effectiveness and help you make better, data-driven decisions.
+
+<div id="experiment-design-and-insights" />
 
 ## Experiment design and insights
 
@@ -200,6 +204,8 @@ When used together, the two models provide a holistic view of marketing performa
 
 </Accordion>
 
+<div id="get-started" />
+
 ## Get started
 
 To get started with Incrementality for UA, follow the steps below:
@@ -233,10 +239,14 @@ The first step is creating the experiment.
       * **Ready** — Your geo design is approved and ready to use. You can proceed with the experiment.
       * **Unavailable** — The geo design doesn't currently meet the requirements for a valid experiment, based on the data available for the selected app, country, and metric combination. You can try resubmitting after 30 days, as eligibility may change as your app collects more data.
 
+      <div id="note" />
+
       > 📘 **Note**
       >
       > If geo design rules exist for the selected app and country, they're automatically applied when the geo design is calculated. See [Geo design policy](#h_01_geo-design-policy) to learn more.
 
+
+      <div id="note-1" />
 
       > 📘 **Note**
       >
@@ -278,6 +288,8 @@ The first step is creating the experiment.
 4. **Review summary** - Check that the experiment summary looks good, then click **Launch experiment**.  
    The experiment begins. Initial results will display within 24 hours.
 
+   <div id="note-2" />
+
    > 📘 **Note**
    >
    > Once the experiment is over, the connected campaigns will return to their previous geo-targeting settings. This ensures campaign continuity and consistency and lets you resume UA activities without needing to reconfigure targeting manually.
@@ -294,6 +306,8 @@ The first step is creating the experiment.
 
 <span id="zd-access-the-experiment-dashboard"></span>You can see the experiment results on the experiment dashboard.
 
+<div id="access-the-experiment-dashboard" />
+
 #### Access the experiment dashboard
 
 1. Go to your Incrementality for UA experiments by clicking **Optimize** > **Incrementality for UA**, in the AppsFlyer side menu. 
@@ -302,6 +316,8 @@ The first step is creating the experiment.
 2. Click the specific experiment to access the experiment dashboard.
 
    ![Experiments table (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+
+<div id="a-tour-of-the-dashboard" />
 
 #### A tour of the dashboard
 
@@ -335,6 +351,8 @@ The bottom of the dashboard is the **Cumulative incremental installs** graph whi
 
 </Accordion>
 
+<div id="manage" />
+
 ## Manage
 
 This section explains how to manage your connections, geo design policy, and experiments.
@@ -366,6 +384,8 @@ The geo design policy lets you define geographic experiment design rules at the 
 
 Use geo design rules to accommodate legal restrictions, protect high-value markets, or isolate regions affected by parallel tests.
 
+<div id="geo-design-rule-types" />
+
 #### Geo design rule types
 
 Three rule types are available:
@@ -375,6 +395,8 @@ Three rule types are available:
 | **Don't holdout** | These regions are never placed in holdout groups, but can still be in exposed groups. Your campaigns in these regions are never paused or interrupted by the experiment. | A top-performing market that must stay active at all times. |
 | **Don't target** | These regions are excluded from campaign targeting entirely. They won't appear in exposed or holdout groups. | A market where advertising is legally restricted. |
 | **Exclude from analysis** | These regions will stay in the campaign targeting to maintain normal advertising activity, but won’t be included in exposed or holdout groups. | <ul><li>Regions running parallel geo-lift tests that could skew results.</li><li>Regions running parallel geo-lift tests or expected local marketing efforts that could skew results.</li></ul> |
+
+<div id="set-up-a-geo-design-rule" />
 
 #### Set up a geo design rule
 
@@ -392,6 +414,8 @@ Three rule types are available:
 
 The rule is now active and will be applied to all geo designs calculated for the selected app and country going forward.
 
+<div id="delete-a-geo-design-rule" />
+
 #### Delete a geo design rule
 
 **To delete a geo design rule:**
@@ -400,9 +424,13 @@ The rule is now active and will be applied to all geo designs calculated for the
 2. Open the actions menu and select **Delete**.
 3. Confirm in the **Delete rule?** dialog.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Deleting a rule doesn't affect active experiments. If there were previous rules (or no rules), that is what remains in effect for any experiment already running. Deleting a rule only removes it from future geo designs/experiments.
+
+<div id="view-geo-design-rules-in-an-experiment" />
 
 #### View geo design rules in an experiment
 
@@ -413,6 +441,8 @@ Once a geo design is approved and you're setting up your experiment, you'll see 
 * **Exclusion rules** - The active rules (Don't holdout, Don't target, Exclude from analysis) and the specific regions they cover
 
 In the experiment report, you can view the full geo breakdown by selecting **Geo design breakdown** from the actions menu. This shows the same breakdown as above, showing the rules that were active when the experiment was created. To manage your rules, click **Manage geo design policy** at the bottom of the panel.
+
+<div id="traits-and-limitations" />
 
 #### Traits and limitations
 
@@ -448,6 +478,8 @@ For each experiment, you can see the:
 * **Dates** - The experiment date range
 * [**Status**](#status-column) - You can see the number of days left in the experiment or when it's completed.
 * **Lift**
+
+<div id="status-column" />
 
 #### **Status column**
 
@@ -495,6 +527,8 @@ From the experiment, click the ⠇actions icon (on the upper-right) and select *
 <Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
+
+<div id="traits-and-limitations-1" />
 
 ## Traits and limitations
 

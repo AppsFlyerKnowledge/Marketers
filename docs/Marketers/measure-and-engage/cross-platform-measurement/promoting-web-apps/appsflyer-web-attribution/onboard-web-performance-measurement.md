@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **At a glance:** Follow the onboarding instructions in this guide to set up Web Performance Measurement. Once set up, you can measure and attribute website visits and web events to marketing sources, understand what drives meaningful website outcomes, and support cross-platform measurement.
 
+<div id="about-web-performance-measurement" />
+
 ## About Web Performance Measurement
 
 Web Performance Measurement helps you connect what happens on your website, such as visits and web events, to the marketing sources that drove them. In other words, it shows you which media sources and campaigns bring users to your site and influence what they do next, so you can measure performance and optimize ROI.
 
+<div id="create-a-web-app-in-appsflyer" />
+
 ### Create a web app in AppsFlyer
 
 <Embed title="Onboard Web Performance Measurement" typeOfEmbed="youtube" url="https://www.youtube.com/embed/MOn_UsirYCU" providerUrl="https://www.youtube.com" />
+
+<div id="set-up-network-integrations-postbacks-and-cost-measurement" />
 
 ### Set up network integrations, postbacks, and cost measurement
 
 <Embed title="Onboard Web Performance Measurement" typeOfEmbed="youtube" url="https://www.youtube.com/embed/-sYIv3YQEwo" providerUrl="https://www.youtube.com" />
 
 To start measuring website visits and web events in AppsFlyer, follow the onboarding steps in the Web Performance Measurement setup checklist below.
+
+<div id="web-performance-measurement-setup-checklist" />
 
 ## Web Performance Measurement setup checklist
 

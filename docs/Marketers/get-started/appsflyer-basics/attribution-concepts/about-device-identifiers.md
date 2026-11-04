@@ -27,21 +27,29 @@ x-zendesk:
 ---
 > **At a glance:** Understand the device identifiers supported in the AppsFlyer SDK.
 
+<div id="overview" />
+
 ## Overview
 
 The AppsFlyer SDK provides a framework for customers to configure which device identifiers their app uses for <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#attribution">attribution</Anchor> and analytics.
 
 The customer can configure the SDK to retrieve advertising identifiers such as GAID, IDFA, and IDFV, based on their app's needs, applicable platform policies, and user consent. (for example, third-party Android app stores or apps marketed in China).
 
+<div id="android-device-identifiers" />
+
 ## Android device identifiers
 
 The SDK supports the following device identifiers for Android platforms:
+
+<div id="apps-published-on-google-play" />
 
 #### Apps published on Google Play
 
 | Device identifier | Purpose |
 | --- | --- |
 | <span id="gaid"></span>GAID | A **user-resettable** identifier for Google Play Android users.<br /><br />Starting with SDK V4.8.0, AppsFlyer automatically collects this device identifier. |
+
+<div id="apps-published-in-third-party-app-stores" />
 
 #### Apps published in third-party app stores
 
@@ -51,6 +59,8 @@ The SDK supports the following device identifiers for Android platforms:
 | <span id="oaid"></span>OAID | A **user-resettable** identifier used by some out-of-store Android markets.  For more information, see the <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">Guide to implementing OAID</Anchor>. |
 | <span id="android-id"></span>Android ID | A unique, **non-resettable** mobile-device identifier used in third-party app stores. The SDK does not automatically collect the Android ID. However, if there is a need to collect these identifiers, your developer can implement collection.<br /><br />**Note:** Android ID cannot be used in conjunction with GAID. |
 
+<div id="apple-device-identifiers" />
+
 ## Apple device identifiers
 
 The SDK supports the following device identifiers for iOS platforms:
@@ -59,6 +69,8 @@ The SDK supports the following device identifiers for iOS platforms:
 | --- | --- |
 | <span id="idfa"></span>IDFA | A unique **user-resettable** identifier for Apple iOS or tvOS (Apple TV) users. Since the release of iOS 14.5, IDFA is available only if the user consents via the <Anchor target="_blank" href="/marketers/docs/about-att-and-skan#att-principles">ATT prompt</Anchor>. |
 | <span id="idfv"></span>IDFV | A device identifier shared by all the apps from the **same vendor** on the device. Once the first app is installed, the ID is assigned to it, and other apps from the same vendor are assigned the same IDFV. Apps from other vendors are assigned a different IDFV.<br /><br />In addition, when all the apps from a specific vendor are removed, the IDFV for that vendor is deleted, and upon a new installation, a new IDFV will be assigned. |
+
+<div id="ctv--pc-and-console-app-device-identifiers" />
 
 ## CTV , PC, and console app device identifiers
 

@@ -31,6 +31,8 @@ Pending apps in AppsFlyer look the same as live apps. They have accessible dashb
 
 ![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## What's happening?
 
 AppsFlyer automatically checks the status of the apps several times a day.
@@ -38,6 +40,8 @@ AppsFlyer automatically checks the status of the apps several times a day.
 If the app is still not live in the store when AppsFlyer checks the status of the app, the app appears as pending in the dashboard. Once the app is finally submitted to iTunes or Google, it updates to active and the app logo changes to the app's original logo.
 
 The status of the app in the dashboard has no effect on data collection and measurement. If the app is live on Google Play or App Store and users install the app and interact with it, install and in-app event data displays in the dashboard just the same.
+
+<div id="refreshing-the-app-status" />
 
 ## Refreshing the app status
 
@@ -52,9 +56,13 @@ For the status of the app to change to active, AppsFlyer checks its status in th
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 
+<div id="store-country" />
+
 ## Store country
 
 Some apps are only available in Google Play or iTunes for certain countries. **It is important that the correct country is set for an app** in order for AppsFlyer to be able to check and update its status.
+
+<div id="ios" />
 
 ### iOS
 
@@ -66,6 +74,8 @@ To change the Apple Store country:
 2. Under **App Store Country** choose the correct country
 3. Scroll down and click **Save Settings**
 4. If the app still appears as pending, [click **Refresh Status**](/docs/why-is-my-app-still-pending#refreshing-the-app-status).
+
+<div id="android" />
 
 ### Android
 

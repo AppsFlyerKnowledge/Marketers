@@ -27,11 +27,17 @@ x-zendesk:
 
 Batch allows advertisers to maximize user engagement while offering a personalized user experience. The Batch advanced user engagement platform lets you communicate with your smartphone users in a more personalized way, reduce your churn and boost your app ROI. AppsFlyer and Batch combined can help the advertiser to further customize user experience and engagement based on user journey. This means that the advertiser can send specific in-app messages and push notifications based on attribution data such as media source and campaign. Integrating Batch and AppsFlyer is simple and straightforward.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
+<div id="integrating-batch-and-appsflyer" />
+
 ## Integrating Batch and AppsFlyer
+
+<div id="setting-customer-user-id" />
 
 ### Setting Customer User ID
 
@@ -42,6 +48,8 @@ It's important that you put a real Customer User ID, and not a placeholder value
 <Tabs>
 <Tab title="Android">
 
+<div id="batch" />
+
 #### Batch
 
 Set Customer User ID in Batch SDK.
@@ -51,6 +59,8 @@ Batch.User.editor()
     .setIdentifier("user@example.com")
     .save();
 ```
+
+<div id="appsflyer" />
 
 #### AppsFlyer
 
@@ -67,6 +77,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 <Tabs>
 <Tab title="Objective C">
 
+<div id="batch-1" />
+
 #### Batch
 
 Set Customer User ID in Batch SDK.
@@ -76,6 +88,8 @@ BatchUserDataEditor *editor = [BatchUser editor];
 [editor setIdentifier:@"user@example.com"];
 [editor save];
 ```
+
+<div id="appsflyer-1" />
 
 #### AppsFlyer
 
@@ -89,6 +103,8 @@ Set Customer User ID in AppsFlyer SDK.
 
 <Tab title="Swift">
 
+<div id="batch-2" />
+
 #### Batch
 
 Set Customer User ID in Batch SDK.
@@ -98,6 +114,8 @@ let editor = BatchUser.editor()
 editor.setIdentifier("user@example.com")
 editor.save()
 ```
+
+<div id="appsflyer-2" />
 
 #### AppsFlyer
 
@@ -112,6 +130,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 </Tab>
 </Tabs>
+
+<div id="setting-up-batch" />
 
 ### Setting Up Batch
 
@@ -133,10 +153,14 @@ The Batch configuration only requires the **Integration** tab. The other four ta
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General Settings
 
@@ -145,6 +169,8 @@ Before you can set up the integration with Batch, make sure to obtain your **Bat
 Once you obtain the two keys, enter each in the relevant field. Under **General Settings**, put your **Batch Rest API Key** in the **BATCH\_REST\_API\_KEY** field and your **Batch API Key** in the **BATCH\_API\_KEY** field.
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+
+<div id="default-postbacks" />
 
 ### Default Postbacks
 
@@ -187,6 +213,8 @@ Ad Revenue is not supported in the integration with this partner.
 Permissions are not available for Batch.
 
 </Accordion>
+
+<div id="viewing-appsflyer-data-in-the-batch-dashboard" />
 
 ## Viewing AppsFlyer data in the Batch dashboard
 

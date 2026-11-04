@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Create a template to form the basis of the redirection logic for all OneLink links that you create for your various marketing campaigns. A template is required for creating links and end-user experiences.
 
+<div id="onelink-templates" />
+
 ## OneLink templates
 
 <Embed title="Create a OneLink template" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ A OneLink template:
   * **New users without your app installed**: To the correct app store or web URL
   * **Existing users with your app already installed**: Opening the app via Android App Links, iOS Universal Links, or URI schemes. This involves some developer work to set up.
   * **Note**: Redirection settings for website or app store can be overridden on the link level.
+
+<div id="create-a-onelink-template" />
 
 ## Create a OneLink template
 
@@ -55,6 +59,8 @@ A OneLink template:
    The OneLink template setup page opens.  
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. In the **OneLink template name** field, enter a name.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -188,6 +194,8 @@ For the best user experience, security, and device coverage, we recommend enabli
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **Tip**
       >
       > * Neither Apple or Google enforce unique naming for app schemes. **Choose a scheme name unique to your brand** to avoid conflicting schemes across different applications. A good scheme name could be your app bundle ID, for example, **com.company.app**
@@ -211,6 +219,8 @@ For the best user experience, security, and device coverage, we recommend enabli
    </Tabs>
 
 6. Click **Update OneLink template**.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -255,6 +265,8 @@ You can customize the QR codes generated via OneLink by:
 
 A favicon is the small icon that appears next to your link title when a link is shared on social media or messaging apps. Customize how it looks by adding your own icon here. It applies to all links based on this template, and displays on supported platforms when a link is shared with a custom social media preview configured.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > This favicon only appears in link previews on platforms that support it, and only when **Custom preview (image and tags)** is configured at the link level. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags">Learn more</Anchor>
@@ -275,6 +287,8 @@ A favicon is the small icon that appears next to your link title when a link is 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 <div id="key-traits-and-limitations" />
@@ -294,6 +308,8 @@ A favicon is the small icon that appears next to your link title when a link is 
 </Accordion>
 
 Got a question about OneLink templates? Check out our <Anchor target="_blank" href="/marketers/docs/onelink-troubleshooting-and-faq#onelink-template-faq">FAQ</Anchor>!
+
+<div id="next-step" />
 
 ## Next step
 

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Advertisers use the Aggregated Advanced Privacy (AAP) framework to control which attribution data is made available to partners and ad networks via the AppsFlyer platform.
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## Aggregated Advanced Privacy (AAP) framework
 
 The AppsFlyer Aggregated Advanced Privacy (AAP) framework prevents tracking across apps and websites owned by different companies, and the ability to uniquely identify a user or device. AAP utilizes the Apple App Tracking Transparency privacy levels as a minimum benchmark for its privacy-preserving thresholds.
@@ -36,6 +38,8 @@ The framework enables advertisers to control the availability of user-level attr
 When AAP is on, user-level attribution data for users running iOS 14.5+ who have not granted ATT consent will not be available to advertisers or partners. **Note**: Even when AAP is off, user-level data cannot be used to uniquely identify a device.
 
 AAP has no impact on the availability of aggregated attribution data and analytics reports to advertisers and partners.
+
+<div id="aap-impacted-features" />
 
 ### AAP-impacted features
 
@@ -53,6 +57,8 @@ Data availability is affected when AAP is on as follows:
 * **Attribution data and fraud (Protect360):** <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">Some attribution fields are restricted or not available.</Anchor>
 * **Click, impression, and blocked clicks (fraud) data:** <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#identifier-restriction">User and device-related identifiers</Anchor> aren't available.
 * **Deferred deep linking**: If you implement deferred deep linking in paid media, use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">unified deep linking API (UDL).</Anchor> The legacy API, which uses GCD, can't be used in the context of non-consenting users. In the case of owned media, deferred deep linking for owned media is supported via GCD and the most recent deferred deep linking API.
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## Data availability principles in Aggregated Advanced Privacy
 
@@ -74,6 +80,8 @@ The terms defined are used in the figure and sections that follow to describe th
 
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### Paid and owned media data availability
 
 <div id="paid-media" />
@@ -81,6 +89,8 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 <Accordion title="Paid media">
 
 Paid media includes mobile ad networks with integrations in the AppsFlyer platform with whom advertisers run campaigns.
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### Paid media data availability by ATT status
 
@@ -98,6 +108,8 @@ Owned media includes digital marketing campaigns used by advertisers to reach cu
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## Controlling Advanced Aggregated Privacy
 
 <div id="aap-central-switch" />
@@ -108,11 +120,15 @@ The AAP is an app-level toggle that controls the Advanced Privacy settings for a
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
+<div id="aap-enabled" />
+
 #### AAP enabled
 
 * Aggregated attribution is available. This includes, for example, Overview dashboards and reporting tools such as Cohort and the Master API.
 * [Advanced Privacy partner toggles](#partner-advanced-privacy-switch) are turned on and cannot be modified. Note! They are locked in position.
 * The data customers may make available to advertisers and partners is limited to aggregated data only, as defined in the [previous section](/docs/apply-aggregated-advanced-privacy-framework#data-availability-principles-in-aggregated-advanced-privacy).
+
+<div id="aap-disabled" />
 
 #### AAP disabled
 
@@ -154,11 +170,15 @@ As previously stated, the AAP setting overrides the Advanced Privacy (AP) settin
 
 </Accordion>
 
+<div id="advanced-aggregated-privacy-implications-for-your-partners" />
+
 ## Advanced Aggregated Privacy implications for your partners
 
 <div id="ad-networks" />
 
 <Accordion title="Ad networks">
+
+<div id="postbacks-to-ad-network-partners" />
 
 #### **Postbacks to ad network partners**
 
@@ -168,6 +188,8 @@ Data sharing rules described apply to a given ad network if either of the follow
 
 * AAP: App-level toggle
 * AP: Partner-level toggle
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **Postbacks for attributed ad networks**
 
@@ -183,6 +205,8 @@ The various user consent scenarios and postback types used are illustrated in th
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **Postbacks for unattributed partners**
 
@@ -242,6 +266,8 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 4. Click **Save.**
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

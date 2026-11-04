@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Xsolla, an AppsFlyer integrated partner, is a gaming commerce tech partner specializing in payment processing outside of traditional app platforms. The integration between Xsolla and AppsFlyer enables Xsolla to automate Web Shop purchases and revenue to be sent to AppsFlyer, to present the full ROAS and LTV of the game, including purchases made in the Xsolla Web Shop.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="integration-types" />
 
 ## Integration types
 
@@ -37,6 +41,8 @@ There are two available integration methods with Xsolla:
 
 * Before setting up the integration, make sure you <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">contact the partner</Anchor> and open an account with them.
 * To enable the integration to function properly, make sure to share the Customer User ID (CUID) with AppsFlyer, and that it matches the user ID shared with Xsolla. This alignment allows users to log in to Xsolla's Web Shop and ensures that user data is accurately sent to AppsFlyer.
+
+<div id="setting-up-the-tech-partner-integration" />
 
 ## Setting up the tech partner integration
 
@@ -58,13 +64,19 @@ The configuration window only uses the **Integration** tab.
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Xsolla. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Advanced Privacy
 
 For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+
+<div id="default-postbacks" />
 
 #### Default postbacks
 
@@ -75,6 +87,8 @@ AppsFlyer sends default postbacks to Xsolla following user installs. Use this se
 * **All media sources, including organic:** Install postbacks are sent for events attributed to any partner and for organic events.
 
 ![default_postbacks.png](https://files.readme.io/e389805491550a494a4d65ae239604fb0210d7c89fce524adaa2ca7d3a3f8ae5-23593013683345.png)
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -129,6 +143,8 @@ Permissions aren't available for Xsolla.
 
 </Accordion>
 
+<div id="setting-up-the-pba-web-sdk-integration" />
+
 ## Setting up the PBA Web SDK integration
 
 This integration enables present LTV (Lifetime Value) data and insights for analyzing app performance within the PBA dashboard.
@@ -150,6 +166,8 @@ This integration enables present LTV (Lifetime Value) data and insights for anal
    5. In the **AppsFlyer Dev Key** field, enter the AppsFlyer Web developer key. See below how to [find this key in AppsFlyer](/docs/xsolla-integration-with-appsflyer#finding-the-web-dev-key-in-appsflyer).
    6. Click **Connect**.
 
+<div id="finding-the-web-dev-key-in-appsflyer" />
+
 #### Finding the Web dev key in AppsFlyer
 
 1. From the **My apps** page, click **View brand bundles**.
@@ -157,7 +175,11 @@ This integration enables present LTV (Lifetime Value) data and insights for anal
 
 ![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
 
+<div id="identifying-xsollas-events-in-appsflyer" />
+
 ## Identifying Xsolla's events in AppsFlyer
+
+<div id="tech-partner-s2s-integration" />
 
 ### Tech partner (S2S) integration:
 
@@ -167,6 +189,8 @@ Xsolla sends AppsFlyer 2 in-app events:
 * **xsolla-billing-refund** - Item purchase refund
 
 Both events are part of the mobile app in-app events.
+
+<div id="web-sdk-integration" />
 
 ### Web SDK Integration:
 
@@ -180,6 +204,8 @@ Xsolla's web events will appear in PBA's web attribution and raw "Web events" Da
 PC / Console support - the AppsFlyer integration with Xsolla does not support PC / Console Apps at this phase
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

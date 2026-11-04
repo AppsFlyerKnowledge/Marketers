@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Review and manage the status of all the security-related features of your AppsFlyer account from a single location.
 
+<div id="what-can-i-do-from-the-security-center" />
+
 ## What can I do from the Security Center?
 
 The **Security Center** provides you with an at-a-glance overview of your AppsFlyer account's security status. Click the button in any section of the **Security Center** to access the following features:

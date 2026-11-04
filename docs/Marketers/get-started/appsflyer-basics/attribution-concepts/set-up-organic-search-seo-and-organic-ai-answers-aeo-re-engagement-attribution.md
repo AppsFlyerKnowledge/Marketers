@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **At a glance:** Get detailed attribution data about re-engagements (users who already have your app installed) from organic search engines and AI answer engines so that you can optimize your organic search and AI-driven conversions.
 
+<div id="overview" />
+
 ## Overview
 
 Organic search (SEO) and Organic AI answers (AEO re-engagement attribution is an attribution solution that allows AppsFlyer customers to attribute re-engagements (meaning mobile app opens of users who already have your app installed) to various organic search engines and AI answer engines.
 
 Having access to this unique data is very useful to SEO (search engine optimization) and AEO (answer engine optimization) teams, and provides invaluable feedback on their SEO and AEO efforts.
+
+<div id="flow" />
 
 ### Flow
 
@@ -40,6 +44,8 @@ The organic search attribution flow works as follows:
 2. Your web developer maps some of these search results to open your mobile app using Android App Links and iOS Universal Links. If a user has the app installed, when they click the search result, the app opens (without redirecting to an app store first).
 3. Upon app launch, AppsFlyer collects the required information and can attribute the app open to the user's search engine.
 4. If the user doesn't have the app installed, they are sent to a web landing page, where you can use any of several AppsFlyer web-to-app solutions (like Smart Banners, Smart Script, or QR codes) to redirect and attribute them.
+
+<div id="setup" />
 
 ## Setup
 
@@ -55,11 +61,15 @@ The organic search attribution flow works as follows:
    * **SEO (organic search) and AEO mobile app re-engagement attribution.**
    * **Re-engagement attribution**.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > **A note for your developer**
 >
 > performOnDeepLinking forcefully consumes and resolves the deep linking URL when invoked. This will prevent the SEO attribution feature from functioning properly and will result in attribution not being reported to the correct SEO media source.
+
+<div id="data-availability" />
 
 ## Data availability
 
@@ -70,6 +80,8 @@ Data is available as follows:
   * `media_source` field indicates which search engine the user arrived from. Example: `google_organic_seo`.
   * `http_referrer` field includes the base URL of the search results page, from which the user was sent to the app or mobile landing page.
   * `channel` field has value `seo` for organic search engine traffic, or `aeo` for AI answer engine traffic.
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -91,6 +103,8 @@ Organic search attribution supports the following search engines:
 * Sogou
 * Yahoo Japan
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > For other search engines, use the legacy organic search attribution solution (requires developer input).
@@ -111,6 +125,8 @@ Organic search attribution also supports the following AI answer engines:
 * Gemini
 * Grok
 * Deepseek
+
+<div id="note-2" />
 
 > 📘 **Note**
 >

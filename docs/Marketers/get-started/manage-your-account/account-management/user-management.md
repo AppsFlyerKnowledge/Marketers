@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Create and manage your account's AppsFlyer users, and assign them permissions to access features, apps, and data.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer accounts allow for multiple users, each with individually-managed permissions. The maximum number of users per account is determined by your subscription plan.
@@ -37,6 +39,8 @@ Each user’s permissions are defined along 3 primary dimensions:
 Permissions within each of these dimensions are assigned independently. In other words, you may assign a user a **role** with broad functional capabilities but allow them to exercise those capabilities only within a narrowly-defined set of **apps, media sources, and geos.** The only exception is the [Admin role](#admin), as discussed below, which has access to all capabilities, apps, media sources, and geos.
 
 Admins can [add users to multiple accounts](#multiple-accounts) so they can easily switch between accounts.
+
+<div id="user-management-page" />
 
 ## User management page
 
@@ -84,6 +88,8 @@ Click on the name of any role in the left panel to display the full details of t
 
 Explore below the available actions to effectively manage your users and their roles.
 
+<div id="manage-users" />
+
 ## Manage users
 
 Admins can create new users, add them to multiple accounts, edit their details such as roles and access they have to apps and data, and delete users. Some of these actions can be done [in bulk using a dedicated API](#manage-users-in-bulk-via-api).
@@ -95,6 +101,8 @@ Admins can create new users, add them to multiple accounts, edit their details s
 <Embed title="User management" typeOfEmbed="youtube" url="https://www.youtube.com/embed/wLCXP5dFrKg" providerUrl="https://www.youtube.com" />
 
 The page for creating or editing a user includes a number of sections. Make sure to complete them, as described below. When you're finished making the necessary changes, click **Save** at the bottom-right of the page.
+
+<div id="user-details" />
 
 #### User details
 
@@ -108,6 +116,8 @@ The page for creating or editing a user includes a number of sections. Make sure
    * Two consecutive periods (..) and other special characters are not allowed.
    * Must end with a valid email domain.
 
+   <div id="important" />
+
    > 🚧 **Important!**
    >
    > A user’s email address is what identifies them in the AppsFlyer platform, meaning:
@@ -118,9 +128,13 @@ The page for creating or editing a user includes a number of sections. Make sure
 
 4. [Optional] Select the user’s department.
 
+<div id="role" />
+
 #### Role
 
 Select the user’s role (required)– either a predefined role or a custom role you have already created.
+
+<div id="app-access" />
 
 #### App access
 
@@ -129,17 +143,25 @@ Select which apps the user can access:
 * The default setting allows access to all current and future apps in the account. To change this setting, use the checkboxes to select and deselect apps.
 * A user can be given access to all future apps only if they have access to all current apps.
 
+<div id="data-access" />
+
 #### Data access
 
 Set user access levels for media sources and geos. Decide whether to grant access to all or select access to specific ones.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > Users with limited access to media source or geos are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
+<div id="media-sources" />
+
 #### Media sources
 
 By default, the setting **All** allows access to all media sources within the account. This includes those that will be added in the future. Selecting specific media sources doesn't include access to future media sources.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -170,6 +192,8 @@ There are two types of media sources shown in the list:
 
 After these settings are saved, the user dashboards show only data from the selected media sources.
 
+<div id="geos" />
+
 #### Geos
 
 Select if users have access to data for **All** geos or specific geos only. The default setting allows access to all geos. Limited access means users are unable to access certain [dashboards and features](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
@@ -179,9 +203,13 @@ Select if users have access to data for **All** geos or specific geos only. The 
 1. Under **Geos**, click **All**.
 2. From the dropdown list, select the specific geos to grant access to the user.
 
+<div id="user-activation" />
+
 #### User activation
 
 Once the user is created, you can see them in the user table with an envelope icon ![pending_invitation_icon.png](https://files.readme.io/cd556e0b9137fbcfbf4bef574332622ca1e567ac76a041b7f7f3874052b037e6-31780969031825.png). This indicates an invitation has been sent and the account is awaiting activation. The user must activate their account using the link in their email. The activation link is valid for 48 hours. After the user activates their account, the envelope disappears.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -195,23 +223,33 @@ Once the user is created, you can see them in the user table with an envelope ic
 
 Users can be added to multiple accounts and assigned to different roles in each account. This helps users work in different accounts without the need to re-enter credentials.
 
+<div id="log-in-to-multiple-accounts" />
+
 #### Log in to multiple accounts
 
 Users can log in to multiple accounts using all login methods: credentials (username and password), <Anchor target="_blank" href="/marketers/docs/implementing-and-using-2fa-login">2FA</Anchor>, and <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO</Anchor>.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
 > When switching between accounts (not during initial login), users must also enter a 6-digit verification code sent to their email, regardless of which login method they used to sign in. <Anchor target="_blank" href="/marketers/docs/welcome-to-appsflyer#switch-between-accounts">See this article for more information on how to switch accounts</Anchor>.
 
+<div id="supported-accounts-and-users" />
+
 #### Supported accounts and users
 
 Advertiser accounts support having the same user in multiple accounts. With the right permissions, they can add users to all their accounts. See limitations below.
+
+<div id="limitations-on-adding-users-to-multiple-accounts" />
 
 #### Limitations on adding users to multiple accounts
 
 * This feature is available only to advertiser accounts, and only to users with appropriate User management permissions.
 * A user can have the role of an [account owner](#account-owner) for one account only. In other accounts, they can hold any other role.
 * Users who haven't yet [activated their account](#user-activation) can't be added to another account.
+
+<div id="add-users-to-multiple-accounts" />
 
 #### Add users to multiple accounts
 
@@ -231,6 +269,8 @@ Advertiser accounts support having the same user in multiple accounts. With the 
 
 Users can be edited either one at a time or in groups.
 
+<div id="individual-editing" />
+
 #### Individual editing
 
 **To edit an individual user:**
@@ -241,9 +281,13 @@ Users can be edited either one at a time or in groups.
 4. All settings other than email address are editable (including role, apps, media sources, and geos).
 5. Click **Save**.
 
+<div id="multi-user-editing" />
+
 #### Multi-user editing
 
 Multi-user editing is an efficient way to change the account permissions of several users at one time. Using this feature in combination with the search and filtering capabilities of the **Users** tab can make it particularly helpful for managing large numbers of users.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -261,6 +305,8 @@ Multi-user editing is an efficient way to change the account permissions of seve
    * Remember that your changes apply to all selected users!
 5. The edited users are highlighted in the table, and the users appear as they will once the changes are saved. However, you still have the opportunity to review your changes and confirm or cancel them in the next step.
 6. Review your changes. Click **Save** to confirm or **Cancel** to undo them.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -291,6 +337,8 @@ Multi-user editing is an efficient way to change the account permissions of seve
 
 Multiple users can be deleted from the account in bulk.
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > * The [account owner](/docs/user-management#account-owner) can't be deleted
@@ -304,6 +352,8 @@ Multiple users can be deleted from the account in bulk.
 
 </Accordion>
 
+<div id="manage-users-in-bulk-via-api" />
+
 ### Manage users in bulk via API
 
 Some user-management actions can be done in bulk using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-management-overview">a dedicated API</Anchor>:
@@ -314,11 +364,15 @@ Some user-management actions can be done in bulk using <Anchor target="_blank" h
 
 The API supports the main user management features on the platform and includes the same error verifications.
 
+<div id="manage-roles" />
+
 ## Manage roles
 
 Each user of your AppsFlyer account must be assigned a role. Each role defines the specific AppsFlyer features the user can access and the functions they can perform. A full list of capabilities per role is available on the [Roles tab](#roles-tab) of the **User management** page.
 
 Roles within AppsFlyer can be [predefined roles](#predefined-roles), [custom roles](#custom-roles), or (in certain circumstances) [temp roles](#temp-roles).
+
+<div id="predefined-roles" />
 
 ### Predefined roles
 
@@ -334,9 +388,13 @@ AppsFlyer is configured with many predefined roles:
 * Security
 * Quality Assurance
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > For each of these predefined roles, the functional capabilities are fixed: no "mixing and matching" allowed. However, you can change a user’s functional capabilities at any time by assigning them to a different predefined or custom role (except for the [account owner](#account-owner), as discussed below).
+
+<div id="example-1" />
 
 > 📄 **Example**
 >
@@ -346,9 +404,13 @@ AppsFlyer is configured with many predefined roles:
 >
 > **Answer:** No. As long as Bill stays in the Team manager role, you cannot give him the ability to access the My Plan and Payments pages. Nor can you remove his ability to manage OneLink templates. Of course, you can assign Bill to a different predefined role, and his capabilities will change to those defined by that role. Or, you can create a custom role for Bill that changes his capabilities according to your needs.
 
+<div id="admin" />
+
 ### Admin
 
 An AppsFlyer account can have **one or more Admins**. This role has several unique characteristics:
+
+<div id="access" />
 
 #### Access
 
@@ -360,17 +422,25 @@ The Admin role has access to **all account capabilities**, including:
 
 This "all-access" characteristic of the Admin role can't be changed or limited.
 
+<div id="manage-tokens" />
+
 #### Manage tokens
 
 Only a user with an Admin role can <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">manage tokens</Anchor>: create, rename, and remove API and server-to-server tokens.
+
+<div id="role-duplication" />
 
 #### Role duplication
 
 The Admin role **can't be duplicated** when creating [custom roles](#manage-custom-roles).
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Invite new partners to AppsFlyer
 
 A user with an admin role can <Anchor target="_blank" href="/marketers/docs/partner-integrations#invite-new-partners-to-appsflyer">send an invitation link</Anchor> via the Partner Marketplace to invite a partner that isn't integrated with AppsFlyer.
+
+<div id="account-owner" />
 
 ### Account owner
 
@@ -378,11 +448,15 @@ The user created at the time the account was opened, the "account owner", is **a
 
 An account owner has unique characteristics beyond those of the Admin role who isn't the account owner. Unlike any Admin, the account owner **can't** be deleted, removed from the Admin role, or otherwise edited from the [**User management**](/docs/user-management#user-management-page) page. If you need to change the account owner, follow the [steps listed below](#changing-the-account-owner)
 
+<div id="custom-roles" />
+
 ### Custom roles
 
 The predefined roles in AppsFlyer have been configured with the specific combinations of capabilities required in most situations. For this reason, many advertisers find that they don't need to further customize roles. However, when additional customization is required, predefined roles are still a great starting point for managing your users' capabilities.
 
 Learn more about [managing custom roles](#manage-custom-roles).
+
+<div id="temp-roles" />
 
 ### Temp roles
 
@@ -390,9 +464,13 @@ If your AppsFlyer account existed under our prior user management system (when t
 
 Learn more about [managing temp roles](#managing-temp-roles).
 
+<div id="get-roles-data-via-api" />
+
 ### Get roles data via API
 
 Through the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_roles">Get roles API</Anchor>, you can retrieve a list of current roles and their corresponding attributes specific to your account.
+
+<div id="manage-custom-roles" />
 
 ## Manage custom roles
 
@@ -429,6 +507,8 @@ Through the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference
 4. When you are satisfied with all of your selections, click the **Save role** button.
 5. The role's permission levels are changed for all new and existing users.
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > Any changes you make to a custom role are automatically applied to **all existing users** in that role.
@@ -448,6 +528,8 @@ Through the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference
 
 </Accordion>
 
+<div id="special-situations-and-additional-procedures" />
+
 ## Special situations and additional procedures
 
 <div id="managing-temp-roles" />
@@ -459,6 +541,8 @@ If your account previously used our prior user management system, [**temp roles*
 * Users with the same capabilities were assigned the same temp role.
 * Use the features of the [Roles tab](/docs/user-management#roles-tab) to review the capabilities of each temp role and a list of users currently in it.
 
+<div id="temp-role-limitations" />
+
 #### Temp role limitations
 
 Temp roles were designed specifically to allow seamless transition from our prior user management system. As such, they are available only in limited situations:
@@ -468,6 +552,8 @@ Temp roles were designed specifically to allow seamless transition from our prio
   * Note that a user's access to future apps **cannot** be changed while the user is in a temp role.
 * When a user with a temp role is changed to a predefined role, they cannot be returned to the previously-assigned temp role (or to any other temp role).
 * If the last user in a temp role is removed from it, the role will no longer appear in your account.
+
+<div id="example-2" />
 
 > 📄 **Example**
 >
@@ -511,6 +597,8 @@ Additionally, the following AppsFlyer features are **not available** to these us
 
 When you grant a user access to a specific agency **and** a specific media source, their data access reflects only the overlap between the two. They don't see all of that agency's data across every media source, and they don't see all of that media source's data across every agency — only the portion where both permissions intersect.
 
+<div id="example-3" />
+
 > 📄 **Example**
 >
 > You give a user access to Agency B and Media Source A. Agency B manages app installs coming from several media sources, including Media Source A. This user sees only the installs from Media Source A that Agency B manages — not Agency B's data from other media sources, and not Media Source A's data managed by other agencies.
@@ -523,9 +611,13 @@ When you grant a user access to a specific agency **and** a specific media sourc
 
 Because all Admins have essentially the same permissions as the account owner, changing the account owner is not usually necessary. But if you find that you must change the account owner, follow these steps to do so.
 
+<div id="important-2" />
+
 > 🚧 **Important!**
 >
 > Changing the account owner must be completed manually according to the steps below. It can't be done from the **User management** page.
+
+<div id="1assign-a-team-member-the-admin-role" />
 
 #### #1–Assign a team member the Admin role
 
@@ -533,6 +625,8 @@ Changing the account owner can only be requested from a user with an Admin role.
 
 * Assign a team member who can complete all the steps the **Admin** role.
 * The user must activate their account (i.e., log in at least once).
+
+<div id="2send-an-email-request" />
 
 #### #2–Send an email request
 
@@ -552,6 +646,8 @@ Include the following information in your request:
 Use this sample email as a reference:
 
 ![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+
+<div id="3next-steps" />
 
 #### #3–Next steps
 

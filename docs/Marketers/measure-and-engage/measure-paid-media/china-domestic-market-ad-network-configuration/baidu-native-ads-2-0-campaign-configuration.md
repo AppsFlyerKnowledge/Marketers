@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Baidu Native Ads 2.0 is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-baidu-native-ads-20" />
+
 ## Setting Up Baidu Native Ads 2.0
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,10 +44,14 @@ Baidu Native Ads 2.0's configuration window includes 3 active tabs: Integration,
 
 <Accordion title="Integration Tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -53,9 +59,13 @@ Baidu Native Ads 2.0 connects with AppsFlyer via a unique **akey**. If you don't
 
 <Image alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
 
+<div id="default-postbacks" />
+
 ### Default Postbacks
 
 <Image alt="mceclip2.png" src="https://files.readme.io/da98623fc56a1615c49fe2a955452270dcf01857fab468c82b58d01fab36e36a-50899846623633.png" width="552px" />
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -83,6 +93,8 @@ In this tab, you can create the attribution links you want to send to Baidu Nati
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution Link Parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -104,6 +116,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. Learn more about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Baidu Native Ads 2.0.
@@ -113,6 +127,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### Attribution Link
 

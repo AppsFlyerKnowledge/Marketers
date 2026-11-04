@@ -26,13 +26,19 @@ x-zendesk:
 ---
 > **At a glance:** Send your Segment analytics data to AppsFlyer.
 
+<div id="introduction" />
+
 ## Introduction
 
 Segment makes it easy to send your data to AppsFlyer. Once you have recorded your data through Segment's open source libraries, the data is translated and routed to AppsFlyer in the appropriate format. AppsFlyer helps marketers to pinpoint targeting, optimize ad spend, and boost ROI.
 
+<div id="integrating-segment-with-appsflyer" />
+
 ## Integrating Segment with AppsFlyer
 
 Follow <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">this guide from Segment</Anchor> to learn how to integrate Segment with AppsFlyer.
+
+<div id="faqs" />
 
 ## FAQs
 
@@ -66,6 +72,8 @@ The Segment SDK wrapper connects Segment SDK and the AppsFlyer SDK.
 When you use the Segment SDK wrapper to call Segment's methods for recording installs and in-app events, the SDK wrapper calls both Segment's and AppsFlyer methods.
 
 This saves you time and effort and requires less coding.
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >

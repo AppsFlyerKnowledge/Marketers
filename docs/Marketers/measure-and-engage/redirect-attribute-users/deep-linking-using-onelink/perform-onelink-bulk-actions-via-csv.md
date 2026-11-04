@@ -25,6 +25,8 @@ x-zendesk:
 
 You can create, view, and edit links generated in bulk. These links are organized into a convenient collection format, allowing you to perform batch actions on the whole collection, such as adding new links, downloading them, and generating QR code image files.
 
+<div id="getting-started" />
+
 ## Getting started
 
 1. In AppsFlyer, go to **Engage** > **Bulk links**.
@@ -32,6 +34,8 @@ You can create, view, and edit links generated in bulk. These links are organize
    1. **Get Started** - Click to create your first collection.
    2. **Create a OneLink template** - Make sure you have at least one OneLink template in your account, and a Growth/Enterprise plan. See <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink templates</Anchor>.
    3. **Upgrade** - Bulk links are available with the Enterprise or Growth plan. Contact your CSM or write to [hello@appsflyer.com](mailto:hello@appsflyer.com) about upgrading your package.
+
+<div id="creating-your-first-collection" />
 
 ## Creating your first collection
 
@@ -45,6 +49,8 @@ You can create, view, and edit links generated in bulk. These links are organize
    [Upload format](/docs/perform-onelink-bulk-actions-via-csv#upload-format) to make sure your CSV is compatible and uploads successfully. Once the CSV file is uploaded, it gets validated. If there are invalid rows, a validity report CSV will be available for download to help fix your file. Follow the instructions in the UI and upload a corrected file.
 6. Click **Create collection.**
 
+<div id="managing-your-bulk-links-with-collections" />
+
 ## Managing your bulk links with collections
 
 Bulk links are managed in collections.
@@ -55,6 +61,8 @@ Bulk links are managed in collections.
 * The **Collections** section allows you to create a collection and perform other actions to your current link collections.
 * You can search and filter your collection list if there are more than seven collections.
 * Each collection can contain up to 2000 links.
+
+<div id="other-actions" />
 
 ## Other actions
 
@@ -88,6 +96,8 @@ To Download a collection:
 3. Select the domain for the short URL output.
 4. Click **Download**.
 
+<div id="important" />
+
 > 🚧 **Important!,**
 >
 > AppsFlyer recommends using Branded Domains as they can improve campaign performance by driving trust and promoting brand awareness. <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">Learn more here.</Anchor>
@@ -108,6 +118,8 @@ You can create QR code images for the entire collection.
    * **QR code file name format:** Select the parameter whose values will be used as the prefix of the QR code image file names. Ensure that the values from this parameter add a meaningful context to the file names, helping you identify the purpose of each QR image.
 4. Click **Generate.** You can monitor the file generation process in the **Download QR code images** panel.
 5. To to download the ZIP file, click the download icon <Image alt="download-bulk.png" src="https://files.readme.io/8436aed2633bbed2f6cb65c00690711766c153c97042b5b157c199333e8723c2-21656949409041.png" width="18px" />.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -153,6 +165,8 @@ The editing links option is available when:
    * Once the CSV file is uploaded, it gets validated.
    * If there are invalid rows, a validity report CSV is available for download to help fix your file. Follow the instructions in the UI and upload a corrected file.
 6. Click **Update links**.
+
+<div id="notes" />
 
 > 📘 **Notes**
 >
@@ -208,10 +222,14 @@ To delete a collection, you'll need to have app access permissions to at least o
 1. In AppsFlyer, go to **Engage** > **Bulk links**.
 2. Click the action menu next to the collection you want to delete and select **Delete collection**.
 
+<div id="important-notes" />
+
 > 📘 **Important notes**
 >
 > * Make sure you want to delete the collection. Deleting a collection with active links will break the links, meaning users clicking them won’t be attributed or redirected correctly. **Deleting a collection is irreversible.**
 > * If you want to keep a record of which links you've deleted, you can download the collection before deleting. **To download as a CSV file:** Click **Download the collection** in the confirmation message.
+
+<div id="empty-collections" />
 
 ### Empty collections
 
@@ -224,7 +242,11 @@ Empty collections can also be deleted in the way described above.
 
 </Accordion>
 
+<div id="general-information" />
+
 ## General information
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -255,6 +277,8 @@ In order to make sure your CSV uploads without any errors, make sure that your f
 * Even if a URI scheme is set in the OneLink template, for links created in bulk, the af\_dp parameter with the URI scheme must be specified in your CSV file.
 
 </Accordion>
+
+<div id="faq" />
 
 ## FAQ
 

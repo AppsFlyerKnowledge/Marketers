@@ -25,20 +25,28 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
+<div id="measurement-of-cm360-with-non-dv360-third-party-media-sources" />
+
 ## Measurement of CM360 with non-DV360 third-party media sources
 
 Google Marketing Platform (GMP) brings together your advertising and analytics to help you make quality customer connections, surface deeper insights, and drive better marketing results.
 
 In the context of AppsFlyer, the standard DV360 SRN integration (dv360\_int) with GMP allows for easy attribution of DV360 campaigns **managed in CM360**, without the need for attribution links. AppsFlyer attributes installs and re-engagements to DV360 through the DV360 SRN claims using the integration.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * AppsFlyer attributes DV360 campaigns managed in CM360 via the standard DV360 SRN integration, without the need for attribution links. Installs and re-engagements are attributed to DV360 via DV360 SRN claims using the integration. If you're running DV360 campaigns via CM360, refer to the <Anchor target="_blank" href="/marketers/docs/google-marketing-platform-display-video-360-dv360-integration">DV360 integration guide</Anchor>.
 > * If the third-party media source is an SRN, AppsFlyer recommends not using the integration described in this article to avoid conflicts when conversions from the same partner are reported via two different integrations. For example, if the <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup">Meta ads SRN integration</Anchor> is enabled in AppsFlyer but CM360 is also utilized to report on Meta ads traffic (facebook\_int) using the method described in this article, conversions may be reported by both Meta ads and CM360, with CM360 capturing some of the conversions that would have been claimed by the main Meta ads integration.
 
+<div id="measuring-third-party-traffic-running-via-cm360" />
+
 ### Measuring third-party traffic running via CM360
 
 The following steps are recommended for measuring third-party media sources managed via CM360, in both AppsFlyer and CM360:
+
+<div id="step-1-integrate-the-third-party-media-source-and-gmp-with-appsflyer" />
 
 #### Step 1: Integrate the third-party media source and GMP with AppsFlyer
 
@@ -47,9 +55,13 @@ To ensure attribution by AppsFlyer:
 * Make sure the third-party media source is integrated and activated, as it receives attribution rather than CM360. Activating GMP (dv360\_int) is only necessary to ensure data is sent back to CM360.
 * If the third-party media source isn’t integrated with AppsFlyer, it should be handled as a custom or owned media source. In this case, implement an attribution link with any PID (media source) value.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > For Agency attribution: AppsFlyer requires the agency's name for install attribution. Include it using the `af_prt` parameter in the attribution link or through the referrer in the URL.
+
+<div id="step-2-create-the-required-attribution-links" />
 
 #### Step 2: Create the required attribution links
 
@@ -88,9 +100,13 @@ To ensure attribution by AppsFlyer:
    * See more about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters?">iOS and Android attribution links structure and parameters</Anchor>
    * See more about <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">CTV, Console, and PC attribution links structure and parameters</Anchor>
 
+<div id="step-3-set-in-app-event-postbacks" />
+
 #### Step 3: Set in-app event postbacks
 
 To ensure CM360 receives postbacks for events originating from these campaigns, it's advised to set in-app event postbacks in dv360\_int to “All media sources, including organic”.
+
+<div id="using-the-attribution-link" />
 
 ### Using the attribution link
 

@@ -28,12 +28,16 @@ x-zendesk:
 
 Learn more at <Anchor target="_blank" href="https://www.braze.com/">braze.com</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > **Important notes**
 >
 > * <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 > * Postbacks won't be sent if the source is organic.
+
+<div id="integration-overview" />
 
 ## Integration overview
 
@@ -45,6 +49,8 @@ Minimum requirements - AppsFlyer SDK:
 * <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>
 
 On Android, integrating with Braze requires that the Braze <Anchor target="_blank" href="https://www.braze.com/docs/partners/advertising_technologies/attribution/appsflyer/#integration">Device ID</Anchor> (Braze unique user identifier) is populated in AppsFlyer Android SDK. This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -124,6 +130,8 @@ AppsFlyer.setAdditionalData(customData);
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Setting up Braze
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -142,10 +150,14 @@ AppsFlyer.setAdditionalData(customData);
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you must ***Activate the Partner*** to enable the setup of the integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -170,6 +182,8 @@ Once you have saved the configuration, AppsFlyer sends the following data to Bra
 * Adgroup name
 * Ad name
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Braze user installs. Use this section to define sending these postbacks.
@@ -179,6 +193,8 @@ AppsFlyer can send automatic postbacks to Braze user installs. Use this section 
 Select **Events attributed to any partner or organic** to send postbacks to Braze for any user that downloads the app.
 
 Click **Save.**
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -209,6 +225,8 @@ Ad Revenue is not supported in the integration with this partner.
 Permissions are not available for Braze.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Viewing user attribution data in Braze
 

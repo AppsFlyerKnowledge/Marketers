@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Quickly and effectively safeguard your marketing investments by following this step-by-step onboarding guide to maximize your Protect360 value within just 6 weeks.
 
+<div id="onboarding-timeline-and-what-to-expect" />
+
 ## **Onboarding timeline and what to expect?**
 
 This guide outlines a phased onboarding approach of 6 weeks:
@@ -30,6 +32,8 @@ This guide outlines a phased onboarding approach of 6 weeks:
 * **Optimization (weeks 3–5)**: Optimize based on initial insights.
 * **Reconciliation (weeks 5–6)**: Reconcile fraud data with ad partners.
 * **Advanced protection (week 6+) [Optional]**: Enable advanced fraud protection layers.
+
+<div id="about-protect360" />
 
 ## **About Protect360**
 
@@ -48,9 +52,13 @@ There are two ways to send in-app events data to AppsFlyer: SDK and Server-to-Se
 * **SDK**: No action required.
 * **Server-to-Server (S2S)**: Ensure events are sent via API3. <Anchor target="_blank" href="/marketers/docs/bulletin-upgrading-the-appsflyer-s2s-api">Learn more about how to do this here.</Anchor>
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If unsure which one you use, confirm with your development or marketing operations teams
+
+<div id="fraud-protection-studio-settings" />
 
 #### **Fraud Protection Studio settings**
 
@@ -61,6 +69,8 @@ Understanding these differences and available options is key to making informed 
 * **Implemented** (default): Automatically blocks fraudulent activity in real-time or marks it as post-attribution fraud if detected post-install. This is ideal if immediate fraud prevention aligns with your goals.
 * **Tagged**: Fraud is detected and tagged but remains valid for attribution, allowing you to analyze and review without automatically blocking. Choose this if you prefer flexibility and deeper initial analysis before implementing.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > You can switch (<Anchor target="_blank" href="/marketers/docs/user-management">Admin only</Anchor>) between **Implemented** and **Tagged** modes anytime to match your evolving business objectives. <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio#key-concepts">Learn more here</Anchor>.
@@ -69,19 +79,27 @@ Understanding these differences and available options is key to making informed 
 
 Tip: At this stage, when your team is getting familiar with Protect360, we strongly recommend visiting the <Anchor target="_blank" href="/marketers/docs/beta-fraud-protection-studio#app-detection-evaluation">**App detection evaluation**</Anchor> card within the Fraud Protection Studio to test and understand these settings on the app level.
 
+<div id="data-connection-setup" />
+
 #### **Data connection setup**
 
 You can export Protect360 data in three ways: <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#about-protect360-raw-data-reports">Raw Data Report</Anchor>, <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>, or <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>. Whichever way you choose, it is important to configure your data connections properly to ensure accurate fraud data reporting and effective analysis.
 
 <Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > In order to get the full value of Protect360, export the <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports#postattribution-reports">Post-attribution report</Anchor> every 8th of every month, so you can reconsolidate with partners.
 
+<div id="how-to-display-hijacked-installs-correctly-in-your-bi" />
+
 #### **How to display hijacked installs correctly in your BI**
 
 For greater alignment and granularity of fraud protection data within your systems, you may u**se Raw Data Reports, Pull APIs, or Data Locker to properly view hijacked installs within your BI.**
+
+<div id="raw-data-report" />
 
 #### **Raw Data Report**
 
@@ -96,6 +114,8 @@ To display hijacked installs properly in your BI:
 * Organic - Change attribution to organic
 * Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > To get more insight about your **Tagged** data, you can view the 4 raw data reports:
@@ -106,6 +126,8 @@ To display hijacked installs properly in your BI:
 > * Tagged post attribution in-app events
 
 ![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
+
+<div id="pull-api" />
 
 #### **Pull API**
 
@@ -120,6 +142,8 @@ To display hijacked installs properly in your BI:
 * Organic - Adjust attribution to organic
 * Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
 
+<div id="data-locker" />
+
 #### **Data Locker**
 
 To display hijacked installs properly in your BI:
@@ -133,15 +157,21 @@ To display hijacked installs properly in your BI:
 * Organic - Adjust attribution to organic
 * Contributor1, contributor2, contributor3, etc. - Correct attribution to the specified media source.
 
+<div id="validation-rules" />
+
 #### **Validation rules**
 
 Validation rules allow you to add a business logic layer to your fraud protection, tailored to your marketing strategy. With validation rules, you can define which installs are considered valid or invalid based on a variety of parameters across multiple use cases.
 
 Contact your Customer Success Manager or Account Manager to learn more about best practices recommended for your vertical.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > For the rules to be as effective as possible, it’s recommended to review your UA / marketing / media buying strategy and assess which types of installs or app events match your efforts, to allow or block per your needs. For example, if you do not promote your app in country (GEO) X, you can create a rule to automatically block any such activity arriving from GEO X. You can create multiple rules to align protection to your marketing strategy.
+
+<div id="working-with-dashboards" />
 
 #### **Working with dashboards**
 
@@ -155,6 +185,8 @@ The <Anchor target="_blank" href="/marketers/docs/protect360-dashboard">Protect3
 
 <Accordion title="Optimization (weeks 3–5)">
 
+<div id="campaign-optimization" />
+
 #### **Campaign optimization**
 
 In this step, it is time to optimize your campaign to ensure you are getting the most out of Protect360. To do this, you should:
@@ -162,15 +194,21 @@ In this step, it is time to optimize your campaign to ensure you are getting the
 * See [best practices](/docs/protect360-onboarding-guide#best-practices)
 * [Review your Fraud Protection settings](/docs/protect360-onboarding-guide#review-your-fraud-protection-settings)
 
+<div id="best-practices" />
+
 #### Best practices
 
 * Combine real-time and post-attribution data to evaluate campaign performance based on quality (retention, in-app events, etc) and fraud.
 * Optimize campaigns based on site\_id or subsite\_id.
 * Analyze partner-specific fraud rates and types.
 
+<div id="review-your-fraud-protection-settings" />
+
 #### Review your Fraud Protection settings
 
 Review your [Fraud Protection Studio settings](/docs/protect360-onboarding-guide#fraud-protection-studio-settings) to ensure they still align with your objectives.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -181,6 +219,8 @@ Review your [Fraud Protection Studio settings](/docs/protect360-onboarding-guide
 <div id="reconciliation-weeks-5-6" />
 
 <Accordion title="Reconciliation (weeks 5–6)">
+
+<div id="fraud-data-reconciliation" />
 
 #### **Fraud data reconciliation**
 
@@ -195,6 +235,8 @@ Download your <Anchor target="_blank" href="/marketers/docs/protect360-anti-frau
 <div id="advanced-protection-setup-week-6--optional" />
 
 <Accordion title="Advanced protection setup (week 6+) [optional]">
+
+<div id="advanced-security-module" />
 
 #### **Advanced Security Module**
 

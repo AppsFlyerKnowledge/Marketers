@@ -24,15 +24,21 @@ x-zendesk:
 ---
 > **At a glance:** The AppsFlyer SDK lets you safely advertise your app, attribute, deep-link, and collect behavioral information of your mobile users. You can set up and start working with any ad network and/or platform in a manner of minutes—not weeks or months!
 
+<div id="how-to-install-and-update-the-appsflyer-sdk" />
+
 ## How to install and update the AppsFlyer SDK?
 
 To learn how to install and update the AppsFlyer SDK, please see <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">the Dev Hub</Anchor>. **Note**: Upgrading the SDK involves releasing a new version of your app to the stores.
+
+<div id="is-it-hard-to-integrate-the-appsflyer-sdk" />
 
 ## Is it hard to integrate the AppsFlyer SDK?
 
 In less than an hour, an experienced developer can ready apps for attribution with AppsFlyer. Then, they only need a few minutes per app.
 
 Check out the AppsFlyer SDK integration guides for <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">Android</Anchor>, <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>, Unity, or these <Anchor target="_blank" href="/marketers/docs/other-platforms">other platforms</Anchor>.
+
+<div id="does-the-appsflyer-sdk-affect-app-download-time" />
 
 ## Does the AppsFlyer SDK affect app download time?
 
@@ -41,11 +47,15 @@ AppsFlyer SDK packages are designed and coded for a *close-to-zero* effect on a
 * **Android SDK:** ~300KB
 * **iOS SDK:** ~3.4MB
 
+<div id="does-the-appsflyer-sdk-affect-app-performance" />
+
 ## Does the AppsFlyer SDK affect app performance?
 
 AppsFlyer SDK APIs are primarily *setter*/*getter* or fast asynchronous web service methods that send/receive data from AppsFlyer servers. This means SDK APIs have a negligible effect on app performance.
 
 In other words, **the AppsFlyer SDK has no effect on app performance or user experience**.
+
+<div id="can-i-record-in-app-events-that-occur-outside-my-app" />
 
 ## Can I record in-app events that occur outside my app?
 

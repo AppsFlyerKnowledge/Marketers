@@ -30,6 +30,8 @@ x-zendesk:
 
 > **At a glance:** Get selected LTV, activity, retention, cohort, and Protect360 campaign performance KPIs by API, in CSV or JSON format. Select 1 or more apps.
 
+<div id="master-apiuser-acquisition-metrics-via-api" />
+
 ## Master API—user acquisition metrics via API
 
 Master API:
@@ -251,6 +253,8 @@ To use Master API, you define the data that you want to view (similar to the imp
 
    </Accordion>
 
+   <div id="calculated-kpis" />
+
    #### Calculated KPIs
 
    In addition, to the KPIs described previously, you can add calculated KPIs to your master API reports. This enables you to have your own calculated reports included in your Master API reports.
@@ -260,6 +264,8 @@ To use Master API, you define the data that you want to view (similar to the imp
    Standard arithmetic operators are supported: addition (+) encoded as %2b, subtraction (-), multiplication (*), division (/) encoded as %2f.
 
    Calculated KPI field keys **must** start with "calculated\_kpi\_", followed by any valid string, such as, "calculated\_kpi\_purchaserate".
+
+   <div id="example" />
 
    > 📄 **Example**
    >
@@ -319,6 +325,8 @@ To use Master API, you define the data that you want to view (similar to the imp
    | timezone | Timezone used is according to the app-specific timezone | timezone=preferred | No |
 
    </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

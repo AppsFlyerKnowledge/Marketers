@@ -25,9 +25,13 @@ x-zendesk:
 
 ![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
 
+<div id="about-experiment-alerts" />
+
 ## About experiment alerts
 
 Once you've <Anchor target="_blank" href="/marketers/docs/run-an-incrementality-for-remarketing-experiment">set up an Incrementality experiment</Anchor>, you may come across alerts on the Incrementality dashboard. These alerts are designed to help you identify issues that can compromise the integrity and accuracy of your experiment results. They provide specific information about problems and suggest actions that can be taken to address them, to ensure accurate experiment results. This article provides a comprehensive overview of the different types of alerts, as well as the recommended actions for getting the issues resolved.
+
+<div id="alert-types" />
 
 ## Alert types
 
@@ -37,6 +41,8 @@ Experiment alerts fall into the following categories:
 
 <Accordion title="Experiment setup">
 
+<div id="audience-deletion-or-control-group-removal" />
+
 #### Audience deletion or control group removal
 
 Experiments whose connected audiences have been deleted or whose split audience control group has been removed. In both these scenarios, a 404 error will appear when visiting the experiment page.
@@ -44,6 +50,8 @@ Experiments whose connected audiences have been deleted or whose split audience 
 **To resolve this and restore the experiment results:**  
 If the **audience was deleted** - Please contact your CSM who will have it restored manually.  
 If the **control group was removed** - Please split the audience again and set the control group to the exact same percentage as it was before removal.
+
+<div id="more-suitable-campaign-srns-only" />
 
 #### More suitable campaign? (SRNs only)
 
@@ -53,6 +61,8 @@ A "more suitable campaign" is a campaign, currently active during the experiment
 **Actions to take:** Check if the right campaign is linked.
 
 **Note:** It's also a good idea to make sure the audience is not included as part of the targeting configuration of other campaigns.
+
+<div id="no-impressions-non-srns-only" />
 
 #### No impressions (Non-SRNs only)
 
@@ -67,6 +77,8 @@ This alert describes a situation in which for some reason we're not receiving im
 <div id="experiment-background-environment" />
 
 <Accordion title="Experiment background environment">
+
+<div id="background-campaign-one-or-multiple" />
 
 #### Background campaign (one or multiple)
 
@@ -91,6 +103,8 @@ It's not unusual for unrelated campaigns to exist in the background, but if thos
 
 <Accordion title="Linked campaign performance">
 
+<div id="audience-overlap" />
+
 #### Audience overlap
 
 The connected campaign is targeting overlapping audiences. This means that the linked campaign's targeting configuration contains more than one audience.  
@@ -98,6 +112,8 @@ Additionally, the multiple audiences in the tested campaign configuration overla
 
 **Actions to take:**  
 Update the campaign's targeting to include the tested audience only and remove any additional audiences.
+
+<div id="control-group-is-targeted" />
 
 #### Control group is targeted
 
@@ -114,11 +130,15 @@ Please check the common scenarios listed above, and contact your CSM if unsure. 
 
 If the breach is relatively small, it's enough to make sure the control group targeting has stopped. Track the warning in the experiment’s UI and check to see if the alert still appears after a few days.
 
+<div id="detailed-targeting-toggle-is-enabled" />
+
 #### Detailed targeting toggle is enabled
 
 Detailed targeting is a feature on certain ad networks that lets you fine-tune who sees your ads. This alert will appear if the campaign’s detailed targeting toggle is enabled. When enabled it will allow the campaign to target outside of the configured audience.
 
 **Actions to take:** Verify that the detailed targeting toggle is off on the partner-side campaign configuration.
+
+<div id="low-activity" />
 
 #### Low activity
 
@@ -126,12 +146,16 @@ The campaign is not delivering ads or is delivering very few ads to the targeted
 
 **Actions to take:** Investigate the problem on the media partner side to understand why the campaign isn't delivering ads.
 
+<div id="multiple-audiences-connected" />
+
 #### Multiple audiences connected
 
 The campaign’s targeting configuration includes multiple audiences. This may lead to targeting outside the tested audience, or the control group, ultimately impacting the test results.
 
 **Actions to take:**  
 A best practice for Incrementality testing is that the tested campaign should target only one audience.
+
+<div id="out-of-audience-targeting" />
 
 #### Out-of-audience targeting
 

@@ -31,6 +31,8 @@ x-zendesk:
 ---
 > **At a glance:** Consider the additional SDK functionalities that are available and work with your developer to implement APIs such as uninstall measurement, user invite attribution, push notifications, and privacy settings.
 
+<div id="additional-attribution-methods" />
+
 ## Additional attribution methods
 
 Consider these additional attribution methods if you plan to measure TV, uninstalls, or pre-installed apps.
@@ -61,6 +63,8 @@ With AppsFlyer, you can easily attribute installs of pre-installed apps. When us
 
 </Accordion>
 
+<div id="sessions" />
+
 ## Sessions
 
 Measure user engagement with your app by counting the number of user sessions during a given period.
@@ -82,6 +86,8 @@ Setting a **high value to the custom time between launches can impair APIs** t
 You can <Anchor target="_blank" href="/marketers/docs/measure-sessions#session-reporting-by-the-app-sdk">manually report user sessions</Anchor>. This can be useful for utility apps that run in the background.
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## Owned media
 
@@ -159,6 +165,8 @@ Developer documentation is available as follows:
 **Tip!** <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">OneLink Smart Script</Anchor> can help app owners convert website visitors to app users.
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## User privacy
 

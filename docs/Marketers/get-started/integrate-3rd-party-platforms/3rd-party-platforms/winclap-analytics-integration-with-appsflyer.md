@@ -22,13 +22,19 @@ x-zendesk:
 ---
 > **At a glance:** Winclap Analytics, an AppsFlyer integrated partner, uses AppsFlyer attribution data for BI and post-attribution analytics.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
+<div id="setting-up-winclap" />
+
 ## Setting up Winclap
 
 The setup is done from the **Active Integrations** page, but to find the partner you must first go to the <Anchor target="_blank" href="/marketers/docs/partner-integrations">marketplace</Anchor>.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -50,10 +56,14 @@ Winclap Analytics configuration makes use of the ***Integration*** tab only.
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you must toggle ON the ***Activate Partner*** toggle to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -85,6 +95,8 @@ Once this configuration is saved, AppsFlyer sends the following data to Winclap 
 * App version
 * App name
 * Install time
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 

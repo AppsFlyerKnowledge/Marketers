@@ -25,9 +25,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-insider" />
 
 ## Setting up Insider
 
@@ -49,10 +53,14 @@ x-zendesk:
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 This toggle must be enabled for as long as you work with the partner.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -62,11 +70,15 @@ Insider connects with AppsFlyer via a unique partner identifier.
 
 ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Insider following user installs. Use this section to define the source of the users that the postbacks are sent to for each event. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 **To send postbacks for any user that downloads the app to Insider**, select **All media sources, including organic**.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -89,6 +101,8 @@ In this section, you map AppsFlyer events with the partner via postbacks. Learn 
    * **Values & no revenue:** sends all the parameters excluding the revenue value.
    * **Values & revenue**: sends all the event parameters, including the revenue value (if exists in the event).
 8. To complete the integration configuration, click **Save Integration**.
+
+<div id="note" />
 
 > 📘 **Note**
 >

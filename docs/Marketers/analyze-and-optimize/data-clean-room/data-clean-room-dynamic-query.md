@@ -25,7 +25,11 @@ x-zendesk:
 
 > **At a glance:** Run custom DCR queries in real time on your attribution data in the AppsFlyer system, your custom sources, or a combination. Preview the results of your queries or download the full results.
 
+<div id="overview" />
+
 ## Overview
+
+<div id="why-use-dynamic-query" />
 
 ### Why use Dynamic Query?
 
@@ -36,6 +40,8 @@ Dynamic Query gives you the ability to run ad hoc, custom queries on your DCR da
 
 Dynamic Query is available to **all DCR customers,** giving you the ability to run queries and preview the results without using credits from your DCR package. You'll only be charged credits if you decide to download the full results. In this way, you can be sure you've set up your queries correctly and that you'll get the answers you need before you incur any charges.
 
+<div id="query-language-and-dialect" />
+
 ### Query language and dialect
 
 Dynamic Query utilizes SQL **(Spark SQL dialect)** and supports:
@@ -44,6 +50,8 @@ Dynamic Query utilizes SQL **(Spark SQL dialect)** and supports:
 * <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/api/sql/">Standard SQL functions</Anchor>
 * User-defined functions (UDFs), upon customer request
   * If you require a non-standard SQL function, contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com,) and we'll make every effort to add it.
+
+<div id="available-sources" />
 
 ### Available sources
 
@@ -60,9 +68,13 @@ You can query these sources individually, or [combine 2 or more](#combining-sour
 
 Based on the types of sources used in a query, [rules are applied](#preserving-privacy) to ensure the strict preservation of user privacy.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Currently, Dynamic Query does not query attribution data or return results from Meta (Facebook, Instagram, etc.) To query this data, set up <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-reports">DCR reports</Anchor>.
+
+<div id="preserving-privacy" />
 
 ### Preserving privacy
 
@@ -92,12 +104,18 @@ To ensure that Dynamic Query maintains strict compliance with DCR privacy standa
 
 To learn more about the *do*s and *don't*s of constructing queries, see samples and explanations of [valid](#sample-queries) and [invalid](#invalid-queries) queries.
 
+<div id="accessing-dynamic-query" />
+
 ### Accessing Dynamic Query
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 2. From the top menu, select the **Dynamic Query** tab.
 
+<div id="reference" />
+
 ## Reference
+
+<div id="query-reference" />
 
 ### Query reference
 
@@ -156,6 +174,8 @@ Attribution data in the AppsFlyer system exists in 8 different tables:
 | impressions | An ad is viewed by an app user or website visitor<ul><li>Data available for non-SRN ad networks only</li></ul> | Prior 5 days + current day |
 
 </Accordion>
+
+<div id="sample-queries" />
 
 ### Sample queries
 
@@ -248,6 +268,8 @@ GROUP BY conversion_type
 ```
 
 </Accordion>
+
+<div id="invalid-queries" />
 
 ### Invalid queries
 

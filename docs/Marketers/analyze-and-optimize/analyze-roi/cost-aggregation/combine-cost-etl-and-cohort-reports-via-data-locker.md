@@ -24,6 +24,8 @@ x-zendesk:
 
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
+<div id="about-combining-cost-etl-and-cohort-reports" />
+
 ## About combining Cost ETL and cohort reports
 
 Cost ETL reports and cohort reports via Data Locker (regular and advanced aggregated) each have their own unique qualities. For example, Cost ETL reports include impression, click, and cost data, while cohort reports include detailed attribution, in-app event, and revenue data.
@@ -35,6 +37,8 @@ Combined, they:
 * Provide the full picture of your marketing performance, with the best available freshness, accuracy, and granularity.
 * Match your internal BI to the data you see in AppsFlyer dashboards.
 * Allow you to calculate important metrics, like return on ad spend (ROAS) and cost per action (CPA).
+
+<div id="queries-to-combine-reports" />
 
 ## Queries to combine reports
 
@@ -58,6 +62,8 @@ The sections that follow provide the queries and considerations you need to take
   * There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and Advanced aggregated cohort reports update multiple times a day.
   * Advanced aggregated cohort reports include users converted in the past 1,095 days. If they converted before that, they aren't taken into account.
   * Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Advanced aggregated cohort reports include versioned (UTC) and versioned timezone reports. **Best practice**: Combine Cost ETL and cohort timezone versioned reports.
+
+<div id="query" />
 
 #### Query
 
@@ -162,6 +168,8 @@ GROUP BY ALL;
   * There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and cohort reports via Data Locker update once per day.
   * Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Cohort reports via Data Locker use UTC.
 
+<div id="query-1" />
+
 #### Query
 
 ```sql
@@ -247,6 +255,8 @@ GROUP BY ALL;
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

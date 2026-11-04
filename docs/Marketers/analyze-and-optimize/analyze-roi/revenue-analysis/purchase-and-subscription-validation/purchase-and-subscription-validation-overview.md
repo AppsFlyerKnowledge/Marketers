@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Understand how AppsFlyer validates purchases and subscriptions, and compare the two available solutions: Receipt validation and ROI360 store revenue.
 
+<div id="about-purchase-and-subscription-validation" />
+
 ## About purchase and subscription validation
 
 Purchase and subscription validation is essential for ensuring the accuracy and reliability of your revenue data. When users make purchases in your app, whether one-time or subscription-based, validating those transactions with the app stores (Apple App Store and Google Play) ensures that only legitimate, paid transactions are measured and attributed.
@@ -30,7 +32,11 @@ AppsFlyer offers two solutions that validate and measure in-app purchases and su
 
 The article provides a high-level introduction to each solution and [a feature comparison](#compare-receipt-validation-and-roi360-store-revenue) to help you determine which option is right for your app.
 
+<div id="the-two-solutions-for-purchase-and-subscription-validation" />
+
 ## The two solutions for purchase and subscription validation
+
+<div id="receipt-validation" />
 
 ### Receipt validation
 
@@ -45,7 +51,11 @@ For more information, see:
 * <Anchor target="_blank" href="/marketers/docs/about-receipt-validation">About Receipt validation</Anchor>
 * <Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation">Set up Receipt validation</Anchor>
 
+<div id="roi360-store-revenuepremium" />
+
 ### ROI360 store revenue Premium
+
+<div id="important" />
 
 > 🚧 **Important**
 >
@@ -61,6 +71,8 @@ For more information, see:
 
 * <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 store revenue</Anchor>
 * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue">Set up ROI360 store revenue</Anchor>
+
+<div id="compare-receipt-validation-and-roi360-store-revenue" />
 
 ## Compare Receipt validation and ROI360 store revenue
 

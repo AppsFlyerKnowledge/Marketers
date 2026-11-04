@@ -27,6 +27,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)
 
+<div id="web-server-to-server-events-api-for-pba" />
+
 ## Web Server-to-server events API for PBA
 
 The Web-S2S API for People-Based Attribution complements the <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide">Web SDK</Anchor> allowing marketers to report events occurring on their websites but outside the scope of the Web SDK. For example, a visitor to the website (a web user), triggers an online payment event, processed by backend systems. After processing, the backend, using the S2S API, reports the event to AppsFlyer.
@@ -36,6 +38,8 @@ Events sent by the S2S API:
 * are recorded similarly to events reported by the Web SDK
 * are included in PBA dashboards if set as conversion events
 * populate PBA raw data with *event\_source field* set to *web S2S*
+
+<div id="api-use-instructions" />
 
 ## API use instructions
 
@@ -64,6 +68,8 @@ API implementation requires the following credentials available in the dashboard
    * ***Brand bundle ID***
    * ***Web dev key***
 
+<div id="web-s2s-api-basics" />
+
 #### Web S2S API basics
 
 | Path | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>`bundleId`: Is the app bundle ID available in the dashboard.</li><li>`method` being one of the following:<ul><li>[event](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method): send for reportable backend events</li><li>[setCuId:](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) send when associating afUserId with your CUID</li></ul></li></ul> |
@@ -85,6 +91,8 @@ API implementation requires the following credentials available in the dashboard
 | Use case | On associating a CUID with a visitor to your website. For example, any time you match the web `afUserId` with your customer user ID. Doing so enables PBA to match data from various sources. This is similar to <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> on the website. |
 | Method path | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
 | Payload | The JSON payload consists of the parameters listed here. All parameters are mandatory.<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
+
+<div id="curl-example-setcuid" />
 
 #### Curl example setCuId
 
@@ -112,6 +120,8 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 </Accordion>
 
+<div id="event-method-details" />
+
 ## Event method details
 
 <div id="payload-parameters" />
@@ -123,12 +133,16 @@ Payload parameters are divided into user identifiers and event parameters.
 * User ID: You must send at least one user ID parameter.
 * Event: Send the mandatory parameters and optional parameters as needed.
 
+<div id="user-identifier-parameters-send-at-least-one-parameter" />
+
 #### User identifier parameters (send at least one parameter)
 
 | User ID Parameter | Description |
 | --- | --- |
 | <span id="customeruserid"></span>customerUserId | <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">Customer user ID (CUID)</Anchor> is a unique identifier set by you.<ul><li>Use the identical identifier for events reported by any means to AppsFlyer. Meaning the same identifier is used in the Web SDK, mobile SDK, and S2S APIs.</li><li><Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">Web SDK customer user ID</Anchor></li><li>Format: String</li><li>Example: `"customerUserId" : "663274"`</li><li>Populates raw data field: `customer_user_id`</li></ul> |
 | <span id="afuserid"></span>afUserId | The unique user ID assigned by the Web SDK to every user that visits your website. You will need to pass the cookie value to your backend servers.<ul><li>Cookie details:<ul><li>Name: afUserId</li><li>Value: set *afUserId* to this value</li><li>Domain: website-domain</li></ul></li><li>Example: `"afUserId" : "unique_cookie_uuid"`</li><li>Populates raw data field: `af_web_id`</li></ul> |
+
+<div id="event-parameters" />
 
 #### Event parameters
 
@@ -233,6 +247,8 @@ For testing purposes, send several events as follows:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="getting-the-web-dev-key" />
@@ -256,10 +272,14 @@ For testing purposes, send several events as follows:
 * The `afUserId`, is a unique identifier, set by the Web SDK when a user first visits your site.
 * If you need `afUserId`use one of the methods that follow.
 
+<div id="get-afuserid-from-the-http-cookie-header" />
+
 #### **Get afUserId from the HTTP cookie header**
 
 * The `afUserId` is sent by the visitors browser on calls to your site.
 * Extract it from the HTTP cookie header if needed.
+
+<div id="viewing-afuserid-in-the-visitors-browser" />
 
 #### **Viewing afUserId in the visitor's browser**
 

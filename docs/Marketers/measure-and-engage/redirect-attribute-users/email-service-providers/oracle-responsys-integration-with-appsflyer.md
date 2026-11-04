@@ -33,6 +33,8 @@ One of the challenges with ESPs is performing correct attribution and deep linki
 
 However, deep linking and click recording are still possible with ESPs that support Universal Links and App Links on top of their click recording domain. In addition, you can set up your own click domain to act as the click recording domain.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 * Configure your app to support <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking with OneLink</Anchor>.
@@ -52,9 +54,13 @@ However, deep linking and click recording are still possible with ESPs that supp
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Setting up Oracle Responsys click domain
 
 Follow this section to set up your click domain (click recording domain) in Oracle Responsys.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### Step 1: Set up a click domain in Oracle Responsys
 
@@ -65,6 +71,8 @@ To set up a click domain, follow Oracle Responsys official guide on how to <Anch
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 Once you set click domains in Link Tables, Responsys uses these domains to wrap OneLinks that you include in email campaigns. This way, Responsys can record clicks in their system while preserving OneLink and deep linking functionality.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Step 2: Give Responsys an AASA (iOS) and an Asset Links file (Android)
 
@@ -96,11 +104,15 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Setting up your app
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Step 1 for Android: Setting up your app to support App Links">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Adding the click domain to the activity in the Android manifest
 
@@ -118,6 +130,8 @@ In the Android manifest, add the click domain host and any prefix in the activit
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### Setting up the app to resolve click domains
 
@@ -146,6 +160,8 @@ To resolve click domains:
 
 This section discusses how to set up your app to support Universal Links.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Associating click domains in Xcode
 
 1. In Xcode, click on your project.
@@ -155,6 +171,8 @@ This section discusses how to set up your app to support Universal Links.
 4. Click the + sign and add your click domain. For example, applinks:click.example.com.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### Step 2: Setting up the app to resolve click domains
 
@@ -225,6 +243,8 @@ To resolve click domains:
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## Sending your first email
 
 1. Create a OneLink URL in the Link Management page (or manually).
@@ -244,6 +264,8 @@ To resolve click domains:
 
    At this stage, Responsys wraps the above link with the click domain that you set in the previous steps. Any click on the click domain redirects to the OneLink attribution link. If the app is installed on the user's device, the click domain deep links into the app.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -255,6 +277,8 @@ To resolve click domains:
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Testing your links
 

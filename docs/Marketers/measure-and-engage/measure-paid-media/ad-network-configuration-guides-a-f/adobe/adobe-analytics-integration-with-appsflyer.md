@@ -26,19 +26,27 @@ x-zendesk:
 ---
 > **At a glance:** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (formerly Omniture) is a set of tools for predictive and real-time analytics that can be integrated into third-party sources. It includes the Marketing Reports and Analytics (SiteCatalyst), Ad hoc analysis (Adobe Discover), and Insight applications to help create a holistic view of business activities by transforming customer interactions into insights.
 
+<div id="overview" />
+
 ## Overview
 
 This integration consists of a two-way data flow between Adobe and AppsFlyer. For the integration to be successful, this integration requires code implementation in your app. Both AppsFlyer and Adobe requirements must be met for the integration to be fully successful.
 
+<div id="setting-up-adobe-analytics-integration" />
+
 ## Setting up Adobe Analytics integration
 
 If you are using Adobe Analytics Report Suite for overall campaign performance analysis and segment creation, then the AppsFlyer integration with Adobe Analytics enables the automatic transfer of attribution data from AppsFlyer to Adobe to help you achieve your goals.
+
+<div id="prerequisites" />
 
 ### Prerequisites:
 
 * Setting up <Anchor target="_blank" href="https://developer.adobe.com/client-sdks/documentation/">Adobe Experience Platform mobile SDK docs</Anchor>
 * <Anchor target="_blank" href="https://experienceleague.adobe.com/en/docs/id-service/using/home">Marketing Cloud Visitor ID</Anchor> or Experience cloud ID service
 * Three eVars in each report suite that can be used for the sole purpose of this integration
+
+<div id="step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer" />
 
 ### Step 1: Share Adobe Experience Cloud ID (ECID, Marketing Cloud ID, or Visitor ID) with AppsFlyer.
 
@@ -138,6 +146,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 
 </Accordion>
 
+<div id="step-2-configure-adobe-analytics-in-appsflyer" />
+
 ### Step 2: Configure Adobe analytics in AppsFlyer
 
 **Prerequisite:** Before setting up the integration, make sure to [pass the Adobe Marketing Cloud Visitor ID to the AppsFlyer SDK](/docs/adobe-analytics-integration-with-appsflyer#step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer).
@@ -164,9 +174,13 @@ Once saved, AppsFlyer sends the following data to Adobe Analytics for every orga
 * Media Source
 * Campaign Name
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > In accordance with the terms of service of both Meta ads and X Ads, AppsFlyer is prohibited from sharing user-level data with third parties. This means that Meta ads and X Ads installs are sent as organic.
+
+<div id="step-3-map-data-to-evars-in-adobe-analytics" />
 
 ### Step 3: Map data to eVars in Adobe Analytics
 
@@ -182,6 +196,8 @@ AppsFlyer context data variables mapped accordingly:
 
 Should you have issues with mapping AppsFlyer context data variables through processing rules, contact your Adobe account team for further support
 
+<div id="step-4-optional-set-up-your-marketing-channel" />
+
 ### Step 4 [optional]: Set up your marketing channel
 
 See <Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">Adobe Analytics documentation</Anchor> on how to set up your marketing channel on their platform. Make sure to select the following fields under the identifying rules:
@@ -189,6 +205,8 @@ See <Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analyt
 1. "The conversion variable value set by Adobe's web beacon": Select **AppsFlyer** and **Exists**.
 2. "Identify the channel as": Select **Mobile App Attribution**.
 3. "Set the channel's value to:" Select **AppsFlyer Campaign**.
+
+<div id="domain-and-security-details" />
 
 ## Domain and security details
 

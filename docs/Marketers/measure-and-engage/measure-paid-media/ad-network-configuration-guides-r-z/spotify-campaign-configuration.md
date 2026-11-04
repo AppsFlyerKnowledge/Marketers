@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
 
+<div id="setting-up-spotify" />
+
 ## Setting up Spotify
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -43,6 +45,8 @@ Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-int
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation rules</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">general settings</Anchor> step in the Integration tab is **mandatory** for all partners.
@@ -53,6 +57,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activatio
 <Accordion title="Integration tab">
 
 The Integration tab is divided into different sections as described below.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -99,6 +105,8 @@ Permissions can be granted only to Spotify employees who have an ad network team
 1. Click **Add team member.**
 2. Enter the ad network team member's email.
 3. Click **Add**.
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >

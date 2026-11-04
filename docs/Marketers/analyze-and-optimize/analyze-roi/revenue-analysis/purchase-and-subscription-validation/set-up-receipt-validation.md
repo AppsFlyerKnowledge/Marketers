@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Receipt validation measures revenue from in-app purchases and subscriptions, and verifies it with the app stores, ensuring accurate Return on Ad Spend (ROAS) results.
 
+<div id="upgrade-to-new-receipt-validation" />
+
 ## Upgrade to new Receipt validation
 
 The legacy Receipt validation will be shut down on **September 7, 2026**, see <Anchor target="_blank" href="/marketers/docs/bulletin-legacy-receipt-validation-is-deprecated">Bulletin: Legacy Receipt validation is deprecated</Anchor>. If your app uses the legacy Receipt validation, migrate to the new one by performing the setup steps below. Before you start, review the key differences and prepare the migration.
@@ -68,7 +70,11 @@ For more information and setup instructions, see <Anchor target="_blank" href="/
 
 </Accordion>
 
+<div id="overview" />
+
 ## Overview
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -83,6 +89,8 @@ To set up Receipt validation, complete the following steps in order:
 3. [Test validateAndLog SDK API implementation](#step-3-verify-sdk-implementation): Perform sandbox test purchases and subscriptions on iOS and Android to verify that Receipt validation events are generated and correctly recorded by AppsFlyer.
 4. [Verify and update settings](#step-4-verify-and-update-settings): Confirm that the product type is set to Receipt validation and review store key and SDK integration statuses to ensure accurate, ongoing revenue measurement.
 5. [Release the app versions with the validateAndLog SDK API](#step-5-release-the-app-versions-with-the-validateandlog-sdk-api): Release updated app versions with the `validateAndLog` SDK API integrated, ensuring sandbox flags are disabled and required in-app events are not blocked by validation rules.
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## Step 1 (iOS) Set up App Store Connect keys
 
@@ -138,6 +146,8 @@ To set iOS credentials, follow these steps:
 5. Click **Save and Next**.
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## Step 1 (Android). Set up service account key and permissions
 
@@ -250,6 +260,8 @@ Upload and validate the Google JSON key you downloaded in [step 1.2](#12-config
 
 </Accordion>
 
+<div id="step-2-implement-sdk" />
+
 ## Step 2. Implement SDK
 
 In this step, you prepare your developers to integrate the SDK `validateAndLog` API, and set up a sandbox environment for testing. The minimum SDK versions that support the latest `validateAndLog` API are **6.17.5** for Android and **6.17.8** for iOS.
@@ -266,6 +278,8 @@ To implement the validateAndLog SDK API, follow these steps:
 
    This message provides all the information your developers need to complete the integration and begin testing.
 3. Click **Next**. The **Verify SDK implementation** step is opened.
+
+<div id="step-3-verify-sdk-implementation" />
 
 ## Step 3. Verify SDK implementation
 
@@ -322,6 +336,8 @@ In a sandbox environment:
 
 </Accordion>
 
+<div id="step-4-verify-and-update-settings" />
+
 ## Step 4. Verify and update settings
 
 After you have completed configuring the settings above and saved the above steps, you are redirected to the active configuration view, where you can verify or update the following settings:
@@ -332,6 +348,8 @@ After you have completed configuring the settings above and saved the above step
 
    * The **App Store key** setup
    * The **SDK integration** setup
+
+<div id="step-5-release-the-app-versions-with-the-validateandlog-sdk-api" />
 
 ## Step 5. Release the app versions with the validateAndLog SDK API
 

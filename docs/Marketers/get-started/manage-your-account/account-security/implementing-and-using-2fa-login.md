@@ -27,12 +27,16 @@ x-zendesk:
 ---
 > **At a glance:** Use two-factor authentication (2FA) to add an extra layer of security to the login process. Login credentials for account users are supplemented by Google or Microsoft Authenticator or SMS verification.
 
+<div id="highlights" />
+
 ## Highlights
 
 * 2FA is an optional feature activated by an admin user.
 * Options are **Google or Microsoft Authenticator** and **SMS verification.**
 * Activating/deactivating applies to all account users.
 * Account users at the time of activation will be permitted to log in and prompted to set up 2FA at their next login.
+
+<div id="-admin-managing-2fa" />
 
 ## ![admin.png](https://files.readme.io/d54680123b25ab7929285cebd778e0e74bd0d032df994b04d1bca106381c3dc6-360014518718.png) Admin: Managing 2FA
 
@@ -43,6 +47,8 @@ Only an admin user can activate, reset, or deactivate a user's 2FA settings.
 <Accordion title="Activate">
 
 If an admin activates **Google or Microsoft Authenticator** and **SMS verification**, account users can choose which method they prefer to use.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -87,6 +93,8 @@ If 2FA is deactivated, account users will log in using only their username and p
 4. Confirm deactivation.
 
 </Accordion>
+
+<div id="account-users-using-google-or-microsoft-authenticator" />
 
 ## Account users: Using Google or Microsoft Authenticator
 
@@ -133,6 +141,8 @@ Before using 2FA for the first time, every account user must download **Google o
 4. Click **Verify,** and you'll be redirected to the **My apps** page.
 
 </Accordion>
+
+<div id="account-users-using-sms-verification" />
 
 ## Account users: Using SMS verification
 

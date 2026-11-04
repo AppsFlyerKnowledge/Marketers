@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
+<div id="audiences-basics" />
+
 ## Audiences basics
 
 AppsFlyer Audiences lets you easily build audience segments and connect them to your owned and paid channels—so you can deliver tailored campaigns for better engagement and performance. And once your campaign’s been sent, you can view performance metrics in Audiences as well.
@@ -41,9 +43,13 @@ An audience is a segment of current or past users of your app that meet the spec
 
 All the information needed to upload audience data to a media partner is specified in a partner connection. You can have multiple connections for a single media partner (using different accounts, login information, etc.). In order to enable compliance with the privacy requirements of iOS 14.5 and other user privacy considerations, **Audiences allows you full control to determine which identifiers are shared with partners**, both at the account level and for each partner connection.
 
+<div id="audience-split-and-incrementality-testing" />
+
 ### Audience split and Incrementality testing
 
 <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality</Anchor> testing measures the real impact of your campaigns with A/B testing that accurately measures “incremental lift”—the difference between conversions that happened as a result of your marketing campaigns and those that would have happened anyway. AppsFlyer Audiences sets the stage for testing with an optional feature that splits the audience among selected media partners and a control group, so you can use the Incrementality dashboard to understand the true value of your campaigns.
+
+<div id="get-started" />
 
 ## Get started
 
@@ -57,6 +63,8 @@ Follow these steps to get started with Audiences:
 | 4 | Connect the audience to one or more media partners |
 | Optional | [Split the audience among partners and a control group](/docs/audiences-guide#audience-split-and-control-groups) |
 | Optional | <Anchor target="_blank" href="/marketers/docs/audiences-create-better-audiences-with-user-attribute-data">Import user attributes</Anchor> |
+
+<div id="create-and-manage-audiences" />
 
 ## Create and manage audiences
 
@@ -87,6 +95,8 @@ A Custom Audience is built from scratch using any rulesets and filters you wish.
 13. Complete defining the audience, then click **Next.**  
     The **Audience connection** window appears. This is where you [connect the audience to your media partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
+<div id="notes" />
+
 > 📘 **Notes**
 >
 > * You can have up to 100 active Custom/Suggested audiences at a time.
@@ -109,6 +119,8 @@ Choose from over 30+ audiences within the **categories of Acquire, Activate, Eng
 * Encourage purchase
 * Monetize purchasers
 * And a lot more…
+
+<div id="example-use-case" />
 
 > 📄 **Example use case**
 >
@@ -133,6 +145,8 @@ Choose from over 30+ audiences within the **categories of Acquire, Activate, Eng
    * **Customer ID**: Evaluates rules by grouping devices using the CUID (use this method only after you verify that your data has valid CUIDs.)
 10. If you wish to further customize the audience by adding additional [rulesets](/docs/audiences-guide#all-about-rulesets), you can do so if you wish by clicking **+ Filter**. When done, click **Next**.   
     The **Audience connection** window appears. This is where you [connect the audience to your media partners](/docs/audiences-guide#connect-an-audience-to-media-partners).
+
+<div id="notes-1" />
 
 > 📘 **Notes**
 >
@@ -189,6 +203,8 @@ Audience rule evaluation is performed using an app user identifier. Select from:
     * When building an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Learn more</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+
+<div id="example-device-id-vs-cuid" />
 
 > 📄 **Example: Device ID vs. CUID**
 >
@@ -348,6 +364,8 @@ Use the toggle that splits the audience among partners and a control group to ef
 
 </Accordion>
 
+<div id="all-about-rulesets" />
+
 ## All about rulesets
 
 Learn how to use rulesets to define your audiences.
@@ -373,11 +391,15 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 
 <Accordion title="Ruleset examples">
 
+<div id="example-location-based-rule" />
+
 > 📄 **Example: Location-based rule**
 >
 > Users from New York who uninstalled the app in the last month
 >
 > ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
+
+<div id="example-user-attributes-based-rule" />
 
 > 📄 **Example: User attributes-based rule**
 >
@@ -385,11 +407,15 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 >
 > ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
 
+<div id="example-revenue" />
+
 > 📄 **Example: Revenue**
 >
 > Users who installed the app during the last seven days, and spent $1
 >
 > ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
+
+<div id="example-owned-media-filter" />
 
 > 📄 **Example: Owned media filter**
 >
@@ -400,6 +426,8 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 > ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
 >
 > The audience can be used to re-engage these users with personalized messaging on either owned or paid media, or as an exclusion list to prevent them from seeing irrelevant or unnecessary ads when running campaigns.
+
+<div id="example-remarketing" />
 
 > 📄 **Example: Remarketing**
 >
@@ -421,7 +449,7 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 * There are various ruleset filter categories such as Events, Revenue, Geo, Attribution, User attributes, Devices, and Owned media.
 * Rules have different parameters and settings, as listed in the table below.
 
-<table><tbody><tr><td colspan="3"><h4><span id="events"></span>Events</h4><p><img alt="engagement_filter_with_A___B.jpg" src="https://files.readme.io/ea3063532ff666f6d8a0f90d55c86007d8a54b25017d93ed7bc19e0d727d9193-46335625077777.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Viewed an ad</li><li>Clicked an ad</li><li>Installed the app</li><li>Did not install the app</li><li>Launched the app</li><li>Did not launch the app</li><li>Uninstalled the app </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Time frame and Frequency </p></td></tr><tr><td colspan="3"><h4><span id="inapp-events"></span>In-app events</h4><p><img alt="in-app_event_filter.jpg" src="https://files.readme.io/1bb8a78b3c64ab8e0d01c1e2be63e9bdd00b2be2396335b3a01289b0b0837593-46335625078929.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Did event [<em>event name</em>]</li><li>Did not do event: [<em>event name]</em></li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Time frame and Frequency </p></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Event attribute + value:</p><ul><li>Is</li><li>Is not</li><li>Greater than</li><li>Less than</li><li><a href="./audiences-guide#contains-does-not-contain-logic">Contains</a></li><li><a href="./audiences-guide#contains-does-not-contain-logic">Does not contain</a></li></ul></td></tr><tr><td colspan="3"><p><br /><br /><strong><span id="h_01K5EHGKDPWS16HP9Q7KX9JXFY"></span>In-app event notes</strong><br /></p><ul><li>The in-app event list updates <a href="./about-data-freshness-and-timezone-support#daily-processing" target="_blank">daily.</a></li><li>If <strong>Did event</strong> is selected, and the in-app event has attributes associated with it, you can filter by the in-app-event attribute value. </li><li><p>In-app events, by default, are limited to 100 unique values per attribute. For example, if the event is "purchase" and the attribute is "content-type" there can only be 100 (or fewer) possible content types. However, numeric values are unlimited.<br/>If there are in-app event attributes (parameters) and values that don't appear in the list, you can add them manually by clicking on <strong>Add event attribute</strong> &gt; <strong>Add item</strong><br/> </p><p><strong><img alt="Add_item.jpg" src="https://files.readme.io/00d62c7edfa556c3ecb50842003fb64ecde848413f1b81fd100f3da7257bc38e-46335625079825.jpg"/></strong></p></li><li>All manually added event items must be entered as string type (text) only. Numeric values should not be added, and will not work correctly.</li><li>When a manually added event item is added, the "Estimated audience size" may not reflect accurately. <br/>If you require more than 100 attributes/values to appear in the list, you can also contact your CSM or send an email to hello@appsflyer.com.</li></ul><h4><strong><span id="contains-does-not-contain-logic"></span>Contains / Does not contain logic:</strong></h4><p><strong>Contains:</strong> Matches users whose event attribute values contain a specific word(s). Matching is partial and case-insensitive. For example, the keyword "bag" matches attributes such as "handbag" or "Bag".</p><p><strong>Does not contain:</strong> Matches users whose event attribute values do not contain the specified word(s). The matching logic is also partial and case-insensitive.</p><p><br /><br /><strong><span id="h_01K5EH9WVTEX56980MCR81ZAHH"></span>Contains logic notes</strong><br /></p><ul><li>Minimum keyword length: 2 characters.</li><li>Maximum allowed inputs per rule: 1 keyword per AND condition.</li><li>Numeric and special-character-only attributes are not supported.</li><li>Multilingual support includes accented and non-Latin characters (e.g., é, ü, Korean characters).</li><li>When using the "Contains" or "Does not contain" operators, estimated audience size and estimated upload size are unavailable. </li></ul></td></tr><tr><td colspan="3"><h4><span id="revenue::3358edf4"></span>Revenue</h4><p><img alt="revenue_filter.jpg" src="https://files.readme.io/e896abde88511e5675074d5e4d995ed810637be8327c7c157ddf65668839fd4a-46335625080209.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Total in-app purchases revenue</li><li>Total ad revenue</li><li>Total revenue </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Greater than</li><li>Less than </li></ul><p><strong>Definitions:</strong></p><ul><li><strong>Total in-app purchases revenue:</strong> total value of all events reported using the <code>af_revenue</code> parameter for a specific device/CUID</li><li><strong>Total ad revenue:</strong> total ad revenue generated by a specific device/CUID</li><li><strong>Total revenue:</strong> Total in-app purchases revenue + Total ad revenue</li></ul><p><strong>Notes:</strong></p><ul><li>To use the <strong>Total ad revenue</strong> and <strong>Total revenue</strong> filters, <a href="./roi360-guide-ad-revenue-attribution" target="_blank">Ad revenue attribution</a> must be implemented in your AppsFlyer account.</li><li>All revenue filter options are measured in USD.</li></ul></td></tr><tr><td colspan="3"><h4><span id="geo"></span>Geo</h4><p><img alt="location_filter.jpg" src="https://files.readme.io/62f6144d23ef23070e2d6d8891a420691633a466d1b8d76365b4d82f40c725c6-46335625081361.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Location </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p><strong>Location options</strong></p><ul><li>Country</li><li>State</li><li>City</li></ul></td></tr><tr><td colspan="3"><p><strong>Notes relating to location:</strong></p><ul><li>If you select multiple countries, you can't select states.</li><li>If you select multiple states, you can select cities.</li></ul></td></tr><tr><td colspan="3"><h4><span id="owned-media"></span>Owned media</h4><p><img alt="doctored_owned_media_image_with_app_specified__final_version_.jpg" src="https://files.readme.io/0d15fa734e11164e6e525e26c66291c52144586c8c35dad77a71e471cbf3326d-46335667621649.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Owned media source</li><li>Owned media campaign</li><li>Owned media ad set</li><li>Owned media ad</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Values such as:</p><ul><li>Email</li><li>SMS</li><li>Web</li><li>Social media (excluding paid advertising)</li><li>QR codes</li><li>Referrals</li><li>Specific media campaigns, ad sets, and ads</li></ul></td></tr><tr><td colspan="3"><p>You can build targeted audiences consisting of users who were attributed to specific owned media sources. Additionally, you can choose the level of granularity and target users who came from a specific owned media source, campaign, ad set, and/or individual ad.</p><p>Use the audiences you create to re-engage users with personalized messaging on either owned or paid media, or as exclusion lists to prevent them from seeing irrelevant or unnecessary ads when running user acquisition or re-engagement campaigns.</p></td></tr><tr><td colspan="3"><h4><span id="device"></span>Device</h4><p><img alt="device_filter.jpg" src="https://files.readme.io/184cd84f83b94c38f53ca5a9ef67a4f2c6ad8f8a78d832f6c7979a2c88f61cb5-46335667623441.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Device brand</li><li>Device model</li><li>App version</li><li>OS version</li><li>Carrier</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not </li></ul></td><td><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/> Selected value</td></tr><tr><td colspan="3"><h4><span id="attribution"></span>Attribution</h4><p><img alt="Attribution_filter.jpg" src="https://files.readme.io/c7aee01564562bc7d468d6b2bd59ff3d26a028d19382dfdbc35c3fe700f214e7-46335625087249.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Organic</li><li>Retargeting</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>False</li><li>True</li></ul></td><td> </td></tr><tr><td colspan="3"><h4><a href="./audiences-create-better-audiences-with-user-attribute-data" target="_blank"><span id="user-attributes"></span>User attributes</a></h4><p><img alt="user_attribute_filter.jpg" src="https://files.readme.io/add34f52509bf733f10364691e32ab88331a1caee4bbc4627fb665ec3826422d-46335625088145.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><p>User attribute name</p></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>String type<ul><li>Is</li><li>Is not</li></ul></li><li>Number type<ul><li>Is</li><li>Is greater than</li><li>Is lower than</li></ul></li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/><br/>For string: Select a value</p><p>For number: Enter a value</p></td></tr></tbody></table>
+<table><tbody><tr><td colspan="3"><h4 id="events"><span id="events"></span>Events</h4><p><img alt="engagement_filter_with_A___B.jpg" src="https://files.readme.io/ea3063532ff666f6d8a0f90d55c86007d8a54b25017d93ed7bc19e0d727d9193-46335625077777.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Viewed an ad</li><li>Clicked an ad</li><li>Installed the app</li><li>Did not install the app</li><li>Launched the app</li><li>Did not launch the app</li><li>Uninstalled the app </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Time frame and Frequency </p></td></tr><tr><td colspan="3"><h4 id="in-app-events"><span id="inapp-events"></span>In-app events</h4><p><img alt="in-app_event_filter.jpg" src="https://files.readme.io/1bb8a78b3c64ab8e0d01c1e2be63e9bdd00b2be2396335b3a01289b0b0837593-46335625078929.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Did event [<em>event name</em>]</li><li>Did not do event: [<em>event name]</em></li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Time frame and Frequency </p></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Event attribute + value:</p><ul><li>Is</li><li>Is not</li><li>Greater than</li><li>Less than</li><li><a href="./audiences-guide#contains-does-not-contain-logic">Contains</a></li><li><a href="./audiences-guide#contains-does-not-contain-logic">Does not contain</a></li></ul></td></tr><tr><td colspan="3"><p><br /><br /><strong><span id="h_01K5EHGKDPWS16HP9Q7KX9JXFY"></span>In-app event notes</strong><br /></p><ul><li>The in-app event list updates <a href="./about-data-freshness-and-timezone-support#daily-processing" target="_blank">daily.</a></li><li>If <strong>Did event</strong> is selected, and the in-app event has attributes associated with it, you can filter by the in-app-event attribute value. </li><li><p>In-app events, by default, are limited to 100 unique values per attribute. For example, if the event is "purchase" and the attribute is "content-type" there can only be 100 (or fewer) possible content types. However, numeric values are unlimited.<br/>If there are in-app event attributes (parameters) and values that don't appear in the list, you can add them manually by clicking on <strong>Add event attribute</strong> &gt; <strong>Add item</strong><br/> </p><p><strong><img alt="Add_item.jpg" src="https://files.readme.io/00d62c7edfa556c3ecb50842003fb64ecde848413f1b81fd100f3da7257bc38e-46335625079825.jpg"/></strong></p></li><li>All manually added event items must be entered as string type (text) only. Numeric values should not be added, and will not work correctly.</li><li>When a manually added event item is added, the "Estimated audience size" may not reflect accurately. <br/>If you require more than 100 attributes/values to appear in the list, you can also contact your CSM or send an email to hello@appsflyer.com.</li></ul><h4 id="contains--does-not-contain-logic"><strong><span id="contains-does-not-contain-logic"></span>Contains / Does not contain logic:</strong></h4><p><strong>Contains:</strong> Matches users whose event attribute values contain a specific word(s). Matching is partial and case-insensitive. For example, the keyword "bag" matches attributes such as "handbag" or "Bag".</p><p><strong>Does not contain:</strong> Matches users whose event attribute values do not contain the specified word(s). The matching logic is also partial and case-insensitive.</p><p><br /><br /><strong><span id="h_01K5EH9WVTEX56980MCR81ZAHH"></span>Contains logic notes</strong><br /></p><ul><li>Minimum keyword length: 2 characters.</li><li>Maximum allowed inputs per rule: 1 keyword per AND condition.</li><li>Numeric and special-character-only attributes are not supported.</li><li>Multilingual support includes accented and non-Latin characters (e.g., é, ü, Korean characters).</li><li>When using the "Contains" or "Does not contain" operators, estimated audience size and estimated upload size are unavailable. </li></ul></td></tr><tr><td colspan="3"><h4 id="revenue"><span id="revenue::3358edf4"></span>Revenue</h4><p><img alt="revenue_filter.jpg" src="https://files.readme.io/e896abde88511e5675074d5e4d995ed810637be8327c7c157ddf65668839fd4a-46335625080209.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Total in-app purchases revenue</li><li>Total ad revenue</li><li>Total revenue </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Greater than</li><li>Less than </li></ul><p><strong>Definitions:</strong></p><ul><li><strong>Total in-app purchases revenue:</strong> total value of all events reported using the <code>af_revenue</code> parameter for a specific device/CUID</li><li><strong>Total ad revenue:</strong> total ad revenue generated by a specific device/CUID</li><li><strong>Total revenue:</strong> Total in-app purchases revenue + Total ad revenue</li></ul><p><strong>Notes:</strong></p><ul><li>To use the <strong>Total ad revenue</strong> and <strong>Total revenue</strong> filters, <a href="./roi360-guide-ad-revenue-attribution" target="_blank">Ad revenue attribution</a> must be implemented in your AppsFlyer account.</li><li>All revenue filter options are measured in USD.</li></ul></td></tr><tr><td colspan="3"><h4 id="geo"><span id="geo"></span>Geo</h4><p><img alt="location_filter.jpg" src="https://files.readme.io/62f6144d23ef23070e2d6d8891a420691633a466d1b8d76365b4d82f40c725c6-46335625081361.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Location </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p><strong>Location options</strong></p><ul><li>Country</li><li>State</li><li>City</li></ul></td></tr><tr><td colspan="3"><p><strong>Notes relating to location:</strong></p><ul><li>If you select multiple countries, you can't select states.</li><li>If you select multiple states, you can select cities.</li></ul></td></tr><tr><td colspan="3"><h4 id="owned-media"><span id="owned-media"></span>Owned media</h4><p><img alt="doctored_owned_media_image_with_app_specified__final_version_.jpg" src="https://files.readme.io/0d15fa734e11164e6e525e26c66291c52144586c8c35dad77a71e471cbf3326d-46335667621649.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Owned media source</li><li>Owned media campaign</li><li>Owned media ad set</li><li>Owned media ad</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Values such as:</p><ul><li>Email</li><li>SMS</li><li>Web</li><li>Social media (excluding paid advertising)</li><li>QR codes</li><li>Referrals</li><li>Specific media campaigns, ad sets, and ads</li></ul></td></tr><tr><td colspan="3"><p>You can build targeted audiences consisting of users who were attributed to specific owned media sources. Additionally, you can choose the level of granularity and target users who came from a specific owned media source, campaign, ad set, and/or individual ad.</p><p>Use the audiences you create to re-engage users with personalized messaging on either owned or paid media, or as exclusion lists to prevent them from seeing irrelevant or unnecessary ads when running user acquisition or re-engagement campaigns.</p></td></tr><tr><td colspan="3"><h4 id="device"><span id="device"></span>Device</h4><p><img alt="device_filter.jpg" src="https://files.readme.io/184cd84f83b94c38f53ca5a9ef67a4f2c6ad8f8a78d832f6c7979a2c88f61cb5-46335667623441.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Device brand</li><li>Device model</li><li>App version</li><li>OS version</li><li>Carrier</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Is</li><li>Is not </li></ul></td><td><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/> Selected value</td></tr><tr><td colspan="3"><h4 id="attribution"><span id="attribution"></span>Attribution</h4><p><img alt="Attribution_filter.jpg" src="https://files.readme.io/c7aee01564562bc7d468d6b2bd59ff3d26a028d19382dfdbc35c3fe700f214e7-46335625087249.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Organic</li><li>Retargeting</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>False</li><li>True</li></ul></td><td> </td></tr><tr><td colspan="3"><h4 id="user-attributes"><a href="./audiences-create-better-audiences-with-user-attribute-data" target="_blank"><span id="user-attributes"></span>User attributes</a></h4><p><img alt="user_attribute_filter.jpg" src="https://files.readme.io/add34f52509bf733f10364691e32ab88331a1caee4bbc4627fb665ec3826422d-46335625088145.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><p>User attribute name</p></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>String type<ul><li>Is</li><li>Is not</li></ul></li><li>Number type<ul><li>Is</li><li>Is greater than</li><li>Is lower than</li></ul></li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/><br/>For string: Select a value</p><p>For number: Enter a value</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -449,6 +477,8 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 * An imported audience can’t be used.
 
 </Accordion>
+
+<div id="create-and-manage-partner-connections" />
 
 ## Create and manage partner connections
 
@@ -500,6 +530,8 @@ The **Connections** tab displays all your partner connections and the status of 
 
 </Accordion>
 
+<div id="dashboard-and-metrics" />
+
 ## Dashboard and metrics
 
 This section describes the features and campaign metrics that appear on the dashboard.
@@ -526,7 +558,11 @@ This section describes the features and campaign metrics that appear on the dash
 
 <Accordion title="Campaign metrics">
 
+<div id="metrics-hash" />
+
 #### metrics hash
+
+<div id="campaign-metrics-basics" />
 
 #### Campaign metrics basics
 
@@ -547,6 +583,8 @@ The **Campaign metrics** section of the Audiences dashboard displays data for ca
 2. Once the file has been generated, it downloads automatically.
 
 
+<div id="summary-view" />
+
 #### Summary view
 
 The initial **Campaign metrics** view displays summary campaign data for each audience:
@@ -558,6 +596,8 @@ The initial **Campaign metrics** view displays summary campaign data for each au
 | <span id="campaigns"></span>Campaigns | Total number of campaigns that used the audience for targeting during the selected timeframe (campaigns run with supported partners only) |
 | <span id="campaign-cost"></span>Campaign cost | Total cost of these campaigns during the selected timeframe |
 | <span id="campaign-revenue"></span>Campaign revenue | Total revenue attributed to these campaigns during the selected timeframe |
+
+<div id="detailed-view" />
 
 #### Detailed view
 
@@ -579,6 +619,8 @@ Click the **Overview dashboard** link ![pin_B.png](https://files.readme.io/b8c90
 | <span id="cost"></span>Cost | Campaign cost during the selected timeframe (in total, then broken down by supported partner and campaign) |
 | <span id="revenue"></span>Revenue | Revenue attributed to the campaigns during the selected timeframe (in total, then broken down by supported partner and campaign) |
 | <span id="daily-reach"></span>Daily reach | The average number of unique users per day who saw ads from the campaign during the selected timeframe (as reported by the partner) |
+
+<div id="data-sources-and-availability" />
 
 #### Data sources and availability
 
@@ -626,6 +668,8 @@ Campaign metrics data is available only for:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 Please note the following traits and limitations.
@@ -669,6 +713,8 @@ Please note the following traits and limitations.
 | S2S reporting | Ensure that user identifiers (IDFV or IDFA) are sent in the S2S in-app events payload and that the IDFV or IDFA is consistent with AppsFlyer SDK collection. This will ensure that data isn’t missed and that audience calculations are accurate. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

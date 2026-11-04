@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Create links that give users exactly the experience you want them to have, with OneLink. Users who click the link are redirected to the correct app store, web URL, or into the app, and attributed to the media source.
 
+<div id="onelink-links-and-experiences" />
+
 ## OneLink links and experiences
 
 <Embed title="Create deep linking and redirection links for your campaigns with OneLink" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -37,6 +39,8 @@ The steps required to set up a link are described in detail in the section that 
 * Deep linking and redirections settings
 * Additional parameter settings
 
+<div id="create-a-onelink-link" />
+
 ## Create a OneLink link
 
 | **Who's involved**<ul><li>Only a marketer is required to create OneLink links with an experience that redirects users to app stores, web URL, or, once the template is set up to open the app with Android App Links and iOS Universal Links, into the home page of the app.</li><li>To add deep linking and deferred deep linking functionality to links, both a marketer and Android/iOS developers are required.</li></ul> |
@@ -44,6 +48,8 @@ The steps required to set up a link are described in detail in the section that 
 | **Prerequisites**<ul><li>An AppsFlyer account with at least one app.</li><li>A <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">OneLink template</Anchor> on which to base your links.</li><li>For attribution: <Anchor target="_blank" href="/marketers/docs/integrate-the-appsflyer-sdk">The AppsFlyer SDK already installed</Anchor> in each of your mobile apps.<ul><li>If the SDK is not yet installed in your apps, it is still possible to create a working redirection link, but it will not be possible to measure installs in your dashboard, deep link, or deferred deep link.</li></ul></li></ul> |
 | **Time required**<br /><br />30 minutes for most links, but approximately 3 hours for links that require deep linking or deferred deep linking functionality. |
 | **Outcome**<ul><li>A link that sends users to the correct app store, web page, or into the app based on their device, and gives them exactly the experience you want them to have.</li></ul> |
+
+<div id="create-onelink-links-from-your-ai-tool" />
 
 ### **Create OneLink links from your AI tool**
 
@@ -59,6 +65,8 @@ You can create OneLink links by describing them in plain language, in the AppsFl
 
 **Limit:** Up to 10 links per day per account, shared between the AI Assistant and the MCP.
 
+<div id="create-onelink-links-in-onelink-management" />
+
 ### **Create OneLink links in OneLink Management**
 
 **To create a OneLink link in OneLink Management:**
@@ -68,6 +76,8 @@ You can create OneLink links by describing them in plain language, in the AppsFl
 3. Click **Add link manually**.
 4. Select the [experience](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences) you want to create for your users.
 5. Select a media source or enter a custom media source. This is the media source under which data displays in AppsFlyer. The media source is included in your link as the `pid` parameter value.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -127,6 +137,8 @@ General settings is a section of the OneLink link creation process that applies 
 
    Existing users that click on non-retargeting links (UA) also launch the app, and have the same user experience. However, their re-engagements are recorded as regular sessions, which means it's impossible to measure the success of the owned media campaign.
 
+   <div id="important" />
+
    > 🚧 **Important!**
    >
    > For retargeting to work, you also need to enable retargeting for the app.
@@ -139,6 +151,8 @@ General settings is a section of the OneLink link creation process that applies 
 6. [Optional] In the **Link branding** subsection:
    * Select a different domain to reflect your brand. <Anchor target="_blank" href="/marketers/docs/brand-onelink-with-your-domain">Learn more</Anchor>
    * <span id="url-id"></span>Edit the URL ID to highlight the campaign offering. The URL ID must be maximum 50 characters and can be a combination of letters and numbers. By default, it is 8 characters.
+
+<div id="enable-retargeting-for-the-app" />
 
 #### Enable retargeting for the app
 
@@ -180,6 +194,8 @@ These OG tags may automatically be taken from the web URL or app store you are r
   * af\_og\_description (up to 300 characters)
   * af\_og\_image
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * You can add the OG tag parameters to your link outside the AppsFlyer UI.
@@ -190,6 +206,8 @@ These OG tags may automatically be taken from the web URL or app store you are r
 <div id="social-app-landing-page" />
 
 <Accordion title="Social app landing page">
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >
@@ -227,9 +245,13 @@ When the user engages with the CTA button in the landing page:
 * **If app is installed**: the clicking user launches the app.
 * **If app is NOT installed**: the user is taken to the relevant app store. Upon install, it's possible to defer deep linking the user (explained in [deep linking and deferred deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)).
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > The social app landing page only supports OneLink short URL.
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **To use the social app landing page:**
 
@@ -239,6 +261,8 @@ When the user engages with the CTA button in the landing page:
 3. Post the OneLink short URL on the social app.
 
 Attribution is determined based on your attribution settings.
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **To set up the Social apps landing page:**
 
@@ -280,6 +304,8 @@ Deep linking means you retarget your existing app users and send them directly i
 
 Deferred deep linking means you give new users a similar deep linking experience as existing users. But their user flow is that first, new users are sent to the app store, and after they download and launch the app, they are sent to the specific experience or page.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Setting up deep linking and deferred deep linking requires your Android and iOS developers.
@@ -294,6 +320,8 @@ Deferred deep linking means you give new users a similar deep linking experience
        * Requires SDK V6.1 or later.
        * Click lookback window can be up to 15 minutes.
      * **Note**: Customers already using OneLink for deep linking may be using the legacy methods for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">Android</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor>, instead of UDL.
+
+       <div id="tips" />
 
        > 📄 **Tips**
        >
@@ -329,6 +357,8 @@ Deferred deep linking means you give new users a similar deep linking experience
       </Tabs>
 
    3. In the **Additional parameters** section, add custom parameters **deep\_link\_sub2-10** and values as required, according to what you decided with the developers.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -373,6 +403,8 @@ You can test whether your link works to redirect:
 * New users without your app installed
 * Existing users with your app installed
 
+<div id="new-users-without-your-app-installed" />
+
 #### New users without your app installed
 
 **Prerequisites**: A <Anchor target="_blank" href="/marketers/docs/registering-test-devices">registered test device</Anchor> without the app.
@@ -395,6 +427,8 @@ You can test whether your link works to redirect:
    Look for a new click and install under media source (e.g. test) and the campaign name you put in the URL.
 
 Link not working as expected? Check out the <Anchor target="_blank" href="/marketers/docs/onelink-troubleshooting-and-faq">OneLink FAQ and troubleshooting guide.</Anchor>
+
+<div id="existing-users-with-your-app-installed" />
 
 #### Existing users with your app installed
 
@@ -419,6 +453,8 @@ Link not working as expected? Check out the <Anchor target="_blank" href="/marke
 Link not working as expected? Check out the <Anchor target="_blank" href="/marketers/docs/onelink-troubleshooting-and-faq">OneLink FAQ and troubleshooting guide.</Anchor>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Additional procedures
 
@@ -500,6 +536,8 @@ To make sure that deferred deep linking (DDL) continues to work as expected, you
 
 This solution combines OneLink short URLs with the App Clips technology available on iOS, and allows you to send users to specific flows in your product without the need to install the full app. The OneLink short URL gives you user attribution data, and directs users to a customized App Clip experience similar to the one you want DDL to achieve. The app clip can also include a flow to direct users from your App Clip to your full app. **Note**: If users reinstall the full app from the App Clip-based solution, it may be reported in AppsFlyer as an organic install. 
 
+<div id="flow" />
+
 #### **Flow**
 
 The flow of the App Clip-based DDL solution is as follows:
@@ -535,6 +573,8 @@ The flow of the App Clip-based DDL solution is as follows:
 
 <Accordion title="Clipboard-based solution">
 
+<div id="flow-1" />
+
 #### **Flow**
 
 The flow of the clipboard-based DDL solution is as follows:
@@ -551,6 +591,8 @@ The flow of the clipboard-based DDL solution is as follows:
 5. The user taps **Get the app**.
 6. The user is sent to the App Store to install the app. Then, at first launch, they are sent to the specific app page.
 
+<div id="requirements" />
+
 #### **Requirements**
 
 The copy/paste landing page DDL solution requires:
@@ -560,6 +602,8 @@ The copy/paste landing page DDL solution requires:
 * AppsFlyer iOS SDK V6+.
 * Your iOS app developer to implement code that pastes the deferred deep link data in the URL from the clipboard. This is not part of the AppsFlyer SDK.
 * The end-user to keep the checkbox ticked (default). If it is unchecked, the URL is not copied and deferred deep linking doesn't work.
+
+<div id="setup" />
 
 #### **Setup**
 
@@ -574,6 +618,8 @@ The copy/paste landing page DDL solution requires:
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

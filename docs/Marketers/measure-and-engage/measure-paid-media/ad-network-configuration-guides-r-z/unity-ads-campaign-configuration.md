@@ -26,6 +26,8 @@ x-zendesk:
 
 To configure your campaigns with Unity Ads, follow the steps below.
 
+<div id="setting-up-unity-ads" />
+
 ## Setting up Unity Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,10 +46,14 @@ To configure your campaigns with Unity Ads, follow the steps below.
 
 <Accordion title="Integration tab">
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 On the first visit, you will need to turn on the **Activate partner** toggle to setup the integration. The toggle must remain on for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -71,6 +77,8 @@ Turn on this option to attribute view-through installs from Unity Ads. The view-
 
 ![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 ![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
@@ -80,15 +88,21 @@ Send automatic postbacks to Unity Ads following user installs. Use this section 
 * **This partner only**: for events coming only from users attributed to Unity Ads.
 * **All media sources including organic**: to have your entire user base available to be reported to Unity Ads.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an all-installs network, Unity Ads prefers to receive postbacks for all new installs of your app from any source, and they recommended selecting **All media sources including organic** to send all install postbacks to Unity Ads.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
 
 [![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### To configure in-app event postbacks
 
@@ -105,9 +119,13 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Select the correct SDK/server-to-server event and the corresponding partner event identifier. Do not duplicate events (do not pass the same events under different SDK/server-to-server event names).
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

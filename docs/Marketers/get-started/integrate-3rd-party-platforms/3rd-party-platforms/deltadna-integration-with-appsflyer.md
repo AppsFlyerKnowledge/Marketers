@@ -26,11 +26,17 @@ x-zendesk:
 ---
 > **At a glance:** deltaDNA, an AppsFlyer integrated partner, is the leading real-time analytics and marketing platform for mobile gaming. The combination of market-leading deep data functionality, ultra-high performance and a flexible, open environment allows users to maximize engagement and lifetime value through player segmentation, predictive modeling and real-time targeted interventions.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
+<div id="integrating-with-deltadna" />
+
 ## Integrating with deltaDNA
+
+<div id="important-1" />
 
 > 🚧 **Important**
 >
@@ -97,9 +103,13 @@ Once you have saved the configuration, AppsFlyer sends the following data to del
 * Media Source
 * Campaign name
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > deltaDNA rejects install postbacks from AppsFlyer if there is no Customer User ID or UserID defined.
+
+<div id="viewing-the-attribution-data-in-the-deltadna-console" />
 
 ## Viewing the attribution data in the deltaDNA console
 

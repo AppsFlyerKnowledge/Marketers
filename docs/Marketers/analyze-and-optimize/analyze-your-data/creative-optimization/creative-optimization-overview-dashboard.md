@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## About the Creative Optimization Overview dashboard
 
 The <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">**Creative Optimization**</Anchor> dashboards let you measure the performance of your creatives by pulling all your creatives from all media channels into one place. Analyze their performance by selected dimensions, across multiple campaigns, channels, and more, to gain critical insights before planning, selecting, and producing your next batch of creatives.
@@ -44,11 +46,15 @@ Use the dashboard to see your data laid out visually in a variety of information
 * See creative performance over time.
 * And more
 
+<div id="get-started" />
+
 ## Get started
 
 If you haven't configured Creative Optimization yet, you can find instructions on how to do so <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#get-started">here</Anchor>. Once set up the Creative Optimization dashboards are updated <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#dashboard-updates">once daily</Anchor>.
 
 **Note:** Cost data metrics are displayed differently in the dashboards depending on whether or not you have an AppsFlyer ROI360 subscription. <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#creative-optimization-roi360">Learn more</Anchor>
+
+<div id="charts" />
 
 ## Charts
 
@@ -68,6 +74,8 @@ Use the charts to get quick, at-a-glance visual representations of nearly limitl
 See a list of definitions for both <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#standard-metrics-and-dimensions">standard metrics</Anchor> and metrics <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#unique-metrics-and-dimensions">unique to Creative Optimization</Anchor>.
 
 </Accordion>
+
+<div id="table" />
 
 ## Table
 
@@ -117,7 +125,7 @@ Customize the table by clicking the<Image alt="Creative_table_settings_en_us.png
   * CPM  
     **Note:** Partner metrics appear with a "Partners" indication next to them.
 
-* #### **In-app events**
+* #### <span id="in-app-events"></span>**In-app events**
 
   Use this data to understand the effect of specific creatives on in-app event performance. Calculated metrics for each event include:
 

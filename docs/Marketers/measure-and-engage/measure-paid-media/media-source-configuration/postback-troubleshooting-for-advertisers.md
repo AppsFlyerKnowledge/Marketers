@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Find the leading causes and solutions to why your partner isn't receiving expected postbacks. Go through each of the topics below and see if they may be the cause.
 
+<div id="check-the-integration-toggles" />
+
 ## Check the integration toggles
 
 Various toggles control different parts of the integration. The state of the toggle could be the reason for not receiving postbacks.
@@ -67,6 +69,8 @@ The <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configur
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## Check the event configuration
 
@@ -128,6 +132,8 @@ Note that for <Anchor target="_blank" href="/marketers/docs/self-reporting-netwo
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## Privacy restrictions
 
 In the following cases, AppsFlyer doesn't send postbacks due to privacy restrictions.
@@ -159,6 +165,8 @@ A sharing filter has been implemented in the SDK to prevent the partner from rec
 For more information see: <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods#prevent-sharing-data-with-networks">Prevent data sharing with third parties</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">setSharingFilterForPartners</Anchor>.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## Miscellaneous
 
@@ -237,6 +245,8 @@ There are a number of <Anchor target="_blank" href="/marketers/docs/self-reporti
 When Advanced Privacy (AP) is turned on, user-level data for non-consenting users running iOS 14.5+ is not available via postbacks. Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Advanced Privacy template</Anchor>.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

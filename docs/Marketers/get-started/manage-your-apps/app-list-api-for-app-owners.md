@@ -29,6 +29,8 @@ If you are an ad network, use the <Anchor target="_blank" href="/partners/docs/
 
 **Further reading**: <Anchor target="_blank" href="/marketers/docs/about-advertiser-apis">API list for advertisers</Anchor>
 
+<div id="get-app-list-api" />
+
 ## Get app list API
 
 The following sections include information necessary for using the API.
@@ -60,6 +62,8 @@ Get app list mandatory parameters:
 | Query parameter | Description |
 | --- | --- |
 |  | There are no mandatory query parameters for this API |
+
+<div id="pagination-mechanism" />
 
 #### **Pagination mechanism**
 

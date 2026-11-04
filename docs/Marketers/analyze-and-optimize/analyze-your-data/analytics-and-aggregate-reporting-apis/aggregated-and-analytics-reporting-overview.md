@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Description and comparison of aggregated and analytics attribution reports, tools, and APIs available.
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## Aggregated and analytics performance reporting overview
 
 Aggregated analytic tools in the platform provide advertisers with metrics enabling them to assess the performance of their apps, campaigns, and users.
@@ -87,6 +89,8 @@ Differences between cohort data delivery methods
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### User journey reports
 
 The reports described are available via the Export Data page or by using Pull API aggregate.
@@ -104,9 +108,13 @@ They are <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepan
 
 Date fields in the CSV files have the format yyyy-mm-dd. When you open a CSV file in Excel, date fields are formatted using your computer's date and time settings. Be sure to select the appropriate date display in <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel.</Anchor>
 
+<div id="examples-of-aggregate-reports" />
+
 #### Examples of aggregate reports
 
 [Report examples in a spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### Fields in UA aggregate reports
 
@@ -122,6 +130,8 @@ In retargeting reports, there is no distinction between organic and non-organic 
 
 To get retargeting reports via Pull API, append the *&reattr=true* parameter to performance reports URIs.
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### Aggregate LTV retargeting reports
 
 | Report name | Grouped by |
@@ -131,6 +141,8 @@ To get retargeting reports via Pull API, append the *&reattr=true* parameter to 
 | Activity by date | Date, agency, media source, campaign |
 | Country | Country, agency, media source, campaign |
 | Country by date | Date, country, agency, media source, campaign |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### Aggregate LTV retargeting reports
 
@@ -156,6 +168,8 @@ To get retargeting reports via Pull API, append the *&reattr=true* parameter to 
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## Feature reports
 
 <Accordion title="SKAdNetwork">
@@ -174,6 +188,8 @@ The reports are available via Pull API. These reports aren't available via the E
 
 The date range relates to the install date.
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Aggregate Protect360 reports available via Pull API
 
 | Report name |
@@ -187,6 +203,8 @@ The date range relates to the install date.
 **Limitation:** The blocking reason **Bots** displays even in cases where the reason should be **app version** or **missing customer user id**.
 
 </Accordion>
+
+<div id="see-also" />
 
 #### See also
 

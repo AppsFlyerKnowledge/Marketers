@@ -27,11 +27,15 @@ This article describes the permissions available when sharing data in a Data Col
 * [Data permissions](#data-permissions)
 * [Access permissions](#access-permissions)
 
+<div id="data-permissions" />
+
 ## Data permissions
 
 The data permissions you select define how your collaborator can use your associated data and apply to all sources you associate with the collaboration. Permissions can also be modified individually per source.
 
 <Image alt="Data permissions Dec 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
+
+<div id="data-permissions-include" />
 
 ### Data permissions include:
 
@@ -43,11 +47,15 @@ The data permissions you select define how your collaborator can use your associ
 | **Partner connections** | Allows the collaborator to send the audiences created from your sources to partner connections for activation. When enabling this option, you can grant export permission for:<ul><li>**All connected partners** - When selecting this option, you can also **Allow future partner connections**, which automatically allows audience export to all media partners that AppsFlyer DCP partners with.</li><li>**Specific partners only**<ul><li>When selecting specific partners, you can further specify whether you allow your collaborator to use only their activation connections or yours (e.g., only their Meta connection or your Meta connection).</li><li>If you select your connections, you’ll need to choose which of your connected accounts the collaborator can use (e.g., only your Meta connection A but none of your other Meta connections).</li></ul></li></ul>**Important notes:**<ul><li>When your collaborators are ready to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences#send-an-audience-for-activation">activate audiences</Anchor> based on your sources, only the partner connections that you granted permissions for will be available to them.</li><li>If you haven’t granted the collaborator permission to publish or export audiences, then when they attempt to activate an audience, the activation request is sent to you to complete.</li></ul> |
 | **File export** | Allows the collaborator to export audience files to their cloud bucket. |
 
+<div id="access-permissions" />
+
 ## Access permissions
 
 The access permissions define the resources your collaborator can access. This includes the option to grant your collaborator access to your <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-add-connections#create-data-identity-connections">Data & Identity (data resolution) connections</Anchor>, enabling them to use these connections to enrich their sources.
 
 **Note:** To grant access, the relevant Data & Identity connection must be active.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

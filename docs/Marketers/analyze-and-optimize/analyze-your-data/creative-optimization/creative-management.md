@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Creative Management helps you centralize, review, and launch creatives faster. Use it to sync creatives from your creative storage, understand creative activity status across media sources, easily find relevant creatives, and upload them directly to supported media source campaigns.
 
+<div id="about-creative-management" />
+
 ## About Creative Management
 
 Creative Management is a centralized hub for managing creative assets across their lifecycle, from storage sync to media source upload.
@@ -39,6 +41,8 @@ Use Creative Management to:
 * Review upload outcomes and see which creatives were uploaded successfully or failed.
 
 Built for scale, Creative Management helps marketing and creative teams reduce manual work, optimize time-to-launch, and boost campaign performance.
+
+<div id="get-started" />
 
 ## Get started
 
@@ -60,6 +64,8 @@ Creative Management currently supports Google Drive and Dropbox. Each source has
 
 * [Google Drive](#connect-google-drive)
 * [Dropbox](#connect-dropbox)
+
+<div id="connect-google-drive" />
 
 #### Connect Google Drive
 
@@ -85,6 +91,8 @@ Creative Management currently supports Google Drive and Dropbox. Each source has
 <Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Click **Connect**.
+
+<div id="connect-dropbox" />
 
 #### Connect Dropbox
 
@@ -118,6 +126,8 @@ The Creative Management gallery is where you review, search, filter, and select 
 Each creative card represents one creative. A creative may include multiple versions, such as different resolutions or formats. From the card, you can quickly understand whether the creative is new, active, or inactive across media sources, and view high-level metadata such as when it was first launched and when it was synced to Creative Management. Each new creative is automatically analyzed and scored to help you choose the best ones before launch. Scores range from C (less likely to succeed) to A (ready to scale), helping you prioritize top-performing creatives with confidence.
 
 <Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+
+<div id="filter-creatives" />
 
 #### Filter creatives
 
@@ -156,6 +166,8 @@ For all supported media sources, you can upload creatives to multiple destinatio
 * [Unity Ads](#unity-ads)
 * [AppLovin](#applovin)
 
+<div id="google-ads" />
+
 #### Google Ads
 
 For Google Ads, you can upload creatives to existing app promotion ad groups.
@@ -174,9 +186,13 @@ For Google Ads, you can upload creatives to existing app promotion ad groups.
 
 <Image alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Before uploading a large batch for the first time, we recommend testing with a single creative to confirm it appears correctly in the selected media source.
+
+<div id="meta-ads" />
 
 #### Meta Ads
 
@@ -202,6 +218,8 @@ For Meta, you can create ads inside existing ad sets.
 
 <Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
+<div id="tiktok-ads" />
+
 #### TikTok Ads
 
 For TikTok Ads, you can upload creatives to existing app promotion ads.
@@ -217,7 +235,11 @@ For TikTok Ads, you can upload creatives to existing app promotion ads.
 7. Review the setup and any validation messages.
 8. Click **Upload to TikTok**.
 
+<div id="unity-ads" />
+
 #### Unity Ads
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -230,7 +252,11 @@ For TikTok Ads, you can upload creatives to existing app promotion ads.
 5. If a creative has multiple versions, select the relevant ones you want to upload.
 6. Click **Upload to Unity Ads**.
 
+<div id="mintegral" />
+
 #### Mintegral
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -243,7 +269,11 @@ For TikTok Ads, you can upload creatives to existing app promotion ads.
 5. If a creative has multiple versions, select the relevant ones you want to upload.
 6. Click **Upload to Mintegral**.
 
+<div id="applovin" />
+
 #### AppLovin
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -323,6 +353,8 @@ Use status information to answer questions such as:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Description |
@@ -333,6 +365,8 @@ Use status information to answer questions such as:
 | Upload method varies by network | Upload method varies by network.  <br />Google Ads, Meta Ads, and TikTok support upload directly into campaigns (as ads or creative sets); Unity Ads and Mintegral currently support upload to the network's creative library only. |
 | Asset requirements | Creative file formats, dimensions, duration, and size must meet each network's requirements. |
 | Upload history scope | Upload history reflects the upload result, not the creative's ongoing delivery or moderation status. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

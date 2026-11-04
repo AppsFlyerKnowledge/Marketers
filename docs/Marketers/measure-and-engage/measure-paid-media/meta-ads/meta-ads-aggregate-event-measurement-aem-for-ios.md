@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the Aggregated Event Measurement (AEM) solution for optimizing iOS conversions and in-app events and for attributing iOS re-engagements on Meta Ads.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer supports the <Anchor target="_blank" href="https://www.facebook.com/business/help/721422165168355">Meta Ads Aggregated Event Measurement (AEM)</Anchor> solution. This solution enables measuring web and app events for iOS 14+ devices using the following attribution methods:
@@ -35,9 +37,13 @@ As part of the AEM solution, Meta accepts conversion and in-app postbacks from t
 
 * [Check if your app events are eligible for AEM](#check-if-your-app-events-are-eligible-for-aem)
 
+<div id="app-aem-for-re-engagement" />
+
 ## App AEM for re-engagement
 
 Using AEM, Meta Ads provides deep-link re-engagement attribution for iOS users when the Advertiser ID is unavailable.
+
+<div id="attribution-flow" />
 
 ### Attribution flow
 
@@ -46,6 +52,8 @@ Meta Ads appends attribution data to the deep link along with the AEM `campaign_
 * Makes aggregate reporting data available to Meta Ads
 * Performs attribution based on the deep link information appended by Meta Ads
 * Includes attribution data from the deep link in raw data and aggregated data reports
+
+<div id="attribution-data-parameters" />
 
 ### Attribution data parameters
 
@@ -57,9 +65,13 @@ The following attribution data parameters, as shared by Meta Ads, are included i
 * `campaign_group_id`
 * `account_id`
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > To leverage AEM for remarketing, the AppsFlyer SDK retrieves the `campaign_ids` string on deep link open. By default, the SDK shares deep links from all domains. If you have customized your integration, make sure it is configured to share deep links from all domains, including the Meta domain, and not only from the AppsFlyer domain.
+
+<div id="faqs-on-deep-link-re-engagement-attribution" />
 
 ### FAQs on deep link re-engagement attribution
 
@@ -91,7 +103,11 @@ Data coming from deep link attributions isn't subject to reporting restrictions.
 
 </Accordion>
 
+<div id="app-aem-for-app-promotion" />
+
 ## App AEM for app promotion
+
+<div id="aem-eligibility" />
 
 ### AEM eligibility
 
@@ -99,9 +115,13 @@ When an app is eligible for AEM on Meta Ads, **Aggregated Event Measurement** is
 
 <Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > If you have issues with AEM eligibility, see [Check if your app events are eligible for AEM](#check-if-your-app-events-are-eligible-for-aem).
+
+<div id="aem-data-sharing" />
 
 ### AEM data sharing
 
@@ -112,6 +132,8 @@ When an app is eligible for AEM on Meta Ads, **Aggregated Event Measurement** is
 
 ![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > * All events include installs, app opens, and in-app events.
@@ -119,9 +141,13 @@ When an app is eligible for AEM on Meta Ads, **Aggregated Event Measurement** is
 > * For in-app events sent via server-to-server (S2S), Meta Ads requires both the **IP address** and the **Identifier for Vendors (IDFV)** to be included in the event payload. Without these identifiers, the event won't be eligible for Meta Ads attribution in AEM.
 > * Meta AEM for app promotion might also include non-deterministic view-through claims. To support non-deterministic view-through attribution via Meta AEM, make sure the app-level Enable view-through attribution via campaign measurement modeling toggle is turned on. For details, see <Anchor target="_blank" href="/marketers/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling">View-through attribution via probabilistic modeling</Anchor>.
 
+<div id="check-if-your-app-events-are-eligible-for-aem" />
+
 ## Check if your app events are eligible for AEM
 
 You can visit Meta Events Manager to check if your app events are eligible for AEM. Once your app event is eligible, you can see the results of your selected AEM campaigns in Ads Manager. To learn how to check if your app events are eligible for AEM, see <Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">Meta documentation</Anchor>.
+
+<div id="enable-aem-summary" />
 
 ## Enable AEM: summary
 
@@ -133,6 +159,8 @@ Use the table below as a quick checklist to enable Meta Ads AEM in AppsFlyer.
 | **AEM app promotion (installs)** | Advanced data sharing | Partner integration (Meta Ads) | Enables AEM for app promotion, including making events from users when an Advertiser ID is not available, making them measurable via Meta, and accepting non-deterministic claims (when applicable). |
 | **AEM app promotion (installs)** | Enable view-through attribution via probabilistic modeling | App Settings | Enables view-through attribution for non-deterministic claims. |
 
+<div id="troubleshooting" />
+
 ## Troubleshooting
 
 <div id="troubleshooting-ineligible-events-in-meta-aem" />
@@ -140,6 +168,8 @@ Use the table below as a quick checklist to enable Meta Ads AEM in AppsFlyer.
 <Accordion title="Troubleshooting ineligible events in Meta AEM">
 
 If Meta Ads flags your app events as ineligible, showing errors like **“Missing opt-out events”** or other AEM-related messages, it’s typically due to missing or misconfigured data. Use the checklist below to diagnose and fix common issues.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -202,6 +232,8 @@ For re-engagement campaigns:
 
 </Accordion>
 
+<div id="still-not-working" />
+
 #### Still not working?
 
 If specific events remain ineligible:
@@ -209,6 +241,8 @@ If specific events remain ineligible:
 1. Go to Meta's Event Manager and follow the on-screen guidance.
 2. Select the affected app event.
 3. Set **MMP traffic** as the preferred connection method.
+
+<div id="need-help" />
 
 #### Need help?
 
@@ -234,6 +268,8 @@ Here is Meta's reply: "We are rolling out this update in collaboration with your
 When AAP is enabled, installs attributed via Meta's Aggregated Event Measurement (AEM) are excluded from raw data reports. This applies even if the AMM agreement is signed.
 
 </Accordion>
+
+<div id="note-3" />
 
 > 📘 **Note**
 >

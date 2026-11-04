@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** The platform contains multiple dashboards. These dashboards enable you to view your campaign performance and app behavior.
 
+<div id="appsflyer-dashboards" />
+
 ## AppsFlyer dashboards
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)

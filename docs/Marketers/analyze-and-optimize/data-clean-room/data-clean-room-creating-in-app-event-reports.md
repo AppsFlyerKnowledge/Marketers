@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Create In-app event reports to focus on user activity occurring after an app has been installed. Extract specific event parameters from your in-app event raw data, optionally match the data with custom sources, then process and present it in aggregated form.
 
+<div id="creating-an-in-app-event-report" />
+
 ## Creating an In-app event report
 
 **To create an In-app event report, follow the steps detailed in the tabs below.**
@@ -59,6 +61,8 @@ x-zendesk:
 
 Specify the source data to be used for the report:
 
+<div id="in-app-event-sources" />
+
 #### **In-app event sources**
 
 * **Apps:** Select one or more of the apps in your AppsFlyer account.
@@ -71,6 +75,8 @@ Specify the source data to be used for the report:
 | --- | --- |
 | Re-engagements | In-app events related to re-engagements<ul><li>A re-engagement is recorded when an inactive user of a specific app engages with a retargeting campaign for the app and subsequently launches it.</li></ul> |
 | Reattributions | In-app events related to re-attributions<ul><li>A re-attribution is recorded when a former user of a specific app (who had uninstalled it) engages with a retargeting campaign for the app and subsequently reinstalls it.</li></ul> |
+
+<div id="data-sources" />
 
 #### **Data sources**
 
@@ -93,6 +99,8 @@ In order to match data among sources, each of the **custom** sources used in the
 
 * In-app event reports include **all** selected events matching the key identifier during the selected timeframe.
 
+<div id="what-is-a-key-identifier" />
+
 #### **What is a key identifier?**
 
 You can map to either of these in-app event data identifiers as **key identifiers:**
@@ -103,13 +111,19 @@ You can map to either of these in-app event data identifiers as **key identifier
 * **Customer User ID (CUID):** A unique user identifier usually generated and set by the app owner at the time of user registration.
   * Using CUID to map data requires that your app is configured to <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid">send the CUID to AppsFlyer</Anchor> via the SDK or the server-to-server API (S2S).
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Not all media sources permit matching using CUID. It is highly recommended to use AppsFlyer ID.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Mapping schemes (direct/indirect)**
 
 If the report includes more than one custom source, only one of them needs to be mapped **directly** to an in-app event key identifier. Other custom sources can be mapped either **directly or indirectly,** as illustrated in the following example:
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -136,6 +150,8 @@ The remaining tabs are relevant for **all in-app event reports,** whether or not
 Recall that user-level data cannot be reported by the DCR. Instead, it provides you with the decision-making insights you need by aggregating (or grouping) the data by the dimensions you choose.
 
 A dimension is generally an attribute by which you categorize app users (for example, geo, install date, campaign, etc.)
+
+<div id="extracting-dimensions-from-event_value" />
 
 #### **Extracting dimensions from event\_value**
 
@@ -173,6 +189,8 @@ One of the major advantages of In-app event reports is that they allow you to ex
 3. Select **Delete field.**
    * **Caution!** If you delete an extracted field from the **Report dimensions** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
 
+<div id="selecting-report-dimensions" />
+
 #### **Selecting report dimensions**
 
 In-app event report dimensions can include:
@@ -190,6 +208,8 @@ In-app event report dimensions can include:
 
 **Note:** By default, all reports are grouped by the in-app event dimension **media\_source.** If you do not wish to use this dimension in your report, you can remove it from the **Report dimensions** list.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Optional] Customizing dimension display names**
 
 By default, dimension names are displayed in your report exactly as they are named in the in-app event data or your custom sources. If you wish, you can customize dimension names for your report.
@@ -203,11 +223,15 @@ By default, dimension names are displayed in your report exactly as they are nam
 
 **Note:** If you want to change the name of an **extracted dimension**, use the steps for editing extracted dimensions (above).
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### **Preserving privacy while grouping by dimension (regrouping)**
 
 Depending on the size of your data set, the number of dimensions you choose, and other factors, it's possible that a report would include one or more groups containing too few users to allow reporting. If the data were reported this way, it would violate restrictions against providing user-level data.
 
 However, instead of removing or hiding the data from the report completely, the DCR uses a **regrouping mechanism** to provide as much detail as possible while maintaining user privacy.
+
+<div id="regrouping-example" />
 
 > 📄 **Regrouping example**
 >
@@ -267,6 +291,8 @@ However, instead of removing or hiding the data from the report completely, the 
 >
 > * *See below for an advanced option you can use to apply regrouping to custom source dimensions as well.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Optional] Managing dimension priority**
 
 By default, in-app event dimensions are eliminated in reverse order from the order in which they appear in the **Report dimensions** list. However, you can modify the default sequence and/or apply regrouping to selected custom source dimensions (if applicable) in order to preserve the dimensions most important to you.
@@ -291,6 +317,8 @@ By default, in-app event dimensions are eliminated in reverse order from the ord
 <Accordion title="Select metrics">
 
 Metrics are the numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.) and can be any numeric data field from your sources that you have categorized as a metric.
+
+<div id="extracting-metrics-from-event_value" />
 
 #### **Extracting metrics from event\_value**
 
@@ -326,6 +354,8 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
 3. Select **Delete field.**
    * **Caution!** If you delete an extracted field from the **Report metrics** list, it will delete the definition of the extracted field. If you wish to remove the field from the report while preserving its definition, select the field and use the **Remove** button instead.
 
+<div id="select-report-metrics" />
+
 #### **Select report metrics**
 
 **To select the metrics to include in your report:**
@@ -337,6 +367,8 @@ Just as you can for [report dimensions](/docs/data-clean-room-creating-in-app-ev
    * a count of distinct values
 3. To remove a metric, select it from the **Report metrics** list and use the **Remove** button to return it to the **Metrics from sources** list.
 4. Repeat this process until you have added each metric you want to include in the report.
+
+<div id="optional-customizing-metric-display-names" />
 
 #### **[Optional] Customizing metric display names**
 
@@ -350,6 +382,8 @@ By default, metric names are displayed in your report exactly as they are named 
 4. Click **OK** to save the display name, or **X** to cancel it.
 
 **Note:** If you want to change the name of an **extracted metric**, use the steps for editing extracted metrics (above).
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Optional] Select identifiers to count**
 
@@ -368,6 +402,8 @@ By default, each row of the report ends with a column containing a count of the 
 
 <Accordion title="Configure report settings and save the report">
 
+<div id="schedule-only-for-reports-without-custom-sources" />
+
 #### **Schedule (only for reports without custom sources)**
 
 Reports without custom sources are run according to the schedule you define.
@@ -376,6 +412,8 @@ Reports without custom sources are run according to the schedule you define.
 
 1. Select whether to run the report daily or on one or more days each week.
 2. Select the time at which to run the report (timezone is UTC).
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >
@@ -386,6 +424,8 @@ Reports without custom sources are run according to the schedule you define.
 > * For sources located in **cloud storage buckets** (Amazon S3 and GCS), the DCR recognizes that a new version of a source has been created when it detects that a <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing">new version of a source file has been uploaded</Anchor> along with its accompanying \_SUCCESS file.
 >
 > AppsFlyer continually scans for new versions of sources for the **current date and 2 days prior.**
+
+<div id="report-destination" />
 
 #### **Report destination**
 
@@ -407,6 +447,8 @@ The DCR delivers reports to your selected cloud services using <Anchor target="
 3. The new report is now displayed in the **Reports** tab of the **Data Clean Room.**
 
 </Accordion>
+
+<div id="reference" />
 
 ## Reference
 

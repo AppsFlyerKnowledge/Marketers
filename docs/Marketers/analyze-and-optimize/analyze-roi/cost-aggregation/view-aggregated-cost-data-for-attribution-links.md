@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Viewing aggregated cost data for each ad click as reported by ad networks on the attribution link.
 
+<div id="basic-cost-reporting" />
+
 ## Basic cost reporting
 
 Cost data is reported to AppsFlyer by:

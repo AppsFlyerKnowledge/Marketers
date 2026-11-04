@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about outgoing SSL cipher suites supported by AppsFlyer.
 
+<div id="introduction" />
+
 ## Introduction
 
 AppsFlyer APIs use secured protocols.
@@ -41,6 +43,8 @@ The AppsFlyer SSL Security profile supports the following SSL protocols:
 * TLS V1.2+
 
 AppsFlyer supports different ciphers for outgoing messages, as detailed below.
+
+<div id="outgoing-messages-appsflyer-as-client" />
 
 ## Outgoing messages: AppsFlyer as client
 

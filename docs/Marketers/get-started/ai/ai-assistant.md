@@ -24,11 +24,15 @@ x-zendesk:
 
 <Embed title="AI Assistant" typeOfEmbed="youtube" url="https://www.youtube.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube.com" />
 
+<div id="about-ai-assistant" />
+
 ## **About AI Assistant**
 
 The AI Assistant is your self-service analytics and guidance companion, built to help you uncover insights and make smarter decisions with AppsFlyer. Use it side by side with your dashboard data to quickly explore and understand your marketing performance.
 
 <Image alt="Animated demo of the AI Assistant chat window in AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+
+<div id="what-you-can-do" />
 
 ## **What you can do**
 
@@ -40,6 +44,8 @@ Ask the AI Assistant plain-language questions to get:
 * **Agent Hub run analysis**: ask questions about a completed Agent Hub run, right from where you're reviewing it. See <Anchor target="_blank" href="/marketers/docs/beta-agent-hub-overview#analyze-activity-with-ai-assistant">Agent Hub overview [Beta]</Anchor> to learn more.
 
 Responses can appear as text, tables, or charts, depending on what best fits your question.
+
+<div id="where-to-open-it" />
 
 ## **Where to open it**
 
@@ -54,6 +60,8 @@ Responses can appear as text, tables, or charts, depending on what best fits you
 3. View the responses in text, table, or charts.
 4. Use the follow-up suggestions to refine your analysis or question.
 
+<div id="tip" />
+
 > 👍 **Tip!**
 >
 > The AI assistant will respond differently depending on which page you ask the question on.
@@ -61,6 +69,8 @@ Responses can appear as text, tables, or charts, depending on what best fits you
 > * When using the chat in **My dashboards**, responses will be shown according to the selected apps unless you tell the AI otherwise.
 > * In any other page, the answer will be provided based on the first app in the account, unless you tell the AI otherwise.
 > * Up to 20 apps can be analyzed at a time.
+
+<div id="other-features" />
 
 ### Other features
 
@@ -92,6 +102,8 @@ From a completed run in Agent Hub
 
 </Accordion>
 
+<div id="conversation-history" />
+
 ## **Conversation History**
 
 The AI Assistant keeps a history of your conversations so you can pick up where you left off instead of re-explaining context. Your history is private. Only you can see the conversations you've had; other users on your account can't view them.
@@ -115,6 +127,8 @@ The AI Assistant keeps a history of your conversations so you can pick up where 
 
 * When you reopen an older conversation, any data shown reflects the point in time it was originally retrieved. If you ask a new question in that conversation, the AI Assistant uses current data to answer it.
 * A new chat starts automatically after a period of inactivity, when you click "New Chat," or when you sign in again. Your previous conversation is saved to history.
+
+<div id="other-information" />
 
 ## **Other information**
 

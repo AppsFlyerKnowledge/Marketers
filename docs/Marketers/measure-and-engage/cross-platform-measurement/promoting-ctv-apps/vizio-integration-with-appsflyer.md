@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Vizio Connected TV (CTV) app (channel) with AppsFlyer to receive attribution and event data for your campaigns on Vizio.
 
+<div id="about-vizio-ctv-attribution" />
+
 ## About Vizio CTV attribution
 
 The Vizio SmartCast OS for streaming runs across all Vizio TVs.
@@ -35,9 +37,13 @@ The Vizio API integration supports:
 * Vizio Smart TVs.
 * CTV-to-CTV attribution and event recording. Meaning, attribution and recording of Vizio first app opens (the equivalent of installs) and events that occur on a user's Vizio device.
 
+<div id="vizio-attribution-flow" />
+
 ### Vizio attribution flow
 
 ![CTV_attribution_flow_-_Vizio__1_.png](https://files.readme.io/f4ab4b6c9e045fe00b537814fa9f10746b525a5512e5805e62eb0c2e4c9a8615-6318406872337.png)
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -62,6 +68,8 @@ The following table lists the tasks required to integrate your Vizio CTV app wit
 | Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file by email method. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

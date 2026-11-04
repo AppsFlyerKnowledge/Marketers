@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Collaborations enable commerce media networks and brands to leverage combined data to create new ad revenue streams and achieve maximum campaign results.
 
+<div id="about-collaborations" />
+
 ## About collaborations
 
 The AppsFlyer <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> empowers commerce media networks and brands to partner up and unlock the potential of their first-party data to reach high-intent users. The secure, privacy-centric platform enables seamless collaborations, allowing partners to generate new ad revenue streams and build custom audiences from collaborative data for activation in the commerce media network or in media channels such as Meta, Google, and more.
+
+<div id="create-a-collaboration" />
 
 ## Create a collaboration
 
@@ -103,7 +107,7 @@ Associating sources means sharing your data (which includes <Anchor target="_bla
 
    <Image alt="select data view.png" src="https://files.readme.io/4f5df701745c0262d864407dd36cb26fe7649d63b9546ac9334d29bbe25296de-43774232835473.png" width="78.23%" />  
    Then click **Save**.
-4. #### **Optional:** Set custom data permissions by source
+4. #### <span id="optional-set-custom-data-permissions-by-source"></span>**Optional:** Set custom data permissions by source
 
    You can set custom permissions on a source (which differs from your general data permissions policy). **To set custom data permissions by source:**
 
@@ -123,6 +127,8 @@ Associating sources means sharing your data (which includes <Anchor target="_bla
 
 That's it! Your collaboration is ready. Now it's time for you and your collaborator to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">create audiences</Anchor> and run campaigns. Afterwards, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">set up measurement</Anchor> and analyze the results to gain insights.
 
+<div id="manage-collaborations" />
+
 ## Manage collaborations
 
 This section describes how to manage your existing collaborations.
@@ -141,11 +147,15 @@ This section describes how to manage your existing collaborations.
    <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
+<div id="associate-new-sources" />
+
 #### Associate new sources
 
 **To associate new sources:** Click **+ Associate source** > Select sources from the dropdown menu > Click **Save**.  
 
 <Image alt="Associate source in aexisting collaboration.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+
+<div id="manage-sources" />
 
 #### Manage sources
 
@@ -170,6 +180,8 @@ This section describes how to manage your existing collaborations.
 2. In the Collaboration dashboard, click the action (3 dots) menu at the top right and select the specific action.   
 
    <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+
+<div id="notes-on-suspended-collaborations" />
 
 > 📘 **Notes on suspended collaborations**
 >
@@ -210,6 +222,8 @@ You can invite all or some members of your team to the collaboration. Once invit
 
 </Accordion>
 
+<div id="administer-account" />
+
 ## Administer account
 
 Enforce legal governance that applies to all collaborations.
@@ -219,6 +233,8 @@ Enforce legal governance that applies to all collaborations.
 <Accordion title="Terms and conditions">
 
 You can define and enforce a legal Terms and Conditions agreement that governs all your collaborations. Once published, all collaborators must explicitly accept your terms before accessing collaboration data.
+
+<div id="apply-terms-and-conditions" />
 
 #### Apply Terms and Conditions
 
@@ -235,6 +251,8 @@ You can define and enforce a legal Terms and Conditions agreement that governs a
 
    The new terms are now enforced for all your collaborations. Collaborators will need to confirm that they have read and accept your Terms and Conditions to collaborate with you. If a collaborator doesn't accept, they won't be able to access or perform actions in the collaboration.
 
+<div id="update-existing-terms-and-conditions" />
+
 #### Update existing Terms and Conditions
 
 You can update the content (or URL) of your existing Terms and Conditions.
@@ -246,6 +264,8 @@ You can update the content (or URL) of your existing Terms and Conditions.
 3. If the URL has changed, enter the new URL in the **Terms and Conditions** field.
 4. Click **Publish new terms**.  
    Collaborators will need to confirm that they have read and accept the new terms to continue collaborating.
+
+<div id="notes" />
 
 > 📘 **Notes**
 >

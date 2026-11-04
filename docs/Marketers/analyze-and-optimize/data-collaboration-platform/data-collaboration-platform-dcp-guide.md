@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="53877 Need KB image for a new DCP KB (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
 
+<div id="about-the-data-collaboration-platform-dcp" />
+
 ## About the Data Collaboration Platform (DCP)
 
 The AppsFlyer Data Collaboration Platform (DCP) is an advanced, next-generation solution that empowers commerce media networks and brands to unlock the potential of their combined data. Through secure, privacy-centric features, the platform enables seamless collaborations, allowing businesses to generate new ad revenue streams and build custom audiences for activation of spot-on campaigns anywhere.
@@ -43,6 +45,8 @@ With access to a collaborative ecosystem of over 14,000 global brands and thousa
 * Create and maintain seamless integrations with IDR providers, other clean rooms, and platforms so you can scale, adapt, and collaborate across ecosystems while safeguarding data privacy.
 * Feel secure, knowing you’re growing your business aligned with global and local privacy regulations. Secure and compliant data collaboration is assured across all collaborations.
 
+<div id="use-cases" />
+
 ## Use cases
 
 See some collaboration use case examples.
@@ -53,9 +57,13 @@ See some collaboration use case examples.
 
 Exchanging anonymized data between commerce retailers and brands to create tailored ads based on individual shopping behaviors.
 
+<div id="example-non-endemic-advertising" />
+
 > 📄 **Example: Non-endemic advertising**
 >
 > A cross-sector collaboration: An affordable fashion brand engages supermarket customers who frequently purchase diapers (parents or caretakers of young children). They promote their ads for toddler clothing.
+
+<div id="example-endemic-advertising" />
 
 > 📄 **Example: Endemic advertising**
 >
@@ -69,15 +77,21 @@ Exchanging anonymized data between commerce retailers and brands to create tailo
 
 Identifying customer segments, such as "value-conscious shoppers" or "brand loyalists", who are considered ready-to-buy audiences, using anonymized purchase history and browsing behavior.
 
+<div id="example-non-endemic-advertising-1" />
+
 > 📄 **Example: Non-endemic advertising**
 >
 > A brand collaborates with a retailer to promote running shoes. The brand wants to engage shoppers who searched for running shoes within the last 7 days on the retailer's in-app search but didn't make a purchase.
+
+<div id="example-non-endemic-advertising-2" />
 
 > 📄 **Example: Non-endemic advertising**
 >
 > A clothing brand collaborates with a CMN hotel chain to promote its summer collection to travelers visiting tropical destinations.
 
 </Accordion>
+
+<div id="get-started-using-dcp" />
 
 ## Get started using DCP
 
@@ -145,6 +159,8 @@ Next, you and your collaborator can <Anchor target="_blank" href="/marketers/doc
 Now it's time to <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">set up measurement</Anchor> to see how your collaborative campaigns performed. Afterwards, check out the campaign results in the collaboration dashboard!
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

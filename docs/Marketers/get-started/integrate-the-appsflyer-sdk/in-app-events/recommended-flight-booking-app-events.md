@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your flight booking app.
 
+<div id="-flight-booking" />
+
 ## <Image alt="InApp_Events_flight.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> Flight booking
 
 Flight booking apps allow travelers to easily book flights while choosing from the best offers. The typical events that we suggest recording are booking a flight, searching for flights, and viewing offers.
@@ -33,6 +35,8 @@ Recording events can help you:
 * Learn about popular destinations
 * Analyze seasonal trends
 * Learn about popular airlines that users prefer to travel with
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -44,6 +48,8 @@ Recording events can help you:
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -228,6 +234,8 @@ When the user lands on the thank you page after a successful purchase
 | af\_receipt\_id | Order ID, required for CRITEO and Google Ad Words retargeting integration | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

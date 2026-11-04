@@ -27,9 +27,13 @@ x-zendesk:
 
 **Legacy SDK versions for iOS and Android will stop being supported on a fixed six-month cycle.** This cycle is designed to provide advanced notice, helping teams plan ahead and maintain full app functionality without disruption. Upgrading to the latest SDK ensures access to the newest features, improved stability, and ongoing support.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > To ensure a smooth transition, app developers are encouraged to update to the latest SDK version before the End-of-Support date.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## End of support vs. Deprecated
 
@@ -37,6 +41,8 @@ AppsFlyer distinguishes between **Deprecated** and **End-of-Support** SDK versio
 
 * **Deprecated versions:** SDK versions that are no longer recommended due to known issues, such as critical bugs. These versions can still send data to AppsFlyer, but continued use is discouraged. and upgrading to a supported version is strongly advised.
 * **End-of-Support versions:** SDK versions for which measurement is fully stopped across all platforms. For both Android and iOS, installs, sessions, and in-app events will not be measured. Any traffic from these versions (unless specifically excluded by AppsFlyer) will receive a 400 status code, meaning the SDK will attempt to send API calls as usual, but AppsFlyer servers will reject them, and the data will not be processed.
+
+<div id="ios-sdk-release-notes" />
 
 ## iOS SDK Release Notes
 
@@ -76,6 +82,8 @@ The table below provides release notes for supported iOS SDK versions, including
 | 6.13.2  <br />End of support:  <br />2027-03-08 | 2024-03-26 | <ul><li>Fixed an issue that was causing the release of apps using SPM in Xcode 15.3 to fail. See the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes#version-6132">developer release notes</Anchor> for more information.</li></ul> |
 | 6.13.1  <br />End of support:  <br />2027-03-08 | 2024-03-05 | <ul><li>Fixed an issue with sending consent data for non-GDPR users in a CMP consent flow (DMA).</li></ul> |
 | 6.13.0   <br />End of support:  <br />2027-03-08 | 2024-02-08 | <ul><li>Added support for Google's new EU consent policy</li></ul> |
+
+<div id="unsupported-sdk-versions" />
 
 ## Unsupported SDK Versions
 
@@ -136,6 +144,8 @@ The following SDK versions have reached **End-of-Support** status. These version
 | 6.0.2   <br />End of support: 2024-08-31 | 2020-08-27 | <ul><li>API name change:<br />deviceLoggingDisabled --> anonymizeUser</li><li>AppTrackingTransparency (ATT) dialog is required to collect IDFA for iOS 14</li><li>Added support for IDFV cross-promotion attribution</li></ul> |
 | 6.0.1 beta  <br />End of support: 2024-08-31 | 2020-08-06 | <ul><li>Support added for <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAdNetwork attribution</Anchor>, to help advertisers measure campaign success while maintaining user privacy</li></ul> |
 | 6.0.0 beta  <br />End of support: 2024-08-31 | 2020-08-04 | <ul><li>Extended debugging capabilities</li><li>Major changes to SDK functionality and API. [Learn more](/docs/appsflyer-ios-sdk-release-notes#ios-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

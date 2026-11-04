@@ -25,11 +25,15 @@ x-zendesk:
 
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 
+<div id="what-is-ab-testing" />
+
 ## What is A/B testing?
 
 A/B testing is a method used by marketers to test different elements of their ads and campaigns. Each ad contains elements (targeting, visual, texts), which may affect the conversion rates of potential users. Finding the best performing variations of your ad elements may have a significant impact on the bottom line of your mobile marketing efforts.
 
 This article explains **how advertisers can perform A/B tests using AppsFlyer, to find the best performing ad elements**.
+
+<div id="how-to-ab-test-mobile-campaigns" />
 
 ## How to A/B test mobile campaigns
 
@@ -51,6 +55,8 @@ The following steps apply to an A/B test you run using AppsFlyer.
 
 1. Use AppsFlyer's dashboard and data to compare the performance of the key KPIs between the two campaigns.
 2. Select the winning variation and use it in your live campaigns.
+
+<div id="ab-testing-creatives-and-targeting" />
 
 ## A/B testing creatives and targeting
 
@@ -104,6 +110,8 @@ Below we explain two methods of A/B testing using:
 
 </Accordion>
 
+<div id="ab-testing-ad-placement-on-mobile-web" />
+
 ## A/B testing ad placement on mobile web
 
 ![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
@@ -129,6 +137,8 @@ With the AppsFlyer <Anchor target="_blank" href="/marketers/docs/smart-banners-m
 1. Download the raw data reports for installs or in-app events. Use your selected subscriber parameter (e.g. af\_sub5) column to filter and sort your data.
 2. Compare the performance of the two ad placements, i.e. which placement got more installs or post-install events.
 
+<div id="ab-testing-media-sources" />
+
 ## A/B testing media sources
 
 Helping advertisers identify the best (and worst) performing media sources for their apps is what AppsFlyer was built for. However, **if advertisers fail to compare media sources correctly, they risk reaching the wrong conclusions about traffic quality**.
@@ -148,12 +158,16 @@ Helping advertisers identify the best (and worst) performing media sources for t
 3. Group by Media Source -> Campaign -> Ad set -> Ad.
 4. Compare KPIs to identify the top-performing media source.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
 >
 > * 1 and 2 are different ads on the same media source. Compare a single KPI for them, for example, retention day 4 rate, to A/B test creatives, targeting, or ad placement.
 > * 2 and 3 are ads on different media sources. If the creatives and targeting of the ads are identical, comparing a single KPI enables A/B testing the media source.
+
+<div id="using-audiences-split-for-easy-ab-testing-of-media-sources" />
 
 ### Using audiences split for easy A/B testing of media sources
 

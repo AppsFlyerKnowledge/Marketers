@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** While ad types have become sophisticated and complex, reporting has remained very narrow, focusing solely on view-through and click-through attribution. Enriched Engagement Types changes that by reflecting users' full spectrum of engagement and intentionality when viewing or interacting with an ad.
 
+<div id="introduction" />
+
 ## Introduction
 
 Over the past few years, new creative ad types, such as playable, skippable, and short-form video ads, have been introduced to the market, offering new ways to connect with users. These types of ads differ significantly from the static banners and lo-fi video units of the past and provide advertisers with broader capabilities and formats.
@@ -29,6 +31,8 @@ Over the past few years, new creative ad types, such as playable, skippable, and
 However, while ad types have become sophisticated, more complex, and more interactive, reporting has remained very narrow, focusing solely on view-through and click-through attribution. Different types of engagements hold different weights, levels of intent, and impact, but the current measurement methodologies have overlooked this new reality. Naturally, advertising networks want to ensure that the levels of intent and engagement are represented as best as possible, which has led to a lack of standardization across the ecosystem. This is ultimately causing advertisers to only gain a partial understanding of their ad spend performance.
 
 In collaboration with leading networks, AppsFlyer is introducing a standard for engagements to deliver trust and transparency throughout the ecosystem. Enriched Engagement Types reflect users' full spectrum of engagement and intentionality when viewing or interacting with an ad, from momentary exposure to direct response. This framework ensures these standards are kept throughout AppsFlyer’s partner ecosystem and beyond. Through Enriched Engagement Types, advertisers can ensure they have a highly standard and rich picture of their ad spend performance and can leverage these insights to improve budget allocation and increase ROAS.
+
+<div id="what-are-enriched-engagement-types" />
 
 ## What are Enriched Engagement Types
 
@@ -46,6 +50,8 @@ The following is the list of the enriched engagement types:
 | <span id="view"></span>view | An ad view is when an ad is rendered, and an impression takes place. |
 | <span id="listening"></span>listening | Listening is when a user listens to an audio ad, such as a podcast ad. |
 
+<div id="eet-attribution-priority-and-lookback-window" />
+
 ## **EET Attribution priority and lookback window**
 
 The Enriched Engagement Types framework does not impact the engagement type attribution priority. Hence, introducing EET is not expected to affect your install and conversion rate.
@@ -57,6 +63,8 @@ The table below specifies the <Anchor target="_blank" href="/marketers/docs/apps
 *When an engagement type isn’t reported, the default priority is set (2 for clicks, 3 for impressions).
 
 **Lookback windows for `engaged_click` and `engaged_view` can only be set for non-SRN networks. For SRNs, `engaged_click` and `engaged_view` share the same lookback window as clicks and are, therefore, set by the **Install Click-Through Attribution Lookback** sliders.
+
+<div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## Which networks can report engaged views and engaged clicks?
 
@@ -99,9 +107,13 @@ The table below lists networks that are qualified by AppsFlyer to report `engage
 
 * TikTok supports the enriched engagement type, but their engaged views are currently not properly reflected in reporting. AppsFlyer is working with TikTok to resolve this issue.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > **Not all the listed eligible networks actually support engaged clicks and engaged views**. To find out if a particular eligible network supports `engaged_clicks` and `engaged_views` in practice. refer to the raw data report containing engagements reported by the network and see if the `engagement_type` parameter is populated with the above values.
+
+<div id="set-lookback-windows-for-engaged-clicks-and-engaged-views" />
 
 ## Set lookback windows for engaged clicks and engaged views
 
@@ -111,6 +123,8 @@ The table below lists networks that are qualified by AppsFlyer to report `engage
 2. Select the integrated partner.
 3. Set the lookback windows for the engaged view-through and click-through attribution.
 
+   <div id="note-1" />
+
    > 📘 **Note**
    >
    > Engaged-click and engaged-view lookback windows are always set in the partner **Integration tab**, in contrast to view-through and click-through lookback windows, which can be set on the attribution links.
@@ -119,11 +133,17 @@ The table below lists networks that are qualified by AppsFlyer to report `engage
 
 4. Click **Save integration**.
 
+<div id="view-and-analyze-eet-data" />
+
 ## View and analyze EET data
+
+<div id="raw-data-reports" />
 
 ### Raw data reports
 
 `engagement_type` will be reported in raw data reports whenever reported by the ad network. It will also be available for contributors' data.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -138,19 +158,27 @@ The below scenarios will result in the `engagement_type` field in the raw data r
 
 In order to see the engagement type in raw data reports, advertisers need to select these fields in the relevant raw data product (engagement type and contributors engagement type are not selected by default).
 
+<div id="dashboards" />
+
 ### Dashboards
 
 Engagement type dimension is added in the dashboards.
 
 [![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Engaged views are always visible in the dashboard, even when view-through attribution is turned off.
 
+<div id="how-to-calculate-installs-per-mille-ipm" />
+
 ### How to calculate **Installs per Mille** (IPM)
 
 Total impressions include both engaged views and regular views. To calculate the IPM, you must **subtract engaged views from total impressions** because engaged views are a subset of impressions, and double-counting them would inflate the impression count.
+
+<div id="faqs" />
 
 ## FAQs
 
@@ -185,6 +213,8 @@ Meta only reports engagement\_type=engaged\_view in its SRN API. There is no eng
 Engaged views are measured and reported even if the **view-through** toggles are turned off. To identify those impressions as engaged views, use the `engagement_type = engaged_views` metric in dashboards and raw data reports instead of relying solely on `attributed_touch_type`.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

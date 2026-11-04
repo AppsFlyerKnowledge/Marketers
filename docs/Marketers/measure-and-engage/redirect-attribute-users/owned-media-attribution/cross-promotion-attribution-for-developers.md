@@ -26,7 +26,11 @@ x-zendesk:
 ---
 > **At a glance:** Implement additional code in the AppsFlyer SDK to enable cross-promotion attribution.
 
+<div id="implementing-cross-promotion-attribution-in-the-sdk" />
+
 ## Implementing cross-promotion attribution in the SDK
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -39,6 +43,8 @@ For example, using the map of parameters you can set the click lookback window a
 For a list of standard parameters that you can pass to the API method, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer attribution parameter.</Anchor>
 
 With the first launch of the promoted app, all the original parameters can be accessed via the SDK's conversion data API, for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> or <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor>.
+
+<div id="attribute-cross-promotion-clicks" />
 
 ### Attribute cross-promotion clicks
 
@@ -141,9 +147,13 @@ In iOS, an attribution Link is generated and returned to the `onOpenStoreLinkGen
 </Tab>
 </Tabs>
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > You can add any of these <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#attribution-link-parameters">attribution link parameters</Anchor> to the generated link.
+
+<div id="attribute-cross-promotion-impressions" />
 
 ### Attribute cross-promotion impressions
 
@@ -219,6 +229,8 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 
 </Tab>
 </Tabs>
+
+<div id="attribute-cross-promotion-with-non-native-platforms" />
 
 ### Attribute cross-promotion with non-native platforms
 

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Yahoo, an AppsFlyer ad network integrated partner, offers search and native advertising in one advertising platform. In addition to click-based mobile attribution, Yahoo offers cost and view-through attribution, which can be recorded with AppsFlyer.
 
+<div id="setting-up-yahoo" />
+
 ## Setting up Yahoo
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -41,6 +43,8 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory**. All other steps are descriptive or **optional**.
@@ -49,9 +53,13 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="advertiser-configuration" />
+
 ### Advertiser configuration
 
 The Integration tab is divided into different sections as described below.
+
+<div id="activate-partner" />
 
 ### Activate partner
 
@@ -59,9 +67,13 @@ On the **first visit** here, you will need to switch on the ***Activate Partner*
 
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="general-settings" />
+
 ### General settings
 
 Follow these steps for the general settings of Yahoo.
+
+<div id="click-through-attribution" />
 
 ### Click-through attribution
 
@@ -76,6 +88,8 @@ More details about the <Anchor target="_blank" href="/marketers/docs/set-up-look
 Turn this to on if you want to attribute view-through installs from Yahoo. The view-through lookback slider is available on the attribution link tab (described below).
 
 You can customize this value to 1-23 hours or 1-7 days. We recommend setting the View-through lookback window to 1 day, to align with Yahoo.
+
+<div id="agency-configuration" />
 
 ### Agency configuration
 
@@ -93,6 +107,8 @@ To find your account ID, log into the Yahoo dashboard, click the cog icon to ope
 ![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
 
 Click-through and view-through lookback windows are in read-only mode and should be configured by the advertiser.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -127,6 +143,8 @@ For agencies, the ***Sending option*** and the list of events available for mapp
 
 This tab is not applicable for Yahoo.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > For all SRNs, such as Meta ads, Apple Search Ads, Adwords, Snapchat, etc. this tab is not functional, as they do not use external attribution links.
@@ -136,6 +154,8 @@ This tab is not applicable for Yahoo.
 <div id="cost-tab" />
 
 <Accordion title="Cost tab">
+
+<div id="enabling-and-testing-yahoo-cost-integration" />
 
 ### Enabling and testing Yahoo cost integration
 
@@ -150,6 +170,8 @@ The cost integration provides the following aggregated data:
 * Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
 <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard.
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >
@@ -185,11 +207,15 @@ Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-a
 
 </Accordion>
 
+<div id="marking-events-as-conversions-in-yahoo" />
+
 ## Marking events as conversions in Yahoo
 
 You can mark as conversions the events that AppsFlyer sends to Yahoo through in-app event postbacks:
 
 ![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
+
+<div id="yahoo-raw-report" />
 
 ## Yahoo raw report
 
@@ -205,9 +231,13 @@ AppsFlyer receives the following parameters from Yahoo and maps them to the foll
 | Campaign Name | Campaign |
 | Site ID | Site ID |
 
+<div id="limitations" />
+
 ## Limitations
 
 * When you enable attribution for the first time, it takes up to 4 hours to be reflected in the Yahoo UI.
+
+<div id="skadnetwork-support" />
 
 ## SKAdNetwork support
 

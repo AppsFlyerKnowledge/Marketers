@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** RTB House, an AppsFlyer ad network integrated partner, provides retargeting technology for e-commerce and gaming companies. RTB House has developed its own retargeting solution, based on deep learning algorithms, for purchasing online ads in the Real-Time Bidding model. In addition to click-based mobile attribution, RTB House offers retargeting attribution, which can be recorded with AppsFlyer.
 
+<div id="setting-up-rtb-house" />
+
 ## Setting up RTB House
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -40,6 +42,8 @@ x-zendesk:
 
 RTB House's configuration window includes 3 active tabs: **Integration, Attribution link**, and **Permissions**. Click on the items below to read about the tabs setup.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -51,26 +55,38 @@ RTB House's configuration window includes 3 active tabs: **Integration, Attribut
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle on **Activate Partner** to enable setting up the integration parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to RTB House following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > As an ALL-Installs network, RTB House prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to RTB House.
 
+<div id="in-app-events-settings" />
+
 ### In-app events settings
 
 In this section, you can map your AppsFlyer events with RTB House via postbacks.
 
+<div id="region" />
+
 #### Region
 
 Enter the region of your RTB House data center. Possible options: **emea**, **us**, **asia**.
+
+<div id="in-app-event-postback-settings" />
 
 #### In-app event postback settings
 
@@ -121,6 +137,8 @@ Ad Revenue is not supported in the integration with this partner.
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

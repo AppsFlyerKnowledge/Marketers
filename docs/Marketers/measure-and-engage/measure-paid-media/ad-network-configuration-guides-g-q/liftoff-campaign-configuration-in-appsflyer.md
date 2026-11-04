@@ -26,11 +26,15 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Some media sources restrict sharing data with 3rd parties. AppsFlyer can't share user-level data of users acquired through these media sources with 3rd party platforms or services. All installs from such media sources are therefore sent as organic.
 >
 > For more details and a list of media sources that restrict sharing data with 3rd parties, click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention">here</Anchor>.
+
+<div id="setting-up-liftoff" />
 
 ## Setting up Liftoff
 
@@ -52,9 +56,13 @@ x-zendesk:
 
 The **Integration tab** is divided into different sections as described below.
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the **Activate partner** toggle on the first visit to enable its setup.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -62,12 +70,16 @@ The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivatio
 
 Activate, if you want to attribute view-through installs from Liftoff. The view-through lookback slider is available in the [**Attribution link**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab) tab.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Liftoff following user installs, rejected installs, and reengagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **This partner only** for events coming only from users attributed to Liftoff.  
 Select **All sources, including organic** to have your entire user base available to be reported to Liftoff.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -130,6 +142,8 @@ Ad revenue data is not supported by this partner.
 
 In this tab, you can select the permissions to grant Liftoff. Note that even if attribution is disabled for Liftoff, the permissions tab is active and you can grant control to Liftoff.
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 In this tab, you can select the permissions to grant Liftoff. Note that even if attribution is disabled for Liftoff, the permissions tab is active and you can grant control to liftoff.
@@ -145,6 +159,8 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 
@@ -172,6 +188,8 @@ Learn more about <Anchor target="_blank" href="/partners/docs/about-agency-accou
 
 </Accordion>
 
+<div id="set-up-skadnetwork-integration-with-liftoff" />
+
 ## Set up SKAdNetwork integration with Liftoff
 
 **To receive SKAdNetwork data from Liftoff:**
@@ -185,6 +203,8 @@ Learn more about <Anchor target="_blank" href="/partners/docs/about-agency-accou
 4. Reach out to your Liftoff Account Team to confirm that SKAdNetwork postbacks are being sent with conversion values.
 5. [Optional] To share SKAdNetwork transaction ID with Liftoff, turn **Share Transaction ID in SKAdNetwork mode** on.  
    Learn more about <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">transaction ID.</Anchor>
+
+<div id="product-feed-retargeting-with-liftoff" />
 
 ## Product feed retargeting with Liftoff
 

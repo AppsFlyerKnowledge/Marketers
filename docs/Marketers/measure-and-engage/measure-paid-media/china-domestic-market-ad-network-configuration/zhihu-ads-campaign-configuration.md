@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Zhihu Ads is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-zhihu-ads" />
+
 ## Setting Up Zhihu Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,10 +44,14 @@ Zhihu Ads's configuration window includes 3 active tabs: Integration, Attributio
 
 <Accordion title="Integration Tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -53,9 +59,13 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Toggle this to ON if you want to attribute view-through installs from Zhihu Ads. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default Postbacks
 
 ![mceclip2.png](https://files.readme.io/4f11e674b3e876d5d612a4700163520fa542bd255c3427640d1abe5be7cfaf7a-50900523403153.png)
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -85,6 +95,8 @@ In this tab, you can create the attribution links you want to send to Zhihu Ads 
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution Link Parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -106,6 +118,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Zhihu Ads.
@@ -116,9 +130,13 @@ More details about the <Anchor target="_blank" href="/marketers/docs/set-up-look
 
 ![netease-click-through.png](https://files.readme.io/02473962e9224f0df4339d9848ccae59b2ef2370f15144bb0b36a6de15756558-50900503191185.png)
 
+<div id="click-attribution-link" />
+
 ### Click Attribution Link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Zhihu Ads to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -131,6 +149,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
 [![](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -162,6 +182,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant Zhihu Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Zhihu Ads, the permissions tab is active and you can grant control to Zhihu Ads.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/0192ccb7682af8b56c1bb5f8d7d75c87941f94441b644cf6fa7973159bc961a0-50900503192977.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

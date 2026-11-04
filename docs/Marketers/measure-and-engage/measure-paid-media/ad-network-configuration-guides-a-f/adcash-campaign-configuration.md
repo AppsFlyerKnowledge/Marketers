@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Adcash, an AppsFlyer ad network integrated partner, is a worldwide advertising platform providing a fully programmable self-service demand-side platform.
 
+<div id="setting-up-adcash" />
+
 ## Setting up Adcash
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,6 +44,8 @@ Adcash's configuration window includes 3 active tabs: Integration, Attribution l
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -51,18 +55,26 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to turn on **Activate Partner** to enable setup of the integration tab parameters. The toggle must be on for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="general-settings" />
+
 ### General settings
 
 To enable the integration with Adcash, enter your **Goal ID (Adcash)** credentials. Note that the ID cannot include any symbols or spaces.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Default postbacks for installs are sent to Adcash if they were attributed to Adcash—meaning, the user who performed it came from Adcash.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -88,6 +100,8 @@ In this tab, you can create the attribution links you want to send to Adcash for
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -109,6 +123,8 @@ Add any other parameter to the attribution link simply by typing it in a new par
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Adcash.
@@ -116,6 +132,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -146,6 +164,8 @@ Ad Revenue is not supported by Adcash.
 In this tab, you can select the permissions to grant Adcash. Note that even if attribution is disabled for Adcash, the permissions tab is active and you can grant control to Adcash.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

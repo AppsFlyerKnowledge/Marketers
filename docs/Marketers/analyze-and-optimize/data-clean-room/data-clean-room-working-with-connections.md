@@ -25,12 +25,16 @@ x-zendesk:
 
 > **At a glance:** Connect your cloud services to the Data Clean Room in order to upload data and receive reports.
 
+<div id="overview" />
+
 ## Overview
 
 Once you have set up your cloud services for use with the Data Clean Room (DCR), the next step is to connect them to the DCR.
 
 * The connections from which the DCR reads first-party data from your systems are called **inbound connections.** You use these connections when setting up your custom data sources.
 * The connections through which the DCR delivers reports after processing are called **outbound connections.** You use these connections when setting up your reports.
+
+<div id="creating-inbound-connections" />
 
 ## Creating inbound connections
 
@@ -57,6 +61,8 @@ Either way, the process is the same, and you can use the created connections in 
    * If there are no connections defined in your account, the **New connection** dialog will open, prompting you to create one.
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) button to open the **New connection** dialog.
 2. Continue with the instructions in the [Complete the connection](#complete-the-connection) section below.
+
+<div id="complete-the-connection" />
 
 #### Complete the connection
 
@@ -96,6 +102,8 @@ In the **New connection** dialog, enter the name of the <Anchor target="_blank" 
 
 </Accordion>
 
+<div id="creating-outbound-connections" />
+
 ## Creating outbound connections
 
 The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Because reports are delivered via Data Locker, outbound DCR connections are actually Data Locker connections. You can choose to create these connections either:
@@ -104,6 +112,8 @@ The DCR delivers reports to your selected cloud services using <Anchor target="_
 * As part of the report creation process (starting from the DCR page in AppsFlyer).
 
 Either way, the process is largely the same, and you can use the created connections in exactly the same way.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -128,7 +138,11 @@ Either way, the process is largely the same, and you can use the created connect
 2. Continue with the instructions in the [Complete the connection](#complete-the-connection-1) section, below.
 3. After creating the connection, return to the DCR tab in your browser and select the newly created connection from the list of Data Locker connections.
 
+<div id="complete-the-connection-1" />
+
 #### Complete the connection
+
+<div id="important" />
 
 > 🚧 **Important!**
 >

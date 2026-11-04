@@ -33,9 +33,13 @@ It takes just a few minutes to set up and it’s totally free of charge – no u
 
 The platform is trusted by more than 40,000 game developers worldwide, from indies to world-renowned studios, and handles over five billion unique events every day across 2+ billion devices. GameAnalytics is widely integrated, with SDKs for every major game engine and platform. You can sign up for free today at https://gameanalytics.com/
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-gameanalytics" />
 
 ## Setting up GameAnalytics
 
@@ -59,10 +63,14 @@ The Game Analytics configuration window uses only the ***Integration*** tab.
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -72,6 +80,8 @@ Game Analytics connects with AppsFlyer via a unique Game Key. If you don't alrea
 
 ![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Game Analytics user installs. Use this section to define sending these postbacks.
@@ -79,6 +89,8 @@ AppsFlyer can send automatic postbacks to Game Analytics user installs. Use this
 ![Swrve_msc_new_4.png](https://files.readme.io/6dc59212bec2f68ca6b4c26d77324f204c67fedb1329fea8dda41fcefc832a92-18274501554449.png)
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Game Analytics or select **Off**.
+
+<div id="in-app-event-settings" />
 
 ### In-app event settings
 

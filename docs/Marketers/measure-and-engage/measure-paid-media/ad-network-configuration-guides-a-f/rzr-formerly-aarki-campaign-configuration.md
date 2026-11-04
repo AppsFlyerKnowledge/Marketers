@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="RZR Logo Horizontal gradient black wordmark (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
 
+<div id="setting-up-rzr" />
+
 ## Setting up RZR
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,13 +46,19 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 <span id="01ECJ9TJKEFXN53XDEBJ5Z92SS"></span>On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner. For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/user-level-data-retention"><span id="01ECJ9TJKFY5Q8P4QS57HD44T3"></span>here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, RZR prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to RZR.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -62,11 +70,15 @@ x-zendesk:
 
 <span id="01ECJ9TJKFE4E8GZQ2EN3Z1SM4"></span>Toggle this to ON if you want to attribute view-through installs from RZR. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 <span id="01ECJ9TJKFT13WB1T328ET3PGC"></span>Send automatic postbacks to RZR following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 <span id="01ECJ9TJKFQH37DQZ3V3NAESRF"></span>Select **Only events attributed to this partner** for events coming only from users attributed to RZR. Select **Events attributed to any partner or organic** to have your entire user base available to be reported to RZR.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -101,6 +113,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKFTGNEZ68AR6DGXJNA"></span>This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 <span id="01ECJ9TJKFJRJ2BYN069CK80C8"></span>In this section, select which parameters you want to add to the attribution link.
@@ -114,6 +128,8 @@ x-zendesk:
 * <span id="01ECJ9TJKGQPS0GAY5SY562VFS"></span>**Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering. **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 <span id="01ECJ9TJKGQN0Y1H6F2WNHRBCV"></span>Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**<span id="01ECJ9TJKG3AQCMW2FDDZ7HWWB"></span>about AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -145,6 +161,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKH449C02X1Y3ESR48Y"></span>**Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 <span id="01ECJ9TJKHGWANE9EGZZ0KKEX9"></span>This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to RZR.
@@ -153,9 +171,13 @@ x-zendesk:
 
 <span id="01ECJ9TJKHY557S7J91YTE5VH8"></span>More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows"><span id="01ECJ9TJKHWEDC7RP2ZHHPFDNV"></span>click lookback window here</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 <span id="01ECJ9TJKJ6TJBPEP5JNEPYTVB"></span>This is the attribution link that contains all the setup information you have set for it. Send it to RZR to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -166,6 +188,8 @@ x-zendesk:
 <span id="01ECJ9TJKJB20VJH63A8NK3KGB"></span>**Attribution link parameter:** af\_viewthrough\_lookback
 
 <span id="01ECJ9TJKJNTQ7AJVYKVWYMJNZ"></span>More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows"><span id="01ECJ9TJKJX8GHDCAW0QQYD4BV"></span>view-through attribution here</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -184,6 +208,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 * Follow <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">these integration instructions</Anchor>.
 
 <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
+
+<div id="warning" />
 
 #### Warning
 
@@ -207,6 +233,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 
 <span id="01ECJ9TJKQFJM45QTAMC6AJQW3"></span>Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 * <span id="01ECJ9TJKQAHY9CZ2H3W09GQPZ"></span>***<span id="01ECJ9TJKQXT4HNE0HKH13F4SX"></span>Allow to configure integration*** - permit the partner to setup the integration tab (except in-app event postbacks)
@@ -220,6 +248,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 <span id="01ECJ9TJKQJ0Y1QQK4EM92C06V"></span>Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab"><span id="01ECJ9TJKQZ5ADC4QSTHP0KN95"></span>ad network permissions</Anchor>.
 
 <div id="01ECJ9TJKRMD549KXA59E682CH" />
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

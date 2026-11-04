@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Test the Web SDK PBA plugin integration.
 
+<div id="test-pba-web-events" />
+
 ## Test PBA web events
 
 **Principles of using the test page**
@@ -34,11 +36,15 @@ Web SDK sends web events to PBA, which are made available via PBA dashboards and
 * Made available to you in the user interface. This includes processing errors. If they exist, send corrected events again to make sure they are processed correctly.
 * Are processed like any other event during daily processing. This means they are added to the dashboards and raw data.
 
+<div id="web-sdk-integration-test-page" />
+
 #### Web SDK integration test page
 
 <div id="page-main-view" />
 
 <table><tbody><tr><td><p><strong>Page main view</strong></p><p><a href="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"><img alt="TestScreen_us-en.jpg" src="https://files.readme.io/345bb7bfffcb7756c0a61d05daadd8a355df5a7b7a07adaeeef203a64adc79bf-360011199758.jpg"/></a></p><ul><li>The most recent events appear first.</li><li><strong>Event cache</strong>:<ul><li>Contains up to 100 events</li><li>Older events are deleted to make way for newer events</li><li>Cached events are deleted after 24 hours</li></ul></li><li><strong>Page controls</strong>:<ul><li><strong>Refresh rate indicator</strong>: The page refreshes automatically every 5 seconds.</li><li><strong>Clear all</strong>: Clears events from the cache permanently. <strong>Note!</strong> The cache is common to websites sharing the same web dev key. Thus, if another developer is using the test page, it will clear for them as well. </li><li><strong>Pause/start</strong>: Pauses automatic refresh. New events don't display until you click start. </li></ul></li></ul><p><strong>Event table columns</strong></p><table><thead><tr><th>Field</th><th>Description</th></tr></thead><tbody><tr><td>Time (UTC)</td><td>Event time</td></tr><tr><td>Event type</td><td><p>Event types are as follows:</p><ul><li>Events sent by you:<ul><li><code>EVENT</code></li><li><code>setCustomerUserId</code></li><li><code>pageLoad</code>: Sent by the web SDK each time a page is loaded/refreshed on your website</li></ul></li></ul></td></tr><tr><td>Event content</td><td><p>The event payload, as recorded by PBA.</p></td></tr><tr><td>Comments</td><td><ul><li><strong><span>Valid</span></strong>: PBA received and recorded the event. No further action is required.</li><li><strong>Invalid</strong>: List of errors requiring corrective action. The error message format is:<br/>event field name: error description </li><li>Hover over error messages to see details:<br/><p><img alt="PBAWebSDKTestingErrorMessagesPopup_en-us.png" src="https://files.readme.io/0e050e60dbf9f1289880b5d58c4885d4be66392265986eaf4b2f76876697e429-360011317358.png"/></p></li></ul></td></tr></tbody></table></td></tr><tr><td><p><strong>Drill-down view<br/><br/></strong><a href="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"><img alt="mceclip0.png" src="https://files.readme.io/893f2654c8a3d4f9e8bce43728c65723d9fe1583825b2ae8c2276afc33612511-360011199738.png"/></a></p><p>Click an event row to display its contents after processing. See <a href="./pba-web-sdk-integration-guide#web-sdk-event-parameters" target="_blank">Web SDK event parameters</a> for additional information</p></td></tr></tbody></table>
+
+<div id="procedures" />
 
 ## Procedures
 
@@ -115,6 +121,8 @@ Send example events of each of the types described.
 | 3 | <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#recording-event-scenarios">Start sending web events</Anchor> to verify PBA processes them correctly.<br /><br />**Note:**<br /><br />If not specified, `eventRevenue` and `eventRevenueCurrency` are populated with default values:<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[<Image alt="PBAWebSDKTestEventEVENT_en-us.png" src="https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png" width="233px" />](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />See <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">Web SDK event parameters for additional details.</Anchor> | [<Image alt="mceclip5.png" src="https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png" width="226px" />](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Troubleshooting
 

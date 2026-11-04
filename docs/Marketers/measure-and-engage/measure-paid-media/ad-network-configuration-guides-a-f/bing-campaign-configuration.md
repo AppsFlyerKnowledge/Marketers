@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Bing, an AppsFlyer ad network integrated partner, is one of the world's leading search engines. You can manage user acquisition campaigns through Bing and attribute them with AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Microsoft requires attribution providers to delete its user-level data 13 months after the install. This means that the events performed by these users 13 months after they install the app are counted as organic. Past aggregate data remains the same.
+
+<div id="set-up-bing" />
 
 ## Set up Bing
 
@@ -48,14 +52,20 @@ See <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#a
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 On the **first visit**, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Send automatic postbacks to Bing following user installs.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

@@ -30,17 +30,25 @@ x-zendesk:
 ---
 > **At a glance:** Protect your AppsFlyer account by defining an API allowlist.
 
+<div id="" />
+
 ## [<Image alt="API allowlist" src="https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png" width="609px" />](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)
+
+<div id="overview" />
 
 ## Overview
 
 Protect your data from unauthorized access by setting up an API allowlist that specifies the IP addresses that can make API calls to your AppsFlyer account. Once your allowlist is active, only API calls originating from those IP addresses will be permitted while calls from all other IP addresses will be denied.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > * Only admins can access and manage the allowlist.
 > * Use of the allowlist is optional and is inactive by default.
 > * Activation of the allowlist is at the account level and applies to all apps in the account.
+
+<div id="set-up-your-api-allowlist" />
 
 ## Set up your API allowlist
 

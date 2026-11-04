@@ -25,18 +25,26 @@ x-zendesk:
 ---
 > **At a glance:** Measure app engagement and quality of your users, and optimize campaigns using in-app events data.
 
+<div id="overview" />
+
 ## Overview
 
 In-app events enable marketers to measure app engagement and user quality from different sources and to build an appropriate user acquisition strategy. Ad networks use in-app event information to optimize campaigns and run cost-per-action/event campaigns. Ad networks receive in-app event data via postbacks, which are sent in real time. <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Learn more about rich in-app events</Anchor>.
+
+<div id="postback-in-app-event-selection" />
 
 ## Postback in-app event selection
 
 Marketers can select which in-app events they want to send postbacks to ad networks, using the settings described in this article.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * In-app events include **rejected events**, meaning in-app events blocked by Protect360 or events found to be non-compliant with target validation rules.
 > * If the **In-app event postbacks** section doesn't appear in the **Integration** tab, it means the partner hasn't yet set up in-app event recordings with AppsFlyer during its preliminary configuration. The partner can contact AppsFlyer using the <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">partner assistant widget</Anchor> to finish the integration.
+
+<div id="in-app-event-postback-window" />
 
 ## In-app event postback window
 
@@ -57,17 +65,25 @@ The postbacks are always sent based on the **current** window setting. See the f
 | January 15 | The window is changed to 20 days. |
 | January 18 | The user makes another purchase.<br /><br />This time the postback is sent, because the event falls within the current window (20 days). |
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > When you select the [**All media sources, including organic** setting](#options-for-sending-postbacks), the partner who configured it receives a postback for every conversion event the advertiser receives. This happens even if the advertiser attributed the event to another partner, as long as the event occurred within the postback window that AppsFlyer defines for the partner who configured the setting.
+
+<div id="default-postback-window" />
 
 ### Default postback window
 
 When starting to set up in-app event postbacks, the default window is automatically set to six months.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > If you started using in-app event postbacks with a specific partner before July 30, 2019, the default window is Lifetime. This means that in-app event postbacks are always sent.
+
+<div id="who-can-configure-postback-windows" />
 
 ### Who can configure postback windows
 
@@ -78,6 +94,8 @@ The following roles can configure postback windows:
   **Note:** A marketer and an agency working with the same ad network can configure postback windows separately, based on their contracts with the network.
 * Partners, if they're given the **Allow to configure in-app event postbacks** <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor>.
 
+<div id="event-mapping" />
+
 ## Event mapping
 
 Each marketer can give a different name to an event of the same type. Such event names might also differ from the partner names.
@@ -86,9 +104,13 @@ For example, when a user purchases something through an app, one marketer may na
 
 To make sure that the marketer's events match the same events as the partners', event names must be mapped.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Events mapped in the Integration tab for a specific partner apply to both standard and <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAdNetwork (SKAN) postbacks.</Anchor>
+
+<div id="mapping-methods" />
 
 ### Mapping methods
 
@@ -97,6 +119,8 @@ Each partner decides which of the following methods are to be used for mapping t
 * [Enter the partner event ID](/docs/in-app-event-postback-configuration#enter-the-partner-event-id)
 * [Select the event ID from the list](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [Send events as they are (unmapped)](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -107,6 +131,8 @@ Each partner decides which of the following methods are to be used for mapping t
 
 * **AppsFlyer event**: From the list of your app events, select an event.
 * **mapped to partner event**: In the text field, enter the event ID as received from the partner that corresponds to your app event (AppsFlyer event)
+
+<div id="note-5" />
 
 > 📘 **Note**
 >
@@ -134,6 +160,8 @@ You can choose which unmapped events to send to the partner:
 
 * **Add manually:** Select specific events.
 * **Send all events (excluding uninstalls and sessions)**. This doesn't include uninstalls, sessions (app launches), and the `af_app_opened` event.
+
+<div id="note-6" />
 
 > 📘 **Note**
 >
@@ -163,12 +191,16 @@ You can choose which unmapped events to send to the partner:
 
 For more information on mapping events, see <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">in-app event postbacks</Anchor>.
 
+<div id="options-for-sending-postbacks" />
+
 ### Options for sending postbacks
 
 For each event, you can choose in which case to send the postbacks (within the postback window):
 
 * **This partner only**: Send postbacks only when the event is attributed to this partner, meaning the user who performed it came from this partner.
 * **All media sources including organic**: Send postbacks to all media sources for events attributed to any partner and for organic events, meaning when the user who performed it came from any media source. **Note**: When **All media sources including organic** is selected, postbacks for other partners don't contain attribution data.
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### Data to include in the postbacks
 
@@ -179,11 +211,15 @@ You can choose which kind of event data to share with the partner in the postbac
 * **Values & revenue**: Send all the event parameters, **including** the revenue value (if it exists in the event).
 * **Values, revenue & net revenue**: Send all event parameters, including the revenue and net revenue values (if they exist in the event).
 
+<div id="note-7" />
+
 > 📘 **Note**
 >
 > The **Values, revenue & net revenue** option requires an **ROI360 Advanced** subscription and is available only for `af_purchase*` and `af_ars_*` events.
 
 We recommend sharing revenue if you want ad networks to optimize your campaigns and improve campaign results. However, sharing revenue is not mandatory. Make sure to enable revenue sharing only for events that have `af_revenue` or `af_projected_revenue` defined in their event value. Otherwise, ad networks get events with an empty revenue value.
+
+<div id="share-revenue" />
 
 #### Share revenue
 
@@ -199,9 +235,13 @@ When the **Values, revenue & net revenue** option is selected, `af_net_revenue` 
 https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-monetary=(net-monetary)&content_id=(af_content_id)
 ```
 
+<div id="note-8" />
+
 > 📘 **Note**
 >
 > When choosing **No values & no revenue** or **Values & no revenue**, the respective parameters are masked with N/A.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -223,6 +263,8 @@ The table below shows how the parameters are sent:
 | **Values & no revenue** | `{"af_currency":"N/A","af_content_id":"1234567","af_revenue":"N/A","af_content_type":"category_a"}&monetary=N/A&content_id=1234567` | N/A | N/A | N/A |
 | **Values & revenue** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_content_type":"category_a"}&monetary=50.87&content_id=1234567` | 50.87 | USD | N/A |
 | **Values, revenue & net revenue** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_net_revenue":35.61,"af_content_type":"category_a"}&monetary=50.87&net-monetary=35.61&content_id=1234567` | 50.87 | USD | 35.61 |
+
+<div id="conditional-in-app-event-postbacks" />
 
 ### Conditional in-app event postbacks
 
@@ -257,6 +299,8 @@ A marketer with a gaming app wants to optimize campaigns running through an ad n
 4. You can add more conditions, just make sure you enter all the fields of the existing condition first.
 5. Click **Save integration**.
 
+<div id="considerations" />
+
 #### Considerations
 
 When configuring conditions, make sure the following considerations are met for the event to be sent to the partner:
@@ -280,10 +324,14 @@ When configuring conditions, make sure the following considerations are met for 
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **Note**
 >
 > * It's recommended to test this feature with a test app or for minor events to understand its impact on campaign optimization.
 > * To see the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">postback content</Anchor>, you can download the raw data postback report.
+
+<div id="editing-multiple-events" />
 
 ### Editing multiple events
 
@@ -304,6 +352,8 @@ While mapping events, values in the fields **for users from** and **including**�
 
 ![Bulk actions panel for editing the for-users-from and including settings across multiple events](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### Custom events
 
 The list of events available for mapping shows only the events already reported by the SDK or from server-to-server events sent to AppsFlyer. If the event you want to map doesn't appear in the dropdown list, this can happen for the following reasons:
@@ -320,6 +370,8 @@ The list of events available for mapping shows only the events already reported 
 4. Map the event to the partner identifier.
 5. Click **Save Integration** to make sure the mapping is recorded.
 
+<div id="note-10" />
+
 > 📘 **Note**
 >
 > * Adding custom events on the postback page doesn't automatically pull them from your app. Events must be configured in the SDK or S2S for proper functionality. See <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#sending-events">how to send events to AppsFlyer</Anchor>.
@@ -330,6 +382,8 @@ The list of events available for mapping shows only the events already reported 
 
 * Can't add custom events
 * Can only view and/or map events after the marketer added the event and granted the necessary <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions</Anchor>.
+
+<div id="event-mapping-by-ad-networks" />
 
 ## Event mapping by ad networks
 
@@ -342,9 +396,13 @@ Marketers can allow ad networks to map the events on their own. To do so, a mark
 
 Once the ad network has received the permissions, it can map the events by following the instructions in the [Type Event ID Into Text Field](#mapping-methods).
 
+<div id="event-mapping-by-agencies" />
+
 ## Event mapping by agencies
 
 Marketers can allow agencies to configure in-app event postbacks.
+
+<div id="note-11" />
 
 > 📘 **Note**
 >

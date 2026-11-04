@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Cross-platform (CTV, PC, and console platforms) reports available via AppsFlyer. **Note**: For platforms with Android and iOS operating systems, <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate</Anchor> and <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data</Anchor> report availability is the same as for mobile apps.
 
+<div id="cross-platform-reports" />
+
 ## Cross-platform reports
 
 Cross-platform reports:
@@ -32,6 +34,8 @@ Cross-platform reports:
 * Contain data for all media sources, both non-organic and organic.
 * Descriptions of the report fields are in the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data field dictionary</Anchor>.
 
+<div id="report-types-and-availability" />
+
 ### Report types and availability
 
 | Report | Remarks | Report Sample |
@@ -40,6 +44,8 @@ Cross-platform reports:
 | Cross-platform in-app events | Requires a Data Locker subscription. | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrOchvROUOrhb4JuHTT1IqGXD94rhsu2sQ6v_i9bGoavSUXV7IU6kktxTEYHeIPXw4XujZY2aUEzRh/pub?output=csv">Download</Anchor> |
 | Cross-platform sessions | Requires a Data Locker subscription. |  |
 | Cross-platform impressions | <ul><li>Includes impression data from cross-platform OneLink links.</li><li>Doesn't require a Data Locker subscription.</li></ul> | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_d8Tf0AzwOybJQG1L7d42l7LhMO5SuAcHwguRcV32mdvTZVSk6U-jTVuYFfQtTCo0rte-k7pDeOqi/pub?gid=964292901&single=true&output=csv">Download</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

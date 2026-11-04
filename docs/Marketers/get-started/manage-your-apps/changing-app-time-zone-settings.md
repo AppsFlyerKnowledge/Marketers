@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Set or change an app-specific time zone in order to view the app's data more closely aligned with your time zone or that of your advertising partners. Understand the effect of time zone changes on the reporting of data within the AppsFlyer platform.
 
+<div id="why-change-the-time-zone" />
+
 ## Why change the time zone?
 
 The default time zone for new apps is UTC (UTC +0). If the app time zone is changed, this affects how data appears in the platform.
@@ -37,6 +39,8 @@ The default time zone for new apps is UTC (UTC +0). If the app time zone is chan
 
 * Agencies: view data using the time zone set by the app owner. Agencies can't set the time zone.
 * Ad networks: view data using UTC at all times irrespective of the timezone set by the advertiser.
+
+<div id="changing-the-time-zone" />
 
 ## Changing the time zone
 
@@ -52,6 +56,8 @@ An admin user can make timezone changes. Changes can be made once every 48 hours
 6. Click **Save settings**.  
    Change takes effect at the beginning of the next day at 00:00 UTC.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > * October 24 at 22:00, the timezone is changed (meaning steps 1-6 above are completed).
@@ -63,9 +69,13 @@ After changing the time-zone:
 * Aggregate reports will have some anomalies on the day and the day following the time zone change.
   * Cost data is duplicated on the day and the day following the change.
 
+<div id="aggregate-data" />
+
 #### Aggregate data
 
 <table><thead><tr><th rowspan="2">Reporting method </th><th colspan="3">Report date range</th></tr><tr><th>Starts and ends <span>before</span> the change </th><th>Starts and ends <span>after</span> the change </th><th>Starts before and ends after the change</th></tr></thead><tbody><tr><td>My Dashboards</td><td><p>Not supported. Data is available only in UTC when the dashboard’s timezone is changed.</p></td><td>Current time zone</td><td>Data is presented only for dates after the change.</td></tr><tr><td>Overview dashboard</td><td>Previous time zone</td><td>Current time zone</td><td><p>Split:</p><ul><li>Before the change: UTC</li><li>After the change: current time zone</li></ul></td></tr><tr><td>Events and custom dashboards</td><td>UTC</td><td>Current time zone</td><td><p>Split:</p><ul><li>Before the change: UTC</li><li>After the change: current time zone</li></ul></td></tr><tr><td>Activity dashboard</td><td>Previous time zone</td><td>Current time zone</td><td>UTC</td></tr><tr><td>Cohort, Retention, Pivot</td><td>UTC</td><td>Current time zone (1)</td><td>UTC</td></tr><tr><td>Master API</td><td colspan="3"><ul><li>Default: UTC</li><li>Option: <a href="./pull-api-aggregate-data" target="_blank">Select the time zone when you pull data</a> </li></ul></td></tr><tr><td colspan="4">Notes:<br/>(1) All apps must use the same app-specific time zone for a given reporting period. If not, then the time zone reverts to UTC.</td></tr></tbody></table>
+
+<div id="raw-data-reports" />
 
 #### Raw data reports
 

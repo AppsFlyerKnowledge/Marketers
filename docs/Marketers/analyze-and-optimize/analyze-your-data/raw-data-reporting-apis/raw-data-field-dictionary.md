@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** The data field dictionary (raw data specification) describes field contents. It should be used to help you understand what fields mean, how they are formatted, and when they are available.
 
+<div id="overview" />
+
 ## Overview
 
 The Raw data field dictionary table lists the raw data fields available in various AppsFlyer reports. The table is consistently being updated as additional raw data fields are added in AppsFlyer.
@@ -60,6 +62,8 @@ The columns in the dictionary table are:
   * **Enum n char**: Enum fields can only contain specific values. For example, cost currency has 3 characters and can contain only currency codes as specified
   * **Enum 5 char boolean:** The value of the field can be either `TRUE` or `FALSE`
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * You can also <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDdd2FKVQ0eISEwGVYyTeF4JD0rlOLnrepz8Nf1R3Kc6o7AESDwXQLOuSB41xN6wIuhmIFlb5b9Gvp/pub?output=xlsx">download the table</Anchor>.
@@ -70,6 +74,8 @@ The columns in the dictionary table are:
 >     * When configuring your BI systems, it's best to configure all main AppsFlyer schema fields, even if a given report always returns them as null or empty values. This enables you to easily ingest the data if and when it becomes available.
 >     * If a field is not part of the main AppsFlyer report schema, it's only contained in specific reports. For example, SKAN reports.
 >   * **Report delivery method**: The downloaded CSV indicates whether a given field is available via Push API, Export data/Pull API, and Data Locker. **Note**: Even if a field is part of the main AppsFlyer report schema, it may not be part of reports delivered by a specific method. For example, the placement field is part of the main AppsFlyer schema, but it only displays in reports delivered via Data Locker, Pull API, or the Export data page; not via Push API.
+
+<div id="field-dictionary" />
 
 ## Field dictionary
 

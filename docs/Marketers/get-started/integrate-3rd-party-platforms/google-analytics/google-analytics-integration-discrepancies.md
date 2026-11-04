@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Understand the discrepancies that might occur between AppsFlyer and Google Analytics.
 
+<div id="discrepancies-in-data-between-appsflyer-and-google-analytics" />
+
 ## Discrepancies in data between AppsFlyer and Google Analytics
 
 Listed below are reasons for discrepancies between AppsFlyer and Google Analytics.
@@ -43,6 +45,8 @@ When <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-pri
 Google Analytics associates events by Customer User ID. The Customer User ID that AppsFlyer sends by default is GAID or IDFA.
 
 Therefore, Google Analytics sees re-installing users (users who install, uninstall and then reinstall) as the same users.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -70,6 +74,8 @@ In addition, discrepancies might arise if you implement both GA and AppsFlyer SD
 
 If the time zone of your GA dashboard differs from that of your app's timezone in AppsFlyer, data might not align.
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > Your app's dashboard is configured to GMT +13 and your GA dashboard is configured to GMT. This means that your app's dashboard is ahead of your GA's dashboard by one day.
@@ -93,6 +99,8 @@ Because AppsFlyer and Google Analytics deduplicate events differently, discrepan
 <Accordion title="Session count">
 
 AppsFlyer counts sessions each time the app is launched or comes back to the foreground. Google Analytics counts sessions according to CID (customer user id) and activity.
+
+<div id="example-2" />
 
 > 📄 **Example**
 >

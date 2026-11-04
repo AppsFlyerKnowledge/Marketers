@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **At a glance:** Activate or deactivate partner integrations, allowing or denying them from getting your data and performing actions.
 
+<div id="activation-overview" />
+
 ## Activation overview
 
 Partner integrations can be either active or inactive. An integration is first activated by turning on the **Activate partner** toggle from the main integration page. There are various integration types. An integration can also be considered active if any other [integration type](#id) (see table below) is turned on, even while the **Activate partner** toggle is turned off.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -67,6 +71,8 @@ The following table presents the impact of partner activation settings on attrib
 
 </Accordion>
 
+<div id="activate-a-partner-integration" />
+
 ## Activate a partner integration
 
 **To activate or edit the main integration (Integration tab) of the currently selected app:**
@@ -79,9 +85,13 @@ The following table presents the impact of partner activation settings on attrib
 
 See [other integration types](#id).
 
+<div id="caution" />
+
 > ❗️ **Caution**
 >
 > Make sure not to use the **Activate partner** setting to pause or end campaigns. Doing so could cause irreversible damage to active campaign measurement.
+
+<div id="who-can-activate-an-integration" />
 
 #### Who can activate an integration?
 
@@ -91,6 +101,8 @@ Partner integrations can be activated by marketers and agencies in accordance wi
 | --- | --- | --- |
 | Marketer | Activates for self-use and  on behalf of agencies | Activates for self-use |
 | Agency | Can't activate | Activates agency-appointed non-SRNs |
+
+<div id="deactivate-a-partner-integration" />
 
 ## Deactivate a partner integration
 
@@ -110,9 +122,13 @@ You can deactivate a partner integration of your app by turning off the **Activa
    2. Select a different app from the drop-down list.
    3. Repeat steps 2-4.
 
+<div id="partner-and-agency-access-to-dashboards" />
+
 ## Partner and Agency access to dashboards
 
 Partners and agencies have different dashboard views and configuration options, according to their permissions.
+
+<div id="partner-visibility" />
 
 ### Partner visibility
 
@@ -123,6 +139,8 @@ Partners and agencies have different dashboard views and configuration options, 
 | --- | --- |
 | Marketer | Yes |
 | Agency | No |
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 
@@ -135,10 +153,14 @@ You can grant agencies permission to work with your app and run traffic on your 
 3. Go to the **Permissions** tab and turn on **Agency Permissions.**
 4. [Optional] Grant the agency additional <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">permissions</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * An **agency** can activate or deactivate the **Activate partner** setting for **non-SRN partners**.
 > * A **Marketer** can activate or deactivate the **Activate partner** setting for **SRNs**. When doing so, installs from that SRN **aren't attributed to the agency**.
+
+<div id="disabled-agency-permissions" />
 
 #### Disabled agency permissions
 
@@ -153,6 +175,8 @@ When permissions are disabled for agencies:
 
 The following examples describe what happens to traffic that continues to be sent after a marketer removes agency permissions:
 
+<div id="example-1" />
+
 > 📄 **Example 1**
 >
 > **Agency campaign with a non-SRN (attribution link partner)**
@@ -160,6 +184,8 @@ The following examples describe what happens to traffic that continues to be sen
 > The traffic is attributed to organic, or to a prior engagement if still within its lookback window. The agency is not attributed.
 >
 > This example is also applicable to scenarios in which AppsFlyer receives click-through attribution links as well as querying the partner’s API
+
+<div id="example-2" />
 
 > 📄 **Example 2**
 >

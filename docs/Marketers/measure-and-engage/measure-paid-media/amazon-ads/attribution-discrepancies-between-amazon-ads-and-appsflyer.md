@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the differences in attribution models between Amazon Ads and AppsFlyer.
 
+<div id="overview" />
+
 ## Overview
 
 As two major players in the mobile user acquisition ecosystem, Amazon Ads and AppsFlyer use distinct attribution models. This may cause discrepancies between Amazon Ads and AppsFlyer dashboards. While we work closely with Amazon Ads to minimize these discrepancies, advertisers need to be aware of potential causes.
+
+<div id="differences-in-attribution-models" />
 
 ## Differences in attribution models
 

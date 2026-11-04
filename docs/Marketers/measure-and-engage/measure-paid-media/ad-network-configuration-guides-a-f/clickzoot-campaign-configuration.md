@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Clickzoot, an AppsFlyer ad network integrated partner, provides solutions for mobile, lead generation, email marketing, and data optimization.
 
+<div id="setting-up-clickzoot" />
+
 ## Setting up ClickZoot
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,10 +44,14 @@ The Clickzoot configuration window includes 3 active tabs: Integration, Attribut
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
 > * All the rest of the steps are either descriptive or **optional**
+
+<div id="activate-partner" />
 
 ### Activate partner
 
@@ -58,17 +64,23 @@ For more details about partner activation, click <Anchor target="_blank" href="/
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="general-settings" />
+
 ### General settings
 
 **Offer ID**
 
 Clickzoot connects with AppsFlyer via a unique Offer ID. If you don't already have it, you must obtain it from Clickzoot to continue with the integration.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Clickzoot following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Clickzoot.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -98,6 +110,8 @@ In this tab, you can create the attribution links you want to send to Clickzoot 
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -117,6 +131,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window can be attributed to Clickzoot.
@@ -124,6 +140,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -154,6 +172,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant Clickzoot, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Clickzoot, the permissions tab is active and you can grant control to Clickzoot.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

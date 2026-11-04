@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Meiyou Ads is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-meiyou-ads" />
+
 ## Setting Up Meiyou Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,10 +48,14 @@ Meiyou Ads configuration window includes 3 active tabs: Integration, Attribution
 
 <Accordion title="Integration Tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -61,9 +67,13 @@ Meiyou Ads connects with AppsFlyer via a unique **Key**. If you don't already ha
 
 Toggle this to ON if you want to attribute view-through installs from Meiyou Ads. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default Postbacks
 
 <Image alt="mceclip2.png" src="https://files.readme.io/b416ec9bd2d01f627fd34972234affae668cefd03a31e6df4ace616a1a1137a3-50900150954001.png" width="548px" />
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -98,6 +108,8 @@ In this tab, you can create the attribution links you want to send to Meiyou Ads
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution Link Parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -119,6 +131,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Meiyou Ads.
@@ -129,9 +143,13 @@ More details about the <Anchor target="_blank" href="/marketers/docs/set-up-look
 
 ![netease-click-through.png](https://files.readme.io/4686c36edcb524d9ca7f8f6c995f3d0447455f150d22308aee6650cee85ecd6e-50900150960017.png)
 
+<div id="click-attribution-link" />
+
 ### Click Attribution Link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Meiyou Ads to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -144,6 +162,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
 [![](https://files.readme.io/bb595db7be55acee05af3d25264263c66986ea066a3d5eb40f07dd3735a54532-50900198466577.png)](https://files.readme.io/bb595db7be55acee05af3d25264263c66986ea066a3d5eb40f07dd3735a54532-50900198466577.png)
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -175,6 +195,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant Meiyou Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Meiyou Ads, the permissions tab is active and you can grant control to Meiyou Ads.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/01af9850fcb765e33303b6d1a3c792aa459e71dea907d418fcbd60d93135b8c5-50900198468113.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

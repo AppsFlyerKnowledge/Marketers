@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your online education app.
 
+<div id="-online-education" />
+
 ## <Image alt="education.png" src="https://files.readme.io/fb036c8f3b0cb4cc06a5284c26089bbb361273ab628bc5b740692bc49e7a2c40-20659493109393.png" width="100px" /> Online education
 
 Online education apps enable users to learn remotely. The typical events that we recommend recording include registration, tutorials and courses completed, and certificates received.
@@ -33,6 +35,8 @@ Recording events can help you determine:
 * What courses users want the most and provide you with ideas for targeting
 * Which users can be retargeted and reminded that they have additional tutorials to complete a course
 * Which courses and certificates are the most in demand
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -44,6 +48,8 @@ Recording events can help you determine:
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -143,6 +149,8 @@ When the user lands on the thank you page after a successful purchase
 | af\_receipt\_id | Receipt ID | 9277 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

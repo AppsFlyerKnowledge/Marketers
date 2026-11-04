@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Get answers to common FAQ about privacy-preserving campaign measurement methods, the networks involved, and their implications on retargeting, view-through, and child-directed app limitations.
 
+<div id="overview" />
+
 ## Overview
 
 In today's privacy-conscious era, platforms and technologies are increasingly limiting the use of advertiser IDs, driving the industry toward measurement methods that align with privacy requirements while still enabling effective campaign measurement. For such cases, AppsFlyer supports multiple privacy-preserving campaign measurement methods for both SRN and non-SRN ad networks, as described below.
@@ -103,6 +105,8 @@ The availability of an advertising ID may affect deep linking behavior depending
 In certain privacy-restricted scenarios, measurement coverage may be more limited. AppsFlyer continues to provide meaningful campaign measurement while preserving user privacy.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

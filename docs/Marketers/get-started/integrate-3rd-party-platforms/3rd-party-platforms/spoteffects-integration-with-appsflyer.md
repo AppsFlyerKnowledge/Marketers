@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **At a glance:** Spoteffects, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online shops and websites based on immediately generated visits and conversions per ad.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-spoteffects" />
 
 ## Setting up Spoteffects
 
@@ -54,10 +58,14 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -68,6 +76,8 @@ AppsFlyer can send automatic postbacks to Spoteffects user installs. Use this se
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Spoteffects or select **Off**.
 
 Click **Save.**
+
+<div id="in-app-event-settings" />
 
 ### In-app event settings
 

@@ -16,6 +16,8 @@ x-zendesk:
 ---
 > **At a glance:** Dynamic Query lets you run your own SQL queries directly on your Data Collaboration Platform (DCP) data. Query your own data, your own AF attribution data, or data shared inside a collaboration, to answer specific questions without setting up a report.
 
+<div id="about-dynamic-query" />
+
 ## About Dynamic Query
 
 Dynamic Query gives you the ability to run ad hoc, custom queries on your DCP data in real time to answer your specific collaboration questions quickly and efficiently.
@@ -25,22 +27,32 @@ Dynamic Query gives you the ability to run ad hoc, custom queries on your DCP da
 
 Dynamic Query works differently depending on whether you are querying your own data or data shared in a collaboration.
 
+<div id="before-you-start" />
+
 ## Before you start
 
 Before you can run any query, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">configure your cloud bucket destination</Anchor>. This step is required, because every query runs against your own cloud bucket and writes results directly to your storage. AppsFlyer does not store your query results, so your data stays within your own cloud environment.
 
+<div id="run-a-query-on-your-own-data" />
+
 ## Run a query on your own data
 
 The following sections cover how to access and query data you own. The Sources panel here only lists sources you own, you cannot add a collaborator's source in this view. To query data shared with you in a collaboration instead, see [Run a query with collaboration data](#).
+
+<div id="access-dynamic-query" />
 
 ### Access Dynamic Query
 
 1. In AppsFlyer, go to the side menu > **Collaborate** > **Data Clean Room**.
 2. Select the **Dynamic Query** tab.
 
+<div id="write-your-query-on-your-own-data" />
+
 ### Write your query on your own data
 
 1. Browse the source's fields in the Sources panel. Click a field to preview its distinct values.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -48,14 +60,20 @@ The following sections cover how to access and query data you own. The Sources p
 
 2. Write your query freely, at raw level or aggregated, your choice. Every source here belongs to you, so there's no permission check and no GROUP BY requirement.
 
+   <div id="note-1" />
+
    > 📘 **Note**
    >
    > If you are also an AppsFlyer client, you can query your AF attribution data this way too, but results are aggregated only, even though it is your own data.
 
 
+<div id="run-a-query-with-collaboration-data" />
+
 ## Run a query with collaboration data
 
 The following sections cover how to access and query data shared with you in a collaboration. To query only data you own instead, see [Run a query on your own data](#).
+
+<div id="access-dynamic-query-in-a-collaboration" />
 
 ### Access Dynamic Query in a collaboration
 
@@ -65,9 +83,13 @@ The following sections cover how to access and query data shared with you in a c
 
 When you query data shared in a collaboration, Dynamic Query can access every source <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration#step-4-associate-sources-optional">added to that collaboration</Anchor>.
 
+<div id="write-your-query-with-collaboration-data" />
+
 ### Write your query with collaboration data
 
 1. Browse the source's fields in the Sources panel. Click a field to preview its distinct values.
+
+   <div id="note-2" />
 
    > 📘 **Note**
    >
@@ -84,10 +106,14 @@ When you query data shared in a collaboration, Dynamic Query can access every so
 
 3. Write your query with a GROUP BY clause or an aggregate function, such as `COUNT(*)`.
 
+   <div id="important" />
+
    > 🚧 **Important**
    >
    > A source you do not own always returns aggregated results, no matter which permission type it is shared under. Raw-level results stay available only for sources you own.
 
+
+<div id="explore-sample-queries" />
 
 ## Explore sample queries
 
@@ -160,6 +186,8 @@ LIMIT 20;
 
 </Accordion>
 
+<div id="view-and-download-query-results" />
+
 ## View and download query results
 
 The following sections cover how to run your query and manage its results.
@@ -172,6 +200,8 @@ Every query runs in one of two modes:
 
 * **Sample data** (default) runs on a small subset of your data, so you can refine your query before running it on the full dataset.
 * **All data** runs against the complete source. Only this mode has a **Download** button.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -199,6 +229,8 @@ You can download up to 1 million rows directly. If your results are larger, Dyna
 
 </Accordion>
 
+<div id="privacy-and-query-restrictions" />
+
 ## Privacy and query restrictions
 
 Dynamic Query applies privacy protections at multiple levels:
@@ -206,6 +238,8 @@ Dynamic Query applies privacy protections at multiple levels:
 * Non-owned sources always return aggregated results, see [Run a query with collaboration data](#).
 * Key-type identifier fields, such as AppsFlyer ID, Android ID, and IDFA (Identifier for Advertisers), always return as hashed values in query results.
 * Distinct values are not available for fields categorized as Keys, such as AppsFlyer ID or Android ID, when browsing the Sources panel.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 
@@ -215,6 +249,8 @@ Dynamic Query applies privacy protections at multiple levels:
 | Download limit | 1 million rows direct, 10 million rows through your cloud bucket, contact your CSM to expand |
 | Cloud bucket setup | Required before you can run any query, not just before downloading |
 | Run modes | Sample data (default, no download) and All data (full source, download available) |
+
+<div id="see-also" />
 
 ## See also
 

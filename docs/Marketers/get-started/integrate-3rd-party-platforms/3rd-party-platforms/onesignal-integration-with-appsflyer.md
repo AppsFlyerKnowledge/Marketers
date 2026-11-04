@@ -27,13 +27,19 @@ x-zendesk:
 
 OneSignal delivers 8 billion messages every day across the globe. Powered by superior architecture and an easy-to-use platform, the OneSignal delivers messages faster, more efficiently, and at a greater scale than any other solution in the world. Learn more at [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
 
+<div id="setting-up-onesignal" />
+
 ## Setting up OneSignal
 
 The integration with OneSignal includes inserting a few lines of code to the AppsFlyer SDK in your app and then activating the integration in AppsFlyer.
+
+<div id="set-up-the-appsflyer-sdk" />
 
 ### Set up the AppsFlyer SDK
 
@@ -144,12 +150,18 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 Must be enabled for as long as you work with the partner.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner activation</Anchor>.
 
+<div id="general-settings" />
+
 ### General settings
+
+<div id="onesignal-appid" />
 
 #### OneSignal AppID
 
@@ -157,6 +169,8 @@ To connect your OneSignal account with AppsFlyer, enter your app ID in **OneSign
 Your OneSignal app ID is available in the OneSignal platform under **Settings** > **Keys & IDs**.
 
 ![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -211,6 +225,8 @@ Ad Revenue is not applicable in the integration with this partner.
 Permissions are not available for this partner.
 
 </Accordion>
+
+<div id="view-user-attribution-data-in-onesignal" />
 
 ## View user attribution data in OneSignal
 

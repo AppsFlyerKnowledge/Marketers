@@ -26,11 +26,15 @@ The Cross-platform end-user events report is a raw data report that provides eve
 
 For more information about the user-based attribution flow and configuration, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
 
+<div id="report-fields" />
+
 ## Report fields
 
 To learn which fields are contained in the report, [download a report sample](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
 
 The report sample includes all the report fields and their values. For the definitions of the fields, see <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">the field dictionary</Anchor>.
+
+<div id="report-data-freshness" />
 
 ## Report data freshness
 
@@ -41,9 +45,13 @@ The report sample includes all the report fields and their values. For the defin
 * Events are allocated to their corresponding hourly buckets.
   * Example: Events that entered the database between 3:00 and 4:00 AM will appear in the 3:00 AM bucket.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > There is typically a short delay between an event's actual happening and its entry into the database. The report uses the database entry time to ensure accurate and consistent hourly grouping.
+
+<div id="example-of-the-800-am-batch-run" />
 
 ### Example of the 8:00 AM batch run
 
@@ -59,11 +67,15 @@ Notes for the above example:
 * Events of the last hour before the run are not processed to allow enough time to enrich events with their related CUID. In the above example, the 8:00 AM batch process events that entered the database between 3:00 and 7:00. Events that entered the database between 7:00 and 8:00 are not processed.
 * The report is only available an hour after the batch run because an internal process updates the batch during that hour. In the above example, the 8:00 AM batch is available at 9:00 AM.
 
+<div id="how-to-subscribe-to-the-report" />
+
 ## How to subscribe to the report?
 
 1. In AppsFlyer, from the side menu, select **Export** > **Data Locker**.
 2. In the **Data Locker content** pane, scroll down to the **Advanced reports** section.
 3. Select **End-user events cross-platform.**
+
+<div id="how-to-access-the-report-data-in-your-cloud-bucket" />
 
 ## How to access the report data in your cloud bucket?
 
@@ -73,9 +85,13 @@ The path to the report consists of the following folder hierarchy:
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
+<div id="dl-report-folder-hierarchy" />
+
 ### DL Report folder hierarchy
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+
+<div id="bi-developer-considerations" />
 
 ## BI Developer considerations
 
@@ -83,6 +99,8 @@ The path to the report consists of the following folder hierarchy:
 * Ad revenue events are not included yet.
 * All app data is provided in a single file. Use the App ID field to segregate data per app, or set Data Locker to segregate by app. It is recommended to use the unified segregation type.
 * Pre-attribution data such as cost, clicks, and impressions, should be extracted from the cost ETL report.
+
+<div id="query-examples" />
 
 ### Query examples
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** See which media sources are able to measure attribution when working with multiple MMPs simultaneously so you can compare attribution results between AppsFlyer and your other MMP.
 
+<div id="overview" />
+
 ## Overview
 
 When looking into migrating from another MMP to AppsFlyer, advertisers may wish to simultaneously compare both MMP measurements over the same media sources and campaigns. To do this, the following requirements must be met:
@@ -31,9 +33,13 @@ When looking into migrating from another MMP to AppsFlyer, advertisers may wish 
 
 However, not all media sources support measurement with more than one MMP.  
 
+<div id="details-and-limitations-of-media-source-measurement" />
+
 ## Details and limitations of media source measurement
 
 Following are details and limitations of media source measurement when working with multiple MMPs simultaneously.
+
+<div id="self-reporting-networks" />
 
 ### Self-reporting networks
 
@@ -47,9 +53,13 @@ Following are details and limitations of media source measurement when working w
 | TikTok for Business | Sending postbacks to TikTok for Business is supported for one MMP only. When migrating from another MMP, to enable AppsFlyer to attribute conversions to TikTok for Business, you’ll first need to turn off postbacks from the other MMP and then configure AppsFlyer. | x |
 | X Ads | X Ads doesn't support multiple MMP integration | x |
 
+<div id="skan" />
+
 ### SKAN
 
 Sending <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#skan-conversion-studio-basics">SKAN conversion postbacks</Anchor> **isn't supported for multiple MMPs**. Only one SDK can trigger sending SKAN postbacks to partners. This means that when more than one SDK is integrated into your app, SKAN postbacks are only sent to one SDK.
+
+<div id="non-srn-ad-networks" />
 
 ### Non-SRN ad networks
 
@@ -61,9 +71,13 @@ MMP attribution links record the engagements of users on non-SRN ad networks and
 | Received install postbacks should be deduped | Ad networks receive install postbacks from both MMPs. To avoid double charges, the ad network should dedupe one of these postbacks. |
 | Received in-app event postbacks should be deduped | When each of the MMPs is configured to send in-app event postbacks, ad networks receive in-app event postbacks from both MMPs. To avoid double attribution resulting in double charges, the ad network should dedupe one of these postbacks. If the ad network can't dedupe double in-app event postbacks, make sure in-app event postbacks are configured in only one MMP. |
 
+<div id="owned-media" />
+
 ### Owned media
 
 As with non-SRN ad networks, attributing installs from owned media requires using MMP attribution links. However, for some types of owned media, such as email lists, SMSs, or QR codes, MMPs can send data on a single engagement only once. AppsFlyer's <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">mobile web-to-app attribution</Anchor> solution enables measuring **installs coming from a website or a landing page**. The advantage of using owned media for comparing MMP attribution is the fact that no install or event deduping is needed.
+
+<div id="avoiding-attribution-discrepancies" />
 
 ## Avoiding attribution discrepancies
 

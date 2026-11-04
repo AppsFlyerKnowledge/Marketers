@@ -24,6 +24,8 @@ x-zendesk:
 
 In this Q&A, we discuss common queries about smart banners and smart script integration, focusing on their impact on security and site speed.
 
+<div id="smart-banners-api-security" />
+
 ## Smart banners API security
 
 <div id="what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it" />
@@ -68,6 +70,8 @@ Yes. The client's unique web key acts as an identifier in API calls, enabling th
 No. It's not possible to access and modify the code dictating the web key used in the banner's API call. This means that malicious entities cannot manipulate the banner calculation and the OneLink URL generated for the banner CTA.
 
 </Accordion>
+
+<div id="smart-banners-script-hosting-security" />
 
 ## Smart banners script hosting security
 
@@ -122,6 +126,8 @@ The website owner must explicitly <Anchor target="_blank" href="https://dev.apps
 
 </Accordion>
 
+<div id="smart-banners-performance" />
+
 ## Smart Banners Performance
 
 <div id="does-the-smart-banner-web-sdk-impact-website-load-speed" />
@@ -164,6 +170,8 @@ Banner loading time is impacted by the Largest Contentful Paint (LCP), which pri
 * Choose the same font weight throughout your banner.
 
 </Accordion>
+
+<div id="smart-script-security-and-performance" />
 
 ## Smart Script Security and Performance
 

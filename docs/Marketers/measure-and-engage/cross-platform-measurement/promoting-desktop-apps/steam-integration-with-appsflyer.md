@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Steam game/app with AppsFlyer to receive attribution and event data for your Steam campaigns. The Steam integration supports attribution and in-app event recording for Steam apps on a user's Steam device.
 
+<div id="about-steam-attribution" />
+
 ## About Steam attribution
 
 Steam runs across Windows and Mac devices, Steam Deck, and other Steam OS devices.
 
 Apps running on Steam can integrate with AppsFlyer via S2S API or SDK to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+
+<div id="example-attribution-flow" />
 
 ### Example attribution flow
 
@@ -41,6 +45,8 @@ The following is an example flow that highlights the most important steps in a u
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
 3. <span id="marketing-touchpoint"></span>Steam app page: This is your Steam storefront page that hosts your Steam app for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -172,9 +178,13 @@ The following table lists the tasks required to integrate your Steam app with Ap
   </tbody>
 </Table>
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Removing AppsFlyer data when uninstalling the app
 
 To remove all AppsFlyer SDK data when uninstalling the app, please ask your developer to perform the steps specified [here](https://dev.appsflyer.com/hc/docs/steam-vanilla#deleting-appsflyer-data-on-uninstall).
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 
@@ -182,6 +192,8 @@ To remove all AppsFlyer SDK data when uninstalling the app, please ask your deve
 | --- | --- |
 | Retargeting | Not currently supported |
 | Cost data | Import cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file **by email** method. You can also pull data **via API** for Google, Meta, or TikTok. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

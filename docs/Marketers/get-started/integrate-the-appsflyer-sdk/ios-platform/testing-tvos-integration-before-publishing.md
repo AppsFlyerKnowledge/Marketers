@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **At a glance:** Simulate a non-organic install from your AppleTV device using the tvOS Test App.
 
+<div id="overview" />
+
 ## Overview
 
 AppleTV does not contain a browser. Therefore, you cannot test clicks or installs on the device for an **unpublished** app. (For **published** apps, you can <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#testing-using-attribution-links">test using attribution links</Anchor>).
 
 To test attribution on unpublished apps, you can use the **tvOS Test App.**
+
+<div id="how-does-the-tvos-test-app-work" />
 
 ### How does the tvOS Test App work?
 

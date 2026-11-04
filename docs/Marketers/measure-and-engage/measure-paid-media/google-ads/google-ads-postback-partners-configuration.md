@@ -32,6 +32,8 @@ Some partners (for example, Bidalgo, Adquant), referred to as **Google Ads postb
 
 These Google Ads Postback Partners (GAPPs) can also collect postbacks for Google Ads installs acquired by the advertiser directly, or even by other agencies (see [Use Cases](/docs/google-ads-postback-partners-configuration#google-ads-postback-partners-use-cases)). Using the postbacks information the GAPPs are able to optimize on Google Ads campaigns for the app.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Google Ads Postback Partners are **NOT** attributed with installs or events in AppsFlyer.
@@ -40,11 +42,15 @@ The advertiser needs an active Google Ads account <Anchor target="_blank" href="
 
 Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
 
+<div id="google-ads-postback-partner-setup" />
+
 ## Google Ads postback partner setup
 
 1. In AppsFlyer, from the side menu, select**Collaborate**>**Active Integrations**.
 
 2. Type the name of the GAPP you would like to work with into the search box and select it from the dropdown list.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -62,6 +68,8 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 
 7. Click **Save**.
 
+<div id="important-notes" />
+
 > 📘 **Important Notes**
 >
 > * Disabling attribution for Google Ads also stops sending postbacks to GAPPs.
@@ -69,6 +77,8 @@ Other GAPPs integrated with AppsFlyer: Blackbox, Appreciate, Marin Software, Mir
 >
 >   ![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
 > * To work with multiple GAPPs, the campaigns for each GAPP should be run from separate google accounts. If you switch from one GAPP to another, make sure to disable the first GAPPs setup in AppsFlyer.
+
+<div id="google-ads-postback-partners-use-cases" />
 
 ## Google Ads postback partners use cases
 
@@ -128,6 +138,8 @@ Notice that these must be different CIDs between the advertiser and agency.
 
 </Accordion>
 
+<div id="available-parameters-for-gapps" />
+
 ## Available parameters for GAPPs
 
 **The contents of the postbacks depend on the initial integration of the GAPPs with AppsFlyer** and are unrelated to any advertiser configuration. Therefore, any two GAPPs may have differently defined postback parameters.
@@ -156,6 +168,8 @@ There are two sources for GAPP postback parameters:
    * Ad Type
    * Conversion Metric
    * Location
+
+<div id="note" />
 
 > 📘 **Note**
 >

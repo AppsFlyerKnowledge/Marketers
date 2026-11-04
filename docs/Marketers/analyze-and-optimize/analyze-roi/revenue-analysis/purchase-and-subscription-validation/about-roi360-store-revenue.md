@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Use ROI360 store revenue to validate in-app purchases and subscriptions, prevent duplicates, and calculate net revenue.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > ROI360 store revenue is available only to customers on the ROI360 premium plan. To check your plan or upgrade, contact your Customer Success Manager (CSM).
@@ -38,9 +40,13 @@ ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate
 | Data sources | <ul><li>AppsFlyer purchase SDK connector for Android and iOS</li><li>App Store server notifications</li><li>Google Play Real-Time Developer Notifications (RTDN)</li></ul> |
 | Reporting and data availability | Revenue data is available in AppsFlyer dashboards and reports and can also be shared with partners through postbacks. |
 
+<div id="warning" />
+
 > ❗️ **Warning**
 >
 > When using ROI360 store revenue, do not send in-app purchase events, as this will result in duplicate revenue reporting.
+
+<div id="how-does-roi360-store-revenue-work" />
 
 ## How does ROI360 store revenue work?
 
@@ -56,6 +62,8 @@ ROI360 store revenue is AppsFlyer’s premium solution for complete and accurate
    * Notifications regarding unknown transactions are dropped.
    * For iOS, all server notifications can be rerouted to your own servers.
 
+<div id="activate-roi360-store-revenue" />
+
 ## Activate ROI360 store revenue
 
 To activate ROI360 store revenue measurement, follow these steps:
@@ -65,13 +73,19 @@ To activate ROI360 store revenue measurement, follow these steps:
 3. Under **1 Choose Product type**, select **ROI360**.
 4. Click **Next** to continue.
 
+<div id="set-up-roi360-store-revenue" />
+
 ## Set up ROI360 store revenue
 
 See the <Anchor target="_blank" href="/marketers/docs/set-up-roi360-store-revenue">Set up ROI360 store revenue</Anchor> article
 
+<div id="reference" />
+
 ## Reference
 
 The following sections provide additional details about key aspects of ROI360 in-app purchase (IAP) and subscription revenue measurement. These include events and parameters for IAP and subscription events, Net revenue, which supports gross-to-net revenue calculations, and the general characteristics and limitations of the ROI360 IAP and subscription revenue measurement solution.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -987,11 +1001,15 @@ The following table describes the raw data parameters available in ARS and VIAP 
 
 Net revenue is a business logic layer built to serve the ROI360 Store revenue solution. It automatically calculates the net revenue value for each incoming transaction in real time and includes it in reports.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Net revenue is displayed in raw data reports and can be sent in real time via in-app event postbacks. It is also available in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> as the Net metrics (Net revenue, Net ROI, Net ROAS, Net ARPU, Net profit).
 >
 > To send net revenue in postbacks, configure the in-app event with the **Values, revenue & net revenue option**. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">In-app event postback configuration</Anchor> for details.
+
+<div id="tip" />
 
 > 📘 **Tip**
 >

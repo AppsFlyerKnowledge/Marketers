@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1)
 
+<div id="setting-up-vk-ads" />
+
 ## Setting up VK Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,22 +46,32 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="general-settings" />
+
 ### General settings
 
 The following general settings are available for VK Ads.
+
+<div id="app-id" />
 
 ### App ID
 
 This field is not mandatory, and its functionality is TBD. For any further questions, contact VK Ads.
 
+<div id="enable-view-through-attribution" />
+
 ### Enable view-through attribution
 
 Activate, if you want to attribute view-through installs from VK Ads. The view-through lookback slider is available in the [***Attribution link***](/docs/vk-ads-mytarget-mail-ru-campaign-configuration#attribution-link-tab) tab.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -67,6 +79,8 @@ Send automatic postbacks to VK Ads following user installs and re-engagements. U
 
 Select **Only events attributed to this partner** for events coming only from users attributed to VK Ads.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to VK Ads.
+
+<div id="in-app-events-postbacks" />
 
 ### In-app events postbacks
 
@@ -128,6 +142,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">In the actions column, hover over an account, click ***Delete connection***</Anchor>
 
 </Accordion>
+
+<div id="notes" />
 
 > 📘 **Notes**
 >

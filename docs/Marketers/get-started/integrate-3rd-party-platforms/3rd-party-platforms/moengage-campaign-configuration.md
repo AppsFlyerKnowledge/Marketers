@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** MoEngage, a third-party customer engagement platform integrated with AppsFlyer, is an agentic customer engagement platform built for the mobile-first world.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-moengage" />
 
 ## Setting up MoEngage
 
@@ -50,9 +54,13 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integra
 
 The **Integration** tab is divided into different sections, as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -64,6 +72,8 @@ MoEngage connects with AppsFlyer via a unique App ID, App Key, and the Data Cent
 
 ![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to MoEngage following user installs. Select one of the following options:
@@ -72,6 +82,8 @@ AppsFlyer can send automatic postbacks to MoEngage following user installs. Sele
 * **All media sources, including organic**: Send postbacks for events attributed to any partner and for organic events.
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+
+<div id="note" />
 
 > 📘 **Note**
 >

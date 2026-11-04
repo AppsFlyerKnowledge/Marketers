@@ -28,6 +28,8 @@ x-zendesk:
 
 <Image alt="Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## The AppsFlyer cross-platform solution
 
 In today's digital landscape, growth professionals face the challenge of reaching consumers across multiple devices and platforms. Traditional measurement approaches fall short in capturing the full scope of user journeys that span platforms. Cross-platform measurement is essential to understanding the impact of marketing activities and making informed decisions.
@@ -38,13 +40,19 @@ Advertisers can promote an app on the same or different platforms as the ad disp
 
 Whatever their marketing strategy, advertisers integrate with AppsFlyer to receive attribution data and performance measurements about sources (non-organic or organic) and campaigns driving CTV, PC, and console platform app installs and post-install events. Marketers use these insights to calculate user lifetime value (LTV) and measure and optimize marketing activities. <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">Learn more about AppsFlyer attribution</Anchor>
 
+<div id="supported-platforms" />
+
 ### Supported platforms
 
 <table><thead><tr><th rowspan="2">Platform</th><th colspan="2">AppsFlyer integration method</th></tr><tr><th>S2S</th><th>SDK</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>MacOS</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Amazon Fire TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Chromecast</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Roku</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Vizio</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>LG</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>PlayStation</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Vidaa</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Native PC</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Epic Games</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Nintendo Switch</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span>✓</span></td><td><span>-</span></td></tr></tbody></table>
 
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
+
 ### Integrate with ad networks that support specified CTV, PC, and Console platforms
 
 Integrate with ad networks that display ads on CTV, PC, and console platforms in <Anchor target="_blank" href="/marketers/docs/partner-integrations">Partner Integrations</Anchor>.
+
+<div id="cross-platform-attribution-flows" />
 
 ## Cross-platform attribution flows
 
@@ -146,6 +154,8 @@ Additional information:
 
 </Accordion>
 
+<div id="data-availability" />
+
 ## Data availability
 
 CTV, PC, and console platform data includes install data, as well as in-app event data that gives advertisers insights regarding the lifetime value (LTV) of non-organic and organic users, based on subscription, in-app purchases, and ad monetization. LTV metrics are calculated from the attribution date until the present.
@@ -158,6 +168,8 @@ Data is available as follows:
   * <Anchor target="_blank" href="/marketers/docs/raw-data-export-page">Export</Anchor>
   * <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">Pull API</Anchor>
 * **Impressions from cross-platform campaigns** (for example, CTV-to-mobile) don't display in app-level dashboards. A single CTV impression can lead to multiple mobile conversions, making it impossible to split impressions accurately across apps. To access total impression counts, use the <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-data-via-data-locker">Cross-platform engagements report via Data Locker</Anchor>.
+
+<div id="note" />
 
 > 📘 **Note**
 >

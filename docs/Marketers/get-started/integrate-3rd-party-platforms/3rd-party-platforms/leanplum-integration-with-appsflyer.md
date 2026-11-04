@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **At a glance:** Leanplum, an AppsFlyer integrated partner, is a mobile marketing platform, designed for intelligent action. Its integrated solution delivers engagement across messaging and the in-app experience. Leanplum offers Messaging, Automation, App Editing, Personalization, A/B Testing, and Analytics.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-leanplum" />
 
 ## Setting up Leanplum
 
@@ -60,10 +64,14 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the Integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -81,6 +89,8 @@ If the option is inactive, IDFA is sent in a postback. If no IDFA found, IDFV is
 
 If neither is available, no postback is sent.
 
+<div id="obtaining-the-app-id-and-client-key" />
+
 ### Obtaining the app ID and client key
 
 Click on your name at the top right of the screen and select **App Settings**
@@ -92,6 +102,8 @@ Select an app and click **Keys & Settings**
 [![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
 
 ![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -136,6 +148,8 @@ Ad Revenue is not supported in the integration with this partner.
 Permissions are not available for Leanplum.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-leanplum" />
 
 ## Viewing user attribution data in Leanplum
 

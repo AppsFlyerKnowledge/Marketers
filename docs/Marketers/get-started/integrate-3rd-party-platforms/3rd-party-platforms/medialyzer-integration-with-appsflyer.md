@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Medialyzer, an AppsFlyer integrated partner, develops and markets the software as a service solution. The solution allows media planners to optimize their TV campaigns for online businesses based on immediately generated visits and conversions per TV ad airing.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-medialyzer" />
 
 ## Setting up Medialyzer
 
@@ -46,13 +50,19 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Medialyzer. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Advanced Privacy
 
 For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+
+<div id="default-postbacks" />
 
 #### Default postbacks
 
@@ -62,6 +72,8 @@ AppsFlyer sends default postbacks to Medialyzer following user installs. Use thi
 * **All media sources, including organic**: Install postbacks are sent for events attributed to any partner and for organic events.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 

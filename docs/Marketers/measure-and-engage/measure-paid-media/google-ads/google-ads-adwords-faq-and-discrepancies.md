@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Troubleshoot common issues and discrepancies relating to Google Ads.
 
+<div id="google-ads-faq" />
+
 ## Google Ads FAQ
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -53,12 +55,16 @@ it means that you need to import conversions in Google Ads. Follow the instructi
 
 Follow this checklist to troubleshoot missing installs:
 
+<div id="quick-fix" />
+
 #### Quick fix
 
 1. **Activate Google Ads in AppsFlyer**  
    In AppsFlyer, from the sidebar, open **Collaborate > Active integrations**, search for **Google Ads**, and confirm the integration is active.
 2. **Import the** `first_open` **conversion in Google Ads**  
    In Google Ads, go to the <Anchor target="_blank" href="https://ads.google.com/aw/conversions">Conversions summary</Anchor> page and make sure that the `first_open` conversion event is imported. For more information, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Import your app conversions</Anchor>.
+
+<div id="still-not-working" />
 
 #### Still not working?
 
@@ -84,6 +90,8 @@ Follow this checklist to troubleshoot missing installs:
 
 Use this checklist to ensure your in-app events are correctly set up and synced between AppsFlyer and Google Ads.
 
+<div id="quick-fix-checklist" />
+
 #### Quick fix checklist
 
 Follow these steps to quickly resolve the most common issues:
@@ -102,10 +110,14 @@ Follow these steps to quickly resolve the most common issues:
    2. Check the **Conversion Action Summary**.
    3. Import the relevant in-app events. For more information, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Import your app conversions</Anchor>.
 
+      <div id="note" />
+
       > 📘 **Note**
       >
       > Conversions can take up to 6 hours to appear after performing the event.
 
+
+<div id="still-not-working-1" />
 
 #### Still not working?
 
@@ -196,6 +208,8 @@ Google Ads' Parallel tracking enables your landing page to load faster, reducing
 
 For a full explanation of Parallel Tracking, click <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">here</Anchor>.
 
+<div id="what-is-needed" />
+
 #### What is needed?
 
 In order for parallel tracking to work as intended, the final URL must match what is in the campaign URL and be put in <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">Google's `{lpurl}` ValueTrack parameter.</Anchor>
@@ -229,6 +243,8 @@ Click here to see how to configure Google ad web campaigns with parallel trackin
 
 <Accordion title="How do you configure a campaign with Android or iOS configuration">
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > AppsFlyer supports all app campaigns enabled by Google Ads.
@@ -243,6 +259,8 @@ Click here to see how to configure Google ad web campaigns with parallel trackin
 
 To support Android attribution, make sure that your app supports GAID (Google Advertising ID) collection, and that it is passed to AppsFlyer through our SDK.
 
+<div id="creating-conversion-recording-installs" />
+
 #### Creating conversion recording (installs)
 
 For details of how to create conversion recording, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">here</Anchor>.
@@ -250,6 +268,8 @@ For details of how to create conversion recording, click <Anchor target="_blank"
 <span id="inapp_events"></span>Google Ads - Android Configuration - Sending In-App Events
 
 If you want to further measure the success of your Mobile App Install campaigns in Google, you can send in-app events to your Google Ads account from your AppsFlyer account.
+
+<div id="create-a-conversion-in-app-events" />
 
 #### Create a conversion (in-app events)
 
@@ -261,6 +281,8 @@ For details of how to measure your app conversions, click <Anchor target="_blank
 
 <Accordion title="iOS configuration for Google Ads">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads - iOS configuration: app campaigns
 
 App campaigns allow you to promote your iOS app across Google Search, YouTube and Display in a single place of configuration.
@@ -269,13 +291,19 @@ Generally, Google Ads itself can't self-attribute iOS installs from search campa
 
 In contrast, **iOS search on App Campaigns can be attributed by Google Ads**, for ads that are served on the **Google Search App.**
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### creating conversion recording (installs)
 
 For details of how to create conversion recording, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">here</Anchor>.
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google Ads - iOS configuration - sending in-app events
 
 If you want to further measure the success of your Mobile App Install campaigns in Google, you can send in-app events to your Google Ads account from your AppsFlyer account.
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### Creating a conversion (in-app events)
 
@@ -297,11 +325,15 @@ This is relevant for all Google Ads channels.
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Google Ads discrepancies
 
 Sometimes there are discrepancies between the Google Ads dashboard and the AppsFlyer dashboard.
 
 While we work closely with Google Ads to minimize these discrepancies, advertisers should be aware of the following reasons:
+
+<div id="both-ios-and-android" />
 
 #### Both iOS and Android
 
@@ -321,11 +353,15 @@ While we work closely with Google Ads to minimize these discrepancies, advertise
 | **first\_open events** | Google Ads get events from Firebase where DMA is implemented correctly and subsequently DMA consented events are claimed. | Google Ads get the same events also from AppsFlyer where DMA is implemented incorrectly causing all events to be reported as non DMA consented and Google not to claim them.<ul><li>To check if DMA is implemented correctly <Anchor target="_blank" href="/marketers/docs/raw-data-export-page#download-report">download the raw data report</Anchor>  and focus on the fields specified in <Anchor target="_blank" href="/marketers/docs/bulletin-dma-support-in-raw-data-reports">this bulletin</Anchor>.</li><li>See [the Dev Hub](https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance) to learn how to implement DMA in the SDK</li></ul> |
 | **Retargeting events** | Google Ads can claim a re-engagement with `ad_type=ClickToDownload` in the response. | AppsFlyer counts `ad_type=ClickToDownload`  as a UA conversion event rather than as a re-engagement. As a result, the re-engagement number in AppsFlyer may be lower. |
 
+<div id="notes" />
+
 > 📘 **Notes**
 >
 > * While Google Ads shows all installs of a retargeting campaign in the same place, in the AppsFlyer Overview dashboard, the UA view displays new installs, the retargeting view displays re-attributions, and the unified view displays both.
 > * When comparing data from Google Ads dashboard and AppsFlyer, make sure that the data in the Google Ads dashboard is data that is imported from 3rd party analytics (AppsFlyer). Data imported from Firebase or Google Play is structured differently and is not fully comparable with AppsFlyer data. To learn how to import data from AppsFlyer to Google Ads dashboard, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">here</Anchor>.
 > * To compare install events (first\_open in Google Ads), make sure that you drill down to install events in the conversion report in Google Ads. Google Ads might show all conversions (e.g. installs, purchases, subscriptions) which is why it is important to select only those install events out of all conversion events.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

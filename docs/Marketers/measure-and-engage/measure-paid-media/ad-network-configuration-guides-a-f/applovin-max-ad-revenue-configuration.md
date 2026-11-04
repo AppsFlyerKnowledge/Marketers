@@ -28,6 +28,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
+<div id="setting-up-applovin-max-integration" />
+
 ## Setting up Applovin MAX integration
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,6 +44,8 @@ x-zendesk:
    **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
+<div id="setting-tabs" />
+
 ### Setting tabs
 
 Update setting tabs content as required: Ad revenue.
@@ -51,6 +55,8 @@ Update setting tabs content as required: Ad revenue.
 <Accordion title="Ad revenue">
 
 Applovin MAX provides ad revenue mediation with aggregate data at the device level.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -62,6 +68,8 @@ Applovin MAX provides ad revenue mediation with aggregate data at the device lev
 * Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
 </Accordion>
+
+<div id="best-practice" />
 
 ### Best practice
 

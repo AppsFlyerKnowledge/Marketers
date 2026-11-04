@@ -41,6 +41,8 @@ Advertisers can effortlessly route reports to multiple cloud destinations at onc
 
 Cost ETL reports include cost data tied to AppsFlyer attribution, including attribution metrics such as installs, re-attributions, and re-engagements.
 
+<div id="four-types-of-cost-etl-reports" />
+
 ## Four types of cost ETL reports
 
 AppsFlyer offers four types of cost ETL reports to support different analysis needs.
@@ -52,14 +54,20 @@ AppsFlyer offers four types of cost ETL reports to support different analysis ne
 * **All Cost Report**: a comprehensive view of mobile and non-mobile cost data, sourced directly from ad networks, with no attribution data. Currently covers Google Ads, Meta Ads, and TikTok.  
   <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdjA_4tdWBxxbI_ZM7mcZzCKhrWxQ-0m1DPIig-gMTpnDyLBDE_RGJ5zskNFpbsg/pub?gid=559626950&single=true&output=csv">View sample file</Anchor>
 
+  <div id="note" />
+
   > 📘 **Note**
   >
   > To start receiving Google Ads and Meta Ads in the All Cost report, please contact your AppsFlyer representative.
 
 
+<div id="cost-etl-report-types-overview-table" />
+
 ### Cost ETL report types overview table
 
 <table><thead><tr><th> </th><th>Summary</th><th>Geo</th><th>Channel</th><th><strong>All Cost Report</strong></th></tr></thead><tbody><tr><td><strong>How to get the report</strong></td><td>Enable Cost ETL. The Summary report is selected by default.</td><td>Enable Cost ETL and select the Geo report.</td><td>Enable Cost ETL and select the Channel report.</td><td>Enable Cost ETL and select the <strong>Geo</strong> report. (All Cost report doesn't have a specific selector in cost ETL page)</td></tr><tr><td><strong>Where to find the report</strong></td><td>Depends on the cloud connector service you choose. It can be a folder (Summary) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (Geo) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (Channel) or a dedicated table.</td><td>Depends on the cloud connector service you choose. It can be a folder (All Cost) or a dedicated table.</td></tr><tr><td><strong>Cost type coverage</strong></td><td><p>Mobile cost: No limitation.<br/>CTV and web cost: Limited to:<br/> </p><ol><li>Campaigns with at least one conversion</li><li>Cost source is InCost API, Cost Import, or CPI</li></ol></td><td>Same as Summary.</td><td>Same as Summary.</td><td>Mobile, Web, CTV, PC, and Console cost from Google Ada, Meta Ads and TikTok.</td></tr><tr><td><strong>Media source coverage</strong></td><td>No limitation</td><td>No limitation</td><td>No limitation</td><td><ul><li><strong>TikTok:</strong> Data is automatically added.</li><li><strong>Google and Meta:</strong> Contact your CSM to enable.</li></ul></td></tr><tr><td><strong>Schema granularity</strong></td><td>Based on customer configuration in Cost ETL settings.</td><td><p>Based on customer configuration in Cost ETL settings.</p><p><br/>For Meta, the channel dimension has no values.</p></td><td><p>Based on customer configuration in Cost ETL settings.</p><p><br/>For Meta, the geo dimension has no value.</p></td><td><p>Based on customer configuration in Cost ETL settings.</p><p>For Meta, the Channel dimension is not supported.<br/><strong>Platform:</strong> A new dimension from the ad network indicating where the campaign runs (e.g., mobile, desktop, tablet).</p></td></tr><tr><td><strong>Attribution data</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td><p>Not supported.</p><p><br/>Attribution metrics values are displayed as zero (0), if they are configured by the customer to be part of the Cost ETL schema.</p></td></tr><tr><td><strong>App ID</strong></td><td>If the ad network does not support App ID granularity, the App ID is extracted from the attribution data.</td><td>Same as Summary.</td><td>Same as Summary.</td><td><p>Extracted from the ad network.</p><p><br/>If the App ID is not reported, the value will be unknown.</p></td></tr><tr><td><strong>Cost source</strong></td><td>API integration (Cost + InCost), Cost Import, CPI</td><td>Same as Summary.</td><td>Same as Summary.</td><td>API integration only.</td></tr><tr><td><strong>CNC</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td>Not supported.</td></tr><tr><td><strong>Agency data</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td><ul><li><strong>Facebook and Meta:</strong> Not supported.</li><li><strong>TikTok:</strong> Supported only for campaigns with App ID in AppsFlyer.</li></ul></td></tr><tr><td><strong>Agency fee</strong></td><td>Supported</td><td>Supported</td><td>Supported</td><td>Not supported. Value is always 0.</td></tr><tr><td><strong>Freshness</strong></td><td colspan="4">Data is collected from the ad network 6 times per day.<br/>Reports can be delivered up to 4 times per day (based on customer configuration).</td></tr></tbody></table>
+
+<div id="report-details" />
 
 ## Report details
 
@@ -96,6 +104,8 @@ Data written to the cloud service or bucket has the directory and file structure
     * Each version folder contains parquet files containing data with numbering starting from 1.
   * All cost: Based on the geo dimension, contains up to 4 files per day.
 
+<div id="data-locker-connection-directory-structure" />
+
 #### Data Locker connection directory structure
 
 `<client-bucket>/<DL-generated-partition>/<connection-name>/t=<report-name>/dt=<YYYY-MM-DD>/v=<1/2/3/4>/<parquet file number>`
@@ -109,6 +119,8 @@ Data written to the cloud service or bucket has the directory and file structure
 | dt | <ul><li>The report date, meaning the date the report was sent.</li><li>YYYY-MM-DD</li></ul> |
 | v | <ul><li>The chronological version of the report per day (up to 4 possible daily reports)</li><li>Integer between 1-4</li></ul> |
 | Parquet file number | <ul><li>Numbered starting from 00000</li><li>Example: `part-<number>`</li></ul> |
+
+<div id="cost-etl-connection-directory-structure" />
 
 #### Cost ETL connection directory structure
 
@@ -132,6 +144,8 @@ Data written to the cloud service or bucket has the directory and file structure
 <div id="file-fields" />
 
 <Accordion title="File fields">
+
+<div id="fieldsdimensions" />
 
 #### Fields/Dimensions
 
@@ -165,6 +179,8 @@ Data written to the cloud service or bucket has the directory and file structure
 | platform | The platform used for running the campaign (mobile, tablet, desktop, and CTV) | All cost report only | String | - |
 | site\_id | Publisher ID | No | String | - |
 | timezone | <ul><li>Timezone of the data as it is stored in AppsFlyer</li><li>Sometimes networks report data in a different time zone compared to what is defined in AppsFlyer. This data point helps explain cost discrepancies between AppsFlyer and networks</li></ul> | Yes | String | - |
+
+<div id="metrics" />
 
 #### Metrics
 
@@ -200,6 +216,8 @@ Data written to the cloud service or bucket has the directory and file structure
 | video\_completions | Reported by  ad network |  | Integer | - |
 
 </Accordion>
+
+<div id="procedures" />
 
 ## Procedures
 
@@ -307,6 +325,8 @@ You can edit or change connections to get data sent to different (or additional)
 
 **Note**: After switching to an existing connection, you will not be able to revert to your previous Cost ETL connection.
 
+<div id="edit-connection" />
+
 #### Edit connection
 
 **To edit connection details**:
@@ -320,6 +340,8 @@ You can edit or change connections to get data sent to different (or additional)
 3. Follow the on-screen instructions to edit your connection details.
 4. Click **Save changes** or **Apply** as prompted.
 
+<div id="change-data-locker-connection" />
+
 #### Change Data Locker connection
 
 **To change from one Data Locker connection to another**:
@@ -331,6 +353,8 @@ You can edit or change connections to get data sent to different (or additional)
    * If you don't have the Data Locker connection you want set up yet, click **+ New connection in Data Locker** and create a connection there. Then go back to the Cost ETL settings and select it from the **Connection** dropdown.  
      [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
 3. Click **Save changes**.
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
 
 #### Change from Cost ETL to Data Locker connection
 
@@ -371,6 +395,8 @@ In AWS, by default, when AppsFlyer writes objects to your bucket, the object own
 6. Click **Save**.
 
 </Accordion>
+
+<div id="best-practices" />
 
 ## Best practices
 
@@ -543,6 +569,8 @@ where rank_for_dedup = 1;
 Consider combining Cost ETL reports with Aggregated advanced cohort reports (or regular Cohort reports via Data Locker) in your BI system. Together, they give the fullest picture of marketing performance with fresh and accurate data, including clicks, impressions, cost, revenue, in-app events, etc.). And you can use this combined data to get ROAS, CPA, etc. <Anchor target="_blank" href="/marketers/docs/combine-cost-etl-and-cohort-reports-via-data-locker">Learn more</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

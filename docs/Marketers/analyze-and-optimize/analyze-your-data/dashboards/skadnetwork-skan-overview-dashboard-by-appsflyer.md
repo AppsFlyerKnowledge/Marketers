@@ -25,6 +25,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## Dashboard principles
 
 The dashboard contains SKAN campaign performance data and adheres to the following principles:
@@ -41,6 +43,8 @@ The dashboard contains SKAN campaign performance data and adheres to the followi
   * Postbacks received on a given day are processed at the end of the day UTC. Data is available by 08:00 UTC of the following day. Meaning postbacks received on Monday are available in the dashboard on Tuesday morning.
   * See <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">expected dashboard update time.</Anchor>
 
+<div id="skan-dashboard-view-options" />
+
 ## SKAN dashboard view options
 
 Display data using either the [install date or postback arrival date](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options).
@@ -48,6 +52,8 @@ Display data using either the [install date or postback arrival date](/docs/skad
 **To select a date display option**, in AppsFlyer, from the side menu, select **Analyze** > **SKAN Overview.** In the filter bar, select a **Display by** date option.
 
 Additional filters and display options are described in the sections that follow.
+
+<div id="dashboard-use" />
 
 ## Dashboard use
 
@@ -254,6 +260,8 @@ Definitions:
 * **SDK:** AppsFlyer SDK embedded in the app.
 * **Rules**: <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">AppsFlyer attribution model</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### Attribution framework differences
 
 | Concept | SKAN | AppsFlyer |
@@ -267,6 +275,8 @@ Definitions:
 | Installs reported by | <ul><li>**SKAN**: Limited to non-organic installs and non-organic redownloads.</li><li>**SDK**: All installs are reported. Only first-time installs are counted for metric purposes. Meaning reattributions are disregarded.</li></ul> | SDK reports all installs categorized using Rules into first-time installs and retargeting reinstalls (re-attributions). |
 | Advertising granularity level | Campaign, adset, adset ID, ad, and ad ID. | Full hierarchy: Campaign, campaign ID, adset, additional parameters like channel and partner. |
 | Redownloads vs. reinstalls | Redownloads relate to the actions of a given Apple ID user. They are not parallel to re-attributions. | Retargeting (re-engagements re-attributions) reflect in the Retargeting dashboard. They are not parallel to redownloads. |
+
+<div id="metric-differences" />
 
 #### Metric differences
 
@@ -309,6 +319,8 @@ Definitions:
 | Apple Search Ads | Apple Search Ads does not share campaign-level data. Any agency campaigns that require a prefix will not appear in the agency view. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

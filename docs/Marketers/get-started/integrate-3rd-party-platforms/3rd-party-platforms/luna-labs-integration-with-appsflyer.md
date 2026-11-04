@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **At a glance:** Luna Labs is an end-to-end platform that allows its customers to create, manage, and optimize playables and video ads.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-luna-labs" />
 
 ## Setting up Luna Labs
 
@@ -47,18 +51,26 @@ x-zendesk:
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
+<div id="integration" />
+
 ## Integration
 
 Use the Integration tab for the configuration. The remaining tabs are inactive.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > Luna Labs doesn't use its own attribution links. They get postbacks from ad networks that run campaigns with advertisers. Luna Labs only receives postbacks for their own creatives and only postbacks which include the `af_addpb=1` parameter and value. See further explanation below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you need to turn on **Activate partner** to enable the setup of the integration tab's parameters. **The toggle must be on for as long as you work with the partner**.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation/deactivation</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 

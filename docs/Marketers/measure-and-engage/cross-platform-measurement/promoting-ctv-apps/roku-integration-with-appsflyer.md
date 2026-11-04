@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance** Rokuads\_int is an SRN integration that allows advertisers to integrate their mobile or Roku CTV app with Roku Ads to receive attribution and event data for their campaigns on Roku Ads.
 
+<div id="about-roku-ads-attribution" />
+
 ## About Roku Ads Attribution
 
 Roku is a unique ad network that has ad inventory across both Connected TV (CTV) and mobile apps. The SRN integration between AppsFlyer and Roku Ads allows advertisers to measure multiple user journeys, including:
@@ -32,9 +34,13 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 * Mobile to mobile: Mobile app ads driving mobile app installs and events.
 * CTV to mobile and mobile to CTV: Ad impressions on one platform leading to installs and events on a different platform.
 
+<div id="roku-attribution-flow" />
+
 ### Roku attribution flow
 
 [<Image alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://files.readme.io/51ab9ce816986134ed118ac7b8dd94336fff53d6a00daf5332eef2934c0048d8-4431541172241.png)
+
+<div id="setting-up-roku-ads-integration-for-advertisers" />
 
 ## Setting up Roku Ads integration for advertisers
 
@@ -56,6 +62,8 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 
 <Accordion title="Integration tab">
 
+<div id="general-settings" />
+
 #### General settings
 
 * **Event Group ID:** Enter the Event Group ID to connect your app to AppsFlyer.
@@ -65,12 +73,16 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 * **Advanced Matching data sharing:** When on, Roku receives Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 * **Limited Data Usage:** Turn ON to indicate that Roku Ads should limit its use of personal information for a given event, in specific US states. For more information, see <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/8766138-limited-data-use">Roku ads documentation</Anchor>.
 
+<div id="install-attribution" />
+
 #### Install attribution
 
 Set the different attribution windows to attribute new installs (first launches) of users who viewed, clicked, or engaged with your ad. **Note:** Attribution for reinstalls (any install that isn’t the initial setup on the device) isn’t supported.
 
 * Set the **Install click-through lookback window** to either 1–23 hours or 1–14 days. **Note:** Roku Ads recommends setting this to 14 days.
 * [Optional] Turn on **Install view-through attribution** and set the **Install view-through lookback window** to 1–23 hours or 1–14 days. **Note:** Roku Ads recommends 14 days.
+
+<div id="re-engagement-attribution" />
 
 #### Re-engagement attribution
 
@@ -80,6 +92,8 @@ Set the different attribution windows to attribute new installs (first launches)
 
 [Learn more about re-engagement rules and windows](#).
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignore active users for retargeting
 
 Set a window timeframe to ignore re-engagements of users who launched your app within the timeframe. This means their activity during the window timeframe is not attributed. For more information, see <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">Inactivity period</Anchor>.
@@ -87,12 +101,16 @@ Set a window timeframe to ignore re-engagements of users who launched your app w
 1. Turn on **Ignore active users for retargeting**.
 2. Set the **Inactivity window**.
 
+<div id="cross-platform-attribution" />
+
 #### Cross-platform attribution
 
 Cross-platform attribution is enabled by default for this integration.
 
 * Set the **cross-platform lookback window** to 1–23 hours or 1–3 days.
 * The Cross-platform equal priority window is set to 3 hours. During this period, cross-platform impressions reported by Roku are elevated to the same priority as clicks from other networks.
+
+<div id="in-app-events-postbacks" />
 
 #### In-app events postbacks
 
@@ -155,10 +173,14 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 2. Enter the ad network team member's email.
 3. Click **Add**.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * When you give Roku Ads permissions to configure the integration and change in-app event postbacks, you allow them to potentially access all attribution events, including organic and non-organic traffic from all media sources.
 > * Changes that Roku Ads makes override the current configuration, even if you (the advertiser) set them.
+
+<div id="types-of-permissions-advertisers-can-grant-to-roku-ads" />
 
 #### Types of permissions advertisers can grant to Roku Ads
 
@@ -177,9 +199,13 @@ After enabling permissions for Roku Ads, you can add team members and assign the
 
 </Accordion>
 
+<div id="setting-up-roku-ads-integration-for-agencies" />
+
 ## Setting up Roku Ads integration for agencies
 
 Agencies working on behalf of advertisers can turn on the Roku Ads integration and start getting attribution for their campaigns. However, this integration has some limitations for agencies.
+
+<div id="agency-limitations" />
 
 ### Agency limitations
 
@@ -192,6 +218,8 @@ Agencies working on behalf of advertisers can turn on the Roku Ads integration a
 2. Find **Roku Ads (rokuads\_int)** and select it.
 3. Enter your agency **Roku Ads Account ID**. This identifies agency traffic and distinguishes it from the advertiser's.
 4. Click **Save Integration**.
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >

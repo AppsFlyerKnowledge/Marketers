@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Kuaishou is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-kuaishou" />
+
 ## Setting Up Kuaishou
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,14 +44,20 @@ Kuaishou's configuration window includes 3 active tabs: Integration, Attribution
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 ![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -103,6 +111,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant Kuaishou, whether the partner acts as an ad network, an agency, or even both. Note that even if attribution is disabled for Kuaishou, the permissions tab is active and you can grant control to Kuaishou.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

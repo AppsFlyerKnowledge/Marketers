@@ -35,11 +35,15 @@ x-zendesk:
 
 App relevance determines if your ad is the one displayed in response to a search query in the App Store. User response to an ad is a signal of ad relevance. Apple Ads uses user responses as a signal to decide which ads to display most often.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * AppsFlyer supports Apple Ads click-based mobile attribution, user retargeting, and cost data via API (with an ROI360 subscription).
 > * Starting March 27, 2025, AppsFlyer will also support Apple Ads impression-based mobile attribution.
 > * Starting September 1, 2026, Apple Ads adds an exact timestamp to all iOS attribution claims.
+
+<div id="set-up-apple-ads-integration" />
 
 ## Set up Apple Ads integration
 
@@ -52,6 +56,8 @@ App relevance determines if your ad is the one displayed in response to a search
 **Set up Apple Ads in AppsFlyer:**
 
 The setup is done from the **Active Integrations** page, but to find new partners you must first go to the <Anchor target="_blank" href="/marketers/docs/partner-integrations">Partner Marketplace</Anchor>. Complete the configuration using the relevant tabs, as described below.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -74,6 +80,8 @@ The cost integration provides the following aggregated data:
 * Cost data for your campaigns, ad sets, geos/countries, and keywords. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
   **Note:** Cost data requires an ROI360 subscription.
 * Data on clicks, impressions, and enriched data—keywords, campaign names, and ad sets.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -98,6 +106,8 @@ The cost integration provides the following aggregated data:
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## Set up agencies and Apple Ads marketing partners
 
 <Accordion title="Principles">
@@ -108,6 +118,8 @@ Advertisers and agencies can elect to work with Apple Ads Marketing Partners to 
 
 The differences between agencies and marketing partners are outlined in the table below.
 
+<div id="agency-vs-marketing-partner" />
+
 #### Agency vs. marketing partner
 
 |  | Agency | Marketing partner |
@@ -115,9 +127,13 @@ The differences between agencies and marketing partners are outlined in the tabl
 | AppsFlyer sends postbacks | No | Yes |
 | Technology | Run campaigns on your behalf | Have a value-added technology solution to optimize campaigns |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### Configuring agencies and marketing partners
 
 Use the checklist below to make sure you complete all steps in the configuration process. Detailed instructions are provided for each partner type in the sections that follow.
+
+<div id="configuration-steps-checklist" />
 
 #### Configuration steps checklist
 
@@ -178,6 +194,8 @@ See Apple Ads documentation on <Anchor target="_blank" href="https://searchads.a
 * Don't use special characters and spaces for the group name.
 * When you sign in with Apple, authorization of Apple Ads campaign groups isn't cumulative. This means that when you integrate a new app, the authorization for campaign groups chosen for the previous apps is revoked unless chosen again. You will need to select **Limited Access** and each of the relevant campaign groups (related to the apps you want to connect for the advertiser).
 
+<div id="advertiser-actions" />
+
 #### **Advertiser actions**
 
 **Prerequisite**:
@@ -192,6 +210,8 @@ See Apple Ads documentation on <Anchor target="_blank" href="https://searchads.a
 4. [Optional] If you want to attribute users who reinstall the app during the re-attribution window, switch on **Reinstall attribution.**
 5. Click **Save.**
 
+<div id="agency-actions" />
+
 #### **Agency actions**
 
 1. **In your Apple Ads dashboard,** get your Campaign Group ID. Use the screenshot that follows as a guide to locating the ID. Get only the digits.
@@ -203,9 +223,13 @@ See Apple Ads documentation on <Anchor target="_blank" href="https://searchads.a
 5. Enter the **Apple Ads Campaign ID** parameter. Note! Enter digits (numbers only)
 6. Click **Save**.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > When an agency works with an Apple Ads Marketing Partner, it must configure the same campaign group ID on both the Apple Ads configuration page and the Marketing Partner configuration page.
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### Cost, clicks, and impressions data
 
@@ -219,6 +243,8 @@ If you enable the cost API, AppsFlyer receives cost, click, and impression data 
     **Note**: If you choose Limited Access and a specific campaign group, you may encounter data errors.
 
 <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard or the individual ad network dashboard.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -237,6 +263,8 @@ If you enable the cost API, AppsFlyer receives cost, click, and impression data 
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <Accordion title="Apple Ads attribution">
@@ -245,9 +273,13 @@ Apple Ads functions independently of SKAdNetwork and deterministically attribute
 
 Apple Ads attribution doesn't rely on IDFA; attribution is done using a token from the device (deterministic attribution).
 
+<div id="after-september-1-2026" />
+
 #### After September 1, 2026
 
 Click and impression time is available regardless of ATT status. The lookback window is set by the advertiser, and AppsFlyer applies its last-touch attribution rules to the engagement.
+
+<div id="before-september-1-2026" />
 
 #### Before September 1, 2026
 
@@ -270,6 +302,8 @@ AppsFlyer and Apple Ads use different attribution logic, resulting in discrepanc
 * The following are not reported: Impressions, taps, or cost of Geos having less than 100 impressions for a given campaign.
 * When grouping by Geo in AppsFlyer, Geos with unavailable data are not shown, and the total of unavailable data appears under N/A.
 
+<div id="retargeting-related-discrepancies" />
+
 ### Retargeting-related discrepancies
 
 The AppsFlyer retargeting attribution mechanism allows advertisers to measure and analyze retargeting campaigns, in addition to user acquisition campaigns.
@@ -283,6 +317,8 @@ The figures that follow show how discrepancies can occur in relation to retarget
 **Retargeting off**
 
  ![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png) 
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### Additional reasons for discrepancies
 
@@ -360,11 +396,15 @@ The table below shows the availability of attribution parameters in raw data rep
 
 Starting in iOS 14, [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) (ATT) governs the availability of IDFA, and Apple Ads controls the user-level attribution data of installs brought by Apple Ads. As such, the user-level data availability of installs brought by Apple Ads is not affected by <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor>.
 
+<div id="after-september-1-2026-1" />
+
 #### After September 1, 2026
 
 | **ATT consent** | **Click/impression time available** | **Click/Impression lookback window** | **Remarks** | **Data availability** | **IDFA available** |
 | --- | --- | --- | --- | --- | --- |
 | Consenting and non-consenting | Yes | Set by the advertiser | AppsFlyer last-touch attribution rules used | User-level attribution data | Yes for consenting, no for non-consenting |
+
+<div id="before-september-1-2026-1" />
 
 #### Before September 1, 2026
 
@@ -376,6 +416,8 @@ Click/impression time availability, the lookback window, and data availability d
 | Non-consenting | No | Clicks: 30 days (set by Apple Ads), Impressions: 24 hours | Priority is given to deterministic candidates. | User-level attribution data without the click/impression time. | No |
 
 </Accordion>
+
+<div id="see-also" />
 
 #### See also
 

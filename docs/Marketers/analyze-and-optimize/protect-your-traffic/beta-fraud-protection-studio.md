@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Fraud protection studio (FPS) provides greater control over how fraud detection is applied than usual methods. With FPS, you can choose whether fraud detection data is blocked and reported as fraud or tagged, empowering tailored fraud management.
 
+<div id="about-fraud-protection-studio" />
+
 ## About fraud protection studio
 
 Fraud protection studio introduces a tagged detection status.
@@ -35,15 +37,21 @@ This status enables advertisers to detect fraud without automatically implementi
 * Control: Tailor fraud detection to your business model and needs.
 * Transparency: Tagged data provides insights on additional fraud protection layers.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Only the Admin, Marketing lead, Team manager, and Security <Anchor target="_blank" href="/marketers/docs/user-management#manage-roles">permissions roles</Anchor> are able to access the Fraud protection Studio.
+
+<div id="how-the-fraud-protection-studio-works" />
 
 ## How the fraud protection studio works
 
 <div id="key-concepts" />
 
 <Accordion title="Key concepts">
+
+<div id="fps-modes" />
 
 #### FPS modes
 
@@ -68,9 +76,13 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
 
 [<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > In tagged mode, all fraud detections that are tagged but remain valid are considered valid according to the client configuration, and as such, we won’t credit back to the consumption plan
+
+<div id="where-is-tagged-detection-reflected" />
 
 #### Where is tagged detection reflected?
 
@@ -92,6 +104,8 @@ Tagged detections aren't reflected in fraud reports. Tagged detections are avail
 * Identified fraud by “Tag type”, “Tag reason,” “Tag Sub Reason” (3)
 
 </Accordion>
+
+<div id="how-to-use-fraud-protection-studio" />
 
 ## How to use fraud protection studio
 
@@ -125,10 +139,14 @@ On the click flood card page you can [see and adjust the detection status](/docs
 
 Download the Click flood report data sample
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > * When tagged detection is selected they are reported in raw data reports, meaning, not in fraud reports.
 > * Tagging the click flood is on the app level and will prevent blocking or post-attribution implementation. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
+
+<div id="how-to-access-click-flood" />
 
 #### How to access Click Flood
 
@@ -136,6 +154,8 @@ Download the Click flood report data sample
 2. From the left-hand menu, go to **Settings > Protect360 > Fraud Protection Studio**.
 3. Use the app dropdown at the top of the page to select the app you want to configure.
 4. From the left menu, select the **Click Flood** card
+
+<div id="click-flood-page" />
 
 ### Click flood page
 
@@ -145,6 +165,8 @@ The click flood page is broken into two sections:
 
 [Current detection status](/docs/beta-fraud-protection-studio#current-detection-status)
 
+<div id="detection-status" />
+
 #### Detection Status
 
 * [Detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) - Allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. you can choose between **implemented** and **tagged**
@@ -152,6 +174,8 @@ The click flood page is broken into two sections:
   * Current detection widget
   * Click Flood detection breakdown widget
   * Click Flood by media source widget
+
+<div id="how-to-adjust-the-detection-status" />
 
 #### **How to adjust the detection status**
 
@@ -161,6 +185,8 @@ The detection status allows you to choose the [detection](/docs/beta-fraud-prote
 2. Click the **Save** button at the bottom of the page.
 
    [<Image alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+
+<div id="current-detection-status" />
 
 #### **Current detection status**
 
@@ -199,9 +225,13 @@ With New Releases, you can evaluate the impact of new fraud detection updates be
 
 Download the New Release report data sample
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > A detection package is one or multiple detection updates that are grouped and released together.
+
+<div id="how-this-works" />
 
 #### How this works
 
@@ -211,6 +241,8 @@ Download the New Release report data sample
 * The current active package can be evaluated and implemented.
 * You will be notified of new package releases through the notification bell.
 
+<div id="how-to-access-new-releases" />
+
 #### How to access New Releases
 
 1. Log in to AppsFlyer.
@@ -218,12 +250,16 @@ Download the New Release report data sample
 3. Use the app dropdown at the top of the page to select the app you want to configure.
 4. From the left menu, select the **New Release** card.
 
+<div id="new-releases-page" />
+
 ### New releases page
 
 The New Releases page is broken up into two sections.
 
 * [Future Releases](/docs/beta-fraud-protection-studio#how-to-access-new-releases) - Allows you to evaluate the impact of new fraud detection packages by marking detections as tagged for up to 14 days before they come into effect.
 * [New Releases](/docs/beta-fraud-protection-studio#how-to-evaluate-and-implement-current-active-packages) - Allows you to evaluate the current active package by monitoring its detection performance and implementing it now.
+
+<div id="how-to-set-the-tagged-mode-time-period-for-future-packages" />
 
 #### How to set the tagged mode time period for future packages
 
@@ -234,10 +270,14 @@ Future Releases allow you to set the number of days you want future detection pa
 
 <Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > * This only affects future packages. Detection packages that are currently in effect will not get delayed or changed.
 > * Selecting 0 days from the dropdown box is equivalent to selecting [Implement now](/docs/beta-fraud-protection-studio#to-implement-the-current-package-if-in-tagged-status), and overrides the the [Future Release](/docs/beta-fraud-protection-studio#how-to-access-new-releases) settings for this package.
+
+<div id="how-to-evaluate-and-implement-current-active-packages" />
 
 #### How to evaluate and implement current active packages
 
@@ -250,12 +290,16 @@ The New Current Release section allows you to see:
 * Export detail reports
 * Bypass the Future Releases settings and implement this detection package now
 
+<div id="to-implement-the-current-package-if-in-tagged-status" />
+
 #### To implement the current package if in tagged status.
 
 1. Open the **New Release Card** in the FPS tab.
 2. Monitor detection performance using the table, and exportable reports.
 3. When ready, click **Implement Now** to apply the changes.  
    [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -273,11 +317,15 @@ Tagging a detection on the App Detection Evaluation Card impacts all Protect360 
 
 On the App detection evaluation page you can [see and adjust the detection status](/docs/beta-fraud-protection-studio#how-to-access-click-flood) between implemented and tagged, and view the [current detection status](/docs/beta-fraud-protection-studio#analyze-click-flood-by-media-source) data.
 
+<div id="important-2" />
+
 > 🚧 **Important!**
 >
 > * When tagged detection is selected, they are reported in raw data reports, meaning not in fraud reports.
 > * Tagging the app detection evaluation is on the app level and will prevent blocking or post-attribution implementation of Protect360 logics. Therefore, by tagging it, you are exposed to abuse on your non-organic and organic installs.
 > * Any validation rule defined and activated will always remain in implemented mode. To pause the implementation of any validation rules, go to the validation rules page and deactivate it there.
+
+<div id="how-to-access-app-detection-evaluation" />
 
 #### **How to access App detection evaluation**
 
@@ -285,6 +333,8 @@ On the App detection evaluation page you can [see and adjust the detection statu
 2. From the left-hand menu, go to **Settings > Protect360 >** **Fraud Protection Studio**.
 3. Use the app dropdown at the top of the page to select the app you want to configure.
 4. From the left menu, select the **App Detection Evaluation** card.
+
+<div id="app-detection-evaluation-page" />
 
 #### **App detection evaluation page**
 
@@ -307,6 +357,8 @@ The app detection evaluation page is broken into two sections.
     * App level - This KPI allows you to understand how much of the tagged is due to tagging made by the app detection evaluation card. The number reflected in this KPI is the expected increase if you implement the detection status.
     * Other tagging - You can tag the detection in multiple capabilities (cards) in the fraud protection studio.
 
+<div id="how-to-adjust-the-detection-status-1" />
+
 #### **How to adjust the detection status**
 
 The detection status allows you to choose the [detection](/docs/beta-fraud-protection-studio#fps-modes) mode. You can choose between implemented and tagged (the default is implemented)
@@ -324,11 +376,15 @@ The Re-engagement hijacking detection in Protect360 expands the standard fraud d
 
 By default, this detection is released in [tagged mode](/docs/beta-fraud-protection-studio#fps-modes), allowing you to evaluate its effectiveness and potential impact before implementation.
 
+<div id="how-this-works-1" />
+
 #### How this works
 
 * The re-engagement hijacking detection is set to tagged mode by default. You can evaluate its detection performance without impacting your live attribution data.
 * When implemented, detections occur post-attribution, meaning fraudulent re-engagements are identified and removed from attribution records.
 * When implemented, all in-app events following a detection removal will be re-attributed to the original User Acquisition (UA) provider or marked as organic if no valid UA provider exists.
+
+<div id="how-to-access" />
 
 #### How to access
 
@@ -336,6 +392,8 @@ By default, this detection is released in [tagged mode](/docs/beta-fraud-protect
 2. From the left-hand menu, go to **Settings > Protect360 > Fraud Protection Studio**.
 3. Select the app you wish to configure using the app dropdown at the top.
 4. From the left menu, choose the **Re-engagement Hijacking** card.
+
+<div id="re-engagement-hijacking-page" />
 
 #### Re-engagement hijacking page
 
@@ -365,12 +423,16 @@ The Re-engagement hijacking page is broken into two sections.
 
 In-app based detection deterministically marks installs as fraud in post-attribution by analyzing in-app behavioral anomalies. It identifies sophisticated fraud schemes such as bots that mimic real engagement but display unusual event flows and timing patterns after install.
 
+<div id="how-to-access-1" />
+
 #### How to access
 
 1. Log in to AppsFlyer.
 2. From the left-hand menu, go to **Settings > Protect360 > Fraud Protection Studio**.
 3. Use the app dropdown at the top of the page to select the app you want to configure.
 4. From the left menu, select the **In-app based detection** card.
+
+<div id="the-in-app-based-detection-page" />
 
 #### The In-app based detection page
 
@@ -403,12 +465,16 @@ This section is further broken up into:
 
 Review Advanced Security Module detections of install candidate cyberattacks in real time, for Android apps. This helps make sure only verified traffic reaches your app.
 
+<div id="how-to-access-2" />
+
 #### How to access
 
 1. Log in to AppsFlyer.
 2. From the left-hand menu, go to **Settings > Protect360 > Fraud Protection Studio**.
 3. Use the app dropdown at the top of the page to select the app you want to configure.
 4. From the left menu, select the **Advanced Security Module** card.
+
+<div id="the-advanced-security-module-page" />
 
 #### The Advanced Security Module page
 
@@ -422,11 +488,15 @@ Detections are shown as one of the following:
 * **Tagged** — traffic flagged as suspicious but still attributed, so you can review before enforcing. This is the default detection mode.
 * **Untagged** — install candidates the module didn't flag.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > For full setup, requirements, and detailed reporting, see <Anchor target="_blank" href="/marketers/docs/beta-advanced-security-protect360-module">[Beta] Advanced Security Protect360 Module</Anchor>.
 
 </Accordion>
+
+<div id="faqs" />
 
 ## FAQs
 

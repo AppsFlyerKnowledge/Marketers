@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance**: Cohort analytics in Data Locker contains aggregated data of all elements in the advertising hierarchy. Reports contain data of users attributing in the previous 365 days. This report is available to advertisers who have raw data or Cohort API, or both as part of their subscription. It means that a Data Locker subscription isn't required for this report.
 
+<div id="cohort-analytics-in-data-locker" />
+
 ## Cohort analytics in Data Locker
 
 In some cases, attribution raw data in AppsFlyer is <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">restricted</Anchor> due to media source data-sharing policies or your <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">privacy-preserving policies.</Anchor> The restriction includes all attribution-related fields like campaign and adset. Cohort reports provide you with aggregated data that can be used as an alternative to raw data.
@@ -73,6 +75,8 @@ The format of the fields is as follows:
 
 * **Dimensions**: String. The maximum length of the string is dynamic and in most instances depends on how you populate the elements of the advertising hierarchy
 * **Metrics**: Number. **Note:** The selected\_currency field format is a string.
+
+<div id="dimensions" />
 
 #### Dimensions
 
@@ -274,6 +278,8 @@ The format of the fields is as follows:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Metrics
 
 | Field name | Description | Format |
@@ -322,6 +328,8 @@ The data of all apps is provided in a single file. Use the App ID field to segre
 
 The following are examples of some popular, practical applications of Cohort data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement and sample Excel visual.
 
+<div id="1-calculating-retention" />
+
 #### **1. Calculating retention**
 
 In the following example, we:
@@ -352,6 +360,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculating-arpu-of-multiple-in-app-events" />
 
 #### **2. Calculating ARPU of multiple in-app events**
 
@@ -388,6 +398,8 @@ group by 1
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | re-attribution | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. Calculating in-app event conversion rate for a specific cohort day**
 
 In the following example, we:
@@ -418,6 +430,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | UK | 98765432 | null | site\_654 | 70% |
 | 2022-10-31 | KR | 07315466 | null | null | 63% |
+
+<div id="4-calculating-daily-installs" />
 
 #### **4. Calculating daily installs**
 
@@ -455,6 +469,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculating-revenue-from-facebook-ads" />
+
 #### **5. Calculating revenue from Facebook Ads**
 
 In the following example, we:
@@ -488,6 +504,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. Calculating ARPU per ASA keyword ID for up to 365 cohort days**
 
 In the following example, we:
@@ -518,6 +536,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculating-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calculating ARPU Days 7 by attribution time per geo**
 
@@ -562,6 +582,8 @@ limit 20
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="traits-and-limitations" />
@@ -584,6 +606,8 @@ limit 20
 | Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

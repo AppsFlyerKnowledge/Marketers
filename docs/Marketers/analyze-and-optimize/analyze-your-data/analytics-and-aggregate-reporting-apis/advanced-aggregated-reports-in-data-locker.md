@@ -26,6 +26,8 @@ x-zendesk:
 
 > **At a glance**: Advanced aggregated reports in Data Locker contain aggregated data with optimal data freshness, accuracy, granularity, and unlimited volume.
 
+<div id="advanced-aggregated-reports-in-data-locker" />
+
 ## Advanced aggregated reports in Data Locker
 
 Advanced aggregated reports in Data Locker:
@@ -34,6 +36,8 @@ Advanced aggregated reports in Data Locker:
 * You can load the data into your BI systems and use them as part of your campaign performance and optimization processes.
 * Have the best freshness to accuracy: Data arrives <Anchor target="_blank" href="/marketers/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">multiple times per day</Anchor> and gets updated with each subsequent version of a report with all available data for that day.
 * Helps you augment raw data that may be limited and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">restricted</Anchor> due to media source data-sharing policies or your <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">privacy-preserving policies</Anchor>. The restrictions impact attribution-related fields like campaign and adset.
+
+<div id="setup" />
 
 ## Setup
 
@@ -44,11 +48,15 @@ To get advanced aggregated reports, complete one of the following procedures.
 | Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/fd2f20f4365b0ccf2b4f39700587a960563f4087b6f576063c0e49b95e0907c1-23127074967441.png)To add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol> |
 | No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/fd2f20f4365b0ccf2b4f39700587a960563f4087b6f576063c0e49b95e0907c1-23127074967441.png)**To set up Data Locker**:<ol><li>Complete the first-time Data Locker (<Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-up-data-locker">advertiser</Anchor> \| <Anchor target="_blank" href="/partners/docs/data-locker-for-partners">partner</Anchor>) setup.</li><li>Add the reports to Data Locker:<ol><li>In AppsFlyer, from the side menu, select **Export > Data Locker**.</li><li>Select all the reports you want to get.</li><li>Click **Save configuration**.<br />The reports will be available the next day.</li></ol></li></ol> |
 
+<div id="reports-available" />
+
 ## Reports available
 
 <div id="cohort-versioned-report" />
 
 <Accordion title="Advanced aggregated (cohort versioned) reports">
+
+<div id="report-facts" />
 
 ### Report facts
 
@@ -62,6 +70,8 @@ To get advanced aggregated reports, complete one of the following procedures.
 | Directory and filename structure | [Learn more](/docs/advanced-aggregated-reports-in-data-locker#report-structure) |
 | Impact of partner retention policies | Consider that some partners implement a data retention policy. In this case, events occurring after the end of the retention period are considered organic in the Cohort reports.<br /><br />Example: SRN "A" has a data retention policy of 180 days. User events until day 180 are attributed to SRN "A". Events that occur after 180 days are considered organic. |
 
+<div id="report-structure" />
+
 ### Report structure
 
 The report is comprised of dimensions and metrics.
@@ -71,6 +81,8 @@ The format of the fields is as follows:
 * **Dimensions**: String. The maximum length of the string is dynamic and in most instances depends on how you populate the elements of the advertising hierarchy
 * **Metrics**: Number. **Note:** The selected\_currency field format is a string.  
   The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
+
+<div id="dimensions" />
 
 #### Dimensions
 
@@ -268,6 +280,8 @@ The format of the fields is as follows:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Metrics
 
 | Field name | Description | Format |
@@ -279,11 +293,15 @@ The format of the fields is as follows:
 | revenue\_selected\_currency | <ul><li>Amount of revenue in the selected currency. For example, if the selected currency is EUR, then €1234.56 is reflected as 1234.56</li><li>Maximum of 2 places after the decimal point</li></ul> | Number |
 | first\_inapp | <ul><li>Number of users performing the event for the first time following their conversion.</li><li>Summing the first\_inapp metrics together gives you the cumulative unique user count for the event.</li></ul> | Number |
 
+<div id="directory-and-filename-structure" />
+
 #### Directory and filename structure
 
 The path to the report consists of the following folder hierarchy:
 
 With the following format: `<bucket-name>/t=cohort_unified_versioned/dt=<yyyy-mm-dd>/version=<unix timestamp>/<parquet file number>`
+
+<div id="report-folder-hierarchy" />
 
 #### Report folder hierarchy
 
@@ -323,6 +341,8 @@ bucket
 * **t:** report type.
 * **version**: Unix timestamp when the version was created.
 
+<div id="report-versions-and-data-freshness" />
+
 ### Report versions and data freshness
 
 * Intraday. Reports are sent every few hours.
@@ -348,6 +368,8 @@ bucket
 
 <Accordion title="Advanced aggregated (cohort timezone versioned) reports">
 
+<div id="report-facts-1" />
+
 ### Report facts
 
 | Overview | The cohort timezone versioned report contains all your aggregated data, cohorted, with all campaign dimension granularity, according to localized timezones. The report is updated every few hours to maximize data freshness and accuracy.<br /><br /><Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk1cZkeJhlx3trW13SjGbD4aWX3LmXZJRDJRApuAJkjB7XAg4nSFUyN0_YoirX-QMHkhFeMHwEmiVj/pub?output=xlsx">Download sample report</Anchor> |
@@ -360,6 +382,8 @@ bucket
 | Directory and filename structure | [Learn more](/docs/advanced-aggregated-reports-in-data-locker#report-structure-1) |
 | Impact of partner retention policies | Consider that some partners implement a data retention policy. In this case, events occurring after the end of the retention period are disregarded in the Cohort reports.<br /><br />Example: SRN "A" has a data retention policy of 180 days. User events until day 180 are attributed to SRN "A". Events that occur after 180 days are disregarded.<br /><br />**Note**: The events display in the Overview dashboard as organic. |
 
+<div id="report-structure-1" />
+
 ### Report structure
 
 The report is comprised of dimensions and metrics.
@@ -369,6 +393,8 @@ The format of the fields is as follows:
 * **Dimensions**: String. The maximum length of the string is dynamic and in most instances depends on how you populate the elements of the advertising hierarchy
 * **Metrics**: Number. **Note:** The selected\_currency field format is a string.  
   The metrics available are revenue, unique users performing an event and the number of event occurrences. To calculate cost-related metrics like ROI, and ROAS you need both revenue and cost metrics. Revenue metrics are in Cohort, and cost metrics are provided by <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
+
+<div id="dimensions-1" />
 
 #### Dimensions
 
@@ -574,6 +600,8 @@ The format of the fields is as follows:
   </tbody>
 </Table>
 
+<div id="metrics-1" />
+
 #### Metrics
 
 | Field name | Description | Format |
@@ -585,11 +613,15 @@ The format of the fields is as follows:
 | revenue\_selected\_currency | <ul><li>Amount of revenue in the selected currency. For example, if the selected currency is EUR, then €1234.56 is reflected as 1234.56</li><li>Maximum of 2 places after the decimal point</li></ul> | Number |
 | first\_inapp | <ul><li>Number of users performing the event for the first time following their conversion.</li><li>Summing the first\_inapp metrics together gives you the cumulative unique user count for the event.</li></ul> | Number |
 
+<div id="directory-and-filename-structure-1" />
+
 #### Directory and filename structure
 
 The path to the report consists of the following folder hierarchy:
 
 With the following format: `<bucket-name>/t=cohort_unified_timezone_versioned/dt=<yyyy-mm-dd>/version=<unix timestamp>/<parquet file number>`
+
+<div id="report-folder-hierarchy-1" />
 
 #### Report folder hierarchy
 
@@ -629,6 +661,8 @@ bucket
 * **t:** report type.
 * **version**: Unix timestamp when the version was created.
 
+<div id="report-versions-and-data-freshness-1" />
+
 ### Report versions and data freshness
 
 * Intraday. Reports are sent every few hours.
@@ -661,6 +695,8 @@ bucket
 | 21 | Day 8 at 00:00 AM | Complete conversion and in-app event data for Day 0, and complete ad revenue data sent via S2S, accounting for any potential issues that may have occurred on the ad revenue network side | Day 8 at 6 AM |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -713,6 +749,8 @@ The data of all apps is configurable; it can be provided in a single file or sep
 
 The following are examples of some popular, practical applications of the data that BI developers can extract via Data Locker. Each example is illustrated by an SQL statement and sample Excel visual.
 
+<div id="1-calculate-retention" />
+
 #### **1. Calculate retention**
 
 In the following example, we:
@@ -743,6 +781,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculate-arpu-of-multiple-in-app-events" />
 
 #### **2. Calculate ARPU of multiple in-app events**
 
@@ -779,6 +819,8 @@ group by 1
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | re-attribution | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. Calculate in-app event conversion rate for a specific cohort day**
 
 In the following example, we:
@@ -809,6 +851,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | UK | 98765432 | null | site\_654 | 70% |
 | 2022-10-31 | KR | 07315466 | null | null | 63% |
+
+<div id="4-calculate-daily-installs" />
 
 #### **4. Calculate daily installs**
 
@@ -846,6 +890,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculate-revenue-from-facebook-ads" />
+
 #### **5. Calculate revenue from Facebook Ads**
 
 In the following example, we:
@@ -879,6 +925,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. Calculate ARPU per ASA keyword ID for up to 365 cohort days**
 
 In the following example, we:
@@ -909,6 +957,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calculate ARPU Days 7 by attribution time per geo**
 
@@ -951,6 +1001,8 @@ limit 20
 | Canada | 35,099 | $64,867.84 | $7,050.19 | $5,656.33 | $9,553.75 | $8,632.41 | $11,308.06 |
 | Chile | 26,750 | $48,160.02 | $21,249.55 | $22,584.57 | $24,033.07 | $31,118.91 | $41,145.22 |
 
+<div id="8-calculate-purchases-day-7-after-conversion" />
+
 #### **8. Calculate purchases Day 7 after conversion**
 
 In the following example, we:
@@ -991,6 +1043,8 @@ group by 1,2,3,4,5
 | id123456789 | 2024-03-05 | adnet1\_int | campaign\_1 | adset\_1 | 100 | 20 | 20% |
 | id123456789 | 2024-03-07 | adnet2\_int | campaign\_2 | adset\_2 | 200 | 10 | 5% |
 | id123456789 | 2024-03-31 | adnet3\_int | campaign\_3 | adset\_3 | 150 | 15 | 10% |
+
+<div id="9-calculate-dau" />
 
 #### **9. Calculate DAU**
 
@@ -1051,6 +1105,8 @@ group by 1,2,3
 | Reinstalls | <ul><li>If post-reinstall events are considered unattributed organic:<ul><li>They're included only as of May 26, 2024. <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Learn more</Anchor></li><li>The install time is based on the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> field.</li><li>They aren't counted toward unique user and retention measurements.</li></ul></li><li>If post-reinstall events are attributed to the first install, they're always included. <Anchor target="_blank" href="/marketers/docs/unique-users">Learn more</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

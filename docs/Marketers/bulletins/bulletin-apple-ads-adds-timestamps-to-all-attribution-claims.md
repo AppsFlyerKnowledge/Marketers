@@ -23,6 +23,8 @@ x-zendesk:
 | What you should know | <ul><li>For most Apple Ads campaigns, attribution accuracy improves because engagements are now evaluated against your advertiser-defined lookback window rather than the previous default windows, including engagements from non-consenting users who previously were claimed without timestamps.</li><li>Separately, ad groups with age or gender targeting will return a false attribution payload. Engagements from those ad groups are not claimed by Apple Ads and therefore cannot be attributed to them.</li></ul> |
 | What you should do | No action is required. Your Apple Ads integration reflects this change automatically. If you run age or gender targeted ad groups, review your Apple Ads reporting after September 1 to understand any change in attributed conversions. |
 
+<div id="see-also" />
+
 #### See also
 
 * <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup">Apple Ads integration setup</Anchor>

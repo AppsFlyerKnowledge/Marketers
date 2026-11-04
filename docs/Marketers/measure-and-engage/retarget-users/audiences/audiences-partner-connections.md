@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:**  Connect your audiences to partners.
 
+<div id="about-partner-connections" />
+
 ## About partner connections
 
 A partner connection enables you to easily and continuously send your audiences to partners so you can serve your tailored campaigns. Below is a list of Audiences partners, connection requirements, and the user identifiers supported by each.
@@ -245,6 +247,8 @@ A partner connection enables you to easily and continuously send your audiences 
 | Zoneads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoneads.png" width="118px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Zoomd DSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png" width="118px" /> | API key | <ul><li>IDFA</li><li>GAID</li></ul> |
 
+<div id="we-love-working-with-new-audiences-partners" />
+
 > 📘 **We love working with new Audiences partners!**
 >
 > If the partner you're looking for doesn't appear in the list above, feel free to contact your CSM. They will be happy to check with the partner to see what options are available.
@@ -337,6 +341,8 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
     ```
 12. Replace **BUCKET-NAME** with the name of the bucket to which you want AppsFlyer to upload your audience.
 
+    <div id="note" />
+
     > 📘 **Note**
     >
     > The policy must contain only the root bucket and not additional directories in the path. For example, the resource **arn:aws:s3:::BUCKET-NAME/Directory/\*** is not supported. If you need the files to be transferred to a specific directory, see step 14.
@@ -374,6 +380,8 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 
 <Accordion title="Braze">
 
+<div id="prerequisite" />
+
 > 🚧 **Prerequisite**
 >
 > Ensure that both the Braze and AppsFlyer SDKs are integrated into your app.
@@ -383,7 +391,7 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 > * Braze External ID parameter
 > * CUID field
 >
-> #### USING A BRAZE EXTERNAL ID PARAMETER
+> #### <span id="using-a-braze-external-id-parameter"></span>USING A BRAZE EXTERNAL ID PARAMETER
 >
 > To upload audiences to Braze, use the `setPartnerData` function of the AppsFlyer SDK to pass each user's Braze External ID to AppsFlyer. Usage examples follow:
 >
@@ -412,6 +420,8 @@ Creating an S3 integration allows AppsFlyer to send the audience device IDs dire
 > </Tab>
 > </Tabs>
 >
+
+<div id="using-the-cuid-field" />
 
 #### USING THE CUID FIELD
 
@@ -581,6 +591,8 @@ To enable AppsFlyer to send Audiences to Google Ads the following actions must b
 
 <Accordion title="Leanplum">
 
+<div id="prerequisite-1" />
+
 > 🚧 **Prerequisite**
 >
 > To successfully upload audiences to Leanplum:
@@ -612,6 +624,8 @@ Within up to 30 minutes, the audience and the users in it will be populated in y
 <div id="moengage" />
 
 <Accordion title="MoEngage">
+
+<div id="prerequisite-2" />
 
 > 🚧 **Prerequisite**
 >
@@ -679,6 +693,8 @@ AppsFlyer uploads a CSV file of Device IDs to your public Slack channel.
 6. Select your **Organization** and **Ad account**.
 7. Click **Save**.  
    The audience will appear in the Snapchat dashboard 24 hours after upload.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

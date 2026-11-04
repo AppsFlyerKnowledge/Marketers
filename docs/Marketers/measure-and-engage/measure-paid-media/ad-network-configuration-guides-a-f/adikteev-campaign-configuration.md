@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Adikteev, an AppsFlyer ad network integrated partner, is an ad-tech company focusing on in-app retargeting and engagement advertising technology. Adikteev offers both click-based and view-through mobile attribution. In addition, Adikteev also offers click-based retargeting which you can record with AppsFlyer.
 
+<div id="setting-up-adikteev" />
+
 ## Setting up Adikteev
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -43,6 +45,8 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
@@ -54,12 +58,16 @@ General Settings
 
 Toggle this to ON if you want to attribute view-through installs from Adikteev. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Adikteev following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Adikteev.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Adikteev.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -88,6 +96,8 @@ In this tab, you can create the attribution links you want to send to Adikteev f
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -106,6 +116,8 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -140,6 +152,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Adikteev.
@@ -148,9 +162,13 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Adikteev to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -161,6 +179,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 **Attribution link parameter:** af\_viewthrough\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -197,6 +217,8 @@ Ad revenue integration is not available for Adikteev.
 In this tab, you can select the permissions to grant Adikteev. Note that even if attribution is disabled for Adikteev, the permissions tab is active and you can grant control to Adikteev.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

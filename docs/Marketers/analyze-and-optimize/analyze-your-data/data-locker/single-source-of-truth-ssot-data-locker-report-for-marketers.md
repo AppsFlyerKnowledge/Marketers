@@ -24,13 +24,19 @@ x-zendesk:
 
 <span id="ssot-reports-in-data-locker"></span>Note: The SSOT Data Locker report contains LTV-based data, not activity-based data. This means the data reflects users’ lifetime value across all touchpoints, rather than their in-app or event activity
 
+<div id="what-is-data-locker" />
+
 ## What is Data Locker
 
 Data Locker is a secure solution that delivers your data directly to main cloud platforms, such as AWS, GCS, and Snowflake. This allows marketers to easily integrate and consume data into their internal BI systems for comprehensive analysis and reporting. <Anchor target="_blank" href="/marketers/docs/data-locker-advertiser-reports?query=data%20locker">Learn more</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## What is Single Source of Truth (SSOT)
 
 The Single Source of Truth (SSOT) solution aims to solve data fragmentation issues by offering a unified and accurate overview of app campaign performances by merging data from various attribution methods, such as ID matching and SKAN. <Anchor target="_blank" href="/marketers/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Learn more</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Benefits of SSOT reports in Data Locker
 
@@ -67,6 +73,8 @@ To enable Single Source of Truth or SSOT reports, complete one of the following 
 | Data freshness | <ul><li>Daily.</li><li>Metrics are calculated using data available at midnight UTC, which is the end of the day.</li><li>SLA: New reports are available in Data Locker by 16:00 UTC. A new version is created for the last 15 install dates each day. [See more](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
 
 </Accordion>
+
+<div id="directory-structure" />
 
 ## Directory structure
 
@@ -136,6 +144,8 @@ Legend:
 * version: Unix timestamp indicating when the version was created.
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## Report structure
 
@@ -308,6 +318,8 @@ Note: The same logic applies to SKAN data for days 14, 21, and 30. This means th
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## BI developer considerations
 
 **Scope of data in the report:**
@@ -333,6 +345,8 @@ You can load unified, user acquisition, and retargeting reports separately or to
 <div id="days-postattribution" />
 
 <Accordion title="Days post-attribution">
+
+<div id="important" />
 
 > 🚧 **Important!**
 >

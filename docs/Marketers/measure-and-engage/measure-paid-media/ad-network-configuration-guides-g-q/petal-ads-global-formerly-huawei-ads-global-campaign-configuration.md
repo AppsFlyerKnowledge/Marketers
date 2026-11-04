@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
 
+<div id="petal-ads-global-introduction" />
+
 ## Petal Ads Global introduction
 
 Petal Ads Global is integrated into several third-party apps and Huawei apps such as HUAWEI Browser, HUAWEI Video, HUAWEI Assistant, HUAWEI Reader, and HUAWEI Music, which are sub publishers of Petal Ads Global display network. Besides, AppGallery standard ad placements and App Gallery Search Ads support AppsFlyer attribution too.
+
+<div id="setting-up-petal-ads-global" />
 
 ## Setting up Petal Ads Global
 
@@ -42,6 +46,8 @@ Petal Ads Global requires to use **OAID** for attribution. Refer to <Anchor targ
 | Display Ads | huaweiadsglobal | ID-Matching (OAID or GAID), Probabilistic Modeling, Huawei Referrer | Click <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">here</Anchor> to check OAID implementation guide in the Android SDK. Huawei referrer attribution requires Android SDK 6.14.0 |
 | App Gallery | huaweiappgalleryglobal | ID-Matching (OAID or GAID), Huawei Referrer | Huawei referrer attribution requires Android SDK 6.14.0 |
 | Petal Search | empty value | ID-Matching (OAID or GAID), Probabilistic Modeling | Click <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">here</Anchor> to check OAID implementation guide in the Android SDK |
+
+<div id="setting-up-the-petal-ads-global-integration" />
 
 ### Setting up the Petal Ads Global integration
 
@@ -63,11 +69,15 @@ Petal Ads Global requires to use **OAID** for attribution. Refer to <Anchor targ
 
 The **Integration Tab** is divided into different sections:
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 To enable the configuration, <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activate the partner</Anchor>.
 
 This toggle must be turned on for as long as you work with the partner.
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -75,9 +85,13 @@ This toggle must be turned on for as long as you work with the partner.
 
 To attribute view-through installs from Petal Ads Global, turn this toggle on. The view-through lookback window slider is available in the **Attribution link** tab.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Send automatic postbacks to Petal Ads Global following user installs from users attributed to Petal Ads Global only. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
+
+<div id="in-app-events-settings" />
 
 #### In-app events settings
 
@@ -151,6 +165,8 @@ In this tab, you can select the permissions to grant Petal Ads Global. Note that
 
 </Accordion>
 
+<div id="configuring-campaigns-on-petal-ads-global" />
+
 ## Configuring campaigns on Petal Ads Global
 
 **To configure AppsFlyer attribution on Petal Ads Global, please click** [**here**](https://developer.huawei.com/consumer/en/doc/distribution/promotion/appsflyer-0000001122291488) **to learn more from Huawei Support Center.**
@@ -163,11 +179,15 @@ In this tab, you can select the permissions to grant Petal Ads Global. Note that
 6. Create an ad task in Petal Ads Global.
 7. [View the conversion data](https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu-0000001139892541) in Petal Ads Global.
 
+<div id="data-discrepancies" />
+
 ## Data discrepancies
 
 **Note：** On the Petal Ads Global dashboard, the conversion data(eg. Install/Activations) has 2 data sources, the one is AppsFlyer the other one is HMS. When you want to compare the data, such as install, between AppsFlyer and Petal Ads Global dashboard, please select the 'Activations’ instead of 'Activations(HMS)' on the Huawei dashboard.
 
 [![](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)
+
+<div id="data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy" />
 
 #### Data reporting on Petal Ads Global and FAQs of data discrepancy
 

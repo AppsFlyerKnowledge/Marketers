@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Series of events in validation rules allows advertisers to define an event sequence a real user should go through. Any deviation from your defined order, or from the timing between events, is detected and blocked.
 
+<div id="intro" />
+
 ## Intro
 
 Advertisers can define an event sequence a real user should go through in your app. AppsFlyer evaluates this sequence using an evaluation window that starts the day the rule is saved: it grows daily up to 30 days, then becomes a rolling 30-day window that shifts forward every day. Events fired before the rule was created are never evaluated.
@@ -38,6 +40,8 @@ If the sequence breaks, either in order or in timing, the user is considered fak
 
 Note: editing the rule in any way, including app selection, conditions, traffic source, event sequence, or enabling/disabling, resets the evaluation window back to day 0.
 
+<div id="who-is-this-for" />
+
 ## Who is this for?
 
 This feature is only suitable for:
@@ -45,6 +49,8 @@ This feature is only suitable for:
 * **SDK events** - Apps that will create rules with only SDK events.
 * **Non-repeating events** - Apps that have an event sequence in which events will not happen more than once in the sequence. If the same event occurs more than once in the sequence (for example, Event C is sent twice), it's treated as a violation and the associated events are blocked.
 * **NOI traffic** - This feature is only available for NOI traffic
+
+<div id="how-to-set-up-a-series-of-event-rule" />
 
 ## How to set up a series of event rule
 
@@ -66,9 +72,13 @@ Follow these instructions to set up a Series of events rule:
 11. Review the **Rule outcome** section to confirm the evaluation window state and the minimum total sequence time
 12. Click **Save**
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Don't select all your app's events. Only select the events where there usually could be fraud
+
+<div id="accessing-data" />
 
 ## Accessing data
 
@@ -79,6 +89,8 @@ When a Series of Events rule blocks an install or in-app event, the details are 
 | Post-attribution installs | <ul><li>Fraud reason = validation bots</li><li>Fraud sub reason = validation rules pa</li><li>Blocked reason value = rule name</li></ul> |
 | Post-attribution in-app events | <ul><li>fraud\_reason = validation bots</li><li>fraud\_sub\_reason = validation rules pa</li></ul> |
 | Blocked in-app events | <ul><li>Blocked Reason = validation bots</li><li>Blocked sub reason = validation rules pa</li><li>Blocked Reason Value = rule name</li></ul> |
+
+<div id="examples" />
 
 ## Examples
 
@@ -336,6 +348,8 @@ Fraud. Since the same Event (Event B) happened twice, we presume fraud, as you c
 * Only AND logic is supported between conditions. OR logic is not supported.
 
 </Accordion>
+
+<div id="faq" />
 
 ## FAQ
 

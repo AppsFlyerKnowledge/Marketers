@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Use Google Ads web campaigns to promote your apps on PC and console platforms and enable attribution. AppsFlyer supports Google web-based campaigns using cross-platform landing pages or direct attribution links.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This article focuses on web campaigns that promote PC or Console apps. If you want to create web campaigns that promote mobile apps, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-create-web-based-campaigns">Google Ads (AdWords) - Create web-based campaigns</Anchor>.
+
+<div id="overview" />
 
 ## Overview
 
@@ -36,6 +40,8 @@ This article contains information and steps on how to set up and use Google Ads 
 * [Set up Google Ads Web in AppsFlyer](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer).
 * [Set up campaigns in Google Ads for PC and console apps](/docs/google-ads-web-integration-for-pc-and-console-apps#set-up-campaigns-in-google-ads-web-for-pc-and-console-apps).
 
+<div id="prerequisites" />
+
 ### Prerequisites
 
 Before activating the Google Ads Web integration, make sure you have:
@@ -44,6 +50,8 @@ Before activating the Google Ads Web integration, make sure you have:
 * An AppsFlyer account
 * A Google access token with the <Anchor target="_blank" href="https://developers.google.com/identity/protocols/oauth2/scopes">required OAuth scope</Anchor>. You can verify the scopes associated with your access token in the Google Developer Console.
 * AppsFlyer <Anchor target="_blank" href="/marketers/docs/user-management">users with appropriate roles/permissions</Anchor> and access to the relevant apps
+
+<div id="activate-partner-in-appsflyer" />
 
 ## Activate partner in AppsFlyer
 
@@ -55,6 +63,8 @@ Before activating the Google Ads Web integration, make sure you have:
 4. In the **Integration** tab, turn on **Activate partner**.  
    **Note:** The toggle must stay on (<Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">activated</Anchor>) for as long as you work with the partner.
 5. Complete the configuration using the relevant tabs, as described in the next section.
+
+<div id="set-up-google-ads-web-in-appsflyer" />
 
 ## Set up Google Ads Web in AppsFlyer
 
@@ -68,11 +78,17 @@ The integration with Google Ads Web only supports sending postbacks for installs
 
 The **Integration** tab includes a number of sections, as described below.
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 To configure the integration, you must first turn on the **Activate partner** toggle.
 
+<div id="general-settings" />
+
 #### General settings
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -89,6 +105,8 @@ To configure the integration, you must first turn on the **Activate partner** to
 3. To allow AppsFlyer to upload conversions to Google Ads, click **Sign in with Google**.
 4. In Google, select the admin account of the MCC account from which you retrieved the Customer ID above.
 5. Click **Allow**.
+
+<div id="enable-view-through-attribution" />
 
 #### Enable view-through attribution
 
@@ -108,9 +126,13 @@ When available, AppsFlyer includes the `gclid` in the postback to Google.
 6. Scroll to the **View-through attribution** section and set the preferred **view-through lookback window** (up to 24 hours).
 7. Click **Save integration** to apply the changes.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Postbacks for installs are automatically sent only to Google Ads Web.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -147,11 +169,15 @@ Generating an attribution link in the AppsFlyer UI isn't currently available. Ho
 | Cross-platform landing page | **Recommended**: For when your campaign promotes an app that's also available on multiple platforms, like Epic and Steam.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Learn about cross-platform landing pages</Anchor><br /><br /><Anchor target="_blank" href="/marketers/docs/cross-platform-landing-pages-with-smart-script">Learn how to set up a cross-platform landing page</Anchor><ul><li>Make sure all relevant URL parameters (that are later captured by the Smart Script) are appended to the ad URL</li><li>Make sure the script takes the GCLID from the incoming URL and adds it to the generated link. Meaning, map the outgoing GCLID URL param `gclid` to the incoming URL param `gclid`. **Note**! To display in AppsFlyer raw data reports, the incoming `gclid` param must also mapped to one of the outgoing params  `af_sub[1-5]`.</li></ul> | Marketer (may require developer assistance) |
 | Direct attribution link | If you don't use a cross-platform landing page, because you only have 1 app on 1 platform, you can create direct attribution links to place behind ads.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor><ul><li>Make sure the following parameters are included in your link:<ul><li>af\_media\_source</li><li>af\_campaign\_id</li><li>af\_r<br />**Note**: The <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9744275?hl=en">Google click identifier (GCLID)</Anchor> parameter is automatically added by Google Ads to any outgoing click if you are using <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3095550?hl=en">auto-tagging</Anchor>. If auto-tagging is deactivated in your Google Ads account, add `gclid={gclid}` to the Google Ads tracking template URL.</li></ul></li><li>For af\_camapign\_id, af\_adset\_id and af\_ad\_id parameters, you can use Google’s [value track parameters](https://support.google.com/google-ads/answer/6305348) (dynamic URL parameter) macros. All other parameters should be set manually.</li><li>Don't include the af\_dp parameter.</li></ul>**Template to use for most platforms (Epic, Steam, Xbox, PlayStation, etc.)**:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Sample link leading to Steam**: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Template to use for Google PC and Mac apps ONLY**:<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Sample link leading to Google PC**: `https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | Marketer |
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > To simplify campaign analysis, include the campaign type, web or mobile, as a prefix or suffix in the campaign name (e.g., campaign-name\_web)
 
 </Accordion>
+
+<div id="set-up-campaigns-in-google-ads-web-for-pc-and-console-apps" />
 
 ## Set up campaigns in Google Ads Web for PC and console apps
 
@@ -232,6 +258,8 @@ In Google Ads, you can either select from the predefined list of conversion acti
 3. Select **Conversions offline** as your conversion actions data source.
 4. Select **Import** from the list of conversion types, then select **Manual import using API or uploads** > **Track conversions from clicks**.
 
+   <div id="note-2" />
+
    > 📘 **Note**
    >
    > If **Manual import using API or uploads** is not available:
@@ -252,20 +280,28 @@ In Google Ads, you can either select from the predefined list of conversion acti
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data-from-november-2-2025" />
+
 ## View web-to-app attribution data (from November 2, 2025)
 
 Although web-based conversion events are sent to Google under the original `googleads_int` PID, they are reported in the AppsFlyer dashboard and raw data reports under the `googleadwords_int` PID. This applies both to primary conversion events and to conversion assist events.
 
 This unified reporting view lets you analyze both web and app campaign performance in one place, including full mobile and web cost reporting.
 
+<div id="view-in-the-dashboard" />
+
 ### View in the dashboard
 
 All Google web-to-app attributions appear under `googleadwords_int` in the Overview and Activity dashboards. This provides a single, consolidated view of campaign results across platforms. Use standard filters and breakdowns to compare app and web traffic within your Google Ads data.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### View in raw data and API reports
 
 * **Raw data exports and API responses** include the `googleadwords_int` PID in the `media_source` field for Google web activity. To verify web campaign setup details, refer to the `original_url` field that shows `googleads_int` as the PID used during the creation of web campaigns.
 * **Postback reports** show `googleads_int` as the original media source to which the postback was sent.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

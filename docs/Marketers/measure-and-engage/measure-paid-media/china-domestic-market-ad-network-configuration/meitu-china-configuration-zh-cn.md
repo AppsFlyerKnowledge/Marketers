@@ -26,9 +26,15 @@ x-zendesk:
 ---
 > 【概要】：本文讲解了如何针对美图启用AppsFlyer的归因与衡量功能，以便您在AppsFlyer面板上查看美图广告的归因数据。
 
+<div id="请注意-完成美图广告平台的正常归因请务必保证应用收集idfaoaid了解更多信息请查看安卓ios对应的sdk整合指南" />
+
 ### 请注意: 完成美图广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
 
+<div id="步骤" />
+
 ### 步骤：
+
+<div id="1-在appsflyer后台取得归因链接" />
 
 #### 1. 在AppsFlyer后台取得归因链接
 
@@ -45,6 +51,8 @@ x-zendesk:
 在归因链接版面，可直接取出预配置好的点击归因链接，填写到美图广告后台
 
 ![mceclip1.png](https://files.readme.io/c6d051fadb62598f191ce5d9b52a5535f2b0b69b03e56f03b9b746fdba34ad79-360003338638.png)
+
+<div id="2登录美图广告平台账户进行应用广告归因配置" />
 
 #### 2. 登录美图广告平台账户进行应用广告归因配置
 
@@ -63,6 +71,8 @@ c. 在APP（iOS/Android）下载地址中，将appsflyer监测链接放在“�
 ![meitu_3.png](https://files.readme.io/e8fb740a74fc46fb5a0f72fa87843d1401dab40cfa1254842d3995d9271f275d-360005581278.png)
 
 d. 上传素材，通过审核后进行投放。
+
+<div id="3-如何向美图平台回传应用内事件" />
 
 #### 3. 如何向美图平台回传应用内事件
 

@@ -17,6 +17,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate AppsFlyer with Salesforce Marketing Cloud (SFMC) to deep link users from email campaigns to in-app content. Sync in-app event data into SFMC to build audiences and trigger journeys based on real app behavior.
 
+<div id="about-the-integration" />
+
 ## About the integration
 
 SFMC lets you re-engage existing users through email campaigns by deep linking them to specific in-app content, such as a promotion or a personalized offer.
@@ -25,6 +27,8 @@ There are two integration options:
 
 * **Standard SFMC email deep linking**: create your campaign OneLink links in AppsFlyer, then add them to your emails.
 * **Advanced SFMC app exchange integration**: create campaign OneLink links directly inside Salesforce, and automatically import in-app event data so you can build re-engagement audiences. This is a premium feature.
+
+<div id="comparison-standard-vs-advanced" />
 
 ## Comparison: Standard vs. Advanced
 
@@ -35,6 +39,8 @@ There are two integration options:
 | Deep link measurement | Yes | Yes |
 | Link creation | In AppsFlyer | In the dedicated Salesforce app |
 | SFMC postbacks (in-app event sync) | No | Yes |
+
+<div id="prerequisites" />
 
 ## Prerequisites
 
@@ -53,6 +59,8 @@ There are two integration options:
 
 </Tab>
 </Tabs>
+
+<div id="set-up-standard-sfmc-email-deep-linking" />
 
 ## Set up Standard SFMC email deep linking
 
@@ -84,6 +92,8 @@ To enable deep linking from SFMC emails:
    <Image alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen]" src="https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png" width="3348px" />
 4. To create a new configuration, click the **Create** button and enter your AppID. The AppID value is a combination of your Apple developer team ID and the Bundle ID. Both of these values can be retrieved from your Apple Developer account.
 
+   <div id="example" />
+
    > 📄 **Example**
    >
    > Given the Team ID prefix *5UABCDFGH* and the Bundle ID *com.your.app*, the following value should be entered:  
@@ -100,6 +110,8 @@ To enable deep linking from SFMC emails:
 </Accordion>
 
 <Accordion title="Step 4: Configure your AppsFlyer SDK">
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -125,6 +137,8 @@ After configuring your click-recording domain to support Universal Links as desc
 
 </Accordion>
 
+<div id="send-emails-with-standard-sfmc-email-deep-linking" />
+
 ## Send emails with Standard SFMC email deep linking
 
 **To send emails with Standard SFMC email deep linking:**
@@ -148,6 +162,8 @@ After configuring your click-recording domain to support Universal Links as desc
 ```
 https://example.onelink.me/ABcd?pid=Email&c=Spring_Newsletter&af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 ```
+
+<div id="set-up-the-advanced-sfmc-app-exchange-integration" />
 
 ## Set up the Advanced SFMC app exchange integration
 
@@ -208,6 +224,8 @@ Create a separate attribution link for each campaign.
    <Image alt="[ALT TEXT NEEDED: describe the OneLink link selector shown]" src="https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png" width="415px" />
 8. Save the email and send it.
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > For readability purposes, the URL parameters are not URL encoded:
@@ -236,17 +254,23 @@ Create a separate attribution link for each campaign.
 
 </Accordion>
 
+<div id="dynamic-emails" />
+
 ## Dynamic Emails
 
 If you need to generate links dynamically to represent dynamic content per user, use the OneLink API.
 
 To do this, use an Automation Studio script activity in SFMC's Journey Builder that calls the OneLink API before the send, writes the generated deep link into a field on the send Data Extension for each contact, then have the email pull that field with a simple AMPscript lookup.
 
+<div id="advanced-sfmc-in-app-events-data-sync" />
+
 ## Advanced SFMC in-app events data sync
 
 This feature lets AppsFlyer automatically send in-app event data from your app to Salesforce Marketing Cloud, where it's stored in a dedicated Data Extension. Use this data to build audiences, trigger journeys, and personalize campaigns based on real app behavior, such as purchases, registrations, or level completions.
 
 This is a premium feature, available as part of the Advanced SFMC app exchange integration.
+
+<div id="how-it-works" />
 
 ### How it works
 
@@ -262,6 +286,8 @@ When a user performs an in-app event (for example, completing a purchase), AppsF
 4. Scroll to **In-app event postbacks** and turn the toggle on.
 5. Click **Add event** and map the AppsFlyer events you want to send to SFMC. For each event, select it from your app's event list and set the sending condition: **This partner only** (sends only events attributed to SFMC traffic) or **All media sources, including organic** (recommended for audience building, since it sends every occurrence of the event regardless of attribution).
 6. Click **Save integration**.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -289,11 +315,15 @@ If the Data Extension wasn't created automatically, confirm the SFMC connector a
 4. Build the journey steps you need (send email, wait, branch by event value, and so on).
 5. Activate the journey.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > Use the af\_sub1 parameter in your OneLinks to pass the SFMC subscriber key as a user identifier. This lets postbacks match back to the correct contact record in Salesforce, enabling contact-level personalization rather than campaign-level attribution only.
 
 </Accordion>
+
+<div id="postback-data-fields" />
 
 ### Postback data fields
 
@@ -354,6 +384,8 @@ All install fields above, plus:
 | Event Revenue USD | No | Exists in the schema, not written |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ### Troubleshooting
 

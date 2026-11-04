@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Instructions for setting up event sending reported via Firebase SDK to AppsFlyer in Google Tag Manager.
 
+<div id="google-tag-manager-setup" />
+
 ## Google Tag Manager setup
 
 This section discusses the necessary setup in Google Tag Manager (GTM) UI. All the steps described in this section are required in order for GTM to send events to AppsFlyer. Follow the steps in the order they are listed.
@@ -31,6 +33,8 @@ The following steps are for Google Tag Manager for mobile apps. If the UI that y
 
 1. Your Google Tag Manager container is configured for mobile apps.
 2. The container is v5. For more information, click <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7003315">here</Anchor>.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -57,6 +61,8 @@ Whenever Google Tag Manager sends an event to AppsFlyer, it must send it with th
 5. In the ***Event Parameter*** field, enter "dev\_key" and save
 6. Repeat the process for AppsFlyer ID as well - name the variable as "AppsFlyer Device ID" and enter "af\_id" in the ***Event Parameter*** field
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -64,6 +70,8 @@ Whenever Google Tag Manager sends an event to AppsFlyer, it must send it with th
 > Below is a screenshot from GTM UI. It shows the event parameter's final configuration:
 >
 > ![event_parameter_variable_dev_key.png](https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png)
+
+<div id="important" />
 
 > 🚧 **Important**
 >
@@ -81,6 +89,8 @@ Most in-app events require event value parameters. In this case, it is the af\_r
 2. For "af\_revenue", name the variable "Revenue" and set the ***Event Parameter Key*** to "af\_revenue"
 3. For "af\_price", name the variable "Price" and set the ***Event Parameter Key*** to "af\_price"
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -88,6 +98,8 @@ Most in-app events require event value parameters. In this case, it is the af\_r
 > Below is a screenshot from GTM UI. It shows the event parameter's final configuration:
 >
 > ![event_parameter_variable_revenue.png](https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png)
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -111,6 +123,8 @@ In order for Google Tag Manager to know if the event should be sent to AppsFlyer
 5. In the conditions, set the trigger to fire when the ***Event Name*** equals "af\_purchase"
 6. Click ***Save***
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -132,6 +146,8 @@ Now that the required variables and the event trigger are set, you can create th
 3. Choose ***AppsFlyer***
 4. In the ***Application ID*** field, set the built-in variable the App ID
 
+   <div id="important-1" />
+
    > 🚧 **Important**
    >
    > For iOS, set the "apple\_app\_id" custom variable in the ***Application ID*** field.
@@ -146,6 +162,8 @@ Now that the required variables and the event trigger are set, you can create th
     ***Key***: af\_price, ***Value***: choose the Event Parameter Variable "Price"
 11. In the ***Triggering*** section, set the ***Firing Trigger*** to the "Purchase" event trigger
 12. Click ***Save***
+
+<div id="note-5" />
 
 > 📘 **Note**
 >

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Attribute installs coming from non-mobile Meta ads campaigns.
 
+<div id="attributing-mobile-app-installs" />
+
 ## Attributing mobile app installs
 
 Advertisers create ads on Meta ads to serve different objectives, including brand awareness, website conversions, and more. However, the influence of seeing or clicking these ads may indirectly lead to a mobile app install. 

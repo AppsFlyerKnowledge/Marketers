@@ -33,6 +33,8 @@ x-zendesk:
 ---
 > **At a glance:** Find the leading causes of attribution discrepancies between AppsFlyer and app stores, as well as tips to minimize these discrepancies.
 
+<div id="attribution-discrepancies" />
+
 ## Attribution discrepancies
 
 There are inherent differences in the attribution models used by all players in the mobile attribution ecosystem. The same applies to AppsFlyer and the main app stores: (iOS) App Store and (Android) Google Play. **Note**: In this article, the two stores are referred to as app store or app stores.
@@ -41,9 +43,13 @@ Because of the differences in attribution models, in some instances, the app sto
 
 <Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Discrepancies do not affect the accuracy of the **non-organic** installs count because the AppsFlyer attribution model credits one install per ad click. This is true even for a specific user with more than one device registered in the app store.
+
+<div id="why-appsflyer-attributes-less" />
 
 ### Why AppsFlyer attributes less
 
@@ -56,6 +62,8 @@ The following are reasons for under-attribution by AppsFlyer:
 | **Time zones** | Data displays according to the local time zone of the advertiser. | By default, data displays using UTC±00:00 time zone. | You can set the app-preferred time zone to reduce this discrepancy (<Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">details here</Anchor>). |
 | **Android user uninstalls and re-installs within the defined re-attribution window** | In some views, Google Play shows **two** **unique installs** for the same user, regardless of the time that elapsed from the first install. Other views show **unique users** and therefore are more closely aligned with AppsFlyer. | Inside the re-attribution window (by default 3 months) from the original install time, the user is not considered as new in AppsFlyer when re-installing. | You can <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">set the re-attribution window</Anchor> from 1 to 24 months. |
 | **iOS user uninstalls and re-installs inside the defined re-attribution window** | iTunes counts a new install every time the user uninstalls and re-installs. | Inside the re-attribution window (by default 3 months) from the original install time, the user is not considered as new in AppsFlyer when re-installing. | You can <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">set the re-attribution window</Anchor> from 1 to 24 months. |
+
+<div id="why-appsflyer-attributes-more" />
 
 ### Why AppsFlyer attributes more
 

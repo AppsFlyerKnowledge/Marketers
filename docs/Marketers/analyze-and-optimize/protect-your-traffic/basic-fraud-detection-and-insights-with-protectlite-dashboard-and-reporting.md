@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** ProtectLITE provides insights about fraudulent installs blocked by our basic, free protection engine, and installs blocked due to the application of validation rules.
 
+<div id="protectlite" />
+
 ## ProtectLITE
 
 ProtectLITE provides free, basic protection against install attribution fraud. Advanced fraud protection and detection are available with <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
@@ -39,6 +41,8 @@ The ProtectLITE dashboard:
 ProtectLITE <Anchor target="_blank" href="/marketers/docs/protect360-raw-data-reports">raw data</Anchor>:
 
 * Is available in the Protect360 Installs report via the Export Data page and Pull API.
+
+<div id="dashboard" />
 
 ## Dashboard
 
@@ -89,6 +93,8 @@ Metrics are relevant for the time period selected in the date filter.
 
 For the Estimated savings and Identified installs KPIs, there is a percentage value. This value shows how the presented KPI is in relation to the parallel date range before it. For example, this week compared to last week, or any days selected in the date range compared to the same number of days that came before: if it shows an X% increase in estimated savings, it means the previous parallel date range had X% fewer fraudulent installs.
 
+<div id="estimated-savings" />
+
 #### Estimated savings
 
 [![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
@@ -101,11 +107,15 @@ Estimated savings metrics:
 
 For more details on how this amount is calculated read this <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>.
 
+<div id="identified-installs" />
+
 #### Identified installs
 
 [![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
 
 Identified installs metrics display the number of installs identified and blocked in real-time by ProtectLITE and Validation Rules.
+
+<div id="suspected-overall-fraud-threat" />
 
 #### Suspected overall fraud threat
 
@@ -122,6 +132,8 @@ The suspected overall threat level:
 
 <Accordion title="Installs—chart">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### Fraud trend over time chart
 
 The chart displays the number of installs per day blocked by ProtectLITE and Validation Rules, for the time period selected in the date filter.
@@ -131,6 +143,8 @@ The chart displays the number of installs per day blocked by ProtectLITE and Val
 <div id="installs-table" />
 
 <Accordion title="Installs—table">
+
+<div id="identified-fraud-breakdown" />
 
 #### Identified fraud breakdown
 
@@ -149,6 +163,8 @@ The dynamic table structure lets you:
 * Change the order of the columns by dragging the columns sections in the columns settings.
 
 [![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Content of the identified fraud breakdown table
 

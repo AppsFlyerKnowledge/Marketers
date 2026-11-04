@@ -25,7 +25,11 @@ x-zendesk:
 
 > **At a glance**: Use AppsFlyer Audiences to build and connect customized audience segments to your partner networks for the most effective user acquisition and remarketing campaigns.
 
+<div id="" />
+
 ## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
+
+<div id="about-audiences" />
 
 ## About Audiences
 
@@ -34,6 +38,8 @@ With AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide">Au
 An audience is a segment of your app users (past or present) who meet the specific criteria that you define. The criteria can be based on personal characteristics, behavior, attribution source, revenue generated, geographic location, device type, and more, allowing for highly customized marketing strategies.
 
 You can build a custom audience from scratch, import one from your own database, or choose from our time-saving, customizable "Suggested Audiences" which are based on industry best practices. Audiences are then connected to your media partners which sends member identifiers to partners and enables the creation of the audience on the partner side. This enables you to serve up an ad perfectly tailored to the audience. Audiences are automatically refreshed daily and shared with partners in a dynamic and seamless process. Additionally, after sending out your campaigns, you can monitor campaign performance metrics directly within Audiences.
+
+<div id="audiences-onboarding" />
 
 ## Audiences onboarding
 

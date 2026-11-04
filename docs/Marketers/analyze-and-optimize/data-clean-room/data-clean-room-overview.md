@@ -27,6 +27,8 @@ x-zendesk:
 
 > **At a glance:** Enrich your user-level data by matching it with AppsFlyer user-level attribution data to create aggregated reports and obtain insights that leverage the value of the combined data.
 
+<div id="introduction" />
+
 ## Introduction
 
 Throughout its history, the mobile marketing ecosystem has utilized user-level data to obtain insights and optimize advertising campaigns:
@@ -41,9 +43,13 @@ With the advent of the user-privacy era, access to user-level data from media so
 
 This is precisely the "data blind spot" that the AppsFlyer Data Clean Room (DCR) steps in to correct.
 
+<div id="how-does-it-work" />
+
 ### How does it work?
 
 Instead of passing user-level attribution data to the advertiser so that the ***advertiser*** can match it with its user-level data, the ***DCR takes on the job of matching*** user-level attribution data with the advertiser's user-level data – essentially shifting this responsibility to AppsFlyer. Then the DCR analyzes and groups this data, then passes it along to the advertiser in aggregated form – allowing the advertiser to obtain the aggregate insights they need **while maintaining user privacy.**
+
+<div id="how-does-the-dcr-obtain-data" />
 
 ### How does the DCR obtain data?
 
@@ -52,6 +58,8 @@ The DCR currently uses 2 different types of data:
 * **Custom data source:** user-level data uploaded to cloud storage for use by the DCR. This data originates from the advertiser's internal systems (such as BI or CRM systems).
 * **Attribution data:** User-level data provided by the media sources to AppsFlyer for attribution
 
+<div id="what-does-the-dcr-do-with-the-data" />
+
 ### What does the DCR do with the data?
 
 The DCR works according to standard database principles. In other words, it matches data from different tables (or **"sources"**) into a single data set. This single data set is then used to create **reports** that use the combined data:
@@ -59,6 +67,8 @@ The DCR works according to standard database principles. In other words, it matc
 * In order to match the data from different data sources and combine them into a single set, each source must share at least one field that identifies a unique app user **("identifier")** in common with another source.
 * By using identifiers to match your user-level data with user-level attribution data, the DCR creates a combined user-level data set.
 * Then, in order to provide insights while maintaining user privacy, DCR processes this data to create **aggregated reports,** grouped according to characteristics **("dimensions")** that you define.
+
+<div id="dcr-terminology" />
 
 ## DCR terminology
 
@@ -73,6 +83,8 @@ The following are some frequently used DCR terms:
 * **Report:** A data file coming out of the DCR after processing. Reports are created each time new versions of the related source files are uploaded. When you set up a report in the AppsFlyer DCR platform, you define its **structure** and **destination:**
   * **Report structure:** Specification of advertiser data sources and attribution data to be used in creating the report, the identifiers by which they will be joined, the metrics to be included, and the dimensions by which the report will be grouped.
   * **Report destination:** The cloud service folder to which AppsFlyer sends the report each time it is processed. This folder lives inside a bucket ("connector").
+
+<div id="working-with-the-dcr-setup-workflow" />
 
 ## Working with the DCR (setup workflow)
 

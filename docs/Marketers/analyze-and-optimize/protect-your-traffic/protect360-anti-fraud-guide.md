@@ -34,6 +34,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Protect360 overview
 
 * Protects against attribution fraud. It consists of dynamic tools that detect fraud and block fraudulent attribution.
@@ -118,6 +120,8 @@ The table below outlines the various types of fraudulent installs and in-app eve
 
 Protect360 fraud detection and outcomes
 
+<div id="using-protect360" />
+
 ## Using Protect360
 
 <div id="dashboard" />
@@ -187,6 +191,8 @@ You can also use Protect360 data to reconcile with ad networks and receive full 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 <div id="traits-and-limitations::a07033c3" />
@@ -208,6 +214,8 @@ You can also use Protect360 data to reconcile with ad networks and receive full 
 Traits and limitations
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## FAQ and tips
 
@@ -253,9 +261,13 @@ Advanced anti-fraud tips
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > Want to understand more about protection from fraud? Check out this short, informative <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">course on the AppsFlyer Learning Portal</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

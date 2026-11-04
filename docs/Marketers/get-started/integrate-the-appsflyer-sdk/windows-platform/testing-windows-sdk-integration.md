@@ -33,6 +33,8 @@ x-zendesk:
   * You must not have the Windows 10 Anniversary Update on your device.
   * Your device must never have had the app (Windows' referrer is lifetime - even if you are allowlisted or have waited over 90 days, you will not receive referrer attribution).
 
+<div id="test-sdk-integration" />
+
 ## Test SDK integration
 
 1. It is required to test the SDK Integration on a registered test device. To register your test device, follow the steps <Anchor target="_blank" href="/marketers/docs/registering-test-devices">here</Anchor>.
@@ -46,6 +48,8 @@ x-zendesk:
 
 [![](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)
 
+<div id="testing-non-organic-install" />
+
 ## Testing non-organic install
 
 1. Select one of your registered devices from the dropdown list
@@ -53,11 +57,15 @@ x-zendesk:
 3. Scan the generated QR code with your registered test device and follow the instructions on your device.
 4. Wait until the non-organic install is registered on the Integration Test page, indicating the test was successful. This can take up to two minutes. If the app did not register a non-organic install by this time, see the troubleshooting guide displayed on the Integration Test page.
 
+<div id="testing-in-app-events" />
+
 ## Testing in-app events
 
 1. Select one of your registered test devices from the dropdown menu and click Next.
 2. Open your app and start generating in-app events.
 3. You will see a log of these events as they are registered in real-time.
+
+<div id="testing-deep-linking" />
 
 ## Testing deep linking
 

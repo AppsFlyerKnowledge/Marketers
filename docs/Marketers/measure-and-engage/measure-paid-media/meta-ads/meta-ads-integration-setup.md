@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about integrating Meta ads with AppsFlyer.
 
+<div id="meta-ads-setup-guide" />
+
 ## Meta ads setup guide
 
 How long does it take to start attributing your Meta ads mobile app ads with AppsFlyer?
@@ -37,6 +39,8 @@ How long does it take to start attributing your Meta ads mobile app ads with App
 If you already have the <Anchor target="_blank" href="/marketers/docs/integrate-the-appsflyer-sdk">AppsFlyer SDK integrated into your app</Anchor> and have already defined your app on Meta ads, the answer is less than a minute!
 
 You don't need to implement Facebook Login or integrate your app with Facebook's SDK for mobile attribution. Just follow the [basic step-by-step setup](#basic-meta-ads-attribution-setup) instructions below. Afterward, check out [advanced setup options](#advanced-meta-ads-attribution-setup) for Meta ads.
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## Basic Meta ads attribution setup
 
@@ -79,6 +83,8 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 1. Visit <Anchor target="_blank" href="https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms">Meta Ads</Anchor>.
 2. Select the relevant app ID(s).
 3. Accept Meta's Advanced Mobile Measurement terms.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -124,6 +130,8 @@ Starting June 17, 2025, Meta has re-enabled **Advanced Mobile Measurement (AMM)*
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## Advanced Meta ads attribution setup
 
 With basic attribution already set up for Meta ads, it's time for some quick advanced attribution setup.
@@ -132,11 +140,17 @@ With basic attribution already set up for Meta ads, it's time for some quick adv
 
 <Accordion title="Getting device-level data for Android installs">
 
+<div id="google-play-install-referrer-api" />
+
 #### Google Play Install Referrer API
 
 Meta ads share campaign metadata with advertisers for Android app ads that direct users to the Google Play Store. In this case, attribution fields are available to advertisers in the Google Play Install Referrer API, which must be <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">integrated into your app.</Anchor> The fields provided via the Google Play install referrer API populate AppsFlyer raw data reports with the match type `gp_referrer`. This is only available once the decryption key is submitted and an install is attributed to Meta ads. This enables AppsFlyer to attribute users who don't have an advertising ID (LAT-enabled).
 
+<div id="meta-install-referrer" />
+
 #### **Meta install referrer**
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -149,6 +163,8 @@ In addition to the Google Play Install Referrer API, the Meta install referrer a
 
 As a result, you may see an increase in Meta-attributed installs in raw data reports. When an install is attributed via Google Play Install Referrer API or the Meta install referrer, the data is available in raw data reports. The fields that may be available for attribution via the Meta install referrer populate AppsFlyer raw data reports with a match type `fb_referrer` for attribution from the Facebook app and `ig_referrer` for attribution from the Instagram app. This is only available once the decryption key is submitted and an install is attributed to Meta ads. The Meta install referrer decryption key is the same key used for the Google Play Install Referrer and does not need to be provided to AppsFlyer a second time.
 
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
 #### **Campaign attribution fields available via the referrer:**
 
 * Ad ID
@@ -160,6 +176,8 @@ As a result, you may see an increase in Meta-attributed installs in raw data rep
 * Account ID
 * Channel
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * **For the Google Play Install Referrer API:**
@@ -167,6 +185,8 @@ As a result, you may see an increase in Meta-attributed installs in raw data rep
 >   * The Channel field is determined by the channel value received from the Google Play Referrer API (sent to Google Play by Meta). If an empty string is received, the Channel field shows "None".
 >
 > * **For the Meta install referrer:** Refer to the <Anchor target="_blank" href="/marketers/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">prerequisites and required actions</Anchor> described in the bulletin.
+
+<div id="meta-install-referrerfaq" />
 
 #### Meta install referrer—FAQ
 
@@ -189,6 +209,8 @@ Broad targeting is required for receiving view-through install data. The support
 * Detailed Targeting: Interest segments, behaviors, and advanced demographics are set as relaxed.
 * Custom Audiences: Set as relaxed.
 * For "relaxed", the "Advantage detailed targeting" box for ad campaigns must be selected: [![](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Encrypted data from Google Play Referrer API or Meta install referrer
 
@@ -239,10 +261,14 @@ This integration provides aggregated data on cost, clicks, and impressions for y
 
 **To delete a connected Meta ads account:** In the actions column, hover over an account and click **Delete connection.**
 
+<div id="notes" />
+
 > 📘 **Notes**
 >
 > * If you are already logged into Meta ads, when you click the **f login** button, the window immediately opens and closes. This is regular behavior.
 > * If you have several users with permissions to Meta ads, the best practice is to perform the login for all of them to <Anchor target="_blank" href="/marketers/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">avoid getting partial data</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Cost data sync status
 
@@ -284,6 +310,8 @@ Learn more about enriching your data with <Anchor target="_blank" href="/markete
   * Non-Latin (English) character sets: As of January 12, 2020, Meta ads rejects Chinese characters. AppsFlyer has not tested other character sets, and you should use these only after verifying with Meta ads if they support these character sets in postbacks.
 * Event names are case-sensitive. To avoid discrepancies, make sure you use the correct case in the event names for all media sources and app versions.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Meta ads can optimize your campaigns based on your ad revenue data by <Anchor target="_blank" href="/marketers/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization">mapping the af\_ad\_revenue event to the right Meta ads event</Anchor>.
@@ -313,6 +341,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/retargeting-attri
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#deep-linking-with-srns">deep linking users from SRNs such as Meta ads</Anchor>.
 
+<div id="whatsapp-retargeting-campaign-attribution" />
+
 #### WhatsApp retargeting campaign attribution
 
 AppsFlyer supports the measurement of WhatsApp Marketing message campaigns used for re-engagement via deep link attribution on both iOS and Android.
@@ -332,6 +362,8 @@ When **Advanced data sharing** is turned on, Meta receives postbacks and events 
 Furthermore, when **Advanced Data Sharing** is turned on, AppsFlyer attributes these events. When turned off, only postbacks and events from devices with an IDFA are sent and attributed.
 
 This method attributes iOS click-through and view-through installs, as well as iOS deep link re-engagements, for single and dual-opt-out devices. Attribution is based on last-touch attribution with a maximum attribution window of 24 hours.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -371,6 +403,8 @@ The table below describes which Meta Ads campaign objectives support direct deep
 | Awareness | Supported | Not supported | Configure at the ad level in the **Destination** section. | <ul><li>Requires **Enable Install Tracking** to be active.</li></ul> |
 | Leads | Supported | Not supported | Configure at the ad set level under **Conversion**. | <ul><li>Requires **Enable Install Tracking** to be active.</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **See also**
 >
 > * <Anchor target="_blank" href="/marketers/docs/onelink-guide">OneLink guide</Anchor>
@@ -398,6 +432,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-
 
 If your app uses Meta Audience Network Ad Revenue for ad monetization, you can record your revenues from Meta ads on AppsFlyer. This, with or without in-app purchase revenue data, gives you a **complete picture of your user revenues**.
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### Record Meta Audience Network Ad Revenue
 
 1. On the **Ad Revenue** tab and turn on **Get ad revenue data**.
@@ -424,9 +460,13 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integra
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## Aggregate Event Measurement (AEM) for iOS
 
 AppsFlyer supports the <Anchor target="_blank" href="/marketers/docs/meta-ads-aggregate-event-measurement-aem-for-ios">Meta ads Aggregated Event Measurement (AEM)</Anchor>. This solution helps optimize iOS conversions and in-app events while also attributing iOS re-engagements on Meta ads.
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Meta ads integration troubleshooting
 
@@ -498,9 +538,13 @@ Incorrect set-up - attribution fails.
 
 </Accordion>
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### iOS 14 updates relating to Meta ads
 
 AppsFlyer confirms that our MMP integration with Meta ads always implements the *Advertiser Tracking Enabled* flag. Meaning, no action is required of you in AppsFlyer. This information is provided pursuant to the Meta ads app guidance iOS 14 checklist dated February 2021.
+
+<div id="see-also-1" />
 
 > 📄 **See also**
 >

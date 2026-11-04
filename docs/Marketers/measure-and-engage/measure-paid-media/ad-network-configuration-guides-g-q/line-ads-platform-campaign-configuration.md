@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
+<div id="setting-up-line-ads-platform" />
+
 ## Setting up LINE Ads platform
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,14 +48,20 @@ x-zendesk:
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, LINE prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to LINE. This can only be performed by the account owner.
+
+<div id="activate-partner" />
 
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -65,9 +73,13 @@ LINE Ads Platform connects with AppsFlyer via a unique account and app ID, LINE\
 * Enter your unique **LINE\_Ad\_account\_id** and your **LINE\_Ad\_app\_ID**.   
   See <Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions">Line Line Ads documentation on creating a business ID</Anchor>.
 
+<div id="connect-multiple-accounts-and-apps" />
+
 #### Connect multiple accounts and apps
 
 You can connect multiple Line Ads accounts and apps to AppsFlyer by manually adding an account ID or app ID parameter to an attribution link, after its creation.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -84,6 +96,8 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 1. Set up one or more <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">attribution links</Anchor>.
 2. Add to each attribution link an account ID and app ID parameter, using lower-case letters. See the highlighted part in the example below.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > An example attribution link with an account ID and app ID parameters:
@@ -92,12 +106,16 @@ You can connect multiple Line Ads accounts and apps to AppsFlyer by manually add
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to LINE Ads Platform following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to LINE Ads Platform.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to LINE Ads Platform.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -118,6 +136,8 @@ In this section you can map your AppsFlyer events with LINE Ads Platform via pos
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated with your app or from server to server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on LINE Ads Platform's side.  <br />Obtain the corresponding Event ID from LINE Ads Platform and set it in the text field. |
 | **Send Revenue** | **When unchecked** - Send all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - Send all the parameters including the revenue value (if it exists in the event). |
+
+<div id="custom-in-app-events-mapping" />
 
 ### Custom in-app events mapping
 

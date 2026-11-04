@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
+<div id="setting-up-inmobi" />
+
 ## Setting up Inmobi
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -45,6 +47,8 @@ x-zendesk:
 
 Inmobi's configuration window includes 4 active tabs: **Integration, Attribution link, Cost**, and **Permissions**. Click on the following items to read about the tab setup.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -54,14 +58,20 @@ Inmobi's configuration window includes 4 active tabs: **Integration, Attribution
 
 <Accordion title="Integration tab">
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Inmobi prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to InMobi.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -75,12 +85,16 @@ Inmobi connects with AppsFlyer via a unique network ID. If you don't already hav
 
 Toggle this to ON if you want to attribute view-through installs from Inmobi. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Inmobi following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to InMobi.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to InMobi.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -112,6 +126,8 @@ In this tab, you can create the attribution links you want to send to Inmobi for
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -132,6 +148,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -168,6 +186,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Inmobi.
@@ -178,9 +198,13 @@ More details about the <Anchor target="_blank" href="/marketers/docs/set-up-look
 
 [![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Inmobi to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -193,6 +217,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -227,6 +253,8 @@ Ad Revenue data is not supported by this partner.
 <Accordion title="Permissions tab">
 
 Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions to grant</Anchor> InMobi to access your data and perform various actions.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

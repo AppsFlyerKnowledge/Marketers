@@ -25,6 +25,8 @@ x-zendesk:
 
 ![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
 
+<div id="introduction" />
+
 ## Introduction
 
 ESPs (Email Service Providers) can be excellent sources for segmented user traffic.
@@ -32,6 +34,8 @@ ESPs (Email Service Providers) can be excellent sources for segmented user traff
 One of the challenges when using ESPs is recording clicks while persevering deep linking functionality. ESPs wrap the deep linking URL with their own click recording domain. This action often breaks iOS Universal Links.
 
 However, with ESPs that support Universal Links on top of their click recording domain, deep linking and click recording can still be performed successfully.
+
+<div id="sdk-version-prerequisites" />
 
 ## SDK version prerequisites
 
@@ -49,6 +53,8 @@ However, with ESPs that support Universal Links on top of their click recording 
 </Tab>
 </Tabs>
 
+<div id="step-1-integration-setup-in-emaillabs" />
+
 ## Step 1: Integration setup in EmailLabs
 
 **To set up the integration in EmailLabs:**
@@ -62,7 +68,11 @@ However, with ESPs that support Universal Links on top of their click recording 
 5. In EmailLabs, go to **Panel** > **SMTP** **Accounts** > **Settings** > **Deep** **Links**, and check the Activated box. For iOS apps, enter the <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">Apple Application ID</Anchor> in the respective field.  
    ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
 
+<div id="step-2-configuring-your-appsflyer-sdk" />
+
 ### Step 2: Configuring your AppsFlyer SDK
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -78,6 +88,8 @@ After configuring your click recording domain to support Universal Links as desc
    [[AppsFlyerLib shared] resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
    ```
 3. When the app is invoked due to a click on the Universal Link, the AppsFlyer SDK resolves the deep link and extracts the underlying OneLink. All deep link parameters are then propagated into the onAppOpenAttribution API for deep link logic execution.
+
+<div id="step-3-send-emails-with-onelink-through-emaillabs" />
 
 ## Step 3: Send emails with OneLink through EmailLabs
 
@@ -99,6 +111,8 @@ After configuring your click recording domain to support Universal Links as desc
    This indicates that the attribution link is from a retargeting campaign. <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Learn more about retargeting</Anchor>.
 5. EmailLabs wraps the link with the defined click domain so that a click on the click domain redirects to the OneLink attribution link.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -110,6 +124,8 @@ After configuring your click recording domain to support Universal Links as desc
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="step-4-test-your-links" />
 
 ## Step 4: Test your links
 

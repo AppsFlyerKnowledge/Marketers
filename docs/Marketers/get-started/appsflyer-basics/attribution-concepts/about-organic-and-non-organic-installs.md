@@ -31,6 +31,8 @@ x-zendesk:
 
 Non-organic users are attributed to the media source motivating the install or engagement. In the case of organic users, there is no media source identified with install or engagement.
 
+<div id="organic-vs-non-organic" />
+
 ## Organic vs. non-organic
 
 | Organic installs  <br />Not attributed to media sources | Non-organic installs (NOI)  <br />Attributed to media sources |

@@ -25,11 +25,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## Decode SKAN conversion value
 
 Advertisers use conversion value decode as an alternative to using options available in <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">Conversion Studio</Anchor>. If you use Decode, it means you are responsible for setting <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor> according to your app logic.
 
 Apart from setting the conversion value (CV) in the app, the remainder of the flow, features, and reporting options are the same as those described in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide">SKAN solution guide</Anchor>. This means that at the expiry of the activity window (controlled by you), iOS sends the postback to the ad network, which forwards it to AppsFlyer. AppsFlyer decodes the CV according to your mapping into events processed just like decoded CVs set by the SDK.
+
+<div id="custom-conversion-valuedecode" />
 
 ## Custom conversion value—Decode
 
@@ -67,6 +71,8 @@ Consider:
   * In aggregated reports and dashboards, revenue is calculated as the average of the range. Example: min\_revenue=4 and max\_revenue=10. The calculated revenue is 7.
   * Raw data reports include the calculated revenue (skad\_revenue), min\_revenue, and max\_revenue.
 
+<div id="meta-specific-rules" />
+
 #### **Meta-specific rules**
 
 If you integrate with Meta ads, adhere to the following rules:
@@ -74,6 +80,8 @@ If you integrate with Meta ads, adhere to the following rules:
 * Min and max revenue values for a given conversion value must be different. Meaning not equal.
 * Values mustn't overlap and must be in consecutive order as illustrated for conversion\_value 1-2 and 62 in the table that follows.
 * event\_counter: Meta ads doesn't consider this value. [Best practice] Populate it with a value of 1.
+
+<div id="example-decode-mapping" />
 
 ### Example: Decode mapping
 
@@ -91,12 +99,16 @@ If you integrate with Meta ads, adhere to the following rules:
 | 62 | af\_purchase | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### Example A: Fine conversion value 1
 
 | event\_name | skad\_revenue | min\_ revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
 | af\_purchase | 1.5 | 0 | 3 | `{abc}` |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### Example B: Fine conversion value 2
 
@@ -106,6 +118,8 @@ If you integrate with Meta ads, adhere to the following rules:
 | af\_purchase | 6.5 | 3 | 10 | `{def}` |
 | af\_purchase | 6.5 | 3 | 10 | `{def}` |
 | af\_purchase | 6.5 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### Example C: Fine conversion value 21
 
@@ -122,6 +136,8 @@ If you integrate with Meta ads, adhere to the following rules:
 | event\_e |  |  |  |  |
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
+
+<div id="example-d-fine-conversion-value-62" />
 
 ### Example D: Fine conversion value 62
 
@@ -140,9 +156,13 @@ If you integrate with Meta ads, adhere to the following rules:
 
 <Accordion title="SSOT support for Decode mode">
 
+<div id="overview" />
+
 #### Overview
 
 Decode mode customers can now access SSOT (Single Source of Truth) attribution, bringing deduplication benefits previously available only to encode mode users. This improves non-organic performance measurement without requiring encode mode implementation.
+
+<div id="key-benefits" />
 
 #### Key Benefits
 
@@ -154,6 +174,8 @@ Decode mode customers can now access SSOT (Single Source of Truth) attribution, 
 * Enable more accurate attribution and reporting.
 * Reduce development and QA complexity.
 
+<div id="how-to-enable-ssot-for-decode-mode" />
+
 #### How to Enable SSOT for Decode Mode
 
 1. **Extract the AppsFlyer ID -** <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile#fetching-the-appsflyer-id">Retrieve the AppsFlyer ID from the SDK at install time</Anchor>.
@@ -164,6 +186,8 @@ Decode mode customers can now access SSOT (Single Source of Truth) attribution, 
 4. **Upload updated schema file -** [Use your existing decode schema](/docs/skan-cv-decode-map-your-cv-to-events#decode-mapping-scenario-rules). For CVs affected by SSOT attribution, add the `af_attribution_flag` event to indicate deduplication.
 5. **Access reports**  
    SSOT dashboards and DataLocker files now include decode mode data.
+
+<div id="faq" />
 
 #### FAQ
 
@@ -188,6 +212,8 @@ Conversion values are mapped to one or more in-app events.
 * Maximum number of rows: 640 + header row; total 641.
 * The header row  must include all the column names exactly as they display here. Best practice: Use the example file attached as a template. See sample decode CSV files for <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor> and <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>.
 * Don't use the following characters as the first character in a column: `=`, `+`, `-`, and `@` (edited).
+
+<div id="decode-csv-file-specification" />
 
 ### Decode csv file specification
 
@@ -231,6 +257,8 @@ Conversion values are mapped to one or more in-app events.
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## Troubleshooting the CSV upload errors file
 
 <div id="upload-error-messages" />
@@ -248,6 +276,8 @@ One or more values in the file don't match the required format: The file format 
 When using Excel/Google sheets to create a CSV file, the event\_revenue\_usd column must be formatted correctly before saving the file as a CSV file.
 
 After saving the CSV file, verify that the content is formatted correctly. **Note**: Don't use Excel to do the verification; rather, use an [editor](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel).
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### Formatting event\_revenue\_usd cells in Excel
 

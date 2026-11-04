@@ -26,6 +26,8 @@ x-zendesk:
 
 > **At a glance:** Set up the custom data sources you share with the Data Clean Room (DCR) for matching with attribution data and creating DCR reports.
 
+<div id="introduction" />
+
 ## Introduction
 
 Many DCR reports are designed to match your **attribution data** with data from your **custom data sources.** This article contains everything you need to know about working with your custom data sources, including how to:
@@ -39,6 +41,8 @@ Many DCR reports are designed to match your **attribution data** with data from 
 * [Update source data](/docs/data-clean-room-working-with-sources#updating-sources-to-trigger-report-processing) on a regular basis to trigger report processing
 * [Work with existing sources](/docs/data-clean-room-working-with-sources#working-with-existing-sources)
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > **Before you begin**
@@ -50,6 +54,8 @@ Many DCR reports are designed to match your **attribution data** with data from 
 >   * **Cloud storage buckets:** Amazon S3 (AWS) and GCS
 > * [Optional] <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#creating-inbound-connections">Create inbound connections</Anchor> in the AppsFlyer platform to connect these cloud services to the DCR.
 >   * If these connections were not set up previously, you will be prompted to set them up during source creation.
+
+<div id="source-requirements" />
 
 ## Source requirements
 
@@ -106,6 +112,8 @@ Data source files stored in Amazon S3 or GCS must meet these file name and forma
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## Creating a source
 
 The process of creating a source consists of **all the steps described below.** They are separated into tabs simply for ease of reading.
@@ -144,6 +152,8 @@ The process of creating a source consists of **all the steps described below.** 
    * If you have existing connections but want to use a new one, click the ![dcr_new_connection_button.png](https://files.readme.io/0a6766bcb5deef0b2264b372592b82485cc59b11e454cdcbd4a1718de4df951d-14989643499153.png) button to open the **New connection** dialog. Follow <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections#complete-the-connection">these instructions</Anchor> to create it.
 2. Continue with the relevant instructions below based on where the data for your source is located.
 
+<div id="source-locations-in-bigquery" />
+
 #### Source locations in BigQuery
 
 **To complete specifying the data source location for BigQuery sources:**
@@ -152,6 +162,8 @@ The process of creating a source consists of **all the steps described below.** 
 2. Select the table in which the source data is located.
 
 The lists from which you make these selections contain the available datasets and tables, respectively, in the BigQuery project you specified when creating the connection.
+
+<div id="source-locations-in-snowflake" />
 
 #### Source locations in Snowflake
 
@@ -162,6 +174,8 @@ The lists from which you make these selections contain the available datasets an
 3. Select the table in which the source data is located.
 
 The lists from which you make these selections contain the shares, schemas, and tables, respectively, in the Snowflake account you specified when creating the connection.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Source locations in cloud storage buckets
 
@@ -188,6 +202,8 @@ If AppsFlyer generates the folders, the only additional information required is 
     * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
     * Although this folder is not required, having an **input** folder (or an equivalent folder of a different name) is considered best practice. It is even more highly recommended when you are using the same cloud storage bucket both for uploading data files (input) and receiving reports (output).
 
+<div id="important-1" />
+
 > 🚧 **Important**
 >
 > If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
@@ -208,6 +224,8 @@ For all sources that you share with the DCR for processing, AppsFlyer needs to k
   * **Metric:** Numeric data you have collected with respect to an app user (examples might include revenue, number of app opens, LTV, etc.)
     * A data field identified as a metric can contain **only numeric values.**
 
+<div id="loading-source-fields" />
+
 #### Loading source fields
 
 Load source fields using the relevant instructions below:
@@ -215,6 +233,8 @@ Load source fields using the relevant instructions below:
 **Data warehouse sources**
 
 To load fields from a data source located in a data warehouse (BigQuery or Snowflake), click the ![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png) button.
+
+<div id="important-2" />
 
 > 🚧 **Important**
 >
@@ -272,6 +292,8 @@ For purposes of defining the source structure:
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### Categorize fields
 
 After you load the fields, AppsFlyer analyzes the file, and a list of all data fields (columns) is displayed in the **Available fields** list.
@@ -287,6 +309,8 @@ After you load the fields, AppsFlyer analyzes the file, and a list of all data f
 3. If you edit the source before [saving the source](/docs/data-clean-room-working-with-sources#4-save-the-source) and want to use fields from the edited source data, click the **Reload fields** link at the bottom of the **Available fields** list.
    * Note that reloading the source will overwrite the field names in the Available fields list. Any fields that you previously categorized will remain in the **Identifiers, Dimensions,** or **Metrics** lists.
    * If a previously categorized field is not found in the reloaded source data, it will still display in the relevant category list, but it will be marked with an error icon.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -310,6 +334,8 @@ After you load the fields, AppsFlyer analyzes the file, and a list of all data f
    The new source is displayed in the list of all existing sources in the **Sources** tab of the Data Clean Room.
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## Updating sources to trigger report processing
 
@@ -369,6 +395,8 @@ After uploading source files on 2 days (and programmatically creating date/versi
 
 </Accordion>
 
+<div id="working-with-existing-sources" />
+
 ## Working with existing sources
 
 There are several ways in which you might want to work with existing sources. You initiate these processes from the **Sources** tab of the Data Clean Room:
@@ -411,6 +439,8 @@ To edit the source structure:
 8. Select one or more fields in the **Available fields** list on the left and use the buttons in the middle of the screen to categorize them as identifiers, dimensions, or metrics.
 9. Once you have made all necessary changes, click the **Save** button to save the source with the updated structure or **Cancel** to undo your changes.
 
+<div id="important-3" />
+
 > 🚧 **Important**
 >
 > Don't forget to make corresponding changes reflecting the new source structure in any reports for which this source is used:
@@ -434,6 +464,8 @@ To edit the source structure:
 
 </Accordion>
 
+<div id="reference" />
+
 ## Reference
 
 <div id="manually-creating-a-folder-structure" />
@@ -441,6 +473,8 @@ To edit the source structure:
 <Accordion title="Manually creating a storage bucket folder structure (relevant only if you choose to do so)">
 
 In general, it's easiest to allow AppsFlyer to automatically generate the required folder structure as part of the source creation process. However, if you wish to create these folders manually, you can do so as follows.
+
+<div id="create-a-dcr-key-folder" />
 
 #### Create a DCR key folder
 
@@ -456,6 +490,8 @@ After creating the DCR key folder, your bucket/folder structure would look somet
 
 ![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
 
+<div id="top-level-input-folder" />
+
 #### Top-level input folder
 
 Though it is not required, best practice is to create a top-level input folder directly beneath the DCR key folder. This folder will be dedicated to files you upload to the DCR.
@@ -468,6 +504,8 @@ The top-level input folder is generally created manually using the interface of 
 After creating the top-level input folder, your bucket/folder structure might look something like this:
 
 ![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### Second-level folder for each data source
 

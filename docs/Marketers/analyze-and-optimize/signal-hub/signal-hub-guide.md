@@ -27,6 +27,8 @@ x-zendesk:
 
 <Embed title="Signal Hub guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo" providerUrl="https://www.youtube.com" />
 
+<div id="about-signal-hub" />
+
 ## About Signal Hub
 
 The AppsFlyer Signal Hub is an advanced, privacy-safe solution empowering brands to gain access to high-value first-party data of leading brands, including leading finance companies, to unlock user insights far beyond their own data. By enriching audiences with real-world purchase signals, marketers can identify high-value users earlier, personalize campaigns based on proven spending behavior, and activate audiences instantly across major media platforms, such as Meta, Google, and TikTok.
@@ -45,6 +47,8 @@ Using AppsFlyer clean room infrastructure and integrations with identity resolut
   Activate securely in a clean room environment using hashed, pseudonymized identifiers. No raw data is ever moved, shared, or exported.
 * **Gain full-funnel clarity**  
   Measure the impact of enriched segments on installs, purchases, retention, SKU-level measurement, and revenue through AppsFlyer's full-funnel, omnichannel measurement.
+
+<div id="get-started-using-signal-hub" />
 
 ## Get started using Signal Hub
 
@@ -78,6 +82,8 @@ After running your campaigns, check out the results in your AppsFlyer dashboards
 
 </Accordion>
 
+<div id="use-cases" />
+
 ## Use cases
 
 The use cases for Signal Hub are nearly endless. Here are a few industry-specific examples.
@@ -99,6 +105,8 @@ A hotel chain plans to drive bookings for a Valentine's Day promotion. By combin
 A consumer electronics brand wants to promote new smart TVs. By leveraging streaming platform data (such as device ownership, subscription purchases, and engagement with entertainment apps), they can identify premium households and run highly targeted campaigns. This improves conversions for big-ticket items.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

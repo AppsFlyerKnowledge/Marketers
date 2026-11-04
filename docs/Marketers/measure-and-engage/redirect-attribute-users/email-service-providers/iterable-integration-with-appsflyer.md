@@ -29,6 +29,8 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## Introduction
 
 ESPs (Email Service Providers) can be excellent sources for segmented user traffic.
@@ -36,6 +38,8 @@ ESPs (Email Service Providers) can be excellent sources for segmented user traff
 One of the problems with ESPs is recording clicks while keeping deep linking functionality intact. ESPs wrap deep linking URLs with their own ESP's click recording domain. This procedure sometimes breaks the iOS Universal Links process.
 
 With Iterable, which supports Universal Links on top of their click recording domain, deep linking and click recording can still be performed.
+
+<div id="prerequisites" />
 
 ## Prerequisites
 
@@ -55,7 +59,11 @@ Iterable doesn’t support Android App Links. However, <Anchor target="_blank" h
 </Tab>
 </Tabs>
 
+<div id="setting-up-iterable" />
+
 ## Setting up Iterable
+
+<div id="step-1-setting-up-link-branding-in-iterable" />
 
 ### Step 1: Setting up link branding in Iterable
 
@@ -63,9 +71,13 @@ Create a dedicated click recording domain and set a subdomain (for example, [cli
 
 For more information on setting a click recording domain with Iterable, see <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">here</Anchor>.
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### Step 2: Uploading your SSL certificate to Iterable
 
 Your click recording domain must include your domain’s SSL certificate. The SSL certificate should be installed in your Iterable account. Instructions on installing your SSL certificates can be found <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">here</Anchor>.
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Step 2: Give Iterable an AASA (iOS) and an Asset Links file (Android)
 
@@ -98,6 +110,8 @@ When you set up OneLink with App Links, you already have an Asset Links file ass
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Setting up your app
 
 See the following to set up your apps to support App and Universal links.
@@ -105,6 +119,8 @@ See the following to set up your apps to support App and Universal links.
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Step 1 for Android: Setting up your app to support App Links">
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Step 1: Adding the click domain to the activity in the Android manifest
 
@@ -122,6 +138,8 @@ In the Android manifest, add the click domain host and any prefix in the activit
      </intent-filter>
 </activity>
 ```
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### Step 2: Setting up the app to resolve click domains
 
@@ -143,6 +161,8 @@ To resolve click domains:
 <Accordion title="Step 1 for iOS: Setting up your app to support Universal Links">
 
 This section discusses how to set up your app to support Universal Links.
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### Step 1: Associating click domains in Xcode
 
@@ -242,6 +262,8 @@ To resolve click domains:
 
 </Accordion>
 
+<div id="sending-your-first-email" />
+
 ## Sending your first email
 
 1. <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Create a OneLink URL</Anchor> on the Link Management page (or manually).
@@ -261,6 +283,8 @@ To resolve click domains:
 
    At this stage, Iterable wraps the above link with the click domain that you set in the previous steps. Any click on the click domain redirects to the OneLink attribution link. If the app is installed on the user's device, the click domain deep links into the app.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > **Example**
@@ -272,6 +296,8 @@ To resolve click domains:
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Testing your links
 

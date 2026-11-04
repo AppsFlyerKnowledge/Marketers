@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** AppLovin, an AppsFlyer integrated partner, is a well-known ad network for mobile app traffic. In addition to click-based mobile attribution, AppLovin also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
 
+<div id="setting-up-applovin" />
+
 ## Setting up AppLovin
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,14 +44,20 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, AppLovin prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select *Events attributed to any partner* to send all install postbacks to AppLovin.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -65,12 +73,16 @@ AppLovin connects with AppsFlyer via a unique sdk\_key. If you don't already hav
 
 Toggle this to ON if you want to attribute view-through installs from AppLovin. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to AppLovin following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to AppLovin.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to AppLovin.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -115,6 +127,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 
 <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
 
+<div id="applovin-billable-cost" />
+
 > 🚧 **Applovin billable cost**
 >
 > As of August 1, 2024, Applovin bills all their customers based on probabilistic installs. Prior to this date, some customers were billed based on SKAN installs. <Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">See Applovin for additional information</Anchor>
@@ -134,6 +148,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 
 * Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * Applovin sends ad revenue that it generated itself.
@@ -146,6 +162,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant AppLovin. Note that even if attribution is disabled for AppLovin, the permissions tab is active and you can grant control to AppLovin.
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

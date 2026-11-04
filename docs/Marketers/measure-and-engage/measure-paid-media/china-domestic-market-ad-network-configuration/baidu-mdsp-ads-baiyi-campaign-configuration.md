@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Baidu mDSP Ads (Baiyi), an AppsFlyer ad network integrated partner, is an advertising solutions provider and part of Baidu, the dominant search engine in China with over 70% market share.
 
+<div id="setting-up-baidu-mdso-ads-baiyi" />
+
 ## Setting up Baidu mDSO Ads (Baiyi)
 
 1. In AppsFlyer, from the side menu, select **Collaborate** **> Partner Integrations** > **Partner Marketplace**.
@@ -36,6 +38,8 @@ The Baidu mDSP Ads (Baiyi) configuration window includes 2 active tabs: Integrat
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit**, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
@@ -46,6 +50,8 @@ Default Postbacks
 AppsFlyer can send automatic postbacks to Baidu mDSP Ads (Baiyi) following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 ![baidu-mdsp-default-postbacks.png](https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png)
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -73,6 +79,8 @@ In this tab, you can create the attribution links you want to send to Baidu mDSP
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -92,6 +100,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window can be attributed to Baidu mDSP Ads (Baiyi).
@@ -101,6 +111,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![baidu-mdsp-click-through.png](https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png)
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -131,6 +143,8 @@ Ad revenue integration is not available for Baidu mDSP Ads (Baiyi).
 Permissions configuration is not available for Baidu mDSP Ads (Baiyi).
 
 </Accordion>
+
+<div id="create-conversion-rule-at-baidu-mdsp-ads" />
 
 ## Create conversion rule at Baidu mDSP ads
 

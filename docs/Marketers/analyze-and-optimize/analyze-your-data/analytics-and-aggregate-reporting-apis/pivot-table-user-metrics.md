@@ -28,6 +28,8 @@ x-zendesk:
 
 > **At a glance**: View different user metrics—LTV, activity, Protect360, and retention. Download results to CSV files for ingestion by your BI systems. Pivot supports multiple apps in a single query. Use to generate Master API calls.
 
+<div id="about-pivot-reports-page" />
+
 ## About pivot reports page
 
 Using Pivot, you generate customized reports containing user acquisition metrics. Pivot comes with a number of pre-defined reports to use as a base from which you create your customized reports. Reports created by a given account user are available to all users.
@@ -39,6 +41,8 @@ The pre-defined pivot reports available are:
 * Cost analysis
 
 **Note**: For campaign data to be visible in pivots, the campaigns must have installs.
+
+<div id="pivot-procedures" />
 
 ## Pivot procedures
 
@@ -167,6 +171,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | (5) Actions | You can access the same actions per pivot report as available in the [pivot reports list](/docs/pivot-table-user-metrics#view-a-pivot-report). |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

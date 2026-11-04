@@ -25,6 +25,8 @@ x-zendesk:
 
 Data Locker enables you to stream data to your selected and owned storage solution, whether it is a bucket or a data warehouse. Set up your cloud service using one of the following procedures.
 
+<div id="bucket-cloud-storage" />
+
 ## Bucket cloud storage
 
 <div id="gcs-storage" />
@@ -152,6 +154,8 @@ After creating the bucket, grant AppsFlyer permissions using the procedure that 
 7. Click **Save changes**.
 8. Complete the <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers#set-data-locker-report-settings">Setup Data Locker procedure.</Anchor>
 
+<div id="supported-aws-regions" />
+
 #### **Supported AWS regions**
 
 Data Locker supports the following AWS regions:
@@ -245,6 +249,8 @@ Data Locker is the AppsFlyer solution for streaming data to storage.
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## Data warehouse cloud storage
 
 <div id="bigquery" />
@@ -266,6 +272,8 @@ Data Locker is the AppsFlyer solution for streaming data to storage.
 1. In BigQuery, create a project or use an existing project.
 2. In the project, click **CREATE DATASET**. [![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
 3. Give the dataset a suitable ID.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -294,6 +302,8 @@ Connect Data Locker to your Snowflake account. By doing so, data is sent to Snow
 
 Complete the following procedures to connect Snowflake to Data Locker.
 
+<div id="snowflake-connector-procedures" />
+
 #### **Snowflake connector procedures**
 
 **To get your Snowflake account ID and region**:
@@ -321,6 +331,8 @@ Complete the following procedures to connect Snowflake to Data Locker.
 6. In your database, the imported tables are displayed. Table names and structures are equivalent to those in Data Locker buckets.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

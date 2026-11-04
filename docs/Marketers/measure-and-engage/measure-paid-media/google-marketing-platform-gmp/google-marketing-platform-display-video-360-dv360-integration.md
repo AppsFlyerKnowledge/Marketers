@@ -25,11 +25,15 @@ x-zendesk:
 ---
 > **At a glance:** Google Marketing Platform - Display & Video 360 (GMP-DV360) is an AppsFlyer self-reporting network (SRN) partner combining advertising and analytics. The GMP-DV360 integration  (dv360\_int) combines advertising and analytics to enhance customer connections, reveal insights, and improve marketing outcomes.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > See the bulletin about <Anchor target="_blank" href="/marketers/docs/bulletin-supporting-the-new-google-eu-consent-policy">supporting the new Google EU consent policy</Anchor>.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+
+<div id="overview" />
 
 ## Overview
 
@@ -37,6 +41,8 @@ The GMP-DV360 integration uses the link ID for conversion measurement. You can w
 
 * [DV360 for advertisers](#setting-up-gmp-dv360-for-advertisers): Complete once—mandatory
 * [DV360 for agencies](#setting-up-gmp-dv360-for-agencies): Optional per agency
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -52,6 +58,8 @@ The table below describes GMP integration solutions:
 | DV360 | Integrate DV360 with AppsFlyer to measure dv360\_int attribution | Complete the [advertiser integration](#setting-up-gmp-dv360-for-advertisers) |
 | CM360 & DV360 | Buy DV360 traffic via CM360, measured as dv360\_int attribution in AppsFlyer. | Complete the [advertiser integration](#setting-up-gmp-dv360-for-advertisers) |
 | CM360 & non-DV360 third-party media source | Buy traffic from third-party media sources and measure mobile app conversions originating from this traffic in CM360. | <Anchor target="_blank" href="/marketers/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">Measure 3rd party traffic using CM360</Anchor> |
+
+<div id="data-sharing-between-appsflyer-and-gmp---dv360" />
 
 ### Data sharing between AppsFlyer and GMP - DV360
 
@@ -71,6 +79,8 @@ The table below describes GMP integration solutions:
 | `site_id` | `af_siteid` |
 | `insertion_order_id` | `af_sub4` |
 
+<div id="setting-up-gmp-dv360-for-advertisers" />
+
 ## Setting up GMP-DV360 for advertisers
 
 **Prerequisites**
@@ -79,6 +89,8 @@ Before setting up the integration, make sure to:
 
 * <Anchor target="_blank" href="/marketers/docs/partner-integrations#contact-details">Contact the partner</Anchor> and open an account with them.
 * <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/10956727">Get the GMP-DV360 link ID</Anchor>.
+
+  <div id="note-1" />
 
   > 📘 **Note**
   >
@@ -116,9 +128,13 @@ When AppsFlyer queries GMP-DV360, they return the parameters listed in their res
 
 <span id="activate-partner::e4f2f638"></span>The **Integration** tab includes a number of sections, as described below.
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 To configure the integration, you must first turn on the **Activate partner** toggle. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activating and deactivating partner</Anchor> integrations.
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -128,12 +144,16 @@ To configure the integration, you must first turn on the **Activate partner** t
 
 <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
+<div id="install-attribution" />
+
 #### Install attribution
 
 Set the different attribution windows to attribute new installs (first launches) of users who viewed or clicked your ad. This means the maximum time from click/view to the install. Only installs within the lookback window may be attributed to Google Marketing Platform - Display & Video 360 (DV360).
 
 1. Set the **Install click-through lookback window** to either 1-23 hours or 1-30 days.
 2. [Optional] Turn on **Install view-through attribution** and set the lookback window to either 1-23 hours or 1-7 days.
+
+<div id="re-engagement-attribution" />
 
 #### Re-engagement attribution
 
@@ -142,11 +162,15 @@ Set the different attribution windows to attribute re-engagements of your existi
 1. Set the **Re-engagement click-through lookback window** to either 1-23 hours or 1-30 days.
 2. [Optional] Turn on **Re-engagement view-through attribution** and set the lookback windows to either 1-23 hours or 1-7 days.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Re-attribution is not supported for DV360 campaigns
 
 Learn more about re-engagement <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#reengagement-rules-and-windows">rules and windows</Anchor>.
+
+<div id="re-engagement-window" />
 
 #### Re-engagement window
 
@@ -154,9 +178,13 @@ Set the time window during which in-app events are primarily attributed to the r
 
 * Set the **Re-engagement window** to either 1-23 hours, 1-90 days, or **Lifetime**.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignore active users for retargeting
 
 Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">ignore re-engagements</Anchor> of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -164,6 +192,8 @@ Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-reta
 
 1. Turn on **Ignore active users for retargeting**.
 2. Set the Inactivity window.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -186,9 +216,13 @@ Configure mapping of in-app events with GMP-DV360 events sent via postbacks:
    2. Select a different app from the drop-down list.
    3. Repeat the integration steps for the selected app.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > For iOS apps only: Your control over data shared with the partner via postbacks and <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions">reports</Anchor> depends on the **Advanced Privacy (for iOS 14.5+ and later)** [toggle state](#advanced-privacy).
+
+<div id="u-parameter-mapping" />
 
 #### U parameter mapping
 
@@ -238,6 +272,8 @@ You can **use AppsFlyer attribution links with DV360 for impressions and click r
 
 If you want to be able to measure the number of clicks from DV360 on AppsFlyer, we recommend adding an AppsFlyer attribution URL on your DV360 dashboard, via CM360. When doing so, make sure the campaign name in the attribution URL **is identical** to the **line item name** on GMP (if possible) so that AppsFlyer can retrieve and append the click data for the correct campaigns.
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > Using attribution links for DV360 is not mandatory.
@@ -270,6 +306,8 @@ ROI360 customers can create and edit cost integrations in the **Cost tab** and i
 
 Starting September 7, 2026, clicks and impressions will no longer be reported through attribution. To keep receiving these metrics, set up the DV360 SRN/Cost integration.
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > Clicks and impressions for this integration are reported in:
@@ -294,9 +332,13 @@ Ad revenue isn't supported for this integration.
 
 </Accordion>
 
+<div id="setting-up-gmp-dv360-for-agencies" />
+
 ## Setting up GMP-DV360 for agencies
 
 Agencies are able to run campaigns with GMP-DV360 on your behalf.
+
+<div id="agency-setup" />
 
 #### Agency setup
 
@@ -304,6 +346,8 @@ Agencies are able to run campaigns with GMP-DV360 on your behalf.
 | --- | --- |
 | Advertiser | <ol><li>Verify that you've completed advertiser GMP-DV360 integration.</li><li>In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.</li><li>Select an agency.</li><li>Go to the **Permissions** tab, and turn on **Agency permissions**.</li><li>[Optional] In the **Integration** tab turn on **In-app event postback**. This enables the agency to turn on or off postbacks on their end.</li></ol> |
 | Agency | <ol><li>In AppsFlyer, from the side menu, select **Collaborate** > **Active Integrations**.</li><li>Select **Google Marketing Platform - Display & Video 360 (DV360).**</li><li>Go to the **Integration tab**.<br />The integration status with GMP displays. [![mceclip2.png](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)</li><li>Verify that **Activate Partner** is **On.** If this is not the case, the advertiser must complete [Advertiser GMP-DV360 integration.](#setting-up-gmp-dv360-for-advertisers)</li><li>Verify that the remaining settings, such as the lookback windows and in-app event mapping, are correct. If necessary, ask the advertiser to make changes.</li><li>Enter one or more **DBM Advertiser ID**s. The ID is available in your <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/11415707?hl=en">GMP dashboard.</Anchor></li><li>Click **Save**.</li></ol> |
+
+<div id="gmp-dv360-discrepancies" />
 
 ## GMP-DV360 discrepancies
 
@@ -313,6 +357,8 @@ See possible reasons for discrepancies and how to minimize them:
 | --- | --- | --- |
 | View-through attribution window | View-through in the GMP-DV360 attribution window is 14 days, while the AppsFlyer default window is 1 day. | To reduce the discrepancy, set the view-through window in AppsFlyer to the maximum 7-day window. |
 | Incorrect mapping | Mapping between AppsFlyer and GMP-DV360 isn't correct | <ul><li>Verify the link ID</li><li>Verify that the in-app events are correctly mapped</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

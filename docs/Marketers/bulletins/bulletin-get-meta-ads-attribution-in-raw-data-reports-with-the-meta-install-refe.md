@@ -31,6 +31,8 @@ x-zendesk:
 | **What must I know?** | Referrer data has priority over data provided via the Meta ads integration and is available in raw data reports. This solution applies to both click-through attribution and view-through attribution. |
 | **What's the impact?** | <ul><li>You may see an increase in Meta-attributed installs in raw data reports</li><li>Two new match-type fields are now included in raw data reports, `fb_referrer` and `ig_referrer`:<ul><li>`fb_referrer` for attribution from the Facebook app</li><li>`ig_referrer` for attribution from the Instagram app</li><li>`fb_referrer` or `ig_referrer`for attribution from the Audience Network.</li></ul></li></ul> |
 
+<div id="see-also" />
+
 > 📄 **See also**
 >
 > * <Anchor target="_blank" href="/marketers/docs/meta-ads-integration-setup#userlevel-data">Meta install referrer</Anchor>

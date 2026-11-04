@@ -25,15 +25,21 @@ x-zendesk:
 
 > **At a glance:** Strengthen fraud protection for your Android app with the Advanced Security Module. This real-time solution detects and blocks attribution spoofing and manipulated traffic before installs are attributed. Designed for high-traffic apps and Protect360 clients, especially those working with affiliates. The module is fully configurable by you, allowing initial setup and ongoing maintenance to adapt to evolving fraud patterns and protect data integrity.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > The Advanced Security Protect360 Module beta is available to all Protect360 customers. To join, contact your CSM.
+
+<div id="what-is-sdk-spoofing" />
 
 ## What is SDK spoofing?
 
 SDK spoofing is an advanced fraud tactic where attackers send fake install and in-app event requests directly to AppsFlyer servers—without installing or running the app on a real device. The app SDK isn’t hacked or modified. Instead, fraudsters mimic the network requests a real app would send, making the activity look legitimate.
 
 For advertisers, SDK spoofing can lead to installs and engagement that never occurred, inflated install volumes, discrepancies between AppsFlyer and app store numbers, and wasted ad spend.
+
+<div id="about-the-advanced-security-module" />
 
 ## About the Advanced Security Module
 
@@ -45,6 +51,8 @@ This solution is especially valuable for apps facing discrepancies between app s
 
 The module is triggered after the first app launch (logged by the SDK) but before the install is attributed. To use the Advanced Security Module, you must be using the Android SDK v6.15.2 or later.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before you begin, make sure you have the following:
@@ -53,11 +61,15 @@ Before you begin, make sure you have the following:
 * **An API V2 token** — required for Maven repository authentication when your developer integrates the Security Module dependency. See <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#applications-of-the-api-v2-token">Managing AppsFlyer tokens</Anchor> for how to retrieve or generate one.
 * **All certificate hashes (SHA-256)** for every certificate used to sign your app (debug and release). See <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint">Generating a SHA256 fingerprint</Anchor>.
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > If your account has already reached the two-token limit for API V2 tokens, you do not need to request a new one, an existing API V2 token can be reused for this integration. Contact your CSM if you have questions about token allocation.
 >
 > For the full technical integration steps, see the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin">Android security plugin developer guide</Anchor>.
+
+<div id="set-the-advanced-security-module" />
 
 ## Set the Advanced Security Module
 
@@ -65,12 +77,16 @@ Set up the Advanced Security Module to validate that in-app traffic is coming fr
 
 <Accordion title="Configure the Advanced Security Module">
 
+<div id="step-1-open-and-select-an-app" />
+
 #### **Step 1: Open and select an app**
 
 1. In AppsFlyer, go to **Settings > Protect360 > Advanced security module**.
 2. Click **Get Started** or **Add build**.
 3. Select the app you want to implement the Advanced Security Module solution on.
 4. Click **Next**
+
+<div id="step-2-add-certificate" />
 
 #### **Step 2: Add certificate**
 
@@ -81,17 +97,23 @@ Set up the Advanced Security Module to validate that in-app traffic is coming fr
 
 Note: Ask your developer for all the [certificate hashes](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint) used to sign the app. The Security Module uses these certificates to validate that traffic is coming from your app, so all relevant hashes should be included.
 
+<div id="step-3-excluded-app-versions-from-detection" />
+
 #### **Step 3: Excluded app versions from detection**
 
 * Add app versions that should be excluded from Advanced Security detection. Typically, these would be:
   * Versions released before the Advanced Security Module was integrated.
   * Test or legacy builds that don’t include the module.
 
+<div id="step-4-build-activation" />
+
 #### **Step 4: Build activation**
 
 1. Click **Activate build**.
 2. Your build will go into **In progress** until the build is complete. This may take 10-15 minutes.
 3. Once complete, copy the code by clicking the **Copy code** button on the build and send it to your developer for integration into the app SDK.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -103,6 +125,8 @@ Note: Ask your developer for all the [certificate hashes](https://dev.appsflyer.
 
 Fraud techniques change over time, and malicious actors may attempt to reverse-engineer detection logic. Regular maintenance ensures continued effectiveness.
 
+<div id="when-to-update-the-configuration" />
+
 #### **When to update the configuration**
 
 Update your settings if you notice:
@@ -111,6 +135,8 @@ Update your settings if you notice:
 * Changes in traffic patterns
 * New app versions or certificate changes
 * Reduced effectiveness of existing protections
+
+<div id="what-you-can-update" />
 
 #### **What you can update**
 
@@ -121,6 +147,8 @@ You can:
 * Rebuild and redeploy the Security Module
 * Adjust detection mode based on rollout status
 
+<div id="best-practices" />
+
 #### **Best practices**
 
 * Review Advanced Security insights regularly
@@ -129,6 +157,8 @@ You can:
 * Reassess configuration periodically to stay ahead of emerging fraud methods
 
 </Accordion>
+
+<div id="data-visibility" />
 
 ## **Data visibility**
 
@@ -160,6 +190,8 @@ Data is broken up into two KPIs and a graph.
 
 The Advanced Security Module can be found in the Fraud Protection Studio page.
 
+<div id="how-to-access" />
+
 #### How to access
 
 To access the Advanced Security Module:
@@ -169,17 +201,23 @@ To access the Advanced Security Module:
 3. Use the app dropdown at the top of the page to select the app you want to configure.
 4. Select the Advanced Security Module card from the left menu.
 
+<div id="the-advanced-security-module-page" />
+
 #### The Advanced Security Module page
 
 <Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 The Advanced Security Module page is broken into three sections.
 
+<div id="detection-status" />
+
 ##### Detection status
 
 * Shows the detection mode. The two options are implemented and tagged. By default, it is set to **Tagged**.
 
 Note: To change the detection status, contact your CSM.
+
+<div id="top-app-versions-by-detection-status" />
 
 ##### Top app versions by detection status
 
@@ -188,6 +226,8 @@ Note: To change the detection status, contact your CSM.
     * **Untagged** - Install candidates that were not detected by the advanced security module.
     * **Tagged** - Install candidates that are detected by the advanced security module in tagged mode.
     * **Blocked** - Install candidates that are detected by the advanced security module in implemented mode. Every install candidate that is blocked will not proceed.
+
+<div id="insights" />
 
 ##### Insights
 
@@ -201,33 +241,49 @@ Insights help you understand the breakdown of the chart. The three types of insi
 
 <Accordion title="FAQ">
 
+<div id="what-is-advanced-security" />
+
 #### What is Advanced Security?
 
 Advanced Security is an additional protection layer for the AppsFlyer Android SDK that helps prevent attribution spoofing, a type of fraud where fake installs or events are reported even though no real user installed or used the app.
+
+<div id="what-problem-does-advanced-security-solve" />
 
 #### What problem does Advanced Security solve?
 
 Advanced Security helps prevent fake installs and in-app activity caused by spoofing that appear in AppsFlyer but do not exist in the app store or backend systems. This reduces inflated install numbers, data discrepancies, and wasted ad spend.
 
+<div id="what-is-attribution-spoofing" />
+
 #### What is attribution spoofing?
 
 Attribution spoofing is a fraud technique where attackers generate fake install or in-app event data and send it to AppsFlyer while pretending it came from your app. No real app install or user activity actually occurs.
+
+<div id="how-does-advanced-security-prevent-attribution-spoofing" />
 
 #### How does Advanced Security prevent attribution spoofing?
 
 Advanced Security verifies that install and in-app event data truly came from your app’s SDK by adding a unique verification signature to each request. AppsFlyer checks this signature to confirm the data is genuine and has not been spoofed or manipulated.
 
+<div id="does-advanced-security-affect-the-app-or-user-experience" />
+
 #### Does Advanced Security affect the app or user experience?
 
 No. Advanced Security runs in the background and does not change how users install or use the app. Any additional processing happens behind the scenes and is not noticeable to users.
+
+<div id="who-should-use-advanced-security" />
 
 #### Who should use Advanced Security?
 
 Advanced Security is most relevant for apps that work heavily with non-SRN or affiliate networks, see unexplained gaps between app store installs and AppsFlyer data, or suspect sophisticated fraud that is difficult to detect using standard methods.
 
+<div id="is-advanced-security-available-for-all-platforms" />
+
 #### Is Advanced Security available for all platforms?
 
 No. Advanced Security is currently available for Android apps only and is offered to Protect360 premium customers. It's also compatible with all AppsFlyer plugins.
+
+<div id="how-do-i-know-advanced-security-is-working" />
 
 #### How do I know Advanced Security is working?
 

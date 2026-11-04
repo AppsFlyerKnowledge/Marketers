@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Improve flexibility while measuring with AppsFlyer and complying with PIPL.
 
+<div id="background" />
+
 ## Background
 
 In late 2021, China passed the Personal Information Protection Laws (PIPL) which regulates the collection, use, and transfer of user personal data. To provide customers with additional flexibility while using AppsFlyer and to support PIPL compliance, follow the step-by-step instructions described in this article.  
@@ -31,6 +33,8 @@ The AppsFlyer PIPL solution is based on 3 principles:
 * Prevent the SDK from collecting device IDs.
 * Mask and hash IPs of SDK events, S2S events, and clicks and impressions.
 * Enable auditing all app events on a relay server in China.
+
+<div id="apply-pipl-solution-in-appsflyer" />
 
 ## Apply PIPL solution in AppsFlyer
 
@@ -66,6 +70,8 @@ The following section describes the actions you have to take to apply the AppsFl
      For S2S events, use the `api2.hevents.appsflyer-cn.com` domain to mask and hash IP events as follows:
      * The IP should be converted to binary, then the last 2 digits should be masked.
      * The masked binary IP should be converted to text and then hashed by the sha256 algorithm.
+
+<div id="solution-limitations" />
 
 ## Solution limitations
 

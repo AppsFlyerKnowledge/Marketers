@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Reddit, an AppsFlyer ad network integrated partner, is home to 430 million highly engaged monthly users who can’t be found anywhere else.
 
+<div id="setting-up-reddit" />
+
 ## Setting up Reddit
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -47,17 +49,25 @@ x-zendesk:
 
 The ***Integration Tab*** is divided into different sections:
 
+<div id="activate-partners" />
+
 #### Activate partners
 
 To enable the configuration, <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">activate the partner</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Advanced Privacy
 
 For iOS apps only, when **Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">control what data is shared</Anchor> with Reddit via postbacks and reports.
 
+<div id="transaction-id" />
+
 #### Transaction ID
 
 For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with Reddit. By doing so, Reddit could decode your SKAdNetwork Conversion Values.
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -69,12 +79,16 @@ Activate, if you want to attribute view-through installs from Reddit. The view-t
 
 Turn this on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with Reddit, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 Send automatic postbacks to Reddit following user installs. Select whether to send postbacks for installs attributed to:
 
 * Reddit only
 * All sources, including organic
+
+<div id="in-app-events-settings" />
 
 #### In-app events settings
 
@@ -136,6 +150,8 @@ Ad revenue data is not supported by Reddit.
 
 In this tab, you can select the permissions to grant Reddit. Note that even if attribution is disabled for Reddit, the permissions tab is active and you can grant control to Reddit.
 
+<div id="ad-network-permissions" />
+
 #### Ad network permissions
 
 In this tab, you can select the permissions to grant Reddit. Note that even if attribution is disabled for Reddit, the permissions tab is active and you can grant control to Reddit.
@@ -154,6 +170,8 @@ Use these toggles to give the ad network permissions to handle its own configura
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
 
 </Accordion>
+
+<div id="raw-data-restrictions" />
 
 ## Raw data restrictions
 

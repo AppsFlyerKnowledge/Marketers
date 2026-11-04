@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Find answers to frequently asked questions about using Meta ads in AppsFlyer.
 
+<div id="meta-ads-faq" />
+
 ## Meta ads FAQ
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -74,13 +76,19 @@ How? Read <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-
 
 <Accordion title="How can I get device-level Android install data using the Google Play and Meta Install Referrers?">
 
+<div id="google-play-install-referrer-api" />
+
 #### Google Play Install Referrer API
 
 The Google Play Install Referrer API allows advertisers to retrieve attribution data such as campaign information from installs that originated from the Google Play Store. This API must be <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">integrated into your app</Anchor> and works by passing referrer data when the app is first opened after installation. Attribution fields will be available in AppsFlyer raw data reports with the match type `gp_referrer` once the required decryption key is submitted.
 
+<div id="meta-install-referrer" />
+
 #### Meta Install Referrer
 
 The Meta install referrer provides additional campaign metadata stored locally on the device. This is accessible via the [AppsFlyer SDK](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer). It complements the Google Play Install Referrer by enabling richer data, including both click and impression data, and potentially spans multiple sessions. Attribution via Meta install referrer uses match types like `fb_referrer` (Facebook) and `ig_referrer` (Instagram).
+
+<div id="campaign-attribution-fields" />
 
 #### Campaign Attribution Fields
 
@@ -93,10 +101,14 @@ The Meta install referrer provides additional campaign metadata stored locally o
 * Account ID
 * Channel
 
+<div id="sdk-and-setup-notes" />
+
 #### SDK and Setup Notes
 
 * AppsFlyer SDK version 5.4.0+ is required for the Google Play referrer data.
 * Meta referrer support depends on correct SDK configuration. See <Anchor target="_blank" href="/marketers/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">this bulletin</Anchor> for implementation details.
+
+<div id="submitting-the-decryption-key" />
 
 #### Submitting the Decryption Key
 
@@ -259,11 +271,15 @@ You might be on a Zero package which doesn't include attribution.
 
   You can still retrieve **campaign, ad set, and ad names** via GCD—provided that <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#meta-ads">Advanced Mobile Measurement (AMM) is signed</Anchor>. In this case, you can use these values to apply your own **custom deep-linking logic**.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Meta’s data-sharing policies can affect the level of detail available through GCD. Ensure that AMM is signed to maximize available campaign-level data.
 
 </Accordion>
+
+<div id="meta-ads-cost-faq" />
 
 ## Meta ads cost FAQ
 
@@ -427,6 +443,8 @@ If you want to switch to a new ad account but your Meta ads cost is already link
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## Facebook SDK FAQ
 
 <div id="who-needs-facebooks-sdk" />
@@ -455,6 +473,8 @@ Your app requires the Facebook SDK in addition to the AppsFlyer SDK for the foll
 * **Dynamic Product Ads campaigns data**: You can only get data for Dynamic Product Ads from the Facebook SDK.
 * **Other Meta ads features**: You may need Facebook SDK for reasons unrelated to attribution such as authentication, ad monetization, social sharing, user invites, etc.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > The above information and recommendations regarding deep linking and deferred deep linking are based on thorough testing we conducted using the Meta ads available demo/preview tools, which uses a different mechanism than live ads.
@@ -474,6 +494,8 @@ If you have <Anchor target="_blank" href="https://developers.facebook.com/docs/a
     Note that to enable SKAN attribution for iOS 14.5+, you'll need to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">map in-app events to Meta ads</Anchor>.
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## Meta ads attribution FAQ
 
@@ -510,6 +532,8 @@ However, you can advertise and record installs for out-of-store apps on Meta ads
 3. The landing page should include a **Download App** button, which directly links to the out-of-store market where the APK exists.
 4. The lead clicks on the button and is redirected to the out-of-store market. After completing the installation AppsFlyer attributes the user to Meta ads, via its MMP API.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > The same solution applies to apps in Google Play and the App store, which <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">require a landing page</Anchor> prior to the redirection to the market.
@@ -525,6 +549,8 @@ For specific instructions on attribution for apps in Amazon, click <Anchor targe
 Meta ads identifies users based on their Meta ads account. Some users have both iOS and Android devices associated with the same Meta ads account.
 
 If such a user clicks or views an ad for your app on their Android device, but install the app on their iOS device, Meta ads considers themselves as having generated the install. As a result, an Android Campaign name appears on your iOS dashboard.
+
+<div id="example" />
 
 > 📄 **Example**
 >

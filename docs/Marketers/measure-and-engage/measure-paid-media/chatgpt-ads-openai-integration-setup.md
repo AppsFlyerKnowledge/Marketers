@@ -17,6 +17,8 @@ x-zendesk:
 ---
 > **At a glance:** ChatGPT Ads, an AppsFlyer integrated partner, is OpenAI's advertising platform. Set up the integration to measure and attribute mobile app installs, in-app events, and website conversions driven by your ChatGPT Ads campaigns.
 
+<div id="about-the-integration-with-chatgpt-ads" />
+
 ## About the integration with ChatGPT Ads
 
 The AppsFlyer integration with ChatGPT Ads (OpenAI) enables you to measure and attribute app installs, in-app events, and website conversions driven by your ChatGPT Ads campaigns. It supports both mobile app and website measurement.
@@ -27,6 +29,8 @@ The AppsFlyer integration with ChatGPT Ads (OpenAI) enables you to measure and a
 If you also run the ChatGPT Ads pixel on your website, ChatGPT Ads deduplicates the server-side events (sent via the Conversions API, or CAPI) against the pixel events using a shared event ID, so you can run CAPI and the pixel in parallel without inflating your conversion counts.
 
 Include that shared ID as `af_customer_event_id` in the event payload you send to AppsFlyer. See [Integrate your website](#integrate-your-website) below.
+
+<div id="set-up-the-integration" />
 
 ## Set up the integration
 
@@ -46,6 +50,8 @@ Set up the integration separately for each mobile app and website you want to me
 * [**Mobile app**](#integrate-your-mobile-app) - attribute installs, re-engagements, and in-app events to ChatGPT Ads campaigns.
 * [**Website**](#integrate-your-website) - forward web conversion events to ChatGPT Ads' Conversions API, with deduplication against the ChatGPT Ads pixel.
 
+<div id="integrate-your-mobile-app" />
+
 ## Integrate your mobile app
 
 Use the following steps to set up attribution and in-app event postbacks for ChatGPT Ads on your mobile app.
@@ -62,6 +68,8 @@ Use the following steps to set up attribution and in-app event postbacks for Cha
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 **To activate the integration:**
@@ -71,6 +79,8 @@ Turn on the **Activate partner** toggle.
 **Important note:** The toggle **must remain on** as long as you work with ChatGPT Ads. Deactivating the integration will turn off attribution and postbacks for your campaigns.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
+<div id="general-settings" />
+
 #### General settings
 
 Enter the following credentials:
@@ -79,6 +89,8 @@ Enter the following credentials:
 * **API key** - An API key is required to authenticate Events API calls. Get it from the conversions tab in your ChatGPT Ads Manager account.   
   **Note:** Make sure to use the conversions API key and not the ads management API key, since the required permissions require the CAPI key.
 
+<div id="advanced-privacy" />
+
 ##### **Advanced Privacy**
 
 The Advanced Privacy (AP) toggle controls how events are sent to OpenAI for iOS users (14.5 and above) who have not made their IDFA available (on the advertiser or publisher side):
@@ -86,19 +98,27 @@ The Advanced Privacy (AP) toggle controls how events are sent to OpenAI for iOS 
 * Advanced Privacy **Disabled**: Events are sent with all available user identifiers (IPs, user agent, etc.) even when IDFA isn't available.
 * Advanced Privacy **Enabled**: Only events that are attributed to `openai_int` are sent, and these postbacks only include attribution data. All user-level identifiers are removed from the postback before it is sent.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > OpenAI doesn’t collect or share IDFA on iOS devices, so the only way to ensure unattributed postbacks are being sent is to turn advanced privacy OFF.
 
+<div id="advanced-matching-data-sharing" />
+
 ##### **Advanced Matching Data Sharing**
 
 Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with ChatGPT Ads, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+
+<div id="default-postbacks" />
 
 #### Default postbacks
 
 A postback is a server-to-server notification that AppsFlyer sends to ChatGPT Ads to report an attributed event (like an install or in-app action). This section displays your postbacks. Learn how to <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">set install and re-attribution postbacks</Anchor>.
 
 Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks setting</Anchor>.
+
+<div id="in-app-event-settings" />
 
 #### In-app event settings
 
@@ -108,6 +128,8 @@ To be able to send in-app event postbacks to ChatGPT Ads, enter the required cre
 * API key
 
 For details, see [General settings](#general-settings) above.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -163,6 +185,8 @@ For more information, see Integrate AppsFlyer Web SDK.
 
 ChatGPT Ads (OpenAI) supports attribution links.
 
+<div id="choose-your-attribution-type" />
+
 #### Choose your attribution type
 
 Decide whether you want to:
@@ -171,6 +195,8 @@ Decide whether you want to:
 
    OR
 2. Use a landing page as your ad destination, and then use <Anchor target="_blank" href="/marketers/docs/onelink-smart-script-overview">Smart Script</Anchor> or <Anchor target="_blank" href="/marketers/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor> to route the user to the App Store or Google Play (while creating a link that will allow attribution).
+
+<div id="select-parameters" />
 
 #### Select parameters
 
@@ -184,6 +210,8 @@ Select the attribution link parameters you want to include.
   * `af_ad_id={ad_id}`
   * `clickid={oppref}`
 * Name field macros aren't supported.
+
+<div id="important" />
 
 > 🚧 **Important**
 >
@@ -222,6 +250,8 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integra
 
 </Accordion>
 
+<div id="integrate-your-website" />
+
 ## Integrate your website
 
 Use the following steps to set up server-side event forwarding to ChatGPT Ads for your website.
@@ -237,6 +267,8 @@ Use the following steps to set up server-side event forwarding to ChatGPT Ads fo
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner-1" />
+
 #### Activate partner
 
 **To activate the integration:**
@@ -246,6 +278,8 @@ Turn on the **Activate partner** toggle.
 **Important note:** The toggle **must remain on** as long as you work with ChatGPT Ads. Deactivating the integration will turn off event forwarding for your website.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
+<div id="in-app-event-settings-1" />
+
 #### In-app event settings
 
 To be able to send event postbacks to ChatGPT Ads, enter the following credentials:
@@ -254,6 +288,8 @@ To be able to send event postbacks to ChatGPT Ads, enter the following credentia
 * **API key** - An API key is required to authenticate Events API calls. Get it from the conversions tab in your ChatGPT Ads Manager account.
 
 **Advanced Matching Data Sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, with ChatGPT Ads, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+
+<div id="in-app-event-postbacks-1" />
 
 #### In-app event postbacks
 
@@ -301,11 +337,15 @@ Permissions aren't available for website integrations with ChatGPT Ads.
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Description |
 | --- | --- |
 | Supported countries | <Anchor target="_blank" href="https://help.openai.com/en/articles/20001245-ads-manager-availability">List of countries</Anchor> where ChatGPT Ads Manager is available. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Understand the difference between OneLink short and long URLs, and how to create long URLs outside of AppsFlyer.
 
+<div id="about-onelink-links" />
+
 ## **About OneLink links**
 
 * Work across all media marketing channels to redirect users to either: 
@@ -43,10 +45,14 @@ x-zendesk:
     * Long URLs are transparent, meaning all link parameters are visible to the public, and can potentially be manipulated.
     * Long URLs may not fit into browsers, SMS, or other places with URL character limitations.
 
+<div id="advantages-of-a-short-onelink-url-compared-to-a-long-url" />
+
 ### Advantages of a short OneLink URL compared to a long URL
 
 * Updating parameters in the OneLink short URL within the AppsFlyer dashboard does not change the shortlink ID, so there’s no need to replace or redistribute the URL or any associated QR codes, even if already in use.
 * AppsFlyer seamlessly applies the updated parameters for attribution and reporting, ensuring the QR code remains functional and automatically reflects the changes.
+
+<div id="procedures" />
 
 ## Procedures
 

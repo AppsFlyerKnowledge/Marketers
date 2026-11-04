@@ -19,6 +19,8 @@ x-zendesk:
 ---
 > **At a glance:** Use the Web SDK Test page to validate the Web SDK installation and event recording in real time. Run it when you first integrate the SDK and whenever you add or change an event.
 
+<div id="overview" />
+
 ## Overview
 
 The Web SDK Test page opens your website in a new browser tab with a dedicated test session. Every Web SDK activity in that tab, including page loads, events, and identity calls, streams live into the test page, where you can inspect each event and its properties. This lets you verify your implementation in minutes, without waiting for data to appear in reports.
@@ -31,12 +33,16 @@ Use it to check that:
 
 Run a test whenever you first integrate the SDK or change your event setup.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before you run a test, make sure you have:
 
 * A web app in AppsFlyer. For more information, see <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Create a web app in AppsFlyer</Anchor> in Onboard Web Performance Measurement.
 * The AppsFlyer Web SDK is deployed on the pages you want to test. For more information, see the <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">Integrate AppsFlyer Web SDK</Anchor> section.
+
+<div id="run-a-test" />
 
 ## Run a test
 
@@ -50,9 +56,13 @@ Once your prerequisites are in place, run a test as follows:
 4. Click **Start test**. Your website opens in a new browser tab with a dedicated test session. You don't need to do anything there.
 5. Return to the Web SDK Test page. Events from the test tab appear automatically in the **Live events** table as you browse and interact with your website.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The test captures only activity from the browser tab it opens. Visiting your website directly without starting a test doesn't display events on this page.
+
+<div id="view-the-live-events-table" />
 
 ## View the Live events table
 
@@ -70,6 +80,8 @@ The **Live events** table also supports:
 * **Search:** Use the search box to find a specific event.
 * **Export:** Click **Export CSV** to download the results.
 
+<div id="restart-or-clear-a-test" />
+
 ## Restart or clear a test
 
 Use one of these options to restart or clear a test:
@@ -77,6 +89,8 @@ Use one of these options to restart or clear a test:
 * **Restart test:** Clears the event list and opens a new browser tab with a new test session. You can use this to start a clean run.
 * **Restart with new app / URL:** Reopens the setup dialog to test a different web app or page.
 * **Clear logs:** Clears only the event list. The current test session and browser tab stay active, so new events keep streaming in.
+
+<div id="common-testing-scenarios" />
 
 ## Common testing scenarios
 

@@ -20,15 +20,21 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/38191154658193-Set-up-the-Lookback-windows-task
 ---
+<div id="set-lookback-windows" />
+
 ## Set Lookback Windows
 
 > **At a glance:** Set attribution windows for on-site and off-site campaigns to determine how far back user engagements can be matched to conversions.
 
 Lookback windows define the maximum time between a user engagement (click or view) and the resulting conversion for attribution purposes. Each collaboration can set a custom lookback window duration. Media partners, such as Google Ads or Meta Ads, usually apply different rules for configuring these windows. This article explains how to configure lookback windows for both collaborators and Google and Meta.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before a collaborator who is not the collaboration owner can set up the Lookback Windows task, the owner must first assign it to them. For more information, see Assign configuration tasks.
+
+<div id="open-the-lookback-windows-task" />
 
 ## Open the Lookback windows task
 
@@ -42,10 +48,14 @@ To open the Lookback windows task, follow these steps:
    * If the link is grayed out, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
 4. On the **Measurement Setting** page, click the **Lookback windows** task pane to open the **Lookback windows** dialog.
 
+   <div id="note" />
+
    > 📘 **Note**
    >
    > If the **Lookback windows** pane is grayed out, ask the collaboration owner to assign you the Lookback windows task.
 
+
+<div id="set-the-collaboration-lookback-window" />
 
 ## Set the collaboration lookback window
 
@@ -54,6 +64,8 @@ To set the collaboration lookback window, follow these steps:
 1. If you are setting up a <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">combined on-site and off-site campaign</Anchor> in the **Lookback Windows** dialog, expand the <Image alt="AppsFlyer.png" src="https://files.readme.io/2536fe45ebde303e110c7b90cb3b2a95fc28672a5fa095efff485cdebbd466df-38392816916369.png" width="2.61%" /> **CMN Attribution** pane. Otherwise, skip to the next step.
 2. In the **Click-through** or **View-through lookback window** sliders, drag the pointer to choose the window duration in days.
 3. Click **Save**.
+
+<div id="set-the-meta-ads-lookback-window" />
 
 ## Set the Meta Ads lookback window
 
@@ -64,6 +76,8 @@ If you are running an off-site campaign with Meta Ads, the Lookback windows task
    * **1 day**
    * **7 days**
    * **28 days**
+
+<div id="google-ads-lookback-window" />
 
 ## Google Ads lookback window
 

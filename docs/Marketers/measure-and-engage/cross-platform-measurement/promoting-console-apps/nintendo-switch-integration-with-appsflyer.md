@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Nintendo Switch game or app with AppsFlyer to receive attribution and event data for your Nintendo Switch campaigns.
 
+<div id="about-nintendo-switch-attribution" />
+
 ## About Nintendo Switch attribution
 
 Apps running on Nintendo Switch can integrate with AppsFlyer via S2S API to receive attribution data and performance measurements about which sources and campaigns drive app open and in-app events. Marketers rely on these insights to measure and optimize marketing activities.
+
+<div id="example-attribution-flow" />
 
 ### Example attribution flow
 
@@ -37,6 +41,8 @@ The following is an example flow that highlights the most important steps in a u
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can also have links to your Xbox, Microsoft store, and Steam page on your landing page.
 3. App page: This is the URL to your Nintendo Switch app page that hosts your app for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -178,6 +184,8 @@ The following table lists the tasks required to integrate your Nintendo Switch a
 | Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor> using the upload file by email method. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

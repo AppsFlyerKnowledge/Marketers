@@ -32,6 +32,8 @@ x-zendesk:
 
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## Ad revenue attribution
 
 * Ads display in the app on banners, offer walls, interstitials, etc., and create ad revenue.
@@ -61,6 +63,8 @@ Data accuracy and freshness depend on the ad revenue attribution integration typ
 
 </Accordion>
 
+<div id="implementation" />
+
 ## Implementation
 
 The following sections describe the available types of ad revenue attribution, as well as the workflows and steps required for implementation and maintenance.
@@ -78,6 +82,8 @@ The following sections describe the available types of ad revenue attribution, a
 3. Select an ad revenue partner and click **Next**.
 
    ![ad revenue 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -132,6 +138,8 @@ When an app uses two <Anchor target="_blank" href="/marketers/docs/appsflyer-kno
   1. In AppsFlyer, from the side menu, select **Settings** > **Revenue Settings** > **Ad revenue**.
   2. In **General Settings**, check the box **Deduplicate ad revenue when two mediation partners cross-reference each other**. **Note**: Don't check the box if the 2 mediation platforms mediate different ad formats. For example, when platform 1 shows Banner and Interstitial, and platform 2 shows AppOpen and Native ads.
 
+     <div id="note-1" />
+
      > 📘 **Note**
      >
      > The setting is always ignored for:
@@ -159,12 +167,16 @@ Aggregate granularity for ad revenue works as follows:
   * **af\_app\_opened** event, which is available by default.
 * Don't report ad revenue amounts in in-app events in parallel to an ad revenue integration. Doing so causes ad revenue to be duplicated in the dashboard because AppsFlyer gets the revenue data from the monetization network through integration.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### Aggregate ad revenue using events
 
 | Event method | How implemented | Considerations |
 | --- | --- | --- |
 | Unique monetization in-app event | <ul><li>An in-app event is set at the time of ad display</li><li>This provides a distinct count of user actions, which enables superior eRPA calculations</li><li>This can be further refined by having a different in-app event for each monetization network. Doing so enables you to break the revenue down by monetization network<br />See the table that follows for a full discussion.</li></ul> | <ul><li>Requires the developer to modify the app</li><li>Revenue can be broken down by monetization network in the Dashboard</li></ul> |
 | af\_app\_opened event | <ul><li>The af\_app\_opened event is sent by the Appsflyer SDK by default</li><li>It is triggered by each user session</li></ul> | <ul><li>No app modification required</li><li>Quick to implement</li><li>eRPA values are significantly distorted unless you show only one ad per session</li><li>No breakdown of revenue by monetization network</li><li>The event pertains to all users who open the app, and you have no indication of the user's willingness to watch ads</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### Comparison of in-app event methods
 
@@ -195,11 +207,15 @@ To verify that the integration is operational:
 | Missing configuration details | One or more of the credential fields is incomplete | Retrieve the credentials in the ad revenue partner's dashboard or reach out to the partner and request the credentials. |
 | No events found | No valid ad revenue events were received from the SDK recently. | Confirm the SDK integration is complete and that test events are being sent. You can verify event delivery in real time using the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live Events viewer</Anchor>. |
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > For SDK integrations, you can also verify that ad revenue events are recorded in real time using the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live Events viewer</Anchor>. Note that it only displays events sent from registered test devices.
 
 </Accordion>
+
+<div id="ad-revenue-data" />
 
 ## Ad revenue data
 
@@ -222,6 +238,8 @@ Ad revenue attribution is available as follows:
   * Dashboard: Activity
   * Ad revenue raw data
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Overview dashboard - aggregated performance report**
 
 ![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
@@ -240,6 +258,8 @@ In the Activity dashboard:
 
 * Values, including revenue, are activity date-based. See <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV vs. activity data</Anchor>.
 * The **Average Actions per User** indicates users' tendency to engage with the ads presented in the app.
+
+<div id="examples" />
 
 #### Examples
 
@@ -315,6 +335,8 @@ The fields in ad revenue reports are populated:
   * **Context:** Fields having a similar meaning in other raw data reports. For example, event name, event value, and currency.
 * As a result of attributing the event to the media source that brought the user. Meaning these fields are copied from the conversion event that brought the user. For example, media source and a campaign. These fields are not listed in the table that follows.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### Fields populated by ad revenue
 
 | api\_name | Field name | Field type | Description |
@@ -331,6 +353,8 @@ The fields in ad revenue reports are populated:
 | <span id="impressions"></span>impressions | Impressions | Specific | Number of times that the user saw the ad |
 | <span id="mediation_network"></span>mediation\_network | Mediation Network | Specific | Mediation platform reporting the event to AppsFlyer |
 | <span id="customer_user_id"></span>customer\_user\_id | Customer User ID | Context | Populated if available from the advertiser:<ul><li>For impression-level (SDK) integrations: Collected via `setCustomerUserId()` in the AppsFlyer SDK.</li><li>For device-level (API) integrations: Collected from the mediation API (user ID or publisher user ID set via the mediation SDK).</li><li>Not supported by Odeeo and Appodeal.</li></ul> |
+
+<div id="fields-by-network" />
 
 #### Fields by network
 
@@ -384,6 +408,8 @@ For **Raw Data Export and Pull API**, regardless of integration type or ROI360 p
 * <Anchor target="_blank" href="/marketers/docs/revenue-etl-reports">Revenue ETL reports</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

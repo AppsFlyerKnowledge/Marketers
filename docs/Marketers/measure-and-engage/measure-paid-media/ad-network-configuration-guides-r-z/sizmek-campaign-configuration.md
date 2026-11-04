@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Sizmek, an AppsFlyer ad network integrated partner, is an independent buy-side advertising platform and ad server. In addition to click-based mobile attribution, Sizmek offers view-through attribution, which can be recorded with AppsFlyer.
 
+<div id="setting-up-sizmek" />
+
 ## Setting up Sizmek
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,6 +44,8 @@ Sizmek's configuration window includes 3 active tabs: Integration, Attribution l
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -51,14 +55,20 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit**, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Sizmek prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to Sizmek.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -70,6 +80,8 @@ Sizmek connects with AppsFlyer via a unique Postback Tag ID. If you don't alread
 
 Toggle this to ON if you want to attribute view-through installs from Sizmek. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Sizmek following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
@@ -77,9 +89,13 @@ Send automatic postbacks to Sizmek following user installs and re-engagements. U
 Select **Only events attributed to this partner** for events coming only from users attributed to Sizmek.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Sizmek.
 
+<div id="in-app-events-settings" />
+
 ### In-app events settings
 
 In this section you can map your AppsFlyer events with Sizmek via postbacks.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -133,6 +149,8 @@ Ad revenue integration is not supported for Sizmek
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant Sizmek, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Sizmek, the permissions tab is active and you can grant control to Sizmek.
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

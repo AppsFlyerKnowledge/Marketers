@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Chartboost, an AppsFlyer ad network integrated partner, is one of the largest mobile games-only ad platforms to increase revenue. In addition to click-based mobile attribution, Chartboost also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Integrating the Chartboost SDK is only necessary if you act as a Chartboost publisher and wish to attribute ad revenue. Otherwise, the AppsFlyer SDK is all that is required. For more information, see this article's [ad revenue section](/docs/chartboost-campaign-configuration#ad-revenue-tab).
+
+<div id="setting-up-chartboost" />
 
 ## Setting up Chartboost
 
@@ -48,9 +52,13 @@ x-zendesk:
 
 The ***Integration Tab*** is divided into different sections as described below.
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -62,6 +70,8 @@ Chartboost requires connecting with AppsFlyer via a unique app ID and a signatur
 
 Toggle ON if you want to attribute view-through installs from Chartboost. The view-through lookback slider is available in the ***Attribution link*** tab.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Chartboost following installs and rejected installs. Use this section to define the **source of the users** for the postbacks.
@@ -71,6 +81,8 @@ Select ***All sources, including organi*c** to have your entire user base availa
 
 Rejected installs can be sent for **This partner only**.
 
+<div id="launch-postbacks" />
+
 #### Launch postbacks
 
 As of July 1, 2020, we no longer send launch postbacks to Chartboost. If your integration was set up before this date, there may be changes to your configurations. The following table explains possible changes and your actions, where applicable:
@@ -78,6 +90,8 @@ As of July 1, 2020, we no longer send launch postbacks to Chartboost. If your in
 | Your configuration | Will be updated to | Your next actions |
 | --- | --- | --- |
 | Send to Chartboost **all launches** (from all media sources, including organic) | Send to Chartboost:<ul><li>**all installs** (from all media sources, including organic)</li><li>**all** `af_app_opened` **events** (from all media sources, including organic)</li></ul> | No further actions required. This update has no actual impact on the configuration. |
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -108,6 +122,8 @@ In this tab, you can create the attribution links you want to send to Chartboost
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -127,6 +143,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Chartboost.
@@ -135,9 +153,13 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Chartboost to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -148,6 +170,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 **Attribution link parameter:** af\_viewthrough\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -179,6 +203,8 @@ This section is relevant if you are acting as a publisher, displaying ads of the
 
 * Follow <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">these integration instructions</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > As a Chartboost publisher, there are two additional requirements besides AppsFlyer configuration:
@@ -208,6 +234,8 @@ Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-a
 
 </Accordion>
 
+<div id="discrepancies-between-chartboost-and-appsflyer" />
+
 ## Discrepancies between Chartboost and AppsFlyer
 
 Sometimes there are discrepancies between the Chartboost dashboard and AppsFlyer dashboard.
@@ -218,6 +246,8 @@ Advertisers should be aware of the following reasons:
 | --- | --- | --- |
 | **Attribution Window** | Chartboost attribution window is 21 days | AppsFlyer lookback window is 7 days<br /><br />**\*\* This is the main cause of discrepancies between AppsFlyer and Chartboost** |
 | **Multi-Channel Source Attribution** | Chartboost attribution works as specified above regardless of other sources. | AppsFlyer uses the last click attribution (For more information about AppsFlyer attribution, click <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">here</Anchor>) |
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

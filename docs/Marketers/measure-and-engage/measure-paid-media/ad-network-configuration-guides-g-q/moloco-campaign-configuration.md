@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1" width="149px" />
 
+<div id="setting-up-moloco" />
+
 ## Setting up MOLOCO
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,6 +46,8 @@ MOLOCO's configuration window includes 3 active tabs: Integration, Attribution l
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -55,14 +59,20 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the Integration tab parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an all-install network, MOLOCO prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to MOLOCO.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -70,12 +80,16 @@ For more details about partner activation, please click <Anchor target="_blank" 
 
 Toggle this to ON if you want to attribute view-through installs from MOLOCO. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to MOLOCO following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to MOLOCO.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to MOLOCO.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -94,6 +108,8 @@ In this section you can map your AppsFlyer events with MOLOCO via postbacks.
 | **mapped to partner event** | The unique name or ID of each event, as defined on the partner's side. Possible mapping configurations are:<ul><li>**Text field:** Get the corresponding event ID from the partner.</li><li>**Drop-down box:** Select the most suitable pre-defined AppsFlyer event.</li><li>**As is**: Send the events as they are, without name mapping.</li></ul> |
 | **for users from** | Select the sending option for the event:<ul><li>**This partner only**: send postbacks only when this event is attributed to this partner.</li><li>**All media sources, including organic**: send postbacks for events attributed to any partner, as well as organic events. According to Unity Ads, this option is recommended.</li></ul> |
 | **including** | <ul><li>**No data (default)**: send only the event itself without the event value.</li><li>**Values and revenue**: send all the event parameters, **including** the revenue value (if exists in the event). According to Unity Ads, this option is recommended.</li><li>**Values without revenue**: send all the parameters **excluding** the revenue value.</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -141,6 +157,8 @@ Ad Revenue integration is not available for this partner.
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant MOLOCO, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for MOLOCO, the permissions tab is active and you can grant control to MOLOCO.
+
+<div id="-ad-network-permissions" />
 
 #### ![MOLOCO_permissions.png](https://files.readme.io/f443306f1b56197709308c0a33e436dc26adc7a0e80e6c2887edc63a5697b6d4-360002616197.png) Ad Network Permissions
 

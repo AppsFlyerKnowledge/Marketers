@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Configure additional user identifiers for sending custom audiences to advertising partners.
 
+<div id="about-additional-identifiers" />
+
 ## About additional identifiers
 
 AppsFlyer Audiences automatically supports the following device identifiers for sending custom audiences to <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">advertising partners</Anchor>:
@@ -38,6 +40,8 @@ Some advertising partners also support custom audience matching based on additio
 
 Such additional identifiers can include phone numbers and emails, but can **only be used if encrypted with SHA256 hashing**.  Your use of such additional identifiers is subject to the [Additional Identifiers Terms of Use](https://support.appsflyer.com/hc/article_attachments/16567368205201).
 
+<div id="next-steps" />
+
 ## Next steps
 
 1. Select the additional identifiers you want to use (if any) from the [table of available identifiers](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting). Note that not all advertising partners support all identifiers.
@@ -48,6 +52,8 @@ Such additional identifiers can include phone numbers and emails, but can **only
    * Set your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor>
    * Select the identifiers to be uploaded in each of your <Anchor target="_blank" href="/marketers/docs/audiences-guide#manage-connections">partner connections</Anchor>
 
+<div id="available-identifiers" />
+
 ## Available identifiers
 
 You can elect to configure one or more identifiers, shown in the table below.
@@ -57,6 +63,8 @@ You can elect to configure one or more identifiers, shown in the table below.
 <table><tbody><tr><td>Identifier</td><td>Parameter name</td><td>Format</td><td>Example value (before hashing)</td></tr><tr><td>Email address</td><td>email_sha256</td><td><p><strong>SDK v7.0.0 and earlier:</strong></p><ul><li>Lowercase</li><li>No white spaces</li><li>Client-hashed (SHA256) before passing in</li></ul><p><strong>SDK v7.0.1 and later:</strong> Plain text. The SDK normalizes and hashes it automatically.</p></td><td>name@domain.com</td></tr><tr><td>Phone number<br/>(see note below)</td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>442070313000</td></tr><tr><td><p>Phone number E164</p><p>(see note below)</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 and later:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 and earlier (or S2S):</strong></p><ul><li>E164 phone number</li><li>SHA256 hashed</li></ul><p><strong>v7.0.1 and later:</strong> Plain text. The SDK concatenates the country code and number, normalizes, and hashes it automatically.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>Note</strong></p><p>Different advertising partners support different phone number formats. So, if you choose to use phone number, configure both identifiers: <em>Phone number</em> and <em>Phone number E164.</em></p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="sdk-reference-and-code-samples" />
 
 ## SDK reference and code samples
 
@@ -70,6 +78,8 @@ When sending identifiers for Audiences via the SDK:
   * SDK v7.0.1 and later: use `setUserPhone` (recommended).
   * SDK v7.0.0 and earlier: use `setAdditionalData` with custom data.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Keep the following version-dependent changes in mind:
@@ -77,9 +87,13 @@ When sending identifiers for Audiences via the SDK:
 > * **Email:** As of SDK v7.0.1, setUserEmails (iOS/Android) has been fully removed and replaced by setUserEmail. This is a breaking change, not a deprecation. Apps on v7.0.0 and earlier must keep using setUserEmails. Apps on v7.0.1 and later must switch to setUserEmail. Check your integrated SDK version before choosing which sample to follow.
 > * **Phone:** As of SDK v7.0.1, a dedicated setUserPhone API is available. It's the recommended way to send phone number identifiers for Advanced Matching. This isn't a breaking change: setAdditionalData still works. For new integrations, and for customers who upgrade to v7.0.1 and later, we recommend migrating to setUserPhone. Apps on v7.0.0 and earlier must continue using setAdditionalData, because setUserPhone doesn't exist in those SDK versions.
 
+<div id="ios-sdk-configuration" />
+
 ## iOS SDK configuration
 
 To set hashed *Phone number* as an additional user identifier:
+
+<div id="sdk-v700-and-earlier--setadditionaldata" />
 
 ### **SDK v7.0.0 and earlier — setAdditionalData**
 
@@ -113,11 +127,17 @@ AppsFlyerLib.shared().customData = customData
 </Tab>
 </Tabs>
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > You must pre-hash both values (SHA-256) before passing them in.
 
+<div id="sdk-v701-and-later--setuserphone-recommended" />
+
 ### **SDK v7.0.1 and later — setUserPhone (recommended)**
+
+<div id="method-signature" />
 
 #### Method signature
 
@@ -125,6 +145,8 @@ AppsFlyerLib.shared().customData = customData
 - (void)setUserPhone:(NSString *_Nonnull)countryCode
 phoneNumber:(NSString *_Nonnull)phoneNumber;
 ```
+
+<div id="usage-example" />
 
 #### Usage example
 
@@ -146,13 +168,19 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 </Tab>
 </Tabs>
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Pass the country dialing code and local number as plain text. Symbols and spaces are allowed in the local number. The SDK concatenates, normalizes, and hashes both values locally (SHA-256). Don't pre-hash.
 
 To set hashed *Email address* as an additional user identifier:
 
+<div id="sdk-v700-and-earlier" />
+
 ### **SDK v7.0.0 and earlier**
+
+<div id="method-signature-1" />
 
 #### Method signature
 
@@ -160,6 +188,8 @@ To set hashed *Email address* as an additional user identifier:
 - (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails
 withCryptType:(EmailCryptType)type;
 ```
+
+<div id="usage-example-1" />
 
 #### Usage example
 
@@ -183,13 +213,19 @@ AppsFlyerLib.shared().setUserEmails(emails, with: EmailCryptTypeSHA256)
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later" />
+
 ### **SDK v7.0.1 and later**
+
+<div id="method-signature-2" />
 
 #### Method signature
 
 ```objectivec
 - (void)setUserEmail:(NSString *_Nonnull)email;
 ```
+
+<div id="usage-example-2" />
 
 #### Usage example
 
@@ -211,13 +247,19 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
 </Tab>
 </Tabs>
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Pass the plain-text email. The SDK normalizes and hashes it locally (SHA-256). Don't pre-hash. Only a single email is accepted per call: calling setUserEmail again overrides the previously set value rather than adding to it.
 
+<div id="android-sdk-configuration" />
+
 ## Android SDK configuration
 
 To set hashed *Phone number* as an additional user identifier:
+
+<div id="sdk-v700-and-earlier--setadditionaldata-1" />
 
 ### **SDK v7.0.0 and earlier — setAdditionalData**
 
@@ -249,17 +291,25 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
 </Tab>
 </Tabs>
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > You must pre-hash both values (SHA-256) before passing them in.
 
+<div id="sdk-v701-and-later--setuserphone-recommended-1" />
+
 ### **SDK v7.0.1 and later — setUserPhone (recommended)**
+
+<div id="method-signature-3" />
 
 #### Method signature
 
 ```java
 public abstract void setUserPhone(String countryCode, String phoneNumber);
 ```
+
+<div id="usage-example-3" />
 
 #### Usage example
 
@@ -281,13 +331,19 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
 </Tab>
 </Tabs>
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > Pass the country dialing code and local number as plain text. The SDK concatenates, normalizes, and hashes both values locally (SHA-256). Don't pre-hash.
 
 To set hashed *Email address* as an additional user identifier:
 
+<div id="sdk-v700-and-earlier-1" />
+
 ### **SDK v7.0.0 and earlier**
+
+<div id="method-signature-4" />
 
 #### Method signature
 
@@ -297,6 +353,8 @@ public abstract void setUserEmails(
   String... emails
 );
 ```
+
+<div id="usage-example-4" />
 
 #### Usage example
 
@@ -326,7 +384,11 @@ AppsFlyerLib.getInstance().setUserEmails(
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later-1" />
+
 ### **SDK v7.0.1 and later**
+
+<div id="method-signature-5" />
 
 #### Method signature
 
@@ -334,15 +396,21 @@ AppsFlyerLib.getInstance().setUserEmails(
 public abstract void setUserEmail(String email);
 ```
 
+<div id="usage-example-5" />
+
 #### Usage example
 
 ```java
 AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 ```
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > Only a single email is accepted per call in v7.0.1 and later. Multiple emails aren't supported: calling setUserEmail again overrides the previously set value rather than adding to it.
+
+<div id="s2s-reference-and-code-samples" />
 
 ## S2S reference and code samples
 
@@ -382,6 +450,8 @@ Populated example for hashed *Phone number* and hashed *Email address*:
 ```
 
 </Accordion>
+
+<div id="note-7" />
 
 > 📘 **Note**
 >

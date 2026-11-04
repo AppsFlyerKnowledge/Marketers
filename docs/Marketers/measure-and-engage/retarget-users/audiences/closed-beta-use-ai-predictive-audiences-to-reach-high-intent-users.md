@@ -28,13 +28,19 @@ x-zendesk:
 
 <Embed title="[Closed beta] Use AI Predictive Audiences to reach high-intent users" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
+<div id="about-predictive-audiences" />
+
 ## About Predictive Audiences
 
 Predictive Audiences, part of AppsFlyer <Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor>, helps you create AI-powered audiences of users most likely to take a key action. Use it to predict who is most likely to purchase within the next 7 days, so you can focus your campaigns on high-intent users and improve campaign efficiency.
 
 You can adjust the likelihood range to create a narrower audience of higher-intent users or a broader audience with greater reach, then connect the audience to your partners for activation. Once created, the audience refreshes daily and is automatically and continuously sent to your connected partners.
 
+<div id="create-a-predictive-audience" />
+
 ## Create a predictive audience
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
@@ -82,6 +88,8 @@ You can select a suggested preset or drag the chart markers to customize the ran
 
    The **Estimated audience size** updates in real time based on your selections.
 
+<div id="compare-audiences-optional" />
+
 #### Compare audiences (optional):
 
 Compare Audiences is an optional feature that lets you compare your predictive audience with one or more existing audiences. It allows you to compare performance across key indicators (KPIs), such as return on ad spend (ROAS) and conversion rate. You can select any audience to compare; however, performance data is currently available only for campaigns connected to Facebook, TikTok, Google, or Snap.
@@ -107,6 +115,8 @@ Your first predictive audience will be ready within 24 hours and automatically a
 After creation, your new predictive audience will appear in the **Audiences** table.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

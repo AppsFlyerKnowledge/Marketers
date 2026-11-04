@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **At a glance:** mParticle, an AppsFlyer integrated partner, collects customer data and sends it to different analytics, marketing, and data warehousing platforms.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="event-integrations" />
 
 ## Event integrations
 
@@ -37,6 +41,8 @@ The purpose of this document is to provide you with details of how to activate e
 1. mParticle customers must integrate the AppsFlyer kit into their application. The mParticle SDK will initialize AppsFlyer’s SDK and will also forward all required lifecycle events to the AppsFlyer SDK.
 
 2. Refer to the <Anchor target="_blank" href="https://github.com/mParticle/mParticle-apple-SDK">iOS</Anchor> and <Anchor target="_blank" href="https://github.com/mParticle/mparticle-android-sdk">Android</Anchor> SDK GitHub repositories for details on how to configure the AppsFlyer kit with the mParticle SDK into your app.
+
+<div id="configure-the-appsflyer-event-integration" />
 
 ### Configure the AppsFlyer event integration
 
@@ -86,6 +92,8 @@ AppsFlyer is now shown as a Connected Output Further options, such as Custom Map
 
 ![AppsFlyer shown as a Connected Output](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
 
+<div id="feed-integrations" />
+
 ## Feed integrations
 
 This section helps you understand how to connect a data feed from AppsFlyer to mParticle.
@@ -118,6 +126,8 @@ You are now taken to the Setup screen, where you can continue the configuration 
 
 ![AppsFlyer dashboard authentication setup](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
 
+<div id="deferred-deep-linking" />
+
 ## Deferred deep linking
 
 AppsFlyer allows you to access the user attribution data in real-time directly at the SDK level. It enables you to customize the landing page a user sees on the very first app open after a fresh app install. This is commonly referred to as “deferred” deep linking.
@@ -129,6 +139,8 @@ AppsFlyer conversion data contains a parameter called `is_First_Launch`. The val
 ```
 af_dp → $deeplink_path
 ```
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -201,6 +213,8 @@ For iOS: Perform this in UserDefaults: <Anchor target="_blank" href="https://dev
 </Tab>
 </Tabs>
 
+<div id="appsflyermparticle-use-cases" />
+
 ### AppsFlyer/mparticle use cases
 
 | Use Case | Platform | AppsFlyer SDK Method | mParticle-AF Kit Method |
@@ -211,6 +225,8 @@ For iOS: Perform this in UserDefaults: <Anchor target="_blank" href="https://dev
 | Deferred Deep Linking | Android | onConversionDataSuccess | checkForDeepLink |
 | Android App Links | Android | &lt;intent-filter android:autoVerify="true"> | continueUserActivity |
 | App Open | Android | onAppOpenAttribution | checkForDeepLink |
+
+<div id="handling-user-flags" />
 
 ### Handling user flags
 
@@ -231,6 +247,8 @@ AppsFlyer also enables you to serve personalized content or send existing users 
 AppsFlyer uses iOS ***UserDefaults*** and Android ***Shared Preferences*** to indicate whether the user is opening the app for the first time and should be redirected to the appropriate page, or if the app has already been opened and the user has already been directed to that page. To do this, the `alreadyLoggedAppsflyerConversionData` value is read and written to UserDefaults/ SharedPreferences, so that the value ***af\_dp*** is not looked at on the first launch.
 
 For more details about serving personalized content on deep linking <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">click here</Anchor>.
+
+<div id="enabling-appsflyer-uninstall-measurement-in-mparticle" />
 
 ## Enabling AppsFlyer uninstall measurement in mParticle
 

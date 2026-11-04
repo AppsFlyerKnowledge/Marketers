@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
+<div id="setting-up-ironsource" />
+
 ## Setting up ironSource
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -40,11 +42,15 @@ x-zendesk:
    **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an all-installs network, ironSource prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to ironSource.
 
 ironSource's configuration window includes 5 tabs: Integration, Attribution link, Cost, Ad Revenue, and Permissions. Click on the items below to read about the tabs setup.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -55,28 +61,40 @@ ironSource's configuration window includes 5 tabs: Integration, Attribution link
 
 <Accordion title="Integration tab">
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 On the **first visit** here, you will need to turn on the **Activate Partner** toggle to enable setup of the integration tab parameters. The toggle must stay on for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Advanced Privacy
 
 For iOS apps only, when **Advanced Privacy (for iOS 14.5+ and later)** is turned on, you can <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">control what data is shared</Anchor> with ironSource via postbacks and reports.
+
+<div id="transaction-id" />
 
 ### Transaction ID
 
 For iOS apps only, when **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with ironSource. By doing so, ironSource could decode your SKAdNetwork Conversion Values.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > For SKAN interoperation with AppsFlyer, contact your ironSource account manager to <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">enable sending SKAN data to MMPs</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
 **Advertiser ID**
 
 ironSource connects with AppsFlyer via a unique advertiser ID (6-digit number) and a password. If you don't already have the advertiser ID and password, you must obtain them from ironSource to continue with the integration. Otherwise, copy the ID and the password and paste them into the respective fields.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Install and Re-engagement attribution
 
@@ -92,6 +110,8 @@ These two toggles enable attributing to ironSource new installs and re-attributi
 1. Turn on **Re-engagement view-through attribution**.
 2. Configure the length of the **view-through** lookback window in the [Attribution link tab](/docs/ironsource-campaign-configuration#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to ironSource following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
@@ -99,9 +119,13 @@ Send automatic postbacks to ironSource following user installs and re-engagement
 Select **Only events attributed to this partner** for events coming only from users attributed to ironSource.  
 Select **Events attributed to any partner, or organic** to have your entire user base available to be reported to ironSource.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > As an all-installs network, ironSource prefers to receive postbacks for all new installs of your app from any source, including organic. To do so, select **Events attributed to any partner, or organic** to send all install postbacks to ironSource.
+
+<div id="in-app-event-postbacks" />
 
 ### In-app event postbacks
 
@@ -123,6 +147,8 @@ Configure mapping of in-app events with ironSource events, sent via postbacks:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -185,6 +211,8 @@ In this tab, you can select the permissions to grant ironSource, whether the par
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 * **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
@@ -196,6 +224,8 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

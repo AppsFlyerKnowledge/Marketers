@@ -27,9 +27,13 @@ In certain instances, advertisers can see fewer installs on AppsFlyer dashboard 
 
 Advertisers should be aware of the following causes and consider taking the necessary actions.
 
+<div id="source-of-discrepancies-and-solutions" />
+
 ## Source of discrepancies and solutions
 
 Set out below are a number of causes of discrepancies and possible solutions.
+
+<div id="different-lookback-windows" />
 
 ### Different lookback windows
 
@@ -40,18 +44,26 @@ By default, Snapchat Ads Manager and AppsFlyer have different attribution window
 | Click Attribution Lookback Window | 28 days | 7 days by default (can be configured to be 1-30 days) |
 | View-Through Attribution Lookback Window | 1 day | 1 day by default (can be configured to be 1-48 hours) |
 
+<div id="solutions" />
+
 > 👍 **Solutions**
 >
 > 1. Configure the attribution window in AppsFlyer to match Snapchat’s default values.
 > 2. Advertisers can select attribution windows in the Ads Manager dashboard to match what they have set as default in their attribution partner (MMP) dashboard. Contact your Snapchat CSM to have your account allowlisted to activate this feature.
 
+<div id="time-zone-differences" />
+
 ### Time zone differences
 
 By default, Ads Manager uses PST timezone whereas AppsFlyer uses UTC +0 by default. As a result, for example, Snapchat might attribute an install to Friday while AppsFlyer attributes it to Saturday.
 
+<div id="solution" />
+
 > 👍 **Solution**
 >
 > Configure PST as the timezone for each app in AppsFlyer. Click <Anchor target="_blank" href="/marketers/docs/changing-app-time-zone-settings">here</Anchor> for details of how to change the time zone for existing apps.
+
+<div id="multi-channel-source-attribution" />
 
 ### Multi-channel source attribution
 
@@ -69,6 +81,8 @@ AppsFlyer:
 
 This can lead to discrepancies as high as 40% between AppsFlyer and Snapchat Ads Manager.
 
+<div id="solution-1" />
+
 > 👍 **Solution**
 >
 > Snapchat is just one mobile application, whereas other platforms own multiple mobile applications or mobile ad networks/exchanges. Due to their additional reach across multiple properties, it is possible that competitors might win the last touch, yet Snapchat is still driving significant value.
@@ -77,9 +91,13 @@ This can lead to discrepancies as high as 40% between AppsFlyer and Snapchat Ads
 >
 > To manage the discrepancy, advertisers should keep records of the approximate percentage of total conversions for which Snapchat was a contributor but not the last contributor and as such create a new eCPI goal for Snapchat based on this approximate delta.
 
+<div id="fewer-installs-in-raw-data" />
+
 ### Fewer installs in raw data
 
 In certain instances, due to raw data restrictions from Snapchat, installs via <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary?query=glossary#aggregated-advancedprivacy">Aggregated Advanced Privacy</Anchor> won't show in raw data reports. This means that advertisers may see on the AppsFlyer platform fewer installs in raw data than in aggregated data.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **At a glance:** The Conversions cross-platform report shows the complete user journey behind each cross-platform conversion, including the full assisting engagement chain and revenue context, not just the last touchpoint.
 
+<div id="about-the-report" />
+
 ## About the report
 
 The Conversions cross-platform report is a raw data report that provides user-level conversion records, linked across platforms using your <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/set-customer-user-id">Customer User ID (CUID)</Anchor>. This lets you analyze the complete user journey that led to a conversion, not only the last touchpoint.
 
 For more information about the user-based attribution flow and configuration, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
+
+<div id="report-fields" />
 
 ## Report fields
 
@@ -41,15 +45,21 @@ The report contains three groups of fields:
 * **Assist fields (1, 2, and 3):** for each of the three assist positions, the corresponding media source, campaign, ad set, ad, agency, channel, engagement type and subtype, site ID, and event time. These fields use the `<field>__assist_1`, `<field>__assist_2`, and `<field>__assist_3` naming convention.
 * **Enrichment fields:** support user-level lifetime value (LTV) and event-level analysis. For example, join these fields with a user's conversion records to build a per-user LTV view across platforms.
 
+<div id="report-data-freshness" />
+
 ## Report data freshness
 
 The report runs a batch every 4 hours. Each batch run processes events that entered the database during the previous 4-hour window. For example, the 8:00 AM batch run processes events that entered the database between 3:00 AM and 7:00 AM.
 
 The batch process allocates events to their corresponding hourly versions. For example, events that entered the database between 3:00 and 4:00 AM appear in the 3:00 AM version.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > There is typically a short delay between an event's actual occurrence and its entry into the database. The report uses the database entry time to keep hourly grouping accurate and consistent.
+
+<div id="example-the-8-am-batch-run" />
 
 ### Example: The 8 AM batch run
 
@@ -65,6 +75,8 @@ A few notes on this example:
 * The batch does not process events from the last hour before the run, to leave enough time to enrich events with their related CUID. In the example above, the 8:00 AM batch processes events that entered the database between 3:00 and 7:00. Events that entered the database between 7:00 and 8:00 are not processed in that run.
 * The report becomes available an hour after the batch run, because an internal process updates the batch during that hour. In the example above, the 8:00 AM batch is available at 9:00 AM.
 
+<div id="subscribe-to-the-report" />
+
 ## Subscribe to the report
 
 To subscribe to the report:
@@ -73,6 +85,8 @@ To subscribe to the report:
 2. In the **Data Locker content** pane, scroll down to the **Advanced reports** section.
 3. Select **Conversions cross-platform**.
 
+<div id="access-the-report-data-in-your-cloud-bucket" />
+
 ## Access the report data in your cloud bucket
 
 The path to the report consists of the following folder hierarchy:
@@ -80,6 +94,8 @@ The path to the report consists of the following folder hierarchy:
 ```text
 <bucket-name>/<DataLocker connection name>/t=conversions_user_level_cross_platform/dt=<yyyy-mm-dd>/h=<hour>/
 ```
+
+<div id="business-intelligence-bi-developer-considerations" />
 
 ## Business intelligence (BI) developer considerations
 

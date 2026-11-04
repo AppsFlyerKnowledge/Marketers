@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** The Salesforce Data Cloud integration allows you to bring your first-party data to the AppsFlyer Data Collaboration Platform with a click of a button.
 
+<div id="before-you-begin" />
+
 > 🚧 **Before you begin**
 >
 > Before integrating Salesforce Data Cloud, you must **install the AppsFlyer app extension** from the Salesforce AppExchange. This must be performed by a Salesforce admin user with permission to download AppExchange packages.
@@ -35,13 +37,19 @@ x-zendesk:
 >
 > Upon successful installation, the process is complete and there's no need for any additional package configuration.
 
+<div id="set-up-the-integration" />
+
 ## Set up the integration
 
 The integration involves creating a Salesforce Data Cloud connection and then creating sources. You only need one connection to authenticate your Salesforce account. Using this connection, you can create multiple sources based on Salesforce tables.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If you've already set up a connection with Salesforce Data Cloud, you won't be able to create another one.
+
+<div id="create-a-salesforce-data-cloud-connection" />
 
 ### Create a Salesforce Data Cloud connection
 
@@ -56,6 +64,8 @@ The integration involves creating a Salesforce Data Cloud connection and then cr
 6. After successful authentication, you're returned to the **New connection** dialog with an indication that you have an active connection with Salesforce. You can now proceed and create a source.
 7. Click **Create source** and follow the [instructions below](#create-a-salesforce-data-cloud-source) to create a Salesforce Data Cloud source.
 
+<div id="create-a-salesforce-data-cloud-source" />
+
 ### Create a Salesforce Data Cloud source
 
 After authenticating your Salesforce account and setting up the connection with Salesforce Data Cloud, the next step is to create sources. These sources provide AppsFlyer with the necessary data each time you perform updates.
@@ -64,6 +74,8 @@ Access the **Sources** tab using the following methods:
 
 * After completing the previous step, click **Create source**.
 * Navigate from the AppsFlyer side menu to **Collaborate** > **Data Clean Room** > **+ New Source** showing at the top-right corner of the page.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

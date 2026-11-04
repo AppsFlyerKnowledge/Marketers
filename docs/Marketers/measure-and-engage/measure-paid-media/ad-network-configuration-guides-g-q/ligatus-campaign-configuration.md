@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
 
+<div id="setting-up-ligatus" />
+
 ## Setting up Ligatus
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,6 +44,8 @@ x-zendesk:
 
 Ligatus's configuration window includes 2 active tabs: Integration and Attribution link. Click on the items below to read about the tab setup.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners.
@@ -53,10 +57,14 @@ Ligatus's configuration window includes 2 active tabs: Integration and Attributi
 
 The Integration tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the Integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -73,6 +81,8 @@ Select **Only events attributed to this partner** for events coming only from u
 In this tab, you can create the attribution links you want to send to Ligatus for attributing Ligatus's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution link parameters
 
@@ -93,6 +103,8 @@ Adding parameters to the attribution link here enables you to perform thorough d
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Ligatus.
@@ -100,6 +112,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 

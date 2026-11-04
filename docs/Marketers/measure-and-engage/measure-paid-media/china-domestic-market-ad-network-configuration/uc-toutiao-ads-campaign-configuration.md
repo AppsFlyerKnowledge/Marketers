@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** UC Toutiao Ads, an AppsFlyer ad network integrated partner, is one of China's leading news aggregator apps.
 
+<div id="setting-up-uc-toutiao" />
+
 ## Setting up UC Toutiao
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,16 +46,22 @@ UC Toutiao's configuration window includes 2 active tabs: Integration and Attrib
 
 <Accordion title="Integration tab">
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default Postbacks
 
 By default, UC Toutiao receives postbacks only for new install events attributed to it.
 
 ![uc-toutiao-integration.png](https://files.readme.io/1ed78bd49d9a49d134f5c48655765ad205515752d88528a0a453bd3a091492c0-360002074869.png)
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -87,6 +95,8 @@ In this tab, you can create the attribution links you want to send to UC Toutiao
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -108,6 +118,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to UC Toutiao.
@@ -117,6 +129,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![uc-toutiao-click-through.png](https://files.readme.io/8128e80c365aa223105260a25aa99a61bd9eeccdf19d311804ed3e66b744ef39-360002074929.png)
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -147,6 +161,8 @@ Ad revenue integration is not available for this partner.
 No permission configuration is available for this partner.
 
 </Accordion>
+
+<div id="create-conversion-at-uc-toutiao-ads" />
 
 ## Create conversion at uc toutiao ads
 

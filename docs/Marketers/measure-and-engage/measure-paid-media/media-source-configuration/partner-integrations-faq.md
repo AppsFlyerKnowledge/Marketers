@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance**: Find answers to frequently asked questions about AppsFlyer Partner Integrations.
 
+<div id="use-partner-integrations" />
+
 ## Use Partner Integrations
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -55,6 +57,8 @@ The integration itself is done on the partner integration setup page, but to fin
 Learn <Anchor target="_blank" href="/marketers/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">how to integrate with new partners in Partner Integrations</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Troubleshooting
 

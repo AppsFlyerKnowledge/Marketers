@@ -31,6 +31,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## Impression-level ad revenue reporting by SDK API
 
 **Ad revenue reporting options**
@@ -45,6 +47,8 @@ Ad revenue is reported to AppsFlyer by either aggregate granularity (via API) or
 
 * Ad revenue impressions are collected and processed in AppsFlyer, but aren't counted against your in-apps package.
 * See the complete <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/gs-ad-revenue">list of SDK plugins that support the Ad Revenue SDK API</Anchor>.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### Reporting ad revenue using the SDK API
 
@@ -81,6 +85,8 @@ The **SDK API sends the revenue data to the platform at the time the ad displays
 * **The DataLocker impression level topic at 1 AM and every 1 hour thereafter,**
 * **The AppsFlyer Activity and Cohort reports at 5 AM UTC, and every 4 hours thereafter.**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## Implementing AppsFlyer ad revenue SDK API
 
 **To implement the AppsFlyer ad revenue SDK API**:
@@ -91,6 +97,8 @@ The **SDK API sends the revenue data to the platform at the time the ad displays
 4. Test your integration: once integrated, verify that ad revenue events are being received using either of the following methods:
    * In the <Anchor target="_blank" href="/marketers/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live Events viewer</Anchor>, check that ad revenue events appear in real time. Note that the Live Events viewer only displays events sent from registered test devices.
    * On the **Revenue Settings** page, edit the relevant ad revenue integration and click **Test Connection** to check whether any valid ad revenue events were recently processed. For more information, see <Anchor target="_blank" href="/marketers/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Connect to ad revenue integrated partners</Anchor>.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

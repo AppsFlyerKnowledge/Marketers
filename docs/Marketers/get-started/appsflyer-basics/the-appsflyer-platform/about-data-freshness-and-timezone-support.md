@@ -37,7 +37,11 @@ x-zendesk:
 
 ![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
 
+<div id="data-freshness-and-support-for-app-specific-time-zones" />
+
 ## Data freshness and support for app-specific time zones
+
+<div id="data-freshness" />
 
 ### Data freshness
 
@@ -47,6 +51,8 @@ Example: Data freshness rates on the Events dashboard:
 
 * Metric KPI: real-time
 * Average KPI: daily
+
+<div id="time-zones" />
 
 ### Time zones
 
@@ -61,6 +67,8 @@ Hemispheres
 * Eastern: Time zones designated as UTC+ are those located to the east of UTC.
 * Western: Time zones designated as UTC - are those located to the west of UTC.
 
+<div id="app-specific-time-zone" />
+
 #### App-specific time zone
 
 You can set an app-specific time zone. This means that the data is grouped into days using local time instead of UTC.
@@ -71,11 +79,15 @@ Example:
 
 **Los Angeles**: If the app-specific time zone is set to Los Angeles (UTC -8), then the day starts at 08:01 UTC and ends at 08:00 UTC the following day.
 
+<div id="time-zone-guidelines" />
+
 #### Time-zone guidelines
 
 * Align your app-specific time zone with the time zone you set for other attribution service providers such as Google and Meta ads.
 * If you have more than one app, the best practice is to set all apps to the same time zone. To view an app's time zone setting, go to **Settings** > **App Settings.**
 * Most reports and data extraction tools support app-specific time zones. This includes multi-app reports if all apps are set to the same app-specific time zone.
+
+<div id="daily-processing" />
 
 #### Daily processing
 
@@ -130,6 +142,8 @@ Some reports and pull-down lists are processed once a day, this is referred to a
 <Accordion title="Data freshness rates and time-zone support">
 
 <table><thead><tr><th>Related data</th><th>How presented</th><th>Data freshness rate<br/>(See the preceding section for the key to the rates)</th><th>Data displays using app-specific time zone</th></tr></thead><tbody><tr><td>Installs</td><td>KPI</td><td><p>Continuous</p><p>Exceptions to note:</p><ul><li>Protect360<ul><li>Updated daily at 16:00 UTC</li></ul></li></ul></td><td><span>✓</span></td></tr><tr><td>Sessions, clicks, impressions, loyal users</td><td>KPI</td><td><ul><li>Attribution links: Continuous</li><li>SRNs: Intraday</li></ul></td><td><span>✓</span></td></tr><tr><td>Revenue in-app events</td><td>KPI</td><td>Continuous</td><td><span>✓</span></td></tr><tr><td>Ad revenue</td><td>KPI</td><td>Ad revenue</td><td><span>✓</span></td></tr><tr><td>Ad spend (cost)</td><td>KPI</td><td><ul><li>Attribution link: Continuous (maximum up to 2 hours after click)</li><li>API: Intraday</li><li>Ad Spend Ingestion: Up to 4 hours after ingestion</li></ul></td><td><span>✓</span></td></tr><tr><td>Uninstalls</td><td>KPI</td><td>Daily. AppsFlyer pings app stores every 24 hours. The event time of the uninstall represents the time AppsFlyer pinged the silent push notification and discovered the app was uninstalled. This is not the actual time of the uninstall.</td><td><span><strong>x</strong></span></td></tr><tr><td>In-app events in the interface</td><td>Pull-down list</td><td><p>In-app event names that display in pull-down lists update Daily.</p><p>This does not impact the data freshness rate of the data itself.</p><p><strong>Examples:</strong> Pull-down in-app event lists in Push API, dashboards, and audiences.</p></td><td><span>✓</span></td></tr><tr><td>Overview dashboard</td><td>Page</td><td>Continuous</td><td><span>✓</span></td></tr><tr><td>Protect360 dashboard</td><td>Page</td><td>Daily</td><td> <span>✓ </span>(1)</td></tr><tr><td>SKAN dashboard</td><td>Page</td><td>Daily</td><td><span><strong>x</strong></span></td></tr><tr><td>Activity page</td><td>Page</td><td><ul><li>KPIs: Continuous</li><li>Averages: At midnight app-specific time zone</li></ul></td><td><p><span>✓</span></p><p>Exception: MAU data is UTC</p></td></tr><tr><td>Events page</td><td>Page</td><td>Continuous</td><td><span>✓</span></td></tr><tr><td> </td><td> </td><td>(This row has been left blank intentionally)</td><td> </td></tr><tr><td>Retention</td><td>Page</td><td><p>Retention KPIs are available having daily and weekly granularity. The data freshness for each is different.</p><ul><li>Daily retention KPIs: Daily</li><li>Weekly retention KPIs: The week begins on Monday and ends on Sunday. Retention is calculated on Monday 12:00 UTC. The lack of app-specific timezone support for the weekly KPI results in a negligible difference.</li></ul></td><td><p>Daily: <span>✓</span></p><p>Weekly: <span><strong>x</strong></span></p></td></tr><tr><td>Cohort</td><td>Page</td><td>Continuous</td><td> <span>✓ </span>(2)</td></tr><tr><td>Custom dashboard</td><td>Page</td><td>Continuous</td><td> <span>✓ </span>(3)</td></tr><tr><td>Audiences</td><td>Page</td><td><ul><li>Updates are pushed to partners every 24 hours.</li><li>User-base is updated daily and holds up to 90 days of device data</li></ul></td><td><span>✓</span></td></tr><tr><td>SDK information page</td><td>Page</td><td>Daily</td><td><span><strong>x</strong></span></td></tr><tr><td>Export data</td><td>Page</td><td><p>Continuous</p><p>Exceptions to note:</p><ul><li>Ad revenue raw data: Daily</li><li>Protect360:<ul><li>Aggregate reports: Daily</li><li>Blocked raw data: Continuous</li><li>Post-attribution raw data: Daily</li></ul></li><li>Organic in-app events: Update with a lag of several hours.</li></ul></td><td><span>✓</span></td></tr><tr><td>Pull API</td><td>API</td><td>Pull API data freshness is the same as the Export data.</td><td><p><span>✓</span></p><p><span>Default UTC</span></p></td></tr><tr><td>Pivot</td><td>Page</td><td>Daily</td><td><p><span>✓</span></p><p>Weekly retention KPIs: <strong>x</strong></p></td></tr><tr><td>Master API</td><td>API</td><td>Daily</td><td> <span>✓ </span>(3)</td></tr><tr><td>Data Locker</td><td>API</td><td>See the <a href="./data-locker-advertiser-reports#data-freshness-explanations" target="_blank">Data Locker article</a>.</td><td><p><span><strong>x</strong></span></p><p><span><strong>UTC</strong></span></p></td></tr><tr><td>Postbacks</td><td>API</td><td>Continuous</td><td>N/A</td></tr><tr><td>Push API</td><td>API</td><td>Continuous (4)</td><td><p><span>✓</span></p><p><span><strong>Both</strong></span></p></td></tr><tr><td>Server-to-server in-app events</td><td>API</td><td>Continuous</td><td>N/A</td></tr><tr><td colspan="4"><p>Notes:</p><p>(1) All apps the user has permission to must use the same app-specific time zone. If not, the time zone reverts to UTC.</p><p>(2) See <a href="./cohort-and-retention-dashboard#traits-and-limitations" target="_blank">Cohort traits and limitations</a> when the time zone will revert to UTC.</p><p>(3) All selected apps must use the same app-specific time zone. If not, the time zone reverts to UTC.</p><p>(4) SKAN report data will be available daily between 08:00 -10:00 UTC.</p></td></tr></tbody></table>
+
+<div id="exception-my-dashboards-cohort-and-activity-metrics" />
 
 > 📘 **Exception: My Dashboards Cohort and Activity metrics**
 >

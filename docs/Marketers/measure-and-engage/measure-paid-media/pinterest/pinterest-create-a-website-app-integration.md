@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Set up a Pinterest integration for your website app to send web conversion events to Pinterest for campaign optimization and reporting.
 
+<div id="set-up-integration" />
+
 ## **Set up integration**
 
 **Prerequisites:**
@@ -40,13 +42,19 @@ x-zendesk:
    **Note:** The toggle must remain on <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">(activated)</Anchor> for as long as you work with Pinterest.
 5. Complete the configuration in the **Integration** tab as described below.
 
+<div id="integration-tab" />
+
 ## **Integration tab**
+
+<div id="activate-partner" />
 
 ### **Activate partner**
 
 On the **first visit**, turn on the **Activate Partner** toggle to enable setup of the integration tab's parameters. The toggle must remain on for as long as you work with Pinterest.
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+
+<div id="in-app-event-settings" />
 
 ### **In-app event settings**
 
@@ -61,6 +69,8 @@ You can find your Ad Account ID and Access Token in the Pinterest Ads Manager UI
 
 1. In AppsFlyer, on the Pinterest **Active integration** page > **Integration** tab, scroll to **In-app event settings**.
 2. Enter the Ad Account ID and Access Token values in their respective fields.
+
+<div id="in-app-event-postbacks" />
 
 ### **In-app event postbacks**
 
@@ -77,6 +87,8 @@ In this section, you map your AppsFlyer web events to Pinterest events via postb
 | **Partner event name** | The Pinterest event to map to, selected from Pinterest's predefined event list. For Pinterest event names, see the <Anchor target="_blank" href="https://developers.pinterest.com/docs/api-features/track-conversion-events/#understand-conversion-events">Pinterest documentation</Anchor>. |
 | **To users from** | **This partner only:** Events coming only from users attributed to Pinterest.<br /><br />**All media sources, including organic:** Your entire user base is available to be reported to the partner. |
 | **Including** | Select whether event revenue or parameter values are sent to the partner in the postback. AppsFlyer can send all parameters of the rich web event except the revenue parameter (contained in **af\_revenue**), or all parameters including the revenue value (if present). |
+
+<div id="note" />
 
 > 📘 **Note**
 >

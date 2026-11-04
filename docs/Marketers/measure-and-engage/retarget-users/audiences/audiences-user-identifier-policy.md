@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Configure your user identifier policy to exercise account-level control over the identifiers you send to advertising partners via Audiences.
 
+<div id="about" />
+
 ## About
 
 Once you have defined an audience, Audiences enables you to send identifiers for its members to your selected <Anchor target="_blank" href="/marketers/docs/audiences-partner-connections">advertising partners</Anchor>. This enables them to serve your ads only to these users.
@@ -36,6 +38,8 @@ In order to enable compliance with the privacy requirements of iOS 14.5 and othe
 * at the partner-connection level
 
 This article explains how to manage your user identifier policy at the account level. For more information about managing the identifiers shared at the partner-connection level, see the <Anchor target="_blank" href="/marketers/docs/audiences-guide#manage-connections">Manage connections</Anchor> section of the Audiences guide.
+
+<div id="user-identifiers" />
 
 ## User identifiers
 
@@ -73,6 +77,8 @@ For additional information (including requirements for using specific identifier
 
 </Accordion>
 
+<div id="setting-account-level-user-identifier-policy" />
+
 ## Setting account-level user identifier policy
 
 User identifier policy can only be set by an admin user.
@@ -85,6 +91,8 @@ User identifier policy can only be set by an admin user.
    * If you want to enable sending of identifiers other than IDFA, GAID, OAID to partners, you first need to review and accept the [Additional Identifiers Terms of Use.](https://support.appsflyer.com/hc/en-us/article_attachments/360017900558/Additional_Identifiers_Terms_of_Use.pdf)
    * If you elect to disallow identifier(s) that are uploaded by existing partner connections, you will be asked to confirm that you wish to stop uploading these identifiers.
 4. Click **Save.**
+
+<div id="privacy-regulations" />
 
 ## Privacy regulations
 
@@ -144,7 +152,7 @@ As part of Google’s enforcement of the Digital Markets Act (DMA) on March 6, 2
   All devices that were already part of an audience within Google before March 6, 2024 will not be impacted and will continue to be part of the audience. Only new Audiences or new EEA devices added to an existing audience will be uploaded to Google with consent.
 * **Audience upload size**  
   The audience estimated and actual upload sizes may be affected depending on the number of users granting or denying consent.
-* #### **Importing audiences**
+* #### <span id="importing-audiences"></span>**Importing audiences**
 
   * **Import standard audience** - AppsFlyer will add the consent data it collects from the AppsFlyer SDK, and will remove unconsented or unspecified devices from the audience before sending it to Google.
   * **Import “as is” audience** - When importing an “as is” audience via <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor> or <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>, two additional consent fields will need to be added. These fields are:
@@ -155,6 +163,8 @@ As part of Google’s enforcement of the Digital Markets Act (DMA) on March 6, 2
 | <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | Did the user give consent to send their user data to Google? |
 
 If the consent fields are not filled in with values, they will be sent to Google as “Unspecified”.
+
+<div id="note" />
 
 > 📘 **Note**
 >

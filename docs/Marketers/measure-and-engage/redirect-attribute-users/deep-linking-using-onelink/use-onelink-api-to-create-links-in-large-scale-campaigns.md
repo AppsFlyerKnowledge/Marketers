@@ -27,6 +27,8 @@ x-zendesk:
 
 > **At a glance:** OneLink API lets you programmatically generate personalized short links at scale, taking users from any owned media—such as SMS, email, web, or QR—directly into your mobile app. Use it to create seamless cross-channel journeys, deepen engagement, and improve conversion.
 
+<div id="about-onelink-api" />
+
 ## About OneLink API
 
 OneLink API is a premium feature that lets you turn any owned channel into a direct path into your mobile app. By generating personalized short links programmatically, you can deliver customized user journeys at scale, deepen engagement, and drive higher conversions across SMS, email, websites, social posts, and more. With OneLink API, you can:
@@ -40,9 +42,13 @@ OneLink API is a premium feature that lets you turn any owned channel into a dir
 * Enforce strict parameter validation to ensure predictable redirection behavior and reliable measurement.
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">Retrieve quota usage</Anchor> for consumption management.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > A global travel app generates millions of contextual short links daily across CRM, email, and QR experiences. Using OneLink API v2.0, their automation platform builds per-user deep links that respect locale, loyalty tier, and specific in-app destinations — while maintaining governance and consistent measurement across all markets.
+
+<div id="get-started" />
 
 ## Get started
 
@@ -58,6 +64,8 @@ OneLink API is a premium feature that lets you turn any owned channel into a dir
    [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
 4. Share the template ID and API token with the developer and have them follow these <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">instructions</Anchor>.
 
+<div id="dashboard" />
+
 ## **Dashboard**
 
 The OneLink API dashboard provides a view of your daily, monthly, and three-month API usage. This helps you monitor your consumption against the monthly quota limit. 
@@ -65,6 +73,8 @@ The OneLink API dashboard provides a view of your daily, monthly, and three-mont
 **To view the OneLink API dashboard**: 
 
 In AppsFlyer, from the side menu, select **Engage** > **OneLink API**.
+
+<div id="use-cases" />
 
 ## Use cases
 
@@ -109,6 +119,8 @@ Enable shareable short links for influencer, creator, or customer referral progr
 **Value:** Scalable measurement and accurate attribution for referrals.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## **Traits and limitations**
 

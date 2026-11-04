@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Create and manage sources to securely share your first-party data with other collaborators.
 
+<div id="about-dcp-sources" />
+
 ## About DCP sources
 
 In the Data Collaboration Platform (DCP), a source is a dataset, typically uploaded to AppsFlyer from your cloud storage. These sources form the foundation of any collaboration, supplying the data that your collaborators can use for audience creation and activation. This article contains everything you need to know about creating and managing your sources, including:
@@ -29,6 +31,8 @@ In the Data Collaboration Platform (DCP), a source is a dataset, typically uploa
 * [Source data requirements](#source-data-requirements)
 * [Creating sources](#create-a-source)
 * [Managing your sources](#manage-your-sources)
+
+<div id="source-data-requirements" />
 
 ## Source data requirements
 
@@ -80,6 +84,8 @@ Source files stored in Amazon S3 or GCS must meet these file name and format req
 
 </Accordion>
 
+<div id="create-a-source" />
+
 ## Create a source
 
 **Prerequisite:** Before creating your source, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">set up the cloud services</Anchor> that AppsFlyer DCP will use to retrieve your source data. If these connections aren't set up, you'll be prompted to do so during source creation.
@@ -101,6 +107,8 @@ Source files stored in Amazon S3 or GCS must meet these file name and format req
 <Accordion title="Step 2: Set source name">
 
 Enter the source name. This can be any unique name that will help you identify the source. You can also add an optional description about the source to help easily identify what it contains (e.g., "All purchases from 2025").
+
+<div id="requirements-and-guidelines" />
 
 #### Requirements and guidelines
 
@@ -129,6 +137,8 @@ Enter the source name. This can be any unique name that will help you identify t
 
 **Note:** For best performance when there’s a large amount of data, a subset of your data may be stored separately. This data will be updated whenever the source is updated and deleted when the source is deleted.
 
+<div id="source-locations-in-bigquery" />
+
 #### Source locations in BigQuery
 
 **To complete specifying the source location for BigQuery sources:**
@@ -137,6 +147,8 @@ Enter the source name. This can be any unique name that will help you identify t
 2. Select the table in which the source data is located.
 
 The lists from which you make these selections contain the available datasets and tables, respectively, in the BigQuery project you specified when creating the connection.
+
+<div id="source-locations-in-snowflake" />
 
 #### Source locations in Snowflake
 
@@ -147,6 +159,8 @@ The lists from which you make these selections contain the available datasets an
 3. Select the table in which the source data is located.
 
 The lists from which you make these selections contain the shares, schemas, and tables, respectively, in the Snowflake account you specified when creating the connection.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Source locations in cloud storage buckets
 
@@ -166,10 +180,14 @@ If AppsFlyer generates the folders, the only additional information required is 
     * The **input** folder is not required, and you can remove it or name it something different, so long as it complies with the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR naming requirements</Anchor>.
     * Although this folder is not required, having an **input** folder (or an equivalent folder of a different name) is considered best practice. It is even more highly recommended when you are using the same cloud storage bucket both for uploading data files (input) and receiving reports (output).
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > If you manually created the folder path, make sure the connection and path you enter in the **Source location** section match the path you manually created.
 
+
+<div id="source-location-as-local-files" />
 
 #### Source location as local files
 
@@ -180,6 +198,8 @@ You can also upload source data using a local file. However, **It’s strongly r
 When selecting your source location, click on **Local file system** and **Next**, which adds the option to upload local files from your device.
 
 <Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -198,10 +218,14 @@ When setting up a source in the Data Collaboration Platform (DCP), you must choo
 
 <Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > Please determine which method is best before selecting. Once an option is selected and **Generate folders** is clicked, a file path along with instructions for handling data uploads is created within your selected cloud service. To prevent folder duplications and errors, you can **change the sync method only once** after the initial selection.
 
+
+<div id="snapshot-upload-requirements" />
 
 #### Snapshot upload requirements
 
@@ -229,6 +253,8 @@ Use this method to upload a complete, self-contained file that fully replaces th
 | `data/` **sub-folder** | Organizes your files | Store Parquet / CSV / Avro files in this folder |
 | `_SUCCESS` **marker** | Signals DCP ingestion to begin | Upload an empty file named `_SUCCESS` inside the `v=` folder after all data files land |
 | **Supported file type and size** |  | <ul><li>Supported file types: .csv or .gz</li><li>Maximum file size: 5 GB</li></ul> |
+
+<div id="important-2" />
 
 > 🚧 **Important!**
 >
@@ -281,6 +307,8 @@ Example of how folder structure should look after uploading a complete snapshot 
 
 [<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
+
+<div id="append-upload-requirements" />
 
 #### Append upload requirements
 
@@ -363,6 +391,8 @@ Map source fields to DCP fields, test it, and save the configured data:
 4. [Test the source data](#4-test-the-source-data)
 5. [Save the source](#5-save-the-source)
 
+<div id="1-load-your-source-fields" />
+
 #### 1. Load your  source fields
 
 Source fields load automatically. In case manual loading is needed, follow the instructions below according to the source location:
@@ -370,6 +400,8 @@ Source fields load automatically. In case manual loading is needed, follow the i
 **Data warehouse sources**
 
 To load fields from a source located in a data warehouse (BigQuery or Snowflake), click **Load fields from source**.
+
+<div id="important-3" />
 
 > 🚧 **Important!**
 >
@@ -427,14 +459,20 @@ For purposes of mapping the source fields to DCP fields:
 </Tab>
 </Tabs>
 
+<div id="2-configure-the-source-fields" />
+
 #### 2. Configure the source fields
 
 After loading the source fields, each source field (column) is presented with a DCP field. Review each source field and map it to the appropriate DCP field from the drop-down list beside it. Consider the following:
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
 > * When both parties share their source data, **at least one field must be set as an identifier** to enable user-level data to match across the corresponding sources. An identifier is a field that uniquely identifies an app user (for example, CUID, AppsFlyer ID, or hashed email).
 > * Although configuring each of the uploaded source fields (columns) isn't mandatory, it is important for categorization, effective data interpretation, aiding audience creation, suggesting insights, and effectively facilitating validations.
+
+<div id="ai-assisted-field-type-detection" />
 
 #### AI-assisted field type detection
 
@@ -451,10 +489,14 @@ Each field lands in one of these states:
 * **Mapped:** AI found a single confident match. Review it and accept, or change it manually.
 * **Couldn't map:** AI couldn't determine a field. Map it manually, or leave it unmapped.
 
+<div id="limitations" />
+
 #### Limitations
 
 * **Column limit:** AI detection supports up to 100 columns per source. Sources with more columns display a "limit exceeded" message.
 * **Field name length:** column names over 100 characters aren't supported for AI detection.
+
+<div id="important-4" />
 
 > 🚧 **Important!**
 >
@@ -527,17 +569,25 @@ This option allows you to include a field in the audience that isn't currently p
   * App Id
   * List of Text
 
+<div id="identifier-vs-list-of-identifiers" />
+
 #### **Identifier vs. List of identifiers:**
 
 Identifier types hold a single value per row (for example, one email or one CUID per row). List of identifiers types hold an array of values per row (for example, a single row can contain multiple hashed emails or device IDs) — use this when a source needs to match on more than one identifier per record.
+
+<div id="important-5" />
 
 > 🚧 **Important!**
 >
 > If a source includes any field mapped to a **List of...** type (List of identifiers, List of Numbers, or List of Text), the source file must be uploaded or connected as Parquet. CSV and GZ files don't support array-typed columns, so list fields may not be ingested correctly from those formats.
 
+<div id="reload-source-fields" />
+
 #### Reload source fields
 
 If the configuration of one of your data files has changed, you can update the source file to reflect the changes.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -551,15 +601,21 @@ If the configuration of one of your data files has changed, you can update the s
    * For a file from your cloud service: Click **Load from cloud bucket** and follow the instructions.
 3. Click **OK**. The updated files are now displayed.
 
+<div id="3-verify-eu-user-inclusion" />
+
 #### 3. Verify EU user inclusion
 
 * Select **Yes** or **No** to the question: **Does your source include European users, to which EU DMA regulations apply?**
 
 Learn more about privacy regulations for the EU Digital Markets Act.
 
+<div id="4-test-the-source-data" />
+
 #### 4. Test the source data
 
 * [Optional] Click **Test** to check for errors in the format or validity of the source fields.
+
+<div id="5-save-the-source" />
 
 #### 5. Save the source
 
@@ -567,11 +623,15 @@ Learn more about privacy regulations for the EU Digital Markets Act.
 
 After confirming, the new source is added under the **Sources** tab.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > If you uploaded the source from a local file, saving the source triggers the automatic creation of the folder structure, and the displayed confirmation message includes a link to the source folder.
 
 </Accordion>
+
+<div id="manage-your-sources" />
 
 ## Manage your sources
 
@@ -584,9 +644,13 @@ The sources you've created are displayed in the **Sources** tab. From here, you 
 3. On the **Edit source** page, edit the relevant fields, as detailed below.
 4. Click **Save.**
 
+<div id="edit-the-source-name" />
+
 #### Edit the source name
 
 When editing the source name, make sure to [follow these naming requirements](#requirements-and-guidelines).
+
+<div id="edit-the-source-location" />
 
 #### Edit the source location
 
@@ -595,10 +659,14 @@ When editing the source name, make sure to [follow these naming requirements](#r
 3. [Optional] [Test the source](#4-test-the-source-data).
 4. Click **Save.**
 
+<div id="edit-the-field-mapping" />
+
 #### Edit the field mapping
 
 1. Go to the field mapping, and make the necessary changes: Change the field or update its mapped DCP field.
 2. Click **Save**.
+
+<div id="important-6" />
 
 > 🚧 **Important!**
 >
@@ -620,9 +688,13 @@ You can delete any source except when it's being used in an audience. If this is
 
 </Accordion>
 
+<div id="sharing-permissions" />
+
 ## Sharing permissions
 
 Granting permissions to your collaborators to view and use your source data is done when <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">creating collaborations</Anchor>. Learn more about <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-sharing-permissions">sharing permissions</Anchor>.
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -631,6 +703,8 @@ This section provides some additional references and useful information.
 <Accordion title="Manually create a storage bucket folder structure (Optional)">
 
 In general, it's easiest to allow AppsFlyer to automatically generate the required folder structure as part of the source creation process. However, if you wish to create these folders manually, you can do so as follows.
+
+<div id="create-a-dcr-key-folder" />
 
 #### Create a DCR key folder
 
@@ -648,6 +722,8 @@ After creating the DCR key folder, your bucket/folder structure would look somet
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/ba5902f70e75dc6fa1a6970f28397607c42bd433add4be311f4b498a3960ce05-24740007165841.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### Top-level input folder
 
 Though it is not required, best practice is to create a top-level input folder directly beneath the DCR key folder. This folder will be dedicated to files you upload to the DCR.
@@ -660,6 +736,8 @@ The top-level input folder is generally created manually using the interface of 
 After creating the top-level input folder, your bucket/folder structure might look something like this:
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/2d0fef29b00e9ac8bb9ee5fa281a9a502d0395c72d8879370271e1e4a1af9c95-24740010678801.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### Second-level folder for each data source
 
@@ -677,6 +755,8 @@ Under each data source folder, [nested subfolders by date and version](#nested-s
 
 </Accordion>
 
+<div id="privacy-regulations" />
+
 ## Privacy regulations
 
 This section outlines important information about current privacy regulations.
@@ -685,12 +765,16 @@ This section outlines important information about current privacy regulations.
 
 As part of Google’s enforcement of the Digital Markets Act (DMA) Google updated its EU user consent policy as of March 6, 2024. As a Google App Attribution Partner, AppsFlyer made the necessary changes to support their policy requirements, while ensuring that advertisers maximize the value from their Google Ads marketing channels.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > * Google’s enforcement of the Digital Markets Act (DMA) applies to all platforms.
 > * Read more about this:
 >   * <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">Insights and resources about the Digital Marketers Act</Anchor>
 >   * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">Google’s FAQ</Anchor>
+
+<div id="adding-consent-fields" />
 
 #### Adding consent fields
 
@@ -699,6 +783,8 @@ When setting up a source intended for audience activation on Google and confirmi
 **Additional consent fields and their response values:**
 
 <table><thead><tr><th>Field name</th><th>Response value</th><th>Field explained</th></tr></thead><tbody><tr><td><span id="eea"></span><code>eea</code></td><td>true/false</td><td>Is the user located in the EEA (European Economic Area), to which the DMA applies?</td></tr><tr><td><span id="ad_personalization"></span><code>ad_personalization</code></td><td>\*true/false</td><td>Did the user give Google consent to use their data for personalized advertising?</td></tr><tr><td><span id="ad_user_data"></span><code>ad_user_data</code></td><td>\*true/false</td><td>Did the user give consent to send their user data to Google? </td></tr><tr><td colspan="3"><span id="when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them"></span>\* When “<strong>true</strong>”, AppsFlyer includes the user identifiers you've sent for users who gave consent.<br/>   When “<strong>false</strong>”: AppsFlyer doesn't include them, as they weren't sent to AppsFlyer.</td></tr></tbody></table>
+
+<div id="potential-impact-on-the-audience-size" />
 
 #### Potential impact on the audience size
 

@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **At a glance:** Airship, an AppsFlyer integrated partner, provides the world’s leading mobile engagement platform, helping thousands of businesses of all sizes form a direct and lasting connection with their customers. With Airship, companies gain total control of their mobile footprint — apps, wallets, and user-level data — to deliver experiences that get noticed and drive action across mobile or any other customer touch-point.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-airship" />
 
 ## Setting up Airship
 
@@ -53,10 +57,14 @@ x-zendesk:
 
 The Integration tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. **The toggle must be on for as long as you work with the partner**.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -79,6 +87,8 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
    * [More on Channel ID for Android](https://docs.airship.com/platform/android/segmentation/#airship-channel-ids).
 
    This parameter is sent with every postback and enables the identification of each user. To perform this you must insert the following strings to your app code:
+
+   <div id="important-note" />
 
    > 📘 **Important Note**
    >
@@ -130,6 +140,8 @@ Minimum requirements - Airship SDK - Version 13.1.0 and above.
    5. Click **Create token**.
    6. In AppsFlyer, paste the Token in the **Token Authentication** field.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Airship following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
@@ -177,6 +189,8 @@ Ad Revenue is not supported in the integration with this partner.
 Permissions are not available for Airship.
 
 </Accordion>
+
+<div id="set-up-and-manage-the-attribution-data-in-airship-console" />
 
 ## Set up and manage the attribution data in Airship console
 

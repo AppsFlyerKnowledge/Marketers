@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Aggregated SKAdNetwork postbacks via API. Data is aggregated using postback arrival date.
 
+<div id="skan-aggregated-postback-arrival-date-api" />
+
 ## SKAN aggregated postback arrival date API
 
 The API returns aggregated SKAdNetwork postbacks, using the postback arrival date range.
@@ -39,6 +41,8 @@ The API returns aggregated SKAdNetwork postbacks, using the postback arrival dat
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the section that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
 4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-postback-arrival-date-api-get">SKAN aggregated postback arrival date API</Anchor> in the developer hub.
+
+<div id="parameters" />
 
 #### Parameters
 
@@ -113,6 +117,8 @@ Examples: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/
 | Account user access | The authorization token is available to an admin user in the dashboard. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

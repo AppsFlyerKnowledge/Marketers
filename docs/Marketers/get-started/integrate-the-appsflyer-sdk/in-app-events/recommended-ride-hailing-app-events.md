@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your ride-hailing app.
 
+<div id="-ride-hailing" />
+
 ## <Image alt="InApp_Events_ride.png" src="https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png" width="100px" /> Ride-hailing
 
 Ride-hailing has become very popular recently, especially in urban areas where most residents don't own a car. The typical events that we suggest recording are ride requests and bookings.
@@ -33,6 +35,8 @@ Recording events can help you determine:
 * How passengers and drivers interact
 * Countries where more people use your ride-hailing service
 * Metrics about price, rides, and ride distance
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -44,6 +48,8 @@ Recording events can help you determine:
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -146,6 +152,8 @@ When a passenger spends credits
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Recommended structures for custom events
 
 The following section provides a list of event structures that include custom event names and the suggested event parameters to use. Note that in-app events can include any event parameters that meet your business needs.
@@ -200,6 +208,8 @@ This event can help you:
 * See the average and overall ride prices for each driver
 
 In addition, recording this event along with the other three booking-related events can help you better understand driver activity. You can see, for example, which drivers confirm the most ride-booking requests, and which drivers choose short rides as opposed to long rides.
+
+<div id="trigger" />
 
 #### **Trigger**
 

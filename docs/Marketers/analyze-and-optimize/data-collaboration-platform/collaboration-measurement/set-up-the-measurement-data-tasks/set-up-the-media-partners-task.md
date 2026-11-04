@@ -24,6 +24,8 @@ x-zendesk:
 
 Before you can share eligible conversions with your <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site campaign</Anchor> media partners and receive aggregated performance data in response, you must first connect DCP to the media account that activates the campaign. This connection tells AppsFlyer how to send the conversion data to the media partner.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before the Media partners task can be set up, the collaboration owner needs to assign it to the collaborator who owns the third-party account (e.g, Facebook or Google). For more information, see Assign configuration tasks
@@ -32,6 +34,8 @@ Before the Media partners task can be set up, the collaboration owner needs to a
 
 <Accordion title="Create a media partner connection">
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The **Media Partners** task appears on the **Measurement settings** page only when you set up an <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site campaign</Anchor> that uses a custom source as the provisioning method. For more information, see: <Anchor target="_blank" href="/marketers/docs/set-up-the-conversions-task#set-conversion-data-provision-method">Set conversion data provision method</Anchor>
@@ -39,6 +43,8 @@ Before the Media partners task can be set up, the collaboration owner needs to a
 To select or create a media partner connection, follow these steps:
 
 1. On the **Measurement settings** page, click the **Media partners** task.
+
+   <div id="note-1" />
 
    > 📘 **Note**
    >
@@ -74,6 +80,8 @@ To set the Google Ads Conversion Action ID, follow these steps:
    * **Web conversion action:** The conversion action ID used for conversion events created on the collaborator website. This must be a **Conversion Action** of type `UPLOAD_CLICKS`.
    * **App conversion action (per app):** The conversion action ID used for conversion events created on the collaborator app. Enter the corresponding Conversion Action ID, also of type `UPLOAD_CLICKS`.
 
+   <div id="note-2" />
+
    > 📘 **Note**
    >
    > These Conversion Actions should be kept **exclusive to DCP measurement** and should not be used for other traffic.
@@ -100,6 +108,8 @@ To set the Google Ads Conversion Action ID, follow these steps:
    * **Meta Pixel:** The ID used for conversion events created on the collaborator website.
    * **Dataset ID (per app):** The ID used for conversion events created on the collaborator app.
 
+   <div id="warning" />
+
    > ❗️ **Warning**
    >
    > The Dataset and Meta Pixel must meet the following conditions:
@@ -108,6 +118,8 @@ To set the Google Ads Conversion Action ID, follow these steps:
    > * Must **not receive any conversions directly** from the client.
    > * Meta Pixel and Dataset ID are interchangeable.
 
+
+   <div id="note-3" />
 
    > 📘 **Note**
    >

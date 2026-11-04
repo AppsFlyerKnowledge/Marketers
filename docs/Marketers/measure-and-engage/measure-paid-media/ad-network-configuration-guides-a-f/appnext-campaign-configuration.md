@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Appnext, an AppsFlyer ad network integrated partner, uses technology and data solutions for premium mobile monetization, app marketing, and re-engagement. In addition to click-based mobile attribution, Appnext also offers cost, retargeting and view-through attribution, which you can record with AppsFlyer.
 
+<div id="setting-up-appnext" />
+
 ## Setting up Appnext
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,12 +44,16 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle. ON the **Activate Partner** button to enable setup of the integration tab's parameters. The toggle must be set to ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
 The Integration Tab is divided into different sections as described below.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -57,15 +63,21 @@ Toggle this to ON if you want to attribute view-through installs from Appnext. T
 
 ![appnext_msc_new_2.png](https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Appnext following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Note: for installs, you can select either **Only events attributed to this partner** (for events coming only from users attributed to Appnext), or **Events attributed to any partner or organic** (for events coming from all partners). For rejected installs and re-engagements, **Only events attributed to this partner** can be sent via a postback.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Appnext prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to Appnext.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -119,6 +131,8 @@ Ad revenue integration is not available for this partner.
 
 In this tab, you can select the permissions to grant Appnext. Note that even if attribution is disabled for Appnext, the permissions tab is active and you can grant control to Appnext.
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
@@ -132,6 +146,8 @@ Use these toggles to give the ad network permissions to handle its own configura
 * **Allow access to your Protect360 dashboard** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

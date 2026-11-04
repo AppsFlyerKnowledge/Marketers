@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the differences in attribution models between TikTok for Business and AppsFlyer.
 
+<div id="overview" />
+
 ## Overview
 
 As two major players in the mobile user acquisition ecosystem, TikTok for Business and AppsFlyer use distinct attribution models. This may cause discrepancies between TikTok for Business and AppsFlyer dashboards. While we work closely with TikTok for Business to minimize these discrepancies, advertisers need to be aware of potential causes.
+
+<div id="differences-in-attribution-models" />
 
 ## Differences in attribution models
 
@@ -34,9 +38,13 @@ The table below describes possible reasons for discrepancies between the TikTok 
 
 <table><thead><tr><th>Cause</th><th>TikTok Ads Manager</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><p><strong>Click-through attribution lookback window</strong></p></td><td><p>The default window is 7 days. However, this can be configured differently for Android apps and for apps that were transitioned to TikTok's self-attribution (TikTok—SRN).</p></td><td><p>The default window is 7 days. The window can be configured between 1-30 days. Make sure to align with the TikTok attribution window.</p></td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><p><strong>View-through attribution lookback window</strong></p></td><td><p>The default window is 1 day. However, this can be configured differently for Android apps and for apps that were transitioned to TikTok's self-attribution (TikTok—SRN).</p></td><td><p>The default window is 1 day. The window can be configured between 1-48 hours. Make sure to align with the TikTok attribution window.</p></td></tr><tr><td><span id="multichannel-sourceattribution"></span><p><strong>Multi-channel source attribution</strong></p></td><td><p>TikTok self-attributes installs regardless of other media sources.</p></td><td><p>AppsFlyer uses last-click attribution (learn more about <a href="./appsflyer-attribution-model" target="_blank">AppsFlyer's attribution model</a>).</p></td></tr><tr><td><span id="crossdevice-attribution"></span><p><strong>Cross-device attribution</strong></p></td><td><p>TikTok attributes users performing both the engagement and the install using different devices, such as iOS, Android, and desktop.</p></td><td><p>AppsFlyer attributes users performing both the engagement and the install on the same device.</p></td></tr><tr><td><span id="different-time-zones"></span><p><strong>Different timezones</strong></p></td><td><p><a href="https://ads.tiktok.com/help/article/time-zone" target="_blank">TikTok's timezone</a> (displayed next to the date range) can't be adjusted. It was configured while creating the ad account.</p></td><td><p>AppsFlyer's default app timezone is UTC+0. To match the timezone defined in the TikTok Events Manager, change the timezone set for the app on the <a href="./app-settings#localization-time-zone" target="_blank">app settings page</a>.</p></td></tr><tr><td><span id="ios-attribution"></span><p><strong>iOS attribution</strong></p></td><td><p>For iOS apps, the TikTok ads manager only displays SKAN attribution results</p></td><td><p>For iOS apps, AppsFlyer displays SKAN attribution results, along with AppsFlyer attribution for both SRNs and Advanced SRNs, and deduped SSOT data. Only SKAN data is expected to match in both platforms. </p></td></tr><tr><td><span id="in-app-event-attribution-periods"></span><p><strong>In-app event attribution periods</strong></p></td><td colspan="2"><p>Attribution on each platform may differ based on period windows from the initial install:</p></td></tr><tr><td><span id="day-1-90"></span><p>Day 1-90</p></td><td colspan="2"><p>No attribution discrepancy. Both platforms attribute in-app events to the install time.</p></td></tr><tr><td><span id="day-91-180"></span><p>Day 91-180</p></td><td rowspan="2"><p>After 90 days, in-app events aren't reported on TikTok.</p></td><td><div><div><div>AppsFlyer attributes in-app events to the install time.</div></div></div></td></tr><tr><td><span id="day-180"></span><p>Day 180+</p></td><td><div><div><div>Due to <a href="./user-level-data-retention#partner-data-retention-periods" target="_blank">TikTok's data retention policy</a>, in-app events are attributed as organic.</div></div></div></td></tr></tbody></table>
 
+<div id="differences-in-installs" />
+
 ## Differences in installs
 
 In some cases, TikTok for Business includes installs that AppsFlyer rejects or doesn't account them as new installs.
+
+<div id="re-engagement-campaigns" />
 
 ### Re-engagement campaigns
 
@@ -46,25 +54,37 @@ Users are recorded on AppsFlyer as **new user acquisition installs** if they ins
 
 On the other hand, installs that occur **within the set re-attribution window** following the original install are categorized as re-attributions. These installs are visible on the AppsFlyer retargeting page. However, they might be considered new installs by TikTok for Business.
 
+<div id="rejected-installs-when-using-validation-rules-and-protect360" />
+
 ### Rejected installs when using Validation rules and Protect360
 
 <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules</Anchor> and <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor> are AppsFlyer features that add protection by rejecting (blocking) certain installs. When using these features, rejected installs originating from TikTok for Business are blocked by AppsFlyer while TikTok for Business self-reports these installs.
+
+<div id="example" />
 
 > 📄 **Example**
 >
 > Jeff, the UA manager of GreatApp, creates a campaign called SPNA, which targets only Spanish speakers in North America. To verify this, Jeff defines a validation rule, that accepts users from Canada and the US only. When a TikTok for Business user from Spain clicks and installs the app, TikTok for Business self-reports the install, while AppsFlyer rejects the install that doesn't pass the validation rule.
 
+<div id="reducing-discrepancies" />
+
 ## Reducing discrepancies
 
 Although there are differences in attribution models, in some cases, discrepancies can be reduced.
+
+<div id="click-through-and-view-through-attribution" />
 
 ### Click-through and view-through attribution
 
 AppsFlyer supports both click-through and view-through attribution. To reduce discrepancies between TikTok for Business and AppsFlyer, ensure that both the click-through and view-through lookback windows are consistent with the ones defined by TikTok for Business.
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > Suppose the TikTok for Business click-through lookback window is configured on AppsFlyer to 1 day for your app `com.greatapp`, while on TikTok for Business, it's configured to the default value of 7 days. Users who click Greatapp's ad on TikTok but launch the app for the first time after 2-7 days are attributed as organic users on AppsFlyer, while TikTok for Business self-reports these users.
+
+<div id="in-app-event-attribution" />
 
 ### In-app event attribution
 

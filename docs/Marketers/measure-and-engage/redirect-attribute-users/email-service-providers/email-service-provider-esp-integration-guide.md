@@ -29,6 +29,8 @@ x-zendesk:
 
 > **At a glance:** Create email campaigns with integrated ESPs using OneLink branded links and deep linking for seamless user experiences that drive conversion (for those using iOS Universal Links or Android App Links).
 
+<div id="about-esp-integration" />
+
 ## About ESP integration
 
 Email marketing is a simple, powerful, and effective way of engaging with customers and potential customers. Many marketers rely on email service providers (ESPs) to send large-scale email campaigns to their users. And while this should be a straightforward and simple process, delivering the perfect mobile user journey you envision, this is usually not the case.
@@ -47,6 +49,8 @@ The issues arise as a result of how the typical ESP handles its analytics, which
 To avoid these issues and provide mobile users with the best experience, click on your ESP in the section below and follow the specific integration instructions. Some ESPs are supported by an AppsFlyer integration solution that enables AppsFlyer to serve as an intermediary between the ESP server and your domain name. Its role as a proxy enables the provision of association files (AASA / asset links) which facilitates deep linking.
 
 The AppsFlyer ESP integration solution is a premium feature. If you'd like to learn more about it or get started, contact us at [hello@appsflyer.com](mailto:hello@appsflyer.com).
+
+<div id="supported-esps" />
 
 ## Supported ESPs
 
@@ -76,6 +80,8 @@ ESP email campaigns for mobile app users can cause attribution and deep linking 
 | <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Sailthru logo" src="https://files.readme.io/61b721936f4f9cc64ee9551a213865eca2bea188599311f79d92d945204a713b-32378022253841.png" height="40px" /></Anchor> | Yes |
 | <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="SendGrid logo" src="https://files.readme.io/f4c3217e956db7e922a6150597d596c2c4848e5aa0a43b2347824aacbeb2caa3-32378022256785.png" height="40px" /></Anchor> | Yes |
 | <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="SparkPost logo" src="https://files.readme.io/bec55e3c96bb80b736777e110d05df9009e015ef2c1cdd8b3d8088880264f593-32377991460369.png" height="40px" /></Anchor> | Yes |
+
+<div id="other-esps" />
 
 ## Other ESPs
 

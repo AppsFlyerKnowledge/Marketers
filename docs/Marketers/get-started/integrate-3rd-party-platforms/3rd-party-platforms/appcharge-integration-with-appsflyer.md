@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Appcharge, an integrated AppsFlyer partner, is a gaming commerce technology provider that specializes in processing payments outside traditional app store ecosystems. Through its integration with AppsFlyer, Appcharge can automatically send web store purchase and refund data to AppsFlyer, enabling a more complete view of return on ad spend (ROAS) and lifetime value (LTV).
 
+<div id="about-appcharge" />
+
 ## About Appcharge
 
 <Anchor target="_blank" href="https://appcharge.com/">Appcharge</Anchor> an integrated AppsFlyer partner, is a direct-to-consumer (D2C) platform built for mobile gaming publishers. The integration helps publishers monitor purchases from their web store, a critical revenue channel outside traditional app stores. By sending purchase and refund data directly to AppsFlyer, Appcharge enables accurate return on ad spend (ROAS) calculations based on net revenue, unlocking better insights into campaign performance and player lifetime value (LTV).
@@ -34,6 +36,8 @@ The Appcharge integration helps you:
 * Maintain consistency with your mobile campaign data
 
 This guide walks you through setting up the Appcharge integration.
+
+<div id="set-up-the-integration" />
 
 ## Set up the integration
 
@@ -58,13 +62,19 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 On your first visit, you'll need to turn on the **Activate partner** toggle to set up the integration. The toggle must remain on for as long as you work with Appcharge. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Advanced Privacy
 
 For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> toggle appears. When turned on, it limits the sharing of user identifiers with the partner. Note that when the <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> toggle is turned on in the App Settings, **Advanced Privacy (for iOS 14.5+ and later)** is turned on and locked by default.
+
+<div id="default-postbacks" />
 
 #### Default postbacks
 
@@ -75,6 +85,8 @@ AppsFlyer sends default postbacks to Appcharge following user installs. Use this
 * **All media sources, including organic:** Install postbacks are sent for events attributed to any partner and for organic events.
 
 ![default_postbacks.png](https://files.readme.io/390cbd75195ddcfa3f17cd9d569befda9f8b9b0f7040b53f420bb6fa1bc668d0-36292113918225.png)
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -120,6 +132,8 @@ Ad revenue data isn't supported in the integration with Appcharge.
 Permissions aren't available for Appcharge.
 
 </Accordion>
+
+<div id="identify-appcharge-events-in-appsflyer" />
 
 ## Identify Appcharge events in AppsFlyer
 

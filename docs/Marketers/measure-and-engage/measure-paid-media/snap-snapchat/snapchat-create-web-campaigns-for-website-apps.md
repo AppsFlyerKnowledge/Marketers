@@ -22,15 +22,21 @@ x-zendesk:
 ---
 > **At a glance:** Set up a Snapchat Ads integration for your website app to send web conversion signals to Snapchat via the Conversions API.
 
+<div id="overview" />
+
 ## Overview
 
 AppsFlyer supports integration with Snapchat Ads (`snapweb_int`) for website app campaigns, letting you report attribution and conversion data directly through Snapchat's Conversions API. Snapchat can then use this data to optimize ad targeting, measure performance, and build custom audiences.
 
 Here is how it works: a user clicks a Snapchat ad and lands on your website. When the user completes a website event (for example, a purchase or sign-up), AppsFlyer sends the conversion signal to Snapchat via the Conversions API. Snapchat uses this data to optimize ad targeting and measure campaign performance.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > At present, the integration does not support sending re-engagement postbacks via the Conversions API.
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
@@ -39,12 +45,16 @@ Before activating the Snapchat Ads integration for your website app, make sure y
 * A website app set up in AppsFlyer
 * A business account in <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat Ads Manager</Anchor>
 
+<div id="how-to-set-up-snapchat-ads-for-your-website-app" />
+
 ### How to set up Snapchat Ads for your website app
 
 The setup involves defining the integration between Snapchat Ads and AppsFlyer, and configuring the campaign in Snapchat Ads Manager. It includes the following steps:
 
 * [Part 1: Set up Snapchat Ads integration in AppsFlyer (Required)](#part-1-set-up-snapchat-ads-integration-in-appsflyer)
 * [Part 2: Set up AppsFlyer integration in Snapchat Ads (Required)](#part-2-set-up-appsflyer-integration-in-snapchat-ads)
+
+<div id="part-1-set-up-snapchat-ads-integration-in-appsflyer" />
 
 ## Part 1: Set up Snapchat Ads integration in AppsFlyer
 
@@ -84,12 +94,16 @@ To set in-app event postbacks:
 7. In the **including** column, select whether to send events with their revenue values. See <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks">Data to include in the postbacks</Anchor>.
 8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 
+   <div id="note" />
+
    > 📘 **Note**
    >
    > * If you are setting a purchase event, set the **including** column to **Values and revenue**. Selecting any other option causes the postback to fail.
    > * Currently, you can set only the purchase event to include revenue.
 
 9. Click **Save integration**.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -104,11 +118,15 @@ To set in-app event postbacks:
 >
 > For more information, see <Anchor target="_blank" href="/marketers/docs/integrate-appsflyer-web-sdk">[Beta] Integrate AppsFlyer Web SDK</Anchor>.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > If you send S2S events and want AppsFlyer to send postbacks for them to Snapchat Ads, make sure each event includes either `ip` or `user_agent`. If both are missing, AppsFlyer doesn't send the postback. For all supported event fields, see <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement#measure-an-event">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-snapchat-ads" />
 
 ## Part 2: Set up AppsFlyer integration in Snapchat Ads
 
@@ -153,11 +171,15 @@ You can choose any predefined in-app event sent from AppsFlyer as your campaign 
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Snapchat adds `ScCid={{ScCid}}` to the destination URL automatically when the ad is clicked.
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## View web attribution data
 
@@ -166,6 +188,8 @@ Here's what to expect when you review your attribution data after setup:
 * **Dashboard:** In <Anchor target="_blank" href="/marketers/docs/my-dashboards#crossplatform-dashboard">the cross-platform dashboard</Anchor>, web and app data are displayed side by side, giving you a unified view of campaign performance across platforms.
 * **Raw data exports and API responses** include Snap Web in the `media_source` field for Snap web activity.
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## Measure web attribution data with web cost
 
 You can get a complete performance view of web attribution data and web cost data from Snapchat Ads in the dashboard and in <Anchor target="_blank" href="/marketers/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">Cost ETL reports</Anchor>. To do this, make sure you have <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide#about-roi360">the ROI360 package</Anchor> and complete the following setup:
@@ -173,12 +197,16 @@ You can get a complete performance view of web attribution data and web cost dat
 1. Connect the cost to your website app via  `snapchat_int` (not via `snapweb_int`)  from the **Cost** tab or the **Cost Settings** page. For more information about how to connect to cost, see <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">Set up ROI360 cost API to measure cost data</Anchor>.
 2. Include the campaign ID (`af_c_id`) in the landing page URL. Make sure the URL includes the full campaign hierarchy to view cost, clicks, and impressions matched to web attribution at the most granular level.
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Remarks |
 | --- | --- |
 | Clicks and impressions | Clicks and impressions for web campaigns require an <Anchor target="_blank" href="/marketers/docs/roi360-onboarding-guide">ROI360 subscription</Anchor>. |
 | Re-engagement | Re-engagement postbacks via the Conversions API are not currently supported. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

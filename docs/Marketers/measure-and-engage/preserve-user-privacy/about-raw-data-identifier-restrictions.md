@@ -25,13 +25,19 @@ x-zendesk:
 ---
 > **At a glance:** Some partners require AppsFlyer to restrict certain fields in specific raw data reports. In other cases, partners may request redaction of the media source when sharing postbacks with third-party platforms. This article outlines these restrictions and their implications.
 
+<div id="raw-data-restriction" />
+
 ## Raw data restriction
 
 AppsFlyer restricts access to certain raw data report fields based on the advertiser's <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">AAP (Aggregated Advanced Privacy)</Anchor> settings or the data-sharing policies of the ad networks providing the data. These restrictions vary depending on the type of report and the reason for the restriction.
 
+<div id="media-source-restrictions" />
+
 ### Media source restrictions
 
 The following table lists restrictions per media source for conversions, clicks, and impressions.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -56,6 +62,8 @@ The following table lists restrictions per media source for conversions, clicks,
 | <span id="x-ads-formerly-twitter"></span>X Ads (formerly Twitter) | In some cases, based on user choices in X Ads, raw data may be restricted on the AppsFlyer platform.<br /><br />**Until July 15, 2025:** Attributed events from X Ads didn't appear at all in raw data reports.<br /><br />**As of July 15, 2025:** Attributed events are included in raw data reports, with the following restrictions:<ul><li>Media source (twitter): available</li><li>Campaign details: reported as *restricted*</li><li>Channel (Twitter): available</li><li>Attributed touch type: available</li><li>Attributed touch time: reported as date only (`dd/mm/yyyy`)</li></ul>Clicks and impressions from X Ads aren't included in raw data reports.<br /><br />Access to unrestricted raw data depends on participation in X Ads' **Advanced Mobile Measurement (AMM) program** and on end-user privacy settings:<ul><li>AMM not enabled: all clicks and impressions are sent with `af_data_restriction=attribution`. All resulting events are restricted.</li><li>AMM enabled:<ul><li>EU users: events are restricted if data sharing with business partners is not granted.</li><li>Users who did not agree to share data: events are restricted (`af_data_restriction=attribution`).</li><li>Users who agreed to share data with business partners: events are not restricted (`af_data_restriction=none`).</li></ul></li></ul>For more information, see the <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy">X Ads setup guide, user privacy section</Anchor>. |
 | Walmart | The following restrictions apply to view-through and click-through attribution:<ul><li>`original_url` : restricted</li></ul>Clicks and impressions from Walmart aren't included in raw data reports. |
 
+<div id="raw-data-context" />
+
 ### Raw data context
 
 Field-level restriction of raw data depends on the context of the data, as listed in the table that follows.
@@ -64,6 +72,8 @@ Field-level restriction of raw data depends on the context of the data, as liste
 | --- | --- |
 | [Restricted media source](/docs/about-raw-data-identifier-restrictions#media-source-restrictions): Where the user came from | <ul><li>Attribution: Installs, retargeting conversions, and uninstalls</li><li>In-app events, sessions</li><li>Protect360 reports</li></ul> |
 | Fully restricted | <ul><li>Clicks</li><li>Impressions</li><li>Blocked clicks (Protect360)</li></ul> |
+
+<div id="delivery-of-raw-data" />
 
 ### Delivery of raw data
 
@@ -162,6 +172,8 @@ When identifier restriction applies, the fields listed in the table that follows
 
 </Accordion>
 
+<div id="faq" />
+
 ## FAQ
 
 <div id="what-events-are-restricted" />
@@ -214,6 +226,8 @@ For events sent to third-party platforms such as analytics and marketing platfor
 Data related to assists is regarded as attribution data and isn't available.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

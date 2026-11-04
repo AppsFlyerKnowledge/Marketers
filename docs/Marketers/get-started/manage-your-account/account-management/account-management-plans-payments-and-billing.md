@@ -33,6 +33,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn about AppsFlyer plans and premium add-on features. See how plan usage and invoices are calculated. Manage your account.
 
+<div id="appsflyer-plans-and-usage" />
+
 ## AppsFlyer plans and usage
 
 <div id="appsflyer-plans" />
@@ -61,9 +63,13 @@ Learn more about all included features and <Anchor target="_blank" href="https:/
 
 Payment for your plan is calculated according to your **plan usage** and **premium features**.
 
+<div id="plan-usage" />
+
 #### Plan usage
 
 Each plan is based on measurement of a specific [unit](/docs/account-management-plans-payments-and-billing#plan-units). Unit usage is calculated monthly or annually. The number of units used during the plan cycle (month or year) is deducted from the total package units.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -79,6 +85,8 @@ When exceeding the number of units in your plan cycle, extra costs are applied. 
 
 You can check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com) for upgrade options.
 
+<div id="premium-features" />
+
 #### Premium features
 
 Any [add-ons](/docs/account-management-plans-payments-and-billing#premium-add-on-units) you've included in your plan are premium features. For example:
@@ -91,6 +99,8 @@ Any [add-ons](/docs/account-management-plans-payments-and-billing#premium-add-on
 * <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">ESP integration</Anchor>
 
 To learn more about these add-ons and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com).
+
+<div id="plan-units" />
 
 #### Plan units
 
@@ -105,6 +115,8 @@ The different units on which a plan can be based:
 | In-app events | Any action performed by a user in your app following the install. For example, login, tutorial completed, purchase, and achieved game level. | <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Rich in-app events guide</Anchor> |
 | Non-direct web conversions  <br />(for PBA packages) | Any user action on your website that:<ul><li>You've defined it as a conversion</li><li>It was attributed as a referred visit (originating from a web campaign)</li></ul> | <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">People-Based Attribution (PBA)</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### Premium add-on units
 
 The units on which additional measured add-ons can be based:
@@ -112,6 +124,8 @@ The units on which additional measured add-ons can be based:
 | Unit | Description | Learn more |
 | --- | --- | --- |
 | ROI360 dollar units | Recorded dollar units of your ad cost, in-app ad revenue, and in-app purchase revenue (including subscriptions), measured by the ROI360 add-on. Each unit represents $1 of the recorded ROI360 measurement. | <Anchor target="_blank" href="/marketers/docs/roi360-guide-cost-and-revenue-data">ROI360—cost and revenue data</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### ROI360 dollar units
 
@@ -137,11 +151,15 @@ Extended platform apps include apps running on CTV, PC, console, and other platf
 
 Starting February 1, 2026, non-organic installs from extended platform apps (for example, CTV, PC, and console) are included in billable conversions, according to your existing conversion-based commercial terms.
 
+<div id="what-is-billed" />
+
 #### What is billed
 
 * Non-organic installs.
 * Non-organic re-engagements.
 * Owned media activity.
+
+<div id="what-isnt-billed" />
 
 #### What isn’t billed
 
@@ -155,6 +173,8 @@ MAU-based billing isn’t supported for extended platform apps.
 
 </Accordion>
 
+<div id="account-page" />
+
 ## Account page
 
 The page includes 3 tabs: **My plan**, **Payment and invoices**, and **Billing details**. From here you can:
@@ -164,6 +184,8 @@ The page includes 3 tabs: **My plan**, **Payment and invoices**, and **Billing d
 * View and download invoices and reports
 * Update your contact and billing information
 * Update payment details
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -189,12 +211,16 @@ From the **My plan** tab, you can see the details of your current plan, review p
 | <span id="addons"></span>**Add-ons** | Add-ons included in your plan and their start/end dates. These are premium features, for example:<ul><li><Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Mobile fraud protection</li><li><Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Cost data</li><li><Anchor target="_blank" href="/marketers/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/pivot-table-user-metrics">Pivot table</Anchor></li><li><Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>To learn more about these features and their potential benefits for your business, check with your CSM or contact [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Future plan** | This section appears only when a future plan has been purchased. If this is the case, you'll see details on your next plan here. |
 
+<div id="usage-report" />
+
 ### Usage Report
 
 The Usage Report page shows your billable conversions and your return on investments—for ROI360 subscribers. From this page, you can:
 
 * Filter data by dates, apps, media sources, event sources, and event types.
 * [Download](#download-a-usage-report) a report according to the selected filters.
+
+<div id="access-to-the-usage-report-page" />
 
 #### Access to the Usage Report page
 
@@ -208,9 +234,13 @@ The Usage Report page shows your billable conversions and your return on investm
 
 * From the [**Account**](#account-page) page > **My Plan**, click **Usage report** on the top-right.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Usage report isn't supported for the Monthly Active User (MAU) plan.
+
+<div id="data-included-in-the-usage-report" />
 
 #### Data included in the usage report
 
@@ -227,10 +257,14 @@ The Usage Report page shows your billable conversions and your return on investm
 * By default, the date range shows data from the 1st of the current month to the present day. You can change this by selecting different dates from the filter at the top of the table.
 * Data in the report is retained for 24 months.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > * Usage reports and invoices are calculated based on the UTC+0 time zone. As a result, there may be slight discrepancies between usage reports and the data reported on dashboards, Cohort reports, and other aggregated reports.
 > * Data in the usage report remains **non-transparent** whether or not <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding#transparency">**Allow transparency**</Anchor> is turned on, meaning they show the agency name and not the attributed media source
+
+<div id="usage-report-fields" />
 
 #### Usage report fields
 
@@ -268,11 +302,15 @@ See below the field specifications for measurement conversions and ROI360 events
 
 </Accordion>
 
+<div id="download-a-usage-report" />
+
 #### Download a usage report
 
 1. From the **My plan** tab, click **Usage report.**
 2. Select the date range and any other filters.
 3. Click **Download** from the top of the table. The file is downloaded in CSV format.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -281,11 +319,15 @@ See below the field specifications for measurement conversions and ROI360 events
 > * Applied filters: The usage report aligns with the selected filters.
 > * [Completeness:](#data-included-in-the-usage-report) The report may be partial, depending on the current day of the month and the chosen date range.
 
+<div id="account-status" />
+
 ### Account status
 
 The status of your account is shown at the top left of the Account page. The possible statuses are:
 
 <table><thead><tr><th>Account status</th><th>Description</th><th>Comments</th></tr></thead><tbody><tr><td rowspan="2">Active account</td><td>All <strong>Welcome</strong> and <strong>Zero</strong> plans</td><td>Don't require a payment method</td></tr><tr><td><strong>Growth</strong> and <strong>Enterprise</strong> plans with a valid payment method and no overdue invoices</td><td> </td></tr><tr><td>Pending suspension</td><td>An account with one or more overdue invoices. After 30 days of unpaid invoices, the account becomes suspended.</td><td>You can regain Active status by making <a href="./account-management-plans-payments-and-billing#pay-overdue-invoices">invoice payments</a></td></tr><tr><td>Suspended</td><td>An account with overdue invoices over 30 days.</td><td>You don't have access to your account except for the My Plan, user management, and payment section.<br/>You can regain access and regain Active status by making invoice payments</td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### Upgrade, downgrade, or delete an account
 
@@ -305,13 +347,19 @@ To delete or downgrade an account, contact your CSM or send an email to [hello@a
 * Download invoices (PDF)
 * Choose a payment method (for Growth customers, a credit card is required)
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > The **Payments & invoices** tab is available only for plans that require payment (plans other than [Welcome or Zero](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
 
+<div id="payment-methods-easy--secure-invoicing" />
+
 ### Payment methods: easy & secure invoicing
 
 Learn about the payment options available for your AppsFlyer invoices and why ACH is the best choice for US customers.
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 #### Recommended for US customers: ACH (Automated Clearing House)
 
@@ -328,7 +376,11 @@ See the video below for a quick walk-through on how ACH works and why many finan
 | Bank-level security | Secure flow that integrates directly with your online bank. |
 | Fully automated | Convenient for both **Recurring Payments** (set it once and forget it) and **PayNow** (fast, one-time payments). |
 
+<div id="payment-types" />
+
 ### **Payment types**
+
+<div id="hands-free-recurring-payments" />
 
 ##### **Hands-free recurring payments**
 
@@ -338,9 +390,13 @@ To Set Up, go to **Payments & invoices** → **Update Payment Method**.
 
 **For US customers,** **ACH** provides the most reliable recurring payment experience.
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > Automatic charges will not be processed if you have a prepayment plan, a credit balance, the invoice was paid by wire transfer, or there is a billing issue.
+
+<div id="paynow-manual-invoice-payment" />
 
 ##### **PayNow (manual invoice payment)**
 
@@ -349,6 +405,8 @@ Pay open invoices manually at any time directly through the portal.
 To use, go to **Payments & invoices**, select the open invoice, and click **Pay**.
 
 **For US Customers,** **ACH PayNow** offers the fastest and most consistent manual payment experience.
+
+<div id="set-up" />
 
 ## Set up
 
@@ -418,11 +476,15 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 
 </Accordion>
 
+<div id="managing-payment-methods" />
+
 ### **Managing Payment Methods**
 
 To delete a saved payment method (ACH account or credit card) from Recurring Payments, **submit a Support ticket** requesting deletion of the payment method.
 
 **Note:** You can’t delete payment methods directly in the portal.
+
+<div id="invoices" />
 
 ### Invoices
 
@@ -436,6 +498,8 @@ In this section, you can see paid and unpaid invoices, download them, and [pay o
 | **Due** | Last date for invoice payment |
 | **Status** | **Paid**, **Due**, or **Overdue** |
 | **PDF** | Click **View** to open an invoice in PDF format |
+
+<div id="pay-overdue-invoices" />
 
 ### Pay overdue invoices
 
@@ -451,6 +515,8 @@ Paying overdue invoices for accounts with a [status](/docs/account-management-pl
 
 From this tab you can view and update your company details and contact persons for billing. [![billing_details_tab2.png](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
 
+<div id="company-billing-details" />
+
 ### Company billing details
 
 When choosing a **Growth** or custom **Enterprise** plan, you must provide company billing information. This information can be updated at any time. For generating an invoice, you must provide company billing details, and at least one billing contact.
@@ -461,12 +527,16 @@ When choosing a **Growth** or custom **Enterprise** plan, you must provide compa
 2. Read the legal terms and accept them by marking the checkbox.
 3. Click **Submit**. A popup message indicates if the changes were saved successfully.
 
+<div id="note-7" />
+
 > 📘 **Note**
 >
 > * If you change the company name or address, then AppsFlyer legal terms appear and must be accepted. If there are any issues, contact [accounting@appsflyer.com](mailto:accounting@appsflyer.com).
 > * If there is missing or invalid information, the billing details won't be saved. For example:
 >   * If the [company tax number](/docs/account-management-plans-payments-and-billing#company-tax-number) is required by your country, it must be entered in the correct format.
 >   * The postal code (ZIP code) must match the selected location.
+
+<div id="billing-contacts" />
 
 ### Billing contacts
 
@@ -478,9 +548,13 @@ Act as a focal point to receive invoices and for communications regarding any pa
 2. Click **Save billing details**. Make sure to have There must be at least one billing contact.
 3. A popup message indicates if the changes were saved successfully.
 
+<div id="note-8" />
+
 > 📘 **Note**
 >
 > There must be at least one contact person, and they don't need to be an admin user.
+
+<div id="billing-details" />
 
 #### Billing details
 
@@ -489,9 +563,13 @@ Act as a focal point to receive invoices and for communications regarding any pa
 | Company billing details | <ul><li>**Company billing name:** Auto-filled based on the sign-up form</li><li>**Company tax number:** See the [following tab](/docs/account-management-plans-payments-and-billing#company-tax-number) for details</li><li>**Company invoice name** (in English): Appears on the invoice</li><li>**Currency:** USD, ILS, EUR, or GBP</li><li>**Street address:** Auto-filled based on the sign-up form:<ul><li>Street address</li><li>City (in English)</li><li>Postal code: Must match the selected location</li><li>Country: Select from the list</li></ul></li><li>If relevant, add a state, province, or territory</li><li>If necessary, update billing details within the platform or contact [accounting@appsflyer.com](mailto:accounting@appsflye.com)</li></ul> |
 | Billing contact | Enter the required contact details:<ul><li>**Name:** Must be in English only</li><li>**Email, Phone:** Must be provided</li></ul> |
 
+<div id="company-tax-number" />
+
 ### Company tax number
 
 Certain countries, listed in the table below, require us to record your company tax number and add VAT to your invoices. If your company is in one of these countries, you must provide your company tax number in the correct format of the country. Otherwise, your billing details won't be saved.
+
+<div id="countries-requiring-company-tax-number" />
 
 #### Countries requiring company tax number
 
@@ -500,6 +578,8 @@ Certain countries, listed in the table below, require us to record your company 
 | Canada | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">GST/HST program account number</Anchor> |
 | EU countries | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">VAT Information Exchange System (VIES)</Anchor> |
 | Israel | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">Israeli VAT registration</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### Conversion measurement options for iOS app billing
 

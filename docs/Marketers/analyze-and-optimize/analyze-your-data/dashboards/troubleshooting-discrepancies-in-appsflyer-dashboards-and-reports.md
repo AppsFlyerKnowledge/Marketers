@@ -31,6 +31,8 @@ x-zendesk:
 ---
 > **At a glance:** Understand why there can be differences and discrepancies when comparing data from different dashboards and reports. Often, this may be because data in one place is lifetime value (LTV) data and in another it's activity data. LTV data is related to installs that occurred during a specified date range. Activity data is events that occurred during a specified date range.
 
+<div id="about-data-differences-and-discrepancies" />
+
 ## About data differences and discrepancies
 
 When comparing data from different dashboards and reports, the general reason for discrepancies is that you may not be comparing the same data to the same data. The following is a quick checklist to help you make sure you're comparing same to same:
@@ -46,6 +48,8 @@ When comparing data from different dashboards and reports, the general reason fo
 
 One of the most common reasons for differences in data is due to comparing an LTV dashboard or report to an activity dashboard or report. See the following sections to learn more about LTV vs activity.
 
+<div id="ltv-vs-activity" />
+
 ## LTV vs. Activity
 
 There are two methods for analyzing user event data. Event data relates to actions performed by users post-installation, such as in-app purchases, registrations, and level completions. In AppsFlyer, event data is available grouped by the user acquisition date or the event date.
@@ -57,16 +61,22 @@ There are two methods for analyzing user event data. Event data relates to actio
 
 Advertisers find both types of data useful but for different purposes. For this reason, both are available.
 
+<div id="ltv-data" />
+
 ### LTV data
 
 * LTV data are the events performed during the lifetime of a user who converted/installed the app in a specific date range. The date range refers to users who installed during the time period and shows how valuable they are during their time as customers. If a user converted/installed the app before the specified date, then even if events occurred during the specified date range, they don't show in LTV dashboards and reports.
 * LTV data is a tool that shows the **quality of users** from different media sources. Campaign optimization depends on LTV data.
+
+<div id="activity-data" />
 
 ### Activity data
 
 * Activity data shows what users did during a specified date range. meaning what events were performed by active app users during a specified date range. It doesn't matter if the users converted/installed the app outside of the date range.
 * Because activity data shows a breakdown of chronological events, it's useful for measuring the overall performance of media sources during specific date ranges. For example, use activity data to see how many purchase events were performed by all app users during a specific month.
 * Use activity data to compare user behavior in the current month relative to a previous month.
+
+<div id="the-train-analogy" />
 
 > 📄 **The train analogy**
 >
@@ -83,6 +93,8 @@ Advertisers find both types of data useful but for different purposes. For this 
 > * You aren't able to view the actions of passengers in other railroad cars because they boarded the train before or after you. This then is LTV.
 >
 > <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+
+<div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 
 ### AppsFlyer dashboards and reports—LTV or activity?
 
@@ -109,6 +121,8 @@ The following table shows which dashboards and reports are LTV and which are act
 | Master API—campaign performance KPIs | Both |
 | Pivot table | Both |
 
+<div id="compare-data-between-different-dashboards-and-reports" />
+
 ## Compare data between different dashboards and reports
 
 The following sections explain how you can compare data between different dashboards and reports while effectively mitigating and troubleshooting the reasons why you might see differences or discrepancies in the data.
@@ -124,12 +138,16 @@ When comparing AppsFlyer data, consider that when comparing LTV data and activit
 
 To compare the two types of data correctly we need to neutralize the differences. This can be achieved by retrieving LTV data from activity data or vice versa. **Note**: Minor differences between similar sources are still possible due to differences in report generation time.
 
+<div id="to-retrieve-ltv-data-out-of-raw-activity-data" />
+
 #### To retrieve LTV data out of raw activity data:
 
 1. In AppsFlyer, from the side menu, select **Report** > **Raw Data Export.**
 2. Set the **current day as the last day** of the date range (difference 2 solved).
 3. Download the raw in-app events report.
 4. Use the **Install time** column to filter out installs prior to the first day of the date range (difference 1 solved).
+
+<div id="to-retrieve-activity-data-out-of-ltv-data" />
 
 #### To retrieve activity data out of LTV data:
 
@@ -181,6 +199,8 @@ In-app events appear in both the LTV and Activity view in the dashboard. However
 When reconciling event counts with raw data, always compare them against the Activity dashboard or the Activity view in My Dashboards, as these views represent event occurrences on the day they occurred.
 
 Differences often arise when raw data isn’t filtered correctly, especially for retargeting events.
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
 
 #### **Reconcile raw data with Activity event metrics**
 

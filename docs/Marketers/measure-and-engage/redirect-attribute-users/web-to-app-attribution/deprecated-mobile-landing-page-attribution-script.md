@@ -39,15 +39,21 @@ Landing pages are a very common technique among digital marketers. They allow th
 
 However, for mobile user acquisition, the landing page strategy has upsides and downsides.
 
+<div id="the-upsides" />
+
 #### The upsides:
 
 * Leads, who eventually get to install, should be more engaged with the app.
 * The more complicated services (for example, financial services) require more explanations to convert their leads, which is enabled by landing pages.
 
+<div id="the-downsides" />
+
 #### The downsides:
 
 * The longer funnel reduces the final number of converted leads.
 * It is more technically challenging to attribute.
+
+<div id="the-challenges-of-mobile-attribution-on-landing-pages" />
 
 ## The challenges of mobile attribution on landing pages
 
@@ -55,6 +61,8 @@ However, for mobile user acquisition, the landing page strategy has upsides and 
 * **Last click attribution model may cause loss of correct attribution**, if the landing page has its own attribution links.
 * **Direct website visitors are recorded as organic**, unless the landing page has its own attribution links.
 * **Desktop visitors are recorded as organic**, unless the landing page has a method of recording their conversions into mobile users.
+
+<div id="the-solution" />
 
 ## The solution
 
@@ -64,6 +72,8 @@ In some cases, you also need to make some adjustments to your campaigns.
 
 The scenarios below cover the requirements for all possible media source cases.
 
+<div id="landing-page-scenarios" />
+
 ## Landing page scenarios
 
 Follow the implementation instructions below **for all the media sources** sending leads to your landing pages.
@@ -72,6 +82,8 @@ Follow the implementation instructions below **for all the media sources** sendi
 
 <Accordion title="Meta ads: cross-platform attribution">
 
+<div id="description" />
+
 #### Description:
 
 Meta ads is an SRN, which doesn't use external attribution links.
@@ -79,6 +91,8 @@ Meta ads is an SRN, which doesn't use external attribution links.
 Upon the first app launch, AppsFlyer queries Meta ads whether the user has previously (within the last 28 days) engaged with an advertiser ad on the Facebook app. If they have, Meta ads self-attributes.
 
 Meta ads also attributes cross-platform, meaning that the user may interact with any type of campaign, mobile or not, on any platform, to be self-attributed by Meta ads.
+
+<div id="conclusion" />
 
 #### Conclusion:
 
@@ -90,11 +104,15 @@ However, when users opt not to share their device ID, as is expected with iOS 14
 * New users who share their device ID would be attributed to Meta ads correctly.
 * New users who don't share their device ID would be attributed to "Facebook\_LP".
 
+<div id="instructions" />
+
 #### Instructions:
 
 1. On your Meta ads account create a **“Traffic” or "Conversions" campaign with mobile attribution enabled**, sending leads to your landing page.
 2. Landing page Android download button - direct link to Google Play.
 3. Landing page iOS download button - direct link to iTunes (OR attribution link **without the device ID**).
+
+<div id="what-the-script-does" />
 
 #### What the script does
 
@@ -108,11 +126,15 @@ In the script, look for a method called ***isFacebook()*** to learn more about 
 
 <Accordion title="Google Ads: GCLID + offline conversion upload">
 
+<div id="description-1" />
+
 #### Description:
 
 The usual process for install attribution of Google Ads campaigns requires clicking leads to be redirected to the app's store page URL.
 
 So, when redirecting leads from Google Ads to a landing page, use a mediator to connect between the mobile install and the original click on the non-mobile Google Ads campaign.
+
+<div id="conclusion-1" />
 
 #### Conclusion:
 
@@ -122,9 +144,13 @@ The first part takes care of **attributing on AppsFlyer** the mobile users that 
 
 The second part takes care of **notifying Google Ads** about these mobile installs, using Google's offline conversion upload method.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > This GCLID solution is not officially supported or recommended by Google. In case that Google deprecates the GCLID parameter, we will change the script to support the changes. We recommend following this article, by clicking the ***Follow*** button in the article header, to get informed when there is an update to the article or attached script.
+
+<div id="instructions-1" />
 
 #### Instructions:
 
@@ -157,6 +183,8 @@ The conversions can be uploaded manually or via an Adwords API (more info on the
 
 You can export the CSVs with this information from your AppsFlyer account, or you can get this data from Push API in real-time for every install.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > You can also see the keywords your users searched for in AppsFlyer's raw data in a similar fashion to getting the GCLID:
@@ -166,6 +194,8 @@ You can export the CSVs with this information from your AppsFlyer account, or yo
 > 3. The value is added to the generated OneLink URL under af\_keywords OneLink URL example: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
 >
 > The JS function below already contains the code to parse the keyword parameter as well.
+
+<div id="what-the-script-does-1" />
 
 #### What the script does
 
@@ -179,16 +209,22 @@ In the script, look for **gclidValue** to learn how the script detects users co
 
 <Accordion title="Other SRNs: add parameter">
 
+<div id="description-2" />
+
 #### Description:
 
 Other <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRNs</Anchor>, for example, Snapchat or Twitter, are not cross-platform like Meta ads, and require a bit of work to get your mobile users attributed to them.
 
 Your campaigns with other SRNs lead your users to the landing page, and you are billed according to clicking leads, unrelated to any derived mobile users.
 
+<div id="conclusion-2" />
+
 #### Conclusion:
 
 When defining the landing page URL for a campaign on SRNs (besides Meta ads and Google Ads), add a Partner ID parameter to the URL, which states the original SRN.  
 The landing page launches a javaScript (see below) that parses that parameter and builds a OneLink URL, which has the Partner ID value. When mobile users click on that OneLink and install, they get attributed to the stated media source.
+
+<div id="instructions-2" />
 
 #### Instructions:
 
@@ -209,6 +245,8 @@ If you specify the real SRN name, e.g. twitter\_int, a postback might be sent to
 
 The script itself contains logic to prevent you from using these names. Look for `var SRNs` in the script. You should see a list of SRN names and a condition that checks if `pidValue` is any of these names. Remove this logic after you are done testing the script.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > If you're sending users to your landing page, we recommend that include the following parameter on the URL of your landing page:
@@ -218,6 +256,8 @@ The script itself contains logic to prevent you from using these names. Look for
 > * For Doubleclick: use "***&af\_pid=doubleclick\_lp***"
 > * For Meta ads Post (unpaid): use "***&af\_pid=fbpost\_lp***"
 > * For Oath (formerly Yahoo Gemini): use "***&af\_pid=oath\_lp***"
+
+<div id="what-the-script-does-2" />
 
 #### What the script does
 
@@ -231,17 +271,23 @@ To learn more about what the script does, look for **pidValue** in the script.
 
 <Accordion title="Attribution links: redirect with af_r">
 
+<div id="description-3" />
+
 #### Description:
 
 Attribution links are used for any media source, which is not an SRN. That includes thousands of integrated partners and any owned media you wish to attribute.
 
 Luckily, the solution for landing page attribution when using AppsFlyer's attribution links is simple (and similar to the solution for Meta ads).
 
+<div id="conclusion-3" />
+
 #### Conclusion:
 
 the attribution link redirects the lead to a landing page, and by that also takes care of the correct attribution (if a mobile install follows).
 
 All that is left to do is NOT prevent the correct attribution with another last click.
+
+<div id="instructions-3" />
 
 #### Instructions:
 
@@ -253,10 +299,14 @@ All that is left to do is NOT prevent the correct attribution with another last 
 5. Landing page Android download button - direct link to Google Play
 6. Landing page iOS download button - direct link to iTunes  
 
+   <div id="note-2" />
+
    > 📘 **Note**
    >
    > The script and HTML sample page provide the option to set one download button that serves both Android and iOS. Read the comments in the script to learn how to implement it.
 
+
+<div id="what-the-script-does-3" />
 
 #### What the script does
 
@@ -270,15 +320,21 @@ To learn more about what the script does to handle cases where users reach the l
 
 <Accordion title="Links with utm parameters: dynamic OneLink">
 
+<div id="description-4" />
+
 #### Description
 
 You may have traffic sources, which redirect users to your landing page using links with UTM parameters.
+
+<div id="conclusion-4" />
 
 #### Conclusion:
 
 If the original URL is NOT an AppsFlyer attribution link, the script searches for the ***utm\_source*** and ***utm\_campaign*** parameters in the link. If they exist, the script prepares a OneLink URL, that has them as the media source name (pid) and campaign name (c), respectively.
 
 Note that with AppsFlyer attribution links, which also contain UTM parameters, the AppsFlyer parameters are being used, rather than the UTM ones.
+
+<div id="instructions-4" />
 
 #### Instructions:
 
@@ -295,6 +351,8 @@ On your landing page load -
 4. New mobile users are attributed to the value of ***utm\_source*** as the media source
 5. No postback is sent to the media source.
 
+<div id="what-the-script-does-4" />
+
 #### What the script does
 
 The script looks for UTM parameters in the landing page URL. If it finds any, it converts them to OneLink parameters. This way, campaign information is carried over to the final attribution.
@@ -305,13 +363,19 @@ The script looks for UTM parameters in the landing page URL. If it finds any, it
 
 <Accordion title="Mobile organic visitors: OneLink with pid=website">
 
+<div id="description-5" />
+
 #### Description
 
 Mobile organic visitors are, by definition, direct mobile web leads from unknown sources. They rarely visit dedicated landing pages but may be the vast majority of mobile installs coming from the advertiser's website.
 
+<div id="conclusion-5" />
+
 #### Conclusion:
 
 If you have a significant amount of mobile organic traffic from your website, it's highly recommended to record the attribution data of your own traffic.
+
+<div id="instructions-5" />
 
 #### Instructions:
 
@@ -319,9 +383,13 @@ To attribute mobile organic visitors, the website should have ***download*** or 
 
 To learn how to set and build OneLink URLs go <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">here</Anchor>.
 
+<div id="tip-1" />
+
 > 👍 **Tip**
 >
 > Add "&pid=website" to your attribution link to attribute all these visitors to your website. In each page of your website, which has a download/install button with an attribution Link, add "&c=`{PAGE NAME}`". This can help you find the highest and lowest converting pages in your website.
+
+<div id="what-the-script-does-5" />
 
 #### What the script does
 
@@ -333,6 +401,8 @@ Exhausting all other options, the script determines that the user is an organic 
 
 <Accordion title="Desktop visitors: telephone/email form">
 
+<div id="description-6" />
+
 #### Description
 
 All the options covered above assume the users use mobile devices when engaging with the campaign and the landing page.
@@ -341,9 +411,13 @@ But what about desktop users?
 
 Desktop users may arrive at your landing page/website, and afterward "independently" visit the app store with their mobile devices, and install the mobile app. Without the preceding engagement with the mobile devices, it is impossible to attribute these users, and so, they are labeled as "Organic".
 
+<div id="conclusion-6" />
+
 #### Conclusion:
 
 A great solution to this attribution problem is using a **text-to-download form on your landing page**, only for desktop users. This is to be followed by sending the mobile device an SMS/Email with OneLink URL.
+
+<div id="instructions-6" />
 
 #### Instructions:
 
@@ -353,6 +427,8 @@ A great solution to this attribution problem is using a **text-to-download form 
 4. Add "&pid=desktop\_website" to the OneLink URL to identify this source.
 5. Add "&c=`{PAGE NAME}`" to help you find the highest and lowest converting pages in your website for desktop users.
 
+<div id="what-the-script-does-6" />
+
 #### What the script does
 
 The script detects the device or platform the user is on. If it's desktop, the script returns a link to a web form URL and puts it behind the download buttons. When the user clicks download, they are sent to a web form where they fill in their details to get an SMS or an email with a link to download the app.
@@ -360,6 +436,8 @@ The script detects the device or platform the user is on. If it's desktop, the s
 It's up to you to create the web form and provide the URL to it in the script. To learn more, look for **isMobileDevice()** in the script.
 
 </Accordion>
+
+<div id="landing-page-javascript" />
 
 ## Landing page javascript
 
@@ -598,13 +676,19 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
+<div id="tip-2" />
+
 > 👍 **Tip**
 >
 > You can implement the javascript snippet using Google Tag Manager. Google Tag Manager makes it easier for you to control when and where the landing page javascript should be used.
 
+<div id="instructions-7" />
+
 ### Instructions
 
 1. Activate the ***generateUrl*** script on page load of any page in your web site, which visitors can land on directly, and that has ***Download*** button/s for your mobile app/s.  
+
+   <div id="important" />
 
    > 🚧 **Important!**
    >
@@ -617,6 +701,8 @@ function generateUrl(isDebug) {
 4. Replace the ***partnerIDParam*** parameter value, if you wish mobile organic users to be attributed to another media source than 'website'.
 5. By default, users are attributed to the web page they are at when clicking the ***Download*** button unless another campaign name is specified in the landing page URL (`&c={CAMPAIGN_NAME}`). To change that, replace the value of ***campaignParam*** parameter value.  
    Optional for ALL scenarios, except Meta ads paid ads.
+
+<div id="viewing-the-results" />
 
 ## Viewing the results
 
@@ -637,6 +723,8 @@ If your mobile marketing funnel always leads to your landing page, these media s
 | **Integrated partner ID** | Users coming from an integrated partner's ad, which uses AppsFlyer's attribution link. For example, inmobi\_int, tapjoy\_int |
 | **desktop** | Desktop users filling in the web form, and completing an install after clicking on the SMS or email sent to their mobile devices afterwards |
 | **Other sources** | Users coming from owned media sources, which use AppsFlyer's attribution links. For example, email, sms, blog\_post, etc |
+
+<div id="onelink-for-landing-page-solution" />
 
 ## OneLink for landing page solution
 

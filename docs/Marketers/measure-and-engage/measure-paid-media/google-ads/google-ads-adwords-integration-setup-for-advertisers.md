@@ -34,6 +34,8 @@ x-zendesk:
 
 Set up the Google Ads integration in AppsFlyer to measure and attribute installs and in-app events from your Google Ads campaigns. In AppsFlyer, this integration is named `googleadwords_int`, and attribution results are reported under the media source `googleadwords_int`.
 
+<div id="google-ads-attribution-flow-with-advanced-data-sharing" />
+
 ## Google Ads attribution flow with advanced data sharing
 
 ![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
@@ -44,6 +46,8 @@ Set up the Google Ads integration in AppsFlyer to measure and attribute installs
 4. AppsFlyer validates the non-deterministic claim using its own probabilistic modeling. Only validated claims are accepted.
 5. After validation, the Google claim (if accepted) enters the attribution decision step, where AppsFlyer compares it against other potential attribution candidates (for example, other SRNs, click-based networks, organic). The install is attributed to the winning source based on AppsFlyer’s attribution logic and priority rules.
 6. If the claim is accepted and selected as the winning candidate, the install is attributed to Google. In raw data reports, deterministic claims will show a <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary#attribution::cecc12c5">match\_type</Anchor> of `srn`, while non-deterministic claims will show a match type of “`probabilistic`”.
+
+<div id="configuring-google-ads-attribution-for-advertisers" />
 
 ## Configuring Google Ads attribution for advertisers
 
@@ -107,6 +111,8 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 
    No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see <Anchor target="_blank" href="/marketers/docs/measure-reinstalls">Measure reinstalls</Anchor>.
 
+   <div id="important" />
+
    > 🚧 **Important!**
    >
    > A reinstall conversion data is **presented as a session\_start** on Google Ads dashboard. In AppsFlyer, it is attributed and seen as a re-attribution.
@@ -131,6 +137,8 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 14. Click the **Connect Google Ads** button, and log into your Google account to get all your Google Ads campaign costs on AppsFlyer. <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-cost-and-ad-revenue">More details here</Anchor>.
 15. Click **Save**.
 
+<div id="stop" />
+
 > ❗️ **Stop!**
 >
 > * If you need to map your in-app events to Google Ads, go through [step 5](#h_01HACTC1H50DDS3WCZ9DCHKN0P) first.
@@ -138,6 +146,8 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 </Accordion>
 
 <Accordion title="Step 4: Verify your app conversions (recommended)">
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >
@@ -160,6 +170,8 @@ When AppsFlyer sends conversion data for any event that isn’t set up in your G
 2. Click **Status** and select **All** to see all events, including disabled and removed events.
 3. If the event still doesn’t appear, import it by following the steps described in the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7382633?sjid=11699141105296914680-EU">Google Ads Help documentation</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If the Partner Event identifier in Google Ads has been changed or is labeled as CUSTOM, while the corresponding event name has been modified in AppsFlyer, you will need to re-import the data.
@@ -177,6 +189,8 @@ Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer
 ![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
 1. Go to the **Integration** tab and scroll down to the **In-app event postbacks** section.
+
+   <div id="note-1" />
 
    > 📘 **Note**
    >
@@ -204,9 +218,13 @@ Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > The Google Ads API integration automatically includes the Google Ads remarketing feature. By completing this integration and sending events to Google Ads you are able to create remarketing audience lists in Google Ads without any additional integrations.
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## Granting permissions to Google Ads team members
 
@@ -225,15 +243,21 @@ To grant a Google Ads team member access to your app, do the following:
 
 Read more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">providing permissions to Ad networks</Anchor>.
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## Enabling Google Ads attribution for agencies
 
 AppsFlyer supports agency configurations with Google Ads. It is essential that the advertiser and the agency have separate Google Ads accounts to enable AppsFlyer to correctly attribute the data. For details, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-agencies">Agency configuration for the Google Ads integration</Anchor>.
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## Running with multiple Google Ads accounts
 
 AppsFlyer supports working with multiple Google Ads accounts for the same app. This is performed through sharing the Link ID in Google Ads and importing the events into each Google Ads account.
 
 For further details, see the <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">Google documentation on sharing your Google Ads Link ID</Anchor>.
+
+<div id="ios-app-campaigns" />
 
 ## iOS app campaigns
 
@@ -251,6 +275,8 @@ Since modeled conversions are not reliant on device IDs, starting with the iOS14
 * iOS ACI Display inventory can be attributed when a device ID is present, provided that both the advertiser app and the publisher app have user consent.
 * Any iOS ACI campaign can be attributed through ICM. This applies when the device ID is unavailable in the advertiser app, the publisher app, or both.
 * Google currently claims only clicks on iOS. It does not claim impressions.
+
+<div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## Using deferred deep linking in App campaigns
 
@@ -270,9 +296,13 @@ When a potential user clicks on a feed, they are redirected to the app page. Aft
 4. In the **Integration** tab, turn on **Deferred deep linking with Google Ads.**
 5. Click **Save integration**.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > The Google Ads deferred deeplink value is only returned by Google for deterministic matches, based on device ID, and is not supported for probabilistic (ICM) matches.
+
+<div id="google-ads-parameter-mapping" />
 
 ## Google Ads parameter mapping
 
@@ -291,6 +321,8 @@ The following table describes the parameter mapping between Google Ads and AppsF
 | Site ID (`af_siteid`) | GoogleSearch/  <br />SearchPartners | N/A | YouTubeVideos/  <br />VideoPartners |
 | Keywords | N/A | N/A | N/A |
 
+<div id="populate-the-channel-parameter" />
+
 ### Populate the `Channel` parameter
 
 Google Ads doesn't send the `Channel(af_channel)` parameter. AppsFlyer determines how to populate this parameter for campaign types received from Google Ads, according to the following rules:
@@ -299,11 +331,17 @@ Google Ads doesn't send the `Channel(af_channel)` parameter. AppsFlyer determin
 
 For more information on what ad types are available in Google's response, see the <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google request and response specifications</Anchor>.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > When Google attributes an install through probabilistic attribution (ICM), Google doesn’t share the `network_type` with AppsFlyer. As a result, the network type is missing, and the channel value is `ACI_` (without a suffix).
 
+<div id="campaign-type-app-campaigns" />
+
 ### Campaign type: app campaigns
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Changes to campaign names by Google Ads
 
@@ -315,19 +353,27 @@ For more information on what ad types are available in Google's response, see th
 
 **Note:** Campaign name type is set according to the click or impression date, not the install date.
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### Engaged view parameter in raw data reports
 
 An engaged view is a user impression of a video ad that lasted more than 10 seconds. It has the same attribution priority as a click.  For Android, engaged views are displayed in raw data reports as `engaged_view` under the  `Engagement Type` and `Sub Param 5` parameters.   
 Engaged views are counted if they occur within the defined click lookback window in AppsFlyer, with a maximum limit of 3 days.
+
+<div id="important-2" />
 
 > 🚧 **Important!**
 >
 > * Google is an SRN (Self Reporting Network). For more information about how the attribution flow works for these networks, see <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">Self-reporting networks (SRNs)</Anchor>.
 > * AppsFlyer can present any campaign information that is provided by Google. The campaign type (Search, Video, Display) and associated information is determined by Google. For more information, see the <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google request and response specifications</Anchor>.
 
+<div id="send-complex-in-app-events-to-google-ads" />
+
 ## Send complex in-app events to Google Ads
 
 To send complex in-app events – events with multiple items – to Google Ads, we recommend using the new `af_order_info` event object. For more information, see <Anchor target="_blank" href="/marketers/docs/item-level-order-data-for-ad-networks-af-order-info">Item-level order data for ad networks (af\_order\_info)</Anchor>.
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## Optimize Google Ads campaigns for conversions without device ID
 
@@ -343,6 +389,8 @@ Beginning with iOS14.5+ and Android 12+, Google Ads introduced several identifie
 In Google Ads and AppsFlyer, advertisers can receive campaign-level data for traffic without device IDs for re-engagement, installs, and re-attribution activity. However, ad-set and ad-level data are not shared by Google.  
 **No action is needed from the advertiser to enable receiving these parameters.**
 
+<div id="data-visibility-by-operating-system" />
+
 ### Data visibility by operating system
 
 **Android apps:**
@@ -353,6 +401,8 @@ In AppsFlyer and Google Ads, advertisers can receive full campaign data for traf
 
 In Google Ads and AppsFlyer, advertisers can receive full campaign data for traffic without device IDs for their re-engagement activity.
 
+<div id="advertising-without-the-firebase-sdk" />
+
 ## Advertising without the Firebase SDK
 
 When advertising with Google Ads without the Firebase SDK implemented, the following limitations apply.
@@ -361,6 +411,8 @@ When advertising with Google Ads without the Firebase SDK implemented, the follo
 | --- | --- |
 | tROAS not supported | tROAS (target return on ad spend) optimization is only available when using Firebase SDK revenue events. AppsFlyer revenue events, and those from all other MMPs, are not eligible for this optimization. |
 | Audience exclusion not supported | Advertisers can only exclude users from App campaigns when the campaign is optimized toward Firebase SDK events, not MMP events. |
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
 
 ## Google probabilistic attribution (ICM) traits and limitations
 

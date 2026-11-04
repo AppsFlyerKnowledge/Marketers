@@ -32,6 +32,8 @@ x-zendesk:
 
 ![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## Server-to-server events API for mobile
 
 For iOS apps, starting iOS 14, you must send the os (operating system) parameter.
@@ -45,6 +47,8 @@ AppsFlyer populates S2S events with:
 
 To send events via API, tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">server-to-server events API instructions</Anchor>.
 
+<div id="populating-parameters" />
+
 ## Populating parameters
 
 <div id="difference-between-organic-and-nonorganic" />
@@ -54,6 +58,8 @@ To send events via API, tell your developer to follow their <Anchor target="_bla
 When AppsFlyer processes S2S in-app events, attribution fields are populated by using the AppsFlyer ID to identify the associated install event that preceded the in-app events.
 
 What this means is that some data that AppsFlyer associates with non-organic S2S in-app events, is not associated with organic S2S in-app events.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -176,9 +182,13 @@ AppsFlyer includes `ua` and `ip` automatically for events reported through the S
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > In order to be measured in <Anchor target="_blank" href="/marketers/docs/incrementality-for-remarketing-overview">Incrementality</Anchor>, S2S events must include the advertising ID in their payload (IDFA for iOS, GAID for Android).
+
+<div id="increasing-the-volume-of-data-transactions" />
 
 ## Increasing the volume of data transactions
 
@@ -192,6 +202,8 @@ When using gradual scaling, AppsFlyer can support a high volume of transactions 
   * 00:04:00 - increase to 18K TPS
   * …
 * Implement a retry mechanism to be used when receiving errors.
+
+<div id="troubleshooting" />
 
 ## Troubleshooting
 

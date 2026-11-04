@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png" width="120px" />
 
+<div id="setting-up-tencent-ams" />
+
 ## Setting up Tencent AMS
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -49,11 +51,15 @@ x-zendesk:
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="general-settings" />
+
 ### General settings
 
 The Integration tab is divided into different sections as described below. To integrate TencentAMS with AppsFlyer, you’ll need the following credentials: **account\_id, user\_action\_set\_id, and access\_token**. If you don’t already have these values, please get them directly from Tencent AMS before proceeding with the integration.
 
 <Image alt="tencent.png" src="https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png" width="248px" />
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -64,14 +70,20 @@ The Integration tab is divided into different sections as described below. To in
 >
 > **Agency-managed traffic:** If your traffic is promoted by an agency, **the agency must also fill in and maintain the token on their side**.
 
+<div id="enable-view-through-attribution" />
+
 #### Enable View-Through attribution
 
 To enable view-through install attribution, turn this on.  
 The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 #### Default postbacks
 
 AppsFlyer can send automatic postbacks to Tencent AMS following user installs. This section displays the **source of the users** that allow sending these postbacks.
+
+<div id="in-app-event-settings" />
 
 #### In-app event settings
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance**: AppsFlyer models aggregate data that basic SKAdNetwork reporting is unable to provide.
 
+<div id="overview" />
+
 ## Overview
 
 SKAdNetwork (SKAN) reporting can be limited because:
@@ -36,6 +38,8 @@ SKAN modeled data solves these issues:
 * Advertisers get a more complete picture regarding app and campaign LTV performance
 
 **Note**: When you change your conversion value schema, it takes 2 days for modeled data to become available.
+
+<div id="modeled-data-types-and-availability" />
 
 ## Modeled data types and availability
 

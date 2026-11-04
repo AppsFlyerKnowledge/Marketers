@@ -24,6 +24,8 @@ x-zendesk:
 
 [![Website_Attribution.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
 
+<div id="pba-website-attribution" />
+
 ## PBA Website Attribution
 
 Using the Website Attribution dashboard advertisers gain an insight as to the media sources driving visitors and conversions.
@@ -37,6 +39,8 @@ Using the Website Attribution dashboard advertisers gain an insight as to the me
 | --- | --- |
 | ![Icon1.png](https://files.readme.io/b20da70a56d881dd2fe31b18df8919db43b47e3e2338b89da7ef5ef6467590d6-360013383937.png) | **Effectiveness**<br /><br />Which acquisition channels deliver the best performance KPIs—such as conversion rate or ARPU? |
 | ![s4.png](https://files.readme.io/9a426232668022a9b4d006e685d2384d61efe4814c377aa9295e9b7887f14fef-360013383957.png) | **Comparative analysis**<br /><br />How do my paid campaigns compare to my owned channels and earned traffic? On which device types and platforms do my web users convert? |
+
+<div id="dashboard-reference" />
 
 ## Dashboard reference
 

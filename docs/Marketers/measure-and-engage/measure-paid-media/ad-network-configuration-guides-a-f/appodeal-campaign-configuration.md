@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Appodeal, an AppsFlyer integrated partner, provides app owners with click attribution and an all-in-one ad monetization solution. Ad revenue is reported with user-level granularity.
 
+<div id="setting-up-appodeal-integration" />
+
 ## Setting up Appodeal integration
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)

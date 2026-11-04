@@ -25,7 +25,11 @@ x-zendesk:
 ---
 > **At a glance:** Optimize Apple Ads campaigns by using Bidalgo. When configured, AppsFlyer sends postbacks to Bidalgo.
 
+<div id="enabling-sending-postbacks-to-bidalgo-apple-ads-marketing-partner" />
+
 ## Enabling sending postbacks to Bidalgo (Apple Ads marketing partner)
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -35,6 +39,8 @@ Both advertisers and agencies can enable attribution for Apple Ads.
 
 * **Advertisers:** follow the instructions below on how to enable attribution for Apple Ads.
 * **Agencies:** <Anchor target="_blank" href="/marketers/docs/apple-ads-integration-setup#agency-setup">follow these instructions</Anchor> to enable attribution for Apple Ads.
+
+<div id="configuring-bidalgo" />
 
 ### Configuring Bidalgo
 
@@ -57,9 +63,13 @@ Both advertisers and agencies can enable attribution for Apple Ads.
    5. Enter Bidalgo's **Apple Ads Campaign ID** that you retrieved in the earlier step. Enter the digits (numbers) only.
    6. Click **Save**.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Installs and re-engagements are sent automatically when the partner is activated.
+
+<div id="configuring-in-app-events-postbacks" />
 
 ### Configuring in-app events postbacks
 

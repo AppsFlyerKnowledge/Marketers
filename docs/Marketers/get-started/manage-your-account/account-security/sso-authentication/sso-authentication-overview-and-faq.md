@@ -22,13 +22,19 @@ x-zendesk:
 ---
 > **At a glance:** Learn about single sign-on (SSO) authentication and the process of logging in to AppsFlyer via with your identity provider (IdP) using SSO. Find answers to FAQs about SSO login.
 
+<div id="what-is-sso-authentication" />
+
 ## What is SSO authentication?
 
 SSO is an authentication method that allows users to access multiple independent apps, systems, or platforms by logging in once via your identity provider (for example, Okta, Azure AD, or OneLogin). Adding AppsFlyer to your IdP lets your users sign into AppsFlyer directly from your IdP by a single sign-on (SSO) process. This lets your users sign in automatically with more **secure authentication** using only one set of credentials.
 
+<div id="how-does-sso-authentication-work" />
+
 ## How does SSO authentication work?
 
 The AppsFlyer platform supports SSO verification using the SAML2.0 protocol. By implementing AppsFlyer's authentication certificate into your SAML 2.0 IdP, your IdP generates a token with authenticated user data. The same process is done from your IdP to AppsFlyer—their token is implemented in AppsFlyer.
+
+<div id="the-appsflyer-service-provider-authentication-certificate" />
 
 ## The AppsFlyer (service provider) authentication certificate
 
@@ -37,9 +43,13 @@ AppsFlyer provides an encryption certificate to encrypt data and sign the SSO re
 * **AppsFlyer-signed certificate:** An AppsFlyer certificate created from the <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">AppsFlyer metadata URL</Anchor>
 * **CA-signed certificate:** An AppsFlyer certificate **signed by Amazon**.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > AppsFlyer does not support negative serial numbers in the certificate.
+
+<div id="troubleshooting-and-faq" />
 
 ## Troubleshooting and FAQ
 
@@ -87,6 +97,8 @@ AppsFlyer will alert you via the platform when your AppsFlyer SSO certificate is
 <Accordion title="Force SSO login is disabled, how can I enable it?">
 
 Once the **Force SSO login** option is selected and the configuration is saved, this option becomes disabled. To revert and have **Force SSO login** enabled, you'll need to re-configure <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">step 2</Anchor> of the SSO process from the beginning.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

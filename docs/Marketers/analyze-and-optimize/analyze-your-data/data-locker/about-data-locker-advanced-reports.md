@@ -24,9 +24,13 @@ x-zendesk:
 
 <Embed title="About Data Locker Advanced Reports" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube.com" />
 
+<div id="about-advanced-reports" />
+
 ## About Advanced Reports
 
 The sections below cover how Advanced Reports consolidate data by product, arrive ready to use with no extra preparation, and let you control exactly what each report returns.
+
+<div id="consolidated-data-by-data-product" />
 
 ### Consolidated data by data product
 
@@ -34,6 +38,8 @@ Advanced Reports organize event-level raw data around data products.
 
 * Each report covers one full data product, so there are no fragmented files to stitch together.
 * Data from mobile, web, and CTV lives in a single file with a shared schema.
+
+<div id="data-that-is-ready-to-use" />
 
 ### Data that is ready to use
 
@@ -43,6 +49,8 @@ Legacy reports returned all fields as plain strings with inconsistent naming, re
 * **Unified schema:** consistent, validated structure across all data products.
 * **Self-explanatory field names:** consistently named and self-explanatory across all reports, making data easier to work with directly in BI (business intelligence) tools, analyst workflows, and AI-powered applications.
 
+<div id="precise-control-over-what-you-receive" />
+
 ### Precise control over what you receive
 
 Advanced Reports let you tailor each report to your exact needs without any post-processing:
@@ -50,6 +58,8 @@ Advanced Reports let you tailor each report to your exact needs without any post
 * **Schema customization:** add or remove fields to match your downstream requirements.
 * **Report-level filters:** scope data to a specific platform, conversion type, country, or event.
 * **Pre-built templates:** start instantly with field and filter configurations designed for common use cases.
+
+<div id="advanced-reports-vs-legacy-reports" />
 
 ## Advanced Reports vs. legacy reports
 
@@ -64,6 +74,8 @@ The table below highlights the key differences between Advanced Reports and lega
 | **Platform coverage** | Separate reports per platform with different schemas | Mobile, web, and CTV consolidated in a single report with a shared schema |
 | **Filters** | Basic filter selection | Report-level multi-select filters per several dimensions, plus pre-built templates for common use cases |
 | **AI and BI readiness** | Required type casting, schema alignment, field normalization, field renaming | Typed, validated, and consistently named, with **Self-explanatory** field names that are easy to interpret by both humans and AI-powered applications |
+
+<div id="available-reports" />
 
 ## Available reports
 
@@ -116,6 +128,8 @@ The cross-platform conversions-with-assists report shows the complete user journ
 
 </Accordion>
 
+<div id="report-templates" />
+
 ## Report templates
 
 Templates are pre-configured report presets designed for common use cases. Each template is associated with a specific data product and comes pre-loaded with the fields and filters most relevant to that report's common use cases. Selecting a template automatically loads the correct fields and filters. You can edit the pre-filled report name before saving.
@@ -128,6 +142,8 @@ The following pre-defined templates are available:
 | --- | --- | --- |
 | **Web Conversions** | Conversions | Attribution anchors for web, including first visits, revisits, and user-acquisition events. All downstream user events inherit campaign details from these conversions. |
 | **Web Events** | End-user events | All web events and sessions. Use this as your primary report for visit-level and event-level analysis. |
+
+<div id="report-level-filters" />
 
 ## Report-level filters
 

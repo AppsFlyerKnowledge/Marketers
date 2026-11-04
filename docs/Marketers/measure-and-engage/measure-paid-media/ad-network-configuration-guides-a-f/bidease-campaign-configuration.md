@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="100px" />
 
+<div id="setting-up-bidease" />
+
 ## Setting up Bidease
 
 The integration with Bidease supports click-through and view-through attribution.
@@ -42,6 +44,8 @@ The integration with Bidease supports click-through and view-through attribution
 
 The general configuration window includes the following tabs: Integration, Attribution link, Cost, Ad revenue, and Permissions. For Bidease, the available tabs are Integration, Attribution link, and Permissions.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * Some settings differ for iOS and Android devices
@@ -53,10 +57,14 @@ The general configuration window includes the following tabs: Integration, Attri
 
 The **Integration** tab includes a number of sections, as described below.
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 Turn on the **Activate partner** toggle.  
 **Note:** The toggle **must stay on (active) as long as you work with the partner.**
+
+<div id="advanced-privacy" />
 
 #### Advanced Privacy
 
@@ -68,13 +76,19 @@ Turn on the **Activate partner** toggle.
 | Postbacks are sent according to the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">Aggregated and anonymous data</Anchor> is shared with the partner, meaning no user-level data (device ID) is shared. |  |
 
+<div id="transaction-id" />
+
 #### Transaction ID
 
 **For iOS apps only:** When **Share SKAN transaction ID** is turned on, you're allowing AppsFlyer to <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">share the transaction ID of SKAdNetwork postbacks</Anchor> with Bidease. By doing so, Bidease could decode your SKAdNetwork Conversion Values.
 
+<div id="install-attribution" />
+
 #### Install attribution
 
 To attribute view-through installs from Bidease, turn on **Install view-through attribution**. The view-through lookback slider is available on the [Attribution link tab](#attribution-link-tab).
+
+<div id="default-postbacks" />
 
 #### Default postbacks
 
@@ -84,6 +98,8 @@ Define the source of users for sending automatic postbacks to partners relating
   * **This partner only:** Send postbacks only when the install is attributed to this partner—meaning, the user who installed the app came from Bidease.
   * **All media sources, including organic:** Send postbacks for installs attributed to any partner and for organic events—meaning, the user who installed the app came from any media source.
 * For **Rejected installs** and **Re-engagements:** Postbacks are sent to Bidease only.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -106,6 +122,8 @@ Configure mapping of in-app events with Bidease events, sent via postbacks:
    1. From the top-left corner, under the partner name, click the app name to open the list of apps.
    2. Select a different app from the drop-down list.
    3. Repeat the <Anchor target="_blank" href="/marketers/docs/amazon-ads-campaign-configuration#integration-tab">integration steps</Anchor> for the selected app.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -144,6 +162,8 @@ Generate and save attribution links and send them to the partner for attributing
 <Accordion title="Permissions tab">
 
 Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions you're granting</Anchor> Bidease to access your data and perform various actions.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >

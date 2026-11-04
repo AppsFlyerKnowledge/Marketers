@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Criteo (Legacy), an AppsFlyer ad network integrated partner, is a personalized retargeting company that works with Internet retailers to serve personalized online display advertisements to consumers who have previously visited the advertiser's website. In addition to click-based mobile attribution, Criteo (Legacy) also offers retargeting, which you can record with AppsFlyer.
 
+<div id="setting-up-criteo-legacy" />
+
 ## Setting up Criteo (legacy)
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,6 +48,8 @@ The Criteo (legacy) configuration window includes 4 tabs: Integration, Attributi
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -57,14 +61,20 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 On the **first visit** here, you must toggle ON the ***Activate Partner*** button to enable the setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Criteo (Legacy) prefers to receive postbacks for all new installs of your app from ANY source, including organic. It is recommended to select **Events attributed to any partner** to send all install postbacks to Criteo (Legacy).
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -72,6 +82,8 @@ Send automatic postbacks to Criteo (Legacy) following user installs and re-engag
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Criteo (Legacy).  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Criteo (Legacy).
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -100,6 +112,8 @@ In this tab, you can create the attribution links you want to send to Criteo (Le
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -118,6 +132,8 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -152,6 +168,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Criteo (Legacy).
@@ -159,6 +177,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -193,6 +213,8 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

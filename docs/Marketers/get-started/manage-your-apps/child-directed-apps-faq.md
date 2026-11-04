@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **At a glance:** Get answers to frequently asked questions about apps directed towards children.
 
+<div id="overview" />
+
 ## Overview
 
 There are many policies, laws, and regulations on child-directed apps to protect children's privacy. The main ones are [COPPA](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) and [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2029-1-1). In recent years, platforms such as iOS and Android have implemented policies for improved privacy for children. When creating an app, one of the first things to do is determine whether it’s directed to children only or to a mixed audience (both children and adults). Learn from <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">this guide</Anchor> how to implement a compliant attribution solution for apps directed to children.
+
+<div id="adding-a-child-directed-app" />
 
 ## Adding a child-directed app
 
@@ -76,6 +80,8 @@ Once confirmed that an app is directed toward children, there are two ways you c
 
 </Accordion>
 
+<div id="implementing-appsflyer-compliance-tools" />
+
 ## Implementing AppsFlyer compliance tools
 
 <div id="how-do-i-know-which-tool-to-use" />
@@ -83,6 +89,8 @@ Once confirmed that an app is directed toward children, there are two ways you c
 <Accordion title="How do I know which tool to use?">
 
 When your app is intended for children or a mixed audience (children and adults), you can use any of the recommended tools from <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">this guide</Anchor> that align with the legal requirements. See more SDK resources at the bottom of this page. 
+
+<div id="examples-of-compliance-tools-and-their-use" />
 
 #### Examples of compliance tools and their use
 
@@ -150,6 +158,8 @@ Except for postbacks, ad networks and agencies have <Anchor target="_blank" href
 The SDK records your app events, such as installs, re-engagements, and in-app events. Without the SDK, there's no attribution. You can <Anchor target="_blank" href="/marketers/docs/additional-sdk-integration-guide#user-privacy">preserve user privacy with the SDK</Anchor> and show just aggregate data.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

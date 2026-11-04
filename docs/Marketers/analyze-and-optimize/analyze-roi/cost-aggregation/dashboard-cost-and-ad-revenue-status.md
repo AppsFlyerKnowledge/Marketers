@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Advertisers and agencies can check the status of cost and ad revenue integrations.
 
+<div id="cost-and-ad-revenue-integration-status" />
+
 ## Cost and Ad Revenue integration status
 
 * The dashboard displays the current operational status of your cost/ad revenue integrations.
@@ -37,6 +39,8 @@ x-zendesk:
 * For integrations that require corrective actions, the action required displays.
 * To view cost and ad revenue status, in AppsFlyer, from the side menu, select **Settings** > **Cost & Ad Revenue Status**.
 * The image and table that follow breaks down the dashboard components.
+
+<div id="cost--ad-revenue-status-dashboard" />
 
 #### Cost & Ad Revenue Status dashboard
 

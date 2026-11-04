@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** WiFi Master Key Ads is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-wifi-master-key-ads" />
+
 ## Setting Up WiFi Master Key Ads
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,10 +44,14 @@ WiFi Master Key Ads configuration window includes 3 active tabs: Integration, At
 
 <Accordion title="Integration Tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -55,9 +61,13 @@ WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey.
 
 <Image alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
 
+<div id="default-postbacks" />
+
 ### Default Postbacks
 
 <Image alt="mceclip2.png" src="https://files.readme.io/588a3705302d9f7090fd3c3f0c1a2cbe9e0f2979cd459730881f037a651c087d-50900269522961.png" width="509px" />
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -90,6 +100,8 @@ In this tab, you can create the attribution links you want to send to WiFi Maste
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution Link Parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -111,6 +123,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to WiFi Master Key Ads.
@@ -120,6 +134,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/04ee2b418a6a639e846db8422720900b9c735612d98345201ffda31ffaa00c8e-50900269527057.png)
+
+<div id="click-attribution-link" />
 
 ### Click Attribution Link
 
@@ -150,6 +166,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant WiFi Master Key Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for WiFi Master Key Ads, the permissions tab is active and you can grant control to WiFi Master Key Ads.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/cb1764505f3d9770ad17525179f1740cbbdeca371a1e82655c76093327bd826c-50900288881809.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

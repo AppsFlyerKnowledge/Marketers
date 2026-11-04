@@ -28,9 +28,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## About brand bundles
 
 Brands operate in an ecosystem encompassing both web and mobile properties. As an advertiser, a full picture of brand performance across platforms–web and mobile–is needed. In PBA, brand bundles consolidate the data of mobile and web properties into a single entity for purposes of analytics and raw data.
+
+<div id="what-is-a-web-app" />
 
 > 📘 **What is a web app?**
 >
@@ -46,6 +50,8 @@ Brands operate in an ecosystem encompassing both web and mobile properties. As a
 * Apps can't be deleted from a bundle or moved from one bundle to another without [deleting the original bundle](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
   * On bundle deletion, AppsFlyer stops attributing PBA data for the bundle, and access to its historical data is no longer available.
 
+<div id="accessing-brand-bundles" />
+
 ## Accessing brand bundles
 
 Access the **Brand Bundles** page to manage brand bundles and their settings:
@@ -53,6 +59,8 @@ Access the **Brand Bundles** page to manage brand bundles and their settings:
 * In AppsFlyer, from the top menu, select **My Apps** > **View brand bundles.**  
                            - or -
 * In AppsFlyer, from the side menu, go to **Settings** > **Brand Bundles.**
+
+<div id="managing-brand-bundles" />
 
 ## Managing brand bundles
 
@@ -86,6 +94,8 @@ Before proceeding, make sure that all the apps you want to include in the bundle
      * Mobile apps are not required to create a bundle.
      * There is no limit to the number of mobile apps you can include in a bundle.
 4. Click Create bundle.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -162,6 +172,8 @@ A domain exclusion mechanism, part of <Anchor target="_blank" href="/marketers/d
 
 </Accordion>
 
+<div id="faq" />
+
 ## FAQ
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -194,6 +206,8 @@ To change the bundle in which an app is included, delete the original bundle and
 
 <Accordion title="What happens if I delete a bundle?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### faqs what happens if i delete a bundle
 
 If you delete a bundle:
@@ -221,6 +235,8 @@ If you delete a bundle:
 You probably didn’t subscribe to PBA. Please contact your CSM or [hello@appsflyer.com](mailto:hello@appsflyer.com) to upgrade your package.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

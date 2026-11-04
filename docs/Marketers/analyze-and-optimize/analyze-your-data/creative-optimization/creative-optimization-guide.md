@@ -28,6 +28,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-creative-optimization" />
+
 ## About Creative Optimization
 
 **Creative Optimization** is your one-stop shop for measuring the performance of creatives used in all of your campaigns. It enables you to effortlessly pull all your creative assets from all media channels into one platform, or your BI system, and analyze their performance by selected dimensions, across multiple campaigns, channels, and much more. Creative Optimization enables you to slice and dice by different metrics and KPIs to gain critical insights before planning, selecting, and producing your next batch of creatives.
@@ -49,6 +51,8 @@ With Creative Optimization, you can:
 * Identify declining effectiveness of creatives across time/channels/campaigns and make informed decisions for optimization
 * And more
 
+<div id="creative-assets" />
+
 ## Creative assets
 
 This section provides information about the creative assets we measure.
@@ -64,6 +68,8 @@ Asset types supported by the Creative Optimization dashboard include:
 * Carousel ads (Meta only)
 * HTML (including Playable)
 * Text
+
+<div id="notes" />
 
 > 📘 **Notes**
 >
@@ -91,6 +97,8 @@ Creative Optimization has the unique ability to identify which assets are the sa
 
 Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) can include ad creatives with multiple assets. However, AppsFlyer doesn't break down the data on the asset level. Meta ads provides data up to the **ad level** and Google provides data only up to the **ad group level**. For these types of ad creatives, AppsFlyer uses data modeling to divide performance data across the assets.
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > Suppose there is an ad creative on Facebook with multiple assets. Facebook attributes it with 100 installs total, broken down to assets as follows: **asset A** has 60 installs and **asset B** has 40 installs, as measured by Facebook. In AppsFlyer, let’s say the ad is attributed with 50 installs (due to inherent attribution differences between AppsFlyer and <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>). To enable asset-level analysis, AppsFlyer distributes the performance data (impressions, clicks, installs, and cost) based on the asset metrics ratio from the total as illustrated below.
@@ -104,6 +112,8 @@ Meta Advantage+ (dynamic creatives), and Google Universal App Campaigns (UAC) ca
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## Using the dashboard
 
@@ -271,6 +281,8 @@ The following table lists all Creative optimization partners, with the data gran
 
 Download file: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
+<div id="to-set-up-partner-metrics" />
+
 #### **To set up partner metrics:**
 
 Add a new <Anchor target="_blank" href="/marketers/docs/creative-optimization-partner-integrations">partner integration</Anchor> and metrics for supported partners will automatically be pulled into Creative Optimization (**Unity Ads** **is an exception and has special instructions below**). Once set up, these metrics are indicated with "Partner" alongside the metric.
@@ -344,6 +356,8 @@ Add a new <Anchor target="_blank" href="/marketers/docs/creative-optimization-pa
         ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
      5. Copy the **Organization ID**.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > We recommend entering the partner metrics credentials when setting up a new partner integration. However, it's not mandatory. You can save the integration and add the credentials at a later time. But please note that we pull 90 days of partner data from the time the partner integration is created, so not entering the partner metric credentials may result in missing data.
@@ -360,6 +374,8 @@ After selecting your filters, you can save your selections for quick and easy ac
 
 **Note**: An orange indicator dot appears next to the current view if you've made changes to the dashboard settings without saving the view.
 
+<div id="save-private-dashboard-view" />
+
 #### **Save private dashboard view**
 
 **To save a private dashboard view (only visible to you):**
@@ -368,6 +384,8 @@ After selecting your filters, you can save your selections for quick and easy ac
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. Enter a dashboard name and click **Save**.
 3. Use the menu icons to edit and delete dashboard views, change the share settings from private to shared, or star a view, marking it as the default view to display upon login.
+
+<div id="save-shared-dashboard-view" />
 
 #### **Save shared dashboard view**
 
@@ -379,6 +397,8 @@ After selecting your filters, you can save your selections for quick and easy ac
    The view is saved and appears in the list of dashboard views for all other account users.
 3. Use the menu icons to edit and delete dashboard views, change the share settings from shared to private, or star a view, marking it as the default view to display upon login.
 
+<div id="share-view-url" />
+
 #### **Share view URL**
 
 **To share a view URL with another account user:**
@@ -388,6 +408,8 @@ After selecting your filters, you can save your selections for quick and easy ac
   **Note**: View URLs can be shared even for private dashboards. When the private dashboard URL is opened, the report name that displays is "Unsaved Report".
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## Custom tags
 
@@ -519,6 +541,8 @@ This is useful for marketing and creative teams whose creatives are named intent
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

@@ -28,15 +28,21 @@ x-zendesk:
 ---
 > **At a glance:** Get detailed organic search attribution data so you can optimize organic conversions. <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">See our updated organic search attribution method</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > We recommend implementing our <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">updated organic search attribution method</Anchor>.
+
+<div id="organic-search-attribution" />
 
 ## Organic search attribution
 
 Organic search attribution is an innovative attribution solution that allows AppsFlyer customers to attribute mobile app opens of users who already have your app installed to organic search.
 
 Use organic search attribution to attribute these existing users who re-engage with your app after an organic web search.
+
+<div id="flow" />
 
 #### FLOW
 

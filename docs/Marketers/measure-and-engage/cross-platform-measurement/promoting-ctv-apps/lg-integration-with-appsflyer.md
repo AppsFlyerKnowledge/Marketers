@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your LG Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on LG.
 
+<div id="about-lg-ctv-attribution" />
+
 ## About LG CTV attribution
 
 The LG Webos OS for streaming runs across all LG TVs.
@@ -35,6 +37,8 @@ The LG API integration supports:
 
 * LG Smart TVs.
 * CTV-to-CTV attribution and event recording. Meaning, attribution and recording on a user's LG device.
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -61,6 +65,8 @@ The following table lists the tasks required to integrate your LG CTV app with A
 | Deterministic attribution | There is an option to enable deterministic ad ID matching for attribution. To do so, the following requirements must be met:<ul><li>LG must conduct a legal review before content partner apps can be enabled to surface the AD ID.</li><li>This legal review involves the content partner working directly with LG Electronics and requires both parties to sign a legal agreement.</li><li>Content partner apps must integrate the functionality to collect and transmit the LG AD ID, and release a user-initiated app update to begin surfacing the AD ID to AppsFlyer.</li><li>For more information, contact your AppsFlyer CSM and  [partnerships@lgads.tv](mailto:partnerships@lgads.tv)</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

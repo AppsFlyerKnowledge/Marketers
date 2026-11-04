@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Test your Android or iOS app integration with AppsFlyer.
 
+<div id="overview" />
+
 ## Overview
 
 After the SDK integration is complete you can verify that the SDK is communicating successfully with AppsFlyer servers. Marketers can choose between two testing methods:
@@ -42,9 +44,13 @@ Developers can perform integration testing in their development environment. See
 
 CTV apps can also be tested, see [Testing CTV](#testing-ctv).
 
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 ## Testing using the SDK Integration Tests page
 
 Use the **SDK Integration Tests** page to view real-time live events, such as installs, ad revenue, and in-app events, as they occur in your app. You can also test non-organic installs, in-app events, and deep linking (retargeting), and locate any integration issues in your project. The live event viewer replaces the legacy in-app event testing tool.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -53,10 +59,14 @@ Use the **SDK Integration Tests** page to view real-time live events, such as in
 > * **iOS:** Make sure the user has granted App Tracking Transparency (ATT) permissions so that the IDFA can be collected. You can test non-ATT apps using the procedure specified here.
 > * **Android:** Although the device ID (GAID) is typically collected automatically, we recommend verifying that the SDK collects it.
 
+<div id="prepare-a-test-device" />
+
 ### **Prepare a test device**
 
 1. Prepare a device (Android or iOS) that does not have the app installed. If needed, uninstall the app from the device.
 2. <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Register the device as a test device.</Anchor>
+
+<div id="perform-the-integration-tests" />
 
 ### Perform the integration tests
 
@@ -65,6 +75,8 @@ The **SDK Integration Tests** page provides the following three tests:
 <Accordion title="View live events">
 
 The Live Event Viewer is a testing tool that displays real-time data sent from the SDK to AppsFlyer, including install, ad revenue, and store revenue events, and other in-app events. For each event captured, you can see the event log and details.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -138,6 +150,8 @@ For integration errors, contact your developer.
 
 </Accordion>
 
+<div id="testing-using-attribution-links" />
+
 ## Testing using attribution links
 
 The following section describes the procedures you should follow to test installs with attribution links. You can perform these tests even if the app is still pending (meaning, not listed in the Google Play Store or Apple App Store).
@@ -210,6 +224,8 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
    </Tab>
    </Tabs>
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > If you're testing an iOS app without registering a test device your test click can be flagged as fraudulent by Protect 360.
@@ -217,6 +233,8 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
 > To prevent this event from being detected as fraud, add the following query parameter to your link: pid=ios\_testing
 
 1. Copy your updated link, send it to the test device, and then click the link.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -232,6 +250,8 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
    You should see an install that is attributed to the test campaign under the media source called **Test**. Allow up to 30 minutes for the install to appear in the app's dashboard.
 
    [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -272,6 +292,8 @@ In addition, OneLink enables deep linking. Deep linking allows you to open the a
 For more information, see our guide on <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">testing OneLink URLs</Anchor>.
 
 </Accordion>
+
+<div id="testing-retargeting-using-attribution-links" />
 
 ## Testing retargeting using attribution links
 
@@ -327,6 +349,8 @@ You can now proceed to test re-attribution and re-engagement.
 1. Uninstall the app from the device. If you just installed the app, wait for a few minutes.
 2. Copy the [attribution link](/docs/testing-the-sdk-integration-for-marketers#prerequisites-to-run-retargeting-tests) you created previously, either the app-specific attribution link or custom long link from the OneLink template, send it to the test device, and then click the link.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > In iOS, use iMessage or email to send the link to the device. Don't paste the link in the iOS Notes app and click the link. This action may cause the link to break.
@@ -342,6 +366,8 @@ You can now proceed to test re-attribution and re-engagement.
    You should see the install attributed to the media source and campaign. Allow up to 30 minutes for the retargeted install to appear in the dashboard.
 
    [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+
+<div id="tip-1" />
 
 > 👍 **Tip**
 >
@@ -388,6 +414,8 @@ Make sure that your app is configured for <Anchor target="_blank" href="/markete
 
 </Accordion>
 
+<div id="testing-organic-installs" />
+
 ## Testing organic installs
 
 We recommend that you start by testing an organic install.
@@ -401,6 +429,8 @@ The app's dashboard displays a new organic install. Allow up to 30 minutes for t
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
 
+<div id="testing-ctv" />
+
 ## Testing CTV
 
 Special test cases include the following:
@@ -411,11 +441,15 @@ Special test cases include the following:
 * **Amazon Fire TV:** A marketer can [test the integration](/docs/testing-the-sdk-integration-for-marketers#testing-from-the-dashboard) using the Android SDK testing method in the AppsFlyer dashboard. (Learn more about <Anchor target="_blank" href="/marketers/docs/setting-up-amazon-fire-tv-ad-attribution">Amazon Fire TV attribution</Anchor>).
 * **PBA web events:** Requires a marketer and developer to work together (see <Anchor target="_blank" href="/marketers/docs/test-pba-web-sdk-integration">Testing PBA web SDK integration</Anchor>).
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > See also
 >
 > * Ad network integration testing Ad network integration testing
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

@@ -37,6 +37,8 @@ By using it to connect third-party AI tools, you agree that AppsFlyer has no res
 
 </Accordion>
 
+<div id="what-is-appsflyer-mcp" />
+
 ## What is AppsFlyer MCP?
 
 AppsFlyer MCP lets you securely connect LLMs to the AppsFlyer platform so you can interact with your marketing data through simple conversation. AppsFlyer MCP helps you make smarter, faster decisions based on real-time data.
@@ -49,13 +51,19 @@ With MCP, you can:
 * Audit and troubleshoot Audiences connections.
 * Retrieve setup guidance or product documentation.
 
+<div id="set-up-appsflyer-mcp" />
+
 ## Set up AppsFlyer MCP
 
 AppsFlyer MCP can connect to chat assistants, CLIs, IDEs, automation platforms, and self-hosted agents. Setup depends on the client you use and the authentication method it supports.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Some platforms might require admin approval to connect MCP servers. If you don't see the setup options described below, contact your IT or workspace admin.
+
+<div id="authentication-methods" />
 
 ## Authentication methods
 
@@ -66,11 +74,15 @@ AppsFlyer MCP supports two authentication methods. Use the method that matches h
 | Browser-based OAuth login | Gemini CLI, Copilot CLI, ChatGPT, Claude.ai, and Claude Desktop | Ad hoc questions, exploratory analysis, and one-off reports | Valid for 7 days from connection. Re-authentication is required at the end of the session |
 | Bearer token authentication | Claude Code, automation platforms, self-hosted agents, and integrations | Automations, scheduled tasks, background agents, and non-interactive workflows | Valid until manually revoked |
 
+<div id="browser-based-oauth-login" />
+
 ### Browser-based OAuth login
 
 Browser-based OAuth login lets you connect interactively through your browser. When you connect, the MCP client opens a browser window and asks you to log in to AppsFlyer. After you approve access, the client connects to your AppsFlyer account.
 
 Use this method for interactive sessions, exploratory analysis, and one-off reports.
+
+<div id="bearer-token-authentication" />
 
 ### Bearer token authentication
 
@@ -84,6 +96,8 @@ Use this method for automations, scheduled tasks, background agents, and integra
 
 To create a token, go to **Account menu > Security Center > AppsFlyer Tokens** and create an MCP token.
 
+<div id="set-up-by-client" />
+
 ## Set up by client
 
 <div id="h_claude-ai-and-claude-desktop" />
@@ -92,9 +106,13 @@ To create a token, go to **Account menu > Security Center > AppsFlyer Tokens** a
 
 Use Claude chat and Claude Cowork with browser-based OAuth login. These instructions apply to Claude on web, desktop, and Cowork.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > For Team and Enterprise plan users, only Owners or Admins can add organization-wide integrations.
+
+<div id="set-up-claude-chat-and-cowork" />
 
 #### Set up Claude chat and Cowork
 
@@ -110,11 +128,15 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 8. In the connectors section, click **Connect** next to the AppsFlyer connection.
 9. Log in to AppsFlyer when prompted.
 
+<div id="test-the-claude-connection" />
+
 #### Test the Claude connection
 
 1. In any chat window, click the settings button.   
    <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. If AppsFlyer MCP was set up correctly, the AppsFlyer tools appear in the menu.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -127,6 +149,8 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 <Accordion title="Claude Code">
 
 Use Claude Code with bearer token authentication for automation, scheduling, and non-interactive workflows.
+
+<div id="add-appsflyer-mcp-to-claude-code" />
 
 #### Add AppsFlyer MCP to Claude Code
 
@@ -219,6 +243,8 @@ There are two ways to use ChatGPT with AppsFlyer MCP.
 * [Custom GPT](#add-the-appsflyer-custom-gpt): Best for simple access to an AppsFlyer assistant.
 * [MCP in ChatGPT](#add-appsflyer-mcp-in-chatgpt): Best for users who want to bring AppsFlyer data into ChatGPT conversations.
 
+<div id="add-the-appsflyer-custom-gpt" />
+
 #### Add the AppsFlyer custom GPT
 
 1. Click <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyer custom GPT</Anchor>.
@@ -230,7 +256,11 @@ There are two ways to use ChatGPT with AppsFlyer MCP.
    Show me my Meta campaign performance from last week.
    ```
 
+<div id="add-appsflyer-mcp-in-chatgpt" />
+
 #### Add AppsFlyer MCP in ChatGPT
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -257,6 +287,8 @@ For security, AppsFlyer MCP disconnects approximately every 10 hours. To reconne
 
 Use Gemini CLI with browser-based OAuth login.
 
+<div id="add-appsflyer-mcp-to-gemini-cli" />
+
 #### Add AppsFlyer MCP to Gemini CLI
 
 1. In Terminal, add the AppsFlyer MCP server:
@@ -281,6 +313,8 @@ Use Gemini CLI with browser-based OAuth login.
    What apps are in my AppsFlyer account?
    ```
 
+<div id="troubleshoot-gemini-cli-authentication" />
+
 #### Troubleshoot Gemini CLI authentication
 
 If authentication fails, start Gemini CLI in debug mode:
@@ -298,6 +332,8 @@ Then enter `auth` again in the Gemini CLI prompt.
 <Accordion title="Copilot CLI">
 
 Use Copilot CLI with browser-based OAuth login.
+
+<div id="add-appsflyer-mcp-to-copilot-cli" />
 
 #### Add AppsFlyer MCP to Copilot CLI
 
@@ -346,6 +382,8 @@ Use an MCP token to authenticate third-party or self-hosted systems with AppsFly
 
 The MCP token is an account-level bearer token that inherits the permissions of the admin who created it. You can access and manage it from <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Security Center > AppsFlyer Tokens</Anchor>.
 
+<div id="mcp-connection-details" />
+
 #### MCP connection details
 
 To connect your automation or agent platform to AppsFlyer MCP, use the following configuration:
@@ -354,9 +392,13 @@ To connect your automation or agent platform to AppsFlyer MCP, use the following
 * **Base URL / Endpoint:** `https://mcp.appsflyer.com/auth/mcp`
 * **Bearer Token:** Your MCP token
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > Never share or publish your token publicly. Treat it as a private credential. Your MCP token grants direct access to your MCP environment.
+
+<div id="example-use-cases" />
 
 #### Example use cases
 
@@ -391,6 +433,8 @@ We're continuously expanding this list as we validate and document more platform
 
 AppsFlyer MCP connects to one AppsFlyer account at a time.
 
+<div id="switch-between-accounts-browser-based-oauth" />
+
 #### Switch between accounts (browser-based OAuth)
 
 If you manage multiple AppsFlyer accounts under the same email, you can switch which account MCP connects to:
@@ -399,6 +443,8 @@ If you manage multiple AppsFlyer accounts under the same email, you can switch w
 2. Log in again in your MCP client.
 
 You can't view or query multiple accounts side-by-side in a single connection.
+
+<div id="connect-multiple-accounts-simultaneously-bearer-token" />
 
 #### Connect multiple accounts simultaneously (bearer token)
 
@@ -411,11 +457,17 @@ See an example of this flow in <Anchor target="_blank" href="https://www.youtube
 
 </Accordion>
 
+<div id="use-appsflyer-mcp" />
+
 ## Use AppsFlyer MCP
+
+<div id="use-cases-and-prompts" />
 
 ### Use cases and prompts
 
 AppsFlyer MCP gives you a set of tools and resources designed to help you retrieve marketing analytics, performance insights, and configuration information.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -448,6 +500,8 @@ Explore aggregated marketing performance data in real time. You can identify top
 **Prompt:** "Compare D1 retention last week vs. the week before, grouped by media source."
 
 **Expected AI response:** The AI performs a week-over-week comparison of D1 retention rates, grouped by media source.
+
+<div id="note-5" />
 
 > 📘 **Note**
 >
@@ -627,6 +681,8 @@ Retrieve key app configuration details such as attribution windows, session time
 
 Retrieve partner integration status and configuration for your apps, which partners are active, how they're configured, and whether event mappings and attribution settings are set up as expected. Use this to audit integration health and troubleshoot partner-specific issues without opening the AppsFlyer HQ UI.
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > Partner integrations management is currently read-only. You can retrieve and audit configuration through AppsFlyer MCP, but changes must still be made in the AppsFlyer HQ UI.
@@ -765,6 +821,8 @@ Retrieve user and role information from your AppsFlyer account. This helps admin
 
 </Accordion>
 
+<div id="other-information" />
+
 ## Other information
 
 <div id="h_privacy-and-security" />
@@ -773,13 +831,19 @@ Retrieve user and role information from your AppsFlyer account. This helps admin
 
 AppsFlyer MCP lets your selected AI tool query AppsFlyer data based on your existing permissions.
 
+<div id="data-processing" />
+
 #### Data processing
 
 AppsFlyer MCP acts as a secure proxy. It fetches AppsFlyer data in real time and returns the data needed to answer the query. AppsFlyer MCP doesn't archive or store query results long term.
 
+<div id="credentials" />
+
 #### Credentials
 
 Your AppsFlyer login lets AppsFlyer MCP make API calls on your behalf. Your AppsFlyer credentials aren't shared with the AI tool.
+
+<div id="permissions" />
 
 #### Permissions
 
@@ -787,15 +851,21 @@ AppsFlyer MCP uses your existing AppsFlyer permissions. Users can only access th
 
 There's no separate permission layer to configure for MCP access.
 
+<div id="read-and-write-access" />
+
 #### Read and write access
 
 Most AppsFlyer MCP tools are read and query only. The exception is create\_onelink\_link, which creates OneLink links in your account. Before a link is created, the AI shows you its details and asks for confirmation. Nothing is created unless you approve.
+
+<div id="ai-provider-data-usage" />
 
 #### AI provider data usage
 
 The data retrieved by AppsFlyer MCP may be shared with your selected AI tool to answer your query. Only the data needed to generate the response is shared.
 
 AppsFlyer doesn't control whether your selected AI tool stores, processes, or learns from the data. Review your AI provider's terms and data usage policies before connecting AppsFlyer MCP.
+
+<div id="certifications" />
 
 #### Certifications
 
@@ -838,6 +908,8 @@ See the table below for the complete list of tools and their category mappings.
 | Disabling MCP | <ul><li>MCP is enabled by default and can be disabled by an admin in **Account & Profile > AI capabilities**.</li><li>When MCP is disabled, users can't access AppsFlyer data through MCP in external AI tools.</li><li>Existing connections might continue until the current session expires.</li><li>Disabling MCP doesn't affect regular API connections or other AI capabilities in AppsFlyer.</li><li>If an MCP token is in use, delete it first in **Security Center > AppsFlyer Tokens**.</li></ul> |
 
 </Accordion>
+
+<div id="troubleshoot-connection-issues" />
 
 ## Troubleshoot connection issues
 

@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **At a glance:** Use Activity metrics in <Anchor target="_blank" href="/marketers/docs/my-dashboards">My Dashboards</Anchor> to quickly assess app performance, spot engagement trends, analyze revenue, and detect issues early, across any date range, with improved accuracy and flexibility.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Net revenue metrics roll out gradually to clients throughout July - August 2026. If you don't see them yet, no action is needed; they will become available for your account during this period. See <Anchor target="_blank" href="/marketers/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">Bulletin: Cohort and Activity metrics update in My Dashboards</Anchor>.
+
+<div id="about-activity-metrics" />
 
 ## About Activity metrics
 
@@ -38,6 +42,8 @@ The Activity metrics in My Dashboards allow users to analyze Activity, LTV, and 
 * Customize reports using **daily or monthly** (Active users) breakdown.
 
 Note: In My Dashboards, the term A**ctivity** has been renamed to **Actual**. This change clarifies that these metrics reflect real user actions during the selected date range and aren’t tied to LTV aggregation. Actual is also the default period for Sessions, Gross-Profit and Total Revenue.
+
+<div id="dashboard-information" />
 
 ## Dashboard information
 
@@ -57,6 +63,8 @@ You can then add a Group by dimension and select Filters.
 
 More detailed instructions can be found <Anchor target="_blank" href="/marketers/docs/my-dashboards#add-metric">here</Anchor>.
 
+<div id="available-activity-metrics" />
+
 ## Available Activity metrics
 
 * All metrics besides Active users, Active users last 31 days, and DAU/MAU also support cohort periods and LTV.
@@ -72,6 +80,8 @@ More detailed instructions can be found <Anchor target="_blank" href="/marketers
 | First Visits | Number of first-time visits to a web app. Counted as rows where conversion\_name = first\_visit. Available for web apps only. |
 | Re-visits | Number of non-organic returning visits to a web app. Counted as rows where conversion\_name = revisit. Available for web apps only. |
 | User Acquisitions | Available for Cross-platform attribution or web apps. For web apps, User Acquisitions reflects First Visits unless a User Acquisition Event is configured. For mobile apps, User Acquisitions equals Installs. When viewing multiple apps together, User Acquisitions = Installs + First Visits (or the custom web event configured by the client). |
+
+<div id="available-in-app-metrics" />
 
 ## Available In-app metrics
 
@@ -106,6 +116,8 @@ How the value is populated:
 * If net revenue is not provided by either, the metric shows N/A.
 
 See <Anchor target="_blank" href="/marketers/docs/about-roi360-store-revenue">About ROI360 store revenue</Anchor> and <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure">In-app events - Event structure</Anchor>.
+
+<div id="supported-filter-and-group-by-dimensions" />
 
 ## Supported filter and group by dimensions
 
@@ -142,6 +154,8 @@ You can group and filter Activity metrics using:
   * Month
   * Media source
   * Agency
+
+<div id="specifications-and-limitations" />
 
 ## Specifications and limitations
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Group platform-specific apps under a single brand using Product Line. Unlock cross-platform attribution and user journey insights across mobile, web, and CTV apps using a unified Customer User ID (CUID).
 
+<div id="about-product-line" />
+
 ## About Product Line
 
 Product Line lets you organize different platform versions of the same app (like Android, iOS, web, and CTV) under one brand umbrella. This simplifies app management and enables seamless cross-platform attribution based on a customer user identifier (CUID).
@@ -39,13 +41,19 @@ For example, if a user installs your app on iOS, logs in on the PlayStation app,
 
 For a more complete overview of Product Lines, see <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor>.
 
+<div id="how-to-set-up-a-product-line" />
+
 ## How to set up a Product Line
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
 * The **CUID (Customer User Identifier)** must be a consistent identifier (like a login ID or hashed email) across all platforms.
 * Implement the **CUID SDK or** [**s2s**](https://dev.appsflyer.com/hc/docs/set-customer-user-id) **setup.**
 * Ensure the app sets the CUID at every launch used to recognize the same user across devices and sessions.
+
+<div id="how-to-create-a-product-line" />
 
 ### How to create a Product Line
 
@@ -69,6 +77,8 @@ For a more complete overview of Product Lines, see <Anchor target="_blank" href=
 <div id="how-to-remove-an-app-from-a-product-line" />
 
 <Accordion title="How to remove an app from a Product Line">
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -98,6 +108,8 @@ For a more complete overview of Product Lines, see <Anchor target="_blank" href=
 
 <Accordion title="How to delete a Product Line">
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > It is not recommended to delete a Product Line. When a Product Line is removed, its cross-platform attribution settings are reset, and future events will not be eligible for cross-platform attribution until a new mapping is created.
@@ -107,6 +119,8 @@ For a more complete overview of Product Lines, see <Anchor target="_blank" href=
 3. Select **Delete product line**.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 
@@ -118,6 +132,8 @@ For a more complete overview of Product Lines, see <Anchor target="_blank" href=
 | CUID requirement | Required only for cross-platform attribution |
 | Inactivity restoration window | 14–390 days (default: 90 days) |
 | App removal impact | Removing an app resets attribution settings<br /><br />Removing an app from a Product Line affects cross-platform attribution from that point forward.<br /><br />• Future in-app events from the removed app are not eligible for cross-platform attribution under that Product Line, because events must come from apps that belong to the Product Line.<br /><br />• Historical results aren’t retroactively reprocessed |
+
+<div id="faqs" />
 
 ## FAQs
 

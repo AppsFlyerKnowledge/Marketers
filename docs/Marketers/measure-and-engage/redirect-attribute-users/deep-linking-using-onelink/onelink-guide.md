@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Create links with attribution, redirection, and deep linking capabilities that convert owned or paid media users into app users, regardless of device, operating system, channel, or platform. These links help you provide the best experience for your users, no matter which of your owned media sources they convert from: websites, banners, social media posts, emails, texts, and more.
 
+<div id="introduction-video" />
+
 ## Introduction video
 
 <Embed title="OneLink guide" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## Benefits
 
@@ -39,6 +43,8 @@ The AppsFlyer customer experience and deep linking suite powered by OneLink allo
 
 OneLink features are available through <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">AppsFlyer subscription plans</Anchor>. To keep your OneLink experiences running smoothly, make sure your plan stays active.
 
+<div id="experiences" />
+
 ## Experiences
 
 The AppsFlyer customer experience and deep linking suite powered by OneLink allows you to create links that provide the optimal experience for your users, no matter where they come from. The customer experiences you can configure include:
@@ -51,6 +57,8 @@ The AppsFlyer customer experience and deep linking suite powered by OneLink allo
 * **Text-to-app**: Create links for your SMS and messaging campaigns and engage users via text messages.
 * **Referral-to-app**: Create user invite links that allow users and influencers to invite others to your app or share specific in-app content, for example, an article.
 * **Custom**: No matter where your users come from, whether via desktop or mobile, online or offline, owned or paid media, use OneLink to easily send your users to the right place.
+
+<div id="setting-up-onelink" />
 
 ## Setting up OneLink
 
@@ -73,6 +81,8 @@ The following table describes the details of the marketer and developer tasks an
 | Create OneLink template | <ul><li>Marketer/product manager sets up the template in AppsFlyer.</li><li>Android developer configures app-opening methods for existing users (Android App Links and URI scheme).</li><li>iOS developer configures app-opening methods for existing users (iOS Universal Links and URI scheme).</li></ul> | <ul><li>AppsFlyer dashboard</li><li><Anchor target="_blank" href="/marketers/docs/create-a-onelink-template">Marketer instructions</Anchor></li><li>Developer instructions for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor></li></ul> |
 | Create OneLink link | <ul><li>Marketer/product manager sets up the link in AppsFlyer, including selecting the desired customer experience and adding any desired attribution or deep linking parameters.</li><li>Android and iOS developers implement UDL method for deep linking (if deep linking is required).</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Marketer instructions</Anchor></li><li>Developer instructions for <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">Android</Anchor> and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor></li><li>Sample apps (Github)</li></ul> |
 
+<div id="additional-options" />
+
 ## Additional options
 
 After completing some or all of the setup in the UI, consider implementing the additional features described below.
@@ -84,9 +94,13 @@ After completing some or all of the setup in the UI, consider implementing the a
 * <Anchor target="_blank" href="/marketers/docs/understand-onelink-short-vs-long-urls">Long URLs</Anchor>: Add parameters to your OneLink custom links or generate a large number of OneLink custom links by applying your own simple formulas in a spreadsheet.
 * <Anchor target="_blank" href="/marketers/docs/redirect-app-users-to-a-website">App-to-web redirection</Anchor>: Redirect users from your app to a website or social media page.
 
+<div id="troubleshooting-and-faq" />
+
 ## Troubleshooting and FAQ
 
 Quickly find solutions for testing and debugging OneLink custom link redirection/behavior issues with our <Anchor target="_blank" href="/marketers/docs/onelink-troubleshooting-and-faq">OneLink troubleshooting guide</Anchor>.
+
+<div id="limitations" />
 
 ## Limitations
 

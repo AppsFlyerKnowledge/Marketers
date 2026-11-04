@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your peer-to-peer (P2P) lending app.
 
+<div id="-p2p-lending" />
+
 ## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> P2P lending
 
 P2P lending is a way for individuals and businesses to lend and borrow money from one another. The typical events that we suggest recording are the activities of individual lenders and borrowers, the types of loans people offer, and loan acceptance and rejection rates.
 
 The data that you gather from event recording can highlight trustworthy borrowers and offer them better interest rates. Similarly, you can see who the most active lenders are and offer them lower fees. In addition, once you know what type of loans are most popular with your users, you can launch marketing campaigns that target these audiences.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -40,6 +44,8 @@ The data that you gather from event recording can highlight trustworthy borrower
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -82,6 +88,8 @@ When the user successfully logs in
 Can be sent without any additional parameters
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 
@@ -127,6 +135,8 @@ When a borrower submits a form
 **Event parameters**
 
 Can be sent without any additional parameters
+
+<div id="note" />
 
 > 📘 **Note**
 >

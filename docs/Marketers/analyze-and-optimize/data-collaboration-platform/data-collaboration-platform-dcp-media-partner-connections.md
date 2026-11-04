@@ -20,18 +20,26 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/45669216166417-Data-Collaboration-Platform-DCP-media-partner-connections
 ---
+<div id="at-a-glance" />
+
 ## At a glance
 
 Connect your audiences to media partners so you can activate your tailored campaigns and achieve maximum results.
+
+<div id="about-partner-connections" />
 
 ## About partner connections
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> partner connections enable you to securely connect your DCP audiences to supported media partners, so you can activate tailored campaigns on their platforms. Once a partner is connected to an audience, DCP delivers the audience based on the configured refresh and activation flow, using the latest available source data and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">permissions</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * The audience is delivered for activation as a list of user identifiers. Each delivery represents a full audience snapshot at the time of export.
 > * Audience refreshes are not continuous or in real-time. Instead, they are triggered according to the defined policy, which is cadence-based and checks whether the source data has been updated. Each refresh generates and sends the audience list to the selected destinations.
+
+<div id="supported-partner-connections" />
 
 ## Supported partner connections
 
@@ -80,6 +88,8 @@ After that, the DCP uploads audiences automatically via the Partner Link.
 * **App Campaigns**   
   App Campaigns for installs (ACi) use uploaded audiences only as optimization signals, while re-engagement campaigns (ACe) support deterministic targeting and are the primary method for audience activation.
 
+<div id="app-campaigns-aci--ace-guidelines" />
+
 #### App campaigns (ACi & ACe) guidelines
 
 Google App campaigns (formerly known as Universal App Campaign - UAC) behave differently from other campaign types when using Customer Match audiences:
@@ -102,6 +112,8 @@ Advertisers can:
 * Run lifecycle campaigns (upsell, cross-sell, retention)
 
 Audience lists from DCP are used as primary targeting criteria, similar to other platforms.
+
+<div id="notes" />
 
 > 📘 **Notes**
 >
@@ -426,6 +438,8 @@ DCP audiences in The Trade Desk are used for direct targeting across all campaig
 * Recommended audience refresh: daily or weekly, depending on activation use case and segment volatility
 
 </Accordion>
+
+<div id="create-a-partner-connection" />
 
 ## Create a partner connection
 

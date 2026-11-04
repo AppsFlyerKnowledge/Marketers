@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** If you're migrating from classic Data Locker raw reports, use this guide to find the exact filter selections that reproduce each classic report in <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports">Advanced Reports</Anchor>.
 
+<div id="overview" />
+
 ## Overview
 
 Classic Data Locker delivered the user journey as many separate report topics. Advanced Reports consolidates all of that into one report per data product, which you scope down using report-level filters.
@@ -34,6 +36,8 @@ The three Advanced Reports and the classic topics they replace are:
 
 To recreate a specific classic report, apply the report-level filters described in the sections below. For the full list of available filters per report, see <Anchor target="_blank" href="/marketers/docs/about-data-locker-advanced-reports#report-level-filters">Report-level filters</Anchor>.
 
+<div id="recreate-classic-reports-in-the-engagements-advanced-report" />
+
 ## Recreate classic reports in the Engagements advanced report
 
 In the Engagements Advanced Report, set the **Campaign type** filter to match the classic report's category (for example, User acquisition or Retargeting), and the **Engagement type** filter to match its event type (for example, Clicks or Impressions).
@@ -45,6 +49,8 @@ In the Engagements Advanced Report, set the **Campaign type** filter to match th
 | Retargeting – Clicks | Retargeting | `Click` + `Engaged click` |
 | Retargeting – Impressions | Retargeting | `View` + `Engaged view` |
 
+<div id="recreate-classic-reports-in-the-conversions-advanced-report" />
+
 ## Recreate classic reports in the Conversions advanced report
 
 In the Conversions Advanced Report, set the **Conversion type** filter to match the classic report's category (for example, User acquisition or Retargeting), and the **Platform group** filter to match its platform (for example, Mobile or CTV).
@@ -54,6 +60,8 @@ In the Conversions Advanced Report, set the **Conversion type** filter to match 
 | User acquisition – Installs | User acquisition | Mobile | <ul><li>The `conversion_name` field value is `INSTALL`.</li><li>Covers organic and non-organic installs.</li></ul> |
 | Retargeting – Conversions | Retargeting | Mobile | <ul><li>The `conversion_name` field value is `RE-ENGAGEMENT` or `RE-ATTRIBUTION`.</li><li>Covers non-organic only.</li></ul> |
 | CTV – Installs | User acquisition | CTV | <ul><li>The `conversion_name` field value is `INSTALL`.</li><li>Covers organic and non-organic installs.</li></ul> |
+
+<div id="recreate-classic-reports-in-the-end-user-events-advanced-report" />
 
 ## Recreate classic reports in the End-user events advanced report
 
@@ -68,11 +76,15 @@ In the End-user events Advanced Report, set the **Conversion type** filter to ma
 | CTV – In-app events | `In-app` | any value | CTV |  |
 | CTV – Sessions | `Session` | any value | CTV |  |
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Description |
 | --- | --- |
 | Reports not reproducible | Cross-platform engagements, reinstalls, and organic reinstalls are not reproducible using Advanced Reports. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

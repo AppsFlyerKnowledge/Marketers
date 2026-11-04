@@ -22,11 +22,17 @@ x-zendesk:
 ---
 > **At a glance:** Set up an integration with Movable Ink to create unique AI-powered user journeys in your marketing campaigns and in-app content.
 
+<div id="" />
+
 ## ![53374 Movable Ink KB image.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
+
+<div id="about-the-integration" />
 
 ## About the integration
 
 Movable Ink is a dynamic content optimization partner that provides personalized customer experiences in various channels, such as emails, push notifications and SMS. The integration between AppsFlyer and Movable Ink enables you to create uniquely personalized AI-powered journeys in your marketing campaigns and in-app content.
+
+<div id="set-up-the-integration" />
 
 ## Set up the integration
 
@@ -73,12 +79,16 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 | `{{pid_value}}` | ID of the ESP / media source | ESP Name |  | AppsFlyer UI |
 | `{{mi_link_from_creative<br /><br />_tag}}` | The HREF clickthrough link from Movable Ink’s creative tag. Available on the Finish & Export page (see image in step 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | The link should be encoded. | Movable Ink |
 
+   <div id="note" />
+
    > 📘 **Note**
    >
    > If the values for `af_android_url`, `af_ios_url`, and `af_web_dp` are identical, you can shorten the link by using `af_r instead`. If there is another parameter with the same value, ask your AppsFlyer customer success manager to activate the parameter duplication feature.
 
 6. Use the new link in your campaign.  
    **Note:** The Movable Ink HREF link that you copy/pasted into your link should be encoded. However, **if using the link in an email campaign via your ESP, the ESP parameters should not be encoded**.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

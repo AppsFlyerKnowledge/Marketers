@@ -27,15 +27,21 @@ x-zendesk:
 ---
 > **At a glance:** Learn what mobile advertising attribution is and how AppsFlyer helps marketers pinpoint their targeting, optimize their ad spend, and boost ROI.
 
+<div id="what-is-app-attribution" />
+
 ## What is app attribution?
 
 App attribution **determines which campaigns, partners, and channels drive your app installs** and post-install events, such as in-app purchases. Marketers rely on these insights to measure and optimize marketing activities for both user acquisition and retargeting campaigns.
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## What can you do with AppsFlyer?
 
 <Embed title="Welcome to AppsFlyer" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **At a glance:** How to log in to your account for the first time and how to switch between your accounts.
+
+<div id="first-login" />
 
 ## First login
 
@@ -49,18 +55,26 @@ There are a number of ways to log into your AppsFlyer account:
 * Login with Google: Log in using your Google Account
 * <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp">Login using SSO</Anchor>
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If your administrator configured a two-factor authentication (<Anchor target="_blank" href="/marketers/docs/implementing-and-using-2fa-login">2FA</Anchor>) for your account, you'll be asked to verify the login using another authentication method.
+
+<div id="using-multiple-accounts" />
 
 ## Using multiple accounts
 
 Users can exist in multiple accounts with different roles and permissions. They can navigate between their accounts without the need to re-enter credentials.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * Switching between accounts and changing the primary account is supported for all login methods: Username and password, 2FA, and Single Sign-On (SSO). Switching also requires a 6-digit verification code sent to the user's email, regardless of login method used.
 > * At this stage, switching between accounts is restricted to advertiser accounts only.
+
+<div id="primary-account" />
 
 ### Primary account
 
@@ -74,6 +88,8 @@ The primary account is the initial account that was created and acts as the defa
 2. Access the list of your accounts: Select **All accounts (x)**, with x indicating the total number of accounts.
 3. In the **My accounts** dialog, click the 3 dots menu icon for the account to be set as primary, then select **Set as primary**. A message confirms the account change.
 
+<div id="switch-between-accounts" />
+
 ### Switch between accounts
 
 1. From the menu bar, select the **email address dropdown** > **Switch accounts**.  
@@ -85,19 +101,27 @@ The primary account is the initial account that was created and acts as the defa
 4. Click in Switch account.  
    <Image alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > The verification code is valid for 15 minutes and can only be used once.
 
+<div id="get-started" />
+
 ## Get started
 
 To get started with AppsFlyer, proceed to our <Anchor target="_blank" href="/marketers/docs/getting-started-onboarding-for-marketers">step-by-step guide</Anchor>.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
 > Want to know more about the mobile ecosystem? Check out this short, informative <Anchor target="_blank" href="https://elevate.appsflyer.com/lms/index.php?r=course/deeplink&course_id=7767&generated_by=14109&hash=b421539db1c0352890d6f3e82e7fe9a74c0e5cce">course on the AppsFlyer Learning Portal</Anchor>.
 
 Related reading: <Anchor target="_blank" href="/marketers/docs/convert-your-mobile-web-visitors-to-app-users">Mobile attribution</Anchor> | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts">CTV attribution</Anchor>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -25,9 +25,13 @@ x-zendesk:
 
 ![AppsFlyer-People-Based-Attribution_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 
+<div id="pba-dashboards" />
+
 ## PBA dashboards
 
 The following sections relate to the <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website Attribution</Anchor> and <Anchor target="_blank" href="/marketers/docs/pba-web-assisted-installs">Web-Assisted Installs</Anchor> dashboards.
+
+<div id="settings" />
 
 ## Settings
 
@@ -36,6 +40,8 @@ The following sections relate to the <Anchor target="_blank" href="/marketers/do
 <Accordion title="Filtering options">
 
 Refine PBA dashboard results by using the (A) date picker, (B) main filters, and (C) additional filters to fit the analysis to your needs.
+
+<div id="filter-panel-in-pba-dashboards" />
 
 #### Filter panel in PBA dashboards
 
@@ -55,6 +61,8 @@ Refine PBA dashboard results by using the (A) date picker, (B) main filters, and
 * The filters available per dashboard differ as indicated in the table that follows.
 * Filters with context: Some filters, as indicated in the table, require that they be associated with a context. For example, in the Web-Assisted Installs dashboard, the geo filter requires a context of either the web media source or the mobile media source. You can set a geo filter for each by setting two geo filters; one for each context.
 
+<div id="available-filter-dimensions-per-dashboard" />
+
 #### Available filter dimensions per dashboard
 
 <table><tbody><tr><th>Filter</th><th>Description/values</th><th>Website Attribution </th><th>Web-Assisted Installs</th><th>Conversion<br/>Paths</th></tr><tr><td>Date picker</td><td><p>The date one of the following PBA conversion events occurred: </p><ul><li>App install</li><li>Web conversion</li><li>Mobile conversion</li></ul></td><td><p>Y</p></td><td><p>Y</p></td><td><p>Y</p></td></tr><tr><td>Geo </td><td><p>List of countries/territories </p></td><td>Y</td><td><span>Y (1)</span></td><td><p><span>Y (2)</span></p></td></tr><tr><td>Install type</td><td>Organic, smart banner, custom link, paid</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media channel</td><td>Ad, direct, email, referral, organic search, social</td><td>Y</td><td><span>Y</span></td><td><span>Y (2)</span></td></tr><tr><td>Mobile platform</td><td>Android, iOS</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media source </td><td><p>Media source to which the event is attributed<span></span></p></td><td><p>Y</p></td><td><span>Y(1)</span></td><td><span> <font>Y (2)</font> </span></td></tr><tr><td><p>Media type</p></td><td><p>Includes paid, <a href="./owned-media-attribution" target="_blank">owned</a>, earned</p></td><td><p>Y</p></td><td>Y</td><td>Y (2)</td></tr><tr><td><p>Conversion events</p></td><td><p>Show paths that lead to the conversion event for the conversion path</p></td><td><p>Y</p></td><td><p>--</p></td><td><p><span>Y</span></p></td></tr><tr><td><p>Path length (steps) </p></td><td><p>Number of steps in the current conversion path view: Media source, media channel, media type</p></td><td><p>--</p></td><td><p>--</p></td><td><p>Y</p></td></tr><tr><td><p>Path duration (days)</p></td><td>Duration of the conversion starting with the first touchpoint</td><td>--</td><td>--</td><td>Y</td></tr><tr><td colspan="5"><p><strong>(1)</strong> In the web-assisted installs dashboard, you associate the filter with the web media source or the mobile media source. You can set multiple instances of the filter. Example case</p></td></tr></tbody></table>
@@ -71,6 +79,8 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 
 * Default group: **Media source/Campaign**
 * In the drop-down, select 1 or more of the options.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -102,6 +112,8 @@ Dashboard data is grouped by, for example, media source, device, or country. Whe
 | PBA settings | <ul><li>Set conversion events</li><li>Change bundle settings</li></ul> |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

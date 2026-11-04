@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Identify your collaboration scenario, making sure you know what data to provide, who is responsible for it, and in what format to submit it.
 
+<div id="overview" />
+
 ## Overview
 
 DCP supports a variety of on-site and off-site use cases. Each use case requires a different setup, specifying which collaborator is responsible for preparing each data source and the format in which the data should be configured.
@@ -32,9 +34,13 @@ This article aims to help Commerce Media Networks (CMNs) and advertisers (brands
 
 This is where the use case decision tree comes into play. It serves as a structured guide to help you specify your use case and receive the corresponding preparation instructions.
 
+<div id="how-does-the-decision-tree-help" />
+
 ## How does the decision tree help?
 
 Depending on the setup, one collaborator may need to prepare and configure the conversions and campaigns tasks, while the other may be responsible for preparing the engagements or media partners tasks. The decision tree helps the collaboration owner determine which collaborator should be assigned each task and provides links to the corresponding instructions.
+
+<div id="which-decision-tree-do-i-need-on-site-or-off-site" />
 
 ### Which decision tree do I need: On-site or Off-site?
 
@@ -43,11 +49,15 @@ You can use two decision trees: one for on-site campaigns and the other for off-
 * Use the [off-site campaign decision tree](#the-off-site-campaign-decision-tree) if the ad is displayed on an external advertising platform (for example, Facebook, Google) outside of your owned and operated properties.
 * Use the [on-site campaign decision tree](#the-on-site-campaign-decision-tree) if the ad is served within your ecosystem and the conversion takes place on your platform.
 
+<div id="the-on-site-campaign-decision-tree" />
+
 ## The on-site campaign decision tree
 
 In the on-site campaign scenario, the conversion takes place on a platform owned and operated by the CMN or the advertiser. This leads to the initial question in the on-site decision tree: On which platform does the conversion take place — the CMN’s or the advertiser’s?
 
 Answer the initial question by choosing the correct answer, and continue to expand the branches that correspond to your specific conditions.
+
+<div id="on-which-platform-does-the-conversion-take-place" />
 
 #### **On which platform does the conversion take place?**
 
@@ -129,11 +139,15 @@ If the advertiser platform is a website, follow the instructions below for each 
 
 </Accordion>
 
+<div id="the-off-site-campaign-decision-tree" />
+
 ## The off-site campaign decision tree
 
 In the off-site campaign scenario, the ad is displayed on an external advertising platform such as Facebook or Google. This leads to the initial question in the off-site decision tree: Which account on the external advertising platform is used to display the ad—the CMN’s or the advertiser’s?
 
 Answer the initial question by choosing the correct answer, and continue to expand the branches that correspond to your specific conditions.
+
+<div id="which-account-on-the-external-platform-displays-the-ad" />
 
 #### **Which account on the external platform displays the ad?**
 

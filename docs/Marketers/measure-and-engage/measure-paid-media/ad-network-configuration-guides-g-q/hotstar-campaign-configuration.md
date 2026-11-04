@@ -29,6 +29,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png)
 
+<div id="hotstar-integration-in-appsflyer" />
+
 ## Hotstar integration in AppsFlyer
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -124,6 +126,8 @@ Ad revenue attribution is not available for this partner.
 You can give Hotstar permission to view information or configure changes in the integration. The type of permission varies according to the business relationship (ad network/ad agency) you have with Hotstar.
 
 **Note**: It is possible to give Hotstar permissions even if there is no active integration with them.
+
+<div id="ad-network-permissions" />
 
 #### Ad network permissions
 

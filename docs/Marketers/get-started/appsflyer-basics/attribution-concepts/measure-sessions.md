@@ -30,6 +30,8 @@ x-zendesk:
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
+<div id="sessions-counting-principles" />
+
 ## Sessions counting principles
 
 The number of sessions, AKA launch, performed by users is an important metric and used as a measure of user engagement with the app. It is available via several reports and dashboards. Sessions is used to derive the following metrics:
@@ -40,6 +42,8 @@ The number of sessions, AKA launch, performed by users is an important metric an
 * Loyal users using the default setting of 3-app opens
 
 **Note!** In the case of organic sessions, the metric is available in the Activity and Cohort dashboards but isn't available in the Overview dashboard.
+
+<div id="sessions-calculation" />
 
 ### Sessions calculation
 
@@ -58,6 +62,8 @@ A session is reported by the SDK when any of the following occur:
 **Sessions metric**
 
 The sessions metric is counted from the first session onwards. From the sixth session, a minimum time between sessions mechanism is activated with a default duration of 10 minutes as described in the example that follows.
+
+<div id="minimum-time-between-sessions-mechanism" />
 
 ## Minimum time between sessions mechanism
 
@@ -102,6 +108,8 @@ Assumption: The minimum allowed time between sessions setting is 10 minutes and 
 
 </Accordion>
 
+<div id="sessions-related-topics" />
+
 ## Sessions related topics
 
 <div id="retargeting-sessions" />
@@ -130,6 +138,8 @@ You can send partner session postbacks so that a <Anchor target="_blank" href="/
 * To send the postback: Explicitly map *af\_app\_opened* to a partner event. Note! In the AppsFlyer raw data report available via Data Locker this event reflects as a *launch.*
 * Consider that this is a high-volume event and that many partners don't want to receive it.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The mapping of `af_app_opened` is only supported by partners with **Send Sessions** enabled.
@@ -144,12 +154,16 @@ You can send partner session postbacks so that a <Anchor target="_blank" href="/
 
 **Server-side:** A session is counted **if it's not on of the first 5 sessions after the app's first launch** and after considering the minimum time between sessions mechanism. Counted sessions are attributed using the same <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution rules</Anchor> as other in-app events.
 
+<div id="explicit-sessions-reporting-by-the-developer-android-apps-only" />
+
 #### **Explicit sessions reporting by the developer (Android apps only)**
 
 Use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor> in Android to explicitly report a session. An equivalent call is not available in iOS.
 
 * Apps that work in the background continuously may require some logic implemented by the developer to report sessions. For example, utility apps like battery savers, launchers, screen locks, and antivirus apps. For these types of apps, consider reporting a session daily at midnight or some other interval appropriate to the app.
 * In other cases, you may want to count sessions when users perform some in-app action, such as pressing the *clear memory* button and so on.
+
+<div id="setting-minimum-time-between-app-launches" />
 
 #### **Setting minimum time between app launches**
 

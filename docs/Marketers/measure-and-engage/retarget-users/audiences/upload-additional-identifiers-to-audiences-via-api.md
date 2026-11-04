@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Use the Audiences Additional Identifiers API to bulk upload user identifiers from your internal systems (such as BI and CRM) to AppsFlyer Audiences, enabling broader audience communication to relevant partners based on these identifiers.
 
+<div id="about-the-api" />
+
 ## About the API
 
 The Audiences Additional Identifiers API can be used to add the following user identifiers from your internal systems to AppsFlyer Audiences:
@@ -35,9 +37,13 @@ The Audiences Additional Identifiers API can be used to add the following user i
 
 You can then choose to send these identifiers to your Audiences partners (subject to your <Anchor target="_blank" href="/marketers/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor>), allowing them to more accurately identify your target audiences. Note that not all advertising partners support all identifiers.
 
+<div id="when-should-i-use-this-api" />
+
 ### When should I use this API?
 
 This API was designed to be used when you want to upload a large volume of identifier data. Typically, this means data collected over time (for example, hashed emails collected from all users of an app over the last 12 months). For real-time, individual updates of identifiers from specific devices, <Anchor target="_blank" href="/marketers/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">configure additional identifiers</Anchor> in the AppsFlyer SDK or S2S-mobile API.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -45,14 +51,20 @@ This API was designed to be used when you want to upload a large volume of ident
 >
 > **Timing:** To ensure accurate matching of identifiers, the Audiences Additional Identifiers API can be used as soon as **the day following** the reporting of key identifiers through the AppsFlyer SDK (UTC). For example, key identifiers reported on 3-January-2022 (UTC) can be updated through this API on 4-January-2022 (UTC) or later.
 
+<div id="actions" />
+
 ## Actions
 
 * [Add/modify identifiers](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
 * [Remove identifiers](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
 
+<div id="authentication" />
+
 ## Authentication
 
 The request must include an HTTP header containing your account's <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">AppsFlyer V2.0 API token</Anchor>. Ask your account admin to obtain this token from the AppsFlyer dashboard.
+
+<div id="api-specifications-and-sample-code" />
 
 ## API Specifications and sample code
 
@@ -112,6 +124,8 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{hashed_emails}` | An array of up to 2 hashed email addresses<br /><br />Format:<ul><li>Lowercase</li><li>No white spaces</li><li>SHA256 hashed</li></ul>Example value before hashing: name@domain.com | No |
 | `{phone_number_sha256}` | Phone number (see note below)<br /><br />Format:<ul><li>No symbols, letters, or leading zeroes</li><li>Include country code</li><li>SHA256 hashed</li></ul>Example value before hashing:<br /><br />442070313000 | No |
 | `{phone_number_e164_sha256}` | Phone number in E164 format (see note below)<br /><br />Format<ul><li>E164 phone number</li><li>SHA256 hashed</li></ul>Example value before hashing:<br /><br />+442070313000 | No |
+
+<div id="notes" />
 
 > 📘 **Notes**
 >

@@ -30,6 +30,8 @@ x-zendesk:
 
 > **At a glance:** Raw data reports describe installs and in-app events blocked by the Protect360 engine, as well as from manually added Validation Rules.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## About Protect360 raw data reports
 
 Raw data reports:
@@ -43,6 +45,8 @@ Raw data reports:
 * Report types and their availability by download, API, and Data Locker (S3 bucket) are described in the sections that follow.
 * Historical raw data report retention is up to 90 days, depending on the reporting tool and origin of the raw data.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Due to raw data restrictions related to privacy, the raw reports may show fields with empty values. An example of this is the contributor fields.
@@ -50,6 +54,8 @@ Raw data reports:
 <div id="report-types" />
 
 <Accordion title="Report types">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Protect360 raw-data report types
 
@@ -76,6 +82,8 @@ Raw data reports:
   * Dashboard user interface: limited to one media source during one calendar month.
   * Pull API: contains all media sources. (Limitation: Available to app owners only.)
 
+<div id="using-post-attribution-reports" />
+
 #### **Using post-attribution reports**
 
 * Select any combination of install/IAE and detect date ranges as needed.
@@ -85,6 +93,8 @@ Raw data reports:
   * Set the install date range to 60 days looking back from the current day.
   * Set the detect-from/detect-to range to the day before the current day.  
     This means you will get the list of post-attribution frauds detected yesterday. If you didn't pull the report for a few days, adjust the detect date range, and pull the report.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -98,11 +108,15 @@ Raw data reports:
 
 <Accordion title="Raw data availability by tool type">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### Protect360 raw-data availability by tool type
 
 <table><thead><tr><th>Report</th><th>Data freshness</th><th>Pull API</th><th>Export Data page</th><th>Data Locker</th></tr></thead><tbody><tr><td>Installs</td><td>Real-time</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Blocked in-app events</td><td>Real-time</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Clicks</td><td>Real-time</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Blocked install postbacks</td><td>Real-time</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Post-attribution installs</td><td>Daily 15:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Post-attribution in-app events</td><td>Daily 20:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr><tr><td colspan="5"><p>\* Limitations to report via Data Locker:</p><ul><li>Agency transparency not supported. Meaning that agency-driven traffic does not contain the name of the media source sending the install.</li><li>The report has a unique set of fields relative to other Data Locker reports. This list can't be changed.</li><li>Retargeting data is not available in the Installs report; only in the Post-attribution installs report. </li></ul></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## Getting raw data reports
 
@@ -142,6 +156,8 @@ You need a Pull API token. Get the token from an <Anchor target="_blank" href="/
 3. Populate the parameters as required. The table that follows lists the parameters.
 4. Pull the report.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Pull API raw data report parameters
 
 | Parameter | Description | Format | Mandatory |
@@ -169,11 +185,15 @@ Data Locker writes raw-data to an AWS S3 bucket.
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Protect360 report structure
 
 Protect360 reports have the same general structure as user acquisition reports fields.
 
 In addition to the regular <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw data report fields</Anchor>, Protect360 reports also have retargeting and blocked reason fields, as follows:
+
+<div id="blocked-reasons" />
 
 ### Blocked reasons
 
@@ -203,6 +223,8 @@ At the install level, we identify enough info at the time of install to determin
 
 The following tables list possible install level blocked reasons:
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### Install level: Fake install block sub reasons
 
 | Blocked reason | Blocked sub reason | Description |
@@ -216,6 +238,8 @@ The following tables list possible install level blocked reasons:
 | validation\_bots | invalid\_device\_parameters | Specific device fields expectation mismatch - defined by the customer |
 | validation\_bots | validation\_rules | Rules where the outcome is blocked installs based on manually defined validation rule |
 | bots | ai\_layer | AI models are utilized to analyze vast amounts of data points, enhancing detection capabilities for identifying fraudulent device and installation activities. |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### Install level: Attribution hijacking block sub reasons
 
@@ -241,6 +265,8 @@ When a pattern of fraud is detected, the fraud source is denylisted. Installs fr
 
 The following tables list possible cluster level blocked reasons:
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### Cluster level: Fake install block reasons
 
 | Blocked reason | Blocked sub reason | Description |
@@ -249,6 +275,8 @@ The following tables list possible cluster level blocked reasons:
 | bots, site\_blacklist | device\_emulators | Installs generated on a large scale by automatic scripts working in virtual environments |
 | site\_blacklist | device\_farms | High rates of unknown (new) devices |
 | behavioral\_anomalies | behavioral\_anomalies | Suspicious in-app behavior compared to common app user behavior pattern |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### Cluster level: Attribution hijacking block reasons
 
@@ -273,6 +301,8 @@ In-app events can be blocked for the following reasons:
 
 The following table lists possible in-app level blocked reasons.
 
+<div id="in-app-level-block-reasons" />
+
 #### In-app level block reasons
 
 | Blocked reason | Blocked sub reason | Description |
@@ -283,6 +313,8 @@ The following table lists possible in-app level blocked reasons.
 | validation\_inapps | validation\_rules | Based on manually defined validation rule |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### Retargeting
 
@@ -296,6 +328,8 @@ Protect360 raw data includes fraudulent installs and sessions from retargeting c
 Protect360 retargeting raw data is available for real-time blocks and fraud identified post attribution as follows:
 
 <table><thead><tr><th>Report </th><th>Export data</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>Installs</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Post-attribution installs</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"><span>\* Re-engagement data not available</span><br/> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### Hijacked installs attribution correction
 

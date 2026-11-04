@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Yandex Direct is an advertising platform that allows you to run user acquisition and retargeting campaigns on Yandex Search, as well as on thousands of apps and websites in the Yandex Advertising Network.
 
+<div id="set-up-yandex-direct" />
+
 ## Set up Yandex Direct
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -43,30 +45,44 @@ Yandex Direct's configuration window includes 3 active tabs: **Integration, Attr
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to turn on **Activate partner** to enable the setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation/deactivation</Anchor>.
 
+<div id="advanced-privacy" />
+
 ### Advanced privacy
 
 For iOS apps only, **Enable advanced privacy (for iOS 14.5 and above)** controls what data is shared with the partner via postbacks and reports. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#b-advanced-privacy">Learn more about advanced privacy</Anchor>.
+
+<div id="transaction-id" />
 
 ### Transaction ID
 
 For iOS apps only. When **Share SKAN transaction ID** is turned on, you're <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">sharing the transaction ID of SKAdNetwork postbacks</Anchor> with the partner. By doing so, the partner could decode your SKAdNetwork Conversion Values.
 
+<div id="general-settings" />
+
 ### General settings
 
 The following general settings are available for Yandex Direct.
+
+<div id="yandex-ecom-feed-counter-id" />
 
 #### Yandex Ecom Feed Counter ID
 
 Enter the Metrika tag number in **Yandex Ecom Feed Counter ID** if you're running Smart Banner campaigns with your product feed.
 
+<div id="yandex-app-id" />
+
 #### Yandex app ID
 
 Enter the **Yandex App ID** derived from Yandex Direct.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -76,6 +92,8 @@ Select **This partner only** for events coming only from users attributed to Yan
 Select **All media sources, including organic** to have your entire user base available to be reported to Yandex Direct.
 
 As an all-installs network, Yandex Direct prefers to receive postbacks for all new installs of your app from all sources, and they recommended selecting **All media sources, including organic**.
+
+<div id="in-app-events-postbacks" />
 
 ### In-app events postbacks
 

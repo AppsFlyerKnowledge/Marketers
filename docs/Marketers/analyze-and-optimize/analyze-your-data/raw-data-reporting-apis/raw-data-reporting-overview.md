@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **At a glance:** Row-level data (aka raw data) describes events relating to users like installs, in-app events, website visits, Protect360 blocked installs, ad revenue generated, and user-associated postbacks sent to partners. Raw data reports are available via download, API, and Data Locker.
 
+<div id="raw-data-reportingtools-and-reports" />
+
 ## Raw data reporting—tools and reports
 
 Raw data reports enable you to analyze user behavior and journeys, reconcile ad network accounts, and enrich your CRM and BI systems. By using raw data, you increase your ability to analyze, optimize, and improve app performance.
 
 Reports are made available via reporting tools. The tools have different characteristics suited to different use cases. For example, to reconcile a given ad network account, download the report as needed via the Export data page. To get user performance data to load into your BI systems, get the data programmatically using Data Locker or Pull API.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -52,13 +56,19 @@ Considerations:
 * The report date range relates to the activity (actual) date the event took place. This is in contrast to aggregated reports where the date range is <Anchor target="_blank" href="/marketers/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV-based</Anchor>.
 * Fields descriptions—see the <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">data field dictionary</Anchor>.
 
+<div id="reporting-tools" />
+
 #### Reporting tools
 
 <table><thead><tr><th>Tool</th><th>Description</th><th>Multiple /single app (1)</th><th>Data freshness capability (2)</th><th>Embed in scripts</th><th>Time zone</th><th>Currency</th></tr></thead><tbody><tr><td><a href="./raw-data-export-page" target="_blank">Raw data export page</a></td><td><ul><li>Download report using the user interface</li><li>Format: CSV file</li></ul></td><td>Single</td><td>Continuously updated</td><td><span><strong>x</strong></span></td><td>App-specific</td><td>App-specific</td></tr><tr><td><a href="./pull-api-raw-data" target="_blank">Pull API\*</a></td><td><ul><li>Download report using API calls.</li><li>Format: CSV files</li></ul></td><td>Single</td><td>Continuously updated</td><td><span>✓</span></td><td><ul><li>Selectable</li><li>Default: UTC</li></ul></td><td><ul><li>Selectable</li><li>Default: USD</li></ul></td></tr><tr><td><a href="./data-locker-for-marketers" target="_blank">Data Locker</a> <span><strong>P</strong></span></td><td><ul><li>Data streamed to a <a href="./data-locker-cloud-service-setup" target="_blank">bucket in the cloud</a></li><li>No volume limitations</li><li>Data availability window: 14 days.</li><li>Format: CSV or  parquet</li></ul></td><td>Multiple</td><td>Continuously updated with a lag of several hours</td><td><span>✓</span></td><td>UTC</td><td>USD </td></tr><tr><td><a href="./push-api-streaming-raw-data" target="_blank">Push API<span></span></a> <span><strong>P</strong></span></td><td><ul><li>User journey data (installs, in-apps, retargeting, SKAN) sent to your servers in real-time.</li><li>Format: JSON or query params</li></ul></td><td>Can use the same endpoint</td><td>Minutes after the event is recorded in AppsFlyer</td><td><span>✓</span></td><td>UTC + app-specific</td><td>USD + app-specific</td></tr><tr><td><a href="./conversion-data-payloads-and-scenarios" target="_blank">SDK Conversion data</a> (3)</td><td><ul><li>Get attribution conversion data within the app.</li><li>Format: JSON</li></ul></td><td>N/A</td><td>SDK conversion data retrieves user attribution data in up to 8 seconds from the first app launch (up to 5 seconds on AppsFlyer servers, plus end-to-end network delay).</td><td><span>✓</span></td><td>UTC</td><td>N/A</td></tr><tr><td colspan="7"><strong>Notes and abbreviations:</strong><br/>(1) Multiple app support<br/>(2) Actual data freshness depends on the report itself, as some reports are Daily.<br/>(3) SDK conversion data retrieves user attribution data in up to 8 seconds from the first app launch (up to 5 seconds on AppsFlyer servers, plus end-to-end network delay), and therefore is the least accurate method.<br/><span><strong>(P)</strong> </span><span>Premium feature</span><br/><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Report generation quotas apply</a></td></tr></tbody></table>
 
+<div id="tool-limitations" />
+
 #### Tool limitations
 
 <table><thead><tr><th>Limitation </th><th>Pull API (\*)</th><th>Push API</th><th>Data Locker</th><th>SDK<br/>Conversion data</th></tr></thead><tbody><tr><td>Data limit</td><td>1M rows per call</td><td>N/A</td><td>N/A</td><td>N/A</td></tr><tr><td>Data selection options</td><td>Select data types. Limited field selection options</td><td>Select data types, fields, and in-apps</td><td>Select data types, fields, and in-apps</td><td>No</td></tr><tr><td>Data availability window</td><td>90 days</td><td>N/A</td><td>14 days </td><td>Lifetime (available in the SDK)</td></tr><tr><td colspan="5"><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Report generation quotas apply</a></td></tr></tbody></table>
+
+<div id="integration-considerations" />
 
 #### Integration considerations
 
@@ -94,6 +104,8 @@ The <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">raw
 
 For ease of understanding, user journey fields are divided into groups based on context.
 
+<div id="user-journey-raw-data-field-groups" />
+
 #### User journey raw data field groups
 
 | Field group | Relevant to organic users | Example fields |
@@ -106,6 +118,8 @@ For ease of understanding, user journey fields are divided into groups based on 
 | Event | Yes | Populated in in-app event reports:<br /><br />Event name, event value, event revenue |
 
 </Accordion>
+
+<div id="user-journey-reports" />
 
 ## User journey reports
 
@@ -151,6 +165,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 * Reports can include either organic users, non-organic users, or both, as indicated.
 * Retention policies apply to historical raw data reports depending on the reporting tool and the origin of the raw data. In general, data is available for the previous 90 days. **Note**! Retention policies don't apply to aggregated data.
 
+<div id="user-journey-reports-1" />
+
 #### User journey reports
 
 <table><thead><tr><th>Category</th><th>Unique to Data Locker</th><th>Report topic</th><th>Organic</th><th>Non-organic</th></tr></thead><tbody><tr><td>User acquisition</td><td><span>✓</span></td><td>Clicks</td><td colspan="2">N/A</td></tr><tr><td>Retargeting</td><td><span>✓</span></td><td>Clicks from retargeting campaigns </td><td colspan="2">Retargeting always non-organic</td></tr><tr><td>User acquisition</td><td><span>✓</span></td><td>Impressions</td><td colspan="2">N/A</td></tr><tr><td>Retargeting</td><td><span>✓</span></td><td>Impressions from retargeting campaigns</td><td colspan="2">Retargeting always non-organic</td></tr><tr><td>User acquisition</td><td>-</td><td>Installs </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>User acquisition</td><td>-</td><td>In-app events </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>User acquisition</td><td>-</td><td>Attributed ad revenue</td><td>-</td><td><span>✓</span></td></tr><tr><td>User acquisition</td><td>-</td><td>Organic ad revenue</td><td><span>✓</span></td><td>-</td></tr><tr><td>Retargeting</td><td>-</td><td>Retargeting ad revenue</td><td colspan="2">Retargeting always non-organic</td></tr><tr><td>Retargeting</td><td>-</td><td>Retargeting conversions (re-engagements and re-attributions)</td><td colspan="2">Retargeting always non-organic</td></tr><tr><td>Retargeting</td><td>-</td><td>Retargeting in-app events (re-engagements and re-attributions)</td><td colspan="2">Retargeting always non-organic</td></tr><tr><td>Retargeting</td><td><span>✓</span></td><td>Retargeting sessions (re-engagements and re-attributions)</td><td colspan="2">Retargeting always non-organic</td></tr><tr><td>User acquisition</td><td><span>✓</span></td><td>Sessions</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>User acquisition</td><td>-</td><td>Non-organic uninstalls </td><td>-</td><td><span>✓</span></td></tr><tr><td>User acquisition</td><td>-</td><td>Organic uninstalls</td><td><span>✓</span></td><td>-</td></tr><tr><td>User acquisition</td><td><span>✓</span></td><td>Cross-platform engagements</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
@@ -160,6 +176,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 <div id="user-journey-report-descriptions" />
 
 <Accordion title="User journey report descriptions">
+
+<div id="clicks-and-impressions" />
 
 #### Clicks and impressions
 
@@ -172,9 +190,13 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Remarks | SRN data not available. |
 | Restricted users | In some cases, due to privacy rules, impression and click data is either restricted (doesn't have user identifiers) or is not available at all. The availability depends on the media source and platform. |
 
+<div id="installs-and-retargeting-conversions" />
+
 #### Installs and retargeting conversions
 
 <table><thead><tr><th rowspan="2">Report name </th><th rowspan="2"><p>User acquisition: Installs</p></th><th rowspan="2">Retargeting: Conversions</th></tr></thead><tbody><tr><td>Context</td><td><p>When a user opens an app for the first time.</p></td><td><p>After a user engages with a retargeting ad and then opens the app. A retargeting conversion being a re-engagement or re-attribution.</p>See <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">Retargeting attribution guide.</a></td></tr><tr><td>Use cases</td><td><ul><li>Generate aggregated reports using fields not available via AppsFlyer analytics tools.</li><li>Combine with other reports for advanced, cross-section analysis.</li><li>Analyze performance across different dimensions such as cities, metropolitan areas, and so on. </li><li>Segment users according to country, city, and language for targeting purposes.</li><li>Obtain user device IDs for retargeting purposes.</li></ul></td><td>Similar to installs.</td></tr><tr><td>Organic vs. non-organic</td><td><ul><li><strong>Non-organic:</strong> The attribution and contributors attribution field groups are populated</li><li><strong>Organic:</strong> The media source field is either blank, null, or organic. Consider this when you load data into your systems. </li></ul></td><td>Not applicable</td></tr><tr><td>Example report</td><td><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yvNGmZp8ataHBj89CFq856PmDixnyjKK75O8fQcS9TjT8J2jBAnJoTn3350NV-7pCSlaT0oh8ebs/pub?output=csv" target="_blank">Installs</a></td><td>Retargeting conversions report has the same structure as the installs report. Some fields are populated in the context of retargeting. See <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">retargeting raw data</a>. </td></tr></tbody></table>
+
+<div id="in-app-events" />
 
 #### In-app events
 
@@ -264,6 +286,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
   </tbody>
 </Table>
 
+<div id="sessions" />
+
 #### Sessions
 
 | Report | Characteristics |
@@ -272,6 +296,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Characteristics | The report structure is the same as in-app event reports. Sessions (session events) are in a separate report due to the large number of such events. |
 | Use case | Understand user engagement with the app. |
 | Example report | The sessions report is similar to the in-app events report. Note: In raw data, sessions have the event name *launch*. |
+
+<div id="uninstalls" />
 
 #### Uninstalls
 
@@ -289,9 +315,13 @@ To follow a user journey, combine the reports that relate to the part of the jou
 
 <Accordion title="User journey report availability per tool">
 
+<div id="ad-engagement-report-by-tool" />
+
 #### Ad engagement report by tool
 
 <table><thead><tr><th>Report</th><th>Export data</th><th>Pull API</th><th>Data Locker</th><th>Push API</th><th>SDK<br/>Conversion Data</th></tr></thead><tbody><tr><td>Impressions (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td>Clicks (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td colspan="6">(1) Clicks and impressions data is made available by non-SRNs. SRNs don't make this data available.</td></tr></tbody></table>
+
+<div id="user-acquisition-reports-by-tool" />
 
 #### User acquisition reports by tool
 
@@ -301,6 +331,8 @@ To follow a user journey, combine the reports that relate to the part of the jou
 | Sessions | - | - | ✓ | - | - |
 | In-app events | ✓ | ✓ | ✓ | ✓ | - |
 | Uninstalls | ✓ | ✓ | ✓ | - | - |
+
+<div id="retargeting-raw-data-reports-by-tool" />
 
 #### Retargeting raw data reports by tool
 
@@ -332,18 +364,20 @@ You can identify and highlight user journeys with the help of the AppsFlyer ID. 
 
 Since the install and in-app events reports have the same structure, they can be merged into a single report. In the merged report, you can aggregate and filter by AppsFlyer ID and Customer User ID (if available) to analyze user journeys.
 
+<div id="engaged-userstrong" />
+
 > 📄 **Engaged user—strong**
 >
 > * A user installed the app on August 20 at 09:31.
 > * The merged report shows that they made purchases on August 20 at 10:31, August 22 at 15:22, and August 25 at 16:47.
 > * From this, we conclude that the user is an engaged user. They made a purchase one hour after launching the app and continued purchasing on the days following the install.
 >
-> #### Engaged user—weak
+> #### <span id="engaged-userweak"></span>Engaged user—weak
 >
 > * A user installed the app on July 30. The merged report shows that they added an item to their cart on August 15, but there are no subsequent purchase events.
 > * You can assume that the user is hesitant to make a purchase and choose to retarget them with the item they added to the cart.
 >
-> #### Analyzing the user journey for campaign optimization
+> #### <span id="analyzing-the-user-journey-for-campaign-optimization"></span>Analyzing the user journey for campaign optimization
 >
 > * The user acquisition (UA) manager of a travel app downloads the install and in-app event reports and merges them.
 > * Then, to view user journeys in the app, they filter or aggregate data by AppsFlyer ID.
@@ -353,6 +387,8 @@ Since the install and in-app events reports have the same structure, they can be
 > * By analyzing the user journey, the UA manager might conclude that the campaign was too narrowly focused and that users weren't sufficiently engaged by the app.
 
 </Accordion>
+
+<div id="feature-reports" />
 
 ## Feature reports
 
@@ -379,6 +415,8 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 * Starting in March 2021, fields are populated according to a network's Advanced Privacy setting. Meaning, if Advanced Privacy is on, some fields, like user identifiers aren't included. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">Advanced Privacy postback specification for ad networks.</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-id-postbacks-v5">Get postback reports by PULL API</Anchor>
 
+<div id="postback-reports-available-via-the-export-data-page-and-pull-api" />
+
 #### Postback reports (available via the Export Data page and Pull API)
 
 | Report topic | Events sent to the attributed media source |
@@ -387,6 +425,8 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 | In-app events | Non-organic in-app events |
 | Retargeting conversion postbacks | Retargeting (re-engagement and re-attribution) |
 | Retargeting in-app events | Retargeting in-app events |
+
+<div id="additional-fields-in-postback-reports" />
 
 #### Additional fields in postback reports
 
@@ -414,6 +454,8 @@ Use postback reports, to review copies of data sent to an ad network. For exampl
 4. To give access to the In-app events (CPA) dashboard, turn on **Access aggregate in-app events data**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Netease, an AppsFlyer integrated partner, is a leading advertisement service provider in the Chinese market.
 
+<div id="setting-up-netease" />
+
 ## Setting up Netease
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,10 +48,14 @@ Netease's configuration window includes 3 active tabs: Integration, Attribution 
 
 The integration with Netease Ads only supports the install event in the default postback.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -64,6 +70,8 @@ For more details about partner activation please click <Anchor target="_blank" h
 In this tab, you can create the attribution links you want to send to Netease for attributing Netease's campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution link parameters
 
@@ -86,6 +94,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Netease.
@@ -95,6 +105,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/e706fcb29613f7a398a975e320c9e0eddccad29d2eb93bafbd07ca2a5e196a31-50900364069137.png)
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -125,6 +137,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant RTB House, whether the partner acts as an ad network, agency, or both. Note that even if attribution is disabled for RTB House, the permissions tab is active and you can grant control to RTB House.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/8e34640acc2e7cff3edb63dc58e6a2dd514a3a98f153eafe9516dfccd7de8b0a-50900350205073.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

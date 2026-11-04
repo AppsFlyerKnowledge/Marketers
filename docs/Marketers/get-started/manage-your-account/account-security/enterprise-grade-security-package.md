@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Enhance your account protection with the **Enterprise-Grade Security Package,** a premium offering designed for enterprise-grade identity management, token access control, and extended audit visibility.
 
+<div id="intro" />
+
 ## Intro
 
 The Enterprise-Grade Security Package brings together three key features that elevate your organization’s security:
@@ -30,6 +32,8 @@ The Enterprise-Grade Security Package brings together three key features that el
 * **Audit log API with extended retention**: Gain long-term visibility into platform activity and integrate audit events into your monitoring stack.
 * **SCIM provisioning**: Automate and centralize user access control via your identity provider.
 * **IP allowlist for Login:** Prevent unauthorized access, ensuring log in to the AppsFlyer dashboard from only trusted networks and IPs
+
+<div id="compare-the-standard-and-enterprise-grade-packages" />
 
 ### Compare the standard and Enterprise-Grade packages:
 
@@ -49,6 +53,8 @@ The Enterprise-Grade Security Package brings together three key features that el
 
 Create and manage up to **30 tokens** per type (API, S2S, OneLink) with **service-level restrictions** to enhance scalability, security, and control over tokens.
 
+<div id="key-features" />
+
 #### Key features
 
 * Admins can create up to **30 tokens per type**, compared to the 2 tokens with the standard tokens, supporting larger teams and complex workflows.​
@@ -56,6 +62,8 @@ Create and manage up to **30 tokens** per type (API, S2S, OneLink) with **servic
 * Tokens can be revoked or rotated without breaking integrations or automations.
 * Restrict a token to a specific app so the token can only access data or perform actions for that app.
 * Simplifies collaboration with internal teams and external partners through token-specific permissions.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -67,9 +75,13 @@ Create and manage up to **30 tokens** per type (API, S2S, OneLink) with **servic
 >
 > **App-specific access token:** Create a token that works for one app only. Use this token when an internal team, external partner, or automation must access only a specific app.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > For general information about standard tokens, see <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">managing AppsFlyer tokens</Anchor>.
+
+<div id="how-to-access-and-control-tokens" />
 
 #### How to access and control tokens
 
@@ -99,6 +111,8 @@ Here you can:
 * Delete tokens individually
 * Monitor token activity in audit logs
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Tokens cannot be edited. To change access, delete, and recreate a token.
@@ -111,6 +125,8 @@ Here you can:
 
 Enhancing the existing audit log capabilities, this feature introduces an API for audit log consumption and extends data retention from 90 days to 180 days. Ideal for teams needing long-term access to user action logs or integrating audit events into external monitoring tools like SOC and SEIM.
 
+<div id="key-features-1" />
+
 #### Key features
 
 * Access audit logs programmatically using a dedicated API
@@ -119,9 +135,13 @@ Enhancing the existing audit log capabilities, this feature introduces an API fo
 * Use service-specific tokens to isolate log access
 * Export data to SIEM tools, dashboards, or cloud storage
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > For general information about the standard audit log, see <Anchor target="_blank" href="/marketers/docs/audit-log">Standard audit log</Anchor>.
+
+<div id="how-to-access-the-audit-log-via-api" />
 
 ### **How to access the audit log via API**
 
@@ -133,6 +153,8 @@ To use the Audit Log API:
 4. Use an existing or create a new **API token**.
 5. Under **Access restriction**, select **Audit log** service.
 6. Use the token to authenticate requests to the audit log API endpoint.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -148,11 +170,15 @@ SCIM provisioning enhances AppsFlyer SSO capabilities by automating user lifecyc
 
 By syncing users via SCIM, you maintain full control over access permissions in real-time. Combined with SAML 2.0 SSO, this forms a complete identity and access management solution for enterprise customers.
 
+<div id="key-features-2" />
+
 #### **Key features**
 
 * Automatically create users in AppsFlyer based on identity provider (IdP) records.
 * Changes in user roles or status in the IdP are instantly reflected in AppsFlyer.
 * Uses **SAML 2.0** for secure SSO and **SCIM** for provisioning—compatible with leading IdPs like Okta and Azure AD.
+
+<div id="how-to-set-up-scim-provisioning" />
 
 #### **How to set up SCIM provisioning**
 
@@ -160,6 +186,8 @@ To start using SCIM provisioning in AppsFlyer, you need to:
 
 1. [Set up SSO](/docs/enterprise-grade-security-package#sso-set-up)
 2. [Enable SCIM](/docs/enterprise-grade-security-package#enable-scim)
+
+<div id="sso-set-up" />
 
 #### SSO set up
 
@@ -169,7 +197,11 @@ To set up SSO, you need to:
 * <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">Set up SSO in AppsFlyer</Anchor>
 * <Anchor target="_blank" href="/marketers/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">Test the SSO configuration</Anchor>
 
+<div id="enable-scim" />
+
 #### Enable SCIM
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -183,9 +215,15 @@ To enable SCIM, there are a few steps that must be followed:
 * Add [roles](/docs/enterprise-grade-security-package#roles)
 * Add [external namespace](/docs/enterprise-grade-security-package#external-namespace)
 
+<div id="idp-instruction-links" />
+
 #### IdP instruction links
 
+<div id="the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud" />
+
 ##### The instructions for the IdPs can be found below. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor>, <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
+
+<div id="scim-connections" />
 
 #### SCIM connections
 
@@ -197,6 +235,8 @@ In the SCIM connections, the following fields must be filled in:
 | Unique identifier field for users | userName |
 | Authentication method: HTTP header called "Authorization" | Bearer &lt;<Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens">Your AppsFlyer API token</Anchor>> |
 
+<div id="scim-attributes" />
+
 #### SCIM attributes
 
 | **Attribute** | **Type** | **Required** | **Field name** | **External namespace** | **Description** |
@@ -204,6 +244,8 @@ In the SCIM connections, the following fields must be filled in:
 | Role | String | ✅ | role | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>Assign a predefined or custom role to the user.</li><li>See below for the list of AppsFlyer roles that must be entered</li></ul> |
 | Allow access to all future apps | Boolean | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | If enabled, the user will be granted access to new apps automatically. |
 | Allowed App IDs | String | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Comma-separated list of app IDs. Leave empty for all apps or set to "None" for no apps. |
+
+<div id="roles" />
 
 #### Roles
 
@@ -222,6 +264,8 @@ The roles must match the <Anchor target="_blank" href="/marketers/docs/user-mana
 | Quality Assurance | quality\_assurance |
 | Custom Role | [enter custom role value] |
 
+<div id="limitations" />
+
 #### Limitations
 
 | **Limitation** | **Description** |
@@ -236,11 +280,15 @@ The roles must match the <Anchor target="_blank" href="/marketers/docs/user-mana
 
 Enhanced IP allowlisting improves security by preventing unauthorized access, ensuring only trusted networks can interact with the platform. This feature is especially valuable for enterprises enforcing strict security policies or managing remote access.
 
+<div id="key-features-3" />
+
 #### Key features
 
 * Reduces attacks by blocking login attempts from unknown IPs.
 * Enables the ability to specify IP addresses or ranges to ensure that only authorized users and networks can access the platform.
 * Ideal for organizations using VPNs or requiring stricter access controls.
+
+<div id="adding-ips-to-the-list" />
 
 #### Adding IPs to the list
 
@@ -254,11 +302,15 @@ Enhanced IP allowlisting improves security by preventing unauthorized access, en
 4. Added IPs will be shown on the right side under **See your IPs in the IP allowlist**.
 5. Click **Save list**.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * Make sure the IP addresses or ranges you add are correct. Incorrect entries may prevent you from accessing your account.
 > * The allowlist must contain at least one IP address or range before you can save and activate it, and you can add up to 100 IP addresses or ranges to the allowlist.
 > * After you click Save list, the IP restrictions will be enforced starting with your next log in.
+
+<div id="removing-ips-from-the-list" />
 
 #### Removing IPs from the list
 
@@ -274,41 +326,61 @@ Enhanced IP allowlisting improves security by preventing unauthorized access, en
 
 <Accordion title="Frequently asked questions about our security package">
 
+<div id="what-is-appsflyers-enterprise-grade-security-package" />
+
 #### What is AppsFlyer's Enterprise-Grade Security Package?
 
 Scale securely with advanced security capabilities that go beyond standard protections. Get SSO with SCIM provisioning, granular access controls, extended audit logs, and compliance tools designed for enterprise security and IT leaders.
+
+<div id="who-is-the-enterprise-grade-security-package-designed-for" />
 
 #### Who is the Enterprise-Grade Security Package designed for?
 
 Enterprise security and IT leaders preparing for audits, procurement and legal teams in regulated industries evaluating SaaS vendors, and platform admins managing complex access requirements across multiple teams and integrations.
 
+<div id="how-does-scim-provisioning-work" />
+
 #### How does SCIM provisioning work?
 
 Automate user lifecycle management by connecting directly with your identity provider. SCIM automatically syncs user access and roles, handles instant onboarding and offboarding, and eliminates manual account management and orphaned access risks.
+
+<div id="what-compliance-standards-does-this-support" />
 
 #### What compliance standards does this support?
 
 Support audit readiness for SOC2, ISO 27001, and GDPR requirements with 180-day audit log retention, comprehensive access documentation, and real-time SIEM integration for continuous monitoring and compliance verification.
 
+<div id="how-many-roles-and-api-tokens-can-i-create" />
+
 #### How many roles and API tokens can I create?
 
 Create up to 50 customizable roles tailored to your organizational structure and up to 30 service-specific or app-specific restrictions. Isolate access for different integrations and job functions while maintaining least-privilege principles.
+
+<div id="can-i-integrate-with-my-existing-security-tools" />
 
 #### Can I integrate with my existing security tools?
 
 Yes. Stream audit data directly to your SIEM and security tools through API-based log streaming. Enable real-time monitoring, anomaly detection, and automated security responses within your existing SOC infrastructure.
 
+<div id="what-network-restrictions-can-i-apply" />
+
 #### What network restrictions can I apply?
 
 Control platform access through IP allowlists and geographic restrictions. Define trusted networks and locations to prevent unauthorized access while supporting remote work scenarios and secure partner collaboration.
+
+<div id="how-long-are-audit-logs-retained" />
 
 #### How long are audit logs retained?
 
 Access comprehensive audit trails with 180-day log retention that captures every platform interaction. Get complete visibility into user actions, API calls, and access patterns for thorough compliance documentation and security investigations.
 
+<div id="does-this-replace-standard-security-features" />
+
 #### Does this replace standard security features?
 
 No. The Enterprise-Grade Security Package adds advanced capabilities on top of standard security features. You get enhanced controls, automation, and visibility while maintaining all existing security protections.
+
+<div id="how-quickly-can-i-implement-these-security-controls" />
 
 #### How quickly can I implement these security controls?
 

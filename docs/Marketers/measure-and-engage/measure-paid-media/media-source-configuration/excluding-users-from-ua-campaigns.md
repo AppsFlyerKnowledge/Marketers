@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Exclude existing users from user acquisition (UA) campaigns to obtain more installs with the same budget and improve ROAS.
 
+<div id="issues-and-consequences" />
+
 ## Issues and consequences
 
 If your app receives traffic from multiple media sources, then these sources can target your existing users in their UA campaigns.
@@ -39,9 +41,13 @@ Campaign performance can suffer for the following reasons:
 
 <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#what-is-srn-mistargeting">SRN mistargeting</Anchor> is a similar and common performance issue. This significant issue may happen if both your UA and retargeting campaigns are with the same SRN. <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#is-mistargeting-a-problem">Learn more</Anchor> 
 
+<div id="solutions" />
+
 ## Solutions
 
 These solutions outline how to update ad networks to exclude existing users from UA campaigns.
+
+<div id="manual-update" />
 
 ### Manual update
 
@@ -54,9 +60,13 @@ There are several ways to add this raw data to your BI system:
 * Use Push API to implement real-time collection
 * Get conversion data from the SDK
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > In the time gap between manually sending the next list to the ad networks, UA campaigns can target your newest app users.
+
+<div id="audiences" />
 
 ### Audiences
 

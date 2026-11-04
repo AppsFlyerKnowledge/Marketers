@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Redirect users to your app's custom store listings in Google Play or custom product pages in the App Store. Use AppsFlyer data about the custom store pages to optimize your campaigns.
 
+<div id="overview" />
+
 ## Overview
 
 Google Play custom store listings and Apple App Store custom product pages (referred to collectively in this article as custom store product pages), allow app owners to create additional versions of their Google Play and App Store pages that showcase different features or content within their app. Custom store product pages can have promotional text, screenshots, and previews that are different from those on the default store page.
@@ -34,6 +36,8 @@ For Google Play, you can create up to 50 custom pages. For the App Store, you c
 You can use AppsFlyer OneLink URLs or single-platform attribution links to redirect users to these custom store product pages and create distinct contextual journeys for different target audiences.
 
 Data regarding the custom store product pages is available in the AppsFlyer dashboard and raw data reports as described in the section that follows. You can use the data to A/B test and optimize your campaigns and product pages.
+
+<div id="data-availability" />
 
 ## Data availability
 
@@ -60,6 +64,8 @@ In the reports, the `store_product_page` field indicates which custom page a giv
 
 </Accordion>
 
+<div id="setup" />
+
 ## Setup
 
 <div id="google-play" />
@@ -72,6 +78,8 @@ To set up redirections to a custom store listing in Google Play, you can either:
 * Add the parameter `af_android_store_csl` to your OneLink URLs or single-platform attribution links with the value being the custom store listing you chose in Google Console. For example: `af_android_store_csl=abc123`
 
 <span id="use-the-onelink-ui-google-play"></span>**Note:** Due to system changes in some browsers, including Google Chrome, using custom store listing redirection may lead to a web version of the Google Play store with the custom store listing view (instead of the app version).
+
+<div id="use-the-onelink-uigoogle-play" />
 
 #### Use the OneLink UI—Google Play
 
@@ -102,6 +110,8 @@ To set up redirections to a custom product page in the App Store, you can either
 
 * Use the OneLink UI.
 * Add the parameter `af_ios_store_cpp` to your OneLink URLs or single-platform attribution links with the value being the custom product page ID. For example: `af_ios_store_cpp=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` **Note:** In raw data and aggregated reporting, the `af_ios_store_cpp` value is recorded for clicks but not for impressions (display name: store\_product\_page).
+
+<div id="use-the-onelink-uiapp-store" />
 
 #### Use the OneLink UI—App Store
 

@@ -28,11 +28,15 @@ x-zendesk:
 
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## About the Creative Optimization Discovery AI dashboard
 
 The <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide">**Creative Optimization**</Anchor> dashboards let you measure the performance of your creatives by pulling all your creatives from all media channels into one place. Analyze their performance by selected dimensions, across multiple campaigns, channels, and more, to gain critical insights before planning, selecting, and producing your next batch of creatives.
 
 The AI-powered **Creative Optimization** **Discovery AI dashboard** gives your creative team all the info they need to produce winning creatives. It provides granular performance data, enabling informed decisions based on the specific elements or features within a creative that contribute to its effectiveness. With this dashboard, you can consistently produce and maintain successful creatives that are data-driven and optimized for maximum impact. Based on the main filter selections, you can view a gallery of your creatives, or break them down into individual scenes and elements.
+
+<div id="get-started" />
 
 ## Get started
 
@@ -42,6 +46,8 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 
 * Cost data metrics are displayed differently in the dashboards depending on whether or not you have an AppsFlyer ROI360 subscription. <Anchor target="_blank" href="/marketers/docs/creative-optimization-guide#creative-optimization-roi360">Learn more</Anchor>
 * Impressions and clicks data requires cost to be turned on in the partner integrations. <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#cost-tab">Learn more</Anchor>
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
 
 ## Procedures—Using the Discovery AI dashboard
 
@@ -105,6 +111,8 @@ See an in-depth <Anchor target="_blank" href="/marketers/docs/creative-optimizat
 
 </Accordion>
 
+<div id="concepts" />
+
 ## Concepts
 
 <div id="discovery-ai-search" />
@@ -123,11 +131,13 @@ Use it to isolate patterns, validate hypotheses, and identify which elements dri
 
 Search queries should refer only to creative content, such as visuals, text, audio, themes, or story elements. Do not search by performance metrics, for example, "creatives with IPM above 2," or by creative name.
 
+<div id="what-you-can-search-for" />
+
 #### What you can search for
 
 Search supports natural language queries across multiple creative content dimensions. You can combine elements to generate more precise and contextual results.
 
-* ##### **Visual**
+* ##### <span id="visual"></span>**Visual**
 
   Search for visual concepts such as:
 
@@ -141,7 +151,7 @@ Search supports natural language queries across multiple creative content dimens
 
 “Urban street scene with race cars”
 
-* ##### **Text**
+* ##### <span id="text"></span>**Text**
 
   Search for specific messaging, headlines, or microcopy.
 
@@ -153,7 +163,7 @@ Search supports natural language queries across multiple creative content dimens
 
 “Spanish subtitles”
 
-* ##### **Audio**
+* ##### <span id="audio"></span>**Audio**
 
 Search for audio elements such as voiceovers, accents or languages, music style or tempo, and sound effects.
 
@@ -163,7 +173,7 @@ Search for audio elements such as voiceovers, accents or languages, music style 
 
 “Motivational voiceover”
 
-* ##### **Narrative and high-level concepts**
+* ##### <span id="narrative-and-high-level-concepts"></span>**Narrative and high-level concepts**
 
 Search for broader themes, storylines, and emotional tones.
 
@@ -174,6 +184,8 @@ Search for broader themes, storylines, and emotional tones.
 “Dramatic gameplay scene”
 
 “Problem-solution narrative”
+
+<div id="combining-properties" />
 
 #### Combining properties
 
@@ -188,6 +200,8 @@ Examples:
 “Beach scene at sunset with happy storyline and soft piano music”
 
 Combining attributes helps isolate clearer creative patterns and reduces noise in your analysis.
+
+<div id="notes" />
 
 > 📘 **Notes**
 >
@@ -356,6 +370,8 @@ You can also switch to the **Similarities** tab, where you can get a list of all
 For creatives and elements, you can open the **Similarities** tab by clicking **Find similar** on a specific discovery card.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

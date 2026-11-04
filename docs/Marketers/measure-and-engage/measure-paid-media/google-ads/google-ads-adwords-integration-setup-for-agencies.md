@@ -35,9 +35,13 @@ The configuration enables AppsFlyer to attribute conversions to an agency from w
 
 Before the Agency can begin the process, the Advertiser must first configure the Google Ads integration. For details, click <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers">here</Anchor>.
 
+<div id="enabling-agency-attribution-of-google-ads" />
+
 ## Enabling agency attribution of Google Ads
 
 AppsFlyer supports agency configurations with Google Ads. It is essential that the advertiser and the agency have separate Google Ads accounts to enable AppsFlyer to correctly attribute the data.
+
+<div id="setting-up-google-ads-attribution-for-agencies" />
 
 ## Setting up Google Ads attribution for agencies
 
@@ -158,11 +162,15 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 4. Click ***Save***.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Import the first-open and in-app actions to Google Ads to begin counting conversions in both Google Ads and your AppsFlyer dashboard.
 >
 > To be able to import, you must launch the app and perform your mapped in-app events at least once.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -177,6 +185,8 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 (**Google Ads** **admin only)**
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > For Google Ads to register your new conversions, you must **launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
@@ -188,6 +198,8 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 3. Select **App** from the list of conversion types, then select **Third-party app analytics**, and click **Continue**.  
    [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. Check the box next to **first\_open** of all your apps, and for each event you’d like to import.
+
+   <div id="note-1" />
 
    > 📘 **Note**
    >
@@ -202,6 +214,8 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
    [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer!
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Please ensure your "include in conversions" setup is aligned with your campaign goals in Google Ads. For more information, consult with your Google representative or refer to the Google documentation <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">here</Anchor>.
@@ -213,6 +227,8 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 To watch the video "Setting-Up Google Ads Attribution for Advertisers" <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#configuring-google-ads-attribution-for-advertisers">click here</Anchor>.
 
 For details of how advertisers can attribute multiple agencies/MCC Google Ads accounts, click <Anchor target="_blank" href="/marketers/docs/recording-multiple-agency-mcc-google-ads-accounts">here</Anchor>.
+
+<div id="agencies-collecting-cost-clicks-and-impression-data" />
 
 ## Agencies: collecting cost, clicks, and impression data
 

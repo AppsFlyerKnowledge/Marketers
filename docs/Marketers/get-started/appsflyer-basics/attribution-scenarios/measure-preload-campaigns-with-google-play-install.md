@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer uses Google Play Auto Install (PAI) to attribute installs to preload campaigns, where marketers contract with mobile carriers, and app discovery partners to preload their app at the time the device is first turned on by the user. **Note**: This attribution method differs from <Anchor target="_blank" href="/marketers/docs/appsflyer-factory-preinstall-using-manifest-android">APK preinstall attribution</Anchor>.
 
+<div id="pai-preload-attribution" />
+
 ## PAI preload attribution
 
 In preload campaigns, Original Device Manufacturers (OEMs), mobile carriers, and app discovery partners preload apps on devices that get downloaded upon first device activation.
@@ -33,9 +35,13 @@ Google Play Auto Install (PAI) (one of three preload attribution methods) provid
 
 AppsFlyer gives the highest priority to preload attribution. This means that if a user engages with other campaigns before opening the app for the first time, the preload campaign is still awarded the attribution. Other engagements are regarded as assisted installs.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The Preload Equal Attribution Priority setting does not apply to Google PAI.
+
+<div id="flow" />
 
 ### Flow
 
@@ -45,6 +51,8 @@ AppsFlyer gives the highest priority to preload attribution. This means that if 
 4. AppsFlyer attributes are based on the data retrieved.
 
 ![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+
+<div id="data-availability" />
 
 ### Data availability
 
@@ -59,6 +67,8 @@ Raw data includes the following fields:
 * Match\_type = preload\_pai
 * Campaign\_name = preload campaign by `<preloadpartner ID>`
 
+<div id="set-up-google-play-auto-install-pai-preload-attribution" />
+
 ### Set up Google Play Auto Install (PAI) preload attribution
 
 **To set up PAI preload attribution:**
@@ -68,6 +78,8 @@ Raw data includes the following fields:
 3. Turn on **Preload attribution**.
 4. Set the **Preload lookback window** duration. 
 
+   <div id="note-1" />
+
    > 📘 **Note**
    >
    > Google stores referrer data for up to 90 days. Set the PAI lookback window to 90 days or less. Although the UI allows up to 180 days, data beyond 90 days isn’t available from Google.
@@ -75,13 +87,19 @@ Raw data includes the following fields:
 5. Click **Save Integration**.
 6. Let the preload partner know that you are ready to attribute their campaigns.
 
+<div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
+
 ### Partners supporting Google Play Auto Install (PAI) preload campaigns
 
 <table><thead><tr><th rowspan="2">Partner</th><th rowspan="2">PID</th></tr></thead><tbody><tr><td><p>Xiaomi</p></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>Motorola</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>Lenovotab</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>KDDI Pre-Install</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Note: Agencies can't enable preload campaigns for their clients.
+
+<div id="postbacks-for-preload-partners" />
 
 ## Postbacks for preload partners
 
@@ -103,6 +121,8 @@ When included in a postback, macros contain user-relevant data. Supported macros
 | app\_version | SDK | App version set by the app developer in the app code |
 | device\_type | SDK | The commercial model name of the device. Example: SM-GM284 or iPhone7 |
 | os\_version | SDK | Device operating system version |
+
+<div id="postback-example" />
 
 #### Postback example
 

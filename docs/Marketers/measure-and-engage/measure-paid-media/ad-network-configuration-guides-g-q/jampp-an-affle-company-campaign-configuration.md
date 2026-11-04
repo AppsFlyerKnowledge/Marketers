@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/jampp.png" width="213px" />
 
+<div id="setting-up-jampp-integration" />
+
 ## Setting up Jampp integration
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,14 +48,20 @@ x-zendesk:
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Jampp prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to Jampp.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -61,12 +69,16 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Toggle this to ON if you want to attribute view-through installs from Jampp. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Jampp following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Jampp.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Jampp.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -95,6 +107,8 @@ In this tab, you can create the attribution links you want to send to Jampp for 
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -113,6 +127,8 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -147,6 +163,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Jampp.
@@ -155,9 +173,13 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to Jampp to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -168,6 +190,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 **Attribution link parameter:** af\_viewthrough\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -205,6 +229,8 @@ In this tab, you can select the permissions to grant Jampp, whether the partner 
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 * ***Allow to configure integration*** - permit the partner to set up the integration tab (except in-app event postbacks)
@@ -216,6 +242,8 @@ Use these toggles to give the ad network permissions to handle its own configura
 * ***Allow access to your Protect360 dashboard*** - only to the partner's own Protect360 data, and providing the feature is enabled for the advertiser
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Agency permissions
 

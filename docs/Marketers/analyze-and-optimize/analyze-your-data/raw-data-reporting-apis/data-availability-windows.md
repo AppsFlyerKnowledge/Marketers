@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **At a glance:** Data availability depends on the report type and the defined availability window.
 
+<div id="data-availability-windows" />
+
 ## Data availability windows
 
 * The terms **availability window** and **data retention** mean different things. <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">Data retention</Anchor> relates to the period we keep raw data on our servers and is of longer duration than the availability window.
 * The window duration depends on your subscription package.
 * The article doesn't apply to <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor>.
+
+<div id="raw-data-availability-window" />
 
 ### Raw data availability window
 
@@ -39,6 +43,8 @@ The availability window limits raw data provided by Pull API and the Raw Data ex
 | Attributions | Organic installs, non-organic installs, retargeting conversions, uninstalls | 60 out of the last 90 days |
 | In-app events | Organic in-app events, non-organic in-app events, retargeting in-app events | 31 out of the last 90 days |
 
+<div id="aggregated-data-availability-window" />
+
 ### Aggregated data availability window
 
 An availability window limits data provided by Pull API and the Aggregated Data export page. The window duration depends on the report type, as detailed in the following table.
@@ -46,6 +52,8 @@ An availability window limits data provided by Pull API and the Aggregated Data 
 | Report | Availability window |
 | --- | --- |
 | Aggregated reports | 25 months (2 years + 1 month), <Anchor target="_blank" href="/marketers/docs/bulletin-aggregated-ltv-data-availability">starting with the first app install</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -28,12 +28,16 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## PBA principles
 
 * PBA consolidates website and mobile app data to provide a holistic view of campaign performance across a brand’s digital properties. Advertisers use PBA to understand customer journeys in terms of people, instead of devices.
 * PBA data—on the PBA dashboards and in raw data reports—is used for marketing analyses and campaign optimization.
 * Data consisting of website visits and user events is acquired using <Anchor target="_blank" href="/marketers/docs/pba-web-sdk-integration-guide">SDKs and/or APIs.</Anchor>
 * For each visit to the website: the media source responsible for bringing the visit is determined. Any resulting event (conversion) is <Anchor target="_blank" href="/marketers/docs/pba-media-source-attribution-rules">attributed</Anchor> to the media source causing the visit.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### PBA analytics dashboards and raw data
 
@@ -43,11 +47,15 @@ x-zendesk:
   * Raw data reports
 * Data in the dashboards <Anchor target="_blank" href="/marketers/docs/using-pba-dashboards">filtered and grouped</Anchor> using dimensions like mobile platform, media channel, and media type, This enables you to drill down and dissect the data.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website Attribution</Anchor>
 
 [![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
 
 Analyze web traffic sources and marketing campaigns driving user visits and conversions on your website. Uncover performance differences down to the ad level. Supports all AppsFlyer query params in the link without the need to redirect users to AppsFlyer servers.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/docs/pba-web-assisted-installs">Web-Assisted Installs</Anchor>
 
@@ -59,6 +67,8 @@ Use Web-Assisted Installs to examine the impact and results of your web marketin
 * Attribute organic installs driven by your web efforts.
 * Examine the interaction between the web efforts and non-organic installs.
 
+<div id="raw-data" />
+
 ### <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Raw data</Anchor>
 
 Raw data reports are available via Data Locker. They offer in-depth insights and includes the media source attributed/responsible for bringing the user to the website.
@@ -68,6 +78,8 @@ Raw data reports are available via Data Locker. They offer in-depth insights and
 * **Web-Assisted Installs** journeys are provided in full.
 * BI tools are used to analyze the data for additional insights.
 * <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">Learn more about PBA raw data</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

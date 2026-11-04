@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your telecommunication app.
 
+<div id="-telecommunication" />
+
 ## <Image alt="telecommunications_icon.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Telecommunication
 
 Telecommunication apps enable users to purchase and manage cell phone plans, data plans, and so on. The typical events that we suggest recording include purchases, top-ups, and subscriptions.
@@ -33,6 +35,8 @@ Recording these events can help you determine:
 * Which gateway plans are most popular
 * What products or packages users can afford
 * Which plans are most likely to get long-term commitments from customers
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -44,6 +48,8 @@ Recording these events can help you determine:
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -162,6 +168,8 @@ When the user lands on the thank you page after a successful purchase
 | payment\_method\_type | Type of payment method | credit card, local payment |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

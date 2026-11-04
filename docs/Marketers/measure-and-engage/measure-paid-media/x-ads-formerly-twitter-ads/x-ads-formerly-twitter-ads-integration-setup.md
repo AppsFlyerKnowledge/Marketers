@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your X Ads account with AppsFlyer to display attribution data of X Ads campaigns.
 
+<div id="overview" />
+
 ## Overview
 
 X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support campaign measurement for X Ads campaigns through its range of privacy-preserving measurement methods.
+
+<div id="x-ads-attribution-flow-in-appsflyer" />
 
 ### X-Ads attribution flow in AppsFlyer
 
@@ -44,7 +48,11 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 
    [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Connecting your X Ads account to AppsFlyer
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -70,6 +78,8 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
     **Note:** The toggle must stay on (activated) for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation.</Anchor>
 13. Select your X Ads accounts to activate them, then click **Save & Close**.
 
+<div id="x-ads-attribution-setup" />
+
 ## X Ads attribution setup
 
 For a detailed description of the partner configuration page Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">here</Anchor>.
@@ -80,6 +90,8 @@ For a detailed description of the partner configuration page Header, click <Anch
 
 The **Integration Tab** is divided into different sections, as described below. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Partner must be activated</Anchor> on the first visit to enable its setup.
 
+<div id="ad-account-connected" />
+
 ### Ad account connected
 
 Select the accounts to enable attribution.
@@ -87,6 +99,8 @@ Select the accounts to enable attribution.
 ![X-Ads_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
 
 **Note:** You can connect up to 200 ad accounts in AppsFlyer. To avoid reaching this limit and ensure continued attribution for all active accounts, we recommend removing any ad accounts that are no longer in use.
+
+<div id="advanced-privacy" />
 
 ### Advanced Privacy
 
@@ -96,10 +110,14 @@ When AP toggle is ON:
 * Postbacks follow the <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks">Advanced Privacy template</Anchor>.
 * Only <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">aggregated and anonymous data</Anchor> is shared. No device-level identifiers are included.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * The Advanced Privacy toggle is **on by default** when activating the X Ads integration.
 > * According to X Ads, keeping Advanced Privacy **ON** may result in **under-reporting** of campaign events and limit performance optimization on X Ads.
+
+<div id="click-through-attribution" />
 
 ### Click-through attribution
 
@@ -109,6 +127,8 @@ You can customize this value to 1-23 hours or 1-30 days. We recommend setting th
 
 ![X-Ads_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### View-through attribution lookback window
 
 This slider allows you to set the **maximum time from impression to the install**. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to X Ads, providing there was no other relevant ad click.
@@ -117,15 +137,21 @@ You can customize this value to 1-23 hours or 1-7 days. We recommend setting th
 
 ![X-Ads_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
 
+<div id="reinstall-settings" />
+
 ### Reinstall settings
 
 The **Reinstall attribution** toggle is turned on by default for new integrations. Reinstall attribution lets you measure users who reinstall your app during their re-attribution window.
 
 No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see <Anchor target="_blank" href="/marketers/docs/measure-reinstalls">Measure reinstalls</Anchor>.
 
+<div id="re-engagement-settings" />
+
 ### Re-engagement settings
 
 For retargeting campaigns on X Ads, AppsFlyer supports **Re-engagement** measurement only. That is an engagement with a retargeting campaign by a user who already has the app installed at the time of engagement.
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -135,11 +161,15 @@ X Ads retargeting attribution includes only re-engagement conversions.
 
 Turn on the **Re-engagement attribution** toggle to start attributing re-engagements for X Ads.
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### Re-engagement click-through lookback window
 
 Set the duration of the **Re-engagement click-through lookback window** (the maximum period of time after an ad is clicked, within which a retargeted user can be attributed to the ad). You can set the value in hours (up to 23) or days (1-30).
 
 ![X-Ads-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Re-engagement view-through lookback window
 
@@ -149,15 +179,21 @@ Then, set the duration of the **Re-engagement view-through lookback window** (th
 
 ![X-Ads-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
 
+<div id="re-engagement-window" />
+
 #### Re-engagement window
 
 Set the duration of the **Re-engagement window** (the period when the user's in-app events are attributed to the retargeting media source). You can set the value in days (1-90), hours (up to 23), or even lifetime:
 
 <Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png" width="628px" />
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignore active users for retargeting
 
 Set an inactivity window period to prevent recording retargeting conversions for active users within the specified time frame. See more about the <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window">Retargeting inactivity period</Anchor>.
+
+<div id="in-app-event-postback-settings" />
 
 ### In-app event postback settings
 
@@ -189,6 +225,8 @@ In this section, you can map your AppsFlyer events with your partners via postba
 <Accordion title="Attribution link tab">
 
 X Ads does not use attribution links for attribution.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -230,6 +268,8 @@ In this tab, you can select the permissions to grant X Ads, whether the partner 
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
+<div id="ad-network-permissions" />
+
 ### Ad network permissions
 
 * **Allow to configure integration** - permit the partner to set up the integration tab (except in-app event postbacks)
@@ -242,11 +282,15 @@ Use these toggles to give the ad network permissions to handle its own configura
 
 Learn more about granting <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">ad network permissions.</Anchor>
 
+<div id="agency-permissions" />
+
 ### Agency permissions
 
 Learn about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#agency-permissions">granting agency permissions</Anchor>.
 
 </Accordion>
+
+<div id="x-ads-features" />
 
 ## X-Ads features
 
@@ -270,6 +314,8 @@ To measure app activity from X non-app campaigns and gain valuable insights into
 
 1. Go to the campaign creation form in X Ads Manager.
 2. In the **Delivery** section, turn on **App Conversions** measurement to enable tracking of installs and in-app conversions resulting from the campaign. See more details in the <Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">X Ads documentation</Anchor> (under *"Measuring app conversions on non-app objectives"*).
+
+<div id="important-1" />
 
 > 🚧 **Important!**
 >
@@ -310,6 +356,8 @@ Through the AMM Program, advertisers may receive more complete user-level data b
 
 </Accordion>
 
+<div id="advanced-srn-parameter-names" />
+
 ## Advanced SRN parameter names
 
 The following fields in the Advanced SRN integration for X Ads **replace** their legacy counterparts across the AppsFlyer dashboard, aggregated reports, and event-level raw data.
@@ -324,6 +372,8 @@ The following fields in the Advanced SRN integration for X Ads **replace** their
 | **Ad Name** | Tweet ID | Ad Name  <br />(if available) |
 | **Ad ID** | Tweet ID | Tweet ID |
 | **Match Type** | srn | id\_matching / probabilistic |
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

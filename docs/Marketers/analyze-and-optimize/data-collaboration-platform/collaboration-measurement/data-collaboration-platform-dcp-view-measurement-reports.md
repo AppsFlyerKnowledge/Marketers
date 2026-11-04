@@ -34,11 +34,15 @@ The collaboration measurement report is an aggregated report that summarizes dat
 
 Report fields are divided into two types: *dimensions* and *metrics*. Each can be further divided into *basic fields* and *calculated fields*.
 
+<div id="dimensions" />
+
 ### Dimensions
 
 A dimension is a grouping category that aggregates event-level data into report records. For example, if the media source is selected as the report dimension, each row will contain aggregated data for all events attributed to that media source. The number of rows equals the number of media sources.
 
 Adding more dimensions increases the grouping granularity. For instance, selecting Event date, Media source, and Campaign results in one row per unique combination of those fields.
+
+<div id="metrics" />
 
 ### Metrics
 
@@ -50,6 +54,8 @@ When multiple dimensions are selected, such as Event date, Media source, and Cam
 
 When selecting a metric, choose its aggregation function. For example, for the revenue metric, you would select the **SUM** function.
 
+<div id="what-are-basic-and-calculated-fields" />
+
 ### What are basic and calculated fields?
 
 Dimensions and metrics can be either basic fields or calculated fields.
@@ -59,6 +65,8 @@ Dimensions and metrics can be either basic fields or calculated fields.
 
 </Accordion>
 
+<div id="create-a-predefined-report" />
+
 ## Create a predefined report
 
 To generate a predefined report, follow these steps:
@@ -67,6 +75,8 @@ To generate a predefined report, follow these steps:
 2. On the **Data Collaboration Platform** page, select the relevant collaboration.
 3. On the collaboration page, click **Create report.**
 4. In the dialog that appears, click **Approve report.** The report is sent to your connected cloud service using a predefined name and schedule.
+
+<div id="create-a-custom-report" />
 
 ## Create a custom report
 
@@ -134,6 +144,8 @@ To set the report dimensions and metrics, follow these steps:
    * **Count:** The metric value is the count of event-level values aggregated in the report record. For example, the conversions metric is the count of all the conversions included in the grouped record.
    * **Count distinct**: The metric value is the number of unique values for a given field across the events grouped in the report record. For example, If the selected metric is count-distinct of `sku` and a grouped record includes 10 events containing 4 different SKUs, the metric value will be **4**.
 5. To change the display name of the field, hover over the field and click **Edit display name.**
+
+<div id="create-calculated-field" />
 
 #### Create calculated field
 
@@ -215,6 +227,8 @@ DCP delivers reports to your selected cloud services using <Anchor target="_bla
 6. The new report is now displayed in the **Reports** tab.
 
 </Accordion>
+
+<div id="report-scheme" />
 
 ## Report scheme
 

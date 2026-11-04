@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## Custom Dashboards
 
 Each custom dashboard consists of one or more widgets containing user acquisition metrics. You configure the widget using the widget wizard to select metrics, presentation format, apps, and so on.
@@ -32,6 +34,8 @@ Each custom dashboard consists of one or more widgets containing user acquisitio
 The metrics available are similar to the Overview dashboard user acquisition view metrics. Note! **Don't** compare to Overview unified **nor** retargeting view.
 
 Once a custom dashboard is defined, it's available to all users in the account.
+
+<div id="dashboard-personalization" />
 
 ## Dashboard personalization
 
@@ -42,6 +46,8 @@ You can personalize a dashboard by moving and sizing widgets.
 | Resize widget | Drag the bottom-right corner of a widget to resize it |
 | Widget position | Drag and drop a widget to change its location in a dashboard |
 | Actions | Hover over a widget in the top-right corner, click actions. The following actions are available per widget:<ul><li>Edit</li><li>Duplicate</li><li>Delete</li><li>Export CSV</li></ul> |
+
+<div id="procedures" />
 
 ## Procedures
 
@@ -116,6 +122,8 @@ You can personalize a dashboard by moving and sizing widgets.
    Dates in CSV files have the format dd/mm/yyyy. You can <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">convert them to a different format</Anchor>, like mm/dd/yyyy in Excel.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

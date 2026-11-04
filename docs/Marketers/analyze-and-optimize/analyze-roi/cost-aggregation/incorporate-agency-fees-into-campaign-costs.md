@@ -29,6 +29,8 @@ x-zendesk:
 
 > **At a glance:** Agency fee rules are part of the AppsFlyer ROI360 premium feature that enables advertisers to add the percentage fees agencies charge for traffic so they can see the total campaign cost.
 
+<div id="overview" />
+
 ## Overview
 
 Agency fee rules are defined by the advertiser (with AppsFlyer account admin privileges) in the rule builder using customized conditions that add fee percentages to the cost of agency campaigns for specific apps and/or media sources.
@@ -41,6 +43,8 @@ Agency rules help advertisers:
 * Save time and manual effort to report on cost data
 * Manage agency performance
 * Accurately analyze historical cost data
+
+<div id="procedures" />
 
 ## Procedures
 
@@ -83,6 +87,8 @@ The rule builder user interface is designed for interactive rule building. **Ti
 8. Enter the agency fee percentage fee. This can be a number between 100 and -100 (to reflect agency discounts or refunds).
 9. Click **Create rule**.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The following errors can prevent your rule from being created:
@@ -108,6 +114,8 @@ When you edit or delete a rule, previously calculated data (up to 90 days in the
 1. In the [rule list](/docs/incorporate-agency-fees-into-campaign-costs#view-rule-list), hover over the rule you want to edit, duplicate, or delete.
 2. Click **Menu** ⋮ on the right side.
 3. Select the action you want to perform.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

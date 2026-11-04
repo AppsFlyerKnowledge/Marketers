@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** SKAN performance enriched with additional data points. Similar to the data in the SKAdNetwork dashboard. Aggregate using either the install date or postback arrival date.
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## SKAN aggregated performance report API
 
 The API returns attribution metrics reported by Apple SKAdNetwork (real data) and other data points using the install or postback arrival date. The report is similar in structure to the data presented in the <Anchor target="_blank" href="/marketers/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN dashboard</Anchor>. 
@@ -38,6 +40,8 @@ The API returns attribution metrics reported by Apple SKAdNetwork (real data) an
 2. Give your developer the API token to be used in the authentication header.
 3. Give your developers the parameters to input when they make the API call, as described in the section that follow. The parameters determine what the report focuses on, how it's organized, and provide a reporting timeframe.
 4. Tell your developer to follow their <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">SKAN aggregated performance report API</Anchor> in the developer hub.
+
+<div id="parameters" />
 
 #### Parameters
 
@@ -61,6 +65,8 @@ The API returns a CSV file.
 * Some metrics (revenue, engagement, conversion) depend on the SKAN <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">performance measurement settings.</Anchor>
 * The report includes only the in-app events that users performed during the reporting period. As such, the number and sequence of in-app event columns can change from report to report. Don't rely on column sequence in designing your data import process.
 * Examples: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### Report fields
 

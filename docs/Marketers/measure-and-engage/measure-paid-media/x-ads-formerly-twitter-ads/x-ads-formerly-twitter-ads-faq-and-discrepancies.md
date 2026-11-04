@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Resolve X Ads FAQs and understand discrepancies.
 
+<div id="x-ads-faq-and-discrepancies" />
+
 ## X Ads FAQ and discrepancies
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -92,6 +94,8 @@ Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and
 
 Yes.  
 When an agency creates a new X Ads campaign, the campaign name must start with the agency name and an underscore (Example: "AgencyName\_Campaign1").
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -215,6 +219,8 @@ Your X Ads account needs to be an active Ad Account to receive attribution data 
 
 </Accordion>
 
+<div id="discrepancies-between-x-ads-and-appsflyer" />
+
 ## Discrepancies between X Ads and AppsFlyer
 
 Although we work closely with X Ads, discrepancies might appear between the X Ads dashboard and the AppsFlyer dashboard/reports.
@@ -230,6 +236,8 @@ These are the common reasons for such discrepancies that advertisers should be a
 | **Attribution touch type** | X Ads attribution is based on their own clicks and impressions. | AppsFlyer gives priority to click-through attribution over view-through attribution. If X Ads counts an impression and AppsFlyer is aware of an additional click within the click-through attribution window, the click from another source is attributed on AppsFlyer's dashboard. On X Ads, the impression is attributed and is presented on their dashboard. |
 | **X Ads data sharing settings** | X Ads allows its users to NOT <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">share their personal data with third parties</Anchor>. This data includes ads they interact with.<br /><br />The stats on X Ads dashboard reflect all engagements, including the users who have opted out from sharing the data. | AppsFlyer shows the aggregate data of these X Ads users, but does not report their user-level raw data (more <Anchor target="_blank" href="/marketers/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-user-privacy">details</Anchor>). |
 | **X Ads re-engagement logic** | X Ads counts unique users. If a user re-engages more than once as a result of the same campaign, X Ads shows these engagements as one conversion. | AppsFlyer counts each re-engagement instance, and therefore, in a similar case, shows these engagements as multiple conversions. |
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

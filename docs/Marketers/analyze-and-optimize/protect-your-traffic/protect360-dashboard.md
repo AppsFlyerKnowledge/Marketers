@@ -30,6 +30,8 @@ x-zendesk:
 
 > **At a glance:** The Protect360 dashboard provides insights about fraudulent traffic and installs blocked due to the application of validation rules.
 
+<div id="about-protect360-dashboard" />
+
 ## About Protect360 dashboard
 
 The Protect360 dashboard:
@@ -79,6 +81,8 @@ The following filtering and grouping options are available:
   * **Geo**: compare the identified fraud from all countries
 
 </Accordion>
+
+<div id="installs-dashboard" />
 
 ## Installs dashboard
 
@@ -146,6 +150,8 @@ Installs where the device was detected by AppsFlyer attribution logic as being f
 
 <Accordion title="Installs—charts">
 
+<div id="identified-fraud-trend-chart" />
+
 #### Identified fraud trend chart
 
 The identified fraud trend chart displays the number of fraudulent installs, re-attributions, and re-engagements per day, broken down by either:
@@ -157,6 +163,8 @@ The identified fraud trend chart displays the number of fraudulent installs, re-
 * **Compromised rate**: Total attributions flagged as compromised out of total attributions.
 
 The display can be either a line graph or a bar chart.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### Hijacked installs attribution correction chart
 
@@ -174,6 +182,8 @@ You can:
 * When the hijackings are blocked in real-time, the correct attributions display in AppsFlyer dashboards and reports (not just Protect360). When hijackings are identified post-attribution, the correct attributions are displayed only in Protect360 raw data.
 * This chart can display correction **to** organic, but not **from** organic.
 
+<div id="identified-fraud-chart" />
+
 #### Identified fraud chart
 
 The identified fraud chart displays the types of fraud you experience, by percentage. Fraud breakdown can be by:
@@ -187,6 +197,8 @@ The identified fraud chart displays the types of fraud you experience, by percen
 * Campaign
 * Geo
 * App
+
+<div id="affiliate-attribution-model" />
 
 #### Affiliate Attribution Model
 
@@ -209,6 +221,8 @@ Compromised installs are installs where the device was detected by AppsFlyer att
 
 <Accordion title="Installs—table">
 
+<div id="identified-fraud-breakdown" />
+
 #### Identified fraud breakdown
 
 The **Identified fraud breakdown** table displays the following data:
@@ -228,6 +242,8 @@ The dynamic table structure:
 * Is per user, so every account user with access to Protect360 can personally customize their own table structure. See [more table options](/docs/protect360-dashboard#additional-table-options).
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Content of the identified fraud breakdown table
 
@@ -290,6 +306,8 @@ The dynamic table structure:
 | CTIT > Over 60 minutes | Installs, re-attributions, and re-engagements where the time between the click and first app launch is more than 60 minutes. The calculation only includes installs whose CTIT is under 25 hours (and not all installs). Typically, around 30% of first app launches occur more than 60 minutes after download. |
 | CTIT > Over 5 hours | Installs, re-attributions, and re-engagements where the time between the click and first app launch is more than 5 hours. The calculation only includes installs whose CTIT is under 25 hours (and not all installs). Typically, around 20% of first app launches occur more than 5 hours after download. |
 
+<div id="additional-table-options" />
+
 #### Additional table options
 
 * Click **Export CSV** to download the table to your desktop in CSV format
@@ -308,6 +326,8 @@ Note that uncommon rates of either of these KPIs don't necessarily indicate frau
 The in-app event data in the CPI dashboard is LTV-based, meaning it is all the in-app events associated with installs that occurred during the specified date range.
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## In-app events dashboard
 
@@ -334,6 +354,8 @@ The headline metrics enable you to see:
 
 <Accordion title="In-app events—charts">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **Fraud trend over time chart**
 
 The fraud trend over time chart displays the number of events per day, broken down into:
@@ -341,6 +363,8 @@ The fraud trend over time chart displays the number of events per day, broken do
 * **Real-time**: Fraudulent in-app events blocked in real-time
 * **Post-attribution**: Fraudulent events identified post-attribution
 * **Non-fraud**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **Top IAE fraud by media source chart**
 
@@ -376,6 +400,8 @@ The dynamic table structure:
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### Content of the in-app event fraud breakdown table
 
 | Table Column | Description |
@@ -400,6 +426,8 @@ The dynamic table structure:
 | Blocked IAE | IAEs blocked by validation rules. |
 | Corrected to organic | Hijacked installs with the last non-fraudulent source being organic. |
 | Corrected to non-organic source | Hijacked installs with the last non-fraudulent source being a non-organic media source. |
+
+<div id="additional-table-options-1" />
 
 #### Additional table options
 
@@ -456,6 +484,8 @@ Payable events are IAEs that have a cost. Once enabled and configured, the In-ap
 | Media source not available | If a media source is not available in the filter it can be due to all of its traffic being blocked.<br /><br />In order to filter based on the media source, you can use its link from the identified fraud breakdown table |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

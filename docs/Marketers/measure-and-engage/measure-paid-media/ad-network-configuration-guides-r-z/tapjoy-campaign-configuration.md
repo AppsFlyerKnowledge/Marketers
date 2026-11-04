@@ -28,6 +28,8 @@ x-zendesk:
 
 To configure your campaigns with Tapjoy, follow the steps below.
 
+<div id="setting-up-tapjoy" />
+
 ## Setting up Tapjoy
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,19 +48,29 @@ To configure your campaigns with Tapjoy, follow the steps below.
 
 The ***Integration Tab*** is divided into different sections as described below.
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
 
+<div id="general-settings" />
+
 ### General settings
+
+<div id="app_id" />
 
 #### app\_id
 
 Tapjoy connects with AppsFlyer via a unique network ID. If you don't already have the app ID, you must obtain it from Tapjoy to continue with the integration.
 
+<div id="enable-view-through-attribution" />
+
 #### Enable View-Through attribution
 
 Toggle ON if you want to attribute view-through installs from Tapjoy. The view-through lookback slider is available on the attribution link tab (described below).
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -69,6 +81,8 @@ Select **All sources, including organic** to have your entire user base availabl
 
 Rejected installs can be sent for **This partner only**.
 
+<div id="launch-postbacks" />
+
 #### Launch postbacks
 
 As of July 1, 2020, we no longer send launch postbacks to Tapjoy. If your integration was set up prior to this date, there may be changes to your configurations. The following table explains possible changes and your actions, where applicable:
@@ -78,6 +92,8 @@ As of July 1, 2020, we no longer send launch postbacks to Tapjoy. If your integr
 | Send to Tapjoy **all launches** (from all media sources, including organic) | Send to Tapjoy:<ul><li>**all installs** (from all media sources, including organic)</li><li>**all `af_app_opened` events** (from all media sources, including organic)</li></ul> | No further actions are required. This update has no actual impact on the configuration. |
 | Send to Tapjoy **attributed first launches only** | Send to Tapjoy **installs** attributed to Tapjoy only | If you wish to send `af_app_open` events as well:<ul><li>In AppsFlyer, on Tapjoy integration page, configure sending the event under the ***In-app event postbacks*** section</li></ul> |
 | Send to Tapjoy **all launches** (from all media sources, including organic)<br /><br />**BUT**<br /><br />No conversions have been attributed to Tapjoy in the 3 months prior to July 1, 2020 | Send **all installs**<br /><br />**AND**<br /><br />For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<ul><li>In AppsFlyer, on Tapjoy integration page, configure sending the event under the ***In-app event postbacks*** section.</li></ul>If done during the 30-day period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br /><br />If done after the 30-day period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -97,6 +113,8 @@ In this section, you can configure in-app event postbacks that are sent to Tapjo
 | **including** | <ul><li>**No data (default)**: Send just the event itself, without any event values.</li><li>**Values and revenue**: Send all event parameters, including revenue values (if exist in the event).</li><li>**Values without revenue**: Send all event parameters, excluding revenue values.</li></ul> |
 
 4. [Optional] Click the Add condition![image.png](https://files.readme.io/8e650caf6472b316bd49bc25c45cc4c9d63b67770dd1c920fb873118b82ff868-17023682954385.png) icon of an event to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions for the event</Anchor> sent to Tapjoy.   
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -137,6 +155,8 @@ AppsFlyer gets cost details by API. See the <Anchor target="_blank" href="/marke
 
 </Accordion>
 
+<div id="notes" />
+
 > 📘 **Notes**
 >
 > * If cost macros are being passed on the attribution link, the API integration cannot be enabled. Enabling the cost API integration while cost macros exist on the attribution link may cause duplicate cost reporting. Please contact your TapJoy Account Manager and your AppsFlyer CSM to remove all cost macros from the existing attribution links.
@@ -163,6 +183,8 @@ This section is relevant if you are a publisher displaying partner ads to your u
 In this tab, you can select the permissions to grant Tapjoy, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for Tapjoy, the permissions tab is active and you can grant control to Tapjoy.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app.
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

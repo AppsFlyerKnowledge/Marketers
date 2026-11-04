@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** AdColony, an AppsFlyer ad network integrated partner, is a premium video advertising network, providing advertisers and brands with an engaged and responsive audience and offers monetization solutions to publishers and developers. In addition to click-based mobile attribution, AdColony also offers cost, ad revenue, and view-through attribution, which you can record with AppsFlyer.
 
+<div id="setting-up-adcolony" />
+
 ## Setting up AdColony
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,15 +46,23 @@ x-zendesk:
 
 The **Integration** tag is divided into different sections as described below.
 
+<div id="activate-partners" />
+
 ### Activate partners
 
 The <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">partner must be activated</Anchor> by switching on the ***Activate partner*** toggle on the first visit, to enable its setup.
 
+<div id="general-settings" />
+
 ### General settings
+
+<div id="enable-view-through-attribution" />
 
 #### Enable View-Through attribution
 
 Toggle this ON if you want to attribute view-through installs from AdColony. The view-through lookback slider is available on the ***Attribution link*** tab.
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -63,6 +73,8 @@ Select ***All sources, including organi*c** to have your entire user base availa
 
 Rejected installs can be sent for **This partner only**.
 
+<div id="launch-postbacks" />
+
 #### Launch postbacks
 
 As of July 1, 2020, we no longer send launch postbacks to AdColony. If your integration was set up prior to this date, there may be changes to your configurations. The following table explains possible changes and your actions, where applicable:
@@ -72,6 +84,8 @@ As of July 1, 2020, we no longer send launch postbacks to AdColony. If your inte
 | Send to AdColony **all launches** (from all media sources, including organic) | Send to AdColony:<ul><li>**all installs** (from all media sources, including organic)</li><li>**all** `af_app_opened` **events** (from all media sources, including organic)</li></ul> | No further actions required. This update has no actual impact on the configuration. |
 | Send to AdColony **attributed first launches only** | Send to AdColony **installs** attributed to AdColony only | If you wish to send `af_app_open` events as well:<ul><li>In AppsFlyer, on AdColony integration page, configure sending the event under the ***In-app event postbacks*** section</li></ul> |
 | Send to AdColony **all launches** (from all media sources, including organic)<br /><br />**BUT**<br /><br />No conversions have been attributed to AdColony in the 3 months prior to July 1, 2020 | Send **all installs**<br /><br />**AND**<br /><br />For 30 days after July 1, 2020, **all launches** | If you wish to send `af_app_open` events as well:<ul><li>In AppsFlyer, on AdColony integration page, configure sending the event under the ***In-app event postbacks*** section.</li></ul>If done during the 30 days period, we will discontinue sending all launches and start sending all `af_app_open` events instead.<br /><br />If done after the 30 days period, we will stop sending launches and won't send `af_app_open` events until configured otherwise. |
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -128,6 +142,8 @@ Ad revenue isn't currently supported for this partner integration.
 In this tab, you can select the permissions to grant AdColony. Note that even if attribution is disabled for AdColony, the permissions tab is active and you can grant control to AdColony.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

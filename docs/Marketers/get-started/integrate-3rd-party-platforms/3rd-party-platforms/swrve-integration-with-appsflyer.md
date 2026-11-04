@@ -39,9 +39,13 @@ Alongside AppsFlyer, Swrve provides a complete lifecycle solution for maximizing
 
 The integration works by notifying Swrve of installs to their API using their REST API. To do so, you will need to set up a server postback in your AppsFlyer account for each one of your mobile apps.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="integrating-swrve-and-appsflyer" />
 
 ## Integrating Swrve and AppsFlyer
 
@@ -78,6 +82,8 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 **Step 2**: Set a postback in your AppsFlyer dashboard by performing the following actions:
 
+<div id="setting-up-swrve" />
+
 ## Setting up Swrve
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -102,10 +108,14 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable the set up of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -121,6 +131,8 @@ Perform the following steps, as required:
 * Enter the **api\_key**
 * Select **EU** for EU customers
 * Select **Advanced Data Sharing** to send the following additional information to Swrve: cost\_value, channel, keywords, siteID, and c (campaign)
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -172,6 +184,8 @@ Ad Revenue is not supported in the integration with this partner.
 Permissions are not available for Swrve.
 
 </Accordion>
+
+<div id="swrve-reporting-with-appsflyer-data" />
 
 ## Swrve reporting with AppsFlyer data
 

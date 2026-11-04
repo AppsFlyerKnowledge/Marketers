@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** See what historical data is available via different AppsFlyer aggregate dashboards and reports.
 
+<div id="historical-aggregate-data-availability" />
+
 ## Historical aggregate data availability
 
 The following table displays how far back historical data is available via different AppsFlyer aggregate dashboards and reports.

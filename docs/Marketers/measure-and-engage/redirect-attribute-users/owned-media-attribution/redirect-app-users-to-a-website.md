@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Redirect app users to a web URL or social media page by using a URL generated with OneLink.
 
+<div id="redirect-app-users-to-a-web-url" />
+
 ## Redirect app users to a web URL
 
 Advertisers can post OneLink URLs leading to external web pages or social media sites. AppsFlyer measures the clicks on the link inside the app, by which you can determine the efficacy of the ad.

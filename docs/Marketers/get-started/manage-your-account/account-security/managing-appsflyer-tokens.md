@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Tokens enhance data security. They enable users to access data via the AppsFlyer APIs or receive event data using server-to-server calls. Admins can manage multiple tokens while maintaining data continuity. This includes creating, renaming, and removing API and server-to-server tokens as necessary.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8597603fc60e16b6ee5048c90e6293bf42c4acf8b63d553d6f77c34ab7945d02-32934372878481.png)
@@ -34,6 +36,8 @@ x-zendesk:
 > * Only admins can view and manage tokens. Account users have no access to the Tokens page.
 > * Keep your tokens safe, as they enable access to your data. Don't publish tokens in public code repositories.
 > * It's recommended to replace tokens every 180 days.
+
+<div id="about-appsflyer-tokens" />
 
 ## About AppsFlyer tokens
 
@@ -46,10 +50,14 @@ Tokens are used to enable users to access data via AppsFlyer API and S2S calls. 
 * Testing purposes
 * For use with particular features, such as the OneLink API
 
+<div id="reaching-the-tokens-page" />
+
 ## Reaching the Tokens page
 
 1. From the top bar, open the account menu (email address dropdown) > **Security center.**
 2. In the **AppsFlyer API tokens** section, click **Manage your AppsFlyer API tokens.** The current tokens are displayed.
+
+<div id="token-types" />
 
 ## Token types
 
@@ -62,13 +70,19 @@ There are various types of tokens for different purposes. By default, an API tok
 | <span id="s2s-token"></span>S2S token | Used for sending data using server-to-server calls. |
 | <span id="mcp-token"></span>MCP token | Used to authenticate third-party or self-hosted systems with the AppsFlyer MCP. |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If you're integrating a feature that requires a dedicated API V2 token (e.g., the <Anchor target="_blank" href="/marketers/docs/beta-advanced-security-protect360-module">Advanced Security Module</Anchor>) and you've already reached the two-token limit, you can repurpose an existing API V2 token rather than requesting a new one — the same token can serve multiple use cases.
 
+<div id="manage-your-tokens" />
+
 ## Manage your tokens
 
 As an admin, you can manage multiple tokens: create, rename, and remove tokens. The main use would be to replace current tokens with new ones. This is done by first [creating](#create-a-token) a new token, implementing it in your systems, and after it becomes available, [deleting](#delete-a-token) the old token.
+
+<div id="retrieve-tokens" />
 
 ### Retrieve tokens
 
@@ -77,12 +91,16 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 3. The available tokens are displayed.
 4. Copy the required token.
 
+<div id="create-a-token" />
+
 ### Create a token
 
 1. From the [**Tokens** page](#reaching-the-tokens-page), click **+ New token**.
 2. Enter the token name.
 3. Select the token type.
 4. Click **Create token**.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -92,7 +110,11 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 >   * Use the token only after its status changes to **Active**.
 > * Make sure to implement the new token in your systems.
 
+<div id="delete-a-token" />
+
 ### Delete a token
+
+<div id="warning" />
 
 > ❗️ **Warning**
 >
@@ -104,9 +126,13 @@ As an admin, you can manage multiple tokens: create, rename, and remove tokens. 
 2. You must confirm deleting the token by typing "Delete token".
 3. Click **Delete token**.
 
+<div id="applications-of-the-api-v2-token" />
+
 ## Applications of the API V2 token
 
 Use cases for advertisers and ad networks using the API V2 token:
+
+<div id="advertiser" />
 
 ### Advertiser
 
@@ -125,6 +151,8 @@ Use cases for advertisers and ad networks using the API V2 token:
 | <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-management-api">Import audience API</Anchor> |
 | <Anchor target="_blank" href="/marketers/docs/beta-advanced-security-protect360-module">Advanced Security Module integration (Android)</Anchor> |
 
+<div id="ad-network" />
+
 ### Ad network
 
 | API V2 token |
@@ -134,9 +162,13 @@ Use cases for advertisers and ad networks using the API V2 token:
 | <Anchor target="_blank" href="/partners/docs/protect360-for-integrated-partners#protect360-ad-network-reporting-api">Protect360 reports for integrated partners</Anchor> |
 | <Anchor target="_blank" href="/partners/docs/incost-api-for-ad-networks">InCost</Anchor> |
 
+<div id="applications-of-the-s2s-token" />
+
 ## Applications of the S2S token
 
 Use cases for advertisers and advertisers using the S2S token:
+
+<div id="advertiser-1" />
 
 ### Advertiser
 
@@ -145,21 +177,29 @@ Use cases for advertisers and advertisers using the S2S token:
 | <Anchor target="_blank" href="/marketers/docs/server-to-server-events-api-for-mobile-s2s-mobile">Mobile in-app events S2S API</Anchor> |
 | <Anchor target="_blank" href="/marketers/docs/server-to-server-s2s-api-for-web-performance-measurement">Web events S2S API</Anchor> |
 
+<div id="ad-network-1" />
+
 ### Ad network
 
 | S2S token |
 | --- |
 | <Anchor target="_blank" href="/marketers/docs/set-up-appsflyer-preload-referrer-attribution">AppsFlyer preload referrer attribution</Anchor> |
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > For most ad networks, S2S token generation is no longer self-serve. As a result, admins won’t see the option to generate an S2S token in the UI. Self-serve token generation is available only for specific managed partners.
+
+<div id="applications-for-the-onelink-token" />
 
 ## Applications for the OneLink token
 
 Use cases for advertisers using the OneLink API token:
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link">Create</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-attribution-link">get</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-attribution-link">update</Anchor>, and <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-attribution-link">delete</Anchor> OneLink short URLs with customized parameters.
+
+<div id="applications-for-the-mcp-token" />
 
 ## Applications for the MCP token
 

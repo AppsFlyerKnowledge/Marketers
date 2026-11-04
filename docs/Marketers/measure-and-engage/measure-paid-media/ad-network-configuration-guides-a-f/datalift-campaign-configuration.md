@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** DataLift, an AppsFlyer ad network integrated partner, enables app marketers to programmatically access all major mobile ad inventory worldwide and control their campaigns through a single proprietary technology platform, providing advanced data integration and extended targeting and audience management capabilities. In addition to click-based mobile attribution, DataLift also offers retargeting, which you can record with AppsFlyer.
 
+<div id="setting-up-datalift" />
+
 ## Setting up DataLift
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,12 +46,18 @@ DataLift's configuration window includes 3 active tabs: Integration, Attribution
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation, click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="general-settings" />
+
 ### General settings
+
+<div id="default-postbacks" />
 
 ### Default postbacks
 
@@ -57,6 +65,8 @@ Send automatic postbacks to DataLift following user installs and re-engagements.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to DataLift.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Datalift Retargeting.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -86,6 +96,8 @@ In this tab, you can create the attribution links you want to send to Datalift R
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -104,6 +116,8 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -138,6 +152,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to DataLift.
@@ -145,6 +161,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 

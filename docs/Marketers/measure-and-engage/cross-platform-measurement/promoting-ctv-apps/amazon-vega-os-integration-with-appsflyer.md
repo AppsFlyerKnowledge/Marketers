@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate your Amazon Vega OS Connected TV (CTV) app with AppsFlyer to receive attribution and event data for your campaigns on Amazon Vega OS.
 
+<div id="about-amazon-vega-os-ctv-attribution" />
+
 ## **About Amazon Vega OS CTV attribution**
 
 The Amazon Vega OS for streaming runs across all Amazon Vega OS devices.
@@ -32,6 +34,8 @@ The Amazon Vega OS API integration supports:
 
 * Amazon Vega OS Smart TVs.
 * CTV-to-CTV attribution and event recording. Meaning, attribution and recording on a user's Amazon Vega OS device.
+
+<div id="integration-procedures" />
 
 ## **Integration procedures**
 
@@ -44,6 +48,8 @@ The following table lists the tasks required to integrate your Amazon Vega OS CT
 | Link setup | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
 | Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Remarks |
@@ -51,6 +57,8 @@ The following table lists the tasks required to integrate your Amazon Vega OS CT
 | Non-organic sources | Coming soon |
 | Retargeting | Not currently supported |
 | Cost data | Cost data must be sent via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Cost Import</Anchor> using the upload file by email method. |
+
+<div id="see-also" />
 
 ### **See also**
 

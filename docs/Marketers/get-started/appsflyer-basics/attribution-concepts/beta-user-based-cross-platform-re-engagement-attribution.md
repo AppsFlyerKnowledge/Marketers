@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn how cross-platform re-engagement attribution credits the media sources that bring existing users back to your product across platforms.
 
+<div id="about-cross-platform-re-engagement-attribution" />
+
 ## About cross-platform re-engagement attribution
 
 Cross-platform re-engagement attribution extends the <Anchor target="_blank" href="/marketers/docs/beta-user-based-cross-platform-attribution">User-based cross-platform attribution</Anchor> model to include measuring user cohorts based on the latest ad engagement, in addition to the original acquisition source.
@@ -41,6 +43,8 @@ Here is how the two models relate to each other:
 
 Re-engagement attribution works alongside user acquisition, so you can see both the source that first acquired a user and the source that brought them back in the same reporting view.
 
+<div id="how-does-re-engagement-attribution-work" />
+
 ## How does re-engagement attribution work
 
 For an in-app event to be attributed to a re-engaging media source, all of the following conditions must be met:
@@ -49,6 +53,8 @@ For an in-app event to be attributed to a re-engaging media source, all of the f
 * **CUID is present:** The event must include a valid customer user ID (CUID) that matches a CUID previously seen in the same product line. This is how AppsFlyer identifies the user as returning, rather than new.
 * **The retargeting inactivity window has elapsed:** The CUID must not have been seen for at least the duration of the inactivity window for re-engagement since its last appearance. If the event occurs within this window, it is not counted as a re-engagement, and it is attributed to the original acquisition source.
 * **The event occurs within the re-engagement window:** Once a qualifying re-engagement attribution is detected, the re-engagement window opens. Only in-app events that occur within this window are attributed to the re-engaging media source. Events that occur after the window closes are attributed to the original acquisition source.
+
+<div id="cross-platform-re-engagement-user-journey-example" />
 
 ## Cross-platform re-engagement user journey example
 
@@ -90,11 +96,17 @@ Once Meta is credited with the re-engagement, the re-engagement window opens. An
 
 </Accordion>
 
+<div id="set-up-cross-platform-re-engagement-attribution" />
+
 ## Set up cross-platform re-engagement attribution
 
 To set up cross-platform re-engagement attribution, you need to apply a few settings in AppsFlyer specific to re-engagement on top of your product line setup. For more information, see <Anchor target="_blank" href="/marketers/docs/product-line-group-apps-for-cross-platform-attribution#how-to-create-a-product-line">How to create a product line</Anchor>.
 
+<div id="view-cross-platform-attribution-results" />
+
 ## View cross-platform attribution results
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

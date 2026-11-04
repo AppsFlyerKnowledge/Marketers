@@ -32,9 +32,13 @@ x-zendesk:
 
 ![App transfer process animation showing the transfer wizard steps](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
+<div id="app-transfer-between-accounts" />
+
 ## App transfer between accounts
 
 In order to transfer an app between AppsFlyer accounts, both the sending and receiving app owners (as represented by their AppsFlyer account admins) must complete the necessary transfer prerequisites and agree to the transfer.
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
@@ -43,6 +47,8 @@ In order to transfer an app between AppsFlyer accounts, both the sending and rec
 * Neither account has unpaid invoices
 * Transferring apps between accounts can only be done by an <Anchor target="_blank" href="/marketers/docs/user-management#account-owner">account owner</Anchor>. It can't be performed by an admin role.
 * App transfer must be to an account with a Growth or Enterprise plan. <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">Learn more</Anchor>
+
+<div id="app-transfer-process" />
 
 ### App transfer process
 
@@ -61,6 +67,8 @@ The following table details which app features and settings are transferred. Not
 <table><thead><tr><th>Item</th><th>Transferred/<br/>not transferred</th><th>Details/discretionary considerations</th></tr></thead><tbody><tr><td>App settings </td><td>Transferred</td><td><strong>Discretion:</strong> Sender can delete Firebase/GCM server key before transfer. </td></tr><tr><td rowspan="2">Integrated partners</td><td>Transferred</td><td><p>Integration, cost, and revenue configurations (including cost and revenue data)</p><p><strong>Discretion:</strong> If the receiver doesn't need integrated partners to be transferred, the sender should deactivate them and delete their configurations and credentials (including cost and ad revenue configurations).</p></td></tr><tr><td>Not transferred</td><td><p>Ad network and agency permissions</p><p>Twitter configurations and credentials</p></td></tr><tr><td>Link management</td><td>Not transferred</td><td><p>OneLink templates and links are not transferred automatically but can be transferred by your CSM. </p><p><strong>To transfer templates and links:</strong> Contact your CSM or send message to <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>. <br/><strong>Note:</strong> Bulk links are automatically transferred along with the template.</p><ul><li>The sender can delete obsolete links before transfer.</li><li>OneLink API tokens are not transferable between accounts. You'll need to use a <a href="./managing-appsflyer-tokens" target="_blank">token</a> from your new account.</li></ul><p>The domain redirect allowlist also isn't transferred automatically. If the receiving account's allowlist doesn't already include the transferred app's domains, links using those domains will break after the transfer. Make sure to <a href="./set-up-your-domain-redirect-allowlist" target="_blank">set up the domain redirect allowlist</a> in the receiving account before or immediately after the transfer.</p></td></tr><tr><td>Push API</td><td>Transferred</td><td><p><strong>Discretion:</strong></p><ul><li>If the receiver doesn't need Push API configurations (endpoints) to be transferred, the sender should delete the settings. Otherwise, data will continue to be delivered to sender-defined endpoints.</li><li>Alternatively, the receiver can change the settings on receipt to ensure the sender doesn't receive user-level data. </li></ul></td></tr><tr><td>Smart Banners</td><td>Not transferred</td><td>Banners, Banner groups, creatives, websites are not transferred. </td></tr><tr><td>Smart Script</td><td>Not transferred</td><td>Smart Scrips that created within the AppsFlyer UI will not be available in the new account. </td></tr><tr><td>Agencies</td><td>Not transferred</td><td>Agencies lose access to the app.</td></tr><tr><td>Audiences</td><td>Not transferred</td><td>Audiences are deleted.</td></tr><tr><td>Cost import</td><td>N/A</td><td>Historical cost import files are not accessible to the receiver. This does not impact cost history. </td></tr><tr><td>Data Locker</td><td>Not transferred</td><td>App is removed from Data Locker configuration, and the sender account stops receiving app data. </td></tr><tr><td>Historical data</td><td>Transferred</td><td> </td></tr><tr><td>PBA brand bundles</td><td>Not transferred</td><td><p>Bundle is no longer available to the sender if any of its related apps are transferred. The receiver can't access PBA data.</p><p>This means that if the client needs to keep using PBA in their new account, they need to delete their web bundle before the app transfer is completed, otherwise they won't be able to create the same web bundle in their new account.</p></td></tr><tr><td>Protect360 data</td><td>Transferred</td><td><p>If an app is transferred from an account without a Protect360 asset to one that has one: </p><ul><li>Fraud detection starts only after the transfer is complete.</li><li>If the receiving account has the asset only for part of the time, fraud data is available starting from the asset's start date only, and not retroactively.</li><li>No fraud detection occurs during the transfer process.</li></ul></td></tr><tr><td>Raw &amp; aggregate data</td><td>Transferred</td><td> </td></tr><tr><td>SDK dev key</td><td>Transferred</td><td> </td></tr><tr><td>Validation rules</td><td>Transferred</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="transfer-procedures" />
 
 ## Transfer procedures
 

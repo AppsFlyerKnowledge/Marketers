@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **At a glance:** IBM UBX (Universal Behavior Exchange), an AppsFlyer integrated partner, is a feature of the IBM Marketing Cloud and other IBM Commerce offerings which allows marketers to take control of all their customer data integration with an easy-to-use console. This open data exchange capability provides a contextual view of customer buying behaviors across all channels, devices, and interactions, so marketers can quickly design and deploy effective campaigns, delivering meaningful experiences in an instant, while driving ROI.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-ibm" />
 
 ## Setting up IBM
 
@@ -57,10 +61,14 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -69,6 +77,8 @@ For more details about partner activation please click <Anchor target="_blank" h
 IBM connects with AppsFlyer via a unique Authorization Key. If you don't already have it, you must obtain it from IBM to continue with the integration or follow the steps below.
 
 ![IBM_msc_new_2.png](https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png)
+
+<div id="obtaining-the-authorization-key" />
 
 ### Obtaining the authorization key
 
@@ -98,6 +108,8 @@ Copy the Authentication key:
 
 ![IBM_Endpoint_details.png](https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to IBM user installs. Use this section to define sending these postbacks.
@@ -107,6 +119,8 @@ AppsFlyer can send automatic postbacks to IBM user installs. Use this section to
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to IBM or select **Off**.
 
 Click **Save.**
+
+<div id="in-app-event-settings" />
 
 ### In-app event settings
 

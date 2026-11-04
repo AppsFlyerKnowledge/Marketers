@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **At a glance:** Use organic search (SEO) and organic AI answers (AEO) attribution to see which search engines and AI answer engines send non-paid traffic to your website and app. Attribute web conversions, app installs, and app re-engagements to them.
 
+<div id="about-seo-and-aeo-attribution" />
+
 ## About SEO and AEO attribution
 
 A user searches Google or asks ChatGPT a question, then clicks a result that leads to your website. AppsFlyer credits the search engine or AI answer engine for visits and conversions on your website, app installs, and app opens.
+
+<div id="supported-user-journeys" />
 
 ## Supported user journeys
 
@@ -34,6 +38,8 @@ Each journey starts when a user searches a supported search engine or asks a sup
 | The user lands on your website | Web visits and web conversions, such as sign-ups and purchases | AppsFlyer web attribution SDK or server-to-server (S2S) integration |
 | The user lands on your website, then taps a download button that leads to the app store | App installs | AppsFlyer mobile SDK and Smart Script version 2.10.3 or later, with **Media source for organic search installs** turned on |
 | The user lands on your website and is sent straight into your installed app | App re-engagements (app opens) | AppsFlyer Android and iOS SDK version 6.12.1 or later, plus Android App Links and iOS Universal Links |
+
+<div id="use-case-1-web-measurement" />
 
 ## Use case 1: Web measurement
 
@@ -52,6 +58,8 @@ Attribute website visits and conversions to the search engine or AI answer engin
 <Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/b0303adbc9f9d5baf0be323844859ffd6987257534b6843e10777f290926eef4-52556690362257.png" width="2266px" />
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution#step-2-media-source-resolution">traffic source resolution</Anchor>.
+
+<div id="use-case-2-app-install-measurement" />
 
 ## Use case 2: App install measurement
 
@@ -73,6 +81,8 @@ Attribute app installs to the search engine or AI answer engine that sent the us
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">setting up Smart Script to convert web visitors</Anchor>.
 
+<div id="use-case-3-app-re-engagement-measurement" />
+
 ## Use case 3: App re-engagement measurement
 
 Attribute app opens by users who already have your app installed.
@@ -92,12 +102,16 @@ Attribute app opens by users who already have your app installed.
 
 Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">setting up organic search (SEO) and organic AI answers (AEO) re-engagement attribution</Anchor>.
 
+<div id="data-availability" />
+
 ## Data availability
 
 SEO and AEO traffic appears in AppsFlyer as follows:
 
 * **Dashboards and reports:** Search engines appear as `<search engine>_organic_seo`, for example `google_organic_seo`. AI answer engines appear as `<AI engine>_organic_aeo`, for example `chatgpt_organic_aeo`.
 * **Raw data reports:** The `channel` field is `seo` for search engine traffic and `aeo` for AI answer engine traffic.
+
+<div id="supported-search-engines-and-ai-answer-engines" />
 
 ## Supported search engines and AI answer engines
 
@@ -107,23 +121,35 @@ AppsFlyer attributes traffic from the following engines.
 
 **AI answer engines:** ChatGPT, Claude, Perplexity, Manus, Copilot, Gemini, Grok, and DeepSeek.
 
+<div id="faq" />
+
 ## FAQ
+
+<div id="is-there-an-additional-fee-for-seo-and-aeo-attribution" />
 
 ### Is there an additional fee for SEO and AEO attribution?
 
 No. It's included in your subscription. Organic conversions count toward your package the same way non-organic conversions do.
 
+<div id="can-i-customize-the-seo-or-aeo-media-source-name" />
+
 ### Can I customize the SEO or AEO media source name?
 
 No. AppsFlyer sets the media source name.
+
+<div id="does-appsflyer-attribute-an-install-when-the-user-taps-an-install-button-shown-in-the-search-results" />
 
 ### Does AppsFlyer attribute an install when the user taps an install button shown in the search results?
 
 No. In that flow, AppsFlyer can't collect the information needed for attribution.
 
+<div id="is-keyword-search-term-or-prompt-data-available" />
+
 ### Is keyword, search term, or prompt data available?
 
 No. The web referrer doesn't include this information.
+
+<div id="see-also" />
 
 ## See also
 

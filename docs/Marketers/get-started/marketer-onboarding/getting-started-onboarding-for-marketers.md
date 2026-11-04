@@ -28,11 +28,15 @@ x-zendesk:
 
 <Embed title="Getting started—Onboarding for marketers" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## Introduction
 
 This document helps marketer (app owner) product managers **plan and execute their onboarding with AppsFlyer**. For every item, the owner and approximate implementation time are provided.
 
 Note that the time estimates in this article are intended as general guidance only. They are based on our experience working with many new customers, but we recognize that every app owner, app, and implementation is different. Your actual time requirements may vary.
+
+<div id="account-setup" />
 
 ## Account setup
 
@@ -45,9 +49,13 @@ The **account admin** should complete the following steps:
 
 **Result:** Welcome! You now have an active AppsFlyer account and account users who can access it.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > New to AppsFlyer and wondering what it can do for you? <Anchor target="_blank" href="/marketers/docs/welcome-to-appsflyer#what-can-you-do-with-appsflyer">Watch this 6-minute video</Anchor>.
+
+<div id="app-onboarding" />
 
 ## App onboarding
 
@@ -59,6 +67,8 @@ You can follow the steps using this guide or via the app onboarding page. The Ap
 
 1. In the menu bar, click the user menu (email address dropdown)
 2. Select App onboarding
+
+<div id="step-1-app-setup" />
 
 ## Step 1: App setup
 
@@ -72,6 +82,8 @@ The **account admin** should complete the following steps for each of your apps:
 | [Optional] Migrate existing user devices into AppsFlyer | 2 hours | If your app already has a substantial user base, consider <Anchor target="_blank" href="/marketers/docs/migration-to-appsflyer-from-other-vendors#device-migrationoptional">migrating them into AppsFlyer</Anchor> to avoid double charges.<br /><br />**Note:** With the assistance of your AppsFlyer CSM or the support team at [hello@appsflyer.com](mailto:hello@appsflyer.com)). |
 
 **Result:** Your apps are now defined in the AppsFlyer dashboard.
+
+<div id="step-2-sdk--api-integration" />
 
 ## Step 2: SDK / API integration
 
@@ -89,6 +101,8 @@ Complete the following steps for every app defined in AppsFlyer in [Step 1: App 
 
 **Result:** Your apps are ready for install attribution, in-app event measurement, and other AppsFlyer functionalities that won’t require additional dev resources.
 
+<div id="step-3-attribution-setup" />
+
 ## Step 3: Attribution setup
 
 Complete the following steps for every app defined in AppsFlyer in [Step 1: App setup](/docs/getting-started-onboarding-for-marketers#step-1-app-setup):
@@ -102,6 +116,8 @@ Complete the following steps for every app defined in AppsFlyer in [Step 1: App 
 | [Optional] Enable retargeting campaigns | Product manager | 2 mins | <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">Activate Retargeting on the App Settings</Anchor> page.<br /><br />Learn more: <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">Retargeting guide</Anchor> |
 
 **Result:** All media sources bringing traffic into your apps are attributed whenever new or returning users engage with them.
+
+<div id="step-4-additional-setup" />
 
 ## Step 4: Additional setup
 
@@ -121,6 +137,8 @@ Certain steps may be mandatory to meet your business goals.
 | Gain a unified view of customer journeys across channels, platforms, and devices | Product manager/  <br />Developers | <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">People-Based Attribution (PBA)</Anchor> |
 | Ensure compliance with privacy regulations: GDPR, CCPA, etc. | Product manager/  <br />Developers | Allowing users to <Anchor target="_blank" href="/marketers/docs/apply-privacy-preserving-sdk-methods">opt-out</Anchor> of attribution. |
 
+<div id="enrich-your-knowledge" />
+
 ## Enrich your knowledge
 
 Recommended for all AppsFlyer users:
@@ -133,11 +151,17 @@ Recommended for all AppsFlyer users:
 | Learn about <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview">aggregate reporting tools and analytics</Anchor> | 30 mins |
 | Learn about <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">raw data reporting</Anchor> | 30 mins |
 
+<div id="related" />
+
 ## Related
+
+<div id="tip-1" />
 
 > 👍 **Tip**
 >
 > New to UA (user acquisition)? Learn <Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">all about</Anchor> the biggest challenges and critical elements of planning, executing, and continuously optimizing your user acquisition efforts.
+
+<div id="note" />
 
 > 📘 **Note**
 >

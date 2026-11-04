@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
+<div id="delete-user-history" />
+
 ## Delete user history
 
 Some privacy regulations, such as GDPR or CCPA, give users a *right to erasure*.
@@ -32,6 +34,8 @@ Some privacy regulations, such as GDPR or CCPA, give users a *right to erasure*.
 **Scenario:** A user requests that you delete data related to them. GDPR requires that this be done within 30 days.
 
 **Action required:** Use <Anchor target="_blank" href="/marketers/docs/send-opendsr-api-requests">OpenDSR API</Anchor> to send an erasure request.
+
+<div id="stop-attributing-installs-to-a-media-source" />
 
 ## Stop attributing installs to a media source
 
@@ -51,13 +55,19 @@ AppsFlyer collects install and event information for your configured media sourc
 * **Owned media:**
   * Discontinue using relevant OneLink custom links.
 
+<div id="remove-or-delete-an-app" />
+
 ## Remove or delete an app
 
 You have the option to temporarily remove an app.
 
+<div id="temporarily-removing-an-app" />
+
 #### Temporarily removing an app
 
 When an app is temporarily removed, data recording stops, the app doesn't show on the dashboard, and it appears grayed out on the My Apps page. However, the app remains associated with the account and can be restored. Upon restoring the app, historical data such as app settings, approved agencies, and tokens are retained.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -74,9 +84,13 @@ When an app is temporarily removed, data recording stops, the app doesn't show o
 
 * Reach out to your CSM or email to [hello@appsflyer.com](mailto:hello@appsFlyer.com) to start the process. Once the CSM has restored the app, you can re-add it to your account.
 
+<div id="transfer-apps-between-accounts" />
+
 ## Transfer apps between accounts
 
 See this guide for details: <Anchor target="_blank" href="/marketers/docs/transferring-apps-between-accounts">Transferring apps between accounts</Anchor>.
+
+<div id="delete-your-account-or-downgrade-your-subscription-plan" />
 
 ## Delete your account or downgrade your subscription plan
 

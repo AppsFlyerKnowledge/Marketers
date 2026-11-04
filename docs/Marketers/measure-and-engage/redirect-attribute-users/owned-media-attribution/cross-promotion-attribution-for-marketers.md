@@ -28,6 +28,8 @@ x-zendesk:
 
 ![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
+<div id="about-cross-promotion" />
+
 ## About cross-promotion
 
 Cross-promotion campaigns are one of the best ways to promote your existing apps or guide your users to new apps launched by your company. These types of campaigns can result in higher conversion and retention rates compared with most other sources of traffic. Since cross-promotion is advertising on owned media, you can use [device ID matching](/docs/cross-promotion-attribution-for-marketers#attributing-cross-promotion) to deterministically attribute new installs. Cross-promotion attribution is available for all accounts, regardless of your AppsFlyer plan.
@@ -35,6 +37,8 @@ Cross-promotion campaigns are one of the best ways to promote your existing apps
 The following image shows the promoted app's dashboard with a breakdown of metrics for campaigns running on owned media (**af\_cross\_promotion**) and other media sources. You can see that the number of installs and conversion rate for the cross-promotion campaign are much higher than those for the other media sources.
 
 [![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+
+<div id="how-does-cross-promotion-work" />
 
 ### How does cross-promotion work?
 
@@ -47,6 +51,8 @@ The following image shows the promoted app's dashboard with a breakdown of metri
    * The app driving the install, the source app, appears as a **Site ID** of this media source.
 6. The SDK generates an in-app event automatically.  
    The event name for Android is `af_cross_promotion` and for iOS it's `af_cross_promotion_clicked`.
+
+<div id="attributing-cross-promotion" />
 
 ## Attributing cross-promotion
 
@@ -64,6 +70,8 @@ The device identifier used for matching depends on the following:
 | GAID | Android devices with Google Play services |  |  |
 | OAID, Android ID, IMEI, Fire ID | Android devices without Google Play services |  |  |
 
+<div id="setting-up-cross-promotion" />
+
 ## Setting up cross-promotion
 
 The process of setting up the cross-promotion attribution requires that the marketer and the developer work together to implement additional code in the AppsFlyer SDK.
@@ -78,7 +86,11 @@ The flow for the marketer and the developer is as follows:
 | 4 | Marketer | In the [promoted app's dashboard](/docs/cross-promotion-attribution-for-marketers#promoted-app-dashboard), view the traffic coming from the cross-promotion campaign and optimize your campaigns accordingly. |  |
 | 5 [Optional] | Marketer | Create a [custom dashboard](/docs/cross-promotion-attribution-for-marketers#custom-dashboard) to compare cross-promotion traffic and share data with account users. |  |
 
+<div id="viewing-cross-promotion-data" />
+
 ## Viewing cross-promotion data
+
+<div id="promoted-app-dashboard" />
 
 ### Promoted app dashboard
 
@@ -90,9 +102,13 @@ The promoted app's dashboard enables you to determine which source apps send the
 2. Select the **af\_cross\_promotion** media source (or your custom media source).
 3. Group by **Site ID** to view the list of source apps.[![CrossPromo_SiteID](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
 
+<div id="analysis" />
+
 #### Analysis
 
 Viewing the installs, clicks, impressions, and conversion rate data from several existing apps all serving ads for the same promoted app enables you to perform affinity analysis. The source apps (Site IDs) with the best conversion rates have the best affinity with the promoted app, and their users are most likely to install it. Based on these insights, you can optimize your cross-promotion campaigns accordingly.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -107,11 +123,15 @@ Viewing the installs, clicks, impressions, and conversion rate data from several
 > * Run a full-scale cross-promotion campaign on Golfing.
 > * Start to <Anchor target="_blank" href="/marketers/docs/measure-view-through-engagements#view-through-attribution-flow">attribute impressions</Anchor> in addition to clicks. Since you initially set up your campaign to measure only clicks, installs from users that see the ad without clicking and then install later are counted as organic installs instead of non-organic. This means you don't yet have a complete picture of the campaign performance for each source app.
 
+<div id="custom-dashboard" />
+
 ### Custom dashboard
 
 The promoted app's dashboard is great for getting a picture of which source apps are driving the best traffic. But what about if you want to evaluate the performance of a single existing app being used to promote multiple apps? This is where a custom dashboard can do exactly what you need.
 
 A <Anchor target="_blank" href="/marketers/docs/custom-dashboards">custom dashboard</Anchor> allows you to view information from several promoted apps in one place, including cross-promotion traffic. In addition, a custom dashboard is a quick and easy way to share data with account users.
+
+<div id="example-1" />
 
 > 📄 **Example**
 >

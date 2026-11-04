@@ -40,14 +40,20 @@ Sohu XinPinSuan Ads configuration window includes 3 active tabs: Integration, A
 
 <Accordion title="Integration Tab">
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation#activate-a-partner-integration">here</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Default Postbacks
 
 <Image alt="mceclip2.png" src="https://files.readme.io/51e0509638097c38ee2b4569456bf0f6a6ef5b4b78c7342af6dda8ec52b93e21-50900076484881.png" width="520px" />
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -75,6 +81,8 @@ In this tab, you can create the attribution links you want to send to Sohu XinPi
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution Link Parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -96,6 +104,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Sohu XinPinSuan Ads.
@@ -105,6 +115,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows#lookback-windows">click lookback window here</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/03bef09accd5b7bd820ec585dcf06d4d8cb7b0bf8117ae02fa4975321ad61945-50900079931921.png)
+
+<div id="click-attribution-link" />
 
 ### Click Attribution Link
 
@@ -135,6 +147,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant Sohu XinPinSuan Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Sohu XinPinSuan Ads, the permissions tab is active and you can grant control to Sohu XinPinSuan Ads.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/ef5e9011ccdd3843ae7863153cfbcdb16584b02a3808a1cbc511a7b82a949410-50900076496017.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

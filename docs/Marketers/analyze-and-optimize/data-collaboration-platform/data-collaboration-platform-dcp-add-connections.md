@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Set up DCP connections to connect your data sources, enrich your data, and export audiences to cloud storage and media partners.
 
+<div id="about-dcp-connections" />
+
 ## About DCP connections
 
 Connections determine how DCP ingests your data and exports your audiences. After <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">setting up your cloud services</Anchor>, connect them to DCP using the **Manage connections** modal. The following connection types are available:
@@ -59,9 +61,13 @@ Create source connections to bring first-party data into DCP.
 
 You can also create a source connection directly when setting up a source. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Create and manage sources</Anchor> for instructions.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Creating an incoming Source connection to Amazon S3 or GCS automatically creates a matching outgoing Cloud storage connection (and vice versa). Deleting Amazon S3 or GCS connection also automatically deletes the other. Since it's really one underlying connection, removing it from either tab removes it everywhere it's used.
+
+<div id="cloud-service-connections-for-source-data" />
 
 #### Cloud service connections for source data
 
@@ -73,6 +79,8 @@ Source connections are for connecting your data sources securely to DCP. From th
 
 **ACCOUNTADMIN** > **Account** > hover over the relevant account > **Copy account identifier**. See the <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Snowflake documentation</Anchor> for details.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Look for the ID labeled **Locator**. This is **not** the same ID used to create outbound Snowflake connections.
@@ -80,6 +88,8 @@ Source connections are for connecting your data sources securely to DCP. From th
 **Amazon S3 and GCS:** In the **New connection** dialog, enter the name of the <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">bucket you created</Anchor> for the exclusive use of the AppsFlyer Data Clean Room (DCR).
 
 **Salesforce Cloud/CRM:** See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">how to set up a Salesforce connection</Anchor>.
+
+<div id="local-file-connection" />
 
 #### Local file connection
 
@@ -149,6 +159,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN-&lt;job-id>-c000.csv | One of the output files for this delivery — see File format and splitting below. |
 | \_SUCCESS | An empty marker file written once the export finishes writing all part files. |
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > This folder structure is created and managed automatically. Don't rename or restructure it manually — any automated process reading these files should be built to follow this path pattern, and should wait for \_SUCCESS to appear before processing the part files, to avoid reading a partial delivery.
@@ -200,9 +212,13 @@ You can also create a media partner connection directly from the audience builde
 
 Data & Identity connections unify fragmented user data to improve match rates with activation partners. This enables larger partner-side audiences and more impact from your campaigns.
 
+<div id="id5" />
+
 #### ID5
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">Enrich your first-party data with ID5 identifiers</Anchor> to unify fragmented user data, improve match rates with activation partners, and increase partner-side audience size.
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -24,9 +24,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#conversions">Conversion events</Anchor> capture valuable post-engagement actions—such as purchases—across various campaign setups. While the structure and content of each conversion event remain consistent, the way conversions are measured, attributed, and shared varies depending on whether it’s an <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns">on-site</Anchor>, <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">off-site</Anchor>, or <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaigns">on-site and off-site</Anchor> campaign. This article explains how to set the Conversion task for each campaign type.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before the Conversions task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the conversion events are generated. For more information, see Assign configuration tasks
+
+<div id="set-up-on-site-campaign-conversions" />
 
 ## Set up on-site campaign conversions
 
@@ -40,6 +44,8 @@ To set up on-site conversions, follow these steps:
 4. [Set source location](#set-conversion-source-location)
 5. [Map on-site conversion source fields](#map-onsite-conversion-source-fields)
 
+<div id="set-up-off-site-campaign-conversions" />
+
 ## Set up off-site campaign conversions
 
 In the context of on-site campaigns, conversion events occur within the collaborator’s properties, such as their app, website, or in-store systems, but attribution is based on engagements that took place on external platforms, such as Meta or Google.
@@ -51,6 +57,8 @@ To set up off-site conversions, follow these steps:
 3. [Set data provision method](#set-conversion-data-provision-method)
 4. [Set source location](#set-conversion-source-location)
 5. [Map off-site conversion source fields](#map-offsite-conversion-source-fields)
+
+<div id="set-up-on-site-and-off-site-conversions" />
 
 ## Set up on-site and off-site conversions
 
@@ -64,6 +72,8 @@ To set up on-site and off-site conversions, follow these steps:
 4. [Set source location](#set-conversion-source-location)
 5. [Map on-site conversion source fields](#map-onsite-conversion-source-fields)
 6. [Map off-site conversion source fields](#map-offsite-conversion-source-fields)
+
+<div id="configuration-activities" />
 
 ## Configuration activities
 
@@ -90,6 +100,8 @@ To open the **measurement settings** page, follow these steps:
 2. On the **Data Collaboration Platform** page, select the collaboration you want to set.
 3. At the bottom of the collaboration page, click **Set up measurement.** (If the link is disabled, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.)
 4. On the **Measurement Settings** page, click the **Conversions** pane to open the **Conversions** dialog.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -148,6 +160,8 @@ If a custom source is used to provide conversion events, enable DCP to access th
 
 If a custom source is used to provide conversion events to DCP, map your on-site custom conversion source fields to their corresponding DCP fields.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > The **DCP conversion events database** stores all the conversion events of the current collaboration under a unitary scheme, including conversion events originating from **in-app events** or **off-site campaigns** (if you’re running a combined on-site off-site campaign).
@@ -177,6 +191,8 @@ To map the conversion custom source fields, follow these steps
 2. Map all required fields under **Required**.
 3. (Optional) Expand **Optional enrichment data** to map additional fields.
 
+   <div id="note-2" />
+
    > 📘 **Note**
    >
    > If the campaign is combined with an Off-site campaign, and you map a field (for example, Event ID) that's already mapped in an off-site channel, you'll be prompted with an **Override field?** message. Click **Yes, continue** to confirm and apply the mapping across channels.
@@ -190,6 +206,8 @@ To map the conversion custom source fields, follow these steps
 <Accordion title="Map off-site conversion source fields">
 
 If a custom source is used to provide conversion events from off-site campaigns, map your off-site custom conversion source fields to their corresponding DCP fields.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -219,6 +237,8 @@ The fields shown here depend on the conversion source types you selected during 
 1. If you are setting a **combined** **on-site and off-site campaign**, expand **Data for off-site attribution;** otherwise, skip to the step below.
 2. Turn on **Meta Ads** or **Google Ads,** depending on your data sources:
 
+   <div id="note-4" />
+
    > 📘 **Note**
    >
    > When you share conversion data with external platforms like Meta or Google, AppsFlyer sends only the fields required for each partner to match conversions against their own campaign engagement events.
@@ -238,6 +258,8 @@ The fields shown here depend on the conversion source types you selected during 
    * Map all five required fields under **Required**.
    * Map at least one identifier under **At least one is required**.
    * Expand **Optional enrichment data** to map recommended fields like revenue, client user agent, or hashed identifiers.
+
+   <div id="note-5" />
 
    > 📘 **Note**
    >

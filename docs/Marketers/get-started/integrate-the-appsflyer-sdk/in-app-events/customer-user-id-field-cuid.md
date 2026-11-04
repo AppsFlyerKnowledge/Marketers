@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **At a glance:** The CUID enables you to group events of the same user across different devices, media sources, or channels.
 
+<div id="what-is-cuid" />
+
 ## What is CUID?
 
 The Customer User ID (CUID) is a unique user identifier. The app owner usually generates and sets it at the time of user registration. The CUID lets app owners follow user journeys across different devices.
+
+<div id="example" />
 
 > 📘 **Example**
 >
@@ -42,6 +46,8 @@ The Customer User ID (CUID) is a unique user identifier. The app owner usually 
 > * In-app purchases made by the same user in the same app across multiple devices (phone, tablet, TV, desktop) can be combined into a single view.
 > * You can share user performance data across multiple platforms (desktop, mobile, TV) to achieve a holistic user experience.
 
+<div id="setting-the-cuid" />
+
 ## Setting the CUID
 
 It's recommended to set the CUID as early as possible in the SDK initialization flow so that as many events as possible can be associated with a CUID.
@@ -51,6 +57,8 @@ It's recommended to set the CUID as early as possible in the SDK initialization 
 
 Once the CUID is available, you can set it by calling `setCustomerUserID`. You can only associate the CUID with in-app events occurring after you set it. Therefore, the install event will not carry the CUID when you call `start` before `setCustomerUserID`.
 
+<div id="associate-the-cuid-with-the-install-event" />
+
 ### Associate the CUID with the install event
 
 If you need to associate the install event to the CUID, we recommend setting it before calling `start`.
@@ -59,15 +67,21 @@ If you need to associate the install event to the CUID, we recommend setting it 
 
 In Android, you can run the `start` method and CUID setup from either the global `Application` class or an `Activity` class, depending on the app implementation. For more information, see <Anchor target="_blank" href="/marketers/docs/basic-sdk-integration-guide#select-in-what-class-to-start-the-sdk">Select in what class to start the SDK</Anchor>.
 
+<div id="if-the-sdk-starts-in-the-application-class" />
+
 #### If the SDK starts in the Application class
 
 If you want to associate the CUID with the install event when starting from the global `Application`class, make sure to delay sending out the install event using the `waitForCustomerUserId` method. This method puts the SDK in waiting mode until the CUID is set.
 
 Note: If, for some reason, setting the CUID fails, the SDK will remain in waiting mode and will not send any events.
 
+<div id="if-the-sdk-starts-in-an-activity-class" />
+
 #### If the SDK starts in an Activity class
 
 If you want to associate the CUID with the install event when starting from an `Activity` class, you don't have to delay sending the install event. Simply call `setCustomerUserId` before calling `start`.
+
+<div id="developer-instructions" />
 
 #### Developer instructions
 
@@ -86,6 +100,8 @@ Use the `customerUserId` method to set the CUID. The location of `customerUse
 * If you call `customerUserId` before calling `start`, the SDK associates the CUID with the install and the following in-app events
 * If you call it after `start`, the SDK only associates the CUID with events recorded after you set it.
 
+<div id="developer-instructions-1" />
+
 #### Developer instructions
 
 Refer your developer to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#setting-the-customer-user-id">Setting the Customer User ID</Anchor> in the Dev Hub.
@@ -94,6 +110,8 @@ Refer your developer to <Anchor target="_blank" href="https://dev.appsflyer.com/
 
 <Tab title="Unity">
 
+<div id="developer-instructions-2" />
+
 #### Developer instructions
 
 Refer your developer to <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#set-customer-user-id">Setting the Customer User ID</Anchor> in the Dev Hub.
@@ -101,6 +119,8 @@ Refer your developer to <Anchor target="_blank" href="https://dev.appsflyer.com/
 </Tab>
 
 <Tab title="React Native">
+
+<div id="developer-instructions-3" />
 
 #### Developer instructions
 
@@ -115,6 +135,8 @@ For the full implementation walkthrough, see <Anchor target="_blank" href="/mark
 </Tab>
 </Tabs>
 
+<div id="cuid-and-privacy" />
+
 ## CUID and privacy
 
 AppsFlyer values and respects the privacy of your users and <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/#engagementinformation">doesn't permit the collection or transfer of sensitive personal data to the AppsFlyer platform.</Anchor>
@@ -122,6 +144,8 @@ AppsFlyer values and respects the privacy of your users and <Anchor target="_bl
 To protect your users' privacy, you must not design the CUID to contain information that directly identifies the user. This includes social security or national identification numbers.
 
 If the CUID contains a user's email address or phone number, you must hash it before sending it to AppsFlyer. Never send unhashed CUIDs containing personal data to AppsFlyer.
+
+<div id="see-also" />
 
 > 📘 **See also**
 >

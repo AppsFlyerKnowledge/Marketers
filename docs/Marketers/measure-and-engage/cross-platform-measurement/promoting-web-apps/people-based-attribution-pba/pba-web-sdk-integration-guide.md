@@ -25,6 +25,8 @@ x-zendesk:
 
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Web SDK user and integration guide
 
 * The Web SDK JavaScript tag:
@@ -35,6 +37,8 @@ x-zendesk:
 * Implement the Web SDK alongside the AppsFlyer mobile SDK to record and map user activity across your mobile app and web environments.
 * Events occurring outside of the website can be recorded using <Anchor target="_blank" href="/marketers/docs/web-server-to-server-events-api-for-pba-web-s2s">Web server-to-server events API</Anchor> (Web S2S)
 
+<div id="selecting-a-code-snippet" />
+
 ## Selecting a code snippet
 
 Choose the snippet that matches your integration type and security requirements. Two options are available:
@@ -42,9 +46,13 @@ Choose the snippet that matches your integration type and security requirements.
 * [Standard Web SDK](#standard-web-sdk): The standard integration.
 * [Advanced SDK Verification](#advanced-sdk-verification): An enhanced integration that adds supply-chain protection for the Web SDK. Use this to add an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
+
+<div id="standard-web-sdk" />
 
 ### Standard Web SDK
 
@@ -100,6 +108,8 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### Advanced SDK Verification
 
@@ -178,11 +188,15 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Integrating the Web SDK into the website
 
 <div id="installation-and-integration" />
 
 <Accordion title="Installation and integration">
+
+<div id="considerations-and-actions-required" />
 
 #### Considerations and actions required
 
@@ -219,15 +233,21 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 <Tabs>
 <Tab title="Native">
 
+<div id="javascript-code-snippet" />
+
 #### JavaScript code snippet
 
 Integrate the web SDK using one of the following methods.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **To install the Web SDK without Smart Banners:**
 
 1. Repeat the procedure that follows on all pages on your website.
 2. In the code snippet, that follows, replace the `WEB_DEV_KEY` using the key specified in the prerequisites.
 3. Paste the code snippet [you selected above](#selecting-a-code-snippet) into the head tag of your website. Paste it near the top of the head tag.
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **To implement the Web SDK with Smart Banners:**
 
@@ -419,12 +439,16 @@ Consider:
   * Expire after a period set by the Web SDK or as determined by the browser. After cookie expiration, the Web SDK reverts to the initial state setting.
   * The Web SDK cookie doesn't interfere with and is always subject to, the browser-specific cookie settings.
 
+<div id="sdk-initial-state-setting" />
+
 #### SDK initial state setting
 
 | Setting | Snippet required |
 | --- | --- |
 | [Default] Send events | Make the following change to the Web SDK snippet. If necessary, add the measurementStatus parameter:<br /><br />Set measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | Don't send events | Make the following change to the Web SDK snippet. If necessary add the measurementStatus parameter:<br /><br />Set measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### Explicit control
 
@@ -440,6 +464,8 @@ Consider:
 <Accordion title="Implement a Content Security Policy (CSP) policy">
 
 If your website requires strict security or data privacy protocols, use the following mechanisms to configure how the Web SDK interacts with your environment and your data.
+
+<div id="content-security-policy-csp" />
 
 #### Content Security Policy (CSP)
 
@@ -458,6 +484,8 @@ The table below shows which CSP policies are compatible with the nonce-extended 
 | `script-src 'nonce-...' 'strict-dynamic'` | Yes (recommended) | Nonce covers inline script and loader; `strict-dynamic` propagates trust to the dynamically injected SDK tag. No CDN origin needed in the allowlist. |
 
 CSP policy compatibility
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### Advanced SDK Verification with CSP nonce snippets
 
@@ -539,6 +567,8 @@ If your query params contain data that you don't want AppsFlyer to record, you c
 
 You can implement the methods described in relation to urls, referrers, and header\_referer.
 
+<div id="query-discard-options" />
+
 #### Query discard options
 
 | Method | Description |
@@ -547,6 +577,8 @@ You can implement the methods described in relation to urls, referrers, and head
 | Discard specified query params | By setting a query param mask you specify which params are discarded.  Set the discard mask using `af_url_mask=param` where param is the parameter name.<br /><br />Example:<br /><br />**Url with mask:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**Url after discarding:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## Principles of event recording
 
@@ -559,6 +591,8 @@ You can implement the methods described in relation to urls, referrers, and head
 * Conversion event data is available in PBA dashboards.
 * Conversion and standard event data are available in <Anchor target="_blank" href="/marketers/docs/pba-raw-data-reports">raw data reports.</Anchor>
 
+<div id="conversion-events" />
+
 ### Conversion events
 
 * Conversion events provide insights into your marketing and business efforts. Conversion events include purchases, downloads, signups, and subscriptions.
@@ -567,11 +601,15 @@ You can implement the methods described in relation to urls, referrers, and head
 * Conversion events are used to record revenue and calculate ROI.
 * Use them to compare the budget of ads for specific media sources against the revenue generated from the users that come from these media sources.
 
+<div id="standard-events" />
+
 ### Standard events
 
 * Standard events are used to validate the user journey and funnels that lead to conversions.
 * Use them to measure user activity and highlight media sources that bring engaged users.
 * Record user activity to mark users for re-engagement campaigns.
+
+<div id="recording-events" />
 
 ### Recording events
 
@@ -630,6 +668,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 The events that you send depend on the nature of your web app. For example, an online store app requires a set of events that differ from that of a news outlet. See the scenarios that follow to get a sense of the events you should and send and when.
 
+<div id="online-store" />
+
 #### Online store
 
 Suppose you are managing an online store. Some standard events that you might want to record would be:
@@ -673,6 +713,8 @@ This part is intended for web developers.
    2. The Request Payload aligns with the parameters in the event.
 
 </Accordion>
+
+<div id="examples" />
 
 ## Examples
 
@@ -1085,6 +1127,8 @@ The setCustomerUserId function can be sent at any stage in the user flow, for ex
 Use the same CUID value as you do in the setCustomerUserd function in the mobile app (see mobile setCustomerUserId for: <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid#setting-the-cuid">Android,</Anchor> Unity)
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## Addtional information
 

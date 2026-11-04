@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Change the names of campaigns without creating duplicate data displays.
 
+<div id="campaign-name-changes" />
+
 ## Campaign name changes
 
 Changing the names of campaigns affects the display of **aggregate data** in dashboards and reports. AppsFlyer displays campaigns using the campaign ID as the key. If there is more than one name associated with the same campaign ID, the most recently reported name is used to display data.
@@ -53,12 +55,14 @@ The following table shows which dashboards and reports support campaign name cha
 | Cost ETL | Yes |
 | SKAN overview dashboard | No |
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > * On January 1, campaign **example\_a1** began to run.
 > * On January 2, the campaign name was changed from **example\_a1** to **example\_a2**.
 >
-> #### Example campaign data
+> #### <span id="example-campaign-data"></span>Example campaign data
 >
 >
 >
@@ -69,11 +73,13 @@ The following table shows which dashboards and reports support campaign name cha
 >
 >
 >
-> #### Overview dashboard display
+> #### <span id="overview-dashboard-display"></span>Overview dashboard display
 >
 >
 >
 > <table><tbody><tr><th><p><span>Campaign</span></p></th><th><p><span>Campaign ID</span></p></th><th><p><span>Installs</span></p></th><th><p><span>Ad spend</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>Result: Data displays under the most recent campaign name.</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### Best practice
 

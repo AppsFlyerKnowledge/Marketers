@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Outbrain, an AppsFlyer integrated partner, is a premium discovery platform that helps connect marketers to their target audience through personalized recommendations on the world's leading publishers.
 
+<div id="setting-up-outbrain-integration" />
+
 ## Setting up Outbrain integration
 
 AppsFlyer integration with Outbrain supports click attribution.

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Integrate AppsFlyer with Amplitude to share user attribution data and event analytics for better insights into user engagement, retention, and revenue. Choose between **two integration versions, V1 or V2**, depending on your use case and analytics needs.
 
+<div id="about-the-integration" />
+
 ## About the integration
 
 Amplitude, an AppsFlyer integrated partner, is a product analytics platform used by product, growth, and marketing teams to understand user behavior across mobile and web. The integration allows AppsFlyer to send key event data to Amplitude post-install, enabling comprehensive user-level analysis.
@@ -44,10 +46,14 @@ There are two Amplitude integration versions:
 | **V1** | Attribution API | Advertising ID (AdID) | Installs only |
 | **V2** | HTTP V2 API | `user_id`, `device_id` (fallback logic) | Installs and in-app events |
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > * Choose either the Amplitude V1 or V2 integration. **Do not use both** simultaneously. Using both versions at the same time may result in duplicate events being sent to Amplitude.
 > * Some media sources restrict data sharing with third parties. Postbacks for restricted events won't be sent to this partner, even if configured.
+
+<div id="prerequisites" />
 
 ## Prerequisites
 
@@ -58,6 +64,8 @@ There are two Amplitude integration versions:
 * Make sure you avoid sending the same events from both the Amplitude SDK and AppsFlyer to prevent duplication.
 * See the additional prerequisite for the Amplitude V2 integration.
 
+<div id="additional-prerequisites-for-the-amplitude-v2-integration" />
+
 ### Additional prerequisites for the Amplitude V2 integration
 
 The V2 integration requires setup of the:
@@ -65,6 +73,8 @@ The V2 integration requires setup of the:
 * [Amplitude device ID](/docs/amplitude-integration-with-appsflyer#amplitude-device-id)
 * [Customer user ID](/docs/amplitude-integration-with-appsflyer#customer-user-id)
 * [Amplitude session ID](/docs/amplitude-integration-with-appsflyer#amplitude-session-id)
+
+<div id="amplitude-device-id" />
 
 #### Amplitude device ID
 
@@ -163,10 +173,14 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="customer-user-id" />
+
 #### Customer user ID
 
 Set up the Customer User ID (CUID). This is a unique identifier typically generated and set  
 by the app owner during user registration. <Anchor target="_blank" href="/marketers/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">Learn more</Anchor>
+
+<div id="amplitude-session-id" />
 
 #### Amplitude session ID
 
@@ -265,6 +279,8 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="set-up-the-integration" />
+
 ## Set up the integration
 
 **To set up the integration:**
@@ -291,12 +307,18 @@ appsFlyerSdk.setAdditionalData(data);
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to turn **Activate Partner** on to enable setup of the integration tab's parameters. The toggle must be on for as long as you work with the partner.  
 Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
 
+<div id="general-settings" />
+
 ### General settings
+
+<div id="advanced-data-sharing" />
 
 #### Advanced data sharing
 
@@ -319,10 +341,14 @@ To share additional install information with Amplitude, turn on **Advanced data 
 | af\_sub5 | af\_sub5 |
 | app\_version | app\_version |
 
+<div id="amplitude-eu-data-center" />
+
 #### Amplitude EU Data Center
 
 When **Amplitude EU Data Center** is off, install postbacks are sent to the US data center.  
 To send install postbacks to Amplitude's EU data center, turn Amplitude EU Data Center on.
+
+<div id="api-key" />
 
 #### API Key
 
@@ -344,11 +370,15 @@ Amplitude connects with AppsFlyer via a unique API Key. If you don't already hav
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Proceed to configure Amplitude in AppsFlyer Dashboard.
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Amplitude following user installs, including both installs and re-engagements (including re-attributions). Re-engagements occur when a user who already has the app installed opens it after clicking through a campaign. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
 <Image alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
+
+<div id="in-app-event-settings" />
 
 ### In-app event settings
 
@@ -363,6 +393,8 @@ Once you have saved the configuration, AppsFlyer sends the following data to Amp
 * Campaign name
 
 Sending IDFA for iOS devices is subject to <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework">ATT consent by the user and to Advanced Privacy settings</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 ### In-app event postbacks
 
@@ -394,15 +426,21 @@ Permissions are not available for Amplitude.
 
 </Accordion>
 
+<div id="viewing-attribution-data-in-the-amplitude-console" />
+
 ## Viewing attribution data in the Amplitude console
 
 Attribution data sent from AppsFlyer to Amplitude is displayed in your dashboards as events and properties prefixed with **[AppsFlyer]**:
 
 ![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
 
+<div id="important-1" />
+
 > 🚧 **Important**
 >
 > In some cases, Amplitude shows data coming from AppsFlyer as "Blocked". If you can't see AppsFlyer data in Amplitude, check if it's defined as a blocked event.
+
+<div id="sending-amplitude-events-to-appsflyer" />
 
 ## Sending Amplitude events to AppsFlyer
 

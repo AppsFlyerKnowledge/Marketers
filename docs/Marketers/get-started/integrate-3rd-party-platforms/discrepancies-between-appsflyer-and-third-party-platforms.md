@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **At a glance:** Learn about the reasons for differences in attribution between AppsFlyer and third-party platforms.
 
+<div id="overview" />
+
 ## Overview
 
 Due to media sources' data-sharing policies, not all user-level <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">data is shared with third-party platforms</Anchor> (such as analytics and marketing platforms). For these reasons, there may be discrepancies in attribution between data displayed on third-party platforms and data in AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Note**
 >
 > Aggregated and analytics data from the AppsFlyer platform is available without limitation.
 
+<div id="postback-restrictions-on-third-party-platforms" />
+
 ## Postback restrictions on third-party platforms
 
 When it comes to sending postbacks to third-party platforms, there are different levels of media source restrictions. Postbacks can either not be sent at all, be sent without attribution, or be sent without restriction.
+
+<div id="types-of-postback-restrictions" />
 
 #### Types of postback restrictions
 
@@ -58,6 +66,8 @@ For events other than restricted raw data events, the ad networks listed below r
 * Bing
 * Yahoo (Oath: Ad Platforms / Yahoo Gemini)
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > For Meta ads, postback behavior depends on whether the advertiser has accepted the Advanced Mobile Measurement (AMM) terms:
@@ -77,6 +87,8 @@ All other events that aren't restricted or the media source isn't redacted are s
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th colspan="6">Postback restrictions are applicable to all third-party platforms integrated with AppsFlyer, including the following:</th></tr></thead><tbody><tr><td><span id="airship"></span>Airship</td><td>Amplitude</td><td>Batch</td><td>Braze</td><td>CleverTap</td><td>Cloud</td></tr><tr><td><span id="convertro"></span>Convertro</td><td>deltaDNA</td><td>Eulerian</td><td>GameAnalytics</td><td>IBM UBX</td><td>Insider</td></tr><tr><td><span id="itunes"></span>iTunes</td><td>Kahuna</td><td>Leanplum</td><td>Liquid</td><td>Localytics</td><td>Luna labs</td></tr><tr><td><span id="Medialyzer"></span>Medialyzer</td><td>Mixpanel</td><td>MoEngage</td><td>mParticle</td><td>OneSignal</td><td>Rocketbox</td></tr><tr><td><span id="salesforce"></span>Salesforce</td><td>Marketing</td><td>MobilePush</td><td>Segment</td><td>Spoteffects</td><td>Swrve</td></tr><tr><td><span id="tapcart"></span>Tapcart</td><td>Tealium</td><td>WebEngage</td><td>Winclap Analytics</td><td>Google Analytics 4</td><td> </td></tr></tbody></table>
 
+<div id="examples-of-discrepancies" />
+
 ## Examples of discrepancies
 
 <div id="example-1" />
@@ -85,6 +97,8 @@ All other events that aren't restricted or the media source isn't redacted are s
 
 <Tabs>
 <Tab title="AMM not accepted">
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -101,6 +115,8 @@ All other events that aren't restricted or the media source isn't redacted are s
 </Tab>
 
 <Tab title="AMM accepted">
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -123,6 +139,8 @@ All other events that aren't restricted or the media source isn't redacted are s
 
 <Accordion title="Raw data restrictions on MoEngage">
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > **Example 2**
@@ -141,6 +159,8 @@ All other events that aren't restricted or the media source isn't redacted are s
 
 <Accordion title="Restrictions on Airship">
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > **Example 3**
@@ -154,6 +174,8 @@ All other events that aren't restricted or the media source isn't redacted are s
 > | The advertiser sees 35 purchase events attributed to Bing. | The advertiser sees 84 purchase events from organic sources. 35 of them came from Bing, but they wouldn't know that since those purchase events appear as organic. |
 
 </Accordion>
+
+<div id="note-6" />
 
 > 📘 **Note**
 >

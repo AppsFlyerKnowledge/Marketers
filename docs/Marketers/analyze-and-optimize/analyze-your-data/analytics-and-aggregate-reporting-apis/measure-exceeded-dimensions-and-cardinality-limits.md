@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **At a glance:** Why some aggregate data dimensions display as *exceeded* and how to prevent reaching cardinality limits.
 
+<div id="what-are-exceeded-dimensions" />
+
 ## What are exceeded dimensions?
 
 AppsFlyer collects your install and event data and aggregates it. Data is aggregated using unique values populating a given dimension. The number of unique values in a dimension is called cardinality. Most analytics and aggregated reporting tools have cardinality limits per dimension. When the number of unique values in a dimension exceeds the cardinality limit, the remaining data is grouped in an *exceeded* group. And when the number of unique values in the media source dimension exceeds the cardinality limit, the remaining media source data **as well as all dimensions based on the remaining media sources** are grouped in *exceeded* groups.
 
 The examples that follow illustrate cardinality and how it affects your reports.
+
+<div id="example" />
 
 > 📄 **Example**
 >
@@ -65,6 +69,8 @@ The table that follows lists the cardinality limits per day, per app.
 
 <table><tbody><tr><th>Dimension</th><th>Exceeded group name</th><th>Limit type per...</th><th>Cardinality limit per day </th><th>Cardinality for Protect360 per day</th></tr><tr><td>Ad</td><td>Exceeded_Ad_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Ad ID</td><td>Exceeded_AdID_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Ad set</td><td>Exceeded_AdSet_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Adset ID</td><td>Exceeded_AdSetID_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Campaign</td><td>Exceeded_Campaign_Limit</td><td>Media source</td><td>3000</td><td><ul><li>Installs/in-app events: 3000</li><li>Impressions/clicks: 100 </li></ul></td></tr><tr><td>Campaign ID</td><td>Exceeded_CampaignID_Limit</td><td>Media source</td><td>3000</td><td><ul><li>Installs/in-app events: 3000</li><li>Impressions/clicks: 100 </li></ul></td></tr><tr><td>Channel</td><td>Exceeded_Channels_Limit</td><td>Media source</td><td>20</td><td>20</td></tr><tr><td>Site ID</td><td>Exceeded_SiteID_Limit</td><td>Media source</td><td>1000\*\*</td><td><ul><li>Installs/in-app events/impressions/clicks: 1000\*\*</li></ul></td></tr><tr><td>Events</td><td>Exceeded_Events_Limit</td><td>App </td><td>300</td><td>Installs/in-app events: 300</td></tr><tr><td>Keywords</td><td>Exceeded_Keywords_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Media source names\*</td><td>Exceeded_MediaSource_Limit</td><td>App</td><td>1000</td><td><ul><li>Installs/in-app events: 1000</li><li>Impressions/clicks: 100 </li></ul></td></tr><tr><td colspan="5"><p>\* If <span>the number of unique values in the media source dimension exceeds the cardinality limit, the remaining media source data </span><strong>as well as all dimensions based on the remaining media sources</strong><span> are grouped in </span><em>exceeded</em><span> groups.</span></p><p><span>\*\* See <a href="./measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">Exceeded_SiteID_Limit</a> for more details and limits.</span></p></td></tr></tbody></table>
 
+<div id="cardinality-limits-per-dimension" />
+
 ## Cardinality limits per dimension
 
 <div id="exceeded_adset_limit-and-exceeded_ad_limit" />
@@ -73,6 +79,8 @@ The table that follows lists the cardinality limits per day, per app.
 
 * Up to 1000 unique adset names and 1000 unique ad names per media source are available.
   * On a given day, ad set information from the 1001st ad set and above is grouped in the **Exceeded\_AdSet\_Limit** source. The same applies to the **Exceeded\_Ad\_Limit** source.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -99,6 +107,8 @@ The table that follows lists the cardinality limits per day, per app.
 
 * Up to 3000 unique campaign names per day are available.
   * On a day campaign information from the 3001st campaign and above is grouped in the **Exceeded\_Campaign\_Limit** source.
+
+<div id="tip-1" />
 
 > 👍 **Tip**
 >
@@ -134,12 +144,16 @@ The table that follows lists the cardinality limits per day, per app.
 * Up to 300 unique event names per day are available.
   * On a day, all event information from the 301st event and above is attributed to the event name called **Exceeded\_Events\_Limit**.
 
+<div id="tip-2" />
+
 > 👍 **Tip**
 >
 > To stop seeing **Exceeded\_Events\_Limit**, consider using:
 >
 > * <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">Rich in-app events</Anchor>. Instead of reporting on hundreds of different events define a small number of general event names (ideally up to 20). Use dynamic event values to differentiate between these events. This lets you optimize according to value parameters, and perform analysis based on the event values, which are available via the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">in-app events raw data report.</Anchor>
 > * <Anchor target="_blank" href="/marketers/docs/implement-validation-rules-to-prevent-fraud">Validation Rules</Anchor> to remove unneeded in-app events from the AppsFlyer platform.
+
+<div id="example-1" />
 
 > 📄 **Example**
 >
@@ -175,11 +189,15 @@ Site ID (per clicks, impressions, installs, and in-app events) has 2 thresholds,
   * On a day, site ID information from the 1001st site ID and above per media source is grouped into a single site ID titled **Exceeded\_SiteID\_Limit.** Therefore, if you do see the site ID **Exceeded\_SiteID\_Limit**, it means there are too many used site IDs per the media source in question, and trying to optimize the source's traffic according to site IDs becomes less accurate and less effective.
 * From August 19, 2024, if there are more than 5000 site IDs per day per media source, only 10 site IDs display. All other site IDs are grouped into a single site ID titled **Exceeded\_SiteID\_Limit**.
 
+<div id="tip-3" />
+
 > 👍 **Tip**
 >
 > "Divide and Conquer". Instead of using thousands of site IDs per media source, which distorts your aggregate data, use a second parameter on your attribution links called **af\_sub\_siteid.** Define a small number of general site IDs (ideally up to 50), and assign all previous site IDs as sub-site IDs under these general site IDs. This enables you to:
 > 1. Prevent seeing **Exceeded\_SiteID\_Limit**2. Efficiently optimize according to significant site IDs traffic
 > 3. Perform deep analysis based on the site IDs and sub-site IDs in the raw data
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -187,7 +205,11 @@ Site ID (per clicks, impressions, installs, and in-app events) has 2 thresholds,
 
 </Accordion>
 
+<div id="how-to-avoid-getting-exceeded-sources" />
+
 ## How to avoid getting exceeded sources?
+
+<div id="the-long-term-solution" />
 
 ### The long-term solution
 
@@ -195,11 +217,15 @@ Most advertisers won't encounter **Exceeded** sources as they don't normally def
 
 If you do encounter **Exceeded** sources it's probably because one or more media sources is using dynamic values for names of campaigns, site IDs, ad sets, or ads. Dynamic in-app events within the app code may cause the **Exceeded\_Events\_Limit** source data to appear.
 
+<div id="tip-4" />
+
 > 👍 **Tip**
 >
 > Use only static values for names of in-app events, campaigns, site IDs, ad sets, and ads to avoid getting **Exceeded** sources.
 >
 > Also please check specific tips per any **Exceeded** source above.
+
+<div id="the-short-term-solution" />
 
 ### The short-term solution
 
@@ -208,6 +234,8 @@ The long-term solution may take you a few days to a few weeks to fully implement
 But what if you want to look at your data right now?
 
 As explained, an **Exceeded** source occurs when AppsFlyer receives the N+1 click (or event) source during a single day. It is possible that the more prominent media sources you use arrive later in the day, and therefore are combined with an **Exceeded** source's data. Here's a simple trick to minimize the effect of any **Exceeded** source you see:
+
+<div id="tip-5" />
 
 > 👍 **Tip**
 >

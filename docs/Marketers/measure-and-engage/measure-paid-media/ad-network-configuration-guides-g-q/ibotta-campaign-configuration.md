@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
 
+<div id="setting-up-ibotta" />
+
 ## Setting up Ibotta
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -38,6 +40,8 @@ x-zendesk:
 4. In the **Integration** tab, turn on the **Activate partner** toggle. **Note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below. Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">partner integrations.</Anchor>
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -46,6 +50,8 @@ x-zendesk:
 <div id="integration-tab" />
 
 <Accordion title="Integration tab">
+
+<div id="activate-partner" />
 
 ### Activate partner
 
@@ -58,9 +64,13 @@ Send automatic postbacks to Ibotta following user installs and re-engagements. U
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Ibotta.
 
+<div id="in-app-events-settings" />
+
 ### In-app events settings
 
 In this section, you can map your AppsFlyer events with Ibotta via postbacks.
+
+<div id="tip-1" />
 
 > 👍 **Tip**
 >
@@ -89,6 +99,8 @@ In this tab, you can create the attribution links you want to send to Ibotta for
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -108,6 +120,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about **<Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">AppsFlyer's Attribution Link Structure and Parameters</Anchor>.**
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Ibotta.
@@ -115,6 +129,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 
@@ -145,6 +161,8 @@ Ad revenue integration is not available for this partner.
 In this tab, you can select the permissions to grant Ibotta, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Ibotta, the permissions tab is active and you can grant control to Ibotta.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

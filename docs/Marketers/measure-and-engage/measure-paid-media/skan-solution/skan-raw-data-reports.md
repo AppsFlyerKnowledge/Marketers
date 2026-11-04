@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** SKAN raw data reports contain row-level data generated after translating and decoding postbacks received by AppsFlyer from iOS, as well as raw SKAN postbacks. Data is available via <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">Data Locker</Anchor> and <Anchor target="_blank" href="/marketers/docs/push-api-streaming-raw-data">Push API</Anchor>. If your subscription plan includes raw data, there is no need for a Data Locker subscription.
 
+<div id="skan-raw-data-reports" />
+
 ## SKAN raw data reports
 
 Principles:
@@ -61,6 +63,8 @@ Report types available are:
 * Non-mandatory enrichment fields like campaign\_name, ad\_network\_campaign\_id, ip that the ad network did not provide.
 * Apple withheld the data due to Apple threshold policies. Fields like source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
 
+<div id="skan-raw-data-report-format-and-content" />
+
 ## SKAN raw data report format and content
 
 <div id="raw-data-report-types" />
@@ -74,6 +78,8 @@ Report types available are:
 <div id="raw-data-field-format-types" />
 
 <Accordion title="Raw data field format types">
+
+<div id="field-formats" />
 
 #### Field formats
 
@@ -105,6 +111,8 @@ Report types available are:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Additional information
 
 <div id="traits-and-limitations" />
@@ -125,6 +133,8 @@ Report types available are:
 | Account user access | Available. According to account permissions |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

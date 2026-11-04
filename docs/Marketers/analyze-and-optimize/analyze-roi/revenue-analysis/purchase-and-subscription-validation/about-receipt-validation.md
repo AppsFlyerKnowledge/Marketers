@@ -26,9 +26,13 @@ Advertisers can use Receipt validation to validate and measure in-app purchases 
 
 Receipt validation is free of charge to all account plans.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Consider using our premium ROI360 store revenue solution to benefit from net revenue calculation, full subscription funnel coverage, refund handling, and automated purchase detection & deduplication. For more information and a comparison between the two solutions, see The two solutions for purchase and subscription validation.
+
+<div id="how-does-receipt-validation-work" />
 
 ## How does Receipt validation work?
 
@@ -44,6 +48,8 @@ The receipt validation flow is as follows:
 8. The AppsFlyer validation service transfers the response to the SDK.
 9. The SDK transfers the receipt validation response to the app (either success or failure).
 
+<div id="activate-receipt-validation" />
+
 ## Activate Receipt validation
 
 To activate Receipt validation, follow these steps:
@@ -53,9 +59,13 @@ To activate Receipt validation, follow these steps:
 3. Under **1 Choose Product type**, select **Receipt validation**.
 4. Click **Save and next** to proceed to set up Receipt validation.
 
+<div id="set-up-receipt-validation" />
+
 ## Set up Receipt validation
 
 For more information, see <Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation">Set up receipt validation</Anchor><Anchor target="_blank" href="/marketers/docs/set-up-receipt-validation#step-3-verify-sdk-implementation">.</Anchor>
+
+<div id="in-app-purchase-events-and-parameters-for-receipt-validation" />
 
 ## In-app purchase events and parameters for Receipt validation
 
@@ -92,6 +102,8 @@ All predefined events share the following properties:
 
 * Any additional custom parameters sent in the SDK call will appear in the`custom_data` field in raw data reports
 
+<div id="switch-from-roi360-store-revenue-to-receipt-validation" />
+
 ## Switch from ROI360 store revenue to Receipt validation
 
 If you currently use ROI360 store revenue and want to switch to Receipt validation, follow these steps:
@@ -109,6 +121,8 @@ If you currently use ROI360 store revenue and want to switch to Receipt validati
 7. After switching, the **Product type** updates to **Receipt validation,** and the screen reflects the simplified configuration.
 8. You’ll need to revalidate the following:
    * **SDK implementation** for the validateAndLog method
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

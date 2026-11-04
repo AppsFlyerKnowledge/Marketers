@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Find the SDK integration guides of AppsFlyer SDKs from 2016 and onwards, in PDF form.
 
+<div id="overview" />
+
 ## Overview
 
 As time moves on, so do our SDK integration guides. They are replaced by newer, more agile, flexible, and technologically advanced SDKs.
@@ -32,13 +34,15 @@ In this article, you can find the SDK integration guides of AppsFlyer SDKs from 
 
 **If your apps still use one of these very (very) old SDKs, we strongly urge you to upgrade to the newest SDK version**, for <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">Android</Anchor> or for <Anchor target="_blank" href="/marketers/docs/sdk-integration-overview">iOS</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > By upgrading from an old SDK version to the new version you can get **numerous improvements, new features, and bug fixes**. It also helps protect you from fraudsters and ensures you can be GDPR-compliant.
 >
 > We recommend updating the SDK version at least every 6 months.
 >
-> ## Android
+> ## <span id="android"></span>Android
 
 ![android_logo.png](https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png)
 
@@ -57,6 +61,8 @@ Set out below are the links to the previous SDK Integration Guides for Android:
 * [AppsFlyer SDK Integration Guide Android V.4.5.1](https://support.appsflyer.com/hc/article_attachments/360001322017)
 * [AppsFlyer SDK Integration Guide Android V.4.6.0](https://support.appsflyer.com/hc/article_attachments/360001322037)
 
+<div id="ios" />
+
 ## iOS
 
 ![ios_logo.png](https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png)
@@ -73,6 +79,8 @@ Set out below are links to the previous SDK Integration Guides for iOS:
 * [AppsFlyer SDK Integration Guide iOS V.4.4.1](https://support.appsflyer.com/hc/article_attachments/360001397798)
 * [AppsFlyer SDK Integration Guide iOS V.4.5.2](https://support.appsflyer.com/hc/article_attachments/360001397818)
 * [AppsFlyer SDK Integration Guide iOS V.4.5.3](https://support.appsflyer.com/hc/article_attachments/360001397838)
+
+<div id="windows-phone" />
 
 ## Windows Phone
 

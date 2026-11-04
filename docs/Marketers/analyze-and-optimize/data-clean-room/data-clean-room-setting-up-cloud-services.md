@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Set up one or more data warehouses (BigQuery, Snowflake) and/or cloud storage buckets (Amazon S3, GCS) to share data with the Data Clean Room and receive reports.
 
+<div id="overview" />
+
 ## Overview
 
 Preparing to use the Data Clean Room (DCR) involves setting up:
@@ -37,6 +39,8 @@ Creating an inbound or outbound connection is a 2-step process:
 * **Step #1 –** Use the interfaces of your selected cloud services to prepare them for use with the DCR (this article).
 * **Step #2 –** Use the AppsFlyer platform to connect them to the DCR. (See <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-connections">Data Clean Room—Working with connections</Anchor>).
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > See <Anchor target="_blank" href="/marketers/docs/data-clean-room-working-with-sources#source-requirements">Data Clean Room—Working with sources</Anchor> for complete information about data source requirements:
@@ -44,6 +48,8 @@ Creating an inbound or outbound connection is a 2-step process:
 > * Data format *(for all data sources)*
 > * Table columns *(for data sources in data warehouses)*
 > * File name and format *(for data sources in cloud storage buckets)*
+
+<div id="supported-cloud-services" />
 
 ### Supported cloud services
 
@@ -54,14 +60,20 @@ Two types of cloud services are supported for inbound and outbound connections t
 
 You can use one or any combination of these services for inbound and outbound connections.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * If you will be using multiple custom data sources for a single report, they must be located in cloud storage buckets.
 > * It's very common to use the same cloud storage bucket on Amazon S3 or GCS for both inbound and outbound connections. Be sure to follow the [special instructions for that setup](/docs/data-clean-room-setting-up-cloud-services#setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections).
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## Setting up cloud services for inbound connections
 
 Prepare your selected cloud services for use with DCR inbound connections according to the instructions in the following tabs.
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### Data warehouses – BigQuery and Snowflake
 
@@ -129,6 +141,8 @@ Prepare your selected cloud services for use with DCR inbound connections accord
 9. Click the **Create Share** button.
 
 </Accordion>
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### Cloud storage buckets – Amazon S3 and GCS
 
@@ -236,6 +250,8 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## Setting up cloud services for outbound connections
 
 The DCR delivers reports to your selected cloud services using <Anchor target="_blank" href="/marketers/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>.
@@ -243,6 +259,8 @@ The DCR delivers reports to your selected cloud services using <Anchor target="_
 * **Note:** Receiving DCR reports does not require a premium subscription to Data Locker. If you are interested in receiving other AppsFlyer reports via Data Locker, contact your CSM or send an email to [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 Your DCR reports can be delivered to one or more locations on your cloud services (whether or not you use the same services for inbound connections). Prepare them for use with outbound connections according to the instructions in the following tabs.
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### Data warehouses – BigQuery and Snowflake
 
@@ -288,6 +306,8 @@ The procedure for preparing Snowflake for outbound connections is completed in c
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### Cloud storage buckets – Amazon S3 and GCS
 
 The procedure for preparing cloud storage buckets for outbound connections is very similar to the one preparing them for [inbound connections](/docs/data-clean-room-setting-up-cloud-services#setting-up-cloud-services-for-inbound-connections) (including the instructions relevant to both cloud storage services).
@@ -313,6 +333,8 @@ Follow the instructions for creating a [GCS bucket for inbound connections](/doc
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## Setting up the same cloud storage bucket for both inbound and outbound connections
 
 As previously mentioned, it's common to use the same bucket on Amazon S3 or GCS for both inbound and outbound connections.
@@ -328,9 +350,13 @@ Instructions for both of these scenarios are included in the tabs below:
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### Creating a new bucket for inbound/outbound connections
 
 Follow the instructions for creating an [Amazon S3 bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (with no changes to that procedure).
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### Modifying an existing bucket previously used only for Data Locker
 
@@ -381,11 +407,15 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### Creating a new bucket for inbound/outbound connections
 
 Follow the instructions for creating a [GCS bucket for inbound connections](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). Modify step #4 of that procedure to enter the following **2 accounts** in the **New members** box:  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### Modifying an existing bucket previously used only for Data Locker
 

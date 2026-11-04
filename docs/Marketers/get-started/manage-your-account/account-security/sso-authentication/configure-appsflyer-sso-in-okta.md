@@ -120,6 +120,8 @@ Now that you've configured the IdP part, go back to AppsFlyer to <Anchor target=
 
 </Accordion>
 
+<div id="see-also" />
+
 > 📄 **See also**
 >
 > * <Anchor target="_blank" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/">Okta SSO documentation</Anchor>

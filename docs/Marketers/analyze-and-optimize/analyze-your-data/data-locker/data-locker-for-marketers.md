@@ -29,6 +29,8 @@ x-zendesk:
 
 > **At a glance:** Data Locker sends your report data to cloud storage for loading into your BI systems. You can select between different storage destinations: An AppsFlyer-owned bucket in AWS, or storage owned by you in AWS, GCS, Yandex, BigQuery, and Snowflake. Data Locker supports [multiple destinations](/docs/data-locker-for-marketers#multipleconnections-principles-more-than-one-destination). That means you can send all data to multiple destinations, segregate data by destination, or a combination of both.
 
+<div id="overview" />
+
 ## Overview
 
 ![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
@@ -58,6 +60,8 @@ In Data Locker select your apps, media sources, events, and reports to include i
 
 </Accordion>
 
+<div id="set-data-locker-report-settings" />
+
 ## Set Data Locker report settings
 
 To configure Data Locker, follow these steps to connect your cloud service, define export settings, and customize report content:
@@ -84,6 +88,8 @@ You can connect your Data Locker to one or more cloud service providers. See the
 <Accordion title="2. Add a connection to your cloud service">
 
 After configuring your cloud service account to work with Data Locker (see "Set up your cloud service" above), create a connection in Data Locker using the credentials from your account. You can create up to two connections.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -191,6 +197,8 @@ To create a connection for your cloud provider perform the following steps:
 
 6. Click **Save.** The **Report output settings section** is displayed.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > You can [use the audit log](#track-connection-changes-in-the-audit-log) to confirm whether a connection was created, updated, or deleted, and who made the change.
@@ -211,6 +219,8 @@ After setting the connection with the cloud service, you can continue to set the
    * Snappy (only available for Parquet files)
    * GZIP
 4. Select the maximum row number you want in your file: Either 10k, 25k, 50k, 100k, 200k, or 500k. More rows in the file mean fewer files but a larger file size.
+
+   <div id="note-2" />
 
    > 📘 **Note**
    >
@@ -336,9 +346,13 @@ Legacy fields are those that were previously included in the report schema but a
 1. Open the legacy fields tab.
 2. Turn off: **Include legacy fields in the report**.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > If you want to include legacy fields in the report but can't because the legacy fields list is grayed out and locked, contact your Customer Success Manager.
+
+<div id="non-empty-legacy-fields" />
 
 #### Non-empty legacy fields
 
@@ -357,11 +371,15 @@ Most legacy fields are empty or `null`. However, a few of them contain values bu
 
 Click **Save,** and the first data dump will be written to your cloud service within 3 hours. Subsequent data update schedules are specific to each report.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > Any changes to Data Locker settings take up to 3 hours to take effect.
 
 </Accordion>
+
+<div id="set-user-permissions" />
 
 ## Set user permissions
 
@@ -370,11 +388,17 @@ Both **admins** and **team members**, with the correct permissions, can access D
 * **Admins** can access the Data Locker page, create and manage all connections, add editors, and assign owners to existing connections.
 * **Team members** can access the Data Locker page, edit existing connections that they own, or create new connections. They **cannot** manage ownership (set the owner and editors), even if they are the account owners.
 
+<div id="manage-data-locker-access-and-ownership-admins" />
+
 ### Manage Data Locker access and ownership (Admins)
+
+<div id="give-data-locker-access" />
 
 #### Give Data Locker access
 
 * To provide a team member permission to access Data Locker, assign them a role with Data Locker set to **Manage**.
+
+<div id="manage-ownership-and-editors" />
 
 #### Manage ownership and editors
 
@@ -384,6 +408,8 @@ To transfer ownership or add a team member as an editor on an existing connectio
 2. Select **Manage ownership**.
 3. Change the connection owner or add an editor.
 
+<div id="review-filters-after-changing-ownership" />
+
 #### Review filters after changing ownership
 
 If you change the owner of a Data Locker connection to a user with data access restrictions (for example, limited by app, media source, agency, or country), existing [global-level](#select-global-level-filters) or [report-level filters](#7-select-the-reportlevel-filters) may be reset to match the new owner’s permissions.
@@ -392,9 +418,13 @@ After transferring ownership, review the filters and confirm the connection refl
 
 For more information about data access restrictions, see <Anchor target="_blank" href="/marketers/docs/user-management#data-access">User management > Data access</Anchor>.
 
+<div id="note-4" />
+
 > 📘 **Note**
 >
 > In AF AWS connections, there is no **Manage ownership** option even for Admins, since only Admins can edit, delete, or create new AF AWS connections. This precaution is taken to prevent the exposure of the bucket credentials.
+
+<div id="data-storage-architecture" />
 
 ## Data storage architecture
 
@@ -459,6 +489,8 @@ Data files depend on segregation type.
 
 <Accordion title="Storage options">
 
+<div id="caution" />
+
 > ❗️ **Caution!**
 >
 > If you are using the marketer-owned storage option:
@@ -487,6 +519,8 @@ Data files depend on segregation type.
 | Storage capacity | Managed by AppsFlyer | Managed by the marketer |
 | Access control using VPC endpoints with bucket policies | Not Applicable | [Optional] In AWS, if you implement VPC endpoint security at the bucket level, you must allowlist AppsFlyer servers. |
 
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
+
 #### **Notice to security officers in the case of customer-controlled storage**
 
 Consider:
@@ -513,6 +547,8 @@ In managing your connections, consider:
 * To see connection details, duplicate a connection, or delete a connection, click ⋮ (options).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 
@@ -574,6 +610,8 @@ For more information see: <Anchor target="_blank" href="/marketers/docs/audit-lo
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## AWS data retrieval
 
 Use your preferred AWS data retrieval tool, AWS CLI, or one of the tools described in the sections that follow. Note! The exact instructions are suitable for AppsFlyer owned buckets. Adjust the instructions as needed if you are connecting to your bucket.
@@ -606,6 +644,8 @@ In the following commands, the value of `{home-folder}` can be found
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### Listing files and folders
 
@@ -695,6 +735,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
    You can now access the Data Locker files.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

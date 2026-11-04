@@ -28,6 +28,8 @@ x-zendesk:
 
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
+<div id="about-user-attributes" />
+
 ## About user attributes
 
 User attributes, unlike event-based data, are general characteristics that your users share with you. They can be static, like gender, age, birthday, and country; or dynamic, like the user score in a game.
@@ -63,6 +65,8 @@ The table contains user-attribute data from your CRM. Audience rulesets need acc
 
 In Audiences, create user attributes (favorite sport and game score). This gives ruleset access to CRM data.
 
+<div id="scenario-user-attributes" />
+
 #### Scenario user attributes
 
 | Name | Format | Level |
@@ -77,6 +81,8 @@ User attributes act as filters in Audiences rulesets. This example uses criteria
 [<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
 
 </Accordion>
+
+<div id="implement-user-attributes" />
 
 ## Implement user attributes
 
@@ -159,6 +165,8 @@ Manage user attributes
 
 </Accordion>
 
+<div id="import-data" />
+
 ## Import data
 
 <div id="import-field-specifications" />
@@ -191,6 +199,8 @@ User-attribute data is added or removed via a CSV file. The figure and example C
 
 * No header row
 * Contains all the columns listed in the preceding table.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -256,6 +266,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
   ]
 }
 ```
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -347,15 +359,19 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 <Accordion title="Limitations">
 
+<div id="general-limitations" />
+
 #### General limitations
 
 * Only integer (whole) numbers are supported in CSV/API import data. Float type (decimal) numbers are not supported. **Example:** A "score" attribute value can be 90, but not 90.5.
 * User-attribute data can't be printed or downloaded.
-* #### Attribute value limitations:
+* #### <span id="attribute-value-limitations"></span>Attribute value limitations:
 
   * No commas, dots, or other special characters inside attribute values.
   * There is a length limitation of 40 characters for a string attribute value.
   * Attribute values can't start with 0.
+
+<div id="api-import-limitations" />
 
 #### API import limitations
 
@@ -368,6 +384,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "device_id": "39e123.......",
 "customer_id": "",
 ```
+
+<div id="csv-import-limitations" />
 
 #### CSV import limitations
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Download lifetime value (LTV) aggregate reports filtered by attribution date and media source.
 
+<div id="aggregate-data-reports" />
+
 ## Aggregate data reports
 
 <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">User acquisition</Anchor> and <Anchor target="_blank" href="/marketers/docs/aggregated-and-analytics-reporting-overview#retargeting">retargeting</Anchor> reports have these characteristics:
@@ -38,6 +40,8 @@ x-zendesk:
 * Reports hold up to 200K rows.
 * <Anchor target="_blank" href="/marketers/docs/report-generation-quotas-rate-limitations">Rate limitations</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### Download aggregate data reports
 
 **To download a report:**
@@ -46,6 +50,8 @@ x-zendesk:
 2. [Optional] Select a media source.
 3. Select the Attribution Event date range.
 4. Select a report, click **Download.**
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

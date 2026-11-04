@@ -24,9 +24,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Engagement events</Anchor> capture user interactions—such as ad views or clicks—that occur before a conversion. They are configured only for on-site campaigns, either alone or combined with off-site campaigns. (For off-site campaigns, engagement data is provided directly by external partners such as Meta or Google. This article explains how to configure engagements by campaign type.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before the Engagements task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the engagement events are generated. For more information, see Assign configuration tasks
+
+<div id="set-up-engagements-for-on-site-or-combined-campaigns" />
 
 ## Set up engagements for on-site or combined campaigns
 
@@ -56,6 +60,8 @@ To open the **Measurement settings** page, follow these steps:
 3. At the bottom of the collaboration page, click **Set up measurement.**
    * If the link is grayed out, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
 4. On the **Measurement Setting** page, click the **Engagements** pane to open the **Engagements** dialog.
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -113,6 +119,8 @@ If a custom source is used to provide engagement events to DCP, set the details 
 <Accordion title="5. Map engagement source fields">
 
 If a custom source is used to provide engagement events to DCP, map your custom engagement source fields to their corresponding DCP fields.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >

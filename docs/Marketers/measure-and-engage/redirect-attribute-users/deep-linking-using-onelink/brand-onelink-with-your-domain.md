@@ -25,6 +25,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## Branded Domains
 
 * Branded Domains are used to brand attribution links with your brand and domain. For example, as illustrated in the preceding figure:
@@ -40,6 +42,8 @@ x-zendesk:
   * Enable emails to avoid being flagged as spam due to the link not matching the sender email.
   * Branded domains are included in paid AppsFlyer <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing">subscription plans</Anchor>.
 
+<div id="principles-of-implementation" />
+
 ### Principles of implementation
 
 Branded Domains are implemented by associating a full domain defined in your Domain Name System (DNS) with a OneLink subdomain (the AppsFlyer CNAME destination). This is done by using standard settings in your DNS and setting up a Branded Domain in AppsFlyer. In addition, you will need to make some minor changes in your app to support Branded Domains.
@@ -47,6 +51,8 @@ Branded Domains are implemented by associating a full domain defined in your Dom
 You will need the assistance of the DNS admin, usually a member of your IT team or your DNS hosting provider and the app developer.
 
 Multiple full domains can be associated with a single OneLink subdomain. This means you can have multiple brands using the same OneLink subdomain.
+
+<div id="setting-up-branded-domains" />
 
 ### Setting up Branded Domains
 
@@ -58,6 +64,8 @@ Complete the action list to set up a Branded Domain.
 | 2 | Developer | [Set up Branded Domains in the app](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Make minor changes to the app code. |
 | 3 | Marketer | [Using and testing Branded Domains](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | As needed | Marketer | [Editing and deleting Branded Domains](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### Procedures
 
@@ -94,6 +102,8 @@ Setting up a Branded Domain consists of associating a full domain set in your DN
      destination, "AppsFlyer CNAME was found" displays.
    * If a CNAME is not found, copy the AppsFlyer CNAME destination, send it to your DNS admin, and ask them to make sure your full domain is mapped to the CNAME destination. The DNS admin must map your full domain to an AppsFlyer CNAME destination. Otherwise, the branded domain is created but doesn't work.
 
+     <div id="note" />
+
      > 📘 **Note**
      >
      > The CNAME record must be mapped within a time span of 7 days, starting from the branded domain creation date and ending on the date specified in the confirmation dialog.  
@@ -102,15 +112,21 @@ Setting up a Branded Domain consists of associating a full domain set in your DN
 
 7. Click **Done**. You can now create new links based on the OneLink template with your branded domain.
 
+   <div id="note-1" />
+
    > 📘 **Note**
    >
    > * If you already created links based on your OneLink template without the branded domain, they still work.
    > * It can take up to 24 hours for a new branded domain to start working.
 
 
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
 #### Renew the 7-day period for mapping the CNAME record
 
 The new branded domain does not work if the CNAME record of your full domain isn't mapped to AppsFlyer within 7 days of your branded domain creation.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -122,9 +138,13 @@ The new branded domain does not work if the CNAME record of your full domain isn
 2. Go to the branded domain that is not yet mapped to AppsFlyer, indicated by the warning icon (![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png)).
 3. Click the refresh icon (<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />) to renew the 7-day period.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > You can delete the branded domain by clicking the Delete icon (<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) if you decide not to renew the 7-day period. Only branded domains that are not yet mapped to AppsFlyer can be deleted.
+
+<div id="custom-ssl-certificate-optional" />
 
 #### Custom SSL certificate (optional)
 
@@ -145,6 +165,8 @@ AppsFlyer-managed SSL is the default and recommended option for most customers a
 6. Once they give you your new SSL certificate, upload it back to AppsFlyer.
 
 <Image alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -296,6 +318,8 @@ Before using and testing, Branded Domains complete the steps in the [Branded Dom
 
 <Accordion title="Editing, verifying, and deleting Branded Domains">
 
+<div id="edit-a-branded-domain-mapping" />
+
 #### **Edit a branded domain mapping**
 
 You can change the mapping of an existing full domain to a different OneLink subdomain. There is no need to set a CNAME.
@@ -307,11 +331,15 @@ You can change the mapping of an existing full domain to a different OneLink sub
 5. Click **Next.** There is no need to set a CNAME.
 6. Click **Done**.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > **Warning**
 >
 > Modifying the Branded Domain of active campaigns may alter or disable link functionality.
+
+<div id="verify-a-branded-domain-mapping" />
 
 #### **Verify a branded domain mapping**
 
@@ -321,19 +349,27 @@ After changing the OneLink subdomain mapped to your branded domain verify that t
 2. Go to the branded domain you want to verify.
 3. Click the Verify icon (<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />).
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > If the verification fails because the CNAME record isn't mapped yet, you have a time span of up to 7 days to do so ending on the date specified in the verification failure dialog. If the CNAME record is not mapped by the specified date you must renew the 7-day period.
 
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
 #### **Domain CNAME record no longer pointing to AppsFlyer**
 
 Changing your CNAME record to no longer point to AppsFlyer will result in the branded domain deletion from AppsFlyer.
+
+<div id="delete-a-branded-domain-mapping" />
 
 #### **Delete a branded domain mapping**
 
 To delete a branded domain contact your AppsFlyer CSM or hello@appsflyer.com.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Troubleshooting, traits, and limitations
 

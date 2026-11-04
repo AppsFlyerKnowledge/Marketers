@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **At a glance:** Learn about re-attribution window, during which reinstalls are not attributed as new installs.
 
+<div id="re-attribution-window" />
+
 ## Re-attribution window
 
 The re-attribution window is a time window that begins the first time a user installs the app and continues for a duration set by the advertiser (default 90 days.) During the re-attribution window app reinstalls aren't recorded as new installs and don't generate a new install postback unless they originate from a **retargeting** campaign.
 
 [![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+
+<div id="setting-the-re-attribution-window" />
 
 ### Setting the re-attribution window
 
@@ -55,6 +59,8 @@ Installs are evaluated relative to the setting at the moment of install. As such
   * Re-attribution window changes on September 2.
   * A reinstall on October 15, is a reinstall because of the current 90-day window.
   * A reinstall on December 15, is a new install because more than 90 days have elapsed since the install on September 1.
+
+<div id="re-attribution-window-use-cases" />
 
 ## Re-attribution window use cases
 

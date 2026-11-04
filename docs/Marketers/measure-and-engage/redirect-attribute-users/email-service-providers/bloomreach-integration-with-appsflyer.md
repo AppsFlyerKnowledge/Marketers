@@ -24,11 +24,15 @@ x-zendesk:
 
 <Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 
+<div id="about-the-integration" />
+
 ## About the integration
 
 Bloomreach is an email marketing automation platform and email service provider (ESP) that helps brands create personalized experiences across channels.
 
 The integration between AppsFlyer and Bloomreach enables smooth deep linking from email campaigns, supports accurate traffic measurement in both Bloomreach and AppsFlyer, and helps create seamless user experiences that drive conversion.
+
+<div id="set-up-the-integration" />
 
 ## Set up the integration
 
@@ -40,6 +44,8 @@ Setting up the integration requires actions in both AppsFlyer and Bloomreach. To
 
 First, set up OneLink in AppsFlyer and confirm that the required hosting and domain settings are in place.
 
+<div id="when-your-app-is-installed" />
+
 #### When your app is installed
 
 Define the redirection behavior for users who already have your app installed.
@@ -49,12 +55,16 @@ Define the redirection behavior for users who already have your app installed.
 1. <Anchor target="_blank" href="/marketers/docs/create-a-onelink-template#create-a-onelink-template">Create a OneLink template</Anchor> and configure Universal Links/App Links. This template will be used later to create OneLink links for your email campaigns.
 2. If you already have an existing OneLink template configured that enables Universal Links/App Links, you can use it.
 
+<div id="hosting-and-ssl" />
+
 #### Hosting and SSL
 
 * OneLink links are SSL-secured and hosted by AppsFlyer.
 * The AASA file and App Link files are also hosted by AppsFlyer.
 
 See <Anchor target="_blank" href="/marketers/docs/set-up-your-esp-integration-with-appsflyer#configure-your-app-to-support-deep-linking">additional information and instructions.</Anchor>
+
+<div id="app-domain-definition" />
 
 #### App domain definition
 
@@ -82,6 +92,8 @@ See <Anchor target="_blank" href="https://documentation.bloomreach.com/engagemen
 
 <Image alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > Below is an example of an unwrapped Universal Link with Bloomreach tracking parameters appended:
@@ -98,17 +110,23 @@ See <Anchor target="_blank" href="https://documentation.bloomreach.com/engagemen
 
 Finally, implement the relevant Bloomreach SDKs to ensure click measurement works correctly across mobile apps and the web.
 
+<div id="ios" />
+
 #### iOS
 
 Implement the Bloomreach <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDK</Anchor> for iOS and ensure that Universal Link measurement is properly configured. The Bloomreach SDK supports measurement of Universal Links to capture user interactions initiated through email campaigns.
 
 See additional information and instructions about <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/ios-sdk-universal-links#track-universal-links">Universal Links</Anchor> and <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDKs.</Anchor>
 
+<div id="android" />
+
 #### Android
 
 Implement the Bloomreach <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDK</Anchor> for Android and configure App Links similarly to iOS Universal Links to ensure click attribution and measurement consistency.
 
 See additional information and instructions about <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/android-sdk-app-links#track-android-app-links">Android App Links</Anchor> and <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">mobile SDKs.</Anchor>
+
+<div id="web" />
 
 #### Web
 
@@ -139,11 +157,15 @@ After you complete the setup, send a test email to validate the integration and 
 
 Once all validations are complete, the integration setup is complete.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > If clicks do not appear in the Bloomreach platform, contact the Bloomreach Support team.
 
 </Accordion>
+
+<div id="important-notes" />
 
 > 📘 **Important notes**
 >

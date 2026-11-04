@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure the quality of your users throughout their user journey by recording these suggested in-app events for your sports betting app.
 
+<div id="-sports-betting" />
+
 ## <Image alt="soccer_ball.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Sports betting
 
 Sports betting apps allow bettors to place bets on a range of sports markets. The typical events that we suggest recording are deposits, placing bets, and withdrawals.
@@ -34,6 +36,8 @@ Recording events can help you determine:
 * Revenue that is generated through bets
 * What type of bets generate the lowest or highest revenue
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > * Make sure to read the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview#setting-up-in-app-events">instructions</Anchor> for marketers about implementing in-app events.
@@ -44,6 +48,8 @@ Recording events can help you determine:
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/docs/in-app-events-overview">In-app events guide</Anchor>.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Recommended structures for predefined events
 
@@ -86,6 +92,8 @@ When the user completes the signup process and the registration is confirmed by 
 | af\_registration\_method | Type of signup method | email, Facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Recommended structures for custom events
 

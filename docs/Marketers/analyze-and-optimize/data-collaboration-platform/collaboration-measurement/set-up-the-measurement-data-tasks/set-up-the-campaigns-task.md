@@ -24,9 +24,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping">The campaign source</Anchor> connects on-site conversion events to their respective off-site, on-site, and combined campaigns, enabling accurate attribution and performance reporting. Unlike other tasks in DCP (such as conversions or engagements), the **Campaigns task is identical for both on-site and off-site campaigns**. This means you follow the same configuration process regardless of the campaign type.
 
+<div id="prerequisites" />
+
 ## Prerequisites
 
 Before the Campaigns task can be set up, the collaboration owner needs to assign it to the collaborator who owns the platform where the conversion events are generated. For more information, see Assign configuration tasks
+
+<div id="set-up-the-campaigns-task" />
 
 ## Set up the Campaigns task
 
@@ -61,6 +65,8 @@ To open the **Measurement settings** page, follow these steps:
 3. At the bottom of the collaboration page, click **Set up measurement.**
    * If the link is disabled, set up the collaboration's <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">data sources</Anchor> and <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiences</Anchor>.
 4. On the **Measurement Setting** page, click the **Campaigns** pane to open the **Campaigns** dialog.
+
+   <div id="note" />
 
    > 📘 **Note**
    >

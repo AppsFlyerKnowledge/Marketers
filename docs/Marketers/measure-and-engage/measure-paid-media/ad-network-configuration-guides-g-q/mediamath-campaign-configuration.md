@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png)
 
+<div id="setting-up-mediamath" />
+
 ## Setting up Mediamath
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,6 +48,8 @@ MediaMath's configuration window includes 3 active tabs: Integration, Attributio
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -55,14 +59,20 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 <Accordion title="Integration tab">
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, MediaMath prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to MediaMath.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -78,12 +88,16 @@ Toggle this to ON if you want AppsFlyer to send additional information to MediaM
 
 Toggle this to ON if you want to attribute view-through installs from MediaMath. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to MediaMath following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to MediaMath.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to MediaMath.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -137,6 +151,8 @@ Ad Revenue is not supported by MediaMath.
 <Accordion title="Permissions tab">
 
 In this tab, you can select the permissions to grant MediaMath, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for MediaMath, the permissions tab is active and you can grant control to MediaMath.
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **At a glance:** Create customized subsets of your existing source data with no SQL or technical expertise needed. Data views let you modify, refine, and summarize the data, so you can share only what's relevant with collaborators.
 
+<div id="about-data-views" />
+
 ## About data views
 
 **Data views** let you create customized subsets of your existing data sources that you can share in collaborations, without changing the original dataset. They let you perform functions that modify, refine, and summarize the data so you can share only what's relevant, keeping the data you share clear and focused, and all other data private and secure. Designed for non-technical users, no SQL knowledge, data expert, or data engineer is required.
+
+<div id="data-view-functions" />
 
 ### Data view functions
 
@@ -36,9 +40,13 @@ With the data view builder, you can shape your data by applying the following ke
   * **Aggregate** records to create meaningful summaries using functions like Sum, Average, Count, Min, and Max.
 * **Select fields** to include only the columns you need in your data view, keeping your output clean and purposeful.
 
+<div id="the-data-view-builder" />
+
 ## The data view builder
 
 **<Image alt="New data view - Default.png" src="https://files.readme.io/b34b61b2fbc092884270ce0daab9a86deae6b423775bcc648ee0eba6f319e8e5-41945719130897.png" width="1598px" />**
+
+<div id="create-a-data-view" />
 
 ## Create a data view
 
@@ -62,6 +70,8 @@ An AppsFlyer <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">a
 4. Set the following fields:
    * **Data view name:** Enter a name for the data view. This can be any unique name that will help you identify it. See the [naming requirements and guidelines](#naming-requirements-and-guidelines) below.
    * **Description:** Enter a description (optional). This appears as a tooltip when hovering over the data view name under the **Sources** tab. It's recommended to highlight the primary objectives and data manipulations performed.
+
+<div id="naming-requirements-and-guidelines" />
 
 #### Naming requirements and guidelines
 
@@ -93,6 +103,8 @@ You can apply filters to narrow down the data by using selected attributes, help
 4. Enter a value.
 5. [Optional] Click **+ Condition** to add a condition to the filter.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * You can add as many conditions as needed, using the AND and OR operations.
@@ -115,6 +127,8 @@ Calculated fields enable you to use functions to add new fields, change data for
 4. For **Aggregation** fields:  The **Group by** section will automatically open and you can select the field that defines how the aggregated data will be grouped.
 5. [Optional] Click **+ New field** to add more **Transformation** or **Aggregation** fields. You can add as many as needed.
 
+<div id="group-by" />
+
 #### **Group by**
 
 Group your data into meaningful categories when applying an aggregation. When you add an aggregation function, the Group by section opens automatically and lets you select the field(s) that determines how the data is grouped. For example, you can group results by country, user ID, or product line to calculate totals or counts for each group.
@@ -133,7 +147,11 @@ Once created, the new field is:
 
 <div id="zd-list-of-functions-and-use-case-examples" />
 
+<div id="list-of-functions-and-use-case-examples" />
+
 #### List of functions and use case examples
+
+<div id="transformation-functions" />
 
 #### **Transformation functions**
 
@@ -143,9 +161,13 @@ Once created, the new field is:
 * **LEAST:** Returns the lowest of two values
 * **GREATEST:** Returns the highest of two values
 
+<div id="example-transformation" />
+
 #### **Example: Transformation**
 
 You want to indicate products purchased from the collaborator while masking purchases from other brands you're working with.
+
+<div id="aggregate-functions" />
 
 #### **Aggregate functions**
 
@@ -155,9 +177,13 @@ You want to indicate products purchased from the collaborator while masking purc
 * **MIN:** Returns the minimum values of two numbers
 * **MAX:** Returns the Maximum values of two numbers
 
+<div id="example-aggregation" />
+
 #### **Example: Aggregation**
 
 You want to count the total number of purchases per user and sum the total price they paid.
+
+<div id="example-aggregation-with-a-condition" />
 
 #### Example: Aggregation with a condition
 
@@ -170,6 +196,8 @@ You want data on the latest purchases made by users located in Germany and who p
 <Accordion title="Step 4. Select fields (optional)">
 
 The data view structure includes fields from the original data source and any custom data fields created within the data view builder. From here, you can remove fields or rearrange their order (Note that you'll need to retain at least one identifier field in the data view).
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -234,11 +262,15 @@ Click **Save** at the bottom of the page.
 You can <Anchor target="_blank" href="You%20can%20share%20(associate)%20your%20data%20view%20in%20a%20collaboration,%20enabling%20a%20brand%20collaborator%20to%20view%20and%20perform%20actions%20with%20it%20(based%20on%20the%20permissions%20you%20set).">associate your data view with a collaboration</Anchor>, enabling brand collaborators to view and perform actions with it (based on the permissions you set).  
 **Note:** To associate a data view with a collaboration, you must either be the creator of the collaboration or be invited to it.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > If you created this Data View to aggregate a transactional source for audience creation, make sure to associate it with the relevant collaboration. The aggregated Data View must be associated with the collaboration before it becomes available as a source in the Audience Builder. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-a-collaboration">Learn how to associate sources with a collaboration</Anchor>.
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## Use cases
 
@@ -271,6 +303,8 @@ Data views are useful when you need to tailor and control access to data for dif
 
 Transactional data refers to sources that contain multiple records per user (for example, purchases, orders, or events). If you're working with a transactional data source, you must aggregate it into a user-level dataset before it can be used for audience creation in the Audience Builder.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > When you open a transactional data source directly, or are redirected here from the Audience Builder, a banner is displayed confirming that aggregation is required. The aggregated Data View must also be associated with the relevant collaboration before it becomes available as a source in the Audience Builder.
@@ -290,6 +324,8 @@ Transactional datasets can contain multiple records per user. Using them directl
 <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Learn how to build audiences</Anchor>
 
 </Accordion>
+
+<div id="manage-data-views" />
 
 ## Manage data views
 
@@ -350,6 +386,8 @@ Share your data view with the collaborator and grant them the necessary permissi
 
    <Image alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
 5. Set the permissions according to your preferences (<Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">learn about permissions</Anchor>), then click **Save**.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >

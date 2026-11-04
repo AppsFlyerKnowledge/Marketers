@@ -28,9 +28,13 @@ x-zendesk:
 
 ![5754](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
 
+<div id="skan" />
+
 ## SKAN
 
 SKAdNetwork (SKAN), part of Apple iOS, lets advertisers measure campaign performance while simultaneously preserving user privacy. SKAN operates without IDFA or other advertising ID. SKAN functions without the need for ATT consent.
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -66,6 +70,8 @@ This article describes the relevant characteristics of the infrastructure and th
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## AppsFlyer SKAN solution
 
 AppsFlyer provides aggregated iOS attribution results using SKAN postbacks from iOS. These postbacks are sent by iOS to ad networks who then forward them to AppsFlyer. The postbacks contain anonymized attribution records enriched with a conversion value (CV) set by the advertiser. The CV is a measure of user quality during an initial post-install window.
@@ -79,6 +85,8 @@ The AppsFlyer SKAN solution provides advertisers with:
 <div id="principles-and-flow" />
 
 <Accordion title="Principles and flow">
+
+<div id="skan-attribution-flow" />
 
 #### **SKAN attribution flow**
 
@@ -124,6 +132,8 @@ The AppsFlyer <Anchor target="_blank" href="/marketers/docs/skan-conversion-stud
 | Flexible | <Anchor target="_blank" href="/marketers/docs/skan-cv-decode-map-your-cv-to-events">Decode</Anchor> | <ul><li>Create your own CV to event mapping and set the CV in the app yourself. Use this option if you can't integrate the AppsFlyer SDK into your app. To use Decode, go to **SKAN Conversion Studio,** click options (⋮), select **Upload custom decode mapping file**.</li></ul> | 12-1512h (63 days) |
 
 </Accordion>
+
+<div id="additional-skadnetwork-information" />
 
 ## Additional SKAdNetwork information
 
@@ -226,6 +236,8 @@ Organic metrics in the SKAdNetwork dashboard are calculated using the following 
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## SKAN integrated partners
 
 <div id="recording-ad-revenue" />
@@ -257,6 +269,8 @@ Take note of the various options and requirements in the table that follows
 | <span id="inapp-event-mapping-verification"></span>In-app event mapping verification | **<span id="1611499069.009700"></span>Action required**: You must <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#mapping-methods">map your in-app events</Anchor> to the corresponding partner event names so that the partner records postbacks correctly.<br /><br />For each of the partners running SKAdNetwork campaigns verify that the in-app event is set according to the app measurement type selected.<br /><br />**To verify and change partner in-app event mappings**:<ol><li>In AppsFlyer, Go to **Collaborate** > **Active Integrations**.</li><li>Select the partner.</li><li>Go to the **Integration** tab.</li><li>Verify and, if necessary, make settings changes as follows:<ol><li>Turn on **In-app events postback**.</li><li>Verify that the in-app events, **SDK event names** you set in SKAdNetwork measurement are mapped to **Partner event identifiers**.</li></ol></li><li>Click **Save integration**.</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

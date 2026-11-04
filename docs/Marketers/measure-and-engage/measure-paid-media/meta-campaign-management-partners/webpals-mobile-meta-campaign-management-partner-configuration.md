@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** Webpals mobile - a Meta campaign management partner (formerly known as Facebook Marketing Partners), one of AppsFlyer's integrated partners, is a leader in mobile user acquisition and revenue maximization with global coverage.
 
+<div id="setting-up-webpals-mobile" />
+
 ## Setting up Webpals mobile
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -42,6 +44,8 @@ x-zendesk:
    **Important note:** The toggle **must stay on (active) as long as you work with the partner**. <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">Learn more</Anchor>
 5. Complete the configuration using the relevant tabs, as described below.
 
+<div id="in-app-events" />
+
 ### In-app events
 
 1. To send in-app event postbacks to Webpals mobile—Meta campaign management partner, enter **Facebook pixel\_id** under ***In-App Events Settings***.
@@ -50,6 +54,8 @@ x-zendesk:
 4. Click **Save**.
 
 ![meta_campaign_management_partner_settings_2.png](https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png)
+
+<div id="configuring-on-webpals-mobile" />
 
 ## Configuring on Webpals mobile
 

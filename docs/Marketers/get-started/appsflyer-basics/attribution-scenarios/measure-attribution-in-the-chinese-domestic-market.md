@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Attribution of Android devices without GAID by using OAID or IMEI. Best practice for viewing attribution data in AppsFlyer.
 
+<div id="attribution-android-apps-in-the-chinese-domestic-market" />
+
 ## Attribution Android apps in the Chinese domestic market
 
 In China, there are several challenges that app owners face:
@@ -40,6 +42,8 @@ Using AppsFlyer, these challenges can be overcome by:
 * Using device IMEI as an alternative to GAID in devices having Android version 28 or earlier
 * Preparing APKs with unique identifiers to detect Android store hijacking
 * Configuring attribution links that are recognized within China
+
+<div id="preparing-the-app" />
 
 ## Preparing the App
 
@@ -313,6 +317,8 @@ Select how attribution data displays in AppsFlyer from:
 * **Single app consolidated with Google Play store:** The attribution of both the third-party app stores and Google Play store display as a single entity. This option requires that the package name of both the Google Play store and the third-party stores is identical. Using this option assume that the app is already defined in AppsFlyer. To use this method continue to [preparing the APK/manifest](/docs/measure-attribution-in-the-chinese-domestic-market#preparing-the-apkmanifest) in the section that follows.
 * **Multiple apps** means that the attribution data of each store is shown under a separate app. For example, each of the following is shown separately, Google Play Store, third-party store A, third-party B, and so on. To use this method, see <Anchor target="_blank" href="/marketers/docs/set-up-multi-store-android-attribution">multiple apps</Anchor>.
 
+<div id="adding-the-app-in-appsflyer" />
+
 ### Adding the app in AppsFlyer
 
 **To add the app in AppsFlyer**:
@@ -327,6 +333,8 @@ Select how attribution data displays in AppsFlyer from:
    * **App URL**
 
 **Note**: You can create the app using the **Pending approval or unpublished** option, but this is not recommended. Consult with your CSM before using this method.
+
+<div id="preparing-the-apkmanifest" />
 
 ### Preparing the APK/manifest
 
@@ -359,6 +367,8 @@ The methods described set the parameter AF\_STORE which in turn sets the install
 * <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Raw data reports</Anchor>
 
 </Accordion>
+
+<div id="additional-attribution-considerations" />
 
 ## Additional attribution considerations
 

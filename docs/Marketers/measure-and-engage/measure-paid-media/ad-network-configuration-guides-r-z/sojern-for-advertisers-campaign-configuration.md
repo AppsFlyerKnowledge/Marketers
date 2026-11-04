@@ -26,6 +26,8 @@ x-zendesk:
 
 To configure your campaigns with Sojern for Advertisers, follow the steps below.
 
+<div id="setting-up-sojern-for-advertisers" />
+
 ## Setting up Sojern for Advertisers
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -46,14 +48,20 @@ To configure your campaigns with Sojern for Advertisers, follow the steps below.
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you'll need to turn on the ***Activate Partner*** toggle to enable setup of the Integration parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, Sojern for Advertisers prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to Sojern for Advertisers.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -63,12 +71,16 @@ Sojern for Advertisers connects with AppsFlyer via a unique Partner ID. If you d
 
 ![Sojern_msc_new_2.png](https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png)
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to Sojern for Advertisers following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to Sojern for Advertisers.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to Sojern for Advertisers.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -88,6 +100,8 @@ In this section, you can map your AppsFlyer events with Sojern for Advertisers v
 | **SDK Event Name** | The name of the event, as received by AppsFlyer either from the SDK integrated in your app, or from server-to-server events.  <br />**Tip** - If you don't see the event you want in the list, make sure to activate the event on a device with a non-organic installation and recheck. |
 | **Partner Event Identifier** | The unique name or ID of each event as defined on Sojern for the Advertisers' side.  <br />Obtain the corresponding Event ID from Sojern for Advertisers and set it in the text field. |
 | **Send Revenue** | **When unchecked** - sends all the parameters of the rich in-app event to the partner, except for the revenue parameter, which is contained in the **af\_revenue** parameter.  <br />**When checked** - sends all the parameters including the revenue value (if it exists in the event). |
+
+<div id="event-types" />
 
 ### Event types
 
@@ -155,6 +169,8 @@ Sojern for Advertisers requires the implementation of the following events:
 | Search Result | VACATION\_SEARCH | af\_list\_view | Search result page showing a list of options |
 | Product | VACATION\_PRODUCT | af\_content\_view | View of a specific product/option from the search results |
 | Confirmation | VACATION\_CONFIRMATION | af\_purchase | Purchase of the item(s) |
+
+<div id="correct-configuration-of-in-app-events" />
 
 #### Correct configuration of in-app events
 
@@ -228,6 +244,8 @@ Set out below is an example of the Search and Confirmation for the hotel and fli
 |  | Purchase Price | hp | af\_revenue |
 |  | Purchase Currency | hcu | af\_currency |
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > Flight Search event values:
@@ -243,6 +261,8 @@ Set out below is an example of the Search and Confirmation for the hotel and fli
 In this tab, you can create the attribution links you want to send to Sojern for Advertisers for attributing campaigns, ad sets, or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution link parameters
 
@@ -263,6 +283,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Sojern for Advertisers.
@@ -270,6 +292,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 **Attribution link parameter:** af\_click\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Click attribution link
 

@@ -38,6 +38,8 @@ x-zendesk:
 
 [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
+<div id="what-is-attribution" />
+
 ## What is attribution?
 
 **Attribution** is the act of determining what motivated (caused) a user to install an app or to perform post-install acts like re-engagement and re-attribution. The attribution result is either:
@@ -46,6 +48,8 @@ x-zendesk:
 * **Organic**: The user did not interact with a media source. Note! For ease of understanding, we often refer to a user as being *attributed organically*. We know that this is not strictly true, as users installing organically aren't attributed at all.
 
 Attribution is essential to optimizing user acquisition, re-engagement efforts, and results.
+
+<div id="what-is-an-app-install" />
 
 ## What is an app install?
 
@@ -62,11 +66,15 @@ In AppsFlyer, an attributable event occurs when any of the following occur:
   * **Re-engagement**
   * **Re-attribution**
 
+<div id="attribution-methods" />
+
 ## Attribution methods
 
 AppsFlyer uses a number of attribution methods, listed in the table that follows:
 
 <table><tbody><tr><td>Method</td><td>Uses device ID</td><td>Technique</td><td>Attributed by</td><td>Android (Google Play and third-party stores)</td><td>iOS</td><td>Universal Windows Platform (UWP)</td><td>CTV, PC, and console platforms (3)</td></tr><tr><td><a href="#install-referrer-android-only">Referrer</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes (2)</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td><a href="#device-id-matching">Device ID matching</a> (1)</td><td>Yes</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td><a href="#probabilistic-modeling">Probabilistic modeling</a> (1)</td><td>No</td><td>Probabilistic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td><a href="#preload-campaigns">Preload</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td><a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork (SKAN)</a></td><td>No</td><td>Deterministic</td><td>Apple</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td><a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a> (1)</td><td>No</td><td>Deterministic</td><td>Apple</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td><a href="#deep-link">Deep link</a> (1)</td><td>No</td><td>Deterministic</td><td>AppsFlyer</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td colspan="8">(1) Sometimes referred to as the "Classic" attribution method in AppsFlyer dashboards and reports.<br/>(2) Supported by some third-party stores.<br/>(3) See <a href="./ctv-pc-and-console-platform-attribution-concepts#supported-platforms" target="_blank">full list of CTV, PC, and console platforms</a>.</td></tr></tbody></table>
+
+<div id="attribution-method-priorities-attribution-waterfall" />
 
 ### Attribution method priorities (Attribution waterfall)
 
@@ -155,6 +163,8 @@ A classic attribution method for re-engagements only, when users aren't redirect
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### Attribution methods per media source and AppsFlyer feature
 
 See the sections that follow for a full breakdown of which particular attribution methods are supported, depending on:
@@ -178,6 +188,8 @@ See the sections that follow for a full breakdown of which particular attributio
 <table><thead><tr><th rowspan="2">Media source</th><th colspan="3">Attribution method</th></tr><tr><th>Android</th><th>iOS</th><th><strong>CTV, PC, and console platforms</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRNs</a></td><td>Device ID matching</td><td><ul><li>Device ID matching (subject to ATT consent)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td>Device ID matching</td></tr><tr><td><ul><li>Ad networks (non-SRNs) via <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">attribution links for partners</a></li><li><span>CTV, PC, and console platforms</span></li></ul></td><td><ul><li>Install referrer</li><li>Device ID matching</li><li>Probabilistic modeling</li></ul></td><td><ul><li>Device ID matching (subject to ATT consent)</li><li>Probabilistic modeling </li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Pre-installed on device</a></td><td>Pre-installs</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## User engagement attribution types
 
@@ -270,6 +282,8 @@ Engaged views occur when users view an ad and take a qualifying action—such as
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## Advanced attribution topics
 
 <div id="in-app-events" />
@@ -310,6 +324,8 @@ A reinstall occurs when a user installs the app, uninstalls it, and then reinsta
 For device testing and multiple installs, <Anchor target="_blank" href="/marketers/docs/registering-test-devices">register</Anchor> the device in AppsFlyer. If you don't register the device only the first install is recorded.
 
 Note that AppsFlyer enables better accuracy for attributing iOS reinstalls without advertiser ID. You can enable this feature on the <Anchor target="_blank" href="/marketers/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">App Settings page</Anchor>.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### Reinstalling iOS apps that are backed up in iCloud
 

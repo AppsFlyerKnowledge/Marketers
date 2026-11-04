@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Youdao DSP is an AppsFlyer ad network integrated partner.
 
+<div id="setting-up-youdao-dsp" />
+
 ## Setting Up Youdao DSP
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -47,10 +49,14 @@ Youdao DSP's configuration window includes 3 active tabs: Integration, Attributi
 
 The integration with Youdao DSP only supports the install event in the default postback.
 
+<div id="activate-partner" />
+
 ### Activate Partner
 
 On the **first visit** here, you will need to toggle below. ON the ***Activate Partner*** button to enable setup of the integration tab's parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Default Postbacks
 
@@ -65,6 +71,8 @@ For more details about partner activation please click <Anchor target="_blank" h
 In this tab, you can create the attribution links you want to send to Youdao DSP for attributing Youdao DSP's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
 This tab is divided into different sections:
+
+<div id="attribution-link-parameters" />
 
 ### Attribution Link Parameters
 
@@ -87,6 +95,8 @@ Adding parameters to the attribution link here enables you to later perform thor
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to Youdao DSP.
@@ -96,6 +106,8 @@ This slider allows you to set the **maximum time from click to install**. Only i
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/6b45720763d086c8e2bfc18b7551eabf66b9ec06a7d93d051fa7b3bd67acad07-50900241323025.png)
+
+<div id="attribution-link" />
 
 ### Attribution Link
 
@@ -126,6 +138,8 @@ Ad Revenue is not supported in the integration with this partner.
 In this tab, you can select the permissions to grant Youdao DSP, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Youdao DSP, the permissions tab is active and you can grant control to Youdao DSP.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/0bad858445c3ecf36204fa24c35f532fb47949cda104ed4535444736962cb1ab-50900269845649.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions
 

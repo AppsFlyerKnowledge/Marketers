@@ -27,9 +27,13 @@ x-zendesk:
 
 ![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
 
+<div id="web-assisted-installs-analysis" />
+
 ## Web-Assisted Installs analysis
 
 Web-Assisted Installs measures the impact of web marketing efforts to drive users to install an app. Advertisers view web involvement in the context of the install event; they can determine the media source that drove website visitors towards app install. The best results in web-assisted installs is achieved if you set the CUID in the app and on the <Anchor target="_blank" href="/marketers/docs/onboarding-guide-to-people-based-attribution#2">website.</Anchor> 
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### Web-Assisted Installs headline metrics
 
@@ -44,6 +48,8 @@ Consider the use-case scenarios, in the table that follows, to Web-Assisted Inst
 | Total installs | All installs engaging—at some point—with a web media source. | <ul><li>What is the contribution of web marketing relative to all app installs?</li><li>How are web marketing efforts distributed between media sources and channels?</li><li>What is the contribution, if any, of Smart Banners?</li></ul> |
 | Organic installs | App installs without engaging a mobile media source. | <ul><li>What portion, if any, of organic installs are driven purely by web traffic?</li><li>Which are the dominant media channels?</li><li>What is the proportion between paid, owned, and earned media types?</li></ul> |
 | Non-organic installs | User journeys begin on the web. The app is installed later after engaging with a mobile campaign. | <ul><li>What volume of non-organic installs is influenced by the web?</li><li>What web media channels and types influence non-organic installs?</li><li>Do your paid mobile media sources overlap with web media sources?</li></ul> |
+
+<div id="web-assisted-installs-dashboard" />
 
 ## Web-Assisted Installs dashboard
 

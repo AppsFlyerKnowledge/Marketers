@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** WebEngage, an AppsFlyer integrated partner, is an Intelligent Marketing Cloud built for the mobile-first world.
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > <Anchor target="_blank" href="/marketers/docs/about-raw-data-identifier-restrictions#media-source-restrictions">Some media sources</Anchor> restrict sharing data with third parties. Therefore, postbacks for restricted events won't be sent to this partner, regardless of the configured selection for sending postbacks.
+
+<div id="setting-up-webengage" />
 
 ## Setting up WebEngage
 
@@ -51,9 +55,13 @@ Learn more about <Anchor target="_blank" href="/marketers/docs/set-up-an-integra
 
 The Integration tab is divided into different sections, as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On your first visit, turn **Activate Partner** on to set up the integration. The toggle must be on for as long as you work with the partner. Learn more about <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">partner activation</Anchor>.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -64,6 +72,8 @@ WebEngage connects with AppsFlyer via an API key and the data center region of W
 
 ![web_mo_engage_general_settings_en-us.png](https://files.readme.io/1297a02a9e280b238a222b14972dc657acffe4566dc49d607178ea43fdc01a77-8089123842705.png) 
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to WebEngage following user installs and re-engagements.
@@ -73,13 +83,19 @@ AppsFlyer can send automatic postbacks to WebEngage following user installs and 
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/0dc0c658f349712158c417f27ce816b7735b8901454293e996a4bc3ae94a32fe-8094249223953.png)
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an all-installs network, WebEngage prefers to receive postbacks for all new installs of your app from any source, including organic. WebEngage recommends selecting **All media sources, including organic**.
 
+<div id="in-app-event-settings" />
+
 ### In-app event settings
 
 Map AppsFlyer events with WebEngage via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant by target validation rules).
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### To configure in-app event postbacks
 

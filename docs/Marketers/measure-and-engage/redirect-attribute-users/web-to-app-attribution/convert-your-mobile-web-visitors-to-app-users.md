@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **At a glance:** Use your mobile website to convert mobile web visitors into new mobile app users.
 
+<div id="mobile-web-to-app-attribution-solutions" />
+
 ## Mobile web-to-app attribution solutions
 
 ![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
+
+<div id="benefits-of-web-to-app-campaigns" />
 
 ### Benefits of web-to-app campaigns
 
@@ -38,6 +42,8 @@ Using web-to-app campaigns helps you:
 * Find your best- and least- converting web/landing pages.
 * Build more specific offerings to retarget your mobile web users, who are also your app users.
 * Seamlessly deep link users from the site to a specific page in the app.
+
+<div id="attribution-solutions" />
 
 ### Attribution solutions
 
@@ -64,6 +70,8 @@ Both solutions bridge the gap between the incoming campaign URLs to your website
 
 The following table compares the two solutions so that you can choose and implement the one most suitable for your needs. **Note**: You can implement both solutions and use them in tandem.
 
+<div id="smart-banner-vs-onelink-smart-script" />
+
 #### Smart Banner vs OneLink Smart Script
 
 | Characteristic | Smart Banners | OneLink Smart Script |
@@ -78,9 +86,13 @@ The following table compares the two solutions so that you can choose and implem
 
 **Note:** Smart Banners and OneLink Smart Script are available only with eligible paid <Anchor target="_blank" href="/marketers/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plans</Anchor>. Feature access depends on your AppsFlyer plan.
 
+<div id="web-assisted-installs" />
+
 ### Web-assisted installs
 
 Web-Assisted Installs occur when users download your app, but not necessarily because of a specific campaign. Before they download your app, they visited your website for whatever reason, perhaps days or weeks earlier. Use <Anchor target="_blank" href="/marketers/docs/people-based-attribution-pba-overview">PBA</Anchor> Web-Assisted Installs to see a general breakdown of these *assist* touchpoints that eventually lead to the app install.  
+
+<div id="web-to-app-solutions-vs-web-assisted-installs" />
 
 #### Web-to-app solutions vs. Web-Assisted Installs
 

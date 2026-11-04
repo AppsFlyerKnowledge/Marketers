@@ -25,7 +25,11 @@ x-zendesk:
 
 > **At a glance:** Set up an ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
 
+<div id="" />
+
 ## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
+
+<div id="about-the-appsflyer-esp-integration" />
 
 ## About the AppsFlyer ESP integration
 
@@ -37,9 +41,13 @@ Set up an ESP integration with AppsFlyer for smooth and secure deep-linking expe
 
 The AppsFlyer ESP integration solution is a premium feature. If you’d like to learn more about it or get started, get in touch with us at [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
+<div id="set-up-the-integration" />
+
 ## Set up the integration
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>This section describes how to set up your ESP integration with AppsFlyer.
+
+<div id="prerequisites" />
 
 ### Prerequisites
 
@@ -62,6 +70,8 @@ The click-tracking domain (CTD) is the domain component of the URL that appears 
 It consists of a subdomain and your main domain, such as mail.yourbrand.com. Different ESPs may refer to this as link branding, tracker domain, click domain, link rewriting, click tracking, or white labeling.
 
 **Creating a new CTD is mandatory**, even if you are already using an existing one. This ensures that there is no impact on the traffic of current live email campaigns.
+
+<div id="notes" />
 
 > 📘 **Notes**
 >
@@ -144,6 +154,8 @@ Have your developer make the following configurations to your app:
 * [Configure your app to support deep linking](#configure-your-app-to-support-deep-linking)
 * [Configure your app to handle Weblinks and Application links](#configure-your-app-to-handle-weblinks-and-application-links)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **Configure your app to support associated domains**
 
 AppsFlyer hosts app association files for your app to enable <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#universal-links">Universal Links (iOS)</Anchor> or <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary#android-app-link">App Links (Android)</Anchor>.
@@ -162,6 +174,8 @@ Configure your app to enable Android App Linking from the email message to your 
 **Note:** The click domain should be added to the current domains already defined in the Android Manifest.
 
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **Configure your app to support deep linking**
 
 When a click on an App Link or Universal Link occurs, the app should open.
@@ -175,6 +189,8 @@ When a click on an App Link or Universal Link occurs, the app should open.
 
 2. Use the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Unified DeepLinking API</Anchor> to get the deep link parameters and handle the deep link data.
 
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **Configure your app to handle Weblinks and Application Links**
 
@@ -240,6 +256,8 @@ Well done! You're now ready to use links in your email campaigns. Afterwards, yo
 </Accordion>
 
 *ESPs supported by this integration include: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost, and more. See the full <Anchor target="_blank" href="/marketers/docs/email-service-provider-esp-integration-guide">list</Anchor>.
+
+<div id="faq" />
 
 ## FAQ
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Measure Google Ads retargeting campaigns.
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Google Ads retargeting campaigns
 
 With AppsFlyer, you can measure the results of **Google Ads App Campaigns for Engagement**.  
@@ -34,6 +36,8 @@ Retargeting campaigns target users who have installed your app in the past.
 * Retargeting engagements by users, who don't have your app installed, are called **Re-installs** or **Re-attributions**.
 
 For more information, see <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">Google Ads for engagement support documentation</Anchor>.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Setting up Google Ads app campaigns for engagement
 
@@ -71,6 +75,8 @@ This event appears in Google Ads if at least one user launches the app after you
 
 To learn how to import conversions in Google Ads, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Unlike all other events, session\_start can be claimed by Google Ads API, even if you don't import session\_start into Google Ads from AppsFlyer. However, in that case, these conversions would still be attributed in AppsFlyer. This **creates a substantial discrepancy between your data in AppsFlyer and in Google Ads**. Furthermore, this **prevents Google Ads from optimizing** your campaign user targeting.
@@ -87,6 +93,8 @@ There is no need to add any additional parameters to the deep link (is\_retarget
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## Dynamic remarketing and shopping campaigns
 
 Dynamic remarketing for apps and shopping campaigns is supported in AppsFlyer. The AppsFlyer platform treats them just like any other re-engagement campaign.
@@ -94,6 +102,8 @@ Dynamic remarketing for apps and shopping campaigns is supported in AppsFlyer. T
 * To learn about Dynamic remarketing for apps, click <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">here</Anchor>.
 * To learn about Shopping campaigns, click <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">here</Anchor>.
 * To learn more about Google Ads for Engagement click <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">here</Anchor>.
+
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
 
 ### Support for non-app campaigns (Demand Gen and SEM)
 
@@ -112,6 +122,8 @@ These campaigns work **out of the box** with AppsFlyer and do not require:
 * **Installs** from Demand Gen or SEM campaigns are not attributed on any platform.
 
 **Opt-out:** Google does not currently support opting in or out of non-app campaign measurement (unlike platforms such as TikTok or Meta).
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

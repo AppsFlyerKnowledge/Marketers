@@ -23,17 +23,23 @@ x-zendesk:
 ---
 > **At a glance:** The S2S API for Web Performance Measurement lets you send web visits and events to AppsFlyer directly from your server, bypassing browser limitations like ad blockers and cookie restrictions. Use it alongside the Web SDK or on its own to get more complete, higher-quality attribution data.
 
+<div id="about-the-s2s-api-for-web-attribution" />
+
 ## About the S2S API for web attribution
 
 AppsFlyer supports two ways to send web data for attribution: the Web SDK (client-side) and the S2S API (server-to-server, or S2S). You can use either method independently or combine them depending on your setup and needs.
 
 The Web SDK runs in the browser. The S2S API lets you send the same data from your own backend instead. Here's why that matters: privacy-focused browsers and ad blockers, including Safari ITP, Firefox ETP, and Brave, can block or limit client-side measurement. Industry estimates put browser-level blocking at 25–40% of web users. Because S2S calls originate from your server and never pass through the browser, they're not affected by these restrictions at all.
 
+<div id="how-it-works" />
+
 ### How it works
 
 1. A user visits your website or triggers an event in the browser.
 2. Your server receives the event.
 3. Your server sends the event directly to the AppsFlyer server for attribution.
+
+<div id="why-use-s2s" />
 
 ### Why use S2S
 
@@ -44,9 +50,13 @@ Here's what using the S2S API means for you, broken down by benefit:
 * **Data enrichment from the backend:** With S2S, your server can add extra data to events before sending them, including Customer User IDs, hashed email or phone numbers, CRM attributes, subscription status, or any internal identifiers. This improves identity resolution and strengthens signal quality.
 * **Security:** Dev keys, user identifiers, and any added data stay on your server and are sent over a secure connection, giving you full control over what leaves your infrastructure.
 
+<div id="api-specification" />
+
 ## API specification
 
 Base URL: `https://events.appsflyer.com`
+
+<div id="authentication" />
 
 ### Authentication
 
@@ -57,9 +67,13 @@ All requests must include a valid S2S API token and the correct content type in 
 | `Authorization` | API token | Your S2S API token is included in the Header in the following format:<br /><br />`Authorization: Bearer {s2s-token}` |
 | `Content-Type` | string | Must be `application/json`. Required on all requests. |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > To create an S2S API token, see the instructions in <Anchor target="_blank" href="/marketers/docs/managing-appsflyer-tokens#manage-your-tokens">Managing AppsFlyer tokens</Anchor>.
+
+<div id="measure-an-event" />
 
 ### Measure an event
 
@@ -118,6 +132,8 @@ Measures a web event (for example, a purchase, sign-up, or custom action) for a 
 
 </Accordion>
 
+<div id="measure-a-visit" />
+
 ### Measure a visit
 
 `POST /v2.0/s2s/visits/app/web/{appId}`
@@ -172,6 +188,8 @@ Measures a page visit for a given web app. This endpoint shares all base fields 
 
 </Accordion>
 
+<div id="set-up-a-fully-server-side-integration" />
+
 ## Set up a fully server-side integration
 
 If you're running the Web SDK alongside S2S, use [Extracting the Web SDK afUserID](#extracting-the-web-sdk-afuserid) instead. This section is only for integrations without an SDK.
@@ -212,6 +230,8 @@ Every call needs a `user_id` object with at least one of `appsflyer_id` (the coo
 Here's what to keep in mind: visits are mostly anonymous, so always send the cookie value. For on-site events, add the `customer_user_id` once the user is identified, and keep sending the cookie alongside it. For events that don't originate in the browser, the `customer_user_id` alone is enough, as long as AppsFlyer already knows that user from an earlier identified session.
 
 </Accordion>
+
+<div id="things-to-consider" />
 
 ## Things to consider
 
@@ -269,6 +289,8 @@ All personal data fields must be SHA256-hashed before sending. Normalize text (l
 
 </Accordion>
 
+<div id="send-events-via-segment-cdp" />
+
 ## Send events via Segment (CDP)
 
 **You can use Segment to route events to your S2S API.** (Segment is a Customer Data Platform, a tool used for collecting customer events and sending them to configured destinations.)
@@ -287,6 +309,8 @@ AppsFlyer - visit + event, joined
 
 The Web SDK and Segment are two parallel paths into AppsFlyer, joined by a shared identifier.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > This covers **web** events sent over S2S from a Segment custom destination. For Segment's mobile SDK wrapper, which connects app installs and in-app events to the AppsFlyer mobile SDK, see <Anchor target="_blank" href="/marketers/docs/segment-integration">Segment integration</Anchor> instead; that's a different integration for a different platform.
@@ -294,6 +318,8 @@ The Web SDK and Segment are two parallel paths into AppsFlyer, joined by a share
 <Accordion title="Set up the destination in Segment">
 
 AppsFlyer doesn't have a pre-built Segment destination for the S2S API yet, so you'll need to set this up as a custom destination in Segment that sends each event to the S2S endpoint. There are two ways to do this, depending on how much control you need over the data format.
+
+<div id="option-1-webhooks-actions-destination" />
 
 #### Option 1: Webhooks (Actions) destination
 
@@ -304,6 +330,8 @@ To set it up:
 1. In Segment, add the Webhooks destination from the destination catalog.
 2. Connect it to the source that collects the events you want to send.
 3. For each event type, create a mapping that defines the AppsFlyer URL, sets the method to POST, adds the required headers, and builds the JSON payload from the event's fields.
+
+<div id="option-2-destination-function" />
 
 #### Option 2: Destination Function
 

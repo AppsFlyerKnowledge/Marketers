@@ -26,15 +26,21 @@ x-zendesk:
 
 > **At a glance:** Leverage your first-party data by syncing your Amplitude cohorts to AppsFlyer as imported audiences.
 
+<div id="about-the-amplitude-integration" />
+
 ## About the Amplitude integration
 
 The **AppsFlyer Audiences-Amplitude integration** allows you to sync the cohorts you define in your Amplitude account directly to AppsFlyer as <Anchor target="_blank" href="/marketers/docs/audiences-import-audience-segments-from-internal-systems">imported audiences</Anchor>. AppsFlyer can then serve as your centralized location for connecting and maintaining these audience segments with partners, reviewing connected campaign metrics, and linking your first-party Amplitude and AppsFlyer data to leverage the power of both.
 
 Amplitude cohorts can be synced with AppsFlyer on a one-time basis or as a scheduled sync with daily or hourly updates.
 
+<div id="setting-up-the-integration" />
+
 ## Setting up the integration
 
 Set up the Audiences-Amplitude integration from within the Amplitude platform.
+
+<div id="define-appsflyer-data-destinations" />
 
 ### Define AppsFlyer data destinations
 
@@ -59,6 +65,8 @@ Set up the Audiences-Amplitude integration from within the Amplitude platform.
 | Identifier | Instruct AppsFlyer how to connect your Amplitude data to your AppsFlyer data by selecting an Amplitude User Property on the left and the AppsFlyer key to map it to on the right. The AppsFlyer key you select must be one of the following:<ul><li>**For iOS audiences:** iOS Advertiser ID, Amplitude User ID, or AppsFlyer Customer User ID</li><li>**For Android audiences:** Google Advertiser ID, Amplitude User ID, or AppsFlyer Customer User ID</li></ul> |
 
 4. Click **Save** to save the new AppsFlyer destination.
+
+<div id="sync-amplitude-cohorts-to-appsflyer-destinations" />
 
 ### Sync Amplitude cohorts to AppsFlyer destinations
 

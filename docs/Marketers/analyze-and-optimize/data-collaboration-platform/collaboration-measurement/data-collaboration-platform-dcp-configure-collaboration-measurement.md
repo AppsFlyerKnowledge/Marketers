@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to configure DCP to perform SKU-level attribution based on the conversion, engagement, and campaign mapping data.
 
+<div id="overview" />
+
 ## Overview
 
 After <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement">preparing the conversion, engagement, and campaign-mapping</Anchor> data, you can configure DCP to use them for measurement and attribution:
@@ -30,6 +32,8 @@ After <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-
 2. [**Assign tasks**](#assign-configuration-task) – The owner assigns each configuration task to the collaborator with access to the relevant data.
 3. [**Configure tasks**](#configure-on-site-and-off-site-campaign-measurement) – Collaborators configure conversions, engagements, and campaign mapping. This includes setting up on-site and off-site campaigns so all data is connected, mapped, and ready for attribution.
 4. <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-run-and-manage-measurement">**Run and manage measurements**</Anchor> - Run measurements live or historical, duplicate them, re-run them, or change their scope.
+
+<div id="start-the-measurement-setup" />
 
 ## Start the measurement setup
 
@@ -43,6 +47,8 @@ To start the measurement setup, follow these steps:
 
 [![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
 
+<div id="select-campaign-type-on-site-off-site-or-both" />
+
 ## Select campaign type: on-site, off-site, or both
 
 Because on-site and off-site campaign types differ by where the conversion occurs and how attribution is handled, the collaboration owner must specify the campaign type before configuring collaboration measurement. For more information, see: <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">On-site vs. Off-site campaign measurement</Anchor>.
@@ -54,6 +60,8 @@ To select the campaign type, follow these steps:
    * [Configure on-site campaign](#configure-on-site-and-off-site-campaign-measurement),
    * [Configure off-site campaign](#configure-offsite-campaign-measurement),
    * [Configure a combined on-site and off-site campaign](#configure-combined-onsite-and-offsite-campaign-measurement).
+
+<div id="assign-configuration-task" />
 
 ## Assign configuration task
 
@@ -93,6 +101,8 @@ To remove a configuration task assignment, follow the steps below:
 2. In the relevant configuration step, from the **Assignee** list, remove the assigned collaborator.
 
 </Accordion>
+
+<div id="configure-on-site-and-off-site-campaign-measurement" />
 
 ## Configure on-site and off-site campaign measurement
 

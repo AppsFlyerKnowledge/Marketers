@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Log in to AppsFlyer, add multiple accounts, and reset user passwords.
 
+<div id="log-in-instructions" />
+
 ## Log in instructions
 
 Log in instructions for first-time and existing users. This includes a new account creation, a new user invitation, or how to log in as an existing user.
@@ -75,6 +77,8 @@ If 2FA is enabled in the Security Management settings, it will be activated afte
 [To reset a user's 2FA, see here](/docs/account-login-and-password-reset#resetting-twofactor-authentication-2fa).
 
 </Accordion>
+
+<div id="password-login-or-2fa-reset" />
 
 ## Password, Login, or 2FA reset
 

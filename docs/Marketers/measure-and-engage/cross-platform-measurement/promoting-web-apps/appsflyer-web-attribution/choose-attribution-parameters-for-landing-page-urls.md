@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Use consistent, complete URL parameters in your website landing page links to get the best campaign granularity while maintaining accurate attribution in Web Performance Measurement.
 
+<div id="about-url-attribution-parameter-classes" />
+
 ## About URL attribution parameter classes
 
 AppsFlyer reads campaign parameters from your landing page URL (the link a user clicks) and uses them to attribute sessions and events to the correct **media source**, **campaign**, and (when available) deeper hierarchy such as **ad set** and **ad**.
@@ -37,6 +39,8 @@ The URL parameters can belong to one of two classes: PID and UTM.
 * The UTM class includes the standard UTM parameters.
 
 For more information about how Web Performance Measurement processes URL parameters, see <Anchor target="_blank" href="/marketers/docs/about-traffic-source-resolution">About traffic source resolution</Anchor>.
+
+<div id="supported-pid-and-utm-parameters" />
 
 ### Supported PID and UTM parameters
 
@@ -55,6 +59,8 @@ Web Performance Measurement supports the following parameters.
 | 9 | `utm_medium` | Media type | UTM | No | `media_type` |
 | 10 | `utm_campaign` | Campaign name | UTM | Yes | `campaign_name` |
 
+<div id="choose-the-right-attribution-parameters" />
+
 ## Choose the right attribution parameters
 
 AppsFlyer evaluates URL parameters independently for each reporting field (such as Media Source or Campaign) using a specific priority waterfall. This approach allows you to support AppsFlyer attribution alongside other tools, such as Google Analytics, by using both the **PID class** (AppsFlyer-native) and the **UTM class** (standard marketing) in the same URL.
@@ -66,6 +72,8 @@ Web Performance Measurement checks the priority order for each field individuall
 <Accordion title="Scenario A. URL with PID class only (AppsFlyer reporting)">
 
 Use the PID class when AppsFlyer reporting is your primary goal.
+
+<div id="example" />
 
 #### Example
 
@@ -82,6 +90,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 <Accordion title="Scenario B. URL with UTM class only (fallback)">
 
 If `pid` is missing, AppsFlyer falls back to the UTM class.
+
+<div id="example-1" />
 
 #### Example
 
@@ -101,6 +111,8 @@ AppsFlyer allows you to include parameters from different classes (e.g., PID and
 
 AppsFlyer processes attribution fields, such as Media Source and Campaign, independently. For each specific field, the system follows a priority waterfall to determine which value to record. Generally, the **PID class** takes precedence over the **UTM class** for that specific field.
 
+<div id="example-1-overlapping-parameters" />
+
 #### Example 1: Overlapping parameters
 
 ```http
@@ -110,6 +122,8 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 * **Media Source:** AppsFlyer detects both `pid` and `utm_source`. Following the priority waterfall for this field, it records `facebook_ads`.
 * **Campaign:** AppsFlyer detects both `c` and `utm_campaign`. Following the priority waterfall for this field, it records `summer_sale`.
 * **Result:** AppsFlyer uses the higher-priority PID class values, while external tools can still read the UTM values.
+
+<div id="example-2-mixed-parameter-classes" />
 
 #### Example 2: Mixed parameter classes
 
@@ -122,6 +136,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **Result:** AppsFlyer successfully attributes the event using values from both classes because each field is resolved independently.
 
 </Accordion>
+
+<div id="other-best-practices" />
 
 ## Other Best Practices
 

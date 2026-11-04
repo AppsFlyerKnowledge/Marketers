@@ -26,12 +26,16 @@ x-zendesk:
 
 By setting up an incoming connection between your Braze account and AppsFlyer Audiences, you bring your Braze message engagement event data into Audiences. You can then use this data in <Anchor target="_blank" href="/marketers/docs/audiences-guide#all-about-rulesets">rulesets</Anchor> when defining audiences.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > **Prerequisites**
 >
 > * Both the Braze and AppsFlyer SDKs must be integrated into your app.
 > * You must subscribe to the **Currents** feature in Braze.
+
+<div id="set-up-the-braze-incoming-connection" />
 
 ## Set up the Braze incoming connection
 
@@ -47,6 +51,8 @@ To create an incoming connection from Braze, the AppsFlyer SDK in your apps must
 
 * Braze External ID parameter
 * CUID field
+
+<div id="using-a-braze-external-id-parameter" />
 
 #### **Using a Braze External ID parameter**
 
@@ -75,6 +81,8 @@ partnerInfo:brazeInfo];
 
 </Tab>
 </Tabs>
+
+<div id="using-the-cuid-field" />
 
 #### **Using the CUID field**
 
@@ -128,7 +136,11 @@ In this case, you can simply select the **CUID option** as the SDK parameter whe
 9. In the Customer Behavior and User Events section, keep the **Track Customer Behavior and User Events** option turned off.
 10. Click the **Launch Current** button to save the configuration and start sending Braze message engagement events to Audiences.
 
+<div id="supported-events" />
+
 #### supported events
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -150,6 +162,8 @@ In this case, you can simply select the **CUID option** as the SDK parameter whe
 > * SMS/MMS Send
 
 </Accordion>
+
+<div id="using-braze-data-in-audiences" />
 
 ## Using Braze data in Audiences
 

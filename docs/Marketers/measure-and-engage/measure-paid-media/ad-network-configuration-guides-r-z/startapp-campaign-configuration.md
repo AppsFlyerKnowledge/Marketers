@@ -26,6 +26,8 @@ x-zendesk:
 
 To configure your campaigns with StartApp, follow the steps below.
 
+<div id="setting-up-startapp" />
+
 ## Setting up StartApp
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
@@ -44,6 +46,8 @@ StartApp's configuration window includes 4 active tabs: Integration, Attribution
 
 For a detailed description of the Partner Configuration Window Header, click <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">here</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > * The <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> step in the Integration tab is **mandatory** for all partners
@@ -55,14 +59,20 @@ For a detailed description of the Partner Configuration Window Header, click <An
 
 The Integration Tab is divided into different sections as described below.
 
+<div id="activate-partner" />
+
 ### Activate partner
 
 On the **first visit** here, you will need to turn on the **Activate Partner** toggle to enable setup of the Integration parameters. The toggle MUST be ON for as long as you work with the partner.  
 For more details about partner activation please click <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">here</Anchor>.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > As an ALL-Installs network, StartApp prefers to receive postbacks for all new installs of your app from ANY source, including organic. To do so, select **Events attributed to any partner** to send all install postbacks to StartApp.
+
+<div id="general-settings" />
 
 ### General settings
 
@@ -70,12 +80,16 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Turn this on if you want to attribute view-through installs from StartApp. The view-through lookback slider is available on the attribution link tab (described below).
 
+<div id="default-postbacks" />
+
 ### Default postbacks
 
 Send automatic postbacks to StartApp following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
 Select **Only events attributed to this partner** for events coming only from users attributed to StartApp.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to StartApp.
+
+<div id="in-app-events-settings" />
 
 ### In-app events settings
 
@@ -104,6 +118,8 @@ In this tab, you can create the attribution links you want to send to StartApp f
 
 This tab is divided into different sections:
 
+<div id="attribution-link-parameters" />
+
 ### Attribution link parameters
 
 In this section, select which parameters you want to add to the attribution link.
@@ -122,6 +138,8 @@ Adding parameters to the attribution link here enables you to later perform thor
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's attribution link structure and parameters**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Retargeting settings
 
@@ -156,6 +174,8 @@ Set the time period following the re-engagement, where the user's in-app events 
 
 **Attribution link parameter:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Click-through attribution
 
 This slider allows you to set the **maximum time from click to install**. Only installs (first launches) that take place within the lookback window may be attributed to StartApp.
@@ -164,9 +184,13 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Click attribution link
 
 This is the attribution link that contains all the setup information you have set for it. Send it to StartApp to be activated when leads click on a corresponding ad.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### View-through attribution lookback window
 
@@ -177,6 +201,8 @@ You can customize this value to 1-23 hours or 1-7 days.
 **Attribution link parameter:** af\_viewthrough\_lookback
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Impressions attribution link
 
@@ -207,6 +233,8 @@ Ad Revenue integration is not available for this partner.
 In this tab, you can select the permissions to grant StartApp, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for StartApp, the permissions tab is active and you can grant control to StartApp.
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
+
+<div id="ad-network-permissions" />
 
 ### Ad network permissions
 

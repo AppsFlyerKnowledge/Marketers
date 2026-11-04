@@ -63,6 +63,8 @@ x-zendesk:
 ---
 > **At a glance:**  Learn about the AppsFlyer attribution link structure and parameters.
 
+<div id="overview" />
+
 ## Overview
 
 Attribution links allow advertisers to collect data about user engagement with an ad. Attribution links are placed behind ads and notify AppsFlyer when users engage with an ad. The engagement can occur via a click on an ad or when a user views an ad impression. A copy of the attribution URL is sent to AppsFlyer.
@@ -79,14 +81,20 @@ Attribution links are generated using **OneLink** or a **single-platform link**.
 | URL structure | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | Example | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > AppsFlyer supports only the HTTPS protocol for incoming engagement traffic, i.e. clicks and impressions.
+
+<div id="attribution-link-parameters" />
 
 ## Attribution link parameters
 
 * The parameters listed are available for use in the attribution link.
 * The value **field type** column is the character limit of the parameter value. Find more about limitations on the length of parameter values <Anchor target="_blank" href="/marketers/docs/raw-data-field-dictionary">here.</Anchor>
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### Attribution link parameters—UA and retargeting
 
@@ -141,12 +149,16 @@ The following table can be [downloaded as a `.csv` file](https://docs.google.com
 | <span id="af_og_description"></span>af\_og\_description | N/A | When a link is posted to social media, open graph (OG) description will generate a preview of the description. | String 300 |
 | <span id="af_og_image"></span>af\_og\_image | N/A | When a link is posted to social media, open graph (OG) image will generate a preview of the image. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### Attribution link parameters—retargeting only
 
 | Parameter | Display name in raw data | Description | Field type and width |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | Is Retargeting (campaign) | The click URL of all retargeting campaigns must include `&is_retargeting=true`.  <br />If the parameter is not included or its value is "false," the campaign is considered as a regular user acquisition campaign. | Enum 5 char |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | Re-engagement window | Change the <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide#reengagement-rules-and-windows">re-engagement attribution window</Anchor> by adding this parameter to the attribution link.<br /><br />The possible window range options are:<ul><li>Days: 1-90 or Hours 1-36</li><li>Lifetime: This means the re-engagement window is unlimited. Example:`&af_reengagement_window=lifetime`</li></ul>Default value: 30 days<br /><br />Example:`&af_reengagement_window=30d` sets the re-engagement window to 30 days. | N/A |
+
+<div id="viewability-parameters" />
 
 ### Viewability parameters
 
@@ -161,6 +173,8 @@ Depending on the ad type, you can also send the relevant viewability parameter d
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | The maximum percentage of the ad unit that was visible on the device screen |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | seconds | The total possible duration of the audio |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | seconds | How much of the audio was heard |
+
+<div id="android-specific-parameters" />
 
 ### Android-specific parameters
 
@@ -183,6 +197,8 @@ Depending on the ad type, you can also send the relevant viewability parameter d
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | N/A | Amazon Fire Advertising ID |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Custom store listing in Google Console | string |
 
+<div id="ios-specific-parameters" />
+
 ### iOS-specific parameters
 
 | Parameters | Display Name | Description |
@@ -199,6 +215,8 @@ Depending on the ad type, you can also send the relevant viewability parameter d
 | <span id="md5_idfv"></span>md5\_idfv | N/A | IDFV hashed with MD5 |
 | <span id="sha1_mac"></span>sha1\_mac | N/A | Device mac address hashed with SHA1. Requires ad network support |
 
+<div id="example" />
+
 > 📄 **Example**
 >
 > ```http
@@ -207,6 +225,8 @@ Depending on the ad type, you can also send the relevant viewability parameter d
 > ```
 
 All parameters are available in the <Anchor target="_blank" href="/marketers/docs/raw-data-reporting-overview">Install report</Anchor> and the <Anchor target="_blank" href="/marketers/docs/analytics-and-aggregate-reporting-apis">Analytics, Reports, and APIs</Anchor>.
+
+<div id="custom-parameters" />
 
 ### Custom parameters
 
@@ -231,11 +251,15 @@ Among all available attribution link parameters, PID is mandatory. The PID is th
 
 Each <Anchor target="_blank" href="http://appsflyer.com/partners">integrated partner</Anchor> has a unique PID value, which ends with the *\_int* suffix. When using <Anchor target="_blank" href="/marketers/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink links,</Anchor> you can set the PID to any value you prefer, as long as it's not reserved by an integrated partner.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > AppsFlyer blocks attribution links that use reserved <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#srns-integrated-with-appsflyer">SRN</Anchor> names as PID values in custom media sources, such as email and SMS. This restriction does **not** apply to ASRNs.
 
 Examples of important integrated reserved publisher IDs: organic, googleadwords\_int (Google AdWords), facebook\_int (Meta ads), and twitter\_int (X Ads). You can use any name for non-integrated sources like email, SMS, or mail pigeons.
+
+<div id="avoid-common-pid-issues" />
 
 #### Avoid common PID issues:
 
@@ -246,6 +270,8 @@ Examples of important integrated reserved publisher IDs: organic, googleadwords\
   * The click or install appears in the dashboard under ***af\_invalid\_param***
   * Attribution links will not be attributed
   * Deep linking capabilities will not work on clicks
+
+<div id="tip" />
 
 > 👍 **Tip**
 >
@@ -270,6 +296,8 @@ The site ID parameter only includes the ID of the publisher that serves the ad.
 
 To include additional information, such as ad type, placement, or both within the app, for example, banner, interstitial, or video, use the sub-site ID parameter.
 
+<div id="example-1" />
+
 > 📄 **Example**
 >
 > The following attribution link includes:
@@ -285,6 +313,8 @@ To include additional information, such as ad type, placement, or both within th
 > * ABCD = Affiliate source (sub-publisher) that the publisher is working with
 > * 4567 = Ad type placement within the app, such as banner, interstitial, or video
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **FAQ: Why does traffic result in many blocked installs?**
 
 Blocked installs can be due to the following:
@@ -296,6 +326,8 @@ Blocked installs can be due to the following:
 To avoid blocked installs, make sure you send a single site ID parameter per publisher, as shown in the example.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## Levels of data granularity
 
@@ -314,6 +346,8 @@ The parameters are:
 * `Ad set (af_adset=)`
 * `Ad name (af_ad=)`
 
+<div id="example-2" />
+
 > 📄 **Example**
 >
 > The following attribution link uses 4 levels of granularity to record the "cashmere" ad in the "coats" ad set in the "winter" campaign running on the integrated "network" media source.
@@ -322,6 +356,8 @@ The parameters are:
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="frequently-asked-questions" />
 
 ## Frequently asked questions
 
@@ -372,6 +408,8 @@ Usually, these characters are in the link because they are macros, and are dynam
 
 The Subscriber Parameters, meaning af\_sub1, af\_sub2, ..., af\_sub\_5 can be used to record any useful KPIs. These parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.
 
+<div id="example-3" />
+
 > 📄 **Example**
 >
 > A hail ride app, Luber, has creatives with 3 color templates: blue, yellow, and red. Luber's mobile marketer, Linda, wants to test which color template brings in more installs. To do so she adds `&af_sub3=blue` in the attribution links of all the blue ads across ALL non-SRN media sources. The same is done for the yellow and red ads as well. With this information parsed and appearing in the raw data reports, Linda is able to analyze the success of the different colored ads and pick the best converting one.
@@ -386,6 +424,8 @@ The Subscriber Parameters, meaning af\_sub1, af\_sub2, ..., af\_sub\_5 can be us
 * The campaign name shouldn't start from or end with a white space, as it may cause discrepancies in dashboards and reports
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

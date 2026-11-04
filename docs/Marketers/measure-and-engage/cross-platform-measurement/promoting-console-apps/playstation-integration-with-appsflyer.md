@@ -28,6 +28,8 @@ This article covers two related but distinct integrations.
 * [Integrate your PlayStation app with AppsFlyer](#integrate-your-playstation-app-with-appsflyer): receive attribution and event data for your PlayStation app, regardless of where your users come from.
 * [Measure ads that run on PlayStation](#measure-ads-that-run-on-playstation): activate the PlayStation Ads integration to measure ads that run on PlayStation consoles and drive installs of your app.
 
+<div id="integrate-your-playstation-app-with-appsflyer" />
+
 ## Integrate your PlayStation app with AppsFlyer
 
 The PlayStation OS for console and CTV (Connected TV) apps runs across all PlayStation devices.
@@ -38,6 +40,8 @@ The PlayStation API integration supports:
 
 * PlayStations.
 * Attribution and event recording for PlayStation apps, which means attribution and recording on a user's PlayStation device.
+
+<div id="example-attribution-flow" />
 
 ### Example attribution flow
 
@@ -51,6 +55,8 @@ The following is an example flow that highlights the most important steps in a u
 3. App page: This is the URL to your PlayStation app page that hosts your app for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
 
+<div id="integration-procedures" />
+
 ### Integration procedures
 
 The following table lists the tasks required to integrate your PlayStation app with AppsFlyer.
@@ -63,6 +69,8 @@ The following table lists the tasks required to integrate your PlayStation app w
 | Link setup | If you don't use a cross-platform landing page, you can create direct attribution links to place behind ads.<br /><br /><Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-direct-attribution-links">Learn how to create direct attribution links</Anchor> | Marketer |
 | Report setup/view data | <Anchor target="_blank" href="/marketers/docs/ctv-pc-and-console-platform-attribution-concepts#data-availability">Learn about data availability in dashboards and reports</Anchor> | Marketer/Data engineer |
 
+<div id="measure-ads-that-run-on-playstation" />
+
 ## Measure ads that run on PlayStation
 
 AppsFlyer supports measurement for ads that run on PlayStation consoles and drive installs of your PlayStation app. This flow is separate from the general integration in [Integration procedures](#integration-procedures) above, it only applies if PlayStation is also one of your ad sources, and it's available to advertisers who already have an active PlayStation app set up in AppsFlyer.
@@ -74,9 +82,13 @@ To run and measure PlayStation ads:
 3. **Activate the PlayStation Ads integration in AppsFlyer.** Use partner ID `playstation_int`. For the general activation steps, see <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner">Set up an integrated partner</Anchor>.
 4. **View the results in AppsFlyer.** Performance appears in your standard AppsFlyer dashboards and reports, attributed to the PlayStation media source.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > At this stage, you can't share signals, such as conversions, events, or postbacks, back to the PlayStation ads team. Measurement data stays in AppsFlyer and isn't sent back to PlayStation for optimization.
+
+<div id="sample-attribution-links" />
 
 ### Sample attribution links
 
@@ -110,11 +122,15 @@ https://engagements.appsflyer.com/v1.0/s2s/impression/app/playstation/10000000
 | `{campaign_name}` | Query parameter | Campaign name, populated by PlayStation. |
 | `{USER_IP}` | Query parameter | End-user IP address, populated by PlayStation. |
 
+<div id="traits-and-limitations" />
+
 ## Traits and limitations
 
 | Trait | Description |
 | --- | --- |
 | Cost data | Send cost data via <Anchor target="_blank" href="/marketers/docs/import-cost-data">Ad Spend Ingestion</Anchor>, using the upload file by email method. |
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

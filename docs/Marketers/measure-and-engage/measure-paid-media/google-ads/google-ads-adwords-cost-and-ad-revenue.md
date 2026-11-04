@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Enable Google Ads cost and ad revenue data in AppsFlyer.
 
+<div id="cost-clicks-and-impressions" />
+
 ## Cost, clicks, and impressions
 
 The cost integration provides the following aggregated data:
@@ -30,6 +32,8 @@ The cost integration provides the following aggregated data:
 * Cost data for your campaigns, adsets, geos/countries, and channel levels. See the <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">ad network cost integration table</Anchor> for full details on the supported dimensions, metrics, and features.  
   **Note:** Cost data requires an <Anchor target="_blank" href="/marketers/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> subscription.
 * Data on clicks, impressions, and enriched data (keywords, campaign names, and adset).
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -47,6 +51,8 @@ Read more about <Anchor target="_blank" href="https://support.google.com/google-
 
 **After the setup, data should come through within a few hours**.
 
+<div id="tip" />
+
 > 👍 **Tip**
 >
 > Users can confirm they are logged in with the correct Google Ads account by checking the email address, which appears on the top right corner of the Google Ads dashboard.
@@ -55,17 +61,23 @@ Read more about <Anchor target="_blank" href="https://support.google.com/google-
 >
 > If it is not the correct account, sign out of the account and sign in again using the email address for a different Google account.
 
+<div id="cost-data-sync-status" />
+
 ### Cost data sync status
 
 <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">View your cost API status</Anchor> and the last time AppsFlyer managed to pull matching cost data in either the cost (and ad revenue) integration status dashboard, or in the individual ad network dashboard. 
 
 Google Ads allows you to sync several accounts for pulling cost data. For each synced account, AppsFlyer shows the status of cost integration and the last time AppsFlyer managed to pull matching cost data.
 
+<div id="stopping-google-cost-sync" />
+
 ### Stopping Google cost sync
 
 **To stop syncing Google cost, delete the Google account connection:**
 
 * <Anchor target="_blank" href="/marketers/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">Go to the cost tab, in the actions column, hover over an account, click Delete connection.</Anchor> Once deleted, AppsFlyer stops getting the cost. Deleting the connection does not impact historical data.
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## Recording ad revenue with Google Ads
 

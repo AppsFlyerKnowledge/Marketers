@@ -22,14 +22,20 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer integration with Google Analytics (GA4) enables advertisers to send attribution data and selected in-app events from AppsFlyer to GA4. This integration works with iOS and Android apps that already have the [Google Analytics for Firebase SDK](https://firebase.google.com/docs/analytics) implemented.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > This integration works with iOS and Android apps that already have the [Google Analytics for Firebase SDK implemented](https://firebase.google.com/docs/analytics). For the integration to succeed, the AppsFlyer SDK has to collect the `app_instance_id` value from the Firebase SDK. See instructions on [how to retrieve the app instance ID from the Firebase SDK](#5-retrieve-app-instance-id-in-appsflyer-sdk).
+
+<div id="how-does-it-work" />
 
 ## How does it work?
 
 * When a new install occurs, AppsFlyer sends the touchpoint details— media source, campaign name, and campaign ID—to GA4. It also sends the Firebase SDK's `app_instance_id` to ensure the touchpoint is recorded in GA4 for that user.
 * When an in-app event occurs, GA4 will attribute the event to the last touchpoint.
+
+<div id="set-up-google-analytics-ga4-integration" />
 
 ## Set up Google Analytics (GA4) integration
 
@@ -69,6 +75,8 @@ Configure the following settings:
 4. Turn on **Customer User ID** to send the customer user ID (CUID) instead of the advertising ID (IDFA).
 5. Under the **Default postbacks** section, **for users from**, select **All media sources including organic**.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The install postback includes only the touchpoint details (media source, campaign name, and campaign ID).
@@ -84,6 +92,8 @@ AppsFlyer can send automatic postbacks to GA4 following user installs, including
 <Accordion title="4. Set in-app event postbacks">
 
 In the **Integration** tab, map AppsFlyer in-app events to Google Analytics (GA4) events, sent via postbacks.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -113,15 +123,21 @@ After you have set up the in-app event mapping, send your developer a table wher
 * **AF event:** Name of the AppsFlyer event.
 * **Mapped to Google event:** Name of the event in Google Analytics.
 
+<div id="important-1" />
+
 > 🚧 **Important**
 >
 > Don’t use any of the [Google reserved events](#reserved-google-event-names) as names for custom Google Analytics events.
 
 * **AF event parameters (MANDATORY):** Predefined AppsFlyer event parameters that must be included in the event postback sent to Google Analytics.
 
+<div id="important-2" />
+
 > 🚧 **Important**
 >
 > It is mandatory to include all predefined AF event parameters within the event definition exactly as they are listed in the table; failure to do so will result in Google Analytics rejecting the postback.
+
+<div id="the-event-mapping-table" />
 
 #### The event mapping table
 
@@ -161,6 +177,8 @@ The following table includes all the Google Analytics events and their predefine
 |  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [view\_search\_results](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_search_results) |  |
 | af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+
+<div id="reserved-google-event-names" />
 
 #### Reserved Google event names
 
@@ -209,6 +227,8 @@ Let your developer implement the code to:
 
 1. Collect the `app_instance_id` and the `ga_session_id` fields from Firebase.
 2. Call `setAdditionalData`, before the first launch, to include the app instance ID and `ga_session_id`, in installs, sessions, and in-app events.
+
+<div id="important-3" />
 
 > 🚧 **Important**
 >
@@ -303,6 +323,8 @@ Let your developer implement the code to:
 1. Collect the `ga_session_id` field from Firebase.
 2. Call `setAdditionalData` before the first launch to include the session ID (and `app_instance_id`, if used).
 3. Use the key `ga_session_id` when calling the API.
+
+<div id="important-4" />
 
 > 🚧 **Important**
 >

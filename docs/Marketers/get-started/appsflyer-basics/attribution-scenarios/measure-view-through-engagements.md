@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > **At a glance:** A user who views an ad (impression) and subsequently installs the app, is attributed by view-through attribution.
 
+<div id="overview" />
+
 ## Overview
 
 View-through attribution measures installs, re-attributions, and re-engagements of users who viewed an ad but didn't click on it.
 
+<div id="view-through-attribution-flow" />
+
 ### View-through attribution flow
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### Terminology
 
 * **Impression:** The display of an ad to a user regardless of any click or other user engagement.
 * **Install**: In this article, means installs, re-attributions, and re-engagements.
 * **View-through attribution:** Attributing installs to a media source after the user sees an impression.
+
+<div id="view-through-attribution-principles" />
 
 ### View-through attribution principles
 
@@ -48,12 +56,16 @@ Impressions are candidates for view-through attribution using the following prin
 * If multiple impressions are found, the most recent impression is considered.
 * Clicks have priority over impressions. This means that if there are clicks in the click-through lookback window, the most recent click wins. The most recent impression is attributed as a contributor (assist).
 
+<div id="view-through-lookback-window" />
+
 ### View-through lookback window
 
 * For non-SRNs, the view-through attribution lookback window duration is 1-24 hours. For SRNs, the lookback window can be longer.
 * To set the window:
   * **Non-SRNs:** Set the duration using impression attribution links by setting the  `af_viewthrough_lookback` parameter. If the parameter isn't set, a default 24 hours window is used.
   * **SRNs**: The window is determined by the SRN. We recommend setting the same value as the SRN's in AppsFlyer.
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### View-through attribution reporting and metrics
 
@@ -64,6 +76,8 @@ Impressions are candidates for view-through attribution using the following prin
   * User-level data (raw data) of users attributed via view-through attribution is available and similar to that of users attributed by click. However, some partners restrict the availability of this data.
   * Impression data (similar to click data) is available.
   * The attributed\_touch\_type field contains the value *impression.*
+
+<div id="view-through-operations" />
 
 ## View-through operations
 

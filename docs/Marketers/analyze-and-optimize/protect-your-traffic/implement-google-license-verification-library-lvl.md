@@ -26,6 +26,8 @@ x-zendesk:
 
 > **At a glance:** Protect your apps against unauthorized use by adding the Google License Verification Library (LVL) to handle all license-related communication with Google Play.
 
+<div id="overview" />
+
 ## Overview
 
 The License Verification Library (LVL) is a library you can add to your apps (downloadable from the Android SDK) that handles all of the licensing-related communication with the Google Play licensing service.
@@ -38,6 +40,8 @@ LVL  adds another layer of protection on top of Protect360 algorithms by verify
 The Google Play Licensing service determines whether the user is licensed to use an app or not. Google Play considers users to be licensed if they are recorded purchasers of the app. The license is unique per app and can be used for enhanced protection. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">Learn more</Anchor>
 
 The AppsFlyer SDK collects the data from the customer side, and Protect360 performs the server-side license verification, blocking fraudulent installs that fail verification for both organic and non-organic installs. The “Block reason” you will see in the Protect360 dashboard and reports will be “Bots”.
+
+<div id="set-up-lvl" />
 
 ## Set up LVL
 
@@ -71,6 +75,8 @@ Currently, this is a manual process where you'll need to pass the below informat
        implementation("com.appsflyer:lvl:$appsflyerSdkVersion")
    }
    ```
+
+   <div id="note" />
 
    > 📘 **Note**
    >
@@ -126,6 +132,8 @@ When debugging the app, you should be able to see LVL information on the payload
 Work with your support/SDK team in case there is no LVL information on the install message.
 
 </Accordion>
+
+<div id="faq" />
 
 ## FAQ
 

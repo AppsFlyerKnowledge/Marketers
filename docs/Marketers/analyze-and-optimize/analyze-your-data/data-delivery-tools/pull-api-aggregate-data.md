@@ -35,9 +35,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **Looking for Pull API raw data?**
 >
 > Learn all about it <Anchor target="_blank" href="/marketers/docs/pull-api-raw-data">here</Anchor>.
+
+<div id="pull-api-aggregate-data" />
 
 ## Pull API aggregate data
 
@@ -47,6 +51,8 @@ x-zendesk:
 * Additional capabilities in Pull API are:
   * Add attribution touch type
   * Select timezone
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### Aggregate performance reports available via Pull API
 
@@ -104,6 +110,8 @@ x-zendesk:
 | Campaign name changes | Pull API reports don't support campaign name changes |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

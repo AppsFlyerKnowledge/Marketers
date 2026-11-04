@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Configure your web attribution settings to control how AppsFlyer attributes website visits, conversions, and user activity to marketing campaigns. Settings include attribution windows, user acquisition events, re-engagement rules, and domain exclusions.
 
+<div id="overview" />
+
 ## Overview
 
 Web attribution settings define how AppsFlyer measures and attributes user activity on your website. These settings determine:
@@ -32,9 +34,13 @@ Web attribution settings define how AppsFlyer measures and attributes user activ
 * When to consider users as returning (re-engagement) or reacquired.
 * Which domains to exclude from attribution.
 
+<div id="who-should-configure-these-settings" />
+
 ### Who should configure these settings
 
 Marketing teams and growth managers typically configure these settings based on business objectives. Technical teams may be involved for SDK integration and domain configuration.
+
+<div id="accessing-web-attribution-settings" />
 
 ### Accessing web attribution settings
 
@@ -43,6 +49,8 @@ To access your web app's attribution settings:
 1. In AppsFlyer, go to **My Apps**
 2. Select your web app from the list
 3. Navigate to **App Settings** > **Attribution**
+
+<div id="quick-reference" />
 
 ## Quick reference
 
@@ -65,6 +73,8 @@ To access your web app's attribution settings:
 **Constraint:**  
 The re-engagement inactivity window must be **shorter than or equal to** the re-acquisition inactivity window. Otherwise, users could be reacquired before qualifying for retargeting.
 
+<div id="basic-settings" />
+
 ## **Basic settings**
 
 The basic settings for the web app are:
@@ -77,6 +87,8 @@ The basic settings for the web app are:
 
 For more information see <Anchor target="_blank" href="/marketers/docs/adding-an-app-to-appsflyer#web">Adding an app to AppsFlyer</Anchor>.
 
+<div id="user-acquisition-settings" />
+
 ## User acquisition settings
 
 User acquisition (UA) settings determine how AppsFlyer identifies when a user is first acquired and how to attribute that acquisition to marketing sources.
@@ -87,11 +99,15 @@ User acquisition (UA) settings determine how AppsFlyer identifies when a user is
 
 The event that triggers user acquisition. This is an important business action that defines when you consider a user truly "acquired."
 
+<div id="why-customize" />
+
 #### Why customize
 
 The default **first visit** often represents a weak signal of user value. A user might click an ad accidentally or bounce immediately. By customizing this setting, you ensure that long-term value (LTV) is attributed to the marketing source that drove a meaningful action, not just a curiosity click.
 
 **Default:** first visit (user is acquired on their first website visit)
+
+<div id="common-alternatives-by-industry" />
 
 #### Common alternatives by industry
 
@@ -102,6 +118,8 @@ The default **first visit** often represents a weak signal of user value. A user
 | Food Delivery | first\_order |
 | SaaS/Subscription | subscription\_start |
 | Gaming | sign\_up ortutorial\_complete or first\_purchase |
+
+<div id="how-it-works" />
 
 #### How it works
 
@@ -115,6 +133,8 @@ If set to **a custom event** (e.g., sign\_up):
 * Users enter a **"pre-acquisition period"** from first visit until they perform the event.
 * During pre-acquisition, events are attributed to the last non-organic touchpoint within the lookback window (last-touch attribution).
 * Once the custom UA event occurs, a **User Acquisition conversion** is created and long-term attribution begins.
+
+<div id="example-scenario-ua-event--sign_up" />
 
 #### Example scenario (UA event = sign\_up):
 
@@ -138,15 +158,21 @@ This window controls how long AppsFlyer "remembers" a marketing touchpoint. If a
 
 **Range:** 1 hour to 90 days
 
+<div id="how-it-works-1" />
+
 #### How it works
 
 When a user performs the UA event (e.g., sign\_up), AppsFlyer looks back within this window to find the most recent non-organic touchpoint and attributes the acquisition to that marketing source.
+
+<div id="example-1-30-day-lookback" />
 
 #### Example 1 (30-day lookback):
 
 * **Day 0:** User clicks Facebook ad and visits website
 * **Day 25:** User returns directly and completes sign\_up event
 * **Result:** User acquisition attributed to Facebook (within 30-day lookback window)
+
+<div id="example-2-window-expired" />
 
 #### Example 2 (window expired):
 
@@ -156,6 +182,8 @@ When a user performs the UA event (e.g., sign\_up), AppsFlyer looks back within 
 **Result:** User acquisition marked as organic (outside 30-day lookback window)
 
 </Accordion>
+
+<div id="re-engagement-settings" />
 
 ## Re-engagement settings
 
@@ -173,6 +201,8 @@ This setting determines how long retargeting campaigns get credit for user activ
 
 **Range:** 1 hour to 90 days
 
+<div id="how-it-works-2" />
+
 #### How it works
 
 When an acquired user returns via a non-organic source (e.g., retargeting ad) and meets re-engagement criteria, a **retargeting conversion** is created. Events within this window receive **dual attribution**:
@@ -181,6 +211,8 @@ When an acquired user returns via a non-organic source (e.g., retargeting ad) an
    * Purpose: Credit the retargeting campaign
 2. **Secondary attribution** → Original UA source
    * Purpose: Support UA view that measures full user lifetime value (LTV) back to original acquisition
+
+<div id="example-within-window" />
 
 #### Example (within window):
 
@@ -209,6 +241,8 @@ Prevent crediting retargeting campaigns when users are already actively engaged 
 
 **Range:** 0 (disabled) to 30 days
 
+<div id="how-it-works-3" />
+
 #### How it works
 
 **When disabled:**
@@ -224,6 +258,8 @@ Prevent crediting retargeting campaigns when users are already actively engaged 
 
 * Cannot exceed Inactivity Window (Re-acquisition)
 
+<div id="example-7-day-inactivity-window" />
+
 #### Example (7-day inactivity window):
 
 * **Day 0:** User acquired via Facebook ad
@@ -232,6 +268,8 @@ Prevent crediting retargeting campaigns when users are already actively engaged 
 * **Day 15:** User clicks retargeting ad → **Retargeting conversion created** (12 days inactive)
 
 </Accordion>
+
+<div id="re-acquisition-settings" />
 
 ## Re-acquisition settings
 
@@ -249,6 +287,8 @@ This setting defines your business's churn threshold. It determines when a user 
 
 **Range:** 1 to 180 days
 
+<div id="how-it-works-4" />
+
 #### How it works
 
 **When user is marked as churned:**
@@ -262,6 +302,8 @@ This setting defines your business's churn threshold. It determines when a user 
 * If user performs the re-acquisition event → New UA conversion created
 * Win-back campaign gets credit as the new acquisition source
 * User is treated as a completely new acquisition from a reporting perspective
+
+<div id="example-90-day-window" />
 
 #### Example (90-day window):
 
@@ -286,6 +328,8 @@ Many user acquisition events are one-time actions (e.g., sign\_up, first\_purcha
 
 **Common alternatives:** sign\_in or purchase
 
+<div id="how-it-works-5" />
+
 #### How it works
 
 **If set to a custom event (e.g.,** **sign\_in**):
@@ -294,6 +338,8 @@ Many user acquisition events are one-time actions (e.g., sign\_up, first\_purcha
 * User can visit multiple times before reacquisition occurs
 * More stringent definition of "true" reacquisition.
 
+<div id="example-re-acquisition-event--sign_in" />
+
 #### Example (re-acquisition event = sign\_in):
 
 * User churned after 90 days inactivity
@@ -301,6 +347,8 @@ Many user acquisition events are one-time actions (e.g., sign\_up, first\_purcha
 * A day later, the user signs in → Reacquisition conversion created, attributed to email campaign
 
 </Accordion>
+
+<div id="attribution-window" />
 
 ## Attribution window
 
@@ -316,6 +364,8 @@ The maximum time period after the user acquisition during which AppsFlyer attrib
 
 </Accordion>
 
+<div id="excluded-domains" />
+
 ## Excluded domains
 
 Domains to exclude from attribution. This prevents AppsFlyer from attributing visits or events when users navigate between specified domains and your website.
@@ -329,6 +379,8 @@ Domains to exclude from attribution. This prevents AppsFlyer from attributing vi
 
 <Accordion title="Domain types">
 
+<div id="primary-required-automatic" />
+
 #### PRIMARY (required, automatic)
 
 * Your main website domain (set during app creation)
@@ -338,6 +390,8 @@ Domains to exclude from attribution. This prevents AppsFlyer from attributing vi
   * Example: example.com automatically excludes shop.example.com, blog.example.com, etc.
 * **Impact of exclusion:** No self-attribution
 
+<div id="internal-optional" />
+
 #### INTERNAL (optional)
 
 * Your brand's other domains not covered by primary domain
@@ -345,9 +399,13 @@ Domains to exclude from attribution. This prevents AppsFlyer from attributing vi
 * Example: Different top-level domains like example.co.uk, example.in
 * **Impact of exclusion:** No self-attribution
 
+<div id="external-optional" />
+
 #### EXTERNAL (optional)
 
 There are two types of external domain exclusions:
+
+<div id="external-listed-by-you" />
 
 #### External (listed by you)
 
@@ -356,6 +414,8 @@ There are two types of external domain exclusions:
 * Add up to 99 additional domains
 * Examples: auth0.com, okta.com, facebook.com, google.com
 * **Impact of exclusion:** Visits are disregarded
+
+<div id="external-listed-by-appsflyer" />
 
 #### External (listed by AppsFlyer)
 
@@ -423,11 +483,15 @@ There are two types of external domain exclusions:
 
 <Accordion title="Requirements and validation">
 
+<div id="domain-format" />
+
 #### Domain format:
 
 * Domain name only (no protocols, paths, or ports)
 * Maximum 500 characters per domain
 * Protocols (https://) automatically stripped, converted to lowercase
+
+<div id="examples" />
 
 #### Examples:
 
@@ -437,11 +501,15 @@ There are two types of external domain exclusions:
 * example.com/path ❌ (paths not allowed)
 * example.com:8080 ❌ (ports not allowed)
 
+<div id="limits" />
+
 #### Limits:
 
 * Maximum 100 domains total (including 1 PRIMARY)
 
 </Accordion>
+
+<div id="migrating-from-people-based-attribution-pba" />
 
 ## Migrating from People-Based Attribution (PBA)
 

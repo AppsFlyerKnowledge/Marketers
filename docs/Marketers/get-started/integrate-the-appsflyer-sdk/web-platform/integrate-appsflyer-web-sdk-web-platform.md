@@ -16,9 +16,13 @@ x-zendesk:
 ---
 > **At a glance:** Install the AppsFlyer Web SDK (also known as the pixel) on your website to report user visits and events to AppsFlyer, and set a persistent customer user ID (CUID) to unify journeys across platforms.
 
+<div id="overview" />
+
 ## Overview
 
 The Web SDK lets you record how visitors interact with your website and sends this information to AppsFlyer. It is a 40–60 KB plug-in module that reports user visits and actions on your website to the AppsFlyer platform.
+
+<div id="integrate-the-sdk-manually" />
 
 ### Integrate the SDK manually
 
@@ -33,6 +37,8 @@ The Web SDK lets you record how visitors interact with your website and sends th
 7. [Manage privacy.](#7-manage-privacy) Control measurement opt-in or opt-out, and configure security and data filtering (Content Security Policy and query-parameter discarding).
 8. [Web SDK cookies reference.](#web-sdk-cookies-reference) Review the cookies the Web SDK sets or uses, including purpose, lifespan, and scope.
 
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
+
 #### Integrate the SDK with an AI coding agent
 
 Instead of manually integrating the Web SDK (see steps below), use an AI coding tool (Cursor, Claude Code, Codex, Copilot) to implement the entire integration for you. Copy the prompt, replace the two placeholders, and paste it into your AI coding tool.
@@ -43,6 +49,8 @@ Before copying the prompt, replace:
 
 * `<WEB_SDK_ID>`: In AppsFlyer, go to **App Settings**, select your web app (your website domain with the "website-" prefix), and copy the **Web SDK ID** from **SDK authentication**.
 * `<PRODUCTION_URL>`: Your live site URL, used for post-deploy verification.
+
+<div id="note" />
 
 > 📘 **Note**
 >
@@ -315,6 +323,8 @@ Do not implement anything beyond the AppsFlyer Web SDK integration described her
 
 </Accordion>
 
+<div id="1-obtain-your-keys" />
+
 ## 1. Obtain your keys
 
 **Obtain the Web SDK ID (also known as Web Dev Key):**
@@ -328,6 +338,8 @@ Do not implement anything beyond the AppsFlyer Web SDK integration described her
 1. In AppsFlyer, from the side menu, open **Engage** > **Web to App** > **Smart Banners**.
 2. Copy the required Smart Banner Key.
 
+<div id="2-select-a-code-snippet" />
+
 ## 2. Select a code snippet
 
 Choose the snippet that matches your integration type and security requirements. Two options are available:
@@ -335,9 +347,13 @@ Choose the snippet that matches your integration type and security requirements.
 * [Standard Web SDK](#standard-web-sdk): The standard integration.
 * [Advanced SDK Verification](#advanced-sdk-verification): An enhanced integration that adds supply-chain protection for the Web SDK. Use this to add an extra layer of security against CDN compromise, DNS hijacking, and man-in-the-middle attacks.
 
+<div id="warning" />
+
 > ❗️ **Warning**
 >
 > If you are transitioning from the Standard Web SDK to Advanced SDK Verification, replace your existing snippet with the new one. Do not add the new snippet on top of the existing one.
+
+<div id="standard-web-sdk" />
 
 ### Standard Web SDK
 
@@ -393,6 +409,8 @@ Use this snippet to deploy the standard Web SDK integration. Paste it near the t
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### Advanced SDK Verification
 
@@ -469,6 +487,8 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 
 </Accordion>
 
+<div id="3-deploy-the-snippet" />
+
 ## 3. Deploy the snippet
 
 Deploy the snippet you selected in Step 2 using one of the following methods. Make sure the SDK loads once per page load.
@@ -513,6 +533,8 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
         4. Select the page view trigger you created earlier.
         5. Click **Save**.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > GTM Custom Templates are not supported for Advanced SDK Verification, because their sandboxed environment does not allow setting the integrity attribute required for verification. Use the **Custom HTML** tag type instead.
@@ -520,6 +542,8 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
 </Accordion>
 
 <Accordion title="Option C: Deploy via Adobe Launch Tag Manager">
+
+<div id="create-a-property-in-adobe-experience-cloud" />
 
 #### Create a property in Adobe Experience Cloud
 
@@ -530,6 +554,8 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
 5. Under **Platform**, select **Web**.
 6. Enter your website domain.
 7. Click **Save**.
+
+<div id="add-the-snippet-to-the-adobe-launch-property" />
 
 #### Add the snippet to the Adobe Launch property
 
@@ -544,6 +570,8 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
    * Click **Keep Changes** to close the code editor.
 5. Click **Save**.
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 #### Add the Adobe Launch tag to the website
 
 1. On the **My web property** page, select the **Environments** tab.
@@ -551,6 +579,8 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
 3. Under the **Install** column, click the box icon on the relevant row.
 4. In the **Web Install Instructions** dialog, copy the script code snippet and close the dialog.
 5. Paste the code snippet into the website head section.
+
+<div id="publish-the-adobe-launch-environment" />
 
 #### Publish the Adobe Launch environment
 
@@ -570,6 +600,8 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
    * Click the action menu > select **Build & Publish to Production**.
 
 </Accordion>
+
+<div id="4-make-sure-the-sdk-is-working" />
 
 ## 4. Make sure the SDK is working
 
@@ -594,9 +626,13 @@ After installation, verify that the SDK sends requests by checking network reque
 8. Verify `site_id` matches the `WEB_DEV_KEY` in AppsFlyer > top menu > **My Apps**.
 9. Verify that the SDK loads only once. Multiple SDK loading can cause the SDK to stop functioning.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > For a real-time, visual way to confirm your Web SDK installation and validate that your events fire correctly, use the Web SDK Test page.
+
+<div id="5-set-and-record-events" />
 
 ## 5. Set and record events
 
@@ -634,6 +670,8 @@ This is the standard approach for conversions that end with a redirect, like a *
 
 You can implement this trigger either by adding a window loading method to your **native JavaScript** or by configuring a page view trigger within **Google Tag Manager**.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > The following code examples are for illustrative purposes. **Do not use this code as-is**; adapt it to your site's specific structure.
@@ -668,6 +706,8 @@ window.onload = function(){
 
 This approach is used to record successful conversions, such as a newsletter subscription, by firing a tag when a "Thank You" page loads.
 
+<div id="1-set-up-a-thank-you-page" />
+
 #### 1. Set up a Thank You page
 
 The following HTML structure loads GTM, which in turn loads the Web SDK. It also demonstrates how data can be made available to GTM via functions or `localStorage`.
@@ -696,6 +736,8 @@ The following HTML structure loads GTM, which in turn loads the Web SDK. It also
 </html>
 ```
 
+<div id="2-configure-the-gtm-tag" />
+
 #### 2. Configure the GTM tag
 
 1. Create a new tag in GTM and select the **Custom HTML** tag type.
@@ -717,6 +759,8 @@ The following HTML structure loads GTM, which in turn loads the Web SDK. It also
 Use this to measure actions without a page reload (button clicks, downloads, add-to-cart).
 
 These interactions are typically handled by binding a click listener to a **native HTML element** or by using **Google Tag Manager** variables to identify and measure specific element IDs or CSS selectors.
+
+<div id="important-1" />
 
 > 🚧 **Important**
 >
@@ -765,6 +809,8 @@ Use this method to measure specific actions users take on a page, such as clicki
 
 This method captures specific actions, such as clicking a **Checkout** button, using GTM's built-in variables and triggers.
 
+<div id="1-set-up-a-checkout-page" />
+
 #### 1. Set up a checkout page
 
 ```html
@@ -785,6 +831,8 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 </html>
 ```
 
+<div id="2-configure-gtm-variables-and-triggers" />
+
 #### 2. Configure GTM variables and triggers
 
 1. In GTM, click **Variables** > **Configure** and enable **Click Element** in the Built-In Variables list.
@@ -793,6 +841,8 @@ This method captures specific actions, such as clicking a **Checkout** button, u
    * Trigger Type: **Click - All Elements**.
    * This trigger fires on: **Some Clicks**.
    * Condition: **Click Element** matches CSS Selector `#checkout`.
+
+<div id="3-create-the-interaction-tag" />
 
 #### 3. Create the interaction tag
 
@@ -823,6 +873,8 @@ To make sure data accuracy and successful transmission, keep the following techn
 
 </Accordion>
 
+<div id="6-set-customer-user-id" />
+
 ## 6. Set customer user ID
 
 After the implementation of event measurement, set a persistent identity to link web activity with other platforms (mobile, PC, CTV) using `setCustomerUserId` to get a unified view of the user journey across platforms.
@@ -847,6 +899,8 @@ User scenario:
 * The server generates a unique CUID for the user.
 * On the thank-you page after signup, you query the server for the new CUID.
 * Using the server response, you set the AppsFlyer CUID using the Web SDK `setCustomerUserId()` method.
+
+<div id="a-sign-up-form-example" />
 
 #### A sign-up form example
 
@@ -881,6 +935,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </body>
 </html>
 ```
+
+<div id="a-thank-you-page-example" />
 
 #### A thank-you page example
 
@@ -993,6 +1049,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="7-manage-privacy" />
+
 ## 7. Manage privacy
 
 Following the implementation of event measurement, you may need to apply specific security and privacy constraints to comply with organizational or regional standards.
@@ -1001,6 +1059,8 @@ Following the implementation of event measurement, you may need to apply specifi
 
 You can control measurement in two ways:
 
+<div id="sdk-initial-state-setting-in-the-snippet" />
+
 #### SDK initial state setting (in the snippet)
 
 Determines whether the SDK sends events when the web page first loads or waits until you explicitly tell it to start sending events. This setting is defined in the web snippet.
@@ -1008,9 +1068,13 @@ Determines whether the SDK sends events when the web page first loads or waits u
 * Send events: `{pba: {webAppId: "...", measurementStatus:true}}`
 * Do not send events: `{pba: {webAppId: "...", measurementStatus:false}}`
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > If measurementStatus is empty or NULL, AppsFlyer regards it as if measurementStatus:true.
+
+<div id="explicit-control" />
 
 #### Explicit control
 
@@ -1031,6 +1095,8 @@ Explicit control takes priority over the initial state setting and uses persiste
 
 If your website requires strict security or data privacy protocols, use the following mechanisms to configure how the Web SDK interacts with your environment and your data.
 
+<div id="content-security-policy-csp" />
+
 #### Content Security Policy (CSP)
 
 If your website requires JavaScript to be secured by a CSP, the Web SDK supports two approaches depending on your CSP configuration and the snippet you selected in Step 2.
@@ -1048,6 +1114,8 @@ The table below shows which CSP policies are compatible with the nonce-extended 
 | `script-src 'nonce-...' 'strict-dynamic'` | Yes (recommended) | Nonce covers inline script and loader; `strict-dynamic` propagates trust to the dynamically injected SDK tag. No CDN origin needed in the allowlist. |
 
 CSP policy compatibility
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### Advanced SDK Verification with CSP nonce snippets
 
@@ -1121,6 +1189,8 @@ CSP policy compatibility
 
 </Accordion>
 
+<div id="discard-query-parameters" />
+
 #### Discard query parameters
 
 If your URL query parameters contain sensitive information, instruct AppsFlyer to discard them (URLs, referrers, and `header_referer`).
@@ -1134,6 +1204,8 @@ Example:
 * Result: `param1=value1&af_url_mask=param2;param3`
 
 </Accordion>
+
+<div id="web-sdk-cookies-reference" />
 
 ## Web SDK cookies reference
 

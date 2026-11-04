@@ -29,6 +29,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## Attribution measurement in an ATT environment
 
 AppsFlyer provides you with multiple attribution methods giving you a complete range of attribution solutions. The [ATT](/docs/about-att-and-skan#att-principles) consent requirement impacts attribution in the context of paid app-to-app campaigns. As such, advertisers need to use a mix of attribution and reporting solutions.
@@ -110,7 +112,11 @@ In iOS 14 an install can be attributed to both the traditional and SKAN dashboar
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## iOS attribution and privacy: important knowledge
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### iOS attribution, SKAN, and privacy articles and links
 
@@ -132,6 +138,8 @@ In iOS 14 an install can be attributed to both the traditional and SKAN dashboar
 
 <Accordion title="IDFA availability impact on attribution and measurement">
 
+<div id="metrics" />
+
 #### **Metrics**
 
 Consider that where an IDFA is not available, the following metrics may be affected:
@@ -143,6 +151,8 @@ Consider that where an IDFA is not available, the following metrics may be affec
 | Retargeting | Organic installs and in-app events | Re-engagements, Re-attributions |  |
 | Apple Ads | -- | -- | Unchanged. Attribution works correctly regardless of IDFA availability. |
 
+<div id="deep-linking" />
+
 #### **Deep linking**
 
 Deferred deep linking using the <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">legacy method of onConversionDataSuccess</Anchor> may not work when an IDFA is not available, since it requires attribution data that may be restricted by privacy settings.
@@ -150,6 +160,8 @@ Deferred deep linking using the <Anchor target="_blank" href="https://dev.appsfl
 We recommend using <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_overview">unified deep linking (UDL)</Anchor>. UDL conforms to the iOS 14.5+ privacy standards and only returns parameters relevant to deep linking and deferred deep linking: `deep_link_value` and `deep_link_sub1`. Attribution parameters such as `media_source`, `campaign`, and `af_sub1-5` return null and can’t be used for deep linking purposes.
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## FAQ—iOS attribution and ATT
 
@@ -173,6 +185,8 @@ For apps using an SDK earlier than V6.10: SKAN 4 won't work.
 No. You only need to ask for ATT consent if you want to *track* a user, collect IDFA, or both.
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## FAQ—SKAN
 
@@ -231,6 +245,8 @@ Often, this discrepancy is due to looking at Data Locker reports in the wrong pl
 Example: In the June 12 report, it displays 100 installs from Google that occurred on June 11. In the June 24 report, it says 100 MORE installs occurred on June 11. You’ll need to look at all reports for the past 13 days (from June 12-June 24) and aggregate based on the install time or ad network timestamp to get an accurate reading of the 200 total installs that occurred on June 11.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Use traffic source resolution to identify the initial media source, campaign, and channel for each web visit, using the URL parameters and referrer data available at landing page load. This gives attribution the traffic-source context it needs to attribute downstream web events, including the user-acquisition event, accurately.
 
+<div id="what-is-traffic-source-resolution" />
+
 ## What is traffic source resolution?
 
 For web attribution, the landing page load (**web visit**) is the user’s first engagement with the website. AppsFlyer relies on information available at the time, such as URL parameters and referrer data, to identify the user's media source, campaign, and channel.
@@ -37,6 +39,8 @@ The role of traffic source resolution does not end with the visit. Its outcome p
 
 Understanding the mechanics of traffic source resolution is essential for constructing accurate URLs. To learn how to create a well-structured URL, see <Anchor target="_blank" href="/marketers/docs/choose-attribution-parameters-for-landing-page-urls">Choose attribution parameters for landing page URLs</Anchor>.
 
+<div id="the-traffic-source-resolution-flow" />
+
 ## The traffic source resolution flow
 
 Traffic source resolution follows a structured, multi-step flow that progressively builds the attribution context for each web visit. Each step contributes a specific layer of information, from capturing the visit itself to classifying the traffic for reporting. The data used by the traffic source resolution flow is captured either by the web SDK or Web S2S.
@@ -48,11 +52,15 @@ The flow consists of the following steps:
 3. [Campaign resolution](#step-3-campaign-resolution): Resolves granular campaign details associated with the identified media source, enabling detailed performance analysis.
 4. [Channel classification](#step-4-channel-classification): Assigns each visit to a high-level traffic channel based on the resolved media source, providing a standardized view for reporting and analysis.
 
+<div id="step-1-visit-recording" />
+
 ## Step 1: Visit recording
 
 Visit recording is the initial step in the Web Performance Measurement flow. It happens before media source resolution and attribution, serving as a preprocessing layer that captures raw user activity.
 
 The logic works in two stages. First, it classifies the **referrer** (the domain the user came from before landing on your site). Then, based on the referrer type, it evaluates the user's session state and the presence of media source information to decide whether to record the visit.
+
+<div id="stage-1-referrer-classification" />
 
 #### Stage 1: Referrer classification
 
@@ -61,6 +69,8 @@ AppsFlyer classifies the referrer into one of three types:
 * **External excluded** (for example, a payment processor or any domain you've excluded)
 * **Internal excluded** (for example, your own subdomains or login flows)
 * **Else** (all other referrers)
+
+<div id="stage-2-session-evaluation-and-visit-recording" />
 
 #### Stage 2: Session evaluation and visit recording
 
@@ -76,6 +86,8 @@ Based on the referrer type, AppsFlyer evaluates the session state and decides wh
   * If there's an active session and no media source information is present, don't record a new visit within that session.
 
 <Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+
+<div id="step-2-media-source-resolution" />
 
 ## Step 2: Media source resolution
 
@@ -122,12 +134,16 @@ If the domain is not excluded, AppsFlyer looks for the `pid=` parameter in the U
 
 If no PID is found in the URL, AppsFlyer evaluates the `utm_source` and `utm_medium` parameters to identify the media source. The combination of these two fields determines the resulting resolution.
 
+<div id="how-utm-logic-works" />
+
 #### **How UTM logic works**
 
 * In most cases, AppsFlyer determines the media source by extracting the raw value of `utm_source` and using it as the media source.
 * If `utm_medium` is `email`, `mail`, or `e-mail`, the media source automatically resolves to `e-mail`.
 * If `utm_medium` is present and is not an email value, AppsFlyer checks the value against specific custom mapping rules (see the mapping table below).
 * If `utm_medium` is missing or doesn’t match any custom rule, AppsFlyer falls back to using `utm_source` as the media source.
+
+<div id="utm-mapping-rules" />
 
 #### **UTM mapping rules**
 
@@ -175,6 +191,8 @@ AppsFlyer uses the following Click ID mapping to attribute the visit:
 | `epik` | pinterest\_int |
 | `oppref` | openai\_int |
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * AppsFlyer doesn’t use fbclid for traffic source resolution because Meta appends it to both paid and organic Facebook clicks. To attribute traffic to Meta, include pid=facebook\_int or set utm\_source to the relevant Meta source value.
@@ -186,6 +204,8 @@ AppsFlyer uses the following Click ID mapping to attribute the visit:
 
 If no query parameters (PID, UTMs, or Click IDs) are found in the URL, AppsFlyer uses the `http_referrer` to identify the traffic source. This relies on an internal parsing mechanism that extracts the domain host and maps it to a media source.
 
+<div id="the-parsing-mechanism" />
+
 #### **The parsing mechanism**
 
 To identify the source, AppsFlyer cleans the referrer string by:
@@ -196,6 +216,8 @@ To identify the source, AppsFlyer cleans the referrer string by:
 
 *Example: A referrer of* `www.mywebsite.com?param=example` *resolves to a media source of* `mywebsite`.
 
+<div id="referrer-mapping-rules" />
+
 #### **Referrer mapping rules**
 
 | If the domain host contains… | Resolved media source |
@@ -204,6 +226,8 @@ To identify the source, AppsFlyer cleans the referrer string by:
 | `t.co` | twitter |
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
+
+<div id="search-engine-mapping" />
 
 #### **Search engine mapping**
 
@@ -225,6 +249,8 @@ To identify the source, AppsFlyer cleans the referrer string by:
 
 All rows in this table resolve to channel `seo`.
 
+<div id="ai-answer-engine-referrer-mapping" />
+
 #### **AI answer engine referrer mapping**
 
 | If the domain host contains… | Media source | Channel |
@@ -237,6 +263,8 @@ All rows in this table resolve to channel `seo`.
 | `manus.im` | manus\_organic\_aeo | aeo |
 | `grok.com` | grok\_organic\_aeo | aeo |
 | `copilot.microsoft.com` | copilot\_organic\_aeo | aeo |
+
+<div id="android-app-referrers" />
 
 #### **Android app referrers**
 
@@ -251,6 +279,8 @@ If the visit originates from an Android app, the referrer host is mapped as foll
 | `org.telegram.messenger` | telegram |
 
 </Accordion>
+
+<div id="step-3-campaign-resolution" />
 
 ## Step 3: Campaign resolution
 
@@ -268,15 +298,21 @@ AppsFlyer pulls campaign information from the following URL parameters, in order
 | `af_ad_id` | Ad ID | — |
 | `af_keywords` | Keywords | — |
 
+<div id="step-4-channel-classification" />
+
 ## Step 4: Channel classification
 
 In addition to identifying the media source, AppsFlyer classifies each visit into a channel. This classification provides a high-level view of traffic types in the raw data reports and on the dashboard.
+
+<div id="overriding-the-channel-with-af_channel" />
 
 ### Overriding the channel with af\_channel
 
 To assign a custom channel value, add the `af_channel` parameter to the landing page URL. For example, `af_channel=ig` sets the channel to `ig`, letting you break down traffic at a level the standard categories don't capture, such as by ad placement.
 
 `af_channel` is resolved only when a media source is also identified for the visit. If the visit is organic (no media source identified), it always resolves to `Direct`, whether or not `af_channel` is present.
+
+<div id="default-channel-classification" />
 
 ### Default channel classification
 

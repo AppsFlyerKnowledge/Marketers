@@ -29,11 +29,15 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/207032106--Legacy-Receipt-validation-for-in-app-purchases
 ---
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > This article describes the deprecated Receipt validation feature. For more information, see <Anchor target="_blank" href="/marketers/docs/bulletin-legacy-receipt-validation-is-deprecated">Bulletin: Legacy Receipt validation is deprecated</Anchor>
 
 > **At a glance:** Implement receipt validation to protect against fraudulent in-app purchases made in iOS and Android app stores, and make sure an in-app purchase occurred as reported. **Note**: This is a legacy feature. Learn more about the new, fully automatic, and improved <Anchor target="_blank" href="/marketers/docs/purchase-and-subscription-validation-overview">in-app purchase validation mechanism</Anchor>.
+
+<div id="receipt-validation-flow" />
 
 ## Receipt validation flow
 
@@ -65,9 +69,13 @@ For details about the implementation of receipt validation, see our developer SD
 * The AppsFlyer receipt validation service is free of charge to all account plans.
 * For Android, receipt validation may return a `null` result and consider the validation failed if the end user doesn't have internet access during the purchase.
 
+<div id="important-1" />
+
 > 🚧 **Important!**
 >
 > Calling `validateAndLogInAppPurchase` also generates an **af\_purchase** in-app event. As such, don't generate an af\_purchase event when validating. Doing so results in duplicate revenue events.
+
+<div id="note" />
 
 > 📘 **Note**
 >

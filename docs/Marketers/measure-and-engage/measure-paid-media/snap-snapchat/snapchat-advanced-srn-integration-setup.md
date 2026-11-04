@@ -30,9 +30,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## Overview
 
 An Advanced SRN integration means that all <Anchor target="_blank" href="/marketers/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">dual-consented</Anchor> traffic is attributed and reported as regular SRN traffic. For non-consented traffic, AppsFlyer is able to attribute and measure attribution based on clicks and impressions coming from Snapchat using <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns#how-does-attribution-work-with-advanced-srns">other attribution methods</Anchor>, in accordance with privacy restrictions.
+
+<div id="set-up-snapchat-integration" />
 
 ## Set up Snapchat integration
 
@@ -52,6 +56,8 @@ An Advanced SRN integration means that all <Anchor target="_blank" href="/market
 
 The integration supports click and impression attribution, cost, and audiences.
 
+<div id="activate-partner" />
+
 #### Activate partner
 
 On the **first visit** here, you must turn on **Activate Partner** to enable setup.  
@@ -62,6 +68,8 @@ For more details about partner activation, see <Anchor target="_blank" href="/ma
 Enable **Activate Partner** to allow attribution to Snapchat.
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+
+<div id="general-settings" />
 
 #### General settings
 
@@ -78,6 +86,8 @@ Enable **Activate Partner** to allow attribution to Snapchat.
 * If the agency is under the same organization as you on Snapchat ad platform, use only one Snap App ID.
 * If the agency is under a different organization on Snapchat ad platform, request from them to provide their Snap App ID for this app, and enter it in this field. Multiple IDs can be entered. Press Enter after each ID.
 
+<div id="advanced-privacy" />
+
 #### Advanced Privacy
 
 The **Advanced Privacy** (AP) toggle controls which events AppsFlyer sends to Snapchat. This setting is also referred to as **Advanced Conversions** on the Snapchat side.
@@ -86,13 +96,19 @@ The **Advanced Privacy** (AP) toggle controls which events AppsFlyer sends to Sn
   **Important:** To use Snapchat's <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/unified-attribution?language=en_US">unified attribution solution</Anchor>, you must turn off the Advanced Privacy toggle.
 * **Advanced Privacy ON**: AppsFlyer sends only installs, re-engagements, and in-app events for users who have made their IDFA available.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Agencies can't turn on Advanced Privacy, even when granted permission by the advertiser. This setting is limited to the advertiser only.
 
+<div id="advanced-matching-data-sharing" />
+
 #### Advanced Matching data sharing
 
 When **Advanced Matching data sharing** is turned on, Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, and hashed last name, are shared with Snapchat if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
+
+<div id="install-attribution" />
 
 #### Install attribution
 
@@ -102,6 +118,8 @@ Set the different attribution windows to attribute new installs (first launches)
 
 1. Set the **Install click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** Snapchat recommends aligning with them by setting the Install click-through lookback window to 7 days.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Setting the click-through lookback window also determines the lookback windows for engaged views and engaged clicks.
@@ -109,11 +127,15 @@ Set the different attribution windows to attribute new installs (first launches)
 2. [Optional] Turn on **Install view-through attribution** and set the lookback windows:
    * **Install view-through lookback window** between 1-24 hours. **Note:** Snapchat recommends aligning with them by setting the Install view-through lookback window to 1 day.
 
+<div id="re-engagement-attribution" />
+
 #### Re-engagement attribution
 
 Set the different attribution windows to attribute re-engagements of your existing users who viewed, clicked, or engaged with your ad. Note that only re-engagements within the lookback window may be attributed to Snapchat.
 
 1. Set the **Re-engagement click-through lookback window** to either 1-23 hours or 1-30 days. **Note:** Snapchat recommends aligning with them by setting the Re-engagement click-through lookback window to 7 days.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -123,9 +145,13 @@ Set the different attribution windows to attribute re-engagements of your existi
    * **Re-engagement view-through lookback window** between 1-24 hours. **Note:** Snapchat recommends aligning with them by setting the Re-engagement view-through lookback window to 1 day.
 3. Set the **Re-engagement window** to either 1-23 hours, 1-90 days, or **Lifetime**.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignore active users for retargeting
 
 Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-retargeting-inactivity-window#inactivity-period">ignore re-engagements and re-attributions</Anchor> of users who launched your app. This means their activity during the window timeframe isn't recorded in AppsFlyer.
+
+<div id="note-3" />
 
 > 📘 **Note**
 >
@@ -133,6 +159,8 @@ Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-reta
 
 1. Turn on **Ignore active users for retargeting**.
 2. Set the Inactivity window.
+
+<div id="in-app-event-postbacks" />
 
 #### In-app event postbacks
 
@@ -163,6 +191,8 @@ Map AppsFlyer events with the partner via postbacks. If postback sending is enab
 <Accordion title="Attribution link tab">
 
 Attribution links are not available for Snapchat.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -201,6 +231,8 @@ The cost integration provides the following aggregated data:
 
 </Accordion>
 
+<div id="note-5" />
+
 > 📘 **Note**
 >
 > * Make sure your campaign setup in Snapchat is for either an iOS or Android app, not both. If the campaign is for both apps, AppsFlyer can't break down the cost per app, and the cost does not display in AppsFlyer.
@@ -219,11 +251,15 @@ Ad Revenue is not supported in the integration with this partner.
 
 Select which <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#permissions-tab">permissions to grant</Anchor> Snapchat to access your data and perform various actions.
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > When the integration is deactivated while the Permissions toggle is still turned on, permissions remain granted.
 
 </Accordion>
+
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
 
 ## Web to app: measuring app activity for non-app campaigns
 
@@ -232,6 +268,8 @@ AppsFlyer's integration with Snapchat enables comprehensive measurement of app a
 For instance, app installs can be measured even when the ad destination is a web landing page, enabling measurement of the Web-to-App (W2A) user journey. To enable this type of measurement, please enable the <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/app-id-tracking">Snap App ID Tracking Toggle</Anchor> in Snapchat Ads Manager.
 
 By following these instructions, you can effectively measure app activity from Snapchat non-app campaigns and gain valuable insights into user behavior.
+
+<div id="deep-linking-with-snapchat" />
 
 ## Deep linking with Snapchat
 
@@ -246,11 +284,15 @@ To perform deep linking with Snapchat:
    * **C -** the relevant campaign name
    * **is\_retargeting=true -** this field defines the campaign as a retargeting campaign. The engagements of existing users with the retargeting campaign are marked as re-engagements due to the existence of this field in the URI. This makes sure the user's data appears in the retargeting dashboard.
 
+<div id="note-7" />
+
 > 📘 **Note**
 >
 > **URI Example**
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
+
+<div id="set-up-deep-links-on-the-snap-platform" />
 
 ### Set up deep links on the Snap platform
 
@@ -258,6 +300,8 @@ To perform deep linking with Snapchat:
 2. Add the Deeplink URI:  
      
    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### Deferred deep linking with Snapchat
 
@@ -267,9 +311,13 @@ AppsFlyer provides a number of solutions for deferred deep linking:
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD (Get Conversions Data) API**</Anchor> : This is the recommended option to access Snapchat user conversion data in real time, directly at the SDK level. The data returned in the GCD API includes the <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor> parameter, which holds the actual deep link destination (user destination within the app).
 * **Using conversion data parameters:** You can create custom logic to navigate the user to your content using other parameters, such as the Campaign name, Adset name, or any other field that is returned as part of the attribution data for Snapchat installs.
 
+<div id="set-up-snapchat-for-agencies" />
+
 ## Set up Snapchat for agencies
 
 Agencies working on behalf of advertisers can turn on the Snapchat integration and start getting attribution for their campaigns. However, this integration has some limitations when it comes to agencies.
+
+<div id="agency-limitations" />
 
 ### Agency limitations
 
@@ -287,9 +335,13 @@ Agencies working on behalf of advertisers can turn on the Snapchat integration a
 
 ![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > Snapchat account IDs mustn't be shared between the advertiser and the agency. If they are shared, all of the advertiser's installs are automatically attributed on the agency's dashboard.
+
+<div id="raw-data-restrictions" />
 
 ## Raw data restrictions
 
@@ -302,6 +354,8 @@ Agencies working on behalf of advertisers can turn on the Snapchat integration a
   * Campaign name and ID (Starting Dec 15, 2025)
   * Ad set name and ID (Starting Dec 15, 2025)
 * Starting October 6, 2026, `snapchat_int` view-through attribution data is limited (restricted) in raw data only in some cases. The logic of the event restrictions is managed by Snapchat.
+
+<div id="snapchat-data-retention" />
 
 ## Snapchat data retention
 
