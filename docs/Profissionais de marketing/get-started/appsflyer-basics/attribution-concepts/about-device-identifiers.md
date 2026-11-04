@@ -26,21 +26,29 @@ x-zendesk:
 ---
 > **Visão geral:** entenda quais identificadores de dispositivos são compatíveis com o SDK da AppsFlyer.
 
+<div id="overview" />
+
 ## Visão geral
 
 O SDK da AppsFlyer coleta identificadores de dispositivos para <Anchor target="_blank" href="/marketers/pt/docs/basic-sdk-integration-guide#atribuição">fins de atribuição</Anchor>.
 
 O SDK coleta automaticamente identificadores como o AppsFlyer ID e o Google Advertising ID (GAID). A coleta de outros identificadores para seu aplicativo depende das suas necessidades (por exemplo, coleta de lojas de aplicativos Android de terceiros ou aplicativos comercializados na China).
 
+<div id="android-device-identifiers" />
+
 ## Identificadores de dispositivos Android
 
 O SDK oferece suporte aos seguintes identificadores de dispositivo para todas as plataformas:
+
+<div id="apps-published-on-google-play" />
 
 #### Aplicativos publicados no Google Play
 
 | Identificador de dispositivo | Objetivo |
 | --- | --- |
 | <span id="gaid"></span>GAID | Um identificador **que pode ser redefinido pelo usuário** para usuários do Google Play no Android.<br /><br />A partir do SDK V4.8.0, a AppsFlyer passou a coletar automaticamente esse identificador de dispositivo. |
+
+<div id="apps-published-in-third-party-app-stores" />
 
 #### Aplicativos publicados em outras lojas de aplicativos
 
@@ -50,6 +58,8 @@ O SDK oferece suporte aos seguintes identificadores de dispositivo para todas as
 | <span id="oaid"></span>OAID | Um identificador **que pode ser redefinido pelo usuário** usado fora da loja de aplicativos em alguns mercados Android.  Para mais informações, consulte o <Anchor target="_blank" href="/marketers/pt/docs/android-oaid-implementation-in-the-sdk">Guia de implementação do OAID</Anchor>. |
 | <span id="android-id"></span>ID Android | Um identificador de dispositivo mobile exclusivo e **não reconfigurável** usado em lojas de aplicativos de terceiros. O SDK não coleta automaticamente o Android ID. Porém, caso haja necessidade de coletar esses identificadores, seu desenvolvedor poderá implementar a coleta.<br /><br />**Observação:** o Android IDnão pode ser usado em conjunto com o GAID. |
 
+<div id="apple-device-identifiers" />
+
 ## Identificadores de dispositivos Apple
 
 O SDK oferece suporte para os seguintes identificadores de dispositivos para plataformas Android:
@@ -58,6 +68,8 @@ O SDK oferece suporte para os seguintes identificadores de dispositivos para pla
 | --- | --- |
 | <span id="idfa"></span>IDFA | Um identificador exclusivo **que pode ser redefinido pelo usuário** para usuários do iOS da Apple ou tvOS (Apple TV). Desde o lançamento do iOS 14.5, o IDFA está disponível apenas caso o usuário permita o rastreamento no <Anchor target="_blank" href="/marketers/pt/docs/about-att-and-skan#att-principles">prompt da ATT</Anchor>. |
 | <span id="idfv"></span>IDFV | Um identificador de dispositivo compartilhado por todos os aplicativos do **mesmo fornecedor** no dispositivo. Depois que o primeiro aplicativo é instalado, o ID é atribuído a ele, e outros aplicativos do mesmo fornecedor recebem o mesmo IDFV. Um IDFV diferente é atribuído aos aplicativos de outros fornecedores.<br /><br />Além disso, quando todos os aplicativos de um fornecedor específico são removidos, o IDFV desse fornecedor é excluído e, após uma nova instalação, um novo IDFV será atribuído. |
+
+<div id="ctv--pc-and-console-app-device-identifiers" />
 
 ## Identificadores de dispositivos CTV
 

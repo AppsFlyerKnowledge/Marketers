@@ -27,6 +27,8 @@ x-zendesk:
 | **Ações necessárias** | Nenhuma ação é necessária |
 | **O que muda?** | Em 12 de setembro de 2023, o Snapchat se tornou um SRN avançado. O que isso significa?<ul><li>Cliques e impressões são enviados para a AppsFlyer, e a atribuição sem IDFA será feita de forma probabilística</li><li>As conversões view-through do Snapchat são <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">parcialmente restritas</Anchor> nos Relatórios de dados brutos</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **Veja também**
 >
 > * <Anchor target="_blank" href="/marketers/pt/docs/snapchat-advanced-srn-integration-setup">Snapchat – configurando a integração de uma SRN avançada</Anchor>

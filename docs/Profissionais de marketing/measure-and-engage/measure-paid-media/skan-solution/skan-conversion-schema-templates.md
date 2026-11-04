@@ -21,10 +21,14 @@ x-zendesk:
 ---
 > **Resumo:** os modelos de esquema de conversão da SKAN são modelos prontos para usar. Simplificam a configuração da SKAN ao oferecer modelos com base em uma combinação de dados da vertical e dados específicos do aplicativo, fornecendo insights da vertical e melhores práticas. Os modelos de esquema de conversão da SKAN podem ser encontrados no Conversion Studio.
 
+<div id="key-benefits" />
+
 ## Principais vantagens
 
 * Esses modelos simplificam a configuração da SKAN, permitindo criar um esquema de conversão com apenas alguns cliques.
 * Ao utilizar melhores práticas e insights da vertical, os profissionais de marketing podem refinar seu esquema e aumentar a confiança na eficácia dele usando modelos baseados em dados da vertical combinados com dados específicos do aplicativo.
+
+<div id="how-to-get-started" />
 
 ## Como começar
 
@@ -41,9 +45,13 @@ x-zendesk:
 7. Você será redirecionado para a página de edição do **Conversion Studio**
    1. Use os <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio#componentes-de-medição">recursos e ferramentas padrão</Anchor> do Conversion Studio para personalizar o modelo de acordo com as necessidades do seu aplicativo
 
+<div id="what-are-skan-conversion-schema-templates" />
+
 ## O que são os modelos de esquema de conversão da SKAN?
 
 Os modelos de conversão da SKAN sugerem mapeamentos de valores de conversão para atividades relevantes do usuário pós-instalação, personalizados por vertical. As sugestões podem ser personalizadas para atender às necessidades específicas do aplicativo, combinando insights baseados em dados e expertise da vertical.
+
+<div id="template-structure" />
 
 ### Estrutura do modelo
 
@@ -54,9 +62,13 @@ Os modelos de conversão da SKAN sugerem mapeamentos de valores de conversão pa
   * Os eventos pré-selecionados são adaptados para cada modelo.
   * As faixas de receita são personalizadas com base em dados específicos do aplicativo, usando modelos avançados de recomendação de receita. Quando não há dados históricos suficientes, dados da vertical são usados para fazer sugestões.
 
+<div id="what-is-skan-conversion-schema" />
+
 ## O que é o esquema de conversão da SKAN?
 
 O esquema de conversão da SKAN define a configuração de mensuração da estrutura SKAdNetwork (SKAN). Ele especifica quais métricas de engajamento do usuário (por exemplo, eventos in-app ou receita) serão mensuradas e reportadas. A SKAdNetwork não reporta diretamente o engajamento pós-instalação com o aplicativo. Em vez disso, ela reporta "Valores de conversão", que são mapeados pelo desenvolvedor do aplicativo para atividades significativas de pós-instalação. Esse mapeamento é conhecido como o esquema de conversão da SKAN.
+
+<div id="what-are-these-templates-based-on" />
 
 ## Em que esses modelos se baseiam?
 

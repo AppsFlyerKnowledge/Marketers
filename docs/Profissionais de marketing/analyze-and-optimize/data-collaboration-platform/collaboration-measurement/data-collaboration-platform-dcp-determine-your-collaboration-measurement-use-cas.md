@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** Identifique seu cenário de colaboração, certificando-se de saber quais dados fornecer, quem é responsável por eles e em que formato enviá-los.
 
+<div id="overview" />
+
 ## Escritórios
 
 A DCP oferece suporte a vários casos de uso on-site e off-site. Cada caso de uso exige uma configuração diferente, especificando qual colaborador é responsável por preparar cada fonte de dados e em que formato os dados devem ser configurados.
@@ -31,9 +33,13 @@ Este artigo tem como objetivo ajudar as Commerce Media Networks (CMNs) e os anun
 
 É aqui que a árvore de decisão do caso de uso entra em ação. Ela funciona como um guia estruturado para ajudar você a especificar seu caso de uso e receber as instruções de preparação correspondentes.
 
+<div id="how-does-the-decision-tree-help" />
+
 ## Como a árvore de decisão ajuda?
 
 Dependendo da configuração, um colaborador pode precisar preparar e configurar as tarefas de conversões e campanhas, enquanto o outro pode ser responsável por preparar as tarefas de engajamentos ou de parceiros de mídia. A árvore de decisão ajuda o proprietário da colaboração a determinar qual colaborador deve receber cada tarefa e fornece links para as instruções correspondentes.
+
+<div id="which-decision-tree-do-i-need-on-site-or-off-site" />
 
 ### De qual árvore de decisão eu preciso: on-site ou off-site?
 
@@ -42,11 +48,15 @@ Você pode usar duas árvores de decisão: uma para campanhas on-site e a outra 
 * Use a [árvore de decisão para campanhas off-site](#a-árvore-de-decisão-da-campanha-off-site) se o anúncio for exibido em uma plataforma de publicidade externa (por exemplo, Facebook, Google) fora das propriedades que pertencem e são operadas por você.
 * Use a [árvore de decisão para campanhas on-site](#a-árvore-de-decisão-para-campanhas-on-site) se o anúncio for veiculado dentro do seu ecossistema e a conversão ocorrer na sua plataforma.
 
+<div id="the-on-site-campaign-decision-tree" />
+
 ## A árvore de decisão para campanhas on-site
 
 No cenário de campanha on-site, a conversão ocorre em uma plataforma que pertence e é operada pela CMN ou pelo anunciante. Isso leva à pergunta inicial na árvore de decisão on-site: em qual plataforma a conversão ocorre — na da CMN ou na do anunciante?
 
 Responda à pergunta inicial escolhendo a resposta correta e continue expandindo os ramos que correspondem às suas condições específicas.
+
+<div id="on-which-platform-does-the-conversion-take-place" />
 
 #### **Em qual plataforma a conversão ocorre?**
 
@@ -128,11 +138,15 @@ Se a plataforma do anunciante for um site, siga as instruções abaixo para cada
 
 </Accordion>
 
+<div id="the-off-site-campaign-decision-tree" />
+
 ## A árvore de decisão da campanha off-site
 
 No cenário de campanha off-site, o anúncio é exibido em uma plataforma de publicidade externa, como Facebook ou Google. Isso leva à pergunta inicial na árvore de decisão off-site: qual conta na plataforma de publicidade externa é usada para exibir o anúncio: a da CMN ou a do anunciante?
 
 Responda à pergunta inicial escolhendo a resposta correta e continue expandindo os ramos que correspondem às suas condições específicas.
+
+<div id="which-account-on-the-external-platform-displays-the-ad" />
 
 #### **Qual conta na plataforma externa exibe o anúncio?**
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** os relatórios de dados brutos da SKAN contêm dados em nível de linha gerados após a tradução e decodificação de postbacks recebidos pela AppsFlyer do iOS, assim como postbacks brutos da SKAN. Os dados estão disponíveis através do <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers">Data Locker</Anchor> e da <Anchor target="_blank" href="/marketers/pt/docs/push-api-streaming-raw-data">Push API</Anchor>. Se o seu plano de assinatura incluir dados brutos, não há necessidade de uma assinatura do Data Locker.
 
+<div id="skan-raw-data-reports" />
+
 ## Relatórios de dados brutos da SKAN
 
 Princípios:
@@ -59,6 +61,8 @@ Os tipos de relatórios disponíveis são:
 
 * Campos de enriquecimento não obrigatórios, como campaign\_name, ad\_network\_campaign\_id, ip que a ad network não forneceu.
 * A Apple reteve os dados devido às políticas de limite da Apple. Campos como source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## Formato e conteúdo do relatório de dados brutos da SKAN
 
@@ -206,6 +210,8 @@ Os tipos de relatórios disponíveis são:
 
 <Accordion title="Tipos de formato do campo de dados brutos">
 
+<div id="field-formats" />
+
 #### Formatos de campo
 
 | Nome do formato | Descrição |
@@ -236,6 +242,8 @@ Os tipos de relatórios disponíveis são:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="traits-and-limitations" />
@@ -256,6 +264,8 @@ Os tipos de relatórios disponíveis são:
 | Acesso do usuário à conta | Disponível. De acordo com as permissões da conta |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

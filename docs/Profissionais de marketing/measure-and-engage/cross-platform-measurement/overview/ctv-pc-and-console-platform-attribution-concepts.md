@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="Diagrama da solução de atribuição cross-platform da AppsFlyer para CTV, PC e consola" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## A solução multiplataforma da AppsFlyer
 
 No atual panorama digital, os profissionais de growth enfrentam o desafio de chegar aos consumidores através de múltiplos dispositivos e plataformas. As abordagens tradicionais de mensuração não conseguem captar a jornada completa dos usuários. Assim, a mensuração multiplataforma é fundamental para que você entenda o impacto das suas atividades de marketing e tome decisões bem informadas.
@@ -37,13 +39,19 @@ Os anunciantes podem promover um app na mesma plataforma em que o anúncio é ex
 
 Independentemente da sua estratégia de marketing, você pode usar a AppsFlyer para receber dados de atribuição e mensurações de performance de fontes (não orgânicas ou orgânicas) e campanhas que geram instalações e eventos pós-instalação em plataformas de CTV, PC e console. Use esses insights para calcular o lifetime value dos usuários (LTV) e mensurar e otimizar suas atividades de marketing. <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">Saiba mais sobre a atribuição da AppsFlyer</Anchor>
 
+<div id="supported-platforms" />
+
 ### Plataformas compatíveis
 
 <table><thead><tr><th rowspan="2">Platform</th><th colspan="2">Método de integração da AppsFlyer</th></tr><tr><th>S2S</th><th>SDK</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>MacOS</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Amazon Fire TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Chromecast</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Roku</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Vizio</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>LGUDID</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>PlayStation</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>RIDA</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>PC nativo</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Epic Games</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Nintendo Switch</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span>✓</span></td><td><span>-</span></td></tr></tbody></table>
 
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
+
 ### Selecione as ad networks compatíveis com as plataformas de CTV/PC/Console especificadas
 
 A lista de ad networks que exibem anúncios em plataformas de CTV, PC e console e são compatíveis com a atribuição entre plataformas (por exemplo, CTV para aplicativo móvel) pode ser encontrada no <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">marketplace de parceiros da AppsFlyer</Anchor>.
+
+<div id="cross-platform-attribution-flows" />
 
 ## cross\_platform\_attribution\_1.jpg
 
@@ -145,6 +153,8 @@ Informações adicionais:
 
 </Accordion>
 
+<div id="data-availability" />
+
 ## Disponibilidade de dados
 
 Os dados das plataformas de CTV, PC e console incluem dados de instalação, bem como dados de eventos in-app que fornecem informações sobre o lifetime value (LTV) de usuários não orgânicos e orgânicos, com base em assinaturas, compras in-app e monetização de anúncios. As métricas de LTV são calculadas a partir da data de atribuição até o presente.
@@ -157,6 +167,8 @@ Os dados estão disponíveis da seguinte forma:
   * <Anchor target="_blank" href="/marketers/pt/docs/raw-data-export-page">Exportar</Anchor>
   * <Anchor target="_blank" href="/marketers/pt/docs/pull-api-raw-data">Extrair API</Anchor>
 * **Impressões de campanhas entre plataformas** (por exemplo, de CTV para mobile) não são exibidas em dashboards no nível de aplicativo. Uma única impressão de CTV pode gerar várias conversões mobile, o que torna impossível dividir as impressões com precisão entre aplicativos. Para acessar a contagem total de impressões, use o <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-data-via-data-locker">relatório de engajamentos cross-platform no Data Locker</Anchor>.
+
+<div id="note" />
 
 > 📘 **Importante!**
 >

@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Em resumo:** Melhores práticas para atribuir suas campanhas de atribuição do site com a melhor granularidade de campanha disponível.
 
+<div id="pba-website-attribution-urls" />
+
 ## URLs de atribuição do site PBA
 
 Para obter os melhores resultados de granularidade de campanha combinados com a atribuição mais precisa nos seus dados de atribuição do site, preencha as URLs (links) que direcionam os usuários ao seu site usando as práticas detalhadas neste artigo.
+
+<div id="url-parametersgroup-and-priority" />
 
 ### Parâmetros de URL: grupo e prioridade
 
@@ -34,6 +38,8 @@ A solução de atribuição do site da AppsFlyer oferece suporte a várias class
 * [Prioridade mínima] UTM
 
 As <Anchor target="_blank" href="/marketers/pt/docs/pba-media-source-attribution-rules">regras de atribuição de canal de mídia do PBA</Anchor> determinam como um determinado usuário recebe a atribuição. As classes de parâmetros são classificadas por prioridade. Se mais de uma classe de parâmetros for encontrada em um link, a classe com a prioridade mais alta receberá a atribuição.
+
+<div id="supported-parameters" />
 
 #### Parâmetros compatíveis
 
@@ -50,7 +56,11 @@ As <Anchor target="_blank" href="/marketers/pt/docs/pba-media-source-attribution
 | 9 | utm\_medium | Tipo de mídia | UTM | S | media\_type |
 | 10 | utm\_campaign | Campaign | UTM | S | Twitter |
 
+<div id="url-parameter-best-practices" />
+
 ## Melhores práticas para parâmetros de URL
+
+<div id="selecting-url-parameters" />
 
 ### Selecionar parâmetros de URL
 
@@ -65,6 +75,8 @@ O uso de parâmetros de várias classes é ilustrado no contexto de anúncios da
   * No entanto, a campanha não pode ser determinada, já que *c=* faz parte da classe PID, mas pid não está incluído.
   * Para resolver isso, supondo que você precise de utm\_source para outras finalidades, considere esta opção: `www.website.com?pid=facebook_int&c={{campaign.name}}&utm_source=facebook`. Com essa estrutura, a AppsFlyer usa a classe PID para identificar o canal de mídia. Outros parâmetros PID, como c=, podem ser incluídos, e utm\_source é desconsiderado porque tem prioridade menor.
 
+<div id="implement-dynamic-urls-using-ad-network-macros" />
+
 ### Implemente URLs dinâmicas usando macros de ad network
 
 Use macros de network (também conhecidas como parâmetros valuetrack) para economizar tempo ao criar modelos e aplicar parâmetros de URL para campanhas pagas.
@@ -77,15 +89,23 @@ As networks usam macros diferentes para preencher os parâmetros na URL. Consequ
 * Anúncios do Snapchat: `www.website.com?af_c_id={{campaign.id}}`
 * Anúncios da Microsoft (Bing): `www.website.com?af_c_id={campaignid}`
 
+<div id="consistent-case-within-parameters" />
+
 ### Uso consistente de maiúsculas e minúsculas nos parâmetros
 
 Os valores dos parâmetros diferenciam maiúsculas e minúsculas. Por exemplo, utm\_source=channel1 e utm\_source=CHANNEL1 são considerados fontes de mídia diferentes. Por isso, verifique se você está usando maiúsculas e minúsculas de forma consistente.
+
+<div id="use-google-ads-integration-to-automate-granularity" />
 
 ### Use a integração com o Google Ads para automatizar a granularidade
 
 No caso de campanhas do Google Ads, você pode obter granularidade da campanha integrando o PBA à sua <Anchor target="_blank" href="/marketers/pt/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads</Anchor> conta. Isso garante que seus dados sejam preenchidos com todos os dados da hierarquia da campanha sem a necessidade de parâmetros PID ou UTM na URL.
 
+<div id="common-url-parameter-mistakes-to-avoid" />
+
 ## Erros comuns de parâmetros de URL que você deve evitar
+
+<div id="question-marks" />
 
 ### Pontos de interrogação
 
@@ -99,6 +119,8 @@ Exemplos de usos **incorretos**: 
 `www.website.com??parâmetros`
 
 `www.website.com?parameter1?parameter2`
+
+<div id="anchor-signs" />
 
 ### Símbolos de âncora
 

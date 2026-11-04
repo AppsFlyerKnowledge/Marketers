@@ -25,11 +25,17 @@ x-zendesk:
 
 > **Em resumo:** Configure a solução de receita da loja ROI360 da AppsFlyer.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > A receita da loja do ROI360 está disponível apenas para os clientes do plano premium. Para verificar seu plano ou uma atualização, entre em contato com seu Customer Success Manager (CSM).
 
+<div id="overview" />
+
 ## Escritórios
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -47,6 +53,8 @@ Para configurar a Receita de loja do ROI360, conclua as etapas a seguir na ordem
 4. [Verifique a implementação do SDK](#etapa-4-verifique-a-implementação-do-sdk): teste compras in-app e assinaturas em sandbox nas duas plataformas para confirmar que os eventos do SDK e as notificações do servidor são recebidos e processados corretamente pela AppsFlyer.
 5. [Verifique e atualize as configurações](#etapa-5-verifique-e-atualize-as-configurações): revise e confirme os status da validação de compras, do tratamento de reembolsos, da mensuração de assinaturas e da integração da loja para garantir a atribuição contínua e precisa da receita entre plataformas.
 6. [Lance as versões do aplicativo](#etapa-6-lance-as-versões-do-aplicativo-com-o-conector-do-sdk): lance versões atualizadas do aplicativo com o SDK Connector integrado, garantindo que os sinalizadores de sandbox estejam desativados e que as regras de validação permitam os eventos de receita necessários.
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## Etapa 1 (iOS): configurar as chaves do App Store Connect
 
@@ -102,6 +110,8 @@ Para definir as credenciais do iOS, siga esta etapa:
 5. clique em **Salvar e próximo**
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## Etapa 1 (Android): Configure a chave da conta de serviço e as permissões
 
@@ -225,12 +235,16 @@ Faça o upload e valide a chave JSON do Google que você baixou na [etapa 1.2](
 
 </Accordion>
 
+<div id="step-2-ios-set-up-app-store-server-notifications" />
+
 ## Etapa 2 (iOS): Configurar notificações do servidor da App Store
 
 Configure como as notificações da App Store são recebidas na AppsFlyer.
 
 * Se você já tiver um endpoint de notificações do servidor da App Store configurado no App Store Connect (por exemplo, seu próprio backend ou outro serviço), escolha entre **Opção 1 (recomendada)** ou **Opção 2**.
 * Se você ainda não configurou um endpoint no App Store Connect, escolha a **Opção 1**.
+
+<div id="option-1-recommended---appsflyer-as-the-primary-endpoint" />
 
 #### Opção 1 (Recomendada) - AppsFlyer como endpoint principal
 
@@ -244,11 +258,15 @@ O fluxo de notificações para esta opção é o seguinte:
 
 Para usar esta opção, conclua as etapas [2.1](#21-copy-the-appsflyer-server-notifications-endpoint), [2.2](#22-send-notifications-directly-to-appsflyer) e [2.4](#24-test-the-server-notifications-integration).
 
+<div id="option-2---your-endpoint-as-the-primary-endpoint" />
+
 #### Opção 2 - Seu endpoint como endpoint principal
 
 Se você preferir manter seu endpoint existente como destino principal, configure seu servidor para encaminhar notificações do servidor da App Store para a AppsFlyer.
 
 Para usar esta opção, ignore as etapas 2.1 e 2.2 e conclua as etapas [2.3](#23--optional--forward-notifications-from-your-endpoint-to-appsflyer) e [2.4](#24-test-the-server-notifications-integration)
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
@@ -334,6 +352,8 @@ Para confirmar se a AppsFlyer está recebendo corretamente as notificações do 
    * Uma confirmação informando se notificações válidas foram recebidas.
    * Uma mensagem de status indicando que nenhuma notificação foi encontrada.
 
+   <div id="note-2" />
+
    > 📘 **Nota**
    >
    > A Apple pode levar alguns segundos para enviar a mensagem de teste.
@@ -343,6 +363,8 @@ Para confirmar se a AppsFlyer está recebendo corretamente as notificações do 
    * Depois que o teste for bem-sucedido, ou quando você estiver pronto para continuar, clique em **Salvar e avançar**.
 
 </Accordion>
+
+<div id="step-2-android-set-up-google-play-server-notifications" />
 
 ## Etapa 2 (Android): Configurar notificações do servidor do Google Play
 
@@ -462,6 +484,8 @@ Para verificar se as notificações do desenvolvedor em tempo real (RTDN) do Goo
 
 </Accordion>
 
+<div id="step-3-implement-sdk-connector" />
+
 ## Etapa 3: Implementar o Conector do SDK
 
 Nessa etapa, você preparará seus desenvolvedores para integrar o Purchase SDK Connector da AppsFlyer e configurar o ambiente sandbox para testes.
@@ -477,9 +501,13 @@ Para implementar o SDK connector, siga essas etapas:
 
 Essa mensagem fornece todas as informações que os seus desenvolvedores precisam para concluir a integração e começar os testes.
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > O conector usa detecção automática de transações. Como alternativa, você pode implementar o método `validateAndLog` do SDK para registrar manualmente cada transação. Esse método não oferece suporte a todos os recursos disponíveis no conector. Para ver detalhes sobre as duas opções de integração do SDK, consulte <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">a documentação do DevHub</Anchor>.
+
+<div id="step-4-verify-sdk-implementation" />
 
 ## Etapa 4: Verifique a implementação do SDK
 
@@ -493,6 +521,8 @@ Para verificar se a AppsFlyer recebeu payloads válidos de eventos de compra e a
 
 1. Na etapa **Verifique a implementação do SDK**, clique em **Testar implementação do SDK**.
 2. Revise os resultados, incluindo o registro de data/hora do payload mais recente recebido pela AppsFlyer.
+
+   <div id="note-4" />
 
    > 📘 **Nota**
    >
@@ -561,6 +591,8 @@ Certifique-se de que todo evento de compra no sandbox inclua:
 
 </Accordion>
 
+<div id="step-5-verify-and-update-settings" />
+
 ## Etapa 5: Verifique e atualize as configurações
 
 Depois de concluir a configuração das definições acima e salvar a última etapa, você será redirecionado para a visualização da configuração ativa, em que poderá verificar ou atualizar as seguintes configurações:
@@ -575,6 +607,8 @@ Depois de concluir a configuração das definições acima e salvar a última et
    * A **App Store key** configuração
    * A **endpoint de notificação do servidor** configuração
    * Implementar & testar o SDK Connector
+
+<div id="step-6-release-the-app-versions-with-the-sdk-connector" />
 
 ## Etapa 6: Lance as versões do aplicativo com o conector do SDK
 
@@ -591,6 +625,8 @@ Depois que o aplicativo com o conector do SDK for lançado, os <Anchor target="
 
 **Observação:** Os eventos só serão gerados para usuários que atualizaram para uma versão do aplicativo que inclui o conector do SDK. Como resultado, é esperada uma discrepância entre os dados de receita do aplicativo e os dados da loja até que a versão atualizada do aplicativo seja totalmente adotada.
 
+<div id="switch-to-roi360-store-revenue-from-receipt-validation" />
+
 ## Migrar para a receita da loja do ROI360 (da Validação de recibos)
 
 Se você concluiu o Onboarding da Validação de recibos, mas quer ativar o produto de receita da loja do ROI360, faça o seguinte:
@@ -602,6 +638,8 @@ Se você concluiu o Onboarding da Validação de recibos, mas quer ativar o prod
 5. Realize a etapa **Enable App Store Server Notification**. Para mais informações, consulte [Configurar notificações do servidor da App Store](#etapa-2-ios-configurar-notificações-do-servidor-da-app-store) ou [Configurar notificações do servidor do Google Play](#etapa-2-android-configurar-notificações-do-servidor-do-google-play).
 6. Na seção **Compras & assinaturas**, verifique se o **Tipo de produto** agora está definido como **ROI360**.
 7. Revise sua configuração atual do SDK para garantir que ela possa oferecer suporte à funcionalidade de receita da loja do ROI360 de que você precisa.
+
+<div id="note-5" />
 
 > 📘 **Nota**
 >

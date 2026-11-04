@@ -27,9 +27,13 @@ x-zendesk:
 
 <Embed title="Interoperabilidade do SKAdNetwork (SKAN) com anúncios do Meta" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/15jnbml3h7" providerUrl="https://fast.wistia.com" />
 
+<div id="skan-interoperability-appsflyer---meta-ads" />
+
 ## Interoperabilidade do SKAN: AppsFlyer &lt;-> Anúncios Meta
 
 Se trabalha com múltiplos parceiros de redes publicitárias, é melhor configurá-los na AppsFlyer. Desta forma, as métricas de desempenho do SKAN, enriquecidas com outras métricas como o custo, ficam disponíveis através da plataforma AppsFlyer.
+
+<div id="scope-of-skan-interoperability-with-meta-ads" />
 
 #### Âmbito da interoperabilidade do SKAN com anúncios Meta
 
@@ -54,12 +58,16 @@ Outras considerações:
 * <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns#ios-145-srn-attribution">Implicações do iOS 14.5 nos relatórios de SRNs</Anchor>
 * Nossa integração do MMP com o Meta Ads sempre implementa o sinalizador *Advertiser Tracking Enabled*. (Essas informações são fornecidas de acordo com a lista de fevereiro de 2021 de diretrizes do iOS 14 para aplicativos do Meta Ads).
 
+<div id="considerations" />
+
 #### Considerações
 
 * Após a ativação da interoperabilidade, cada vez que alterar as configurações de medição, não precisará repetir o procedimento de integração MMP descrito neste artigo. Isso significa que não precisa de copiar novamente o URL de ligação do MMP.
 * Na AppsFlyer, se desativar a medição SKAN, os anúncios Meta não conseguem mais obter o mapeamento de CV.
 * SDK da AppsFlyer vs. SDK do Facebook: O SDK do Facebook é adequado apenas para campanhas com anúncios da Meta. Se realizar campanhas com vários parceiros, utilizando o SDK da AppsFlyer poderá visualizar os dados de todos os parceiros.
 * Veja a seção sobre [discrepâncias](/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq) neste artigo.
+
+<div id="meta-ads-app-install-ads-guidance" />
 
 #### Diretrizes para anúncios de instalação de apps Meta
 
@@ -70,6 +78,8 @@ Ao configurar suas campanhas de instalação de apps para iOS 14 no Meta Ads, co
 * Há uma relação entre o método de otimização do Meta Ads e o tipo de mensuração que você seleciona na AppsFlyer da seguinte forma:
   * **Mensuração de receita**: VO e AEO
   * Mensuração de conversão: AEO – Inclui eventos padrão dos anúncios da Meta e eventos de compra. Você deve mapear o evento do aplicativo na AppsFlyer para o evento relevante do Meta Ads.
+
+<div id="interoperation-procedures" />
 
 ## Procedimentos de interoperação
 
@@ -112,6 +122,8 @@ Para atribuição de eventos na app:
 <Accordion title="Partilhe o esquema CV com os anúncios Meta.">
 
 ![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+
+<div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 
 #### Ativação da interoperação SKAN da AppsFlyer com anúncios Meta.
 
@@ -181,11 +193,13 @@ Para atribuição de eventos na app:
              ![in-app_events_fb_en-us.png](https://files.readme.io/98e2c8048444331c5d24343e683605e8388ee93bbfcb70aa5e8dad183c995859-40032591364241.png)
            * Confirme se os eventos in-app que definiu na medição SKAN (**evento da AppsFlyer**) estão associados aos identificadores de eventos do Meta Ads (**associados ao evento do parceiro**). Se você não mapear os eventos, o Meta Ads não poderá ser otimizado e contabilizará somente as instalações.
 
+             <div id="h_01H8XRMVR5GY77K7GJ4TXGWEHS" />
+
              > 📘 **Nota**
              >
              > Ao adicionar, alterar ou remover um valor de conversão (CV) no SKAN Conversion Studio, certifique-se de que o evento está mapeado nos **postbacks de eventos na aplicação**. Caso contrário, o CV não será atualizado nos anúncios Meta.
              >
-             > #### Guia de mapeamento de eventos in-app
+             > #### <span id="inapp-event-mapping-guide"></span>Guia de mapeamento de eventos in-app
 
 
         | Tipo de medição | Requisito de mapeamento |
@@ -251,6 +265,8 @@ Para atribuição de eventos na app:
 </Table>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 
@@ -327,6 +343,8 @@ A permissão ads\_read fornece aos clientes de anúncios Meta acesso à API para
 | <span id="modeled-data-differences-in-appsflyer-and-facebook-ads-manager"></span>Diferenças dos dados modelados na AppsFlyer e no Meta Ads Manager | A AppsFlyer modela dados agregados que os relatórios básicos do SKAN não conseguem fornecer. <Anchor target="_blank" href="/marketers/pt/docs/skan-modeled-data">Saiba mais</Anchor><br /><br />Quando a AppsFlyer modela dados, os dados modelados por anúncios Meta não são considerados, uma vez que a AppsFlyer depende exclusivamente de dados confirmados e imparciais. Portanto, pode haver discrepâncias nos dados e na granularidade entre os relatórios do Meta ads Manager e os relatórios do AppsFlyer. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

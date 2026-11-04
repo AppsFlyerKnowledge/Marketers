@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **Em resumo:** Airship, um parceiro integrado da AppsFlyer, fornece a principal plataforma de engajamento mobile do mundo, ajudando milhares de empresas de todos os portes a estabelecer uma conexão direta e duradoura com seus clientes. Com o Airship, as empresas obtêm controle total sobre sua presença mobile — aplicativos, carteiras e dados em nível de usuário — para oferecer experiências que chamam a atenção e impulsionam ações no mobile ou em qualquer outro ponto de contato com o cliente.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-airship" />
 
 ## Configurando o Airship
 
@@ -52,9 +56,13 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para habilitar a configuração dos parâmetros de integração. O botão deve permanecer ativado enquanto você trabalhar com o Medialyzer.Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -77,6 +85,8 @@ Requisitos mínimos - Airship SDK - Versão 13.1.0 e acima.
    * [Mais informações sobre o Channel ID para Android](https://docs.airship.com/platform/android/segmentation/#airship-channel-ids).
 
    Esse parâmetro é enviado com cada postback e permite a identificação de cada usuário. Para fazer isso, você deve inserir as seguintes strings no código do seu aplicativo:
+
+   <div id="important-note" />
 
    > 📘 **Observação importante**
    >
@@ -126,6 +136,8 @@ Requisitos mínimos - Airship SDK - Versão 13.1.0 e acima.
    5. Clique em **Criar token**.
    6. No AppsFlyer, cole o Token no campo **Token Authentication**.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos ao Airship após as instalações e os reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
@@ -173,6 +185,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 As permissões não estão disponíveis para o Airship.
 
 </Accordion>
+
+<div id="set-up-and-manage-the-attribution-data-in-airship-console" />
 
 ## Configure e gerencie os dados de atribuição no console do Airship
 

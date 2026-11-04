@@ -26,6 +26,8 @@ x-zendesk:
 
 > **Visão geral:** enriqueça seus dados no nível do usuário, combinando-os com os dados de atribuição da AppsFlyer para criar relatórios agregados e obter insights valiosos.
 
+<div id="introduction" />
+
 ## Introdução
 
 Ao longo da história, o ecossistema de marketing mobile sempre usou dados no nível do usuário para gerar insights e otimizar campanhas publicitárias:
@@ -40,9 +42,13 @@ Com a ascensão de novas políticas de privacidade, o acesso a esses dados se to
 
 Esse é justamente o "problema" que o Data Clean Room (DCR) da AppsFlyer ajuda a solucionar.
 
+<div id="how-does-it-work" />
+
 ### Como ele funciona?
 
 Em vez de enviar esses dados para o ***anunciante***, para que ele faça a correspondência com seus próprios dados, o ***DCR assume essa tarefa*** – transferindo a responsabilidade para a AppsFlyer. Feito isso, o DCR analisa e agrupa esses dados, enviando-os de forma agregada aos anunciantes – e permitindo que eles acessem os insights agregados necessários,**sem violar a privacidade dos usuários.**
+
+<div id="how-does-the-dcr-obtain-data" />
 
 ### Como o DCR obtém esses dados?
 
@@ -51,6 +57,8 @@ Atualmente, essa solução usa 2 tipos de dados:
 * **Dados de origem personalizada:** dados no nível do usuários enviados para o armazenamento em cloud para uso do DCR. Esses dados se originam dos sistemas internos dos anunciantes (como os sistemas de BI ou CRM)
 * **Dados de atribuição:** dados no nível do usuário fornecidos pelos canais de mídia para atribuição na AppsFlyer
 
+<div id="what-does-the-dcr-do-with-the-data" />
+
 ### O que o DCR faz com esses dados?
 
 O DCR funciona de acordo com os princípios padrões das bases de dados. Ou seja, ele combina dados de diferentes tabelas (ou **“fontes”**) em um único conjunto de dados. Esse conjunto de dados é usado para criar **relatórios** que usam a combinação desses dados:
@@ -58,6 +66,8 @@ O DCR funciona de acordo com os princípios padrões das bases de dados. Ou seja
 * Para fazer a correspondência entre diferentes fontes e combiná-las em um único conjunto de dados, cada fonte deve compartilhar pelo menos um campo que identifique um usuário exclusivo do app **(“identificador”)** em comum com outra fonte.
 * Ao usar identificadores para a correspondência entre os dados no nível do usuário e os dados de atribuição, o DCR cria um conjunto que mescla essas informações.
 * Em seguida, para fornecer insights protegidos, o DCR processa esses dados e cria **relatórios agregados,** agrupados de acordo com as características **("dimensões")** definidas por você.
+
+<div id="dcr-terminology" />
 
 ## Terminologia do DCR
 
@@ -72,6 +82,8 @@ Listamos abaixo alguns dos termos mais usados no DCR:
 * **Relatório:** um arquivo de dados obtido pelo DCR após o processamento. Os relatórios são criados sempre que novas versões dos arquivos de fonte são enviados. Ao configurar um relatório na plataforma do DCR, você configura sua **estrutura** e **destino:**
   * **Estrutura do relatório:** é a especificação das fontes do anunciante e dos dados de atribuição que devem ser usados nos relatórios, seus identificadores correspondentes, métricas que devem ser incluídas e dimensões que devem ser usadas para o agrupamento dos relatórios.
   * **Destino do relatório:** a pasta do serviço em cloud para a qual a AppsFlyer deve enviar o relatório sempre que ele for processado. Essa pasta fica dentro de um bucket (“conector”).
+
+<div id="working-with-the-dcr-setup-workflow" />
 
 ## Trabalhando com o DCR (configuração do workflow)
 

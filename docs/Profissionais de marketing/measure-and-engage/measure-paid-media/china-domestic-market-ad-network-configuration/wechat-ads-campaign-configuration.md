@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Em resumo:** Saiba como mensurar suas campanhas com o WeChat na AppsFlyer.
 
+<div id="introduction" />
+
 ## Introdução
 
 O WeChat, um dos parceiros integrados da AppsFlyer, é um aplicativo chinês multifuncional de mensagens, rede social e pagamento mobile desenvolvido pela Tencent.
 
 Para configurar suas campanhas com o WeChat, siga as etapas abaixo.
+
+<div id="setting-up-your-campaign-on-wechat" />
 
 ## Configurar sua campanha no WeChat
 
@@ -54,6 +58,8 @@ Depois de inserir essas informações, confirme-as clicando no botão destacado.
 
 Copie as chaves e use-as ao configurar a campanha na AppsFlyer.
 
+<div id="setting-up-wechat-campaign-as-an-agency" />
+
 ### Configurar campanha do WeChat como agência
 
 As agências têm diferentes tipos de conta no WeChat. Dependendo do tipo de conta, algumas agências podem criar metas de conversão, e outras não.
@@ -61,6 +67,8 @@ As agências têm diferentes tipos de conta no WeChat. Dependendo do tipo de con
 Se sua conta permitir criar uma meta de conversão, você poderá prosseguir seguindo as instruções acima.
 
 Se você não tiver permissão para criar uma meta de conversão, poderá ver no WeChat uma meta criada por outra conta que gerencia o mesmo aplicativo. Nesse caso, peça ao anunciante que forneça o *encrypt\_key* e o *sign\_key* e use-os para configurar a campanha na AppsFlyer.
+
+<div id="setting-up-wechat-on-appsflyer" />
 
 ## Configuração do WeChat na AppsFlyer
 
@@ -83,13 +91,19 @@ A janela de configuração do WeChat inclui 4 guias: Integração, Link de atrib
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma all-installs network, o WeChat prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, incluindo orgânica. Recomenda-se selecionar **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação ao WeChat.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -105,6 +119,8 @@ Se você ainda não tiver o Sign ID, o WeChat App ID e a Encrypt Key, deverá ob
 
 <Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos ao WeChat após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
@@ -113,6 +129,8 @@ A AppsFlyer pode enviar postbacks automáticos ao WeChat após instalações e r
 
 Selecione **Somente eventos** **atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos ao WeChat.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada ao WeChat.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -146,6 +164,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao WeCha
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -167,6 +187,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas ao WeChat.
@@ -176,6 +198,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
 [![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 

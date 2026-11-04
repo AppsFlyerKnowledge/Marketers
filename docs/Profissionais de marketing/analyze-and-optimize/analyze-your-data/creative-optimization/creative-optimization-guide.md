@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-creative-optimization" />
+
 ## Sobre a otimização de criativos
 
 A **otimização de criativos** é o seu local centralizado para mensurar a performance dos criativos usados em todas as suas campanhas. Ele permite que você reúna facilmente todos os seus recursos criativos de todos os canais de mídia em um só lugar, ou em seu sistema de BI, e analise seu desempenho por dimensões selecionadas, em múltiplas campanhas, canais e muito mais. A otimização de criativos permite que você analise diferentes métricas e KPIs para obter insights críticos antes de planejar, selecionar e produzir seu próximo lote de criativos.
@@ -48,6 +50,8 @@ Com a otimização de criativos, você pode:
 * Identificar o declínio da eficácia dos criativos ao longo do tempo/canais/campanhas e tomar decisões informadas de otimização
 * E mais
 
+<div id="creative-assets" />
+
 ## Assets criativos
 
 Essa seção fornece informações sobre os assets criativos que mensuramos.
@@ -63,6 +67,8 @@ Os tipos de assets compatíveis incluem:
 * Anúncios em carrossel (apenas Meta)
 * HTML (incluindo Playable)
 * Texto
+
+<div id="notes" />
 
 > 📘 **Observações**
 >
@@ -91,6 +97,8 @@ A solução de otimização de criativos tem a capacidade única de identificar 
 
 Meta Advantage + (criativos dinâmicos) e campanhas universais para apps (UAC) do Google podem incluir criativos de anúncios com vários assets. No entanto, a AppsFlyer não detalha os dados no nível do asset. O Meta Ads fornece dados até o **nível do anúncio** e o Google fornece dados apenas até o **nível do grupo de anúncios**. Para esses tipos de criativos de anúncios, a AppsFlyer usa modelagem de dados para dividir os dados de performance entre os assets.
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Vamos supor que você tenha um criativo de anúncio no Facebook com vários assets. O Facebook atribui um total de 100 instalações, divididas em assets da seguinte forma: **o asset A** tem 60 instalações e **o asset B** tem 40 instalações, conforme mensurado pelo Facebook. Na AppsFlyer, vamos supor que o anúncio seja atribuído com 50 instalações (devido a diferenças de atribuição inerentes entre a AppsFlyer e <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns">SRNs</Anchor>). Para permitir a análise em nível de asset, a AppsFlyer distribui os dados de performance (impressões, cliques, instalações e custo) com base na proporção de métricas de assets em relação ao total, conforme ilustrado abaixo.
@@ -109,6 +117,8 @@ Meta Advantage + (criativos dinâmicos) e campanhas universais para apps (UAC) d
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## Como usar o dashboard
 
@@ -277,6 +287,8 @@ A tabela a seguir lista todos os parceiros de otimização de criativos, com a g
 
 Baixar arquivo: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
+<div id="to-set-up-partner-metrics" />
+
 #### **Para configurar métricas de parceiros:**
 
 Basta adicionar uma nova integração de parceiro e as métricas dos parceiros compatíveis serão automaticamente inseridas na otimização de criativos (o Unity Ads é uma exceção e segue **instruções específicas**). Depois de configuradas, essas métricas são exibidas com a palavra "Parceiro" ao lado.
@@ -350,6 +362,8 @@ Basta adicionar uma nova integração de parceiro e as métricas dos parceiros c
         ![Obtenha instruções do ID principal da organização 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
      5. Copie o **Organization ID**
 
+<div id="note" />
+
 > 📘 **Observação:**
 >
 > Recomendamos que você insira as credenciais das métricas do parceiro ao configurar uma nova integração. No entanto, isso não é obrigatório. Você pode salvar a integração e adicionar as credenciais posteriormente. Mas observe que extraímos 90 dias de dados do parceiro a partir do momento em que a integração do parceiro é criada, portanto, não inserir as credenciais da métrica do parceiro pode resultar na perda de dados.
@@ -366,6 +380,8 @@ Depois de selecionar seus filtros, você pode salvar suas configurações para a
 
 **Atenção:** Um ponto indicador laranja aparece ao lado da visualização atual se você fez alterações nas configurações do dashboard sem salvar.
 
+<div id="save-private-dashboard-view" />
+
 #### **Salvar visualização do dashboard em modo privado**
 
 **Para salvar uma visualização em modo privado (visível apenas para você):**
@@ -374,6 +390,8 @@ Depois de selecionar seus filtros, você pode salvar suas configurações para a
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. Digite um nome para o dashboard e clique **Salvar**.
 3. Use os ícones do menu para editar e excluir visualizações, alterar as configurações de compartilhamento de privado para compartilhado ou marcar uma visualização como favorita, definindo-a como a visualização padrão a ser exibida ao fazer login.
+
+<div id="save-shared-dashboard-view" />
 
 #### **Salvar visualização do dashboard em modo compartilhado**
 
@@ -384,6 +402,8 @@ Depois de selecionar seus filtros, você pode salvar suas configurações para a
 2. Digite um nome para o dashboard e clique **Salvar**.  
    A visualização está salva e aparece na lista de visualizações do dashboard para todos os outros usuários da conta.
 3. Use os ícones do menu para editar e excluir visualizações, alterar as configurações de compartilhamento de compartilhado para privado ou marcar uma visualização como favorita, definindo-a como a visualização padrão a ser exibida ao fazer login.
+
+<div id="share-view-url" />
 
 #### **Compartilhar URL de visualização**
 
@@ -397,6 +417,8 @@ Depois de selecionar seus filtros, você pode salvar suas configurações para a
   **Atenção:** URLs de visualização podem ser compartilhadas mesmo para dashboards privados. Quando a URL do dashboard privado é aberta, o nome do relatório que é exibido é "Relatório Não Salvo".
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## Tags personalizadas
 
@@ -528,6 +550,8 @@ Isso é útil para equipes de marketing e de criação cujos criativos são nome
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

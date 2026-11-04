@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Visão geral:** Faça login na AppsFlyer, adicione várias contas e redefina senhas de usuários.
 
+<div id="log-in-instructions" />
+
 ## Instruções de login
 
 Instruções de login para usuários novos e existentes. Isso inclui a criação de uma nova conta, o convite de um novo usuário ou como fazer login como usuário existente.
@@ -74,6 +76,8 @@ Se a 2FA estiver habilitada nas configurações de Gerenciamento de Segurança, 
 [Para redefinir a 2FA de um usuário, consulte este link](/docs/account-login-and-password-reset#resetting-twofactor-authentication-2fa).
 
 </Accordion>
+
+<div id="password-login-or-2fa-reset" />
 
 ## Redefinição de senha, login ou 2FA
 

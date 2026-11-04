@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## Sobre integrações de parceiros
 
 A integração com um parceiro importa de forma simples e contínua seus criativos de campanhas executadas por meio do parceiro para a ferramenta de <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide">otimização de criativos</Anchor>.
+
+<div id="data-availability" />
 
 ### Disponibilidade de dados
 
@@ -37,9 +41,13 @@ Depois que uma integração de parceiro for adicionada:
 * O sistema preenche dados de criativos e dados de desempenho da AppsFlyer dos últimos 90 dias. Os dados normalmente ficam disponíveis no Creative Optimization em 24 horas.
 * Os dados dos criativos continuarão a ser extraídos de parceiros integrados duas vezes por dia, todos os dias. Os dados são incorporados e combinados com outros pontos de dados de performance da AppsFlyer, como atribuição, gastos, cliques, impressões, receita etc. (os dados de performance da AppsFlyer são atualizados de hora em hora). Os **dashboards de otimização de criativos exibem os dados combinados de todos os processos acima e são atualizados uma vez por dia** **em UTC + 10** (todos os dados dos últimos 90 dias são atualizados).
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > para ver os dados de custo da AppsFlyer (como ROAS), é necessária uma <Anchor target="_blank" href="/marketers/pt/docs/roi360-cost-aggregation-overview">assinatura do ROI360</Anchor>.
+
+<div id="media-partner-integrations" />
 
 ## Integrações de parceiros de mídia
 
@@ -119,6 +127,8 @@ Essa seção descreve como configurar integrações com cada parceiro.
 4. Selecione os aplicativos que você está promovendo.
 5. Insira o **Account ID**, a **Campaign Management API key** e a **Reporting API key**.
 6. Feito isso, clique em **Salvar**.
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
@@ -436,6 +446,8 @@ Pré-requisitos: Você precisará de permissões de conta de anúncios para os a
 6. Conclua o login e forneça suas permissões. Observe que, para que a AppsFlyer extraia dados completos, é recomendado que você tenha permissões completas.
 7. Clique em **Salvar**.
 
+<div id="notes" />
+
 > 📘 **Observações**
 >
 > * `bytedanceglobal_int` está sendo gradualmente retirada e será desativada até março de 2024. Saiba mais no <Anchor target="_blank" href="/marketers/pt/docs/bulletin-tiktok-for-business-advanced-srn">boletim</Anchor>.
@@ -466,6 +478,8 @@ Pré-requisitos: Você precisará de permissões de conta de anúncios para os a
 
 **Atenção:** Se essas funções não estiverem disponíveis para você, entre em contato com seu CSM da Unity Ads.
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### Instruções para recuperar suas credenciais
 
 **Para recuperar o Key ID e a chave secreta:**
@@ -489,6 +503,8 @@ Pré-requisitos: Você precisará de permissões de conta de anúncios para os a
    ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
 5. Copie o **Organization core ID**.
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **Para selecionar uma função de conta de serviço (organização):**
 
 1. No dashboard da Unity, cliqueem **Administration**.   
@@ -506,6 +522,8 @@ Pré-requisitos: Você precisará de permissões de conta de anúncios para os a
 5. Clique em **Save**.
 
 **Atenção**: se você não tiver acesso a essas funções, entre em contato com seu customer success manager da Unity ou envie um e-mail para [unitads-support@unity3d.com](mailto:unityads-support@unity3d.com) para solicitar as permissões necessárias.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Para adicionar uma integração da Unity ao dashboard da otimização de criativos:**
 
@@ -570,6 +588,8 @@ Credenciais YouAppi para integração:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="creative-integrations-dashboard" />
@@ -593,6 +613,8 @@ Depois de adicionado, o dashboard exibe o status de todas as suas integrações 
 
 <Accordion title="Integrações de agências">
 
+<div id="add-an-agency-integration" />
+
 #### Adicionar uma integração de agência
 
 Você pode se integrar com suas agências parceiras para extrair seus dados para o dashboard da otimização de criativos.
@@ -615,6 +637,8 @@ Você pode se integrar com suas agências parceiras para extrair seus dados para
 * Para cada agência cujos dados de criativos você deseja ver no dashboard, será necessário criar uma integração de parceiro separada com a caixa de seleção "Agência" marcada.
 * Os dados estão disponíveis apenas para agências transparentes. <Anchor target="_blank" href="/marketers/pt/docs/view-agency-data">Saiba mais</Anchor>
 * Os dados de criativos serão extraídos apenas da agência. Isso significa que se você selecionou o Google Ads como parceiro, como no exemplo acima, mas também tem campanhas veiculadas diretamente com o Google Ads, será necessário criar uma integração de parceiro adicional para o Google Ads.
+
+<div id="grant-dashboard-access-to-an-agency" />
 
 #### Conceda o acesso ao dashboard
 

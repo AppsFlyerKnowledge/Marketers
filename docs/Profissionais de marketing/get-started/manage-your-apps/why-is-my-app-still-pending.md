@@ -30,6 +30,8 @@ Os aplicativos pendentes na AppsFlyer têm a mesma aparência dos aplicativos at
 
 ![Aplicativo_Pendente.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## O que está acontecendo?
 
 A AppsFlyer verifica automaticamente o status dos aplicativos várias vezes ao dia.
@@ -37,6 +39,8 @@ A AppsFlyer verifica automaticamente o status dos aplicativos várias vezes ao d
 Se o aplicativo ainda não estiver ativo na loja quando a AppsFlyer verificar o status do aplicativo, ele aparecerá como pendente no painel. Depois que o aplicativo é finalmente enviado ao iTunes ou ao Google, ele é atualizado para ativo e o logotipo do aplicativo muda para o logotipo original do aplicativo.
 
 O status do aplicativo no dashboard não afeta a coleta e a mensuração de dados. Se o aplicativo estiver ativo no Google Play ou na App Store, os usuários instalarem o aplicativo e interagirem com ele, os dados de instalação e de eventos in-app serão exibidos no dashboard da mesma forma.
+
+<div id="refreshing-the-app-status" />
 
 ## Atualizando o status do aplicativo
 
@@ -50,6 +54,10 @@ Para que o status do aplicativo mude para ativo, a AppsFlyer verifica seu status
 2. Ao lado do aplicativo pendente, clique em **Atualizar status.** Se o status do aplicativo não for alterado, o aplicativo ainda será exibido como Pendente. Se tiver sido atualizado, o status será exibido como Online e o logotipo será atualizado.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+
+<div id="ios" />
+
+<div id="store-country" />
 
 ## País da app store
 
@@ -65,6 +73,8 @@ Para alterar o país da Apple Store:
 2. Em **País da App Store**, escolha o país correto
 3. Vá para baixo e clique em **Salvar configurações**
 4. Se o aplicativo ainda aparecer como pendente, [clique em **Atualizar status**](/docs/why-is-my-app-still-pending#atualizando-o-status-do-aplicativo).
+
+<div id="android" />
 
 ### com o Android
 

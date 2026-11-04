@@ -24,9 +24,13 @@ x-zendesk:
 
 > **At a glance:** Automatize a criação e a gestão de regras de validação em escala. A API de Regras de Validação permite que equipes técnicas criem, atualizem, apliquem patches e excluam regras de forma programática, indo além dos limites de valores da UI e eliminando a sobrecarga do gerenciamento manual de regras.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > A API de Regras de Validação está disponível para clientes do Protect360. No momento, ela está em beta fechada, e o acesso é limitado e habilitado por conta. Entre em contato com seu Customer Success Manager (CSM) para solicitar acesso.
+
+<div id="about-the-validation-rules-api" />
 
 ## Sobre a API de Regras de Validação
 
@@ -61,6 +65,8 @@ A API de Regras de validação está disponível para clientes do Protect360. No
 
 </Accordion>
 
+<div id="how-it-works" />
+
 ## Como funciona
 
 <Accordion title="Autenticar">
@@ -70,6 +76,8 @@ A API usa autenticação por token Bearer (JWT).
 1. Na sua conta da AppsFlyer, acesse **Security Center** > **API tokens**.
 2. Gere um token.
 3. Inclua o token no cabeçalho **Authorization** das suas solicitações de API.
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
@@ -92,6 +100,8 @@ A API usa autenticação por token Bearer (JWT).
 O endpoint de patch é especialmente útil para atualizações de alta frequência. Você atualiza apenas o que mudou, não a regra inteira. Isso funciona bem para fluxos de trabalho, como atualizações diárias de listas de bloqueio de fontes de fraude.
 
 </Accordion>
+
+<div id="scope-and-supported-configurations" />
 
 ## Escopo e configurações compatíveis
 
@@ -156,6 +166,8 @@ Para ver todos os detalhes técnicos, incluindo referências de endpoints, esque
 
 </Accordion>
 
+<div id="faq" />
+
 ## Perguntas frequentes
 
 <Accordion title="Quem pode usar a API de regras de validação?">
@@ -211,6 +223,8 @@ Sem. Apenas a lógica E tem suporte entre dimensões.
 Somente eventos de instalação. Eventos in-app não são compatíveis com esta versão.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** mensure a qualidade dos seus usuários durante toda a jornada do usuário, registrando esses eventos in-app sugeridos para seu aplicativo de jogos.
 
+<div id="-gaming" />
+
 ## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Jogos
 
 Aplicativos de jogos incluem gêneros como arcade, estratégia, educação e jogos de azar. Os típicos eventos que sugerimos que você registre são compras in-app, compartilhamento em mídias sociais e convites para amigos. Além disso, você pode incluir eventos como subir de nível e concluir um tutorial no jogo.
@@ -42,6 +44,8 @@ Esses eventos também são relevantes para aplicativos de jogos que são executa
 * Xbox
 * Dispositivos mobile Windows
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Certifique-se de ler as <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#configurando-eventos-in-app">instruções</Anchor> para os profissionais de marketing sobre a implementação de eventos in-app.
@@ -52,6 +56,8 @@ Esses eventos também são relevantes para aplicativos de jogos que são executa
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![Fluxograma_para_eventos_recomendados jornada_do_utilizador_da_app_de_jogos](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -217,6 +223,8 @@ Quando o usuário convida com sucesso um amigo para fazer download e instalar o 
 | af\_description | Contexto do convite | Try this app |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

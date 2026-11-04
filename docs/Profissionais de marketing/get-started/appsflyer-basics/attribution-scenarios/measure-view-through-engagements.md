@@ -22,19 +22,27 @@ x-zendesk:
 ---
 > **Visão geral:** um usuário que visualiza um anúncio (impressão) e logo depois instala o aplicativo é atribuído pela atribuição de visualização.
 
+<div id="overview" />
+
 ## Visão geral
 
 A atribuição de visualização mede instalações, reatribuições e reengajamentos de usuários que visualizaram um anúncio, mas não clicaram nele.
 
+<div id="view-through-attribution-flow" />
+
 ### Fluxo de atribuição de exibição
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### Terminologia
 
 * **Impressão:** a exibição de um anúncio para um usuário, independentemente de qualquer clique ou outro envolvimento do usuário.
 * **Instalação**: neste artigo, inclui instalações, reatribuições e reengajamentos.
 * **Atribuição de exibição:** atribuição de instalações a uma fonte de mídia depois que o usuário vê uma impressão.
+
+<div id="view-through-attribution-principles" />
 
 ### Princípios de atribuição de exibição
 
@@ -47,12 +55,16 @@ As impressões são candidatas para atribuição de visualização usando os seg
 * Se várias impressões forem encontradas, a impressão mais recente será considerada.
 * Os cliques têm prioridade sobre as impressões. Isso significa que, se houver cliques na janela de lookback de cliques, o clique mais recente vence. A impressão mais recente é atribuída como colaborador (assistência).
 
+<div id="view-through-lookback-window" />
+
 ### Janela de lookback de exibição
 
 * Para não-SRNs, a janela de lookback de atribuição de exibição é de 1-24 horas. Para SRNs, a janela de lookback pode ser mais longa.
 * Para configurar a janela:
   * **Não SRNs:** defina a duração usando links de atribuição de impressão definindo o parâmetro  `af_viewthrough_lookback`. Se o parâmetro não estiver definido, uma janela padrão de 24 horas será usada.
   * **SRNs**: a janela é determinada pelo SRN. Recomendamos definir o mesmo valor que os SRNs na AppsFlyer.
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### Relatórios e métricas de atribuição de visualização
 
@@ -63,6 +75,8 @@ As impressões são candidatas para atribuição de visualização usando os seg
   * Os dados no nível do usuário (dados brutos) dos usuários atribuídos por meio da atribuição de visualização estão disponíveis e semelhantes aos dos usuários atribuídos por clique. No entanto, alguns parceiros restringem a disponibilidade desses dados.
   * Os dados de impressão (semelhantes aos dados de cliques) estão disponíveis.
   * O campo attributed\_touch\_type contém a *impressão de valor.*
+
+<div id="view-through-operations" />
 
 ## Operações de exibição
 

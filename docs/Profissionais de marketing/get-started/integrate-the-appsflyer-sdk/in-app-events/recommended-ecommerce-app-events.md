@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** mensure a qualidade dos seus usuários durante toda a jornada do usuário, registrando eventos in-app sugeridos para seu aplicativo de eCommerce.
 
+<div id="-ecommerce" />
+
 ## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" /> Comércio eletrônico
 
 Aplicativos de eCommerce permitem que os compradores pesquisem e comprem mercadorias online. Os eventos típicos que sugerimos que você registre são pesquisas, compras, adições ao carrinho e adições à lista de desejos.
@@ -34,6 +36,8 @@ O registro desses eventos pode ajudar a determinar:
 * Quantos consumidores concluem um checkout
 * Quantos consumidores são recorrentes e quantos compram apenas uma vez
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Certifique-se de ler <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#configurando-eventos-in-app">as instruções</Anchor> para os profissionais de marketing sobre a implementação de eventos in-app.
@@ -44,6 +48,8 @@ O registro desses eventos pode ajudar a determinar:
 > Para mais informações sobre como registrar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia de eventos avançados dentro do aplicativo</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -270,6 +276,8 @@ Quando o usuário acessa a página de agradecimento após uma compra bem-sucedid
 | af\_receipt\_id | ID do pedido<br /><br />**Parâmetro necessário para validação de compra do CRITEO e Google Ad Words** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

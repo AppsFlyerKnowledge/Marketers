@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Visão geral:** Integre seu jogo ou aplicativo do Nintendo Switch com a AppsFlyer para receber dados de atribuição e de eventos para suas campanhas no Nintendo Switch.
 
+<div id="about-nintendo-switch-attribution" />
+
 ## Sobre a atribuição no Nintendo Switch
 
 Os aplicativos em execução no Nintendo Switch podem se integrar à AppsFlyer por meio da API S2S para receber dados de atribuição e mensuração de performance sobre quais fontes e campanhas impulsionam a abertura do aplicativo e eventos in-app. Esses insights são usados para mensurar e otimizar atividades de marketing.
+
+<div id="example-attribution-flow" />
 
 ### Exemplo de fluxo de atribuição
 
@@ -36,6 +40,8 @@ A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jor
    A página inicial também é útil porque fornece links para as várias plataformas compatíveis com o jogo. Por exemplo, você pode ter links para sua página do Xbox, da Microsoft Store e do Steam na sua página inicial.
 3. Página do aplicativo: Esta é a URL da página do seu aplicativo no Nintendo Switch, que hospeda seu aplicativo para os clientes fazerem o download.
 4. Instalação do jogo: O usuário instala o jogo, acionando a atribuição e a gravação de eventos e sessões no aplicativo.
+
+<div id="integration-procedures" />
 
 ## Etapas de integração
 
@@ -177,6 +183,8 @@ A tabela abaixo lista as tarefas necessárias para integrar seu aplicativo do Ni
 | Dados de custo | Os dados de custo devem ser enviados por meio do <Anchor target="_blank" href="/marketers/pt/docs/import-cost-data">Ad Spend Ingestion</Anchor> usando o método de upload de arquivo por e-mail. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

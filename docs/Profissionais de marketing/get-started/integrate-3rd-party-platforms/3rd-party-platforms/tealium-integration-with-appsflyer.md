@@ -24,13 +24,19 @@ x-zendesk:
 
 <Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
+<div id="overview" />
+
 ## Visão geral
 
 Ao integrar o Tealium com a AppsFlyer, os clientes com dispositivos móveis podem usar o SDK de atribuição mobile da AppsFlyer para enviar dados de atribuição de conversão diretamente para o perfil Tealium AudienceStream.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para este parceiro, independentemente da seleção configurada para envio de postbacks.
+
+<div id="setting-up-tealium" />
 
 ## Configurando o Tealium
 
@@ -39,6 +45,8 @@ Você pode escolher uma das seguintes formas de integrar o Tealium com a AppsFly
 * Integração do cliente
 * Integração do servidor
 
+<div id="client-side-integration" />
+
 ### Integração do cliente
 
 Use comandos remotos para bibliotecas iOS e Android, permitindo que o código nativo seja acionado no SDK da AppsFlyer.
@@ -46,6 +54,8 @@ Use comandos remotos para bibliotecas iOS e Android, permitindo que o código na
 **Para integrar o Tealium usando a integração do cliente:**
 
 * Siga o <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">guia de integração de comando remoto</Anchor>
+
+<div id="server-side-integration" />
 
 ### Integração do servidor
 

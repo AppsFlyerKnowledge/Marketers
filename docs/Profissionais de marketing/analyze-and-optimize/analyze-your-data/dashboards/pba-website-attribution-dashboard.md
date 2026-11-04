@@ -23,6 +23,8 @@ x-zendesk:
 
 [![Website_Atribuição.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
 
+<div id="pba-website-attribution" />
+
 ## Atribuição do site PBA
 
 Usando o dashboard de Atribuição do Site, os anunciantes obtêm insight sobre as fontes de mídia que impulsionam visitantes e conversões.
@@ -36,6 +38,8 @@ Usando o dashboard de Atribuição do Site, os anunciantes obtêm insight sobre 
 | --- | --- |
 | ![Icon1.png](https://files.readme.io/b20da70a56d881dd2fe31b18df8919db43b47e3e2338b89da7ef5ef6467590d6-360013383937.png) | **Eficácia**<br /><br />Quais canais de aquisição oferecem os melhores KPIs de desempenho, como taxa de conversão ou ARPU? |
 | ![s4.png](https://files.readme.io/9a426232668022a9b4d006e685d2384d61efe4814c377aa9295e9b7887f14fef-360013383957.png) | **Análise comparativa**<br /><br />Como minhas campanhas pagas se comparam aos meus canais próprios e ao tráfego orgânico? Em quais tipos de dispositivos e plataformas os meus usuários da web convertem? |
+
+<div id="dashboard-reference" />
 
 ## Referência do dashboard
 

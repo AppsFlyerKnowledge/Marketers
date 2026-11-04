@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Resumo:** saiba mais sobre como integrar o Meta ads com a AppsFlyer.
 
+<div id="meta-ads-setup-guide" />
+
 ## Guia de configuração do Meta ads
 
 Quanto tempo leva para começar a atribuir seus anúncios de aplicativos mobile do Meta ads com a AppsFlyer?
@@ -36,6 +38,8 @@ Quanto tempo leva para começar a atribuir seus anúncios de aplicativos mobile 
 Se você já tem o <Anchor target="_blank" href="/marketers/pt/docs/integrate-the-appsflyer-sdk">SDK da AppsFlyer integrado em seu aplicativo</Anchor> e já definiu seu aplicativo no Meta ads, a resposta é: menos de um minuto!
 
 Não é necessário implementar o Login do Facebook ou integrar seu aplicativo com o SDK do Facebook para realizar a atribuição mobile. Basta seguir as instruções do [passo a passo da configuração](#configuração-básica-de-atribuição-do-meta-ads) abaixo. Depois, confira as [opções de configuração avançada](#configuração-avançada-de-atribuição-do-meta-ads) para o Meta ads.
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## Configuração básica de atribuição do Meta ads
 
@@ -78,6 +82,8 @@ A partir de 17 de junho de 2025, o Meta reativou o relatório de **Advanced Mobi
 1. Visite <Anchor target="_blank" href="https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms">Meta Ads</Anchor>.
 2. Selecione o(s) app ID(s) relevante(s).
 3. Aceite os termos de Advanced Mobile Measurement do Meta.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -123,6 +129,8 @@ A partir de 17 de junho de 2025, o Meta reativou o relatório de **Advanced Mobi
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## Configuração avançada de atribuição do Meta ads
 
 Com a atribuição básica já configurada para o Meta ads, é hora de algumas configurações rápidas e avançadas de atribuição.
@@ -135,7 +143,11 @@ Com a atribuição básica já configurada para o Meta ads, é hora de algumas c
 
 O Meta Ads compartilha metadados de campanha para anúncios de aplicativos Android que levam os usuários para a Play Store. Nesse contexto, os campos de atribuição estão disponíveis para os anunciantes na Google Play Install Referrer API, que deve ser <Anchor target="_blank" href="/marketers/pt/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">integrada ao seu aplicativo.</Anchor> Os campos fornecidos através da Google Play install referrer API preenchem os relatórios de dados brutos da AppsFlyer com o tipo de correspondência `gp_referrer`. Isso só está disponível após o envio da chave de descriptografia e depois que a instalação é atribuída ao Meta ads. Isso permite que a AppsFlyer atribua usuários que não têm um ID de publicidade (habilitado para LAT).
 
+<div id="meta-install-referrer" />
+
 #### **Install referrer do Meta**
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -148,6 +160,8 @@ Além da Google Play install referrer API, o install referrer do Meta permite qu
 
 Como resultado, você pode ver um aumento nas instalações atribuídas ao Meta em relatórios de dados brutos. Quando uma instalação é atribuída através da Google Play install referrer API ou do install referrer do Meta, os dados ficam disponíveis em relatórios de dados brutos. Os campos que podem estar disponíveis para atribuição por meio do install referrer do Meta preenchem os relatórios de dados brutos da AppsFlyer com o tipo de correspondência `fb_referrer` para a atribuição do aplicativo do Facebook e `ig_referrer` para a atribuição a partir do aplicativo do Instagram. Isso só está disponível quando a chave de descriptografia é submetida e uma instalação é atribuída ao Meta ads. A chave de descriptografia do install referrer do Meta é a mesma chave usada para o Google Play install referrer e não precisa ser fornecida à AppsFlyer uma segunda vez.
 
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
 #### **Campos de atribuição de campanha disponíveis por meio do referrer:**
 
 * ID do anúncio
@@ -159,6 +173,8 @@ Como resultado, você pode ver um aumento nas instalações atribuídas ao Meta 
 * Account ID
 * Canal
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > * **Para a Google Play Install Referrer API:**
@@ -166,6 +182,8 @@ Como resultado, você pode ver um aumento nas instalações atribuídas ao Meta 
 >   * O campo Canal é determinado pelo valor do canal recebido através da Google Play Referrer API (enviado para o Google Play pelo Meta). Se for recebida uma string vazia, o campo canal exibirá "None".
 >
 > * **Para o install referrer do Meta:** Consulte os <Anchor target="_blank" href="/marketers/pt/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">pré-requisitos e as ações necessárias</Anchor> descritas nesse boletim.
+
+<div id="meta-install-referrerfaq" />
 
 #### Install referrer do Meta – Perguntas frequentes
 
@@ -188,6 +206,8 @@ A segmentação ampla é necessária para receber dados de view-through. A confi
 * Segmentação detalhada: Os segmentos de interesse, os comportamentos e os dados demográficos avançados são definidos como flexíveis.
 * Audiências personalizadas: definir como flexível.
 * Para "flexível", deve ser selecionada a opção "Advantage detailed targeting" para campanhas de anúncios: [![](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Dados criptografados da Google Play Referrer API ou do install referrer do Meta
 
@@ -238,10 +258,14 @@ Essa integração fornece dados agregados sobre custo, cliques e impressões par
 
 **Para excluir uma conta do Meta Ads conectada:** Na coluna ações, passe o mouse sobre uma conta, clique em **Remover conexão.**
 
+<div id="notes" />
+
 > 📘 **Observações**
 >
 > * Se você já estiver conectado ao Meta ads, quando clicar no botão **f login**, a janela abre e fecha imediatamente. Esse é um comportamento padrão.
 > * Se você tiver vários usuários com permissões para o Meta ads, recomendamos que você faça o login para todos eles, para <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">evitar receber dados parciais</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Status de sincronização dos dados de custo
 
@@ -283,6 +307,8 @@ Saiba mais sobre como enriquecer seus dados com <Anchor target="_blank" href="/m
   * Conjuntos de caracteres não latinos (ingleses): desde o dia 12 de janeiro de 2020, o Meta ads rejeita caracteres chineses. A AppsFlyer não testou outros conjuntos de caracteres e você deve usá-los somente depois de verificar com o Meta ads se há suporte para esses conjuntos de caracteres em postbacks.
 * Os nomes dos eventos são sensíveis a maiúsculas e minúsculas. Para evitar discrepâncias, use o nome do evento correto para todas as fontes de mídia e versões do aplicativo.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > o Meta ads pode otimizar suas campanhas com base nos dados de receita de anúncios, <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-in-app-event-mapping#mapeamento-de-dados-de-receita-de-anúncios-para-otimização-de-campanhas">mapeando o evento af\_ad\_revenue para o evento correto do Meta</Anchor>.
@@ -312,6 +338,8 @@ Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/retargeting-
 
 Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns#deep-linking-com-srns">usuários de deep link de SRNs como o Meta ads</Anchor>.
 
+<div id="whatsapp-retargeting-campaign-attribution" />
+
 #### Atribuição de campanhas de retargeting do WhatsApp
 
 A AppsFlyer permite a mensuração de campanhas de marketing no WhatsApp, que são usadas para reengajamento, via atribuição de deep linking tanto no iOS quanto no Android.
@@ -331,6 +359,8 @@ Quando o **compartilhamento avançado de dados** está ativo, o Meta recebe post
 Além disso, quando o **compartilhamento avançado de dados** está ativado, a AppsFlyer atribui esses eventos. Quando desativado, apenas postbacks e eventos de dispositivos com um IDFA são enviados e atribuídos.
 
 Esse método atribui instalações por click-through e view-through no iOS, bem como reengajamentos de deep linking, para dispositivos com opt-out único e duplo. A atribuição se baseia na atribuição de último toque com uma janela de atribuição máxima de 24 horas.
+
+<div id="note-3" />
 
 > 📘 **Nota**
 >
@@ -370,6 +400,8 @@ A tabela abaixo descreve quais objetivos de campanha do Meta Ads são compatíve
 | Awareness | Com suporte. | Não suportado | O nome ou ID exclusivo de cada evento, conforme definido no Meta Ads As configurações de mapeamento possíveis são: | <ul><li>Requer que **Enable Install Tracking** esteja ativo.</li></ul> |
 | Leads | Com suporte. | Não suportado | Configure ao nível do conjunto de anúncios em **Conversão**. | <ul><li>Requer que **Ativar rastreamento de instalação** esteja ativo.</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **Consulte também**
 >
 > * <Anchor target="_blank" href="/marketers/pt/docs/onelink-guide">Guia do OneLink</Anchor>
@@ -397,6 +429,8 @@ Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/send-opendsr-a
 
 Se seu aplicativo usa Audience Network Ad Revenue do Meta para monetização de anúncios, é possível registrar suas receitas do Meta ads na AppsFlyer. É possível, com ou sem os dados de receitas de compras in-app, ter uma **visão completa das receitas de seus usuários**.
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### Registrar a receita de anúncios do Audience Network do Meta
 
 1. Na aba **Receita de anúncios** , ative **Obter dados de receita de anúncios**.
@@ -423,9 +457,13 @@ Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-an
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## Aggregate Event Measurement (AEM) para iOS
 
 A AppsFlyer oferece suporte à solução de AEM do Meta ads. Essa solução ajuda a otimizar as conversões iOS e os eventos in-app, atribuindo também reengajamentos iOS no Meta ads.
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Resolução de problemas de integração do Meta ads
 
@@ -497,9 +535,13 @@ Configuração incorreta – falha na atribuição.
 
 </Accordion>
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### Atualizações do iOS 14 para Meta ads
 
 A AppsFlyer assegura de que a nossa integração de MMP com o Meta ads sempre implemente o sinalizador *Advertiser Tracking Enabled*. Ou seja, você não precisa executar nenhuma ação na AppsFlyer. Essas informações são oferecidas de acordo com a lista de fevereiro de 2021 de diretrizes do iOS 14 para aplicativos do Meta ads.
+
+<div id="see-also-1" />
 
 > 📄 **Veja também**
 >

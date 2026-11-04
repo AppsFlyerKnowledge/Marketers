@@ -25,6 +25,8 @@ x-zendesk:
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
+<div id="activate-partner" />
+
 ## Ativar parceiro
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -40,9 +42,13 @@ x-zendesk:
    Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
 5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo. Para obter uma descrição detalhada do header da Janela de Configuração de Parceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="setting-up-avow-gmbh" />
+
 ## Configuração da Avow GmbH
 
 A integração com a Avow GmbH oferece suporte para a atribuição de click-through e view-through. A janela de configuração inclui as seguintes abas: integração, link de atribuição, custo, receita de anúncios e permissões. Para a Avow GmbH, as abas disponíveis são as de integração, link de atribuição e permissões.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -55,9 +61,13 @@ A integração com a Avow GmbH oferece suporte para a atribuição de click-thro
 
 A aba **integração** inclui várias seções, conforme descrito abaixo.
 
+<div id="activate-partner-1" />
+
 #### Ativar parceiro
 
 Para configurar a integração, você deve primeiro <Anchor target="_blank" href="/marketers/pt/docs/amazon-ads-campaign-configuration#ativar-parceiro">habilitar</Anchor> o botão **ativar parceiro**. Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ativar e desativar integrações de parceiros</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Privacidade avançada
 
@@ -69,25 +79,35 @@ Somente para aplicativos iOS: seu controle sobre os dados compartilhados com o p
 | Os postbacks são enviados de acordo com o <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks">template de privacidade avançada</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">Dados agregados e anônimos</Anchor> são compartilhados com o parceiro, o que significa que nenhum dado no nível do usuário (ID do dispositivo) é compartilhado. |  |
 
+<div id="general-settings" />
+
 #### Configurações gerais
 
 **token**
 
 Adicione o token de verificação fornecido pelo especialista da AVOW (AM/BDM).
 
+<div id="install-attribution" />
+
 #### Atribuição de instalação
 
 Para atribuir instalações com view-through obtidas na Avow GmbH, ative a **atribuição de instalação com view-through**. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 #### Postbacks padrão
 
 Postbacks de instalações e de instalações rejeitadas são enviados somente para esse parceiro.
+
+<div id="in-app-event-settings" />
 
 #### Configurações de eventos in-app
 
 **token**
 
 Adicione o token de verificação fornecido pelo especialista da AVOW (AM/BDM).
+
+<div id="in-app-event-postbacks" />
 
 #### Postback de eventos in-app
 
@@ -110,6 +130,8 @@ Configure o mapeamento de eventos in-app com eventos da Avow GmbH, enviados via 
    1. No canto superior esquerdo, abaixo do nome do parceiro, clique no nome do aplicativo para abrir a lista de apps.
    2. Selecione a partir da lista suspensa.
    3. Repita as <Anchor target="_blank" href="/marketers/pt/docs/amazon-ads-campaign-configuration#integration-tab">etapas de integração</Anchor> para o aplicativo selecionado.
+
+<div id="note-1" />
 
 > 📘 **Observação**
 >
@@ -146,6 +168,8 @@ A receita de anúncios não está disponível para a Avow GmbH.
 <Accordion title="Aba de permissões">
 
 Selecione as permissões que você deseja conceder à Avow GmbH, para que o parceiro possa acessar seus dados e executar diferentes ações.
+
+<div id="note-2" />
 
 > 📘 **Observação**
 >

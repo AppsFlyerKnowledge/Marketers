@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Visão geral:** configure um ou mais data warehouses (BigQuery, Snowflake) e/ou buckets de armazenamento em nuvem (Amazon S3, GCS) para compartilhar dados com o Data Clean Room e receber relatórios.
 
+<div id="overview" />
+
 ## Visão geral
 
 A preparação para usar o Data Clean Room (DCR) envolve a configuração de:
@@ -36,6 +38,8 @@ Criar uma conexão de entrada ou saída é um processo de 2 etapas:
 * **Etapa #1 –** Use as interfaces de seus serviços de nuvem selecionados para prepará-los para uso com o DCR (este artigo).
 * **Etapa #2 –** Use a plataforma da AppsFlyer para conectá-los ao DCR. (Consulte <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-connections">Data Clean Room—Trabalhando com conexões</Anchor>).
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Consulte <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-sources#requisitos-de-dados-de-origem">Data Clean Room—Trabalhando com fontes</Anchor> para obter informações completas sobre os requisitos de dados de origem:
@@ -43,6 +47,8 @@ Criar uma conexão de entrada ou saída é um processo de 2 etapas:
 > * Formato de dados *(para todas as fontes)*
 > * Colunas da tabela *(para origens em data warehouses)*
 > * Nome e formato do arquivo *(para fontes em buckets de armazenamento em nuvem)*
+
+<div id="supported-cloud-services" />
 
 ### Serviços de nuvem compatíveis
 
@@ -53,14 +59,20 @@ Dois tipos de serviços em nuvem são suportados para conexões de entrada e sa�
 
 Você pode usar uma ou qualquer combinação desses serviços para conexões de entrada e saída.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Se você estiver usando várias fontes personalizadas para um único relatório, elas devem estar localizadas em buckets de armazenamento em nuvem.
 > * É muito comum usar o mesmo bucket de armazenamento em nuvem no Amazon S3 ou GCS para conexões de entrada e saída. Certifique-se de seguir as [instruções especiais para essa configuração](/docs/data-clean-room-setting-up-cloud-services#configurando-o-mesmo-bucket-de-armazenamento-em-nuvem-para-conexões-de-entrada-e-saída).
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## Configurando serviços de nuvem para conexões de entrada
 
 Prepare seus serviços de nuvem selecionados para uso com conexões de entrada DCR de acordo com as instruções nas abas a seguir.
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### Data warehouses – BigQuery e Snowflake
 
@@ -130,6 +142,8 @@ Prepare seus serviços de nuvem selecionados para uso com conexões de entrada D
 9. Clique no botão **Criar compartilhamento**.
 
 </Accordion>
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### Buckets de armazenamento em nuvem – Amazon S3 e GCS
 
@@ -237,6 +251,8 @@ Você pode usar um ou mais buckets para fazer upload de dados para o DCR (no Ama
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## Configurando serviços de nuvem para conexões de saída
 
 O DCR entrega relatórios para seus serviços de nuvem selecionados usando o <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers">Data Locker da AppsFlyer</Anchor>.
@@ -244,6 +260,8 @@ O DCR entrega relatórios para seus serviços de nuvem selecionados usando o <An
 * **Observação:** para receber relatórios do DCR não é necessário uma assinatura premium do Data Locker. Se você estiver interessado em receber outros relatórios da AppsFlyer por meio do Data Locker, entre em contato com seu CSM ou envie um e-mail para [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 Seus relatórios DCR podem ser entregues em um ou mais locais em seus serviços de nuvem (independentemente de você usar ou não os mesmos serviços para conexões de entrada). Prepare-os para uso com conexões de saída de acordo com as instruções nas abas a seguir.
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### Data warehouses – BigQuery e Snowflake
 
@@ -289,6 +307,8 @@ O procedimento para preparar o Snowflake para conexões de saída é concluído 
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### Buckets de armazenamento em nuvem – Amazon S3 e GCS
 
 O procedimento para preparar buckets de armazenamento em nuvem para conexões de saída é muito semelhante ao de prepará-los para [conexões de entrada](/docs/data-clean-room-setting-up-cloud-services#configurando-serviços-de-nuvem-para-conexões-de-entrada) (incluindo as instruções relevantes para ambos os serviços de armazenamento em nuvem).
@@ -314,6 +334,8 @@ Siga as instruções para criar um [bucket GCS para conexões de entrada](/docs/
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## Configurando o mesmo bucket de armazenamento em nuvem para conexões de entrada e saída
 
 Conforme mencionado anteriormente, é comum usar o mesmo bucket no Amazon S3 ou GCS para conexões de entrada e saída.
@@ -329,9 +351,13 @@ As instruções para ambos os cenários estão incluídas nas abas abaixo:
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### Criando um novo bucket para conexões de entrada/saída
 
 Siga as instruções para criar um [bucket do Amazon S3 para conexões de entrada](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (sem alterações nesse procedimento).
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### Modificando um bucket existente usado anteriormente apenas para o Data Locker
 
@@ -382,11 +408,15 @@ A modificação de um bucket existente que você usou anteriormente apenas para 
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### Criando um novo bucket para conexões de entrada/saída
 
 Siga as instruções para criar um [bucket GCS para conexões de entrada](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). Modifique a etapa 4 desse procedimento para inserir as **2 contas** a seguir na caixa **Novos membros** :  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### Modificando um bucket existente usado anteriormente apenas para o Data Locker
 

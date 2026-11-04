@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **Visão geral:** as campanhas de retargeting (remarketing) motivam os usuários a abrir e se reengajar com o aplicativo ou fazer com que os usuários que excluíram o aplicativo o reinstalem.
 
+<div id="retargeting-fundamentals" />
+
 ## Fundamentos do retargeting
 
 A atribuição de retargeting ocorre quando um usuário engaja com uma campanha de retargeting clicando em um [link de atribuição de retargeting](/docs/retargeting-attribution-guide#retargeting-attribution-links) ou <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template">deep link</Anchor>. O resultado disso é em um dos seguintes eventos de atribuição:
@@ -38,6 +40,8 @@ A atribuição de retargeting ocorre quando um usuário engaja com uma campanha 
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 Antes de executar campanhas de retargeting, revise as regras de reengajamento e os casos de exemplo nas seções a seguir e configure o retargeting conforme descrito na seção sobre procedimentos de retargeting. Para facilitar a compreensão, você deve estar familiarizado com o <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">modelo de atribuição</Anchor> da AppsFlyer e com as janelas de atribuição associadas.
+
+<div id="tip" />
 
 > 👍 **Dica**
 >
@@ -62,6 +66,8 @@ O diagrama a seguir contém o conjunto de regras de reengajamento. Use-o como um
 
 As tabelas a seguir contêm informações de referência que dizem respeito às janelas relacionadas à atribuição de retargeting.
 
+<div id="inclusion-windows" />
+
 #### Janelas de inclusão
 
 | Tipo de janela | Descrição |
@@ -70,6 +76,8 @@ As tabelas a seguir contêm informações de referência que dizem respeito às 
 | Lookback de clique | A duração máxima desde o momento em que um usuário clica em um anúncio até abrir um aplicativo.<br /><br />**Configuração:** Link de atribuição<br /><br />**Duração**:<ul><li>Padrão: 7 dias</li><li>Intervalo: 1-23 horas/1-30 dias</li></ul>**Observações da SRN:** verifique com a SRN qual é sua política específica de janela de lookback. |
 | Re-engajamento | Considere o seguinte em relação à janela de reengajamento:<ul><li>A janela começa quando o usuário abre o aplicativo pela primeira vez depois de se engajar com o canal de mídia de retargeting.</li><li>Os eventos in-app são <Anchor target="_blank" href="/marketers/pt/docs/resolve-retargeting-double-attribution">atribuídos duas vezes</Anchor> aos canais de mídia de retargeting e de aquisição de usuários ao longo da duração da janela.</li><li>A duração da janela é determinada pela configuração do aplicativo ou pela SRN.</li><li>Se o usuário engajar com outra campanha de retargeting durante a janela de reengajamento, que não é bloqueada por uma janela de exclusão, a janela de reengajamento atual termina imediatamente e uma nova janela de reengajamento será iniciada.</li><li>No contexto de uma reatribuição: A duração da **janela de atribuição**é ilimitada(semelhante às instalações). No entanto, essa janela termina no caso de uma nova instalação, reinstalação ou devido a limitações de retenção de dados.</li></ul>**Configuração:** Link de atribuição<ul><li>Padrão: 30 dias</li><li>Intervalo: 1-23 horas/1-90 dias/tempo de vida</li></ul>**Observações para SRN**: configurável para SRNs<br /><br />Se você alterar a configuração da janela, a alteração afetará os reengajamentos no futuro. Isso não tem impacto sobre os reengajamentos existentes. |
 
+<div id="exclusion-windows" />
+
 #### Janelas de exclusão
 
 | Tipo de janela | Descrição |
@@ -77,6 +85,8 @@ As tabelas a seguir contêm informações de referência que dizem respeito às 
 | Intervalo mínimo entre conversões de reengajamento | Não registrar um novo reengajamento durante a janela de exclusão.<br /><br />**Intervalo mínimo entre conversões de reengajamento**<ul><li>No reengajamento, uma janela durante a qual os eventos in-app são atribuídos tanto às campanhas de retargeting (principal) quanto de UA (não primária) é aberta.</li><li>Isso permite a mensuração da performance da campanha de retargeting.</li><li>Se outra rede ou campanha trouxer um reengajamento durante esta janela:<ul><li>[Padrão] a janela de reengajamento existente é fechada, outro reengajamento é registrado e eventos subsequentes no aplicativo são atribuídos ao reengajamento mais recente.</li><li>Para evitar isso, defina o tempo mínimo entre conversões de reengajamento. Nesse caso, um novo reengajamento pode ser registrado somente após o tempo mínimo decorrido.</li></ul></li><li>Essa definição não tem impacto nos casos em que a janela de reengajamento é menor do que a duração dessa definição. Exemplo: Exemplo: se a janela de reengajamento é de 1 dia, e esta configuração é de 4 dias, então esta configuração não tem qualquer impacto.</li><li>Essas configurações não afetam a duração entre a instalação e o reengajamento.</li></ul>**Configuração:** Página de configurações do aplicativo<br /><br />**Duração**:<ul><li>Padrão: Nenhuma</li><li>Intervalo: 1-23 horas/1-30 dias</li></ul> |
 | <Anchor target="_blank" href="/marketers/pt/docs/set-retargeting-inactivity-window">Período mínimo de inatividade</Anchor> | Não registe um reengajamento ou reatribuição durante o período de exclusão.<br /><br />**Configuração:** página de configurações de parceiros integrados na aba Integração.<br /><br />**Duração**:<ul><li>Padrão: Nenhuma</li><li>0-30 dias</li></ul>**Observações da SRN**: considere que as SRNs geralmente têm suas próprias regras de período de inatividade. Se a configuração for diferente da SRN, isso pode causar discrepâncias. |
 | <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window">Reatribuição</Anchor> | A janela de reatribuição afeta as reatribuições, mas não os reengajamentos.<br /><br />Os usuários que reinstalam durante a janela de reatribuição depois de engajar com uma campanha de retargeting são atribuídos às fontes de mídia de retargeting. Leitura relacionada: <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#reinstalls">Reinstalações</Anchor><br /><br />**Configuração:** Configurações do aplicativo |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### Exemplo de fluxo de implementação das regras
 
@@ -104,6 +114,8 @@ Checklist de regras de reengajamento para atribuição de click-through e view-t
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## Operações de retargeting
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ As seguintes configurações são necessárias dependendo do cenário.
 | --- | --- | --- |
 | Re-engajamento | <ol><li>Na AppsFlyer, no menu lateral, selecione **Configurações**> **Configurações do aplicativo**.</li><li>Verifique se a **atribuição de reengajamento** está ativada.</li><li>Por SRN:</li><li>No menu lateral, selecione **Colaborar** > **Integrações ativas** e escolha a SRN.</li><li>Ative a **atribuição de reengajamento**.</li></ol> | <ol><li>Na AppsFlyer, no menu lateral, selecione **Configurações**> **Configurações do aplicativo**.</li><li>Verifique se a atribuição de **reengajamento** está ativada.</li><li>Por não-SRN: Anexe o parâmetro de retargeting aos links de atribuição conforme detalhado nesta seção.</li></ol> |
 | Reatribuição | <ol><li>No menu lateral, selecione **Colaborar** > **Integrações ativas** e</li><li>ative **Atribuição de reinstalação**.</li></ol> | <ol><li>Nenhuma configuração explícita é necessária.</li><li>Anexe o parâmetro de retargeting aos links de atribuição conforme detalhado nesta seção.</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **Configurações para não-SRNs**
 
@@ -169,6 +183,8 @@ Parâmetros do link de atribuição de retargeting
 | Timer de lookback de view-through para retargeting | <ul><li>A <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de view-through</Anchor> para retargeting funciona como a das campanhas de aquisição de usuários.</li><li>Ela define o período máximo que pode decorrer entre a exibição de um anúncio a um usuário e sua atribuição.</li><li>O parâmetro padrão é 1 dia.</li><li>A janela de lookback é configurada usando</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>Exemplo**<br />Para definir uma janela de lookback de view-through de 5 horas, adicione o seguinte ao link de atribuição da campanha de retargeting: `&af_viewthrough_lookback=5h` | Não |
 | Janela de reengajamento | <ul><li>A **janela de reengajamento** pode ser definida na interface do usuário do link de atribuição. Isso define o parâmetro **af\_reengagement\_window** no link de atribuição. O parâmetro pode ser adicionado manualmente.</li><li>O padrão é 30 dias.</li><li>Os seguintes valores da janela de reengajamento estão disponíveis:</li><li>Horas: 1-23 horas</li><li>Dias: 1-90 dias</li><li>Vida útil: persiste até que o usuário desinstale ou execute outro novo engajamento, por exemplo, af\_reengagement\_window=lifetime</li></ul>Por exemplo, **af\_reengagement\_window=60d** significa que os eventos relatados dentro de 60 dias após o reengajamento são atribuídos à fonte de mídia de retargeting. | Não |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### Período de lookback de view-through de retargeting
 
 ```http
@@ -212,6 +228,8 @@ Interpretação de relatórios de dados brutos no contexto do retargeting
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="app-requirements" />
@@ -246,6 +264,8 @@ Para executar campanhas de retargeting, o aplicativo deve atender aos seguintes 
 | **Quando a hora do toque atribuído é idêntico à hora da instalação?**<ul><li>Quando os usuários de universal links, ou app links do Android, passam por deep linking, eles são direcionados para o aplicativo sem passar primeiro pela AppsFlyer.</li><li>Quando o aplicativo é inicializado e o SDK informa um novo reengajamento, o AppsFlyer reproduz os dados do clique, usando o mesmo carimbo de data e hora da inicialização. Isto faz com que a data/hora de engajamento e da inicialização sejam idênticas.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

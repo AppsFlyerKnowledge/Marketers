@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **Em resumo:** a Eulerian, um parceiro integrado da AppsFlyer, concentra-se na análise e na otimização em tempo real de operações de e-marketing. Com base em um sistema abrangente de coleta de dados, a suíte de marketing da Eulerian oferece uma combinação de soluções de atribuição web de marketing e gerenciamento de dados. Essa tecnologia permite que os usuários centralizem, analisem, gerenciem e ativem dados em tempo real.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-eulerian" />
 
 ## Configurando o Eulerian
 
@@ -52,9 +56,13 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -69,6 +77,8 @@ Execute as etapas a seguir, conforme necessário:
 * Digite o **HostID**
 * Ative **Enable** para enviar todas as instalações para a Eulerian
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para a Eulerian após instalações de usuários. Use esta seção para definir o envio desses postbacks.
@@ -76,6 +86,8 @@ A AppsFlyer pode enviar postbacks automáticos para a Eulerian após instalaçõ
 ![Eulerian_new_2.png](https://files.readme.io/59cb41cdbec6c06dd4fc2086d238fe2015e5414a474591b23f9a18f8421fb030-360002795789.png)
 
 Selecione **Eventos atribuídos a qualquer parceiro** para enviar postbacks à Eulerian.
+
+<div id="in-app-event-settings" />
 
 ### Configurações de eventos in-app
 

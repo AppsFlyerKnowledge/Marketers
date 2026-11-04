@@ -23,9 +23,13 @@ x-zendesk:
 
 Os <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#conversions">eventos de conversão</Anchor> capturam ações valiosas pós-engajamento, como compras, em várias configurações de campanha. Embora a estrutura e o conteúdo de cada evento de conversão permaneçam consistentes, a forma como as conversões são mensuradas, atribuídas e compartilhadas varia dependendo de se tratar de uma campanha <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-campaigns">on-site</Anchor>, <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns">off-site</Anchor> ou <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-and-off-site-campaigns">on-site e off-site</Anchor>. Este artigo explica como configurar a tarefa de conversões para cada tipo de campanha.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 Antes que a tarefa de conversões possa ser configurada, o proprietário da colaboração precisa atribuí-la ao colaborador que possui a plataforma em que os eventos de conversão são gerados. Para obter mais informações, consulte Atribuir tarefas de configuração
+
+<div id="set-up-on-site-campaign-conversions" />
 
 ## Configure conversões de campanhas on-site
 
@@ -39,6 +43,8 @@ Para configurar conversões on-site, siga estas etapas:
 4. [Set source location](#definir-local-da-fonte-de-conversao)
 5. [Mapear campos da fonte de conversão on-site](#mapear-campos-da-fonte-de-conversao-on-site)
 
+<div id="set-up-off-site-campaign-conversions" />
+
 ## Configure conversões de campanhas off-site
 
 No contexto de campanhas off-site, os eventos de conversão ocorrem nas propriedades do colaborador, como o aplicativo, o site ou os sistemas de loja física, mas a atribuição se baseia em engajamentos que ocorreram em plataformas externas, como Meta ou Google.
@@ -50,6 +56,8 @@ Para configurar conversões off-site, siga estas etapas:
 3. [Definir método de fornecimento de dados de conversão](#definir-metodo-de-fornecimento-de-dados-de-conversao)
 4. [Set source location](#definir-local-da-fonte-de-conversao)
 5. [Mapear campos da fonte de conversão off-site](#mapear-campos-da-fonte-de-conversao-off-site)
+
+<div id="set-up-on-site-and-off-site-conversions" />
 
 ## Configurar conversões on-site e off-site
 
@@ -63,6 +71,8 @@ Para configurar conversões on-site e off-site, siga estas etapas:
 4. [Set source location](#definir-local-da-fonte-de-conversao)
 5. [Mapear campos da fonte de conversão on-site](#mapear-campos-da-fonte-de-conversao-on-site)
 6. [Mapear campos da fonte de conversão off-site](#mapear-campos-da-fonte-de-conversao-off-site)
+
+<div id="configuration-activities" />
 
 ## Atividades de configuração
 
@@ -89,6 +99,8 @@ Para abrir a **configurações de mensuração** página, siga estas etapas:
 2. Na **Data Collaboration Platform** página, selecione a colaboração que você deseja configurar.
 3. Na parte inferior da página de colaboração, clique **Set up measurement.** (Se o link estiver desativado, configure as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources">fontes de dados</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiências</Anchor>.)
 4. Na página **Configurações de mensuração** , clique no painel **Conversões** para abrir a caixa de diálogo **Conversões**.
+
+   <div id="note" />
 
    > 📘 **Nota**
    >
@@ -147,6 +159,8 @@ Se uma fonte personalizada for usada para fornecer eventos de conversão, habili
 
 Se uma fonte personalizada for usada para fornecer eventos de conversão ao DCP, mapeie os campos da sua fonte de conversão personalizada no site para os campos correspondentes do DCP.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > O **banco de dados de eventos de conversão do DCP** armazena todos os eventos de conversão da colaboração atual em um esquema unificado, incluindo eventos de conversão originados de **Eventos in-app** ou de **campanhas off-site** (se você estiver executando uma campanha combinada on-site/off-site).
@@ -176,6 +190,10 @@ Para mapear os campos personalizados de fonte de conversão, siga estas etapas
 2. Mapeie todos os campos obrigatórios sob **Obrigatório**.
 3. (Opcional) Expanda **Dados opcionais de enriquecimento** para mapear campos adicionais.
 
+   <div id="note-5" />
+
+   <div id="note-2" />
+
    > 📘 **Nota**
    >
    > Se a campanha estiver combinada com uma campanha off-site e você mapear um campo (por exemplo, Event ID) que já está mapeado em um canal off-site, você receberá o prompt **Override field?** . Clique **Yes, continue** para confirmar e aplicar o mapeamento em todos os canais.
@@ -189,6 +207,8 @@ Para mapear os campos personalizados de fonte de conversão, siga estas etapas
 <Accordion title="Mapear campos de fonte de conversão fora do site">
 
 Se uma fonte personalizada for usada para fornecer eventos de conversão de campanhas fora do site, mapeie os campos da sua fonte personalizada de conversão fora do site para os campos DCP correspondentes.
+
+<div id="note-3" />
 
 > 📘 **Nota**
 >
@@ -217,6 +237,8 @@ Os campos mostrados aqui dependem dos tipos de fonte de conversão que você sel
 
 1. Se você estiver configurando uma **campanha combinada** **no site e fora do site**, expanda **Dados para atribuição fora do site;** caso contrário, pule para a etapa abaixo.
 2. Ative **Meta Ads** ou **Google Ads**, dependendo das suas fontes de dados:
+
+   <div id="note-4" />
 
    > 📘 **Nota**
    >

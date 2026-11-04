@@ -28,6 +28,8 @@ x-zendesk:
 
 <Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
+<div id="setting-up-inmobi" />
+
 ## Configurando a InMobi
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -43,6 +45,8 @@ x-zendesk:
 
 A janela de configuração da InMobi inclui 4 guias ativas: **Integração, link de atribuição, custo** e **Permissões**. Clique nos itens a seguir para ler sobre a configuração das guias.
 
+<div id="tip" />
+
 > 👍 **Observação**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -52,13 +56,19 @@ A janela de configuração da InMobi inclui 4 guias ativas: **Integração, link
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na **primeira visita** aqui, você precisará ativar o botão **Ativar parceiro** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Como uma all-installs network, a InMobi prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, incluindo orgânico. Para fazer isso, selecione **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação para a InMobi.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -72,12 +82,16 @@ A InMobi se conecta com a AppsFlyer por meio de um ID de network exclusivo. Se v
 
 Alterne para LIGADO se quiser atribuir instalações view-through da InMobi. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a InMobi após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à InMobi.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser relatada à InMobi.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -109,6 +123,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à InMob
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -129,6 +145,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configurações de retargeting
 
@@ -165,6 +183,8 @@ Defina o período após o reengajamento, onde os eventos in-app do usuário são
 
 **Parâmetro de link de atribuição:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas à InMobi.
@@ -175,9 +195,13 @@ Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lo
 
 [![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
 
+<div id="click-attribution-link" />
+
 ### Clique no link de atribuição
 
 Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie-o para a InMobi para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Janela de retrospetiva da atribuição por visualização
 
@@ -190,6 +214,8 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição view-through aqui</Anchor>.
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### Link de atribuição para impressões
 
@@ -224,6 +250,8 @@ A receita de anúncios não é compatível com esse parceiro.
 <Accordion title="Aba permissões">
 
 Selecione quais <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões você deseja conceder</Anchor> à InMobi para acessar seus dados e executar várias ações.
+
+<div id="note-1" />
 
 > 📘 **Observação**
 >

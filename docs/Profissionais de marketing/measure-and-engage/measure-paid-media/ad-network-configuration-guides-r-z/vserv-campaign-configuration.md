@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Vserv, parceira integrada de ad network da AppsFlyer, é uma das principais plataformas de dados autênticos para marketing mobile na Índia e no Sudeste Asiático.
 
+<div id="setting-up-vserv" />
+
 ## Configurando a Vserv
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -42,19 +44,27 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma all-installs network, a Vserv prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, inclusive orgânica. Para fazer isso, selecione **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação para a Vserv.
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
 Envie postbacks automáticos para a Vserv após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Vserv.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -83,6 +93,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à Vserv
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -102,6 +114,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de Atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas à Vserv.
@@ -109,6 +123,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -137,6 +153,8 @@ Os dados de receita publicitária não são compatíveis com a Vserv.
 <Accordion title="Aba permissões">
 
 Nessa aba, você pode selecionar as permissões a serem concedidas à Vserv, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a Vserv, a aba de permissões está ativa e você pode conceder controle à Vserv.
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

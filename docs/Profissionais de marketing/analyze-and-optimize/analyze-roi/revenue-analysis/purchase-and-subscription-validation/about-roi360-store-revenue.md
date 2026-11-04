@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Resumo:** Use a receita da loja do ROI360 para validar assinaturas e compras in-app, evitar duplicações e calcular a receita líquida.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > A receita da loja do ROI360 está disponível apenas para os clientes do plano premium. Para verificar seu plano ou uma atualização, entre em contato com seu Customer Success Manager (CSM).
@@ -37,9 +39,13 @@ A receita da loja do ROI360 é a solução premium da AppsFlyer para uma mensura
 | Fontes de dados | <ul><li>Purchase Connector do SDK da AppsFlyer para Android e iOS</li><li>Notificações do servidor da App Store</li><li>Notificações em Tempo Real do Google Play (RTDN)</li></ul> |
 | Relatórios e disponibilidade de dados | Os dados de receita estão disponíveis nos dashboards e relatórios da AppsFlyer e também podem ser compartilhados com parceiros por meio de postbacks. |
 
+<div id="warning" />
+
 > ❗️ **Aviso**
 >
 > Ao usar a receita da loja do ROI360, não envie eventos in-app de compras, pois isso resultará em relatórios de receita duplicados.
+
+<div id="how-does-roi360-store-revenue-work" />
 
 ## Como funciona a receita da loja do ROI360?
 
@@ -55,6 +61,8 @@ A receita da loja do ROI360 é a solução premium da AppsFlyer para uma mensura
    * As notificações sobre transações desconhecidas são descartadas.
    * Para iOS, todas as notificações de servidor podem ser reencaminhadas para os seus próprios servidores.
 
+<div id="activate-roi360-store-revenue" />
+
 ## Ativar a receita da loja do ROI360
 
 Para ativar a mensuração de receita da loja do ROI360, siga estas etapas:
@@ -64,13 +72,19 @@ Para ativar a mensuração de receita da loja do ROI360, siga estas etapas:
 3. Em **Escolher o tipo de produto**, selecione **ROI360**.
 4. Clique em **Próximo** para continuar.
 
+<div id="set-up-roi360-store-revenue" />
+
 ## Configurar a receita da loja do ROI360
 
 Leia o artigo sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-store-revenue">configurar a receita da loja do ROI360</Anchor>
 
+<div id="reference" />
+
 ## Referência
 
 As próximas seções explicam com mais detalhes os principais aspectos da mensuração de compras in-app (IAP) e das receitas de assinatura do ROI360. Isso inclui eventos e parâmetros para IAP e eventos de assinatura, receita líquida (que calcula a receita bruta em relação à receita líquida) e as características e limitações gerais da solução.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -1011,11 +1025,15 @@ A tabela a seguir descreve os parâmetros de dados brutos disponíveis em evento
 
 A receita líquida é uma camada de lógica de negócio criada para auxiliar a solução de receita da loja do ROI360. Ela calcula automaticamente o valor da receita líquida para cada transação recebida em tempo real e o inclui em relatórios.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > A receita líquida é exibida em relatórios de dados brutos e pode ser enviada em tempo real por meio de postbacks de eventos in-app. Os dashboards exibem apenas a receita bruta de compras e assinaturas.
 >
 > Para enviar a receita líquida em postbacks, configure o evento in-app com a opção **Valores, receita & receita líquida**. Para mais detalhes, leia o artigo <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#dados-a-incluir-nos-postbacks">Configuração de postback de eventos in-app</Anchor>.
+
+<div id="tip" />
 
 > 📘 **Observação**
 >

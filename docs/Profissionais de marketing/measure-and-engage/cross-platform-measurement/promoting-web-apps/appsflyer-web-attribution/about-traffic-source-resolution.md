@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Use a identificação de fontes de tráfego para determinar as fontes de mídia, as campanhas e os canais de origem para cada visita na web, usando os parâmetros de URL e os dados de referrer disponíveis no carregamento das landing pages. Isto fornece à atribuição o contexto da origem do tráfego de que precisa para atribuir com precisão eventos web subsequentes, incluindo o evento de aquisição de utilizadores.
 
+<div id="what-is-traffic-source-resolution" />
+
 ## O que é a identificação de fontes de tráfego?
 
 Para a atribuição da web, o carregamento de landing pages (**visita na web**) é o primeiro engajamento do usuário com o site. A AppsFlyer se baseia nas informações disponíveis no momento, como parâmetros de URL e dados de referrer, para identificar o canal de mídia, a campanha e o canal do usuário.
@@ -36,6 +38,8 @@ O papel da identificação da fonte de tráfego não se limita à visita. O resu
 
 Entender o mecanismo da identificação de fontes de tráfego é essencial para criar URLs precisas. Para saber como criar uma URL bem estruturada, veja o artigo sobre a <Anchor target="_blank" href="/marketers/pt/docs/choose-attribution-parameters-for-landing-page-urls">escolha de parâmetros de atribuição para URLs de landing pages</Anchor>.
 
+<div id="the-traffic-source-resolution-flow" />
+
 ## O fluxo de identificação de fontes de tráfego
 
 A identificação de fontes de tráfego segue um fluxo estruturado em várias etapas que cria progressivamente o contexto de atribuição para cada visita à web. Cada etapa contribui com uma camada específica de informações, desde a gravação da visita até a classificação do tráfego para relatórios. Os dados usados pelo fluxo de identificação de fontes de tráfego são registrados pelo Web SDK ou pelo Web S2S.
@@ -47,11 +51,15 @@ O fluxo consiste nas seguintes etapas:
 3. [Identificação de campanhas](#etapa-3-identificação-de-campanhas): Determina os detalhes granulares de campanhas associados à fonte de mídia identificada, permitindo uma análise precisa de performance.
 4. [Classificação de canais](#etapa-4-classificação-de-canais): Atribui cada visita a um canal de tráfego principal com base na fonte de mídia identificada, fornecendo uma visão padronizada para relatórios e análises.
 
+<div id="step-1-visit-recording" />
+
 ## Etapa 1: Gravação de visita
 
 A gravação de visita é o primeiro passo no fluxo de mensuração da performance web. Ela acontece antes da identificação e atribuição da fonte de mídia, atuando como uma camada de pré-processamento que registra a atividade original do usuário.
 
 A lógica tem duas fases. Primeiro, ela classifica o **referrer** (o domínio de origem do usuário antes de chegar ao seu site). Depois, com base no tipo de referrer, ela avalia a sessão do usuário e a presença de informações da fonte de mídia para decidir se deve gravar a visita.
+
+<div id="stage-1-referrer-classification" />
 
 #### Fase 1: Classificação do referrer
 
@@ -60,6 +68,8 @@ A AppsFlyer classifica o referrer em um dos três tipos:
 * **Externo excluído** (por exemplo, um processador de pagamento ou qualquer domínio que você excluiu)
 * **Internal excluded** (por exemplo, seus próprios subdomínios ou fluxos de login)
 * **Else** (todos os outros referrers)
+
+<div id="stage-2-session-evaluation-and-visit-recording" />
 
 #### Fase 2: Avaliação da sessão e gravação de visita
 
@@ -75,6 +85,8 @@ Com base no tipo de referrer, a AppsFlyer avalia a sessão e decide se a visita 
   * Se houver uma sessão ativa e nenhuma informação da fonte de mídia, não grave uma nova visita durante essa sessão.
 
 <Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+
+<div id="step-2-media-source-resolution" />
 
 ## Etapa 2: Identificação de fontes de mídia
 
@@ -121,12 +133,16 @@ Se o domínio não for excluído, a AppsFlyer buscará o parâmetro `pid=` na UR
 
 Se nenhum PID for encontrado na URL, a AppsFlyer avalia os parâmetros `utm_source` e `utm_medium` para identificar a fonte de mídia. A combinação destes dois campos determina a resolução resultante.
 
+<div id="how-utm-logic-works" />
+
 #### **Como funciona a lógica de UTM**
 
 * Na maioria dos casos, a AppsFlyer determina a fonte de mídia ao extrair o valor original de `utm_source` e usá-lo como fonte de mídia.
 * Se `utm_medium` for `email`, `mail` ou `e-mail`, a fonte de mídia é determinada automaticamente para `e-mail`.
 * Se `utm_medium` estiver presente e não for um valor de e-mail, a AppsFlyer verifica o valor com base em regras de mapeamento personalizadas específicas (consulte a tabela de mapeamento abaixo).
 * Se `utm_medium` estiver ausente ou não corresponder a nenhuma regra personalizada, a AppsFlyer volta a usar `utm_source` como fonte de mídia.
+
+<div id="utm-mapping-rules" />
 
 #### **Regras de mapeamento da UTM**
 
@@ -185,6 +201,8 @@ A AppsFlyer usa o seguinte mapeamento de IDs de clique para atribuir a visita:
 
 Se nenhum parâmetro de consulta (PID, UTMs ou IDs de clique) for encontrado na URL, a AppsFlyer usa `http_referrer` para identificar a fonte de tráfego. Isso depende de um mecanismo interno de análise que extrai o host do domínio, mapeando-o para uma fonte de mídia.
 
+<div id="the-parsing-mechanism" />
+
 #### **O mecanismo de análise**
 
 Para identificar a fonte, a AppsFlyer limpa a string de referrer ao:
@@ -195,6 +213,8 @@ Para identificar a fonte, a AppsFlyer limpa a string de referrer ao:
 
 *Exemplo: Um referrer de* `www.mywebsite.com?param=example` *é associado a uma fonte de mídia de* `mywebsite`.
 
+<div id="referrer-mapping-rules" />
+
 #### **Regras de mapeamento de referrers**
 
 | Se o host contiver... | Fonte de mídia identificada |
@@ -203,6 +223,8 @@ Para identificar a fonte, a AppsFlyer limpa a string de referrer ao:
 | `t.co` | twitter |
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
+
+<div id="search-engine-mapping" />
 
 #### **Mapeamento de mecanismos de busca**
 
@@ -224,6 +246,8 @@ Para identificar a fonte, a AppsFlyer limpa a string de referrer ao:
 
 Todas as linhas desta tabela são resolvidas para o canal `seo`.
 
+<div id="ai-answer-engine-referrer-mapping" />
+
 #### **Mapeamento de referrer do mecanismo de respostas de IA**
 
 | Se o host contiver... | compras in-app | Disponível apenas em <Anchor target="_blank" href="/marketers/pt/docs/about-data-locker-advanced-reports">relatórios avançados</Anchor>. |
@@ -236,6 +260,8 @@ Todas as linhas desta tabela são resolvidas para o canal `seo`.
 | `manus.im` | manus\_organic\_aeo | aeo |
 | `grok.com` | grok\_organic\_aeo | aeo |
 | `copilot.microsoft.com` | copilot\_organic\_aeo | aeo |
+
+<div id="android-app-referrers" />
 
 #### **Referrers de aplicativos Android**
 
@@ -250,6 +276,8 @@ Se a visita for originada um aplicativo Android, o host do referrer será mapead
 | `org.telegram.messenger` | telegram |
 
 </Accordion>
+
+<div id="step-3-campaign-resolution" />
 
 ## Etapa 3: Identificação de campanhas
 
@@ -267,15 +295,21 @@ A AppsFlyer extrai informações de campanha dos seguintes parâmetros de URL, e
 | `af_ad_id` | ID do anúncio | — |
 | `af_keywords` | Palavras-chave | — |
 
+<div id="step-4-channel-classification" />
+
 ## Etapa 4: Classificação de canais
 
 Além de identificar o canal de mídia, a AppsFlyer classifica cada visita em um canal. Essa classificação oferece uma visão geral dos tipos de tráfego nos relatórios de dados brutos e no dashboard.
+
+<div id="overriding-the-channel-with-af_channel" />
 
 ### Substituição do canal com af\_channel
 
 Para atribuir um valor de canal personalizado, adicione o parâmetro `af_channel` à URL da página de destino. Por exemplo, `af_channel=ig` define o canal como `ig`, permitindo detalhar o tráfego em um nível que as categorias padrão não capturam, como por posicionamento do anúncio.
 
 O `af_channel` é resolvido somente quando um canal de mídia também é identificado para a visita. Se a visita for orgânica (nenhuma fonte de mídia identificada), ela sempre será atribuída a `Direct`, independentemente de `af_channel` estar presente ou não.
+
+<div id="default-channel-classification" />
 
 ### Classificação padrão de canal
 

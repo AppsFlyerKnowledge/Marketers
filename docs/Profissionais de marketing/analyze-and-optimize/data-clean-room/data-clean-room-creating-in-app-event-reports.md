@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Visão geral:** Crie  relatórios de eventos in-app para se concentrar na atividade do usuário que ocorre após a instalação de um aplicativo. Extraia parâmetros de eventos específicos de seus dados brutos de eventos in-app, opcionalmente, combine os dados com fontes personalizadas e, em seguida, processe-os e apresente-os de forma agregada.
 
+<div id="creating-an-in-app-event-report" />
+
 ## Criação de um relatório de eventos in-app
 
 **Para criar um relatório de eventos in-app, siga as etapas detalhadas nas abas abaixo.**
@@ -58,6 +60,8 @@ x-zendesk:
 
 Especifique os dados de origem a serem usados para o relatório:
 
+<div id="in-app-event-sources" />
+
 #### **Fontes de eventos in-app**
 
 * Aplicativos Selecione um ou mais dos aplicativos em sua conta da AppsFlyer.
@@ -70,6 +74,8 @@ Especifique os dados de origem a serem usados para o relatório:
 | --- | --- |
 | Reengajamentos | Eventos in-app relacionados a reengajamentos<ul><li>Um reengajamento é registrado quando um usuário inativo de um aplicativo específico engaja com com uma campanha de retargeting para o aplicativo e, posteriormente, a lança.</li></ul> |
 | Reatribuições | Eventos in-app relacionados a reatribuições<ul><li>Uma reatribuição é registrada quando um ex-usuário de um aplicativo específico (que o desinstalou) engaja com uma campanha de retargeting para o aplicativo e, posteriormente, o reinstala.</li></ul> |
+
+<div id="data-sources" />
 
 #### **Fontes de dados**
 
@@ -92,6 +98,8 @@ Para combinar os dados entre as fontes, cada uma das fontes **personalizadas** u
 
 * Os relatórios de eventos in-app incluem **todos** os eventos selecionados que correspondem ao identificador da chave durante o período selecionado.
 
+<div id="what-is-a-key-identifier" />
+
 #### **O que é um identificador de chave?**
 
 Você pode mapear para qualquer um desses identificadores de dados de eventos no aplicativo como **identificadores-chave**:
@@ -102,13 +110,19 @@ Você pode mapear para qualquer um desses identificadores de dados de eventos no
 * **customer\_user\_id (CUID)** Um identificador de usuário exclusivo geralmente gerado e definido pelo proprietário do aplicativo no momento do registro do usuário.
   * O uso do CUID para mapear dados exige que seu aplicativo esteja configurado para <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid">enviar o CUID à AppsFlyer</Anchor> por meio do SDK ou da API de servidor para servidor (S2S).
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Nem todas as fontes de mídia permitem a correspondência usando CUID. É altamente recomendável usar o ID da AppsFlyer.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Esquemas de mapeamento (direto/indireto)**
 
 Se o relatório incluir mais de uma fonte personalizada, somente uma delas precisará ser mapeada **diretamente** para um identificador de chave de evento no aplicativo. Outras fontes personalizadas podem ser mapeadas **direta ou indiretamente,** conforme ilustrado no exemplo a seguir:
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -136,6 +150,8 @@ As abas restantes são relevantes para **todos os relatórios de eventos in-app,
 Lembre-se de que os dados no nível de usuário não podem ser reportados pelo DCR. Em vez disso, ele fornece os insights de que você precisa para tomar decisões agregando (ou agrupando) os dados pelas dimensões que você escolher.
 
 Uma dimensão geralmente é um atributo pelo qual você categoriza os usuários do aplicativo (por exemplo, localização geográfica, data de instalação, campanha etc.)
+
+<div id="extracting-dimensions-from-event_value" />
 
 #### **Extraindo dimensões de event\_value**
 
@@ -173,6 +189,8 @@ Uma das principais vantagens dos relatórios de eventos in-app é que eles permi
 3. Selecione **Excluir campo.**
    * **Atenção!** Se você excluir um campo extraído da lista **Dimensões do relatório**, ele excluirá a definição do campo extraído. Se você quiser remover o campo do relatório enquanto preserva sua definição, selecione o campo e, em vez disso, use o botão **Remover**.
 
+<div id="selecting-report-dimensions" />
+
 #### **Selecionando dimensões do relatório**
 
 As dimensões do relatório de eventos in-app podem incluir:
@@ -190,6 +208,8 @@ As dimensões do relatório de eventos in-app podem incluir:
 
 **Observação:** Por padrão, todos os relatórios são agrupados pela dimensão de evento in-app **media\_source.** Se você não quiser usar essa dimensão em seu relatório, você pode removê-la da lista **Dimensões do relatório**.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Opcional] Personalizando nomes de exibição de dimensões**
 
 Por padrão, os nomes das dimensões são exibidos em seu relatório exatamente como são nomeados nos dados de eventos in-app ou em suas fontes personalizadas. Se desejar, você pode personalizar os nomes das dimensões do seu relatório.
@@ -203,11 +223,15 @@ Por padrão, os nomes das dimensões são exibidos em seu relatório exatamente 
 
 **Observação:** Se você quiser alterar o nome de uma **dimensão extraída**, use as etapas para editar as dimensões extraídas (acima).
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### **Preservando a privacidade ao agrupar por dimensão (reagrupamento)**
 
 Dependendo do tamanho do seu conjunto de dados, do número de dimensões que você escolher e de outros fatores, é possível que um relatório inclua um ou mais grupos contendo poucos usuários para permitir a geração de relatórios. Se os dados fossem relatados dessa forma, isso violaria as restrições ao fornecimento de dados em nível de usuário.
 
 No entanto, em vez de remover ou ocultar completamente os dados do relatório, o DCR usa um **mecanismo de reagrupamento** para fornecer o máximo de detalhes possível, mantendo a privacidade do usuário.
+
+<div id="regrouping-example" />
 
 > 📄 **Exemplo de reagrupamento**
 >
@@ -267,6 +291,8 @@ No entanto, em vez de remover ou ocultar completamente os dados do relatório, o
 >
 > * *Veja abaixo uma opção avançada que você também pode usar para aplicar o reagrupamento a dimensões de origem personalizadas.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Opcional] Gerenciando a prioridade da dimensão**
 
 Por padrão, as dimensões de eventos in-app são eliminadas na ordem inversa da ordem em que aparecem na lista **Dimensões do relatório**. No entanto, você pode modificar a sequência padrão e/ou aplicar o reagrupamento às dimensões de origem personalizadas selecionadas (se aplicável) para preservar as dimensões mais importantes para você.
@@ -291,6 +317,8 @@ Por padrão, as dimensões de eventos in-app são eliminadas na ordem inversa da
 <Accordion title="Selecionar métricas">
 
 As métricas são os dados numéricos que você coletou com relação a um usuário do aplicativo (exemplos podem incluir receita, número de aberturas de aplicativos, LTV etc.) e podem ser qualquer campo de dados numéricos de suas fontes que você categorizou como métrica.
+
+<div id="extracting-metrics-from-event_value" />
 
 #### **Extraindo métricas de event\_value**
 
@@ -326,6 +354,8 @@ Assim como você pode fazer com as [dimensões do relatório](/docs/data-clean-r
 3. Selecione **Excluir campo.**
    * **Atenção!** Se você excluir um campo extraído da lista **Métricas do relatório**, ele excluirá a definição do campo extraído. Se você quiser remover o campo do relatório enquanto preserva sua definição, selecione o campo e, em vez disso, use o botão **Remover**.
 
+<div id="select-report-metrics" />
+
 #### **Selecione as métricas do relatório**
 
 **Para selecionar as métricas a serem incluídas em seu relatório:**
@@ -337,6 +367,8 @@ Assim como você pode fazer com as [dimensões do relatório](/docs/data-clean-r
    * uma contagem de valores distintos
 3. Para remover uma métrica, selecione-a na lista **Dimensões da métrica** e use o botão **Remover** para retorná-la à lista **Métricas das fontes**.
 4. Repita este processo até que você tenha adicionado cada métrica que deseja incluir no relatório.
+
+<div id="optional-customizing-metric-display-names" />
 
 #### **[Opcional] Personalizando nomes de exibição de métricas**
 
@@ -350,6 +382,8 @@ Por padrão, os nomes das métricas são exibidos em seu relatório exatamente c
 4. Clique em **OK** para salvar o nome de exibição ou em **X** para cancelá-lo.
 
 **Observação:** Se você quiser alterar o nome de uma **métrica extraída**, use as etapas para editar as métricas extraídas (acima).
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Opcional] Selecione identificadores para contar**
 
@@ -368,6 +402,8 @@ Por padrão, cada linha do relatório termina com uma coluna contendo uma contag
 
 <Accordion title="Defina as configurações do relatório e salve o relatório">
 
+<div id="schedule-only-for-reports-without-custom-sources" />
+
 #### **Cronograma (somente para relatórios sem fontes personalizadas)**
 
 Os relatórios sem fontes personalizadas são executados de acordo com o cronograma definido por você.
@@ -376,6 +412,8 @@ Os relatórios sem fontes personalizadas são executados de acordo com o cronogr
 
 1. Selecione se deseja executar o relatório diariamente ou em um ou mais dias por semana.
 2. Selecione a hora em que o relatório será executado (o fuso horário é UTC).
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >
@@ -386,6 +424,8 @@ Os relatórios sem fontes personalizadas são executados de acordo com o cronogr
 > * Para fontes localizadas em **compartimentos de armazenamento em nuvem** (Amazon S3 e GCS), o DCR reconhece que uma nova versão de uma fonte foi criada quando detecta que uma <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-sources#atualizando-fontes-para-acionar-o-processamento-de-relatórios">nova versão de um arquivo de origem foi carregada junto com o arquivo \_SUCCESS</Anchor> que o acompanha.
 >
 > A AppsFlyer procura continuamente por novas versões de arquivos fonte para a **data atua e 2 dias antes.**
+
+<div id="report-destination" />
 
 #### **Destino do relatório:**
 
@@ -407,6 +447,8 @@ O DCR entrega relatórios para seus serviços de nuvem selecionados usando o <An
 3. O novo relatório agora é exibido na aba **Relatórios** da aba **Data Clean Room.**
 
 </Accordion>
+
+<div id="reference" />
 
 ## Referência
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Resumo:** Permita que os parceiros recebam informações de receita de anúncios de redes de mediação para que possam otimizar as campanhas de aquisição de usuários (UA). **Atenção:** É necessário ter uma assinatura ROI360 Advanced.
 
+<div id="about-sharing-ad-revenue-data-with-partners" />
+
 ## Compartilhamento de dados de receita de anúncios com parceiros
 
 Permita que suas ad networks responsáveis pela aquisição de usuários recebam dados de receita de anúncios de redes de mediação. Com isso, elas podem usar as informações para otimizar campanhas de UA.
@@ -39,6 +41,8 @@ A tabela a seguir compara as 2 soluções de compartilhamento de dados de receit
 | --- | --- | --- | --- | --- |
 | Sinais de aquisição de usuários | Diária | Dados precisos e completos, normalmente usados para otimização D3 e D7. | <ul><li>Impression-level ou device-level</li><li>Se ambos estiverem configurados, os dados device-level são enviados.</li></ul> | ROI360 Advanced |
 | Postbacks | Em tempo real | Dados recentes, normalmente usados para otimização D0 e D1. | Impression-level | ROI360 Advanced |
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -86,6 +90,8 @@ Pode ser que você queira trabalhar com ad networks que recebem sinais de UA. Is
 <Accordion title="Postbacks de eventos de receita de anúncios para ad networks">
 
 Você pode configurar os postbacks de receita de anúncios para ad networks. Isso significa que as ad networks responsáveis pela aquisição de usuários podem receber dados de receita de anúncios em tempo real das redes de mediação e utilizá-los para otimizar as campanhas de UA de seus clientes. 
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -140,6 +146,8 @@ Você pode configurar os postbacks de receita de anúncios para ad networks. Iss
 * Mediação personalizada
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

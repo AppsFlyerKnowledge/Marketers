@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** Entenda a diferença entre URLs curtos e longos do OneLink e como criar URLs longos fora da AppsFlyer.
 
+<div id="about-onelink-links" />
+
 ## **Links personalizados do OneLink**
 
 * Trabalhe em todos os canais de marketing de mídia para redirecionar os usuários para: 
@@ -40,10 +42,14 @@ x-zendesk:
     * URLs longos são transparentes, o que significa que todos os parâmetros de link são visíveis para o público e podem ser potencialmente manipulados.
     * URLs longos podem não caber em navegadores, SMS ou outros locais com limitações de caracteres de URL.
 
+<div id="advantages-of-a-short-onelink-url-compared-to-a-long-url" />
+
 ### URLs longos do OneLink
 
 * A atualização dos parâmetros na URL curta do OneLink no dashboard da AppsFlyer não altera o ID do shortlink; portanto, não é necessário substituir ou redistribuir a URL nem quaisquer QR codes associados, mesmo que já estejam em uso.
 * A AppsFlyer aplica os parâmetros atualizados de forma integrada para atribuição e reportar, garantindo que o QR code permaneça funcional e reflita automaticamente as alterações.
+
+<div id="procedures" />
 
 ## Procedimentos
 

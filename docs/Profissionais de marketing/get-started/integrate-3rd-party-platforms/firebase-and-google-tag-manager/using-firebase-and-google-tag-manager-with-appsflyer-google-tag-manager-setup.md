@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** **Numa olhadela:** Instruções para configurar o envio de eventos, reportados via Firebase SDK, para AppsFlyer no Google Tag Manager.
 
+<div id="google-tag-manager-setup" />
+
 ## Configuração do Google Tag Manager
 
 Esta secção discute a configuração necessária na interface do utilizador do Google Tag Manager (GTM). Todos os passos descritos nesta secção são necessários para que o GTM envie eventos para AppsFlyer. Siga os passos pela ordem indicada.

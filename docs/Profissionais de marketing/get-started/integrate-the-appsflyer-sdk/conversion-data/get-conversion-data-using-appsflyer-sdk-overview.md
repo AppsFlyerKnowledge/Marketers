@@ -27,6 +27,8 @@ Usar os dados de conversão para:
 * Enviar usuários para atividades específicas
 * Fornecer conteúdo personalizado
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > **Limitações dos dados de conversão do SDK**

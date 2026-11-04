@@ -27,12 +27,16 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## Princípios de PBA
 
 * O PBA consolida dados de sites e aplicativos mobile para oferecer uma visão holística da performance da campanha em todas as propriedades digitais de uma marca. Os anunciantes usam o PBA para entender as jornadas dos clientes em termos de pessoas, no lugar de dispositivos.
 * Os dados do PBA—nos painéis do PBA e nos relatórios de dados brutos—são usados para análises de marketing e otimização de campanhas.
 * Os dados que consistem em visitas ao site e eventos do usuário são adquiridos usando <Anchor target="_blank" href="/marketers/pt/docs/pba-web-sdk-integration-guide">SDKs e/ou APIs.</Anchor>
 * Para cada visita ao site: a fonte de mídia responsável por gerar a visita é determinada. Qualquer evento resultante (conversão) é <Anchor target="_blank" href="/marketers/pt/docs/pba-media-source-attribution-rules">atribuído</Anchor> à fonte de mídia responsável pela visita.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### Painéis analíticos de PBA e dados brutos
 
@@ -42,11 +46,15 @@ x-zendesk:
   * Relatórios de dados brutos
 * Os dados nos painéis são <Anchor target="_blank" href="/marketers/pt/docs/using-pba-dashboards">filtrados e agrupados</Anchor> usando dimensões como plataforma mobile, canal e tipo de mídia. Isso permite que você detalhe e examine os dados.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/pt/docs/pba-website-attribution-dashboard">Atribuição do site</Anchor>
 
 [![WebsiteAttributionTable](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)
 
 Analise fontes de tráfego da web e campanhas de marketing que impulsionam visitas e conversões de usuários no seu site. Descubra diferenças entre as performances a nível de anúncio. Compatível com todos os parâmetros de consulta (query) da AppsFlyer no link sem a necessidade de redirecionar os usuários para servidores da AppsFlyer.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/pt/docs/pba-web-assisted-installs">Instalações Auxiliadas pela Web</Anchor>
 
@@ -58,6 +66,8 @@ Use as Instalações Auxiliadas pela Web para analisar o impacto e os resultados
 * Atribua instalações orgânicas impulsionadas por seus esforços na web.
 * Examine a interação entre esforços da web e instalações não orgânicas.
 
+<div id="raw-data" />
+
 ### <Anchor target="_blank" href="/marketers/pt/docs/pba-raw-data-reports">Dados brutos</Anchor>
 
 Os relatórios de dados brutos estão disponíveis no Data Locker. Os dados brutos oferecem insights aprofundados e incluem a fonte de mídia atribuída/responsável por trazer o usuário ao site.
@@ -67,6 +77,8 @@ Os relatórios de dados brutos estão disponíveis no Data Locker. Os dados brut
 * **Instalações auxiliadas pela web** e jornadas do **Caminho de conversão** são oferecidas na íntegra.
 * As ferramentas de BI são usadas para analisar os dados para obter informações adicionais.
 * <Anchor target="_blank" href="/marketers/pt/docs/pba-raw-data-reports">Saiba mais sobre dados brutos do PBA</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

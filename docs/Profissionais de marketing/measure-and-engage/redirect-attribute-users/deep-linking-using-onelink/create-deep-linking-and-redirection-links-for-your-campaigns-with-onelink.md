@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** **crie links do OneLink** que oferecem aos usuários exatamente a experiência que você quer que eles tenham. Os usuários que clicam no link são redirecionados para a loja de aplicativos, web URL ou para o aplicativo correto, conforme necessário.
 
+<div id="onelink-links-and-experiences" />
+
 ## Links e experiências do OneLink
 
 <Embed title="Crie um link do OneLink para as suas campanhas" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ Os passos necessários para configurar um link estão descritos na próxima seç
 * Configurações específicas da experiência
 * Configurações de deep linking e redirecionamentos
 * Configurações de parâmetros adicionais
+
+<div id="create-a-onelink-link" />
 
 ## Crie um link do OneLink
 
@@ -57,6 +61,8 @@ Os passos necessários para configurar um link estão descritos na próxima seç
 3. Clique em **Adicionar link**.
 4. Selecione a [experiência](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences) que você deseja criar para seus usuários:
 5. Selecione um canal de mídia ou insira um canal de mídia personalizado. Esse é o canal de mídia para o qual os dados serão exibidos na AppsFlyer. O canal de mídia é incluído em seu link como o valor do parâmetro `pid`.
+
+   <div id="note" />
 
    > 📘 **Nota**
    >
@@ -116,6 +122,8 @@ As configurações gerais são uma parte do processo de criação de um OneLink 
 
    Os usuários existentes que clicam em links sem redirecionamento (UA) também iniciam o aplicativo e têm a mesma experiência de usuário. No entanto, seus reengajamentos são registrados como sessões regulares, o que significa que é impossível mensurar o sucesso da campanha de mídia própria.
 
+   <div id="important" />
+
    > 🚧 **Importante!**
    >
    > Para que o retargeting funcione, você também precisa ativar o retargeting para o aplicativo.
@@ -128,6 +136,8 @@ As configurações gerais são uma parte do processo de criação de um OneLink 
 6. [Opcional] Na subseção **Link branding**:
    * Selecione um domínio diferente que seja a cara da sua marca. <Anchor target="_blank" href="/marketers/pt/docs/skan-modeled-data#revenue-ltv">Saiba mais</Anchor>
    * <span id="url-id"></span>Edite o URL ID para destacar a oferta da campanha. O URL ID deve ter no máximo 50 caracteres e pode ser uma combinação de letras e números. Por padrão, são 8 caracteres.
+
+<div id="enable-retargeting-for-the-app" />
 
 #### Ativar o retargeting para o aplicativo
 
@@ -169,6 +179,8 @@ Para adicionar parâmetros da OG tag ao seu link (se ela não tiver sido criada 
   * af\_og\_description (até 300 caracteres)
   * af\_og\_image
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > * Você pode adicionar os parâmetros da OG tag ao seu link fora da IU da AppsFlyer.
@@ -179,6 +191,8 @@ Para adicionar parâmetros da OG tag ao seu link (se ela não tiver sido criada 
 <div id="social-app-landing-page" />
 
 <Accordion title="Landing page nas redes sociais">
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >
@@ -215,9 +229,13 @@ Quando o usuário engaja com o botão CTA na landing page:
 * **Se o aplicativo estiver instalado**: o usuário que clica iniciará o aplicativo.
 * **Se o aplicativo NÃO estiver instalado**: o usuário será levado para a app store correspondente. Após a instalação, é possível fazer deferred deep linking do usuário (explicado em [deep linking e deferred deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)).
 
+<div id="note-2" />
+
 > 📘 **Observação**
 >
 > A landing page social é compatível apenas com URLs curtas do OneLink.
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **Para usar a landing page social:**
 
@@ -227,6 +245,8 @@ Quando o usuário engaja com o botão CTA na landing page:
 3. Publique a URL curta do OneLink no aplicativo social.
 
 A atribuição é determinada com base nas configurações de atribuição.
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **Para configurar a landing page de aplicativos sociais:**
 
@@ -268,6 +288,8 @@ Deep linking é quando você redireciona os usuários existentes do seu aplicati
 
 Usar deferred deep linking significa que você proporciona aos novos usuários uma experiência de deep linking semelhante a dos usuários existentes. Mas seu fluxo de usuários é que primeiro, novos usuários são enviados para a loja de aplicativos e depois de baixar e lançar o aplicativo, eles são enviados para a experiência ou página específica.
 
+<div id="note-3" />
+
 > 📘 **Observação:**
 >
 > a configuração de deep linking e deferred deep linking requer a ação dos seus desenvolvedores Android e iOS.
@@ -282,6 +304,8 @@ Usar deferred deep linking significa que você proporciona aos novos usuários u
        * Necessita o SDK V6.1 ou versão posterior.
        * A janela de lookback de clique pode durar até 15 minutos.
      * **Observação**: clientes que já usam o OneLink para deep linking podem usar os métodos legados para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">Android</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor>, ao invés de UDL.
+
+       <div id="tips" />
 
        > 📄 **Dicas**
        >
@@ -317,6 +341,8 @@ Usar deferred deep linking significa que você proporciona aos novos usuários u
       </Tabs>
 
    3. Em **Parâmetros adicionais**, adicione parâmetros personalizados **deep\_link\_sub2-10** e outros valores conforme necessário, de acordo com o que você combinou com os desenvolvedores.
+
+<div id="note-4" />
 
 > 📘 **Observação:**
 >
@@ -361,6 +387,8 @@ Você pode testar se seu link funciona para redirecionar:
 * Novos usuários sem seu aplicativo instalado
 * Usuários existentes com seu aplicativo instalado
 
+<div id="new-users-without-your-app-installed" />
+
 #### Novos usuários sem seu aplicativo instalado
 
 **Pré-requisitos**: um <Anchor target="_blank" href="/marketers/pt/docs/registering-test-devices">dispositivo de teste registrado</Anchor> sem o aplicativo.
@@ -383,6 +411,8 @@ Para testar seu link:
    Procure um novo clique e instalação de acordo com o canal de mídia (por exemplo, teste) e o nome da campanha que você colocou na URL.
 
 O link não está se comportando como esperado? Confira <Anchor target="_blank" href="/marketers/pt/docs/onelink-troubleshooting-and-faq">o FAQ e o guia de solução de problemas do OneLink.</Anchor>
+
+<div id="existing-users-with-your-app-installed" />
 
 #### Usuários existentes com seu aplicativo instalado
 
@@ -408,6 +438,8 @@ O link não está se comportando como esperado? Confira <Anchor target="_blank" 
 O link não está se comportando como esperado? Confira <Anchor target="_blank" href="/marketers/pt/docs/onelink-troubleshooting-and-faq">o FAQ e o guia de solução de problemas do OneLink.</Anchor>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Procedimentos adicionais
 
@@ -489,6 +521,8 @@ Para garantir que o Deferred deep linking (DDL) continue funcionando como espera
 
 Essa solução combina URLs curtas do OneLink com a tecnologia de App Clips disponível no iOS, permitindo que você envie usuários para fluxos específicos em seu produto sem a necessidade de instalar o aplicativo completo. A URL curta do OneLink fornece dados de atribuição do usuário e direciona os usuários para uma experiência personalizada do App Clip semelhante à que você deseja que o DDL alcance. O App Clip também pode incluir um fluxo para direcionar os usuários para o aplicativo completo. **Observação**: se os usuários reinstalarem o aplicativo a partir da solução baseada no App Clip, isso poderá ser relatado na AppsFlyer como uma instalação orgânica. 
 
+<div id="flow" />
+
 #### **Fluxo**
 
 O fluxo da solução DDL baseada no App Clip é o seguinte:
@@ -524,6 +558,8 @@ O fluxo da solução DDL baseada no App Clip é o seguinte:
 
 <Accordion title="Solução baseada em área de transferência">
 
+<div id="flow-1" />
+
 #### **Fluxo**
 
 O fluxo da solução DDL baseada na área de transferência é o seguinte:
@@ -540,6 +576,8 @@ O fluxo da solução DDL baseada na área de transferência é o seguinte:
 5. O usuário toca em **Baixar o aplicativo**.
 6. O usuário é enviado para a App Store para instalar o aplicativo. Em seguida, na primeira inicialização, ele é enviado para a página específica do aplicativo.
 
+<div id="requirements" />
+
 #### **Requisitos**
 
 A solução copiar/colar DDL da lading page requer:
@@ -549,6 +587,8 @@ A solução copiar/colar DDL da lading page requer:
 * SDK para iOS V6+ da AppsFlyer.
 * Seu desenvolvedor de aplicativos iOS deve implementar um código que cola os dados do deferred deep link na URL da área de transferência. Isso não faz parte do SDK da AppsFlyer.
 * O usuário final deve selecionar a caixa de seleção (padrão). Se essa opção não estiver ativa, a URL não será copiada e o deferred deep link não funcionará.
+
+<div id="setup" />
 
 #### **Configuração**
 
@@ -563,6 +603,8 @@ A solução copiar/colar DDL da lading page requer:
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

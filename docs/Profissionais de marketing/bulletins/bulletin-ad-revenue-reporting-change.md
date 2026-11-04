@@ -27,6 +27,8 @@ x-zendesk:
 * **Quem é impactado**: proprietários de aplicativos, agências
 * **Onde isso está mudando**: Essencialmente, o alinhamento dos dados ao dia do evento de exibição do anúncio está ativo em todos os relatórios e APIs, para todos os tipos de integrações de network. Consulte a tabela a seguir para ver onde e quando o alinhamento entrou em vigor.
 
+<div id="ad-revenue-reporting-change" />
+
 #### Mudança nos relatórios de receita de anúncios
 
 | Método de relatório | Data de vigência (quando a mudança ocorre) | Data de publicação (data do anúncio) |
@@ -38,11 +40,15 @@ x-zendesk:
 | Data Locker (pasta h=23) | 3 de agosto de 2020 | 3 de agosto de 2020 |
 | Pull API (para dados agregados) | 1 de setembro de 2020 | 31 de agosto de 2020 |
 
+<div id="before-the-change" />
+
 ### Antes da mudança
 
 A data dos dados de receita de anúncios na plataforma é o dia seguinte ao próprio evento de exibição do anúncio. Isso significa que, se um anúncio for exibido na segunda-feira, a receita aparecerá na terça-feira. Os dados ficam disponíveis na plataforma na quarta-feira, após o processamento.
 
 Isso significa que a data da receita do anúncio não está alinhada ao engajamento real do usuário. Para alguns verticais, essa falta de alinhamento distorce significativamente os KPIs.
+
+<div id="after-the-change" />
 
 ### Depois da mudança
 
@@ -54,6 +60,8 @@ A mudança depende do tipo de integração entre o aplicativo e a network de mon
 * A receita na data de vigência inclui a receita de dois dias, ou seja, a receita da data de vigência e a receita do dia anterior. Dependendo do cenário de relatório, você poderá identificar um pico de receita nesse dia.
 
 Veja o exemplo a seguir.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >

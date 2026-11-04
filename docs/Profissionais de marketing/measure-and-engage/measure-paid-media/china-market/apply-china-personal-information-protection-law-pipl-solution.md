@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Aumente a flexibilidade ao mensurar com a AppsFlyer e manter a conformidade com a PIPL.
 
+<div id="background" />
+
 ## CONTEXTO
 
 No fim de 2021, a China aprovou a Lei de Proteção de Informações Pessoais (PIPL), que regula a coleta, o uso e a transferência de dados pessoais de usuários. Para oferecer aos clientes mais flexibilidade ao usar a AppsFlyer e dar suporte à compliance com a PIPL, siga as instruções passo a passo descritas neste artigo.  
@@ -30,6 +32,8 @@ A solução PIPL da AppsFlyer se baseia em 3 princípios:
 * Impeça que o SDK colete IDs do dispositivo.
 * Mascarar e aplicar hashing a IPs de eventos do SDK e S2S, além de cliques e impressões.
 * Habilite a auditoria de todos os eventos do aplicativo em um servidor de retransmissão na China.
+
+<div id="apply-pipl-solution-in-appsflyer" />
 
 ## Aplicar a solução PIPL na AppsFlyer
 
@@ -65,6 +69,8 @@ A seção a seguir descreve as ações que você precisa realizar para aplicar a
      Para eventos S2S, use o domínio `api2.hevents.appsflyer-cn.com` para mascarar e aplicar hashing a eventos de IP da seguinte forma:
      * O IP deve ser convertido em binário e, em seguida, os últimos 2 dígitos devem ser mascarados.
      * O IP binário mascarado deve ser convertido em texto e, em seguida, sofrer Hashing pelo algoritmo sha256.
+
+<div id="solution-limitations" />
 
 ## Limitações da solução
 

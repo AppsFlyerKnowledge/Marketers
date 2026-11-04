@@ -29,6 +29,8 @@ x-zendesk:
 | **Onde:** | Relatórios de dados brutos pós-atribuição do Protect360 via:<ul><li>Exportar dados (download) de relatórios de dados brutos</li><li>Relatórios de dados brutos da Pull API</li></ul> |
 | **O que** | <ul><li>Até agora, os relatórios pós-atribuição não exibiam o canal de mídia do contribuinte válido. Os campos **contributor[1-3]** e **organic** exibiam os canais de mídia contribuintes, mas não permitiam saber qual deles justificava a atribuição.</li><li>A partir de 23 de novembro de 2020, o valor do campo **rejected\_reason\_value** exibe **contributor[1-3]** ou **organic**.<ul><li>No Data Locker, isso aparece como **validation\_reason\_value**.</li></ul></li><li>Os anunciantes podem verificar os campos **contributor[1-3]** para ver qual deve ser o canal de mídia atribuído e usar essas informações para reconciliação.<ul><li>Se os campos de contribuinte não forem exibidos no seu relatório, eles podem ser adicionados na página **Export data**.</li></ul></li></ul> |
 
+<div id="see-also" />
+
 > 📄 **Consulte também**
 >
 > * <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#postattribution-reports">Relatórios pós-atribuição:</Anchor>

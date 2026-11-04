@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** **Em resumo:** Teste a integração do seu aplicativo Android ou iOS com a AppsFlyer.
 
+<div id="overview" />
+
 ## Visão Geral
 
 Após a conclusão da integração do SDK, você pode verificar se o SDK está se comunicando com sucesso com os servidores da AppsFlyer. Os profissionais de marketing podem escolher entre dois métodos de teste:
@@ -41,6 +43,8 @@ Os desenvolvedores podem realizar testes de integração em seu ambiente de dese
 
 Os aplicativos de CTV também podem ser testados - para mais informações, acesse [testes de CTV](#testando-ctv).
 
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 ## Testes usando a página de testes de integração do SDK
 
 Use a página **testes de Integração do SDK** para visualizar eventos em tempo real, como instalações, receita de anúncios e eventos in-app, à medida que eles ocorrem em seu aplicativo. Você também pode testar instalações não orgânicas, eventos in-app e deep linking (retargeting), além de identificar problemas de integração em seu projeto. O visualizador de eventos ao vivo substitui a ferramenta legada de testes de eventos in-app.
@@ -52,10 +56,14 @@ Use a página **testes de Integração do SDK** para visualizar eventos em tempo
 > * **Somente iOS**: a página de teste de integração do SDK é aplicável apenas para aplicativos iOS que implementam a ATT. Você pode testar aplicativos sem a ATT usando o procedimento especificado aqui.
 > * **Android:** Embora o ID do dispositivo (GAID) geralmente seja coletado automaticamente, recomendamos verificar se o SDK o coleta.
 
+<div id="prepare-a-test-device" />
+
 ### **Prepare um dispositivo de teste**
 
 1. Prepare um dispositivo (Android ou iOS) que não tenha o aplicativo instalado. Se necessário, desinstale o aplicativo do dispositivo.
 2. <Anchor target="_blank" href="/marketers/pt/docs/registering-test-devices">Registre o dispositivo como um dispositivo de teste.</Anchor>
+
+<div id="perform-the-integration-tests" />
 
 ### Execute os testes de integração
 
@@ -136,6 +144,8 @@ Para erros de integração, entre em contato com o desenvolvedor.
 5. Clique em **Continuar** e siga as etapas do assistente.
 
 </Accordion>
+
+<div id="testing-using-attribution-links" />
 
 ## Testar usando links de atribuição
 
@@ -272,6 +282,8 @@ Para mais informações, consulte nosso guia de <Anchor target="_blank" href="/m
 
 </Accordion>
 
+<div id="testing-retargeting-using-attribution-links" />
+
 ## Testando o retargeting usando links de atribuição
 
 As seções a seguir descrevem os procedimentos que você deve seguir para testar a atribuição de retargeting.
@@ -387,6 +399,8 @@ Certifique-se de que seu app esteja configurado para <Anchor target="_blank" hre
 
 </Accordion>
 
+<div id="testing-organic-installs" />
+
 ## Testar instalações orgânicas
 
 Recomendamos que você comece testando uma instalação orgânica.
@@ -399,6 +413,8 @@ Recomendamos que você comece testando uma instalação orgânica.
 O dashboard do aplicativo exibe uma nova instalação orgânica. Aguarde até 30 minutos para que a instalação apareça.
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+
+<div id="testing-ctv" />
 
 ## Testando CTV
 
@@ -415,6 +431,8 @@ Casos de teste especiais incluem:
 > Veja também
 >
 > * Teste de integração de ad networks <Anchor target="_blank" href="/partners/pt/docs/getting-started-onboarding-guide-for-ad-networks">Teste de integração de ad networks</Anchor>
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

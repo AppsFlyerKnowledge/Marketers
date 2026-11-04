@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Ative os dados de custo e de receita de anúncios do Google Ads no AppsFlyer.
 
+<div id="cost-clicks-and-impressions" />
+
 ## Custo, cliques e impressões
 
 A integração de custos fornece os seguintes dados agregados:
@@ -53,17 +55,23 @@ Leia mais sobre as <Anchor target="_blank" href="https://support.google.com/goog
 >
 > Se não for a conta correta, saia da conta e faça login novamente usando o endereço de e-mail para uma conta do Google diferente.
 
+<div id="cost-data-sync-status" />
+
 ### Status de sincronização dos dados de custo
 
 <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualize o status da API de custo</Anchor> e a última vez que a AppsFlyer conseguiu extrair dados de custo correspondentes no painel de status de integração de custo (e receita de publicitária) ou no painel individual da ad network. 
 
 O Google Adwords permite sincronizar várias contas para extração de dados de custo. Para cada conta sincronizada, a AppsFlyer exibe o status da integração de custo e a última vez que a AppsFlyer extraiu dados de custo correspondentes.
 
+<div id="stopping-google-cost-sync" />
+
 ### Como interromper a sincronização de custo do Google
 
 **Para parar de sincronizar o custo do Google, exclua a conexão da conta do Google:**
 
 * <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">Vá para a guia custo, na coluna ações, passe o mouse sobre uma conta, clique em Excluir conexão.</Anchor> Depois de excluída, a AppsFlyer deixa de receber o custo. Deletar a conexão não afeta os dados históricos.
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## Como gravar a receita publicitária com o Google Ads
 

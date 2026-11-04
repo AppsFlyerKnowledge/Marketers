@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **Visão geral:** Use a AppsFlyer com Trusted Web Activities (TWA, atividades web confiáveis) para medir instalações e registrar eventos in-app.
 
+<div id="introduction" />
+
 ## Introdução
+
+<div id="what-are-trusted-web-activities" />
 
 ### O que são atividades web confiáveis ​?
 
 As atividades web confiáveis ​​(TWA) são uma nova maneira de integrar conteúdo da web ao seu aplicativo Android. O desafio da TWA é ser capaz de registrar eventos in-app. Este desafio é abordado neste artigo. Para mais informações sobre TWA, veja <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">aqui</Anchor>.
 
 TWA também pode ser usado com Progressive Web Apps.
+
+<div id="what-are-progressive-web-apps" />
 
 ### O que são aplicativos web progressivos?
 
@@ -52,6 +58,8 @@ Esta forma de PWA permite medir instalações. A outra forma de PWA, puramente b
 <Accordion title="Envio de eventos in-app a partir de TWA">
 
 Os eventos in-app são enviados usando o SDK da AppsFlyer a partir de atividades nativas do aplicativo. Como TWA é baseada na web e não é uma atividade nativa, você não pode enviar eventos in-app usando o SDK da AppsFlyer. Você pode usar <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-events-api-for-mobile-s2s-mobile">eventos in-app de servidor para servidorcomo</Anchor> alternativa. Siga as instruções abaixo para enviar eventos de servidor para servidor com TWA.
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
@@ -92,6 +100,8 @@ Antes de começar a enviar eventos TWA para a AppsFlyer, faça o seguinte:
        import androidx.browser.trusted. TrustedWebActivityIntentBuilder;
        ```
 
+<div id="getting-the-appsflyer-id" />
+
 ### Como buscar o ID da AppsFlyer
 
 Para enviar eventos de servidor para servidor, você precisa do ID da AppsFlyer. Você pode obter o ID da AppsFlyer no Android SDK da AppsFlyer.
@@ -101,6 +111,8 @@ Primeiro, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/sdk-
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
+
+<div id="sending-the-appsflyer-id-to-twa" />
 
 ### Enviando o ID da AppsFlyer para TWA
 
@@ -115,6 +127,8 @@ Ao criar uma intenção de atividade web confiável, você pode passar parâmetr
 ```java
 private void launchTwa(String cuid, String af_id) {\n\n    CustomTabsServiceConnection customTabsServiceonnection = new CustomTabsServiceConnection() {\n\n        @Override\n        public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {\n            Log.d(LOG_TAG, "onCustomTabsServiceConnected");\n\n            // Configuração da CustomTabsSession usada para criar uma intent\n            mClient = client;\n            CustomTabsSession session = mClient.newSession(null);\n\n            // Criação da intent para iniciar a TWA usando a URL com parâmetros de consulta que podem ser lidos pelo aplicativo web\n            TrustedWebActivityIntentBuilder twaIntentBuilder = new TrustedWebActivityIntentBuilder(Uri.parse(defaultUri + "?cuid=" + cuid + "&appsflyer_id=" + af_id));\n            Intent twaIntent = twaIntentBuilder.build(session);\n\n            startActivity(twaIntent);\n        }\n\n        @Override\n        public void onServiceDisconnected(ComponentName name) {\n            Log.d(LOG_TAG, "onCustomTabsServiceDisconnected");\n        }\n    };\n\n    CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);\n}
 ```
+
+<div id="retrieving-the-appsflyer-id" />
 
 #### Como buscar o ID da AppsFlyer
 
@@ -144,6 +158,8 @@ Você pode passar cabeçalhos personalizados para atividades web confiáveis. O 
 private void launchTwa(String cuid, String af_id) { \n        CustomTabsServiceConnection customTabsServiceonnection = new CustomTabsServiceConnection() {\n\n        @Override\n        public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {\n            Log.d(LOG_TAG, "onCustomTabsServiceConnected");\n\n            // Configuração da CustomTabsSession usada para criar uma intent\n            mClient = client;\n            CustomTabsSession session = mClient.newSession(null);\n\n            // Criação da intent para iniciar a TWA usando a URL com parâmetros de consulta que podem ser lidos pelo aplicativo web\n            TrustedWebActivityIntentBuilder twaIntentBuilder = new TrustedWebActivityIntentBuilder(Uri.parse(defaultUri);\n            Intent twaIntent = twaIntentBuilder.build(session);\n\n            // Passagem de cabeçalhos personalizados adicionais para a intent para que possam ser lidos pelo aplicativo web\n            Bundle customHeaders = new Bundle();\n            customHeaders.putString("twa_params", "cuid=" + cuid + "&=appsflyer_id" + af_id");\n            twaIntent.putExtra(Browser.EXTRA_HEADERS, customHeaders);\n            startActivity(twaIntent);\n        }\n\n        @Override\n        public void onServiceDisconnected(ComponentName name) {\n            Log.d(LOG_TAG, "onCustomTabsServiceDisconnected");\n        }\n    };\n\n    CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);\n}
 ```
 
+<div id="retrieving-the-appsflyer-id-1" />
+
 #### Como buscar o ID da AppsFlyer
 
 JavaScript não fornece uma API para permitir que os desenvolvedores acessem os cabeçalhos. Portanto, o servidor deve enviar os dados de conversão de volta para a atividade web como um cookie. O servidor obtém os cabeçalhos personalizados contendo o ID da AppsFlyer, analisa os dados e os envia para a página web como um cookie.
@@ -164,6 +180,8 @@ console.log(appsflyer_id);
 ```
 
 </Accordion>
+
+<div id="sending-the-in-app-event" />
 
 ### Enviando o evento in-app
 
@@ -189,6 +207,8 @@ O SDK da AppsFlyer fornece dados de conversão por meio de duas APIs:
 
 Você pode usar dados de conversão para personalizar o conteúdo da web.
 
+<div id="sending-conversion-data-to-twa" />
+
 ### Enviando dados de conversão para TWA
 
 Depois de obter os dados de conversão de qualquer um dos métodos listados acima, você pode enviá-los para o seu servidor web. Para fazer isso, use cabeçalhos personalizados:
@@ -196,6 +216,8 @@ Depois de obter os dados de conversão de qualquer um dos métodos listados acim
 ```java
 private void launchTwa(Map<String, String> conversionData, String cuid, String af_id) { \n        CustomTabsServiceConnection customTabsServiceonnection = new CustomTabsServiceConnection() {\n\n        @Override\n        public void onCustomTabsServiceConnected(ComponentName name, CustomTabsClient client) {\n            Log.d(LOG_TAG, "onCustomTabsServiceConnected");\n\n            // Configuração da CustomTabsSession usada para criar uma intent\n            mClient = client;\n            CustomTabsSession session = mClient.newSession(null);\n\n            // Criação da intent para iniciar a TWA usando a URL com parâmetros de consulta que podem ser lidos pelo aplicativo web\n            TrustedWebActivityIntentBuilder twaIntentBuilder = new TrustedWebActivityIntentBuilder(Uri.parse(defaultUri);\n            Intent twaIntent = twaIntentBuilder.build(session);\n\n            // Passagem de cabeçalhos personalizados adicionais para a intent para que possam ser lidos pelo aplicativo web\n            Bundle customHeaders = new Bundle();\n            customHeaders.putString("twa_params", "cuid=" + cuid + "&=" + af_id");\n            customHeaders.putString("conversion_data", conversionData);\n            twaIntent.putExtra(Browser.EXTRA_HEADERS, customHeaders);\n            startActivity(twaIntent);\n        }\n\n        @Override\n        public void onServiceDisconnected(ComponentName name) {\n            Log.d(LOG_TAG, "onCustomTabsServiceDisconnected");\n        }\n    };\n\n    CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);\n}
 ```
+
+<div id="fetching-the-conversion-data-from-the-client-side" />
 
 ### Buscando os dados de conversão do lado do cliente
 

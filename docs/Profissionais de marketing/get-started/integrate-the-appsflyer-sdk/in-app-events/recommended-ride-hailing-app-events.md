@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** mensure a qualidade dos seus usuários durante toda a jornada de usuário, registrando esses eventos in-app sugeridos para seu aplicativo de transporte de passageiros.
 
+<div id="-ride-hailing" />
+
 ## <Image alt="InApp_Events_ride.png" src="https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png" width="100px" /> Serviços de transporte por aplicativo
 
 Recentemente, o transporte de passageiros se tornou muito popular, principalmente em áreas urbanas onde a maioria dos residentes não possui carro. Os eventos típicos que sugerimos que você registre são pedidos e reservas de transporte.
@@ -32,6 +34,8 @@ Gravar eventos pode ajudar a determinar:
 * Como passageiros e motoristas interagem
 * Países onde as pessoas mais usam serviços de transporte de passageiros
 * Métricas sobre preço, corridas e distância das corridas
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -43,6 +47,8 @@ Gravar eventos pode ajudar a determinar:
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![Fluxograma_da_jornada_do_usuário_do_aplicativo_de_transporte_por_chamada_para_eventos_recomendados](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -145,6 +151,8 @@ Quando um passageiro gasta créditos
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Estruturas recomendadas para eventos personalizados
 
 A seção a seguir fornece uma lista de estruturas de eventos que incluem nomes de eventos personalizados e os parâmetros de eventos sugeridos para usar. Observe que os eventos in-app podem incluir quaisquer parâmetros de evento que atendam às necessidades da sua empresa.
@@ -199,6 +207,8 @@ Esse evento pode ajudar a:
 * Ver o preço médio e total de viagens para cada motorista
 
 Além do mais, registrar este evento em conjunto com outros três eventos relacionados a reservas pode ajudar você a compreender melhor a atividade dos motoristas. Por exemplo, é possível ver quais motoristas confirmam a maioria das solicitações de reserva de transporte e quais motoristas escolhem viagens curtas em vez de viagens longas.
+
+<div id="trigger" />
 
 #### **Gatilho**
 

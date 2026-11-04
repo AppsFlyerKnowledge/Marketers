@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** Configure as conexões da DCP para integrar suas fontes de dados, enriquecer seus dados e exportar audiências para armazenamento na nuvem e parceiros de mídia.
 
+<div id="about-dcp-connections" />
+
 ## Sobre as conexões da DCP
 
 As conexões determinam como a DCP ingere seus dados e exporta suas audiências. Depois de <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">configurar seus serviços na nuvem</Anchor>, conecte-os à DCP usando o modal **Gerenciar conexões**. Estes são os tipos de conexão disponíveis:
@@ -58,9 +60,13 @@ Crie conexões de origem para integrar dados first-party à DCP.
 
 Você também pode criar uma conexão de origem ao configurar uma fonte. Veja como <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources">criar e gerenciar fontes</Anchor> para obter mais instruções.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Ao criar uma conexão de origem de entrada para o S3 ou o GCS, você também cria automaticamente uma conexão de saída correspondente de armazenamento na nuvem (e vice-versa). Ao excluir uma conexão do Amazon S3 ou do GCS, você também exclui automaticamente a outra. Como se trata de uma conexão subjacente, ao removê-la de qualquer uma das abas, você também a remove de todos os locais onde é usada.
+
+<div id="cloud-service-connections-for-source-data" />
 
 #### Conexões dos serviços na nuvem para dados de origem
 
@@ -72,6 +78,8 @@ As conexões de origem servem para conectar seus dados de origem à DCP com segu
 
 **ACCOUNTADMIN** > **Conta** > passe o mouse sobre a conta correspondente > **Copiar identificador da conta**. Consulte a <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">documentação do Snowflake</Anchor> para obter mais detalhes.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Busque o ID com a etiqueta **Locator**. **Não é** o mesmo ID usado para criar conexões de saída do Snowflake.
@@ -79,6 +87,8 @@ As conexões de origem servem para conectar seus dados de origem à DCP com segu
 **Amazon S3 e GCS:** Na caixa de diálogo **Nova conexão**, insira o nome do <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">bucket que você criou</Anchor> para uso exclusivo do Data Clean Room (DCR) da AppsFlyer.
 
 **Salesforce Cloud/CRM:** Veja <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">como configurar uma conexão com o Salesforce</Anchor>.
+
+<div id="local-file-connection" />
 
 #### Conexão de arquivo local
 
@@ -145,6 +155,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN--c000.csv | Um dos arquivos de saída para a entrega; consulte “Formato do arquivo e divisão” mais abaixo. |
 | \_SUCCESS | Um arquivo marcador vazio criado quando a exportação termina de gravar todos os arquivos parciais. |
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Esta estrutura de pastas é criada e gerenciada automaticamente. Não mude o nome nem a estrutura manualmente. Qualquer processo automatizado que leia estes arquivos deve seguir este padrão de caminho e esperar que \_SUCCESS apareça antes de processar os arquivos parciais, evitando a leitura de uma entrega incompleta.
@@ -199,6 +211,8 @@ As conexões de dados e identidade unificam os dados fragmentados dos usuários 
 #### ID5
 
 <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">Enriqueça seus dados first-party com identificadores ID5</Anchor> para unificar os dados fragmentados dos usuários, melhorar as taxas de correspondência com os parceiros de ativação e aumentar o tamanho das audiências do parceiro.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

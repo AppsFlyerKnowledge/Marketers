@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** solucione problemas comuns e discrepâncias relacionados ao Google Ads.
 
+<div id="google-ads-faq" />
+
 ## Perguntas frequentes sobre o Google Ads
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -52,12 +54,16 @@ Isso significa que você deve importar as conversões no Google Ads. Siga as ins
 
 Siga esta lista de verificação para solucionar problemas de instalações ausentes:
 
+<div id="quick-fix" />
+
 #### Solução rápida
 
 1. **Ative o Google Ads no AppsFlyer**  
    No AppsFlyer, na barra lateral, abra **Collaborate > Active integrations**, pesquise por **Google Ads** e confirme se a integração está ativa.
 2. **Importe a conversão** `first_open` **no Google Ads**  
    No Google Ads, acesse a página <Anchor target="_blank" href="https://ads.google.com/aw/conversions">Resumo de conversões</Anchor> e verifique se o evento de conversão `first_open` foi importado. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Importe suas conversões do aplicativo</Anchor>.
+
+<div id="still-not-working" />
 
 #### Ainda não funcionou?
 
@@ -83,6 +89,8 @@ Siga esta lista de verificação para solucionar problemas de instalações ause
 
 Use esta lista de verificação para garantir que seus eventos in-app estejam configurados corretamente e sincronizados entre o AppsFlyer e o Google Ads.
 
+<div id="quick-fix-checklist" />
+
 #### Lista de soluções rápidas
 
 Siga estas etapas para resolver rapidamente os problemas mais comuns:
@@ -101,10 +109,14 @@ Siga estas etapas para resolver rapidamente os problemas mais comuns:
    2. Verifique o **Resumo da ação de conversão**.
    3. Importe os eventos in-app relevantes. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Importar as conversões do seu aplicativo</Anchor>.
 
+      <div id="note" />
+
       > 📘 **Nota**
       >
       > As conversões podem levar até 6 horas para aparecer após a realização do evento.
 
+
+<div id="still-not-working-1" />
 
 #### Ainda não funcionou?
 
@@ -195,6 +207,8 @@ O rastreamento paralelo do Google Ads permite que sua landing page seja carregad
 
 Para uma explicação completa sobre o rastreamento paralelo, clique <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">aqui</Anchor>.
 
+<div id="what-is-needed" />
+
 #### O que é necessário?
 
 Para que o rastreamento paralelo funcione como pretendido, a URL final deve corresponder à que está na URL da campanha e ser colocada no <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">parâmetro ValueTrack do Google.</Anchor>
@@ -228,6 +242,8 @@ Clique aqui para ver como configurar campanhas de anúncios do Google na web com
 
 <Accordion title="Como configurar uma campanha com configuração Android ou iOS">
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > A AppsFlyer é compatível com todas as campanhas de aplicativo habilitadas pelo Google Ads.
@@ -242,6 +258,8 @@ Clique aqui para ver como configurar campanhas de anúncios do Google na web com
 
 Para oferecer suporte à atribuição do Android, certifique-se de que seu aplicativo seja compatível com a coleta GAID (ID de publicidade do Google) e que ela seja enviada para a AppsFlyer por meio do nosso SDK.
 
+<div id="creating-conversion-recording-installs" />
+
 #### Criar registros de conversões (instalações)
 
 Para mais detalhes sobre como criar registros de conversões, clique <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">aqui</Anchor>.
@@ -249,6 +267,8 @@ Para mais detalhes sobre como criar registros de conversões, clique <Anchor tar
 <span id="inapp_events"></span>Google Ads - Configuração do Android - Envio de eventos in-app
 
 Se você quiser mensurar ainda mais o sucesso das suas campanhas de instalação de aplicativos no Google, você pode enviar eventos in-app para sua conta do Google Ads a partir de sua conta da AppsFlyer.
+
+<div id="create-a-conversion-in-app-events" />
 
 #### Criar uma conversão (eventos in-app)
 
@@ -260,6 +280,8 @@ Para mais detalhes sobre como mensurar suas conversões no aplicativo, clique <A
 
 <Accordion title="Configuração do iOS para o Google Ads">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads - Configuração de iOS: campanhas de aplicativos
 
 Campanhas de aplicativos permitem promover seu aplicativo iOS no Google Search, YouTube e Display em um único local de configuração.
@@ -268,13 +290,19 @@ Geralmente, o próprio Google não consegue acompanhar as instalações no iOS a
 
 Em contrapartida, a **busca do iOS** **em** Campanhas de aplicativos pode ser atribuída pelo Google Ads, para anúncios que são apresentados no aplicativo Google Search.
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### Criar registros de conversões (instalações)
 
 Para mais detalhes sobre como criar registros de conversões, clique <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">aqui</Anchor>.
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google Ads - Configuração do iOS - como enviar eventos in-app
 
 Se você quiser mensurar ainda mais o sucesso das suas campanhas de instalação de aplicativos no Google, você pode enviar eventos in-app para sua conta do Google Ads a partir de sua conta da AppsFlyer.
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### Criar uma conversão (eventos in-app)
 
@@ -296,11 +324,15 @@ Isso se aplica a todos os canais do Google Ads.
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Discrepâncias do Google Ads
 
 Às vezes existem discrepâncias entre o dashboard do Google Ads e o dashboard da AppsFlyer.
 
 Embora estejamos trabalhando em conjunto com o Google para minimizar essas discrepâncias, os anunciantes devem estar cientes dos seguintes motivos:
+
+<div id="both-ios-and-android" />
 
 #### iOS e Android
 
@@ -320,11 +352,15 @@ Embora estejamos trabalhando em conjunto com o Google para minimizar essas discr
 | **Eventos first\_open** | O Google Ads obtém eventos do Firebase onde o DMA é implementado corretamente e, posteriormente, são reivindicados eventos consentidos pelo DMA. | O Google Ads também obtém os mesmos eventos da AppsFlyer em que o DMA é implementado incorretamente, fazendo com que todos os eventos sejam relatados como não consentidos pelo DMA, sem reivincidação do Google.<ul><li>Para verificar se o DMA foi implementado corretamente, faça o <Anchor target="_blank" href="/marketers/pt/docs/raw-data-export-page#download-report">download do relatório de dados brutos</Anchor>  e foque nos campos especificados <Anchor target="_blank" href="/marketers/pt/docs/bulletin-dma-support-in-raw-data-reports">neste boletim</Anchor>.</li><li>Consulte [o Dev Hub](https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance) para saber como implementar o DMA no SDK</li></ul> |
 | **Eventos de retargeting** | O Google Ads pode reivindicar um reengajamento com `ad_type=ClickToDownload` na resposta. | A AppsFlyer conta o `ad_type=ClickToDownload` como um evento de conversão de UA em vez de um reengajamento. Como resultado, o número de reengajamentos na AppsFlyer pode ser menor. |
 
+<div id="notes" />
+
 > 📘 **Observações**
 >
 > * Enquanto o Google Ads mostra todas as instalações de uma campanha de retargeting no mesmo lugar, no dashboard de visão geral da AppsFlyer, a visualização de UA exibe novas instalações, a visualização de retargeting exibe reatribuições e a visualização unificada exibe ambas.
 > * Ao comparar dados do dashboard do Google Ads e da AppsFlyer, certifique-se de que os dados no dashboard do Google Ads sejam dados importados de terceiros (AppsFlyer). Dados importados do Firebase ou do Google Play são estruturados de forma diferente e não são inteiramente comparáveis com os dados da AppsFlyer. Para saber como importar dados da AppsFlyer para o dashboard do Google Ads, clique <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">aqui</Anchor>.
 > * Para comparar os eventos de instalação (first\_open no Google Ads), certifique-se de fazer uma busca detalhada de eventos de instalação no relatório de conversão no Google Ads. O Google Ads pode mostrar todas as conversões (podem ser instalações, compras, assinaturas), por isso é importante selecionar somente aqueles eventos de instalação dentre todos os eventos de conversão.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

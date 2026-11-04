@@ -24,9 +24,13 @@ x-zendesk:
 
 <Embed title="Integrações de parceiros" typeOfEmbed="youtube" url="https://www.youtube.com/embed/gADoRdje5z8" providerUrl="https://www.youtube.com" />
 
+<div id="about-partner-integrations" />
+
 ## Sobre as integrações de parceiros
 
 **"Integrações de parceiros"** é o seu ponto central para encontrar e gerenciar parceiros diretamente do dashboard da AppsFlyer. Nesse painel, você pode navegar por ad networks, agências, parceiros de tecnologia, plataformas de analytics e outros parceiros integrados. Use esse painel para revisar os recursos oferecidos pelos parceiros, entender se um parceiro atende ao que você procurar e ativar parceiros que oferecem suporte aos seus objetivos de negócio. Você também pode gerenciar as integrações ativas de um app selecionado.
+
+<div id="quick-start" />
 
 ## Início Rápido
 
@@ -45,6 +49,8 @@ A página de **Integrações de parceiros** inclui duas abas:
 4. **Revise as informações do parceiro:** selecione um parceiro para saber mais sobre seus recursos e opções de integração.
 5. **Conecte-se a um parceiro:** siga os passos de integração para ativar o parceiro.
 
+<div id="manage-active-integrations" />
+
 ## Gerenciar integrações ativas
 
 Para ver as suas integrações ativas, consulte **Integrações ativas**.
@@ -61,10 +67,14 @@ As **Integrações ativas** permitem que você:
 * Filtre integrações por tipo de parceiro e pontuações de qualidade.
 * Selecione um card de parceiro ou clique em **gerenciar integração** para acessar a configuração da integração.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > * As integrações ativas exibidas variam de acordo com o aplicativo selecionado. Para ver quais parceiros estão conectados a outros aplicativos, clique no seletor de aplicativos (canto superior esquerdo) e escolha um app diferente.
 > * O número de integrações ativas para o app selecionado é exibido.
+
+<div id="what-you-can-do-from-the-active-integrations-tab" />
 
 ### O que você pode fazer na página Integrações ativas
 
@@ -76,6 +86,8 @@ As **Integrações ativas** permitem que você:
 | Mudar de aplicativo | A lista de integrações de parceiros ativas depende do aplicativo selecionado no momento. Para visualizar os <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#active-partners">parceiros ativos</Anchor> de outro app:<ol><li>Clique no seletor de aplicativos para abrir sua lista de apps.</li><li>Selecione outro aplicativo.</li></ol> |
 | Ver página do parceiros | Clique no ícone **Sobre** no card do parceiro para acessar sua página. |
 
+<div id="discover-partners" />
+
 ## Descobrir parceiros
 
 Para descobrir e ativar novos parceiros, acesse o **Marketplace**.
@@ -83,6 +95,8 @@ Para descobrir e ativar novos parceiros, acesse o **Marketplace**.
 O Marketplace mostra os parceiros disponíveis para integração com o app selecionado, além de detalhes importantes como o status da integração e selos de qualidade.
 
 Resumindo
+
+<div id="partner-cards" />
 
 ### Cards de parceiros
 
@@ -97,6 +111,8 @@ Consulte os cards dos parceiros para obter informações básicas:
 
 <Image alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
 
+<div id="filter-the-list-of-partners" />
+
 ### Filtrar lista de parceiros
 
 Use os filtros no topo da página para encontrar parceiros relevantes para sua pesquisa. Use os seguintes filtros para ajustar sua pesquisa:
@@ -108,6 +124,8 @@ Use os filtros no topo da página para encontrar parceiros relevantes para sua p
 | Alvo geográfico | Filtre parceiros cuja atividade principal ocorre nas geolocalizações selecionadas. |
 | Tráfego de alta qualidade | Quando selecionado, mostra apenas os parceiros que possuem o selo de baixa taxa de fraude (com base no tráfego do último mês). |
 | Performance Index da AppsFlyer | Quando selecionado, apresenta apenas os parceiros que fazem parte da última edição do Performance Index da AppsFlyer. |
+
+<div id="search-for-partners" />
 
 ### Pesquisar parceiros
 
@@ -122,17 +140,23 @@ Ao usar a barra de pesquisa no Marketplace:
 * Um ponto verde ao lado do logotipo do parceiro indica que a integração está ativa.
 * Você também pode procurar integrações ativas na opção **Integrações ativas**.
 
+<div id="learn-about-partners" />
+
 ## Saiba mais sobre parceiros
 
 Saiba mais sobre cada parceiro e crie uma conexão a partir da página do parceiro. Clique no botão **Sobre** no [Card do parceiro](#cards-de-parceiros) para abrir a página do parceiro.
 
 <Image alt="new cropped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
 
+<div id="what-you-can-do-from-the-partner-page" />
+
 ### O que você pode fazer na página do parceiro:
 
 * [Entre em contato com o parceiro](#entre-em-contato-com-o-parceiro)
 * [Configure uma nova integração](#integrar-um-novo-parceiro)
 * [Gerencie uma integração ativa](#gerenciar-integrações-ativas)
+
+<div id="what-you-can-see-on-the-partner-page" />
 
 ### O que você pode acessar na página do parceiro:
 
@@ -147,6 +171,8 @@ Informações adicionais sobre parceiros incluem:
 * **Recursos disponíveis:** descubra quais recursos de integração da AppsFlyer são compatíveis com o parceiro.
 * **Informações do parceiro:** informações fornecidas pelo parceiro, como seus serviços, recursos e termos.
 
+<div id="contact-the-partner" />
+
 ## Entre em contato com o parceiro
 
 A AppsFlyer pode te ajudar a se conectar com um parceiro, enviando um e-mail introdutório em seu nome. Revise a mensagem antes do envio.
@@ -155,14 +181,20 @@ A AppsFlyer pode te ajudar a se conectar com um parceiro, enviando um e-mail int
 2. *[Opcional]* Coloque o mouse sobre **Ver e-mail completo** para pré-visualizar a mensagem.
 3. Clique em **Enviar introdução rápida**.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > * O botão **Introduce me** é exibido apenas quando o parceiro fornecer os dados de contato necessários.
 > * Alguns parceiros preferem que o contato seja feito através da landing page. Nesse caso, o botão **Entrar em contato com o parceiro** é exibido.
 
+<div id="integrate-with-a-new-partner" />
+
 ## Integrar um novo parceiro
 
 Depois de [descobrir novos parceiros](#descobrir-parceiros) e saber mais sobre os recursos que ele oferece, você pode configurar a integração. Assim que os seus aplicativos estiverem conectadas aos parceiros relevantes, você passará a receber dados não orgânicos em seus dashboards.
+
+<div id="note-2" />
 
 > 📘 **Atenção**
 >
@@ -174,17 +206,25 @@ Depois de [descobrir novos parceiros](#descobrir-parceiros) e saber mais sobre o
 > 2. Procure e selecione o parceiro. Clica no card do parceiro ou no botão **Integrar** para abrir a página de configuração da integração.
 > 3. Clique em **Ativar parceiro** e <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner">configure o restante da integração</Anchor>.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 ## Convide novos parceiros para a AppsFlyer
 
 Se o parceiro com quem você está trabalhando ainda não estiver integrado à AppsFlyer, você pode enviar um link de convite.
+
+<div id="partner-verification" />
 
 ### Verificação de parceiro
 
 Todo parceiro convidado dessa forma é verificado automaticamente antes que a conta dele seja aprovada. Tanto você quanto o parceiro recebem o resultado por e-mail em até 48 horas após o parceiro enviar o formulário de cadastro.
 
+<div id="validation-period-for-new-integrations" />
+
 ### Período de validação para novas integrações
 
 Antes de novas integrações serem adicionadas ao Partner Marketplace, os parceiros passam por um período de validação durante o qual a AppsFlyer avalia a qualidade do tráfego. Integrações que não cumprem os padrões de qualidade após a validação serão removidas da plataforma.
+
+<div id="note-3" />
 
 > 📘 **Atenção**
 >

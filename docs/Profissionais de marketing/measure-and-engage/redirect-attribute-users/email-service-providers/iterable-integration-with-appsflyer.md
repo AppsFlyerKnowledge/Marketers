@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## Introdução
 
 ESPs (Email Service Providers ou provedores de serviços de e-mail) podem ser excelentes fontes de tráfego segmentado de usuários.
@@ -35,6 +37,8 @@ ESPs (Email Service Providers ou provedores de serviços de e-mail) podem ser ex
 Um dos problemas com ESPs é registrar cliques enquanto mantém a funcionalidade de deep linking intacta. Os ESPs agrupam os URLs do deep link com seu próprio domínio de gravação de cliques do ESP. Este procedimento às vezes interrompe o processo de Links Universais do iOS.
 
 Com o Iterable, que é compatível com Links Universais além do seu domínio de gravação de cliques, é possível ainda executar deep linking e gravação de cliques.
+
+<div id="prerequisites" />
 
 ## Pré-requisitos
 
@@ -54,7 +58,11 @@ O Iterable não é compatível com Links de aplicativo do Android O Iterable nã
 </Tab>
 </Tabs>
 
+<div id="setting-up-iterable" />
+
 ## Configurando o Iterable
+
+<div id="step-1-setting-up-link-branding-in-iterable" />
 
 ### Etapa 1: Configurando a marca de link no Iterable
 
@@ -62,9 +70,13 @@ Crie um domínio de gravação de cliques dedicado e defina um subdomínio (por 
 
 Para obter mais informações sobre como definir um domínio de gravação de cliques com o Iterable, clique <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">aqui</Anchor>.
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### Etapa 2: Fazendo upload do seu certificado SSL para Iterable
 
 Seu domínio de gravação de cliques deve incluir o certificado SSL do seu domínio. O certificado SSL deve ser instalado na sua conta do Iterable. Instruções sobre como instalar seus certificados SSL podem ser encontradas<Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">aqui</Anchor>.
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Etapa 2: Dê ao Iterable um arquivo AASA (iOS) e um arquivo Asset Links (Android)
 
@@ -97,6 +109,8 @@ Ao configurar o OneLink com App Links, você já tem um arquivo Asset Links asso
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Configurando seu aplicativo
 
 Veja o seguinte para configurar seus aplicativos para que eles sejam compatíveis com App Links e Universal links.
@@ -104,6 +118,8 @@ Veja o seguinte para configurar seus aplicativos para que eles sejam compatívei
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Etapa 1 para Android: Configurando seu aplicativo para que ele seja compatível com App Links">
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Etapa 1: Adicionando o domínio de clique à atividade no manifesto do Android
 
@@ -121,6 +137,8 @@ No manifesto do Android, adicione o host do domínio de clique e qualquer prefix
      </intent-filter>
 </activity>
 ```
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### Etapa 2: Configurando o aplicativo para resolver domínios de cliques
 
@@ -142,6 +160,8 @@ Para resolver domínios de clique:
 <Accordion title="Etapa 1 para iOS: Configurando seu aplicativo para que ele seja compatível com o Universal Links">
 
 Esta seção é sobre como configurar seu aplicativo para que ele seja compatível com Universal Links.
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### Etapa 1: Associando domínios de clique no Xcode
 
@@ -240,6 +260,8 @@ Para resolver domínios de clique:
 
 </Accordion>
 
+<div id="sending-your-first-email" />
+
 ## Enviando seu primeiro e-mail
 
 1. Crie uma URL do OneLink na página Gerenciamento de links (ou manualmente).
@@ -270,6 +292,8 @@ Para resolver domínios de clique:
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Testando seus links
 

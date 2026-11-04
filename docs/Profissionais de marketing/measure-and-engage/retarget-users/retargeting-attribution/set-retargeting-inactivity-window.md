@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** Expanda o aumento incremental redirecionando usuários inativos. Defina janelas de inatividade por fonte de mídia.
 
+<div id="inactivity-period" />
+
 ## Período de inatividade
 
 Os anunciantes recuperam usuários inativos redirecionando-os. Essas campanhas costumam ter uma boa taxa de conversão e geram ROAS significativo. Muitas campanhas de retargeting têm um baixo desempenho porque elas não filtram usuários ativos. Para impulsionar o aumento incremental das campanhas de retargeting, implemente **um tempo mínimo de inatividade** para filtrar usuários ativos.
@@ -35,6 +37,8 @@ Ao definir um tempo mínimo de inatividade, os anunciantes não atribuem usuári
 * **Atribuído** Usuários inativos que não usam o aplicativo há mais tempo do que o período de inatividade definido. Retargeting, reengajamentos e reinstalações são atribuídos.
 * **Não atribuídos**: Os usuários ativos que abrem o aplicativo e não excedem o período mínimo de inatividade são desconsiderados e não atribuídos à campanha de retargeting.
 
+<div id="retargeting-inactivity-terminology" />
+
 ### Retargeting da terminologia de inatividade
 
 | Termo | Definição |
@@ -43,6 +47,8 @@ Ao definir um tempo mínimo de inatividade, os anunciantes não atribuem usuári
 | Valor padrão | 0 (nenhum)  <br />O **Período de inatividade** O recurso não está ativo por padrão para canais de mídia. |
 | Atividade do usuário | Instalações ou sessões reportadas pelo SDK ou via S2S. |
 | Dispositivos migrados | O tempo de migração é o último tempo de atividade. |
+
+<div id="scenarios" />
 
 ## Cenário
 
@@ -85,6 +91,8 @@ O cenário do usuário é representado na figura a seguir. O usuário:
 | B | 7 dias | 4 dias<br /><br />**O usuário usou o aplicativo** dentro do período de inatividade definido. | <ul><li>**Sessão comum**</li><li>O canal de mídia de retargeting A não é atribuído</li></ul> |
 
 </Accordion>
+
+<div id="partner-setup" />
 
 ## Configuração de parceiro
 
@@ -142,6 +150,8 @@ Agência (permissão concedida pelo anunciante)
 | Google Ads | <ul><li>Não é possível ativar/desativar o retargeting</li><li>Se uma agência tiver permissões, ela poderá configurar um período de inatividade</li></ul> |
 | Meta ads/X Ads/Snapchat | não podem acessar configuração de retargeting e **Período de inatividade** |
 
+<div id="non-srn" />
+
 #### Não-SRN
 
 Parceiro (compatível com retargeting)
@@ -152,6 +162,8 @@ Parceiro (compatível com retargeting)
 2. Selecione uma Ad network não SRN > aba **Link de atribuição**.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

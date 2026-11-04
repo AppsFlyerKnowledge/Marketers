@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** Integre seu aplicativo Vidaa Connected TV (CTV) com a AppsFlyer para receber dados de atribuição e eventos para suas campanhas na Vidaa.
 
+<div id="about-vidaa-ctv-attribution" />
+
 ## Sobre a atribuição da Vidaa CTV
 
 O sistema operacional Vidaa para streaming funciona em todas as TVs da Vidaa.
@@ -32,6 +34,8 @@ A integração da Vidaa API é compatível com:
 
 * Smart TVs Vidaa.
 * Atribuição CTV-to-CTV e registro de eventos. Significado, atribuição e registro em um dispositivo Vidaa.
+
+<div id="integration-procedures" />
 
 ## Etapas de integração
 
@@ -55,6 +59,8 @@ A tabela abaixo lista as etapas necessárias para integrar um app da Vidaa CTV n
 | Dados de custo | Os dados de custos devem ser enviados através de <Anchor target="_blank" href="/marketers/pt/docs/import-cost-data">Cost Import</Anchor> utilizando o método de upload de arquivos por e-mail. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

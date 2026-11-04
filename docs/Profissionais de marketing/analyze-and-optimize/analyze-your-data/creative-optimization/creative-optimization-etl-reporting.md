@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Em resumo:** o Creative Optimization ETL transfere seus dados de performance de criativos para o armazenamento em nuvem diariamente, para carregamento direto nos seus sistemas de business intelligence (BI), sem necessidade de exportações manuais. Escolha entre o **Standard Creative ETL**, que entrega uma estrutura fixa de relatório, e o **Custom Creative ETL**, que permite escolher exatamente quais dimensões, métricas e eventos incluir.
 
+<div id="about-creative-optimization-etl-reporting" />
+
 ## Sobre o Creative Optimization ETL
 
 O Creative Optimization ETL transfere automaticamente seus dados de performance de criativos para o armazenamento em nuvem diariamente, disponibilizando-os para carregamento programático nos seus sistemas de BI. Duas opções estão disponíveis, dependendo das suas necessidades e do seu plano de assinatura.
@@ -42,9 +44,13 @@ São fornecidos relatórios completos de desempenho no nível do ativo, incluind
 
 O Creative Optimization ETL utiliza o <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers">Data Locker</Anchor> para enviar dados de relatórios do Creative Optimization para armazenamento em nuvem. Você pode selecionar vários destinos de armazenamento, como um bucket de propriedade da AppsFlyer na Amazon Web Services (AWS) ou seu próprio armazenamento na AWS, GCS, Yandex, BigQuery, Snowflake e muito mais. O Data Locker é compatível com vários destinos, o que significa que você pode enviar todos os dados para um ou mais destinos, enviar dados específicos para determinados destinos e personalizar a entrega de dados de acordo com suas necessidades.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > O Standard Creative ETL tem um esquema fixo e não oferece suporte a eventos in-app, dimensões de IA nem detalhamentos de retargeting/unificados. Para um esquema totalmente personalizável, consulte [Custom Creative ETL](#custom-creative-etl) abaixo.
+
+<div id="get-started" />
 
 #### Comece agora
 
@@ -59,6 +65,8 @@ Esta seção descreve como configurar o Data Locker para relatórios de otimiza�
 1. Siga <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers#set-up-data-locker">estas instruções</Anchor>.
 2. Ao configurar o Data Locker, selecione **Creative** (abaixo de **Selecionar relatórios**), na página de configuração do Data Locker.
 
+<div id="edit-data-locker-configuration" />
+
 #### Editar configuração do Data Locker
 
 Esta seção descreve como editar sua configuração existente do Data Locker para adicionar relatórios do Creative Optimization.
@@ -68,6 +76,8 @@ Esta seção descreve como editar sua configuração existente do Data Locker pa
 1. Em **Integrações** no menu lateral principal da AppsFlyer, clique em **Data Locker**.
 2. Selecione **Creative** (abaixo de **Selecionar relatórios**) na página de configuração do Data Locker.
 
+<div id="data-freshness" />
+
 #### Atualização dos dados
 
 Depois de configurado, o relatório de Otimização de criativos é transmitido para o Data Locker uma vez por dia. Cada entrega inclui dados dos últimos 30 dias, transmitidos diariamente em UTC+12. O horário local exato depende do seu fuso horário:
@@ -75,6 +85,8 @@ Depois de configurado, o relatório de Otimização de criativos é transmitido 
 * New York: UTC+12 − 5 = 7:00 AM
 * Berlim: UTC+12 + 1 = 1:00 PM
 * Xangai: UTC+12 + 8 = 8:00 PM
+
+<div id="available-data" />
 
 #### Dados disponíveis
 
@@ -144,6 +156,8 @@ Os seguintes dados do Creative estão disponíveis no Data Locker.
 
 Veja as <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide#standard-metrics-and-dimensions">definições das métricas padrão e das métricas exclusivas da Otimização de criativos</Anchor>.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Quando um anúncio não tem prévia disponível, as colunas `asset_link` e `creative` não serão preenchidas.
@@ -171,6 +185,8 @@ Ao contrário do esquema fixo do Standard Creative ETL, o Custom Creative ETL pe
 * **Dimensões de IA**: inclua tags de criativos geradas por IA (tags automáticas e dimensões personalizadas) junto com dados de performance padrão.
 * **Configuração self-serve**: crie, edite e gerencie relatórios diretamente na interface do Creative ETL, sem necessidade de configuração de backend nem de envolvimento de um gerente de sucesso do cliente.
 
+<div id="before-you-begin" />
+
 #### Antes de começar
 
 Antes de configurar o Custom Creative ETL, verifique se os itens a seguir já estão em vigor:
@@ -178,6 +194,8 @@ Antes de configurar o Custom Creative ETL, verifique se os itens a seguir já es
 * O Creative Optimization ETL está **disponível com um plano de assinatura Creative Optimization Premium.** O Custom Creative ETL está disponível exclusivamente no plano Premium. Entre em contato com seu representante da AppsFlyer para confirmar sua assinatura.
 * **Permissões de administrador.** Somente usuários administradores podem criar, editar ou excluir configurações de relatórios de ETL.
 * **Destino do Data Locker.** O Custom Creative ETL entrega dados a uma conexão do Data Locker. Você deve ter pelo menos uma conexão já configurada ou criar uma durante a configuração do relatório (consulte a Etapa 1 abaixo). Os destinos compatíveis incluem AWS S3, GCS, BigQuery, Snowflake, Azure Blob [beta] e Yandex [beta]. <Anchor target="_blank" href="/marketers/pt/docs/data-locker-advertiser-reports#data-freshness-explanations">Saiba mais</Anchor>
+
+<div id="set-up-custom-creative-etl" />
 
 #### Configure o Custom Creative ETL
 
@@ -188,6 +206,8 @@ A configuração do Custom Creative ETL é um processo de três etapas: configur
 1. Na AppsFlyer, acesse **Export** > **Creative ETL**.
 2. Clique em **Criar relatório**.
 
+<div id="step-1---destination" />
+
 ##### Etapa 1 - Destino
 
 Selecione ou configure a conexão do Data Locker para a qual seu relatório será enviado.
@@ -197,11 +217,15 @@ Selecione ou configure a conexão do Data Locker para a qual seu relatório ser�
    * Você pode selecionar várias conexões se quiser que o mesmo relatório seja entregue a mais de um destino.
 4. Clique em **próximo**.
 
+<div id="step-2---details" />
+
 ##### Etapa 2 - Detalhes
 
 Defina o nome e o tipo do relatório.
 
 5. Insira um **nome do relatório**. Esse nome identifica o relatório na lista de relatórios e não pode ser alterado depois de salvo.
+
+   <div id="note-2" />
 
    > 📘 **Atenção**
    >
@@ -217,15 +241,21 @@ Defina o nome e o tipo do relatório.
 
 7. Clique em **próximo**.
 
+<div id="step-3---schema" />
+
 ##### Etapa 3 - Esquema
 
 Selecione as dimensões, métricas, dimensões de IA e eventos in-app para incluir na saída do seu relatório.
+
+<div id="what-is-a-schema" />
 
 > 📘 **O que é um esquema?**
 >
 > Um esquema define as colunas do seu relatório, quais dimensões (atributos como campanha, geolocalização ou tipo de criativo) e métricas (números de performance, como instalações, CTR ou ROAS) são incluídas e em que ordem. A ordem em que você seleciona os campos na interface do usuário determina a ordem das colunas no arquivo de saída.
 
 9. Em **Dimensions**, selecione as dimensões de criativo e campanha que serão incluídas.
+
+   <div id="note-3" />
 
    > 📘 **Atenção**
    >
@@ -240,6 +270,8 @@ Selecione as dimensões, métricas, dimensões de IA e eventos in-app para inclu
 11. Em **Metrics**, selecione os KPIs de performance que serão incluídos.
 12. Em **eventos in-app**, selecione os eventos a serem incluídos. Cada evento selecionado inclui automaticamente quatro submétricas na saída do relatório: contagem de eventos, usuários únicos, receita e CPA.
 
+    <div id="important" />
+
     > 🚧 **Importante!**
     >
     > Você pode incluir no máximo **30 eventos in-app** por relatório.
@@ -247,6 +279,8 @@ Selecione as dimensões, métricas, dimensões de IA e eventos in-app para inclu
 13. Clique em **Salvar** para ativar o relatório.
 
 O relatório agora está configurado. A primeira entrega ocorrerá na próxima execução diária.
+
+<div id="edit-an-existing-report" />
 
 #### Editar um relatório existente
 
@@ -259,6 +293,8 @@ Você pode modificar um relatório existente do Custom Creative ETL, incluindo s
 3. Faça as alterações nas três etapas de configuração.
 4. Vá para qualquer uma das seções e selecione a opção desejada.
 
+<div id="note-5" />
+
 > 📘 **Atenção**
 >
 > As alterações no schema se aplicam apenas às execuções futuras do relatório. Os arquivos entregues anteriormente não são atualizados retroativamente.
@@ -267,9 +303,13 @@ Você pode modificar um relatório existente do Custom Creative ETL, incluindo s
 
 Você também pode **duplicar** ou **excluir** um relatório usando os ícones de ação em cada linha.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Excluir um relatório remove permanentemente a configuração do relatório e todo o histórico de execuções associado. Essa ação não pode ser desfeita.
+
+<div id="report-management" />
 
 #### Gerenciamento de relatórios
 
@@ -282,11 +322,15 @@ As seguintes ações estão disponíveis nos ícones de ação em cada linha de 
 * **Duplicar** (ícone de cópia): cria uma cópia da configuração do relatório.
 * **Excluir** (ícone de lixeira) remove permanentemente o relatório e o histórico de execuções.
 
+<div id="note-6" />
+
 > 📘 **Observação**
 >
 > Cada conta pode ter no máximo **5 relatórios ativos de Creative ETL personalizados**.
 
 Se você tiver um relatório padrão de Creative ETL configurado via Data Locker, um banner de notificação aparecerá na parte superior da página do Creative ETL. Ao clicar, você será direcionado ao Data Locker, onde o relatório padrão é configurado.
+
+<div id="data-delivery" />
 
 #### Dados
 
@@ -307,7 +351,11 @@ Os arquivos de dados são organizados na sua pasta de entrega com base na config
 
 Consulte <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers#app-segregation">segregação por aplicativo no Data Locker</Anchor> para saber mais.
 
+<div id="schema-reference" />
+
 #### Referência do esquema
+
+<div id="mandatory-fields" />
 
 ##### Campos obrigatórios
 
@@ -321,6 +369,8 @@ Os campos a seguir estão sempre incluídos em todos os relatórios de Creative 
 | `asset_link` | string | URL para a prévia do recurso criativo. Não é preenchido quando não há prévia disponível |
 | `dt` | String (YYYY-MM-DD) | Data da partição, a data em que os dados do relatório foram gravados no armazenamento |
 | `version` | string | Identificador da versão da execução; é incrementado em reexecuções de preenchimento retroativo no mesmo `dt` |
+
+<div id="dimensions" />
 
 ##### Dados
 
@@ -354,6 +404,8 @@ Você pode selecionar qualquer combinação das seguintes dimensões para inclui
 | `Resolução` | Sequência de caracteres | Data Locker - select Creative.jpg |
 | `Visão geral: use o Data Locker para transmitir relatórios do Creative Optimization de forma automática e contínua para armazenamento em nuvem para carregamento programático eficiente em seus sistemas de BI.` | string | Classificação do tipo de texto do criativo |
 
+<div id="ai-dimensions" />
+
 ##### Dimensões de IA
 
 As dimensões de IA são geradas pelo mecanismo de análise criativa por IA da AppsFlyer e incluem auto-tags, smart tags e dimensões personalizadas.
@@ -363,6 +415,10 @@ As dimensões de IA são geradas pelo mecanismo de análise criativa por IA da A
 | Auto-tags | `at_` | Tags geradas por IA para elementos criativos, cenas, emoções e atributos narrativos. As tags disponíveis são específicas da conta |
 | [Em breve] Smart tags | `cd_ai_label` | Tags inteligentes geradas por IA |
 | Dimensão personalizada | `cd_` | Atributos criativos definidos pelo usuário e configurados para a sua conta |
+
+<div id="note-7" />
+
+<div id="note-4" />
 
 > 📘 **Atenção**
 >
@@ -443,6 +499,8 @@ As dimensões de IA são geradas pelo mecanismo de análise criativa por IA da A
 | `partner_video_75p_views` | Inteiro | Vídeo reproduzido até 75% (reportado pelo parceiro) |
 | `conclusoes_de_video_do_parceiro` | Inteiro | Conclusões de vídeo (informadas pelo parceiro) |
 
+<div id="in-app-events" />
+
 ##### Eventos in-app
 
 Os eventos in-app aparecem no relatório como colunas de métricas no formato `{event_name}.{sub_metric}`. Quando você seleciona um evento, as quatro submétricas são incluídas automaticamente. Por exemplo, selecionar `af_purchase` gera as seguintes colunas: `af_purchase.event_count`, `af_purchase.unique_users`, `af_purchase.revenue` e `af_purchase.cpa`.
@@ -459,6 +517,8 @@ Limites:
 * Máximo de **30 eventos in-app** por relatório.
 * Os eventos disponíveis são específicos da conta e refletem os eventos que seus aplicativos enviam ativamente para a AppsFlyer.
 
+<div id="limitations" />
+
 #### Limitações
 
 | Limitação | Atenção |
@@ -474,6 +534,8 @@ Limites:
 | Seleção de aplicativos | Todos os aplicativos da sua conta são incluídos em cada relatório. A capacidade de filtrar por aplicativos específicos está planejada para uma versão futura |
 
 </Accordion>
+
+<div id="faq" />
 
 ## Perguntas frequentes
 
@@ -520,6 +582,8 @@ Acesse **Export** > **Creative ETL**, clique no ícone **Edit** do relatório, v
 Se um relatório for executado novamente (normalmente durante um backfill), cada execução receberá um valor de `version` incrementado. Sempre use a versão mais alta disponível para uma determinada partição `dt`.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

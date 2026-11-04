@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** Sina Weibo Ads, uma ad network e parceira integrada da AppsFlyer, é uma das plataformas de rede social mais populares na China.
 
+<div id="setting-up-sina-weibo-ads" />
+
 ## Configurando o Sina Weibo Ads
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,6 +46,8 @@ A janela de configuração do Sina Weibo Ads inclui 3 abas ativas: Integração,
 <Accordion title="Aba Integração">
 
 Essa seção é usada para conectar o parceiro à AppsFlyer. As mensagens relevantes para o anunciante em relação ao parceiro específico também aparecem aqui.
+
+<div id="activate-partners" />
 
 ### Ativar parceiros
 
@@ -69,6 +73,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao Sina 
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -89,6 +95,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**Estrutura de link de atribuição e parâmetros da AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configurações de retargeting
 
@@ -130,6 +138,8 @@ Defina o período após o reengajamento, onde os eventos in-app do usuário são
 
 Leia aqui [como configurar o retargeting](/docs/sina-weibo-ads-campaign-configuration#criando-campanhas-de-retargeting-no-dashboard-de-anúncios-do-weibo) no dashboard do Sina Weibo.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite definir o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras inicializações) que ocorrem dentro da janela de lookback podem ser atribuídas ao Sina Weibo Ads.
@@ -139,6 +149,8 @@ Essa barra deslizante permite definir o **tempo máximo entre o clique e a insta
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
 [![configurações de clique do Sina Weibo](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -184,6 +196,8 @@ Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/doc
 
 </Accordion>
 
+<div id="setting-appsflyer-attribution-on-weibo-ads-dashboard" />
+
 ## Definindo a atribuição da AppsFlyer no dashboard de anúncios do Weibo
 
 Faça login no Sina Weibo Ads, usando este link: [https://ad.weibo.com/](https://ad.weibo.com)
@@ -200,6 +214,8 @@ Android: insira a página de download do APK (terminada em .apk) ou faça upload
 
 iOS: insira o link do iTunes.
 
+<div id="setting-the-attribution-link" />
+
 ### Como configurar o link de atribuição
 
 Acesse a página **promoções** e crie uma nova série de anúncios
@@ -210,6 +226,8 @@ Se você quiser adquirir novos usuários para seu aplicativo, selecione o tipo d
 
 [![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
 
+<div id="setup-ad-series" />
+
 ### Configurar série de anúncios
 
 Escolha qual aplicativo será divulgado:
@@ -219,6 +237,8 @@ Escolha qual aplicativo será divulgado:
 Defina os recursos da audiência, o orçamento e os períodos de promoção:
 
 [![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
+
+<div id="uploading-ad-creatives-and-set-the-attribution-link" />
 
 ### Como fazer upload de criativos de anúncios e configurar o link de atribuição
 
@@ -235,6 +255,8 @@ Todos os formatos de anúncio oferecem suporte à Atribuição da AppsFlyer.
 
 Insira o link de atribuição da AppsFlyer
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > ```http
@@ -246,10 +268,14 @@ Insira o link de atribuição da AppsFlyer
 
 Conclua as configurações adicionais e publique o anúncio.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Você pode visualizar o formato do anúncio na parte superior direita da página de configuração do criativo do anúncio.
 > * Se você não estiver usando deep linking na campanha de anúncio, deixe o campo de deep link em branco.
+
+<div id="creating-retargeting-campaigns-on-weibo-ads-dashboard" />
 
 ## Criando campanhas de retargeting no dashboard de anúncios do Weibo
 
@@ -263,6 +289,8 @@ No nível do anúncio, configure o deep link e o link de atribuição da AppsFly
 
    ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
 
+   <div id="example-1" />
+
    > 📄 **Exemplo**
    >
    > ```http
@@ -273,6 +301,8 @@ No nível do anúncio, configure o deep link e o link de atribuição da AppsFly
 
    ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
 
+   <div id="example-2" />
+
    > 📄 **Exemplo**
    >
    > ```http
@@ -280,6 +310,8 @@ No nível do anúncio, configure o deep link e o link de atribuição da AppsFly
    > &md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false&is_retargeting=true
    > ```
 
+
+   <div id="note-1" />
 
    > 📘 **Nota**
    >

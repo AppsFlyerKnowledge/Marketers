@@ -27,6 +27,8 @@ x-zendesk:
 
 > **Resumo:** Entenda como a Incrementalidade mensura o aumento incremental gerado por campanhas de retargeting.
 
+<div id="what-is-incrementality" />
+
 ## O que é a incrementalidade?
 
 Provavelmente, a melhor maneira de compreender a análise da incrementalidade é através de um exemplo:
@@ -43,11 +45,15 @@ Para responder a essas perguntas de forma precisa, temos de considerar mais do q
 
 Essa diferença entre o total de conversões e as que teriam ocorrido de qualquer forma é conhecida como **aumento incremental** (ou, por vezes, simplesmente **"aumento")** e é fundamental para determinar o verdadeiro valor de uma campanha. Ela pode ser bastante difícil de mensurar, mas é exatamente para isso que criamos nosso recurso de Incrementalidade.
 
+<div id="incrementality-experiments" />
+
 ### Testes de Incrementalidade
 
 A Incrementalidade soluciona o desafio de mensurar seu aumento incremental, possibilitando a criação de experiências cientificamente válidas para comparar o comportamento de grupos semelhantes. A variação entre esses grupos está no fato de que alguns deles (os **"grupos de teste")** são expostos à sua campanha e um grupo específico (o **"grupo de controle")** não.
 
 <Anchor target="_blank" href="/marketers/pt/docs/run-an-incrementality-for-remarketing-experiment">Saiba mais sobre como criar e executar testes de Incrementalidade</Anchor>
+
+<div id="calculation-methodology" />
 
 ## Metodologia do cálculo
 
@@ -64,9 +70,13 @@ A Incrementalidade da AppsFlyer usa dois métodos alternativos para calcular o a
 
 Embora **a metodologia baseada no alcance seja preferível** para avaliar a performance da campanha, o seu cálculo exige a mensuração de pontos de dados que não são fornecidos por todas as ad networks. Para essas ad networks, usamos a metodologia intent-to-treat.
 
+<div id="note" />
+
 > 📘 **Observação:**
 >
 > Antes de 16 de dezembro de 2021, o aumento era calculado usando apenas o método intent-to-treat. No entanto, os dados de datas anteriores foram atualizados para usar o aumento reach-based, quando aplicável. Portanto, você pode revisar seu histórico de experimentos para analisar seus resultados e comparar com a nova metodologia.
+
+<div id="itt-based-lift" />
 
 #### Aumento baseado em ITT
 
@@ -83,6 +93,8 @@ Embora esse não seja o melhor método para mensurar o aumento no nosso contexto
 **Interpretação dos resultados**
 
 Assumir que todos os membros do grupo de teste foram efetivamente alcançados por uma campanha frequentemente resulta em taxas de conversão baixas e, consequentemente, em um aumento incremental baixo.
+
+<div id="reach-based-lift" />
 
 #### Aumento reach-based
 
@@ -102,6 +114,8 @@ Se esses dados não forem compartilhados, a mensuração da Incrementalidade nã
 **Interpretação dos resultados**
 
 Como o cálculo reach-based leva em consideração somente membros do grupo de teste que de fato foram impactados por uma campanha, as ad networks que são mensuradas via incrementalidade reach-based normalmente mostram resultados amplificados (o aumento positivo será bem maior e o aumento negativo será bem menor)
+
+<div id="best-practices" />
 
 #### Práticas recomendadas
 
@@ -134,6 +148,8 @@ No dashboard de Incrementalidade, a significância é relatada como uma porcenta
 
 Para [métricas a nível de grupo de teste](/docs/incrementality-for-remarketing-overview#::2c5f08ec) (em contraste com as [métricas por usuário](/docs/incrementality-for-remarketing-overview#::6143ff4f)), o aumento é calculado com base em um **grupo de controle escalonado**. Ou seja, a dimensão do grupo de controle é ajustada para corresponder à dimensão do grupo de controle para cada fonte de mídia.
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Considere o seguinte cenário:
@@ -151,6 +167,8 @@ Para [métricas a nível de grupo de teste](/docs/incrementality-for-remarketing
 > O aumento será calculado com base em uma dimensão de grupo de controle de 100 membros e 22 conversões incrementais.
 
 </Accordion>
+
+<div id="incrementality-dashboard" />
 
 ## Dashboard de Incrementalidade
 
@@ -362,6 +380,8 @@ Incrementalidade é um recurso premium. Para começar, entre em contato com seu 
 
 </Accordion>
 
+<div id="raw-data-reports" />
+
 ## Relatórios de dados brutos
 
 Use os relatórios de dados brutos de Incrementalidade para analisar a interação dos usuários com campanhas de remarketing:
@@ -405,6 +425,8 @@ A lógica básica subjacente à estrutura do relatório é a seguinte:
 
 A disponibilidade do campo varia de acordo com o tipo de relatório, conforme indicado abaixo:
 
+<div id="fields-unique-to-incrementality-per-report-type" />
+
 #### Campos exclusivos de Incrementalidade (por tipo de relatório)
 
 | Campo | Descrição | Visto pela primeira vez | Eventos in-app | Sessões | Uninstalls |
@@ -418,11 +440,15 @@ A disponibilidade do campo varia de acordo com o tipo de relatório, conforme in
 | <span id="timestamp"></span>timestamp | Carimbo de data e hora do evento AAAA-MM-DD HH:MM |  | S | S |  |
 | <span id="app_ids"></span>app\_ids | IDs de aplicativos associados às regras de audiência | S |  |  |  |
 
+<div id="other-incrementality-report-fields-per-report-type" />
+
 #### Outros campos do relatório de Incrementalidade (por tipo de relatório)
 
 <table><thead><tr><th>Campo</th><th>Nome de exibição\*</th><th>Visto pela primeira vez</th><th>Eventos in-app</th><th>Sessões</th><th>Uninstalls</th></tr></thead><tbody><tr><td><span id="advertising_id"></span>advertising_id</td><td>ID de publicidade (GAID)</td><td>S</td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="android_id"></span>android_id</td><td>ID Android</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="app_id"></span>ativado</td><td>ID da aplicação</td><td>S</td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="app_name"></span>ativado</td><td>Nome do aplicativo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="app_version"></span>app_version</td><td>Versão do aplicativo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="appsflyer_id"></span>appsflyer_id</td><td>Appsflyer ID</td><td> </td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="revenue_alt"></span>revenue_alt</td><td>Moeda específica do aplicativo</td><td> </td><td>S</td><td> </td><td> </td></tr><tr><td><span id="bundle_id"></span>bundle_id</td><td>ID do pacote</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="country"></span>país</td><td>Código do país</td><td> </td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="currency"></span>símbolos monetários</td><td>Código da moeda</td><td> </td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="customer_user_id"></span>customer_user_<br/>id</td><td>ID de usuário cliente</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="brand"></span>Marca</td><td>Marca do dispositivo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="device_category"></span>device_category</td><td>Categoria do dispositivo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="model"></span>Modelo</td><td>Modelo do dispositivo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="device_model"></span>device_model</td><td>Modelo do dispositivo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="device_type"></span>device_type</td><td>Tipo de dispositivo</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="event_name"></span>nome_do_evento</td><td>Nome do evento</td><td> </td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="event_revenue"></span>event_revenue</td><td>Receita do evento</td><td> </td><td>S</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_currency"></span>event_currency</td><td>Moeda da receita do evento</td><td> </td><td>S</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_u_s_d"></span>event_revenue_u_s_d</td><td>Receita do evento em USD</td><td> </td><td>S</td><td> </td><td> </td></tr><tr><td><span id="event_time"></span>event_time</td><td>Hora do evento</td><td> </td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="event_value"></span>event_value</td><td>Valor do evento</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="idfa"></span>idfa</td><td>IDFA</td><td>S</td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="idfv"></span>idfv</td><td>IDFV</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="imei"></span>imei</td><td>IMEI</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="is_purchase_validated"></span>is_purchase_validated</td><td>Se o recibo foi validado</td><td> </td><td>S</td><td> </td><td> </td></tr><tr><td><span id="os_version"></span>os_version</td><td>Versão do sistema operacional</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td><span id="platform"></span>platforma</td><td>Plataforma</td><td> </td><td>S</td><td>S</td><td>S</td></tr><tr><td><span id="sdk_version"></span>sdk_version</td><td>Versão do SDK</td><td> </td><td>S</td><td>S</td><td> </td></tr><tr><td colspan="6"><span id="-according-to-raw-data-specification"></span>\* <a href="./raw-data-field-dictionary#data-fields-dictionary" target="_blank">De acordo com a especificação dos dados brutos</a> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="incrementality-specifications-and-limitations" />
 
 ## Especificações e limitações da incrementalidade
 
@@ -439,6 +465,8 @@ A disponibilidade do campo varia de acordo com o tipo de relatório, conforme in
 | Dados orgânicos | Sim |
 | Eventos S2S | Para serem mensurados na incrementalidade, <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-events-api-for-mobile-s2s-mobile#api-de-eventos-de-servidor-para-servidor-para-mobile">eventos S2S</Anchor> devem incluir o advertising ID em seu payload (IDFA para iOS, GAID para Android). |
 | Fuso horário | UTC |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

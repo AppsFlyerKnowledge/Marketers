@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## Mensuração de atribuição na ATT
 
 A AppsFlyer oferece diferentes soluções e métodos de atribuição. A exigência de consentimento à [ATT](/docs/about-att-and-skan#att-principles) afeta a atribuição no contexto de campanhas app-to-app pagas. Por isso, os anunciantes precisam usar um mix de soluções de atribuição e relatórios. 
@@ -109,7 +111,11 @@ No iOS 14, uma instalação pode ser atribuída nos dashboards tradicionais e no
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## iOS attribution and privacy: conhecimentos importantes
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### Artigos e links sobre iOS 14 e SKAN
 
@@ -131,6 +137,8 @@ No iOS 14, uma instalação pode ser atribuída nos dashboards tradicionais e no
 
 <Accordion title="Impacto da disponibilidade do IDFA na atribuição e na mensuração">
 
+<div id="metrics" />
+
 #### **Métricas**
 
 Considere que, quando um IDFA não está disponível, as seguintes métricas podem ser afetadas:
@@ -149,6 +157,8 @@ O deferred deep linking usando o <Anchor target="_blank" href="https://dev.appsf
 Recomendamos o uso de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">unified deep linking (UDL)</Anchor>. O UDL cumpre com os padrões de privacidade do iOS 14.5+, utilizando apenas parâmetros relevantes para o deep linking e deferred deep linking: `deep_link_value` e `deep_link_sub1`. Parâmetros de atribuição como `media_source`, `campaign` e `af_sub1-5` retornam nulos e não podem ser usados para fins de deep linking.
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## Perguntas frequentes sobre iOS 14, ATT e SKAN
 
@@ -172,6 +182,8 @@ Para apps que usam uma versão anterior à 6.10: a SKAN 4 não funciona.
 Não. Você só precisa solicitar o consentimento da ATT se quiser *rastrear* um usuário, coletar IDFA ou ambos.
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## Perguntas frequentes—SKAN
 
@@ -230,6 +242,8 @@ No geral, essas discrepâncias ocorrem pois você está analisando os relatório
 Exemplo: no relatório de 12 de junho, vemos 100 instalações do Google, que ocorreram no dia 11 de junho. No relatório de 24 de junho, vemos que MAIS 100 instalações ocorreram em 11 de junho. Você precisará analisar todos os relatórios dos últimos 13 dias (de 12 a 24 de junho) e agregá-los com base no horário de instalação ou no timestamp da ad network para ter uma leitura precisa do total de 200 instalações ocorridas em 11 de junho.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

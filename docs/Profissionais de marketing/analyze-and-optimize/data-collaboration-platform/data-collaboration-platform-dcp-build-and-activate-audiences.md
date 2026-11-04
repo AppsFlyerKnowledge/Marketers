@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Em resumo:** Crie audiências de alto valor em colaborações do DCP usando dados compartilhados e ative-as em sites de parceiros de mídia ou serviços em nuvem para maximizar o impacto da campanha.
 
+<div id="about-dcp-audiences" />
+
 ## Sobre as audiências do DCP
 
 O processo de criar audiências a partir de um amplo conjunto de dados envolve a combinação de diferentes conjuntos de dados para gerar dados enriquecidos, que podem ser usados para alcançar exatamente os consumidores que você deseja. A audiência pode ser criada usando conjuntos de dados combinados de mais de uma parte ou fornecidos apenas por uma parte. Em ambos os casos, o colaborador que fornece os dados concede permissões e direitos de acesso de acordo com os termos acordados. Depois de criar uma audiência, você pode enviá-la para seus parceiros de mídia para ativação ou para seu serviço de nuvem.
+
+<div id="build-an-audience" />
 
 ## Crie sua audiência
 
@@ -31,6 +35,8 @@ As seguintes ferramentas estão disponíveis:
 
 * **Audience builder visual:** uma ferramenta fácil de usar que permite que usuários sem conhecimentos técnicos criem segmentos de audiências sem precisar de SQL. Permite a segmentação avançada de audiências usando uma interface gráfica.
 * **Audience builder com SQL:** uma consulta de SQL que permite consultar os dados sem restrições. Requer experiência com SQL.
+
+<div id="key-features" />
 
 #### Principais características
 
@@ -48,6 +54,8 @@ Saiba como <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-p
 
 **Siga as etapas abaixo para criar audiências usando o Audience builder visual:**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Verifique se você tem a permissão para <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">criar audiências</Anchor>.
@@ -64,6 +72,8 @@ Saiba como <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-p
    <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. Siga as etapas da demonstração do **Audience builder** abaixo:
 
+<div id="step-1-details-and-sources" />
+
 #### Passo 1: Detalhes e fontes
 
 A audiência pode ser criada usando dados de um único colaborador ou mesclando uma fonte de cada colaborador para criar uma fonte de dados combinada.
@@ -74,6 +84,8 @@ A audiência pode ser criada usando dados de um único colaborador ou mesclando 
 2. **Selecionar fontes -** selecione uma fonte na lista suspensa:
    * Para uma colaboração unilateral: selecione sua própria fonte ou a fonte do seu colaborador.
    * Select a media partner connection.png
+
+     <div id="note-1" />
 
      > 📘 **Atenção**
      >
@@ -90,6 +102,8 @@ A audiência pode ser criada usando dados de um único colaborador ou mesclando 
      <Image alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. Clique em **Próximo**.
 
+<div id="step-2-define-the-audience" />
+
 #### Passo 2: Definir uma audiência
 
 Depois que as fontes de dados forem selecionadas, você deve escolher quais atributos e valores devem ser incluídos na sua audiência.
@@ -102,6 +116,8 @@ Depois que as fontes de dados forem selecionadas, você deve escolher quais atri
    * Os **atributos de texto** podem ser filtrados com os operadores:  
      Equals ou Non-equals
 
+     <div id="note-2" />
+
      > 📘 **Atenção**
      >
      > * Se um atributo não for selecionado, todos os atributos serão incluídos por padrão.
@@ -113,6 +129,8 @@ Depois que as fontes de dados forem selecionadas, você deve escolher quais atri
 5. Siga para o próximo passo [Enviar audiência](#enviar-audiência-para-ativação) para ativar a audiência.
 
 <Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+
+<div id="summary-right-side-preview-pane" />
 
 #### Resumo (painel de visualização à direita)
 
@@ -165,9 +183,13 @@ O tamanho estimado da audiência reflete o intervalo esperado de usuários únic
 
 ![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
 
+<div id="note-3" />
+
 > 📘 **Atenção**
 >
 > A audiência ativada no lado do Parceiro de mídia pode ser menor do que a audiência que você envia, devido a diferentes taxas de correspondência entre Parceiros de mídia.
+
+<div id="working-with-transactional-data-sources" />
 
 #### Trabalhar com fontes de dados transacionais
 
@@ -190,6 +212,8 @@ Para usar dados transacionais na criação de audiências, primeiro você deve a
 
 Siga as etapas abaixo para criar uma audiência usando o Audience builder com SQL.
 
+<div id="note-4" />
+
 > 📘 **Nota**
 >
 > Verifique se você tem a permissão para <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">criar audiências</Anchor>.
@@ -205,14 +229,20 @@ Siga as etapas abaixo para criar uma audiência usando o Audience builder com SQ
    <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. Prossiga com as etapas do passo a passo do **Audience builder**:
 
+<div id="set-details" />
+
 #### Preencha as informações necessárias
 
 Dê um nome à audiência e clique em **próximo**.
+
+<div id="build-query" />
 
 #### Criar consulta
 
 1. Clique no editor para abrir o [SQL builder](#sql-audience-builder).
 2. Escreva sua consulta SQL para criar sua audiência. Você pode usar fontes combinadas ou unilaterais.
+
+<div id="note-5" />
 
 > 📘 **Atenção**
 >
@@ -221,6 +251,8 @@ Dê um nome à audiência e clique em **próximo**.
 3. Clique em **testar** e avalie os resultados de consulta (amostra de audiência) que aparecem abaixo da declaração.
 4. Clique em **Continuar** e em **Próximo** para prosseguir com a próxima etapa ou clique em **Salvar como rascunho** e volte mais tarde.
 5. Siga o próximo passo para [enviar a audiência](#enviar-audiência-para-ativação).
+
+<div id="the-sql-audience-builder" />
 
 #### Audience builder com SQL
 
@@ -232,6 +264,8 @@ Use o SQL builder para consultar os dados e criar uma audiência. A tabela a seg
 | <span id="topmiddle-section-text-editor"></span>Seção no meio superior (editor de consultas) | Use o editor de consultas para escrever suas declarações SQL. |
 | <span id="bottommiddle-section-context-panel"></span>Seção na parte inferior e no meio (painel de contexto) | Essa seção mostra detalhes dinâmicos com base no objeto selecionado no painel esquerdo:<ul><li>**Ao selecionar uma fonte:** os nomes das colunas ("Nome do campo") e seus tipos correspondentes ("Tipo") são exibidos.</li><li>**Quando uma coluna é selecionada:** os valores da coluna ("Valores distintos") e a contagem de linhas para cada valor ("Contagem") são exibidos.</li><li>**A seguinte execução de consulta:** mostra uma amostra dos resultados da consulta.<br />**Atenção:** como medida de privacidade, a tabela de resultados não exibe valores anonimizados, como e-mails e IDs. Esses valores são mostrados como "Restricted".</li></ul> |
 | <span id="right-pane"></span>Painel direito | Essa seção mostra detalhes dinâmicos com base no objeto selecionado:<ul><li>**Ao selecionar uma fonte:** as permissões concedidas para a fonte são exibidas.</li><li>**Ao escrever a consulta SQL:**<ul><li>o status de validez da consulta no canto superior direito da página é exibido. Isso pode incluir qualquer um dos seguintes status:</li><li>**Pronto para ser executado:** nenhum problema encontrado. Você pode testar a consulta e prosseguir para a próxima etapa.</li><li>**Erro de sintaxe:** um erro na sintaxe foi detectado, juntamente com orientação para resolvê-lo.</li><li>**Erro de permissão:** indica a falta de permissões necessárias, com uma dica que detalha quais <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source">direitos de acesso são fornecidos para a fonte</Anchor>.</li><li>Mostra um botão de **Teste** no canto superior direito da página. Depois de terminar de escrever sua consulta, você deve testá-la para confirmar a precisão da audiência.<br />Clique em **Testar** para testar sua consulta e avaliar os resultados.</li></ul></li></ul> |
+
+<div id="transactional-data-in-sql-queries" />
 
 #### Dados transacionais em consultas SQL
 
@@ -254,12 +288,16 @@ Ao trabalhar com fontes de dados transacionais no SQL Builder, os seguintes padr
 
 </Accordion>
 
+<div id="send-an-audience-for-activation" />
+
 ## Enviar audiência para ativação
 
 Depois que uma audiência for criada, ative-a onde ela puder impulsionar resultados. Selecione um destino, como parceiros de mídia para segmentação de campanha ou um bucket de armazenamento em nuvem para uso subsequente, e o DCP atualiza e entrega a audiência diariamente com base nos dados mais recentes da fonte e nas <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissões-de-compartilhamento">permissões</Anchor>.
 
 * [**Conectar a audiência a parceiros de mídia**](#h_01J8HNKQ08EVKXA75C9MZB7AW9) - as plataformas de parceiros de mídia incluem Meta Ads, Google Ads e muitos outros. Conectar sua audiência a parceiros de mídia quando quiser realizar campanhas pagas, remarketing ou expansão de lookalike.
 * Conectar sua audiência a serviços de nuvem quando precisar do arquivo em modelos de BI, CDPs ou pipelines de enriquecimento interno.
+
+<div id="note-6" />
 
 > 📘 **Nota**
 >
@@ -271,6 +309,8 @@ Depois que uma audiência for criada, ative-a onde ela puder impulsionar resulta
 <Accordion title="Conectar uma audiência a parceiros de mídia">
 
 Envie a audiência para ativação diretamente nas plataformas de parceiros de mídia preferidas, como Meta Ads e <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>. O sistema envia um CSV com user IDs, com anonimização automática se o parceiro precisar.
+
+<div id="note-7" />
 
 > 📘 **Nota**
 >
@@ -302,6 +342,8 @@ Envie a audiência para ativação diretamente nas plataformas de parceiros de m
 
 Envie a audiência diretamente para seu bucket de armazenamento em nuvem. A cada atualização da audiência, o DCP exporta automaticamente a versão mais recente para o destino selecionado. Você também pode fazer download da audiência como um arquivo CSV a qualquer momento.
 
+<div id="note-8" />
+
 > 📘 **Atenção**
 >
 > Antes de exportar, verifique se o bucket do seu armazenamento em nuvem está configurado e conectado ao DCP. Envie sua audiência para seus serviços de nuvem. A audiência é exportada para o serviço de nuvem selecionado usando suas conexões do <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers">Data Locker da AppsFlyer</Anchor>.
@@ -314,6 +356,8 @@ Envie a audiência diretamente para seu bucket de armazenamento em nuvem. A cada
 3. Clique em **Salvar e enviar**.
 
 </Accordion>
+
+<div id="manage-audiences" />
 
 ## Gerenciar audiências
 

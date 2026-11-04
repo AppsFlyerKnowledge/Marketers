@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Integre-se aos parceiros de marketing do Snapchat para medir as campanhas que você executa com eles. Quando configurado, o AppsFlyer envia postbacks para o parceiro de marketing do Snapchat configurado.
 
+<div id="setting-up-a-snapchat-marketing-partner" />
+
 ## Configuração de um parceiro de marketing do Snapchat
 
 Siga as etapas abaixo para configurar suas campanhas com qualquer um dos parceiros de marketing do Snapchat.
@@ -40,6 +42,8 @@ Depois de ativar o Snapchat e obter o Snap Account ID, configure o parceiro de m
 5. Cole o **Snap account ID** obtido no dashboard do Snapchat (com os hífens) no campo **Snap Account ID**.
 6. Clique em **Guardar**.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos de instalação e reengajamento aos parceiros. Use esta seção para definir a **fonte dos usuários** que permitem enviar esses postbacks. Em alguns casos, a fonte dos usuários é predefinida e não pode ser alterada:
@@ -49,14 +53,20 @@ A AppsFlyer pode enviar postbacks automáticos de instalação e reengajamento a
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos a este parceiro.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para que toda a sua base de usuários fique disponível para ser reportada a este parceiro.
 
+<div id="in-app-events" />
+
 ### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 1. Para enviar postbacks de eventos in-app ao parceiro de marketing do Snapchat que você está configurando, alterne o In-App Events Postback para **ON**.
 2. Adicione individualmente os eventos in-app (eventos de SDK) que você deseja enviar ao parceiro e <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#mapeamento-de-eventos">mapeie-os conforme necessário.</Anchor>
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Desabilitar a atribuição do Snapchat impede o envio de postbacks aos parceiros de marketing do Snapchat.
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

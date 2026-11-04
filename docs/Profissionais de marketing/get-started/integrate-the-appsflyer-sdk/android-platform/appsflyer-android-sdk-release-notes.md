@@ -26,9 +26,13 @@ x-zendesk:
 
 **No próximo ciclo fixo de seis meses, as versões legadas do SDK para iOS e Android deixarão de ter suporte.** O objetivo desse ciclo é trazer um aviso prévio para que as equipes se planejem com antecedência e garantam a funcionalidade do aplicativo, evitando interrupções. A atualização para a versão mais recente do SDK garante acesso aos novos recursos, além de uma estabilidade aprimorada e suporte contínuo.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Para garantir uma transição fácil, recomendamos que os desenvolvedores de aplicativos atualizem para a versão mais recente do SDK antes da data final.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## Data final de suporte vs. data de desativação
 
@@ -36,6 +40,8 @@ A AppsFlyer faz uma distinção entre o status **desativada** e **sem suporte** 
 
 * **Versões desativadas:** versões do SDK que não são mais recomendadas devido a problemas conhecidos, como bugs críticos. Essas versões ainda podem enviar dados para a AppsFlyer, mas o uso contínuo não é recomendado. Queremos ressaltar a importância da atualização para uma versão mais recente.
 * **Versões sem suporte:** versões do SDK para as quais a mensuração foi totalmente interrompida em todas as plataformas. Para Android e iOS, instalações, sessões e eventos in-app deixam de ser mensurados. O tráfego vindo dessas versões retorna um código de status 400 (a menos que ele seja especificamente excluído pela equipe de produto), o que significa que o SDK tentará enviar chamadas de API que serão rejeitadas pelos servidores da AppsFlyer, impedindo o processamento dos dados.
+
+<div id="android-sdk-releases" />
 
 ## Lançamentos do Android SDK
 
@@ -66,6 +72,8 @@ A tabela abaixo traz as notas de lançamento para as versões do Android SDK que
 | 6.14.0  <br />Fim do suporte:  <br />03/08/2027 | 17/12/2024 | <ul><li>Adicionamos suporte para o fluxo atualizado de validação de compras. Atualmente, esse recurso está em beta fechado. Saiba mais.</li><li>Integração atualizada do Huawei Referrer. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Saiba mais</Anchor>.</li></ul> |
 | 6.13.1  <br />Fim do suporte:  <br />03/08/2027 | 25/10/2023 | Manutenção do SDK |
 | 6.13.0  <br />Fim do suporte:  <br />03/08/2027 | 08/02/2024 | <ul><li>Adicionamos suporte para a nova política de consentimento do Google na UE (DMA)</li></ul> |
+
+<div id="unsupported-sdk-versions" />
 
 ## Versões sem suporte
 
@@ -118,6 +126,8 @@ As seguintes versões do SDK atingiram o status de **fim de suporte**. Essas ver
 | 6.1.0  <br />Fim do suporte: 31/08/2024 | 09/11/2020 | <ul><li>Compatibilidade com <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">API unificada de deep linking</Anchor> adicionada</li></ul> |
 | 6.0.1  <br />Fim do suporte: 31/08/2024 | 28/10/2020 | Manutenção do SDK |
 | 6.0.0  <br />Fim do suporte: 31/08/2024 | 14/10/2020 | <ul><li>Grandes alterações na funcionalidade do SDK e na API, incluindo descontinuação e alterações no nome do método. [Saiba mais](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

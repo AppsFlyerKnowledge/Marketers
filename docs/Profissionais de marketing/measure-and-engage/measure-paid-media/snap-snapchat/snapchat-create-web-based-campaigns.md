@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **Resumo:** Use campanhas web do Snapchat Ads para atribuir conversões web-to-app a partir do Snapchat Ads
 
+<div id="overview" />
+
 ## Visão geral
 
 A AppsFlyer é compatível com a integração com o Snapchat Ads (`snapweb_int`) para campanhas baseadas na web, permitindo que você reporte dados de atribuição e conversão diretamente por meio da Events API do Snapchat. Os dados são então usados pelo Snapchat Ads para otimizar a segmentação de anúncios, mensurar a performance e criar audiências personalizadas.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
 > Atualmente, a integração com o Snapchat Web não aceita o envio de postbacks de reengajamento para a API.
 
+<div id="prerequisites" />
+
 ### Pré-requisitos
 
 Antes de ativar a integração do Snapchat Web, verifique se você possui uma conta comercial.
+
+<div id="how-to-create-a-snapchat-ads-web-campaign" />
 
 ### Como criar uma campanha web do Snapchat Ads
 
@@ -46,6 +54,8 @@ E as seguintes etapas opcionais:
 
 * [Criar uma landing page com o OneLink Smart Script](#criar-uma-landing-page-com-o-onelink-smart-script) (opcional)
 * [Criar uma landing page com OneLink Smart Banners](#crie-uma-landing-page-com-os-smart-banners-do-onelink) (opcional)
+
+<div id="set-up-snapchat-ads-web-integration-in-appsflyer" />
 
 ## Configurar a integração web do Snapchat Ads na AppsFlyer
 
@@ -104,6 +114,8 @@ Para definir os postbacks de eventos in-app, faça o seguinte:
 6. Na coluna **Para usuários de**, selecione **Somente este parceiro** para garantir que os postbacks de eventos in-app sejam enviados apenas para eventos realizados por usuários que se originaram desse parceiro.
 7. Na coluna **including**, selecione se os eventos serão enviados com os valores de receita. See <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#dados-a-incluir-nos-postbacks">Dados a incluir nos postbacks</Anchor>.
 
+   <div id="note" />
+
    > 📘 **Nota**
    >
    > * Se você estiver configurando um evento de compra, defina a coluna **including** para **Values and revenue**. Selecionar qualquer outra opção fará com que o postback falhe.
@@ -118,6 +130,8 @@ Para definir os postbacks de eventos in-app, faça o seguinte:
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-snapchat-ads" />
+
 ## Configurar a integração da AppsFlyer no Snapchat Ads
 
 Realize as próximas etapas no Snapchat Ads Manager.
@@ -127,6 +141,8 @@ Realize as próximas etapas no Snapchat Ads Manager.
 <Accordion title="1. Defina o tipo, objetivo e metas da campanha.">
 
 Você pode escolher qualquer evento in-app predefinido da AppsFlyer como sua meta de campanha ou escolher "PAGE\_VIEW" se quiser otimizar para instalações de aplicativos mobile.
+
+<div id="warning" />
 
 > ❗️ **Aviso**
 >
@@ -204,6 +220,8 @@ Você pode escolher qualquer evento in-app predefinido da AppsFlyer como sua met
   https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
   ```
 
+  <div id="note-1" />
+
   > 📘 **Nota**
   >
   > O Snapchat adiciona automaticamente `ScCid={{ScCid}}` à URL de destino quando o anúncio é clicado.
@@ -215,6 +233,8 @@ Você pode escolher qualquer evento in-app predefinido da AppsFlyer como sua met
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Criar uma landing page com o OneLink Smart Script
 
@@ -249,6 +269,8 @@ Para configurar suas campanhas do Snapchat Ads, siga estas etapas:
 
 1. Configure o template para os links de atribuição do OneLink da campanha. Para obter mais informações, veja <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#como-criar-templates-do-onelink">como criar templates do OneLink</Anchor>.
 2. Crie um Smart Script. Para mais informações, veja <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">como criar um Smart Script do OneLink</Anchor>.
+
+   <div id="note-2" />
 
    > 📘 **Nota**
    >
@@ -290,12 +312,18 @@ Para configurar suas campanhas do Snapchat Ads com o Smart Script para landing p
 
 * Lembre seu desenvolvedor de incluir o parâmetro de entrada `ScCid` na URL de saída.
 
+  <div id="note-4" />
+
+  <div id="note-3" />
+
   > 📘 **Nota**
   >
   > Para exibir nos relatórios de dados brutos da AppsFlyer, o parâmetro `ScCid` de entrada também deve ser mapeado (além do parâmetro `ScCid` de saída) para um dos parâmetros `af_sub[1-5]` de saída.
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## Crie uma landing page com os Smart Banners do OneLink
 
@@ -326,6 +354,8 @@ Para configurar suas campanhas de Smart Banners do Snapchat Ads, siga estas etap
 1. Configure o template para os links de atribuição do OneLink da campanha. Para obter mais informações, veja <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#como-criar-templates-do-onelink">como criar templates do OneLink</Anchor>.
 2. Crie um Smart Banner.
 
+   <div id="note-5" />
+
    > 📘 **Nota**
    >
    > As instruções abaixo descrevem as etapas específicas necessárias para configurar uma campanha do Snapchat Ads com Smart Banners. Para obter um guia abrangente sobre como configurar campanhas de Smart Banners, consulte a <Anchor target="_blank" href="/marketers/pt/docs/smart-banners-mobile-web-to-app-for-marketers#configuração">seção de configuração</Anchor> do artigo <Anchor target="_blank" href="/marketers/pt/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners — web-to-app mobile (para profissionais de marketing)</Anchor>.
@@ -335,6 +365,8 @@ Para configurar suas campanhas de Smart Banners do Snapchat Ads, siga estas etap
    * Certifique-se de que todos os parâmetros de URL relevantes sejam anexados à URL de entrada.
    * Para revisar os parâmetros anexados à URL de entrada, abra o Snapchat Ads Manager e analise os parâmetros de URL definidos durante a [criação da URL de destino](#2-set-destination-url).
 
+   <div id="note-6" />
+
    > 📘 **Nota**
    >
    > Mais importante ainda, `pid=snapweb_int` e `ScCid` estão disponíveis na URL de entrada para permitir que o Smart Banner os colete. Esses dois parâmetros são necessários para atribuição e envio de postbacks para o Snapchat Ads.
@@ -342,20 +374,28 @@ Para configurar suas campanhas de Smart Banners do Snapchat Ads, siga estas etap
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## **Ver os dados de atribuição de web-to-app**
 
 Embora os eventos de conversão baseados na web sejam enviados para o Snapchat sob o PID original `snapweb_int`, eles são relatados no dashboard da AppsFlyer e nos relatórios de dados brutos com o PID `snapchat_int`. Isso se aplica tanto a eventos de conversão primários quanto a eventos de assistência de conversão.
 
 Essa visualização unificada permite que você analise a performance das campanhas na web e no app em um só local, incluindo relatórios completos de custos na web e no mobile.
 
+<div id="view-in-the-dashboard" />
+
 ### **Ver no dashboard**
 
 Todas as atribuições de web-to-app do Snapchat aparecem sob `snapchat_int` nos dashboards de Visão Geral e de Atividade. Isso fornece uma visão única e consolidada dos resultados da campanha em várias plataformas. Use filtros e análises padrão para comparar o tráfego do app e da web dentro dos seus dados do Snapchat Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### **Ver em dados brutos e relatórios de API**
 
 * **Exportações de dados brutos e respostas de API** incluem o PID `snapchat_int` no campo `media_source` para a atividade web do Google. Para verificar os detalhes da configuração da campanha web, consulte o campo `original_url`, que mostra `snapchat_int` como o PID usado durante a criação de campanhas web.
 * **Relatórios de postback** mostram `snapweb_int` como a fonte de mídia original para onde o postback foi enviado.
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

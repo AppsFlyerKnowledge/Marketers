@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** mensure a qualidade dos seus usuários durante toda a jornada de usuário, registrando os eventos in-app sugeridos para seu aplicativo de entretenimento.
 
+<div id="-entertainment" />
+
 ## <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png" width="100px" /> Entretenimento
 
 Com a crescente exigência de parte dos usuários por conteúdos sob demanda, o mercado de aplicativos de entretenimento se tornou muito competitivo. Os eventos típicos que sugerimos que você grave são assinaturas dos usuários, streaming de conteúdo e quando os usuários fazem download e salvam conteúdo.
@@ -39,6 +41,8 @@ Esses eventos também são relevantes para aplicativos de entretenimento executa
 * Apple TV (tvOS)
 * Amazon Fire TV
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Certifique-se de ler as <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#configurando-eventos-in-app">instruções</Anchor> para os profissionais de marketing sobre a implementação de eventos in-app.
@@ -49,6 +53,8 @@ Esses eventos também são relevantes para aplicativos de entretenimento executa
 > Para mais informações sobre como registrar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia de Eventos in-app avançados</Anchor>.
 
 [![Fluxograma_da_jornada_do_usuário_do_app_de_entretenimento_para_eventos_recomendados](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -117,6 +123,8 @@ Quando o usuário se inscreve e ativa o período de avaliação
 | método\_de\_teste | Método para ativar a avaliação | Grátis com um novo telefone, grátis com uma operadora, promoção, código de cupom |
 | identificador\_do\_método\_de\_teste | Identificador do método de avaliação | Nome da operadora, por exemplo, **Vodafone**<br /><br />Nome do parceiro, por exemplo, **Meta Ads**<br /><br />Código do cupom, por exemplo, **TRA123** |
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Se você estiver mapeando esse evento para o evento Meta ads StartTrial e quiser associar receita, use o parâmetro af\_price em vez do parâmetro af\_revenue.
@@ -155,6 +163,8 @@ Veja nossa Atribuição de assinatura—Visão geral para obter mais informaçõ
 | expiration\_date | Data de validade da assinatura | 2018/07/18 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

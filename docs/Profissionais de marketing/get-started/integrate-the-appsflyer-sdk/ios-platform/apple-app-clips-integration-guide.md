@@ -24,6 +24,8 @@ x-zendesk:
 
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 
+<div id="app-clip-integration" />
+
 ## Integração do App Clip
 
 * Os App Clips fornecem aos usuários do iOS 14 acesso rápido e conveniente a uma experiência de aplicativo, sem a necessidade de baixar o aplicativo completo.
@@ -35,11 +37,15 @@ x-zendesk:
     * Com iOS 13 ou anterior, ou Android, são redirecionados com base em suas configurações no OneLink (para a loja de aplicativos, etc).
   * Os usuários com o aplicativo instalado são enviados para o aplicativo com base na configuração do Universal Link ou do App Link no OneLink.
 
+<div id="considerations" />
+
 ### Considerações
 
 * Os App Clips podem ter até 10 MB de tamanho. O SDK da AppsFlyer tem ~1,5 MB.
 * Não há identificadores de publicidade disponíveis.
 * Os App Clips são excluídos pelo sistema operacional automaticamente após um período de inatividade de 30 dias.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -54,6 +60,8 @@ x-zendesk:
 > * Se eles não tiverem o aplicativo e tiverem um dispositivo com iOS 13 ou anterior, ou Android, a página da loja de aplicativos do aplicativo de cafeteria será aberta.
 >
 > Marcos usa o painel e os relatórios da AppsFlyer para ver quantos cliques e instalações o App Clip recebe - e quantos usuários continuam baixando o aplicativo completo.
+
+<div id="metrics-and-reporting" />
 
 ## Métricas e relatórios
 
@@ -74,9 +82,13 @@ Visualize o desempenho do App Clip no <Anchor target="_blank" href="/marketers/p
 * Ver quanto tempo leva para os usuários irem do App Clip para a instalação completa do aplicativo.
 * Usar a métrica de conversão in-app para comparar o desempenho de diferentes campanhas de invocação.
 
+<div id="app-clip-implementation" />
+
 ## Implementação do App Clip
 
 O procedimento a seguir detalha o que você e o desenvolvedor do iOS precisam fazer para desenvolver e integrar App Clips.
+
+<div id="scope-of-work" />
 
 #### Escopo do trabalho
 
@@ -192,6 +204,8 @@ Envie os seguintes links para o seu desenvolvedor iOS e diga a ele para seguir a
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características e limitações
 
 <div id="traits-and-limitations::26141033" />
@@ -206,6 +220,8 @@ Envie os seguintes links para o seu desenvolvedor iOS e diga a ele para seguir a
 | Os alertas do Protect360 são atualizados no horário UTC diário. | O Protect360 não é compatível com App Clips. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

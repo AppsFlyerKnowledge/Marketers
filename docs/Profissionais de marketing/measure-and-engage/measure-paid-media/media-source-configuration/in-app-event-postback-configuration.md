@@ -24,18 +24,26 @@ x-zendesk:
 ---
 > **Resumo:** mensure o engajamento no aplicativo, a qualidade dos seus usuários e otimize campanhas usando dados de eventos in-app.
 
+<div id="overview" />
+
 ## Visão geral
 
 Os eventos in-app permitem que os profissionais de marketing mensurem o engajamento no aplicativo e a qualidade do usuário de diferentes canais, para que eles criem uma estratégia de aquisição de usuários apropriada. As ad networks usam informações de eventos in-app para otimizar campanhas e executar campanhas de custo por ação/evento. As ad networks recebem dados de eventos in-app por meio de postbacks, que são enviados em tempo real. <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">Saiba mais sobre eventos in-app avançados</Anchor>.
+
+<div id="postback-in-app-event-selection" />
 
 ## Seleção de eventos in-app em postbacks
 
 Os profissionais de marketing podem selecionar quais eventos in-app querem enviar por postback para ad networks, usando as configurações descritas neste artigo.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > * Eventos in-app incluem **eventos rejeitados**, ou seja, eventos in-app bloqueados pelo Protect360 ou eventos que não estão em conformidade com as regras de validação de destino.
 > * Se a seção **Postbacks de eventos in-app** não aparecer na aba **Integração**, isso significa que o parceiro ainda não configurou os registros de eventos in-app com a AppsFlyer durante a configuração preliminar. O parceiro pode entrar em contato com a AppsFlyer utilizando o <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget do assistente de parceiro</Anchor> para concluir a integração.
+
+<div id="in-app-event-postback-window" />
 
 ## Janela de postback de eventos in-app
 
@@ -56,17 +64,25 @@ Os postbacks são sempre enviados com base na configuração da janela **atual**
 | 15 de janeiro | A janela é alterada para 20 dias. |
 | 18 de janeiro | O usuário faz outra compra.<br /><br />Desta vez, o postback é enviado, porque o evento se enquadra na janela atual (20 dias). |
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Quando você seleciona a [**configuração Todos os canais de mídia, incluindo orgânico**](#opções-para-envio-de-postbacks), o parceiro que a configurou recebe um postback para cada evento de conversão que o anunciante recebe. Isso acontece mesmo que o anunciante tenha atribuído o evento a outro parceiro, desde que o evento tenha ocorrido dentro da janela de postback que a AppsFlyer define para o parceiro que configurou a configuração.
+
+<div id="default-postback-window" />
 
 ### Janela de postback padrão
 
 Quando se começa a configurar os postbacks de eventos in-app, a janela padrão é automaticamente definida para seis meses.
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > Se você começou a usar postbacks de eventos in-app com um parceiro específico antes de 30 de julho de 2019, a janela padrão é vitalícia. Isso significa que postbacks de eventos in-app sempre são enviados.
+
+<div id="who-can-configure-postback-windows" />
 
 ### Quem pode configurar janelas de postback
 
@@ -77,6 +93,8 @@ As seguintes funções podem configurar janelas de postback:
   **Observação:** um profissional de marketing e uma agência que trabalham com a mesma ad network podem configurar janelas de postback separadamente, com base em seus contratos com a network.
 * Parceiros, se receberem a **permissão** de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">configurar postbacks de eventos in-app</Anchor>.
 
+<div id="event-mapping" />
+
 ## Mapeamento de eventos
 
 Cada profissional de marketing pode dar um nome diferente a um evento do mesmo tipo. Esses nomes de eventos também podem ser diferentes dos nomes dos parceiros.
@@ -85,9 +103,13 @@ Por exemplo, quando um usuário compra algo através de um aplicativo, um profis
 
 Para garantir que os eventos do profissional de marketing correspondam aos mesmos eventos dos parceiros, os nomes dos eventos devem ser mapeados.
 
+<div id="note-3" />
+
 > 📘 **Atenção**
 >
 > Os eventos mapeados na aba integração para um parceiro específico se aplicam tanto a postbacks padrão quanto a <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">postbacks da SKAdNetwork (SKAN).</Anchor>
+
+<div id="mapping-methods" />
 
 ### Métodos de mapeamento
 
@@ -96,6 +118,8 @@ Cada parceiro decide qual dos métodos a seguir deve ser usado para mapear seus 
 * [Inserir o ID do evento do parceiro](/docs/in-app-event-postback-configuration#enter-the-partner-event-id)
 * [Selecionar o ID do evento na lista](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [Enviar eventos como eles estão (não mapeados)](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **Atenção**
 >
@@ -106,6 +130,8 @@ Cada parceiro decide qual dos métodos a seguir deve ser usado para mapear seus 
 
 * **Evento da AppsFlyer**: a partir da lista de eventos do seu aplicativo, selecione um evento.
 * **mapeado para o evento do parceiro**: no campo de texto, insira o ID do evento conforme recebido do parceiro que corresponde ao seu evento do aplicativo (evento da AppsFlyer)
+
+<div id="note-5" />
 
 > 📘 **Importante!**
 >
@@ -133,6 +159,8 @@ Você pode escolher quais eventos não mapeados você quer enviar para o parceir
 
 * **Adicionar manualmente:** Selecione eventos específicos.
 * **Enviar todos os eventos (exceto desinstalações e sessões)**. Isso não inclui desinstalações, sessões (inicializações do aplicativo), e o evento `af_app_open`.
+
+<div id="note-6" />
 
 > 📘 **Importante!**
 >
@@ -162,12 +190,16 @@ Você pode escolher quais eventos não mapeados você quer enviar para o parceir
 
 Para mais informações sobre o mapeamento de eventos, veja <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks de eventos in-app</Anchor>.
 
+<div id="options-for-sending-postbacks" />
+
 ### Opções para envio de postbacks
 
 Para cada evento, você pode escolher em qual caso enviar os postbacks (dentro da janela do postback):
 
 * **Somente este parceiro**: Envie postbacks somente quando o evento for atribuído a este parceiro, ou seja, quando o usuário que o realizou vier deste parceiro.
 * **Todos os canais de mídia, incluindo orgânico**: Envie postbacks para todos os canais de mídia em eventos atribuídos a qualquer parceiro e para eventos orgânicos, ou seja, quando o usuário que o realizou vier de qualquer canal de mídia. **Observação**: Quando **Todos os canais de mídia, incluindo orgânico** estiver selecionado, os postbacks de outros parceiros não conterão dados de atribuição.
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### Dados a incluir nos postbacks
 
@@ -178,11 +210,15 @@ Você pode escolher que tipo de dados de eventos você deseja compartilhar com o
 * **Valores e receita**: Envie todos os parâmetros do evento, **incluindo** o valor da receita (se existir no evento).
 * **Valores, receita & receita líquida**: Envie todos os parâmetros do evento, incluindo os valores de receita e receita líquida (se existirem no evento).
 
+<div id="note-7" />
+
 > 📘 **Importante!**
 >
 > A opção **Valores, receita e receita líquida** requer uma assinatura **ROI360 Advanced** e está disponível apenas para eventos `af_purchase*` e `af_ars_*`.
 
 É recomendável compartilhar a receita se você quiser que as ad networks otimizem suas campanhas e melhorem os resultados. Entretanto, compartilhar a receita não é obrigatório. Certifique-se de permitir o compartilhamento de receitas somente para eventos que tenham `af_revenue` ou`af_projected_revenue` configurados em seu valor de evento. Caso contrário, as ad networks recebem eventos com um valor de receita vazio.
+
+<div id="share-revenue" />
 
 #### Compartilhar receita
 
@@ -198,9 +234,13 @@ Quando a opção **Valores, receita e receita líquida** é selecionada, `af_net
 https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-monetary=(net-monetary)&content_id=(af_content_id)
 ```
 
+<div id="note-8" />
+
 > 📘 **Importante!**
 >
 > Ao escolher **Sem valores e sem receita** ou **Com valores e sem receita**, os respectivos parâmetros são mascarados com N/A.
+
+<div id="tip" />
 
 > 👍 **Observação**
 >
@@ -222,6 +262,8 @@ A tabela abaixo mostra como os parâmetros são enviados:
 | **Com valores e sem receita** | `{"af_currency":"N/A","af_content_id":"1234567","af_revenue":"N/A","af_content_type":"category_a"}&monetary=N/A&content_id=1234567` | N/D | N/D | Sequência de caracteres |
 | **Valores e receita** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_content_type":"category_a"}&monetary=50.87&content_id=1234567` | 50.87 | USD | N/D |
 | **Valores, receita e receita líquida** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_net_revenue":35.61,"af_content_type":"category_a"}&monetary=50.87&net-monetary=35.61&content_id=1234567` | 50.87 | USD | 35.61 |
+
+<div id="conditional-in-app-event-postbacks" />
 
 ### Postbacks condicionais de eventos in-app
 
@@ -256,6 +298,8 @@ Um profissional de marketing com um aplicativo de gaming quer otimizar campanhas
 4. Você pode adicionar mais condições, certifique-se de inserir todos os campos da condição existente.
 5. Clique em **salvar integração.**
 
+<div id="considerations" />
+
 #### Considerações
 
 Ao configurar as condições, certifique-se de que as seguintes considerações sejam atendidas para que o evento seja enviado ao parceiro:
@@ -279,10 +323,14 @@ Ao configurar as condições, certifique-se de que as seguintes considerações 
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **Importante!**
 >
 > * É recomendável testar esse recurso com um aplicativo de teste ou eventos menores para entender seu impacto na otimização da campanha.
 > * Para ver o <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview">conteúdo do postback</Anchor>, você pode baixar o relatório de postbacks de dados brutos.
+
+<div id="editing-multiple-events" />
 
 ### Editando vários eventos
 
@@ -303,6 +351,8 @@ Ao mapear eventos, os valores nos campos **para usuários de** e **incluindo** 
 
 ![Painel de ações em massa para editar as configurações "para usuários de" e "incluindo" em vários eventos](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### Eventos personalizados
 
 A lista de eventos disponíveis para mapeamento mostra apenas os eventos já relatados pelo SDK ou por eventos S2S enviados para a AppsFlyer. Se o evento que você deseja mapear não aparecer na lista suspensa, isso pode acontecer pelos seguintes motivos:
@@ -319,6 +369,8 @@ A lista de eventos disponíveis para mapeamento mostra apenas os eventos já rel
 4. Associe o evento ao identificador do parceiro.
 5. Clique em **Salvar integração** para certificar-se de que o mapeamento será registrado.
 
+<div id="note-10" />
+
 > 📘 **Importante!**
 >
 > * Adicionar eventos personalizados à página de postback não os extrai automaticamente do seu app. É necessário configurar os eventos no SDK ou S2S para garantir o funcionamento correto. Veja <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#enviar-eventos">como enviar eventos para a AppsFlyer</Anchor>.
@@ -329,6 +381,8 @@ A lista de eventos disponíveis para mapeamento mostra apenas os eventos já rel
 
 * Não podem adicionar eventos personalizados
 * Só podem visualizar e/ou mapear eventos depois que o profissional de marketing adicionou o evento e concedeu as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões</Anchor> necessárias.
+
+<div id="event-mapping-by-ad-networks" />
 
 ## Mapeamento de eventos por ad networks
 
@@ -341,9 +395,13 @@ Os profissionais de marketing podem permitir que as ad networks mapeiem os event
 
 Depois que a ad network receber as permissões, ela poderá mapear os eventos seguindo as instruções em [Digitar o ID do evento no campo de texto](#métodos-de-mapeamento).
 
+<div id="event-mapping-by-agencies" />
+
 ## Mapeamento de eventos por agências
 
 Os profissionais de marketing podem permitir que as agências configurem postbacks de eventos no aplicativo.
+
+<div id="note-11" />
 
 > 📘 **Importante!**
 >

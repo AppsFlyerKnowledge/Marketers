@@ -24,15 +24,21 @@ x-zendesk:
 
 > **Resumo:** Fortaleça a proteção contra fraudes do seu aplicativo Android com o módulo avançado de segurança. Essa solução detecta e bloqueia o spoofing de atribuição e o tráfego manipulado em tempo real, antes que as instalações sejam atribuídas. Ela foi projetada para aplicativos que possuem um tráfego elevado e para clientes do Protect360, especialmente aqueles que trabalham com afiliados. O módulo pode ser totalmente configurável, permitindo que a configuração inicial e a manutenção contínua se adaptem aos padrões de fraude em evolução, protegendo a integridade dos seus dados.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > O beta do módulo avançado de segurança do Protect360 está disponível para todos os clientes do Protect360. Para participar, entre em contato com seu CSM.
+
+<div id="what-is-sdk-spoofing" />
 
 ## O que é spoofing de SDK?
 
 Uma tática avançada de fraude em que os ataques enviam solicitações falsas de instalação e eventos in-app diretamente para os servidores da AppsFlyer, sem instalar ou executar o aplicativo em um dispositivo real. O SDK do aplicativo não é hackeado ou modificado: os fraudadores imitam as solicitações de rede que um aplicativo real enviaria, fazendo com que a atividade pareça legítima. O SDK do aplicativo não é hackeado ou modificado: os fraudadores imitam as solicitações de rede que um aplicativo real enviaria, fazendo com que a atividade pareça legítima.
 
 Para os anunciantes, o spoofing de SDK pode levar a instalações e engajamentos que nunca ocorreram, volumes de instalação inflacionados, discrepâncias entre os números da AppsFlyer e da loja de aplicativos e desperdício no investimento em anúncios.
+
+<div id="about-the-advanced-security-module" />
 
 ## Sobre o módulo avançado de segurança
 
@@ -44,6 +50,8 @@ Essa solução é especialmente útil para aplicativos que enfrentam discrepânc
 
 O módulo é acionado após a primeira abertura do aplicativo (registrada pelo SDK), antes que a instalação seja atribuída. Para usar o módulo avançado de segurança, você deve usar o Android SDK v6.15.2 ou versões mais recentes.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 Antes de começar, certifique-se de que você tem o seguinte:
@@ -52,11 +60,15 @@ Antes de começar, certifique-se de que você tem o seguinte:
 * **Um token da API V2** — necessário para a autenticação no repositório Maven quando seu desenvolvedor integrar a dependência do Módulo de Segurança. Consulte <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens#aplicações-o-token-api-v2">Gerenciamento de tokens da AppsFlyer</Anchor> para saber como recuperar ou gerar um.
 * **Todos os hashes de certificado (SHA-256)** de cada certificado usado para assinar seu aplicativo (debug e release). Consulte <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint">Como gerar uma impressão digital SHA256</Anchor>.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Se a sua conta já atingiu o limite de dois tokens da API V2, você não precisa solicitar um novo; um token da API V2 existente pode ser reutilizado para esta integração. Entre em contato com seu CSM se tiver dúvidas sobre a alocação de tokens.
 >
 > Para ver as etapas completas da integração técnica, consulte o <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin">guia do desenvolvedor do plugin de segurança do Android</Anchor>.
+
+<div id="set-the-advanced-security-module" />
 
 ## Configure o módulo avançado de segurança
 
@@ -64,12 +76,16 @@ Configure o módulo avançado de segurança para validar se o tráfego in-app es
 
 <Accordion title="Configure o módulo avançado de segurança">
 
+<div id="step-1-open-and-select-an-app" />
+
 #### 1º passo: Abra e selecione um aplicativo
 
 1. Na AppsFlyer, vá para **Configurações > Protect360 > Módulo avançado de segurança**.
 2. Clique em **Começar** ou **Adicionar build**.
 3. Selecione o aplicativo no qual você deseja implementar a solução de módulo avançado de segurança.
 4. Clique em **Próximo**.
+
+<div id="step-2-add-certificate" />
 
 #### **2º passo: Adicionar certificado**
 
@@ -80,17 +96,23 @@ Configure o módulo avançado de segurança para validar se o tráfego in-app es
 
 Atenção: Peça ao seu desenvolvedor todos os [hashes de certificado](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint) usados para assinar o aplicativo. O módulo de segurança usa esses certificados para validar se o tráfego vem do seu aplicativo. Portanto, todos os hashes relevantes devem ser incluídos.
 
+<div id="step-3-excluded-app-versions-from-detection" />
+
 #### **3º passo: Versões de aplicativos excluídas da detecção**
 
 * Adicione as versões do aplicativo que devem ser excluídas da detecção de segurança avançada. Normalmente, elas incluem:
   * Versões lançadas antes da integração do módulo avançado de segurança.
   * Builds de teste ou builds legados que não incluem o módulo.
 
+<div id="step-4-build-activation" />
+
 #### **4º passo: Ativar build**
 
 1. Clique em **Ativar build**.
 2. Seu build terá o status **em andamento** até que o build seja concluído. Isso pode levar de 10 a 15 minutos.
 3. Uma vez concluído, copie o código clicando no botão **copiar código** no build e envie-o ao seu desenvolvedor para integrar ao SDK do aplicativo.
+
+<div id="note" />
 
 > 📘 **Atenção**
 >
@@ -102,6 +124,8 @@ Atenção: Peça ao seu desenvolvedor todos os [hashes de certificado](https://d
 
 As técnicas de fraude evoluem ao longo do tempo, e os fraudadores podem tentar reverter a lógica de detecção. A manutenção regular garante uma eficácia contínua.
 
+<div id="when-to-update-the-configuration" />
+
 #### **Quando atualizar a configuração**
 
 Atualize suas configurações se você perceber:
@@ -110,6 +134,8 @@ Atualize suas configurações se você perceber:
 * Alterações nos padrões de tráfego
 * Novas versões do aplicativo ou alterações no certificado
 * Menor eficácia das proteções existentes
+
+<div id="what-you-can-update" />
 
 #### **O que você pode atualizar**
 
@@ -120,6 +146,8 @@ Você pode:
 * Refazer e redefinir o módulo de segurança
 * Ajustar o modo de detecção com base no status de implementação
 
+<div id="best-practices" />
+
 #### **Práticas recomendadas**
 
 * Revise os insights de segurança avançada regularmente
@@ -128,6 +156,8 @@ Você pode:
 * Revise a configuração periodicamente para se manter atualizado sobre os métodos de fraude emergentes
 
 </Accordion>
+
+<div id="data-visibility" />
 
 ## **Visibilidade de dados**
 
@@ -159,6 +189,8 @@ Os dados são separados em dois KPIs e um gráfico.
 
 O módulo avançado de segurança pode ser encontrado na página do Fraud Protection Studio.
 
+<div id="how-to-access" />
+
 #### Como acessar
 
 Para acessar o módulo avançado de segurança:
@@ -168,17 +200,23 @@ Para acessar o módulo avançado de segurança:
 3. Use o menu suspenso na parte superior da página para selecionar o aplicativo que você deseja configurar.
 4. Selecione o card Módulo avançado de segurança no menu à esquerda.
 
+<div id="the-advanced-security-module-page" />
+
 #### Página do Módulo de segurança avançado
 
 <Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 A página do Módulo avançado de segurança é dividida em três seções.
 
+<div id="detection-status" />
+
 ##### Status de detecção
 
 * Mostra o modo de detecção. As duas opções disponíveis são: implemented ou tagged. Por padrão, o modo é definido como **Tagged**.
 
 Atenção: Para alterar o status de detecção, entre em contato com seu CSM.
+
+<div id="top-app-versions-by-detection-status" />
 
 ##### Principais versões do app por status de detecção
 
@@ -200,33 +238,49 @@ Insights ajudam você a entender a análise do gráfico. Esses são os três tip
 
 <Accordion title="Perguntas frequentes">
 
+<div id="what-is-advanced-security" />
+
 #### O que é a segurança avançada?
 
 A segurança avançada é uma camada de proteção adicional para o SDK Android da AppsFlyer que ajuda a evitar o spoofing de atribuição, um tipo de fraude no qual instalações ou eventos falsos são relatados mesmo quando nenhum usuário real instalou ou usou o aplicativo.
+
+<div id="what-problem-does-advanced-security-solve" />
 
 #### Quais problemas a segurança avançada resolve?
 
 A segurança avançada ajuda a evitar instalações falsas e atividades in-app geradas por falsificações que aparecem na AppsFlyer, mas que não foram registradas na loja de aplicativos ou nos sistemas de backend. Isso reduz o número de instalações inflacionadas, discrepâncias de dados e desperdício do investimento em anúncios.
 
+<div id="what-is-attribution-spoofing" />
+
 #### O que é spoofing de atribuição?
 
 O spoofing de atribuição é uma técnica de fraude em que os ataques geram dados de instalação ou eventos in-app falsos, que são enviados para a AppsFlyer como se tivessem vindo do seu aplicativo. Nenhuma instalação ou atividade feita por um usuário real ocorre.
+
+<div id="how-does-advanced-security-prevent-attribution-spoofing" />
 
 #### Como a segurança avançada previne o spoofing de atribuição?
 
 A segurança avançada verifica se os dados de instalação e eventos in-app realmente vieram do SDK do seu aplicativo, adicionando uma assinatura de verificação exclusiva a cada solicitação. A AppsFlyer verifica essa assinatura para confirmar que os dados são genuínos e não foram falsificados ou manipulados.
 
+<div id="does-advanced-security-affect-the-app-or-user-experience" />
+
 #### A segurança avançada afeta o aplicativo ou a experiência do usuário?
 
 Não. A segurança avançada é executada em segundo plano e não altera a forma como os usuários instalam ou usam o aplicativo. Qualquer processamento adicional acontece nos bastidores e não é perceptível para os usuários.
+
+<div id="who-should-use-advanced-security" />
 
 #### Quem deve usar a segurança avançada?
 
 A segurança avançada é mais relevante para aplicativos que trabalham majoritariamente com redes não-SRN ou redes afiliadas, que observam lacunas inexplicáveis entre as instalações da loja de aplicativos e dados registrados pela AppsFlyer ou suspeitam de fraudes sofisticadas que são difíceis de detectar usando métodos padrão.
 
+<div id="is-advanced-security-available-for-all-platforms" />
+
 #### A segurança avançada está disponível para todas as plataformas?
 
 Não. No momento, a segurança avançada está disponível apenas para aplicativos Android e é oferecida a clientes premium do Protect360. Também é compatível com todos os plugins da AppsFlyer.
+
+<div id="how-do-i-know-advanced-security-is-working" />
 
 #### Como sei que a segurança avançada está funcionando?
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** O dicionário de campos de dados (especificação de dados brutos) descreve o conteúdo dos campos. Deve ser utilizado para o ajudar a compreender o significado dos campos, como estão formatados e quando estão disponíveis.
 
+<div id="overview" />
+
 ## Retorna um objeto JSON com os dados brutos de consentimento do DMA conforme enviados do anunciante para a AppsFlyer
 
 A tabela do dicionário de campo de dados brutos lista os campos de dados brutos disponíveis em vários relatórios da AppsFlyer. A tabela é atualizada à medida que novos campos de dados brutos são adicionados à AppsFlyer.
@@ -59,6 +61,8 @@ Aleatório
   * **Enum n char**: Os campos Enum podem conter apenas valores específicos. Por exemplo, a moeda de custo possui 3 caracteres e pode conter apenas códigos de moeda, conforme especificado
   * Aleatório
 
+<div id="tip" />
+
 > 👍 **Atenção**
 >
 > * Você também pode <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDdd2FKVQ0eISEwGVYyTeF4JD0rlOLnrepz8Nf1R3Kc6o7AESDwXQLOuSB41xN6wIuhmIFlb5b9Gvp/pub?output=xlsx">fazer download da tabela</Anchor>.
@@ -69,6 +73,8 @@ Aleatório
 >     * Ao configurar os seus sistemas de BI, é aconselhável configurar todos os campos principais do esquema da AppsFlyer, mesmo que um determinado relatório os apresente sempre como nulos ou vazios. Isto permite-lhe integrar os dados facilmente quando e se estiverem disponíveis.
 >     * Se um campo não fizer parte do esquema de relatórios principal da AppsFlyer, ele só estará disponível em alguns relatórios específicos. Por exemplo, relatórios SKAN.
 >   * **Método de entrega do relatório**: o CSV de download indica se um determinado campo está disponível via Push API, Export data/Pull API e Data Locker. **Atenção**: mesmo que um campo faça parte do esquema principal do relatório da AppsFlyer, ele pode não fazer parte dos relatórios entregues por um método específico. Por exemplo, o campo de posicionamento está no esquema principal da AppsFlyer, mas só aparece nos relatórios entregues através do Data Locker, Pull API ou na página de Exportar dados; não via Push API.
+
+<div id="field-dictionary" />
 
 ## Dicionário de campos
 

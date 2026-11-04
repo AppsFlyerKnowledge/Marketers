@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **Visão geral**: descubra as principais causas de discrepâncias entre a atribuição da AppsFlyer e das lojas de aplicativos, além de acessar dicas para minimizar esse problema.
 
+<div id="attribution-discrepancies" />
+
 ## Discrepâncias de atribuição
 
 Existem diferenças inerentes nos modelos de atribuição usados por todos os players no ecossistema mobile. O mesmo se aplica à AppsFlyer e às principais lojas de aplicativos: (iOS) App Store e (Android) Google Play. **Observação**: nesse artigo, as duas lojas serão chamadas de loja(s) de aplicativos.
@@ -40,9 +42,13 @@ Em alguns casos, por conta das diferenças nos modelos de atribuição, a loja d
 
 <Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Discrepâncias não afetam a precisão da contagem de instalações **não orgânicas** porque o modelo de atribuição da AppsFlyer credita uma instalação por clique no anúncio. Isso se aplica até a um usuário específico que possui mais de um dispositivo registrado na loja de aplicativos.
+
+<div id="why-appsflyer-attributes-less" />
 
 ### Por que a AppsFlyer faz menos atribuições
 
@@ -55,6 +61,8 @@ Veja abaixo os motivos para que isso aconteça:
 | **Fusos horários** | Os dados são exibidos de acordo com o fuso horário local do anunciante. | Por padrão, os dados são exibidos usando o fuso horário UTC±00:00. | Você pode definir um fuso horário no aplicativo para reduzir essa discrepância (<Anchor target="_blank" href="/marketers/pt/docs/changing-app-time-zone-settings">detalhes aqui</Anchor>). |
 | **O usuário do Android desinstala e reinstala dentro da janela de reatribuição definida** | Em algumas visualizações, o Google Play mostra **duas** **instalações** para o mesmo usuário, sem considerar o tempo decorrido desde a primeira instalação. Outras visualizações mostram **usuários únicos** e, portanto, estão mais alinhadas com a AppsFlyer. | Dentro da janela de reatribuição (por padrão, 3 meses) a partir da hora da instalação original, o usuário que reinstala não é considerado como novo. | Você pode <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window">definir a janela de reatribuição</Anchor> de 1 a 24 meses. |
 | **Um usuário do iOS desinstala e reinstala dentro da janela de reatribuição definida** | O iTunes conta uma nova instalação sempre que o usuário desinstala e reinstala. | Dentro da janela de reatribuição (por padrão, 3 meses) a partir da hora da instalação original, o usuário que reinstala não é considerado como novo. | Você pode <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window">definir a janela de reatribuição</Anchor> de 1 a 24 meses. |
+
+<div id="why-appsflyer-attributes-more" />
 
 ### Por que a AppsFlyer faz mais atribuições
 

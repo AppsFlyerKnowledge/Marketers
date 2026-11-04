@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Crie e teste automaticamente o código de integração do seu SDK.
 
+<div id="about-the-sdk-integration-wizard" />
+
 ## Sobre o assistente de integração do SDK
 
 Deixe nosso <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw">assistente de integração do SDK</Anchor> orientar o desenvolvedor do aplicativo durante o processo de integração do SDK. O desenvolvedor do aplicativo só precisa fornecer algumas credenciais e opções de personalização, e o assistente gera trechos de código para serem copiados e colados no projeto.
@@ -29,6 +31,8 @@ Este artigo permite que você colete e envie ao desenvolvedor do aplicativo toda
 
 * [A jornada do desenvolvedor de instalação e integração](#o-fluxo-de-instalação-e-integração): o assistente ajuda o desenvolvedor desde a instalação até o teste bem-sucedido da integração.
 * [A jornada do desenvolvedor de eventos in-app](#o-fluxo-de-adição-de-eventos-in-app): o assistente orienta o desenvolvedor desde a definição de eventos in-app até o teste bem-sucedido da transmissão para a AppsFlyer.
+
+<div id="the-installation-and-integration-flow" />
 
 ## O fluxo de instalação e integração
 
@@ -46,6 +50,8 @@ A tabela abaixo lista as perguntas que os desenvolvedores precisam responder dur
 | O SDK deve oferecer suporte ao App Tracking Transparency (ATT)? | <Anchor target="_blank" href="/marketers/pt/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">Saiba mais sobre ATT</Anchor>. |
 | Qual é o seu token de autenticação v2 da AppsFlyer? (Obrigatório apenas se você seguir o fluxo de teste automático.) | <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens#acessando-a-página-de-tokens">Saiba como recuperar seu token v2</Anchor>. |
 
+<div id="the-add-in-app-event-flow" />
+
 ## O fluxo de adição de eventos in-app
 
 Depois que o desenvolvedor do aplicativo concluir o assistente de instalação e integração, o SDK da AppsFlyer será integrado ao seu aplicativo com sucesso. O fluxo inclui um teste de evento in-app que confirma que a AppsFlyer recebeu o evento quando seu aplicativo é instalado.
@@ -57,6 +63,8 @@ A tabela abaixo lista as perguntas que os desenvolvedores precisam responder dur
 | Escolha o nome do evento e os parâmetros dele | <Anchor target="_blank" href="/marketers/pt/docs/adding-an-app-to-appsflyer#insira-detalhes-do-aplicativo">Saiba quais eventos predefinidos estão disponíveis para você.</Anchor> A descrição de cada evento inclui seus parâmetros de evento típicos.  <br />Como alternativa, você pode usar nosso   <br />[gerador de eventos in-app](https://evgen.appsflyer.com/). |
 | O SDK deve receber a confirmação de que o evento in-app foi recebido pela AppsFlyer? | Saiba mais sobre o código que verifica se os eventos foram recebidos com sucesso na AppsFlyer (<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure">Android</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure">iOS</Anchor>). |
 | Qual é o seu token de autenticação v2 da AppsFlyer? (Obrigatório apenas se você seguir o fluxo de teste automático.) | <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens#acessando-a-página-de-tokens">Saiba como recuperar seu token v2</Anchor>. |
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

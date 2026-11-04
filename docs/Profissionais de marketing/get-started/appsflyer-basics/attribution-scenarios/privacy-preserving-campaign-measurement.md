@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Em resumo:** Encontre respostas para as dúvidas mais comuns nas perguntas frequentes sobre métodos de mensuração de campanha com preservação da privacidade, as networks envolvidas e as implicações no retargeting, no view-through e nas limitações de aplicativos direcionados a crianças.
 
+<div id="overview" />
+
 ## Escritórios
 
 Na atual era de maior conscientização sobre privacidade, plataformas e tecnologias estão limitando cada vez mais o uso de IDs de anunciantes, direcionando a vertical para métodos de mensuração que atendam aos requisitos de privacidade, sem deixar de permitir uma mensuração eficaz de campanhas. Para esses casos, a AppsFlyer oferece suporte a vários métodos de mensuração de campanha com preservação da privacidade para ad networks SRN e não SRN, conforme descrito abaixo.
@@ -102,6 +104,8 @@ A disponibilidade de um ID de publicidade pode afetar o comportamento do deep li
 Em determinados cenários com restrições de privacidade, a cobertura da mensuração pode ser mais limitada. A AppsFlyer continua fornecendo uma mensuração significativa de campanha, preservando a privacidade do usuário.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

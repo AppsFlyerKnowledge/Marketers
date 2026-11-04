@@ -21,13 +21,19 @@ x-zendesk:
 ---
 > **Em resumo:** Saiba mais sobre a autenticação de single sign-on (SSO) e o processo de fazer login no AppsFlyer com o seu provedor de identidade (IdP) usando SSO. Encontre respostas para perguntas frequentes sobre login SSO.
 
+<div id="what-is-sso-authentication" />
+
 ## O que é a autenticação SSO?
 
 O SSO é um método de autenticação que permite aos usuários acessar vários aplicativos, sistemas ou plataformas independentes, iniciando sessão uma vez através do seu fornecedor de identidade (por exemplo, Okta, Azure AD ou OneLogin). Adicionar a AppsFlyer ao seu IdP permite que seus usuários façam login na AppsFlyer diretamente do seu IdP através de um processo de login único (SSO). Isso permite que os seus usuários iniciem sessão automaticamente com uma **autenticação mais segura** usando apenas um conjunto de credenciais.
 
+<div id="how-does-sso-authentication-work" />
+
 ## Como é que a autenticação SSO funciona?
 
 A plataforma da AppsFlyer é compatível com a verificação SSO usando o protocolo SAML2.0. Ao implementar o certificado de autenticação da AppsFlyer em seu IdP SAML 2.0, seu IdP gera um token com dados de usuário autenticados. O mesmo processo é feito do seu IdP para a AppsFlyer - seu token é implementado na AppsFlyer.
+
+<div id="the-appsflyer-service-provider-authentication-certificate" />
 
 ## O certificado de autenticação da AppsFlyer (provedor de serviços)
 
@@ -36,9 +42,13 @@ A AppsFlyer fornece um certificado de criptografia para criptografar dados e ass
 * **Certificado assinado pela AppsFlyer:** um certificado da AppsFlyer criado a partir da <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">URL de metadados da AppsFlyer</Anchor>
 * **Certificado assinado por CA:** um certificado da AppsFlyer **assinado pela Amazon**.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > A AppsFlyer não oferece suporte a números de série negativos no certificado.
+
+<div id="troubleshooting-and-faq" />
 
 ## Solução de problemas e perguntas frequentes
 
@@ -86,6 +96,8 @@ A AppsFlyer avisará você através da plataforma quando seu certificado SSO da 
 <Accordion title="A opção Forçar login SSO está desativada, como posso ativá-la?">
 
 Quando a opção **Forçar login SSO** é selecionada e a configuração é salva, essa opção fica desativada. Para reverter e ativar **Forçar login SSO**, você precisará reconfigurar a <Anchor target="_blank" href="/marketers/pt/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">Etapa 2</Anchor> do processo de SSO desde o início.
+
+<div id="note-1" />
 
 > 📘 **Observação:**
 >

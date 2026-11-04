@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
 
+<div id="setting-up-quora" />
+
 ## Configurando o Quora
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -42,6 +44,8 @@ A janela de configuração do Quora inclui 3 guias ativas: **Integração, link 
 
 Para obter uma descrição detalhada do header da Janela de Configuração de Parceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -51,6 +55,8 @@ Para obter uma descrição detalhada do header da Janela de Configuração de Pa
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para habilitar a configuração dos parâmetros de integração. O botão deve permanecer ativado enquanto você trabalhar com o Medialyzer.Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
@@ -58,6 +64,8 @@ No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para ha
 Postbacks padrão
 
 Envie postbacks automáticos para o Quora após instalações de usuários.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -99,6 +107,8 @@ A integração da receita publicitária não está disponível para este parceir
 Nesta aba, você pode selecionar as permissões a serem concedidas ao Quora, quer o parceiro atue como ad network, agência ou ambos. Observe que, mesmo que a atribuição esteja desativada para o Quora, a aba de permissões fica ativa e você pode conceder controle ao Quora.
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

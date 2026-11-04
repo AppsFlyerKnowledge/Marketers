@@ -25,11 +25,15 @@ O relatório de eventos cross-platform realizados por usuários finais é um rel
 
 Para mais informações sobre o fluxo e a configuração da atribuição baseada em usuário, acesse o artigo sobre a <Anchor target="_blank" href="/marketers/pt/docs/beta-user-based-cross-platform-attribution">atribuição cross-platform baseada em usuário</Anchor>.
 
+<div id="report-fields" />
+
 ## Campos do relatório
 
 Para saber quais campos estão contidos no relatório, [baixe o relatório de exemplo](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
 
 Ele inclui todos os campos do relatório e seus valores. Para as definições dos campos, acesse <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary">o dicionário de campos de dados brutos</Anchor>.
+
+<div id="report-data-freshness" />
 
 ## Atualização dos dados do relatório
 
@@ -40,9 +44,13 @@ Ele inclui todos os campos do relatório e seus valores. Para as definições do
 * Os eventos são distribuídos em seus respectivos buckets por hora.
   * Exemplo: Eventos que entraram no banco de dados entre 3h e 4h aparecerão no bucket das 3h.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Normalmente, há um pequeno atraso entre o momento em que um evento ocorre e sua entrada no banco de dados. O relatório usa o horário de entrada no banco de dados para garantir um agrupamento horário preciso e consistente.
+
+<div id="example-of-the-800-am-batch-run" />
 
 ### Exemplo da execução do lote das 8h
 
@@ -58,11 +66,15 @@ Observações sobre o exemplo acima:
 * Eventos que ocorrem na última hora antes da execução não são processados. O objetivo é que tempo o suficiente passe para enriquecer eventos com o CUID relacionado. No exemplo acima, o processo em lote das 8:00h processa eventos que entraram no banco de dados entre 3:00h e 7:00h. Eventos que entraram no banco de dados entre 7:00h e 8:00h não são processados.
 * O relatório está disponível apenas uma hora após a execução do lote, pois um processo interno atualiza o lote durante essa hora. No exemplo acima, o lote das 8:00h está disponível às 9:00h.
 
+<div id="how-to-subscribe-to-the-report" />
+
 ## Como posso me inscrever para esse relatório?
 
 1. Na AppsFlyer, no menu lateral, selecione **Exportar > Data Locker**.
 2. No painel de conteúdo do **Data Locker**, vá até a seção **Relatórios avançados**.
 3. Selecione **Eventos cross-platform de usuários finais**
+
+<div id="how-to-access-the-report-data-in-your-cloud-bucket" />
 
 ## Como acessar os dados do relatório no seu bucket na nuvem?
 
@@ -72,9 +84,13 @@ O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
+<div id="dl-report-folder-hierarchy" />
+
 ### Hierarquia de pastas de relatório
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+
+<div id="bi-developer-considerations" />
 
 ## Considerações para o desenvolvedor de BI
 
@@ -82,6 +98,8 @@ O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 * Eventos de receita de anúncios ainda não estão inclusos.
 * Todos os dados do aplicativo são fornecidos em um único arquivo. Use o campo App ID para separar dados por aplicativo ou defina o Data Locker para segregar por aplicativo. É recomendado usar o tipo de segregação unificada.
 * Os dados de pré-atribuição, como custo, cliques e impressões, devem ser extraídos do relatório de Cost ETL.
+
+<div id="query-examples" />
 
 ### Exemplos de query
 

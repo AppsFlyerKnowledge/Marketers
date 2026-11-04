@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** a Sizmek, um parceiro integrado de ad network da AppsFlyer, é uma plataforma independente de publicidade do lado da compra e Ad server. Além da atribuição mobile baseada em cliques, a Sizmek oferece atribuição view-through, que pode ser registrada com a AppsFlyer.
 
+<div id="setting-up-sizmek" />
+
 ## Configurando a Sizmek
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -40,6 +42,8 @@ A janela de configuração da Sizmek inclui 3 abas ativas: Integração, link de
 
 Para uma descrição detalhada da Janela de configuração de Pprceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -49,13 +53,19 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na sua **primeira visita**, você precisará alternar o botão ***Ativar parceiro*** para ATIVADO para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para mais informações sobre a ativação de parceiros, por favor clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma all-installs network, a Sizmek prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, inclusive orgânica. Para fazer isso, selecione **eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação para a Sizmek.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -67,6 +77,8 @@ A Sizmek se conecta à AppsFlyer por meio de um ID exclusivo de tag de postback.
 
 Alterne isso para LIGADO se desejar atribuir instalações view-through da Sizmek. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a Sizmek após as instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
@@ -74,9 +86,13 @@ Envie postbacks automáticos para a Sizmek após as instalações e reengajament
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Sizmek.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada à Sizmek.
 
+<div id="in-app-events-settings" />
+
 ### Configurações de eventos in-app
 
 Nesta seção, você pode mapear os eventos da AppsFlyer com a Sizmek por meio de postbacks.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -130,6 +146,8 @@ A integração de receita publicitária não tem suporte na Sizmek
 <Accordion title="Aba permissões">
 
 Nesta aba, você pode selecionar as permissões a serem concedidas à Sizmek, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a Sizmek, a aba de permissões está ativa e você pode conceder controle à Sizmek.
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

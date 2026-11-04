@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **Em resumo:** o IBM UBX (Universal Behavior Exchange), um parceiro integrado da AppsFlyer, é um recurso do IBM Marketing Cloud e de outras ofertas do IBM Commerce que permite aos profissionais de marketing controlar toda a integração dos dados dos clientes com um console fácil de usar. Essa funcionalidade de troca aberta de dados oferece uma visão contextual dos comportamentos de compra do cliente em todos os canais, dispositivos e interações, para que os profissionais de marketing possam criar e implementar rapidamente campanhas eficazes, oferecendo experiências significativas instantaneamente, ao mesmo tempo em que impulsionam o ROI.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-ibm" />
 
 ## Configurar a IBM
 
@@ -55,9 +59,13 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -66,6 +74,8 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 A IBM se conecta com a AppsFlyer por meio de uma chave de autorização exclusiva. Se você ainda não a tem, deve obtê-la com a IBM para continuar com a integração ou siga as etapas abaixo.
 
 ![IBM_msc_new_2.png](https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png)
+
+<div id="obtaining-the-authorization-key" />
 
 ### Como obter a chave de autorização
 
@@ -95,6 +105,8 @@ Copie a chave de autenticação:
 
 ![IBM_Endpoint_details.png](https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para instalações de usuários da IBM. Use esta seção para definir o envio desses postbacks.
@@ -104,6 +116,8 @@ A AppsFlyer pode enviar postbacks automáticos para instalações de usuários d
 Selecione **Events attributed to any partner or organic** para enviar postbacks à IBM para qualquer usuário que faça o download do aplicativo ou selecione **Off**.
 
 Clique em **Guardar.**
+
+<div id="in-app-event-settings" />
 
 ### Configurações de eventos in-app
 

@@ -20,6 +20,8 @@ x-zendesk:
 
 <Image alt="adobe_appsflyer_banner_updated.png" src="https://files.readme.io/95ae69b9b07c2972e03213509fac02516f7ffb300688deb72db5c9aa744e67cf-51180732192401.png" width="1855px" />
 
+<div id="about-the-adobe-esp-integration" />
+
 ## Sobre a integração do Adobe ESP
 
 Profissionais de marketing costumam usar provedores de serviços de e-mail (ESPs) para enviar campanhas de e-mail em grande escala. Embora esse devesse ser um processo simples, que oferece jornadas previsíveis, muitas vezes não é o caso. Os problemas surgem como resultado da forma como o ESP lida com seus analytics, adotando um processo que costuma quebrar deep links e afetar negativamente a experiência do usuário mobile. Como resultado, os usuários são levados para sites mobile em vez de acessar o aplicativo, reduzindo a probabilidade de conversão.
@@ -30,9 +32,13 @@ Configure uma integração do Adobe ESP com a AppsFlyer para oferecer experiênc
 
 A solução de integração ESP com a AppsFlyer é um recurso premium. Se você quiser saber mais ou começar, entre em contato conosco em [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
+<div id="set-up-the-integration" />
+
 ## Configurando o Amplitude
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>Esta seção descreve como configurar sua integração do Adobe ESP com a AppsFlyer.
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
@@ -49,6 +55,8 @@ O click-tracking domain (CTD) é o componente de domínio da URL que aparece nas
 Ele consiste em um subdomínio e um domínio principal, como email.suamarca.com. Diferentes ESPs podem se referir a isso como branding de link, domínio de rastreamento, domínio de clique, reescrita de link, rastreamento de cliques ou white labeling. Etapa 1:
 
 **Você deve criar um novo CTD**, mesmo que você já esteja usando um existente. Assim, você garante que não haja impacto no tráfego das suas campanhas de e-mail atuais.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -140,6 +148,8 @@ Peça ao seu desenvolvedor para fazer as seguintes configurações em seu aplica
 * [Configure seu aplicativo para garantir o suporte a deep linking](#configure-seu-aplicativo-para-garantir-o-suporte-a-deep-linking)
 * [<span id="h_01J3WS4QWMSKZ33APWFR8CG5TZ"></span>Configure seu aplicativo para processar Weblinks e Application Links](#configure-seu-aplicativo-para-processar-weblinks-e-application-links)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **Configure seu aplicativo para garantir o suporte a domínios associados**
 
 A AppsFlyer hospeda arquivos de associação para o seu aplicativo, permitindo o funcionamento de <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#links-universais">Universal Links (iOS)</Anchor> e/ou <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#link-de-aplicativo-android-en-android-app-link">App Links (Android)</Anchor>.
@@ -159,6 +169,8 @@ Configure seu aplicativo para permitir o Android App Linking a partir da mensage
 
 <div id="h_01J3WS4QWMRT8KSW6J3QHXM9TQ" />
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **Configure seu aplicativo para garantir o suporte a deep linking**
 
 Quando um usuário clicar em um App Link ou Universal Link, o app deve abrir.
@@ -171,6 +183,8 @@ Quando um usuário clicar em um App Link ou Universal Link, o app deve abrir.
 * Para Android, siga essas <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_esp_2_setup#flow-description">instruções</Anchor>.
 
 2. Use a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Unified DeepLinking API</Anchor> para obter os parâmetros do deep link e tratar os dados de deep linking.
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **Configure seu aplicativo para processar Weblinks e Application Links**
 
@@ -226,6 +240,8 @@ Se o teste for bem-sucedido, tudo está pronto.
 Bom trabalho! Agora você está pronto para usar links em suas campanhas de e-mail. Depois, você pode visualizar os resultados da campanha em seus dashboards do ESP e da AppsFlyer.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

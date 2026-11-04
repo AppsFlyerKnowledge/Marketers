@@ -23,9 +23,13 @@ x-zendesk:
 
 <Embed title="Sobre os Relatórios Avançados do Data Locker" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube.com" />
 
+<div id="about-advanced-reports" />
+
 ## Sobre os Relatórios Avançados
 
 As seções abaixo explicam como os relatórios avançados consolidam dados por produto, chegam prontos para usar sem preparação adicional e permitem que você controle exatamente o que cada relatório retorna.
+
+<div id="consolidated-data-by-data-product" />
 
 ### Dados consolidados por produto de dados
 
@@ -33,6 +37,8 @@ Os Relatórios Avançados organizam dados brutos em nível de evento em torno de
 
 * Cada relatório abrange um produto de dados completo, portanto não há arquivos fragmentados para unir.
 * Os dados de mobile, web e CTV ficam em um único arquivo com um esquema compartilhado.
+
+<div id="data-that-is-ready-to-use" />
 
 ### Dados prontos para uso
 
@@ -42,6 +48,8 @@ Os relatórios legados retornavam todos os campos como strings simples com nomen
 * **Esquema unificado:** estrutura consistente e validada em todos os produtos de dados.
 * **Nomes de campos autoexplicativos:** nomeados de forma consistente e autoexplicativos em todos os relatórios, facilitando o trabalho com os dados diretamente em ferramentas de BI (business intelligence), fluxos de trabalho de analistas e aplicativos com tecnologia de IA.
 
+<div id="precise-control-over-what-you-receive" />
+
 ### Controle preciso sobre o que você recebe
 
 Os Relatórios Avançados permitem adaptar cada relatório exatamente às suas necessidades, sem nenhum pós-processamento:
@@ -49,6 +57,8 @@ Os Relatórios Avançados permitem adaptar cada relatório exatamente às suas n
 * **Personalização do esquema:** adicione ou remova campos para atender aos seus requisitos posteriores.
 * **Filtros no nível do relatório:** limite os dados a uma plataforma, tipo de conversão, país ou evento específicos.
 * **Modelos pré-criados:** comece instantaneamente com configurações de campos e filtros criadas para casos de uso comuns.
+
+<div id="advanced-reports-vs-legacy-reports" />
 
 ## Relatórios Avançados vs. relatórios legados
 
@@ -63,6 +73,8 @@ A tabela abaixo destaca as principais diferenças entre os Relatórios Avançado
 | **Cobertura de plataformas** | Relatórios separados por plataforma, com esquemas diferentes | Mobile, web e CTV consolidados em um único relatório com um esquema comum |
 | **Classificar** | Seleção básica de filtros | Filtros de seleção múltipla no nível do relatório para várias dimensões, além de modelos prontos para casos de uso comuns |
 | **Prontidão para IA e BI** | Exigia conversão de tipos, alinhamento de esquema, normalização de campos e renomeação de campos | Tipados, validados e nomeados de forma consistente, com nomes de campo **autoexplicativos** fáceis de interpretar tanto por humanos quanto por aplicações com tecnologia de IA |
+
+<div id="available-reports" />
 
 ## Relatórios disponíveis
 
@@ -115,6 +127,8 @@ O relatório de conversões cross-platform com assistências mostra a jornada co
 
 </Accordion>
 
+<div id="report-templates" />
+
 ## Modelos de relatório
 
 Os modelos são predefinições de relatório pré-configuradas, projetadas para casos de uso comuns. Cada modelo está associado a um produto de dados específico e vem pré-carregado com os campos e filtros mais relevantes para os casos de uso comuns desse relatório. Ao selecionar um modelo, os campos e filtros corretos são carregados automaticamente. Você pode editar o nome pré-preenchido do relatório antes de salvar.
@@ -127,6 +141,8 @@ Os seguintes modelos predefinidos estão disponíveis:
 | --- | --- | --- |
 | **Conversões na web** | Conversões | Âncoras de atribuição para web, incluindo primeiras visitas, revisitas e eventos de aquisição de usuários. Todos os eventos de usuário posteriores herdam os detalhes da campanha dessas conversões. |
 | **Eventos web** | Eventos de usuários finais | Todos os eventos e sessões na web. Use este relatório como principal para análises no nível de visita e no nível de evento. |
+
+<div id="report-level-filters" />
 
 ## Filtros no nível do relatório
 

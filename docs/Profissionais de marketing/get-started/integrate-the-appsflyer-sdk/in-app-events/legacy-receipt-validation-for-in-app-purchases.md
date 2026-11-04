@@ -28,11 +28,15 @@ x-zendesk:
   section_id: 6551285343761
   url: https://support.appsflyer.com/hc/pt/articles/207032106
 ---
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Esse artigo traz informações sobre uma versão obsoleta da validação de recibos. Para obter mais informações, consulte o <Anchor target="_blank" href="/marketers/pt/docs/bulletin-legacy-receipt-validation-is-deprecated">Boletim: a Validação de recibos legada foi descontinuada</Anchor>
 
 > **Resumo:** Implemente a validação de recibos para se proteger contra compras in-app fraudulentas feitas nas lojas de aplicativos do iOS e Android e garantir que uma compra in-app realmente ocorreu conforme relatado. **Observação**: Este é um recurso antigo. Saiba mais sobre o novo mecanismo de <Anchor target="_blank" href="/marketers/pt/docs/purchase-and-subscription-validation-overview">validação de compras in-app, totalmente automático e aprimorado</Anchor>.
+
+<div id="receipt-validation-flow" />
 
 ## Fluxo de validação de recibos
 
@@ -64,9 +68,13 @@ Para detalhes sobre a implementação da validação de recibos, veja nossa docu
 * O serviço de Validação de recibos da AppsFlyer é gratuito para todos os planos de conta.
 * Para Android, a validação de recibos pode retornar um resultado `null` e considerar a validação como falha se o usuário final não tiver acesso à internet durante a compra.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Chamar `validateAndLogInAppPurchase` também gera um evento in-app **af\_purchase**. Assim sendo, não gere um evento af\_purchase ao validar. Fazer isso resulta em eventos de receita duplicados.
+
+<div id="note" />
 
 > 📘 **Nota**
 >

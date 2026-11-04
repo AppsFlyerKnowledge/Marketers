@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo**: uma reinstalação ocorre quando um usuário instala o aplicativo, o desinstala e então o reinstala. As reinstalações resultam em um dos seguintes tipos de atribuição: reinstalação não orgânica, reinstalação orgânica ou nova atribuição (retargeting). As reinstalações ajudam a evitar várias cobranças para usuários que desinstalam e instalam novamente.
 
+<div id="what-is-a-reinstall" />
+
 ## O que é uma reinstalação
 
 Uma reinstalação ocorre quando um usuário do aplicativo exclui um aplicativo e o reinstala durante a <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window#janela-de-reatribuição">janela de reatribuição.</Anchor>
@@ -43,11 +45,15 @@ A tabela abaixo mostra o que a AppsFlyer chamaria de diferentes reinstalações
 | Canal orgânico ou não-orgânico | Sim | Não | Sim ou não | Reinstalação |
 | Canal orgânico ou não-orgânico | Não | Não | Sim ou não | Nova instalação |
 
+<div id="why-are-reinstalls-important" />
+
 ## Por que as reinstalações são importantes
 
 Além de ser uma boa indicação de que os usuários estão voltando para seu aplicativo e de que suas campanhas estão funcionando, a atribuição de reinstalação adequada é importante para ajudar a evitar várias cobranças para usuários que desinstalam e instalam novamente dentro da <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window#janela-de-reatribuição">janela de reatribuição</Anchor>.
 
 Da mesma forma, eventos in-app que ocorreram a partir de reinstalações e são atribuídos à fonte de mídia original (primeira instalação) é um processo que permite que os anunciantes entendam melhor como os usuários se engajam com um app. Ele também mostra a eficácia das campanhas de UA e anúncios de retargeting. Para mais informações, veja a seção de [eventos in-app](#eventos-in-app-pós-instalação) abaixo.
+
+<div id="reinstall-flow-and-outcome" />
 
 ## Fluxo de reinstalação e resultados
 
@@ -81,6 +87,8 @@ Em seguida:
 Para mais informações sobre a atribuição de retargeting, clique <Anchor target="_blank" href="/marketers/pt/docs/retargeting-attribution-guide">aqui</Anchor>.
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## Eventos in-app pós-instalação
 
@@ -118,6 +126,8 @@ Re-atribuição
 
 <Accordion title="Atribuição à primeira instalação (modo de primeira instalação)">
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > O modo de primeira instalação se aplica automaticamente a aplicativos adicionados à AppsFlyer em 31 de julho de 2024 ou após essa data. Para aplicativos adicionados antes dessa data, recomendamos entrar em contato com a AppsFlyer para migrar seus aplicativos existentes para o modo de primeira instalação.
@@ -131,9 +141,13 @@ O modo de primeira instalação fornece aos anunciantes uma imagem mais clara do
 
 (2) Essas informações ficam disponíveis apenas nos dados brutos.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Os dados de KPI orgânicos no dashboard podem mostrar um valor mais baixo com a **Atribuição de eventos pós-reinstalação** configurada como **Atribuída à primeira instalação**, pois alguns desses números podem ser atribuídos a um canal de mídia não orgânico.
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### Exemplos de atribuição no modo de primeira instalação.
 
@@ -201,11 +215,17 @@ No seu relatório de dados brutos, você pode verificar se os seus eventos in-ap
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## Como os dados aparecem nos dashboards da AppsFlyer
 
 <table><thead><tr><th colspan="2"> </th><th>Reinstalação não orgânica</th><th>Reinstalação orgânica </th><th>Re-atribuição</th></tr></thead><tbody><tr><td colspan="2">A reinstalação em si</td><td>Não visualizada</td><td>Não visualizada</td><td>Fonte de mídia de retargeting\*</td></tr><tr><td rowspan="2">Atribuições de eventos in-app daqui para frente</td><td>Eventos pós-reinstalação definidos como <strong>Atribuídos como in-apps orgânicos</strong> </td><td>Orgânico não atribuído</td><td>Orgânico não atribuído</td><td>Canal de mídia de retargeting</td></tr><tr><td>Eventos de pós-reinstalação definidos como <strong>Atribuídos à primeira instalação</strong> </td><td>Primeiro canal de mídia</td><td>Primeiro canal de mídia</td><td>Campanhas de retargeting</td></tr><tr><td colspan="5">\*Somente no dashboard de visão geral.</td></tr></tbody></table>
 
+<div id="reinstalls-raw-data-reports" />
+
 ## Relatórios de dados brutos de reinstalações
+
+<div id="prerequisites" />
 
 > 🚧 **Pré-requisitos**
 >
@@ -213,9 +233,13 @@ No seu relatório de dados brutos, você pode verificar se os seus eventos in-ap
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">Reinstale o relatório de exemplo como um arquivo CSV</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### Como os eventos de instalação e in-app são atribuídos
 
 <table><thead><tr><th colspan="2"> </th><th>Reinstalação não orgânica</th><th>Reinstalação orgânica </th><th>Re-atribuição</th><th>Instalação não orgânica</th><th>Instalação orgânica</th></tr></thead><tbody><tr><td colspan="2">Atribuído a </td><td>Campanha de UA</td><td>Orgânico</td><td>Campanhas de retargeting</td><td>Campanha de UA</td><td>Orgânico</td></tr><tr><td rowspan="2">Atribuição de evento daqui para frente</td><td>Eventos pós-reinstalação definidos como <strong>Atribuídos como in-apps orgânicos</strong> </td><td>Orgânico</td><td>Orgânico</td><td>Campanhas de retargeting</td><td>Campanha de UA</td><td>Orgânico</td></tr><tr><td>Eventos de pós-reinstalação definidos como <strong>Atribuídos à primeira instalação</strong> </td><td>Primeira instalação</td><td>Primeira instalação</td><td>Campanhas de retargeting</td><td>Campanha de UA</td><td>Orgânico</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### Disponibilidade de relatórios de reinstalação
 

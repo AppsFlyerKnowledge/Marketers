@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
+<div id="setting-up-instagram" />
+
 ## Configurando o Instagram
 
 A configuração do Instagram está na lista do Meta Ads na seção “Integrações ativas” da AppsFlyer.
@@ -44,6 +46,8 @@ Você pode conferir a documentação da Meta <Anchor target="_blank" href="https
 3. Configure o Meta Ads em “Integrações ativas” ao adicionar seu App ID do Facebook.
 4. Se você não tiver um App ID do Facebook, crie um <Anchor target="_blank" href="https://developers.facebook.com/apps">aqui</Anchor>.  
    [![id_app_facebook.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://support.appsflyer.com/hc/article_attachments/49722356592913)
+
+<div id="instagram-landing-page-for-deep-linking" />
 
 ## Landing page do Instagram para deep linking
 

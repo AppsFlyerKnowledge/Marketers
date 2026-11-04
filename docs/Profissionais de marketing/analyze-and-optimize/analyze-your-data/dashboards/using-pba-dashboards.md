@@ -24,9 +24,13 @@ x-zendesk:
 
 ![Atribuição baseada em pessoas da AppsFlyer](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 
+<div id="pba-dashboards" />
+
 ## Os painéis de PBA
 
 As seções a seguir se referem aos dashboards de <Anchor target="_blank" href="/marketers/pt/docs/pba-website-attribution-dashboard">Atribuição de website</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/pba-web-assisted-installs">instalações assistidas pela web</Anchor> dashboards.
+
+<div id="settings" />
 
 ## Configurações
 
@@ -35,6 +39,8 @@ As seções a seguir se referem aos dashboards de <Anchor target="_blank" href="
 <Accordion title="Opções de filtro">
 
 Refine os resultados do dashboard PBA usando o seletor de datas (A), os filtros principais (B) e os filtros adicionais (C) para adaptar a análise às suas necessidades.
+
+<div id="filter-panel-in-pba-dashboards" />
 
 #### Painel de filtros nos dashboards PBA
 
@@ -54,6 +60,8 @@ Refine os resultados do dashboard PBA usando o seletor de datas (A), os filtros 
 * Os filtros disponíveis em cada dashboard diferem, conforme indicado na tabela a seguir.
 * Filtros com contexto: alguns filtros, conforme indicado na tabela, exigem associação com um contexto. Por exemplo, no dashboard de instalações assistidas pela web, o filtro de geolocalização exige um contexto que pode ser o canal de mídia da web ou o canal de mídia mobile. Você pode definir um filtro de geolocalização para cada um deles configurando dois filtros de geolocalização, um para cada contexto.
 
+<div id="available-filter-dimensions-per-dashboard" />
+
 #### Dimensões de filtro disponíveis por dashboard
 
 <table><tbody><tr><th>Filtro</th><th>Descrição/valores</th><th>Atribuição do site </th><th>Instalações Auxiliadas pela Web</th><th>Caminhos de<br/>conversão</th></tr><tr><td>Seletor de datas</td><td><p>A data em que ocorreu um dos seguintes eventos de conversão do PBA: </p><ul><li>Instalação de aplicativos</li><li>Conversão da web</li><li>Conversão mobile</li></ul></td><td><p>S</p></td><td><p>S</p></td><td><p>S</p></td></tr><tr><td>Geografia </td><td><p>Lista de países/territórios </p></td><td>S</td><td><span>S (1)</span></td><td><p><span>S (2)</span></p></td></tr><tr><td>Tipo de instalação</td><td>Orgânico, banner inteligente, link personalizado, pago</td><td>--</td><td><span>S</span></td><td><span>--</span></td></tr><tr><td>Canal de mídia</td><td>Anúncio, direto, e-mail, referência, pesquisa orgânica, social</td><td>S</td><td><span>S</span></td><td><span>S (2)</span></td></tr><tr><td>Mobile platform</td><td>Android, iOS</td><td>--</td><td><span>S</span></td><td><span>--</span></td></tr><tr><td>Canal de mídia </td><td><p>Canal de mídia ao qual o evento é atribuído<span></span></p></td><td><p>S</p></td><td><span>S(1)</span></td><td><span> <font>S (2)</font> </span></td></tr><tr><td><p>Tipo de mídia</p></td><td><p>Inclui pago, <a href="./owned-media-attribution" target="_blank">próprio</a>, ganho</p></td><td><p>S</p></td><td>S</td><td>S (2)</td></tr><tr><td><p>Eventos de conversão</p></td><td><p>Mostra caminhos que levam ao evento de conversão para o caminho de conversão</p></td><td><p>S</p></td><td><p>--</p></td><td><p><span>S</span></p></td></tr><tr><td><p>Duração do caminho (etapas) </p></td><td><p>Número de etapas na visualização atual do caminho de conversão: canal de mídia, canal, tipo de mídia</p></td><td><p>--</p></td><td><p>--</p></td><td><p>S</p></td></tr><tr><td><p>Duração do caminho (dias)</p></td><td>Duração da conversão a partir do primeiro touchpoint</td><td>--</td><td>--</td><td>S</td></tr><tr><td colspan="5"><p><strong>(1)</strong> No dashboard de instalações assistidas pela web, você associa o filtro ao canal de mídia da web ou ao canal de mídia mobile. Você pode definir várias instâncias do filtro. Caso de exemplo</p></td></tr></tbody></table>
@@ -70,6 +78,8 @@ Os dados do dashboard são agrupados por, por exemplo, canal de mídia, disposit
 
 * Grupo padrão: **Canal de mídia/Campanha**
 * No menu suspenso, selecione 1 ou mais opções.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -101,6 +111,8 @@ Os dados do dashboard são agrupados por, por exemplo, canal de mídia, disposit
 | Configurações de PBA | <ul><li>Definir eventos de conversão</li><li>Alterar configurações do agrupamento</li></ul> |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** A plataforma contém vários painéis. Esses painéis permitem que você visualize o desempenho da campanha e o comportamento do aplicativo.
 
+<div id="appsflyer-dashboards" />
+
 ## Painéis da AppsFlyer
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)

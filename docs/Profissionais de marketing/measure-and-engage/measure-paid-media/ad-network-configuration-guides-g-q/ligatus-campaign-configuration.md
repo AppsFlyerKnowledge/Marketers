@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
 
+<div id="setting-up-ligatus" />
+
 ## Configurando a Ligatus
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -40,6 +42,8 @@ x-zendesk:
 
 A janela de configuração da Ligatus inclui 2 abas ativas: Integração e link de atribuição. Clique nos itens abaixo para ler sobre a configuração das abas.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -51,9 +55,13 @@ A janela de configuração da Ligatus inclui 2 abas ativas: Integração e link 
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -70,6 +78,8 @@ Selecione **Somente eventos atribuídos a este parceiro** para eventos provenie
 Nesta guia, você pode criar os links de atribuição que deseja enviar à Ligatus para atribuir as campanhas, os conjuntos de anúncios ou até mesmo os anúncios individuais da Ligatus. Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro.
 
 Esta guia está dividida em diferentes seções:
+
+<div id="attribution-link-parameters" />
 
 ### Parâmetros de link de atribuição
 
@@ -90,6 +100,8 @@ Adicionar parâmetros ao link de atribuição aqui permite que você faça anál
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para obter mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de Atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas à Ligatus.
@@ -97,6 +109,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 

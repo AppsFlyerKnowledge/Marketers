@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
 
+<div id="event-integrations" />
+
 ## Integrações de eventos
 
 O objetivo deste documento é fornecer a você detalhes sobre como ativar dados de eventos do mParticle para a AppsFlyer.
@@ -38,6 +40,8 @@ O objetivo deste documento é fornecer a você detalhes sobre como ativar dados 
 1. os clientes do mParticle devem integrar o kit da AppsFlyer em seu aplicativo. O SDK do mParticle inicializará o SDK da AppsFlyer e também encaminhará todos os eventos de ciclo de vida necessários para o SDK da AppsFlyer.
 
 2. Consulte os repositórios do GitHub dos SDKs de <Anchor target="_blank" href="https://github.com/mParticle/mParticle-apple-SDK">iOS</Anchor> e <Anchor target="_blank" href="https://github.com/mParticle/mparticle-android-sdk">Android</Anchor> para ver detalhes sobre como configurar o kit da AppsFlyer com o SDK do mParticle no seu aplicativo.
+
+<div id="configure-the-appsflyer-event-integration" />
 
 ### Configurar a integração de eventos da AppsFlyer
 
@@ -87,6 +91,8 @@ O AppsFlyer agora é exibido como uma Saída conectada. Outras opções, como Ma
 
 ![AppsFlyer exibida como uma saída conectada](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
 
+<div id="feed-integrations" />
+
 ## Integrações de feed
 
 Esta seção ajuda você a entender como conectar um feed de dados do AppsFlyer à mParticle.
@@ -118,6 +124,8 @@ Agora você será direcionado para a tela de Setup, onde poderá continuar o pro
 7. Conclua a configuração no dashboard do AppsFlyer usando as informações de autenticação fornecidas.
 
 ![Configuração de autenticação do dashboard da AppsFlyer](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
+
+<div id="deferred-deep-linking" />
 
 ## Deep linking diferido
 
@@ -202,6 +210,8 @@ Para iOS: faça isso em UserDefaults: <Anchor target="_blank" href="https://deve
 </Tab>
 </Tabs>
 
+<div id="appsflyermparticle-use-cases" />
+
 ### Casos de uso de AppsFlyer/mparticle
 
 | Caso de uso | Plataforma | Método do SDK da AppsFlyer | Método do Kit mParticle-AF |
@@ -212,6 +222,8 @@ Para iOS: faça isso em UserDefaults: <Anchor target="_blank" href="https://deve
 | Deep linking diferido | com o Android | onConversionDataSuccess | checkForDeepLink |
 | Links do Aplicativo Android | com o Android |  | continueUserActivity |
 | Abertura do app | Android / iOS | onAppOpenAttribution | checkForDeepLink |
+
+<div id="handling-user-flags" />
 
 ### Como lidar com sinalizadores do usuário
 
@@ -232,6 +244,8 @@ A AppsFlyer também permite que você exiba conteúdo personalizado ou envie usu
 A AppsFlyer usa ***UserDefaults*** no iOS e ***Shared Preferences*** no Android para indicar se o usuário está abrindo o aplicativo pela primeira vez e deve ser redirecionado para a página apropriada, ou se o aplicativo já foi aberto e o usuário já foi direcionado para essa página. Para isso, o valor `alreadyLoggedAppsflyerConversionData` é lido e gravado em UserDefaults/ Shared Preferences, para que o valor ***af\_dp*** não seja considerado na primeira inicialização.
 
 Para mais detalhes sobre como fornecer conteúdo personalizado em deep linking, <Anchor target="_blank" href="/marketers/pt/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">clique aqui</Anchor>.
+
+<div id="enabling-appsflyer-uninstall-measurement-in-mparticle" />
 
 ## Como ativar a mensuração de desinstalação da AppsFlyer no mParticle
 

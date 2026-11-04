@@ -25,6 +25,8 @@ x-zendesk:
 >
 > esse artigo tem como foco campanhas na web para a divulgação de aplicativos mobile. Se você quiser criar campanhas que dibulguem aplicativos para PC ou console, veja Google Ads Web—Integração para aplicativos de PC e console.
 
+<div id="overview" />
+
 ## Resumo
 
 A AppsFlyer permite a integração com o Google Ads (`googleads_int`) para campanhas de aplicativos de sites e registra os dados de conversão através da API de Conversões Offline (OCI) do Google.
@@ -37,6 +39,8 @@ Depois de receberem um clique, esses links levam o usuário à loja de aplicativ
 
 O Google usa esses dados para otimizar a segmentação de anúncios e mensurar a performance de campanhas.
 
+<div id="prerequisite" />
+
 ### Pré-requisitos
 
 Antes de ativar a integração do Google Ads para campanhas de aplicativos de sites, certifique-se de que você tenha:
@@ -44,6 +48,8 @@ Antes de ativar a integração do Google Ads para campanhas de aplicativos de si
 * Um aplicativo mobile
 * Uma conta da AppsFlyer
 * AppsFlyer <Anchor target="_blank" href="/marketers/pt/docs/user-management">usuários com funções ou permissões adequadas</Anchor> e acesso aos aplicativos relevantes
+
+<div id="create-a-google-ads-web-campaign" />
 
 ### Como configurar uma campanha do Google Ads na web
 
@@ -56,6 +62,8 @@ Depois de configurar os links de atribuição na etapa um por meio da integraç�
 
 * [Criar uma landing page com o OneLink Smart Script](#criar-uma-landing-page-com-o-onelink-smart-script) (opcional)
 * [Criar uma landing page com OneLink Smart Banners](#crie-uma-landing-page-com-os-smart-banners-do-onelink) (opcional)
+
+<div id="create-a-google-ads-integration-in-appsflyer" />
 
 ## Configurar a integração do Google Ads na AppsFlyer
 
@@ -170,6 +178,8 @@ Antes de criar um link de atribuição do OneLink para sua campanha do Google Ad
 
 </Accordion>
 
+<div id="create-a-web-campaign-in-google-ads" />
+
 ## Configurar uma campanha de conversão na web no Google Ads
 
 Configurar a campanha no Google Ads (obrigatória)
@@ -236,6 +246,8 @@ Etapa 2: Crie ações de conversão
 
 As campanhas do Google Web Ads usam duas URLs para cada engajamento: a URL final e a URL do template de rastreamento. Quando um anúncio do Google é clicado e a landing page carregada, esses parâmetros são disponibilizados na página. Para saber mais sobre os parâmetros ValueTrack disponíveis, consulte a <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348">documentação do Google</Anchor>.
 
+<div id="set-the-final-url" />
+
 #### Etapa 3: Defina o URL final da campanha
 
 O Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">define a URL final</Anchor> como "o endereço URL da página web no seu site que as pessoas acessam depois de clicar no seu anúncio". Também conhecido como "página de destino".
@@ -273,6 +285,8 @@ O Google <Anchor target="_blank" href="https://support.google.com/google-ads/ans
   https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
   ```
 * **Um link de download direto para o arquivo APK do aplicativo** se você quiser que os usuários baixem o aplicativo diretamente sem serem redirecionados para uma loja.
+
+<div id="set-the-tracking-template-url" />
 
 #### Defina a URL do template de rastreamento
 
@@ -330,6 +344,8 @@ Como o Google Ads, por padrão, usa o rastreamento paralelo, a URL do template d
 >
 > Para limitações adicionais relacionadas à URL do template de rastreamento, consulte a seção Características e limitações neste artigo.
 
+<div id="google-tracking-template-url-examples" />
+
 #### Exemplos de URL do template de rastreamento do Google
 
 Um exemplo de **um** **OneLink** em uma URL de template de rastreamento do Google:
@@ -344,6 +360,8 @@ Um exemplo de **um link de plataforma única** em uma URL de template de rastrea
 https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
+<div id="using-the-tracking-template-url-with-smart-script-or-smart-banners" />
+
 #### Usando a URL do template de rastreamento com Smart Script ou Smart Banners
 
 No entanto, o URL do template de rastreamento não é obrigatório nas campanhas de aplicativos de sites em que o destino do anúncio é um site. Isso ocorre porque essas ferramentas criam automaticamente um link de atribuição que é registrado na AppsFlyer quando o usuário clica no botão CTA da página inicial No entanto, há considerações a favor e contra deixar o campo URL do template de rastreamento vazio: No entanto, há considerações a favor e contra deixar o campo URL do template de rastreamento vazio:
@@ -352,6 +370,8 @@ No entanto, o URL do template de rastreamento não é obrigatório nas campanhas
 * Se você **preencher** a URL do template de rastreamento com um link de atribuição e o usuário clicar no anúncio e, depois, clicar nos botões de CTA da página de destino, dois cliques serão registrados em vez de um, o que pode afetar os dados da taxa de conversão.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Criar uma landing page com o OneLink Smart Script
 
@@ -434,6 +454,8 @@ Mensurar os dados de atribuição web com os custos da web
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-banners" />
+
 ## Crie uma landing page com os Smart Banners do OneLink
 
 **Jornada do usuário:** O usuário clica em um anúncio do Google e é direcionado para seu site mobile. Eles chegam a uma página e um Smart Banner é exibido com um CTA para baixar o aplicativo na loja de aplicativos.
@@ -473,20 +495,28 @@ Os dados de atribuição web relativos às campanhas do Google Ads estão dispon
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Ver dados de atribuição web
 
 Embora os eventos de conversão baseados na web sejam enviados para o Google sob o PID original `googleads_int`, eles são registrados no dashboard da AppsFlyer e nos relatórios de dados brutos com o PID `googleadwords_int`. Isso se aplica tanto a eventos de conversão primários quanto a eventos de assistência de conversão.
 
 Essa visão unificada permite que você analise a performance de campanhas na web e no app em um só local, incluindo relatórios completos de custos na web e no mobile.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver no dashboard
 
 Todas as atribuições de web-to-app do Google aparecem sob `googleadwords_int` nos dashboards de visão geral e de atividade. Isso fornece uma visão única e consolidada dos resultados da campanha em várias plataformas. Use filtros e análises padrão para comparar o tráfego do app e da web dentro dos seus dados do Google Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver em dados brutos e relatórios de API
 
 * **Exportações de dados brutos e respostas da API** incluem o PID `googleadwords_int` no campo `media_source` para a atividade web do Google. Para verificar os detalhes da configuração da campanha na web, consulte o campo `original_url`, que mostra `googleads_int` como o PID usado durante a criação de campanhas na web.
 * **Relatórios de postback** mostram `googleads_int` como a fonte de mídia original para a qual o postback foi enviado.
+
+<div id="troubleshooting-in-app-events-postbacks" />
 
 ## Solução de problemas: postbacks de eventos in-app
 
@@ -521,6 +551,8 @@ Certifique-se de que os eventos de postback no aplicativo estejam mapeados para 
 A URL de saída do Smart Script ou do Smart Banners deve incluir `gclid`, `wbraid` ou `gbraid` para que o postback ao Google OCI seja registrado corretamente no Google Ads.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

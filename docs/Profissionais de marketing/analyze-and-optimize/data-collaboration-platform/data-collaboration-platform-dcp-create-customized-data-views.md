@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **Em resumo:** Crie subconjuntos personalizados dos seus dados de fonte existentes sem precisar de SQL nem de conhecimento técnico. As visualizações de dados permitem modificar, refinar e resumir os dados, para que você compartilhe com os colaboradores apenas o que for relevante.
 
+<div id="about-data-views" />
+
 ## Sobre visualizações de dados
 
 O Data View Builder permite que você crie uma versão personalizada da sua fonte de dados e a torne relevante para a sua audiência sem modificar o conjunto de dados original. Com elas, você pode realizar funções que modificam, refinam e resumem os dados para que você possa compartilhar apenas o que for relevante, mantendo os dados compartilhados claros e focados e todos os demais dados privados e seguros. Não é necessário ter nenhum conhecimento de SQL, nem da ajuda de um especialista ou engenheiro de dados.
+
+<div id="data-view-functions" />
 
 ### Funções do Data View Builder
 
@@ -37,9 +41,13 @@ Com o Builder de visualizações de dados, você pode moldar seus dados aplicand
   * **Agregação:** combine múltiplos registros de dados para criar resumos e grupos usando funções de soma, média, contagem, mínimo e máximo.
 * **Selecionar campos:** selecione a estrutura da visualização de dados, removendo campos desnecessários e ajustando os tipos de campo.
 
+<div id="the-data-view-builder" />
+
 ## Data View Builder
 
 **<Image alt="Nova visualização de dados - Padrão.png" src="https://files.readme.io/b34b61b2fbc092884270ce0daab9a86deae6b423775bcc648ee0eba6f319e8e5-41945719130897.png" width="1598px" />**
+
+<div id="create-a-data-view" />
 
 ## Definir visualização de dados
 
@@ -63,6 +71,8 @@ Uma <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">conta</Anc
 4. Preencha os seguintes campos:
    * **Nome da visualização de dados:** escolha um nome para a sua visualização de dados. Pode ser qualquer nome que te ajudará a identificar essa visualização. Veja os [requisitos e diretrizes de nomenclatura](#requisitos-e-diretrizes-de-nomenclatura) abaixo.
    * **Descrição:** Forneça uma descrição. Isso aparece como uma dica quando você passa o mouse sobre o nome da visualização de dados na aba **Fontes** . Recomendamos que você insira os principais objetivos e manipulações de dados realizadas.
+
+<div id="naming-requirements-and-guidelines" />
 
 #### Requisitos e diretrizes de nomenclatura
 
@@ -94,6 +104,8 @@ Você pode aplicar filtros para restringir seus dados usando atributos seleciona
 4. Insira um valor.
 5. [Opcional] Clique em **+ Condição** para adicionar uma condição ao filtro.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Você pode adicionar quantas condições forem necessárias, usando as operações E e OU.
@@ -116,6 +128,8 @@ Os campos calculados permitem usar funções para adicionar novos campos, altera
 4. Para campos de **agregação** :  A seção **Agrupar por** será aberta automaticamente, e você poderá selecionar o campo que define como os dados agregados serão agrupados.
 5. [Opcional] Clique **+ Novo campo** para adicionar mais campos de **Transformação** ou **Agregação**. Você pode adicionar quantos campos forem necessários.
 
+<div id="group-by" />
+
 #### **Agrupar por**
 
 Agrupe seus dados em categorias significativas ao aplicar uma agregação. Quando você adiciona uma função de agregação, a seção Agrupar por é aberta automaticamente e permite selecionar os campos que determinam como os dados são agrupados. Por exemplo, você pode agrupar os resultados por país, ID do usuário ou linha de produto para calcular totais ou contagens para cada grupo.
@@ -130,9 +144,13 @@ Uma vez criado, o novo campo:
 * É incluído na lista de campos disponíveis para uso em todas as funções e filtros.
 * É incluído na lista de campos na seção [selecionar campos](#select-fields) .
 
+<div id="zd-list-of-functions-and-use-case-examples" />
+
 <div id="list-of-functions-and-use-case-examples" />
 
 #### Lista de funções e exemplos de casos de uso
+
+<div id="transformation-functions" />
 
 #### **Funções de Transformação**
 
@@ -142,9 +160,13 @@ Uma vez criado, o novo campo:
 * **MENOR QUE:** Retorna o menor de dois valores
 * **MAIOR QUE:** Retorna o maior de dois valores
 
+<div id="example-transformation" />
+
 #### **Exemplo: Transformação**
 
 Você quer indicar quais produtos foram comprados do colaborador enquanto oculta compras de outras marcas com as quais você está trabalhando.
+
+<div id="aggregate-functions" />
 
 #### **Funções agregadas**
 
@@ -154,9 +176,13 @@ Você quer indicar quais produtos foram comprados do colaborador enquanto oculta
 * **MÍN:** Retorna os valores mínimos de dois números
 * **MÁX:** Retorna os valores máximos de dois números
 
+<div id="example-aggregation" />
+
 #### **Exemplo: Agregação**
 
 Você quer contar o número total de compras por usuário e somar o preço total que ele pagou.
+
+<div id="example-aggregation-with-a-condition" />
 
 #### Exemplo: Agregação com uma condição
 
@@ -169,6 +195,8 @@ Você quer acessar os dados das últimas compras feitas por usuários localizado
 <Accordion title="4. Selecionar campos">
 
 A estrutura da visualização de dados inclui campos da fonte de dados original e quaisquer campos de dados personalizados criados dentro do Data View Builder. A partir daqui você pode remover campos (exceto pelo campo identificador) ou rearranjar sua ordem.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -233,11 +261,15 @@ Clique em **Salvar** na parte inferior da página.
 Você pode <Anchor target="_blank" href="You%20can%20share%20(associate)%20your%20data%20view%20in%20a%20collaboration,%20enabling%20a%20brand%20collaborator%20to%20view%20and%20perform%20actions%20with%20it%20(based%20on%20the%20permissions%20you%20set).">associate your data view with a collaboration</Anchor>, permitindo que colaboradores da marca a visualizem e realizem ações com ela (com base nas permissões que você definir).  
 **Observação:** Para associar uma visualização de dados a uma colaboração, você deve ser o criador da colaboração ou ter sido convidado para ela.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > Se você criou esta visualização de dados para agregar uma fonte transacional para a criação de audiências, associe-a à colaboração relevante. A visualização de dados agregados deve ser associada à colaboração antes de ficar disponível como fonte no Audience Builder. <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-a-collaboration">Saiba como associar fontes a uma colaboração</Anchor>.
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## casos de uso
 
@@ -270,6 +302,8 @@ As visualizações de dados são úteis quando você precisa personalizar e cont
 
 Dados transacionais se referem a fontes que contêm vários registros por usuário (por exemplo, compras, pedidos ou eventos). Se você estiver trabalhando com uma fonte de dados transacionais, deverá agregá-la em um conjunto de dados no nível do usuário antes que ela possa ser usada para a criação de audiências no Audience Builder.
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Quando você abre uma fonte de dados transacionais diretamente ou é redirecionado para cá a partir do Audience Builder, um banner é exibido confirmando que a agregação é obrigatória. A visualização de dados agregados também deve ser associada à colaboração relevante antes de ficar disponível como fonte no Audience Builder.
@@ -289,6 +323,8 @@ Conjuntos de dados transacionais podem conter vários registros por usuário. Us
 <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Saiba como criar audiências</Anchor>
 
 </Accordion>
+
+<div id="manage-data-views" />
 
 ## Gerenciar visualizações de dados
 
@@ -348,6 +384,8 @@ Compartilhe sua visualização de dados com o colaborador e forneça a ele as pe
 
    <Image alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
 5. Selecione as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissões-de-compartilhamento">permissões de compartilhamento</Anchor> relevantes.
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >

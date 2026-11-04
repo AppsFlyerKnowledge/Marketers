@@ -39,6 +39,8 @@ x-zendesk:
   * Ative e-mails para evitar que eles sejam sinalizados como spam, pois o link pode não corresponder ao e-mail do remetente.
   * Branded domains estão incluídos nos <Anchor target="_blank" href="/marketers/pt/docs/account-management-plans-payments-and-billing">planos de assinatura</Anchor> pagos da AppsFlyer.
 
+<div id="principles-of-implementation" />
+
 ### Princípios de implementação
 
 Os branded domains são implementados associando um domínio completo definido no seu Domain Name System (DNS) com um subdomínio OneLink (o destino CNAME da AppsFlyer). Isso é feito usando as configurações padrão no seu DNS e configurando um branded domain na AppsFlyer. Além disso, você precisará fazer algumas pequenas alterações no seu aplicativo para que ele seja compatível com os branded domains.
@@ -46,6 +48,8 @@ Os branded domains são implementados associando um domínio completo definido n
 Você precisará da ajuda do administrador do DNS, que costuma ser um membro da sua equipe de TI ou o provedor de hospedagem do DNS e o desenvolvedor do aplicativo.
 
 Múltiplos domínios podem ser associados a um único subdomínio do OneLink. Isso significa que você pode ter várias marcas que usam o mesmo subdomínio do OneLink.
+
+<div id="setting-up-branded-domains" />
 
 ### Configurando branded domains
 
@@ -57,6 +61,8 @@ Complete a lista de ações abaixo para configurar um branded domain.
 | 2 | Desenvolvedor | [Configurar branded domains no aplicativo](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Faça pequenas alterações no código do aplicativo. |
 | 3 | Marketer | [Usar e testar branded domains](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | Conforme necessário | Marketer | [Editar e excluir branded domains](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### Procedimentos
 
@@ -111,6 +117,8 @@ Para mapear seu domínio completo para um subdomínio do OneLink:
    > * Pode levar até 24 horas para que um novo branded domain comece a funcionar.
 
 
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
 #### Renove o período de 7 dias para mapear o registro CNAME
 
 O novo branded domain não funcionará se o registro CNAME do seu domínio completo não for mapeado para a AppsFlyer em até 7 dias após sua criação.
@@ -132,6 +140,8 @@ O novo branded domain não funcionará se o registro CNAME do seu domínio compl
 > **Nota**
 >
 > Você pode excluir o branded domain clicando no ícone Excluir (<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) se você decidir não renovar o período de 7 dias. Somente branded doamins que ainda não foram mapeados para a AppsFlyer podem ser excluídos.
+
+<div id="custom-ssl-certificate-optional" />
 
 #### Certificado SSL personalizado (opcional)
 
@@ -298,6 +308,8 @@ Antes de usar e testar branded domains, complete as etapas no [workflow de brand
 
 <Accordion title="Edição, verificação e exclusão de branded domains">
 
+<div id="edit-a-branded-domain-mapping" />
+
 #### **Para editar um mapeamento do branded domain**
 
 Você pode alterar o mapeamento de um domínio completo existente para um subdomínio diferente do OneLink. Não há necessidade de configurar um CNAME.
@@ -315,6 +327,8 @@ Você pode alterar o mapeamento de um domínio completo existente para um subdom
 >
 > Modificar os branded domains de campanhas ativas pode alterar ou desativar a funcionalidade do link.
 
+<div id="verify-a-branded-domain-mapping" />
+
 #### **Verifique um mapeamento de branded domain**
 
 Depois de alterar o subdomínio do OneLink mapeado para o seu branded domain, verifique se ele está mapeado corretamente:
@@ -330,15 +344,21 @@ Depois de alterar o subdomínio do OneLink mapeado para o seu branded domain, ve
 > Se a verificação falhar porque o registro CNAME ainda não foi mapeado, você terá um prazo de até 7 dias para fazer isso, terminando na data especificada na caixa de diálogo.
 > Se o registro CNAME não for mapeado até a data especificada, você deverá renovar o período de 7 dias.
 
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
 #### **O registro CNAME do domínio não leva para a AppsFlyer**
 
 Mudar seu registro CNAME, de uma forma que ele deixe de direcionar para a AppsFlyer, resultará na exclusão do domínio personalizado na AppsFlyer.
+
+<div id="delete-a-branded-domain-mapping" />
 
 #### **Excluir um mapeamento de branded domain:**
 
 Para excluir um branded domain, entre em contato com seu CSM da AppsFlyer ou envie um e-mail para hello@appsflyer.com.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Solução de problemas, características e limitações
 

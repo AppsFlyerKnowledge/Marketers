@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Visão geral:** Adicione o SDK dos Smart Banners ao seu site para converter os visitantes do seu site em usuários de aplicativos móveis.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > O web SDK v1 do Smart Banner da AppsFlyer foi desativado em 8 de novembro de 2023. Para exibir Smart Banners em seu site, você precisa atualizar para a v2. <Anchor target="_blank" href="/marketers/pt/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Saiba mais</Anchor>
+
+<div id="website-code-implementation" />
 
 ## Implementação do código do site
 
@@ -213,6 +217,8 @@ Agora, quando seu site for carregado em dispositivos mobile, o criativo ativo do
 4. Clique em **Atualizar arquivo**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

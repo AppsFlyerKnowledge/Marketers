@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** Como mascarar endereços IP de usuários de aplicativos nos Relatórios de dados brutos da AppsFlyer e em postbacks enviados aos parceiros.
 
+<div id="ip-masking" />
+
 ## Mascaramento de IP
 
 Ao ativar o mascaramento de IP:
@@ -30,10 +32,14 @@ Ao ativar o mascaramento de IP:
 * Os endereços IP dos usuários não são listados nos Relatórios de dados brutos nem fornecidos via postbacks aos parceiros
 * O campo de endereço IP é preenchido com o valor 1.1.1.1
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * As instalações ocorridas antes de o mascaramento de IP ser ativado não são mascaradas
 > * O <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-aggregate-event-measurement-aem-for-ios#compartilhamento-de-dados-da-aem">compartilhamento de dados de AEM</Anchor> para anúncios da Meta não é compatível com eventos de servidor para servidor nem com eventos de SDK quando o mascaramento de IP está ativado. Isso significa que os dados não são compartilhados com o Meta ads.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -65,6 +71,8 @@ Ao ativar o mascaramento de IP:
 > | 9º de janeiro | Desligado | User\_A 192.0.2.1  <br />User\_B 1.1.1.1 |
 > | 15 de janeiro | Desligado | User\_A 192.0.2.1  <br />User\_B 1.1.1.1  <br />User\_C 203.0.113.1 |
 
+<div id="turn-on-ip-masking" />
+
 ## Ativar mascaramento de IP
 
 O mascaramento de IP é definido por aplicativo e afeta instalações de todas as fontes.
@@ -74,6 +82,8 @@ O mascaramento de IP é definido por aplicativo e afeta instalações de todas a
 1. Na AppsFlyer, no menu lateral, selecione **Configurações** > **Configurações do Aplicativo.**
 2. Role para baixo até **Configurações avançadas**.
 3. Ative **Mascarar endereços IP**.
+
+<div id="ip-masking-in-raw-data-reports" />
 
 ## Mascaramento de IP em relatórios de dados brutos
 

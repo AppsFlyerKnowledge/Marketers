@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **Visão geral:** mensure o impacto mais amplo das fontes de mídia que engajaram seus usuários e deram assistência antes do último toque.
 
+<div id="assisted-installs" />
+
 ## Instalações assistidas
 
 <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">Instalações assistidas</Anchor> (também conhecidas como atribuição multi-touch) são instalações nas quais a fonte de mídia/campanha não foi responsável pelo último toque, mas recebeu um toque do usuário antes da instalação e durante a janela de atribuição, desempenhando um papel importante para a instalação final. Uma instalação pode incluir até 3 instalações assistidas.
 
 Os dados analíticos de instalações assistidas estão disponíveis nos níveis da fonte de mídia e da campanha para medir o impacto mais amplo de cada fonte de mídia e campanha.
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### Visualizar métricas de instalações assistidas no painel Visão geral
 
@@ -47,9 +51,13 @@ Os dados analíticos de instalações assistidas estão disponíveis nos níveis
 5. Selecione a métrica **Instalações assistidas**.  
    O gráfico de instalações assistidas é exibido. O azul indica instalações não orgânicas e o laranja indica instalações assistidas. ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### Por que as assistências são importantes?
 
 Em muitos casos, os usuários potenciais se familiarizam com um aplicativo através da fonte que deu assistência, mas não finalizam a instalação por algum motivo. Assim, medir e reconhecer assistências é importante na otimização e métrica de campanhas.
+
+<div id="assisted-installs-reporting" />
 
 ### Relatórios de instalações auxiliadas
 
@@ -72,16 +80,22 @@ Para cada uma das redes contribuintes, o relatório de dados brutos inclui o seg
 
 Veja os <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview#relatórios-de-jornada-do-usuário">dados brutos da jornada do usuário.</Anchor>
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > **Canais de mídia com restrições de dados em nível de usuário**
 >  Se um <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions">canal de mídia restringir dados em nível de usuário</Anchor>, ele não poderá ser atribuído como contribuinte ou assist para uma Atribuição vencedora. Isso significa que determinadas fontes não aparecem como contribuintes, mesmo que tenham engajado o usuário antes da instalação.
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
 > Várias das principais ad networks <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention">restringem o compartilhamento de seus dados com plataformas de terceiros</Anchor>, incluindo agências. Portanto, as instalações assistidas não aparecem no painel da agência para essas redes.
 
 Nos relatórios de dados brutos, os dados das networks contribuintes são divididos em campos separados para **Contributors 1–3**.
+
+<div id="total-candidates-field" />
 
 ### Campo de total de candidatos
 
@@ -100,6 +114,8 @@ Na prática, isso significa:
 * Se não houver contribuidores, será pelo mesmo motivo: os engajamentos registrados em `total_candidates` não eram elegíveis para atuar como contribuidores.
 
 Em resumo, `total_candidates` indica os engajamentos recebidos, que não são necessariamente candidatos válidos para atribuição. É possível ver um valor nesse campo e ainda assim ter a instalação atribuída a orgânico ou sem contribuidores.
+
+<div id="note-2" />
 
 > 📘 **Considerações para agências**
 >

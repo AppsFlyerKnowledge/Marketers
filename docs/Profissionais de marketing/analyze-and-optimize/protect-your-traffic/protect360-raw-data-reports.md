@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Visão geral:** Os relatórios de dados brutos descrevem as instalações e os eventos na aplicação bloqueados pelo motor Protect360, assim como as regras de validação adicionadas manualmente.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Sobre os relatórios de dados brutos do Protect360
 
 Relatórios de dados brutos:
@@ -42,6 +44,8 @@ Relatórios de dados brutos:
 * Os tipos de relatórios e a sua disponibilidade para download, API, e Data Locker (bucket S3) são descritos nas secções seguintes.
 * A retenção de relatórios históricos de dados brutos é de até 90 dias, dependendo da ferramenta de relatório e da origem dos dados brutos.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Devido a restrições nos dados brutos relacionadas com a privacidade, os relatórios podem apresentar campos com valores vazios. Um exemplo disso são os campos de contribuidor.
@@ -49,6 +53,8 @@ Relatórios de dados brutos:
 <div id="report-types" />
 
 <Accordion title="Tipos de relatório">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Tipos de relatório de dados brutos do Protect360
 
@@ -75,6 +81,8 @@ Relatórios de dados brutos:
   * Interface do utilizador do painel: limitada a uma fonte de mídia por um mês de calendário.
   * API Pull: inclui todas as fontes de mídia. (Limitação: Disponível apenas para proprietários de aplicações.)
 
+<div id="using-post-attribution-reports" />
+
 #### **Utilização de relatórios pós-atribuição**
 
 * Selecione qualquer combinação de intervalos de datas de instalação/IAE e deteção conforme necessário.
@@ -84,6 +92,8 @@ Relatórios de dados brutos:
   * Defina o intervalo de datas de instalação para os 60 dias anteriores ao dia atual.
   * Defina o intervalo de deteção para a data anterior ao dia atual.  
     Isso significa que receberá a lista das fraudes pós-atribuição detetadas ontem. Se não tiver extraído o relatório durante alguns dias, ajuste o intervalo de datas de deteção e extraia o relatório.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -97,11 +107,15 @@ Relatórios de dados brutos:
 
 <Accordion title="Disponibilidade de dados brutos por tipo de ferramenta">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### Disponibilidade de dados brutos do Protect360 por tipo de ferramenta
 
 <table><thead><tr><th>Relatório</th><th>Relevância dos dados</th><th>Extrair API</th><th>Página de Exportação de Dados</th><th>Armazenamento de dados</th></tr></thead><tbody><tr><td>Instalações</td><td>Em tempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Eventos na aplicação bloqueados</td><td>Em tempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Cliques</td><td>Em tempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Postbacks de instalação bloqueados</td><td>Em tempo real</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Instalações pós-atribuição</td><td>Diariamente às 10h00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Eventos in-app pós-atribuição</td><td>Diariamente às 10h00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr><tr><td colspan="5"><p>\* Limitações para relatórios via Data Locker:</p><ul><li>A transparência da agência não é suportada. Isso significa que o tráfego gerado pela agência não contém o nome da fonte de mídia que envia a instalação.</li><li>O relatório possui um conjunto único de campos em comparação com outros relatórios do Data Locker. Esta lista não pode ser alterada.</li><li>Os dados de retargeting não estão disponíveis no relatório de instalações; apenas no relatório de instalações pós-atribuição. </li></ul></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## Obtenção de relatórios de dados brutos
 
@@ -141,6 +155,8 @@ Os relatórios de dados brutos estão disponíveis por download, Pull API e Data
 3. Preencha os parâmetros conforme necessário. A tabela seguinte apresenta os parâmetros.
 4. Extraia o relatório.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Parâmetros do relatório de dados brutos da API Pull
 
 | Parâmetro | Descrição | Formato | Obrigatório |
@@ -168,11 +184,15 @@ O Data Locker grava dados brutos num bucket AWS S3.
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Estrutura do relatório Protect360
 
 Os relatórios do Protect360 têm a mesma estrutura geral que os campos dos relatórios de aquisição de utilizadores.
 
 Para além dos <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary">campos normais do relatório de dados brutos</Anchor>, os relatórios do Protect360 também incluem campos para retargeting e motivos de bloqueio, conforme apresentado a seguir:
+
+<div id="blocked-reasons" />
 
 ### Razões para bloqueio
 
@@ -202,6 +222,8 @@ Ao nível de instalação, conseguimos identificar informações suficientes no 
 
 As tabelas seguintes listam as possíveis razões de bloqueio ao nível de instalação:
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### Nível de instalação: Razões secundárias para bloqueio de instalações falsas
 
 | Motivo do bloqueio | Submotivo do bloqueio | Descrição |
@@ -215,6 +237,8 @@ As tabelas seguintes listam as possíveis razões de bloqueio ao nível de insta
 | validação\_robôs | parâmetros\_de\_dispositivo\_inválidos | Incompatibilidade de expectativas em campos específicos do dispositivo - definido pelo cliente |
 | validação\_robôs | regras\_de\_validação | Regras onde o resultado são instalações bloqueadas com base em regras de validação definidas manualmente |
 | Bots | ai\_layer | Modelos de IA são usados para analisar grandes volumes de dados, aprimorando as capacidades de detecção para identificar atividades fraudulentas em dispositivos e instalações. |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### Nível de instalação: Motivos secundários para bloqueios de sequestro de atribuição
 
@@ -240,6 +264,8 @@ Quando se deteta um padrão de fraude, a fonte da fraude é colocada na lista de
 
 As tabelas seguintes apresentam possíveis razões para bloqueios ao nível do cluster:
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### Nível de cluster: Motivos de bloqueio de instalação falsa
 
 | Motivo do bloqueio | Submotivo do bloqueio | Descrição |
@@ -248,6 +274,8 @@ As tabelas seguintes apresentam possíveis razões para bloqueios ao nível do c
 | bots, lista\_negra\_de\_sites | emuladores\_de\_dispositivos | Instalações geradas em larga escala por scripts automáticos em ambientes virtuais |
 | lista\_negra\_de\_sites | fazendas\_de\_dispositivos | Altas taxas de dispositivos desconhecidos (novos) |
 | anomalias\_comportamentais | anomalias\_comportamentais | Comportamento suspeito dentro da aplicação em comparação com o padrão comum de comportamento do utilizador da aplicação |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### Nível de cluster: Razões para bloqueio de sequestro de atribuição
 
@@ -272,6 +300,8 @@ Os eventos na aplicação podem ser bloqueados pelos seguintes motivos:
 
 A tabela a seguir lista os possíveis motivos de bloqueio a nível da aplicação.
 
+<div id="in-app-level-block-reasons" />
+
 #### Motivos de bloqueio a nível da aplicação
 
 | Motivo do bloqueio | Submotivo do bloqueio | Descrição |
@@ -282,6 +312,8 @@ A tabela a seguir lista os possíveis motivos de bloqueio a nível da aplicaçã
 | validação\_inapps | regras\_de\_validação | Baseado na regra de validação definida manualmente |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### Redirecionamento
 
@@ -295,6 +327,8 @@ Os dados brutos do Protect360 incluem instalações e sessões fraudulentas de c
 Os dados brutos de retargeting do Protect360 estão disponíveis para bloqueios em tempo real e fraudes identificadas após a atribuição da seguinte forma:
 
 <table><thead><tr><th>Relatório </th><th>Exportar dados</th><th>Extrair API</th><th>Armazenamento de dados</th></tr></thead><tbody><tr><td>Instalações</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalações pós-atribuição</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Dados de reengajamento não disponíveis</span><br/> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### Correção de atribuição para instalações sequestradas
 

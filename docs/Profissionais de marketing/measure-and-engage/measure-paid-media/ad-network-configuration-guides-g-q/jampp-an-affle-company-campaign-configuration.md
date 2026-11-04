@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/jampp.png" width="213px" />
 
+<div id="setting-up-jampp-integration" />
+
 ## Configuração da integração da Jampp
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -46,13 +48,19 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Importante!**
 >
 > Como uma all-installs network, a Jampp prefere receber postbacks de todas as novas instalações do seu aplicativo de QUALQUER fonte, inclusive orgânica. Para fazer isso, selecione **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação à Jampp.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -60,12 +68,16 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 
 Alterne isso para LIGADO se quiser atribuir instalações view-through da Jampp. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a Jampp após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Jampp.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada à Jampp.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -94,6 +106,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao Jampp
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -112,6 +126,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
   **Parâmetros do link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**Estrutura e parâmetros do link de atribuição da AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configurações de retargeting
 
@@ -146,6 +162,8 @@ Defina o período após o reengajamento, onde os eventos in-app do usuário são
 
 **Parâmetro do link de atribuição:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas ao Jampp.
@@ -154,9 +172,13 @@ Essa barra deslizante permite que você defina o **tempo máximo entre o clique 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Clique no link de atribuição
 
 Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie-o ao Jampp para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Janela de retrospetiva da atribuição por visualização
 
@@ -167,6 +189,8 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 **Parâmetro do link de atribuição:** af\_viewthrough\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição view-through aqui</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Link de atribuição para impressões
 
@@ -204,6 +228,8 @@ Nesta aba, você pode selecionar as permissões a serem concedidas à Jampp, ind
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
 
+<div id="ad-network-permissions" />
+
 ### Permissões da rede de anúncios
 
 * ***Permitir a configuração da integração*** – permite que o parceiro configure a aba de integração (exceto postbacks de evento in-app)
@@ -215,6 +241,8 @@ Use essas chaves seletoras para conceder permissões à rede de anúncios para g
 * ***Permitir o acesso ao painel Protect360*** – somente aos próprios dados do Protect360 do parceiro e desde que o recurso esteja ativado para o anunciante
 
 Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad networks</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 

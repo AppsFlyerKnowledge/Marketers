@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
 
+<div id="integrating-google-ads-campaign-data-in-pba" />
+
 ## Como integrar dados de campanha do Google Ads ao PBA
 
 Conecte sua conta do Google Ads (1 ou mais) ao seu pacote de marcas. Os dados de campanha do Google Ads melhoram os recursos analíticos do dashboard e enriquecem ainda mais os relatórios de dados brutos.
@@ -63,6 +65,8 @@ Na página de integração do Google Ads, as seguintes ações estão disponíve
 
 * Excluir conexão
 * Ativar/desativar a conexão
+
+<div id="pbagoogle-ads-status-messages" />
 
 ### Mensagens de status do PBA — Google Ads
 

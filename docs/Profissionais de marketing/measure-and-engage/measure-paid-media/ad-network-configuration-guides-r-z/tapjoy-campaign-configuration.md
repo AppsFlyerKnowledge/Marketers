@@ -27,6 +27,8 @@ x-zendesk:
 
 Para configurar suas campanhas com a Tapjoy, siga as etapas abaixo.
 
+<div id="setting-up-tapjoy" />
+
 ## Configurando a Tapjoy
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Se você não tiver uma conta, entre em contato com o parceiro para abrir uma antes de configurar a integração.
@@ -48,19 +50,29 @@ Para configurar suas campanhas com a Tapjoy, siga as etapas abaixo.
 
 A ***aba de integração*** se divide em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na primeira visita, <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">o parceiro deve ser ativado</Anchor> ao habilitar a opção ***Ativar parceiro***, para permitir sua configuração.
 
+<div id="general-settings" />
+
 ### Configurações gerais
+
+<div id="app_id" />
 
 #### ativado
 
 A Tapjoy se conecta à AppsFlyer por meio de um ID de network exclusivo. Se você ainda não tiver o ID do aplicativo, deverá obtê-lo com a Tapjoy para continuar com a integração.
 
+<div id="enable-view-through-attribution" />
+
 #### Habilitar a atribuição de view-through
 
 Ative esta opção se quiser atribuir instalações view-through da Tapjoy. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -71,6 +83,8 @@ Selecione ***Todas as fontes, incluindo orgânico*** para ter toda a sua base de
 
 Instalações rejeitadas podem ser enviadas para **somente este parceiro**.
 
+<div id="launch-postbacks" />
+
 #### Postbacks de inicialização
 
 Desde 1º de julho de 2020, não enviamos mais postbacks de inicialização para a Tapjoy. Se sua integração foi configurada antes dessa data, pode haver alterações nas suas configurações. A tabela a seguir explica as possíveis alterações e as ações necessárias, quando aplicável:
@@ -80,6 +94,8 @@ Desde 1º de julho de 2020, não enviamos mais postbacks de inicialização para
 | Enviar para a Tapjoy **todos os lançamentos** (de todos os canais de mídia, incluindo orgânico) | Enviar para a Tapjoy:<ul><li>**todas as instalações** (de todos os canais de mídia, incluindo orgânico)</li><li>**todos os eventos `af_app_opened`** (de todos os canais de mídia, incluindo orgânico)</li></ul> | Não é necessária nenhuma ação adicional. Esta atualização não tem nenhum impacto real na configuração. |
 | Enviar para a Tapjoy **somente os primeiros lançamentos atribuídos** | Enviar para a Tapjoy **instalações** atribuídas somente à Tapjoy | Se você também quiser enviar eventos `af_app_open`:<ul><li>No AppsFlyer, na página de integração da Tapjoy, configure o envio do evento na seção ***Postbacks de evento in-app***</li></ul> |
 | Enviar para a Tapjoy **todos os lançamentos** (de todos os canais de mídia, incluindo orgânico)<br /><br />**MAS**<br /><br />Nenhuma conversão foi atribuída à Tapjoy nos 3 meses anteriores a 1º de julho de 2020 | Enviar **todas as instalações**<br /><br />**AND**<br /><br />Por 30 dias após 1º de julho de 2020, **todas as inicializações** | Se você também quiser enviar eventos `af_app_open`:<ul><li>No AppsFlyer, na página de integração da Tapjoy, configure o envio do evento na seção ***Postbacks de evento in-app***.</li></ul>Se isso for feito durante o período de 30 dias, deixaremos de enviar todas as inicializações e passaremos a enviar todos os eventos `af_app_open`.<br /><br />Se isso for feito após o período de 30 dias, pararemos de enviar inicializações e não enviaremos eventos `af_app_open` até que isso seja configurado de outra forma. |
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -99,6 +115,8 @@ Nesta seção, você pode configurar postbacks de eventos in-app que são enviad
 | **Incluindo** | <ul><li>**Sem dados (padrão)**: Envie apenas o evento em si, sem qualquer valor de evento.</li><li>**Valores e receita**: Envie todos os parâmetros do evento, incluindo valores de receita (se existirem no evento).</li><li>**Valores sem receita**: Envie todos os parâmetros do evento, excluindo valores de receita.</li></ul> |
 
 4. [Opcional] Clique em Adicionar condição![image.png](https://files.readme.io/8e650caf6472b316bd49bc25c45cc4c9d63b67770dd1c920fb873118b82ff868-17023682954385.png) ícone de um evento para <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#postbacks-condicionais-de-eventos-in-app">definir condições para o evento</Anchor> enviado para a Tapjoy.   
+
+   <div id="note" />
 
    > 📘 **Importante!**
    >
@@ -139,6 +157,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 
 </Accordion>
 
+<div id="notes" />
+
 > 📘 **Notas**
 >
 > * Se macros de custo estiverem sendo passadas no link de atribuição, a integração da API não poderá ser ativada. Ativar a integração da API de custo enquanto houver macros de custo no link de atribuição pode causar relatórios duplicados de custo. Entre em contato com seu gerente de contas da TapJoy e com seu CSM da AppsFlyer para remover todas as macros de custo dos links de atribuição existentes.
@@ -165,6 +185,8 @@ Esta seção é relevante se você for um publisher que exibe anúncios de parce
 Nesta aba, você pode selecionar as permissões a serem concedidas à Tapjoy, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo os dois. Observe que, mesmo se a atribuição estiver desativada para a Tapjoy, a aba de permissões estará ativa e você poderá conceder controle à Tapjoy.
 
 Use essas chaves seletoras a fim de conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo.
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

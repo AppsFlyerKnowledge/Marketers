@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo:** Descubra o que é a atribuição cross-platform e user-based e entenda como ela opera e como ela é configurada na AppsFlyer.
 
+<div id="what-is-user-based-attribution" />
+
 ## O que é atribuição user-based?
 
 Esse tipo de atribuição é um modelo cross-platform que usa de um <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid">Customer User ID (CUID)</Anchor> persistente para conectar eventos de conversão entre plataformas. Usando o CUID, esse modelo atribui qualquer atividade à fonte de mídia responsável por impulsionar o primeiro evento de conversão do usuário.
@@ -29,11 +31,15 @@ Esse tipo de atribuição é um modelo cross-platform que usa de um <Anchor targ
 >
 > Se você quiser usar o reengajamento entre plataformas, continue lendo este artigo, pois ele aborda o modelo fundamental de atribuição. Em seguida, você pode ler sobre reengajamento entre plataformas para atribuição baseada no usuário para obter orientações específicas.
 
+<div id="a-cross-platform-user-journey-example" />
+
 ### Exemplo de jornada cross-platform
 
 Um usuário clica em um anúncio no Google web, completa o cadastro e faz uma compra no navegador no desktop. Mais tarde, o mesmo usuário clica em um anúncio mobile do Instagram, instala o aplicativo e faz outra compra dentro do app. Uma semana depois, o usuário instala o aplicativo de CTV da marca, faz o login usando o mesmo CUID e se inscreve para uma assinatura paga.
 
 Como o CUID identifica o usuário em todas essas plataformas, e a campanha web do Google foi o primeiro evento não orgânico associado a esse CUID, toda a atividade subsequente – incluindo a compra no aplicativo mobile e a assinatura na CTV – é atribuída à campanha do Google.
+
+<div id="user-based-vs-device-based-attribution" />
 
 ### Atribuição user-based vs. device-based
 
@@ -53,6 +59,8 @@ A atribuição device-based atribui $0 ao Meta Ads, enquanto a atribuição user
 | **Total de compras** ($150) | Atribuída ao **YouTube** (com base em interações recentes a nível de dispositivo) | Atribuída ao **Meta** (no anúncio inicial na web) |
 | **Compra no aplicativo iOS** ($50) | **50 dólares como orgânico**, **100 dólares para o YouTube** (dividido entre campanhas) | **$150 no total** atribuídos ao Meta (fonte unificada) |
 
+<div id="what-makes-an-event-a-candidate-for-cross-platform-attribution" />
+
 ### O que faz com que um evento se torne um candidato para a atribuição cross-platform?
 
 Um evento é considerado um **candidato para a atribuição cross-platform** quando ele atende a **todas** as seguintes condições:
@@ -63,6 +71,8 @@ Um evento é considerado um **candidato para a atribuição cross-platform** qua
 * **Ele pertence a uma linha de produtos:** o aplicativo que gera o evento deve fazer parte de uma **linha de produtos**, um agrupamento de aplicativos relacionados (por exemplo, iOS, Android, CTV) à mesma marca, para as quais a atribuição é definida e configurada coletivamente. Para mais informações, veja <Anchor target="_blank" href="/marketers/pt/docs/product-line-group-apps-for-cross-platform-attribution#sobre-a-linha-de-produto">agrupar aplicativos para atribuição cross-platform</Anchor>.
 * **Dentro da janela de restauração da inatividade:** o evento deve se enquadrar no âmbito da **janela de inatividade**, um período configurável (por exemplo, 7 a 390 dias) durante o qual um CUID ainda é considerado ativo e elegível para atribuição dentro de uma determinada linha de produtos. Se o CUID não for identificado dentro dessa janela, o seu mapeamento de atribuição anterior será descartado.
 * **Os campos de atribuição a nível de dispositivo estão presentes:** o evento já deve conter **parâmetros de atribuição a nível de dispositivo** válidos (por exemplo, fonte de mídia, campaign ID) derivados do modelo clássico de atribuição device-based da AppsFlyer.
+
+<div id="how-is-the-attribution-source-determined" />
 
 ### Como a fonte de atribuição é determinada?
 
@@ -79,6 +89,8 @@ A fonte de mídia originalmente atribuída é determinada usando a seguinte lóg
 > 📘 **Note**
 >
 > A AppsFlyer apenas vincula CUIDs idênticos **dentro da mesma linha de produtos**. Não tentamos vincular, inferir ou compartilhar CUIDs entre diferentes linhas de produtos ou clientes. Isso garante uma metodologia rigorosa, que garante a compliance com a privacidade, mantendo os dados de cada cliente isolados e independentes.
+
+<div id="the-cuid-enrichment-processing-window" />
 
 #### Janela de processamento de enriquecimento de CUID
 
@@ -107,6 +119,8 @@ A janela de processamento de enriquecimento de CUID é o período (1–4 horas) 
 >
 > Para maximizar a correspondência entre plataformas, inclua sempre um CUID em cada evento in-app enviado.
 
+<div id="set-up-cross-platform-attribution" />
+
 ## Configurar a atribuição criss-platform
 
 Para configurar a atribuição cross-platform, você deve aplicar algumas configurações na AppsFlyer e implementar funções específicas do SDK ao código do seu aplicativo.
@@ -114,10 +128,14 @@ Para configurar a atribuição cross-platform, você deve aplicar algumas config
 * **Na AppsFlyer**, atribua os seus aplicativos a uma linha de produtos, selecione a atribuição cross-platform e especifique a janela de restauração. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/product-line-group-apps-for-cross-platform-attribution#como-configurar-uma-linha-de-produto">criar uma linha de produtos</Anchor>.
 * **No seu aplicativo**, configure o SDK daAppsFlyer para enviar eventos com CUIDs. Se precisar de instruções para desenvolvedores, acesse o artigo [Set Customer User ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id).
 
+<div id="view-cross-platform-attribution-results" />
+
 ## Ver resultados de atribuição cross-platform
 
 * Para ver resultados de atribuição cross-platform, consulte o artigo <Anchor target="_blank" href="/marketers/pt/docs/end-user-events-cross-platform-report-in-data-locker">Data Locker: relatório de eventos cross-platform realizados por usuários finais</Anchor>.
 * **My Dashboards:** Disponível pelo modelo "Cross Platform". Para mais informações sobre como selecionar um modelo de dashboard, consulte <Anchor target="_blank" href="/marketers/pt/docs/my-dashboards#create-dashboard">Criar um dashboard personalizado</Anchor>.
+
+<div id="frequently-asked-questions-faqs" />
 
 ## Perguntas frequentes (FAQs)
 
@@ -125,12 +143,16 @@ Para configurar a atribuição cross-platform, você deve aplicar algumas config
 
 Existem alguns motivos que podem explicar as diferenças.
 
+<div id="different-attribution-logic" />
+
 #### Lógica de atribuição diferente
 
 * **A atribuição entre plataformas é baseada no usuário.** Ela vincula a atividade usando o CUID e atribui toda a atividade subsequente do usuário à coorte da campanha do usuário dentro da linha de produtos.
 * **A atribuição clássica da AppsFlyer é centrada no dispositivo** (um ID da AppsFlyer por dispositivo). Isso significa que o mesmo usuário do mundo real em vários dispositivos ou plataformas pode ser contabilizado como usuários separados e creditado a touchpoints diferentes.
 
 **Impacto:** Mesmo que a receita geral seja semelhante, a receita por canal de mídia ou campanha pode mudar significativamente.
+
+<div id="different-attribution-date" />
 
 #### Data de atribuição diferente
 

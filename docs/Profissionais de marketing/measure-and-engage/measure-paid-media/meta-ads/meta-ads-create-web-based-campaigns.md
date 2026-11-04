@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **Resumo:** Use campanhas web do Meta Ads para atribuir conversões web-to-app partir do Meta Ads
 
+<div id="overview" />
+
 ## Visão geral
 
 A AppsFlyer é compatível com a integração com o Meta Ads (`metaweb_int`) para campanhas baseadas na web, permitindo que você reporte dados de atribuição e conversão diretamente por meio da Conversion API (CAPI) do Meta. Os dados são então usados pelo Meta Ads para otimizar a segmentação de anúncios, mensurar a performance e construir audiências personalizadas.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
 > Atualmente, a integração com o Meta Web não oferece suporte para o envio de postbacks de reengajamento para a CAPI.
 
+<div id="prerequisites" />
+
 ### Pré-requisitos
 
 Antes de ativar a integração do Meta Ads, certifique-se de que você possui uma [conta comercial no Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
+
+<div id="how-to-create-a-meta-web-ads-campaign" />
 
 ### Como criar uma campanha web no Meta Ads
 
@@ -45,6 +53,8 @@ E as seguintes etapas opcionais:
 
 * [Crie uma página inicial com o OneLink Smart Script (opcional](#crie-uma-landing-page-com-o-onelink-smart-script))
 * [Crie uma página inicial com os banners inteligentes do OneLink](#crie-uma-página-inicial-com-os-smart-banners-do-onelink) (opcional)
+
+<div id="set-up-meta-web-ads-integration-in-appsflyer" />
 
 ## Configurar a integração do Meta Web Ads na AppsFlyer
 
@@ -109,6 +119,8 @@ Para definir os postbacks de eventos in-app, faça o seguinte:
    * **Todas as fontes de mídia, incluindo orgânicas**: envie postbacks para eventos atribuídos a qualquer parceiro e eventos orgânicos.
 7. Na coluna **including**, selecione se os eventos serão enviados com os valores de receita. Veja a seção <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#dados-a-incluir-nos-postbacks">Dados a incluir nos postbacks</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Nota**
    >
    > Se você estiver configurando um evento de compra, defina a coluna **including** para **Values and revenue**. Selecionar qualquer outra opção fará com que o postback falhe.
@@ -120,11 +132,15 @@ Para definir os postbacks de eventos in-app, faça o seguinte:
     2. Selecione um aplicativo diferente a partir da lista suspensa.
     3. Repita as etapas de integração para o aplicativo selecionado.
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > Ao enviar eventos S2S para `metaweb_int`, o payload S2S deve incluir os parâmetros `ua` (User Agent) e `ip` (IP address). Esses valores são obrigatórios para a otimização de campanhas via Meta CAPI. A AppsFlyer os inclui automaticamente nos eventos do SDK. Para eventos S2S, os anunciantes devem enviá-los explicitamente. Leia <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-events-api-for-mobile-s2s-mobile">API de eventos de servidor para servidor para mobile</Anchor>.
 
 </Accordion>
+
+<div id="set-up-appsflyer-integration-in-meta-ads" />
 
 ## Configurar a integração da AppsFlyer no Meta Ads
 
@@ -141,6 +157,8 @@ Execute as próximas etapas no Meta Ads Manager.
 3. [Opcional] Se você quiser adicionar um objetivo personalizado às opções acima, faça o seguinte:
    1. No Meta Ads, selecione o evento personalizado que você deseja definir como objetivo da campanha e marque-o como uma ação de conversão em Meta Ads.
    2. Na AppsFlyer, na página de **integração do Meta Web**, em **Postbacks de eventos in-app, mapeie um evento** da AppsFlyer para um evento de parceiro personalizado (na coluna de eventos **mapeados para parceiros**) e nomeie-o com o mesmo nome da ação de conversão no Meta Ads.
+
+      <div id="note-3" />
 
       > 📘 **Nota**
       >
@@ -168,6 +186,8 @@ Execute as próximas etapas no Meta Ads Manager.
 
      Para todos esses casos de uso, crie uma [landing page com um Smart Script](#crie-uma-landing-page-com-o-onelink-smart-script) ou [um Smart Banner](#crie-uma-página-inicial-com-os-smart-banners-do-onelink).
    * **Links de atribuição da AppsFlyer**: O uso de links de atribuição da AF (OneLink, plataforma única ou multiplataforma) é recomendado quando você deseja que o usuário seja redirecionado diretamente para a loja para baixar o aplicativo sem antes visitar uma página inicial.
+
+     <div id="important" />
 
      > 🚧 **Importante!**
      >
@@ -222,15 +242,21 @@ Execute as próximas etapas no Meta Ads Manager.
      https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
      ```
 
+   <div id="note-4" />
+
    > 📘 **Nota**
    >
    > O Meta adiciona `fbclid={{fbclid}}` à URL de destino automaticamente quando o anúncio é clicado
 
 
+   <div id="tip" />
+
    > 👍 **Dica**
    >
    > Para simplificar a análise da campanha, inclua o tipo de campanha (web ou mobile) como um prefixo ou sufixo no nome da campanha (por exemplo, nome-da-campanha\_web)
 
+
+<div id="note-5" />
 
 > 📘 **Atenção**
 >
@@ -246,11 +272,15 @@ Use a seção Rastreamento para selecionar os eventos de conversão promovidos p
 
 [![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Certifique-se de não escolher **Eventos de aplicativos**, pois o Meta reivindicará essas conversões usando a SRN API, o que pode causar desalinhamentos de relatórios e de otimização.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Crie uma landing page com o OneLink Smart Script
 
@@ -286,6 +316,8 @@ Para configurar suas campanhas do Meta Ads, faça o seguinte:
 1. Configure o template para os links de atribuição do OneLink da campanha. Para obter mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#como-criar-templates-do-onelink">Como criar templates do OneLink</Anchor>.
 2. Crie um script inteligente. Para obter mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">Como criar um script inteligente do OneLink</Anchor>.
 
+   <div id="note-6" />
+
    > 📘 **Nota**
    >
    > As instruções abaixo se concentram nas etapas específicas necessárias para configurar uma campanha do Meta Ads com o Smart Script. Para um guia abrangente sobre como configurar campanhas de Smart Script, consulte <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">Como criar um Smart Script do OneLink</Anchor> no artigo de configuração do <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors">OneLink Smart Script V2</Anchor>.
@@ -299,6 +331,8 @@ Para configurar suas campanhas do Meta Ads, faça o seguinte:
      * Versão 2.8.0 e inferior: O parâmetro `fbclid` deve ser mapeado manualmente na seção de **mapeamento de parâmetros de URL** da página do **Smart Script**:
        1. Em **Mapeamento para**, selecione **parâmetro personalizado**.
        2. Em **parâmetro de URL de saída** e **parâmetros de URL de entrada**, insira **fbclid**.
+
+     <div id="note-7" />
 
      > 📘 **Nota**
      >
@@ -327,12 +361,16 @@ Para configurar suas campanhas do Meta Ads com o smart script para páginas de d
      * [Uma demonstração e instruções](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/) para criar uma página inicial multiplataforma.
    * Lembre seu desenvolvedor de incluir o parâmetro de entrada `fbclid` no URL de saída.
 
+     <div id="note-8" />
+
      > 📘 **Nota**
      >
      > Para exibir nos relatórios de dados brutos da AppsFlyer, o `fbclid` parâmetro de entrada também deve ser mapeado (além do parâmetro de saída `fbclid`) para um dos parâmetros de saída. `af_sub[1-5]`
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## Crie uma página inicial com os Smart Banners do OneLink
 
@@ -363,6 +401,8 @@ Para configurar suas campanhas de Smart Banners do Meta Ads, faça o seguinte:
 1. Configure o template para os links de atribuição do OneLink da campanha. Para obter mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#como-criar-templates-do-onelink">Como criar templates do OneLink</Anchor>.
 2. Crie um Smart Banner.
 
+   <div id="note-9" />
+
    > 📘 **Nota**
    >
    > As instruções abaixo se concentram nas etapas específicas necessárias para configurar uma campanha do Meta Ads com Smart Banners. Para obter um guia abrangente sobre como configurar campanhas de Smart Banners, consulte a <Anchor target="_blank" href="/marketers/pt/docs/smart-banners-mobile-web-to-app-for-marketers#configuração">seção de configuração</Anchor> do artigo <Anchor target="_blank" href="/marketers/pt/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners —mobile web-to-app (para profissionais de marketing).</Anchor>
@@ -372,20 +412,28 @@ Para configurar suas campanhas de Smart Banners do Meta Ads, faça o seguinte:
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Veja os dados de atribuição de web-to-app
 
 Embora os eventos de conversão baseados na web sejam enviados para a Meta sob o PID original `metaweb_int`, eles são relatados no dashboard da AppsFlyer e nos relatórios de dados brutos com o PID `Facebook Ads`. Isso se aplica tanto a eventos de conversão primários quanto a eventos de assistência de conversão.
 
 Essa visão unificada permite que você analise a performance de campanhas na web e no app em um só local, incluindo relatórios completos de custos na web e no mobile.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver no dashboard
 
 Todas as atribuições de web-to-app do Meta aparecem sob `Facebook Ads` nos dashboards de Visão Geral e de Atividade. Isso fornece uma visão única e consolidada dos resultados da campanha em várias plataformas. Use filtros e análises padrão para comparar o tráfego do app e da web dentro dos seus dados do Meta Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver em dados brutos e relatórios da API
 
 * **Exportações de dados brutos e respostas da API** incluem o PID `Facebook Ads` no campo `media_source` para a atividade web do Meta. Para verificar os detalhes da configuração da campanha web, consulte o campo `original_url`, que mostra `metaweb_int` como o PID usado durante a criação de campanhas web.
 * **Relatórios de postback** mostram `metaweb_int` como a fonte de mídia original para a qual o postback foi enviado.
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

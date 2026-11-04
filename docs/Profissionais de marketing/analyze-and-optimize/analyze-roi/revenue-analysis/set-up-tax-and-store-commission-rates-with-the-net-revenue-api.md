@@ -34,9 +34,15 @@ A API de Receita Líquida é implementada por meio de duas APIs REST que permite
 
 Para mais informações sobre como a receita líquida é calculada, consulte <Anchor target="_blank" href="/marketers/pt/docs/about-roi360-store-revenue#true-revenue">Receita líquida</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > A receita líquida é exibida nos Relatórios de dados brutos e em My Dashboards como métricas líquidas (Receita líquida, ROI líquido, ROAS líquido, ARPU líquido, Lucro líquido).
+
+<div id="ios" />
+
+<div id="update-tax-rate-rules" />
 
 ## Atualizar regras de alíquota de imposto
 
@@ -67,6 +73,8 @@ Para definir as regras de alíquota de imposto usando a API de Receita Líquida,
    * Os parâmetros e valores que contêm informações sobre quais impostos devem ser calculados, conforme descrito na tabela a seguir.
 3. Peça ao seu programador para seguir as <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-tax-rate-rule">instruções da tax API</Anchor> para criar regras de taxa de imposto. **Atenção:** a API permite um arquivo JSON no corpo da solicitação. <Anchor target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub">Esse arquivo JSON</Anchor> exibe todos os países disponíveis e suas taxas de imposto padrão. O programador pode editá-lo ou usá-lo sem alterações na API.
 
+<div id="tax-rate-api-parameters" />
+
 ### Edite as taxas de impostos usando a Tax API
 
 | Parâmetro | Obrigatório | Observações |
@@ -78,6 +86,8 @@ Para definir as regras de alíquota de imposto usando a API de Receita Líquida,
 | `subdivision` | Não | <ul><li>Para alguns países, pode haver uma subdivisão ou estado adicional.</li><li>Manuseado de acordo com <Anchor target="_blank" href="https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm">os códigos de subdivisão ISO 3166-2.</Anchor></li><li>Deve incluir o código do país e o código da subdivisão.</li><li>Exemplo: US-CA</li></ul> |
 | `postal_code` | Não | <ul><li>String de letras e/ou números</li><li>Exemplo: L4J8E3</li></ul> |
 | `deduction_order` | Não | <ul><li>Enum, que pode ser **0**, **1** ou **2**:<ul><li>0 significa que a comissão da loja é deduzida primeiro da receita bruta e o imposto é deduzido do valor restante.</li><li>1 significa que a taxa é deduzida primeiro da receita bruta, enquanto a comissão da loja é deduzida do valor restante.</li><li>2 significa que tanto o imposto quanto a comissão da loja são deduzidos da receita total.</li></ul></li></ul> |
+
+<div id="set-up-store-commission-rates" />
 
 ## Definir taxas de comissão da loja
 
@@ -91,6 +101,10 @@ Alguns exemplos:
 * A comissão da sua loja muda ao longo do tempo e, como a AppsFlyer não tem visibilidade sobre o status da comissão da sua loja, você precisa atualizar manualmente a taxa aplicada usando a API de Receita Líquida, por exemplo:
   * Aplicar uma comissão reduzida quando seu aplicativo se tornar elegível para uma taxa mais baixa da loja
   * Reverter para a lógica de comissão padrão da loja quando a taxa reduzida não se aplicar mais
+
+<div id="ios::f410adfc" />
+
+<div id="update-store-commission-with-the-net-revenue-api" />
 
 ### Atualize a comissão da loja com a API de Receita Líquida
 

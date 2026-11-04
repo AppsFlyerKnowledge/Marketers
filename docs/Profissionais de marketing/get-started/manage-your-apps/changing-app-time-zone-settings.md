@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** defina ou altere um fuso horário específico do aplicativo para visualizar os dados do aplicativo mais alinhados com seu fuso horário ou com o de seus parceiros de publicidade. Entenda o efeito das mudanças de fuso horário nos relatórios de dados na plataforma da AppsFlyer.
 
+<div id="why-change-the-time-zone" />
+
 ## Por que alterar o fuso horário?
 
 O fuso horário padrão para novos aplicativos é UTC (UTC +0). Se o fuso horário do aplicativo for alterado, isso afetará a forma como os dados aparecem na plataforma.
@@ -36,6 +38,8 @@ O fuso horário padrão para novos aplicativos é UTC (UTC +0). Se o fuso horár
 
 * Agências: visualize os dados usando o fuso horário definido pelo proprietário do aplicativo. As agências não podem definir o fuso horário.
 * Ad networks: visualize dados usando UTC em todos os momentos, independentemente do fuso horário definido pelo anunciante.
+
+<div id="changing-the-time-zone" />
 
 ## Alterando o fuso horário
 
@@ -51,6 +55,8 @@ The account admin can make time-zone changes. As alterações podem ser feitas u
 6. Clique em **Salvar configurações**.  
    A mudança entra em vigor no início do dia seguinte às 00:00 UTC.
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > * October 24 at 22:00, the time zone is changed.
@@ -62,9 +68,13 @@ Depois de alterar o fuso horário:
 * Os relatórios agregados terão algumas anomalias no dia e no dia seguinte à alteração do fuso horário.
   * Cost data is duplicated on the day of the change.
 
+<div id="aggregate-data" />
+
 #### Dados agregados
 
 <table><thead><tr><th rowspan="2">Método de relatório </th><th colspan="3">Intervalo de datas do relatório</th></tr><tr><th>Começa e termina <span>antes</span> da alteração </th><th>Começa e termina <span>após</span> a alteração </th><th>Começa antes e termina após a alteração</th></tr></thead><tbody><tr><td>Meus dashboards</td><td><p>Não compatível Não compatível Os dados ficam disponíveis somente em UTC quando o fuso horário do dashboard é alterado.</p></td><td>Fuso horário atual</td><td>Os dados são apresentados somente para datas após a alteração.</td></tr><tr><td>Painel de Visão geral</td><td>Fuso horário anterior</td><td>Fuso horário atual</td><td><p>Divisão:</p><ul><li>Antes da alteração: UTC</li><li>Após a alteração: fuso horário atual</li></ul></td></tr><tr><td>Eventos e painéis personalizados</td><td>UTC</td><td>Fuso horário atual</td><td><p>Divisão:</p><ul><li>Antes da alteração: UTC</li><li>Após a alteração: fuso horário atual</li></ul></td></tr><tr><td>Painel de atividades</td><td>Fuso horário anterior</td><td>Fuso horário atual</td><td>UTC</td></tr><tr><td>Coorte, retenção, tabela dinâmica</td><td>UTC</td><td>Fuso horário atual (1)</td><td>UTC</td></tr><tr><td>Master API</td><td colspan="3"><ul><li>Predefinição: UTC</li><li>Option: <a href="./pull-api-aggregate-data#aggregate-report-uri-and-parameters" target="_blank">Select the time zone when you pull data</a> </li></ul></td></tr><tr><td colspan="4">Observações:<br/>(1) Todos os aplicativos devem usar o mesmo fuso horário específico do aplicativo em um determinado período de relatórios. Caso contrário, o fuso horário será revertido para UTC.</td></tr></tbody></table>
+
+<div id="raw-data-reports" />
 
 #### Relatórios de dados brutos
 

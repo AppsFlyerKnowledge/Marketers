@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
+<div id="setting-up-line-ads-platform" />
+
 ## Configuração da plataforma LINE Ads
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -46,13 +48,19 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="note" />
+
 > 📘 **Observação:**
 >
 > Como uma all-installs network, a LINE prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER canal, inclusive canais orgânicos. Para fazer isso, selecione **eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação para a LINE. Essa configuração só pode ser feita pelo proprietário da conta
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -64,9 +72,13 @@ A plataforma LINE Ads se conecta à AppsFlyer através de LINE\_Ad\_account\_id 
 * Insira seu **LINE\_Ad\_account\_id** exclusivo e seu **LINE\_Ad\_app\_ID**.   
   Consulte a <Anchor target="_blank" href="https://lineforbusiness.com/th-en/service/line-ads/manual#Tracking:~:text=Tracking%20app%20conversions">documentação do Line Ads sobre como criar um ID empresarial</Anchor>.
 
+<div id="connect-multiple-accounts-and-apps" />
+
 #### Conecte várias contas e aplicativos
 
 Você pode conectar várias contas e aplicativos do Line Ads à AppsFlyer adicionando manualmente um parâmetro de ID da conta ou de ID do aplicativo a um link de atribuição, após a criação dele.
+
+<div id="note-1" />
 
 > 📘 **Observação:**
 >
@@ -83,6 +95,8 @@ Você pode conectar várias contas e aplicativos do Line Ads à AppsFlyer adicio
 1. Configure um ou mais <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">links de atribuição</Anchor>.
 2. Adicione a cada link de atribuição um parâmetro de ID da conta e um parâmetro de ID do aplicativo, usando letras minúsculas. Veja a parte destacada no exemplo abaixo.
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Exemplo de link de atribuição com parâmetros de ID da conta e ID do aplicativo:
@@ -91,12 +105,16 @@ Você pode conectar várias contas e aplicativos do Line Ads à AppsFlyer adicio
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a LINE Ads após instalações e reengajamentos dos usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à LINE Ads.  
 Selecione "**Eventos atribuídos a qualquer parceiro ou eventos orgânicos**" para que toda a base de usuários esteja disponível para o parceiro.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -117,6 +135,8 @@ Nessa seção, você pode mapear seus eventos da AppsFlyer com a LINE Ads via po
 | **SDK Event Name (Nome do evento do SDK)** | O nome do evento, conforme recebido pela AppsFlyer do SDK integrado ao seu aplicativo ou de eventos de servidor para servidor.  <br />**Dica** - não está encontrando o evento desejado na lista? Certifique-se de ativar o evento em um dispositivo com uma instalação não orgânica e verifique novamente. |
 | **Partner Event Identifier (identificador de evento do parceiro)** | O nome ou ID exclusivo de cada evento, conforme definido na LINE Ads.  <br />Obtenha o ID de evento correspondente da LINE Ads e configure-o no campo de texto. |
 | **Send Revenue (Enviar receita)** | **Quando desmarcado** - todos os parâmetros de evento in-app avançado são enviados para o parceiro, exceto o parâmetro de receita, que está contido no parâmetro **af\_revenue**.  <br />**Quando marcado** - todos os parâmetros, incluindo o valor da receita (caso exista no evento), são enviados. |
+
+<div id="custom-in-app-events-mapping" />
 
 ### Mapeamento de eventos in-app personalizados
 

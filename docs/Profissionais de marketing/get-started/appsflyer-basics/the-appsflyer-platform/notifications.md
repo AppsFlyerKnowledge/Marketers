@@ -24,12 +24,18 @@ x-zendesk:
 
 Você pode receber notificações por e-mail quando certos eventos ocorrerem na sua conta. Nas suas **preferências de notificação**, você pode optar por receber ou não essas notificações.
 
+<div id="accessing-and-configuring-notification-preferences" />
+
 ## Configurar preferências de notificação
+
+<div id="to-access-notifications" />
 
 ### Para acessar notificações
 
 * Na barra superior, abra o menu da conta (menu suspenso no endereço de e-mail) > **Notificações por e-mail.**
 * No ícone de sininho dentro da plataforma, clique em > **Ícone de configurações.**
+
+<div id="configuring-notifications" />
 
 ### Configurando notificações
 
@@ -38,6 +44,8 @@ Para receber um aviso, ative-o na lista de notificações disponíveis.
 Para parar de recebê-lo, desative-o.
 
 Atenção: Algumas notificações estão disponíveis apenas por e-mail. A aba de notificação apenas por e-mail mostra as [configurações](/docs/notifications#notificações-somente-por-e-mail) de notificação.
+
+<div id="what-notifications-can-i-receive" />
 
 ## Quais notificações posso receber?
 
@@ -59,6 +67,8 @@ Para receber uma notificação específica, ela deve estar:
 * Disponível para você, com base nas suas permissões de usuário. Se uma notificação estiver relacionada a uma ferramenta ou recurso ao qual você não tem permissões de uso, a opção fica desativada.
 
   *  Por exemplo, se você não tiver permissões para adicionar ou editar parceiros integrados, a opção de ativar ou desativar uma notificação relacionada à configuração de parceiros integrados fica desativada.
+
+<div id="when-will-i-receive-notifications" />
 
 ## Quando vou receber as notificações?
 
@@ -86,6 +96,8 @@ Resultado:
 
 </Accordion>
 
+<div id="where-will-i-receive-notifications" />
+
 ## Quando vou receber as notificações?
 
 As notificações podem ser recebidas no [ícone de sininho](/docs/notifications#bell-notification) [e-mail](/docs/notifications#email-notification) ou [Slack](/docs/notifications#slack-notification). 
@@ -108,9 +120,13 @@ As notificações são enviadas para o e-mail associado à sua conta da AppsFlye
 
 Algumas notificações estão disponíveis apenas por e-mail. Essas configurações de notificação podem ser encontradas na aba **Notificações somente por e-mail**.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Todos os e-mails de notificação da AppsFlyer são enviados por [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
+
+<div id="email-only-notifications" />
 
 #### Notificações somente por e-mail
 

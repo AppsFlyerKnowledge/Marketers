@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** Meça a qualidade dos seus usuários ao longo da jornada do usuário registrando estes eventos in-app sugeridos para seu aplicativo de apostas esportivas.
 
+<div id="-sports-betting" />
+
 ## <Image alt="soccer_ball.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Apostas esportivas
 
 Os aplicativos de apostas esportivas permitem que os apostadores façam apostas em diversos mercados esportivos. Os eventos típicos que sugerimos registrar são depósitos, apostas realizadas e saques.
@@ -33,6 +35,8 @@ Registrar eventos pode ajudar a determinar:
 * Receita gerada por meio das apostas
 * Que tipos de apostas geram a menor ou a maior receita
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Certifique-se de ler <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#configurando-eventos-in-app">as instruções</Anchor> para os profissionais de marketing sobre a implementação de eventos in-app.
@@ -43,6 +47,8 @@ Registrar eventos pode ajudar a determinar:
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -85,6 +91,8 @@ Quando o usuário conclui o processo de cadastro e o registro é confirmado pelo
 | af\_registration\_method | O tipo de método de cadastro | email, facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

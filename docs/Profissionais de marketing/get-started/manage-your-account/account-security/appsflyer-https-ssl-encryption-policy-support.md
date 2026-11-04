@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Resumo:** Saiba mais sobre as cifras SSL de saída compatíveis com a AppsFlyer.
 
+<div id="introduction" />
+
 ## Introdução
 
 As APIs da AppsFlyer usam protocolos seguros.
@@ -40,6 +42,8 @@ O perfil de segurança SSL da AppsFlyer oferece suporte aos seguintes protocolos
 * TLS V1.2+
 
 A AppsFlyer oferece suporte a diferentes cifras para mensagens de saída, conforme detalhado abaixo.
+
+<div id="outgoing-messages-appsflyer-as-client" />
 
 ## Mensagens de saída: AppsFlyer como cliente
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Em resumo:** Use parâmetros de URL consistentes e completos nos links das landing pages do seu site para obter o melhor nível de granularidade da campanha e, ao mesmo tempo, manter a atribuição precisa na mensuração de performance web.
 
+<div id="about-url-attribution-parameter-classes" />
+
 ## Sobre as classes de parâmetros de atribuição de URL
 
 A AppsFlyer lê os parâmetros de campanha da URL da sua landing page (o link em que o usuário clica) e os usa para atribuir sessões e eventos à **fonte de mídia**, à **campanha** e, quando disponível, a níveis mais profundos da hierarquia, como **conjunto de anúncios** e **anúncio**.
@@ -36,6 +38,8 @@ Os parâmetros de URL podem pertencer a uma de duas classes: PID e UTM.
 * A classe UTM inclui os parâmetros UTM padrão.
 
 Para mais informações sobre como a Mensuração de Performance Web processa parâmetros de URL, consulte <Anchor target="_blank" href="/marketers/pt/docs/about-traffic-source-resolution">Sobre a resolução da fonte de tráfego</Anchor>.
+
+<div id="supported-pid-and-utm-parameters" />
 
 ### Parâmetros PID e UTM compatíveis
 
@@ -54,6 +58,8 @@ A mensuração de performance web oferece suporte aos seguintes parâmetros.
 | 9 | `utm_medium` | Tipo de mídia | UTM | Sem | `media_type` |
 | 10 | `utm_campaign` | Campaign name | UTM | Yes | `campaign_name` |
 
+<div id="choose-the-right-attribution-parameters" />
+
 ## Escolha os parâmetros de atribuição certos
 
 A AppsFlyer avalia os parâmetros de URL de forma independente para cada campo de relatório (como canal de mídia ou campanha), usando uma cascata de prioridade específica. Essa abordagem permite usar a atribuição da AppsFlyer junto com outras ferramentas, como o Google Analytics, usando a **classe PID** (nativa da AppsFlyer) e a **classe UTM** (marketing padrão) na mesma URL.
@@ -65,6 +71,8 @@ A Mensuração de Performance Web verifica a ordem de prioridade de cada campo i
 <Accordion title="Cenário A. URL somente com a classe PID (relatórios da AppsFlyer)">
 
 Use a classe PID quando os relatórios da AppsFlyer forem seu objetivo principal.
+
+<div id="example" />
 
 #### Exemplo
 
@@ -81,6 +89,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 <Accordion title="Cenário B. URL apenas com a classe UTM (reserva)">
 
 Se `pid` estiver ausente, o AppsFlyer recorre à classe UTM.
+
+<div id="example-1" />
 
 #### Exemplo
 
@@ -100,6 +110,8 @@ O AppsFlyer permite incluir parâmetros de classes diferentes (por exemplo, PID 
 
 O AppsFlyer processa campos de atribuição, como canal de mídia e campanha, de forma independente. Para cada campo específico, o sistema segue uma cascata de prioridade para determinar qual valor registrar. Em geral, a **classe PID** tem precedência sobre a **classe UTM** para esse campo específico.
 
+<div id="example-1-overlapping-parameters" />
+
 #### Exemplo 1: Parâmetros sobrepostos
 
 ```http
@@ -109,6 +121,8 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 * **Canal de mídia:** o AppsFlyer detecta `pid` e `utm_source`. Seguindo a cascata de prioridade desse campo, ele registra `facebook_ads`.
 * **Campanha:** o AppsFlyer detecta `c` e `utm_campaign`. Seguindo a cascata de prioridade desse campo, ele registra `summer_sale`.
 * **Resultado:** o AppsFlyer usa os valores da classe PID, que têm prioridade mais alta, enquanto as ferramentas externas ainda podem ler os valores de UTM.
+
+<div id="example-2-mixed-parameter-classes" />
 
 #### Exemplo 2: Classes de parâmetros mistas
 
@@ -121,6 +135,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **Resultado:** o AppsFlyer atribui o evento com sucesso usando valores de ambas as classes, porque cada campo é resolvido de forma independente.
 
 </Accordion>
+
+<div id="other-best-practices" />
 
 ## Outras Melhores práticas
 

@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## Sobre bundles de marca
 
 As marcas operam em um ecossistema que inclui tanto propriedades da web como do mobile. Como anunciante, ter o quadro completo da performance da marca em todas as plataformas–web e mobile–é necessário. No PBA, os bundles de marcas consolidam os dados de propriedades mobile e da web em uma única entidade para fins de análise e acesso aos dados brutos. Etapa 1:
+
+<div id="what-is-a-web-app" />
 
 > 📘 **O que é um aplicativo na web?**
 >
@@ -45,6 +49,8 @@ As marcas operam em um ecossistema que inclui tanto propriedades da web como do 
 * Os aplicativos não podem ser excluídos de um bundle ou movidos de um bundle para outro sem [excluir o bundle original](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
   * Na exclusão do bundle, a AppsFlyer deixa de atribuir dados de PBA para o bundle, e o acesso aos seus dados históricos não fica mais disponível.
 
+<div id="accessing-brand-bundles" />
+
 ## Acessando bundles de marca
 
 Acesse a página **Bundles de marca** para gerenciar seus bundles de marca e suas configurações:
@@ -52,6 +58,8 @@ Acesse a página **Bundles de marca** para gerenciar seus bundles de marca e sua
 * Na AppsFlyer, no menu superior, selecione **Meus aplicativos** > **Exibir bundles de marca.**  
                            - ou -
 * Na AppsFlyer, no menu lateral, selecione **Configurações** > **Bundles de marca**.
+
+<div id="managing-brand-bundles" />
 
 ## Gerenciamento de bundles de marca
 
@@ -85,6 +93,8 @@ Antes de continuar, verifique se todos os aplicativos que você deseja incluir n
      * Os aplicativos mobile não são necessários para criar um bundle.
      * Não há limite para o número de aplicativos mobile que você pode incluir em um bundle.
 4. Clique em Criar bundle.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -161,6 +171,8 @@ Um mecanismo de exclusão de domínio, parte das <Anchor target="_blank" href="/
 
 </Accordion>
 
+<div id="faq" />
+
 ## Perguntas frequentes
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -193,6 +205,8 @@ Para alterar o bundle no qual um aplicativo está incluído, exclua o bundle ori
 
 <Accordion title="O que acontece se eu excluir um bundle?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### FAQ - o que acontece se eu excluir um bundle
 
 Se você excluir um bundle:
@@ -220,6 +234,8 @@ Se você excluir um bundle:
 Você provavelmente não se inscreveu no PBA. Por favor, entre em contato com seu CSM ou envie uma mensagem para [hello@appsflyer.com](mailto:hello@appsflyer.com) para atualizar seu pacote.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -27,15 +27,21 @@ x-zendesk:
 ---
 > **Resumo:** Obtenha dados detalhados de atribuição de busca orgânica para otimizar as conversões orgânicas. <Anchor target="_blank" href="/marketers/pt/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Veja nosso método atualizado de atribuição de busca orgânica</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Recomendamos implementar nosso <Anchor target="_blank" href="/marketers/pt/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">método atualizado de atribuição de busca orgânica</Anchor>.
+
+<div id="organic-search-attribution" />
 
 ## Atribuição de pesquisa orgânica
 
 A atribuição de busca orgânica é uma solução de atribuição inovadora que permite que clientes da AppsFlyer atribuam à busca orgânica as aberturas do app mobile de usuários que já têm o seu aplicativo instalado.
 
 Use a atribuição de busca orgânica para atribuir esses usuários existentes que reengajam com seu aplicativo após uma pesquisa orgânica na web.
+
+<div id="flow" />
 
 #### FLUXO
 

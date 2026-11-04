@@ -23,15 +23,21 @@ x-zendesk:
 ---
 > **Resumo:** Descubra como criar fontes de dados de mensuração e como fornecer acesso a elas de uma forma que possa ser digerida para atribuição.
 
+<div id="overview" />
+
 ## Visão geral
 
 A primeira etapa na configuração da mensuração é preparar os três inputs que a alimentam: conversões, engajamentos e mapeamento de campanhas. Esses inputs devem ser preparados com base no esquema predefinido ou na estrutura do evento, dependendo do modo de fornecimento de dados: eventos in-app ou arquivos fonte personalizados.
 
 Quando você utiliza arquivos fonte personalizados, o trabalho de atribuição é acionado automaticamente quando as pastas de conversão e de registro de engajamento necessárias são enviadas para a nuvem. Para o modo de evento in-app, o trabalho é acionado quando os eventos in-app relevantes são selecionados.
 
+<div id="prepare-in-app-events" />
+
 ## Prepare a lista de eventos in-app
 
 Você pode enviar dados de conversão e engajamento através de eventos in-app enviados pelo SDK da AppsFlyer integrado ao seu aplicativo.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -112,6 +118,8 @@ Para fornecer dados de conversão e engajamento através de eventos in-app, conf
 
 </Accordion>
 
+<div id="prepare-custom-source-files" />
+
 ## Preparar arquivos fonte personalizados
 
 Se você estiver executando uma [campanha on-site](#onsite-and-offsite-campaign-measurement), pode usar arquivos fonte personalizados como fonte das suas conversões e engajamentos, usando o esquema descrito nas tabelas abaixo.
@@ -124,11 +132,15 @@ Use o esquema na tabela abaixo para criar um arquivo fonte de conversão persona
 O esquema de conversão é unitário para os tipos de campanha off-site e on-site e para os diferentes parceiros de mídia.   
 O esquema de conversão é unitário para os tipos de campanha off-site e on-site e para os diferentes parceiros de mídia.
 
+<div id="media-partners" />
+
 #### Parceiros de mídia selecionados:
 
 **G**: Google
 
 **M**: Meta
+
+<div id="background-colors" />
 
 #### Cores de fundo:
 
@@ -149,6 +161,8 @@ O esquema de conversão é unitário para os tipos de campanha off-site e on-sit
 <Accordion title="Necessário na fonte de dados personalizada">
 
 Use o esquema abaixo para criar a fonte de dados de engajamento.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -181,9 +195,13 @@ Use o esquema abaixo para criar a fonte de dados de engajamento.
 
 Para mais informações sobre como preparar fontes e enviá-las para a sua nuvem, consulte a seção [Criar e conectar fontes de dados personalizadas](#criar-e-conectar-fontes-de-dados-personalizadas).
 
+<div id="prepare-campaign-mapping-source" />
+
 ## Prepare a fonte de mapeamento da campanha
 
 A fonte dos dados de mapeamento da campanha é um arquivo fonte de dados personalizado, que utiliza o esquema descrito na tabela abaixo.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -206,6 +224,8 @@ Use o esquema abaixo para criar a fonte de mapeamento da campanha.
 </Accordion>
 
 Para mais informações sobre como preparar arquivos fonte e enviá-los para a sua nuvem, consulte a seção [Criar e conectar fontes de dados personalizadas](#criar-e-conectar-fontes-de-dados-personalizadas).
+
+<div id="attribution-job-ingestion-flow" />
 
 ## Fluxo de ingestão de jobs de atribuição
 
@@ -258,6 +278,8 @@ Os dados de conversão e engajamento podem ser obtidos de eventos in-app, fontes
 Ao configurar eventos in-app para conversões, engajamentos ou ambos, é necessário especificar o App ID e o nome do evento de conversão ou engajamento. No final do dia, o job de atribuição seleciona todos os eventos com o nome especificado e o App ID que tem a mesma data de evento que o dia da conversão.
 
 </Accordion>
+
+<div id="create-and-connect-custom-data-sources" />
 
 ## Criar e conectar fontes de dados personalizadas
 

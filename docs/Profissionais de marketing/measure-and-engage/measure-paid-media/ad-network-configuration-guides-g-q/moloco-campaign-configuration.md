@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1" width="149px" />
 
+<div id="setting-up-moloco" />
+
 ## Configurando a MOLOCO
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -42,6 +44,8 @@ A janela de configuração da MOLOCO inclui 3 abas ativas: integração, link de
 
 Para obter uma descrição detalhada do header da Janela de Configuração de Parceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -53,13 +57,19 @@ Para obter uma descrição detalhada do header da Janela de Configuração de Pa
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma network de todas as instalações, a MOLOCO prefere receber postbacks de todas as novas instalações do seu Aplicativo de qualquer fonte, incluindo orgânica. Para fazer isso, selecione **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação para a MOLOCO.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -67,12 +77,16 @@ Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro
 
 Ative esta opção se quiser atribuir instalações view-through da MOLOCO. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a MOLOCO após instalações e reengajamentos de usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à MOLOCO.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada à MOLOCO.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -91,6 +105,8 @@ Nesta seção, você pode mapear seus eventos da AppsFlyer com a MOLOCO por meio
 | **mapeado para evento do parceiro** | O nome exclusivo ou ID de cada evento, conforme definido pelo parceiro. As configurações de mapeamento possíveis são:<ul><li>**Campo de texto:** obtenha o ID do evento correspondente do parceiro.</li><li>**Caixa suspensa:** selecione o evento AppsFlyer predefinido mais adequado.</li><li>**Sem alterações**: envie os eventos como eles estiverem, sem mapeamento de nomes.</li></ul> |
 | **para usuários de** | Selecione a opção de envio para o evento:<ul><li>**Somente este parceiro**: enviar postbacks somente quando este evento for atribuído a este parceiro.</li><li>**Todas as fontes de mídia, incluindo orgânicas**: envie postbacks para eventos atribuídos a qualquer parceiro, bem como eventos orgânicos. De acordo com Unity Ads, esta opção é recomendada.</li></ul> |
 | **incluindo** | <ul><li>**Nenhum dado (padrão)**: enviar somente o evento em si sem o valor do evento.</li><li>**Valores e receita**: envie todos os parâmetros do evento, **incluindo** o valor da receita (se existir no evento). De acordo com Unity Ads, esta opção é recomendada.</li><li>**Valores sem receita**: enviar todos os parâmetros **excluindo** o valor da receita.</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -138,6 +154,8 @@ A integração da receita publicitária não está disponível para este parceir
 <Accordion title="Aba permissões">
 
 Nesta aba, você pode selecionar as permissões a serem concedidas à MOLOCO, independentemente de o parceiro atuar como ad network, agência ou ambos. Observe que, mesmo que a atribuição esteja desativada para a MOLOCO, a aba de permissões está ativa e você pode conceder controle à MOLOCO.
+
+<div id="-ad-network-permissions" />
 
 #### ![MOLOCO_permissions.png](https://files.readme.io/f443306f1b56197709308c0a33e436dc26adc7a0e80e6c2887edc63a5697b6d4-360002616197.png) Permissões da rede de anúncios
 

@@ -34,9 +34,13 @@ A configuração permite que a AppsFlyer atribua conversões a uma agência a pa
 
 Antes que a Agência possa iniciar o processo, o anunciante deve primeiro configurar a integração do Google Ads. Para mais informações, clique <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers">aqui</Anchor>.
 
+<div id="enabling-agency-attribution-of-google-ads" />
+
 ## Habilitar a atribuição de agência do Google Ads
 
 A AppsFlyer oferece suporte para configurações de agência com o Google Ads. É essencial que o anunciante e a agência tenham contas separadas no Google Ads para permitir que a AppsFlyer atribua os dados corretamente.
+
+<div id="setting-up-google-ads-attribution-for-agencies" />
 
 ## Configurar a atribuição do Google Ads para agências
 
@@ -157,11 +161,15 @@ Uma agência pode configurar vários IDs de cliente do Google Ads, se necessári
 
 4. Clique em ***Salvar***.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Importe as primeiras ações de abertura e ações in-app para o Google Ads para começar a contar as conversões no Google Ads e no seu dashboard da AppsFlyer.
 >
 > Para poder importar, você deve iniciar o aplicativo e realizar seus eventos in-app mapeados pelo menos uma vez.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -177,6 +185,8 @@ Uma agência pode configurar vários IDs de cliente do Google Ads, se necessári
 
 (**Google Ads** **somente administrador)**
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Para que o Google Ads registre suas novas conversões, **você precisa iniciar o aplicativo e realizar seus eventos in-app mapeados** pelo menos uma vez. Para testar aplicativos iOS, você deve coletar o IDFA para ver o evento. Pode levar até 6 horas para que os eventos de conversão sejam adicionados à fila. Depois de adicionados, você pode importá-los e as novas conversões mudam de status de “Sem conversão recente” para “registrando conversão".
@@ -188,6 +198,8 @@ Uma agência pode configurar vários IDs de cliente do Google Ads, se necessári
 3. Selecione **App** na lista de tipos de conversão, depois selecione **Analytics de app de terceiros** e clique em **Continuar**.  
    [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. Marque a caixa ao lado de **first\_open** em todos os seus aplicativos e para cada evento que você quiser importar.
+
+   <div id="note-1" />
 
    > 📘 **Observação**
    >
@@ -202,6 +214,8 @@ Uma agência pode configurar vários IDs de cliente do Google Ads, se necessári
    [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. Parabéns! Agora você está mensurando campanhas mobile do Google Ads com a AppsFlyer!
 
+<div id="note-2" />
+
 > 📘 **Observação**
 >
 > Certifique-se de que sua configuração para "incluir em conversões" esteja alinhada com os seus objetivos de campanha no Google Ads. Para mais informações, consulte seu representante do Google ou a documentação do Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">aqui</Anchor>.
@@ -213,6 +227,8 @@ Uma agência pode configurar vários IDs de cliente do Google Ads, se necessári
 <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#configuração-da-atribuição-do-google-ads-para-anunciantes">Clique aqui</Anchor> para assistir ao vídeo "Configurando a Atribuição do Google Ads para Anunciantes".
 
 Para obter detalhes sobre como os anunciantes podem atribuir contas do Google Ads de várias agências/MCC, clique <Anchor target="_blank" href="/marketers/pt/docs/recording-multiple-agency-mcc-google-ads-accounts">aqui</Anchor>.
+
+<div id="agencies-collecting-cost-clicks-and-impression-data" />
 
 ## Agências: coleta de dados de custo, cliques e impressão
 

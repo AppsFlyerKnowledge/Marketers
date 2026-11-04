@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo:** considere as funcionalidades adicionais do SDK que estão disponíveis e trabalhe com seu desenvolvedor para implementar APIs, como métrica de desinstalação, atribuição de convite do usuário, notificações por push e configurações de privacidade.
 
+<div id="additional-attribution-methods" />
+
 ## Métodos de atribuição adicionais
 
 Considere esses métodos de atribuição adicionais se você planeja mensurar TV, desinstalações ou aplicativos pré-instalados.
@@ -60,6 +62,8 @@ Com a AppsFlyer, você pode atribuir facilmente instalações de aplicativos pr�
 
 </Accordion>
 
+<div id="sessions" />
+
 ## Sessões
 
 Avalie o engajamento do usuário com seu aplicativo contando o número de sessões do usuário durante um determinado período.
@@ -81,6 +85,8 @@ Definir um **valor alto para o tempo personalizado entre as inicializações p
 Você pode <Anchor target="_blank" href="/marketers/pt/docs/measure-sessions#session-reporting-by-the-app-sdk">reportar manualmente as sessões do usuário</Anchor>. Isso pode ser útil para aplicativos utilitários executados em segundo plano.
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## Mídias próprias
 
@@ -158,6 +164,8 @@ A documentação do desenvolvedor está disponível da seguinte forma:
 **Dica!** <Anchor target="_blank" href="/marketers/pt/docs/convert-your-mobile-web-visitors-to-app-users#soluções-de-atribuição">O OneLink Smart Script</Anchor> pode ajudar os proprietários de aplicativos a converter visitantes do site em usuários do aplicativo.
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## Privacidade do usuário
 

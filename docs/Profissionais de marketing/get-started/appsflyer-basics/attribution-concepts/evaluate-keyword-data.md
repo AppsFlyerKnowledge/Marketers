@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **Resumo:** Obtenha dados detalhados de palavras-chave que permitem ver quais termos de pesquisa são mais populares, para que você possa otimizar as conversões orgânicas.
 
+<div id="keyword-data" />
+
 ## Dados de palavras-chave
 
 A busca orgânica é uma fonte de tráfego valiosa para seus aplicativos. Usuários orgânicos não incurrem em custos de aquisição e geralmente estão entre os grupos mais engajados.
 
 Com algumas alterações na página do seu aplicativo, é possível aumentar a quantidade de novas instalações orgânicas. Para otimizar as buscas orgânicas, você precisa obter dados de palavras-chave orgânicas para seu aplicativo.
 
+<div id="ios-keywords" />
+
 ### palavras-chave iOS
 
 Se você trabalha com Apple Search Ads, pode obter dados detalhados de palavras-chave para seus usuários não orgânicos atribuídos ao Apple Search Ads. No iOS, os dados de palavras-chave orgânicas não estão disponíveis.
+
+<div id="android-keywords" />
 
 ### Palavras-chave do Android
 
@@ -47,9 +53,13 @@ Espere que menos de 1% dos usuários orgânicos do Android sigam este funil e te
 
 Em outros cenários, o Google não compartilha dados de palavras-chave orgânicas. Por exemplo, os usuários que buscam no Google Play não têm dados orgânicos de palavras-chave.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Esta limitação é aplicada pelo Google a todos os fornecedores externos, incluindo todos os fornecedores de atribuição.
+
+<div id="using-thekeyworddata" />
 
 ### Usando os dados da palavra-chave
 
@@ -61,6 +71,8 @@ Os dados de palavras-chave orgânicas são encontrados no seguinte:
   Vá para os relatórios de Pivot, Retenção e Coorte e agrupe por palavras-chave.  
   Compare a qualidade dos usuários orgânicos com base em suas palavras-chave.
 * mensagens da <Anchor target="_blank" href="/marketers/pt/docs/push-api-streaming-raw-data">Push API</Anchor>
+
+<div id="testing-organickeyworddata" />
 
 ### Testando dados de palavras-chave orgânicas
 

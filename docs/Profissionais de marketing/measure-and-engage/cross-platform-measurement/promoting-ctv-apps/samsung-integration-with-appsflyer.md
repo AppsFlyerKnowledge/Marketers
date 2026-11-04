@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Integre seu aplicativo Samsung Connected TV (CTV) com a AppsFlyer para receber dados de atribuição e eventos para suas campanhas na Samsung.
 
+<div id="about-samsung-ctv-attribution" />
+
 ## Sobre a atribuição da Samsung CTV
 
 O Samsung Tizen para streaming funciona em todas as TVs da Samsung.
@@ -35,9 +37,13 @@ A integração da Samsung API é compatível com:
 * Samsung Smart TVs.
 * Atribuição de CTV para CTV e registro de eventos, o que significa que a atribuição e o registro ocorrem no dispositivo Samsung do usuário.
 
+<div id="samsung-attribution-flow" />
+
 ### Fluxo de atribuição da Samsung
 
 ![[CONFIRM: Diagrama do fluxo de atribuição de CTV da Samsung, mostrando dados de instalação, sessão e eventos in-app sendo movidos do aplicativo Samsung para a AppsFlyer via API S2S ou SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## Procedimentos de integração
 
@@ -50,6 +56,8 @@ A tabela abaixo lista as etapas necessárias para integrar um app da Samsung CTV
 | Integração de parceiros | Adicione a Samsung como uma ad network (parceiro integrado) na AppsFlyer.<ol><li><Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#a-activate-partner">Ativar parceiro</Anchor></li><li>[Opcional] Ative a <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#e-install-attribution">**atribuição de view-through**</Anchor>.</li></ol> | Marketer |
 | Configuração do OneLink | <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprenda a criar links de atribuição direta</Anchor> | Marketer |
 | Configuração de relatórios/visualização de dados | <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidade-de-dados">Saiba mais sobre a disponibilidade de dados em dashboards e relatórios</Anchor> | Técnico de marketing/engenheiro de dados |
+
+<div id="traits-and-limitations" />
 
 ## Características e Limitações
 

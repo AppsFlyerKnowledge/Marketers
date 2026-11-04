@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **Resumo:** a Liquid, parceira integrada da AppsFlyer, automatiza suas campanhas e processos sem a necessidade de acionar sua equipe de TI. O mecanismo de regras inteligentes deles atua com base no comportamento do usuário e em análises avançadas.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-liquid" />
 
 ## Configurando a Liquid
 
@@ -50,9 +54,13 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -62,6 +70,8 @@ A Liquid se conecta ao AppsFlyer por meio de um token de API exclusivo. Se você
 
 [![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
 
+<div id="obtaining-the-api-token" />
+
 ### Como obter o token de API
 
 Você pode encontrar o token de API fazendo login no dashboard da Liquid.
@@ -69,6 +79,8 @@ Você pode encontrar o token de API fazendo login no dashboard da Liquid.
 * Clique no ícone **Configurações**
 * Copie o token da API de produção
 * Insira o APP\_TOKEN que você recebeu da Liquid
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 

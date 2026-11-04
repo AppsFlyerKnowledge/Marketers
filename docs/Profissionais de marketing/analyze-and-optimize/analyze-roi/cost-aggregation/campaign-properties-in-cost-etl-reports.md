@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** saiba mais sobre as propriedades da campanha e como elas são exibidas nos dados de Cost ETL da AppsFlyer.
 
+<div id="about-campaign-properties" />
+
 ## Sobre as propriedades da campanha
 
 As propriedades da campanha são um grupo especial de dimensões que representam várias configurações de uma campanha de anúncios, incluindo o objetivo da campanha, tipo de bid e valor do bid. Essas são configurações que você normalmente visualiza e edita no dashboard da ad network, mas a AppsFlyer extrai as dimensões das propriedades da campanha e disponibiliza os dados no Cost ETL, assim como você visualiza outras dimensões.

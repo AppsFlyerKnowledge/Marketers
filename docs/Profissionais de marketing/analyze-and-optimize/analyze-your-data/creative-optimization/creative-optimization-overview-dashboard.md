@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## Sobre o dashboard de visão geral para otimização de criativos
 
 Os dashboards de <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide">**otimização de criativos**</Anchor> permitem que você mensure a performance dos seus criativos, mostrando todos os seus assets de todos os canais de mídia em um só lugar. Analise sua performance por dimensões em diversas campanhas e canais, acessando insights críticos antes de planejar, selecionar e produzir seu próximo conjunto de criativos.
@@ -43,11 +45,15 @@ Use o dashboard para analisar seus dados em diferentes gráficos e acessar uma t
 * Acompanhe a performance dos criativos ao longo do tempo.
 * E mais.
 
+<div id="get-started" />
+
 ## Iniciar
 
 Se você ainda não configurou a otimização de criativos, você pode encontrar instruções sobre como fazer isso <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide#get-started">aqui</Anchor>. Uma vez configurados, os dashboards de otimização de criativos são atualizados <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide#get-started">diariamente</Anchor>.
 
 **Atenção:** A forma como as métricas de dados de custo são exibidas nos dashboards varia, a depender da sua assinatura do ROI360. <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide#creative-optimization-roi360">Saiba mais</Anchor>
+
+<div id="charts" />
 
 ## Gráficos
 
@@ -71,6 +77,8 @@ Veja uma lista de definições para métricas <Anchor target="_blank" href="/mar
 ## Tabela
 
 A tabela mostra ainda mais informações sobre os seus dados. Agrupe por várias dimensões ou personalize as configurações da tabela para adicionar novas dimensões e métricas à tabela e, em seguida, classifique, visualize e compare os dados para obter os insights necessários.
+
+<div id="zd-table" />
 
 <div id="table" />
 
@@ -116,7 +124,7 @@ Personalize a tabela clicando no ícone <Image alt="Creative_table_settings_en_u
   * CPM  
     **Atenção:** as métricas do parceiro aparecem com a indicação "Partners" ao lado.
 
-* #### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
+* #### <span id="in-app-events"></span>https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
   **Eventos in-app**: use esses dados para entender como criativos específicos afetam a performance de eventos in-app. As métricas calculadas para cada evento incluem:
 

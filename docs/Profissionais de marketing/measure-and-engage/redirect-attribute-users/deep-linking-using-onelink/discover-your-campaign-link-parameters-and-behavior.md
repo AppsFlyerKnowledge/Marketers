@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Resumo:** Descubra os parâmetros incluídos em seus links de campanha do AppsFlyer e entenda a experiência e o comportamento esperados do link.
 
+<div id="about-link-discovery" />
+
 ## Sobre o Link Discovery
 
 O recurso de descoberta de links fornece informações sobre seus links de campanha da AppsFlyer, incluindo parâmetros de link e a experiência do usuário esperada que os links criam.
+
+<div id="benefits" />
 
 ### Vantagens
 
@@ -35,6 +39,8 @@ O Link Discovery ajuda os anunciantes a:
 * Confirmar os detalhes do link antes de publicá-lo em uma campanha
 * Solucionar problemas de comportamento inesperado.
 * Consultar os parâmetros de atribuição para saber o que procurar nos painéis.
+
+<div id="information-available-via-link-discovery" />
 
 ### Informações disponíveis via Link Discovery
 
@@ -47,12 +53,16 @@ O Link Discovery mostra as seguintes informações sobre uma URL:
 * **Recursos**: as diferentes capacidades habilitadas para o link. Por exemplo: retargeting, deep linking, pré-visualização de mídia social e página inicial de mídia social.
 * **Redirecionamento**: um resumo de como o link é criado para redirecionar os usuários com base em seu dispositivo, plataforma e se eles já têm o aplicativo instalado.
 
+<div id="using-link-discovery" />
+
 ## Usando o Link Discovery
 
 **Para usar o Link Discovery e obter informações sobre uma URL**:
 
 1. No AppsFlyer, no menu lateral, selecione **Engajar** > **Link Discovery**.
 2. Insira a sua URL e clique em **descobrir.**
+
+<div id="specifications-and-limitations" />
 
 ## Especificações e limitações
 

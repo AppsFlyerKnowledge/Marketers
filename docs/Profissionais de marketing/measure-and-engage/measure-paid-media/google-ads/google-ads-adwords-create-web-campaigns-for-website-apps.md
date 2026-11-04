@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Configure uma integração do Google Ads para o aplicativo do seu site para enviar sinais de conversão na web ao Google através da API de Conversões Offline (OCI).
 
+<div id="overview" />
+
 ## Visão geral
 
 A AppsFlyer permite a integração com o Google Ads (`googleads_int`) para campanhas de aplicativos de sites e registra os dados de conversão através da API de Conversões Offline (OCI) do Google.
@@ -31,6 +33,8 @@ A AppsFlyer permite a integração com o Google Ads (`googleads_int`) para campa
 Neste artigo, você aprenderá a configurar campanhas da web na AppsFlyer e no Google Ads, com segmentação direcionada a usuários que interagem com o Google Ads e realizam conversões no seu site.
 
 O fluxo da campanha começa quando um usuário clica em um anúncio do Google e acessa seu site. Quando o usuário conclui um evento no site (por exemplo, uma compra ou um cadastro), a AppsFlyer envia o sinal de conversão para o Google Ads via OCI. O Google usa esses dados para otimizar a segmentação de anúncios e mensurar a performance de campanhas.
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
@@ -40,12 +44,16 @@ Antes de ativar a integração do Google Ads para campanhas de aplicativos de si
 * O SDK web da AppsFlyer implementado no seu site ou uma integração totalmente server-side usando a API Server-to-Server (S2S). Para obter mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-s2s-api-for-web-performance-measurement#configurar-uma-integração-total-do-lado-do-servidor">Configurar uma integração totalmente server-side</Anchor>
 * Uma conta da AppsFlyer com funções ou permissões adequadas
 
+<div id="how-to-set-up-a-google-ads-web-campaign" />
+
 ### Como configurar uma campanha do Google Ads na web
 
 A configuração é dividida em duas partes:
 
 1. Configurar a integração do Google Ads na AppsFlyer (obrigatória)
 2. Configurar a campanha no Google Ads (obrigatória)
+
+<div id="set-up-the-google-ads-integration-in-appsflyer" />
 
 ## Configure a integração do Google Ads na AppsFlyer
 
@@ -61,6 +69,8 @@ Comece ativando a integração do Google Ads para campanhas na web e configure o
 4. No menu suspenso dos aplicativos, selecione o aplicativo web.
 5. Na aba **Integração** selecione **Ativar parceiro**.
 
+   <div id="note" />
+
    > 📘 **Atenção**
    >
    > O botão deve permanecer habilitado (ativado) enquanto você trabalhar com o parceiro.
@@ -75,6 +85,8 @@ Comece ativando a integração do Google Ads para campanhas na web e configure o
 8. Selecione a conta de administrador da conta MCC da qual você recuperou o Customer ID.
 9. Clique em **Permitir**.
 
+   <div id="note-1" />
+
    > 📘 **Atenção**
    >
    > A mensagem de erro **Token ausente** deixará de aparecer assim que você fizer o login com o Google e permitir que a AppsFlyer recupere o token. Se o erro persistir após o login, verifique se o seu token tem as permissões necessárias.
@@ -88,6 +100,8 @@ Comece ativando a integração do Google Ads para campanhas na web e configure o
 
 Associe os eventos do seu site às ações de conversão do Google Ads. A AppsFlyer envia esses eventos para a Google via OCI, para permitir a otimização baseada na conversão.
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > No caso dos aplicativos web, todos os eventos são eventos web. Não há eventos de instalação. Cada evento para o qual você deseja que o Google faça a otimização deve ser associado a um ID de ação de conversão correspondente do Google Ads.
@@ -96,6 +110,8 @@ Associe os eventos do seu site às ações de conversão do Google Ads. A AppsFl
 2. Defina a **janela de postback de eventos in-app**, se necessário. A janela é aberta durante o primeiro evento de conversão do usuário no site (equivalente à data de instalação no mobile).
 3. Clique em **Adicionar evento**.
 4. Na coluna **Eventos da AppsFlyer**, selecione o evento do site que você deseja enviar (por exemplo, `purchase`, `sign_up`).
+
+   <div id="note-3" />
 
    > 📘 **Atenção**
    >
@@ -109,11 +125,15 @@ Associe os eventos do seu site às ações de conversão do Google Ads. A AppsFl
 7. Na coluna **Incluindo**, selecione se deseja incluir os valores de receita no postback.
 8. Clique em **Salvar integração**.
 
+<div id="note-4" />
+
 > 📘 **Atenção**
 >
 > Se você enviar eventos S2S e quiser que a AppsFlyer envie postbacks deles para o Google Ads, verifique se cada evento tem pelo menos um click ID do Google: `gclid`, `gbraid` ou `wbraid`. Se um evento não tiver nenhum, a AppsFlyer não enviará o postback. Para ver todos os campos de evento compatíveis, consulte <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-s2s-api-for-web-performance-measurement#mensurar-um-evento">API Server-to-Server (S2S) para Mensuração de performance web</Anchor>.
 
 </Accordion>
+
+<div id="set-up-a-web-conversion-campaign-in-google-ads" />
 
 ## Configurar uma campanha de conversão na web no Google Ads
 
@@ -147,10 +167,14 @@ Para cada evento do site mapeado na AppsFlyer, crie uma ação de conversão cor
 5. Em **Meta de conversão**, selecione uma categoria de ação de conversão.
 6. Insira um **nome para a conversão** e clique em **Adicionar**.
 
+   <div id="important" />
+
    > 🚧 **Importante!**
    >
    > Para usar a API de Conversões Offline com GBRAID/WBRAID (além de GCLID), certifique-se de que o campo **Count** na ação de conversão esteja definido como **Every** (padrão) e NÃO **One**.
 
+
+   <div id="note-5" />
 
    > 📘 **Atenção**
    >
@@ -172,6 +196,8 @@ O Google <Anchor target="_blank" href="https://support.google.com/google-ads/ans
 2. Na linha de anúncios, clique no ícone de edição.
 3. No campo **URL final**, insira o URL da sua landing page.
 
+   <div id="important-1" />
+
    > 🚧 **Importante!**
    >
    > O URL final não pode ser um URL da AppsFlyer (OneLink ou um URL de atribuição de plataforma única), pois isso pode fazer com que sua campanha seja rejeitada. Use somente um endereço direto da web que não tenha redirecionamentos.
@@ -185,11 +211,15 @@ O Google <Anchor target="_blank" href="https://support.google.com/google-ads/ans
    > ```
 
 
+<div id="note-6" />
+
 > 📘 **Atenção**
 >
 > As campanhas do Google Web Ads podem usar dois URLs por engajamento: o URL final e o URL do template de rastreamento. No entanto, o URL do template de rastreamento não é obrigatório nas campanhas de aplicativos de sites em que o destino do anúncio é um site. Um URL de modelo de rastreamento pode ser necessário somente quando o objetivo da campanha for web-to-mobile. Para mais informações, veja o artigo sobre as <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-create-web-based-campaigns">campanhas web-to-app do Google Ads</Anchor>.
 
 </Accordion>
+
+<div id="view-web-performance-measurement-data" />
 
 ## Ver dados de mensuração de performance web
 
@@ -199,9 +229,13 @@ Os dados de atribuição web relativos às campanhas do Google Ads estão dispon
 * **Exportação de dados brutos:** Os dados de atribuição web também estão disponíveis na <Anchor target="_blank" href="/marketers/pt/docs/raw-data-export-page">Página de exportação de dados brutos</Anchor>.
   * O campo `media_source` apresenta `googleadwords_int` para os eventos da web atribuídos ao Google Ads.
 
+<div id="note-7" />
+
 > 📘 **Importante!**
 >
 > Essa visão unificada permite que você analise a performance de campanhas na web e no aplicativo em um só local, incluindo relatórios completos de custos na web e no mobile.
+
+<div id="measure-web-performance-data-with-web-cost" />
 
 ## Mensurar dados de performance web com custo web
 
@@ -209,6 +243,8 @@ Você pode ter uma visão completa da performance dos dados de atribuição web 
 
 1. Conecte custos ao aplicativo do seu site via `googleadwords_int` (não via `googleads_int`) da aba **Custos** ou da página **Configurações de custo**. Para mais informações sobre como conectar custos, leia o artigo <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">Configure a ROI360 cost API para mensurar dados de custo</Anchor>.
 2. Inclua o ID da campanha (`af_c_id`) no URL da landing page. Certifique-se de que o URL inclua toda a hierarquia da campanha para visualizar custos, cliques e impressões correspondentes à atribuição web no nível mais granular.
+
+<div id="troubleshooting-in-app-event-postbacks" />
 
 ## Solução de problemas: postbacks de eventos in-app
 
@@ -244,11 +280,15 @@ Certifique-se de que os eventos de postback no aplicativo estejam mapeados para 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características e limitações
 
 | Caraterística | Observações |
 | --- | --- |
 | Cliques e impressões | Cliques e impressões para campanhas na web exigem uma <Anchor target="_blank" href="/marketers/pt/docs/roi360-onboarding-guide">assinatura do ROI360</Anchor>. |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** A interoperabilidade com SKAN permite que o Snapchat compartilhe postbacks SKAN com a AppsFlyer e permite que a AppsFlyer compartilhe seu mapeamento de mensuração do valor de conversão com o Snapchat.
 
+<div id="skan-interoperability-appsflyer---snapchat" />
+
 ## Interoperabilidade com SKAN: AppsFlyer &lt;-> Snapchat
 
 Se você trabalha com vários parceiros de ad networks, a prática recomendada é que você os configure sua integração com o SKAN na AppsFlyer. Assim, as métricas de performance da SKAN, enriquecidas com outras métricas como custo, estarão disponíveis na plataforma da AppsFlyer. 
@@ -45,6 +47,8 @@ Considere o seguinte no Snapchat:
 * Configure um [ID do aplicativo Snap](https://businesshelp.snapchat.com/en-US/a/snap-app-id) para cada aplicativo que você anuncia no Snapchat.
 * Ative os conjuntos de anúncios do Snapchat para mensuração da SKAN.
 * Para um determinado aplicativo, você está limitado a um máximo de 10 conjuntos de anúncios por vez que optou pela atribuição do SKAN.
+
+<div id="enabling-appsflyer-skan-interoperation-with-snapchat" />
 
 ### Ativando a interoperação da AppsFlyer SKAN com o Snapchat
 
@@ -120,6 +124,10 @@ A interoperação é alcançada por meio de configurações nos painéis da Apps
 
            Nos eventos in-app, verifique se os **nomes de eventos do SDK** que você definiu na mensuração do SKAN estão mapeados para **Identificadores de eventos de parceiros,** ou seja, para os nomes de eventos do Snapchat. Você deve mapear os eventos do tipo de mensuração da SKAN selecionados no momento ou os eventos em seu <Anchor target="_blank" href="/marketers/pt/docs/skan-cv-decode-map-your-cv-to-events">Mapa de conversão personalizado</Anchor>. **Atenção**! O tipo de mensuração padrão é receita.
 
+           <div id="inapp-event-mapping-guide" />
+
+           <div id="in-app-event-mapping-guide" />
+
            #### Guia de mapeamento de eventos in-app
 
         | Tipo de mensuração | Requisitos de mapeamento |
@@ -150,6 +158,8 @@ A interoperação é alcançada por meio de configurações nos painéis da Apps
   </tbody>
 </Table>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="discrepancies-guide" />
@@ -162,6 +172,8 @@ A interoperação é alcançada por meio de configurações nos painéis da Apps
 | Diferenças de data de instalação | **Causa da discrepância**<br /><br />Pode haver diferenças entre as datas de instalação da AppsFlyer e do Snapchat da seguinte forma:<ul><li>AppsFlyer: Deriva a data de instalação usando a seguinte fórmula: Tempo de chegada do postback - 24 horas - janela de medição (padrão 24 horas). Portanto, o ajuste padrão é de 48 horas. Todos os horários UTC. <Anchor target="_blank" href="/marketers/pt/docs/about-data-freshness-and-timezone-support#skan">Atualização de dados da SKAN</Anchor></li><li>Snapchat: Normalmente usa a hora de chegada do iOS após o horário de retorno do postback como a data de instalação sem ajuste.</li></ul>**Solução**<br /><br />Leve em consideração o que foi dito acima ao comparar os resultados. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

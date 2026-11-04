@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **Resumo:** Os dados a nível de linha (também conhecidos como dados brutos) descrevem eventos de usuários, como instalações, eventos in-app, visitas ao site, instalações bloqueadas pelo Protect360, receitas de anúncios e postbacks associados ao usuário enviados aos parceiros. Os dados brutos estão disponíveis por download, API e Data Locker.
 
+<div id="raw-data-reportingtools-and-reports" />
+
 ## Relatórios de dados brutos – ferramentas e relatórios
 
 Os relatórios de dados brutos permitem analisar o comportamento e as jornadas do usuário, reconciliar contas de ad network e enriquecer seus sistemas de CRM e BI. Ao usar dados brutos, você aumenta sua capacidade de analisar, otimizar e melhorar a performance do aplicativo.
 
 Os relatórios são disponibilizados por ferramentas de relatórios. As ferramentas possuem características distintas, adequadas a diferentes casos de uso. Por exemplo, para reconciliar uma determinada conta de ad network, faça o download do relatório conforme necessário por meio da página Exportar dados. Para fazer com que os dados de performance do usuário sejam enviados aos seus sistemas de BI, obtenha os dados de forma programática usando o Data Locker ou a Pull API.
+
+<div id="tip" />
 
 > 👍 **Dica**
 >
@@ -51,13 +55,19 @@ Considerações:
 * O intervalo de datas do relatório está relacionado à data da atividade (real) em que o evento ocorreu. Isso contrasta com os relatórios agregados em que o intervalo de datas é <Anchor target="_blank" href="/marketers/pt/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">baseado em LTV</Anchor>.
 * Descrições dos campos: consulte o <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary">dicionário de campos de dados</Anchor>.
 
+<div id="reporting-tools" />
+
 #### Ferramentas de relatório
 
 <table><thead><tr><th>Ferramenta</th><th>Descrição</th><th>Vários / um único app (1)</th><th>Capacidade de atualização de dados (2)</th><th>Incorporar em scripts</th><th>Fuso horário</th><th>Moeda</th></tr></thead><tbody><tr><td><a href="./raw-data-export-page" target="_blank">Página de exportação de dados brutos</a></td><td><ul><li>Baixe o relatório usando a interface do usuário</li><li>Formato: Arquivo CSV</li></ul></td><td>Único</td><td>Atualizado continuamente</td><td><span><strong>X</strong></span></td><td>Específico do aplicativo</td><td>Específico do aplicativo</td></tr><tr><td><a href="./pull-api-raw-data" target="_blank">Pull API\*</a></td><td><ul><li>Baixe o relatório usando chamadas de API.</li><li>Formato: Arquivos CSV</li></ul></td><td>Único</td><td>Atualizado continuamente</td><td><span>✓</span></td><td><ul><li>Selecionável</li><li>Predefinição: UTC</li></ul></td><td><ul><li>Selecionável</li><li>Predefinição: USD</li></ul></td></tr><tr><td> <a href="./data-locker-for-marketers" target="_blank">Data Locker</a> <span><strong>P</strong></span> </td><td><ul><li>Dados enviados para um <a href="./data-locker-cloud-service-setup" target="_blank">bucket na nuvem</a> </li><li>Sem limitações de volume</li><li>Janela de disponibilidade de dados: 14 dias.</li><li>Formato: CSV ou parquet</li></ul></td><td>Múltiplos apps</td><td>Atualizado continuamente com um atraso de várias horas</td><td><span>✓</span></td><td>UTC</td><td>USD </td></tr><tr><td> <a href="./push-api-streaming-raw-data" target="_blank">Push API<span></span></a> <span><strong>P</strong></span> </td><td><ul><li>Dados da jornada do usuário (instalações, eventos in-app, retargeting, SKAN) enviados para seus servidores em tempo real.</li><li>Formato: JSON ou parâmetros de query</li></ul></td><td>Pode usar o mesmo endpoint</td><td>Minutos após o evento ser registrado na AppsFlyer</td><td><span>✓</span></td><td>UTC + específico do app</td><td>USD + específico do app</td></tr><tr><td> <a href="./conversion-data-payloads-and-scenarios" target="_blank">Dados de conversão do SDK</a> (3)</td><td><ul><li>Obtenha dados de conversão de atribuição no aplicativo.</li><li>Formato: JSON</li></ul></td><td>N/D</td><td>Os dados de conversão do SDK recuperam os dados de atribuição do usuário em até 8 segundos a partir da primeira abertura do Aplicativo (até 5 segundos nos servidores da AppsFlyer, mais o atraso de ponta a ponta da network).</td><td><span>✓</span></td><td>UTC</td><td>N/D</td></tr><tr><td colspan="7"> <strong>Notas e abreviaturas:</strong><br/>(1) Suporte para vários apps<br/>(2) A atualização real dos dados depende do relatório em si, pois alguns relatórios são diários.<br/>(3) Os dados de conversão do SDK recuperam os dados de atribuição do usuário segundos após a primeira abertura do aplicativo, tornando-se o método menos preciso.<br/><span><strong>(P)</strong> </span><span>Funcionalidade premium</span><br/><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Aplicam-se as cotas de geração de relatórios</a> </td></tr></tbody></table>
 
+<div id="tool-limitations" />
+
 #### Limitações da ferramenta
 
 <table><thead><tr><th>Limitação </th><th>Pull API (\*)</th><th>API de push</th><th>Relatório do Data Locker</th><th>SDK<br/>Dados de conversão</th></tr></thead><tbody><tr><td>Limite de dados</td><td>1 milhão de linhas por chamada</td><td>N/D</td><td>N/D</td><td>N/D</td></tr><tr><td>Opções de seleção de dados</td><td>Selecione os tipos de dados. Opções limitadas para seleção de campos</td><td>Selecione os tipos de dados, campos e eventos in-apps</td><td>Selecione os tipos de dados, campos e eventos in-apps</td><td>Não</td></tr><tr><td>Janela de disponibilidade de dados</td><td>90 dias</td><td>N/D</td><td>14 dias </td><td>Vitalício (disponível no SDK)</td></tr><tr><td colspan="5"><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Aplicam-se as cotas de geração de relatórios</a></td></tr></tbody></table>
+
+<div id="integration-considerations" />
 
 #### Considerações de integração
 
@@ -93,6 +103,8 @@ O dicionário de campos de <Anchor target="_blank" href="/marketers/pt/docs/raw-
 
 Para facilitar a compreensão, os campos de jornada do usuário são divididos em grupos com base no contexto.
 
+<div id="user-journey-raw-data-field-groups" />
+
 #### Grupos de campos de dados brutos da jornada do usuário
 
 | Grupo de campos | Relevante para usuários orgânicos | Exemplos de campos |
@@ -105,6 +117,8 @@ Para facilitar a compreensão, os campos de jornada do usuário são divididos e
 | Evento | Sim | Preenchido nos relatórios de eventos in-app:<br /><br />Nome do evento, valor do evento, receita do evento |
 
 </Accordion>
+
+<div id="user-journey-reports" />
 
 ## Relatórios de jornada do usuário
 
@@ -150,6 +164,8 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
 * Os relatórios podem incluir usuários orgânicos, usuários não orgânicos ou ambos, conforme indicado.
 * As políticas de retenção se aplicam aos relatórios de dados brutos históricos, dependendo da ferramenta de relatório e da origem dos dados brutos. Em geral, os dados estão disponíveis para os 90 dias anteriores. **Atenção**! As políticas de retenção não se aplicam a dados agregados.
 
+<div id="user-journey-reports-1" />
+
 #### Relatórios de jornada do usuário
 
 <table><thead><tr><th>Categoria</th><th>Exclusivo para Data Locker</th><th>Tópico do relatório</th><th>Orgânico</th><th>Não orgânico</th></tr></thead><tbody><tr><td>Aquisição de usuários</td><td><span>✓</span></td><td>Cliques</td><td colspan="2">N/D</td></tr><tr><td>Redirecionamento</td><td><span>✓</span></td><td>Cliques de campanhas de retargeting </td><td colspan="2">Retargeting sempre não orgânico</td></tr><tr><td>Aquisição de usuários</td><td><span>✓</span></td><td>Impressões</td><td colspan="2">N/D</td></tr><tr><td>Redirecionamento</td><td><span>✓</span></td><td>Impressões de campanhas de retargeting</td><td colspan="2">Retargeting sempre não orgânico</td></tr><tr><td>Aquisição de usuários</td><td>-</td><td>Instalações </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Aquisição de usuários</td><td>-</td><td>Eventos in-app </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Aquisição de usuários</td><td>-</td><td>Receita de anúncios atribuída</td><td>-</td><td><span>✓</span></td></tr><tr><td>Aquisição de usuários</td><td>-</td><td>Receita publicitária orgânica</td><td><span>✓</span></td><td>-</td></tr><tr><td>Redirecionamento</td><td>-</td><td>Receita publicitária de retargeting</td><td colspan="2">Retargeting sempre não orgânico</td></tr><tr><td>Redirecionamento</td><td>-</td><td>Conversões de retargeting (reengajamentos e reatribuições)</td><td colspan="2">Retargeting sempre não orgânico</td></tr><tr><td>Redirecionamento</td><td>-</td><td>Retargeting de eventos in-app (reengajamentos e reatribuições)</td><td colspan="2">Retargeting sempre não orgânico</td></tr><tr><td>Redirecionamento</td><td><span>✓</span></td><td>Sessões de retargeting (reengajamentos e reatribuições)</td><td colspan="2">Retargeting sempre não orgânico</td></tr><tr><td>Aquisição de usuários</td><td><span>✓</span></td><td>Sessões</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Aquisição de usuários</td><td>-</td><td>Desinstalações não orgânicas </td><td>-</td><td><span>✓</span></td></tr><tr><td>Aquisição de usuários</td><td>-</td><td>Desinstalações orgânicas</td><td><span>✓</span></td><td>-</td></tr><tr><td>Aquisição de usuários</td><td><span>✓</span></td><td>Engajamento entre plataformas</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
@@ -159,6 +175,8 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
 <div id="user-journey-report-descriptions" />
 
 <Accordion title="Descrições do relatório de jornada do usuário">
+
+<div id="clicks-and-impressions" />
 
 #### Cliques e impressões
 
@@ -171,9 +189,13 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
 | Observações | Dados de SRN não disponíveis. |
 | Usuários restritos | Em alguns casos, devido a regras de privacidade, os dados de impressão e cliques são restritos (não têm identificadores de usuário) ou não estão disponíveis. A disponibilidade depende da fonte de mídia e da plataforma. |
 
+<div id="installs-and-retargeting-conversions" />
+
 #### Instalações e conversões de retargeting
 
 <table><thead><tr><th rowspan="2">Nome do relatório </th><th rowspan="2"><p>Aquisição de usuários: Instalações</p></th><th rowspan="2">Retargeting: Conversões</th></tr></thead><tbody><tr><td>Contexto</td><td><p>Quando um usuário abre um aplicativo pela primeira vez.</p></td><td><p>Depois que um usuário engaja com um anúncio de retargeting e, em seguida, abre o aplicativo. Uma conversão de retargeting é um reengajamento ou reatribuição.</p> Consulte o <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">Guia de atribuição de retargeting.  </a> </td></tr><tr><td>Casos de uso</td><td><ul><li>Gerar relatórios agregados usando campos não disponíveis através das ferramentas de análise da AppsFlyer.</li><li>Combine-os com outros relatórios para realizar análises avançadas e transversais.</li><li>Analise a performance em diferentes dimensões, como cidades, áreas metropolitanas e outros. </li><li>Segmente utilizadores conforme o país, cidade e idioma para fins de direcionamento.</li><li>Obtenha IDs de dispositivo do usuário para fins de retargeting.</li></ul></td><td>Semelhante às instalações.</td></tr><tr><td>Orgânico vs. não orgânico</td><td><ul><li> <strong>Não orgânico:</strong> Os grupos de campos de atribuição e contribuição são preenchidos</li><li> <strong>Orgânico:</strong> O campo da fonte de mídia está em branco, nulo, ou orgânico. Lembre-se disso ao carregar dados em seus sistemas. </li></ul></td><td>Não aplicável</td></tr><tr><td>Exemplo de relatório</td><td><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yvNGmZp8ataHBj89CFq856PmDixnyjKK75O8fQcS9TjT8J2jBAnJoTn3350NV-7pCSlaT0oh8ebs/pub?output=csv" target="_blank">Instalações</a></td><td>O relatório de conversões de retargeting tem a mesma estrutura que o relatório de instalações. Alguns campos são preenchidos no contexto do retargeting. Consulte os <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">dados brutos de retargeting</a>. </td></tr></tbody></table>
+
+<div id="in-app-events" />
 
 #### Eventos in-app
 
@@ -263,6 +285,8 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
   </tbody>
 </Table>
 
+<div id="sessions" />
+
 #### Sessões
 
 | Relatório | Características |
@@ -271,6 +295,8 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
 | Características | A estrutura do relatório é a mesma dos relatórios de eventos in-app. As sessões (eventos de sessão) estão em um relatório separado devido ao grande número desses eventos. |
 | Caso de uso | Entender o engajamento do usuário com o aplicativo. |
 | Exemplo de relatório | O relatório de sessões é semelhante ao relatório de eventos in-app. Atenção: em dados brutos, as sessões têm o nome do evento *abertura*. |
+
+<div id="uninstalls" />
 
 #### Desinstalações
 
@@ -288,9 +314,13 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
 
 <Accordion title="Disponibilidade do relatório da jornada do usuário por ferramenta">
 
+<div id="ad-engagement-report-by-tool" />
+
 #### Relatório de engajamento com anúncios por ferramenta
 
 <table><thead><tr><th>Relatório</th><th>Exportar dados</th><th>Extrair API</th><th>Relatório do Data Locker</th><th>API de push</th><th>SDK<br/>Dados de conversão</th></tr></thead><tbody><tr><td>Impressões (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td>Cliques (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td colspan="6">(1) Os dados de cliques e impressões são disponibilizados por não SRNS. As SRNs não disponibilizam esses dados.</td></tr></tbody></table>
+
+<div id="user-acquisition-reports-by-tool" />
 
 #### Relatórios de aquisição de usuários por ferramenta
 
@@ -300,6 +330,8 @@ Para seguir uma jornada do usuário, combine os relatórios relacionados à part
 | Sessões | - | - | ✓ | - | - |
 | Eventos in-app | ✓ | ✓ | ✓ | ✓ | - |
 | Desinstalações | ✓ | ✓ | ✓ | - | - |
+
+<div id="retargeting-raw-data-reports-by-tool" />
 
 #### Relatórios de dados brutos de retargeting por ferramenta
 
@@ -331,18 +363,20 @@ Você pode identificar e destacar as jornadas do usuário com a ajuda do AppsFly
 
 Como os relatórios de instalação e eventos in-app têm as mesmas estruturas, eles podem ser mesclados em um único relatório. No relatório mesclado, você pode agregar e filtrar usando o AppsFlyer ID e o Costumer User ID (se disponível) para analisar as jornadas do usuário.
 
+<div id="engaged-userstrong" />
+
 > 📄 **Usuário engajado—forte**
 >
 > * Um usuário instalou o aplicativo em 20 de agosto às 09:31.
 > * O relatório mesclado mostra que ele realizou compras em 20 de agosto às 10:31, 22 de agosto às 15:22 e 25 de agosto às 16:47.
 > * A partir disso, concluímos que o usuário é um usuário engajado. Ele fez uma compra uma hora após a inicialização do aplicativo e continuou comprando nos dias seguintes à instalação.
 >
-> #### Usuário engajado—fraco
+> #### <span id="engaged-userweak"></span>Usuário engajado—fraco
 >
 > * Um usuário instala o aplicativo em 30 de julho. O relatório mesclado mostra que ele adicionou um item ao carrinho em 15 de agosto, mas não há eventos de compra subsequentes.
 > * Você pode assumir que o usuário está hesitante em fazer uma compra e fazer o retargeting desse usuário com os itens já adicionados ao carrinho.
 >
-> #### Analisando a jornada do usuário para otimização de campanhas
+> #### <span id="analyzing-the-user-journey-for-campaign-optimization"></span>Analisando a jornada do usuário para otimização de campanhas
 >
 > * O gerente de aquisição de usuários (UA) de um aplicativo de viagens baixa os relatórios de eventos in-app e de instalação e os mescla.
 > * Depois, para visualizar as jornadas do usuário no aplicativo, ele filtra ou agrega dados usando o AppsFlyer ID.
@@ -352,6 +386,8 @@ Como os relatórios de instalação e eventos in-app têm as mesmas estruturas, 
 > * Ao analisar a jornada do usuário, o gerente de UA entende que a campanha pode ter sido muito limitada ou muito focada, e que os usuários não estavam suficientemente engajados com o aplicativo.
 
 </Accordion>
+
+<div id="feature-reports" />
 
 ## Relatórios de funcionalidades
 
@@ -378,6 +414,8 @@ Use relatórios de postback para revisar cópias de dados enviados para uma ad n
 * Desde março de 2021, os campos são preenchidos de acordo com a configuração de Privacidade Avançada de uma ad network. Ou seja, se a Privacidade Avançada estiver ativada, alguns campos, como identificadores de usuário, não serão inclusos. Consulte <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">especificação de postbacks de Privacidade Avançada para ad networks</Anchor>.
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-id-postbacks-v5">Obtenha relatórios de postback pela PULL API</Anchor>
 
+<div id="postback-reports-available-via-the-export-data-page-and-pull-api" />
+
 #### Relatórios de postback (disponíveis na página Exportar dados e Pull API)
 
 | Tópico do relatório | Eventos enviados para a fonte de mídia atribuída |
@@ -386,6 +424,8 @@ Use relatórios de postback para revisar cópias de dados enviados para uma ad n
 | Eventos in-app | Eventos in-app não orgânicos |
 | Postbacks de conversão de retargeting | Retargeting (reengajamento e reatribuição) |
 | Eventos in-app de retargeting | Eventos in-app de retargeting |
+
+<div id="additional-fields-in-postback-reports" />
 
 #### Campos adicionais em relatórios de postback
 
@@ -413,6 +453,8 @@ Use relatórios de postback para revisar cópias de dados enviados para uma ad n
 4. Para dar acesso ao dashboard de eventos in-app (CPA), também ative **Acessar dados de eventos in-app agregados**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

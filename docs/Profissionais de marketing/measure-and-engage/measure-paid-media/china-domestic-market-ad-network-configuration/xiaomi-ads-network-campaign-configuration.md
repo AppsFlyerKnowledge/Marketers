@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** A Xiaomi, parceira integrada de ad network da AppsFlyer, opera a loja de aplicativos Xiaomi Android, que está entre as 5 principais plataformas de distribuição de aplicativos Android na China, com 5 bilhões de downloads de aplicativos por mês. Além da atribuição mobile baseada em cliques, a Xiaomi também oferece atribuição view-through, que você pode registrar com a AppsFlyer.
 
+<div id="setting-up-xiaomi" />
+
 ## Configurando a Xiaomi
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -43,6 +45,8 @@ A janela de configuração da Xiaomi inclui 3 abas ativas: integração, link de
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em seu **primeiro acesso**, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para mais informações sobre a ativação de parceiros, por favor clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
@@ -54,6 +58,8 @@ Configurações gerais
 Alterne para LIGADO se desejar atribuir instalações view-through da Xiaomi. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
 ![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -99,6 +105,8 @@ Nessa aba, você pode selecionar as permissões a serem concedidas à Xiaomi, in
 ![ad_network_permissions.png](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Use estas alavancas para dar à ad network as permissões para lidar com sua própria configuração para seu aplicativo:
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

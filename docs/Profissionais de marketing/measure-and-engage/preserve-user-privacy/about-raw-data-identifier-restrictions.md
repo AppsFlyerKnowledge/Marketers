@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **Resumo:** alguns parceiros exigem que a AppsFlyer restrinja certos campos em relatórios de dados brutos específicos. Em outros casos, os parceiros podem solicitar que a fonte de mídia seja ocultada ao compartilhar postbacks com plataformas de terceiros. Este artigo descreve essas restrições e as suas implicações.
 
+<div id="raw-data-restriction" />
+
 ## Restrição de dados brutos
 
 A AppsFlyer restringe o acesso a determinados campos do relatório de dados brutos com base nas configurações de <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">AAP (Aggregated Advanced Privacy)</Anchor> do anunciante ou nas políticas de compartilhamento de dados das ad networks que fornecem os dados. Essas restrições variam dependendo do tipo de relatório e do motivo da restrição.
 
+<div id="media-source-restrictions" />
+
 ### Restrições por fonte de mídia
 
 A tabela a seguir lista as restrições por fonte de mídia para conversões, cliques e impressões.
+
+<div id="note" />
 
 > 📘 **Importante!**
 >
@@ -55,6 +61,8 @@ A tabela a seguir lista as restrições por fonte de mídia para conversões, cl
 | <span id="x-ads-formerly-twitter"></span>X Ads (antigo Twitter) | Em alguns casos, a depender das escolhas do usuário no X Ads, os dados brutos podem ser restritos na plataforma da AppsFlyer.<br /><br />**Até 15 de julho de 2025:** Os eventos atribuídos do X Ads não apareciam nos relatórios de dados brutos.<br /><br />**A partir de 15 de julho de 2025:** Eventos atribuídos passaram a ser incluídos nos relatórios de dados brutos, com as seguintes restrições:<ul><li>Canal de mídia (twitter): disponível</li><li>Detalhes da campanha: relatados como *restricted*</li><li>Canal (Twitter): disponível</li><li>Tipo de toque atribuído: disponível</li><li>Hora do toque atribuído: reportada apenas como data (`dd/mm/yyyy`)</li></ul>Cliques e impressões do X Ads não são incluídos nos relatórios de dados brutos.<br /><br />O acesso a dados brutos irrestritos depende da participação no **programa Advanced Mobile Measurement (AMM)** do X Ads e das configurações de privacidade do usuário final:<ul><li>AMM não habilitado: todos os cliques e impressões são enviados com `af_data_restriction=attribution`. Todos os eventos resultantes são restritos.</li><li>AMM habilitado:<ul><li>Usuários da UE: os eventos são restritos se o compartilhamento de dados com parceiros de negócios não for autorizado.</li><li>Usuários que não concordaram em compartilhar dados: os eventos são restritos (`af_data_restriction=attribution`).</li><li>Usuários que concordaram em compartilhar dados com parceiros de negócios: os eventos não são restritos (`af_data_restriction=none`).</li></ul></li></ul>Para mais informações, consulte o <Anchor target="_blank" href="/marketers/pt/docs/x-ads-formerly-twitter-ads-setup-guide-overview#privacidade-do-usuário-no-x-ads">guia de configuração do X Ads, seção de privacidade do usuário</Anchor>. |
 | Walmart | As seguintes restrições se aplicam à atribuição de view-through e click-through:<ul><li>`original_url`: restrito</li></ul>Cliques e impressões do Walmart não estão incluídos nos relatórios de dados brutos. |
 
+<div id="raw-data-context" />
+
 ### Contexto dos dados brutos
 
 A restrição em nível de campo de dados brutos depende do contexto dos dados, conforme listado na tabela a seguir.
@@ -63,6 +71,8 @@ A restrição em nível de campo de dados brutos depende do contexto dos dados, 
 | --- | --- |
 | [Fonte de mídia restrita](/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia): Origem do usuário | <ul><li>Atribuição: instalações, conversões de retargeting e desinstalações</li><li>Eventos in-app, sessões</li><li>Relatórios do Protect360</li></ul> |
 | Totalmente restrito | <ul><li>Cliques</li><li>Impressões</li><li>Cliques bloqueados (Protect360)</li></ul> |
+
+<div id="delivery-of-raw-data" />
 
 ### Envio de dados brutos
 
@@ -161,6 +171,8 @@ Quando a restrição de identificador é aplicada, os campos listados na tabela 
 
 </Accordion>
 
+<div id="faq" />
+
 ## Perguntas frequentes
 
 <div id="what-events-are-restricted" />
@@ -213,6 +225,8 @@ Para eventos enviados para plataformas de terceiros, como plataformas de analyti
 Os dados de assistências são considerados dados de atribuição e não estão disponíveis.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

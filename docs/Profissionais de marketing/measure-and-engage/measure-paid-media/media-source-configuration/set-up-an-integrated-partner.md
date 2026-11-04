@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Resumo:** ative a mensuração de atribuição, envie postbacks aos parceiros e ative outras funcionalidades de integração configurando a conexão do seu parceiro na AppsFlyer.
 
+<div id="overview" />
+
 ## Visão geral
 
 Parceiros, fontes de mídia e plataformas externas se integram à AppsFlyer através da API. Este artigo contém as instruções genéricas para ativar e configurar a integração, incluindo a geração de links de atribuição para ad networks não-SRN.
@@ -63,6 +65,8 @@ Todos os parceiros, fontes de mídia e outras plataformas integradas à AppsFlye
 
 * Na AppsFlyer, no menu lateral, selecione **Colaboração** > **Integrações de parceiros**. Você pode usar os vários filtros de pesquisa.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Convide novos parceiros para a AppsFlyer
 
 Se o parceiro com quem você está trabalhando ainda não estiver integrado à AppsFlyer, você <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#convide-novos-parceiros-para-a-appsflyer">poderá enviar um link de convite</Anchor>.
@@ -74,6 +78,8 @@ Se o parceiro com quem você está trabalhando ainda não estiver integrado à A
 <Accordion title="Seus parceiros integrados ativos">
 
 A aba de integrações ativas na página “Integrações de parceiros” mostra todos os seus parceiros integrados <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativos</Anchor>. Nessa aba, você pode saber mais sobre um parceiro e gerenciar sua integração.
+
+<div id="note" />
 
 > 📘 **Observação:**
 >
@@ -103,13 +109,19 @@ A página está estruturada da seguinte forma:
   * **Descartar alterações:** desfaz as últimas alterações, sem salvar.
   * **Salvar:** salva apenas as configurações da aba atual.
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### Abas de configurações aplicáveis por tipo de parceiro
 
 <table><thead><tr><th> </th><th colspan="2">Aba de Configurações</th><th> </th></tr><tr><th>Tipo de parceiro</th><th>Integração </th><th>Authorization: Bearer</th><th>Observações</th></tr></thead><tbody><tr><td>Fonte de mídia</td><td>S</td><td>S</td><td><p><strong>Guias adicionais disponíveis</strong>: Custo, receita de anúncios, link de atribuição</p><p>Incluindo ad networks, redes afiliadas, publishers diretos, anúncios programáticos,  ad networks internas da China e redes de retargeting.<br/>Para SRNs, a aba de link de atribuição não se aplica.</p></td></tr><tr><td>Agência </td><td>Não</td><td>S</td><td>Agências independentes que não funcionam como ad networks</td></tr><tr><td>Plataforma externa</td><td>S</td><td>Não</td><td>Plataformas de análise ou automação de marketing</td></tr><tr><td>Parceiro de marketing </td><td>S</td><td>Não</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
+<div id="set-up-a-partner-non-srn" />
+
 ## Configurar um parceiro (não-SRN)
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -118,6 +130,8 @@ A página está estruturada da seguinte forma:
 **Para acessar as configurações e configurar suas campanhas com o parceiro:**
 
 Pesquise e selecione o seu parceiro, em [Integrações de parceiros](/docs/set-up-an-integrated-partner#partners-in-the-marketplace).
+
+<div id="note-1" />
 
 > 📘 **Observação:**
 >
@@ -132,6 +146,8 @@ As integrações dos parceiros variam nos seus requisitos e podem conter um subc
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Complete as seções conforme necessário.
+
+<div id="integration-sections" />
 
 #### Seções de integração
 
@@ -305,6 +321,8 @@ A tabela a seguir inclui diferentes seções da página de integração. Algumas
       <td>
         Quando a integração de parceiros está ativada, são enviados postbacks padrão aos parceiros sobre as ações do usuário que ocorrem antes da abertura do aplicativo, como instalações, instalações rejeitadas e reengajamentos.
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **Observação:**
         >
         > * Eventos rejeitados são eventos in-app bloqueados pelo <Anchor target="_blank" href="/marketers/pt/docs/protect360-anti-fraud-guide">Protect360</Anchor> ou eventos que não estão em conformidade com a validação de destino. No caso de eventos rejeitados, confirme com o parceiro se a integração de eventos de rejeição com a AppsFlyer foi ativada.
@@ -415,6 +433,8 @@ Gere e salve links de atribuição para o uso de ad networks de cliques (não SR
 3. Adicione parâmetros para <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters#parâmetros-específicos-para-android">Android</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters#parâmetros-específicos-do-ios">iOS</Anchor>, conforme necessário.
 4. [Opcional] Selecione parâmetros de atribuição adicionais.
 
+<div id="attribution-link-parameters" />
+
 #### Parâmetros do link de atribuição
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -422,6 +442,8 @@ Gere e salve links de atribuição para o uso de ad networks de cliques (não SR
 Adicionar parâmetros ao link de atribuição permite que você faça análises detalhadas. Os parâmetros que já estão definidos no link de atribuição podem ser editados adicionando-os e incluindo seus novos valores aqui. Ao salvar o link de atribuição, todos os parâmetros configurados nesta aba são salvos.
 
 Selecione quais parâmetros você deseja adicionar ao link de atribuição.
+
+<div id="attribution-link-parameters-1" />
 
 #### Parâmetros do link de atribuição
 
@@ -434,6 +456,8 @@ Selecione quais parâmetros você deseja adicionar ao link de atribuição.
 | Parâmetros do assinante | Use qualquer um dos 5 parâmetros de assinante para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para a realização de agregação ou filtragem de dados. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 Você pode adicionar outros parâmetros ao link de atribuição digitando-o em uma nova caixa de parâmetros. Você pode usar todos os <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">parâmetros de URL disponíveis da AppsFlyer.</Anchor> Observe que apenas o esquema de URI e os parâmetros do OneLink são codificados no link de atribuição.
+
+<div id="retargeting-settings" />
 
 #### Configurações de retargeting
 
@@ -453,6 +477,8 @@ Para usar o seu link para retargeting:
 5. Configure a janela de reengajamento para determinar o período após o reengajamento, onde os eventos in-app do usuário são atribuídos ao canal de mídia de retargeting.
    * Você pode definir o valor em dias (1 a 90), horas (até 23) ou até mesmo vitalício.
    * A janela de reengajamento é adicionada ao link no parâmetro af\_reengagement\_window.
+
+<div id="click-through-attribution" />
 
 #### Atribuição de click-through
 
@@ -476,6 +502,8 @@ Esse é o link de atribuição que contém todas as informações de configuraç
 2. Copie o link gerado.
 
 Envie o link para o parceiro para ser ativado quando seus leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 #### Janela de lookback de atribuição de view-through
 
@@ -512,15 +540,21 @@ Envie-o ao parceiro para ser ativado quando um anúncio correspondente for visto
 * A prática recomendada é implementar a API de custo (requer assinatura do ROI360).
 * A Cost API inclui relatórios de cliques e impressões. Consulte a <Anchor target="_blank" href="/marketers/pt/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabela de integração de custos da ad network</Anchor> para obter detalhes completos sobre as dimensões, métricas e recursos compatíveis.
 
+<div id="note-2" />
+
 > 📘 **Observação:**
 >
 > Se um anunciante usar uma agência para gerir as suas campanhas, a agência, e não o anunciante, deve integrar-se com os parceiros relevantes. Caso contrário, se tanto o anunciante como a agência se integrarem num parceiro usando as mesmas credenciais para a mesma app, os dados de custo são duplicados.
+
+<div id="enabling-cost-data-by-api" />
 
 #### Ativação de dados de custo por API
 
 **Para ativar a Cost API**:
 
 * Siga <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">essas instruções de integração</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Status de sincronização dos dados de custo
 
@@ -534,10 +568,14 @@ Envie-o ao parceiro para ser ativado quando um anúncio correspondente for visto
 
 Se você atua como um publisher exibindo anúncios no seu aplicativo, a função de receita de anúncios permite atribuir a receita de anúncios à fonte de mídia que trouxe o usuário. <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution">Sobre a atribuição de receitas de anúncios.</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### Ativar atribuição da receita de anúncios
 
 1. Verifique para ver para qual método, <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">agregação ou atribuição a nível do usuário</Anchor>, o parceiro oferece suporte.
 2. Siga o método apropriado no <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#implementação">guia de integração de receitas de anúncios.</Anchor>
+
+<div id="ad-revenue-api-status-messages" />
 
 #### Mensagens de status da Ad Revenue API
 
@@ -565,9 +603,13 @@ Conceda permissões específicas para que as networks e agências acessem seus d
 * Se a sua associação com o parceiro for unicamente como agência, use as **Permissões da agência** em vez das **Permissões da ad network**. Ao ativar as permissões de agência, você autoriza que a agência controle as permissões da ad network. Para obter mais informações, veja <Anchor target="_blank" href="/partners/pt/docs/getting-started-agency-onboarding#o-que-significa-obter-permissão-de-um-profissional-de-marketing">O que significa obter permissão de um profissional de marketing</Anchor>.
 * As permissões são atribuídas ao aplicativo atualmente selecionado.
 
+<div id="ad-network-permissions" />
+
 #### Permissões da ad network
 
 Ao ativar as **permissões da ad network**, você permite que a ad network acesse o seu dashboard, possibilitando a concessão de permissões adicionais, conforme detalhado na tabela abaixo.
+
+<div id="note-3" />
 
 > 📘 **Observação:**
 >
@@ -597,9 +639,13 @@ Ao ativar as **permissões da ad network**, você permite que a ad network acess
 | <span id="access-protect360-dashboard-raw-data"></span>Acessar o dashboard do Protect360 e dados brutos | A ad network pode:<ul><li>Acessar o dashboard do Protect360 (incluindo <Anchor target="_blank" href="/marketers/pt/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Acessar o Protect360, Regras de Validação e dados brutos, se fizerem parte do plano de assinatura/span> O ProtectLITE não inclui acesso a dados brutos. ProtectLITE não disponibiliza acesso aos dados brutos.</li></ul>**Atenção**: quando você tem uma assinatura do <Anchor target="_blank" href="/marketers/pt/docs/protect360-anti-fraud-guide">Protect360</Anchor>, a ad network pode ver o dashboard completo. Sem uma assinatura do Protect360, eles podem ver o dashboard lite. |
 | <span id="access-ad-revenue-raw-data"></span>Acesse os dados brutos de receita de anúncios | Acessar a <Anchor target="_blank" href="/marketers/pt/docs/import-cost-data">janela Ingestão de Gastos com Anúncios. Essa janela apresenta apenas os aplicativos para os quais eles têm permissão de acesso.   <br />**Observação:** esta permissão está disponível apenas para aplicativos com uma</Anchor> <Anchor target="_blank" href="/marketers/pt/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> assinatura. |
 
+<div id="agency-permissions" />
+
 #### Permissões da agência
 
 Leia tudo sobre <Anchor target="_blank" href="/partners/pt/docs/getting-started-agency-onboarding#o-que-significa-obter-permissão-de-um-profissional-de-marketing">o que as agências podem fazer</Anchor> quando recebem permissões.
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >
@@ -636,9 +682,13 @@ Saiba mais sobre <Anchor target="_blank" href="/partners/pt/docs/about-agency-ac
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## Teste a integração
 
 Após concluir a integração do parceiro e antes de iniciar campanhas com o novo parceiro, é essencial testar a integração. É mais provável que ocorram erros durante a configuração inicial. Testar com antecedência evita o risco de gastar recursos consideráveis, apenas para descobrir que seus dados de atribuição estão ausentes ou incorretos.
+
+<div id="note-4" />
 
 > 📘 **Observação:**
 >
@@ -695,6 +745,8 @@ Se seu plano de assinatura com a AppsFlyer inclui acesso a dados brutos, eles de
 2. Selecione a fonte de mídia testada.
 3. Aguarde até 15 minutos a partir da instalação e, em seguida, faça o download do relatório de instalações.
 4. Verifique se o registro de instalações do parceiro existe e inclui parâmetros como fonte de mídia, nome da campanha, tipo e hora do toque, device ID (caso aplicável), nome da agência (chamada de "Parceiro" no relatório) e outros.
+
+<div id="important-2" />
 
 > 🚧 **Importante!**
 >

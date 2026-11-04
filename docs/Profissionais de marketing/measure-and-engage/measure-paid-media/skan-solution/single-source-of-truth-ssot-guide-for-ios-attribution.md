@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="Guia da Fonte Única da Verdade (SSOT) para atribuição no iOS" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## Acerca da Fonte Única da Verdade: dados reais de desempenho no iOS
 
 Desde o iOS 14, a AppsFlyer atribui utilizadores iOS utilizando dados de várias fontes, incluindo SKAdNetwork, utilizadores com consentimento ATT, modelização probabilística, insights baseados em incrementalidade e APIs específicas para Apple Search Ads. A falta do IDFA torna praticamente impossível associar os métodos de atribuição sem haver duplicação de dados.
@@ -52,6 +54,8 @@ Para incluir o sinalizador SSOT nos seus dados, é necessário ativar o SSOT no 
 Consulte o <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## Visualização do painel de visão geral da Fonte Única da Verdade
 
@@ -106,6 +110,8 @@ Na visualização SSOT:
 * **Fuso horário**: As instalações e eventos reportados pela AppsFlyer são exibidos em UTC ou no fuso horário local da aplicação, conforme definido na <Anchor target="_blank" href="/marketers/pt/docs/app-settings">página de definições da aplicação</Anchor>. Para dados reportados pelo SKAN, as instalações e eventos são apresentados em UTC, exceto para os dados do Meta e Google SKAN, nos quais o fuso horário é baseado no configurado nas suas contas Meta e Google, respetivamente.
 * **Moeda**: Exibida em USD ou na moeda local da aplicação, conforme definido na <Anchor target="_blank" href="/marketers/pt/docs/app-settings">página de definições da aplicação</Anchor>.
 * **Métricas de receita (D2, D7):** Inclui dados modelados para contabilizar postbacks SKAN incompletos ou ausentes (valores de conversão nulos) Coortes mais longas (D14, D21, D30) são exportadas pelo relatório do SSOT no Data Locker Coortes mais longas (D14, D21, D30) são exportadas pelo relatório do SSOT no Data Locker
+
+<div id="filter-considerations" />
 
 #### Considerações sobre os filtros
 
@@ -171,6 +177,8 @@ Métricas disponíveis no painel SSOT:
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## Como funciona o SSOT
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -221,6 +229,8 @@ O mecanismo SSOT está presente no SDK da AppsFlyer na sua aplicação, no dispo
 **Considerações**
 
 * De modo geral, a AppsFlyer não considera as reinstalações. No contexto do SSOT, o estado de reinstalação não é levado em conta. Isso significa que o SSOT não elimina instalações SKAN duplicadas oriundas de reinstalações no contexto da análise SSOT, e isso não afeta a configuração do sinal af\_attribution.
+
+<div id="attribution-flag-field" />
 
 #### **Campo de sinalização de atribuição**
 
@@ -284,6 +294,8 @@ Fórmula para calcular métricas de exemplo:
 | Atraso do postback do SKAN | Quando os postbacks do SKAN chegam com atraso significativo, por exemplo, da API do Google, o que pode levar até 15 dias, os dados de dias posteriores (como D7) podem inicialmente parecer inferiores aos de dias anteriores (como D2). Esse atraso pode afetar a precisão do modelo de SSOT. Por esse motivo, recomendamos esperar pelo menos 15 dias após a data de instalação para que os dados sejam totalmente preenchidos antes de avaliar a precisão do modelo. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

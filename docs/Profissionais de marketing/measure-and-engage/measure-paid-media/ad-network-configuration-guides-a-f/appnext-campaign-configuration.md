@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Appnext, parceira integrada de ad network da AppsFlyer, usa tecnologia e soluções de dados para monetização mobile premium, app marketing e reengajamento. Além da atribuição mobile baseada em cliques, a Appnext também oferece atribuição de custo, retargeting e view-through, que você pode registrar com a AppsFlyer.
 
+<div id="setting-up-appnext" />
+
 ## Configurando a Appnext
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -42,6 +44,8 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita** aqui, você precisará ativar a opção. Ative o botão **Ativar parceiro** para permitir a configuração dos parâmetros da aba de integração. A opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
@@ -49,6 +53,8 @@ Em sua **primeira visita** aqui, você precisará ativar a opção. Ative o bot�
 Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
 
 A guia Integração é dividida em diferentes seções, conforme descrito abaixo.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -58,15 +64,21 @@ Ative esta opção se quiser atribuir instalações view-through da Appnext. O c
 
 ![appnext_msc_new_2.png](https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a Appnext após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Observação: para instalações, você pode selecionar either **Apenas eventos atribuídos a este parceiro** (para eventos provenientes apenas de usuários atribuídos à Appnext), ou **Eventos atribuídos a qualquer parceiro ou orgânico** (para eventos provenientes de todos os parceiros). Para instalações e reengajamentos rejeitados, **apenas eventos atribuídos a este parceiro** podem ser enviados por postback.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma ALL-Installs network, a Appnext prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, inclusive orgânica. Recomendamos selecionar **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação para a Appnext.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -120,6 +132,8 @@ A integração da receita publicitária não está disponível para este parceir
 
 Nesta aba, você pode selecionar as permissões para conceder à Appnext. Observe que, mesmo que a atribuição esteja desativada para a Appnext, a aba de permissões permanece ativa e você pode conceder controle à Appnext.
 
+<div id="ad-network-permissions" />
+
 ### Permissões da rede de anúncios
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
@@ -133,6 +147,8 @@ Use essas chaves seletoras para conceder permissões à rede de anúncios para g
 * **Permitir o acesso ao painel Protect360** – somente aos próprios dados do Protect360 do parceiro e desde que o recurso esteja ativado para o anunciante
 
 Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad networks</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 

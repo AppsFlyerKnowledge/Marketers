@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
+<div id="setting-up-ironsource" />
+
 ## Configurando o ironSource
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -45,6 +47,8 @@ x-zendesk:
 
 A janela de configuração da ironSource inclui 5 abas: Integração, Link de atribuição, Custo, Receita publicitária e Permissões. Clique nos itens abaixo para ler sobre a configuração das abas.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -54,28 +58,40 @@ A janela de configuração da ironSource inclui 5 abas: Integração, Link de at
 
 <Accordion title="Aba de integração">
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na **primeira visita** aqui, você precisará ativar o botão de alternância **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. O botão de alternância deve permanecer ativado durante todo o tempo em que você trabalhar com o parceiro.  
 Para obter uma descrição detalhada do Cabeçalho da janela de configuração de parceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privacidade avançada
 
 Somente para aplicativos iOS, quando **a Privacidade Avançada (para iOS 14.5+ e posterior)** está ativada, você pode <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#b">controlar quais dados são compartilhados</Anchor> com ironSource por meio de postbacks e relatórios.
+
+<div id="transaction-id" />
 
 ### ID da transação
 
 Somente para aplicativos iOS, quando **Compartilhar ID de transação SKAN** está ativado, você  permite que a AppsFlyer <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">compartilhe o ID de transação de postbacks SKAdNetwork</Anchor> com ironSource. Ao fazer isso, a ironSource pode decodificar seus valores de conversão SKAdNetwork.
 
+<div id="note-2" />
+
 > 📘 **Observação**
 >
 > Para interoperação SKAN com a AppsFlyer, entre em contato com seu gerente de conta ironSource para <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">permitir o envio de dados SKAN para MMPs</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
 **ID do anunciante**
 
 A ironSource se conecta à AppsFlyer por meio de um ID de anunciante exclusivo (número de 6 dígitos) e uma senha. Se você ainda não possui o ID e a senha do anunciante, deverá obtê-los da ironSource para continuar com a integração. Caso contrário, copie o ID e a senha e cole-os nos respectivos campos.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Atribuição de instalação e reengajamento
 
@@ -91,6 +107,8 @@ Essas duas opções permitem atribuir à ironSource novas instalações e reatri
 1. Ative **a atribuição de exibição de reengajamento**.
 2. Configure o comprimento da janela de lookback de **visualização** na [aba de link de atribuição](/docs/ironsource-campaign-configuration#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para ironSource após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
@@ -98,9 +116,13 @@ Envie postbacks automáticos para ironSource após instalações e reengajamento
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à ironSource.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser relatada à ironSource.
 
+<div id="note-3" />
+
 > 📘 **Observação**
 >
 > Observação Como uma rede de todas as instalações, a ironSource prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, incluindo orgânica. Para fazer isso, selecione Eventos atribuídos a qualquer parceiro para enviar todos os postbacks de instalação para ironSource.
+
+<div id="in-app-event-postbacks" />
 
 ### Postback de evento in-app
 
@@ -122,6 +144,8 @@ Configure o mapeamento de eventos in-app com eventos ironSource, enviados via po
    1. Do canto superior esquerdo, sob o nome do parceiro, clique no nome do aplicativo para abrir a lista de aplicativos.
    2. Selecione um aplicativo diferente a partir da lista suspensa.
    3. Repita as <Anchor target="_blank" href="/marketers/pt/docs/amazon-ads-campaign-configuration#integration-tab">etapas de integração</Anchor> para o aplicativo selecionado.
+
+<div id="note-4" />
 
 > 📘 **Observação**
 >
@@ -183,6 +207,8 @@ Nesta aba, você pode selecionar as permissões para conceder à ironSource, se 
 
 Use essas chaves seletoras a fim de conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
 
+<div id="ad-network-permissions" />
+
 ### Permissões da ad network
 
 * **Permitir a configuração da integração** – permite que o parceiro configure a aba de integração (exceto postbacks de evento in-app)
@@ -194,6 +220,8 @@ Use essas chaves seletoras a fim de conceder permissões à rede de anúncios pa
 * **Permitir o acesso ao painel Protect360** – somente aos próprios dados do Protect360 do parceiro e desde que o recurso esteja ativado para o anunciante
 
 Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões da rede de anúncios</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 

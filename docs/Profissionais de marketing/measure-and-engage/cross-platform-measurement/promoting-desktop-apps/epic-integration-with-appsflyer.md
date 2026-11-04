@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Visão geral:** Integre seu jogo da Epic com a AppsFlyer para receber dados de atribuição e de eventos para suas campanhas da Epic. A integração com a Epic oferece suporte à atribuição e ao registro de eventos in-app para jogos da Epic (em outras palavras, atribuição e registro no dispositivo do usuário).
 
+<div id="about-epic-game-attribution" />
+
 ## Sobre a atribuição de jogos da Epic
 
 Os jogos em execução na Epic podem se integrar à AppsFlyer via API (tanto S2S quanto client-side) para receber dados de atribuição e mensuração de performance sobre quais fontes e campanhas impulsionam a abertura do aplicativo e eventos in-app. Os profissionais de marketing baseiam-se nestas informações para medir e otimizar as atividades de marketing.
+
+<div id="example-attribution-flow" />
 
 ### Exemplo de fluxo de atribuição
 
@@ -36,6 +40,8 @@ A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jor
    A página de destino também é útil porque fornece links para as diversas plataformas compatíveis com seu jogo. Por exemplo, você pode ter links para sua página do Xbox, da Microsoft Store e do Steam na sua página inicial.
 3. Página do aplicativo da Epic: Esta é a página da vitrine da Epic que hospeda seu jogo da Epic para os clientes fazerem download.
 4. Instalação do jogo: O usuário instala o jogo, acionando a atribuição e o registro de eventos in-app e sessões.
+
+<div id="integration-procedures" />
 
 ## Procedimentos de integração
 
@@ -170,9 +176,13 @@ A tabela abaixo lista as etapas necessárias para integrar seu jogo da Epic à A
   </tbody>
 </Table>
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Removendo dados do AppsFlyer ao desinstalar o aplicativo
 
 Para remover todos os dados do AppsFlyer SDK ao desinstalar o aplicativo, peça ao seu desenvolvedor para executar as etapas especificadas [aqui](https://dev.appsflyer.com/hc/docs/epic-vanilla#deleting-appsflyer-data-on-uninstall).
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 
@@ -180,6 +190,8 @@ Para remover todos os dados do AppsFlyer SDK ao desinstalar o aplicativo, peça 
 | --- | --- |
 | Redirecionamento | Atualmente não compatível |
 | Dados de custos | Os dados de custo devem ser enviados por meio do <Anchor target="_blank" href="/marketers/pt/docs/import-cost-data">Ad Spend Ingestion</Anchor> usando o método de upload de arquivo por e-mail. |
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

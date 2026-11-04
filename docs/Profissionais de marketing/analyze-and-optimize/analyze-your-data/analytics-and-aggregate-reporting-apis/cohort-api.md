@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Resumo:** a Cohort API permite que os anunciantes acessem dados de cohort de forma programática. Use a API para integrar dados de cohort em sistemas de BI e de automação de marketing.
 
+<div id="cohort-api" />
+
 ## API de Coorte
 
 A Cohort API é usada para coletar dados de performance de campanhas de cohort na plataforma da AppsFlyer. Funcionalmente, ela equivale ao <Anchor target="_blank" href="/marketers/pt/docs/cohort-and-retention-dashboard">dashboard de Cohort</Anchor>.
@@ -83,6 +85,8 @@ Use os parâmetros de filtro a seguir para obter os dados necessários.
 
 <table><thead><tr><th> </th><th> </th><th colspan="5">Funções</th></tr><tr><th rowspan="2">Padrão/Opcional </th><th rowspan="2">KPI (nome das dimensões) </th><th>Contagem</th><th>cvr (taxa de conversão)</th><th>Classificar</th><th>Soma</th><th>Usuários únicos</th></tr><tr><th>Número</th><th>Percentual</th><th>Percentual</th><th>Número</th><th>Número</th></tr></thead><tbody><tr><td>Sempre</td><td>usuários</td><td><span>S</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Sempre</td><td>eCPI</td><td>-</td><td>-</td><td>-</td><td><span>S</span></td><td>-</td></tr><tr><td>Sempre</td><td>cost</td><td>-</td><td>-</td><td>-</td><td><span>S</span></td><td>-</td></tr><tr><td>Opcional</td><td> <code>"event_name"</code>(4) </td><td><span>S</span></td><td><span>S</span></td><td>-</td><td><span>S (3)</span></td><td><span>S</span></td></tr><tr><td>Opcional</td><td>revenue</td><td><span>S</span></td><td>-</td><td>-</td><td><span>S</span></td><td>-</td></tr><tr><td>Opcional</td><td>roas</td><td>-</td><td>-</td><td><span>S</span></td><td>-</td><td>-</td></tr><tr><td>Opcional</td><td>roi</td><td>-</td><td>-</td><td><span>S</span></td><td>-</td><td>-</td></tr><tr><td>Opcional</td><td>sessions</td><td><span>S</span></td><td>-</td><td><span>S</span></td><td>-</td><td><span>S(1)</span></td></tr><tr><td>Opcional</td><td>uninstalls (2)</td><td><span>S</span></td><td>-</td><td><span>S</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) Sessões únicas retornam quando <em>agregation_type=on_day</em></p><p>(2) Indisponível quando cohort_type=unified </p><p>(3) Soma significa a receita total gerada pelo evento. No relatório, isso é indicado por <code>sum_event_name"</code></p><p>(4) Atenção! Os nomes dos eventos diferenciam maiúsculas de minúsculas</p></td></tr></tbody></table>
 
+<div id="formatting-kpi-functions" />
+
 #### Formatando funções de KPI
 
 Os seguintes parâmetros definem o formato dos KPIs retornados.
@@ -104,6 +108,8 @@ Os seguintes parâmetros definem o formato dos KPIs retornados.
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="using-period-filters" />
@@ -116,6 +122,8 @@ Se o intervalo de datas do seu relatório for de 1 a 11 de janeiro, os usuários
 
 * O valor do período pode ser um ou mais de 0-180. Por exemplo, 0, 1, 2, 30, 180.
 * Se nenhum período for especificado, os valores padrão de 0, 1, 2 até 30, 60, 90 e 180 serão retornados.
+
+<div id="example-period-filter" />
 
 > 📄 **Exemplo de filtro de período**
 >

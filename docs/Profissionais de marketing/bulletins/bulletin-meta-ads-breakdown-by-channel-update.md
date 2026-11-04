@@ -26,6 +26,8 @@ x-zendesk:
 | **O que você precisa saber** | A Meta aplica essa adesão automaticamente nas contas de clientes da AppsFlyer. Você não precisa fazer nada antes de 6 de agosto.<ul><li>Se os seus dados de custo detalhados por canal ou os seus dados de performance de criativos detalhados por canal não aparecerem após 6 de agosto, a adesão automática ainda não foi aplicada à sua conta.</li></ul> |
 | **O que você precisa fazer** | Execute as seguintes etapas:<ol><li>Depois de 6 de agosto, verifique seus dados de custo segmentados por canal (My Dashboards) e seus dados de performance de criativos segmentados por canal.</li><li>Se você notar uma lacuna, entre em contato diretamente com a Meta para receber orientações sobre como ativar a adesão ou fale com seu representante da AppsFlyer para receber ajuda.</li><li>Assim que a adesão for aplicada à sua conta, seus dados serão preenchidos automaticamente por backfill pouco tempo depois.</li><li>Você também pode verificar diretamente no Ads Manager se Impression Device já está ativado para a conta. Veja abaixo [Como verificar Impression Device no Ads Manager](#como-verificar-impression-device-no-ads-manager) para conferir as etapas.</li></ol> |
 
+<div id="check-impression-device-in-ads-manager" />
+
 ## Como verificar Impression Device no Ads Manager
 
 Para verificar se Impression Device já está ativado para uma conta de anúncio:

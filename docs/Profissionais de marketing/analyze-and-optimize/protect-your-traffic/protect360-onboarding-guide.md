@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** comece a proteger seus investimentos de marketing com esse guia de integração passo a passo, e impulsione o valor do Protect360 em apenas 6 semanas.
 
+<div id="onboarding-timeline-and-what-to-expect" />
+
 ## **Cronograma de integração e o que esperar**
 
 Esse guia traz um onboarding que dura 6 semanas:
@@ -29,6 +31,8 @@ Esse guia traz um onboarding que dura 6 semanas:
 * **Otimização (semanas 3–5)**: Otimize com base em insights iniciais.
 * **Reconciliação (semanas 5–6)**: Faça a reconciliação dos dados de fraude com seus parceiros de anúncios.
 * **Proteção avançada (semana 6+) [opcional]**: Ative camadas avançadas de proteção contra fraudes.
+
+<div id="about-protect360" />
 
 ## **Sobre o Protect360**
 
@@ -47,9 +51,13 @@ Você pode enviar esses dados usando dois métodos diferentes: SDK e Server-to-S
 * **SDK**: Nenhuma ação necessária
 * **Server-to-Server (S2S)**: Certifique-se de que os eventos sejam enviados pela API3. <Anchor target="_blank" href="/marketers/pt/docs/bulletin-upgrading-the-appsflyer-s2s-api">Saiba mais aqui.</Anchor>
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Se você não souber qual você usa, fale com sua equipe de desenvolvimento ou operações de marketing
+
+<div id="fraud-protection-studio-settings" />
 
 #### **Configurações do Fraud Protection Studio**
 
@@ -60,6 +68,8 @@ Entender essas diferenças e as opções disponíveis é fundamental para tomar 
 * **Implemented** (padrão): Bloqueia automaticamente atividades fraudulentas em tempo real ou as sinaliza como fraude pós-atribuição. Esse esquema é indicado se a prevenção imediata é um dos seus objetivos.
 * **Tagged**: A fraude é detectada e sinalizada com uma tag, mas permanece válida para atribuição, permitindo que você analise e revise sem um bloqueio automático. Escolha essa opção se preferir flexibilidade e análises iniciais mais detalhadas antes de bloquear.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Você pode alternar entre os modos **Implemented** e **Tagged** a qualquer momento (<Anchor target="_blank" href="/marketers/pt/docs/user-management">somente admins</Anchor>), a depender dos seus objetivos de negócios. <Anchor target="_blank" href="/marketers/pt/docs/beta-fraud-protection-studio#key-concepts">Saiba mais aqui</Anchor>.
@@ -68,19 +78,27 @@ Entender essas diferenças e as opções disponíveis é fundamental para tomar 
 
 Dica: Nessa etapa, enquanto sua equipe se familiariza com o Protect360, recomendamos que você veja o card de <Anchor target="_blank" href="/marketers/pt/docs/beta-fraud-protection-studio#app-detection-evaluation">**avaliação da detecção para aplicativos**</Anchor> no Fraud Protection Studio para testar e entender como essas configurações são implementadas no nível do aplicativo.
 
+<div id="data-connection-setup" />
+
 #### **Configuração de conexão de dados**
 
 Você pode exportar os dados do Protect360 de três formas diferentes: <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#sobre-os-relatórios-de-dados-brutos-do-protect360">Relatório de dados brutos</Anchor>, <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor> ou <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>. Independentemente da sua escolha, é importante configurar suas conexões de dados para garantir relatórios precisos e análises eficazes.
 
 <Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Para aproveitar ao máximo o Protect360, exporte o <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#postattribution-reports">relatório pós-atribuição</Anchor> no 8o dia de cada mês, para que você possa comparar os resultados com seus parceiros.
 
+<div id="how-to-display-hijacked-installs-correctly-in-your-bi" />
+
 #### **Como exibir hijacked installs (instalações sequestradas) corretamente em seu BI**
 
 Para garantir o alinhamento e a granularidade dos dados de proteção contra fraudes em seus sistemas, você pode usar os **relatórios de dados brutos, Pull APIs ou Data Locker para visualizar hijacked installs em seu BI.**
+
+<div id="raw-data-report" />
 
 #### **Relatório de dados brutos**
 
@@ -95,6 +113,8 @@ Para exibir hijacked installs em seu BI:
 * Organic - alterar a atribuição para orgânico
 * Contributor1, contributor2, contributor3, etc. - atribuição correta para o canal de mídia especificado.
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > Para mais informações sobre seus dados **tagged**, acesse esses 4 relatórios de dados brutos:
@@ -105,6 +125,8 @@ Para exibir hijacked installs em seu BI:
 > * Tagged post attribution in-app events
 
 ![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
+
+<div id="pull-api" />
 
 #### **Extrair API**
 
@@ -119,6 +141,8 @@ Para exibir hijacked installs em seu BI:
 * Organic - alterar a atribuição para orgânico
 * Contributor1, contributor2, contributor3, etc. - atribuição correta para o canal de mídia especificado.
 
+<div id="data-locker" />
+
 #### **Relatório do Data Locker**
 
 Para exibir hijacked installs em seu BI:
@@ -132,15 +156,21 @@ Para exibir hijacked installs em seu BI:
 * Organic - alterar a atribuição para orgânico
 * Contributor1, contributor2, contributor3, etc. - atribuição correta para o canal de mídia especificado.
 
+<div id="validation-rules" />
+
 #### **Regras de validação**
 
 As regras de validação permitem adicionar uma camada de lógica à sua proteção contra fraudes, adaptada à sua estratégia de marketing. Com as regras de validação, você pode definir quais instalações são consideradas válidas ou inválidas com base em vários parâmetros de diferentes casos de uso.
 
 Entre em contato com seu customer success manager ou account manager para saber mais sobre as práticas recomendadas para sua vertical.
 
+<div id="note-3" />
+
 > 📘 **Atenção**
 >
 > Para que as regras funcionem da forma mais eficiente possível, recomendamos que você revise sua estratégia de UA/marketing/compra de mídia e avalie quais tipos de instalações ou eventos do app correspondem aos seus esforços, para permitir a atribuição ou bloquear de acordo com suas necessidades. Por exemplo, se você não promover seu aplicativo no país (geo) X, você pode criar uma regra para bloquear automaticamente qualquer atividade desse tipo que chegue do geo X. Você pode criar várias regras para alinhar a proteção à sua estratégia de marketing.
+
+<div id="working-with-dashboards" />
 
 #### **Sobre nossos dashboards**
 
@@ -154,6 +184,8 @@ O <Anchor target="_blank" href="/marketers/pt/docs/protect360-dashboard">dashboa
 
 <Accordion title="Otimização (semanas 3–5)">
 
+<div id="campaign-optimization" />
+
 #### **Otimização da campanha**
 
 Agora é hora de otimizar sua campanha para garantir que você aproveite ao máximo o Protect360. Para isso:
@@ -161,15 +193,21 @@ Agora é hora de otimizar sua campanha para garantir que você aproveite ao máx
 * Veja as [práticas recomendadas](/docs/protect360-onboarding-guide#práticas-recomendadas).
 * [Avalie suas configurações de proteção contra fraudes](/docs/protect360-onboarding-guide#avalie-suas-configurações-de-proteção-contra-fraudes)
 
+<div id="best-practices" />
+
 #### Práticas recomendadas
 
 * Combine dados em tempo real e dados pós-atribuição para avaliar a performance da campanha com base na qualidade (retenção, eventos in-app, etc) e nos dados de fraude.
 * Otimize campanhas com base no site\_id ou subsite\_id.
 * Analise as taxas e tipos de fraude específicos de parceiros.
 
+<div id="review-your-fraud-protection-settings" />
+
 #### Avalie suas configurações de proteção contra fraudes
 
 Revise suas [configurações do Fraud Protection Studio](/docs/protect360-onboarding-guide#configurações-do-fraud-protection-studio) para garantir que elas ainda estejam alinhadas com seus objetivos.
+
+<div id="note-4" />
 
 > 📘 **Atenção**
 >
@@ -180,6 +218,8 @@ Revise suas [configurações do Fraud Protection Studio](/docs/protect360-onboar
 <div id="reconciliation-weeks-5-6" />
 
 <Accordion title="Reconciliação (semanas 5—6)">
+
+<div id="fraud-data-reconciliation" />
 
 #### **Conciliação de dados de fraudes**
 
@@ -194,6 +234,8 @@ Baixe seus <Anchor target="_blank" href="/marketers/pt/docs/protect360-anti-frau
 <div id="advanced-protection-setup-week-6--optional" />
 
 <Accordion title="Configuração de proteção avançada (semana 6+) [opcional]">
+
+<div id="advanced-security-module" />
 
 #### **Módulo de segurança avançado**
 

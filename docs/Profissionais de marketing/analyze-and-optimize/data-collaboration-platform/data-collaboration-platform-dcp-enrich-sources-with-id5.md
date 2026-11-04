@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Em resumo:** Enriqueça seus dados party com identificadores ID5 para unificar dados fragmentados de usuários e melhorar as taxas de correspondência com parceiros de ativação, resultando em audiências maiores.
 
+<div id="about-id5-enrichment" />
+
 ## Sobre o enriquecimento com ID5
 
 A plataforma de colaboração de dados da AppsFlyer se integra ao ID5, um provedor líder de soluções de identidade para a web aberta. O ID5 conecta identificadores distintos, como endereços IP, e-mails com hash (HEM) e IDs de anúncios mobile (MAIDs), em um ID unificado com foco em privacidade. Isso aumenta as taxas de correspondência entre os conjuntos de dados dos colaboradores, permitindo que mais usuários sejam reconhecidos, vinculados e ativados em audiências. Este guia explica como funciona o enriquecimento com ID5 no DCP, como configurá-lo e como usá-lo para colaborações e ativação.
@@ -38,6 +40,8 @@ A plataforma de colaboração de dados da AppsFlyer se integra ao ID5, um proved
 * **Colaboração entre varejista e marca** - Um varejista colabora com uma marca e compartilha acesso à sua assinatura do ID5. No escopo seguro da colaboração, a marca enriquece seus dados de clientes usando a conexão do ID5 do varejista, melhorando as taxas de correspondência sem exigir sua própria conta direta no ID5.
 * **Ativação de parceiro** - Fontes enriquecidas podem ser enviadas a parceiros de ativação compatíveis para aumentar as taxas de correspondência, o que significa que mais usuários dos seus dados podem ser correspondidos e incluídos nas audiências do lado do parceiro.
 
+<div id="how-id5-works" />
+
 ## Como o ID5 funciona
 
 O DCP usa os IDs ID5 retornados para enriquecer sua fonte, resultando em uma nova fonte enriquecida disponível para segmentação e ativação.
@@ -48,6 +52,8 @@ O DCP usa os IDs ID5 retornados para enriquecer sua fonte, resultando em uma nov
 | --- | --- | --- |
 | Fluxo com tag | O proprietário dos dados já aplica a marcação do site do ID5 em seu domínio; portanto, os dados enviados por upload já contêm uma coluna de ID5. | Quando você gerencia a tag do ID5 diretamente no seu site e quer usar o DCP sem enriquecimento adicional. |
 | Fluxo de enriquecimento servidor a servidor (S2S) | A AppsFlyer envia sua fonte de dados selecionada ao ID5, o ID5 a enriquece com IDs ID5 e a devolve ao DCP como uma fonte enriquecida. | Quando sua fonte não inclui uma coluna de ID5 ou quando você quer que a AppsFlyer faça o enriquecimento automaticamente. |
+
+<div id="get-started-with-id5-enrichment" />
 
 ## Comece a usar o enriquecimento do ID5
 
@@ -128,6 +134,8 @@ Os proprietários da colaboração podem permitir que os colaboradores usem uma 
 Depois, os colaboradores podem associar as próprias fontes à colaboração e enriquecê-las usando a conexão ID5 do parceiro.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

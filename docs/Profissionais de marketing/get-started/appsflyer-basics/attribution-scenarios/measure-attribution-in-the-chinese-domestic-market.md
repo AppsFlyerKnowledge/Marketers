@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** Atribuição de dispositivos Android sem GAID usando OAID ou IMEI. Melhores práticas para visualizar dados de atribuição no AppsFlyer.
 
+<div id="attribution-android-apps-in-the-chinese-domestic-market" />
+
 ## Atribuição de aplicativos Android no mercado doméstico chinês
 
 Na China, os proprietários de aplicativos enfrentam vários desafios:
@@ -39,6 +41,8 @@ Com o AppsFlyer, esses desafios podem ser superados por meio de:
 * Usar o IMEI do dispositivo como alternativa ao GAID em dispositivos com Android 28 ou anterior
 * Preparar APKs com identificadores exclusivos para detectar hijacking de loja no Android
 * Configurar links de atribuição reconhecidos na China
+
+<div id="preparing-the-app" />
 
 ## Preparar o aplicativo
 
@@ -305,6 +309,8 @@ Selecione como os dados de atribuição serão exibidos na AppsFlyer entre as op
 * **Aplicativo único consolidado com a loja Google Play:** A atribuição tanto das lojas de aplicativos de terceiros quanto da loja Google Play é exibida como uma única entidade. Essa opção exige que o nome do pacote da loja Google Play e das lojas de terceiros seja idêntico. O uso desta opção pressupõe que o aplicativo já esteja definido na AppsFlyer. Para usar este método, continue em [preparação do APK/manifest](/docs/measure-attribution-in-the-chinese-domestic-market#preparando-o-apkmanifest) na seção a seguir.
 * **Vários aplicativos** significa que os dados de atribuição de cada loja são mostrados em um aplicativo separado. Por exemplo, cada um dos itens a seguir é mostrado separadamente: Google Play Store, loja de terceiros A, loja de terceiros B e assim por diante. Para usar este método, consulte <Anchor target="_blank" href="/marketers/pt/docs/set-up-multi-store-android-attribution">vários aplicativos</Anchor>.
 
+<div id="adding-the-app-in-appsflyer" />
+
 ### Adicione o aplicativo à AppsFlyer
 
 **Para adicionar o aplicativo à AppsFlyer**:
@@ -319,6 +325,8 @@ Selecione como os dados de atribuição serão exibidos na AppsFlyer entre as op
    * **URL do aplicativo**
 
 **Observação**: você pode criar o aplicativo usando a opção **Pendente de aprovação ou não publicado**, mas isso não é recomendado. Consulte seu CSM antes de usar este método.
+
+<div id="preparing-the-apkmanifest" />
 
 ### Preparando o APK/manifest
 
@@ -351,6 +359,8 @@ Os métodos descritos definem o parâmetro AF\_STORE, que por sua vez define o c
 * <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview">Relatórios de dados brutos</Anchor>
 
 </Accordion>
+
+<div id="additional-attribution-considerations" />
 
 ## Considerações adicionais sobre atribuição
 

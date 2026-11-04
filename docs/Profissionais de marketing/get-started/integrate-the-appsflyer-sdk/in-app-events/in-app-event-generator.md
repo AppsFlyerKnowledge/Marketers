@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** crie automaticamente o código do aplicativo (nativo do Android e iOS, Unity) para enviar eventos in-app, definindo os nomes e o conteúdo dos eventos de acordo com suas necessidades de negócios.
 
+<div id="introduction" />
+
 ## Introdução
 
 Os eventos in-app são uma ferramenta importante para **os proprietários de aplicativos medirem a qualidade de seus usuários provenientes de diferentes fontes** com base nas ações que eles executam após a instalação do aplicativo. Os eventos também costumam ser usados para realizar campanhas de marketing baseadas em CPA.
@@ -37,9 +39,13 @@ Ao usar o gerador de eventos in-app, os profissionais de marketing podem:
 * **Enviar código gerado automaticamente** para seus desenvolvedores mobile Android e iOS– **economizando dias de trabalho,** comunicação redundante e possíveis erros.
 * **Reutilizar seu trabalho** se eles atualizarem eventos posteriormente, adicionarem novos eventos ou adicionarem novos aplicativos.
 
+<div id="using-the-in-app-event-generator" />
+
 ## Usar o gerador de eventos in-app
 
 **Use o gerador de eventos in-app para criar um conjunto de eventos para um novo aplicativo ou para atualizar um conjunto existente.**
+
+<div id="creating-a-new-event-set" />
 
 ### Criar um novo conjunto de eventos
 
@@ -51,6 +57,8 @@ Ao usar o gerador de eventos in-app, os profissionais de marketing podem:
 4. Clique no botão **`</>` Code** para visualizar e copiar o código gerado para seus desenvolvedores: Java (nativo Android), Obj-C/Swift (nativo iOS) ou C# (Unity).
 5. Clique em **Download .zip** para salvar o conjunto de eventos para uso futuro ou para colaborar com desenvolvedores e colegas.
 
+<div id="updating-an-existing-event-set" />
+
 ### Atualizar um conjunto de eventos existente
 
 **Para atualizar um conjunto de eventos existente:**
@@ -61,6 +69,8 @@ Ao usar o gerador de eventos in-app, os profissionais de marketing podem:
 4. Clique no botão **`</>` Code** para visualizar e copiar o código gerado para seus desenvolvedores: Java (nativo Android), Obj-C/Swift (nativo iOS) ou C# (Unity).
 5. Clique em **Download .zip** para salvar o conjunto de eventos para uso futuro ou para colaborar com desenvolvedores e colegas.
 
+<div id="adding-events" />
+
 ### Adicionar eventos
 
 **Para adicionar um novo evento ao conjunto de eventos:**
@@ -70,6 +80,8 @@ Ao usar o gerador de eventos in-app, os profissionais de marketing podem:
 3. Informe o objetivo do evento, descrevendo o cenário do negócio.
 4. Insira a ação do acionador para o evento, explicando o tempo na jornada do usuário em que o evento deve ser enviado. Esta explicação é adicionada como um comentário no código gerado para pelos desenvolvedores rápida referência.
 5. [Opcional] Adicione um ou mais parâmetros ao evento.
+
+<div id="adding-parameters" />
 
 ### Adicionar parâmetros
 
@@ -82,6 +94,8 @@ Ao usar o gerador de eventos in-app, os profissionais de marketing podem:
 5. Para ajudar seus desenvolvedores, digite uma descrição geral, tipo de campo ou a fonte correspondente para o valor do parâmetro em seu aplicativo. Isso aparece como um comentário para cada parâmetro de evento no código gerado.
 
 **Observação**: <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#predefined-and-custom-events">a nomenclatura predefinida</Anchor> permite o mapeamento automático de eventos e parâmetros para parceiros e é o método recomendado.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="Incrementalidade para UA - Guia" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
+<div id="about-incrementality-for-ua" />
+
 ## Sobre a Incrementalidade para UA
 
 No marketing omnichannel atual, para entender a real eficácia de uma campanha, é necessário visualizar seus dados por mais de uma lente. A atribuição de último toque continua sendo fundamental para o monitoramento da performance em tempo real e para acessar insights granulares, mas ela não fornece informações sobre se uma campanha gerou um aumento causal real. A Incrementalidade para UA soluciona esse problema, avaliando se as campanhas realmente trazem um aumento no número de novos usuários.
@@ -49,6 +51,8 @@ Hoje, equipes de aquisição de usuários enfrentam desafios complexos, incluind
 A Incrementalidade para UA usa um design experimental baseado em geolocalização. As regiões geográficas são divididas em grupos estatisticamente semelhantes com base no histórico de instalações ou comportamento de evento. Um grupo é exposto à sua campanha de aquisição de usuários e o outro é retido da exposição. Após a execução do experimento por um período definido, a diferença na performance entre os dois grupos é analisada para revelar qual foi o aumento incremental. A geolocalização é segura, imparcial e não usa dados a nível de usuário.
 
 A Incrementalidade para UA fornece os insights que você precisa para entender o verdadeiro valor incremental das suas campanhas de marketing, sem ser obstruída por dados inconsistentes ou sobreposições de direcionamento. Assim, você acessa uma visão clara da eficácia das suas campanhas, permitindo que você tome decisões melhores e baseadas em dados.
+
+<div id="experiment-design-and-insights" />
 
 ## Design e insights do experimento
 
@@ -199,6 +203,8 @@ Quando usados em conjunto, os dois modelos fornecem uma visão holística da per
 
 </Accordion>
 
+<div id="get-started" />
+
 ## Iniciar
 
 Para começar a usar a Incrementalidade para UA, siga os passos abaixo:
@@ -232,10 +238,14 @@ O primeiro passo é criar um experimento.
       * **Pronto:** Seu geodesign está aprovado e já pode ser utilizado. Agora você pode continuar com o experimento.
       * **Indisponível:** Atualmente, o geodesign não atende aos requisitos para validar um experimento, com base nos dados disponíveis para o aplicativo, o país e as métricas selecionados. Você pode enviá-lo novamente após 30 dias, porque a elegibilidade pode mudar à medida que seu aplicativo coleta mais dados.
 
+      <div id="note" />
+
       > 📘 **Atenção**
       >
       > Se existirem regras de geodesign para o aplicativo e país selecionados, elas serão aplicadas automaticamente quando o geodesign for calculado. Consulte a [Política de geodesign](#h_01_geo-design-policy) para saber mais.
 
+
+      <div id="note-1" />
 
       > 📘 **Observação**
       >
@@ -277,6 +287,8 @@ O primeiro passo é criar um experimento.
 4. **Revise a configuração** - verifique se o resumo do experimento está certo e, em seguida, clique em **iniciar experimento**.  
    O experimento começa. Os resultados iniciais serão exibidos dentro de 24 horas.
 
+   <div id="note-2" />
+
    > 📘 **Observação**
    >
    > Quando o experimento terminar, as campanhas conectadas retornarão às suas configurações de direcionamento anteriores. Isso garante a continuidade e consistência da campanha e permite que você retome suas atividades de UA sem precisar reconfigurar o direcionamento manualmente.
@@ -291,7 +303,7 @@ O primeiro passo é criar um experimento.
 
 <Accordion title="3. Analise os resultados e acesse seus insights">
 
-<span id="access-the-experiment-dashboard"></span>Você pode ver os resultados do experimento no dashboard do experimento.
+<span id="zd-access-the-experiment-dashboard"></span><span id="access-the-experiment-dashboard"></span>Você pode ver os resultados do experimento no dashboard do experimento.
 
 #### Acessar o dashboard do experimento
 
@@ -301,6 +313,8 @@ O primeiro passo é criar um experimento.
 2. Clique em um experimento específico para acessar o dashboard do experimento.
 
    ![Experiments table (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+
+<div id="a-tour-of-the-dashboard" />
 
 #### Conhecendo o dashboard
 
@@ -334,6 +348,8 @@ O gráfico de **instalações incrementais cumulativas** está na parte inferior
 
 </Accordion>
 
+<div id="manage" />
+
 ## Gerenciar
 
 Essa seção explica como gerenciar suas conexões, a política de geodesign e os experimentos.
@@ -365,6 +381,8 @@ A política de geodesign permite que você defina regras de geodesign para seu e
 
 Use regras de geodesign para cumprir as restrições legais, proteger mercados de alto valor ou isolar regiões afetadas por testes paralelos.
 
+<div id="geo-design-rule-types" />
+
 #### Tipos de regras de geodesign
 
 Três tipos de regras estão disponíveis:
@@ -374,6 +392,8 @@ Três tipos de regras estão disponíveis:
 | **Não usar holdout** | Estas regiões nunca são inseridas em grupos de holdout, mas ainda podem estar em grupos expostos. Suas campanhas nessas regiões nunca são pausadas nem interrompidas pelo experimento. | Um mercado de alta performance que deve permanecer ativo em todos os momentos. |
 | **Não segmente** | Estas regiões estão totalmente excluídas da segmentação de campanhas. Elas não aparecerão em grupos expostos ou de holdout. | Um mercado onde os anúncios são legalmente restritos. |
 | **Excluir da análise** | Estas regiões permanecerão na segmentação de campanhas para manter a atividade normal de anúncios, mas não serão incluídas em grupos expostos ou de holdout. | <ul><li>Regiões que executam testes de geo-lift em paralelo e que podem distorcer os resultados.</li><li>Regiões que executam testes de geo-lift em paralelo ou que têm ações de marketing locais previstas, podendo distorcer os resultados.</li></ul> |
+
+<div id="set-up-a-geo-design-rule" />
 
 #### Configure uma regra de geodesign
 
@@ -391,6 +411,8 @@ Três tipos de regras estão disponíveis:
 
 Agora a regra está ativa e será aplicada a todos os geodesigns calculados para o aplicativo e o país selecionados no futuro.
 
+<div id="delete-a-geo-design-rule" />
+
 #### Exclua uma regra de geodesign
 
 **Para eliminar uma regra de geodesign:**
@@ -399,9 +421,13 @@ Agora a regra está ativa e será aplicada a todos os geodesigns calculados para
 2. Abra o menu de ações e selecione **Excluir**.
 3. Confirme no diálogo **Excluir regra?** .
 
+<div id="note-3" />
+
 > 📘 **Observação**
 >
 > A exclusão de uma regra não afeta os experimentos ativos. Se havia regras anteriores (ou nenhuma regra), elas permanecem em vigor para qualquer experimento que já esteja em execução. A exclusão de uma regra apenas remove-a de futuros geodesigns/experimentos.
+
+<div id="view-geo-design-rules-in-an-experiment" />
 
 #### Veja as regras de geodesign em um experimento
 
@@ -412,6 +438,8 @@ Assim que um geodesign for aprovado e você estiver configurando seu experimento
 * **Regras de exclusão:** As regras ativas (não usar holdout, não segmentar ou excluir da análise) e as regiões específicas que elas abrangem
 
 No relatório do experimento, você pode ver a análise geográfica completa ao selecionar **Análise de geodesign** no menu de ações. Isso mostra a mesma análise acima, exibindo as regras que estavam ativas quando o experimento foi criado. Para gerenciar as regras, clique em **Gerenciar política de geodesign** na parte inferior do painel.
+
+<div id="traits-and-limitations" />
 
 #### Características e limitações
 
@@ -447,6 +475,8 @@ Para cada experimento, você pode ver:
 * **Datas** - intervalo de datas do experimento
 * [**Status**](#coluna-de-status) - você pode ver o número de dias restantes no experimento ou quando ele é concluído.
 * **aumento**
+
+<div id="status-column" />
 
 #### **Coluna de status**
 
@@ -494,6 +524,8 @@ No experimento, clique no ícone de ⠇ ações (no canto superior direito) e se
 <Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
+
+<div id="traits-and-limitations-1" />
 
 ## Características e limitações
 

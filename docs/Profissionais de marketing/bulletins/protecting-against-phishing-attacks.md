@@ -23,6 +23,8 @@ Phishing é uma tática enganosa usada por cibercriminosos para obter informaç�
 
 Na AppsFlyer, temos o compromisso de manter a segurança e a integridade do nosso ambiente digital. Este artigo explica como identificar tentativas de phishing e se proteger contra atividade maliciosa, com ênfase especial na verificação da legitimidade de comunicações relacionadas à AppsFlyer.
 
+<div id="official-appsflyer-domain" />
+
 ## **Domínio oficial da AppsFlyer**
 
 O único domínio oficial da AppsFlyer é: [https://www.appsflyer.com](https://www.appsflyer.com)
@@ -30,6 +32,8 @@ O único domínio oficial da AppsFlyer é: [https://www.appsflyer.com](https://w
 Qualquer outro domínio não é afiliado à AppsFlyer e pode ser usado como parte de um esquema de phishing. Recomendamos fortemente que os usuários tenham cautela ao acessar sites ou clicar em links que alegam representar a AppsFlyer.
 
 Sempre verifique se o domínio em uso está correto e corresponde exatamente ao nosso site oficial.
+
+<div id="identifying-a-phishing-attempt" />
 
 ## **Como identificar uma tentativa de phishing**
 
@@ -60,6 +64,8 @@ Se você receber solicitações incomuns de informações, ações ou taxas adia
 
 Se você receber solicitações para se comunicar por aplicativos de mensagens, como WhatsApp, Telegram etc., considere essas solicitações muito suspeitas e evite-as. 
 
+<div id="be-aware-of-employment-scams" />
+
 ## **Fique atento a golpes de emprego**
 
 Um golpe comum recente é o golpe de emprego, em que golpistas fingem  ser empregadores ou recrutadores para enganar pessoas e obter informações pessoais, exigir pagamento por ofertas de emprego falsas ou praticar outras formas de exploração financeira.   
@@ -69,6 +75,8 @@ Portanto, fique atento aos seguintes sinais de alerta:
 * Solicitação de taxas antecipadas: empregadores legítimos nunca pedem dinheiro para processar candidaturas, treinamentos, trabalho ou equipamentos.
 * Descrições vagas da vaga: Golpistas costumam fornecer descrições da vaga pouco claras ou excessivamente genéricas.
 * Solicitações de informações pessoais: Empregadores legítimos não pedem informações pessoais sensíveis (como números de seguridade social ou dados de conta bancária) no início do processo de contratação.
+
+<div id="reporting-suspicious-activity" />
 
 ## **Como reportar atividades suspeitas**
 
@@ -80,6 +88,8 @@ Se você receber uma comunicação ou encontrar um site que pareça ser afiliado
 * Reporte a atividade imediatamente para nossa equipe de segurança em: security@appsflyer.com.
 
 Seu reporte proativo nos permite responder rapidamente e ajuda a proteger a comunidade em geral.
+
+<div id="best-practices-for-online-safety" />
 
 ## **Práticas recomendadas para segurança online**
 

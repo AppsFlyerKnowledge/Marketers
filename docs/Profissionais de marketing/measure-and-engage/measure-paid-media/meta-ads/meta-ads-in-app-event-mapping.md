@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Visão geral:** envie eventos avançados dentro do aplicativo pelo seu aplicativo da AppsFlyer para Meta ads.
 
+<div id="meta-in-app-events-mapping" />
+
 ## Mapeamento de eventos in-app do Meta
 
 Os anunciantes mapeiam seus eventos in-app, SDK ou de servidor para servidor para eventos do Meta predefinidos. Os anunciantes também podem enviar postbacks do Meta sobre cada <Anchor target="_blank" href="/marketers/pt/docs/measure-sessions">inicialização de aplicativo</Anchor> ou qualquer <Anchor target="_blank" href="/marketers/pt/docs/measure-uninstalls#mapeando-o-evento-de-desinstalação">desinstalação de aplicativo</Anchor> conhecidas.
 
 Isso permite que os anunciantes utilizem os recursos avançados de otimização do Meta, bem como criem segmentos de público personalizado e semelhante.
+
+<div id="predefined-event-mapping" />
 
 ### Mapeamento de eventos predefinidos
 
@@ -53,11 +57,15 @@ Abaixo está a lista de outros eventos do Meta predefinidos que não possuem par
 | Personalizar produto | A personalização de produtos por meio de uma ferramenta de configuração ou outro aplicativo da sua empresa. | af\_customize\_product |
 | `Adimpression`—para Android  <br />`Fb_mobile_purchase`—para iOS | Otimiza a receita de anúncios na plataforma de anúncios da Meta. [Veja os detalhes abaixo](#mapeamento-de-dados-de-receita-de-anúncios-para-otimização-de-campanhas). | af\_ad\_revenue |
 
+<div id="mapping-ad-revenue-data-for-campaign-optimization" />
+
 ### Mapeamento de dados de receita de anúncios para otimização de campanhas
 
 Os anúncios da Meta podem otimizar suas campanhas com base em seus dados de receita de anúncios. Isso é feito mapeando o evento af\_ad\_revenue para o seguinte evento de anúncios da Meta:
 
 <table><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th><strong>Nome do evento na AppsFlyer</strong></th><th><strong>Platform</strong> </th><th><strong>Mapeado para eventos de parceiros</strong></th><th><strong>Otimização de anúncios da Meta com base em:</strong></th></tr></thead><tbody><tr><td rowspan="2"> <br/>af_ad_revenue</td><td>com o Android</td><td>Adimpression</td><td>Receita de anúncios específica</td></tr><tr><td>/docs/ctv-pc-and-console-platform-attribution-concepts</td><td>fb_mobile_purchase</td><td>In-app purchases</td></tr></tbody></table>
+
+<div id="availability-limitations" />
 
 #### Limitações de disponibilidade
 
@@ -66,6 +74,8 @@ Os anúncios da Meta podem otimizar suas campanhas com base em seus dados de rec
   * Contas selecionadas de anúncios da Meta, de acordo com os critérios da Meta. Quando indisponível, os [critérios de elegibilidade podem não ser atendidos](https://www.facebook.com/business/help/571188993373447?id=561906377587030).
 * O evento *af\_ad\_revenue* está disponível apenas para planos com uma <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-cost-and-revenue-data">assinatura avançada do ROI360</Anchor>. Além disso, você precisa do <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">tipo de integração de receita de anúncios via SDK no nível de impressão</Anchor>.
   * Planos sem o ROI360 podem enviar dados de receita de anúncios usando outros nomes de eventos.
+
+<div id="custom-in-app-events-mapping" />
 
 ### Mapeamento de eventos in-app personalizados
 
@@ -77,9 +87,13 @@ Observe que você pode <Anchor target="_blank" href="https://www.facebook.com/bu
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
 
+<div id="automatic-parameter-mapping-with-the-custom-event" />
+
 ### Mapeamento automático de parâmetros com o evento PERSONALIZADO
 
 Através da integração direta da AppsFlyer com o Meta, muitos dos parâmetros de eventos do SDK padrão são automaticamente mapeados para os parâmetros predefinidos do Meta. Por exemplo, o parâmetro **af\_revenue** é convertido para o parâmetro **\_valueToSum** no Meta, o que permite que você envie uma receita por evento que pode ser mensurada e otimizada para o Meta.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -136,6 +150,8 @@ A tabela a seguir detalha todos os parâmetros de eventos da AppsFlyer que, quan
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
 
+<div id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter" />
+
 #### Mapeamento automático de eventos predefinidos para o parâmetro `_valueToSum`
 
 Para eventos predefinidos, o parâmetro `_valueToSum` da Meta é mapeado para os parâmetros `af_price` ou `af_revenue`.
@@ -160,6 +176,8 @@ A tabela a seguir detalha esse mapeamento para todos os eventos predefinidos da 
 | Iniciar avaliação | af\_preço |
 | Enviar inscrição | af\_revenue |
 
+<div id="send-complex-in-app-events-to-meta-ads" />
+
 ### Enviar eventos in-app complexos para anúncios da Meta
 
 Em setembro de 2026, recomendamos usar o novo objeto `af_order_info` para enviar eventos in-app complexos — eventos com vários itens — para anúncios da Meta. Esse objeto permite que anunciantes compartilhem eventos in-app complexos com várias networks compatíveis. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/item-level-order-data-for-ad-networks-af-order-info">Dados de pedidos em nível de item para ad networks (af\_order\_info)</Anchor>.
@@ -172,9 +190,13 @@ Como alternativa, você ainda pode usar um array estruturado de `af_content`. Ca
 
 Se você incluir `af_content_list`, não inclua também `af_content_id` no mesmo evento. Ambos os parâmetros são mapeados para `fb_content_id`, e apenas um deles deve ser preenchido para evitar conflitos.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > `fb_content_id` é importante para casos de uso no nível do produto, como a correspondência de eventos com itens do catálogo para Advantage+ Catalog Ads e Dynamic Ads, relatórios de performance no nível do produto e sinais de otimização baseados no produto. Para a otimização geral de conversão com base na contagem e no valor dos eventos, as campanhas funcionam sem ele.
+
+<div id="example-unified-format-compatible-with-meta-and-tiktok" />
 
 > 📄 **Exemplo: formato unificado compatível com Meta e TikTok**
 >
@@ -189,11 +211,15 @@ Se você incluir `af_content_list`, não inclua também `af_content_id` no mesmo
 
 Esse formato funciona tanto para Meta quanto para TikTok. O TikTok também lê os valores de `id` do campo `af_content`, portanto uma única carga útil é suficiente ao enviar postbacks para ambas as networks.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Se o parâmetro `af_content` exceder 1.000 caracteres, a AppsFlyer poderá enviar o evento para a Meta sem o parâmetro `fb_content`. Se `af_content_list` também estiver ausente nesse cenário, a Meta não receberá dados de identificação do produto. Mantenha `af_content` abaixo de 1.000 caracteres para eventos que incluam muitos itens.
 
 Para mais detalhes sobre como estruturar eventos in-app complexos, consulte o artigo <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#what-are-complex-inapp-events-and-how-do-i-set-them-up">Eventos in-app: Visão geral</Anchor>.
+
+<div id="event-and-parameter-limitations" />
 
 ## Limitações de eventos e parâmetros
 
@@ -215,6 +241,8 @@ Considerações sobre a nomeação de eventos in-app:
 * Nomes de eventos na AppsFlyer podem ser nomeados igual aos nomes dos eventos do Meta (por exemplo, fb\_price). No entanto, eles não devem ser enviados como eventos PERSONALIZADOS para o Meta.  
   **Por questões de segurança, evite nomear os eventos igual aos nomes de eventos do Meta.**
 * Para realizar o mapeamento de postback de eventos in-app com o Meta, obtenha dados de eventos de todas as fontes, incluindo orgânica.
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >

@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Visão geral:** meça a qualidade dos seus usuários durante toda a jornada de usuário gravando esses eventos in-app sugeridos para seu aplicativo de empréstimo P2P (peer-to-peer).
 
+<div id="-p2p-lending" />
+
 ## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> Empréstimo P2P
 
 O empréstimo P2P é uma maneira para que pessoas e empresas peçam e forneçam empréstimos umas às outras. Os eventos típicos que sugerimos que você grave são as atividades de credores e mutuários individuais, os tipos de empréstimos que as pessoas oferecem, e taxas de aceitação e rejeição de empréstimos.
 
 Os dados que você reunir com a gravação de eventos podem destacar mutuários confiáveis e oferecer a eles melhores taxas de juros. Da mesma maneira, você pode identificar os credores mais ativos e oferecer a eles taxas mais baixas. Além do mais, após saber quais tipos de empréstimos são mais populares entre seus usuários, é possível lançar campanhas de marketing que atinjam esses públicos.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -39,6 +43,8 @@ Os dados que você reunir com a gravação de eventos podem destacar mutuários 
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![Fluxograma_para_eventos_recomendados_jornada_do_usuário_do_aplicativo_de_empréstimo_P2P](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -81,6 +87,8 @@ Quando o usuário faz login com sucesso
 Pode ser enviado sem nenhum parâmetro adicional
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 
@@ -126,6 +134,8 @@ Quando um mutuário envia um formulário
 **Parâmetros do evento**
 
 Pode ser enviado sem nenhum parâmetro adicional
+
+<div id="note" />
 
 > 📘 **Nota**
 >

@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** trabalhe com o desenvolvedor do seu app mobile ou de CTV para integrar e instalar o SDK em aplicativos Android ou iOS. Depois que as tarefas básicas de integração forem concluídas, seu aplicativo estará pronto para atribuição de instalação e métricas de eventos in-app.
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **Implementação da dev key em seu app**
 
 A AppsFlyer usa a dev key para identificar a sua conta. A dev key é obrigatória, pois ela permite que o SDK envie e recupere com segurança dados da sua conta. O seu desenvolvedor deve instalar e integrar o SDK, inserindo a dev key.
+
+<div id="retrieve-the-dev-key" />
 
 #### Recuperar a dev key
 
@@ -42,12 +46,16 @@ Antes que seu desenvolvedor possa instalar e integrar o SDK, você deve recupera
 
    ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
+<div id="provide-the-dev-key-to-your-developer" />
+
 #### Forneça a Dev Key ao seu desenvolvedor
 
 Forneça a Dev Key, o App ID e o API v2 token da AppsFlyer ao seu desenvolvedor com as seguintes instruções:
 
 * Use o <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration">assistente de integração do SDK</Anchor> para instalação e integração automatizadas do SDK.
 * Siga as instruções passo a passo para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">instalar</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">integrar</Anchor> o SDK.
+
+<div id="where-to-start-the-sdk" />
 
 ## **Onde iniciar o SDK?**
 
@@ -60,7 +68,11 @@ No entanto, para cumprir regulamentações de preservação de privacidade, como
 <Tabs>
 <Tab title="Iniciando o SDK no Android native">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### O passo a passo da implementação do SDK para deferred deep linking.
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### SELECIONE EM QUAL CLASSE INICIAR O SDK
 
@@ -68,6 +80,8 @@ Selecione se deseja iniciar o SDK na classe  `Application` global ou na classe
 
 * **Iniciar o SDK na classe** `Application` **global**: geralmente, inicializar o SDK na classe/subclasse `Application` global é uma prática recomendada, pois a classe `Application` é carregada e inicializada antes que qualquer interface do aplicativo seja exibida. Isso garante que o SDK possa ser iniciado a qualquer cenário, incluindo deep linking.
 * **Inicie o SDK em uma classe** `Activity` **(início adiado)** para permitir que os usuários aceitem o compartilhamento de dados. Isso ocorre porque a obtenção do consentimento do usuário requer uma interface de usuário (IU) renderizada em uma classe `Activity`.
+
+<div id="android-developer-instructions" />
 
 #### INSTRUÇÕES PARA DESENVOLVEDORES ANDROID
 
@@ -82,6 +96,8 @@ Selecione se deseja iniciar o SDK na classe  `Application` global ou na classe
 <Tab title="Android nativo iOS nativo Unity React nativo">
 
 <div id="starting-the-sdk-in-ios" />
+
+<div id="starting-the-sdk-in-ios-native" />
 
 ### Iniciar o SDK em iOS Native
 
@@ -113,6 +129,8 @@ Compartilhe com seu desenvolvedor as seguintes informações:
 
 <div id="starting-the-sdk-in-Unity" />
 
+<div id="starting-the-sdk-in-unity" />
+
 ### O passo a passo da implementação do SDK para deep linking unificado.
 
 Envie ao seu desenvolvedor <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">este artigo do Dev Hub</Anchor> sobre como iniciar o SDK.
@@ -123,6 +141,8 @@ Envie ao seu desenvolvedor <Anchor target="_blank" href="https://dev.appsflyer.c
 
 <div id="starting-the-sdk-in-react" />
 
+<div id="starting-the-sdk-in-react-native" />
+
 ### http://dev.appsflyer.com/hc/docs/in-app-events-sdk
 
 Envie ao seu desenvolvedor <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">este artigo do Dev Hub</Anchor> sobre como iniciar o SDK.
@@ -130,11 +150,15 @@ Envie ao seu desenvolvedor <Anchor target="_blank" href="https://dev.appsflyer.c
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## Defina a sua estratégia de proteção à privacidade
 
 Defina **como você pretende garantir a privacidade dos usuários.** Por exemplo, escolha entre interromper o SDK na instalação, impedir o compartilhamento de dados com terceiros, anonimizar os dados do usuário ou desabilitar identificadores específicos.
 
 Para mais informações sobre os diferentes métodos de proteção à privacidade disponíveis, consulte <Anchor target="_blank" href="/marketers/pt/docs/apply-privacy-preserving-sdk-methods">Métodos de proteção à privacidade no SDK</Anchor>.
+
+<div id="attribution" />
 
 ## **Atribuição**
 
@@ -271,6 +295,8 @@ Consulte o Dev Hub para <Anchor target="_blank" href="https://dev.appsflyer.com/
 
 Quando a atribuição ocorre usando IDFA, é importante que o IDFA seja enviado na **primeira inicialização.** Por esse motivo, o SDK fornece o método `waitForATTUserAuthorization`.
 
+<div id="waitforattuserauthorization-overview" />
+
 #### Visão geral da função waitForATTUserAuthorization
 
 > 🚧 **Important**
@@ -371,6 +397,8 @@ Para desativar a atribuição SKAN, use <Anchor target="_blank" href="https://de
 
 </Accordion>
 
+<div id="recording-in-app-events" />
+
 ## **Registro de eventos in-app**
 
 Eventos in-app (IAE) oferecem insights sobre o que está acontecendo em seu aplicativo. O registro de eventos in-app ajuda a mensurar KPIs como ROI (retorno sobre o investimento) e LTV (Lifetime Value). Recomendamos que você separe um momento para definir os eventos que deseja gravar.
@@ -423,6 +451,8 @@ Veja nossa <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overv
 
 </Accordion>
 
+<div id="deep-linking-with-onelink" />
+
 ## **Deep linking com o OneLink**
 
 OneLink é a solução da AppsFlyer para atribuição multiplataforma, **redirecionamento e deep linking**.
@@ -469,6 +499,8 @@ Consulte nosso guia sobre como configurar <Anchor target="_blank" href="/market
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **Acessando dados de atribuição e deep linking**
 
 A tabela a seguir descreve os métodos disponíveis para a recuperação de dados de atribuição e deep linking:
@@ -492,6 +524,8 @@ Observe o seguinte para usuários que não deram o consentimento no iOS 14.5+:
 >
 > * Use a Push API para recuperar dados de atribuição e enviá-los para seus servidores para processamento posterior. Esse método aguarda que os dados se tornem disponíveis e, portanto, é muito preciso e próximo do tempo real. O GCD fornece dados em tempo real, mas pode apresentar imprecisões quando as decisões finais de atribuição são efetuadas após mais de cinco segundos.
 > * Use a Pull API para complementar periodicamente (por exemplo, diariamente) dados de atribuição em tempo real e para compensar quaisquer erros de comunicação que possam ocorrer.
+
+<div id="testing-your-sdk-integration" />
 
 ## **Testar a integração do SDK**
 

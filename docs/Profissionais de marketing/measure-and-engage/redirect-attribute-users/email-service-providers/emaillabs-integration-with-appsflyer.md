@@ -24,6 +24,8 @@ x-zendesk:
 
 ![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
 
+<div id="introduction" />
+
 ## Introdução
 
 ESPs (Email Service Providers ou provedores de serviços de e-mail) podem ser excelentes fontes de tráfego segmentado de usuários.
@@ -31,6 +33,8 @@ ESPs (Email Service Providers ou provedores de serviços de e-mail) podem ser ex
 Um dos desafios ao usar ESPs é registrar cliques e, ao mesmo tempo, preservar a funcionalidade de Deep linking. Os ESPs encapsulam a URL de Deep linking com seu próprio domínio de registro de cliques. Essa ação muitas vezes interrompe os Links Universais do iOS.
 
 No entanto, com ESPs que oferecem suporte a Links Universais além do seu domínio de registro de cliques, ainda é possível realizar o Deep linking e o registro de cliques com sucesso.
+
+<div id="sdk-version-prerequisites" />
 
 ## Pré-requisitos de versão do SDK
 
@@ -48,6 +52,8 @@ No entanto, com ESPs que oferecem suporte a Links Universais além do seu domín
 </Tab>
 </Tabs>
 
+<div id="step-1-integration-setup-in-emaillabs" />
+
 ## Etapa 1: Configuração da integração no EmailLabs
 
 **Para configurar a integração no EmailLabs:**
@@ -60,6 +66,8 @@ No entanto, com ESPs que oferecem suporte a Links Universais além do seu domín
 4. Entre em contato com o suporte do EmailLabs em [bok@emaillabs.pl](mailto:bok@emaillabs.pl) e solicite a ativação do SSL.
 5. No EmailLabs, acesse **Panel** > **SMTP** **Accounts** > **Settings** > **Deep** **Links** e marque a caixa "Activated". Para aplicativos iOS, insira o <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">ID do aplicativo da Apple</Anchor> no respectivo campo.  
    ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
+
+<div id="step-2-configuring-your-appsflyer-sdk" />
 
 ### Etapa 2: Configure seu SDK AppsFlyer
 
@@ -79,6 +87,8 @@ Depois de configurar seu domínio de registro de cliques para oferecer suporte a
    [[AppsFlyerLib shared] resolveDeepLinkURLs = @[@"example.com",@"click.example.com"];
    ```
 3. Quando o aplicativo é invocado devido a um clique no Universal Link, o AppsFlyer SDK resolve o deep link e extrai o OneLink subjacente. Todos os parâmetros de deep link são então propagados para a API onAppOpenAttribution para execução da lógica de deep link.
+
+<div id="step-3-send-emails-with-onelink-through-emaillabs" />
 
 ## Etapa 3: Envie e-mails com OneLink através do EmailLabs
 
@@ -111,6 +121,8 @@ Depois de configurar seu domínio de registro de cliques para oferecer suporte a
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="step-4-test-your-links" />
 
 ## Etapa 4: Teste seus links
 

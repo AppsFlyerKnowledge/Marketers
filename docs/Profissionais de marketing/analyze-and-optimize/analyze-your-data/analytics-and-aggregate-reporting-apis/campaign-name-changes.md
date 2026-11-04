@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Visão geral:** Altere os nomes das campanhas sem criar exibições de dados duplicadas.
 
+<div id="campaign-name-changes" />
+
 ## Alterações no nome da campanha
 
 Alterar os nomes das campanhas afeta a exibição de **dados agregados** em painéis e relatórios. A AppsFlyer exibe campanhas usando o ID da campanha como chave. Se houver mais de um nome associado ao mesmo ID de campanha, o nome informado mais recentemente será usado para exibir dados.
@@ -52,12 +54,14 @@ A tabela a seguir mostra quais painéis e relatórios são compatíveis com alte
 | ETL de custos | Sim |
 | Painel de visão geral do SKAN | Não |
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > * Em 1º de janeiro, a campanha **example\_a1** começou a ser veiculada.
 > * Em 2 de janeiro, o nome da campanha foi alterado de **example\_a1** para **example\_a2**.
 >
-> #### Exemplos de dados de campanha
+> #### <span id="example-campaign-data"></span>Exemplos de dados de campanha
 >
 >
 >
@@ -68,11 +72,13 @@ A tabela a seguir mostra quais painéis e relatórios são compatíveis com alte
 >
 >
 >
-> #### Visualização do painel de visão geral
+> #### <span id="overview-dashboard-display"></span>Visualização do painel de visão geral
 >
 >
 >
 > <table><tbody><tr><th><p><span>Campanha</span></p></th><th><p><span>ID da campanha</span></p></th><th><p><span>Instalações</span></p></th><th><p><span>Gasto com anúncios</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>US$ 300</span></p></td></tr><tr><td colspan="4"><p>Resultado: Os dados são exibidos sob o nome da campanha mais recente.</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### Prática recomendada:
 

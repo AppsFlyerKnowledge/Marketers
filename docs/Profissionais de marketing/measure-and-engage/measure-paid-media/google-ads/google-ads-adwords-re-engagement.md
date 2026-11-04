@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** Mensure campanhas de retargeting do Google Ads.
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Campanhas de retargeting do Google Ads
 
 Com a AppsFlyer, você pode mensurar os resultados das **campanhas de aplicativos do Google Ads para engajamento**.  
@@ -33,6 +35,8 @@ Campanhas de retargeting visam usuários que já instalaram seu aplicativo anter
 * Os engajamentos de retargeting feitos por usuários que não têm seu aplicativo instalado são chamados de **reinstalações** ou **reatribuições**
 
 Para mais informações, consulte a <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">documentação de suporte do Google Ads para engajamento</Anchor>.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Como configurar campanhas de aplicativos do Google Ads para engajamento
 
@@ -70,6 +74,8 @@ Esse evento aparece no Google Ads se pelo menos um usuário iniciar o aplicativo
 
 Para saber como importar conversões no Google Ads, consulte <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">aqui</Anchor>.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Ao contrário de todos os outros eventos, session\_start pode ser reivindicado pela API do Google Ads, mesmo que você não importe eventos de session\_start para o Google Ads a partir da AppsFlyer.
@@ -87,6 +93,8 @@ Não há necessidade de acrescentar parâmetros adicionais ao link direto (is\_r
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## Remarketing dinâmico e campanhas de compras
 
 A AppsFlyer é compatível com remarketing dinâmico para aplicativos e campanhas de compras. A plataforma AppsFlyer trata essas campanhas como qualquer outra campanha de reengajamento.
@@ -94,6 +102,8 @@ A AppsFlyer é compatível com remarketing dinâmico para aplicativos e campanha
 * Para saber mais sobre o remarketing dinâmico para aplicativos, clique <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">aqui</Anchor>.
 * Para saber mais sobre campanhas de compras, clique <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">aqui</Anchor>.
 * Para saber mais sobre o Google Ads para engajamento, clique <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">aqui</Anchor>.
+
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
 
 ### Suporte para campanhas não relacionadas a aplicativos (Demand Gen e SEM)
 
@@ -112,6 +122,8 @@ Na AppsFlyer, essas campanhas estão **prontas para uso** e não exigem:
 * **Instalações** de campanhas de Demand Gen ou SEM não são atribuídas em nenhuma plataforma.
 
 **Opt-out:** no momento, o Google não oferece suporte para opt-in ou opt-out na mensuração de campanhas não relacionadas a aplicativos (ao contrário de plataformas como TikTok e Meta).
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

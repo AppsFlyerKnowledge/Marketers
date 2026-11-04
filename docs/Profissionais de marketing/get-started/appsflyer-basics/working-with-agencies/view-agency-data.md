@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **Resumo:** Saiba mais sobre a transparência de dados de agências para entender como ela afeta forma como seus dados são exibidos na AppsFlyer.
 
+<div id="about-agency-data" />
+
 ## Sobre os dados de agência
 
 Ao trabalhar com agências, você pode visualizar o tráfego gerado por elas nos dashboards e relatórios da AppsFlyer. Isso significa que suas fontes de mídia são reveladas.
+
+<div id="viewing-agency-traffic-in-reports" />
 
 ### Visualizar o tráfego da agência nos relatórios
 
@@ -43,6 +47,8 @@ Ao trabalhar com agências, você pode visualizar o tráfego gerado por elas nos
 1. Na AppsFlyer, no menu lateral, selecione **relatório** > **exportar dados agregados**.
 2. Faça o download de um relatório que inclui a atribuição da fonte de mídia.
 
+<div id="viewing-agency-traffic-in-the-overview-dashboard" />
+
 ### Visualizar o tráfego da agência no dashboard de Visão geral
 
 **Para ver o tráfego das agências:**
@@ -53,6 +59,8 @@ Ao trabalhar com agências, você pode visualizar o tráfego gerado por elas nos
    O dashboard mostra as fontes de mídia usadas por agências transparentes.
 
 **Atenção:** Usando o filtro **agrupar por**, é possível agrupar os dados por agência também. Selecionando várias agências no filtro e agrupando por agência, é possível comparar a performance das diferentes agências com as quais você realiza campanhas.
+
+<div id="viewing-agency-traffic-in-the-retention-dashboard" />
 
 ### Visualizar o tráfego da agência no dashboard de retenção
 

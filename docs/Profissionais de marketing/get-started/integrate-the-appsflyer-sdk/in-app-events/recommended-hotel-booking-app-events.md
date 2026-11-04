@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** mensure a qualidade dos seus usuários durante toda a jornada de usuário, registrando esses eventos in-app sugeridos para seu aplicativo de reserva de hotel.
 
+<div id="-hotel-booking" />
+
 ## <Image alt="InApp_Events_hotel.png" src="https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png" width="100px" /> Reserva de hotel
 
 Aplicativos de reserva de hotel permitem que os viajantes reservem hotéis com facilidade e escolham as melhores ofertas. Os eventos típicos que sugerimos que você registre são pesquisa, compra, reserva de viagens e inclusão na lista de desejos.
@@ -34,6 +36,8 @@ Registrar eventos pode ajudar a determinar:
 
 Você pode atribuir preferências como pontuação do hotel, temporada, país e número de crianças para os usuários que vêm de certas fontes de mídias. Assim, você pode otimizar suas campanhas direcionando essas preferências de usuário.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Certifique-se de ler as <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#configurando-eventos-in-app">instruções</Anchor> para os profissionais de marketing sobre a implementação de eventos in-app.
@@ -44,6 +48,8 @@ Você pode atribuir preferências como pontuação do hotel, temporada, país e 
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![Fluxograma da jornada do utilizador da aplicação de reserva de hotel para eventos recomendados](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -292,6 +298,8 @@ Quando o usuário chega à página de agradecimento após reservar um hotel
 | nova\_reserva | Primeira reserva do usuário | verdadeiro |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

@@ -31,6 +31,8 @@ Assista ao vídeo abaixo para saber:
 * Como configurar a integração de uma agência com a sua aplicação?
 * Como pode aceder aos dados de atribuição tanto da agência como da rede de publicidade?
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Ao trabalhar com agências, desativar um parceiro integrado não desativa automaticamente certos recursos de atribuição para as agências conectadas a esse parceiro:

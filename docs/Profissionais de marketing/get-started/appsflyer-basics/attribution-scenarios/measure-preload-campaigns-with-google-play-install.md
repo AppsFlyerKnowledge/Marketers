@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** A AppsFlyer usa o Google Play Auto Install (PAI) para atribuir instalações a campanhas de pré-carga, onde os profissionais de marketing contratam operadoras móveis e parceiros de descoberta de aplicativos para pré-carregar seu aplicativo no momento em que o dispositivo é ligado pela primeira vez pelo usuário. **Observação**: Esse método de atribuição difere da atribuição de <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-factory-preinstall-using-manifest-android">pré-instalação do APK</Anchor>.
 
+<div id="pai-preload-attribution" />
+
 ## Atribuição de pré-carga da API
 
 Em campanhas de pré-carga, fabricantes de dispositivos originais (OEMs), operadoras de celular e parceiros de descoberta de aplicativos pré-carregam aplicativos em dispositivos que são baixados na primeira ativação do dispositivo.
@@ -32,9 +34,13 @@ O Google Play Auto Install (PAI) (1 de 3 métodos de atribuição de pré-carga)
 
 A AppsFlyer dá a maior prioridade à atribuição de pré-carga. Isso significa que, se um usuário interagir com outras campanhas antes de abrir o aplicativo pela primeira vez, a atribuição será concedida à campanha de pré-carga. Outros engajamentos são considerados como instalações assistidas.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > A configuração de prioridade de atribuição igual do pré-carregamento não se aplica ao Google PAI.
+
+<div id="flow" />
 
 ### Fluxo
 
@@ -44,6 +50,8 @@ A AppsFlyer dá a maior prioridade à atribuição de pré-carga. Isso significa
 4. Atributos da AppsFlyer com base nos dados recuperados.
 
 ![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+
+<div id="data-availability" />
 
 ### Disponibilidade de dados
 
@@ -58,6 +66,8 @@ Os dados brutos incluem os seguintes campos:
 * Match\_type = preload\_pai
 * Campaign\_name = pré-carregar campanha por `<preloadpartner ID>`
 
+<div id="set-up-google-play-auto-install-pai-preload-attribution" />
+
 ### Configurar a atribuição de pré-carga do Google Play Auto Install (PAI)
 
 **Para configurar a atribuição de pré-carga da API:**
@@ -67,6 +77,8 @@ Os dados brutos incluem os seguintes campos:
 3. Ative **Atribuição de pré-carga**.
 4. Defina a duração da **janela de lookback de pré-carga**.
 
+   <div id="note-1" />
+
    > 📘 **Nota**
    >
    > O Google armazena dados do referenciador por até 90 dias. Defina a janela de lookback do PAI como 90 dias ou menos. Embora a UI permita até 180 dias, os dados além de 90 dias não ficam disponíveis no Google.
@@ -74,13 +86,19 @@ Os dados brutos incluem os seguintes campos:
 5. Clique em **Salvar integração**.
 6. Informe ao parceiro de pré-carga que você está pronto para atribuir suas campanhas.
 
+<div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
+
 ### Parceiros que apoiam campanhas de pré-carga do Google Play Auto Install (PAI)
 
 <table><thead><tr><th rowspan="2">Parceiro</th><th rowspan="2">PID</th></tr></thead><tbody><tr><td><p>Xiaomi</p></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>Motorola</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>Lenovotab</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>Pré-instalação do KDDI</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > **Observação**: As agências não podem ativar campanhas de pré-carga para seus clientes.
+
+<div id="postbacks-for-preload-partners" />
 
 ## Postbacks para parceiros de pré-carga
 
@@ -102,6 +120,8 @@ Quando incluídas em um postback, as macros contêm por dados relevantes ao usu�
 | app\_version | SDK | Versão do aplicativo definido pelo desenvolvedor do aplicativo no código do aplicativo |
 | device\_type | SDK | O nome do modelo comercial do dispositivo. Exemplo: SM-GM284 ou iPhone7 |
 | os\_version | SDK | Versão do sistema operacional do dispositivo |
+
+<div id="postback-example" />
 
 #### Exemplo de postback
 

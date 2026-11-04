@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** Saiba mais sobre os relatórios de receita do ROI360, suas fontes, como são gerados, quando estão disponíveis e como você pode acessá-los. Entenda os campos e a estrutura dos relatórios baixando a amostra de dados.
 
+<div id="revenue-etl" />
+
 ## ETL de receitas
 
 Com o Revenue ETL do ROI360, seus dados de receita são enviados via Data Locker para armazenamento na nuvem para envio aos seus sistemas de BI.
@@ -38,6 +40,8 @@ A tabela a seguir mostra os relatórios de receita disponíveis. **Atenção**: 
 | [Receita de anúncios [Nível de impressão SDK]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Nível de impressão (via SDK)</li><li>Nível de impressão (via SDK) com nível de dispositivo (via S2S API)</li></ul> | <ul><li>Contém dados de receita de anúncios do SDK.</li><li>Oferece o máximo de atualização e granularidade.</li></ul> | Por hora. <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#data-freshness">Saiba mais</Anchor> |
 | [Relatório de receita da loja a nível de transação](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | Integração da receita de assinaturas e de compras in-app no ROI360 | <ul><li>Contém dados brutos de assinaturas e compras in-app, validados pelo ROI360 no nível da transação.</li><li>Oferece o máximo de atualização e granularidade.</li><li>Inclui dados exclusivos relacionados à monetização e à receita líquida no ROI360.</li></ul> | Por hora |
 | [Receita da loja a nível de dispositivo [versionada]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | Integração da receita de assinaturas e de compras in-app no ROI360 | <ul><li>Contém dados brutos de assinaturas e compras in-app, validados pelo ROI360 a nível de dispositivo.</li><li>Inclui dados exclusivos de receita líquida do ROI360.</li></ul> | A cada 8 horas |
+
+<div id="reports" />
 
 ## Relatórios
 
@@ -53,6 +57,8 @@ O relatório mostra uma única versão dos dados de receita de anúncios de um d
 
 <span id="download-the-report-data-sample"></span>[Baixe a amostra de dados do relatório de receita de anúncios em versão única](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx).
 
+<div id="data-sources" />
+
 #### Fontes de dados
 
 Dependendo do tipo de parceiro de receita de anúncios, os dados do relatório podem ser enviados via:
@@ -61,6 +67,8 @@ Dependendo do tipo de parceiro de receita de anúncios, os dados do relatório p
 * **S2S:** Relatórios a nível de dispositivo obtidos por uma solicitação da API de parceiros (redes de mediação ou monetização).
 
 Para saber como definir o tipo de integração, consulte: Conectar-se a parceiros integrados de receita de anúncios.
+
+<div id="data-flow" />
 
 #### Fluxo de dados
 
@@ -75,12 +83,16 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
    **Atenção:** Um relatório pode ter mais de uma agregação a nível de dispositivo para o mesmo dispositivo. Isso pode acontecer porque a agregação a nível de dispositivo se baseia nas dimensões relacionadas à monetização, como rede de monetização, posição e tipo de anúncio. Por exemplo, se o aplicativo exibir anúncios em dois canais diferentes, os eventos de receita de cada canal serão agregados separadamente no nível do dispositivo.
 3. **Entrega de dados**: Os dados a nível de dispositivo são registrados na versão única do relatório.
 
+<div id="when-is-the-report-data-available" />
+
 #### Quando os dados do relatório ficam disponíveis?
 
 | Tipo de integração | Dia da versão (X = dia de ocorrência do evento de receita) | Versão disponível em | A versão inclui eventos de receita que ocorrem entre |
 | --- | --- | --- | --- |
 | SDK | Dia X+1 | 20:00 | 00:00 – 24:00 |
 | SDK + S2S | Dia X+1 | 17:00 | 00:00 – 24:00 |
+
+<div id="how-to-subscribe-to-the-report" />
 
 #### Como assinar o relatório?
 
@@ -90,11 +102,15 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 
 **Atenção:** Você também pode selecionar o mesmo relatório para retargeting e orgânico (Retargeting/Receita de anúncios orgânica [versão única]).
 
+<div id="how-to-access-the-report-in-your-bucket" />
+
 #### Como acessar o relatório no seu bucket?
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
 Com o seguinte formato: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
+
+<div id="report-folder-hierarchy" />
 
 #### Hierarquia de pastas de relatório
 
@@ -151,6 +167,8 @@ O objetivo de coletar várias versões do mesmo dia é capturar as variações d
 
 [Baixe a amostra de dados do relatório versionado](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv).
 
+<div id="data-sources-1" />
+
 #### Fontes de dados
 
 Dependendo do tipo de integração do seu parceiro, os dados do relatório podem se originar via:
@@ -160,6 +178,8 @@ Dependendo do tipo de integração do seu parceiro, os dados do relatório podem
 * **S2S + SDK:** Cargas úteis originadas do SDK e do S2S.
 
 Para saber como definir o tipo de integração, consulte: Conectar-se a parceiros integrados de receita de anúncios.
+
+<div id="data-flow-1" />
 
 #### Fluxo de dados
 
@@ -173,6 +193,8 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 
    **Atenção:** Um relatório pode ter mais de uma agregação a nível de dispositivo para o mesmo dispositivo. Isso pode acontecer porque a agregação a nível de dispositivo se baseia nas dimensões relacionadas à monetização, como rede de monetização, posição e tipo de anúncio. Por exemplo, se o aplicativo exibir anúncios em dois canais diferentes, os eventos de receita de cada canal serão agregados separadamente no nível do dispositivo.
 3. **Entrega de dados**: Os dados a nível de dispositivo são registrados em várias versões do relatório de acordo com um cronograma predeterminado (especificado abaixo).
+
+<div id="when-are-the-report-versions-available" />
 
 #### Quando as versões do relatório estão disponíveis?
 
@@ -198,6 +220,8 @@ A tabela fornecida abaixo descreve os cronogramas de geração para as versões 
 | S2S | Dia X+14 | 11:00-12:00 | 00:00 – 03:00 |
 | SDK + S2S | Todas as versões do SDK e S2S acima |  |  |
 
+<div id="how-to-subscribe-to-the-report-1" />
+
 #### Como assinar o relatório?
 
 1. Na AppsFlyer, no menu lateral, selecione **Relatório** > **Data Locker**.
@@ -206,11 +230,17 @@ A tabela fornecida abaixo descreve os cronogramas de geração para as versões 
 
 **Atenção:** Você também pode selecionar o mesmo relatório para retargeting e orgânico (Retargeting/Receita de anúncios orgânica [versionada]).
 
+<div id="how-to-access-the-report-in-your-bucket-2" />
+
+<div id="how-to-access-the-report-in-your-bucket-1" />
+
 #### Como acessar o relatório no seu bucket?
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
 `<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### Hierarquia de pastas de relatório
 
@@ -278,11 +308,15 @@ O relatório mostra dados a nível de impressão divididos em pastas por hora de
 
 [Faça o download da amostra de dados do relatório a nível de impressão de receita de anúncios](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
 
+<div id="data-source" />
+
 #### Fonte de dados
 
 Os dados do relatório se originam de dados a nível de impressão enviados pelo conector ROI360 Ad Revenue SDK e exigem uma integração do tipo SDK.
 
 Para saber como definir o tipo de integração, consulte: Conectar-se a parceiros integrados de receita de anúncios.
+
+<div id="data-flow-2" />
 
 #### Fluxo de dados
 
@@ -293,11 +327,15 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
    3. Geração de eventos de receita de anúncios a nível de impressão.
 3. **Entrega de dados**: Os eventos de impressão são gravados em arquivos divididos por pastas de acordo com a hora da ocorrência. Cada pasta contém somente impressões que ocorreram durante aquela hora.
 
+<div id="when-is-the-report-data-available-1" />
+
 #### Quando os dados do relatório ficam disponíveis?
 
 | Tipo de integração | Dia da versão (X = dia de ocorrência do evento de receita) | Versão disponível em |
 | --- | --- | --- |
 | SDK | Dia X | No final de cada hora reportada |
+
+<div id="how-to-subscribe-to-the-report-2" />
 
 #### Como assinar o relatório?
 
@@ -305,11 +343,15 @@ Para saber como definir o tipo de integração, consulte: Conectar-se a parceiro
 2. No dashboard de **conteúdos do Data Locker**, vá até o bloco **ROI360 RevenueETL**.
 3. Selecione **Receita de anúncios [Nível de impressão SDK].**
 
+<div id="how-to-access-the-report-in-your-bucket-3" />
+
 #### Como acessar o relatório no seu bucket?
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
 `<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="report-folder-hierarchy-2" />
 
 #### Hierarquia de pastas de relatório
 
@@ -362,9 +404,15 @@ Esse relatório apresenta dados brutos diários a nível de transação, dividid
 
 [Faça o download da amostra de dados do relatório a nível de transação](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
 
+<div id="data-sources-3" />
+
+<div id="data-sources-2" />
+
 #### Fontes de dados
 
 Os dados do relatório se originam de transações coletadas por meio do conector ROI360 SDK Purchase e de notificações de armazenamento S2S.
+
+<div id="data-flow-3" />
 
 #### Fluxo de dados
 
@@ -372,17 +420,23 @@ Os dados do relatório se originam de transações coletadas por meio do conecto
 2. O ROI360 VIAP/Subscriptions da AppsFlyer processa os dados, os atribui e cria eventos e valores a nível de transação.
 3. Os eventos a nível de transação são registrados no relatório, separados em pastas por hora.
 
+<div id="when-is-the-report-data-available-2" />
+
 #### Quando os dados do relatório ficam disponíveis?
 
 | Dia da versão (X = dia de ocorrência do evento de receita) | Versão disponível em |
 | --- | --- |
 | Dia X | No final de cada hora reportada |
 
+<div id="how-to-subscribe-to-the-report-3" />
+
 #### Como assinar o relatório?
 
 1. Na AppsFlyer, no menu lateral, selecione **Relatório** > **Data Locker**.
 2. No dashboard de **conteúdos do Data Locker**, vá até o bloco **ROI360 RevenueETL**.
 3. Selecione **Relatório de receita da loja a nível de transação.**
+
+<div id="how-to-access-the-report-in-your-bucket-4" />
 
 #### Como acessar o relatório no seu bucket?
 
@@ -448,11 +502,15 @@ Os dados do relatório se originam de transações coletadas via:
 1. Conector ROI360 SDK Purchase.
 2. Lojas (por exemplo, a App Store e a Google Play Store) por meio de notificações S2S.
 
+<div id="data-flow-4" />
+
 #### Fluxo de dados
 
 1. Os dados do relatório se originam de transações coletadas por meio do conector ROI360 SDK Purchase ou das notificações das lojas S2S.
 2. O ROI360 VIAP/Subscriptions da AppsFlyer processa os dados, os atribui e cria eventos in-app.
 3. Os eventos in-app são agregados a nível de dispositivo e registrados em uma versão do relatório a cada quatro horas.
+
+<div id="when-are-the-report-versions-available-1" />
 
 #### Quando as versões do relatório estão disponíveis?
 
@@ -462,6 +520,8 @@ Os dados do relatório se originam de transações coletadas via:
 | Dia X | 12:00 - 13:00 | 00:00 – 12:00 |
 | Dia X | 20:00 - 21:00 | 00:00 – 20:00 |
 | Dia X+1 | 05:00 - 06:00 | 00:00 – 24:00 |
+
+<div id="how-to-subscribe-to-the-report-4" />
 
 #### Como assinar o relatório?
 
@@ -474,6 +534,10 @@ Os dados do relatório se originam de transações coletadas via:
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 
 `<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
+
+<div id="report-folder-hierarchy-4" />
+
+<div id="report-folder-hierarchy-3" />
 
 #### Hierarquia de pastas de relatório
 

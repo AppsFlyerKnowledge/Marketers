@@ -33,6 +33,8 @@ O relatório de mensuração de colaboração é um relatório agregado que resu
 
 Os campos do relatório são divididos em dois tipos: *dimensões* e *métricas*. Cada um deles pode ser dividido ainda mais em *campos básicos* e *campos calculados*.
 
+<div id="dimensions" />
+
 ### Dados
 
 Uma dimensão é uma categoria de agrupamento que agrega dados em nível de evento em registros do relatório. Por exemplo, se o canal de mídia for selecionado como a dimensão do relatório, cada linha conterá dados agregados de todos os eventos atribuídos a esse canal de mídia. O número de linhas é igual ao número de canais de mídia.
@@ -49,6 +51,8 @@ Quando várias dimensões são selecionadas, como Data do evento, canal de mídi
 
 Ao selecionar uma métrica, escolha a função de agregação. Por exemplo, para a métrica de receita, você selecionaria a função **SUM**.
 
+<div id="what-are-basic-and-calculated-fields" />
+
 ### O que são campos básicos e campos calculados?
 
 Dimensões e métricas podem ser campos básicos ou campos calculados.
@@ -58,6 +62,8 @@ Dimensões e métricas podem ser campos básicos ou campos calculados.
 
 </Accordion>
 
+<div id="create-a-predefined-report" />
+
 ## Criar um relatório predefinido
 
 Para gerar um relatório predefinido, siga estas etapas:
@@ -66,6 +72,8 @@ Para gerar um relatório predefinido, siga estas etapas:
 2. Na página da **Plataforma de Colaboração de Dados** , selecione a colaboração relevante.
 3. Na página de colaboração, clique em **Criar relatório.**
 4. Na caixa de diálogo exibida, clique em **Approve report.** O relatório é enviado ao seu serviço de nuvem conectado usando um nome e uma programação predefinidos.
+
+<div id="create-a-custom-report" />
 
 ## Criar um relatório personalizado
 
@@ -133,6 +141,8 @@ Para definir as dimensões e métricas do relatório, siga estas etapas:
    * **Contagem:** O valor da métrica é a contagem dos valores no nível do evento agregados no registro do relatório. Por exemplo, a métrica de conversões é a contagem de todas as conversões incluídas no registro agrupado.
    * **Contagem distinta**: O valor da métrica é o número de valores únicos de um determinado campo nos eventos agrupados no registro do relatório. Por exemplo, se a métrica selecionada for a contagem distinta de `sku` e um registro agrupado incluir 10 eventos com 4 SKUs diferentes, o valor da métrica será **4**.
 5. Para alterar o nome de exibição do campo, passe o cursor sobre o campo e clique em **Edit display name.**
+
+<div id="create-calculated-field" />
 
 #### Criar campo calculado
 
@@ -214,6 +224,8 @@ O DCP entrega relatórios aos serviços de nuvem selecionados por você usando 
 6. O novo relatório agora é exibido na guia **Relatórios** .
 
 </Accordion>
+
+<div id="report-scheme" />
 
 ## Esquema do relatório
 

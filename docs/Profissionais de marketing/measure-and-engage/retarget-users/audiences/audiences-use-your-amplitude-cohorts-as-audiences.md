@@ -25,15 +25,21 @@ x-zendesk:
 
 > **Visão geral:** Tire proveito dos seus dados próprios sincronizando os seus grupos do Amplitude com a AppsFlyer como audiências importadas.
 
+<div id="about-the-amplitude-integration" />
+
 ## Sobre a integração Amplitude
 
 A **integração entre AppsFlyer Audiences e Amplitude** permite sincronizar diretamente os grupos definidos na sua conta Amplitude com a AppsFlyer como <Anchor target="_blank" href="/marketers/pt/docs/audiences-import-audience-segments-from-internal-systems">audiências importadas</Anchor>. A AppsFlyer pode então funcionar como o seu local centralizado para conectar e manter estes segmentos de audiência com parceiros, consultar métricas de campanhas conectadas e unir as suas informações próprias do Amplitude e AppsFlyer para maximizar o potencial de ambos.
 
 Os grupos do Amplitude podem ser sincronizados com a AppsFlyer de forma única ou como uma sincronização agendada com atualizações diárias ou horárias.
 
+<div id="setting-up-the-integration" />
+
 ## Configuração da integração
 
 Configure a integração Audiences-Amplitude diretamente na plataforma Amplitude.
+
+<div id="define-appsflyer-data-destinations" />
 
 ### Definir destinos de dados na AppsFlyer
 
@@ -58,6 +64,8 @@ Configure a integração Audiences-Amplitude diretamente na plataforma Amplitude
 | Identificador | Indique à AppsFlyer como conectar os seus dados do Amplitude aos dados da AppsFlyer, selecionando uma Propriedade de Utilizador do Amplitude à esquerda e a chave da AppsFlyer para mapear à direita. A chave que escolher na AppsFlyer deve ser uma das seguintes:<ul><li>**Para audiências iOS:** ID de Anunciante iOS, ID de Utilizador Amplitude ou ID de Utilizador do Cliente AppsFlyer</li><li>**Para audiências Android:** ID de Anunciante do Google, ID de Utilizador do Amplitude ou ID de Utilizador do Cliente da AppsFlyer</li></ul> |
 
 4. Clique em **Guardar** para salvar o novo destino da AppsFlyer.
+
+<div id="sync-amplitude-cohorts-to-appsflyer-destinations" />
 
 ### Sincronizar coortes do Amplitude com destinos AppsFlyer
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** Saiba mais sobre a solução Aggregated Event Measurement (AEM) para otimizar conversões e eventos in-app no iOS e atribuir reengajamentos no iOS no Meta Ads.
 
+<div id="overview" />
+
 ## Resumo
 
 A AppsFlyer oferece suporte para a <Anchor target="_blank" href="https://www.facebook.com/business/help/721422165168355">Mensuração de Eventos Agregados (AEM) do Meta Ads</Anchor>. Com essa solução, você pode mensurar eventos da web e de aplicativos para iOS 14+ usando os seguintes métodos de atribuição:
@@ -34,9 +36,13 @@ Como parte da AEM, a Meta aceita conversões e postbacks dentro do aplicativo da
 
 * [Verifique se os eventos do seu aplicativo são elegíveis para a AEM](#verificar-elegibilidade)
 
+<div id="app-aem-for-re-engagement" />
+
 ## AEM para reengajamento
 
 Com a AEM, o Meta Ads fornece atribuição de reengajamento por deep link para usuários de iOS quando o ID do anunciante não está disponível.
+
+<div id="attribution-flow" />
 
 ### Fluxo de atribuição
 
@@ -45,6 +51,8 @@ O Meta Ads anexa dados de atribuição ao deep link junto com o identificador `c
 * Envia os dados de relatórios agregados de volta para o Meta Ads
 * Executa a atribuição com base nas informações do deep link anexadas pelo Meta Ads
 * Inclui dados de atribuição do deep link em dados brutos e relatórios de dados agregados
+
+<div id="attribution-data-parameters" />
 
 ### Parâmetros de dados de atribuição
 
@@ -56,9 +64,13 @@ Estes parâmetros de dados de atribuição, conforme compartilhados pelo Meta Ad
 * `campaign_group_id`
 * `account_id`
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Para aproveitar a AEM no remarketing, o SDK da AppsFlyer recupera a string `campaign_ids` na abertura do deep link. Por padrão, o SDK compartilha deep links de todos os domínios. Se você tiver personalizado sua integração, verifique se ela está configurada para compartilhar deep links de todos os domínios, incluindo o domínio da Meta, e não apenas do domínio da AppsFlyer.
+
+<div id="faqs-on-deep-link-re-engagement-attribution" />
 
 ### Perguntas frequentes sobre a atribuição de reengajamento de deep links
 
@@ -90,7 +102,11 @@ Os dados provenientes de atribuições de deep links não estão sujeitos a rest
 
 </Accordion>
 
+<div id="app-aem-for-app-promotion" />
+
 ## AEM para promoção de aplicativos
+
+<div id="aem-eligibility" />
 
 ### Elegibilidade da AEM
 
@@ -98,9 +114,13 @@ Quando um aplicativo é elegível para AEM no Meta Ads, a **Aggregated Event Mea
 
 <Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Se você tiver problemas com a elegibilidade para AEM, consulte [Verifique se os eventos do seu aplicativo são elegíveis para AEM](#verifique-se-os-eventos-do-seu-aplicativo-são-elegíveis-para-a-aem).
+
+<div id="aem-data-sharing" />
 
 ### Compartilhamento de dados da AEM
 
@@ -111,6 +131,8 @@ Com o **compartilhamento avançado de dados**, você compartilha todos os evento
 
 ![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > * Todos os eventos incluem instalações, aberturas de aplicativos e eventos in-app.
@@ -118,9 +140,13 @@ Com o **compartilhamento avançado de dados**, você compartilha todos os evento
 > * Para eventos in-app enviados de servidor para servidor (S2S), a Meta exige que tanto o **endereço IP** quanto o **identificador para fornecedores (IDFV)** sejam incluídos no payload do evento. Sem esses identificadores, o evento não será elegível para a atribuição da AEM pela Meta.
 > * A AEM da Meta para promoção de aplicativos também pode incluir reivindicações de view-through não determinísticas. Para oferecer suporte à atribuição de view-through não determinística via AEM da Meta, verifique se a opção no nível do aplicativo Enable view-through attribution via campaign measurement modeling está ativada. Para mais detalhes, veja a <Anchor target="_blank" href="/marketers/pt/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling">atribuição de visualização via modelagem probabilística</Anchor>.
 
+<div id="check-if-your-app-events-are-eligible-for-aem" />
+
 ## Verifique se os eventos do seu aplicativo são elegíveis para a AEM
 
 Você pode acessar o Gerenciador de Eventos da Meta para verificar se os eventos do seu aplicativo são elegíveis para a AEM. Caso o evento do seu aplicativo seja elegível, você consegue ver os resultados das suas campanhas de AEM no Gerenciador de Anúncios. Para aprender a verificar se os eventos do seu aplicativo são elegíveis para a AEM, consulte este <Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">artigo da Meta</Anchor>.
+
+<div id="enable-aem-summary" />
 
 ## Habilitar a AEM: resumo
 
@@ -132,6 +158,8 @@ Use a tabela abaixo como uma lista de verificação para habilitar a AEM do Meta
 | **AEM para promoção de aplicativos (instalações)** | Compartilhamento avançado de dados | Integração de parceiros (Meta Ads) | Habilita a AEM para promoção de aplicativos, incluindo disponibilizar para mensuração via Meta os eventos de usuários quando um ID do anunciante não está disponível e aceitar reivindicações não determinísticas (quando aplicável). |
 | **AEM para promoção de aplicativos (instalações)** | Atribuição de exibição via modelagem probabilística | Configurações do aplicativo | Habilita a atribuição de visualização para reivindicações não determinísticas. |
 
+<div id="troubleshooting" />
+
 ## Resolução de problemas
 
 <div id="troubleshooting-ineligible-events-in-meta-aem" />
@@ -139,6 +167,8 @@ Use a tabela abaixo como uma lista de verificação para habilitar a AEM do Meta
 <Accordion title="Solução de problemas de eventos inelegíveis na AEM da Meta">
 
 Se o Meta Ads marcar os eventos do seu aplicativo como inelegíveis, mostrando erros como **“Missing opt-out events”** ou outras mensagens relacionadas à AEM, isso normalmente ocorre devido a dados ausentes ou configurados incorretamente. Use a lista de verificação abaixo para diagnosticar e corrigir problemas comuns.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -201,6 +231,8 @@ Para campanhas de reengajamento pagas:
 
 </Accordion>
 
+<div id="still-not-working" />
+
 #### Ainda não funcionou?
 
 Se eventos específicos permanecerem inelegíveis:
@@ -208,6 +240,8 @@ Se eventos específicos permanecerem inelegíveis:
 1. Vá para o Gerenciador de Eventos da Meta e siga as orientações na tela.
 2. Selecione o evento do aplicativo afetado.
 3. Defina o **tráfego do MMP** como o método de conexão padrão.
+
+<div id="need-help" />
 
 #### Precisa de ajuda?
 
@@ -233,6 +267,8 @@ Resposta da Meta: "Estamos lançando esta atualização em colaboração com seu
 Quando a AAP está ativada, as instalações atribuídas por meio da Mensuração de Eventos Agregados (AEM) da Meta são excluídas dos relatórios de dados brutos. Isso se aplica mesmo com o contrato da AMM.
 
 </Accordion>
+
+<div id="note-3" />
 
 > 📘 **Importante!**
 >

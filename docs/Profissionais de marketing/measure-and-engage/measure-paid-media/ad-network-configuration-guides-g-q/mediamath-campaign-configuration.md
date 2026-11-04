@@ -25,6 +25,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png)
 
+<div id="setting-up-mediamath" />
+
 ## Configurando o MediaMath
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,6 +46,8 @@ A janela de configuração do MediaMath inclui 3 abas ativas: Integração, link
 
 Para uma descrição detalhada da Janela de configuração de Pprceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -53,13 +57,19 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma all-installs network, o MediaMath prefere receber postbacks de todas as novas instalações do seu aplicativo de QUALQUER fonte, inclusive orgânica. Para fazer isso, selecione **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação ao MediaMath.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -75,12 +85,16 @@ Alterne para ON se quiser que a AppsFlyer envie informações adicionais ao Medi
 
 Alterne para ON se quiser atribuir instalações view-through do MediaMath. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos ao MediaMath após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribu ddos a este parceiro** para eventos provenientes apenas de usu rios atribu ddos ao MediaMath.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para reportar ao MediaMath.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -134,6 +148,8 @@ A receita de anúncios não é compatível com o MediaMath.
 <Accordion title="Aba permissões">
 
 Nesta aba, você pode selecionar as permissões a serem concedidas ao MediaMath, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo ambos. Observe que, mesmo se a atribuição estiver desativada para o MediaMath, a aba de permissões estará ativa e você poderá conceder controle ao MediaMath.
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

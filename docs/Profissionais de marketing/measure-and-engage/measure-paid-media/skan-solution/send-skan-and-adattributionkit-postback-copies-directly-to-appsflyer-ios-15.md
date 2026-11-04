@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Resumo:** a partir do iOS 15, configure seu aplicativo para enviar cópias de postback diretamente para a AppsFlyer, além de enviá-los para ad networks. Isso permite que a AppsFlyer valide o valor de conversão (CV) e verifique a integridade do postback. Configure a Push API da AppsFlyer para encaminhar simultaneamente cópias de postback para um endpoint adicional selecionado.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Ao longo deste artigo, as referências a **SKAN** incluem tanto o **SKAdNetwork** quanto o framework mais recente **AdAttributionKit (AAK)**.
+
+<div id="why-send-postback-copies-to-appsflyer" />
 
 ## Por que enviar cópias de postback para a AppsFlyer?
 
@@ -35,6 +39,8 @@ x-zendesk:
 * Veja o engajamento por tipo de toque
 
 **Atenção!** A AppsFlyer ainda deve receber postbacks de ad networks, pois eles contêm dados adicionais fornecidos pela ad network (por exemplo, nome da campanha).
+
+<div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Configure seu aplicativo para enviar cópias de postback para a AppsFlyer
 
@@ -47,11 +53,17 @@ De acordo com a documentação da Apple, você pode definir um único endpoint p
 3. Os postbacks serão enviados para a AppsFlyer quando a nova versão for publicada (não do TestFlight).
 4. Você pode ver os postbacks recebidos no <Anchor target="_blank" href="/marketers/pt/docs/skan-raw-data-reports">relatório de cópia dos postbacks</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Aplicativos que não têm tráfego SKAN verão a seguinte mensagem, mesmo após completar a configuração: "seu aplicativo não está configurado para enviar cópias de postback do iOS (iOS 15+) para a AppsFlyer. Isso é necessário para garantir a integridade de sua mensuração na SKAN."
 
+<div id="common-misconceptions" />
+
 ## Erros comuns
+
+<div id="dont-believe-everything-you-hear" />
 
 > 📘 **Não acredite em tudo o que você ouve!**
 >
@@ -64,9 +76,13 @@ De acordo com a documentação da Apple, você pode definir um único endpoint p
 > * Assim que configuro um endpoint adicional, cópias de todos os postbacks são enviadas para lá.
 >   * **Falso.** A funcionalidade de endpoint adicional só está disponível para dispositivos que com versões iOS 15+. As cópias de postback não são enviadas a partir de dispositivos com versões anteriores.
 
+<div id="traits-and-limitations" />
+
 ## Características e limitações
 
 Depois que um aplicativo foi configurado para enviar cópias de postback para a AppsFlyer, pode demorar alguns dias até que elas apareçam no dashboard.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

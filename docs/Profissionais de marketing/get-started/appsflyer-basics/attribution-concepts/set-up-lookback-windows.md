@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** personalize as janelas de lookback de click-through e view-through com base em seus contratos com canais de mídia.
 
+<div id="lookback-windows" />
+
 ## Janelas de lookback
 
 A janela de lookback de atribuição configurável permite que você personalize o período de atribuição com base em seu contrato com os canais de mídia.
@@ -36,11 +38,15 @@ Ao definir janelas de lookback de atribuição por canal de mídia, a AppsFlyer 
 * **Janela de lookback de view-through**: período máximo após a visualização de um anúncio, dentro do qual uma instalação pode ser atribuída ao anúncio.  Instalações que ocorrem após a janela de lookback são consideradas orgânicas.
 * Janela de lookback de engaged view **período máximo de tempo após uma visualização ativa (engaged view) dentro do qual uma instalação pode ser atribuída ao engaged view. As instalações que ocorrem após a janela de lookback são consideradas orgânicas.**
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### Janelas de lookback configuráveis por tipo de atribuição
 
 <table><thead><tr><th rowspan="2"><p><strong>Tipo de atribuição</strong></p></th><th rowspan="2"><p><strong>Método de atribuição</strong></p></th><th colspan="2"><strong>Janela de lookback</strong> </th></tr><tr><th><strong>Alcance</strong></th><th><strong>Padrão</strong></th></tr></thead><tbody><tr><td rowspan="3"><p>Cliques</p><p>(Todos os canais de mídia)</p></td><td>Referenciador, Correspondência de ID</td><td>1-30 dias OU<br/>1-23 horas</td><td>7 dias</td></tr><tr><td>Modelagem probabilística (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptável</a></td><td>Até 24 horas</td></tr><tr><td>Modelagem probabilística (CTV, PC e Console - links de plataforma única)</td><td>Até 7 dias Até 7 dias Até 7 dias (Definido no parâmetro de link <code>af_lookback_window</code>.)</td><td>7 dias</td></tr><tr><td rowspan="2"><p>Engaged click-through</p><p>(<a href="./about-enriched-engagement-types#quais-networks-podem-relatar-engaged-views-e-engaged-clicks" target="_blank">Fontes de mídia</a> não-SRN selecionadas\*)</p></td><td>ID matching</td><td>1-7 dias ou 1-23 horas</td><td>2 dias</td></tr><tr><td>Modelagem probabilística (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptável</a></td><td>Até 24 horas</td></tr><tr><td rowspan="2"><p>Engaged view-through</p><p>(<a href="./about-enriched-engagement-types#quais-networks-podem-relatar-engaged-views-e-engaged-clicks" target="_blank">Fontes de mídia</a> não-SRN selecionadas\*)</p></td><td>ID matching</td><td>1-7 dias ou 1-23 horas</td><td>2 dias</td></tr><tr><td>Modelagem probabilística (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptável</a></td><td>Até 24 horas</td></tr><tr><td rowspan="4"><p>Exibição (view-through)</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Fontes de mídia</a> selecionadas)</p></td><td>ID matching</td><td><p>1 a 24 horas</p><p>[Até 15 de dezembro de 2021, o limite superior era de 7 dias]</p></td><td>24 horas</td></tr><tr><td>Modelagem probabilística (mobile)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptável</a></td><td>Até 24 horas</td></tr><tr><td>Modelagem probabilística (CTV, PC e Console - links de plataforma única)</td><td>Até 7 dias Até 7 dias Até 7 dias (Definido no parâmetro de link <code>af_lookback_window</code>.)</td><td>24 horas</td></tr><tr><td>Modelagem probabilística (CTV, PC e Console - <a href="./set-up-cross-platform-links-for-multi-device-campaigns#características-e-limitações" target="_blank">links de atribuição multiplataforma do OneLink</a>)</td><td>Até 72 horas Até 72 horas Até 72 horas (Definido no parâmetro de link <code>af_xplatform_vt_lookback</code>.)</td><td>24 horas</td></tr></tbody></table>
 
 As janelas de lookback para `engaged_click` e `engaged_view` só podem ser configuradas para não SRNs. Para SRNs, os parâmetros `engaged_click` e `engaged_view` compartilham a mesma janela de lookback que os cliques e, portanto, ela é configurada pelos sliders de `engaged_click`Install Click-Through Attribution Lookbackengaged\_click.
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### Janela de lookback de modelagem probabilística
 
@@ -53,6 +59,8 @@ A janela de lookback de modelagem probabilística, usada para garantir a precis�
 
 Para saber mais, leia sobre o <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#probabilistic-modeling">método de modelagem probabilística da AppsFlyer</Anchor>.
 
+<div id="lookback-window-setup" />
+
 ## Configuração da janela de lookback
 
 A seguir, listamos o processo de configuração da janela de lookback para SRNs e links de atribuição
@@ -60,7 +68,11 @@ A seguir, listamos o processo de configuração da janela de lookback para SRNs 
 <Tabs>
 <Tab title="Janela de lookback de SRNs">
 
+<div id="attribution-lookback-window-for-srns" />
+
 ### Janela de lookback de atribuição para SRNs
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -89,6 +101,8 @@ Veja abaixo cada janela de lookback da SRN:
 
 <div id="attribution-lookback-window-with-attribution-links" />
 
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
 ### Janela de lookback de atribuição não-SRNs para click-through e view-through
 
 1. na AppsFlyer, vá para o menu lateral e selecione **colaborar** > **integrações ativas**.
@@ -103,6 +117,8 @@ Veja abaixo cada janela de lookback da SRN:
 
 <div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
 
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
 ### Janela de lookback de atribuição não-SRNs para engaged click-through e engaged view-through
 
 1. na AppsFlyer, vá para o menu lateral e selecione **colaborar** > **integrações ativas**.
@@ -110,7 +126,11 @@ Veja abaixo cada janela de lookback da SRN:
 3. Na aba de integração, role para baixo até o slider de **Janela de lookback de install engaged click-through** ou até o slider de **Janela de lookback de install engaged view-through**.
 4. Configure a janela de lookback usando os sliders.
 
+<div id="tip-1" />
+
 <div id="h_01HGFQVP7Q69H5621GXMYZ441N" />
+
+<div id="tip" />
 
 > 👍 **Observação**
 >
@@ -130,6 +150,8 @@ Você também pode configurar a janela de lookback no OneLink.
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## Distribuição das primeiras aberturas do aplicativo
 
 Abaixo está um gráfico que mostra a distribuição das primeiras aberturas do aplicativo desde o dia do engajamento.
@@ -141,6 +163,8 @@ O gráfico pode fornecer uma noção melhor do número de usuários que instalam
 A maioria dos usuários que inicia o aplicativo, ou seja, cerca de 97% dos usuários, o faz em até 7 dias após o engajamento com o anúncio. Os 2% restantes o fazem no intervalo entre o dia 7 e o final da janela de lookback (dia 30).
 
 Na verdade, quase 62% dos usuários que inicializam o aplicativo fazem isso em até 15 minutos após o engajamento com o anúncio. 72% dos usuários fazem isso na primeira hora.
+
+<div id="scenarios-and-examples" />
 
 ## Cenários e exemplos
 

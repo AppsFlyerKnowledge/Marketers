@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo:** ao realizar testes de atribuição, registre o seu dispositivo de teste para garantir que cada instalação seja registrada como uma nova instalação. Um dispositivo de teste registrado impede que as instalações sejam registradas como reinstalações.
 
+<div id="why-register-a-test-device" />
+
 ## Por que registrar um dispositivo de teste?
 
 Ao executar testes de atribuição, a janela de reatribuição limita as atribuições de instalação a uma por janela de 90 dias. Portanto, se você usar o mesmo dispositivo várias vezes para testar atribuições de instalação, nada será gravado. O registro de um dispositivo de teste impede que as instalações sejam registradas como reinstalações.
+
+<div id="methods-for-registering-a-test-device" />
 
 ## Métodos para registrar um dispositivo de teste
 
@@ -65,6 +69,10 @@ Os identificadores de dispositivo incluem:
 * **Windows Phone:** ID de publicidade do Windows
 
 </Accordion>
+
+<div id="ios::41efa11e" />
+
+<div id="managing-test-device-registration" />
 
 ## Gerenciar o registro do dispositivo de teste
 
@@ -200,6 +208,8 @@ Você pode registrar até 200 dispositivos por conta.
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## Registrar um dispositivo de teste iOS
 
 O fluxograma abaixo ilustra os possíveis cursos de ação ao registrar seus dispositivos de teste iOS.
@@ -210,9 +220,13 @@ Selecione entre as seguintes opções ao registrar seu dispositivo de teste iOS:
 
 <Accordion title="Registrar seu dispositivo de teste com IDFA">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **Quando usar o IDFA para registrar um dispositivo de teste?**
 
 Você pode registrar um dispositivo usando o IDFA se a AppTransparencyTracking (ATT) tiver sido implementada em seu aplicativo e se você quiser executar testes como um usuário que permite o rastreamento. Ao abrir o aplicativo pela primeira vez, clique em **Permitir** no prompt da ATT.
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **Como registrar seu dispositivo de teste com um IDFA?**
 
@@ -222,12 +236,16 @@ Para isso, registre um dispositivo usando o app de device ID da AppsFlyer.
 
 <Accordion title="Registrar seu dispositivo de teste com IDFV">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **Quando usar o IDFV para registrar dispositivos de teste?**
 
 Quando o IDFA não está disponível, o IDFV é sua única opção. Você deve usar o IDFV nos seguintes casos:
 
 * **A ATT foi implementada** mas você deseja executar testes como um usuário que não dá o consentimento à ATT. Ao abrir o aplicativo pela primeira vez, clique em **Não permitir** no prompt da ATT.
 * **O ATT não foi implementado** de forma alguma.
+
+<div id="how-to-register-your-device-with-idfv" />
 
 #### **Como registrar seu dispositivo com um IDFV**
 

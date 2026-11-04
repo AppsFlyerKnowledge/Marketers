@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Integre o AppsFlyer com o Amplitude para compartilhar dados de atribuição de usuários e análises de eventos e obter melhores insights sobre engajamento, retenção e receita. Escolha entre **duas versões de integração, V1 ou V2**, dependendo do seu caso de uso e das suas necessidades de análise.
 
+<div id="about-the-integration" />
+
 ## Aba de integração
 
 **Visão geral:** Visão geral: o Amplitude, um parceiro integrado da AppsFlyer, fornece análises de produtos para ajudar empresas mobile e web a entender o comportamento do usuário. As equipes de produto, marketing e growth usam o Amplitude para descobrir e compartilhar insights de engajamento, retenção e receita. A integração permite que a AppsFlyer envie dados de eventos-chave para a Amplitude após a instalação, possibilitando uma análise abrangente em nível de usuário.
@@ -50,6 +52,8 @@ Há duas versões da integração com a Amplitude:
 > * Escolha a integração Amplitude V1 ou V2. **Não use as duas** simultaneamente. Usar as duas versões ao mesmo tempo pode resultar no envio de eventos duplicados para o Amplitude.
 > * <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 **Antes de começar:**
@@ -59,6 +63,8 @@ Há duas versões da integração com a Amplitude:
 * Evite enviar os mesmos eventos pelo SDK da Amplitude e pela AppsFlyer para impedir a duplicação.
 * Consulte o pré-requisito adicional para a integração com a Amplitude V2.
 
+<div id="additional-prerequisites-for-the-amplitude-v2-integration" />
+
 ### Pré-requisitos adicionais para a integração com a Amplitude V2
 
 A integração V2 exige a configuração de:
@@ -66,6 +72,8 @@ A integração V2 exige a configuração de:
 * [ID do dispositivo da Amplitude](/docs/amplitude-integration-with-appsflyer#id-do-dispositivo-da-amplitude)
 * [ID de usuário cliente](/docs/amplitude-integration-with-appsflyer#id-de-usuário-cliente)
 * [ID da sessão da Amplitude](/docs/amplitude-integration-with-appsflyer#id-da-sessão-do-amplitude)
+
+<div id="amplitude-device-id" />
 
 #### ID do dispositivo da Amplitude
 
@@ -163,10 +171,14 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="customer-user-id" />
+
 #### ID de usuário cliente
 
 Defina o ID de usuário do cliente (CUID). Este é um identificador exclusivo, normalmente gerado e definido  
 pelo proprietário do aplicativo durante o registro do usuário. <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">Saiba mais</Anchor>
+
+<div id="amplitude-session-id" />
 
 #### ID da sessão do Amplitude
 
@@ -264,6 +276,8 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="set-up-the-integration" />
+
 ## Configurando o Amplitude
 
 **Para ativar ou editar a integração:**
@@ -290,12 +304,18 @@ appsFlyerSdk.setAdditionalData(data);
 
 A guia Integração é dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **primeiro acesso**, você precisará habilitar **ativar Parceiro** para permitir a configuração dos parâmetros da aba de integração. A opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
 
+<div id="general-settings" />
+
 ### Configurações gerais
+
+<div id="advanced-data-sharing" />
 
 #### Compartilhamento avançado de dados
 
@@ -318,10 +338,14 @@ Para compartilhar informações adicionais com o Amplitude, ative o **compartilh
 | af\_sub5 | af\_sub5 |
 | app\_version | app\_version |
 
+<div id="amplitude-eu-data-center" />
+
 #### Centro de dados da UE
 
 Quando o **centro de dados do Amplitude na UE** está desativado, os postbacks de instalação são enviados para o centro de dados dos EUA.  
 Para enviar os postbacks ao banco de dados do Amplitude da UE, ative o banco de dados do Amplitude da UE.
+
+<div id="api-key" />
 
 #### Chave da API
 
@@ -343,11 +367,15 @@ O Amplitude se conecta com a AppsFlyer através de uma chave de API exclusiva. S
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Configure o Amplitude no dashboard da AppsFlyer.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para o Amplitude após uma instalação. Use essa seção para definir a fonte de usuários para a qual os postbacks são enviados. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#default-postbacks">postbacks padrão</Anchor>.
 
 <Image alt="Captura de tela 2025-12-03 às 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
+
+<div id="in-app-event-settings" />
 
 ### Configurações de eventos in-app
 
@@ -362,6 +390,8 @@ Depois de salvar a configuração, a AppsFlyer envia os seguintes dados para o A
 * Campaign name
 
 O envio do IDFA para dispositivos iOS depende do <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">status do consentimento do usuário na ATT e às configurações de Privacidade Avançada</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 ### Postbacks de eventos in-app
 
@@ -393,6 +423,8 @@ As permissões não estão disponíveis para o Amplitude.
 
 </Accordion>
 
+<div id="viewing-attribution-data-in-the-amplitude-console" />
+
 ## Visualização dos dados de atribuição no console do Amplitude
 
 Os dados de atribuição enviados para o Amplitude são exibidos em seus dashboards como eventos e propriedades prefixados com **[AppsFlyer]**:
@@ -404,6 +436,8 @@ Os dados de atribuição enviados para o Amplitude são exibidos em seus dashboa
 > **Importante!**
 >
 > Em alguns casos, o Amplitude mostra dados da AppsFlyer como "bloqueados". Se você não consegue ver os dados da AppsFlyer no Amplitude, verifique se eles estão definidos como eventos bloqueados.
+
+<div id="sending-amplitude-events-to-appsflyer" />
 
 ## Enviando eventos de Amplitude para o AppsFlyer
 

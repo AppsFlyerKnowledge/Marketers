@@ -33,6 +33,8 @@ x-zendesk:
 
 Configure a integração do Google Ads na AppsFlyer para mensurar e atribuir instalações e eventos in-app das suas campanhas. Na AppsFlyer, essa integração é chamada de `googleadwords_int` e os resultados de atribuição são registrados sob a fonte de mídia `googleadwords_int`.
 
+<div id="google-ads-attribution-flow-with-advanced-data-sharing" />
+
 ## Fluxo de atribuição do Google Ads com compartilhamento avançado de dados
 
 ![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
@@ -43,6 +45,8 @@ Configure a integração do Google Ads na AppsFlyer para mensurar e atribuir ins
 4. A AppsFlyer valida a reivindicação usando a própria modelagem probabilística. Apenas reivindicações validadas são aceitas.
 5. Após a validação, a reivindicação do Google (se aceita) entra na etapa de decisão de atribuição, em que a AppsFlyer a compara com outros possíveis candidatos à atribuição (por exemplo, outras SRNs, networks baseadas em cliques, orgânico). A instalação é atribuída à fonte vencedora com base na lógica de atribuição e nas regras de prioridade da AppsFlyer.
 6. Se a reivindicação for aceita e selecionada como a candidata vencedora, a instalação é atribuída ao Google. Nos relatórios de dados brutos, as reivindicações determinísticas mostram <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary#attribution::cecc12c5">match\_type</Anchor> de `srn`, enquanto reivindicações não determinísticas mostram um tipo de correspondência “`probabilistic`”.
+
+<div id="configuring-google-ads-attribution-for-advertisers" />
 
 ## Configuração da atribuição do Google Ads para anunciantes
 
@@ -106,6 +110,8 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
 
    Não é necessária uma configuração separada da janela de lookback, porque a reinstalação de atribuição utiliza os valores das suas configurações de atribuição de instalação. Para mais informações, leia este artigo sobre a <Anchor target="_blank" href="/marketers/pt/docs/measure-reinstalls">mensuração de reinstalações</Anchor>.
 
+   <div id="important" />
+
    > 🚧 **Importante!**
    >
    > Os dados de conversão de reinstalação são **apresentados como session\_start** no painel do Google Ads. Na AppsFlyer, isso é atribuído e visto como uma reatribuição.
@@ -130,6 +136,8 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
 14. Clique no botão **Conectar Google Ads** e faça login na sua conta Google para obter todos os custos da sua campanha do Google Ads na AppsFlyer. <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-cost-and-ad-revenue">Mais detalhes aqui</Anchor>.
 15. Clique em **Salvar**.
 
+<div id="stop" />
+
 > ❗️ **Atenção!**
 >
 > * Se você precisar mapear seus eventos in-app para o Google Ads, primeiro siga a [etapa 5](#h_01HACTC1H50DDS3WCZ9DCHKN0P).
@@ -137,6 +145,8 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
 </Accordion>
 
 <Accordion title="Passo 4: Verifique as conversões do seu aplicativo (recomendado)">
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >
@@ -177,6 +187,8 @@ Parabéns! Agora você está mensurando campanhas mobile do Google Ads com a App
 
 1. Vá até a aba **Integração** e desça até a seção **Postbacks de eventos in-app**.
 
+   <div id="note-1" />
+
    > 📘 **Importante!**
    >
    > Ao ativar o mapeamento de eventos in-app do Google Ads para um aplicativo **pela primeira vez:**
@@ -203,9 +215,13 @@ Parabéns! Agora você está mensurando campanhas mobile do Google Ads com a App
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Observação**
 >
 > A integração de API do Google Ads inclui automaticamente o recurso de remarketing do Google Ads. Ao concluir esta integração e enviar eventos para o Google Ads, poderá criar listas de públicos-alvo para remarketing, sem necessidade de integrações adicionais.
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## Como conceder permissões aos membros da equipe do Google Ads
 
@@ -224,15 +240,21 @@ Para conceder a um membro da equipe do Google Ads acesso ao seu aplicativo, faç
 
 Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">como dar permissões a ad networks</Anchor>.
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## Ativação da atribuição do Google Ads para agências
 
 A AppsFlyer oferece suporte para configurações de agência com o Google Ads. É essencial que o anunciante e a agência tenham contas separadas no Google Ads para permitir que a AppsFlyer atribua os dados corretamente. Para mais detalhes, consulte <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-agencies">Integração do Google Ads para agências</Anchor>.
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## Trabalhar com várias contas do Google Ads
 
 A AppsFlyer oferece suporte ao funcionamento com várias contas do Google Ads para o mesmo aplicativo. Isso é realizado pelo compartilhamento do Link ID no Google Ads e pela importação dos eventos para cada conta do Google Ads.
 
 Para mais detalhes, veja <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">a documentação do Google sobre como compartilhar seu Link ID do Google Ads</Anchor>.
+
+<div id="ios-app-campaigns" />
 
 ## Campanhas de aplicativos para iOS
 
@@ -250,6 +272,8 @@ Como as conversões modeladas não dependem de IDs de dispositivos, a partir da 
 * O inventário de ACI Display do iOS pode ser atribuído quando um Device ID está presente, desde que tanto o aplicativo do anunciante quanto o aplicativo do publisher tenham o consentimento do usuário.
 * Qualquer campanha ACI do iOS pode ser atribuída através do ICM. Isso se aplica quando o Device ID não está disponível no aplicativo do anunciante, no aplicativo do publisher ou em ambos.
 * Atualmente, o Google reivindica apenas cliques no iOS. Ele não reivindica impressões.
+
+<div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## Usando deferred deep linking em campanhas de aplicativos
 
@@ -269,9 +293,13 @@ Quando um usuário potencial clica em um feed, ele é redirecionado para a pági
 4. Na aba **Integração**, ative **Deferred deep linking com Google Ads.**
 5. Clique em **Salvar integração.**
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > O valor de deferred deeplink do Google Ads é retornado pelo Google apenas para correspondências determinísticas, com base no device ID, e não é suportado para correspondências probabilísticas (ICM).
+
+<div id="google-ads-parameter-mapping" />
 
 ## Mapeamento de parâmetros do Google Ads
 
@@ -290,6 +318,8 @@ A tabela abaixo descreve o mapeamento de parâmetros entre o Google Ads e a Apps
 | ID do site (`af_siteid`) | GoogleSearch/  <br />Parceiros de busca | N/D | YouTubeVideos/  <br />Parceiros de vídeo |
 | Palavras-chave | N/D | N/D | N/D |
 
+<div id="populate-the-channel-parameter" />
+
 ### Preencha o parâmetro `Canal`
 
 O Google Ads não envia o parâmetro `Canal (af_channel)`. A AppsFlyer determina como preencher este parâmetro para os tipos de campanha recebidos do Google Ads, de acordo com as seguintes regras:
@@ -298,11 +328,17 @@ O Google Ads não envia o parâmetro `Canal (af_channel)`. A AppsFlyer determina
 
 Para mais informações sobre os tipos de anúncio disponíveis na resposta do Google, veja as <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">especificações de solicitação e resposta do Google</Anchor>.
 
+<div id="note-3" />
+
 > 📘 **Importante!**
 >
 > Quando o Google atribui uma instalação através da atribuição probabilística (ICM), ele não compartilha `network_type` com a AppsFlyer. Assim, o tipo de rede fica ausente e o valor do canal é `ACI_` (sem um sufixo).
 
+<div id="campaign-type-app-campaigns" />
+
 ### Tipo de campanha: campanhas de aplicativos
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Mudanças nos nomes das campanhas pelo Google Ads
 
@@ -314,19 +350,27 @@ Para mais informações sobre os tipos de anúncio disponíveis na resposta do G
 
 **Atenção:** O tipo de nome da campanha é determinado pela data do clique ou impressão, e não pela data de instalação.
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### Parâmetro de engaged view em relatórios de dados brutos
 
 Engaged view é uma impressão do usuário sobre um anúncio em vídeo que durou mais de 10 segundos. Tem a mesma prioridade de atribuição que um clique.  Para Android, engaged views são exibidas nos relatórios de dados brutos como `engaged_view` sob os parâmetros `Engagement Type` e `Sub Param 5`.   
 Engaged views são contados se ocorrerem dentro da janela de lookback de cliques definida na AppsFlyer, com um limite máximo de 3 dias.
+
+<div id="important-2" />
 
 > 🚧 **Importante!**
 >
 > * A Google é uma SRN (Self Reporting Network). Para mais informações sobre como o fluxo de atribuição funciona para essas redes, consulte <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns">Self-reporting networks (SRNs)</Anchor>.
 > * A AppsFlyer pode apresentar qualquer informação de campanha fornecida pelo Google. O tipo de campanha (busca, vídeo, exibição) e as informações associadas são determinados pelo Google. Para mais informações, veja as <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">especificações de solicitação e resposta do Google</Anchor>.
 
+<div id="send-complex-in-app-events-to-google-ads" />
+
 ## Envie eventos in-app complexos para o Google Ads
 
 Para enviar eventos in-app complexos — eventos com vários itens — para o Google Ads, recomendamos usar o novo objeto de evento `af_order_info`. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/item-level-order-data-for-ad-networks-af-order-info">Dados de pedido no nível do item para ad networks (af\_order\_info)</Anchor>.
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## Otimização de campanhas do Google Ads para conversões sem device ID
 
@@ -342,6 +386,8 @@ A partir do iOS14.5+ e Android 12+, o Google Ads introduziu vários identificado
 No Google Ads e na AppsFlyer, os anunciantes podem receber dados a nível de campanha para tráfego sem Device IDs para reengajamento, instalações e atividades de reatribuição. No entanto, os dados a nível de adset e de anúncios não são compartilhados pelo Google.  
 **Nenhuma ação do anunciante é necessária para permitir o recebimento desses parâmetros.**
 
+<div id="data-visibility-by-operating-system" />
+
 ### Visibilidade de dados por sistema operacional
 
 **Apps Android:**
@@ -352,6 +398,8 @@ Na AppsFlyer e no Google Ads, os anunciantes podem receber dados completos da ca
 
 No Google Ads e na AppsFlyer, anunciantes podem receber dados completos da campanha para tráfego sem device IDs para suas atividades de reengajamento.
 
+<div id="advertising-without-the-firebase-sdk" />
+
 ## Anúncios sem o Firebase SDK
 
 Ao anunciar com o Google Ads sem a implementação do Firebase SDK, as seguintes limitações se aplicam:
@@ -360,6 +408,8 @@ Ao anunciar com o Google Ads sem a implementação do Firebase SDK, as seguintes
 | --- | --- |
 | tROAS não disponível | A otimização para tROAS (meta de retorno do gasto com anúncios) está disponível apenas ao usar eventos de receita do Firebase SDK. Eventos de receita da AppsFlyer, e de todos os outros MMPs, não são elegíveis para essa otimização. |
 | Exclusão de audiência não disponível | Os anunciantes só podem excluir usuários de campanhas de aplicativos quando a campanha é otimizada para eventos do Firebase SDK, não para eventos de MMP. |
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
 
 ## Características e limitações da atribuição probabilística do Google (ICM)
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 
+<div id="website-visits-and-web-events" />
+
 ## Visitas ao site e eventos do site
 
 * **Reconhecer uma visita:** O PBA registra uma visita de acordo com as [regras de reconhecimento de visitas.](/docs/pba-media-source-attribution-rules#visit-recognition-rules)
@@ -58,6 +60,8 @@ Para facilitar a compreensão, a tabela a seguir contém exemplos do canal de m�
 | E-mail | Próprias | E-mail |
 | googleadwords\_int | Paga | As ad |
 | usatoday.com | Obtenção | Indicação |
+
+<div id="determining-the-media-source" />
 
 ## Determinação do canal de mídia
 
@@ -194,6 +198,8 @@ O canal de mídia é determinado pelas regras conforme listado aqui.
 | utm\_source | utm\_campaign |
 
 </Accordion>
+
+<div id="additional-attribution-rules" />
 
 ## Regras de atribuição adicionais
 

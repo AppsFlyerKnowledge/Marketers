@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Kahuna, um parceiro integrado da AppsFlyer, dedica-se a capacitar empresas a crescer e prosperar na era mobile. Oferecemos um novo nível de engajamento autêntico entre marcas e seus clientes, onde quer que eles estejam — na web, no e-mail, no mobile, nos canais sociais — por meio de comunicação personalizada em escala. Com tecnologia de big data e machine learning, ajudamos a criar experiências encantadoras para cada cliente com a mensagem perfeita, entregue no canal certo, no momento exato.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
@@ -37,6 +39,8 @@ Siga as instruções abaixo para configurar a integração com a Kahuna:
 * iOS – versão 3.3.3 e superior
 
 2. A integração com a Kahuna exige que o <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/deviceid/">Device ID</Anchor> da Kahuna (identificador exclusivo do usuário da Kahuna) seja preenchido no SDK da AppsFlyer. Esse parâmetro é enviado com cada postback e permite a identificação de cada usuário. Para fazer isso, você deve inserir as seguintes strings no código do seu aplicativo:
+
+<div id="important-note" />
 
 > 📘 **Observação importante**
 >
@@ -62,6 +66,8 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 </Tab>
 </Tabs>
 
+<div id="setting-up-kahuna" />
+
 ## Configuração da Kahuna
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -83,15 +89,21 @@ A janela de configuração da Kahuna usa apenas a aba ***integração***.
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
 **Chave secreta da Kahuna, Staging e Production**
 
 A Kahuna se conecta com a AppsFlyer por meio de uma chave secreta exclusiva. Se você ainda não tiver essa chave, deverá obtê-la com a Kahuna para continuar com a integração ou seguir as etapas abaixo. [![](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)
+
+<div id="obtaining-the-kahuna-secret-key" />
 
 ### Como obter a chave secreta da Kahuna
 
@@ -112,6 +124,8 @@ A Kahuna se conecta com a AppsFlyer por meio de uma chave secreta exclusiva. Se 
 * Para o ambiente de Production, insira a letra P no campo Production
 * Se você inserir ambos, os eventos serão enviados para a produção
 * Clique em **Salvar**.
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -164,6 +178,8 @@ Permissões não estão disponíveis para Kahuna.
 
 </Accordion>
 
+<div id="view-user-attribution-data-in-kahuna" />
+
 ## Ver dados de atribuição de usuário no Kahuna
 
 Os eventos de instalação podem ser visualizados como Newbies no dashboard principal do Kahuna.
@@ -177,6 +193,8 @@ Você pode pesquisar um usuário específico ou acessar "Top People" na navegaç
 Selecionar um dos usuários abre o Mini Profile, onde você pode ver o evento de instalação "af\_install" na seção Top Events:
 
 [![](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)
+
+<div id="testing-with-sandbox" />
 
 ## Teste no sandbox
 

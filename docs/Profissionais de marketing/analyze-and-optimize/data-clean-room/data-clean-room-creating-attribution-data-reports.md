@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** Crie relatórios de dados de atribuição para combinar dados de nível de usuário de instalações/eventos de retargeting com dados de seus sistemas.
 
+<div id="creating-an-attribution-data-report" />
+
 ## Criando um relatório de dados de atribuição
 
 **Para criar um relatório de dados de atribuição, siga as etapas detalhadas nas abas abaixo.**
@@ -56,6 +58,8 @@ x-zendesk:
 
 Especifique os dados a serem usados para o relatório:
 
+<div id="attribution-data-sources" />
+
 #### **Fontes de dados de atribuição**
 
 * **Aplicativos:** Selecione um ou mais dos aplicativos em sua conta da AppsFlyer.
@@ -70,6 +74,8 @@ Especifique os dados a serem usados para o relatório:
 
 * **Período de tempo:** Selecione o número de dias de dados históricos que você deseja que o DCR pesquise eventos de atribuição que correspondem a eventos de fontes personalizadas (de 1 a 180 dias).
 
+<div id="custom-sources" />
+
 #### **Fontes personalizadas**
 
 Ao definir a estrutura do relatório, você pode escolher usar dados de qualquer uma das <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-sources">fontes personalizadas que você configurou</Anchor>.
@@ -82,6 +88,8 @@ Ao definir a estrutura do relatório, você pode escolher usar dados de qualquer
 
 Para combinar os dados entre as fontes, cada uma das fontes **personalizadas** usadas no relatório deve incluir um <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-setting-up-cloud-services">identificador</Anchor> mapeado para um **identificador de chave** nos dados de atribuição.
 
+<div id="what-is-a-key-identifier" />
+
 #### **O que é um identificador de chave?**
 
 Você pode mapear para qualquer um desses identificadores dados de atribuição **identificadores-chave**:
@@ -92,13 +100,19 @@ Você pode mapear para qualquer um desses identificadores dados de atribuição 
 * **ID de usuário do cliente (CUID)** Um identificador de usuário exclusivo geralmente gerado e definido pelo proprietário do aplicativo no momento do registro do usuário.
   * O uso do CUID para mapear dados exige que seu aplicativo esteja configurado para <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid">enviar o CUID à AppsFlyer</Anchor> por meio do SDK ou da API de servidor para servidor (S2S).
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Nem todos os canais de mídia permitem a correspondência usando CUID. É altamente recomendável usar o ID da AppsFlyer.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Esquemas de mapeamento (direto/indireto)**
 
 Se o relatório usar mais de uma fonte personalizada, somente uma delas precisará ser mapeada **diretamente** para um identificador de chave da dados de atribuição. Outras fontes personalizadas podem ser mapeadas **direta ou indiretamente,** conforme ilustrado no exemplo a seguir:
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -121,11 +135,15 @@ Se o relatório usar mais de uma fonte personalizada, somente uma delas precisar
 
 <Accordion title="Determinar o tratamento de vários eventos correspondentes">
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Se os tipos de atribuição selecionados para este relatório **incluírem apenas instalações e/ou instalações orgânicas,** esta seção será irrelevante. Pular para **[Selecionar dimensões](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).**
 
 **reengajamentos ou reatribuições,** é possível que os dados de atribuição incluam mais de um evento durante o período selecionado com o mesmo identificador de chave. Quando esse for o caso, você deve instruir o DCR sobre quais eventos correspondentes ele deve incluir no relatório.
+
+<div id="matching-all-events" />
 
 #### **Correspondendo todos os eventos**
 
@@ -133,6 +151,8 @@ O método de correspondência mais abrangente permite que seu relatório inclua 
 
 * O identificador na sua fonte que é mapeado para install\_time deve estar no seguinte formato: **aaaa-MM-dd HH:mm:ss.**
 * **Observação:** Embora o nome do identificador de dados de atribuição seja install\_time, na verdade ele significa **hora do evento** ao se referir a eventos de reinstalação, reengajamento ou reatribuição.
+
+<div id="matching-a-single-event" />
 
 #### **Correspondendo um único evento**
 
@@ -147,6 +167,8 @@ O comportamento da correspondência de evento único difere quando a fonte de da
 
 Faça essa seleção com base no evento que você considera mais relevante para os insights que deseja obter do relatório.
 
+<div id="note-1" />
+
 > 📘 **Observação:**
 >
 > Em caso de registros duplicados, o DCR remove a duplicação de registros com o mesmo `appsflyer_id`, selecionando o evento mais recente com base no `event_time`.
@@ -160,6 +182,8 @@ Faça essa seleção com base no evento que você considera mais relevante para 
 Lembre-se de que os dados no nível de usuário não podem ser reportados pelo DCR. Em vez disso, ele fornece os insights de que você precisa para tomar decisões agregando (ou agrupando) os dados pelas dimensões que você escolher.
 
 Uma dimensão geralmente é um atributo pelo qual você categoriza os usuários do aplicativo (por exemplo, localização geográfica, data de instalação, campanha etc.)
+
+<div id="selecting-report-dimensions" />
 
 #### **Selecionando dimensões do relatório**
 
@@ -177,6 +201,8 @@ As dimensões do relatório de dados de atribuição podem incluir:
 
 **Observação:** Por padrão, todos os relatórios são agrupados pela dimensão de dados de atribuição **media\_source.** Se você não quiser usar essa dimensão em seu relatório, você pode removê-la da lista **Dimensões do relatório**.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Opcional] Personalizando nomes de exibição de dimensões**
 
 Por padrão, os nomes das dimensões são exibidos em seu relatório exatamente como são nomeados nos dados de atribuição ou em suas fontes personalizadas. Se desejar, você pode personalizar os nomes das dimensões do seu relatório.
@@ -188,6 +214,8 @@ Por padrão, os nomes das dimensões são exibidos em seu relatório exatamente 
 3. Altere o nome para o nome de exibição da dimensão a ser usado em seu relatório (até 50 caracteres).
 4. Clique em **OK** para salvar o nome de exibição ou em **X** para cancelá-lo.
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### Preservando a privacidade ao agrupar por dimensão (reagrupamento)
 
 Dependendo do tamanho do seu conjunto de dados, do número de dimensões que você escolher e de outros fatores, é possível que um relatório inclua um ou mais grupos contendo poucos usuários para permitir a geração de relatórios. Se os dados fossem relatados dessa forma, isso violaria as restrições ao fornecimento de dados em nível de usuário.
@@ -195,6 +223,8 @@ Dependendo do tamanho do seu conjunto de dados, do número de dimensões que voc
 * **Importante!** O número mínimo de usuários necessário para permitir a reportagem varia de acordo com o canal de mídia.
 
 No entanto, em vez de remover ou ocultar completamente os dados do relatório, o DCR usa um **mecanismo de reagrupamento** para fornecer o máximo de detalhes possível, mantendo a privacidade do usuário.
+
+<div id="regrouping-example" />
 
 > 📄 **Exemplo de reagrupamento**
 >
@@ -254,6 +284,8 @@ No entanto, em vez de remover ou ocultar completamente os dados do relatório, o
 >
 > * *Veja abaixo uma opção avançada que você também pode usar para aplicar o reagrupamento a dimensões de origem personalizadas.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Opcional] Gerenciando a prioridade da dimensão**
 
 Por padrão, as dimensões de dados de atribuição são eliminadas na ordem inversa da ordem em que aparecem na lista **Dimensões do relatório**. No entanto, você pode modificar a sequência padrão e/ou aplicar o reagrupamento às dimensões de origem personalizadas selecionadas para preservar as dimensões mais importantes para você.
@@ -289,6 +321,8 @@ As métricas são os dados numéricos que você coletou com relação a um usuá
 3. Para remover uma métrica, selecione-a na lista **Dimensões da métrica** e use o botão **Remover** para retorná-la à lista **Métricas das fontes**.
 4. Repita este processo até que você tenha adicionado cada métrica que deseja incluir no relatório.
 
+<div id="optional-customizing-metric-display-names" />
+
 #### **[Opcional] Personalizando nomes de exibição de métricas**
 
 Por padrão, os nomes das métricas são exibidos em seu relatório exatamente como são nomeados nos dados de atribuição ou em suas fontes personalizadas. Se desejar, você pode personalizar os nomes das métricas para seu relatório.
@@ -299,6 +333,8 @@ Por padrão, os nomes das métricas são exibidos em seu relatório exatamente c
 2. Clique no botão de edição ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) que é exibido à direita da métrica.
 3. Altere o nome para o nome de exibição da métrica a ser usado em seu relatório (até 50 caracteres).
 4. Clique em **OK** para salvar o nome de exibição ou em **X** para cancelá-lo.
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Opcional] Selecione identificadores para contar**
 
@@ -336,6 +372,8 @@ O DCR entrega relatórios para seus serviços de nuvem selecionados usando o <An
 
 </Accordion>
 
+<div id="when-does-the-report-run" />
+
 ## Quando o relatório é executado?
 
 Quando você tiver criado e salvo um relatório, o relatório é executado sempre que novas versões de todas as [fontes personalizadas que ele usa](/docs/data-clean-room-creating-attribution-data-reports#fontes-personalizadas) são detectadas:
@@ -345,6 +383,8 @@ Quando você tiver criado e salvo um relatório, o relatório é executado sempr
 * Para fontes localizadas em **compartimentos de armazenamento em nuvem** (Amazon S3 e GCS), o DCR reconhece que uma nova versão de uma fonte foi criada quando detecta que uma <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-sources#atualizando-fontes-para-acionar-o-processamento-de-relatórios">nova versão de um arquivo de origem foi carregada junto com o arquivo \_SUCCESS</Anchor> que o acompanha.
 
 A AppsFlyer procura continuamente por novas versões de arquivos fonte para a **data atua e 2 dias antes.**
+
+<div id="reference" />
 
 ## Referência
 

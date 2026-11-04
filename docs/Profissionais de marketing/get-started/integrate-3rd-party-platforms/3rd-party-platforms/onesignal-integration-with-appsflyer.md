@@ -32,9 +32,13 @@ O OneSignal entrega 8 bilhões de mensagens todos os dias em todo o mundo. Com t
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
 
+<div id="setting-up-onesignal" />
+
 ## Configurando o OneSignal
 
 A integração com o OneSignal inclui inserir algumas linhas de código no SDK da AppsFlyer no seu aplicativo e, em seguida, ativar a integração na AppsFlyer.
+
+<div id="set-up-the-appsflyer-sdk" />
 
 ### Configurar o SDK da AppsFlyer
 
@@ -142,10 +146,14 @@ Ao usar o Android, a integração com o OneSignal exige que o OneSignal Player I
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Deve permanecer ativado enquanto você trabalhar com o parceiro.  
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -154,6 +162,8 @@ Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-acti
 O ID do seu aplicativo do OneSignal está disponível na plataforma do OneSignal em **Configurações** > **Chaves & IDs**.Para conectar sua conta do OneSignal ao AppsFlyer, insira o ID do seu aplicativo no campo **OneSignal AppID** .
 
 ![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -208,6 +218,8 @@ A receita de anúncios não se aplica à integração com este parceiro.
 As permissões não estão disponíveis para este parceiro.
 
 </Accordion>
+
+<div id="view-user-attribution-data-in-onesignal" />
 
 ## Ver dados de atribuição do usuário no OneSignal
 

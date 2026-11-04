@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Em resumo:** Trabalhe com os relatórios que você configurou no Data Clean Room (DCR).
 
+<div id="introduction" />
+
 ## Introdução
 
 Este artigo aborda como trabalhar com os relatórios que você já criou. Você pode ver a lista completa desses relatórios e seus status na aba **Relatórios** do DCR.  
@@ -32,6 +34,8 @@ Se você está procurando instruções sobre como criar novos relatórios no DCR
 
 * <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-creating-attribution-data-reports">Criando relatórios de dados de atribuição</Anchor>
 * <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-creating-in-app-event-reports">Criando relatórios de eventos in-app</Anchor>
+
+<div id="editing-or-deleting-a-report" />
 
 ## Editando ou excluindo um relatório
 

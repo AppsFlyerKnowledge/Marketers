@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** Aprimore a proteção da sua conta com nosso **pacote de segurança enterprise,** uma oferta premium projetada para o gerenciamento de identidades em nível enterprise, controle de acessos por tokens e visibilidade de auditoria ampliada.
 
+<div id="intro" />
+
 ## Introdução
 
 Nossa segurança enterprise reúne três recursos principais, que ajudam a elevar a segurança da sua empresa:
@@ -29,6 +31,8 @@ Nossa segurança enterprise reúne três recursos principais, que ajudam a eleva
 * **Audit log API com retenção estendida**: Tenha visibilidade de longo prazo sobre as atividades que ocorrem dentro da plataforma e integre eventos de auditoria à sua estrutura de monitoramento,
 * **Provisionamento de SCIM:** automatize e centralize o controle de acesso através do seu provedor de identidade.
 * **Lista de IPs permitidos para login:** evite acessos não autorizados, garantindo que o login no dashboard da AppsFlyer seja afeito apenas em redes e IPs da sua confiança.
+
+<div id="compare-the-standard-and-enterprise-grade-packages" />
 
 ### Compare os pacotes padrão e enterprise:
 
@@ -48,6 +52,8 @@ Nossa segurança enterprise reúne três recursos principais, que ajudam a eleva
 
 Crie e gerencie até **30 tokens** por tipo (API, S2S, OneLink), com **restrições de nível de serviço** que garantem um aumento na eficiência, segurança e controle de tokens.
 
+<div id="key-features" />
+
 #### Principais características
 
 * Administradores podem criar até **30 tokens por tipo**, indo além dos 2 tokens disponíveis nos tokens padrão, oferecendo suporte a equipes maiores e fluxos de trabalho mais complexos.​
@@ -55,6 +61,8 @@ Crie e gerencie até **30 tokens** por tipo (API, S2S, OneLink), com **restriç�
 * Tokens podem ser revogados ou redirecionados sem quebrar integrações ou automações.
 * Restrinja um token a um aplicativo específico para que ele só possa dar acesso a dados ou executar ações para esse aplicativo.
 * Simplifique a colaboração com equipes internas e parceiros externos por meio de permissões específicas de token.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -66,9 +74,13 @@ Crie e gerencie até **30 tokens** por tipo (API, S2S, OneLink), com **restriç�
 >
 > **Token de acesso específico do aplicativo:** crie um token que funcione apenas para um aplicativo. Use este token quando uma equipe interna, um parceiro externo ou uma automação precisar de acesso apenas a um aplicativo específico.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Para informações gerais sobre tokens padrão, veja <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">gerenciando tokens da AppsFlyer</Anchor>.
+
+<div id="how-to-access-and-control-tokens" />
 
 #### Como acessar e controlar tokens
 
@@ -98,6 +110,8 @@ Aqui você pode:
 * Excluir tokens individualmente
 * Monitorar a atividade do token nos logs de auditoria
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Tokens não podem ser editados. Para alterar o acesso, exclua e crie o token novamente.
@@ -110,6 +124,8 @@ Aqui você pode:
 
 Para melhorar as capacidades existentes do log de auditoria, esse recurso introduz uma API para consumo de logs de auditoria e amplia o período de retenção de dados de 90 para 180 dias. Ideal para equipes que precisam de acesso de longo prazo ao logs de ações do usuário ou integrando eventos de auditoria em ferramentas de monitoramento externas como SOC e SEIM.
 
+<div id="key-features-1" />
+
 #### Principais características
 
 * Acesse logs de auditoria programaticamente usando uma API dedicada
@@ -118,9 +134,13 @@ Para melhorar as capacidades existentes do log de auditoria, esse recurso introd
 * Use tokens para serviços específicos e isolar o acesso ao log
 * Exporte dados para ferramentas SIEM, dashboards ou armazenamento em nuvem
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > Para informações gerais sobre o log de auditoria padrão, consulte <Anchor target="_blank" href="/marketers/pt/docs/audit-log">log de auditoria padrão</Anchor>.
+
+<div id="how-to-access-the-audit-log-via-api" />
 
 ### **Como acessar o log de auditoria via API**
 
@@ -132,6 +152,8 @@ Para usar a Audit Log API:
 4. Use um **token de API** existente ou crie um novo.
 5. Em **restrição de acesso**, selecione o serviço **Log de auditoria**.
 6. Use o token para autenticar solicitações ao endpoint da audit log API.
+
+<div id="note-3" />
 
 > 📘 **Atenção**
 >
@@ -147,11 +169,15 @@ O provisionamento SCIM aprimora as capacidades de SSO da AppsFlyer, automatizand
 
 Ao sincronizar usuários via SCIM, você mantém total controle sobre as permissões de acesso em tempo real. Combinado com o SSO SAML 2.0, isso resulta em uma solução completa de gerenciamento de identidade e acesso para clientes enterprise.
 
+<div id="key-features-2" />
+
 #### **Principais características**
 
 * Crie automaticamente usuários na AppsFlyer com base nos registros do provedor de identidade (IdP).
 * Mudanças nas funções ou status dos usuários no IdP são refletidas instantaneamente na AppsFlyer.
 * O **SAML 2.0** é usado para garantir um SSO seguro, com o **SCIM** para provisionamento —compatível com os principais IdPs como Okta e Azure AD.
+
+<div id="how-to-set-up-scim-provisioning" />
 
 #### **Como configurar o provisionamento SCIM**
 
@@ -159,6 +185,8 @@ Para começar a usar o provisionamento SCIM na AppsFlyer, você precisa:
 
 1. [Configurar SSO](/docs/enterprise-grade-security-package#configuração-de-sso)
 2. [Ativar SCIM](/docs/enterprise-grade-security-package#ativar-scim)
+
+<div id="sso-set-up" />
 
 #### Configuração de SSO
 
@@ -168,7 +196,11 @@ Para configurar o SSO, você precisa:
 * <Anchor target="_blank" href="/marketers/pt/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">Configurar SSO na AppsFlyer</Anchor>
 * <Anchor target="_blank" href="/marketers/pt/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">Testar a configuração do SSO</Anchor>
 
+<div id="enable-scim" />
+
 #### Ativar SCIM
+
+<div id="note-4" />
 
 > 📘 **Atenção**
 >
@@ -182,9 +214,15 @@ Para ativar o SCIM, há algumas etapas que devem ser seguidas:
 * Adicione [funções](/docs/enterprise-grade-security-package#funções)
 * Adicione um [namespace externo](/docs/enterprise-grade-security-package#external-namespace)
 
+<div id="idp-instruction-links" />
+
 #### Links de instrução do IdP
 
+<div id="the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud" />
+
 ##### As instruções para os IdPs podem ser encontradas abaixo. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor>, <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
+
+<div id="scim-connections" />
 
 #### Conexões SCIM
 
@@ -196,6 +234,8 @@ Nas conexões SCIM, os seguintes campos devem ser preenchidos:
 | Campo de identificador único para usuários | userName |
 | Método de autenticação: HTTP header "Authorization" | Bearer &lt;<Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">Seu token da API da AppsFlyer</Anchor>> |
 
+<div id="scim-attributes" />
+
 #### Atributos SCIM
 
 | **Atributo** | **Tipo de valor esperado** | **Obrigatório** | **String vazia** | **Namespace externo** | **A descrição** |
@@ -203,6 +243,8 @@ Nas conexões SCIM, os seguintes campos devem ser preenchidos:
 | Cargo | ID da campanha reportado pela rede de anúncios à AppsFlyer | ✅ | role | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>Atribua uma função predefinida ou personalizada ao usuário.</li><li>Veja abaixo a lista de funções que devem ser inseridas</li></ul> |
 | Permitir acesso a todos os aplicativos futuros | Boolean | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Se habilitado, o usuário terá acesso a novos aplicativos automaticamente. |
 | App IDs permitidos | ID da campanha reportado pela rede de anúncios à AppsFlyer | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | Lista de app IDs separados por vírgula. Se quiser permitir todos os aplicativos, deixe esse campo vazio. Caso contrário, selecione "nenhum". |
+
+<div id="roles" />
 
 #### Funções
 
@@ -221,6 +263,8 @@ As funções devem corresponder àquelas <Anchor target="_blank" href="/marketer
 | Controle de qualidade | quality\_assurance |
 | Função personalizada | [insira o valor da função personalizada] |
 
+<div id="limitations" />
+
 #### Limitações
 
 | **Limitação** | **A descrição** |
@@ -235,11 +279,15 @@ As funções devem corresponder àquelas <Anchor target="_blank" href="/marketer
 
 A lista de IPs permitidos aprimorada garante uma melhora na sua segurança, impedindo acessos não autorizados e garantindo que apenas redes confiáveis possam interagir com a plataforma. Esse recurso é especialmente útil para empresas que aplicam políticas de segurança rigorosas ou gerenciam acessos remotos.
 
+<div id="key-features-3" />
+
 #### Principais características
 
 * Reduz ataques bloqueando tentativas de login de IPs desconhecidos.
 * Permite especificar endereços IP ou intervalos para garantir que apenas usuários e redes autorizados possam acessar a plataforma.
 * Ideal para empresas que usam VPNs ou que exigem controles de acesso mais rigorosos.
+
+<div id="adding-ips-to-the-list" />
 
 #### Adicionando IPs à lista
 
@@ -253,11 +301,15 @@ A lista de IPs permitidos aprimorada garante uma melhora na sua segurança, impe
 4. IPs adicionados serão mostrados no lado direito na seção: **veja seus IPs na lista de IPs permitidos**.
 5. Clique em **salvar lista**.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Certifique-se de que os endereços IP ou intervalos que você adicionou estão corretos. Entradas incorretas podem impedir que você acesse sua conta.
 > * A lista de permissões deve conter pelo menos um endereço IP ou intervalo antes que você possa salvá-la e ativá-la, e você pode adicionar até 100 endereços IP ou intervalos à lista de permissões.
 > * Depois de clicar em salvar lista, as restrições de IP serão aplicadas a partir do seu próximo login.
+
+<div id="removing-ips-from-the-list" />
 
 #### Removendo IPs da lista
 
@@ -273,41 +325,61 @@ A lista de IPs permitidos aprimorada garante uma melhora na sua segurança, impe
 
 <Accordion title="Perguntas frequentes sobre nossa segurança">
 
+<div id="what-is-appsflyers-enterprise-grade-security-package" />
+
 #### O que é a segurança nível enterprise da AppsFlyer?
 
 Aumente sua segurança com recursos avançados que vão além das proteções padrão. Obtenha SSO com provisionamento SCIM, controles de acesso granulares, logs de auditoria estendidos e ferramentas de compliance desenvolvidas para a segurança das empresas.
+
+<div id="who-is-the-enterprise-grade-security-package-designed-for" />
 
 #### Para quem foi desenvolvida a segurança nível enterprise?
 
 Líderes de segurança e TI de empresas que se preparam para auditorias; equipes de compras e jurídico em indústrias regulamentadas que avaliam fornecedores de SaaS; administradores de plataforma que gerenciam requisitos de acesso complexos entre várias equipes e integrações.
 
+<div id="how-does-scim-provisioning-work" />
+
 #### Como funciona o provisionamento SCIM?
 
 Automatize o gerenciamento do ciclo de vida do usuário conectando-se diretamente ao seu provedor de identidade. O SCIM sincroniza automaticamente o acesso e as funções dos usuários, gerencia onboarding e offboarding instantâneos, bem como elimina o gerenciamento manual de contas e os riscos de acesso órfão.
+
+<div id="what-compliance-standards-does-this-support" />
 
 #### É compatível com quais padrões de compliance?
 
 Prontidão para auditoria dos requisitos de SOC2, ISO 27001 e GDPR com retenção de logs de 180 dias, documentação de acesso abrangente e integração em tempo real com SIEM para monitoramento contínuo e verificação de compliance.
 
+<div id="how-many-roles-and-api-tokens-can-i-create" />
+
 #### Quantas funções e quantos tokens de API posso criar?
 
 Crie até 50 funções personalizadas adaptadas à estrutura da sua empresa e até 30 tokens de API específicos para serviços com permissões granulares. Isole o acesso para diferentes integrações e funções de trabalho enquanto mantém os princípios de menor privilégio.
+
+<div id="can-i-integrate-with-my-existing-security-tools" />
 
 #### Posso fazer a integração com as minhas ferramentas de segurança existentes?
 
 Sim. Transmita dados de auditoria diretamente para o seu SIEM e ferramentas de segurança através do streaming de logs baseado em API. Habilite o monitoramento em tempo real, a detecção de anomalias e respostas automatizadas de segurança dentro da sua infraestrutura SOC.
 
+<div id="what-network-restrictions-can-i-apply" />
+
 #### Quais restrições de rede posso aplicar?
 
 Controle o acesso à plataforma com listas de permissão de IP e restrições geográficas. Defina redes e locais confiáveis para prevenir acesso não autorizado enquanto oferece suporte a equipes remotas e uma colaboração segura com parceiros.
+
+<div id="how-long-are-audit-logs-retained" />
 
 #### Por quanto tempo os logs de auditoria são retidos?
 
 Acesse trilhas de auditoria abrangentes com retenção de logs de 180 dias que captura todas as interações na plataforma. Obtenha visibilidade completa sobre ações de usuários, chamadas de API e padrões de acesso para a documentação de compliance e investigações de segurança.
 
+<div id="does-this-replace-standard-security-features" />
+
 #### Esse tipo de segurança substitui os recursos padrão?
 
 Não. A segurança nível enterprise adiciona funções avançadas além dos recursos padrão. Você obtém controles aprimorados, automação e visibilidade, mantendo todas as proteções de segurança existentes.
+
+<div id="how-quickly-can-i-implement-these-security-controls" />
 
 #### Quando posso implementar esses controles de segurança?
 

@@ -23,6 +23,8 @@ x-zendesk:
 
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
+<div id="about-combining-cost-etl-and-cohort-reports" />
+
 ## Sobre a combinação de ETL de custos e relatórios de coortes
 
 Os relatórios ETL de custos e os relatórios de coortes através do Data Locker (agregados regulares e avançados) têm cada um as suas qualidades únicas. Por exemplo, os relatórios ETL de custo incluem dados de impressão, clique e custo, enquanto os relatórios de coorte incluem atribuição detalhada, evento in-app e dados de receita.
@@ -34,6 +36,8 @@ Combinados, eles:
 * Fornecer a imagem completa do seu desempenho de marketing, com a melhor atualidade, precisão e granularidade disponíveis.
 * Combine seu BI interno com os dados que você vê nos dashboards da AppsFlyer.
 * Permitem-lhe calcular métricas importantes, como o retorno do investimento em publicidade (ROAS) e o custo por ação (CPA).
+
+<div id="queries-to-combine-reports" />
 
 ## Consultas para combinar relatórios
 
@@ -57,6 +61,8 @@ As seções que se seguem fornecem as consultas e considerações a ter em conta
   * Há diferenças na atualidade dos relatórios. Por exemplo, o ETL de custos é atualizado até quatro vezes por dia e os relatórios de coortes agregados avançados são atualizados várias vezes por dia.
   * Os relatórios de coorte agregados avançados incluem usuários convertidos nos últimos 1095 dias. Se eles se converteram antes disso, não são considerados.
   * Os relatórios ETL de custo usam o fuso horário dos dados conforme eles são armazenados pela AppsFlyer. Os relatórios avançados de coorte agregadas incluem relatórios com versão (UTC) e com versão de fuso horário. **Prática recomendada**: Combinar ETL de custos e relatórios com versões de fuso horário de coorte.
+
+<div id="query" />
 
 #### Consulta
 
@@ -157,6 +163,8 @@ select ag.app_id,
   * Há diferenças na atualidade dos relatórios. Por exemplo, o Cost ETL é atualizado até quatro vezes por dia e os relatórios de coortes através do Data Locker são atualizados uma vez por dia.
   * Os relatórios ETL de custo usam o fuso horário dos dados conforme eles são armazenados pela AppsFlyer. Os relatórios de coortes através do Data Locker utilizam o UTC.
 
+<div id="query-1" />
+
 #### Consulta
 
 ```sql
@@ -239,6 +247,8 @@ select dl.app_id,
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

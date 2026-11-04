@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="Guia do Hub de Sinais" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo?si=gAgmyUqH7PKsQsf-" providerUrl="https://www.youtube.com" />
 
+<div id="about-signal-hub" />
+
 ## Sobre o Signal Hub
 
 O Signal Hub da AppsFlyer é uma solução avançada e segura, que permite que as marcas acessem dados de alto valor de grandes marcas (incluindo empresas de finanças) para desbloquear insights que vão muito além dos seus próprios dados. Ao enriquecer audiências com sinais de compra reais, os profissionais de marketing conseguem identificar usuários de alto valor mais cedo, personalizando campanhas com base em comportamentos de consumo comprovados e ativando audiências instantaneamente em grandes plataformas de mídia como Meta, Google e TikTok.
@@ -44,6 +46,8 @@ Com a infraestrutura de clean room da AppsFlyer e integrações com fornecedores
   Ative de forma segura em um ambiente de clean room usando identificadores anonimizados e pseudônimos. Nenhum dado bruto é movido, compartilhado ou exportado.
 * **Ter total clareza sobre o seu funil**  
   Mensure o impacto dos seus segmentos enriquecidos sobre as instalações, compras, retenção, mensuração a nível de SKU e receitas com a mensuração omnichannel da AppsFlyer.
+
+<div id="get-started-using-signal-hub" />
 
 ## Primeiros passos no Signal Hub
 
@@ -77,6 +81,8 @@ Depois de executar suas campanhas, consulte os resultados nos seus dashboards da
 
 </Accordion>
 
+<div id="use-cases" />
+
 ## Casos de uso
 
 Os casos de uso do Signal Hub são quase infinitos. Aqui estão alguns exemplos específicos por setor.
@@ -98,6 +104,8 @@ Uma rede de hotéis quer aumentar o número de reservas para uma promoção do D
 Uma marca de itens eletrônicos quer divulgar novas smart TVs. Ao usar dados das plataformas de streaming (como dados de posse de dispositivos, compras de assinaturas e engajamento com aplicativos de entretenimento), ela pode identificar domicílios premium e executar campanhas altamente segmentadas. Isso melhora as conversões para itens de grande valor.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

@@ -25,12 +25,16 @@ x-zendesk:
 
 ![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
 
+<div id="overview" />
+
 ## Visão geral
 
 A receita é responsável por metade do seu ROI (a outra metade é o custo). Ao acessar dados de receita precisos, atribuídos aos canais de mídia e campanhas certos, você consegue:
 
 * Ver o panorama completo do seu ROI e ROAS. Ou seja, você pode ver quais ad networks, campanhas e anúncios trazem os usuários mais valiosos para o seu app, além de visualizar dados de instalações e engajamentos.
 * Ajustar seus gastos com anúncios e campanhas de marketing.
+
+<div id="premium-revenue-reporting" />
 
 ### Relatório de receita premium
 
@@ -39,6 +43,8 @@ Existem três principais fontes de receita.
 * **Compras in-app**: isso inclui a receita da venda de quaisquer produtos ou serviços dentro do seu aplicativo. A AppsFlyer consegue validar e mensurar automaticamente sua receita de compras in-app (incluindo compras aprovadas, compras pendentes, reembolsos, cancelamentos, impostos, comissões da loja de aplicativos, etc.). Saiba mais sobre sua configuração e relatórios.
 * **Receita de assinaturas**: isso inclui a receita obtida da assinatura do seu aplicativo ou de serviços oferecidos. Também inclui quaisquer alterações no status da assinatura, incluindo upgrades, cancelamentos, reembolsos, etc. Saiba mais sobre sua configuração e relatórios. Para mais informações sobre receita de assinatura, consulte <Anchor target="_blank" href="/marketers/pt/docs/purchase-and-subscription-validation-overview">Validação de compra e assinatura.</Anchor>
 * <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution">**Receita de anúncios**</Anchor>: isso inclui a receita gerada pela hospedagem de anúncios e sua exibição para os usuários do aplicativo. Por exemplo, seu aplicativo pode exibir anúncios de outros aplicativos. Se seus usuários clicarem nesses anúncios, você receberá uma receita para cada clique. <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution">Saiba mais sobre a configuração e os relatórios de receita de anúncios</Anchor>
+
+<div id="basic-revenue-reporting" />
 
 ### Relatórios básicos
 

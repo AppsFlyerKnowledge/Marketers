@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Resumo:** o Pinterest, um parceiro integrado da AppsFlyer, é um dos principais parceiros disponíveis para o mapeamento de tráfego para blogueiros e marcas. A empresa oferece atribuição mobile baseada em cliques e view-through. Além disso, ela também oferece retargeting baseado em cliques, que você pode acompanhar com a AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Depois de aceitar os Termos de anúncios, lembre-se de aceitar os Termos e condições de mensuração mobile do Pinterest <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">aqui</Anchor>.
 > * O Pinterest exige que os provedores de atribuição excluam dados a nível de usuário <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention#períodos-de-retenção-de-dados-de-parceiros">6 meses após a instalação</Anchor>. Isso significa que os eventos realizados por esses usuários seis meses após a instalação do aplicativo são registrados como orgânicos. Dados agregados permanecem os mesmos, sem alterações.
 > * A partir de 4 de setembro de 2023, o Pinterest passou a exigir que provedores de atribuição <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">restrinjam a disponibilidade de alguns campos nos relatórios de dados brutos</Anchor>, para preservar a privacidade do usuário e garantir a conformidade com a regulamentação.
+
+<div id="set-up-pinterest" />
 
 ## Configurar o Pinterest
 
@@ -48,10 +52,14 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em seu **primeiro acesso**, você precisará clicar no botão **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. A opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 Para mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -64,6 +72,8 @@ Ative essa opção se quiser atribuir instalações por view-through do Pinteres
 **Compartilhamento de dados de correspondência avançada**
 
 Ative esta opção para compartilhar campos de correspondência avançada, como e-mail com hash, número de telefone com hash, nome com hash e sobrenome com hash, com o Pinterest, se esses campos estiverem incluídos nas informações do evento enviadas ao AppsFlyer. Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/advanced-matching-data-sharing">Compartilhamento de dados de correspondência avançada (em inglês)</Anchor>.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -79,6 +89,8 @@ Você pode encontrar o ID da conta de anúncio e o token de acesso diretamente n
 1. **Pré-requisito:** Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
 2. Insira os valores de ID da conta de anúncio e token de acesso nos respectivos campos.
 
+<div id="legacy-set-tag-id" />
+
 #### Tag ID
 
 Para obter o tag ID e configurar os postbacks de eventos in-app:
@@ -86,6 +98,8 @@ Para obter o tag ID e configurar os postbacks de eventos in-app:
 1. Na sua Conta Comercial (Business Account) do Pinterest, vá para **Anúncios** > **Conversões** e copie o **tag ID** .  
    Clique em **Criar tag** se você ainda não tiver uma tag e conclua o processo de criação. Copie a nova tag.
 2. Na AppsFlyer, nas configurações de integração do Pinterest, vá para **Configurações de eventos in-app** e insira o tag ID do Pinterest.
+
+<div id="in-app-event-postbacks" />
 
 ### Aba Permissões
 
@@ -116,11 +130,15 @@ Crie e salve links de atribuição e envie-os ao parceiro para fazer a atribuiç
 
 **Para gerar um link de atribuição,** siga <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#attribution-link-tab">essas instruções</Anchor>.
 
+<div id="attribution-link-for-retargeting-campaign" />
+
 #### Link de atribuição para campanhas de retargeting
 
 O Pinterest recomenda o uso de links de atribuição específicos para cada sistema operacional. Selecione a opção **Usar um link de plataforma única** e adicione os parâmetros necessários ao link de atribuição de retargeting.
 
 #### Deep Link URL
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -137,6 +155,8 @@ Use esse campo se o link for usado para o deep linking de usuários em qualquer 
 
 Depois de definir o custo no Pinterest, não altere o nome de nenhuma campanha em execução, conjunto de anúncios ou anúncio, nem use macros dinâmicas no parâmetro do nome da campanha, pois elas podem causar discrepâncias graves ou a perda de dados de custo.
 
+<div id="enabling-and-testing-pinterest-integration" />
+
 ### Ativando e testando a integração com o Pinterest
 
 A AppsFlyer recebe dados de custo via API. Consulte a <Anchor target="_blank" href="/marketers/pt/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabela de integração de custos da ad network</Anchor> para mais detalhes sobre as dimensões, métricas e recursos compatíveis. **Atenção:** os dados de custo exigem uma assinatura do ROI360.
@@ -145,9 +165,13 @@ A AppsFlyer recebe dados de custo via API. Consulte a <Anchor target="_blank" hr
 
 * Siga <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">essas instruções de integração</Anchor>.
 
+<div id="cost-data-sync-status" />
+
 ### Status de sincronização dos dados de custo
 
 <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Veja seu status na Cost API</Anchor> e a última vez que a AppsFlyer conseguiu extrair dados de custo no dashboard de status da integração de custos (ou de receita de anúncio) ou no dashboard individual da ad network. 
+
+<div id="stop-pinterest-cost-sync" />
 
 ### Interromper a sincronização de custos com o Pinterest
 
@@ -174,6 +198,8 @@ Saiba mais sobre as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-i
 </Accordion>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Resolução de problemas
 

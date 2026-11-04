@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** A validação de recibos mensura a receita de compras in-app e assinaturas e a verifica junto às lojas de aplicativos, garantindo resultados precisos de retorno sobre gasto com anúncios (ROAS).
 
+<div id="upgrade-to-new-receipt-validation" />
+
 ## Fazer upgrade para a nova Validação de recibos
 
 A Validação de recibos legada será desativada em **7 de setembro de 2026**; consulte o <Anchor target="_blank" href="/marketers/pt/docs/bulletin-legacy-receipt-validation-is-deprecated">Boletim: a Validação de recibos legada foi descontinuada</Anchor>. Se o seu aplicativo usa a Validação de recibos legada, migre para a nova realizando as etapas de configuração abaixo. Antes de começar, revise as principais diferenças e prepare a migração.
@@ -67,7 +69,11 @@ Para mais informações e instruções de configuração, consulte <Anchor targe
 
 </Accordion>
 
+<div id="overview" />
+
 ## Escritórios
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -82,6 +88,8 @@ Para configurar a Validação de recibos, conclua as etapas a seguir na ordem:
 3. [Testar a implementação da API do SDK validateAndLog](#3-verifique-a-implementação-do-sdk): Faça compras e assinaturas de teste no sandbox no iOS e no Android para verificar se os eventos de Validação de recibos são gerados e registrados corretamente pela AppsFlyer.
 4. [Verificar e atualizar configurações](#4-verifique-e-atualize-as-configurações): Confirme se o tipo de produto está definido como Validação de recibos e revise os status da chave da loja e da integração do SDK para garantir a mensuração precisa e contínua da receita.
 5. [Lançar as versões do aplicativo com a API do SDK validateAndLog](#5-lance-as-versões-do-aplicativo-com-a-api-do-sdk-validateandlog): Lance versões atualizadas do aplicativo com a API do SDK `validateAndLog` integrada, garantindo que os sinalizadores de sandbox estejam desativados e que os eventos in-app obrigatórios não sejam bloqueados pelas regras de validação.
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## Etapa 1 (iOS): configurar as chaves do App Store Connect
 
@@ -137,6 +145,8 @@ Para definir as credenciais do iOS, siga estas etapas:
 5. Clique **Save and Next**.
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## Passo 1 (Android). Configure a service account key e permissões
 
@@ -249,6 +259,8 @@ Faça o upload e valide a chave JSON do Google que você baixou em [step 1.2](#
 
 </Accordion>
 
+<div id="step-2-implement-sdk" />
+
 ## 3. Implementar o SDK
 
 Nesta etapa, você prepara seus desenvolvedores para integrar a API `validateAndLog` do SDK e configurar um ambiente sandbox para testes. As versões mínimas do SDK que oferecem suporte à API `validateAndLog` mais recente são **6.17.5** para Android e **6.17.8** para iOS.
@@ -265,6 +277,8 @@ Para implementar a API validateAndLog do SDK, siga estas etapas:
 
    Essa mensagem fornece todas as informações que os seus desenvolvedores precisam para concluir a integração e começar os testes.
 3. Clique **Next**. A etapa **Verify SDK implementation** é aberta.
+
+<div id="step-3-verify-sdk-implementation" />
 
 ## 3. Verifique a implementação do SDK
 
@@ -321,6 +335,8 @@ No ambiente sandbox:
 
 </Accordion>
 
+<div id="step-4-verify-and-update-settings" />
+
 ## 4. Verifique e atualize as configurações
 
 Depois de concluir a configuração das definições acima e salvar as etapas acima, você será redirecionado para a visualização de configuração ativa, na qual poderá verificar ou atualizar as seguintes configurações:
@@ -331,6 +347,8 @@ Depois de concluir a configuração das definições acima e salvar as etapas ac
 
    * A configuração da **chave da App Store**
    * A configuração da **integração do SDK** setup
+
+<div id="step-5-release-the-app-versions-with-the-validateandlog-sdk-api" />
 
 ## 5. Lance as versões do aplicativo com a API do SDK validateAndLog
 

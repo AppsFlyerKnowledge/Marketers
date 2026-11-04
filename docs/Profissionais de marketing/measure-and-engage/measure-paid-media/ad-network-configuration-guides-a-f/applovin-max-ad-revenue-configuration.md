@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
+<div id="setting-up-applovin-max-integration" />
+
 ## Configurando a integração do AppLovin MAX
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -41,6 +43,8 @@ x-zendesk:
    **Observação importante:** O botão de alternância **deve permanecer ativado (ativo) enquanto você trabalhar com o parceiro**. <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">Saiba mais</Anchor>
 5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo.
 
+<div id="setting-tabs" />
+
 ### Abas de configuração
 
 Atualize o conteúdo das abas de configuração conforme necessário: Receita de anúncios.
@@ -50,6 +54,8 @@ Atualize o conteúdo das abas de configuração conforme necessário: Receita de
 <Accordion title="Ad revenue">
 
 O AppLovin MAX oferece mediação de receita de anúncios com dados agregados no device level.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -61,6 +67,8 @@ O AppLovin MAX oferece mediação de receita de anúncios com dados agregados no
 * Siga <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">essas instruções de integração</Anchor>.
 
 </Accordion>
+
+<div id="best-practice" />
 
 ### Prática recomendada:
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** People-Based Attribution (PBA) está sendo substituída por Mensuração de performance web, a solução de mensuração web aprimorada da AppsFlyer. Este artigo explica o que está mudando, as etapas da migração e o mapeamento completo dos campos para seus relatórios e integrações server-side.
 
+<div id="why-were-upgrading-your-web-measurement" />
+
 ## Por que estamos aprimorando sua mensuração web
 
 A mensuração web importa mais do que nunca. É no site que muitos dos seus usuários convertem e onde começa o caminho até o seu app mobile. Não é apenas uma landing page; é um funil completo de aquisição com fluxos de quiz, onboarding personalizado, paywalls e lojas web que muitas vezes conquistam usuários com maior intenção a um custo de aquisição menor.
@@ -38,6 +40,8 @@ A AppsFlyer está levando a mensuração web ao mesmo padrão do mobile. People-
 >
 > Você não precisa substituir seu SDK web. A Mensuração de performance web usa o mesmo SDK, sem alterações de código no seu site. O esforço envolvido no restante da mudança varia, dependendo de como você recebe seus dados atualmente: pelo dashboard, pelo Data Locker ou pela API Server-to-server (S2S).
 
+<div id="comparing-pba-and-web-performance-measurement" />
+
 ## Comparando o PBA e a Mensuração de performance web
 
 Esta seção compara o PBA e a Mensuração de performance web de duas formas: recursos gerais e resolução da fonte de tráfego.
@@ -47,6 +51,8 @@ Esta seção compara o PBA e a Mensuração de performance web de duas formas: r
 A tabela abaixo compara os recursos do PBA e da Mensuração de performance web em dados, relatórios e atribuição.
 
 <table><tbody><tr><td>Recursos</td><td>A descrição</td><td>PBA</td><td>Mensuração de performance web</td></tr><tr><td colspan="4"><strong>agregados</strong></td></tr><tr><td>Relevância dos dados</td><td>Com que rapidez os dados ficam disponíveis para reportar</td><td> <span>✗</span> Diariamente</td><td> <span>✓</span> Relatórios por hora, com aproximadamente 2 horas de atualização dos dados</td></tr><tr><td>Modelo de dados</td><td>Alinhamento de esquema com dados de atribuição mobile</td><td> <span>✗</span> Diferente do mobile</td><td> <span>✓</span> Alinhado ao mobile, fácil de unir e analisar</td></tr><tr><td colspan="4"><strong>Relatórios</strong></td></tr><tr><td>Dashboard de atividades</td><td>Dashboard com base no horário do evento</td><td> <span>✓</span> Com suporte</td><td> <span>✓</span> Com suporte</td></tr><tr><td>Painel de coorte</td><td>Analise a performance por coorte de aquisição ao longo do tempo</td><td> <span>✗</span> Sem suporte</td><td> <span>✓</span> Com suporte</td></tr><tr><td>Dados brutos do Data Locker</td><td>Acesso aos dados brutos de atribuição via exportação do Data Locker</td><td> <span>✓</span> Com suporte</td><td> <span>✓</span> Com suporte</td></tr><tr><td>Granularidade no nível do anúncio</td><td>Detalhamento do relatório da campanha até o nível do anúncio</td><td> <span>✗</span> Somente no dashboard, não nos dados brutos</td><td> <span>✓</span> Granularidade completa da campanha no dashboard e nos dados brutos</td></tr><tr><td>LTV cross-platform</td><td>Unifique as jornadas de usuários na web e no mobile em um único LTV</td><td> <span>✗</span> Sem suporte</td><td> <span>✓</span> Com suporte</td></tr><tr><td colspan="4"><strong>Custo e sinais</strong></td></tr><tr><td>Custo web</td><td>Ingira e gere relatórios sobre gasto com anúncios para campanhas web</td><td> <span>✗</span> Sem suporte</td><td> <span>✓</span> Com suporte</td></tr><tr><td>Postbacks de otimização</td><td>Envie sinais de otimização de volta para as ad networks</td><td> <span>✗</span> Sem suporte</td><td> <span>✓</span> Com suporte</td></tr><tr><td colspan="4"><strong>Implementação</strong></td></tr><tr><td>SDK web (pixel)</td><td>SDK do lado do cliente para mensurar visitas e eventos web</td><td> <span>✓</span> Com suporte</td><td> <span>✓</span> Mesmo SDK, sem necessidade de alterações no código</td></tr><tr><td>Suporte S2S</td><td>Mensuração completa do lado do servidor para visitas e eventos</td><td> <span>✗</span> Somente eventos</td><td> <span>✓</span> Eventos e visitas. Suporta uma implementação completa do lado do servidor.</td></tr><tr><td colspan="4"><strong>Motor de atribuição</strong></td></tr><tr><td>Janelas de atribuição</td><td>Janelas configuráveis de lookback, atribuição, reengajamento e inatividade</td><td> <span>✗</span> Somente janela de lookback de clique</td><td> <span>✓</span> 5 janelas configuráveis (controle total)</td></tr><tr><td>Evento de UA personalizado</td><td>Define qual evento conta como um evento de aquisição de usuários (UA) além da primeira visita</td><td> <span>✗</span> Somente a primeira visita</td><td> <span>✓</span> Qualquer evento personalizado (por exemplo, cadastro, compra)</td></tr><tr><td>UA vs. retargeting</td><td>Crédito separado para nova aquisição vs. reengajamento</td><td> <span>✗</span> Sem conceito de UA, eventos atribuídos ao último toque</td><td> <span>✓</span> Visualizações dedicadas de UA e retargeting com crédito de atribuição dupla</td></tr></tbody></table>
+
+<div id="traffic-source-resolution-pba-vs-web-performance-measurement" />
 
 ### Resolução da fonte de tráfego, PBA vs. Mensuração de performance web
 
@@ -87,6 +93,8 @@ Os **valores** de canal também mudam de formato, de Direct / Organic search / S
 
 </Accordion>
 
+<div id="migrate-to-web-performance-measurement" />
+
 ## Migrar para a mensuração de performance web
 
 A migração tem uma etapa obrigatória para todos. Depois disso, execute as etapas aplicáveis à sua configuração de PBA.
@@ -97,10 +105,14 @@ A migração tem uma etapa obrigatória para todos. Depois disso, execute as eta
 >
 > Os números do PBA não corresponderão exatamente aos que você terá após a migração. A lógica de atribuição na mensuração de performance web é mais avançada e flexível. O PBA aplicava suas próprias regras de atribuição de canais de mídia; a mensuração de performance web usa uma resolução aprimorada de fonte de tráfego. Veja "Resolução da fonte de tráfego, PBA vs. mensuração de performance web" abaixo para saber quais valores esperar. A lógica de gravação de sessão em si não mudou; a sessão continua em execução por 30 minutos de atividade, o padrão de mercado.
 
+<div id="step-1-create-a-web-app-required-everyone" />
+
 ### 1. Criar um aplicativo web (obrigatório para todos)
 
 1. <Anchor target="_blank" href="/marketers/pt/docs/adding-an-app-to-appsflyer#web">Crie o novo aplicativo web</Anchor>, selecionando sua Dev Key web existente no campo **ID do SDK web**. Isso mantém o código atual do seu site funcionando como está, sem alterações no código.
 2. <Anchor target="_blank" href="/marketers/pt/docs/configure-web-performance-measurement-settings">Configure as definições de atribuição</Anchor> no novo aplicativo.
+
+<div id="step-2-if-you-send-events-through-the-s2s-api" />
 
 ### 3. Se você envia eventos pela API S2S
 
@@ -109,6 +121,8 @@ Migre para a nova API S2S:
 1. Consulte [a migração de PBA Web-S2S para a nova API S2S](#migração-de-pba-web-s2s-para-a-nova-api-s2s) para ver o que muda em relação à sua integração S2S atual do PBA, endpoints, autenticação e campos de payload.
 2. Configure a <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-s2s-api-for-web-performance-measurement">nova API S2S</Anchor> para a mensuração de performance web.
 3. Atualize sua integração do lado do servidor para enviar aos novos endpoints.
+
+<div id="step-3-if-you-consume-pbas-raw-data-reports" />
 
 ### 3. Se você consome os relatórios de dados brutos do PBA
 
@@ -119,10 +133,14 @@ Migre para os novos relatórios do Data Locker. O relatório de eventos do usuá
 3. Habilite o novo relatório usando <Anchor target="_blank" href="/marketers/pt/docs/export-web-performance-measurement-report-data-from-data-locker">Exportar dados de relatório de atribuição web da AppsFlyer do Data Locker</Anchor>.
 4. Aponte seu BI/ETL para o novo local e os novos campos do relatório. Isso se aplica independentemente de seus eventos chegarem via SDK ou S2S; ambos vão para o mesmo relatório de dados brutos.
 
+<div id="step-4-if-you-use-the-pba-brand-bundle-for-cross-platform-reporting" />
+
 ### 4. Se você usa o PBA Brand Bundle para reportar multiplataforma
 
 1. <Anchor target="_blank" href="/marketers/pt/docs/product-line-group-apps-for-cross-platform-attribution">Crie uma linha de produtos</Anchor>.
 2. Agrupe seu aplicativo web com seus outros aplicativos nessa linha de produtos para desbloquear <Anchor target="_blank" href="/marketers/pt/docs/beta-user-based-cross-platform-attribution">relatórios de LTV do usuário multiplataforma</Anchor>.
+
+<div id="capabilities-being-discontinued" />
 
 ## Capacidades que serão descontinuadas
 
@@ -133,6 +151,8 @@ Migre para os novos relatórios do Data Locker. O relatório de eventos do usuá
 | Recálculo retroativo | Sem recálculo retroativo além do atraso padrão de 30 minutos. | A atribuição é finalizada após um atraso de 30 minutos, dando aos usuários tempo para se identificarem durante essa janela. |
 | Campos de dados brutos | Os campos relacionados a mobile foram descontinuados para a web. Alguns campos são renomeados, e alguns valores mudam. | Consulte [Mapeamento de campos de dados brutos](#mapeamento-de-campos-de-dados-brutos) para ver o mapeamento completo dos campos. |
 | Eventos S2S atrasados | Eventos que chegam mais de 30 minutos após o fim do dia UTC em que ocorreram ainda são aceitos, mas o horário do evento é substituído pelo horário em que a AppsFlyer os recebeu. | Envie eventos em tempo real, de preferência em até 30 minutos após a ocorrência do evento, em vez de agrupá-los em um único upload diário. A atribuição precisa depende do recebimento de eventos próximo ao momento em que acontecem. Isso alinha a web ao comportamento mobile existente. |
+
+<div id="raw-data-field-mapping" />
 
 ## Mapeamento de campos de dados brutos
 
@@ -301,6 +321,8 @@ Examine a base de código em busca de qualquer filtro, CASE, chave de join ou ag
 ```
 
 </Accordion>
+
+<div id="pba-web-s2s-to-new-s2s-api-migration" />
 
 ## Migração de PBA web-S2S para a nova API S2S
 

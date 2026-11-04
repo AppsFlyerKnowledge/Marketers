@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **At a glance:** encontre rapidamente soluções para testar e depurar problemas de redirecionamento/comportamento de links personalizados do OneLink.
 
+<div id="onelink-troubleshooting-guide" />
+
 ## Guia de solução de problemas do OneLink
 
+<div id="onelink-frequently-asked-questions" />
+
 ## Perguntas frequentes sobre o OneLink
+
+<div id="onelink-template-faq" />
 
 ### Perguntas frequentes sobre o template do OneLink
 
@@ -203,6 +209,8 @@ Quando um link do OneLink é clicado em um desktop, não há plataforma de dispo
 
 </Accordion>
 
+<div id="onelink-link-faq" />
+
 ### Perguntas frequentes do link OneLink
 
 <Accordion title="O OneLink funciona sem o SDK da AppsFlyer?">
@@ -269,6 +277,8 @@ Existem vários motivos possíveis para isso:
 
 Duas soluções para melhorar a experiência do usuário são URLs de fallback e deep linking forçado.
 
+<div id="fallback-urls" />
+
 #### URLs de fallback
 
 URLs de fallback enviam usuários para páginas da web especificadas se a abertura do aplicativo ou o deep linking falhar por qualquer motivo. **Atenção!** Elas também enviam usuários sem o aplicativo instalado para a URL de fallback em vez de para a app store correta. Portanto, não se esqueça de usar essa opção somente se você estiver fazendo o retargeting de usuários com seu aplicativo já instalado.
@@ -291,6 +301,8 @@ Essa configuração adiciona `af_ios_url` e `af_android_url` como parâmetros de
 > 📘 **Note**
 >
 > Quando o redirecionamento ocorre, os parâmetros da URL do OneLink passam para a página de destino especificada por af\_ios\_urlou af\_android\_url. Para evitar esse comportamento, adicione o parâmetro af\_param\_forwarding=false ao OneLink.
+
+<div id="forced-deep-linking" />
 
 #### Deep linking forçado
 
@@ -449,6 +461,8 @@ Os links a seguir são funcionalmente idênticos e funcionam da mesma forma em t
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### Perguntas frequentes sobre o parâmetro do OneLink
 
 <Accordion title="Quais parâmetros são obrigatórios para links personalizados do OneLink?">
@@ -514,6 +528,8 @@ Para dados analisados, use parâmetros de assinante `af_sub1-5`, cada um deles t
 **Sim.** Certifique-se de usar apenas letras minúsculas para seus parâmetros e valores. Letras maiúsculas ou maiúsculas inconsistentes em nomes e valores de parâmetros podem causar erros ou discrepâncias de dados, tanto no dashboard quanto em dados brutos.
 
 </Accordion>
+
+<div id="integrated-partner-faq" />
 
 ### Perguntas frequentes sobre parceiros integrados
 
@@ -618,6 +634,8 @@ Quando um link personalizado do OneLink é incorporado por trás do vídeo em um
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### Perguntas frequentes sobre testes
 
 <Accordion title="Como posso fazer um teste A/B na landing page do aplicativo social?">
@@ -652,6 +670,8 @@ Se você vir uma caixa de diálogo de seleção de aplicativos ao testar seu One
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### Perguntas frequentes sobre deep linking
 
 <Accordion title="Quais métodos de deep linking devem ser implementados?">
@@ -671,6 +691,8 @@ Depois que o aplicativo é iniciado usando qualquer um desses métodos, o SDK da
 **A prática recomendada para adicionar parâmetros personalizados é por meio da página de configuração de links personalizados**.
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### Perguntas frequentes sobre o iOS 14
 

@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **Visão geral:** saiba mais sobre os planos da AppsFlyer e seus recursos premium complementares. Veja como o uso do plano e as faturas são calculados. Gerencie sua conta.
 
+<div id="appsflyer-plans-and-usage" />
+
 ## Planos e uso da AppsFlyer
 
 <div id="appsflyer-plans" />
@@ -60,15 +62,19 @@ Saiba mais sobre todas as funcionalidades incluídas e <Anchor target="_blank" h
 
 O pagamento do seu plano é calculado de acordo com seu **uso do plano** e seus **recursos premium**.
 
+<div id="plan-usage" />
+
 #### Utilização do plano
 
 Cada plano se baseia na mensuração de uma [unidade](/docs/account-management-plans-payments-and-billing#unidades-do-plano) específica. O uso das unidades é calculado mensalmente ou anualmente. O número de unidades utilizadas durante o ciclo do plano (mês ou ano) é descontado do total de unidades do pacote.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
 > Você pode [fazer download de relatórios de uso](/docs/account-management-plans-payments-and-billing#baixar-relatórios-de-uso) para obter informações detalhadas sobre o uso de sua unidade.
 
-<span id="premium-features"></span>**Exceder o uso do plano**
+<span id="zd-premium-features"></span><span id="premium-features"></span>**Exceder o uso do plano**
 
 Ao exceder o número de unidades no ciclo do seu plano, custos extras são aplicados. Você pode ver todos os custos na seção de [**informações do plano**](/docs/account-management-plans-payments-and-billing#details). Para evitar o uso excessivo do plano ou reduzir custos extras, os alertas são enviados pela central de notificações nos seguintes casos:
 
@@ -91,6 +97,8 @@ Quaisquer [complementos](/docs/account-management-plans-payments-and-billing#uni
 
 Para saber mais sobre esses complementos e seus possíveis benefícios para sua empresa, consulte seu CSM ou entre em contato com hello@appsflyer.com.
 
+<div id="plan-units" />
+
 #### Unidades do plano
 
 As diferentes unidades nas quais um plano pode ser baseado:
@@ -104,6 +112,8 @@ As diferentes unidades nas quais um plano pode ser baseado:
 | Eventos in-app | Qualquer ação executada por um usuário em seu aplicativo após a instalação. Por exemplo, login, tutorial concluído, compra e nível de jogo alcançado. | <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">Guia de eventos avançados dentro do aplicativo</Anchor> |
 | Conversões não diretas da web  <br />(para pacotes PBA) | Qualquer ação do usuário no seu site que:<ul><li>Você definiu como uma conversão</li><li>Foi atribuída como uma visita referida (proveniente de uma campanha na web)</li></ul> | <Anchor target="_blank" href="/marketers/pt/docs/people-based-attribution-pba-overview">People-Based Attribution (PBA)</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### Unidades de complemento premium
 
 As unidades nas quais os complementos medidos adicionais podem ser baseados:
@@ -111,6 +121,8 @@ As unidades nas quais os complementos medidos adicionais podem ser baseados:
 | Unidade | Descrição | Saiba mais |
 | --- | --- | --- |
 | Unidades em dólares ROI360 | Unidades em dólares registradas de seu custo de anúncio, receita publicitária no aplicativo e receita de compra in-app (incluindo assinaturas), medido pelo complemento ROI360. Cada unidade representa US$ 1 da mensuração registrada do ROI360. | <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-cost-and-revenue-data">ROI360 — dados de custos e receitas</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### Unidades em dólares ROI360
 
@@ -136,11 +148,15 @@ Os aplicativos de plataforma estendida incluem aplicativos em execução em CTV,
 
 A partir de 1 de fevereiro de 2026, instalações não orgânicas de extended platform apps (que operam em ambientes fora do mobile, como por exemplo CTV, PC e console) são consideradas como conversões que podem ser cobradas, de acordo com os termos de conversão do seu contrato.
 
+<div id="what-is-billed" />
+
 #### O que é cobrado
 
 * Instalações não orgânicas.
 * Reengajamentos não orgânicos.
 * Atividade de mídias próprias.
+
+<div id="what-isnt-billed" />
 
 #### O que não é cobrado
 
@@ -154,6 +170,8 @@ A cobrança baseada em MAU não é compatível com aplicativos de plataforma est
 
 </Accordion>
 
+<div id="account-page" />
+
 ## Página de gerenciamento de contas
 
 A página inclui 3 abas: **Meu plano**, **Pagamento e faturas** e **Informações de cobrança**. A partir daqui você pode:
@@ -163,6 +181,8 @@ A página inclui 3 abas: **Meu plano**, **Pagamento e faturas** e **Informaçõe
 * Visualizar e fazer download de faturas e relatórios
 * Atualizar suas informações de contato e cobrança
 * Atualizar detalhes de pagamento
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -188,12 +208,16 @@ Na aba **Meu plano**, você pode ver as informações do seu plano atual, revisa
 | <span id="addons"></span>**Complementos** | Complementos incluídos no seu plano e suas datas de início/término. Exemplos de recursos premium:<ul><li><Anchor target="_blank" href="/marketers/pt/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Proteção contra fraudes mobile</li><li><Anchor target="_blank" href="/marketers/pt/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Dados de custos</li><li><Anchor target="_blank" href="/marketers/pt/docs/audiences-guide">Audiências</Anchor></li><li><Anchor target="_blank" href="/marketers/pt/docs/pivot-table-user-metrics">Tabela dinâmica</Anchor></li><li><Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers">Relatório do Data Locker</Anchor></li></ul>Para saber mais sobre esses recursos e seus potenciais benefícios para o seu negócio, consulte seu CSM ou entre em contato com [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Plano futuro** | Essa seção aparece quando um plano futuro foi adquirido. Se esse for o caso, você verá os detalhes do seu próximo plano aqui. |
 
+<div id="usage-report" />
+
 ### Relatório de uso
 
 A página de relatório de uso mostra as suas conversões faturáveis e o retorno dos seus investimentos, especificamente para assinantes do ROI360. Nessa página, você pode:
 
 * Filtrar dados por data, aplicativo, canal de mídia, fonte de eventos e tipo de eventos.
 * [Baixar](#baixar-relatórios-de-uso) um relatório de acordo com os filtros selecionados.
+
+<div id="access-to-the-usage-report-page" />
 
 #### Acesso à página de relatório de uso
 
@@ -207,9 +231,13 @@ A página de relatório de uso mostra as suas conversões faturáveis e o retorn
 
 * Em [**gerenciamento de contas**](#página-de-gerenciamento-de-contas) > **meu plano**, clique em **relatório de uso**, no canto superior direito.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > Esse relatório não é compatível com o plano de usuários mensais ativos (MAU).
+
+<div id="data-included-in-the-usage-report" />
 
 #### Dados inclusos no relatório de uso
 
@@ -226,10 +254,14 @@ A página de relatório de uso mostra as suas conversões faturáveis e o retorn
 * Por padrão, o intervalo de datas mostra dados desde o primeiro dia do mês atual até ao dia presente. Você pode alterar isso selecionando datas diferentes no filtro na parte superior da tabela.
 * Os dados do relatório são mantidos durante 24 meses.
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > * Relatórios de uso e faturas são calculados com base no fuso horário UTC+0. Como resultado, pode haver pequenas discrepâncias entre os relatórios de uso e os dados relatados em painéis, relatórios de coorte e outros relatórios agregados.
 > * Os dados nos relatórios de uso são considerados como**não transparentes** mesmo quando a opção <Anchor target="_blank" href="/partners/pt/docs/getting-started-agency-onboarding#transparency">**permitir transparência**</Anchor> estiver ativada, o que significa que eles mostram o nome da agência e não o canal de mídia atribuído
+
+<div id="usage-report-fields" />
 
 #### Campos do relatório de uso
 
@@ -267,11 +299,15 @@ Consulte abaixo as especificações dos campos para conversões de mensuração 
 
 </Accordion>
 
+<div id="download-a-usage-report" />
+
 #### Baixar relatórios de uso
 
 1. Na aba **Meu plano**, clique em **relatório de uso.**
 2. Selecione o período e outros filtros.
 3. Clique em **Download** no topo da tabela. O arquivo é baixado em CSV.
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >
@@ -280,11 +316,15 @@ Consulte abaixo as especificações dos campos para conversões de mensuração 
 > * Filtros aplicados: o relatório segue os filtros selecionados
 > * [Totalidade:](#dados-inclusos-no-relatório-de-uso) o relatório pode ser parcial, a depender do dia, mês e do período escolhido.
 
+<div id="account-status" />
+
 ### Status da conta
 
 O status da sua conta é mostrado no canto superior esquerdo da página de gerenciamento da conta. Os possíveis status são:
 
 <table><thead><tr><th>Status da conta</th><th>Descrição</th><th>Comentários</th></tr></thead><tbody><tr><td rowspan="2">Conta ativa</td><td>Todos os planos <strong>Welcome</strong> e <strong>Zero</strong> </td><td>Não requerem um método de pagamento</td></tr><tr><td> Planos <strong>Growth</strong> e <strong>Enterprise</strong> com método de pagamento válido e sem faturas pendentes</td><td> </td></tr><tr><td>Suspensão pendente</td><td>Conta com uma ou mais faturas em atraso. Após 30 dias de faturas não pagas, a conta é suspensa.</td><td>Pode recuperar o estado ativo efetuando <a href="./account-management-plans-payments-and-billing#pagar-faturas-atrasadas">pagamentos de faturas</a>. </td></tr><tr><td>Suspenso</td><td>Uma conta com faturas em atraso há mais de 30 dias.</td><td>Você deixa de ter acesso à sua conta, com a exceção da área Meu Plano, gerenciamento de usuários e pagamento.<br/>Você pode recuperar o acesso e recuperar o status Ativo efetuando pagamentos de faturas </td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### Atualizar, fazer downgrade ou excluir uma conta
 
@@ -304,13 +344,19 @@ Para excluir ou fazer downgrade de uma conta, entre em contato com seu CSM ou en
 * Fazer download de faturas (PDF)
 * Escolha uma forma de pagamento (para clientes Growth, é necessário cartão de crédito)
 
+<div id="note-5" />
+
 > 📘 **Nota**
 >
 > A aba **Pagamentos e faturas** está disponível apenas para planos que exigem pagamento (planos diferentes de [Welcome ou Zero](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
 
+<div id="payment-methods-easy--secure-invoicing" />
+
 ### Formas de pagamento: faturamento fácil & seguro
 
 Saiba quais opções de pagamento estão disponíveis para suas faturas da AppsFlyer e por que o ACH é a melhor opção para clientes nos EUA.
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 #### Recomendado para clientes nos EUA: ACH (Automated Clearing House)
 
@@ -327,7 +373,11 @@ Veja o vídeo abaixo para um guia rápido sobre como o ACH funciona e por que mu
 | Segurança de nível bancário | Fluxo seguro que se integra diretamente ao seu banco online. |
 | Totalmente automatizada | Prático tanto para **Pagamentos recorrentes** (configure uma vez e não se preocupe mais) quanto para **PayNow** (pagamentos únicos e rápidos). |
 
+<div id="payment-types" />
+
 ### **Opções de Pagamento:**
+
+<div id="hands-free-recurring-payments" />
 
 ##### **Pagamentos recorrentes sem intervenção manual**
 
@@ -337,9 +387,13 @@ Atualizar o método de pagamento para os planos **Growth** e planos **Enterprise
 
 **Para clientes dos EUA,** o **ACH** oferece a experiência de pagamento recorrente mais confiável.
 
+<div id="note-6" />
+
 > 📘 **Atenção**
 >
 > As cobranças automáticas não serão processadas se você tiver um plano pré-pago, saldo credor, se a fatura tiver sido paga por transferência bancária ou se houver um problema de cobrança.
+
+<div id="paynow-manual-invoice-payment" />
 
 ##### **PayNow (pagamento manual de fatura)**
 
@@ -348,6 +402,8 @@ Pague faturas em aberto manualmente a qualquer momento diretamente pelo portal.
 Na janela pop-up, selecione **Conta bancária** -> **Próximo.**
 
 **Para clientes dos EUA,** o **ACH PayNow** oferece a experiência de pagamento manual mais rápida e consistente.
+
+<div id="set-up" />
 
 ## Configurar
 
@@ -417,11 +473,15 @@ Este processo seguro e automatizado ocorre diretamente no portal da AppsFlyer.
 
 </Accordion>
 
+<div id="managing-payment-methods" />
+
 ### **O pagamento foi feito por transferência bancária**
 
 Para excluir uma forma de pagamento salva (conta ACH ou cartão de crédito) em Pagamentos recorrentes, **envie um ticket ao suporte** solicitando a exclusão da forma de pagamento.
 
 **Observação:** Você não pode excluir formas de pagamento diretamente no portal.
+
+<div id="invoices" />
 
 ### Faturas
 
@@ -436,6 +496,8 @@ Nesta seção, você pode ver faturas pagas e não pagas, fazer download e [paga
 | **Estado** | **Pago**, **Vencido**ou **Atrasado** |
 | **PDF** | Clique em **Ver** para abrir a fatura em formato PDF |
 
+<div id="pay-overdue-invoices" />
+
 ### Pagar faturas atrasadas
 
 Independentemente da sua forma de pagamento habitual, você pode pagar faturas em atraso usando sua **forma de pagamento preferida** por meio de um [**pagamento único Pay Now**](/docs/account-management-plans-payments-and-billing#configurar). Independentemente do seu método de pagamento habitual, você pode pagar faturas vencidas com cartão de crédito **sem que** as informações do cartão de crédito sejam salvas.
@@ -444,11 +506,15 @@ O pagamento de contas com o [status](/docs/account-management-plans-payments-and
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <div id="billing-details" />
 
 <Accordion title="Detalhes de cobrança">
 
 Nessa aba, você pode visualizar e atualizar os detalhes da sua empresa e as pessoas responsáveis por lidar com a cobrança.[![Atenção](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
+
+<div id="company-billing-details" />
 
 ### Detalhes de cobrança da empresa
 
@@ -460,12 +526,16 @@ Ao escolher um plano **Growth** ou **Enterprise** personalizado, você deve forn
 2. Leia os termos legais e aceite-os marcando a caixa de seleção.
 3. Clique em **Enviar**. Uma mensagem pop-up indicará se as alterações foram guardadas com sucesso.
 
+<div id="note-7" />
+
 > 📘 **Atenção**
 >
 > * Se você alterar o nome ou endereço da empresa, os termos legais da AppsFlyer serão exibidos e deverão ser aceitos. No caso de problemas, mande um e-mail para [accounting@appsflyer.com](mailto:accounting@appsflyer.com).
 > * Se houver informações ausentes ou inválidas, as informações de cobrança não serão salvas. Por exemplo:
 >   * Se o [número fiscal da empresa](/docs/account-management-plans-payments-and-billing#número-fiscal-da-empresa) for exigido pelo seu país, ele deve ser inserido no formato correto.
 >   * O código postal (CEP) deve corresponder ao local selecionado.
+
+<div id="billing-contacts" />
 
 ### Contatos de cobrança
 
@@ -476,6 +546,8 @@ Atuam como um ponto focal para receber faturas e para comunicações sobre quais
 1. Clique em **Adicionar contato** e insira as [informações necessárias](/docs/account-management-plans-payments-and-billing#billing-details) ou faça alterações em um contato atual.
 2. Clique em **Salvar informações de cobrança**. Certifique-se de ter pelo menos um contato de cobrança.
 3. Uma mensagem pop-up indicará se as alterações foram guardadas com sucesso.
+
+<div id="note-8" />
 
 > 📘 **Nota**
 >
@@ -488,9 +560,13 @@ Atuam como um ponto focal para receber faturas e para comunicações sobre quais
 | Detalhes de cobrança da empresa | <ul><li>**Nome de faturamento da empresa:** Preenchido automaticamente com base no formulário de inscrição:</li><li>**Número fiscal da empresa:** Consulte a [seguinte aba](/docs/account-management-plans-payments-and-billing#número-fiscal-da-empresa) para mais detalhes</li><li>**Nome da empresa na fatura** (em inglês): Aparece na fatura</li><li>**Moeda:** USD, ILS, EUR ou GBP</li><li>**Endereço:** Preenchido automaticamente com base no formulário de inscrição:<ul><li>Endereço</li><li>Cidade (em inglês)</li><li>Código postal: Deve coincidir com a localização selecionada</li><li>País: Selecione da lista</li></ul></li><li>Se necessário, adicione um estado, província ou território</li><li>Se necessário, atualize os dados de faturação na plataforma ou envie uma mensagem para [accounting@appsflyer.com](mailto:accounting@appsflye.com)</li></ul> |
 | Contato de cobrança | Insira as informações de contato necessárias:<ul><li>**Nome:** Use somente caracteres romanos</li><li>**E-mail, telefone:** Deve ser fornecido</li></ul> |
 
+<div id="company-tax-number" />
+
 ### Número fiscal da empresa
 
 Certos países, listados na tabela abaixo, exigem que registremos o número de identificação fiscal de sua empresa e adicionemos o IVA às suas faturas. Se sua empresa estiver em um desses países, você deverá fornecer o número de identificação fiscal da empresa no formato correto do país. Caso contrário, suas informações de cobrança não serão salvas.
+
+<div id="countries-requiring-company-tax-number" />
 
 #### Países que exigem número fiscal da empresa
 
@@ -499,6 +575,8 @@ Certos países, listados na tabela abaixo, exigem que registremos o número de i
 | Canadá | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">GST/HST program account number</Anchor> |
 | Países da UE | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">VAT Information Exchange System (VIES)</Anchor> |
 | Israel | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">Registro de IVA israelense</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### Opções de mensuração de conversão para cobrança de aplicativos iOS
 

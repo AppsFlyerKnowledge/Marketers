@@ -31,6 +31,8 @@ x-zendesk:
 
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 
+<div id="push-api" />
+
 ## API de push
 
 A Push API transmite dados brutos gerados pela atribuição da AppsFlyer e pela atribuição da SKAdNetwork na forma de mensagens para seus servidores. Você pode selecionar os tipos de mensagens e o conteúdo, além de definir os endpoints de destino.
@@ -50,9 +52,13 @@ Características da mensagem
 | Conteúdo da mensagem (campos) | <ul><li>As mensagens têm uma estrutura `key:value`.</li><li>Veja os campos disponíveis de <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor> na atribuição da AppsFlyer.</li><li>Cada chave representa um campo de dados brutos. Veja a <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary#data-fields-dictionary">descrição dos campos de dados brutos na AppsFlyer</Anchor>.</li><li>Chaves em branco ou nulas não são enviadas.</li><li>O exemplo contém campos nulos e vazios. Postbacks reais não têm campos vazios ou nulos. O exemplo fornecido tem um formato JSON.<ul><li>[/docs/ctv-pc-and-console-platform-attribution-concepts](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[com o Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | Formato dos campos de carimbo de data/hora | <ul><li>Carimbos de data/hora UTC: `yyyy-mm-dd hh:mm:ss.sss`. Por exemplo, aparece como `2019-09-17 00:09:00.123`. Um evento ocorreu às 18:00 no horário de Tóquio. A hora do evento é convertida em UTC, que é 09:00. A hora registrada é a hora em UTC.</li><li>Carimbos de data/hora do fuso horário selecionado (específico do aplicativo): `yyyy-mm-dd hh:mm:ss.sss±th:tm`. Por exemplo `2019-09-17 18:00:16.000+0900`. Um evento ocorreu às 18:00 no horário de Tóquio. O horário do evento mostrado é registrado como 18:00+09:00. 09:00 é o fuso horário de Tóquio.</li></ul> |
 
+<div id="available-message-types" />
+
 #### Tipos de mensagens disponíveis
 
 <table><thead><tr><th>Contexto de atribuição</th><th>Tipo de mensagem</th><th>campo conversion_type</th><th>campo campaign_type</th><th>campo event_name</th><th>campo event_type</th></tr></thead><tbody><tr><td>Aquisição de usuários</td><td>Instalação\*</td><td>instalação</td><td><p>Não orgânico: UA</p><p>Orgânico: orgânico</p></td><td>instalação</td><td><ul><li>instalação</li><li>organic-install</li></ul></td></tr><tr><td>Aquisição de usuários </td><td>Eventos in-app de instalação</td><td><span>instalação</span></td><td><p>Não orgânico: UA</p><p>Orgânico: orgânico</p></td><td>Nomes de eventos definidos pelo anunciante</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>Redirecionamento</td><td>Reengajamento</td><td>re-engajamento</td><td>retargeting</td><td>re-engajamento</td><td>re-attribution</td></tr><tr><td>Redirecionamento </td><td>Eventos in-app de reengajamento</td><td>re-engajamento</td><td>retargeting</td><td>Nomes de eventos definidos pelo anunciante</td><td>re-engagement-in-app-event</td></tr><tr><td>Redirecionamento </td><td>Re-atribuição </td><td>reinstall</td><td>retargeting</td><td>re-attribution</td><td>re-attribution</td></tr><tr><td>Aquisição de usuários </td><td>Reinstalação</td><td>reinstall</td><td><p>Não orgânico: UA</p><p>Orgânico: orgânico</p></td><td>reinstall</td><td><ul><li>reinstall</li><li>organic-reinstall</li></ul></td></tr><tr><td>Redirecionamento</td><td>Eventos in-app de reatribuição</td><td>reinstall</td><td>retargeting</td><td>Nomes de eventos definidos pelo anunciante</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">\* Algumas instalações relacionadas à atribuição de view-through são atribuídas a uma <a href="./about-raw-data-identifier-restrictions" target="_blank">fonte de mídia restrita.</a> </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### Campos exclusivos
 
@@ -76,6 +82,8 @@ Características da mensagem:
 | Atualização dos dados | <ul><li>Instalações, redownloads e eventos in-app:<ul><li>Processados diariamente</li><li>Enviados para seu endpoint no dia seguinte ao recebimento do postback do iOS pela AppsFlyer</li><li>Espere receber mensagens de eventos entre 08:00 e 11:00 UTC (a hora exata varia)</li><li>Exemplo: postbacks recebidos na segunda-feira são enviados a partir de terça às 08:00 UTC</li></ul></li><li>Postbacks do iOS e cópia de postbacks: As mensagens são enviadas logo após chegarem à AppsFlyer</li></ul> |
 | Exemplos de mensagens | A planilha contém exemplos de mensagens. O exemplo fornecido tem um formato JSON. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">Exemplos de mensagens SKAN</Anchor>. |
 
+<div id="message-types-for-skan-attribution" />
+
 #### Tipos de mensagens para atribuição da SKAN
 
 | Tipo de mensagem | campo event\_name | campo skad\_redownload | campo event\_type |
@@ -88,7 +96,11 @@ Características da mensagem:
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Configurar endpoints da Push API
+
+<div id="caution" />
 
 > ❗️ **Atenção**
 >
@@ -102,6 +114,8 @@ Características da mensagem:
 
 Para configurar a Push API, preencha a lista de ações abaixo.
 
+<div id="push-api-setup-checklist" />
+
 #### Checklist de configuração da Push API
 
 <table><thead><tr><th>Etapa </th><th>Atribuição da AppsFlyer</th><th>Atribuição na SKAdNetwork </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>Se você já possui um endpoint ativo da Push API, pode pular essa etapa. </p><p>Complete os <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">requisitos do lado do servidor</a>.</p></td></tr><tr><td>2</td><td>Para atribuição da AppsFlyer, planeje as configurações do endpoint usando a <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">checklist da Push API.</a> </td><td>Não aplicável</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Configure o endpoint de atribuição da AppsFlyer</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Configure o endpoint de atribuição da SKAdNetwork</a></td></tr></tbody></table>
@@ -111,6 +125,8 @@ Para configurar a Push API, preencha a lista de ações abaixo.
 <Accordion title="Requisitos do lado do servidor (seu servidor)">
 
 Verifique se o seu servidor cumpre com os requisitos listados aqui:
+
+<div id="server-side-requirements" />
 
 #### Requisitos do lado do servidor
 
@@ -136,6 +152,8 @@ Verifique se o seu servidor cumpre com os requisitos listados aqui:
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
 
+<div id="endpoint-planning-table" />
+
 #### Tabela de planejamento do endpoint
 
 | Não. | Configuração | Detalhes | Use essa coluna para registrar suas configurações planejadas |
@@ -153,6 +171,8 @@ Verifique se o seu servidor cumpre com os requisitos listados aqui:
 <Accordion title="Configure o endpoint de atribuição da AppsFlyer">
 
 Todos os membros da equipe com permissões para acessar a API podem fazer alterações nas configurações da Push API. Outros usuários da conta podem visualizar as configurações.
+
+<div id="add-an-appsflyer-attribution-endpoint" />
 
 #### Adicione um endpoint de atribuição da AppsFlyer
 
@@ -174,6 +194,8 @@ Todos os membros da equipe com permissões para acessar a API podem fazer altera
 8. Clique em **Salvar**.  
    A Push API agora está ativa. Os dados de conversão são enviados para o endpoint.
 9. Teste o endpoint usando o procedimento a seguir.
+
+<div id="test-the-endpoint" />
 
 #### Para testar o endpoint:
 
@@ -215,6 +237,8 @@ Você pode personalizar um header de autorização que será enviado com suas me
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## Procedimentos adicionais — gerenciando endpoints
 
 Todos os membros da equipe com permissões para acessar a API podem fazer alterações nas configurações da Push API. Outros usuários da conta podem visualizar as configurações.
@@ -244,6 +268,8 @@ Todos os membros da equipe com permissões para acessar a API podem fazer altera
    O endpoint é removido.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Solução de problemas, características e limitações
 
@@ -332,6 +358,8 @@ https://your.server.com?consumer_key=abc456
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

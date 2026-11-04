@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Em resumo:** Otimize campanhas do Apple Ads usando o SearchAds.com da MobileAction. Quando configurado, o AppsFlyer envia postbacks para o SearchAds.com.
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Ativação da atribuição do Apple Ads
 
 Para poder enviar postbacks para o SearchAds.com, primeiro ative a atribuição do Apple Ads. Isso pode ser feito pelo anunciante ou por uma agência.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -32,7 +36,11 @@ Para poder enviar postbacks para o SearchAds.com, primeiro ative a atribuição 
 * **Anunciantes**: siga as instruções abaixo para ativar a atribuição do Apple Ads.
 * **Agências**: <Anchor target="_blank" href="/marketers/pt/docs/apple-ads-integration-setup#agency-setup">siga estas instruções</Anchor> para ativar a atribuição do Apple Ads.
 
+<div id="setting-up-searchadscom-in-appsflyer" />
+
 ## Configurando o SearchAds.com no AppsFlyer
+
+<div id="getting-required-information-from-searchadscom" />
 
 ### Como obter as informações necessárias do SearchAds.com
 
@@ -42,6 +50,8 @@ Antes de começar a configurar o SearchAds.com na AppsFlyer, obtenha sua **api\_
 * Para o ID do grupo de campanhas do Apple Ads: no **dashboard do Apple Ads,** obtenha o ID do grupo de campanhas do Apple Ads para o grupo de campanhas relevante:
 
   ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+
+<div id="setting-up-campaigns-in-appsflyer" />
 
 ### Configuração de campanhas no AppsFlyer
 
@@ -61,6 +71,8 @@ Antes de começar a configurar o SearchAds.com na AppsFlyer, obtenha sua **api\_
    5. Insira a chave de API no campo **api\_key**.
    6. Insira o **ID da campanha do Apple Ads** do SearchAds.com. Insira apenas os dígitos (números).
    7. Clique em **Guardar**.
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### Configuração dos postbacks de eventos in-app
 

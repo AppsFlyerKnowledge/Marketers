@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** a AppLovin, um parceiro integrado da AppsFlyer, é uma ad network bem conhecida para tráfego de app mobile. Além da atribuição mobile baseada em cliques, a AppLovin também oferece atribuição de custo, receita publicitária e view-through, que você pode registrar com a AppsFlyer.
 
+<div id="setting-up-applovin" />
+
 ## Configurando a AppLovin
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -42,13 +44,19 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita** aqui, você precisará ativar o botão **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Como uma all-installs network, a AppLovin prefere receber postbacks para todas as novas instalações do seu aplicativo de QUALQUER fonte, incluindo orgânicas. Recomenda-se selecionar *Eventos atribuídos a qualquer parceiro* para enviar todos os postbacks de instalação para a AppLovin.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -64,12 +72,16 @@ A AppLovin se conecta à AppsFlyer por meio de uma sdk\_key exclusiva. Se você 
 
 Ative esta opção se quiser atribuir instalações view-through da AppLovin. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a AppLovin após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à AppLovin.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser relatada à AppLovin.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -114,6 +126,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 
 <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualize o status da API de custo</Anchor> e a última vez que a AppsFlyer conseguiu extrair dados de custo correspondentes no painel de status de integração de custo (e receita de publicitária) ou no painel individual da ad network. 
 
+<div id="applovin-billable-cost" />
+
 > 🚧 **Custo faturável da AppLovin**
 >
 > A partir de 1º de agosto de 2024, a AppLovin fatura todos os seus clientes com base em instalações probabilísticas. Antes dessa data, alguns clientes eram cobrados com base em instalações SKAN. <Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">Consulte a AppLovin para mais informações</Anchor>
@@ -133,6 +147,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 
 * Siga <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">essas instruções de integração</Anchor>.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > * A AppLovin envia a receita de anúncios gerada por ela mesma.
@@ -145,6 +161,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 <Accordion title="Aba permissões">
 
 Nesta aba, você pode selecionar as permissões para conceder à AppLovin. Observe que, mesmo se a atribuição estiver desativada para a AppLovin, a aba de permissões estará ativa e você poderá conceder controle à AppLovin.
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

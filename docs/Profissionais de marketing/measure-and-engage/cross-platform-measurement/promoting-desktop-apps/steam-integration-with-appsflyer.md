@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > Visão geral: **Integre seu game/aplicativo Steam com a AppsFlyer para receber dados de atribuição e de eventos para suas campanhas no Steam. A integração com o Steam é compatível com a atribuição e à gravação de eventos in-app para aplicativos Steam no dispositivo Steam de um usuário.**
 
+<div id="about-steam-attribution" />
+
 ## Sobre a atribuição do Steam
 
 O Steam é executado em dispositivos Windows e Mac, Steam Deck e outros dispositivos Steam OS.
 
 Os aplicativos executados no Steam podem se integrar à AppsFlyer por meio da S2S API ou SDK para receber dados de atribuição e mensuração de performance, que oferecem um insight sobre quais fontes e campanhas impulsionam aberturas do app e eventos in-app. Esses insights são usados para mensurar e otimizar atividades de marketing.
+
+<div id="example-attribution-flow" />
 
 ### Exemplo de fluxo de atribuição
 
@@ -40,6 +44,8 @@ A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jor
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
 3. <span id="marketing-touchpoint"></span>Página do aplicativo Steam: Esta é a página da sua loja Steam que hospeda seu aplicativo Steam para os clientes baixarem.
 4. Instalação do jogo: O usuário instala o jogo, acionando a atribuição e a gravação de eventos e sessões no aplicativo.
+
+<div id="integration-procedures" />
 
 ## Procedimentos de integração
 
@@ -171,9 +177,13 @@ A tabela abaixo lista as etapas necessárias para integrar um aplicativo do Stea
   </tbody>
 </Table>
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Removendo dados do AppsFlyer ao desinstalar o aplicativo
 
 Para remover todos os dados do AppsFlyer SDK ao desinstalar o aplicativo, peça ao seu desenvolvedor para executar as etapas especificadas [aqui](https://dev.appsflyer.com/hc/docs/steam-vanilla#deleting-appsflyer-data-on-uninstall).
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 
@@ -181,6 +191,8 @@ Para remover todos os dados do AppsFlyer SDK ao desinstalar o aplicativo, peça 
 | --- | --- |
 | Categoria do dispositivo (por exemplo, MOBILE\_PHONE, TV) | Atualmente não compatível |
 | Dados de custos | Importe dados de custo via <Anchor target="_blank" href="/marketers/pt/docs/import-cost-data">Cost Import</Anchor> usando o método de upload de arquivo **por e-mail**. Você também pode coletar dados **via API** para Google, Meta ou TikTok. |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

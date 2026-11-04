@@ -31,15 +31,21 @@ x-zendesk:
 
 ## [<Image alt="Lista de Permissões da API" src="https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png" width="609px" />](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)
 
+<div id="overview" />
+
 ## Visão Geral
 
 Proteja os seus dados de acessos não autorizados configurando uma lista de permissões da API que especifique os endereços IP autorizados a fazer chamadas API à sua conta AppsFlyer. Uma vez que a sua lista de permissões esteja ativa, apenas as chamadas API provenientes desses endereços IP serão permitidas enquanto as chamadas de todos os outros endereços IP serão negadas.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
 > * Apenas administradores podem aceder e gerir a lista de permissões.
 > * O uso da lista de permissões é opcional e está inativo por defeito.
 > * A ativação da lista de permissões é feita ao nível da conta e aplica-se a todas as aplicações na conta.
+
+<div id="set-up-your-api-allowlist" />
 
 ## Configure a sua lista de permissões da API
 

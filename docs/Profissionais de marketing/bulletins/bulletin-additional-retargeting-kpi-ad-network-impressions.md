@@ -30,9 +30,13 @@ x-zendesk:
 * **Onde está mudando**: dashboard de retargeting  (incluindo os dashboards da ad network e da agência)
 * **Data de publicação**: January 15, 2020
 
+<div id="before-the-change" />
+
 #### Antes da mudança
 
 Sequência de caracteres
+
+<div id="after-the-change" />
 
 #### Depois da mudança
 
@@ -48,6 +52,8 @@ Resumo dos KPIs disponíveis no dashboard de retargeting após a mudança:
   * Conversões
   * Reengajamentos versus reatribuições
   * Sequência de caracteres
+
+<div id="what-you-need-to-do-to-prepare-for-the-change" />
 
 #### O que você precisa fazer para se preparar para a mudança
 

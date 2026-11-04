@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## Princípios do painel
 
 O painel contém dados de desempenho da campanha SKAN e adere aos seguintes princípios:
@@ -40,6 +42,8 @@ O painel contém dados de desempenho da campanha SKAN e adere aos seguintes prin
   * Postbacks recebidos em um determinado dia são processados no final do dia UTC. Os dados ficam disponíveis até às 08:00 UTC do dia seguinte. Significa que os postbacks recebidos na segunda-feira estão disponíveis no painel na manhã de terça-feira.
   * Ver <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">tempo esperado de atualização do painel.</Anchor>
 
+<div id="skan-dashboard-view-options" />
+
 ## Opções de visualização do painel do SKAN
 
 Mostrar dados usando a data de instalação [ou a data de chegada do postback](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options).
@@ -47,6 +51,8 @@ Mostrar dados usando a data de instalação [ou a data de chegada do postback](/
 **Para selecionar uma opção de exibição de data**, na AppsFlyer, vá para **Painel** > **Visão geral do SKAN.** Na barra do filtro, selecione uma opção de data em **Exibir por**.
 
 Filtros adicionais e opções de exibição são descritos nas seções a seguir.
+
+<div id="dashboard-use" />
 
 ## Uso do painel
 
@@ -282,6 +288,8 @@ Definições:
 * **SDK:** SDK da AppsFlyer incorporado no aplicativo.
 * **Regras**: <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">modelo de atribuição da AppsFlyer</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### Diferenças na estrutura de atribuição
 
 | Conceito | SKAN | A AppsFlyer |
@@ -295,6 +303,8 @@ Definições:
 | Instalações relatadas por | <ul><li>**SKAN**: limitado a instalações não orgânicas e re-downloads não orgânicos.</li><li>**SDK**: todas as instalações são relatadas. Somente as primeiras instalações são contadas para fins de métrica. Significa que as reatribuições são desconsideradas.</li></ul> | O SDK reporta todas as instalações categorizadas usando Regras em instalações de primeira vez e reinstalações (reatribuições). |
 | Nível de granularidade publicitária | Campanha, conjunto de anúncios, ID do conjunto de anúncios, anúncio e ID do anúncio. | Hierarquia completa: Campanha, ID da campanha, conjunto de anúncios, parâmetros adicionais como canal e parceiro. |
 | Redownloads vs. reinstalações | Redownloads relacionam-se às ações de um determinado usuário Apple ID. Elas não são paralelas a reatribuições. | O retargeting (reatribuições de reengajamento) reflete no painel Retargeting. Eles não são paralelos aos redownloads. |
+
+<div id="metric-differences" />
 
 #### Diferenças de métrica
 
@@ -337,6 +347,8 @@ Definições:
 | Anúncios de Busca da Apple | Apple Search Ads não compartilha dados no nível da campanha. As campanhas de agência que exigem um prefixo não aparecerão na visualização da agência. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -25,6 +25,8 @@ x-zendesk:
 
 Use o dashboard de mensuração para visualizar e analisar a performance de campanhas. Nele, você encontra KPIs de performance, tendências ao longo do tempo, cliques e impressões, receitas, entre outras métricas.
 
+<div id="the-measurement-dashboard" />
+
 ## Dashboard de mensuração
 
 [![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
@@ -78,6 +80,8 @@ Filtros padrão disponíveis:
 
 <Accordion title="E - Gráficos">
 
+<div id="performance-comparison-charts" />
+
 ### **Gráficos de comparação de performance**
 
 [![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
@@ -85,6 +89,8 @@ Filtros padrão disponíveis:
 **Configurações de exibição**
 
 (a) Dimensões e métricas.
+
+<div id="trend-over-time-comparison" />
 
 ### **Comparação de tendências ao longo do tempo**
 

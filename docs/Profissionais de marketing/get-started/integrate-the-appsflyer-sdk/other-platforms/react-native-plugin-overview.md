@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** integre o SDK da AppsFlyer em jogos para iOS/Android desenvolvidos com a Unity para mensurar instalações, eventos in-app, fontes de mídia e muito mais.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * O plugin possui código aberto e está disponível no <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin">GitHub.</Anchor>

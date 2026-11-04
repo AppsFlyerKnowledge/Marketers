@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** Saiba como a atribuição cross-platform de reengajamento credita as fontes de mídia que levam usuários existentes de volta ao seu produto em diferentes plataformas.
 
+<div id="about-cross-platform-re-engagement-attribution" />
+
 ## Sobre a atribuição cross-platform de reengajamento
 
 A atribuição cross-platform de reengajamento amplia o modelo de <Anchor target="_blank" href="/marketers/pt/docs/beta-user-based-cross-platform-attribution">atribuição cross-platform e user-based</Anchor> para incluir a mensuração de cohort de usuários com base no engajamento mais recente com anúncios, além da fonte de aquisição original.
@@ -40,6 +42,8 @@ Veja como os dois modelos estão relacionados:
 
 A atribuição de reengajamento está ao lado da aquisição de usuários, para que você tenha uma visão única tanto da fonte que adquiriu um usuário quanto da fonte que o reconquistou, em um mesmo relatório.
 
+<div id="how-does-re-engagement-attribution-work" />
+
 ## Como funciona a atribuição de reengajamento
 
 Para que um evento in-app seja atribuído a uma fonte de mídia de reengajamento, todas as seguintes condições precisam ser cumpridas:
@@ -48,6 +52,8 @@ Para que um evento in-app seja atribuído a uma fonte de mídia de reengajamento
 * **O CUID está presente:** O evento precisa incluir um CUID válido que corresponda a um CUID previamente registrado na mesma linha de produtos. É assim que a AppsFlyer identifica o usuário como recorrente em vez de novo.
 * **O período de inatividade do retargeting expirou:** O CUID não pode ter sido registrado durante, no mínimo, toda a janela de inatividade para reengajamento desde a última aparição. Se o evento ocorrer dentro dessa janela, não é contabilizado como um reengajamento e é atribuído à fonte de aquisição original.
 * **O evento ocorre dentro da janela de reengajamento:** Depois que uma atribuição de reengajamento de qualidade é detectada, a janela de reengajamento é aberta. Apenas eventos in-app que ocorrem dentro dessa janela são atribuídos à fonte de mídia de reengajamento. Eventos que ocorrem após o fechamento da janela são atribuídos à fonte de aquisição original.
+
+<div id="cross-platform-re-engagement-user-journey-example" />
 
 ## Jornada de reengajamento cross-platform
 
@@ -89,11 +95,17 @@ Depois que a Meta é creditada, a janela de reengajamento é aberta. Quaisquer e
 
 </Accordion>
 
+<div id="set-up-cross-platform-re-engagement-attribution" />
+
 ## Configurar a atribuição cross-platform de reengajamento
 
 Para configurar a atribuição cross-platform de reengajamento, você precisa definir algumas configurações específicas para reengajamento na AppsFlyer, além de configurar sua linha de produtos. Para mais informações, descubra <Anchor target="_blank" href="/marketers/pt/docs/product-line-group-apps-for-cross-platform-attribution#como-criar-uma-linha-de-produto">como criar uma linha de produtos</Anchor>.
 
+<div id="view-cross-platform-attribution-results" />
+
 ## Ver resultados de atribuição cross-platform
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

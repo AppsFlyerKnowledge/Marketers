@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **Visão geral:** o Chartboost, uma ad network parceira integrada da AppsFlyer, é uma das maiores plataformas de anúncios voltadas exclusivamente para jogos mobile, para aumentar a receita. Além da atribuição mobile baseada em cliques, o Chartboost também oferece atribuição de custo, receita publicitária e view-through, que você pode registrar com a AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Integrar o SDK do Chartboost só é necessário se você atua como publisher do Chartboost e deseja atribuir receita publicitária. Caso contrário, apenas o SDK da AppsFlyer é necessário. Para mais informações, consulte a [seção de receita publicitária](/docs/chartboost-campaign-configuration#ad-revenue-tab) deste artigo.
+
+<div id="setting-up-chartboost" />
 
 ## Configurando o Chartboost
 
@@ -48,9 +52,13 @@ x-zendesk:
 
 A ***aba de integração*** se divide em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 O <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">parceiro deve ser ativado</Anchor> ao habilitar o botão de alternância ***Ativar parceiro*** na primeira visita, para permitir sua configuração.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -62,6 +70,8 @@ O Chartboost requer conexão com a AppsFlyer por meio de um ID de aplicativo exc
 
 Ative essa opção se quiser atribuir instalações por view-through do Chartboost. O cursor de lookback de view-through está disponível na ***aba Link da atribuição***.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para o Chartboost após registrar instalações bem-sucedidas e instalações rejeitadas. Use essa seção para definir a **fonte dos usuários** para os postbacks.
@@ -71,6 +81,8 @@ Selecione ***todas as fontes, incluindo orgâni*cas** para ter toda a sua base d
 
 Instalações rejeitadas podem ser enviadas para **somente este parceiro**.
 
+<div id="launch-postbacks" />
+
 #### Postbacks de inicialização
 
 Desde 1º de julho de 2020, não enviamos mais postbacks de lançamento para o Chartboost. Se a sua integração foi configurada antes dessa data, pode haver alterações nas suas configurações. A tabela a seguir explica as possíveis alterações e as ações necessárias da sua parte, quando aplicável:
@@ -78,6 +90,8 @@ Desde 1º de julho de 2020, não enviamos mais postbacks de lançamento para o C
 | Sua configuração | Será atualizado para | Suas próximas ações |
 | --- | --- | --- |
 | Enviar ao Chartboost **todos os lançamentos** (de todas as fontes de mídia, incluindo orgânico) | Enviar ao Chartboost:<ul><li>**todas as instalações** (de todos os canais de mídia, incluindo orgânico)</li><li>**todos os** `af_app_opened` **eventos** (de todos os canais de mídia, incluindo orgânico)</li></ul> | Nenhuma ação adicional é necessária. Esta atualização não tem impacto real na configuração. |
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -108,6 +122,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao Chart
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -127,6 +143,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para obter mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas ao Chartboost.
@@ -135,9 +153,13 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Clique no link de atribuição
 
 Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie-o ao Chartboost para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Janela de retrospetiva da atribuição por visualização
 
@@ -148,6 +170,8 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 **Parâmetro do link de atribuição:** af\_viewthrough\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição view-through aqui</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Link de atribuição para impressões
 
@@ -179,6 +203,8 @@ Essa seção é relevante somente se você estiver atuando como publisher, exibi
 
 * Siga <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">essas instruções de integração</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Como publisher do Chartboost, há dois requisitos adicionais além da configuração do AppsFlyer:
@@ -208,6 +234,8 @@ Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/doc
 
 </Accordion>
 
+<div id="discrepancies-between-chartboost-and-appsflyer" />
+
 ## Discrepâncias entre o Chartboost e a AppsFlyer
 
 Às vezes, há discrepâncias entre o dashboard do Chartboost e o dashboard do AppsFlyer.
@@ -218,6 +246,8 @@ Os anunciantes devem estar cientes dos seguintes motivos:
 | --- | --- | --- |
 | **Janela de atribuição** | A janela de atribuição da Chartboost é de 21 dias | A janela de lookback da AppsFlyer é de 7 dias<br /><br />**\*\* Esta é a principal causa das discrepâncias entre a AppsFlyer e a Chartboost** |
 | **Atribuição de origem multi-canal** | A atribuição da Chartboost funciona conforme especificado acima, independentemente de outras fontes. | A AppsFlyer usa a atribuição do último clique (para mais informações sobre a atribuição da AppsFlyer, clique <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">aqui</Anchor>) |
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

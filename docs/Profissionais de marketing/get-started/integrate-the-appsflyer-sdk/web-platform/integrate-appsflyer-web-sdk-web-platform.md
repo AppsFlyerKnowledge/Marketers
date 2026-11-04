@@ -15,9 +15,13 @@ x-zendesk:
 ---
 **Resumo:** Instale o Web SDK da AppsFlyer (também conhecido como pixel) no seu site para registrar visitas e eventos de usuários na plataforma e defina um Customer User ID (CUID) para unificar jornadas cross-platform.
 
+<div id="overview" />
+
 ## Visão geral
 
 O Web SDK permite que você registre como os visitantes interagem com seu site e envia essa informação para a AppsFlyer. É um módulo plug-in de 40–60 KB que comunica as visitas e ações dos usuários no seu site à plataforma da AppsFlyer.
+
+<div id="integrate-the-sdk-manually" />
 
 ### Integre o SDK manualmente
 
@@ -31,6 +35,8 @@ O Web SDK permite que você registre como os visitantes interagem com seu site e
 6. [Definir o Customer User ID](#6-definir-o-customer-user-id). Defina um CUID para unificar a atividade da web com outras plataformas.
 7. [Gerenciar a privacidade](#7-gerenciar-a-privacidade). Controle a mensuração opt-in ou opt-out e configure a segurança e os filtros de dados (Política de Segurança de Conteúdo e descarte dos parâmetros de consulta).
 8. [Referência de cookies do Web SDK](#referência-de-cookies-do-web-sdk). Analise os cookies que o Web SDK configura ou usa, incluindo propósito, duração e alcance.
+
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
 
 #### Integre o SDK com um agente de codificação de IA
 
@@ -286,6 +292,8 @@ Não implemente nada além da integração do SDK web da AppsFlyer descrita aqui
 
 </Accordion>
 
+<div id="1-obtain-your-keys" />
+
 ## 1. Receber suas chaves
 
 **Obtenha o ID do Web SDK (também conhecido como Web Dev Key):**
@@ -299,6 +307,8 @@ Não implemente nada além da integração do SDK web da AppsFlyer descrita aqui
 1. Na AppsFlyer, no menu lateral, acesse **Engajar**> **Web-to-app** > **Smart Banners**.
 2. Copie a chave do Smart Banner necessária.
 
+<div id="2-select-a-code-snippet" />
+
 ## 2. Selecionar um code snippet
 
 Escolha o snippet que corresponde ao seu tipo de integração e requisitos de segurança. Duas opções estão disponíveis:
@@ -309,6 +319,8 @@ Escolha o snippet que corresponde ao seu tipo de integração e requisitos de se
 > ❗️ **Warning**
 >
 > Se você estiver fazendo a transição do Web SDK padrão para a verificação avançada do SDK, substitua o snippet existente pelo novo. O novo snippet não deve ser adicionado em conjunto com o snippet existente.
+
+<div id="standard-web-sdk" />
 
 ### Web SDK padrão
 
@@ -380,6 +392,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### Verificação avançada de SDK
 
@@ -456,6 +470,8 @@ Se o seu site impõe uma Política de Segurança de Conteúdo (CSP) usando nonce
 
 </Accordion>
 
+<div id="3-deploy-the-snippet" />
+
 ## 3. Implementar o snippet
 
 Implemente o snippet escolhido na Etapa 2 usando um dos seguintes métodos. Certifique-se de que o SDK seja carregado uma vez por cada página.
@@ -508,6 +524,8 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
 
 <Accordion title="Opção C: Implementar via Adobe Launch Tag Manager">
 
+<div id="create-a-property-in-adobe-experience-cloud" />
+
 #### Crie uma propriedade no Adobe Experience Cloud
 
 1. Acesse Adobe Experience Cloud > Inicialização.
@@ -517,6 +535,8 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
 5. Em **Plataforma**, selecione **Web**.
 6. Insira o domínio do seu site.
 7. Clique em **Guardar**.
+
+<div id="add-the-snippet-to-the-adobe-launch-property" />
 
 #### Adicione o snippet à propriedade do Adobe Launch
 
@@ -531,6 +551,8 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
    * Clique em **Manter alterações** para fechar o editor de código.
 5. Clique em **Guardar**.
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 #### Adicione a tag Adobe Launch ao site
 
 1. Na página **Propriedade da minha web**, selecione a aba **Ambientes** .
@@ -538,6 +560,8 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
 3. Na coluna **Instalar**, clique no ícone de seleção na linha relevante.
 4. Na caixa de diálogo **Instruções de instalação da web**, copie o snippet de código do script e feche a caixa de diálogo.
 5. Cole o snippet de código na tag “head” do site.
+
+<div id="publish-the-adobe-launch-environment" />
 
 #### Publicar o ambiente Adobe Launch
 
@@ -557,6 +581,8 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
    * Clique no menu de ação e selecione **Criar e publicar em produção.**
 
 </Accordion>
+
+<div id="4-make-sure-the-sdk-is-working" />
 
 ## 4. Verificar se o SDK está funcionando
 
@@ -584,6 +610,8 @@ Após a instalação, certifique-se de que o SDK está enviando solicitações a
 > 📘 **Note**
 >
 > Para uma forma visual e em tempo real de confirmar a instalação do seu SDK web e validar se seus eventos são disparados corretamente, use a página de teste do SDK web.
+
+<div id="5-set-and-record-events" />
 
 ## 5. Configurar e gravar eventos
 
@@ -655,6 +683,8 @@ window.onload = function(){
 
 Essa abordagem é usada para registrar conversões bem-sucedidas, como uma assinatura de newsletter, disparando uma tag no carregamento de uma página de agradecimento.
 
+<div id="1-set-up-a-thank-you-page" />
+
 #### 1. Crie uma página de agradecimento
 
 A estrutura de HTML carrega o GTM que, por sua vez, carrega o Web SDK. Ela também mostra como os dados podem ser disponibilizados ao GTM através de funções ou `localStorage`.
@@ -662,6 +692,8 @@ A estrutura de HTML carrega o GTM que, por sua vez, carrega o Web SDK. Ela tamb�
 ```html
 <html>\n<head>\n    <script>\n        // Google Tag Manager carrega o SDK web\n        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,'script','dataLayer','GTM-XXXX');\n    </script>\n    <script>\n        function getResponseFromServer() {\n            return JSON.stringify({ action: 'subscribe', category: 'site actions', label: userEmail })\n        }\n        localStorage.setItem('data', JSON.stringify({ action: 'subscribe', category: 'site actions', label: 'user@email.com' }));\n    </script>\n</head>\n<body>\n    <h1>Obrigado por se inscrever em nossa newsletter</h1>\n</body>\n</html>
 ```
+
+<div id="2-configure-the-gtm-tag" />
 
 #### 2. Configure a tag do GTM
 
@@ -732,6 +764,8 @@ Use este método para mensurar ações específicas que os usuários realizam em
 
 Esse método captura ações específicas, como clicar em um botão de **checkout**, usando as variáveis e os gatilhos integrados do GTM.
 
+<div id="1-set-up-a-checkout-page" />
+
 #### 1. Configure uma página de checkout
 
 ```html
@@ -752,6 +786,8 @@ Esse método captura ações específicas, como clicar em um botão de **checkou
 </html>
 ```
 
+<div id="2-configure-gtm-variables-and-triggers" />
+
 #### 2. Configure variáveis e gatilhos no GTM
 
 1. No GTM, clique em **Variáveis** > **Configurar** e ative **Elementos de clique** na lista de variáveis incorporadas.
@@ -760,6 +796,8 @@ Esse método captura ações específicas, como clicar em um botão de **checkou
    * Tipo de gatilho: **Clique - Todos os elementos**.
    * Esse gatilho dispara em: **Alguns cliques**.
    * Condição: **Elementos de clique** corresponde ao seletor CSS `#checkout`.
+
+<div id="3-create-the-interaction-tag" />
 
 #### 3. Crie a tag de interação
 
@@ -790,6 +828,8 @@ Para garantir a precisão dos dados e um envio bem-sucedido, lembre-se destes re
 
 </Accordion>
 
+<div id="6-set-customer-user-id" />
+
 ## 6. Definir o Customer User ID
 
 Após implementar a mensuração de eventos, configure uma identidade para vincular a atividade web com outras plataformas (mobile, PC, CTV). Use `setCustomerUserId` para obter uma visão unificada da jornada do usuário entre as plataformas.
@@ -814,6 +854,8 @@ Cenário do usuário:
 * O servidor gera um CUID único para o usuário.
 * Na página de agradecimento após o cadastro, você consulta o servidor para obter o novo CUID.
 * Com a resposta do servidor, você define o CUID da AppsFlyer usando o método `setCustomerUserId()` do Web SDK.
+
+<div id="a-sign-up-form-example" />
 
 #### Um exemplo de formulário de cadastro
 
@@ -848,6 +890,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </body>
 </html>
 ```
+
+<div id="a-thank-you-page-example" />
 
 #### Um exemplo de página de agradecimento
 
@@ -954,6 +998,8 @@ O código usa a Fetch API. Ele envia ao servidor o endereço de e-mail inserido 
 
 </Accordion>
 
+<div id="7-manage-privacy" />
+
 ## 7. Gerenciar a privacidade
 
 Após implementar a mensuração de eventos, talvez você precise aplicar restrições de segurança e privacidade específicas para atender aos padrões da sua empresa ou região.
@@ -961,6 +1007,8 @@ Após implementar a mensuração de eventos, talvez você precise aplicar restri
 <Accordion title="Opt-in ou opt-out do envio de eventos">
 
 Você pode controlar a mensuração de duas maneiras:
+
+<div id="sdk-initial-state-setting-in-the-snippet" />
 
 #### Definição do estado inicial do SDK (no snippet)
 
@@ -972,6 +1020,8 @@ Determina se o SDK envia eventos quando a página da web carrega pela primeira v
 > 📘 **Note**
 >
 > Se measurementStatus estiver vazio ou NULL, a AppsFlyer considera como se measurementStatus:true.
+
+<div id="explicit-control" />
 
 #### Controle explícito
 
@@ -992,6 +1042,8 @@ O controle explícito tem prioridade sobre a configuração de estado inicial e 
 
 e o seu site exige protocolos rigorosos de segurança e de privacidade de dados, use os seguintes mecanismos para configurar a maneira como o Web SDK interage com seu ambiente e seus dados.
 
+<div id="content-security-policy-csp" />
+
 #### Política de Segurança de Conteúdo (CSP)
 
 Se o seu site exige que o JavaScript seja protegido por uma CSP, o Web SDK é compatível com duas abordagens diferentes, a depender da configuração da sua CSP e do snippet selecionado na Etapa 2.
@@ -1009,6 +1061,8 @@ A tabela abaixo mostra quais políticas CSP são compatíveis com a variante non
 | `script-src 'nonce-...' 'strict-dynamic'` | Sim (recomendado) | Nonce cobre script inline e carregador; `strict-dynamic` propaga confiança para a tag SDK inserida dinamicamente. Nenhuma origem de CDN necessária na lista de permissões. |
 
 Compatibilidade com a política CSP
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### Verificação avançada de SDK com snippets de nonce CSP
 
@@ -1082,6 +1136,8 @@ Compatibilidade com a política CSP
 
 </Accordion>
 
+<div id="discard-query-parameters" />
+
 #### Descartar parâmetros de consulta
 
 Se os parâmetros de consulta de URL contêm informações confidenciais, peça à AppsFlyer para descartá-las (URLs, referrers e `header_referer`).
@@ -1095,6 +1151,8 @@ Nome do imposto sobre a receita líquida
 * Resultado: `param1=value1&af_url_mask=param2;param3`
 
 </Accordion>
+
+<div id="web-sdk-cookies-reference" />
 
 ## Referência de cookies do Web SDK
 

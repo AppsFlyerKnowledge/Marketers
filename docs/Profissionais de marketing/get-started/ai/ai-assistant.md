@@ -24,11 +24,15 @@ x-zendesk:
 
 <Embed title="AI Assistant" typeOfEmbed="youtube" url="https://www.youtube.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube.com" />
 
+<div id="about-ai-assistant" />
+
 ## **Sobre o AI Assistant**
 
 O AI Assistant é seu assistente de análises e orientações, desenvolvido para ajudá-lo a acessar insights e tomar decisões mais inteligentes com a AppsFlyer. Use-o para verificar dados do seu dashboard e explorar sua performance de marketing.
 
 <Image alt="Demo animada da janela de chat do AI Assistant na AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+
+<div id="what-you-can-do" />
 
 ## **O que você pode fazer**
 
@@ -40,6 +44,8 @@ Faça perguntas em linguagem simples ao Assistente de IA para obter:
 * **Análise de execução no Agent Hub**: faça perguntas sobre uma execução concluída no Agent Hub, diretamente de onde você a está revisando. Consulte a <Anchor target="_blank" href="/marketers/pt/docs/beta-agent-hub-overview#analise-a-atividade-com-o-ai-assistant">visão geral do Agent Hub [beta]</Anchor> para saber mais.
 
 As respostas podem aparecer como texto, tabelas ou gráficos, dependendo do que melhor se encaixa na sua pergunta.
+
+<div id="where-to-open-it" />
 
 ## **Onde abrir**
 
@@ -54,6 +60,8 @@ As respostas podem aparecer como texto, tabelas ou gráficos, dependendo do que 
 3. Receba as respostas em texto, tabela ou gráficos.
 4. Use as sugestões de follow-up para refinar sua análise ou pergunta.
 
+<div id="tip" />
+
 > 👍 **Dica!**
 >
 > O assistente responderá de forma diferente dependendo da página na qual você fizer a pergunta.
@@ -61,6 +69,8 @@ As respostas podem aparecer como texto, tabelas ou gráficos, dependendo do que 
 > * Ao usar o chat no **My Dashboards**, as respostas serão mostradas de acordo com os aplicativos selecionados, a menos que você forneça outras instruções.
 > * Em qualquer outra página, a resposta será fornecida com base no primeiro aplicativo da conta, a menos que você forneça outras instruções.
 > * É possível analisar até 20 aplicativos por vez.
+
+<div id="other-features" />
 
 ### Outras funcionalidades
 
@@ -92,6 +102,8 @@ A partir de uma execução concluída no Agent Hub
 
 </Accordion>
 
+<div id="conversation-history" />
+
 ## **Histórico de conversas**
 
 O AI Assistant mantém um histórico das suas conversas para que você possa continuar de onde parou, sem precisar explicar o contexto novamente. Seu histórico é privado. Só você pode ver as conversas que teve; outros usuários da sua conta não podem visualizá-las.
@@ -115,6 +127,8 @@ O AI Assistant mantém um histórico das suas conversas para que você possa con
 
 * Quando você reabre uma conversa antiga, todos os dados exibidos refletem o momento em que foram recuperados originalmente. Se você fizer uma nova pergunta nessa conversa, o Assistente de IA usa dados atuais para respondê-la.
 * Um novo chat é iniciado automaticamente após um período de inatividade, quando você clica em "New Chat" ou quando faz login novamente. Sua conversa anterior é salva no histórico.
+
+<div id="other-information" />
 
 ## **Outras informações**
 

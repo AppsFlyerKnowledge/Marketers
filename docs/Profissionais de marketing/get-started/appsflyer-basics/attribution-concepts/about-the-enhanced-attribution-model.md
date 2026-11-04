@@ -21,11 +21,15 @@ x-zendesk:
 ---
 > **Em resumo:** o modelo de atribuição aprimorada melhora a precisão da atribuição ao atribuir somente cliques e impressões qualificados quando é detectada inundação de cliques e impressões no dispositivo.
 
+<div id="what-is-the-enhanced-attribution-model" />
+
 ## O que é o modelo de atribuição aprimorada?
 
 O modelo de atribuição aprimorada combate a inundação de engajamento ao considerar, para atribuição, apenas sinais que reflitam o engajamento real do usuário. Quando a AppsFlyer detecta padrões de engajamento que indicam inundação, a AppsFlyer considera apenas cliques e impressões qualificados. Como resultado, a atribuição é baseada no último clique qualificado, que não é necessariamente o clique mais recente.
 
 O modelo funciona continuamente em segundo plano e se aplica a todo o tráfego relevante sem exigir nenhuma ação de anunciantes ou parceiros.
+
+<div id="how-the-enhanced-attribution-model-helps" />
 
 ## Como o modelo de atribuição aprimorada ajuda
 
@@ -43,6 +47,8 @@ O modelo de atribuição aprimorada ajuda anunciantes, ad networks e parceiros d
   * Mantém uma competição de atribuição consistente e justa.
   * Reduz o efeito de volumes de engajamento inflados artificialmente.
 
+<div id="how-the-enhanced-attribution-model-works" />
+
 ## Como o modelo de atribuição aprimorada funciona
 
 Veja como funciona:
@@ -50,9 +56,13 @@ Veja como funciona:
 1. A AppsFlyer recebe registros de engajamento de várias fontes de mídia, como cliques ou impressões.
 2. Quando a AppsFlyer detecta um padrão de inundação durante o processo de atribuição, um modelo adicional ajuda a selecionar engajamentos qualificados.
 
+<div id="where-enhanced-attribution-data-appears-in-appsflyer-reports" />
+
 ## Onde os dados de atribuição aprimorada aparecem nos relatórios da AppsFlyer
 
 Você pode visualizar dados de atribuição aprimorada nos seguintes canais:
+
+<div id="raw-data-reports" />
 
 ### Relatório Retargeting
 
@@ -60,9 +70,13 @@ Você pode visualizar dados de atribuição aprimorada nos seguintes canais:
 
 Essa métrica pode indicar um possível excesso de engajamento e ajuda os anunciantes a entender o volume de engajamento e os padrões da fonte. Ela não representa o número de dispositivos ou usuários.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > A métrica também pode ser maior que zero para instalações orgânicas, já que engajamentos orgânicos ainda podem entrar na competição de atribuição antes da validação.
+
+<div id="protect360-dashboards-and-reports" />
 
 ### Dashboards e relatórios do Protect360
 

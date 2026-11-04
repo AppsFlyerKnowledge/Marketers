@@ -30,6 +30,8 @@ x-zendesk:
 | **O que devo saber?** | Os dados de referrer têm prioridade sobre os dados fornecidos pela integração do Meta Ads e estão disponíveis em relatórios de dados brutos. Essa solução se aplica à atribuição de cliques e não à atribuição de exibição. |
 | **Qual o impacto?** | <ul><li>Você pode ver um aumento nas instalações atribuídas à Meta em relatórios de dados brutos</li><li>Dois novos campos de tipo de correspondência agora estão incluídos em relatórios de dados brutos, `fb_referrer` e `ig_referrer`:<ul><li>`fb_referrer` para atribuição do aplicativo do Facebook</li><li>`ig_referrer` para atribuição do aplicativo do Instagram</li><li>`fb_referrer` ou `ig_referrer` para atribuição da Audience Network.</li></ul></li></ul> |
 
+<div id="see-also" />
+
 > 📄 **Consulte também**
 >
 > * <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-integration-setup#userlevel-data">Install referrer do Meta</Anchor>

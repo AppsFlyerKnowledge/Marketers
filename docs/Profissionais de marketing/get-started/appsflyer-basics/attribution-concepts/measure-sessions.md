@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
+<div id="sessions-counting-principles" />
+
 ## Princípios de contagem das sessões
 
 O número de sessões, também conhecido como lançamento, realizadas pelos usuários é uma métrica importante e utilizada como medida do envolvimento do usuário com o app. Isso está disponível através de vários relatórios e painéis. As sessões são usadas para obter as seguintes métricas:
@@ -39,6 +41,8 @@ O número de sessões, também conhecido como lançamento, realizadas pelos usu�
 * Usuários fidelizados que usam a configuração padrão de 3 apps abertos
 
 **Atenção!** No caso das sessões orgânicas, a métrica está disponível nos painéis Atividade e Coorte, mas não está disponível no painel Visão geral.
+
+<div id="sessions-calculation" />
 
 ### Cálculo das sessões
 
@@ -57,6 +61,8 @@ Uma sessão é comunicada pelo SDK quando ocorre uma das seguintes situações:
 **Métrica das sessões**
 
 A métrica de sessões é contabilizada a partir da primeira sessão. A métrica de sessões é contada depois de considerar um tempo mínimo entre o mecanismo de sessões com uma duração predefinida de 10 minutos, conforme descrito no exemplo que se segue.
+
+<div id="minimum-time-between-sessions-mechanism" />
 
 ## Mecanismo de tempo mínimo entre sessões
 
@@ -101,6 +107,8 @@ Pressuposto: O tempo mínimo permitido entre as definições das sessões é de 
 
 </Accordion>
 
+<div id="sessions-related-topics" />
+
 ## Tópicos relacionados com as sessões
 
 <div id="retargeting-sessions" />
@@ -129,6 +137,8 @@ Pressuposto: O tempo mínimo permitido entre as definições das sessões é de 
 * Para enviar o postback: Mapeie explicitamente *af\_app\_opened* para um evento de parceiro. Atenção! No relatório de dados brutos da AppsFlyer, disponível através do Data Locker, este evento é refletido como uma *inicialização.*
 * Considere que este é um evento de grande volume e que muitos parceiros não querem recebê-lo.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > O mapeamento de `af_app_opened` só é compatível com parceiros que têm a opção **Enviar Sessões** ativada.
@@ -143,12 +153,16 @@ Pressuposto: O tempo mínimo permitido entre as definições das sessões é de 
 
 **Do lado do servidor:** As sessões reportadas pelo app são contadas e registradas tendo em conta o mecanismo de tempo mínimo entre sessões. As sessões contadas são atribuídas utilizando as mesmas <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">regras de atribuição</Anchor> que outros eventos in-app.
 
+<div id="explicit-sessions-reporting-by-the-developer-android-apps-only" />
+
 #### **Comunicação explícita de sessões pelo desenvolvedor (apenas aplicações Android)**
 
 Use <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor> no Android para reportar explicitamente uma sessão. Não está disponível uma chamada equivalente no iOS.
 
 * Os apps que funcionam continuamente em segundo plano podem exigir alguma lógica implementada pelo desenvolvedor para reportar sessões. Por exemplo, apps utilitários como os economizadores de bateria, os inicializadores, os bloqueios de tela e os apps antivírus. Para estes tipos de apps, considere a possibilidade de comunicar uma sessão diariamente à meia-noite ou em outro intervalo adequado ao app.
 * Em outros casos, talvez você queira contar as sessões quando os usuários realizam alguma ação in-app, como apertar o botão de *limpar a memória*, etc.
+
+<div id="setting-minimum-time-between-app-launches" />
 
 #### **Definir o tempo mínimo entre inicializações de apps**
 

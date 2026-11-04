@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Appodeal, parceira integrada da AppsFlyer, oferece aos proprietários de aplicativos atribuição de cliques e uma solução completa de monetização de anúncios. A receita de anúncios é reportada com granularidade em nível de usuário.
 
+<div id="setting-up-appodeal-integration" />
+
 ## Como configurar a integração da Appodeal
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)

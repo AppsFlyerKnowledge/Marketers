@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Um mecanismo de cota (limitação de taxa) limita o número de relatórios que você pode gerar por dia pela Pull API e pelas páginas de exportação de dados.
 
+<div id="rate-limits-for-reports" />
+
 ## Limites de taxa para relatórios
 
 A cota limita o número de relatórios que você pode gerar por dia por tipo de relatório. A cota varia de acordo com seu plano de assinatura.
@@ -33,6 +35,8 @@ A cota limita o número de relatórios que você pode gerar por dia por tipo de 
 * **Ad networks:** os relatórios gerados por ad networks não contam para a cota do anunciante.
 * **Dia:** as cotas se aplicam por dia corrido, a partir de 00:00 UTC.
 
+<div id="aggregated-and-analytics-reports" />
+
 ### Relatórios agregados e analíticos
 
 | Ferramenta de entrega de dados | Quota |
@@ -42,6 +46,8 @@ A cota limita o número de relatórios que você pode gerar por dia por tipo de 
 | Master API | Ilimitada |
 | API de Coorte | 60 chamadas por minuto para cada conta |
 | Relatórios agregados da SKAN | 10 chamadas por minuto para cada conta |
+
+<div id="raw-data" />
 
 ### Dados brutos
 
@@ -57,6 +63,8 @@ A cota limita o número de relatórios que você pode gerar por dia por tipo de 
 
 Para ver exemplos, consulte as Perguntas frequentes a seguir.
 
+<div id="pull-api-raw-data-daily-quota" />
+
 #### Cota diária de dados brutos da Pull API
 
 Os relatórios de dados brutos da Pull API têm as seguintes cotas diárias:
@@ -66,9 +74,13 @@ Os relatórios de dados brutos da Pull API têm as seguintes cotas diárias:
 | Instalações | 24 | 120 |
 | Eventos in-app | 12 | 60 |
 
+<div id="note" />
+
 > 📘 **Importante!**
 >
 > As cotas se aplicam por tipo de relatório, então cada tipo de relatório tem uma cota separada.
+
+<div id="ad-network-postback-reports-daily-quota" />
 
 #### Cota diária de relatórios de postback das ad networks
 
@@ -78,6 +90,8 @@ As ad networks podem obter os seguintes tipos de relatórios de postback:
 | --- | --- | --- | --- |
 | Postbacks para atribuição | <ul><li>de instalações</li><li>Conversões de retargeting</li></ul> | 24 | 120 |
 | Postbacks para eventos in-app | <ul><li>https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg</li><li>Retargeting de eventos in-app</li></ul> | 12 | 60 |
+
+<div id="faq" />
 
 ## Perguntas frequentes
 
@@ -89,6 +103,8 @@ As ad networks podem obter os seguintes tipos de relatórios de postback:
   R: Não. Isso resulta em um total de 250 relatórios, o que excede a cota de 120 no nível da conta.
 * P: Os relatórios da Pull API gerados pela agência são contabilizados na cota do anunciante?  
   R: Não. As agências e os anunciantes têm cotas separadas para a Pull API. Os relatórios gerados pela agência não são contabilizados na cota do anunciante. A única exceção é quando uma agência usa o token da API do anunciante em vez do próprio token, caso em que essas solicitações contam como solicitações do anunciante.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -22,6 +22,8 @@ x-zendesk:
 | O que você deve saber | <ul><li>Para a maioria das campanhas do Apple Ads, a precisão da atribuição melhora porque os engajamentos agora são avaliados com base na sua janela de lookback definida pelo anunciante, em vez das janelas padrão anteriores, incluindo engajamentos de usuários sem consentimento que antes eram reivindicados sem timestamp.</li><li>Além disso, grupos de anúncios com segmentação por idade ou gênero retornarão um payload de atribuição false. Os engajamentos desses grupos de anúncios não são reivindicados pelo Apple Ads e, portanto, não podem ser atribuídos a ele.</li></ul> |
 | O que você precisa fazer | Nenhuma ação é necessária. Sua integração com o Apple Ads reflete essa mudança automaticamente. Se você veicula grupos de anúncios com segmentação por idade ou gênero, revise seus relatórios do Apple Ads após 1º de setembro para entender qualquer mudança nas conversões atribuídas. |
 
+<div id="see-also" />
+
 #### Consulte também
 
 * <Anchor target="_blank" href="/marketers/pt/docs/apple-ads-integration-setup">Configuração da integração do Apple Ads (Search Ads)</Anchor>

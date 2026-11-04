@@ -21,11 +21,15 @@ x-zendesk:
 ---
 > **Em resumo:** Gerencie facilmente as configurações de moeda do seu aplicativo para alinhar o relatório de receita às necessidades da sua empresa. Este artigo esclarece como as alterações de moeda afetam seus dados históricos e futuros, ajuda você a entender quem pode fazer alterações e descreve as etapas de aprovação necessárias.
 
+<div id="about-changing-app-currency-settings" />
+
 ## **Sobre a alteração das configurações de moeda do aplicativo**
 
 Por padrão, os dashboards da AppsFlyer exibem os dados usando a moeda local selecionada por você. Você pode alternar facilmente para a visualização em USD a qualquer momento, sem alterar as configurações reais de moeda do seu aplicativo.
 
 Se você estiver visualizando dados de vários aplicativos com moedas locais diferentes, o dashboard muda automaticamente para USD por padrão.
+
+<div id="who-can-change-the-app-currency" />
 
 ## **Quem pode alterar a moeda do aplicativo?**
 
@@ -38,6 +42,8 @@ As alterações de moeda dependem dos dados existentes do seu aplicativo:
 1. Entre em contato com seu representante da AppsFlyer ou envie um ticket de suporte.
 2. Forneça os detalhes do seu aplicativo.
 3. Anexe uma aprovação por escrito reconhecendo o impacto ao reportar.
+
+<div id="how-currency-changes-impact-your-data" />
 
 ## **Como as alterações de moeda afetam seus dados**
 
@@ -68,6 +74,8 @@ O impacto varia:
 
 </Accordion>
 
+<div id="example" />
+
 ### **Exemplo**
 
 <div id="reporting-impacts" />
@@ -83,6 +91,8 @@ Se você alterar a moeda do seu aplicativo em **1º de outubro**, veja como os m
 | **Métricas** | Preciso até 7 dias antes da alteração | Moedas mistas (impreciso) | Precisa |
 
 </Accordion>
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >

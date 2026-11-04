@@ -34,6 +34,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="about-onelink-smart-script" />
+
 ## Sobre o OneLink Smart Script
 
 Os usuários chegam ao seu site mobile antes de chegar à página de sua loja de aplicativos, seja organicamente, ou após se engajarem com campanhas publicitárias. Para isso, são necessários dois cliques:
@@ -59,9 +61,13 @@ Existem duas versões do OneLink Smart Script:
 
 <Anchor target="_blank" href="/marketers/pt/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (antigo)**</Anchor>: Se você já tiver o Onelink Smart Script configurado, use a documentação dessa versão para manter e editar este script. **Atenção**: embora não seja obrigatório, considere migrar para a V2. 
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Não tem certeza se o OneLink Smart Script é a solução certa para você? <Anchor target="_blank" href="/marketers/pt/docs/convert-your-mobile-web-visitors-to-app-users">Compare</Anchor> o OneLink Smart Script com outras soluções web-to-app da AppsFlyer.
+
+<div id="examples" />
 
 ### Exemplos
 
@@ -90,6 +96,8 @@ O e-mail mostra esse link: https://hotel.me?type=email&campaign=Florida&city=orl
 Quando ela clica no link, ele a redireciona para o site mobile do hotel. Lá, ela é convidada a baixar o aplicativo mobile do hotel. O OneLink Smart Script gera automaticamente uma URL que contém os mesmos parâmetros **pid** e **c** do link original no e-mail. Esse é o link: https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
 **Quando Emma clica nos botões do site mobile, ela é redirecionada para a loja de aplicativos. Ao fazer o download e abrir o app, ela é enviada através do deep link para a página de férias em Orlando.**
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** Veja quais dados históricos estão disponíveis em diferentes dashboards e relatórios agregados do AppsFlyer.
 
+<div id="historical-aggregate-data-availability" />
+
 ## Disponibilidade de dados agregados históricos
 
 A tabela a seguir mostra até quanto tempo atrás os dados históricos estão disponíveis em diferentes dashboards e relatórios agregados do AppsFlyer.

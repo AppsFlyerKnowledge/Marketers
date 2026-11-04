@@ -32,9 +32,13 @@ Leva apenas alguns minutos para configurar e é totalmente gratuito — sem limi
 
 A plataforma é confiável para mais de 40.000 desenvolvedores de jogos no mundo todo, de indies a estúdios mundialmente renomados, e processa mais de cinco bilhões de eventos únicos todos os dias em 2+ bilhões de dispositivos. O GameAnalytics é amplamente integrado, com SDKs para todos os principais motores de jogo e plataformas. Você pode se cadastrar gratuitamente hoje em https://gameanalytics.com/
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-gameanalytics" />
 
 ## Configuração do GameAnalytics
 
@@ -57,9 +61,13 @@ A janela de configuração do Game Analytics usa apenas a ***integração*** gui
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para habilitar a configuração dos parâmetros de integração. O botão deve permanecer ativado enquanto você trabalhar com o Medialyzer.Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -69,6 +77,8 @@ O Game Analytics se conecta à AppsFlyer por meio de uma chave do jogo exclusiva
 
 ![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para instalações de usuários do Game Analytics. Use esta seção para definir o envio desses postbacks.
@@ -76,6 +86,8 @@ A AppsFlyer pode enviar postbacks automáticos para instalações de usuários d
 ![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar postbacks ao Game Analytics para qualquer usuário que fizer o download do aplicativo, ou selecione **Off**.
+
+<div id="in-app-event-settings" />
 
 ### Configurações de eventos in-app
 

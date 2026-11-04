@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **Visão geral:** No WWDC23, a Apple apresentou novos manifestos de privacidade. Com os Manifestos de privacidade, os desenvolvedores de aplicativos podem fornecer descrições mais precisas de suas práticas de privacidade de aplicativos. A AppsFlyer criou um Manifesto de privacidade para o SDK do AppsFlyer e os detalhes são explicados abaixo.
 
+<div id="background" />
+
 ## CONTEXTO
 
 Com os Manifestos de privacidade, um desenvolvedor de aplicativos pode criar um registro das categorias de dados que coleta por meio de seu aplicativo de forma independente e por meio do uso de dependências de terceiros, como SDKs de terceiros usados pelo aplicativo. Essas informações ajudam os desenvolvedores de aplicativos a representar com precisão as práticas de privacidade em seus aplicativos, inclusive por meio dos rótulos nutricionais que fornecem aos usuários.
 
 Em muitos casos, os desenvolvedores de aplicativos não estão cientes de quais dados SDKs de terceiros estão coletando ou para que um SDK específico está usando os dados. O Manifesto de privacidade permite que SDKs de terceiros passem facilmente essas informações para os desenvolvedores de aplicativos, ajudando-os a criar rótulos nutricionais precisos.
 
+<div id="what-are-nutrition-labels" />
+
 ### O que são rótulos nutricionais?
 
 Os rótulos nutricionais fornecem informações sobre as práticas de privacidade de um aplicativo em um formato fácil de ler e compreensível. Os usuários finais têm mais transparência sobre quais dados o aplicativo está coletando e para qual finalidade. Para obter mais informações sobre rótulos nutricionais, clique <Anchor target="_blank" href="/marketers/pt/docs/preparing-for-the-app-store-review-nutrition-labels">aqui</Anchor>.
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## O que está incluído no Manifesto de privacidade da AppsFlyer?
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -44,6 +52,8 @@ A AppsFlyer SDK 6.14.0 inclui o Manifesto de privacidade da AppsFlyer. Isso incl
 * [APIs de motivo obrigatório](#apis-de-motivo-obrigatório)
 * [Domínios de rastreamento](#domínios-de-rastreamento)
 
+<div id="data-usage" />
+
 ### Uso de dados
 
 A Apple exige que os desenvolvedores de aplicativos e SDK registrem a categoria de dados e os motivos pelos quais o aplicativo ou SDK de terceiros coleta esses dados.
@@ -51,6 +61,8 @@ A Apple exige que os desenvolvedores de aplicativos e SDK registrem a categoria 
 Os desenvolvedores de aplicativos podem usar o Xcode para criar um relatório de privacidade, resumindo as informações sobre os dados coletados.
 
 A seguir estão os tipos de dados coletados pelo SDK da AppsFlyer, que estão incluídos no manifesto de privacidade:
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -60,6 +72,8 @@ A seguir estão os tipos de dados coletados pelo SDK da AppsFlyer, que estão in
 | --- | --- | --- | --- | --- |
 | ID do dispositivo (IDFA, IDFV) | NSPrivacyCollectedDataTypeDeviceID | Sim | Sim | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | Interação com produtos (Lançamentos) | NSPrivacyCollectedDataTypeProductInteraction | Não | Não | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### APIs de motivo obrigatório
 
@@ -125,9 +139,13 @@ Para sua conveniência, você pode copiar o seguinte trecho de código, que incl
 
 </Accordion>
 
+<div id="tracking-domains" />
+
 ### Domínios de rastreamento
 
 Qualquer Domínio de Rastreamento usado em um aplicativo ou SDK de terceiros deve ser registrado no manifesto de privacidade. Se os usuários não concederem permissões (opt-out) por meio da estrutura ATT (APp Tracking Transparency), o sistema operacional iOS bloqueará todo o tráfego de saída para esse domínio. O SDK da AppsFlyer verifica o status ATT do usuário antes de qualquer solicitação do servidor e executa a solicitação com base no fato de o usuário ter optado por participar.
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

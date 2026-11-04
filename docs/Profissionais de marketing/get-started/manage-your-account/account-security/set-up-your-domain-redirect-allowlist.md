@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Em resumo:** Configure uma lista de permissões de redirecionamento de domínio (domain redirect allowlist) para garantir que os usuários sejam redirecionados para domínios verificados e confiáveis, protegendo seus dados e a integridade da sua marca.
 
+<div id="about-the-redirect-allowlist" />
+
 ## <Image alt="Main redirect allowlist image.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />Informações sobre a redirect allowlist
 
 Use a redirect allowlist para definir uma lista de domínios raiz e subdomínios específicos para os quais o redirecionamento de links é permitido, protegendo seus links contra redirecionamentos não autorizados, ataques de phishing e fraudes. Depois que sua allowlist estiver ativa, os links criados por meio da AppsFlyer redirecionarão os usuários apenas para URLs da web cujos domínios estão listados na allowlist. Caso contrário, os usuários serão direcionados para a loja de aplicativos. A redirect allowlist se aplica ao <Anchor target="_blank" href="/marketers/pt/docs/onelink-guide">OneLink</Anchor>, links de atribuição de plataforma única por meio da <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#attribution-link-tab">integração de parceiros</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-direct-attribution-links">links de atribuição direta</Anchor> para plataformas de CTV, PC e console. A redirect allowlist (e redirecionamento web personalizado) está disponível para assinantes dos planos Growth e Enterprise. Para evitar abuso, os assinantes do plano Zero devem ter um cartão de crédito cadastrado (não será cobrado).
+
+<div id="set-up-your-redirect-allowlist" />
 
 ## Configure sua redirect allowlist
 
@@ -108,6 +112,8 @@ Você pode adicionar ou excluir domínios a qualquer momento.
 **Atenção:** Depois de salva, a redirect allowlist atualizada será aplicada aos cliques em cerca de uma hora.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

@@ -28,6 +28,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png" width="120px" />
 
+<div id="setting-up-tencent-ams" />
+
 ## Configuração do Tencent AMS
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -49,11 +51,15 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="general-settings" />
+
 ### Configurações gerais
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo. Para integrar o TencentAMS à AppsFlyer, você precisará das seguintes credenciais: **account\_id, user\_action\_set\_id e access\_token**. Se você ainda não tiver esses valores, obtenha-os diretamente com o Tencent AMS antes de prosseguir com a integração.
 
 <Image alt="tencent.png" src="https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png" width="248px" />
+
+<div id="note" />
 
 > 📘 **Atenção**
 >
@@ -64,14 +70,20 @@ A aba Integração está dividida em diferentes seções, conforme descrito abai
 >
 > **Tráfego gerenciado por agência:** Se o seu tráfego for promovido por uma agência, **a agência também deverá preencher e manter o token do lado dela**.
 
+<div id="enable-view-through-attribution" />
+
 #### Habilitar a atribuição de view-through
 
 Para ativar a atribuição de instalação view-through, habilite esta opção.  
 O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 #### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para o Tencent AMS após instalações de usuários. Esta seção exibe a **origem dos usuários** que permitem o envio desses postbacks.
+
+<div id="in-app-event-settings" />
 
 #### Configurações de eventos in-app
 

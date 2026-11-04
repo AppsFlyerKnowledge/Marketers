@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Entenda como a AppsFlyer valida compras e assinaturas e compare as duas soluções disponíveis: validação de recibos e receita da loja do ROI360.
 
+<div id="about-purchase-and-subscription-validation" />
+
 ## Sobre a validação de compras e assinaturas
 
 A validação de compras e assinaturas é fundamental para garantir a precisão e a confiabilidade dos seus dados de receita. Quando os usuários fazem compras no seu aplicativo, seja uma compra avulsa ou uma assinatura, validar essas transações com as lojas de aplicativos (Apple App Store e Google Play) garante que apenas transações legítimas e pagas sejam mensuradas e atribuídas.
@@ -29,7 +31,11 @@ A AppsFlyer oferece duas soluções que validam e mensuram compras no aplicativo
 
 Este artigo traz uma introdução geral de cada solução e [compara suas ofertas](#comparar-a-validação-de-recibos-e-a-receita-da-loja-do-roi360) para ajudá-lo a determinar qual é a opção certa para o seu aplicativo.
 
+<div id="the-two-solutions-for-purchase-and-subscription-validation" />
+
 ## Duas soluções para validação de compras e assinaturas
+
+<div id="receipt-validation" />
 
 ### Validação de recibos
 
@@ -44,7 +50,11 @@ Para mais informações, consulte:
 * <Anchor target="_blank" href="/marketers/pt/docs/about-receipt-validation">Sobre a validação de recibos</Anchor>
 * <Anchor target="_blank" href="/marketers/pt/docs/set-up-receipt-validation">Configurando a validação de recibos</Anchor>
 
+<div id="roi360-store-revenuepremium" />
+
 ### Receita da loja do ROI360 (Premium)
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >
@@ -60,6 +70,8 @@ Para mais informações, consulte:
 
 * <Anchor target="_blank" href="/marketers/pt/docs/about-roi360-store-revenue">Sobre a receita da loja do ROI360</Anchor>
 * <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-store-revenue">Configurar a receita da loja do ROI360</Anchor>
+
+<div id="compare-receipt-validation-and-roi360-store-revenue" />
 
 ## Comparar a validação de recibos e a receita da loja do ROI360
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** Integre seu jogo ou aplicativo do Google Play Games no PC/Android com a AppsFlyer para mensurar a performance das campanhas que promovem esses aplicativos.
 
+<div id="about-google-play-games-for-pc-attribution" />
+
 ## Sobre a atribuição do Google Play Games para PC
 
 O Google Play Games é um Aplicativo para PC que permite aos usuários navegar, fazer download e jogar jogos mobile Android selecionados em um desktop ou laptop com Windows. O Google Play Games funciona em dispositivos Windows para PC.
@@ -29,6 +31,8 @@ O Google Play Games é um Aplicativo para PC que permite aos usuários navegar, 
 Os Aplicativos em execução no Google Play Games são como qualquer outro Aplicativo Android. Eles são, essencialmente, jogos Android mobile disponíveis para PC. E, assim como qualquer outro Aplicativo Android mobile, eles podem se integrar imediatamente à AppsFlyer usando o SDK Android da AppsFlyer para receber dados de atribuição e mensuração de performance sobre quais fontes e campanhas impulsionam aberturas do Aplicativo e eventos in-app. Esses insights são usados para mensurar e otimizar atividades de marketing.
 
 A AppsFlyer usa o mesmo fluxo de atribuição para Aplicativos em execução no Google Play Games que usa para Aplicativos Android mobile.
+
+<div id="integration-procedures" />
 
 ## Etapas de integração
 
@@ -41,6 +45,8 @@ A tabela abaixo lista as etapas necessárias para integrar seu aplicativo do Goo
 | Configurar uma landing page multiplataforma | **Recomendado**: Uma landing page multiplataforma que utiliza o Smart Script da AppsFlyer e permite que você faça a atribuição web-to-app. Recomendado em casos em que a sua campanha promove um app disponível em diversas plataformas, como na Epic e Native PC.<br /><br /><Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Saiba mais sobre landing pages multiplataformas</Anchor><br /><br /><Anchor target="_blank" href="/marketers/pt/docs/cross-platform-landing-pages-with-smart-script">Aprenda a configurar uma landing page multiplataforma</Anchor> | Profissional de marketing (a assistência de um desenvolvedor pode ser necessária) |
 | Configuração do link | Se você não usa uma página inicial multiplataforma, você pode criar links de atribuição direta e colocá-los em seus anúncios. As campanhas de marketing para aplicativos do Google Play Games usam links semelhantes aos links de atribuição criados na AppsFlyer para apps mobile.<br /><br /><Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">Aprenda a criar links</Anchor> | Marketer |
 | Configuração de relatórios/visualização de dados | Os dashboards e relatórios da AppsFlyer para aplicativos do Google Play Games são semelhantes aos disponíveis para apps mobile.<br /><br /><Anchor target="_blank" href="/marketers/pt/docs/analyze-your-data">Saiba mais sobre dashboards e relatórios da AppsFlyer</Anchor> | Profissional de marketing/engenheiro de dados |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

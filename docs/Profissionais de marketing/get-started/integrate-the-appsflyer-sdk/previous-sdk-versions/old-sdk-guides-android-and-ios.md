@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** Encontre os guias de integração dos SDKs da AppsFlyer a partir de 2016, em formato PDF.
 
+<div id="overview" />
+
 ## Escritórios
 
 Com o passar do tempo, nossos guias de integração do SDK também evoluem. Os SDKs são gradualmente substituídos por versões mais inteligentes, flexíveis e tecnologicamente avançadas.
@@ -31,13 +33,15 @@ Neste artigo, você encontra os guias de integração dos SDKs da AppsFlyer desd
 
 **Se os seus aplicativos ainda usam um destes SDKs muito (muito) antigos, recomendamos fortemente que você atualize para a versão mais recente do SDK**, para <Anchor target="_blank" href="/marketers/pt/docs/sdk-integration-overview">Android</Anchor> ou para <Anchor target="_blank" href="/marketers/pt/docs/sdk-integration-overview">iOS</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > Ao atualizar de uma versão antiga do SDK para a nova versão, você obtém **diversas melhorias, novos recursos e correções de bugs**. Isso também ajuda a proteger você contra fraudadores e garante que você esteja em compliance com a GDPR.
 >
 > Recomendamos que você atualize a sua versão do SDK pelo menos a cada 6 meses.
 >
-> ## com o Android
+> ## <span id="ios"></span><span id="android"></span>com o Android
 
 ![android_logo.png](https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png)
 

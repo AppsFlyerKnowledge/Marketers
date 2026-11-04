@@ -23,9 +23,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Eventos de engajamento</Anchor> capturam interações do usuário, como visualizações de anúncios ou cliques, que ocorrem antes de uma conversão. Eles são configurados apenas para campanhas on-site, sozinhas ou combinadas com campanhas off-site. (Para campanhas off-site, os dados de engajamento são fornecidos diretamente por parceiros externos, como Meta ou Google. Este artigo explica como configurar engajamentos por tipo de campanha.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 Antes que a tarefa de engajamentos possa ser configurada, o proprietário da colaboração precisa atribuí-la ao colaborador que é proprietário da plataforma onde os eventos de engajamento são gerados. Para mais informações, consulte Atribuir tarefas de configuração
+
+<div id="set-up-engagements-for-on-site-or-combined-campaigns" />
 
 ## Configure engajamentos para campanhas on-site ou combinadas
 
@@ -55,6 +59,8 @@ Para abrir a página **Configurações de mensuração**, siga estas etapas:
 3. Na parte inferior da página de colaboração, clique em **Configurar mensuração.**
    * Se o link estiver esmaecido, configure as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources">fontes de dados</Anchor> e as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiências</Anchor> da colaboração.
 4. Na página **Configurações de mensuração**, clique no painel **Engajamentos** para abrir a caixa de diálogo **Engajamentos**.
+
+   <div id="note" />
 
    > 📘 **Nota**
    >
@@ -112,6 +118,8 @@ Se uma fonte personalizada for usada para fornecer eventos de engajamento ao DCP
 <Accordion title="5. Mapear campos da fonte de engajamento">
 
 Se uma fonte personalizada for usada para fornecer eventos de engajamento ao DCP, mapeie os campos da sua fonte de engajamento personalizada para os campos correspondentes no DCP.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

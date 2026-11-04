@@ -26,20 +26,28 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
+<div id="measurement-of-cm360-with-non-dv360-third-party-media-sources" />
+
 ## Mensuração do CM360 para fontes terceiras
 
 A Google Marketing Platform (GMP) reúne seus anúncios e analytics para ajudá-lo a criar conexões de qualidade com seus clientes, descobrir insights mais avançados e impulsionar melhores resultados de marketing.
 
 No contexto da AppsFlyer, a integração padrão do DV360 SRN (dv360\_int) com a GMP permite a fácil atribuição de campanhas do DV360 **gerenciadas no CM360**, sem a necessidade de links de atribuição. A AppsFlyer atribui instalações e reengajamentos ao DV360 através das reivindicações do DV360 SRN usando a integração.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > * A AppsFlyer atribui campanhas DV360 gerenciadas no CM360 via integração padrão do DV360 SRN, sem a necessidade de links de atribuição. Instalações e reengajamentos são atribuídos ao DV360 através das reivindicações do DV360 SRN que usam a integração. Se você estiver executando campanhas DV360 via CM360, consulte o <Anchor target="_blank" href="/marketers/pt/docs/google-marketing-platform-display-video-360-dv360-integration">guia de integração do DV360</Anchor>.
 > * Se a fonte de mídia terceira for uma SRN, a AppsFlyer recomenda não usar a integração descrita nesse artigo para evitar conflitos quando as conversões de um mesmo parceiro são relatadas por meio de duas integrações diferentes. Por exemplo, se a <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-integration-setup">integração de SRN do Meta Ads</Anchor> estiver ativada na AppsFlyer, mas o CM360 também for utilizado para relatar o tráfego do Meta Ads (facebook\_int) usando o método descrito neste artigo, as conversões podem ser relatadas tanto pelo Meta Ads quanto pelo CM360, sendo que o CM360 captura algumas das conversões que teriam sido reivindicadas pela integração principal do Meta.
 
+<div id="measuring-third-party-traffic-running-via-cm360" />
+
 ### Mensuração de tráfego de terceiros via CM360
 
 As seguintes etapas são recomendadas para mensurar fontes de mídia terceiras gerenciadas via CM360, tanto na AppsFlyer quanto no CM360:
+
+<div id="step-1-integrate-the-third-party-media-source-and-gmp-with-appsflyer" />
 
 #### Passo 1: Faça a integração da fonte de mídia terceira e da GMP com a AppsFlyer
 
@@ -48,9 +56,13 @@ Para garantir a atribuição pela AppsFlyer:
 * Certifique-se de que a fonte de mídia terceira esteja integrada e ativa, pois ela recebe a atribuição em vez do CM360. Ativar a GMP (dv360\_int) é necessário apenas para garantir que os dados sejam enviados de volta ao CM360.
 * Se a fonte de mídia terceira não estiver integrada à AppsFlyer, ela deve ser tratada como uma fonte de mídia personalizada ou própria. Nesse caso, implemente um link de atribuição com qualquer valor PID (media source).
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Para atribuição de agências: a AppsFlyer exige o nome da agência para a atribuição de instalação. Inclua-o usando o parâmetro `af_prt` no link de atribuição ou através do referrer na URL.
+
+<div id="step-2-create-the-required-attribution-links" />
 
 #### Passo 2: crie os links de atribuição necessários
 
@@ -89,9 +101,13 @@ Para garantir a atribuição pela AppsFlyer:
    * Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters?">estrutura e os parâmetros dos links de atribuição para iOS e Android</Anchor>
    * Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-direct-attribution-links">estrutura e os parâmetros dos links de atribuição para CTV, console e PC</Anchor>
 
+<div id="step-3-set-in-app-event-postbacks" />
+
 #### Passo 3: configure os postbacks de eventos in-app
 
 Para garantir que o CM360 receba postbacks para eventos originados dessas campanhas, recomendamos definir postbacks de eventos in-app em dv360\_int como "Todas as fontes de mídia, incluindo orgânicas".
+
+<div id="using-the-attribution-link" />
 
 ### Uso do link de atribuição
 

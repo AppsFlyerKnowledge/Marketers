@@ -44,6 +44,8 @@ A integração funciona notificando o Swrve sobre as instalações na API dele u
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
 
+<div id="integrating-swrve-and-appsflyer" />
+
 ## Integrando o Swrve e a AppsFlyer
 
 Configure um postback que permite ao Swrve mensurar o LTV e o comportamento do usuário para diferentes fontes de aquisição:
@@ -79,6 +81,8 @@ Appsflyer.setCustomerUserID(SwrveComponent. Instance.SDK. UserId);
 
 **Etapa 2**: configure um postback no dashboard da AppsFlyer executando as seguintes ações:
 
+<div id="setting-up-swrve" />
+
 ## Configurando o Swrve
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -102,9 +106,13 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para habilitar a configuração dos parâmetros de integração. O botão deve permanecer ativado enquanto você trabalhar com o Medialyzer.Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -120,6 +128,8 @@ Execute as seguintes etapas, conforme necessário:
 * Digite a **api\_key**
 * Selecione **UE** para clientes da UE
 * Selecione **Advanced Data Sharing** para enviar as seguintes informações adicionais à Swrve: cost\_value, channel, keywords, siteID e c (campanha)
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -171,6 +181,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Permissões não estão disponíveis para a Swrve.
 
 </Accordion>
+
+<div id="swrve-reporting-with-appsflyer-data" />
 
 ## Relatórios da Swrve com dados da AppsFlyer
 

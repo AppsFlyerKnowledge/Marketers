@@ -40,6 +40,8 @@ A relevância do seu aplicativo na busca na app store determina se o seu anúnci
 > * A partir de 27 de março de 2025, a AppsFlyer também oferece suporte à atribuição mobile baseada em impressões do Apple Search Ads.
 > * A partir de 1º de setembro de 2026, o Apple Ads adicionará um timestamp exato a todas as reivindicações de atribuição do iOS.
 
+<div id="set-up-apple-ads-integration" />
+
 ## Configure a integração com o Apple Ads
 
 <Accordion title="Iniciar">
@@ -96,6 +98,8 @@ A integração de custos fornece os seguintes dados agregados:
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## Configurar agências e parceiros de marketing do Apple Ads
 
 <Accordion title="Princípios">
@@ -106,6 +110,8 @@ Anunciantes e agências podem optar por trabalhar com Parceiros de marketing do 
 
 As diferenças entre agências e parceiros de marketing estão descritas na tabela abaixo.
 
+<div id="agency-vs-marketing-partner" />
+
 #### Agência vs. parceiro de marketing
 
 |  | Agência | Parceiro de marketing |
@@ -113,9 +119,13 @@ As diferenças entre agências e parceiros de marketing estão descritas na tabe
 | A AppsFlyer envia postbacks | Não | Sim |
 | Tecnologia | Executa campanhas em seu nome | Ter uma solução de tecnologia de valor agregado para otimizar campanhas |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### Configurando agências e parceiros de marketing
 
 Use a lista de verificação abaixo para garantir que você conclua todas as etapas do processo de configuração. As instruções detalhadas para cada tipo de parceiro são fornecidas nas seções a seguir.
+
+<div id="configuration-steps-checklist" />
 
 #### Checklist das etapas de configuração
 
@@ -176,6 +186,8 @@ Consulte a documentação do Apple Ads sobre <Anchor target="_blank" href="https
 * Não use caracteres especiais ou espaços no nome do grupo.
 * Quando você faz login com a Apple, a autorização dos grupos de campanha do Apple Ads não é cumulativa. Isso significa que quando você integra um novo aplicativo, a autorização para grupos de campanhas escolhidos para os aplicativos anteriores será revogada, a menos que seja ativado novamente. Você precisará selecionar **Acesso limitado** e cada um dos grupos de campanha relevantes (relacionados aos aplicativos que deseja conectar para o anunciante).
 
+<div id="advertiser-actions" />
+
 #### **Ações do anunciante**
 
 **Pré-requisito**:
@@ -189,6 +201,8 @@ Consulte a documentação do Apple Ads sobre <Anchor target="_blank" href="https
 3. Acesse a aba **Integração** e habilite a opção **Ativar parceiro**.
 4. [Opcional] Se você quiser atribuir usuários que reinstalam o aplicativo durante a janela de reatribuição, ative a **Atribuição de reinstalação.**
 5. Clique em **Salvar.**
+
+<div id="agency-actions" />
 
 #### **Ações da agência**
 
@@ -204,6 +218,8 @@ Consulte a documentação do Apple Ads sobre <Anchor target="_blank" href="https
 > 📘 **Note**
 >
 > Quando uma agência trabalha com um parceiro de marketing do Apple Ads, ela deve configurar o mesmo Campaign Group ID tanto na página de configuração do Apple Ads quanto na página de configuração do parceiro de marketing.
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### Dados de custo, cliques e impressões
 
@@ -235,6 +251,8 @@ Se você ativar a API de custo, a AppsFlyer receberá dados de custo, cliques e 
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <Accordion title="Atribuição do Apple Ads">
@@ -243,9 +261,13 @@ O Apple Ads funciona de forma independente da SKAdNetwork e atribui os usuários
 
 A atribuição do Apple Ads não depende do IDFA; a atribuição é feita usando um token do dispositivo (atribuição determinística).
 
+<div id="after-september-1-2026" />
+
 #### Depois de 1 de setembro de 2026
 
 O horário do clique e da impressão está disponível independentemente do status do ATT. A janela de lookback é definida pelo anunciante, e a AppsFlyer aplica as regras de atribuição de último toque ao engajamento.
+
+<div id="before-september-1-2026" />
 
 #### Antes de 1 de setembro de 2026
 
@@ -268,6 +290,8 @@ A AppsFlyer e o Apple Ads usam lógicas de atribuição diferentes, o que result
 * Os dados abaixo não são relatados: Impressões, toques ou custo de Geos com menos de 100 impressões para uma determinada campanha.
 * Ao agrupar por Geo na AppsFlyer, as geolocalizações com dados indisponíveis não são mostradas e o total de dados indisponíveis aparece em N/D.
 
+<div id="retargeting-related-discrepancies" />
+
 ### Discrepâncias relacionadas ao retargeting
 
 O mecanismo de atribuição de retargeting da AppsFlyer permite que os anunciantes mensurem e analisem suas campanhas de retargeting, além de suas campanhas de aquisição de usuários.
@@ -281,6 +305,8 @@ As figuras a seguir mostram como podem ocorrer discrepâncias em relação às c
 **Retargeting desativado**
 
  ![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png) 
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### Razões adicionais para discrepâncias
 
@@ -358,11 +384,15 @@ A tabela abaixo mostra a disponibilidade dos parâmetros de atribuição nos rel
 
 A partir do iOS 14, o [ATTrackingManager](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/) (ATT) determina a disponibilidade do IDFA, e o Apple Ads controla os dados de atribuição em nível de usuário das instalações trazidas pelo Apple Ads. Assim, a disponibilidade de dados em nível de usuário das instalações geradas pelo Apple Ads não é afetada pela <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">Privacidade Avançada Agregada</Anchor>.
 
+<div id="after-september-1-2026-1" />
+
 #### Após 1 de setembro de 2026
 
 | **Consentimento à ATT** | **Hora do clique/impressão disponível** | **Janela de lookback de clique/impressão** | **Observações** | **Disponibilidade de dados** | **IDFA disponível** |
 | --- | --- | --- | --- | --- | --- |
 | Com consentimento e sem consentimento | Sim | Definido pelo anunciante | Regras de atribuição de último toque da AppsFlyer usadas | Dados de atribuição a nível do usuário | Sim para quem consentiu, não para quem não consentiu |
+
+<div id="before-september-1-2026-1" />
 
 #### Antes de 1 de setembro de 2026
 
@@ -374,6 +404,8 @@ A disponibilidade do horário de clique/impressão, a janela de lookback e a dis
 | Sem consentimento | Sem | Cliques: 30 dias (definido pelo Apple Ads), impressões: 24 horas | Prioridade é dada a candidatos determinísticos | Dados de atribuição a nível de usuário sem a hora do clique/impressão. | Não |
 
 </Accordion>
+
+<div id="see-also" />
 
 #### Veja também
 

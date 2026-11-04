@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Visão geral:** O painel do Protect360 oferece insights sobre tráfego fraudulento e instalações bloqueadas em razão da aplicação de regras de validação.
 
+<div id="about-protect360-dashboard" />
+
 ## Sobre o painel do Protect360
 
 O painel do Protect360:
@@ -78,6 +80,8 @@ As seguintes opções de filtros e agrupamento estão disponíveis:
   * **Geolocalização**: compare a fraude identificada em todos os países
 
 </Accordion>
+
+<div id="installs-dashboard" />
 
 ## Dashboard de instalação
 
@@ -145,6 +149,8 @@ Instalações em que a lógica de atribuição da AppsFlyer detectou que o dispo
 
 <Accordion title="Instalações—gráficos">
 
+<div id="identified-fraud-trend-chart" />
+
 #### Gráfico de tendências de fraude identificadas
 
 O gráfico de tendências de fraude identificadas exibe o número de instalações fraudulentas, reatribuições e reengajamentos por dia, detalhado por:
@@ -156,6 +162,8 @@ O gráfico de tendências de fraude identificadas exibe o número de instalaçõ
 * **Taxa de comprometimento**: total de atribuições sinalizadas como comprometidas em relação ao total de atribuições.
 
 A exibição pode ser feita em um gráfico de linhas ou um gráfico de barras.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### Gráfico de correção de atribuição de hijacking de instalações
 
@@ -173,6 +181,8 @@ Você pode:
 * Quando os hijackings são bloqueados em tempo real, as atribuições corretas são exibidas nos dashboards e relatórios da AppsFlyer (não apenas no Protect360). Quando os hijackings são identificados após a atribuição, as atribuições corretas são exibidas apenas nos dados brutos do Protect360.
 * Esse gráfico pode exibir a correção **para** orgânica, mas não **de** orgânica.
 
+<div id="identified-fraud-chart" />
+
 #### Gráfico de fraude identificada
 
 O gráfico de fraude identificada exibe os tipos de fraude que ocorrem, por porcentagem. A análise de fraudes pode ser feita por:
@@ -186,6 +196,8 @@ O gráfico de fraude identificada exibe os tipos de fraude que ocorrem, por porc
 * Campanha
 * Geolocalização
 * Aplicativo
+
+<div id="affiliate-attribution-model" />
 
 #### Modelo de atribuição de afiliados
 
@@ -208,6 +220,8 @@ Instalações comprometidas são instalações em que a lógica de atribuição 
 
 <Accordion title="Instalações—tabela">
 
+<div id="identified-fraud-breakdown" />
+
 #### Análise de fraudes identificadas
 
 A tabela de **análise de fraudes identificadas** exibe os seguintes dados:
@@ -227,6 +241,8 @@ A estrutura dinâmica da tabela:
 * É por usuário, de modo que cada usuário da conta com acesso ao Protect360 possa personalizar a estrutura da sua própria tabela. Veja [mais opções de tabelas](/docs/protect360-dashboard#opções-adicionais-de-tabela).
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Conteúdo da tabela detalhada de fraudes identificadas
 
@@ -289,6 +305,8 @@ A estrutura dinâmica da tabela:
 | CTIT > Mais de 60 minutos | Instalações, reatribuições e reengajamentos em que o tempo entre o clique e a primeira inicialização do aplicativo seja superior a 60 minutos. O cálculo inclui apenas instalações cujo CTIT seja inferior a 25 horas (e não todas as instalações). Normalmente, cerca de 30% das primeiras inicializações de aplicativos ocorrem mais de 60 minutos após o download. |
 | CTIT > Mais de 5 horas | Instalações, reatribuições e reengajamentos em que o tempo entre o clique e a primeira inicialização do aplicativo seja superior a cinco horas. O cálculo inclui apenas instalações cujo CTIT seja inferior a 25 horas (e não todas as instalações). Normalmente, cerca de 20% das primeiras inicializações de aplicativos ocorrem mais de 5 horas após o download. |
 
+<div id="additional-table-options" />
+
 #### Opções adicionais de tabela
 
 * Clique em **Exportar CSV** para fazer o download da tabela para a área de trabalho no formato CSV
@@ -307,6 +325,8 @@ Observe que taxas incomuns de um desses KPIs não indicam necessariamente fraude
 Os dados de eventos in-app no dashboard de CPI se baseiam em LTV, ou seja, são todos os eventos in-app associados às instalações que ocorreram durante o intervalo de datas especificado.
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## Painel de eventos in-app
 
@@ -333,6 +353,8 @@ As métricas do título permitem que você veja:
 
 <Accordion title="Eventos in-app — gráficos">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **Gráfico de tendência de fraudes ao longo do tempo**
 
 O gráfico de tendência de fraude ao longo do tempo exibe o número de eventos por dia, divididos em:
@@ -340,6 +362,8 @@ O gráfico de tendência de fraude ao longo do tempo exibe o número de eventos 
 * **Em tempo real**: Eventos fraudulentos no aplicativo bloqueados em tempo real
 * **Pós-atribuição**: Eventos fraudulentos identificados após a atribuição
 * **Não fraude**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **Gráfico das principais fraudes IAE por canal de mídia**
 
@@ -375,6 +399,8 @@ A estrutura dinâmica da tabela:
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### Conteúdo da tabela de análise de fraudes de eventos in-app
 
 | Coluna da tabela | Descrição |
@@ -399,6 +425,8 @@ A estrutura dinâmica da tabela:
 | IAE bloqueado | IAEs bloqueados por regras de validação. |
 | Corrigida para orgânica | Instalações que sofreram hijacking com a última fonte não fraudulenta sendo orgânica. |
 | Corrigida para fonte não-orgânica | Instalações que sofreram hijacking com a última fonte não fraudulenta sendo uma fonte de mídia não-orgânica. |
+
+<div id="additional-table-options-1" />
 
 #### Opções adicionais de tabela
 
@@ -455,6 +483,8 @@ Para ativar eventos a pagar no painel de atividades in-app:
 | Canal de mídia indisponível | Se um canal de mídia não estiver disponível no filtro, isso pode ser devido ao bloqueio de todo o tráfego dele.<br /><br />Para filtrar com base no canal de mídia, você pode usar o link dele na tabela de detalhamento de fraude identificada |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -20,9 +20,13 @@ x-zendesk:
 ---
 > **At a glance:** Use a atribuição da pesquisa orgânica (SEO) e das respostas orgânicas de IA (AEO) para ver quais mecanismos de busca e mecanismos de respostas de IA enviam tráfego não pago para o seu site e aplicativo. Atribua a elas as conversões na web, as instalações do aplicativo e os reengajamentos no aplicativo.
 
+<div id="about-seo-and-aeo-attribution" />
+
 ## Sobre a atribuição de SEO e AEO
 
 Um usuário pesquisa no Google ou faz uma pergunta ao ChatGPT e depois clica em um resultado que leva ao seu site. A AppsFlyer atribui ao mecanismo de busca ou mecanismo de respostas de IA as visitas e conversões no seu site, as instalações do aplicativo e as aberturas do aplicativo.
+
+<div id="supported-user-journeys" />
 
 ## Jornadas do usuário compatíveis
 
@@ -33,6 +37,8 @@ Cada jornada começa quando um usuário pesquisa em um mecanismo de busca compat
 | O usuário acessa o seu site | Visitas à web e conversões na web, como cadastros e compras | SDK de atribuição web da AppsFlyer ou integração server-to-server (S2S) |
 | O usuário acessa o seu site e depois toca em um botão de download que leva à loja de aplicativos | Instalações de aplicativos | SDK mobile da AppsFlyer e Smart Script versão 2.10.3 ou posterior, com **Canal de mídia para instalações orgânicas de pesquisa** ativado |
 | O usuário acessa o seu site e é direcionado diretamente para o aplicativo já instalado | Reengajamentos no aplicativo (aberturas do aplicativo) | SDK da AppsFlyer para Android e iOS versão 6.12.1 ou posterior, além de Android App Links e iOS Universal Links |
+
+<div id="use-case-1-web-measurement" />
 
 ## Caso de uso 1: Mensuração web
 
@@ -51,6 +57,8 @@ Atribua as visitas ao site e as conversões ao mecanismo de busca ou mecanismo d
 <Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/62c5484c5da854dda37a25e681befe49d9f42ae03d2124f7eff513eb7a3c6630-52588347122577.png" width="2266px" />
 
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/about-traffic-source-resolution#etapa-2-identificação-de-fontes-de-mídia">resolução da fonte de tráfego</Anchor>.
+
+<div id="use-case-2-app-install-measurement" />
 
 ## Caso de uso 2: Mensuração de instalação do aplicativo
 
@@ -72,6 +80,8 @@ Atribua instalações do aplicativo ao mecanismo de busca ou mecanismo de respos
 
 Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">configurar o Smart Script para converter visitantes da web</Anchor>.
 
+<div id="use-case-3-app-re-engagement-measurement" />
+
 ## Caso de uso 3: mensuração de reengajamento no aplicativo
 
 Atribua aberturas do aplicativo feitas por usuários que já têm seu aplicativo instalado.
@@ -91,12 +101,16 @@ Atribua aberturas do aplicativo feitas por usuários que já têm seu aplicativo
 
 Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">configurar a atribuição de reengajamento para pesquisa orgânica (SEO) e respostas orgânicas de IA (AEO)</Anchor>.
 
+<div id="data-availability" />
+
 ## Disponibilidade de dados
 
 O tráfego de SEO e AEO aparece na AppsFlyer da seguinte forma:
 
 * **Dashboards e relatórios:** Os mecanismos de pesquisa aparecem como `<search engine>_organic_seo`, por exemplo `google_organic_seo`. Os mecanismos de resposta de IA aparecem como `<AI engine>_organic_aeo`, por exemplo, `chatgpt_organic_aeo`.
 * **Relatórios de dados brutos:** O campo `channel` é `seo` para o tráfego de mecanismos de busca e `aeo` para o tráfego de mecanismos de resposta de IA.
+
+<div id="supported-search-engines-and-ai-answer-engines" />
 
 ## Mecanismos de busca e mecanismos de resposta de IA compatíveis
 
@@ -106,23 +120,35 @@ A AppsFlyer atribui tráfego dos seguintes mecanismos.
 
 **Mecanismos de resposta de IA:** ChatGPT, Claude, Perplexity, Manus, Copilot, Gemini, Grok e DeepSeek.
 
+<div id="faq" />
+
 ## Perguntas frequentes
+
+<div id="is-there-an-additional-fee-for-seo-and-aeo-attribution" />
 
 ### Há uma taxa adicional para a atribuição de SEO e AEO?
 
 Sem. Isso está incluído na sua assinatura. As conversões orgânicas contam para o seu pacote da mesma forma que as conversões não orgânicas.
 
+<div id="can-i-customize-the-seo-or-aeo-media-source-name" />
+
 ### Posso personalizar o nome do canal de mídia de SEO ou AEO?
 
 Sem. A AppsFlyer define o nome do canal de mídia.
+
+<div id="does-appsflyer-attribute-an-install-when-the-user-taps-an-install-button-shown-in-the-search-results" />
 
 ### A AppsFlyer atribui uma instalação quando o usuário toca em um botão de instalação exibido nos resultados de busca?
 
 Sem. Nesse fluxo, a AppsFlyer não pode coletar as informações necessárias para atribuição.
 
+<div id="is-keyword-search-term-or-prompt-data-available" />
+
 ### Os dados de palavra-chave, termo de busca ou prompt estão disponíveis?
 
 Sem. O referrer da web não inclui essas informações.
+
+<div id="see-also" />
 
 ## Consulte também
 

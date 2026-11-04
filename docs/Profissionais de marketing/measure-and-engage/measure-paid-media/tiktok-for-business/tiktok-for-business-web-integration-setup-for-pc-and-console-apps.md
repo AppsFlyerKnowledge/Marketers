@@ -23,17 +23,25 @@ x-zendesk:
 ---
 > **Visão geral:** Aprenda como integrar o TikTok Web para aplicativos de PC e console com a AppsFlyer e configurar campanhas no TikTok Web.
 
+<div id="warning" />
+
 > ❗️ **Atenção**
 >
 > Essa integração está disponível apenas para aplicativos de PC e console como Steam, Epic ou Native PC. Para apps mobile, consulte a página <Anchor target="_blank" href="/marketers/pt/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok ads integration setup</Anchor> .
+
+<div id="overview" />
 
 ## Escritórios
 
 Este artigo contém informações e etapas sobre como configurar e usar o TikTok web para aplicativos de PC e console com a AppsFlyer.
 
+<div id="prerequisite" />
+
 ### Pré-requisito
 
 Antes de ativar a integração do TikTok web, certifique-se de que você tem uma conta comercial no TikTok Ads Manager.
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Ativando o parceiro na AppsFlyer
 
@@ -44,6 +52,8 @@ Antes de ativar a integração do TikTok web, certifique-se de que você tem uma
 3. Clique em **Configurar integração**. Você será direcionado para a página de configuração.
 4. Na aba **Integração**, ative **Ativar parceiro**. O botão deve permanecer <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativado</Anchor> enquanto você trabalhar com o parceiro.
 5. Conclua a configuração usando as abas relevantes, conforme descrito na próxima seção.
+
+<div id="setting-up-tiktok-web-in-appsflyer" />
 
 ## Configuração do TikTok web na AppsFlyer
 
@@ -57,9 +67,13 @@ A integração com o TikTok web oferece suporte apenas ao envio de postbacks de 
 
 A aba **Integração** inclui várias seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 #### Ativar parceiro
 
 Para configurar a integração, você deve primeiro ativar o **Ativar parceiro** .
+
+<div id="general-settings" />
 
 #### Configurações gerais
 
@@ -67,10 +81,14 @@ Para configurar a integração, você deve primeiro ativar o **Ativar parceiro**
 * **Token de acesso:** Insira o token de acesso. Para gerá-lo ou recuperá-lo, siga [estas instruções](https://business-api.tiktok.com/portal/docs?id=1771100865818625)
 * **Limitar o uso, pelo TikTok ads, das informações pessoais dos usuários (CCPA):** Ative esta opção para garantir compliance com <Anchor target="_blank" href="/marketers/pt/docs/send-opendsr-api-requests">leis de proteção de dados</Anchor>.
 
+  <div id="note" />
+
   > 📘 **Nota**
   >
   > A conformidade com as normas de privacidade da CCPA limita os dados provenientes de usuários do TikTok ads localizados na Califórnia ou em outros estados sensíveis dos EUA.
 
+
+<div id="enable-view-through-attribution" />
 
 #### Ative a atribuição de view-through
 
@@ -88,9 +106,13 @@ Para ativar a atribuição de view-through:
 6. Vá até **Atribuição de view-through** e defina a **janela de lookback de view-through** desejada (de até 24 horas).
 7. Clique em **Salvar integração** para aplicar suas configurações.
 
+<div id="default-postbacks" />
+
 #### Postbacks padrão
 
 Os postbacks de instalação são enviados automaticamente apenas para o TikTok web.
+
+<div id="in-app-event-postbacks" />
 
 #### Aba Permissões
 
@@ -192,6 +214,8 @@ A opção de criar um link de atribuição na AppsFlyer não está disponível n
   </tbody>
 </Table>
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > Para simplificar a análise da campanha, inclua o tipo de campanha (web ou mobile) como um prefixo ou sufixo no nome da campanha (por exemplo, nome-da-campanha\_web)
@@ -222,6 +246,8 @@ No momento, as permissões não são concedidas ao TikTok web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-tiktok-web-for-pc-and-console-apps" />
+
 ## Configurar campanhas no TikTok web para aplicativos de PC e console
 
 Ao configurar sua nova campanha:
@@ -232,19 +258,27 @@ Ao configurar sua nova campanha:
   * Uma web landing page (recomendado quando o seu aplicativo está disponível em mais de uma plataforma)
   * Store URL (recomendado quando o seu aplicativo está disponível em uma única loja ou plataforma.
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Ver os dados de atribuição de web-to-app
 
 Embora os eventos de conversão baseados na web sejam enviados ao TikTok sob o PID original `tiktokweb_int`, eles são reportados no dashboard da AppsFlyer e nos relatórios de dados brutos sob o PID `tiktokglobal_int`. Isso se aplica tanto a eventos de conversão primários quanto a eventos de assistência de conversão.
 
 Essa visualização unificada permite que você analise a performance das campanhas na web e no aplicativo em um só lugar, incluindo relatórios completos de custos na web e no mobile.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver no dashboard
 
 Todas as atribuições de web-to-app do TikTok aparecem sob `tiktokglobal_int` nos dashboards de visão geral e de atividade. Isso fornece uma visão única e consolidada dos resultados da campanha em várias plataformas. Use filtros e detalhamentos padrão para comparar o tráfego do aplicativo e da web nos seus dados do TikTok Ads.
 
+<div id="view-in-raw-data-and-api-reports" />
+
 ### Ver em dados brutos e relatórios da API
 
 As exportações de dados brutos e as respostas da API incluem o PID `tiktokglobal_int` no campo `media_source` para a atividade web do TikTok. Para verificar os detalhes da configuração da campanha na web, consulte o campo `original_url`, que mostra o PID `tiktokweb_int` usado durante a criação da campanha na web.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

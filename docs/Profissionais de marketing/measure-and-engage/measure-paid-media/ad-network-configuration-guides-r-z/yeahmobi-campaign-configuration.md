@@ -25,6 +25,8 @@ x-zendesk:
 
 Para configurar suas campanhas com a Yeahmobi, siga as etapas abaixo.
 
+<div id="setting-up-yeahmobi" />
+
 ## Configurando o Yeahmobi
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,11 +46,15 @@ Para configurar suas campanhas com a Yeahmobi, siga as etapas abaixo.
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. A opção **deve** permanecer ativada enquanto você trabalhar com o parceiro.  
 
 Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -56,6 +62,8 @@ Envie postbacks automáticos para a Yeahmobi após instalações e reengajamento
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Yeahmobi.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada à Yeahmobi.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -84,6 +92,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à Yeahm
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -103,6 +113,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**estrutura e parâmetros do link de atribuição e parâmetros da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas à Yeahmobi.
@@ -110,6 +122,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de cliques aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -139,6 +153,8 @@ A receita de anúncios não é compatível com esse parceiro.
 
 Nessa aba, você pode selecionar as permissões a serem concedidas ao parceiro, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo ambos. Observe que mesmo se a atribuição estiver desativada para o parceiro, a aba de permissões está ativa e você pode conceder controle ao parceiro.
 
+<div id="ad-network-permissions" />
+
 ### Permissões da rede de anúncios
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
@@ -152,6 +168,8 @@ Use essas chaves seletoras para conceder permissões à rede de anúncios para g
 * ***Permitir o acesso ao painel Protect360*** – somente aos próprios dados do Protect360 do parceiro e desde que o recurso esteja ativado para o anunciante
 
 Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad networks</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo**: relatórios de dados agregados e brutos disponíveis via Data Locker
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## Relatórios do Data Locker disponíveis para anunciantes
 
 <table><colgroup><col/><col/><col/></colgroup><thead><tr><th>Tipo de dados</th><th>Grupo de relatórios</th><th>Assinatura do Data Locker necessária</th></tr></thead><tbody><tr><td>Dados</td><td>Jornada do usuário—dados brutos</td><td>Sim (2)</td></tr><tr><td>Dados</td><td>Os alertas do Protect360 são atualizados no horário UTC diário.</td><td>Sim</td></tr><tr><td>Dados</td><td>People-Based Attribution (PBA) </td><td>Não </td></tr><tr><td>Dados</td><td>Incrementalidade</td><td>Não </td></tr><tr><td>Dados</td><td>SKAN</td><td>Não (1)</td></tr><tr><td>Dados</td><td>Resultados</td><td><p>Para acessar o relatório de receita de anúncios é necessário ter uma assinatura do Data Locker.</p><p>Todos os outros relatórios exigem uma assinatura do pacote ROI360 Advanced.</p></td></tr><tr><td>Dados</td><td>Aplicativos de CTV, PC e console</td><td>Sim</td></tr><tr><td>Agregados</td><td>Análise de cohort</td><td>Não (1)</td></tr><tr><td>Agregado avançado</td><td>Análise de cohort</td><td>Não (3)</td></tr><tr><td>Agregados</td><td>Otimização de criativos</td><td><p>Não (1)</p><p>Requer um plano de assinatura de otimização de criativos premium.</p></td></tr><tr><td>Agregados</td><td>Métricas</td><td>Não (1)</td></tr><tr><td colspan="3"><p>(1) Se você não tiver uma assinatura do Data Locker, você deve fornecer um <a href="./data-locker-for-marketers#storage-options" target="_blank">armazenamento da sua propriedade</a>.</p><p>(2) Exceto para engajamento cross-platform</p><p>(3) Disponível com assinatura do Data Locker ou com o conjunto de analytics da API.</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ A disponibilidade dos relatórios do Data Locker varia de acordo com o tipo de r
 | Por versão | Relatórios em que os dados do mesmo dia podem ser publicados várias vezes à medida que dados mais recentes ou completos são disponibilizados (a versão mais recente é a mais precisa). | <Anchor target="_blank" href="/marketers/pt/docs/revenue-etl-reports#ad-revenue-versioned">Relatório de receita de anúncios atribuída</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## Relatórios de dados brutos
 
@@ -157,6 +161,8 @@ Veja <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-data-vi
 
 </Accordion>
 
+<div id="advanced-raw-data-reports-beta" />
+
 ## Relatórios de dados brutos avançados (Beta)
 
 Os relatórios avançados introduzem uma nova geração de relatórios de dados brutos projetados para fornecer conjuntos de dados estruturados, validados e **prontos para IA**. Eles permitem a ingestão e análise da **jornada completa do usuário, desde o primeiro engajamento até a conversão e atividade pós-instalação, usando apenas três relatórios**.  
@@ -184,6 +190,8 @@ O relatório de conversão oferece uma visão completa de todas as instalações
 | --- | --- | --- | --- |
 | Guias de aquisição de usuários e retargeting | Conversões | 1–3 horas | ✅ |
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > * Reinstalações não estão incluídas neste relatório.
@@ -201,11 +209,15 @@ O relatório de eventos do usuário final captura dados detalhados de eventos in
 | --- | --- | --- | --- |
 | Guias de aquisição de usuários e retargeting | Eventos de usuários finais | 1–3 horas | ✅ |
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Para aplicativos de plataforma estendida, incluindo CTV, PC e console, eventos de retargeting para usuários finais não estão incluídos.
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## Relatórios agregados
 

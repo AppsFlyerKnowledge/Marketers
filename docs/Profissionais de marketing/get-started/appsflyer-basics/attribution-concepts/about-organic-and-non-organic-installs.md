@@ -30,6 +30,8 @@ x-zendesk:
 
 Os usuários não orgânicos são atribuídos ao canal de mídia que motivou a instalação ou o engajamento. No caso dos usuários orgânicos, não existe uma canal de mídia identificado com a instalação ou engajamento.
 
+<div id="organic-vs-non-organic" />
+
 ## Orgânico vs. não orgânico
 
 | Instalações orgânicas  <br />Não atribuído a canais de mídia | Instalações não orgânicas (NOI)  <br />Atribuído a canais de mídia |

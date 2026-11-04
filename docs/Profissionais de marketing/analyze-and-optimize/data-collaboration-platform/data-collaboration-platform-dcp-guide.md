@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="53877 Precisa de imagem de KB para uma nova KB do DCP (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
 
+<div id="about-the-data-collaboration-platform-dcp" />
+
 ## Sobre a Plataforma de colaboração de dados (DCP)
 
 A plataforma de colaboração de dados (DCP) da AppsFlyer é uma solução avançada, de nova geração, que permite que commerce media networks e marcas explorem o potencial de seus dados combinados. Por meio de recursos seguros e centrados na privacidade, a plataforma viabiliza colaborações integradas, permitindo que as empresas gerem novas fontes de receita de anúncios e criem audiências personalizadas para ativar campanhas altamente assertivas em qualquer lugar.
@@ -42,6 +44,8 @@ Com acesso a um ecossistema colaborativo de mais de 14.000 marcas globais e milh
 * Crie e mantenha integrações perfeitas com provedores de IDR, outras clean rooms e plataformas para que você possa escalar, se adaptar e colaborar entre ecossistemas, preservando a privacidade de dados.
 * Sinta-se seguro, sabendo que você está expandindo seus negócios em conformidade com as regulamentações globais e locais de privacidade. A colaboração de dados segura e em compliance é garantida em todas as colaborações.
 
+<div id="use-cases" />
+
 ## casos de uso
 
 Veja alguns exemplos de casos de uso de colaboração.
@@ -52,9 +56,13 @@ Veja alguns exemplos de casos de uso de colaboração.
 
 Troca de dados anonimizados entre varejistas de comércio e marcas para criar anúncios personalizados com base em comportamentos individuais de compra.
 
+<div id="example-non-endemic-advertising" />
+
 > 📄 **Exemplo: publicidade não endêmica**
 >
 > Uma colaboração entre setores: uma marca de moda acessível engaja clientes de supermercado que compram fraldas com frequência (pais ou cuidadores de crianças pequenas). Eles promovem seus anúncios de roupas para crianças pequenas.
+
+<div id="example-endemic-advertising" />
 
 > 📄 **Exemplo: publicidade endêmica**
 >
@@ -68,15 +76,21 @@ Troca de dados anonimizados entre varejistas de comércio e marcas para criar an
 
 Identificação de segmentos de clientes, como "consumidores atentos ao preço" ou "fiéis à marca", que são considerados audiências prontas para comprar, com base no histórico de compras anonimizado e no comportamento de navegação.
 
+<div id="example-non-endemic-advertising-1" />
+
 > 📄 **Exemplo: publicidade não endêmica**
 >
 > Uma marca colabora com um varejista para promover tênis de corrida. A marca quer engajar consumidores que pesquisaram tênis de corrida nos últimos 7 dias na busca in-app do varejista, mas não fizeram uma compra.
+
+<div id="example-non-endemic-advertising-2" />
 
 > 📄 **Exemplo: publicidade não endêmica**
 >
 > Uma marca de roupas colabora com uma rede hoteleira CMN para promover sua coleção de verão a viajantes que visitam destinos tropicais.
 
 </Accordion>
+
+<div id="get-started-using-dcp" />
 
 ## Primeiros passos no DCP
 
@@ -144,6 +158,8 @@ Em seguida, você e seu colaborador podem <Anchor target="_blank" href="/markete
 Agora é hora de <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">configurar a mensuração</Anchor> para ver como suas campanhas colaborativas foram. Depois, confira os resultados da campanha no dashboard de colaboração!
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

@@ -24,17 +24,25 @@ x-zendesk:
 
 > **Resumo:** A interoperabilidade da SKAN permite que a Amazon compartilhe postbacks da SKAN com a AppsFlyer e permite que a AppsFlyer compartilhe com a Amazon o mapeamento de mensuração do valor de conversão.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Para participar deste beta fechado, informe seu representante da Amazon.
+
+<div id="skan-interoperability-appsflyer---amazon" />
 
 ## Interoperabilidade com SKAN: AppsFlyer &lt;-> Amazon
 
 Se você trabalha com vários parceiros de ad networks, o recomendado é que você os configure na AppsFlyer. Desta forma, as métricas de desempenho do SKAN, enriquecidas com outras métricas como o custo, ficam disponíveis através da plataforma AppsFlyer.
 
+<div id="scope-of-skan-interoperability-with-amazon" />
+
 ### Escopo da interoperabilidade da SKAN com a Amazon
 
 A interoperação permite que a AppsFlyer e a Amazon compartilhem o mapeamento do valor de conversão SKAN (definido na AppsFlyer). Isso permite que ambos os lados forneçam métricas de desempenho. Veja a <Anchor target="_blank" href="/marketers/pt/docs/skan-integrated-partners-list">lista de campos de enriquecimento</Anchor> compatíveis com a Amazon.
+
+<div id="amazon-dsp-app-install-ads-guidance" />
 
 ### Guia para anúncios de instalação do aplicativo do Amazon DSP
 
@@ -80,6 +88,8 @@ O Programa Alpha do Amazon DSP para iOS permite que usuários da AppsFlyer execu
 * Ambiente de anúncios: anúncios in-app em propriedades da Amazon e em determinadas exchanges de terceiros.
 * Relatórios: insights de campanha em tempo real por meio da AppsFlyer.
 
+<div id="enabling-interoperation" />
+
 ### Permitindo a interoperação
 
 A interoperação é alcançada por meio de configurações nos dashboards da AppsFlyer e da Amazon. Nenhuma interoperação ou alteração é necessária no próprio aplicativo.
@@ -91,6 +101,8 @@ A interoperação é alcançada por meio de configurações nos dashboards da Ap
 | <span id="1"></span>1 | Pré-requisitos do app | <ul><li>Integre o SDK mais recente da AppsFlyer em seu aplicativo.</li></ul> |
 | <span id="2"></span>2 | Revisão das configurações de SKAN | Configure e ative a solução <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide">SKAN da AppsFlyer.</Anchor><br /><br />**Para ver as configurações da SKAN**:<ol><li>Na AppsFlyer, acesse **configurações** > **SKAN Conversion Studio**.</li><li>**Clique nas opções (⋮**) e verifique se a mensuração SKAN está ativada.<br />![skan-settings.png](https://files.readme.io/5a5b9b8b8a809336055340a14e49dacc16c5c0e95cda62c6dfb2ca9a11618d71-27548444964497.png)</li><li>Selecione seu modo de mensuração preferido.<br />Saiba mais sobre o <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.</li><li>Anote os nomes exatos dos eventos definidos. Você precisará deles na próxima etapa.</li></ol> |
 | <span id="3"></span>3 | Mapeamento de eventos in-app | Revise e, se necessário, faça alterações nos seus mapeamentos de eventos in-app da Amazon. **Pelo menos um evento in-app deve ser mapeado para a Amazon** para que a Amazon recupere o esquema e conclua a integração.<br /><br />**Para visualizar e definir mapeamentos de eventos in-app**:<ol><li>Na AppsFlyer, acesse **Configurações** > Integrações ativas.</li><li>Pesquise e selecione **Amazon Ads**.</li><li>Na seção de **Postbacks de eventos in-app:**<ol><li>[Obrigatório] Se não estiver ativada, acesse **Postbacks de eventos in-app**.</li><li>Verifique se os eventos in-app que você definiu no <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor> estão mapeados para nomes de eventos da Amazon ou para os eventos no seu <Anchor target="_blank" href="/marketers/pt/docs/skan-cv-decode-map-your-cv-to-events">mapa de conversão personalizado</Anchor>.<br />**Observação:** Map `af_skad_revenue` para o nome de evento da Amazon `OFF_AMAZON_purchases`</li></ol></li><li>Clique em **Guardar integração**.</li></ol> |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Resumo:** O Kenshoo, um parceiro integrado da AppsFlyer (anteriormente conhecido como Facebook Marketing Partner), capacita todos os profissionais de marketing do mundo com tecnologia para construir marcas e gerar demanda em toda a mídia.
 
+<div id="setting-up-kenshoo" />
+
 ## Configurando o Kenshoo
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -41,6 +43,8 @@ x-zendesk:
    **Observação importante:** A opção **deve permanecer ativada (ativa) enquanto você trabalhar com o parceiro**. <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">Saiba mais</Anchor>
 5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo.
 
+<div id="in-app-events" />
+
 ### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 1. Para enviar postbacks de eventos in-app ao Kenshoo, ative **Postbacks de eventos in-app**.
@@ -54,6 +58,8 @@ x-zendesk:
 **Para editar**: na AppsFlyer, no menu lateral, selecione **Colaborar** > **Integrações Ativas**.
 
 Saiba mais sobre as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner">integrações de parceiros</Anchor>.
+
+<div id="configuring-on-kenshoo" />
 
 ## Configurando no Kenshoo
 

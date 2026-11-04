@@ -24,6 +24,8 @@ x-zendesk:
 
 <Embed title="SKAN 4 Conversion Studio (incluindo janela de bloqueio)" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="skan-conversion-studio-basics" />
+
 ## Conceitos básicos do SKAN Conversion Studio
 
 No fluxo de atribuição do SKAdNetwork (SKAN), um dispositivo iOS envia postbacks SKAN com os valores de conversão (CV) mais recentes após cada janela de medição.
@@ -88,6 +90,8 @@ O Conversion Studio oferece-lhe máxima flexibilidade para garantir que todos os
   * O layout é atualizado diariamente com base no modo ativo à meia-noite UTC. O layout atualizado deve estar disponível por volta das 05:00 UTC.
   * No SKAN 4, Custom e Decode, os dados orgânicos para eventos na aplicação e a receita geral não estão disponíveis.
 
+<div id="s2s-principles" />
+
 #### **Princípios S2S**
 
 As ações mensuráveis podem ser relatadas pela API de [servidor para servidor (S2S)](/docs/skan-conversion-studio#report-events-by-servertoserver-api). Considere o seguinte por modo:
@@ -97,6 +101,8 @@ As ações mensuráveis podem ser relatadas pela API de [servidor para servidor 
 * [Legado] Modos de receita, conversão e engajamento: Necessita ativar a [gravação de eventos S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) antes de enviar eventos.
 
 </Accordion>
+
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
 
 ## Configuração de valores de conversão no SKAN Conversion Studio
 
@@ -110,6 +116,8 @@ Existem vários modos disponíveis no SKAN Conversion Studio para definir os val
   * com o anúncios
 
 Saiba mais sobre os diferentes modos de medição nas secções seguintes.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -207,6 +215,8 @@ Observação: por padrão, a AppsFlyer exibe o SKAN 4 no Conversion Studio. Para
 
 <Accordion title="[Legado] Modos fixos">
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Os modos fixos não estarão disponíveis para novas aplicações a partir de 23/06/2024.  Todas as funcionalidades são suportadas nos modos Custom e SKAN4.
@@ -237,6 +247,8 @@ Com modos fixos, pode medir o valor do utilizador utilizando uma das seguintes m
 5. Clique em **Guardar**.
 6. Verifique se os mapeamentos de postback de eventos na aplicação do seu parceiro correspondem aos eventos que configurou.
 
+<div id="fixed-mode-measurement" />
+
 #### Medição em modo fixo
 
 | Modo de medição | Descrição |
@@ -263,6 +275,8 @@ Desenvolva o seu próprio mapeamento de CV para evento e defina o CV na aplicaç
 4. Verifique se os mapeamentos de postback de eventos na aplicação do seu parceiro correspondem aos eventos que configurou.
 
 </Accordion>
+
+<div id="measurement-components" />
 
 ## Componentes de medição
 
@@ -590,6 +604,8 @@ A prioridade é explicada mais detalhadamente no [exemplo pormenorizado](/docs/s
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="view-cv-mapping" />
@@ -601,6 +617,8 @@ A prioridade é explicada mais detalhadamente no [exemplo pormenorizado](/docs/s
 * Obtenha o mapeamento de CV através da <Anchor target="_blank" href="/marketers/pt/docs/skan-cv-schema-api-for-advertisers">API do esquema SKAN CV para anunciantes</Anchor>.
 
 <Image alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
+
+<div id="csv-mapping-file-columns" />
 
 #### Colunas do ficheiro de mapeamento CSV
 
@@ -637,6 +655,8 @@ Ajuste a fórmula para incluir todos os componentes de medição
 
 <Accordion title="Exemplos de CV personalizados maximizados">
 
+<div id="example-1" />
+
 #### Exemplo 1
 
 | Componente | Descrição |
@@ -645,6 +665,8 @@ Ajuste a fórmula para incluir todos os componentes de medição
 | Resultados | <ul><li>A receita é reportada utilizando um único evento na aplicação (geral)</li><li>Intervalos de receita: 15</li></ul> |
 | Na aplicação | Nenhum |
 | Funil | 3 eventos na aplicação |
+
+<div id="example-2" />
 
 #### Exemplo 2
 
@@ -655,6 +677,8 @@ Ajuste a fórmula para incluir todos os componentes de medição
 | Definido na aplicação para conversão | 1 evento na aplicação para medir a conversão; cada evento na aplicação requer 1 intervalo |
 | Funil | Nenhum |
 
+<div id="example-3" />
+
 #### Exemplo 3
 
 | Componente | Descrição |
@@ -663,6 +687,8 @@ Ajuste a fórmula para incluir todos os componentes de medição
 | Resultados | <ul><li>A receita é reportada utilizando um único evento na aplicação (geral)</li><li>Intervalos de receita: 3</li></ul> |
 | Definido na aplicação para envolvimento | <ul><li>2 eventos na aplicação para medir ocorrências de engajamento</li><li>Intervalos de ocorrência: 3 por evento na aplicação</li></ul> |
 | Funil | Nenhum |
+
+<div id="example-4" />
 
 #### Exemplo 4
 
@@ -693,6 +719,8 @@ Considere:
 * Cada prioridade consiste num intervalo de receita ou de ocorrências de eventos na aplicação, ou ambos.
 * Valores dos intervalos: O valor mais baixo do limite não está incluído no intervalo, mas o valor mais alto está. Por exemplo, o intervalo de $5 a $10 não inclui o valor 5, mas inclui o valor 10.
 
+<div id="measurement-priorities-setting-example" />
+
 #### Exemplo de configuração de prioridades de medição
 
 <table><thead><tr><th>Prioridade #</th><th>Faixa de receita</th><th>Evento na app</th></tr></thead><tbody><tr><td>1 [Prioridade máxima]</td><td>5 a 10 dólares</td><td>enviar_recomendação</td></tr><tr><td>2</td><td>5 a 10 dólares</td><td>--</td></tr><tr><td>3</td><td>US$ 0 a US$ 5</td><td>enviar_recomendação</td></tr><tr><td>4</td><td>US$ 0 a US$ 5</td><td>--</td></tr><tr><td>5</td><td>--</td><td>enviar_recomendação<br/>adicionar_ao_carrinho</td></tr><tr><td>6</td><td>--</td><td>enviar_recomendação</td></tr><tr><td>7 [Prioridade mínima]</td><td>--</td><td>adicionar_ao_carrinho</td></tr><tr><td colspan="3">-- Nenhum valor definido</td></tr></tbody></table>
@@ -703,6 +731,8 @@ Na tabela:
 
 * Várias ações são separadas usando >
 * O valor entre parênteses (), é a prioridade estabelecida pela AppsFlyer após o utilizador concluir a ação. Usando a prioridade, a AppsFlyer atualiza o CV no aplicativo.
+
+<div id="user-journey-scenarios" />
 
 #### Cenários de exploração do utilizador
 
@@ -720,9 +750,13 @@ Na tabela:
 
 <Accordion title="[Legado] Exemplos de modo fixo">
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Os modos fixos não estarão disponíveis para novas aplicações a partir de 23/06/2024. Todas as funcionalidades são suportadas nos modos Custom e SKAN4.
+
+<div id="example-a-revenue-measurement" />
 
 #### Exemplo A: Medição de receita
 
@@ -733,6 +767,8 @@ Na tabela:
 | Métricas Selecionadas | Métricas relacionadas com a receita disponíveis<ul><li>Instalações: 20</li><li>Receita: $125</li><li>Conversões: 15</li><li>ARPU: $6,25</li><li>ROI: 316%</li></ul> |
 | Número de linhas de dados brutos por relatório | <Anchor target="_blank" href="/marketers/pt/docs/skan-raw-data-reports">Os relatórios de dados brutos estão disponíveis no Data Locker</Anchor><ul><li>Postbacks de dispositivos: 20 linhas</li><li>Instalações: 20 linhas</li><li>Eventos na Aplicação: 15 linhas. Nota! O utilizador que faz múltiplas compras é representado por uma única linha de $10.</li></ul> |
 | Considerações do desenvolvedor | Os eventos que geram receitas são reconhecidos |
+
+<div id="example-b-conversion-measurement" />
 
 #### Exemplo B: Medição de conversão
 
@@ -757,6 +793,8 @@ Na tabela:
         * 5 utilizadores (A-E) instalam a aplicação
         * Realizam de 0 a 3 eventos diferentes na aplicação, conforme mostrado na tabela
         * Dados de custos fornecidos pela API da rede de anúncios: $30
+
+        <div id="inapp-events-performed-by-users" />
 
         #### Eventos na aplicação realizados pelos utilizadores
 
@@ -785,6 +823,8 @@ Na tabela:
         Métricas Selecionadas
       </td>
       <td>
+        <div id="inapp-related-metrics-available" />
+
         #### Métricas relacionadas com eventos dentro da aplicação disponíveis
 
         | Métrica | Aplicação | na\_aplicação-1 | na\_aplicação-2 | na\_aplicação-3 |
@@ -821,6 +861,8 @@ Na tabela:
   </tbody>
 </Table>
 
+<div id="example-c-engagement-measurement" />
+
 #### Exemplo C: Medição de envolvimento
 
 <Table>
@@ -842,6 +884,8 @@ Na tabela:
       </td>
       <td>
         5 utilizadores instalam a aplicação e abrem-na o número de vezes indicado na tabela.
+
+        <div id="app-opens" />
 
         #### Aberturas da Aplicação
 
@@ -934,6 +978,8 @@ Os insights da distribuição dos valores de conversão são compostos por três
 * Aba Receita
 * Aba Eventos
 
+<div id="conversion-values-tab" />
+
 #### **Valores de conversão**
 
 Veja quais valores de conversão estão realmente sendo usados e quais não estão.
@@ -948,6 +994,8 @@ Uma distribuição equilibrada dos valores de conversão garante que o seu esque
 **Limite para identificar valores não usados**  
 ✅ Todos os CVs são usados  
 ⚠️ Se pelo menos um CV não tiver nenhum postback, este símbolo de erro será exibido.
+
+<div id="revenue-tab" />
 
 #### **Receita**
 
@@ -968,6 +1016,8 @@ O gráfico exibe a distribuição dos usuários pagantes entre os buckets de rec
 ✅ Erro de receita ≤ 3%
 
 ⚠️ Erro de receita > 3%
+
+<div id="events-tab" />
 
 #### **Aba Eventos**
 
@@ -994,6 +1044,8 @@ Garantir que todos os eventos selecionados ocorram na primeira janela de ativida
 </Accordion>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Procedimentos adicionais
 
@@ -1064,6 +1116,8 @@ O fluxo S2S é da seguinte forma:
 
 <Accordion title="Adicione SSOT às medições de modo fixo">
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > Os modos fixos não estarão disponíveis para novas aplicações a partir de 23/06/2024. Todas as funcionalidades são suportadas nos modos Custom e SKAN4.
@@ -1095,6 +1149,8 @@ Para permitir a diminuição do valor de conversão:
      Atenção! Isto estará disponível apenas para:
      * Aplicações previamente guardadas no modo SKAN 4 no Conversion Studio.
      * Usuários com acesso de edição
+
+<div id="examples" />
 
 #### Exemplos
 
@@ -1143,6 +1199,8 @@ O utilizador realizou mais um evento de sessão - permanecerá no CV 3
 
 Ativar a opção **Suporte a utilizadores anónimos** assegura que os valores de conversão SKAN são atualizados corretamente para <Anchor target="_blank" href="/marketers/pt/docs/apply-privacy-preserving-sdk-methods#como-anonimizar-informações-do-usuário">utilizadores anonimizados</Anchor>, enquanto ainda protege a sua privacidade.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Esta funcionalidade é relevante apenas para apps que utilizam o <Anchor target="_blank" href="/marketers/pt/docs/apply-privacy-preserving-sdk-methods#como-anonimizar-informações-do-usuário">método de anonimização do utilizador</Anchor> para remover e fazer hash de todas as informações que identificam o utilizador. Para assegurar relatórios precisos do SKAN, estas apps devem ativar a opção **Suporte a utilizadores anónimos**.
@@ -1164,6 +1222,8 @@ Quando o Single Source of Truth (SSOT) estiver habilitado no seu esquema SKAN, v
 Os padrões de mapeamento definem como os valores de conversão (CVs) são organizados para representar diferentes tipos de instalações. Isso inclui instalações atribuídas pelos métodos clássicos de atribuição da AppsFlyer e instalações não atribuídas.  
 A AppsFlyer oferece suporte a dois padrões de mapeamento:
 
+<div id="half-and-half" />
+
 #### **Meio a meio**
 
 * Divide os CVs em duas metades:
@@ -1172,12 +1232,16 @@ A AppsFlyer oferece suporte a dois padrões de mapeamento:
   * A metade superior duplica a metade inferior, mas marca explicitamente os valores como atribuídos pelos métodos clássicos de atribuição da AppsFlyer.
     * Lógica: Duplicatas dos CVs inferiores com `af_attribution_flag=true`
 
+<div id="pairing" />
+
 #### **Emparelhamento**
 
 * Agrupa os CVs em pares.
   * Cada CV é seguido imediatamente por outro que representa o mesmo nível de engajamento, mas é explicitamente marcado e atribuído por atribuição clássica.
   * Garante a ordem crescente dos CVs e representa consistentemente níveis crescentes de engajamento do usuário
   * Lógica: Cada CV é seguido por sua duplicata marcada com `af_attribution_flag=true`
+
+<div id="how-to-configure-mapping-patterns" />
 
 #### Como configurar padrões de mapeamento
 
@@ -1191,6 +1255,8 @@ Para usar padrões de mapeamento:
    * **Emparelhamento**
 5. Revise a prévia atualizada do esquema e a visualização de calendário.
 6. Salve seu esquema.
+
+<div id="faq" />
 
 #### **Perguntas frequentes**
 

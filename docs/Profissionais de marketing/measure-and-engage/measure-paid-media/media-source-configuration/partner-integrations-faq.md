@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral**: encontre respostas para perguntas frequentes sobre o Marketplace de parceiros da AppsFlyer.
 
+<div id="use-partner-integrations" />
+
 ## Usando o Marketplace de parceiros
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -54,6 +56,8 @@ A integração em si é feita na página de configuração da integração do pa
 Veja <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">como se integrar com um novo parceiro do Marketplace de parceiros</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Solução de problemas
 

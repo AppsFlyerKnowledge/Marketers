@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Visão geral:** Adquant, um parceiro integrado da AppsFlyer (anteriormente conhecido como Facebook Marketing Partner), é um provedor líder de soluções de inteligência artificial para ajudar profissionais de app marketing a ampliar seu crescimento.
 
+<div id="setting-up-adquant" />
+
 ## Configurando o Adquant
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -45,6 +47,8 @@ x-zendesk:
 
 Saiba mais sobre as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner">integrações de parceiros</Anchor>.
 
+<div id="in-app-events" />
+
 ### https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg
 
 1. Para enviar postbacks de eventos in-app para a Bidalgo, ative **Postbacks de eventos in-app**.
@@ -52,6 +56,8 @@ Saiba mais sobre as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-i
 3. Clique em **salvar**.
 
 [![meta_campaign_management_partner_settings.png](https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png)](https://support.appsflyer.com/hc/article_attachments/49929492633489)
+
+<div id="configuring-on-adquant" />
 
 ## Configurando no Adquant
 

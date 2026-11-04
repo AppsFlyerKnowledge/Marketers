@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** Entre em contato com o suporte da AppsFlyer através do Chatbot para obter ajuda para solucionar problemas ou receber orientações sobre o produto. O chatbot também ajuda a abrir chamados para a equipe certa, quando necessário.
 
+<div id="overview" />
+
 ## Visão geral
 
 O Chatbot envia seus problemas para a equipe certa, incluindo questões relacionadas ao aplicativo, gestão da conta, cobrança, orientações sobre o produto e suporte técnico. Durante as etapas do chatbot, você deve fornecer os detalhes necessários para receber a assistência certa, reduzindo a necessidade de informações adicionais.
@@ -35,6 +37,8 @@ O Chatbot envia seus problemas para a equipe certa, incluindo questões relacion
    <Image alt="Captura de tela 2026-08-26 às 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
    3. Clique em **Enviar**
+
+<div id="viewing-support-tickets" />
 
 ## Acesse os tickets de suporte
 

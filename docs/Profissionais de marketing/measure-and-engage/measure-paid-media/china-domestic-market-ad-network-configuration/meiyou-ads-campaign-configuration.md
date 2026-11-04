@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Em resumo:** o Meiyou Ads é um parceiro integrado de ad network da AppsFlyer.
 
+<div id="setting-up-meiyou-ads" />
+
 ## Configurando o Meiyou Ads
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -45,9 +47,13 @@ A janela de configuração do Meiyou Ads inclui 3 abas ativas: Integração, lin
 
 <Accordion title="Guia Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -59,9 +65,13 @@ O Meiyou Ads se conecta à AppsFlyer por meio de uma **chave** exclusiva. Se voc
 
 Alterne para LIGADO se quiser atribuir instalações view-through do Meiyou Ads. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 <Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="548px" />
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -96,6 +106,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao Meiyo
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -117,6 +129,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de exibição
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas à Meiyou Ads.
@@ -127,9 +141,13 @@ Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lo
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
 
+<div id="click-attribution-link" />
+
 ### Link de atribuição de cliques
 
 Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie para o Meiyou Ads para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Janela de retrospetiva da atribuição por visualização
 
@@ -142,6 +160,8 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição por visualização aqui</Anchor>.
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### Link de atribuição para impressões
 
@@ -173,6 +193,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Nesta aba, você pode selecionar as permissões a serem concedidas ao Meiyou Ads, seja o parceiro uma ad network, uma agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para o Meiyou Ads, a aba de permissões está ativa e você pode conceder controle ao Meiyou Ads.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

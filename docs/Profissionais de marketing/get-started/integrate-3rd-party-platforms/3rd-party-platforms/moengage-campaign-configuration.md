@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **Em resumo:** MoEngage, uma plataforma de engajamento do cliente de terceiros integrada ao AppsFlyer, é uma plataforma de engajamento do cliente agentic desenvolvida para o mundo mobile-first.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-moengage" />
 
 ## Configurando a MoEngage
 
@@ -48,9 +52,13 @@ Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-inte
 
 A aba **Integração** é dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para habilitar a configuração dos parâmetros de integração. O botão deve permanecer ativado enquanto você trabalhar com o Medialyzer. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -62,6 +70,8 @@ A MoEngage se conecta ao AppsFlyer por meio de um ID do Aplicativo, uma chave do
 
 ![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para a MoEngage após instalações de usuários. Escolha uma das seguintes opções:
@@ -70,6 +80,8 @@ A AppsFlyer pode enviar postbacks automáticos para a MoEngage após instalaçõ
 * **Todos os canais de mídia, incluindo orgânicos**: Envie postbacks para eventos atribuídos a qualquer parceiro e para eventos orgânicos.
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+
+<div id="note" />
 
 > 📘 **Nota**
 >

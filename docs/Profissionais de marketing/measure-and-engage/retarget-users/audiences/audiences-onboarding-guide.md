@@ -26,6 +26,8 @@ x-zendesk:
 
 ## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
 
+<div id="about-audiences" />
+
 ## Sobre Audiências
 
 Com o <Anchor target="_blank" href="/marketers/pt/docs/audiences-guide">Audiences</Anchor> da AppsFlyer, pode facilmente criar segmentos de audiência e conectá-los tanto aos seus canais de publicidade próprios quanto pagos, permitindo-lhe realizar campanhas personalizadas para um melhor envolvimento e desempenho.
@@ -33,6 +35,8 @@ Com o <Anchor target="_blank" href="/marketers/pt/docs/audiences-guide">Audience
 Uma audiência é um segmento dos utilizadores da sua app (passados ou presentes) que correspondem aos critérios específicos que definiu. Os critérios podem basear-se em características pessoais, comportamento, fonte de atribuição, receita gerada, localização geográfica, tipo de dispositivo e muito mais, permitindo estratégias de marketing altamente personalizadas.
 
 Pode criar uma audiência personalizada do zero, importar uma da sua própria base de dados, ou escolher dos nossos "Públicos Sugeridos" personalizáveis e que poupam tempo, baseados nas melhores práticas do setor. As audiências são então conectadas aos seus parceiros de media, que enviam identificadores de membros aos parceiros e permitem a criação da audiência no lado do parceiro. Isto permite-lhe exibir um anúncio perfeitamente adaptado à audiência. As audiências são automaticamente atualizadas diariamente e partilhadas com os parceiros de forma dinâmica e contínua. Além disso, após lançar as suas campanhas, pode monitorizar as métricas de desempenho da campanha diretamente no Audiences.
+
+<div id="audiences-onboarding" />
 
 ## Integração de Audiências
 

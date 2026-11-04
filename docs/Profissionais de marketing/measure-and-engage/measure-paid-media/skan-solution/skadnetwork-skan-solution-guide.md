@@ -31,6 +31,8 @@ x-zendesk:
 
 A SKAdNetwork (SKAN), parte do iOS da Apple, ajuda os anunciantes a mensurar a performance da campanha, ao mesmo tempo em que mantém a privacidade do usuário. A SKAN funciona sem o IDFA ou outro ID de anúncio. A SKAN funciona sem a necessidade de consentimento à ATT.
 
+<div id="tip" />
+
 > 👍 **Observação**
 >
 > * A partir do iOS 15, recomendamos que você envie <Anchor target="_blank" href="/marketers/pt/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">cópias de postback da SKAN</Anchor> para a AppsFlyer. Isso permite que a AppsFlyer verifique se os valores de conversão em postbacks não foram manipulados.
@@ -65,6 +67,8 @@ Este artigo descreve as características relevantes da infraestrutura e da solu�
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## Solução para SKAN da AppsFlyer
 
 A AppsFlyer fornece resultados agregados de atribuição do iOS usando postbacks da SKAN. Esses postbacks são enviados pelo iOS para ad networks, que os encaminham para a AppsFlyer. Os postbacks contêm registros de atribuição anônimos enriquecidos com um valor de conversão (CV) definido pelo anunciante. O CV é uma medida da qualidade do usuário durante uma janela inicial de pós-instalação.
@@ -78,6 +82,8 @@ A solução da AppsFlyer para SKAN fornece aos anunciantes:
 <div id="principles-and-flow" />
 
 <Accordion title="Princípios e fluxo">
+
+<div id="skan-attribution-flow" />
 
 #### **Fluxo de atribuição da SKAN**
 
@@ -123,6 +129,8 @@ O <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio">Conve
 | Flexível | <Anchor target="_blank" href="/marketers/pt/docs/skan-cv-decode-map-your-cv-to-events">Decode</Anchor> | <ul><li>Crie o seu próprio mapeamento de eventos para CVs e configure-o manualmente no seu app. Use essa opção se não for possível integrar o SDK da AppsFlyer ao seu aplicativo. Para usar o Decode, vá para o **SKAN Conversion Studio,** clique nas opções (⋮), selecione Enviar arquivo de mapeamento de decodificação personalizado.</li></ul> | 12-1512h (63 dias) |
 
 </Accordion>
+
+<div id="additional-skadnetwork-information" />
 
 ## Informações adicionais sobre a SKAdNetwork
 
@@ -225,6 +233,8 @@ As métricas orgânicas no dashboard da SKAdNetwork são calculadas usando o seg
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## Parceiros integrados da SKAN
 
 <div id="recording-ad-revenue" />
@@ -256,6 +266,8 @@ Confira as várias opções e requisitos na tabela a seguir
 | <span id="inapp-event-mapping-verification"></span>Verificação de mapeamento de eventos in-app | **<span id="1611499069.009700"></span>Ação necessária**: você deve <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#métodos-de-mapeamento">mapear seus eventos in-app</Anchor> com os nomes de eventos de parceiros correspondentes, de modo que o parceiro registre os postbacks corretamente.<br /><br />Para cada um dos parceiros que executam campanhas da SKAdNetwork, verifique se o evento no aplicativo está definido de acordo com o tipo de mensuração do aplicativo selecionado.<br /><br />**Para verificar e alterar mapeamentos de eventos in-app do parceiro**:<ol><li>Na AppsFlyer, acesse **colaborar**  >  **integrações ativas**.</li><li>Selecione o parceiro.</li><li>Acesse a aba de **Integração**.</li><li>Confirme e, se necessário, faça alterações nas configurações da seguinte forma:<ol><li>Ative o **postback de eventos in-app**.</li><li>Certifique-se de que os eventos in-app, os **nomes de eventos SDK** configurados na mensuração da SKAdNetwork, estão mapeados para os **identificadores de eventos dos parceiros**.</li></ol></li><li>Clique em **Salvar integração**.</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** A Rokuads\_int é uma integração de SRN que permite que os anunciantes integrem seu app mobile ou de CTV à Roku Ads e recebam atribuição e dados de eventos para suas campanhas nessa plataforma.
 
+<div id="about-roku-ads-attribution" />
+
 ## Sobre a atribuição da Roku Ads
 
 A Roku é uma ad network única que possui um inventário de anúncios disponível tanto para TV Conectada (CTV) quanto para aplicativos mobile. A integração de SRN entre AppsFlyer e Roku Ads permite que os anunciantes mensurem várias jornadas de usuários, incluindo:
@@ -31,9 +33,13 @@ A Roku é uma ad network única que possui um inventário de anúncios disponív
 * Mobile para mobile: anúncios de aplicativos mobile que impulsionam instalações e eventos de aplicativos mobile.
 * CTV para mobile &lt; > mobile para CTV: impressões de anúncios em uma plataforma, que impulsionam instalações e eventos em outra plataforma.
 
+<div id="roku-attribution-flow" />
+
 ### Fluxo de atribuição da Roku
 
 [<Image alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39539297351697)
+
+<div id="setting-up-roku-ads-integration-for-advertisers" />
 
 ## Configurando a integração da Roku Ads para anunciantes
 
@@ -55,6 +61,8 @@ A Roku é uma ad network única que possui um inventário de anúncios disponív
 
 <Accordion title="Aba Integração">
 
+<div id="general-settings" />
+
 #### Configurações gerais
 
 * **ID do grupo de eventos:** Insira o ID do grupo de eventos para conectar seu aplicativo à AppsFlyer.
@@ -64,12 +72,16 @@ A Roku é uma ad network única que possui um inventário de anúncios disponív
 * **Compartilhamento de dados de correspondência avançada:** Quando ativado, a Roku recebe campos de correspondência avançada, como e-mail com hash, número de telefone com hash, primeiro nome com hash e sobrenome com hash, se esses campos estiverem incluídos nas informações do evento enviadas à AppsFlyer. Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/advanced-matching-data-sharing">Compartilhamento de dados de correspondência avançada (em inglês)</Anchor>.
 * **Uso limitado de dados:** ative essa opção para indicar que a Roku Ads deve limitar o uso de informações pessoais para um determinado evento em estados específicos dos EUA. Para mais informações, consulte a <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/8766138-limited-data-use">documentação da Roku Ads</Anchor>.
 
+<div id="install-attribution" />
+
 #### Atribuição de instalação
 
 Defina as diferentes janelas de atribuição para atribuir novas instalações (primeiros lançamentos) de usuários que visualizaram, clicaram ou interagiram com seu anúncio. **Atenção:** a atribuição de reinstalações (ou seja, qualquer instalação que não seja a configuração inicial no dispositivo) não está disponível.
 
 * Defina a **janela de lookback de click-through de instalação** para 1 a 23 horas ou 1 a 14 dias. **Atenção:** a Roku Ads recomenda que você configure essa janela para 14 dias.
 * [Opcional] Ative a **atribuição de view-through de instalação**e defina a **janela de lookback** para 1 a 23 horas ou 1 a 14 dias. **Atenção:** a Roku Ads recomenda 14 dias.
+
+<div id="re-engagement-attribution" />
 
 #### Atribuição de reengajamento
 
@@ -79,6 +91,8 @@ Defina as diferentes janelas de atribuição para atribuir novas instalações (
 
 Saiba mais sobre as regras e janelas de reengajamento.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignorar usuários ativos para retargeting
 
 Defina um período de tempo para ignorar reengajamentos e reatribuições de usuários que inicializaram o seu aplicativo. Isso significa que a atividade realizada durante o período de tempo escolhido não é atribuída. Para mais informações, veja <Anchor target="_blank" href="/marketers/pt/docs/set-retargeting-inactivity-window#período-de-inatividade">período de inatividade</Anchor>.
@@ -86,12 +100,16 @@ Defina um período de tempo para ignorar reengajamentos e reatribuições de usu
 1. Ative a opção **Ignorar usuários ativos para retargeting**.
 2. Defina a **janela de inatividade**.
 
+<div id="cross-platform-attribution" />
+
 #### Atribuição cross-platform
 
 A atribuição cross-platform fica ativada por padrão para essa integração.
 
 * Defina a **janela de lookback** para 1 a 23 horas ou 1 a 3 dias.
 * A janela de prioridade igual entre plataformas está definida como 3 horas. Quando ativada, as impressões cross-platform relatadas pela Roku possuem a mesma prioridade que os cliques de outras ad networks.
+
+<div id="in-app-events-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -154,10 +172,14 @@ Depois de habilitar as permissões para a Roku Ads, você pode adicionar membros
 2. Insira o e-mail do membro da equipe da ad network
 3. Clique em **Adicionar**.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Ao permitir que a Roku Ads configure a integração e faça alterações nos postbacks de eventos in-app, você permite que a ad network acesse todos os eventos de atribuição, incluindo o tráfego orgânico e não orgânico de todos os canais de mídia.
 > * As alterações feitas pela Roku Ads substituem a configuração atual, mesmo que você (o anunciante) tenha sido responsável por defini-las.
+
+<div id="types-of-permissions-advertisers-can-grant-to-roku-ads" />
 
 #### Tipos de permissões que os anunciantes podem conceder à Roku Ads
 
@@ -176,9 +198,13 @@ Depois de habilitar as permissões para a Roku Ads, você pode adicionar membros
 
 </Accordion>
 
+<div id="setting-up-roku-ads-integration-for-agencies" />
+
 ## Configurando a integração da Roku Ads para agências
 
 Agências que trabalham em nome de anunciantes podem ativar a integração com o Snapchat e começar a receber atribuição por suas campanhas. No entanto, essa integração tem algumas limitações para agências.
+
+<div id="agency-limitations" />
 
 ### Limitações da agência
 
@@ -191,6 +217,8 @@ Agências que trabalham em nome de anunciantes podem ativar a integração com o
 2. Procure por **Roku Ads (rokuads\_int)** e selecione-a.
 3. Insira o **Roku Ads Account ID** da sua agência. Isso identifica o tráfego da agência e o distingue do tráfego do anunciante.
 4. Clique em **Salvar integração**.
+
+<div id="warning" />
 
 > ❗️ **Aviso**
 >

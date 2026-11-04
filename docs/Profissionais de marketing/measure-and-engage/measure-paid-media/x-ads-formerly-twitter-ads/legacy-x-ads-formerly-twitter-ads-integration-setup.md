@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** integre sua conta do X Ads com a AppsFlyer para exibir dados de atribuição de campanhas do X Ads.
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Conectando sua conta do X Ads à AppsFlyer
 
 <Accordion title="Assista">
@@ -31,6 +33,8 @@ x-zendesk:
 </Accordion>
 
 <Accordion title="Leia">
+
+<div id="before-you-begin" />
 
 > 📘 **Antes de começar:**
 >
@@ -64,6 +68,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="x-ads-attribution-setup" />
+
 ## Configuração de atribuição do X Ads
 
 Para acessar uma descrição detalhada do header da página de configuração do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner">aqui</Anchor>.
@@ -74,11 +80,15 @@ Para acessar uma descrição detalhada do header da página de configuração do
 
 A **aba de integração** se divide em diferentes seções, conforme descrito abaixo. O <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">parceiro deve ser ativado</Anchor> na primeira visita para permitir sua configuração.
 
+<div id="ad-account-connected" />
+
 ### Conta de anúncios conectada
 
 Selecione as contas para ativar a atribuição.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+
+<div id="click-through-attribution" />
 
 ### Atribuição de click-through
 
@@ -88,6 +98,8 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 30 dias. Recomendamo
 
 ![Twitter_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### Janela de retrospetiva da atribuição por visualização
 
 Essa barra deslizante permite definir o **tempo máximo desde a impressão até a instalação**. Somente instalações (primeiras aberturas) que acontecem durante essa janela de lookback, após uma impressão de anúncio, são atribuídas ao X Ads, desde que não haja nenhum outro clique em anúncio relevante.
@@ -96,19 +108,27 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias. Recomendamo
 
 ![Twitter_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="re-engagement-settings" />
+
 ### Configurações de reengajamento
 
 Para campanhas de retargeting no X Ads, a AppsFlyer oferece **Reengajamento** somente para a mensuração. Nesse caso, isso representa o engajamento de um usuário que já tem o app instalado com uma campanha de retargeting. **Atualmente, a mensuração de reatribuição não é compatível com o X Ads.**
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Certifique-se de que o retargeting esteja habilitado para o aplicativo na página de configurações do aplicativo. Para mais informações, clique <Anchor target="_blank" href="/marketers/pt/docs/app-settings#reengagement-attribution">aqui</Anchor>.
+
+<div id="re-engagement-click-through-lookback-window" />
 
 #### Janela de lookback de reengajamento por click-through
 
 Defina a duração da **Janela de lookback de reengajamento por clique** (o período máximo após o clique em um anúncio, durante o qual um usuário redirecionado pode ser atribuído ao anúncio). Você pode definir o valor em horas (até 23) ou dias (1 a 30).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Janela de lookback de reengajamento por view-through
 
@@ -118,11 +138,15 @@ Em seguida, defina a duração da **Janela de lookback de reengajamento por exib
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### Janela de reengajamento
 
 Defina a duração da **Janela de reengajamento** (o período em que os eventos in-app do usuário são atribuídos à fonte de mídia de retargeting). Você pode definir os valores em dias (1 a 90), horas (até 23) ou até mesmo vitalícios:
 
 ![Twitter-reengagement-window.png](https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png)
+
+<div id="in-app-event-postback-settings" />
 
 ### Configurações de eventos in-app
 
@@ -141,7 +165,7 @@ Nessa seção você pode mapear os eventos da AppsFlyer com o parceiro por meio 
 | --- | --- |
 | **Evento AppsFlyer** | O nome do evento, conforme recebido do SDK integrado no aplicativo ou de eventos de servidor para servidor.<br />**Dica**: não encontrou o evento que está procurando?<ul><li>Certifique-se de ativar o evento em um dispositivo com uma instalação não orgânica e verifique novamente.</li><li>Digite-o em **Evento da AppsFlyer**, depois clique em **Criar personalizado**. Leia mais sobre o <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#eventos-personalizados">mapeamento de eventos personalizados</Anchor>.</li></ul> |
 | **Mapeado para evento do parceiro** | O nome ou ID único de cada evento, como definido pelo parceiro. Possíveis <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#mapeamento-de-eventos">configurações de mapeamento</Anchor>:<ul><li>**Campo de texto:** Obtenha o ID do evento correspondente no parceiro.</li><li>**Caixa suspensa:** selecione o evento predefinido mais adequado.</li><li>**Como está**: envie os eventos como estão, sem mapeamento de nomes.</li></ul> |
-| **para usuários de** | Selecione a opção de envio para o evento:<br /><br /><br /><br />**<span id="h_01HDJVBAEZATGM580CNC7BCVTN"></span>Nota**<br />Para que o X Ads receba postbacks atribuídos à agência, você deve selecionar **Todas as fontes de mídia, incluindo orgânicas**. Caso contrário, o X Ads não receberá tais postbacks.<ul><li>**Somente este parceiro**: enviar postbacks somente quando este evento for atribuído a este parceiro.</li><li>**Todas as fontes de mídia, incluindo orgânicas**: envie postbacks para eventos atribuídos a qualquer parceiro e eventos orgânicos.</li></ul> |
+| **para usuários de** | Selecione a opção de envio para o evento:<br /><br /><br /><br />**<span id="note"></span><span id="h_01HDJVBAEZATGM580CNC7BCVTN"></span>Nota**<br />Para que o X Ads receba postbacks atribuídos à agência, você deve selecionar **Todas as fontes de mídia, incluindo orgânicas**. Caso contrário, o X Ads não receberá tais postbacks.<ul><li>**Somente este parceiro**: enviar postbacks somente quando este evento for atribuído a este parceiro.</li><li>**Todas as fontes de mídia, incluindo orgânicas**: envie postbacks para eventos atribuídos a qualquer parceiro e eventos orgânicos.</li></ul> |
 | **incluindo** | <ul><li>**Nenhum dado (padrão)**: enviar somente o evento em si sem o valor do evento.</li><li>**Valores e receita**: enviar todos os parâmetros do evento, **incluindo** o valor da receita (se existir no evento).</li><li>**Valores sem receita**: envie todos os parâmetros **excluindo** o valor da receita.</li></ul> |
 
 5. [Opcional] Clique em <Image alt="conditional-iae-postbacks-icon.png" src="https://files.readme.io/575c9ab0dd82a125319591072b17604a7f9d1b71fff6baff4124d99edc1a7fc7-16570673855121.png" width="30px" /> para definir condições para enviar determinados eventos in-app ao parceiro.  
@@ -195,6 +219,8 @@ Nessa aba, você pode selecionar as permissões a serem concedidas ao X Ads, ind
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
 
+<div id="ad-network-permissions" />
+
 ### Permissões da ad network
 
 * **Permitir a configuração da integração** – permite que o parceiro configure a aba de integração (exceto postbacks de evento in-app)
@@ -207,11 +233,15 @@ Use essas chaves seletoras para conceder permissões à rede de anúncios para g
 
 Saiba mais sobre como conceder <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad network.</Anchor>
 
+<div id="agency-permissions" />
+
 ### Permissões da agência
 
 Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">conceder permissões de agência</Anchor>.
 
 </Accordion>
+
+<div id="advanced-x-ads-setup-video" />
 
 ## Vídeo de configuração avançada do X Ads
 

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Resumo:** Anunciantes e agências podem verificar o status das integrações de custo e receita de anúncios.
 
+<div id="cost-and-ad-revenue-integration-status" />
+
 ## Status da integração de custo e receita de anúncios
 
 * O dashboard exibe o status operacional atual das suas integrações de custo/receita de anúncios.
@@ -36,6 +38,8 @@ x-zendesk:
 * Para integrações que exigem ações corretivas, a ação necessária é exibida.
 * Para ver o status de custo e receita de anúncios, na AppsFlyer, no menu lateral, selecione **Configurações** > **Status de custo & receita de anúncios**.
 * A imagem e a tabela a seguir detalham os componentes do dashboard.
+
+<div id="cost--ad-revenue-status-dashboard" />
 
 #### Dashboard de status de custo & receita de anúncios
 

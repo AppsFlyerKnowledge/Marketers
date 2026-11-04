@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** Use a página de **configurações da conta** para gerenciar seu perfil pessoal, suas configurações no nível da conta e seus recursos de IA a partir de um único local.
 
+<div id="about-account-settings" />
+
 ## **Sobre as configurações da conta**
 
 A página de **configurações da conta** possui três abas:
@@ -29,15 +31,21 @@ A página de **configurações da conta** possui três abas:
 * [**Conta**](/docs/account-settings#conta): configurações da conta
 * [**Recursos de IA**](/docs/account-settings#recursos-de-ia): controles para o acesso e uso de produtos impulsionados por IA
 
+<div id="profile" />
+
 ## **Perfil**
 
 No seu **perfil**, você encontra as informações pessoais da sua conta, como nome da conta, e-mail do proprietário, site e ID da conta.
 
 Você pode revisar as informações da sua conta e atualizar os campos de perfil compatíveis.
 
+<div id="account" />
+
 ## **Conta**
 
 Em **conta**, você encontra suas configurações de segurança. Configurações adicionais podem ser adicionadas ao longo do tempo.
+
+<div id="unique-dev-key" />
 
 ### <Anchor target="_blank" href="/marketers/pt/docs/dev-key-management">**Dev key exclusiva**</Anchor>
 
@@ -47,6 +55,8 @@ Quando a opção **criar uma dev key exclusiva por aplicativo para aplicativos f
 
 Atenção: essa configuração se aplica apenas a apps criados depois que a configuração foi ativada. Ela não altera as dev keys dos aplicativos existentes.
 
+<div id="ai-capabilities" />
+
 ## **Recursos de IA**
 
 Em **recursos de IA**, os administradores podem gerenciar quais produtos impulsionados por IA estão disponíveis para a conta.
@@ -54,6 +64,8 @@ Em **recursos de IA**, os administradores podem gerenciar quais produtos impulsi
 ### <Anchor target="_blank" href="/marketers/pt/docs/ai-assistant">AI Assistant</Anchor>
 
 O AI Assistant é um analista virtual, que também pode ser usado para acessar informações sobre a AppsFlyer. Use-o para descobrir insights, mensurar sua performance, identificar melhores e piores resultados, explorar tendências de campanha e acessar insights visuais em tabelas e gráficos, diretamente de qualquer página na plataforma.
+
+<div id="appsflyer-mcp" />
 
 ### <Anchor target="_blank" href="/marketers/pt/docs/beta-appsflyer-mcp">MCP da AppsFlyer</Anchor>
 
@@ -84,6 +96,8 @@ Desativação do Agent Hub:
 * Todos os agentes existentes são excluídos permanentemente e não podem ser restaurados.
 * Qualquer agente ativo é interrompido.
 * Se o Agent Hub for ativado novamente mais tarde, os usuários poderão ter acesso a ele novamente, mas terão que criar os agentes do zero.
+
+<div id="permissions" />
 
 ## **Authorization: Bearer**
 

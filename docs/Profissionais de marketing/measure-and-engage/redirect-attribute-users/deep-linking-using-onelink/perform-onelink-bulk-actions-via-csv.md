@@ -32,6 +32,8 @@ Os links em massa permitem que você crie e exiba links criados em massa. Esses 
    2. **Criar um template do OneLink** - Um template do OneLink é necessário para criar uma coleção. Consulte <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template">os templates do OneLink</Anchor>.
    3. **Upgrade** -  links em massa não estão disponíveis com seu pacote atual. Entre em contato com seu CSM ou escreva para [hello@appsflyer.com](mailto:hello@appsflyer.com) sobre como atualizar seu pacote.
 
+<div id="creating-your-first-collection" />
+
 ## Criando sua primeira coleção
 
 1. Clique em **Começar.**
@@ -41,6 +43,8 @@ Os links em massa permitem que você crie e exiba links criados em massa. Esses 
 5. Faça upload do seu arquivo CSV. Você pode usar o seguinte <Anchor target="_blank" href="https://cdn.appsflyer.com/onelink-bulk-links-mgmt/sample_file.csv">exemplo de CSV</Anchor> como guia.  
    Consulte [Formato de upload](/docs/perform-onelink-bulk-actions-via-csv#upload-format) para garantir que seu CSV seja compatível e carregado com sucesso. Depois que o arquivo CSV é carregado, ele é validado. Se houver linhas inválidas, um relatório de validade CSV estará disponível para download para ajudar a corrigir seu arquivo. Siga as instruções na IU e carregue um arquivo corrigido.
 6. Clique em **Criar coleção.**
+
+<div id="managing-your-bulk-links-with-collections" />
 
 ## Gerenciando seus links em massa com coleções
 
@@ -52,6 +56,8 @@ Links em massa são gerenciados em coleções.
 * A seção **Coleções** permite que você crie uma nova coleção e execute outras ações em suas coleções de links atuais.
 * Se houver mais de sete coleções, você poderá pesquisar e filtrar sua lista de coleções.
 * Máximo de 2000 links por coleção
+
+<div id="other-actions" />
 
 ## Outras ações
 
@@ -85,6 +91,8 @@ Para fazer download de uma coleção:
 3. Selecione o domínio para a saída de URL curto.
 4. Clique em **Download**.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > A AppsFlyer recomenda o uso de domínios de marca, pois eles podem melhorar o desempenho da campanha gerando confiança e promovendo o conhecimento da marca. <Anchor target="_blank" href="/marketers/pt/docs/brand-onelink-with-your-domain">Saiba mais aqui.</Anchor>
@@ -105,6 +113,8 @@ Você pode criar imagens de QR code para toda a coleção.
    * **Formato do nome do arquivo do QR code:** selecione o parâmetro cujos valores serão usados como prefixo dos nomes de arquivo da imagem do QR code. Certifique-se de que os valores desse parâmetro adicionem um contexto significativo aos nomes dos arquivos, ajudando você a identificar a finalidade de cada imagem de QR code.
 4. Clique em **Generate.** Você pode monitorar o processo de geração do arquivo no painel **Download QR code images**.
 5. Para baixar o arquivo ZIP, clique no ícone de download <Image alt="download-bulk.png" src="https://files.readme.io/8436aed2633bbed2f6cb65c00690711766c153c97042b5b157c199333e8723c2-21656949409041.png" width="18px" />.
+
+<div id="note" />
 
 > 📘 **Observação**
 >
@@ -150,6 +160,8 @@ A opção de edição de links está disponível quando:
    * Depois que o arquivo CSV é carregado, ele é validado.
    * Se houver linhas inválidas, um relatório de validade CSV estará disponível para download para ajudar a corrigir seu arquivo. Siga as instruções na IU e carregue um arquivo corrigido.
 6. Clique em **Atualizar links**.
+
+<div id="notes" />
 
 > 📘 **Observações**
 >
@@ -205,11 +217,15 @@ Se uma coleção estiver vazia e você tiver permissões de acesso de aplicativo
 1. As agências precisam adicionar manualmente o parâmetro `af_prt` aos seus links.
 2. Se uma coleção estiver vazia e você tiver permissões de acesso de aplicativo para pelo menos um dos aplicativos móveis do template do OneLink relacionados à coleção, ela poderá ser excluída clicando em **opções de menu -> Excluir coleção**.
 
+<div id="important-notes" />
+
 > 📘 **Observações importantes**
 >
 > * Certifique-se de que você deseja excluir a coleção. Excluir uma coleção com links ativos fará com que os links parem de funcionar, o que significa que os usuários que clicarem neles não serão atribuídos nem redirecionados corretamente. **Excluir uma coleção é irreversível.**
 > * Se você quiser manter um registro dos links excluídos, poderá fazer download da coleção antes de excluí-la. **Para baixar como arquivo CSV:**
 >   Clique em **Baixar a coleção** na mensagem de confirmação.
+
+<div id="empty-collections" />
 
 ### Parâmetros CSV
 
@@ -222,7 +238,11 @@ Coleções vazias também podem ser excluídas da maneira descrita acima.
 
 </Accordion>
 
+<div id="general-information" />
+
 ## Informações gerais
+
+<div id="note-1" />
 
 > 📘 **Observação:**
 >
@@ -253,6 +273,8 @@ Para garantir que seu CSV seja carregado sem erros, certifique-se de que seu arq
 * Mesmo que um esquema de URI seja definido no template do OneLink, para links criados em massa, o parâmetro af\_dp com o esquema de URI deve ser especificado em seu arquivo CSV.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

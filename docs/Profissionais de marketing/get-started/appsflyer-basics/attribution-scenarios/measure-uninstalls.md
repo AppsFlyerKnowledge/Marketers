@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo:** mensure a taxa de desinstalação do seu aplicativo e identifique quais canais (fontes de mídia, campanhas, criativos e localizações) atraem usuários de alto valor.
 
+<div id="overview" />
+
 ## Visão geral
 
 Para entender o valor dos usuários do seu aplicativo, você deve analisar tanto as taxas de instalação quanto de desinstalação. A métrica de desinstalação pode ajudar você a mensurar a performance do seu aplicativo, além de mostrar quando e por que os usuários abandonam seu app.
+
+<div id="how-does-it-work" />
 
 ### Como funciona?
 
@@ -39,6 +43,8 @@ Para entender o valor dos usuários do seu aplicativo, você deve analisar tanto
 > **Nota**
 >
 > As métricas de desinstalação estão disponíveis no dashboard unificado e na visão de aquisição de usuários.
+
+<div id="how-to-use-uninstall-data" />
 
 ## Como usar os dados de desinstalação
 
@@ -111,6 +117,8 @@ Veja os métodos para excluir usuários:
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## Configurando a mensuração de desinstalações
 
 O processo para configurar a métrica de desinstalação requer a colaboração entre o profissional de marketing e o desenvolvedor. As instruções de implementação variam conforme o sistema operacional do seu aplicativo.
@@ -143,9 +151,13 @@ O fluxo de trabalho entre o profissional de marketing e o desenvolvedor funciona
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## Processos de implementação
 
 A implementação exige que o desenvolvedor mobile integre um mecanismo que responda às notificações push no seu aplicativo. As instruções de implementação variam de acordo com o sistema operacional.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Conectar o Firebase Cloud Messaging à AppsFlyer (Android)
 
@@ -224,6 +236,8 @@ A mensuração de desinstalações com o Firebase Messaging é compatível com o
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### Configurar a mensuração de desinstalações na AppsFlyer
 
 <Tabs>
@@ -272,6 +286,8 @@ Para configurar a mensuração de desinstalações na AppsFlyer:
 </Tab>
 </Tabs>
 
+<div id="testing-uninstall-measurement" />
+
 ## Testando a mensuração de desinstalações
 
 Assim que os processos de implementação estiverem concluídos, você pode instalar e desinstalar o aplicativo para verificar se as desinstalações são registradas corretamente. As desinstalações e suas respectivas taxas são apresentadas no dashboard de visão geral.
@@ -313,6 +329,8 @@ Ao testar aplicativos iOS, lembre-se:
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## Mapeando o evento de desinstalação
 
  ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png) 
@@ -324,10 +342,14 @@ Lembre-se:
 * A AppsFlyer só pode enviar o postback se o evento realmente ocorrer e for registrado por ela.
 * Caso você não veja as desinstalações no dashboard de visão geral ou no relatório de dados brutos, isso significa que os postbacks de desinstalação não foram enviados para o parceiro, mesmo que o evento **af\_uninstall** tenha sido mapeado.
 
+<div id="limitations" />
+
 #### Limitações
 
 * Eventos de desinstalação não são incluídos nos relatórios de postback de eventos in-app.
 * Todos os parceiros aceitam o evento **af\_uninstall**. Se você deseja mapeá-lo para um parceiro, mas o evento não estiver disponível, entre em contato com seu parceiro ou mande um e-mail para hello@appsflyer.com.
+
+<div id="turning-off-uninstall-measurement" />
 
 ## Desativando a mensuração de desinstalações
 
@@ -346,6 +368,8 @@ Se uma certificação P12 for disponibilizada e validada, a mensuração de desi
 </Tabs>
 
 **Observação:** Para que uma desinstalação seja informada, a opção de **Enable uninstall measurement** deve estar habilitada no momento em que o aplicativo é instalado. As instalações que ocorrem quando a opção **Enable uninstall measurement** está desabilitada não são informadas.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **Para desativar a mensuração de desinstalação**:
 

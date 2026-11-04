@@ -24,15 +24,21 @@ x-zendesk:
 ---
 > **Resumo:** entenda como promover, atribuir e mensurar instalações de aplicativos de acordo com as visualizações de anúncios em outras plataformas. Por exemplo, instalações de aplicativos mobile para anúncios visualizados em dispositivos de CTV, instalações de aplicativos de console de jogos para anúncios visualizados em dispositivos mobile ou desktops (web) e instalações de aplicativos de CTV para anúncios visualizados em dispositivos mobile ou desktop (web).
 
+<div id="overview" />
+
 ## Visão geral
 
 Com os links de atribuição cross-platform da AppsFlyer (URLs de impressão), você pode atribuir instalações de uma plataforma de acordo com as visualizações de anúncios exibidos em outra plataforma. Instalações múltiplas dentro da mesma residência podem ser atribuídas à mesma impressão entre plataformas.
+
+<div id="how-does-the-attribution-logic-work" />
 
 ### Como funciona a lógica de atribuição?
 
 * As impressões são identificadas no AppsFlyer pelo ID do modelo OneLink e atribuídas a cada plataforma definida no modelo.
 * As instalações são identificadas pelo aplicativo e pela plataforma.
 * Lógica de correspondência: as impressões no nível do modelo são associadas ao lançamento específico do aplicativo por meio de atribuição probabilística. Qualquer variante do aplicativo no grupo pode ser associada.
+
+<div id="create-a-onelink-templatefor-cross-platform-attribution" />
 
 ## Crie ou edite um template do OneLink para atribuição cross-platform
 
@@ -42,9 +48,13 @@ Um único template oferece suporte ao seu aplicativo em várias plataformas (o q
 2. Em **atribuição cross-platform**, clique no **botão de editar ->** **ativar atribuição cross-platform**
 3. No menus suspenso da plataforma relevante, selecione o aplicativo desejado. **Atenção:** cada aplicativo pode ser adicionado a apenas um template do OneLink que possui a atribuição cross-platform ativada. [<Image alt="Atribuição cross-platform.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
+<div id="set-up-cross-platform-partner-integration" />
+
 ## Configure a integração de parceiros cross-platform
 
 Para configurar a atribuição cross-platform usando URLs de impressão cross-platform, configure a integração do parceiro para cada aplicativo alvo.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -90,6 +100,8 @@ Para criar um <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integra
    ```
 8. Forneça o link para que a ad network o coloque por trás do anúncio exibido nas plataformas de CTV, PC ou console.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Para mídia própria e parceiros não integrados, adicione parâmetros conforme necessário.  <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">Saiba mais</Anchor> sobre os parâmetros que você pode adicionar para dados e métricas adicionais.
@@ -107,11 +119,15 @@ Você pode atribuir **prioridade equivalente** a cliques e impressões na atribu
 1. Na seção de configuração cross-platform, selecione a opção **Prioridade equivalente**.
 2. Clique em **Salvar**.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Ativar a opção de prioridade equivalente pode fazer com que a AppsFlyer priorize sua própria atribuição em relação a outras fontes. Use essa configuração com cautela e apenas se ela estiver alinhada com sua estratégia geral de atribuição.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 
@@ -127,6 +143,8 @@ Você pode atribuir **prioridade equivalente** a cliques e impressões na atribu
 | <span id="cross-platform-attribution-links-in-mobile-devices"></span>Links de atribuição cross-platform em dispositivos mobile | Quando um link de atribuição cross-platform é visualizado em um dispositivo mobile, a atribuição é determinada pela lógica padrão de modelagem probabilística, não pelo fluxo de atribuição cross-platform projetado para <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>, PC e consoles. Consequentemente, impressões mobile não são elegíveis para a implementação da [prioridade equivalente](#step-3-enable-equal-priority-for-crossplatform-impressions), [janela de lookback estendida](#attribution-window) ou [atribuição interna](#household-attribution), que estão disponíveis para impressões genuínas entre plataformas. |
 | <span id="agency-permissions"></span>Permissões da agência | Agências não podem ativar a "prioridade de atribuição equivalente entre plataformas". Essa configuração é copiada diretamente das configurações definidas para uma ad network específica. |
 
+<div id="discrepancies" />
+
 ## Discrepâncias
 
 AppsFlyer e tvScientific usam modelos de atribuição diferentes. Isso pode causar discrepâncias entre os dashboards da tvScientific e da AppsFlyer. Veja os motivos abaixo:
@@ -137,6 +155,8 @@ AppsFlyer e tvScientific usam modelos de atribuição diferentes. Isso pode caus
 | Janela de lookback | Até 30 dias | Até 72 horas |
 | Redirecionamento | Atribuição de novos usuários (instalações) e usuários recorrentes (reengajamentos) | Apenas novos usuários são atribuídos (instalações) |
 | Atribuição de custo | O custo é atribuído à impressão independentemente do sistema operacional | O custo é atribuído à impressão em diferentes sistemas para iOS e Android |
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

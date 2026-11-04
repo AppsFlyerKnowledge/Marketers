@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **Resumo:** Use as métricas de atividade no <Anchor target="_blank" href="/marketers/pt/docs/my-dashboards">My Dashboards</Anchor> para avaliar rapidamente a performance do seu aplicativo, identificar tendências de engajamento, analisar receitas e detectar problemas o quanto antes. Tudo isso em qualquer intervalo de datas e com maior precisão e flexibilidade.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > As métricas de receita líquida serão implementadas gradualmente para os clientes ao longo dos meses de julho e agosto de 2026. Se você ainda não as vê, nenhuma ação é necessária; elas ficarão disponíveis para a sua conta durante esse período. Consulte <Anchor target="_blank" href="/marketers/pt/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">Boletim: atualização das métricas de cohort e atividade no My Dashboards</Anchor>.
+
+<div id="about-activity-metrics" />
 
 ## Sobre as métricas de atividade
 
@@ -37,6 +41,8 @@ As métricas de atividade no My Dashboards permitem que os usuários analisem da
 * Personalize relatórios usando a análise **diária ou mensal** (usuários ativos).
 
 Atenção: No My Dashboards, o termo **atividade** foi renomeado para **atual**. Essa alteração esclarece que essas métricas refletem ações reais dos usuários durante o intervalo de datas selecionado e não estão conectadas à agregação de LTV. A opção "atual" também é o período padrão para Sessões, Lucro Bruto e Receita Total.
+
+<div id="dashboard-information" />
 
 ## Informações sobre o dashboard
 
@@ -56,6 +62,8 @@ Feito isso, você pode adicionar uma dimensão de "agrupar por" e selecionar seu
 
 Instruções detalhadas podem ser acessadas <Anchor target="_blank" href="/marketers/pt/docs/my-dashboards#add-metric">aqui</Anchor>.
 
+<div id="available-activity-metrics" />
+
 ## Métricas de atividade disponíveis
 
 * Todas as métricas (com a exceção das métricas de usuários ativos, usuários ativos nos últimos 31 dias, e DAU/MAU) também são compatíveis com períodos de cohort e LTV.
@@ -71,6 +79,8 @@ Instruções detalhadas podem ser acessadas <Anchor target="_blank" href="/marke
 | Primeiras visitas | Número de primeiras visitas a um aplicativo web. Contou como linhas onde conversion\_name = first\_visit. Disponível apenas para aplicativos web. |
 | Re-visitas | Número de visitas não-orgânicas que retornam a um aplicativo web. Contado como linhas onde conversion\_name = revisit. Disponível apenas para aplicativos web. |
 | Aquisições de usuários | Disponível para atribuição cross-platform ou aplicativos web. Para aplicativos web, as aquisições de usuários refletem as primeiras visitas, a menos que um evento de aquisição de usuário esteja configurado. Para aplicativos mobile, as aquisições de usuários correspondem às instalações. Ao visualizar vários aplicativos juntos: aquisições de usuários = instalações + primeiras visitas (ou o evento na web personalizado e configurado pelo cliente). |
+
+<div id="available-in-app-metrics" />
 
 ## Métricas disponíveis no aplicativo
 
@@ -105,6 +115,8 @@ Como o valor é preenchido:
 * Se a receita líquida não for fornecida por nenhum dos dois, a métrica mostrará N/A.
 
 Consulte <Anchor target="_blank" href="/marketers/pt/docs/about-roi360-store-revenue">Sobre a receita da loja do ROI360</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-event-structure">Eventos in-app - Estrutura do evento</Anchor>.
+
+<div id="supported-filter-and-group-by-dimensions" />
 
 ## Dimensões de "filtro" e "agrupar por" disponíveis
 
@@ -141,6 +153,8 @@ Você pode agrupar e filtrar métricas de atividade usando:
   * Mês
   * Canal de mídia
   * Acesso para
+
+<div id="specifications-and-limitations" />
 
 ## Especificações e limitações
 

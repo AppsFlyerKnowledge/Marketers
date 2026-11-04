@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Resumo:** Ao integrar a AppsFlyer com o seu provedor de identidade (IdP), os usuários da conta da AppsFlyer podem fazer login na AppsFlyer usando single sign-on (SSO). Aprenda a configurar a autenticação SSO na AppsFlyer e na plataforma do seu IdP.
 
+<div id="considerations" />
+
 ## Considerações
 
 * **Pré-requisito:** Os usuários devem ser configurados em ambos os sistemas (AppsFlyer e IdP) com o mesmo e-mail.
@@ -41,9 +43,13 @@ x-zendesk:
 * SMS não tem suporte como método de login alternativo para usuários de exceção.
 * Quando nenhum usuário de exceção é adicionado, o SSO é aplicado por padrão a todos os usuários após a ativação.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Recomendamos adicionar pelo menos um administrador confiável como usuário de exceção antes de ativar o SSO. Isso ajuda a evitar o bloqueio da conta se a configuração de SSO estiver incorreta
+
+<div id="access-the-sso-configuration-page" />
 
 ## Acessar a página de configuração do SSO
 
@@ -51,9 +57,13 @@ x-zendesk:
 2. Em **Segurança de login melhorado**, selecione **Configurar método de login**.
 3. Na página **Segurança de login**, clique em **Configurar SSO**.
 
+<div id="set-up-sso" />
+
 ## Configurar SSO
 
 A configuração do SSO é feita tanto na plataforma do seu IdP quanto na AppsFlyer, conforme descrito nas etapas abaixo. O status da configuração pode estar **Ativo** quando o SSO é configurado ou **Não configurado** quando não há nenhuma configuração ou quando a configuração já foi removida.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -74,6 +84,8 @@ Veja os processos detalhados para configurar a autenticação SSO nos seguintes 
 * <Anchor target="_blank" href="/marketers/pt/docs/configure-appsflyer-sso-in-onelogin">OneLogin</Anchor>
 * <Anchor target="_blank" href="/marketers/pt/docs/configure-appsflyer-sso-in-ping-identity">Ping Identity</Anchor>
 
+<div id="setup-overview-for-other-idp-platforms" />
+
 #### Resumo da configuração para outras plataformas de IdP
 
 Este é processo para configurar outras plataformas de IdP:
@@ -81,6 +93,8 @@ Este é processo para configurar outras plataformas de IdP:
 * Crie um aplicativo AppsFlyer na plataforma do seu IdP usando o protocolo SAML2.0 e integre o [certificado de autenticação da AppsFlyer](#the-authentication-certificate) na plataforma.
 * Atribua usuários ao aplicativo AppsFlyer recém-criado.
 * Recupere o certificado ou os metadados do IdP que serão usados na AppsFlyer (conforme mencionado na [Etapa 2: Configure a AppsFlyer --> 5. Forneça os metadados do IdP](#step-5-provide-idp-metadata)).
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -107,19 +121,27 @@ Veja como [acessar a página de configuração do SSO](#acessar-a-página-de-con
    * [Provedor de serviços (AppsFlyer)](#provedor-de-serviços-appsflyer)
 2. Clique em **Próximo**.
 
+<div id="identity-provider-idp" />
+
 #### Provedor de identidade (IdP)
 
 Os usuários que fazem login por meio do plug-in de autenticação do IdP ou da página da web são direcionados à AppsFlyer após a autenticação.
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Ao selecionar essa opção, os usuários podem fazer login por meio do IdP e do provedor de serviços (AppsFlyer).
+
+<div id="service-provider-appsflyer" />
 
 #### Provedor de serviços (AppsFlyer)
 
 Os usuários também podem entrar na AppsFlyer pela <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">página de login SSO da AppsFlyer</Anchor> clicando em **Login com SSO** e inserindo o endereço de e-mail. Eles serão direcionados ao IdP para autenticação e redirecionados para a página inicial da AppsFlyer.
 
 [<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >
@@ -137,6 +159,8 @@ A AppsFlyer oferece dois tipos de certificados de chave de encriptação públic
 **Para realizar essa etapa:**
 
 * Selecione o tipo de certificado e clique em **Próximo**.
+
+<div id="note-5" />
 
 > 📘 **Nota**
 >
@@ -195,6 +219,8 @@ Para adicionar usuários de exceção:
 5. Repita as etapas de 2 a 4 para cada usuário que você quer adicionar.
 6. Selecione como os usuários podem fazer login na AppsFlyer:
 
+<div id="add-login-methods-for-multiple-users" />
+
 ### **Adicionar métodos de login para vários usuários**
 
 Para adicionar o mesmo método alternativo de login para vários usuários de exceção:
@@ -204,6 +230,8 @@ Para adicionar o mesmo método alternativo de login para vários usuários de ex
 3. Escolha uma das seguintes opções:
    * **Utilizar nome de usuário e senha para todos os usuários selecionados**
    * **Aplicar aplicativo autenticador a todos os usuários selecionados**
+
+<div id="delete-an-exception-user" />
 
 ### **Excluir um usuário de exceção**
 
@@ -219,6 +247,8 @@ O usuário é excluído da lista imediatamente.
 
 <Accordion title="6. Ativar SSO">
 
+<div id="note-7" />
+
 > 📘 **Atenção**
 >
 > Antes de ativar o SSO, recomendamos adicionar pelo menos um administrador confiável como usuário de exceção. Isso ajuda a evitar o bloqueio da conta se a configuração do SSO estiver incorreta.
@@ -232,6 +262,8 @@ Não é recomendado ativar o SSO e o login com nome de usuário e senha ao mesmo
 Uma configuração incorreta pode bloquear os usuários da AppsFlyer. Revise sua configuração antes de ativar o SSO.
 
 Se nenhum usuário de exceção tiver sido adicionado, a caixa de diálogo de confirmação mostrará uma mensagem informando que todos precisarão fazer login por SSO após a ativação.
+
+<div id="activation-results" />
 
 ### **Resultados da ativação**
 
@@ -256,6 +288,8 @@ O método 2FA não é compatível com SSO.
 
 Ao alterar o tipo de certificado ou o ponto de partida da autenticação, os metadados da AppsFlyer mudam. Copie os metadados mais recentes do provedor de serviços do AppsFlyer e adicione-os à configuração SAML do seu provedor de identidade (IdP) imediatamente após salvar as alterações
 
+<div id="edit-exception-users" />
+
 ### **Editar exceções**
 
 Para editar usuários de exceção:
@@ -278,6 +312,8 @@ Os usuários de exceção adicionados anteriormente aparecem com seu método alt
 
 Depois de concluir a configuração do SSO em ambos os sistemas (AppsFlyer e IdP), verifique se os usuários podem fazer login na AppsFlyer em **qualquer um** dos [métodos de callback de URL](#single-signon-url-configuration): seu IdP ou o provedor de serviços (AppsFlyer), mas não ambos.
 
+<div id="test-authentication-via-your-idp" />
+
 #### Teste a autenticação através do seu IdP
 
 Se você tiver configurado a autenticação para fazer login através do seu IdP, verifique se os usuários podem entrar na AppsFlyer a partir do plugin IdP ou da página web:
@@ -286,6 +322,8 @@ Se você tiver configurado a autenticação para fazer login através do seu IdP
 2. Abrir uma página web no modo incógnito.
 3. Acesse a página web do seu IdP. Quando você não estiver conectado ao IdP, você passará por um processo de autenticação. Inicie a sessão com o usuário relevante.
 4. Pesquise e selecione a AppsFlyer. Você é direcionado para a página inicial da AppsFlyer. Isto indica que o processo foi bem sucedido.
+
+<div id="test-authentication-via-your-service-provider-appsflyer" />
 
 #### Testar a autenticação através do seu provedor de serviços (AppsFlyer)
 
@@ -305,11 +343,15 @@ Se você tiver configurado o fluxo de autenticação para fazer login através d
 
 </Accordion>
 
+<div id="manage-sso-configuration" />
+
 ## Gerenciar a configuração do SSO
 
 Depois de configurar o SSO, você pode editar ou remover a configuração.
 
 Veja como [acessar a página de configuração do SSO](#acessar-a-página-de-configuração-do-sso).
+
+<div id="zd-edit-sso" />
 
 <div id="edit-sso" />
 
@@ -323,9 +365,15 @@ Nessa página, você pode editar qualquer uma das seguintes opções:
 * Metadados do provedor de identidade
 * Usuários de exceção
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Ao alterar o tipo de certificado ou o ponto de partida da autenticação, os metadados da AppsFlyer mudam. É fundamental copiar os metadados SSO mais recentes do provedor de serviços (AppsFlyer) e implementá-los na configuração SAML do seu IdP logo após salvar as alterações.
+
+<div id="note-8" />
+
+<div id="note-6" />
 
 > 📘 **Atenção**
 >
@@ -339,6 +387,8 @@ Para editar a configuração do SSO:
 4. Clique em **Guardar**.
 5. Clique em **Salvar alterações**. Você verá uma mensagem de confirmação que indica o status das alterações.
 6. Clique em **Save changes**.
+
+<div id="edit-exception-users-1" />
 
 ### Editar exceções
 
@@ -385,6 +435,8 @@ Ao remover a configuração do SSO, os metadados SSO do seu IdP armazenados na A
 | Usuário de exceção recomendado | Recomendamos adicionar pelo menos um administrador confiável como usuário de exceção antes de ativar o SSO. Isso ajuda a evitar o bloqueio da conta se a configuração de SSO estiver incorreta. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

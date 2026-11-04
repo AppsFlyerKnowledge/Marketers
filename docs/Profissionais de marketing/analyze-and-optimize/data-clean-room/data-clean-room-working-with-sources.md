@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Configure as fontes de dados personalizadas que você compartilha com o Data Clean Room (DCR) para correspondência com dados de atribuição e para criar relatórios do DCR.
 
+<div id="introduction" />
+
 ## Introdução
 
 Muitos relatórios DCR são projetados para corresponder seus **dados de atribuição** aos dados de suas **fontes personalizadas.** Este artigo contém tudo o que você precisa saber sobre como trabalhar com fontes personalizadas, incluindo como:
@@ -49,6 +51,8 @@ Muitos relatórios DCR são projetados para corresponder seus **dados de atribui
 >   * **Buckets de armazenamento em nuvem:** Amazon S3 (AWS) e GCS
 > * [Opcional] <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-connections#criar-conexões-de-entrada">Crie conexões de entrada</Anchor> na plataforma da AppsFlyer para conectar esses serviços em nuvem ao DCR.
 >   * Se essas conexões não foram configuradas anteriormente, você será solicitado a configurá-las durante a criação da fonte.
+
+<div id="source-requirements" />
 
 ## Requisitos de dados de origem
 
@@ -105,6 +109,8 @@ Os arquivos de origem armazenados no Amazon S3 ou GCS devem atender a estes requ
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## Criando uma fonte
 
 O processo de criar uma fonte consiste em **todas as etapas descritas abaixo.** Elas foram separadas em abas para facilitar a leitura.
@@ -143,6 +149,8 @@ O processo de criar uma fonte consiste em **todas as etapas descritas abaixo.** 
    * Se você tiver conexões existentes, mas quiser usar uma nova, clique no botão ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) para abrir a caixa de diálogo **Nova conexão**. Siga <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-connections#concluir-a-conexão">estas instruções</Anchor> para criá-la.
 2. Continue com as instruções relevantes abaixo com base na localização dos dados de sua fonte.
 
+<div id="source-locations-in-bigquery" />
+
 #### Locais de origem no BigQuery
 
 **Para concluir a especificação do local de origem para origens do BigQuery:**
@@ -151,6 +159,8 @@ O processo de criar uma fonte consiste em **todas as etapas descritas abaixo.** 
 2. Selecione a tabela na qual os dados de origem estão localizados.
 
 As listas nas quais você faz essas seleções contêm os conjuntos de dados e tabelas disponíveis, respectivamente, no projeto do BigQuery que você especificou ao criar a conexão.
+
+<div id="source-locations-in-snowflake" />
 
 #### Locais de origem no Snowflake
 
@@ -161,6 +171,8 @@ As listas nas quais você faz essas seleções contêm os conjuntos de dados e t
 3. Selecione a tabela na qual os dados de origem estão localizados.
 
 As listas das quais você faz essas seleções contêm os compartilhamentos, esquemas e tabelas, respectivamente, na conta do Snowflake que você especificou ao criar a conexão.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Locais de origem em buckets de armazenamento em nuvem
 
@@ -208,6 +220,8 @@ Para todas as fontes que você compartilha com o DCR para processamento, a AppsF
   * **Dimensão:** um atributo pelo qual você categoriza os usuários do aplicativo (exemplos podem incluir localização, data de instalação, campanha, etc.)
   * **Métrica:** dados numéricos que você coletou com relação a um usuário de aplicativo (exemplos podem incluir receita, número de aberturas do aplicativo, LTV, etc.)
     * Um campo de dados identificado como métrica deve conter **apenas valores numéricos.**
+
+<div id="loading-source-fields" />
 
 #### Carregar campos de origem
 
@@ -275,6 +289,8 @@ Para fins de definição da estrutura da fonte:
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### Categorizar campos
 
 Depois de carregar os campos, a AppsFlyer analisa o arquivo e uma lista de todos os campos de dados (colunas) é exibida na lista **Campos disponíveis**.
@@ -315,6 +331,8 @@ Depois de carregar os campos, a AppsFlyer analisa o arquivo e uma lista de todos
    A nova fonte é exibida na lista de todas as fontes existentes na aba **Fontes** do Data Clean Room.
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## Atualizando fontes para acionar o processamento de relatórios
 
@@ -373,6 +391,8 @@ Após o upload dos arquivos da fonte em 2 dias (e após criar programaticamente 
 ![dcr_file_structure_after_uploads.png](https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png)
 
 </Accordion>
+
+<div id="working-with-existing-sources" />
 
 ## Trabalhar com as fontes existentes
 
@@ -441,6 +461,8 @@ Para editar a estrutura da fonte:
 
 </Accordion>
 
+<div id="reference" />
+
 ## Referência
 
 <div id="manually-creating-a-folder-structure" />
@@ -448,6 +470,8 @@ Para editar a estrutura da fonte:
 <Accordion title="Criação manual de uma estrutura de pasta do bucket de armazenamento (relevante somente se você optar por fazer isso)">
 
 Em geral, é mais fácil permitir que a AppsFlyer gere automaticamente a estrutura de pastas necessária como parte do processo de criação da fonte. No entanto, se você deseja criar essas pastas manualmente, pode fazer isso da seguinte maneira.
+
+<div id="create-a-dcr-key-folder" />
 
 #### Crie uma pasta de chave DCR
 
@@ -463,6 +487,8 @@ Após criar a pasta de chaves DCR, sua estrutura de bucket/pasta deve ficar assi
 
 ![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
 
+<div id="top-level-input-folder" />
+
 #### Pasta de entrada de nível superior
 
 Embora não seja necessário, a prática recomendada é criar uma pasta de entrada de nível superior diretamente abaixo da pasta de chaves DCR. Esta pasta será dedicada aos arquivos que você fizer upload para o DCR.
@@ -475,6 +501,8 @@ A pasta de entrada de nível superior geralmente é criada manualmente usando a 
 Depois de criar a pasta de entrada de nível superior, sua estrutura de bucket/pasta deve ficar assim:
 
 ![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### Pasta de segundo nível para cada fonte de dados
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## Sobre a atribuição de convites de usuários
 
 Quando falamos sobre convites de usuários, nos referimos ao momento em que usuários do seu aplicativo enviam links de compartilhamento que redirecionam outras pessoas (por exemplo, amigos) para fazer o download/abrir seu app.
@@ -45,6 +47,8 @@ Você também pode usar os dados dos links para:
 
 Os links de convites de usuários que os usuários compartilham com outras pessoas são, na verdade, links personalizados do OneLink (URLs curtos) gerados pelo SDK da AppsFlyer, que está integrado ao seu aplicativo Os links de convites de usuários que os usuários compartilham com outras pessoas são, na verdade, links personalizados do OneLink (URLs curtos) gerados pelo SDK da AppsFlyer, que está integrado ao seu aplicativo As configurações do seu OneLink garantem que os usuários que recebem um convite sejam redirecionados para o lugar certo — ou seja, para a loja de aplicativos correta, para o seu aplicativo ou para uma página específica do seu aplicativo por meio de um deep link/deferred deep link. Os links de convites de usuários que os usuários compartilham com outras pessoas são, na verdade, links personalizados do OneLink (URLs curtos) gerados pelo SDK da AppsFlyer, que está integrado ao seu aplicativo As configurações do seu OneLink garantem que os usuários que recebem um convite sejam redirecionados para o lugar certo — ou seja, para a loja de aplicativos correta, para o seu aplicativo ou para uma página específica do seu aplicativo por meio de um deep link/deferred deep link. <Anchor target="_blank" href="/marketers/pt/docs/onelink-guide">Saiba mais sobre o OneLink.</Anchor>
 
+<div id="flow" />
+
 ### Fluxo
 
 O fluxo funciona da seguinte maneira:
@@ -57,6 +61,8 @@ O fluxo funciona da seguinte maneira:
    * Não tem aplicativo instalado, ele é enviado para a loja de aplicativos correta. O usuário B pode ser enviado por meio de um deferred deep link para uma página específica no aplicativo após a primeira abertura do aplicativo e/ou o usuário A pode ser recompensado.
    * Realiza um evento in-app, o usuário A pode ser recompensado.
 
+<div id="viewing-data" />
+
 ## Visualização de dados
 
 Os dados de convites do usuário estão disponíveis nos dashboards e relatórios da AppsFlyer. Nos dashboards da AppsFlyer, você pode filtrar a atribuição dos convites de usuários:
@@ -66,6 +72,8 @@ Os dados de convites do usuário estão disponíveis nos dashboards e relatório
 * **Campanha**: conforme estabelecido pelo profissional de marketing.
 
 Nos relatórios, a fonte da mídia (parâmetro `pid`) é enviada pelo SDK com o valor padrão `af_app_invites`.
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -105,6 +113,8 @@ Nos relatórios, a fonte da mídia (parâmetro `pid`) é enviada pelo SDK com o 
 
 <Accordion title="Parâmetros">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### Parâmetros/valores fornecidos ao desenvolvedor para implementar no SDK
 
 <table><thead><tr><th>Parâmetro/valor</th><th>Observações</th><th>Registre o valor/uso que o desenvolvedor deve implementar</th></tr></thead><tbody><tr><td>ID do modelo do OneLink</td><td>O ID do template do OneLink com as configurações básicas nas quais todos os links de convite do usuário serão baseados. Por exemplo: H5hv</td><td> </td></tr><tr><td>Canal</td><td>O nome do canal. Isso ajuda você a classificar e visualizar atribuições por canal na interface do usuário da AppsFlyer.</td><td> </td></tr><tr><td>Campanha</td><td>O nome da campanha. Isso ajuda você a classificar e visualizar atribuições por campanha na interface do usuário da AppsFlyer.</td><td> </td></tr><tr><td> <span>is_retargeting=true</span><br/> </td><td>É adicionado caso a sua campanha faça o retargeting de usuários existentes.</td><td> </td></tr><tr><td>deep_link_value</td><td>Um parâmetro a ser usado no dispositivo do usuário indicado para fornecer uma experiência específica. Normalmente, ele é usado para nomear a página específica para a qual os usuários serão direcionados. Por exemplo, se seu aplicativo vende frutas, você pode direcionar os usuários para a página da maçã.</td><td> </td></tr><tr><td>deep_link_sub1</td><td rowspan="10">Um parâmetro a ser usado no dispositivo do usuário indicado para fornecer uma experiência específica. Como deep_link_value é normalmente usado para enviar usuários para uma página específica, esse parâmetro pode ser usado para qualquer outra funcionalidade desejada. Por exemplo, para adicionar uma recompensa ou desconto, ou registrar o usuário que fez a indicação. </td><td> </td></tr><tr><td>deep_link_sub2</td><td> </td></tr><tr><td>deep_link_sub3</td><td> </td></tr><tr><td>deep_link_sub4</td><td> </td></tr><tr><td>deep_link_sub5</td><td> </td></tr><tr><td>deep_link_sub6</td><td> </td></tr><tr><td>deep_link_sub7</td><td> </td></tr><tr><td>deep_link_sub8</td><td> </td></tr><tr><td>deep_link_sub9</td><td> </td></tr><tr><td>deep_link_sub10</td><td> </td></tr><tr><td>[Opcional] pid</td><td><p>Por padrão, os links gerados incluem a fonte de mídia (parâmetro<code>pid</code>) com o valor <code>af_app_invites</code>. </p><p>Para alterar o valor, seu desenvolvedor precisa adicionar um parâmetro personalizado chamado <code>pid</code> com o valor desejado. <strong>Atenção:</strong> para Android, isso só funciona para o SDK V6.4.2+.</p></td><td> </td></tr><tr><td>Nome de marca</td><td>O nome do branded domain. Isso ajuda você a classificar e visualizar atribuições por domínio de marca na IU da AppsFlyer.</td><td> </td></tr></tbody></table>
@@ -131,6 +141,8 @@ Para que tudo isso funcione, Marcos envia a seu desenvolvedor a seguinte lista d
 | Campanha | summer\_sale | Para realizar a atribuição e visualizar os dados na AppsFlyer. |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

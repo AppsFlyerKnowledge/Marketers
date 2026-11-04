@@ -36,6 +36,8 @@ Ao usá-lo para se conectar a ferramentas de IA, você concorda que a AppsFlyer 
 
 </Accordion>
 
+<div id="what-is-appsflyer-mcp" />
+
 ## O que é o MCP da AppsFlyer?
 
 O MCP permite que você conecte LLMs de forma segura à plataforma da AppsFlyer, permitindo que você interaja com seus dados de marketing através de um chat simples. O MCP ajuda você a tomar decisões mais inteligentes e rápidas com base em dados em tempo real.
@@ -48,6 +50,8 @@ Com ele, você pode:
 * Audite e solucione problemas nas conexões de audiências.
 * Relembrar passos de configuração e recuperar documentação de produtos.
 
+<div id="set-up-appsflyer-mcp" />
+
 ## Configurar o MCP da AppsFlyer
 
 Nosso MCP pode se conectar a chats, CLIs, IDEs, plataformas de automação e agentes self-hosted. A configuração depende do cliente utilizado e do método de autenticação compatível.
@@ -55,6 +59,8 @@ Nosso MCP pode se conectar a chats, CLIs, IDEs, plataformas de automação e age
 > 📘 **Atenção**
 >
 > Algumas plataformas podem exigir a aprovação do administrador para conectar os servidores do MCP. Se você não encontrar as opções de configuração descritas abaixo, entre em contato com sua equipe de TI ou com o administrador do seu workspace.
+
+<div id="authentication-methods" />
 
 ## Métodos de autenticação
 
@@ -65,11 +71,15 @@ O MCP da AppsFlyer aceita dois métodos de autenticação. Use o método que cor
 | Login OAuth pelo navegador | Gemini CLI, Copilot CLI, ChatGPT, Claude.ai e Claude Desktop | Perguntas ad hoc, análises exploratórias e relatórios pontuais | Válido por 7 dias a partir da conexão. É necessário se autenticar novamente ao final da sessão. |
 | Autenticação por token Bearer | Claude Code, plataformas de automação, agentes self-hosted e integrações | Automações, tarefas agendadas, agentes em segundo plano e fluxos de trabalho não interativos | Válido até ser revogado manualmente |
 
+<div id="browser-based-oauth-login" />
+
 ### Login OAuth pelo navegador
 
 O login OAuth pelo navegador permite que você se conecte interativamente através do seu navegador. Ao se conectar, o cliente MCP abre uma janela do navegador e solicita que você faça login na AppsFlyer. Depois de aprovar o acesso, o cliente se conecta à sua conta da AppsFlyer.
 
 Use esse método para sessões interativas, análises exploratórias e relatórios pontuais.
+
+<div id="bearer-token-authentication" />
 
 ### Autenticação por token Bearer
 
@@ -83,6 +93,8 @@ Use esse método para automações, tarefas agendadas, agentes em segundo plano 
 
 Para criar um token, acesse **Menu da conta > Central de segurança > Tokens da AppsFlyer** e crie um token do MCP.
 
+<div id="set-up-by-client" />
+
 ## Configurar por cliente
 
 <div id="h_claude-ai-and-claude-desktop" />
@@ -91,9 +103,13 @@ Para criar um token, acesse **Menu da conta > Central de segurança > Tokens da 
 
 Use o Claude.ai e o Claude Desktop com login OAuth pelo navegador. Estas instruções se aplicam ao Claude na web e no desktop.
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Para usuários dos planos Team e Enterprise, somente os proprietários ou administradores podem adicionar integrações para toda a empresa.
+
+<div id="set-up-claude-chat-and-cowork" />
 
 #### Configurar o Claude.ai e o Claude Desktop
 
@@ -109,11 +125,15 @@ Use o Claude.ai e o Claude Desktop com login OAuth pelo navegador. Estas instru�
 8. Na seção conectores, clique em **Connect** ao lado da conexão da AppsFlyer.
 9. Faça login na AppsFlyer quando solicitado.
 
+<div id="test-the-claude-connection" />
+
 #### Teste a conexão com o Claude
 
 1. Em qualquer janela do chat, clique no botão de configurações.   
    <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. Se o MCP da AppsFlyer estiver configurado corretamente, as ferramentas da AppsFlyer aparecem no menu.
+
+<div id="note-2" />
 
 > 📘 **Atenção**
 >
@@ -126,6 +146,8 @@ Use o Claude.ai e o Claude Desktop com login OAuth pelo navegador. Estas instru�
 <Accordion title="Claude Code">
 
 Use o Claude Code com autenticação por token Bearer para automação, agendamento e fluxos de trabalho não interativos.
+
+<div id="add-appsflyer-mcp-to-claude-code" />
 
 #### Adicione o MCP da AppsFlyer ao Claude Code
 
@@ -218,6 +240,8 @@ Existem duas formas de usar o ChatGPT com o MCP da AppsFlyer.
 * [Custom GPT:](#adicione-o-custom-gpt-à-appsflyer) ideal para acesso simples a um assistente da AppsFlyer.
 * [MCP no ChatGPT:](#adicione-o-mcp-da-appsflyer-no-chatgpt) ideal para usuários que desejam levar os dados da AppsFlyer para conversas do ChatGPT.
 
+<div id="add-the-appsflyer-custom-gpt" />
+
 #### Adicione o Custom GPT à AppsFlyer
 
 1. Clique em <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyer Custom GPT</Anchor>.
@@ -229,7 +253,11 @@ Existem duas formas de usar o ChatGPT com o MCP da AppsFlyer.
    Mostre a performance da minha campanha na Meta da semana passada.
    ```
 
+<div id="add-appsflyer-mcp-in-chatgpt" />
+
 #### Adicione o MCP da AppsFlyer no ChatGPT
+
+<div id="note-3" />
 
 > 📘 **Atenção**
 >
@@ -256,6 +284,8 @@ Por motivos de segurança, o MCP é desconectado aproximadamente a cada 10 horas
 
 Use o Gemini CLI com o login OAuth pelo navegador.
 
+<div id="add-appsflyer-mcp-to-gemini-cli" />
+
 #### Adicione o MCP da AppsFlyer ao Gemini CLI
 
 1. No terminal, adicione o MCP Server da AppsFlyer:
@@ -280,6 +310,8 @@ Use o Gemini CLI com o login OAuth pelo navegador.
    Quais aplicativos estão na minha conta da AppsFlyer?
    ```
 
+<div id="troubleshoot-gemini-cli-authentication" />
+
 #### Resolução de problemas na autenticação do Gemini CLI
 
 Se a autenticação falhar, inicie o Gemini CLI no modo de depuração:
@@ -297,6 +329,8 @@ Depois insira `auth` novamente no prompt do Gemini CLI.
 <Accordion title="Copilot CLI">
 
 Use o Copilot CLI com o login OAuth pelo navegador.
+
+<div id="add-appsflyer-mcp-to-copilot-cli" />
 
 #### Adicione o MCP da AppsFlyer ao Copilot CLI
 
@@ -345,6 +379,8 @@ Use um token de MCP para autenticar sistemas de terceiros ou self-hosted com o M
 
 O token do MCP é um token Bearer no nível da conta que herda as permissões do administrador que o criou. Você pode acessá-lo e gerenciá-lo em <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">Central de segurança → Tokens da AppsFlyer</Anchor>.
 
+<div id="mcp-connection-details" />
+
 #### Detalhes da conexão do MCP
 
 Para conectar sua plataforma de automação ou agente ao AppsFlyer MCP, use a seguinte configuração:
@@ -353,9 +389,13 @@ Para conectar sua plataforma de automação ou agente ao AppsFlyer MCP, use a se
 * **URL base / endpoint:** `https://mcp.appsflyer.com/auth/mcp`
 * **Token Bearer:** Seu token do MCP
 
+<div id="note-4" />
+
 > 📘 **Atenção**
 >
 > Nunca compartilhe ou publique o seu token publicamente. Ele é uma credencial privada. Seu token do MCP concede acesso direto ao ambiente MCP.
+
+<div id="example-use-cases" />
 
 #### Exemplos de casos de uso
 
@@ -390,6 +430,8 @@ Estamos expandindo continuamente esta lista à medida que validamos e documentam
 
 O MCP da AppsFlyer conecta-se a uma conta da AppsFlyer por vez.
 
+<div id="switch-between-accounts-browser-based-oauth" />
+
 #### Alternar contas (OAuth pelo navegador)
 
 Se você gerencia várias contas da AppsFlyer no mesmo e-mail, é possível mudar a conta conectada ao MCP:
@@ -398,6 +440,8 @@ Se você gerencia várias contas da AppsFlyer no mesmo e-mail, é possível muda
 2. Faça login novamente no seu cliente MCP.
 
 Você não pode visualizar ou comparar várias contas em uma única conexão.
+
+<div id="connect-multiple-accounts-simultaneously-bearer-token" />
 
 #### Conectar várias contas simultaneamente (token Bearer)
 
@@ -410,11 +454,17 @@ Veja um exemplo desse fluxo <Anchor target="_blank" href="https://www.youtube.co
 
 </Accordion>
 
+<div id="use-appsflyer-mcp" />
+
 ## Usar o MCP da AppsFlyer
+
+<div id="use-cases-and-prompts" />
 
 ### Casos de uso e prompts
 
 O MCP da AppsFlyer oferece um conjunto de ferramentas e recursos projetados para ajudar a recuperar análises de marketing, insights de performance e informações de configuração.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -447,6 +497,8 @@ Explore dados agregados da sua performance de marketing em tempo real. Você pod
 **Prompt:** "Compare a retenção D1 entre a semana passada e a semana anterior, agrupando por fonte de mídia."
 
 **Resposta esperada da IA:** A IA realiza uma comparação das taxas de retenção D1, agrupadas por fonte de mídia.
+
+<div id="note-5" />
 
 > 📘 **Atenção**
 >
@@ -626,6 +678,8 @@ Pouca atualização
 
 Recupere o status e a configuração da integração de parceiros dos seus aplicativos, veja quais parceiros estão ativos, como eles estão configurados e se os mapeamentos de eventos e as configurações de atribuição estão definidos como esperado. Use isto para auditar a integridade da integração e solucionar problemas específicos de parceiros sem abrir a UI do AppsFlyer HQ.
 
+<div id="note-6" />
+
 > 📘 **Note**
 >
 > O gerenciamento de integrações de parceiros está atualmente somente para leitura. Você pode recuperar e auditar a configuração pelo MCP da AppsFlyer, mas as alterações ainda precisam ser feitas na UI do AppsFlyer HQ.
@@ -764,6 +818,8 @@ Relembre informações de usuários e funções da sua conta da AppsFlyer. Isso 
 
 </Accordion>
 
+<div id="other-information" />
+
 ## Outras informações
 
 <div id="h_privacy-and-security" />
@@ -772,13 +828,19 @@ Relembre informações de usuários e funções da sua conta da AppsFlyer. Isso 
 
 Nosso MCP permite que a ferramenta de IA selecionada consulte os dados da AppsFlyer com base nas permissões existentes.
 
+<div id="data-processing" />
+
 #### Processamento de dados:
 
 Nosso MCP atua como um proxy seguro. Ele busca os dados da AppsFlyer em tempo real e retorna os dados necessários para responder à consulta. O MCP não arquiva nem armazena resultados de consultas a longo prazo.
 
+<div id="credentials" />
+
 #### Credenciais
 
 Seu login na AppsFlyer permite que o MCP faça chamadas à API em seu nome. Suas credenciais da AppsFlyer não são compartilhadas com a ferramenta de IA.
+
+<div id="permissions" />
 
 #### Authorization: Bearer
 
@@ -786,15 +848,21 @@ Nosso MCP utiliza suas permissões existentes. Os usuários só podem acessar os
 
 Não existe uma camada de permissões separada para configurar o acesso ao MCP.
 
+<div id="read-and-write-access" />
+
 #### Acesso de leitura e gravação
 
 A maioria das ferramentas do MCP da AppsFlyer permite apenas leitura e consulta. A exceção é create\_onelink\_link, que cria links do OneLink na sua conta. Antes de um link ser criado, a IA mostra os detalhes dele e pede sua confirmação. Nada é criado sem a sua aprovação.
+
+<div id="ai-provider-data-usage" />
 
 #### Uso de dados dos fornecedores de IA
 
 Os dados recuperados pelo MCP podem ser compartilhados com a ferramenta de IA selecionada para responder à sua consulta. Apenas os dados necessários para gerar a resposta são compartilhados.
 
 A AppsFlyer não controla se a ferramenta de IA selecionada armazena, processa ou usa os dados para aprendizado. Revise os termos e políticas de uso de dados do seu fornecedor de IA antes de conectar o MCP.
+
+<div id="certifications" />
 
 #### Certificações
 
@@ -837,6 +905,8 @@ Consulte a tabela abaixo para uma lista completa das ferramentas e suas categori
 | Desativação do MCP | <ul><li>O MCP está ativado por padrão e pode ser desativado por um administrador em **Conta e perfil > Recursos de IA**.</li><li>Quando o MCP está desativado, os usuários não podem acessar os dados da AppsFlyer por meio do MCP em ferramentas externas de IA.</li><li>As conexões existentes podem continuar funcionando até que a sessão atual expire.</li><li>Desativar o MCP não afeta as conexões tradicionais da API nem outros recursos de IA na AppsFlyer.</li><li>Se um token do MCP estiver em uso, primeiro exclua-o em **Central de segurança > Tokens da AppsFlyer**.</li></ul> |
 
 </Accordion>
+
+<div id="troubleshoot-connection-issues" />
 
 ## Resolução de problemas de conexão
 

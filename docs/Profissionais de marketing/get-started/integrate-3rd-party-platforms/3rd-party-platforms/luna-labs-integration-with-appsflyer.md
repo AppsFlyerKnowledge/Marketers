@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Em resumo:** a Luna Labs é uma plataforma completa que permite que seus clientes criem, gerenciem e otimizem playables e anúncios em vídeo.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-luna-labs" />
 
 ## Configurando a Luna Labs
 
@@ -47,18 +51,26 @@ x-zendesk:
 
 **Para editar**: na AppsFlyer, no menu lateral, selecione **Colaborar** > **Integrações Ativas**.
 
+<div id="integration" />
+
 ## integração
 
 Use a aba Integração para a configuração. As abas restantes estão inativas.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
 > A Luna Labs não usa links de atribuição próprios. Eles recebem postbacks de ad networks que executam campanhas com anunciantes. A Luna Labs recebe postbacks apenas para os próprios criativos e somente postbacks que incluem o parâmetro `af_addpb=1` e o respetivo valor. Veja mais detalhes abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **primeiro acesso**, você precisa ativar **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. **A opção deve permanecer ativada enquanto você trabalhar com o parceiro**.  
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativação/desativação de parceiros</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** Val é um assistente antifraude proativo no Protect360 que fornece insights semanais para ajudar a destacar tendências, recomendar ações e melhorar a proteção contra fraude. Ao apresentar inteligência acionável, Val transforma a detecção de fraude de reativa em proativa.
 
+<div id="about-val-anti-fraud-assistant" />
+
 ## Sobre o assistente antifraude Val
 
 Val é um recurso de inteligência de dados no Protect360 que analisa automaticamente padrões de tráfego recentes para identificar possíveis riscos de fraude. Ele fornece insights semanais que destacam tendências, recomendam ações e oferecem comparações de benchmark para ajudar a reduzir fraude, reforçar a segurança e otimizar a performance.
@@ -36,6 +38,8 @@ Com o Val, os anunciantes podem:
 
 Observação: os insights não estão disponíveis para parceiros.
 
+<div id="insight-types" />
+
 ## Tipos de insights
 
 Val oferece os seguintes tipos de insights e as seguintes ações do usuário para tomar medidas diretas a fim de melhorar a detecção de fraude e a segurança geral:
@@ -45,6 +49,8 @@ Val oferece os seguintes tipos de insights e as seguintes ações do usuário pa
 | **Pico de fraude** | <ul><li>Destaca aumentos ou reduções anormais de fraude em network ou fontes específicas.</li><li>Fornece uma análise comparativa das tendências de fraude no nível do aplicativo para entender melhor se elas são esperadas ou se representam uma anomalia.</li></ul> | <ul><li>Investigue mais a fundo no dashboard do Protect360.</li><li>Compartilhe o insight como PNG.</li><li>Dispense o insight por uma semana.</li></ul> |
 | **Versão antiga do SDK** | Detecta aplicativos que usam SDKs com mais de um ano, que podem não ter proteção contra fraude atualizada e estar vulneráveis a ataques de fraude. | <ul><li>Saiba mais sobre as atualizações do SDK.</li><li>Compartilhe o insight como PNG.</li><li>Ignore o insight por uma semana.</li></ul> |
 | **Versão fraudulenta do SDK** | Identifica o tráfego originado de versões do SDK e segmentado por versões do aplicativo, conhecidas por terem sido afetadas por altas taxas de fraude. | <ul><li>Acesse a página de configuração das regras de validação.</li><li>Compartilhe o insight como PNG.</li><li>Ignore o insight por uma semana.</li></ul> |
+
+<div id="how-val-works" />
 
 ## Como o Val funciona
 
@@ -61,6 +67,8 @@ Para garantir que os insights permaneçam relevantes, eles seguem um ciclo de vi
 | Dispensado | Os insights não voltarão, a menos que um novo problema seja detectado. |
 
 Observação: depois que um insight é dispensado, ele não aparecerá novamente na semana atual.
+
+<div id="how-to-access-and-use-explore-insights-val" />
 
 ## Como acessar e usar o Explore Insights (Val)
 

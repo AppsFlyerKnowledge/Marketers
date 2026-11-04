@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Visão geral:** Integre seu aplicativo de TV conectada (CTV) do Amazon Vega OS com a AppsFlyer para receber dados de atribuição e eventos para suas campanhas no Amazon Vega OS.
 
+<div id="about-amazon-vega-os-ctv-attribution" />
+
 ## **Sobre a atribuição de CTV do Amazon Vega OS**
 
 O Amazon Vega OS para streaming funciona em todos os dispositivos Amazon Vega OS.
@@ -31,6 +33,8 @@ A integração da API do Amazon Vega OS oferece suporte a:
 
 * Smart TVs com Amazon Vega OS.
 * Atribuição CTV-to-CTV e registro de eventos. Ou seja, atribuição e registro no dispositivo Amazon Vega OS do usuário.
+
+<div id="integration-procedures" />
 
 ## **Procedimentos de integração**
 
@@ -43,6 +47,8 @@ A tabela abaixo lista as tarefas necessárias para integrar seu aplicativo de CT
 | Configuração do OneLink | <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprenda a criar links de atribuição direta</Anchor> | Marketer |
 | Configuração de relatórios/visualização de dados | <Anchor target="_blank" href="/marketers/pt/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidade-de-dados">Saiba mais sobre a disponibilidade de dados em painéis e relatórios</Anchor> | Profissional de marketing/engenheiro de dados |
 
+<div id="traits-and-limitations" />
+
 ## Especificações e limitações
 
 | Caraterística | Observações |
@@ -50,6 +56,8 @@ A tabela abaixo lista as tarefas necessárias para integrar seu aplicativo de CT
 | Canais não orgânicos | Em breve |
 | Redirecionamento | Atualmente não compatível |
 | Dados de custos | <Anchor target="_blank" href="/marketers/pt/docs/import-cost-data">Os dados de custos devem ser enviados através de</Anchor> Cost Import utilizando o método de upload de arquivos por e-mail. |
+
+<div id="see-also" />
 
 ### **Consulte também**
 

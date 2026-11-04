@@ -25,13 +25,19 @@ x-zendesk:
 
 <span id="ssot-reports-in-data-locker"></span>Atenção: O relatório do SSOT no Data Locker contém dados baseados em LTV, não dados baseados em atividade. Isso significa que os dados refletem o valor vitalício dos usuários em todos os pontos de contato, em vez de sua atividade no aplicativo ou eventos.
 
+<div id="what-is-data-locker" />
+
 ## O que é o Data Locker
 
 O Data Locker é uma solução segura que fornece dados diretamente para as principais plataformas de nuvem, como AWS, GCS e Snowflake. Isso permite que os profissionais de marketing integrem e consumam dados facilmente em seus sistemas internos de BI para análises e relatórios abrangentes. <Anchor target="_blank" href="/marketers/pt/docs/data-locker-advertiser-reports?query=data%20locker">Saiba mais</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## O que é Single Source of Truth (SSOT)
 
 A solução de Single Source of Truth, (SSOT) tem o objetivo de resolver problemas com a fragmentação de dados oferecendo uma visão geral unificada e precisa do desempenho da campanha de aplicativos mesclando dados de vários métodos de atribuição, como ID matching e SKAN. <Anchor target="_blank" href="/marketers/pt/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Saiba mais</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Vantagens dos relatórios de SSOT no Data Locker
 
@@ -68,6 +74,8 @@ Para ativar os relatórios do SSOT, conclua um dos procedimentos a seguir.
 | Atualização dos dados | <ul><li>Diária.</li><li>As métricas são calculadas usando os dados disponíveis à meia-noite UTC, que é o final do dia.</li><li>SLA: Novos relatórios estão disponíveis no Data Locker até 16:00 UTC. Uma nova versão é criada para as últimas 15 datas de instalação de cada dia. [Ver mais](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
 
 </Accordion>
+
+<div id="directory-structure" />
 
 ## Estrutura do diretório
 
@@ -137,6 +145,8 @@ Legenda:
 * version: Carimbo de data/hora Unix indicando quando a versão foi criada.
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## Estrutura do relatório
 
@@ -532,6 +542,8 @@ Atenção: A mesma lógica se aplica aos dados SKAN para os dias 14, 21 e 30. Is
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## Considerações para o desenvolvedor de BI
 
 **Escopo dos dados no relatório:**
@@ -557,6 +569,8 @@ Você pode carregar relatórios unificados, de aquisição de usuários e de ret
 <div id="days-postattribution" />
 
 <Accordion title="Dias pós-atribuição">
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** Mensure a qualidade dos seus usuários ao longo da jornada usando como base alguns eventos específicos, ideais para apps de passagens aéreas.
 
+<div id="-flight-booking" />
+
 ## <Image alt="InApp_Events_flight.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> Passagens aéreas
 
 Aplicativos passagens aéreas permitem que passageiros reservem voos com facilidade e escolham as melhores ofertas. Os eventos típicos que sugerimos que você registre são: reservar voo, pesquisar voos e visualizar ofertas.
@@ -32,6 +34,8 @@ Esses eventos permitem que você:
 * Identifique destinos populares
 * Analise tendências sazonais
 * Identifique as companhias aéreas mais populares entre os usuários
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -43,6 +47,8 @@ Esses eventos permitem que você:
 > Para mais informações sobre como registrar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">Guia de eventos in-app</Anchor>.
 
 [![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -227,6 +233,8 @@ Quando o usuário acessa a página de agradecimento após uma compra bem-sucedid
 | af\_receipt\_id | ID do pedido, necessário para a integração de retargeting na CRITEO e Google Ad Words | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

@@ -23,6 +23,8 @@ x-zendesk:
 
 ![51523_Image_3.jpg](https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg)
 
+<div id="what-are-chatgpt-plugins" />
+
 ## O que são os plug-ins do ChatGPT?
 
 Os plug-ins do ChatGPT são como aplicativos dentro do chat, que os usuários podem obter no marketplace de plug-ins.
@@ -31,27 +33,39 @@ Há uma API simples que permite que esses plug-ins gerem algumas ações diretam
 
 Você pode ler sobre os plug-ins do ChatGPT e entrar na lista de espera <Anchor target="_blank" href="https://openai.com/blog/chatgpt-plugins">aqui</Anchor>.
 
+<div id="how-do-marketers-use-chatgpt-plugins" />
+
 ### Como os profissionais de marketing usam os plug-ins do ChatGPT?
 
 A OpenAI ainda mantém os plug-ins do ChatGPT em beta, e pouquíssimas empresas os implementaram até agora. No entanto, as possibilidades para os profissionais de marketing são quase infinitas.  
 
 A AppsFlyer permite que os profissionais de marketing mensurem o uso e o LTV dos usuários nesses “aplicativos” em várias plataformas, lado a lado, para uma visão verdadeiramente holística dos usuários.
 
+<div id="chatgpt-attribution-examples" />
+
 ### Exemplos de atribuição do ChatGPT
 
 Veja abaixo 3 casos de uso de combinação de dados de plug-ins do ChatGPT com outras plataformas.
+
+<div id="use-case-1---holistic-ltv" />
 
 #### Caso de uso 1 - LTV holístico
 
 Um usuário existente de um aplicativo de viagens instala o plug-in do ChatGPT do aplicativo, que exige a autenticação do usuário. Quando o usuário reserva um hotel pelo plug-in de chat, o plug-in envia à AppsFlyer um evento in-app de compra. De acordo com a configuração do profissional de marketing, os eventos do ChatGPT são atribuídos ao canal de mídia original do usuário no app mobile, onde é exibido o LTV holístico do usuário no app mobile e no plug-in do ChatGPT.
 
+<div id="use-case-2---platform-performance-comparison" />
+
 #### Caso de uso 2 - Comparação de performance entre plataformas
 
 Ori Mind Me é um aplicativo de lembretes, que permite gerar lembretes tanto pelo app mobile quanto pelo plug-in do ChatGPT. Todos os lembretes são registrados na AppsFlyer como eventos in-app. Isso permite que o profissional de marketing compare na AppsFlyer a quantidade e o tipo de lembretes gerados por cada plataforma.
 
+<div id="use-case-3---show-me-the-movie" />
+
 #### Caso de uso 3 - Mostre-me o filme
 
 Webmovs é um serviço de streaming que promove um novo plug-in do ChatGPT em anúncios de CTV. O plug-in permite que os usuários descrevam detalhes sobre o filme que desejam assistir e transmiti-lo. A AppsFlyer pode atribuir a atividade do plug-in às impressões de CTV.
+
+<div id="join-the-beta" />
 
 ## Participe do beta
 

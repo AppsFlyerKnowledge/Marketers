@@ -27,6 +27,8 @@ x-zendesk:
 
 > **Resumo:** A mensuração da performance web permite que você identifique quais canais de mídia e campanhas trazem usuários para o seu site, analisando como essas visitas influenciam ações subsequentes ao longo do tempo. Com essa solução, você captura e atribui as interações dos usuários de forma integrada, impulsionando a aquisição (primeiras visitas) e o reengajamento de usuários, desde a primeira visita até a mensuração do lifetime value (LTV).
 
+<div id="about-web-performance-measurement" />
+
 ## Sobre a mensuração da performance web
 
 A atribuição web é um processo que identifica quais canais de mídia e campanhas incentivam os usuários a visitar um site, impactando ações subsequentes.
@@ -35,9 +37,13 @@ Uma visita web representa tanto uma atividade de navegação (browsing) quanto o
 
 Neste artigo, descrevemos o processo completo de mensuração da performance web, explicando como todas as interações dos usuários são identificadas, capturadas e mensuradas. Esse processo oferece suporte tanto à aquisição de usuários (para identificar e atribuir primeiras visitas) quanto ao retargeting/reengajamento (para mensurar o impacto de campanhas específicas, focadas em usuários que voltam a acessar seu site).
 
+<div id="if-you-use-people-based-attribution-pba" />
+
 #### People-Based Attribution (PBA)
 
 Se você usa <Anchor target="_blank" href="/marketers/pt/docs/people-based-attribution-pba">People-Based Attribution (PBA)</Anchor>, considere adotar a nova solução de mensuração da performance web para ter uma atribuição mais granular e sinais adicionais.
+
+<div id="the-web-performance-measurement-flow" />
 
 ### Fluxo de mensuração da performance web
 
@@ -52,6 +58,8 @@ O fluxo de mensuração da performance web segue uma sequência de etapas, onde 
 7. [Período pré-aquisição](#7-preacquisition-period): atribui eventos intermediários que ocorrem entre a primeira visita e o evento de aquisição.
 8. [Reengajamento e reaquisição](#8-reengagement-and-reacquisition): atribui usuários recorrentes (que voltam a visitar o site) com base em janelas de inatividade e determina se é um reengajamento ou uma reaquisição.
 9. [Mensuração de LTV](#9-ltv-measurement): atribui eventos e receita contínuos para mensurar o valor do lifetime value (LTV) do usuário dentro da janela de atribuição.
+
+<div id="the-web-performance-measurement-process---step-by-step" />
 
 ## Mensuração da performance web: passo a passo
 

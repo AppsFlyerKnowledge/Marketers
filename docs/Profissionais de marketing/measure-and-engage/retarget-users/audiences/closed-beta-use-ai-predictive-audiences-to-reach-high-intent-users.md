@@ -29,13 +29,19 @@ x-zendesk:
 
 <Embed title="[Beta fechado] Use a IA do Predictive Audiences para alcançar usuários com elevada intenção de compra" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
+<div id="about-predictive-audiences" />
+
 ## Sobre o Predictive Audiences
 
 Como parte do <Anchor target="_blank" href="/marketers/pt/docs/audiences-guide">Audiences</Anchor> da AppsFlyer, o Predictive Audiences usa IA para ajudar você a criar audiências com maior probabilidade de realizar uma ação específica. Utilize esse recurso para prever quem tem maior probabilidade de comprar nos próximos 7 dias, concentrar campanhas nos usuários com elevada intenção de compra e melhorar a eficiência dessas campanhas.
 
 Você pode ajustar o intervalo de probabilidade para criar uma audiência mais restrita de usuários com maior intenção de compra ou uma audiência mais abrangente com maior alcance. Em seguida, você pode conectar essa audiência aos seus parceiros para fazer a ativação. Depois de criada, a audiência é atualizada diariamente e enviada de maneira automática e contínua aos seus parceiros associados.
 
+<div id="create-a-predictive-audience" />
+
 ## Criar uma previsão de audiências
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
@@ -83,6 +89,8 @@ Para definir o intervalo de probabilidade:
 
    O **tamanho estimado da audiência** é atualizado em tempo real com base nas suas escolhas.
 
+<div id="compare-audiences-optional" />
+
 #### Comparar audiências (opcional):
 
 A função de comparar audiências é opcional, permitindo que você compare sua previsão de audiência com uma ou mais audiências existentes. Ela permite comparar a performance através de indicadores-chave (KPI), tais como o ROAS (retorno do gasto com anúncios) e a taxa de conversão. Você pode selecionar qualquer audiência para comparar, porém, os dados de performance estão disponíveis apenas para campanhas no Facebook, TikTok, Google ou Snap.
@@ -108,6 +116,8 @@ Sua primeira previsão de audiência estará pronta em 24 horas e será ativada 
 Após a criação, sua nova previsão de audiência irá aparecer na tabela **Audiences**.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

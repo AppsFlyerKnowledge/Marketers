@@ -18,6 +18,8 @@ x-zendesk:
 ---
 > **At a glance:** Use a página de teste do SDK web para validar a instalação do SDK web e o registro de eventos em tempo real. Execute-o ao integrar o SDK pela primeira vez e sempre que adicionar ou alterar um evento.
 
+<div id="overview" />
+
 ## Retorna um objeto JSON com os dados brutos de consentimento do DMA conforme enviados do anunciante para a AppsFlyer
 
 A página de teste do SDK web abre seu site em uma nova guia do navegador com uma sessão de teste dedicada. Toda a atividade do SDK web nessa guia, incluindo carregamentos de página, eventos e chamadas de identidade, é transmitida ao vivo para a página de teste, onde você pode inspecionar cada evento e suas propriedades. Isso permite verificar sua implementação em minutos, sem esperar que os dados apareçam nos relatórios.
@@ -30,12 +32,16 @@ Use-o para verificar se:
 
 Execute um teste sempre que integrar o SDK pela primeira vez ou alterar a configuração de eventos.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 Antes de executar um teste, certifique-se de que tem:
 
 * Um aplicativo web na AppsFlyer. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/adding-an-app-to-appsflyer#web">Criar um aplicativo web na AppsFlyer</Anchor> em Mensuração de performance web.
 * O SDK web da AppsFlyer está implementado nas páginas que você quer testar. Para mais informações, consulte a seção <Anchor target="_blank" href="/marketers/pt/docs/integrate-appsflyer-web-sdk">Integrar o SDK web da AppsFlyer</Anchor>.
+
+<div id="run-a-test" />
 
 ## Executar teste
 
@@ -53,6 +59,8 @@ Depois que os pré-requisitos estiverem em vigor, execute um teste da seguinte f
 >
 > O teste captura apenas a atividade da aba do navegador que ele abre. Visitar seu site diretamente sem iniciar um teste não exibe eventos nesta página.
 
+<div id="view-the-live-events-table" />
+
 ## Ver a tabela de eventos ao vivo
 
 Cada linha da tabela **Eventos ao vivo** mostra o timestamp, o tipo, o nome e o status de validação do evento.
@@ -69,6 +77,8 @@ A tabela **Eventos ao vivo** também oferece suporte a:
 * **Pesquisar:** Use a caixa de pesquisa para encontrar um evento específico.
 * **Exportar:** Clique em **Exportar CSV** para baixar os resultados.
 
+<div id="restart-or-clear-a-test" />
+
 ## Reiniciar ou limpar um teste
 
 Use uma destas opções para reiniciar ou limpar um teste:
@@ -76,6 +86,8 @@ Use uma destas opções para reiniciar ou limpar um teste:
 * **Reiniciar teste:** Limpa a lista de eventos e abre uma nova aba do navegador com uma nova sessão de teste. Você pode usar isso para iniciar uma execução limpa.
 * **Reiniciar com novo aplicativo / URL:** Reabre a caixa de diálogo de configuração para testar um aplicativo web ou uma página diferente.
 * **Limpar logs:** Limpa apenas a lista de eventos. A sessão de teste atual e a aba do navegador permanecem ativas, então novos eventos continuam sendo transmitidos.
+
+<div id="common-testing-scenarios" />
 
 ## Cenários comuns de teste
 

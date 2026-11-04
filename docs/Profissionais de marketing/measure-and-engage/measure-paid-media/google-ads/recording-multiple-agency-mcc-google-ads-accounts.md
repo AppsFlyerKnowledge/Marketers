@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **Num relance:** configure o registro para diferentes contas do Google Ads para que o tráfego seja atribuído corretamente.
 
+<div id="introduction" />
+
 ## Introdução
 
 O tráfego do Google Ads provém muitas vezes de várias contas, como agências especializadas em Google Ads ou mesmo diferentes equipes internas da organização do proprietário do app. É importante entender como configurar registros para diferentes contas do Google Ads para que a atribuição seja feita às partes corretas.
 
 Este artigo aborda esses casos, desde a medição das agências até a utilização de MCCs e também de MCCs de MCCs.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -36,9 +40,13 @@ Este artigo aborda esses casos, desde a medição das agências até a utilizaç
 
 Para mais detalhes sobre a configuração da conta da agência no Google Ads<Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-agencies">, clique aqui</Anchor>.
 
+<div id="important-definitions" />
+
 ## Definições importantes
 
 * **ID de link** - **um** **identificador único de um app definido no Google Ads**.
+
+<div id="note-1" />
 
 > 📘 **Observação**
 >
@@ -49,9 +57,13 @@ Para mais detalhes sobre a configuração da conta da agência no Google Ads<Anc
 * **MCC** - Uma conta de administrador do Google Ads (MCC, antiga My Client Center (Minha Central de Clientes)) é uma **ferramenta** do Google Ads **criada para gerir várias contas do Google Ads**.  
   Com uma conta MCC, você pode conectar várias contas e visualizá-las em um único lugar<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">(Ler mais</Anchor>).
 
+<div id="setting-up-google-ads-recording" />
+
 ## Configurar o registro do Google Ads
 
 A AppsFlyer pode registrar um único ID de link por app. **Quando várias contas lidam com o mesmo app, todas devem utilizar o mesmo ID de link.** Isso deve ser configurado no dashboard da AppsFlyer para fins de atribuição.
+
+<div id="sharing-google-link-id-with-another-account" />
 
 ### Compartilhar o ID de link do Google com outra conta
 
@@ -59,16 +71,22 @@ Os proprietários de apps com uma única conta do Google Ads ou que planejam tra
 
 O proprietário de app pode compartilhar qualquer ID de link com qualquer outra conta, identificada pelo seu ID de cliente, como mostra a imagem abaixo. A seguir, você encontra mais detalhes sobre o <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-agencies#configurar-a-atribuição-do-google-ads-para-agências">compartilhamento do ID de link com uma agência</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Importante**
 >
 > * Se a MCC for o Administrador de Registros (Recording Manager) das subcontas, não é necessário compartilhar o ID de link da MCC com as subcontas. No entanto, se uma subconta, sob a MCC, for o seu próprio administrador de registros, então a MCC deve compartilhar o ID de link com o Administrador de Registros da subconta.
 > * Importar conversões Se a MCC for o administrador de registros, então a MCC é responsável pela importação de conversões para as subcontas controladas por ela. No entanto, se uma subconta na MCC for o seu próprio administrador de registros, essa subconta também deve importar as conversões.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
 > * No painel de controle do Google Ads, clique em (3 pontos) >> ***Contas associadas*** >> ***Detalhes da análise de apps de terceiros*** [![](https://files.readme.io/d3b59e7e4a46e8ae4c075c02a652faed58c3b48340e2f0d253a1330694bdad93-49929446651665.png)](https://files.readme.io/d3b59e7e4a46e8ae4c075c02a652faed58c3b48340e2f0d253a1330694bdad93-49929446651665.png)
 > * A outra conta precisa aprovar o "compartilhamento".
 > * Assim, a outra conta estará autorizada a executar campanhas do Google Ads para o app.
+
+<div id="tip" />
 
 > 👍 **Dica**
 >
@@ -86,11 +104,15 @@ Essa configuração pode ser alterada posteriormente, se necessário.
 
 ![mmc-googleads-settings.png](https://files.readme.io/89355ae020242b00c2002153b46ee3525fa71568e581533f2822cac500d28eb7-49929446653713.png)
 
+<div id="mcc-of-mccs" />
+
 ## MCC de MCCs
 
 [![](https://files.readme.io/b86511bca7ae029df80cafe46d21aaeb7bb7b4b34b3f65e2368e5ec4064aa614-49929446654097.png)](https://files.readme.io/b86511bca7ae029df80cafe46d21aaeb7bb7b4b34b3f65e2368e5ec4064aa614-49929446654097.png)
 
 Os grandes anunciantes que trabalham com várias agências podem utilizar uma conta MCC de MCCs. Semelhante à conta MCC padrão. Recomenda-se que seja a MCC de nível mais elevado dos MCC ou do Anunciante a gerar o ID da link. A configuração correta para esta estrutura requer que as subcontas selecionem o nível correto de MCC (muito provavelmente, o nível mais elevado de MCC) como o administrador de registros. Se esta for a configuração utilizada, então o ID de link não precisa de ser compartilhado com subcontas e as conversões de importação mais gerais são suficientes.
+
+<div id="tip-1" />
 
 > 👍 **Dica**
 >
@@ -101,6 +123,8 @@ Os grandes anunciantes que trabalham com várias agências podem utilizar uma co
 > * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">Trabalhar com contas administradas</Anchor>
 >
 > Para questões relacionadas a estruturas de conta e recomendações, consulte o seu representante do Google.
+
+<div id="opening-a-google-ads-campaign" />
 
 ## Abrir uma campanha do Google Ads
 

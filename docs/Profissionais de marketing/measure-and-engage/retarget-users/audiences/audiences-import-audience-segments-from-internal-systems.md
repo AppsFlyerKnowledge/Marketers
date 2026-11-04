@@ -25,11 +25,15 @@ x-zendesk:
 
 > **Resumo:** você pode importar segmentos de audiências predefinidas de seus sistemas internos (como BI e CRM) para o Audiences, e usá-los como seu ponto central para conectar e manter todos esses segmentos com seus parceiros publicitários.
 
+<div id="why-import-audiences" />
+
 ## Por que importar audiências?
 
 Em certas situações, você pode ter segmentos de audiências predefinidos em seus sistemas internos. Ao importar essas audiências (como listas de device e/ou user IDs) para a AppsFlyer, você pode usar o Audiences como o ponto central para conectar e gerenciar todos os seus segmentos com seus parceiros publicitários. Além disso, você pode aproveitar os recursos do Audiences, tais como ID matching/enriquecimento de dados e métricas de campanha conectadas.
 
 Considere os exemplos seguintes:
+
+<div id="examples" />
 
 > 📄 **Exemplos**
 >
@@ -56,6 +60,8 @@ Considere os exemplos seguintes:
 
 Veja os conceitos e procedimentos relacionados com a nova funcionalidade de importação do Audiences V2.0, que inclui opções para importação por CSV e API.
 
+<div id="imported-audience-types" />
+
 ## Tipos de audiências importadas
 
 Quando importar uma audiência, você deverá definir o seu tipo, determinando como a AppsFlyer processa e envia a audiência para os parceiros. **Isso é feito na primeira importação de uma audiência e não pode ser alterado posteriormente.**
@@ -72,12 +78,16 @@ Quando importar uma audiência, você deverá definir o seu tipo, determinando c
 * É enviado para os parceiros sem seguir a política de identificadores de usuário da sua conta (ou seja, todos os identificadores importados são enviados para os parceiros).
 * Pode ser importado usando a funcionalidade de importação V2.0 (descrita neste artigo).
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > * Todas as audiências existentes a partir de 23 de novembro de 2021, **são designadas como audiências "como estão" e não podem ser alteradas para audiências padrão.** Pode continuar a atualizar essas audiências conforme necessário, usando a funcionalidade de importação V2.0 (descrita neste artigo).
 > * Você pode ter até 500 audiências importadas ativas de uma só vez.
 > * Apenas um administrador pode designar uma nova audiência importada para como "como está".
 > * Ao importar uma audiência que possui um CUID como identificador, a associação de CUID deve ter sido recebida pela AppsFlyer na instalação (e não apenas em eventos pós-instalação), garantindo a associação completa com os dispositivos relevantes e um enriquecimento eficaz com os identificadores de dispositivos (como GAID, IDFA, etc.). <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid#configuração-do-cuid">Saiba mais</Anchor>
+
+<div id="audience-import-procedures" />
 
 ## Procedimentos para importação de audiências
 
@@ -99,7 +109,11 @@ Prepare um arquivo CSV com as seguintes especificações:
 
 <Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
+<div id="identifier-hash" />
+
 #### hash do identificador
+
+<div id="note" />
 
 > 📘 **Importante!**
 >
@@ -186,6 +200,8 @@ A sua audiência já aparece no dashboard do Audiences, e já foi importada e co
 
 A sua audiência foi atualizado usando o arquivo CSV. É importante observar, no entanto, que a lista de audiências revisada ainda não está disponível para upload para os parceiros, pois as audiências importadas são processadas com uma <Anchor target="_blank" href="/marketers/pt/docs/about-data-freshness-and-timezone-support#eod">atualização de dados diária</Anchor>.
 
+<div id="error-messages" />
+
 ### Mensagens de erro
 
 | Mensagem | Causa | O que fazer |
@@ -243,6 +259,8 @@ A Import Audience API é usada para adicionar ou remover dispositivos de uma aud
 12. Prepare o pedido da API incluindo os identificadores de usuário/dispositivo e envie-o para a AppsFlyer.
 
 **Atenção:** Ao importar através da API, a atualização da audiência levará 24 horas.
+
+<div id="response-codes" />
 
 ### Códigos de resposta
 

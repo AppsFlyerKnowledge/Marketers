@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Em resumo:** o OneLink Standalone Deep Linking Suite oferece Deep linking e redirecionamento para jornadas de Mídias próprias (email-to-app, Web-to-app, QR-to-app, social-to-app, referrals, SMS/text etc.), sem exigir um pacote de Atribuição de mídia paga.
 
+<div id="about-the-onelink-standalone-deep-linking-suite" />
+
 ## Sobre o OneLink Standalone Deep Linking Suite
 
 O Standalone Deep Linking Suite foi desenvolvido para equipes que precisam de **Deep linking, redirecionamento e Atribuição confiáveis e escaláveis para canais próprios**, sem integrações envolvendo canais de mídia paga e postback de Parceiros.
@@ -30,6 +32,8 @@ Ele está disponível em três planos de assinatura:
 * Padrão
 * Advanced
 * Premium
+
+<div id="whats-included" />
 
 ### Esse plano inclui
 
@@ -41,7 +45,11 @@ Todos os planos do Standalone Deep Linking Suite oferecem suporte aos principais
 
 Os planos diferem principalmente em escala, recursos de gerenciamento de links e acesso a funcionalidades avançadas, como domínios com marca, criação em massa de links, Smart Banners, API do OneLink, integração com ESP e Data Locker.
 
+<div id="standalone-deep-linking-suite-plans-comparison" />
+
 ## Comparação dos planos do Standalone Deep Linking Suite
+
+<div id="key-differences" />
 
 ### Principais diferenças
 
@@ -50,6 +58,8 @@ Os planos diferem principalmente em escala, recursos de gerenciamento de links e
 | **Padrão** | Primeiros passos com Deep linking próprio | Inclui recursos essenciais de Deep linking e Deferred deep linking para jornadas de Mídias próprias, além de Smart Script e convites de usuário. |
 | **Advanced** | Escalar operações de link entre equipes | Inclui tudo do plano **Standard**, além de criação em massa de links, domínios com marca, Smart Banners, API do OneLink (até 100 mil solicitações por mês) e exportação de dados brutos pela interface. |
 | **Premium** | Executar programas avançados de deep linking próprio | Inclui tudo do plano **Advanced**, além de limites mais altos da API do OneLink (até 7,5 milhões de solicitações por mês), integração com ESP e Data Locker. |
+
+<div id="feature-comparison" />
 
 ### Comparação de recursos
 
@@ -65,6 +75,8 @@ Os planos diferem principalmente em escala, recursos de gerenciamento de links e
 | Relatório do Data Locker | **X** | **X** | ✓ |
 | Exportação de dados brutos da interface | **X** | ✓ | ✓ |
 | Customer Success Manager | **X** | ✓ | ✓ |
+
+<div id="notes" />
 
 > 📘 **Notas**
 >

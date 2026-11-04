@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **Visão geral:** os relatórios de dados brutos do PBA estão disponíveis via Data Locker.
 
+<div id="pba-raw-data-reports" />
+
 ## Relatórios de dados brutos do PBA
 
 Use os relatórios de dados brutos do PBA para analisar as jornadas e ações do usuário.
+
+<div id="report-descriptions" />
 
 ### Descrições do relatório
 
@@ -36,11 +40,15 @@ Tópicos do relatório de dados brutos do PBA
 | <span id="website-visits"></span>[Visitas ao site](#visitas%20e%20eventos%20do%20site) | <ul><li>Visitas ao site.</li><li>Mensure a exposição e o engajamento do usuário com campanhas de tráfego da web.</li></ul> |
 | <span id="website-events"></span><Anchor target="_blank" href="/marketers/pt/docs/pba-website-attribution-dashboard">Eventos do site</Anchor> | <ul><li>Contêm as ações realizadas pelos visitantes do site, como inscrição ou compra.</li><li>Os eventos são atribuídos à última visita não direta à web ocorrida nos últimos 30 dias.</li><li>Os parâmetros de atribuição associados ao evento podem incluir fonte de mídia, canal de mídia, campanha e assim por diante.</li><li>Use esses parâmetros para otimizar seus esforços de marketing.</li><li>Analise o comportamento do usuário por fonte de mídia.</li><li>Os valores desses campos são determinados por meio da visita atribuída usando as <Anchor target="_blank" href="/marketers/pt/docs/pba-media-source-attribution-rules">regras de atribuição de fonte de mídia do PBA.</Anchor></li><li>A intenção é associar eventos a uma visita específica ao site e não a uma visualização de página específica.</li><li>Use este tópico para descobrir quais fontes e campanhas impulsionam os usuários e quais ações os usuários realizam.</li></ul> |
 
+<div id="raw-data-report-fields" />
+
 ## Campos do relatório de dados brutos
 
 <div id="website-visits-and-website-events" />
 
 <Accordion title="Visitas ao site e eventos do site">
+
+<div id="sample-reports" />
 
 #### Relatórios de amostra
 
@@ -50,6 +58,8 @@ Tópicos do relatório de dados brutos do PBA
 Os campos de dados brutos são preenchidos em parte a partir de dados originados no link de atribuição do usuário do aplicativo mobile e no evento de instalação do aplicativo.
 
 [Faça o download da lista de campos como um arquivo CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmRBeUQS-xeiv069vIgnfBoJW8Wfl1ojv0rAK-pcOlAzNveG1lqvExVdhWfgCKIpJxczWksUiHjSa3/pub?gid=0&single=true&output=csv)
+
+<div id="field-list-website-visits-and-website-events-report" />
 
 #### Visitas ao site da lista de campos e relatório de eventos do site:
 
@@ -113,6 +123,8 @@ Os campos de dados brutos são preenchidos em parte a partir de dados originados
 
 </Accordion>
 
+<div id="procedures" />
+
 ### Procedimentos
 
 <div id="setting-up-pba-reports-in-data-locker" />
@@ -153,6 +165,8 @@ Combine dados de aplicativos mobile e de sites.
   * O PBA pode determinar que um usuário da web e um usuário mobile são a mesma pessoa.
   * Nesse caso, os relatórios da web com o PBA incluem um ID de anúncios mobile: ID de anúncios do Android, IDFA do iOS, OAID ou ID de anúncios da Amazon.
   * Em seguida, combine relatórios mobile e da web com base no ID de anúncios mobile.
+
+<div id="use-cases-for-pba-and-mobile" />
 
 #### **Casos de uso para PBA e dispositivos mobile**
 

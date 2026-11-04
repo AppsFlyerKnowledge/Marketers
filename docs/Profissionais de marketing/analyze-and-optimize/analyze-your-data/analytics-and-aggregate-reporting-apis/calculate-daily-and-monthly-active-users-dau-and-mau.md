@@ -21,21 +21,29 @@ x-zendesk:
 ---
 > **Resumo:** saiba como calcular os usuários ativos diários e mensais para obter insights valiosos sobre as suas campanhas
 
+<div id="overview" />
+
 ## Visão geral
 
 Daily Active Users (DAU) e Monthly Active Users (MAU) são métricas fundamentais para entender o engajamento no aplicativo e o comportamento geral de um usuário. Essas métricas fornecem insights valiosos sobre a sua base de usuários ativos, incluindo o stickiness do usuário, performance de uma campanha e tendências de crescimento ao longo do tempo.
 
 Esse artigo explica como calcular o DAU e MAU utilizando consultas em duas tabelas de dados brutos do Data Locker, que representam a aquisição de usuários e o tráfego de retargeting: as tabelas `sessions` e `sessions_retargeting`.
 
+<div id="note" />
+
 > 📘 **Observação:**
 >
 > A partir de fevereiro de 2025, o dashboard de atividades na AppsFlyer mostrará dados unificados (UA e retargeting) por padrão. Talvez você observe um pequeno delta entre os dados brutos e os números do dashboard por conta de <Anchor target="_blank" href="/marketers/pt/docs/activity-metrics-in-my-dashboards#especificações-e-limitações">ajustes algorítmicos aprovados</Anchor>.
+
+<div id="querying-for-active-unique-users" />
 
 ### Consulta de usuários exclusivos ativos
 
 Para calcular os usuários exclusivos, use `advertising_id` como identificador primário na sua consulta. Se o `advertising_id` não estiver disponível, substitua-o por `appsflyer_id`. Esse método se aplica apenas a aplicativos configurados no <Anchor target="_blank" href="/marketers/pt/docs/measure-reinstalls#attributed-to-the-first-install">modo de primeira instalação</Anchor>.
 
 Para aplicativos que não usam esse modo, recomendamos a aplicação de `count(distinct appsflyer_id)`.
+
+<div id="calculate-daily-active-users-dau" />
 
 ## Calcular Daily Active Users (DAU)
 
@@ -123,6 +131,8 @@ FROM all_sessions;
 ```
 
 </Accordion>
+
+<div id="calculate-monthly-active-users-mau" />
 
 ## **Calcular Monthly Active Users (MAU)**
 

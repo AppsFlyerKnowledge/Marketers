@@ -26,15 +26,21 @@ x-zendesk:
 
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Dashboard de cohort
 
 Leitura relacionada: <Anchor target="_blank" href="/marketers/pt/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">Diferenças entre as variações de cohort</Anchor>
 
 Para usar o Coorte, selecione usuários de um ou mais aplicativos e segmente-os por horário da conversão. Métricas de coorte como receita, ROI e taxas de conversão de eventos estão disponíveis. Para comparação, divida o coorte em dimensões como campanha ou fonte de mídia. Isso pode revelar padrões ou alterações no desempenho em relação aos ciclos de vida do usuário ou da campanha. Consulte <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Casos de uso de coorte</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Observações**
 >
 > Quer saber mais sobre relatórios de coorte? Confira este <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">curso curto e informativo</Anchor> no Portal de Aprendizado da AppsFlyer.
+
+<div id="using-cohort" />
 
 ## Usando Coorte
 
@@ -111,6 +117,8 @@ Para usar o Coorte, selecione usuários de um ou mais aplicativos e segmente-os 
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## Princípios de cohort
 
 <div id="cohort-periods" />
@@ -155,16 +163,22 @@ Há 2 tipos de tendência de cohort:
 * **Tipo de tendência—desempenho da vida útil do usuário**
 * **Tipo de tendência—KPI por tempo de atribuição**
 
+<div id="user-lifetime-performance" />
+
 #### **Usuários (4)**
 
 * Cada coluna na tabela ou ponto no gráfico representa outro período de cohort (hora/dia/semana/mês). O dia de conversão é chamado de dia pós-conversão 0. O primeiro período pós-conversão é o período de cohort 1 e assim por diante. Isso permite comparar a performance do usuário pós-conversão, começando com o dia da conversão, conhecido como dia 0 do cohort.
 * Você pode selecionar para quais períodos de cohort obter dados, até o máximo de cada opção de granularidade (hora/dia/semana/mês).
+
+<div id="kpi-by-attribution-time" />
 
 #### **Não está disponível para a tendência KPI por tempo de atribuição.**
 
 * **KPI por tempo de atribuição:** usuários são agrupados pela **hora** da conversão. Isso permite avaliar o desempenho da campanha ao longo do tempo e visualizar os KPIs da campanha em relação à hora da conversão
 * O número máximo de períodos de cohort que você pode selecionar para obter dados é 5.
 * Se você selecionar a visualização dos dados como gráfico em vez de tabela, o gráfico exibirá apenas 1 período de cohort (o menor período selecionado).
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### Exemplo: tendência de desempenho da vida útil do usuário x KPI por tendência de tempo de atribuição
 
@@ -253,6 +267,8 @@ Use o controle **Cohort em tempo real** para selecionar o modo de exibição de 
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="cohort-for-agencies" />
@@ -272,6 +288,8 @@ Use o controle **Cohort em tempo real** para selecionar o modo de exibição de 
 
 <Accordion title="Casos de uso">
 
+<div id="revenue-sum-by-geo" />
+
 #### Soma da receita por geo
 
 **Gráfico: receita acumulada por usuário**
@@ -281,6 +299,8 @@ Use o controle **Cohort em tempo real** para selecionar o modo de exibição de 
 **Tabela: receita por dia**
 
 [![Full_cohort2_us-en.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+
+<div id="in-app-event-conversion" />
 
 #### Conversão de evento in-app
 

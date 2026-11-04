@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** Envie dados para o SDK do Adobe Launch e o SDK da AppsFlyer com a implementação única da extensão do SDK do Adobe Launch da AppsFlyer.
 
+<div id="overview" />
+
 ## Visão geral
 
 O SDK do Adobe Launch é parte integrante da Adobe Experience Platform. O Adobe Experience Platform ajuda as empresas a reunir, consolidar e analisar dados de várias aplicações e plataformas. Permite aos proprietários de empresas e programadores compreender melhor o comportamento dos clientes para otimizar a experiência e o fornecimento de conteúdos. Se seu aplicativo implementar o SDK do Adobe Launch e o SDK da AppsFlyer, será possível enviar dados para ambos com uma única implementação da **extensão do SDK do Adobe Launch da AppsFlyer**. Isso reduz a complexidade global do seu processo de desenvolvimento e contribui para uma base de código mais limpa e de fácil manutenção.
@@ -37,9 +39,13 @@ O SDK do Adobe Launch é parte integrante da Adobe Experience Platform. O Adobe 
 >
 > Se estiver usando a extensão do Adobe Launch, não é necessária a <Anchor target="_blank" href="/marketers/pt/docs/adobe-analytics-integration-with-appsflyer">integração padrão do Adobe Analytics</Anchor>.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 São necessárias algumas coisas antes de integrar a extensão Adobe SDK da AppsFlyer.
+
+<div id="get-your-appsflyer-dev-key" />
 
 <Accordion title="Recupere a sua chave do desenvolvedor da AppsFlyer">
 
@@ -50,6 +56,8 @@ São necessárias algumas coisas antes de integrar a extensão Adobe SDK da Apps
 
 </Accordion>
 
+<div id="get-your-app-id" />
+
 <Accordion title="Obtenha seu ID do aplicativo">
 
 * Para Android: o ID da aplicação é o nome do pacote, por exemplo, exemplo.com.app.
@@ -57,9 +65,13 @@ São necessárias algumas coisas antes de integrar a extensão Adobe SDK da Apps
 
 </Accordion>
 
+<div id="step-1-configuring-adobe-launch" />
+
 ## Passo 1: Configuração do Adobe Launch
 
 Siga as instruções aqui para configurar o Adobe Launch.
+
+<div id="11-creating-a-new-property-in-adobe-launch" />
 
 <Accordion title="1.1 Crie uma nova propriedade no Adobe Launch">
 
@@ -74,6 +86,8 @@ Siga as instruções aqui para configurar o Adobe Launch.
 
 </Accordion>
 
+<div id="12-installing-required-adobe-launch-extensions" />
+
 <Accordion title="1.2 Instalar as extensões necessárias do Adobe Launch">
 
 Instale as seguintes extensões no Adobe Launch:
@@ -84,6 +98,8 @@ Instale as seguintes extensões no Adobe Launch:
 * Extensão SDK da AppsFlyer - envia dados e eventos para a Adobe e a AppsFlyer usando o SDK do Adobe Launch.
 * Perfil do Adobe - permite que o SDK armazene dados num perfil do lado do cliente.
 * Adobe Mobile Core - permite a configuração do SDK para mobile e fornece acesso a eventos e condições do ciclo de vida predefinidos.
+
+<div id="installing-adobe-analytics-extension" />
 
 #### Instalar a extensão do Adobe Analytics
 
@@ -96,6 +112,8 @@ Instale as seguintes extensões no Adobe Launch:
 7. Em ***Conjuntos de relatórios***especifique o conjunto de relatórios criados no passo 2.
 8. Clique em ***Salvar***.
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### Instalar a extensão SDK da AppsFlyer
 
 1. Selecione ***Extensões*** novamente.
@@ -104,6 +122,8 @@ Instale as seguintes extensões no Adobe Launch:
 4. Em ***Chave do desenvolvedor da AppsFlyer*** especifique a chave do desenvolvedor que você obteve na etapa de pré-requisitos.
 5. Ative ***Enviar dados de atribuição para o Adobe Analytics***. Observe que existem algumas <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention">restrições ao compartilhamento de dados ao nível do usuário com plataformas de análise de terceiros</Anchor>.
 6. Clique em ***Salvar***.
+
+<div id="install-profile-and-mobile-core-extension" />
 
 #### Instale a extensão Profile e Mobile Core
 
@@ -114,9 +134,13 @@ Instale as seguintes extensões no Adobe Launch:
 
 </Accordion>
 
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
+
 ## Passo 2: Implementação da extensão do SDK da AppsFlyer para Adobe
 
 Siga as instruções nesta seção para implementar a extensão do SDK do Adobe no seu aplicativo.
+
+<div id="21-adding-the-sdk-to-the-app" />
 
 <Accordion title="2.1 Adicione o SDK ao aplicativo">
 
@@ -128,6 +152,8 @@ Siga as instruções nesta seção para implementar a extensão do SDK do Adobe 
 4. Copie os trechos de código da janela que será aberta e siga as instruções. Se o Adobe estiver sendo configurado pelo profissional de marketing, envie estes trechos de código ao programador do aplicativo.
 
 </Accordion>
+
+<div id="22-publishing-the-environment" />
 
 <Accordion title="2.2 Publicando o ambiente">
 
@@ -145,6 +171,8 @@ Para completar a implementação do SDK, é necessário publicar o ambiente numa
 8. Em ***Aprovar***clique nos três pontos ao lado da biblioteca e selecione ***Compilar e publicar na produção***.
 
 </Accordion>
+
+<div id="23-adding-android-install-referrer-to-your-app" />
 
 <Accordion title="2.3 Como adicionar o referenciador da instalação do Android ao seu aplicativo">
 
@@ -195,9 +223,13 @@ Os desenvolvedores que estiverem usando ProGuard, e quiserem usar a API do novo 
 
 </Accordion>
 
+<div id="24-setting-required-permissions" />
+
 <Accordion title="2.4 Definindo permissões necessárias">
 
 Adicionar permissões ajuda a aumentar a taxa de <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#probabilistic-modeling">atribuição de modelagem probabilística</Anchor>. Também permite que o SDK envie mais dados, como Wifi e dados da rede da operadora. Você pode encontrar esses dados em <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview">relatórios de dados brutos</Anchor> e usá-los para análise e otimização de campanhas.
+
+<div id="add-required-permissions" />
 
 #### Adicionando permissões necessárias
 
@@ -213,6 +245,8 @@ Adicionar permissões ajuda a aumentar a taxa de <Anchor target="_blank" href="/
 
 </Accordion>
 
+<div id="using-the-adobe-sdk-extension" />
+
 ## Usando a extensão do SDK do Adobe
 
 Agora você pode começar a usar a extensão do SDK do Adobe para enviar dados para o Adobe e para a AppsFlyer.
@@ -222,6 +256,8 @@ Agora você pode começar a usar a extensão do SDK do Adobe para enviar dados p
 > **Importante!**
 >
 > Atualmente, a extensão do SDK do Adobe Launch apenas suporta a obtenção de dados de conversão e o envio de eventos. No entanto, ao adicionar a extensão do SDK do Adobe Launch à sua aplicação, o SDK da AppsFlyer também é adicionado. Como consequência, qualquer funcionalidade atualmente em falta na extensão do SDK Adobe pode ser implementada usando o SDK da AppsFlyer.
+
+<div id="sending-events" />
 
 <Accordion title="Enviando eventos">
 
@@ -268,6 +304,8 @@ Todos os <Anchor target="_blank" href="https://dev.appsflyer.com/docs/direct-dee
 Os dados de conversão estão disponíveis no Analysis Workspace do Adobe Analytics. Para mais informações sobre como migrar as regras de processamento do Adobe Mobile Services para o Adobe Analytics, consulte [a documentação da Adobe](https://experienceleague.adobe.com/en/docs/analytics/technotes/migrate-mobile).
 
 </Accordion>
+
+<div id="getting-data-for-deep-linking-and-deferred-deep-linking" />
 
 <Accordion title="Use-o para deep linking e deferred deep linking.">
 
@@ -335,6 +373,8 @@ Em AppDelegate.m, implemente o seguinte código:
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## Obtenha dados de conversão da AppsFlyer
 
 Os dados de conversão são enviados com eventos para a plataforma Adobe. Estas variáveis permitem aplicar lógica e regras às dimensões, métricas ou filtros do relatório.
@@ -359,6 +399,8 @@ Consulte a tabela a seguir para mapear as variáveis de contexto da AppsFlyer:
 | Hora do Clique AppsFlyer | appsflyer.click\_time |
 | Custo Original AppsFlyer | appsflyer.orig\_cost |
 | Campanha AppsFlyer | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### Usando os dados de conversão mapeados da AppsFlyer para análises
 

@@ -22,12 +22,16 @@ x-zendesk:
 ---
 > **Resumo:** APIs disponíveis para o acesso e atualização de dados por parte dos anunciantes.
 
+<div id="advertiser-api-list-and-interfaces" />
+
 ## Interfaces e lista de APIs disponíveis para anunciantes
 
 <span id="01EEQJERAWW3HY59HVPY3YWA0B"></span>Informações específicas sobre relatórios, ferramentas de relatórios e APIs:
 
 * <span id="01EEQJERAW2ZTBWBQKBCDSC76Z"></span><span id="01EEQJERAWQ2WCPV0207XM6FR4"></span><Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview"><span id="01EEQJERAX0W7RCYQWVM2M5S13"></span>APIs/ferramentas de relatórios de dados brutos</Anchor>
 * <span id="01EEQJERAWA09P200SGR985846"></span><span id="01EEQJERAW6AC6WR7E46T5DMHW"></span><Anchor target="_blank" href="/marketers/pt/docs/aggregated-and-analytics-reporting-overview">APIs/ferramentas de relatórios agregados e analytics</Anchor>
+
+<div id="interfaces-for-advertisers" />
 
 #### Interfaces para anunciantes
 

@@ -27,11 +27,15 @@ x-zendesk:
 
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## Sobre o dashboard Discovery
 
 Os dashboards de <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide">**otimização de criativos**</Anchor> permitem mensurar a performance dos seus criativos, mostrando todos os seus assets de todos os canais de mídia em um só lugar. Analise sua performance por dimensões selecionadas em diversas campanhas, canais e mais para acessar insights críticos antes de planejar, selecionar e produzir seu próximo conjunto de criativos.
 
 O **dashboard Discovery** da **otimização de criativos**, que usa tecnologia de IA, permite que a sua equipe criativa acesse todas as informações necessárias para criar assets de sucesso. Ele fornece dados granulares de performance para que você tome decisões informadas com base nos elementos ou recursos específicos de um criativo que contribuem para sua eficácia. Com esse dashboard, você pode criar e gerenciar criativos de sucesso com base em dados, otimizando-os para gerar o máximo impacto. Com base nas suas seleções de filtros, você pode visualizar sua galeria de criativos ou separá-los em cenas e elementos individuais.
+
+<div id="get-started" />
 
 ## Iniciar
 
@@ -41,6 +45,8 @@ Se você ainda não configurou a otimização de criativos, você pode encontrar
 
 * As métricas de dados de custo são exibidas de diferentes formas nos dashboards, dependendo se você possui ou não uma assinatura do ROI360. <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-guide#creative-optimization-roi360">Saiba mais</Anchor>
 * Os dados de impressões e cliques exigem que o compartilhamento de dados de custo esteja ativado nas integrações de parceiros. <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#cost-tab">Saiba mais</Anchor>
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
 
 ## Procedimentos—Usando o dashboard de Discovery
 
@@ -104,6 +110,8 @@ Veja uma <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-
 
 </Accordion>
 
+<div id="concepts" />
+
 ## Conceitos
 
 <div id="discovery-ai-search" />
@@ -120,6 +128,8 @@ Use para isolar padrões, validar hipóteses e identificar quais elementos impul
 2. Insira uma consulta em linguagem natural na barra de pesquisa do Discovery AI descrevendo o que você quer explorar.
 
 As consultas de pesquisa devem se referir apenas ao conteúdo criativo, como elementos visuais, texto, áudio, temas ou elementos da narrativa. Não pesquise por métricas de performance, por exemplo, "criativos com IPM acima de 2", nem pelo nome do criativo.
+
+<div id="what-you-can-search-for" />
 
 #### O que você pode pesquisar
 
@@ -139,7 +149,7 @@ A pesquisa oferece suporte a consultas em linguagem natural em várias dimensõe
 
 “Cena de rua urbana com carros de corrida”
 
-* ##### **Caraterística**
+* ##### <span id="text"></span>**Caraterística**
 
   Pesquise mensagens, títulos ou microcopy específicos.
 
@@ -151,7 +161,7 @@ Chamada para ação “Download now”
 
 “Legendas em espanhol”
 
-* ##### **Áudio**
+* ##### <span id="audio"></span>**Áudio**
 
 **Áudioudio**: efeitos sonoros específicos, música, ritmo, diálogos, idiomas de narração e estilos. Por exemplo, "narração masculina" ou "sotaque britânico".
 
@@ -161,7 +171,7 @@ Chamada para ação “Download now”
 
 “Locução motivacional”
 
-* ##### **Narrativa e conceitos de alto nível**
+* ##### <span id="narrative-and-high-level-concepts"></span>**Narrativa e conceitos de alto nível**
 
 Pesquise temas mais amplos, narrativas e tons emocionais.
 
@@ -172,6 +182,8 @@ Pesquise temas mais amplos, narrativas e tons emocionais.
 “Cena dramática de gameplay”
 
 “Narrativa de problema e solução”
+
+<div id="combining-properties" />
 
 #### Combinação de propriedades
 
@@ -186,6 +198,8 @@ Exemplos:
 “Cena de praia ao pôr do sol com uma narrativa alegre e música suave de piano”
 
 Combinar atributos ajuda a isolar padrões criativos mais claros e reduz o ruído na sua análise.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -354,6 +368,8 @@ Você também pode mudar para a aba **Semelhanças**, para acessar uma lista de 
 Para criativos e elementos, você pode abrir a aba **Semelhanças** clicando em **Encontrar semelhantes** em um card específico.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Visão geral:** Os tokens aumentam a segurança dos dados. Eles permitem que os usuários acessem dados por meio das APIs da AppsFlyer ou recebam dados de eventos usando chamadas de servidor para servidor. Os administradores podem gerenciar vários tokens enquanto mantêm a continuidade dos dados. Ou seja, eles podem criar, renomear e remover tokens de API e de servidor para servidor, conforme necessário.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
@@ -33,6 +35,8 @@ x-zendesk:
 > * Somente administradores podem visualizar e gerenciar tokens. Os usuários da conta não têm acesso à página Tokens.
 > * Mantenha seus tokens seguros, pois eles permitem o acesso aos seus dados. Não publique tokens em repositórios de código públicos.
 > * É recomendável substituir os tokens a cada 180 dias.
+
+<div id="about-appsflyer-tokens" />
 
 ## Sobre os tokens da AppsFlyer
 
@@ -45,10 +49,14 @@ Os tokens são usados para permitir que os usuários acessem dados por meio da A
 * Finalidades de teste
 * Uso com recursos específicos, como a OneLink API
 
+<div id="reaching-the-tokens-page" />
+
 ## Acessando a página de Tokens
 
 1. No topo, abra o menu da conta (menu suspenso do endereço de email) > **Centro de Segurança**.
 2. Na seção **Tokens de API da AppsFlyer**, clique em **Gerenciar seus tokens de API da AppsFlyer.** Os tokens atuais são exibidos.
+
+<div id="token-types" />
 
 ## Tipos de token
 
@@ -61,13 +69,19 @@ Existem vários tipos de tokens para diferentes propósitos. Por padrão, um tok
 | <span id="s2s-token"></span>Token S2S | Usado para enviar dados usando chamadas de servidor para servidor (S2S). |
 | <span id="mcp-token"></span>Token do MCP | Usado para autenticar sistemas de terceiros ou self-hosted com o MCP da AppsFlyer. |
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Se você estiver integrando um recurso que exige um token dedicado de API V2 (por exemplo, o <Anchor target="_blank" href="/marketers/pt/docs/beta-advanced-security-protect360-module">Módulo de Segurança Avançada</Anchor>) e já tiver atingido o limite de dois tokens, poderá reaproveitar um token de API V2 existente em vez de solicitar um novo — o mesmo token pode servir para vários casos de uso.
 
+<div id="manage-your-tokens" />
+
 ## Gerencie seus tokens
 
 Como administrador, você pode gerenciar vários tokens: ou seja, criar, renomear e remover tokens. O uso principal desse recurso seria substituir tokens atuais por novos. Isso é feito primeiro [criando](#criar-um-token) um novo token, implementando-o em seus sistemas e, depois que ele estiver disponível, [excluindo](#excluir-um-token) o token antigo.
+
+<div id="retrieve-tokens" />
 
 ### Recuperar tokens
 
@@ -76,12 +90,16 @@ Como administrador, você pode gerenciar vários tokens: ou seja, criar, renomea
 3. Os tokens disponíveis são exibidos.
 4. Copie o token necessário.
 
+<div id="create-a-token" />
+
 ### Criar um token
 
 1. Na página [**Tokens**](#acessando-a-página-de-tokens), clique em **+ Novo token**.
 2. Digite o nome do token.
 3. Selecione o tipo de token.
 4. Clique em **Criar token**.
+
+<div id="note-1" />
 
 > 📘 **Importante!**
 >
@@ -91,7 +109,11 @@ Como administrador, você pode gerenciar vários tokens: ou seja, criar, renomea
 >   * Use o token somente depois que o status mudar para **Ativo**.
 > * Certifique-se de implementar o novo token em seus sistemas
 
+<div id="delete-a-token" />
+
 ### Excluir um token
+
+<div id="warning" />
 
 > ❗️ **Atenção**
 >
@@ -103,9 +125,13 @@ Como administrador, você pode gerenciar vários tokens: ou seja, criar, renomea
 2. Você deve confirmar a exclusão do token digitando "Deletar token".
 3. Clique em **Salvar**.
 
+<div id="applications-of-the-api-v2-token" />
+
 ## Aplicações o token API V2
 
 Casos de uso para anunciantes e ad networks que usam o token API V2:
+
+<div id="advertiser" />
 
 ### AppsFlyer
 
@@ -124,6 +150,8 @@ Casos de uso para anunciantes e ad networks que usam o token API V2:
 | <Anchor target="_blank" href="/marketers/pt/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-management-api">API de importação de audiência</Anchor> |
 | <Anchor target="_blank" href="/marketers/pt/docs/beta-advanced-security-protect360-module">Integração do módulo de segurança avançada (Android)</Anchor> |
 
+<div id="ad-network" />
+
 ### Rede de anúncios
 
 | Token API V2 |
@@ -133,9 +161,13 @@ Casos de uso para anunciantes e ad networks que usam o token API V2:
 | <Anchor target="_blank" href="/partners/pt/docs/protect360-for-integrated-partners#api-de-relatórios-da-rede-de-anúncios-protect360">Relatórios do Protect360 para parceiros integrados.</Anchor> |
 | <Anchor target="_blank" href="/partners/pt/docs/incost-api-for-ad-networks">InCost</Anchor> |
 
+<div id="applications-of-the-s2s-token" />
+
 ## Aplicações do token S2S
 
 Casos de uso para anunciantes que usam o token S2S:
+
+<div id="advertiser-1" />
 
 ### AppsFlyer
 
@@ -144,21 +176,29 @@ Casos de uso para anunciantes que usam o token S2S:
 | <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-events-api-for-mobile-s2s-mobile">API de eventos de servidor para servidor (S2S mobile) para mobile</Anchor> |
 | <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-s2s-api-for-web-performance-measurement">API de eventos de servidor para servidor (S2S mobile) para web</Anchor> |
 
+<div id="ad-network-1" />
+
 ### Rede de anúncios
 
 | Token S2S |
 | --- |
 | <Anchor target="_blank" href="/marketers/pt/docs/set-up-appsflyer-preload-referrer-attribution">Atribuição de preload referrer da AppsFlyer</Anchor> |
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > Para a maioria das ad networks, a geração de tokens S2S não está mais disponível em autoatendimento. Portanto, os administradores não verão a opção de gerar um token S2S na interface do usuário. A geração de token está disponível em autoatendimento apenas para parceiros específicos.
+
+<div id="applications-for-the-onelink-token" />
 
 ## Aplicações para o token OneLink
 
 Casos de uso para anunciantes que usam o token da OneLink API:
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link">Crie</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-attribution-link">acesse</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-attribution-link">atualize</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-attribution-link">exclua</Anchor> URLs curtas do OneLink com parâmetros personalizados.
+
+<div id="applications-for-the-mcp-token" />
 
 ## Aplicativos para o token do MCP
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 Para configurar suas campanhas com a Wakeapp, siga as etapas abaixo.
 
+<div id="setting-up-wakeapp" />
+
 ## Configurando a WakeApp
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,6 +46,8 @@ A configuração da Wakeapp inclui 3 abas ativas: integração, link de atribui�
 
 Para obter uma descrição detalhada do header da Janela de Configuração de Parceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -55,17 +59,23 @@ Para obter uma descrição detalhada do header da Janela de Configuração de Pa
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em seu **primeiro acesso** aqui, você precisará ativar o toggle ***Ativar parceiro*** para habilitar a configuração dos parâmetros da aba de integração. O toggle DEVE permanecer ativado enquanto você trabalhar com o parceiro.  
 
 Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a Wakeapp após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Wakeapp.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -94,6 +104,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à Wakea
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -113,6 +125,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas à Wakeapp.
@@ -120,6 +134,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -148,6 +164,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 <Accordion title="Aba permissões">
 
 Nesta aba, você pode selecionar as permissões a serem concedidas à Wakeapp, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo ambos. Observe que, mesmo se a atribuição estiver desativada para a Wakeapp, a aba de permissões está ativa e você pode conceder controle à Wakeapp.
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 

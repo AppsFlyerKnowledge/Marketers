@@ -25,6 +25,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1)
 
+<div id="setting-up-vk-ads" />
+
 ## Configurando o VK Ads
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,21 +46,31 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para mais informações sobre a ativação de parceiros, por favor clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
 As seguintes configurações gerais estão disponíveis para o VK Ads.
 
+<div id="app-id" />
+
 ### ID da aplicação
 
 Este campo não é obrigatório, e sua funcionalidade ainda será definida. Em caso de dúvidas adicionais, entre em contato com o VK Ads.
 
+<div id="enable-view-through-attribution" />
+
 ### Ative a atribuição de view-through
 
 Ative se quiser atribuir instalações view-through do VK Ads. O cursor de lookback de view-through está disponível na aba [***Link da atribuição***](/docs/vk-ads-mytarget-mail-ru-campaign-configuration#attribution-link-tab).
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -66,6 +78,8 @@ Envie postbacks automáticos para o VK Ads após as instalações e reengajament
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos ao VK Ads.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para reportar ao VK Ads.
+
+<div id="in-app-events-postbacks" />
 
 ### Postbacks de eventos in-app
 
@@ -127,6 +141,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 * <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">Na coluna de ações, passe o mouse sobre uma conta, clique ***Excluir conexão***</Anchor>
 
 </Accordion>
+
+<div id="notes" />
 
 > 📘 **Observações**
 >

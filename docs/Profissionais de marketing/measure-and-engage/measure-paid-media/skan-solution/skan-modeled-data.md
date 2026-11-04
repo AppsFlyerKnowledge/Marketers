@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Visão geral**: os modelos da AppsFlyer agregam dados que os relatórios básicos da SKAdNetwork são incapazes de fornecer.
 
+<div id="overview" />
+
 ## Visão geral
 
 Os relatórios da SKAdNetwork (SKAN) podem ser limitados, pois:
@@ -35,6 +37,8 @@ Os dados modelados da SKAN resolvem esses problemas:
 * Os anunciantes têm uma visão mais completa da performance do LTV de uma campanha e do aplicativo
 
 **Observação**: quando você altera seu esquema de valores de conversão, são necessários dois dias para que os dados modelados sejam disponibilizados.
+
+<div id="modeled-data-types-and-availability" />
 
 ## Tipos de dados modelados e disponibilidade
 

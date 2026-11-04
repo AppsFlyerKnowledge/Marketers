@@ -36,7 +36,11 @@ x-zendesk:
 
 ![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
 
+<div id="data-freshness-and-support-for-app-specific-time-zones" />
+
 ## Atualização de dados e compatibilidade com fusos horários específicos do aplicativo
+
+<div id="data-freshness" />
 
 ### Atualização dos dados
 
@@ -46,6 +50,8 @@ Exemplo: taxas de atualização de dados no painel Eventos:
 
 * Métrica KPI: em tempo real
 * KPI médio: diário
+
+<div id="time-zones" />
 
 ### Fusos horários
 
@@ -60,6 +66,8 @@ Hemisférios
 * Leste: os fusos horários designados como UTC+ são aqueles localizados a leste do UTC.
 * Oeste: os fusos horários designados como UTC - são aqueles localizados a oeste do UTC.
 
+<div id="app-specific-time-zone" />
+
 #### Fuso horário específico do aplicativo
 
 Você pode definir um fuso horário específico do aplicativo. Isso significa que os dados são agrupados em dias usando a hora local em vez de UTC.
@@ -70,11 +78,15 @@ Exemplo:
 
 **Los Angeles**: se o fuso horário específico do aplicativo estiver definido como Los Angeles (UTC -8), o dia começará às 08:01 UTC e terminará às 08:00 UTC do dia seguinte.
 
+<div id="time-zone-guidelines" />
+
 #### Diretrizes de fuso horário
 
 * Alinhe o fuso horário específico do aplicativo com o fuso horário definido com outros parceiros de atribuição, como o Google e o Meta ads.
 * Se você tiver mais de um aplicativo, recomendamos que você configure todos os aplicativos para o mesmo fuso horário. Para ver a configuração de fuso horário de um aplicativo, vá para **Configurações** > **Configurações do aplicativo.**
 * A maioria dos relatórios e ferramentas de extração de dados é compatível com fusos horários específicos do aplicativo. Isso inclui relatório de diversos aplicativos se todos os aplicativos estiverem definidos no mesmo fuso horário específico do aplicativo.
+
+<div id="daily-processing" />
 
 #### Processamento diário
 
@@ -129,6 +141,8 @@ Alguns relatórios e listas suspensas são processados uma vez por dia, isso é 
 <Accordion title="Atualização de dados e compatibilidade com fuso horário">
 
 <table><thead><tr><th>Dados relacionados</th><th>Como é apresentado</th><th>Taxa de atualização dos dados<br/>Taxa de atualização de dados(consulte a seção anterior para obter a chave para as taxas)</th><th>Dados aparecem usando o fuso horário específico do aplicativo</th></tr></thead><tbody><tr><td>Instalações</td><td>KPI</td><td><p>Contínuo</p><p>Exceções a serem observadas:</p><ul><li>Os alertas do Protect360 são atualizados no horário UTC diário.<ul><li>Atualizado diariamente às 16:00 UTC</li></ul></li></ul></td><td><span>✓</span></td></tr><tr><td>Sessões, cliques, impressões, usuários leais</td><td>KPI</td><td><ul><li>Links de atribuição: Contínuo</li><li>SRNs: Intradiário</li></ul></td><td><span>✓</span></td></tr><tr><td>Eventos de receita in-app</td><td>KPI</td><td>Contínuo</td><td><span>✓</span></td></tr><tr><td>Ad revenue</td><td>KPI</td><td>Ad revenue</td><td><span>✓</span></td></tr><tr><td>Gastos com anúncios (custo)</td><td>KPI</td><td><ul><li>Link de atribuição: Contínuo (máximo até 2 horas após o clique)</li><li>API Intradiário</li><li>Ingestão de gastos com anúncios Até 4 horas após a ingestão</li></ul></td><td><span>✓</span></td></tr><tr><td>Desinstalações</td><td>KPI</td><td>diariamente. A AppsFlyer executa ping das lojas de aplicativos a cada 24 horas. A hora do evento da desinstalação representa a hora em que a AppsFlyer executou ping na notificação push silenciosa e descobriu que o aplicativo foi desinstalado. Este não é o horário real da desinstalação.</td><td><span><strong>X</strong></span></td></tr><tr><td>Eventos in-app na interface</td><td>Lista suspensa</td><td><p>Os nomes de eventos in-app exibidos nas listas suspensas são atualizados diariamente.</p><p>Isso não afeta a taxa de atualização dos dados em si.</p><p><strong>Exemplos:</strong> listas suspensas de eventos in-app na Push API, em dashboard e em audiências.</p></td><td><span>✓</span></td></tr><tr><td>Dahsboard de Visão Geral</td><td>Página</td><td>Contínuo</td><td><span>✓</span></td></tr><tr><td>Painel do Protect360</td><td>Página</td><td>Diariamente</td><td> <span>✓ </span>(1)</td></tr><tr><td>Dashboard da SKAN</td><td>Página</td><td>Diariamente</td><td><span><strong>X</strong></span></td></tr><tr><td>Página de atividade</td><td>Página</td><td><ul><li>KPIs: Contínuo</li><li>Médias: à meia-noite do fuso horário específico do aplicativo</li></ul></td><td><p><span>✓</span></p><p>Exceção: Os dados MAU são UTC</p></td></tr><tr><td>Página de eventos</td><td>Página</td><td>Contínuo</td><td><span>✓</span></td></tr><tr><td> </td><td> </td><td>(Essa linha foi deixada em branco intencionalmente)</td><td> </td></tr><tr><td>Retenção</td><td>Página</td><td><p>Os KPIs de retenção estão disponíveis com granularidade diária e semanal. A atualização dos dados para cada um é diferente.</p><ul><li>KPIs de retenção diários: Diariamente</li><li>KPIs de retenção semanal: A semana começa na segunda-feira e termina no domingo. A retenção é calculada na segunda-feira às 12:00 UTC. A falta de compatibilidade com fuso horário específico do aplicativo para o KPI semanal resulta em uma diferença insignificante.</li></ul></td><td><p>Diariamente: <span>✓</span></p><p>KPIs de retenção semanal: <strong><span>x</span></strong></p></td></tr><tr><td>Coorte</td><td>Página</td><td>Contínuo</td><td> <span>✓ </span>(2)</td></tr><tr><td>Painel Personalizado</td><td>Página</td><td>Contínua</td><td> <span>✓ </span>(3)</td></tr><tr><td>Audiências</td><td>Página</td><td><ul><li>As atualizações são enviadas aos parceiros a cada 24 horas.</li><li>A base de usuários é atualizada diariamente e armazena até 90 dias de dados do dispositivo</li></ul></td><td><span>✓</span></td></tr><tr><td>Página de informações do SDK</td><td>Página</td><td>Diariamente</td><td><span><strong>X</strong></span></td></tr><tr><td>Dados de exportação</td><td>Página</td><td><p>Contínuo</p><p>Live Alerts</p><ul><li>Dados brutos de receita de anúncios: Diariamente</li><li>Protect360:<ul><li>Relatórios agregados: Diariamente</li><li>Dados brutos bloqueados: Contínuo</li><li>Dados brutos pós-atribuição: Diariamente</li></ul></li><li>Eventos in-app orgânicos: Atualização com um atraso de várias horas.</li></ul></td><td><span>✓</span></td></tr><tr><td>Extrair API</td><td>API</td><td>A atualização dos dados da Pull API é a mesma que os dados de exportação.</td><td><p><span>✓</span></p><p><span>UTC padrão</span></p></td></tr><tr><td>Pivot</td><td>Página</td><td>Diariamente</td><td><p><span>✓</span></p><p>KPI regulares:</p></td></tr><tr><td>Master API</td><td>API</td><td>Diariamente</td><td> <span>✓ </span>(3)</td></tr><tr><td>Relatório do Data Locker</td><td>API</td><td>Conforme especificado no artigo do Data Locker.</td><td><p><span><strong>X</strong></span></p><p><span><strong>UTC</strong></span></p></td></tr><tr><td>Postbacks</td><td>API</td><td>Contínuo</td><td>N/D</td></tr><tr><td>API de push</td><td>API</td><td>Contínuo (4)</td><td><p><span>✓</span></p><p><span><strong>Ambos</strong></span></p></td></tr><tr><td>Eventos in-app servidor para servidor</td><td>API</td><td>Contínuo</td><td>N/D</td></tr><tr><td colspan="4"><p>Observações:</p><p>(1) Todos os aplicativos para os quais o usuário tem permissão devem usar o mesmo fuso horário específico do aplicativo. Caso contrário, o fuso horário será revertido para UTC.</p><p>(2) Consulte <a href="./cohort-and-retention-dashboard#traits-and-limitations" target="_blank">as características e limitações de coorte</a> quando o fuso horário for revertido para UTC.</p><p>(3) Todos os aplicativos selecionados devem usar o mesmo fuso horário específico do aplicativo. Caso contrário, o fuso horário será revertido para UTC.</p><p>(4) Os dados do relatório SKAN estarão disponíveis diariamente entre 08:00 e 10:00 UTC.</p></td></tr></tbody></table>
+
+<div id="exception-my-dashboards-cohort-and-activity-metrics" />
 
 > 📘 **Exceção: métricas de cohort e atividade do My Dashboards**
 >

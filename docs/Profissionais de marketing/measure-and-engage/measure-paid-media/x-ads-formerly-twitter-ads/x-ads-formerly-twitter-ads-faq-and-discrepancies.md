@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** resolva as perguntas frequentes do Twitter Ads e entenda as discrepâncias.
 
+<div id="x-ads-faq-and-discrepancies" />
+
 ## Perguntas frequentes e discrepâncias do Twitter Ads
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -91,6 +93,8 @@ Digamos que o membro da equipe seja Jenny e que o identificador dela é @jenny. 
 
 Sim.  
 Quando uma agência cria uma nova campanha no Twitter, o nome da campanha deve começar com o nome da agência e um underline (Exemplo: "NomeAgencia\_Campanha1").
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -215,6 +219,8 @@ Sua conta do Twitter precisa ser uma conta ativa do tipo Ad para receber dados d
 
 </Accordion>
 
+<div id="discrepancies-between-x-ads-and-appsflyer" />
+
 ## Discrepâncias entre o X Ads e a AppsFlyer
 
 Embora trabalhemos em estreita colaboração com o X Ads, podem aparecer discrepâncias entre o dashboard do X Ads e o dashboard/relatórios da AppsFlyer.
@@ -230,6 +236,8 @@ Estes são os motivos comuns para essas discrepâncias dos quais os anunciantes 
 | **Tipo de toque de atribuição** | A atribuição do X Ads se baseia em seus próprios cliques e impressões. | A AppsFlyer dá prioridade à atribuição de clique sobre a atribuição de exibição. Se o Twitter conta uma impressão e a AppsFlyer reconhece um clique adicional na janela de atribuição de clique, o clique de outra fonte é atribuído no painel da AppsFlyer. No Twitter, a impressão é atribuída e apresentada no painel deles. |
 | **Configurações de compartilhamento de dados do X Ads** | O Twitter permite que seus usuários NÃO <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">compartilhem seus dados pessoais com terceiros</Anchor>. Esses dados incluem anúncios com os quais eles interagem.<br /><br />As estatísticas no painel do Twitter refletem todos os engajamentos, incluindo os usuários que optaram por não compartilhar os dados. | A AppsFlyer mostra os dados agregados desses usuários do Twitter, mas não informa seus dados brutos no nível do usuário (mais <Anchor target="_blank" href="/marketers/pt/docs/x-ads-formerly-twitter-ads-setup-guide-overview#privacidade-do-usuário-no-x-ads">detalhes</Anchor>). |
 | **Lógica de reengajamento do X Ads** | O Twitter conta usuários únicos. Se um usuário reengajar mais de uma vez como resultado da mesma campanha, o Twitter mostrará esses engajamentos como uma única conversão. | A AppsFlyer conta cada instância de reengajamento e, portanto, em um caso semelhante, mostra esses engajamentos como múltiplas conversões. |
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

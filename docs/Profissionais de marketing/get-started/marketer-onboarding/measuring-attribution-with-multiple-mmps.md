@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Visão geral:** veja quais canais de mídia conseguem mensurar a atribuição simultânea de mais de uma MMP. Assim, você pode comparar os resultados de atribuição da AppsFlyer com os de outras MMPs.
 
+<div id="overview" />
+
 ## Visão geral
 
 Ao considerar migrar para a AppsFlyer, é possível que você queira comparar a mensuração das duas MMPs simultaneamente, nos mesmos canais de mídia e campanhas. Para isso, é necessário que:
@@ -30,9 +32,13 @@ Ao considerar migrar para a AppsFlyer, é possível que você queira comparar a 
 
 No entanto, nem todos os canais de mídia oferecem suporte à mensuração com mais de uma MMP.  
 
+<div id="details-and-limitations-of-media-source-measurement" />
+
 ## Informações e limitações
 
 Listamos abaixo todas as informações e limitações dos canais de mídia ao trabalhar simultaneamente com mais de uma MMP.
+
+<div id="self-reporting-networks" />
 
 ### Redes de autorrelato
 
@@ -50,6 +56,8 @@ Listamos abaixo todas as informações e limitações dos canais de mídia ao tr
 
 O envio de <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio#conceitos-básicos-do-skan-conversion-studio">postbacks de conversão da SKAN</Anchor> **não é compatível com mais de uma MMP**. Apenas um SDK pode acionar o envio de postbacks para parceiros. Isso significa que, quando mais de um SDK estiver integrado ao seu aplicativo, os postbacks da SKAN serão enviados para um único SDK.
 
+<div id="non-srn-ad-networks" />
+
 ### Ad networks que não são SRN
 
 Os links de atribuição registram os engajamentos dos usuários e, posteriormente, são usados para a atribuição de engajamentos que se tornam instalações reais. Para permitir a atribuição simultânea de várias MMPs, a ad network deve garantir que os seguintes requisitos sejam atendidos:
@@ -60,9 +68,13 @@ Os links de atribuição registram os engajamentos dos usuários e, posteriormen
 | Postbacks de instalação devem ser desduplicados | As ad networks recebem postbacks de instalação de ambas as MMPs. Para evitar cobranças duplas, a ad network deve desduplicar um desses postbacks. |
 | Postbacks de eventos in-app devem ser desduplicados | Quando cada uma das MMPs é configurada para enviar postbacks de eventos in-app, as ad networks recebem esses postbacks de ambas as MMPs. Para evitar duplicações na atribuição e, consequentemente, cobranças duplas, a ad network deve desduplicar esses postbacks. Se a ad network não fizer isso, certifique-se de que os postbacks de eventos in-app sejam configurados em uma única MMP. |
 
+<div id="owned-media" />
+
 ### Mídias próprias
 
 Assim como acontece com ad networks que não são SRNs, a atribuição de instalações de mídias próprias requer o uso de links de atribuição de MMPs. No entanto, para alguns tipos de mídias próprias, como listas de e-mail, SMS ou QR codes, as MMPs podem enviar os dados de um engajamento somente uma vez. A solução de <Anchor target="_blank" href="/marketers/pt/docs/convert-your-mobile-web-visitors-to-app-users">atribuição web-to-app mobile</Anchor> da AppsFlyer permite que você mensure **instalações provenientes de um site ou de uma landing page**. A vantagem do uso de mídias próprias para comparar a atribuição entre duas MMPs é o fato de que não é necessário desduplicar nenhuma instalação ou evento.
+
+<div id="avoiding-attribution-discrepancies" />
 
 ## Como evitar discrepâncias de atribuição
 

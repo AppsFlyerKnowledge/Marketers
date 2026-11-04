@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumo:** Embora os anúncios tenham se tornado cada vez mais sofisticados nos últimos anos, os relatórios permaneceram os mesmos, focando principalmente na atribuição de visualização e clique. Os engajamentos enriquecidos refletem todo o espectro do engajamento e intencionalidade dos usuários quando eles visualizam ou interagem com um anúncio.
 
+<div id="introduction" />
+
 ## Introdução
 
 Nos últimos anos, novos tipos de criativos, como os anúncios reproduzíveis, puláveis e em vídeos curtos, foram introduzidos ao mercado, oferecendo novas maneiras de se conectar com os usuários. Esses novos formatos são bem diferentes dos anúncios estáticos e simples do passado, e permitem que os anunciantes tenham acesso a uma variedade de recursos e formatos mais completos.
@@ -28,6 +30,8 @@ Nos últimos anos, novos tipos de criativos, como os anúncios reproduzíveis, p
 No entanto, ainda que os tipos de anúncios tenham se tornado mais sofisticados, os relatórios permaneceram os mesmos, focando principalmente na atribuição de visualização e clique. Diferentes tipos de engajamentos possuem diferentes pesos, níveis de intenção e impacto, mas as metodologias de mensuração atuais ignoram essa nova realidade. Naturalmente, as ad networks desejam garantir que os níveis de intenção e engajamento com um anúncio sejam representados da melhor forma possível. Consequentemente, isso levou a uma falta de padronização no ecossistema, fazendo com que os anunciantes tenham apenas uma compreensão parcial dos resultados obtidos com seu investimento em anúncios.
 
 Em colaboração com as principais ad networks da indústria, a AppsFlyer decidiu introduzir um novo padrão de engajamento, com o intuito de proporcionar confiança e transparência para todo o ecossistema. Esse novo padrão de qualidade reflete todo o espectro do engajamento e intencionalidade dos usuários quando eles visualizam ou interagem com um anúncio, desde uma exposição momentânea até uma resposta direta. Essa estrutura garante que esses padrões sejam mantidos dentro e fora de todo o ecossistema de parceiros da AppsFlyer. Por meio dos tipos de engajamentos enriquecidos, os anunciantes podem garantir que eles terão uma visão completa e padronizada da performance dos seus investimentos em anúncios, aproveitando esses insights para melhorar seu budget e ROAS.
+
+<div id="what-are-enriched-engagement-types" />
 
 ## Engajamentos enriquecidos
 
@@ -45,6 +49,8 @@ Listamos abaixo os novos tipos de engajamento:
 | <span id="view"></span>view | Uma visualização (view) de um anúncio ocorre quando um anúncio é renderizado e uma impressão é identificada. |
 | <span id="listening"></span>listening | Essa ação ocorre quando um usuário ouve um anúncio em áudio, como um anúncio em um podcast. |
 
+<div id="eet-attribution-priority-and-lookback-window" />
+
 ## **Prioridade de atribuição e janela de lookback do EET**
 
 O framework dos Tipos de Engajamentos Enriquecidos não afeta a prioridade de atribuição do tipo de engajamento. Portanto, a introdução do EET não deve afetar sua taxa de instalação e conversão.
@@ -56,6 +62,8 @@ A tabela abaixo especifica a <Anchor target="_blank" href="/marketers/pt/docs/ap
 Quando um tipo de engajamento não é relatado, a prioridade padrão é definida como (2 para cliques, 3 para impressões).
 
 <strong>As janelas de lookback para `engaged_click` e `engaged_view` só podem ser configuradas para não SRNs. Para SRNs, `engaged_click` e `engaged_view` compartilham a mesma janela de lookback que os cliques e, portanto, é configurada pelos sliders de </strong>Install Click-Through Attribution Lookback.
+
+<div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## Quais networks podem relatar engaged views e engaged clicks?
 
@@ -98,9 +106,13 @@ A tabela abaixo lista as network qualificadas pela AppsFlyer para relatar `engag
 
 * O TikTok é compatível com o engajamento enriquecido, mas suas engaged views não foram devidamente refletidas nos relatórios. A AppsFlyer está trabalhando com o TikTok para resolver esse problema.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > **Nem todas as networks listadas realmente oferecem suporte para engaged clicks e engaged views.** Para saber se uma network qualificada específica oferece suporte, na prática, a `engaged_clicks` e `engaged_views`. Para saber se uma network específica oferece suporte para `engaged_clicks` e `engaged_views`, veja o relatório de dados brutos que contém os engajamentos relatados pela network e veja se o parâmetro `engagement_type` foi preenchido com os valores acima.
+
+<div id="set-lookback-windows-for-engaged-clicks-and-engaged-views" />
 
 ## Configurar janelas de lookback para engaged clicks e engaged views
 
@@ -110,6 +122,8 @@ A tabela abaixo lista as network qualificadas pela AppsFlyer para relatar `engag
 2. Escolha o parceiro integrado.
 3. Configure as janelas de lookback para a atribuição de engaged view-through e click-through.
 
+   <div id="note-1" />
+
    > 📘 **Nota**
    >
    > As janelas de lookback de engaged click e engaged view sempre são configuradas na aba de Integração do parceiro, em contraste com as janelas de lookback de view-through e click-through, que podem ser configuradas nos links de atribuição.
@@ -118,11 +132,17 @@ A tabela abaixo lista as network qualificadas pela AppsFlyer para relatar `engag
 
 4. Clique em **Salvar integração**.
 
+<div id="view-and-analyze-eet-data" />
+
 ## Visualizar e analisar dados de EET
+
+<div id="raw-data-reports" />
 
 ### Relatórios de dados brutos
 
 `engagement_type` serão comunicados nos relatórios de dados brutos sempre que comunicados pela ad network. Ele também ficará disponível para os dados de colaboradores.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -137,19 +157,27 @@ Nos cenários abaixo, o campo `engagement_type` nos relatórios de dados brutos 
 
 Para ver o tipo de engajamento nos relatórios de dados brutos, os anunciantes têm de selecionar estes campos no produto de dados brutos relevante (o tipo de engajamento e o tipo de engajamento dos contribuidores não são selecionados por predefinição).
 
+<div id="dashboards" />
+
 ### Painéis
 
 A dimensão do tipo de engajamento foi adicionada aos dashboards.
 
 [![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Engaged views sempre são exibidas no dashboard, mesmo quando a atribuição de view-through está desativada.
 
+<div id="how-to-calculate-installs-per-mille-ipm" />
+
 ### Como calcular **Instalações por Mil (IPM)**
 
 As impressões totais incluem tanto engaged views quando views comuns. Para calcular o IPM, você deve subtrair **engaged views do total de impressões**, pois engaged views são um subconjunto das impressões, e contá-las duas vezes pode inflacionar a contagem de impressões.
+
+<div id="faqs" />
 
 ## Perguntas frequentes
 
@@ -184,6 +212,8 @@ O Meta comunica somente engagement\_type=engaged\_view na sua SRN API. Para outr
 Engaged views são mensuradas e relatadas mesmo se **view-through** estiver desativado. Para identificar essas impressões como engaged views, use a métrica `engagement_type = engaged_views` nos dashboards e relatórios de dados brutos em vez de confiar apenas no `attributed_touch_type`.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

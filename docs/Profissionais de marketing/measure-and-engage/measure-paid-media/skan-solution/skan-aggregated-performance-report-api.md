@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** Desempenho do SKAN enriquecido com pontos de dados adicionais. Semelhante aos dados no painel do SKAdNetwork. Agregue usando a data de instalação ou a data de chegada do postback.
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## Relatório de performance agregada da SKAN
 
 A API retorna métricas de atribuição relatadas pela Apple SKAdNetwork (dados reais) e outros pontos de dados usando a data de chegada de instalação ou postback. O relatório é semelhante em estrutura aos dados apresentados no<Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">Painel da SKAN</Anchor>.
@@ -37,6 +39,8 @@ A API retorna métricas de atribuição relatadas pela Apple SKAdNetwork (dados 
 2. Forneça ao seu desenvolvedor o token de API a ser usado no cabeçalho de autenticação.
 3. Forneça a seus desenvolvedores os parâmetros a serem inseridos quando eles fizerem a chamada de API, conforme descrito na seção a seguir. Os parâmetros determinam o foco do relatório, como ele é organizado e fornecem um cronograma de relatório.
 4. Diga ao seu desenvolvedor para seguir a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">API de relatório de desempenho agregado do SKAN</Anchor> no hub do desenvolvedor.
+
+<div id="parameters" />
 
 #### Parâmetros
 
@@ -60,6 +64,8 @@ A API retorna um arquivo CSV.
 * Algumas métricas (receita, engajamento, conversão) dependem da SKAN <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio">configurações de mensuração de desempenho.</Anchor>
 * O relatório inclui apenas os eventos in-app que os usuários realizaram durante o período do relatório. Dessa forma, o número e a sequência de colunas de eventos in-app podem mudar de relatório para relatório. Não confie na sequência de colunas ao projetar seu processo de importação de dados.
 * Exemplos: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### Campos do relatório
 

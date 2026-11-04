@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** Teste a integração do plug-in PBA do Web SDK.
 
+<div id="test-pba-web-events" />
+
 ## Testar eventos da web do PBA
 
 **Princípios de uso da página de teste**
@@ -32,6 +34,8 @@ O Web SDK envia eventos da web para o PBA, que são disponibilizados por meio de
 * Analisados e validados no recebimento.
 * Disponibilizados para você na interface do usuário. Isso inclui erros de processamento. Se existirem, envie eventos corrigidos novamente para garantir que sejam processados corretamente.
 * São processados como qualquer outro evento durante o processamento diário. Isso significa que eles são adicionados aos painéis e dados brutos.
+
+<div id="web-sdk-integration-test-page" />
 
 #### Página de teste de integração do Web SDK
 
@@ -72,6 +76,8 @@ O Web SDK envia eventos da web para o PBA, que são disponibilizados por meio de
     </tr>
   </tbody>
 </Table>
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -148,6 +154,8 @@ Envie eventos de exemplo de cada um dos tipos descritos.
 | 3 | <Anchor target="_blank" href="/marketers/pt/docs/pba-web-sdk-integration-guide#recording-event-scenarios">Comece a enviar eventos da web</Anchor> para verificar se o PBA os processa corretamente.<br /><br />**Observação:**<br /><br />Se não for especificado, `eventRevenue` e `eventRevenueCurrency` são preenchidos com valores padrão:<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[![PBAWebSDKTestEventEVENT_en-us.png](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />Ver <Anchor target="_blank" href="/marketers/pt/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">Parâmetros de evento do Web SDK para obter informações adicionais.</Anchor> | [![mceclip5.png](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png)](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Solução de problemas
 

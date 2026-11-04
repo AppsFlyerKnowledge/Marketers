@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
 
+<div id="setting-up-spotify" />
+
 ## Configurando o Spotify
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -41,6 +43,8 @@ Saiba mais sobre o <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-in
 
 Saiba mais sobre as <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">regras de ativação de parceiros</Anchor>.
 
+<div id="important" />
+
 > 🚧 **Importante**
 >
 > * A etapa de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros.
@@ -51,6 +55,8 @@ Saiba mais sobre as <Anchor target="_blank" href="/marketers/pt/docs/partner-act
 <Accordion title="Aba Integração">
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -97,6 +103,8 @@ As permissões só podem ser concedidas a funcionários do Spotify que tenham um
 1. Clique em **Adicionar membro da equipe.**
 2. Insira o e-mail do membro da equipe da ad network
 3. Clique em **Adicionar**.
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >

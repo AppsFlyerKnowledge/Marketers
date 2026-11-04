@@ -24,6 +24,8 @@ x-zendesk:
 
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Guia de usuário e integração do web SDK
 
 * A tag JavaScript do Web SDK:
@@ -33,6 +35,8 @@ x-zendesk:
   * Tamanho  40-60Kb.
 * Implemente o Web SDK juntamente com o SDK mobile da AppsFlyer para registrar e mapear a atividade do usuário em seu aplicativo móvel e ambientes web.
 * Os eventos que ocorrem fora do site podem ser registados com a <Anchor target="_blank" href="/marketers/pt/docs/web-server-to-server-events-api-for-pba-web-s2s">Web server-to-server events API</Anchor> (Web S2S)
+
+<div id="selecting-a-code-snippet" />
 
 ## Selecionar um code snippet
 
@@ -46,6 +50,8 @@ Escolha o snippet que corresponde ao seu tipo de integração e requisitos de se
 > **Importante!**
 >
 > Se você estiver fazendo a transição do Web SDK padrão para a verificação avançada do SDK, substitua o snippet existente pelo novo. O novo snippet não deve ser adicionado em conjunto com o snippet existente.
+
+<div id="standard-web-sdk" />
 
 ### Web SDK padrão
 
@@ -128,6 +134,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="advanced-sdk-verification" />
+
 ### Verificação avançada de SDK
 
 A verificação avançada de SDK adiciona segurança da cadeia de suprimentos ao Web SDK. Ela garante que o código executado nos navegadores dos seus usuários é exatamente o mesmo que a AppsFlyer publicou. O código-fonte do SDK em si é idêntico à integração padrão; apenas os mecanismos de entrega e verificação diferem.
@@ -201,11 +209,15 @@ Se o seu site impõe uma Política de Segurança de Conteúdo (CSP) usando nonce
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Integrar o web SDK no site
 
 <div id="installation-and-integration" />
 
 <Accordion title="Instalação e integração">
+
+<div id="considerations-and-actions-required" />
 
 #### Considerações e ações necessárias
 
@@ -242,15 +254,21 @@ Se o seu site impõe uma Política de Segurança de Conteúdo (CSP) usando nonce
 <Tabs>
 <Tab title="Nativo">
 
+<div id="javascript-code-snippet" />
+
 #### Trecho de código JavaScript
 
 Integrar o SDK da web usando um dos seguintes métodos.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **Para instalar o web SDK sem Smart Banners:**
 
 1. Repita o procedimento a seguir em todas as páginas do seu site.
 2. No trecho de código a seguir, substitua o `WEB_DEV_KEY` usando a chave especificada nos pré-requisitos.
 3. Cole o code snippet [que você selecionou acima](#selecionar-um-code-snippet) na head tag do seu site. Cole-o perto do topo da etiqueta de cabeçalho.
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **Para implementar o Web SDK com Smart Banners:**
 
@@ -442,12 +460,16 @@ Considere:
   * Expira após um período definido pelo Web SDK ou conforme determinado pelo navegador. Após a expiração do cookie, o Web SDK reverte para a configuração do estado inicial.
   * O cookie do Web SDK não causa interferência e está sempre sujeito às configurações de cookies específicas do navegador.
 
+<div id="sdk-initial-state-setting" />
+
 #### Definição do estado inicial do SDK
 
 | Configuração | Trecho necessário |
 | --- | --- |
 | [Padrão] Enviar eventos | Faça a seguinte alteração no trecho do Web SDK. Se necessário, adicione o parâmetro measurementStatus:<br /><br />Defina measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | Não envie eventos | Faça a seguinte alteração no trecho do Web SDK. Se necessário, adicione o parâmetro measurementStatus:<br /><br />Defina measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### Controle explícito:
 
@@ -463,6 +485,8 @@ Considere:
 <Accordion title="Implementar uma política de Política de Segurança de Conteúdo (CSP)">
 
 Se o seu site exige protocolos rigorosos de segurança e de privacidade de dados, use os seguintes mecanismos para configurar a maneira como o Web SDK interage com seu ambiente e seus dados.
+
+<div id="content-security-policy-csp" />
 
 #### Política de Segurança de Conteúdo (CSP)
 
@@ -481,6 +505,8 @@ A tabela abaixo mostra quais políticas CSP são compatíveis com a variante non
 | `script-src 'nonce-...' 'strict-dynamic'` | Sim (recomendado) | Nonce cobre script inline e carregador; `strict-dynamic` propaga confiança para a tag SDK inserida dinamicamente. Nenhuma origem de CDN necessária na lista de permissões. |
 
 Compatibilidade com a política CSP
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### Verificação avançada de SDK com snippets de nonce CSP
 
@@ -566,6 +592,8 @@ Se seus parâmetros de consulta contiverem dados que você não deseja que a App
 
 Você pode implementar os métodos descritos em relação a URLs, referenciadores e header\_referer.
 
+<div id="query-discard-options" />
+
 #### Consultar opções de descarte
 
 | Método | Descrição |
@@ -574,6 +602,8 @@ Você pode implementar os métodos descritos em relação a URLs, referenciadore
 | Descartar parâmetros de consulta especificados | Ao definir uma máscara de parâmetros de consulta, você especifica quais parâmetros serão descartados.  Defina a máscara de descarte usando `af_url_mask=param` onde param é o nome do parâmetro.<br /><br />Exemplo:<br /><br />**URL com máscara:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**URL após descartar:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## Princípios do registro de eventos
 
@@ -586,6 +616,8 @@ Você pode implementar os métodos descritos em relação a URLs, referenciadore
 * Os dados dos eventos de conversão estão disponíveis nos painéis de controle de PBA.
 * Os dados de conversão e eventos padrão estão disponíveis nos <Anchor target="_blank" href="/marketers/pt/docs/pba-raw-data-reports">relatórios de dados brutos.</Anchor>
 
+<div id="conversion-events" />
+
 ### Eventos de conversão
 
 * Os eventos de conversão fornecem insights sobre os seus esforços comerciais e de marketing. Os eventos de conversão incluem compras, downloads, inscrições e assinaturas.
@@ -594,11 +626,15 @@ Você pode implementar os métodos descritos em relação a URLs, referenciadore
 * Os eventos de conversão são usado para registrar as receitas e calcular o ROI.
 * Use-os para comparar o orçamento de anúncios para canais de mídia específicas com as receitas geradas pelos usuários que provêm desses canais de mídia.
 
+<div id="standard-events" />
+
 ### Eventos padrão
 
 * Os eventos padrão são usados para validar a jornada do usuário e os funis que geram conversões.
 * Use-os para medir a atividade do usuário e destacar os canais de mídia que atraem usuários engajados.
 * Registre a atividade do usuário para marcar os usuários para campanhas de reengajamento.
+
+<div id="recording-events" />
 
 ### Eventos de registro
 
@@ -655,6 +691,8 @@ Exemplo de evento
 
 Os eventos que você envia dependem da natureza do seu aplicativo web. Por exemplo, um aplicativo de loja online requer um conjunto de eventos diferente do de um canal de notícias. Veja os cenários que a seguir para ter uma noção dos eventos que você deve enviar e quando.
 
+<div id="online-store" />
+
 #### Loja online
 
 Suponha que está gerenciando uma loja online. Alguns eventos padrão que talvez você queira registrar são:
@@ -698,6 +736,8 @@ Esta parte destina-se a desenvolvedores web.
    2. A carga útil do pedido está alinhada com os parâmetros do evento.
 
 </Accordion>
+
+<div id="examples" />
 
 ## Exemplos
 
@@ -1046,6 +1086,8 @@ A função setCustomerUserId pode ser enviada em qualquer fase do fluxo do utili
 Use o mesmo valor de CUID que você usa na função setCustomerUserId no app mobile (consulte setCustomerUserId mobile para: <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid#configuração-do-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid#configuração-do-cuid">Android</Anchor> e Unity)
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## Informações adicionais
 

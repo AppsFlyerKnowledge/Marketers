@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Em resumo:** Atribua instalações provenientes de campanhas de anúncios não mobile da Meta.
 
+<div id="attributing-mobile-app-installs" />
+
 ## Atribuição de instalações de app mobile
 
 Os anunciantes criam anúncios na Meta para atender a diferentes objetivos, incluindo reconhecimento de marca, conversões no site e muito mais. No entanto, a influência de ver ou clicar nesses anúncios pode levar, indiretamente, a uma instalação do aplicativo mobile. 

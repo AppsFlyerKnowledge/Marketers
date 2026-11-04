@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** mensure a qualidade dos seus usuários durante toda a jornada de usuário, registrando os eventos in-app sugeridos para seu aplicativo de educação online.
 
+<div id="-online-education" />
+
 ## <Image alt="education.png" src="https://files.readme.io/fb036c8f3b0cb4cc06a5284c26089bbb361273ab628bc5b740692bc49e7a2c40-20659493109393.png" width="100px" /> Educação online
 
 Os aplicativos de educação online permitem que os usuários aprendam de maneira remota. Os típicos eventos in-app que recomendamos registrar incluem cadastro, tutoriais, cursos finalizados e certificados recebidos.
@@ -32,6 +34,8 @@ Gravar eventos pode ajudar a determinar:
 * O que os usuários do curso mais querem, oferecendo ideias para direcionamento
 * Quais usuários podem passar por retargeting e relembrar que eles possuem tutoriais adicionais para concluir um curso
 * Quais cursos e certificados são os mais procurados
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -43,6 +47,8 @@ Gravar eventos pode ajudar a determinar:
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![Fluxograma_da_jornada_do_usuário_do_aplicativo_de_educação_on-line_para_eventos_recomendados](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -142,6 +148,8 @@ Quando o usuário acessa a página de agradecimento após uma compra bem-sucedid
 | af\_receipt\_id | ID do recibo | 9277 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Num relance:** Instruções para configurar o envio de eventos relatados via Firebase SDK para a AppsFlyer em seu app.
 
+<div id="configuring-events-in-the-app" />
+
 ## Configurar eventos no app
 
 Esta seção aborda a forma de configurar e criar eventos na aplicação com o Google Tag Manager (GTM).
@@ -33,6 +35,10 @@ Quando o evento é enviado, o GTM verifica se existe uma etiqueta configurada pa
 <div id="creating-event-variables-for-revenue-and-price" />
 
 <Accordion title="Criação de variáveis de evento para receita e preço">
+
+<div id="ios" />
+
+<div id="android" />
 
 #### com o Android
 
@@ -117,6 +123,8 @@ Para iOS, os parâmetros estão disponíveis em toda o app. Pode recuperá-los a
 O primeiro passo é configurar o evento na aplicação. O evento é enviado usando o Firebase Event Logging. No evento, você especifica o ID da AppsFlyer, o nome do evento e os parâmetros do evento. O ID da AppsFlyer é recuperado da variável que é criada na <Anchor target="_blank" href="/marketers/pt/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#configuração-do-google-tag-manager">etapa de configuração</Anchor>.
 
 <Anchor target="_blank" href="https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables">O Google Tag Manager utiliza</Anchor> os eventos <Anchor target="_blank" href="https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables">do Firebase Analytics</Anchor> para acionar eventos de tag. Sempre que um evento é enviado para o Firebase, o Tag Manager reconhece o evento e envia-o também para a AppsFlyer.
+
+<div id="android-1" />
 
 #### com o Android
 
@@ -206,9 +214,13 @@ O primeiro passo é configurar o evento na aplicação. O evento é enviado usan
 
 </Accordion>
 
+<div id="sending-install-events-to-firebase" />
+
 ## Enviando eventos de instalação para o Firebase
 
 Você também pode enviar eventos de instalação para o Firebase com todos os dados relacionados à instalação.
+
+<div id="android-2" />
 
 #### com o Android
 
@@ -216,6 +228,8 @@ Você também pode enviar eventos de instalação para o Firebase com todos os d
 <Tab title="Java">
 
 Para enviar eventos de instalação para o Firebase no Android, pode utilizar o objeto `conversionData`.
+
+<div id="creating-the-send-event-method" />
 
 #### Criar o método de envio de eventos
 
@@ -236,6 +250,8 @@ public void sendInstallToFirebase(Map<String, String> conversionData){
 
 Esse método aceita um objeto `conversionData`. O método verifica se a hora de instalação, a fonte de mídia e a campanha são nulas e, em caso afirmativo, define a hora de instalação como a hora atual e a fonte de mídia e a campanha como orgânicas. Caso contrário, obtém os dados do objeto `conversionData` e envia-os para o Firebase.
 
+<div id="sending-the-install-event" />
+
 #### Envio do evento de instalação
 
 Adicione o seguinte código no método `onConversionDataSuccess`:
@@ -254,6 +270,8 @@ Este código verifica se esta é a primeira vez que a aplicação é lançada. E
 
 Para enviar eventos de instalação para o Firebase no Android, pode utilizar o objeto `conversionData`.
 
+<div id="creating-the-send-event-method-1" />
+
 #### Criar o método de envio de eventos
 
 Adicione o seguinte método na classe `AFApplication` logo abaixo do método `onCreate`:
@@ -271,6 +289,8 @@ fun sendInstallToFirebase(conversionData: Map<String, Any>) {
 ```
 
 Esse método aceita um objeto `conversionData`. O método verifica se a hora de instalação, a fonte de mídia e a campanha são nulas e, em caso afirmativo, define a hora de instalação como a hora atual e a fonte de mídia e a campanha como orgânicas. Caso contrário, obtém os dados do objeto `conversionData` e envia-os para o Firebase.
+
+<div id="sending-the-install-event-1" />
 
 #### Envio do evento de instalação
 
@@ -293,6 +313,8 @@ Este código verifica se esta é a primeira vez que a aplicação é lançada. E
 
 <Tabs>
 <Tab title="Objective-C">
+
+<div id="creating-the-send-event-method-2" />
 
 #### Criar o método de envio de eventos
 
@@ -332,6 +354,10 @@ Este método recebe o objeto `installData` e verifica se a instalação é orgâ
 Se a instalação for não orgânica, o método obtém os dados de instalação não orgânica relevantes.
 
 Uma vez definidos os parâmetros, o método envia o evento de instalação para o Firebase.
+
+<div id="sending-the-install-event-2" />
+
+<div id="ios-1" />
 
 #### Envio do evento de instalação
 
@@ -388,6 +414,8 @@ Se a instalação for não orgânica, o método obtém os dados de instalação 
 
 Uma vez definidos os parâmetros, o método envia o evento de instalação para o Firebase.
 
+<div id="sending-the-install-event-3" />
+
 #### Envio do evento de instalação
 
 Em AppDelegate.swift, no método `didFinishLaunchingWithOptions`, adicione `FirebaseApp.configure();`
@@ -411,6 +439,8 @@ O fragmento de código acima verifica se esta é a primeira vez que a aplicaçã
 
 </Tab>
 </Tabs>
+
+<div id="warning" />
 
 > ❗️ **Aviso**
 >

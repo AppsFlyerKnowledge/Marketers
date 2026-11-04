@@ -32,6 +32,8 @@ x-zendesk:
   * Seu dispositivo não deve ter a atualização Windows 10 Anniversary Update.
   * Seu dispositivo nunca deve ter tido o aplicativo (o referrer do Windows é vitalício — mesmo se você estiver na allowlist ou tiver aguardado mais de 90 dias, não receberá atribuição de referrer).
 
+<div id="test-sdk-integration" />
+
 ## Teste a integração do SDK
 
 1. É obrigatório testar a integração do SDK em um dispositivo de teste registrado. Para registrar seu dispositivo de teste, siga as etapas <Anchor target="_blank" href="/marketers/pt/docs/registering-test-devices">aqui</Anchor>.
@@ -45,6 +47,8 @@ x-zendesk:
 
 [![](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)
 
+<div id="testing-non-organic-install" />
+
 ## Testando instalações não orgânicas
 
 1. Selecione um dos seus dispositivos registrados na lista suspensa
@@ -52,11 +56,15 @@ x-zendesk:
 3. Escaneie o QR code gerado com seu dispositivo de teste registrado e siga as instruções no dispositivo.
 4. Aguarde até que a instalação não orgânica seja registrada na página de teste de integração, indicando que o teste foi bem-sucedido. Isso pode levar até dois minutos. Se o aplicativo não registrar uma instalação não orgânica até esse momento, consulte o guia de solução de problemas exibido na página de teste de integração.
 
+<div id="testing-in-app-events" />
+
 ## Teste de eventos in-app
 
 1. Selecione um dos seus dispositivos de teste registrados no menu suspenso e clique em Next.
 2. Abra seu aplicativo e comece a gerar eventos in-app.
 3. Você verá um registro desses eventos conforme eles são registrados em tempo real.
+
+<div id="testing-deep-linking" />
 
 ## Testando deep linking
 

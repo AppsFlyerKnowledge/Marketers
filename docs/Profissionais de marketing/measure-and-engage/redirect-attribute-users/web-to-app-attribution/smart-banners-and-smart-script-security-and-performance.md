@@ -23,6 +23,8 @@ x-zendesk:
 
 Neste Q&A, discutimos dúvidas comuns sobre a integração de Smart Banners e Smart Script, com foco no impacto na segurança e na velocidade do site.
 
+<div id="smart-banners-api-security" />
+
 ## Segurança da API do Smart Banners
 
 <div id="what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it" />
@@ -67,6 +69,8 @@ sim, sim, A chave web exclusiva do cliente atua como identificador nas chamadas 
 Sem. Não é possível acessar e modificar o código que define a chave web usada na chamada de API do banner. Isso significa que agentes mal-intencionados não podem manipular o cálculo do banner nem a URL do OneLink gerada para o CTA do banner.
 
 </Accordion>
+
+<div id="smart-banners-script-hosting-security" />
 
 ## Segurança da hospedagem do script dos Smart Banners
 
@@ -121,6 +125,8 @@ O proprietário do site deve <Anchor target="_blank" href="https://dev.appsflyer
 
 </Accordion>
 
+<div id="smart-banners-performance" />
+
 ## Performance dos Smart Banners
 
 <div id="does-the-smart-banner-web-sdk-impact-website-load-speed" />
@@ -163,6 +169,8 @@ O tempo de carregamento do banner é impactado pelo Largest Contentful Paint (LC
 * Escolha a mesma espessura de fonte em todo o banner.
 
 </Accordion>
+
+<div id="smart-script-security-and-performance" />
 
 ## Segurança e performance do Smart Script
 

@@ -26,11 +26,15 @@ Este artigo descreve as permissões disponíveis ao compartilhar dados em uma co
 * [Permissões de dados](#permissões-de-dados)
 * [Permissões de acesso](#permissões-de-acesso)
 
+<div id="data-permissions" />
+
 ## Permissões de dados
 
 As permissões de dados que você seleciona definem como seu colaborador pode usar seus dados associados e se aplicam a todas as fontes que você associa à colaboração. As permissões também podem ser modificadas individualmente por fonte.
 
 <Image alt="Permissões de dados Dez 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
+
+<div id="data-permissions-include" />
 
 ### As permissões de dados incluem:
 
@@ -42,11 +46,15 @@ As permissões de dados que você seleciona definem como seu colaborador pode us
 | **Conexões de parceiros** | Permite que o colaborador envie as audiências criadas a partir das suas fontes para conexões de Parceiros para ativação. Ao habilitar essa opção, você pode conceder permissão de exportação para:<ul><li>**Todos os parceiros conectados** - Ao selecionar esta opção, você também pode **permitir conexões futuras de parceiros**, o que permite automaticamente a exportação de audiências para todos os parceiros de mídia com os quais a AppsFlyer DCP tem parceria.</li><li>**Apenas parceiros específicos**<ul><li>Ao selecionar parceiros específicos, você pode especificar ainda mais se permite que seu colaborador use apenas as conexões de ativação dele ou as suas (por exemplo, apenas a conexão Meta dele ou a sua conexão Meta).</li><li>Se você selecionar suas conexões, precisará escolher quais das suas contas conectadas o colaborador poderá usar (por exemplo, apenas a sua conexão Meta A, mas nenhuma das suas outras conexões Meta).</li></ul></li></ul>**Notas importantes:**<ul><li>Quando seus colaboradores estiverem prontos para <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-build-and-activate-audiences#enviar-audiência-para-ativação">ativar audiências</Anchor> com base nas suas fontes, somente as conexões de parceiros para as quais você concedeu permissões estarão disponíveis para eles.</li><li>Se você não tiver concedido ao colaborador permissão para publicar ou exportar audiências, quando ele tentar ativar uma audiência, a solicitação de ativação será enviada a você para ser concluída.</li></ul> |
 | **Exportar arquivo** | Permite que o colaborador exporte arquivos de audiência para o cloud bucket dele. |
 
+<div id="access-permissions" />
+
 ## Permissões de acesso
 
 As permissões de acesso definem os recursos que o seu colaborador pode acessar. Isso inclui a opção de conceder ao seu colaborador acesso às suas <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-add-connections#create-data-identity-connections">conexões de Data & Identity (resolução de dados)</Anchor>, permitindo que ele use essas conexões para enriquecer as fontes dele.
 
 **Observação:** Para conceder acesso, a conexão de Data & Identity relevante deve estar ativa.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

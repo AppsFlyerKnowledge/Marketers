@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Kuaishou é um parceiro integrado de ad network da AppsFlyer.
 
+<div id="setting-up-kuaishou" />
+
 ## Configuração do Kuaishou
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -41,13 +43,19 @@ A janela de configuração do Kuaishou inclui 3 abas ativas: Integração, link 
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 ![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -101,6 +109,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Nessa aba, você pode selecionar as permissões a serem concedidas ao Kuaishou, independentemente de o parceiro atuar como uma ad network, uma agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para o Kuaishou, a aba de permissões está ativa e você pode conceder controle ao Kuaishou.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

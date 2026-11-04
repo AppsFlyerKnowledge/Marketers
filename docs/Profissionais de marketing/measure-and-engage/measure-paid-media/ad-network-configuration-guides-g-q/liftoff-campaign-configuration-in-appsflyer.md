@@ -25,11 +25,15 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Algumas fontes de mídia restringem o compartilhamento de dados com terceiros. A AppsFlyer não pode compartilhar dados no nível de usuário adquiridos por meio dessas fontes de mídia com plataformas ou serviços de terceiros. Todas as instalações de tais fontes de mídia são, portanto, enviadas como orgânicas.
 >
 > Para mais detalhes e uma lista de canais de mídia que restringem o compartilhamento de dados com terceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention">aqui</Anchor>.
+
+<div id="setting-up-liftoff" />
 
 ## Como configurar a Liftoff
 
@@ -51,9 +55,13 @@ x-zendesk:
 
 A **aba de integração** se divide em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 O <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">parceiro deve ser ativado</Anchor> ao ligar o botão de alternância **Ativar parceiro** na primeira visita, para permitir a configuração.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -61,12 +69,16 @@ O <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivati
 
 Ative se quiser atribuir instalações view-through da Liftoff. O cursor de lookback de view-through está disponível na aba [**Link da atribuição**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para a Liftoff após instalações de usuários, instalações rejeitadas e reengajamentos. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente este parceiro** para eventos provenientes apenas de usuários atribuídos à Liftoff.  
 Selecione **todas as fontes, incluindo orgânicas** para ter toda a sua base de usuários disponível para ser reportada à Liftoff.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -129,6 +141,8 @@ Os dados de receita de anúncios não têm suporte por parte deste parceiro.
 
 Nesta aba, você pode selecionar as permissões para conceder à Liftoff. Observe que, mesmo que a atribuição esteja desativada para a Liftoff, a aba de permissões está ativa e você pode conceder controle à Liftoff.
 
+<div id="ad-network-permissions" />
+
 ### Permissões da rede de anúncios
 
 Nesta aba, você pode selecionar as permissões para conceder à Liftoff. Observe que, mesmo que a atribuição esteja desativada para a Liftoff, a aba de permissões está ativa e você pode conceder controle à Liftoff.
@@ -144,6 +158,8 @@ Use essas chaves seletoras a fim de conceder permissões à rede de anúncios pa
 * **Permitir o acesso ao painel Protect360** – somente aos próprios dados do Protect360 do parceiro e desde que o recurso esteja ativado para o anunciante
 
 Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad networks</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 
@@ -171,6 +187,8 @@ Saiba mais sobre <Anchor target="_blank" href="/partners/pt/docs/about-agency-ac
 
 </Accordion>
 
+<div id="set-up-skadnetwork-integration-with-liftoff" />
+
 ## Configure a integração da SKAdNetwork com a Liftoff
 
 **Para receber dados da SKAdNetwork da Liftoff:**
@@ -184,6 +202,8 @@ Saiba mais sobre <Anchor target="_blank" href="/partners/pt/docs/about-agency-ac
 4. Entre em contato com a equipe de contas da Liftoff para confirmar que os postbacks da SKAdNetwork estão sendo enviados com valores de conversão.
 5. [Opcional] Para compartilhar o ID da transação da SKAdNetwork com a Liftoff, ative **Share Transaction ID in SKAdNetwork mode**.  
    Saiba mais sobre o <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">ID da transação.</Anchor>
+
+<div id="product-feed-retargeting-with-liftoff" />
 
 ## Retargeting de feed de produtos com Liftoff
 

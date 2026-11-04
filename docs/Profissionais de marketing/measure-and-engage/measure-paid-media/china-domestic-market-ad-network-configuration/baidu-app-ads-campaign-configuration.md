@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Em resumo:** O Baidu App Ads (Baitong), um parceiro integrado de ad network da AppsFlyer, é uma das maiores plataformas de promoção e distribuição de aplicativos no mercado interno da China, integrando o tráfego mobile de lojas de aplicativos (Baidu Mobile Assistant, Android Market, 91 Mobile Assistant etc.), da Pesquisa Mobile do Baidu, do Super App e dos afiliados do Baidu.
 
+<div id="setting-up-baidu-app-ads-baitong" />
+
 ## Configurar o Baidu App Ads (Baitong)
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -46,9 +48,13 @@ A janela de configuração do Baidu App Ads inclui 3 abas ativas: integração, 
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **primeira visita** aqui, você deve ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -67,6 +73,8 @@ A integração com o Baidu Baitong Ads oferece suporte apenas ao evento de insta
 Nesta guia, você pode criar os links de atribuição que deseja enviar ao Baidu App Ads (Baitong) para atribuir campanhas, conjuntos de anúncios ou até mesmo anúncios individuais do Baidu App Ads (Baitong). Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro.
 
 Essa guia está dividida em diferentes seções:
+
+<div id="attribution-link-parameters" />
 
 ### Parâmetros de link de atribuição
 
@@ -87,6 +95,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras inicializações) que ocorrerem dentro da janela de lookback podem ser atribuídas ao Baidu App Ads（Baitong).
@@ -94,6 +104,8 @@ Essa barra deslizante permite que você defina o **tempo máximo entre o clique 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -124,6 +136,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 <Accordion title="Aba permissões">
 
 Nessa aba, você pode selecionar as permissões a serem concedidas ao Twitter, independentemente de o parceiro atuar como uma ad network, agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a RTB House, a guia de permissões estará ativa e você poderá conceder controle à RTB House.
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

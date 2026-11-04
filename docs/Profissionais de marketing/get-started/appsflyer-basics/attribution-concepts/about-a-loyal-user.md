@@ -28,14 +28,20 @@ x-zendesk:
 ---
 > **Em resumo:** Saiba o que define um usuário fidelizado na AppsFlyer e como você pode personalizá-lo.
 
+<div id="what-is-a-loyal-user" />
+
 ## O que é um usuário fidelizado?
 
 * De acordo com a configuração padrão da AppsFlyer, um usuário fidelizado é um usuário que, após fazer o download e abrir o aplicativo pela primeira vez, o abre mais 3 vezes.
 * Este é um KPI importante para o engajamento do usuário.
 
+<div id="changing-the-loyal-user-definition" />
+
 ## Alterando a definição de usuário fidelizado
 
 Você pode definir um usuário fidelizado por aplicativo especificando um gatilho de evento in-app. Para alterar o gatilho do evento de usuário leal, consulte as <Anchor target="_blank" href="/marketers/pt/docs/app-settings">Configurações do aplicativo</Anchor>.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >

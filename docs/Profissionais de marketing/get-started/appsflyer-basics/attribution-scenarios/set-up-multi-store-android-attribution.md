@@ -31,9 +31,13 @@ x-zendesk:
 ---
 > **Resumo:** atribua seus aplicativos em várias lojas Android e visualize os dados em um único dashboard ou em um dashboard por loja.
 
+<div id="multi-store-android-attribution" />
+
 ## Atribuição multi-store do Android
 
 A AppsFlyer atribui aplicativos, independentemente da loja. Ou seja, Google Play Store e lojas de aplicativos Android de terceiros como Amazon, Opera, GetJar, Baidu e Huawei (também conhecidas como lojas fora do mercado principal ou lojas alternativas de aplicativos Android). (também conhecidas como lojas fora do mercado ou lojas alternativas de aplicativos Android.) (também conhecidas como lojas fora do mercado ou lojas alternativas de aplicativos Android.) Os proprietários de aplicativos, que comercializam um aplicativo por meio de várias lojas, podem escolher entre um **único** **dashboard**, com os dados de todas as lojas juntos, ou um **dashboard por loja**.
+
+<div id="note" />
 
 > 📘 **Observação:**
 >
@@ -42,6 +46,8 @@ A AppsFlyer atribui aplicativos, independentemente da loja. Ou seja, Google Play
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
 
+<div id="single-dashboard-vs-dashboard-per-store" />
+
 ### Dashboard único vs. dashboard por loja
 
 * **Dashboard único:** Combina dados de todas as lojas, incluindo a Google Play Store.
@@ -49,11 +55,15 @@ A AppsFlyer atribui aplicativos, independentemente da loja. Ou seja, Google Play
 
 <table><thead><tr><th> </th><th>Dashboard único<br/>[Práticas recomendadas]</th><th> Dashboard por loja</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>Nome do pacote Android</td><td colspan="2">Use o mesmo nome de pacote (idêntico) independentemente da opção selecionada. </td></tr><tr><td><span id="channel-name"></span>Nome do canal</td><td>Nada a definir</td><td><ul><li><span>Ao adicionar o aplicativo no dashboard da AppsFlyer usando a opção <strong>APK fora da loja Android</strong>, defina o canal.</span></li><li><span>O canal identifica a loja.</span></li><li>A combinação de nome do pacote Android e canal identifica exclusivamente cada dashboard da AppsFlyer.</li><li>Exemplo: O nome do pacote Android é com.abc.def e o canal é xyz_device_store. O identificador exclusivo do dashboard é com.abc.def-xyz_device_store.</li><li>Se o APK tiver uma configuração de canal, mas não houver nenhum aplicativo com essa configuração, o tráfego é atribuído ao aplicativo padrão, sendo que o aplicativo com uma configuração de canal em branco é a Google Play Store. </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>Preenchendo o campo install_app_store</td><td><ul><li>Identifica exclusivamente a loja que fornece o aplicativo por download.</li><li>No caso da Google Play Store, o campo está em branco.</li><li>O nome da loja é definido em <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">manifesto/APK</a>.</li></ul></td><td>N/D</td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#como-criar-templates-do-onelink" target="_blank">Template do OneLink</a></td><td>Ao trabalhar com o OneLink, esse método é recomendado. </td><td>N/D </td></tr><tr><td><span id="measurementattribution-links"></span>Links de mensuração/atribuição </td><td><ul><li>Os links são os mesmos independentemente da loja.</li><li>Para redirecionar para o armazenamento correto, use <a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">af_r</a> para definir o URL de redirecionamento</li></ul></td><td><ul><li>Um link exclusivo é necessário para cada loja.</li><li>Crie-os usando a página <strong>Integrações ativas</strong>.</li><li>O ID do aplicativo é o nome do canal anexado ao nome do pacote do Android. Ex: com.abc.def-def_store.<br/>Assim, os links de atribuição serão diferentes.</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>Opções de relatórios disponíveis com o campo install_app_store</td><td>Os relatórios de dados brutos sempre incluem esse campo. No caso dos relatórios de visão geral e de cohort, entre em contato com seu CSM e peça para que ele adicione o recurso necessário. </td><td>N/D </td></tr><tr><td><span id="considerations"></span>Considerações</td><td><ul><li>Precisão da atribuição: as reinstalações de diferentes lojas não resultam em números de instalação inflados.</li><li><span>Instalações orgânicas refletirão instalações orgânicas de APKs de todas as lojas em um único dashboard.</span></li><li><span>No momento, as opções de relatório, separadas por loja, estão limitadas a visão geral, cohort e dados brutos.</span></li></ul></td><td><ul><li>Precisão da atribuição: as reinstalações são contabilizadas, o que resulta em uma atribuição menos precisa.</li><li><span>Visualize instalações orgânicas e não orgânicas e dados de eventos in-app por loja (canal) em dashboards separados na AppsFlyer.</span></li><li><span>Use o cohort para exibir relatórios combinados de todas as lojas juntos</span></li><li><p>Ative um parceiro (<a href="./partner-activation-deactivation" target="_blank">Ativar parceiro</a> está habilitado) em cada aplicativo de loja terceirizada em que o parceiro está executando uma campanha ativa. Isso ajuda a evitar discrepâncias de atribuição, especialmente ao trabalhar com Self-Reporting Networks (SRNs).<br/> </p></li></ul></td></tr></tbody></table>
 
+<div id="set-up-tasks" />
+
 ## Tarefas de configuração
 
 O fluxo de trabalho a seguir lista as atividades necessárias para configurar a opção desejada. As tarefas são divididas entre o profissional de marketing e o desenvolvedor.
 
 Para a opção Dashboard-per-store, repita as tarefas para cada loja.
+
+<div id="before-you-begin" />
 
 ### **Antes de começar**
 
@@ -63,6 +73,8 @@ Para a opção Dashboard-per-store, repita as tarefas para cada loja.
 
 <table><thead><tr><th>Parâmetro</th><th>Instrução</th><th>Dashboard único<br/>[Práticas recomendadas]</th><th>Dashboard por loja</th></tr></thead><tbody><tr><td>Nome do pacote Android</td><td>Nome do pacote idêntico para todas as opções do dashboard</td><td colspan="2">Se o aplicativo já estiver na Google Play Store, use o nome do pacote existente. Exemplo: comb.abc.def</td></tr><tr><td>Nome do canal</td><td>Um valor único para cada loja.</td><td>Não definido. Deixe em branco. </td><td><p>Exclusivo para cada loja. Defina o valor no APK individual preparado para a loja e ao adicionar o aplicativo na AppsFlyer. </p><p>Não defina um canal para o APK da Google Play Store. </p></td></tr><tr><td>Instalar loja de aplicativos AF_STORE</td><td>Um valor único que identifica a loja</td><td><span>Exclusivo para cada loja. Definido no APK através do manifesto. Cada loja tem seu próprio APK. </span></td><td> Não definido</td></tr></tbody></table>
 
+<div id="tasks" />
+
 ### Tarefas
 
 | Etapa | Responsabilidade | Dashboard único | Dashboard por loja |
@@ -71,6 +83,8 @@ Para a opção Dashboard-per-store, repita as tarefas para cada loja.
 | 2 | Marketer | Nenhuma ação necessária. Presume-se que o aplicativo já está ativo na AppsFlyer. | [Adicione o aplicativo](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) à AppsFlyer. |
 | 3 | Marketer | [Preparar links de atribuição](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | Prepare links de atribuição com o ID do aplicativo combinada com o nome do canal. |
 | 4 | Desenvolvedor e profissional de marketing | [Testes](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [Testes](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -118,6 +132,8 @@ O valor definido aqui aparece no campo install\_app\_store de dados brutos da Ap
 Seja para criar links de atribuição <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#attribution-link-tab">para serem usados por uma ad network</Anchor> ou pelas <Anchor target="_blank" href="/marketers/pt/docs/onelink-onboarding-guide#sobre-o-onelink">suas mídias próprias</Anchor>, siga estas etapas para garantir que o engajamento de todos os seus links de atribuição apareça em um único dashboard.
 
 1. No link de atribuição, defina o parâmetro **URL fora da loja**. Isso preenche a macro **af\_r** no link de atribuição para redirecionar os usuários para a página de destino correta da loja de aplicativos. Por exemplo, `&af_r=https://www.destinationurl.com`
+
+   <div id="note-1" />
 
    > 📘 **Nota**
    >
@@ -183,6 +199,8 @@ Para adicionar um dashboard por loja na AppsFlyer:
 
 <Accordion title="Teste — ambas as opções do dashboard">
 
+<div id="non-organic-installs" />
+
 #### **Instalações não orgânicas**
 
 **Para testar instalações não orgânicas:**
@@ -202,6 +220,8 @@ Para adicionar um dashboard por loja na AppsFlyer:
 | --- | --- |
 | <ol><li>Verifique o relatório de dados brutos da instalação do aplicativo na página de exportação de dados.</li><li>Você deve ver uma conversão de instalação com a fonte de mídia de teste. Sob a coluna **Instalar App Store,** você deve ver o nome da loja como ele aparece no arquivo manifest.xml.</li><li>Você também deve ver o parâmetro "af\_installstore": "STORE\_NAME" nos registros de instalação.</li></ol> | <ol><li>Acesse o aplicativo necessário por dashboard da loja.</li><li>Verifique o relatório de dados brutos de instalações do aplicativo na página de exportação de dados ou consulte a página de visão geral do aplicativo.</li><li>Você deve ver uma conversão de instalação com a fonte de mídia “teste”.</li></ol> |
 
+<div id="organic-installs" />
+
 #### **Instalações orgânicas**
 
 **Para testar instalações orgânicas:**
@@ -210,6 +230,8 @@ Para adicionar um dashboard por loja na AppsFlyer:
 2. Instale a versão beta do aplicativo atualizado com o SDK de atribuição da AppsFlyer incorporado e inicialize-o.
 3. Verifique os resultados:
 
+<div id="expected-results" />
+
 #### Resultados esperados
 
 | Dashboard único | Dashboard por loja |
@@ -217,6 +239,8 @@ Para adicionar um dashboard por loja na AppsFlyer:
 | Verifique a página de visão geral para uma nova instalação orgânica (abaixo de fonte de mídia “orgânica”). Atualmente, com o método de aplicativo único, não há indicação quanto à origem das instalações orgânicas. | <ol><li>Acesse o dashboard e a página de visão geral do aplicativo específico para a loja testada.</li><li>Você deverá ver uma conversão de instalação na fonte de mídia "orgânica".</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## Funcionalidades adicionais
 
@@ -282,11 +306,17 @@ A atribuição por um referrer de lojas terceirizadas é refletida nos relatóri
 
 </Accordion>
 
+<div id="troubleshooting" />
+
 ## Resolução de problemas
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### Instalações atribuídas ao aplicativo padrão
 
 Se você criar um APK de aplicativo com uma configuração de canal, mas não criar um dashboard para ele na conta da AppsFlyer: As instalações são atribuídas ao aplicativo padrão, geralmente o app da Google Play Store na sua conta. Se não houver nenhum aplicativo padrão, nenhum dado será gravado para o aplicativo.
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

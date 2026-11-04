@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
+<div id="delete-user-history" />
+
 ## Remover histórico do usuário
 
 Alguns regulamentos de privacidade, como a GDPR e a CCPA, dão aos usuários o *direito de exclusão* de seus dados.
@@ -31,6 +33,8 @@ Alguns regulamentos de privacidade, como a GDPR e a CCPA, dão aos usuários o *
 **Cenário:** um usuário solicita que você exclua todos os dados relacionados a ele. A GDPR exige que isso seja feito dentro de 30 dias.
 
 **Ação necessária:**  use a <Anchor target="_blank" href="/marketers/pt/docs/send-opendsr-api-requests">OpenDSR API</Anchor> para enviar uma solicitação de exclusão.
+
+<div id="stop-attributing-installs-to-a-media-source" />
 
 ## Parar de atribuir instalações a um canal de mídia
 
@@ -49,13 +53,19 @@ A AppsFlyer coleta informações de instalação e eventos para os canais de mí
 * **Mídias próprias:**
   * Interrompa o uso de links personalizados relevantes do OneLink.
 
+<div id="remove-or-delete-an-app" />
+
 ## Remover ou excluir um aplicativo
 
 Você tem a opção de remover temporariamente um aplicativo.
 
+<div id="temporarily-removing-an-app" />
+
 #### Remova temporariamente um aplicativo
 
 Quando um aplicativo é temporariamente removido, o registro de dados é interrompido, o app não aparece mais no dashboard e fica desabilitado na página “My Apps”. No entanto, o aplicativo permanece associado à conta e pode ser restaurado. Ao restaurar o aplicativo, os dados históricos como definições, agências aprovadas e tokens continuam disponíveis.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -72,9 +82,13 @@ Quando um aplicativo é temporariamente removido, o registro de dados é interro
 
 * Entre em contato com seu CSM ou envie um e-mail para [hello@appsflyer.com](mailto:hello@appsFlyer.com). Depois que seu CSM restaurar o aplicativo, você poderá adicioná-lo novamente à sua conta.
 
+<div id="transfer-apps-between-accounts" />
+
 ## Transferir aplicativos entre contas
 
 Para mais informações, acesse esse guia: <Anchor target="_blank" href="/marketers/pt/docs/transferring-apps-between-accounts">Transferência de aplicativos entre contas</Anchor>.
+
+<div id="delete-your-account-or-downgrade-your-subscription-plan" />
 
 ## Excluir sua conta ou fazer o downgrade do plano de assinatura
 

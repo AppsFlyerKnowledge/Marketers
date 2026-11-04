@@ -24,11 +24,15 @@ x-zendesk:
 
 Os clientes devem trabalhar em estreita colaboração com consultores jurídicos e outros profissionais para determinar exatamente como as políticas do Google se aplicam a eles e adaptar suas respostas de acordo com suas configurações e usos específicos.
 
+<div id="disclaimer" />
+
 #### **Isenção de responsabilidade**
 
 As informações contidas neste artigo têm como objetivo auxiliar na resposta ao Questionário da Seção de Segurança do Google em relação **apenas** ao que a AppsFlyer processa em nome dos clientes.
 
 É fornecido apenas para fins informativos e de conveniência. Os clientes devem trabalhar em estreita colaboração com consultores jurídicos e outros profissionais para determinar exatamente como as políticas do Google se aplicam a eles e adaptar suas respostas de acordo com suas configurações e usos específicos.
+
+<div id="introduction" />
 
 ## Introdução
 
@@ -36,9 +40,13 @@ A partir de abril de 2022, os desenvolvedores de aplicativos deverão fornecer i
 
 As informações fornecidas por cada aplicativo serão exibidas na página da Google Store, ajudando os usuários finais a entender melhor as práticas de privacidade de um aplicativo.
 
+<div id="audience" />
+
 ## público
 
 Todos os desenvolvedores de aplicativos deverão preencher o questionário da seção de segurança e publicar um link para uma política de privacidade, mesmo que não coletem nenhum dos tipos de dados especificados pelo Google.
+
+<div id="google-safety-form-questionnaire" />
 
 ## Formulário de segurança do Google (questionário)
 
@@ -54,6 +62,8 @@ Com relação ao uso da AppsFlyer, os desenvolvedores de aplicativos são lembra
 
 Os desenvolvedores de aplicativos devem responder ao questionário de acordo com seus casos de uso específicos, configurações e integrações de parceiros.
 
+<div id="data-collection-and-security" />
+
 ### Coleta de dados e segurança
 
 Nesta seção, você receberá algumas perguntas gerais com resposta sim/não:
@@ -63,6 +73,8 @@ Nesta seção, você receberá algumas perguntas gerais com resposta sim/não:
 3. Você fornece uma maneira para os usuários solicitarem que seus dados sejam excluídos?
 
 Com relação ao seu uso da AppsFlyer, a AppsFlyer criptografa todos os dados em trânsito transmitidos pelo SDK. A AppsFlyer também oferece aos clientes a capacidade de excluir dados específicos do usuário final por meio de sua estrutura OpenGDPR. Para os tipos de dados coletados, consulte a tabela na seção [Tipos de dados](/docs/fill-out-google-safety-section-form#tipo-de-dados).
+
+<div id="data-types" />
 
 ### Tipo de dados
 
@@ -103,13 +115,19 @@ As exceções incluem o seguinte:
 
 É importante observar que, embora a AppsFlyer atue exclusivamente como um provedor de serviços em seu nome e de acordo com suas instruções, se você estiver compartilhando dados com redes de terceiros (por exemplo, por meio de postbacks, SRNs e públicos), isso seria considerado compartilhamento.  Portanto, cada desenvolvedor de aplicativos precisará avaliar suas configurações e integrações de parceiros e responder de acordo.
 
+<div id="ephemeral-processing" />
+
 ## Processamento efêmero
 
 O processamento efêmero refere-se aos dados processados na memória, apenas pelo período de tempo necessário para processar uma ação específica em tempo real e sem outra finalidade. Dada a natureza dos serviços da AppsFlyer, os dados processados pela AppsFlyer em seu nome não são processados de forma efêmera.
 
+<div id="user-choice" />
+
 ## Escolha do usuário
 
 Em geral, os dados coletados são necessários para realizar os serviços. No entanto, os desenvolvedores de aplicativos têm a capacidade de submeter qualquer coleta de dados a controles de optar por participar ou por não participar.
+
+<div id="purpose" />
 
 ## Propósito
 
@@ -124,6 +142,8 @@ O Google forneceu uma lista de finalidades a partir das quais os desenvolvedores
 | Fraude, prevenção, segurança e compliance | Sim |
 | Personalização | Selecione se você usa os dados para qualquer tipo de personalização de produto. |
 | Gerenciamento de contas | Selecione se você usa os dados para a configuração e o gerenciamento de contas de usuário |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** a AppsFlyer usa o preload referrer para atribuir instalações a campanhas de preload, nas quais os profissionais de marketing entram em contato com fabricantes de equipamentos originais (OEMs), operadoras móveis e parceiros de descoberta de aplicativos para fazer a pré-instalação seu aplicativo na fábrica ou no momento em que o dispositivo é ligado pela primeira vez pelo usuário.
 
+<div id="overview" />
+
 ## Visão geral
 
 Em campanhas de preload, OEMs, operadoras de celular e parceiros de descoberta de aplicativos fazem a pré-instalação de aplicativos nos dispositivos, antes que eles cheguem a um usuário. Isso pode ser feito pelo OEM na fábrica ou pelos fornecedores na primeira ativação do dispositivo.
@@ -35,11 +37,15 @@ A solução oferece:
 * Suporte transparente com atualizações e redownloads de aplicativos.
 * Visibilidade e recursos de mensuração entre a primeira ativação do dispositivo e a primeira inicialização do app. Isso permite que você veja quantos dispositivos foram ativados com o app pré-instalado por um parceiro específico e, posteriormente, que você veja quando o app foi iniciado pela primeira vez.
 
+<div id="partners-supporting-preload-referrer-campaigns" />
+
 ## Parceiros que oferecem suporte para campanhas de preload referrer
 
 As informações neste artigo são relevantes para anunciantes que estão integrados com os parceiros especificados na tabela abaixo:
 
 <table><thead><tr><th rowspan="2">Parceiro</th><th rowspan="2">PID</th><th colspan="2">Opções de campanha de preload referrer <a href="./set-up-appsflyer-preload-referrer-attribution#opções-de-preload-referrer"><span>Saiba mais.</span> </a> </th></tr><tr><th>Pré-carga</th><th>Click-to-download</th></tr></thead><tbody><tr><td><a href="#preload-referrer-da-samsung">Samsung</a></td><td>samsung_int</td><td><span>✓</span></td><td> </td></tr><tr><td>Digital Turbine On Device</td><td>digitalturbine_int</td><td><span>✓</span></td><td>Em breve</td></tr><tr><td>Aura from Unity</td><td>aura_int</td><td><span>✓</span></td><td>Em breve</td></tr><tr><td>Appnext</td><td>appnext_int</td><td><span>✓</span></td><td>Em breve</td></tr><tr><td>Glance<br/> </td><td>glance_int</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
+
+<div id="preload-referrer-options" />
 
 ## Opções de preload referrer
 
@@ -52,12 +58,16 @@ A AppsFlyer dá a maior prioridade à atribuição de preload. Isso significa qu
 | Pré-carga | <ul><li>O aplicativo é pré-instalado na fábrica ou na primeira vez que o dispositivo é ativado. Ou então, um assistente sugere que os usuários façam o download do aplicativo quando o dispositivo é ativado pela primeira vez.</li><li>Um evento de preload, equivalente a um clique, é relatado à AppsFlyer quando o dispositivo é ligado pela primeira vez.</li><li>A atribuição ocorre quando o usuário abre o app pela primeira vez.</li><li>O evento de preload tem a prioridade de atribuição mais alta (a não ser que a prioridade equitativa esteja ativada).</li></ul> | `preload_rfr` |
 | Click-to-download | <ul><li>A instalação do aplicativo ocorre posteriormente no ciclo de vida do dispositivo, por meio de notificações push, lojas alternativas de parceiros, etc.</li><li>Quando o usuário interage com um anúncio ou com uma mensagem push, o app é baixado e instalado automaticamente no dispositivo sem redirecionar para uma loja de aplicativos.</li><li>A atribuição é feita usando as regras de último clique da AppsFlyer.</li></ul> | `af_referrer` |
 
+<div id="view-preload-attribution-data" />
+
 ## Ver dados de atribuição de preload
 
 Os dados de performance da campanha de preload/click-to-download estão disponíveis da seguinte forma:
 
 * Os engajamentos contam como cliques em relatórios e dashboards agregados. Eles são agregados no parceiro de preload (fonte de mídia) e nos níveis de campanha.
 * **Dados brutos:** Os engajamentos estão disponíveis nos relatórios de cliques disponíveis via Data Locker. Eles são encontrados no campo URL original e podem ser identificados no parâmetro af\_engagement\_type como preload ou click\_to\_download. Para instalações, consulte a tabela na seção anterior para ver como o tipo de correspondência é exibido em dados brutos.
+
+<div id="set-up-preload-referrer-attribution" />
 
 ## Configurar a atribuição do preload referrer
 
@@ -78,13 +88,19 @@ Os dados de performance da campanha de preload/click-to-download estão disponí
 6. Clique em **Salvar integração**.
 7. Informe ao parceiro de preload que você está pronto para atribuir suas campanhas.
 
+<div id="samsung-preload-referrer" />
+
 ## Preload referrer da Samsung
 
 A integração do preload referrer da Samsung com a AppsFlyer permite que você tenha uma visão detalhada desde o download inicial do app até sua primeira abertura, permitindo uma compreensão mais clara do comportamento do usuário.
 
+<div id="set-up-samsung-preload-referrer-attribution" />
+
 ### Configurar a atribuição de preload referrer da Samsung
 
 Para configurar a atribuição de preload referrer da Samsung, consulte as [instruções gerais para preload referrers](#configurar-a-atribuição-do-preload-referrer).
+
+<div id="traits-and-limitations" />
 
 ### Características e limitações
 

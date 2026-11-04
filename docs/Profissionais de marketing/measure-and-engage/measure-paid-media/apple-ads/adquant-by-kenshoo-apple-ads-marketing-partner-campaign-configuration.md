@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **Em resumo:** Otimize campanhas do Apple Ads usando o Adquant by Kenshoo. Quando configurado, o AppsFlyer envia postbacks para o Adquant.
 
+<div id="enabling-sending-postbacks-to-adquant-apple-ads-marketing-partner" />
+
 ## Habilitando o envio de postbacks para o Adquant (parceiro de marketing do Apple Ads)
 
 Tanto anunciantes quanto agências podem habilitar a atribuição para o Apple Ads.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -39,6 +43,8 @@ Tanto anunciantes quanto agências podem habilitar a atribuição para o Apple A
 
 * **Anunciantes:** siga as instruções abaixo para habilitar a atribuição para o Apple Ads.
 * **Agências:** <Anchor target="_blank" href="/marketers/pt/docs/apple-ads-integration-setup#agency-setup">siga estas instruções</Anchor> para habilitar a atribuição para o Apple Ads.
+
+<div id="configuring-adquant-by-kenshoo" />
 
 ### Configurar o Adquant by Kenshoo
 
@@ -63,9 +69,13 @@ Tanto anunciantes quanto agências podem habilitar a atribuição para o Apple A
    7. [Opcional] **Não permita o compartilhamento da geolocalização do usuário:** para interromper o compartilhamento da geolocalização do usuário, em **Disable\_Country\_Sending** digite `1`.
    8. Clique em **Guardar**.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Os postbacks exibidos são enviados automaticamente quando o parceiro é ativado.
+
+<div id="configuring-in-app-events-postback" />
 
 ### Configuração do postback de eventos in-app
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
+<div id="overview" />
+
 ## Visão geral
 
 * As regras de validação são definidas no criador de regras usando condições personalizadas e lógicas que filtram e selecionam quais instalações do aplicativo ou eventos in-app devem ser mantidos ou bloqueados.
@@ -82,9 +84,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="rule-builder" />
+
 ## Criador de regras
 
 A interface de usuário do criador de regras foi projetada para criação de regras interativa. **Dica!** Familiarize-se e teste o criador de regras antes de ler este artigo em detalhes.
+
+<div id="use-categorized-dimensions" />
 
 ### Usar dimensões categorizadas
 
@@ -115,6 +121,8 @@ O criador de regras contém as seguintes seções:
 | Condições | Escolha se deseja bloquear instalações/eventos in-app que "correspondem" ou "não correspondem" às condições definidas.<ul><li>**Condições de correspondência -** a atribuição será bloqueada para instalações/eventos in-app que correspondam às condições definidas e a ação selecionada abaixo se aplicará a todas elas.</li><li>**Não corresponde às condições -** A atribuição será bloqueada para instalações/eventos in-app que não correspondam às condições abaixo, e a ação selecionada abaixo será aplicada a todas as instalações restantes.</li></ul>Quando **eventos in-app** são selecionados na seção **Eventos**, além das [opções de fonte regulares](/docs/implement-validation-rules-to-prevent-fraud#install-sources), os clientes têm outra opção de fonte para definir a quais eventos in-app sua regra se aplica. |
 | Ações | Para instalações: selecione o que fazer com as instalações que atendem às condições especificadas:<ul><li>**Marque instalações como inválidas e não as atribua**. As instalações não aparecerão nos dashboards da AppsFlyer, exceto no Protect360 e em relatórios.</li><li>**Bloquear atribuição e corrigi-la para a última fonte de mídia válida.** Se nenhuma fonte de mídia válida for identificada, a instalação será considerada orgânica.</li></ul>Para eventos in-app: selecione o que fazer com as instalações que atendem às condições específicas:<ul><li>**Bloquear atribuição, mas mostrar nos dados do Protect360**. Os eventos não são atribuídos, mas são exibidos no dahsboard do Protect360 e nos dados brutos.</li><li>**Remover da AppsFlyer**. Os eventos não serão exibidos na plataforma da AppsFlyer.</li></ul>Consulte [resultados](/docs/implement-validation-rules-to-prevent-fraud#outcomes) para mais informações. |
 
+<div id="validation-rule-examples" />
+
 ## Exemplos de regras de validação
 
 <Accordion title="Fontes de instalação">
@@ -144,6 +152,8 @@ Você pode adicionar várias condições e grupos de condições a cada regra.
 
 As condições são definidas de acordo com as condições, operadores e valores descritos na tabela a seguir.
 
+<div id="bulk-upload" />
+
 #### Upload em massa
 
 Ao selecionar os operadores **na lista** ou **fora da lista** dentro das condições disponíveis, você tem a opção de fazer upload em massa de um arquivo CSV ao adicionar novos itens.
@@ -159,6 +169,8 @@ Atenção: o arquivo CSV pode conter até 17 mil valores.
 Opções de condição adicionais estão disponíveis para os clientes do Protect360, para [instalações](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions) e [eventos in-app](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions).
 
 <table><thead><tr><th><span>Condição</span></th><th><span>Fonte do evento</span></th><th><span>Valor</span></th><th><span>Considerações</span></th></tr></thead><tbody><tr><td><span>Campaign</span></td><td rowspan="6"><ul><li><span>Parâmetros</span></li><li><span>Doesn't equal</span></li><li><span>Não contém</span></li><li><span>Contém</span></li><li><span>Starts with</span></li><li><span>Ends with</span></li><li><span>Na lista</span></li><li><span>Não listados</span></li><li><span>Corresponde à expressão regular</span></li><li><span>Está vazio</span></li><li><span>Não está vazio</span></li></ul></td><td><ul><li>Procure o valor desejado.</li><li>Select value from menu.</li><li>Selecione o valor no menu.</li></ul></td><td rowspan="11"><ul><li> <span>Menu se baseia em:</span><ul><li>Aplicativos e agências selecionadas.</li><li>Tráfego dos últimos 30 dias, ordenado pela frequência do tráfego.</li></ul></li><li><span>Indica que o tráfego recebeu uma tag das regras de validação.</span></li></ul></td></tr><tr><td><span>ID da campanha</span></td><td rowspan="5"><ul><li><span>Apenas texto livre.</span></li><li><span>É possível adicionar vários valores separados por espaços.</span></li></ul></td></tr><tr><td><span>Disponível apenas em <a href="./about-data-locker-advanced-reports" target="_blank">relatórios avançados</a>.</span></td></tr><tr><td><span>ID do conjunto de anúncios</span></td></tr><tr><td><span>Nome do adset</span></td></tr><tr><td><span>Tipo do dispositivo</span></td></tr><tr><td><span>Geografia</span></td><td rowspan="3"><ul><li><span>Na lista</span></li><li><span>Não listados</span></li><li><span>Parâmetros</span></li><li><span>Doesn't equal</span></li></ul></td><td><ul><li><span>Pesquisar o valor desejado (com base no nome do país, código do país, estado ou cidade).</span></li><li><span>Select value from menu.</span></li></ul></td></tr><tr><td><span>Platform</span></td><td><span>Select value from menu.</span></td></tr><tr><td><span>Currency</span></td><td><p>Apenas moeda. Tipo de engajamento do colaborador</p><p>USD, NZD, SGD, IMP, ANG, MNT, BIF, BBD, HUF, ERN, AZN, AOA, PYG, MYR, GYD, VUV, SLL', FKP, DJF, GNF, LVL, MMK, MRO, RSD, CLF, XDR, ZAR, TND, PHP, KGS, XPD, RON, RUB, KMF, SCR, GIP, TRY, JEP, UYU, XCD, FJD, GHS, MVR, AWG, UGX, TOP, CVE, MKD, COP, CUC, GTQ, KZT, MXN, MGA, AUD, BDT, ISK, KRW, DZD, GGP, OMR, ZMW, MOP, CUP, JPY, SHP, LSL, ETB, BWP, MAD, AED, NGN, BRL, GEL, IDR, EUR, GBP, WST, XAF, SZL, XOF, SEK, UZS, KES, KYD, ILS, KWD, NPR, BZD, QAR, UAH, BTN, HTG, DKK, VND, SBD, JMD, IQD, LBP, XPT, HRK, HKD, JOD, PAB, CDF, VEF, XAU, BAM, CNY, SOS, XPF, GMD, DOP, XAG, KPW, BOB, BHD, BYN, BYR, LRD, BGN, AMD, CZK, CAD, LAK, EEK, MTL, PLN, LKR, BTC, MWK, LTL, ZMK, PGK, YER, PEN, KHR, RWF, BSD, AFN, ZWL, LYD, TMT, HNL, TWD, IRR, MUR, THB, ALL, TJS, SDG, BMD, CRC, NOK, SRD, MZN, CLP, STD, SYP, TZS, EGP, ARS, MDL, INR, SAR, PKR, TTD, NIO, BND, NAD, SVC, CHF</p></td></tr><tr><td><span>Sequência de caracteres</span></td><td><ul><li><span>Lower then</span></li><li><span>Menor que ou igual a</span></li><li><span>Maior que</span></li><li><span>Maior que ou igual a</span></li><li><span>Está entre</span></li><li><span>Parâmetros</span></li><li><span>Doesn't equal</span></li></ul></td><td><ul><li><span>Apenas texto livre.</span></li></ul></td></tr><tr><td><span>Nome do Adset</span></td><td><ul><li><span>Mais baixo do que</span></li><li><span>Menor que ou igual a</span></li><li><span>Maior que</span></li><li><span>Maior que ou igual a</span></li><li><span>Parâmetros</span></li><li><span>Doesn't equal</span></li><li><span>Está entre</span></li><li><span>Na lista</span></li><li><span>Não listados</span></li><li><span>Está vazio</span></li><li><span>Não está vazio</span></li></ul></td><td><ul><li><span>Procure o valor desejado.</span></li><li><span>Selecione a partir do menu.</span></li><li><span>Selecione o valor no menu.</span></li></ul></td></tr><tr><td><span>Idêntico a <a href="#device-info-advertising-id">advertising_id</a>, <a href="#device-info::e0372922">idfa</a>, <a href="#device-info::4afa15f">oaid</a>.</span></td><td><ul><li><span>Mais baixo do que</span></li><li><span>Menor que ou igual a</span></li><li><span>Maior que</span></li><li><span>Maior que ou igual a</span></li><li><span>Parâmetros</span></li><li><span>Doesn't equal</span></li><li><span>Is Between</span></li><li><span>Na lista</span></li><li><span>Não listados</span></li><li><span>Não está por último</span></li><li><span>Não está por último (maior)</span></li><li><span>Está vazio</span></li><li><span>Não está vazio</span></li></ul></td><td><ul><li>Procure o valor desejado.</li><li>Select value from menu.</li><li>Selecione o valor no menu.</li></ul></td><td><ul><li> Selecione o valor no menu.</li><li><span>Indica que o tráfego recebeu uma tag das regras de validação.</span></li><li> <span>Para "Not in last", se você tiver mais de uma série de versões, selecione "Not in last (major)". </span><a href="./implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work"><span>Saiba mais</span></a> </li></ul></td></tr><tr><td><span>Dias de lookback</span></td><td><ul><li><span>Mais baixo do que</span></li><li><span>Maior que ou igual a</span></li><li><span>Está entre</span></li></ul></td><td><ul><li><span>Texto livre: Um único valor numérico.</span></li></ul></td><td><ul><li><span>Refere-se à janela de lookback de impressão/clique em dias.</span></li><li><span>Garante que você não pague por instalações com um link de atribuição que foi modificado para permitir um período de atribuição mais longo.</span></li><li><span>Não substitui a configuração da janela de lookback no link de atribuição.</span></li><li> <span>[Recomendado] Use combinado com a condição de tipo de toque de atribuição (</span><a href="./implement-validation-rules-to-prevent-fraud#protect360-install-conditions"><span>disponível com o Protect360</span></a><span>)</span> </li></ul></td></tr><tr><td><span>Está pré-instalado</span></td><td rowspan="2"><ul><li><span>Sim</span></li><li><span>Retargeting</span></li></ul></td><td rowspan="2"><ul><li>Nenhum valor (o operador é o valor)</li></ul></td><td><ul><li> <span>Valida todos os tipos de pré-instalações:</span><ul><li><span>Pré-instalações de fábrica, ou seja, um aplicativo que vem no dispositivo como parte do sistema operacional.</span></li><li><span>Pré-instalações oferecidas, ou seja, um aplicativo promovido e oferecido aos usuários assim que o dispositivo é inicializado. Isso é feito por canais de mídia designados para pré-instalações.</span></li></ul></li><li>Para instalações com vários cliques/fontes, essa condição valida se uma das fontes é uma pré-instalação.</li></ul></td></tr><tr><td><span>Is deeplink</span></td><td><span>Um campo de deep link vazio em dados brutos é considerado "Is deeplink = No"</span></td></tr></tbody></table>
+
+<div id="note" />
 
 > 📘 **Atenção**
 >
@@ -192,6 +204,8 @@ As condições do Protect360 são definidas de acordo com as condições, operad
 | --- | --- | --- | --- |
 | Nome do evento | <ul><li>Na lista</li><li>Não listados</li><li>Igual a</li><li>Não é igual a</li><li>Contém</li><li>não contém</li><li>Starts with</li><li>Ends with</li><li>Está vazio</li><li>Não está vazio</li><li>Corresponde à expressão regular</li></ul> | <ul><li>Procure o valor desejado.</li><li>Select value from menu.</li><li>Free text (para valores que não existem nos resultados da pesquisa).</li></ul> | <ul><li>O texto livre deve ser digitado exatamente como aparece nos dados brutos.</li></ul> |
 | Versão do aplicativo | <ul><li>Mais baixo do que</li><li>Menor que ou igual a</li><li>Maior que</li><li>Maior que ou igual a</li><li>Igual a</li><li>Doesn't equal</li><li>Is Between</li><li>Na lista</li><li>Não listados</li><li>Não está por último</li><li>Não está por último (maior)</li><li>Está vazio</li><li>Não está vazio</li></ul> | <ul><li>Procure o valor desejado.</li><li>Select value from menu.</li><li>Free text (para valores que não existem nos resultados da pesquisa).</li></ul> | <ul><li>O menu se baseia no tráfego dos últimos 30 dias, ordenado pela frequência de tráfego.</li><li>Indica que o tráfego recebeu uma tag das regras de validação.</li><li>Para "Not in last", se você tiver mais de uma série de versões, selecione "Not in last (major)". [Saiba mais](/docs/implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work)</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
@@ -244,6 +258,8 @@ Por exemplo, se você quiser validar instalações com base tanto na plataforma 
 
 </Accordion>
 
+<div id="additional-features" />
+
 ## Recursos adicionais
 
 <Accordion title="Ver lista de regras">
@@ -279,6 +295,8 @@ A pesquisa e os filtros se aplicam ao conjunto completo de regras, independentem
 6. [Opcional] **Clique em**[Estimar impacto no tráfego](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact) para ver como sua regra afetará o tráfego.
 7. Clique em **Salvar**.
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > A versão do aplicativo deve conter apenas números. Por exemplo, 2.2.1.
@@ -306,6 +324,8 @@ Use o modo tagged para:
 
 Recomendado: crie a regra no modo tagged, revise o tráfego sinalizado no Data Locker e altere o status para "implemented" após validar a precisão da regra. Tente concluir essa avaliação em menos de 7 dias para manter a proteção ativa.
 
+<div id="how-tagged-mode-works" />
+
 #### Como funciona o modo tagged
 
 Ao criar ou editar uma regra de validação, selecione o status de detecção na seção "Resultados da regra".
@@ -315,6 +335,8 @@ Ao criar ou editar uma regra de validação, selecione o status de detecção na
 
 Atenção: O modo tagged se aplica apenas ao tráfego em tempo real a partir do momento em que a regra é salva. Ele não adiciona tags aos dados históricos.
 
+<div id="rule-outcome-configuration" />
+
 #### Configuração dos resultados da regra
 
 A seção "Resultados da regra" (anteriormente nomeada "Ação"), define como a AppsFlyer lida com o tráfego que corresponde às condições da regra. Ela também fornece um resumo detalhado da configuração da regra para que você possa verificar o impacto esperado antes de salvá-la.
@@ -323,6 +345,8 @@ A seção "Resultados da regra" (anteriormente nomeada "Ação"), define como a 
 | --- | --- | --- |
 | Tagged | Não. O tráfego é atribuído normalmente. | Visível nos relatórios do Data Locker. |
 | Implementadas | Bloqueio ativo. A atribuição é bloqueada de acordo com o resultado da regra selecionada. | Visível nos dashboards do Protect360 e nos relatórios de exportação. |
+
+<div id="what-to-expect-when-configuring-a-rule" />
 
 #### O que acontece ao configurar uma regra
 
@@ -336,6 +360,8 @@ Quando o status de detecção está definido como "tagged", a regra funciona com
 
 Quando o status de detecção é definido como "implemented", as instalações ou eventos in-app que correspondem aos critérios da regra são bloqueados da atribuição ou reatribuídos de acordo com o resultado da regra selecionada. O painel de informações resume o resultado real antes de salvar a regra.
 
+<div id="example-match-logic" />
+
 #### Exemplo: lógica de correspondência
 
 Para instalações detectadas que atendem às condições da regra para os aplicativos selecionados, o painel de informações pode indicar que essas instalações são:
@@ -343,6 +369,8 @@ Para instalações detectadas que atendem às condições da regra para os aplic
 * Bloqueadas da atribuição ou detectadas como pós-atribuição.
 * Reatribuídas ao último canal não orgânico ou orgânico válido.
 * Visíveis nos relatórios de exportação.
+
+<div id="example-do-not-match-logic" />
 
 #### Exemplo: não correspondem à lógica
 
@@ -353,6 +381,8 @@ Para instalações detectadas que não atendem às condições da regra para os 
 * Visíveis nos relatórios de exportação.
 
 Todas as outras instalações que atendem às condições da regra nesses aplicativos não são bloqueadas.
+
+<div id="set-a-rule-to-tagged-mode" />
 
 #### Definir uma regra como modo tagged
 
@@ -365,6 +395,8 @@ Para testar uma regra de validação com o modo tagged:
 5. Clique em "Salvar".
 
 Depois que a regra for salva, a AppsFlyer sinaliza o tráfego em tempo real correspondente para relatórios e análises. A atribuição continua normalmente.
+
+<div id="analyze-tagged-data" />
 
 #### Analise dados com tags
 
@@ -390,6 +422,8 @@ Use as colunas abaixo nas exportações do Data Locker para identificar o tráfe
 | detected\_rule\_name<br /><br />(Relatório do Data Locker) | O nome da regra de validação que sinalizou o registro. |
 | detected\_rule\_id<br /><br />(Relatório do Data Locker) | O ID exclusivo da regra de validação que sinalizou o registro. |
 
+<div id="change-a-tagged-rule-to-implemented" />
+
 #### Alterar uma regra de "tagged" para "implemented"
 
 Depois de analisar os dados com tags e confirmar se a regra está funcionando conforme o esperado, altere o status para "implemented".
@@ -414,6 +448,8 @@ A partir do momento em que a regra é salva, a AppsFlyer bloqueia o tráfego cor
   * Em **Ação**: edite ou exclua a regra.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Perguntas frequentes
 
@@ -493,6 +529,8 @@ Use **Not in last** para permitir instalações das **versões mais recentes do 
 * **Not in last** ***X*** **versions**: permite instalações das **últimas X versões** do aplicativo selecionado e **bloqueia** instalações de **todas as versões anteriores**.
 * **Not in last (major)** ***X*** **versions**: use quando sua versão incluir **várias séries de versões principais** (por exemplo, 1.x e 2.x). Essa condição permite as **últimas X versões dentro de cada série principal** e bloqueia versões anteriores em cada série.
 
+<div id="example-not-in-last" />
+
 ##### Exemplo: Not in last
 
 Você tem essas versões de aplicativos existentes:
@@ -515,6 +553,8 @@ Uma regra definida com blocos **"Not in last 2 versions"**:
   * 1.0.03
   * 2.0.01
 
+<div id="example-not-in-last-major" />
+
 ##### Exemplo: Not in last (major)
 
 Usando a mesma lista de versões acima, uma regra definida como **Not in last (major) 2 versions**:
@@ -528,6 +568,8 @@ Usando a mesma lista de versões acima, uma regra definida como **Not in last (m
   * 1.0.01
   * 2.0.01
 
+<div id="understand-how-the-condition-works-with-multiple-apps" />
+
 ##### **Entenda como a condição funciona com vários aplicativos**
 
 Se você selecionar **vários aplicativos** na regra, a AppsFlyer avalia o status de **Not in last** **para cada aplicativo separadamente**.
@@ -539,6 +581,8 @@ Por exemplo, se você definir **Not in last 3 versions** e selecionar o app A, B
 
 O aplicativo C permite suas **últimas 3 versões** com base no histórico de versões do **aplicativo C**.
 
+<div id="how-appsflyer-determines-the-latest-version" />
+
 ##### Como a AppsFlyer determina a versão mais recente
 
 As versões mais recentes usadas pelas condições **Não está entre as últimas** não são simplesmente os números de versão mais novos no seu tráfego. A AppsFlyer calcula diariamente a lista das versões mais recentes, usando um mecanismo de proteção criado para impedir que fraudadores façam spoofing de uma versão mais recente falsa para burlar a regra.
@@ -548,6 +592,8 @@ A AppsFlyer adiciona uma versão à lista de versões mais recentes de um aplica
 * Ela recebeu atribuição de uma rede de autorrelato (SRN).
 * Ela tem pelo menos 100 instalações atribuídas naquele dia.
 * Essas instalações representam pelo menos 70% das instalações atribuídas a SRN do aplicativo naquele dia.
+
+<div id="example-latest-version-calculation" />
 
 ##### Exemplo: cálculo da versão mais recente
 

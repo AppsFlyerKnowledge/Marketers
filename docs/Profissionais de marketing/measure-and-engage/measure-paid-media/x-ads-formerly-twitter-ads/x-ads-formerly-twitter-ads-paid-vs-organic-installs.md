@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Visão geral:** Saiba a diferença entre instalações orgânicas e pagas geradas pelo X Ads.
 
+<div id="paid-installation" />
+
 ## Instalação paga
 
 Uma instalação paga do X Ads é uma instalação gerada por um anúncio em um app mobile, como parte de uma campanha do X Ads. Para visualizar as instalações pagas geradas pelo X Ads no dashboard da AppsFlyer, selecione **Twitter** como a fonte de mídia e procure as instalações listadas em cada campanha do X Ads.
+
+<div id="organic-installation" />
 
 ## Instalação orgânica
 

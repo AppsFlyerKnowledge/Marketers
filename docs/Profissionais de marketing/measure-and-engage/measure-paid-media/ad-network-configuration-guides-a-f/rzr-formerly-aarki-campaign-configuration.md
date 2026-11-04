@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="Logotipo horizontal da RZR com gradiente preto (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
 
+<div id="setting-up-rzr" />
+
 ## Configurando a RZR
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,13 +46,19 @@ x-zendesk:
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 <span id="01ECJ9TJKEFXN53XDEBJ5Z92SS"></span>Em seu **primeiro acesso**, você precisará ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da aba de integração. O botão DEVE estar ATIVADO enquanto você trabalhar com o parceiro. Para mais informações sobre a ativação de parceiros, por favor clique <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention"><span id="01ECJ9TJKFY5Q8P4QS57HD44T3"></span>aqui</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como uma network all-installs, a RZR prefere receber postbacks para todas as novas instalações do seu aplicativo a partir de QUALQUER fonte, inclusive orgânica. Recomenda-se selecionar **Eventos atribuídos a qualquer parceiro** para enviar todos os postbacks de instalação à RZR.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -62,11 +70,15 @@ x-zendesk:
 
 <span id="01ECJ9TJKFE4E8GZQ2EN3Z1SM4"></span>Alterne para LIGADO se quiser atribuir instalações view-through da RZR. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 <span id="01ECJ9TJKFT13WB1T328ET3PGC"></span>Envie postbacks automáticos para a RZR após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 <span id="01ECJ9TJKFQH37DQZ3V3NAESRF"></span>Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à RZR. Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada à RZR.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -101,6 +113,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKFTGNEZ68AR6DGXJNA"></span>Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 <span id="01ECJ9TJKFJRJ2BYN069CK80C8"></span>Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -114,6 +128,8 @@ x-zendesk:
 * <span id="01ECJ9TJKGQPS0GAY5SY562VFS"></span>**Parâmetros de assinante** - use qualquer um dos 5 parâmetros de assinante para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para realizar agregação ou filtragem de dados. **Parâmetros do link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 <span id="01ECJ9TJKGQN0Y1H6F2WNHRBCV"></span>Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**<span id="01ECJ9TJKG3AQCMW2FDDZ7HWWB"></span>sobre a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configurações de retargeting
 
@@ -145,6 +161,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKH449C02X1Y3ESR48Y"></span>**Parâmetro do link de atribuição:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 <span id="01ECJ9TJKHGWANE9EGZZ0KKEX9"></span>Essa barra deslizante permite definir o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras inicializações) que ocorrerem dentro da janela de lookback podem ser atribuídas à RZR.
@@ -153,9 +171,13 @@ x-zendesk:
 
 <span id="01ECJ9TJKHY557S7J91YTE5VH8"></span>Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows"><span id="01ECJ9TJKHWEDC7RP2ZHHPFDNV"></span>janela de lookback de clique aqui</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Clique no link de atribuição
 
 <span id="01ECJ9TJKJ6TJBPEP5JNEPYTVB"></span>Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie para a RZR para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Janela de retrospetiva da atribuição por visualização
 
@@ -166,6 +188,8 @@ x-zendesk:
 <span id="01ECJ9TJKJB20VJH63A8NK3KGB"></span>**Parâmetro do link de atribuição:** af\_viewthrough\_lookback
 
 <span id="01ECJ9TJKJNTQ7AJVYKVWYMJNZ"></span>Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows"><span id="01ECJ9TJKJX8GHDCAW0QQYD4BV"></span>atribuição view-through aqui</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Link de atribuição para impressões
 
@@ -184,6 +208,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 * Siga <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">essas instruções de integração</Anchor>.
 
 <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualize o status da API de custo</Anchor> e a última vez que a AppsFlyer conseguiu extrair dados de custo correspondentes no painel de status de integração de custo (e receita de publicitária) ou no painel individual da ad network. 
+
+<div id="warning" />
 
 #### Atenção
 
@@ -207,6 +233,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 
 <span id="01ECJ9TJKQFJM45QTAMC6AJQW3"></span>Use essas chaves seletoras a fim de conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
 
+<div id="ad-network-permissions" />
+
 ### Permissões da rede de anúncios
 
 * <span id="01ECJ9TJKQAHY9CZ2H3W09GQPZ"></span>***<span id="01ECJ9TJKQXT4HNE0HKH13F4SX"></span>Permitir a configuração da integração*** - permite que o parceiro configure a aba de integração (exceto postbacks de evento in-app)
@@ -220,6 +248,8 @@ A AppsFlyer obtém detalhes de custo por API. Consulte a <Anchor target="_blank"
 <span id="01ECJ9TJKQJ0Y1QQK4EM92C06V"></span>Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab"><span id="01ECJ9TJKQZ5ADC4QSTHP0KN95"></span>permissões de ad networks</Anchor>.
 
 <div id="01ECJ9TJKRMD549KXA59E682CH" />
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 

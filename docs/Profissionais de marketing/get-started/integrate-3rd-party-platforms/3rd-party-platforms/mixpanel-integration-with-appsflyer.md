@@ -33,9 +33,13 @@ x-zendesk:
 
 A integração entre AppsFlyer e Mixpanel permite importar as informações da campanha de aquisição da AppsFlyer para o Mixpanel.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-mixpanel" />
 
 ## Configurando o Mixpanel
 
@@ -56,6 +60,8 @@ A integração entre AppsFlyer e Mixpanel permite importar as informações da c
 <Accordion title="Aba de integração">
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -80,11 +86,15 @@ A aba Integração está dividida em diferentes seções, conforme descrito abai
 * **Eventos:** Ative para enviar dados de instalação para o ponto final do Mixpanel Events.
 * Pessoas: Ative isso para enviar dados de instalação para o ponto final do Mixpanel People.
 
+  <div id="note" />
+
   > 📘 **Observação**
   >
   > Para que os postbacks de instalação sejam enviados ao Mixpanel, pelo menos um dos dois pontos finais, **Events** ou **People**, deve estar ativado.
 
 * **Compartilhamento avançado de dados:** Habilite isso para enviar informações adicionais ao Mixpanel: c (campaign), network (pid), impression\_based (is-impression).
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -92,11 +102,15 @@ A AppsFlyer pode enviar postbacks automáticos para o MixPanel após instalaçõ
 
 [![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
+<div id="in-app-events-settings" />
+
 ### Configurações de eventos in-app
 
 ![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
 
 Nesta seção, você mapeia eventos da AppsFlyer com o Mixpanel através de postbacks.
+
+<div id="note-1" />
 
 > 📘 **Observação**
 >
@@ -162,6 +176,8 @@ As permissões não estão disponíveis para este parceiro.
 
 </Accordion>
 
+<div id="integrating-with-mixpanel-when-using-a-login-mechanism" />
+
 ## Integração com o Mixpanel ao usar um mecanismo de login
 
 Veja a seguir um exemplo das etapas de integração:
@@ -222,9 +238,13 @@ Veja a seguir um exemplo das etapas de integração:
 
 7. O Mixpanel recebe o customer\_user\_id do AppsFlyer com o alias do ID do usuário (por exemplo, endereço de e-mail).
 
+<div id="note-2" />
+
 > 📘 **Observação**
 >
 > Se você não estiver usando nenhum processo de registro dentro de seu aplicativo, implemente as etapas 1 a 3 conforme descrito acima.
+
+<div id="viewing-appsflyer-data-in-mixpanel" />
 
 ## Exibindo dados da AppsFlyer no Mixpanel
 

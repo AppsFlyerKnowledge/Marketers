@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## Visão geral
 
 No modelo de atribuição da AppsFlyer, eventos que ocorrem como resultado de um engajamento com uma campanha de retargeting são atribuídos tanto ao canal de mídia que impulsionou a instalação quanto ao canal de mídia que gerou um reengajamento.
@@ -47,6 +49,8 @@ A tabela abaixo mostra um cenário que explica como os eventos in-app são atrib
   * [Prática recomendada] **conversion\_type**: instalação ou reengajamento.
   * is\_retargeting: quando true, os dados se referem à campanha de retargeting.
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### Atribuição na janela de reengajamento
 
 | Canal de mídia | Antes do reengajamento | Durante o reengajamento | Após o reengajamento |
@@ -54,15 +58,21 @@ A tabela abaixo mostra um cenário que explica como os eventos in-app são atrib
 | Aquisição de usuários | Primário<br /><br />is\_primary: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) | Secundário<br /><br />is\_primary: False<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: False) | Primário<br /><br />is\_primary: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) |
 | Redirecionamento | N/D | Primário<br /><br />is\_primary: True<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: True) | N/D |
 
+<div id="support-for-dashboard-view-types" />
+
 ## Tipos de visualização compatíveis
 
 Alguns dashboards e relatórios de cohort possuem diversas opções de visualização, como a visão unificada, de aquisição de usuários e retargeting. Essas opções seguem uma lógica semelhante à dos dados brutos.
 
 ![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
 
+<div id="data-filtering-by-view-type-using-the-conversion_type-field" />
+
 #### Filtragem de dados por tipo de visualização usando o campo conversion\_type
 
 <table><thead><tr><th>Tipo de visualização</th><th>tipo_de_conversão</th><th>is_primary</th><th>Atribuição</th></tr></thead><tbody><tr><td rowspan="2">Aquisição de usuários</td><td>instalação</td><td>True ou False</td><td>Eventos de UA atribuídos ao canal de mídia responsável pela aquisição de usuários</td></tr><tr><td>re-engajamento</td><td>Falso</td><td>Eventos de retargeting atribuídos ao canal de mídia responsável pela aquisição de usuários</td></tr><tr><td>Redirecionamento</td><td>reengajamento ou reatribuição</td><td>True</td><td>Eventos de retargeting atribuídos ao canal de mídia responsável pelo retargeting</td></tr><tr><td>Unificada</td><td>instalação ou reengajamento</td><td>True</td><td>Todos os eventos atribuídos ao canal de mídia que recebeu o último toque</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## Como identifico eventos de retargeting com atribuição duplicada nos relatórios de aquisição de usuários in-app?
 

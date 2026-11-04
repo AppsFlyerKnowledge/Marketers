@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **Visão geral:** Aprenda como integrar o Snapchat Ads web a aplicativos de PC e console com a AppsFlyer e configurar campanhas no Snapchat Ads web.
 
+<div id="warning" />
+
 > ❗️ **Atenção**
 >
 > Essa integração está disponível apenas para aplicativos de PC e console como Steam, Epic ou Native PC. Para apps mobile, consulte a <Anchor target="_blank" href="/marketers/pt/docs/tiktok-for-business-advanced-srn-integration-setup">página de configuração da integração do Snapchat Ads</Anchor> .
+
+<div id="overview" />
 
 ## Escritórios
 
 Este artigo contém informações e um passo a passo sobre como configurar e usar o Snapchat Ads web para aplicativos de PC e console com a AppsFlyer.
 
+<div id="prerequisite" />
+
 ### Pré-requisito
 
 Antes de ativar a integração do Snapchat Ads web, certifique-se de que você tenha uma conta comercial no <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US">Snapchat Ads Manager.</Anchor>
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Ativando o parceiro na AppsFlyer
 
@@ -42,6 +50,8 @@ Antes de ativar a integração do Snapchat Ads web, certifique-se de que você t
 3. Clique **Integrate**. Você será direcionado para a página de configuração.
 4. Na aba **Integração** , habilite **Ativar parceiro**. O botão deve permanecer <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativado</Anchor> enquanto você trabalhar com o parceiro.
 5. Conclua a configuração usando as abas relevantes, conforme descrito na próxima seção.
+
+<div id="setting-up-snapchat-ads-web-in-appsflyer" />
 
 ## Configurando o Snapchat Ads web na AppsFlyer
 
@@ -210,6 +220,8 @@ No momento, as permissões não são concedidas no Snapchat Ads web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps" />
+
 ## Configuração de campanhas no Snapchat Ads web para aplicativos de PC e console
 
 Configure sua campanha no Snapchat Ads Manager. Para obter mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/snapchat-create-web-based-campaigns#configurar-a-integração-da-appsflyer-no-snapchat-ads">Configurar a integração da AppsFlyer no Snapchat Ads</Anchor>.
@@ -222,20 +234,28 @@ Ao configurar sua nova campanha:
   * Uma web landing page (recomendado quando o seu aplicativo está disponível em mais de uma plataforma)
   * Store URL (recomendado quando o seu aplicativo está disponível em uma única loja ou plataforma.
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Ver os dados de atribuição de web-to-app
 
 Embora os eventos de conversão baseados na web sejam enviados para o Snapchat sob o PID original `snapweb_int`, eles são relatados no dashboard da AppsFlyer e nos relatórios de dados brutos com o PID `snapchat_int`. Isso se aplica tanto a eventos de conversão primários quanto a eventos de assistência de conversão.
 
 Essa visualização unificada permite que você analise a performance das campanhas na web e no aplicativo em um só lugar, incluindo relatórios completos de custos na web e no mobile.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver no dashboard
 
 Todas as atribuições de web-to-app do Snapchat aparecem sob `snapchat_int` nos dashboards de Visão Geral e de Atividade. Isso fornece uma visão única e consolidada dos resultados da campanha em várias plataformas. Use filtros e detalhamentos padrão para comparar o tráfego do aplicativo e da web nos seus dados do Snapchat Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver em dados brutos e relatórios de API
 
 * **Exportações de dados brutos e respostas de API** incluem o PID `snapchat_int` no campo `media_source` para a atividade web do Snapchat. Para verificar os detalhes da configuração da campanha web, consulte o campo `original_url`, que mostra `snapweb_int` como o PID usado durante a criação de campanhas web.
 * **Relatórios de postback** mostram `snapweb_int` como o canal de mídia original para o qual o postback foi enviado.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

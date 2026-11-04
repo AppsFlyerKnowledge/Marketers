@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **Em resumo:** o Leanplum, um parceiro integrado da AppsFlyer, é uma plataforma de marketing mobile projetada para ações inteligentes. Sua solução integrada oferece engajamento por meio de mensagens e da experiência in-app. O Leanplum oferece mensagens, automação, edição de aplicativo, personalização, testes A/B e analytics.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-leanplum" />
 
 ## Configurando o Leanplum
 
@@ -58,9 +62,13 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para habilitar a configuração dos parâmetros de integração. O botão deve permanecer ativado enquanto você trabalhar com o Medialyzer.Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -78,6 +86,8 @@ Se a opção estiver inativa, o IDFA será enviado em um postback. Se nenhum IDF
 
 Se nenhum dos dois estiver disponível, nenhum postback será enviado.
 
+<div id="obtaining-the-app-id-and-client-key" />
+
 ### Como obter o ID do aplicativo e a chave do cliente
 
 Clique no seu nome no canto superior direito da tela e selecione **Configurações do aplicativo**
@@ -89,6 +99,8 @@ Selecione um aplicativo e clique em **Keys & Settings**
 [![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
 
 ![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -133,6 +145,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Permissões não estão disponíveis para o Leanplum.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-leanplum" />
 
 ## Visualizando dados de atribuição do usuário no Leanplum
 

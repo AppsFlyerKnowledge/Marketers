@@ -28,6 +28,8 @@ x-zendesk:
 >
 > **Importante!** Você precisa ter uma assinatura do Data Locker para usar os relatórios de mensuração de performance web no Data Locker.
 
+<div id="about-the-web-performance-measurement-reports" />
+
 ## Sobre os relatórios de mensuração de performance web
 
 O Data Locker oferece dois relatórios para mensuração de performance web, **End User Events** e **Conversions**, cada um projetado para diferentes necessidades de análise.
@@ -44,6 +46,8 @@ O Data Locker oferece dois relatórios para mensuração de performance web, **E
 
 A interface Advanced Reports do Data Locker também lista **Engagements** e **End User Events Cross-Platform** como opções separadas de relatório de mensuração da performance web. Este artigo aborda **End User Events** e **Conversions**, os dois relatórios usados na maior parte das análises de mensuração da performance web.
 
+<div id="select-a-web-performance-measurement-report" />
+
 ## Selecione um relatório de mensuração da performance web
 
 Antes de exportar os dados de mensuração da performance web, selecione o relatório relevante no Data Locker.
@@ -52,6 +56,8 @@ Antes de exportar os dados de mensuração da performance web, selecione o relat
 2. Clique na aba **Advanced Reports**.
 3. Selecione **End User Events** ou **Conversions** na lista de relatórios de mensuração de performance web.
 4. Clique em **Salvar configuração**.
+
+<div id="report-fields" />
 
 ## Campos do relatório
 
@@ -62,12 +68,16 @@ Para saber quais campos estão contidos nos relatórios, baixe uma amostra de ca
 
 A amostra do relatório inclui todos os campos do relatório e seus valores. Para as definições dos campos, consulte <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary">o dicionário de campos</Anchor>.
 
+<div id="report-timing-and-data-freshness" />
+
 ## Periodicidade do relatório e atualização dos dados
 
 Use estes detalhes para entender quando novos dados são adicionados e quando eventos recentes ficam disponíveis no relatório.
 
 * **Frequência do relatório**: novos dados são adicionados a cada hora.
 * **Atualização dos dados**: os eventos normalmente aparecem no relatório entre 2 e 3 horas após a ocorrência.
+
+<div id="heres-how-each-batch-works" />
 
 ### Veja como cada lote funciona:
 
@@ -78,9 +88,13 @@ Use estes detalhes para entender quando novos dados são adicionados e quando ev
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### Quando esses eventos aparecerão no relatório?
 
 Os eventos são gravados nos relatórios **após o término do processamento**. Assim, por exemplo, eventos de **08:00–09:00**, atribuídos no lote das 10:00, aparecerão na **versão do relatório das 11:00**.
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### Exemplo: o que o lote das 10:00 faz
 
@@ -90,9 +104,13 @@ Os eventos são gravados nos relatórios **após o término do processamento**. 
 | 01-2026-28 | 12:00 | 09:00 – 10:00 | 10:00–10:30 |
 | 2026-01-28 | 13:00 | 10:00 – 11:00 | 10:00-11:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## Faça download dos dados do relatório do seu cloud bucket
 
 Para mais informações sobre como fazer download dos dados do relatório do seu cloud bucket, consulte <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers#folder-structure">a estrutura de pastas do Data Locker</Anchor>.
+
+<div id="bi-developer-considerations" />
 
 ## Considerações para desenvolvedores de BI
 
@@ -156,6 +174,8 @@ Aplique os filtros a seguir para garantir que as consultas de dados brutos sejam
 
 * **Filtrar por tipo de conversão (opcional):** Inclua `WHERE conversion_type = 'USER_ACQUISITION'` ou `WHERE conversion_type = 'RETARGETING'` para isolar dados de atribuição com base no tipo de campanha.
 
+<div id="filter-summary-table" />
+
 #### Tabela de resumo dos filtros
 
 | Requisito do filtro | Lógica SQL | Contexto de implementação |
@@ -192,6 +212,8 @@ Use `COALESCE(customer_user_id, appsflyer_id_value)` sempre que precisar:
 * Filtrar por usuários específicos
 * Fazer join de tabelas por usuário
 * Calcular quaisquer métricas em nível de usuário
+
+<div id="example-count-distinct-users" />
 
 #### Exemplo: contar usuários distintos
 
@@ -385,6 +407,8 @@ SELECT
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Especificações e limitações
 
 Os campos a seguir **não são compatíveis com dados da web** e sempre estarão vazios:
@@ -396,6 +420,8 @@ Os campos a seguir **não são compatíveis com dados da web** e sempre estarão
 | `platform_group` | conversões |
 | `app_version__conversion` | end\_user\_events |
 | Todos os campos `__assist_*` | conversões |
+
+<div id="see-also" />
 
 ## Consulte também
 

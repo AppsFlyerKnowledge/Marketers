@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** redirecione os usuários do iOS para as páginas de produtos personalizadas do seu aplicativo na App Store. Use os dados da AppsFlyer sobre as páginas de produtos personalizadas para otimizar suas campanhas.
 
+<div id="overview" />
+
 ## Visão geral
 
 Com o lançamento do iOS 15, a Apple introduziu páginas de produtos personalizadas, que permitem que os proprietários de aplicativos criem até 35 versões adicionais de sua página de produtos do Google Play e da App Store que mostram diferentes recursos ou conteúdo em seu aplicativo. As páginas de produtos personalizadas podem exibir texto promocional, capturas de tela e prévias diferentes daquelas exibidas na página de produto padrão da App Store.
@@ -33,6 +35,8 @@ Para o Google Play, você pode criar até 50 páginas personalizadas. Para a Ap
 Você pode usar URLs do OneLink da AppsFlyer ou links de atribuição de plataforma única para redirecionar os usuários para essas páginas de produtos personalizadas e criar jornadas contextuais distintas para diferentes audiências.
 
 Os dados referentes às páginas de produtos personalizadas estão disponíveis no painel da AppsFlyer e nos relatórios de dados brutos, conforme descrito na seção a seguir. Você pode usar os dados para fazer testes A/B e otimizar suas campanhas e páginas de produtos.
+
+<div id="data-availability" />
 
 ## Disponibilidade de dados
 
@@ -59,6 +63,8 @@ Nos relatórios, o campo `store_product_page` indica para qual página personali
 
 </Accordion>
 
+<div id="setup" />
+
 ## Configuração
 
 <div id="google-play" />
@@ -71,6 +77,8 @@ Para configurar redirecionamentos para uma listagem de loja personalizada no Goo
 * Adicionar o parâmetro `af_android_store_csl` às suas URLs do OneLink ou links de atribuição de plataforma única com o valor sendo o ID da página personalizada do produto. Por exemplo: `af_android_store_csl=abc123`
 
 <span id="use-the-onelink-ui-google-play"></span>**Observação:** Devido a alterações do sistema em alguns navegadores, incluindo o Google Chrome, usar o redirecionamento de listagem personalizada da loja pode levar a uma versão web da loja Google Play com a visualização de listagem personalizada da loja (em vez da versão do aplicativo).
+
+<div id="use-the-onelink-uigoogle-play" />
 
 #### Use a IU do OneLink — Google Play
 
@@ -101,6 +109,8 @@ Para configurar redirecionamentos para uma página de produto personalizada na A
 
 * Usar a interface do usuário do OneLink.
 * Adicionar o parâmetro `af_ios_store_cpp` às suas URLs do OneLink ou links de atribuição de plataforma única com o valor sendo o ID da página personalizada do produto. Por exemplo: `af_ios_store_cpp=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+
+<div id="use-the-onelink-uiapp-store" />
 
 #### Use a IU do OneLink — App Store
 

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Visão geral:** Agrupe aplicativos específicos de cada plataforma em uma única marca usando a Linha de Produto. Desbloqueie a atribuição multiplataforma e os insights da jornada do usuário em aplicativos mobile, web e CTV usando um Customer User ID (CUID) unificado.
 
+<div id="about-product-line" />
+
 ## Sobre a Linha de Produto
 
 A Linha de Produto permite organizar diferentes versões de plataforma do mesmo aplicativo (como Android, iOS, web e CTV) sob uma única marca. Isso simplifica o gerenciamento de aplicativos e permite uma atribuição multiplataforma contínua, com base em um identificador de usuário do cliente (CUID).
@@ -38,13 +40,19 @@ Por exemplo, se um usuário instala seu aplicativo no iOS, faz login no aplicati
 
 Para ter uma visão mais completa das Linhas de Produto, consulte <Anchor target="_blank" href="/marketers/pt/docs/beta-user-based-cross-platform-attribution">Atribuição multiplataforma baseada em usuário</Anchor>.
 
+<div id="how-to-set-up-a-product-line" />
+
 ## Como configurar uma Linha de Produto
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
 * O **CUID (Customer User Identifier)** deve ser um identificador consistente (como um ID de login ou e-mail com hash) em todas as plataformas.
 * Implemente a **configuração do SDK de CUID ou** [**s2s**](https://dev.appsflyer.com/hc/docs/set-customer-user-id).
 * Garanta que o aplicativo defina o CUID em cada inicialização para reconhecer o mesmo usuário em diferentes dispositivos e sessões.
+
+<div id="how-to-create-a-product-line" />
 
 ### Como criar uma Linha de Produto
 
@@ -68,6 +76,8 @@ Para ter uma visão mais completa das Linhas de Produto, consulte <Anchor target
 <div id="how-to-remove-an-app-from-a-product-line" />
 
 <Accordion title="Como remover um aplicativo de uma Linha de Produto">
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -97,6 +107,8 @@ Para ter uma visão mais completa das Linhas de Produto, consulte <Anchor target
 
 <Accordion title="Como excluir uma linha de Produto">
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Não é recomendável excluir uma linha de Produto. Quando uma linha de Produto é removida, as configurações de atribuição entre plataformas são redefinidas e eventos futuros não serão elegíveis para atribuição entre plataformas até que um novo mapeamento seja criado.
@@ -106,6 +118,8 @@ Para ter uma visão mais completa das Linhas de Produto, consulte <Anchor target
 3. Selecione **Excluir linha de Produto**.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 
@@ -117,6 +131,8 @@ Para ter uma visão mais completa das Linhas de Produto, consulte <Anchor target
 | Requisito de CUID | Obrigatório apenas para atribuição entre plataformas |
 | Janela de restauração de inatividade | 14–390 dias (padrão: 90 dias) |
 | Impacto da remoção de aplicativo | Remover um aplicativo redefine as configurações de atribuição<br /><br />Remover um aplicativo de uma linha de Produto afeta a atribuição entre plataformas a partir desse momento.<br /><br />• Eventos in-app futuros do aplicativo removido não são elegíveis para atribuição entre plataformas nessa linha de Produto, porque os eventos devem vir de aplicativos que pertencem à linha de Produto.<br /><br />• Os resultados históricos não são reprocessados retroativamente |
+
+<div id="faqs" />
 
 ## Perguntas frequentes
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Resumo:** O FPS (Fraud Protection Studio) oferecem um maior controle sobre como a detecção de fraudes é aplicada. Com o FPS, você pode escolher se os dados de detecção de fraudes serão bloqueados e relatados como fraude ou tagged, permitindo o gerenciamento personalizado de fraudes.
 
+<div id="about-fraud-protection-studio" />
+
 ## Sobre o Fraud Protection Studio
 
 O Fraud Protection Studio introduz um status de detecção tagged.
@@ -34,15 +36,21 @@ Esse status permite que os anunciantes detectem fraudes sem implementar ações 
 * Controle: adapte a detecção de fraudes de acordo com seu modelo de negócios e suas necessidades.
 * Transparência: os dados com tags fornecem insights sobre camadas adicionais de proteção contra fraudes.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Apenas as <Anchor target="_blank" href="/marketers/pt/docs/user-management#gerenciar-funções">funções</Anchor> de Administrador, Líder de marketing, Gerente de equipe e Segurança podem ter acesso ao Fraud Protection Studio.
+
+<div id="how-the-fraud-protection-studio-works" />
 
 ## Como o Fraud Protection Studio funciona
 
 <div id="key-concepts" />
 
 <Accordion title="Principais conceitos">
+
+<div id="fps-modes" />
 
 #### Modos FPS
 
@@ -67,9 +75,13 @@ O FPS tem dois modos, **implementado** e **tagged**. Os anunciantes podem altern
 
 [<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > No modo tagged, todas as detecções de fraude tagged são consideradas válidas de acordo com a configuração do cliente e, como tal, não são creditadas no plano de consumo
+
+<div id="where-is-tagged-detection-reflected" />
 
 #### Onde a detecção tagged é refletida?
 
@@ -91,6 +103,8 @@ Dashboard do Protect360
 * Fraude identificada por "Tipo de tag", "Motivo da tag", "Motivo da sub tag" (3)
 
 </Accordion>
+
+<div id="how-to-use-fraud-protection-studio" />
 
 ## Como usar o Fraud Protection Studio
 
@@ -124,10 +138,16 @@ Na página do card de click flood, você pode [ver e ajustar o status de detecç
 
 Baixe a amostra de dados do relatório de click flood
 
+<div id="important-2" />
+
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > * Quando a detecção de tags é selecionada, elas são relatadas em relatórios de dados brutos, não em relatórios de fraude.
 > * O tagging de click flood é feito a nível de aplicativo e impedirá o bloqueio ou a implementação após a atribuição. Portanto, ao adicionar uma tag, você se expõe a riscos em suas instalações não orgânicas e orgânicas.
+
+<div id="how-to-access-click-flood" />
 
 #### Como acessar click flood
 
@@ -135,6 +155,8 @@ Baixe a amostra de dados do relatório de click flood
 2. No menu à esquerda, acesse **Configurações > Protect360 > Fraud Protection Studio**.
 3. Use o menu suspenso na parte superior da página para selecionar o aplicativo que você deseja configurar.
 4. No menu à esquerda, selecione o card **Click Flood**
+
+<div id="click-flood-page" />
 
 ### Clicar na página de click flood
 
@@ -144,6 +166,8 @@ A página de click flood é dividida em duas seções.
 
 [Status de detecção atual](/docs/beta-fraud-protection-studio#status-de-detecção-atual)
 
+<div id="detection-status" />
+
 #### Status de detecção
 
 * [Status de detecção](/docs/beta-fraud-protection-studio#como-acessar-click-flood): Permite que você escolha o modo de [detecção](/docs/beta-fraud-protection-studio#modos-fps). Você pode escolher entre **implemented** e **tagged**.
@@ -151,6 +175,8 @@ A página de click flood é dividida em duas seções.
   * Widget de detecção atual
   * Widget de análise de detecção de click flood
   * Widget de click flood por fonte de mídia
+
+<div id="how-to-adjust-the-detection-status" />
 
 #### **Como ajustar o status de detecção**
 
@@ -160,6 +186,8 @@ O status de detecção permite que você escolha o modo de [detecção](/docs/be
 2. Clique no botão **Salvar** na parte inferior da página.
 
    [<Image alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+
+<div id="current-detection-status" />
 
 #### **Status de detecção atual**
 
@@ -198,9 +226,13 @@ Com os novos lançamentos, você pode avaliar o impacto das novas atualizações
 
 Baixe a amostra de dados do relatório de novos lançamentos
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > Um pacote de detecção é composto por uma ou várias atualizações de detecção que são agrupadas e lançadas juntas.
+
+<div id="how-this-works" />
 
 #### Como funciona
 
@@ -210,6 +242,8 @@ Baixe a amostra de dados do relatório de novos lançamentos
 * O pacote ativo atual pode ser avaliado e implementado.
 * Você será notificado sobre novos lançamentos de pacotes por meio do sino de notificação.
 
+<div id="how-to-access-new-releases" />
+
 #### Como acessar os novos lançamentos
 
 1. Faça login na AppsFlyer.
@@ -217,12 +251,16 @@ Baixe a amostra de dados do relatório de novos lançamentos
 3. Use o menu suspenso na parte superior da página para selecionar o aplicativo que você deseja configurar.
 4. No menu à esquerda, selecione o card **Novo lançamento**.
 
+<div id="new-releases-page" />
+
 ### Página de novos lançamentos
 
 A página de novos lançamentos se divide em duas seções.
 
 * [Lançamentos futuros](/docs/beta-fraud-protection-studio#como-acessar-os-novos-lançamentos) - permitem que você avalie o impacto de novos pacotes de detecção de fraudes, marcando as detecções como tagged por até 14 dias antes de entrarem em vigor.
 * [Novas versões](/docs/beta-fraud-protection-studio#como-avaliar-e-implementar-os-pacotes-ativos-atuais) - permitem que você avalie o pacote ativo atual, monitorando a performance da sua detecção e implementando-o imediatamente.
+
+<div id="how-to-set-the-tagged-mode-time-period-for-future-packages" />
 
 #### Como definir o período de tempo do modo tagged para pacotes futuros
 
@@ -233,10 +271,14 @@ Os lançamentos futuros permitem que você configure o número de dias durante o
 
 <Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > * Isso afeta somente pacotes futuros. Os pacotes de detecção que estão ativos não serão adiados nem alterados.
 > * Selecionar 0 dias na caixa suspensa é o mesmo que selecionar [Implementar agora](/docs/beta-fraud-protection-studio#para-implementar-o-pacote-atual-com-o-status-tagged) e substitui as configurações de [lançamento futuro](/docs/beta-fraud-protection-studio#como-acessar-os-novos-lançamentos) desse pacote.
+
+<div id="how-to-evaluate-and-implement-current-active-packages" />
 
 #### Como avaliar e implementar os pacotes ativos atuais
 
@@ -249,12 +291,16 @@ A seção Novo lançamento atual permite que você veja:
 * Exportação de relatórios detalhados
 * Ignore as configurações de lançamentos futuros e implemente esse pacote de detecção agora
 
+<div id="to-implement-the-current-package-if-in-tagged-status" />
+
 #### Para implementar o pacote atual com o status tagged
 
 1. Abra o card **Novo lançamento** na aba FPS.
 2. Monitore a performance da detecção usando a tabela e os relatórios exportáveis.
 3. Quando estiver tudo pronto, clique em **Implementar agora** para aplicar as alterações.  
    [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+
+<div id="note-3" />
 
 > 📘 **Atenção**
 >
@@ -278,12 +324,16 @@ Na página de avaliação da detecção de aplicativos, você pode [ver e mudar 
 > * Adicionar uma tag a avaliação da detecção de aplicativos está no nível do aplicativo e impedirá o bloqueio ou a implementação de lógicas do Protect360 após a atribuição. Portanto, ao adicionar uma tag, suas instalações orgânicas e não orgânicas ficam expostas a fraudes.
 > * Qualquer regra de validação definida e ativada permanecerá sempre no modo "implemented". Para pausar a implementação de quaisquer regras de validação, acesse a página das regras de validação e desative a regra.
 
+<div id="how-to-access-app-detection-evaluation" />
+
 #### **Como acessar a avaliação da detecção de aplicativos**
 
 1. Faça login na AppsFlyer.
 2. No menu à esquerda, acesse **Configurações > Protect360 >** **Fraud Protection Studio**.
 3. Use o menu suspenso na parte superior da página para selecionar o aplicativo que você deseja configurar.
 4. No menu à esquerda, selecione o card **Avaliação da detecção de aplicativos**.
+
+<div id="app-detection-evaluation-page" />
 
 #### **Página de avaliação da detecção de aplicativos**
 
@@ -306,6 +356,8 @@ A página de avaliação da detecção de aplicativos é dividida em duas seçõ
     * Nível do aplicativo: Esse KPI permite que você descubra a parcela de tags adicionadas pelo card de avaliação da detecção de aplicativos. O número reflete o aumento previsto se você implementar o status de detecção.
     * Outras tags: Você pode adicionar tags à detecção em várias funcionalidades (cards) no Fraud Protection Studio.
 
+<div id="how-to-adjust-the-detection-status-1" />
+
 #### **Como ajustar o status de detecção**
 
 O status de detecção permite que você escolha o [modo de detecção](/docs/beta-fraud-protection-studio#modos-fps). Você pode escolher entre "implemented" e "tagged" (o padrão é "implemented").
@@ -323,11 +375,15 @@ No Protect360, a detecção de hijacking de reengajamento expande a cobertura pa
 
 Por padrão, esse tipo de detecção está disponível no [modo "tagged"](/docs/beta-fraud-protection-studio#modos-fps), permitindo que você avalie a eficácia e o possível impacto antes da implementação.
 
+<div id="how-this-works-1" />
+
 #### Como funciona
 
 * Por padrão, a detecção de hijacking de reengajamento está configurada para o modo "tagged". Você pode avaliar sua performance de detecção sem que isso afete seus dados de atribuição em tempo real.
 * Quando implementadas, as detecções ocorrem após a atribuição, o que significa que reengajamentos fraudulentos são identificados e removidos dos registros de atribuição.
 * Quando implementados, todos eventos in-app após uma remoção de detecção serão reatribuídos ao provedor de aquisição de usuários (UA) original ou marcados como orgânico se não existir um provedor de UA válido.
+
+<div id="how-to-access" />
 
 #### Como acessar
 
@@ -335,6 +391,8 @@ Por padrão, esse tipo de detecção está disponível no [modo "tagged"](/docs/
 2. No menu à esquerda, acesse **Configurações > Protect360 > Fraud Protection Studio**.
 3. Selecione o aplicativo que você pretende configurar utilizando a lista suspensa na parte superior.
 4. No menu à esquerda, selecione o card **Hijacking de reengajamento**.
+
+<div id="re-engagement-hijacking-page" />
 
 #### Página de hijacking de reengajamento
 
@@ -364,12 +422,16 @@ A página de hijacking de reengajamento é dividida em duas seções.
 
 De maneira determinística, a detecção baseada no aplicativo marca as instalações como fraude na pós-atribuição através da análise de anomalias do comportamento no aplicativo. Ela identifica esquemas de fraude sofisticados, como bots que imitam o engajamento real, mas exibem fluxos de evento incomuns e padrões de tempo desde a instalação.
 
+<div id="how-to-access-1" />
+
 #### Como acessar
 
 1. Faça login na AppsFlyer.
 2. No menu à esquerda, acesse **Configurações > Protect360 > Fraud Protection Studio**.
 3. Use o menu suspenso na parte superior da página para selecionar o aplicativo que você deseja configurar.
 4. No menu à esquerda, selecione o **card de detecção baseada no aplicativo**.
+
+<div id="the-in-app-based-detection-page" />
 
 #### Página de detecção baseada no aplicativo
 
@@ -402,12 +464,16 @@ Essa seção ainda se divide em:
 
 Revise as detecções do módulo avançado de segurança para ataques cibernéticos em tempo real relacionados a possíveis instalações em aplicativos Android. Isso ajuda a garantir que somente o tráfego verificado chegue ao seu aplicativo.
 
+<div id="how-to-access-2" />
+
 #### Como acessar
 
 1. Faça login na AppsFlyer.
 2. No menu à esquerda, acesse **Configurações > Protect360 > Fraud Protection Studio**.
 3. Use o menu suspenso na parte superior da página para selecionar o aplicativo que você deseja configurar.
 4. Selecione o card **Módulo avançado de segurança** no menu à esquerda.
+
+<div id="the-advanced-security-module-page" />
 
 #### Página do módulo avançado de segurança
 
@@ -421,11 +487,15 @@ As deteções são apresentadas como uma das seguintes:
 * **Tagged**: Tráfego sinalizado como suspeito, mas atribuído, para que você possa analisar antes de tomar uma decisão. Esse é o modo de detecção padrão.
 * **Untagged**: Possíveis instalações que o módulo não sinalizou.
 
+<div id="note-4" />
+
 > 📘 **Atenção**
 >
 > Para a configuração completa, requisitos e relatórios detalhados, consulte <Anchor target="_blank" href="/marketers/pt/docs/beta-advanced-security-protect360-module">[Beta] Módulo avançado de segurança do Protect360</Anchor>.
 
 </Accordion>
+
+<div id="faqs" />
 
 ## Perguntas frequentes
 

@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **Visão geral:** use seu site para converter visitantes da web mobile em novos usuários para o seu aplicativo.
 
+<div id="mobile-web-to-app-attribution-solutions" />
+
 ## Soluções de atribuição web-to-app mobile
 
 ![Web_para_aplicativo.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
+
+<div id="benefits-of-web-to-app-campaigns" />
 
 ### Vantagens das campanhas web-to-app
 
@@ -37,6 +41,8 @@ O uso de campanhas web-to-app te ajudam a:
 * Descobrir quais são as suas landing pages/páginas da web que geram mais ou menos conversões.
 * Criar ofertas mais específicas para redirecionar seus usuários da web mobile, que também são usuários do seu aplicativo.
 * Criar deep links que levam os usuários do site para uma página específica dentro do aplicativo.
+
+<div id="attribution-solutions" />
 
 ### Soluções de atribuição
 
@@ -63,6 +69,8 @@ Ambas as soluções fazem a conexão entre as URLs de campanha recebidas em seu 
 
 A tabela a seguir compara as duas soluções para que você possa escolher e implementar a mais adequada às suas necessidades. **Observação**: você pode implementar ambas as soluções e usá-las em conjunto.
 
+<div id="smart-banner-vs-onelink-smart-script" />
+
 #### Smart Banner vs. Smart Script do OneLink
 
 | Característica | Smart Banners | OneLink Smart Script |
@@ -77,9 +85,13 @@ A tabela a seguir compara as duas soluções para que você possa escolher e imp
 
 **Observação:** Smart Banners e OneLink Smart Script estão disponíveis somente com <Anchor target="_blank" href="/marketers/pt/docs/account-management-plans-payments-and-billing#appsflyer-plans">planos de assinatura</Anchor> pagos elegíveis. Depende do plano da sua conta na AppsFlyer
 
+<div id="web-assisted-installs" />
+
 ### Instalações assistidas pela web
 
 As instalações assistidas pela web ocorrem quando os usuários baixam o seu aplicativo, mas não necessariamente por causa de uma campanha específica. Antes de fazerem o download do seu aplicativo, eles visitaram seu site por qualquer motivo, talvez dias ou semanas antes. Use <Anchor target="_blank" href="/marketers/pt/docs/people-based-attribution-pba-overview">PBA</Anchor> Web-Assisted Installs para ver um detalhamento geral desses *touchpoints* de assistência que eventualmente levam à instalação do aplicativo.  
+
+<div id="web-to-app-solutions-vs-web-assisted-installs" />
 
 #### Soluções web-to-app vs. instalações assistidas pela web
 

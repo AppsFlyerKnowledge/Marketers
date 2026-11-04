@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Visão geral:** Otimize campanhas de anúncios do Meta usando parceiros de gerenciamento de campanhas Meta (anteriormente conhecidos como Parceiros de Marketing do Facebook), como Kenshoo, Bidalgo e Smartly. Quando configurado, o AppsFlyer envia os postbacks.
 
+<div id="configure-meta-campaign-management-partners" />
+
 ## Configure Parceiros de gerenciamento de campanhas do Meta
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -40,6 +42,8 @@ x-zendesk:
 4. Na aba  **integração**, selecione o aplicativo e clique em **ativar parceiro**.  
     **Observação:** essa opção deve permanecer habilitada (<Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativada</Anchor>) enquanto você trabalhar com o parceiro. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">a ativação de parceiros</Anchor>.
 5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo.
+
+<div id="in-app-event-postback-setup" />
 
 ## Configuração de postback de evento in-app
 
@@ -67,6 +71,8 @@ Para que o parceiro receba postbacks, os nomes das campanhas **devem** ser prefi
 3. [Opcional] Clique em ![conditional-iae-postbacks-icon.png](https://files.readme.io/5345c5ebe95b3f1a0d0858b88ce29f9965178ce750df86c04cb131a93d006a5e-14050481317393.png) para <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#postbacks-condicionais-de-eventos-in-app">definir condições</Anchor> para o envio de determinados eventos in-app para o parceiro.
 4. [Opcional] Clique em **Adicionar evento** para adicionar outro SDK ou evento de servidor para servidor à lista.
 5. Clique em **Salvar integração**.
+
+<div id="important-notes" />
 
 > 📘 **Observações importantes**
 >

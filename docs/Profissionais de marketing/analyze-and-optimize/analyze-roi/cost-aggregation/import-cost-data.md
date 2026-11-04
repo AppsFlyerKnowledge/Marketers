@@ -33,6 +33,8 @@ x-zendesk:
 
 > **Resumo:** o Cost Import, parte do ROI360 da AppsFlyer, permite que os anunciantes tenham uma cobertura completa e precisa de seus custos de marketing ao importar arquivos CSV via upload ou e-mail.
 
+<div id="overview" />
+
 ## Visão geral
 
 Use o Cost Import para:
@@ -46,6 +48,8 @@ O custo é relatado por meio de arquivos CSV ou enviados por e-mail para a AppsF
 
 * As ad networks podem importar arquivos de custo para seus clientes se as permissões relevantes forem fornecidas.
 * As agências não podem fazer upload de dados. Elas podem preparar seus arquivos e enviá-los ao anunciante para upload.
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -69,9 +73,13 @@ Anunciantes, ad networks e agências podem preparar o arquivo CSV de Cost Import
 * Siga o esquema do arquivo, formato e regras detalhadas nas tabelas a seguir.  
   Opcionalmente, você pode incluir os cliques e as impressões reportados pela ad network junto com seus dados de custo. **Atenção:** Se você usar Excel ou Google Sheets para criar o arquivo, siga as [instruções de formatação do Excel e do Google Sheets](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file).
 
+<div id="csv-schema" />
+
 #### Esquema CSV
 
 <table><thead><tr><th><p><span>Nome da coluna </span></p><p><span>(diferenciação de maiúsculas e minúsculas)</span></p></th><th><span>Formato/observação</span></th><th><span>Exemplo</span></th><th><span>Obrigatoriedade</span></th></tr></thead><tbody><tr><td><span>data</span></td><td><ul><li><span>A data em que o custo ocorreu</span></li><li> <span>Formato: String</span><br/><span>(Recomendado):</span><ul><li><span>AAAA-MM-DD</span></li><li><span>AAAA/MM/DD</span></li><li><span>MM-DD-AAAA</span></li><li> <span>MM/DD/AAAA </span><br/> </li></ul></li><li>Datas futuras não permitidas</li><li> <strong>Prática recomendada</strong>: use o mesmo fuso horário definido para o seu app na AppsFlyer.</li><li> <strong>Atenção:</strong> Você está usando Excel/Google Sheets para preparar o arquivo? <a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">Leia aqui</a>. </li></ul></td><td><ul><li><span>05-2019-30</span></li><li><span>2019/05/30</span></li><li><span>05-30-2019</span></li><li>5/30/2019</li><li>05-30-2019</li><li>05/30/2019</li></ul></td><td><span>✓</span></td></tr><tr><td><span>app-id</span></td><td><ul><li><span>Formato: String</span></li><li> <span>O App ID como ele aparece na AppsFlyer</span>.</li><li>Vários app IDs são permitidos em um único arquivo</li><li>Todos os app IDs precisam pertencer à mesma conta de anunciante.</li></ul></td><td><ul><li><span>com.app.nome </span></li><li><span>id12356789</span></li></ul></td><td><span>✓</span></td></tr><tr><td><span>media-source</span></td><td><ul><li><span>Formato: String</span></li><li><span>Nome da fonte de mídia <strong>exatamente</strong> como aparece na AppsFlyer. <strong>Atenção:</strong> Inclua o sufixo _int se relevante.</span></li><li> <span>Somente um canal de mídia por arquivo é permitido.</span> /span&gt; São permitidos vários aplicativos para o mesmo canal de mídia</li></ul></td><td><span>network_x_int</span></td><td><span>✓</span></td></tr><tr><td><span>Twitter</span></td><td><ul><li> <span>Formato: String</span><span></span> </li><li><span>Nome da campanha. Se o nome da campanha aparecer na ad network, o nome nesse arquivo deve corresponder a ele (sensível a maiúsculas e minúsculas).</span></li><li>Não use o mesmo nome de campanha para vários aplicativos.</li></ul></td><td>campaign_a</td><td><p><span>✓</span></p><p><span><strong>Atenção</strong>: se existirem dados de atribuição com nome e ID, o CSV deverá conter ambos para garantir a correspondência.</span></p></td></tr><tr><td><span>gasto</span></td><td><ul><li><span>Custo monetário</span></li><li><span>Cinco dígitos permitidos após a vírgula</span></li><li><span>O valor 0 (zero) é permitido</span></li><li> <span><strong>Atenção</strong>: </span><ul><li>Separadores de 1.000 com vírgula não são permitidos, por exemplo: "2,874.12".</li><li>Você está usando Excel/Google Sheets para preparar o arquivo? <a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">Leia aqui</a>.</li></ul></li></ul></td><td><p><span>2874.12345</span></p></td><td><span><span>✓</span></span></td></tr><tr><td><span>cliques reportados</span></td><td><ul><li><span>Formato: String</span></li><li><span>O número de cliques reportados pela ad network.</span></li><li><span>Somente números inteiros. Sem casas decimais, separadores por vírgula, símbolos de moeda nem notação científica.</span></li><li><span>O valor deve ser 0 ou maior. O valor 0 é permitido.</span></li></ul></td><td><span>1200</span></td><td><span>Não</span></td></tr><tr><td><span>impressões reportadas</span></td><td><ul><li><span>Formato: String</span></li><li><span>O número de impressões reportadas pela ad network.</span></li><li><span>Somente números inteiros. Sem casas decimais, separadores por vírgula, símbolos de moeda nem notação científica.</span></li><li><span>O valor deve ser 0 ou maior. O valor 0 é permitido.</span></li></ul></td><td><span>45000</span></td><td><span>Não</span></td></tr><tr><td><span>geo</span></td><td><ul><li><span>Formato: String</span></li><li> <span>Código de duas letras do país, seguindo as regras </span><a href="https://www.iso.org/iso-3166-country-codes.html"><span>ISO 3166</span></a><span>. <strong>Atenção</strong>: envie dois caracteres, sem espaços em branco.</span> </li><li> <span>Para o Reino Unido, use UK,</span><span> e não GB.</span><br/> </li></ul></td><td><p><span>US, CN, AU</span></p></td><td><span>Não</span></td></tr><tr><td><span>símbolos monetários</span></td><td><ul><li><span>Formato: String</span></li><li>Código de três letras da moeda utilizada, seguindo as regras <a href="https://www.iso.org/iso-4217-currency-codes.html" target="_blank">ISO 4217</a>. <strong>Atenção:</strong> envie três caracteres, sem espaços em branco no início ou no final.</li><li> <span>É permitido um código de moeda por aplicativo. D</span><span>iferentes aplicativos podem ter diferentes códigos de moeda </span>.  </li></ul></td><td><span>USD, GBP, EUR, JPY</span></td><td><p><span>Não.</span></p><p><span>O padrão será USD se deixado em branco.</span></p></td></tr><tr><td><span>campaign-id</span></td><td>Formato: String</td><td>abc1234def</td><td rowspan="5"><p>Não.</p><p><strong>Atenção:</strong> se existirem dados de atribuição com nome e ID, o CSV deverá conter ambos para garantir a correspondência.</p></td></tr><tr><td><span>conjunto_de_anúncios</span></td><td>Formato: String </td><td>my_adset_1</td></tr><tr><td><span>adset-id</span></td><td>Formato: String</td><td>id5678ghi</td></tr><tr><td><span>Anúncio</span></td><td>Formato: String </td><td>my_ad_name</td></tr><tr><td> <span>ad-</span><span>id</span> </td><td>Formato: String </td><td>id91011jkl</td></tr><tr><td><span>site-id</span></td><td><ul><li>Formato: String </li><li>ID exclusivo que identifica o publisher que exibe o anúncio. <a href="./about-link-structure-and-parameters#site-id-parameter" target="_blank">Saiba mais</a> </li></ul></td><td>id1213mno</td><td>Não</td></tr><tr><td><span>Canal</span></td><td>Formato: String </td><td> Vídeo</td><td>Não</td></tr><tr><td><span>keywords</span></td><td> <span>Token do anunciante</span>:</td><td><ul><li>better</li><li>better you app</li><li>better you online</li></ul></td><td>Indisponível</td></tr><tr><td><span>agency</span></td><td><ul><li>Regra</li><li>O nome da agência. O valor no parâmetro <code>af_prt</code>.</li><li>Apenas uma agência pode ser incluída em um arquivo e apenas campanhas gerenciadas por essa agência podem ser incluídas no arquivo.</li><li>O nome da agência é obrigatório por linha. Não são permitidas células em branco na coluna agência.</li><li>A agência deve ter permissão para todos os aplicativos incluídos no arquivo.</li><li>Somente anunciantes podem fazer o upload do arquivo. As agências não podem fazer upload de dados. Elas podem preparar seus arquivos e enviá-los ao anunciante para upload.</li><li>Se os dados de custo forem reenviados para as mesmas datas e o nome da agência (<code>af_prt</code>) for incluído posteriormente, você terá dados de custo duplicados.</li></ul></td><td>Nome da agência</td><td>Indisponível</td></tr><tr><td colspan="4"><span><strong>Atenção</strong>: nomes que incluem caracteres especiais (fora do alfabeto latino) devem ser codificados usando UTF-8.</span></td></tr></tbody></table>
+
+<div id="csv-format-and-rules" />
 
 #### Formato e regras CSV
 
@@ -143,6 +151,8 @@ Para enviar o arquivo CSV por e-mail:
 
 </Accordion>
 
+<div id="dashboard" />
+
 ## Painel
 
 O dashboard de Cost Import permite que você faça upload de arquivos e visualize detalhes de arquivos enviados anteriormente.
@@ -183,6 +193,8 @@ A porcentagem de linhas correspondentes é exibida no dashboard de Cost Import. 
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informações adicionais
 
 <div id="using-excel-or-google-sheets-to-prepare-csv-file" />
@@ -194,6 +206,8 @@ Ao usar o Excel/Google Sheets para criar um arquivo CSV, as colunas de data e ga
 * Formatar as células de data.
 * Formatar as células de gasto.
 * Verificar o formato do conteúdo.
+
+<div id="format-date-cells" />
 
 #### Formatar células de data
 
@@ -207,6 +221,8 @@ Ao usar o Excel/Google Sheets para criar um arquivo CSV, as colunas de data e ga
 4. No campo Tipo, insira **AAAA-MM-DD**
 5. Clique em **OK**.  
    A data é formatada.
+
+<div id="formatting-spend-cells" />
 
 #### Formatando células de gastos
 
@@ -225,6 +241,8 @@ O Excel geralmente formata células de valor com vírgula para separar os milhar
 5. (Opcional) Defina o número de **Casas decimais**. O padrão é 2. O máximo permitido é 5.
 6. Clique em **OK**.  
    As células estão formatadas corretamente.
+
+<div id="verify-content-format" />
 
 #### Verifique o formato do conteúdo
 
@@ -285,6 +303,8 @@ As ad networks exigem a permissão do anunciante por aplicativo para acessar o C
 
 </Accordion>
 
+<div id="troubleshooting-traits-and-limitations" />
+
 ## Solução de problemas, características e limitações
 
 <div id="error-messages-and-solutions" />
@@ -337,6 +357,8 @@ A tabela abaixo lista todas as mensagens de erro possíveis do Cost Import e sua
 | Acesso do usuário à conta | Indisponível para usuários com restrições de geolocalização ou canal de mídia. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

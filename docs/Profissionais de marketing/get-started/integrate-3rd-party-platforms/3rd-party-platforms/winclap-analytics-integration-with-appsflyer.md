@@ -21,13 +21,19 @@ x-zendesk:
 ---
 > **Em resumo:** o Winclap Analytics, um parceiro integrado da AppsFlyer, usa dados de atribuição da AppsFlyer para BI e análises pós-atribuição.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
 
+<div id="setting-up-winclap" />
+
 ## Configurar a Winclap
 
 A configuração é feita na página **Integrações ativas**, mas para encontrar o parceiro você deve primeiro ir ao <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations">Marketplace de parceiros</Anchor>.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -50,9 +56,13 @@ A configuração do Winclap Analytics usa apenas a aba ***Integração***.
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita** a esta página, você deve ativar a opção ***Ativar parceiro*** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention">aqui</Anchor>.**
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -84,6 +94,8 @@ Depois de salvar esta configuração, a AppsFlyer envia os seguintes dados ao Wi
 * Receita
 * Nome da aplicação
 * Tempo de Instalação
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 

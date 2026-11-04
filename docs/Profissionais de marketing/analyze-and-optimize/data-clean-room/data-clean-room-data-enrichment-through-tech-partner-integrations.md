@@ -28,13 +28,19 @@ x-zendesk:
 
 > **Em resumo:** Enriqueça seus dados e aprimore seus relatórios do Data Clean Room (DCR) com dados dos nossos parceiros de tecnologia integrados.
 
+<div id="try-out-this-new-feature" />
+
 > 📘 **Experimente este novo recurso!**
 >
 > O recurso de integração com Parceiros de tecnologia está atualmente em beta aberta. Se você tiver interesse em ativar qualquer uma das integrações disponíveis, basta entrar em contato com seu CSM. Aguardamos seu feedback.
 
+<div id="overview" />
+
 ## Escritórios
 
 Embora a correspondência entre dados de conversão e dados de fonte personalizados esteja no centro do DCR, as possibilidades não terminam aí. As integrações disponíveis com nossos Parceiros de tecnologia permitem que você refine seu foco e melhore a performance da campanha.
+
+<div id="cost-considerations" />
 
 > 📘 **Considerações sobre custos**
 >
@@ -46,6 +52,8 @@ Embora a correspondência entre dados de conversão e dados de fonte personaliza
 > * **Créditos de DCR:**
 >
 >    Enquanto esse recurso estiver em beta, os dados utilizados de parceiros de tecnologia **não** serão adicionados ao número de linhas processadas para execuções de relatórios e não afetarão o cálculo dos créditos usados. Os créditos por execução de relatório continuarão a ser cobrados normalmente (mesmo durante períodos de teste gratuitos de acesso aos dados).
+
+<div id="available-integrations" />
 
 ## Integrações disponíveis
 
@@ -61,12 +69,16 @@ Siga as instruções nas abas abaixo para ativar uma ou mais destas integraçõe
 
 <Accordion title="Braze">
 
+<div id="prerequisites" />
+
 > 🚧 **Pré-requisitos**
 >
 > A integração com o Braze usa o compartilhamento de dados por meio do Snowflake. Para usar a integração, você deve ter:
 >
 > * Uma assinatura do Braze que inclua o Secure Data Sharing com Snowflake
 > * Os SDKs do Braze e do AppsFlyer integrados ao seu aplicativo
+
+<div id="activating-the-integration" />
 
 #### Ativar a integração
 
@@ -86,6 +98,8 @@ Depois que você tiver feito os arranjos necessários do lado do Braze, não hav
 
 <Accordion title="Start.io">
 
+<div id="activating-the-integration-1" />
+
 #### Ativar a integração
 
 **Para ativar a integração com a Start.io, basta nos avisar.**
@@ -98,6 +112,8 @@ Depois que você tiver feito os arranjos necessários do lado do Braze, não hav
 <div id="techsalerator" />
 
 <Accordion title="Techsalerator">
+
+<div id="activating-the-integration-2" />
 
 #### Ativar a integração
 
@@ -112,6 +128,8 @@ Depois que você tiver feito os arranjos necessários do lado do Braze, não hav
 <div id="evorra" />
 
 <Accordion title="Evorra">
+
+<div id="activating-the-integration-3" />
 
 #### Ativar a integração
 

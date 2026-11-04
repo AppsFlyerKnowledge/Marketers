@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Em resumo:** A OPPO é um parceiro integrado de ad network da AppsFlyer.
 
+<div id="setting-up-oppo" />
+
 ## Configurando a OPPO
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -43,9 +45,13 @@ A janela de configuração da OPPO inclui 3 abas ativas: Integração, link de a
 
 A integração com a OPPO oferece suporte apenas ao evento de instalação no postback padrão.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita**, você precisará ativar a opção abaixo. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -60,6 +66,8 @@ Na **primeira visita**, você precisará ativar a opção abaixo. Clique no bot�
 Nesta aba, você pode criar os links de atribuição que deseja enviar à OPPO para atribuir as campanhas, os conjuntos de anúncios ou até mesmo os anúncios individuais da OPPO. Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro.
 
 Essa guia está dividida em diferentes seções:
+
+<div id="attribution-link-parameters" />
 
 ### Parâmetros de link de atribuição
 
@@ -82,6 +90,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de exibição
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas à OPPO.
@@ -91,6 +101,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### Link de atribuição
 
@@ -121,6 +133,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Nesta aba, você pode selecionar as permissões a serem concedidas à OPPO, se o parceiro atua como uma ad network, agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a OPPO, a aba de permissões está ativa e você pode conceder controle à OPPO.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

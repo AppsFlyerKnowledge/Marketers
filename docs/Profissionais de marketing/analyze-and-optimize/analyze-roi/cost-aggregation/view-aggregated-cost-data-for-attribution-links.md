@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Visão geral:** Veja seus dados de custo agregados para cada clique em seus anúncios, conforme relatados pelas ad networks.
 
+<div id="basic-cost-reporting" />
+
 ## Relatórios de custos básicos
 
 Os dados de custo são comunicados à AppsFlyer por:

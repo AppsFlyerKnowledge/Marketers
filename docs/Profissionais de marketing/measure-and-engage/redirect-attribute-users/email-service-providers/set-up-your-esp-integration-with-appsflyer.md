@@ -26,6 +26,8 @@ x-zendesk:
 
 ## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
+<div id="about-the-appsflyer-esp-integration" />
+
 ## Sobre a integração de ESP com a AppsFlyer
 
 Profissionais de marketing costumam usar provedores de serviços de e-mail (ESPs) para enviar campanhas de e-mail em grande escala. Embora esse devesse ser um processo simples, que oferece jornadas previsíveis, muitas vezes não é o caso. Os problemas surgem como resultado da forma como o ESP lida com seus analytics, adotando um processo que costuma quebrar deep links e afetar negativamente a experiência do usuário mobile. Como resultado, os usuários são levados para sites mobile em vez de acessar o aplicativo, reduzindo a probabilidade de conversão.
@@ -36,9 +38,13 @@ Ao configurar a integração ESP com a AppsFlyer, você oferece experiências de
 
 A solução de integração ESP da AppsFlyer é um recurso premium. Se quiser saber mais sobre isso ou começar, entre em contato conosco pelo [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
+<div id="set-up-the-integration" />
+
 ## Configurar a integração
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>Saiba como configurar sua integração ESP com a AppsFlyer.
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
@@ -61,6 +67,8 @@ O click-tracking domain (CTD) é o componente de domínio da URL que aparece nas
 Ele consiste em um subdomínio e um domínio principal, como email.suamarca.com. Diferentes ESPs podem se referir a isso como branding de link, domínio de rastreamento, domínio de clique, reescrita de link, rastreamento de cliques ou white labeling. Etapa 1:
 
 **Você deve criar um novo CTD**, mesmo que você já esteja usando um existente. Assim, você garante que não haja impacto no tráfego das suas campanhas de e-mail atuais.
+
+<div id="notes" />
 
 > 📘 **Observações**
 >
@@ -143,6 +151,8 @@ Peça ao seu desenvolvedor para fazer as seguintes configurações em seu aplica
 * [Configure seu aplicativo para garantir o suporte a deep linking](#configure-seu-aplicativo-para-garantir-o-suporte-para-deep-linking)
 * [Configure seu aplicativo para processar Weblinks e Application Links](#configure-seu-aplicativo-para-processar-weblinks-e-application-links)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **Configure seu aplicativo para garantir o suporte a domínios associados**
 
 A AppsFlyer hospeda arquivos de associação para o seu aplicativo, permitindo o funcionamento de <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#links-universais">Universal Links (iOS)</Anchor> e/ou <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#link-de-aplicativo-android-en-android-app-link">App Links (Android)</Anchor>.
@@ -161,6 +171,8 @@ Configure seu aplicativo para permitir o Android App Linking a partir da mensage
 **Atenção:** O domínio de clique deve ser adicionado aos domínios atuais já definidos no Android Manifest.
 
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **Configure seu aplicativo para garantir o suporte para deep linking**
 
 Quando um usuário clicar em um App Link ou Universal Link, o app deve abrir.
@@ -174,6 +186,8 @@ Quando um usuário clicar em um App Link ou Universal Link, o app deve abrir.
 
 2. Use a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Unified DeepLinking API</Anchor> para obter os parâmetros do deep link e processar os dados de deep linking.
 
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **Configure seu aplicativo para processar Weblinks e Application Links**
 
@@ -239,6 +253,8 @@ Bom trabalho! Agora você está pronto para usar links em suas campanhas de e-ma
 </Accordion>
 
 *ESPs compatíveis com essa integração incluem: Blueshift, Braze, CleverTap, Customer.io, Emarsys, Expert Sender, Klaviyo, MailExpress, MailGun, Moengage, RDStation, Reteno, Sailthru, Sendgrid, Sparkpost e mais. Veja a <Anchor target="_blank" href="/marketers/pt/docs/email-service-provider-esp-integration-guide">lista completa aqui</Anchor>.
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Em resumo:** As colaborações permitem que networks de mídia de commerce e marcas aproveitem dados combinados para criar novas fontes de receita de anúncios e alcançar o máximo de resultados de campanha.
 
+<div id="about-collaborations" />
+
 ## Sobre colaborações
 
 A <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-guide">Plataforma de Colaboração de Dados (DCP)</Anchor> da AppsFlyer permite que networks de mídia de commerce e marcas façam parcerias e desbloqueiem o potencial dos seus dados próprios para alcançar usuários com alta intenção. A plataforma segura e centrada na privacidade permite colaborações integradas, possibilitando que parceiros gerem novas fontes de receita de anúncios e criem audiências personalizadas a partir de dados colaborativos para ativação na network de mídia de commerce ou em canais de mídia, como Meta, Google e outros.
+
+<div id="create-a-collaboration" />
 
 ## Criar uma colaboração
 
@@ -102,7 +106,7 @@ Associar fontes significa compartilhar seus dados (que incluem <Anchor target="_
 
    <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />  
    Em seguida, clique em **Save**.
-4. #### **Opcional:** Defina permissões de dados personalizadas por fonte
+4. #### <span id="optional-set-custom-data-permissions-by-source"></span>**Opcional:** Defina permissões de dados personalizadas por fonte
 
    Você pode definir permissões personalizadas em uma fonte (diferentes da sua política geral de permissões de dados). **Para definir permissões de dados personalizadas por fonte:**
 
@@ -122,6 +126,8 @@ Associar fontes significa compartilhar seus dados (que incluem <Anchor target="_
 
 É só isso! Sua colaboração está pronta. Agora é hora de você e seu colaborador <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-build-and-activate-audiences">criarem audiências</Anchor> e executarem campanhas. Depois, <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">configure a mensuração</Anchor> e analise os resultados para obter insights.
 
+<div id="manage-collaborations" />
+
 ## Gerenciar colaborações
 
 Esta seção descreve como gerenciar suas colaborações existentes.
@@ -140,11 +146,15 @@ Esta seção descreve como gerenciar suas colaborações existentes.
    <Image alt="menu de ações aberto.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
+<div id="associate-new-sources" />
+
 #### Associar novas fontes
 
 **Para associar novas fontes:** Clique em **+ Associate source** > selecione as fontes no menu suspenso > clique em **Save**.  
 
 <Image alt="Associar fonte em uma colaboração existente.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+
+<div id="manage-sources" />
 
 #### Gerenciar fontes
 
@@ -169,6 +179,8 @@ Esta seção descreve como gerenciar suas colaborações existentes.
 2. No dashboard de colaboração, clique no menu de ações (3 pontos) no canto superior direito e selecione a ação específica.   
 
    <Image alt="menu de ações aberto.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+
+<div id="notes-on-suspended-collaborations" />
 
 > 📘 **Observações sobre colaborações suspensas**
 >
@@ -209,6 +221,8 @@ Você pode convidar todos ou alguns membros da sua equipe para a colaboração. 
 
 </Accordion>
 
+<div id="administer-account" />
+
 ## Administrar conta
 
 Aplique uma governança legal que se aplique a todas as colaborações.
@@ -218,6 +232,8 @@ Aplique uma governança legal que se aplique a todas as colaborações.
 <Accordion title="Termos e condições">
 
 Você pode definir e aplicar um acordo legal de Termos e condições que rege todas as suas colaborações. Depois de publicados, todos os colaboradores deverão aceitar explicitamente seus Termos antes de ter acesso aos dados da colaboração.
+
+<div id="apply-terms-and-conditions" />
 
 #### Aplicar termos e condições
 
@@ -234,6 +250,8 @@ Você pode definir e aplicar um acordo legal de Termos e condições que rege to
 
    Os novos Termos agora são aplicados a todas as suas colaborações. Os colaboradores precisarão confirmar que leram e aceitam seus Termos e condições para colaborar com você. Se um colaborador não aceitar, ele não poderá ter acesso nem realizar ações na colaboração.
 
+<div id="update-existing-terms-and-conditions" />
+
 #### Atualizar Termos e condições existentes
 
 Você pode atualizar o conteúdo (ou a URL) dos seus Termos e condições existentes.
@@ -245,6 +263,8 @@ Você pode atualizar o conteúdo (ou a URL) dos seus Termos e condições existe
 3. Se a URL tiver mudado, insira a nova URL no campo **Termos e condições**.
 4. Clique em **Publicar novos Termos**.  
    Os colaboradores precisarão confirmar que leram e aceitam os novos termos para continuar colaborando.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** Entenda as discrepâncias que podem ocorrer entre AppsFlyer e Google Analytics.
 
+<div id="discrepancies-in-data-between-appsflyer-and-google-analytics" />
+
 ## Discrepâncias nos dados entre AppsFlyer e Google Analytics
 
 A seguir, estão listados os motivos das discrepâncias entre AppsFlyer e Google Analytics.
@@ -42,6 +44,8 @@ Quando <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advance
 O Google Analytics associa eventos por ID de usuário do cliente. O ID de usuário do cliente que a AppsFlyer envia por padrão é o GAID ou o IDFA.
 
 Portanto, o Google Analytics considera usuários que reinstalam (usuários que instalam, desinstalam e depois reinstalam) como os mesmos usuários.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -69,6 +73,8 @@ Além disso, discrepâncias podem surgir se você implementar os SDKs do GA e da
 
 Se o fuso horário do seu dashboard do GA for diferente do fuso horário do seu aplicativo na AppsFlyer, os dados podem não se alinhar.
 
+<div id="example-1" />
+
 > 📄 **Exemplo**
 >
 > O dashboard do seu aplicativo está configurado para GMT+13, e o dashboard do GA está configurado para GMT. Isso significa que o dashboard do seu aplicativo está um dia à frente do dashboard do GA.
@@ -92,6 +98,8 @@ Como a AppsFlyer e o Google Analytics desduplicam eventos de maneiras diferentes
 <Accordion title="Contagem de sessões">
 
 A AppsFlyer contabiliza sessões sempre que o aplicativo é aberto ou retorna para o primeiro plano. O Google Analytics contabiliza sessões de acordo com o CID (ID de usuário do cliente) e a atividade.
+
+<div id="example-2" />
 
 > 📄 **Exemplo**
 >

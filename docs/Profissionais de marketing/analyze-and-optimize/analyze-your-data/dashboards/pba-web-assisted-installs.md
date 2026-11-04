@@ -26,9 +26,13 @@ x-zendesk:
 
 ![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
 
+<div id="web-assisted-installs-analysis" />
+
 ## Análise de instalações auxiliadas pela web
 
 Instalações assistidas pela web medem o impacto dos esforços de marketing da web para impulsionar os usuários a instalar um aplicativo. Os anunciantes visualizam o envolvimento da web no contexto do evento de instalação; eles podem determinar a fonte de mídia que direcionou os visitantes do site para a instalação do aplicativo. Os melhores resultados nas instalações assistidas pela web são alcançados se você definir o CUID no aplicativo e no <Anchor target="_blank" href="/marketers/pt/docs/onboarding-guide-to-people-based-attribution#2">site.</Anchor> 
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### Métricas de título de instalações auxiliadas pela web
 
@@ -43,6 +47,8 @@ Considere os cenários de caso de uso, na tabela a seguir, para a análise de in
 | Total de instalações | Todas as instalações quem engajam—em algum momento—com uma fonte de mídia da web. | <ul><li>Qual é a contribuição do web marketing em relação a todas as instalações de aplicativos?</li><li>Como os esforços de marketing na web são distribuídos entre fontes de mídia e canais?</li><li>Qual é a contribuição, se houver, dos Smart Banners?</li></ul> |
 | instalações orgânicas | O aplicativo é instalado sem o engajamento com uma fonte de mídia mobile. | <ul><li>Qual parte, se houver, de instalações orgânicas é impulsionada puramente pelo tráfego da web?</li><li>Quais são os canais de mídia dominantes?</li><li>Qual é a proporção entre tipos de mídia paga, própria e adquirida?</li></ul> |
 | Instalações não-orgânicas | As jornadas do usuário começam na web. O aplicativo é instalado mais tarde depois do engajamento com uma campanha mobile. | <ul><li>Que volume de instalações não orgânicas é influenciado pela web?</li><li>Quais canais e tipos de mídia web influenciam instalações não orgânicas?</li><li>Suas fontes de mídia móvel pagas se sobrepõem às fontes de mídia da web?</li></ul> |
+
+<div id="web-assisted-installs-dashboard" />
 
 ## Dashboard de Instalações Auxiliadas pela Web
 

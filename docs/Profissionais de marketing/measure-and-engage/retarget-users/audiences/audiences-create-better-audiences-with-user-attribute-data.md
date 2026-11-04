@@ -27,6 +27,8 @@ x-zendesk:
 
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
+<div id="about-user-attributes" />
+
 ## Sobre os atributos dos utilizadores
 
 Os atributos dos utilizadores, ao contrário de dados baseados em eventos, são características gerais que os seus utilizadores partilham com a sua empresa. Podem ser estáticos, como género, idade, data de nascimento e país, ou dinâmicos, como a pontuação de um jogo.
@@ -62,6 +64,8 @@ A tabela contém dados de atributos dos utilizadores do seu CRM. Os conjuntos de
 
 Em Audiências, crie atributos de utilizador (como desporto favorito e pontuação de jogo). Isto permite que o conjunto de regras aceda aos dados do CRM.
 
+<div id="scenario-user-attributes" />
+
 #### Atributos dos utilizadores no cenário
 
 | UA: para atribuição de clique, defina o parâmetro de link de atribuição af\_click\_lookback. | ID da rede de anúncios para a qual o postback foi enviado | Nível |
@@ -76,6 +80,8 @@ Os atributos do utilizador funcionam como filtros nos conjuntos de regras dos P�
 [<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
 
 </Accordion>
+
+<div id="implement-user-attributes" />
 
 ## Implementar atributos de utilizador
 
@@ -138,7 +144,7 @@ Para gerir os atributos do utilizador, vá para **Públicos-alvo** > separador *
 | --- | --- |
 | <span id="search-and-filter"></span>Pesquisa e filtro | Por nome de atributo, nome da aplicação e nível de atributo. |
 | <span id="sort-by"></span>Ordenar por | Clique no cabeçalho da coluna para ordenar as linhas da tabela. |
-| <span id="import-data"></span>Importar dados | <ul><li>[Importar dados por CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Importar dados por API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="import-data"></span>Importar dados | <ul><li>[Importar dados por CSV](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[Importar dados por API](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>Alterar chave de importação da API | **Para alterar a chave de importação da API:**<ol><li>Clique em **Importar dados**.</li><li>Selecione **API**.</li><li>Clique em **Atualizar chave de importação**.</li></ol>**Nota!** Se os scripts tiverem chaves incluídas, atualize-as com a nova chave. |
 
 Gerir atributos de utilizador
@@ -190,6 +196,8 @@ Os dados dos atributos do utilizador são adicionados ou removidos via ficheiro 
 
 * Sem linha de cabeçalho
 * Contém todas as colunas listadas na tabela anterior.
+
+<div id="note" />
 
 > 📘 **Importante!**
 >
@@ -255,6 +263,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
   ]
 }
 ```
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -346,15 +356,19 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 <Accordion title="Limitações">
 
+<div id="general-limitations" />
+
 #### Limitações gerais
 
 * Apenas números inteiros (números inteiros) são suportados nos dados de importação CSV/API. Números do tipo float (decimais) não são suportados. **Exemplo:** Um valor de atributo "pontuação" pode ser 90, mas não 90,5.
 * Os dados sobre atributos de utilizador não podem ser impressos ou descarregados.
-* #### Limitações dos valores de atributos:
+* #### <span id="attribute-value-limitations"></span>Limitações dos valores de atributos:
 
   * Não são permitidas vírgulas, pontos ou outros caracteres especiais nos valores de atributos.
   * Os valores de atributo de tipo sequência de caracteres estão limitados a 40 caracteres.
   * Os valores dos atributos não devem começar por 0.
+
+<div id="api-import-limitations" />
 
 #### Limitações de importação via API
 
@@ -367,6 +381,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "device_id": "39e123.......",
 "customer_id": "",
 ```
+
+<div id="csv-import-limitations" />
 
 #### Limitações de importação de CSV
 

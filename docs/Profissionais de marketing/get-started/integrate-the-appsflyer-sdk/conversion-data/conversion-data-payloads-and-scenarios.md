@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** use os dados de conversão para identificar vários cenários de conversão, personalizar a experiência do usuário e muito mais.
 
+<div id="overview" />
+
 ## Visão geral
 
 O guia a seguir contém vários cenários de conversão do usuário e suas cargas de dados de conversão correspondentes:
@@ -43,7 +45,11 @@ Os dados de conversão são disponibilizados na plataforma usando um dos seguint
 
 Por conta da troca inerente entre precisão/latência, os dados de conversão para os mesmos IDs de dispositivo podem diferir entre as APIs.
 
+<div id="non-organic-conversion-data-payload-fields" />
+
 ### Campos de carga de dados de conversão não orgânica
+
+<div id="fields-always-available" />
 
 #### Campos sempre disponíveis
 
@@ -67,11 +73,15 @@ A tabela a seguir lista os campos que sempre existem para conversões **não org
 | `retargeting_conversion_type` | Tipo de conversão de redirecionamento | "none" ou retargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | Subparâmetro [n] (n=1–5) |  |
 
+<div id="fields-available-in-some-cases" />
+
 #### Campos disponíveis em alguns casos
 
 Os campos na tabela a seguir estão disponíveis em alguns casos, dependendo de como a SRN preenche o evento individual.
 
 <table><thead><tr><th>Nome dos campos de carga</th><th>Nome do campo de dados brutos</th><th>Observações</th><th> </th></tr></thead><tbody><tr><td><code>af_canal</code></td><td>Canal</td><td><p>SRNs que preenchem esse parâmetro:</p><ul><li>AppLovin</li><li>Google Ads</li><li>Meta Ads</li><li>Snapchat</li><li>TikTok para Empresas</li><li> Exemplo</li></ul><p>Exemplo: Facebook—Instagram, Google—YouTube </p></td><td> </td></tr><tr><td><code>orig_cost</code></td><td> </td><td>Observação (1)</td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td> </td><td>Observação (1)</td><td> </td></tr><tr><td><code>af_cpi</code></td><td> </td><td>Observação (1)</td><td> </td></tr><tr><td colspan="4"><p> <strong>Importante!</strong></p><p>(1) Os campos de custo são preenchidos com valores compartilhados pela ad network. Para que a ad network compartilhe dados de custo com a AppsFlyer, você deve ativar a integração de custos na página <a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>Integrações ativas</strong></a>. Algumas SRNs são compatíveis com compartilhamento de custos em massa. Nesse caso, os campos de custo no nível do evento retornam como 0. </p></td></tr></tbody></table>
+
+<div id="additional-fields" />
 
 ### Campos adicionais
 
@@ -79,6 +89,8 @@ Os campos na tabela a seguir estão disponíveis em alguns casos, dependendo de 
 * Você pode adicionar parâmetros ao link de atribuição, eles são disponibilizados na carga
 
 Consulte o <Anchor target="_blank" href="/marketers/pt/docs/raw-data-field-dictionary#data-fields-dictionary">dicionário de campos de dados brutos</Anchor> para obter informações adicionais.
+
+<div id="limitations" />
 
 ### Limitações
 
@@ -94,6 +106,8 @@ Se um parâmetro for chamado `name`, ele será removido da carga.
 
 ---
 
+<div id="ua-conversion-data-with-srns" />
+
 ## Dados de conversão de UA com SRNs
 
 <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns">Redes de autorrelato</Anchor> (SRNs) são ad networks que implementam seus próprios mecanismos de atribuição, por exemplo, Meta ads e Google.
@@ -105,6 +119,8 @@ SRNs não usam links de atribuição. Isso significa que:
 
 SRNs relatam conversões para a AppsFlyer. Os dados de conversão são disponibilizados no aplicativo. Os campos disponíveis variam de acordo com a SRN e são detalhados nas guias individuais das SRNs a seguir.
 
+<div id="a-note-about-meta-ads" />
+
 #### Uma observação sobre o Meta ads
 
 Se você realizar campanhas no Meta ads e não aceitar os termos de serviço do Meta, a AppsFlyer atribuirá a instalação. A disponibilidade do relatório é limitada da seguinte forma:
@@ -114,6 +130,8 @@ Se você realizar campanhas no Meta ads e não aceitar os termos de serviço do 
 
 <Tabs>
 <Tab title="Meta Ads">
+
+<div id="meta-ads-conversion-data" />
 
 ### Dados de conversão do Meta ads
 
@@ -207,6 +225,8 @@ Se você realizar campanhas no Meta ads e não aceitar os termos de serviço do 
 
 <div id="twitter-conversion-data" />
 
+<div id="x-ads-conversion-data" />
+
 ### Dados de conversão do X Ads
 
 | Nome do campo | Observações |
@@ -239,6 +259,8 @@ Se você realizar campanhas no Meta ads e não aceitar os termos de serviço do 
 <Tab title="Tiktok">
 
 <div id="tiktok-conversion-data" />
+
+<div id="tiktok-for-business-conversion-data" />
 
 ### Dados de conversão do TikTok for Business
 
@@ -280,6 +302,8 @@ Se você realizar campanhas no Meta ads e não aceitar os termos de serviço do 
 </Tab>
 </Tabs>
 
+<div id="ua-conversion-with-other-ad-networks" />
+
 ## Conversão de UA com outras ad networks
 
 Para outras ad networks, os dados na carga são afetados diretamente pelos <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">parâmetros no link de atribuição</Anchor>.
@@ -292,6 +316,8 @@ Examine as seguintes cargas JSON.
 
 <Accordion title="Applovin">
 
+<div id="attribution-link" />
+
 #### Link de atribuição:
 
 ```http HTTPS
@@ -301,6 +327,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   &af_click_lookback=7d&clickid=10****************
   &advertising_id=50********************************&af_ip=
 ```
+
+<div id="payload" />
 
 #### Carga:
 
@@ -318,6 +346,8 @@ nulo ou valor do parâmetro af_prt no link de atribuição
 
 <Accordion title="ironSource">
 
+<div id="attribution-link-1" />
+
 #### Link de atribuição:
 
 ```http HTTPS
@@ -330,6 +360,8 @@ https://app.appsflyer.com/id123456789?
   &idfa=01**********************************&af_siteid=123_site_id&
   af_enc_data=cN*********************************************************************
 ```
+
+<div id="payload-1" />
 
 #### Carga:
 
@@ -378,6 +410,8 @@ No entanto, os dados relacionados ao custo **não aparecem no link de atribuiç�
 
 </Accordion>
 
+<div id="retargeting-conversion-data" />
+
 ## Dados de conversão de retargeting
 
 O retargeting inclui dois tipos de conversões, reatribuição ou reengajamento.
@@ -387,6 +421,8 @@ O retargeting inclui dois tipos de conversões, reatribuição ou reengajamento.
 > **Carga útil**
 >
 > Os dados de conversão para retargeting nem sempre fornecem uma indicação clara quanto ao tipo de conversão. Consulte [fontes alternativas de dados de conversão](#fontes-de-dados-de-conversão-alternativas).
+
+<div id="re-attribution-with-srns" />
 
 ### Reatribuição com SRNs
 
@@ -400,6 +436,8 @@ Isso significa que não há como determinar, no nível do SDK, se uma instalaç�
 >
 > Definir o nome da campanha de forma que indique o retargeting **não é um método infalível**. Veja [exemplos para saber mais](#exemplos-de-aquisição-e-reatribuição-de-usuários-mistos).
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ### Reatribuição com ad networks regulares
 
 A atribuição a ad networks depende de links de atribuição. Sejam links de atribuição regulares ou OneLink, com retargeting, o link de atribuição sempre tem o parâmetro `is_retargeting=true` definido nele.
@@ -408,6 +446,8 @@ A atribuição a ad networks depende de links de atribuição. Sejam links de at
 
 <Accordion title="Campanha de retargeting com Criteo">
 
+<div id="attribution-link-2" />
+
 #### Link de atribuição
 
 ```http
@@ -415,6 +455,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### Carga de dados de conversão
 
@@ -428,6 +470,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ### Reatribuição com deferred deep linking
 
 Muitas vezes, é possível que você queira criar deep links para usuários reatribuídos que, por serem reatribuídos, não têm o aplicativo instalado. Por exemplo, você define uma campanha com o intuito de trazer de volta os usuários que desinstalaram o aplicativo. A campanha promove um produto ou serviço e você deseja atender os usuários com conteúdo relacionado ao produto ou serviço que você anuncia.
@@ -439,6 +483,8 @@ Isso é conhecido como deferred deep linking. A carga de dados de conversão par
 <Accordion title="Vinculação profunda adiada com SRNs">
 
 Os parâmetros de deep link definidos nas campanhas de SRNs não estão disponíveis fora da SRN. Isso inclui o parâmetro `af_dp`, que contém o caminho do esquema no aplicativo. A única exceção para isso é ao se usar <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#usando-deferred-deep-linking-em-campanhas-de-aplicativos">Campanhas do Google App em Feeds</Anchor>. Para implementar deferred deep linking, uma lógica adicional deve ser aplicada para campanhas de SRN. Use os dados na resposta `onConversionSuccess`, como campanha, conjunto de anúncios, grupo de anúncios, para redirecionar de forma programática os seus usuários.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Dados de conversão para deferred deep linking com o Meta ads
 
@@ -528,6 +574,8 @@ Você pode usar os dados na resposta getConversionData, como campanha, conjunto 
 
 Existem três maneiras de fazer o deep linking dos usuários:
 
+<div id="uri-schemes" />
+
 #### Esquemas URI
 
 Ao usar esquemas URI, tanto para links de atribuição quanto para OneLink, o link de atribuição e a carga são os seguintes:
@@ -558,6 +606,8 @@ Android iOS
 
 * `af_deeplink: true` - quando esse parâmetro aparecer e for definido como true, procure os campos `scheme` e `host`
 * `scheme` e `host` - esses campos vêm do parâmetro `af_dp` no link de atribuição e indicam o esquema e a atividade para os quais o usuário deve ser direcionado por deep link
+
+<div id="ios-universal-links-and-android-app-links" />
 
 #### Universal Links do iOS e App Links do Android
 
@@ -615,13 +665,19 @@ Ao usar Universal Links ou App Links, o OneLink e a carga são os seguintes:
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ### Reengajamento com SRNs
 
 Assim como nas campanhas de reatribuição, quando um usuário é reengajado por meio de uma SRN, os dados de conversão não indicam que se trata de uma campanha de reengajamento. Você pode definir o nome da campanha de forma que indique uma campanha de reengajamento.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ### Reengajamento com ad networks regulares
 
 Aqui também, a carga dos dados de conversão não indica que o usuário vem de uma campanha de reengajamento. Para superar essa limitação, você pode definir o nome da campanha para indicar um reengajamento.
+
+<div id="re-engagement-with-deep-linking" />
 
 ### Reengajamento com deep linking
 
@@ -675,10 +731,14 @@ Outro motivo para usar a versão curta do OneLink é a estrutura de dados de con
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ### Fontes de dados de conversão alternativas
 
 * A Push API oferece uma carga de conversão detalhada que indica reatribuição ou reengajamento. As cargas da Push API incluem um campo chamado `re_targeting_conversion_type`. Esse campo indica o tipo de conversão, seja reatribuição ou reengajamento. Para saber mais, consulte nosso <Anchor target="_blank" href="/marketers/pt/docs/push-api-streaming-raw-data">guia de Push API</Anchor>.
 * Os relatórios de dados brutos também contêm indicadores para o tipo de conversão. No relatório de dados brutos para conversões de retargeting, há uma coluna chamada ***nome do evento***. O valor nesta coluna é ***reengajamento*** ou ***reatribuição*** de acordo com o tipo de conversão.
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ### Exemplos de aquisição e reatribuição de usuários mistos
 

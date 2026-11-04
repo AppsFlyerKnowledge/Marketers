@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
 
+<div id="setting-up-ibotta" />
+
 ## Configurando a Ibotta
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Se você não tiver uma conta, entre em contato com o parceiro para abrir uma antes de configurar a integração.
@@ -40,6 +42,8 @@ x-zendesk:
    Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
 5. Complete a configuração utilizando as abas relevantes, conforme descrito abaixo. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner">integrações de parceiros.</Anchor>
 
+<div id="tip" />
+
 > 👍 **Atenção**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -48,6 +52,8 @@ x-zendesk:
 <div id="integration-tab" />
 
 <Accordion title="Aba Integração">
+
+<div id="activate-partner" />
 
 ### Ativar parceiro
 
@@ -59,9 +65,13 @@ Envie postbacks automáticos para a Ibotta após instalações e reengajamentos 
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à Ibotta.
 
+<div id="in-app-events-settings" />
+
 ### Configurações de eventos in-app
 
 Nesta seção, você pode mapear seus eventos da AppsFlyer com a Ibotta por meio de postbacks.
+
+<div id="tip-1" />
 
 > 👍 **Atenção**
 >
@@ -90,6 +100,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à Ibott
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -109,6 +121,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para obter mais informações sobre **<Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">a Estrutura e os parâmetros do link de atribuição da AppsFlyer</Anchor>.**
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras inicializações) que ocorrerem dentro da janela de lookback podem ser atribuídas à Ibotta.
@@ -116,6 +130,8 @@ Essa barra deslizante permite que você defina o **tempo máximo entre o clique 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de cliques aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -146,6 +162,8 @@ A integração da receita publicitária não está disponível para este parceir
 Nesta guia, você pode selecionar as permissões a serem concedidas à Ibotta, caso o parceiro atue como uma ad network, agência ou ambos. Observe que, mesmo que a atribuição esteja desativada para a Ibotta, a guia de permissões continua ativa e você pode conceder controle à Ibotta.
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

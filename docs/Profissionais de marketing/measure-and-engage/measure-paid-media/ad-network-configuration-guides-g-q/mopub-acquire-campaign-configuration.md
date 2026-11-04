@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="MoPub Acquire, uma empresa do Twitter" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="104px" />
 
+<div id="setting-up-mopub-acquire" />
+
 ## Como configurar o MoPub Acquire
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -46,6 +48,8 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 **Para habilitar a integração deste parceiro**, ative **Ativar parceiro**.  
@@ -55,11 +59,15 @@ A alavanca deve ser mantida enquanto você trabalhar com o parceiro. Saiba mais 
 
 Ative essa opção se quiser atribuir instalações por view-through do MoPub Acquire. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Envie postbacks automáticos para o MoPub Acquire após instalações e reengajamentos do usuário. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos ao MoPub Acquire.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -88,6 +96,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao MoPub
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -107,6 +117,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre a <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo entre o clique e a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas ao MoPub Acquire.
@@ -115,9 +127,13 @@ Essa barra deslizante permite que você defina o **tempo máximo entre o clique 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de cliques aqui</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Clique no link de atribuição
 
 Este é o link de atribuição que contém todas as informações de configuração definidas para ele. Envie-o para o MoPub Acquire para ser ativado quando os leads clicarem em um anúncio correspondente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Janela de retrospetiva da atribuição por visualização
 
@@ -128,6 +144,8 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 **Parâmetro do link de atribuição:** af\_viewthrough\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição view-through aqui</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Link de atribuição para impressões
 

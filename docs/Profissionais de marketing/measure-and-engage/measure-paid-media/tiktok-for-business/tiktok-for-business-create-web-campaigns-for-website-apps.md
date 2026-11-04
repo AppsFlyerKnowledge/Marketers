@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > **Resumo:** Configure uma integração do TikTok Web Ads para o aplicativo do seu site para enviar sinais de conversão na web ao TikTok através da Events API.
 
+<div id="overview" />
+
 ## Visão geral
 
 Funciona assim: quando um usuário clica em um anúncio do TikTok e acessa seu site, realizando um evento na web (por exemplo, uma compra ou um cadastro), a AppsFlyer envia esses sinais para o TikTok via Events API. O TikTok usa esses dados para otimizar a segmentação de anúncios e mensurar a performance de campanhas.
 
 Você pode definir quais eventos de conversão na web a AppsFlyer envia para o TikTok Ads ao mapear eventos da AppsFlyer para eventos do TikTok Web Ads. Esses postbacks podem ser visualizados no TikTok Ads Manager e os eventos são mapeados pelo TikTok para otimizar campanhas e relatórios.
 
+<div id="see-also" />
+
 > 📄 **Veja também**
 >
 > * <Anchor target="_blank" href="/marketers/pt/docs/web-performance-measurement-overview">Mensuração da performance web - visão geral</Anchor>
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Atualmente, a integração não oferece suporte para o envio de postbacks de reengajamento pela Events API.
+
+<div id="prerequisites" />
 
 ### Pré-requisitos
 
@@ -44,12 +52,16 @@ Antes de ativar a integração do TikTok Web Ads para seus aplicativos de sites,
 * Um aplicativo de site configurado na AppsFlyer.
 * Uma conta empresarial no <Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">TikTok Ads Manager</Anchor>
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### Como configurar o TikTok Web Ads para aplicativos de site
 
 O processo envolve definir a integração entre o TikTok Web Ads e a AppsFlyer e configurar a campanha no TikTok Ads Manager. Isso inclui as seguintes etapas:
 
 * [Parte 1:](#parte-1-configurar-a-integração-do-tiktok-web-ads-na-appsflyer) [Configurar a integração do TikTok Web Ads na AppsFlyer](#parte-1-configurar-a-integração-do-tiktok-web-ads-na-appsflyer) (obrigatório)
 * [Parte 2: Configurar a integração da AppsFlyer no TikTok Web Ads](#parte-2-configurar-a-integração-da-appsflyer-no-tiktok-web-ads) (obrigatória)
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## Parte 1: Configurar a integração do TikTok Web Ads na AppsFlyer
 
@@ -93,6 +105,8 @@ Para configurar postbacks de eventos in-app:
    * **Todos os canais de mídia, incluindo orgânico**, para enviar todos os eventos independentemente da fonte de atribuição.
 7. Na coluna **Incluindo**, selecione se os eventos serão enviados com os respectivos valores de receita. Veja <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#dados-a-incluir-nos-postbacks">Dados a incluir nos postbacks</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Atenção**
    >
    > * Se você estiver configurando um evento de compra, defina a coluna **Incluindo** como **Valores e receita**. Selecionar qualquer outra opção fará com que o postback falhe.
@@ -100,6 +114,8 @@ Para configurar postbacks de eventos in-app:
 
 8. [Opcional] Clique no ícone **Adicionar condição** para <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#postbacks-condicionais-de-eventos-in-app">definir condições</Anchor> para um evento.
 9. Clique em **Salvar integração**.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -115,6 +131,8 @@ Para configurar postbacks de eventos in-app:
 > Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/integrate-appsflyer-web-sdk">[Beta] Integrar o SDK web da AppsFlyer</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## Parte 2: Configurar a integração da AppsFlyer no TikTok Web Ads
 
@@ -150,6 +168,8 @@ Você pode escolher qualquer evento in-app padrão enviado pela AppsFlyer como s
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **Atenção**
    >
    > Para simplificar a análise da campanha, inclua o tipo de campanha (web ou mobile) como um prefixo ou sufixo no nome da campanha. Exemplo: `campaign-name_web`.
@@ -163,6 +183,8 @@ Você pode escolher qualquer evento in-app padrão enviado pela AppsFlyer como s
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **Atenção**
    >
    > O TikTok anexa automaticamente `ttclid={{ttclid}}` ao URL de destino quando o anúncio é clicado.
@@ -170,11 +192,15 @@ Você pode escolher qualquer evento in-app padrão enviado pela AppsFlyer como s
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## Visualizar dados de atribuição web
 
 Eventos de conversão na web são registrados com o PID `tiktokweb_int` no campo `media_source`. Para visualizar dados de atribuição web, use relatórios de dados brutos e filtre por `media_source = tiktokweb_int` para separar as conversões de aplicativos de sites.
 
 Os relatórios de dashboard para campanhas de aplicativos de sites ainda não estão disponíveis. Uma visão unificada para relatórios que permite analisar a performance de campanhas na web junto com outros canais será lançada em breve.
+
+<div id="measure-cost-clicks-and-impressions" />
 
 ## Meça custo, cliques e impressões
 
@@ -182,6 +208,8 @@ Meça custo, cliques e impressões do TikTok juntamente com seus dados de atribu
 
 1. Para obter dados de custo do TikTok para campanhas de aplicativos de sites no relatório **All Cost**, conecte sua conta de anúncios à integração de custos do TikTok (`tiktokglobal_int`) através da página **Configurações de custo** ou da aba **Custo**. Para ver instruções passo a passo, consulte <Anchor target="_blank" href="/marketers/pt/docs/set-up-roi360-cost-api-to-measure-cost-data">Configure a API de custo do ROI360 para mensurar dados de custo</Anchor>.
 2. **Adicione o ID da campanha à URL da sua landing page:** inclua `af_c_id` junto com a hierarquia completa da campanha na URL da landing page. Isso garante que custo, cliques e impressões sejam correspondidos aos seus dados de atribuição web no nível mais granular.
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

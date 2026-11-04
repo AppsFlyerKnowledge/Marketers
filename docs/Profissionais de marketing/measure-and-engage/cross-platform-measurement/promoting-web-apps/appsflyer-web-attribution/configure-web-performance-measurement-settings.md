@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Configure as definições de atribuição web para controlar como a AppsFlyer atribui visitas ao site, conversões e atividade do usuário às campanhas de marketing. As definições incluem janelas de atribuição, eventos de aquisição de usuários, regras de reengajamento e exclusões de domínio.
 
+<div id="overview" />
+
 ## Escritórios
 
 As definições de atribuição web definem como a AppsFlyer mede e atribui a atividade do usuário no seu site. Estas definições determinam:
@@ -31,9 +33,13 @@ As definições de atribuição web definem como a AppsFlyer mede e atribui a at
 * Quando considerar os usuários como recorrentes (reengajamento) ou readquiridos.
 * Quais domínios excluir da atribuição.
 
+<div id="who-should-configure-these-settings" />
+
 ### Quem deve configurar estas definições
 
 As equipes de marketing e os gerentes de growth normalmente configuram essas definições com base nos objetivos de negócios. As equipes técnicas podem se envolver na integração do SDK e na configuração do domínio.
+
+<div id="accessing-web-attribution-settings" />
 
 ### Acesso às definições de atribuição web
 
@@ -42,6 +48,8 @@ Para acessar as definições de atribuição do seu aplicativo web:
 1. Na AppsFlyer, acesse **My Apps**
 2. Selecione seu aplicativo web na lista
 3. Acesse **App Settings** > **Attribution**
+
+<div id="quick-reference" />
 
 ## Referência rápida
 
@@ -64,6 +72,8 @@ Para acessar as definições de atribuição do seu aplicativo web:
 **Restrição:**  
 A janela de inatividade de reengajamento deve ser **menor ou igual à** janela de inatividade de reaquisição. Caso contrário, os usuários poderão ser readquiridos antes de se qualificarem para retargeting.
 
+<div id="basic-settings" />
+
 ## **Configurações básicas**
 
 As configurações básicas do aplicativo web são:
@@ -76,6 +86,8 @@ As configurações básicas do aplicativo web são:
 
 Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/adding-an-app-to-appsflyer#web">Adicionar um aplicativo ao AppsFlyer</Anchor>.
 
+<div id="user-acquisition-settings" />
+
 ## Configurações de aquisição de usuários
 
 As configurações de aquisição de usuários (UA) determinam como o AppsFlyer identifica quando um usuário é adquirido pela primeira vez e como atribuir essa aquisição às fontes de marketing.
@@ -86,11 +98,15 @@ As configurações de aquisição de usuários (UA) determinam como o AppsFlyer 
 
 O evento que aciona a aquisição de usuários. Esta é uma ação de negócios importante que define quando você considera que um usuário foi realmente "adquirido".
 
+<div id="why-customize" />
+
 #### Por que personalizar
 
 A **primeira visita** padrão geralmente representa um sinal fraco do valor do usuário. Um usuário pode clicar em um anúncio acidentalmente ou sair imediatamente. Ao personalizar essa configuração, você garante que o valor de longo prazo (LTV) seja atribuído à fonte de marketing que impulsionou uma ação significativa, e não apenas um clique por curiosidade.
 
 **Padrão:** primeira visita (o usuário é adquirido na primeira visita ao site)
+
+<div id="common-alternatives-by-industry" />
 
 #### Alternativas comuns por vertical
 
@@ -101,6 +117,8 @@ A **primeira visita** padrão geralmente representa um sinal fraco do valor do u
 | Delivery | first\_order |
 | SaaS/Assinatura | subscription\_start |
 | Gaming | sign\_up ou tutorial\_complete ou first\_purchase |
+
+<div id="how-it-works" />
 
 #### Como funciona
 
@@ -114,6 +132,8 @@ Se definido como **um evento personalizado** (por exemplo, sign\_up):
 * Os usuários entram em um **"período de pré-aquisição"** desde a primeira visita até realizarem o evento.
 * Durante a pré-aquisição, os eventos são atribuídos ao último touchpoint não orgânico dentro da janela de lookback (atribuição de último toque).
 * Quando o evento de UA personalizado ocorre, uma **conversão de aquisição de usuários** é criada e a atribuição de longo prazo começa.
+
+<div id="example-scenario-ua-event--sign_up" />
 
 #### Exemplo de cenário (evento de UA = sign\_up):
 
@@ -137,15 +157,21 @@ Essa janela controla por quanto tempo a AppsFlyer "se lembra" de um touchpoint d
 
 **Intervalo:** de 1 hora a 90 dias
 
+<div id="how-it-works-1" />
+
 #### Como funciona
 
 Quando um usuário realiza o evento de UA (por exemplo, sign\_up), a AppsFlyer busca dentro dessa janela o touchpoint não orgânico mais recente e atribui a aquisição a essa fonte de marketing.
+
+<div id="example-1-30-day-lookback" />
 
 #### Exemplo 1 (lookback de 30 dias):
 
 * **Dia 0:** O usuário clica em um anúncio do Facebook e visita o site
 * **Dia 25:** O usuário retorna diretamente e conclui o evento sign\_up
 * **Resultado:** A aquisição de usuários é atribuída ao Facebook (dentro da janela de lookback de 30 dias)
+
+<div id="example-2-window-expired" />
 
 #### Exemplo 2 (janela expirada):
 
@@ -155,6 +181,8 @@ Quando um usuário realiza o evento de UA (por exemplo, sign\_up), a AppsFlyer b
 **Resultado:** a aquisição de usuários é marcada como orgânica (fora da janela de lookback de 30 dias)
 
 </Accordion>
+
+<div id="re-engagement-settings" />
 
 ## Configurações de reengajamento
 
@@ -172,6 +200,8 @@ Essa configuração determina por quanto tempo as campanhas de retargeting receb
 
 **Intervalo:** de 1 hora a 90 dias
 
+<div id="how-it-works-2" />
+
 #### Como funciona
 
 Quando um usuário adquirido retorna por uma fonte não orgânica (por exemplo, um anúncio de retargeting) e atende aos critérios de reengajamento, uma **conversão de retargeting** é criada. Os eventos dentro desta janela recebem **atribuição dupla**:
@@ -180,6 +210,8 @@ Quando um usuário adquirido retorna por uma fonte não orgânica (por exemplo, 
    * Objetivo: dar crédito à campanha de retargeting
 2. **Atribuição secundária** → Fonte de UA original
    * Objetivo: dar suporte à visualização de UA que mensura o valor total do ciclo de vida do usuário (LTV) até a aquisição original
+
+<div id="example-within-window" />
 
 #### Exemplo (dentro da janela):
 
@@ -208,6 +240,8 @@ Evite creditar campanhas de retargeting quando os usuários já estiverem engaja
 
 **Intervalo:** 0 (desativado) a 30 dias
 
+<div id="how-it-works-3" />
+
 #### Como funciona
 
 **Quando desativado:**
@@ -223,6 +257,8 @@ Evite creditar campanhas de retargeting quando os usuários já estiverem engaja
 
 * Não pode exceder a janela de inatividade (re-aquisição)
 
+<div id="example-7-day-inactivity-window" />
+
 #### Exemplo (janela de inatividade de 7 dias):
 
 * **Dia 0:** Usuário adquirido por meio de um anúncio do Facebook
@@ -231,6 +267,8 @@ Evite creditar campanhas de retargeting quando os usuários já estiverem engaja
 * **Dia 15:** Usuário clica em um anúncio de retargeting → **Conversão de retargeting criada** (12 dias de inatividade)
 
 </Accordion>
+
+<div id="re-acquisition-settings" />
 
 ## Configurações de reaquisição
 
@@ -248,6 +286,8 @@ Essa configuração define o limite de churn da sua empresa. Ela determina quand
 
 **Intervalo:** 1 a 180 dias
 
+<div id="how-it-works-4" />
+
 #### Como funciona
 
 **Quando o usuário é marcado como "churned":**
@@ -261,6 +301,8 @@ Essa configuração define o limite de churn da sua empresa. Ela determina quand
 * Se o usuário realizar o evento de reaquisição → uma nova conversão de UA será criada
 * A campanha de win-back recebe o crédito como a nova fonte de aquisição
 * O usuário é tratado como uma aquisição completamente nova do ponto de vista de relatórios
+
+<div id="example-90-day-window" />
 
 #### Exemplo (janela de 90 dias):
 
@@ -285,6 +327,8 @@ Muitos eventos de aquisição de usuários são ações únicas (por exemplo, si
 
 **Alternativas comuns:** sign\_in ou purchase
 
+<div id="how-it-works-5" />
+
 #### Como funciona
 
 **Se definido como um evento personalizado (por exemplo,** **sign\_in**):
@@ -293,6 +337,8 @@ Muitos eventos de aquisição de usuários são ações únicas (por exemplo, si
 * O usuário pode visitar várias vezes antes que ocorra a reaquisição
 * Definição mais rigorosa de reaquisição "verdadeira".
 
+<div id="example-re-acquisition-event--sign_in" />
+
 #### Exemplo (evento de reaquisição = sign\_in):
 
 * Usuário churned após 90 dias de inatividade
@@ -300,6 +346,8 @@ Muitos eventos de aquisição de usuários são ações únicas (por exemplo, si
 * Um dia depois, o usuário faz login → Conversão de reaquisição criada, atribuída à campanha de e-mail
 
 </Accordion>
+
+<div id="attribution-window" />
 
 ## Janela de atribuição
 
@@ -315,6 +363,8 @@ O período máximo após a aquisição de usuários durante o qual a AppsFlyer a
 
 </Accordion>
 
+<div id="excluded-domains" />
+
 ## Domínios excluídos
 
 Domínios excluídos da atribuição. Isso impede que a AppsFlyer atribua visitas ou eventos quando os usuários navegam entre domínios especificados e seu site.
@@ -328,6 +378,8 @@ Domínios excluídos da atribuição. Isso impede que a AppsFlyer atribua visita
 
 <Accordion title="Tipos de domínio">
 
+<div id="primary-required-automatic" />
+
 #### PRIMÁRIO (obrigatório, automático)
 
 * O domínio principal do seu site (definido durante a criação do aplicativo)
@@ -337,6 +389,8 @@ Domínios excluídos da atribuição. Isso impede que a AppsFlyer atribua visita
   * Exemplo: example.com exclui automaticamente shop.example.com, blog.example.com etc.
 * **Impacto da exclusão:** Sem autoatribuição
 
+<div id="internal-optional" />
+
 #### INTERNO (opcional)
 
 * Outros domínios da sua marca não abrangidos pelo domínio primário
@@ -344,9 +398,13 @@ Domínios excluídos da atribuição. Isso impede que a AppsFlyer atribua visita
 * Exemplo: Diferentes domínios de nível superior, como example.co.uk, example.in
 * **Impacto da exclusão:** Sem autoatribuição
 
+<div id="external-optional" />
+
 #### EXTERNO (opcional)
 
 Existem dois tipos de exclusões de domínio externo:
+
+<div id="external-listed-by-you" />
 
 #### Externo (listado por você)
 
@@ -355,6 +413,8 @@ Existem dois tipos de exclusões de domínio externo:
 * Adicione até 99 domínios adicionais
 * Exemplos: auth0.com, okta.com, facebook.com, google.com
 * **Impacto da exclusão:** As visitas são desconsideradas
+
+<div id="external-listed-by-appsflyer" />
 
 #### Externo (listado pela AppsFlyer)
 
@@ -422,11 +482,15 @@ Existem dois tipos de exclusões de domínio externo:
 
 <Accordion title="Requisitos e validação">
 
+<div id="domain-format" />
+
 #### Formato do domínio:
 
 * Somente o nome do domínio (sem protocolos, caminhos ou portas)
 * Máximo de 500 caracteres por domínio
 * Protocolos (https://) removidos automaticamente, convertidos para minúsculas
+
+<div id="examples" />
 
 #### Exemplos:
 
@@ -436,11 +500,15 @@ Existem dois tipos de exclusões de domínio externo:
 * example.com/path ❌ (caminhos não são permitidos)
 * example.com:8080 ❌ (portas não são permitidas)
 
+<div id="limits" />
+
 #### Limites:
 
 * Máximo de 100 domínios no total (incluindo 1 PRINCIPAL)
 
 </Accordion>
+
+<div id="migrating-from-people-based-attribution-pba" />
 
 ## Migração do People-Based Atribuição (PBA)
 

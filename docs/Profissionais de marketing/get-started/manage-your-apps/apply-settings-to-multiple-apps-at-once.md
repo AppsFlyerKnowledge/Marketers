@@ -28,13 +28,19 @@ x-zendesk:
 ---
 > **At a glance:** Aplique a mesma alteração de configuração a vários aplicativos de uma vez, em vez de repeti-la para cada aplicativo individualmente.
 
+<div id="about-bulk-app-settings" />
+
 ## Sobre as configurações em massa de aplicativos
 
 Agora você pode aplicar as mesmas alterações de configuração a vários aplicativos de uma só vez usando as configurações em massa de aplicativos na página Configurações do aplicativo. Isso permite que você faça uma alteração uma vez e a aplique a outros aplicativos elegíveis em uma única operação.
 
 Para acessar as Configurações do Aplicativo, no menu lateral, selecione **Settings** > **App Settings**. Ou, em **My Apps**, selecione um aplicativo e abra as Configurações do Aplicativo.
 
+<div id="apply-a-setting-to-multiple-apps" />
+
 ## Aplique uma configuração a vários aplicativos
+
+<div id="note" />
 
 > 📘 **Importante!**
 >
@@ -63,9 +69,13 @@ Para acessar as Configurações do Aplicativo, no menu lateral, selecione **Sett
    <Image alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
 8. Clique em **Confirmar & salvar**. Isso salva o aplicativo em que você começou junto com todos os aplicativos adicionais do lote, em uma única operação.
 
+<div id="note-1" />
+
 > 📘 **Importante!**
 >
 > Para Aggregated Advanced Privacy, você sempre verá uma etapa de confirmação antes que a alteração entre em vigor. Para a atribuição de reengajamento, você verá essa etapa de confirmação apenas ao aplicar a alteração em massa.
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >
@@ -74,6 +84,8 @@ Para acessar as Configurações do Aplicativo, no menu lateral, selecione **Sett
 > 1. Sucesso, e todos os aplicativos são atualizados.
 > 2. Falha, e nenhum aplicativo é atualizado.
 >    1. Se o salvamento falhar, você poderá tentar novamente.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 
@@ -84,6 +96,8 @@ Para acessar as Configurações do Aplicativo, no menu lateral, selecione **Sett
 | <span id="not-supported"></span>Não suportado | Autenticação do SDK (chave de desenvolvedor), país da loja de aplicativos, alterar nome do aplicativo, upload do certificado de desinstalação do iOS, ID do projeto do Firebase e configurações de assentos de agência e parceiro. |
 | <span id="why-an-app-might-be-grayed-out"></span>Por que um aplicativo pode aparecer acinzentado | Um aplicativo em cinza não é elegível para essa alteração nesta tentativa específica. Um dos seguintes motivos será exibido:<ul><li>**Incompatibilidade de plataforma:** a configuração não existe na plataforma desse aplicativo.</li><li>**Já definido:** o aplicativo já tem o valor que você está aplicando.</li><li>**Pré-requisito ausente:** por exemplo, o modelo probabilístico exige que o fingerprinting já esteja ativado.</li><li>**Período de espera:** o fuso horário não pode ser alterado novamente em até dois dias após uma alteração anterior. A dica de ferramenta mostra a data em que ficará disponível novamente.</li><li>**Sem permissão:** você não tem acesso de gerenciamento às Configurações do aplicativo para esse aplicativo.</li></ul> |
 | <span id="limits"></span>Limites | Não existe um limite prático para o número de aplicativos que você pode incluir em uma alteração em massa. |
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

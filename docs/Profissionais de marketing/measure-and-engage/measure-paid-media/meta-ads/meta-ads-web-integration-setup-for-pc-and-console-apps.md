@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Visão geral:** Aprenda como integrar o Meta Web para PC e aplicativos de console, além de configurar campanhas no Meta Web.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Essa integração está disponível apenas para aplicativos de PC e console como Steam, Epic ou Native PC. Para aplicativos mobile, consulte a página <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-integration-setup">de configuração de integração do Meta ads</Anchor>.
+
+<div id="overview" />
 
 ## Visão geral
 
@@ -33,9 +37,13 @@ Esse artigo contém informações relevantes e um passo-a-passo sobre como confi
 * [Configuração do Meta Web na AppsFlyer](#configuração-do-meta-web-na-appsflyer).
 * [Configuração de campanhas na Meta para aplicativos de PC e console](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#configuração-de-campanhas-no-meta-web-para-aplicativos-de-pc-e-console).
 
+<div id="prerequisite" />
+
 ### Pré-requisitos
 
 Antes de ativar a integração do Meta Web, certifique-se de que você possui uma [conta comercial no Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Ativando o parceiro na AppsFlyer
 
@@ -47,6 +55,8 @@ Antes de ativar a integração do Meta Web, certifique-se de que você possui um
 4. No separador **Integração**, ligue o **Ativar parceiro**.  
    **Nota: <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">O botão de alternância deve permanecer ativado (</Anchor><Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ligado</Anchor>) enquanto trabalhar com o parceiro.**
 5. Conclua a configuração usando as abas relevantes, conforme descrito na próxima seção.
+
+<div id="setting-up-meta-web-in-appsflyer" />
 
 ## Configuração do Meta Web na AppsFlyer
 
@@ -60,9 +70,13 @@ A integração com o Meta Web é compatível apenas com o envio de postbacks de 
 
 A aba **Integração** inclui várias seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 #### Ativar parceiro
 
 Para configurar a integração, você deve primeiro habilitar o botão **Ativar parceiro**.
+
+<div id="general-settings" />
 
 #### Configurações gerais
 
@@ -75,6 +89,8 @@ Para configurar a integração, você deve primeiro habilitar o botão **Ativar 
 * **Token de acesso** Insira o token de acesso. Para recuperá-lo, siga [essas instruções](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
 * **Limitar a utilização de informações pessoais dos usuários pelo Anúncios da Meta (CCPA):** Ative esta opção para permitir a compliance com as <Anchor target="_blank" href="/marketers/pt/docs/send-opendsr-api-requests">leis de proteção de dados</Anchor>.  
   **Observação:** O cumprimento dos regulamentos de privacidade da CCPA limita os dados provenientes de usuários do Anúncios da Meta com sede na Califórnia.
+
+<div id="enable-view-through-attribution" />
 
 #### Ative a atribuição de view-through
 
@@ -92,12 +108,16 @@ Quando um usuário clica em um anúncio do Meta Web e acessa uma landing page ha
 6. Vá até **Atribuição de view-through** e defina a **janela de lookback de view-through** desejada (de até 24 horas).
 7. Clique em **Salvar integração** para aplicar suas configurações.
 
+<div id="default-postbacks" />
+
 #### Postbacks padrão
 
 Postbacks de instalações são enviados automaticamente somente para o Meta Web. No campo **Para usuários de**, selecione uma das seguintes opções:
 
 * **Somente este parceiro** para garantir que os postbacks de eventos in-app sejam enviados exclusivamente para eventos realizados por usuários que se originaram desse parceiro.
 * **Todas as fontes de mídia, incluindo orgânicas,** garantem que os postbacks de eventos in-app sejam enviados para eventos realizados por usuários que vieram deste parceiro, outros parceiros ou de fontes orgânicas.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -160,6 +180,8 @@ Atualmente, as permissões não são concedidas ao Meta Web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-meta-web-for-pc-and-console-apps" />
+
 ## Configuração de campanhas no Meta Web para aplicativos de PC e console.
 
 **Ao configurar sua nova campanha**:
@@ -174,20 +196,28 @@ Atualmente, as permissões não são concedidas ao Meta Web.
   * Uma web landing page (recomendado quando o seu aplicativo está disponível em mais de uma plataforma)
   * Store URL (recomendado quando o seu aplicativo está disponível em uma única loja ou plataforma.
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Veja os dados de atribuição de web-to-app
 
 Embora os eventos de conversão baseados na web sejam enviados para a Meta sob o PID original `metaweb_int`, eles são relatados no dashboard da AppsFlyer e nos relatórios de dados brutos com o PID `Facebook Ads`. Isso se aplica tanto a eventos de conversão primários quanto a eventos de assistência de conversão.
 
 Essa visão unificada permite que você analise a performance de campanhas na web e no app em um só local, incluindo relatórios completos de custos na web e no mobile.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver no dashboard
 
 Todas as atribuições de web-to-app do Meta aparecem sob `Facebook Ads` nos dashboards de Visão Geral e de Atividade. Isso fornece uma visão única e consolidada dos resultados da campanha em várias plataformas. Use filtros e análises padrão para comparar o tráfego do app e da web dentro dos seus dados do Meta Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver em dados brutos e relatórios da API
 
 * **Exportações de dados brutos e respostas da API** incluem o PID `Facebook Ads` no campo `media_source` para a atividade web do Meta. Para verificar os detalhes da configuração da campanha web, consulte o campo `original_url`, que mostra `metaweb_int` como o PID usado durante a criação de campanhas web.
 * **Relatórios de postback** mostram `metaweb_int` como a fonte de mídia original para a qual o postback foi enviado.
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

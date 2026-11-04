@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo**: Entenda as diferenças entre a atribuição da AppsFlyer e de plataformas externas.
 
+<div id="overview" />
+
 ## Visão geral
 
 Devido a políticas de compartilhamento de dados dos canais de mídia, <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">nem todos os dados a nível do usuário são compartilhados com plataformas externas</Anchor> (como plataformas de marketing e analytics). Por isso, talvez existam discrepâncias na atribuição entre os dados exibidos em plataformas externas e os dados da AppsFlyer.
@@ -31,9 +33,13 @@ Devido a políticas de compartilhamento de dados dos canais de mídia, <Anchor t
 >
 > Os dados agregados e analíticos da AppsFlyer estão disponíveis sem limitação.
 
+<div id="postback-restrictions-on-third-party-platforms" />
+
 ## Restrições de postback em plataformas externas
 
 Quando se trata do envio de postbacks para plataformas externas, vemos diferentes níveis de restrições nos canais de mídia. Os postbacks podem não ser enviados, ser enviados sem atribuição ou enviados sem nenhuma restrição.
+
+<div id="types-of-postback-restrictions" />
 
 #### Tipos de restrições de postbacks
 
@@ -79,6 +85,8 @@ Todos os outros eventos que não são restritos ou cujo canal de mídia não foi
 </Accordion>
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th colspan="6">As restrições de postback se aplicam a todas as plataformas externas integradas com a AppsFlyer. Exemplos:</th></tr></thead><tbody><tr><td><span id="airship"></span>Airship</td><td>Amplitude</td><td>Batch</td><td>Braze</td><td>CleverTap</td><td>Nuvem</td></tr><tr><td><span id="convertro"></span>Convertro</td><td>deltaDNA</td><td>Eulerian</td><td>GameAnalytics</td><td>IBM UBX</td><td>Insider</td></tr><tr><td><span id="itunes"></span>iTunes</td><td>Kahuna</td><td>Leanplum</td><td>Liquid</td><td>Localytics</td><td>Luna labs</td></tr><tr><td><span id="Medialyzer"></span>Medialyzer</td><td>Mixpanel</td><td>MoEngage</td><td>mParticle</td><td>OneSignal</td><td>Rocketbox</td></tr><tr><td><span id="salesforce"></span>salesforce.png</td><td>marketing</td><td>MobilePush</td><td>Segmento</td><td>Spoteffects</td><td>Swrve</td></tr><tr><td><span id="tapcart"></span>Tapcart</td><td>Tealium</td><td>WebEngage</td><td>Winclap Analytics</td><td>Google Analytics 4</td><td> </td></tr></tbody></table>
+
+<div id="examples-of-discrepancies" />
 
 ## Exemplos de discrepâncias
 

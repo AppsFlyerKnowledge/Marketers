@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Visão geral:** Postbacks agregados do SKAdNetwork via API. Os dados são agregados usando a data de chegada do postback.
 
+<div id="skan-aggregated-postback-arrival-date-api" />
+
 ## API de data de chegada do postback agregado do SKAN
 
 A API retorna postbacks agregados do SKAdNetwork, usando o intervalo da data de chegada do postback.
@@ -38,6 +40,8 @@ A API retorna postbacks agregados do SKAdNetwork, usando o intervalo da data de 
 2. Forneça ao seu desenvolvedor o token da API para ser usado no cabeçalho de autenticação.
 3. Dê aos seus desenvolvedores os parâmetros para inserir quando fizerem a chamada da API, conforme descrito na seção que se segue. Os parâmetros determinam no que o relatório se foca, como ele é organizado e fornecem um período de tempo para o relatório.
 4. Peça ao seu desenvolvedor que siga a <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-postback-arrival-date-api-get">API de relatório de desempenho agregado do SKAN</Anchor> no hub do desenvolvedor.
+
+<div id="parameters" />
 
 #### Parâmetros
 
@@ -112,6 +116,8 @@ Exemplos: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/
 | Acesso do utilizador à conta | O token de autorização está disponível para um utilizador administrador no painel de controlo. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

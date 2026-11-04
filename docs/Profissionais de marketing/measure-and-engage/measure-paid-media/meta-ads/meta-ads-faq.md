@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Resumo**: encontre respostas para perguntas frequentes sobre o uso do Meta Ads na AppsFlyer.
 
+<div id="meta-ads-faq" />
+
 ## Perguntas frequentes sobre o Meta Ads
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -78,9 +80,13 @@ Como? Leia <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-netwo
 
 A Google Play Install Referrer API permite que os anunciantes recuperem dados de atribuição, como informações de campanha de instalações que se originaram na Google Play Store. Essa API deve ser <Anchor target="_blank" href="/marketers/pt/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">integrada ao seu aplicativo</Anchor> e envia dados de referrer quando o aplicativo é aberto pela primeira vez após a instalação. Os campos de atribuição estarão disponíveis nos relatórios de dados brutos da AppsFlyer com a correspondência `gp_referrer` quando a chave de descriptografia for enviada.
 
+<div id="meta-install-referrer" />
+
 #### Install Referrer da Meta
 
 O Install Referrer da Meta fornece metadados adicionais da campanha, armazenados localmente no dispositivo. Isso pode ser acessado através do [SDK da AppsFlyer](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer). Ele complementa o Install Referrer do Google Play, fornecendo dados mais detalhados, incluindo dados de clique e impressão, além de potencialmente incluir múltiplas sessões. A atribuição via Install Referrer da Meta usa tipos de correspondência como `fb_referrer` (Facebook) e `ig_referrer` (Instagram).
+
+<div id="campaign-attribution-fields" />
 
 #### Campos de atribuição de campanha
 
@@ -93,10 +99,14 @@ O Install Referrer da Meta fornece metadados adicionais da campanha, armazenados
 * Account ID
 * Canal
 
+<div id="sdk-and-setup-notes" />
+
 #### Notas e configuração do SDK
 
 * A versão 5.4.0+ do SDK da AppsFlyer é necessária para os dados de referrer do Google Play.
 * O suporte para referrer da Meta depende da configuração do SDK. Veja <Anchor target="_blank" href="/marketers/pt/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">esse boletim</Anchor> para mais detalhes de implementação.
+
+<div id="submitting-the-decryption-key" />
 
 #### Enviar Decryption Key
 
@@ -259,11 +269,15 @@ Você pode ter o pacote Zero, que não inclui essa atribuição.
 
   Você ainda pode recuperar os **nomes de campanha, adset e anúncios** via GCD, desde que <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#meta-ads">o contrato do Meta Advanced Mobile Measurement (AMM) esteja assinado</Anchor>. Nesse caso, você pode usar esses valores para aplicar sua própria **lógica de deep linking personalizada**.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > As políticas de compartilhamento de dados da Meta podem influenciar o nível de detalhes disponíveis através do GCD. Certifique-se de que o AMM esteja assinado para ampliar os dados disponíveis no nível das campanhas.
 
 </Accordion>
+
+<div id="meta-ads-cost-faq" />
 
 ## Perguntas frequentes sobre custos do Meta Ads
 
@@ -427,6 +441,8 @@ Se você deseja mudar para uma nova conta de anúncios, mas seu custo do Meta Ad
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## Perguntas frequentes sobre o SDK do Facebook
 
 <div id="who-needs-facebooks-sdk" />
@@ -455,6 +471,8 @@ Seu aplicativo requer o SDK do Facebook além do SDK da AppsFlyer para:
 * **Dados das campanhas de anúncios de produtos dinâmicos**: Você só pode obter dados para anúncios de produtos dinâmicos do SDK do Facebook.
 * **Outros recursos do Meta Ads**: Você pode precisar do SDK do Facebook por razões não relacionadas à atribuição, como autenticação, monetização de anúncios, compartilhamento social, convites do usuário, etc.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > As informações e recomendações acima sobre deep linking e deferred deep linking são baseadas em testes precisos que realizamos usando as ferramentas de demonstração/visualização disponíveis no Meta Ads, que usam um mecanismo diferente dos live ads.
@@ -474,6 +492,8 @@ Se você tiver <Anchor target="_blank" href="https://developers.facebook.com/doc
     Observe que, para habilitar a atribuição de SKAN para iOS 14.5+, você precisará <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">mapear eventos in-app para o Meta Ads</Anchor>.
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## Perguntas frequentes sobre atribuição com o Meta Ads
 
@@ -510,6 +530,8 @@ No entanto, você pode anunciar e registrar instalações para aplicativos fora 
 3. A página inicial deve incluir um botão **Baixar o aplicativo**, que se vincula diretamente ao mercado fora da loja em que o APK existe.
 4. O lead clica no botão e é redirecionado ao mercado fora da loja. Depois de concluir a instalação, a AppsFlyer atribui o usuário ao Meta Ads, por meio da MMP API.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > A mesma solução se aplica a aplicativos no Google Play e na App Store, que <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">exigem o uso de uma landing page</Anchor> antes do redirecionamento.
@@ -525,6 +547,8 @@ Para instruções específicas sobre a atribuição de aplicativos na Amazon, cl
 O Meta Ads identifica os usuários com base na conta do Meta Ads. Alguns usuários têm dispositivos iOS e Android associados à mesma conta.
 
 Se esse usuário clicar ou visualizar um anúncio do seu aplicativo em um dispositivo Android, mas instalá-lo em um dispositivo iOS, o Meta Ads se considera como responsável pela instalação. Como resultado, um nome de campanha do Android aparece no dashboard do iOS.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >

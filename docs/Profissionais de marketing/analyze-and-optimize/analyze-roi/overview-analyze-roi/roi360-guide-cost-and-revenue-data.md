@@ -29,11 +29,15 @@ x-zendesk:
 
 ![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
 
+<div id="overview" />
+
 ## Visão geral
 
 O ROI360 é um conjunto de ferramentas exclusivas de relatórios de custos e receitas, fornecendo dados mais precisos, o mais rápido possível.
 
 Combinando insights de custo e receita, você acessa uma visão completa do seu retorno do investimento em anúncios (ROAS) e retorno do investimento (ROI).
+
+<div id="cost-tools" />
 
 ### Ferramentas de custo
 
@@ -42,6 +46,8 @@ Antes conhecidas como Xpend, as ferramentas do ROI360 agregam e relatam dados de
 <table><thead><tr><th>Ferramenta</th><th>Descrição</th></tr></thead><tbody><tr><td><a href="./roi360-cost-aggregation-overview" target="_blank">Attributed cost</a></td><td><p><span>Dados de custo vinculados a atribuição, cliques e impressões no nível mais granular disponível.</span></p><p><span>Isso inclui acesso a mais de 80 integrações de API, permitindo que você se conecte facilmente a ad networks globais ou locais.</span></p></td></tr><tr><td><a href="./import-cost-data" target="_blank">File import</a></td><td><span>Usa o Cost Import para registrar dados de custo que não são recebidos via API.</span></td></tr><tr><td><a href="./incorporate-agency-fees-into-campaign-costs" target="_blank">taxas de agência</a></td><td><span>Os cálculos de taxas de agência são incluídos no seu custo.</span></td></tr><tr><td><a href="./set-up-and-use-roi360-cost-etl-reports" target="_blank">Cost ETL\*</a></td><td>Fornece dados de custo de campanha, atualizados 4 vezes ao dia, para seu bucket AWS S3 ou GCS, prontos para serem enviados nos sistemas de BI do anunciante.</td></tr><tr><td colspan="2">\* Disponível com o pacote avançado do ROI360</td></tr></tbody></table>
 
 **Atenção:** Você também pode agregar <Anchor target="_blank" href="/marketers/pt/docs/view-aggregated-cost-data-for-attribution-links">dados de custo relatados no link de atribuição</Anchor> sem o ROI360. No entanto, esse método está disponível apenas para o modelo de custo por instalação (CPI), não para outros modelos, como custo por aquisição (CPA), custo por clique (CPC) e custo por mil (CPM).
+
+<div id="revenue-tools" />
 
 ### Ferramentas de receita
 

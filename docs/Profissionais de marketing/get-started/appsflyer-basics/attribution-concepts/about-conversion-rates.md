@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **Visão geral:** encontre KPIs de taxa de conversão na AppsFlyer para entender os pontos fortes e fracos encontrados em diferentes estágios do seu funil de marketing.
 
+<div id="marketing-funnel-stages" />
+
 ## Estágios do funil de marketing
 
 Novos usuários passam por um funil de marketing, desde a primeira visualização do anúncio até a geração de receita. Cada um dos estágios do funil tem seu próprio nível de sucesso. Quanto mais progresso um usuário fizer, melhores serão os resultados para o anunciante mobile. A imagem a seguir apresenta os estágios do funil de marketing.
 
 ![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+
+<div id="marketing-funnel-stages-and-conversion-rates" />
 
 ## Estágios de funil de marketing e taxas de conversão
 
@@ -43,6 +47,8 @@ Veja a tabela a seguir para:
   * **AppsFlyer**: painel de visão geral e <Anchor target="_blank" href="/marketers/pt/docs/aggregated-and-analytics-reporting-overview">relatórios e análises agregados</Anchor>
   * **Loja de aplicativos**: os dados ficam disponíveis apenas na loja de aplicativos
 * Como os anunciantes podem usar as métricas para melhorar seus resultados de marketing
+
+<div id="marketing-funnel-stages-and-conversion-rates-1" />
 
 #### Estágios de funil de marketing e taxas de conversão
 
@@ -59,6 +65,8 @@ Veja a tabela a seguir para:
 | Taxa de conversão | **Taxa de cliques para instalar (instalações/cliques)\*100** | Mede quantos usuários instalaram o aplicativo depois de clicar no anúncio. | A AppsFlyer | <ul><li>Melhore o direcionamento do público.</li><li>Reduza o tempo de instalação do aplicativo.</li></ul> |
 | 6 | Evento in-app | O usuário executa uma ação no aplicativo, como uma compra. | A AppsFlyer |  |
 | Taxa de conversão | **Taxa de conversão de eventos (Event CVR)**<br /><br />**(eventos/instalações in-app)\*100** | <ul><li>Mede quantos usuários realizam um evento in-app após a instalação. <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#cvr-de-evento">[Artigo]</Anchor></li><li>Exemplos: registre-se, faça uma compra, complete um nível, etc.</li><li>Permite cálculos de custo por ação (CPA).</li></ul> | A AppsFlyer | <ul><li>Envie mensagens e calls to action no momento correto.</li><li>Melhore a interface do usuário.</li><li>Organize campanhas de retargeting usando deep links. <Anchor target="_blank" href="/marketers/pt/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Artigo]</Anchor></li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** **Em resumo:** Implemente código adicional no SDK da AppsFlyer para habilitar a atribuição de promoção cruzada.
 
+<div id="implementing-cross-promotion-attribution-in-the-sdk" />
+
 ## Implementação da atribuição de promoção entre aplicativos no SDK
 
 > 📘 **Note**
@@ -40,6 +42,8 @@ Por exemplo, usando o mapa de parâmetros, você pode definir a janela de lookba
 Para ver uma lista de parâmetros padrão que você pode passar ao método da API, consulte <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">Parâmetro de atribuição da AppsFlyer</Anchor>
 
 No primeiro lançamento do aplicativo promovido, todos os parâmetros originais podem ser acessados pela API de dados de conversão do SDK, para <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> ou <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor>.
+
+<div id="attribute-cross-promotion-clicks" />
 
 ### Atribuir cliques de promoção entre aplicativos
 
@@ -145,6 +149,8 @@ No iOS, um link de atribuição é gerado e retornado ao método `onOpenStoreLin
 >
 > Você pode adicionar qualquer um destes <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters#parâmetros-do-link-de-atribuição">parâmetros de link de atribuição</Anchor> ao link gerado.
 
+<div id="attribute-cross-promotion-impressions" />
+
 ### Atribuir impressões de promoção cruzada
 
 Para atribuir uma impressão, use a seguinte chamada de API. Certifique-se de usar o ID do aplicativo promovido da maneira como aparece no painel da AppsFlyer.
@@ -211,6 +217,8 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 
 </Tab>
 </Tabs>
+
+<div id="attribute-cross-promotion-with-non-native-platforms" />
 
 ### Atribuir promoção cruzada com plataformas não nativas
 

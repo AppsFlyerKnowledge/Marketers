@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **Em resumo:** o Convertro, um parceiro integrado da AppsFlyer, busca ser a principal ferramenta automatizada para que profissionais de marketing entendam de fato a performance de suas escolhas de publicidade e ajam com base nesses insights o mais rapidamente possível. Eles criaram uma tecnologia que não apenas coleta informações granulares sobre o caminho do cliente até a conversão, mas também é capaz de otimizar cientificamente o mix de marketing e entender automaticamente como realocar o gasto para maximizar o ROI.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-convertro" />
 
 ## Configuração do Convertro
 
@@ -54,9 +58,13 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na sua **primeira visita** aqui, você deverá ativar a opção abaixo. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -65,6 +73,8 @@ Na sua **primeira visita** aqui, você deverá ativar a opção abaixo. Clique n
 O Convertro se conecta à AppsFlyer por meio de uma URL da página, um ID do site e um nome do cliente exclusivos. Se você ainda não tiver esses dados, deverá obtê-los com o Convertro para continuar com a integração ou seguir as instruções abaixo.
 
 [![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
+
+<div id="obtaining-the-client-name-page-url--site-id-from-the-convertro-platform" />
 
 ### Como obter o "Nome do cliente, URL da página & ID do site" na plataforma Convertro
 
@@ -82,6 +92,8 @@ Para obter o nome do cliente, a URL da página e o ID do site, faça login no da
 
 ![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para instalações de usuário do Convertro. Use esta seção para definir o envio desses postbacks.
@@ -91,6 +103,8 @@ A AppsFlyer pode enviar postbacks automáticos para instalações de usuário do
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar postbacks ao Convertro para qualquer usuário que fizer o download do aplicativo ou selecione **Off**.
 
 Clique em **Guardar.**
+
+<div id="in-app-event-settings" />
 
 ### Configurações de eventos in-app
 

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** **Em resumo:** o compartilhamento avançado de dados de correspondência avançada permite que identificadores de usuário com hash, como e-mail e número de telefone, sejam encaminhados da AppsFlyer para ad networks selecionadas, permitindo que os Parceiros atribuam eventos a engajamentos com anúncios sem um Device ID.
 
+<div id="about-advanced-matching-data-sharing" />
+
 ## Sobre o compartilhamento avançado de dados de correspondência avançada
 
 À medida que os identificadores de dispositivo se tornam menos disponíveis, as ad networks dependem cada vez mais de dados primários para corresponder a engajamentos com anúncios. O compartilhamento avançado de dados de correspondência avançada resolve essa lacuna encaminhando identificadores com hash para Parceiros compatíveis, em um formato em conformidade com a privacidade.
@@ -30,6 +32,8 @@ O recurso é opcional e configurado por parceiro. Quando habilitado em uma netwo
 > 🚧 **Important**
 >
 > Todos os identificadores devem receber hash com SHA-256 antes de chegar à AppsFlyer, seja no dispositivo via SDK ou no servidor via API Server-to-Server (S2S). Dados em texto simples nunca são recebidos, armazenados nem encaminhados, e qualquer valor que falhe na validação é descartado na ingestão.
+
+<div id="supported-partners" />
 
 ### Parceiros compatíveis
 
@@ -53,6 +57,8 @@ O compartilhamento de dados de correspondência avançada está disponível para
 | Roku | rokuads\_int | E-mail com hash, número de telefone com hash |
 | Smadex | smadex\_int | E-mail com hash, número de telefone com hash, primeiro nome com hash, sobrenome com hash |
 
+<div id="the-end-to-end-flow" />
+
 ## O fluxo de ponta a ponta
 
 Veja o que acontece desde o momento em que um identificador é recuperado até o momento em que chega a um parceiro:
@@ -66,6 +72,8 @@ Veja o que acontece desde o momento em que um identificador é recuperado até o
 > 📘 **Note**
 >
 > Identificadores com hash são encaminhados apenas para parceiros em que o Compartilhamento de dados de correspondência avançada está habilitado. Quando a configuração estiver desativada para um parceiro, nenhum dado com hash será compartilhado com esse parceiro, mesmo que haja identificadores no evento.
+
+<div id="how-hashed-user-identifiers-reach-appsflyer" />
 
 ## Como os identificadores de usuário com hash chegam à AppsFlyer
 
@@ -122,12 +130,16 @@ Ao enviar eventos pela API S2S de eventos in-app, os identificadores devem ser n
 
 </Accordion>
 
+<div id="why-are-there-two-phone-number-fields" />
+
 ### Por que há dois campos de número de telefone?
 
 As networks fazem a correspondência de eventos comparando o hash que a AppsFlyer encaminha com o próprio hash armazenado do número de telefone do usuário. Como o mesmo número normalizado em um formato diferente gera um hash diferente, os dois lados precisam aplicar hash a partir do mesmo formato para obter uma correspondência. Como as networks normalizam números de telefone de maneiras diferentes e a AppsFlyer recebe valores já com Hashing, ambas as versões devem ser enviadas para cobrir todos os Parceiros suportados.
 
 * `phone_number_hashed`: para Meta e Snapchat. Formato de normalização antes do hashing: `16501234567`
 * `phone_number_e164_hashed`: para Google e TikTok. Formato de normalização antes do hashing: `+16501234567`
+
+<div id="normalize-and-hash-identifiers" />
 
 ## Normalizar e aplicar hash aos identificadores
 
@@ -202,6 +214,8 @@ Envie o ID de login do Facebook bruto, conforme fornecido pelo SDK de Login do F
 
 </Accordion>
 
+<div id="turn-on-advanced-matching-data-sharing" />
+
 ## Ative o Compartilhamento de dados de correspondência avançada
 
 O Compartilhamento de dados de correspondência avançada é controlado por parceiro e por aplicativo e deve ser habilitado explicitamente para cada network.
@@ -219,6 +233,8 @@ Quando o Compartilhamento de dados de correspondência avançada está ativado, 
 >
 > Desativar o Compartilhamento de dados de correspondência avançada interrompe imediatamente o compartilhamento de dados com hashing com esse parceiro. Outras configurações de integração, incluindo postbacks e dados de evento, não são afetadas.
 
+<div id="privacy-and-data-handling" />
+
 ## Privacidade e tratamento de dados
 
 Quando o Compartilhamento de dados de correspondência avançada é habilitado para um parceiro, a AppsFlyer começa a encaminhar identificadores de usuário com hashing para essa network junto com os dados do evento. Antes de ativá-lo, confirme o seguinte:
@@ -230,6 +246,8 @@ Quando o Compartilhamento de dados de correspondência avançada é habilitado p
 > 🚧 **Important**
 >
 > A AppsFlyer não processa nem armazena Informações de Identificação Pessoal (PII) em texto simples. Todos os campos de identificador são validados no momento da ingestão: valores que não estejam em conformidade com o formato SHA-256 são descartados e nunca encaminhados a nenhum parceiro.
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

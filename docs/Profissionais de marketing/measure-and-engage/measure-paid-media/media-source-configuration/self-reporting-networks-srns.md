@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **Resumo:** saiba mais sobre redes de autorrelato (SRNs)—atribuição, deep linking, implicações do iOS e FAQ.
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## SRNs integradas à AppsFlyer
 
 | **SRN** | **Logo** |
@@ -49,6 +51,8 @@ x-zendesk:
 
 **Atenção:** As SRNs têm <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention">restrições de uso e retenção de dados a nível de usuário.</Anchor>
 
+<div id="attribution" />
+
 ## Atribuição
 
 Ao contrário de não-SRNs (ad networks), que usam links de atribuição para relatar eventos à AppsFlyer, os SRNs se autoatribuem usando o ID do dispositivo quando notificados de uma instalação pela AppsFlyer. Para aplicativos no iOS, a <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide">SKAN</Anchor> e o <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">framework de Privacidade Avançada Agregada</Anchor> são usados para atribuição.
@@ -57,6 +61,8 @@ A atribuição da AppsFlyer para SRNs e não SRNs é baseada em:
 
 * Metodologias último toque e multitoque.
 * Lógica de atribuição padrão da AppsFlyer para sequenciar a impressão relevante e os dados de clique.
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### Como a atribuição funciona com SRNs?
 
@@ -68,9 +74,13 @@ As SRNs relatam eventos, como novas instalações e eventos in-app, para a AppsF
 
 Depois que a AppsFlyer realiza a atribuição, <Anchor target="_blank" href="/marketers/pt/docs/user-level-data-retention#períodos-de-retenção-de-dados-de-parceiros">os postbacks in-app são enviados ao SRN durante o período de retenção de dados do parceiro.</Anchor>
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### Como funciona a atribuição para SRNs—Avançadas?
 
 As SRNs avançadas fazem a atribuição da mesma forma que as SRNs. No entanto, SRNs avançadas também podem atribuir engajamentos quando não há device ID (IDFA)—usando a estrutura de <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#privacidade-avançada-agregada">Privacidade Avançada Agregada</Anchor>. Em certos casos, a atribuição é realizada usando <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#device-id-matching">ID matching</Anchor> com consentimento duplo e, para algumas SRNs avançadas, por meio de <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#probabilistic-modeling">modelagem probabilística</Anchor> através de comunicação por API para cliques e impressões.
+
+<div id="install-attribution" />
 
 ### Atribuição de instalação
 
@@ -83,6 +93,8 @@ Quando um aplicativo é inicializado pela primeira vez:
   * O usuário tem um advertising ID.
 * Se ambas as condições forem cumpridas, a AppsFlyer consulta SRNs usando o advertising ID.
 * A AppsFlyer executa a atribuição após considerar as reivindicações da SRN.
+
+<div id="install-attribution-examples" />
 
 #### Exemplos de atribuição de instalação
 
@@ -118,6 +130,8 @@ A **AppsFlyer** atribui a instalação à Network C porque ela teve o último cl
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### Janelas de atribuição
 
 As janelas de atribuição incluem lookback e view-through. Algumas SRNs cobram anunciantes por uma instalação baseada no Custo por Impressão (em CPM) e no Custo por ação (CPA)—elas são baseadas em cliques ou impressões que ocorrem dentro de um período de 1 a 28 dias.
@@ -130,6 +144,8 @@ A **AppsFlyer** atribui instalação, atividade, Custo efetivo por instalação
 * Porquê? Porque a AppsFlyer reporta eCPI e eCPA reais com base em termos definidos pelo anunciante.
 * As SRNs podem se beneficiar a curto prazo, pois geralmente configuram suas próprias condições de pagamento. Mas os anunciantes corrigem isso usando provedores de atribuição externos.
 
+<div id="deep-linking-with-srns" />
+
 ## Deep linking com SRNs
 
 Para que os usuários possam abrir o aplicativo quando o link é clicado, você só precisa configurar o esquema de App Links/Universal Links/URI. No entanto, para executar deep links ou deferred deep linking para uma página ou atividade específica em seu aplicativo, as SRNs usam seus próprios métodos, sem envolver o método de deep linking da AppsFlyer.
@@ -141,6 +157,8 @@ Então, como pode realizar deep linking dos seus usuários e obter dados relevan
 <Accordion title="Deep linking direto">
 
 Quando um dispositivo de usuário executa deep linking, o deep linking direto com SRNs é feito sem chamar o método de deep linking da AppsFlyer. No exemplo abaixo, os usuários existentes que clicam em um anúncio são redirecionados para a atividade diretamente usando os métodos do Facebook, enquanto os novos usuários obtêm a mesma experiência usando os dados de conversão da AppsFlyer. Saiba como o <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta ads usa o OneLink para deep linking</Anchor>
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -165,6 +183,8 @@ No entanto, com outras SRNs, os parâmetros de deep linking regulares da AppsFly
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## Implicações para iOS
 
 A maioria das SRNs é compatível com a SKAdNetwork e tem a integração necessária com a AppsFlyer.
@@ -174,6 +194,8 @@ A maioria das SRNs é compatível com a SKAdNetwork e tem a integração necess�
 <Accordion title="Atribuição SRN no iOS 14.5">
 
 A partir do iOS 14.5, quando os usuários dão o consentimento à ATT nos aplicativos do anunciante e do publisher (<Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary#duplo-consentimento">consentimento duplo</Anchor>), as instalações SRN, que são registradas no <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">dashboard da SKAdNetwork</Anchor>, também são exibidas nos dashboards tradicionais.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -192,12 +214,16 @@ SRNs que recebem postbacks de eventos dependem da inclusão do device ID no post
 * Uma diminuição no número de postbacks de eventos enviados para SRNs
 * Discrepâncias no número de postbacks de eventos entre SRNs e a AppsFlyer — que registra todos os eventos.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > * Se não houver IDFA, postbacks para instalações, aberturas de aplicativos ou eventos in-app não serão enviados às SRNs. [No entanto, em alguns casos, a AppsFlyer envia postbacks para SRNs mesmo sem o advertising ID](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid).
 > * As ad networks de cliques não são afetadas, pois usam suas próprias IDs de transação, e não IDs de dispositivo, para autoatribuir informações de postback de eventos.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Perguntas frequentes
 
@@ -236,6 +262,8 @@ Cenário: uma SRN na plataforma da AppsFlyer está habilitada para uma campanha
 
 **Conclusão:** receber eventos de retargeting de uma campanha de aquisição de usuários é um desperdício.
 
+<div id="is-mistargeting-a-problem" />
+
 #### O erro de direcionamento é um problema?
 
 Analistas de dados da AppsFlyer verificaram as campanhas de **aquisição de usuários** do Meta ads durante um determinado mês.
@@ -246,6 +274,8 @@ Analistas de dados da AppsFlyer verificaram as campanhas de **aquisição de usu
 * **Conclusão: em campanhas de aquisição de usuários dessa SRN, 1 a cada 10 usuários segmentados já é um usuário existente.**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### Resolvendo o problema de erros de segmentação
 

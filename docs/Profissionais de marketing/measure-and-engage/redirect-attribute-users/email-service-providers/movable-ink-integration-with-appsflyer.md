@@ -23,9 +23,13 @@ x-zendesk:
 
 ## ![53374 imagem da KB do Movable Ink.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
 
+<div id="about-the-integration" />
+
 ## Aba de integração
 
 O Movable Ink é um parceiro de otimização de conteúdo dinâmico que oferece experiências personalizadas aos clientes em vários canais, como e-mails, notificações push e SMS. A integração entre a AppsFlyer e o Movable Ink permite criar jornadas exclusivas e personalizadas com tecnologia de IA em suas campanhas de marketing e no conteúdo in-app.
+
+<div id="set-up-the-integration" />
 
 ## Configurando o Amplitude
 
@@ -72,12 +76,16 @@ O Movable Ink é um parceiro de otimização de conteúdo dinâmico que oferece 
 | `{{pid_value}}` | ID do ESP / canal de mídia | Nome do ESP |  | Interface do usuário da AppsFlyer |
 | `{{mi_link_from_creative<br /><br />_tag}}` | O link clickthrough HREF da tag criativa da Movable Ink. Disponível na página Finish & Export (consulte a imagem na etapa 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | O link deve ser codificado. | Movable Ink |
 
+   <div id="note" />
+
    > 📘 **Atenção**
    >
    > Se os valores de `af_android_url`, `af_ios_url` e `af_web_dp` forem idênticos, você poderá encurtar o link usando `af_r`. Se houver outro parâmetro com o mesmo valor, peça ao gerente de sucesso do cliente da AppsFlyer para ativar o recurso de duplicação de parâmetros.
 
 6. Use o novo link em sua campanha.  
    **Observação:** O link HREF do Movable Ink que você copiou e colou no seu link deve ser codificado. No entanto, **se você estiver usando o link em uma campanha de e-mail pelo seu ESP, os parâmetros do ESP não deverão ser codificados**.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

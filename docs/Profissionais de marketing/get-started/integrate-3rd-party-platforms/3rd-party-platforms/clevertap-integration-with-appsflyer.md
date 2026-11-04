@@ -27,9 +27,13 @@ x-zendesk:
 
 <Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-clevertap" />
 
 ## Configurando o CleverTap
 
@@ -50,16 +54,22 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
 **Token da conta**
 
 O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, região, código de acesso da conta e ID da conta. Se você ainda não tiver esses dados, deverá obtê-los com o CleverTap para continuar com a integração ou seguir as etapas abaixo.
+
+<div id="important-1" />
 
 > 🚧 **Importante!**
 >
@@ -69,6 +79,8 @@ O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, reg
 > * No SDK do AppsFlyer, defina o valor do ID de usuário do cliente (<Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid#configuração-do-cuid">iOS, Android</Anchor>). Consulte a [documentação do CleverTap](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration) para ver as orientações sobre qual parâmetro é recomendado usar como Customer User ID. Observe que, se o Customer User ID estiver vazio, os postbacks não serão enviados ao CleverTap.
 
 ![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
+
+<div id="obtain-clevertap-account-token" />
 
 ### Obtenha o token da conta do CleverTap
 
@@ -83,6 +95,8 @@ O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, reg
 2. Para revelar os valores, clique nos ícones de 'olho' ao lado de cada campo.
 3. Copie os valores e cole-os na página CleverTap do AppsFlyer.
 
+   <div id="note" />
+
    > 📘 **Nota**
    >
    > * A região depende da URL do dashboard do CleverTap da sua conta:
@@ -92,6 +106,8 @@ O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, reg
 
 4. Finalize a integração de acordo com a <Anchor target="_blank" href="https://developer.clevertap.com/docs/appsflyer#section-step-2-integration">documentação da CleverTap</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para a CleverTap após instalações de usuários. Use essa seção para definir a fonte de usuários para a qual os postbacks são enviados. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#default-postbacks">postbacks padrão</Anchor>.
@@ -99,6 +115,8 @@ A AppsFlyer pode enviar postbacks automáticos para a CleverTap após instalaç�
 ![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
 
 **To send postbacks for any user that downloads the app to CleverTap:** select **All media sources, including organic**.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -152,6 +170,8 @@ Os dados de receita de anúncios não se aplicam a este parceiro.
 As permissões não estão disponíveis para a CleverTap.
 
 </Accordion>
+
+<div id="measure-clevertap-owned-media" />
 
 ## Meça as mídias próprias da CleverTap
 

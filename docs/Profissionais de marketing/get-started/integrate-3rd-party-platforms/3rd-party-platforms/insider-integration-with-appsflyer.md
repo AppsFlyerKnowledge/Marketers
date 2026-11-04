@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-insider" />
 
 ## Configurando o Insider
 
@@ -47,10 +51,14 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 A opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -60,11 +68,15 @@ O Insider se conecta com a AppsFlyer por meio de um identificador exclusivo do p
 
 ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para o Insider após instalações de usuários. Use essa seção para definir a fonte de usuários para a qual os postbacks são enviados. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#default-postbacks">postbacks padrão</Anchor>.
 
 **Para enviar postbacks para qualquer usuário que fizer o download do aplicativo para o Insider**, selecione **Todos os canais de mídia, incluindo orgânico**.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -87,6 +99,8 @@ Nesta seção, você mapeia eventos da AppsFlyer com o parceiro através de post
    * **Com valores e sem receita:** envia todos os parâmetros excluindo o valor da receita.
    * **Valores e receita**: envia todos os parâmetros do evento, inclusive o valor da receita (se existir no evento).
 8. Para concluir a configuração de integração, clique em **Salvar integração**.
+
+<div id="note" />
 
 > 📘 **Atenção**
 >

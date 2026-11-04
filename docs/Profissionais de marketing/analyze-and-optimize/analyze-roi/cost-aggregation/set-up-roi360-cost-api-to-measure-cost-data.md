@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Obtenha dados agregados de custo de marketing, incluindo métricas de performance de LTV (Lifetime Value) relacionadas a custo, usando a API de custo no nível da conta da fonte de mídia.
 
+<div id="overview" />
+
 ## Retorna um objeto JSON com os dados brutos de consentimento do DMA conforme enviados do anunciante para a AppsFlyer
 
 O ROI360 fornece dados agregados de custo de marketing, incluindo métricas de performance de LTV relacionadas a custo, no nível da conta de anúncios.
@@ -34,9 +36,13 @@ As integrações de custos são configuradas em **Configurações de custo**, em
 
 As integrações de custo também podem ser criadas e editadas na guia **Custo** do Partner Marketplace. Qualquer ponto de entrada gera a mesma integração no nível da conta.
 
+<div id="note" />
+
 > 📘 **Importante!**
 >
 > O acesso a **Configurações de custo** é controlado de acordo com as permissões de cada função. Se você não conseguir acessar as **configurações de custo**, peça ao seu administrador para atualizar suas permissões na página **Gerenciamento do usuário**. No caso, você precisa de permissão para gerenciar **conexões de custo**.
+
+<div id="create-a-new-api-cost-integration" />
 
 ## Criar uma nova integração de custos de API
 
@@ -73,11 +79,15 @@ Se o canal de mídia exigir uma etapa adicional, continue para a [Etapa 3](#addi
 
 Alguns canais de mídia exigem uma etapa adicional depois que você seleciona os aplicativos. Adicione o mapeamento aos nomes de pacote e IDs de bundle ou aos IDs de site.
 
+<div id="map-apps-to-package-names-or-bundle-ids" />
+
 #### Mapeie aplicativos para nomes de pacote ou IDs de bundle
 
 Há canais de mídia que identificam aplicativos pelo nome do pacote do Android ou pelo ID de bundle do iOS, por exemplo, a AppLovin.
 
 Como parte da configuração de custo, depois que você selecionar seus aplicativos, insira o nome exato do pacote ou o ID de bundle de cada aplicativo, como aparece no sistema do canal de mídia. Todo aplicativo exige um valor de mapeamento. Clique em **Guardar integração**.
+
+<div id="map-apps-to-site-ids" />
 
 #### Mapeie aplicativos para IDs de site
 
@@ -92,15 +102,21 @@ Depois que você selecionar seus aplicativos, escolha um parâmetro de ID de sit
 
 Para substituir o padrão em um aplicativo específico, selecione um parâmetro diferente no menu suspenso **ID de site** desse aplicativo. Use isso quando o ID de site de um aplicativo estiver formatado de forma diferente no sistema do canal de mídia. Clique em **Guardar integração**.
 
+<div id="note-1" />
+
 > 📘 **Importante!**
 >
 > O mapeamento de ID de site garante que as macros de ID de site do link de atribuição da AppsFlyer correspondam ao valor que o canal de mídia espera. Se o seu link de atribuição usar macros diferentes do mapeamento que você selecionar, os dados de ID de site não serão preenchidos corretamente.
+
+<div id="select-which-ad-account-to-pull-cost-from" />
 
 #### Selecione de qual conta de anúncio extrair o custo
 
 Em alguns canais de mídia, como o TikTok, um login pode ter acesso a várias contas de anúncio. Depois de fazer login no canal de mídia, você precisa selecionar a conta de anúncio específica.
 
 </Accordion>
+
+<div id="edit-and-delete-an-integration" />
 
 ## Editar e excluir uma integração
 
@@ -139,6 +155,8 @@ A coleta de dados de custo é interrompida imediatamente. Os dados históricos d
 As integrações de custos são desconectadas automaticamente quando um aplicativo é transferido para outra conta.
 
 </Accordion>
+
+<div id="view-cost-api-status" />
 
 ## Ver o status da API de custo
 
@@ -200,11 +218,15 @@ A tabela a seguir lista todos os status de integração de custos e o que cada u
 
 </Accordion>
 
+<div id="cost-integration-and-agencies" />
+
 ## Integração de custos e agências
 
 Se um anunciante usar uma agência para gerenciar suas campanhas, recomendados que a agência, e não o anunciante, integre-se com os parceiros relevantes. Caso contrário, se tanto o anunciante como a agência se integrarem a um parceiro usando as mesmas credenciais para o mesmo app, os dados de custo são duplicados.
 
 Se um anunciante parar de trabalhar com uma agência, os dados de custo ainda serão extraídos se a agência ainda tiver custo configurado para o aplicativo. O anunciante deve pedir à agência para excluir a integração de custos dela para que esses dados deixem de ser extraídos.
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

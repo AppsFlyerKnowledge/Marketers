@@ -28,6 +28,8 @@ x-zendesk:
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
+<div id="finding-the-best-ios-14-campaign-performance-metrics" />
+
 ## Como encontrar as melhores métricas de desempenho da campanha do iOS 14+
 
 A partir do iOS 14+, as estruturas tanto da atribuição SKAN quanto da <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">Atribuição da AppsFlyer</Anchor> geram métricas de desempenho de campanha. Elas atribuem de maneira diferente, têm características e limitações diferentes, e muitas vezes ocorrem discrepâncias entre elas. Por exemplo, o SKAN não contém métricas de campanhas do Apple Search Ads nem de mídia própria. Por outro lado, as métricas da AppsFlyer de SRNs não incluem instalações de usuários que não consentem. Além disso, o SKAN mede o desempenho durante uma janela inicial pós-instalação de 1 a 3 dias, enquanto a AppsFlyer mede o valor da vida útil (<Anchor target="_blank" href="/marketers/pt/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV</Anchor>).
@@ -98,6 +100,8 @@ Este artigo contém orientações baseadas em nosso conhecimento de mercado e ob
 | Exemplo | ![mceclip1.png](https://files.readme.io/98fc80d1e995ba8ef0cce267fa12f22d48a77d7e25db4add1108144c6de7136d-4406111715217.png)<ul><li>As instalações reais são determinadas usando a estrutura com mais instalações.</li><li>O eCPI é calculado usando a fórmula: custo/número de instalações.</li></ul> |
 
 </Accordion>
+
+<div id="using-side-by-side" />
 
 ## Usando lado a lado
 

@@ -32,6 +32,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## Relatórios de Receita de Anúncios ao Nível de Impressão via API SDK
 
 **Opções de Relatório de Receita de Anúncios**
@@ -46,6 +48,8 @@ A receita de anúncios é reportada à AppsFlyer com granularidade agregada (via
 
 * As impressões de receita de anúncios são recolhidas e processadas na AppsFlyer, mas não são consideradas no seu pacote in-app.
 * Existe um <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-unity">plugin de receita de anúncios da AppsFlyer para Unity</Anchor>.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### Relatório de Receita de Anúncios Utilizando a API SDK
 
@@ -82,6 +86,8 @@ A **API SDK envia os dados de receita para a plataforma no momento em que o anú
 * **O tópico de nível de impressão do DataLocker à 1h e, depois disso, a cada 1 hora adicional,**
 * **Os relatórios de Atividade e Coorte da AppsFlyer às 5h UTC, e depois a cada 4 horas.**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## Implementação da API SDK de Receita de Anúncios da AppsFlyer
 
 **Para implementar a API SDK de receitas de anúncios da AppsFlyer**:
@@ -92,6 +98,8 @@ A **API SDK envia os dados de receita para a plataforma no momento em que o anú
 4. Teste sua integração: depois de integrar, verifique se os eventos de receita de anúncios estão sendo recebidos usando um dos métodos a seguir:
    * No <Anchor target="_blank" href="/marketers/pt/docs/testing-the-sdk-integration-for-marketers#view-live-events">visualizador de Eventos em tempo real</Anchor>, verifique se os eventos de receita de anúncios aparecem em tempo real. Observe que o visualizador de Eventos em tempo real exibe apenas eventos enviados por dispositivos de teste registrados.
    * Na página **Configurações de receita**, edite a integração de receita de anúncios relevante e clique em **Testar conexão** para verificar se algum evento de receita de anúncios válido foi processado recentemente. Para mais informações, consulte <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Conectar-se a parceiros integrados de receita de anúncios</Anchor>.
+
+<div id="traits-and-limitations" />
 
 ## Características e Limitações
 

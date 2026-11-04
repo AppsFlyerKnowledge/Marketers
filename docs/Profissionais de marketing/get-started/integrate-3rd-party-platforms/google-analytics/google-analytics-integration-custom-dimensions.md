@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** Configure a integração com o Google Analytics usando dimensões personalizadas.
 
+<div id="custom-dimensions-on-google-analytics" />
+
 ## Dimensões personalizadas no Google Analytics
 
 Há outro método para enviar os dados de atribuição do AppsFlyer ao Google Analytics, que é configurado no GA e não no dashboard do AppsFlyer.
@@ -49,9 +51,13 @@ Os anunciantes que usam a nova <Anchor target="_blank" href="/marketers/pt/docs/
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">SDK do GA para Android</Anchor>
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">SDK do GA para iOS</Anchor>
 
+<div id="setting-media-source-as-a-custom-dimension-on-google-analytics" />
+
 ### Definir o canal de mídia como uma dimensão personalizada no Google Analytics
 
 O Google Analytics tem uma ferramenta poderosa para criar segmentação no nível do usuário chamada dimensões personalizadas. Os valores das dimensões personalizadas são enviados de dispositivos mobile, e seus relatórios são gerados com base nessas dimensões no dashboard do Google Analytics.
+
+<div id="step-1-define-it-on-google-analytics" />
 
 ### Etapa 1: Defina no Google Analytics
 
@@ -67,6 +73,8 @@ O Google Analytics tem uma ferramenta poderosa para criar segmentação no níve
    ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
 
    Repita esta etapa e crie outra dimensão e chame-a de **Campanha da AppsFlyer**
+
+<div id="step-2-setting-and-sending-the-data-from-the-app" />
 
 ### Etapa 2: Configurando e enviando os dados do aplicativo
 
@@ -127,6 +135,8 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 </Tab>
 </Tabs>
+
+<div id="step-3-see-the-results-in-google-analytics" />
 
 ### Etapa 3: Veja os resultados no Google Analytics
 

@@ -28,6 +28,8 @@ x-zendesk:
 
 > **Em resumo:** As regras de taxa de agência fazem parte do recurso premium ROI360 da AppsFlyer, que permite que os anunciantes adicionem as taxas percentuais que as agências cobram pelo tráfego para que possam ver o custo total da campanha.
 
+<div id="overview" />
+
 ## Escritórios
 
 As regras de taxa de agência são definidas pelo anunciante (com privilégios de administrador da conta AppsFlyer) no Builder de regras, usando condições personalizadas que adicionam percentuais de taxa ao custo das campanhas de agência para aplicativos específicos e/ou canais de mídia.
@@ -40,6 +42,8 @@ As regras de agência ajudam os anunciantes a:
 * Economizar tempo e esforço manual para gerar relatórios sobre dados de custo
 * Gerenciar a performance da agência
 * Analisar com precisão os dados históricos de custo
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -82,6 +86,8 @@ A interface de usuário do criador de regras foi projetada para criação de reg
 8. Insira o percentual da taxa de agência. Pode ser um número entre 100 e -100 (para refletir descontos ou reembolsos da agência).
 9. Clique em **Criar regra**.
 
+<div id="note" />
+
 > 📘 **Observação:**
 >
 > Os erros a seguir podem impedir a criação da sua regra:
@@ -107,6 +113,8 @@ Ao editar ou excluir uma regra, os dados calculados anteriormente (até 90 dias 
 1. Na [lista de regras](/docs/incorporate-agency-fees-into-campaign-costs#view-rule-list), passe o cursor sobre a regra que você quer editar, duplicar ou excluir.
 2. Clique no **Menu** ⋮ no lado direito.
 3. Selecione a ação que você deseja realizar.
+
+<div id="note-1" />
 
 > 📘 **Observação:**
 >

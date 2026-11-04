@@ -38,15 +38,21 @@ As páginas iniciais são uma técnica muito comum entre os profissionais de mar
 
 No entanto, para a aquisição de usuários de mobile, a estratégia da página inicial tem vantagens e desvantagens.
 
+<div id="the-upsides" />
+
 #### As vantagens:
 
 * Os leads, que eventualmente instalam, devem estar mais engajados com o aplicativo.
 * Os serviços mais complicados (por exemplo, serviços financeiros) exigem mais explicações para converter seus leads, o que é possível nas páginas iniciais.
 
+<div id="the-downsides" />
+
 #### As desvantagens:
 
 * O funil mais longo reduz o número final de leads convertidos.
 * É mais tecnicamente desafiador atribuir.
+
+<div id="the-challenges-of-mobile-attribution-on-landing-pages" />
 
 ## Os desafios da atribuição mobile nas páginas iniciais
 
@@ -54,6 +60,8 @@ No entanto, para a aquisição de usuários de mobile, a estratégia da página 
 * **O modelo de atribuição de último clique pode causar a perda da atribuição correta**, se a página inicial tiver seus próprios links de atribuição.
 * **Os visitantes diretos do site são registrados como orgânicos**, a menos que a página inicial tenha seus próprios links de atribuição.
 * **Os visitantes do desktop são registrados como orgânicos**, a menos que a página inicial tenha um método de registrar suas conversões em usuários móveis.
+
+<div id="the-solution" />
 
 ## A solução
 
@@ -63,6 +71,8 @@ Em alguns casos, você também precisa fazer alguns ajustes em suas campanhas.
 
 Os cenários abaixo abrangem os requisitos para todos os casos de canal de mídia possíveis.
 
+<div id="landing-page-scenarios" />
+
 ## Cenários de páginas iniciais
 
 Siga as instruções de implementação abaixo **para todos os canais de mídia** enviando leads para suas página iniciais.
@@ -71,6 +81,8 @@ Siga as instruções de implementação abaixo **para todos os canais de mídia*
 
 <Accordion title="Meta ads: atribuição multiplataforma">
 
+<div id="description" />
+
 #### Descrição:
 
 O Meta Ads é um SRN, que não usa links de atribuição externa.
@@ -78,6 +90,8 @@ O Meta Ads é um SRN, que não usa links de atribuição externa.
 Após a primeira inicialização do aplicativo, a AppsFlyer consulta os anúncios do Meta se o usuário já engajou anteriormente (nos últimos 28 dias) com um anúncio no aplicativo do Facebook. Se sim, o Meta ads faz a auto-atribuição.
 
 O Meta ads também faz atribuição multiplataforma, o que significa que o usuário pode interagir com qualquer tipo de campanha, mobile ou não, em qualquer plataforma, para ser autoatribuído pelo Meta ads.
+
+<div id="conclusion" />
 
 #### Conclusão:
 
@@ -89,11 +103,15 @@ No entanto, quando os usuários optam por não compartilhar o ID do dispositivo,
 * Os novos usuários que compartilharem o ID do dispositivo serão atribuídos corretamente ao Meta ads.
 * Novos usuários que não compartilham seu ID de dispositivo seriam atribuídos a "Facebook\_LP".
 
+<div id="instructions" />
+
 #### Instruções:
 
 1. Na sua conta do Meta ads, crie uma **campanha «Tráfego» ou «Conversões» com a atribuição mobile ativada**, enviando leads para a sua página inicial.
 2. Botão de download do Android da página inicial - link direto para o Google Play.
 3. Botão de download do iOS da páginal inicial - link direto para o iTunes (OU link de atribuição **sem o ID do dispositivo**).
+
+<div id="what-the-script-does" />
 
 #### O que o script faz
 
@@ -107,11 +125,15 @@ No script, procure um método chamado***isFacebook()*** para saber mais sobre o 
 
 <Accordion title="Google Ads: GCLID + upload de conversão off-line">
 
+<div id="description-1" />
+
 #### Descrição:
 
 O processo usual para a atribuição de instalações de campanhas do Google Ads requer que os leads que clicam sejam redirecionados para o URL da página da loja do aplicativo.
 
 Portanto, ao redirecionar leads do Google Ads para uma página inicial, use um mediador para se conectar entre a instalação mobile e o clique original na campanha do Google Ads não mobile.
+
+<div id="conclusion-1" />
 
 #### Conclusão:
 
@@ -121,11 +143,15 @@ A primeira parte se ocupa de **atribuir na AppsFlyer** os usuários de mobile qu
 
 A segunda parte se ocupa de **notificar o Google Ads** sobre essas instalações para dispositivos mobile, usando o método de upload de conversões offline do Google.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Esta solução GCLID não é oficialmente apoiada ou recomendada pelo Google.
 > Caso o Google descontinue o parâmetro GCLID, alteraremos o script para que aceite as mudanças.
 > Recomendamos seguir este artigo, clicando no botão ***Seguir*** no topo do artigo, para ser informado quando houver uma atualização do artigo ou script.
+
+<div id="instructions-1" />
 
 #### Instruções:
 
@@ -158,6 +184,8 @@ As conversões podem ser carregadas manualmente ou por meio de uma API do Adword
 
 Você pode exportar os CSVs com essas informações da sua conta da AppsFlyer ou obter esses dados da API Push em tempo real para cada instalação.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > Você também pode ver as palavras-chave que seus usuários pesquisaram nos dados brutos da AppsFlyer de maneira semelhante à obtenção do GCLID:
@@ -169,6 +197,8 @@ Você pode exportar os CSVs com essas informações da sua conta da AppsFlyer ou
 >    Exemplo de URL do OneLink: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
 >
 > A função JS abaixo já contém o código para analisar o parâmetro keyword também.
+
+<div id="what-the-script-does-1" />
 
 #### O que o script faz
 
@@ -182,16 +212,22 @@ No script, procure por**gclidValue** para saber como o script detecta usuários 
 
 <Accordion title="Outros SRNs: adicionar parâmetro">
 
+<div id="description-2" />
+
 #### Descrição:
 
 Outro <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns#srns-integradas-à-appsflyer">SRNs</Anchor>, por exemplo, Snapchat ou Twitter, não são multiplataforma como o Meta Ads e exigem um pouco de trabalho para que seus usuários mobile sejam atribuídos a eles.
 
 Suas campanhas com outros SRNs levam seus usuários à página inicial, e você é cobrado de acordo com os cliques, sem nenhuma relação com qualquer usuário mobile derivado.
 
+<div id="conclusion-2" />
+
 #### Conclusão:
 
 Ao definir o URL da página inicial de uma campanha em SRNs (além do Meta Ads e do Google Ads), adicione um parâmetro de ID do parceiro ao URL, que indica o SRN original.  
 A página inicial lança um javaScript (veja abaixo) que analisa esse parâmetro e cria um URL do OneLink, que tem o valor de ID do parceiro. Quando os usuários de mobile clicam no OneLink e instalam, eles são atribuídos ao canal de mídia indicado.
+
+<div id="instructions-2" />
 
 #### Instruções:
 
@@ -212,6 +248,8 @@ Se você especificar o nome real do SRN, por exemplo, twitter\_int, um postback 
 
 O próprio script contém lógica para evitar que você use esses nomes. Procure `var SRNs` no script. Você deve ver uma lista de nomes SRN e uma condição que verifica se `pidValue` é qualquer um desses nomes. Remova essa lógica depois de terminar de testar o script.
 
+<div id="note-1" />
+
 > 📘 **Observação**
 >
 > Se você estiver enviando usuários para sua página inicial, recomendamos que inclua o seguinte parâmetro no URL da sua página inicial:
@@ -221,6 +259,8 @@ O próprio script contém lógica para evitar que você use esses nomes. Procure
 > * Para Doubleclick: use "***&af\_pid=doubleclick\_lp***"
 > * Para post do Meta ads (não pago): use "***&af\_pid=fbpost\_lp***"
 > * Para Oath (anteriormente Yahoo Gemini): use "***&af\_pid=oath\_lp***"
+
+<div id="what-the-script-does-2" />
 
 #### O que o script faz
 
@@ -234,17 +274,23 @@ Para saber mais sobre o que o script faz, procure **pidValor** no script.
 
 <Accordion title="Links de atribuição: redirecionar com af_r">
 
+<div id="description-3" />
+
 #### Descrição:
 
 Os links de atribuição são usados para qualquer canal de mídia, que não seja uma SRN. Isso inclui milhares de parceiros integrados e qualquer mídia própria que você deseja atribuir.
 
 Felizmente, a solução para atribuição de página inicial ao usar os links de atribuição da AppsFlyer é simples (e semelhante à solução para Meta ads).
 
+<div id="conclusion-3" />
+
 #### Conclusão:
 
 O link de atribuição redireciona o lead para uma página inicial e, com isso, também cuida da atribuição correta (se uma instalação mobile seguir).
 
 Tudo o que resta a fazer é NÃO impedir a atribuição correta com outro último clique.
+
+<div id="instructions-3" />
 
 #### Instruções:
 
@@ -256,10 +302,14 @@ Tudo o que resta a fazer é NÃO impedir a atribuição correta com outro últim
 5. Botão de download do Android da página inicial - link direto para o Google Play
 6. Botão de download do iOS da página inicial - link direto para o iTunes  
 
+   <div id="note-2" />
+
    > 📘 **Observação**
    >
    > O script e a página de exemplo HTML fornecem a opção de definir um botão de download que serve para Android e iOS. Leia os comentários no script para saber como implementá-lo.
 
+
+<div id="what-the-script-does-3" />
 
 #### O que o script faz
 
@@ -273,15 +323,21 @@ Para saber mais sobre o que o script faz para lidar com casos em que os usuário
 
 <Accordion title="Links com parâmetros utm: OneLink dinâmico">
 
+<div id="description-4" />
+
 #### Descrição
 
 Você pode ter fontes de tráfego, que redirecionam os usuários para sua página inicial usando links com parâmetros UTM.
+
+<div id="conclusion-4" />
 
 #### Conclusão:
 
 Se o URL original NÃO for um link de atribuição da AppsFlyer, o script procura os parâmetros ***utm\_source*** e ***utm\_campaign*** no link. Se existirem, o script prepara um URL do OneLink, que os tem como nome do canal de mídia (pid) e nome da campanha (c), respectivamente.
 
 Observe que, com os links de atribuição da AppsFlyer, que também contêm parâmetros UTM, os parâmetros da AppsFlyer estão sendo usados, em vez dos parâmetros UTM.
+
+<div id="instructions-4" />
 
 #### Instruções:
 
@@ -298,6 +354,8 @@ No carregamento da página inicial -
 4. Novos usuários móveis são atribuídos ao valor de***utm\_source*** como canal de mídia
 5. Nenhum postback é enviado para o canal de mídia.
 
+<div id="what-the-script-does-4" />
+
 #### O que o script faz
 
 O script procura parâmetros UTM no URL da página inicial. Se ele encontrar algum parâmetros, ele o converte em parâmetros do OneLink. Dessa forma, as informações da campanha são transferidas para a atribuição final.
@@ -308,13 +366,19 @@ O script procura parâmetros UTM no URL da página inicial. Se ele encontrar alg
 
 <Accordion title="Visitantes orgânicos em mobile: OneLink com pid=website">
 
+<div id="description-5" />
+
 #### Descrição
 
 Os visitantes orgânicos em mobile são, por definição, leads diretos da web móvel de fontes desconhecidas. Eles raramente visitam páginas iniciais dedicadas, mas podem ser a grande maioria das instalações em mobile provenientes do site do anunciante.
 
+<div id="conclusion-5" />
+
 #### Conclusão:
 
 Se você tiver uma quantidade significativa de tráfego orgânico em mobile do seu site, é altamente recomendável registrar os dados de atribuição do seu próprio tráfego.
+
+<div id="instructions-5" />
 
 #### Instruções:
 
@@ -322,10 +386,14 @@ Para atribuir visitantes orgânicos em mobile, o site deve ter botões de ***dow
 
 Para saber como definir e criar URLs do OneLink, clique <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template">aqui</Anchor>.
 
+<div id="tip-1" />
+
 > 👍 **Dica**
 >
 > Adicione "&pid=website" ao seu link de atribuição para atribuir todos esses visitantes ao seu site.
 > Em cada página do seu site, que possui um botão de download/instalação com um link de atribuição, adicione "&c=`{PAGE NAME}`". Isso pode ajudar você a encontrar as páginas de maior e menor conversão em seu site.
+
+<div id="what-the-script-does-5" />
 
 #### O que o script faz
 
@@ -337,6 +405,8 @@ Esgotando todas as outras opções, o script determina que o usuário é um usu�
 
 <Accordion title="Visitantes em desktop: formulário de telefone/e-mail">
 
+<div id="description-6" />
+
 #### Descrição
 
 Todas as opções abordadas acima pressupõem que os usuários usem dispositivos móveis ao interagir com a campanha e a página inicial.
@@ -345,9 +415,13 @@ Mas e os usuários de desktop?
 
 Os usuários de desktop podem chegar à sua página inicial/site e, posteriormente, visitar "independentemente" a loja de aplicativos com seus dispositivos móveis e instalar o aplicativo mobile. Sem o engajamento anterior com os dispositivos móveis, é impossível atribuir esses usuários e, portanto, eles são rotulados como "Orgânicos".
 
+<div id="conclusion-6" />
+
 #### Conclusão:
 
 Uma ótima solução para esse problema de atribuição é usar um **Formulário de texto para download em sua página inicial**, somente para usuários de desktop. Isso deve ser seguido pelo envio ao dispositivo mobile de um SMS/e-mail com URL do OneLink.
+
+<div id="instructions-6" />
 
 #### Instruções:
 
@@ -357,6 +431,8 @@ Uma ótima solução para esse problema de atribuição é usar um **Formulário
 4. Adicione "&pid=desktop\_website" ao URL do OneLink para identificar essa fonte.
 5. Adicione "&c=`{PAGE NAME}`" para ajudar a encontrar as páginas de maior e menor conversão em seu site para usuários de desktop.
 
+<div id="what-the-script-does-6" />
+
 #### O que o script faz
 
 O script detecta o dispositivo ou a plataforma em que o usuário está. Se for desktop, o script retornará um link para um URL de formulário da web e o colocará atrás dos botões de download. Quando o usuário clica em download, ele é enviado para um formulário da web onde preenche os dados para receber um SMS ou um e-mail com um link para baixar o aplicativo.
@@ -364,6 +440,8 @@ O script detecta o dispositivo ou a plataforma em que o usuário está. Se for d
 Cabe a você criar o formulário da web e fornecer o URL para ele no script. Para saber mais, procure**isMobileDevice()** no script.
 
 </Accordion>
+
+<div id="landing-page-javascript" />
 
 ## Javascript da página inicial
 
@@ -601,13 +679,19 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
+<div id="tip-2" />
+
 > 👍 **Dica**
 >
 > Você pode implementar o trecho do javascript usando o Google Tag Manager. O Google Tag Manager facilita o controle de quando e onde o javascript da página inicial deve ser usado.
 
+<div id="instructions-7" />
+
 ### Instruções
 
 1. Ative o script ***generateUrl*** no carregamento da página de qualquer página em seu site, que os visitantes podem acessar diretamente, e que tem o(s) botão(ões) ***Download*** para seu(s) aplicativo(s) mobile.  
+
+   <div id="important" />
 
    > 🚧 **Importante!**
    >
@@ -620,6 +704,8 @@ function generateUrl(isDebug) {
 4. Substitua o valor do parâmetro ***partnerIDParam***, se você deseja que os usuários orgânicos mobile sejam atribuídos a outro canal de mídia que não seja 'site'.
 5. Por padrão, os usuários são atribuídos à página web em que estão ao clicar no botão ***Download*** a menos que outro nome de campanha seja especificado no URL da página inicial (`&c={CAMPAIGN_NAME}`). Para alterar isso, substitua o valor do parâmetro ***campaignParam***.  
    Opcional para TODOS os cenários, exceto anúncios pagos do Meta Ads.
+
+<div id="viewing-the-results" />
 
 ## Visualizando os resultados
 
@@ -640,6 +726,8 @@ Se o seu funil de marketing móvel sempre leva à sua página inicial, esses can
 | **ID de parceiro integrado** | Usuários provenientes de um anúncio de parceiro integrado, que usa o link de atribuição da AppsFlyer. Por exemplo, inmobi\_int, tapjoy\_int |
 | **Desktop** | Usuários de desktop que preenchem o formulário da web e concluem uma instalação após clicar no SMS ou e-mail enviado para seus dispositivos mobile posteriormente |
 | **Outros canais** | Usuários provenientes de canais de mídia próprios, que usam os links de atribuição da AppsFlyer. Por exemplo, e-mail, sms, blog\_post, etc |
+
+<div id="onelink-for-landing-page-solution" />
 
 ## OneLink para solução de página inicial
 

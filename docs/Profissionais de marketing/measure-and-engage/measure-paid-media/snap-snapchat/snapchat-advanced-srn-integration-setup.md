@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## Visão Geral
 
 Uma integração avançada de SRN significa que todo o tráfego com <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">consentimento duplo</Anchor> é atribuído e reportado como tráfego SRN regular. Para tráfego não consentido, a AppsFlyer pode atribuir e medir a atribuição com base em cliques e impressões provenientes do Snapchat utilizando <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns#como-funciona-a-atribuição-para-srnsavançadas">outros métodos de atribuição</Anchor>, de acordo com as restrições de privacidade.
+
+<div id="set-up-snapchat-integration" />
 
 ## Configurar a integração do Snapchat
 
@@ -51,6 +55,8 @@ Uma integração avançada de SRN significa que todo o tráfego com <Anchor targ
 
 A integração é compatível com atribuição de cliques e impressões, custo e audiências.
 
+<div id="activate-partner" />
+
 #### Ativar parceiro
 
 Na **primeira visita** aqui, você deve ativar **Ativar parceiro** para habilitar a configuração.  
@@ -61,6 +67,8 @@ Para mais detalhes sobre a ativação do parceiro, consulte <Anchor target="_bla
 Habilite **Ativar parceiro** para permitir a atribuição ao Snapchat.
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+
+<div id="general-settings" />
 
 #### Configurações gerais
 
@@ -77,6 +85,8 @@ Habilite **Ativar parceiro** para permitir a atribuição ao Snapchat.
 * Se a agência estiver sob a mesma organização que você na plataforma de anúncios do Snapchat, use apenas um Snap App ID.
 * Se a agência estiver sob uma organização diferente na plataforma de anúncios do Snapchat, peça o Snap App ID da agência para este aplicativo e insira-o neste campo. Vários IDs podem ser inseridos. Pressione Enter após cada ID.
 
+<div id="advanced-privacy" />
+
 #### Agregada da AppsFlyer
 
 O botão de alternância **Advanced Privacy** (AP) controla quais eventos a AppsFlyer envia para o Snapchat. Essa configuração também é chamada de **Advanced Conversions** no Snapchat.
@@ -89,9 +99,13 @@ O botão de alternância **Advanced Privacy** (AP) controla quais eventos a Apps
 >
 > Uma agência não pode ativar a configuração de privacidade avançada (mesmo quando recebe permissão). Isso é limitado apenas ao anunciante.
 
+<div id="advanced-matching-data-sharing" />
+
 #### Compartilhamento de dados de correspondência avançada
 
 Quando o **Compartilhamento de dados de correspondência avançada** está ativado, os campos de correspondência avançada, como e-mail com hash, número de telefone com hash, nome com hash e sobrenome com hash, são compartilhados com o Snapchat se esses campos estiverem incluídos nas informações do evento enviadas à AppsFlyer. Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/advanced-matching-data-sharing">Compartilhamento de dados de correspondência avançada (em inglês)</Anchor>.
+
+<div id="install-attribution" />
 
 #### Atribuição de instalação
 
@@ -108,6 +122,8 @@ Defina as diferentes janelas de atribuição para atribuir novas instalações (
 2. [Opcional] Ative a **atribuição de view-through** e configure as janelas de lookback:
    * **Janela de lookback de view-through** entre 1 e 24 horas. **Nota:** O Snapchat recomenda alinhar-se com eles definindo a janela de retrospetiva de visualização da instalação para 1 dia.
 
+<div id="re-engagement-attribution" />
+
 #### Atribuição de reengajamento
 
 Configure as diversas janelas de atribuição para contabilizar reaquisições de utilizadores existentes que visualizaram, clicaram ou interagiram com o seu anúncio. Lembre-se que apenas os reengajamentos dentro da janela de retrospetiva podem ser atribuídos ao Snapchat.
@@ -122,6 +138,8 @@ Configure as diversas janelas de atribuição para contabilizar reaquisições d
    * **Janela de lookback de view-through** entre 1 e 24 horas. **Nota:** O Snapchat recomenda alinhar-se com eles ao definir a janela de retrospetiva de visualização de reengajamento para 1 dia.
 3. Defina a **janela de reengajamento** como 1-23 horas, 1-90 dias ou **Lifetime**.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignorar usuários ativos para retargeting
 
 Defina um período de tempo para <Anchor target="_blank" href="/marketers/pt/docs/set-retargeting-inactivity-window#período-de-inatividade">ignorar reengajamentos e reatribuições</Anchor> de usuários que inicializaram o seu aplicativo. Isto significa que a sua atividade durante o período da janela não é registrada na AppsFlyer.
@@ -132,6 +150,8 @@ Defina um período de tempo para <Anchor target="_blank" href="/marketers/pt/doc
 
 1. Ative a opção **Ignorar utilizadores ativos para retargeting**.
 2. Defina a janela de inatividade.
+
+<div id="in-app-event-postbacks" />
 
 #### Postback de eventos in-app
 
@@ -223,6 +243,8 @@ Selecione quais <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integ
 
 </Accordion>
 
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
 ## Web para app: mensuração da atividade no aplicativo para campanhas não relacionadas a apps
 
 A integração da AppsFlyer com o Snapchat permite a mensuração abrangente da atividade no aplicativo, como instalações, reengajamentos e eventos in-app, para campanhas não relacionadas a apps atribuídas ao Snapchat.
@@ -230,6 +252,8 @@ A integração da AppsFlyer com o Snapchat permite a mensuração abrangente da 
 Por exemplo, as instalações de aplicativos podem ser mensuradas mesmo quando o destino do anúncio é uma web landing page, permitindo a mensuração da jornada web-to-app (W2A). Para ativar esse tipo de mensuração, ative a opção <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/article/app-id-tracking">Snap App ID Tracking Toggle</Anchor> no Gerenciador de Anúncios do Snapchat.
 
 Ao seguir estas instruções, você pode mensurar com eficácia a atividade do aplicativo a partir de campanhas não relacionadas a aplicativos do Snapchat e obter insights valiosos sobre o comportamento do usuário.
+
+<div id="deep-linking-with-snapchat" />
 
 ## Deep linking com o Snapchat
 
@@ -250,12 +274,16 @@ Para executar deep linking com o Snapchat:
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### Configure deep links na plataforma Snap
 
 1. Acesse o tipo de oportunidade **Direcionar tráfego para o aplicativo** .
 2. Adicione o URI do deep link:  
      
    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### Deferred deep linking com o Snapchat
 
@@ -265,9 +293,13 @@ A AppsFlyer fornece várias soluções para deep linking diferido:
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD (Get Conversions Data) API**</Anchor> : esta é a opção recomendada para acessar os dados de conversão dos usuários do Snapchat em tempo real, diretamente no nível do SDK. Os dados retornados na GCD API incluem <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor>, que contém o destino do deep link (destino do usuário no aplicativo).
 * **Como usar parâmetros de dados de conversão:** você pode criar uma lógica personalizada para levar o usuário ao seu conteúdo usando outros parâmetros, como o nome da campanha, o nome do conjunto de anúncios ou qualquer outro campo retornado como parte dos dados de atribuição para instalações do Snapchat.
 
+<div id="set-up-snapchat-for-agencies" />
+
 ## Configurar o Snapchat para agências
 
 As agências que trabalham em nome de anunciantes podem ativar a integração com o Snapchat e começar a receber atribuição por suas campanhas. Contudo, esta integração tem algumas limitações quando se trata de agências.
+
+<div id="agency-limitations" />
 
 ### Limitações da agência
 
@@ -289,6 +321,8 @@ As agências que trabalham em nome de anunciantes podem ativar a integração co
 >
 > Os IDs das contas do Snapchat não devem ser compartilhados entre o anunciante e a agência. Se forem compartilhados, todas as instalações do anunciante serão atribuídas automaticamente no dashboard da agência.
 
+<div id="raw-data-restrictions" />
+
 ## Restrições de dados brutos
 
 * A partir de 1º de março de 2023, as desinstalações do Snapchat não serão incluídas nos relatórios de dados brutos.
@@ -300,6 +334,8 @@ As agências que trabalham em nome de anunciantes podem ativar a integração co
   * Nome e ID da campanha (a partir de 15 de dezembro de 2025)
   * Nome e ID do conjunto de anúncios (a partir de 15 de dezembro de 2025)
 * A partir de 6 de outubro de 2026, os dados de atribuição de view-through de `snapchat_int` ficam limitados (restritos) apenas nos dados brutos em alguns casos. A lógica das restrições de evento é gerenciada pelo Snapchat.
+
+<div id="snapchat-data-retention" />
 
 ## Retenção de dados do Snapchat
 

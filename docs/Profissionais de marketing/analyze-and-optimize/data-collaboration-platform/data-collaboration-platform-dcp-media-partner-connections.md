@@ -19,18 +19,26 @@ x-zendesk:
   section_id: 26230608274065
   url: https://support.appsflyer.com/hc/pt/articles/45669216166417
 ---
+<div id="at-a-glance" />
+
 ## De relance
 
 Conecte suas audiências a parceiros de mídia para ativar suas campanhas personalizadas e alcançar o máximo de resultados.
+
+<div id="about-partner-connections" />
 
 ## Sobre as conexões de parceiros
 
 As conexões com parceiros da <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> permitem que você conecte com segurança suas audiências do DCP a parceiros de mídia compatíveis, para que você possa ativar campanhas personalizadas nas plataformas deles. Depois que um parceiro é conectado a uma audiência, a DCP entrega a audiência com base no fluxo de atualização e ativação configurado, usando os dados de fonte disponíveis mais recentes e as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissões-de-compartilhamento">permissões</Anchor>.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > * A audiência é entregue para ativação como uma lista de identificadores de usuário. Cada entrega representa uma captura completa da audiência no momento da exportação.
 > * As atualizações de audiência não são contínuas nem em tempo real. Em vez disso, elas são acionadas de acordo com a política definida, que se baseia em uma cadência e verifica se os dados de fonte foram atualizados. Cada atualização gera e envia a lista de audiências para os destinos selecionados.
+
+<div id="supported-partner-connections" />
 
 ## Conexões de parceiros compatíveis
 
@@ -79,6 +87,8 @@ Depois disso, a DCP faz upload das audiências automaticamente por meio do link 
 * **Campanhas de Aplicativo**   
   As campanhas de aplicativo para instalação (ACi) usam audiências carregadas apenas como sinais de otimização, enquanto as campanhas de reengajamento (ACe) oferecem suporte à segmentação determinística e são o principal método de ativação de audiências.
 
+<div id="app-campaigns-aci--ace-guidelines" />
+
 #### Diretrizes para campanhas de aplicativo (ACi & ACe)
 
 As campanhas de aplicativo do Google (antes conhecidas como Universal App Campaign - UAC) se comportam de forma diferente de outros tipos de campanha ao usar audiências do Customer Match:
@@ -101,6 +111,8 @@ Os anunciantes podem:
 * Executar campanhas de ciclo de vida (upsell, cross-sell, retenção)
 
 As listas de audiência do DCP são usadas como critérios principais de segmentação, de forma semelhante a outras plataformas.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -425,6 +437,8 @@ As audiências da DCP no The Trade Desk são usadas para segmentação direta em
 * Atualização recomendada das audiências: diária ou semanal, dependendo do caso de uso de ativação e da volatilidade do segmento
 
 </Accordion>
+
+<div id="create-a-partner-connection" />
 
 ## Criar uma conexão com parceiros
 

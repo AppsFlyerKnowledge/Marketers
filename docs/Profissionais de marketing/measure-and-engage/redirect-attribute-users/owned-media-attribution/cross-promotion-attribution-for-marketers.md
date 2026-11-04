@@ -27,6 +27,8 @@ x-zendesk:
 
 ![CrossPromo_jornadaDoUtilizador](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
+<div id="about-cross-promotion" />
+
 ## Sobre a promoção cruzada
 
 As campanhas de promoção cruzada são uma das melhores formas de promover seus aplicativos existentes ou de orientar os seus usuários para novos aplicativos lançados pela sua empresa. Este tipo de campanha pode resultar em taxas de conversão e retenção mais elevadas em comparação com a maioria das outras fontes de tráfego. Como a promoção cruzada é publicidade em mídias próprias, você pode usar [a correspondência de ID de dispositivo](/docs/cross-promotion-attribution-for-marketers#atribuição-de-promoção-cruzada) para atribuir deterministicamente novas instalações. A atribuição de promoção cruzada está disponível para todas as contas, independentemente do seu plano da AppsFlyer.
@@ -34,6 +36,8 @@ As campanhas de promoção cruzada são uma das melhores formas de promover seus
 A imagem seguinte mostra o painel do aplicativo promovido com um detalhamento das métricas para campanhas executadas em meios de comunicação próprios **(af\_cross\_promotion**) e outras fontes de comunicação. Você pode ver que o número de instalações e a taxa de conversão da campanha de promoção cruzada são muito mais elevados do que os dos outros canais de mídia.
 
 [![CrossPromo_origemDeMídia](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+
+<div id="how-does-cross-promotion-work" />
 
 ### Como a promoção cruzada funciona?
 
@@ -46,6 +50,8 @@ A imagem seguinte mostra o painel do aplicativo promovido com um detalhamento da
    * O aplicativo que conduz a instalação, o aplicativo de origem, aparece como um **ID do site** deste canal de mídia.
 6. O SDK gera automaticamente um evento in-app.  
    O nome do evento para Android é `af_cross_promotion` e para iOS  é`af_cross_promotion_clicked`.
+
+<div id="attributing-cross-promotion" />
 
 ## Atribuição de promoção cruzada
 
@@ -63,6 +69,8 @@ O identificador de dispositivo usado para a correspondência depende do seguinte
 | GAID | Dispositivos Android com serviços Google Play |  |  |
 | OAID, Android ID, IMEI, Fire ID | Dispositivos Android sem Google Play Services |  |  |
 
+<div id="setting-up-cross-promotion" />
+
 ## Configurar promoção cruzada
 
 O processo de configuração da atribuição de promoção cruzada exige que o profissional de marketing e o desenvolvedor trabalhem juntos para implementar um código adicional no SDK da AppsFlyer.
@@ -77,7 +85,11 @@ O fluxo para o profissional de marketing e para o desenvolvedor é o seguinte:
 | 4 | Marketer | No [painel de controle do aplicativo promovido](/docs/cross-promotion-attribution-for-marketers#painel-de-controle-de-aplicativos-promovidos), veja o tráfego proveniente da campanha de promoção cruzada e otimize as suas campanhas de acordo. |  |
 | 5 [Opcional] | Marketer | Crie um [painel de controle personalizado](/docs/cross-promotion-attribution-for-marketers#painel-personalizado) para comparar o tráfego de promoções cruzadas e compartihe dados com os usuários da conta. |  |
 
+<div id="viewing-cross-promotion-data" />
+
 ## Visualizar dados de promoção cruzada
+
+<div id="promoted-app-dashboard" />
 
 ### Painel de controle de aplicativos promovidos
 
@@ -89,9 +101,13 @@ O painel de controle do aplicativo promovido permite que você determine quais a
 2. Selecione o canal de mídia **af\_cross\_promotion** (ou o seu canal de mídia personalizado).
 3. Agrupe por **ID do site** para ver a lista de aplicativos de origem.[![CrossPromo_IDDoSite](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
 
+<div id="analysis" />
+
 #### Análise
 
 Visualizar dados de instalações, cliques, impressões e taxas de conversão de vários aplicativos existentes, todos veiculando anúncios para o mesmo aplicativo promovido, permite que você realize uma análise de afinidade. Os aplicativos de origem (IDs do site) com as melhores taxas de conversão têm a maior afinidade com o aplicativo promovido e os seus usuários têm maior probabilidade de a instalar. Com base nestas informações, você pode otimizar as suas campanhas de promoção cruzada de acordo.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -106,11 +122,15 @@ Visualizar dados de instalações, cliques, impressões e taxas de conversão de
 > * Execute uma campanha de promoção cruzada em grande escala no Golfing.
 > * Comece a <Anchor target="_blank" href="/marketers/pt/docs/measure-view-through-engagements#fluxo-de-atribuição-de-exibição">atribuir impressões</Anchor> além dos cliques. Como você inicialmente configurou a sua campanha para medir apenas cliques, as instalações de usuários que vêem o anúncio sem clicar e depois instalam são contabilizadas como instalações orgânicas em vez de não orgânicas. Isto significa que você ainda não dispõe de uma imagem completa do desempenho da campanha para cada aplicativo de origem.
 
+<div id="custom-dashboard" />
+
 ### Painel Personalizado
 
 O painel de controle do aplicativo promovido é excelente para obter uma imagem dos aplicativos de origem que estão gerando o melhor tráfego. Mas e se você quiser avaliar o desempenho de um único aplicativo existente que está sendo usado para promover vários aplicativos? É aqui que um painel de controle personalizado pode fazer exatamente o que você precisa.
 
 Um <Anchor target="_blank" href="/marketers/pt/docs/custom-dashboards">painel de controle personalizado</Anchor> permite que você visualize informações de vários aplicativos promovidos em um único local, incluindo tráfego de promoção cruzada. Além disso, um painel de controle personalizado é uma forma rápida e fácil de compartilhar dados com os usuários da conta.
+
+<div id="example-1" />
 
 > 📄 **Exemplo**
 >

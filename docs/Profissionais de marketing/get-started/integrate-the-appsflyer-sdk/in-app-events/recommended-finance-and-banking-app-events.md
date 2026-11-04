@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** mensure a qualidade dos seus usuários durante toda a jornada do usuário, registrando esses eventos in-app sugeridos para seu aplicativo de finanças e serviços bancários.
 
+<div id="-finance-and-banking" />
+
 ## <Image alt="banking.png" src="https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png" width="100px" /> Finanças e serviços bancários
 
 Aplicativos financeiros e de serviços bancários oferecem aos usuários a capacidade de realizar uma ampla gama de ações relacionadas a finanças, como solicitar novos cartões de crédito ou empréstimos. Os eventos típicos que sugerimos que você registre incluem aberturas de conta e solicitações de cartão de crédito, assim como empréstimos.
@@ -32,6 +34,8 @@ Gravar esse evento pode ajudar a determinar:
 * Que tipo de conta os usuários mais querem, oferecendo ideias para retargeting
 * Quais benefícios os usuários procuram em um cartão de crédito
 * Quais usuários precisam de assistência financeira e quanta assistência eles exigem
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -44,6 +48,8 @@ Gravar esse evento pode ajudar a determinar:
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
 [![Fluxograma_para_eventos_recomendados jornada_do_utilizador_da_aplicação_de_finanças_bancárias](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estruturas recomendadas para eventos predefinidos
 
@@ -86,6 +92,8 @@ Quando o usuário conclui o processo de inscrição
 | af\_registration\_method | O tipo de método de cadastro | email, facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estruturas recomendadas para eventos personalizados
 

@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Resumo:** Ative ou desative as integrações de parceiros, permitindo ou impedindo-os de acessar seus dados e realizar ações.
 
+<div id="activation-overview" />
+
 ## Resumo da ativação
 
 As integrações de parceiros podem estar ativas ou inativas. Uma integração é inicialmente ativada através do botão **Ativar parceiro** na página principal da integração. Existem vários tipos de integrações. Uma integração também pode ser considerada ativa se qualquer outro [tipo de integração](#id) (ver tabela abaixo) estiver ativo, mesmo quando o botão **Ativar parceiro** estiver desativado.
+
+<div id="important" />
 
 > 🚧 **Importante!**
 >
@@ -66,6 +70,8 @@ A tabela abaixo apresenta o impacto das configurações de ativação do parceir
 
 </Accordion>
 
+<div id="activate-a-partner-integration" />
+
 ## Ativar uma integração de parceiro
 
 **Para ativar ou editar a integração principal (aba Integração) do aplicativo selecionado:**
@@ -78,9 +84,13 @@ A tabela abaixo apresenta o impacto das configurações de ativação do parceir
 
 Veja [outros tipos de integração](#id).
 
+<div id="caution" />
+
 > ❗️ **Atenção**
 >
 > Certifique-se de não usar a configuração **Ativar parceiro** para pausar ou encerrar campanhas. Isso pode causar danos irreversíveis na mensuração das campanhas ativas.
+
+<div id="who-can-activate-an-integration" />
 
 #### Quem pode ativar uma integração?
 
@@ -90,6 +100,8 @@ As integrações de parceiros podem ser ativadas por profissionais de marketing 
 | --- | --- | --- |
 | Marketer | Ativada para uso próprio e em nome das agências | Ativada para uso próprio |
 | Agência | Não é possível ativar | Ativada para não-SRN indicada pela agência |
+
+<div id="deactivate-a-partner-integration" />
 
 ## Desativar uma integração de parceiro
 
@@ -109,9 +121,13 @@ Você pode desativar uma integração de parceiro do seu app, desligando o toggl
    2. Selecione um aplicativo diferente a partir da lista suspensa.
    3. Repita os passos 2 a 4.
 
+<div id="partner-and-agency-access-to-dashboards" />
+
 ## Acesso a dashboards por parceiros e agências
 
 Parceiros e agências têm diferentes visualizações de dashboards e opções de configuração, conforme as suas permissões.
+
+<div id="partner-visibility" />
 
 ### Visibilidade do parceiro
 
@@ -122,6 +138,8 @@ Parceiros e agências têm diferentes visualizações de dashboards e opções d
 | --- | --- |
 | Marketer | Sim |
 | Agência | Não |
+
+<div id="agency-permissions" />
 
 ### Permissões da agência
 
@@ -134,10 +152,14 @@ Você pode conceder permissão às agências para trabalhar com seu aplicativo e
 3. Vá para **Permissões** e ative as **Permissões da agência.**
 4. [Opcional] Conceda <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissões-da-agência">permissões</Anchor> adicionais à agência.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Uma **agência** pode ativar ou desativar a definição **Ativar parceiro** para **parceiros não-SRN**.
 > * Um **profissional de marketing** pode ativar ou desativar a definição **Ativar parceiro** para **SRNs**. Ao fazer isso, as instalações dessa SRN **não são atribuídas à agência**.
+
+<div id="disabled-agency-permissions" />
 
 #### Permissões de agência desativadas
 
@@ -152,6 +174,8 @@ Quando as permissões estão desativadas para agências:
 
 Os exemplos a seguir descrevem o que acontece com o tráfego que continua a ser enviado após um profissional de marketing remover as permissões da agência:
 
+<div id="example-1" />
+
 > 📄 **Exemplo 1**
 >
 > **Campanha da agência com um parceiro não-SRN (link de atribuição)**
@@ -159,6 +183,8 @@ Os exemplos a seguir descrevem o que acontece com o tráfego que continua a ser 
 > O tráfego é atribuído a orgânico, ou a um engajamento anterior, se ainda estiver dentro de sua janela de lookback. A agência não é atribuída.
 >
 > Este exemplo também se aplica a cenários em que a AppsFlyer recebe links de atribuição de cliques, assim como a consulta à API do parceiro
+
+<div id="example-2" />
 
 > 📄 **Exemplo 2**
 >

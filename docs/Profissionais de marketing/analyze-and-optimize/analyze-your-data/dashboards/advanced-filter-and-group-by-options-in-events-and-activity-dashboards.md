@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Visão geral**: use filtro avançado e agrupe por opções em painéis de eventos e atividades.
 
+<div id="advanced-filter-by-and-group-by-options-in-dashboards" />
+
 ## "Filtrar por" avançado e "agrupar por opções" em painéis
 
 * **Filtrar por**: fonte de mídia, geolocalização
@@ -33,6 +35,8 @@ x-zendesk:
 * **Detalhamento**: conjunto de anúncios e dados no nível de anúncio
 
 Ao filtrar e agrupar as informações no dashboard usando as opções avançadas, você pode visualizar os dados mais precisos e relevantes para seus aplicativos.
+
+<div id="filter-by-options" />
 
 ## Opções de filtro
 
@@ -57,6 +61,8 @@ Selecione o canal de mídia para o qual você deseja visualizar os dados.
 Use o dropdown **localização** para selecionar uma região geográfica específica e visualizar as atividades do aplicativo para essa região.
 
 ![](https://files.readme.io/1bcf56111b6158d09c3c068a550b4d99a16913b3b9f749db6b66a100da08f759-49929152834833.png)
+
+<div id="group-by-options" />
 
 ## Opções de agrupamento
 
@@ -89,6 +95,8 @@ Por padrão, **Canal de mídia/Campanha** é exibido.
 
 Quando você seleciona **ID do site**, os dados exibidos se baseiam nas suas seleções de filtro para ID do site.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > Os dados do site\_id estão disponíveis desde 16 de maio de 2016.
@@ -103,6 +111,8 @@ Ao selecionar a opção **Localização**, você vê uma análise detalhada dos 
 
 ![](https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png)
 
+<div id="advanced-filtering" />
+
 ## Filtro avançado
 
 Para as opções de filtro avançado, clique em ![](https://files.readme.io/278e2ad18a60859c446a7a5a6cbc708c012b2200d01c1886c17a662816d1ff27-206127343.png).
@@ -111,6 +121,8 @@ As opções de filtro se expandem:
 
 ![](https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png)
 
+<div id="note-1" />
+
 > 📘 **Observação**
 >
 > Quando você seleciona uma Campanha/Canal, mas sem fonte de mídia, uma notificação de aviso é exibida indicando que você deve selecionar primeiro uma fonte de mídia.
@@ -118,6 +130,8 @@ As opções de filtro se expandem:
 ![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
 
 Quando os resultados são exibidos, o ícone do filtro avançado muda de azul para verde ![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
+
+<div id="example-user-story" />
 
 ## Exemplo de história de usuário
 

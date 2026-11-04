@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** entenda o fluxo de usuários que usam dispositivos iOS e clicam em um link personalizado do OneLink, porém o Universal Link não consegue abrir o aplicativo.
 
+<div id="about-uri-fallback-for-ios" />
+
 ## Fallback de URI para iOS
 
 * A melhor forma de abrir um aplicativo em dispositivos iOS é usando Universal Links. Desde 2016, existem limitações consideráveis do sistema operacional quanto ao uso de esquemas URI como um método de fallback nos casos em que os Universal Links falham. Essas limitações não estão relacionadas com a AppsFlyer e também afetariam outros links com esquemas URI usados para abrir um aplicativo.
@@ -34,13 +36,19 @@ x-zendesk:
 * Em outros navegadores, os esquemas URI atuam de forma imprevisível e, por isso, não são compatíveis por padrão. Os usuários que clicarem no link provavelmente serão redirecionados para a App Store (ou para a URL configurada no `af_ios_url` parâmetro).
 * Consulte o fluxograma de cenários e os casos de uso a seguir para mais detalhes.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > O X (Twitter) não oferece suporte a esquemas de URI. Recomendamos usar uma página de destino de aplicativo social com configuração de link universal para evitar problemas ao abrir o aplicativo.
 
+<div id="scenarios-flowchart" />
+
 ### Fluxograma de cenários
 
 <Image alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
+
+<div id="use-cases" />
 
 ## Casos de uso
 
@@ -55,6 +63,8 @@ x-zendesk:
 * Naver
 * Never-Blog
 * Weibo
+
+<div id="flowchart" />
 
 #### **Fluxograma**
 
@@ -94,6 +104,8 @@ A seguir, descrevemos o fluxo de usuários quando os Universal Links não conseg
   8. Se o usuário clicar em **OK**, ele será redirecionado para a App Store.
   9. Se o usuário clicar em **Cancelar**, ele permanecerá na landing page.
 
+<div id="flowchart-1" />
+
 #### **Fluxograma**
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
@@ -123,6 +135,8 @@ A seguir, descrevemos o fluxo de usuários para casos em que os Universal Links 
 4. Se o usuário clicar em **Fechar**, a landing page será exibida.  
    [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. O usuário clica no selo da App Store e é redirecionado para lá.
+
+<div id="flowchart-2" />
 
 #### **Fluxograma**
 

@@ -23,6 +23,8 @@ x-zendesk:
 
 <Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="100px" />
 
+<div id="setting-up-bidease" />
+
 ## Como configurar a Bidease
 
 A integração com a Bidease oferece suporte para a atribuição de click-through e view-through.
@@ -42,6 +44,8 @@ A integração com a Bidease oferece suporte para a atribuição de click-throug
 
 A janela de configuração inclui as seguintes abas: integração, link de atribuição, custo, receita de anúncios e permissões. Para a Bidease, as abas disponíveis são as de integração, link de atribuição e permissões.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > * Algumas configurações são diferentes para dispositivos iOS e Android
@@ -53,10 +57,14 @@ A janela de configuração inclui as seguintes abas: integração, link de atrib
 
 A aba **Integração** inclui várias seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 #### Ativar parceiro
 
 Ative a opção **Ativar parceiro**.  
 **Observação:** A opção **deve permanecer ativada (ativa)** enquanto você trabalhar com o parceiro. **Etapa 1**:
+
+<div id="advanced-privacy" />
 
 #### Privacidade avançada
 
@@ -68,13 +76,19 @@ Ative a opção **Ativar parceiro**.
 | Os postbacks são enviados de acordo com o <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks">template de privacidade avançada</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">Dados agregados e anônimos</Anchor> são compartilhados com o parceiro, o que significa que nenhum dado no nível do usuário (ID do dispositivo) é compartilhado. |  |
 
+<div id="transaction-id" />
+
 #### ID da transação
 
 **Somente para aplicativos iOS:** quando a opção **compartilhar ID de transação da SKAN** está ativada, você permite que a AppsFlyer <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">compartilhe o ID de transação de postbacks da SKAdNetwork</Anchor> com o Reddit. Assim, o Reddit pode decodificar seus valores de conversão da SKAN.
 
+<div id="install-attribution" />
+
 #### Atribuição de instalação
 
 Para atribuir instalações com view-through obtidas na Bidease, ative a **atribuição de instalação com view-through**. O cursor de lookback de view-through está disponível na [aba do link de atribuição](#attribution-link-tab).
+
+<div id="default-postbacks" />
 
 #### Postbacks padrão
 
@@ -84,6 +98,8 @@ Para enviar postbacks automáticos para parceiros vinculados às ações dos us
   * **Somente esse parceiro**: enviar postbacks somente quando o evento for atribuído a esse parceiro—ou seja, o usuário que instalou o aplicativo veio da Bidease.
   * **Todas as fontes de mídia, incluindo orgânicas**: enviar postbacks para eventos atribuídos a qualquer parceiro e para eventos orgânicos — ou seja, o usuário que instalou o aplicativo veio de qualquer fonte de mídia.
 * Para **instalações rejeitadas** e **reengajamentos:** os postbacks são enviados apenas para a Bidease.
+
+<div id="in-app-event-postbacks" />
 
 #### Postback de eventos in-app
 
@@ -106,6 +122,8 @@ Configure o mapeamento de eventos in-app com eventos da Bidease, enviados via po
    1. Do canto superior esquerdo, abaixo do nome do parceiro, clique no nome do aplicativo para abrir a lista de apps.
    2. Selecione a partir da lista suspensa.
    3. Repita as <Anchor target="_blank" href="/marketers/pt/docs/amazon-ads-campaign-configuration#integration-tab">etapas de integração</Anchor> para o aplicativo selecionado.
+
+<div id="note-1" />
 
 > 📘 **Observação**
 >
@@ -144,6 +162,8 @@ A <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attri
 <Accordion title="Aba de permissões">
 
 Selecione as <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões que você deseja conceder</Anchor> à Bidease, para que o parceiro possa acessar seus dados e executar diferentes ações.
+
+<div id="note-2" />
 
 > 📘 **Observação**
 >

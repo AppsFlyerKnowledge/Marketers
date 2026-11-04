@@ -31,6 +31,8 @@ x-zendesk:
 
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## Atribuição de receita de anúncios
 
 * Os anúncios são exibidos no aplicativo em banners, murais de ofertas, intersticiais etc. e geram receita de anúncios.
@@ -60,6 +62,8 @@ A precisão e a atualização dos dados dependem do tipo de integração da atri
 
 </Accordion>
 
+<div id="implementation" />
+
 ## Implementação
 
 As seções a seguir descrevem os tipos de atribuição de receita de anúncios disponíveis, bem como os fluxos de trabalho e as etapas necessárias para implementação e manutenção.
@@ -77,6 +81,8 @@ As seções a seguir descrevem os tipos de atribuição de receita de anúncios 
 3. Selecione um parceiro de receita de anúncios e clique em **Avançar**.
 
    ![ad revenue 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+
+   <div id="note" />
 
    > 📘 **Atenção**
    >
@@ -131,6 +137,8 @@ Quando um aplicativo usa duas <Anchor target="_blank" href="/marketers/pt/docs/a
   1. Na AppsFlyer, no menu lateral, selecione **configurações** > **configurações de receita** > receita de anúncios.
   2. Em **Configurações gerais**, clique em **Desduplicar receita de anúncios quando dois parceiros de mediação fizerem referências cruzadas**. **Observação**: Não marque a caixa se as 2 plataformas de mediação mediarem formatos de anúncio diferentes. Por exemplo, quando a plataforma 1 mostra Banner e Intersticial, e a plataforma 2 mostra AppOpen e anúncios nativos.
 
+     <div id="note-1" />
+
      > 📘 **Importante!**
      >
      > A configuração é sempre ignorada para:
@@ -158,12 +166,16 @@ A granularidade agregada das receitas de anúncios funciona da seguinte forma:
   * Evento **af\_app\_opened** disponível por padrão.
 * Não informe os valores de receita em eventos in-app em paralelo a uma integração de receita de anúncios. Isso faz com que a receita de anúncios seja duplicada no dashboard, pois a AppsFlyer obtém os dados de receita da network de monetização por meio da integração.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### Receita de anúncios agregada usando eventos
 
 | Método do evento | Como é implementado | Considerações |
 | --- | --- | --- |
 | Evento in-app exclusivo de monetização | <ul><li>Um evento in-app é definido no momento da exibição do anúncio</li><li>Isso fornece uma contagem distinta de ações do usuário, o que permite cálculos de eRPA aprimorados</li><li>Isso pode ser refinado ainda mais com um evento in-app diferente para cada network de monetização. Isso permite detalhar a receita por network de monetização<br />Consulte a tabela a seguir para uma explicação completa.</li></ul> | <ul><li>Requer que o desenvolvedor modifique o aplicativo</li><li>A receita pode ser separada por rede de monetização no dashboard</li></ul> |
 | af\_app\_opened event | <ul><li>O evento af\_app\_opened é enviado pelo SDK da Appsflyer por padrão</li><li>Ele é acionado a cada sessão de usuário</li></ul> | <ul><li>Nenhuma modificação do aplicativo é necessária</li><li>Rápida implementação</li><li>Os valores de eRPA ficam bastante distorcidos, a menos que você mostre apenas um anúncio por sessão</li><li>Sem divisão da receita por rede de monetização</li><li>O evento se aplica a todos os usuários que abrem o aplicativo, e você não tem nenhuma indicação da disposição do usuário de assistir a anúncios</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### Comparação de métodos de eventos in-app
 
@@ -194,11 +206,15 @@ Para verificar se a integração está funcionando:
 | Detalhes de configuração ausentes | Um ou mais campos estão incompletos | Recupere as credenciais no dashboard do parceiro ou entre em contato com ele e solicite as credenciais. |
 | Nenhum evento encontrado | Nenhum evento válido de receita de anúncios foi recebido do SDK recentemente. | Confirme se a integração do SDK está concluída e se os eventos de teste estão sendo enviados. Você pode verificar a entrega de eventos em tempo real usando o <Anchor target="_blank" href="/marketers/pt/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live Events viewer</Anchor>. |
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > Para integrações do SDK, você também pode verificar se os eventos de receita de anúncios são registrados em tempo real usando o <Anchor target="_blank" href="/marketers/pt/docs/testing-the-sdk-integration-for-marketers#view-live-events">Live Events viewer</Anchor>. Observe que ele exibe apenas eventos enviados de dispositivos de teste registrados.
 
 </Accordion>
+
+<div id="ad-revenue-data" />
 
 ## Dados de receita de anúncios
 
@@ -221,6 +237,8 @@ A atribuição de receita de anúncios está disponível da seguinte forma:
   * Dashboard: atividades
   * Dados brutos de receita de anúncios
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Dashboard de visão geral - relatório de performance agregada**
 
 ![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
@@ -239,6 +257,8 @@ No dashboard de atividades:
 
 * Os valores, incluindo a receita, são baseados na data da atividade. Consulte <Anchor target="_blank" href="/marketers/pt/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV vs. dados de atividade</Anchor>.
 * A **média de ações por usuário** indica a tendência dos usuários de interagir com os anúncios exibidos no aplicativo.
+
+<div id="examples" />
 
 #### Exemplos
 
@@ -314,6 +334,8 @@ Os campos nos relatórios de receita de anúncios são preenchidos:
   * **Contextuais:** campos com um significado parecido em outros relatórios de dados brutos. Por exemplo, nome do evento, valor do evento e moeda.
 * Como resultado da atribuição do evento à fonte de mídia que trouxe o usuário. Isso significa que esses campos são copiados do evento de conversão que trouxe o usuário. Por exemplo, canal de mídia e uma campanha. Esses campos não estão listados na tabela a abaixo.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### Campos preenchidos pela receita de anúncios
 
 | api\_name | Nome do campo | Tipo de campo | Descrição |
@@ -330,6 +352,8 @@ Os campos nos relatórios de receita de anúncios são preenchidos:
 | <span id="impressions"></span>impressions | Impressões | Específico | Número de vezes que o usuário viu o anúncio |
 | <span id="mediation_network"></span>mediation\_network | Rede de mediação | Específico | Rede de mediação que relata o evento para a AppsFlyer |
 | <span id="customer_user_id"></span>customer\_user\_  <br />id | Customer User ID | Contextual | Se disponível pelo anunciante:<ul><li>Para integrações em nível de impressão (SDK): coletado via `setCustomerUserId()` no SDK do AppsFlyer.</li><li>Para integrações no nível do dispositivo (API): coletado da API de mediação (user ID ou publisher user ID definido via SDK de mediação).</li><li>Não compatível com Odeeo e Appodeal.</li></ul> |
+
+<div id="fields-by-network" />
 
 #### Campos por rede
 
@@ -383,6 +407,8 @@ Para a **Exportação de dados brutos e Pull API**, independentemente do tipo de
 * <Anchor target="_blank" href="/marketers/pt/docs/revenue-etl-reports">Relatórios de Revenue ETL</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

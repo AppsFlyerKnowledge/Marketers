@@ -27,7 +27,11 @@ x-zendesk:
 | [<Image alt="Google_Play_Store.png" src="https://files.readme.io/d3e90dff6b5b007164d1ee1449cf3b9b39f52b6b710034137b4ab7640ce2dc57-360001467125.png" width="299px" />](https://play.google.com/store/apps/details?id=com.appsflyer.analytics) | [<Image alt="ios_App_Store.png" src="https://files.readme.io/516cd93b8a642bdf290e774936457c774e61f2493d3508a050c18c62378d2e7b-360001467145.png" width="299px" />](https://go.onelink.me/RJn0/support) |
 | --- | --- |
 
+<div id="the-appsflyer-mobile-app" />
+
 ## O aplicativo mobile da AppsFlyer
+
+<div id="log-in" />
 
 ### Login
 
@@ -42,6 +46,8 @@ Depois de fazer login, você verá a tela “My Apps”.
 Ela exibe todos os aplicativos na sua conta. Você pode filtrar facilmente apps de diferentes plataformas (iOS, Android e Windows) ou até mesmo apps pendentes.
 
 [![](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)
+
+<div id="app-overview-ltv" />
 
 ### Visão geral do aplicativo (LTV)
 
@@ -68,6 +74,8 @@ Toque fora da barra para repor a sua seleção.
 
 [![](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)
 
+<div id="filters" />
+
 ### Filtros
 
 O botão de filtros no canto superior direito da tela permite que você altere e filtre seu relatório.
@@ -76,11 +84,15 @@ No menu de filtros, você pode escolher entre “fonte de mídia” ou “geoloc
 
 [![](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)
 
+<div id="date-selector" />
+
 ### Seletor de datas
 
 Ao clicar no intervalo de datas, o seletor de datas é aberto. Com ele, você pode alternar facilmente entre datas predefinidas ou escolher intervalos de datas personalizados (selecione o intervalo de datas desejado no calendário).
 
 [![](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)
+
+<div id="account-overview" />
 
 ### Visão geral da conta
 
@@ -89,6 +101,8 @@ No menu superior esquerdo, selecione **Account Overview**. Isso fornece uma vis�
 Ao clicar no nome de um aplicativo na lista, você explora os detalhes da visão geral para esse aplicativo, mantendo as datas e os filtros configurados.
 
 ![Account_Overview.png](https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png)
+
+<div id="known-limitations" />
 
 ### Limitações conhecidas
 

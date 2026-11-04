@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Visão geral:** encontre as principais causas e soluções para o motivo pelo qual seu parceiro não está recebendo os postbacks esperados. Analise cada um dos tópicos abaixo e veja se eles podem ser a causa.
 
+<div id="check-the-integration-toggles" />
+
 ## Verifique as alavancas de integração
 
 Diferentes alavancas controlam diferentes partes da integração. O estado da alavanca pode ser o motivo para não receber postbacks.
@@ -66,6 +68,8 @@ A alavanca **<Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postb
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## Verifique a configuração do evento
 
@@ -127,6 +131,8 @@ Observe que, para <Anchor target="_blank" href="/marketers/pt/docs/self-reportin
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## Restrições de privacidade
 
 Nos casos a seguir, a AppsFlyer não envia postbacks devido a restrições de privacidade.
@@ -158,6 +164,8 @@ Um filtro de compartilhamento foi implementado no SDK para impedir que o parceir
 Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/apply-privacy-preserving-sdk-methods#como-impedir-o-compartilhamento-de-dados-com-ad-networks">Impedir o compartilhamento de dados com terceiros</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">setSharingFilterForPartners</Anchor>.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## Diversos
 
@@ -236,6 +244,8 @@ Há vários <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-netw
 Quando a Privacidade Avançada (AP) está ativada, os dados ao nível do utilizador de utilizadores sem consentimento que executam o iOS 14.5+ não ficam disponíveis através de postbacks. Os postbacks são enviados de acordo com o <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks#tipos-de-templates-para-envio-de-postbacks">template de Privacidade Avançada</Anchor>.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

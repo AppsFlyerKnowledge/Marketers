@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **Resumo:** a autenticação de dois fatores (2FA) oferece uma camada adicional de segurança no processo de login. As credenciais de login podem ser verificadas pelo Google Authenticator ou via SMS.
 
+<div id="highlights" />
+
 ## Destaques
 
 * A autenticação de dois fatores (2FA) é um recurso opcional, que deve ser ativado por um usuário administrador.
 * As opções de autenticação são **Google Authenticator** e **verificação por SMS.**
 * A ativação ou desativação desse recurso impacta todos os usuários da conta.
 * No momento da ativação, os usuários fazem o login e recebem uma solicitação para configurar a autenticação de dois fatores para o próximo login.
+
+<div id="-admin-managing-2fa" />
 
 ## ![admin.png](https://files.readme.io/d54680123b25ab7929285cebd778e0e74bd0d032df994b04d1bca106381c3dc6-360014518718.png) Admin: Gerir 2FA
 
@@ -42,6 +46,8 @@ Apenas um usuário administrador pode ativar, resetar ou desativar as configura�
 <Accordion title="Ativar">
 
 Se o administrador ativar tanto o **Google Authenticator** quanto a **verificação por SMS**, os usuários da conta podem escolher seu método preferido.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -86,6 +92,8 @@ Se a autenticação de dois fatores estiver desativada, os usuários da conta fa
 4. Confirme a desativação.
 
 </Accordion>
+
+<div id="account-users-using-google-or-microsoft-authenticator" />
 
 ## Usuários da conta: usando o Google Authenticator
 
@@ -132,6 +140,8 @@ Antes de usar a autenticação de dois fatores pela primeira vez, cada usuário 
 4. Clique em **verificar**. Em seguida, você será redirecionado para a página **meus aplicativos**.
 
 </Accordion>
+
+<div id="account-users-using-sms-verification" />
 
 ## Usuários da conta: verificação por SMS
 

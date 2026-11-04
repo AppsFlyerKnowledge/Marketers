@@ -23,11 +23,15 @@ x-zendesk:
 
 ## ![53375 imagem da KB de migração do Firebase.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
 
+<div id="about-the-migration" />
+
 ## Sobre a migração
 
 O <Anchor target="_blank" href="https://firebase.google.com/docs/dynamic-links">Firebase Dynamic Links</Anchor> do Google será descontinuado em 25 de agosto de 2025. A partir dessa data, todos os links veiculados pelo Firebase Dynamic Links (tanto os hospedados em domínios personalizados quanto os do subdomínio page.link) deixarão de funcionar, e a criação de novos links será desativada. Se você usa o Firebase Dynamic Links, é essencial tomar medidas proativas o quanto antes para migrar seus links para outro lugar e evitar interrupções nas jornadas dos usuários das suas campanhas.
 
 O OneLink da AppsFlyer permite criar facilmente links com atribuição, redirecionamento e recursos de deep linking em mídia própria ou paga, independentemente do dispositivo, sistema operacional, canal ou plataforma. Faça parceria com a AppsFlyer para criar jornadas contextuais e personalizadas que levem os usuários ao seu app e maximizem a conversão e a receita. Siga as instruções abaixo para começar a migrar seus links do Firebase Dynamic Links para a AppsFlyer.
+
+<div id="migrate-from-firebase-to-appsflyer" />
 
 ## Como migrar do Firebase para a AppsFlyer
 
@@ -88,6 +92,8 @@ O SDK da AppsFlyer integrado ao aplicativo é a conexão entre o aplicativo e a 
 
 Integre o SDK da AppsFlyer em seu aplicativo usando as etapas abaixo.
 
+<div id="appsflyer-sdk-integration-steps" />
+
 #### Etapas da Integração do SDK da AppsFlyer
 
 1. Integre o SDK da AppsFlyer ao aplicativo.  
@@ -124,6 +130,8 @@ A tabela abaixo lista todos os parâmetros do Firebase e os parâmetros correspo
 
 Use esta tabela como referência para todos os parâmetros que você usa atualmente ao migrar para a AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Observação:**
 >
 > Se um parâmetro do Firebase não estiver listado, é porque a AppsFlyer cobre isso na configuração do template do OneLink sem que você precise colocar um parâmetro nos seus links.
@@ -153,6 +161,8 @@ Use a tabela a seguir para determinar o método que melhor se adequa à sua nece
 |  | <Anchor target="_blank" href="/marketers/pt/docs/set-up-smart-script-to-convert-web-visitors">Smart Script</Anchor> | Se você quiser construir um link longo dinamicamente em uma página web para uma experiência web-to-app |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

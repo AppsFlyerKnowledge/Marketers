@@ -23,11 +23,15 @@ x-zendesk:
 
 <Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 
+<div id="about-the-integration" />
+
 ## Aba de integração
 
 O Bloomreach é uma plataforma de automação de marketing por e-mail e um provedor de serviços de e-mail (ESP) que ajuda marcas a criar experiências personalizadas em vários canais.
 
 A integração entre AppsFlyer e Bloomreach permite Deep linking contínuo a partir de campanhas de e-mail, oferece suporte à mensuração precisa do tráfego no Bloomreach e no AppsFlyer e ajuda a criar experiências de usuário integradas que impulsionam a conversão.
+
+<div id="set-up-the-integration" />
 
 ## Configurando o Amplitude
 
@@ -39,6 +43,8 @@ A configuração da integração exige ações no AppsFlyer e no Bloomreach. Par
 
 Primeiro, configure o OneLink no AppsFlyer e confirme que as configurações necessárias de hospedagem e domínio estão definidas.
 
+<div id="when-your-app-is-installed" />
+
 #### Quando o aplicativo está instalado
 
 Defina o comportamento de redirecionamento para usuários que já têm seu aplicativo instalado.
@@ -48,12 +54,16 @@ Defina o comportamento de redirecionamento para usuários que já têm seu aplic
 1. <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#como-criar-templates-do-onelink">Crie um template OneLink</Anchor> e configure Universal Links/App Links. Esse template será usado para criar links do OneLink para suas campanhas de e-mail.
 2. Se você já tiver um template do OneLink com Universal Links/App Links já configurados, você pode usá-lo.
 
+<div id="hosting-and-ssl" />
+
 #### Hospedagem e SSL
 
 * Os links do OneLink são protegidos por SSL e hospedados pela AppsFlyer.
 * O arquivo AASA e os arquivos App Link também são hospedados pela AppsFlyer.
 
 Consulte <Anchor target="_blank" href="/marketers/pt/docs/set-up-your-esp-integration-with-appsflyer#configure-seu-aplicativo-para-garantir-o-suporte-para-deep-linking">informações e instruções adicionais.</Anchor>
+
+<div id="app-domain-definition" />
 
 #### Definição do domínio do aplicativo
 
@@ -81,6 +91,10 @@ Consulte <Anchor target="_blank" href="https://documentation.bloomreach.com/enga
 
 <Image alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
 
+<div id="ios" />
+
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > Abaixo está um exemplo de um link Universal não encapsulado, com parâmetros de rastreamento da Bloomreach anexados:
@@ -102,6 +116,8 @@ Por fim, implemente os SDKs relevantes da Bloomreach para garantir que a mensura
 Implemente o <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">SDK mobile</Anchor> da Bloomreach para iOS e garanta que a mensuração do link Universal esteja configurada corretamente. O SDK da Bloomreach oferece suporte à mensuração de links Universal para capturar interações do usuário iniciadas por campanhas de e-mail.
 
 Consulte informações adicionais e instruções sobre <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/ios-sdk-universal-links#track-universal-links">links Universal</Anchor> e <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">SDKs mobile.</Anchor>
+
+<div id="android" />
 
 #### com o Android
 
@@ -138,11 +154,15 @@ Depois de concluir a configuração, envie um e-mail de teste para validar a int
 
 Quando todas as validações forem concluídas, a configuração da integração estará concluída.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Se os cliques não aparecerem na plataforma da Bloomreach, entre em contato com a equipe de suporte da Bloomreach.
 
 </Accordion>
+
+<div id="important-notes" />
 
 > 📘 **Observações importantes**
 >

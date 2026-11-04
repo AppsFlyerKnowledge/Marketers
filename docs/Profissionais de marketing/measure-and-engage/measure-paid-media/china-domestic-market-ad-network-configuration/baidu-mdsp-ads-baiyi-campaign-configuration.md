@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** o Baidu mDSP Ads (Baiyi), um parceiro integrado de ad network da AppsFlyer, é um provedor de soluções de publicidade e faz parte da Baidu, o mecanismo de busca dominante na China, com mais de 70% de participação de mercado.
 
+<div id="setting-up-baidu-mdso-ads-baiyi" />
+
 ## Configuração do Baidu mDSP Ads (Baiyi)
 
 1. No AppsFlyer, no menu lateral, selecione **Colaborar** **> Integrações de Parceiros** > **Marketplace de Parceiros**.
@@ -35,6 +37,8 @@ A janela de configuração do Baidu mDSP Ads (Baiyi) inclui 2 abas ativas: Integ
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita**, você deve ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para mais informações sobre a ativação de parceiros, por favor clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
@@ -44,6 +48,8 @@ Postbacks padrão
 A AppsFlyer pode enviar postbacks automáticos para o Baidu mDSP Ads (Baiyi) após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 ![baidu-mdsp-default-postbacks.png](https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png)
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -71,6 +77,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar ao Baidu
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -90,6 +98,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para obter mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição do AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas ao Baidu mDSP Ads (Baiyi).
@@ -99,6 +109,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de cliques aqui</Anchor>.
 
 ![baidu-mdsp-click-through.png](https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png)
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -129,6 +141,8 @@ A integração da receita publicitária não está disponível para o Baidu mDSP
 A configuração de permissões não está disponível para o Baidu mDSP Ads (Baiyi).
 
 </Accordion>
+
+<div id="create-conversion-rule-at-baidu-mdsp-ads" />
 
 ## Criar regra de conversão no Baidu mDSP Ads
 

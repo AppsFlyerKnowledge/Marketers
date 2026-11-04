@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** crie um template para definir uma lógica de redirecionamento para todos os seus links do OneLink em suas campanhas de marketing. Um template é necessário para criar links e experiências para seus usuários finais.
 
+<div id="onelink-templates" />
+
 ## Templates do OneLink
 
 <Embed title="Criar um template OneLink" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ O template do OneLink:
   * **Novos usuários que não têm o seu app instalado**: para a loja de aplicativos ou web URL ideal
   * **Usuários existentes com seu aplicativo instalado**: abrindo o seu app através de App Links do Android, Universal Links do iOS ou esquemas URI. Isso requer a ação de um desenvolvedor.
   * **Observação**: as configurações de redirecionamento do site ou da loja de aplicativos podem ser substituídas no nível do link.
+
+<div id="create-a-onelink-template" />
 
 ## Como criar templates do OneLink
 
@@ -53,6 +57,8 @@ O template do OneLink:
 2. Clique em **salvar template do OneLink** (atualize o template do OneLink para templates editados).A página de configuração abre.  
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. No campo **nome do template do OneLink**, insira um nome.
+
+   <div id="note" />
 
    > 📘 **Observação**
    >
@@ -185,6 +191,8 @@ Para oferecer a melhor experiência, segurança e cobertura aos seus usuários, 
 
    1. Entre em contato com seus desenvolvedores iOS e Android para configurar o esquema URI. Por exemplo: `feedmeapp://`.
 
+      <div id="tip" />
+
       > 👍 **Atenção**
       >
       > * A Apple e o Google não aplicam nomenclatura exclusiva para esquemas de aplicativos. **Escolha um nome de esquema exclusivo para a sua marca** para evitar esquemas conflitantes nos diferentes aplicativos. Uma sugestão de nome seria o bundle ID do seu aplicativo, por exemplo **com.empresa.app**.
@@ -208,6 +216,10 @@ Para oferecer a melhor experiência, segurança e cobertura aos seus usuários, 
    </Tabs>
 
 6. Clique em **Atualizar template do OneLink**.
+
+<div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
@@ -252,6 +264,8 @@ Você pode personalizar os QR codes gerados via OneLink:
 
 Um favicon é o pequeno ícone que aparece ao lado do título do seu link quando um link é compartilhado em redes sociais ou aplicativos de mensagens. Personalize a aparência adicionando seu próprio ícone aqui. Ele se aplica a todos os links baseados neste modelo e é exibido em plataformas compatíveis quando um link é compartilhado com uma pré-visualização personalizada de rede social configurada.
 
+<div id="note-2" />
+
 > 📘 **Importante!**
 >
 > Este favicon só aparece em pré-visualizações de links em plataformas compatíveis e somente quando a opção **Pré-visualização personalizada (imagem e tags)** está configurada no nível do link. <Anchor target="_blank" href="/marketers/pt/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags">Saiba mais</Anchor>
@@ -272,6 +286,8 @@ Um favicon é o pequeno ícone que aparece ao lado do título do seu link quando
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características e Limitações
 
 <div id="key-traits-and-limitations" />
@@ -291,6 +307,8 @@ Um favicon é o pequeno ícone que aparece ao lado do título do seu link quando
 </Accordion>
 
 Você tem alguma dúvida sobre os templates do OneLink? Confira nosso <Anchor target="_blank" href="/marketers/pt/docs/onelink-troubleshooting-and-faq#perguntas-frequentes-sobre-o-template-do-onelink">FAQ</Anchor>!
+
+<div id="next-step" />
 
 ## Próxima etapa
 

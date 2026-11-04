@@ -24,11 +24,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## Descodificar o valor de conversão SKAN
 
 Os anunciantes utilizam a descodificação do valor de conversão como uma alternativa à utilização das opções disponíveis no <Anchor target="_blank" href="/marketers/pt/docs/skan-conversion-studio">Conversion Studio</Anchor>. Se você usa Decodificação, significa que você é responsável por definir <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor> de acordo com a lógica do seu aplicativo.
 
 Além da definição do valor de conversão (CV) no aplicativo, as restantes opções de fluxo, funcionalidades e relatórios são as mesmas que as descritas no <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide">guia de soluções SKAN</Anchor>. Isto significa que, ao expirar a janela de atividade (controlada por você), o iOS envia o postback para a ad network, que o reencaminha para a AppsFlyer. A AppsFlyer descodifica o CV de acordo com o seu mapeamento em eventos processados tal como os CVs descodificados definidos pelo SDK.
+
+<div id="custom-conversion-valuedecode" />
 
 ## Valor de conversão personalizado-Decodificação
 
@@ -66,6 +70,8 @@ Considere o seguinte:
   * Nos relatórios e painéis agregados, a receita é calculada como a média do intervalo. Exemplo: min\_revenue=4 e max\_revenue=10. A receita calculada é de 7.
   * Os relatórios de dados brutos incluem a receita calculada (skad\_revenue), min\_revenue e max\_revenue.
 
+<div id="meta-specific-rules" />
+
 #### **Regras meta-específicas**
 
 Se você fizer a integração com Meta Ads, respeite as seguintes regras:
@@ -73,6 +79,8 @@ Se você fizer a integração com Meta Ads, respeite as seguintes regras:
 * Os valores mínimo e máximo de receita para um determinado valor de conversão devem ser diferentes. Ou seja eles não são iguais.
 * Os valores não se devem sobrepor e devem estar por ordem consecutiva, como ilustrado para conversion\_value 1-2 e 62 no quadro seguinte.
 * event\_counter: O Meta Ads não considera este valor. [Melhor prática] Preencha-o com um valor de 1.
+
+<div id="example-decode-mapping" />
 
 ### Exemplo: Mapeamento de descodificação
 
@@ -90,12 +98,16 @@ Se você fizer a integração com Meta Ads, respeite as seguintes regras:
 | 62 | af\_compra | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | evento\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### Exemplo A: Valor de conversão preciso 1
 
 | nome\_do\_evento | skad\_receita | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | instalação |  |  |  |  |
 | af\_compra | 1.5 | 0 | 3 | `{abc}` |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### Exemplo B: Valor de conversão preciso 2
 
@@ -105,6 +117,8 @@ Se você fizer a integração com Meta Ads, respeite as seguintes regras:
 | af\_compra | 6.5 | 3 | 10 | `{def}` |
 | af\_compra | 6.5 | 3 | 10 | `{def}` |
 | af\_compra | 6.5 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### Exemplo C: Valor de conversão preciso 21
 
@@ -121,6 +135,8 @@ Se você fizer a integração com Meta Ads, respeite as seguintes regras:
 | evento\_e |  |  |  |  |
 | evento\_f |  |  |  |  |
 | evento\_g |  |  |  |  |
+
+<div id="example-d-fine-conversion-value-62" />
 
 ### Exemplo D: Valor de conversão preciso 62
 
@@ -139,9 +155,13 @@ Se você fizer a integração com Meta Ads, respeite as seguintes regras:
 
 <Accordion title="Suporte a SSOT para o modo Decode">
 
+<div id="overview" />
+
 #### Informações
 
 Agora, clientes do modo Decode podem acessar a atribuição do SSOT (Single Source of Truth), trazendo benefícios de desduplicação que antes estavam disponíveis apenas para usuários do modo Encode. Isso melhora a mensuração da performance não orgânica sem exigir a implementação do modo encode.
+
+<div id="key-benefits" />
 
 #### Principais benefícios
 
@@ -152,6 +172,8 @@ Agora, clientes do modo Decode podem acessar a atribuição do SSOT (Single Sour
 * Desduplique instalações não orgânicas entre networks.
 * Habilite atribuição e relatórios mais precisos.
 * Reduza a complexidade de desenvolvimento e QA.
+
+<div id="how-to-enable-ssot-for-decode-mode" />
 
 #### Como ativar o SSOT para o modo Decode
 
@@ -164,6 +186,8 @@ Agora, clientes do modo Decode podem acessar a atribuição do SSOT (Single Sour
 5. **Acesse os relatórios**  
    Os dashboards do SSOT e os arquivos do DataLocker agora incluem dados do modo decode.
 
+<div id="faq" />
+
 #### Perguntas frequentes
 
 **P: Quando devo consultar a API para obter o sinalizador de atribuição do SSOT?**  
@@ -174,6 +198,8 @@ Agora, clientes do modo Decode podem acessar a atribuição do SSOT (Single Sour
 * Como alternativa, consulte uma vez pelo menos 25 segundos após a instalação para garantir a precisão.
 
 </Accordion>
+
+<div id="zd-decode-csv-file-specification" />
 
 <div id="decode-csv-file-specification" />
 
@@ -230,6 +256,8 @@ Os valores de conversão são mapeados para um ou mais eventos in-app.
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## Resolução de problemas no upload de arquivo CSV
 
 <div id="upload-error-messages" />
@@ -247,6 +275,8 @@ Um ou mais valores no arquivo não correspondem ao formato exigido: O formato do
 Ao usar o Excel/Planilhas Google para criar um arquivo CSV, as colunas event\_revenue\_usd precisam ser formatadas corretamente antes de salvar o arquivo como um arquivo CSV.
 
 Após salvar o arquivo CSV, verifique se o conteúdo está formatado corretamente. **Observação**: Não use o Excel para fazer a verificação, use um [editor](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel).
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### Formatação de células event\_revenue\_usd no Excel
 

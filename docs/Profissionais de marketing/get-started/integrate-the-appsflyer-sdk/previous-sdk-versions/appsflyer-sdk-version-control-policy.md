@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Resumo:** saiba mais sobre a política de controle de versão do SDK da AppsFlyer e quais versões serão mantidas.
 
+<div id="about-versioning" />
+
 ## Sobre o controle de versão
 
 Ao longo dos anos, a AppsFlyer lançou diversas versões do SDK. Cada uma delas faz chamadas para uma versão específica da API. Assim, o intuito da política de controle é definir por quanto tempo uma API será mantida ativa para certas versões do SDK.
+
+<div id="why-do-we-need-version-control" />
 
 ## Por que precisamos do controle de versão?
 
@@ -38,15 +42,21 @@ O objetivo do controle de versão é o seguinte:
 * Melhora a estabilidade (a compatibilidade com versões anteriores é de 2,5 anos), eliminando erros inesperados ao usar versões muito antigas do SDK.
 * Permite que você aproveite os novos recursos que exigem atualizações do SDK.
 
+<div id="sdk-version-lifecycles" />
+
 ## Ciclos de vida das versões do SDK
 
 Uma versão da API funciona por 2,5 anos. Sempre que uma nova versão principal ou secundária do SDK for lançada, a AppsFlyer definirá uma data de expiração para a versão secundária anterior (incluindo todas as suas versões de patch).
 
 **No próximo ciclo fixo de seis meses, as versões legadas do SDK para iOS e Android deixarão de ter suporte.** O objetivo desse ciclo é trazer um aviso prévio para que as equipes se planejem com antecedência e garantam a funcionalidade do aplicativo, evitando interrupções. A atualização para a versão mais recente do SDK garante acesso aos novos recursos, além de uma estabilidade aprimorada e suporte contínuo.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Para garantir uma transição fácil, recomendamos que os desenvolvedores de aplicativos atualizem para a versão mais recente do SDK antes da data final.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## Data final de suporte vs. data de desativação
 
@@ -55,11 +65,15 @@ A AppsFlyer faz uma distinção entre o status **desativada** e **sem suporte** 
 * **Versões desativadas:** versões do SDK que não são mais recomendadas devido a problemas conhecidos, como bugs críticos. Essas versões ainda podem enviar dados para a AppsFlyer, mas o uso contínuo não é recomendado. Queremos ressaltar a importância da atualização para uma versão mais recente.
 * **Versões sem suporte:** versões do SDK para as quais a mensuração foi totalmente interrompida em todas as plataformas. Para Android e iOS, instalações, sessões e eventos in-app deixam de ser mensurados. O tráfego vindo dessas versões retorna um código de status 400 (a menos que ele seja especificamente excluído pela AppsFlyer), o que significa que o SDK tentará enviar chamadas de API que serão rejeitadas pelos servidores da AppsFlyer, impedindo o processamento dos dados.
 
+<div id="what-happens-when-an-sdk-version-has-reached-its-end-of-support-date" />
+
 ## O que acontece quando uma versão do SDK chega à sua data de expiração?
 
 Quando isso acontece, os servidores da AppsFlyer deixam de mensurar instalações, sessões e eventos in-app. Os eventos que chegarem a esses endpoints serão simplesmente rejeitados.
 
 Como a adoção leva tempo, é **altamente recomendável** que seu desenvolvedor atualize para a versão mais recente do SDK com bastante antecedência da data de expiração.
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

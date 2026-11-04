@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Adcash, uma parceira integrada de ad network da AppsFlyer, é uma plataforma global de publicidade que oferece uma plataforma de autoatendimento do lado da demanda totalmente programável.
 
+<div id="setting-up-adcash" />
+
 ## Como configurar a Adcash
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -40,6 +42,8 @@ A janela de configuração da Adcash inclui 3 abas ativas: Integração, link de
 
 Para uma descrição detalhada da Janela de configuração de Pprceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -49,19 +53,27 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 <Accordion title="Aba Integração">
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na **primeira visita** aqui, você precisará ativar **Ativar parceiro** para permitir a configuração dos parâmetros da aba de integração. A opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 
 Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
 
+<div id="general-settings" />
+
 ### Configurações gerais
 
 Para habilitar a integração com a Adcash, insira suas credenciais de **ID do objetivo (Adcash)**. Observe que o ID não pode incluir símbolos nem espaços.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 Os postbacks padrão de instalações são enviados para a Adcash se tiverem sido atribuídos à Adcash, ou seja, se o usuário que realizou a instalação veio da Adcash.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -87,6 +99,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à Adcas
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -108,6 +122,8 @@ Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em 
 
 **Parâmetro do link de atribuição:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras aberturas) que acontecerem dentro da janela de lookback podem ser atribuídas à Adcash.
@@ -115,6 +131,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de cliques aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -145,6 +163,8 @@ A receita de anúncios não é compatível com a Adcash.
 Nesta aba, você pode selecionar as permissões para conceder à Adcash. Observe que, mesmo que a atribuição esteja desativada para a Adcash, a aba de permissões está ativa e você pode conceder controle à Adcash.
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

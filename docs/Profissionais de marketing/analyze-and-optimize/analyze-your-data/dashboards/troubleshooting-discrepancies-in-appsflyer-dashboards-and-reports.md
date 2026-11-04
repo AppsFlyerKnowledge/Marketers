@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **Resumo:** Entenda por que podem haver diferenças e discrepâncias na comparação de dados de diferentes dashboards e relatórios. Frequentemente, isso pode acontecer porque os dados em um local são dados de lifetime value (LTV) e em outro são dados de atividade. Os dados de LTV estão relacionados a instalações que ocorreram durante um intervalo de datas específico. Os dados de atividade são eventos que ocorreram durante um intervalo de datas específico.
 
+<div id="about-data-differences-and-discrepancies" />
+
 ## Sobre diferenças e discrepâncias de dados
 
 Ao comparar dados de diferentes dashboards e relatórios, o motivo comum para discrepâncias é o fato de que você pode não estar comparando os mesmos dados. Veja a checklist abaixo para garantir que você está comparando dados equivalentes:
@@ -45,6 +47,8 @@ Ao comparar dados de diferentes dashboards e relatórios, o motivo comum para di
 
 Um dos motivos mais comuns para diferenças nos dados é a comparação de um dashboard ou relatório de LTV com um dashboard ou relatório de atividade. Veja as seções a seguir para saber mais sobre as diferenças entre LTV e atividade.
 
+<div id="ltv-vs-activity" />
+
 ## LTV vs. atividade
 
 Há duas formas de analisar dados de eventos do usuário. Dados de evento se relacionam às ações executadas pelos usuários pós-instalação, como compras in-app, cadastros e níveis concluídos. Na AppsFlyer os dados de evento estão disponíveis agrupados pela data de aquisição de usuário ou pela data do evento em si.
@@ -56,16 +60,22 @@ Há duas formas de analisar dados de eventos do usuário. Dados de evento se rel
 
 Ambos os dados são úteis, mas para diferentes propósitos. Por isso, ambos estão disponíveis.
 
+<div id="ltv-data" />
+
 ### Dados de LTV
 
 * Dados de LTV são eventos executados durante o tempo de vida de um usuário que instalou o aplicativo/converteu em um intervalo de datas específico. O intervalo de datas refere-se a usuários que instalaram durante o período e mostra quão valiosos eles são durante seu tempo como clientes. Se um usuário converteu/instalou o aplicativo antes da data especificada, então mesmo que eventos ocorram durante o intervalo de datas especificado, eles não aparecem nos dashboards e relatórios de LTV.
 * Dados de LTV são uma ferramenta que mostra a qualidade dos usuários/span> a partir de diferentes fontes de mídia. A otimização de campanhas depende dos dados de LTV.
+
+<div id="activity-data" />
 
 ### Dados de atividade
 
 * Os dados de atividade mostram o que os usuários fizeram durante um intervalo de datas específico. Os dados de atividade mostram o que os usuários fizeram durante um intervalo de datas específico, ou seja, quais eventos foram realizados por usuários ativos do aplicativo durante um intervalo de datas especificado. Não importa se os usuários converteram/instalaram o aplicativo fora do intervalo de datas.
 * Como os dados de atividade exibem uma análise precisa dos eventos cronológicos, eles são úteis para mensurar a performance geral dos canais de mídia durante um intervalo de datas específico. Por exemplo, use os dados de atividade para ver quantos eventos de compra foram realizados por todos os usuários do aplicativo durante um mês específico.
 * Use os dados da atividade para comparar o comportamento do usuário no mês atual em relação a um mês anterior.
+
+<div id="the-train-analogy" />
 
 > 📄 **Analogia do trem**
 >
@@ -82,6 +92,8 @@ Ambos os dados são úteis, mas para diferentes propósitos. Por isso, ambos est
 > * Você não consegue ver as ações dos passageiros em outros vagões porque eles embarcaram no trem antes ou depois de você. Isso é o LTV.
 >
 > <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+
+<div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 
 ### Dashboards e relatórios da AppsFlyer—LTV ou atividade?
 
@@ -108,6 +120,8 @@ A tabela a seguir mostra quais dashboards e relatórios são de LTV e quais são
 | Master API - KPIs de performance da campanha | Ambos |
 | Tabela dinâmica | Ambos |
 
+<div id="compare-data-between-different-dashboards-and-reports" />
+
 ## Compare dados entre diferentes dashboards e relatórios
 
 As seções a seguir explicam como você pode comparar dados entre diferentes dashboards e relatórios enquanto reduz e soluciona diferenças e discrepâncias nos dados.
@@ -123,12 +137,16 @@ Ao comparar dados da AppsFlyer, considere que há 2 diferenças a serem consider
 
 Para comparar os dois tipos de dados corretamente, precisamos neutralizar as diferenças. Isso pode ser obtido recuperando dados de LTV dos dados da atividade ou vice-versa. **Atenção:** pequenas diferenças entre fontes semelhantes ainda podem ser observadas devido a diferenças no tempo de geração de relatórios.
 
+<div id="to-retrieve-ltv-data-out-of-raw-activity-data" />
+
 #### Para recuperar dados de LTV a partir de dados brutos de atividade:
 
 1. Na AppsFlyer, no menu lateral, selecione relatório > exportar dados brutos.
 2. Defina o **dia atual como o último dia** do intervalo de datas (problema 2 resolvido)
 3. Faça download do relatório de eventos in-app brutos.
 4. Use a coluna **Install Time** (Tempo de instalação) para filtrar as instalações anteriores ao primeiro dia do intervalo de datas (problema 1 resolvido)
+
+<div id="to-retrieve-activity-data-out-of-ltv-data" />
 
 #### Para recuperar dados de atividade a partir de dados de LTV:
 
@@ -181,6 +199,8 @@ Os eventos in-app aparecem tanto no LTV quanto na visualização de atividade no
 Ao reconciliar contagens de eventos com dados brutos, compare-as sempre com o dashboard de atividade ou com a visualização de atividade em My Dashboards, pois essas visualizações representam as ocorrências de eventos no dia em que ocorreram.
 
 As diferenças geralmente surgem quando os dados brutos não são filtrados corretamente, especialmente para eventos de retargeting.
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
 
 #### **Reconciliar dados brutos com métricas de eventos de atividade**
 

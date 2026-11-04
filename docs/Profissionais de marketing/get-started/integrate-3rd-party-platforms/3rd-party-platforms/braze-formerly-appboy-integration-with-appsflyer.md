@@ -34,6 +34,8 @@ Saiba mais em <Anchor target="_blank" href="https://www.braze.com/">braze.com</A
 > * <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídia</Anchor> restringem o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
 > * Os postbacks não serão enviados se a fonte for orgânica.
 
+<div id="integration-overview" />
+
 ## Visão geral da integração
 
 Siga as instruções abaixo para configurar a integração com a Braze.
@@ -103,6 +105,8 @@ AndroidiOSUnity
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Configurando a Braze
 
 **Pré-requisito:** Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -120,10 +124,14 @@ AndroidiOSUnity
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Na sua **primeira visita** aqui, você deve ***ativar o parceiro***para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -145,6 +153,8 @@ Depois de salvar a configuração, o AppsFlyer envia os seguintes dados à Braze
 * Nome da campanha
 * adgroup\_name
 * Nome do anúncio
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -187,6 +197,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Permissões não estão disponíveis para a Braze.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Visualizando dados de atribuição do usuário na Braze
 

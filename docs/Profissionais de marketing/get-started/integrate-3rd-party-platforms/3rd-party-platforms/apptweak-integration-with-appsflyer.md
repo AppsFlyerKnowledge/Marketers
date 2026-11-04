@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Resumo:** o AppTweak, um parceiro integrado da AppsFlyer, é um parceiro de aquisição na loja de aplicativos para líderes globais do setor mobile. O AppTweak oferece soluções para ajudar aplicativos e jogos a otimizar sua presença na loja de aplicativos e aumentar os downloads.
 
+<div id="overview" />
+
 ## Escritórios
 
 Esta integração permite que você conceda ao AppTweak permissão para acessar seus relatórios de análise agregados e relatórios do SKAN (para aplicativos iOS), usando o token de API deles. Consulte <Anchor target="_blank" href="/partners/pt/docs/access-to-aggregated-analytics-tools-for-api-partners">mais detalhes e limitações sobre essas permissões</Anchor>.
+
+<div id="setting-up-apptweak" />
 
 ## Configurando o AppTweak
 
@@ -43,6 +47,8 @@ Esta integração permite que você conceda ao AppTweak permissão para acessar 
      <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. Clique em **Salvar acesso à API**.
 7. Notifique o AppTweak de que você habilitou o acesso deles.
+
+<div id="note" />
 
 > 📘 **Nota**
 >

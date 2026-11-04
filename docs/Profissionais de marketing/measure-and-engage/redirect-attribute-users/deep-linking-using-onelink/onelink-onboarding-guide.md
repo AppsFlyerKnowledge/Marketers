@@ -24,6 +24,8 @@ x-zendesk:
 
 ## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
 
+<div id="about-onelink" />
+
 ## Sobre o OneLink
 
 O <Anchor target="_blank" href="/marketers/pt/docs/onelink-guide">OneLink</Anchor> da AppsFlyer permite que você crie links para as suas campanhas, oferecendo recursos de atribuição, redirecionamento e deep linking que impulsionam a conversão de visitantes casuais em usuários do seu aplicativo. Além disso, ele permite que você engaje usuários através de experiências contextuais relevantes, independentemente do dispositivo, sistema operacional, canal ou plataforma de onde eles vieram. Use o OneLink para criar jornadas contextuais e personalizadas que levam os usuários ao seu app e impulsione suas taxas de conversão e receitas. As experiências personalizadas que você pode criar incluem:
@@ -38,6 +40,8 @@ O <Anchor target="_blank" href="/marketers/pt/docs/onelink-guide">OneLink</Ancho
 * **Personalizado**: crie uma experiência personalizada com uma infinidade de opções para máxima personalização. Independentemente do canal de onde os seus usuários venham, seja via desktop ou celular, online ou offline, mídia própria ou paga, use o OneLink para enviá-los diretamente para o destino certo.
 
 **Observação:** Embora a configuração básica do OneLink esteja disponível nos planos gratuitos, a maioria das funcionalidades exige um plano de assinatura pago da AppsFlyer <Anchor target="_blank" href="/marketers/pt/docs/account-management-plans-payments-and-billing#appsflyer-plans">subscription plan</Anchor>.
+
+<div id="onelink-onboarding" />
 
 ## Integração do OneLink
 
@@ -61,6 +65,8 @@ O <Anchor target="_blank" href="/marketers/pt/docs/onelink-guide">OneLink</Ancho
 | **Funcionalidades opcionais** |  | Agora que está tudo configurado, você pode explorar e descobrir funcionalidades adicionais do OneLink, como:<ul><li>Web-to-app: Transforme usuários da web em usuários do app e mensure os funis web-to-app.</li><li><Anchor target="_blank" href="/marketers/pt/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">OneLink API</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/perform-onelink-bulk-actions-via-csv">criação de links em massa</Anchor>: Amplie e conduza múltiplas campanhas simultaneamente e crie milhares de links do OneLink de forma rápida e fácil.<br />*A OneLink API requer uma assinatura Enterprise.</li><li>Exportar URLs do OneLink: Baixe as URLs do OneLink criados na AppsFlyer.</li><li><Anchor target="_blank" href="/marketers/pt/docs/user-invite-attribution">Atribuição de convite de usuário</Anchor> - Crie engajamento integrando links de convite de usuário criados diretamente no aplicativo.</li><li><Anchor target="_blank" href="/marketers/pt/docs/cross-promotion-attribution-for-marketers">Atribuição de cross-promotion</Anchor>: os usuários existentes do seu aplicativo são excelentes candidatos para instalar seus novos aplicativos. Descubra como usar os métodos do SDK para criar e mensurar campanhas de promoção cruzada.</li><li><Anchor target="_blank" href="/marketers/pt/docs/understand-onelink-short-vs-long-urls">URLs longas</Anchor>: adicione parâmetros aos links personalizados do OneLink ou <Anchor target="_blank" href="/marketers/pt/docs/understand-onelink-short-vs-long-urls">gere um grande número de links personalizados do OneLink</Anchor> aplicando suas próprias fórmulas simples em uma planilha.</li></ul>**Observação:** A maioria das funcionalidades requer um <Anchor target="_blank" href="/marketers/pt/docs/account-management-plans-payments-and-billing#appsflyer-plans">plano de assinatura</Anchor> pago da AppsFlyer. | Profissional de marketing e desenvolvedor |
 
 Se precisar de ajuda para começar a usar o OneLink, fale com o seu representante de vendas ou escreva para [hello@appsflyer.com](mailto:hello@appsflyer.com)
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

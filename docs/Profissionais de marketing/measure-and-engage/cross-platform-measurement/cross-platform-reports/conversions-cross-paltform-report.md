@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **At a glance:** O relatório de conversões multiplataforma mostra a jornada completa do usuário por trás de cada conversão multiplataforma, incluindo toda a cadeia completa de engajamento de assistência e o contexto de receita — não apenas o último touchpoint.
 
+<div id="about-the-report" />
+
 ## Sobre o relatório
 
 O relatório de conversões multiplataforma é um relatório de dados brutos que fornece registros de conversão no nível do usuário, vinculados entre plataformas usando seu <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/set-customer-user-id">Customer User ID (CUID)</Anchor>. Isso permite analisar a jornada completa do usuário que levou a uma conversão, não apenas o último touchpoint.
 
 Para mais informações sobre o fluxo e a configuração da atribuição baseada em usuário, acesse <Anchor target="_blank" href="/marketers/pt/docs/beta-user-based-cross-platform-attribution">atribuição cross-platform baseada em usuário</Anchor>.
+
+<div id="report-fields" />
 
 ## Campos do relatório
 
@@ -40,6 +44,8 @@ O relatório contém três grupos de campos:
 * **Campos de assistência (1, 2 e 3):** para cada uma das três posições de assistência, o canal de mídia, a campanha, o conjunto de anúncios, o anúncio, a agência, o canal, o tipo e o subtipo de engajamento, o ID do site e o horário do evento correspondentes. Esses campos usam a convenção de nomenclatura `<field>__assist_1`, `<field>__assist_2` e `<field>__assist_3`.
 * **Campos de enriquecimento:** oferecem suporte à análise de lifetime value (LTV) no nível do usuário e à análise no nível do evento. Por exemplo, combine esses campos com os registros de conversão de um usuário para criar uma visualização de LTV por usuário entre plataformas.
 
+<div id="report-data-freshness" />
+
 ## Atualização dos dados do relatório
 
 O relatório executa um lote a cada 4 horas. Cada execução de lote processa eventos que entraram no banco de dados durante as últimas 4 horas. Por exemplo, a execução do lote das 8:00 AM processa eventos que entraram no banco de dados entre 3:00 AM e 7:00 AM.
@@ -49,6 +55,8 @@ O processo em lote aloca eventos para suas versões por hora correspondentes. Po
 > 📘 **Note**
 >
 > Normalmente, há um pequeno atraso entre o momento em que um evento ocorre e sua entrada no banco de dados. O relatório usa o horário de entrada no banco de dados para manter o agrupamento por hora preciso e consistente.
+
+<div id="example-the-8-am-batch-run" />
 
 ### Exemplo: a execução do lote das 8h
 
@@ -64,6 +72,8 @@ Algumas observações sobre este exemplo:
 * O lote não processa eventos da última hora antes da execução, para deixar tempo suficiente para enriquecer os eventos com o CUID relacionado. No exemplo acima, o lote das 8:00 AM processa eventos que entraram no banco de dados entre 3:00 e 7:00. Eventos que entraram no banco de dados entre 7:00 e 8:00 não são processados nessa execução.
 * O relatório fica disponível uma hora após a execução em lote, pois um processo interno atualiza o lote durante essa hora. No exemplo acima, o lote das 8:00h está disponível às 9:00h.
 
+<div id="subscribe-to-the-report" />
+
 ## Inscreva-se no relatório
 
 Para se inscrever no relatório:
@@ -72,6 +82,8 @@ Para se inscrever no relatório:
 2. No painel de conteúdo do **Data Locker**, role para baixo até a seção **Relatórios avançados**.
 3. Selecione **Conversões cross-platform**.
 
+<div id="access-the-report-data-in-your-cloud-bucket" />
+
 ## Acesse os dados do relatório no seu cloud bucket
 
 O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
@@ -79,6 +91,8 @@ O caminho (path) para o relatório consiste na seguinte hierarquia de pastas:
 ```text
 <bucket-name>/<DataLocker connection name>/t=conversions_user_level_cross_platform/dt=<yyyy-mm-dd>/h=<hour>/
 ```
+
+<div id="business-intelligence-bi-developer-considerations" />
 
 ## Considerações para desenvolvedores de business intelligence (BI)
 

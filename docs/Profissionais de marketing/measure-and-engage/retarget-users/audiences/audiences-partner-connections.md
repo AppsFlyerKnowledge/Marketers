@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Em resumo:**  Conecte suas audiências a parceiros.
 
+<div id="about-partner-connections" />
+
 ## Sobre as conexões de parceiros
 
 Uma conexão de parceiro permite que você envie sua audiência para parceiros de forma fácil e contínua para implementar campanhas personalizadas. Abaixo está uma lista de parceiros do Audiences, requisitos de conexão e os identificadores de usuário compatíveis com cada um.
@@ -244,6 +246,8 @@ Uma conexão de parceiro permite que você envie sua audiência para parceiros d
 | Zoneads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoneads.png" width="118px" /> | Insira a chave de importação de dados e o endpoint REST que você copiou da sua conta da Braze na etapa 3. | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Zoomd DSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png" width="118px" /> | Insira a chave de importação de dados e o endpoint REST que você copiou da sua conta da Braze na etapa 3. | <ul><li>IDFA</li><li>GAID</li></ul> |
 
+<div id="we-love-working-with-new-audiences-partners" />
+
 > 📘 **Adoramos trabalhar com novos parceiros do Audiences!**
 >
 > Se o parceiro que você está procurando não estiver na lista acima, fique à vontade para entrar em contato com seu CSM. Ele verificará com o parceiro quais são as opções disponíveis.
@@ -336,6 +340,8 @@ Criar uma integração S3 permite que a AppsFlyer envie device IDs da audiência
     ```
 12. Substitua **BUCKET-NAME** pelo nome do bucket para o qual você deseja que a AppsFlyer faça o upload da sua audiência.
 
+    <div id="note" />
+
     > 📘 **Atenção**
     >
     > A política deve conter apenas o root bucket, sem diretórios adicionais no path. Por exemplo, o recurso **arn:aws:s3:::BUCKET-NAME/Directory/\*** não é compatível. Se você precisar que os arquivos sejam transferidos para um diretório específico, veja o passo 14.
@@ -373,6 +379,8 @@ Criar uma integração S3 permite que a AppsFlyer envie device IDs da audiência
 
 <Accordion title="Braze">
 
+<div id="prerequisite" />
+
 > 🚧 **Pré-requisito**
 >
 > Certifique-se de que os SDKs da Braze e AppsFlyer estejam integrados ao seu app.
@@ -382,7 +390,7 @@ Criar uma integração S3 permite que a AppsFlyer envie device IDs da audiência
 > * Parâmetro de ID Externo do Braze
 > * Campo CUID
 >
-> #### USANDO UM PARÂMETRO DE ID EXTERNO DE BRAZE
+> #### <span id="using-a-braze-external-id-parameter"></span>USANDO UM PARÂMETRO DE ID EXTERNO DE BRAZE
 >
 > Para enviar audiências para a Braze, use a função `setPartnerData` do SDK da AppsFlyer para enviar o External ID de cada usuário da Braze para a AppsFlyer. Exemplos de utilização:
 >
@@ -410,6 +418,8 @@ Criar uma integração S3 permite que a AppsFlyer envie device IDs da audiência
 > </Tab>
 > </Tabs>
 >
+
+<div id="using-the-cuid-field" />
 
 #### USANDO O CAMPO CUID
 
@@ -580,6 +590,8 @@ Para permitir que a AppsFlyer envie audiências para o Google Ads, você deve re
 
 <Accordion title="Leanplum">
 
+<div id="prerequisite-1" />
+
 > 🚧 **Pré-requisito**
 >
 > Para enviar audiências com sucesso para o Leanplum:
@@ -611,6 +623,8 @@ Em até 30 minutos, a audiência e os usuários nele serão preenchidos no seu d
 <div id="moengage" />
 
 <Accordion title="MoEngage">
+
+<div id="prerequisite-2" />
 
 > 🚧 **Pré-requisito**
 >
@@ -678,6 +692,8 @@ A AppsFlyer envia um arquivo CSV com device IDs para o seu canal de Slack.
 6. Selecione sua **Empresa** e sua **Conta de anúncios**.
 7. Clique em **Agree** para autorizar.  
    Após alguns segundos, a janela de audiências do AppsFlyer é exibida.
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >

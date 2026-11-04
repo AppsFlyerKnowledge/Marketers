@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Visão geral:** Revise e gerencie o estado de todas as funcionalidades relacionadas à segurança da sua conta AppsFlyer num único local.
 
+<div id="what-can-i-do-from-the-security-center" />
+
 ## O que posso fazer no Centro de Segurança?
 
 O **Centro de Segurança** oferece uma visão geral do estado de segurança da sua conta AppsFlyer de forma rápida. Clique no botão em qualquer secção do **Centro de Segurança** para aceder às funcionalidades seguintes:

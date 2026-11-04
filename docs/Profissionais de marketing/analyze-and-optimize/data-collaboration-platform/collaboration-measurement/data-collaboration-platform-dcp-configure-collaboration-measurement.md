@@ -23,6 +23,8 @@ x-zendesk:
 ---
 **Resumo:** Aprenda a configurar a DCP para atribuição por SKU, com base nos dados de conversão, engajamento e mapeamento de campanhas.
 
+<div id="overview" />
+
 ## Visão geral
 
 Após <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement">preparar os dados de conversão, engajamento e mapeamento de campanhas</Anchor>, você pode configurar a DCP para mensuração e atribuição:
@@ -31,6 +33,8 @@ Após <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platfo
 2. [**Atribua tarefas**](#atribuir-a-tarefa-de-configuração) – O proprietário atribui cada tarefa de configuração ao colaborador com acesso aos dados relevantes.
 3. [**Configure tarefas**](#configurar-a-mensuração-de-campanhas-on-site-e-off-site) – Os colaboradores configuram conversões, engajamentos e mapeamento de campanhas. Isso inclui a configuração de campanhas on-site e off-site, para que todos os dados estejam conectados, mapeados e prontos para atribuição.
 4. <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-run-and-manage-measurement">**Execute e gerencie mensurações**</Anchor> – Execute mensurações históricas ou em tempo real, duplique-as, execute-as novamente ou altere o escopo.
+
+<div id="start-the-measurement-setup" />
 
 ## Iniciar a configuração de mensuração
 
@@ -44,6 +48,8 @@ Para iniciar a configuração de mensuração, siga estas etapas:
 
 [![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
 
+<div id="select-campaign-type-on-site-off-site-or-both" />
+
 ## Selecionar o tipo de campanha: on-site, off-site ou ambos
 
 Como os tipos de campanha on-site e off-site diferem pelo local de conversão e processo de atribuição, o proprietário da colaboração deve especificar o tipo de campanha antes de configurar a mensuração. Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">Mensuração de campanhas on-site e off-site</Anchor>.
@@ -55,6 +61,8 @@ Para selecionar o tipo de campanha, siga estas etapas:
    * [Configure a campanha on-site](#configurar-a-mensuração-de-campanhas-on-site-e-off-site),
    * [Configure a campanha off-site](#configure-offsite-campaign-measurement),
    * [Configure uma campanha on-site e off-site](#configure-combined-onsite-and-offsite-campaign-measurement).
+
+<div id="assign-configuration-task" />
 
 ## Atribuir a tarefa de configuração
 
@@ -94,6 +102,8 @@ Para remover uma atribuição da tarefa de configuração, siga as etapas abaixo
 2. Na etapa de configuração, remova o colaborador atribuído da lista **Responsável**.
 
 </Accordion>
+
+<div id="configure-on-site-and-off-site-campaign-measurement" />
 
 ## Configurar a mensuração de campanhas on-site e off-site
 

@@ -148,6 +148,8 @@ A página de exportação de dados brutos oferece relatórios com as caracterís
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Procedimentos
 
 <div id="create-a-default-report" />
@@ -194,6 +196,8 @@ Pode criar um relatório personalizado ao definir os seus filtros e campos.
    * **Número máximo de linhas por ficheiro:** [Opcional] Estabeleça o número máximo de linhas que um arquivo pode conter. Escolha entre 100, 200 mil, 500 mil ou 1 milhão de linhas.
    * **Fonte de mídia:** [Opcional] Apenas os eventos atribuídos às fontes de mídia selecionadas serão incluídos no relatório. Pode adicionar uma fonte de mídia à lista clicando em **Adicionar item**.
 
+     <div id="note" />
+
      > 📘 **Nota**
      >
      > PIDs web de self-reporting network (SRN), como `metaweb_int`, `googleds_int` ou `tiktokweb_int`, não aparecem automaticamente na lista suspensa de canal de mídia. Para filtrar postbacks de SRN da web, clique em **Add item** e insira manualmente o PID do canal de mídia web.
@@ -238,6 +242,8 @@ Pode criar um relatório personalizado ao definir os seus filtros e campos.
    * Durante a criação do relatório, pode continuar a trabalhar, gerar relatórios adicionais ou navegar para outras páginas.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

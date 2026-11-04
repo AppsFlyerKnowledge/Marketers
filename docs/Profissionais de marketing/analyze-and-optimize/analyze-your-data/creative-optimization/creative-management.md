@@ -24,6 +24,8 @@ x-zendesk:
 
 > **Resumo:** A gestão de criativos te ajuda a centralizar, revisar e lançar criativos com mais rapidez. Use-a para sincronizar os criativos do seu armazenamento de criativos, conferir o status da atividade em diferentes fontes de mídia, encontrar criativos relevantes e enviá-los diretamente para suas campanhas de fonte de mídia compatíveis.
 
+<div id="about-creative-management" />
+
 ## Sobre a solução
 
 A gestão de criativos é um hub centralizado para gerenciar assets de criativos durante todo o ciclo de vida, desde a sincronização do armazenamento até o upload das fontes de mídia.
@@ -38,6 +40,8 @@ Use a solução para:
 * Verificar os resultados do upload e quais criativos foram enviados com sucesso ou apresentaram falhas.
 
 Desenvolvida para escalar, a gestão de criativos ajuda as equipes de marketing e de criativos a reduzir o trabalho manual, otimizar o tempo de lançamento e aumentar a performance das campanhas.
+
+<div id="get-started" />
 
 ## Iniciar
 
@@ -59,6 +63,8 @@ Atualmente, a gestão de criativos é compatível com Google Drive e Dropbox. Ca
 
 * [Google Drive](#conectar-o-google-drive)
 * [Dropbox](#conectar-o-dropbox)
+
+<div id="connect-google-drive" />
 
 #### Conectar o Google Drive
 
@@ -84,6 +90,8 @@ Atualmente, a gestão de criativos é compatível com Google Drive e Dropbox. Ca
 <Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Clique em **Conectar**.
+
+<div id="connect-dropbox" />
 
 #### Conectar o Dropbox
 
@@ -117,6 +125,8 @@ A galeria de gestão de criativos é onde você revisa, busca, filtra e selecion
 Cada card representa um criativo. Um criativo pode incluir várias versões, como diferentes resoluções ou formatos. A partir do card, você descobre rapidamente se um criativo é novo e se está ativo ou inativo em todas as fontes de mídia. Você também consegue visualizar metadados de alto nível, como quando um criativo foi lançado pela primeira vez e quando foi sincronizado com a gestão de criativos. Cada criativo novo é automaticamente analisado e pontuado para te ajudar a escolher os melhores assets antes do lançamento. As pontuações variam de C (menos provável de sucesso) a A (maior chance de sucesso), ajudando a priorizar os criativos de melhor performance com confiança.
 
 <Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+
+<div id="filter-creatives" />
 
 #### Filtrar criativos
 
@@ -173,6 +183,8 @@ No caso do Google Ads, você pode enviar criativos para grupos de anúncios de p
 
 <Image alt="clique em Fazer upload para Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > Antes de enviar um lote grande pela primeira vez, recomendamos fazer um teste com um único criativo para confirmar se ele aparece corretamente na fonte de mídia.
@@ -218,6 +230,8 @@ No caso do TikTok Ads, você pode enviar criativos para anúncios de promoção 
 
 #### Unity Ads
 
+<div id="note-1" />
+
 > 📘 **Atenção**
 >
 > No caso do Unity Ads, você pode enviar criativos apenas para a biblioteca de criação do Unity. O upload direto para as campanhas será adicionado em breve.
@@ -231,6 +245,8 @@ No caso do TikTok Ads, você pode enviar criativos para anúncios de promoção 
 
 #### Mintegral
 
+<div id="note-2" />
+
 > 📘 **Atenção**
 >
 > No caso da Mintegral, você pode enviar criativos apenas para a biblioteca de criação da Mintegral. O upload direto para as campanhas será adicionado em breve.
@@ -243,6 +259,8 @@ No caso do TikTok Ads, você pode enviar criativos para anúncios de promoção 
 6. Clique em **Fazer upload para Mintegral**.
 
 #### AppLovin
+
+<div id="note-3" />
 
 > 📘 **Importante!**
 >
@@ -322,6 +340,8 @@ Use as informações sobre o status para responder a perguntas como:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características e limitações
 
 | Caraterística | Descrição |
@@ -332,6 +352,8 @@ Use as informações sobre o status para responder a perguntas como:
 | O método de upload varia de acordo com a ad network | O método de upload varia de acordo com a ad network.  <br />O Google Ads, o Meta Ads e o TikTok são compatíveis com o envio direto para campanhas (como anúncios ou conjuntos de criativos); atualmente, o Unity Ads e a Mintegral são compatíveis apenas com o envio para suas bibliotecas de criação. |
 | Requisitos de assets | Os formatos, as dimensões, a duração e o tamanho dos assets de criativos devem atender aos requisitos de cada ad network. |
 | Escopo do histórico de uploads | O histórico de uploads reflete o resultado dos uploads, não o status atual da veiculação ou moderação de um criativo. |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Em resumo:** Configure seus serviços na nuvem para que você possa conectar seus dados de fonte à DCP e exportar audiências para seus buckets de armazenamento na nuvem.
 
+<div id="about-cloud-service-setup" />
+
 ## Sobre a configuração de serviços em nuvem
 
 A DCP usa dois tipos de conexões para mover dados entre seus serviços na nuvem e a plataforma:
@@ -45,6 +47,8 @@ A tabela abaixo mostra quais serviços têm suporte para cada tipo de conexão:
 
 Para Amazon S3 e GCS, a mesma configuração e as mesmas permissões de bucket se aplicam tanto às conexões de fonte quanto às de armazenamento em nuvem, portanto não é necessária uma configuração separada para cada direção. A criação de uma conexão de fonte cria automaticamente uma conexão correspondente de armazenamento em nuvem (e vice-versa), e excluir uma exclui a outra, já que na prática é uma única conexão subjacente compartilhada entre as duas abas.
 
+<div id="set-up-your-cloud-services" />
+
 ## Configure seus cloud services
 
 Selecione abaixo seu serviço em nuvem para ver as instruções de configuração.
@@ -54,6 +58,8 @@ Selecione abaixo seu serviço em nuvem para ver as instruções de configuraçã
 <Accordion title="Amazon S3">
 
 Use as instruções a seguir para preparar um bucket do Amazon S3 para uso com a DCP.
+
+<div id="note" />
 
 > 📘 **Atenção**
 >
@@ -107,6 +113,8 @@ Use as instruções a seguir para preparar um bucket do Amazon S3 para uso com a
 5. No snippet, substitua `af-dcr-mybucket` (nas duas linhas em que ele aparece) pelo nome do bucket que você criou.
 6. Vá para qualquer uma das seções e selecione a opção desejada.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > Ao substituir o nome do bucket no snippet, não substitua `/*` na segunda linha em que o nome do bucket aparece.
@@ -118,6 +126,8 @@ Use as instruções a seguir para preparar um bucket do Amazon S3 para uso com a
 <Accordion title="Google Cloud Storage (GCS)">
 
 Use as instruções a seguir para preparar um bucket do GCS para uso com o DCP.
+
+<div id="note-1" />
 
 > 📘 **Atenção**
 >
@@ -153,6 +163,8 @@ Use as instruções a seguir para preparar um bucket do GCS para uso com o DCP.
 <Accordion title="BigQuery">
 
 O BigQuery oferece suporte apenas a conexões de fonte. Use as instruções a seguir para criar um conjunto de dados e conceder permissões à AppsFlyer.
+
+<div id="note-2" />
 
 > 📘 **Atenção**
 >
@@ -190,6 +202,8 @@ O BigQuery oferece suporte apenas a conexões de fonte. Use as instruções a se
 
 O Snowflake oferece suporte apenas a conexões de origem. Use as instruções a seguir para criar um compartilhamento privado para uso pelo DCP.
 
+<div id="note-3" />
+
 > 📘 **Atenção**
 >
 > O procedimento a seguir deve ser realizado por um **Accountadmin** do Snowflake.
@@ -223,6 +237,8 @@ O Salesforce Cloud/CRM dá suporte somente a conexões de fonte. Consulte <Ancho
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Especificações e limitações
 
 | Caraterística | Descrição |
@@ -231,6 +247,8 @@ O Salesforce Cloud/CRM dá suporte somente a conexões de fonte. Consulte <Ancho
 | Uso do bucket | Os buckets do S3 e do GCS devem ser de uso exclusivo do DCP. Nenhum outro serviço pode escrever dados no bucket. |
 | <span id="dcr-naming-requirements"></span>Requisitos de nomenclatura do DCR | Os seguintes requisitos de nomenclatura se aplicam a todas as entidades de dados do DCR, incluindo buckets, pastas e arquivos:<ul><li>**Comprimento máximo:** 200 caracteres</li><li>**Caracteres válidos:** letras (A-Z, a-z), números (0-9), hífens (-)</li><li>**Caracteres inválidos:** espaços e todos os outros símbolos ou caracteres especiais</li><li>Números e hífens não podem ser o primeiro caractere de um nome</li><li>**Somente caracteres de propósito específico:**<ul><li>Sinais de igual (=): somente em <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">nomes de pastas de data e versão</Anchor></li><li>Sublinhados {"(_):"} somente em <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format">nomes de arquivos GZIP com várias partes</Anchor> ou em arquivos <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files">{"_SUCCESS"}</Anchor></li><li>Pontos (.): somente imediatamente antes das extensões de nome de arquivo (.csv, .gzip)</li></ul></li></ul> |
 | Nomenclatura do bucket | Os nomes dos buckets devem começar com `af-dcr-` seguido do seu texto. Exemplo: `af-dcr-example-bucket`. |
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

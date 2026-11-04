@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumo:** Prepare seus dados de origem para maximizar as taxas de correspondência entre os conjuntos de dados dos colaboradores e otimizar os resultados da colaboração.
 
+<div id="about-data-preparation" />
+
 ## Sobre a preparação de dados
 
 A <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-guide">plataforma de colaboração de dados (DCP)</Anchor> da AppsFlyer foi concebida para ingerir e processar dados em grande escala: transacionais, no nível do usuário ou uma combinação de ambos, proveniente de vários colaboradores. Depois da ingestão, a DCP pode fazer a correspondência de usuários entre conjuntos de dados por meio de identificadores compartilhados (por exemplo, e-mails com hash ou números de telefone com hash) e permitir fluxos de trabalho de colaboração baseados em dados.
@@ -34,6 +36,8 @@ Este artigo descreve:
 * Quais estruturas de dados são recomendadas e quais não são
 * Como lidar com identificadores de múltiplos valores ao usar arquivos CSV
 
+<div id="understand-data-types" />
+
 ## Compreender os tipos de dados
 
 A maioria das fontes utilizadas em colaborações envolve um ou ambos os tipos de dados:
@@ -44,6 +48,8 @@ A maioria das fontes utilizadas em colaborações envolve um ou ambos os tipos d
 * **Dados transacionais (evento)**
   * **Objetivo:** Representar ações do usuário (compras, visitas e transações)
   * **Estrutura típica:** Várias linhas por usuário (porque um usuário pode ter muitas transações)
+
+<div id="data-structuring-guidelines" />
 
 ## Diretrizes para estruturação de dados
 
@@ -62,6 +68,8 @@ Esta seção descreve as diretrizes para estruturação de dados da DCP e as pr�
 4. Para conjuntos de dados transacionais (e outros tipos de dados, quando aplicável), **utilize a ferramenta de visualização de dados da DCP para criar um subconjunto dos seus dados** voltado para negócios, com privacidade preservada e otimizado para colaboração, e compartilhá-lo no lugar das tabelas brutas. [Por que as visualizações de dados são recomendadas](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended).
 
 Embora outras estruturas possam ser usadas, talvez elas não sejam ideais para aproveitar a DCP ao máximo. Veja as [estruturas de dados que não são recomendadas](#data-structures-that-arent-recommended).
+
+<div id="recommended-identifier-structures" />
 
 #### Estruturas de identificadores recomendadas
 
@@ -130,6 +138,8 @@ Essa estrutura deve ser representada como **arrays nativos**.
 
 <Accordion title="Lista de verificação prática para estruturação de dados">
 
+<div id="identity-user-level-dataset-checklist" />
+
 #### Lista de verificação do conjunto de dados de identidade (nível do usuário)
 
 * Uma linha representa um usuário.
@@ -137,10 +147,14 @@ Essa estrutura deve ser representada como **arrays nativos**.
 * Se existirem múltiplos valores (por exemplo, vários e-mails), use arrays nativos sempre que possível.
 * Evite listas nas células, “email\_1/email\_2/email\_3" e estruturas de identidade com várias linhas.
 
+<div id="transactional-events-dataset-checklist" />
+
 #### Lista de verificação do conjunto de dados transacionais (eventos)
 
 * Mantenha as linhas de evento/transação inalteradas. Veja [exemplos de dados transacionais](#appendix-a-transactional-data-examples)
 * Use as [visualizações de dados](#appendix-c-why-dataviews-matter-and-recommended) para criar resumos no nível do usuário prontos para colaboração, quando apropriado.
+
+<div id="data-views-checklist" />
 
 #### Lista de verificação de visualizações de dados
 
@@ -161,6 +175,8 @@ A DCP permite a ingestão através de vários serviços em nuvem, como:
 * Google Cloud Storage
 * BigQuery
 * Snowflake
+
+<div id="format-guidance" />
 
 #### Diretrizes de formato
 
@@ -183,6 +199,8 @@ Veja os [assets de exemplo específicos do conector (AWS S3, GCS, BigQuery e Sno
 
 Certos tipos de estruturação de dados são ideais para a ingestão na DCP, mas outros não. Abaixo está uma lista de estruturas de dados que **não são recomendadas**:
 
+<div id="avoid-multiple-columns-for-the-same-identifier-type" />
+
 #### Evite várias colunas para o mesmo tipo de identificador
 
 Exemplos como “e-mail primário/secundário/terciário” devem ser evitados.
@@ -199,6 +217,8 @@ Exemplos como “e-mail primário/secundário/terciário” devem ser evitados.
 * O número de valores por usuário é imprevisível
 * Problemas com excesso de colunas manutenção de esquemas
 
+<div id="avoid-lists-inside-a-single-cell-free-text" />
+
 #### Evite listas dentro de uma única célula (texto livre)
 
 Mesmo que pareça conveniente, está sujeito a erros.
@@ -214,6 +234,8 @@ Mesmo que pareça conveniente, está sujeito a erros.
 * Não é um verdadeiro tipo de array
 * Problemas de formatação/escape são comuns
 * Pequenas inconsistências podem interromper a ingestão
+
+<div id="avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table" />
 
 #### Evite várias linhas por usuário para identificadores (quando seu objetivo é uma tabela de identidade do usuário)
 
@@ -237,6 +259,8 @@ Mantenha uma única linha por usuário sempre que possível, sem distribuir os d
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 
@@ -265,6 +289,8 @@ Os dados transacionais/eventos podem ter várias linhas por usuário:
 
 <Accordion title="Assets de exemplos específicos do conector (AWS S3, GCS, BigQuery e Snowflake)">
 
+<div id="what-does-arraylist-of-identifiers-mean" />
+
 ### O que significa “array/lista de identificadores”?
 
 Às vezes, um único usuário pode ter mais do que um e-mail ou número de telefone (por exemplo, um pessoal e outro profissional). Em vez de adicionar colunas extras ou usar campos de texto pouco estruturados, representamos esses dados como uma lista de valores.
@@ -273,6 +299,8 @@ Os dados transacionais/eventos podem ter várias linhas por usuário:
 | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
+
+<div id="1-aws-s3-and-gcs-connector-parquet" />
 
 ### 1. Conector do AWS S3 e do GCS (Parquet)
 
@@ -287,6 +315,8 @@ Os dados transacionais/eventos podem ter várias linhas por usuário:
 
 O Parquet oferece suporte nativo a listas; recomendado quando os usuários têm vários e-mails/números de telefone.
 
+<div id="2-bigquery-connector-table-preview-and-schema-screenshot" />
+
 ### 2. Conector do BigQuery (visualização da tabela e captura de tela do esquema)
 
 **Exemplo de esquema de identidade (BigQuery)**
@@ -299,6 +329,8 @@ O Parquet oferece suporte nativo a listas; recomendado quando os usuários têm 
 | maid | STRING | NULLABLE |
 
 Os arrays são nativos no BigQuery (campos REPEATED). Essa é a abordagem recomendada quando existem vários e-mails/números de telefone.
+
+<div id="3-snowflake-connector-table-preview-and-schema-screenshot" />
 
 ### 3. Conector do Snowflake (visualização da tabela e captura de tela do esquema)
 
@@ -321,10 +353,14 @@ O Snowflake oferece suporte a campos semelhantes a listas (arrays). Essa abordag
 
 As <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-customized-data-views">visualizações de dados</Anchor> são subconjuntos personalizados das suas fontes de dados existentes que você pode criar sem alterar o conjunto de dados original. Com elas, você pode realizar funções que modificam, refinam e resumem os dados para que você possa compartilhar apenas o que for relevante nas colaborações, mantendo os dados compartilhados claros e focados e todos os demais dados privados e seguros. Por que usar as visualizações de dados em colaborações?
 
+<div id="are-business-oriented-and-easier-to-collaborate-with" />
+
 #### São voltadas para negócios e facilitam a colaboração
 
 * As visualizações de dados permitem que você apresente os dados em uma estrutura organizada e voltada para negócios (por exemplo, “Visualização de identidade do cliente”, “Visualização de audiência elegível”, “Visualização de resumo de compras”) em vez de registros brutos ou esquemas transacionais complexos.
 * Elas ajudam a padronizar definições (por exemplo, “cliente ativo”, “gasto total dos últimos 30 dias”) para que ambos os lados estejam alinhados, com a mesma lógica.
+
+<div id="are-more-privacy-safe-by-design" />
 
 #### São projetadas para oferecer maior proteção à privacidade
 
@@ -334,6 +370,8 @@ As <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-
   * Limite a granularidade (por exemplo, compartilhe métricas agregadas em vez de transações no nível da linha)
   * Compartilhe apenas os identificadores necessários para a correspondência (e não outras colunas confidenciais)
 
+<div id="protect-sensitive-business-data" />
+
 #### Proteja dados confidenciais de negócios
 
 * As tabelas transacionais brutas podem conter sinais altamente confidenciais de negócios (por exemplo, comportamento de compras detalhado, padrões de preços, relacionamentos/relações comerciais e IDs internos).
@@ -341,6 +379,8 @@ As <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-
   * Exemplo: compartilhe dados agregados por categoria em vez de detalhes no nível do item
   * Exemplo: compartilhe faixas de gastos ou métricas resumidas em vez dos valores exatos de cada item
 * Isso reduz o risco de revelar acidentalmente informações competitivas ou proprietárias.
+
+<div id="can-make-your-data-more-cost-effective-and-performant" />
 
 #### Pode tornar seus dados mais econômicos e com uma performance melhor
 

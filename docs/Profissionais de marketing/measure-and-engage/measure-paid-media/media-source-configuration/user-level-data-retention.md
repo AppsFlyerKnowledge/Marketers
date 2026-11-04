@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **Resumo:** As políticas de retenção e uso de dados user-level (dados brutos) são determinadas pela AppsFlyer, por leis relevantes e pelos termos de uso de SRNs ("**parceiros**").
 
+<div id="caution" />
+
 > ❗️ **Atenção**
 >
 > Nesse artigo, essas explicações são fornecidas somente para fins informativos.  *Nada aqui declarado é aconselhamento jurídico. Esses fatos são fornecidos para sua informação e conveniência.*
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## Obrigações de retenção e exclusão de dados
 
 A AppsFlyer recebe dados user-level de aplicativos, parceiros e outras fontes.
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### Disponibilidade de dados user-level para anunciantes
 
 Normalmente, os dados user-level são disponibilizados aos anunciantes por meio de ferramentas de relatórios de dados brutos, se o pacote de assinatura incluir dados brutos durante uma janela de acesso de 90 dias (saiba mais em <Anchor target="_blank" href="/marketers/pt/docs/data-availability-windows">janelas de disponibilização de dados</Anchor>). Em alguns casos, existem <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions">restrições de dados brutos</Anchor>.
+
+<div id="data-retention" />
 
 ### Retenção de dados
 
@@ -63,6 +71,8 @@ Considere o seguinte:
   * Política de compartilhamento de dados de parceiros
   * <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">Privacidade Avançada Agregada</Anchor> está ativa
 
+<div id="partner-data-retention-periods" />
+
 #### Períodos de retenção de dados de parceiros
 
 | SRN/partner | Partner ID (PID) | Após a instalação, exclua os dados após [x] meses |
@@ -81,6 +91,8 @@ Considere o seguinte:
 | TikTok for Business* | tiktokglobal\_int | 13 |
 | X Ads (antigo Twitter) | twitter\_int | 3 |
 | Walmart | walmart\_int | 6 |
+
+<div id="note" />
 
 > 📘 **Atenção***
 >

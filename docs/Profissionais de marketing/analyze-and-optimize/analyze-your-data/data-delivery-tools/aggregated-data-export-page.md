@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Visão geral:** Descarregue relatórios agregados de LTV (lifetime value) filtrados por data de atribuição e fonte de media.
 
+<div id="aggregate-data-reports" />
+
 ## Relatórios de dados agregados
 
 Os relatórios de <Anchor target="_blank" href="/marketers/pt/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">aquisição de usuários</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/aggregated-and-analytics-reporting-overview#retargeting">de retargeting</Anchor> têm estas características:
@@ -37,6 +39,8 @@ Os relatórios de <Anchor target="_blank" href="/marketers/pt/docs/aggregated-an
 * Os relatórios podem conter até 200 mil linhas.
 * <Anchor target="_blank" href="/marketers/pt/docs/report-generation-quotas-rate-limitations">Limitações de taxa</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### Baixar relatórios de dados agregados
 
 Para baixar um relatório:
@@ -45,6 +49,8 @@ Para baixar um relatório:
 2. [Opcional] Selecione um canal de mídia.
 3. Selecione o intervalo de datas do Evento de atribuição.
 4. Selecione um relatório e clique em **Download.** Etapa 1:
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

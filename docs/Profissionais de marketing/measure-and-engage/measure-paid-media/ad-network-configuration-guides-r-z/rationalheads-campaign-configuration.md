@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Em resumo:** a Remerge, um parceiro integrado de ad network da AppsFlyer, permite que profissionais de marketing de aplicativos veiculem anúncios personalizados e melhor posicionados. Além da atribuição mobile por clique, a Remerge oferece atribuição mobile view-through e retargeting por clique, que podem ser registrados na AppsFlyer.
 
+<div id="setting-up-rationalheads" />
+
 ## Configuração da RationalHeads
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -40,6 +42,8 @@ A janela de configuração da RationalHeads inclui 3 abas ativas: Integração, 
 
 Para uma descrição detalhada da Janela de configuração de Pprceiros, clique <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aqui</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Dica**
 >
 > * A etapa <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#d-general-settings">Configurações gerais</Anchor> na aba Integração é **obrigatória** para todos os parceiros
@@ -51,6 +55,8 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="general-settings" />
+
 ### Configurações gerais
 
 **ID da Parte**
@@ -59,7 +65,11 @@ A RationalHeads se conecta à AppsFlyer por meio de um ID da Parte exclusivo. Se
 
 <Image alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
+
+<div id="activate-partner" />
 
 ### Ativar parceiro
 
@@ -68,6 +78,8 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 Envie postbacks automáticos para a RationalHeads após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos à RationalHeads.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -96,6 +108,8 @@ Nesta guia, você pode criar os links de atribuição que deseja enviar à Ratio
 
 Essa guia está dividida em diferentes seções:
 
+<div id="attribution-link-parameters" />
+
 ### Parâmetros de link de atribuição
 
 Nesta seção, selecione quais parâmetros você deseja adicionar ao link de atribuição.
@@ -115,6 +129,8 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>,
 
+<div id="click-through-attribution" />
+
 ### Atribuição de click-through
 
 Essa barra deslizante permite que você defina o **tempo máximo do clique até a instalação**. Somente as instalações (primeiras inicializações) que acontecerem dentro da janela de lookback podem ser atribuídas à RationalHeads.
@@ -122,6 +138,8 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 **Parâmetro do link de atribuição:** af\_click\_lookback
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Clique no link de atribuição
 
@@ -152,6 +170,8 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 Nesta aba, você pode selecionar as permissões a serem concedidas à RationalHeads, seja o parceiro uma ad network, uma agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a RationalHeads, a aba de permissões está ativa e você pode conceder controle à RationalHeads.
 
 Use essas chaves seletoras para conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

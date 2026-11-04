@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Em resumo:** Se você estiver migrando dos relatórios brutos clássicos do Data Locker, use este guia para encontrar as seleções exatas de filtros que reproduzem cada relatório clássico nos <Anchor target="_blank" href="/marketers/pt/docs/about-data-locker-advanced-reports">Relatórios avançados</Anchor>.
 
+<div id="overview" />
+
 ## Escritórios
 
 O Data Locker clássico entregava a jornada do usuário em vários tópicos de relatório separados. Os Relatórios avançados consolidam tudo isso em um relatório por produto de dados, cujo escopo você reduz usando filtros no nível do relatório.
@@ -33,6 +35,8 @@ Os três Relatórios avançados e os tópicos clássicos que eles substituem sã
 
 Para recriar um relatório clássico específico, aplique os filtros no nível do relatório descritos nas seções abaixo. Para ver a lista completa de filtros disponíveis por relatório, consulte <Anchor target="_blank" href="/marketers/pt/docs/about-data-locker-advanced-reports#filtros-no-nível-do-relatório">Filtros no nível do relatório</Anchor>.
 
+<div id="recreate-classic-reports-in-the-engagements-advanced-report" />
+
 ## Recriar relatórios clássicos no relatório avançado Engagements
 
 No Relatório avançado Engagements, defina o filtro **Tipo de campanha** para corresponder à categoria do relatório clássico (por exemplo, Aquisição de usuários ou retargeting) e o filtro **Tipo de engajamento** para corresponder ao tipo de evento (por exemplo, cliques ou impressões).
@@ -44,6 +48,8 @@ No Relatório avançado Engagements, defina o filtro **Tipo de campanha** para c
 | Retargeting – Cliques | Redirecionamento | `Clique` + `Clique engajado` |
 | Retargeting – Impressões | Redirecionamento | `View` + `Engaged view` |
 
+<div id="recreate-classic-reports-in-the-conversions-advanced-report" />
+
 ## Recriar relatórios clássicos no relatório avançado Conversions
 
 No Relatório avançado Conversions, defina o filtro **Tipo de conversão** para corresponder à categoria do relatório clássico (por exemplo, Aquisição de usuários ou retargeting) e o filtro **Grupo de plataformas** para corresponder à plataforma (por exemplo, mobile ou CTV).
@@ -53,6 +59,8 @@ No Relatório avançado Conversions, defina o filtro **Tipo de conversão** para
 | Aquisição de usuários – Instalações | Aquisição de usuários | Mobile | <ul><li>O valor do campo `conversion_name` é `INSTALL`.</li><li>Abrange instalações orgânicas e não orgânicas.</li></ul> |
 | Retargeting – Conversões | Redirecionamento | Mobile | <ul><li>O valor do campo `conversion_name` é `RE-ENGAGEMENT` ou `RE-ATTRIBUTION`.</li><li>Abrange apenas instalações não orgânicas.</li></ul> |
 | CTV – Instalações | Aquisição de usuários | CTV | <ul><li>O valor do campo `conversion_name` é `INSTALL`.</li><li>Abrange instalações orgânicas e não orgânicas.</li></ul> |
+
+<div id="recreate-classic-reports-in-the-end-user-events-advanced-report" />
 
 ## Recrie relatórios clássicos no relatório avançado de eventos do usuário final
 
@@ -67,11 +75,15 @@ No Relatório avançado de eventos do usuário final, defina o filtro **Tipo de 
 | CTV – Eventos in-app | `No aplicativo` | qualquer valor | CTV |  |
 | CTV – Sessões | `Sessão` | qualquer valor | CTV |  |
 
+<div id="traits-and-limitations" />
+
 ## Especificações e limitações
 
 | Caraterística | A descrição |
 | --- | --- |
 | Relatórios não reproduzíveis | Engajamentos entre plataformas, reinstalações e reinstalações orgânicas não são reproduzíveis usando os relatórios avançados. |
+
+<div id="see-also" />
 
 > 📄 **Consulte também**
 >

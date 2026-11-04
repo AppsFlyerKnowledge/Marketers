@@ -24,7 +24,11 @@ x-zendesk:
 
 > **Em resumo:** Execute consultas personalizadas do DCR em tempo real nos seus dados de atribuição no sistema da AppsFlyer, nas suas fontes personalizadas ou em uma combinação de ambos. Visualize os resultados das suas consultas ou baixe os resultados completos.
 
+<div id="overview" />
+
 ## Escritórios
+
+<div id="why-use-dynamic-query" />
 
 ### Por que usar o Dynamic Query?
 
@@ -35,6 +39,8 @@ O Dynamic Query permite executar consultas ad hoc e personalizadas nos seus dado
 
 O Dynamic Query está disponível para **todos os clientes do DCR**, permitindo que você execute consultas e visualize os resultados sem usar créditos do seu pacote de DCR. Os créditos só serão cobrados se você decidir fazer o download dos resultados completos. Dessa forma, você pode ter certeza de que configurou suas consultas corretamente e de que obterá as respostas de que precisa antes de gerar qualquer cobrança.
 
+<div id="query-language-and-dialect" />
+
 ### Linguagem e dialeto de consulta
 
 O Dynamic Query usa SQL **(dialeto Spark SQL)** e oferece suporte a:
@@ -43,6 +49,8 @@ O Dynamic Query usa SQL **(dialeto Spark SQL)** e oferece suporte a:
 * <Anchor target="_blank" href="https://spark.apache.org/docs/3.2.1/api/sql/">Funções SQL padrão</Anchor>
 * Funções definidas pelo usuário (UDFs), mediante solicitação do cliente
   * Se você precisar de uma função SQL não padrão, entre em contato com seu CSM ou com [hello@appsflyer.com](mailto:hello@appsflyer.com,) e faremos todo o possível para adicioná-la.
+
+<div id="available-sources" />
 
 ### Fontes disponíveis
 
@@ -59,9 +67,13 @@ Você pode consultar essas fontes individualmente ou [combinar 2 ou mais](#combi
 
 Com base nos tipos de fontes usados em uma consulta, [regras são aplicadas](#preservação-da-privacidade) para garantir a preservação rigorosa da privacidade do usuário.
 
+<div id="note" />
+
 > 📘 **Atenção**
 >
 > No momento, o Dynamic Query não consulta dados de atribuição nem retorna resultados da Meta (Facebook, Instagram etc.) Para consultar esses dados, configure os <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-reports">relatórios DCR</Anchor>. Para consultar esses dados, configure os <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-working-with-reports">relatórios DCR</Anchor>.
+
+<div id="preserving-privacy" />
 
 ### Preservação da privacidade
 
@@ -92,12 +104,18 @@ Para garantir que o Dynamic Query mantenha conformidade rigorosa com os padrões
 
 Para saber mais sobre o que *deve* e o que *não deve* ser feito na criação de consultas, veja exemplos e explicações de consultas [válidas](#queries-de-amostra) e [inválidas](#consultas-inválidas).
 
+<div id="accessing-dynamic-query" />
+
 ### Acesso ao Dynamic Query
 
 1. Na AppsFlyer, no menu lateral, vá para **Colaborar** > **Data Clean Room.**
 2. No menu superior, selecione a guia **Dynamic Query**.
 
+<div id="reference" />
+
 ## Referência
+
+<div id="query-reference" />
 
 ### Referência de consultas
 
@@ -156,6 +174,8 @@ Os dados de atribuição no sistema AppsFlyer existem em 8 tabelas diferentes:
 | impressions | Um anúncio é visualizado por um usuário do aplicativo ou visitante do site<ul><li>Dados disponíveis apenas para ad networks não SRN</li></ul> | 5 dias anteriores + dia atual |
 
 </Accordion>
+
+<div id="sample-queries" />
 
 ### Queries de amostra
 
@@ -248,6 +268,8 @@ GROUP BY conversion_type
 ```
 
 </Accordion>
+
+<div id="invalid-queries" />
 
 ### Consultas inválidas
 

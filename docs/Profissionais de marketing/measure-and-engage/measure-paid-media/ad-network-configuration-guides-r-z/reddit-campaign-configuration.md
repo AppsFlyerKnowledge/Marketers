@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Visão geral:** O Reddit, um parceiro integrado de ad network da AppsFlyer, abriga 430 milhões de usuários mensais altamente engajados que não podem ser encontrados em nenhum outro lugar.
 
+<div id="setting-up-reddit" />
+
 ## Configurando o Reddit
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -47,17 +49,25 @@ x-zendesk:
 
 A ***aba Integração*** é dividida em diferentes seções.
 
+<div id="activate-partners" />
+
 #### Ativar parceiros
 
 Para habilitar a configuração, <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ative o parceiro</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Privacidade avançada
 
 **Somente para aplicativos iOS, quando <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#b-advanced-privacy">a Privacidade Avançada (para iOS 14.5+ e posterior)</Anchor>** está ativada, você pode controlar quais dados são compartilhados com Reddit por meio de postbacks e relatórios.
 
+<div id="transaction-id" />
+
 #### ID da transação
 
 **Somente para aplicativos iOS, quando <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">Compartilhar ID de transação SKAN</Anchor>** está ativado, você está permitindo que a AppsFlyer compartilhe o ID da transação dos postbacks do SKAdNetwork com o Reddit. Ao fazê-lo, o Reddit pode decodificar seus Valores de Conversão da SKAdNetwork.
+
+<div id="general-settings" />
 
 #### Configurações gerais
 
@@ -69,12 +79,16 @@ Ative se quiser atribuir instalações de visualização a partir do Reddit. O c
 
 Ative esta opção para compartilhar campos de correspondência avançada, como e-mail com hash, número de telefone com hash, nome com hash e sobrenome com hash, com o Reddit, se esses campos estiverem incluídos nas informações do evento enviadas à AppsFlyer. Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/advanced-matching-data-sharing">Compartilhamento de dados de correspondência avançada (em inglês)</Anchor>.
 
+<div id="default-postbacks" />
+
 #### Postbacks padrão
 
 Envie postbacks automáticos para o Reddit após instalações de usuários. Selecione se deseja enviar postbacks para instalações atribuídas a:
 
 * Somente Reddit
 * Todas as fontes, incluindo orgânicas
+
+<div id="in-app-events-settings" />
 
 #### Configurações de eventos in-app
 
@@ -136,6 +150,8 @@ Os dados de receita publicitária não são compatíveis com o Reddit.
 
 Nesta aba, você pode selecionar as permissões para conceder ao Reddit. Observe que mesmo que a atribuição estiver desativada para o parceiro, a aba de permissões está ativa e você pode conceder controle ao Reddit.
 
+<div id="ad-network-permissions" />
+
 #### Permissões da ad network
 
 Nesta aba, você pode selecionar as permissões para conceder ao Reddit. Observe que mesmo que a atribuição estiver desativada para o parceiro, a aba de permissões está ativa e você pode conceder controle ao Reddit.
@@ -154,6 +170,8 @@ Use essas chaves seletoras a fim de conceder permissões à rede de anúncios pa
 Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões de ad networks</Anchor>.
 
 </Accordion>
+
+<div id="raw-data-restrictions" />
 
 ## Restrições de dados brutos
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** Baixe todos os URLs do OneLink criados na interface de usuário da AppsFlyer.
 
+<div id="export-onelink-urls" />
+
 ## Exportar URLs do OneLink
 
 Faça o download de um arquivo CSV de todos os URLs do OneLink criados por template do OneLink usando a configuração do OneLink na interface de usuário da AppsFlyer. (Os URLs do OneLink criados por meio do SDK, da API do OneLink ou do upload em massa não são exportados).
@@ -47,6 +49,8 @@ Para baixar o CSV:
 2. Selecione o template do OneLink para o qual você deseja uma lista de links.
 3. Clique em **Exportar**.  
    O arquivo CSV é baixado.
+
+<div id="traits-and-limitations" />
 
 ### Especificações e limitações
 

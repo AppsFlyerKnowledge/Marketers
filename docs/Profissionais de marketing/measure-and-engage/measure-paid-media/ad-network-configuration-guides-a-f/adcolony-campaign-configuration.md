@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral:** a AdColony, um parceiro integrado de ad network da AppsFlyer, é uma network de publicidade em vídeo premium, fornecendo a anunciantes e marcas uma audiência engajada e responsiva, além de oferecer soluções de monetização a publishers e desenvolvedores. Além da atribuição mobile baseada em cliques, a AdColony também oferece atribuição de custo, receita publicitária e view-through, que você pode registrar com a AppsFlyer.
 
+<div id="setting-up-adcolony" />
+
 ## Configurando a AdColony
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -44,15 +46,23 @@ x-zendesk:
 
 A aba **Integração** está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partners" />
+
 ### Ativar parceiros
 
 Na primeira visita, o <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">parceiro deve ser ativado</Anchor> acionando a opção ***Ativar parceiro***, para habilitar sua configuração.
 
+<div id="general-settings" />
+
 ### Configurações gerais
+
+<div id="enable-view-through-attribution" />
 
 #### Habilitar a atribuição de view-through
 
 Ative esta opção se quiser atribuir instalações view-through da AdColony. O controle deslizante de lookback de view-through está disponível na aba ***Link de atribuição***.
+
+<div id="default-postbacks" />
 
 ### Postbacks padrão
 
@@ -63,6 +73,8 @@ Selecione ***Todas as fontes, incluindo orgâni*co** para ter toda a sua base de
 
 Instalações rejeitadas podem ser enviadas para **Somente este parceiro**.
 
+<div id="launch-postbacks" />
+
 #### Postbacks de launch
 
 Desde 1º de julho de 2020, não enviamos mais postbacks de lançamento para a AdColony. Se a sua integração foi configurada antes dessa data, talvez haja alterações nas suas configurações. A tabela a seguir explica as possíveis alterações e as ações necessárias, quando aplicável:
@@ -72,6 +84,8 @@ Desde 1º de julho de 2020, não enviamos mais postbacks de lançamento para a A
 | Enviar para AdColony **todos os launches** (de todos os canais de mídia, incluindo orgânico) | Enviar para a AdColony:<ul><li>**todas as instalações** (de todos os canais de mídia, incluindo orgânico)</li><li>**todos os** `af_app_opened` **eventos** (de todos os canais de mídia, incluindo orgânico)</li></ul> | Nenhuma ação adicional é necessária. Esta atualização não tem impacto real na configuração. |
 | Enviar à AdColony **apenas as primeiras aberturas atribuídas** | Enviar à AdColony **instalações** atribuídas apenas à AdColony | Se você também quiser enviar eventos `af_app_open`:<ul><li>No AppsFlyer, na página de integração da AdColony, configure o envio do evento na seção ***Postbacks de eventos in-app***</li></ul> |
 | Enviar à AdColony **todas as aberturas** (de todos os canais de mídia, incluindo orgânico)<br /><br />**MAS**<br /><br />Nenhuma conversão foi atribuída à AdColony nos 3 meses anteriores a 1º de julho de 2020 | Enviar **todas as instalações**<br /><br />**AND**<br /><br />Durante 30 dias após 1º de julho de 2020, **todas as aberturas** | Se você também quiser enviar eventos `af_app_open`:<ul><li>No AppsFlyer, na página de integração da AdColony, configure o envio do evento na seção ***Postbacks de eventos in-app***.</li></ul>Se isso for feito durante o período de 30 dias, deixaremos de enviar todas as aberturas e passaremos a enviar todos os eventos `af_app_open`.<br /><br />Se isso for feito após o período de 30 dias, deixaremos de enviar aberturas e não enviaremos eventos `af_app_open` até que isso seja configurado de outra forma. |
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 
@@ -128,6 +142,8 @@ A receita de anúncios não é compatível no momento com esta integração de p
 Nesta aba, você pode selecionar as permissões para conceder à AdColony. Observe que, mesmo que a atribuição esteja desativada para a AdColony, a aba de permissões está ativa e você pode conceder controle à AdColony.
 
 Use essas chaves seletoras a fim de conceder permissões à rede de anúncios para gerenciar sua própria configuração do aplicativo:
+
+<div id="ad-network-permissions" />
 
 ### Permissões da rede de anúncios
 

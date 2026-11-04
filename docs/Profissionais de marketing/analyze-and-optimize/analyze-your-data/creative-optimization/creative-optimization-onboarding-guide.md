@@ -23,6 +23,8 @@ x-zendesk:
 
 ![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
 
+<div id="about-creative-optimization" />
+
 ## Sobre a otimização de criativos
 
 A Otimização de criativos é sua ferramenta completa para mensurar a performance criativa em todas as campanhas. Ela centraliza seus ativos criativos de todos os canais de mídia em uma única plataforma ou no seu sistema de BI. Usando algoritmos poderosos de IA, os criativos usados em diferentes campanhas e canais de mídia são analisados, agregados e correspondidos, aparecendo como um só nos dashboards independentemente das convenções de nomenclatura ou dos metadados. Você pode então analisar a performance por várias dimensões, métricas e KPIs.
@@ -35,6 +37,8 @@ Após concluir o Onboarding, você poderá:
 * Obtenha insights essenciais sobre suas campanhas e seus criativos e use essas informações para otimizar.
 
 Siga as instruções de Onboarding abaixo para colocar a Otimização de criativos em execução.
+
+<div id="creative-optimization-onboarding" />
 
 ## Onboarding da Otimização de criativos
 

@@ -20,11 +20,15 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo:** Envie dados do pedido em nível de item para a AppsFlyer com o parâmetro `af_order_info`. Ele é compatível com dois formatos consistentes para compras de um ou vários itens. A AppsFlyer mapeia isso automaticamente para a estrutura exigida por cada ad network.
 
+<div id="why-item-level-data-matters" />
+
 ## Por que os dados em nível de item são importantes
 
 `af_order_info` é um parâmetro de evento que reporta os itens individuais de um pedido, seja ele de um item ou de vários. Ele substitui os campos antigos `af_content` e `af_content_list` por um único formato, mais completo, para a mesma finalidade. Ele é compatível com dois formatos de array consistentes para pedidos com um ou vários itens e funciona em seis networks (Google Ads, DV360, Meta, TikTok, Snapchat e Pinterest), em vez de exigir uma estrutura separada para cada uma.
 
 Enviar esse nível de detalhamento é importante porque essas networks agora otimizam campanhas usando mais do que apenas o valor total de um pedido. Meta, Google, TikTok, Snapchat e Pinterest são compatíveis com algoritmos de otimização que funcionam no nível do produto, usando detalhes como ID do item, preço, quantidade, categoria e marca para melhorar a segmentação e o bidding. Quanto mais completo for o detalhamento dos itens que você enviar, mais essas networks poderão usar para ajustar essas campanhas com precisão.
+
+<div id="parameter-structure" />
 
 ## Estrutura dos parâmetros
 
@@ -104,6 +108,8 @@ O exemplo a seguir mostra o formato alternativo, com um objeto por item:
   ]
 }
 ```
+
+<div id="per-network-mapping" />
 
 ## Mapeamento por network
 
@@ -304,6 +310,8 @@ Para postbacks web, `contents` fica aninhado em `data[].custom_data`.
 
 </Accordion>
 
+<div id="backward-compatibility" />
+
 ## Compatibilidade com versões anteriores
 
 Os formatos existentes também continuam funcionando, incluindo os campos baseados em array `af_content_id`, `af_quantity` e `af_price`, além dos campos `af_content` e `af_content_list`. Você não precisa migrar implementações existentes. `af_order_info` estará disponível daqui para frente em um formato único e mais completo. Isso é particularmente útil se você quiser enviar detalhes mais avançados do item, como nome, categoria e marca, do que os formatos antigos oferecem suporte.
@@ -315,6 +323,8 @@ Os formatos existentes também continuam funcionando, incluindo os campos basead
 > Como af\_order\_info é compatível apenas com as networks listadas neste artigo, continue enviando essas informações nos campos existentes, como af\_content\_id, af\_content\_list, af\_content\_type e af\_quantity, se você executar campanhas com outras networks que precisem delas.
 >
 > Para a integração mobile da Meta, se você já enviava essas informações no formato esperado pela Meta (em af\_content, que a AppsFlyer mapeava para fb\_contents), agora pode remover esse campo do payload. A nova solução também é compatível com a Meta em fb\_contents por padrão.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 

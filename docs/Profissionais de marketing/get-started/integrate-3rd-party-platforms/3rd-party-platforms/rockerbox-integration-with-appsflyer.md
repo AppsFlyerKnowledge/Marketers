@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > <Anchor target="_blank" href="/marketers/pt/docs/about-raw-data-identifier-restrictions#restrições-por-fonte-de-mídia">Algumas fontes de mídiarestringem</Anchor> o compartilhamento de dados com terceiros. Portanto, os postbacks de eventos restritos não serão enviados para esse parceiro, independentemente da configuração de envio de postbacks.
+
+<div id="setting-up-rockerbox" />
 
 ## Configuração da Rockerbox
 
@@ -47,10 +51,14 @@ x-zendesk:
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 ### Ativar parceiro
 
 Esta opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ativação de parceiros</Anchor>.
+
+<div id="general-settings" />
 
 ### Configurações gerais
 
@@ -59,11 +67,15 @@ Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/partner-acti
 **Para conectar sua conta da Rockerbox à AppsFlyer,** insira o ID da sua conta em **ID da conta da Rockerbox**.   
 O ID da sua conta da Rockerbox está disponível na plataforma da Rockerbox em **Settings** > **Account** > **General**.
 
+<div id="default-postbacks" />
+
 ### Postbacks padrão
 
 A AppsFlyer pode enviar postbacks automáticos para a Rockerbox após instalações de usuários. Use esta seção para definir a fonte dos usuários para a qual os postbacks serão enviados para cada evento. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#default-postbacks">postbacks padrão</Anchor>.
 
 Para enviar postbacks para a Rockerbox de qualquer usuário que fizer o download do aplicativo, selecione **Todos os canais de mídia, incluindo orgânico**.
+
+<div id="in-app-events-settings" />
 
 ### Configurações de eventos in-app
 

@@ -19,15 +19,21 @@ x-zendesk:
   section_id: 4591191779217
   url: https://support.appsflyer.com/hc/pt/articles/24853411853329
 ---
+<div id="what-is-the-brands-directory" />
+
 ## O que é o Diretório de Marcas?
 
 O Diretório de Marcas é uma network exclusiva de anunciantes da AppsFlyer que recebem prioridade máxima em apresentações a Commerce Media Networks (CMNs).
+
+<div id="key-advantages-for-advertisers" />
 
 ### Principais vantagens para anunciantes
 
 * **Exposição a Commerce Media Networks:** as CMNs podem descobrir a sua marca e enviar ofertas a você sem nenhuma ação proativa da sua parte.
 * **Gratuito para anunciantes:** tanto entrar no Diretório de Marcas quanto usar a Data Collaboration Platform (DCP) da AppsFlyer são gratuitos.
 * **Sem compromisso:** você pode demonstrar interesse em se conectar com CMNs, e só faremos a apresentação depois de receber sua aprovação.
+
+<div id="faq" />
 
 ## Perguntas frequentes
 

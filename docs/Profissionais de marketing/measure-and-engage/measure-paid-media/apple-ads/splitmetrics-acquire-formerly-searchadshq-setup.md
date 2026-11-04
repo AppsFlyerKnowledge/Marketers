@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Em resumo:** Otimize campanhas do Apple Ads usando o SplitMetrics Acquire. Quando configurado, o AppsFlyer envia postbacks para o SplitMetrics Acquire.
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Ativando a atribuição do Apple Ads
 
 Tanto anunciantes quanto agências podem ativar a Atribuição para o Apple Ads.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -33,7 +37,11 @@ Tanto anunciantes quanto agências podem ativar a Atribuição para o Apple Ads.
 * **Anunciantes**: siga as instruções abaixo para ativar a atribuição para o Apple Ads.
 * **Agências**: <Anchor target="_blank" href="/marketers/pt/docs/apple-ads-integration-setup#agency-setup">siga estas instruções</Anchor> para ativar a atribuição para o Apple Ads.
 
+<div id="setting-up-splitmetrics-acquire-on-appsflyer" />
+
 ## Configurando o SplitMetrics Acquire na AppsFlyer
+
+<div id="getting-required-information-from-splitmetrics-acquire" />
 
 ### Como obter as informações necessárias no SplitMetrics Acquire
 
@@ -41,6 +49,8 @@ Antes de começar a configurar o SplitMetrics Acquire na AppsFlyer, obtenha seu 
 
 * Para o client\_id, acesse o dashboard do SplitMetrics Acquire e clique em **Integrations** > **AppsFlyer**. No pop-up que será aberto, copie o ID.
 * Para o ID do grupo de campanhas do Apple  Ads Campaign Group ID: **No dashboard do Apple Ads,** obtenha o parâmetro ID do grupo de campanhas do Apple Ads relacionado ao SplitMetrics Acquire. Use a captura de tela a seguir como um guia para localizar o ID.  ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+
+<div id="setting-up-campaigns-on-appsflyer" />
 
 ### Configurando campanhas na AppsFlyer
 
@@ -60,6 +70,8 @@ Antes de começar a configurar o SplitMetrics Acquire na AppsFlyer, obtenha seu 
    2. Procure e selecione o parceiro. Você é direcionado para a página de configuração do parceiro.
    3. Na aba **Integração**, clique em Ativar parceiro.
    4. Clique em **Salvar Integração**.
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### Configuração dos postbacks de eventos in-app
 

@@ -40,6 +40,8 @@ Você pode enviar relatórios facilmente para vários destinos em nuvem de uma s
 
 Os relatórios de Cost ETL incluem dados de custo vinculados à atribuição da AppsFlyer, incluindo métricas de atribuição como instalações, reatribuições e reengajamentos.
 
+<div id="four-types-of-cost-etl-reports" />
+
 ## Quatro tipos de relatórios de Cost ETL
 
 A AppsFlyer oferece quatro tipos de relatórios de Cost ETL, oferecendo suporte a diferentes necessidades de análise.
@@ -51,14 +53,20 @@ A AppsFlyer oferece quatro tipos de relatórios de Cost ETL, oferecendo suporte 
 * **All Cost Report**: uma visão abrangente dos dados de custos dentro e fora do mobile, provenientes diretamente das ad networks, sem dados de atribuição. Atualmente disponível para Google Ads, Meta Ads e TikTok.  
   <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdjA_4tdWBxxbI_ZM7mcZzCKhrWxQ-0m1DPIig-gMTpnDyLBDE_RGJ5zskNFpbsg/pub?gid=559626950&single=true&output=csv">Ver arquivo de amostra.</Anchor>
 
+  <div id="note" />
+
   > 📘 **Nota**
   >
   > Para começar a receber dados do Google Ads e Meta Ads no relatório de todos os custos, entre em contato com seu representante da AppsFlyer.
 
 
+<div id="cost-etl-report-types-overview-table" />
+
 ### Tabela de visão geral dos tipos de relatório de Cost ETL
 
 <table><thead><tr><th> </th><th>Summary</th><th>Geografia</th><th>Canal</th><th><strong>Relatório de todos os custos</strong></th></tr></thead><tbody><tr><td><strong>Para acessar o relatório</strong></td><td>Ative o Cost ETL. O Summary report é selecionado por padrão.</td><td>Ative o Cost ETL e selecione o Geo report.</td><td>Ative o Cost ETL e selecione o Channel report.</td><td>Ative o Cost ETL e selecione o <strong>Geo</strong> report. (o All Cost report não possui um seletor específico na página do Cost ETL)</td></tr><tr><td><strong>Onde encontrar o relatório</strong></td><td>Depende do serviço de conector de nuvem escolhido. Pode ser uma pasta (Summary) ou uma tabela dedicada.</td><td>Depende do serviço de conector de nuvem escolhido. Pode ser uma pasta (Geo) ou uma tabela dedicada.</td><td>Depende do serviço de conector de nuvem escolhido. Pode ser uma pasta (Channel) ou uma tabela dedicada.</td><td>Depende do serviço de conector de nuvem escolhido. Pode ser uma pasta (All Cost) ou uma tabela dedicada.</td></tr><tr><td><strong>Tipo de cobertura</strong></td><td><p>Custo mobile: sem limitações.<br/>CTV e custo da web - limitado a:<br/> </p><ol><li>Campanhas com pelo menos uma conversão</li><li>A fonte de custo é a InCost API, Cost Import, ou CPI</li></ol></td><td>Igual à do Summary report.</td><td>Igual à do Summary report.</td><td>Custo mobile, web, CTV, PC e console do Google Ads, Meta Ads e TikTok.</td></tr><tr><td><strong>Cobertura da fonte de mídia</strong></td><td>Sem limitações</td><td>Sem limitações</td><td>Sem limitações</td><td><ul><li> <strong>TikTok:</strong> os dados são adicionados automaticamente.</li><li> <strong>Google e Meta:</strong> entre em contato com seu CSM para ativar.</li></ul></td></tr><tr><td><strong>Granularidade do esquema</strong></td><td>Com base na configuração do cliente nas configurações de Cost ETL.</td><td><p>Com base na configuração do cliente nas configurações de Cost ETL.</p><p><br/>Para o Meta, a dimensão do canal não tem valores.</p></td><td><p>Com base na configuração do cliente nas configurações de Cost ETL.</p><p><br/>Para o Meta, a dimensão geo não tem valor.</p></td><td><p>Com base na configuração do cliente nas configurações de Cost ETL.</p><p>Para o Meta, a dimensão channel não é compatível.<br/><strong>Plataforma:</strong> uma nova dimensão da ad network que indica onde a campanha é executada (por exemplo, mobile, desktop, tablet).</p></td></tr><tr><td><strong>Dados de atribuição</strong></td><td>Com suporte.</td><td>Com suporte.</td><td>Com suporte.</td><td><p>Não compatível</p><p><br/>Os valores das métricas de atribuição são exibidos como zero (0), se forem configurados pelo cliente para fazer parte do esquema de Cost ETL.</p></td></tr><tr><td><strong>ID da aplicação</strong></td><td>Se a ad network não oferecer suporte à granularidade do App ID, o App ID é extraído dos dados de atribuição.</td><td>Igual à do Summary report.</td><td>Igual à do Summary report.</td><td><p>Extraído da ad network.</p><p><br/>Se o App ID não for relatado, o valor é considerado "unknown".</p></td></tr><tr><td><strong>Fonte de custo</strong></td><td>Integração da API (Cost + InCost), Cost Import, CPI</td><td>Igual à do Summary report.</td><td>Igual à do Summary report.</td><td>Somente integração da API.</td></tr><tr><td><strong>CNC</strong></td><td>Com suporte.</td><td>Com suporte.</td><td>Com suporte.</td><td>Não compatível</td></tr><tr><td><strong>Dados da agência</strong></td><td>Com suporte.</td><td>Com suporte.</td><td>Com suporte.</td><td><ul><li> <strong>Facebook e Meta:</strong> Indisponível.</li><li> <strong>TikTok:</strong> Disponível apenas para campanhas com App ID na AppsFlyer.</li></ul></td></tr><tr><td><strong>Taxa da agência</strong></td><td>Com suporte.</td><td>Com suporte.</td><td>Com suporte.</td><td>Indisponível. O valor é sempre 0.</td></tr><tr><td><strong>Pouca atualização</strong></td><td colspan="4">Os dados são coletados da ad network seis vezes por dia.<br/>Os relatórios podem ser entregues até 4 vezes por dia (com base na configuração do cliente).</td></tr></tbody></table>
+
+<div id="report-details" />
 
 ## Detalhes do relatório
 
@@ -95,6 +103,8 @@ Os dados registrados no serviço de nuvem ou bucket têm o diretório e a estrut
     * Cada pasta de versão contém arquivos parquet que contêm dados com numeração a partir de 1.
   * [Beta fechado] Todos os custos: Com base na dimensão geo, contém até 4 arquivos por dia.
 
+<div id="data-locker-connection-directory-structure" />
+
 #### Estrutura do diretório de conexão do Data Locker
 
 `///t=/dt=/v=<1/2/3/4>/`
@@ -108,6 +118,8 @@ Os dados registrados no serviço de nuvem ou bucket têm o diretório e a estrut
 | dt | <ul><li>A data do relatório, ou seja, a data em que o relatório foi enviado.</li><li>AAAA-MM-DD</li></ul> |
 | S | <ul><li>A versão cronológica do relatório por dia (até 4 relatórios diários)</li><li>Números inteiros entre 1-4</li></ul> |
 | Parquet file number | <ul><li>Numerados a partir de 00000</li><li>Exemplo: `part-`</li></ul> |
+
+<div id="cost-etl-connection-directory-structure" />
 
 #### Estrutura do diretório de conexão do Cost ETL
 
@@ -131,6 +143,8 @@ Os dados registrados no serviço de nuvem ou bucket têm o diretório e a estrut
 <div id="file-fields" />
 
 <Accordion title="Campos de arquivo">
+
+<div id="fieldsdimensions" />
 
 #### Campos/Dimensões
 
@@ -164,6 +178,8 @@ Os dados registrados no serviço de nuvem ou bucket têm o diretório e a estrut
 | platforma | A plataforma usada para executar a campanha (mobile, tablet, desktop e CTV) | Somente All Cost report | Sequência de caracteres | - |
 | id\_do\_site | ID do editor | Não | Sequência de caracteres | - |
 | Fuso horário | <ul><li>Fuso horário dos dados tal como estão armazenados na AppsFlyer</li><li>Às vezes, as ad networks comunicam dados em um fuso horário diferente daquele definido na AppsFlyer. Esse ponto de dados ajuda a explicar as discrepâncias de custo entre a AppsFlyer e as ad networks</li></ul> | Sim | Sequência de caracteres | - |
+
+<div id="metrics" />
 
 #### Métricas
 
@@ -199,6 +215,8 @@ Os dados registrados no serviço de nuvem ou bucket têm o diretório e a estrut
 | video\_completions | Reportado pela ad network |  | Número inteiro | - |
 
 </Accordion>
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -306,6 +324,8 @@ Você pode editar ou alterar conexões para obter dados enviados para locais dif
 
 **Atenção:** Depois de mudar para uma conexão existente, você não poderá reverter para a sua conexão anterior do Cost ETL.
 
+<div id="edit-connection" />
+
 #### Editar conexão
 
 **Para os editar detalhes de conexão**:
@@ -319,6 +339,8 @@ Você pode editar ou alterar conexões para obter dados enviados para locais dif
 3. Siga as instruções na tela para editar seus detalhes de conexão.
 4. Clique em **Salvar alterações** ou em **Aplicar** conforme solicitado.
 
+<div id="change-data-locker-connection" />
+
 #### Alterar conexão do Data Locker
 
 **Para mudar de uma conexão para outra**:
@@ -330,6 +352,8 @@ Você pode editar ou alterar conexões para obter dados enviados para locais dif
    * Se você ainda não tiver uma conexão do Data Locker que deseja configurar, clique em **+ Nova conexão no Data Locker** e crie uma conexão lá. Em seguida, volte para as configurações de Cost ETL e selecione-a no menu suspenso de **Conexão**.  
      [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
 3. Clique em **Salvar alterações**.
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
 
 #### Mudar a conexão do Cost ETL para Data Locker
 
@@ -370,6 +394,8 @@ No AWS, por padrão, quando a AppsFlyer registra objetos no seu bucket, o propri
 6. Clique em **Save**.
 
 </Accordion>
+
+<div id="best-practices" />
 
 ## Práticas recomendadas
 
@@ -542,6 +568,8 @@ where rank_for_dedup = 1;
 Você pode combinar relatórios de Cost ETL custo com relatórios agregados de Cohort (ou relatórios padrão de Cohort via Data Locker) em seu sistema de BI. Juntos, eles oferecem uma visão mais completa da sua performance de marketing com dados atualizados e precisos (incluindo cliques, impressões, custo, receita, eventos in-app, etc). Você pode usar esses dados combinados para acessar seu ROAS, CPA, etc. <Anchor target="_blank" href="/marketers/pt/docs/combine-cost-etl-and-cohort-reports-via-data-locker">Saiba mais</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informações adicionais
 

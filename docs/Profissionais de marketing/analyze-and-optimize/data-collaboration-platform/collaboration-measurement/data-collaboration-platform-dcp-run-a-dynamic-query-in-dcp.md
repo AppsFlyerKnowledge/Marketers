@@ -17,6 +17,8 @@ x-zendesk:
 ---
 > **Resumo:** Dynamic Query permite que você execute suas próprias consultas SQL diretamente nos dados da sua Plataforma de colaboração de dados (DCP). Consulte seus próprios dados, seus próprios dados de atribuição da AppsFlyer ou dados compartilhados em uma colaboração para responder a perguntas específicas sem configurar um relatório.
 
+<div id="about-dynamic-query" />
+
 ## Sobre o Dynamic Query
 
 O Dynamic Query permite que você execute consultas ad hoc e personalizadas nos seus dados da DCP em tempo real para responder às suas perguntas específicas de colaboração com rapidez e eficiência.
@@ -26,22 +28,32 @@ O Dynamic Query permite que você execute consultas ad hoc e personalizadas nos 
 
 O Dynamic Query funciona de forma diferente, dependendo se você consulta seus próprios dados ou dados compartilhados em uma colaboração.
 
+<div id="before-you-start" />
+
 ## Antes de começar
 
 Antes de executar qualquer consulta, <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">configure o destino do seu cloud bucket</Anchor>. Esta etapa é obrigatória, porque toda consulta é executada no seu próprio cloud bucket e grava os resultados diretamente no seu armazenamento. A AppsFlyer não armazena os resultados das suas consultas, então seus dados permanecem no seu próprio ambiente de nuvem.
 
+<div id="run-a-query-on-your-own-data" />
+
 ## Execute uma consulta nos seus próprios dados
 
 As seções a seguir abordam como acessar e consultar dados que pertencem a você. O painel Fontes aqui lista apenas as fontes que pertencem a você. Nesta visualização, você não pode adicionar a fonte de um colaborador. Se quiser consultar dados compartilhados com você em uma colaboração, consulte [Execute uma consulta com dados de colaboração](#).
+
+<div id="access-dynamic-query" />
 
 ### Acesse o Dynamic Query
 
 1. Na AppsFlyer, acesse o menu lateral > **Colaborar** > **Data Clean Room**.
 2. Selecione a aba **Dynamic Query**.
 
+<div id="write-your-query-on-your-own-data" />
+
 ### Escreva sua consulta nos seus próprios dados
 
 1. Navegue pelos campos da fonte no painel Fontes. Clique em um campo para visualizar seus valores distintos.
+
+   <div id="note" />
 
    > 📘 **Importante!**
    >
@@ -49,14 +61,20 @@ As seções a seguir abordam como acessar e consultar dados que pertencem a voc�
 
 2. Escreva sua consulta livremente, em nível bruto ou agregado, como preferir. Todas as fontes aqui pertencem a você, então não há verificação de permissão nem exigência de GROUP BY.
 
+   <div id="note-1" />
+
    > 📘 **Importante!**
    >
    > Se você também for cliente da AppsFlyer, poderá consultar seus dados de atribuição da AF dessa forma também, mas os resultados são apenas agregados, mesmo sendo seus próprios dados.
 
 
+<div id="run-a-query-with-collaboration-data" />
+
 ## Execute uma consulta com dados de colaboração
 
 As seções a seguir explicam como obter acesso e consultar os dados compartilhados com você em uma colaboração. Para consultar apenas os dados que pertencem a você, consulte [Executar uma consulta nos seus próprios dados](#).
+
+<div id="access-dynamic-query-in-a-collaboration" />
 
 ### Acesse o Dynamic Query em uma colaboração
 
@@ -66,9 +84,13 @@ As seções a seguir explicam como obter acesso e consultar os dados compartilha
 
 Quando você consulta dados compartilhados em uma colaboração, o Dynamic Query pode acessar todas as fontes <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-a-collaboration#step-4-associate-sources-optional">adicionadas a essa colaboração</Anchor>.
 
+<div id="write-your-query-with-collaboration-data" />
+
 ### Escreva sua consulta com dados de colaboração
 
 1. Explore os campos da fonte no painel Fontes. Clique em um campo para visualizar os valores distintos.
+
+   <div id="note-2" />
 
    > 📘 **Importante!**
    >
@@ -85,10 +107,14 @@ Quando você consulta dados compartilhados em uma colaboração, o Dynamic Query
 
 3. Escreva sua consulta com uma cláusula GROUP BY ou uma função de agregação, como `COUNT(*)`.
 
+   <div id="important" />
+
    > 🚧 **Importante:**
    >
    > Uma fonte que não pertence a você sempre retorna resultados agregados, independentemente do tipo de permissão sob o qual ela foi compartilhada. Os resultados em nível bruto permanecem disponíveis apenas para fontes que pertencem a você.
 
+
+<div id="explore-sample-queries" />
 
 ## Explore consultas de exemplo
 
@@ -161,6 +187,8 @@ LIMIT 20;
 
 </Accordion>
 
+<div id="view-and-download-query-results" />
+
 ## Visualize e faça download dos resultados da consulta
 
 As seções a seguir explicam como executar sua consulta e gerenciar os resultados.
@@ -173,6 +201,8 @@ Toda consulta é executada em um de dois modos:
 
 * **Dados de amostra** (padrão) são executados em um pequeno subconjunto dos seus dados, para que você possa refinar a consulta antes de executá-la no conjunto de dados completo.
 * **Todos os dados** é executado na fonte completa. Somente este modo tem um botão **Download**.
+
+<div id="note-3" />
 
 > 📘 **Importante!**
 >
@@ -200,6 +230,8 @@ Você pode fazer download de até 1 milhão de linhas diretamente. Se os resulta
 
 </Accordion>
 
+<div id="privacy-and-query-restrictions" />
+
 ## Privacidade e restrições de consulta
 
 A Dynamic Query aplica proteções de privacidade em vários níveis:
@@ -207,6 +239,8 @@ A Dynamic Query aplica proteções de privacidade em vários níveis:
 * Fontes que não pertencem a você sempre retornam resultados agregados; consulte [Executar uma consulta com dados de colaboração](#).
 * Campos de identificador do tipo chave, como AppsFlyer ID, Android ID e IDFA (identificador para anunciantes), sempre retornam como valores com hash nos resultados da consulta.
 * Valores distintos não estão disponíveis para campos categorizados como chaves, como AppsFlyer ID ou Android ID, ao navegar pelo painel Fontes.
+
+<div id="traits-and-limitations" />
 
 ## Especificações e limitações
 
@@ -216,6 +250,8 @@ A Dynamic Query aplica proteções de privacidade em vários níveis:
 | Limite de download | 1 milhão de linhas diretamente, 10 milhões de linhas pelo seu cloud bucket; entre em contato com seu CSM para expandir |
 | Configuração do cloud bucket | Obrigatória antes de você executar qualquer consulta, não apenas antes de fazer download |
 | Modos de execução | Dados de amostra (padrão, sem download) e Todos os dados (fonte completa, download disponível) |
+
+<div id="see-also" />
 
 ## Consulte também
 

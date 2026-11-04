@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **Visão geral:** Consulte a lista de nomes de eventos predefinidos e parâmetros de eventos para registar eventos pós-instalação na aplicação (como login, registo ou compra na aplicação).
 
+<div id="overview" />
+
 ## Resumo
 
 Os eventos in-app que você deseja enviar exigem que o desenvolvedor implemente o código quando aplicável ao seu app. Este artigo descreve os nomes e parâmetros de eventos predefinidos.
 
 Para ajudar você a determinar quais eventos e parâmetros registrar, consulte nossos <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#recommended-events-by-business-vertical">artigos que incluem exemplos e fluxos</Anchor> de acordo com as possíveis verticais de negócios.
+
+<div id="predefined-event-names" />
 
 ## Nomes de eventos predefinidos
 
@@ -794,6 +798,8 @@ Clique nos links para visualizar o mapeamento para SRNs.
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Se você estiver mapeando esse evento para o evento Meta ads StartTrial e quiser associar receita, use o parâmetro af\_price em vez do parâmetro af\_revenue.
@@ -948,13 +954,19 @@ Clique no link para ver o mapeamento para SRNs.
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Além dos nomes de eventos predefinidos descritos nesta seção, o <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-in-app-event-mapping#mapeamento-de-eventos-predefinidos">Meta ads oferece eventos adicionais</Anchor> que são enviados sem atributos.
 
+<div id="predefined-event-parameters" />
+
 ## Parâmetros de eventos predefinidos
 
 A seção a seguir oferece uma lista dos parâmetros de eventos predefinidos. Cada parâmetro de evento inclui o mapeamento usado para o Meta Ads, Google Ads, Snap, X Ads e Criteo. Você pode optar por incluir qualquer um dos parâmetros em um evento.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -1374,6 +1386,8 @@ O valor está na moeda da transação, expressa por af\_currency (USD por padrã
 
 **Observação:** Não há uma constante de SDK predefinida para esse parâmetro, então envie-o como um parâmetro personalizado com a chave af\_net\_revenue.
 
+<div id="note-3" />
+
 > 📘 **Atenção**
 >
 > Para aplicativos com a <Anchor target="_blank" href="/marketers/pt/docs/about-roi360-store-revenue">receita da loja do ROI360</Anchor> ativada, a AppsFlyer preenche af\_net\_revenue automaticamente nos eventos de compra in-app e de assinatura que registra, calculada como a receita bruta menos as taxas da loja de aplicativos e os impostos (líquida = bruta - taxas da loja - impostos).
@@ -1717,6 +1731,8 @@ A receita estimada que um anunciante espera de um usuário com base nas suas int
 
 **Descrição**: total das compras. af\_receita é considerada como receita na plataforma da AppsFlyer. Também conta a <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview#revenue-events">receita negativa</Anchor>, de cancelamentos ou reembolsos.
 
+<div id="important" />
+
 > 🚧 **Importante!**
 >
 > O valor da receita não deve conter separadores de vírgula, moeda, caracteres especiais ou texto. Por exemplo, um valor de receita deve ser semelhante a 1234,56. A AppsFlyer oferece o valor de receita com uma precisão de até cinco casas decimais.
@@ -1955,6 +1971,8 @@ Veja a seguir uma lista de parâmetros de eventos predefinidos que não incluem 
 * af\_tutorial\_id
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

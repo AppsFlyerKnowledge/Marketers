@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## Dashboards personalizados
 
 Cada dashboard personalizado consiste em um ou mais widgets contendo métricas de aquisição de usuários. Você configura o widget usando o assistente do widget para selecionar métricas, formato de apresentação, aplicativos e outros.
@@ -32,6 +34,8 @@ Cada dashboard personalizado consiste em um ou mais widgets contendo métricas d
 As métricas disponíveis são semelhantes às métricas de visualização de aquisição do usuário do dashboard de visão geral. Atenção! Não compare com a visão geral unificada **nem** com a visualização de retargeting.
 
 Após ser definido, o dashboard fica disponível para todos os usuários da conta.
+
+<div id="dashboard-personalization" />
 
 ## Personalização do dashboard
 
@@ -42,6 +46,8 @@ Você pode personalizar um dashboard ao mover e dimensionar widgets.
 | Redimensionar widget | Arraste o canto inferior direito de um widget para redimensioná-lo |
 | Posição do widget | Arraste e solte um widget para alterar sua localização em um dashboard |
 | Ações | Passe o mouse sobre um widget no canto superior direito, clique em ações. As seguintes ações estão disponíveis por widget:<ul><li>Editar</li><li>Duplicar</li><li>Excluir</li><li>Exportar CSV</li></ul> |
+
+<div id="procedures" />
 
 ## Procedimentos
 
@@ -116,6 +122,8 @@ Você pode personalizar um dashboard ao mover e dimensionar widgets.
    As datas nos arquivos CSV têm o formato dd/mm/aaaa. Você pode <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">convertê-las para um formato diferente</Anchor>, como mm/dd/aaaa no Excel.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e limitações
 

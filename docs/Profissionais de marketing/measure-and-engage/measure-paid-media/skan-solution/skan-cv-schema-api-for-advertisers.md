@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Em resumo:** Veja o esquema atual de valor de conversão (CV) do SKAdNetwork (SKAN) conforme configurado no AppsFlyer Conversion Studio.
 
+<div id="skan-conversion-value-schema-api" />
+
 ## API do esquema de valor de conversão da SKAN
 
 <div id="api-basics" />
@@ -37,6 +39,8 @@ x-zendesk:
 | Autorização | O cabeçalho HTTP `Authorization` que contém o token da API V2 (token Bearer) é obrigatório.<br /><br />![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)Um usuário administrador <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">obtém o token V2 no dashboard,</Anchor> from a barra superior, abra o menu da conta (lista suspensa do endereço de e-mail) > **Security Center** > **AppsFlyer API and S2S tokens**. |
 | Limitação de taxa | <ul><li>As consultas retornam até 50 mil linhas</li><li>10 chamadas por minuto</li></ul> |
 | Data da última  alteração de configuração | <ul><li>No modo de decodificação, a data é exibida no nome do arquivo.</li><li>Em todos os outros modos, a data é exibida na coluna last\_config\_change.</li></ul> |
+
+<div id="request-example-curl" />
 
 ### Exemplo de solicitação (cURL)
 

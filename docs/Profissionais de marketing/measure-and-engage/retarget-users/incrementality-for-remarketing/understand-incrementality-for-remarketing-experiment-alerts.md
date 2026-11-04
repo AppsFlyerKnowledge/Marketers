@@ -24,9 +24,13 @@ x-zendesk:
 
 ![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
 
+<div id="about-experiment-alerts" />
+
 ## Sobre os Alertas de Experiências
 
 Após <Anchor target="_blank" href="/marketers/pt/docs/run-an-incrementality-for-remarketing-experiment">configurar uma experiência de incrementalidade</Anchor>, poderá encontrar alertas no painel de controle de incrementalidade. Esses alertas foram criados para ajudar a identificar questões que possam comprometer a integridade e a exatidão dos resultados das experiências. Fornecem informações detalhadas sobre problemas e sugerem medidas que podem ser tomadas para resolvê-los, assegurando resultados precisos. Este artigo oferece uma visão geral detalhada dos diferentes tipos de alertas e das ações recomendadas para resolver os problemas.
+
+<div id="alert-types" />
 
 ## Tipos de Alertas
 
@@ -36,6 +40,8 @@ Os alertas de experiências estão divididos nas seguintes categorias:
 
 <Accordion title="Configuração da Experiência">
 
+<div id="audience-deletion-or-control-group-removal" />
+
 #### Exclusão de público ou remoção do grupo de controlo
 
 Experiências com públicos excluídos ou cujo grupo de controlo foi removido. Em ambos os casos, um erro 404 aparecerá ao visitar a página da experiência.
@@ -43,6 +49,8 @@ Experiências com públicos excluídos ou cujo grupo de controlo foi removido. E
 **Para resolver e restaurar os resultados da experiência:**  
 Se o **público-alvo foi removido** - entre em contacto com o seu CSM para que seja restaurado manualmente.  
 Se o **grupo de controlo foi removido** - divida novamente o público e configure o grupo de controlo para a mesma percentagem que estava antes.
+
+<div id="more-suitable-campaign-srns-only" />
 
 #### Campanha Mais Adequada? (apenas SRNs)
 
@@ -52,6 +60,8 @@ Uma "campanha mais adequada" é uma campanha ativa durante o período da experi�
 **Ações recomendadas:** Verifique se a campanha correta está ligada.
 
 **Nota:** Garanta também que o público-alvo não está incluído na configuração de segmentação de outras campanhas.
+
+<div id="no-impressions-non-srns-only" />
 
 #### Sem Impressões (apenas não SRNs)
 
@@ -66,6 +76,8 @@ Este alerta descreve uma situação em que, por algum motivo, não estamos a rec
 <div id="experiment-background-environment" />
 
 <Accordion title="Contexto da experiência">
+
+<div id="background-campaign-one-or-multiple" />
 
 #### Campanha de fundo (uma ou várias)
 
@@ -90,6 +102,8 @@ Não é incomum existirem campanhas não relacionadas em segundo plano, mas se e
 
 <Accordion title="Desempenho da campanha associada">
 
+<div id="audience-overlap" />
+
 #### Sobreposição de audiência
 
 A campanha conectada está a segmentar audiências que se sobrepõem. Isto significa que a configuração de segmentação da campanha ligada inclui mais de uma audiência.  
@@ -97,6 +111,8 @@ Além disso, as diversas audiências na configuração da campanha testada sobre
 
 **Ações a tomar:**  
 Atualize a segmentação da campanha para incluir apenas o público testado e remova todos os públicos adicionais.
+
+<div id="control-group-is-targeted" />
 
 #### Grupo de controlo a ser segmentado
 
@@ -113,11 +129,15 @@ Verifique os cenários comuns mencionados acima e contacte o seu CSM caso tenha 
 
 Se a infração for relativamente pequena, basta garantir que o alvo do grupo de controlo foi interrompido. Acompanhe o aviso na interface do utilizador do experimento e veja se o alerta ainda aparece após alguns dias.
 
+<div id="detailed-targeting-toggle-is-enabled" />
+
 #### A alternância de segmentação detalhada está ativada
 
 A segmentação detalhada é uma funcionalidade disponível em algumas redes de anúncios que permite afinar quem vê os seus anúncios. Este alerta aparecerá se a alternância de segmentação detalhada da campanha estiver ativada. Quando ativada, permitirá que a campanha alcance fora do público configurado.
 
 **Ações recomendadas:** Certifique-se de que a alternância de segmentação detalhada está desativada na configuração da campanha do parceiro.
+
+<div id="low-activity" />
 
 #### Baixa atividade
 
@@ -125,12 +145,16 @@ A campanha não está a exibir anúncios ou está a exibir muito poucos anúncio
 
 **Ações a tomar:** Investigue o problema no lado do parceiro de media para entender por que razão a campanha não está a apresentar anúncios.
 
+<div id="multiple-audiences-connected" />
+
 #### Múltiplos públicos conectados
 
 A configuração de segmentação da campanha inclui múltiplos públicos. Isto pode resultar na segmentação de pessoas fora do público testado ou do grupo de controlo, afetando, por fim, os resultados dos testes.
 
 **Ações a tomar:**  
 Uma prática recomendada para os testes de incrementalidade é que a campanha testada se dirija apenas a um público específico.
+
+<div id="out-of-audience-targeting" />
 
 #### Segmentação fora do público alvo
 

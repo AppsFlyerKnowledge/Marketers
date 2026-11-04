@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** meça campanhas de notificação push tanto no iOS quanto no Android.
 
+<div id="overview" />
+
 ## Visão geral
 
 A AppsFlyer tem compatibilidade com a métrica de campanhas de notificação push de todos os fornecedores de push, além de campanhas implementadas diretamente sobre o Firebase Cloud Messaging ou Apple Push Notification Services (APNS).
@@ -36,6 +38,8 @@ Há 2 maneiras possíveis de implementar a integração:
 * Ao enviar um objeto JSON com uma chave `af` no payload da notificação push.
 
 As conversões são exibidas no painel de visão geral, na visualização de retargeting ou unificada.
+
+<div id="how-does-it-work" />
 
 ## Como ela funciona?
 
@@ -49,9 +53,13 @@ Uma vez concluídas as etapas deste artigo, seu aplicativo funcionará da seguin
 
 No cenário OneLink, se o OneLink for configurado para encaminhar o usuário para um local específico no aplicativo, o fluxo do deep link é acionado.
 
+<div id="prerequisites" />
+
 ## Pré-requisitos
 
 Antes de continuar, certifique-se de que seu aplicativo tem <Anchor target="_blank" href="/marketers/pt/docs/basic-sdk-integration-guide">o SDK da AppsFlyer integrado</Anchor> **e** pode receber notificações push.
+
+<div id="steps" />
 
 ## Etapas
 
@@ -75,6 +83,10 @@ Primeiro, crie uma notificação push que contenha dados de atribuição usando 
 <Tabs>
 <Tab title="Usando OneLink (recomendado)">
 
+<div id="using-json-legacy" />
+
+<div id="using-onelink-recommended" />
+
 #### **Usando OneLink (recomendado)**
 
 Este é o método recomendado para integrar a AppsFlyer com notificações push.
@@ -94,6 +106,8 @@ Este é o método recomendado para integrar a AppsFlyer com notificações push.
 </Tab>
 
 <Tab title="Usar JSON">
+
+<div id="using-json" />
 
 #### **Usar JSON**
 

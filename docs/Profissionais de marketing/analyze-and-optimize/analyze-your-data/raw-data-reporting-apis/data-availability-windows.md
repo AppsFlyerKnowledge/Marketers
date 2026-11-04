@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Resumo:** a disponibilidade de dados depende do tipo de relatório e da janela de disponibilidade definida.
 
+<div id="data-availability-windows" />
+
 ## Janelas de disponibilidade de dados
 
 * Os termos **janela de disponibilidade** e **retenção de dados** têm significados diferentes. A <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">retenção de dados</Anchor> corresponde ao período em que mantemos os dados brutos em nossos servidores, com uma duração maior que a janela de disponibilidade.
 * A duração da janela depende do seu pacote de assinatura.
 * O artigo não se aplica ao <Anchor target="_blank" href="/marketers/pt/docs/data-locker-for-marketers">Data Locker</Anchor>.
+
+<div id="raw-data-availability-window" />
 
 ### Janela de disponibilidade de dados brutos
 
@@ -38,6 +42,8 @@ Uma janela de disponibilidade limita os dados fornecidos pela Pull API e pela p�
 | Atribuições | Instalações orgânicas, instalações não orgânicas, conversões de retargeting e desinstalações | 60 dos últimos 90 dias |
 | Eventos in-app | Eventos in-app orgânicos, eventos in-app não orgânicos e eventos in-app de retargeting | 31 dos últimos 90 dias |
 
+<div id="aggregated-data-availability-window" />
+
 ### Janela de disponibilidade de dados agregados
 
 A janela de disponibilidade limita os dados brutos fornecidos pela Pull API e pela página de exportação de dados brutos. A duração da janela depende do tipo de relatório, conforme detalhado na tabela abaixo.
@@ -45,6 +51,8 @@ A janela de disponibilidade limita os dados brutos fornecidos pela Pull API e pe
 | Relatório | Janela de disponibilidade |
 | --- | --- |
 | Relatórios agregados | 25 meses (2 anos + 1 mês), <Anchor target="_blank" href="/marketers/pt/docs/bulletin-aggregated-ltv-data-availability">a partir da primeira instalação do aplicativo</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **Veja também**
 >

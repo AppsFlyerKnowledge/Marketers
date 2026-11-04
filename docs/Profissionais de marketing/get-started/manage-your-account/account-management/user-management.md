@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Resumo:** crie e gerencie os usuários da sua conta na AppsFlyer e atribua permissões para acessar recursos, aplicativos e dados.
 
+<div id="overview" />
+
 ## Visão geral
 
 As contas da AppsFlyer permitem vários usuários, cada um com permissões gerenciadas individualmente. O número máximo de usuários por conta é determinado pelo seu plano de assinatura.
@@ -36,6 +38,8 @@ As permissões de cada usuário são definidas da seguinte maneira:
 As permissões dentro de cada uma dessas dimensões são atribuídas de forma independente. Ou seja, você pode atribuir uma **função** com amplos recursos funcionais a um usuário, mas permitir que ele exerça esses recursos apenas em um conjunto definido de **aplicativos, canais de mídia e geolocalizações.** A única exceção é a [função de administrador](#administrador), pois ela possui acesso a todos os recursos, aplicativos, canais de mídia e geolocalizações.
 
 Os administradores podem [adicionar usuários a várias contas](#multiple-accounts) para alternar facilmente entre contas.
+
+<div id="user-management-page" />
 
 ## Página de gestão de usuários
 
@@ -83,6 +87,8 @@ Clique no nome de qualquer função no painel esquerdo para ver os detalhes comp
 
 Listamos abaixo as ações disponíveis para garantir uma gestão eficaz dos seus usuários e suas respectivas funções.
 
+<div id="manage-users" />
+
 ## Gerenciar usuários
 
 Os administradores podem criar novos usuários, adicioná-los a várias contas, editar suas informações, como funções e acesso a aplicativos e dados, e excluir usuários. Algumas dessas ações podem ser feitas [em massa usando uma API dedicada](#gerenciar-usuários-em-massa-através-da-api).
@@ -94,6 +100,8 @@ Os administradores podem criar novos usuários, adicioná-los a várias contas, 
 <Embed title="Gerenciar usuários" typeOfEmbed="youtube" url="https://www.youtube.com/embed/wLCXP5dFrKg" providerUrl="https://www.youtube.com" />
 
 Na página dedicada para criar ou editar usuários inclui várias seções. Certifique-se de completá-las, conforme descrito abaixo. Quando terminar de fazer as alterações necessárias, clique em **salvar** no canto inferior direito da página.
+
+<div id="user-details" />
 
 #### Detalhes do usuário
 
@@ -107,6 +115,8 @@ Na página dedicada para criar ou editar usuários inclui várias seções. Cert
    * Dois pontos consecutivos (..) e outros caracteres especiais não são permitidos.
    * Você deve inserir um e-mail válido.
 
+   <div id="important" />
+
    > 🚧 **Importante!**
    >
    > O endereço de e-mail de um usuário é o que o identifica na plataforma da AppsFlyer, o que significa que:
@@ -117,9 +127,13 @@ Na página dedicada para criar ou editar usuários inclui várias seções. Cert
 
 4. [Opcional] Selecione o departamento do usuário.
 
+<div id="role" />
+
 #### Cargo
 
 Selecione a função do usuário (obrigatório) – pode ser uma função predefinida ou uma função personalizada que você já tenha criado.
+
+<div id="app-access" />
 
 #### Acesso ao aplicativo
 
@@ -128,17 +142,25 @@ Selecione quais aplicativos o usuário pode acessar:
 * A configuração padrão permite o acesso a todos os aplicativos atuais e futuros da conta. Para alterar essa configuração, use as caixas de seleção para marcar e desmarcar aplicativos.
 * Um usuário pode ter acesso a todos os aplicativos futuros somente se tiver acesso a todos os aplicativos atuais.
 
+<div id="data-access" />
+
 #### Acesso de dados
 
 Defina os níveis de acesso do usuário para fontes de mídia e geos. Você pode conceder acesso a tudo ou a opções específicas.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
 > Usuários com acesso limitado a fontes de mídia ou geos não conseguem acessar certos [dashboards e recursos](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
+<div id="media-sources" />
+
 #### Canais de mídia
 
 Por padrão, a configuração **todos** permite acesso a todas as fontes de mídia dentro da conta. Isso inclui aquelas que podem ser adicionadas no futuro. Selecionar fontes de mídia específicas não inclui acesso a futuras fontes de mídia.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -169,6 +191,8 @@ Existem dois tipos de fontes de mídia na lista:
 
 Após salvar, os dashboards dos usuários mostram apenas dados das fontes de mídia selecionadas.
 
+<div id="geos" />
+
 #### Geolocalização
 
 Selecione se os usuários podem acessar dados para **todas** as geos ou apenas geos específicas. A configuração padrão permite o acesso a todas as geos. Usuários com acesso limitado não conseguem acessar certos [dashboards e recursos](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
@@ -178,9 +202,13 @@ Selecione se os usuários podem acessar dados para **todas** as geos ou apenas g
 1. Em **geos**, clique em **todas (all)**.
 2. Na lista suspensa, selecione as geos específicas que o usuário pode acessar.
 
+<div id="user-activation" />
+
 #### Ativação do usuário
 
 Depois que o usuário for criado, você poderá vê-lo na tabela de usuários com um ícone de envelope ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png). Isso indica que um convite foi enviado e a conta está aguardando ativação. O usuário deve ativar sua conta através do link em seu e-mail. O link de ativação é válido por 48 horas. Depois que o usuário ativa a conta, o envelope desaparece.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -194,23 +222,33 @@ Depois que o usuário for criado, você poderá vê-lo na tabela de usuários co
 
 Os usuários podem ser adicionados a várias contas e atribuídos a diferentes funções em cada conta. Isso permite que os usuários trabalhem em diferentes contas, sem precisar alterar suas credenciais.
 
+<div id="log-in-to-multiple-accounts" />
+
 #### Login em mais de uma conta
 
 Os usuários podem fazer login em várias contas usando todos os métodos de login: credenciais (nome de usuário e senha), <Anchor target="_blank" href="/marketers/pt/docs/implementing-and-using-2fa-login">autenticação de dois fatores</Anchor> e <Anchor target="_blank" href="/marketers/pt/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO</Anchor>.
+
+<div id="note-3" />
 
 > 📘 **Importante!**
 >
 > Ao alternar entre contas (não durante o login inicial), os usuários também precisam inserir um código de verificação de 6 dígitos enviado para o e-mail, independentemente do método de login usado para entrar. <Anchor target="_blank" href="/marketers/pt/docs/welcome-to-appsflyer#alternar-entre-contas">Veja este artigo para mais informações sobre como alternar entre contas</Anchor>.
 
+<div id="supported-accounts-and-users" />
+
 #### Contas e usuários disponíveis
 
 As contas de anunciantes permitem que um mesmo usuário acesse diversas contas. Com as permissões corretas, elas podem adicionar usuários a todas as suas contas. Veja as limitações abaixo.
+
+<div id="limitations-on-adding-users-to-multiple-accounts" />
 
 #### Limitações para adicionar usuários a várias contas
 
 * Esse recurso está disponível apenas para contas de anunciantes e apenas para usuários com permissões apropriadas de gestão de usuários.
 * Um usuário pode ter a função de [proprietário](#proprietário-da-conta) em apenas uma conta. Em outras contas, ele pode desempenhar qualquer outra função.
 * Usuários que ainda não [ativaram suas contas](#ativação-do-usuário) não podem ser adicionados a outra conta.
+
+<div id="add-users-to-multiple-accounts" />
 
 #### Adicione usuários a várias contas
 
@@ -230,6 +268,8 @@ As contas de anunciantes permitem que um mesmo usuário acesse diversas contas. 
 
 Os usuários podem ser editados um de cada vez ou em grupos.
 
+<div id="individual-editing" />
+
 #### Edição individual
 
 **Para editar um usuário individualmente:**
@@ -240,9 +280,13 @@ Os usuários podem ser editados um de cada vez ou em grupos.
 4. Todas as configurações, exceto o endereço de e-mail, são editáveis (incluindo função, aplicativos, fontes de mídia e geos).
 5. Clique em **salvar**.
 
+<div id="multi-user-editing" />
+
 #### Edição multiusuário
 
 A edição multiusuário é uma maneira eficiente de alterar as permissões da conta de vários usuários ao mesmo tempo. O uso desse recurso em combinação com os recursos de pesquisa e filtragem da aba **usuários** pode ser particularmente útil para gerenciar um grande número de usuários.
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >
@@ -260,6 +304,8 @@ A edição multiusuário é uma maneira eficiente de alterar as permissões da c
    * Lembre-se de que suas alterações se aplicam a todos os usuários selecionados!
 5. Os usuários editados são destacados na tabela e aparecerão da forma devida assim que as alterações forem salvas. No entanto, você ainda tem a oportunidade de revisar suas alterações e confirmá-las ou cancelá-las na próxima etapa.
 6. Revise suas alterações. Clique em **salvar** para confirmar ou em **cancelar** para desfazer.
+
+<div id="example" />
 
 > 📄 **Exemplo**
 >
@@ -290,6 +336,8 @@ A edição multiusuário é uma maneira eficiente de alterar as permissões da c
 
 Você pode excluir usuários em massa.
 
+<div id="note-5" />
+
 > 📘 **Nota**
 >
 > * O [proprietário da conta](/docs/user-management#proprietário-da-conta) não pode ser excluído.
@@ -303,6 +351,8 @@ Você pode excluir usuários em massa.
 
 </Accordion>
 
+<div id="manage-users-in-bulk-via-api" />
+
 ### Gerenciar usuários em massa através da API
 
 Algumas ações de gestão de usuários podem ser feitas em massa usando <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/bulk-users-management-overview">uma API dedicada</Anchor> :
@@ -313,11 +363,15 @@ Algumas ações de gestão de usuários podem ser feitas em massa usando <Anchor
 
 A API oferece os principais recursos de gestão de usuários na plataforma e inclui as mesmas verificações de erro.
 
+<div id="manage-roles" />
+
 ## Gerenciar funções
 
 Cada usuário da sua conta da AppsFlyer deve ter uma função. Cada uma dessas funções define os recursos específicos que o usuário pode acessar e as funções que ele pode executar. A lista completa desses recursos por função está disponível na [aba funções](#roles-tab) da página de **gerenciamento de usuários**.
 
 As funções na AppsFlyer podem ser [predefinidas](#funções-predefinidas), [personalizadas](#funções-personalizadas) ou (em certos casos) [temporárias](#funções-temporárias).
+
+<div id="predefined-roles" />
 
 ### Funções predefinidas
 
@@ -333,9 +387,13 @@ A AppsFlyer possui diversas funções predefinidas:
 * Segurança
 * Controle de qualidade
 
+<div id="note-6" />
+
 > 📘 **Nota**
 >
 > Para cada uma dessas funções, os recursos disponíveis são fixos. No entanto, você pode alterar os recursos funcionais de um usuário a qualquer momento alterando sua função (com a exceção do [proprietário da conta](#proprietário-da-conta))
+
+<div id="example-1" />
 
 > 📄 **Exemplo**
 >
@@ -345,9 +403,13 @@ A AppsFlyer possui diversas funções predefinidas:
 >
 > **Resposta:** Não. **Resposta:** enquanto José permanecer na função de gerente de equipe, você não poderá permitir que ele acesse as páginas Meu plano e Pagamentos. Você também não poderá remover sua capacidade de gerenciar templates do OneLink. Você pode atribuir uma função predefinida diferente - assim o acesso de José mudará de acordo com a sua nova função. Ou então, você pode criar uma função personalizada para José, que muda seu acesso de acordo com as suas necessidades.
 
+<div id="admin" />
+
 ### Administrador
 
 Uma conta da AppsFlyer pode ter **um ou mais administradores**. Essa função tem várias características únicas:
+
+<div id="access" />
 
 #### Acesso
 
@@ -359,17 +421,25 @@ A função de administrador tem acesso a **todos** os recursos da conta, incluin
 
 Esse “acesso completo” não pode ser alterado ou limitado.
 
+<div id="manage-tokens" />
+
 #### Gerenciar tokens
 
 Apenas um usuário com um papel de administrador pode <Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">gerenciar tokens</Anchor>: criar, renomear e remover tokens de API e de servidor para servidor (S2S).
+
+<div id="role-duplication" />
 
 #### Duplicar funções
 
 A função de administrador **não pode ser duplicada** na hora de criar [funções personalizadas](#gerenciar-funções-personalizadas).
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Convide novos parceiros para a AppsFlyer
 
 Um usuário com um papel de administrador pode <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#convide-novos-parceiros-para-a-appsflyer">enviar um link de convite</Anchor> via Marketplace de parceiros para convidar um parceiro que não está integrado com a AppsFlyer.
+
+<div id="account-owner" />
 
 ### Proprietário da conta
 
@@ -377,11 +447,15 @@ O usuário criado no momento em que a conta foi aberta, ou seja, o "proprietári
 
 Essa função tem características únicas além do papel de administrador. O proprietário da conta **não** pode ser excluído, removido da função de administrador ou editado na página [gerenciar usuários.**Se você precisar alterar o proprietário da conta, siga os** passos listados abaixo.](/docs/user-management#página-de-gestão-de-usuários)
 
+<div id="custom-roles" />
+
 ### Funções personalizadas
 
 As funções predefinidas na AppsFlyer foram configuradas com combinações específicas para a maioria das situações. Por isso, muitos anunciantes não sentem a necessidade de personalizar ainda mais essas funções. Quando isso se torna necessário, as funções predefinidas ainda são um ótimo ponto de partida para gerenciar os recursos dos seus usuários.
 
 Saiba mais sobre como [gerenciar funções personalizadas](#gerenciar-funções-personalizadas).
+
+<div id="temp-roles" />
 
 ### Funções temporárias
 
@@ -389,9 +463,13 @@ Se você já tinha uma conta da AppsFlyer em nosso antigo sistema de gerenciamen
 
 Saiba mais sobre como [gerenciar funções temporárias](#managing-temp-roles).
 
+<div id="get-roles-data-via-api" />
+
 ### Obter dados de funções via API
 
 Através da <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_roles">Get roles API</Anchor>, você pode recuperar uma lista de funções atuais e seus atributos correspondentes específicos para sua conta.
+
+<div id="manage-custom-roles" />
 
 ## Gerenciar funções personalizadas
 
@@ -428,6 +506,8 @@ Através da <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference
 4. Quando você estiver satisfeito com todas as suas seleções, clique no botão **salvar função**.
 5. Os níveis de permissão da função são alterados para todos os usuários novos e existentes.
 
+<div id="important-1" />
+
 > 🚧 **Importante!**
 >
 > Quaisquer alterações que você fizer em uma função personalizada são automaticamente aplicadas a **todos os usuários existentes** nessa função.
@@ -447,6 +527,8 @@ Através da <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference
 
 </Accordion>
 
+<div id="special-situations-and-additional-procedures" />
+
 ## Situações especiais e procedimentos adicionais
 
 <div id="managing-temp-roles" />
@@ -458,6 +540,8 @@ Se sua conta usou nosso sistema de gerenciamento de usuários anterior no passad
 * Os usuários com os mesmos recursos receberam a mesma função temporária.
 * Use os recursos da aba [Funções](/docs/user-management#roles-tab) para revisar os recursos de cada função temporária e uma lista de usuários que está atualmente nela.
 
+<div id="temp-role-limitations" />
+
 #### Limitações da função temporária
 
 As funções temporárias foram projetadas especificamente para permitir uma transição perfeita do nosso sistema anterior de gerenciamento de usuários. Como tal, eles estão disponíveis apenas em situações limitadas:
@@ -467,6 +551,8 @@ As funções temporárias foram projetadas especificamente para permitir uma tra
   * Observe que o acesso de um usuário a aplicativos futuros **não pode** ser alterado enquanto o usuário estiver em uma função temporária.
 * Quando um usuário com uma função temporária é alterado para uma função pré-definida, ele não pode ser retornado para a função temporária atribuída anteriormente (ou para qualquer outra função temporária).
 * Se o último usuário em uma função temporária for removido dela, a função não aparecerá mais na sua conta.
+
+<div id="example-2" />
 
 > 📄 **Exemplo**
 >
@@ -510,6 +596,8 @@ Além disso, os seguintes recursos da AppsFlyer **não estão disponíveis** par
 
 Quando você concede a um usuário acesso a uma agência específica **e** a um canal de mídia específico, o acesso aos dados dele reflete apenas a sobreposição entre os dois. O usuário não vê todos os dados dessa agência em todas as fontes de mídia, nem todos os dados dessa fonte de mídia em todas as agências — apenas a parte em que ambas as permissões se sobrepõem.
 
+<div id="example-3" />
+
 > 📄 **Exemplo**
 >
 > Você concede a um usuário acesso à Agência B e à Fonte de Mídia A. A Agência B gerencia instalações de aplicativo provenientes de várias fontes de mídia, incluindo a Fonte de Mídia A. Esse usuário vê apenas as instalações da Fonte de Mídia A que a Agência B gerencia — não os dados da Agência B de outras fontes de mídia nem os dados da Fonte de Mídia A gerenciados por outras agências.
@@ -522,9 +610,13 @@ Quando você concede a um usuário acesso a uma agência específica **e** a um 
 
 Como todos os administradores têm as mesmas permissões que o proprietário da conta, geralmente não é necessário alterar o proprietário da conta. Mas se você achar que precisa fazer essa alteração, siga as etapas abaixo.
 
+<div id="important-2" />
+
 > 🚧 **Importante!**
 >
 > Essa alteração deve ser concluída manualmente, seguindo essas etapas. Isso não pode ser feito a partir da página de **gerenciamento de usuários**.
+
+<div id="1assign-a-team-member-the-admin-role" />
 
 #### #1–Atribua a um membro da equipe a função de administrador
 
@@ -532,6 +624,8 @@ A alteração do proprietário da conta só pode ser solicitada por um usuário 
 
 * Atribua a um membro da equipe que possa concluir todas as etapas a função de **Admin** .
 * O usuário deve ativar a conta (ou seja, fazer login pelo menos uma vez).
+
+<div id="2send-an-email-request" />
 
 #### #1– Enviar uma solicitação por e-mail
 
@@ -551,6 +645,8 @@ Inclua as seguintes informações na sua solicitação:
 Use este exemplo de e-mail como referência:
 
 ![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+
+<div id="3next-steps" />
 
 #### #2 – Próximas etapas
 

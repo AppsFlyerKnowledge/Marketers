@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Visão geral**: use as recomendações da SKAN para otimizar suas configurações de valores de conversão e receba mensurações de atividade pós-instalação mais precisas.
 
+<div id="overview" />
+
 ## Visão geral
 
 A SKAdNetwork (SKAN), parte do iOS da Apple, ajuda os anunciantes a mensurar a performance da campanha, ao mesmo tempo em que mantém a privacidade do usuário. Com o SKAdNetwork, a atividade pós-instalação é mensurada usando apenas valores de conversão de números - entre 0-63.
@@ -37,11 +39,15 @@ As recomendações da SKAN pela AppsFlyer:
 * Resolvem as dificuldades que você pode ter ao tomar decisões de configuração de CV.
 * São baseadas na sua vertical, geolocalização, dados do aplicativo SKAN e não-SKAN e comportamento específico do usuário.
 
+<div id="recommendations" />
+
 ## Recomendações
 
 <div id="revenue" />
 
 <Accordion title="Resultados">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **Compreendendo as recomendações de receita**
 
@@ -57,13 +63,19 @@ As recomendações:
 * Economizam valores de conversão usando menos intervalos para a mensuração precisa da receita.
 * Leve em consideração tanto as compras in-app quanto a receita publicitária.
 
+<div id="revenue-recommendations-layout" />
+
 #### **Layout das recomendações de receita**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>E</span></p></td><td><span>Janela de atividade salva na configuração do Conversion Studio, durante a qual a receita da SKAN é mensurada.</span></td></tr><tr><td><p><span>B</span></p></td><td><span>Receita média real do aplicativo por usuário pagante (ARPPU) com base em dados precisos de usuários orgânicos e não orgânicos atribuídos pelos métodos da AppsFlyer (AF).</span></td></tr><tr><td><p><span>C</span></p></td><td><p><span>ARPPU de configuração atual (SKAN ARPPU), ou seja, o ARPPU mensurado <span>com base na sua configuração atual no Conversion Studio para janela de atividade e configuração de CV para relatórios de receita.</span></span></p></td></tr><tr><td><span>J</span></td><td><p>ARPPU estimado: o ARPPU esperado para o número de intervalos selecionado. Calculado com base em todos os dados de receita dos últimos 14 dias do aplicativo, independentemente do método de atribuição (como SKAN ou método clássico), dividido pelo número de usuários pagantes. <span>Consulte F e G</span></p><p><span><strong>Observação:</strong> </span><span>É importante destacar que esse número não está disponível em outros dashboards da AF.</span> Aqui, mostramos o ARPPU (receita média por usuário pagante), enquanto em outros dashboards apresentamos o ARPU (receita média por usuário).</p></td></tr><tr><td><p><span>E</span></p></td><td><p>Erro aproximado: <span>a diferença entre B e C. Pode ser um erro positivo ou negativo, dependendo se o seu ARPPU da SKAN é super ou sub-notificado.</span></p><p><span>Exemplo: se o ARPPU real for US$ 10 e o ARPPU da SKAN for US$ 7, o erro aproximado é uma sub-notificação de 30% (-US$ 3 por usuário).</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>Recomendações para sua configuração de receita na SKAN. Selecione o número de intervalos que deseja incluir na sua configuração.</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>Sua configuração de receita atual conforme definida no Conversion Studio.</span><span></span></p></td></tr></tbody></table>
 
+<div id="using-revenue-recommendations" />
+
 #### **Como usar recomendações de receita**
 
 **Pré-requisito:** as recomendações de receita exigem pelo menos 14 dias de dados de receita.
+
+<div id="note" />
 
 > 📘 **Atenção**
 >

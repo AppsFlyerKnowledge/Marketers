@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **Resumo:** Melhores práticas para promover seu aplicativo Android no mercado chinês.
 
+<div id="android-apps-in-china" />
+
 ## Aplicativos Android na China
 
 Considere as seções a seguir como uma lista de verificação dos itens que você deve avaliar ao divulgar seu aplicativo na China.
+
+<div id="selecting-an-identifier" />
 
 ### Seleção de um identificador
 
@@ -39,6 +43,8 @@ A partir do [Android 10 (nível da API  level 29)](https://developer.android.co
 Para contornar isso, uma alternativa ao GAID é o OAID. O OAID (disponível desde o final de 2019) está sendo promovido por fabricantes chineses de dispositivos, como a [Huawei](https://developer.huawei.com/consumer/en/doc/development/HMS-Guides/3030304).
 
 Consulte <Anchor target="_blank" href="/marketers/pt/docs/measure-attribution-in-the-chinese-domestic-market">Integração do SDK da AppsFlyer - Android</Anchor>.Etapa 1:
+
+<div id="attribution-solutions-for-the-chinese-market" />
 
 ### Soluções de atribuição para o mercado chinês
 
@@ -101,6 +107,8 @@ Ao usar esse método, você pode atribuir tanto a instalação orgânica quanto 
 </Accordion>
 
 Se você estiver promovendo seus aplicativos com mais de uma das soluções mencionadas acima e quiser verificar os dados de todas as suas campanhas na China na mesma visualização do dashboard, poderá usar o <Anchor target="_blank" href="/marketers/pt/docs/custom-dashboards">Dashboard personalizado</Anchor>.
+
+<div id="integrated-media-sources" />
 
 ## Canais de mídia integrados
 

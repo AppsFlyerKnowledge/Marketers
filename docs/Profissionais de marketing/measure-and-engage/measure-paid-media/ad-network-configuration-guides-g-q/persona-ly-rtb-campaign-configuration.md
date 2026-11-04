@@ -23,6 +23,8 @@ x-zendesk:
 
 <Image alt="persona.ly_logo.png" src="https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png" width="234px" />
 
+<div id="setting-up-personaly-rtb" />
+
 ## Como configurar a Persona.ly RTB
 
 **Pré-requisito:** antes de configurar a integração, certifique-se de [entrar em contato com o parceiro](#) e abrir uma conta com ele. Antes de criar uma integração, certifique-se de <Anchor target="_blank" href="/marketers/pt/docs/partner-integrations#contact-details">entrar em contato com o parceiro</Anchor> e abrir uma conta com ele.
@@ -39,6 +41,8 @@ x-zendesk:
 A integração com a Persona.ly RTB oferece suporte para a atribuição de click-through e view-through.  
 A janela de configuração inclui as seguintes abas: integração, link de atribuição, custo, receita de anúncios e permissões. Para a Persona.ly RTB, as abas disponíveis são as de integração, link de atribuição e permissões.
 
+<div id="note" />
+
 > 📘 **Observação**
 >
 > * Algumas configurações são diferentes para dispositivos iOS e Android
@@ -50,13 +54,19 @@ A janela de configuração inclui as seguintes abas: integração, link de atrib
 
 A aba **Integração** inclui várias seções, conforme descrito abaixo.
 
+<div id="activate-partner" />
+
 #### Ativar parceiro
 
 Para configurar a integração, primeiro deve <Anchor target="_blank" href="/marketers/pt/docs/amazon-ads-campaign-configuration#ativar-parceiro">ligar</Anchor> o botão de alternância **Ativar parceiro**. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation#ativar-uma-integração-de-parceiro">ativar e desativar integrações de parceiros</Anchor>.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Como uma ad network "all-install", a Persona.ly RTB prefere receber postbacks para todas as novas instalações do seu app vindas de qualquer fonte. Para fazer isso, selecione **Todos os canais de mídia, incluindo orgânicos** para enviar todos os postbacks de instalação para a Persona.ly RTB.
+
+<div id="advanced-privacy" />
 
 #### Privacidade avançada
 
@@ -68,13 +78,19 @@ Somente para aplicativos iOS: seu controle sobre os dados compartilhados com o p
 | Os postbacks são enviados de acordo com o <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks">template de privacidade avançada</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/pt/docs/apply-aggregated-advanced-privacy-framework">Dados agregados e anônimos</Anchor> são compartilhados com o parceiro, o que significa que nenhum dado no nível do usuário (ID do dispositivo) é compartilhado. |  |
 
+<div id="transaction-id" />
+
 #### ID da transação
 
 Somente para aplicativos iOS, quando **Compartilhar ID de transação SKAN** está ativado, você permite que a AppsFlyer <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">compartilhe o ID da transação dos postbacks da SKAdNetwork</Anchor> com a Persona.ly RTB. Ao fazer isso, a Persona.ly RTB pode decodificar seus Valores de conversão da SKAdNetwork.
 
+<div id="install-attribution" />
+
 #### Atribuição de instalação
 
 Para atribuir instalações com view-through da Persona.ly RTB, ative **Atribuição de instalação com view-through**. O cursor de lookback de view-through está disponível na [aba do link de atribuição](#attribution-link-tab).
+
+<div id="default-postbacks" />
 
 #### Postbacks padrão
 
@@ -84,6 +100,8 @@ Para enviar postbacks automáticos para parceiros vinculados às ações dos us
   * **Somente este parceiro:** envie postbacks somente quando a instalação for atribuída a este parceiro, ou seja, quando o usuário que instalou o aplicativo veio da Persona.ly RTB.
   * **Todas as fontes de mídia, incluindo orgânicas**: enviar postbacks para eventos atribuídos a qualquer parceiro e para eventos orgânicos — ou seja, o usuário que instalou o aplicativo veio de qualquer fonte de mídia.
 * Para **instalações rejeitadas** e **reengajamentos:** os postbacks são enviados apenas para a Persona.ly RTB.
+
+<div id="in-app-event-postbacks" />
 
 #### Envios de eventos na aplicação
 
@@ -106,6 +124,8 @@ Configure o mapeamento de eventos in-app com eventos da Persona.ly RTB, enviados
    1. No canto superior esquerdo, abaixo do nome do parceiro, clique no nome do aplicativo para abrir a lista de apps.
    2. Selecione a partir da lista suspensa.
    3. Repita as <Anchor target="_blank" href="/marketers/pt/docs/amazon-ads-campaign-configuration#integration-tab">etapas de integração</Anchor> para o aplicativo selecionado.
+
+<div id="note-2" />
 
 > 📘 **Observação**
 >
@@ -148,6 +168,8 @@ A receita de anúncios não está disponível para a Persona.ly RTB.
 <Accordion title="Aba de permissões">
 
 Selecione quais <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#permissions-tab">permissões conceder</Anchor> à Persona.ly RTB para acessar seus dados e executar diferentes ações.
+
+<div id="note-3" />
 
 > 📘 **Observação**
 >

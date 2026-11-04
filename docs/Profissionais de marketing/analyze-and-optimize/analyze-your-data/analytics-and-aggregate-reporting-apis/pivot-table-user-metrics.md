@@ -27,6 +27,8 @@ x-zendesk:
 
 > **Visão geral**: Ver diferentes métricas do usuário—LTV, atividade, Protect360 e retenção. Baixe os resultados como arquivos CSV para ingestão por seus sistemas de BI. O pivot é compatível com vários aplicativos em uma única consulta. Use para gerar chamadas de Master API.
 
+<div id="about-pivot-reports-page" />
+
 ## Sobre a página de relatórios de pivô
 
 Usando o Pivot, você gera relatórios personalizados contendo métricas de aquisição de usuários. O Pivot vem com vários relatórios predefinidos para usar como base, a partir da qual você cria seus relatórios personalizados. Os relatórios criados por um determinado usuário estão disponíveis para todos os usuários.
@@ -38,6 +40,8 @@ Os relatórios pivot predefinidos disponíveis são:
 * Análise de custos
 
 **Atenção:** Para que os dados da campanha sejam visíveis nos pivôs, as campanhas devem ter instalações.
+
+<div id="pivot-procedures" />
 
 ## Procedimentos do Pivot
 
@@ -168,6 +172,8 @@ Crie e modifique as tabelas pivot existentes na interface do usuário. Para faz�
 | (5) Ações | Você pode acessar as mesmas ações por relatório dinâmico disponíveis na [lista de relatórios dinâmicos](/docs/pivot-table-user-metrics#view-a-pivot-report). |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características e Limitações
 

@@ -24,19 +24,27 @@ x-zendesk:
 ---
 > **Resumo:** Siga as instruções de onboarding deste guia para configurar a mensuração da performance web. Após a configuração, você poderá mensurar e atribuir visitas ao site e eventos web a canais de marketing, compreender o que impulsiona resultados significativos e auxiliar a mensuração cross-platform.
 
+<div id="about-web-performance-measurement" />
+
 ## Sobre a mensuração da performance web
 
 A mensuração da performance web ajuda você a conectar o que acontece no seu site, como visitas e eventos web, às fontes de marketing que os impulsionaram. Em resumo, ela mostra quais canais de mídia e campanhas atraem usuários para o seu site e influenciam suas próximas ações, permitindo que você realize a mensuração de performance e otimize o ROI.
 
+<div id="create-a-web-app-in-appsflyer" />
+
 ### Criar um aplicativo web na AppsFlyer
 
 <Embed title="Onboarding para a mensuração da performance web" typeOfEmbed="youtube" url="https://www.youtube.com/embed/MOn_UsirYCU" providerUrl="https://www.youtube.com" />
+
+<div id="set-up-network-integrations-postbacks-and-cost-measurement" />
 
 ### Configurar integrações de ad network, postbacks e mensuração de custo
 
 <Embed title="Onboarding para a mensuração da performance web" typeOfEmbed="youtube" url="https://www.youtube.com/embed/-sYIv3YQEwo" providerUrl="https://www.youtube.com" />
 
 Para dar início à mensuração de visitas ao site e eventos web na AppsFlyer, siga as etapas de onboarding na checklist de configuração da mensuração da performance web:
+
+<div id="web-performance-measurement-setup-checklist" />
 
 ## Checklist de configuração da mensuração da performance web
 

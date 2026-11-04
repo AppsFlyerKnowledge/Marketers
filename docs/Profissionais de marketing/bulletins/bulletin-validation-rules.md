@@ -105,6 +105,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="see-also" />
+
 > 📄 **Consulte também**
 >
 > * <Anchor target="_blank" href="/marketers/pt/docs/implement-validation-rules-to-prevent-fraud">Regras de validação para proprietários de aplicativos</Anchor>

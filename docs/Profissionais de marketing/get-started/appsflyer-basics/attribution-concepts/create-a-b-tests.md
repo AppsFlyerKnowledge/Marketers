@@ -24,11 +24,15 @@ x-zendesk:
 
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 
+<div id="what-is-ab-testing" />
+
 ## O que é teste A/B?
 
 O teste A/B é um método usado por profissionais de marketing para testar diferentes elementos de seus anúncios e campanhas. Cada anúncio contém elementos (segmentação, visuais, textos) que podem afetar as taxas de conversão de usuários em potencial. Encontrar as variações com melhor desempenho dos elementos do seu anúncio pode ter um impacto significativo nos resultados de seus esforços de marketing mobile.
 
 Este artigo explica **como os anunciantes podem realizar testes A/B usando a AppsFlyer para encontrar os elementos de anúncio com melhor desempenho**.
+
+<div id="how-to-ab-test-mobile-campaigns" />
 
 ## Como fazer testes A/B em campanhas mobile
 
@@ -50,6 +54,8 @@ As etapas a seguir se aplicam a um teste A/B que você executa usando a AppsFlye
 
 1. Use o dashboard e os dados da AppsFlyer para comparar o desempenho dos principais KPIs entre as duas campanhas.
 2. Selecione a variação vencedora e use-a em suas campanhas ativas.
+
+<div id="ab-testing-creatives-and-targeting" />
 
 ## Teste A/B de criativos e segmentação
 
@@ -103,6 +109,8 @@ Abaixo, explicamos dois métodos de teste A/B usando:
 
 </Accordion>
 
+<div id="ab-testing-ad-placement-on-mobile-web" />
+
 ## Teste A/B de posicionamento de anúncios na web mobile
 
 ![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
@@ -128,6 +136,8 @@ Com o <Anchor target="_blank" href="/marketers/pt/docs/smart-banners-mobile-web-
 1. Baixe os relatórios de dados brutos para instalação ou eventos in-app. Use a coluna de parâmetros de assinante selecionada (por exemplo: af\_sub5) para filtrar e classificar seus dados.
 2. Compare o desempenho dos dois canais de anúncio, ou seja, qual canal teve mais instalações ou eventos pós-instalação.
 
+<div id="ab-testing-media-sources" />
+
 ## Teste A/B de canais de mídia
 
 Ajudar os anunciantes a identificar os canais de mídia com melhor (e pior) desempenho para seus aplicativos é o objetivo da AppsFlyer. No entanto, **se os anunciantes não compararem as fontes de mídia corretamente, correm o risco de chegar a conclusões erradas sobre a qualidade do tráfego**.
@@ -147,12 +157,16 @@ Ajudar os anunciantes a identificar os canais de mídia com melhor (e pior) dese
 3. Agrupar por Canal de mídia -> Campanha -> Conjunto de anúncios -> Anúncio.
 4. Compare os KPIs para identificar o canal de mídia com melhor desempenho.
 
+<div id="example" />
+
 > 📄 **Exemplo**
 >
 > [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
 >
 > * 1 e 2 são anúncios diferentes no mesmo canal de mídia de mídia. Compare um único KPI para eles, por exemplo, a taxa de retenção no dia 4, para teste A/B de criativos, segmentação ou posicionamento do anúncio.
 > * 2 e 3 são anúncios em diferentes canais de mídia. Se os criativos e a segmentação dos anúncios forem idênticos, comparar um único KPI fazer o teste A/B do canal de mídia.
+
+<div id="using-audiences-split-for-easy-ab-testing-of-media-sources" />
 
 ### Usando a divisão de públicos para facilitar o teste A/B de canais de mídia
 
