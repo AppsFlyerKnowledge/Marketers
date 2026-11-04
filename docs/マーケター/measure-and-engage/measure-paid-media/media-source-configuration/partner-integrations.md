@@ -32,6 +32,12 @@ x-zendesk:
 >
 > パートナーマーケットプレイスは現在、広告主アカウントでのみ利用可能で、代理店やパートナーはまだアクセスできません。
 
+<div id="what-you-can-do-from-the-active-integrations-tab" />
+
+<div id="note" />
+
+<div id="manage-active-integrations" />
+
 <div id="quick-start" />
 
 ## クイックスタート
@@ -65,6 +71,8 @@ x-zendesk:
 * [**データクリーンルーム（DCR）パートナー：**](#dcrパートナー)ファーストパーティおよびサードパーティのデータを提供する技術パートナーを活用することで、データを充実させ、キャンペーンのパフォーマンスを最適化できます。
 * **あなたのカテゴリで人気のパートナー：** 最もアクティブな連携数を持つメインカテゴリのパートナー。
 * **最終訪問：** マーケットプレイスで最近閲覧したパートナー。
+
+<div id="filter-the-list-of-partners" />
 
 <div id="partner-cards" />
 
@@ -122,6 +130,14 @@ DCRパートナーは、ファーストパーティおよびサードパーテ�
 * パートナーロゴの左にある緑やオレンジの点は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#integration-activity-indication">連携のアクティビティレベル</Anchor>を示します。
 * パートナーを検索して訪問すると、次回の検索時に最近の5つのパートナーが表示されます。
 * [アクティブなパートナー連携内](/docs/partner-integrations#連携済みパートナー)を検索することもできます。
+
+<div id="note-1" />
+
+<div id="contact-the-partner" />
+
+<div id="what-you-can-see-on-the-partner-page" />
+
+<div id="what-you-can-do-from-the-partner-page" />
 
 <div id="learn-about-partners" />
 
@@ -189,6 +205,8 @@ AppsFlyerは、お客様に代わって紹介メールを送信することで�
 
 デフォルトのグラフには、すべてのプラットフォームでパートナーがアクティブな上位10のカテゴリと地域が表示されます。右上隅から最大10件の他の地域またはカテゴリ、利用可能なプラットフォームを選択してデフォルト設定を変更できます。
 
+<div id="note-2" />
+
 <div id="integrate-with-a-new-partner" />
 
 ## 新しいパートナーとの連携
@@ -208,11 +226,15 @@ AppsFlyerは、お客様に代わって紹介メールを送信することで�
 
 連携が設定されると、パートナーは<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#active-partners">アクティブ</Anchor>になります。次に、**セクション内のアクティブなパートナーを表示**をクリックして、ページをフィルターし、アクティブなパートナーのみを表示できます。
 
+<div id="partner-verification" />
+
 <div id="invite-new-partners-to-appsflyer" />
 
 ### AppsFlyerに新規パートナーを招待する
 
 使用中 / これから配信したいアドネットワークがまだAppsFlyerと連携されていない場合は、連携における招待リンクを送信できます。
+
+<div id="note-3" />
 
 <div id="validation-period-for-new-integrations" />
 

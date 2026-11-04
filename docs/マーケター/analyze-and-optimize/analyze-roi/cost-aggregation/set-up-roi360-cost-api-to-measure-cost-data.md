@@ -37,6 +37,16 @@ ROI360は、アプリ単位とアカウント単位の両方で広告費を計�
 * **アカウント単位の連携**は、<strong>［広告費設定］</strong>で管理します。広告アカウント単位で連携を設定します。[対応するアドネットワークの一覧](#h_01KQ7V7Q6MAEMXKKJ7TV8GC1YR)を参照してください。
 * **アプリ単位の連携**は、<strong>［広告費］</strong>タブで管理します。アプリごとに個別に連携を設定します。メディアソースが<strong>［広告費設定］</strong>にない場合は、アプリ単位の<strong>［広告費］</strong>タブで連携を設定してください。
 
+<div id="additional-steps-specific-media-sources-only" />
+
+<div id="h_01M43Y9WQ8HK1N0GJNW5BH4MPZ" />
+
+<div id="h_01M43Y9WQ8WCXWQ0S9ZAT59CWW" />
+
+<div id="map-apps-to-package-names-or-bundle-ids" />
+
+<div id="create-a-new-api-cost-integration" />
+
 > 📘 **Note**
 >
 > 広告費設定へのアクセスは、ロールの権限によって制御されます。<strong>［広告費設定］</strong>を開けない場合は、<strong>［ユーザー管理］</strong>ページでロールの権限を更新するよう、管理者に依頼してください。該当する権限は<strong>［広告費連携］</strong>です。
@@ -80,6 +90,8 @@ ROI360は、アプリ単位とアカウント単位の両方で広告費を計�
 
 </Accordion>
 
+<div id="select-which-ad-account-to-pull-cost-from" />
+
 > 📘 **Note**
 >
 > 代理店にキャンペーン運用を委託している場合は、広告主ではなく代理店が対象パートナーとの連携を行うことを推奨します。同じアプリに対して、広告主と代理店の両方が同じ認証情報でメディアソースと連携すると、広告費データが重複するためです。
@@ -107,6 +119,22 @@ ROI360は、アプリ単位とアカウント単位の両方で広告費を計�
 
 1. 連携済みパートナーの<strong>［広告費］</strong>タブで<strong>［サイトIDマッピング］</strong>に移動し、ドロップダウンから設定を選択します。
 2. <strong>［広告費設定を保存］</strong>をクリックします。変更はUTCの翌日から有効になります。
+
+<div id="h_01M43Y9WQ8H8ANPDEGYCH0T0MF" />
+
+<div id="view-status-in-cost-tab" />
+
+<div id="view-status-in-cost-settings" />
+
+<div id="h_01M43Y9WQ8ANZY2KNHKMV67YNY" />
+
+<div id="h_01M43Y9WQ89XKB2CN2EY4TG2AD" />
+
+<div id="h_01M43Y9WQ804YMN8TZ7HGYSQH7" />
+
+<div id="cost-integration-and-agencies" />
+
+<div id="view-cost-api-status" />
 
 <div id="edit-and-delete-an-integration" />
 

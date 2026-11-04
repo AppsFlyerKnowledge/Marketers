@@ -241,6 +241,8 @@ Metaは、IDFAがない、または値がすべて0になっているイベン�
 2. 対象のアプリイベントを選択します。
 3. 優先する接続方法として<strong>［MMP traffic］</strong>を設定します。
 
+<div id="note-3" />
+
 <div id="need-help" />
 
 #### サポートが必要な場合

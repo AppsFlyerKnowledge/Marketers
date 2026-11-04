@@ -84,6 +84,8 @@ AppsFlyerはアプリストアに関わらず、アプリを計測します。�
 | 3 | マーケティング担当者 | [計測リンクを準備します。](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | アプリIDとチャネル名を組み合わせた計測リンクを準備してください。 |
 | 4 | ディベロッパーとマーケティング担当者 | [テスト](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [テスト](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
 
+<div id="note-1" />
+
 <div id="procedures" />
 
 ## 手順
@@ -229,6 +231,10 @@ APK／マニフェストで設定されたAndroidパッケージ名とチャネ�
 | オーバービューページで新しいオーガニックインストール（「Organic」メディアソースの下）を確認してください。現在、単一アプリの方法では、オーガニックインストールの流入元を示す指標はありません。 | <ol><li>テスト対象アプリの管理画面でオーバービューページを開いてください。</li><li>「organic」メディアソースにて、1件のインストールコンバージョンが確認できるはずです。</li></ol> |
 
 </Accordion>
+
+<div id="3rd-party-raw-data" />
+
+<div id="getting-the-data-appsflyer-reports" />
 
 <div id="additional-features" />
 

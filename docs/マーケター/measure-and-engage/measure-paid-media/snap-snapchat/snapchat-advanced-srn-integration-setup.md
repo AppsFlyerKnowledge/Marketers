@@ -77,6 +77,12 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note" />
+
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### 一般的な設定
@@ -93,6 +99,8 @@ x-zendesk:
 * Snap アプリ ID を追加できるのは広告主のみです。
 * 代理店がSnapchat広告管理画面で広告主と同じ組織の下にある場合は、Snap App IDを1つだけ使用します。
 * 代理店がSnapchat広告管理画面の別の組織の下にある場合は、このアプリのSnap App IDを提供するように代理店に依頼し、この項目に入力します。複数のIDを入力できます。各IDを入力後、Enter キーを押して複数のIDを入力できます。
+
+<div id="note-1" />
 
 <div id="install-attribution" />
 
@@ -111,6 +119,8 @@ x-zendesk:
 2. [オプション] **インストールビュースルーアトリビューション**をオンにして、ルックバックウィンドウを設定します。
    * **インストールビュースルールックバック期間**は1～24時間の範囲です。**注：** Snapchatはインストール ビュースルー ルックバック期間を1日に設定することを推奨しています。
 
+<div id="note-2" />
+
 <div id="re-engagement-attribution" />
 
 #### リエンゲージメントアトリビューション
@@ -126,6 +136,8 @@ x-zendesk:
 2. [オプション] **リエンゲージメントビュースルーアトリビューション**を有効にし、ルックバック期間を設定します。
    * **リエンゲージメントビュースルールックバック期間**は1～24時間の間です。**注：** Snapchat では、リエンゲージメントビュースルールックバック期間を1日に設定することを推奨しています。
 3. **リエンゲージメント期間**を1～23時間、1～90日間、または**全期間**に設定します。
+
+<div id="note-3" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -173,6 +185,12 @@ x-zendesk:
 <Accordion title="計測リンクタブ">
 
 計測リンクはSnapchatでは使用しません。
+
+<div id="note-6" />
+
+<div id="note-5" />
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -249,6 +267,8 @@ AppsFlyerとTikTokの連携により、TikTok for Businessに紐づくアプリ�
 
 たとえば、広告の遷移先がWebランディングページであってもアプリのインストールを計測できるため、Web-to-App（W2A）のユーザージャーニーを計測できます。
 
+<div id="note-7" />
+
 <div id="deep-linking-with-snapchat" />
 
 ## Snapchatとのディープリンク
@@ -295,6 +315,8 @@ Snapchatでディープリンクを実行するには：
 ## 代理店向けのSnapchatのセットアップ
 
 広告主の代理で作業する代理店は、Snapchatの連携を有効にして、キャンペーンのアトリビューションを取得することができます。ただし、この統合には、代理店に関してはいくつかの制限があります。
+
+<div id="important" />
 
 <div id="agency-limitations" />
 

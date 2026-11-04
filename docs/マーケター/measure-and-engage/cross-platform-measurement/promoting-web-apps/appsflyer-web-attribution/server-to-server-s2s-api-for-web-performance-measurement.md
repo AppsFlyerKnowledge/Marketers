@@ -252,6 +252,14 @@ Cookieには任意の名前を付けることができます。AppsFlyerが読�
 
 </Accordion>
 
+<div id="option-2-destination-function" />
+
+<div id="option-1-webhooks-actions-destination" />
+
+<div id="note-1" />
+
+<div id="send-events-via-segment-cdp" />
+
 <div id="things-to-consider" />
 
 ## 考慮事項

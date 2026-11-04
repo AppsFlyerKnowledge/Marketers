@@ -39,6 +39,8 @@ x-zendesk:
 * レポート処理をトリガーするための定期的な[ソースデータ更新](/docs/data-clean-room-working-with-sources#ソースを更新してレポート処理をトリガーします)
 * [既存のソースの取り扱い](/docs/data-clean-room-working-with-sources#既存のソースの取り扱い)
 
+<div id="important" />
+
 > 🚧 **始める前に：**
 >
 > カスタムソースを作成する前に、まず次のことを行う必要があります。
@@ -48,7 +50,7 @@ x-zendesk:
 >   * これらの接続がこれまでに設定されていない場合は、ソース作成時に設定するよう求められます。
 
 
-<span id="source-requirements"></span><span id="source-format"></span>ソースは、ソース作成およびレポート処理のエラーを防ぐために、以下の要件を満たしている必要があります。
+<span id="data-format"></span><span id="source-requirements"></span><span id="source-format"></span>ソースは、ソース作成およびレポート処理のエラーを防ぐために、以下の要件を満たしている必要があります。
 
 ソース内のデータは、次の要件を満たしている必要があります：
 
@@ -157,6 +159,8 @@ BigQueryのソースの場所の指定を完了します
 
 これらの選択を行うリストには、接続の作成時に指定したSnowflakeアカウントの共有、スキーマ、およびテーブルがそれぞれ含まれています。
 
+<div id="important-1" />
+
 <div id="source-locations-in-cloud-storage-buckets" />
 
 #### クラウドストレージバケット内のソースの場所
@@ -192,6 +196,8 @@ Amazon S3またはGCSのソースの場所は、接続によって指定され�
   * ディメンション ディメンション： アプリユーザーを分類する属性（例: 地域、インストール日、キャンペーンなど）/span>
   * 指標メトリック： アプリユーザーに関して収集した数値データ（収益、アプリ起動数、LTV など）
     * メトリックとして識別されるデータ項目には、 数値のみを含めることができます。
+
+<div id="important-2" />
 
 <div id="loading-source-fields" />
 
@@ -253,6 +259,8 @@ Amazon S3またはGCSのソースの場所は、接続によって指定され�
 
 </Tab>
 </Tabs>
+
+<div id="note" />
 
 <div id="categorize-fields" />
 
@@ -352,6 +360,8 @@ AppsFlyerは、**現在の日付と２日前**のソースファイルの新し�
 <Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
+
+<div id="important-3" />
 
 <div id="working-with-existing-sources" />
 

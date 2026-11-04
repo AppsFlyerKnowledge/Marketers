@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要:** カスタムオーディエンスを広告パートナーに送信するための追加のユーザー識別子を設定します。
 
+<div id="about-additional-identifiers" />
+
 ## 追加の識別子について
 
 AppsFlyer Audiencesは、カスタムオーディエンスを<Anchor target="_blank" href="/marketers/ja/docs/audiences-partner-connections">広告パートナー</Anchor>に送信するための以下のデバイス識別子を自動的にサポートします。
@@ -36,6 +38,18 @@ AppsFlyer Audiencesは、カスタムオーディエンスを<Anchor target="_bl
 一部の広告パートナーは、追加のユーザー識別子に基づくカスタムオーディエンスのマッチングもサポートしています。オーディエンスでは、AppsFlyer SDKまたはS2SモバイルAPIを利用してこれらの識別子を特別に設定した場合に、これらを使用する選択肢を提供します。
 
 **これらの追加識別子には電話番号やメールが含まれますが、SHA256ハッシュで暗号化されている場合に限り利用できます。  これらの追加の識別子の使用には、[Additional Identifiers Terms of Use](https://support.appsflyer.com/hc/article_attachments/16567368205201)（追加識別子の利用規約）への同意が必要です。**
+
+<div id="h_01HNZNWZ9XSY47T58Z5YR7Q65S" />
+
+<div id="ios-sdk-configuration" />
+
+<div id="note" />
+
+<div id="sdk-reference-and-code-samples" />
+
+<div id="available-identifiers" />
+
+<div id="next-steps" />
 
 ## 次のステップ
 
@@ -68,6 +82,34 @@ SDKを介してオーディエンスの識別子を送信する場合:
 * ハッシュ化された*電話番号*の場合：
   * SDK v7.0.1以降:`setUserPhone` （推奨）。
   * SDK v7.0.0以前: 使用`setAdditionalData`カスタムデータを使用。
+
+<div id="android-sdk-configuration" />
+
+<div id="note-3" />
+
+<div id="usage-example-2" />
+
+<div id="method-signature-2" />
+
+<div id="sdk-v701-and-later" />
+
+<div id="usage-example-1" />
+
+<div id="method-signature-1" />
+
+<div id="sdk-v700-and-earlier" />
+
+<div id="note-2" />
+
+<div id="usage-example" />
+
+<div id="method-signature" />
+
+<div id="sdk-v701-and-later--setuserphone-recommended" />
+
+<div id="note-1" />
+
+<div id="sdk-v700-and-earlier--setadditionaldata" />
 
 > 📘 **注意**
 >
@@ -258,6 +300,32 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
   </tbody>
 </Table>
 
+<div id="note-6" />
+
+<div id="usage-example-5" />
+
+<div id="method-signature-5" />
+
+<div id="sdk-v701-and-later-1" />
+
+<div id="usage-example-4" />
+
+<div id="method-signature-4" />
+
+<div id="sdk-v700-and-earlier-1" />
+
+<div id="note-5" />
+
+<div id="usage-example-3" />
+
+<div id="method-signature-3" />
+
+<div id="sdk-v701-and-later--setuserphone-recommended-1" />
+
+<div id="note-4" />
+
+<div id="sdk-v700-and-earlier--setadditionaldata-1" />
+
 > 📘 **注意**
 >
 > プレーンテキストのメールを渡してください。SDKはそれをローカルで正規化し、ハッシュ化します（SHA-256）。事前ハッシュ化しないでください。通話ごとに受け付けられるメールは1通のみです。`setUserEmail`これは、以前に設定された値に加算するのではなく、それを上書きします。
@@ -439,6 +507,10 @@ AppsFlyerLib.getInstance().setUserEmails(
 > バージョン7.0.1以降では、1回の呼び出しにつき1通のメールのみが受け付けられます。複数のメールはサポートされていません:`setUserEmail`これは、以前に設定された値に加算するのではなく、それを上書きします。
 
 </Accordion>
+
+<div id="note-7" />
+
+<div id="s2s-reference-and-code-samples" />
 
 ## S2Sリファレンスとコードサンプル
 

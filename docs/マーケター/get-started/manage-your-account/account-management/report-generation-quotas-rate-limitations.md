@@ -47,6 +47,10 @@ x-zendesk:
 | Cohort API | アカウントごとに、1分あたり60回 |
 | SKAN集計レポート | アカウントごとに、1分あたり10回 |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### ローデータ

@@ -245,6 +245,8 @@ GoogleとAppsFlyerは、GoogleのDMA規制の解釈に基づいて、ad\_user\_d
 
 </Accordion>
 
+<div id="see-also" />
+
 <div id="further-information-and-contact-details" />
 
 ## 追加情報および問い合わせ詳細

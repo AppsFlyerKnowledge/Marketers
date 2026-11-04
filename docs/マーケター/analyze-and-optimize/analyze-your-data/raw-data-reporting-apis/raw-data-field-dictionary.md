@@ -61,6 +61,26 @@ x-zendesk:
   * **列挙型 n 文字**：列挙フィールドには特定の値のみを含めることができます。例えば、コスト通貨は3文字で、指定された通貨コードのみを含めることができます。
   * **列挙型 5 文字ブール値：** フィールドの値は `TRUE` または `FALSE` のいずれかです。
 
+<div id="event::isattributed" />
+
+<div id="event::isfirstevent" />
+
+<div id="event-2" />
+
+<div id="device-info::8be2aaee" />
+
+<div id="attribution::860c6c0d-2" />
+
+<div id="attribution::1ce994b8" />
+
+<div id="device-info::63466612" />
+
+<div id="device-info::5aed5231" />
+
+<div id="attribution::reqloopback" />
+
+<div id="field-dictionary" />
+
 > 👍 **Tip**
 >
 > * 表を並べ替えるには、列名をクリックします。

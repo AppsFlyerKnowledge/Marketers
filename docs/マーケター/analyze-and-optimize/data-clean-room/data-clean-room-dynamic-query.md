@@ -55,7 +55,25 @@ x-zendesk:
    * Min
 
 
+<div id="restricted-function" />
+
+<div id="grouped-by-nonpermitted-custom-data-field" />
+
+<div id="grouped-by-nonpermitted-attribution-data-field" />
+
+<div id="no-group-by-statement" />
+
 <div id="invalid-queries" />
+
+<div id="complex-attribution-and-firstparty-data-join" />
+
+<div id="enrich-your-custom-data-with-attribution-insights" />
+
+<div id="calculate-custom-attribution-metrics" />
+
+<div id="explore-data-integrity" />
+
+<div id="obtain-crossapp-insights" />
 
 <div id="sample-queries" />
 
@@ -66,7 +84,7 @@ x-zendesk:
 ## 参考
 
 
-**<span id="query-reference"></span>グループ1032**
+**<span id="querying-attribution-data"></span><span id="combining-sources"></span><span id="query-reference"></span>グループ1032**
 
 |  | 説明 |  |
 | --- | --- | --- |

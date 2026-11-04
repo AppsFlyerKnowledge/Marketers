@@ -70,6 +70,16 @@ x-zendesk:
 
 </Accordion>
 
+<div id="windows::6c6af14b" />
+
+<div id="ios::80f176b3" />
+
+<div id="android::db8cc168" />
+
+<div id="windows" />
+
+<div id="ios" />
+
 <div id="managing-test-device-registration" />
 
 ## テストデバイスの登録管理

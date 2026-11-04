@@ -103,6 +103,8 @@ ResponsysでiOSユニバーサルリンクをサポートするには、AASAフ�
 
 </Accordion>
 
+<div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
+
 <div id="setting-up-your-app" />
 
 ## アプリのセットアップ
@@ -125,6 +127,8 @@ Androidマニフェストで、ディープリンク先のアクティビティ�
      </intent-filter>
 </activity>
 ```
+
+<div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
 
 <div id="setting-up-the-app-to-resolve-click-domains" />
 

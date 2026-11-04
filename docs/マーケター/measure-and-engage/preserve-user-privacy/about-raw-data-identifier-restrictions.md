@@ -36,6 +36,10 @@ AppsFlyerは、広告主の<Anchor target="_blank" href="/marketers/ja/docs/appl
 
 コンバージョン、クリック、インプレッションにおけるメディアソースごとの制限について以下の表をご覧ください。
 
+<div id="uber" />
+
+<div id="discord" />
+
 <div id="note" />
 
 > 📘 **注記：**
@@ -56,6 +60,8 @@ AppsFlyerは、広告主の<Anchor target="_blank" href="/marketers/ja/docs/appl
 | <span id="snapchat"></span>Snapchat | <ul><li>2023年3月1日以降、Snapchatのアンインストールはローデータレポートに含まれません。</li><li>ビュースルーCVのローデータが制限されています。以下項目はローデータ配信ツールには含まれません：<ul><li>Media source (snapchat\_int)</li><li>チャネル</li><li>Attributed touch type (impression)</li><li>Attributed touch time (日付のみ "dd/mm/yyyy" と記録されます)</li><li>キャンペーン名の項目は "*restricted*"と記録されます。</li></ul></li><li>Pinterestのクリックとインプレッションはローデータレポートには含まれません。</li></ul> |
 | <span id="tiktok-for-business"></span>TikTok for Business | <ul><li>Media source (bytedanceglobal\_int および tiktokglobal\_int)<ul><li>Channel</li><li>Attributed touch type (impression)</li><li>Attributed touch time (日付のみ "dd/mm/yyyy" と記録されます)</li><li>キャンペーン名の項目は "*restricted*"と記録されます。</li></ul></li><li>bytedanceglobal\_intからのインプレッションはローデータレポートには含まれません。</li><li>tiktokglobal\_intからのData Locker経由のクリックとインプレッションのローデータレポートは制限されています。</li></ul> |
 | <span id="x-ads-formerly-twitter"></span>X Ads（旧：Twitter Ads） | <ul><li>X Adsでは、AppsFlyerプラットフォームでローデータを利用できない場合があります。このような場合、イベントはローデータレポートには表示されません。</li><li>X Adsのクリックとインプレッションはローデータレポートには含まれません。</li></ul> |
+
+<div id="delivery-of-raw-data" />
 
 <div id="raw-data-context" />
 

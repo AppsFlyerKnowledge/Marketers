@@ -242,6 +242,8 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
 
 </Accordion>
 
+<div id="note-3" />
+
 <div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## OneLink Smart Scriptを使ったランディングページの作成
@@ -291,6 +293,8 @@ Smart Scriptを使用してTikTok Adsのキャンペーンを設定するには�
 
      1. **マッピング：** 項目で、**カスタムパラメータ**を選択してください。
      2. **送信URLパラメーター**と**受信URLパラメーター**に**ttclid**を入力してください。
+
+     <div id="note-4" />
 
      > 📘 **注意**
      >
@@ -382,6 +386,10 @@ Webキャンペーンの各種イベントは、元々の`tiktokweb_int`のPID�
 ### 管理画面上でのデータ表示について
 
 すべてのTikTokのWeb-to-Appキャンペーンの計測データは、オーバービューとアクティビティダッシュボードにおいて`tiktokglobal_int`の下に紐づく形で表示されます。これにより、プラットフォーム全体でのキャンペーンの結果を確認できるようになります。標準フィルタとブレークダウンを使用して、TikTok AdsのデータにおけるアプリとWebのトラフィックを比較してください。
+
+<div id="note-7" />
+
+<div id="measure-cost-clicks-and-impressions" />
 
 <div id="view-in-raw-data-and-api-reports" />
 

@@ -499,6 +499,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 有効なV2 APIトークンをリクエストヘッダーに次のように挿入する必要があります:

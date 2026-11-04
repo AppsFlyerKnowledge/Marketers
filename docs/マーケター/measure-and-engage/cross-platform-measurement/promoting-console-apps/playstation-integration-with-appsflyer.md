@@ -48,6 +48,12 @@ PlayStation APIの連携は以下をサポートします：
    たとえば、ランディングページにXbox、マイクロソフトストア、およびSteamページへのリンクを含めることができます。
 4. ゲームのインストールゲームのインストール： ユーザーがゲームをインストールし、アトリビューションをトリガーし、アプリ内イベントとセッションを記録します。
 
+<div id="sample-attribution-links" />
+
+<div id="important" />
+
+<div id="measure-ads-that-run-on-playstation" />
+
 <div id="integration-procedures" />
 
 ## 連携手順

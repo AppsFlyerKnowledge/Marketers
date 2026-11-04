@@ -568,7 +568,11 @@ Data Lockerとローデータの出力レポートの次の列で、検証ルー
   * 1.0.01
   * 2.0.01
 
+<div id="how-appsflyer-determines-the-latest-version" />
+
 <div id="understand-how-the-condition-works-with-multiple-apps" />
+
+<div id="example-latest-version-calculation" />
 
 ##### **複数のアプリを選択した場合の動作**
 

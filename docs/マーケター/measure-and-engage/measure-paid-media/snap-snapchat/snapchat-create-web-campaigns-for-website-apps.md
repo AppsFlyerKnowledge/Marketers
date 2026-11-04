@@ -100,6 +100,10 @@ AppsFlyerのイベントをSnapchat Web広告のイベントにマッピング�
 8. ［任意］**条件を追加**アイコンをクリックして、ポストバックする<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#条件付きアプリ内イベントポストバック">イベントの条件を設定可能です。</Anchor>
 9. **連携を保存**をクリックします。
 
+<div id="note-2" />
+
+<div id="note-1" />
+
 <div id="note" />
 
 > 📘 **注意**

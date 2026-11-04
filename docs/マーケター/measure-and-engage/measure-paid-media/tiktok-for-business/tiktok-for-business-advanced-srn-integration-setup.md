@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** TikTok for Business（tiktokglobal\_int）は、AppsFlyerを通じてクリックとビューに基づいたモバイルアトリビューションを計測できる、アドバンスセルフレポーティングネットワーク（<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns">SRN</Anchor>）です。アプリおよび非モバイルのTikTokキャンペーンからのアプリインストールの計測もサポートしています。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 2023年1月30日に、新しい**TikTok for Business — アドバンスSRN**連携（`tiktokglobal_int`）が追加されました。**[レガシー] TikTok for Business**連携 `bytedanceglobal_int`は段階的に廃止され、2024年3月20日に公式に廃止されました。移行はTikTokによって管理され、旧連携を削除できるようになった際に通知されます。**データの損失を防ぐために、移行期間中は両方の連携を有効に保ってください**。詳細は<Anchor target="_blank" href="/marketers/ja/docs/bulletin-tiktok-for-business-advanced-srn">お知らせ</Anchor>をご覧ください。
@@ -52,6 +54,8 @@ Advanced SRN連携では、広告IDを含むすべてのトラフィックが通
 
 設定ウィンドウには次のタブが含まれます：連携、計測リンク、コスト、広告収益、権限。**計測リンク**タブはTikTok For Businessでは使用しません。また、その他のタブは任意です。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 一部の設定項目は、iOSとAndroidで異なります。
@@ -70,6 +74,10 @@ Advanced SRN連携では、広告IDを含むすべてのトラフィックが通
 
 連携を有効にするには、最初に必ず**パートナーを有効にする**のトグルをONにしてください。<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化と無効化</Anchor>に関する詳細情報は、連携タブを参照してください。
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-2" />
+
 <div id="advanced-data-sharing" />
 
 #### 高プライバシーポストバック
@@ -86,6 +94,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >
 > * 連携（`tiktokglobal_int`）を有効にすると、**高プライバシーポストバック**トグルがデフォルトでオンになります。
 > * レガシー連携（`bytedanceglobal_int`）から移行し、新しい連携（`tiktokglobal_int`）をアクティブ化すると、移行前の状態に関係なく、**高プライバシーポストバック**トグルがデフォルトでオンになります。
+
+<div id="note-3" />
 
 <div id="general-settings" />
 
@@ -108,6 +118,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 > * 新しい連携（`tiktokglobal_int`）に移行すると、レガシー連携（`bytedanceglobal_int`）の値がすべてこのフィールドに自動的に入力されます。
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">iOS14におけるTikTok App IDの要件について</Anchor>も参照してください。
 
+<div id="note-4" />
+
 <div id="default-postbacks" />
 
 #### デフォルトのポストバック
@@ -121,6 +133,10 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >
 > * iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">レポート</Anchor>を通じてパートナーと共有するデータのコントロールは、 **[高プライバシー](#高プライバシーポストバック)** （iOS 14.5以降）のトグル状態によって決まります。
 > * レガシー連携（`bytedanceglobal_int`）から移行し、新しい連携（`tiktokglobal_int`）をアクティブにすると、移行前の状態に関係なく、ポストバックインストールのデフォルトの選択状態は**このパートナーのみ**になります。
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="install-attribution" />
 
@@ -148,6 +164,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >     このデータはGCDでは利用できません。集計データレポートでは引き続きビュースルーコンバージョンを利用できます。
 > * レガシー連携 (`bytedanceglobal_int`) から移行し、新規連携 (`tiktokglobal_int`) をアクティブ化すると、移行前の状態に関係なく、ルックバック期間の設定 (クリックスルーおよびビュースルー) は**デフォルト値**になっています。これらの設定は更新できます。
 
+<div id="note-7" />
+
 <div id="reinstall-attribution" />
 
 #### リインストール計測
@@ -162,6 +180,10 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >
 > * リインストール専用のルックバック期間の設定は不要です。リインストール計測では、インストールのアトリビューション設定と同じクリックスルーおよびビュースルーのステータスとルックバック期間を使用します。
 > * 有効化すると、対象となるリインストールのポストバックがTikTokへ送信されます。
+
+<div id="warning" />
+
+<div id="note-8" />
 
 <div id="re-engagement-attribution" />
 
@@ -184,6 +206,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 > レガシー連携（`bytedanceglobal_int`）から移行し、新しい連携（`tiktokglobal_int`）をアクティブ化すると、移行前の状態に関係なく、**高プライバシーポストバック**トグルがデフォルトでオンになります。レガシー連携で<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">リターゲティングキャンペーン</Anchor>を使用している場合は、**新しい連携でオン**にすることを確認してください。
 
 参考：<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide#reengagement-rules-and-windows">リエンゲージメント計測の仕様と期間設定について</Anchor>
+
+<div id="note-9" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -220,6 +244,10 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
    1. 左上のパートナー名の下にある、アプリ名をクリックしてアプリ一覧を開いてください。
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリで、連携ステップを再度実施してください。
+
+<div id="note-11" />
+
+<div id="note-10" />
 
 > 📘 **注意**
 >
@@ -334,6 +362,10 @@ TikTok Ads Managerで次のステップに従うと、TikTok非アプリキャ�
 
 広告主の代理店は、TikTok for Businessの連携をオンにして、キャンペーンのアトリビューションの取得を開始できます。ただし、この連携には、代理店に関してはいくつかの制限があります。
 
+<div id="send-complex-in-app-events-to-tiktok" />
+
+<div id="important" />
+
 <div id="agency-limitations" />
 
 ### 代理店の制限
@@ -376,6 +408,8 @@ Smart Plusは、複数のクリエイティブを同一広告ユニット内で�
 2. アドセット
 3. アド
 4. クリエイティブ
+
+<div id="note-12" />
 
 <div id="how-smart-plus-data-is-reported-in-appsflyer" />
 

@@ -142,6 +142,8 @@ x-zendesk:
 * レポートの改善：レポートのニーズに合ったカスタムダッシュボードの表示を作成できます。
 * 適切な意思決定：KPIに事業固有の背景情報を加えることで、傾向やパターン、最適化の機会を見つけやすくなります。
 
+<div id="pre-built-retargeting-campaigns-dimension" />
+
 <div id="suggested-custom-dimensions" />
 
 #### 推奨のカスタムディメンション

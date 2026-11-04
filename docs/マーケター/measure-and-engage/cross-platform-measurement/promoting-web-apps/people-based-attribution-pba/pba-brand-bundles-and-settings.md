@@ -90,6 +90,8 @@ x-zendesk:
      * バンドルに含めるモバイルアプリの個数に上限はありません。
 4. バンドルを作成をクリックしてください。
 
+<div id="inapp-event-settings" />
+
 <div id="important" />
 
 > 🚧 **重要！**
@@ -196,6 +198,8 @@ Webイベントには、**スタンダード**と**コンバージョン**の2�
 <Accordion title="バンドルを削除するとどうなりますか？">
 
 <div id="see-also" />
+
+<div id="page-404" />
 
 <div id="faqs-what-happens-if-i-delete-a-bundle" />
 

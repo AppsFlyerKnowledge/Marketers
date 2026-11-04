@@ -168,6 +168,8 @@ SRNへのアトリビューションは、決定論的マッチングによっ�
 
 </Accordion>
 
+<div id="note" />
+
 <div id="data-availability" />
 
 ## データの可用性

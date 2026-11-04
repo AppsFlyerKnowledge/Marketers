@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="note-5" />
+
 <div id="important-1" />
 
 <div id="important" />
@@ -45,6 +47,8 @@ x-zendesk:
 | DV360 |  |  |
 | CM360 & DV360 |  |  |
 | CM360 + 非DV360のサードパーティメディアソース (1) | サードパーティメディアソースからトラフィックを購入し、このトラフィックから発生するモバイルアプリコンバージョンをCM360で計測する | <Anchor target="_blank" href="/marketers/ja/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">CM360を使用した第三者トラフィックの測定</Anchor> |
+
+<div id="note-1" />
 
 <div id="setting-up-gmp-dv360-for-advertisers" />
 
@@ -116,6 +120,8 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
 広告を表示またはクリックしたユーザーの新規インストール（初回起動）をアトリビューションするためのアトリビューション期間を設定します。
 
 1. **インストールのクリックルックバック期間**を1-24時間または1-14日に設定します。
+
+<div id="note-2" />
 
 <div id="re-engagement-attribution" />
 
@@ -263,7 +269,7 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 | 代理店 | <ol><li>AppsFlyer管理画面左メニュー **連携** > **連携済みパートナー**を選択します。</li><li>**連携タブ**を開きます。</li><li>**パートナーを有効にする**が**オン**になっていることを確認してください。そうでない場合、広告主側でまず広告主のGMP連携 を完了する必要があります。</li><li>ルックバック期間やアプリ内イベントのマッピングなど、残りの設定が正しいことも確認してください。必要であれば、変更を広告主に依頼してください。</li><li>最低1つ以上の**DBM Advertiser ID**を入力します。IDは <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/11415707?hl=en">GMP管理画面</Anchor>で確認できます。</li><li>**保存**をクリックしてください。</li></ol> |
 
 
-| <span id="gmp-dv360-discrepancies"></span><span id="gmp-discrepancies"></span>原因 | 説明 | AppsFlyerからのアドバイス |
+| <span id="see-also"></span><span id="gmp-dv360-discrepancies"></span><span id="gmp-discrepancies"></span>原因 | 説明 | AppsFlyerからのアドバイス |
 | --- | --- | --- |
 | ビュースルーアトリビューションウィンドウ | DV360／CM360のビュースルー計測期間は14日ですが、AppsFlyerのデフォルト期間は1日です。 |  |
 |  | AppsFlyer と GMP のマッピングが正しくない | <ul><li>リンクIDを確認してください。</li></ul> |

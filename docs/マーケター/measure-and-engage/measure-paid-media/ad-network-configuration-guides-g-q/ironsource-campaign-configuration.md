@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
+<div id="note-1" />
+
 <div id="note" />
 
 > 📘 **注意**

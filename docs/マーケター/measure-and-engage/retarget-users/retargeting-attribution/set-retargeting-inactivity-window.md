@@ -152,6 +152,8 @@ x-zendesk:
 | Google Ads | <ul><li>リターゲティングを有効／無効にできません</li><li>代理店が権限を付与されている場合、休眠期間を設定できます</li></ul> |
 | Meta ads/X Ads/Snapchat | リターゲティングと**休眠期間**の設定にアクセスできません |
 
+<div id="traits-and-limitations" />
+
 <div id="non-srn" />
 
 #### 非SRN

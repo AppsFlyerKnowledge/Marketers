@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** すべてのメディアソースにわたってアプリのアトリビューションと分析に影響を与える設定について説明します。
 
+<div id="note" />
+
 <div id="app-settings" />
 
 ## アプリ設定
@@ -40,6 +42,8 @@ x-zendesk:
 1. **AppsFlyer管理画面左メニュー** **設定** > アプリ設定へ移動します。
 2. アプリ設定ページで設定を確認し、必要に応じて変更を加えてください。
 3. **設定を保存**をクリックします。
+
+<div id="minimum-time-between-sessions" />
 
 <div id="general-app-settings" />
 
@@ -149,6 +153,10 @@ x-zendesk:
 </Table>
 
 <div id="attribution-settings" />
+
+<div id="minimum-time-between-reengagement-conversions" />
+
+<div id="note-1" />
 
 ### アトリビューション設定
 

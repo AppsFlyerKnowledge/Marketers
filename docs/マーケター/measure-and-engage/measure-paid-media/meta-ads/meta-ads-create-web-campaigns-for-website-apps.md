@@ -125,6 +125,10 @@ AppsFlyerのイベントをMeta広告のイベントにマッピングするこ�
    * **オーガニックを含むすべてのメディアソース**：いずれかのパートナーにアトリビューションされたイベントと、オーガニックのイベントについてポストバックを送信します。
 7. <strong>［送信データ］</strong>列で、イベントに収益値を含めて送信するかどうかを選択します。<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#ポストバックに含めるデータ">ポストバックに含めるデータ</Anchor>を参照してください。
 
+   <div id="note-5" />
+
+   <div id="note-4" />
+
    <div id="important" />
 
    > 🚧 **重要！**

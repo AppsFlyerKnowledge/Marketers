@@ -24,6 +24,12 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer Web SDK（ピクセルとも呼ばれます）をWebサイトに実装することで、ユーザーの訪問やイベントをAppsFlyerへ送信できるようになります。また、永続的なカスタマーユーザーID（CUID）を設定することで、複数プラットフォームにまたがるユーザージャーニーを統合できます。
 
+<div id="note" />
+
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
+
+<div id="integrate-the-sdk-manually" />
+
 <div id="overview" />
 
 ## 概要
@@ -55,6 +61,8 @@ Web SDK を使用すると、訪問者がWebサイト上でどのように行動
 
 1. AppsFlyer のサイドメニューから、**Engage**>**Web-to-app**>**Smart Banners**を選択してください。
 2. 必要な Smart Bannerのキーをコピーしてください。
+
+<div id="warning" />
 
 <div id="2-select-a-code-snippet" />
 
@@ -211,6 +219,8 @@ Webサイトでnonceを使用したContent Security Policy（CSP）を適用し�
 
 </Accordion>
 
+<div id="note-1" />
+
 <div id="3-deploy-the-snippet" />
 
 ## 3. スニペットのデプロイ
@@ -329,6 +339,8 @@ SDKがページごとに1回のみ読み込まれるように設定し、GTMの�
 
 </Accordion>
 
+<div id="note-2" />
+
 <div id="4-make-sure-the-sdk-is-working" />
 
 ## 2. SDKが正しく動作していることを確認する
@@ -353,6 +365,8 @@ SDKがページごとに1回のみ読み込まれるように設定し、GTMの�
    * ステータスコードが 200 であること
 8. `site_id` が、AppsFlyer > 上部メニュー > My Apps に表示されている `WEB_SDK_KEY` と一致していることを確認します。
 9. SDKが1回だけ読み込まれていることを確認してください。SDKが複数回読み込まれると、正常に動作しなくなる可能性があります。
+
+<div id="important" />
 
 <div id="5-set-and-record-events" />
 
@@ -459,6 +473,8 @@ window.onload = function(){
 </body>
 </html>
 ```
+
+<div id="important-1" />
 
 <div id="2-configure-the-gtm-tag" />
 
@@ -787,6 +803,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="イベント送信をオプトイン／オプトアウトする">
 
 計測は以下2つの方法で制御できます。
+
+<div id="note-3" />
 
 <div id="sdk-initial-state-setting-in-the-snippet" />
 

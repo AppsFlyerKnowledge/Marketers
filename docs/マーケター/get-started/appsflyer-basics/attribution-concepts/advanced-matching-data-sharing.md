@@ -72,6 +72,8 @@ x-zendesk:
 >
 > ハッシュ化した識別子は、詳細マッチングデータの共有が有効なパートナーにのみ転送されます。パートナーの設定を無効にすると、イベントに識別子が含まれていても、そのパートナーにはハッシュ化されたデータを共有しません。
 
+<div id="send-hashed-identifiers-with-the-sdk" />
+
 <div id="how-hashed-user-identifiers-reach-appsflyer" />
 
 ## ハッシュ化したユーザー識別子をAppsFlyerに送信する方法
@@ -90,6 +92,8 @@ SDKは、以下の手順を順番に実行します。
 3. ハッシュ化した値のみをAppsFlyerに送信します。ハッシュ化前の入力値がデバイスの外に送信されることはありません。
 
 無効な値はSDKがエラーとして拒否し、AppsFlyerには送信しません。
+
+<div id="send-hashed-identifiers-with-the-s2s-api" />
 
 > 📘 **Note**
 >
@@ -129,6 +133,16 @@ S2Sアプリ内イベントAPIでイベントを送信する場合は、送信�
 
 </Tab>
 </Tabs>
+
+<div id="facebook-login-id-fbloginid" />
+
+<div id="first-name-firstnamehashed-and-last-name-lastnamehashed" />
+
+<div id="phone-number-e164-phonenumbere164hashed" />
+
+<div id="phone-number-digits-only-phonenumberhashed" />
+
+<div id="email-emailhashed" />
 
 <div id="normalize-and-hash-identifiers" />
 
@@ -227,6 +241,16 @@ Facebook Login SDKから取得したFacebookログインIDをそのまま送信�
 > 🚧 **Important**
 >
 > AppsFlyerは、平文の個人識別情報（PII）を処理または保存しません。すべての識別子フィールドを受信時に検証します。SHA-256形式に準拠していない値は破棄し、どのパートナーにも転送しません。
+
+<div id="does-appsflyer-ever-receive-plaintext-user-identifiers" />
+
+<div id="will-advancedmatching-data-sharing-improve-install-attribution" />
+
+<div id="do-i-need-to-send-all-supported-fields" />
+
+<div id="what-happens-if-i-send-an-invalid-hash-value" />
+
+<div id="is-advancedmatching-data-sharing-the-same-as-the-audiences-hashed-email-and-phone-feature" />
 
 <div id="faq" />
 

@@ -185,6 +185,8 @@ Meta広告でキャンペーンを実施する場合、Metaの利用規約に同
 
 <Tab title="Snapchat">
 
+<div id="twitter-conversion-data" />
+
 <div id="snapchat-conversion-data" />
 
 ### Snapchatのコンバージョンデータ

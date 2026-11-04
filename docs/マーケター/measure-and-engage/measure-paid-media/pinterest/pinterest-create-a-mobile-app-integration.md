@@ -73,7 +73,19 @@ Pinterestの連携設定画面には、4つのタブが含まれています：�
 
 Pinterestからのビュースルーインストールを計測する場合は、これをオンにします。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="legacy-set-tag-id" />
+
 <div id="in-app-events-settings" />
+
+<div id="including" />
+
+<div id="to-users-from" />
+
+<div id="partner-event-name" />
+
+<div id="appsflyer-event-name" />
+
+<div id="in-app-event-postbacks" />
 
 ### アプリ内イベントの設定
 

@@ -143,7 +143,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>検索およびフィルター | 属性名、アプリ名、および属性レベルで。 |
 | <span id="sort-by"></span>並び替え | 列のヘッダーをクリックすると、表の行が並べ替えられます。 |
-| <span id="zd-import-data"></span><span id="import-data"></span>データをインポート | <ul><li>[CSVでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[APIでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="note"></span><span id="import-data"></span>データをインポート | <ul><li>[CSVでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[APIでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>APIインポートキーの変更 | **APIインポートキーを変更するには：**<ol><li>**データのインポート**をクリックします。</li><li>**API**を選択します。</li><li>**インポートキー**を更新をクリックします。</li></ol><strong>注意！</strong>スクリプトにキーが埋め込まれている場合は、新しいキーで更新してください。 |
 
 </Accordion>

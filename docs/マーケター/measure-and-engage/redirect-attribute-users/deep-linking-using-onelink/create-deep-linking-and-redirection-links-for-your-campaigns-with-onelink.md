@@ -38,6 +38,10 @@ x-zendesk:
 * ディープリンクとリダイレクトの設定
 * 追加パラメータの設定
 
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## OneLinkリンクの作成

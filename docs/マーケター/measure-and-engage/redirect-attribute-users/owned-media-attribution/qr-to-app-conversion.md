@@ -46,6 +46,16 @@ QRコードは、次の方法で簡単に作成できます：
 
 <Accordion title="QRコードを使用してアプリインストールを促す">
 
+<div id="can-you-bulk-create-qr-codes" />
+
+<div id="what-appsflyer-options-are-available-for-generating-qr-codes" />
+
+<div id="can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example" />
+
+<div id="qr-with-long-links-vs-short-links---is-there-any-difference" />
+
+<div id="faq" />
+
 <div id="manual-qr-code-setup" />
 
 #### QRコードの手動設定

@@ -96,6 +96,8 @@ ResponsysでiOSユニバーサルリンクをサポートするには、AASAフ�
 
 </Accordion>
 
+<div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
+
 <div id="setting-up-your-app" />
 
 ## アプリのセットアップ
@@ -119,6 +121,8 @@ Androidマニフェストで、ディープリンク先のアクティビティ�
 </activity>
 ```
 
+<div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
+
 <div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### ステップ2: クリックドメインを解決するアプリの設定
@@ -136,6 +140,10 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 
 
 このセクションでは、ユニバーサルリンクをサポートするアプリの設定方法について説明します。
+
+<div id="step-2-for-ios-resolve-deep-links" />
+
+<div id="step-2-for-android-resolve-deep-links" />
 
 <div id="step-1-associating-click-domains-in-xcode" />
 
@@ -221,6 +229,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
    </Tab>
    </Tabs>
 
+
+<div id="note" />
 
 <div id="sending-your-first-email" />
 

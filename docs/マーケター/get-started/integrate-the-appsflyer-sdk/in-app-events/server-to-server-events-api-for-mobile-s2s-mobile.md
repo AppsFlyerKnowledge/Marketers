@@ -58,6 +58,8 @@ AppsFlyerがS2Sアプリ内イベントを処理する際、アトリビュー�
 
 つまり、AppsFlyerが非オーガニックS2Sアプリ内イベントに関連付けるデータの一部は、オーガニックS2Sアプリ内イベントには関連付けられないということです。
 
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
+
 <div id="note" />
 
 > 📄 **例**

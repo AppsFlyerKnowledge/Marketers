@@ -83,6 +83,18 @@ AppsFlyerのSKANソリューションは、広告主に以下を提供します�
 
 <Accordion title="原則と処理の流れ">
 
+<div id="agility" />
+
+<div id="seamless-integration" />
+
+<div id="data-delivery" />
+
+<div id="data-enrichment" />
+
+<div id="data-validation" />
+
+<div id="data-collection" />
+
 <div id="skan-attribution-flow" />
 
 #### **SKANアトリビューションの流れ**
@@ -232,6 +244,12 @@ SKAdNetworkダッシュボードのオーガニック指標は、以下の仕組
 | App Clips | SKAdNetworkダッシュボードでは、App Clipsはオーガニックに帰属します。起動元のメディアソースは、Overview dashboardで確認してください。 |
 
 </Accordion>
+
+<div id="1611499069.009700" />
+
+<div id="inapp-event-mapping-verification" />
+
+<div id="transaction-id-sharing" />
 
 <div id="skan-integrated-partners" />
 

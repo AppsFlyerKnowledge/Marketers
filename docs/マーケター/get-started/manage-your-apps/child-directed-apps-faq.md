@@ -31,6 +31,8 @@ x-zendesk:
 
 子ども向けアプリには、子どものプライバシーを保護するための多くのポリシー、法律、規制があります。主要なものは [COPPA](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa)と[GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2029-1-1)です。近年、iOSやAndroidなどのプラットフォームでは、子どものプライバシーを向上させるための施策が実装されています。アプリを作成するときに最初に行うべきことの一つは、アプリの対象を子どものみとするか、全年齢（子どもと大人の両方）とするかを決定することです。この記事から、子ども向けアプリにコンプライアンスに準拠したアトリビューションソリューションを実装する方法を学んでください。
 
+<div id="if-ive-added-an-app-and-didn-t-define-it-as-directed-towards-children-can-i-change-this-later" />
+
 <div id="adding-a-child-directed-app" />
 
 ## 子ども向けアプリの追加

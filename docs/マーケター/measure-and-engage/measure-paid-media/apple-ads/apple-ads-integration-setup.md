@@ -55,6 +55,10 @@ x-zendesk:
 
 設定は **連携済みパートナー**画面から行いますが、新しく連携する場合には、まず <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations">パートナーマーケットプレイス</Anchor>にアクセスする必要があります。以下の手順に従い、各タブの設定を完了してください。
 
+<div id="note-2" />
+
+<div id="note-1" />
+
 > 📘 **注**
 >
 > 連携を設定する前に、<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーへ連絡</Anchor>して広告運用のためのアカウントを開設してください。
@@ -214,6 +218,8 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 4. [オプション] アプリを再インストールしたユーザーを帰属させたい場合、 再帰属ウィンドウ中に切り替えます。 **再インストール計測**
 5. **保存**をクリックしてください。
 
+<div id="note-3" />
+
 <div id="agency-actions" />
 
 #### **代理店が行う設定**
@@ -228,6 +234,8 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 > 📘 **注意**
 >
 > エージェンシーが Apple Search Ads マーケティングパートナーと連携する場合、 エージェンシーは両方の Apple Search Ads 設定ページとマーケティングパートナー 設定ページで同じキャンペーングループ ID を設定する必要があります。
+
+<div id="note-4" />
 
 <div id="cost-clicks-and-impressions-data" />
 
@@ -262,6 +270,10 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 4. 画面右下の**連携を保存**をクリックします。
 
 </Accordion>
+
+<div id="before-september-1-2026" />
+
+<div id="after-september-1-2026" />
 
 <div id="additional-information" />
 
@@ -309,6 +321,20 @@ AppsFlyerリターゲティング計測メカニズムにより、広告主は�
 **リターゲティングがオフ**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="20260901" />
+
+<div id="h_01M0YZYCC5S0E3HA296KAA0SDZ" />
+
+<div id="missing-conversion-payload-for-gender-and-age-targeted-users" />
+
+<div id="preregistration-click-and-impression-lookback-window-discrepancy" />
+
+<div id="see-also" />
+
+<div id="before-september-1-2026-1" />
+
+<div id="after-september-1-2026-1" />
 
 <div id="additional-reasons-for-discrepancies" />
 

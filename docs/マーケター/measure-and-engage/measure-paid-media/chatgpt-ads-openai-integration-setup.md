@@ -78,6 +78,12 @@ AppsFlyerへ送信するイベントペイロードに、この共通IDを `af_c
 **重要な注意点：** ChatGPT 広告を利用している間は、このトグルをオンのままにしてください。連携を無効にすると、ChatGPT 広告キャンペーンに対するアトリビューションとポストバックの送信が停止します。  
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>をご覧ください。
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note" />
+
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### 一般設定
@@ -172,6 +178,8 @@ ChatGPT 広告（OpenAI）は計測リンクをサポートしています。
 キャンペーンの要件に応じて、最終ページURLとして単一プラットフォーム向けの計測りリンクまたは<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneLink</Anchor>、もしくはSmart Scriptを実装したランディングページへ遷移させるのかを決定します。
 
 **推奨**：広告の遷移先にはランディングページのURL末尾に&pid=openai\_intを追加したものを使用し、ランディングページ側に予め実装した<Anchor target="_blank" href="/marketers/ja/docs/onelink-smart-script-overview">Smart Script</Anchor>または<Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor>を使って、ユーザーをApp StoreまたはGoogle Playへ誘導してください。
+
+<div id="important" />
 
 <div id="select-parameters" />
 

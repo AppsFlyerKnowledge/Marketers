@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** APIを使用して、コホートデータをBI、およびマーケティングオートメーションシステムに統合できます。
 
+<div id="filtering-and-grouping-parameters" />
+
 <div id="cohort-api" />
 
 ## コホートAPI
@@ -79,7 +81,7 @@ x-zendesk:
 <table><thead><tr><th> </th><th> </th><th colspan="5">関数</th></tr><tr><th rowspan="2">デフォルト/オプション </th><th rowspan="2">KPI (ディメンション名) </th><th>カウント</th><th>cvr (コンバージョン率)</th><th>レート</th><th>合計</th><th>ユニークユーザー数</th></tr><tr><th>数値</th><th>割合</th><th>割合</th><th>数値</th><th>数値</th></tr></thead><tbody><tr><td>常に</td><td>ユーザー</td><td><span>Y</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>常に</td><td>eCPI</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>常に</td><td>cost</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>オプション</td><td> 2024-02-26 </td><td><span>Y</span></td><td><span>Y</span></td><td>-</td><td><span>Y (3)</span></td><td><span>Y</span></td></tr><tr><td>オプション</td><td>revenue</td><td><span>Y</span></td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>オプション</td><td>ROAS</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>オプション</td><td>ROI</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>オプション</td><td>sessions</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td><span>Y(1)</span></td></tr><tr><td>オプション</td><td>uninstalls (2)</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) <em>aggregation_type=on_day</em> の場合、ユニークセッションが返されます。</p><p>(2) cohort_type=unified の場合は利用できません。 </p><p>(3) 合計とは、イベントで発生した収益の合計を意味します。</p><p> 注意イベント名では大文字と小文字が区別されます。</p></td></tr></tbody></table>
 
 
-| <span id="formatting-kpi-functions"></span><span id="presentation-of-kpi-functions"></span>パラメータ | 範囲外の値は | 必須 |
+| <span id="list-of-group-by-and-filter-by-dimensions"></span><span id="formatting-kpi-functions"></span><span id="presentation-of-kpi-functions"></span>パラメータ | 範囲外の値は | 必須 |
 | --- | --- | --- |
 | preferred\_currency | KPIの収益通貨<ul><li>true の場合、プラットフォーム上で設定されている<Anchor target="_blank" href="/marketers/ja/docs/app-settings#localization-currency">アプリ固有の通貨</Anchor>を使用して収益値が戻ります。</li><li>[デフォルト] false の場合、結果はUSDで返されます。</li><li>形式：ブール値</li><li>フラットフォームUI版：true</li></ul> | いいえ |
 | preferred\_timezone | **データ範囲のタイムゾーン**<ul><li>trueの場合、プラットフォームで設定された<Anchor target="_blank" href="/marketers/ja/docs/app-settings#localization-time-zone">アプリ固有のタイムゾーン</Anchor>を使用して表示されます。</li><li>[デフォルト] falseの場合、UTCタイムゾーンを使用して表示されます。</li><li>形式：ブール値</li><li>フラットフォームUI版：true</li></ul> | いいえ |

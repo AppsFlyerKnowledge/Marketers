@@ -84,6 +84,8 @@ x-zendesk:
 
 オンボーディングプロセスを完了するための<Anchor target="_blank" href="/marketers/ja/docs/getting-started-onboarding-for-marketers">すべての手順</Anchor>をご確認ください。
 
+<div id="note-2" />
+
 <div id="enter-app-details" />
 
 ### アプリの詳細を入力

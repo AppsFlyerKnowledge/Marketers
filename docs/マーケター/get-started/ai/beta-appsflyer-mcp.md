@@ -497,6 +497,10 @@ AppsFlyer MCPは、マーケティング分析、パフォーマンスに関す�
 
 **想定されるAIの回答：** D1リテンション率をメディアソース別にグループ化し、前週と比較します。
 
+<div id="h_01M6DQ8W2JQ9ECH5VEZPRT7221" />
+
+<div id="h_analyze-creative-performance" />
+
 <div id="note-5" />
 
 > 📘 **注記**
