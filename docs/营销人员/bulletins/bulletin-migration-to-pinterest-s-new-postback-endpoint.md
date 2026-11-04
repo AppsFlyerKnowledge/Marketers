@@ -102,7 +102,7 @@ x-zendesk:
            新回传设置中，**AdAccountID**和**AccessToken**为必填项（可从Pinterest平台获取）。<strong>任一字段的缺失都将导致事件回传失败。</strong>请确保在Pinterest**活跃对接**页面中正确填写这两个参数。有关详细信息, 请参阅<Anchor target="_blank" href="/marketers/zh/docs/pinterest-create-a-mobile-app-integration#应用内事件设置">知识库文章</Anchor>。  
            感谢您对此次迁移的配合与支持。
         2. **应用内事件映射和回传设置**
-           1. 请在合作渠道事件名称（Partner event name）”字段中将当前的Pinterest事件名称替换为新版Pinterest Conversions API的事件名称。例如，如果您目前填写的是pin\_add\_to\_cart，请改为add\_to\_cart。 有关更多信息，请参见此处<Anchor target="_blank" href="/marketers/zh/docs/pinterest-create-a-mobile-app-integration#inapp-event-postbacks">知识库文章</Anchor> 。
+           1. <span class="af-ol-a"></span>请在合作渠道事件名称（Partner event name）”字段中将当前的Pinterest事件名称替换为新版Pinterest Conversions API的事件名称。例如，如果您目前填写的是pin\_add\_to\_cart，请改为add\_to\_cart。 有关更多信息，请参见此处<Anchor target="_blank" href="/marketers/zh/docs/pinterest-create-a-mobile-app-integration#inapp-event-postbacks">知识库文章</Anchor> 。
 
         | 事件名称（旧版） | 事件名称（新的转化API） |
         | --- | --- |

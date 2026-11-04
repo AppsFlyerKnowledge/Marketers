@@ -123,7 +123,7 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 8. 【可选】点击**添加条件**图标，设置事件的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#带条件的应用内事件回传">映射条件</Anchor>。
 9. 点击**保存对接**。
 10. 【可选】保存对接后，在配置页面停留期间，您可以与该渠道对接其他应用：
-    1. 点击页面左上角渠道名称下方的应用名称，打开应用列表。
+    1. <span class="af-ol-a"></span>点击页面左上角渠道名称下方的应用名称，打开应用列表。
     2. 从列表中选择其他应用。
     3. 对所选应用重复上述步骤。
 

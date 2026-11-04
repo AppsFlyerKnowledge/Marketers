@@ -72,7 +72,7 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`metaweb_int`）�
 4. 在**渠道对接**选项卡中，打开**启用该渠道**开关。**请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。
 5. 关闭**高级隐私保护开关** （设置iOS应用对接时适用）。
 6. 填写**Pixel ID**字段。您可以从Meta ads Manager后台获取Pixel ID信息，具体方式如下：
-   1. 在[Ads manager](https://www.facebook.com/ads/manager)侧边栏菜单中，向下滚动到**All tools** > **Events Manager**。 **请注意：** 请确保您在右上角的下拉菜单中选择的业务（Business）正确无误。
+   1. <span class="af-ol-a"></span>在[Ads manager](https://www.facebook.com/ads/manager)侧边栏菜单中，向下滚动到**All tools** > **Events Manager**。 **请注意：** 请确保您在右上角的下拉菜单中选择的业务（Business）正确无误。
    2. 从**Events Manager**侧边栏菜单中选择**Data sources**。您会看到一个pixel列表。 如果您选定的业务尚无pixel，可以在该窗口中创建一个pixel。
    3. 复制该pixel名称下方的pixel ID，  
       并将其粘贴到  
@@ -130,7 +130,7 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 8. 【可选】点击**添加条件**图标，设置事件的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#带条件的应用内事件回传">映射条件</Anchor>。
 9. 点击**保存对接**。
 10. 【可选】您可以在保存对接后留在配置页面，将其他应用也对接到该渠道：
-    1. 点击页面左上角渠道名称下方的应用名称，打开应用列表。
+    1. <span class="af-ol-a"></span>点击页面左上角渠道名称下方的应用名称，打开应用列表。
     2. 在下拉菜单中选择一个其他应用。
     3. 为选定应用完成对接流程。
 
@@ -151,7 +151,7 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
    * **Sales**：该选项能让Meta针对某个具体事件进行优化（比如您的主要KPI事件）。
    * **Traffic**：该选项能让Meta针对广告点击进行优化。建议您仅在没有其他KPI或其他KPI事件的流量太低时使用该选项。
 3. 【可选】如果您想要在上述选项中添加自定义的投放目标，请按以下方式操作：
-   1. 在Meta Ads中选择一个要作为投放目标的自定义事件，并将其标记为转化行为（conversion action）。
+   1. <span class="af-ol-a"></span>在Meta Ads中选择一个要作为投放目标的自定义事件，并将其标记为转化行为（conversion action）。
    2. 进入AppsFlyer面板，在**Meta Web**对接页面中的**应用内事件**部分选择一个AppsFlyer事件，将其映射到渠道侧的自定义事件（在**渠道映射事件**一列中选择CUSTOM），并使用Meta Ads中的转化行为名称（conversion action）为其命名。
 
       <div id="note-3" />

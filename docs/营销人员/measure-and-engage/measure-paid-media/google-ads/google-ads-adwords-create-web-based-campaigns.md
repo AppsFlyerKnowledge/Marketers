@@ -124,7 +124,7 @@ AppsFlyer 支持与 Google Ads 集成（`googleads_int` ) 通过 Google Offline 
 
 6. **高级匹配数据共享：** 启用此功能，即可与 Google 共享高级匹配字段，例如哈希电子邮件、哈希电话号码、哈希名字和哈希姓氏（如果这些字段包含在发送给 AppsFlyer 的活动信息中）。详情请见：<Anchor target="_blank" href="/marketers/zh/docs/advanced-matching-data-sharing">高级匹配数据共享</Anchor>。
 7. 输入您的**Customer ID**。您可以从Google Ads Manager中获取该ID：
-   1. 登入您的Google Ads账户。
+   1. <span class="af-ol-a"></span>登入您的Google Ads账户。
    2. 点击界面右上角的Google账户图标，然后向下滚动到Customer ID部分。
    3. 请完成以下任一操作：
       * 如果您有多个Google Ads账户同时为相关应用投放广告，必须使用经理账号（MCC）的Customer ID才能进行跨账户的转化监测。将 MCC ID（而不是特定帐户的客户 ID）粘贴到“客户 ID”字段中，同时粘贴到“MCC 客户 ID”文本框中（两个框中的 ID 相同）。 有关更多信息，请参阅<Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google 关于配置 MCC 帐户的说明</Anchor>。

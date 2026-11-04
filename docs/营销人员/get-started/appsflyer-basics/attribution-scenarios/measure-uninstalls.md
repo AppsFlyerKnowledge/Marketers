@@ -35,7 +35,7 @@ x-zendesk:
 
 ### 原理
 
-1. AppsFlyer每天向Firebase Cloud Messaging（FCM）和 Apple Push Notification Services（APNS）发送一次API请求。
+1. <span class="af-ol-a"></span>AppsFlyer每天向Firebase Cloud Messaging（FCM）和 Apple Push Notification Services（APNS）发送一次API请求。
 2. 然后FCM和APNS会发送一条静默推送消息，用于判断用户设备上是否仍装有相关应用。
 3. 如果响应消息表示该应用已被卸载（FCM和APNS都适用），或在过去270天那未记录到任何用户行为（仅适用于FCM），AppsFlyer就会记录一次卸载。
 4. AppsFlyer将该次卸载归因到最初带来该用户的渠道。

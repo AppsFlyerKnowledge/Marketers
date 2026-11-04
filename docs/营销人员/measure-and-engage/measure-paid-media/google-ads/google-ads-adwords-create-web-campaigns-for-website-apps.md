@@ -82,7 +82,7 @@ AppsFlyer 支持与 Google Ads (`googleads_int`) 的集成，用于网站应用�
    > 在您与该渠道合作期间，请确保该开关总是处于打开（即启用）状态。
 
 6. 输入您的**Customer ID**。您可以从Google Ads Manager中获取该ID：
-   1. 登入您的Google Ads账户。
+   1. <span class="af-ol-a"></span>登入您的Google Ads账户。
    2. 点击界面右上角的Google账户图标，然后向下滚动到Customer ID部分。
    3. 请完成以下任一操作：
       * 如果您有多个Google Ads账户同时为相关应用投放广告，必须使用经理账号（MCC）的Customer ID才能进行跨账户的转化监测。在客户 ID 字段和 MCC 客户 ID 文本框中粘贴 MCC ID（而不是特定账户的客户 ID）（两个框中相同的 ID）。 有关更多信息，请参见 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google 关于配置 MCC 账户的说明</Anchor>。

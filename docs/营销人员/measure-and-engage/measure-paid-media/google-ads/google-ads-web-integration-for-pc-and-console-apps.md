@@ -272,7 +272,7 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 7. 在**Goal and action optimization**部分，选择一个类别（category），用于映射您设置的转化行为。  
    **请注意**：请注意：Google会按类别而非转化行为来优化投放。如果您只需针对某一个具体转化行为来优化投放，请仅将此转化行为映射到选定类别中。举例来说，假设您需要针对“install”（激活）行为来优化投放，请将“install”行为单独映射到其专用的类别中（如“Other”）。 然后您就可以在创建广告系列时选择这个类别作为投放目标。
 8. 从Google Ads复制转化操作ID，并将其输入到**映射到合作渠道事件**字段中。 **转化操作ID**将作为合作渠道事件ID，用于在应用内事件回传设置中，将AppsFlyer事件名称映射到合作渠道事件ID。如需从Google Ads中复制转化操作ID，请执行以下操作：
-   1. 在Google Ads**转化目标**页面，点击您创建的转化操作。
+   1. <span class="af-ol-a"></span>在Google Ads**转化目标**页面，点击您创建的转化操作。
    2. 在转化操作**详细信息**页面，从URL参数`ctId=`中复制**转化操作ID**并粘贴。
 9. 点击**Create and continue（创建并继续）**，进入下一步。
 10. 点击**Finish**，完成设置。
