@@ -49,10 +49,14 @@ x-zendesk:
 
 <Accordion title="Integration（連携）タブ">
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 この画面を**最初に開く**際には、以下のトグルをオンにする必要があります。[***パートナーを有効にする***] トグルをオンにして、連携タブのパラメーター設定を有効にします。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -60,9 +64,13 @@ x-zendesk:
 
 YouAppiでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 ### Default Postback（デフォルトのポストバック）
 
 <Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="506px" />
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -90,6 +98,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 
 このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -111,6 +121,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution（クリックスルーアトリビューション）
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。ルックバック期間内に発生するインストール（初回起動）のみがGMPの成果に紐づきます。
@@ -121,9 +133,13 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
 
+<div id="attribution-link" />
+
 ### 計測リンク
 
 このリンクは、あなたが設定したすべての情報が含まれる計測リンクです。ユーザーが広告をクリックしたときに有効になるように、Liftoffへ入稿してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### ビュースルーアトリビューションルックバック期間
 
@@ -136,6 +152,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 ビュースルー計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### インプレッションのアトリビューションリンク
 
@@ -166,6 +184,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 このタブでは、パートナーがアドネットワークの場合、代理店の場合、または両方の場合に、MoPub に付与する権限を選択できます。MoPubのアトリビューションが無効になっている場合でも、権限タブはアクティブであり、MoPub に権限を付与することができます。
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions（アドネットワークへの権限）
 

@@ -23,11 +23,15 @@ x-zendesk:
 
 ## ![53375 Firebase migration KB image.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
 
+<div id="about-the-migration" />
+
 ## 移行について
 
 Googleの<Anchor target="_blank" href="https://firebase.google.com/docs/dynamic-links">Firebase Dynamic Links</Anchor>は、 2025年8月25日に廃止されます。この日付をもって、Firebase Dynamic Links によって提供されるすべてのリンク (カスタムドメインと page.link サブドメインの両方でホストされているもの）が機能しなくなり、新しいリンクの作成が無効になります。Firebase Dynamic Linksを使用する場合は、キャンペーンによるユーザージャーニーの中断を防ぐために、できるだけ早く積極的な手順を実行してリンクを他の場所に移行することが不可欠です。
 
 AppsFlyerのOneLinkは、アトリビューションやリダイレクト、ディープリンク機能を持つリンクを作成し、デバイス、オペレーティングシステム、チャネル、プラットフォームに関係なく、1つのリンクでオウンドメディアまたは有料メディアのユーザーをアプリユーザーにコンバージョンさせることが可能です。AppsFlyerと提携して、パーソナライズされたコンテキストに応じたユーザージャーニーを作成、ユーザーをアプリに誘導し、コンバージョンと収益を最大化します。Firebase Dynamic LinksからAppsFlyerに移行するには、以下の手順に従ってください。
+
+<div id="migrate-from-firebase-to-appsflyer" />
 
 ## FirebaseからAppsFlyerへの移行
 
@@ -88,6 +92,8 @@ AppsFlyerのOneLinkは、アトリビューションやリダイレクト、デ�
 
 以下の手順を使用して、AppsFlyer SDKをアプリと連携させます。
 
+<div id="appsflyer-sdk-integration-steps" />
+
 #### AppsFlyer SDKの連携手順
 
 1. AppsFlyer SDKをアプリに実装します。  
@@ -124,6 +130,8 @@ Firebase Dynamic LinksパラメーターがAppsFlyerの対応するパラメー�
 
 この表は、AppsFlyer に移行するときに現在使用しているすべてのパラメーターの参考として使用してください。
 
+<div id="note" />
+
 > 📘 **注**
 >
 > Firebaseのパラメーターが表示されていない場合は、リンクにパラメーターを追加する必要がなく、OneLinkテンプレートの設定でAppsFlyerが対応しています。
@@ -153,6 +161,8 @@ Firebase Dynamic LinksパラメーターがAppsFlyerの対応するパラメー�
 |  | <Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors">スマートスクリプト</Anchor> | Web からアプリへのエクスペリエンスのために Web ページ内にロングリンクを動的に構築したい場合 |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

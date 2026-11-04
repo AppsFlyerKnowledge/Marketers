@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerとのパートナー接続を設定することで、アトリビューション計測を可能にし、パートナーにポストバックを送信したり、その他の連携機能を利用できます。
 
+<div id="overview" />
+
 ## 概要
 
 パートナー、メディアソース、およびサードパーティプラットフォームは、APIによってAppsFlyerと連携されます。この記事では、SRN以外のアドネットワークの計測リンクの生成など、連携を有効にして設定するための一般的な手順について説明します。
@@ -63,6 +65,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 * AppsFlyerのサイドメニューから、［**連携**］＞［**パートナー連携**］を選択します。さまざまな検索フィルターを使用できます。
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### AppsFlyerに新しいパートナーを招待する
 
 連携しているパートナーがまだAppsFlyerと連携していない場合は、<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#appsflyerに新規パートナーを招待する">招待を送信</Anchor>できます。
@@ -74,6 +78,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 <Accordion title="アクティブな連携済みのパートナー">
 
 「パートナー統合」の「アクティブ統合」タブには、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">現在統合</Anchor>されているすべてのパートナーが表示されます。このページから、パートナーに関する情報を学び、連携を管理することが可能です。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -103,13 +109,19 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
   * **変更を破棄：** 最後の変更を保存せずに元に戻します。
   * **保存：** 現在のタブ設定のみを保存します。
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### パートナータイプごとの適用可能な設定タブ
 
 <table><thead><tr><th> </th><th colspan="2">設定タブ</th><th> </th></tr><tr><th>パートナータイプ</th><th>連携 </th><th>権限</th><th>備考</th></tr></thead><tbody><tr><td>メディアソース</td><td>はい</td><td>はい</td><td><p><strong>利用可能な追加タブ</strong>：コスト、広告収益、計測リンク</p><p>アドネットワーク、アフィリエイトネットワーク、ダイレクトパブリッシャー、プログラマティック広告、中国国内アドネットワーク、リターゲティングネットワークが含まれます。<br/>SRNの場合、計測リンクタブは適用されません。</p></td></tr><tr><td>代理店 </td><td>いいえ</td><td>はい</td><td>アドネットワークとして機能しないスタンドアロン代理店</td></tr><tr><td>サードパーティプラットフォーム</td><td>はい</td><td>いいえ</td><td>分析またはマーケティングオートメーションプラットフォーム</td></tr><tr><td>マーケティングパートナー </td><td>はい</td><td>いいえ</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
+<div id="set-up-a-partner-non-srn" />
+
 ## パートナーの設定（SRN以外）
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -118,6 +130,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 **設定にアクセスし、パートナーとのキャンペーンを構成するには：**
 
 [パートナー連携から、パートナーを検索して選択してください。](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -132,6 +146,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 ![連携パートナーの設定.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 必要に応じて各セクションを完了してください。
+
+<div id="integration-sections" />
 
 #### 連携セクション
 
@@ -305,6 +321,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
       <td>
         パートナー連携がオンの場合、インストール、ブロック済みインストール、リエンゲージメントなど、アプリ起動前に行われたユーザーアクションに関連するデフォルトのポストバックがパートナーに送信されます。
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **注**
         >
         > * ブロック済みされたイベントは、<Anchor target="_blank" href="/marketers/ja/docs/protect360-anti-fraud-guide">Protect360</Anchor>によってブロックされたアプリ内イベント、またはターゲット検証で非準拠と判断されたイベントです。ブロック済みイベントについては、パートナーがAppsFlyerとのブロック済みイベントの連携を有効にしているか確認してください。
@@ -415,6 +433,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 3. 必要に応じて、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#android専用のパラメータ">Android</Anchor> および <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#ios専用のパラメータ">iOS</Anchor> のパラメーターを追加します。
 4. オプション： 追加のアトリビューションパラメーターを選択します。
 
+<div id="attribution-link-parameters" />
+
 #### 計測リンクパラメーター
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -422,6 +442,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 計測リンクにパラメーターを追加すると、詳細なドリルダウン分析を実行できます。計測リンクですでに定義されているパラメーターは、それらと新しい値をここで追加することで編集できます。計測リンクを保存すると、このタブで設定したすべてのパラメーターが保存されます。
 
 計測リンクに追加するパラメーターを選択します。
+
+<div id="attribution-link-parameters-1" />
 
 #### 計測リンクパラメーター
 
@@ -434,6 +456,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 | サブパラメーター | 5つのサブパラメーターのいずれかを利用して、有用な値を挿入します。これらのパラメーターは解析されローデータレポートに表示されるため、データの集約やフィルターに非常に便利です。 | af\_sub1 / af\_sub2 / af\_sub3 / af\_sub4 / af\_sub5 |
 
 新しいパラメータボックスに入力することで、計測リンクに他のパラメーターを追加可能です。すべてのAppsFlyerで<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">利用可能なURLパラメーター</Anchor>を使用できます。注意：URIスキームとOneLinkパラメーターの値は、エンコードする必要があります。
+
+<div id="retargeting-settings" />
 
 #### リターゲティング設定
 
@@ -453,6 +477,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 5. リエンゲージメント期間を設定し、リエンゲージメント後の期間中にユーザーのアプリ内イベントがリターゲティングメディアソースに紐付けられるようにします。
    * 値は、日数（1-90）、時間（最大23）、またはライフタイムで設定できます。
    * リエンゲージメント期間は af\_reengagement\_window パラメータとしてリンクに追加されます。
+
+<div id="click-through-attribution" />
 
 #### クリックスルー計測
 
@@ -476,6 +502,8 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 2. 生成されたリンクをコピーします。
 
 リードが対応する広告をクリックする際に使用するリンクを、パートナーに送信してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 #### ビュースルー計測のルックバック期間
 
@@ -512,15 +540,21 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 * ベストプラクティスとして、（ROI360の契約が必要）コストAPIを実装することをお勧めします。
 * コストAPIにはクリック数とインプレッション数のレポートが含まれています。サポートされているディメンション、指標、機能の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">アドネットワークコスト連携に関する表</Anchor>を参照してください。
 
+<div id="note-2" />
+
 > 📘 **注**
 >
 > 広告主が代理店運用でキャンペーンを実行する場合は、代理店が適切な広告媒体とのコスト連携設定を行います。そうでなければ、広告主と代理店が同じアプリで同じ認証情報を使ってパートナーとの連携を行うと、コストデータが重複してしまいます。
+
+<div id="enabling-cost-data-by-api" />
 
 #### APIによるコストデータの有効化
 
 **コストAPI**を有効にする方法：
 
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">これらの連携手順</Anchor>に従ってください。
+
+<div id="cost-data-sync-status" />
 
 #### コストデータ同期ステイタス
 
@@ -534,10 +568,14 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 アプリ内で広告を表示する媒体として機能している場合、広告収益機能により、ユーザーを呼び込んだメディアソースに広告収益をアトリビューションきます。参照：<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution">広告収益のアトリビューションについて</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### 広告収益のアトリビューションを有効にする
 
 1. パートナーがサポートしている方法（<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">集計またはユーザーレベルのアトリビューション</Anchor>）を確認してください。
 2. <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#実装">広告収益連携ガイド</Anchor>の適切な方法に従ってください。
+
+<div id="ad-revenue-api-status-messages" />
 
 #### 広告収益APIステータスメッセージ
 
@@ -565,9 +603,13 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 * パートナーとの関係が代理店としてのみである場合は、**代理店権限**を使用し、**アドネットワーク権限**は利用しないでください。代理店権限のトグルをオンにすると、代理店が広告ネットワークの権限を制御できるようになります。詳細については、 <Anchor target="_blank" href="/partners/ja/docs/getting-started-agency-onboarding#マーケティング担当者からの権限を得るとはどういうことですか">「マーケティング担当者から許可を得るとはどういう意味ですか」</Anchor>の注記を参照してください。
 * 現在選択されているアプリに権限が付与されます。
 
+<div id="ad-network-permissions" />
+
 #### アドネットワークの権限
 
 **アドネットワークの権限**をオンにすると、アドネットワークが管理画面にアクセスできるようになり、以下の表に示すように追加の権限を付与することができます。
+
+<div id="note-3" />
 
 > 📘 **注**
 >
@@ -597,9 +639,13 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 | <span id="access-protect360-dashboard-raw-data"></span>Protect360管理画面とローデータへのアクセス | アドネットワークは以下を行うことができます：<ul><li>Protect360管理画面（<Anchor target="_blank" href="/marketers/ja/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>を含む）にアクセス</li><li>契約プランに含まれている場合、Protect360、検証ルール、ローデータへのアクセス/span>ProtectLITEにはローデータへのアクセスは含まれません。</li></ul>**注意：** Protect360の契約がある場合、アドネットワークは管理画面全体を確認できます。Protect360サブスクリプションがない場合、ライト管理画面を利用できます。 |
 | <span id="access-ad-revenue-raw-data"></span>広告収益データのローデータへのアクセス | <Anchor target="_blank" href="/partners/ja/docs/ad-revenue-signals-for-ua-ad-networks">アドネットワークは</Anchor><Anchor target="_blank" href="/partners/ja/docs/ad-revenue-signals-for-ua-ad-networks">広告収益データにアクセスし、ユーザー獲得の最適化に利用できます。  <br />**注意：** この権限は、ROI360のご契約があるアプリでのみ利用可能です。</Anchor> |
 
+<div id="agency-permissions" />
+
 #### 代理店の許可
 
 参照：権限付与された場合、<Anchor target="_blank" href="/partners/ja/docs/getting-started-agency-onboarding#マーケティング担当者からの権限を得るとはどういうことですか">代理店アカウントで何ができるか</Anchor>
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >
@@ -636,9 +682,13 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## 連携テスト
 
 パートナーとの連携を完了し、新しく追加されたパートナーとキャンペーンを実行する前に、連携のテストを行うことが重要です。セットアップ中はミスが発生しやすいです。事前にテストを行うことで、多大なリソースを費やした後にアトリビューションデータが欠落しているか誤っていることを確認するリスクを回避できます。
+
+<div id="note-4" />
 
 > 📘 **注**
 >
@@ -695,6 +745,8 @@ AppsFlyerのご契約プランにローデータへのアクセスが含まれ�
 2. テスト対象のメディアソースを選択します。
 3. インストールから最大15分待ってからインストールレポートをダウンロードしてください。
 4. パートナーからのインストールレコードが存在し、メディアソース、キャンペーン名、タッチ時間とタイプ、デバイスID（該当する場合）、代理店名（レポート内では「パートナー」と表記）などのパラメーターを含んでいることを確認してください。
+
+<div id="important-2" />
 
 > 🚧 **重要！**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** iOS 14.5以降のAppleによるATT施行により、広告主は高プライバシー一括設定（AAP）を使用して、プラットフォームからのユーザーレベルのアトリビューションデータの利用を制御することができます。
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## 高プライバシー一括設定（AAP）
 
 AppsFlyerの高プライバシー一括設定は、異なる企業間の広告主アプリとWebサイトにわたるトラッキングを防止し、個人または端末を特定できないようにします。高プライバシー一括設定は、プライバシー保護しきい値の最小ベンチマークとして、Appleアプリ追跡の透明性プライバシーレベルを利用しています。
@@ -35,6 +37,8 @@ AppsFlyerの高プライバシー一括設定は、異なる企業間の広告�
 iOS 14.5の一般提供およびATTの適用開始以降、AAPが有効な場合、iOS 14.5以上を利用する非同意ユーザーのユーザーレベルのアトリビューションデータは、広告主およびパートナーに提供されません。
 
 AAPは、集計されたアトリビューションデータおよび分析レポートの利用可否には影響しません。
+
+<div id="aap-impacted-features" />
 
 ### AAPが影響する機能
 
@@ -52,6 +56,8 @@ AAPがオンの場合、データの可用性は次のように影響を受け�
 * **アトリビューションデータと不正（Protect360）：** <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">一部のアトリビューション項目は制限されているか、利用できません。</Anchor>
 * **クリック、インプレッション、ブロックされたクリック（不正）データ：** ユーザーおよびデバイス関連の識別子は利用できません。
 * **ディファードディープリンク**：有料メディアでディファードディープリンクを実装する場合は、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">Unified Deep Linking API (UDL API)</Anchor>を使用してください。GCDを使用する旧APIは、非同意ユーザーの文脈では利用できません。オウンドメディアの場合、GCDおよび最新のディファードディープリンクAPIの両方が利用可能です。
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## 高プライバシー一括設定におけるデータ可用性の原則
 
@@ -73,6 +79,8 @@ AAPがオンの場合、データの可用性は次のように影響を受け�
 
 高プライバシーポストバックは、ウェブ上で配信される場合は動作が異なり、af\_media\_type=web または af\_media\_type=app パラメータを使用する必要があります。詳細は <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web面での広告配信">こちら</Anchor>を確認してください。
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### 有料メディアとオウンドメディアのデータの可用性
 
 <div id="paid-media" />
@@ -80,6 +88,8 @@ AAPがオンの場合、データの可用性は次のように影響を受け�
 <Accordion title="有料メディア">
 
 有料メディアには、AppsFlyerと連携しているモバイル広告ネットワークが含まれます。
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### ATTステータス別 広告媒体データの可用性
 
@@ -97,6 +107,8 @@ AppleのAppTrackingTransparencyフレームワークは、異なる会社から�
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## 高プライバシー 一括設定のコントロール
 
 <div id="aap-central-switch" />
@@ -107,11 +119,15 @@ AppleのAppTrackingTransparencyフレームワークは、異なる会社から�
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
+<div id="aap-enabled" />
+
 #### 高プライバシー一括設定（AAP）が有効の場合
 
 * 集約式アトリビューション：利用可能 ー これには、オーバービューダッシュボードやコホート、マスターAPIなどのレポートツールが含まれます。
 * [高プライバシーポストバックのトグル](#partner-advanced-privacy-switch)は常にオンになり、変更できません。注意：トグルはオンで固定されており変更できません。
 * [以前のセクション](/docs/apply-aggregated-advanced-privacy-framework#高プライバシー一括設定におけるデータ可用性の原則)で定義したとおり、広告主とパートナー向けのユーザーレベルデータの可用性は制限されます。
+
+<div id="aap-disabled" />
 
 #### 高プライバシー一括設定（AAP）が無効の場合
 
@@ -153,11 +169,15 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 
 </Accordion>
 
+<div id="advanced-aggregated-privacy-implications-for-your-partners" />
+
 ## 高プライバシー一括設定のパートナーへの影響
 
 <div id="ad-networks" />
 
 <Accordion title="アドネットワーク">
+
+<div id="postbacks-to-ad-network-partners" />
 
 #### **アドネットワークパートナーへのポストバック**
 
@@ -167,6 +187,8 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 
 * 高プライバシー一括設定（AAP）：アプリ全体への適用
 * 高プライバシーポストバック設定（AP）：特定媒体への適用
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **成果が紐づくアドネットワークへのポストバック**
 
@@ -182,6 +204,8 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 ![AAP - 属性付けされた広告ネットワーク.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 高プライバシーポストバックは、ウェブ上で配信される場合は動作が異なり、af\_media\_type=web または af\_media\_type=app パラメータを使用する必要があります。詳細は <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web面での広告配信">こちら</Anchor>を確認してください。
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **成果の紐づかないパートナーへのポストバック**
 
@@ -241,6 +265,8 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 4. **保存**をクリックしてください。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

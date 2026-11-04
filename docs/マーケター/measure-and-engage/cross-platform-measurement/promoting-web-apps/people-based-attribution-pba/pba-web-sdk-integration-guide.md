@@ -24,6 +24,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Web SDKの利用・実装ガイド
 
 * Web SDK JavaScriptタグは、以下の特徴を持ちます：
@@ -34,6 +36,8 @@ x-zendesk:
 * モバイルアプリとWeb環境をまたいだユーザー行動を記録・紐付けるために、AppsFlyerモバイルSDKとあわせてWeb SDKを実装してください。
 * Webサイト外で発生するイベントは、<Anchor target="_blank" href="/marketers/ja/docs/web-server-to-server-events-api-for-pba-web-s2s">Web server-to-server events API</Anchor>（Web S2S）を使用して記録できます。
 
+<div id="selecting-a-code-snippet" />
+
 ## コードスニペットの選択
 
 統合タイプとセキュリティ要件に一致するスニペットを選択してください。以下の項目が選択可能です：
@@ -41,9 +45,13 @@ x-zendesk:
 * [スタンダードWeb SDK](#スタンダードweb-sdk)：標準的な実装です。
 * [アドバンスSDK検証](#アドバンスsdk検証)：Web Web SDKにサプライチェーン保護を追加する強化版インテグレーションです。CDNの侵害、DNSハイジャック、中間者攻撃（MITM）に対する追加のセキュリティレイヤーを提供します。
 
+<div id="important" />
+
 > 🚧 **【重要】**
 >
 > スタンダードWeb SDKからアドバンスSDK検証へ移行する場合は、既存のスニペットを新しいものに置き換えてください。既存のスニペットの上に新しいスニペットを追加しないでください。
+
+<div id="standard-web-sdk" />
 
 ### スタンダードWeb SDK
 
@@ -99,6 +107,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### アドバンスSDK検証
 
@@ -177,11 +187,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Web SDKのWebサイトへの実装
 
 <div id="installation-and-integration" />
 
 <Accordion title="インストールと実装">
+
+<div id="considerations-and-actions-required" />
 
 #### 考慮事項と必要なアクション
 
@@ -218,15 +232,21 @@ x-zendesk:
 <Tabs>
 <Tab title="Native">
 
+<div id="javascript-code-snippet" />
+
 #### JavaScriptコードスニペット
 
 以下のいずれかの方法を使用して、Web SDKを実装してください。
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **Smart BannerなしでWeb SDKを実装するには：**
 
 1. 以下の手順を、Webサイト上のすべてのページで繰り返してください。
 2. 以下のコードスニペット内の `WEB_DEV_KEY` を、事前準備で取得したキーに置き換えてください。
 3. [上記で選択した](#コードスニペットの選択)コードスニペットをウェブサイトのheadタグに貼り付けてください。head タグのなるべく上部に配置してください。
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **Smart Bannerと一緒にWeb SDKを実装するには：**
 
@@ -418,12 +438,16 @@ Web SDKは訪問者のイベントデータをAppsFlyerに送信します。こ�
   * Web SDKで設定された期間、またはブラウザにより決定される期間で失効する。Cookie失効後、Web SDKは初期状態設定に戻ります。
   * Web SDKのCookieは、ブラウザ固有のCookie設定に干渉せず、常にその設定に従います。
 
+<div id="sdk-initial-state-setting" />
+
 #### SDK初期状態設定
 
 | 設定 | 必要なスニペット |
 | --- | --- |
 | ［デフォルト］イベントを送信 | Web SDKスニペットに次の変更を加えます。 必要に応じて、measurementStatus パラメーターを追加してください：<br /><br />measurementStatus=true に設定します。<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | イベントを送信しない | Web SDKスニペットに次の変更を加えます。必要に応じて、measurementStatus パラメーターを追加してください：<br /><br />Set measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### 明示的コントロール
 
@@ -439,6 +463,8 @@ Web SDKは訪問者のイベントデータをAppsFlyerに送信します。こ�
 <Accordion title="コンテンツ・セキュリティ・ポリシー（CSP）ポリシーの導入">
 
 ウェブサイトで厳格なセキュリティ要件またはデータプライバシー要件が求められる場合は、以下の仕組みを使用して、Web SDKがあなたの環境およびデータとどのように連携するかを設定してください。
+
+<div id="content-security-policy-csp" />
 
 #### コンテンツ・セキュリティ・ポリシー（CSP）
 
@@ -457,6 +483,8 @@ Web SDKは訪問者のイベントデータをAppsFlyerに送信します。こ�
 | `script-src 'nonce-...' 'strict-dynamic'` | はい（推奨） | nonceによってインラインスクリプトとローダーが許可され、`strict-dynamic` により動的に挿入されるSDKタグにも信頼が引き継がれます。許可リストにCDNオリジンを追加する必要はありません。 |
 
 CSPポリシーとの互換性
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### CSP nonce対応のアドバンスSDK検証用スニペット
 
@@ -538,6 +566,8 @@ CSPポリシーとの互換性
 
 この方法は、URL、referrer、header\_refererに関連して実装できます。
 
+<div id="query-discard-options" />
+
 #### クエリ破棄のオプション
 
 | メソッド | 説明 |
@@ -546,6 +576,8 @@ CSPポリシーとの互換性
 | 特定のクエリ・パラメータの破棄 | Query param maskを設定することで、どのパラメータを破棄するか指定できます。  param がパラメータ名として、af\_url\_mask=param を設定します。<br /><br />例：<br /><br />**マスク付きのURL：**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**破棄後のURL：**<br /><br />`param1=value1&af_url_mask=param2;param3` |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## イベント記録の原則
 
@@ -558,6 +590,8 @@ CSPポリシーとの互換性
 * コンバージョンイベントデータはPBAの管理画面でも利用できます。
 * コンバージョンおよびスタンダードイベントデータは、 <Anchor target="_blank" href="/marketers/ja/docs/pba-raw-data-reports">ローデータレポート</Anchor> 内で利用できます。
 
+<div id="conversion-events" />
+
 ### コンバージョンイベント
 
 * コンバージョンイベントはマーケティング施策やビジネス成果に関するインサイトを提供します。具体的には、購入、ダウンロード、サインアップ、サブスクリプション登録などが含まれます。
@@ -566,11 +600,15 @@ CSPポリシーとの互換性
 * コンバージョンイベントでは、収益の計測やROIの計算も可能になります。
 * 特定のメディアソースの予算をそのメディアソースのユーザーによる収益と比較するために使用してください。
 
+<div id="standard-events" />
+
 ### スタンダードイベント
 
 * スタンダードイベントは、コンバージョンにつながるユーザージャーニーとファネルを評価するのに役立ちます。
 * さらに、ユーザーアクティビティを計測し、エンゲージメントの高いユーザーが多いメディアソースをハイライトすることができます。
 * ユーザーアクティビティを計測することで、リエンゲージメントキャンペーンを実施するべきユーザーの選定にも活用できます。
+
+<div id="recording-events" />
 
 ### イベントの計測
 
@@ -629,6 +667,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 送信するイベントは、Webサービスの性質によって異なります。たとえば、オンラインストアのアプリで必要となるイベント群は、ニュースメディアのアプリとは異なります。以下のシナリオを参考に、どのようなイベントを、どのタイミングで送信すべきかを把握してください。
 
+<div id="online-store" />
+
 #### オンラインストア
 
 オンラインストアを運営しているとします。記録したいスタンダードイベントの例は以下のとおりです。
@@ -672,6 +712,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    2. Request Payload がイベントのパラメーターと一致していること
 
 </Accordion>
+
+<div id="examples" />
 
 ## 例
 
@@ -1082,6 +1124,8 @@ setCustomerUserIdのfunctionは、ユーザーのログインとサインアッ�
 モバイルアプリの setCustomerUserd 関数で実行したのと同じCUID値を使用してください（モバイルの setCustomerUserId を参照してください：<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid#cuidの設定">iOS</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid#cuidの設定">Android</Anchor>、Unity）
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## 追加情報
 

@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **概要：** 概要： AppsFlyer ウェブSDKのトラブルシューティングガイドは、ウェブサイトに直接追加されるか、Google タグマネージャーを介して実装されます。
 
+<div id="sdk-added-directly" />
+
 ## SDKを直接追加
 
 SDKをWebサイトに直接追加できます。
+
+<div id="no-data-or-partial-data-in-the-pba-dashboard" />
 
 ### PBA管理画面にデータが表示されない、または部分的にしかデータが表示されない
 
@@ -37,6 +41,8 @@ SDKをWebサイトに直接追加できます。
 | ページの本文にWeb SDKを配置した | <ul><li>Web SDKはページの本文にを配置できますが、これはAppsFlyerに送信されるデータに影響を与える可能性があります。</li><li>ページのヘッドセクションに配置することをお勧めします。</li></ul> |
 | Web SDKがWebサイトのすべてのページに配置されていない | Web SDKをWebサイトのすべてのページに配置することをお勧めします。 |
 
+<div id="events-are-not-sent" />
+
 ### イベントは送信されない
 
 | 原因 | 解決策 |
@@ -46,12 +52,16 @@ SDKをWebサイトに直接追加できます。
 | 不正な形式のイベント | イベントの形式が正しいことを確認してください。<br /><br />正しい形式のイベントの詳細については、<Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">利用可能なイベントパラメータ</Anchor>をご参照ください。 |
 | SDKが2回呼び出される |  |
 
+<div id="conflicting-sdks-and-libraries" />
+
 ### 競合するSDKおよびライブラリ
 
 多くのWeb SDKは、一般的なJavaScriptライブラリを利用しています。そのようなSDKは、グローバルスコープの名前も占めます。例えば、Web SDKはWeb SDKを有効にするメインオブジェクトとして**AF**を占めています。
 
 * 一部のSDKがライブラリXバージョン1.2を使用し、AppsFlyer SDKがライブラリX 2.1を使用する場合、2つのライブラリが競合する可能性があります。
 * 別のSDKまたはライブラリが**AF**（グローバルスコープ内）をオブジェクト名として使用する場合、2つのSDKが競合し、1つのSDKが他をオーバーライドする可能性があります。
+
+<div id="sdk-added-using-google-tag-manager" />
 
 ## Googleタグマネージャーを使用して追加されたSDK
 
@@ -60,11 +70,15 @@ SDKをWebサイトに直接追加できます。
 
 問題が発生した場合、[SDKのネイティブ実装](/docs/troubleshooting-the-web-sdk#sdkを直接追加)で説明されている問題以外にも、GTMに固有の問題がいくつかあります。
 
+<div id="calling-the-sdk" />
+
 ### SDKの呼び出し
 
 | 原因 | 解決策 |
 | --- | --- |
 | <ul><li>Web SDKガイドは、タグを使用してWeb SDKを追加する方法を示しています。</li></ul><ul><li>一部のユーザーは、イベントを呼び出すタグを作成するときに、SDKタグも再度呼び出すようにタグを設定します。しかし、これは問題を引き起こす可能性があります。</li></ul>![mceclip0.png](https://files.readme.io/77be12759c5ec5a04a517ee1b99109e8952b97d1d4280b71c51fa36304f5adbf-360003756558.png) | 最善の方法は、1つのタグを設定してSDKをロードし、このタグをすべてのページで配信するように設定することです。イベントを送信するタグの場合、SDKタグを再度呼び出すことはできません。 |
+
+<div id="tag-priority" />
 
 ### タグの優先度
 
@@ -74,6 +88,8 @@ GTMでは、<Anchor target="_blank" href="https://support.google.com/tagmanager/
 | --- | --- |
 | SDKをロードするタグは、ページのロード時にイベントを送信するタグよりも優先度が低く設定されています。その結果、SDKはイベントの送信に間に合うように初期化されません。 | SDKを読み込むタグは、イベントを送信したりユーザーを識別したりするタグよりも常に優先度を高く設定してください。 |
 
+<div id="triggering-tags" />
+
 ### トリガータグ
 
 GTMでは、すべてのタグに、このタグを配信するタイミングを決定するトリガーがあります。
@@ -82,6 +98,8 @@ GTMでは、すべてのタグに、このタグを配信するタイミング�
 | --- | --- |
 | SDKをロードするタグの配信を担当するトリガーはすべてのページに設定されているわけではありません。その結果、すべてのページ訪問が記録されるわけではなく、一部のイベントが送信されません。 | 最善の方法は、SDKを読み込むタグに<Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7679319?hl=en">すべてのページビュー</Anchor>トリガーを設定することです。 |
 | イベントを送信するタグの配信を担当するトリガーが正しく構成されていない。その結果、一部のイベントは送信されません。 | トリガーの条件を決定します。例：<ul><li>ボタンのクリックなどのDOM要素との相互作用</li><li>**/thank-you-page**または **/confirmation-page**などの特定のパスを持つページへのページ訪問</li></ul> |
+
+<div id="publishing-gtm-containers" />
 
 ### GTMコンテナの公開
 

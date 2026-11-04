@@ -119,6 +119,8 @@ IdP側の設定が完了したら、AppsFlyerに戻って<Anchor target="_blank"
 
 </Accordion>
 
+<div id="see-also" />
+
 > 📄 **関連情報**
 >
 > * <Anchor target="_blank" href="https://developer.okta.com/docs/guides/build-sso-integration/openidconnect/main/">OktaのSSOドキュメント</Anchor>

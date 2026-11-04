@@ -27,9 +27,13 @@ x-zendesk:
 
 <Embed title="Meta AdsとのSKAN連携" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/15jnbml3h7" providerUrl="https://fast.wistia.com" />
 
+<div id="skan-interoperability-appsflyer---meta-ads" />
+
 ## SKAN連携 ｜ AppsFlyer &lt;-> Meta Ads
 
 複数のアドネットワークパートナーと連携する場合は、AppsFlyerで設定することをおすすめします。これにより、AppsFlyer上でSKANのパフォーマンス指標をコストなどの指標とあわせて確認できます。
+
+<div id="scope-of-skan-interoperability-with-meta-ads" />
 
 #### Meta AdsとのSKAN連携でできること
 
@@ -54,12 +58,16 @@ Meta Adsとの連携により、次のことが可能になります。
 * <Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns#ios-145-srn-attribution">iOS 14.5がSRNのレポートに与える影響</Anchor>
 * AppsFlyerとMeta AdsのMMP連携では、常に*Advertiser Tracking Enabled*フラグが実装されています。（この情報は、2021年2月のMeta Adsのアプリ向けガイダンスに掲載されたiOS 14チェックリストに基づいています。）
 
+<div id="considerations" />
+
 #### 考慮事項
 
 * 一度連携を有効にすれば、計測設定を変更するたびに、この記事のMMP連携手順を繰り返す必要はありません。MMP接続URLを再度コピーする必要はありません。
 * AppsFlyerでSKAN計測をオフにすると、Meta AdsはCVのマッピングを取得できなくなります。
 * AppsFlyer SDKとFacebook SDKの比較：Meta Adsのみでキャンペーンを配信する場合は、Facebook SDKが適しています。複数のパートナーでキャンペーンを配信する場合は、AppsFlyer SDKを使用すると、すべてのパートナーのデータを確認できます。
 * この記事の[データの差異](/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq)に関するセクションを確認してください。
+
+<div id="meta-ads-app-install-ads-guidance" />
 
 #### Meta Adsのアプリインストール広告に関するガイダンス
 
@@ -70,6 +78,8 @@ Meta AdsでiOS 14向けのアプリインストールキャンペーンを設定
 * Meta Adsの最適化方法と、AppsFlyerで選択する計測タイプは、次のように対応しています。
   * **収益計測**：バリュー最適化（VO）とアプリイベント最適化（AEO）
   * **コンバージョン計測**：アプリイベント最適化（AEO）。Meta Adsの標準イベントと購入イベントが含まれます。AppsFlyerのアプリ内イベントを、対応するMeta Adsイベントにマッピングする必要があります。
+
+<div id="interoperation-procedures" />
 
 ## 連携手順
 
@@ -112,6 +122,8 @@ Meta AdsからAppsFlyerへのSKANデータの共有を許可します。共有�
 <Accordion title="Meta AdsとのCVの設定ルールの共有">
 
 ![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+
+<div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 
 #### AppsFlyerのSKANとMeta Adsの連携の有効化
 
@@ -181,11 +193,13 @@ Meta AdsからAppsFlyerへのSKANデータの共有を許可します。共有�
              ![in-app_events_fb_en-us.png](https://files.readme.io/98e2c8048444331c5d24343e683605e8388ee93bbfcb70aa5e8dad183c995859-40032591364241.png)
            * SKAN計測で設定したアプリ内イベント（［**AppsFlyerイベント**］）が、Meta Adsのイベント識別子（［**パートナー側のイベント名／ID**］）にマッピングされていることを確認します。イベントをマッピングしないと、Meta Adsでは最適化が行えず、インストール数のみがカウントされます。
 
+             <div id="h_01H8XRMVR5GY77K7GJ4TXGWEHS" />
+
              > 📘 **注意**
              >
              > SKAN Conversion Studioでコンバージョン値（CV）を追加・変更・削除する際は、対象のイベントが［**アプリ内イベントポストバック**］でマッピングされていることを確認してください。マッピングされていない場合、Meta AdsでCVが更新されません。
              >
-             > #### アプリ内イベントのマッピングガイド
+             > #### <span id="inapp-event-mapping-guide"></span>アプリ内イベントのマッピングガイド
 
 
         | 計測タイプ | 必要なマッピング |
@@ -251,6 +265,8 @@ Meta AdsからAppsFlyerへのSKANデータの共有を許可します。共有�
 </Table>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 補足情報
 
@@ -327,6 +343,8 @@ ads\_read権限があると、Meta Adsの利用者はAPI経由で広告のパフ
 | <span id="modeled-data-differences-in-appsflyer-and-facebook-ads-manager"></span>AppsFlyerとMeta Ads Managerのモデル化データの違い | AppsFlyerは、基本的なSKANレポートだけでは得られない集計データを、モデル化によって補完します。<Anchor target="_blank" href="/marketers/ja/docs/skan-modeled-data">詳しくはこちら</Anchor><br /><br />AppsFlyerは、確認済みの偏りのないデータのみを使用してモデル化を行うため、Meta Adsがモデル化したデータは考慮しません。そのため、Meta Ads ManagerのレポートとAppsFlyerのレポートでは、データやその粒度に差異が生じる場合があります。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

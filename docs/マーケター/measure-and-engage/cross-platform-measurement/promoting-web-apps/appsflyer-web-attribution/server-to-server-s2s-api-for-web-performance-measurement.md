@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **概要：** Web Performance Measurement向けS2S APIを使用すると、広告ブロッカーやCookie制限などのブラウザによる制約を回避し、Webサイトへの訪問とイベントをサーバーからAppsFlyerへ直接送信できます。Web SDKと併用することも、単独で使用することもでき、より網羅的で品質の高いアトリビューションデータを取得できます。
 
+<div id="about-the-s2s-api-for-web-attribution" />
+
 ## Webアトリビューション向けS2S APIについて
 
 AppsFlyerでは、Webデータをアトリビューションのために送信する方法として、Web SDK（クライアントサイド）とS2S API（Server-to-Server）の2種類を提供しています。これらは、それぞれ単独で利用することも、運用環境や要件に応じて組み合わせて利用することもできます。
 
 Web SDKはブラウザ上で動作します。一方、S2S APIでは同じデータをお客様のバックエンドから直接送信できます。この違いは非常に重要です。Safari ITP、Firefox ETP、Braveなどのプライバシー保護を重視したブラウザや広告ブロッカーは、ブラウザ上で行われる計測を制限またはブロックする場合があります。業界では、このようなブラウザレベルでの制限の影響を受けるユーザーはWebユーザー全体の25～40%程度と推定されています。S2S APIによるリクエストはお客様のサーバーから直接送信され、ブラウザを経由しないため、これらの制限の影響を受けません。
 
+<div id="how-it-works" />
+
 ### 仕組み
 
 1. ユーザーがウェブサイユーザーがWebサイトへアクセスする、またはブラウザ上でイベントを発生させます。
 2. お客様のサーバーがそのイベントを受信します。
 3. お客様のサーバーからAppsFlyerサーバーへイベントを直接送信し、アトリビューションを行います。
+
+<div id="why-use-s2s" />
 
 ### S2Sを使用するメリット
 
@@ -43,9 +49,13 @@ S2S APIを利用することで、以下のようなメリットがあります�
 * **バックエンドのデータを追加できる：** S2S APIでは、イベント送信前にバックエンド側で追加情報を付与できます。 例えば、以下の情報を追加できます： ・Customer User ID ・ハッシュ化したメールアドレス ・ハッシュ化した電話番号 ・CRM属性 ・サブスクリプションステータス ・社内システムの識別子これにより、ユーザー識別の精度が向上し、アトリビューションの品質も高まります。
 * **セキュリティを強化できる：** Dev Key、ユーザー識別子、および追加したデータはすべてお客様のサーバー内で管理され、安全な通信を通じてAppsFlyerへ送信されます。そのため、お客様はインフラストラクチャの外部へ送信する情報を完全に管理できます。
 
+<div id="api-specification" />
+
 ## API仕様
 
 Base URL：`https://events.appsflyer.com`
+
+<div id="authentication" />
 
 ### 認証
 
@@ -56,9 +66,13 @@ Base URL：`https://events.appsflyer.com`
 | `Authorization` | APIトークン | S2S APIトークンを以下の形式で指定します。<br /><br />`Authorization: Bearer {s2s-token}` |
 | `Content-Type` | string | `application/json`を指定します。すべてのリクエストで必要です。 |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > S2S APIトークンを作成するには、<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens#トークンの管理">AppsFlyerトークンの管理</Anchor>の手順を参照してください。
+
+<div id="measure-an-event" />
 
 ### イベントの計測
 
@@ -125,6 +139,8 @@ Base URL：`https://events.appsflyer.com`
 
 </Accordion>
 
+<div id="measure-a-visit" />
+
 ### Web訪問の計測
 
 `POST /v2.0/s2s/visits/app/web/{appId}`
@@ -187,6 +203,8 @@ Base URL：`https://events.appsflyer.com`
 
 </Accordion>
 
+<div id="set-up-a-fully-server-side-integration" />
+
 ## 完全なサーバーサイド連携を設定する
 
 Web SDKとS2Sを併用している場合は、このセクションではなく、[Web SDKのafUserIDを取得する](#extracting-the-web-sdk-afuserid)を参照してください。このセクションは、SDKを一切使用しない連携のみを対象としています。
@@ -234,6 +252,8 @@ Cookieには任意の名前を付けることができます。AppsFlyerが読�
 
 </Accordion>
 
+<div id="things-to-consider" />
+
 ## 考慮事項
 
 <div id="user-identification" />
@@ -275,10 +295,14 @@ Cookieには任意の名前を付けることができます。AppsFlyerが読�
 * `afUserId` は、ユーザーが初めてWebサイトへアクセスした際に、Web SDKによって設定される一意の識別子です。
 * `afUserId` が必要な場合は、以下のいずれかの方法で取得できます。
 
+<div id="h_01HKW2YAW5FK04C3AWCXGP1XAW" />
+
 #### **HTTP CookieヘッダーからafUserIdを取得する**
 
 * `afUserId`は、ユーザーのブラウザからWebサイトへ送信されるHTTP Cookieヘッダーに含まれています。
 * 必要に応じてHTTP Cookieヘッダーから取得してください。
+
+<div id="h_01HKW2YAW5CT2WZ229KJD2FWYK" />
 
 #### **ブラウザでafUserIdを確認する**
 

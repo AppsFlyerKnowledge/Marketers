@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerは、マーケターがモバイルキャリアやアプリ発見パートナーと契約し、ユーザーがデバイスを初めて起動したときにアプリをプレロードするために、Google Play自動インストール（PAI）を使用してインストールを帰属させます。　**注：** 注：この計測方法は、APKによる計測方法とは異なります。
 
+<div id="pai-preload-attribution" />
+
 ## プリロードアトリビューション
 
 プレロードキャンペーンでは、オリジナルデバイスメーカー（OEM）、モバイルキャリア、およびアプリ発見パートナーが、デバイスが初めてアクティブ化されたときにダウンロードされるアプリをプレロードします。
@@ -32,9 +34,13 @@ Google Play自動インストール（PAI）（3つのプレロード帰属方�
 
 AppsFlyerは、プリロードインストールを最優先にアトリビューションします。つまり、ユーザーがアプリを初めて起動する前に他の広告キャンペーンに接触しても、プリロードキャンペーンにアトリビューションが与えられます。その他のキャンペーン接触は、アシストインストールと見なされます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > プレロード等価帰属優先設定はGoogle PAIには適用されません。
+
+<div id="flow" />
 
 ### フロー
 
@@ -44,6 +50,8 @@ AppsFlyerは、プリロードインストールを最優先にアトリビュ�
 4. AppsFlyerの帰属は取得したデータに基づいています。
 
 ![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+
+<div id="data-availability" />
 
 ### データの可用性
 
@@ -58,6 +66,8 @@ Google Play自動インストール（PAI）プレロードパフォーマンス
 * Match\_type = preload\_pai
 * Campaign\_name = `<preloadpartner ID>` によるキャンペーンのプリロード
 
+<div id="set-up-google-play-auto-install-pai-preload-attribution" />
+
 ### Google Play自動インストール（PAI）プレロード帰属を設定する
 
 **PAIプレロード帰属を設定するには：**
@@ -67,6 +77,8 @@ Google Play自動インストール（PAI）プレロードパフォーマンス
 3. **プリロード計測をオン**にします。
 4. **プリロードルックバック期間** を設定します。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > Googleはリファラーデータを最大90日間保存します。PAIのルックバックウィンドウを90日以内に設定します。UIでは最大180日まで許可されていますが、90日を超えるデータはGoogleからは利用できません。
@@ -74,13 +86,19 @@ Google Play自動インストール（PAI）プレロードパフォーマンス
 5. **連携を保存** をクリックします。
 6. プリロードパートナーに、キャンペーン計測を設定する準備ができたことを知らせます。
 
+<div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
+
 ### Google Play自動インストール（PAI）プレロードキャンペーンをサポートするパートナー
 
 <table><thead><tr><th rowspan="2">Partner</th><th rowspan="2">pid</th></tr></thead><tbody><tr><td><p>Xiaomi</p></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>モトローラ</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>レノボタブ</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>KDDIプレインストール</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > ※代理店アカウントからは、クライアントに対してプリロードキャンペーンを有効にすることはできません。
+
+<div id="postbacks-for-preload-partners" />
 
 ## プリロードパートナーのポストバック
 
@@ -102,6 +120,8 @@ AppsFlyerとの連携の一環として、プリインストールパートナ�
 | app\_version | SDK | 開発者によってアプリのコードに設定された、アプリのバージョン |
 | device\_type | SDK | デバイスの商用モデル名。例：SM-GM284またはiPhone7 |
 | os\_version | SDK | デバイスのOSバージョン |
+
+<div id="postback-example" />
 
 #### ポストバックの例
 

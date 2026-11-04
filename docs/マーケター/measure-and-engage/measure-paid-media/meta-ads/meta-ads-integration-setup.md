@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** Meta広告とAppsFlyerの連携について説明します。
 
+<div id="meta-ads-setup-guide" />
+
 ## Meta広告の設定ガイド
 
 AppsFlyerでMeta広告のモバイルアプリ広告のアトリビューションを開始するには、どのくらいかかるでしょうか。
@@ -36,6 +38,8 @@ AppsFlyerでMeta広告のモバイルアプリ広告のアトリビューショ�
 すでに<Anchor target="_blank" href="/marketers/ja/docs/integrate-the-appsflyer-sdk">アプリにAppsFlyer SDKを実装</Anchor>し、Meta広告でもアプリを登録済みであれば、1分もかかりません。
 
 モバイルアプリのアトリビューションのために、FacebookログインやFacebook SDKをアプリに実装する必要はありません。以下の[基本設定の手順](#meta広告アトリビューションの基本設定)に従ってください。その後、Meta広告の[詳細な設定オプション](#meta広告アトリビューションの詳細設定)も確認してください。
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## Meta広告アトリビューションの基本設定
 
@@ -78,6 +82,8 @@ Metaは、2025年6月17日から<strong>Advanced Mobile Measurement（AMM）</st
 1. <Anchor target="_blank" href="https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms">Meta広告</Anchor>にアクセスします。
 2. 対象のアプリIDを選択します（複数選択可）。
 3. MetaのAdvanced Mobile Measurement利用規約に同意します。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -123,6 +129,8 @@ Metaは、2025年6月17日から<strong>Advanced Mobile Measurement（AMM）</st
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## Meta広告アトリビューションの詳細設定
 
 Meta広告アトリビューションの基本設定が完了したら、続いて詳細設定を行います。
@@ -135,7 +143,11 @@ Meta広告アトリビューションの基本設定が完了したら、続い�
 
 Meta広告は、Google Playストアにユーザーを誘導するAndroidアプリ広告について、キャンペーンのメタデータを広告主と共有します。広告主は、Google Play Install Referrer APIを通じてアトリビューション項目を取得できます。このAPIは<Anchor target="_blank" href="/marketers/ja/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">アプリへの実装が必要です</Anchor>。 Google Play Install Referrer APIから取得した項目は、マッチタイプが`gp_referrer`としてAppsFlyerのローデータレポートに反映されます。これは、復号キーを登録し、インストールがMeta広告にアトリビューションされた場合にのみ利用できます。これにより、AppsFlyerは広告IDのないユーザー（LATが有効なユーザー）もアトリビューションできます。
 
+<div id="meta-install-referrer" />
+
 #### **Metaインストールリファラ**
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -148,6 +160,8 @@ Google Play Install Referrer APIに加えて、Metaインストールリファ�
 
 そのため、ローデータレポートでMeta広告にアトリビューションされるインストール数が増える場合があります。 Google Play Install Referrer APIまたはMetaインストールリファラでインストールがアトリビューションされると、そのデータはローデータレポートで利用できます。 Metaインストールリファラ経由で取得できるアトリビューション項目は、Facebookアプリ経由では`fb_referrer`、Instagramアプリ経由では`ig_referrer`のマッチタイプで、AppsFlyerのローデータレポートに反映されます。これは、復号キーを登録し、インストールがMeta広告にアトリビューションされた場合にのみ利用できます。 Metaインストールリファラの復号キーは、Google Playインストールリファラに使用するキーと同じです。AppsFlyerに再度登録する必要はありません。
 
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
 #### **リファラから取得できるキャンペーンのアトリビューション項目：**
 
 * 広告ID
@@ -159,6 +173,8 @@ Google Play Install Referrer APIに加えて、Metaインストールリファ�
 * アカウントID
 * チャネル
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * **Google Play Install Referrer APIについて：**
@@ -166,6 +182,8 @@ Google Play Install Referrer APIに加えて、Metaインストールリファ�
 >   * Channelフィールドは、Google Play Referrer APIから受信したチャネルの値（MetaからGoogle Playに送信された値）に基づいて決まります。空文字列を受信した場合、Channelフィールドには「None」と表示されます。
 >
 > * **Metaインストールリファラについて：** お知らせに記載された<Anchor target="_blank" href="/marketers/ja/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">前提条件と必要な対応</Anchor>を参照してください。
+
+<div id="meta-install-referrerfaq" />
 
 #### Metaインストールリファラ｜よくある質問
 
@@ -188,6 +206,8 @@ Google Play Install Referrer APIに加えて、Metaインストールリファ�
 * 詳細ターゲット設定：興味・関心、行動、詳細な利用者層について、指定条件を厳密な制限としない設定にします。
 * カスタムオーディエンス：指定条件を厳密な制限としない設定にします。
 * 指定条件を厳密な制限としない設定にするには、広告キャンペーンで［Advantage詳細ターゲット設定］のチェックボックスをオンにする必要があります。[![](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Google Play Referrer APIまたはMetaインストールリファラの暗号化データ
 
@@ -238,10 +258,14 @@ Google Play Referrer APIとMetaインストールリファラのデータは、�
 
 **接続済みのMeta広告アカウントを削除するには：** 操作列で対象アカウントにカーソルを合わせ、<strong>［接続を削除］</strong>をクリックします。
 
+<div id="notes" />
+
 > 📘 **注意**
 >
 > * すでにMeta広告にログインしている場合、<strong>［f login］</strong>ボタンをクリックすると、ウィンドウが開いてすぐに閉じます。これは正常な動作です。
 > * Meta広告への権限を持つユーザーが複数いる場合は、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">一部のデータが取得できない事態を避ける</Anchor>ため、全員がログインすることを推奨します。
+
+<div id="cost-data-sync-status" />
 
 #### コストデータの同期状況
 
@@ -283,6 +307,8 @@ Google Play Referrer APIとMetaインストールリファラのデータは、�
   * ラテン文字（英字）以外の文字：2020年1月12日時点で、Meta広告は中国語の文字を拒否します。 AppsFlyerでは他の文字種をテストしていません。使用する場合は、ポストバックでの対応可否をMeta広告に確認してください。
 * イベント名は大文字と小文字を区別します。乖離を避けるため、すべてのメディアソースとアプリバージョンで、イベント名の大文字と小文字を正しく使い分けてください。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > Meta広告は、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-in-app-event-mapping#キャンペーン最適化のための広告収益データのマッピング">af\_ad\_revenueイベントを適切なMeta広告イベントにマッピングする</Anchor>ことで、広告収益データに基づいてキャンペーンを最適化できます。
@@ -312,6 +338,8 @@ AppsFlyerのMeta広告向けリターゲティングアトリビューション�
 
 <Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns#srnとのディープリンク">Meta広告などのSRNからのディープリンク</Anchor>についても参照してください。
 
+<div id="whatsapp-retargeting-campaign-attribution" />
+
 #### WhatsAppリターゲティングキャンペーンのアトリビューション
 
 AppsFlyerは、iOSとAndroidの両方で、リエンゲージメントを目的としたWhatsApp Marketingメッセージキャンペーンを、ディープリンクアトリビューションで計測できます。
@@ -331,6 +359,8 @@ AppsFlyerは、iOSとAndroidの両方で、リエンゲージメントを目的�
 また、**拡張データ共有**がオンの場合、AppsFlyerはこれらのイベントをアトリビューションします。オフの場合は、IDFAを取得できるデバイスのポストバックとイベントのみが送信され、アトリビューションされます。
 
 この方法では、片方または両方でトラッキングをオプトアウトしているデバイスについて、iOSのクリックスルーおよびビュースルーインストールと、iOSのディープリンクによるリエンゲージメントをアトリビューションします。ラストタッチアトリビューションに基づき、アトリビューション期間の上限は24時間です。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -370,6 +400,8 @@ Meta広告キャンペーンでは、ディープリンクを使用して、特�
 | 認知度 | 対応 | 非対応 | 広告レベルの<strong>［遷移先］</strong>セクションで設定します。 | <ul><li><strong>［インストールトラッキングを有効にする］</strong>がオンになっている必要があります。</li></ul> |
 | リード | 対応 | 非対応 | 広告セットレベルの<strong>［コンバージョン］</strong>で設定します。 | <ul><li><strong>［インストールトラッキングを有効にする］</strong>がオンになっている必要があります。</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **関連情報**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneLinkガイド</Anchor>
@@ -397,6 +429,8 @@ CCPAのプライバシー規制に対応すると、米国カリフォルニア�
 
 Meta Audience Networkで広告マネタイズを行っている場合、Meta広告からの収益をAppsFlyerに記録できます。アプリ内購入の収益データの有無にかかわらず、**ユーザーから得られる収益の全体像**を把握できます。
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### Meta Audience Networkの広告収益の記録
 
 1. <strong>［広告収益］</strong>タブで、<strong>［広告収益データを取得］</strong>をオンにします。
@@ -423,9 +457,13 @@ Meta Audience Networkで広告マネタイズを行っている場合、Meta広�
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## iOSの合算イベント測定（AEM）
 
 AppsFlyerは、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-aggregate-event-measurement-aem-for-ios">Meta広告の合算イベント測定（AEM）</Anchor>に対応しています。このソリューションは、iOSのコンバージョンやアプリ内イベントの最適化と、Meta広告でのiOSのリエンゲージメント計測に役立ちます。
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Meta広告連携のトラブルシューティング
 
@@ -497,9 +535,13 @@ Meta広告のアプリインストールキャンペーンの設定では、ド�
 
 </Accordion>
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### Meta広告に関連するiOS 14の更新
 
 AppsFlyerとMeta広告のMMP連携では、常に*Advertiser Tracking Enabled*フラグを実装しています。そのため、AppsFlyer側での追加対応は不要です。この情報は、2021年2月付のMeta広告のアプリ向けiOS 14チェックリストに基づいています。
+
+<div id="see-also-1" />
 
 > 📄 **関連情報**
 >

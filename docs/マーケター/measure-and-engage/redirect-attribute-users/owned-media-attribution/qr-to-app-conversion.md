@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
 
+<div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
+
 ## モバイル、非モバイル、オフラインのユーザーをモバイルアプリへ誘導する
 
 OneLinkで生成された QRコードを、店舗内のディスプレイ、パンフレット、パッケージなど、デスクトップ、テレビ、CTV、オフラインの広告に投稿することで、次のような利点があります。
@@ -43,6 +45,8 @@ QRコードは、次の方法で簡単に作成できます：
 <div id="qr-to-app-conversion" />
 
 <Accordion title="QRコードを使用してアプリインストールを促す">
+
+<div id="manual-qr-code-setup" />
 
 #### QRコードの手動設定
 

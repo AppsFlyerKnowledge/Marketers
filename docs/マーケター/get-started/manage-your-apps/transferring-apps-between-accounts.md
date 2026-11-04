@@ -31,9 +31,13 @@ x-zendesk:
 
 ![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
+<div id="app-transfer-between-accounts" />
+
 ## アカウント間でのアプリの移管
 
 AppsFlyerアカウント間でアプリを移管するには、送信側および受信側のアプリ所有者（AppsFlyerアカウントでいうアドミンユーザー）が必要な前提条件を完了し、移管に同意する必要があります。
+
+<div id="prerequisites" />
 
 ### 前提条件
 
@@ -42,6 +46,8 @@ AppsFlyerアカウント間でアプリを移管するには、送信側およ�
 * いずれのアカウントにも未処理の請求書がないこと。
 * アカウント間のアプリの移行は、<Anchor target="_blank" href="/marketers/ja/docs/user-management#アカウント所有者">アカウント所有者</Anchor>のみが行うことができます。管理者ロールでは実行できません。
 * 管理画面上でのアプリ移管は、グロースプランまたはエンタープライズプランのアカウントに限ります。<Anchor target="_blank" href="/marketers/ja/docs/account-management-plans-payments-and-billing#appsflyer-plans">詳細はこちら</Anchor>
+
+<div id="app-transfer-process" />
 
 ### アプリの移管プロセス
 
@@ -62,6 +68,8 @@ AppsFlyerアカウント間でアプリを移管するには、送信側およ�
 <table><thead><tr><th>アイテム</th><th>移管対象 /<br/>移管対象外</th><th>詳細 / 考慮事項</th></tr></thead><tbody><tr><td>アプリ設定 </td><td>移管対象</td><td> <strong>任意：</strong>送信者は、転送前にFirebase/GCMサーバーキーを削除できます。 </td></tr><tr><td rowspan="2">連携済みパートナー</td><td>移管対象</td><td><p>連携、コスト、収益の設定（コストと収益データを含む）</p><p><strong>任意：</strong>受信側が連携パートナーの移管が不要な場合は、送信側はパートナーを無効にし、関連する設定と認証情報を削除してください（コスト、広告収益の設定を含む）。</p></td></tr><tr><td>移管対象外</td><td><p>アドネットワークと代理店の権限</p><p>Twitter連携設定と認証情報</p></td></tr><tr><td>OneLink管理</td><td>移管対象外</td><td>OneLinkのテンプレートとリンクは自動的には転送されませんが、CSMによって転送できます。<strong>任意：</strong> <ul><li>テンプレートとリンクを転送するには、CSM に連絡するか <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a> にご連絡ください。</li><li>送信者は、転送前に古いリンクを削除できます。</li></ul></td></tr><tr><td>Push API</td><td>移管対象</td><td> <strong>任意：</strong><ul><li>受信側がPush APIの設定（エンドポイント）を引き継ぐ必要がない場合、送信側は設定を削除してください。そうしないと、データは引き続き送信側が定義したエンドポイントに送信されます。</li><li>または、移管後に受信側が設定を変更し、送信側がユーザーレベルデータを受信しないようにすることも可能です。 </li></ul></td></tr><tr><td>スマートバナー</td><td>移管対象外</td><td><p>バナー、バナーグループ、クリエイティブ、ウェブサイトは転送されません。  </p></td></tr><tr><td>スマートスクリプト</td><td>移管対象外</td><td>AppsFlyerのUI内で作成されたスマートスクリプトは、新しいアカウントでは利用できません。  </td></tr><tr><td>代理店権限</td><td>移管対象外</td><td>代理店はアクセスを失うため、移管先のアカウントから再度権限付与の作業が必要です。</td></tr><tr><td>Audiences</td><td>移管対象外</td><td>オーディエンスは削除されます。</td></tr><tr><td>コストインポート</td><td>N/A</td><td>過去のコストインポートファイルは、受信者はアクセスできません。これはコスト履歴には影響しません。  </td></tr><tr><td>Data Locker</td><td>移管対象外</td><td>アプリはData Lockerの設定から削除され、送信者アカウントではアプリデータの受信が停止されます。  </td></tr><tr><td>過去データ</td><td>移管対象</td><td> </td></tr><tr><td>PBAブランドバンドル</td><td>移管対象外</td><td><p>関連するアプリが移管された場合、送信者はバンドルが利用できなくなります。受信者はPBAデータにはアクセスできません。</p><p>つまり、クライアントが新しいアカウントでPBAを使い続ける必要がある場合は、アプリの転送が完了する前にWebバンドルを削除する必要があり、そうしないと、新しいアカウントで同じWebバンドルを作成できません。</p></td></tr><tr><td>Protect360データ</td><td>移管対象</td><td> </td></tr><tr><td>ローデータ＆集計データ</td><td>移管対象</td><td> </td></tr><tr><td>SDK Dev Key</td><td>移管対象</td><td> </td></tr><tr><td>検証ルール</td><td>移管対象</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="transfer-procedures" />
 
 ## 移管の手順
 

@@ -24,12 +24,18 @@ x-zendesk:
 
 アカウントで特定のイベントが発生したときに、AppsFlyerからのメール通知を受け取ることを選択できます。**通知設定**では、これらの通知の受信をオプトインまたはオプトアウトできます。
 
+<div id="accessing-and-configuring-notification-preferences" />
+
 ## 通知設定へのアクセスと設定
+
+<div id="to-access-notifications" />
 
 ### 通知設定画面へのアクセス：
 
 * 上部のバーから、アカウントメニュー（Eメールアドレス） をクリックし、**通知設定を開きます。**
 * もしくは、上部メニューのベルアイコンから > **設定アイコン**をクリックします。
+
+<div id="configuring-notifications" />
 
 ### 通知の設定
 
@@ -38,6 +44,8 @@ x-zendesk:
 受信を停止するには、オフにしてください。
 
 注記：一部の通知はメールのみで利用できます。メール専用の通知タブには、これらの[通知設定](/docs/notifications#メールのみの通知)が含まれています。 
+
+<div id="what-notifications-can-i-receive" />
 
 ## どのような通知を受け取ることができますか？
 
@@ -57,6 +65,8 @@ x-zendesk:
   * たとえば、Push API機能を利用できないアカウントプランの場合、この機能に関連するスイッチは表示されません。
 * **その機能にアクセスするユーザー権限があること -** アクセス権限がない機能に関する通知の場合は、オン／オフを切り替えるスイッチが無効になります。
   * 例えば、連携パートナーを追加または編集する権限がない場合、連携パートナーの設定に関連する通知をオンまたはオフに設定するスイッチが無効になります。
+
+<div id="when-will-i-receive-notifications" />
 
 ## 通知はいつ届きますか？
 
@@ -84,6 +94,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="where-will-i-receive-notifications" />
+
 ## 通知はどこに届きますか？
 
 通知は、[ベル](/docs/notifications#bell-notification)アイコン、[メール](/docs/notifications#email-notification)、[Slack](/docs/notifications#slack-notification)連携で受信できます。
@@ -106,9 +118,13 @@ x-zendesk:
 
 一部の通知はメールのみで利用できます。**メール専用の通知**タブには、これらの通知設定が含まれています。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > すべてのAppsFlyer通知メールは[notifications@appsflyer.com](mailto:notifications@appsflyer.com)から送信されます。
+
+<div id="email-only-notifications" />
 
 #### メールのみの通知
 

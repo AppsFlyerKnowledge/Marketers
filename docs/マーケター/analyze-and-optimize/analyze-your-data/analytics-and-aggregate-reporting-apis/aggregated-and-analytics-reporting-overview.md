@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 集計データのレポート、ツール、APIの紹介と比較を記載しています。
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## 集計・分析パフォーマンスレポートの概要
 
 AppsFlyerでは、アプリ、キャンペーン、ユーザーのパフォーマンスを評価できるよう、各種指標を揃えた集計分析ツールを提供しています。
@@ -95,6 +97,8 @@ AppsFlyerでは、アプリ、キャンペーン、ユーザーのパフォー�
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### ユーザージャーニーレポート
 
 記載されているレポートは、データエクスポートページもしくはPull API経由で利用できます。
@@ -114,9 +118,13 @@ AppsFlyerでは、アプリ、キャンペーン、ユーザーのパフォー�
 
 CSVファイル内の日付の項目は「yyyy-mm-dd」のフォーマットになっています。CSVファイルをExcelで開くと、PC上の日付/時刻の設定を使用して日付カラムが表示されます。<Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">エクセル</Anchor>上で適切な日付の表示方法を選択してください。
 
+<div id="examples-of-aggregate-reports" />
+
 #### 集計レポートのサンプル
 
 [レポートサンプル（スプレッドシート形式）](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### 新規獲得の集計レポートにおける項目
 
@@ -134,6 +142,8 @@ CSVファイル内の日付の項目は「yyyy-mm-dd」のフォーマットに�
 
 Pull API経由でリターゲティングレポートを取得する際は、 *&reattr=true* のパラメータをパフォーマンスレポートのURIに追加してください。
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### 集計リターゲティングLTVレポート
 
 | レポート名 | グループ化 |
@@ -143,6 +153,8 @@ Pull API経由でリターゲティングレポートを取得する際は、 *
 | デイリーアクティビティ | 日付 / 代理店 / メディアソース / キャンペーン |
 | 国別 | 国 / 代理店 / メディアソース / キャンペーン |
 | 国・地域（日付別） | 日付 / 国 / 代理店 / メディアソース / キャンペーン |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### 集計リターゲティングLTVレポート
 
@@ -168,6 +180,8 @@ Pull API経由でリターゲティングレポートを取得する際は、 *
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## 機能レポート
 
 <div id="skadnetwork" />
@@ -190,6 +204,8 @@ Pull API経由でリターゲティングレポートを取得する際は、 *
 
 レポートの日付範囲はインストール日を意味します。
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Pull API経由で利用可能なProtect360の集計レポート
 
 | レポート名 |
@@ -203,6 +219,8 @@ Pull API経由でリターゲティングレポートを取得する際は、 *
 **制限:** ブロック理由が**App Version**と**customer user idの欠落**であった場合にも、ブロック理由：**Bots** として表示されます。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

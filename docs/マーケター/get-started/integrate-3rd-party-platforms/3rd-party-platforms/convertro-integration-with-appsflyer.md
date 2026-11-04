@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるConvertroは、広告施策の成果を正確に把握し、分析結果をすばやく施策に反映するための、マーケター向け自動化ツールを提供しています。コンバージョンに至る顧客の行動を詳細に収集するだけでなく、マーケティングミックスを科学的に最適化し、ROIを最大化するための予算配分を自動的に判断する技術を備えています。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-convertro" />
 
 ## Convertroの設定
 
@@ -55,10 +59,14 @@ Convertroの設定で使用するのは、<strong>［連携］</strong>タブの
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めて設定する場合**は、以下のトグルを操作します。［***パートナーを有効化***］をオンにすると、［連携］タブのパラメータを設定できるようになります。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -67,6 +75,8 @@ Convertroの設定で使用するのは、<strong>［連携］</strong>タブの
 ConvertroとAppsFlyerの接続には、固有のページURL、サイトID、クライアント名を使用します。まだ取得していない場合は、連携の設定を進める前にConvertroから取得するか、以下の手順で取得してください。
 
 [![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
+
+<div id="obtaining-the-client-name-page-url--site-id-from-the-convertro-platform" />
 
 ### Convertroでクライアント名、ページURL、サイトIDを取得する
 
@@ -84,6 +94,8 @@ ConvertroとAppsFlyerの接続には、固有のページURL、サイトID、ク
 
 ![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にConvertroへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
@@ -93,6 +105,8 @@ AppsFlyerは、ユーザーのインストール後にConvertroへポストバ�
 アプリをダウンロードしたすべてのユーザーのポストバックをConvertroに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
 ［**保存**］をクリックします。
+
+<div id="in-app-event-settings" />
 
 ### アプリ内イベントの設定
 

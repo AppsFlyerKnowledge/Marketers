@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** ソースデータをDCPへ接続し、オーディエンスをクラウドストレージバケットへエクスポートできるよう、クラウドサービスを設定します。
 
+<div id="about-cloud-service-setup" />
+
 ## クラウドサービス設定について
 
 DCPでは、クラウドサービスとプラットフォーム間でデータをやり取りするために、2種類の接続を使用します。
@@ -45,6 +47,8 @@ DCPでは、クラウドサービスとプラットフォーム間でデータ�
 
 Amazon S3とGCSでは、ソース接続とクラウドストレージ接続のどちらにも同じバケット設定と権限が適用されるため、方向ごとに個別の設定は必要ありません。ソース接続を作成すると対応するクラウドストレージ接続も自動的に作成され、その逆も同様です。また、一方を削除するともう一方も削除されます。これは、両方のタブで同じ基盤接続を共有しているためです。
 
+<div id="set-up-your-cloud-services" />
+
 ## クラウドサービスの設定
 
 以下からクラウドサービスを選択し、設定手順を確認してください。
@@ -54,6 +58,8 @@ Amazon S3とGCSでは、ソース接続とクラウドストレージ接続の�
 <Accordion title="Amazon S3">
 
 以下の手順に従って、DCPで使用するAmazon S3バケットを準備します。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -107,6 +113,8 @@ Amazon S3とGCSでは、ソース接続とクラウドストレージ接続の�
 5. コードスニペット内の`af-dcr-mybucket`（2か所）を、作成したバケット名に置き換えます。
 6. **Save changes**をクリックします。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > コードスニペットのバケット名を置き換える際は、2か所目のバケット名の後ろにある`/*`を上書きしないでください。
@@ -118,6 +126,10 @@ Amazon S3とGCSでは、ソース接続とクラウドストレージ接続の�
 <Accordion title="Google Cloud Storage（GCS）">
 
 以下の手順に従って、DCPで使用するGCSバケットを準備します。
+
+<div id="note-2" />
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -187,6 +199,8 @@ BigQueryはソース接続のみサポートしています。以下の手順に
 
 Snowflakeはソース接続のみサポートしています。以下の手順に従って、DCPで使用するプライベート共有を作成します。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 以下の手順は、Snowflakeの**Accountadmin**が実施する必要があります。
@@ -220,6 +234,8 @@ Salesforce Cloud/CRMはソース接続のみサポートしています。設定
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特性と制限事項
 
 | 特性 | 説明 |
@@ -228,6 +244,8 @@ Salesforce Cloud/CRMはソース接続のみサポートしています。設定
 | バケットの使用 | S3およびGCSのバケットは、DCP専用で使用する必要があります。他のサービスからバケットへデータを書き込むことはできません。 |
 | <span id="dcr-naming-requirements"></span>DCRの命名要件 | 以下の命名要件は、バケット、フォルダ、ファイルを含むすべてのDCRデータエンティティに適用されます。<ul><li>**最大文字数：** 200文字</li><li>**使用可能な文字：** 英字（A-Z、a-z）、数字（0-9）、ハイフン（-）</li><li>**使用できない文字：** スペース、およびその他すべての記号や特殊文字</li><li>数字とハイフンを名前の先頭に使用することはできません。</li><li>**以下の文字は、指定された用途でのみ使用できます。**<ul><li>等号（=）：<Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version">日付およびバージョンのフォルダ名</Anchor>でのみ使用可能</li><li>アンダースコア（{"_"}）：<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#file-format">マルチパートGZIPファイル名</Anchor>または<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#_success-files">{"_SUCCESS"}ファイル</Anchor>でのみ使用可能</li><li>ドット（.）：ファイル名拡張子（.csv、.gzip）の直前でのみ使用可能</li></ul></li></ul> |
 | バケットの命名 | バケット名は`af-dcr-`で始め、その後に任意の文字列を続ける必要があります。例：`af-dcr-example-bucket` |
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

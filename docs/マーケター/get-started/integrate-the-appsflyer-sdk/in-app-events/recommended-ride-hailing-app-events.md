@@ -33,6 +33,8 @@ x-zendesk:
 * 配車サービスの利用率の高い国
 * 価格、乗車回数、乗車距離に関する指標
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -43,6 +45,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -145,6 +149,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## カスタムイベントで推奨される構造
 
 次のセクションでは、カスタムビエント名と推奨されるイベントパラメーターのイベント構造リストを示しています。アプリ内イベントには、ビジネスニーズを満たす任意のイベントパラメーターを含めることができます。
@@ -199,6 +205,8 @@ x-zendesk:
 * 各ドライバーの平均や全体の価格
 
 さらに、このイベントに加えて、他の3つの予約関連イベントを計測すると、ドライバーのアクティビティを詳しく確認するために役立ちます。例えば、配車予約リクエストを最も多く確認しているドライバーやロングライドではなくショートライドを選択しているドライバーなどを確認できます。
+
+<div id="trigger" />
 
 #### **トリガー**
 

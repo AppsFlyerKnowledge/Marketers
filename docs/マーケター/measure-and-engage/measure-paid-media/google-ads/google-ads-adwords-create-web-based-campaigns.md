@@ -25,6 +25,8 @@ x-zendesk:
 >
 > この記事では、モバイルアプリを宣伝するWebキャンペーンについて説明します。 PCまたはコンソールアプリを宣伝するキャンペーンを作成する場合は、「Google Ads Web：PCおよびコンソールアプリ向けの連携」を参照してください。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerは、WebキャンペーンでのGoogle Ads（`googleads_int`）連携に対応しています。キャンペーンの計測データとコンバージョンデータは、GoogleのOffline Conversion API（OCI）を通じてGoogleに送信されます。
@@ -37,6 +39,8 @@ AppsFlyerは、WebキャンペーンでのGoogle Ads（`googleads_int`）連携�
 
 Googleはこのデータを使用して、広告ターゲティングの最適化、パフォーマンスの計測、カスタムオーディエンスの作成を行います。
 
+<div id="prerequisite" />
+
 ### 前提条件
 
 Webキャンペーン向けのGoogle Ads連携を有効にする前に、以下を準備してください。
@@ -44,6 +48,8 @@ Webキャンペーン向けのGoogle Ads連携を有効にする前に、以下�
 * モバイルアプリ
 * AppsFlyerのアカウント
 * <Anchor target="_blank" href="/marketers/ja/docs/user-management">適切なロールまたは権限を持つAppsFlyerユーザー</Anchor>と、対象アプリへのアクセス権
+
+<div id="create-a-google-ads-web-campaign" />
 
 ### Google AdsのWebキャンペーンの作成
 
@@ -56,6 +62,8 @@ Webキャンペーン向けのGoogle Ads連携を有効にする前に、以下�
 
 * [OneLink Smart Scriptを使用したランディングページの作成](#onelink-smart-scriptを使ったランディングページの作成)（任意）
 * [OneLink Smart Bannersを使用したランディングページの作成](#onelink-smart-bannersを使ったランディングページの作成)（任意）
+
+<div id="create-a-google-ads-integration-in-appsflyer" />
 
 ## AppsFlyerでのGoogle Ads連携の設定
 
@@ -170,6 +178,8 @@ Google Adsキャンペーン用のOneLink計測リンクを作成する前に、
 
 </Accordion>
 
+<div id="create-a-web-campaign-in-google-ads" />
+
 ## Google AdsでのWebキャンペーンの作成
 
 Google Adsで以下の手順を実行します。
@@ -236,6 +246,8 @@ Google Adsでカスタムコンバージョンアクションと目標を作成�
 
 GoogleのWeb広告キャンペーンでは、広告接触ごとに最終ページURLとトラッキングテンプレートURLの2つのURLを使用します。広告がクリックされると、この2つのURLが同時に呼び出されます。Googleはこの仕組みを「並行トラッキング」と呼んでいます。並行トラッキングの詳細は、<Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">Googleのドキュメント</Anchor>を参照してください。
 
+<div id="set-the-final-url" />
+
 #### 最終ページURLの設定
 
 Googleは<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">最終ページURL</Anchor>を、「ユーザーが広告をクリックした後にアクセスする、自社Webサイト内のページのURL」と定義しています。「ランディングページ」とも呼ばれます。
@@ -273,6 +285,8 @@ Googleは<Anchor target="_blank" href="https://support.google.com/google-ads/ans
   https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
   ```
 * ユーザーをストアに誘導せず、アプリを直接ダウンロードしてもらう場合は、**アプリのAPKファイルを直接ダウンロードするリンク**を使用します。
+
+<div id="set-the-tracking-template-url" />
 
 #### トラッキングテンプレートURLの設定
 
@@ -330,6 +344,8 @@ Google Adsはデフォルトで並行トラッキングを使用するため、�
 >
 > トラッキングテンプレートURLのその他の制限は、この記事の「機能と制限事項」セクションを参照してください。
 
+<div id="google-tracking-template-url-examples" />
+
 #### GoogleトラッキングテンプレートURLの例
 
 GoogleのトラッキングテンプレートURLに設定する**リンク**として、**OneLink**を使用する例：
@@ -344,6 +360,8 @@ GoogleのトラッキングテンプレートURLに**単一プラットフォー
 https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
+<div id="using-the-tracking-template-url-with-smart-script-or-smart-banners" />
+
 #### Smart ScriptまたはSmart BannersでのトラッキングテンプレートURLの使用
 
 広告からSmart ScriptまたはSmart Bannersを実装したランディングページに誘導する場合、トラッキングテンプレートURLにAppsFlyerの計測リンクを設定する必要はありません。ユーザーがランディングページのCTAボタンをクリックすると、これらのツールが自動生成した計測リンクを通じて、クリックがAppsFlyerに記録されるためです。ただし、トラッキングテンプレートURLを空欄にするかどうかを決める際は、以下の点を考慮してください。
@@ -352,6 +370,8 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 * トラッキングテンプレートURLに**計測リンクを設定した場合**、ユーザーが広告をクリックした後にランディングページのCTAボタンもクリックすると、クリックが1回ではなく2回記録され、コンバージョン率のデータに影響する場合があります。
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## OneLink Smart Scriptを使ったランディングページの作成
 
@@ -434,6 +454,8 @@ GoogleのWebキャンペーン向けにSmart Scriptを設定するには、以�
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-banners" />
+
 ## OneLink Smart Bannersを使ったランディングページの作成
 
 **ユーザージャーニー：** ユーザーがGoogleの広告をクリックし、モバイルWebサイトに誘導されます。アクセスしたページに、アプリストアからのダウンロードを促すCTAを備えたSmart Bannerが表示されます。
@@ -473,20 +495,28 @@ GoogleのWebキャンペーン向けにSmart Bannersを設定するには、以�
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Web to Appの計測データの確認
 
 Web経由のコンバージョンイベントは元の`googleads_int`PIDでGoogleに送信されますが、AppsFlyer管理画面とローデータレポートでは`googleadwords_int`PIDでレポートされます。これは、コンバージョンの成果イベントと、その成果をアシストしたイベントの両方に適用されます。
 
 この統合されたレポート表示により、モバイルとWebのすべてのコストレポートを含め、Webキャンペーンとアプリキャンペーンのパフォーマンスを1か所で分析できます。
 
+<div id="view-in-the-dashboard" />
+
 ### 管理画面での確認
 
 GoogleのWeb to Appの計測結果はすべて、オーバービューダッシュボードとアクティビティダッシュボードで`googleadwords_int`として表示されます。これにより、プラットフォームを横断したキャンペーンの成果を1つにまとめて確認できます。標準のフィルタと内訳表示を使用して、Google Adsのデータ内でアプリとWebのトラフィックを比較できます。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### ローデータレポートとAPIレポートでの確認
 
 * **ローデータのエクスポートとAPIレスポンス**では、GoogleのWeb上のアクティビティについて、`media_source`フィールドに`googleadwords_int`PIDが含まれます。 Webキャンペーンの設定詳細を確認するには、`original_url`フィールドを参照してください。Webキャンペーンの作成時に使用されたPIDとして`googleads_int`が表示されます。
 * **ポストバックレポート**には、ポストバックの送信先となった元のメディアソースとして`googleads_int`が表示されます。
+
+<div id="troubleshooting-in-app-events-postbacks" />
 
 ## アプリ内イベントのポストバックに関するトラブルシューティング
 
@@ -521,6 +551,8 @@ Google Adsで、アクセストークンにオフラインコンバージョン�
 Google OCIへのポストバックをGoogle Adsに正しく登録するには、Smart ScriptまたはSmart Bannersの送信URLに、`gclid`、`wbraid`、`gbraid`のいずれかを含める必要があります。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 機能と制限事項
 

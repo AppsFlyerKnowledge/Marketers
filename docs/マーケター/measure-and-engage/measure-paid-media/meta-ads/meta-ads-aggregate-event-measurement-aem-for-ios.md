@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** Meta広告でiOSのコンバージョンやアプリ内イベントを最適化し、iOSのリエンゲージメントを計測するAEMソリューションについて説明します。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerは、<Anchor target="_blank" href="https://www.facebook.com/business/help/721422165168355">Meta広告の合算イベント測定（AEM）</Anchor>に対応しています。このソリューションでは、以下のアトリビューション方法を使用して、iOS 14以降のデバイスのWebイベントとアプリイベントを計測できます。
@@ -34,9 +36,13 @@ AEMソリューションでは、イベントがAEMの要件を満たす場合�
 
 * [アプリイベントのAEM利用要件の確認](#アプリイベントのaem利用要件の確認)
 
+<div id="app-aem-for-re-engagement" />
+
 ## リエンゲージメント向けアプリAEM
 
 Meta広告はAEMを使用して、広告IDを取得できないiOSユーザーについて、ディープリンクによるリエンゲージメントアトリビューションを提供します。
+
+<div id="attribution-flow" />
 
 ### アトリビューションの流れ
 
@@ -45,6 +51,8 @@ Meta広告は、AEMの`campaign_ids`識別子とともに、アトリビュー�
 * 集計レポートデータをMeta広告に提供します。
 * Meta広告が追加したディープリンク情報に基づいてアトリビューションを行います。
 * ディープリンクのアトリビューションデータを、ローデータレポートと集計データレポートに含めます。
+
+<div id="attribution-data-parameters" />
 
 ### アトリビューションデータのパラメータ
 
@@ -56,9 +64,13 @@ Meta広告から共有される以下のアトリビューションデータの�
 * `campaign_group_id`
 * `account_id`
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > リマーケティングにAEMを利用するため、AppsFlyer SDKはディープリンクを開いた際に`campaign_ids`文字列を取得します。デフォルトでは、SDKはすべてのドメインのディープリンクを共有します。連携をカスタマイズしている場合は、AppsFlyerのドメインだけでなく、Metaのドメインを含むすべてのドメインのディープリンクを共有するよう設定されていることを確認してください。
+
+<div id="faqs-on-deep-link-re-engagement-attribution" />
 
 ### ディープリンクによるリエンゲージメントアトリビューションのよくある質問
 
@@ -90,7 +102,11 @@ Meta広告から共有される以下のアトリビューションデータの�
 
 </Accordion>
 
+<div id="app-aem-for-app-promotion" />
+
 ## アプリの宣伝向けアプリAEM
+
+<div id="aem-eligibility" />
 
 ### AEMの利用要件
 
@@ -98,9 +114,13 @@ Meta広告から共有される以下のアトリビューションデータの�
 
 <Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > AEMの利用要件に関して問題がある場合は、[アプリイベントのAEM利用要件の確認](#アプリイベントのaem利用要件の確認)を参照してください。
+
+<div id="aem-data-sharing" />
 
 ### AEMのデータ共有
 
@@ -111,6 +131,8 @@ Meta広告から共有される以下のアトリビューションデータの�
 
 ![AEM](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > * ここでいうイベントには、インストール、アプリ起動、アプリ内イベントがすべて含まれます。
@@ -118,9 +140,13 @@ Meta広告から共有される以下のアトリビューションデータの�
 > * サーバー間（S2S）で送信するアプリ内イベントについて、Meta広告は、イベントペイロードに**IPアドレス**と<strong>ベンダー識別子（IDFV）</strong>の両方を含めることを求めています。これらの識別子がないイベントは、Meta広告のAEMによるアトリビューションの対象になりません。
 > * アプリの宣伝向けのMeta AEMには、非確定的なビュースルーのアトリビューション申告が含まれる場合もあります。 Meta AEMの非確定的なビュースルーアトリビューションに対応するには、アプリ単位の［キャンペーン計測モデリングによるビュースルーアトリビューションを有効にする］がオンになっていることを確認してください。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling">確率論的モデリングによるビュースルーアトリビューション</Anchor>を参照してください。
 
+<div id="check-if-your-app-events-are-eligible-for-aem" />
+
 ## アプリイベントのAEM利用要件の確認
 
 Metaイベントマネージャで、アプリイベントがAEMの利用要件を満たしているか確認できます。アプリイベントが要件を満たすと、選択したAEMキャンペーンの成果を広告マネージャで確認できます。確認方法の詳細は、<Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">Metaのドキュメント</Anchor>を参照してください。
+
+<div id="enable-aem-summary" />
 
 ## AEMの有効化手順のまとめ
 
@@ -132,6 +158,8 @@ AppsFlyerでMeta広告のAEMを有効にする際のチェックリストとし�
 | **アプリの宣伝向けAEM（インストール）** | 拡張データ共有 | パートナー連携（Meta広告） | アプリの宣伝向けのAEMを有効にします。広告IDを取得できないユーザーのイベントもMetaで計測できるようにし、該当する場合は非確定的なアトリビューション申告も受け入れます。 |
 | **アプリの宣伝向けAEM（インストール）** | 確率論的モデリングによるビュースルーアトリビューションを有効にする | アプリ設定 | 非確定的なアトリビューション申告によるビュースルーアトリビューションを有効にします。 |
 
+<div id="troubleshooting" />
+
 ## トラブルシューティング
 
 <div id="troubleshooting-ineligible-events-in-meta-aem" />
@@ -139,6 +167,8 @@ AppsFlyerでMeta広告のAEMを有効にする際のチェックリストとし�
 <Accordion title="Meta AEMの利用要件を満たさないイベントのトラブルシューティング">
 
 Meta広告でアプリイベントが要件を満たさないと判定され、<strong>「Missing opt-out events」</strong>などのAEM関連エラーが表示される場合、通常はデータの欠落や設定不備が原因です。以下のチェックリストを使用して、よくある問題を特定し、解決してください。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -201,6 +231,8 @@ Metaは、IDFAがない、または値がすべて0になっているイベン�
 
 </Accordion>
 
+<div id="still-not-working" />
+
 #### それでも解決しない場合
 
 特定のイベントが引き続き要件を満たさない場合は、以下を行ってください。
@@ -208,6 +240,8 @@ Metaは、IDFAがない、または値がすべて0になっているイベン�
 1. Metaのイベントマネージャに移動し、画面の案内に従います。
 2. 対象のアプリイベントを選択します。
 3. 優先する接続方法として<strong>［MMP traffic］</strong>を設定します。
+
+<div id="need-help" />
 
 #### サポートが必要な場合
 

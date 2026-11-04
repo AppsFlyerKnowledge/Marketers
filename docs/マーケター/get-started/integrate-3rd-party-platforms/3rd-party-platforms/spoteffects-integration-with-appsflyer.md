@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるSpoteffectsは、SaaSソリューションを開発・提供しています。メディアプランナーは、広告の放映直後に発生した訪問数とコンバージョン数に基づいて、オンラインショップやWebサイトのテレビ広告キャンペーンを最適化できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-spoteffects" />
 
 ## Spoteffectsの設定
 
@@ -53,10 +57,14 @@ Spoteffectsの設定で使用するのは、<strong><em>［連携］</em></stron
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めてこの画面を開いたとき**は、下にあるトグルをオンにする必要があります。［***パートナーを有効化***］をオンにすると、［連携］タブのパラメータを設定できるようになります。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -67,6 +75,8 @@ AppsFlyerは、ユーザーのインストール後にSpoteffectsへポストバ
 アプリをダウンロードしたすべてのユーザーのポストバックをSpoteffectsに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
 ［**保存**］をクリックします。
+
+<div id="in-app-event-settings" />
 
 ### アプリ内イベントの設定
 

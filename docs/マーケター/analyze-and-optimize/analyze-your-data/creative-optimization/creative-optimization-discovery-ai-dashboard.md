@@ -27,11 +27,15 @@ x-zendesk:
 
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## Creative Optimization Discovery AIダッシュボードについて
 
 <Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide">**Creative Optimization**</Anchor>ダッシュボードでは、すべてのメディアチャネルのすべてのクリエイティブを1か所にまとめることで、クリエイティブのパフォーマンスを測定できます。複数のキャンペーンやチャネルなど、選択したディメンションごとにパフォーマンスを分析し、次のクリエイティブのバッチを計画、選択、制作する前に重要なインサイトを得ることができます。
 
 AIを活用した**Creative Optimization**の**Discovery AIダッシュボード**は、クリエイティブチームが成功するクリエイティブを制作するために必要なすべての情報を提供します。詳細なパフォーマンスデータに基づき、クリエイティブ内のどの要素や特徴が効果に貢献しているかを把握して、適切な判断を下せます。このダッシュボードを使用すると、データドリブンで最大の効果が得られるように最適化されたクリエイティブを一貫して作成・維持できます。メインフィルター選択に基づいて、クリエイティブのギャラリーを表示したり、個々のシーンや要素に分類したりできます。
+
+<div id="get-started" />
 
 ## まずはじめに
 
@@ -41,6 +45,8 @@ Creative Optimizationをまだ設定していない場合は、<Anchor target="_
 
 * コストデータの指標は、AppsFlyer ROI360のご契約があるかどうかによって、管理画面での表示方法が異なります。<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide#creative-optimization-roi360">詳細はこちら</Anchor>
 * インプレッション数とクリック数のデータは、パートナー連携でコストを有効にする必要があります。<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#cost-tab">詳細はこちら</Anchor>
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
 
 ## 手順— Discovery AIダッシュボードの使用
 
@@ -104,6 +110,8 @@ Discoveryのタイルに表示する指標をカスタマイズできます。
 
 </Accordion>
 
+<div id="concepts" />
+
 ## コンセプト
 
 <div id="discovery-ai-search" />
@@ -122,11 +130,13 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 
 検索条件には、映像、テキスト、音声、テーマ、ストーリー要素など、クリエイティブの内容のみを指定してください。 「IPMが2を超えるクリエイティブ」などのパフォーマンス指標や、クリエイティブ名では検索しないでください。
 
+<div id="what-you-can-search-for" />
+
 #### 検索できる内容
 
 クリエイティブの内容に関する複数の観点について、自然な言葉で検索できます。要素を組み合わせると、より正確で文脈に合った結果を得られます。
 
-* ##### **映像**
+* ##### <span id="visual"></span>**映像**
 
   以下のような映像の内容を検索できます。
 
@@ -140,7 +150,7 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 
 「レーシングカーが登場する都会の街路のシーン」
 
-* ##### **テキスト**
+* ##### <span id="text"></span>**テキスト**
 
   特定のメッセージ、見出し、短い文言を検索できます。
 
@@ -152,7 +162,7 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 
 「スペイン語の字幕」
 
-* ##### **音声**
+* ##### <span id="audio"></span>**音声**
 
 ナレーション、アクセントや言語、音楽のスタイルやテンポ、効果音などの音声要素を検索できます。
 
@@ -162,7 +172,7 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 
 「意欲を高めるナレーション」
 
-* ##### **ストーリーと全体的なコンセプト**
+* ##### <span id="narrative-and-high-level-concepts"></span>**ストーリーと全体的なコンセプト**
 
 全体的なテーマ、ストーリー展開、感情的な雰囲気を検索できます。
 
@@ -173,6 +183,8 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 「ドラマチックなゲームプレイシーン」
 
 「課題と解決策を示すストーリー」
+
+<div id="combining-properties" />
 
 #### 複数の特徴の組み合わせ
 
@@ -187,6 +199,8 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 「楽しいストーリー展開と穏やかなピアノ音楽を伴う、夕暮れのビーチのシーン」
 
 特徴を組み合わせると、クリエイティブのパターンをより明確に把握し、分析に不要な情報を減らせます。
+
+<div id="notes" />
 
 > 📘 **注意**
 >
@@ -355,6 +369,8 @@ AIによって動画クリエイティブを自動的にシーンへ分割し、
 クリエイティブや要素の場合は、特定のディスカバリーカードで**類似検索**をクリックすると、**類似性**タブを開けます。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

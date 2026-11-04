@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 概要：クロスプラットフォーム（CTV、PC、コンソールプラットフォーム）レポートを取得します。注意：Android および iOS オペレーティングシステムを搭載したプラットフォームでは、<Anchor target="_blank" href="/marketers/ja/docs/aggregated-and-analytics-reporting-overview">集計</Anchor>および<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ローデータ</Anchor>レポートを利用できるかどうかはモバイルアプリの場合と同じです。
 
+<div id="cross-platform-reports" />
+
 ## クロスプラットフォームレポート
 
 クロスプラットフォームレポート
@@ -31,6 +33,8 @@ x-zendesk:
 * 非オーガニックとオーガニック両方のすべてのメディアソースのデータが含まれます。
 * 各レポート項目の定義は、  ローデータ項目の手引きをご覧ください。
 
+<div id="report-types-and-availability" />
+
 ### レポートの種類および可用性
 
 | レポート | 備考 | サンプルレポート |
@@ -39,6 +43,8 @@ x-zendesk:
 | クロスプラットフォームアプリ内イベント | Data Lockerのご契約が必要 | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrOchvROUOrhb4JuHTT1IqGXD94rhsu2sQ6v_i9bGoavSUXV7IU6kktxTEYHeIPXw4XujZY2aUEzRh/pub?output=csv">ダウンロード</Anchor> |
 | クロスプラットフォームセッション | Data Lockerのご契約が必要 |  |
 | クロスプラットフォームのインプレッション | <ul><li>クロスプラットフォームの OneLinkリンクからのインプレッションデータが含まれます。</li><li>Data Lockerのご契約は必要ありません。</li></ul> | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_d8Tf0AzwOybJQG1L7d42l7LhMO5SuAcHwguRcV32mdvTZVSk6U-jTVuYFfQtTCo0rte-k7pDeOqi/pub?gid=964292901&single=true&output=csv">ダウンロード</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

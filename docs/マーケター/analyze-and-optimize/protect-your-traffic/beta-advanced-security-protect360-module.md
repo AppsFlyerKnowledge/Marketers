@@ -24,15 +24,21 @@ x-zendesk:
 
 > **概要：** Advanced Security Module（高度なセキュリティ機能）で、Androidアプリの不正対策を強化できます。この機能は、インストールのアトリビューションが行われる前に、アトリビューション偽装や改ざんされたトラフィックをリアルタイムで検知・ブロックします。トラフィック量の多いアプリやProtect360の利用者、特にアフィリエイトと連携している利用者向けに設計されています。モジュールの設定は、すべてお客様自身で行えます。初期設定や継続的な保守を通じて、変化する不正の傾向に対応し、データの正確性を保てます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > Advanced Security Moduleのベータ版は、Protect360をご利用のすべてのお客様が利用できます。利用を希望する場合は、担当のカスタマーサクセスマネージャー（CSM）にお問い合わせください。
+
+<div id="what-is-sdk-spoofing" />
 
 ## SDKスプーフィングとは
 
 SDKスプーフィング（SDKからの通信を装う不正）は、実際のデバイスにアプリをインストールしたり起動したりせずに、偽のインストールやアプリ内イベントのリクエストをAppsFlyerサーバーに直接送信する、高度な不正手法です。アプリのSDK自体に不正侵入や改ざんが行われるわけではありません。実際のアプリが送信するネットワークリクエストを不正行為者が模倣し、正当なアクティビティに見せかけます。
 
 広告主にとってSDKスプーフィングは、実際には発生していないインストールやエンゲージメントの計上、インストール数の水増し、AppsFlyerとアプリストアの数値の不一致、広告費の無駄につながるおそれがあります。
+
+<div id="about-the-advanced-security-module" />
 
 ## Advanced Security Moduleの概要
 
@@ -44,6 +50,8 @@ SDKスプーフィング（SDKからの通信を装う不正）は、実際の�
 
 モジュールは、SDKが記録するアプリの初回起動後、インストールのアトリビューションが行われる前に動作します。 Advanced Security Moduleの利用には、Android SDK v6.15.2以降が必要です。
 
+<div id="prerequisites" />
+
 ## 事前準備
 
 設定を始める前に、次のものが揃っていることを確認してください。
@@ -52,11 +60,15 @@ SDKスプーフィング（SDKからの通信を装う不正）は、実際の�
 * **API V2トークン**：開発者がSecurity Moduleの依存ライブラリを組み込む際に、Mavenリポジトリでの認証に必要です。取得・生成方法については、<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens#api-v2トークンの用途">AppsFlyerトークンの管理</Anchor>を参照してください。
 * アプリの署名に使用するすべての証明書（デバッグ用・リリース用）の**証明書ハッシュ値（SHA-256）**。 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint">SHA256フィンガープリントの生成</Anchor>を参照してください。
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > アカウントですでにAPI V2トークンの上限である2個に達している場合、新しいトークンをリクエストする必要はありません。この実装には、既存のAPI V2トークンを再利用できます。トークンの割り当てについて不明な点がある場合は、担当CSMにお問い合わせください。
 >
 > 技術的な実装手順の詳細は、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-security-plugin">Androidセキュリティプラグインの開発者向けガイド</Anchor>を参照してください。
+
+<div id="set-the-advanced-security-module" />
 
 ## Advanced Security Moduleの設定
 
@@ -64,12 +76,16 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 
 <Accordion title="Advanced Security Moduleの設定手順">
 
+<div id="step-1-open-and-select-an-app" />
+
 #### **ステップ1：設定画面を開き、アプリを選択**
 
 1. AppsFlyerで<strong>［設定］＞［Protect360］＞［Advanced Security Module］</strong>に移動します。
 2. <strong>［設定を開始（Get Started）］</strong>または<strong>［ビルドを追加（Add build）］</strong>をクリックします。
 3. Advanced Security Moduleを実装するアプリを選択します。
 4. <strong>［次へ］</strong>をクリックします。
+
+<div id="step-2-add-certificate" />
 
 #### **ステップ2：証明書の追加**
 
@@ -80,17 +96,23 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 
 注意：アプリの署名に使用するすべての[証明書ハッシュ値](https://dev.appsflyer.com/hc/docs/android-security-plugin#generating-a-sha256-fingerprint)を、開発者に確認してください。 Security Moduleは、これらの証明書を使ってトラフィックが対象アプリから送信されたことを検証するため、該当するハッシュ値をすべて含める必要があります。
 
+<div id="step-3-excluded-app-versions-from-detection" />
+
 #### **ステップ3：検知対象から除外するアプリバージョンの指定**
 
 * Advanced Securityの検知対象から除外するアプリバージョンを追加します。通常は、次のようなバージョンが該当します。
   * Advanced Security Moduleを実装する前にリリースされたバージョン。
   * モジュールを含まないテスト用ビルドや旧ビルド。
 
+<div id="step-4-build-activation" />
+
 #### **ステップ4：ビルドの有効化**
 
 1. <strong>［ビルドを有効化（Activate build）］</strong>をクリックします。
 2. ビルドが完了するまでは、<strong>［処理中（In progress）］</strong>の状態になります。完了までに10～15分かかる場合があります。
 3. 完了後、ビルドの<strong>［コードをコピー（Copy code）］</strong>ボタンをクリックしてコードをコピーし、アプリのSDKに組み込めるよう開発者に共有します。 0>
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -102,6 +124,8 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 
 不正の手法は時間とともに変化し、不正行為者が検知の仕組みを解析しようとする場合もあります。定期的に設定を見直すことで、継続して効果を維持できます。
 
+<div id="when-to-update-the-configuration" />
+
 #### **設定を更新するタイミング**
 
 次のような状況が見られた場合は、設定を更新してください。
@@ -110,6 +134,8 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 * トラフィックの傾向が変化している
 * 新しいアプリバージョンがある、または証明書が変更されている
 * 既存の保護機能の効果が低下している
+
+<div id="what-you-can-update" />
 
 #### **更新できる項目**
 
@@ -120,6 +146,8 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 * Security Moduleの再ビルド・再配布
 * 公開状況に応じた検知モードの調整
 
+<div id="best-practices" />
+
 #### **推奨される運用方法**
 
 * Advanced Securityの分析結果を定期的に確認する
@@ -128,6 +156,8 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 * 新たな不正手法に対応できるよう、設定を定期的に見直す
 
 </Accordion>
+
+<div id="data-visibility" />
 
 ## **データの確認**
 
@@ -159,6 +189,8 @@ Advanced Security Moduleによる検知結果は、<strong>［アトリビュー
 
 Advanced Security Moduleは、Fraud Protection Studioのページで確認できます。
 
+<div id="how-to-access" />
+
 #### アクセス方法
 
 Advanced Security Moduleにアクセスするには、次の手順を実行します。
@@ -168,17 +200,23 @@ Advanced Security Moduleにアクセスするには、次の手順を実行し�
 3. ページ上部のアプリ選択ドロップダウンで、設定するアプリを選択します。
 4. 左側のメニューから、Advanced Security Moduleのカードを選択します。
 
+<div id="the-advanced-security-module-page" />
+
 #### 設定画面：Advanced Security Module
 
 <Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 Advanced Security Moduleのページは、3つのセクションで構成されています。
 
+<div id="detection-status" />
+
 ##### 検知モード（Detection status）
 
 * 検知モードを表示します。「ブロック有効」と「検知のみ」の2つの選択肢があります。デフォルトでは<strong>［検知のみ］</strong>に設定されています。
 
 注意：検知モードを変更するには、担当CSMにお問い合わせください。
+
+<div id="top-app-versions-by-detection-status" />
 
 ##### 検知状況別の上位アプリバージョン（Top app versions by detection status）
 
@@ -187,6 +225,8 @@ Advanced Security Moduleのページは、3つのセクションで構成され�
     * **未検知（Untagged）**：Advanced Security Moduleで検知されなかったインストール候補です。
     * **検知のみ（Tagged）**：Advanced Security Moduleが「検知のみ」モードで検知したインストール候補です。
     * **ブロック済み（Blocked）**：Advanced Security Moduleが「ブロック有効」モードで検知したインストール候補です。ブロックされたインストール候補は、その後の処理に進みません。
+
+<div id="insights" />
 
 ##### 分析結果（Insights）
 
@@ -200,33 +240,49 @@ Advanced Security Moduleのページは、3つのセクションで構成され�
 
 <Accordion title="よくある質問">
 
+<div id="what-is-advanced-security" />
+
 #### Advanced Securityとは何ですか？
 
 Advanced Securityは、AppsFlyerのAndroid SDKに追加できる保護機能です。実際のユーザーがアプリをインストールしたり利用したりしていないにもかかわらず、偽のインストールやイベントが報告される「アトリビューション偽装」を防ぐのに役立ちます。
+
+<div id="what-problem-does-advanced-security-solve" />
 
 #### Advanced Securityは、どのような問題を解決しますか？
 
 Advanced Securityは、偽装によってAppsFlyerに記録される一方、アプリストアやバックエンドシステムには存在しない、架空のインストールやアプリ内のアクティビティを防ぐのに役立ちます。これにより、インストール数の水増し、データの不一致、広告費の無駄を減らせます。
 
+<div id="what-is-attribution-spoofing" />
+
 #### アトリビューション偽装とは何ですか？
 
 アトリビューション偽装は、不正行為者が偽のインストールデータやアプリ内イベントデータを生成し、対象アプリから送信されたように装ってAppsFlyerに送信する不正手法です。実際のアプリのインストールやユーザーの行動は、発生していません。
+
+<div id="how-does-advanced-security-prevent-attribution-spoofing" />
 
 #### Advanced Securityは、アトリビューション偽装をどのように防ぎますか？
 
 Advanced Securityは、各リクエストに固有の検証用署名を追加することで、インストールやアプリ内イベントのデータが対象アプリのSDKから送信されたものであることを検証します。 AppsFlyerはこの署名を確認し、データが正当なものであり、偽装や改ざんが行われていないことを確かめます。
 
+<div id="does-advanced-security-affect-the-app-or-user-experience" />
+
 #### Advanced Securityは、アプリやユーザー体験に影響しますか？
 
 いいえ。 Advanced Securityはバックグラウンドで動作し、ユーザーによるアプリのインストール方法や利用方法を変えることはありません。追加の処理はバックグラウンドで行われるため、ユーザーが意識することはありません。
+
+<div id="who-should-use-advanced-security" />
 
 #### Advanced Securityは、どのようなアプリに適していますか？
 
 非SRNやアフィリエイトネットワークを多く利用するアプリ、アプリストアのインストール数とAppsFlyerのデータに原因不明の差があるアプリ、通常の方法では検知が難しい高度な不正が疑われるアプリに、特に適しています。
 
+<div id="is-advanced-security-available-for-all-platforms" />
+
 #### Advanced Securityは、すべてのプラットフォームで利用できますか？
 
 いいえ。 Advanced Securityは、現在Androidアプリのみを対象としており、Protect360のプレミアム顧客向けに提供されています。また、すべてのAppsFlyerプラグインに対応しています。
+
+<div id="how-do-i-know-advanced-security-is-working" />
 
 #### Advanced Securityが動作しているか、どのように確認できますか？
 

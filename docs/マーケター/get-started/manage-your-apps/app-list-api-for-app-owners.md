@@ -28,6 +28,8 @@ x-zendesk:
 
 **参考記事**：<Anchor target="_blank" href="/marketers/ja/docs/about-advertiser-apis">広告主向け API リスト</Anchor>
 
+<div id="get-app-list-api" />
+
 ## アプリリストの取得API
 
 以下のセクションに、API を使用するために必要な情報を記載しています。
@@ -59,6 +61,8 @@ GET https://hq1.appsflyer.com/api/mng/apps
 | クエリパラメーター | 説明 |
 | --- | --- |
 |  | この API には必須のクエリパラメーターはありません |
+
+<div id="pagination-mechanism" />
 
 #### **ページネーションの仕組みについて**
 

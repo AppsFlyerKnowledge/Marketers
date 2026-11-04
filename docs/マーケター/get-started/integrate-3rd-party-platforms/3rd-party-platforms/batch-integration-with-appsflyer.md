@@ -32,7 +32,11 @@ Batchでは、ユーザーごとに最適な体験を提供しながら、ユー
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 
+<div id="integrating-batch-and-appsflyer" />
+
 ## BatchとAppsFlyerを連携する
+
+<div id="setting-customer-user-id" />
 
 ### カスタマーユーザーIDの設定
 
@@ -114,6 +118,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 </Tab>
 </Tabs>
 
+<div id="setting-up-batch" />
+
 ### Batchの設定
 
 **前提条件：** パートナーのアカウントが必要です。アカウントがない場合は、連携を設定する前にパートナーに連絡し、アカウントを開設してください。
@@ -134,10 +140,14 @@ Batchの設定で使用するのは、<strong>［連携］</strong>タブのみ�
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めて設定する場合**は、<strong>［パートナーを有効化］</strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -146,6 +156,8 @@ Batchとの連携を設定する前に、**Batch Rest API Key**と**Batch API Ke
 2つのキーを取得したら、それぞれ対応するフィールドに入力します。<strong>［一般設定］</strong>で、**Batch Rest API Key**を**BATCH\_REST\_API\_KEY**フィールドに、**Batch API Key**を**BATCH\_API\_KEY**フィールドに入力します。
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -188,6 +200,8 @@ Batchでは、計測リンクは利用できません。
 Batchでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="viewing-appsflyer-data-in-the-batch-dashboard" />
 
 ## Batch管理画面でAppsFlyerのデータを確認する
 

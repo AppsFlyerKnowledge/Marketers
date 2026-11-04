@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 共有データを使用してDCPコラボレーションで値の高いオーディエンス構築し、メディアパートナーサイトまたはクラウドサービスでオーディエンスを活性化することで、キャンペーンインパクト最大化できます。
 
+<div id="about-dcp-audiences" />
+
 ## DCP オーディエンスについて
 
 データセットを組み合わせて充実したオーディエンスセグメントを作成し、特定の消費者グループにリーチすることで、DCPコラボレーションでオーディエンスを構築します。オーディエンスは、ソース所有者が定義した権限に基づいて、1人の共同編集者のデータに基づいて作成することも、両方の共同編集者のデータセットにわたる交差するユーザーに基づいて作成することもできます。オーディエンスを構築したら、メディアパートナーに送信してアクティベーションを行ったり、クラウドストレージバケットに送信したりできます。
+
+<div id="build-an-audience" />
 
 ## 視聴者を増やす
 
@@ -31,6 +35,8 @@ x-zendesk:
 
 * [ビジュアルオーディエンスビルダー](/docs/data-collaboration-platform-dcp-build-and-activate-audiences#visual-audience-builder)-ビジュアルオーディエンスビルダーはユーザーフレンドリーなツールで、技術に詳しくないユーザーでも SQL スキルがなくてもオーディエンスセグメントを作成できます。グラフィカルインターフェイスを使用して、高度なオーディエンスセグメンテーションが可能です。
 * [SQL オーディエンスビルダー](#sql-audience-builder) (SQL の専門知識が必要)-制限なくデータをクエリできる SQL クエリ。SQLの専門知識が必要です。
+
+<div id="key-features" />
 
 #### 主な機能
 
@@ -48,6 +54,8 @@ x-zendesk:
 
 **Visual Audience Builder を使用してオーディエンスを構築する手順は、次のとおりです。**
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > オーディエンスを作成するには、オーディエンス<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-sharing-permissions">作成する権限があることを確認してください</Anchor>。
@@ -64,6 +72,8 @@ x-zendesk:
    <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 次の**オーディエンスビルダー**のウォークスルー手順に進みます。
 
+<div id="step-1-details-and-sources" />
+
 #### ステップ1：詳細とソース
 
 オーディエンスは、単一のコラボレーターからのデータを使用して作成するか、各コラボレーターから1つのソースをマージして結合されたデータソースを有効にすることで作成できます。
@@ -74,6 +84,8 @@ x-zendesk:
 2. ソースを選択ドロップダウンリストからソースを選択します。
    * 一方的なコラボレーションの場合：独自のソースまたはコラボレーターのソースのいずれかを選択します。
    * 双方向コラボレーションの場合：独自のソースとコラボレーターのソースのいずれかを選択します。
+
+     <div id="note-1" />
 
      > 📘 **注意**
      >
@@ -90,6 +102,8 @@ x-zendesk:
      <Image alt="arrow.png で有効になっているすべてのデータ権限を使用できます" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. **次へ**をクリックします。
 
+<div id="step-2-define-the-audience" />
+
 #### ステップ2：オーディエンスを定義
 
 データソースを選択したら、このステップではオーディエンスに含める属性と値を選択します。
@@ -102,6 +116,8 @@ x-zendesk:
    * **テキスト属性**は、次の演算子でフィルタできます。  
      等しい、または等しくない
 
+     <div id="note-2" />
+
      > 📘 **注意**
      >
      > * 属性が選択されていない場合、デフォルトですべての属性が含まれます。
@@ -113,6 +129,8 @@ x-zendesk:
 5. 次のステップに進みます [オーディエンスを送信](#オーディエンスを送信してアクティベーションを行う)してオーディエンスを有効にします 。
 
 <Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+
+<div id="summary-right-side-preview-pane" />
 
 #### 概要 (右側のプレビューペイン)
 
@@ -166,9 +184,13 @@ DCP では、オーディエンスサイズを最小から最大までの範囲�
 
 ![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > メディアパートナーによってマッチ率が異なるため、メディアパートナー側のアクティブオーディエンスは、送信するオーディエンスよりも少ない場合があります。
+
+<div id="working-with-transactional-data-sources" />
 
 #### トランザクションデータソースでの作業
 
@@ -191,6 +213,8 @@ DCP では、オーディエンスサイズを最小から最大までの範囲�
 
 **SQL オーディエンスビルダーを使用してオーディエンスを構築するには、以下の手順に従います。**
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > オーディエンスを作成するための<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">オーディエンス作成</Anchor>権限があることを確認してください。
@@ -206,14 +230,20 @@ DCP では、オーディエンスサイズを最小から最大までの範囲�
    <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. **オーディエンスビルダー**のウォークスルー手順に進みます。
 
+<div id="set-details" />
+
 #### 詳細の設定
 
 オーディエンスに名前を付け、**[Next**]をクリックします。
+
+<div id="build-query" />
 
 #### クエリを作成
 
 1. エディタをクリックして開きます [SQL ビルダー](#sql-audience-builder)。
 2. SQLクエリを作成してオーディエンスを構築します。を利用できます 結合ソースまたは片側ソース。
+
+<div id="note-5" />
 
 > 📘 **注意**
 >
@@ -222,6 +252,8 @@ DCP では、オーディエンスサイズを最小から最大までの範囲�
 3. 「**テスト**」をクリックして、クエリの結果を確認します。 （オーディエンスサンプル）はクエリステートメントの下に表示されます。
 4. [**続行**] をクリックし、[**次へ**] をクリックします to **オーディエンスビルダーの次のステップに進む** チュートリアル、**または下書きとして保存して履歴書** 後で
 5. 続けて [聴衆を送ってください](#オーディエンスを送信してアクティベーションを行う)。
+
+<div id="the-sql-audience-builder" />
 
 #### SQLオーディエンスビルダー
 
@@ -233,6 +265,8 @@ SQL ビルダーを使用してデータをクエリし、オーディエンス�
 | <span id="topmiddle-section-text-editor"></span>上部中央セクション（クエリエディタ） | SQL ステートメントを記述するためのクエリエディタ。 |
 | <span id="bottommiddle-section-context-panel"></span>下部中央セクション（コンテキスト パネル） | このセクションでは、左側のペインから選択したオブジェクトに基づいて、詳細が動的に表示されます。<ul><li>**ソースの選択時：** 列名 ("Field name") とそれに対応する型 ("Type") を表示します。</li><li>**列が選択されている場合：** 列の値（"Distinct values"）と各値（"Count"）の行数を表示します。</li><li>**次のクエリ実行：** クエリ結果のサンプルを表示します。<br />**注：** プライバシー保護のため、結果表には電子メールや ID などのハッシュ値は表示されません。これらの値は「制限付き」として表示されます。</li></ul> |
 | <span id="right-pane"></span>右のセクション： | このセクションでは、選択したオブジェクトに基づいて詳細が動的に表示されます。<ul><li>**ソースの選択時：** ソースに付与された権限を表示します。</li><li>**SQLクエリの書き込み中：**<ul><li>ページの右上にクエリの有効性ステータスを表示します。これには、次のいずれかのステータスが含まれます。</li><li>**実行する準備はできましたか：** 問題は見つかりませんでした。クエリをテストして、次のステップに進むことができます。</li><li>**構文エラー：** 構文エラーと、その解決に関するガイダンスが検出されました。</li><li>**権限エラー:** 必要な権限がないことを示し、<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#view-permissions-for-collaborator%E2%80%99s-source">ソースに提供されているアクセス</Anchor>の詳細を示すツールチップが表示されます。</li><li>ページの右上に [**テスト**] ボタンを表示します。クエリの作成が完了したら、クエリテストして、対象読者の正確さを確認する必要があります。<br />**［Test］** をクリックしてクエリをテストし、結果を検証します。</li></ul></li></ul> |
+
+<div id="transactional-data-in-sql-queries" />
 
 #### SQL クエリのトランザクションデータ
 
@@ -255,12 +289,16 @@ SQL ビルダーでトランザクションデータソースを操作する場�
 
 </Accordion>
 
+<div id="send-an-audience-for-activation" />
+
 ## オーディエンスを送信してアクティベーションを行う
 
 オーディエンスを構築したら、結果を出すことができる場所でオーディエンスをアクティブにします。<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#共有権限">キャンペーンターゲティング用のメディアパートナーやダウンストリーム用のクラウドストレージバケットなどの宛先を選択すると、DCPは最新のソースデータと権限に基づいてオーディエンスを毎日更新して配信します。</Anchor>
 
 * [**オーディエンスをメディアパートナーにつなげる**](#connect-an-audience-to-media-partners)-メディアパートナーのプラットフォームには、Meta 広告、Google 広告などがあります。有料キャンペーン、リマーケティング、類似キャンペーンを実施する際に、オーディエンスをメディアパートナーに接続します。
 * [**オーディエンスをクラウドストレージにエクスポート**](#export-to-cloud-storage)-ビジネスインテリジェンスモデル、CDP、または内部エンリッチメントパイプラインでファイルが必要なときに、オーディエンスをクラウドストレージに接続します。
+
+<div id="note-6" />
 
 > 📘 **注意**
 >
@@ -272,6 +310,8 @@ SQL ビルダーでトランザクションデータソースを操作する場�
 <Accordion title="オーディエンスをメディアパートナーに連携">
 
 Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google 広告など</Anchor>、お好みのメディアパートナープラットフォームにオーディエンスを直接送信してアクティベーションを行います。システムは、パートナーが必要に応じて自動的にハッシュ化されたユーザーIDのCSVを転送します。
+
+<div id="note-7" />
 
 > 📘 **注意**
 >
@@ -303,6 +343,8 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
 
 オーディエンスをクラウドストレージバケットに直接送信します。オーディエンスが更新されるたびに、DCP は選択した宛先に最新バージョンを自動的にエクスポートします。また、オーディエンスはいつでもCSVファイルとしてダウンロード。
 
+<div id="note-8" />
+
 > 📘 **注意**
 >
 > エクスポートする前に、クラウドストレージバケットが設定され、DCP に接続されていることを確認してください。手順については、「<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">クラウドサービスのセットアップ</Anchor>」と「<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-add-connections">接続の追加</Anchor>」を参照してください。
@@ -315,6 +357,8 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
 3. **Save & send** をクリックします。
 
 </Accordion>
+
+<div id="manage-audiences" />
 
 ## オーディエンスの管理
 

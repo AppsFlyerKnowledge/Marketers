@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## パートナー連携について
 
 パートナー連携では、そのパートナー経由で配信するキャンペーンのクリエイティブを、<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide">Creative Optimization</Anchor>へスムーズかつ継続的に取り込みます。
+
+<div id="data-availability" />
 
 ### データの利用開始と更新
 
@@ -37,9 +41,13 @@ x-zendesk:
 * 過去90日間のクリエイティブデータとAppsFlyerのパフォーマンスデータを遡って取得します。通常、24時間以内にCreative Optimizationでデータを確認できるようになります。
 * その後も、連携済みパートナーから毎日2回、継続的にクリエイティブデータを取得します。取得したデータを取り込み、アトリビューション、広告費、クリック、インプレッション、収益などのAppsFlyerのパフォーマンスデータと照合します（AppsFlyerのパフォーマンスデータは1時間ごとに更新されます）。 **Creative Optimizationダッシュボードは、上記のすべての処理で得られたデータをまとめて表示し、1日1回更新されます（UTC＋10）**（過去90日間のすべてのクリエイティブデータが更新されます）。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyerのコストデータ（ROASなど）を見るには、<Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview">ROI360のご契約</Anchor>が必要です。
+
+<div id="media-partner-integrations" />
 
 ## メディアパートナーとの連携
 
@@ -119,6 +127,8 @@ x-zendesk:
 4. プロモーション対象のアプリを選択します。
 5. AppLovinの**アカウントID**、**キャンペーン管理APIキー**、**レポートAPIキーを入力します。**
 6. 続いて**保存**をクリックします。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -436,6 +446,8 @@ x-zendesk:
 6. ログインを完了し、権限を付与します。 AppsFlyerがすべてのデータを取得できるよう、必要な権限をすべて付与することをお勧めします。
 7. **保存**をクリックします。
 
+<div id="notes" />
+
 > 📘 **注意**
 >
 > * 2023年1月30日に、新しい**TikTok for Business—アドバンスSRN**連携`tiktokglobal_int`が追加されました。一方、**［旧］TikTok for Business**連携`bytedanceglobal_int`は段階的に縮小され、2024年3月までに廃止される予定です。詳細：<Anchor target="_blank" href="/marketers/ja/docs/bulletin-tiktok-for-business-advanced-srn">TikTokアドバンスSRN連携に関するお知らせ</Anchor>
@@ -466,6 +478,8 @@ x-zendesk:
 
 **注意：** これらのロールを利用できない場合は、Unity Adsのカスタマーサクセスマネージャーにお問い合わせください。
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### 認証情報の取得方法
 
 **キーIDとシークレットキーを取得するには：**
@@ -489,6 +503,8 @@ x-zendesk:
    ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
 5. **組織コアID**をコピーします。
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **サービスアカウント（組織）ロールの選択方法：**
 
 1. Unityの管理画面で、**Administration**をクリックします。  
@@ -506,6 +522,8 @@ x-zendesk:
 5. **保存**をクリックします。
 
 **注意：** これらのロールにアクセスできない場合は、Unityのカスタマーサクセスマネージャーに問い合わせるか、[unityads-support@unity3d.com](mailto:unityads-support@unity3d.com)までメールを送り、必要な権限を申請してください。
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Creative OptimizationダッシュボードにUnity連携を追加するには：**
 
@@ -570,6 +588,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="creative-integrations-dashboard" />
@@ -593,6 +613,8 @@ x-zendesk:
 
 <Accordion title="代理店との連携">
 
+<div id="add-an-agency-integration" />
+
 #### 代理店連携の追加
 
 クリエイティブダッシュボードに代理店パートナーのデータを取り込むことができます。
@@ -615,6 +637,8 @@ x-zendesk:
 * ダッシュボードにクリエイティブデータを表示したい代理店ごとに、「代理店」チェックボックスを選択した個別のパートナー連携を作成する必要があります。
 * 運用媒体の開示設定が有効な代理店のデータのみ利用できます。<Anchor target="_blank" href="/marketers/ja/docs/view-agency-data">詳細はこちら</Anchor>
 * この連携で取得するクリエイティブデータは、対象の代理店のデータのみです。つまり、上記の例のようにパートナーとしてGoogle Adsを選択した場合でも、Google Adsで直接キャンペーンを実施している場合は、Google Ads用に追加のパートナー連携を作成する必要があります。
+
+<div id="grant-dashboard-access-to-an-agency" />
 
 #### 代理店へのダッシュボードのアクセス権付与
 

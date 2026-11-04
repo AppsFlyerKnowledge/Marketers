@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要**：アプリ内イベントとアクティビティの画面で利用可能なフィルタとグループ化の選択肢
 
+<div id="advanced-filter-by-and-group-by-options-in-dashboards" />
+
 ## 管理画面上での様々なフィルタとグループ化の選択肢
 
 * フィルター
@@ -33,6 +35,8 @@ x-zendesk:
 * **ドリルダウン：** 広告セットと広告レベルのデータ
 
 様々な選択肢を使って管理画面上のデータをフィルタリングとグループ化することで、アプリの最も正確で関連性の高いデータを確認できるようになります。
+
+<div id="filter-by-options" />
 
 ## フィルタの選択肢
 
@@ -55,6 +59,8 @@ AppsFlyerには、データを絞り込み、最も関連性の高い情報を�
 また、[**国**]のドロップダウンリストを使用して特定の国を選択し、その地域のみのデータを表示することも可能です。
 
 ![](https://files.readme.io/e10b0f2c135d2a9e28fd5c3d7b9148f047400b29ebeb57ee4445cebe95837b0a-51444182095889.png)
+
+<div id="group-by-options" />
 
 ## グループ化の選択肢
 
@@ -85,6 +91,8 @@ AppsFlyerには、データを絞り込み、最も関連性の高い情報を�
 
 **サイト ID**を選択すると、表示されるデータはサイト ID のフィルタの設定内容に基づきます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > サイトIDのデータは、2016年5月16日以降のデータから利用可能です。
@@ -99,6 +107,8 @@ AppsFlyerには、データを絞り込み、最も関連性の高い情報を�
 
 ![](https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png)
 
+<div id="advanced-filtering" />
+
 ## 様々なフィルタ
 
 様々なフィルタを利用したい際には、![](https://files.readme.io/278e2ad18a60859c446a7a5a6cbc708c012b2200d01c1886c17a662816d1ff27-206127343.png)をクリックしてください。
@@ -107,6 +117,8 @@ AppsFlyerには、データを絞り込み、最も関連性の高い情報を�
 
 ![](https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png)
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > キャンペーン/チャンネルを選択してもメディアソースを選択していないと、まず最初にメディアソースを選択する必要があることを示すアラートが表示されます。
@@ -114,6 +126,8 @@ AppsFlyerには、データを絞り込み、最も関連性の高い情報を�
 ![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
 
 結果が表示されると、フィルタのアイコンの色が青から緑に変わります。![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
+
+<div id="example-user-story" />
 
 ## 利用例
 

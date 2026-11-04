@@ -30,9 +30,13 @@ x-zendesk:
 * 変更点
 * 1月18日
 
+<div id="before-the-change" />
+
 #### 変更前
 
 N/A
+
+<div id="after-the-change" />
 
 #### 変更後
 
@@ -43,6 +47,8 @@ N/A
   * コンバージョン
   * リエンゲージメント VS リアトリビューション
   * 収益
+
+<div id="what-you-need-to-do-to-prepare-for-the-change" />
 
 #### この仕様変更に対する準備について：
 

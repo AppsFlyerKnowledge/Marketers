@@ -25,15 +25,21 @@ x-zendesk:
 
 > **概要:** AmplitudeのコホートをインポートされたオーディエンスとしてAppsFlyerに同期することで、ファーストパーティデータを活用しましょう。
 
+<div id="about-the-amplitude-integration" />
+
 ## Amplitude連携について
 
 **AppsFlyer Audiences-Amplitude連携**を利用すれば、Amplitudeアカウントで定義したコホートを<Anchor target="_blank" href="/marketers/ja/docs/audiences-import-audience-segments-from-internal-systems">インポートされたオーディエンス</Anchor>として直接AppsFlyerに同期することができます。AppsFlyerは、これらのオーディエンスセグメントをパートナーと接続し、キャンペーンの指標を確認し、AmplitudeとAppsFlyerのデータをリンクして、効果的に活用するための一元的な場所として機能します。
 
 Amplitudeのコホートは、一度きりの同期または毎日や毎時間の更新が可能なスケジュール同期としてAppsFlyerと同期できます。
 
+<div id="setting-up-the-integration" />
+
 ## 連携の設定
 
 Amplitudeプラットフォーム内でAudiences-Amplitude連携を設定します。
+
+<div id="define-appsflyer-data-destinations" />
 
 ### AppsFlyerデータの送信先を定義する
 
@@ -56,6 +62,8 @@ Amplitudeプラットフォーム内でAudiences-Amplitude連携を設定しま�
 | 識別子 | AmplitudeデータをAppsFlyerデータに接続する方法を指示するために、左側でAmplitudeユーザープロパティを選択し、右側でそれをマッピングするAppsFlyerキーを選んでください。選択するAppsFlyerキーは、次のいずれかでなければなりません。<ul><li>**iOSオーディエンスの場合:** iOS広告主ID、AmplitudeユーザーID、またはAppsFlyer顧客ユーザーID</li><li>**Androidオーディエンス向け:** Google広告主ID、AmplitudeユーザーID、またはAppsFlyer顧客ユーザーID</li></ul> |
 
 4. 新しいAppsFlyerの宛先を保存するには、**保存** をクリックしてください。
+
+<div id="sync-amplitude-cohorts-to-appsflyer-destinations" />
 
 ### AmplitudeコホートをAppsFlyerの宛先に同期する
 

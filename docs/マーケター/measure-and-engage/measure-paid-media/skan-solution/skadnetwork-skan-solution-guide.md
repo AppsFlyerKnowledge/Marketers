@@ -31,6 +31,8 @@ x-zendesk:
 
 AppleのiOSに組み込まれているSKAdNetwork（SKAN）を使用すると、広告主はユーザーのプライバシーを保護しながら、キャンペーンの成果を計測できます。 SKANは、IDFAなどの広告IDを使用せずに動作します。 SKANの動作にATTの同意は必要ありません。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > * iOS15以降では、<Anchor target="_blank" href="/marketers/ja/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">SKANポストバックのコピー</Anchor>をAppsFlyerに送信することを推奨します。これにより、AppsFlyerはポストバック内のコンバージョン値が改ざんされていないことを確認できます。
@@ -51,6 +53,8 @@ AppleのiOSに組み込まれているSKAdNetwork（SKAN）を使用すると、
 
 この記事では、SKANの仕組みとAppsFlyerのソリューションについて、主な仕様を説明します。計測の設定については、<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>を参照してください。
 
+<div id="about-apple-skan" />
+
 <Accordion title="AppleのSKANについて">
 
 | 項目 | 説明 |
@@ -63,6 +67,8 @@ AppleのiOSに組み込まれているSKAdNetwork（SKAN）を使用すると、
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## AppsFlyerのSKANソリューション
 
 AppsFlyerは、iOSからのSKANポストバックを使用して、iOSのアトリビューション結果を集計して提供します。これらのポストバックは、iOSからアドネットワークに送信され、その後AppsFlyerに転送されます。ポストバックには、広告主が設定したCVを含む、匿名化されたアトリビューションレコードが格納されています。 CVは、インストール直後の一定期間におけるユーザーの質を示す値です。
@@ -73,7 +79,11 @@ AppsFlyerのSKANソリューションは、広告主に以下を提供します�
 * AppsFlyer Conversion Studioで、アプリのコードを変更せずにCVの計測内容を設定できます。 CVでは、収益、エンゲージメント、コンバージョンイベントを計測できます。  
   **注意：** CVの設定は、AppsFlyer SDKだけが行うようにしてください。 CVを設定する別のSDKがアプリに実装されていないことを確認してください。
 
+<div id="principles-and-flow" />
+
 <Accordion title="原則と処理の流れ">
+
+<div id="skan-attribution-flow" />
 
 #### **SKANアトリビューションの流れ**
 
@@ -103,6 +113,8 @@ AppsFlyerのSKANソリューションは、SKAdNetworkの仕組みに伴う機�
 
 </Accordion>
 
+<div id="conversion-studio" />
+
 <Accordion title="Conversion Studio">
 
 AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">Conversion Studio</Anchor>は、SKANソリューションの中核となる機能です。 CVの各ビットを無駄なく活用できるよう、柔軟に設定できます。インストール後のどの行動をどのくらいの期間計測するかなど、CVに反映する計測データを細かく指定できます。 CVの設定には、複数の計測モードを使用できます。
@@ -118,7 +130,11 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-stu
 
 </Accordion>
 
+<div id="additional-skadnetwork-information" />
+
 ## SKAdNetworkの補足情報
+
+<div id="reporting-options" />
 
 <Accordion title="レポートの種類">
 
@@ -133,6 +149,8 @@ SKAdNetworkレポートには、ユーザーレベルの識別子は含まれま
 
 </Accordion>
 
+<div id="skadnetwork-solution-implementation-checklist" />
+
 <Accordion title="SKAdNetworkソリューション導入チェックリスト">
 
 | 番号 | 作業 | 説明 | 担当 |
@@ -144,6 +162,8 @@ SKAdNetworkレポートには、ユーザーレベルの識別子は含まれま
 
 </Accordion>
 
+<div id="troubleshooting-guide" />
+
 <Accordion title="トラブルシューティングガイド">
 
 | 症状 | 説明 |
@@ -154,6 +174,8 @@ SKAdNetworkレポートには、ユーザーレベルの識別子は含まれま
 | 地域（国）の情報が実際と異なる | 地域データは、以下の情報から取得されます。<ul><li>アドネットワークがAppsFlyerに報告した、キャンペーンに紐づく国。</li><li>デバイスのIPアドレス。 iOS14.6以降では、このアドレスはプロキシのアドレスであり、ユーザーの実際の所在地を示すものではありません。</li></ul> |
 
 </Accordion>
+
+<div id="timing-from-app-install-until-dashboard-and-reports-update" />
 
 <Accordion title="アプリのインストールからダッシュボード・レポートの更新までの時間">
 
@@ -172,6 +194,8 @@ SKAdNetworkレポートには、ユーザーレベルの識別子は含まれま
 
 </Accordion>
 
+<div id="organic-metrics-in-the-context-of-skadnetwork" />
+
 <Accordion title="SKAdNetworkにおけるオーガニック指標">
 
 SKAdNetworkダッシュボードのオーガニック指標は、以下の仕組みで算出されます。
@@ -188,6 +212,8 @@ SKAdNetworkダッシュボードのオーガニック指標は、以下の仕組
 **Apple Adsに関する注意点**：従来のダッシュボードでは、Apple Adsが獲得したインストールはノンオーガニックに分類されます。ただし、SKAdNetworkではオーガニック指標に含まれます。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 <Accordion title="仕様と制限事項">
 
@@ -207,7 +233,11 @@ SKAdNetworkダッシュボードのオーガニック指標は、以下の仕組
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## SKANの連携済みパートナー
+
+<div id="recording-ad-revenue" />
 
 <Accordion title="広告収益の記録">
 
@@ -222,6 +252,8 @@ SKANダッシュボードに広告収益を記録する手順：
 
 </Accordion>
 
+<div id="sending-postbacks-to-integrated-partners" />
+
 <Accordion title="連携済みパートナーへのポストバック送信">
 
 AppsFlyerは、連携済みパートナーにSKANアトリビューションのポストバックを送信します。SKAN 4では、ウィンドウ1のポストバックのみを送信します。
@@ -234,6 +266,8 @@ AppsFlyerは、連携済みパートナーにSKANアトリビューションの�
 | アプリ内イベントのマッピング確認 | **必要な対応**：パートナーがポストバックを正しく記録できるよう、<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#マッピング方法">アプリ内イベントを、対応するパートナー側のイベント名にマッピング</Anchor>する必要があります。<br /><br />SKAdNetworkキャンペーンを実施する各パートナーについて、アプリで選択した計測タイプに合わせて、アプリ内イベントが設定されていることを確認します。<br /><br />**パートナーへのアプリ内イベントのマッピングを確認・変更する手順**：<ol><li>AppsFlyerで、**［連携］**＞<strong>［有効な連携］</strong>に移動します。</li><li>パートナーを選択します。</li><li><strong>［連携］</strong>タブに移動します。</li><li>以下の設定を確認し、必要に応じて変更します。<ol><li><strong>［アプリ内イベントポストバック］</strong>をオンにします。</li><li>SKAdNetwork計測で設定したアプリ内イベントの**SDKイベント名**が、**パートナー側のイベント名／ID**にマッピングされていることを確認します。</li></ol></li><li><strong>［連携を保存］</strong>をクリックします。</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

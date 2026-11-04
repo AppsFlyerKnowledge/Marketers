@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **概要：** 詳細なキーワードデータで、よく使われる検索語句を把握し、オーガニックのコンバージョンを最適化できます。
 
+<div id="keyword-data" />
+
 ## キーワードデータ
 
 オーガニック検索は、アプリにとって価値の高い流入元です。オーガニックユーザーは獲得コストがかからず、通常、エンゲージメントの高いコホートの1つです。
 
 アプリページを少し調整することで、新規のオーガニックインストールを増やせる可能性があります。オーガニック検索を最適化するには、アプリのオーガニック検索のキーワードデータを取得する必要があります。
 
+<div id="ios-keywords" />
+
 ### iOSのキーワード
 
 Apple Adsを利用している場合、Apple Adsに紐付く**ノンオーガニック**ユーザーの<Anchor target="_blank" href="/marketers/ja/docs/apple-ads-integration-setup#get-keyword-data">詳細なキーワードデータ</Anchor>を取得できます。 iOSでは、**オーガニック検索**のキーワードデータは取得できません。
+
+<div id="android-keywords" />
 
 ### Androidのキーワード
 
@@ -47,9 +53,13 @@ Google Playへのリンクの一部として、Googleがリファラの*&utm\_te
 
 それ以外の場合、Googleはオーガニック検索のキーワードデータを共有しません。たとえば、Google Play内で検索したユーザーのオーガニック検索キーワードデータは取得できません。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > この制限は、すべてのアトリビューション事業者を含む、すべての外部事業者に対してGoogleが適用しています。
+
+<div id="using-thekeyworddata" />
 
 ### キーワードデータの活用
 
@@ -61,6 +71,8 @@ Google Playへのリンクの一部として、Googleがリファラの*&utm\_te
   <Anchor target="_blank" href="/marketers/ja/docs/pivot-table-user-metrics">ピボット</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/cohort-and-retention-dashboard">リテンション、コホート</Anchor>のレポートに移動し、キーワードでグループ化します。  
   キーワードごとにオーガニックユーザーの質を比較します。
 * <Anchor target="_blank" href="/marketers/ja/docs/push-api-streaming-raw-data">Push API</Anchor>のメッセージ
+
+<div id="testing-organickeyworddata" />
 
 ### オーガニック検索のキーワードデータのテスト
 

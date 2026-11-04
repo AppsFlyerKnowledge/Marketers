@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## AppsFlyerのクロスプラットフォームソリューション
 
 多くのがマーケターは、今日のデジタル環境において 複数のデバイスやプラットフォームで消費者にリーチするという課題に直面しています。従来の計測アプローチでは、複数のプラットフォームにまたがるユーザージャーニーの全容を十分に捉えることができません。クロスプラットフォームの計測は、マーケティング活動の影響を理解し、情報に基づいた意思決定を行うために不可欠です。
@@ -36,6 +38,8 @@ AppsFlyerは、従来のモバイルアトリビューションツールを補�
 広告主は、広告が表示される同一の、または異なるプラットフォーム上でアプリをプロモーションできます。例えば、広告主はSteamのプラットフォーム上でSteamアプリの広告を表示することができます。または、デスクトップのウェブ（Google Adsなど）に Steamアプリの広告を配信することもできます。<span id="tv-screens"></span>CTVキャンペーンでは、特にテレビの画面やテレビのようなディスプレイで広告を配信します。
 
 マーケティング戦略が何であれ、CTV、PC、コンソールプラットフォームのアプリインストールとインストール後のイベントを促進するソース（非オーガニックまたはオーガニック）とキャンペーンに関するアトリビューションデータとパフォーマンスの計測を受信するために、広告主はAppsFlyerと連携します。マーケターはこれらのインサイトを使用して LTV（顧客生涯価値）を計算し、マーケティング活動を測定および最適化します。<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model">AppsFlyer のアトリビューションについて詳しくはこちらをご覧ください</Anchor>
+
+<div id="supported-platforms" />
 
 ### サポートされているプラットフォーム
 
@@ -50,6 +54,8 @@ CTV、PC、コンソールのプラットフォームに広告を表示し、ク
 1. AppsFlyer管理画面左メニュー **連携** > **パートナーマーケットプレイス**へ移動します。
 2. **対応機能**フィルターをクリックし、**クロスプラットフォーム**を選択します。
 
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
+
 ### 特定のCTV / PC / コンソールプラットフォームに対応するアドネットワークを選択
 
 特定のCTV、PC、コンソールプラットフォームに広告を表示できるアドネットワークのリストは、 <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?supportedPlatforms=EPIC%2CNATIVEPC%2CPLAYSTATION%2CQUEST%2CSTEAM%2CSWITCH%2CXBOX">AppsFlyerパートナーマーケットプレイス</Anchor>をご覧ください。
@@ -58,6 +64,8 @@ CTV、PC、コンソールのプラットフォームに広告を表示し、ク
 
 1. AppsFlyer管理画面左メニュー **連携** > **パートナーマーケットプレイス**へ移動します。
 2. **対応機能**フィルターをクリックし、CTV / PC / コンソール を選択します。
+
+<div id="cross-platform-attribution-flows" />
 
 ## クロスプラットフォームのアトリビューション計測フロー
 
@@ -159,6 +167,8 @@ SRNへのアトリビューションは、決定論的マッチングによっ�
 * <Anchor target="_blank" href="/marketers/ja/docs/cross-platform-landing-pages-with-smart-script">スマートスクリプトでクロスプラットフォームのランディングページを設定する方法はこちら</Anchor>
 
 </Accordion>
+
+<div id="data-availability" />
 
 ## データの可用性
 

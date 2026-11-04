@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** Adquant by Kenshooを使用してGoogle AdWordsキャンペーンを最適化します。設定が完了すると、AppsFlyerからAdquantにポストバックが送信されます。
 
+<div id="setting-up-adquant-by-kenshoo" />
+
 ## Adquant by Kenshooの設定
 
 **前提条件：** 連携を設定する前に、パートナーに連絡して、パートナー側でアカウントを開設してください。
@@ -42,6 +44,8 @@ x-zendesk:
 
 AppsFlyerで、［**コラボレーション>パートナー連携>アクティブな連携**］タブに移動し、パートナーを検索して設定を変更します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Google Adsのお客様IDは、ハイフンを**含めずに**入力する必要があります。
@@ -52,6 +56,8 @@ AppsFlyerで、［**コラボレーション>パートナー連携>アクティ�
 
 7. Adquantから提供された**Action Identifier**と**Disable\_Country\_Sending**、および**Google Adsのお客様ID**をそれぞれの欄に入力します。
 
+<div id="in-app-events" />
+
 ### アプリ内イベント
 
 1. Adquant by Kenshooにアプリ内イベントのポストバックを送信するには、［アプリ内イベントポストバック］トグルを**オン**にします。
@@ -61,6 +67,8 @@ AppsFlyerで、［**コラボレーション>パートナー連携>アクティ�
 3. ［**収益を送信**］を選択すると、収益値（イベントに含まれる場合）を含むすべてのパラメータが送信されます。
 
 4. ［**保存**］をクリックします。
+
+<div id="important-note" />
 
 > 📘 **重要な注意事項**
 >

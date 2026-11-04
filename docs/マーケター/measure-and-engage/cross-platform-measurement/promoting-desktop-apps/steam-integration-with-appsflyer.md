@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **概要： 概要： SteamゲームやアプリをAppsFlyerと連携し、Steamキャンペーンのアトリビューションやイベントデータを受け取ります。**
 
+<div id="about-steam-attribution" />
+
 ## Steamのアトリビューション計測について
 
 Steamは、WindowsおよびMacデバイス、Steamデッキ、およびその他のSteam OSデバイスで動作します。
 
 PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと連携し、どのソースやキャンペーンがアプリ起動イベントやアプリ内イベントを促進したかに関するアトリビューションデータやパフォーマンス測定値を受け取ることができます。マーケターは、これらのインサイトを活用してマーケティング活動を測定および最適化できます。
+
+<div id="example-attribution-flow" />
 
 ### アトリビューションフローの例
 
@@ -40,6 +44,8 @@ PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと�
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
 3. <span id="marketing-touchpoint"></span>Steamアプリページこれは、ユーザーがダウンロードできるSteamアプリをホストするSteamストアフロントページです。
 4. ゲームのインストールゲームのインストール： ユーザーがゲームをインストールし、アトリビューションをトリガーし、アプリ内イベントとセッションを記録します。
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -165,12 +171,18 @@ PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと�
 </Table>
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 特性と制限
 
 | 特性 | 備考 |
 | --- | --- |
 | リターゲティング | 現在サポートされていません |
 | コストデータ | コスト（広告費）データは、メールによるアップロードファイルを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">広告費用の取り込み</Anchor>で送信する必要があります。 |
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

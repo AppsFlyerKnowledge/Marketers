@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** iOSデバイスのユーザーがOneLinkカスタムリンクをクリックしても、Universal Linksでアプリが開かない場合の動作を説明します。
 
+<div id="about-uri-fallback-for-ios" />
+
 ## iOSでのURIスキームによる代替起動について
 
 * iOSデバイスでアプリを開く方法として、最も広くサポートされているのはUniversal Linksです。 2016年以降、iOSのUniversal Linksでアプリが開かない場合に、URIスキームで代わりに起動する方法には、OS自体による大きな制限があります。これらはAppsFlyerに起因する制限ではなく、URIスキームでアプリを開く他のリンクにも影響します。
@@ -34,13 +36,19 @@ x-zendesk:
 * その他のブラウザでは、URIスキームの動作が安定しないため、デフォルトではサポートされていません。リンクをクリックしたユーザーは、App Storeにリダイレクトされる可能性が高くなります（`af_ios_url`パラメータが設定されている場合は、そのURLにリダイレクトされます）。
 * 詳しくは、以下のシナリオ別のフローチャートとケース別の動作を参照してください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > X（Twitter）はURIスキームをサポートしていません。アプリが起動しない問題を避けるため、Universal Linksを設定したソーシャルアプリ向けランディングページ（SALP）の使用を推奨します。
 
+<div id="scenarios-flowchart" />
+
 ### シナリオ別のフローチャート
 
 <Image alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
+
+<div id="use-cases" />
 
 ## ケース別の動作
 
@@ -55,6 +63,8 @@ x-zendesk:
 * Naver
 * Naver-Blog
 * Weibo
+
+<div id="flowchart" />
 
 #### **フローチャート**
 
@@ -94,6 +104,8 @@ Universal Linksでアプリが開かず、リンクに`af_dp`（値としてURI�
   8. ユーザーが<strong>［OK］</strong>をクリックすると、App Storeにリダイレクトされます。
   9. ユーザーが<strong>［キャンセル］</strong>をクリックすると、ランディングページにとどまります。
 
+<div id="flowchart-1" />
+
 #### **フローチャート**
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
@@ -123,6 +135,8 @@ Universal Linksでアプリが開かず、リンクに`af_dp`（値としてURI�
 4. ユーザーが<strong>［閉じる］</strong>をクリックすると、背後にあったランディングページが表示されます。  
    [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. ユーザーがApp Storeのバッジをクリックすると、App Storeにリダイレクトされます。
+
+<div id="flowchart-2" />
 
 #### **フローチャート**
 

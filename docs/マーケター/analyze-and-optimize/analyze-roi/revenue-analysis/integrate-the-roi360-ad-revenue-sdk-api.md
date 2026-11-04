@@ -30,6 +30,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## SDK APIによる広告表示単位の広告収益の報告
 
 **広告収益の報告方法**
@@ -44,6 +46,8 @@ x-zendesk:
 
 * 広告収益のインプレッションはAppsFlyerで収集・処理されますが、アプリ内イベントの契約枠には計上されません。
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/gs-ad-revenue">広告収益SDK APIに対応するSDKプラグインの全一覧</Anchor>を参照してください。
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### SDK APIを使った広告収益の報告
 
@@ -80,6 +84,8 @@ x-zendesk:
 * **Data Lockerの広告表示単位のトピック：午前1時から、1時間ごと。**
 * **AppsFlyerのアクティビティ・コホートレポート：UTC午前5時から、4時間ごと。**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## AppsFlyer広告収益SDK APIの実装
 
 **AppsFlyerの広告収益SDK APIを実装するには**：
@@ -90,6 +96,8 @@ x-zendesk:
 4. 連携をテストします。実装後、次のいずれかの方法で広告収益イベントを受信していることを確認してください。
    * <Anchor target="_blank" href="/marketers/ja/docs/testing-the-sdk-integration-for-marketers#view-live-events">ライブイベントビューアー</Anchor>で、広告収益イベントがリアルタイムで表示されることを確認します。ライブイベントビューアーに表示されるのは、登録済みのテスト端末から送信されたイベントのみです。
    * <strong>［収益設定］</strong>ページで対象の広告収益連携を編集し、<strong>［接続をテスト］</strong>をクリックして、有効な広告収益イベントが最近処理されていることを確認します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">広告収益パートナーとの連携</Anchor>を参照してください。
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

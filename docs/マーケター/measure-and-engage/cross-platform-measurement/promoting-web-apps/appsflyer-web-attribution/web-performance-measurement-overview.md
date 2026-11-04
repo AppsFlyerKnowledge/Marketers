@@ -27,6 +27,8 @@ x-zendesk:
 
 > **概要：** AppsFlyerのWeb Performance Measurement（Web計測機能）を利用すると、どのメディアソースやキャンペーンがユーザーをWebサイトへ誘導しているかを特定し、その訪問がその後のユーザー行動にどのような影響を与えているかを長期的に計測できます。初回訪問からLTV計測まで、ユーザーのインタラクションをエンドツーエンドで取得・アトリビューションできるため、ユーザー獲得（初回訪問者）とリエンゲージメントの両方に対応できます。
 
+<div id="about-web-performance-measurement" />
+
 ## Web Performance Measurementについて
 
 Web計測は、どのメディアソースやキャンペーンがユーザーのWebサイト訪問を促し、その後の行動に影響を与えたかを特定するプロセスです。
@@ -35,9 +37,13 @@ Web訪問は、閲覧行動であると同時に、その訪問の直前に発�
 
 この記事では、AppsFlyerのWeb Performance Measurementのエンドツーエンドのプロセスを説明します。初回のWebサイト訪問からLTV計測まで、ユーザーのインタラクションがどのように取得、識別、計測されるかを解説します。このプロセスにより、初回訪問者を特定・アトリビューションするユーザー獲得と、再訪問ユーザーを対象としたキャンペーン効果を計測するリターゲティングまたはリエンゲージメントの両方に対応できます。
 
+<div id="if-you-use-people-based-attribution-pba" />
+
 #### People-Based Attribution（PBA）をご利用の場合
 
 現在<Anchor target="_blank" href="/marketers/ja/docs/people-based-attribution-pba">People-Based アトリビューション (PBA)</Anchor>を使用している場合は、より粒度の細かい アトリビューションで追加のシグナルを得るために、Web Performance Measurementに切り替えることを検討してください。
+
+<div id="the-web-performance-measurement-flow" />
 
 ### Web Performance Measurementのフロー
 
@@ -52,6 +58,8 @@ AppsFlyerのWeb Performance Measurementのフローは、Webサイトへの生�
 7. [プレ獲得期間](#7-preacquisition-period)：初回訪問からUAイベントまでの間に発生した中間イベントをアトリビューションします。
 8. [リエンゲージメントと再獲得](#8-reengagement-and-reacquisition)：休眠期間の設定に基づいて再訪問ユーザーをアトリビューションし、その再訪問がリエンゲージメントか再獲得かを判定します。
 9. [LTV計測](#9-ltv-measurement)：継続的なイベントや収益をアトリビューションし、アトリビューション期間の設定に基づいてユーザーのLTVを計測します。
+
+<div id="the-web-performance-measurement-process---step-by-step" />
 
 ## Web Performance Measurementのフロー
 

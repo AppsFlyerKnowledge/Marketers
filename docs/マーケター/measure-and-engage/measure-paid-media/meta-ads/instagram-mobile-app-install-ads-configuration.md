@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
+<div id="setting-up-instagram" />
+
 ## Instagramの設定
 
 Instagramの設定は、AppsFlyerの［連携済みパートナー］にあるMeta広告の連携設定から行います。
@@ -44,6 +46,8 @@ Metaのドキュメントは、<Anchor target="_blank" href="https://developers.
 3. ［連携済みパートナー］のMeta広告の連携設定で、FacebookアプリIDを追加します。
 4. FacebookアプリIDがない場合は、<Anchor target="_blank" href="https://developers.facebook.com/apps">こちら</Anchor>から作成してください。  
    [![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://support.appsflyer.com/hc/article_attachments/51444627540625)
+
+<div id="instagram-landing-page-for-deep-linking" />
 
 ## ディープリンク用のInstagramランディングページ
 

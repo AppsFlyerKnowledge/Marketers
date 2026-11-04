@@ -32,9 +32,13 @@ OneSignalは、世界中で毎日80億件のメッセージを配信していま
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 
+<div id="setting-up-onesignal" />
+
 ## OneSignalの設定
 
 OneSignalと連携するには、アプリのAppsFlyer SDKに数行のコードを追加し、AppsFlyerで連携を有効にします。
+
+<div id="set-up-the-appsflyer-sdk" />
 
 ### AppsFlyer SDKの設定
 
@@ -145,10 +149,14 @@ AndroidでOneSignalと連携するには、OneSignal Player ID（OneSignalでユ
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 このパートナーと連携している間は、有効のままにしてください。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -158,6 +166,8 @@ OneSignalアカウントをAppsFlyerに接続するには、**OneSignal AppID**�
 OneSignalのアプリIDは、OneSignalの**Settings**＞**Keys & IDs**で確認できます。
 
 ![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -212,6 +222,8 @@ AppsFlyerはすべてのイベントを送信しますが、OneSignalはオー�
 このパートナーでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="view-user-attribution-data-in-onesignal" />
 
 ## OneSignalでユーザーのアトリビューションデータを確認する
 

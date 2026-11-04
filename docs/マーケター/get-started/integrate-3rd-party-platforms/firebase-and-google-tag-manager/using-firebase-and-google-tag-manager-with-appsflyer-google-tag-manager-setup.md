@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Firebase SDKで記録したイベントをAppsFlyerに送信するための、Googleタグマネージャーの設定手順を説明します。
 
+<div id="google-tag-manager-setup" />
+
 ## Googleタグマネージャーの設定
 
 このセクションでは、Googleタグマネージャー（GTM）の画面で必要な設定を説明します。 GTMからAppsFlyerにイベントを送信するには、このセクションのすべての手順を実施する必要があります。記載された順に手順を進めてください。

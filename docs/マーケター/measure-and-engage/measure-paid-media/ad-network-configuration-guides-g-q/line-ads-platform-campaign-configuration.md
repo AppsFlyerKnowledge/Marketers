@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
+<div id="setting-up-line-ads-platform" />
+
 ## LINE 広告プラットフォームの設定
 
 **前提条件：** 連携を設定する前に、 <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーへ連絡</Anchor>し、アカウントを開設してください。
@@ -54,14 +56,24 @@ LINE 広告プラットフォームの設定ウィンドウには、次の2つ�
 
 連携タブは次のセクションに分かれています。
 
+<div id="note-1" />
+
+<div id="connect-multiple-accounts-and-apps" />
+
+<div id="note" />
+
 > 📘 **注**
 >
 > 全てのインストールデータを受信できるネットワークであるLINEは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。そのためには、**全てのパートナーに紐づくイベント**を選択して、全てのインストールポストバックをLINEに送信してください。これはアカウント管理者のみが実行できます。
+
+<div id="activate-partner" />
 
 ### パートナーの有効化
 
 この画面を**最初に開く**際には、以下のトグルをオンにする必要があります。[***パートナーを有効にする***] トグルをオンにして、連携タブのパラメーター設定を有効にします。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -72,11 +84,15 @@ LINE 広告プラットフォームは、一意の LINE\_Ad\_account\_id と LI
 * **LINE\_Ad\_account\_id and LINE\_Ad\_app\_ID**を入力します。
 
 
+<div id="example" />
+
 > 📄 **例**
 >
 > ```http
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
+
+<div id="default-postbacks" />
 
 ### デフォルトのポストバック
 
@@ -84,6 +100,8 @@ LINE 広告プラットフォームは、一意の LINE\_Ad\_account\_id と LI
 
 LINE 広告プラットフォームに紐づくユーザーからのイベントのみを表示するには、**このパートナーに紐づくイベントのみ**を選択します。  
 **オーガニックを含む、全メディアソース** を選択して、全てのユーザーベースをLINE広告プラットフォームに送信します。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -104,6 +122,8 @@ LINE 広告プラットフォームに紐づくユーザーからのイベント
 | **SDKイベント名** | アプリと連携済みの SDK から、またはサーバー間（S2S）イベントから AppsFlyer が受信したイベント名  <br />**ヒント** - アプリ内イベント名がリストに表示されない場合、デバイス上で非オーガニックインストールによってアプリ内イベントが発生しているかを確認してください。 |
 | **パートナー側のイベント名** | LINE 広告プラットフォーム側で定義した各イベントの一意の名前またはID。  <br />対応するイベント ID を LINE 広告プラットフォームから取得し、テキスト項目に設定します。 |
 | **収益値を送信** | **チェックなしの場合** - リッチアプリ内イベントのすべてのパラメーターをパートナーに送りますが、**af\_revenue** パラメーターに含まれる収益パラメーターは送信しません。  <br />**チェックありの場合：** 収益値（イベントに存在する場合）を含むすべてのパラメーターをパートナーに送ります。 |
+
+<div id="custom-in-app-events-mapping" />
 
 ### カスタムアプリ内イベントマップ
 

@@ -23,6 +23,8 @@ x-zendesk:
 
 awin icon.png
 
+<div id="activate-partner" />
+
 ## パートナーの有効化
 
 **前提条件：** 連携を設定する前に、 <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーへ連絡</Anchor>し、アカウントを開設してください。
@@ -37,16 +39,22 @@ awin icon.png
    **注：** パートナーと作業している間、トグルはオン<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">（有効）</Anchor>のままにしておく必要があります。
 5. 以下の手順に従い、各タブの設定を完了してください。
 
+<div id="setting-up-awin" />
+
 ## Awinのセットアップ
 
 Awinとの統合により、クリックスルーアトリビューションがサポートされます。
 
 構成には次のタブが含まれます。連携、計測リンク、コスト、広告収益、権限Awinの場合、利用可能なタブは、統合、計測リンク、および権限です。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * iOSとAndroidデバイスでは設定が異なります
 > * 詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner">パートナー連携の設定</Anchor>のページをご確認ください。
+
+<div id="prerequisite" />
 
 ### 前提条件
 
@@ -58,9 +66,13 @@ Awinとの統合により、クリックスルーアトリビューションが�
 
 **連携**タブには、以下で説明するセクションがあります。
 
+<div id="activate-partner-1" />
+
 #### 連携設定
 
 連携を設定するには、まず**パートナーを有効にする**トグルを<Anchor target="_blank" href="/marketers/ja/docs/amazon-ads-campaign-configuration#連携設定">オン</Anchor>にする必要があります。詳細：パートナー連携追加情報については、<Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">Awin統合ページ</Anchor>を参照できます。
+
+<div id="advanced-privacy" />
 
 #### 高プライバシーポストバック
 
@@ -72,25 +84,35 @@ iOS アプリの場合のみ:ポストバックや<Anchor target="_blank" href="
 | ポストバックは、<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks">高プライバシーポストバック向けに設定されたテンプレート</Anchor>を使って送信されます。 |  |
 | <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">集計された匿名データ</Anchor>がパートナーと共有されます。つまり、ユーザーレベルのデータ（デバイスID）は共有されません。 |  |
 
+<div id="general-settings" />
+
 #### 一般的な設定
 
 **Awin 広告主のID**
 
 Awin 加盟店 IDを追加します。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 複数の商人IDがある場合は、メインのものを接続してください。
 
+<div id="default-postbacks" />
+
 #### デフォルトのポストバック
 
 インストールポストバックは、このパートナーにのみ送信されます。
+
+<div id="in-app-event-settings" />
 
 #### アプリ内イベントの設定
 
 **Awin 広告主のID**
 
 Awin 加盟店 IDを追加します。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -113,6 +135,8 @@ Awin 加盟店 IDを追加します。
    1. 左上隅のパートナー名下にあるアプリ名をクリックし、アプリ一覧を開きます。
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリに対し、<Anchor target="_blank" href="/marketers/ja/docs/amazon-ads-campaign-configuration#integration-tab">連携手順</Anchor>を再度実行します。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -150,12 +174,16 @@ Awinの広告収益はご利用いただけません。
 
 データにアクセスし、さまざまなアクションを実行するためにAwinに付与するアクセス許可を選択します。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 権限トグルがオンの状態で連携が<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">非アクティブ化</Anchor>された場合でも、権限は付与されたままです。
 > * 詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">権限付与</Anchor>のページを参照してください。
 
 </Accordion>
+
+<div id="deep-linking-and-deferred-deep-linking-using-onelink" />
 
 ## OneLinkを使用したディープリンク＆ディファードディープリンク
 
@@ -165,6 +193,8 @@ AWINは、プラットフォームで使用されるすべてのリンクをラ�
 Awin経由のOneLinkとのディープリンク：
 
 * <Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">OneLink URLをURIスキームで設定します</Anchor>
+
+<div id="note-4" />
 
 > 📘 **注意**
 >

@@ -29,7 +29,7 @@ x-zendesk:
 <Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
 
-**<span id="setting-up-glispa"></span>前提条件：** 連携を設定する前に、 <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーへ連絡</Anchor>し、アカウントを開設してください。
+**<span id="setting-up-inmobi"></span><span id="setting-up-glispa"></span>前提条件：** 連携を設定する前に、 <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーへ連絡</Anchor>し、アカウントを開設してください。
 
 **連携を有効化または編集する：**
 
@@ -43,6 +43,8 @@ x-zendesk:
 
 連携済みパートナーの設定画面のヘッダーについての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">こちら</Anchor>をクリックしてください。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > * 連携タブでの<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#d-general-settings">一般的な設定</Anchor>の項目は、全てのパートナーにおいて**必須**です。
@@ -52,14 +54,20 @@ x-zendesk:
 
 <Accordion title="連携タブ">
 
+<div id="activate-partners" />
+
 ### パートナーの有効化
 
 このタブを**初めて**開く場合、連携タブのパラメーター設定を有効にするために**パートナーを有効にする**のトグルをオンにする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークであるLINEは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。そのためには、**全てのパートナーに紐づくイベント**を選択して、全てのインストールポストバックをLINEに送信してください。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -71,12 +79,16 @@ x-zendesk:
 
 YouAppiでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 ユーザーのインストールおよびリエンゲージメント後に、自動ポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
 AppLovinに紐づくユーザーからのイベントのみにするには、**このパートナーに紐づくイベントのみ**を選択します。  
 [**オーガニックを含む全メディアソース**] を選択して、ユーザーベース全てをYouAppiにレポートできるようにします。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -107,6 +119,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -127,6 +141,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 [![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
+
+<div id="retargeting-settings" />
 
 ### リターゲティング設定
 
@@ -162,6 +178,8 @@ OneLinkを選択すると、計測リンクがアプリのリンクから <Ancho
 
 **計測リンクパラメータ**：af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。ルックバック期間内に発生するインストール（初回起動）のみがGMPの成果に紐づきます。
@@ -172,9 +190,13 @@ OneLinkを選択すると、計測リンクがアプリのリンクから <Ancho
 
 [![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
 
+<div id="click-attribution-link" />
+
 ### クリックアトリビューションリンク
 
 このリンクは、あなたが設定したすべての情報が含まれる計測リンクです。ユーザーが対応する広告をクリックした際にアクティベートされるように、この計測リンクをYouAppiに入稿してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### ビュースルーアトリビューションルックバック期間
 
@@ -187,6 +209,8 @@ OneLinkを選択すると、計測リンクがアプリのリンクから <Ancho
 ビュースルー計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### インプレッションのアトリビューションリンク
 
@@ -221,6 +245,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 <Accordion title="権限タブ">
 
 データにアクセスし、さまざまなアクションを実行するためにAwinに付与するアクセス許可を選択します。
+
+<div id="note-1" />
 
 > 📘 **注**
 >

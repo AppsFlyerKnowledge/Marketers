@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **At a glance:** コンバージョンデータを活用すると、さまざまなコンバージョンの発生パターンの把握や、ユーザーに合わせた体験の提供などが可能です。
 
+<div id="overview" />
+
 ## 概要
 
 このガイドでは、ユーザーのさまざまなコンバージョンの発生パターンと、それぞれに対応するコンバージョンデータの内容（ペイロード）を紹介します。
@@ -43,7 +45,11 @@ AppsFlyerでは、次のいずれかを通じてコンバージョンデータ�
 
 データの正確さと取得までの時間の兼ね合いにより、同じデバイスIDのコンバージョンデータでも、APIによって内容が異なる場合があります。
 
+<div id="non-organic-conversion-data-payload-fields" />
+
 ### ノンオーガニックのコンバージョンデータに含まれるフィールド
+
+<div id="fields-always-available" />
 
 #### 常に含まれるフィールド
 
@@ -67,11 +73,15 @@ AppsFlyerでは、次のいずれかを通じてコンバージョンデータ�
 | `retargeting_conversion_type` | リターゲティングのコンバージョン種別 | "none"、またはretargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | サブパラメータ[n]（n=1～5） |  |
 
+<div id="fields-available-in-some-cases" />
+
 #### 条件によって含まれるフィールド
 
 次の表のフィールドは、SRNが各イベントのデータをどのように設定するかによって、コンバージョンデータに含まれる場合があります。
 
 <table><thead><tr><th>返却データのフィールド名</th><th>ローデータのフィールド名</th><th>補足</th><th> </th></tr></thead><tbody><tr><td><code>af_channel</code></td><td>チャネル</td><td><p>このパラメータに値を設定するSRN：</p><ul><li>AppLovin</li><li>Google広告</li><li>Meta広告</li><li>Snapchat</li><li>TikTok for Business</li><li>X広告</li></ul><p>例：Facebookの場合はInstagram、Googleの場合はYouTube </p></td><td> </td></tr><tr><td><code>orig_cost</code></td><td> </td><td>注意（1）</td><td> </td></tr><tr><td><code>cost_cents_USD</code></td><td> </td><td>注意（1）</td><td> </td></tr><tr><td><code>af_cpi</code></td><td> </td><td>注意（1）</td><td> </td></tr><tr><td colspan="4"><p><strong>注意</strong></p><p>（1）コストのフィールドには、アドネットワークから共有された値が設定されます。アドネットワークからAppsFlyerにコストデータを共有するには、<a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>有効な連携</strong></a>ページでコスト連携を有効にする必要があります。一部のSRNは、コストデータの一括共有に対応しています。この場合、イベント単位のコストのフィールドには0が返されます。 </p></td></tr></tbody></table>
+
+<div id="additional-fields" />
 
 ### 追加のフィールド
 
@@ -79,6 +89,8 @@ AppsFlyerでは、次のいずれかを通じてコンバージョンデータ�
 * アトリビューションリンクにパラメータを追加すると、そのパラメータが返却データに含まれます。
 
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#data-fields-dictionary">ローデータのフィールド一覧</Anchor>をご覧ください。
+
+<div id="limitations" />
 
 ### 制限事項
 
@@ -94,6 +106,8 @@ AppsFlyerでは、次のいずれかを通じてコンバージョンデータ�
 
 ---
 
+<div id="ua-conversion-data-with-srns" />
+
 ## SRN経由のユーザー獲得（UA）のコンバージョンデータ
 
 <Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns">セルフレポーティングネットワーク</Anchor>（SRN）は、独自のアトリビューションの仕組みを持つアドネットワークです。Meta広告やGoogleなどが該当します。
@@ -105,6 +119,8 @@ SRNはアトリビューションリンクを使用しません。そのため�
 
 SRNはAppsFlyerにコンバージョンを報告します。そのコンバージョンデータは、アプリ内で取得できます。取得できるフィールドはSRNによって異なります。詳しくは、以下の各SRNのタブをご覧ください。
 
+<div id="a-note-about-meta-ads" />
+
 #### Meta広告に関する注意
 
 Meta広告でキャンペーンを実施する場合、Metaの利用規約に同意していなくても、AppsFlyerはインストールのアトリビューションを行います。ただし、利用できるレポートには次の制限があります。
@@ -114,6 +130,8 @@ Meta広告でキャンペーンを実施する場合、Metaの利用規約に同
 
 <Tabs>
 <Tab title="Meta広告">
+
+<div id="meta-ads-conversion-data" />
 
 ### Meta広告のコンバージョンデータ
 
@@ -205,6 +223,8 @@ Meta広告でキャンペーンを実施する場合、Metaの利用規約に同
 
 <Tab title="X広告">
 
+<div id="x-ads-conversion-data" />
+
 ### X広告のコンバージョンデータ
 
 | フィールド名 | 補足 |
@@ -237,6 +257,8 @@ Meta広告でキャンペーンを実施する場合、Metaの利用規約に同
 <Tab title="TikTok">
 
 <div id="tiktok-conversion-data" />
+
+<div id="tiktok-for-business-conversion-data" />
 
 ### TikTok for Businessのコンバージョンデータ
 
@@ -278,6 +300,8 @@ Meta広告でキャンペーンを実施する場合、Metaの利用規約に同
 </Tab>
 </Tabs>
 
+<div id="ua-conversion-with-other-ad-networks" />
+
 ## SRN以外のアドネットワーク経由のユーザー獲得（UA）のコンバージョン
 
 SRN以外のアドネットワークでは、返却データの内容は<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">アトリビューションリンクのパラメータ</Anchor>によって直接決まります。
@@ -290,6 +314,8 @@ SRN以外のアドネットワークでは、返却データの内容は<Anchor 
 
 <Accordion title="AppLovin">
 
+<div id="attribution-link" />
+
 #### アトリビューションリンク：
 
 ```http HTTPS
@@ -299,6 +325,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   &af_click_lookback=7d&clickid=10****************
   &advertising_id=50********************************&af_ip=
 ```
+
+<div id="payload" />
 
 #### 返却データ：
 
@@ -347,6 +375,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 
 <Accordion title="ironSource">
 
+<div id="attribution-link-1" />
+
 #### アトリビューションリンク：
 
 ```http HTTPS
@@ -359,6 +389,8 @@ https://app.appsflyer.com/id123456789?
   &idfa=01**********************************&af_siteid=123_site_id&
   af_enc_data=cN*********************************************************************
 ```
+
+<div id="payload-1" />
 
 #### 返却データ：
 
@@ -407,6 +439,8 @@ ironSourceは、コンバージョン発生時に`orig_cost`、`cost_cents_USD`�
 
 </Accordion>
 
+<div id="retargeting-conversion-data" />
+
 ## リターゲティングのコンバージョンデータ
 
 リターゲティングのコンバージョンには、リアトリビューションとリエンゲージメントの2種類があります。
@@ -416,6 +450,8 @@ ironSourceは、コンバージョン発生時に`orig_cost`、`cost_cents_USD`�
 > **ヒント**
 >
 > リターゲティングのコンバージョンデータだけでは、コンバージョンの種別を明確に判断できない場合があります。[コンバージョンデータを取得するその他の方法](#コンバージョンデータを取得するその他の方法)をご覧ください。
+
+<div id="re-attribution-with-srns" />
 
 ### SRN経由のリアトリビューション
 
@@ -429,6 +465,8 @@ SRN経由でユーザーがリアトリビューションされた場合、コ�
 >
 > ただし、リターゲティングであることが分かるキャンペーン名を設定しても、**確実に判別できるとは限りません**。詳しくは、[具体例](#ユーザー獲得とリアトリビューションが混在する例)をご覧ください。
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ### SRN以外のアドネットワーク経由のリアトリビューション
 
 アドネットワークへのアトリビューションには、アトリビューションリンクを使用します。リターゲティングの場合、通常のアトリビューションリンクとOneLinkのどちらにも、必ず`is_retargeting=true`パラメータを設定します。
@@ -437,6 +475,8 @@ SRN経由でユーザーがリアトリビューションされた場合、コ�
 
 <Accordion title="Criteoのリターゲティングキャンペーン">
 
+<div id="attribution-link-2" />
+
 #### アトリビューションリンク
 
 ```http
@@ -444,6 +484,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### コンバージョンデータの内容
 
@@ -485,6 +527,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ### ディファードディープリンクを使用したリアトリビューション
 
 リアトリビューションの対象となるユーザーは、その定義上、アプリをインストールしていない状態です。このようなユーザーを、ディープリンクでアプリ内の画面に誘導したい場合があります。例えば、アプリをアンインストールしたユーザーに再び利用してもらうためのキャンペーンを設定する場合です。このキャンペーンで商品やサービスを宣伝する際には、その商品やサービスに関連するコンテンツをユーザーに表示したいと考えられます。
@@ -496,6 +540,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="SRNでのディファードディープリンク">
 
 SRNのキャンペーンで定義されたディープリンクのパラメータは、そのSRN以外では取得できません。これには、アプリ内のスキームパスを格納する`af_dp`パラメータも含まれます。唯一の例外は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#アプリキャンペーンでのディファードディープリンクの使用">フィードに配信されるGoogleアプリキャンペーン</Anchor>を使用する場合です。 SRNのキャンペーンでディファードディープリンクを実装するには、追加の処理が必要です。 `onConversionSuccess`の応答に含まれるcampaign、adset、adgroupなどのデータを使用して、プログラムでユーザーの遷移先を制御してください。
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Meta広告でのディファードディープリンクのコンバージョンデータ
 
@@ -585,6 +631,8 @@ getConversionDataの応答に含まれるcampaign、adsetなどのデータを�
 
 ディープリンクでユーザーを誘導する方法は3つあります。
 
+<div id="uri-schemes" />
+
 #### URIスキーム
 
 URIスキームを使用する場合、アトリビューションリンクとOneLink、および返却データは次のようになります。
@@ -640,6 +688,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * `af_deeplink: true`：このパラメータが含まれ、値がtrueの場合は、`scheme`と`host`の各フィールドを確認してください。
 * `scheme`と`host`：これらのフィールドは、アトリビューションリンクの`af_dp`パラメータから取得され、ディープリンクに使用するスキームと遷移先の画面を示します。
+
+<div id="ios-universal-links-and-android-app-links" />
 
 #### iOSのUniversal LinksとAndroidのApp Links
 
@@ -697,13 +747,19 @@ Universal LinksまたはApp Linksを使用する場合、OneLinkと返却デー�
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ### SRN経由のリエンゲージメント
 
 リアトリビューションのキャンペーンと同様に、SRN経由でユーザーがリエンゲージメントした場合も、コンバージョンデータからは、リエンゲージメントキャンペーン経由であることを確認できません。リエンゲージメントキャンペーンであることが分かるキャンペーン名を設定できます。
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ### SRN以外のアドネットワーク経由のリエンゲージメント
 
 この場合も、コンバージョンデータの内容からは、ユーザーがリエンゲージメントキャンペーン経由であることを確認できません。この制限に対処するには、リエンゲージメントであることが分かるキャンペーン名を設定します。
+
+<div id="re-engagement-with-deep-linking" />
 
 ### ディープリンクを使用したリエンゲージメント
 
@@ -757,10 +813,14 @@ iOSとAndroidのどちらでも、短縮形式のOneLinkを使用した場合、
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ### コンバージョンデータを取得するその他の方法
 
 * Push APIでは、リアトリビューションまたはリエンゲージメントを判別できる、詳細なコンバージョンデータを取得できます。 Push APIの返却データには、`re_targeting_conversion_type`というフィールドが含まれます。このフィールドは、コンバージョンの種別がリアトリビューションかリエンゲージメントかを示します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/push-api-streaming-raw-data">Push APIガイド</Anchor>をご覧ください。
 * ローデータレポートにも、コンバージョンの種別を示す情報が含まれます。リターゲティングのコンバージョンを扱うローデータレポートには、***イベント名***という列があります。この列の値は、コンバージョンの種別に応じて***re-engagemen*t**または***re-attribution*** になります。
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ### ユーザー獲得とリアトリビューションが混在する例
 

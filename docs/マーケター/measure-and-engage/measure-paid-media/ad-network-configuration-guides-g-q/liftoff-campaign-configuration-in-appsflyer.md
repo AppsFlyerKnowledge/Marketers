@@ -25,11 +25,15 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > 一部のメディアソースは、第三者とのデータ共有を制限しています。AppsFlyerでは、これらのメディアソース経由で獲得したユーザーに関するユーザーレベルデータを第三者プラットフォームやサービスと共有できません。そのため、このようなメディアソースからのインストールはオーガニックとして送信されます。
 >
 > 第三者プラットフォームとのデータ共有を制限しているメディアソースの詳細とリストに関しては、<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention">こちら</Anchor>をクリックしてください。
+
+<div id="setting-up-liftoff" />
 
 ## Liftoffの連携設定
 
@@ -51,9 +55,13 @@ x-zendesk:
 
 連携タブは次のセクションに分かれています。
 
+<div id="activate-partners" />
+
 ### パートナーの有効化
 
 連携設定を有効にするには、最初の訪問時に [<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">**パートナーを有効にする**</Anchor> ]のトグルをオンにして、パートナーをアクティブ化する必要があります。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -61,12 +69,16 @@ x-zendesk:
 
 Liftoffにおいてビュースルー計測を有効化したい場合には、設定をONにしてください。ビュースルー計測のルックバック期間の設定は、 [**計測リンク**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab) タブで行ってください。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 Liftoffに対してインストール、ブロック済みインストール、リエンゲージメントの自動ポストバックを行えます。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
 Liftoff に紐付いたユーザーからのイベントのみを送信する場合は、[ **This partner only** ] を選択してください。  
 全ユーザーのデータをLiftoffへ送信する場合には、 **[All sources, including organic** ] を選択してください。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -129,6 +141,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 このタブではLiftoffに対して付与する権限を選択できます。パートナーの計測設定が無効になっている場合でも、権限タブは使用可能で、パートナーに対して権限付与できます。
 
+<div id="ad-network-permissions" />
+
 ### アドネットワークへの権限付与
 
 このタブではLiftoffに対して付与する権限を選択できます。パートナーの計測設定が無効になっている場合でも、権限タブは使用可能で、パートナーに対して権限付与できます。
@@ -144,6 +158,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 * **Protect360管理画面へのアクセスを許可する** - 広告主がProtect360機能を利用している場合、パートナーのProtect360データへアクセスを許可します。
 
 詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">アドネットワークへの権限付与</Anchor>をご覧ください。
+
+<div id="agency-permissions" />
 
 ### 代理店の許可
 
@@ -169,6 +185,8 @@ Liftoffを代理店として扱う場合に、このセクションではアプ�
 
 
 3. <span id="set-up-skadnetwork-integration-with-liftoff"></span>例：
+
+<div id="product-feed-retargeting-with-liftoff" />
 
 ## Liftoffでのプロダクトフィードのリターゲティング
 

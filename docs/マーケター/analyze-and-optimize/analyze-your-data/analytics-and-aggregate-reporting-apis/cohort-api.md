@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** APIを使用して、コホートデータをBI、およびマーケティングオートメーションシステムに統合できます。
 
+<div id="cohort-api" />
+
 ## コホートAPI
 
 コホートレポートAPIは、AppsFlyerプラットフォームからコホートキャンペーンパフォーマンスデータを取得するために使用されます。これは<Anchor target="_blank" href="/marketers/ja/docs/cohort-and-retention-dashboard">コホート管理画面</Anchor>と機能的に同等です。
@@ -77,7 +79,7 @@ x-zendesk:
 <table><thead><tr><th> </th><th> </th><th colspan="5">関数</th></tr><tr><th rowspan="2">デフォルト/オプション </th><th rowspan="2">KPI (ディメンション名) </th><th>カウント</th><th>cvr (コンバージョン率)</th><th>レート</th><th>合計</th><th>ユニークユーザー数</th></tr><tr><th>数値</th><th>割合</th><th>割合</th><th>数値</th><th>数値</th></tr></thead><tbody><tr><td>常に</td><td>ユーザー</td><td><span>Y</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>常に</td><td>eCPI</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>常に</td><td>cost</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>オプション</td><td> 2024-02-26 </td><td><span>Y</span></td><td><span>Y</span></td><td>-</td><td><span>Y (3)</span></td><td><span>Y</span></td></tr><tr><td>オプション</td><td>revenue</td><td><span>Y</span></td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>オプション</td><td>ROAS</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>オプション</td><td>ROI</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>オプション</td><td>sessions</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td><span>Y(1)</span></td></tr><tr><td>オプション</td><td>uninstalls (2)</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) <em>aggregation_type=on_day</em> の場合、ユニークセッションが返されます。</p><p>(2) cohort_type=unified の場合は利用できません。 </p><p>(3) 合計とは、イベントで発生した収益の合計を意味します。</p><p> 注意イベント名では大文字と小文字が区別されます。</p></td></tr></tbody></table>
 
 
-| <span id="presentation-of-kpi-functions"></span>パラメータ | 範囲外の値は | 必須 |
+| <span id="formatting-kpi-functions"></span><span id="presentation-of-kpi-functions"></span>パラメータ | 範囲外の値は | 必須 |
 | --- | --- | --- |
 | preferred\_currency | KPIの収益通貨<ul><li>true の場合、プラットフォーム上で設定されている<Anchor target="_blank" href="/marketers/ja/docs/app-settings#localization-currency">アプリ固有の通貨</Anchor>を使用して収益値が戻ります。</li><li>[デフォルト] false の場合、結果はUSDで返されます。</li><li>形式：ブール値</li><li>フラットフォームUI版：true</li></ul> | いいえ |
 | preferred\_timezone | **データ範囲のタイムゾーン**<ul><li>trueの場合、プラットフォームで設定された<Anchor target="_blank" href="/marketers/ja/docs/app-settings#localization-time-zone">アプリ固有のタイムゾーン</Anchor>を使用して表示されます。</li><li>[デフォルト] falseの場合、UTCタイムゾーンを使用して表示されます。</li><li>形式：ブール値</li><li>フラットフォームUI版：true</li></ul> | いいえ |
@@ -88,6 +90,8 @@ x-zendesk:
 
 <table><thead><tr><th>ディメンション名 </th><th>ディメンションAPI値</th><th>グループ化</th><th>フィルタ</th></tr></thead><tbody><tr><td>Ad</td><td>af_ad</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Ad ID</td><td>af_ad_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Campaign</td><td>c</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Campaign ID</td><td>af_c_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Channel</td><td>af_channel</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Media Source</td><td>pid</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Sub Param 1</td><td>af_sub1</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Keywords</td><td>af_keywords</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>代理店</td><td>af_prt</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>コンバージョンタイプ (1) </td><td>cohort _type</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Site ID</td><td>site_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>収益タイプ (2) </td><td>revenue_type</td><td><span>x </span></td><td><span>Y</span></td></tr><tr><td>アトリビューションタッチタイプ (3) </td><td>attributed_touch_type</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Adset</td><td>af_adset</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>Adset ID</td><td>af_adset_id</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>国</td><td>geo</td><td><span>Y</span></td><td><span>Y</span></td></tr><tr><td>日付（選択したcohort_typeのコンテキストでのインストール／リアトリビューション／リエンゲージメント日） </td><td>date</td><td><span>Y</span></td><td><span>x </span></td></tr><tr><td>期間</td><td><p>ピリオド (.)</p><p><a href="./cohort-api#using-period-filters">詳細な説明</a></p></td><td><span>x</span></td><td><span>Y</span></td></tr><tr><td colspan="4"><p>注： </p><p>ディメンションのオプション：</p><ul><li>エクスポートする場合：<ul><li> </li><li> </li></ul></li></ul><p>収益タイプ\*</p><p>attributed_touch_type</p></td></tr></tbody></table>
 
+
+<div id="additional-information" />
 
 ## 追加情報
 
@@ -101,6 +105,8 @@ x-zendesk:
 
 * 期間の値は、0-180のうち1つまたは複数設定できます。例：0, 1, 2, 30, 180。
 * 期間が指定されていない場合、デフォルト値である0、1、2…30まで、および、60、90、180 が戻ります。
+
+<div id="example-period-filter" />
 
 > 📄 **期間フィルタの例**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## ブランドドメイン
 
 * ブランドドメインを使用すると、自社ブランドとドメインを用いてアトリビューションリンクをブランド化できます。たとえば、上の図では以下のように設定されています。
@@ -39,6 +41,8 @@ x-zendesk:
   * リンクのドメインと送信元メールアドレスのドメインが一致しないことによる、メールのスパム判定リスクを軽減できます。
   * ブランドドメインは、AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/account-management-plans-payments-and-billing">有料契約プラン</Anchor>に含まれています。
 
+<div id="principles-of-implementation" />
+
 ### 実装の基本原則
 
 ブランドドメインは、DNS（Domain Name System）で定義した完全修飾ドメインを、OneLinkのサブドメイン、すなわちAppsFlyerのCNAME参照先に関連付けることで実装します。実装には、DNSの標準設定を使用するとともに、AppsFlyer上でブランドドメインを設定します。さらに、ブランドドメインに対応するため、アプリにも軽微な変更を加える必要があります。
@@ -46,6 +50,8 @@ x-zendesk:
 設定にあたっては、通常、自社のITチームまたはDNSホスティングプロバイダーに所属するDNS管理者と、アプリ開発者の協力が必要です。
 
 1つのOneLinkサブドメインに、複数の完全修飾ドメインを関連付けることもできます。これにより、複数のブランドで同じOneLinkサブドメインを使用できます。
+
+<div id="setting-up-branded-domains" />
 
 ### ブランドドメインの設定
 
@@ -57,6 +63,8 @@ x-zendesk:
 | 2 | 開発者 | [アプリでブランドドメインを設定する](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | アプリのコードに軽微な変更を加えます。 |
 | 3 | マーケティング担当者 | [ブランドドメインを使用してテストする](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | 必要に応じて | マーケティング担当者 | [ブランドドメインを編集または削除する](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### 手順
 
@@ -111,6 +119,8 @@ x-zendesk:
    > * 新しいブランドドメインが利用可能になるまで、最大24時間かかる場合があります。
 
 
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
 #### CNAMEレコードのマッピング期限（7日間）の更新
 
 ブランドドメインの作成から7日以内に完全修飾ドメインのCNAMEレコードがAppsFlyerへマッピングされなかった場合、新しいブランドドメインは機能しません。
@@ -132,6 +142,8 @@ x-zendesk:
 > **注意**
 >
 > 7日間の設定期間を更新しない場合は、削除アイコン（<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />）をクリックしてブランドドメインを削除できます。削除できるのは、AppsFlyerにまだマッピングされていないブランドドメインのみです。
+
+<div id="custom-ssl-certificate-optional" />
 
 #### カスタムSSL証明書（任意）
 
@@ -304,6 +316,8 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 
 <Accordion title="ブランドドメインを編集、検証、削除する">
 
+<div id="edit-a-branded-domain-mapping" />
+
 #### **ブランドドメインのマッピングを編集する**
 
 既存の完全修飾ドメインのマッピング先を、別のOneLinkサブドメインに変更できます。この場合、CNAMEを再設定する必要はありません。
@@ -321,6 +335,8 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 >
 > 配信中のキャンペーンで使用しているブランドドメインを変更すると、リンクの動作が変わったり、リンクが機能しなくなったりする可能性があります。
 
+<div id="verify-a-branded-domain-mapping" />
+
 #### **ブランドドメインのマッピングを検証する**
 
 ブランドドメインにマッピングされているOneLinkサブドメインを変更した後は、ブランドドメインが正しくマッピングされていることを確認してください。
@@ -336,15 +352,21 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 > CNAMEレコードがまだマッピングされていないことが原因で検証に失敗した場合は、検証失敗ダイアログに表示される期日まで、最大7日間の設定期間があります。
 > 指定された期日までにCNAMEレコードがマッピングされなかった場合は、7日間の設定期間を更新する必要があります。
 
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
 #### **ドメインのCNAMEレコードがAppsFlyerを参照しなくなった場合：**
 
 CNAMEレコードを変更し、AppsFlyerを参照しない状態にすると、該当するブランドドメインはAppsFlyerから削除されます。
+
+<div id="delete-a-branded-domain-mapping" />
 
 #### **ブランドドメインのマッピングを削除する：**
 
 ブランドドメインを削除するには、AppsFlyerのCSMまたはhello@appsflyer.comまでお問い合わせください。
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## トラブルシューティング、特性、制限事項
 

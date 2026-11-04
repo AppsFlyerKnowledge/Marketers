@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** Web Performance Measurementで正確なアトリビューションを維持しながら、キャンペーンをより細かな粒度で分析するには、WebサイトのランディングページURLに、一貫性のある適切なパラメーターを設定することが重要です。
 
+<div id="about-url-attribution-parameter-classes" />
+
 ## URLアトリビューションパラメータの種類について
 
 AppsFlyerは、ランディングページURL（ユーザーがクリックするリンク）に含まれるキャンペーンパラメータを読み取り、セッションやイベントを適切な**メディアソース**、**キャンペーン**、および利用可能な場合は**広告セット**や**広告**などのより詳細な階層へアトリビューションします。
@@ -36,6 +38,8 @@ URLパラメーターは、大きく以下の2種類に分かれます。
 * UTMクラス：標準的なUTMパラメーター
 
 Web Performance MeasurementでURLパラメーターがどのように処理されるかについては、「<Anchor target="_blank" href="/marketers/ja/docs/about-traffic-source-resolution">トラフィックソースの判別について</Anchor>」をご覧ください。
+
+<div id="supported-pid-and-utm-parameters" />
 
 ### 対応しているPID／UTMパラメーター
 
@@ -54,6 +58,8 @@ Web Performance Measurementで利用できるパラメーターは以下のと�
 | 9 | `utm_medium` | メディアタイプ | UTM | 不可 | `media_type` |
 | 10 | `utm_campaign` | キャンペーン名 | UTM | 可能 | `campaign_name` |
 
+<div id="choose-the-right-attribution-parameters" />
+
 ## 適切なアトリビューションパラメータの選択
 
 AppsFlyerは、メディアソースやキャンペーンなど、レポート項目ごとに定義された優先順位（ウォーターフォール）に従って、URLパラメータを個別に評価します。この仕組みにより、AppsFlyer独自の**PIDパラメータ**と、標準的なマーケティングパラメータである**UTM**を同じURL内で併用できるため、Google Analyticsなど他の分析ツールと併せてAppsFlyerのWebアトリビューションを利用できます。
@@ -65,6 +71,8 @@ AppsFlyerは、メディアソースやキャンペーンなど、レポート�
 <Accordion title="シナリオA：PIDパラメータのみを使用する場合（AppsFlyerでのレポートを重視）">
 
 AppsFlyerでのレポートを主な目的とする場合は、PIDパラメータを使用します。
+
+<div id="example" />
 
 #### 例
 
@@ -81,6 +89,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 <Accordion title="シナリオB：UTMパラメータのみを使用する場合（フォールバック）">
 
 `pid` が存在しない場合、AppsFlyerはUTMパラメータを使用して判定します。
+
+<div id="example-1" />
 
 #### 例
 
@@ -100,6 +110,8 @@ AppsFlyerでは、同じURL内でPIDパラメータとUTMパラメータを併�
 
 AppsFlyerは、メディアソースやキャンペーンなどの各アトリビューション項目をそれぞれ独立して処理します。各項目について優先順位（ウォーターフォール）に従って判定を行い、通常は該当項目において**PIDパラメータ**が**UTMパラメータ**より優先されます。
 
+<div id="example-1-overlapping-parameters" />
+
 #### 例1：同じ項目がPIDパラメータとUTMパラメータの両方に含まれている場合
 
 ```http
@@ -109,6 +121,8 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 * **メディアソース：** AppsFlyerは `pid` と `utm_source` の両方を検出します。この項目では優先順位に従い、`facebook_ads`を記録します。
 * **キャンペーン：** AppsFlyerは `c` と `utm_campaign` の両方を検出します。この項目では優先順位に従い、`summer_sale`を記録します。
 * **結果：** AppsFlyerでは優先順位の高いPIDパラメータの値が使用されます。一方で、外部ツールでは引き続きUTMパラメータを利用できます。
+
+<div id="example-2-mixed-parameter-classes" />
 
 #### 例2：PIDパラメータとUTMパラメータが異なる項目に設定されている場合
 
@@ -121,6 +135,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **結果：** AppsFlyerは各項目を個別に判定するため、PIDパラメータとUTMパラメータを組み合わせていても、両方の値を利用して正しくアトリビューションを行います。
 
 </Accordion>
+
+<div id="other-best-practices" />
 
 ## その他のベストプラクティス
 

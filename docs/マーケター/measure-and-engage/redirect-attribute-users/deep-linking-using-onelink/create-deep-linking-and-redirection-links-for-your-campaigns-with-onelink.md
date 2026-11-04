@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** OneLinkを使用して、意図したユーザー体験を提供するリンクを作成します。リンクをクリックしたユーザーは、適切なアプリストア、WebのURL、またはアプリ内へリダイレクトされ、メディアソースにアトリビューションされます。
 
+<div id="onelink-links-and-experiences" />
+
 ## OneLinkリンクとユーザー体験
 
 <Embed title="OneLink｜キャンペーン用ディープリンク・リダイレクトリンクの作成" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ x-zendesk:
 * ユーザー体験に応じた設定
 * ディープリンクとリダイレクトの設定
 * 追加パラメータの設定
+
+<div id="create-a-onelink-link" />
 
 ## OneLinkリンクの作成
 
@@ -57,6 +61,8 @@ x-zendesk:
 3. ［**リンクを追加**］をクリックします。
 4. 提供する［[ユーザー体験](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#experiences)］を選択します。
 5. メディアソースを選択するか、独自のメディアソースを入力します。 AppsFlyerでは、データがこのメディアソースに紐づいて表示されます。メディアソースは、リンク内の`pid`パラメータの値として設定されます。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -116,6 +122,8 @@ x-zendesk:
 
    既存ユーザーがリターゲティング以外のリンク（UA）をクリックした場合も、アプリが開き、同じユーザー体験が提供されます。ただし、リエンゲージメントは通常のセッションとして記録されるため、オウンドメディアキャンペーンの成果を計測できません。
 
+   <div id="important" />
+
    > 🚧 **重要**
    >
    > リターゲティングを機能させるには、アプリ側でもリターゲティングを有効にする必要があります。
@@ -128,6 +136,8 @@ x-zendesk:
 6. （任意）［**リンクのブランディング**］サブセクションで、以下を設定します。
    * ブランドに合った別のドメインを選択します。<Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">詳細はこちら</Anchor>
    * <span id="url-id"></span>キャンペーンの訴求内容が伝わるようにURL IDを編集します。 URL IDは英数字の組み合わせで、最大50文字です。デフォルトは8文字です。
+
+<div id="enable-retargeting-for-the-app" />
 
 #### アプリのリターゲティングの有効化
 
@@ -169,6 +179,8 @@ x-zendesk:
   * af\_og\_description（最大300文字）
   * af\_og\_image
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * AppsFlyerのUI以外でも、リンクにOGタグのパラメータを追加できます。
@@ -179,6 +191,8 @@ x-zendesk:
 <div id="social-app-landing-page" />
 
 <Accordion title="ソーシャルアプリ向けランディングページ">
+
+<div id="important-1" />
 
 > 🚧 **重要**
 >
@@ -216,9 +230,13 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 * **アプリがインストールされている場合**：クリックしたユーザーのアプリが開きます。
 * **アプリがインストールされていない場合**：該当するアプリストアへ誘導されます。インストール後は、ディファードディープリンクでユーザーを誘導できます（[ディープリンクとディファードディープリンク](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)で説明しています）。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > ソーシャルアプリ向けランディングページは、OneLinkのショートURLにのみ対応しています。
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **ソーシャルアプリ向けランディングページを使用するには：**
 
@@ -228,6 +246,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 3. OneLinkのショートURLをソーシャルアプリに投稿します。
 
 アトリビューションは、アトリビューション設定に基づいて決まります。
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **ソーシャルアプリ向けランディングページを設定するには：**
 
@@ -269,6 +289,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 
 ディファードディープリンクでは、新規ユーザーにも既存ユーザーと同様のディープリンク体験を提供します。ただし、新規ユーザーはまずアプリストアへ誘導され、アプリをダウンロードして起動した後に、特定の体験やページへ移動します。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > ディープリンクとディファードディープリンクの設定には、Android／iOS開発者の対応が必要です。
@@ -283,6 +305,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
        * SDK V6.1以降が必要です。
        * クリックのルックバック期間は最大15分です。
      * **注意**：OneLinkでディープリンクをすでに利用している場合は、UDLではなく、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">Android</Anchor>や<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor>の従来の方法を使用している可能性があります。
+
+       <div id="tips" />
 
        > 📄 **ヒント**
        >
@@ -318,6 +342,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
       </Tabs>
 
    3. ［**追加パラメータ**］セクションで、開発者と決めた内容に従い、必要に応じてカスタムパラメータ**deep\_link\_sub2-10**とその値を追加します。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -362,6 +388,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 * アプリをインストールしていない新規ユーザー
 * アプリをインストール済みの既存ユーザー
 
+<div id="new-users-without-your-app-installed" />
+
 #### アプリをインストールしていない新規ユーザー
 
 **前提条件**：アプリがインストールされていない<Anchor target="_blank" href="/marketers/ja/docs/registering-test-devices">登録済みテストデバイス</Anchor>。
@@ -384,6 +412,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
    URLに指定したメディアソース（例：test）とキャンペーン名に、新しいクリックとインストールが記録されていることを確認します。
 
 リンクが想定どおりに機能しない場合 <Anchor target="_blank" href="/marketers/ja/docs/onelink-troubleshooting-and-faq">OneLinkのよくある質問とトラブルシューティングガイド</Anchor>をご確認ください。
+
+<div id="existing-users-with-your-app-installed" />
 
 #### アプリをインストール済みの既存ユーザー
 
@@ -408,6 +438,8 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 リンクが想定どおりに機能しない場合 <Anchor target="_blank" href="/marketers/ja/docs/onelink-troubleshooting-and-faq">OneLinkのよくある質問とトラブルシューティングガイド</Anchor>をご確認ください。
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## その他の手順
 
@@ -489,6 +521,8 @@ iOS 15以降、AppleはiCloud+ユーザーに<Anchor target="_blank" href="https
 
 この方法では、OneLinkのショートURLとiOSのApp Clips技術を組み合わせ、フル版アプリをインストールしなくても、ユーザーを製品内の特定の操作フローへ誘導できます。 OneLinkのショートURLからユーザーのアトリビューションデータを取得し、DDLで実現したい体験に近い、カスタマイズしたApp Clipの体験へユーザーを誘導します。 App Clipからフル版アプリへユーザーを誘導する導線を追加することもできます。**注意**：App Clipを利用する方法でフル版アプリを再インストールすると、AppsFlyerでオーガニックインストールとして報告される場合があります。 0>
 
+<div id="flow" />
+
 #### **処理の流れ**
 
 App Clipを利用したDDLの処理の流れは、以下のとおりです。
@@ -524,6 +558,8 @@ App Clipを利用したDDLの処理の流れは、以下のとおりです。
 
 <Accordion title="クリップボードを利用する方法">
 
+<div id="flow-1" />
+
 #### **処理の流れ**
 
 クリップボードを利用したDDLの処理の流れは、以下のとおりです。
@@ -540,6 +576,8 @@ App Clipを利用したDDLの処理の流れは、以下のとおりです。
 5. ユーザーが［**アプリを入手**］をタップします。
 6. ユーザーはApp Storeへ誘導され、アプリをインストールします。その後、初回起動時にアプリ内の特定のページへ誘導されます。
 
+<div id="requirements" />
+
 #### **要件**
 
 コピー＆ペースト用ランディングページを利用するDDLには、次の要件があります。
@@ -549,6 +587,8 @@ App Clipを利用したDDLの処理の流れは、以下のとおりです。
 * AppsFlyer iOS SDK V6以降を使用していること。
 * iOSアプリの開発者が、クリップボードからURL内のディファードディープリンクデータを貼り付けるコードを実装していること。このコードはAppsFlyer SDKには含まれていません。
 * ユーザーがチェックボックスをオンのままにしていること（デフォルト）。チェックを外すとURLがコピーされず、ディファードディープリンクは機能しません。
+
+<div id="setup" />
 
 #### **設定**
 
@@ -563,6 +603,8 @@ App Clipを利用したDDLの処理の流れは、以下のとおりです。
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 補足情報
 

@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** ローデータレポートには、Protect360エンジンや手動で追加した検証ルールによってブロックされたインストールとアプリ内イベントが表示されます。
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Protect360ローデータレポートについて
 
 ローデータレポートには、次の特徴があります。
@@ -42,6 +44,8 @@ x-zendesk:
 * レポートの種類と、ダウンロード、API、Data Locker（S3バケット）での利用可否は、以下の各セクションで説明します。
 * 過去のローデータレポートの保存期間は、レポート取得ツールとローデータの取得元によって異なり、最大90日です。 0>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > プライバシーに関連するローデータの制限により、レポートの一部のフィールドが空欄になる場合があります。例えば、アトリビューションに貢献した流入元のフィールドが該当します。
@@ -49,6 +53,8 @@ x-zendesk:
 <div id="report-types" />
 
 <Accordion title="レポートの種類">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Protect360ローデータレポートの種類
 
@@ -75,6 +81,8 @@ x-zendesk:
   * ダッシュボードの画面：1暦月の1つのメディアソースに限定されます。
   * Pull API：すべてのメディアソースを含みます。（制限：アプリ所有者のみ利用できます。）
 
+<div id="using-post-attribution-reports" />
+
 #### **ポストアトリビューションレポートの利用方法**
 
 * 必要に応じて、インストール／アプリ内イベントの日付範囲と、検知日の日付範囲を組み合わせて指定します。
@@ -84,6 +92,8 @@ x-zendesk:
   * インストール日の範囲は、当日から過去60日間に設定します。
   * detect-from／detect-toの範囲は、当日の前日に設定します。  
     これにより、前日に検知されたポストアトリビューション不正の一覧を取得できます。数日間レポートを取得していなかった場合は、検知日の範囲を調整して取得してください。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -97,11 +107,15 @@ x-zendesk:
 
 <Accordion title="取得ツール別のローデータの利用可否">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### 取得ツール別のProtect360ローデータの利用可否
 
 <table><thead><tr><th>レポート</th><th>データの更新頻度</th><th>Pull API</th><th>データ出力ページ</th><th>Data Locker</th></tr></thead><tbody><tr><td>インストール</td><td>リアルタイム</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>ブロックされたアプリ内イベント</td><td>リアルタイム</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>クリック</td><td>リアルタイム</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>ブロックされたインストールのポストバック</td><td>リアルタイム</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>ポストアトリビューションインストール</td><td>日次、UTC 15:00</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>ポストアトリビューションアプリ内イベント</td><td>日次、UTC 20:00</td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr><tr><td colspan="5"><p>\* Data Lockerで取得するレポートの制限：</p><ul><li>運用媒体の開示設定には対応していません。そのため、代理店経由のトラフィックには、インストールを送信したメディアソースの名前が含まれません。</li><li>他のData Lockerレポートとは異なる、専用のフィールド構成です。このフィールドの一覧は変更できません。</li><li>リターゲティングデータは、インストールレポートでは利用できません。ポストアトリビューションインストールレポートでのみ利用できます。 </li></ul></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## ローデータレポートの取得
 
@@ -142,6 +156,8 @@ Pull APIトークンが必要です。<Anchor target="_blank" href="/marketers/j
 3. 必要に応じてパラメータを入力します。パラメータは次の表に記載されています。
 4. レポートを取得します。
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Pull APIローデータレポートのパラメータ
 
 | パラメータ | 説明 | 形式 | 必須 |
@@ -169,11 +185,15 @@ Data Lockerは、ローデータをAWS S3バケットに書き込みます。
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Protect360レポートの構造
 
 Protect360レポートの基本的なフィールド構成は、ユーザー獲得レポートと同じです。
 
 通常の<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary">ローデータレポートのフィールド</Anchor>に加え、Protect360レポートには、次のリターゲティングとブロック理由のフィールドがあります。
+
+<div id="blocked-reasons" />
 
 ### ブロック理由
 
@@ -203,6 +223,8 @@ Protect360レポートの基本的なフィールド構成は、ユーザー獲�
 
 次の表に、インストール単位のブロック理由を示します。
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### インストール単位：偽のインストールのブロック理由の詳細
 
 | ブロック理由 | ブロック理由の詳細 | 説明 |
@@ -216,6 +238,8 @@ Protect360レポートの基本的なフィールド構成は、ユーザー獲�
 | validation\_bots | invalid\_device\_parameters | 特定のデバイスフィールドが、お客様の定義した想定値と一致しない場合 |
 | validation\_bots | validation\_rules | 手動で定義した検証ルールに基づき、インストールをブロックするルール |
 | bots | ai\_layer | AIモデルで膨大なデータを分析し、不正なデバイスの活動やインストールの検知能力を高めます。 |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### インストール単位：アトリビューションハイジャックのブロック理由の詳細
 
@@ -241,6 +265,8 @@ Protect360レポートの基本的なフィールド構成は、ユーザー獲�
 
 次の表に、不正パターンのまとまりに基づくブロック理由を示します。
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### 不正パターンのまとまりに基づく判定：偽のインストールのブロック理由
 
 | ブロック理由 | ブロック理由の詳細 | 説明 |
@@ -249,6 +275,8 @@ Protect360レポートの基本的なフィールド構成は、ユーザー獲�
 | bots, site\_blacklist | device\_emulators | 仮想環境で動作する自動スクリプトによって大量に生成されたインストール |
 | site\_blacklist | device\_farms | 未識別の（新規）デバイスの割合が高い場合 |
 | behavioral\_anomalies | behavioral\_anomalies | 一般的なアプリユーザーの行動パターンと比較して、不審なアプリ内の行動 |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### 不正パターンのまとまりに基づく判定：アトリビューションハイジャックのブロック理由
 
@@ -273,6 +301,8 @@ Protect360レポートの基本的なフィールド構成は、ユーザー獲�
 
 次の表に、アプリ内イベント単位のブロック理由を示します。
 
+<div id="in-app-level-block-reasons" />
+
 #### アプリ内イベント単位のブロック理由
 
 | ブロック理由 | ブロック理由の詳細 | 説明 |
@@ -283,6 +313,8 @@ Protect360レポートの基本的なフィールド構成は、ユーザー獲�
 | validation\_inapps | validation\_rules | 手動で定義した検証ルールに基づく判定 |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### リターゲティング
 
@@ -296,6 +328,8 @@ Protect360のローデータには、リターゲティングキャンペーン�
 Protect360のリターゲティングローデータは、リアルタイムのブロックと、ポストアトリビューションで検知した不正について、次の方法で利用できます。
 
 <table><thead><tr><th>レポート </th><th>データ出力</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>インストール</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>ポストアトリビューションインストール</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* リエンゲージメントデータは利用できません。</span><br/> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### ハイジャックされたインストールのアトリビューション修正
 

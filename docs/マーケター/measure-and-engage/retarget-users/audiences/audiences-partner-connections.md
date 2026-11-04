@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：**  作成したオーディエンスを広告媒体などのパートナーに接続します。
 
+<div id="about-partner-connections" />
+
 ## パートナー接続について
 
 パートナー接続により、オーディエンスを簡単に継続的にパートナーに送ることができるため、カスタマイズされたキャンペーンを提供することができます。オーディエンスパートナーの一覧、連携に必要な要件、各パートナーでサポートされているユーザー識別子などを説明しています。
@@ -232,6 +234,8 @@ x-zendesk:
 | Zoneads | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoneads.png" width="118px" /> | APIキー | <ul><li>IDFA</li><li>GAID</li></ul> |
 | Zoomd DSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png" width="118px" /> | APIキー | <ul><li>IDFA</li><li>GAID</li></ul> |
 
+<div id="we-love-working-with-new-audiences-partners" />
+
 > 📘 **新しいオーディエンスパートナーを募集しています！**
 >
 > お探しのパートナーが上記リストに表示されていない場合は、お気軽にCSMまでお問い合わせください。連携の可能性についてパートナー様に確認させていただきます。
@@ -324,6 +328,8 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
     ```
 12. **BUCKET-NAME**を、AppsFlyerがオーディエンスをアップロードするバケットの名前に置き換えます。
 
+    <div id="note" />
+
     > 📘 **注意**
     >
     > ポリシーには、ルートバケットのみを含め、パスに追加のディレクトリを含めないでください。例えば、リソース **arn：aws：s3 ::: BUCKET-NAME / Directory / \***はサポートされていません。ファイルを特定のディレクトリに転送する必要がある場合は、ステップ14を参照してください。
@@ -361,6 +367,8 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
 
 <Accordion title="Braze">
 
+<div id="prerequisite" />
+
 > 🚧 **前提条件**
 >
 > アプリにBrazeとAppsFlyerの両方のSDKが実装されていることを確認してください。
@@ -370,7 +378,7 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
 > * Braze External ID パラメータ
 > * CUID項目
 >
-> #### Braze External ID パラメータの使用
+> #### <span id="using-a-braze-external-id-parameter"></span>Braze External ID パラメータの使用
 >
 > Brazeにオーディエンスをアップロードするには、AppsFlyer SDKの `setPartnerData` を使用して、各ユーザーのBraze External ID をAppsFlyerに渡す必要があります。使用例は以下の通りです：
 >
@@ -399,6 +407,8 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
 > </Tab>
 > </Tabs>
 >
+
+<div id="using-the-cuid-field" />
 
 #### CUID項目の使用
 
@@ -568,6 +578,8 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
 
 <Accordion title="Leanplum">
 
+<div id="prerequisite-1" />
+
 > 🚧 **前提条件**
 >
 > オーディエンスをLeanplumに正常にアップロードする方法：
@@ -599,6 +611,8 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
 <div id="moengage" />
 
 <Accordion title="MoEngage">
+
+<div id="prerequisite-2" />
 
 > 🚧 **前提条件**
 >
@@ -666,6 +680,8 @@ AppsFlyerは公開SlackチャンネルにデバイスIDのCSVファイルをア�
 6. **Organization** と **Ad account**を選択します。
 7. **保存**をクリックしてください。  
    オーディエンスはアップロード後24時間後にSnapchatの管理画面に表示されます。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

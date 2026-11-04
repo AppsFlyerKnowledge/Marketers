@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyerが購入とサブスクリプションを検証する仕組みを説明し、レシート検証とROI360ストア収益の2つの機能を比較します。
 
+<div id="about-purchase-and-subscription-validation" />
+
 ## 購入・サブスクリプションの検証について
 
 収益データの正確性と信頼性を確保するには、購入とサブスクリプションの検証が欠かせません。ユーザーがアプリ内で1回限りの購入やサブスクリプションの契約を行った際に、アプリストア（Apple App StoreとGoogle Play）に取引を照会し、正当で支払い済みの取引だけを計測・アトリビューションの対象にします。
@@ -29,7 +31,11 @@ AppsFlyerでは、アプリ内購入とサブスクリプションの収益を�
 
 アプリに適した機能を選べるよう、各機能の概要と[比較表](#レシート検証とroi360ストア収益の比較)を紹介します。
 
+<div id="the-two-solutions-for-purchase-and-subscription-validation" />
+
 ## 購入・サブスクリプションの検証に使える2つの機能
+
+<div id="receipt-validation" />
 
 ### レシート検証
 
@@ -44,7 +50,11 @@ AppsFlyerでは、アプリ内購入とサブスクリプションの収益を�
 * <Anchor target="_blank" href="/marketers/ja/docs/about-receipt-validation">レシート検証について</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-receipt-validation">レシート検証の設定</Anchor>
 
+<div id="roi360-store-revenuepremium" />
+
 ### ROI360ストア収益（有料機能）
+
+<div id="important" />
 
 > 🚧 **重要**
 >
@@ -60,6 +70,8 @@ ROI360ストア収益は、アプリ内購入とサブスクリプションの�
 
 * <Anchor target="_blank" href="/marketers/ja/docs/about-roi360-store-revenue">ROI360ストア収益について</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-store-revenue">ROI360ストア収益の設定</Anchor>
+
+<div id="compare-receipt-validation-and-roi360-store-revenue" />
 
 ## レシート検証とROI360ストア収益の比較
 

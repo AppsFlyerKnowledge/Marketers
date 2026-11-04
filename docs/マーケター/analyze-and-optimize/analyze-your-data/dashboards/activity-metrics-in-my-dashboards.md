@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** <Anchor target="_blank" href="/marketers/ja/docs/my-dashboards">マイダッシュボード</Anchor>のアクティビティ指標を使うことで、任意の日付範囲において、アプリのパフォーマンスを迅速に把握し、エンゲージメントの傾向を捉え、収益を分析し、問題を早期に検知できます。精度と柔軟性が向上しています。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 純収益指標は、2026年7月から8月にかけて段階的にクライアントに展開される。まだ表示されていない場合は、アクションは必要ありません。この期間中、アカウントで使用できるようになります。 <Anchor target="_blank" href="/marketers/ja/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">Bulletin を参照してください。コホートとアクティビティのメトリクスは、My ダッシュボード s</Anchor> でアップデートされます。
+
+<div id="about-activity-metrics" />
 
 ## アクティビティ指標について
 
@@ -37,6 +41,8 @@ x-zendesk:
 * **日次または月次**（アクティブユーザー）単位での内訳を用いて、レポートをカスタマイズできます。
 
 ※マイダッシュボードでは、**アクティビティ**という用語が**アクチュアル**に改名されました。これは、これらの指標が選択した日付範囲内における実際のユーザー行動を反映したものであり、LTV 集計に基づくものではないことを明確にするためです。セッション、グロス収益、合計収益 では、アクチュアル がデフォルトの期間として設定されています。
+
+<div id="dashboard-information" />
 
 ## ダッシュボード情報
 
@@ -56,6 +62,8 @@ x-zendesk:
 
 より詳細な手順はこちらをご確認ください。
 
+<div id="available-activity-metrics" />
+
 ## 利用可能なアクティビティ指標
 
 * アクティブユーザー、過去31日間のアクティブユーザー、DAU/MAUを除くすべての指標は、コホート期間および LTV にも対応しています。
@@ -71,6 +79,8 @@ x-zendesk:
 | First visit | ウェブアプリへの初回訪問数。コンバージョン\_name = first\_visit の行としてカウントされます。Web アプリでのみ使用できます。 |
 | 再訪問 | ウェブアプリへの訪問を返す非オーガニックの件数。コンバージョン\_name = revisit の行としてカウントされます。Web アプリでのみ使用できます。 |
 | ユーザー獲得 | クロス-プラットフォーム属性またはウェブアプリで使用できます。ウェブアプリの場合、ユーザーアクイジションイベントが設定されていない限り、ユーザーアクイジションは最初のビジットを反映します。モバイルアプリ s の場合、ユーザー収集はインストールと等しくなります。マルチの複数のアプリを一緒に表示する場合、ユーザー取得= インストール+ 最初の訪問(またはクライアントによって設定されたカスタムのウェブイベント)。 |
+
+<div id="available-in-app-metrics" />
 
 ## 利用可能なアプリ内イベントに関する指標
 
@@ -105,6 +115,8 @@ x-zendesk:
 * 正味収益がどちらからも提供されない場合、メトリクスはN/A を示します。
 
 <Anchor target="_blank" href="/marketers/ja/docs/about-roi360-store-revenue">ROI360についてストア 収益</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure">アプリ内イベントs - イベント構成</Anchor>を参照してください。
+
+<div id="supported-filter-and-group-by-dimensions" />
 
 ## サポートされているフィルタおよびグループ化のディメンション
 
@@ -141,6 +153,8 @@ x-zendesk:
   * 月
   * メディアソース
   * 代理店
+
+<div id="specifications-and-limitations" />
 
 ## 仕様と制限事項
 

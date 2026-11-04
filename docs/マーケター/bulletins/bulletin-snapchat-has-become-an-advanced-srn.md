@@ -27,6 +27,8 @@ x-zendesk:
 | **必要なアクション** | アクションは必要ありません |
 | **変更点** | 2023年9月12日に、SnapchatはアドバンスSRNになりました。これにより：<ul><li>クリックとインプレッションがAppsFlyerに送信され、IDFAが取得できない場合（例：ATT拒否ユーザーなど）の場合でも、確率論的モデリングによるアトリビューション計測が可能になります。</li><li>Snapchatビュースルーコンバージョンは、<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">ローデータレポートでは部分的に制限</Anchor>されています。</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **参照：**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/snapchat-advanced-srn-integration-setup">Snapchat— アドバンスSRNの連携設定</Anchor>

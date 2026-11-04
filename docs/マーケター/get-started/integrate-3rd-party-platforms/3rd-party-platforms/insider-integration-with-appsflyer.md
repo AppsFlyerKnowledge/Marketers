@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-insider" />
 
 ## Insiderの設定
 
@@ -48,10 +52,14 @@ x-zendesk:
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 パートナーとの連携を利用している間は、このトグルを有効にしておく必要があります。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -61,11 +69,15 @@ InsiderとAppsFlyerの接続には、固有のパートナー識別子を使用�
 
 ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にInsiderへポストバックを自動送信できます。このセクションでは、イベントごとに、ポストバック送信の対象とするユーザーの流入元を設定します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
 
 **アプリをダウンロードしたすべてのユーザーのポストバックをInsiderに送信するには**、<strong>［オーガニックを含むすべてのメディアソース］</strong>を選択します。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -88,6 +100,8 @@ AppsFlyerは、ユーザーのインストール後にInsiderへポストバッ�
    * **値のみ送信し、収益は送信しない：** 収益値を除くすべてのパラメータを送信します。
    * **値と収益を送信する**：収益値を含むすべてのイベントパラメータを送信します（イベントに収益値がある場合）。
 8. ［**連携を保存**］をクリックして、連携の設定を完了します。
+
+<div id="note" />
 
 > 📘 **注意**
 >

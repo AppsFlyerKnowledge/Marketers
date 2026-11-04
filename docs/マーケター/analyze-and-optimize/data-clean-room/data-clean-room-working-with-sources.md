@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要：** 概要： データクリーンルーム (DCR) と共有するカスタムデータソースを設定して、アトリビューションデータとマッチングさせDCRレポートを作成します。
 
+<div id="introduction" />
+
 ## はじめに
 
 多くのDCRレポートは、 **アトリビューションデータ**と**カスタムソース**のデータを照合するよう設計されています。この記事には、次の方法を含む、カスタムソースの扱いについて知っておく必要があるすべての情報が含まれています。
@@ -46,7 +48,7 @@ x-zendesk:
 >   * これらの接続がこれまでに設定されていない場合は、ソース作成時に設定するよう求められます。
 
 
-<span id="source-format"></span>ソースは、ソース作成およびレポート処理のエラーを防ぐために、以下の要件を満たしている必要があります。
+<span id="source-requirements"></span><span id="source-format"></span>ソースは、ソース作成およびレポート処理のエラーを防ぐために、以下の要件を満たしている必要があります。
 
 ソース内のデータは、次の要件を満たしている必要があります：
 
@@ -94,6 +96,8 @@ Amazon S3 または GCS に保存されているソースファイルは、以�
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## ソースの作成
 
 ソースを作成するプロセスは、 <strong>以下で説明するすべてのステップで構成されます。</strong>これらは、読みやすくするためにタブに分かれています。
@@ -130,6 +134,8 @@ Amazon S3 または GCS に保存されているソースファイルは、以�
    * こちらの手順に従って作成してください。
 2. ソースのデータの場所に基づいて、以下の関連する手順に進みます。
 
+<div id="source-locations-in-bigquery" />
+
 #### BigQueryにおけるソースの場所
 
 BigQueryのソースの場所の指定を完了します
@@ -138,6 +144,8 @@ BigQueryのソースの場所の指定を完了します
 2. ソースデータがある表を選択します。
 
 これらの選択を行うリストには、接続作成時に指定したBigQueryプロジェクトで使用可能なデータセットと表がそれぞれ含まれています。
+
+<div id="source-locations-in-snowflake" />
 
 #### Snowflakeのソースの場所
 
@@ -148,6 +156,8 @@ BigQueryのソースの場所の指定を完了します
 3. ソースデータがある表を選択します。
 
 これらの選択を行うリストには、接続の作成時に指定したSnowflakeアカウントの共有、スキーマ、およびテーブルがそれぞれ含まれています。
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### クラウドストレージバケット内のソースの場所
 
@@ -182,6 +192,8 @@ Amazon S3またはGCSのソースの場所は、接続によって指定され�
   * ディメンション ディメンション： アプリユーザーを分類する属性（例: 地域、インストール日、キャンペーンなど）/span>
   * 指標メトリック： アプリユーザーに関して収集した数値データ（収益、アプリ起動数、LTV など）
     * メトリックとして識別されるデータ項目には、 数値のみを含めることができます。
+
+<div id="loading-source-fields" />
 
 #### ソースフィールドの読み込み
 
@@ -242,6 +254,8 @@ Amazon S3またはGCSのソースの場所は、接続によって指定され�
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### フィールドの分類
 
 フィールド読み込み後、AppsFlyerがファイルを分析し、すべてのデータフィールド（列）のリストが <strong>[Available fields]（使用可能な項目）</strong>のリストに表示されます。
@@ -279,6 +293,8 @@ Amazon S3またはGCSのソースの場所は、接続によって指定され�
    既存のすべてのソースのリストは、データクリーンルームの <strong>Sources（ソース）</strong>項目で確認できます。
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## ソースを更新してレポート処理をトリガーします
 
@@ -336,6 +352,8 @@ AppsFlyerは、**現在の日付と２日前**のソースファイルの新し�
 <Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
+
+<div id="working-with-existing-sources" />
 
 ## 既存のソースの取り扱い
 
@@ -399,6 +417,8 @@ AppsFlyerは、**現在の日付と２日前**のソースファイルの新し�
 
 </Accordion>
 
+<div id="reference" />
+
 ## 参考
 
 <div id="manually-creating-a-folder-structure" />
@@ -406,6 +426,8 @@ AppsFlyerは、**現在の日付と２日前**のソースファイルの新し�
 <Accordion title="ストレージバケットのフォルダ構造を手動で作成します （選択した場合にのみ関連）">
 
 一般に最も簡単な方法は、AppsFlyerがソース作成プロセスの一部として必要なフォルダ構造を自動的に生成できるようにすることです。ただし、これらのフォルダを手動で作成する場合は、次のようにすると可能です。
+
+<div id="create-a-dcr-key-folder" />
 
 #### DCR キーフォルダの作成
 
@@ -421,6 +443,8 @@ DCRキーフォルダを作成すると、バケット/フォルダ構造は次�
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### 最上位のインプット用フォルダ
 
 必須ではありませんが、ベストプラクティスは、DCRキーフォルダーのすぐ下に最上位のインプット用フォルダーを作成することです。このフォルダは、DCRにアップロードするファイル専用です。
@@ -433,6 +457,8 @@ DCRキーフォルダを作成すると、バケット/フォルダ構造は次�
 最上位のインプット用フォルダを作成した後、バケット/フォルダ構造は次のようになります：
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### 各データソースの第2レベルのフォルダー
 

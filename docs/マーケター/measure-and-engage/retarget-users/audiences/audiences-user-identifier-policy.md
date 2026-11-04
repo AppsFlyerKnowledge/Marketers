@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** ユーザー識別子ポリシーを設定して、オーディエンスがパートナーと共有するデータを**アカウントレベル**で管理できるようにしましょう。
 
+<div id="about" />
+
 ## 概要
 
 オーディエンスを定義すると、 AppsFlyer Audiencesは、そのオーディエンスのメンバーの識別子を、選択した<Anchor target="_blank" href="/marketers/ja/docs/audiences-partner-connections">広告パートナー</Anchor>に送信します。これにより、これらのユーザーのみに広告を配信できるようになります。
@@ -35,6 +37,8 @@ iOS 14.5のプライバシー要件やその他のユーザープライバシー
 * パートナー接続レベルで
 
 この記事では、アカウントレベルでのユーザー識別子ポリシーの管理方法を解説します。パートナー接続レベルで共有される識別子の管理について詳しくは、オーディエンスガイドの<Anchor target="_blank" href="/marketers/ja/docs/audiences-guide#manage-connections">接続の管理</Anchor>セクションを参照してください。
+
+<div id="user-identifiers" />
 
 ## ユーザー識別子
 
@@ -72,6 +76,8 @@ iOS 14.5のプライバシー要件やその他のユーザープライバシー
 
 </Accordion>
 
+<div id="setting-account-level-user-identifier-policy" />
+
 ## アカウントレベルのユーザー識別子ポリシー設定
 
 ユーザー識別子ポリシーは管理者ユーザーのみが設定できます。
@@ -86,6 +92,8 @@ iOS 14.5のプライバシー要件やその他のユーザープライバシー
 4. **保存**をクリックしてください。
 
 IDFA ポリシーの変更は、AppleのiOS 14.5のリリースから有効になります。ユーザー識別子ポリシーに対するその他のすべての変更は、パートナーへの次のアップロードから有効になります。
+
+<div id="privacy-regulations" />
 
 ## プライバシー規制
 
@@ -145,7 +153,7 @@ Googleは、2024年3月6日のデジタル市場法（DMA）の施行の一環�
   2024年3月6日以前にGoogle内で既にオーディエンスの一部であったすべてのデバイスは影響を受けず、引き続きオーディエンスの一部です。既存のオーディエンスに追加された新しいオーディエンスまたは新しいEEAデバイスのみが、同意を得てGoogleにアップロードされます。
 * **オーディエンスアップロードサイズ**  
   同意を許可または拒否するユーザーの数に応じて、推定および実際のアップロードサイズが影響を受ける可能性があります。
-* #### **オーディエンスのインポート**
+* #### <span id="importing-audiences"></span>**オーディエンスのインポート**
 
   * **標準オーディエンスのインポート** - AppsFlyerは、AppsFlyer SDKから収集した同意データを追加し、同意されていないデバイスや指定されていないデバイスをオーディエンスから削除してから、Googleに送信します。
   * **「現状のまま」のオーディエンスをインポートする** - <Anchor target="_blank" href="/marketers/ja/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor>または<Anchor target="_blank" href="/marketers/ja/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>経由で「現状のまま」のオーディエンスをインポートする場合は、さらに2つの同意フィールドを追加する必要があります。これらのフィールドは次のとおりです：
@@ -156,6 +164,8 @@ Googleは、2024年3月6日のデジタル市場法（DMA）の施行の一環�
 | <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true/false | ユーザーが自分のデータをGoogleに送信することに同意したか？ |
 
 同意フィールドに価値が入力されていない場合は、「未指定」としてGoogleに送信されます。
+
+<div id="note" />
 
 > 📘 **注記**
 >

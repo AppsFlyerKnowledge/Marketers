@@ -27,6 +27,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## 設定
 
 OneLink Smart Scriptには、次の2つのバージョンがあります。
@@ -56,6 +58,8 @@ OneLink Smart Scriptには、次の2つのバージョンがあります。
 
 <Accordion title="パラメータ">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-the-smart-script" />
+
 #### Smart Scriptの実装用に開発者へ渡すパラメータと値
 
 | パラメータ／値 | 説明 | 設定内容の記入欄（開発者への共有用） |
@@ -71,6 +75,8 @@ OneLink Smart Scriptには、次の2つのバージョンがあります。
 | その他のクエリパラメータ | <ul><li>アトリビューションやディープリンクのために、OneLinkの送信URLに含めるその他のパラメータを指定します。</li><li>ディープリンクには、**deep\_link\_value**を追加します。<ul><li>パラメータの追加に加え、開発者と協力してディープリンクのロジックを実装する必要があります。<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#onelinkリンクの作成">詳細はこちら</Anchor>。</li></ul></li><li>受信URLのパラメータを使用するか、固定値を指定できます。</li></ul> |  |
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## 利用ケース
 
@@ -119,6 +125,8 @@ GCLIDパラメータを含むGoogle広告キャンペーンの通常のインス
 1. CSVから、またはインストールごとにPush APIでリアルタイムに、**af\_sub[1-5]** パラメータのGCLIDデータを取得します。
 2. GCLIDデータを、<Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">手動</Anchor>または<Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">Adwords API</Anchor>でGoogleにアップロードします。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > GCLIDを使用するこの方法は、Googleが公式にサポートまたは推奨しているものではありません。 GoogleがGCLIDパラメータを廃止した場合は、その変更に対応するようスクリプトを更新します。記事や添付スクリプトの更新通知を受け取れるよう、記事上部の<strong>［フォロー］</strong>ボタンをクリックして、この記事をフォローしてください。
@@ -141,6 +149,8 @@ SnapchatやX Adsなどの<Anchor target="_blank" href="/marketers/ja/docs/self-r
 
 **結果**：これらのSRNやメディアソースでは、受信リンクのメディアソースとキャンペーンの値が、それぞれ送信リンクの**pid**と**c**に設定されます。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > **受信URL**：https://hotel.me/af_pid=twitter&af_c=big_social
@@ -156,6 +166,8 @@ SnapchatやX Adsなどの<Anchor target="_blank" href="/marketers/ja/docs/self-r
 クリックの計測に対応するアドネットワークでは、AppsFlyerのアトリビューションリンクを使用できます。 AppsFlyerでこのリンクを設定する際に、モバイルWebサイトの誘導先URLを<strong><em>［リダイレクト先URLのパス（af\_r）］</em></strong>パラメータに追加すると、Webキャンペーンからアプリへのアトリビューションに対応できます。 
 
 **結果**：受信リンクに**af\_r**と**af\_redirect=true**が含まれている場合、ランディングページのスクリプトはリンクを変更しません。 Webページやランディングページに設定されているアプリストアへの直接リンクを、そのまま使用します。 
+
+<div id="example-1" />
 
 > 📄 **例**
 >

@@ -53,14 +53,20 @@ AppLovinの設定画面には5つのタブがあります：次の項目をク�
 
 <Accordion title="連携タブ">
 
+<div id="activate-partners" />
+
 ### パートナーの有効化
 
 この画面を**最初に開く**際には、次の***パートナーを有効にする***をオンにして、連携タブのパラメータ設定を有効にします。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークであるLINEは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。**All media sources, including organic** を選択し、全てのインストールポストバックをLINEに送信することを推奨します。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -68,12 +74,16 @@ AppLovinの設定画面には5つのタブがあります：次の項目をク�
 
 YouAppiでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 ユーザーのインストールおよびリエンゲージメント後に、自動ポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
 AppLovinに紐づくユーザーからのイベントのみにするには、**このパートナーに紐づくイベントのみ**を選択します。  
 [**オーガニックを含む全メディアソース**] を選択して、ユーザーベース全てをYouAppiにレポートできるようにします。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -102,6 +112,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -121,6 +133,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。ルックバック期間内に発生するインストール（初回起動）のみがGMPの成果に紐づきます。
@@ -129,9 +143,13 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
+<div id="click-attribution-link" />
+
 ### クリックアトリビューションリンク
 
 このリンクは、あなたが設定したすべての情報が含まれる計測リンクです。ユーザーが広告をクリックしたときに有効になるように、Liftoffへ入稿してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### ビュースルーアトリビューションルックバック期間
 
@@ -142,6 +160,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 **計測リンクパラメータ**： af\_viewthrough\_lookback
 
 ビュースルー計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
+
+<div id="impressions-attribution-link" />
 
 ### インプレッションのアトリビューションリンク
 
@@ -171,6 +191,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 このタブでは、パートナーがアドネットワークの場合、代理店の場合、または両方の場合に、MoPub に付与する権限を選択できます。MoPubのアトリビューションが無効になっている場合でも、権限タブはアクティブであり、MoPub に権限を付与することができます。
 
+<div id="ad-network-permissions" />
+
 ### アドネットワークへの権限付与
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
@@ -184,6 +206,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 * ***Protect360管理画面へのアクセスを許可する*** - Protect360のデータへのアクセスを許可します（パートナーのデータのみ）。＜広告主がProtect360に申込みしている場合のみ＞
 
 詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">アドネットワークへの権限付与</Anchor>をご覧ください。
+
+<div id="agency-permissions" />
 
 ### 代理店の許可
 

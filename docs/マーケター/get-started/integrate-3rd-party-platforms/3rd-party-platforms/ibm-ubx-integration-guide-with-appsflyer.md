@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるIBM UBX（Universal Behavior Exchange）は、IBM Marketing Cloudやその他のIBM Commerce製品の機能です。使いやすいコンソールから、顧客データの連携を一元管理できます。オープンなデータ交換機能により、チャネル、デバイス、接点を横断して顧客の購買行動を把握できます。効果的なキャンペーンをすばやく設計・実行し、その場で顧客に適した体験を提供してROIの向上につなげられます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-ibm" />
 
 ## IBMの設定
 
@@ -56,10 +60,14 @@ IBMの設定で使用するのは、<strong>［連携］</strong>タブのみで
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めてこの画面を開いたとき**は、下にあるトグルをオンにする必要があります。［***パートナーを有効化***］をオンにすると、［連携］タブのパラメータを設定できるようになります。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -68,6 +76,8 @@ IBMの設定で使用するのは、<strong>［連携］</strong>タブのみで
 IBMとAppsFlyerの接続には、固有の認証キーを使用します。まだ取得していない場合は、連携の設定を進める前にIBMから取得するか、以下の手順で取得してください。
 
 ![IBM_msc_new_2.png](https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png)
+
+<div id="obtaining-the-authorization-key" />
 
 ### 認証キーの取得
 
@@ -97,6 +107,8 @@ UBXアカウントにログインし、**Endpoints**タブに移動します。
 
 ![IBM_Endpoint_details.png](https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png)
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にIBMへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
@@ -106,6 +118,8 @@ AppsFlyerは、ユーザーのインストール後にIBMへポストバック�
 アプリをダウンロードしたすべてのユーザーのポストバックをIBMに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
 ［**保存**］をクリックします。
+
+<div id="in-app-event-settings" />
 
 ### アプリ内イベントの設定
 

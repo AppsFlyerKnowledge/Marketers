@@ -44,6 +44,10 @@ x-zendesk:
 
 <Accordion title="連携タブ">
 
+<div id="note" />
+
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 このタブを**初めて開く**場合、連携タブのパラメーター設定を有効にするために*パートナーを有効にする*のトグルをオンにする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
@@ -52,6 +56,8 @@ x-zendesk:
 Default Postback（デフォルトのポストバック）
 
 ユーザーのインストールおよびリエンゲージメント後に、自動ポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -77,6 +83,8 @@ Default Postback（デフォルトのポストバック）
 
 このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -95,6 +103,8 @@ Default Postback（デフォルトのポストバック）
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。ルックバック期間内に発生するインストール（初回起動）のみがGMPの成果に紐づきます。
@@ -102,6 +112,8 @@ Default Postback（デフォルトのポストバック）
 **計測リンクのパラメータ：** af\_click\_lookback
 
 クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
+
+<div id="click-attribution-link" />
 
 ### クリックアトリビューションリンク
 
@@ -130,6 +142,8 @@ Twitterでは、広告収益の連携はサポートしておりません。
 このタブでは、パートナーがアドネットワークの場合、代理店の場合、または両方の場合に、MoPub に付与する権限を選択できます。MoPubのアトリビューションが無効になっている場合でも、権限タブはアクティブであり、MoPub に権限を付与することができます。
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
+
+<div id="ad-network-permissions" />
 
 ### アドネットワークへの権限付与
 

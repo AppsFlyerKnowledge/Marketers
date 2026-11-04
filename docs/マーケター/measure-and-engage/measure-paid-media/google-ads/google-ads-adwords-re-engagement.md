@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** Google Adsのリターゲティングキャンペーンを計測しましょう。
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Google Adsのリターゲティングキャンペーン
 
 AppsFlyerでは、**Google Adsのエンゲージメント向けアプリキャンペーン**の成果を計測できます。  
@@ -33,6 +35,8 @@ AppsFlyer上では、これらのキャンペーンは「<Anchor target="_blank"
 * 一方、アプリをインストールしていないユーザーによるリターゲティングエンゲージメントは「**再インストール**」または「**リアトリビューション**」と呼ばれます。
 
 詳細は、<Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">Google Adsのエンゲージメント向けアプリキャンペーンのヘルプ</Anchor>を参照してください。
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Google Adsのエンゲージメント向けアプリキャンペーンの設定
 
@@ -70,6 +74,8 @@ Google Adsのエンゲージメント向けアプリキャンペーンを計測�
 
 Google Adsでのコンバージョンインポート方法については、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">こちらをご参照ください。</Anchor>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 他のイベントとは異なり、session\_startはAppsFlyerからGoogle Adsにインポートしていなくても、Google Ads API経由でGoogle Adsが成果を主張できます。
@@ -87,6 +93,8 @@ Googleのエンゲージメント向けアプリキャンペーンでは、<Anch
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## ダイナミックリマーケティングおよびショッピングキャンペーン
 
 AppsFlyerは、アプリ向けダイナミックリマーケティングおよびショッピングキャンペーンに対応しています。これらは他のリエンゲージメントキャンペーンと同様に扱われます。
@@ -94,6 +102,8 @@ AppsFlyerは、アプリ向けダイナミックリマーケティングおよ�
 * アプリ向けダイナミックリマーケティングについては<Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">こちらをご参照ください。</Anchor>
 * ショッピングキャンペーンについては<Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">こちらをご参照ください。</Anchor>
 * Google Adsのエンゲージメント向けアプリキャンペーンの詳細は<Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">こちらをご参照ください。</Anchor>
+
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
 
 ### 非アプリキャンペーン（Demand GenおよびSEM）への対応
 
@@ -112,6 +122,8 @@ AppsFlyerでは、以下を含むGoogleの非アプリキャンペーンにつ�
 * Demand GenまたはSEMキャンペーンによる**インストール**は、いかなるプラットフォームでも計測されません。
 
 **オプトアウト：** TikTokやMetaなどのプラットフォームとは異なり、Googleは現在、非アプリキャンペーンの計測のオプトイン／オプトアウトに対応していません。
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

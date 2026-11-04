@@ -31,15 +31,21 @@ x-zendesk:
 
 ## [<Image alt="API許可リスト" src="https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png" width="609px" />](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)
 
+<div id="overview" />
+
 ## 概要
 
 API許可リストで、AppsFlyerアカウントへのAPI呼び出しを許可するIPアドレスを指定し、データへの不正アクセスを防ぎます。許可リストを有効にすると、指定したIPアドレスからのAPI呼び出しのみが許可され、ほかのIPアドレスからの呼び出しはすべて拒否されます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > * 許可リストにアクセスして管理できるのは、管理者のみです。
 > * 許可リストの利用は任意で、デフォルトでは無効です。
 > * 有効化はアカウント単位で行い、アカウント内のすべてのアプリに適用されます。
+
+<div id="set-up-your-api-allowlist" />
 
 ## API許可リストの設定
 

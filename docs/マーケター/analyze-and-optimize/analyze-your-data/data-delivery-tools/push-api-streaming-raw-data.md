@@ -50,9 +50,13 @@ Push APIは、AppsFlyer計測とSKAdNetwork（SKAN）計測により生成され
 | メッセージの内容（項目） | <ul><li>メッセージに `key:value` 構造が存在します。</li><li>AppsFlyer計測の<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor>項目をご参照ください。</li><li>各キーはローデータ項目を表しています。<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#data-fields-dictionary">AppsFlyerのローデータ項目の説明</Anchor>を参照してください。</li><li>空白または null キーは一切送信されません。</li><li>この例には、null フィールドと空のフィールドの両方が含まれています。実際のポストバックには、空白の項目も null も含まれません。提供されている例は JSON 形式です。<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | タイムスタンプ項目の形式 | <ul><li>UTCタイムスタンプ：`yyyy-mm-dd hh:mm:ss.sss` 例：`2019-09-17 00:09:00.123` のように表示されます。日本時間の18:00にイベントが発生したとします。イベント時刻は UTCの 09:00 に変換されます。記録された時刻は UTC での時間です。</li><li>選択されたタイムゾーン（アプリ固有）タイムスタンプ：`yyyy-mm-dd hh:mm:ss.sss±th:tm`　（例：`yyyy-mm-dd hh:mm:ss.sss±th:tm`）日本時間の18:00にイベントが発生したとします。表示されるイベント時刻は 18:00+09:00 として記録されます。09:00 は東京のタイムゾーンです。</li></ul> |
 
+<div id="available-message-types" />
+
 #### 使用可能なメッセージタイプ
 
 <table><thead><tr><th>アトリビューションのコンテキスト</th><th>メッセージタイプ</th><th>conversion_type 項目</th><th>campaign_type 項目</th><th>event_name 項目</th><th>event_type 項目</th></tr></thead><tbody><tr><td>新規獲得</td><td>インストール\*</td><td>install</td><td><p>非オーガニック：UA</p><p>オーガニック：organic</p></td><td>install</td><td><ul><li>install</li><li>organic-install</li></ul></td></tr><tr><td>新規獲得 </td><td>新規獲得 - アプリ内イベント</td><td><span>install</span></td><td><p>非オーガニック：UA</p><p>オーガニック：organic</p></td><td>広告主が定義したイベント名</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>リターゲティング</td><td>リエンゲージメント</td><td>re-engagement</td><td>retargeting</td><td>re-engagement</td><td>re-attribution</td></tr><tr><td>リターゲティング </td><td>リエンゲージメント アプリ内イベント</td><td>re-engagement</td><td>retargeting</td><td>広告主が定義したイベント名</td><td>re-engagement-in-app-event</td></tr><tr><td>リターゲティング </td><td>リアトリビューション </td><td>reinstall</td><td>retargeting</td><td>re-attribution</td><td>re-attribution</td></tr><tr><td>新規獲得 </td><td>再インストール</td><td>reinstall</td><td><p>非オーガニック：UA</p><p>オーガニック：organic</p></td><td>reinstall</td><td><ul><li>reinstall</li><li>organic-reinstall</li></ul></td></tr><tr><td>リターゲティング</td><td>リアトリビューションアプリ内イベント</td><td>reinstall</td><td>retargeting</td><td>広告主が定義したイベント名</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">\* ビュースルー計測に紐づく一部のインストールは<a href="./about-raw-data-identifier-restrictions" target="_blank">制限されたメディアソース</a>に紐づいています。 </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### 固有の項目
 
@@ -76,6 +80,8 @@ Push APIは、AppsFlyer計測とSKAdNetwork（SKAN）計測により生成され
 | データ更新頻度 | <ul><li>インストール、再ダウンロード、アプリ内イベント：<ul><li>毎日処理されます。</li><li>AppsFlyerが iOS ポストバックを受信した翌日にエンドポイントに送信されます。</li><li>05:00–08:00 UTC（正確な時間は変動あり）にイベントメッセージを受け取ると予想されます。</li><li>例：月曜に受信したポストバックは火曜日の08:00 UTC（日本時間17時）以降に送信されます。</li></ul></li><li>iOSからのポストバックとポストバックのコピー：メッセージはAppsFlyerに到着した後すぐに送信されます。</li></ul> |
 | メッセージの例 | スプレッドシートには、メッセージの例が含まれています。提供されている例は JSON 形式です。 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">SKANメッセージの例</Anchor> |
 
+<div id="message-types-for-skan-attribution" />
+
 #### SKANアトリビューションのメッセージタイプ
 
 | メッセージタイプ | event\_name 項目 | skad\_redownload 項目 | event\_type 項目 |
@@ -88,7 +94,11 @@ Push APIは、AppsFlyer計測とSKAdNetwork（SKAN）計測により生成され
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Push APIエンドポイントの設定
+
+<div id="caution" />
 
 > ❗️ **注意**
 >
@@ -102,6 +112,8 @@ Push APIは、AppsFlyer計測とSKAdNetwork（SKAN）計測により生成され
 
 Push APIを設定するには、次のアクションリストを完了してください。
 
+<div id="push-api-setup-checklist" />
+
 #### Push API設定チェックリスト
 
 <table><thead><tr><th>手順No. </th><th>AppsFlyer計測</th><th>SKAdNetwork 計測： </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>既にアクティブなPush APIエンドポイントがある場合は、この手順をスキップしてください。 </p><p><a href="./push-api-streaming-raw-data#serverside-requirements-your-server">サーバー側の要件</a>を完了してください。</p></td></tr><tr><td>2</td><td>AppsFlyer計測については、<a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">Push API計画チェックリスト</a>を使用してエンドポイントの設定を計画してください。 </td><td>不適用</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">AppsFlyer計測エンドポイントの設定</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">SKAdNetwork計測エンドポイントの設定</a></td></tr></tbody></table>
@@ -111,6 +123,8 @@ Push APIを設定するには、次のアクションリストを完了してく
 <Accordion title="サーバー要件（お客様のサーバー）">
 
 サーバーが次の要件に準拠していることを確認してください。
+
+<div id="server-side-requirements" />
 
 #### サーバー要件
 
@@ -136,6 +150,8 @@ Push APIを設定するには、次のアクションリストを完了してく
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
 
+<div id="endpoint-planning-table" />
+
 #### エンドポイント計画テーブル
 
 | いいえ。 | 設定 | 詳細 | この列を使って計画した設定を記録してください。 |
@@ -153,6 +169,8 @@ Push APIを設定するには、次のアクションリストを完了してく
 <Accordion title="AppsFlyer計測エンドポイントの設定">
 
 APIへのアクセス権限を持つすべてのチームメンバーは、Push APIの設定を変更できます。他のアカウントユーザーは設定の閲覧のみ可能です。
+
+<div id="add-an-appsflyer-attribution-endpoint" />
 
 #### AppsFlyer計測のエンドポイントを追加する方法：
 
@@ -173,6 +191,8 @@ APIへのアクセス権限を持つすべてのチームメンバーは、Push 
 8. **保存**をクリックしてください。  
    Push APIがアクティブになりました。コンバージョンデータはエンドポイントに送信されます。
 9. 次の手順を使用して、エンドポイントをテストします。
+
+<div id="test-the-endpoint" />
 
 #### エンドポイントのテスト
 
@@ -214,6 +234,8 @@ APIへのアクセス権限を持つすべてのチームメンバーは、Push 
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## その他の手順—エンドポイントの管理
 
 APIへのアクセス権限を持つすべてのチームメンバーは、Push APIの設定を変更できます。他のアカウントユーザーは設定の閲覧のみ可能です。
@@ -243,6 +265,8 @@ APIへのアクセス権限を持つすべてのチームメンバーは、Push 
    エンドポイントが削除されます。
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## トラブルシューティング、特性、制限事項
 
@@ -331,6 +355,8 @@ https://your.server.com?consumer_key=abc456
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

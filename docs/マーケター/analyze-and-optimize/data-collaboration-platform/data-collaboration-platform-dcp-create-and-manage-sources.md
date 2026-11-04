@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** ファーストパーティデータを他のコラボレーターと安全に共有するためのソースを作成・管理します。
 
+<div id="about-dcp-sources" />
+
 ## DCPのソースについて
 
 Data Collaboration Platform（DCP）におけるソースとは、通常、クラウドストレージからAppsFlyerへアップロードするデータセットを指します。ソースはあらゆるコラボレーションの基盤となり、コラボレーターがオーディエンスの作成やアクティベーションに利用できるデータを提供します。この記事では、ソースの作成と管理に必要な情報をまとめて説明します。主な内容は以下のとおりです。
@@ -28,6 +30,8 @@ Data Collaboration Platform（DCP）におけるソースとは、通常、ク�
 * [ソースデータの要件](#ソースデータの要件)
 * [ソースの作成](#ソースを作成する)
 * [ソースの管理](#ソースを管理する)
+
+<div id="source-data-requirements" />
 
 ## ソースデータの要件
 
@@ -79,6 +83,8 @@ Amazon S3またはGCSに保存するソースファイルは、以下のファ�
 
 </Accordion>
 
+<div id="create-a-source" />
+
 ## ソースを作成する
 
 **前提条件：** ソースを作成する前に、AppsFlyer DCPがソースデータの取得に使用する<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">クラウドサービスを設定</Anchor>してください。接続がまだ設定されていない場合は、ソース作成の途中で設定を求められます。
@@ -100,6 +106,8 @@ Amazon S3またはGCSに保存するソースファイルは、以下のファ�
 <Accordion title="ステップ2：ソース名を設定">
 
 ソース名を入力します。ソースを識別しやすい任意の一意な名前を設定できます。必要に応じて、ソースの内容が分かる説明も追加できます（例：「2025年の全購入データ」）。
+
+<div id="requirements-and-guidelines" />
 
 #### 要件とガイドライン
 
@@ -128,6 +136,8 @@ Amazon S3またはGCSに保存するソースファイルは、以下のファ�
 
 **注記：** 大量のデータを扱う場合のパフォーマンスを最適化するため、データの一部が別途保存されることがあります。このデータはソースの更新時に更新され、ソースを削除すると削除されます。
 
+<div id="source-locations-in-bigquery" />
+
 #### BigQueryのソース保存場所
 
 **BigQueryのソースについて保存場所の指定を完了するには：**
@@ -136,6 +146,8 @@ Amazon S3またはGCSに保存するソースファイルは、以下のファ�
 2. ソースデータがあるテーブルを選択します。
 
 各選択肢には、接続の作成時に指定したBigQueryプロジェクトで利用可能なデータセットとテーブルがそれぞれ表示されます。
+
+<div id="source-locations-in-snowflake" />
 
 #### Snowflakeのソース保存場所
 
@@ -146,6 +158,8 @@ Amazon S3またはGCSに保存するソースファイルは、以下のファ�
 3. ソースデータがあるtableを選択します。
 
 各選択肢には、接続の作成時に指定したSnowflakeアカウントで利用可能なshare、schema、tableがそれぞれ表示されます。
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### クラウドストレージバケットのソース保存場所
 
@@ -165,10 +179,14 @@ AppsFlyerでフォルダを生成する場合、追加で必要なのは**ソー
     * ［**input**］フォルダは必須ではありません。<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCRの命名要件</Anchor>を満たしていれば、削除したり別の名前に変更したりできます。
     * 必須ではありませんが、［**input**］フォルダ、または同等の用途の別名フォルダを用意することを推奨します。特に、同じクラウドストレージバケットをデータファイルのアップロード（input）とレポートの受信（output）の両方に使用する場合は、強く推奨します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > フォルダパスを手動で作成した場合は、［**Source location**］セクションで指定する接続とパスが、実際に作成したパスと一致していることを確認してください。
 
+
+<div id="source-location-as-local-files" />
 
 #### ローカルファイルをソースとして使用する
 
@@ -179,6 +197,8 @@ AppsFlyerでフォルダを生成する場合、追加で必要なのは**ソー
 ソースの保存場所を選択する際に［**Local file system**］をクリックし、［**Next**］を選択します。これにより、デバイスからローカルファイルをアップロードできるようになります。
 
 <Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+
+<div id="note" />
 
 > 📘 **注記**
 >
@@ -197,10 +217,14 @@ Data Collaboration Platform（DCP）でソースを設定する際は、その�
 
 <Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
+<div id="important-1" />
+
 > 🚧 **重要**
 >
 > 選択する前に、どちらの方法が適しているかを確認してください。方法を選択して［**Generate folders**］をクリックすると、選択したクラウドサービス内にファイルパスが作成され、データアップロード方法の手順が表示されます。フォルダの重複やエラーを防ぐため、最初に選択した同期方法は、その後**1回だけ変更できます**。
 
+
+<div id="snapshot-upload-requirements" />
 
 #### Snapshotアップロードの要件
 
@@ -228,6 +252,8 @@ Data Collaboration Platform（DCP）でソースを設定する際は、その�
 | `data/` **サブフォルダ** | ファイルを整理するためのフォルダです。 | Parquet／CSV／Avroファイルをこのフォルダに保存します。 |
 | `_SUCCESS` **マーカー** | DCPに取り込み開始のタイミングを知らせます。 | すべてのデータファイルの配置が完了したら、`_SUCCESS` という名前の空ファイルを `v=` フォルダ内にアップロードします。 |
 | **対応ファイル形式とサイズ** |  | <ul><li>対応ファイル形式：.csv または .gz</li><li>最大ファイルサイズ：5GB</li></ul> |
+
+<div id="important-2" />
 
 > 🚧 **重要**
 >
@@ -280,6 +306,8 @@ source_name1/
 
 [<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
+
+<div id="append-upload-requirements" />
 
 #### Appendアップロードの要件
 
@@ -362,6 +390,8 @@ source_name/
 4. [ソースデータをテストする](#4ソースデータをテストする)
 5. [ソースを保存する](#5ソースを保存する)
 
+<div id="1-load-your-source-fields" />
+
 #### 1.ソースフィールドを読み込む
 
 ソースフィールドは自動的に読み込まれます。手動で読み込む必要がある場合は、ソースの保存場所に応じて以下の手順に従ってください。
@@ -369,6 +399,8 @@ source_name/
 **データウェアハウスのソース**
 
 データウェアハウス（BigQueryまたはSnowflake）にあるソースからフィールドを読み込むには、［**Load fields from source**］をクリックします。
+
+<div id="important-3" />
 
 > 🚧 **重要**
 >
@@ -426,14 +458,20 @@ source_name/
 </Tab>
 </Tabs>
 
+<div id="2-configure-the-source-fields" />
+
 #### 2.ソースフィールドを設定する
 
 ソースフィールドを読み込むと、各ソースフィールド（列）に対応するDCPフィールドが表示されます。各ソースフィールドを確認し、横にあるドロップダウンリストから適切なDCPフィールドを選択してマッピングします。以下の点に注意してください。
+
+<div id="note-1" />
 
 > 📘 **注記**
 >
 > * 双方がソースデータを共有する場合、対応するソース間でユーザーレベルのデータを照合できるよう、**少なくとも1つのフィールドを識別子として設定する必要があります**。識別子とは、アプリユーザーを一意に識別するフィールドです（例：CUID、AppsFlyer ID、ハッシュ化メールアドレス）。
 > * アップロードしたすべてのソースフィールド（列）を設定することは必須ではありませんが、分類やデータの正確な解釈、オーディエンス作成、インサイトの提案、検証を適切に行うため、できる限り設定することが重要です。
+
+<div id="ai-assisted-field-type-detection" />
 
 #### AIによるフィールドタイプの自動検出
 
@@ -450,10 +488,14 @@ DCPでは、列名をもとにAIが各ソース列に適したDCPフィールド
 * **Mapped：** AIが確度の高い一致候補を1つ特定した状態です。内容を確認して採用するか、必要に応じて手動で変更します。
 * **Couldn't map：** AIが対応するフィールドを特定できなかった状態です。手動でマッピングするか、未マッピングのままにします。
 
+<div id="limitations" />
+
 #### 制限事項
 
 * **列数の上限：** AIによる検出は、1ソースあたり最大100列まで対応します。100列を超えるソースでは、「limit exceeded」というメッセージが表示されます。
 * **フィールド名の長さ：** 列名が100文字を超える場合、AIによる検出は利用できません。
+
+<div id="important-4" />
 
 > 🚧 **重要**
 >
@@ -526,17 +568,25 @@ DCPでは、列名をもとにAIが各ソース列に適したDCPフィールド
   * App ID
   * テキストのリスト
 
+<div id="identifier-vs-list-of-identifiers" />
+
 #### **Identifier とList of identifiers の違い：**
 
 Identifierタイプでは、1行につき1つの値を保持します（例：1行に1つのメールアドレス、または1つのCUID）。List of identifiersタイプでは、1行につき複数の値を配列として保持します（例：1行に複数のハッシュ化メールアドレスやデバイスID）。1レコードにつき複数の識別子で照合する必要があるソースで使用します。
+
+<div id="important-5" />
 
 > 🚧 **重要**
 >
 > ソース内に **List of...** タイプ（List of identifiers、List of Numbers、List of Text）へマッピングしたフィールドが1つでもある場合、ソースファイルはParquet形式でアップロードまたは接続する必要があります。CSVおよびGZファイルでは配列型の列がサポートされないため、これらの形式ではリスト型フィールドが正しく取り込まれない可能性があります。
 
+<div id="reload-source-fields" />
+
 #### ソースフィールドを再読み込みする
 
 データファイルの構成を変更した場合は、その変更内容を反映するためにソースファイルを更新できます。
+
+<div id="note-2" />
 
 > 📘 **注記**
 >
@@ -550,15 +600,21 @@ Identifierタイプでは、1行につき1つの値を保持します（例：1�
    * クラウドサービス上のファイルの場合：［**Load from cloud bucket**］をクリックし、画面の指示に従います。
 3. ［**OK**］をクリックします。更新後のフィールドが表示されます。
 
+<div id="3-verify-eu-user-inclusion" />
+
 #### 3.EUユーザーが含まれるか確認する
 
 * 次の質問に対して、［**Yes**］または［**No**］を選択します。「**ソースに、EU DMA規制の適用対象となる欧州のユーザーが含まれていますか？**」
 
 EU Digital Markets Actに関するプライバシー規制の詳細を確認してください。
 
+<div id="4-test-the-source-data" />
+
 #### 4.ソースデータをテストする
 
 * ［任意］［**Test**］をクリックして、ソースフィールドの形式や有効性にエラーがないか確認します。
+
+<div id="5-save-the-source" />
 
 #### 5.ソースを保存する
 
@@ -566,11 +622,15 @@ EU Digital Markets Actに関するプライバシー規制の詳細を確認し�
 
 確認後、新しいソースが［**Sources**］タブに追加されます。
 
+<div id="note-3" />
+
 > 📘 **注記**
 >
 > ローカルファイルからソースをアップロードした場合、ソースを保存するとフォルダ構成が自動的に作成されます。表示される確認メッセージには、ソースフォルダへのリンクも含まれます。
 
 </Accordion>
+
+<div id="manage-your-sources" />
 
 ## ソースを管理する
 
@@ -583,9 +643,13 @@ EU Digital Markets Actに関するプライバシー規制の詳細を確認し�
 3. ［**Edit source**］ページで、以下の説明に従って必要な項目を編集します。
 4. ［**Save**］をクリックします。
 
+<div id="edit-the-source-name" />
+
 #### ソース名を編集する
 
 ソース名を編集する際は、必ず[こちらの命名要件](#要件とガイドライン)に従ってください。
+
+<div id="edit-the-source-location" />
 
 #### ソースの保存場所を編集する
 
@@ -594,10 +658,14 @@ EU Digital Markets Actに関するプライバシー規制の詳細を確認し�
 3. ［任意］[ソースをテスト](#4ソースデータをテストする)します。
 4. ［**Save**］をクリックします。
 
+<div id="edit-the-field-mapping" />
+
 #### フィールドマッピングを編集する
 
 1. フィールドマッピングに移動し、必要な変更を行います。フィールドを変更するか、マッピング先のDCPフィールドを更新します。
 2. ［**Save**］をクリックします。
+
+<div id="important-6" />
 
 > 🚧 **重要**
 >
@@ -619,9 +687,13 @@ EU Digital Markets Actに関するプライバシー規制の詳細を確認し�
 
 </Accordion>
 
+<div id="sharing-permissions" />
+
 ## 共有権限
 
 コラボレーターにソースデータの閲覧・利用権限を付与する設定は、<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-a-collaboration">コラボレーションの作成時</Anchor>に行います。<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-sharing-permissions">共有権限</Anchor>について詳しく確認してください。
+
+<div id="additional-information" />
 
 ## 追加情報
 
@@ -630,6 +702,8 @@ EU Digital Markets Actに関するプライバシー規制の詳細を確認し�
 <Accordion title="ストレージバケットのフォルダ構成を手動で作成する（任意）">
 
 通常は、ソース作成時に必要なフォルダ構成をAppsFlyerで自動生成する方法が最も簡単です。ただし、フォルダを手動で作成する場合は、以下の手順で行えます。
+
+<div id="create-a-dcr-key-folder" />
 
 #### DCRキーフォルダを作成する
 
@@ -647,6 +721,8 @@ DCRキーフォルダを作成すると、バケット／フォルダ構成は�
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### 最上位のinputフォルダ
 
 必須ではありませんが、DCRキーフォルダの直下に最上位のinputフォルダを作成することを推奨します。このフォルダは、DCRにアップロードするファイル専用として使用します。
@@ -659,6 +735,8 @@ DCRキーフォルダを作成すると、バケット／フォルダ構成は�
 最上位のinputフォルダを作成すると、バケット／フォルダ構成は次のようになります。
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### データソースごとの第2階層フォルダ
 
@@ -676,6 +754,8 @@ DCRでは、処理対象となる複数のデータソースファイルを定�
 
 </Accordion>
 
+<div id="privacy-regulations" />
+
 ## プライバシー規制
 
 ここでは、現在のプライバシー規制に関する重要な情報を説明します。
@@ -684,12 +764,16 @@ DCRでは、処理対象となる複数のデータソースファイルを定�
 
 GoogleはDigital Markets Act（DMA）の施行に伴い、2024年3月6日付でEUユーザー同意ポリシーを更新しました。AppsFlyerはGoogle App Attribution Partnerとして、広告主がGoogle Adsのマーケティングチャネルから最大限の価値を得られるよう支援しつつ、同ポリシーの要件に対応するために必要な変更を行いました。
 
+<div id="note-4" />
+
 > 📘 **注記**
 >
 > * GoogleによるDigital Markets Act（DMA）の施行は、すべてのプラットフォームに適用されます。
 > * 詳しくは、以下を参照してください。
 >   * <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">Digital Markets Actに関するインサイトとリソース</Anchor>
 >   * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">GoogleのFAQ</Anchor>
+
+<div id="adding-consent-fields" />
 
 #### 同意フィールドを追加する
 
@@ -698,6 +782,8 @@ Googleでオーディエンスをアクティベーションするためのソ�
 **追加の同意フィールドとその値：**
 
 <table><thead><tr><th>フィールド名</th><th>値</th><th>フィールドの説明</th></tr></thead><tbody><tr><td><span id="eea"></span><code>eea</code></td><td>true／false</td><td>ユーザーは、DMAの適用対象となるEEA（欧州経済領域）内に所在していますか？</td></tr><tr><td><span id="ad_personalization"></span><code>ad_personalization</code></td><td>\*true／false</td><td>ユーザーは、パーソナライズ広告へのデータ利用についてGoogleに同意していますか？</td></tr><tr><td><span id="ad_user_data"></span><code>ad_user_data</code></td><td>\*true／false</td><td>ユーザーは、自身のユーザーデータをGoogleへ送信することに同意していますか？ </td></tr><tr><td colspan="3"><span id="when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them"></span>\*「<strong>true</strong>」の場合、AppsFlyerは、同意したユーザーについて送信されたユーザー識別子を含めます。<br/>   「<strong>false</strong>」の場合：AppsFlyerには送信されていないため、これらの識別子は含まれません。</td></tr></tbody></table>
+
+<div id="potential-impact-on-the-audience-size" />
 
 #### オーディエンスサイズへの影響
 

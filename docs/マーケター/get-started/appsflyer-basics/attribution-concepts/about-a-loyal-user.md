@@ -28,14 +28,20 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerにおけるロイヤルユーザーの定義と、その変更方法を説明します。
 
+<div id="what-is-a-loyal-user" />
+
 ## ロイヤルユーザーとは
 
 * AppsFlyerのデフォルト設定では、アプリをダウンロードして初めて起動した後、さらに3回起動したユーザーをロイヤルユーザーと定義しています。
 * ロイヤルユーザーは、ユーザーエンゲージメントを把握する重要なKPIです。
 
+<div id="changing-the-loyal-user-definition" />
+
 ## ロイヤルユーザーの定義の変更
 
 判定条件となるアプリ内イベントを指定することで、アプリごとにロイヤルユーザーを定義できます。 ロイヤルユーザーの判定に使用するイベントを変更するには、<Anchor target="_blank" href="/marketers/ja/docs/app-settings">アプリ設定</Anchor>を参照してください。
+
+<div id="example" />
 
 > 📄 **例**
 >

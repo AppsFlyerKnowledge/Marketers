@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerからの送信通信でサポートするSSL暗号スイートについて説明します。
 
+<div id="introduction" />
+
 ## はじめに
 
 AppsFlyerのAPIは、安全な通信プロトコルを使用しています。
@@ -40,6 +42,8 @@ AppsFlyerのSSLセキュリティプロファイルは、次のSSLプロトコ�
 * TLS V1.2以降
 
 AppsFlyerからの送信通信では、以下の暗号方式に対応しています。
+
+<div id="outgoing-messages-appsflyer-as-client" />
 
 ## 送信メッセージ｜AppsFlyerがクライアントとなる場合
 

@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > **概要：** モバイル広告のアトリビューションとは何か、またマーケティング担当者が目標を達成し、広告費の配分を最適化し、ROIを向上させるのために、AppsFlyerがどのように役立つのかをご紹介しています。
 
+<div id="what-is-app-attribution" />
+
 ## アプリのアトリビューションとは何ですか？
 
 アプリのアトリビューションデータにより、アプリインストールやインストール後のイベント（アプリ内課金など）を促進するキャンペーン、パートナー、チャネルを判断できます。マーケティング担当者は、これらのインサイトに基づいて、ユーザー獲得とリターゲティングキャンペーンのマーケティングパフォーマンスを計測し、最適化することができます。
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## AppsFlyerで何ができますか？
 
 <Embed title="AppsFlyerへようこそ" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **概要：** 初めてアカウントにログインする方法と、アカウント間を切り替える方法
+
+<div id="first-login" />
 
 ## 最初のログイン
 
@@ -48,9 +54,13 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 * Googleでログインする：Googleアカウントでログイン
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSOを使用してログイン</Anchor>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > アカウントに対して管理者が2段階認証（<Anchor target="_blank" href="/marketers/ja/docs/implementing-and-using-2fa-login">2FA</Anchor>）を設定した場合、別の認証方法を使用してログインを確認するよう求められます。
+
+<div id="using-multiple-accounts" />
 
 ## 複数のアカウントを使用する
 
@@ -60,6 +70,8 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 >
 > * アカウント間の切り替えと主アカウントの変更は、すべてのログイン方法でサポートされています。ユーザー名とパスワード、2段階認証、シングルサインオン（SSO）
 > * この段階では、アカウント間の切り替えは広告主アカウントのみに制限されています。
+
+<div id="primary-account" />
 
 ### メインアカウント
 
@@ -73,6 +85,8 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 2. リスト内のアカウントへアクセスします：すべてのアカウント **All accounts (x)** をクリックします（ここで x はアカウントの総数を示します）。
 3. 表示される**アカウント一覧のウィンドウ**で、メインアカウントとして設定するアカウントの3つのドットメニューアイコンをクリックし、次に**プライマリとして設定**をクリックします。アカウント変更を確認するメッセージが表示されます。
 
+<div id="switch-between-accounts" />
+
 ### アカウントを切り替える
 
 1. **メニューバーから、** メールアドレスのドロップダウン > アカウントの切り替えへ移動します。
@@ -80,15 +94,21 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 
 ![switch between accounts3.jpg](https://files.readme.io/a1ad8bbbd55451f1988420814217b3a48bcf6103121381d69d0a2fcb24353180-51909721461393.jpg)
 
+<div id="get-started" />
+
 ## まずはじめに
 
 AppsFlyerご利用開始には、ステップバイステップガイドに進んでください。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
 > モバイルエコシステムについてもっと知りたいですか？簡潔に重要なポイントを押さえたAppsFlyerラーニングポータルコースをご活用ください。
 
 関連記事： <Anchor target="_blank" href="/marketers/ja/docs/convert-your-mobile-web-visitors-to-app-users">モバイルアトリビューション</Anchor> | <Anchor target="_blank" href="/marketers/ja/docs/ctv-pc-and-console-platform-attribution-concepts">CTVアトリビューション</Anchor>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

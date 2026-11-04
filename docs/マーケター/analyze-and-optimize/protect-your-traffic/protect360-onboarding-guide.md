@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** この段階的な導入ガイドに沿って進めることで、わずか6週間でProtect360の効果を最大限に引き出し、マーケティング投資を迅速かつ効果的に不正から守れます。
 
+<div id="onboarding-timeline-and-what-to-expect" />
+
 ## **導入スケジュールと各段階で行うこと**
 
 このガイドでは、6週間で段階的に導入を進める方法を説明します。
@@ -29,6 +31,8 @@ x-zendesk:
 * **最適化（3～5週目）**：初期の分析結果に基づいて最適化します。
 * **照合（5～6週目）**：広告パートナーと不正データを照合します。
 * **高度な不正対策（6週目以降）［任意］**：高度な不正対策の機能を有効にします。
+
+<div id="about-protect360" />
 
 ## **Protect360について**
 
@@ -47,9 +51,13 @@ AppsFlyerにアプリ内イベントデータを送信する方法は、SDKと�
 * **SDK**：対応は不要です。
 * **サーバー間通信（S2S）**：API3経由でイベントが送信されていることを確認してください。<Anchor target="_blank" href="/marketers/ja/docs/bulletin-upgrading-the-appsflyer-s2s-api">詳しい手順はこちらをご覧ください。0></Anchor>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 使用している方法が不明な場合は、開発チームまたはマーケティング運用チームに確認してください。
+
+<div id="fraud-protection-studio-settings" />
 
 #### **Fraud Protection Studioの設定**
 
@@ -60,6 +68,8 @@ Fraud Protection Studio（不正対策の設定・検証機能）では、AppsFl
 * **適用**（デフォルト）：不正な活動をリアルタイムで自動的にブロックします。インストール後に検知した場合は、ポストアトリビューション不正としてマークします。不正に即座に対処することが目的に合っている場合に適しています。
 * **タグ付け**：不正を検知してタグ付けしますが、アトリビューションは有効なまま維持します。自動的にブロックせずに、分析・確認できます。適用前に柔軟に設定し、詳しく分析したい場合に選択してください。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > ビジネス上の目的の変化に合わせて、いつでも**適用**と**タグ付け**を切り替えられます（<Anchor target="_blank" href="/marketers/ja/docs/user-management">管理者のみ</Anchor>）。<Anchor target="_blank" href="/marketers/ja/docs/beta-fraud-protection-studio#key-concepts">詳しくはこちら</Anchor>。
@@ -68,19 +78,27 @@ Fraud Protection Studio（不正対策の設定・検証機能）では、AppsFl
 
 ヒント：チームがProtect360の使い方に慣れていくこの段階では、Fraud Protection Studioの<Anchor target="_blank" href="/marketers/ja/docs/beta-fraud-protection-studio#app-detection-evaluation">**アプリ単位の不正検知の検証**</Anchor>カードで、アプリ単位の設定をテストし、動作を理解することを強く推奨します。
 
+<div id="data-connection-setup" />
+
 #### **データ連携の設定**
 
 Protect360のデータは、<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#protect360ローデータレポートについて">ローデータレポート</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>の3つの方法で出力できます。どの方法でも、不正データを正確にレポートし、効果的に分析するためには、データ連携を適切に設定することが重要です。
 
 <Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > Protect360の効果を十分に得るため、毎月8日に<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#postattribution-reports">ポストアトリビューションレポート</Anchor>を出力し、パートナーと改めて照合してください。
 
+<div id="how-to-display-hijacked-installs-correctly-in-your-bi" />
+
 #### **BIツールでハイジャックされたインストールを正しく表示する方法**
 
 自社システムで不正対策データの整合性を高め、より詳しく把握するには、**ローデータレポート、Pull API、Data Lockerを使い、ハイジャックされたインストールをBIツールで正しく表示してください。**
+
+<div id="raw-data-report" />
 
 #### **ローデータレポート**
 
@@ -94,6 +112,8 @@ BIツールでハイジャックされたインストールを正しく表示す
 * 空欄：ハイジャックされていません。
 * Organic：アトリビューションをオーガニックに変更します。
 * Contributor1、contributor2、contributor3など：指定されたメディアソースにアトリビューションを修正します。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -132,15 +152,21 @@ BIツールでハイジャックされたインストールを正しく表示す
 * Organic：アトリビューションをオーガニックに修正します。
 * Contributor1、contributor2、contributor3など：指定されたメディアソースにアトリビューションを修正します。
 
+<div id="validation-rules" />
+
 #### **検証ルール**
 
 検証ルールでは、マーケティング戦略に合わせた独自の判定条件を、不正対策に追加できます。さまざまなパラメータを使い、用途に応じて、有効または無効とみなすインストールの条件を定義できます。
 
 業種に適した推奨方法については、カスタマーサクセスマネージャーまたはアカウントマネージャーにお問い合わせください。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > ルールの効果を最大限に高めるため、ユーザー獲得（UA）、マーケティング、広告出稿の戦略を見直し、施策の目的に合うインストールやアプリ内イベントの種類を確認してください。そのうえで、必要に応じて許可またはブロックすることを推奨します。例えば、国（地域）Xでアプリを宣伝していない場合、地域Xからの該当する活動を自動的にブロックするルールを作成できます。複数のルールを作成して、マーケティング戦略に合った不正対策を行えます。
+
+<div id="working-with-dashboards" />
 
 #### **ダッシュボードの利用**
 
@@ -154,6 +180,8 @@ BIツールでハイジャックされたインストールを正しく表示す
 
 <Accordion title="最適化（3～5週目）">
 
+<div id="campaign-optimization" />
+
 #### **キャンペーンの最適化**
 
 この段階では、Protect360の効果を最大限に引き出すために、キャンペーンを最適化します。次の内容を確認してください。
@@ -161,15 +189,21 @@ BIツールでハイジャックされたインストールを正しく表示す
 * [推奨方法](/docs/protect360-onboarding-guide#推奨方法)を確認
 * [不正対策の設定の見直し](/docs/protect360-onboarding-guide#不正対策の設定の見直し)
 
+<div id="best-practices" />
+
 #### 推奨方法
 
 * リアルタイムとポストアトリビューションのデータを組み合わせ、ユーザーの質（継続率、アプリ内イベントなど）と不正の状況に基づいて、キャンペーンのパフォーマンスを評価します。
 * site\_idまたはsubsite\_idに基づいて、キャンペーンを最適化します。
 * パートナーごとの不正率と不正の種類を分析します。
 
+<div id="review-your-fraud-protection-settings" />
+
 #### 不正対策の設定の見直し
 
 [Fraud Protection Studioの設定](/docs/protect360-onboarding-guide#fraud-protection-studioの設定)を見直し、現在の目的に合っていることを確認してください。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -180,6 +214,8 @@ BIツールでハイジャックされたインストールを正しく表示す
 <div id="reconciliation-weeks-5-6" />
 
 <Accordion title="照合（5～6週目）">
+
+<div id="fraud-data-reconciliation" />
 
 #### **不正データの照合**
 

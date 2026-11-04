@@ -42,6 +42,8 @@ x-zendesk:
 * Xbox
 * Windowsモバイルデバイス
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -52,6 +54,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -215,6 +219,8 @@ x-zendesk:
 | af\_description | 招待の背景 | このアプリを使ってみてください。 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

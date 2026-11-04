@@ -23,6 +23,8 @@ x-zendesk:
 
 計測ダッシュボードでは、キャンペーンのパフォーマンスを確認・分析できます。 パフォーマンスKPI、期間ごとの推移、インプレッションやクリック、収益など、さまざまな指標を確認できます。
 
+<div id="the-measurement-dashboard" />
+
 ## 計測ダッシュボード
 
 [![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
@@ -76,6 +78,8 @@ x-zendesk:
 
 <Accordion title="E - チャート">
 
+<div id="performance-comparison-charts" />
+
 ### **パフォーマンス比較チャート**
 
 [![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
@@ -83,6 +87,8 @@ x-zendesk:
 **表示設定**
 
 （a）ディメンションと指標
+
+<div id="trend-over-time-comparison" />
 
 ### **時系列トレンド比較**
 

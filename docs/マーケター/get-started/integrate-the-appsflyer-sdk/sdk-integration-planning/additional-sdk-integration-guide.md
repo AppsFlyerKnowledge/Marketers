@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **At a glance:** 利用可能なSDKの追加機能を確認し、開発者と協力して、アンインストール計測、ユーザー招待のアトリビューション、プッシュ通知、プライバシー設定などのAPIを実装します。
 
+<div id="additional-attribution-methods" />
+
 ## 追加のアトリビューション計測方法
 
 テレビ広告、アンインストール、プリインストールアプリの計測を予定している場合は、以下の追加のアトリビューション計測方法をご検討ください。
@@ -60,6 +62,8 @@ AppsFlyerを使用すると、プリインストールアプリのインスト�
 
 </Accordion>
 
+<div id="sessions" />
+
 ## セッション
 
 一定期間内のユーザーセッション数を集計し、アプリの利用状況を計測します。
@@ -81,6 +85,8 @@ AppsFlyerを使用すると、プリインストールアプリのインスト�
 <Anchor target="_blank" href="/marketers/ja/docs/measure-sessions#session-reporting-by-the-app-sdk">ユーザーセッションを手動でレポート</Anchor>できます。バックグラウンドで動作するユーティリティアプリなどで役立ちます。
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## オウンドメディア
 
@@ -158,6 +164,8 @@ OneLinkを使用せず、App LinksまたはUniversal Linksでディープリン�
 **ヒント：** <Anchor target="_blank" href="/marketers/ja/docs/convert-your-mobile-web-visitors-to-app-users#アトリビューションソリューション">OneLink Smart Script</Anchor> を利用すると、Webサイト訪問者をアプリユーザーへ転換しやすくなります。
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## ユーザーのプライバシー
 

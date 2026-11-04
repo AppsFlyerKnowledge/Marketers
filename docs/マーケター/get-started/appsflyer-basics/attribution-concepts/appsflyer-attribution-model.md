@@ -37,6 +37,8 @@ x-zendesk:
 
 [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
+<div id="what-is-attribution" />
+
 ## アトリビューションとは
 
 **アトリビューション**とは、ユーザーがアプリをインストールしたきっかけや、インストール後にリエンゲージメント・リアトリビューションなどの行動を取ったきっかけを特定することです。アトリビューションの結果は、以下のいずれかに分類されます。
@@ -45,6 +47,8 @@ x-zendesk:
 * **オーガニック**：ユーザーがメディアソースに接触していない場合です。注意：説明を分かりやすくするため、ユーザーを*オーガニックとして計測した*と表現することがあります。ただし、厳密には正確な表現ではありません。オーガニックでインストールしたユーザーは、どのメディアソースにも紐付けられていないためです。
 
 アトリビューションは、ユーザー獲得やリエンゲージメント施策と、その成果を最適化するために不可欠です。
+
+<div id="what-is-an-app-install" />
 
 ## アプリのインストールとは
 
@@ -61,11 +65,15 @@ AppsFlyerでアトリビューションの対象となるのは、以下のイ�
   * **リエンゲージメント**
   * **リアトリビューション**
 
+<div id="attribution-methods" />
+
 ## アトリビューション方法
 
 AppsFlyerは、以下の表に示す複数のアトリビューション方法を使用しています。
 
 <table><tbody><tr><td>方法</td><td>デバイスIDの使用</td><td>計測方式</td><td>アトリビューションの判定元</td><td>Android（Google Playおよびサードパーティのストア）</td><td>iOS</td><td>ユニバーサルWindowsプラットフォーム（UWP）</td><td>CTV・PC・コンソールのプラットフォーム（3）</td></tr><tr><td> <a href="#install-referrer-android-only">リファラ</a>（1）</td><td>いいえ</td><td>決定論的</td><td>AppsFlyer</td><td>はい（2）</td><td>いいえ</td><td>はい</td><td>いいえ</td></tr><tr><td> <a href="#device-id-matching">Device ID Matching</a>（1）</td><td>はい</td><td>決定論的</td><td>AppsFlyer</td><td>はい</td><td>はい</td><td>はい</td><td>はい</td></tr><tr><td> <a href="#probabilistic-modeling">確率論的モデリング</a>（1）</td><td>いいえ</td><td>確率論的</td><td>AppsFlyer</td><td>はい</td><td>はい</td><td>いいえ</td><td>はい</td></tr><tr><td> <a href="#preload-campaigns">プリロード</a>（1）</td><td>いいえ</td><td>決定論的</td><td>AppsFlyer</td><td>はい</td><td>いいえ</td><td>はい</td><td>いいえ</td></tr><tr><td><a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork (SKAN)</a></td><td>いいえ</td><td>決定論的</td><td>Apple</td><td>いいえ</td><td>はい</td><td>いいえ</td><td>いいえ</td></tr><tr><td> <a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a> (1)</td><td>いいえ</td><td>決定論的</td><td>Apple</td><td>いいえ</td><td>はい</td><td>いいえ</td><td>いいえ</td></tr><tr><td> <a href="#deep-link">ディープリンク</a>（1）</td><td>いいえ</td><td>決定論的</td><td>AppsFlyer</td><td>はい</td><td>はい</td><td>はい</td><td>いいえ</td></tr><tr><td colspan="8">（1）AppsFlyerのダッシュボードやレポートでは、「Classic」のアトリビューション方法と表記されることがあります。<br/>（2）一部のサードパーティのストアで対応しています。<br/>（3）<a href="./ctv-pc-and-console-platform-attribution-concepts#サポートされているプラットフォーム" target="_blank">CTV・PC・コンソールのプラットフォーム一覧</a>をご覧ください。</td></tr></tbody></table>
+
+<div id="attribution-method-priorities-attribution-waterfall" />
 
 ### アトリビューション方法の判定優先順位
 
@@ -154,6 +162,8 @@ AppsFlyerは、アプリ開発者のマーケティングキャンペーンの�
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### メディアソースとAppsFlyerの機能別のアトリビューション方法
 
 対応しているアトリビューション方法は、以下の条件によって異なります。詳細は、以降のセクションをご覧ください。
@@ -177,6 +187,8 @@ AppsFlyerは、アプリ開発者のマーケティングキャンペーンの�
 <table><thead><tr><th rowspan="2">メディアソース</th><th colspan="3">アトリビューション方法</th></tr><tr><th>Android</th><th>iOS</th><th><strong>CTV・PC・コンソールのプラットフォーム</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRNs</a></td><td>Device ID Matching</td><td><ul><li>Device ID Matching（ATTへの同意が必要）</li><li>SKAdNetwork（iOS 14以降）</li></ul></td><td>Device ID Matching</td></tr><tr><td><ul><li> <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">パートナー向け計測リンク</a>を使用するアドネットワーク（SRN以外） </li><li><span>CTV・PC・コンソールのプラットフォーム</span></li></ul></td><td><ul><li>インストールリファラ</li><li>Device ID Matching</li><li>確率論的モデリング</li></ul></td><td><ul><li>Device ID Matching（ATTへの同意が必要）</li><li>確率論的モデリング </li><li>SKAdNetwork（iOS 14以降）</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">デバイスにプリインストールされたアプリ</a></td><td>プリインストール</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## ユーザーの広告接触に基づくアトリビューションの種類
 
@@ -269,6 +281,8 @@ AppsFlyerの各種キャンペーン計測方法を使用して、クリック�
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## アトリビューションに関する詳細
 
 <div id="in-app-events" />
@@ -309,6 +323,8 @@ AppsFlyerは、インストール1件につき1つのメディアソースのみ
 デバイスのテストや複数回のインストールを行う場合は、AppsFlyerにデバイスを<Anchor target="_blank" href="/marketers/ja/docs/registering-test-devices">登録</Anchor>してください。デバイスを登録しない場合は、最初のインストールのみが記録されます。
 
 AppsFlyerでは、広告IDがないiOSの再インストールについても、アトリビューションの精度を高められます。この機能は、<Anchor target="_blank" href="/marketers/ja/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">アプリ設定ページ</Anchor>で有効にできます。
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### iCloudにバックアップされたiOSアプリの再インストール
 

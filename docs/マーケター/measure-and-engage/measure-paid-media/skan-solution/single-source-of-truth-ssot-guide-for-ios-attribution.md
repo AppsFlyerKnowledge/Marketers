@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="iOSアトリビューション向けSSOT（Single Source of Truth）ガイド" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## SSOTについて｜iOSの成果を正確に把握
 
 iOS14以降では、AppsFlyerはSKAdNetwork、ATTに同意したユーザー、確率論的モデリング、増分効果に基づくインサイト、Apple Ads専用APIなど、複数のデータソースを使用してiOSユーザーをアトリビューションします。 IDFAがない場合、各アトリビューション方法の結果を、重複を避けながら結び付けることはほぼ不可能です。
@@ -52,6 +54,8 @@ SSOTは、別の照合方法でもアトリビューションされたSKANイン
 <Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>を参照してください。
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## Overview dashboardのSSOTビュー
 
@@ -106,6 +110,8 @@ SSOTビューでは、以下の点に注意してください。
 * **タイムゾーン**：AppsFlyerが報告するインストールとイベントは、UTC、または<Anchor target="_blank" href="/marketers/ja/docs/app-settings">アプリ設定画面</Anchor>で指定したアプリ固有のタイムゾーンで表示されます。 SKANが報告するインストールとイベントはUTCで表示されます。ただし、MetaとGoogleのSKANデータには、それぞれのアカウントに設定されたタイムゾーンが使用されます。
 * **通貨**：USD、または<Anchor target="_blank" href="/marketers/ja/docs/app-settings">アプリ設定画面</Anchor>で指定したアプリ固有の通貨で表示されます。
 * **収益指標（D2、D7）：** SKANポストバックの情報不足や欠落（CVがnullの場合）を補うため、モデリングによる推定データが含まれます。より長期のコホートデータ（D14、D21、D30）は、SSOTのData Lockerレポートからエクスポートできます。
+
+<div id="filter-considerations" />
 
 #### フィルターに関する注意点
 
@@ -171,6 +177,8 @@ SSOTダッシュボードで利用できる指標：
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## SSOTの仕組み
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -221,6 +229,8 @@ SSOTは、ユーザーデバイス上のアプリに実装されたAppsFlyer SDK
 **注意点**
 
 * 通常、AppsFlyerは再インストールをカウントしません。 SSOTでは、再インストールかどうかは考慮しません。したがって、SSOTの分析では再インストールによるSKANインストールの重複は除去されず、再インストールの状態がaf\_attributionフラグの設定に影響することもありません。
+
+<div id="attribution-flag-field" />
 
 #### **アトリビューションフラグのフィールド**
 
@@ -284,6 +294,8 @@ af\_attribution\_flagを使用すると、たとえば以下の指標を算出�
 | SKANポストバックの遅延 | SKANポストバックが大幅に遅れて届くと、D7などの後の日数のデータが、当初はD2などの前の日数のデータより小さく表示される場合があります。たとえば、Google APIからのデータは最大15日遅れることがあります。この遅延は、SSOTモデルの精度に影響する場合があります。そのため、モデルの精度を評価する際は、データがすべて揃うよう、インストール日から少なくとも15日待つことを推奨します。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

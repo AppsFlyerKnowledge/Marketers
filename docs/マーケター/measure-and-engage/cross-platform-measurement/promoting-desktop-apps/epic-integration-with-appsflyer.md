@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要： 概要： EpicゲームをAppsFlyerと連携し、Epicキャンペーンのアトリビューションやイベントデータを受け取ります。Epic APIの実装は、Epicアプリのアトリビューションとイベント計測（つまり、ユーザーのEpicデバイスでのアトリビューションと記録）をサポートしています。**
 
+<div id="about-epic-game-attribution" />
+
 ## Epicゲームのアトリビューションについて
 
 マーケターは、これらのインサイトを活用してマーケティング活動を測定および最適化できます。
+
+<div id="example-attribution-flow" />
 
 ### アトリビューションフローの例
 
@@ -36,6 +40,8 @@ x-zendesk:
    たとえば、ランディングページにXbox、マイクロソフトストア、およびSteamページへのリンクを含めることができます。
 3. Epicアプリページこれは、ユーザーがダウンロードできるEpicアプリをホストするEpicストアフロントページです。
 4. ゲームのインストールゲームのインストール： ユーザーがゲームをインストールし、アトリビューションをトリガーし、アプリ内イベントとセッションを記録します。
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -167,12 +173,18 @@ x-zendesk:
 </Table>
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 特性と制限
 
 | 特性 | 備考 |
 | --- | --- |
 | リターゲティング | 現在サポートされていません |
 | コストデータ | コスト（広告費）データは、メールによるアップロードファイルを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">広告費用の取り込み</Anchor>で送信する必要があります。 |
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

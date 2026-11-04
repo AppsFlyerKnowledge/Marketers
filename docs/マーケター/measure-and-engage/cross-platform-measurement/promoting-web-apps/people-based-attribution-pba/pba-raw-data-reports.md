@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要**：ローデータレポートはData Lockerで入手可能です
 
+<div id="pba-raw-data-reports" />
+
 ## PBA ローデータレポート
 
 PBA ローデータレポートを使用してユーザージャーニーとアクションを分析します。
+
+<div id="report-descriptions" />
 
 ### レポートの説明
 
@@ -36,11 +40,15 @@ PBA ローデータレポートの項目
 | <span id="website-visits"></span>[Webサイト訪問](#website-visits-and-website-events) | <ul><li>Webサイトへの訪問。</li><li>Webトラフィックキャンペーンでユーザーへの露出とエンゲージメントを測定します。</li></ul> |
 | <span id="website-events"></span><Anchor target="_blank" href="/marketers/ja/docs/pba-website-attribution-dashboard">Webサイトイベント</Anchor> | <ul><li>サブスクリプションや購入など、Webサイト訪問者によって実行されるアクションが含まれます。</li><li>イベントは、過去30日間に発生した直接以外の最後のWebサイト訪問に紐づきます。</li><li>イベントに紐づくアトリビューションパラメータは、メディアソース、メディアチャネル、キャンペーン等を含みます。</li><li>これらのパラメータまーを使用してマーケティングの最適化に活用します。</li><li>メディアソース毎のユーザー行動を分析します。</li><li>これらの項目の値は、<Anchor target="_blank" href="/marketers/ja/docs/pba-media-source-attribution-rules">PBA メディアソース計測ルール</Anchor>を使用して、成果が紐づいた訪問から決定されます。</li><li>目的は、イベントを特定のページビューではなく、特定のWebサイト訪問に関連付けることです。</li><li>これを使用してどのメディアとキャンペーンがユーザーをもたらし、ユーザーがどんなアクションを実行したかを明確にできます。</li></ul> |
 
+<div id="raw-data-report-fields" />
+
 ## ローデータレポートの項目
 
 <div id="website-visits-and-website-events" />
 
 <Accordion title="Webサイト訪問とWebサイトイベント">
+
+<div id="sample-reports" />
 
 #### サンプルレポート
 
@@ -50,6 +58,8 @@ PBA ローデータレポートの項目
 ローデータ項目は、モバイルアプリユーザーの計測リンクとアプリインストールイベントで発生したデータから部分的に入力されます。
 
 [項目の一覧をCSVとしてダウンロードする](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmRBeUQS-xeiv069vIgnfBoJW8Wfl1ojv0rAK-pcOlAzNveG1lqvExVdhWfgCKIpJxczWksUiHjSa3/pub?gid=0&single=true&output=csv)
+
+<div id="field-list-website-visits-and-website-events-report" />
 
 #### Webサイト訪問とWebサイトイベントレポートの項目一覧
 
@@ -113,6 +123,8 @@ PBA ローデータレポートの項目
 
 </Accordion>
 
+<div id="procedures" />
+
 ### 手順
 
 <div id="setting-up-pba-reports-in-data-locker" />
@@ -150,6 +162,8 @@ PBA ローデータレポートの項目
 * PBAクロスプラットフォームでのユーザー識別
   * PBAでは、Webとモバイルユーザーが同一人物であることを特定できます。
   * 次に モバイル広告IDに基づいてモバイルとWebレポートを結合します。
+
+<div id="use-cases-for-pba-and-mobile" />
 
 #### **PBAとモバイルの使用例**
 

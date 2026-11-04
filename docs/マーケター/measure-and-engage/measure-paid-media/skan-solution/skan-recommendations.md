@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要**：SKANの推奨設定を使用してCV設定を最適化し、インストール後の行動をより正確に計測できます。
 
+<div id="overview" />
+
 ## 概要
 
 AppleのiOSに組み込まれているSKAdNetwork（SKAN）を使用すると、広告主はユーザーのプライバシーを保護しながら、キャンペーンの成果を計測できます。 SKAdNetworkでは、インストール後の行動を0〜63の数値、つまりコンバージョン値だけで計測します。
@@ -37,11 +39,15 @@ AppsFlyerのSKAN推奨設定は、以下の特徴を備えています。
 * CV設定を決定する際の難しさを解消します。
 * 業種、地域、SKANとSKAN以外のアプリデータ、ユーザー行動に基づいて提案します。
 
+<div id="recommendations" />
+
 ## 推奨設定
 
 <div id="revenue" />
 
 <Accordion title="収益">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **収益の推奨設定について**
 
@@ -57,13 +63,19 @@ AppsFlyerは、SKAN以外の収益データ（精度100%）を毎日確認しま
 * より少ない範囲で収益を正確に計測し、CVの消費を抑えられます。
 * アプリ内購入と広告収益の両方を考慮します。
 
+<div id="revenue-recommendations-layout" />
+
 #### **収益の推奨設定画面の構成**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>A</span></p></td><td><span>Conversion Studioに保存されたアクティビティ期間。この期間のSKAN収益が計測されます。</span></td></tr><tr><td><p><span>B</span></p></td><td><span>アプリの実際の購入ユーザー1人あたりの平均収益（ARPPU）。AppsFlyerの方法でアトリビューションされた、オーガニック／ノンオーガニックユーザーの正確なデータに基づきます。</span></td></tr><tr><td><p><span>C</span></p></td><td><p><span>現在の設定に基づくARPPU（SKAN ARPPU）。Conversion Studioの<span>アクティビティ期間と、収益報告用のCV設定を使って計測したARPPUです。</span></span></p></td></tr><tr><td><span>D</span></td><td><p><span>推定ARPPU：選択した範囲数で期待されるARPPU。 SKANや従来の方法など、アトリビューション方法を問わず、アプリの過去14日間の収益をすべて合計し、購入ユーザー数で割って算出します。 </span><span>FとGを参照してください。</span></p><p><span><strong>注意：</strong></span><span>この数値は、AppsFlyerのほかのダッシュボードでは確認できません。ここではARPPU（購入ユーザー1人あたりの平均収益）を表示しますが、ほかのダッシュボードではARPU（ユーザー1人あたりの平均収益）を表示します。</span></p></td></tr><tr><td><p><span>E</span></p></td><td><p>概算誤差：BとCの差<span>です。SKAN ARPPUが実際より高く報告されているか、低く報告されているかに応じて、プラスまたはマイナスになります。</span></p><p><span>例：実際のARPPUが10ドル、SKAN ARPPUが7ドルの場合、概算誤差は−30%です。ユーザー1人あたり3ドル少なく報告されていることになります。</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>SKANの収益設定に対する推奨内容。設定に含める範囲の数を選択します。</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>Conversion Studioに設定されている現在の収益設定。</span><span></span></p></td></tr></tbody></table>
 
+<div id="using-revenue-recommendations" />
+
 #### **収益の推奨設定の使用方法**
 
 **前提条件：** 収益の推奨設定には、少なくとも14日分の収益データが必要です。
+
+<div id="note" />
 
 > 📘 **注意**
 >

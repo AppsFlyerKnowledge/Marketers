@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** コラボレーションを利用すると、コマースメディアネットワークとブランドが双方のデータを組み合わせて活用し、新たな広告収益源の創出とキャンペーン成果の最大化を図ることができます。
 
+<div id="about-collaborations" />
+
 ## コラボレーションについて
 
 AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform（DCP）</Anchor>を使用すると、コマースメディアネットワークとブランドが連携し、それぞれのファーストパーティデータの価値を引き出して、購買意向の高いユーザーへリーチできます。安全性とプライバシーを重視したこのプラットフォームでは、シームレスなコラボレーションが可能です。パートナーは、新たな広告収益源を創出したり、共同活用するデータからカスタムオーディエンスを作成し、コマースメディアネットワーク内やMeta、Googleなどのメディアチャネルでアクティベーションしたりできます。
+
+<div id="create-a-collaboration" />
 
 ## コラボレーションの作成
 
@@ -86,7 +90,7 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 
    <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />  
    続いて**保存**をクリックします。
-4. #### **［任意］：** ソースごとのカスタムデータ権限の設定
+4. #### <span id="optional-set-custom-data-permissions-by-source"></span>**［任意］：** ソースごとのカスタムデータ権限の設定
 
    ソースには、全体に適用されるデータ権限ポリシーとは異なるカスタム権限を設定できます。**ソースごとにカスタムデータ権限を設定するには：**
 
@@ -102,6 +106,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 
 以上で完了です。これでコラボレーションを利用できるようになりました。次に、コラボレーターと一緒に<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-build-and-activate-audiences">オーディエンスを作成</Anchor>し、キャンペーンを実施します。その後、<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">計測を設定</Anchor>し、結果を分析してインサイトを得ます。
 
+<div id="manage-collaborations" />
+
 ## コラボレーションの管理
 
 このセクションでは、既存のコラボレーションを管理する方法について説明します。
@@ -116,9 +122,13 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 2. コラボレーションダッシュボードで、**関連付け済みのソース**セクション、または右上の操作メニュー > **関連付け済みのソース**をクリックします。
 
 
+<div id="associate-new-sources" />
+
 #### 新しいソースの関連付け
 
 **新しいソースを関連付けるには：＋ソースを関連付ける**をクリック > ドロップダウンメニューからソースを選択 > **保存**をクリックします。
+
+<div id="manage-sources" />
 
 #### ソースの管理
 
@@ -139,6 +149,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 
 1. Data Collaboration Platform（Data Clean Room）で、**コラボレーション**タブ > 対象のコラボレーションの順に進みます。
 2. コラボレーションダッシュボードで、右上の操作（3点）メニューをクリックし、実行する操作を選択します。
+
+<div id="notes-on-suspended-collaborations" />
 
 > 📘 **一時停止したコラボレーションに関する注意事項**
 >
@@ -175,6 +187,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 
 </Accordion>
 
+<div id="administer-account" />
+
 ## アカウント管理
 
 すべてのコラボレーションに適用される法的ガバナンスを設定します。
@@ -184,6 +198,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 <Accordion title="利用規約">
 
 すべてのコラボレーションに適用される法的な利用規約を定義し、遵守を必須にできます。公開後は、すべてのコラボレーターがコラボレーションデータへアクセスする前に、利用規約へ明示的に同意する必要があります。
+
+<div id="apply-terms-and-conditions" />
 
 #### 利用規約の適用
 
@@ -196,6 +212,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 
    これで、新しい利用規約がすべてのコラボレーションに適用されます。コラボレーターが自社とコラボレーションするには、利用規約を読み、同意したことを確認する必要があります。コラボレーターが同意しない場合、コラボレーションへアクセスしたり、操作を実行したりすることはできません。
 
+<div id="update-existing-terms-and-conditions" />
+
 #### 既存の利用規約の更新
 
 既存の利用規約の内容（またはURL）を更新できます。
@@ -207,6 +225,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 3. URLを変更した場合は、**利用規約**フィールドに新しいURLを入力します。
 4. **新しい規約を公開**をクリックします。  
    コラボレーターが引き続きコラボレーションを利用するには、新しい利用規約を読み、同意したことを確認する必要があります。
+
+<div id="notes" />
 
 > 📘 **注意事項**
 >

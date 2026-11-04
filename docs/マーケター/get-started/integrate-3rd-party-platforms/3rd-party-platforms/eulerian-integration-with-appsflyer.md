@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるEulerianは、オンラインマーケティング施策の分析とリアルタイムの最適化を専門としています。包括的なデータ収集システムを基盤とするEulerianのマーケティングスイートは、Webマーケティングのアトリビューションとデータ管理のソリューションを提供します。データをリアルタイムで集約、分析、管理し、施策に活用できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-eulerian" />
 
 ## Eulerianの設定
 
@@ -53,10 +57,14 @@ Eulerianの設定画面には、**［連携］、［計測リンク］、［デ�
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 <strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -71,6 +79,8 @@ EulerianとAppsFlyerの接続には、固有のホストIDを使用します。�
 * **HostID**を入力します。
 * <strong>［有効化］</strong>をオンにして、すべてのインストールをEulerianに送信します。
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にEulerianへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
@@ -78,6 +88,8 @@ AppsFlyerは、ユーザーのインストール後にEulerianへポストバッ
 ![Eulerian_new_2.png](https://files.readme.io/59cb41cdbec6c06dd4fc2086d238fe2015e5414a474591b23f9a18f8421fb030-360002795789.png)
 
 Eulerianにポストバックを送信するには、<strong>［すべてのパートナーのイベント］</strong>を選択します。
+
+<div id="in-app-event-settings" />
 
 ### アプリ内イベントの設定
 

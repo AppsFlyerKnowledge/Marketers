@@ -36,10 +36,14 @@ GTMから送信するイベントは、AppsFlyerのアプリ内イベントに�
 
 このガイドの手順に従って、イベントを送信してください。 
 
+<div id="considerations" />
+
 ### 注意事項
 
 * **ローデータ上のイベントソース：** GTMで生成したイベントは、ローデータレポートでソースがS2Sに設定されます。 SDKから記録されるイベントでも、このように表示されるため注意してください。
 * **SKAdNetworkのコンバージョン値の更新**：このガイドの手順でGTMから生成してSDKに送信したイベントでも、通常のSDKイベントと同様に、SDKがコンバージョン値を更新します。 <Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKAdNetworkの計測</Anchor>をオンにし、必要な設定を行うだけで利用できます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -50,6 +54,8 @@ GTMから送信するイベントは、AppsFlyerのアプリ内イベントに�
 >   * SRNにアプリ内イベントポストバックを送信する場合、`att`パラメータが必要です。
 >   * Meta広告にアプリ内イベントポストバックを送信する場合、`att`と`os`の両方のパラメータが必要です。
 
+<div id="prerequisites" />
+
 ### 前提条件
 
 GTMからAppsFlyerにイベントを送信する前に、アプリにGTM SDKを実装する必要があります。次の準備が必要です。
@@ -59,6 +65,8 @@ GTMからAppsFlyerにイベントを送信する前に、アプリにGTM SDKを�
 3. まだ実施していない場合は、<Anchor target="_blank" href="/marketers/ja/docs/integrate-the-appsflyer-sdk">AppsFlyer SDKを連携</Anchor>します。
 
 準備が整ったら、<Anchor target="_blank" href="/marketers/ja/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">GTMの設定</Anchor>に進みます。
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

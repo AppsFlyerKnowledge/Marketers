@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要：** Data Lockerのアドバンス集計レポートには、最適なデータの鮮度、正確性、細分性、および無制限の量の集計データが含まれます。
 
+<div id="advanced-aggregated-reports-in-data-locker" />
+
 ## Data Lockerアドバンス集計レポート
 
 Data Lockerアドバンス集計レポートとは：
@@ -33,6 +35,8 @@ Data Lockerアドバンス集計レポートとは：
 * データをBIシステムに読み込み、キャンペーンのパフォーマンスや最適化のプロセスの一部として利用することができます。
 * 最高のデータ鮮度を正確に保ちましょう：データは<Anchor target="_blank" href="/marketers/ja/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">1日に複数回</Anchor>格納され、その日に利用可能なすべてのデータを含むレポートの後続バージョンごとに更新されます。
 * <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">メディアソースのデータ共有ポリシー</Anchor>やプライバシー保護ポリシーによって制限されたり制限されたりする可能性のある未加工データを補うのに役立ちます。制限はキャンペーンや広告セットなどのアトリビューション関連のフィールドに影響します。
+
+<div id="setup" />
 
 ## 設定方法
 
@@ -43,11 +47,15 @@ Data Lockerアドバンス集計レポートとは：
 | はい | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) レポートをData Lockerに追加：<ol><li>AppsFlyer管理画面 左メニュー **エクスポート > Data Locker**へ移動します。</li><li>取得したいレポートをすべて選択します。</li><li>**設定を保存**をクリックします。<br />レポートは翌日から格納されます。</li></ol> |
 | いいえ | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) **Data Lockerの設定**：<ol><li>Data Lockerの初回設定を完了してください。( <Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers#set-up-data-locker">広告主向け</Anchor> \| <Anchor target="_blank" href="/partners/ja/docs/data-locker-for-partners">パートナー向け</Anchor> )</li><li>レポートをData Lockerに追加します：<ol><li>AppsFlyer管理画面 左メニュー **エクスポート > Data Locker**へ移動します。</li><li>取得したいレポートをすべて選択します。</li><li>**設定を保存**をクリックします。<br />レポートは翌日から格納されます。</li></ol></li></ol> |
 
+<div id="reports-available" />
+
 ## 利用できるレポート
 
 <div id="cohort-versioned-report" />
 
 <Accordion title="アドバンス集計レポート（バージョン管理コホート）">
+
+<div id="report-facts" />
 
 ### レポートの仕様
 
@@ -61,6 +69,8 @@ Data Lockerアドバンス集計レポートとは：
 | ディレクトリとファイル名の構造 | [詳細はこちら](/docs/advanced-aggregated-reports-in-data-locker#レポート構成) |
 | パートナーのデータ保持ポリシーの影響 | 一部の広告媒体は、データ保存期間ポリシーを設けていることを考慮してください。この場合、データ保存期間の終了後に発生したイベントは、コホートレポートでは無視されます。<br /><br />例：SRN媒体 "A" は180日間のデータ保存期間ポリシーを設けているとします。インストール後180日目までのユーザーイベントは SRN「A」に紐づきます。180日後に発生したイベントはオーガニックへ紐づきます。 |
 
+<div id="report-structure" />
+
 ### レポート構成
 
 レポートは、ディメンションとメトリックで構成されます。
@@ -70,6 +80,8 @@ Data Lockerアドバンス集計レポートとは：
 * **ディメンション**：文字列- 文字列の最大長は動的であり、広告階層の要素をどのように設定するかによって異なります。
 * **指標**：数値 / **注：** selected\_currency 項目の形式は文字列です。  
   利用できる指標は、収益、イベントを実行したユニークユーザー数、イベントの発生数です。※ROIやROASといったコスト関連の指標を算出するには、収益とコストの両方の指標が必要です。収益指標はコホートにあり、コスト指標はROI360コストETLから提供されます。
+
+<div id="dimensions" />
 
 #### ディメンション
 
@@ -283,6 +295,8 @@ Data Lockerアドバンス集計レポートとは：
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 指標
 
 | フィールド名 | 説明 | 形式 |
@@ -294,11 +308,15 @@ Data Lockerアドバンス集計レポートとは：
 | revenue\_selected\_currency | <ul><li>選択された通貨単位での収益の金額です。例えば、選択した通貨がEURの場合€1234.56 は 1234.56 と反映されます。</li><li>小数点以下2桁まで</li></ul> | 数値 |
 | first\_inapp | <ul><li>コンバージョン後に初めてイベントを実行したユーザーの数。</li><li>first\_inapp 指標を合計すると、そのイベントの累積ユニークユーザー数がわかります。</li></ul> | 数値 |
 
+<div id="directory-and-filename-structure" />
+
 #### ディレクトリとファイル名の構造
 
 レポートへのパスは、次のフォルダー階層で構成されます：
 
 形式：`/t=cohort_unified_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy" />
 
 #### レポートのフォルダ階層
 
@@ -338,6 +356,8 @@ bucket
 * **t**： レポートタイプ
 * **version：** バージョンが作成されたときの Unixタイムスタンプ
 
+<div id="report-versions-and-data-freshness" />
+
 ### レポートのバージョンとデータの鮮度
 
 * Intraday：レポートは数時間ごとに送信されます。
@@ -363,6 +383,8 @@ bucket
 
 <Accordion title="アドバンス集計（コホート タイムゾーン / バージョン対応）レポート">
 
+<div id="report-facts-1" />
+
 ### レポートの仕様
 
 | 概要 | コホートタイムゾーンバージョン対応レポートには、ローカライズされたタイムゾーンに従って、すべての集計データがコホートされ、キャンペーンディメンションの粒度がすべて含まれます。レポートは、データの鮮度と正確性を最大化するために数時間ごとに更新されます。<br /><br /><Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk1cZkeJhlx3trW13SjGbD4aWX3LmXZJRDJRApuAJkjB7XAg4nSFUyN0_YoirX-QMHkhFeMHwEmiVj/pub?output=xlsx">サンプルレポートをダウンロード</Anchor> |
@@ -375,6 +397,8 @@ bucket
 | ディレクトリとファイル名の構造 | [詳細はこちら](/docs/advanced-aggregated-reports-in-data-locker#レポート構成-1) |
 | パートナーのデータ保持ポリシーの影響 | 一部の広告媒体は、データ保存期間ポリシーを設けていることを考慮してください。この場合、データ保存期間の終了後に発生したイベントは、コホートレポートでは無視されます。<br /><br />例：SRN媒体 "A" は180日間のデータ保存期間ポリシーを設けているとします。インストール後180日目までのユーザーイベントは SRN「A」に紐づきます。180日後に発生したイベントは無視されます。<br /><br />**注：** イベントはオーバービューダッシュボードにオーガニックとして表示されます。 |
 
+<div id="report-structure-1" />
+
 ### レポート構成
 
 レポートは、ディメンションとメトリックで構成されます。
@@ -384,6 +408,8 @@ bucket
 * **ディメンション**：文字列- 文字列の最大長は動的であり、広告階層の要素をどのように設定するかによって異なります。
 * **指標**：数値 / **注：** selected\_currency 項目の形式は文字列です。  
   利用できる指標は、収益、イベントを実行したユニークユーザー数、イベントの発生数です。※ROIやROASといったコスト関連の指標を算出するには、収益とコストの両方の指標が必要です。収益指標はコホートにあり、コスト指標はROI360コストETLから提供されます。
+
+<div id="dimensions-1" />
 
 #### ディメンション
 
@@ -609,6 +635,8 @@ bucket
   </tbody>
 </Table>
 
+<div id="metrics-1" />
+
 #### 指標
 
 | フィールド名 | 説明 | 形式 |
@@ -620,11 +648,15 @@ bucket
 | revenue\_selected\_currency | <ul><li>選択された通貨単位での収益の金額です。例えば、選択した通貨がEURの場合€1234.56 は 1234.56 と反映されます。</li><li>小数点以下2桁まで</li></ul> | 数値 |
 | first\_inapp | <ul><li>コンバージョン後に初めてイベントを実行したユーザーの数。</li><li>first\_inapp 指標を合計すると、そのイベントの累積ユニークユーザー数がわかります。</li></ul> | 数値 |
 
+<div id="directory-and-filename-structure-1" />
+
 #### ディレクトリとファイル名の構造
 
 レポートへのパスは、次のフォルダー階層で構成されます：
 
 形式：`/t=cohort_unified_timezone_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### レポートのフォルダ階層
 
@@ -664,6 +696,8 @@ bucket
 * **t**： レポートタイプ
 * **version：** バージョンが作成されたときの Unixタイムスタンプ
 
+<div id="report-versions-and-data-freshness-1" />
+
 ### レポートのバージョンとデータの鮮度
 
 * Intraday：レポートは数時間ごとに送信されます。
@@ -696,6 +730,8 @@ bucket
 | 21 | 8日目の午前0時 | 広告収益ネットワーク側で発生した可能性のある潜在的な問題を考慮して、0日目のコンバージョンとアプリ内イベントデータ、およびS2S経由で送信される完全な広告収益データ | 8日目の午前6時 |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 
@@ -748,6 +784,8 @@ bucket
 
 以下は、BI開発者が Data Lockerを介して抽出できるコホートデータの一般的で実用的なアプリケーションの例です。各例は、SQL ステートメントとサンプルの Excel ビジュアルで示されています。
 
+<div id="1-calculate-retention" />
+
 #### **1. リテンションの計算**
 
 次の例では、次のことを行います：
@@ -778,6 +816,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculate-arpu-of-multiple-in-app-events" />
 
 #### **2. 複数のアプリ内イベントのARPUを計算する**
 
@@ -814,6 +854,8 @@ group by 1
 | 98765432 | Re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | 再アトリビューション | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. 特定のコホート日のアプリ内イベントコンバージョン率を計算する**
 
 次の例では、次のことを行います：
@@ -844,6 +886,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | イギリス | 98765432 | ヌル | site\_654 | 70% |
 | 2022-10-31 | 韓国 | 07315466 | ヌル | ヌル | 63% |
+
+<div id="4-calculate-daily-installs" />
 
 #### **4.日次インストールの計算**
 
@@ -881,6 +925,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculate-revenue-from-facebook-ads" />
+
 #### **5. Meta広告からの収益の計算**
 
 次の例では、次のことを行います：
@@ -914,6 +960,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. 最大365コホート日のASAキーワードIDごとのARPU計算**
 
 次の例では、次のことを行います：
@@ -944,6 +992,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7.地域ごとのアトリビューション時間によるARPU 7日目の計算**
 
@@ -986,6 +1036,8 @@ limit 20
 | カナダ | 35,099 | $64,867.84 | $7,050.19 | $5,656.33 | $9,553.75 | $8,632.41 | $11,308.06 |
 | チリ | 26,750 | $48,160.02 | $21,249.55 | $22,584.57 | $24,033.07 | $31,118.91 | $41,145.22 |
 
+<div id="8-calculate-purchases-day-7-after-conversion" />
+
 #### **8. コンバージョン後7日目の購入データの計算**
 
 次の例では、次のことを行います：
@@ -1026,6 +1078,8 @@ group by 1,2,3,4,5
 | id123456789 | 2024-03-05 | adnet1\_int | campaign\_1 | adset\_1 | 100 | 20 | 20% |
 | id123456789 | 2024-03-07 | adnet2\_int | campaign\_2 | adset\_2 | 200 | 10 | 5% |
 | id123456789 | 2024-03-31 | adnet3\_int | campaign\_3 | adset\_3 | 150 | 15 | 10% |
+
+<div id="9-calculate-dau" />
 
 #### **9. DAUの計算**
 
@@ -1086,6 +1140,8 @@ group by 1,2,3
 | 再インストールについて | <ul><li>再インストール後のイベントが未アトリビューションのオーガニックイベントと見なされる場合：<ul><li>2024年5月26日現在のみ含まれている。<Anchor target="_blank" href="/marketers/ja/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">詳細を知る</Anchor></li><li>インストール時間は<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>フィールドに基づいています。</li><li>ユニークユーザーやリテンション測定にはカウントされません。</li></ul></li><li>再インストール後のイベントが最初のインストールに起因する場合、それらは常に含まれる。<Anchor target="_blank" href="/marketers/ja/docs/unique-users">詳細を知る</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

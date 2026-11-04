@@ -34,6 +34,8 @@ x-zendesk:
 > * <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 > * 流入元がオーガニックの場合、ポストバックは送信されません。
 
+<div id="integration-overview" />
+
 ## 連携の概要
 
 以下の手順でBrazeとの連携を設定します。
@@ -123,6 +125,8 @@ AppsFlyer.setAdditionalData(customData);
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Brazeの設定
 
 **前提条件：** パートナーのアカウントが必要です。アカウントがない場合は、連携を設定する前にパートナーに連絡し、アカウントを開設してください。
@@ -141,10 +145,14 @@ AppsFlyer.setAdditionalData(customData);
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 <strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -166,6 +174,8 @@ BrazeとAppsFlyerの接続には、固有のAPIキーとRESTエンドポイン�
 * キャンペーン名
 * 広告グループ名
 * 広告名
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -208,6 +218,8 @@ Brazeでは、計測リンクは利用できません。
 Brazeでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Brazeでユーザーのアトリビューションデータを確認する
 

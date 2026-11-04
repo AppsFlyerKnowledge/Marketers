@@ -28,9 +28,13 @@ x-zendesk:
 
 <Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
+<div id="overview" />
+
 ## 概要
 
 Advanced SRN連携では、広告IDを含むすべてのトラフィックが通常のSRNトラフィックとしてアトリビューション・レポートされます。広告IDを利用できない場合は、AppsFlyerがプライバシー制限に準拠した形で、TikTokから提供されるクリックおよびインプレッションデータを基にアトリビューションを計測します。
+
+<div id="set-up-tiktok-for-business" />
 
 ## TikTok For Businessの連携設定
 
@@ -60,9 +64,13 @@ Advanced SRN連携では、広告IDを含むすべてのトラフィックが通
 
 **連携**タブには、以下の設定項目があります。
 
+<div id="activate-partner" />
+
 #### パートナーの有効化
 
 連携を有効にするには、最初に必ず**パートナーを有効にする**のトグルをONにしてください。<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化と無効化</Anchor>に関する詳細情報は、連携タブを参照してください。
+
+<div id="advanced-data-sharing" />
 
 #### 高プライバシーポストバック
 
@@ -78,6 +86,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >
 > * 連携（`tiktokglobal_int`）を有効にすると、**高プライバシーポストバック**トグルがデフォルトでオンになります。
 > * レガシー連携（`bytedanceglobal_int`）から移行し、新しい連携（`tiktokglobal_int`）をアクティブ化すると、移行前の状態に関係なく、**高プライバシーポストバック**トグルがデフォルトでオンになります。
+
+<div id="general-settings" />
 
 #### 一般的な設定
 
@@ -98,6 +108,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 > * 新しい連携（`tiktokglobal_int`）に移行すると、レガシー連携（`bytedanceglobal_int`）の値がすべてこのフィールドに自動的に入力されます。
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">iOS14におけるTikTok App IDの要件について</Anchor>も参照してください。
 
+<div id="default-postbacks" />
+
 #### デフォルトのポストバック
 
 アプリの**インストール**に関するポストバックの送信方法を設定します。**拒否されたインストール**と**リエンゲージメント**の場合、ポストバックはTikTok for Businessのみに送信されます。
@@ -109,6 +121,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >
 > * iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">レポート</Anchor>を通じてパートナーと共有するデータのコントロールは、 **[高プライバシー](#高プライバシーポストバック)** （iOS 14.5以降）のトグル状態によって決まります。
 > * レガシー連携（`bytedanceglobal_int`）から移行し、新しい連携（`tiktokglobal_int`）をアクティブにすると、移行前の状態に関係なく、ポストバックインストールのデフォルトの選択状態は**このパートナーのみ**になります。
+
+<div id="install-attribution" />
 
 #### インストール計測
 
@@ -134,6 +148,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >     このデータはGCDでは利用できません。集計データレポートでは引き続きビュースルーコンバージョンを利用できます。
 > * レガシー連携 (`bytedanceglobal_int`) から移行し、新規連携 (`tiktokglobal_int`) をアクティブ化すると、移行前の状態に関係なく、ルックバック期間の設定 (クリックスルーおよびビュースルー) は**デフォルト値**になっています。これらの設定は更新できます。
 
+<div id="reinstall-attribution" />
+
 #### リインストール計測
 
 リインストール計測を使用すると、リアトリビューション期間中にアプリを再インストールしたユーザーを計測し、対象となるTikTokのクリックやインプレッションへ成果を紐付けられます。
@@ -146,6 +162,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 >
 > * リインストール専用のルックバック期間の設定は不要です。リインストール計測では、インストールのアトリビューション設定と同じクリックスルーおよびビュースルーのステータスとルックバック期間を使用します。
 > * 有効化すると、対象となるリインストールのポストバックがTikTokへ送信されます。
+
+<div id="re-engagement-attribution" />
 
 #### リエンゲージメントCVの計測
 
@@ -167,6 +185,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 
 参考：<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide#reengagement-rules-and-windows">リエンゲージメント計測の仕様と期間設定について</Anchor>
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### アクティブユーザーをリターゲティング計測から除外する
 
 直近アプリを起動したユーザーの、<Anchor target="_blank" href="/marketers/ja/docs/set-retargeting-inactivity-window#休眠期間">リエンゲージメントCVとリアトリビューションCVを計測しない</Anchor>期間を設定します。つまり、この期間のアクティビティはAppsFlyerに記録されません。
@@ -177,6 +197,8 @@ iOSアプリのみ：ポストバックや<Anchor target="_blank" href="/markete
 
 1. **リターゲティングでアクティブユーザーを無視する**をオンにします。
 2. 休眠期間を設定します。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントのポストバック
 
@@ -241,6 +263,8 @@ SRNは、自身のプラットフォーム上でアトリビューションを�
 
 6. **コストを保存**をクリックします。
 
+<div id="for-roi360-subscribers" />
+
 #### ROI360をご契約のお客様向け
 
 * 従来の `bytedanceglobal_int` と新しい `tiktokglobal_int` の両方の連携においてコストAPIを広告主や代理店が有効にしている場合、重複したコストデータが表示される可能性があることにでご注意ください。これを回避するには、`bytedanceglobal_int`の連携設定画面において、**コスト**タブでコスト取得の連携をOFFにしてください。  
@@ -273,9 +297,13 @@ Pangleから広告収益データを取得する場合には、別途Pangle（�
 
 </Accordion>
 
+<div id="deep-linking-with-tiktok-for-business" />
+
 ## TikTok for Businessとのディープリンク
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/understanding-deeplinks-and-deferred-deeplinks?lang=en">TikTokは、キャンペーン、広告グループ、広告を作成するときに、広告レベルで複数のキャンペーン目標に対してディープリンクとディファードディープリンクをサポートしています</Anchor>。ユーザーが特定のコンテンツに移動するためのディープリンクを作成することで、TikTok広告へのユーザーのエンゲージメントに基づいてカスタマイズされたコンテンツを提供することが可能になります。
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
 
 ### ディープリンク用AppsFlyerのGCD APIを使ってTikTokコンバージョンデータにアクセス
 
@@ -284,6 +312,8 @@ AppsFlyerは、ディファードディープリンクのためにさまざま�
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">**ユニファイドディープリンク(UDL)**</Anchor>：TikTokクリックには <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#deep_link_value">deep\_link\_value</Anchor> フィールドが含まれます（広告側でディープリンクが設定されている場合）。この方式はUDLソリューションでサポートされています。
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD（コンバージョンデータ取得）API**</Anchor>：これは、SDKレベルで直接、TikTokユーザーのコンバージョンデータにリアルタイムでアクセスするための推奨オプションです。GCD APIから返却されるデータには <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor> パラメータが含まれており、実際のディープリンク先（アプリ内遷移先）が格納されます。
 * **コンバージョンデータパラメーターの使用：** キャンペーン名、広告セット名、またはTikTokインストールのアトリビューションデータの一部として返されるその他のフィールドを使用して、ユーザーをコンテンツに誘導するカスタムロジックを作成できます。
+
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
 
 ## Web to app：非アプリキャンペーンの計測
 
@@ -298,9 +328,13 @@ TikTok Ads Managerで次のステップに従うと、TikTok非アプリキャ�
 3. **保存**をクリックしてください。
 4. これらの手順は、キャンペーンに関連するすべての広告に適用されます。
 
+<div id="set-up-tiktok-for-business-for-agencies" />
+
 ## 代理店向け：Tiktok for Businessとの連携
 
 広告主の代理店は、TikTok for Businessの連携をオンにして、キャンペーンのアトリビューションの取得を開始できます。ただし、この連携には、代理店に関してはいくつかの制限があります。
+
+<div id="agency-limitations" />
 
 ### 代理店の制限
 
@@ -324,11 +358,15 @@ TikTok Ads Managerで次のステップに従うと、TikTok非アプリキャ�
 >
 > TikTok for BusinessのアカウントIDは、広告主または代理店の間で共有してはなりません。共有されている場合、広告主のすべてのインストールは代理店のダッシュボードに自動的に紐付けられます。
 
+<div id="smart-plus-campaigns-reporting" />
+
 ## Smart Plusキャンペーンのレポート
 
 Smart Plusは、複数のクリエイティブを同一広告ユニット内でテストできる新しいTikTokキャンペーンタイプです。自動クリエイティブテストを通じて、パフォーマンス最適化を支援します。
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/about-smart-plus-campaign?lang=en">Smart Plusキャンペーンの詳細はこちら</Anchor>
+
+<div id="how-smart-plus-campaigns-are-structured" />
 
 ### Smart Plusキャンペーンの構造
 
@@ -338,6 +376,8 @@ Smart Plusは、複数のクリエイティブを同一広告ユニット内で�
 2. アドセット
 3. アド
 4. クリエイティブ
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
 
 ### AppsFlyerにおけるSmart Plusデータのレポート方法
 

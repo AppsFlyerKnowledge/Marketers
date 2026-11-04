@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要： 概要：Vizio コネクテッドTV（CTV）アプリにAppsFlyerを実装し、Vizioキャンペーンについてのアトリビューションとイベントデータを受取りましょう。**
 
+<div id="about-vizio-ctv-attribution" />
+
 ## Vizio CTVアトリビューションについて
 
 ストリーミング用のVizio SmartCast OSは、すべてのVizio TVで動作します。
@@ -34,9 +36,13 @@ Vidaa API連携では以下をサポートしています：
 * Vizio Smart TV
 * CTV-to-CTVのアトリビューションとイベントの計測：Vizioアプリの初回起動（インストールに相当）のアトリビューションと記録、およびユーザーのVizioデバイスで発生するイベントを意味します。
 
+<div id="vizio-attribution-flow" />
+
 ### Vizioアトリビューションフロー
 
 ![CTV_attribution_flow_-_Vizio__1_.png](https://files.readme.io/f4ab4b6c9e045fe00b537814fa9f10746b525a5512e5805e62eb0c2e4c9a8615-6318406872337.png)
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -61,6 +67,8 @@ Vidaa API連携では以下をサポートしています：
 | コストデータ | コストデータは、メールメソッドによるアップロードファイルを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">コストインポート</Anchor>経由で送信する必要があります。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

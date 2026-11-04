@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerでのMeta広告の利用に関するよくある質問と回答を紹介します。
 
+<div id="meta-ads-faq" />
+
 ## Meta広告に関するよくある質問
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -78,9 +80,13 @@ Meta広告のリターゲティングを有効にすると、追加費用なし�
 
 Google Play Install Referrer APIを使用すると、広告主はGoogle Playストア経由のインストールについて、キャンペーン情報などのアトリビューションデータを取得できます。このAPIを<Anchor target="_blank" href="/marketers/ja/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">アプリに実装する</Anchor>と、インストール後の初回起動時にリファラデータが渡されます。必要な復号キーを登録すると、AppsFlyerのローデータレポートで、マッチタイプが`gp_referrer`のアトリビューション項目を利用できます。
 
+<div id="meta-install-referrer" />
+
 #### Metaインストールリファラ
 
 Metaインストールリファラは、デバイスのローカルストレージに保存された追加のキャンペーンメタデータを提供します。このデータには、[AppsFlyer SDK](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer)を介してアクセスできます。クリックとインプレッションの両方を含む、より豊富なデータを提供し、複数のセッションにまたがる場合もあるため、Google Playインストールリファラを補完します。 Metaインストールリファラによるアトリビューションでは、`fb_referrer`（Facebook）や`ig_referrer`（Instagram）などのマッチタイプを使用します。
+
+<div id="campaign-attribution-fields" />
 
 #### キャンペーンのアトリビューション項目
 
@@ -93,10 +99,14 @@ Metaインストールリファラは、デバイスのローカルストレー�
 * アカウントID
 * チャネル
 
+<div id="sdk-and-setup-notes" />
+
 #### SDKと設定に関する注意事項
 
 * Google Playのリファラデータを取得するには、AppsFlyer SDK V5.4.0以降が必要です。
 * Metaインストールリファラを利用するには、SDKが正しく設定されている必要があります。実装の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">こちらのお知らせ</Anchor>を参照してください。
+
+<div id="submitting-the-decryption-key" />
 
 #### 復号キーの登録
 
@@ -259,11 +269,15 @@ iOSのユニバーサルリンクとAndroidのアプリリンクは、有料広�
 
   <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#meta-ads">Advanced Mobile Measurement（AMM）に同意している</Anchor>場合は、GCDで**キャンペーン名、広告セット名、広告名**を取得できます。この場合、取得した値を使って、独自の**ディープリンク処理**を実装できます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Metaのデータ共有ポリシーにより、GCDで取得できる情報の詳細度が変わる場合があります。取得できるキャンペーンレベルのデータを最大限に利用するため、AMMへの同意が完了していることを確認してください。
 
 </Accordion>
+
+<div id="meta-ads-cost-faq" />
 
 ## Meta広告のコストに関するよくある質問
 
@@ -427,6 +441,8 @@ AppsFlyerとは異なり、Meta広告は、Androidアプリと、Androidをベ�
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## Facebook SDKに関するよくある質問
 
 <div id="who-needs-facebooks-sdk" />
@@ -455,6 +471,8 @@ AppsFlyer SDKを導入する前から、Facebook SDKをアプリに実装して�
 * **ダイナミック商品広告キャンペーンのデータ**：ダイナミック商品広告のデータは、Facebook SDKからのみ取得できます。
 * **Meta広告のその他の機能**：認証、広告マネタイズ、ソーシャルシェア、ユーザー招待など、アトリビューション以外の用途でFacebook SDKが必要になる場合があります。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > ディープリンクとディファードディープリンクに関する上記の説明と推奨事項は、Meta広告のデモ・プレビューツールを使用した詳細なテストに基づいています。これらのツールは、実際に配信される広告とは異なる仕組みを使用します。
@@ -474,6 +492,8 @@ AppsFlyer SDKを導入する前から、Facebook SDKをアプリに実装して�
     iOS 14.5以降でSKANアトリビューションを有効にするには、<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">Meta広告へのアプリ内イベントのマッピング</Anchor>が必要です。
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## Meta広告のアトリビューションに関するよくある質問
 
@@ -510,6 +530,8 @@ Meta広告では、BaiduなどのGoogle Play以外のストアで配信するAnd
 3. ランディングページには、APKを配信しているストアに直接リンクする<strong>［アプリをダウンロード］</strong>ボタンを配置します。
 4. 見込みユーザーがボタンをクリックすると、対象のストアにリダイレクトされます。インストールが完了すると、AppsFlyerはMMP APIを介して、そのユーザーをMeta広告にアトリビューションします。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > この方法は、ストアへリダイレクトする前に<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">ランディングページを経由する必要があるGoogle</Anchor> PlayやApp Storeのアプリにも適用できます。
@@ -525,6 +547,8 @@ Amazonのアプリのアトリビューションに関する具体的な手順�
 Meta広告は、Meta広告アカウントを基にユーザーを識別します。同じMeta広告アカウントに、iOSとAndroidの両方のデバイスを関連付けているユーザーもいます。
 
 こうしたユーザーがAndroidデバイスでアプリの広告をクリックまたは閲覧し、iOSデバイスにアプリをインストールした場合、Meta広告はそのインストールを自社の成果と見なします。その結果、iOSのダッシュボードにAndroid向けキャンペーンの名前が表示されます。
+
+<div id="example" />
 
 > 📄 **例**
 >

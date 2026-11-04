@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** すべてのメディアソースにわたってアプリのアトリビューションと分析に影響を与える設定について説明します。
 
+<div id="app-settings" />
+
 ## アプリ設定
 
 **アクセス：**
@@ -38,6 +40,8 @@ x-zendesk:
 1. **AppsFlyer管理画面左メニュー** **設定** > アプリ設定へ移動します。
 2. アプリ設定ページで設定を確認し、必要に応じて変更を加えてください。
 3. **設定を保存**をクリックします。
+
+<div id="general-app-settings" />
 
 ### 一般設定
 
@@ -127,6 +131,8 @@ x-zendesk:
           * 通貨の変更は、収益やコストのないアプリで利用できます。
           * 新しいアプリの場合、通貨はアプリが追加されたときに設定します。
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### アプリの通貨によって影響を受けるレポートツール
 
         | レポートツール | 利用可能な通貨オプション |
@@ -142,6 +148,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### アトリビューション設定
 
 | 設定 | 説明 |
@@ -152,6 +160,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>オーガニック検索（SEO）計測 | 関連記事：<Anchor target="_blank" href="/marketers/ja/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">オーガニック検索の計測</Anchor><br /><br />**オーガニック検索アトリビューションを有効にするには：**<ul><li>AppsFlyer管理画面左メニュー **設定** > **アプリ設定** へ移動し、**オーガニック検索（SEO）計測**のトグルをオンにします。</li></ul> |
 | <span id="uninstall-measurement"></span>アンインストール計測 | <Anchor target="_blank" href="/marketers/ja/docs/measure-uninstalls">アンインストールの計測</Anchor>は、アンインストール計測が有効のときに発生するインストールに関連しています。<br /><br />**アンインストール計測を有効にするには：**<ol><li>各OSに対して以下を完了します：<ul><li>**iOS：** iOSアンインストール計測機能を実装するアプリは、ここにP12証明書をアップロードする必要があります。</li><li>**Android：** アプリはAndroidアンインストール計測用に、ここでFirebase/GCMサーバーキーを定義する必要があります。</li></ul></li><li>**アンインストール計測**トグルをオンにします。</li><li>**設定を保存**をクリックします。</li></ol>**アンインストール計測を停止するには：**<ol><li>**アンインストール計測**トグルをオフにします。</li><li>**設定を保存**をクリックします。</li></ol> |
 
+<div id="advanced-settings" />
+
 ### 詳細設定
 
 | 設定 | 説明 |
@@ -161,6 +171,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>iOS 10.3 リダイレクトフォールバック | [廃止] iOS 10.3以降向けiOSユーザー向けフローが簡素化されたため、このパラメータは使用されなくなりました。 詳細：<Anchor target="_blank" href="/marketers/ja/docs/uri-scheme-fallback-for-ios">iOSリダイレクト</Anchor><br /><br />このオプションはiOSアプリでのみ利用可能です。 |
 | <span id="change-app-name"></span>アプリ名の変更 | <ul><li>アプリ名は、管理画面やデータレポート全体に表示されます。異なるバージョンのアプリがある場合、例えば地域別配信のために、便利です。</li><li>この変更はアプリの表示に影響します。アプリIDは、さまざまなAppsFlyer APIでアプリを識別するため**変わりません**。</li><li>名前は50文字以内に制限されています。</li></ul> |
 | <span id="outofstore-app-url"></span>ストア外アプリURL | <ul><li>アプリに関連する計測リンクのデフォルトリダイレクト先として使用するアプリダウンロードURLを設定します。</li><li>Androidアプリがストア外アプリとして指定された場合、このフィールドは必須です。</li><li>設定すると、約1時間以内にデフォルトリダイレクト先としてURLが適用されます。</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **参照**
 >

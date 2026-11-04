@@ -24,13 +24,15 @@ x-zendesk:
 > **概要：** 概要：この記事で提案されている金融アプリや銀行アプリ向けのイベントを記録して、ユーザージャーニー全体を通してユーザーの質を計測しましょう。
 
 
-<span id="finance-and-banking"></span>金融アプリと銀行アプリは、新しいクレジットカードへのサインアップやローンの申請など、財務関連のさまざまな目的を実行することができます。計測をお勧めする一般的なアプリ内イベントには、口座開設、クレジットカード申請、ローン申請などがあります。
+<span id="-finance-and-banking"></span><span id="finance-and-banking"></span>金融アプリと銀行アプリは、新しいクレジットカードへのサインアップやローンの申請など、財務関連のさまざまな目的を実行することができます。計測をお勧めする一般的なアプリ内イベントには、口座開設、クレジットカード申請、ローン申請などがあります。
 
 このイベントを計測することで、次のことを決定することができます。
 
 * ユーザーが最も希望するアカウントはどれかを知り、リターゲティングのアイディアに活用できます
 * クレジットカードでユーザーが求めているメリットは何か
 * どのようなユーザーに財政援助が必要か、そして必要な金額はどれくらいか
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -43,6 +45,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events finance_banking_app_user_journey](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -85,6 +89,8 @@ x-zendesk:
 | af\_登録方法 | サインアップ方法の種類 | Email、Facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

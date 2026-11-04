@@ -39,6 +39,8 @@ x-zendesk:
 > * AppsFlyerは、Apple Search Adsのクリックベースのモバイルアトリビューション、ユーザー<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">リターゲティング</Anchor>、および<Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview">コスト</Anchor>データをAPI経由でサポートしています（ROI360のご契約が必要）。
 > * 2025年3月27日以降、AppsFlyerはApple Search Adsのインプレッションベースのモバイルアトリビューションも対応しています。
 
+<div id="set-up-apple-ads-integration" />
+
 ## ASA連携の設定
 
 <div id="get-started" />
@@ -104,6 +106,8 @@ SRN媒体であるApple Search Adsは、API経由でAppsFlyerと連携してい�
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## 代理店とASAマーケティングパートナーの設定
 
 <div id="principles" />
@@ -116,6 +120,8 @@ SRN媒体であるApple Search Adsは、API経由でAppsFlyerと連携してい�
 
 代理店とマーケティングパートナーの違いは 次の表に列挙されています。
 
+<div id="agency-vs-marketing-partner" />
+
 #### 代理店とマーケティングパートナー
 
 |  | 代理店 | マーケティングパートナー |
@@ -123,9 +129,13 @@ SRN媒体であるApple Search Adsは、API経由でAppsFlyerと連携してい�
 | AppsFlyerがポストバックを送信するか | いいえ | はい |
 | 機能と役割 | キャンペーンを実施します。 | キャンペーンを最適化するための付加価値テクノロジーソリューションを所有 |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### 代理店とマーケティングパートナーの設定
 
 次のチェックリストを使用して、すべてのステップを完了してください 設定プロセスで。詳細な指示は 次のセクションのパートナータイプごとに含まれています。
+
+<div id="configuration-steps-checklist" />
 
 #### 設定ステップのチェックリスト
 
@@ -188,6 +198,8 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 * グループ名には、特殊文字とスペース（空白）は使用しないでください。
 * Appleでサインインすると、ASAキャンペーングループの承認は 累積されません。これは、新しいアプリを統合すると、 前のアプリのために選択されたキャンペーングループの承認が取り消されることを意味します。 再度選択しない限り。選択する必要があります。 **制限付きアクセス**と関連する各キャンペーン グループ（広告主のために接続したいアプリに関連する）。
 
+<div id="advertiser-actions" />
+
 #### **広告主側のアクション**
 
 **前提条件：**
@@ -202,6 +214,8 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 4. [オプション] アプリを再インストールしたユーザーを帰属させたい場合、 再帰属ウィンドウ中に切り替えます。 **再インストール計測**
 5. **保存**をクリックしてください。
 
+<div id="agency-actions" />
+
 #### **代理店が行う設定**
 
 1. **Apple Search Adsのダッシュボード**：今すぐ キャンペーングループID次のスクリーンショットをガイドとして使用してください。 IDを特定するために。数字のみを取得してください。 ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
@@ -214,6 +228,8 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 > 📘 **注意**
 >
 > エージェンシーが Apple Search Ads マーケティングパートナーと連携する場合、 エージェンシーは両方の Apple Search Ads 設定ページとマーケティングパートナー 設定ページで同じキャンペーングループ ID を設定する必要があります。
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### コスト、クリック、インプレションのデータ
 
@@ -247,6 +263,8 @@ ASAのドキュメントを参照してください。 <Anchor target="_blank" h
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="asa-attribution" />
@@ -276,6 +294,8 @@ AppsFlyerとApple Search Adsは異なる計測ロジックを使用している�
 * 以下はレポートされません：特定のキャンペーンのインプレッション数が 100 回未満の Geoのインプレッション、タップ、またはコスト。
 * AppsFlyerで地域別にグループ化する場合、データが返されない地域は正しい値が表示されず、N/Aとしてひとまとめに表示されます。
 
+<div id="retargeting-related-discrepancies" />
+
 ### リターゲティング関連の乖離
 
 AppsFlyerリターゲティング計測メカニズムにより、広告主はユーザー獲得キャンペーンに加えて、リターゲティングキャンペーンを測定および分析できます。
@@ -289,6 +309,8 @@ AppsFlyerリターゲティング計測メカニズムにより、広告主は�
 **リターゲティングがオフ**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### その他の乖離の原因
 

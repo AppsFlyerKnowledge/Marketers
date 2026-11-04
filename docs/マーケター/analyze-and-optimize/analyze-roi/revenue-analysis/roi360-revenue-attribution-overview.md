@@ -25,12 +25,16 @@ x-zendesk:
 
 ![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
 
+<div id="overview" />
+
 ## 概要
 
 ROIの算出には、収益と広告費の2つが必要です。収益データを正確に計測し、ユーザーを獲得したメディアソースやキャンペーンに紐づけると、次のことができます。
 
 * ROIとROASの全体像を把握できます。インストールやエンゲージメントの件数に加え、価値の高いユーザーを獲得できているアドネットワーク、キャンペーン、広告を特定できます。
 * 分析結果をもとに、広告費の配分やマーケティングキャンペーンを調整できます。
+
+<div id="premium-revenue-reporting" />
 
 ### 有料機能による収益レポート
 
@@ -39,6 +43,8 @@ ROIの算出には、収益と広告費の2つが必要です。収益データ�
 * **アプリ内購入**：アプリ内で商品やサービスを販売して得られる収益です。 AppsFlyerは、保留中の購入、購入、返金、キャンセル、税金、ストア手数料などを含め、アプリ内購入に関する収益を自動的に検証・計測できます。アプリ内購入について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/purchase-and-subscription-validation-overview">購入・サブスクリプションの検証</Anchor>を参照してください。
 * **サブスクリプション収益**：アプリやサービスのサブスクリプションから得られる収益です。アップグレード、自動更新の停止、返金など、サブスクリプションの変更も含まれます。サブスクリプション収益について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/purchase-and-subscription-validation-overview">購入・サブスクリプションの検証</Anchor>を参照してください。
 * **広告収益**：アプリ内に広告を掲載し、ユーザーに表示することで得られる収益です。例えば、自社アプリ内に他のアプリの広告を表示できます。ユーザーがその広告をクリックすると、クリックに応じた収益が発生します。広告収益について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution">「ROI360ガイド｜広告収益のアトリビューション」</Anchor>を参照してください。
+
+<div id="basic-revenue-reporting" />
 
 ### 基本的な収益レポート
 

@@ -33,6 +33,8 @@ x-zendesk:
 
 AppsFlyerでGoogle Ads連携を設定すると、Google Adsキャンペーンからのインストールおよびアプリ内イベントを計測・アトリビューションできるようになります。 AppsFlyer上では、この連携は`googleadwords_int`という名称で管理され、アトリビューション結果はメディアソース`googleadwords_int`としてレポートされます。
 
+<div id="google-ads-attribution-flow-with-advanced-data-sharing" />
+
 ## 高度なデータ共有を使用したGoogle Adsの計測フロー
 
 ![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
@@ -43,6 +45,8 @@ AppsFlyerでGoogle Ads連携を設定すると、Google Adsキャンペーンか
 4. AppsFlyerは、非決定論的な成果の主張を独自の確率論的モデリングで検証します。検証を通過した成果の主張のみを受け入れます。
 5. 検証後、Googleの成果主張（受領したもの）はアトリビューション判断のステップに入り、AppsFlyerが他の成果候補（例：他のSRN、クリック計測のアドネットワーク、オーガニックなど）と比較します。インストールは、AppsFlyerのアトリビューションロジックと優先順位ルールに基づき、最も適切なソースに紐づけられます。
 6. Googleによる成果の主張が受け入れられ、最終的な計測対象に選ばれた場合、インストールはGoogleの成果として計測されます。ローデータレポートでは、決定論的な成果の主張の<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#attribution::cecc12c5">match\_type</Anchor>は`srn`、非決定論的な成果の主張のmatch\_typeは`probabilistic`と表示されます。
+
+<div id="configuring-google-ads-attribution-for-advertisers" />
 
 ## 広告主向けのGoogle Ads計測の設定
 
@@ -106,6 +110,8 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 
    再インストールの計測にはインストール計測の設定値が使用されるため、ルックバック期間を個別に設定する必要はありません。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/measure-reinstalls">再インストールの計測</Anchor>を参照してください。
 
+   <div id="important" />
+
    > 🚧 **重要！**
    >
    > 再インストールのコンバージョンデータは、Google Ads管理画面では**session\_startとして表示されます**。 AppsFlyerでは、リアトリビューションとして計測・表示されます。
@@ -130,6 +136,8 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 14. **Google Adsを接続**ボタンをクリックして、Googleアカウントにログインし、AppsFlyerですべてのGoogle Adsのキャンペーンコストを取得します。 <Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-cost-and-ad-revenue">詳細はこちら</Anchor>
 15. **保存**をクリックします。
 
+<div id="stop" />
+
 > ❗️ **ストップ！**
 >
 > * Google AdsでのインストールとリエンゲージメントのAppsFlyer計測を表示するには、次のAppsFlyerイベントをインポートしてください。
@@ -140,6 +148,8 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 </Accordion>
 
 <Accordion title="ステップ4：アプリコンバージョンのインポート（必須）">
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >
@@ -152,6 +162,8 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 * すべてのアプリの**first\_open**イベントをコンバージョンイベントとして設定してください。 （インストール計測に必須です）
 * Googleでリエンゲージメントを計測する場合は、**session\_start**のイベントをコンバージョンイベントとして設定してください。
 * Googleで計測したい各アプリ内イベントについてこのプロセスを繰り返してください。
+
+  <div id="note" />
 
   > 📘 **注意**
   >
@@ -173,6 +185,8 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 ![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
 1. **連携**タブに移動し、**アプリ内イベントポストバック**セクションまでスクロールしてください。
+
+   <div id="note-1" />
 
    > 📘 **注意**
    >
@@ -200,9 +214,13 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > Google AdsAPI連携には、Google Adsのリマーケティング機能が自動的に含まれています。この連携を完了し、イベントをGoogle Adsに送信することで、追加の連携なしでGoogle Adsでリマーケティングオーディエンスリストを作成することが可能です。
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## Google Adsのチームメンバーへの権限付与
 
@@ -221,15 +239,21 @@ Google Adsチームメンバーにアプリへのアクセスを許可するに�
 
 詳細：<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">アドネットワークへの権限付与</Anchor>
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## 代理店向けGoogle Ads計測の有効化
 
 AppsFlyerは、Google Adsを使用した代理店連携をサポートしています。 AppsFlyerがデータを正しく計測するためには、広告主と代理店が別々のGoogle Adsアカウントを持っていることが重要です。詳細：<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-agencies">こちら</Anchor>
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## 複数のGoogle Adsアカウントでの運用
 
 AppsFlyerは、同一のアプリで複数のGoogle Adsアカウントを利用することを可能にしています。これを実現するには、Google AdsでリンクIDを共有し、各Google Adsアカウントにイベントをインポートします。
 
 参照：<Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">Google AdsリンクIDの共有方法についての詳細</Anchor>
+
+<div id="ios-app-campaigns" />
 
 ## iOSアプリキャンペーン
 
@@ -248,6 +272,8 @@ Googleは、レポートとキャンペーンの最適化を維持するため�
 * なお、いずれのiOS ACIキャンペーンもICM連携を利用することで成果を計測可能です。これは、広告主アプリ、パブリッシャーアプリ、またはその両方でデバイスIDが利用できない場合に適用されます。
 * Googleは現在、iOSではクリックスルーのみの成果を主張しています。インプレッションの場合には成果を主張しません。
 
+<div id="using-deferred-deep-linking-in-app-campaigns" />
+
 ## アプリキャンペーンでのディファードディープリンクの使用
 
 **ディープリンクとは何ですか？どのように機能しますか？**
@@ -265,6 +291,10 @@ Googleは、レポートとキャンペーンの最適化を維持するため�
 3. AppsFlyerで、［**設定**］>［**アクティブな連携**］に移動します。 <strong>Google Ads（Adwords）</strong>を選択します。
 4. **連携**タブで、**Google Adsのディファードディープリンク**を有効にします。
 5. **連携を保存**をクリックします。
+
+<div id="populate-the-channel-parameter" />
+
+<div id="google-ads-parameter-mapping" />
 
 ## Google Adsのパラメータマッピング
 
@@ -291,11 +321,17 @@ Google Adsは`Channel(af_channel)`パラメータを送信しません。 AppsFl
 
 Googleのレスポンスで利用可能な広告タイプの詳細については、<Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">こちら</Anchor>をご覧ください。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > Googleが確率的アトリビューション（ICM）を通じてインストールに成果を紐づける際、Googleは`network_type`をAppsFlyerと共有しません。その結果、ネットワークタイプが欠落しており、チャネル値は`ACI_`（末尾の値なし）になります。
 
+<div id="campaign-type-app-campaigns" />
+
 ### キャンペーンタイプ： アプリキャンペーン
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Google Adsによるキャンペーン名の変更
 
@@ -307,19 +343,27 @@ Googleのレスポンスで利用可能な広告タイプの詳細について�
 
 **注意：** キャンペーン名のタイプは、インストール日ではなく、クリック日またはインプレッション日に基づいて設定されます。
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### ローデータレポートのEngaged viewパラメータ
 
 Engaged viewとは、ユーザーが動画広告を10秒より長く視聴したインプレッションです。クリックと同じアトリビューション優先度があります。  Androidでは、`engaged_view`はローデータレポートで、`Engagement Type` および `Sub Param 5`パラメータに反映されます。   
 Engaged viewは、AppsFlyerで設定されたクリックのルックバック期間内に発生した場合にカウントされます。ただし、上限は3日です。
+
+<div id="important-2" />
 
 > 🚧 **重要！**
 >
 > * GoogleはSRN（Self-Reporting Network）です。これらのネットワークにおける計測フローの仕組みの詳細については、<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns">こちら</Anchor>をクリックしてください。
 > * AppsFlyerは、Googleが提供するすべてのキャンペーン情報を提示できます。キャンペーンタイプ（検索、動画、ディスプレイ）と関連情報はGoogleによって決定されます。詳細については、<Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">こちら</Anchor>をクリックしてください。
 
+<div id="send-complex-in-app-events-to-google-ads" />
+
 ## 複数の商品を含むアプリ内イベントのGoogle Adsへの送信
 
 複数の商品を含む複雑なアプリ内イベントをGoogle Adsに送信するには、新しい`af_order_info`イベントオブジェクトの使用を推奨します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/item-level-order-data-for-ad-networks-af-order-info">アドネットワーク向けの商品単位の注文データ（af\_order\_info）</Anchor>を参照してください。
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## デバイスIDのないコンバージョンに向けたGoogle Adsキャンペーンの最適化
 
@@ -335,6 +379,8 @@ iOS 14.5以降およびAndroid 12以降、Google Adsに複数の識別子が導�
 Google AdsとAppsFlyerでは、デバイスIDのないトラフィックについても、リエンゲージメント、インストール、リアトリビューションのキャンペーンレベルのデータを取得できます。ただし、広告セットおよび広告レベルのデータはGoogleによって共有されません。  
 **これらのパラメータを受信するための設定変更は、広告主側で特に必要ありません。**
 
+<div id="data-visibility-by-operating-system" />
+
 ### オペレーティングシステム別のデータの可視性
 
 **Androidアプリ：**
@@ -345,6 +391,8 @@ AppsFlyerとGoogle Adsで、広告主はデバイスIDなしのトラフィッ�
 
 Google AdsとAppsFlyerで、広告主はリエンゲージメントアクティビティのトラフィックにおいて、デバイスIDなしの完全なキャンペーンデータを受け取ることができます。
 
+<div id="advertising-without-the-firebase-sdk" />
+
 ## Firebase SDKを実装せずに広告を配信する場合
 
 Firebase SDKを実装せずにGoogle Adsで広告を配信する場合、以下の制限が適用されます。
@@ -353,6 +401,8 @@ Firebase SDKを実装せずにGoogle Adsで広告を配信する場合、以下�
 | --- | --- |
 | tROASには非対応 | tROAS（目標広告費用対効果）による最適化は、Firebase SDKの収益イベントを使用する場合にのみ利用できます。 AppsFlyerやその他すべてのMMPの収益イベントは、この最適化の対象にはなりません。 |
 | オーディエンスの除外には非対応 | アプリキャンペーンでユーザーを除外できるのは、MMPのイベントではなく、Firebase SDKのイベントに基づいてキャンペーンを最適化している場合に限られます。 |
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
 
 ## Googleの確率論的モデリングによる成果計測（ICM）の機能と制限事項
 

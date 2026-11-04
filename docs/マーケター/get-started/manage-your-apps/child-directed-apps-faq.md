@@ -25,9 +25,13 @@ x-zendesk:
 ---
 **概要：** 概要： 子ども向けアプリに関するよくあるご質問（FAQ）の回答をご覧ください。
 
+<div id="overview" />
+
 ## 概要
 
 子ども向けアプリには、子どものプライバシーを保護するための多くのポリシー、法律、規制があります。主要なものは [COPPA](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa)と[GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2029-1-1)です。近年、iOSやAndroidなどのプラットフォームでは、子どものプライバシーを向上させるための施策が実装されています。アプリを作成するときに最初に行うべきことの一つは、アプリの対象を子どものみとするか、全年齢（子どもと大人の両方）とするかを決定することです。この記事から、子ども向けアプリにコンプライアンスに準拠したアトリビューションソリューションを実装する方法を学んでください。
+
+<div id="adding-a-child-directed-app" />
 
 ## 子ども向けアプリの追加
 
@@ -71,6 +75,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="implementing-appsflyer-compliance-tools" />
+
 ## AppsFlyerのコンプライアンスツールの導入
 
 <div id="how-do-i-know-which-tool-to-use" />
@@ -78,6 +84,8 @@ x-zendesk:
 <Accordion title="使用すべきツールを知る方法は？">
 
 アプリが子ども、あるいは全年齢（子どもと大人）を対象としている場合、この記事の法的要件に沿った推奨ツールを使用できます。その他のSDKリソースについては、このページの下部を参照してください。
+
+<div id="examples-of-compliance-tools-and-their-use" />
 
 #### コンプライアンスツールとその使用例
 
@@ -143,6 +151,8 @@ AppsFlyerのコンプライアンスツールは、常に実装する必要が�
 <Accordion title="アプリが子ども向けで、すべてのアドネットワークがブロックされている場合、SDKは必要ですか？">
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** 概要： iOSとAndroidの両方でプッシュ通知キャンペーンを計測します。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerは、すべてのプッシュ通知プロバイダーからのプッシュ通知キャンペーンの計測と、Firebase Cloud Messaging または Apple Push Notification Services (APNS) の上に直接実装されたキャンペーンの計測をサポートしています。
@@ -35,6 +37,8 @@ AppsFlyerは、すべてのプッシュ通知プロバイダーからのプッ�
 * プッシュ通知のペイロードにキーを持つ `af`afaf JSONオブジェクトを送信する（旧来の方法）
 
 コンバージョンは、オーバービューダッシュボードのリターゲティング、または統合ビューで表示されます。
+
+<div id="how-does-it-work" />
 
 ## 仕組み
 
@@ -47,9 +51,13 @@ AppsFlyerは、すべてのプッシュ通知プロバイダーからのプッ�
 
 OneLinkに、アプリ内の特定の画面にユーザーをルーティングするように設定されている場合、ディープリンクフローがトリガーされます。
 
+<div id="prerequisites" />
+
 ## 前提条件
 
 続行する前に、アプリに <Anchor target="_blank" href="/marketers/ja/docs/basic-sdk-integration-guide">AppsFlyer SDKが実装</Anchor>されており、<strong>かつ、</strong>プッシュ通知を受信できることを確認してください。
+
+<div id="steps" />
 
 ## ステップ
 
@@ -66,12 +74,16 @@ OneLinkに、アプリ内の特定の画面にユーザーをルーティング�
 
 まず、次のいずれかの方法を使用して、アトリビューションデータを含むプッシュ通知を作成します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 次のデモでは、Firebase をプッシュ通知プロバイダーとして使用しています。この手順は、すべてのプッシュ通知プロバイダーに適用でき、わずかな違い（存在する場合）がある必要があります。以下に記述されているそれぞれのプッシュ通知プロバイダーのドキュメントを参照してください。
 
 <Tabs>
 <Tab title="OneLinkの使用（推奨）">
+
+<div id="using-onelink-recommended" />
 
 #### **OneLinkの使用（推奨）**
 
@@ -80,6 +92,8 @@ AppsFlyerをプッシュ通知と連携するために推奨される方法で�
 1. <Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">OneLinkカスタムリンクを作成し、リターゲティング計測用に設定</Anchor>します。  
    　**注：** 注： OneLinkショートURLとロングURLの両方がサポートされています。
 2. プッシュ通知のカスタムデータに、AppsFlyerに送信するアトリビューションデータを含む OneLinkを追加します。
+
+<div id="note-1" />
 
 > 📄 **Firebaseの例**
 >
@@ -93,7 +107,11 @@ AppsFlyerをプッシュ通知と連携するために推奨される方法で�
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **JSONの使用（旧来の方法）**
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -104,6 +122,8 @@ AppsFlyerをプッシュ通知と連携するために推奨される方法で�
 * `pid`
 * `is_retargeting`
 * `c`
+
+<div id="note-3" />
 
 > 📄 **Firebaseの例**
 >

@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **At a glance:** CUIDを使うと、異なるデバイス、メディアソース、チャネルで発生した同一ユーザーのイベントをまとめられます。
 
+<div id="what-is-cuid" />
+
 ## CUIDとは
 
 カスタマーユーザーID（CUID）は、アプリ側で設定する一意のユーザー識別子です。通常、アプリの運営者がユーザー登録時に生成・設定します。 CUIDを使うと、アプリの運営者は複数のデバイスにまたがるユーザーの一連の行動を追跡できます。
+
+<div id="example" />
 
 > 📘 **例**
 >
@@ -41,6 +45,8 @@ x-zendesk:
 > * 同一ユーザーが複数のデバイス（スマートフォン、タブレット、テレビ、デスクトップ）で同じアプリ内の購入を行った場合、それらを1人のユーザーの購入データとしてまとめて確認できます。
 > * 複数のプラットフォーム（デスクトップ、モバイル、テレビ）でユーザーの利用状況データを共有し、一貫したユーザー体験を提供できます。
 
+<div id="setting-the-cuid" />
+
 ## CUIDの設定
 
 できるだけ多くのイベントをCUIDに紐づけられるよう、SDKの初期化処理のできるだけ早い段階でCUIDを設定することを推奨します。
@@ -50,6 +56,8 @@ x-zendesk:
 
 CUIDを取得できたら、`setCustomerUserID`を呼び出して設定できます。 CUIDを紐づけられるのは、設定後に発生したアプリ内イベントのみです。そのため、`start`を`setCustomerUserID`より先に呼び出すと、インストールイベントにCUIDは含まれません。
 
+<div id="associate-the-cuid-with-the-install-event" />
+
 ### インストールイベントとCUIDの紐付け
 
 インストールイベントにCUIDを紐づける必要がある場合は、`start`を呼び出す前に設定することを推奨します。
@@ -58,15 +66,21 @@ CUIDを取得できたら、`setCustomerUserID`を呼び出して設定できま
 
 Androidでは、アプリの実装に応じて、グローバルな`Application`クラスまたは`Activity`クラスから`start`メソッドの実行とCUIDの設定を行えます。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/basic-sdk-integration-guide#sdkを起動するクラスの選択">SDKを開始するクラスの選択</Anchor>を参照してください。
 
+<div id="if-the-sdk-starts-in-the-application-class" />
+
 #### ApplicationクラスでSDKを開始する場合
 
 グローバルな`Application`クラスからSDKを開始し、インストールイベントにCUIDを紐づける場合は、`waitForCustomerUserId`メソッドを使ってインストールイベントの送信を遅らせてください。このメソッドは、CUIDが設定されるまでSDKを待機状態にします。
 
 注意：何らかの理由でCUIDの設定に失敗すると、SDKは待機状態のままとなり、イベントを一切送信しません。
 
+<div id="if-the-sdk-starts-in-an-activity-class" />
+
 #### ActivityクラスでSDKを開始する場合
 
 `Activity`クラスからSDKを開始し、インストールイベントにCUIDを紐づける場合は、インストールイベントの送信を遅らせる必要はありません。 `start`を呼び出す前に`setCustomerUserId`を呼び出してください。
+
+<div id="developer-instructions" />
 
 #### 開発者向けの手順
 
@@ -85,6 +99,8 @@ Androidでは、アプリの実装に応じて、グローバルな`Application`
 * `start`より先に`customerUserId`を呼び出すと、SDKはインストールイベントと、それ以降のアプリ内イベントにCUIDを紐づけます。
 * `start`の後に呼び出すと、SDKはCUIDの設定後に記録されたイベントにのみCUIDを紐づけます。
 
+<div id="developer-instructions-1" />
+
 #### 開発者向けの手順
 
 Dev Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#setting-the-customer-user-id">カスタマーユーザーIDの設定</Anchor>を開発者に案内してください。
@@ -93,6 +109,8 @@ Dev Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integr
 
 <Tab title="Unity">
 
+<div id="developer-instructions-2" />
+
 #### 開発者向けの手順
 
 Dev Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#set-customer-user-id">カスタマーユーザーIDの設定</Anchor>を開発者に案内してください。
@@ -100,6 +118,8 @@ Dev Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basici
 </Tab>
 
 <Tab title="React Native">
+
+<div id="developer-instructions-3" />
 
 #### 開発者向けの手順
 
@@ -114,6 +134,8 @@ Dev HubのAPIリファレンスにある<Anchor target="_blank" href="https://de
 </Tab>
 </Tabs>
 
+<div id="cuid-and-privacy" />
+
 ## CUIDとプライバシー
 
 AppsFlyerはユーザーのプライバシーを尊重し、<Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/#engagementinformation">機微な個人情報の収集やAppsFlyerプラットフォームへの送信を認めていません。</Anchor>
@@ -121,6 +143,8 @@ AppsFlyerはユーザーのプライバシーを尊重し、<Anchor target="_bla
 ユーザーのプライバシーを保護するため、ユーザーを直接識別できる情報をCUIDに含めないでください。これには、社会保障番号や国民識別番号が含まれます。
 
 CUIDにユーザーのメールアドレスや電話番号が含まれる場合は、AppsFlyerに送信する前にハッシュ化する必要があります。個人情報を含むCUIDを、ハッシュ化せずにAppsFlyerに送信しないでください。
+
+<div id="see-also" />
 
 > 📘 **関連情報**
 >

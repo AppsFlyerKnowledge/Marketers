@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** PCまたはAndroidのGoogle PlayゲームやアプリをAppsFlyerと連携し、これらのアプリマーケティングを行うキャンペーンのパフォーマンスを計測します。
 
+<div id="about-google-play-games-for-pc-attribution" />
+
 ## PC版Google Playゲームのアトリビューション
 
 Google Play Gamesは、Windowsのデスクトップやラップトップ上でAndroidモバイルゲームを閲覧、ダウンロード、プレイできるPC用アプリケーションです。Google Play GamesはWindows PCデバイスで動作します。
@@ -29,6 +31,8 @@ Google Play Gamesは、Windowsのデスクトップやラップトップ上でAn
 Google Playゲーム上で動作するアプリは、他のAndroidアプリと同じです。これらは基本的に、PCで利用可能なモバイルAndroidゲームになります。また、他のモバイルAndroidアプリと同様に、AppsFlyer Android SDKを使用してAppsFlyerとすぐに統合することができ、どのソースやキャンペーンがアプリのオープンやアプリ内イベントをうながすかについて、アトリビューションデータやパフォーマンス測定を 受け取ることができます。マーケターは、これらのインサイトを活用してマーケティング活動を測定および最適化できます。
 
 AppsFlyerは、Google Play Games上で動作するアプリに対しても、モバイルAndroidアプリと同じアトリビューションフローを使用します。
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -41,6 +45,8 @@ AppsFlyerは、Google Play Games上で動作するアプリに対しても、モ
 | クロスプラットフォームのランディングページ設定 | **推奨：**  AppsFlyer Smart Scriptを実行するクロスプラットフォームのランディングページでは、ウェブからアプリへのアトリビューションを実行できます。EpicやSteamのような、他のプラットフォームでも利用可能なアプリをキャンペーンで宣伝する場合に最もおすすめです。<br /><br /><Anchor target="_blank" href="/marketers/ja/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">詳細：クロスプラットフォームのランディングページについて</Anchor><br /><br /><Anchor target="_blank" href="/marketers/ja/docs/cross-platform-landing-pages-with-smart-script">詳細：クロスプラットフォームのランディングページの設定方法</Anchor> | マーケター（開発者の支援が必要な場合があります） |
 | リンクの設定 | クロスプラットフォームのランディングページを使用しない場合は、ダイレクト計測リンクを作成し、広告からの遷移先URLとして入稿できます。Google Play Games アプリのマーケティング キャンペーンでは、モバイルアプリの AppsFlyerで作成された計測リンクと同様のリンクが使用されます。<br /><br /><Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">リンクの作り方を学ぶ</Anchor> | マーケター |
 | レポートの設定 / データの表示 | Google Play ゲームアプリ向けAppsFlyerのダッシュボードとレポートは、モバイルアプリのダッシュボードとレポートに似ています。<br /><br /><Anchor target="_blank" href="/marketers/ja/docs/analyze-your-data">AppsFlyerのダッシュボードとレポートの詳細はこちら</Anchor> | マーケター / データエンジニア |
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

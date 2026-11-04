@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **概要：** Tapcartを使用して、アプリでAppsFlyerの機能を活用します。
 
+<div id="introduction" />
+
 ## はじめに
 
 Tapcartでは、AppsFlyerへのデータ送信と機能の活用を簡単に行えます。 Tapcartでアプリを開発すると、AppsFlyer SDKが標準でアプリに組み込まれます。 Tapcartでデータを記録すると、オーガニックと非オーガニックのインストールを含むデータがAppsFlyerに表示されます。
+
+<div id="integrating-tapcart-with-appsflyer" />
 
 ## TapcartとAppsFlyerを連携する
 
 AppsFlyer SDKでは、インストール、アンインストール、紹介、プッシュ通知へのユーザーの反応の計測、ディープリンクの実行、ユーザーのプライバシー設定への対応などができます。
 
 連携方法は、<Anchor target="_blank" href="https://tapcart.com/integrations/appsflyer">Tapcartのページ</Anchor>を参照してください。
+
+<div id="default-in-app-events-configured-in-the-appsflyer-sdk" />
 
 ## AppsFlyer SDKで標準設定されているアプリ内イベント
 
@@ -47,6 +53,8 @@ TapcartがアプリにAppsFlyer SDKを組み込むと、ユーザーの操作に
 * 購入完了
 * カートからの削除
 * 初回購入
+
+<div id="enable-deep-linking-with-appsflyer" />
 
 ## AppsFlyerでディープリンクを有効にする
 

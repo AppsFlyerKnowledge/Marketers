@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** Data Locker 経由で利用可能な集計／ローデータレポート
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## 広告主向け：Data Lockerで提供されるレポート一覧
 
 <table><colgroup><col/><col/><col/></colgroup><thead><tr><th>データタイプ</th><th>レポートグループ</th><th>Data Lockerの有償契約が必要</th></tr></thead><tbody><tr><td>ローデータ</td><td>ユーザージャーニー／ローデータ</td><td>はい (2)</td></tr><tr><td>ローデータ</td><td>Protect360</td><td>はい</td></tr><tr><td>ローデータ</td><td>ピープルベースアトリビューション（PBA） </td><td>いいえ </td></tr><tr><td>ローデータ</td><td>Incrementality</td><td>いいえ </td></tr><tr><td>ローデータ</td><td>SKAN</td><td>いいえ (1)</td></tr><tr><td>ローデータ</td><td>収益</td><td><p>広告収益（単一バージョン）レポートは Data Locker の有償契約が必要</p><p>その他の収益レポートは、ROI360 Advanced パッケージの契約が必要</p></td></tr><tr><td>ローデータ</td><td>CTV、PC、コンソールアプリ</td><td>はい</td></tr><tr><td>集計レポート</td><td>コホート分析</td><td>いいえ (1)</td></tr><tr><td>アドバンス集計レポート</td><td>コホート分析</td><td>いいえ (3)</td></tr><tr><td>集計レポート</td><td>Creative Optimization</td><td><p>いいえ (1)</p><p>Creative Optimization Premium プランの契約が必要</p></td></tr><tr><td>集計レポート</td><td>SSOT</td><td>いいえ (1)</td></tr><tr><td colspan="3"><p>(1) Data Locker を契約していない場合、<a href="./data-locker-for-marketers#storage-options" target="_blank">お客様が所有するストレージ</a>を用意する必要あり</p><p>(2) クロスプラットフォームエンゲージメントは対象外</p><p>(3) Data Locker の契約、または Analytics API Suite で利用可能</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ Data Lockerのレポート提供タイミングは、レポートの種類によ
 | バージョン管理 | 同一日のデータが、より新しい、またはより完全なデータの取得に応じて複数回出力されるレポートです。最新バージョンが最も正確なデータとなります。 | <Anchor target="_blank" href="/marketers/ja/docs/revenue-etl-reports#ad-revenue-versioned">アトリビューション済み広告収益レポート</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## ローデータレポート
 
@@ -157,6 +161,8 @@ Data Lockerのレポート提供タイミングは、レポートの種類によ
 
 </Accordion>
 
+<div id="advanced-raw-data-reports-beta" />
+
 ## アドバンスローデータレポート（ベータ機能）
 
 アドバンスレポートは、構造化・検証済み・**AI 対応のデータセット**を提供することを目的とした、新世代のローデータレポートです。**初回の広告接触からコンバージョン、インストール後のアクティビティまで、ユーザージャーニー全体の取り込みと分析を、3 つのレポートのみで可能にします。**  
@@ -184,6 +190,8 @@ Data Lockerのレポート提供タイミングは、レポートの種類によ
 | --- | --- | --- | --- |
 | ユーザー獲得とリターゲティング | リエンゲージメント / リアトリビューション | 1-3時間 | ✅ |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 再インストールは本レポートには含まれません。
@@ -201,11 +209,15 @@ Data Lockerのレポート提供タイミングは、レポートの種類によ
 | --- | --- | --- | --- |
 | ユーザー獲得とリターゲティング | エンドユーザーイベント | 1-3時間 | ✅ |
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > CTV、PC、コンソールを含む拡張プラットフォームアプリでは、リターゲティングによるエンドユーザーイベントは含まれません。
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## 集計レポート
 

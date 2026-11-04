@@ -25,6 +25,8 @@ x-zendesk:
 
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
+<div id="activity-dashboard" />
+
 ## アクティビティ管理画面
 
 * オーガニックと非オーガニックのトラフィックが含まれます。
@@ -34,9 +36,13 @@ x-zendesk:
   * **平均：** 毎日。例：MAU、平均 DAU、平均 MAU
 * 国フィルタは、インストール時のユーザーロケーションに関連します。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > アクティビティダッシュボードについて詳しく知りたいですか？簡潔に重要なポイントを押さえた<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">AppsFlyerラーニングポータルコース</Anchor>をご活用ください。
+
+<div id="dashboard-features-and-layout" />
 
 ## 管理画面の機能とレイアウト
 
@@ -123,6 +129,8 @@ x-zendesk:
         デイリーアクティブユーザー当たりの平均収益額。  
         数式：（[n] 日の収益額 ÷ [n] 日のDAU）の合計） ÷ 日数の合計
 
+        <div id="h_01HHYHP1HFZBRTWB8MJ1F6XKZS" />
+
         > 📄 **例：ARPDAUの計算**
         >
         > | 日 | その日の収益額 ($) | DAU | デイリーユーザーの平均収益額 ($) |
@@ -194,6 +202,8 @@ x-zendesk:
 * 月間粗利益：収益、コスト、粗利益
 
 </Accordion>
+
+<div id="specifications-and-limitations" />
 
 ## 仕様と制限事項
 

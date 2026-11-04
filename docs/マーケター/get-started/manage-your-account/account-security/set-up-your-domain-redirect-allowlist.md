@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** リダイレクト先ドメインの許可リストを設定し、ユーザーを確認済みの信頼できるドメインにのみ誘導することで、データとブランドの信頼を守ります。
 
+<div id="about-the-redirect-allowlist" />
+
 ## <Image alt="Main redirect allowlist image.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />リダイレクト先の許可リストについて
 
 リダイレクト先として許可するルートドメインやサブドメインを指定することで、不正なリダイレクト、フィッシング攻撃、不正行為からリンクを保護します。許可リストを有効にすると、AppsFlyerで作成したリンクは、リストに登録されたドメインのWeb URLにのみユーザーをリダイレクトします。それ以外の場合、ユーザーはアプリストアに移動します。リダイレクト先の許可リストは、<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneLink</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#attribution-link-tab">パートナー連携</Anchor>による単一プラットフォームの計測リンク、CTV・PC・コンソール向けの<Anchor target="_blank" href="/marketers/ja/docs/ctv-pc-and-console-platform-direct-attribution-links">直接計測リンク</Anchor>に適用されます。リダイレクト先の許可リストとWebリダイレクトのカスタマイズは、Zero、Growth、Enterpriseプランで利用できます。不正利用を防ぐため、Zeroプランではクレジットカードの登録が必要です（課金はされません）。
+
+<div id="set-up-your-redirect-allowlist" />
 
 ## リダイレクト先の許可リストの設定
 
@@ -108,6 +112,8 @@ x-zendesk:
 **注意：** 保存すると、約1時間以内に更新後の許可リストがクリックに適用されます。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

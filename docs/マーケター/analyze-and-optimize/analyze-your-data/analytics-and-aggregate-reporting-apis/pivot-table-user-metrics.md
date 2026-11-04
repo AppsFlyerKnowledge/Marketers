@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Full_Funnel.gif](https://files.readme.io/ff9cf90460ac2cc695ad5d1d9c2c35fa9843cb221c3a096fdfb9d92f4364f208-51909644198929.gif)
 
+<div id="about-pivot-reports-page" />
+
 ## ピボットレポートページについて
 
 ピボットを使用することで、ユーザー獲得に関する指標を含むカスタマイズされたレポートを生成できます。ピボット機能には、カスタマイズしたレポートを作成するベースとして使用できる事前定義されたレポートが多数用意してあります。特定のアカウントユーザーによって作成されたレポートは全てのユーザーが利用できます。
@@ -40,6 +42,8 @@ x-zendesk:
 * コスト分析
 
 **注：** キャンペーンデータがピボットに表示されるためには、キャンペーンにインストールが必要です。
+
+<div id="pivot-procedures" />
 
 ## ピボットの手順
 
@@ -170,6 +174,8 @@ x-zendesk:
 | (5) アクション | [ピボットレポートの一覧](/docs/pivot-table-user-metrics#view-a-pivot-report)ページで利用できるアクションと同じものが、ピボットレポートごとに利用できます。 |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

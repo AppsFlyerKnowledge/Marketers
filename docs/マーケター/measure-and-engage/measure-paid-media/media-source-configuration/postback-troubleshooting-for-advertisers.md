@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** 概要： パートナー（広告媒体）がポストバックを受け取らない主な原因と解決策を見つけます。以下の各トピックに目を通し、それらが原因である可能性があるかどうかを確認してください。
 
+<div id="check-the-integration-toggles" />
+
 ## 連携トグルの確認
 
 さまざまなトグルが、連携のさまざまな部分を制御します。トグルの状態が、ポストバックを受信しない理由である可能性があります。
@@ -66,6 +68,8 @@ x-zendesk:
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## イベント設定を確認します。
 
@@ -139,6 +143,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## プライバシー制限
 
 以下の場合、AppsFlyerはプライバシーの制限によりポストバックを送信しません：
@@ -155,6 +161,8 @@ x-zendesk:
 
 <div id="media-source-restrictions-on-thirdparty-platforms" />
 
+<div id="the-sdk-was-set-not-to-share-information-with-the-partner" />
+
 <Accordion title="サードパーティプラットフォームでのメディアソースの制限">
 
 <Anchor target="_blank" href="/marketers/ja/docs/discrepancies-between-appsflyer-and-third-party-platforms#サードパーティプラットフォームへのポストバックの制限">一部のメディアソース</Anchor>は、第三者とのデータ共有を制限しています。そのため、このようなメディアソースからのインストールはオーガニックとして送信されます。
@@ -163,6 +171,8 @@ x-zendesk:
 
 詳細については、以下を参照してください：
 
+
+<div id="miscellaneous" />
 
 ## その他
 
@@ -239,6 +249,8 @@ AppsFlyerプラットフォームとパートナーのプラットフォーム�
 ポストバックは<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">高度なプライバシーテンプレート</Anchor>に従って送信されます。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

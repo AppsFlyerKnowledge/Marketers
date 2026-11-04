@@ -57,6 +57,8 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 
 </Accordion>
 
+<div id="set-data-locker-report-settings" />
+
 ## Data Lockerのレポート設定
 
 データロッカーを設定するには、クラウドサービスに接続し、エクスポート設定を定義し、レポート内容をカスタマイズするために、次の手順に従ってください：
@@ -83,6 +85,8 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 <Accordion title="2. クラウドサービスへの接続を追加">
 
 データロッカーで動作するようにクラウドサービスアカウントを設定した後（上記の「クラウドサービスの設定」を参照）、アカウントの資格情報を使用してデータロッカーで接続を作成します。最大2つの接続を作成できます。
+
+<div id="note" />
 
 > 📘 **注記**
 >
@@ -190,6 +194,8 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 
 6. **保存**をクリックします。**レポート出力設定セクション**が表示されます。
 
+<div id="note-1" />
+
 > 📘 **注記**
 >
 > 接続が作成、更新、または削除されたかどうか、そして誰が変更を行ったかを確認するには、[監査ログ](#track-connection-changes-in-the-audit-log)を使用できます。
@@ -210,6 +216,8 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
    * Snappy（Parquetファイルでのみ使用可能）
    * GZIP
 4. ファイルに希望する最大行数を選択してください：1万、2万5千、5万、10万、20万、50万のいずれか。 ファイル内の行数が多いほど、ファイルは少なくなりますが、各ファイルサイズは大きくなります。
+
+   <div id="note-2" />
 
    > 📘 **注記**
    >
@@ -335,9 +343,13 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 1. レガシーフィールドタブを開きます。
 2. オフに設定する：**レポートにレガシーフィールドを含める**。
 
+<div id="note-3" />
+
 > 📘 **注記**
 >
 > 未使用のフィールドをレポートに含めたいが、未使用フィールドのリストがグレーアウトしてロックされているためできない場合は、カスタマーサクセスマネージャーにお問い合わせください。
+
+<div id="non-empty-legacy-fields" />
 
 #### 非空のレガシーフィールド
 
@@ -356,11 +368,15 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 
 **保存**をクリックすると、最初のダンプデータが3時間以内に接続されたクラウドサービスに書き込まれます。次のデータ更新スケジュールは、各レポートに特有のものです。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > Data Locker設定への変更が有効になるには、最大3時間かかります。
 
 </Accordion>
+
+<div id="set-user-permissions" />
 
 ## ユーザー権限
 
@@ -369,11 +385,17 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 * 管理者はData Lockerページへのアクセス、すべての接続の作成と管理、編集者の追加、既存の接続への所有者の割り当てを行うことができます。
 * チームメンバーは、Data Lockerページへのアクセス、所有する既存の接続の編集、新規接続の作成を行うことができます。彼らは、たとえアカウントの所有者であっても、所有権（所有者や編集者の設定）を**管理できません**。
 
+<div id="manage-data-locker-access-and-ownership-admins" />
+
 ### Data Lockerのアクセス権と所有権の管理（管理者）
+
+<div id="give-data-locker-access" />
 
 #### Data Lockerのアクセス権を付与する
 
 * チームメンバーにData Lockerへのアクセス権を付与するには、**管理**に設定されたData Lockerの役割を割り当てます。
+
+<div id="manage-ownership-and-editors" />
 
 #### 所有権と編集者の管理
 
@@ -383,6 +405,8 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 2. **所有権の管理**を選択します。
 3. 接続の所有者を変更するか、編集者を追加します。
 
+<div id="review-filters-after-changing-ownership" />
+
 #### 所有権変更後のフィルターの確認
 
 Data Locker接続の所有者をデータアクセス制限のあるユーザー（アプリ、メディアソース、代理店、国などによる制限があるユーザー）に変更した場合、既存の[グローバルレベル](#select-global-level-filters)または[レポートレベルのフィルター](#7-select-the-reportlevel-filters)が、新しい所有者の権限に合わせてリセットされる可能性があります。
@@ -391,11 +415,17 @@ Data Locker接続の所有者をデータアクセス制限のあるユーザー
 
 データアクセス制限の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/user-management#データへのアクセス">ユーザー管理 > データアクセス</Anchor>を参照してください。
 
+<div id="note-4" />
+
 > 📘 **注記**
 >
 > AF AWS接続では、管理者であっても**所有権の管理**オプションはありません。なぜなら、管理者のみがAF AWS接続を編集、削除、または新規作成できるからです。この予防措置は、バケットの資格情報の露出を防ぐために取られています。
 
+<div id="data-storage-architecture" />
+
 ## データストレージのアーキテクチャ
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -458,6 +488,8 @@ Data Locker接続の所有者をデータアクセス制限のあるユーザー
 
 <Accordion title="ストレージオプション">
 
+<div id="caution" />
+
 > ❗️ **警告！**
 >
 > 広告主所有のストレージオプションを使用する場合：
@@ -486,6 +518,8 @@ Data Locker接続の所有者をデータアクセス制限のあるユーザー
 | ストレージ容量 | AppsFlyerが管理します | マーケターが管理 |
 | バケットポリシーでVPCエンドポイントを使用したアクセスコントロール | 不適用 | [オプション] AWSで、バケット単位でVPCエンドポイントセキュリティを実装している場合、AppsFlyerサーバーを許可リストに追加する必要があります。 |
 
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
+
 #### **セキュリティご担当者への連絡事項（お客様が管理するストレージの場合）**
 
 注意事項：
@@ -512,6 +546,8 @@ Data Lockerでは、データの一部またはすべてを2つの接続先（�
 * 連携の詳細の確認、連携の複製、連携の削除を行うには、⋮ (オプション) をクリックしてください。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 
@@ -573,6 +609,8 @@ Data Lockerでは、データの一部またはすべてを2つの接続先（�
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## AWSデータの取得
 
 AWS CLIや次のセクションで説明するツールのいずれかのAWSデータ取得ツールを使用してください。注！正確な手順は、AppsFlyerが所有するバケットに適しています。独自のバケットに接続する場合は、必要に応じて手順を調節してください。
@@ -605,6 +643,8 @@ AWS CLIや次のセクションで説明するツールのいずれかのAWSデ�
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### ファイルとフォルダーの一覧表示
 
@@ -694,6 +734,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
    これで、Data Lockerファイルにアクセスできます。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

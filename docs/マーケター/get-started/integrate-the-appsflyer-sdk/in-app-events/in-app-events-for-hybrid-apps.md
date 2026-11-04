@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** モバイルアプリに組み込まれたWebViewからアプリ内イベントを記録し、アプリ内のWebコンテンツ上で行われた操作も漏れなく計測します。
 
+<div id="introduction" />
+
 ## はじめに
 
 アプリ内で発生する<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">アプリ内イベント</Anchor>は、SDKを使って送信します。アプリのネイティブ環境以外で発生するイベントは、どのように計測すればよいでしょうか？
@@ -41,11 +43,15 @@ x-zendesk:
 
 このガイドでは、ハイブリッドアプリのケースを取り上げます。 HTML画面とネイティブ画面を連携させ、HTML画面のイベントを記録してアプリに送信する方法を説明します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Cordova、Ionic、React Native、Flutterなどの**ハイブリッドプラグインを使って**AppsFlyerを実装している場合、このガイドの連携方法は適用できません。
 >
 > この場合、WebViewで発生するイベントは、<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile">AppsFlyerのサーバー間（S2S）API</Anchor>で送信することを推奨します。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -57,12 +63,16 @@ x-zendesk:
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
+<div id="recording-in-app-events-in-hybrid-apps" />
+
 ### ハイブリッドアプリでのアプリ内イベントの記録
 
 このガイドでは、ハイブリッドアプリでアプリ内イベントを記録する2つの方法を紹介します。
 
 * **［推奨］**[**JavaScriptインターフェース**](/docs/in-app-events-for-hybrid-apps#javascriptインターフェース)：ネイティブのJavaScriptインターフェースを使い、HTML画面やWebViewとネイティブコードの間でデータをやり取りします。 これにより、WebViewからネイティブコードにアプリ内イベントの関連データを送信できます。ネイティブコードがデータを受け取ると、SDKを使ってAppsFlyerに送信します。
 * [**URLの読み込み**](/docs/in-app-events-for-hybrid-apps#urlの読み込み)：ネイティブコードがURLの読み込みイベントを監視する方法です。 特定のURLの読み込みイベントを監視し、URLパラメータからデータを取得するよう、ネイティブコードを設定できます。取得したデータをSDKに渡します。
+
+<div id="javascript-interface" />
 
 ## JavaScriptインターフェース
 
@@ -86,6 +96,8 @@ URLの読み込み方式と比較した、ネイティブJavaScriptインター�
 <div id="android" />
 
 <Accordion title="Android">
+
+<div id="html-code-for-android" />
 
 #### Android向けのHTMLコード
 
@@ -118,6 +130,8 @@ function recordEvent(){
   ```
 * 問題の発生を避けるため、AppsFlyerでは、アプリ内イベント名に小文字の英数字（a～z、0～9）のみを使用することを推奨します。
 
+<div id="webactivity-class" />
+
 #### WebActivityクラス
 
 次のコードを使用して、WebActivityクラスを作成します。
@@ -139,6 +153,8 @@ public class WebActivity extends AppCompatActivity {
 ```
 
 上記のコードは、WebViewとネイティブコードを橋渡しする**app**というオブジェクトを作成します。
+
+<div id="javascript-interface-class" />
 
 #### JavaScriptインターフェースクラス
 
@@ -190,6 +206,8 @@ HTMLコードでは、`app.recordEvent(eventName, eventParams)`でこのメソ�
 
 <Accordion title="iOS">
 
+<div id="html-code-for-ios" />
+
 #### iOS向けのHTMLコード
 
 WebViewまたはWebページに、次のHTMLコードを追加します。
@@ -225,11 +243,15 @@ WebViewまたはWebページに、次のHTMLコードを追加します。
   ```
 * 問題の発生を避けるため、AppsFlyerでは、アプリ内イベント名に小文字の英数字（a～z、0～9）のみを使用することを推奨します。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > このHTMLコードは、Objective-CとSwiftの両方で使用できます。
 
 #### Objective-C
+
+<div id="web-view-controller" />
 
 #### WebViewコントローラー
 
@@ -283,6 +305,8 @@ WebViewのビューコントローラーに、次のコードを追加します�
 ```
 
 上記のコードは、WebViewからメッセージを受け取ります。メッセージには、イベント名とイベント値が含まれます。メッセージを受信すると、`recordEvent`メソッドに渡して値を解析し、ネイティブSDKの`logEvent`メソッドを呼び出します。
+
+<div id="swift-webview-controller" />
 
 #### SwiftのWebViewコントローラー
 
@@ -341,6 +365,8 @@ import JavaScriptCore
 
 </Accordion>
 
+<div id="url-loading" />
+
 ## URLの読み込み
 
 AndroidとiOSには、URLの読み込みイベントを監視するネイティブメソッドがあります。この方法では、次のことが可能です。
@@ -354,7 +380,11 @@ AndroidとiOSには、URLの読み込みイベントを監視するネイティ�
 1. WebViewまたはWebページへのHTMLコードの追加
 2. URL読み込み処理のネイティブコードの実装
 
+<div id="webview-implementation" />
+
 ### WebViewの実装
+
+<div id="html-code-for-both-android-webview-and-ios-wkwebview" />
 
 #### HTMLコード（Android WebViewとiOS WKWebViewの両方に対応）
 
@@ -401,10 +431,16 @@ AndroidとiOSには、URLの読み込みイベントを監視するネイティ�
   ```
 * 問題の発生を避けるため、AppsFlyerでは、アプリ内イベント名に小文字の英数字（a～z、0～9）のみを使用することを推奨します。
 
+<div id="native-implementation" />
+
 ### ネイティブ側の実装
 
 <Tabs>
 <Tab title="Android">
+
+<div id="ios-implementation" />
+
+<div id="android-implementation" />
 
 #### Androidでの実装
 

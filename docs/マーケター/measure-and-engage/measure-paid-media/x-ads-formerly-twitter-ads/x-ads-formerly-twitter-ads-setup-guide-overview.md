@@ -24,9 +24,13 @@ x-zendesk:
 
 <Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 ## X広告を使用したモバイルアプリのプロモーション
 
 X広告モバイルアプリプロモーションは、X上でアプリの広告を掲載する方法です。広告主は、インストールやアプリエンゲージメント、ディープリンクを促す魅力的なデザインのアプリカードを使用して、モバイルアプリをプロモーションできます。アプリユーザーは、Xタイムラインから直接手軽にアプリをインストールし、使い始めることができます。
+
+<div id="x-ads-user-privacy" />
 
 ## X広告のエンドユーザープライバシー
 
@@ -44,6 +48,8 @@ AMMプログラムを通じて、広告主は、データが測定目的にの�
 なお、AMMプログラムに参加する前に受け取ったユーザーレベルのデータは、エクスポートできません。
 
 より詳細な情報については、Twitterアカウントマネージャーにお問い合わせください。
+
+<div id="x-ads-and-appsflyer-skan-interoperation" />
 
 ## X広告とAppsFlyerのSKAN相互運用
 

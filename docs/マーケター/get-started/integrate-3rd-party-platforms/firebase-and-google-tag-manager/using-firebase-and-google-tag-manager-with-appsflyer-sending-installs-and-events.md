@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** Firebase SDKで記録したイベントをAppsFlyerに送信するための、アプリ側の設定手順を説明します。
 
+<div id="configuring-events-in-the-app" />
+
 ## アプリでのイベントの設定
 
 このセクションでは、Googleタグマネージャー（GTM）を使用する場合に、アプリでイベントを設定・作成する方法を説明します。
@@ -203,6 +205,8 @@ iOS
 
 </Accordion>
 
+<div id="sending-install-events-to-firebase" />
+
 ## Firebaseへのインストールイベントの送信
 
 インストールに関するすべてのデータを含むインストールイベントを、Firebaseに送信することもできます。
@@ -213,6 +217,8 @@ iOS
 <Tab title="Java">
 
 AndroidでインストールイベントをFirebaseに送信するには、`conversionData`オブジェクトを使用できます。
+
+<div id="creating-the-send-event-method" />
 
 #### イベント送信用メソッドの作成
 
@@ -233,6 +239,8 @@ public void sendInstallToFirebase(Map<String, String> conversionData){
 
 このメソッドは、`conversionData`オブジェクトを受け取ります。このメソッドは、インストール時刻、メディアソース、キャンペーンがnullかどうかを確認します。nullの場合、インストール時刻を現在時刻に、メディアソースとキャンペーンをorganicに設定します。それ以外の場合は、`conversionData`オブジェクトからデータを取得し、Firebaseに送信します。
 
+<div id="sending-the-install-event" />
+
 #### インストールイベントの送信
 
 `onConversionDataSuccess`メソッドに、以下のコードを追加します。
@@ -251,6 +259,8 @@ if(conversionData.get("is_first_launch").equals("true")){
 
 AndroidでインストールイベントをFirebaseに送信するには、`conversionData`オブジェクトを使用できます。
 
+<div id="creating-the-send-event-method-1" />
+
 #### イベント送信用メソッドの作成
 
 `AFApplication`クラスの`onCreate`メソッドのすぐ下に、以下のメソッドを追加します。
@@ -268,6 +278,8 @@ fun sendInstallToFirebase(conversionData: Map<String, Any>) {
 ```
 
 このメソッドは、`conversionData`オブジェクトを受け取ります。このメソッドは、インストール時刻、メディアソース、キャンペーンがnullかどうかを確認します。nullの場合、インストール時刻を現在時刻に、メディアソースとキャンペーンをorganicに設定します。それ以外の場合は、`conversionData`オブジェクトからデータを取得し、Firebaseに送信します。
+
+<div id="sending-the-install-event-1" />
 
 #### インストールイベントの送信
 
@@ -290,6 +302,8 @@ if(conversionData?.get("is_first_launch") == true){
 
 <Tabs>
 <Tab title="Objective-C">
+
+<div id="creating-the-send-event-method-2" />
 
 #### イベント送信用メソッドの作成
 
@@ -329,6 +343,8 @@ AppDelegate.mファイルの末尾に、次のメソッドを追加します。
 非オーガニックインストールの場合、対応する非オーガニックインストールのデータを取得します。
 
 パラメータを設定すると、このメソッドがFirebaseにインストールイベントを送信します。
+
+<div id="sending-the-install-event-2" />
 
 #### インストールイベントの送信
 
@@ -385,6 +401,8 @@ func sendInstallToFirebase(_ installData: [AnyHashable : Any]!){
 
 パラメータを設定すると、このメソッドがFirebaseにインストールイベントを送信します。
 
+<div id="sending-the-install-event-3" />
+
 #### インストールイベントの送信
 
 AppDelegate.swiftの`didFinishLaunchingWithOptions`メソッドに、`FirebaseApp.configure();`を追加します。
@@ -408,6 +426,8 @@ if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_la
 
 </Tab>
 </Tabs>
+
+<div id="warning" />
 
 > ❗️ **警告**
 >

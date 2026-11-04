@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** GoogleからAppsFlyerへ、iOSアプリのSKAdNetwork（SKAN）ポストバックの内容を共有するように設定します。
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Google AdsとのSKAN連携
 
 複数のアドネットワークパートナーと連携する場合は、AppsFlyerで設定することをおすすめします。これにより、AppsFlyer上で、すべてのアドネットワークパートナーのSKANパフォーマンス指標をコストなどの指標とあわせて確認できます。
@@ -40,6 +42,8 @@ Googleのクリックのレポート方式と、過去のデータを日次で�
 
 * 集計レポートとダッシュボードでは、過去のデータが更新されます。
 * <Anchor target="_blank" href="/marketers/ja/docs/skan-raw-data-reports">ローデータレポート</Anchor>では、過去のデータは更新されません。Data Lockerで提供されるデータは、GoogleからAppsFlyerにデータが提供された日付（データ受信日）に対応するフォルダに格納されます。
+
+<div id="set-up-interoperation" />
 
 ## 連携の設定
 
@@ -80,6 +84,8 @@ Google AdsにアトリビューションされたSKANインストールをAppsFl
 11. [計測の差異](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads)についても確認してください。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 補足情報
 
@@ -166,6 +172,8 @@ Google Adsとの連携を解除する際は、［**パートナーを有効に�
 * SKAN計測の対象となるのは、Webからアプリ、またはアプリからアプリへ誘導するiOSキャンペーンのみです。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

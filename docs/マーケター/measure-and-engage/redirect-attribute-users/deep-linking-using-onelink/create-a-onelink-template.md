@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 各種マーケティングキャンペーンで作成するすべてのOneLinkリンクに共通する、リダイレクト設定の土台となるテンプレートを作成します。リンクを作成してユーザーに適切な体験を提供するには、テンプレートが必要です。
 
+<div id="onelink-templates" />
+
 ## OneLinkテンプレート
 
 <Embed title="OneLinkテンプレートの作成" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ OneLinkテンプレートには、次の特徴があります。
   * **アプリをインストールしていない新規ユーザー**：適切なアプリストアまたはWebのURLへ誘導します。
   * **アプリをインストール済みの既存ユーザー**：Android App Links、iOS Universal Links、またはURIスキームを使用してアプリを開きます。この設定には、開発者による作業が必要です。
   * **注意**：Webサイトまたはアプリストアへのリダイレクト設定は、リンク単位で上書きできます。
+
+<div id="create-a-onelink-template" />
 
 ## OneLinkテンプレートの作成
 
@@ -54,6 +58,8 @@ OneLinkテンプレートには、次の特徴があります。
    OneLinkテンプレートの設定ページが開きます。  
    &lt;0>&lt;1> 0>
 3. ［**OneLinkテンプレート名**］フィールドに名前を入力します。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -187,6 +193,8 @@ OneLinkテンプレートには、次の特徴があります。
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **ヒント**
       >
       > * AppleもGoogleも、アプリのスキーム名が一意であることを必須としていません。 他のアプリとスキームが競合しないよう、**自社ブランド固有のスキーム名を選択してください**。スキーム名には、例えば**com.company.app**のような、アプリのバンドルIDを使用するとよいでしょう。
@@ -210,6 +218,8 @@ OneLinkテンプレートには、次の特徴があります。
    </Tabs>
 
 6. ［**OneLinkテンプレートを更新**］をクリックします。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -254,6 +264,8 @@ OneLinkで生成したQRコードには、次のカスタマイズが可能で�
 
 ファビコンは、ソーシャルメディアやメッセージアプリでリンクを共有したときに、リンクのタイトルの横に表示される小さなアイコンです。独自のアイコンを追加して、表示をカスタマイズできます。この設定は、このテンプレートに基づくすべてのリンクに適用されます。カスタムのソーシャルメディアプレビューを設定してリンクを共有すると、対応するプラットフォームに表示されます。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > このファビコンは、対応するプラットフォームのリンクプレビューにのみ表示されます。また、リンク単位で［**カスタムプレビュー（画像とタグ）**］を設定している必要があります。<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags">詳細はこちら</Anchor>
@@ -274,6 +286,8 @@ OneLinkで生成したQRコードには、次のカスタマイズが可能で�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特性と制限事項
 
 <div id="key-traits-and-limitations" />
@@ -293,6 +307,8 @@ OneLinkで生成したQRコードには、次のカスタマイズが可能で�
 </Accordion>
 
 OneLinkテンプレートに関するご質問はありますか？<Anchor target="_blank" href="/marketers/ja/docs/onelink-troubleshooting-and-faq#onelinkテンプレートに関するよくある質問">よくある質問</Anchor>をご確認ください。
+
+<div id="next-step" />
 
 ## 次のステップ
 

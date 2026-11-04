@@ -34,6 +34,8 @@ eコマースアプリを使うと、ユーザーは、オンラインで商品�
 * チェックアウトを完了した購入者数
 * リピーターと1回のみの購入者の人数
 
+<div id="important" />
+
 > 🚧 **重要：**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -44,6 +46,8 @@ eコマースアプリを使うと、ユーザーは、オンラインで商品�
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -270,6 +274,8 @@ eコマースアプリを使うと、ユーザーは、オンラインで商品�
 | af\_領収書ID | 注文ID<br /><br />**購入検証のための CRITEO および Google 広告ワードの必須パラメータ** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

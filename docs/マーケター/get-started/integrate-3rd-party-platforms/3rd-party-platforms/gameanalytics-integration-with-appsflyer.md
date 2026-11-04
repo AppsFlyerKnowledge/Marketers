@@ -32,9 +32,13 @@ x-zendesk:
 
 個人開発者から世界的に有名なスタジオまで、世界中の40,000以上のゲーム開発者に利用され、20億台以上のデバイスで発生する、1日50億件以上のユニークイベントを処理しています。 GameAnalyticsは、主要なゲームエンジンとプラットフォーム向けのSDKを提供し、幅広い連携に対応しています。 https://gameanalytics.com/ で無料登録できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-gameanalytics" />
 
 ## GameAnalyticsの設定
 
@@ -58,10 +62,14 @@ Game Analyticsの設定で使用するのは、<strong><em>［連携］</em></st
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 <strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -71,6 +79,8 @@ Game AnalyticsとAppsFlyerの接続には、固有のゲームキーを使用し
 
 ![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にGame Analyticsへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
@@ -78,6 +88,8 @@ AppsFlyerは、ユーザーのインストール後にGame Analyticsへポスト
 ![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
 
 アプリをダウンロードしたすべてのユーザーのポストバックをGame Analyticsに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
+
+<div id="in-app-event-settings" />
 
 ### アプリ内イベントの設定
 

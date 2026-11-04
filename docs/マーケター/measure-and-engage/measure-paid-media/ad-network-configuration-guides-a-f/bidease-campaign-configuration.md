@@ -23,11 +23,15 @@ x-zendesk:
 
 <Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="298px" />
 
+<div id="setting-up-bidease" />
+
 ## Bideaseのセットアップ
 
 Bideaseとの連携では、クリックスルーおよびビュースルーのアトリビューションがサポートされています。
 
 構成には次のタブが含まれます。連携、計測リンク、コスト、広告収益、権限Bideaseでは、利用可能なタブは、統合、計測リンク、および権限です。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -39,6 +43,8 @@ Bideaseとの連携では、クリックスルーおよびビュースルーの�
 <Accordion title="連携タブ">
 
 **連携**タブには、以下で説明するセクションがあります。
+
+<div id="activate-partner" />
 
 #### パートナーの有効化
 
@@ -54,6 +60,8 @@ Bideaseとの連携では、クリックスルーおよびビュースルーの�
    **注意：** トグルは、パートナーと作業している間、オン<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">（有効）</Anchor>にしておく必要があります。
 5. 以下の手順に従い、各タブの設定を完了してください。
 
+<div id="advanced-privacy" />
+
 #### 高プライバシーポストバック
 
 iOS アプリの場合のみ:ポストバックやレポートを介してパートナーと共有されるデータのコントロールは、高度なプライバシー（ iOS 14.5 以降）<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">の切り替え状態</Anchor>によって異なります。
@@ -64,13 +72,19 @@ iOS アプリの場合のみ:ポストバックやレポートを介してパー
 | ポストバックは<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks">高度なプライバシーテンプレート</Anchor>に従って送信されます。 |  |
 | 集計された匿名データがパートナーと共有されます。つまり、ユーザーレベルのデータ（デバイスID）は共有されません。 |  |
 
+<div id="transaction-id" />
+
 #### トランザクションID
 
 iOS アプリの場合のみ:
 
+<div id="install-attribution" />
+
 #### インストール計測
 
 Bideaseからのビュースルーインストールをアトリビューションするには、 ビュースルーアトリビューションのインストールをオンにします。ビュースルー計測のルックバックスライダーは、 計測リンク タブで使うことができます。
+
+<div id="default-postbacks" />
 
 #### デフォルトのポストバック
 
@@ -79,6 +93,8 @@ Bideaseからのビュースルーインストールをアトリビューショ�
 * **インストール**で、次のいずれかを選択します。
   * このパートナーのみ：このパートナーのみ: ポストバックを送信するのは、インストールがこのパートナーに紐づいている場合、つまり、このアプリをインストールしたユーザーはBideaseからのユーザーです。
   * オーガニックを含むすべてのメディアソース：
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -101,6 +117,8 @@ Bideaseからのビュースルーインストールをアトリビューショ�
    1. 左上のパートナー名の下にある、アプリ名をクリックしてアプリ一覧を開いてください。
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリで、<Anchor target="_blank" href="/marketers/ja/docs/amazon-ads-campaign-configuration#integration-tab">連携ステップ</Anchor>を再度実施してください。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -139,6 +157,8 @@ Bideaseからのビュースルーインストールをアトリビューショ�
 <Accordion title="権限タブ">
 
 データにアクセスしてさまざまなアクションを実行するために Bidease に <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">付与する権限</Anchor> を選択します。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >

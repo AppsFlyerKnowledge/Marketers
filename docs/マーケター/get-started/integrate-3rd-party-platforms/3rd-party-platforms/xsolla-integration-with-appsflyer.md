@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるXsollaは、従来のアプリプラットフォームを介さない決済処理を専門とする、ゲームコマースのテクノロジーパートナーです。 XsollaとAppsFlyerを連携すると、Xsolla Web Shopの購入・収益データをAppsFlyerに自動送信できます。Web Shopでの購入も含めた、ゲーム全体のROASとLTVを把握できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="integration-types" />
 
 ## 連携方式
 
@@ -36,6 +40,8 @@ Xsollaとの連携には、次の2つの方式があります。
 
 * 連携の設定を始める前に、<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに問い合わせて</Anchor>アカウントを作成してください。
 * 連携を正しく動作させるには、カスタマーユーザーID（CUID）をAppsFlyerに共有し、Xsollaに共有するユーザーIDと一致させてください。 IDを一致させることで、ユーザーがXsolla Web Shopにログインでき、ユーザーデータがAppsFlyerに正確に送信されます。
+
+<div id="setting-up-the-tech-partner-integration" />
 
 ## テクノロジーパートナー連携の設定
 
@@ -57,6 +63,8 @@ Xsollaとの連携には、次の2つの方式があります。
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 #### パートナーを有効化
 
 初回の設定時は、［**パートナーを有効化**］をオンにして、連携を設定できるようにします。 Xsollaと連携している間は、オンにしておく必要があります。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
@@ -64,6 +72,8 @@ Xsollaとの連携には、次の2つの方式があります。
 #### Advanced Privacy
 
 iOSアプリでは、［<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">Advanced Privacy</Anchor>］のトグルが表示されます。オンにすると、パートナーとのユーザー識別子の共有が制限されます。アプリ設定で［<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor>］がオンの場合、［**Advanced Privacy（iOS 14.5以降）**］はデフォルトでオンになり、変更できなくなります。
+
+<div id="default-postbacks" />
 
 #### デフォルトポストバック
 
@@ -74,6 +84,8 @@ AppsFlyerは、ユーザーのインストール後にXsollaへデフォルト�
 * **オーガニックを含むすべてのメディアソース：** すべてのパートナーの成果として計測されたイベントと、オーガニックのイベントのインストールポストバックを送信します。
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -128,6 +140,8 @@ Xsollaでは、権限の設定は利用できません。
 
 </Accordion>
 
+<div id="setting-up-the-pba-web-sdk-integration" />
+
 ## PBA Web SDK連携の設定
 
 この連携により、PBAダッシュボードにLTV（顧客生涯価値）のデータと分析結果を表示し、アプリの成果を分析できます。
@@ -149,6 +163,8 @@ Xsollaでは、権限の設定は利用できません。
    5. **AppsFlyer Dev Key**フィールドに、AppsFlyerのWeb用Devキーを入力します。 [AppsFlyerでこのキーを確認する方法](/docs/xsolla-integration-with-appsflyer#appsflyerでのweb用devキーの確認)は、以下を参照してください。
    6. **Connect**をクリックします。
 
+<div id="finding-the-web-dev-key-in-appsflyer" />
+
 #### AppsFlyerでのWeb用Devキーの確認
 
 1. <strong>［マイアプリ］</strong>ページで、<strong>［ブランドバンドルを表示］</strong>をクリックします。
@@ -156,7 +172,11 @@ Xsollaでは、権限の設定は利用できません。
 
 ![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
 
+<div id="identifying-xsollas-events-in-appsflyer" />
+
 ## AppsFlyerでのXsollaイベントの識別
+
+<div id="tech-partner-s2s-integration" />
 
 ### テクノロジーパートナー（S2S）連携：
 
@@ -166,6 +186,8 @@ Xsollaは、次の2つのアプリ内イベントをAppsFlyerに送信します�
 * **xsolla-billing-refund**：商品購入の返金
 
 どちらもモバイルアプリのアプリ内イベントとして扱われます。
+
+<div id="web-sdk-integration" />
 
 ### Web SDK連携：
 
@@ -179,6 +201,8 @@ XsollaのWebイベントは、PBAのWebアトリビューションとData Locker
 PC／コンソールへの対応：AppsFlyerとXsollaの連携は、現時点ではPC／コンソールアプリに対応していません。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

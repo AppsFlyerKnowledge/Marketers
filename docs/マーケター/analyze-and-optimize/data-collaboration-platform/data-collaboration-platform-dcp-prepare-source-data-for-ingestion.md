@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** コラボレーター間のデータセットのマッチ率を最大化し、コラボレーションの成果を高めるために、ソースデータを適切に準備します。
 
+<div id="about-data-preparation" />
+
 ## データ準備について
 
 AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform（DCP）</Anchor>は、複数のコラボレーターから提供される大規模なトランザクションデータ、ユーザーレベルデータ、またはその両方を取り込み・処理できるよう設計されています。データを取り込むと、DCPは共通の識別子（ハッシュ化されたメールアドレスや電話番号など）を使用してデータセット間でユーザーを照合し、そのデータに基づくコラボレーションのワークフローを実行できます。
@@ -32,6 +34,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 * 推奨されるデータ構造と、推奨されないデータ構造
 * CSVファイルで複数値の識別子を扱う方法
 
+<div id="understand-data-types" />
+
 ## データタイプの理解
 
 コラボレーションで使用する多くのソースには、以下のいずれか、または両方のデータタイプが含まれます。
@@ -42,6 +46,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 * **トランザクションデータ（イベントデータ）**
   * **目的：** ユーザーの行動（購入、訪問、取引など）を表現する
   * **一般的な構造：** 1ユーザーにつき複数行（1人のユーザーが複数のトランザクションを持つ場合があるため）
+
+<div id="data-structuring-guidelines" />
 
 ## データ構造のガイドライン
 
@@ -60,6 +66,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 4. トランザクションデータセット（および該当するその他のデータタイプ）では、**DCPのData Viewツールを使用**して、コラボレーションに適した、ビジネス用途を意識したプライバシー保護済みのデータサブセットを作成し、ローテーブルではなくそのData Viewを共有してください。 [Data Viewが推奨される理由](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended)
 
 他の構造も使用できますが、DCPを最大限に活用するうえでは最適でない場合があります。[推奨されないデータ構造](#data-structures-that-arent-recommended)を参照してください。
+
+<div id="recommended-identifier-structures" />
 
 #### 推奨される識別子の構造
 
@@ -128,6 +136,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 
 <Accordion title="データ構造の実践チェックリスト">
 
+<div id="identity-user-level-dataset-checklist" />
+
 #### 識別子データ（ユーザーレベルデータ）のチェックリスト
 
 * 1行が1ユーザーを表していること。
@@ -135,10 +145,14 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 * 複数の値（複数のメールアドレスなど）がある場合は、可能な限りネイティブ配列を使用すること。
 * セル内のリスト、「email\_1/email\_2/email\_3」のような複数列、複数行にまたがる識別子データの構造は避けること。
 
+<div id="transactional-events-dataset-checklist" />
+
 #### トランザクションデータ（イベントデータ）のチェックリスト
 
 * イベント／トランザクションの行は、元の構造のまま保持します。[トランザクションデータの例](#appendix-a-transactional-data-examples)を参照してください。
 * 必要に応じて[Data View](#appendix-c-why-dataviews-matter-and-recommended)を使用し、コラボレーションに適したユーザーレベルのサマリーを作成します。
+
+<div id="data-views-checklist" />
 
 #### Data Viewのチェックリスト
 
@@ -159,6 +173,8 @@ DCPでは、以下を含む複数のクラウドサービスからデータを�
 * GCS（Google Cloud Storage）
 * BigQuery
 * Snowflake
+
+<div id="format-guidance" />
 
 #### 形式に関するガイドライン
 
@@ -181,6 +197,8 @@ DCPでは、以下を含む複数のクラウドサービスからデータを�
 
 DCPへの取り込みに適したデータ構造もあれば、適していない構造もあります。以下は、**推奨されない**データ構造です。
 
+<div id="avoid-multiple-columns-for-the-same-identifier-type" />
+
 #### 避けるべき構造：同じ識別子タイプに複数の列を使用
 
 「メイン／サブ／3つ目のメールアドレス」のように列を分ける構造は推奨されません。
@@ -197,6 +215,8 @@ DCPへの取り込みに適したデータ構造もあれば、適していな�
 * ユーザーごとの値の数を事前に予測できない
 * 列数が増え続け、スキーマの保守が複雑になる
 
+<div id="avoid-lists-inside-a-single-cell-free-text" />
+
 #### 避けるべき構造：1つのセルに「リスト」を自由形式のテキストとして格納
 
 一見便利に見えますが、エラーが発生しやすい構造です。
@@ -212,6 +232,8 @@ DCPへの取り込みに適したデータ構造もあれば、適していな�
 * 実際の配列型ではない
 * 形式やエスケープ処理の問題が起こりやすい
 * わずかな表記の不整合でも取り込みに失敗する可能性がある
+
+<div id="avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table" />
 
 #### 避けるべき構造：識別子データを1ユーザーにつき複数行に分割（ユーザーの識別子テーブルを作る場合）
 
@@ -235,6 +257,8 @@ DCPへの取り込みに適したデータ構造もあれば、適していな�
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 
@@ -263,6 +287,8 @@ DCPへの取り込みに適したデータ構造もあれば、適していな�
 
 <Accordion title="コネクタ別のサンプル（AWS S3、GCS、BigQuery、Snowflake）">
 
+<div id="what-does-arraylist-of-identifiers-mean" />
+
 ### 「識別子の配列／リスト」とは？
 
 1人のユーザーが複数のメールアドレスや電話番号を持つことがあります（個人用と仕事用のメールアドレスなど）。その場合、列を増やしたり、1つのテキストフィールドに無理に詰め込んだりするのではなく、複数の値をリストとして表現します。
@@ -271,6 +297,8 @@ DCPへの取り込みに適したデータ構造もあれば、適していな�
 | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
+
+<div id="1-aws-s3-and-gcs-connector-parquet" />
 
 ### AWS S3／GCSコネクタ（Parquet）
 
@@ -285,6 +313,8 @@ DCPへの取り込みに適したデータ構造もあれば、適していな�
 
 Parquetはリストをネイティブでサポートしているため、ユーザーが複数のメールアドレス／電話番号を持つ場合に推奨されます。
 
+<div id="2-bigquery-connector-table-preview-and-schema-screenshot" />
+
 ### BigQueryコネクタ（テーブルプレビューとスキーマのスクリーンショット）
 
 **識別子データのスキーマ例（BigQuery）**
@@ -297,6 +327,8 @@ Parquetはリストをネイティブでサポートしているため、ユー�
 | maid | STRING | NULLABLE |
 
 BigQueryでは、配列はネイティブ機能（REPEATEDフィールド）としてサポートされています。複数のメールアドレス／電話番号がある場合は、この方法を推奨します。
+
+<div id="3-snowflake-connector-table-preview-and-schema-screenshot" />
 
 ### Snowflakeコネクタ（テーブルプレビューとスキーマのスクリーンショット）
 
@@ -319,10 +351,14 @@ Snowflakeは、リスト形式のフィールド（配列）をサポートし�
 
 <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-customized-data-views">Data View</Anchor>は、元のデータセットを変更することなく、既存のデータソースから作成できるカスタマイズ済みのデータサブセットです。 Data Viewでは、データを加工・精緻化・集約する処理を行い、コラボレーションに必要な情報だけを共有できます。共有データを明確かつ目的に沿った内容に保ちながら、それ以外のデータは非公開かつ安全な状態に維持できます。コラボレーションでData Viewを使用する理由：
 
+<div id="are-business-oriented-and-easier-to-collaborate-with" />
+
 #### ビジネス用途に適しており、コラボレーションしやすい
 
 * Data Viewを使用すると、ローログや複雑なトランザクションスキーマではなく、「Customer Identity View」「Eligible Audience View」「Purchase Summary View」など、整理されたビジネス向けの構造でデータを提示できます。
 * また、「アクティブユーザー」「過去30日間の総支出額」などの定義を標準化できるため、双方が同じ定義とロジックに基づいてデータを利用できます。
+
+<div id="are-more-privacy-safe-by-design" />
 
 #### 設計上、よりプライバシーを保護しやすい
 
@@ -332,6 +368,8 @@ Snowflakeは、リスト形式のフィールド（配列）をサポートし�
   * 粒度を制限（例：明細レベルのトランザクションではなく、集約済みの指標を共有）
   * 照合に必要な識別子だけを共有し、追加の機密列は共有しない
 
+<div id="protect-sensitive-business-data" />
+
 #### 機密性の高いビジネスデータを保護
 
 * ロートランザクションテーブルには、詳細な購買行動、価格パターン、加盟店との関係、内部IDなど、機密性の高いビジネス情報が含まれる場合があります。
@@ -339,6 +377,8 @@ Snowflakeは、リスト形式のフィールド（配列）をサポートし�
   * 例：商品単位の詳細ではなく、カテゴリ単位の集計値を共有
   * 例：正確な明細ではなく、支出額のレンジやサマリー指標を共有
 * これにより、競争上重要な情報や独自情報を意図せず開示してしまうリスクを軽減できます。
+
+<div id="can-make-your-data-more-cost-effective-and-performant" />
 
 #### コスト効率とパフォーマンスを高められる
 

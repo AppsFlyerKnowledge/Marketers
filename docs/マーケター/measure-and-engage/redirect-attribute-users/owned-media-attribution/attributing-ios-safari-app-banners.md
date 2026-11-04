@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** 概要： Safariには、Apple App Storeのアプリをプロモーションする <Anchor target="_blank" href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">Smart App Banner</Anchor> 機能が提供されています。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > ウェブサイトの訪問者をアプリユーザーに変換するために、AppsFlyerのスマートバナーの使用をお勧めします。
@@ -33,6 +35,8 @@ x-zendesk:
 > * 全てのブラウザに対応しています
 > * カスタマイズ可能です
 > * 全てのAndroid・iOSデバイスで機能します
+
+<div id="ios-app-banner" />
 
 ## iOSアプリバナー
 
@@ -47,6 +51,8 @@ iOSアプリバナーを実装する前に、次の点を考慮してくださ�
 * iOSアプリバナーとAppsFlyerのスマートバナーの両方を同時に実装しないでください。モバイルWebサイトの表示に問題が発生する可能性があります。
 * Smart Appバナーソリューションは、iOSに特化しているため、OS Xでは機能しません。
 * アプリバナーはSafariでのみ機能します
+
+<div id="setting-a-web-page-with-an-app-banner-and-click-attribution-link" />
 
 ### スマートアプリのバナーとクリック計測リンクの設定
 

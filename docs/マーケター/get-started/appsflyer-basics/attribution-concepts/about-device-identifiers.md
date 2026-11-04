@@ -26,21 +26,29 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer SDKが対応するデバイス識別子を説明します。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyer SDKでは、アプリの<Anchor target="_blank" href="/marketers/ja/docs/basic-sdk-integration-guide#アトリビューション">アトリビューション</Anchor>や分析に使用するデバイス識別子を設定できます。
 
 アプリの要件、適用されるプラットフォームのポリシー、ユーザーの同意に基づいて、GAID、IDFA、IDFVなどの広告識別子を取得するようSDKを設定できます。（例：サードパーティのAndroidアプリストアや、中国で提供されるアプリ）。
 
+<div id="android-device-identifiers" />
+
 ## Androidのデバイス識別子
 
 SDKは、Androidプラットフォームで以下のデバイス識別子に対応しています。
+
+<div id="apps-published-on-google-play" />
 
 #### Google Playで公開するアプリ
 
 | デバイス識別子 | 用途 |
 | --- | --- |
 | <span id="gaid"></span>GAID | Google PlayのAndroidユーザー向けの、**ユーザーがリセットできる**識別子です。<br /><br />SDK V4.8.0以降、AppsFlyerはこのデバイス識別子を自動収集します。 |
+
+<div id="apps-published-in-third-party-app-stores" />
 
 #### サードパーティのアプリストアで公開するアプリ
 
@@ -50,6 +58,8 @@ SDKは、Androidプラットフォームで以下のデバイス識別子に対�
 | <span id="oaid"></span>OAID | Google Play以外の一部のAndroidマーケットで使用する、**ユーザーがリセットできる**識別子です。  詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/android-oaid-implementation-in-the-sdk">OAIDの実装ガイド</Anchor>を参照してください。 |
 | <span id="android-id"></span>Android ID | サードパーティのアプリストアで使用する、**リセットできない**一意のモバイルデバイス識別子です。 SDKはAndroid IDを自動収集しません。収集が必要な場合は、開発者が収集処理を実装できます。<br /><br />**注意：** Android IDとGAIDは併用できません。 |
 
+<div id="apple-device-identifiers" />
+
 ## Appleのデバイス識別子
 
 SDKは、iOSプラットフォームで以下のデバイス識別子に対応しています。
@@ -58,6 +68,8 @@ SDKは、iOSプラットフォームで以下のデバイス識別子に対応�
 | --- | --- |
 | <span id="idfa"></span>IDFA | AppleのiOSまたはtvOS（Apple TV）ユーザー向けの、**ユーザーがリセットできる**一意の識別子です。 iOS 14.5以降、IDFAを取得できるのは、ユーザーが<Anchor target="_blank" href="/marketers/ja/docs/about-att-and-skan#att-principles">ATTの同意画面</Anchor>で同意した場合のみです。 |
 | <span id="idfv"></span>IDFV | デバイス上の**同一ベンダー**のすべてのアプリで共有するデバイス識別子です。最初のアプリをインストールするとIDFVが割り当てられ、同じベンダーの他のアプリにも同じIDFVが割り当てられます。別のベンダーのアプリには、異なるIDFVが割り当てられます。<br /><br />また、特定のベンダーのアプリをすべて削除すると、そのベンダーのIDFVも削除されます。その後、新たにアプリをインストールすると、新しいIDFVが割り当てられます。 |
+
+<div id="ctv--pc-and-console-app-device-identifiers" />
 
 ## CTV、PC、コンソールアプリのデバイス識別子
 

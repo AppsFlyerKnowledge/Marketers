@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** このAPIを使用すると、CSVファイルでローデータレポートを取得できます。
 
+<div id="pull-api-raw-data" />
+
 ## Pull APIローデータ
 
 * Pull APIを使用すると、CSVファイルでローデータレポートを取得できます。<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ローデータレポートの詳細はこちら</Anchor>
@@ -32,9 +34,11 @@ x-zendesk:
   * 通貨を選択
   * タイムゾーンを選択
 
+<div id="raw-data-reports-available-via-pull-api" />
+
 #### Pull APIで利用可能なローデータレポート
 
-<table><thead><tr><th>レポート</th><th>説明</th><th>更新頻度</th></tr></thead><tbody><tr><td colspan="3"><h4><strong><span id="raw-data-reports-nonorganic"></span>ローデータレポート（非オーガニック）</strong></h4></td></tr><tr><td><a href="" target="_blank">インストール</a></td><td>非オーガニックインストールを記録します。ユーザーが初めてアプリを起動したときに記録が生成されます。<br/> </td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アプリ内イベント</a></td><td>ユーザーが実行したイベントを記録します。<br/> </td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アンインストール</a></td><td>ユーザーがアプリをアンインストールしたときに記録します。<br/> </td><td>日次</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-reinstalls-v5" target="_blank">再インストール</a><br/> </td><td>アプリをアンインストールした後にUAメディアソースと接触し、リアトリビューション期間中にアプリを再インストールしたユーザーを記録します。</td><td>リアルタイム</td></tr><tr><td colspan="3"><h4><strong><span id="raw-data-reports-organic"></span>ローデータレポート（オーガニック）</strong></h4></td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-organic-installs-report-v5" target="_blank">オーガニックインストール</a><br/> </td><td>ユーザーが初めてアプリを起動したときに記録します。<br/> </td><td>継続的</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-organic-in-app-events-report-v5" target="_blank">オーガニックアプリ内イベント</a><br/> </td><td>ユーザーが実行したイベントの詳細を記録します。<br/> </td><td>継続的</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-organic-uninstall-events-report-v5" target="_blank">オーガニックアンインストール</a><br/> </td><td>ユーザーがアプリをアンインストールした記録。<br/> </td><td>日次</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-reinstalls-organic-v5" target="_blank">オーガニック再インストール</a><br/> </td><td>ユーザーがアプリをアンインストールした後、再度インストールしたことを記録します。</td><td>日次<br/> </td></tr><tr><td colspan="3"><h4><strong><span id="retargeting"></span>リターゲティング</strong></h4></td></tr><tr><td><a href="">コンバージョン</a></td><td>リターゲティングキャンペーンに接触した後にアプリを開いたユーザーの記録。</td><td>リアルタイム</td></tr><tr><td><a href="">アプリ内イベント</a></td><td>リエンゲージメント期間中にユーザーが実行したアプリ内イベント。</td><td>リアルタイム</td></tr><tr><td colspan="3"><h4><strong><span id="ad-revenue-raw-data"></span>広告収益のローデータ</strong></h4></td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-ad-revenue-raw-v5" target="_blank">帰属広告収益</a><br/> </td><td>メディアソースに帰属するユーザーの広告収益を記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">オーガニック広告収益</a></td><td>メディアソースに帰属しないユーザーの広告収益を記録します。</td><td>日次</td></tr><tr><td colspan="3"><h4><strong><span id="protect360-fraud"></span>Protect360の不正防止</strong></h4></td></tr><tr><td><a href="" target="_blank">インストール</a></td><td>不正と識別されたため、どのメディアソースにも帰属されなかったインストールを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アトリビューション後のインストール</a></td><td>不正なインストールから発生したため、まったく帰属されなかったアプリ内イベントを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">アプリ内イベント</a></td><td>Protect360によって不正と識別されたアプリ内イベントを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アトリビューション後のアプリ内イベント</a></td><td>メディアソースに帰属された後に不正と識別されたインストール、またはインストール自体にかかわらず不正と判定されたインストールに関連するアプリ内イベントを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">クリック</a></td><td>Protect360によってブロックされたユーザーのクリックを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">ブロック済みインストールポストバック</a></td><td>インストールがブロックされた結果としてメディアソースに送信されたポストバックのコピーを記録します。</td><td>リアルタイム</td></tr><tr><td colspan="3"><strong>ポストバック</strong></td></tr><tr><td><a href="" target="_blank">インストールポストバック</a></td><td>ユーザーが初めてアプリを起動したときに生成されたインストールイベントを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">アプリ内イベントポストバック</a></td><td>メディアソースに送信されたアプリ内イベントポストバックを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">リターゲティングアプリ内イベントポストバック</a></td><td>リエンゲージメント期間中にユーザーが実行したアプリ内イベントを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">リターゲティングコンバージョンポストバック</a></td><td>リエンゲージメント期間中にユーザーが実行したアプリ内イベントを記録します。</td><td>リアルタイム</td></tr></tbody></table>
+<table><thead><tr><th>レポート</th><th>説明</th><th>更新頻度</th></tr></thead><tbody><tr><td colspan="3"><h4><span id="raw-data-reports-non-organic"></span><strong><span id="raw-data-reports-nonorganic"></span>ローデータレポート（非オーガニック）</strong></h4></td></tr><tr><td><a href="" target="_blank">インストール</a></td><td>非オーガニックインストールを記録します。ユーザーが初めてアプリを起動したときに記録が生成されます。<br/> </td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アプリ内イベント</a></td><td>ユーザーが実行したイベントを記録します。<br/> </td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アンインストール</a></td><td>ユーザーがアプリをアンインストールしたときに記録します。<br/> </td><td>日次</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-reinstalls-v5" target="_blank">再インストール</a><br/> </td><td>アプリをアンインストールした後にUAメディアソースと接触し、リアトリビューション期間中にアプリを再インストールしたユーザーを記録します。</td><td>リアルタイム</td></tr><tr><td colspan="3"><h4><strong><span id="raw-data-reports-organic"></span>ローデータレポート（オーガニック）</strong></h4></td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-organic-installs-report-v5" target="_blank">オーガニックインストール</a><br/> </td><td>ユーザーが初めてアプリを起動したときに記録します。<br/> </td><td>継続的</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-organic-in-app-events-report-v5" target="_blank">オーガニックアプリ内イベント</a><br/> </td><td>ユーザーが実行したイベントの詳細を記録します。<br/> </td><td>継続的</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-organic-uninstall-events-report-v5" target="_blank">オーガニックアンインストール</a><br/> </td><td>ユーザーがアプリをアンインストールした記録。<br/> </td><td>日次</td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-reinstalls-organic-v5" target="_blank">オーガニック再インストール</a><br/> </td><td>ユーザーがアプリをアンインストールした後、再度インストールしたことを記録します。</td><td>日次<br/> </td></tr><tr><td colspan="3"><h4><strong><span id="retargeting"></span>リターゲティング</strong></h4></td></tr><tr><td><a href="">コンバージョン</a></td><td>リターゲティングキャンペーンに接触した後にアプリを開いたユーザーの記録。</td><td>リアルタイム</td></tr><tr><td><a href="">アプリ内イベント</a></td><td>リエンゲージメント期間中にユーザーが実行したアプリ内イベント。</td><td>リアルタイム</td></tr><tr><td colspan="3"><h4><strong><span id="ad-revenue-raw-data"></span>広告収益のローデータ</strong></h4></td></tr><tr><td> <a href="https://dev.appsflyer.com/hc/reference/get_app-id-ad-revenue-raw-v5" target="_blank">帰属広告収益</a><br/> </td><td>メディアソースに帰属するユーザーの広告収益を記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">オーガニック広告収益</a></td><td>メディアソースに帰属しないユーザーの広告収益を記録します。</td><td>日次</td></tr><tr><td colspan="3"><h4><strong><span id="protect360-fraud"></span>Protect360の不正防止</strong></h4></td></tr><tr><td><a href="" target="_blank">インストール</a></td><td>不正と識別されたため、どのメディアソースにも帰属されなかったインストールを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アトリビューション後のインストール</a></td><td>不正なインストールから発生したため、まったく帰属されなかったアプリ内イベントを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">アプリ内イベント</a></td><td>Protect360によって不正と識別されたアプリ内イベントを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">アトリビューション後のアプリ内イベント</a></td><td>メディアソースに帰属された後に不正と識別されたインストール、またはインストール自体にかかわらず不正と判定されたインストールに関連するアプリ内イベントを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">クリック</a></td><td>Protect360によってブロックされたユーザーのクリックを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">ブロック済みインストールポストバック</a></td><td>インストールがブロックされた結果としてメディアソースに送信されたポストバックのコピーを記録します。</td><td>リアルタイム</td></tr><tr><td colspan="3"><strong>ポストバック</strong></td></tr><tr><td><a href="" target="_blank">インストールポストバック</a></td><td>ユーザーが初めてアプリを起動したときに生成されたインストールイベントを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">アプリ内イベントポストバック</a></td><td>メディアソースに送信されたアプリ内イベントポストバックを記録します。</td><td>日次</td></tr><tr><td><a href="" target="_blank">リターゲティングアプリ内イベントポストバック</a></td><td>リエンゲージメント期間中にユーザーが実行したアプリ内イベントを記録します。</td><td>リアルタイム</td></tr><tr><td><a href="" target="_blank">リターゲティングコンバージョンポストバック</a></td><td>リエンゲージメント期間中にユーザーが実行したアプリ内イベントを記録します。</td><td>リアルタイム</td></tr></tbody></table>
 
 <div id="using-pull-api-raw-data" />
 
@@ -46,6 +50,8 @@ x-zendesk:
 2. 認証ヘッダーで使用するAPIトークンを開発者に渡します。
 3. 次のセクションで説明するように、APIコールを行う際に入力するパラメータを開発者に渡してください。パラメータは、レポートの対象と構成、およびレポートの期間を決定します。
 4. 開発者に、Developer Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-5">Pull APIローデータの手順</Anchor>に従うよう伝えてください。
+
+<div id="parameters" />
 
 #### パラメータ
 
@@ -197,6 +203,8 @@ APIの結果が上限を超える場合は、時刻と分を指定してレポ�
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="traits-and-limitations" />
@@ -230,6 +238,8 @@ APIの結果が上限を超える場合は、時刻と分を指定してレポ�
 | 選択した期間に対して期待されるデータがレポートに含まれていない、またはローデータレポートと集計データレポートの間に差異がある場合。 | `timezone`パラメータが設定されていることを確認してください。設定していない場合、データはアプリのタイムゾーンではなくUTCで送信されます。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

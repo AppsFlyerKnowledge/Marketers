@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **概要：** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (旧：Omniture) は、サードパーティのソースに統合可能な予測分析およびリアルタイム分析のためのツールです。Marketing ReportsとAnalytics（SiteCatalyst）、アドホック分析 (Adobe Discover)、Insightの各アプリケーションが含まれており、お客様のインタラクションをインサイトに変換することで、ビジネス活動の全体像を把握することができます。
 
+<div id="overview" />
+
 ## 概要
 
 この連携は、AdobeとAppsFlyerの間の双方向のデータフローで構成されています。この連携が正常に機能するには、アプリ内でのコード実装が必要です。連携には、AppsFlyerとAdobeの両方の要件を満たす必要があります。
 
+<div id="setting-up-adobe-analytics-integration" />
+
 ## Adobe Analyticsとの連携設定
 
 キャンペーン全体のパフォーマンス分析やセグメント作成にAdobe Analytics Report Suiteを使用している場合、AppsFlyerとAdobe Analyticsの連携により、AppsFlyerからAdobeへアトリビューションデータを自動的に転送することができ、キャンペーンの目標達成に役立ちます。
+
+<div id="prerequisites" />
 
 ### 前提条件：
 
 * <Anchor target="_blank" href="https://developer.adobe.com/client-sdks/documentation/">Adobe Experience Platform モバイルSDKドキュメント</Anchor>の設定
 * Marketing Cloud Visitor ID または ExperienceクラウドIDサービスを利用している
 * 各レポートスイートに、今回の連携のみを目的として使用できる3つのeVarを用意する必要があります。
+
+<div id="step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer" />
 
 ### ステップ1：Adobe Experience Cloud ID（ECID、Marketing Cloud ID、またはVisitor ID）をAppsFlyerへ共有
 
@@ -137,6 +145,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 
 </Accordion>
 
+<div id="step-2-configure-adobe-analytics-in-appsflyer" />
+
 ### ステップ2：AppsFlyerでAdobe analyticsを設定する
 
 **前提条件：** 連携を設定する前に、[Adobe Marketing Cloud Visitor IDをAppsFlyer SDKに渡している](/docs/adobe-analytics-integration-with-appsflyer#ステップ1adobe-experience-cloud-idecidmarketing-cloud-idまたはvisitor-idをappsflyerへ共有)ことを確認してください。
@@ -162,9 +172,13 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 * Media Source
 * Campaign Name
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > MetaとX広告は、媒体の利用規約に基づき、AppsFlyerはユーザーレベルのデータを第三者と共有することを禁じられています。これは、Meta広告と X広告のインストールがオーガニックとして送信されることを意味します。
+
+<div id="step-3-map-data-to-evars-in-adobe-analytics" />
 
 ### ステップ3：Adobe AnalyticsでデータをeVarsにマッピングする
 
@@ -180,6 +194,8 @@ AppsFlyerのコンテキストデータ変数は、これに応じてマッピ�
 
 処理ルールによるAppsFlyerコンテキストデータ変数のマッピングに問題がある場合は、Adobeアカウントチームへお問い合わせください。
 
+<div id="step-4-optional-set-up-your-marketing-channel" />
+
 ### ステップ 4 [オプション]：マーケティングチャネルを設定する
 
 彼らのプラットフォームでマーケティング チャネルを設定する方法については、<Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">Adobe Analyticsドキュメント</Anchor>を参照してください。識別ルールの下で次のフィールドを選択してください：
@@ -187,6 +203,8 @@ AppsFlyerのコンテキストデータ変数は、これに応じてマッピ�
 1. "Adobe のウェブビーコンによって設定されたコンバージョン変数の値："**AppsFlyer** と **Exists** を選択します。
 2. "チャネルを次のように識別します："**モバイルアプリのアトリビューション** を選択します。
 3. "チャネルの値を次のように設定します："**AppsFlyer キャンペーン** を選択します。
+
+<div id="domain-and-security-details" />
 
 ## ドメインとセキュリティの詳細
 

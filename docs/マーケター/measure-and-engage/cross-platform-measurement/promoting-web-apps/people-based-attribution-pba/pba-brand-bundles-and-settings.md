@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## ブランドバンドルについて
 
 今日、多くの企業がWebとモバイルの両方を含むエコシステムでブランドを運営しています。広告主として、Webとモバイルの両方のプラットフォームでブランドのパフォーマンスを把握したいと思うのは当然でしょう。PBAでは、ブランドバンドルを利用することでモバイルとWebのデータを1つにまとめ、分析とローデータの取得を可能にします。
+
+<div id="what-is-a-web-app" />
 
 > 📘 **Webアプリとは？**
 >
@@ -45,11 +49,15 @@ x-zendesk:
 * [元のバンドルを削除](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle)しない限り、アプリをバンドルから削除したり、別のバンドルに移動したりすることはできません。
   * バンドルを削除すると、AppsFlyerはそのバンドルのPBAデータのアトリビューションを停止し、過去のデータへもアクセスできなくなりますのでご注意ください。
 
+<div id="accessing-brand-bundles" />
+
 ## ブランドバンドルへのアクセス
 
 **ブランドバンドル**ページへアクセスして、ブランドバンドルとその設定を管理してください：
 
 * - または -
+
+<div id="managing-brand-bundles" />
 
 ## ブランドバンドルの管理
 
@@ -81,6 +89,8 @@ x-zendesk:
    * * バンドルの作成にモバイルアプリは必須ではありません。
      * バンドルに含めるモバイルアプリの個数に上限はありません。
 4. バンドルを作成をクリックしてください。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -151,6 +161,8 @@ Webイベントには、**スタンダード**と**コンバージョン**の2�
 
 </Accordion>
 
+<div id="faq" />
+
 ## よくある質問
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -182,6 +194,10 @@ Webイベントには、**スタンダード**と**コンバージョン**の2�
 <div id="what-happens-if-i-delete-a-bundle" />
 
 <Accordion title="バンドルを削除するとどうなりますか？">
+
+<div id="see-also" />
+
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
 
 #### よくある質問 バンドルを削除するとどうなりますか
 

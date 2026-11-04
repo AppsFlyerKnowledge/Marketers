@@ -23,6 +23,8 @@ x-zendesk:
 
 [![Website_Attribution.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
 
+<div id="pba-website-attribution" />
+
 ## PBA Webサイト計測
 
 Webサイト計測管理画面を使用することで、訪問者とコンバージョンをもたらすメディアソースについてのインサイトを得ることができます。
@@ -36,6 +38,8 @@ Webサイト計測管理画面を使用することで、訪問者とコンバ�
 | --- | --- |
 | ![Icon1.png](https://files.readme.io/b20da70a56d881dd2fe31b18df8919db43b47e3e2338b89da7ef5ef6467590d6-360013383937.png) | **効果**<br /><br />どの獲得チャンネルが最高のパフォーマンスKPI（コンバージョン率、ARPU等）を持っているか。 |
 | ![s4.png](https://files.readme.io/9a426232668022a9b4d006e685d2384d61efe4814c377aa9295e9b7887f14fef-360013383957.png) | **比較分析** |
+
+<div id="dashboard-reference" />
 
 ## 管理画面の使い方
 

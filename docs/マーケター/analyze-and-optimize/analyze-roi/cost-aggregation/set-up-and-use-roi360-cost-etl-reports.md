@@ -40,6 +40,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 
 コストETLレポートには、AppsFlyerのアトリビューションに紐づく広告費データと、インストール数、リアトリビューション数、リエンゲージメント数などのアトリビューション指標が含まれます。
 
+<div id="four-types-of-cost-etl-reports" />
+
 ## 4種類のコストETLレポート
 
 分析の目的に応じて、4種類のコストETLレポートを利用できます。
@@ -51,14 +53,20 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 * **全広告費レポート**：アドネットワークから直接取得した、モバイルおよびモバイル以外の広告費データをまとめたレポートです。アトリビューションデータは含まれません。現在は、Google広告、Meta広告、TikTokに対応しています。  
   <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSdjA_4tdWBxxbI_ZM7mcZzCKhrWxQ-0m1DPIig-gMTpnDyLBDE_RGJ5zskNFpbsg/pub?gid=559626950&single=true&output=csv">サンプルファイルを確認</Anchor>
 
+  <div id="note" />
+
   > 📘 **注意**
   >
   > 全広告費レポートでGoogle広告とMeta広告のデータを受信するには、AppsFlyerの担当者にお問い合わせください。
 
 
+<div id="cost-etl-report-types-overview-table" />
+
 ### コストETLレポートの種類と概要
 
 <table><thead><tr><th> </th><th>サマリー</th><th>国別</th><th>チャネル別</th><th><strong>全広告費レポート</strong></th></tr></thead><tbody><tr><td><strong>レポートの取得方法</strong></td><td>コストETLを有効にします。サマリーレポートはデフォルトで選択されています。</td><td>コストETLを有効にし、国別レポートを選択します。</td><td>コストETLを有効にし、チャネル別レポートを選択します。</td><td>コストETLを有効にし、<strong>国別</strong>レポートを選択します。（コストETLページに、全広告費レポート専用の選択項目はありません）</td></tr><tr><td><strong>レポートの保存先</strong></td><td>選択したクラウド接続サービスによって異なります。 Summaryフォルダー、または専用のテーブルに保存されます。</td><td>選択したクラウド接続サービスによって異なります。 Geoフォルダー、または専用のテーブルに保存されます。</td><td>選択したクラウド接続サービスによって異なります。 Channelフォルダー、または専用のテーブルに保存されます。</td><td>選択したクラウド接続サービスによって異なります。 All Costフォルダー、または専用のテーブルに保存されます。</td></tr><tr><td><strong>対象となる広告費の種類</strong></td><td><p>モバイルの広告費：制限なし。<br/>CTVとWebの広告費：次の条件を満たすものに限定されます。<br/> </p><ol><li>コンバージョンが1件以上あるキャンペーン</li><li>広告費の取得元がInCost API、コストインポート、CPIのいずれかであること</li></ol></td><td>サマリーと同じ。</td><td>サマリーと同じ。</td><td>Google広告、Meta広告、TikTokのモバイル、Web、CTV、PC、ゲーム機の広告費。</td></tr><tr><td><strong>対応するメディアソース</strong></td><td>制限なし</td><td>制限なし</td><td>制限なし</td><td><ul><li> <strong>TikTok：</strong>データが自動的に追加されます。</li><li> <strong>GoogleとMeta：</strong>有効化するには担当のCSMにお問い合わせください。</li></ul></td></tr><tr><td><strong>スキーマの詳細度</strong></td><td>コストETLの設定内容によって異なります。</td><td><p>コストETLの設定内容によって異なります。</p><p><br/>Metaでは、channelディメンションに値が入りません。</p></td><td><p>コストETLの設定内容によって異なります。</p><p><br/>Metaでは、geoディメンションに値が入りません。</p></td><td><p>コストETLの設定内容によって異なります。</p><p>Metaでは、channelディメンションは非対応です。<br/><strong>プラットフォーム：</strong>キャンペーンの配信先（モバイル、デスクトップ、タブレットなど）を表す、アドネットワークから取得する新しいディメンション。</p></td></tr><tr><td><strong>アトリビューションデータ</strong></td><td>対応</td><td>対応</td><td>対応</td><td><p>非対応。</p><p><br/>コストETLスキーマにアトリビューション指標を含めるよう設定している場合、その値は0と表示されます。</p></td></tr><tr><td><strong>アプリID</strong></td><td>アドネットワークがアプリID単位のデータに対応していない場合、アトリビューションデータからアプリIDを取得します。</td><td>サマリーと同じ。</td><td>サマリーと同じ。</td><td><p>アドネットワークから取得します。</p><p><br/>アプリIDが報告されていない場合、値はunknownになります。</p></td></tr><tr><td><strong>広告費の取得元</strong></td><td>API連携（広告費API＋InCost）、コストインポート、CPI</td><td>サマリーと同じ。</td><td>サマリーと同じ。</td><td>API連携のみ。</td></tr><tr><td><strong>CNC</strong></td><td>対応</td><td>対応</td><td>対応</td><td>非対応。</td></tr><tr><td><strong>代理店データ</strong></td><td>対応</td><td>対応</td><td>対応</td><td><ul><li> <strong>FacebookとMeta：</strong>非対応。</li><li> <strong>TikTok：</strong>AppsFlyerにアプリIDがあるキャンペーンのみ対応。</li></ul></td></tr><tr><td><strong>代理店手数料</strong></td><td>対応</td><td>対応</td><td>対応</td><td>非対応。値は常に0です。</td></tr><tr><td><strong>更新頻度</strong></td><td colspan="4">アドネットワークから1日6回データを収集します。<br/>レポートは、設定に応じて1日最大4回配信できます。</td></tr></tbody></table>
+
+<div id="report-details" />
 
 ## レポートの詳細
 
@@ -95,6 +103,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
     * 各バージョンフォルダーには、1から始まる番号が付いたParquet形式のデータファイルが保存されます。
   * 全広告費：geoディメンションに基づき、1日あたり最大4ファイル。
 
+<div id="data-locker-connection-directory-structure" />
+
 #### Data Locker接続のディレクトリ構造
 
 `<client-bucket>/<DL-generated-partition>/<connection-name>/t=<report-name>/dt=<YYYY-MM-DD>/v=<1/2/3/4>/<parquet file number>`
@@ -108,6 +118,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 | dt | <ul><li>レポートの日付、つまりレポートが送信された日付。</li><li>YYYY-MM-DD</li></ul> |
 | v | <ul><li>その日に配信されたレポートの順番を表すバージョン番号（1日最大4回）。</li><li>1～4の整数</li></ul> |
 | Parquetファイル番号 | <ul><li>00000から始まる連番</li><li>例：`part-<number>`</li></ul> |
+
+<div id="cost-etl-connection-directory-structure" />
 
 #### コストETL接続のディレクトリ構造
 
@@ -131,6 +143,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 <div id="file-fields" />
 
 <Accordion title="ファイルのフィールド">
+
+<div id="fieldsdimensions" />
 
 #### フィールド／ディメンション
 
@@ -164,6 +178,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 | platform | キャンペーンを配信するプラットフォーム（モバイル、タブレット、デスクトップ、CTV） | 全広告費レポートのみ | 文字列 | - |
 | site\_id | パブリッシャーID | いいえ | 文字列 | - |
 | timezone | <ul><li>AppsFlyerにデータが保存されているタイムゾーン</li><li>アドネットワークが、AppsFlyerで設定したものとは異なるタイムゾーンでデータを報告することがあります。このフィールドは、AppsFlyerとアドネットワークの広告費に差異が生じる理由を把握するのに役立ちます。</li></ul> | はい | 文字列 | - |
+
+<div id="metrics" />
 
 #### 指標
 
@@ -199,6 +215,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 | video\_completions | アドネットワークの報告値 |  | 整数 | - |
 
 </Accordion>
+
+<div id="procedures" />
 
 ## 手順
 
@@ -306,6 +324,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 
 **注意**：既存の接続に切り替えると、以前のコストETL接続には戻せません。
 
+<div id="edit-connection" />
+
 #### 接続の編集
 
 **接続の詳細を編集するには**：
@@ -319,6 +339,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 3. 画面の案内に従い、接続の詳細を編集します。
 4. 表示される案内に従って、<strong>［変更を保存］</strong>または<strong>［適用］</strong>をクリックします。
 
+<div id="change-data-locker-connection" />
+
 #### Data Locker接続の変更
 
 **別のData Locker接続に切り替えるには**：
@@ -330,6 +352,8 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
    * まだ設定していない場合は、<strong>［＋Data Lockerで新しい接続を作成］</strong>をクリックし、接続を作成します。その後、コストETLの設定画面に戻り、<strong>［接続］</strong>ドロップダウンから選択します。  
      [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
 3. <strong>［変更を保存］</strong>をクリックします。
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
 
 #### コストETL接続からData Locker接続への変更
 
@@ -370,6 +394,8 @@ AWSでは、AppsFlyerがバケットに書き込んだオブジェクトの所�
 6. <strong>［保存］</strong>をクリックします。
 
 </Accordion>
+
+<div id="best-practices" />
 
 ## 推奨事項
 
@@ -542,6 +568,8 @@ where rank_for_dedup = 1;
 BIシステム上で、コストETLレポートと詳細集計コホートレポート（またはData Locker経由の通常のコホートレポート）を結合することをご検討ください。クリック、インプレッション、広告費、収益、アプリ内イベントなどの最新かつ正確なデータを組み合わせることで、マーケティング成果の全体像を把握できます。結合したデータで、ROASやCPAなどを算出できます。<Anchor target="_blank" href="/marketers/ja/docs/combine-cost-etl-and-cohort-reports-via-data-locker">詳細はこちら</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 補足情報
 

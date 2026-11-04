@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyerをCordovaアプリに実装し、インストール、アプリ内イベント、メディアソースなどを計測します。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > 2020年3月1日以降、AppsppsFlyerは古いバージョンのSDKのサポートを終了します。推奨されないバージョン、影響、および最新のSDKバージョンに更新する方法については、<Anchor target="_blank" href="/marketers/ja/docs/sdk-integration-overview#sdkについて">こちら</Anchor>をクリックしてください。

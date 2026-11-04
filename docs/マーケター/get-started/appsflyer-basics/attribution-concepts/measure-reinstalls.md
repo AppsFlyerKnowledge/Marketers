@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要**：再インストールとは、ユーザーがアプリをインストールし、アンインストールした後に、再度インストールすることです。再インストールの計測結果は、ノンオーガニックの再インストール、オーガニックの再インストール、リアトリビューション（リターゲティング）のいずれかに分類されます。再インストールを区別することで、アンインストールして再度インストールしたユーザーへの重複課金を防げます。
 
+<div id="what-is-a-reinstall" />
+
 ## 再インストールとは
 
 アプリユーザーがアプリを削除した後、<Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window#リアトリビューション期間">リアトリビューション期間内</Anchor>に再度インストールすることです。
@@ -43,11 +45,15 @@ x-zendesk:
 | オーガニックまたはノンオーガニックの流入元経由 | はい | いいえ | はい／いいえ | 再インストール |
 | オーガニックまたはノンオーガニックの流入元経由 | いいえ | いいえ | はい／いいえ | 新規インストール |
 
+<div id="why-are-reinstalls-important" />
+
 ## 再インストールを正しく計測することの重要性
 
 再インストールは、ユーザーがアプリに戻り、キャンペーンが機能していることを示す重要な指標です。また、正しく計測することで、<Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window#リアトリビューション期間">リアトリビューション期間内</Anchor>にアンインストールと再インストールを行ったユーザーへの重複課金を防ぐことができます。
 
 同様に、再インストール後のアプリ内イベントを元のメディアソース（初回インストール）に紐付けることで、ユーザーエンゲージメントの状況をより的確に把握できます。 UAキャンペーンやリターゲティング広告の効果も確認できます。詳しくは、後述の[アプリ内イベント](#再インストール後のアプリ内イベント)を参照してください。
+
+<div id="reinstall-flow-and-outcome" />
 
 ## 再インストールの流れと計測結果
 
@@ -81,6 +87,8 @@ x-zendesk:
 リターゲティング計測の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">こちら</Anchor>をご覧ください。
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## 再インストール後のアプリ内イベント
 
@@ -118,6 +126,8 @@ x-zendesk:
 
 <Accordion title="初回インストールに紐付ける（初回インストールに紐付けるモード）">
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 初回インストールに紐付けるモードは、2024年7月31日以降にAppsFlyerに追加されたアプリに自動で適用されます。それ以前に追加した既存アプリについては、AppsFlyerにお問い合わせいただき、このモードへの移行を検討することを推奨します。
@@ -131,9 +141,13 @@ x-zendesk:
 
 （2）この情報はローデータでのみ確認できます。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > ［**再インストール後のイベントのアトリビューション**］を［**初回インストールに紐付ける**］に設定すると、一部のデータがノンオーガニックのメディアソースに紐付けられるため、ダッシュボードのオーガニックのKPIが低下する場合があります。
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### 初回インストールに紐付けるモードでの計測例
 
@@ -201,11 +215,17 @@ x-zendesk:
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## AppsFlyerのダッシュボードでのデータ表示
 
 <table><thead><tr><th colspan="2"> </th><th>ノンオーガニックの再インストール</th><th>オーガニックの再インストール </th><th>リアトリビューション</th></tr></thead><tbody><tr><td colspan="2">再インストール自体</td><td>表示されない</td><td>表示されない</td><td>リターゲティングのメディアソース\*</td></tr><tr><td rowspan="2">その後のアプリ内イベントの計測元</td><td>再インストール後のイベントを［<strong>オーガニックのアプリ内イベントとして計測</strong>］に設定 </td><td>元のインストールに紐付かないオーガニック</td><td>元のインストールに紐付かないオーガニック</td><td>リターゲティングのメディアソース</td></tr><tr><td>再インストール後のイベントを［<strong>初回インストールに紐付ける</strong>］に設定 </td><td>初回のメディアソース</td><td>初回のメディアソース</td><td>リターゲティングキャンペーン</td></tr><tr><td colspan="5">\*Overview dashboardのみ。</td></tr></tbody></table>
 
+<div id="reinstalls-raw-data-reports" />
+
 ## 再インストールのローデータレポート
+
+<div id="prerequisites" />
 
 > 🚧 **前提条件**
 >
@@ -213,9 +233,13 @@ x-zendesk:
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">再インストールのレポート例（CSVファイル）</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### インストールとアプリ内イベントの計測元
 
 <table><thead><tr><th colspan="2"> </th><th>ノンオーガニックの再インストール</th><th>オーガニックの再インストール </th><th>リアトリビューション</th><th>ノンオーガニックのインストール</th><th>オーガニックのインストール</th></tr></thead><tbody><tr><td colspan="2">紐付け先 </td><td>UAキャンペーン</td><td>オーガニック</td><td>リターゲティングキャンペーン</td><td>UAキャンペーン</td><td>オーガニック</td></tr><tr><td rowspan="2">その後のイベントの計測元</td><td>再インストール後のイベントを［<strong>オーガニックのアプリ内イベントとして計測</strong>］に設定 </td><td>オーガニック</td><td>オーガニック</td><td>リターゲティングキャンペーン</td><td>UAキャンペーン</td><td>オーガニック</td></tr><tr><td>再インストール後のイベントを［<strong>初回インストールに紐付ける</strong>］に設定 </td><td>初回インストール</td><td>初回インストール</td><td>リターゲティングキャンペーン</td><td>UAキャンペーン</td><td>オーガニック</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### 再インストールレポートの提供方法
 

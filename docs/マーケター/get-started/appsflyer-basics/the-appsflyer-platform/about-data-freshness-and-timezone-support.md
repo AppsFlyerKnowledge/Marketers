@@ -34,7 +34,11 @@ x-zendesk:
 
 **タイムゾーン**
 
+<div id="data-freshness-and-support-for-app-specific-time-zones" />
+
 ## データの反映タイミングとアプリのタイムゾーンへの対応
+
+<div id="data-freshness" />
 
 ### データの反映タイミング
 
@@ -44,6 +48,8 @@ AppsFlyerでは、日次やリアルタイムなど、さまざまな[データ�
 
 * 指標のKPI：リアルタイム
 * 平均値のKPI：日次
+
+<div id="time-zones" />
 
 ### タイムゾーン
 
@@ -58,6 +64,8 @@ UTCとの時差による地域の区分
 * UTCより進んだ地域：UTC+と表記されるタイムゾーンは、UTCの基準となる地域より東に位置します。
 * UTCより遅れた地域：UTC−と表記されるタイムゾーンは、UTCの基準となる地域より西に位置します。
 
+<div id="app-specific-time-zone" />
+
 #### アプリごとのタイムゾーン設定
 
 アプリごとにタイムゾーンを設定できます。この設定により、UTCではなく、設定したタイムゾーンの現地時刻に基づいてデータが日別に集計されます。
@@ -68,11 +76,15 @@ UTCとの時差による地域の区分
 
 **ロサンゼルス**：アプリのタイムゾーンをロサンゼルス（UTC−8）に設定した場合、1日はUTC 08:01に始まり、翌日のUTC 08:00に終了します。
 
+<div id="time-zone-guidelines" />
+
 #### タイムゾーン設定の推奨事項
 
 * アプリのタイムゾーンは、GoogleやMeta広告など、他のアトリビューションサービスで設定したタイムゾーンとそろえてください。
 * 複数のアプリがある場合は、すべて同じタイムゾーンに設定することをお勧めします。アプリのタイムゾーンを確認するには、**設定** > **アプリ設定**に移動してください。
 * ほとんどのレポートとデータ抽出ツールは、アプリごとに設定したタイムゾーンに対応しています。複数アプリのレポートも、すべてのアプリで同じタイムゾーンを設定していれば対応しています。
+
+<div id="daily-processing" />
 
 #### 日次処理
 
@@ -123,6 +135,8 @@ UTCとの時差による地域の区分
 <Accordion title="データの反映タイミングとタイムゾーン対応一覧">
 
 <table><thead><tr><th>対象データ</th><th>表示・提供形式</th><th>データの更新方式・反映タイミング<br/>（各方式の説明は前のセクションを参照）</th><th>アプリに設定したタイムゾーンでのデータ表示</th></tr></thead><tbody><tr><td>インストール</td><td>KPI</td><td><p>継続</p><p>以下の例外に注意してください。</p><ul><li>Protect360<ul><li>毎日UTC 16:00に更新</li></ul></li></ul></td><td><span>✓</span></td></tr><tr><td>セッション、クリック、インプレッション、ロイヤルユーザー</td><td>KPI</td><td><ul><li>アトリビューションリンク：継続</li><li>SRN：1日複数回の更新</li></ul></td><td><span>✓</span></td></tr><tr><td>収益を伴うアプリ内イベント</td><td>KPI</td><td>継続</td><td><span>✓</span></td></tr><tr><td>広告収益</td><td>KPI</td><td>広告収益</td><td><span>✓</span></td></tr><tr><td>広告費（コスト）</td><td>KPI</td><td><ul><li>アトリビューションリンク：継続（クリックから最大2時間後）</li><li>API：1日複数回の更新</li><li>広告費データの取り込み：取り込みから最大4時間後</li></ul></td><td><span>✓</span></td></tr><tr><td>アンインストール</td><td>KPI</td><td>日次。 AppsFlyerは24時間ごとにアプリストアに確認リクエストを送信します。アンインストールのイベント時刻は、AppsFlyerがサイレントプッシュ通知を送信し、アプリがアンインストールされていることを検知した時刻を表します。実際にアンインストールされた時刻ではありません。</td><td><span><strong>x</strong></span></td></tr><tr><td>管理画面に表示されるアプリ内イベント</td><td>プルダウンリスト</td><td><p>プルダウンリストに表示されるアプリ内イベント名は、日次で更新されます。</p><p>イベントのデータ自体の反映タイミングには影響しません。</p><p><strong>例：</strong>Push API、ダッシュボード、Audiencesのアプリ内イベントのプルダウンリスト。</p></td><td><span>✓</span></td></tr><tr><td>オーバービューダッシュボード</td><td>ページ</td><td>継続</td><td><span>✓</span></td></tr><tr><td>Protect360ダッシュボード</td><td>ページ</td><td>日次</td><td> &lt;0&gt;&lt;1&gt;✓ 1&gt;0&gt;(1)</td></tr><tr><td>SKANダッシュボード</td><td>ページ</td><td>日次</td><td><span><strong>x</strong></span></td></tr><tr><td>アクティビティページ</td><td>ページ</td><td><ul><li>KPI：継続</li><li>平均値：アプリに設定したタイムゾーンの深夜0時</li></ul></td><td><p><span>✓</span></p><p>例外：MAU（月間アクティブユーザー）のデータはUTC</p></td></tr><tr><td>イベントページ</td><td>ページ</td><td>継続</td><td><span>✓</span></td></tr><tr><td> </td><td> </td><td>（この行は意図的に空欄にしています）</td><td> </td></tr><tr><td>リテンション</td><td>ページ</td><td><p>リテンションのKPIは、日次と週次の単位で確認できます。それぞれのデータの反映タイミングは異なります。</p><ul><li>日次リテンションKPI：日次</li><li>週次リテンションKPI：週の開始は月曜日、終了は日曜日です。リテンションは月曜日のUTC 12:00に計算されます。週次KPIはアプリごとのタイムゾーンに対応していませんが、それによって生じる差はごくわずかです。</li></ul></td><td><p>日次：<span>✓</span></p><p>週次：<span><strong>x</strong></span></p></td></tr><tr><td>コホート</td><td>ページ</td><td>継続</td><td> &lt;0&gt;&lt;1&gt;✓ 1&gt;0&gt;(2)</td></tr><tr><td>カスタムダッシュボード</td><td>ページ</td><td>継続</td><td> &lt;0&gt;&lt;1&gt;✓ 1&gt;0&gt;(3)</td></tr><tr><td>Audiences</td><td>ページ</td><td><ul><li>更新データは24時間ごとにパートナーに送信されます。</li><li>ユーザーデータは日次で更新され、最大90日分のデバイスデータを保持します。</li></ul></td><td><span>✓</span></td></tr><tr><td>SDK情報ページ</td><td>ページ</td><td>日次</td><td><span><strong>x</strong></span></td></tr><tr><td>データ出力</td><td>ページ</td><td><p>継続</p><p>以下の例外に注意してください。</p><ul><li>広告収益のローデータ：日次</li><li>Protect360：<ul><li>集計レポート：日次</li><li>ブロックされた不正のローデータ：継続</li><li>ポストアトリビューション（アトリビューション後に検知された不正）のローデータ：日次</li></ul></li><li>オーガニックのアプリ内イベント：数時間の遅延を伴って更新されます。</li></ul></td><td><span>✓</span></td></tr><tr><td>Pull API</td><td>API</td><td>Pull APIのデータの反映タイミングは、データ出力と同じです。</td><td><p><span>✓</span></p><p><span>デフォルトはUTC</span></p></td></tr><tr><td>ピボット</td><td>ページ</td><td>日次</td><td><p><span>✓</span></p><p>週次リテンションKPI：<strong>x</strong></p></td></tr><tr><td>Master API</td><td>API</td><td>日次</td><td> &lt;0&gt;&lt;1&gt;✓ 1&gt;0&gt;(3)</td></tr><tr><td>Data Locker</td><td>API</td><td>詳しくは、<a href="./data-locker-advertiser-reports#data-freshness-explanations" target="_blank">Data Lockerの記事</a>をご覧ください。</td><td><p><span><strong>x</strong></span></p><p><span><strong>UTC</strong></span></p></td></tr><tr><td>ポストバック</td><td>API</td><td>継続</td><td>対象外</td></tr><tr><td>Push API</td><td>API</td><td>継続（4）</td><td><p><span>✓</span></p><p><span><strong>両方</strong></span></p></td></tr><tr><td>サーバー間（S2S）送信によるアプリ内イベント</td><td>API</td><td>継続</td><td>対象外</td></tr><tr><td colspan="4"><p>注意：</p><p>（1）ユーザーがアクセス権限を持つすべてのアプリで、同じタイムゾーンを設定する必要があります。タイムゾーンが異なる場合は、UTCが使用されます。</p><p>（2）UTCが使用される条件については、<a href="./cohort-and-retention-dashboard#traits-and-limitations" target="_blank">コホートの仕様と制限事項</a>をご覧ください。</p><p>（3）選択したすべてのアプリで、同じタイムゾーンを設定する必要があります。タイムゾーンが異なる場合は、UTCが使用されます。</p><p>（4）SKANレポートのデータは、毎日UTC 08:00～10:00に利用できるようになります。</p></td></tr></tbody></table>
+
+<div id="exception-my-dashboards-cohort-and-activity-metrics" />
 
 > 📘 **例外：Web、CTV、PC・コンソールアプリのマイダッシュボードにおけるコホート・アクティビティ指標**
 >

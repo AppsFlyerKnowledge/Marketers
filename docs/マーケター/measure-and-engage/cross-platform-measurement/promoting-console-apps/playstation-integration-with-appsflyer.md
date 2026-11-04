@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要： 概要 ：AppsFlyerにご自身のPlayStationアプリを追加し、PlayStation上のキャンペーンの計測とイベントデータを取得しましょう。**
 
+<div id="integrate-your-playstation-app-with-appsflyer" />
+
 ## PlayStationのアトリビューション計測について
 
 コンソールおよびCTVアプリ用のPlayStation OSは、すべてのPlayStationで動作します。
@@ -33,6 +35,8 @@ PlayStation APIの連携は以下をサポートします：
 * PlayStation
 * PlayStationアプリのアトリビューションとイベントの計測（ユーザーのPlayStation端末の計測と記録）
 
+<div id="example-attribution-flow" />
+
 ### アトリビューションフローの例
 
 **注意**：
@@ -43,6 +47,8 @@ PlayStation APIの連携は以下をサポートします：
 2. ゲームのランディングページこの手順は、UTM およびその他の URLパラメータを収集して、クリック / インストールしたユーザーを元のメディアソースまたはオウンドメディアソースに結び付けるために重要です。  
    たとえば、ランディングページにXbox、マイクロソフトストア、およびSteamページへのリンクを含めることができます。
 4. ゲームのインストールゲームのインストール： ユーザーがゲームをインストールし、アトリビューションをトリガーし、アプリ内イベントとセッションを記録します。
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -66,6 +72,8 @@ PlayStation APIの連携は以下をサポートします：
 | コストデータ | コスト（広告費）データは、メールによるアップロードファイルを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">広告費用の取り込み</Anchor>で送信する必要があります。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 
 ## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
+<div id="about-the-appsflyer-esp-integration" />
+
 ## AppsFlyerのESP連携について
 
 マーケターは、大規模なメールキャンペーンを送信するために、メールサービスプロバイダー（ESP）を使用することがよくあります。これは、予測可能なユーザージャーニーを提供するシンプルなプロセスであるべきですが、実際にはそうではありません。この問題は、一般的なESPのアナリティクスの扱い方に起因しており、ディープリンクを破壊し、モバイルのユーザーエクスペリエンスに悪影響を及ぼす傾向があります。その結果、ユーザーがアプリではなくモバイルWebサイトに誘導されることがあり、コンバージョンの可能性が低くなります。
@@ -34,9 +36,13 @@ AppsFlyerは、AppsFlyerがESPサーバーとお客様のドメイン名の仲�
 
 AppsFlyerとのESP連携を設定して、メールキャンペーンでのスムーズで安全なディープリンク体験を実現し、最適なモバイルユーザーエンゲージメントとコンバージョン率を実現します。
 
+<div id="set-up-the-integration" />
+
 ## 連携設定方法：
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>このセクションでは、ESPとAppsFlyerの連携を設定する方法について説明します。
+
+<div id="prerequisites" />
 
 ### 前提条件
 
@@ -60,12 +66,16 @@ AppsFlyerとのESP連携を設定する前に、サポートされているESP*�
 
 既存の CTD をすでに使用している場合でも、新しい CTD の**作成は必須**です。これにより、現在のライブメールキャンペーンのトラフィックには影響しません。
 
+<div id="notes" />
+
 > 📘 **備考**
 >
 > * SSL証明書はAppsFlyerによって処理されます（ステップ3）。
 > * この段階では、メールリンクは保護されない可能性があります。つまり、URLプレフィックスはHTTPSではなくHTTPになります。これは[ステップ 5](#h_01JMYDQGPF3B9GNH0RY27JW3E4) で解決されます）。
 
 </Accordion>
+
+<div id="h_01JMYD02VRGT8353RDBARRPJ2M" />
 
 <div id="step-2-use-a-oneLink-template-for--your-email-campaign" />
 
@@ -141,6 +151,8 @@ ESP 統合が作成されました。
 * [ディープリンクをサポートするようにアプリを設定します。](#ディープリンクをサポートするようにアプリを設定します)
 * [Webリンクとアプリケーションリンクを処理するようにアプリを設定する](#webリンクとアプリケーションリンクを処理するようにアプリを設定する)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **関連ドメインをサポートするようにアプリを設定する**
 
 AppsFlyerは、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowledge-base-glossary#ユニバーサルリンク">ユニバーサルリンク（iOS）</Anchor>または<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowledge-base-glossary#android-app-link">アプリリンク（Android）</Anchor>を有効にするために、アプリの関連付けファイルをホストします。
@@ -159,6 +171,8 @@ AppsFlyerは、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowle
 **注：** クリックドメインは、Androidマニフェストで既に定義されている現在のドメインに追加する必要があります。
 
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **ディープリンクをサポートするようにアプリを設定します**
 
 アプリリンクまたはユニバーサルリンクがクリックされると、アプリが起動します。
@@ -172,6 +186,8 @@ AppsFlyerは、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowle
 
 2.<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">Unified DeepLinking API</Anchor> を使用して、ディープリンクパラメータを取得し、ディープリンクデータを処理します。
 
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **Webリンクとアプリケーションリンクを処理するようにアプリを設定する**
 

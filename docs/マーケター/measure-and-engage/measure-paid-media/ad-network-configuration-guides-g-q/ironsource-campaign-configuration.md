@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークとして、ironSourceはオーガニックを含む全てのメディアソースに紐づく新規インストールについてポストバックを受信することを希望しています。そのためには、**全てのパートナーに紐づくイベント**を選択し、全てのインストールポストバックをironSourceに送信することを推奨します。
@@ -54,26 +56,38 @@ x-zendesk:
 
 <Accordion title="連携タブ">
 
+<div id="activate-partners" />
+
 ### パートナーの有効化
 
 この**最初の訪問** では、**パートナーのアクティブ化**トグルをオンにして、連携タブパラメーターの設定を有効にする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="advanced-privacy" />
+
 #### 高プライバシーポストバック
 
 iOSアプリの場合のみ、 **高度なプライバシー(iOS 14.5+以降)** がオンになっている場合 、 ポストバックとレポートを介してironSource<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#b-advanced-privacy">と共有するデータを制御できます</Anchor> 。
 
+<div id="transaction-id" />
+
 ### トランザクションID
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
 > AppsFlyerとのSKAN相互運用については、ironSourceアカウントマネージャーに連絡して、 <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">MMPへのSKANデータの送信を有効にしてください</Anchor>。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
 **Advertiser ID**
 
 ironSourceは、ユニークなadvertiser ID (6桁の数値) を使用してAppsFlyerと接続します。Advertiser ID持ちでない場合は、連携作業を続けるためにこのIDをironSourceから取得してください。それ以外の場合は、ID とパスワードをコピーして、それぞれの項目に貼り付けます。
+
+<div id="install-and-re-engagement-attribution" />
 
 ### インストールとリエンゲージメントのアトリビューション
 
@@ -89,6 +103,8 @@ ironSourceは、ユニークなadvertiser ID (6桁の数値) を使用してApps
 1. **リエンゲージメント ビュースルー計測** をオンにします。
 2. **ビュースルー**ルックバック期間の長さは、[計測リンクタブ](/docs/ironsource-campaign-configuration#attribution-link-tab)で設定します。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 ユーザーのインストールとリエンゲージメント後に、自動でironSourceにポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
@@ -96,9 +112,13 @@ ironSourceは、ユニークなadvertiser ID (6桁の数値) を使用してApps
 **このパートナーのみ**を選択して、ironSourceの成果に紐づくユーザーのイベントのみを選択してください。  
 **オーガニックを含む全メディアソースに紐づくイベント**を選択して、ironSourceにレポートできる全ユーザーベースを選択してください。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークとして、ironSourceはオーガニックを含む全てのメディアソースに紐づく新規インストールについてポストバックを受信することを希望しています。これを行うには、**オーガニックを含む全メディアソースに紐づくイベント もしくは オーガニック** を選択して、すべてのインストールポストバックを ironSource に送信します。
+
+<div id="in-app-event-postbacks" />
 
 ### アプリ内イベントポストバック
 
@@ -120,6 +140,8 @@ ironSourceは、ユニークなadvertiser ID (6桁の数値) を使用してApps
    1. 左上隅のパートナー名下にあるアプリ名をクリックし、アプリ一覧を開きます。
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリで、連携ステップを再度実施してください。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -176,6 +198,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
 
+<div id="ad-network-permissions" />
+
 ### アドネットワークへの権限付与
 
 * **パートナー連携の設定を許可する** - パートナーに連携タブの設定（アプリ内イベントのポストバックを除く）を許可します。
@@ -187,6 +211,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 * **Protect360管理画面へのアクセスを許可する** - 広告主がProtect360機能を利用している場合、パートナーのProtect360データへアクセスを許可します。
 
 詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">アドネットワークへの権限付与</Anchor>をご覧ください。
+
+<div id="agency-permissions" />
 
 ### 代理店の許可
 

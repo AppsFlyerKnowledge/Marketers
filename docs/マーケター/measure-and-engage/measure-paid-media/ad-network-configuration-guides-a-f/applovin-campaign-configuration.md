@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携パートナーであるAppLovinは、モバイルアプリのトラフィックのための有名なアドネットワークです。AppLovinは、クリックベースのモバイルアトリビューションに加えて、コスト、広告収益、ビュースルーアトリビューションも提供しており、AppsFlyerで計測することができます。
 
+<div id="setting-up-applovin" />
+
 ## AppLovinの連携設定
 
 **前提条件：** 連携を設定する前に、 <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーへ連絡</Anchor>し、アカウントを開設してください。
@@ -50,14 +52,20 @@ AppLovinの設定画面には5つのタブがあります：連携、計測リ�
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 このタブを**初めて**開く場合、連携タブのパラメーター設定を有効にするために**パートナーを有効にする**のトグルをオンにする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーのライセンス認証の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をクリックしてください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークであるAppLovinは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。オーガニックを含む全メディアソース を選択し、全てのインストールポストバックをYouAppiに送信することを推奨します。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -73,12 +81,16 @@ AppLovinは、独自のsdk\_keyを介してAppsFlyerと接続します。sdk\_ke
 
 AppLovinでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 ユーザーのインストールおよびリエンゲージメント後に、自動でポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
 AppLovinに紐づくユーザーからのイベントのみにするには、**このパートナーに紐づくイベントのみ**を選択します。  
 **オーガニックを含む全メディアソース**を選択して、ユーザーベース全てをAppLovinにレポートできるようにします。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -124,6 +136,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiのステータス">コストAPIのステータス</Anchor>と一致するコストデータを引き出すことができた最後の時刻を、AppsFlyerがコスト（および広告収益）連携ステータス管理画面、または個別のアドネットワーク管理画面のいずれかで確認してください。
 
+<div id="applovin-billable-cost" />
+
 > 🚧 **Applovinの請求可能コスト**
 >
 > 2024年8月1日現在、Applovinは確率的インストールに基づいてすべての顧客に請求しています。この日以前は、SKANのインストールに基づいて請求される顧客もいました。<Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">詳細はApplovinのドキュメントを参照してください。</Anchor>
@@ -143,6 +157,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 * <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">これらの連携手順</Anchor>に従ってください。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * Applovinは、自社で生み出した広告収益を配信します。
@@ -155,6 +171,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 <Accordion title="権限タブ">
 
 このタブでは、AppLovinに許可する権限を選択することができます。AppLovinのアトリビューションが無効になっていても、パーミッションタブはアクティブであり、AppLovinにコントロールを与えることができることに注意してください。
+
+<div id="ad-network-permissions" />
 
 ### アドネットワークへの権限付与
 

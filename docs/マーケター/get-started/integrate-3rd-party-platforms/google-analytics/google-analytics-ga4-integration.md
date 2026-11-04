@@ -27,10 +27,14 @@ x-zendesk:
 >
 > この連携は、[Google Analytics for Firebase SDKをすでに実装しているiOS](https://firebase.google.com/docs/analytics)アプリとAndroidアプリで利用できます。連携を正しく動作させるには、AppsFlyer SDKでFirebase SDKの`app_instance_id`の値を収集する必要があります。 [Firebase SDKからアプリインスタンスIDを取得する方法](#5-retrieve-app-instance-id-in-appsflyer-sdk)を確認してください。
 
+<div id="how-does-it-work" />
+
 ## 連携の仕組み
 
 * 新規インストールが発生すると、AppsFlyerはタッチポイントの詳細（メディアソース、キャンペーン名、キャンペーンID）をGA4に送信します。さらに、Firebase SDKの`app_instance_id`も送信し、そのユーザーのタッチポイントとしてGA4に記録されるようにします。
 * アプリ内イベントが発生すると、GA4は最後のタッチポイントにそのイベントを紐付けます。
+
+<div id="set-up-google-analytics-ga4-integration" />
 
 ## Google Analytics（GA4）連携の設定
 
@@ -132,6 +136,8 @@ AppsFlyerは、ユーザーのインストール後にGA4へポストバック�
 >
 > イベントの定義には、表に記載されている定義済みのAFイベントパラメータをすべて、記載どおりに含める必要があります。不足や相違があると、Google Analyticsがポストバックを拒否します。
 
+<div id="the-event-mapping-table" />
+
 #### イベントマッピング表
 
 次の表には、Google Analyticsのすべてのイベントと、対応するAppsFlyerの定義済みパラメータが記載されています。対応付けたイベントのみを含む表を、開発者に共有してください。
@@ -170,6 +176,8 @@ AppsFlyerは、ユーザーのインストール後にGA4へポストバック�
 |  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [view\_search\_results](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_search_results) |  |
 | af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+
+<div id="reserved-google-event-names" />
 
 #### Googleの予約済みイベント名
 

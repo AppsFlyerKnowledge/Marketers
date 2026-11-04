@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="はじめに — マーケティング担当者向けのオンボーディング" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## はじめに
 
 この記事では、広告主（アプリ所有者）の**プロダクトマネージャーがAppsFlyerを導入するための計画・実行手順**について説明しています。各項目について、作業担当者とおおよその作業時間の目安が記載されています。
 
 この記事の推定時間は、一般的なガイダンスとしてのみ意図されていることに注意してください。この目安は、多くのお客様との経験に基づいて示していますが、アプリ所有者、アプリ、および実装工程などは、お客様によって異なります。そのため、実際にこれらの工程にかかる時間はここに記載されている目安と異なる場合があります。
+
+<div id="account-setup" />
 
 ## アカウント設定
 
@@ -44,9 +48,13 @@ x-zendesk:
 
 **結果：** ようこそ！これで、アクティブなAppsFlyerアカウントと、それにアクセスできるアカウントユーザーができました。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > AppsFlyerを初めてご利用になる方：AppsFlyerで何かできるのかをより詳しく見てみませんか？<Anchor target="_blank" href="/marketers/ja/docs/welcome-to-appsflyer#appsflyerで何ができますか">こちらの6分間の動画</Anchor>をご覧ください。
+
+<div id="app-onboarding" />
 
 ## アプリのオンボーディング
 
@@ -58,6 +66,8 @@ x-zendesk:
 
 1. 管理画面右上の、メールアドレスのドロップダウンメニューバーをクリックします。
 2. 「アプリのオンボーディング」をクリックします。
+
+<div id="step-1-app-setup" />
 
 ## ステップ1：アプリ設定
 
@@ -71,6 +81,8 @@ x-zendesk:
 | [オプション] 既存のユーザーデバイスをAppsFlyerに移行 | 2時間 | 既にアプリに相当数のユーザーがいる場合は、二重課金を避けるためにも、<Anchor target="_blank" href="/marketers/ja/docs/migration-to-appsflyer-from-other-vendors#デバイスidの移行任意">AppsFlyerへのユーザー移行</Anchor>を検討してください。<br /><br />**注記：** アカウントアドミン<strong>（AppsFlyer CSMまたは [hello@appsflyer.com](mailto:hello@appsflyer.com)) のサポートチームまでお問合せください）</strong> |
 
 **結果：** AppsFlyer管理画面にアプリが定義されました。
+
+<div id="step-2-sdk--api-integration" />
 
 ## ステップ2：SDK / API実装
 
@@ -88,6 +100,8 @@ x-zendesk:
 
 **結果：** これで、アプリのインストール計測、アプリ内イベント計測、その他追加の開発工数を必要としないAppsFlyer機能の準備が整いました。
 
+<div id="step-3-attribution-setup" />
+
 ## ステップ3：アトリビューションの設定
 
 [ステップ1でAppsFlyerで定義されたすべてのアプリに対して、次の手順を実行します：アプリ設定](/docs/getting-started-onboarding-for-marketers#ステップ1アプリ設定)：
@@ -101,6 +115,8 @@ x-zendesk:
 | [オプション] リターゲティングキャンペーンを有効にする | プロダクトマネージャー | 2分 | <Anchor target="_blank" href="/marketers/ja/docs/app-settings#reengagement-attribution">アプリ設定画面でリターゲティング計測を有効</Anchor>にします。<br /><br />詳細：<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">リターゲティングガイド</Anchor> |
 
 **結果：** アプリにトラフィックをもたらすすべてのメディアソースは、新規ユーザーやリピーターがエンゲージするたびに計測されます。
+
+<div id="step-4-additional-setup" />
 
 ## ステップ4：追加設定
 
@@ -120,6 +136,8 @@ x-zendesk:
 | チャネル、プラットフォーム、デバイスに渡るカスタマージャーニーの全体像を把握 | プロダクトマネージャー /  <br />デベロッパー | <Anchor target="_blank" href="/marketers/ja/docs/people-based-attribution-pba-overview">ピープルベースアトリビューション（PBA）</Anchor> |
 | プライバシー規制への準拠を確認：GDPR、 CCPAなど | プロダクトマネージャー /  <br />デベロッパー | ユーザーが計測から<Anchor target="_blank" href="/marketers/ja/docs/apply-privacy-preserving-sdk-methods">オプトアウト</Anchor>できるように設定する |
 
+<div id="enrich-your-knowledge" />
+
 ## 知識を深める
 
 以下のポイントは、すべてのAppsFlyerユーザーにおすすめです：
@@ -132,11 +150,17 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ja/docs/aggregated-and-analytics-reporting-overview">集計レポートツールとアナリティクス</Anchor>について | 30分 |
 | <Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ローデータレポート</Anchor>について | 30分 |
 
+<div id="related" />
+
 ## 関連事項
+
+<div id="tip-1" />
 
 > 👍 **ヒント**
 >
 > ユーザー獲得（UA）は初めてですか？ユーザー獲得のための計画、実行、そして継続的に最適化をするための重要なポイントや課題などについては<Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">こちら</Anchor>を参考にしてください。
+
+<div id="note" />
 
 > 📘 **注**
 >

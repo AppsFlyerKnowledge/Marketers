@@ -34,9 +34,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **Pull API ローデータをお探しですか？**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/pull-api-raw-data">こちらの記事 - Pull API ローデータ</Anchor>をご覧ください。
+
+<div id="pull-api-aggregate-data" />
 
 ## Pull API aggregated data（集計データのPull API）
 
@@ -46,6 +50,8 @@ x-zendesk:
 * Pull APIの追加機能は次のとおりです：
   * アトリビューションタッチタイプを追加
   * タイムゾーンを選択
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### Pull APIで利用できる集計パフォーマンスレポート
 
@@ -103,6 +109,8 @@ x-zendesk:
 | キャンペーン名の変更 | Pull APIレポートはキャンペーン名の変更をサポートしていません。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

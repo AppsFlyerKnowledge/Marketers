@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのUIで作成したすべてのOneLink URLをダウンロードします。
 
+<div id="export-onelink-urls" />
+
 ## OneLink URLのエクスポート
 
 AppsFlyerのUIでOneLinkを設定して作成したすべてのURLを、OneLinkテンプレートごとにCSVファイルでダウンロードできます。 （SDK、OneLink API、一括アップロードで作成したOneLink URLは、エクスポートの対象外です。）
@@ -47,6 +49,8 @@ CSVファイルには、各リンクについて以下の情報が含まれま�
 2. リンクの一覧を取得するOneLinkテンプレートを選択します。
 3. ［**エクスポート**］をクリックします。  
    CSVファイルがダウンロードされます。
+
+<div id="traits-and-limitations" />
 
 ### 特性と制限事項
 

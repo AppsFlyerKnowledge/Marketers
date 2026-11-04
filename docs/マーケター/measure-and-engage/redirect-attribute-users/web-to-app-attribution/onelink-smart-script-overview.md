@@ -34,6 +34,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="about-onelink-smart-script" />
+
 ## OneLink Smart Scriptについて
 
 ユーザーは、自然流入や広告キャンペーンへの接触を通じて、アプリのストアページに到達する前にモバイルWebサイトを訪問します。ただし、この経路では次の2回のクリックが発生します。
@@ -59,9 +61,13 @@ OneLink Smart Scriptには、次の2つのバージョンがあります。
 
 <Anchor target="_blank" href="/marketers/ja/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1（旧版）**</Anchor>：すでにOneLink Smart Scriptを設定している場合は、このバージョンのドキュメントを参照してスクリプトを保守・編集してください。 **注意**：必須ではありませんが、V2への移行をご検討ください。 
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > OneLink Smart Scriptが要件に合うか迷っていませんか？ AppsFlyerが提供する他のWeb-to-appソリューションとの<Anchor target="_blank" href="/marketers/ja/docs/convert-your-mobile-web-visitors-to-app-users">比較</Anchor>を参考にしてください。
+
+<div id="examples" />
 
 ### 利用例
 
@@ -90,6 +96,8 @@ OneLink Smart Scriptには、次の2つのバージョンがあります。
 リンクをクリックすると、ホテルのモバイルWebサイトに移動します。そのページには、ホテルのモバイルアプリのダウンロードを促すボタンが表示されます。 OneLink Smart Scriptは、メール内の元のリンクと同じ**pid**と**c**パラメータを含むURLを自動生成します。生成されるリンクは次のとおりです：https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
 **エマがモバイルサイトのボタンをクリックすると、アプリストアに移動します。アプリをダウンロードして起動すると、ディープリンクでアプリ内のオーランドの休暇案内ページへ誘導されます。**
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

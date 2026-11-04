@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerへのログイン、複数アカウントの追加、ユーザーパスワードのリセットについて説明します。
 
+<div id="log-in-instructions" />
+
 ## ログイン方法
 
 初めて利用するユーザーと、すでに利用しているユーザーのログイン方法を説明します。新規アカウントの作成、新しいユーザーの招待、既存ユーザーとしてのログインが対象です。
@@ -74,6 +76,8 @@ AppsFlyerにログインするには、次の手順に従います。
 [ユーザーの2FAをリセットする手順は、こちらを参照してください](/docs/account-login-and-password-reset#resetting-twofactor-authentication-2fa)。
 
 </Accordion>
+
+<div id="password-login-or-2fa-reset" />
 
 ## パスワード・ログイン・2FAのリセット
 

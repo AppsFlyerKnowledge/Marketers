@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="test-pba-web-events" />
+
 ## PBA Webイベントのテスト
 
 **テストページの使用に関する原則**
@@ -32,6 +34,8 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
 * 受信時に解析され検証されます。
 * ユーザーインターフェイス上で利用できます。これには処理エラーが含まれます。エラーが存在する場合は、修正したイベントを再度送信して、正しく処理されていることを確認します。
 * 毎日行われるデイリーのデータ処理プロセスで他のイベントと同様に処理されます。つまり管理画面とローデータにも追加されます。
+
+<div id="web-sdk-integration-test-page" />
 
 #### Web SDK実装テストページ
 
@@ -74,6 +78,8 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
     </tr>
   </tbody>
 </Table>
+
+<div id="procedures" />
 
 ## 手順
 
@@ -149,6 +155,8 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
 | 3 | <Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide#recording-event-scenarios">Webイベントの送信を開始し</Anchor>、PBAがそれらを正しく処理することを確認します。<br /><br />**注意：**<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[![PBAWebSDKTestEventEVENT_en-us.png](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />詳細は、<Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">Web SDK イベントパラメーター</Anchor>をご覧ください。 | [![mceclip5.png](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png)](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## トラブルシューティング
 

@@ -24,11 +24,15 @@ x-zendesk:
 
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 
+<div id="what-is-ab-testing" />
+
 ## A/Bテストとは？
 
 A/Bテストとは、広告やキャンペーンのさまざまな要素を比較検証するための手法です。各広告には、ターゲティング、ビジュアル、テキストなど、見込みユーザーのコンバージョン率に影響する要素が含まれています。広告の各要素について、より高い成果につながるバリエーションを見つけることで、モバイルマーケティングの成果を大きく向上させられる可能性があります。
 
 この記事では、**AppsFlyerを使ってA/Bテストを実施し、より高い成果につながる広告要素を見つける方法**を説明します。
+
+<div id="how-to-ab-test-mobile-campaigns" />
 
 ## モバイルキャンペーンのA/Bテスト
 
@@ -50,6 +54,8 @@ A/Bテストとは、広告やキャンペーンのさまざまな要素を比�
 
 1. AppsFlyerのダッシュボードとデータを使用して、2つのキャンペーンの主要KPIのパフォーマンスを比較します。
 2. 成果の高いバリエーションを選択し、実際のキャンペーンで使用します。
+
+<div id="ab-testing-creatives-and-targeting" />
 
 ## クリエイティブとターゲティングのA/Bテスト
 
@@ -103,6 +109,8 @@ A/Bテストとは、広告やキャンペーンのさまざまな要素を比�
 
 </Accordion>
 
+<div id="ab-testing-ad-placement-on-mobile-web" />
+
 ## モバイルWebで広告掲載位置をA/Bテストする
 
 ![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
@@ -128,6 +136,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobil
 1. インストールまたはアプリ内イベントのローデータレポートをダウンロードします。選択したサブパラメータ（例：af\_sub5）の列を使用して、データをフィルタリングおよび並べ替えます。
 2. 2つの広告掲載位置のパフォーマンスを比較します。つまり、どちらの掲載位置でより多くのインストールまたはインストール後イベントが発生したかを確認します。
 
+<div id="ab-testing-media-sources" />
+
 ## メディアソースのA/Bテスト
 
 広告主がアプリにとって最も成果の高い（または低い）メディアソースを特定できるようにすることは、AppsFlyerが開発された目的の1つです。ただし、**メディアソースを正しく比較しないと、トラフィックの品質について誤った結論に至る可能性があります**。
@@ -147,12 +157,16 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobil
 3. メディアソース → キャンペーン → 広告セット → 広告の順にグループ化します。
 4. KPIを比較して、最も成果の高いメディアソースを特定します。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
 >
 > * 1と2は、同じメディアソース上の異なる広告です。クリエイティブ、ターゲティング、広告掲載位置のA/Bテストを行うには、例えば4日目のリテンション率など、1つのKPIを比較します。
 > * 2と3は、異なるメディアソース上の広告です。広告のクリエイティブとターゲティングが同一であれば、1つのKPIを比較することでメディアソースのA/Bテストを行えます。
+
+<div id="using-audiences-split-for-easy-ab-testing-of-media-sources" />
 
 ### オーディエンスを分割してメディアソースのA/Bテストを簡単に実施
 

@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-rockerbox" />
 
 ## Rockerboxの設定
 
@@ -48,10 +52,14 @@ x-zendesk:
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 パートナーとの連携を利用している間は、このトグルを有効にしておく必要があります。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -60,11 +68,15 @@ x-zendesk:
 **RockerboxアカウントをAppsFlyerに接続するには、Rockerbox account ID**にアカウントIDを入力します。   
 RockerboxのアカウントIDは、Rockerboxの**Settings**＞**Account**＞**General**で確認できます。
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にRockerboxへポストバックを自動送信できます。このセクションでは、イベントごとに、ポストバック送信の対象とするユーザーの流入元を設定します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
 
 アプリをダウンロードしたすべてのユーザーのポストバックをRockerboxに送信するには、<strong>［オーガニックを含むすべてのメディアソース］</strong>を選択します。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 

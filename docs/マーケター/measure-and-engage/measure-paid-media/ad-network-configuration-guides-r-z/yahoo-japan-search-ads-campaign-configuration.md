@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
+<div id="yahoo-japan-search-ads-integration-principles" />
+
 ## Yahoo! Japan 検索広告の連携仕様
 
 AppsFlyerとYahoo! Japan 検索広告の計測連携は、Androidアプリのみに対応しています。 
@@ -80,6 +82,8 @@ AppsFlyerアプリ内イベント（あなたのアプリ）とYahoo検索広告
 
 Yahoo! Japan検索広告がコンバージョンの計測を申告した際には、以下の表に記載されている関連パラメータの情報を提供します。これらのパラメータは、管理画面やローデータレポートに適宜反映されます。以下の表は、Yahoo! Japan検索広告とAppsFlyerのパラメータの対応表です。
 
+<div id="yahoo-japan-search-ads-appsflyer-media-source-mapping" />
+
 #### Yahoo! Japan検索広告 - AppsFlyer間のデータマッピング
 
 | Yahoo! Japan検索広告 | AppsFlyer |
@@ -93,6 +97,8 @@ Yahoo! Japan検索広告がコンバージョンの計測を申告した際に�
 | account\_id | network\_account\_id |
 
 </Accordion>
+
+<div id="integration-procedures" />
 
 ## 実装の手順
 
@@ -188,6 +194,8 @@ Yahoo! Japan検索広告との連携は、広告主として直接、もしく�
 
 代理店は、広告主に代わってYahoo! Japan検索広告のキャンペーンを実施することが可能です。
 
+<div id="agency-setup" />
+
 #### 代理店の設定
 
 | 作業担当： | 手順 |
@@ -196,6 +204,8 @@ Yahoo! Japan検索広告との連携は、広告主として直接、もしく�
 | 代理店 | <ol><li>AppsFlyer管理画面 左メニュー **設定** > **連携済みパートナー**に移動します。</li><li>Yahoo!Yahoo! JAPAN Sponsored Search) - 新API</li><li>**連携タブ**を開きます。</li><li>**パートナーを有効にする**が**オン**になっていることを確認してください。ONになっていない場合には、広告主側でのYahoo! Japan検索広告の連携作業をまずは行う必要があります。</li><li>ルックバック期間やアプリ内イベントのマッピングなど、残りの設定が正しいことも確認してください。必要であれば、変更を広告主に依頼してください。</li><li>**Yahoo Japan検索広告のカスタマーID**を入力します。このIDは<Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=36745&o=default#:~:text=How%20to%20check%20Account%20ID">キャンペーン管理ツール</Anchor>から取得可能です。接続できるカスタマーIDは1つだけです。</li><li>**保存**をクリックしてください。</li></ol> |
 
 </Accordion>
+
+<div id="subsidiary-procedures" />
 
 ## その他の作業について
 

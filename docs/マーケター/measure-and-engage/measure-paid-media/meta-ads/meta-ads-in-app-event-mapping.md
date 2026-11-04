@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **概要：** アプリ内イベントを詳細な情報とともにAppsFlyerからMeta広告に送信します。
 
+<div id="meta-in-app-events-mapping" />
+
 ## Meta広告へのアプリ内イベントのマッピング
 
 広告主は、SDKまたはサーバー間（S2S）で送信するアプリ内イベントを、Metaの定義済みイベントにマッピングします。また、<Anchor target="_blank" href="/marketers/ja/docs/measure-sessions">アプリの起動</Anchor>ごと、または検知された<Anchor target="_blank" href="/marketers/ja/docs/measure-uninstalls#アンインストールイベントの紐づけ">アプリのアンインストール</Anchor>についても、Metaにポストバックを送信できます。
 
 これにより、Metaの高度な最適化機能を利用し、カスタムオーディエンスや類似オーディエンスのセグメントを作成できます。
+
+<div id="predefined-event-mapping" />
 
 ### 定義済みイベントのマッピング
 
@@ -53,11 +57,15 @@ Meta広告には、アンインストール送信用の定義済みイベント�
 | CustomizeProduct | 企業が所有する設定ツールやその他のアプリケーションを使用した、商品のカスタマイズ。 | af\_customize\_product |
 | `Adimpression`：Android用  <br />`Fb_mobile_purchase`：iOS用 | Meta広告プラットフォームで広告収益を最適化します。[詳細は以下を参照してください](#キャンペーン最適化のための広告収益データのマッピング)。 | af\_ad\_revenue |
 
+<div id="mapping-ad-revenue-data-for-campaign-optimization" />
+
 ### キャンペーン最適化のための広告収益データのマッピング
 
 Meta広告では、広告収益データに基づいてキャンペーンを最適化できます。そのためには、af\_ad\_revenueイベントを以下のMeta広告イベントにマッピングします。
 
 <table><colgroup><col/><col/><col/><col/></colgroup><thead><tr><th><strong>AppsFlyerのイベント名</strong></th><th><strong>プラットフォーム</strong> </th><th><strong>マッピング先のパートナーイベント</strong></th><th><strong>Meta広告での最適化の基準</strong></th></tr></thead><tbody><tr><td rowspan="2"> <br/>af_ad_revenue</td><td>Android</td><td>Adimpression</td><td>個々の広告収益</td></tr><tr><td>iOS</td><td>fb_mobile_purchase</td><td>アプリ内購入</td></tr></tbody></table>
+
+<div id="availability-limitations" />
 
 #### 利用上の制限
 
@@ -66,6 +74,8 @@ Meta広告では、広告収益データに基づいてキャンペーンを最�
   * Metaの基準に基づいて選ばれたMeta広告アカウント。グレーアウトしている場合は、[利用要件を満たしていない可能性があります](https://www.facebook.com/business/help/571188993373447?id=561906377587030)。
 * *af\_ad\_revenue*イベントは、<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-cost-and-revenue-data">ROI360のアドバンスプラン</Anchor>を契約している場合にのみ利用できます。また、<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#integration-types-for-ad-revenue-attribution">SDK経由のインプレッションレベルの広告収益連携</Anchor>が必要です。
   * ROI360以外のプランでは、他のイベント名を使用して広告収益データを送信できます。
+
+<div id="custom-in-app-events-mapping" />
 
 ### カスタムアプリ内イベントのマッピング
 
@@ -77,9 +87,13 @@ SDKで設定したイベント名とイベント値（イベントパラメー�
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
 
+<div id="automatic-parameter-mapping-with-the-custom-event" />
+
 ### カスタムイベントでのパラメータの自動マッピング
 
 AppsFlyerとMetaの緊密な連携により、AppsFlyer SDKの標準イベントパラメータの多くは、Metaの定義済みパラメータに自動的にマッピングされます。たとえば、**af\_revenue**パラメータはMetaの **\_valueToSum**パラメータに変換されます。これにより、イベントごとの収益を送信し、Metaで計測や最適化に利用できます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -136,6 +150,8 @@ AppsFlyerとMetaの緊密な連携により、AppsFlyer SDKの標準イベント
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
 
+<div id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter" />
+
 #### 定義済みイベントの`_valueToSum`パラメータへの自動マッピング
 
 定義済みイベントでは、Metaの`_valueToSum`パラメータは`af_price`または`af_revenue`のいずれかにマッピングされます。
@@ -160,6 +176,8 @@ AppsFlyerとMetaの緊密な連携により、AppsFlyer SDKの標準イベント
 | StartTrial | af\_price |
 | Subscribe | af\_revenue |
 
+<div id="send-complex-in-app-events-to-meta-ads" />
+
 ### 複数の商品を含むアプリ内イベントのMeta広告への送信
 
 2026年9月時点では、複数の商品を含むアプリ内イベントをMeta広告に送信する際に、新しい`af_order_info`オブジェクトの使用を推奨しています。このオブジェクトを使用すると、広告主は複数の商品を含むアプリ内イベントを、対応する複数のアドネットワークと共有できます。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/item-level-order-data-for-ad-networks-af-order-info">アドネットワーク向けの商品単位の注文データ（af\_order\_info）</Anchor>を参照してください。
@@ -172,9 +190,13 @@ AppsFlyerとMetaの緊密な連携により、AppsFlyer SDKの標準イベント
 
 `af_content_list`を含める場合、同じイベントに`af_content_id`を含めないでください。どちらのパラメータも`fb_content_id`にマッピングされるため、競合を防ぐには、いずれか一方のみに値を設定する必要があります。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > `fb_content_id`は、Advantage+カタログ広告やダイナミック広告でのイベントとカタログ商品の照合、商品単位のパフォーマンスレポート、商品に基づく最適化シグナルなど、商品単位の用途で重要です。イベント数と値に基づく一般的なコンバージョン最適化では、このパラメータがなくてもキャンペーンは機能します。
+
+<div id="example-unified-format-compatible-with-meta-and-tiktok" />
 
 > 📄 **MetaとTikTokの両方に対応した共通形式の例**
 >
@@ -189,11 +211,15 @@ AppsFlyerとMetaの緊密な連携により、AppsFlyer SDKの標準イベント
 
 この形式は、MetaとTikTokの両方で使用できます。 TikTokも`af_content`フィールドから`id`の値を読み取るため、両方のアドネットワークにポストバックする場合も、共通のペイロードを1つ用意するだけで対応できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > `af_content`パラメータが1,000文字を超える場合、AppsFlyerは`fb_content`パラメータを含めずにイベントをMetaに送信することがあります。このとき`af_content_list`も含まれていない場合、Metaは商品を識別するためのデータを受信できません。多くの商品を含むイベントでは、`af_content`を1,000文字未満に抑えてください。
 
 複数の商品を含むアプリ内イベントの構造の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#what-are-complex-inapp-events-and-how-do-i-set-them-up">アプリ内イベント｜概要</Anchor>を参照してください。
+
+<div id="event-and-parameter-limitations" />
 
 ## イベントとパラメータの制限
 
@@ -215,6 +241,8 @@ AppsFlyerとMetaの緊密な連携により、AppsFlyer SDKの標準イベント
 * AppsFlyerのイベントにはMetaのイベント名と同じ名前（例：fb\_price）を付けることもできますが、その場合はMetaにCUSTOMイベントとして送信しないでください。  
   **問題を避けるため、Metaのイベント名と同じ名前を付けることは控えてください。**
 * Metaへのアプリ内イベントポストバックをマッピングするには、オーガニックを含むすべての流入元のイベントデータを取得してください。
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >

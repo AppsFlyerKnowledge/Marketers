@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるLocalyticsは、モバイルアプリとWebアプリ向けのマーケティング・分析プラットフォームです。 Localyticsのアプリ分析では、コホート別の継続率分析、ファネル分析、顧客のセグメント分け、リアルタイム分析により、ロイヤルティと顧客生涯価値が最も高いユーザー群を特定できます。 Localyticsのアプリマーケティングは、顧客獲得キャンペーンの長期的な成果を計測し、最も効果的なタイミングで対象の顧客に充実したアプリ内メッセージやプッシュ通知を届けることで、アプリのマーケティングを自動化します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-localytics" />
 
 ## Localyticsの設定
 
@@ -53,12 +57,16 @@ Localyticsの設定画面には、**［連携］、［計測リンク］、［�
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めてこの画面を開いたとき**は、下にあるトグルをオンにする必要があります。［***パートナーを有効化***］をオンにすると、［連携］タブのパラメータを設定できるようになります。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
 
 [![](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -78,6 +86,8 @@ Localyticsからのアプリキーの取得
 [![](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)
 
 AppsFlyerの管理画面でLocalyticsを設定します。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -128,6 +138,8 @@ Localyticsでは、計測リンクは利用できません。
 Localyticsでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="viewing-the-attribution-data-in-the-localytics-console" />
 
 ## Localyticsコンソールでアトリビューションデータを確認する
 

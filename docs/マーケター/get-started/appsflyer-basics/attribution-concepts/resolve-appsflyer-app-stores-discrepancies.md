@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerとアプリストアのアトリビューションの差異の主な原因と、差異を最小限に抑えるヒントを説明します。
 
+<div id="attribution-discrepancies" />
+
 ## アトリビューションの差異
 
 モバイルアトリビューションに関わる各事業者が採用するモデルには、それぞれ違いがあります。 AppsFlyerと主要なアプリストアであるApp Store（iOS）、Google Play（Android）も同様です。 **注意**：本記事では、この2つのストアを「アプリストア」と表記します。
@@ -40,9 +42,13 @@ x-zendesk:
 
 <Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyerのアトリビューションモデルでは、広告クリックごとに1件のインストールを紐付けるため、差異が**ノンオーガニック**のインストール数の正確性に影響することはありません。アプリストアに複数のデバイスを登録しているユーザーについても同様です。
+
+<div id="why-appsflyer-attributes-less" />
 
 ### AppsFlyerの計測数が少なくなる理由
 
@@ -55,6 +61,8 @@ AppsFlyerの計測数が少なくなる主な原因は、以下のとおりで�
 | **タイムゾーン** | 広告主の現地のタイムゾーンでデータを表示します。 | デフォルトでは、UTC±00:00でデータを表示します。 | アプリのタイムゾーンを設定して、この差異を小さくできます（<Anchor target="_blank" href="/marketers/ja/docs/changing-app-time-zone-settings">詳しくはこちら</Anchor>）。 |
 | **Androidユーザーが、設定したリアトリビューション期間内にアンインストールと再インストールを行う** | Google Playの一部の表示では、初回インストールからの経過時間に関係なく、同じユーザーについて**2件**の**ユニークインストール**を表示します。一方、別の表示では**ユニークユーザー数**を表示するため、AppsFlyerに近い値になります。 | 元のインストールからリアトリビューション期間内（デフォルトは3か月）に再インストールした場合、AppsFlyerは新規ユーザーとして扱いません。 | <Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">リアトリビューション期間は、1～24か月の範囲で設定</Anchor>できます。 |
 | **iOSユーザーが、設定したリアトリビューション期間内にアンインストールと再インストールを行う** | iTunesは、ユーザーがアンインストールして再インストールするたびに、新規インストールとして計上します。 | 元のインストールからリアトリビューション期間内（デフォルトは3か月）に再インストールした場合、AppsFlyerは新規ユーザーとして扱いません。 | <Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">リアトリビューション期間は、1～24か月の範囲で設定</Anchor>できます。 |
+
+<div id="why-appsflyer-attributes-more" />
 
 ### AppsFlyerの計測数が多くなる理由
 

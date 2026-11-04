@@ -29,6 +29,8 @@ x-zendesk:
 
 AppsFlyerがPMPにポストバックを送信するには、AppsFlyerアカウント名を値とするaf\_mp=パラメーターを計測リンクに追加する必要があります。
 
+<div id="note" />
+
 > 📄 **例**
 >
 > <Tabs>

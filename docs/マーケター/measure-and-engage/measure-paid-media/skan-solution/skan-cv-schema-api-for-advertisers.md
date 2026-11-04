@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer Conversion Studioに設定されている、現在のSKAdNetwork（SKAN）のコンバージョン値（CV）スキーマを確認できます。
 
+<div id="skan-conversion-value-schema-api" />
+
 ## SKANコンバージョン値スキーマAPI
 
 <div id="api-basics" />
@@ -37,6 +39,8 @@ x-zendesk:
 | 認証 | API V2.0トークン（Bearerトークン）を含む`Authorization` HTTPヘッダーが必要です。<br /><br />![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)管理者ユーザーが<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">ダッシュボードでV2トークンを取得</Anchor>します。画面上部のアカウントメニュー（メールアドレスのドロップダウン）を開き、**［セキュリティセンター］**＞<strong>［AppsFlyer APIおよびS2Sトークン］</strong>に移動します。 |
 | レート制限 | <ul><li>1回のクエリで最大50,000行を返します。</li><li>1分あたり10回の呼び出し</li></ul> |
 | 最終設定変更日 | <ul><li>デコードモードでは、ファイル名に日付が表示されます。</li><li>ほかのすべてのモードでは、last\_config\_change列に日付が表示されます。</li></ul> |
+
+<div id="request-example-curl" />
 
 ### リクエスト例（cURL）
 

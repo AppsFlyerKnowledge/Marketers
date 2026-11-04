@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer SDKで利用できる機能を確認し、AndroidまたはiOSアプリに実装するAPIを検討します。
 
+<div id="about-the-sdk" />
+
 ## SDKについて
 
 SDK実装の全体像については、こちらの動画をご覧ください。
@@ -79,6 +81,8 @@ SDKには、アプリのインストールやイベントを記録する機能�
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## SDKの互換性
 
 AppsFlyer SDKは、以下のプラットフォームに対応しています。
@@ -110,13 +114,19 @@ SDK V6.0.8以降では、<Anchor target="_blank" href="/marketers/ja/docs/apple-
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## SDK実装
 
 SDKのインストールと実装には、プロダクトマネージャーとモバイルアプリ開発者の連携が必要です。**実装する前に**、実装タスクをすべて確認し、アプリで利用する機能を検討してください。
 
+<div id="sdk-planning-checklist" />
+
 ### SDK実装の計画チェックリスト
 
 計画を進める際に役立つ、<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">ダウンロード可能なチェックリスト</Anchor>を用意しています。各タスクには、マーケター向けおよび開発者向けドキュメントへのリンクがあります。
+
+<div id="sdk-integration-tasks" />
 
 ### SDK実装のタスク
 

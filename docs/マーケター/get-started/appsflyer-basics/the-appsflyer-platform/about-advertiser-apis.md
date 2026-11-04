@@ -22,12 +22,16 @@ x-zendesk:
 ---
 > **概要：** 広告主がデータの取得や更新に利用できるAPIについて説明します。
 
+<div id="advertiser-api-list-and-interfaces" />
+
 ## 広告主向けAPIとインターフェース
 
 <span id="01EEQJERAWW3HY59HVPY3YWA0B"></span>レポート、レポートツール、レポートAPIの詳細については、以下を参照してください。
 
 * <span id="01EEQJERAW2ZTBWBQKBCDSC76Z"></span><span id="01EEQJERAWQ2WCPV0207XM6FR4"></span><span id="01EEQJERAX0W7RCYQWVM2M5S13"></span>ローデータレポートのツール／API
 * <span id="01EEQJERAWA09P200SGR985846"></span><span id="01EEQJERAW6AC6WR7E46T5DMHW"></span>集計・分析レポートのツール／API
+
+<div id="interfaces-for-advertisers" />
 
 #### 広告主向けインターフェース
 

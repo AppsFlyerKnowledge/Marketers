@@ -33,6 +33,8 @@ x-zendesk:
 * 賭け事によって生成された収益
 * どのタイプの賭けが最低または最高の収益を生み出しているか
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -43,6 +45,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -85,6 +89,8 @@ x-zendesk:
 | af\_登録方法 | サインアップ方法の種類 | Email、Facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

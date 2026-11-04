@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **概要：** 複数のGoogle Adsアカウントからのトラフィックを正しく成果に紐づけるための計測設定について説明します。
 
+<div id="introduction" />
+
 ## はじめに
 
 Google Adsのトラフィックは、Google Adsを専門とする代理店や、アプリ所有者の組織内のさまざまな地域のローカルチームなど、複数のアカウントから発生することがあります。広告成果を正しい運用元に紐づけるために、複数のGoogle Adsアカウントの計測設定を理解しておくことが重要です。
 
 この記事では、代理店の成果計測から、MCCや複数のMCCを統括するMCCの利用まで、これらのケースを説明します。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -36,9 +40,13 @@ Google Adsのトラフィックは、Google Adsを専門とする代理店や、
 
 Google Adsの代理店アカウントの設定については、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-agencies">こちら</Anchor>を参照してください。
 
+<div id="important-definitions" />
+
 ## 重要な定義
 
 * **リンクID**：**Google Adsで定義されるモバイルアプリの一意の識別子**です。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -49,9 +57,13 @@ Google Adsの代理店アカウントの設定については、<Anchor target="
 * **MCC**：Google Adsマネージャーアカウント（MCC、旧称My Clients Center）は、**複数のGoogle Adsアカウントを管理するためのツール**です。  
   MCCアカウントでは複数のアカウントをリンクし、1か所で確認できます（<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">詳細はこちら</Anchor>）。
 
+<div id="setting-up-google-ads-recording" />
+
 ## Google Adsの計測設定
 
 AppsFlyerで登録できるリンクIDは、アプリごとに1つです。<strong>複数のアカウントが同じアプリを運用する場合、同じリンクIDを使用する必要があります。</strong>計測のために、このリンクIDをAppsFlyer管理画面で設定する必要があります。
+
+<div id="sharing-google-link-id-with-another-account" />
 
 ### GoogleのリンクIDを別のアカウントと共有する方法
 
@@ -59,16 +71,22 @@ AppsFlyerで登録できるリンクIDは、アプリごとに1つです。<stro
 
 以下の画面例のように、アプリ所有者は、お客様IDで識別される別のアカウントと任意のリンクIDを共有できます。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-agencies#代理店向けのgoogle-ads計測設定">リンクIDを代理店と共有する方法</Anchor>を参照してください。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > * MCCがサブアカウントのコンバージョンアカウント（コンバージョンアカウント）である場合、MCCからサブアカウントにリンクIDを共有する必要はありません。ただし、MCC配下のサブアカウントが自らのコンバージョンを管理する場合、MCCは、そのコンバージョンアカウントとなるサブアカウントにリンクIDを共有する必要があります。
 > * コンバージョンのインポート：MCCがコンバージョンアカウントである場合、MCCが配下のサブアカウントのコンバージョンをインポートする必要があります。ただし、MCC配下のサブアカウントが自らのコンバージョンを管理する場合、そのサブアカウントでもコンバージョンをインポートする必要があります。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
 > * Google Ads管理画面で、3点メニュー>>***リンク済みアカウント***>>***サードパーティのアプリ分析の詳細***の順にクリックします。 [![](https://files.readme.io/24a2046dd2f3144490e052af68a645e536ad4ebc0a8730798c75c943056f1d05-52396751401361.png)](https://files.readme.io/24a2046dd2f3144490e052af68a645e536ad4ebc0a8730798c75c943056f1d05-52396751401361.png)
 > * 他のアカウントは「共有」を承認する必要があります。
 > * これにより、共有先アカウントに、そのアプリのGoogle Adsキャンペーンを配信する権限が付与されます。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
@@ -86,11 +104,15 @@ MCCの設定中に、MCCとサブアカウントのどちらでコンバージ�
 
 ![mmc-googleads-settings.png](https://files.readme.io/0fccf363fb21e8afcbbe6b6774fd53aabf6c8aea72c2636f6f67c75e2208e2a6-52396751408529.png)
 
+<div id="mcc-of-mccs" />
+
 ## 複数のMCCを統括するMCC
 
 [![](https://files.readme.io/3557abec0be782fccb10897de0b7ae705b1464216f7fc160d217b506df9a73b9-52396712543121.png)](https://files.readme.io/3557abec0be782fccb10897de0b7ae705b1464216f7fc160d217b506df9a73b9-52396712543121.png)
 
 複数の代理店と取引する大規模な広告主は、複数のMCCを統括するMCCアカウントを利用する場合があります。これは通常のMCCアカウントに似ています。このとき、MCCアカウントの中で最上位のMCCアカウント、または広告主アカウントがリンクIDを生成することを推奨します。この構造を正しく設定するには、サブアカウント側で、適切な階層のMCC（通常は最上位のMCC）をコンバージョンアカウントとして選択する必要があります。このように設定されている場合は、リンクIDをサブアカウントと共有する必要はなく、最上位のアカウントでコンバージョンのインポートをするだけで十分です。
+
+<div id="tip-1" />
 
 > 👍 **ヒント**
 >
@@ -101,6 +123,8 @@ MCCの設定中に、MCCとサブアカウントのどちらでコンバージ�
 > * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">管理対象アカウントの操作</Anchor>
 >
 > アカウント構成や推奨される設定については、Googleの担当者にお問い合わせください。
+
+<div id="opening-a-google-ads-campaign" />
 
 ## Google Adsキャンペーンの開始
 

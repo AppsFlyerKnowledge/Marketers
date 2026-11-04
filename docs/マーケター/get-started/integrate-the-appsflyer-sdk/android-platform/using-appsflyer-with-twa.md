@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **概要：** Trusted Web Activities（TWA）でAppsFlyerを使用し、インストールの計測とアプリ内イベントの記録を行います。
 
+<div id="introduction" />
+
 ## はじめに
+
+<div id="what-are-trusted-web-activities" />
 
 ### Trusted Web Activitiesとは
 
 Trusted Web Activities（TWA）は、Androidアプリ内にWebコンテンツを表示する新しい仕組みです。 TWAでは、アプリ内イベントをどのように記録するかが課題になります。この記事では、その対応方法を説明します。 TWAについて詳しくは、<Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">こちら</Anchor>を参照してください。
 
 TWAは、プログレッシブWebアプリでも使用できます。
+
+<div id="what-are-progressive-web-apps" />
 
 ### プログレッシブWebアプリとは
 
@@ -52,6 +58,8 @@ Web上のみで動作するもう一方の形態のPWAは、この記事の対�
 <Accordion title="TWAからのアプリ内イベントの送信">
 
 通常、アプリ内イベントは、ネイティブの画面からAppsFlyer SDKを使用して送信されます。 TWAはWebベースの画面であり、ネイティブの画面ではないため、AppsFlyer SDKを使用してアプリ内イベントを送信することはできません。代わりに、<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile">サーバー間通信によるアプリ内イベント</Anchor>を使用できます。 TWAでサーバー間通信によるイベントを送信するには、以下の手順に従ってください。
+
+<div id="prerequisites" />
 
 ### 事前準備
 
@@ -92,6 +100,8 @@ TWAからAppsFlyerにイベントを送信する前に、次の作業を行っ�
        import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
        ```
 
+<div id="getting-the-appsflyer-id" />
+
 ### AppsFlyer IDの取得
 
 サーバー間通信によるイベントを送信するには、AppsFlyer IDが必要です。 AppsFlyer IDは、AppsFlyer Android SDKから取得できます。
@@ -101,6 +111,8 @@ TWAからAppsFlyerにイベントを送信する前に、次の作業を行っ�
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
+
+<div id="sending-the-appsflyer-id-to-twa" />
 
 ### TWAへのAppsFlyer IDの送信
 
@@ -141,6 +153,8 @@ private void launchTwa(String cuid, String af_id) {
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="retrieving-the-appsflyer-id" />
 
 #### AppsFlyer IDの取得
 
@@ -199,6 +213,8 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
+<div id="retrieving-the-appsflyer-id-1" />
+
 #### AppsFlyer IDの取得
 
 JavaScriptには、ヘッダーにアクセスするためのAPIがありません。そのため、サーバーはコンバージョンデータをCookieとしてWebベースの画面に返す必要があります。サーバーは、AppsFlyer IDを含むカスタムヘッダーを取得し、データを解析してCookieとしてWebページに送信します。
@@ -219,6 +235,8 @@ console.log(appsflyer_id);
 ```
 
 </Accordion>
+
+<div id="sending-the-in-app-event" />
 
 ### アプリ内イベントの送信
 
@@ -243,6 +261,8 @@ AppsFlyer SDKは、次の2つのAPIを通じてコンバージョンデータを
 * <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">On app open attribution</Anchor>：OneLinkによるディープリンクでアプリが開かれた際に呼び出されます。
 
 コンバージョンデータを使用して、Webコンテンツをカスタマイズできます。
+
+<div id="sending-conversion-data-to-twa" />
 
 ### TWAへのコンバージョンデータの送信
 
@@ -281,6 +301,8 @@ private void launchTwa(Map<0> conversionData, String cuid, String af_id) {
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="fetching-the-conversion-data-from-the-client-side" />
 
 ### クライアント側でのコンバージョンデータの取得
 

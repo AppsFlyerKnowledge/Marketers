@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** SDK実装コードの生成とテストを自動化します。
 
+<div id="about-the-sdk-integration-wizard" />
+
 ## SDK実装ウィザードについて
 
 <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?sourceos=android&utm_source=kb&utm_medium=sdk-int-wizard-orvw">SDK実装ウィザード</Anchor>を使用すると、アプリ開発者は案内に沿ってSDKの実装を進められます。アプリ開発者が必要な認証情報とカスタマイズ項目を入力するだけで、ウィザードがプロジェクトにコピー＆ペーストできるコードスニペットを生成します。
@@ -29,6 +31,8 @@ x-zendesk:
 
 * [インストールと実装のフロー](#インストールと実装のフロー)：SDKのインストールから実装のテストが成功するまで、ウィザードが開発者を案内します。
 * [アプリ内イベントの追加フロー](#アプリ内イベントの追加フロー)：アプリ内イベントの定義から、AppsFlyerへの送信テストが成功するまで、ウィザードが開発者を案内します。
+
+<div id="the-installation-and-integration-flow" />
 
 ## インストールと実装のフロー
 
@@ -46,6 +50,8 @@ x-zendesk:
 | SDKでApp Tracking Transparency（ATT）をサポートしますか？ | <Anchor target="_blank" href="/marketers/ja/docs/basic-sdk-integration-guide#configure-app-tracking-transparency-att-support">ATTについて</Anchor> |
 | AppsFlyerのv2認証トークンは何ですか？（自動テストのフローを使用する場合のみ必須） | <Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens#トークンページを開く">v2トークンの取得方法</Anchor> |
 
+<div id="the-add-in-app-event-flow" />
+
 ## アプリ内イベントの追加フロー
 
 アプリ開発者がインストールと実装のウィザードを完了すると、AppsFlyer SDKがアプリに正常に実装されます。このフローには、アプリ内イベントのテストが含まれます。原文では、このテストで確認する内容についての記述が不完全です。
@@ -57,6 +63,8 @@ x-zendesk:
 | イベント名とイベントパラメータを選択してください。 | <Anchor target="_blank" href="/marketers/ja/docs/adding-an-app-to-appsflyer#アプリの詳細を入力">利用できる定義済みイベントを確認する</Anchor>各イベントの説明には、一般的なイベントパラメータが記載されています。  <br />また、  <br />[アプリ内イベントジェネレーター](https://evgen.appsflyer.com/)も利用できます。 |
 | アプリ内イベントがAppsFlyerに受信されたことを示す確認通知をSDKで受け取りますか？ | AppsFlyerでイベントが正常に受信されたことを確認するコードについて（<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-android#handling-event-submission-success-and-failure">Android</Anchor>、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-ios#handling-event-submission-success-and-failure">iOS</Anchor>） |
 | AppsFlyerのv2認証トークンは何ですか？（自動テストのフローを使用する場合のみ必須） | <Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens#トークンページを開く">v2トークンの取得方法</Anchor> |
+
+<div id="traits-and-limitations" />
 
 ## 特徴と制限事項
 

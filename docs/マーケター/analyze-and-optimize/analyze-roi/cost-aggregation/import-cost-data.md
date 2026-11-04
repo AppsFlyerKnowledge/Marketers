@@ -33,6 +33,8 @@ x-zendesk:
 
 > **概要：** AppsFlyer ROI360のコストインポートでは、CSVファイルをアップロードまたはメールで送信することで、マーケティングにかかる広告費を漏れなく正確に把握できます。
 
+<div id="overview" />
+
 ## 概要
 
 コストインポートでは、次のことが可能です。
@@ -47,6 +49,8 @@ x-zendesk:
 * アドネットワークは、必要な権限が付与されていれば、顧客の広告費ファイルをインポートできます。
 * 代理店はデータをアップロードできません。代理店がファイルを作成し、広告主に送付してアップロードを依頼することは可能です。
 
+<div id="procedures" />
+
 ## 手順
 
 コストインポートで広告費データをAppsFlyerに送信するには、次の作業を行います。
@@ -58,6 +62,8 @@ x-zendesk:
 
 詳しい手順は、以下の各セクションを参照してください。
 
+<div id="prepare-csv-file-with-cost-data" />
+
 <Accordion title="広告費データを含むCSVファイルの作成">
 
 コストインポート用のCSVファイルは、広告主、アドネットワーク、代理店が作成できます。<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv">サンプルファイルを確認</Anchor>
@@ -67,9 +73,13 @@ x-zendesk:
 * 以下の表に示すスキーマ、形式、ルールに従って作成します。  
   広告費データと併せて、アドネットワークが報告したクリック数とインプレッション数を含めることもできます。**注意**：ExcelまたはGoogleスプレッドシートでファイルを作成する場合は、[ExcelとGoogleスプレッドシートでの書式設定手順](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file)に従ってください。
 
+<div id="csv-schema" />
+
 #### CSVスキーマ
 
 <table><thead><tr><th><p><span>列名 </span></p><p><span>（大文字と小文字を区別）</span></p></th><th><span>形式／補足</span></th><th><span>例</span></th><th><span>必須</span></th></tr></thead><tbody><tr><td><span>date</span></td><td><ul><li><span>広告費が発生した日付</span></li><li> <span>形式：文字列</span><br/><span>推奨形式：</span><ul><li><span>YYYY-MM-DD</span></li><li><span>YYYY/MM/DD</span></li><li><span>MM-DD-YYYY</span></li><li> <span>MM/DD/YYYY </span><br/> </li></ul></li><li>未来の日付は使用できません。</li><li> <strong>推奨事項</strong>：AppsFlyerでアプリに設定したタイムゾーンと同じものを使用してください。</li><li> <strong>注意</strong>：ExcelまたはGoogleスプレッドシートでファイルを作成する場合は、<a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">こちら</a>を参照してください。 </li></ul></td><td><ul><li><span>2019-05-30</span></li><li><span>2019/05/30</span></li><li><span>5-30-2019</span></li><li>5/30/2019</li><li>05-30-2019</li><li>05/30/2019</li></ul></td><td><span>✓</span></td></tr><tr><td><span>app-id</span></td><td><ul><li><span>形式：文字列</span></li><li> <span>AppsFlyerに表示されているアプリID</span>。</li><li>1つのファイルに複数のアプリIDを含めることができます。</li><li>すべてのアプリIDが、同じ広告主アカウントに属している必要があります。</li></ul></td><td><ul><li><span>com.app.name </span></li><li><span>id12356789</span></li></ul></td><td><span>✓</span></td></tr><tr><td><span>media-source</span></td><td><ul><li><span>形式：文字列</span></li><li><span>AppsFlyerに表示されている名前と<strong>完全に一致する</strong>メディアソース名。<strong>注意：</strong>該当する場合は、末尾の_intも含めてください。</span></li><li> <span>1つのファイルに含められるメディアソースは1つのみです。</span><span></span>同じメディアソースであれば、複数のアプリを含めることができます。</li></ul></td><td><span>network_x_int</span></td><td><span>✓</span></td></tr><tr><td><span>campaign</span></td><td><ul><li> <span>形式：文字列</span><span></span> </li><li><span>キャンペーン名。アドネットワークにキャンペーン名が登録されている場合は、それと同じ名前を使用してください（大文字と小文字を区別します）。</span></li><li>複数のアプリで同じキャンペーン名を使用しないでください。</li></ul></td><td>campaign_a</td><td><p><span>✓</span></p><p><span><strong>注意</strong>：アトリビューションデータに名前とIDの両方がある場合、照合させるにはCSVにも両方を含める必要があります。</span></p></td></tr><tr><td><span>spend</span></td><td><ul><li><span>広告費の金額</span></li><li><span>小数点以下5桁まで使用可能</span></li><li><span>0も使用可能</span></li><li> <span><strong>注意</strong>： </span><ul><li>「2,874.12」のような3桁区切りのカンマは使用できません。</li><li>ExcelまたはGoogleスプレッドシートでファイルを作成する場合は、<a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">こちら</a>を参照してください。</li></ul></li></ul></td><td><p><span>2874.12345</span></p></td><td><span><span>✓</span></span></td></tr><tr><td><span>reported-clicks</span></td><td><ul><li><span>形式：整数</span></li><li><span>アドネットワークが報告したクリック数。</span></li><li><span>整数のみ。小数、桁区切りのカンマ、通貨記号、指数表記は使用できません。</span></li><li><span>0以上の値である必要があります。 0も使用できます。</span></li></ul></td><td><span>1200</span></td><td><span>いいえ</span></td></tr><tr><td><span>reported-impressions</span></td><td><ul><li><span>形式：整数</span></li><li><span>アドネットワークが報告したインプレッション数。</span></li><li><span>整数のみ。小数、桁区切りのカンマ、通貨記号、指数表記は使用できません。</span></li><li><span>0以上の値である必要があります。 0も使用できます。</span></li></ul></td><td><span>45000</span></td><td><span>いいえ</span></td></tr><tr><td><span>geo</span></td><td><ul><li><span>形式：文字列</span></li><li> <span></span><a href="https://www.iso.org/iso-3166-country-codes.html"><span>ISO 3166</span></a><span>に準拠した2文字の国コード。<strong>注意</strong>：空白を含まない2文字の値を送信してください。</span> </li><li> <span>英国にはUKを使用してください。</span><span>GBは使用しないでください。</span><br/> </li></ul></td><td><p><span>US, CN, AU</span></p></td><td><span>いいえ</span></td></tr><tr><td><span>currency</span></td><td><ul><li><span>形式：文字列</span></li><li> <a href="https://www.iso.org/iso-4217-currency-codes.html" target="_blank">ISO 4217</a>に準拠した3文字の通貨コード。 <strong>注意</strong>：先頭と末尾に空白を含まない3文字の値を送信してください。</li><li> <span>ファイル内で1つのアプリに使用できる通貨コードは1つのみです。アプリごとに</span><span>異なる通貨コードを使用することは可能です。 </span> </li></ul></td><td><span>USD, GBP, EUR, JPY</span></td><td><p><span>いいえ</span></p><p><span>空欄の場合、デフォルトでUSDになります。</span></p></td></tr><tr><td><span>campaign-id</span></td><td>形式：文字列</td><td>abc1234def</td><td rowspan="5"><p>いいえ</p><p><strong>注意</strong>：アトリビューションデータに名前とIDの両方がある場合、照合させるにはCSVにも両方を含める必要があります。</p></td></tr><tr><td><span>adset</span></td><td>形式：文字列 </td><td>my_adset_1</td></tr><tr><td><span>adset-id</span></td><td>形式：文字列</td><td>id5678ghi</td></tr><tr><td><span>ad</span></td><td>形式：文字列 </td><td>my_ad_name</td></tr><tr><td> <span>ad-</span><span>id</span> </td><td>形式：文字列 </td><td>id91011jkl</td></tr><tr><td><span>site-id</span></td><td><ul><li>形式：文字列 </li><li>広告を表示するパブリッシャーを識別する一意のID。 <a href="./about-link-structure-and-parameters#site-id-parameter" target="_blank">詳細はこちら</a> </li></ul></td><td>id1213mno</td><td>いいえ</td></tr><tr><td><span>channel</span></td><td>形式：文字列 </td><td> video</td><td>いいえ</td></tr><tr><td><span>keywords</span></td><td>形式：文字列</td><td><ul><li>better</li><li>better you app</li><li>better you online</li></ul></td><td>いいえ</td></tr><tr><td><span>agency</span></td><td><ul><li>形式：文字列</li><li>代理店名。 <code>af_prt</code>パラメータの値。</li><li>1つのファイルに含められる代理店は1社のみで、その代理店が運用するキャンペーンのみを含めることができます。</li><li>各行に代理店名が必要です。 agency列に空のセルを含めることはできません。</li><li>代理店は、ファイル内のすべてのアプリに対する権限を持っている必要があります。</li><li>ファイルをアップロードできるのは広告主のみです。代理店はデータをアップロードできません。代理店がファイルを作成し、広告主に送付してアップロードを依頼することは可能です。</li><li>同じ日付の広告費データを再送信する際に、初回の送信では含めていなかった代理店名（<code>af_prt</code>）を追加すると、広告費データが重複します。</li></ul></td><td>AgencyName</td><td>いいえ</td></tr><tr><td colspan="4"><span><strong>注意：</strong>英語以外の文字を含む名前は、UTF-8でエンコードする必要があります。</span></td></tr></tbody></table>
+
+<div id="csv-format-and-rules" />
 
 #### CSVの形式とルール
 
@@ -82,6 +92,8 @@ x-zendesk:
 | 広告の階層 | 広告費はキャンペーン単位で記録する必要があります。広告階層内のその他のディメンションは任意です。<br /><br />下位の階層のデータを一部だけアップロードしても、キャンペーン階層以下のすべてのデータが上書きされます。<br /><br />**例：** 広告セット1のキャンペーン広告費を含むファイルをインポートし、その後、同じキャンペーンの広告セット2を別のファイルでインポートすると、キャンペーンの総費用が置き換わり、広告セット2のデータのみが表示されます。キャンペーンの総費用を反映するには、インポートするファイルに広告セット1と広告セット2の両方を含める必要があります。 |
 
 </Accordion>
+
+<div id="upload-file" />
 
 <Accordion title="ファイルのアップロード">
 
@@ -107,6 +119,8 @@ x-zendesk:
 7. <strong>［別のファイルをインポート］</strong>または<strong>［完了］</strong>をクリックします。
 
 </Accordion>
+
+<div id="email-file" />
 
 <Accordion title="ファイルのメール送信">
 
@@ -137,9 +151,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="dashboard" />
+
 ## ダッシュボード
 
 コストインポートダッシュボードでは、ファイルのアップロードと、過去にアップロードしたファイルの詳細の確認ができます。
+
+<div id="cost-import-dashboard" />
 
 <Accordion title="コストインポートダッシュボード">
 
@@ -159,6 +177,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="matched-rows" />
+
 <Accordion title="一致した行">
 
 行の照合とは、インポートした広告費と、AppsFlyerに記録されたアトリビューションデータを照合する処理です。メディアソース、キャンペーン、広告セット、広告など、利用可能なすべてのディメンションの名前（IDではありません）を使用して照合します。すべて一致した行には、is-matching=TRUEが設定されます。
@@ -173,7 +193,11 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 補足情報
+
+<div id="using-excel-or-google-sheets-to-prepare-csv-file" />
 
 <Accordion title="ExcelまたはGoogleスプレッドシートでのCSVファイルの作成">
 
@@ -182,6 +206,8 @@ ExcelまたはGoogleスプレッドシートでCSVファイルを作成する場
 * 日付セルの書式設定。
 * spendセルの書式設定。
 * 内容の形式の確認。
+
+<div id="format-date-cells" />
 
 #### 日付セルの書式設定
 
@@ -195,6 +221,8 @@ ExcelまたはGoogleスプレッドシートでCSVファイルを作成する場
 4. ［種類］フィールドに**YYYY-MM-DD**と入力します。
 5. <strong>［OK］</strong>をクリックします。  
    日付の書式が設定されます。
+
+<div id="formatting-spend-cells" />
 
 #### spendセルの書式設定
 
@@ -213,6 +241,8 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 5. 任意で、<strong>［小数点以下の桁数］</strong>を設定します。デフォルトは2桁です。最大5桁まで指定できます。
 6. <strong>［OK］</strong>をクリックします。  
    セルの書式が正しく設定されます。
+
+<div id="verify-content-format" />
 
 #### 内容の形式の確認
 
@@ -236,6 +266,8 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 
 </Accordion>
 
+<div id="token-for-email-import" />
+
 <Accordion title="メールインポート用トークン">
 
 メールインポート用トークンは、メールの送信者にコストインポート用ファイルの送信権限があることを確認するために使用します。
@@ -251,6 +283,8 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 広告主とアドネットワークの間でトークンを共有しないでください。
 
 </Accordion>
+
+<div id="cost-import-permissions-for-ad-networks" />
 
 <Accordion title="アドネットワークのコストインポート権限">
 
@@ -269,7 +303,11 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 
 </Accordion>
 
+<div id="troubleshooting-traits-and-limitations" />
+
 ## トラブルシューティング・仕様・制限事項
+
+<div id="error-messages-and-solutions" />
 
 <Accordion title="エラーメッセージと対処方法">
 
@@ -297,6 +335,8 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 <Accordion title="仕様と制限事項">
 
 | 項目 | 補足 |
@@ -317,6 +357,8 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 | アカウントユーザーのアクセス権 | 地域またはメディアソースによるアクセス制限があるユーザーは利用できません。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：概要：ウェブサイトアトリビューションキャンペーンに、利用可能な最適なキャンペーン粒度を割り当てるためのベストプラクティス**
 
+<div id="pba-website-attribution-urls" />
+
 ## PBA：ウェブサイト計測URL
 
 ウェブサイトのアトリビューションデータで最も正確なアトリビューションと組み合わせて、キャンペーンの粒度を最大限に高めるには、URL(リンク)を入力し、この記事で詳しく説明している方法を使用してユーザーをウェブサイトに誘導します。
+
+<div id="url-parametersgroup-and-priority" />
 
 ### URL パラメータ — グループと優先度
 
@@ -34,6 +38,8 @@ AppsFlyerウェブサイトアトリビューションソリューションは�
 * [最も低い優先度] UTM
 
 <Anchor target="_blank" href="/marketers/ja/docs/pba-media-source-attribution-rules">PBAメディアソースのアトリビューションルール</Anchor>は、特定のユーザーの属性を決定します。パラメータークラスは優先度によってランク付けされます。リンク上で複数のパラメータクラスが見つかった場合、優先度が最も高いクラスにアトリビューションが付与されます。
+
+<div id="supported-parameters" />
 
 #### サポートされているパラメーター
 
@@ -50,7 +56,11 @@ AppsFlyerウェブサイトアトリビューションソリューションは�
 | 9 | utm\_medium | メディアタイプ | UTM | Y | media\_type |
 | 10 | utm\_campagin | Campaign | UTM | Y | campaign |
 
+<div id="url-parameter-best-practices" />
+
 ## URLパラメータのベストプラクティス
+
+<div id="selecting-url-parameters" />
 
 ### URLパラメータの選択
 
@@ -64,6 +74,8 @@ AppsFlyerウェブサイトアトリビューションソリューションは�
   * ただし、 *c=* はPIDクラスの一部ですが、pidが含まれていないため、キャンペーンデータを利用できません。
   * この構造体では、AppsFlyer は PIDクラスを使用してメディアソースを識別します。c= などの他の PID パラメーターを含めることができ、utm\_source優先順位が低いため無視されます。
 
+<div id="implement-dynamic-urls-using-ad-network-macros" />
+
 ### アドネットワークのマクロを使用した動的URLの実装
 
 ネットワークマクロ（別名 valuetrackパラメータ）を使用して、テンプレートを作成し、有料キャンペーンにURLパラメータを適用する時間を節約します。
@@ -73,15 +85,23 @@ AppsFlyerウェブサイトアトリビューションソリューションは�
 * Google Adwords
 * Meta ads
 
+<div id="consistent-case-within-parameters" />
+
 ### パラメーター内の一貫した大文字と小文字
 
 パラメーター値では、大文字と小文字が区別されます。たとえば、utm\_source=channel1 と utm\_source=CHANNEL1 は異なるメディアソースと見なされます。そのため、大文字と小文字に関して一貫性があることを確認してください。
+
+<div id="use-google-ads-integration-to-automate-granularity" />
 
 ### Google Adsの連携を使用して粒度を自動化
 
 Google広告キャンペーンの場合は、PBAを Google Adsアカウントと連携することで、キャンペーンの粒度を高めることができます。これにより、URLに PID または UTMパラメーターを必要とせずに、すべてのデータにすべてのキャンペーン階層データが入力されます。
 
+<div id="common-url-parameter-mistakes-to-avoid" />
+
 ## 避けるべき一般的なURLパラメータの間違い
+
+<div id="question-marks" />
 
 ### 疑問符（?）
 
@@ -95,6 +115,8 @@ Google広告キャンペーンの場合は、PBAを Google Adsアカウントと
 `www.website.com??parameters`
 
 `www.website.com?parameter1?parameter2`
+
+<div id="anchor-signs" />
 
 ### アンカーサイン（#）
 

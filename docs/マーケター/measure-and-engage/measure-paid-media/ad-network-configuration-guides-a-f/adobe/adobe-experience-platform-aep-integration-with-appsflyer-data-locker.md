@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** Adobe Experience Platform（AEP）との統合ソリューションを設定して、ローレベルのイベントデータをAdobeデータレイクに送信します。AEPは、顧客ジャーニーをキャプチャする顧客データプラットフォームであるAdobeが提供する、データを集中管理するすべての顧客のためのデータレイヤーであり、分析を行うことができます。
 
+<div id="overview" />
+
 ## 概要
 
 Data Locker—AEPとの連携により、Adobe Experience Platform内でAppsFlyerのデータを使用できます。統合には、リアルタイム顧客データプラットフォーム（RTCDP）に裏打ちされた、すぐに利用可能な（OOTB）コンポーネントが使用されます。AppsFlyerのデータをAdobe Experience Platform（AEP）にアップロードするには、まずData Lockerバケット（GCSとAWS）接続を構成し、次にバケットのデータを既存または新規のデータセットユニットにロードするようにAEPを構成する必要があります。
+
+<div id="setting-up-the-integration" />
 
 ## 連携の設定
 
@@ -59,6 +63,8 @@ Data Locker—AEPとの連携により、Adobe Experience Platform内でAppsFlye
    5. **次へ**をクリックしてください。
    6. 「<strong>スケジュール」</strong>で、頻度を60分に設定します。
    7. 必要なデータロッカーレポートごとに繰り返します。
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** SKANの成果データを、追加情報とともに取得できます。 SKAdNetworkダッシュボードと同様のデータです。インストール日またはポストバック到着日で集計します。
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## SKAN集計パフォーマンスレポートAPI
 
 このAPIは、インストール日またはポストバック到着日を基準に、AppleのSKAdNetworkが報告したアトリビューション指標（実データ）と、その他の情報を返します。レポートの構成は、<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKANダッシュボード</Anchor>に表示されるデータと同様です。 
@@ -37,6 +39,8 @@ x-zendesk:
 2. 認証ヘッダーで使用するAPIトークンを開発者に渡します。
 3. 次のセクションを参照し、API呼び出し時に指定するパラメータを開発者に伝えてください。パラメータでは、レポートの対象、データのまとめ方、対象期間を指定します。
 4. 開発者には、Developer Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">SKAN集計パフォーマンスレポートAPI</Anchor>の手順に従うよう依頼してください。
+
+<div id="parameters" />
 
 #### パラメータ
 
@@ -60,6 +64,8 @@ APIはCSVファイルを返します。
 * 一部の指標（収益、エンゲージメント、コンバージョン）は、SKANの<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">成果計測の設定</Anchor>によって異なります。
 * レポートには、対象期間中にユーザーが実行したアプリ内イベントのみが含まれます。そのため、アプリ内イベントの列の数と順序は、レポートごとに変わる場合があります。データのインポート処理は、列の順序に依存しないように設計してください。
 * 例：[V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv)｜<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### レポートのフィールド
 

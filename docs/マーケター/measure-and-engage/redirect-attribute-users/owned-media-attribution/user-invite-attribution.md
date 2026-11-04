@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## ユーザー招待の計測について
 
 ユーザー招待とは、既存のアプリのユーザーがリンクを共有し、他のユーザー（例えば、その友人）にアプリをダウンロード / 開くように誘導することです。
@@ -45,6 +47,8 @@ x-zendesk:
 
 ユーザーが他のユーザーに共有するユーザー招待リンクは、実際にはアプリに実装されたAppsFlyer SDKによって生成されたOneLinkのカスタムリンクです。OneLinkの設定により、招待を受けたユーザーが正しい場所にリダイレクトされるようにします。正しいアプリストアに、アプリに、またはアプリの特定の画面にディープリンク / ディファードリンクされるようにします。<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">[OneLinkの詳細はこちら]</Anchor>
 
+<div id="flow" />
+
 ### フロー
 
 フローは次のとおりです：
@@ -57,6 +61,8 @@ x-zendesk:
    * アプリをインストールしていない場合、正しいアプリストアに遷移させます。（ユーザーBのアプリ初回起動後に、アプリ内の特定の画面へディファードディープリンクさせることができ、また、ユーザーAは報酬を得ることができます。）
    * アプリ内イベントを実施すると、ユーザーAは報酬を得ることができます。
 
+<div id="viewing-data" />
+
 ## データの確認
 
 ユーザー招待のデータは、AppsFlyerのダッシュボードやレポートから入手できます。AppsFlyerのダッシュボードでは、ユーザー招待のアトリビューションを以下の方法でフィルターすることができます。
@@ -66,6 +72,8 @@ x-zendesk:
 * **キャンペーン：** マーケターが決定した値
 
 レポートでは、メディアソース（ `pid` パラメーター）はSDKにより、デフォルト値の `af_app_invites` で送信されます。
+
+<div id="procedures" />
 
 ## 手順
 
@@ -105,6 +113,8 @@ x-zendesk:
 
 <Accordion title="パラメーター">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### SDKに実装するため開発者に提供されるパラメータ / 値
 
 <table><thead><tr><th>パラメータ / 値</th><th>備考</th><th>開発者が実装すべき値 / ユースケース</th></tr></thead><tbody><tr><td>OneLinkテンプレートID</td><td>すべてのユーザー招待リンクのベースとなる、基本設定と動作が構成されているOneLinkテンプレートのID例：H5hv</td><td> </td></tr><tr><td>チャネル</td><td>チャネル名AppsFlyer管理画面でチャネルごとに計測値をソート・フィルターして表示するのに役立ちます。</td><td> </td></tr><tr><td>キャンペーン</td><td>キャンペーン名AppsFlyer管理画面でキャンペーンごとに計測値をソート・フィルターして表示するのに役立ちます。</td><td> </td></tr><tr><td> <span>is_retargeting=true</span><br/> </td><td>既存ユーザーのCV計測を目的としたキャンペーンの場合に追加します。</td><td> </td></tr><tr><td>deep_link_value</td><td>紹介されたユーザーの端末で、特定の挙動を提供するために使用されるパラメータ。通常、これはユーザーがリダイレクトされる特定のページの名前付けに使用されます。たとえば、アプリがフルーツを販売している場合、ユーザーをリンゴページにディープリンクできます。</td><td> </td></tr><tr><td>deep_link_sub1</td><td rowspan="10">紹介されたユーザーの端末で、特定の挙動を提供するために使用されるパラメータ。deep_link_value は通常、ユーザーをアプリ内の特定の画面に誘導するために使用されるため、このパラメータは他の任意の機能に使用することができます。例：インセンティブやディスカウントを付与 / 紹介したユーザーを計測、など </td><td> </td></tr><tr><td>deep_link_sub2</td><td> </td></tr><tr><td>deep_link_sub3</td><td> </td></tr><tr><td>deep_link_sub4</td><td> </td></tr><tr><td>deep_link_sub5</td><td> </td></tr><tr><td>deep_link_sub6</td><td> </td></tr><tr><td>deep_link_sub7</td><td> </td></tr><tr><td>deep_link_sub8</td><td> </td></tr><tr><td>deep_link_sub9</td><td> </td></tr><tr><td>deep_link_sub10</td><td> </td></tr><tr><td>[オプション] pid</td><td><p>デフォルトでは、生成するリンクには、 値 <code>af_app_invites</code> を持つメディアソース（ <code>pid</code> パラメータ）が含まれます。 </p><p>値を変更するには、開発者は必要な値で呼び出される <code>pid</code> カスタムパラメーターを追加する必要があります。　<strong>注：</strong>Androidの場合、これはSDK V6.4.2以降でのみサポートされています。</p></td><td> </td></tr><tr><td>ブランド名</td><td>ブランドドメイン名。AppsFlyer UIでブランドドメインごとにアトリビューションを並べ替えたり、表示するのに役立ちます。</td><td> </td></tr></tbody></table>
@@ -131,6 +141,8 @@ x-zendesk:
 | キャンペーン | summer\_sale | アトリビューション表示、およびAppsFlyerでデータを確認するため |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

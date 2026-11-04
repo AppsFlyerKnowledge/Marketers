@@ -23,12 +23,16 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるPinterestは、ブロガーやブランドのトラフィックの最大の貢献者の1つです。Pinterestは、クリックベースのモバイルアトリビューションとビュースルーモバイルアトリビューションの両方を提供しています。さらに、Pinterestは、AppsFlyerで計測できるクリックベースのリターゲティングも提供しています。
 
+<div id="note" />
+
 > 📘 **注**
 >
 > * 2021年6月より、PinterestはCPIキャンペーンを実施しなくなりました。その結果、AppsFlyerはインストールポストバックをPinterestに送信しません。
 > * Pinterest広告利用規約に同意した後、 <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">こちら</Anchor>からPinterest Mobile Measurementの利用規約に同意してください。
 > * Pinterestは、インストール後6か月でユーザーレベルのデータを削除するようアトリビューションプロバイダーに要請しています。つまり、これらのユーザーがアプリをインストールしてから6か月後に行われたイベントは、オーガニック経由としてカウントされます。過去の集計データは変わりません。
 > * 2023年9月4日以降、Pinterestはユーザーのプライバシーを保護し、規制遵守を確保するために、<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">ローデータレポートの一部項目の利用可能性を制限</Anchor>することを要求します。
+
+<div id="set-up-pinterest" />
 
 ## Pinterest連携の設定
 
@@ -52,10 +56,14 @@ Pinterestの連携設定画面には、4つのタブが含まれています：�
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 このタブを**初めて開く**場合、連携タブのパラメーター設定を有効にするために**パートナーを有効にする**のトグルをオンにする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーのライセンス認証の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をクリックしてください。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -64,6 +72,8 @@ Pinterestの連携設定画面には、4つのタブが含まれています：�
 **ビュースルー計測の有効化**
 
 Pinterestからのビュースルーインストールを計測する場合は、これをオンにします。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -103,11 +113,17 @@ Pinterestからのビュースルーインストールを計測する場合は�
 
 **計測リンクを作成**するには、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#attribution-link-tab">これらの手順</Anchor>に従ってください。
 
+<div id="attribution-link-for-retargeting-campaign" />
+
 #### リターゲティングキャンペーンの計測リンク
 
 Pinterestでは、リターゲティングキャンペーンに OS固有の計測リンクを使用することをお勧めします。**単一プラットフォームのリンクを使用する** オプションを選択し、必要なパラメータをリターゲティング計測リンクに追加します。
 
+<div id="deep-link-url" />
+
 #### ディープリンクURL
+
+<div id="note-1" />
 
 > 📘 **注**
 >
@@ -124,6 +140,8 @@ Pinterestでは、リターゲティングキャンペーンに OS固有の計�
 
 Pinterestのコストデータ連携を設定した後は、配信中のキャンペーン、広告セット、単一の広告の名前を変更したり、キャンペーン名パラメータで動的マクロを使用したりすると、重大な差異が生じたり、コストデータが欠落したりする可能性があるため、変更しないでください。
 
+<div id="enabling-and-testing-pinterest-integration" />
+
 ### Pinterest連携の有効化とテスト
 
 AppsFlyerはコストの詳細をAPIで取得します。サポートされているディメンション、指標、機能の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">アドネットワークのコスト連携に関する表</Anchor>を参照してください。　**注意**：コストデータの取得にはROI360のご契約が必要です。
@@ -132,9 +150,13 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">これらの連携手順</Anchor>に従ってください。
 
+<div id="cost-data-sync-status" />
+
 ### コストデータ同期ステータス
 
 <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiのステータス">コストAPIのステータス</Anchor>と一致するコストデータを引き出すことができた最後の時刻を、AppsFlyerがコスト（および広告収益）連携ステータス管理画面、または個別のアドネットワーク管理画面のいずれかで確認してください。
+
+<div id="stop-pinterest-cost-sync" />
 
 ### Pinterestのコスト同期を停止する
 
@@ -161,6 +183,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 </Accordion>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## トラブルシューティング
 

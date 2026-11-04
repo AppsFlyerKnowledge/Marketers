@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Lockerでは、お客様が選択・所有するストレージ環境にデータをストリーミングできます。保存先として、バケットまたはデータウェアハウスを利用できます。利用するクラウドサービスに応じて、以下の手順で設定してください。
 
+<div id="bucket-cloud-storage" />
+
 ## バケット型クラウドストレージ
 
 <div id="gcs-storage" />
@@ -151,6 +153,8 @@ Data Lockerは、ストレージにデータをストリーミングするため
 7. **変更を保存**をクリックします。
 8. <Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers#data-lockerのレポート設定">Data Lockerの設定手順</Anchor>を完了します。
 
+<div id="supported-aws-regions" />
+
 #### **サポート対象のAWSリージョン**
 
 Data Lockerでは、以下のAWSリージョンをサポートしています。
@@ -244,6 +248,8 @@ Data Lockerは、ストレージにデータをストリーミングするため
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## データウェアハウス型クラウドストレージ
 
 <div id="bigquery" />
@@ -265,6 +271,8 @@ Data Lockerは、ストレージにデータをストリーミングするため
 1. BigQueryで、新しいProjectを作成するか、既存のProjectを使用します。
 2. Project内で**CREATE DATASET**をクリックします。[![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
 3. Datasetに適切なIDを設定します。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -293,6 +301,8 @@ Data LockerをSnowflakeアカウントに接続できます。接続すると、
 
 以下の手順に従って、SnowflakeをData Lockerに接続してください。
 
+<div id="snowflake-connector-procedures" />
+
 #### **Snowflakeコネクタの設定手順**
 
 **SnowflakeのAccount IDとRegionを確認するには**：
@@ -320,6 +330,8 @@ Data LockerをSnowflakeアカウントに接続できます。接続すると、
 6. Database内に、取り込まれたテーブルが表示されます。テーブル名と構造は、Data Lockerバケット内のものと同等です。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

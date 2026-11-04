@@ -31,9 +31,13 @@ x-zendesk:
 ---
 > **概要：** 概要：複数のAndroidストアで配信しているアプリを計測して、データを単一のアプリ管理画面、またはストアごとのアプリ管理画面で確認しましょう。
 
+<div id="multi-store-android-attribution" />
+
 ## 第三者ストアにおけるAndroidアトリビューション
 
 AppsFlyerはアプリストアに関わらず、アプリを計測します。つまり、Google PlayストアとAmazon、Opera、GetJar、Baidu、Huaweiのような第三者Androidアプリストアが計測対象です（別名：外部ストア、代替Androidアプリストア）。複数ストアでアプリを配信しているアプリ所有者は、全てのストアのデータを一箇所で確認できる**単一の管理画面**か、**ストアごとの管理画面**を選択できます。
+
+<div id="note" />
 
 > 📘 **注**
 >
@@ -42,6 +46,8 @@ AppsFlyerはアプリストアに関わらず、アプリを計測します。�
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
 
+<div id="single-dashboard-vs-dashboard-per-store" />
+
 ### 単一管理画面 vs. ストアごとの管理画面
 
 * 単一管理画面
@@ -49,11 +55,15 @@ AppsFlyerはアプリストアに関わらず、アプリを計測します。�
 
 <table><thead><tr><th> </th><th>単一管理画面<br/>[ベストプラクティス]</th><th> ストアごとの管理画面</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>Androidパッケージ名</td><td colspan="2">選択したオプションに関わらず同じパッケージ名を使用してください。 </td></tr><tr><td><span id="channel-name"></span>チャネル名</td><td>設定するものはありません</td><td><ul><li>AppsFlyer管理画面に<span>Android外部ストアAPK</span>を使用してアプリを追加する際に、チャネルを設定してください。</li><li><span>チャネルはストアを識別します。</span></li><li>Androidパッケージ名とチャネルの組み合わせにより、一意に各AppsFlyer管理画面を識別します。 </li><li>例： </li><li>APKにチャネル設定があるが、この設定のアプリが無い場合、トラフィックはデフォルトのアプリに紐づきます。これは、チャネル設定が無いアプリ、つまりGoogle Play Storeのアプリを指します。 </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>install_app_store の入力</td><td><ul><li>ダウンロードによってアプリを提供するストアを一意に識別します。</li><li>Google Playストアの場合は空白になります。 </li><li>このストア名は <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">manifest/APK</a> で設定されます。</li></ul></td><td>N/A</td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#onelinkテンプレートの作成" target="_blank">OneLinkテンプレート</a></td><td>OneLinkを使用する場合は、この方法をお勧めします。 </td><td>N/A </td></tr><tr><td><span id="measurementattribution-links"></span>計測／アトリビューションリンク </td><td><ul><li>リンクはストアに関わらず同じです。</li><li>正しいストアへリダイレクトするには、<a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">af_r</a> を使用してリダイレクトURLを設定してください。</li></ul></td><td><ul><li>ストアごとに一意のリンクが必要です。</li><li> </li><li>アプリIDはチャネル名にAndroidパッケージ名を追加したものです。例：com.abc.def-def_store.<br/>したがって計測リンクも異なります。</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>install_app_store を持つ使用可能なレポーティングオプション</td><td> </td><td>N/A </td></tr><tr><td><span id="considerations"></span>注意事項</td><td><ul><li>アトリビューションの精度 </li><li><span>オーガニックインストールは、全てのストアからのAPKのオーガニックインストールが1つの管理画面上に反映されます。</span></li><li><span>現在、レポートオプションとストアごとの内訳は、オーバービュー、コホート、ローデータのみで表示されます。</span></li></ul></td><td><ul><li>アトリビューションの精度</li><li> <span></span>オーガニックと非オーガニックインストールおよびアプリ内イベントデータを、ストア（チャネル）ごとに、AppsFlyerの別々のアプリ管理画面で表示します。</li><li><span>全てのストアを一箇所で表示するには、コホートレポートを使用してください。</span></li><li> </li></ul></td></tr></tbody></table>
 
+<div id="set-up-tasks" />
+
 ## 設定に必要なタスク
 
 次のワークフローでは、目的のオプションを設定するために必要なアクティビティを示します。タスクは、マーケティング担当者とディベロッパーのタスクに分かれています。
 
 ストアごとの管理画面オプションは、ストアごとにこのタスクを繰り返してください。
+
+<div id="before-you-begin" />
 
 ### **始める前に**
 
@@ -63,6 +73,8 @@ AppsFlyerはアプリストアに関わらず、アプリを計測します。�
 
 <table><thead><tr><th>パラメータ</th><th>手順</th><th>単一管理画面<br/>[ベストプラクティス]</th><th>ストアごとの管理画面</th></tr></thead><tbody><tr><td>Androidパッケージ名</td><td>全ての管理画面オプションで同じパッケージ名を使用</td><td colspan="2">既にアプリがGoogle Play Storeに存在する場合は、既存のパッケージ名を使用してください。例：comb.abc.def</td></tr><tr><td>チャネル名</td><td>各ストアで一意の値。</td><td>設定しません。空白のままにしてください。 </td><td><p>ストアごとに一意の値。ストア用に準備された個々のAPKの値と、AppsFlyerでアプリを追加するときの値を設定します。 </p><p>Google PlayストアAPKにはチャネルを設定しないでください。 </p></td></tr><tr><td>インストールアプリストア AF_STORE</td><td>一意のストア識別子</td><td>ストアごとに一意の値。manifestを介してAPKで設定します。各ストアは独自のAPKを持っています。</td><td> 設定されません</td></tr></tbody></table>
 
+<div id="tasks" />
+
 ### タスク
 
 | ステップ | 担当者 | 単一管理画面 | ストアごとの管理画面 |
@@ -71,6 +83,8 @@ AppsFlyerはアプリストアに関わらず、アプリを計測します。�
 | 2 | マーケティング担当者 | アクションは必要ありません。前提として、アプリはすでにAppsFlyerでアクティブになっています。 | AppsFlyerに[アプリを追加](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) |
 | 3 | マーケティング担当者 | [計測リンクを準備します。](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | アプリIDとチャネル名を組み合わせた計測リンクを準備してください。 |
 | 4 | ディベロッパーとマーケティング担当者 | [テスト](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [テスト](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## 手順
 
@@ -175,6 +189,8 @@ APK／マニフェストで設定されたAndroidパッケージ名とチャネ�
 
 <Accordion title="テスト—両方の管理画面オプション向け">
 
+<div id="non-organic-installs" />
+
 #### **非オーガニックインストール**
 
 **非オーガニックインストールのテスト方法：**
@@ -194,6 +210,8 @@ APK／マニフェストで設定されたAndroidパッケージ名とチャネ�
 | --- | --- |
 | <ol><li>データエクスポートページのインストールローデータにて、アプリインストールを確認してください。</li><li>test メディアソースに1件のインストールコンバージョンが表示されるはずです。**Install App Store** という名前の列に、manifest.xml ファイル内のものと同じストアの名前が表示されます。</li></ol> | <ol><li>アプリごとの管理画面を開きます。</li><li>データエクスポートページのインストールローデータ、またはアプリのオーバービューページをインストールを確認してください。</li><li>“test” メディアソースにて、1件のインストールコンバージョンが確認できるはずです。</li></ol> |
 
+<div id="organic-installs" />
+
 #### **オーガニックインストール**
 
 **オーガニックインストールのテスト方法：**
@@ -202,6 +220,8 @@ APK／マニフェストで設定されたAndroidパッケージ名とチャネ�
 2. AppsFlyerの計測SDKが実装されたベータ版の最新アプリをインストールし、起動てください。
 3. 結果を確認してください：
 
+<div id="expected-results" />
+
 #### 期待される結果
 
 | 単一管理画面 | ストアごとの管理画面 |
@@ -209,6 +229,8 @@ APK／マニフェストで設定されたAndroidパッケージ名とチャネ�
 | オーバービューページで新しいオーガニックインストール（「Organic」メディアソースの下）を確認してください。現在、単一アプリの方法では、オーガニックインストールの流入元を示す指標はありません。 | <ol><li>テスト対象アプリの管理画面でオーバービューページを開いてください。</li><li>「organic」メディアソースにて、1件のインストールコンバージョンが確認できるはずです。</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## 追加機能
 
@@ -253,11 +275,17 @@ AppsFlyerとリファラ計測を連携しているサードバーティAndroid�
   * このインストール成果は、ユーザーをSamsung Galaxyストアに誘導したアドネットワークに紐づきます。Googleはコントリビュータと見なされます。
 
 
+<div id="troubleshooting" />
+
 ## トラブルシューティング
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### デフォルトアプリへのインストール計測
 
 デフォルトアプリが無い場合は、アプリに関するデータは記録されません。
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

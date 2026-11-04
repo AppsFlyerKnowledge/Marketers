@@ -30,6 +30,8 @@ AppsFlyerの管理画面に<Anchor target="_blank" href="/marketers/ja/docs/addi
 
 ![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## この設定の仕組み
 
 AppsFlyerでは、1日に数回、アプリのリリース状況を自動でチェックしています。
@@ -37,6 +39,8 @@ AppsFlyerでは、1日に数回、アプリのリリース状況を自動でチ�
 AppsFlyerがアプリのステータスを確認した時点でまだストアにアプリが存在していなかった場合、そのアプリは管理画面上では未リリースアプリとして表示されます。アプリが最終的にiTunesやGooglePlayに申請され公開されると、ステータスが自動的にアップデートされ、アプリのロゴ画像はそのアプリのオリジナルのロゴ画像に変更されます。
 
 管理画面上でのアプリのステータスは、データ収集と計測には影響しません。アプリがGooglePlay、もしくはAppStoreに公開されユーザーがアプリをインストールして使用すると、インストールとアプリ内イベントのデータが管理画面上に同じように表示されます。
+
+<div id="refreshing-the-app-status" />
 
 ## アプリステータスの更新
 
@@ -50,6 +54,8 @@ AppsFlyerがアプリのステータスを確認した時点でまだストア�
      
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+
+<div id="store-country" />
 
 ## ストアの国設定
 

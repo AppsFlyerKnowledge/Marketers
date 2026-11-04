@@ -23,13 +23,19 @@ x-zendesk:
 
 <span id="ssot-reports-in-data-locker"></span>注記：SSOT Data Locker レポートには、アクティビティベースのデータではなく、LTVベースのデータが含まれています。つまり、アプリ内アクティビティやイベントアクティビティではなく、すべてのタッチポイントにおけるユーザーの生涯価値がデータに反映されます。
 
+<div id="what-is-data-locker" />
+
 ## Data Lockerとは
 
 Data Lockerは、AWS、GCS、Snowflakeなどの主要なクラウドプラットフォームにデータを直接配信する安全なソリューションです。これにより、マーケティング担当者はデータを社内のBIシステムに簡単に統合して利用し、包括的な分析とレポートを作成できます。<Anchor target="_blank" href="/marketers/ja/docs/data-locker-advertiser-reports?query=data%20locker">詳細はこちら</Anchor>を参照してください。
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## SSOT（Single Source of Truth）とは
 
 SSOT（Single Source of Truth）は、IDマッチングやSKANなどのさまざまな計測手法のデータを重複なく統合することで、アプリキャンペーンのパフォーマンスを統一的かつ正確に把握できるようにする機能です。<Anchor target="_blank" href="/marketers/ja/docs/single-source-of-truth-ssot-guide-for-ios-attribution">詳細はこちら</Anchor>を参照してください。
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Data LockerのSSOTレポートの利点
 
@@ -66,6 +72,8 @@ SSOTまたはSSOTレポートを有効にするには、次のいずれかの手
 | データ更新頻度 | <ul><li>毎日更新されます。</li><li>各指標は、日本時間午前9時（UTC時間 0:00）までのデータを用いて算出されます。言い換えれば、UTC時間ベースでその日の終わりまでのデータです。</li><li>SLA：新しいレポートは、翌日の日本時間午前01:00 (UTC 16:00)までに取得できるようになります。毎日、過去15日分のインストール日に新しいバージョンのレポートが作成されます。[（詳細）](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
 
 </Accordion>
+
+<div id="directory-structure" />
 
 ## ディレクトリの構造
 
@@ -135,6 +143,8 @@ bucket
 * version：　バージョンが作成された日時を示すUnix形式のタイムスタンプです。
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## レポート構成
 
@@ -532,6 +542,8 @@ AppsFlyerは、通常のSKAdNetworkレポートでは提供できないデータ
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## データ分析担当者向けの注意点
 
 **レポート内のデータ範囲について：**
@@ -557,6 +569,8 @@ AppsFlyerは、通常のSKAdNetworkレポートでは提供できないデータ
 <div id="days-postattribution" />
 
 <Accordion title="days_post_attribution項目">
+
+<div id="important" />
 
 > 🚧 **重要！**
 >

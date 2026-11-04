@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** AndroidまたはiOSアプリとAppsFlyerの連携をテストします。
 
+<div id="overview" />
+
 ## 概要
 
 SDKの実装が完了したら、SDKがAppsFlyerサーバーと正常に通信しているか確認できます。マーケターは、次の2つのテスト方法から選べます。
@@ -41,6 +43,8 @@ SDKの実装が完了したら、SDKがAppsFlyerサーバーと正常に通信�
 
 CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参照してください。
 
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 ## 「SDK実装テスト」ページを使ったテスト
 
 <strong>［SDK実装テスト］</strong>ページでは、インストール、広告収益、アプリ内イベントなど、アプリで発生するイベントをリアルタイムで確認できます。非オーガニックインストール、アプリ内イベント、ディープリンク（リターゲティング）のテストを行い、実装上の問題を特定することもできます。イベントのリアルタイム表示ツールは、従来のアプリ内イベントテストツールに代わるものです。
@@ -52,10 +56,14 @@ CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参
 > * **iOS：** IDFAを取得できるよう、ユーザーがApp Tracking Transparency（ATT）でトラッキングを許可していることを確認してください。 ATTに対応していないアプリは、この記事で説明する手順でテストできます。
 > * **Android：** 通常、デバイスID（GAID）は自動的に取得されますが、SDKが取得できているか確認することを推奨します。
 
+<div id="prepare-a-test-device" />
+
 ### **テストデバイスの準備**
 
 1. 対象アプリがインストールされていないデバイス（AndroidまたはiOS）を用意します。必要に応じて、デバイスからアプリをアンインストールしてください。
 2. <Anchor target="_blank" href="/marketers/ja/docs/registering-test-devices">デバイスをテストデバイスとして登録します。</Anchor>
+
+<div id="perform-the-integration-tests" />
 
 ### 実装テストの実行
 
@@ -136,6 +144,8 @@ CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参
 5. <strong>［続行］</strong>をクリックし、画面の案内に従って進めます。
 
 </Accordion>
+
+<div id="testing-using-attribution-links" />
 
 ## アトリビューションリンクを使ったテスト
 
@@ -272,6 +282,8 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 
 </Accordion>
 
+<div id="testing-retargeting-using-attribution-links" />
+
 ## アトリビューションリンクを使ったリターゲティングのテスト
 
 以下では、リターゲティングのアトリビューションをテストする手順を説明します。
@@ -387,6 +399,8 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 
 </Accordion>
 
+<div id="testing-organic-installs" />
+
 ## オーガニックインストールのテスト
 
 最初にオーガニックインストールをテストすることを推奨します。
@@ -399,6 +413,8 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 アプリのダッシュボードに、新しいオーガニックインストールが表示されます。インストールが表示されるまで、最大30分かかります。
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+
+<div id="testing-ctv" />
 
 ## CTVのテスト
 
@@ -415,6 +431,8 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 > 関連記事
 >
 > * アドネットワーク連携のテスト アドネットワーク連携のテスト
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

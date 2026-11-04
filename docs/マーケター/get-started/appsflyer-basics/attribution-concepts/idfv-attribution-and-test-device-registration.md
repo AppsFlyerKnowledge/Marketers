@@ -31,6 +31,8 @@ AppsFlyerでは、IDFVを以下の用途に使用できます。
 * [クロスプロモーションのアトリビューション](/docs/idfv-attribution-and-test-device-registration#クロスプロモーションのアトリビューションでのidfvの利用)
 * [テストデバイスの登録](/docs/idfv-attribution-and-test-device-registration#テストデバイスの登録でのidfvの利用)
 
+<div id="idfv-in-cross-promotion-attribution" />
+
 ## クロスプロモーションのアトリビューションでのIDFVの利用
 
 クロスプロモーションのアトリビューションでは、IDFVを照合に使用できます。この場合、自社が所有するアプリ内でユーザーに広告を表示します。その広告では、同じく自社が所有する別のアプリを宣伝します。
@@ -57,6 +59,8 @@ AppsFlyerでは、IDFVを以下の用途に使用できます。
 
 </Accordion>
 
+<div id="idfv-for-test-device-registration" />
+
 ## テストデバイスの登録でのIDFVの利用
 
 広告主はAppsFlyerの導入時にテストを実施し、アプリがインストールイベントを正しく記録・送信できることを確認します。 IDFVは、AppsFlyerがテストに使用するデバイスを認識するための一意の識別子として機能します。
@@ -76,6 +80,8 @@ AppsFlyerは、同じアプリを複数回インストールできるように�
 テストデバイスはIDFAでも登録できます。ただし、アプリにApp Tracking Transparency（ATT）を実装していない場合や、ユーザーが個人データの共有に同意していない場合、iOSアプリはIDFAにアクセスできません。この場合、IDFVはATTに依存しないため、IDFVを使用してテストデバイスを識別できます。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

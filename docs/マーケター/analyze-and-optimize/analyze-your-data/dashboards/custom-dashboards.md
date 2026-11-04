@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## カスタムダッシュボード
 
 各カスタムダッシュボードは、ユーザー獲得の指標を含む1つ以上のウィジェットで構成されます。ウィジェットウィザードを使用し、指標、表示形式、アプリ等を選択して、ウィジェットを設定します。ウィジェットウィザードを使用し、指標、表示形式、アプリ等を選択して、ウィジェットを設定します。
@@ -32,6 +34,8 @@ x-zendesk:
 利用できる指標はオーバービュー管理画面のユーザー獲得指標と同様です。ご注意ください注記！オーバービューの統合およびリターゲティングとは比較**しないでください**。
 
 カスタムダッシュボードを作成すると、アカウント内のすべてのユーザーがそのダッシュボードを使用できるようになります。
+
+<div id="dashboard-personalization" />
 
 ## ダッシュボードのカスタマイズ
 
@@ -42,6 +46,8 @@ x-zendesk:
 | ウィジェットのサイズ変更 | 右下隅をドラッグしてウィジェットのサイズを変更します |
 | ウィジェットの位置 | ウィジェットを画面上でドラッグ＆ドロップして位置を変更します |
 | アクション | ウィジェットの右上隅をマウスオーバーしてアクションをクリックします。ウィジェットごとに次のアクションが可能です：<ul><li>編集する</li><li>複製</li><li>削除</li><li>CSVファイルを抽出する</li></ul> |
+
+<div id="procedures" />
 
 ## 手順
 
@@ -115,6 +121,8 @@ x-zendesk:
    CSVファイル内の日付の形式は、dd/mm/yyyy です。Excelで mm/dd/yyyy のような<Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">別の形式に変換</Anchor>することもできます。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

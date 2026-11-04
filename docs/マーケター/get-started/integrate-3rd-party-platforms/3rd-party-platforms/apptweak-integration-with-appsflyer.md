@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるAppTweakは、世界のモバイル業界をリードする企業のアプリストアでのユーザー獲得を支援しています。 AppTweakは、アプリやゲームのアプリストアでの見え方を最適化し、ダウンロード数を増やすためのソリューションを提供しています。
 
+<div id="overview" />
+
 ## 概要
 
 この連携では、APIトークンを使用して、集計分析レポートとSKANレポート（iOSアプリの場合）へのアクセス権限をAppTweakに付与できます。<Anchor target="_blank" href="/partners/ja/docs/access-to-aggregated-analytics-tools-for-api-partners">これらの権限の詳細と制限事項</Anchor>を確認してください。
+
+<div id="setting-up-apptweak" />
 
 ## AppTweakの設定
 
@@ -43,6 +47,8 @@ x-zendesk:
      <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. <strong>［APIアクセスを保存］</strong>をクリックします。
 7. アクセス権限を有効にしたことをAppTweakに伝えます。
+
+<div id="note" />
 
 > 📘 **注意**
 >

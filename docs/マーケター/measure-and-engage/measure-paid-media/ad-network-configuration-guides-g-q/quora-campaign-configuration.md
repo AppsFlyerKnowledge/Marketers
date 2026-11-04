@@ -42,6 +42,8 @@ x-zendesk:
 
 連携済みパートナーの設定画面のヘッダーについての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">こちら</Anchor>をクリックしてください。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > * 連携タブでの<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#d-general-settings">一般的な設定</Anchor>の項目は、全てのパートナーにおいて**必須**です。
@@ -50,6 +52,10 @@ x-zendesk:
 <div id="integration-tab" />
 
 <Accordion title="連携タブ">
+
+<div id="note" />
+
+<div id="activate-partner" />
 
 ### パートナーの有効化
 
@@ -92,6 +98,8 @@ Twitterでは、広告収益の連携はサポートしておりません。
 このタブでは、パートナーがアドネットワークの場合、代理店の場合、または両方の場合に、MoPub に付与する権限を選択できます。MoPubのアトリビューションが無効になっている場合でも、権限タブはアクティブであり、MoPub に権限を付与することができます。
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
+
+<div id="ad-network-permissions" />
 
 ### アドネットワークへの権限付与
 

@@ -37,9 +37,13 @@ AppsFlyer SDKはアプリインストールとイベントを記録する機能�
 
 インストール、アップデート、セッション (起動) に加え（以下の必須のステップを実行）、アプリ内イベント（アプリ内購入、ゲームレベルなど）も計測して、ROIやユーザーのエンゲージメントレベルを評価できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > AppsFlyer Windows SDKは、Windows携帯電話、Xbox、PC、HoloLens、Surface hubなど、全ての <Anchor target="_blank" href="https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">Universal Windows Platform</Anchor> (UWP) デバイスと互換性があります。
+
+<div id="1-integration-steps" />
 
 ## 1.連携手順
 
@@ -64,12 +68,16 @@ NuGetパッケージを使用しない場合は、AppsFlyer SDKをアプリに�
 
 [![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > AppsFlyer は、Newtonsoft.json パッケージを使用してください。これは、Windows で Json を解析するための標準ライブラリです。このパッケージは、Visual Studio の NuGetを使用して追加できます。これにより、DLL内のファイルが見つかりません（File Not Found）の例外が解決されます。
 >
 > * Visual Studioにて、References を右クリックし、NuGet Package Newtonsoft.json を選択し追加してください。
 > * アプリの Manifest、または Capabilities タブの Visual Studioでインターネットアクセスを許可してください。
+
+<div id="2-sdk-initialization--installation-event-minimum-requirement-for-attributing" />
 
 ## 2. 3. SDKの初期化＆インストールイベント（計測の最低必須要件）
 
@@ -91,6 +99,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 ```
 
+<div id="recording-app-launchasynchronously" />
+
 ### アプリ起動を非同期で記録する
 
 アプリ起動をオフラインで記録できます。これはネットワークがダウンしているか応答しないときに役立ちます。
@@ -107,6 +117,8 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="3-in-app-event-recording-api-optional" />
+
 ## 3.4. アプリ内イベントの記録API（オプション）
 
 以下のコードを追加して、インストール後のイベントを記録してください。
@@ -119,6 +131,8 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 * *eventValues* はイベントを構成するイベントパラメーターのディクショナリです。推奨するパラメーターの一覧は<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">こちら</Anchor>を参照してください。
 * 収益をアプリ内イベントの一部としてカウントする場合は、InAppEventParameterName.REVENUE (“af\_revenue”) という定数パラメーター名を使用してください。正負を問わず、あらゆる数値を入力できます。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > ```csharp
@@ -129,6 +143,8 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 >       eventValues.Add(AppsFlyerLib.AFInAppEventParameterName.CURRENCY, "USD");
 >       tracker.TrackEvent(AppsFlyerLib.AFInAppEventType.ADD_TO_CART, eventValues);
 > ```
+
+<div id="recording-events-asynchronously" />
 
 ### イベントを非同期で記録する
 
@@ -148,9 +164,13 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 
 AppsFlyerのリッチアプリ内イベントの一覧は、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">こちら</Anchor>を参照してください。
 
+<div id="4-advanced-integration" />
+
 ## 4. 5. 高度な実装
 
 以下のAPIは任意で実装でき、AppsFlyer SDKの高度な実装の一部です。
+
+<div id="41-set-currency-code-optional" />
 
 ### 5.1 通貨コードの設定（オプション）
 
@@ -164,6 +184,8 @@ USD（米ドル）がデフォルトの値です。利用できるISO通貨コ�
 tracker.currencyCode = "GBP";
 ```
 
+<div id="42-getappsflyeruid-optional" />
+
 ### 5.2 getAppsFlyeruid（オプション）
 
 AppsFlyer Unique ID は全ての新しいアプリインストールに対して発行されます。
@@ -174,6 +196,8 @@ AppsFlyer Unique ID は全ての新しいアプリインストールに対して
 public string getAppsFlyerUID()
 ```
 
+<div id="43-customer-user-id-optional" />
+
 ### 5.3 カスタマーユーザーID（CUID）（オプション）
 
 独自のカスタマーIDを設定すると、独自の内部IDをAppsFlyerユーザーIDやその他のデバイスIDと相互参照できるようになります。このIDは、ポストバックAPIとともにAppsFlyerのCSVレポートで確認でき、貴社の内部IDと相互参照することができます。
@@ -183,6 +207,8 @@ public string getAppsFlyerUID()
 ```csharp
 tracker.customerUserId = "YOUR_CUSTOMER_USER_ID";
 ```
+
+<div id="44-getconversiondataasync-optional" />
 
 ### 5.4 GetConversionDataAsync（オプション）
 
@@ -197,6 +223,8 @@ Task.Run(async () =>
 ```
 
 この機能の詳細については、こちらを参照してください。
+
+<div id="45-c--cx-integration-example" />
 
 ### 5.5 C++ / CX 実装の例
 

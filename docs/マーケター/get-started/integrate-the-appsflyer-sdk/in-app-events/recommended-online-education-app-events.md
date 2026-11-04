@@ -24,13 +24,15 @@ x-zendesk:
 > **概要：** 概要：オンライン教育アプリで推奨されるアプリ内イベントを記録して、ユーザージャーニー全体のユーザーの質を測定しましょう。
 
 
-<span id="online-education"></span>オンライン教育アプリはユーザーのリモート学習を可能にします。記録を推奨する典型的なイベントには、登録、チュートリアルとコースの完了、受け取った終了証明書などがあります。
+<span id="-online-education"></span><span id="online-education"></span>オンライン教育アプリはユーザーのリモート学習を可能にします。記録を推奨する典型的なイベントには、登録、チュートリアルとコースの完了、受け取った終了証明書などがあります。
 
 これらのイベントを計測することで、次のような判断に役立ちます。
 
 * ユーザーが最も希望するコースはどれかを知り、ターゲティングのヒントを得ることができます
 * ユーザーをリターゲティングして、コースを修了するための追加のチュートリアルがあることを思い出させることができます
 * 最も需要が高いコースと証明書はどれか
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -42,6 +44,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -139,6 +143,8 @@ x-zendesk:
 | af\_領収書ID | レシートID | 9277 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

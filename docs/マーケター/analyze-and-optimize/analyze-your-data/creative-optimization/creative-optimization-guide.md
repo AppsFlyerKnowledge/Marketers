@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-creative-optimization" />
+
 ## Creative Optimizationについて
 
 **Creative Optimization**は、すべてのキャンペーンで使用するクリエイティブのパフォーマンスを1か所で計測できるツールです。これにより、すべてのメディアチャネルからすべてのクリエイティブアセットを1か所またはBIシステムに簡単に取り込み、複数のキャンペーンやチャネルなどにわたって、選択したディメンションごとにパフォーマンスを分析できます。 Creative Optimizationでは、さまざまな指標やKPIでデータを多角的に分析し、次に制作するクリエイティブの企画・選定・制作に先立って重要なインサイトを得られます。
@@ -48,6 +50,8 @@ Creative Optimizationでは、次のことができます：
 * 期間・チャネル・キャンペーンを横断してクリエイティブの効果低下を把握し、データに基づいて最適化の判断を実施
 * その他多数
 
+<div id="creative-assets" />
+
 ## クリエイティブアセット
 
 本セクションでは、当社で計測しているクリエイティブアセットに関する情報を提供します。
@@ -63,6 +67,8 @@ Creative Optimizationダッシュボードでサポートされるアセット�
 * カルーセル広告（Metaのみ）
 * HTML（プレイアブル含む）
 * テキスト
+
+<div id="notes" />
 
 > 📘 **注意**
 >
@@ -91,6 +97,8 @@ Creative Optimizationには、命名規則やIDに関係なく、複数のチャ
 
 Meta Advantage+（ダイナミッククリエイティブ）、Googleユニバーサルアプリキャンペーン（UAC）は、複数のアセットを持つ広告クリエイティブを含むことができます。ただし、AppsFlyerはデータをアセット単位で直接取得するわけではありません。 Meta広告は**広告レベル**までのデータを提供し、Googleは**広告グループレベル**までのデータしか提供しません。このような広告クリエイティブでは、AppsFlyerはデータモデリングを使用して、パフォーマンスデータを各アセットに配分します。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > Facebookに複数のアセットを持つ広告クリエイティブがあるとしましょう。 Facebookで計測されたインストール数が合計100件で、その内訳が**アセットA**は60件、**アセットB**は40件だったとします。 AppsFlyerでは、広告に50インストール紐づいているとします（AppsFlyerと<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns">SRN</Anchor>の固有のアトリビューションの違いによる）。アセット単位で分析できるよう、AppsFlyerは以下のように、全体に占める各アセットの指標の比率に基づいてパフォーマンスデータ（インプレッション数、クリック数、インストール数、コスト）を配分します。
@@ -109,6 +117,8 @@ Meta Advantage+（ダイナミッククリエイティブ）、Googleユニバ�
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## ダッシュボードの使用方法
 
@@ -276,6 +286,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 
 ファイルのダウンロード：<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>、<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
+<div id="to-set-up-partner-metrics" />
+
 #### **パートナー指標を設定する方法：**
 
 新しい<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-partner-integrations">パートナー連携</Anchor>を追加すると、対応パートナーの指標が自動的にCreative Optimizationへ取り込まれます（**Unity Ads**は**例外で、以下の特別な手順が必要です**）。設定が完了すると、これらの指標は指標の横に「パートナー」と表示されます。
@@ -349,6 +361,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
         ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
      5. **組織ID**をコピーします。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 新しいパートナー連携を設定する際に、パートナー指標の認証情報を入力することをお勧めします。ただし、必須ではありません。連携を保存し、後で認証情報を追加することができます。ただし、取得されるパートナーデータは、パートナー連携の作成時点を基準とする90日分です。パートナー指標の認証情報を入力しないと、データが欠落する可能性がある点に注意してください。
@@ -365,6 +379,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 
 **注意：** ダッシュボードを保存せずに管理画面の設定を変更した場合は、現在のビューの横にオレンジ色のインジケータドットが表示されます。
 
+<div id="save-private-dashboard-view" />
+
 #### **プライベートダッシュボードビューの保存**
 
 **自分だけが閲覧できるプライベートダッシュボードビューを保存するには：**
@@ -373,6 +389,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. ダッシュボード名を入力し、**保存**をクリックします。
 3. メニューアイコンを使用して、ダッシュボードビューを編集および削除したり、共有設定をプライベートから共有に変更したり、ログイン時に表示されるデフォルトのビューとしてスターマークを付けたりすることができます。
+
+<div id="save-shared-dashboard-view" />
 
 #### **共有ダッシュボードビューの保存**
 
@@ -384,6 +402,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
    ビューが保存され、アカウント内のほかのすべてのユーザーのダッシュボードビュー一覧に表示されます。
 3. メニューアイコンを使用して、ダッシュボードビューの編集・削除、共有からプライベートへの切り替え、ログイン時に表示するデフォルトビューとしてのスター設定を行えます。
 
+<div id="share-view-url" />
+
 #### **ビューURLの共有**
 
 **別のアカウントユーザーと共有URLを共有するには：**
@@ -393,6 +413,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
   **注意**：プライベートダッシュボードのビューURLも共有できます。プライベートダッシュボードのURLを開くと、レポート名は「未保存レポート」と表示されます。
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## カスタムタグ
 
@@ -524,6 +546,8 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

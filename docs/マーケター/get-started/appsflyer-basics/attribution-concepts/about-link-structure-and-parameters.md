@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの計測リンクの構造とパラメータを説明します。
 
+<div id="overview" />
+
 ## 概要
 
 計測リンクを使用すると、広告主はユーザーの広告接触に関するデータを収集できます。広告に計測リンクを設定することで、ユーザーが広告に反応した際にAppsFlyerに通知されます。広告接触には、広告のクリックと、広告が表示されるインプレッションがあります。 計測URLのコピーがAppsFlyerに送信されます。
@@ -78,14 +80,20 @@ x-zendesk:
 | URLの構造 | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | 例 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > AppsFlyerが受信する広告接触のトラフィック（クリックとインプレッション）は、HTTPSプロトコルのみに対応しています。
+
+<div id="attribution-link-parameters" />
 
 ## 計測リンクのパラメータ
 
 * 以下のパラメータを計測リンクで使用できます。
 * **フィールドの型**の列の数値は、パラメータ値の文字数上限です。パラメータ値の長さに関する制限は、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary">こちら</Anchor>を参照してください。
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### 計測リンクのパラメータ｜UAとリターゲティング
 
@@ -140,12 +148,16 @@ x-zendesk:
 | <span id="af_og_description"></span>af\_og\_description | N/A | SNSにリンクを投稿した際、Open Graph（OG）説明文の値が説明文のプレビューに使用されます。 | 文字列・300文字 |
 | <span id="af_og_image"></span>af\_og\_image | N/A | SNSにリンクを投稿した際、Open Graph（OG）画像の値が画像のプレビューに使用されます。 |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### 計測リンクのパラメータ｜リターゲティング専用
 
 | パラメータ | ローデータでの表示名 | 説明 | フィールドの型と長さ |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | リターゲティングの有無（キャンペーン） | すべてのリターゲティングキャンペーンのクリックURLに、`&is_retargeting=true`を含める必要があります。  <br />このパラメータがない場合や値が"false"の場合、通常のユーザー獲得キャンペーンとして扱われます。 | 列挙型・5文字 |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | リエンゲージメント期間 | 計測リンクにこのパラメータを追加して、<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide#reengagement-rules-and-windows">リエンゲージメント期間</Anchor>を変更できます。<br /><br />指定可能な期間は以下のとおりです。<ul><li>日数：1～90日、または時間：1～36時間</li><li>Lifetime：リエンゲージメント期間を無期限にします。例：`&af_reengagement_window=lifetime`</li></ul>デフォルト値：30日<br /><br />例：`&af_reengagement_window=30d`を指定すると、リエンゲージメント期間は30日になります。 | N/A |
+
+<div id="viewability-parameters" />
 
 ### ビューアビリティのパラメータ
 
@@ -160,6 +172,8 @@ x-zendesk:
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | デバイスの画面に表示された広告領域の割合の最大値 |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | 秒 | 音声全体の再生時間 |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | 秒 | 音声の聴取時間 |
+
+<div id="android-specific-parameters" />
 
 ### Android専用のパラメータ
 
@@ -182,6 +196,8 @@ x-zendesk:
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | N/A | Amazon Fire広告ID |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Google Consoleのカスタムストア掲載情報 | 文字列 |
 
+<div id="ios-specific-parameters" />
+
 ### iOS専用のパラメータ
 
 | パラメータ | 表示名 | 説明 |
@@ -198,6 +214,8 @@ x-zendesk:
 | <span id="md5_idfv"></span>md5\_idfv | N/A | MD5でハッシュ化したIDFVです。 |
 | <span id="sha1_mac"></span>sha1\_mac | N/A | SHA1でハッシュ化したデバイスのMACアドレスです。アドネットワーク側の対応が必要です。 |
 
+<div id="example" />
+
 > 📄 **例**
 >
 > ```http
@@ -206,6 +224,8 @@ x-zendesk:
 > ```
 
 すべてのパラメータは、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">インストールレポート</Anchor>および<Anchor target="_blank" href="/marketers/ja/docs/analytics-and-aggregate-reporting-apis">分析、レポート、API</Anchor>で確認できます。
+
+<div id="custom-parameters" />
 
 ### カスタムパラメータ
 
@@ -230,11 +250,15 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 各<Anchor target="_blank" href="http://appsflyer.com/partners">連携済みパートナー</Anchor>には、末尾が*{"_int"}* の一意のPIDが割り当てられています。 <Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLinkリンク</Anchor>では、連携済みパートナー用に予約されていない値であれば、PIDを任意に設定できます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > メールやSMSなどのカスタムメディアソースで、予約済みの<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns#srn媒体">SRN</Anchor>名をPIDに使用した計測リンクは、AppsFlyerによってブロックされます。 この制限は、アドバンスSRNには適用**されません**。
 
 主な予約済みのパブリッシャーIDには、organic、googleadwords\_int（Google AdWords）、facebook\_int（Meta広告）、twitter\_int（X広告）などがあります。メール、SMS、伝書鳩などの未連携の流入元には、任意の名前を使用できます。
+
+<div id="avoid-common-pid-issues" />
 
 #### PIDでよくある問題の防止
 
@@ -245,6 +269,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
   * クリックやインストールが、ダッシュボードで***af\_invalid\_param***として表示されます。
   * 計測リンクによるアトリビューションが行われません。
   * クリック時にディープリンクが機能しません。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
@@ -269,6 +295,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 バナー、インタースティシャル、動画などの広告タイプや、アプリ内の掲載位置に関する追加情報には、サブサイトIDパラメータを使用してください。
 
+<div id="example-1" />
+
 > 📄 **例**
 >
 > 以下の計測リンクには、次の情報が含まれます。
@@ -284,6 +312,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > * ABCD＝パブリッシャーが提携するアフィリエイトの流入元（サブパブリッシャー）
 > * 4567＝バナー、インタースティシャル、動画など、アプリ内の広告タイプ・掲載位置
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **よくある質問：インストールが大量にブロックされるのはなぜですか？**
 
 以下の理由で、インストールがブロックされる場合があります。
@@ -295,6 +325,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 インストールのブロックを防ぐため、例に示すとおり、パブリッシャーごとに単一のサイトIDを送信してください。
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## データの詳細度の階層
 
@@ -313,6 +345,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 * `広告セット（af_adset=）`
 * `広告名（af_ad=）`
 
+<div id="example-2" />
+
 > 📄 **例**
 >
 > 以下の計測リンクでは、連携済みメディアソース「network」の「winter」キャンペーンにある「coats」広告セット内の「cashmere」広告を、4階層の情報で記録しています。
@@ -321,6 +355,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="frequently-asked-questions" />
 
 ## よくある質問
 
@@ -371,6 +407,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 
 サブパラメータ（af\_sub1、af\_sub2、…、af\_sub\_5）を使って、必要なKPIを記録できます。これらのパラメータは解析されてローデータレポートに表示されるため、データの集計や絞り込みに便利です。
 
+<div id="example-3" />
+
 > 📄 **例**
 >
 > 配車アプリのLuberでは、青、黄、赤の3色のテンプレートを使ったクリエイティブを配信しています。 Luberのモバイルマーケティング担当者Lindaは、最も多くのインストールにつながる色を検証したいと考えています。そこで、すべての非SRNメディアソースで配信している青い広告の計測リンクに、`&af_sub3=blue`を追加します。黄色と赤の広告にも、同様に対応します。この情報が解析されてローデータレポートに表示されるため、Lindaは色別の広告の成果を分析し、コンバージョン率が最も高い色を選べます。
@@ -385,6 +423,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 * ダッシュボードやレポートに差異が生じる場合があるため、キャンペーン名の先頭や末尾にスペースを含めないでください。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

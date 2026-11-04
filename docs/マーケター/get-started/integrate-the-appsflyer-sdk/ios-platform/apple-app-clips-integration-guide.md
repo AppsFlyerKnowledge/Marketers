@@ -24,6 +24,8 @@ x-zendesk:
 
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 
+<div id="app-clip-integration" />
+
 ## App Clipの連携
 
 * App Clipsは、アプリ本体をダウンロードせずに、iOS 14のユーザーが手軽にアプリの機能を体験できる仕組みです。
@@ -35,11 +37,15 @@ x-zendesk:
     * iOS 13以前またはAndroidの場合は、OneLinkの設定に基づいて、アプリストアなどにリダイレクトされます。
   * アプリ本体をインストールしているユーザーは、OneLinkのUniversal LinkまたはApp Linkの設定に基づいて、アプリ本体に移動します。
 
+<div id="considerations" />
+
 ### 留意事項
 
 * App Clipsのサイズは、最大10 MBです。 AppsFlyer SDKのサイズは、約1.5 MBです。
 * 広告識別子は利用できません。
 * App Clipsは、30日間利用されないと、OSによって自動的に削除されます。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -54,6 +60,8 @@ x-zendesk:
 > * アプリ本体をインストールしておらず、iOS 13以前またはAndroidのデバイスを使用している場合は、コーヒーチェーンのアプリのストアページが開きます。
 >
 > マークは、AppsFlyerのダッシュボードとレポートで、App Clipのクリック数・インストール数と、最終的にアプリ本体をダウンロードしたユーザー数を確認します。
+
+<div id="metrics-and-reporting" />
 
 ## 指標とレポート
 
@@ -74,9 +82,13 @@ x-zendesk:
 * App Clipの利用からアプリ本体のインストールまでにかかった時間。
 * アプリ内コンバージョンの指標を使った、呼び出し元のキャンペーン間の成果比較。
 
+<div id="app-clip-implementation" />
+
 ## App Clipの実装
 
 以下では、App Clipsを開発・実装するために、お客様とiOS開発者が行う作業を説明します。
+
+<div id="scope-of-work" />
 
 #### 作業の範囲
 
@@ -192,6 +204,8 @@ App Clipsの利用方法やアプリ本体との連携を紹介する簡単な�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 仕様と制限事項
 
 <div id="traits-and-limitations::26141033" />
@@ -206,6 +220,8 @@ App Clipsの利用方法やアプリ本体との連携を紹介する簡単な�
 | Protect360 | Protect360はApp Clipsに対応していません。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

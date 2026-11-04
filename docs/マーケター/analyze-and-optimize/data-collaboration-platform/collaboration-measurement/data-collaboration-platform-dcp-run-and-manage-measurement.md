@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** オンサイトまたはオフサイトの計測を設定した後、ライブ計測または過去データ計測として実行できます。目的に応じて、継続的にパフォーマンスを計測するか、特定期間の結果を検証するかに応じてモードを選択します。
 
+<div id="about-the-measurement-run-modes" />
+
 ## 計測の実行モードについて
 
 <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#オンサイトおよびオフサイトでのキャンペーン計測">オンサイトまたはオフサイトの計測設定が完了</Anchor>すると、次に計測の実行方法を選択します。
@@ -29,6 +31,8 @@ x-zendesk:
 
 * **ライブ計測**：定期的に更新される継続的な計測で、新しいデータが追加されるたびにライブダッシュボード上でパフォーマンスをモニタリングできます。
 * **過去データ計測**：特定の期間に対して一度だけ実行される計測で、過去データダッシュボード上で閲覧・分析できます。
+
+<div id="live-vs-historical-measurements" />
 
 ### ライブ計測と過去データ計測の違い
 
@@ -39,6 +43,8 @@ x-zendesk:
 | 対応ソースタイプ | <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">追加</Anchor>および<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">上書き（スナップショット）</Anchor> | <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">追加タイプのカスタムソース</Anchor> |
 | 期間設定 | **開始日と終了日**を選択（利用可能データから） | **開始日のみ選択**（有効化時に過去期間を自動算出し、その後データを蓄積） |
 | 計測数 | 複数可 | 1つのみ |
+
+<div id="choose-the-measurement-you-need" />
 
 ### 必要な計測の選び方
 
@@ -58,6 +64,8 @@ x-zendesk:
 
 **ヒント：** 設定の検証や特定期間の確認から始めたい場合は、まず<strong>過去データ計測を利用してください。</strong>継続的なモニタリングが必要になった段階で、**ライブ計測**に切り替えると便利です。
 
+<div id="run-a-live-measurement" />
+
 ## ライブ計測の実行
 
 **始める前に：** <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#オンサイトおよびオフサイトでのキャンペーン計測">計測設定ページでオンサイトまたはオフサイトの計測キャンペーンを設定してください。</Anchor>
@@ -66,6 +74,8 @@ x-zendesk:
 
    もしも<strong>「今すぐ実行」</strong>が無効になっている場合、計測タスクが未完了の状態です。必要な設定をすべて完了してください。
 2. **実行準備**のダイアログで、**ライブダッシュボード**を選択します。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -76,6 +86,8 @@ x-zendesk:
 4. **計測開始日**を選択します。デフォルトは今日の日付ですが、日付ピッカーから過去の日付を選択することができます。（データソースに存在する日付のみを選択できます。）
 5. <strong>「開始」</strong>をクリックしてライブ計測を開始します。コラボレーション計測ページに遷移します。
 6. 自動バリデーションが完了した後、「**今すぐ実行**」をクリックします。
+
+<div id="run-a-historical-measurement" />
 
 ## 過去データ計測の実行
 
@@ -91,9 +103,13 @@ x-zendesk:
 5. <strong>「開始」</strong>をクリックして、過去データ計測を開始します。コラボレーション計測ページに遷移します。
 6. 自動バリデーションが完了した後、「**今すぐ実行**」をクリックします。
 
+<div id="manage-measurements" />
+
 ## 計測の管理
 
 計測の設定および実行後は、コラボレーション計測ページの計測パネルから管理できます。ライブ計測の一時停止・再開、日付の変更、過去データ計測の再実行、既存設定の複製などが可能です。
+
+<div id="the-collaboration-measurement-page" />
 
 ### コラボレーション計測ページ
 
@@ -102,6 +118,8 @@ x-zendesk:
 <div id="pause-or-restart-live-measurement" />
 
 <Accordion title="ライブ計測の一時停止・再開">
+
+<div id="legend" />
 
 #### 説明
 

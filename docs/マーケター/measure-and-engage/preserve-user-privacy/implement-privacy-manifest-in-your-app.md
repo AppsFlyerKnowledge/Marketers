@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **概要：** WWDC23 で、Apple は新しいプライバシーマニフェストを導入しました。プライバシーマニフェストを使用すると、アプリ開発者はアプリのプライバシー慣行についてより正確な説明を提供できるようになります。AppsFlyer は、AppsFlyer SDK 用のプライバシーマニフェストを作成しました。詳細は以下で説明します。
 
+<div id="background" />
+
 ## 背景
 
 プライバシーマニフェストを使用すると、アプリ開発者は、アプリを通じて個別に収集し、アプリで使用されるサードパーティのSDKなどのサードパーティの依存関係を使用して収集するデータのカテゴリの記録を作成できます。この情報は、アプリ開発者がユーザーに提供するNutrition Labelsなどを通じて、アプリのプライバシー慣行を正確に表現するのに役立ちます。
 
 多くの場合、アプリ開発者は、サードパーティのSDKがどのようなデータを収集しているか、または特定のSDKが何にデータを使用しているかを認識していません。プライバシーマニフェストを使用すると、サードパーティのSDKがこの情報をアプリ開発者に簡単に渡し、正確な情報を作成できるようになります。
 
+<div id="what-are-nutrition-labels" />
+
 ### Privacy Nutrition Lablesとは何ですか？
 
 Nutrition Labels は、アプリのプライバシー慣行に関する情報を読みやすく理解しやすい形式で提供します。エンドユーザーは、アプリがどのようなデータを収集し、どのような目的で収集しているかについて、より透明性を高めることができます。Nutrition Labels の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/preparing-for-the-app-store-review-nutrition-labels">こちら</Anchor>をご覧ください。
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## AppsFlyer プライバシー マニフェストには何が含まれていますか?
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -44,6 +52,8 @@ AppsFlyer SDK 6.14.0 には、AppsFlyer プライバシーマニフェストが�
 * [必須理由 API](#必須理由-api)
 * [トラッキングドメイン](#トラッキングドメイン)
 
+<div id="data-usage" />
+
 ### データ使用状況
 
 Apple は、アプリおよび SDK 開発者に、アプリまたはサードパーティの SDK が収集するデータのカテゴリと理由を記録することを義務付けています。
@@ -51,6 +61,8 @@ Apple は、アプリおよび SDK 開発者に、アプリまたはサードパ
 アプリ開発者は、Xcode を使用して、収集されたデータに関する情報をまとめたプライバシーレポートを作成できます。
 
 以下は、プライバシーマニフェストに含まれる、AppsFlyer SDK によって収集されるデータタイプです。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -60,6 +72,8 @@ Apple は、アプリおよび SDK 開発者に、アプリまたはサードパ
 | --- | --- | --- | --- | --- |
 | デバイス ID (IDFA、IDFV) | NSPrivacyCollectedDataTypeDeviceID | はい | はい | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | 製品のインタラクション（発売） | NSPrivacyCollectedDataTypeProductInteraction | いいえ | いいえ | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### 必須理由 API
 
@@ -125,9 +139,13 @@ Required Reason API の使用方法を明確にするために、アプリ開発
 
 </Accordion>
 
+<div id="tracking-domains" />
+
 ### トラッキングドメイン
 
 アプリまたはサードパーティの SDK で使用されるトラッキングドメインはすべて、プライバシーマニフェストに記録する必要があります。ユーザーが App Tracking Transparency (ATT) フレームワークを通じて許可を付与しない (オプトアウトする) 場合、iOS オペレーティングシステムはそのドメインへのすべての送信トラフィックをブロックします。AppsFlyer SDK は、サーバーリクエストの前にユーザーの ATT ステータスを確認し、ユーザーがオプトインしたかどうかに基づいてリクエストを実行します。
+
+<div id="faq" />
 
 ## よくある質問
 

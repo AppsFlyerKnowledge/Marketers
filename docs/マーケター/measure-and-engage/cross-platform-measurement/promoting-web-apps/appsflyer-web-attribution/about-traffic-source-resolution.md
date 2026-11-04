@@ -26,6 +26,8 @@ x-zendesk:
 
 トラフィックソース判定を利用すると、ランディングページの読み込み時点で取得可能なURLパラメータやリファラーデータをもとに、各Web訪問の流入元メディアソース、キャンペーン、およびチャネルを特定できます。これにより、その後発生するユーザー獲得イベントを含むWebイベントを正確にアトリビューションするために必要な流入元情報を取得できます。
 
+<div id="what-is-traffic-source-resolution" />
+
 ## トラフィックソース判定とは
 
 Webアトリビューションにおいて、ランディングページの読み込み（**Web訪問**）は、ユーザーがWebサイトと最初に接触するタイミングです。AppsFlyerは、その時点で利用可能なURLパラメータやリファラー情報をもとに、ユーザーのメディアソース、キャンペーン、およびチャネルを特定します。
@@ -38,6 +40,8 @@ Webアトリビューションにおいて、ランディングページの読�
 
 正確なURLを構築するためには、トラフィックソース判定の仕組みを理解することが重要です。適切なランディングページURLの作成方法については、<Anchor target="_blank" href="/marketers/ja/docs/choose-attribution-parameters-for-landing-page-urls">Choose attribution parameters for landing page URLs</Anchor> を参照してください。
 
+<div id="the-traffic-source-resolution-flow" />
+
 ## トラフィックソース判定の流れ
 
 トラフィックソース判定は、Web訪問ごとのアトリビューション情報を段階的に構築する、複数ステップからなるプロセスです。各ステップでは、訪問の記録から始まり、流入元の特定、キャンペーン情報の解決、レポート用チャネル分類まで、それぞれ異なる役割を担います。トラフィックソース判定で利用されるデータは、Web SDKまたはWeb S2Sによって取得されます。
@@ -49,11 +53,15 @@ Webアトリビューションにおいて、ランディングページの読�
 3. [キャンペーン判定](#ステップ３キャンペーン情報の判定)：特定されたメディアソースに紐づく詳細なキャンペーン情報を判定し、詳細なパフォーマンス分析を可能にします。
 4. [チャネル分類](#ステップ4チャネル分類)：判定されたメディアソースに基づき、訪問を上位レベルのトラフィックチャネルへ分類します。これにより、レポートや分析において統一された分類軸を利用できます。
 
+<div id="step-1-visit-recording" />
+
 ## ステップ１：サイト訪問の計測
 
 サイト訪問の記録は、Webパフォーマンスの計測フローにおける最初のステップです。この処理はメディアソース判定およびアトリビューション処理より前に実行され、生のユーザーアクティビティを取得する前処理レイヤーとして機能します。
 
 このロジックは2段階で構成されています。まず、**リファラー**（ユーザーがサイトへ訪問する前にいたドメイン）を分類します。次に、リファラーの種類に応じて、ユーザーセッションの状態およびメディアソース情報の有無を評価し、訪問を記録するかどうかを判断します。
+
+<div id="stage-1-referrer-classification" />
 
 #### ステージ１：リファラーの分類
 
@@ -62,6 +70,8 @@ AppsFlyerはリファラーを以下の3種類に分類します：
 * **外部除外リファラー**（例：決済代行サービスや、除外した任意のドメインなど）
 * **内部除外リファラー**（例：独自のサブドメインやログインフローなど）
 * **その他**（上記以外のすべてのリファラー）
+
+<div id="stage-2-session-evaluation-and-visit-recording" />
 
 #### ステージ２：セッション評価と訪問記録
 
@@ -77,6 +87,8 @@ AppsFlyerはリファラーを以下の3種類に分類します：
   * アクティブなセッションが存在し、かつメディアソース情報が存在しない場合、そのセッション内では新しい訪問は記録されません。
 
 <Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+
+<div id="step-2-media-source-resolution" />
 
 ## ステップ２：メディアソースの判定
 
@@ -123,12 +135,16 @@ Webアプリ追加時の除外ドメイン設定については、<Anchor target
 
 URLにPIDが存在しない場合、AppsFlyerは `utm_source` および `utm_medium` を評価してメディアソースを判定します。判定結果は、この2つのパラメータの組み合わせによって決まります。
 
+<div id="how-utm-logic-works" />
+
 #### **UTM判定の仕組み**
 
 * 通常、AppsFlyerは`utm_source`の値をそのままメディアソースとして使用します。
 * `utm_medium` が `email` 、 `mail` 、または `e-mail` の場合、メディアソースは自動的に `e-mail` となります。
 * `utm_medium` が存在し、email以外の値である場合は、以下のマッピングルールと照合されます。
 * `utm_medium` が存在しない場合、またはマッピングルールに一致しない場合は、`utm_source` の値がメディアソースとして使用されます。
+
+<div id="utm-mapping-rules" />
 
 #### **UTMマッピングルール**
 
@@ -181,6 +197,8 @@ AppsFlyerは、以下のクリックIDマッピングを使用してサイト訪
 
 URLにPID、UTMパラメータ、クリックIDのいずれも含まれていない場合、AppsFlyerは`http_referrer`を使用してトラフィックソースを特定します。この処理では、リファラからドメインホストを抽出し、内部マッピングに基づいてメディアソースを判定します。
 
+<div id="the-parsing-mechanism" />
+
 #### **判定の仕組み**
 
 AppsFlyerは、リファラの文字列に対して以下の処理を行います：
@@ -191,6 +209,8 @@ AppsFlyerは、リファラの文字列に対して以下の処理を行いま�
 
 *例：*`www.mywebsite.com?param=example`*のリファラの場合、メディアソースは`mywebsite`*に変換されます。
 
+<div id="referrer-mapping-rules" />
+
 #### **リファラマッピングルール**
 
 | ドメインホストに以下が含まれる場合： | 判定されるメディアソース |
@@ -200,6 +220,8 @@ AppsFlyerは、リファラの文字列に対して以下の処理を行いま�
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
 
+<div id="search-engine-mapping" />
+
 #### **検索エンジンのマッピング**
 
 | ドメインホストに以下が含まれる場合： | 判定されるメディアソース |
@@ -207,6 +229,8 @@ AppsFlyerは、リファラの文字列に対して以下の処理を行いま�
 | `google.` | Google Search |
 | `search.yahoo` | Yahoo Search |
 | `bing.com` | Bing Search |
+
+<div id="android-app-referrers" />
 
 #### **Androidアプリからのリファラ**
 
@@ -221,6 +245,8 @@ AppsFlyerは、リファラの文字列に対して以下の処理を行いま�
 | `org.telegram.messenger` | telegram |
 
 </Accordion>
+
+<div id="step-3-campaign-resolution" />
 
 ## ステップ３：キャンペーン情報の判定
 
@@ -238,15 +264,21 @@ AppsFlyerは、以下のURLパラメータから優先順位に従ってキャ�
 | `af_ad_id` | 広告ID | — |
 | `af_keywords` | キーワード | — |
 
+<div id="step-4-channel-classification" />
+
 ## ステップ4：チャネル分類
 
 AppsFlyerは、メディアソースを特定するだけでなく、各訪問をチャネルへ分類します。この分類により、ローデータレポートやダッシュボードでトラフィックの種類を大まかに把握できます。
+
+<div id="overriding-the-channel-with-af_channel" />
 
 ### af\_channelによるチャネルの上書き
 
 任意のチャネル値を指定するには、ランディングページURLに `af_channel` パラメータを追加します。たとえば、`af_channel=ig` と指定すると、チャネルが `ig` に設定されます。これにより、広告の掲載位置など、標準のカテゴリではカバーできない粒度でトラフィックを分類・分析できます。
 
 `af_channel` が適用されるのは、その訪問についてメディアソースも特定されている場合のみです。訪問がオーガニック（メディアソースが特定されていない）の場合は、`af_channel` の有無にかかわらず、チャネルは常に `Direct` として判定されます。
+
+<div id="default-channel-classification" />
 
 ### デフォルトのチャネル分類
 

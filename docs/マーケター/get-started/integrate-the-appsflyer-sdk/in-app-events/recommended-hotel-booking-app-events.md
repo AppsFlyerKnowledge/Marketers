@@ -34,6 +34,8 @@ x-zendesk:
 
 ホテルの評価、季節、国、子供の数などの設定を、特定のメディアソースから訪れるユーザーに紐づけることができます。そして、それらのユーザー設定をターゲティングすることでキャンペーンを最適化できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -44,6 +46,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -292,6 +296,8 @@ x-zendesk:
 |  | ユーザーの初回予約 | true |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

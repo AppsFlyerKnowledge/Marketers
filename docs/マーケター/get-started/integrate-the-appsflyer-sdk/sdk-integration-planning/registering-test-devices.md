@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **At a glance:** アトリビューションをテストする際は、各インストールが新規インストールとして記録されるよう、テストデバイスを登録してください。テストデバイスを登録すると、インストールが再インストールとして記録されるのを防げます。
 
+<div id="why-register-a-test-device" />
+
 ## テストデバイスを登録する理由
 
 アトリビューションのテストでは、リアトリビューション期間の制限により、90日間に1回しかインストールのアトリビューションが行われません。そのため、同じデバイスでインストールのアトリビューションを繰り返しテストしても、記録されません。デバイスをテストデバイスとして登録すると、そのデバイスで繰り返し行ったインストールが、再インストールとして記録されるのを防げます。
+
+<div id="methods-for-registering-a-test-device" />
 
 ## テストデバイスの登録方法
 
@@ -65,6 +69,8 @@ x-zendesk:
 * **Windows Phone：** Windows広告ID
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## テストデバイスの登録管理
 
@@ -202,6 +208,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## iOSテストデバイスの登録
 
 以下のフローチャートは、iOSテストデバイスを登録する際の選択肢と手順を示しています。
@@ -212,9 +220,13 @@ iOSテストデバイスを登録する際は、次のいずれかを選択し�
 
 <Accordion title="IDFAを使ったテストデバイスの登録">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **IDFAでテストデバイスを登録するのは、どのような場合ですか？**
 
 アプリにApp Tracking Transparency（ATT）が実装されており、トラッキングを許可したユーザーとしてテストする場合は、IDFAで登録できます。テスト対象のアプリを初めて起動する際、ATTの確認画面で必ず<strong>［許可］</strong>を選択してください。
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **IDFAでテストデバイスを登録するには、どうすればよいですか？**
 
@@ -224,12 +236,16 @@ IDFAで登録する場合は、AppsFlyerのデバイスID確認アプリを使�
 
 <Accordion title="IDFVを使ったテストデバイスの登録">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **IDFVでテストデバイスを登録するのは、どのような場合ですか？**
 
 IDFAを取得できない場合は、IDFVを使用する必要があります。次の場合は、**IDFVの使用が必須**です。
 
 * **ATTが実装されている**ものの、トラッキングを許可していないユーザーとしてテストしたい場合。アプリを初めて起動する際、ATTの確認画面で必ず<strong>［許可しない］</strong>を選択してください。
 * **ATTが実装されていない**場合。
+
+<div id="how-to-register-your-device-with-idfv" />
 
 #### **IDFVでデバイスを登録する方法**
 

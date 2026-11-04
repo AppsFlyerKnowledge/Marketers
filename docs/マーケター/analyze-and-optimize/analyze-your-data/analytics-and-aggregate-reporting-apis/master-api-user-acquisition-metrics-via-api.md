@@ -29,6 +29,8 @@ x-zendesk:
 
 > **概要：** 選択された LTV、アクティビティ、リテンション、コホート、および Protect360 キャンペーンのパフォーマンス KPI を API別に、CSVまたは JSON形式で指定します。データ対象のアプリは1つ以上選択可能です。
 
+<div id="master-apiuser-acquisition-metrics-via-api" />
+
 ## Master API — APIによるユーザー獲得メトリック
 
 マスターAPI：
@@ -250,6 +252,8 @@ x-zendesk:
 
    </Accordion>
 
+   <div id="calculated-kpis" />
+
    #### 算出KPI
 
    Master APIレポートでは、上記のKPIに加え、算出KPIを追加することが可能です。これにより、独自の計算レポートをMaster API レポートに含めることができます。
@@ -259,6 +263,8 @@ x-zendesk:
    標準の算術演算子がサポートされています：％2bとしてエンコードされた加算（+）、減算（-）、乗算（*）、％2fとしてエンコードされた除算（/）。
 
    計算式を挿入するKPIは、小目名は**必ず** "calculated\_kpi\_" から始め、そのあとに有用な文字列で続けてください。例："calculated\_kpi\_purchaserate"
+
+   <div id="example" />
 
    > 📄 **例**
    >
@@ -318,6 +324,8 @@ x-zendesk:
    | timezone | 使用されるタイムゾーンは、アプリ設定画面で設定されたタイムゾーンに従います。 | timezone=preferred | いいえ |
 
    </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 集計したSKAdNetworkポストバックをAPI経由で取得できます。データは、ポストバック到着日を基準に集計されます。
 
+<div id="skan-aggregated-postback-arrival-date-api" />
+
 ## SKANポストバック到着日別集計API
 
 このAPIは、指定したポストバック到着日の期間で、SKAdNetworkポストバックを集計して返します。
@@ -38,6 +40,8 @@ x-zendesk:
 2. 認証ヘッダーで使用するAPIトークンを開発者に渡します。
 3. 次のセクションを参照し、API呼び出し時に指定するパラメータを開発者に伝えてください。パラメータでは、レポートの対象、データのまとめ方、対象期間を指定します。
 4. 開発者には、Developer Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-postback-arrival-date-api-get">SKANポストバック到着日別集計API</Anchor>の手順に従うよう依頼してください。
+
+<div id="parameters" />
 
 #### パラメータ
 
@@ -112,6 +116,8 @@ APIはCSVファイルを返します。
 | アカウントユーザーのアクセス | 認証トークンは、管理者ユーザーがダッシュボードで取得できます。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

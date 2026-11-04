@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるSalesforce Marketing Cloud MobilePushは、マーケティング、グロース、エンゲージメントの各チーム向けのユーザーエンゲージメントプラットフォームです。
 
+<div id="overview" />
+
 ## 概要
 
 Salesforce Marketing Cloud MobilePushでは、チャネルを横断した顧客データに基づいて、対象を絞ったプッシュメッセージを作成・送信できます。アプリの利用を促進し、ROIの向上につなげられます。 MobilePushでは、閲覧した商品から各ページの滞在時間まで、アプリ内のユーザー行動を確認できます。 MobilePushとの連携では、次のことができます。
@@ -30,37 +32,55 @@ Salesforce Marketing Cloud MobilePushでは、チャネルを横断した顧客�
 * チャネルを横断したキャンペーンの簡単な作成
 * 配信対象の分類とメッセージ配信のスケジュール設定
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、このパートナーには送信されません。ポストバックの送信設定にかかわらず、この制限が適用されます。
+
+<div id="setting-up-salesforce-marketing-cloud-mobilepush" />
 
 ## Salesforce Marketing Cloud MobilePushの設定
 
 設定の大部分（手順1～4）はSalesforceで行います。手順5はAppsFlyerで行います。
 
+<div id="step-1-set-up-mobilepush-sdk" />
+
 ### 手順1：MobilePush SDKの設定
 
 * <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_get_started.htm&type=5">MobilePush SDKの設定を実装する</Anchor>
+
+<div id="step-2-provision-for-push-notifications" />
 
 ### 手順2：プッシュ通知のプロビジョニング
 
 * <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-provision.html">`.p12`証明書を作成する</Anchor>
 
+<div id="step-3-enable-app-push-notifications" />
+
 ### 手順3：アプリのプッシュ通知を有効にする
 
 * <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-configureforpush.html">プッシュ通知を実装する</Anchor>
+
+<div id="step-4-set-up-app-push-notifications" />
 
 ### 手順4：アプリのプッシュ通知を設定する
 
 * <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_outbound_message.htm&type=5">モバイルデバイス向けのプッシュメッセージを作成・送信する</Anchor>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Salesforce Marketing Cloudでプッシュ通知を作成する際は、AppsFlyerが正しいPIDとキャンペーン属性を使って計測できるように、<Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_custom_keys.htm&type=5">カスタムキー</Anchor>を追加する必要があります。カスタムキーには`AF_xxxxxxxxx`を使用します。
 
+<div id="step-5-set-up-push-notifications-in-appsflyer" />
+
 ### 手順5：AppsFlyerでプッシュ通知を設定する
 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications-ios#addpushnotificationdeeplinkpath-recommended">OneLinkを使用してiOS SDKを設定する（リンク先の手順3）</Anchor>
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

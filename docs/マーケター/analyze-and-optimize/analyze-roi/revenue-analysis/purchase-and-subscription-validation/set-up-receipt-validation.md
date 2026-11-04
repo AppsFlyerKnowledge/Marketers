@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** アプリストアへの照会で購入・サブスクリプションの取引を検証し、正確な収益を計測することで、広告費用対効果（ROAS）を正確に把握できます。
 
+<div id="upgrade-to-new-receipt-validation" />
+
 ## 新しいレシート検証への移行
 
 従来のレシート検証は、**2026年9月7日**に提供を終了します。<Anchor target="_blank" href="/marketers/ja/docs/bulletin-legacy-receipt-validation-is-deprecated">「お知らせ：従来のレシート検証の廃止」</Anchor>を参照してください。アプリで従来のレシート検証を使用している場合は、以下の設定手順に従って新しいレシート検証に移行してください。設定を始める前に、主な変更点を確認し、移行に備えてください。
@@ -67,7 +69,11 @@ x-zendesk:
 
 </Accordion>
 
+<div id="overview" />
+
 ## 概要
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -82,6 +88,8 @@ x-zendesk:
 3. [validateAndLog SDK APIの実装テスト](#手順3-sdkの実装の確認)：iOS・Androidのサンドボックスで購入とサブスクリプションをテストし、レシート検証イベントが生成され、AppsFlyerに正しく記録されることを確認します。
 4. [設定の確認・更新](#手順4設定の確認更新)：製品タイプがレシート検証に設定されていることを確認し、ストアキーとSDK連携の状態を点検します。これにより、収益を継続して正確に計測できます。
 5. [validateAndLog SDK APIを実装したアプリのリリース](#手順5-validateandlog-sdk-apiを実装したアプリのリリース)：`validateAndLog` SDK APIを実装した更新版のアプリをリリースします。サンドボックスのフラグが無効で、必要なアプリ内イベントが検証ルールでブロックされていないことを確認してください。
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## 手順1（iOS）｜App Store Connectのキーの設定
 
@@ -137,6 +145,8 @@ iOSの認証情報を設定するには、次の手順を実行します。
 5. <strong>［保存して次へ］</strong>をクリックします。
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## 手順1（Android）｜サービスアカウントのキーと権限の設定
 
@@ -249,6 +259,8 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
 </Accordion>
 
+<div id="step-2-implement-sdk" />
+
 ## 手順2｜ SDKの実装
 
 この手順では、開発者がSDKの`validateAndLog` APIを実装できるよう準備し、テスト用のサンドボックス環境を設定します。最新の`validateAndLog` APIに対応するSDKの最小バージョンは、Androidが**6.17.5**、iOSが**6.17.8**です。
@@ -265,6 +277,8 @@ validateAndLog SDK APIを実装するには、次の手順を実行します。
 
    このメッセージに、実装からテスト開始までに開発者が必要とする情報がすべて含まれています。
 3. <strong>［次へ］</strong>をクリックします。 <strong>［SDKの実装を確認］</strong>の手順が開きます。
+
+<div id="step-3-verify-sdk-implementation" />
 
 ## 手順3｜ SDKの実装の確認
 
@@ -321,6 +335,8 @@ validateAndLog SDK APIを実装するには、次の手順を実行します。
 
 </Accordion>
 
+<div id="step-4-verify-and-update-settings" />
+
 ## 手順4｜設定の確認・更新
 
 ここまでの設定を保存すると、現在の設定を確認する画面が開きます。この画面で、次の設定を確認・更新できます。
@@ -331,6 +347,8 @@ validateAndLog SDK APIを実装するには、次の手順を実行します。
 
    * **App Storeのキー**の設定
    * **SDK連携**の設定
+
+<div id="step-5-release-the-app-versions-with-the-validateandlog-sdk-api" />
 
 ## 手順5｜ validateAndLog SDK APIを実装したアプリのリリース
 

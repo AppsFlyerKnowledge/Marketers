@@ -21,13 +21,19 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるWinclap Analyticsは、AppsFlyerのアトリビューションデータをBIとポストアトリビューション分析に使用します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 
+<div id="setting-up-winclap" />
+
 ## Winclapの設定
 
 設定は<strong>［有効な連携］</strong>ページで行いますが、まず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations">マーケットプレイス</Anchor>でパートナーを探す必要があります。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -51,10 +57,14 @@ Winclap Analyticsの設定で使用するのは、<strong><em>［連携］</em><
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 <strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention">こちら</Anchor>を参照してください。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -86,6 +96,8 @@ AppsFlyerは、ユーザーのインストールとリエンゲージメント�
 * アプリバージョン
 * アプリ名
 * インストール時刻
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 

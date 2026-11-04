@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **概要：** ログイン、登録、アプリ内購入など、インストール後に発生するアプリ内イベントを記録するための、定義済みイベント名とイベントパラメータの一覧を確認できます。
 
+<div id="overview" />
+
 ## 概要
 
 アプリ内イベントを送信するには、開発者がアプリ内の該当箇所にコードを実装する必要があります。この記事では、定義済みのイベント名とイベントパラメータについて説明します。
 
 記録するイベントやパラメータを決める際は、業種別に<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#recommended-events-by-business-vertical">推奨イベントとその発生の流れを紹介する記事</Anchor>を参照してください。
+
+<div id="predefined-event-names" />
 
 ## 定義済みのイベント名
 
@@ -794,6 +798,8 @@ Roku Adsイベントのマッピング：
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > このイベントをMeta adsのStartTrialイベントに対応付け、収益を紐づける場合は、af\_revenueの代わりにaf\_priceパラメータを使用してください。
@@ -948,13 +954,19 @@ Roku Adsイベントのマッピング：
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > このセクションの定義済みイベント名のほかに、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-in-app-event-mapping#定義済みイベントのマッピング">Meta ads独自のイベント</Anchor>もあります。これらのイベントは属性を含めずに送信されます。
 
+<div id="predefined-event-parameters" />
+
 ## 定義済みのイベントパラメータ
 
 以下では、定義済みイベントパラメータを一覧で示します。各イベントパラメータには、Meta ads、Google Ads、Snap、X Ads、Criteo側のパラメータとの対応付けを記載しています。任意のイベントパラメータをイベントに追加できます。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -1374,6 +1386,8 @@ Roku Adsイベントのマッピング：
 
 **注意：** このパラメータには定義済みのSDK定数がないため、キーをaf\_net\_revenueとするカスタムパラメータとして送信してください。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-roi360-store-revenue">ROI360のストア収益</Anchor>を有効にしたアプリでは、AppsFlyerが記録するアプリ内購入とサブスクリプションのイベントに、af\_net\_revenueが自動で設定されます。総収益からアプリストアの手数料と税金を差し引いた金額です（純収益＝総収益－ストア手数料－税金）。
@@ -1717,6 +1731,8 @@ Roku Adsイベントのマッピング：
 
 **説明**：購入の合計金額。 af\_revenueで送信した金額は、AppsFlyerプラットフォームで収益として計上されます。キャンセルや返金による<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#revenue-events">マイナスの収益</Anchor>も計上します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > 収益値に桁区切りのカンマ、通貨、特殊文字、テキストを含めないでください。たとえば、収益値は1234.56のように指定します。 AppsFlyerは、収益値を小数点以下最大5桁の精度で提供します。
@@ -1955,6 +1971,8 @@ Roku Adsイベントのマッピング：
 * af\_tutorial\_id
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

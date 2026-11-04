@@ -120,6 +120,8 @@ Interoperation is achieved via settings in the AppsFlyer and Snapchat dashboards
 
            Verify that the in-app events **SDK event names** you set in SKAN measurement are mapped to **Partner event identifiers,** meaning Snapchat event names. You must map the currently-selected SKAN measurement type events or the events in your <Anchor target="_blank" href="/marketers/ja/docs/skan-cv-decode-map-your-cv-to-events">Custom conversion map</Anchor>. **Note**! The default measurement type is revenue.
 
+           <div id="inapp-event-mapping-guide" />
+
            #### In-app event mapping guide
 
         | Measurement type | Mapping requirement |

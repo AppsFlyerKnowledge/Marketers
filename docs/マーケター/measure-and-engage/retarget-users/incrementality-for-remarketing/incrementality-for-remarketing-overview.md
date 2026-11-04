@@ -27,6 +27,8 @@ x-zendesk:
 
 > **概要：** インクリメンタリティ機能で、リターゲティングキャンペーンによって生成された純増リフトを計測する方法を理解しましょう。
 
+<div id="what-is-incrementality" />
+
 ## 「インクリメンタリティ」とは？
 
 インクリメンタリティ（純増）を理解するには、例を挙げるのが分かりやすいでしょう。
@@ -43,11 +45,15 @@ x-zendesk:
 
 このコンバージョン総数と、キャンペーンの有無に関わらず発生したであろうコンバージョン数との差は、**純増（インクリメンタル）リフト**（あるいは単に**リフト**）と呼ばれ、キャンペーンの真の価値を判断する上で重要なものとなります。それを測定するのは非常に難しいことですが、AppsFlyerのIncrementalityソリューションはまさにそれを目的としています。
 
+<div id="incrementality-experiments" />
+
 ### インクリメンタリティテスト
 
 インクリメンタリティは、似たようなグループの行動を比較するための科学的に有効な検証を可能にすることで、純増リフトを測定するという課題を克服します。これらのグループの違いは、あるグループ（**テストグループ**）はキャンペーンと接触し、またあるグループ（**コントロールグループ**）はキャンペーンと接触していないという点だけです。
 
 <Anchor target="_blank" href="/marketers/ja/docs/run-an-incrementality-for-remarketing-experiment">インクリメンタリティ用のテストの作成と実行についての詳細はこちら</Anchor>
+
+<div id="calculation-methodology" />
 
 ## 計算方法
 
@@ -64,9 +70,13 @@ AppsFlyerのインクリメンタリティでは、リフトを算出するた�
 
 キャンペーンのパフォーマンスを評価する目的では、実際にユーザーが広告に接触したかどうかの<strong>「リーチベース」の手法が望ましい</strong>のですが、その計算には、すべてのアドネットワークが提供しているわけではないデータポイントを測定する必要があります。 それらのネットワークについては、代わりにintent-to-treat（ITT解析）の手法が用いられます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 2021年12月16日以前は、intent-to-treat（ITT解析）法のみで純増を算出していました。 ただし、それ以前のデータについても、リーチベースのリフトを使用するように更新されています。 そのため、過去のテストを見直して、新しいメソッドで照らし合わせて結果を分析することができます。
+
+<div id="itt-based-lift" />
 
 #### ITTベースのリフト
 
@@ -83,6 +93,8 @@ ITTは、AppsFlyerの文脈ではリフトを測定するための好ましい�
 **結果の解釈**
 
 テストグループのメンバー全員が実際にキャンペーンに接触したという前提があるため、コンバージョン率が低くなり、その結果、リフト量も少なくなることがよくあります。
+
+<div id="reach-based-lift" />
 
 #### リーチベースのリフト
 
@@ -102,6 +114,8 @@ AppsFlyerのIncrementalityでは、非SRN媒体（計測リンク使用媒体）
 **結果の解釈**
 
 リーチベースのリフト計算は、キャンペーンによって実際にリーチしたテストグループのメンバーのみを考慮するため、リーチベースの純増によって測定されたネットワークは通常、結果が増幅されます（ポジティブリフトはより高くなり、ネガティブリフトはより低くなります）。
+
+<div id="best-practices" />
 
 #### ベストプラクティス
 
@@ -134,6 +148,8 @@ Incrementalityダッシュボードでは、各メディアソースにおいて
 
 [テストグループレベルの指標](/docs/incrementality-for-remarketing-overview#::2c5f08ec)（[ユーザー単位の指標](/docs/incrementality-for-remarketing-overview#::6143ff4f)とは対照的）については、**スケールコントロールグループ**に基づいてリフトが計算されます。 [つまり、各メディアソースのコントロールグループの大きさに合わせて、コントロールグループの大きさを調整します。](/docs/incrementality-for-remarketing-overview#::2c5f08ec)
 
+<div id="example" />
+
 > 📄 **例**
 >
 > 次のようなシナリオを想定してください：
@@ -151,6 +167,8 @@ Incrementalityダッシュボードでは、各メディアソースにおいて
 > リフトは、コントロールグループの規模を100名、コンバージョンの増加を22名として計算します。
 
 </Accordion>
+
+<div id="incrementality-dashboard" />
 
 ## Incrementality管理画面
 
@@ -362,6 +380,8 @@ Incrementalityダッシュボードでは、各メディアソースにおいて
 
 </Accordion>
 
+<div id="raw-data-reports" />
+
 ## ローデータレポート
 
 Incrementalityローデータレポートを使用して、ユーザーのリマーケティングキャンペーンとのインタラクションを分析しましょう。
@@ -405,6 +425,8 @@ Incrementalityローデータレポートを使用して、ユーザーのリマ
 
 使用できる項目は、次に示すように、レポートの種類によって異なります：
 
+<div id="fields-unique-to-incrementality-per-report-type" />
+
 #### Incrementality固有のデータ項目（レポートタイプ別）
 
 | 項目 | 説明 | First seen | In-app events | Sessions | Uninstalls |
@@ -418,11 +440,15 @@ Incrementalityローデータレポートを使用して、ユーザーのリマ
 | <span id="timestamp"></span>timestamp | イベントのタイムスタンプ YYYY-MM-DD HH:MM |  | Y | Y |  |
 | <span id="app_ids"></span>app\_ids | オーディエンスルールに関連するアプリID | Y |  |  |  |
 
+<div id="other-incrementality-report-fields-per-report-type" />
+
 #### その他のIncrementalityレポート項目（レポートタイプごと）
 
 <table><thead><tr><th>項目</th><th>表示名\*</th><th>First seen</th><th>In-app events</th><th>Sessions</th><th>Uninstalls</th></tr></thead><tbody><tr><td><span id="advertising_id"></span>advertising_id</td><td>Advertising ID (GAID)</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="android_id"></span>android_id</td><td>Android ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="app_id"></span>app_id</td><td>App ID</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="app_name"></span>app_name</td><td>App name</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="app_version"></span>app_version</td><td>App version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="appsflyer_id"></span>appsflyer_id</td><td>Appsflyer ID</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="revenue_alt"></span>revenue_alt</td><td>App-specific currency</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="bundle_id"></span>bundle_id</td><td>Bundle ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="country"></span>country</td><td>Country code</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="currency"></span>currency</td><td>Currency code</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="customer_user_id"></span>customer_user_id</td><td>Customer user ID</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="brand"></span>brand</td><td>Device brand</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_category"></span>device_category</td><td>Device category</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="model"></span>model</td><td>Device model</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_model"></span>device_model</td><td>Device model</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_type"></span>device_type</td><td>Device type</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="event_name"></span>event_name</td><td>Event name</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="event_revenue"></span>event_revenue</td><td>Event revenue</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_currency"></span>event_revenue_currency</td><td>Event revenue currency</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_u_s_d"></span>event_revenue_u_s_d</td><td>Event revenue USD</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_time"></span>event_time</td><td>Event time</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="event_value"></span>event_value</td><td>Event value</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="idfa"></span>idfa</td><td>IDFA</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="idfv"></span>idfv</td><td>IDFV</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="imei"></span>imei</td><td>IMEI</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="is_purchase_validated"></span>is_purchase_validated</td><td>Is receipt validated</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="os_version"></span>os_version</td><td>OS version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="platform"></span>platform</td><td>Platform</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="sdk_version"></span>sdk_version</td><td>SDK version</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td colspan="6"><span id="-according-to-raw-data-specification"></span>\* <a href="./raw-data-field-dictionary#data-fields-dictionary" target="_blank">ローデータの仕様に基づく</a> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="incrementality-specifications-and-limitations" />
 
 ## Incrementalityの仕様と制限
 
@@ -439,6 +465,8 @@ Incrementalityローデータレポートを使用して、ユーザーのリマ
 | オーガニックデータ | はい |
 | S2Sイベント | Incrementalityで計測されるには、<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile#サーバー間イベントapi-for-モバイル">S2Sイベント</Anchor>のペイロードに広告IDが含まれている必要があります（iOSの場合はIDFA、Android の場合はGAID）。 |
 | タイムゾーン | UTC |
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

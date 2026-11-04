@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## 管理画面の原則
 
 管理画面には、SKANキャンペーンのパフォーマンスデータが含まれており、以下の原則に基づいています。
@@ -40,6 +42,8 @@ x-zendesk:
   * 特定の日に受信したポストバックは、UTCで一日の終わりに処理されます。データは、翌日の08:00 UTCまでに入手可能です。つまり、月曜日に受信したポストバックは日本時間で火曜日の夕方17時にダッシュボードで利用できることを意味します。
   * <Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">管理画面の更新時間</Anchor>を参照してください。
 
+<div id="skan-dashboard-view-options" />
+
 ## SKAN管理画面の表示オプション
 
 データは、[インストール日またはポストバック到着日](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options)のいずれかを用いて表示されます。
@@ -47,6 +51,8 @@ x-zendesk:
 フィルタにて、表示の方法オプションを選択してください。
 
 追加のフィルタと表示オプションについては、次のセクションで説明しています。
+
+<div id="dashboard-use" />
 
 ## 管理画面の使用
 
@@ -281,6 +287,8 @@ SKANの指標は、AppsFlyer計測モデルを使用して利用できる指標�
 * SDKアプリに実装されたAppsFlyer SDK
 * ルール<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model">AppsFlyerの計測モデル</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### 計測フレームワークの違い
 
 | コンセプト | SKAN | AppsFlyer |
@@ -294,6 +302,8 @@ SKANの指標は、AppsFlyer計測モデルを使用して利用できる指標�
 | インストールのレポート手段： | <ul><li>SKANSKAN: 非オーガニックインストールと非オーガニック再ダウンロードに限定されます。</li><li>**SDK**:SDK: 全てのインストールがレポートされます。指標のために、初回インストールのみが計測されます。つまり、リアトリビューションは無視されます。</li></ul> | SDKは、ルールを使用して全てのインストールを、初回インストールとリターゲティングインストール（リアトリビューション）に分類します。 |
 | 広告の粒度レベル | キャンペーン、広告セット、広告セットID、広告、広告ID。 | 全階層フル階層：キャンペーン、キャンペーンID、広告セット、広告、チャネル、パートナー等の追加パラメーター。 |
 | 再ダウンロード vs. リインストール | 再ダウンロードは、あるApple IDユーザーのアクションに関連するものです。リアトリビューションとは同一のものではありません。 | リターゲティング（リエンゲージメント、リアトリビューション）はリターゲティング管理画面に反映されます。再ダウンロードと同じではありません。 |
+
+<div id="metric-differences" />
 
 #### 指標の違い
 
@@ -335,6 +345,8 @@ SKANの指標は、AppsFlyer計測モデルを使用して利用できる指標�
 |  | <ul><li>Google</li><li>メタ</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

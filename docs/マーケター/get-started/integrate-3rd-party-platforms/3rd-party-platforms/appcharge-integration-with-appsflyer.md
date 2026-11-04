@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるAppchargeは、従来のアプリストアを介さない決済処理を専門とする、ゲーム向けコマース技術のプロバイダーです。 AppsFlyerとの連携により、AppchargeからWebストアの購入・返金データをAppsFlyerに自動送信でき、広告費用対効果（ROAS）と顧客生涯価値（LTV）をより包括的に把握できます。
 
+<div id="about-appcharge" />
+
 ## Appchargeについて
 
 AppsFlyerの連携済みパートナーである<Anchor target="_blank" href="https://appcharge.com/">Appcharge</Anchor>は、モバイルゲームパブリッシャー向けのD2C（消費者への直接販売）プラットフォームです。この連携により、従来のアプリストア以外の重要な収益源であるWebストアでの購入状況を把握できます。購入・返金データをAppsFlyerに直接送信することで、純収益に基づく広告費用対効果（ROAS）を正確に算出し、キャンペーンの成果とプレイヤーの顧客生涯価値（LTV）をより詳しく分析できます。
@@ -33,6 +35,8 @@ Appchargeとの連携では、次のことができます。
 * モバイルキャンペーンのデータとの整合性を保つ
 
 このガイドでは、Appchargeとの連携を設定する手順を説明します。
+
+<div id="set-up-the-integration" />
 
 ## 連携の設定
 
@@ -57,6 +61,8 @@ AppsFlyerで、［**連携＞パートナー連携＞有効な連携**］タブ�
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 #### パートナーを有効化
 
 初回の設定時は、［**パートナーを有効化**］をオンにして、連携を設定できるようにします。 Appchargeと連携している間は、オンにしておく必要があります。 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
@@ -64,6 +70,8 @@ AppsFlyerで、［**連携＞パートナー連携＞有効な連携**］タブ�
 #### Advanced Privacy
 
 iOSアプリでは、［<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">Advanced Privacy</Anchor>］のトグルが表示されます。オンにすると、パートナーとのユーザー識別子の共有が制限されます。アプリ設定で［<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor>］がオンの場合、［**Advanced Privacy（iOS 14.5以降）**］はデフォルトでオンになり、変更できなくなります。
+
+<div id="default-postbacks" />
 
 #### デフォルトポストバック
 
@@ -74,6 +82,8 @@ AppsFlyerは、ユーザーのインストール後にAppchargeへデフォル�
 * **オーガニックを含むすべてのメディアソース：** すべてのパートナーの成果として計測されたイベントと、オーガニックのイベントのインストールポストバックを送信します。
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -119,6 +129,8 @@ Appchargeとの連携では、広告収益データには対応していませ�
 Appchargeでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="identify-appcharge-events-in-appsflyer" />
 
 ## AppsFlyerでAppchargeのイベントを識別する
 

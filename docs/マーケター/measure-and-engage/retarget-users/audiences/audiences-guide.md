@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
+<div id="audiences-basics" />
+
 ## Audienesの基本仕様
 
 AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に作成し、オウンドチャネルや有料チャネルに連携することができます。また、キャンペーンが送信されると、Audiencesでパフォーマンス指標を見ることができます。
@@ -41,9 +43,13 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 オーディエンスデータをメディアパートナーにアップロードするために必要なすべての情報は、パートナー連携画面で指定されています。一つのメディアパートナーに対して複数の接続を行うことができます（異なるアカウント、ログイン情報などを使用）。iOS 14.5以降のプライバシー要件やその他のユーザープライバシー規定に準拠できるように、Audiencesでは**どの識別子をパートナーと共有するか**を、アカウントレベルとパートナー設定ごとの両方で設定することができます。
 
+<div id="audience-split-and-incrementality-testing" />
+
 ### オーディエンス分割とインクリメンタリティのテスト
 
 <Anchor target="_blank" href="/marketers/ja/docs/incrementality-for-remarketing-overview">インクリメンタリティ</Anchor>テストは、増分リフト、つまりマーケティングキャンペーンの結果発生したコンバージョン数とキャンペーン無しでも発生したであろうコンバージョン数の差を正確に測定するA/Bテストによって、キャンペーンの真の効果を計測します。AppsFlyerのAudiencesは、選択したメディアパートナーとコントロールグループの間でオーディエンスを分割するオプション機能を使用してテストの段階を設定するため、Incrementality管理画面を使用してキャンペーンの真の価値を理解できます。
+
+<div id="get-started" />
 
 ## まずはじめに
 
@@ -57,6 +63,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 | 4 | オーディエンスを一つまたは複数のメディアパートナーに連携してください |
 | オプション | [パートナーとコントロールグループ間でオーディエンスを分割してください](/docs/audiences-guide#audience-split-and-control-groups) |
 | オプション | <Anchor target="_blank" href="/marketers/ja/docs/audiences-create-better-audiences-with-user-attribute-data">ユーザー属性をインポートしてください</Anchor> |
+
+<div id="create-and-manage-audiences" />
 
 ## オーディエンスの作成と管理
 
@@ -109,6 +117,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 * 購入の促進
 * 購入者の収益化
 * その他多数…
+
+<div id="example-use-case" />
 
 > 📄 **活用事例**
 >
@@ -186,6 +196,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
     * CUIDを識別子としてオーディエンスを構築する場合、関連するデバイスとの完全な関連付けとデバイス識別子(GAID、IDFAなど)によるエンリッチメントを成功させるために、インストール時に(インストール後のイベントだけでなく) CUIDの関連付けをAppsFlyerが受信する必要があります。<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid#cuidの設定">詳細はこちら</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+
+<div id="example-device-id-vs-cuid" />
 
 > 📄 **例：デバイスID vs.CUID**
 >
@@ -337,6 +349,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 </Accordion>
 
+<div id="all-about-rulesets" />
+
 ## ルールセットについて
 
 ルールセットを使用してオーディエンスを定義する方法について説明します。
@@ -362,11 +376,15 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 <Accordion title="ルールセットの例">
 
+<div id="example-location-based-rule" />
+
 > 📄 **例：ロケーションに基づくルール**
 >
 > 先月アプリをアンインストールしたニューヨークのユーザー
 >
 > ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966552209)
+
+<div id="example-user-attributes-based-rule" />
 
 > 📄 **例：ユーザー属性に基づくルール**
 >
@@ -374,11 +392,15 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966566801)
 
+<div id="example-revenue" />
+
 > 📄 **例：収益**
 >
 > 過去7日間にアプリをインストールし、$1を課金したユーザー
 >
 > ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/30258966567825)
+
+<div id="example-owned-media-filter" />
 
 > 📄 **例：オウンドメディアフィルター**
 >
@@ -389,6 +411,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 > ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/30258966580753)
 >
 > オーディエンスは、オウンドメディアまたは有料メディアでパーソナライズされたメッセージでこれらのユーザーをリエンゲージするために、またはキャンペーンの実行時に無関係または不要な広告が表示されないようにするための除外リストとして使用できます。
+
+<div id="example-remarketing" />
 
 > 📄 **例：リマーケティング**
 >
@@ -438,6 +462,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 * インポートされたオーディエンスは含めることができません。
 
 </Accordion>
+
+<div id="create-and-manage-partner-connections" />
 
 ## パートナー連携の作成と管理
 
@@ -489,6 +515,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 </Accordion>
 
+<div id="dashboard-and-metrics" />
+
 ## 管理画面と指標
 
 このセクションでは、管理画面に表示される機能とキャンペーン指標について説明します。
@@ -517,6 +545,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 #### metrics hash
 
+<div id="campaign-metrics-basics" />
+
 #### キャンペーン指標の基本
 
 オーディエンス管理画面の **キャンペーン指標** セクションには、ターゲティングにオーディエンスを使用したキャンペーンのデータが表示されます（包含、除外、または類似オーディエンスの基礎として使用したかどうかに関わらず）。
@@ -535,6 +565,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 1. オーディエンス管理画面の上部にある**エクスポート**ボタンをクリックしてください。
 2. ファイルが生成されたら、自動的にダウンロードされます。
 
+<div id="summary-view" />
+
 #### サマリー表示
 
 最初に**キャンペーン指標**が表示される際には、各オーディエンスのキャンペーンデータのサマリーが表示されます。
@@ -546,6 +578,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 | <span id="campaigns"></span>キャンペーン | 選択された期間中にターゲットとしてオーディエンスを使用したキャンペーンの総数（対応しているパートナーと実施したキャンペーンのみ） |
 | <span id="campaign-cost"></span>キャンペーンコスト | 選択された期間中にこれらのキャンペーンに要した総費用 |
 | <span id="campaign-revenue"></span>キャンペーン収益 | 選択された期間中にこれらのキャンペーンに起因する総収益 |
+
+<div id="detailed-view" />
 
 #### 詳細表示
 
@@ -567,6 +601,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 | <span id="cost"></span>コスト | 選択された期間中のキャンペーン費用（合計、および対応しているパートナーとキャンペーンごとの内訳） |
 | <span id="revenue"></span>収益 | 選択された期間中のキャンペーンに起因する収益（合計、および対応しているパートナーとキャンペーンごとの内訳） |
 | <span id="daily-reach"></span>日次リーチ | 選択された期間中にキャンペーンの広告を見た1日あたりの平均ユニークユーザー数（パートナーからの報告にもとづく） |
+
+<div id="data-sources-and-availability" />
 
 #### データソースと可用性
 
@@ -614,6 +650,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特性と制限
 
 以下の特性と制限事項にご注意ください。
@@ -656,6 +694,8 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 | S2Sレポーティング | ユーザー識別子（IDFVまたはIDFA）がS2Sモバイルイベントのペイロードに送信され、IDFVまたはIDFAがAppsFlyer SDKの収集と一致していることを確認してください。これにより、データの欠落を防ぎ、オーディエンスの計算が正確であることが保証されます。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

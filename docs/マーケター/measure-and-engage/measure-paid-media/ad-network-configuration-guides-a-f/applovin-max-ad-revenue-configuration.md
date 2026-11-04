@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
+<div id="setting-up-applovin-max-integration" />
+
 ## AppLovin MAXとの連携設定
 
 **前提条件:** **連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡して</Anchor>アカウントを開設してください。**
@@ -41,6 +43,8 @@ x-zendesk:
    **注意：** トグルは、パートナーと作業している間、オン<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">（有効）</Anchor>にしておく必要があります。
 5. 以下の手順に従い、各タブの設定を完了してください。
 
+<div id="setting-tabs" />
+
 ### 設定タブ
 
 必要に応じて設定タブの内容を更新してください。広告収益
@@ -51,6 +55,8 @@ x-zendesk:
 
 AppLovin MAXは、デバイスレベルの集計データを含む広告収益のメディエーションを提供します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution">広告収益アトリビューション</Anchor>（広告収益）について
@@ -60,6 +66,8 @@ AppLovin MAXは、デバイスレベルの集計データを含む広告収益�
 * <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">これらの連携手順</Anchor>に従ってください。
 
 </Accordion>
+
+<div id="best-practice" />
 
 ### ベストプラクティス
 

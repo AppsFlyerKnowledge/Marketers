@@ -26,6 +26,8 @@ x-zendesk:
 | **What you need to know** | Metaは、このオプトインをAppsFlyerの顧客アカウントに自動的に適用します。 8月6日までは、対応していただく必要はありません。<ul><li>8月6日以降も、チャネル別のコストデータまたはチャネル別のクリエイティブのパフォーマンスデータが欠落している場合は、自動オプトインがまだアカウントに適用されていません。</li></ul> |
 | **What you need to do** | 次のステップを実行してください：<ol><li>8月6日以降、チャネル別のコストデータ（My Dashboards）とチャネル別のクリエイティブのパフォーマンスデータを確認してください。</li><li>If you notice a gap, contact Meta directly for guidance on enabling the opt-in, or reach out to your AppsFlyer representative for help.</li><li>オプトインがアカウントに適用されると、その後まもなくバックフィルによってデータは自動的に追いつきます。</li><li>アカウントでインプレッションデバイスがすでに有効になっているかどうかは、Ads Managerで直接確認することもできます。手順については、以下の[Ads Managerでインプレッションデバイスを確認する](#ads-managerでインプレッションデバイスを確認する)を参照してください。</li></ol> |
 
+<div id="check-impression-device-in-ads-manager" />
+
 ## Ads Managerでインプレッションデバイスを確認する
 
 広告アカウントでインプレッションデバイスがすでに有効になっているかどうかを確認するには、次の手順を実行します：

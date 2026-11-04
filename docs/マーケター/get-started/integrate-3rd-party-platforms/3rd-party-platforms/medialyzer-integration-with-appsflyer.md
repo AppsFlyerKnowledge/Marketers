@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるMedialyzerは、SaaSソリューションを開発・提供しています。メディアプランナーは、テレビ広告の放映直後に発生した訪問数とコンバージョン数に基づいて、オンラインビジネスのテレビ広告キャンペーンを最適化できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-medialyzer" />
 
 ## Medialyzerの設定
 
@@ -45,6 +49,8 @@ x-zendesk:
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 #### パートナーを有効化
 
 初回の設定時は、［**パートナーを有効化**］をオンにして、連携を設定できるようにします。 Medialyzerと連携している間は、オンにしておく必要があります。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
@@ -52,6 +58,8 @@ x-zendesk:
 #### Advanced Privacy
 
 iOSアプリでは、［<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">Advanced Privacy</Anchor>］のトグルが表示されます。オンにすると、パートナーとのユーザー識別子の共有が制限されます。アプリ設定で［<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor>］がオンの場合、［**Advanced Privacy（iOS 14.5以降）**］はデフォルトでオンになり、変更できなくなります。
+
+<div id="default-postbacks" />
 
 #### デフォルトポストバック
 
@@ -61,6 +69,8 @@ AppsFlyerは、ユーザーのインストール後にMedialyzerへデフォル�
 * **オーガニックを含むすべてのメディアソース**：すべてのパートナーの成果として計測されたイベントと、オーガニックイベントのインストールポストバックを送信します。
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 

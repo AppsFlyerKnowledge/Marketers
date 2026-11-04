@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **At a glance:** モバイルアプリまたはCTVアプリの開発者と協力して、AndroidまたはiOSアプリにSDKをインストールし、実装してください。基本的な実装作業が完了すると、インストールのアトリビューションとアプリ内イベントの計測を開始できる状態になります。
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **アプリへのDevキーの組み込み**
 
 AppsFlyerでは、Devキーを使用してアカウントを一意に識別します。 Devキーは、SDKがアカウントに属するデータを安全に送受信するために必須です。開発者は、SDKをインストールして実装し、Devキーを組み込む必要があります。
+
+<div id="retrieve-the-dev-key" />
 
 #### Devキーの取得
 
@@ -42,12 +46,16 @@ AppsFlyerでは、Devキーを使用してアカウントを一意に識別し�
 
    ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
+<div id="provide-the-dev-key-to-your-developer" />
+
 #### 開発者へのDevキーの共有
 
 Devキー、アプリID、AppsFlyer API v2トークンをモバイルアプリの開発者に共有し、以下の手順に従って実装するよう依頼してください。
 
 * <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration">SDK実装ウィザード</Anchor>を使用して、SDKのインストールと実装を自動化します。
 * 手順に従って、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">SDKをインストール</Anchor>し、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">実装</Anchor>します。
+
+<div id="where-to-start-the-sdk" />
 
 ## **SDKを起動する箇所の選択**
 
@@ -60,7 +68,11 @@ AppsFlyer SDKの実装を計画する際は、まずアプリの起動フロー�
 <Tabs>
 <Tab title="Androidネイティブ">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### AndroidネイティブでのSDK起動
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### SDKを起動するクラスの選択
 
@@ -68,6 +80,8 @@ AppsFlyer SDKの実装を計画する際は、まずアプリの起動フロー�
 
 * **グローバルな**`Application`**クラスでSDKを起動：** 一般的には、グローバルな`Application`クラスまたはそのサブクラスでSDKを初期化することが推奨されます。`Application`クラスは、アプリのUIが表示される前に読み込まれ、初期化されるためです。これにより、ディープリンクを含むあらゆる状況でSDKを起動できます。
 * **SDKを**`Activity`**クラスで起動（遅延起動）：** ユーザーがデータ共有への同意を選択できるようにします。ユーザーの同意を得るには、`Activity`クラスで表示するユーザーインターフェース（UI）が必要なためです。
+
+<div id="android-developer-instructions" />
 
 #### Android開発者への依頼事項
 
@@ -82,6 +96,8 @@ AppsFlyer SDKの実装を計画する際は、まずアプリの起動フロー�
 <Tab title="iOSネイティブ">
 
 <div id="starting-the-sdk-in-ios" />
+
+<div id="starting-the-sdk-in-ios-native" />
 
 ### iOSネイティブでのSDK起動
 
@@ -113,6 +129,8 @@ SDKには`waitForATTUserAuthorization`メソッドが用意されています。
 
 <div id="starting-the-sdk-in-Unity" />
 
+<div id="starting-the-sdk-in-unity" />
+
 ### UnityでのSDK起動
 
 SDKの起動方法を説明した<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">Dev Hubの記事</Anchor>を開発者に共有してください。
@@ -123,6 +141,8 @@ SDKの起動方法を説明した<Anchor target="_blank" href="https://dev.appsf
 
 <div id="starting-the-sdk-in-react" />
 
+<div id="starting-the-sdk-in-react-native" />
+
 ### React NativeでのSDK起動
 
 SDKの起動方法を説明した<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">Dev Hubの記事</Anchor>を開発者に共有してください。
@@ -130,11 +150,15 @@ SDKの起動方法を説明した<Anchor target="_blank" href="https://dev.appsf
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## プライバシー保護の方針の選択
 
 **ユーザーのプライバシーを保護する方法**を選択します。例えば、インストール時にSDKを停止する、第三者とのデータ共有を防ぐ、ユーザーデータを匿名化する、特定の識別子を無効にする、といった方法があります。
 
 利用可能な各種プライバシー保護方法の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/apply-privacy-preserving-sdk-methods">SDKのプライバシー保護方法</Anchor>をご覧ください。
+
+<div id="attribution" />
 
 ## **アトリビューション**
 
@@ -271,6 +295,8 @@ Dev Hubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basici
 
 IDFAを使用してアトリビューションを行う場合は、IDFAを**初回起動時に送信することが重要です。** このため、SDKには`waitForATTUserAuthorization`メソッドが用意されています。
 
+<div id="waitforattuserauthorization-overview" />
+
 #### waitForATTUserAuthorizationの概要
 
 > 🚧 **Important**
@@ -371,6 +397,8 @@ SKANアトリビューションを無効にするには、<Anchor target="_blank
 
 </Accordion>
 
+<div id="recording-in-app-events" />
+
 ## **アプリ内イベントの記録**
 
 アプリ内イベント（IAE）を使用すると、アプリ内で何が起きているかを把握できます。アプリ内イベントを記録することで、投資対効果（ROI）や顧客生涯価値（LTV）などのKPIを計測できます。記録するイベントは、時間をかけて定義することをおすすめします。
@@ -423,6 +451,8 @@ AppsFlyer SDKは、アプリ内購入のサーバー側での検証に対応し�
 
 </Accordion>
 
+<div id="deep-linking-with-onelink" />
+
 ## **OneLinkによるディープリンク**
 
 OneLinkは、複数のプラットフォームにまたがるアトリビューション、**リダイレクト、ディープリンク**に対応するAppsFlyerのソリューションです。
@@ -469,6 +499,8 @@ OneLinkは、複数のプラットフォームにまたがるアトリビュー�
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **アトリビューションデータとディープリンクデータの取得**
 
 アトリビューションデータとディープリンクデータを取得する方法を、以下の表にまとめています。
@@ -492,6 +524,8 @@ iOS 14.5以降でATTに同意していないユーザーについては、以下
 >
 > * Push APIを使用してアトリビューションデータを取得し、自社サーバーに送信して、後続の処理を行います。この方法では、データが利用可能になるまで待ってから取得するため、精度が高く、ほぼリアルタイムで処理できます。 GCDはリアルタイムでデータを返しますが、アトリビューションの最終的な判定までに5秒を超える時間がかかる場合は、データが不正確になる可能性があります。
 > * Pull APIを使用して定期的（例えば日次）にリアルタイムのアトリビューションデータを補完し、通信エラーなどによって生じるデータの欠落にも対応します。
+
+<div id="testing-your-sdk-integration" />
 
 ## **SDK実装のテスト**
 

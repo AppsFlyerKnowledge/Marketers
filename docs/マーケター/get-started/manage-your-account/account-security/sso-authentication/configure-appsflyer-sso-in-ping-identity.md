@@ -111,6 +111,8 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
 
 <Accordion title="グループにアクセスを許可してアプリを有効化する">
 
+<div id="provide-access-to-your-groups" />
+
 ### グループにアクセスを許可する
 
 1. Ping Identityの管理メニューで**Connections**＞**<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** に移動し、作成したアプリを選択します。  
@@ -118,6 +120,8 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
    ![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
 2. 右側に開いたセクションで**Access**タブを選択し、編集ボタンをクリックします。
 3. 作成したグループを選択し、**Save**をクリックします。
+
+<div id="activate-the-app" />
 
 ### アプリを有効化する
 
@@ -135,6 +139,8 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
 IdP側の設定が完了したら、AppsFlyerに戻って<Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">残りの設定を完了</Anchor>します。その後、<Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process">テスト</Anchor>して、正常に動作することを確認します。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

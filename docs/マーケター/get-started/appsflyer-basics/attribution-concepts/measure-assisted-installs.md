@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **概要：** 最後の広告接触だけでなく、それ以前にユーザーと接触し、インストールに貢献したメディアソースの効果も計測できます。
 
+<div id="assisted-installs" />
+
 ## アシストインストール
 
 <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">アシストインストール</Anchor>（マルチタッチアトリビューションとも呼ばれる）とは、最後の広告接触ではないものの、インストール前かつアトリビューションの対象期間内にユーザーと接触したメディアソースやキャンペーンによる貢献を計測するものです。 1件のインストールに対し、最大3件のアシストインストールを計上できます。
 
 アシストインストールの分析データは、メディアソース別とキャンペーン別に確認できます。これにより、それぞれがインストールに与えた効果を、より広い視点から計測できます。
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### Overview dashboardでのアシストインストール指標の確認
 
@@ -47,9 +51,13 @@ x-zendesk:
 5. **アシストインストール**の指標を選択します。  
    アシストインストールのグラフが表示されます。青はノンオーガニックインストール、オレンジはアシストインストールを示します。 ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### アシストを計測することの重要性
 
 多くの場合、見込みユーザーはアシストしたメディアソースを通じてアプリを知っても、何らかの理由ですぐにはインストールしません。そのため、キャンペーンの最適化や効果計測では、アシストの貢献を計測・評価することが重要です。
+
+<div id="assisted-installs-reporting" />
 
 ### アシストインストールのレポート
 
@@ -72,15 +80,21 @@ AppsFlyerは、インストールの計測元に加えて、最大3つのアド�
 
 <Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview#ユーザージャーニーレポート">ユーザージャーニーのローデータ</Anchor>を参照してください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">ユーザーレベルデータの共有を制限するメディアソース</Anchor>は、インストールの計測元が決まった際に、貢献元やアシストとして記録できません。 そのため、一部のメディアソースは、インストール前にユーザーと接触していても、貢献元として表示されません。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
 > 一部の主要アドネットワークは、代理店を含む<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention">第三者のプラットフォームへのデータ共有を制限しています</Anchor>。そのため、これらのアドネットワークのアシストインストールは、代理店のダッシュボードには表示されません。
 
 ローデータレポートでは、貢献元のアドネットワークのデータが**Contributors 1～3**の個別フィールドに分かれています。
+
+<div id="total-candidates-field" />
 
 ### Total candidatesフィールド
 
@@ -99,6 +113,8 @@ AppsFlyerは、インストールの計測元に加えて、最大3つのアド�
 * 貢献元がない場合も同様に、`total_candidates`の広告接触が貢献元としての条件を満たしていません。
 
 `total_candidates`は、受信した広告接触の数を表すもので、必ずしもアトリビューションの有効な候補数ではありません。このフィールドに値があっても、インストールがオーガニックとして計測されたり、貢献元がなかったりする場合があります。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >

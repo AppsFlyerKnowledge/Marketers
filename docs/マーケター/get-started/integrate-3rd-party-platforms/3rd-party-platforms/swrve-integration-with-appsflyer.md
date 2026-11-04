@@ -44,6 +44,8 @@ SwrveはAppsFlyerとの連携により、ユーザー獲得から継続利用ま
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 
+<div id="integrating-swrve-and-appsflyer" />
+
 ## SwrveとAppsFlyerを連携する
 
 Swrveで獲得元別のLTVとユーザー行動を計測できるように、ポストバックを設定します。
@@ -79,6 +81,8 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 **手順2**：AppsFlyer管理画面で、次の操作を行ってポストバックを設定します。
 
+<div id="setting-up-swrve" />
+
 ## Swrveの設定
 
 **前提条件：** パートナーのアカウントが必要です。アカウントがない場合は、連携を設定する前にパートナーに連絡し、アカウントを開設してください。
@@ -103,10 +107,14 @@ Swrveの設定で使用するのは、<strong>［連携］</strong>タブのみ�
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 <strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -122,6 +130,8 @@ SwrveとAppsFlyerの接続には、固有のアプリIDとAPIキーを使用し�
 * **api\_key**を入力します。
 * EUのお客様は**EU**を選択します。
 * 次の追加情報をSwrveに送信するには、<strong>［拡張データ共有］</strong>を選択します：cost\_value、channel、keywords、siteID、c（キャンペーン）。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -173,6 +183,8 @@ Swrveでは、計測リンクは利用できません。
 Swrveでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="swrve-reporting-with-appsflyer-data" />
 
 ## AppsFlyerのデータを使用したSwrveのレポート
 

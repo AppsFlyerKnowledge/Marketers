@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## 概要
 
 リターゲティングキャンペーンにおけるダブルアトリビューションとは、アプリ内イベントがオリジナルインストールの動機となるメディアソースと、リエンゲージメントやリアトリビューションイベントの動機となるメディアソースの両方に紐づくことを意味します。
@@ -47,6 +49,8 @@ x-zendesk:
   * [ベストプラクティス] **conversion\_type**： install もしくは re-engagement
   * is\_retargeting：true の場合、データはリターゲティングキャンペーンのものです。
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### リエンゲージメント期間における計測内容
 
 | メディアソース | リエンゲージメント期間前 | リエンゲージメント期間中 | リエンゲージメント期間後 |
@@ -54,15 +58,21 @@ x-zendesk:
 | ユーザー獲得 | プライマリ<br /><br />is\_primary\_attribution：True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) | セカンダリ<br /><br />is\_primary\_attribution：False<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: False) | プライマリ<br /><br />is\_primary\_attribution：True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) |
 | リターゲティング | N/A | プライマリ<br /><br />is\_primary\_attribution：True<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: True) | N/A |
 
+<div id="support-for-dashboard-view-types" />
+
 ## 管理画面での表示オプションの選択
 
 ダッシュボードやコホートレポートの中には、統合、ユーザー獲得、リターゲティングといった複数の表示タイプオプションが含まれているものがあります。これらの表示タイプは、ローデータで使用されるものと同様のロジックを採用しています。
 
 ![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
 
+<div id="data-filtering-by-view-type-using-the-conversion_type-field" />
+
 #### conversion\_type の項目を使用した表示タイプ別のデータのフィルター
 
 <table><thead><tr><th>表示タイプ</th><th>conversion_type</th><th>is_primary</th><th>アトリビューション</th></tr></thead><tbody><tr><td rowspan="2">ユーザー獲得</td><td>install</td><td>True もしくは Fales</td><td>UAイベントは新規獲得メディアソースに紐づきます</td></tr><tr><td>re-engagement</td><td>False</td><td>リターゲティングイベントは新規獲得メディアソースに紐づきます</td></tr><tr><td>リターゲティング</td><td>re-engagement または re-attribution</td><td>True</td><td>リターゲティングイベントはリターゲティングメディアソースに紐づきます</td></tr><tr><td>統合</td><td>install または re-engagement</td><td>True</td><td>全てのイベントはラストタッチのメディアソースに紐づきます</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## ユーザー獲得に紐づくアプリ内イベントレポートで、リターゲティングイベントの重複計測を特定するにはどうすればよいですか？
 

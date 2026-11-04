@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **概要：** 概要： 一部の集計データが*exceeded* と表示される理由と、それを防止する方法にするについて記載しています。
 
+<div id="what-are-exceeded-dimensions" />
+
 ## exceeded とは何ですか？
 
 その結果、各項目内のユニークな値の数がカーディナリティの上限を超えてしまった場合には、残りのデータは*exceeded*のグループに割り当てられます。
 
 以下の例では、カーディナリティとそれがレポートにどのように影響するかを示しています。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -56,6 +60,8 @@ x-zendesk:
 
 <table><tbody><tr><th>ディメンション</th><th>Exceeded group name</th><th>上限対象となる対象の区分</th><th>1日あたりのカーディナリティ上限  </th><th>1日あたりのProtect360におけるカーディナリティ上限</th></tr><tr><td>Ad</td><td>Exceeded_Ad_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Ad ID</td><td>Exceeded_AdID_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>広告セット</td><td>Exceeded_AdSet_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Adset ID</td><td>Exceeded_AdSetID_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>Campaign</td><td>Exceeded_Campaign_Limit</td><td>Media source</td><td>3000</td><td><ul><li>3000</li><li>100 </li></ul></td></tr><tr><td>Campaign ID</td><td>Exceeded_CampaignID_Limit</td><td>Media source</td><td>3000</td><td><ul><li>3000</li><li>100 </li></ul></td></tr><tr><td>Channel</td><td>Exceeded_Channels_Limit</td><td>Media source</td><td>20</td><td>20</td></tr><tr><td>Site ID</td><td>Exceeded_SiteID_Limit</td><td>Media source</td><td>2024-02-26</td><td><ul><li>2024-02-26</li></ul></td></tr><tr><td>イベント</td><td>Exceeded_Events_Limit</td><td>アプリ </td><td>300</td><td>300</td></tr><tr><td>Keywords</td><td>Exceeded_Keywords_Limit</td><td>Media source</td><td>1000</td><td>-</td></tr><tr><td>メディアソース名</td><td>Exceeded_MediaSource_Limit</td><td>アプリ</td><td>1000</td><td><ul><li>1000</li><li>100 </li></ul></td></tr><tr><td colspan="5"></td></tr></tbody></table>
 
+<div id="cardinality-limits-per-dimension" />
+
 ## 各項目（ディメンション）毎のカーディナリティ上限
 
 <div id="exceeded_adset_limit-and-exceeded_ad_limit" />
@@ -64,6 +70,8 @@ x-zendesk:
 
 * メディアソース毎に、それぞれ最大1000個のユニークなアドセット名 (af\_adset) とアド名 (af\_ad) を利用可能です。
   * 同じことが、**Exceeded\_Ad\_Limit** のメディアソースにも適用されます。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
@@ -91,6 +99,8 @@ x-zendesk:
 
 * 1日あたり最大 3000 個のユニークなキャンペーン名 (c) を使用できます。
   * 特定の日において、3001個目のアドセットID以降は全てのアドセットIDのデータが **Exceeded\_Campaign\_Limit** というグループに紐づきます。
+
+<div id="tip-1" />
 
 > 👍 **ヒント**
 >
@@ -126,12 +136,16 @@ x-zendesk:
 * 1日あたり最大 300 個のユニークなイベント名を計測可能です。
   * 特定の日において、301個目のイベント名以降は全てのイベント名のデータが **Exceeded\_Events\_Limit** というグループに紐づきます。
 
+<div id="tip-2" />
+
 > 👍 **ヒント**
 >
 > **Exceeded\_Events\_Limit**が表示されないようにするには、以下のような対策を検討してください：
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベント</Anchor>をご利用ください。何百もの異なるイベント名を定義せずに、少数の一般的なイベント名（理想的には最大20個）を定義してください。動的なイベント値を使用して、これらのイベントを区別しましょう。<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">アプリ内イベントのローデータ</Anchor>を使うことで、イベント値のパラメータを使った最適化や、イベント値を基にした分析が可能になります。
 > * 不必要なアプリ内イベントのデータをAppsFyerのプラットフォームから除外するために、検証ルールの活用も検討してください。
+
+<div id="example-1" />
 
 > 📄 **例**
 >
@@ -163,6 +177,8 @@ x-zendesk:
 
 * * 特定の日において、1001番目のサイトID以降はメディアソースごとの全てのサイトIDのデータが**Exceeded\_SiteID\_Limit** という１つのグループに紐づきます。したがって、Exceeded\_SiteID\_Limit というサイトIDが表示されている場合、該当のメディアソースで使用されているサイトIDが多すぎることを意味し、このソースのトラフィックをサイトIDごとに最適化する際の精度と効率が低下してしまいます。
 
+<div id="tip-3" />
+
 > 👍 **ヒント**
 >
 > 「細分化して克服」メディアソースごとに数千個のサイトIDを使用する代わりに、計測リンクに **af\_sub\_siteid** というサブサイトIDのパラメーターを使用してください。小数の一般的なサイトID（理想的には最大50個）を定義し、以前のサイトIDを全てサブサイトIDとして一般的なサイトIDの下に割り当ててください。
@@ -170,13 +186,19 @@ x-zendesk:
 > 2.
 > 3.
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > リテンションレポートでは、Exceeded\_SiteID\_Limit は表示されませんが、全てのサイトIDが表示されるわけではありません。サイトIDはランダムに表示されますが、UIの制限により全てを表示することができません（上限を超えている場合）。この問題を回避するためには、リテンションデータをMaster APIから取得してください。
 
 </Accordion>
 
+<div id="how-to-avoid-getting-exceeded-sources" />
+
 ## Exceededという表示を防ぐ方法は？
+
+<div id="the-long-term-solution" />
 
 ### 長期的なソリューション
 
@@ -184,11 +206,15 @@ x-zendesk:
 
 ただし、**Exceeded** が表示される場合は、1つまたは複数のメディアソースにて、キャンペーン名、サイトID、広告セット、広告などに、動的に値を振り当てている可能性があります。また、アプリのコード内で動的なアプリ内イベント名を使用すると、**Exceeded\_Events\_Limit** と表示されることがあります。
 
+<div id="tip-4" />
+
 > 👍 **ヒント**
 >
 > **Exceeded** の表示を避けるためには、アプリ内イベント、キャンペーン、サイトID、広告セット、広告に静的な値のみを使用してください。
 >
 > また、**Exceeded**のタイプごとに特定のヒントを確認してください。
+
+<div id="the-short-term-solution" />
 
 ### 短期的なソリューション
 
@@ -197,6 +223,8 @@ x-zendesk:
 では、今すぐにデータを確認したい場合はどうすればよいでしょう？
 
 上記で説明した通り、**Exceeded** は、AppsFlyerが特定の日に、N+1のクリック（またはイベント）を受信した場合に発生します。その日の後半に重要なメディアソースからのデータを受信したために、それらが**Exceeded**としてまとめられてしまう可能性もあります。その場合、**Exceeded**の影響を最小限にとどめるためのシンプルな対策を以下でご紹介します。
+
+<div id="tip-5" />
 
 > 👍 **ヒント**
 >

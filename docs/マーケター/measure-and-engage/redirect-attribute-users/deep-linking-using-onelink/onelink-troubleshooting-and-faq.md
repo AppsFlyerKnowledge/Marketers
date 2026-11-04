@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **At a glance:** OneLinkカスタムリンクのリダイレクトや動作に関する問題を、すばやくテスト・デバッグするための解決策を確認できます。
 
+<div id="onelink-troubleshooting-guide" />
+
 ## OneLinkトラブルシューティングガイド
 
+<div id="onelink-frequently-asked-questions" />
+
 ## OneLinkに関するよくある質問
+
+<div id="onelink-template-faq" />
 
 ### OneLinkテンプレートに関するよくある質問
 
@@ -44,6 +50,8 @@ x-zendesk:
 
 * Android 6.0より前のバージョンを使用しているユーザー（Androidユーザーの15%未満）
 * Universal LinksやApp Linksが機能しない、または設定されていないためにアプリを開けない場合のフォールバック<strong>注意：</strong>Universal LinksのフォールバックとしてURIスキームを使用する場合、iOS固有の制限があります。<Anchor target="_blank" href="/marketers/ja/docs/uri-scheme-fallback-for-ios">詳細はこちら</Anchor>。
+
+<div id="deep-linking" />
 
 #### ディープリンク
 
@@ -203,6 +211,8 @@ OneLinkテンプレートには、iOSアプリとAndroidアプリを1つずつ�
 
 </Accordion>
 
+<div id="onelink-link-faq" />
+
 ### OneLinkリンクに関するよくある質問
 
 <Accordion title="AppsFlyer SDKがなくてもOneLinkは機能しますか？">
@@ -269,6 +279,8 @@ AppsFlyer SDKがまだアプリに組み込まれていなくても、基本的�
 
 ユーザー体験を改善する方法として、フォールバックURLと強制ディープリンクの2つがあります。
 
+<div id="fallback-urls" />
+
 #### フォールバックURL
 
 フォールバックURLを設定すると、アプリ起動やディープリンクが何らかの理由で失敗した場合に、ユーザーを指定したWebページへ送ることができます。**注意：** この設定を使用すると、アプリをインストールしていないユーザーも、適切なアプリストアではなくフォールバックURLへ送られます。そのため、このオプションはアプリをすでにインストールしているユーザーへのリターゲティング時にのみ使用してください。
@@ -291,6 +303,8 @@ AppsFlyer SDKがまだアプリに組み込まれていなくても、基本的�
 > 📘 **Note**
 >
 > リダイレクトが発生すると、OneLink URLのパラメータはaf\_ios\_urlまたはaf\_android\_urlで指定した遷移先ページへ引き継がれます。この動作を防ぐには、OneLinkにaf\_param\_forwarding=falseパラメータを追加します。
+
+<div id="forced-deep-linking" />
 
 #### 強制ディープリンク
 
@@ -449,6 +463,8 @@ OneLink管理画面で次のブランドリンクを作成したとします。
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### OneLinkパラメータに関するよくある質問
 
 <Accordion title="OneLinkカスタムリンクで必須のパラメータは何ですか？">
@@ -514,6 +530,8 @@ OneLink管理画面で次のブランドリンクを作成したとします。
 <strong>はい。</strong>パラメータ名と値には小文字のみを使用してください。パラメータ名や値に大文字を使用したり、大文字・小文字の表記が統一されていなかったりすると、管理画面とローデータの両方でエラーやデータの不一致が発生する可能性があります。
 
 </Accordion>
+
+<div id="integrated-partner-faq" />
 
 ### 連携済みパートナーに関するよくある質問
 
@@ -618,6 +636,8 @@ Meta Web Adsの有料キャンペーンで動画にOneLinkカスタムリンク�
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### テストに関するよくある質問
 
 <Accordion title="ソーシャルアプリ向けランディングページをA/Bテストするにはどうすればよいですか？">
@@ -652,6 +672,8 @@ OneLinkのテスト時にアプリ選択ダイアログが表示される場合�
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### ディープリンクに関するよくある質問
 
 <Accordion title="どのディープリンク方式を実装すればよいですか？">
@@ -671,6 +693,8 @@ iOS Universal LinksとAndroid App Linksは**アプリを起動するための方
 **カスタムパラメータは、カスタムリンク設定ページから追加することを推奨します**。
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### iOS 14に関するよくある質問
 

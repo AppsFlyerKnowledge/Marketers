@@ -31,6 +31,8 @@ BidalgoやAdquantなど、**Google Adsポストバックパートナー**と呼�
 
 これらのGoogle Adsポストバックパートナー（GAPP）は、広告主が直接獲得したGoogle Adsのインストールや、他の代理店が獲得したインストールのポストバックも受信できます（[ユースケース](/docs/google-ads-postback-partners-configuration#google-adsポストバックパートナーのユースケース)を参照）。 GAPPは、ポストバックの情報を使用して、そのアプリのGoogle Adsキャンペーンを最適化できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > AppsFlyerでは、インストールやイベントの成果がGoogle Adsポストバックパートナーに紐づくことは**ありません**。
@@ -39,11 +41,15 @@ BidalgoやAdquantなど、**Google Adsポストバックパートナー**と呼�
 
 AppsFlyerと連携しているその他のGAPP：Blackbox、Appreciate、Marin Software、Miramedia、Mpbisummer、Protonads、Springrain。
 
+<div id="google-ads-postback-partner-setup" />
+
 ## Google Adsポストバックパートナーの設定
 
 1. AppsFlyerのサイドメニューから、［**コラボレーション**>**アクティブな連携**］を選択します。
 
 2. 利用するGAPPの名前を検索ボックスに入力し、ドロップダウンリストから選択します。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
@@ -61,6 +67,8 @@ AppsFlyerと連携しているその他のGAPP：Blackbox、Appreciate、Marin S
 
 7. ［**保存**］をクリックします。
 
+<div id="important-notes" />
+
 > 📘 **重要な注意事項**
 >
 > * Google Adsの計測を無効にすると、GAPPへのポストバックの送信も停止します。
@@ -68,6 +76,8 @@ AppsFlyerと連携しているその他のGAPP：Blackbox、Appreciate、Marin S
 >
 >   ![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
 > * 複数のGAPPを利用するには、GAPPごとに別のGoogleアカウントでキャンペーンを配信してください。 GAPPを別のGAPPに切り替える場合は、AppsFlyerで以前のGAPPの設定を無効にしてください。
+
+<div id="google-ads-postback-partners-use-cases" />
 
 ## Google Adsポストバックパートナーのユースケース
 
@@ -127,6 +137,8 @@ AppsFlyerと連携しているその他のGAPP：Blackbox、Appreciate、Marin S
 
 </Accordion>
 
+<div id="available-parameters-for-gapps" />
+
 ## GAPPで利用可能なパラメータ
 
 **ポストバックの内容は、GAPPとAppsFlyerとの初期連携に依存しており**、広告主の設定とは関係ありません。そのため、GAPPによってポストバックパラメータの定義が異なる場合があります。
@@ -155,6 +167,8 @@ GAPPのポストバックパラメータには、次の2つの情報源があり
    * 広告タイプ
    * コンバージョン指標
    * 地域
+
+<div id="note" />
 
 > 📘 **注意**
 >

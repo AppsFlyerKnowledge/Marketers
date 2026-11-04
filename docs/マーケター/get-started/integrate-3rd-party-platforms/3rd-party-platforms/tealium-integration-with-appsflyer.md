@@ -24,13 +24,19 @@ x-zendesk:
 
 <Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
+<div id="overview" />
+
 ## 概要
 
 TealiumとAppsFlyerを連携すると、モバイルアプリを運営する企業はAppsFlyerのモバイルアトリビューションSDKを活用し、コンバージョンのアトリビューションデータをTealium AudienceStreamのプロファイルに直接送信できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、このパートナーには送信されません。ポストバックの送信設定にかかわらず、この制限が適用されます。
+
+<div id="setting-up-tealium" />
 
 ## Tealiumの設定
 
@@ -39,6 +45,8 @@ TealiumとAppsFlyerは、次のいずれかの方法で連携できます。
 * クライアント側での連携
 * サーバー側での連携
 
+<div id="client-side-integration" />
+
 ### クライアント側での連携
 
 iOSおよびAndroidライブラリのリモートコマンドを使って、AppsFlyer SDKのネイティブコードを実行できます。
@@ -46,6 +54,8 @@ iOSおよびAndroidライブラリのリモートコマンドを使って、Apps
 **クライアント側でTealiumを連携するには、次の手順に従います。**
 
 * <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">リモートコマンドの連携ガイド</Anchor>に従って設定します。
+
+<div id="server-side-integration" />
 
 ### サーバー側での連携
 

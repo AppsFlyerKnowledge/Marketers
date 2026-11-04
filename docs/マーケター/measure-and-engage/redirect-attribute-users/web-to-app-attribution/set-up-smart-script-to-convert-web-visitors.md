@@ -26,6 +26,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## 設定
 
 OneLink Smart Scriptには、次の2つのバージョンがあります。
@@ -34,12 +36,16 @@ OneLink Smart Scriptには、次の2つのバージョンがあります。
 
 <Anchor target="_blank" href="/marketers/ja/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1（旧版）**</Anchor>：すでにOneLink Smart Scriptを設定している場合は、このバージョンのドキュメントを参照してスクリプトを保守・編集してください。**注意**：必須ではありませんが、OneLink Smart Scriptで<Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">ビュースルーアトリビューション</Anchor>を正しく計測するために、V2への移行をご検討ください。
 
+<div id="set-up-onelink-smart-script" />
+
 ### OneLink Smart Scriptの設定
 
 Smart Scriptは、次のいずれかの方法で設定できます。
 
 * Webサイトにスクリプトを埋め込む。
 * Googleタグマネージャーを使用する。
+
+<div id="scope-of-work" />
 
 #### 作業範囲
 
@@ -105,6 +111,8 @@ Smart Scriptは、次のいずれかの方法で設定できます。
     5. 生成される送信URLの使用方法をWeb開発者に伝えます。たとえば、モバイルサイトのCTAボタンに設定したり、デスクトップサイトにQRコードとして表示したりします。<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager">開発者向けの手順</Anchor>
 13. 保存したスクリプトは、[ドロップダウンメニュー](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script)で確認できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > スクリプトを更新するたびに、再実装が必要です。
@@ -124,6 +132,8 @@ Smart Scriptは、次のいずれかの方法で設定できます。
 2. 編集するスクリプトの横にある鉛筆アイコンをクリックします。
    1. [OneLink Smart Scriptの作成手順](/docs/set-up-smart-script-to-convert-web-visitors#onelink-smart-scriptの設定)に従います。
 3. ごみ箱アイコンをクリックすると、Smart Scriptを削除できます。
+
+<div id="important-1" />
 
 > 🚧 **重要**
 >
@@ -163,6 +173,8 @@ OneLink Smart Scriptは、受信URLのパラメータと、スクリプト内で
 
 OneLink Smart Scriptは、受信URLのパラメータと、スクリプト内で定義した引数に基づいて送信URLを生成します。
 
+<div id="arguments-parameters-and-values-to-implement-the-smart-script" />
+
 #### Smart Scriptに実装する引数（パラメータと値）
 
 <table><thead><tr><th colspan="2">引数</th><th>説明</th><th>設定内容の記入欄（ご自身または開発者の作業用）</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL（必須）</td><td><ul><li>OneLinkテンプレートのドメインとテンプレートIDを指定します。<strong>注意：</strong>OneLinkのカスタムリンクURLではありません。</li><li>例：<strong>yourbrand.onelink.me/A1b2</strong> </li><li>ブランドドメインの例：<strong>click.yourbrand.com/A1b2</strong> </li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>（必須）</p></td><td><p>mediaSource</p><p>（必須）</p></td><td><ul><li>メディアソースの設定オブジェクト。</li><li>例：<ul><li>キー：['incoming_mediasource’' 'utm_source']</li><li>デフォルト値：['any_source']</li><li>値の上書き：`{twitter: 'twitter_int', orig_src: 'new_src',  seo:'false'}</li></ul></li></ul></td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>campaign</td><td><ul><li>キャンペーンの設定オブジェクト。</li><li>例：<ul><li>キー：['incoming_campaign', 'utm_campaign']</li><li>デフォルト値：['any_campaign_name']</li><li>値の上書き：{campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>channel</td><td><ul><li>チャネルの設定オブジェクト。</li><li>例：<ul><li>キー：['incoming_channel', 'utm_channel']</li><li>デフォルト値：['any_video']</li><li>値の上書き：{video: 'new_video'}</li></ul></li></ul></td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>ad</td><td><ul><li>広告の設定オブジェクト。</li><li>例：<ul><li>キー：['incoming_ad', 'utm_ad']</li><li>デフォルト値：['any_ad_name']</li><li>値の上書き：{ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>adSet</td><td><ul><li>広告セットの設定オブジェクト。</li><li>例：<ul><li>キー：['incoming_adset', 'utm_adset']</li><li>デフォルト値：['any_ad_name']</li><li>値の上書き：{adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>deepLinkValue</td><td><ul><li> <strong>deep_link_value</strong>の設定オブジェクト。</li><li>例：<ul><li>キー：['product_id', 'page_name']</li><li>デフォルト値：'new_offers_page'</li><li>値の上書き：{twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>afSub1-5</td><td> <strong>af_sub[1-5]</strong>の設定オブジェクト。</td><td><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr><tr><td>googleClickIdKey</td><td> <a href="https://support.google.com/google-ads/answer/9744275?hl=en" target="_blank">GCLID</a>を格納するパラメータの名前を指定します。<br/><strong>注意</strong> <span>AppsFlyerのローデータレポートに表示するには、<strong>af_sub[1-5]</strong>のいずれかを使用する必要があります。</span> </td><td> </td></tr><tr><td> <span>その他のクエリパラメータ（カスタム）</span><br/> </td><td><ul><li>アトリビューションやディープリンクのためにOneLinkの送信URLに含めるその他のパラメータを、設定オブジェクトとともに指定します。</li><li>カスタムパラメータ名は、開発者が設定オブジェクト内のparamKeyに指定します。<span></span> </li><li>例：<ul><li>paramKey: 'deep_link_sub1'</li><li>キー：['page_id']</li><li>デフォルト値：'page1'</li><li>値の上書き：{page12: 'new_page12'}`</li></ul></li></ul></td><td><p>パラメータキー：</p><p>キー：</p><p>デフォルト値：</p><p>値の上書き：</p></td></tr></tbody></table>
@@ -175,11 +187,15 @@ OneLink Smart Scriptは、受信URLのパラメータと、スクリプト内で
 
 以下の表では、技術的な知識を持つマーケターや開発者がSmart Scriptに実装できる引数を説明します。
 
+<div id="advanced-arguments-parameters-and-values-to-implement-in-the-smart-script" />
+
 #### Smart Scriptに実装する高度な引数（パラメータと値）
 
 <table><thead><tr><th colspan="2">引数</th><th>説明</th><th>設定内容の記入欄（ご自身または開発者の作業用）</th></tr></thead><tbody><tr><td colspan="2"> <br/>referrerSkipList</td><td><ul><li>特定のクリックのHTTPリファラで検索する文字列のリスト（TwitterやFacebookなど）です。該当する文字列が見つかった場合、Smart Scriptは<code>null</code>を返します。 X AdsやMeta adsなど、クリックがすでにレポートされるSRNで役立ちます。</li><li>この引数を実装すると、条件に一致した場合にスクリプトはOneLink URLを生成しません。</li></ul></td><td> </td></tr><tr><td colspan="2">urlSkipList</td><td><ul><li>特定のクリックのURLで検索する文字列のリスト（af_rなど）です。該当する文字列が見つかった場合、Smart Scriptは<code>null</code>を返します。 af_rを指定したAppsFlyerのアトリビューションリンクでモバイルWebサイトへリダイレクトする際に、元のクリックのデータを失わないようにしたい場合に役立ちます。</li><li>この引数を実装すると、条件に一致した場合にスクリプトはOneLink URLを生成しません。</li></ul></td><td> </td></tr><tr><td colspan="2">SEO</td><td><ul><li>有効にすると、<strong>［URLパラメータのマッピング］</strong>でメディアソースを特定できなかった場合に、WebリファラのURLに基づいて検索エンジンからの訪問かどうかを確認し、それに応じたメディアソースを設定します。（バージョン2.10.3以降で利用可能）</li></ul></td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## 利用ケース
 
@@ -230,6 +246,8 @@ GCLIDパラメータを含むGoogle広告キャンペーンの通常のインス
 
 1. CSVから、またはインストールごとにPush APIでリアルタイムに、**af\_sub[1-5]** パラメータのGCLIDデータを取得します。
 2. GCLIDデータを、<Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">手動</Anchor>または<Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">Google Ads API</Anchor>でGoogleにアップロードします。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -292,6 +310,8 @@ SnapchatやX Adsなどの<Anchor target="_blank" href="/marketers/ja/docs/self-r
 
 **結果**：これらのSRNやメディアソースでは、受信リンクのメディアソースとキャンペーンの値が、それぞれ送信リンクの**media\_source**と**campaign**に設定されます。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > **受信URL**：https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
@@ -309,6 +329,8 @@ SnapchatやX Adsなどの<Anchor target="_blank" href="/marketers/ja/docs/self-r
 **対応：urlSkipList**引数に**af\_r**パラメータを指定します。
 
 **結果**：Smart Scriptが受信リンクに**af\_r**パラメータを検出すると、送信URLを生成しません。その場合、開発者が送信URLとして設定するリンクを決め、実装する必要があります。
+
+<div id="example-1" />
 
 > 📄 **例**
 >
@@ -383,6 +405,8 @@ Smart Scriptでは、リンクを設定したボタンの代わりに、Webペ�
 
 **結果**：スクリプトは、URLを設定したボタンの代わりにQRコードを表示します。
 
+<div id="example-2" />
+
 > 📄 **例**
 >
 > **受信URL**：
@@ -416,11 +440,15 @@ OneLink Smart Scriptは、Webサイトのインプレッションのカウント
 2. 開発者に、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression">Smart Scriptのインプレッション関数を呼び出す</Anchor>よう依頼します。
 3. <Anchor target="_blank" href="/marketers/ja/docs/measure-view-through-engagements">ビュースルーアトリビューションが有効になっている</Anchor>ことを確認します。
 
+<div id="important-2" />
+
 > 🚧 **重要**
 >
 > 2023年2月1日（Chrome 110の安定版リリース）以降、Googleは<Anchor target="_blank" href="https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/">User-Agentのデータを削減する変更</Anchor>を行っています。 OneLink Smart Scriptで<Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">ビュースルーアトリビューション</Anchor>を正しく計測するには、バージョン2.3以降を使用してください。
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 補足情報
 
@@ -428,13 +456,19 @@ OneLink Smart Scriptは、Webサイトのインプレッションのカウント
 
 <Accordion title="よくある質問">
 
+<div id="will-the-incoming-url-for-onelink-link-generation-work-if-the-user-browses-to-a-different-page-on-the-website" />
+
 #### **ユーザーがWebサイト内の別のページへ移動しても、元の受信URLの情報をOneLinkの生成に使用できますか？**
 
 はい。受信URLのパラメータはブラウジングセッション中保持され、Smart Scriptで生成するOneLinkの送信パラメータに適用されます。実装の詳細は、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages">開発者ハブ</Anchor>を参照してください。
 
+<div id="why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager" />
+
 #### **GoogleタグマネージャーでSmart Scriptを実装するとエラーになるのはなぜですか？**
 
 AppsFlyerで生成したSmart ScriptをGoogleタグマネージャー（GTM）に挿入すると、「JavaScript too long」エラーが表示される場合があります。その場合は、GTMのタグを削除し、新しく作成してください。
+
+<div id="can-i-add-parameters-that-are-not-listed" />
 
 #### **一覧にないパラメータを追加できますか？**
 
@@ -448,9 +482,13 @@ AppsFlyerで生成したSmart ScriptをGoogleタグマネージャー（GTM）�
 
 ![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
 
+<div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
+
 #### **Adsetなどのパラメータがドロップダウンに表示されません。**
 
 パラメータの作成・追加時には、ブラウザーの広告ブロッカーを無効にすることをおすすめします。広告ブロッカーによって、「Ad」という文字列を含む選択肢が非表示になる場合があります。
+
+<div id="what-browsers-does-smart-script-work-on" />
 
 #### **Smart Scriptはどのブラウザーで動作しますか？**
 

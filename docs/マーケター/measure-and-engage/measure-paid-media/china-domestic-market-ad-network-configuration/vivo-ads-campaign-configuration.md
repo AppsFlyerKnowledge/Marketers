@@ -49,14 +49,20 @@ x-zendesk:
 
 <Accordion title="Integration（連携）タブ">
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 この画面を**最初に開く**際には、以下のトグルをオンにする必要があります。[***パートナーを有効にする***] トグルをオンにして、連携タブのパラメーター設定を有効にします。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="enable-view-through-attribution" />
+
 ### ビュースルー計測の有効化
 
 AppLovinでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
+
+<div id="default-postbacks" />
 
 ### Default Postback（デフォルトのポストバック）
 
@@ -71,6 +77,8 @@ AppLovinでビュースルーインストールを計測したい場合は、こ
 このタブでは、YouAppiのキャンペーン、広告セット、単一の広告レベルで計測したい計測リンクを作成できます。AppsFlyerでは作成された計測リンクは保存されませんのでご注意ください。
 
 このタブは複数のセクションに分かれています。
+
+<div id="attribution-link-parameters" />
 
 ### 計測リンクパラメーター
 
@@ -93,6 +101,8 @@ AppLovinでビュースルーインストールを計測したい場合は、こ
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。設定したルックバック期間内に発生したインストール（初回起動）のみYouAppi の成果として計測されます。
@@ -103,9 +113,13 @@ AppLovinでビュースルーインストールを計測したい場合は、こ
 
 ![viewthrough_en-us.png](https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png)
 
+<div id="attribution-link" />
+
 ### 計測リンク
 
 このリンクは、あなたが設定したすべての情報が含まれる計測リンクです。ユーザーが広告をクリックしたときに有効になるように、Liftoffへ入稿してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### ビュースルーアトリビューションルックバック期間
 
@@ -118,6 +132,8 @@ AppLovinでビュースルーインストールを計測したい場合は、こ
 ビュースルー計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### インプレッションのアトリビューションリンク
 

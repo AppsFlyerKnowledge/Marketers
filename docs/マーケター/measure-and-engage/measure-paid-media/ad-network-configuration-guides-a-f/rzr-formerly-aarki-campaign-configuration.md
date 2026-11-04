@@ -26,7 +26,7 @@ x-zendesk:
 <Image alt="Aarki-logo.png" src="https://files.readme.io/f3c0366b10049471106e18218c4ee668d656970768f7fba642e125a3c17ffda0-27311413456657.png" width="207px" />
 
 
-**<span id="setting-up-aarki"></span>前提条件：** 連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡し</Anchor>、アカウントを開設してください。
+**<span id="setting-up-rzr"></span><span id="setting-up-aarki"></span>前提条件：** 連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡し</Anchor>、アカウントを開設してください。
 
 **統合をアクティブ化または編集するには：**
 
@@ -51,13 +51,19 @@ x-zendesk:
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 <span id="01ECJ9TJKEFXN53XDEBJ5Z92SS"></span>このタブを**初めて**開く場合、連携タブのパラメーター設定を有効にするために**パートナーを有効にする**のトグルをオンにする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。パートナーの有効化についての詳細は、 <Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention"><span id="01ECJ9TJKFY5Q8P4QS57HD44T3"></span>こちら</Anchor>をご覧ください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークであるLINEは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。**All media sources, including organic** を選択し、全てのインストールポストバックをLINEに送信することを推奨します。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -67,11 +73,15 @@ x-zendesk:
 
 <span id="01ECJ9TJKFE4E8GZQ2EN3Z1SM4"></span>YouAppiでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 <span id="01ECJ9TJKFT13WB1T328ET3PGC"></span>ユーザーのインストールおよびリエンゲージメント後に、自動ポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
 <span id="01ECJ9TJKFQH37DQZ3V3NAESRF"></span>AppLovinに紐づくユーザーからのイベントのみにするには、**このパートナーに紐づくイベントのみ**を選択します。[オーガニックを含む全メディアソース] を選択して、ユーザーベース全てをYouAppiにレポートできるようにします。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -106,6 +116,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKFTGNEZ68AR6DGXJNA"></span>このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 <span id="01ECJ9TJKFJRJ2BYN069CK80C8"></span>このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -119,6 +131,8 @@ x-zendesk:
 * <span id="01ECJ9TJKGQPS0GAY5SY562VFS"></span>**Subscriber Parameter**（サブスクライバーパラメーター）：5つのサブスクライバーパラメーターに値を追加できます。
 
 <span id="01ECJ9TJKGQN0Y1H6F2WNHRBCV"></span>計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">**<span id="01ECJ9TJKG3AQCMW2FDDZ7HWWB"></span>AppsFlyer計測リンクの構造とパラメーター**</Anchor>をご覧ください。
+
+<div id="retargeting-settings" />
 
 ### リターゲティング設定
 
@@ -150,6 +164,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKH449C02X1Y3ESR48Y"></span>**計測リンクパラメータ**：af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 <span id="01ECJ9TJKHGWANE9EGZZ0KKEX9"></span>このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。ルックバック期間内に発生するインストール（初回起動）のみがGMPの成果に紐づきます。
@@ -158,9 +174,13 @@ x-zendesk:
 
 <span id="01ECJ9TJKHY557S7J91YTE5VH8"></span>クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows"><span id="01ECJ9TJKHWEDC7RP2ZHHPFDNV"></span>こちら</Anchor>を参照してください。
 
+<div id="click-attribution-link" />
+
 ### クリックアトリビューションリンク
 
 <span id="01ECJ9TJKJ6TJBPEP5JNEPYTVB"></span>このリンクは、あなたが設定したすべての情報が含まれる計測リンクです。ユーザーが対応する広告をクリックした際にアクティベートされるように、この計測リンクをYouAppiに入稿してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### ビュースルーアトリビューションルックバック期間
 
@@ -171,6 +191,8 @@ x-zendesk:
 <span id="01ECJ9TJKJB20VJH63A8NK3KGB"></span>**計測リンクパラメータ**： af\_viewthrough\_lookback
 
 <span id="01ECJ9TJKJNTQ7AJVYKVWYMJNZ"></span>ビュースルー計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows"><span id="01ECJ9TJKJX8GHDCAW0QQYD4BV"></span>こちら</Anchor>を参照してください。
+
+<div id="impressions-attribution-link" />
 
 ### インプレッションのアトリビューションリンク
 
@@ -189,6 +211,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">これらの連携手順</Anchor>に従ってください。
 
 <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiのステータス">コストAPIのステータス</Anchor>と一致するコストデータを引き出すことができた最後の時刻を、AppsFlyerがコスト（および広告収益）連携ステータス管理画面、または個別のアドネットワーク管理画面のいずれかで確認してください。
+
+<div id="warning" />
 
 #### 要注意
 
@@ -212,6 +236,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 <span id="01ECJ9TJKQFJM45QTAMC6AJQW3"></span>これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
 
+<div id="ad-network-permissions" />
+
 ### アドネットワークへの権限付与
 
 * <span id="01ECJ9TJKQAHY9CZ2H3W09GQPZ"></span>***<span id="01ECJ9TJKQXT4HNE0HKH13F4SX"></span>パートナー連携の設定を許可する*** - パートナーに連携タブの設定（アプリ内イベントのポストバックを除く）を許可します。
@@ -223,6 +249,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 * <span id="01ECJ9TJKQZJGSVZMKFDHE2ACJ"></span>***Protect360管理画面へのアクセスを許可する*** - Protect360のデータへのアクセスを許可します（パートナーのデータのみ）。＜広告主がProtect360に申込みしている場合のみ＞
 
 <span id="01ECJ9TJKQJ0Y1QQK4EM92C06V"></span>詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab"><span id="01ECJ9TJKQZ5ADC4QSTHP0KN95"></span>アドネットワークへの権限付与</Anchor>をご覧ください。
+
+<div id="agency-permissions" />
 
 ### 代理店の許可
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 ヘルスケアアプリでは、ユーザーが健康保険を購入したり、診察を予約したり、医療的なアドバイスを受けたりすることができます。記録をお勧めする一般的なイベントには、ログイン、登録、および個人情報や健康情報のないその他の一般的なイベントが含まれます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * 当事務所の弁護士からの注意：健康データは「制限付きデータ」とみなされ、多くの管轄区域では特別なカテゴリーのデータと見なされます。そのため、お客様はAppsFlyerにそのようなデータを送信することを禁止されています。
@@ -38,6 +40,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -132,6 +136,8 @@ x-zendesk:
 | payment\_method\_type | 使用された支払い方法 | credit card, local |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

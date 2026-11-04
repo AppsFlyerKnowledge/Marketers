@@ -21,19 +21,27 @@ x-zendesk:
 ---
 > **概要：** ウェブサイトアプリにSnapchatのWeb広告連携を設定し、Conversion APIを通じてウェブコンバージョンシグナルをSnapchatに送信します。
 
+<div id="overview" />
+
 ## オーバービュー
 
 AppsFlyerはSnapchat Web Adsとの連携をサポートしています(`snapweb_int`ウェブサイトアプリのキャンペーン用で、SnapchatのConversion APIを通じてアトリビューションやコンバージョンデータを直接報告できます。このデータは、Metaが広告ターゲティングの最適化、パフォーマンスの測定、カスタムオーディエンスの構築に活用できます。
 
 仕組みはこうです:ユーザーがSnapchatの広告をクリックしてあなたのウェブサイトにたどり着き、その後ウェブサイトイベント(例えば購入やサインアップ)を完了すると、AppsFlyerはコンバージョンAPIを通じてそのコンバージョンシグナルをSnapchatに送信します。Snapchatはこのデータを活用して広告ターゲティングの最適化やキャンペーンのパフォーマンス測定を行います。
 
+<div id="see-also" />
+
 > 📄 **参照：**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/web-performance-measurement-overview">AppsFlyer Web Attribution - Overview</Anchor>
 
+<div id="important" />
+
 > 🚧 **【重要】**
 >
 > 現時点では、この統合はConversionAPI経由で再関与ポストバックを送信する機能がありません。
+
+<div id="prerequisites" />
 
 ### 事前準備
 
@@ -42,12 +50,16 @@ AppsFlyerはSnapchat Web Adsとの連携をサポートしています(`snapweb_
 * AppsFlyerで設定したウェブサイトアプリ
 * ビジネスアカウント <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat広告マネージャー</Anchor>
 
+<div id="how-to-set-up-snapchat-ads-for-your-website-app" />
+
 ### ウェブサイトアプリでSnapchat Web広告を設定する方法
 
 セットアップには、Snapchat Web AdsとAppsFlyerの連携を定義し、Snapchat Ads Managerでキャンペーンを設定することが含まれます。以下のステップが含まれます:
 
 * 第1部：AppsFlyerでSnapchat Web Adsの連携を設定する(必須)
 * 第1部：Snapchat Web AdsでAppsFlyer連携を設定する(必須)
+
+<div id="part-1-set-up-snapchat-ads-integration-in-appsflyer" />
 
 ## 第1部：AppsFlyerでSnapchat Web Adsの連携を設定する
 
@@ -88,12 +100,16 @@ AppsFlyerのイベントをSnapchat Web広告のイベントにマッピング�
 8. ［任意］**条件を追加**アイコンをクリックして、ポストバックする<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#条件付きアプリ内イベントポストバック">イベントの条件を設定可能です。</Anchor>
 9. **連携を保存**をクリックします。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * 購入イベントを設定する場合は、**送信データ**項目は**イベント値と収益を送信**と設定します。他のオプションを選択するとポストバックが失敗します。
 > * 現在は、購入イベントのみを収益に含める設定が可能です。
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-snapchat-ads" />
 
 ## パート2:Snapchat Web AdsでAppsFlyerの連携を設定する
 
@@ -138,11 +154,15 @@ AppsFlyerから送信される任意の事前定義されたアプリ内イベ�
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > Metaは、広告がクリックされると、`ScCid={{ScCid}}` を宛先URLに自動的に追加します。
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## ウェブアトリビューションデータの閲覧
 
@@ -155,12 +175,16 @@ AppsFlyerから送信される任意の事前定義されたアプリ内イベ�
 >
 > ウェブサイトアプリのキャンペーンのダッシュボードレポートはまだ利用できません。ウェブキャンペーンのパフォーマンスを他のチャネルと並べて分析できる統合レポートビューが今後リリースされる予定です。
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## ウェブコストでウェブ帰属データを測定する
 
 Snapchat広告からウェブアトリビューションデータおよびウェブコストデータの完全なパフォーマンスビューを得るには、ダッシュボードや <Anchor target="_blank" href="/marketers/ja/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">コストETLレポート</Anchor>、ちゃんと持ってるか確認して <Anchor target="_blank" href="/marketers/ja/docs/roi360-onboarding-guide#roi360について">ROI360パッケージ</Anchor>、次のセットアップを完了します:
 
 1. 費用をウェブサイトアプリに連携させて`snapchat_int` (経由ではない) `snapweb_int`) **費用** タブまたは **コスト設定** ページ。コストと結びつける方法の詳細については、こちらをご覧ください。 <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiの有効化">コストデータを測定するためのROI360コストAPIを設定しましょう</Anchor>.
 2. キャンペーンIDを含めてください(`af_c_id`ランディングページのURLに記載されています。URLにキャンペーンの階層全体を含め、コスト、クリック、インプレッションをウェブアトリビューションと最も細かくマッチングしたものを確認しましょう。
+
+<div id="traits-and-limitations" />
 
 ## 特徴と制限事項
 

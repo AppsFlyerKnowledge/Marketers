@@ -26,6 +26,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-server-to-server-events-api-for-pba" />
+
 ## PBA向け Web Server-to-ServerイベントAPI
 
 People-Based Attribution（PBA）向けのWeb-S2S APIは、<Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide">Web SDK</Anchor>を補完する仕組みであり、マーケターがWeb SDKの対象外となるウェブサイト上のイベントをレポートできるようにします。たとえば、Webサイト訪問者（Webユーザー）がオンライン決済イベントを発生させ、その処理がバックエンドシステムで行われる場合、処理完了後にバックエンドはS2S APIを使用して、そのイベントをAppsFlyerへ送信します。
@@ -35,6 +37,8 @@ S2S APIで送信されたイベントは以下のように扱われます。
 * Web SDKから送信されたイベントと同様に記録される
 * コンバージョンイベントとして設定されている場合、PBAダッシュボードに表示される
 * PBA Raw Dataに記録され、*event\_sourceのフィールド*には web S2S として設定される
+
+<div id="api-use-instructions" />
 
 ## API利用手順
 
@@ -62,6 +66,8 @@ APIの実装には、管理画面から取得できる以下の認証情報が�
    * ***Brand bundle ID***
    * ***Web dev key***
 
+<div id="web-s2s-api-basics" />
+
 #### Web S2S API 基本仕様
 
 | エンドポイント | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>`bundleId`：ダッシュボードに表示されるアプリのBundle ID</li><li>`method` 次のいずれかを実行してください：<ul><li>[event：](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method)バックエンドイベント送信用</li><li>[setCuId：](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) afUserIdとCUIDを関連付ける場合</li></ul></li></ul> |
@@ -83,6 +89,8 @@ APIの実装には、管理画面から取得できる以下の認証情報が�
 | ユースケース | CUIDをWeb訪問者に紐づける場合に使用します。Webの `afUserId` と自社の customerUserId を紐づける場合が該当し、これによりPBAは複数データソース間のデータをマッチングできます。これはWebサイトで使用する <Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> と同様の仕組みです。 |
 | メソッドパス | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
 | Payload | JSON payloadはこちらに記載されたパラメータで構成され、すべてのパラメーターは必須です。<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
+
+<div id="curl-example-setcuid" />
 
 #### setCuIdの Curl サンプル
 
@@ -110,6 +118,8 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 </Accordion>
 
+<div id="event-method-details" />
+
 ## Event メソッドの詳細
 
 <div id="payload-parameters" />
@@ -121,12 +131,16 @@ Payload パラメーターは、ユーザー識別子とイベントパラメー
 * User ID：少なくとも1つのユーザーIDパラメータを送信する必要があります。
 * Event：必須パラメータと、必要に応じてオプションのパラメータを送信してください。
 
+<div id="user-identifier-parameters-send-at-least-one-parameter" />
+
 #### ユーザーIDパラメータ（少なくとも1つのパラメータを送信）
 
 | ユーザーIDパラメータ | 説明 |
 | --- | --- |
 | <span id="customeruserid"></span>customerUserID | <Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid">顧客ユーザーID (CUID)</Anchor> はお客様が設定した一意の識別子です。<ul><li>AppsFlyerに送信するすべてのイベントで同一IDを使用する必要があります。つまり、同じIDが Web SDK、モバイル SDK、および S2S API で使用されています。</li><li><Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">Web SDKの顧客ユーザーID</Anchor></li><li>形式：文字列</li><li>例：`"customerUserId" : "663274"`</li><li>ローデータで入力される項目：`customer_user_id`</li></ul> |
 | <span id="afuserid"></span>afUserId | Web SDKがユーザーのサイト訪問時に付与するユーザーIDです。このCookie値をバックエンドサーバーへ送信する必要があります。<ul><li>Cookie の詳細：<ul><li>名称：afUserId</li><li>値：*afUserId* をこの値に設定してください。</li><li>ドメイン：website-domain</li></ul></li><li>例： `"afUserId" : "unique_cookie_uuid"`</li><li>ローデータで入力される項目：`af_web_id`</li></ul> |
+
+<div id="event-parameters" />
 
 #### イベントパラメーター
 
@@ -231,6 +245,8 @@ print(response.text.encode('utf8'))
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="getting-the-web-dev-key" />
@@ -254,10 +270,14 @@ print(response.text.encode('utf8'))
 * `afUserId`は、ユーザーが最初にウェブサイトを訪問した際に Web SDK によって割り当てられる一意の識別子です。
 * `afUserId`が必要な場合は、以下の方法のいずれかを使用してください。
 
+<div id="get-afuserid-from-the-http-cookie-header" />
+
 #### **HTTP CookieヘッダーからafUserIdを取得**
 
 * `afUserId`は、ユーザーがサイトへアクセスする際に訪問者のブラウザから送信されます。
 * 必要に応じてHTTP cookie ヘッダーから抽出してください。
+
+<div id="viewing-afuserid-in-the-visitors-browser" />
 
 #### **訪問者のブラウザでafUserIdを確認**
 

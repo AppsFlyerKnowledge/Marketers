@@ -21,6 +21,8 @@ x-zendesk:
   section_id: 6551240476177
   url: https://support.appsflyer.com/hc/ja/articles/4410472474001
 ---
+<div id="note" />
+
 > 📘 **注意**
 >
 > このURLで公開されていた元の記事は、非推奨になりました。

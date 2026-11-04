@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** iOS15以降では、アドネットワークに加えてAppsFlyerにもポストバックのコピーを送信するようにアプリを設定できます。これにより、AppsFlyerはコンバージョン値（CV）が正しいか、ポストバックが改ざんされていないかを検証できます。 AppsFlyer Push APIを設定すると、指定した別のエンドポイントにもポストバックのコピーを転送できます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > この記事の**SKAN**という表記は、**SKAdNetwork**と最新の<strong>AdAttributionKit（AAK）</strong>フレームワークの両方を指します。
+
+<div id="why-send-postback-copies-to-appsflyer" />
 
 ## ポストバックのコピーをAppsFlyerに送信する理由
 
@@ -35,6 +39,8 @@ x-zendesk:
 * 接点の種類別にエンゲージメントを確認
 
 <strong>注意！</strong>アドネットワークからのポストバックも、引き続きAppsFlyerで受信する必要があります。キャンペーン名など、アドネットワークが追加する情報が含まれているためです。
+
+<div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## ポストバックのコピーをAppsFlyerに送信するための設定
 
@@ -47,11 +53,17 @@ Appleのドキュメントによると、SKANポストバックの送信先エ�
 3. 新バージョンが公開されると、AppsFlyerにポストバックが送信されます。TestFlightからは送信されません。
 4. 受信したポストバックは、<Anchor target="_blank" href="/marketers/ja/docs/skan-raw-data-reports">ポストバックコピーレポート</Anchor>で確認できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > SKANトラフィックがないアプリでは、設定完了後も次のメッセージが表示されます。「このアプリは、iOSポストバックのコピー（iOS15以降）をAppsFlyerに送信するように設定されていません。 SKAN計測の完全性を確保するには、この設定が必要です。」
 
+<div id="common-misconceptions" />
+
 ## よくある誤解
+
+<div id="dont-believe-everything-you-hear" />
 
 > 📘 **聞いた情報が、必ずしも正しいとは限りません。**
 >
@@ -64,9 +76,13 @@ Appleのドキュメントによると、SKANポストバックの送信先エ�
 > * 追加のエンドポイントを設定すると、すぐにすべてのポストバックのコピーがそこに送信される。
 >   * **誤りです。** 追加のエンドポイントへの送信は、iOS15以降のデバイスでのみ利用できます。それより前のバージョンのデバイスからは、ポストバックのコピーは送信されません。
 
+<div id="traits-and-limitations" />
+
 ## 仕様と制限事項
 
 ポストバックのコピーをAppsFlyerに送信する設定をしてから、ダッシュボードに表示されるまでに数日かかる場合があります。
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

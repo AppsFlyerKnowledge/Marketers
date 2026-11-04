@@ -28,11 +28,15 @@ x-zendesk:
   section_id: 6551285343761
   url: https://support.appsflyer.com/hc/ja/articles/207032106
 ---
+<div id="important" />
+
 > 🚧 **重要**
 >
 > 本記事では、非推奨となったレシート検証機能について説明します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/bulletin-legacy-receipt-validation-is-deprecated">お知らせ：旧レシート検証機能の非推奨化</Anchor>を参照してください。
 
 > **概要：** レシート検証を実装して、iOSとAndroidのアプリストアにおけるアプリ内購入の不正対策を行い、報告された購入が実際に行われたことを確認します。**注意**：これは旧機能です。改良された新しい完全自動の<Anchor target="_blank" href="/marketers/ja/docs/purchase-and-subscription-validation-overview">アプリ内購入の検証機能</Anchor>については、こちらを参照してください。
+
+<div id="receipt-validation-flow" />
 
 ## レシート検証の流れ
 
@@ -64,9 +68,13 @@ x-zendesk:
 * AppsFlyerのレシート検証サービスは、すべてのアカウントプランで無料で利用できます。
 * Androidでは、購入時にエンドユーザーがインターネットに接続していない場合、レシート検証の結果が`null`となり、検証失敗と判定されることがあります。
 
+<div id="important-1" />
+
 > 🚧 **重要**
 >
 > `validateAndLogInAppPurchase`を呼び出すと、**af\_purchase**アプリ内イベントも生成されます。そのため、検証時にaf\_purchaseイベントを別途生成しないでください。別途生成すると、収益イベントが重複します。
+
+<div id="note" />
 
 > 📘 **注意**
 >

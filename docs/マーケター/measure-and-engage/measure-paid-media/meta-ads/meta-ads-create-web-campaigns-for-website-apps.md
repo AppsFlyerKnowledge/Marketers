@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **概要：** WebアプリのMeta広告連携を設定し、コンバージョンAPI（CAPI）経由でWebコンバージョンのシグナルをMetaに送信します。これにより、Metaは広告ターゲティングの最適化とキャンペーンのパフォーマンス計測を行えます。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerは、Webアプリのキャンペーン向けに、Meta広告（`metaweb_int`）との連携をサポートしています。この連携では、MetaのコンバージョンAPI（CAPI）を通じて、アトリビューションデータとコンバージョンデータを直接報告できます。Metaは、このデータを広告ターゲティングの最適化、パフォーマンスの計測、カスタムオーディエンスの作成に利用します。
 
 ユーザーがMeta広告をクリックしてWebサイトに到達すると、AppsFlyerは、購入や登録など、ユーザーが完了したコンバージョンイベントを取得し、CAPI経由でMetaにシグナルを送信します。 Metaは、このデータをターゲティングの改善とキャンペーン成果の評価に利用します。
+
+<div id="see-also-1" />
 
 > 📄 **関連情報**
 >
@@ -36,6 +40,8 @@ AppsFlyerは、Webアプリのキャンペーン向けに、Meta広告（`metawe
 > 📘 **注意**
 >
 > 現在のMeta Web連携では、CAPIへのリエンゲージメントポストバックの送信はサポートされていません。
+
+<div id="prerequisites" />
 
 ### 前提条件
 
@@ -46,12 +52,16 @@ Meta広告連携を有効にする前に、以下を準備してください。
   * <Anchor target="_blank" href="/marketers/ja/docs/configure-web-performance-measurement-settings">Web Performance Measurementの設定</Anchor>
 * <Anchor target="_blank" href="https://www.facebook.com/business/help/1710077379203657?id=180505742745347">Metaビジネスマネージャのビジネスアカウント</Anchor>。
 
+<div id="set-up-meta-ads-web-campaigns-for-website-apps" />
+
 ## Webアプリ向けMeta広告のWebキャンペーンの設定
 
 設定では、Meta広告とAppsFlyerの連携を定義し、両プラットフォームでキャンペーンを設定します。以下の2つのパートを順番に完了してください。
 
 * [パート1：AppsFlyerでMeta広告連携を設定する](#set-up-meta-ads-integration-in-appsflyer)（必須）
 * [パート2：Meta広告でAppsFlyer連携を設定する](#パート2meta広告でのappsflyer連携の設定)（必須）
+
+<div id="part-1-set-up-meta-ads-integration-in-appsflyer" />
 
 ## パート1：AppsFlyerでのMeta広告連携の設定
 
@@ -68,12 +78,16 @@ Meta広告連携を有効にするには、以下の手順に従ってくださ�
 3. <strong>［連携を設定］</strong>をクリックします。<strong>［連携済みパートナー］</strong>の設定ページが表示されます。
 4. <strong>［連携］</strong>タブで、<strong>［パートナーを有効にする］</strong>をオンにします。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > このパートナーとの連携を継続する間は、トグルをオン（<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">有効</Anchor>）のままにしてください。
 
 5. <strong>［ピクセルID］</strong>欄に入力します。 Meta広告マネージャでピクセルIDを取得するには、以下の手順に従ってください。
    1. <Anchor target="_blank" href="https://www.facebook.com/ads/manager">広告マネージャ</Anchor>のサイドメニューから、**［すべてのツール］**><strong>［イベントマネージャ］</strong>に移動します。
+
+      <div id="note-2" />
 
       > 📘 **注意**
       >
@@ -83,6 +97,8 @@ Meta広告連携を有効にするには、以下の手順に従ってくださ�
    3. ピクセル名の下に表示されるピクセルIDをコピーし、AppsFlyerの<strong>［ピクセルID］</strong>欄に貼り付けます。
 6. <strong>［アクセストークン］</strong>欄に入力します。アクセストークンの取得方法は、<Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token">こちらの手順</Anchor>を参照してください。
 7. <Anchor target="_blank" href="/marketers/ja/docs/send-opendsr-api-requests">データ保護法</Anchor>に対応するには、<strong>［Meta広告によるユーザーの個人情報の利用を制限（CCPA）］</strong>をオンにします。
+
+   <div id="note-3" />
 
    > 📘 **注意**
    >
@@ -109,6 +125,8 @@ AppsFlyerのイベントをMeta広告のイベントにマッピングするこ�
    * **オーガニックを含むすべてのメディアソース**：いずれかのパートナーにアトリビューションされたイベントと、オーガニックのイベントについてポストバックを送信します。
 7. <strong>［送信データ］</strong>列で、イベントに収益値を含めて送信するかどうかを選択します。<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#ポストバックに含めるデータ">ポストバックに含めるデータ</Anchor>を参照してください。
 
+   <div id="important" />
+
    > 🚧 **重要！**
    >
    > 購入イベントを設定する場合は、<strong>［送信データ］</strong>列で<strong>［イベント値と収益］</strong>を選択してください。それ以外の選択肢を選ぶと、ポストバックが失敗します。
@@ -131,6 +149,8 @@ AppsFlyerのイベントをMeta広告のイベントにマッピングするこ�
 
 </Accordion>
 
+<div id="part-2-set-up-appsflyer-integration-in-meta-ads" />
+
 ## パート2：Meta広告でのAppsFlyer連携の設定
 
 以下の手順をMeta広告マネージャで行います。
@@ -147,6 +167,8 @@ AppsFlyerのイベントをMeta広告のイベントにマッピングするこ�
 
    1. Meta広告で、キャンペーンの目的に設定するカスタムイベントを選択し、コンバージョンアクションとして指定します。
    2. AppsFlyerの**Meta Web連携**ページで、<strong>［アプリ内イベントポストバック］</strong>の<strong>［マッピング先のパートナーイベント］</strong>列から、AppsFlyerのイベントをカスタムパートナーイベントにマッピングし、Meta広告のコンバージョンアクションと同じ名前を付けます。
+
+   <div id="note-6" />
 
    > 📘 **注意**
    >
@@ -166,6 +188,8 @@ AppsFlyerのイベントをMeta広告のイベントにマッピングするこ�
 
    * **WebサイトURL**：ユーザーをWebサイトに直接誘導し、購入や登録などのWebコンバージョンイベントを完了してもらいたい場合に使用します。
    * **AF計測リンク（OneLink）**：ユーザーをモバイルアプリにリダイレクトし、アプリがインストールされていない場合はWebサイトに誘導するには、AF計測リンクを使用します。これは、アプリとWebの両方のユーザーを対象とするキャンペーンに適しています。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLinkのリンクとユーザー体験の設定</Anchor>を参照してください。
+
+   <div id="important-1" />
 
    > 🚧 **重要！**
    >
@@ -192,13 +216,19 @@ AppsFlyerのイベントをMeta広告のイベントにマッピングするこ�
 https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_source_name}}&af_c_id={{campaign.id}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}
 ```
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > Metaは、広告がクリックされると、遷移先URLに`fbclid={{fbclid}}`を自動的に追加します。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > キャンペーンの分析を容易にするため、キャンペーン名の先頭または末尾に、Webやモバイルなどのキャンペーンの種類を付けてください（例：`campaign-name_web`）。
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >
@@ -212,11 +242,15 @@ https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_sou
 
 <strong>［トラッキング］</strong>セクションで、広告で促進するコンバージョンイベントを選択します。イベントは、<Anchor target="_blank" href="https://www.facebook.com/business/help/898185560232180?id=1205376682832142">イベントマネージャ</Anchor>で設定します。
 
+<div id="important-2" />
+
 > 🚧 **重要！**
 >
 > は選択しないでください。選択すると、MetaがSRN APIを通じてこれらのコンバージョンのアトリビューションを申告するため、レポートと最適化に不整合が生じる可能性があります。
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## Webアトリビューションデータの確認
 
@@ -229,12 +263,16 @@ https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_sou
 >
 > Webアプリのキャンペーンについては、ダッシュボードでのレポート表示はまだ利用できません。 Webキャンペーンのパフォーマンスを他のチャネルと併せて分析できる統合レポートビューは、今後のリリースで提供予定です。
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## Webのコストデータとアトリビューションデータを組み合わせた計測
 
 ダッシュボードと<Anchor target="_blank" href="/marketers/ja/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">Cost ETLレポート</Anchor>で、Meta広告のWebアトリビューションデータとWebコストデータを組み合わせてパフォーマンスを総合的に把握するには、<Anchor target="_blank" href="/marketers/ja/docs/roi360-onboarding-guide#roi360について">ROI360パッケージ</Anchor>を契約し、以下の設定を完了してください。
 
 1. <strong>［コスト］</strong>タブまたは<strong>［コスト設定］</strong>ページから、`metaweb_int`ではなく`facebook_int`を介して、コストデータをWebアプリに連携します。コスト連携の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiの有効化">コストデータ計測のためのROI360 Cost APIの設定</Anchor>を参照してください。
 2. ランディングページURLにキャンペーンID（`af_c_id`）を含めます。 Webアトリビューションに紐づくコスト、クリック、インプレッションのデータを最も細かい単位で表示するには、URLにキャンペーンのすべての階層の情報が含まれていることを確認してください。
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

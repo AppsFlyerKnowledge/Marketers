@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるKahunaは、モバイル時代における企業の成長と発展を支援しています。 Web、メール、モバイル、ソーシャルなど、顧客が利用するさまざまなチャネルで、一人ひとりに合ったコミュニケーションを大規模に展開し、ブランドと顧客の関係を深めます。ビッグデータと機械学習を活用し、適切なメッセージを、適切なチャネルで、適切なタイミングに届けることで、すべての顧客に満足度の高い体験を提供します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
@@ -37,6 +39,8 @@ x-zendesk:
 * iOS：V3.3.3以降
 
 2. Kahunaと連携するには、Kahunaの<Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/deviceid/">Device ID</Anchor>（Kahunaでユーザーを一意に識別するID）をAppsFlyer SDKに設定する必要があります。このパラメータはすべてのポストバックに含まれ、ユーザーの識別に使用されます。アプリのコードに、以下のコードを追加してください。
+
+<div id="important-note" />
 
 > 📘 **重要な注意事項**
 >
@@ -64,6 +68,8 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 </Tab>
 </Tabs>
 
+<div id="setting-up-kahuna" />
+
 ## Kahunaの設定
 
 **前提条件：** パートナーのアカウントが必要です。アカウントがない場合は、連携を設定する前にパートナーに連絡し、アカウントを開設してください。
@@ -86,16 +92,22 @@ Kahunaの設定で使用するのは、<strong><em>［連携］</em></strong>タ
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めてこの画面を開いたとき**は、下にあるトグルをオンにする必要があります。［***パートナーを有効化***］をオンにすると、［連携］タブのパラメータを設定できるようになります。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
 **Kahunaのシークレットキー、ステージング環境、本番環境**
 
 KahunaとAppsFlyerの接続には、固有のシークレットキーを使用します。まだ取得していない場合は、連携の設定を進める前にKahunaから取得するか、以下の手順で取得してください。 [![](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)](https://files.readme.io/941ce1b787ab4c34a502f254f7ec3ec8da356a05c99625f5e60e54b0da1f06b6-360002216249.png)
+
+<div id="obtaining-the-kahuna-secret-key" />
 
 ### Kahunaのシークレットキーの取得
 
@@ -116,6 +128,8 @@ KahunaとAppsFlyerの接続には、固有のシークレットキーを使用�
 * 本番環境を使用する場合は、production欄にPと入力します。
 * 両方を入力した場合は、本番環境にイベントが送信されます。
 * ［**保存**］をクリックします。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -168,6 +182,8 @@ Kahunaでは、権限の設定は利用できません。
 
 </Accordion>
 
+<div id="view-user-attribution-data-in-kahuna" />
+
 ## Kahunaでユーザーのアトリビューションデータを確認する
 
 インストールイベントは、KahunaのメインダッシュボードでNewbiesとして確認できます。
@@ -181,6 +197,8 @@ Kahunaでは、権限の設定は利用できません。
 ユーザーを選択するとMini Profileが開き、Top Eventsセクションにインストールイベント「af\_install」が表示されます。
 
 [![](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)
+
+<div id="testing-with-sandbox" />
 
 ## サンドボックスでのテスト
 

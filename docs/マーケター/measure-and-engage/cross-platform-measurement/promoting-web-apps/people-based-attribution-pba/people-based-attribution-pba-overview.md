@@ -27,11 +27,15 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## PBAの原理原則
 
 * PBAのデータ (PBAの管理画面及びローデータ) は、マーケティング分析とキャンペーンの最適化に使用可能です。
 * Webサイト訪問とユーザーイベントのデータは、 <Anchor target="_blank" href="/marketers/ja/docs/pba-web-sdk-integration-guide">SDKおよび/またはAPIを使用して取得されます。</Anchor>
 * ウェブサイトへの訪問ごと：訪問をもたらすメディアソースが決定されます。結果のイベント（コンバージョン）<Anchor target="_blank" href="/marketers/ja/docs/pba-media-source-attribution-rules">は、</Anchor> 訪問の要因となったメディアソースに紐づけられます。
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### PBAの管理画面とローデータ
 
@@ -41,11 +45,15 @@ x-zendesk:
   * ローデータレポート
 * 管理画面内のデータは、モバイルプラットフォーム、メディアチャネル、メディアタイプなどの項目を使用して<Anchor target="_blank" href="/marketers/ja/docs/using-pba-dashboards">フィルタリング＆グループ化されるので、</Anchor>任意のデータをドリルダウンして分析してください。
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/ja/docs/pba-website-attribution-dashboard">Webサイト計測</Anchor>
 
 [![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)
 
 Webトラフィックソースとマーケティングキャンペーンを分析して、Webサイトでのユーザー訪問とコンバージョンを促進します。広告レベルまでパフォーマンスの違いを明らかにします。リンク内のすべてのAppsFlyerクエリパラメータをサポートし、ユーザーをAppsFlyerサーバーにリダイレクトする必要はありません。
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/ja/docs/pba-web-assisted-installs">Webアシストインストール</Anchor>
 
@@ -56,6 +64,10 @@ Webトラフィックソースとマーケティングキャンペーンを分�
 * さまざまなメディアタイプ（有料、オウンド、アーンド）やメディアチャンネル（ダイレクト、ソーシャルメディア、オーガニック検索）、メディアソースが、どのように相互作用し、全体的なユーザー獲得の取り組みに貢献しているかについての洞察を提供します。
 * Webマーケティングによって促進されたオーガニックインストールを可視化します。
 * Webマーケティングと非オーガニックインストールの関連性を表示します。
+
+<div id="see-also" />
+
+<div id="raw-data" />
 
 ### <Anchor target="_blank" href="/marketers/ja/docs/pba-raw-data-reports">ローデータ</Anchor>
 

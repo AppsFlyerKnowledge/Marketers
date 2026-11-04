@@ -23,6 +23,8 @@ x-zendesk:
 
 このQ&Aでは、Smart BannersとSmart Scriptの実装に関するよくある質問を、セキュリティとサイトの表示速度への影響を中心に紹介します。
 
+<div id="smart-banners-api-security" />
+
 ## Smart BannersのAPIのセキュリティ
 
 <div id="what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it" />
@@ -67,6 +69,8 @@ x-zendesk:
 いいえ。バナーのAPI呼び出しに使用するWebキーを決定するコードには、アクセスも変更もできません。そのため、悪意のある第三者がバナーの処理や、CTA用に生成されるOneLink URLを改ざんすることはできません。
 
 </Accordion>
+
+<div id="smart-banners-script-hosting-security" />
 
 ## Smart Bannersのスクリプト配信に関するセキュリティ
 
@@ -121,6 +125,8 @@ Webサイトの所有者が、このオプションを明示的に<Anchor target
 
 </Accordion>
 
+<div id="smart-banners-performance" />
+
 ## Smart Bannersのパフォーマンス
 
 <div id="does-the-smart-banner-web-sdk-impact-website-load-speed" />
@@ -163,6 +169,8 @@ Webサイトへのコードの追加は読み込み時間に影響する可能�
 * バナー全体で同じフォントの太さを使用します。
 
 </Accordion>
+
+<div id="smart-script-security-and-performance" />
 
 ## Smart Scriptのセキュリティとパフォーマンス
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** 概要： Data Clean Room (DCR) で設定したレポートを操作・管理する手順を説明します。
 
+<div id="introduction" />
+
 ## はじめに
 
 この記事では、作成済みのレポートの使用について説明します。これらのレポートとそのステータスの完全なリストは、DCR の**レポート**タブで確認できます。  
@@ -32,6 +34,8 @@ x-zendesk:
 
 * <Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-creating-attribution-data-reports">アトリビューションデータレポートの作成</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-creating-in-app-event-reports">アプリ内イベントレポートの作成</Anchor>
+
+<div id="editing-or-deleting-a-report" />
 
 ## レポートの編集または削除
 

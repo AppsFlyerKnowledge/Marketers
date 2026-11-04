@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="ip-masking" />
+
 ## IPマスキング
 
 IPマスキングをオンにした場合：
@@ -30,9 +32,13 @@ IPマスキングをオンにした場合：
 * ユーザーのIPアドレスは、ローデータレポートには記載されず、パートナーへのポストバックを通じて提供されることもありません
 * IPアドレスフィールドには、1.1.1.1という値が入力されます
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aemのデータ共有">IPマスキングがオンになっている場合</Anchor>、AEMデータ共有はサーバー間イベントとSDKイベントの両方でサポートされません。つまり、データはMeta広告と共有されません。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -63,11 +69,13 @@ IPマスキングをオンにした場合：
 > | 1月15日 | オフ | User\_A 192.0.2.1  <br />User\_B 1.1.1.1  <br />User\_C 203.0.113.1 |
 
 
-<span id="enabling-ip-masking"></span>IPマスキングはアプリごとに設定され、すべてのソースからのインストールに影響します。
+<span id="turn-on-ip-masking"></span><span id="enabling-ip-masking"></span>IPマスキングはアプリごとに設定され、すべてのソースからのインストールに影響します。
 
 **IPマスキングを有効にするには：**
 
 1. **AppsFlyer管理画面左メニュー** **設定** > アプリ設定へ移動します。
+
+<div id="ip-masking-in-raw-data-reports" />
 
 ## ローデータレポートでIP Maskingを有効にする
 

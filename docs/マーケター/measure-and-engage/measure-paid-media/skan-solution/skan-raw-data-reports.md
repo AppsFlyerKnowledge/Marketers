@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** SKANローデータレポートには、元のSKANポストバックに加え、AppsFlyerがiOSから受信したポストバックを変換・デコードして生成した、行単位のデータが含まれます。データは、<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers">Data Locker</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/push-api-streaming-raw-data">Push API</Anchor>経由で利用できます。契約プランにローデータが含まれている場合、Data Lockerの契約は不要です。
 
+<div id="skan-raw-data-reports" />
+
 ## SKANローデータレポート
 
 原則：
@@ -59,6 +61,8 @@ x-zendesk:
 
 * campaign\_name、ad\_network\_campaign\_id、ipなど、任意の追加情報をアドネットワークが提供していない場合。
 * Appleのしきい値ポリシーにより、データが開示されなかった場合。 source\_app\_id、skad\_campaign\_id、skad\_conversion\_valueなどが該当します。
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## SKANローデータレポートの形式と内容
 
@@ -207,6 +211,8 @@ x-zendesk:
 
 <Accordion title="ローデータのフィールド形式">
 
+<div id="field-formats" />
+
 #### フィールドの形式
 
 | 形式名 | 説明 |
@@ -237,6 +243,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 補足情報
 
 <div id="traits-and-limitations" />
@@ -257,6 +265,8 @@ x-zendesk:
 | アカウントユーザーのアクセス | 利用できます。アカウントの権限に従います。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

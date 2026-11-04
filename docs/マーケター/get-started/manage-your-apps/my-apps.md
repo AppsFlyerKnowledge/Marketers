@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerですべてのアプリを表示したり、検索やフィルターをかけたり、お気に入りのアプリをピン留めしたり、アプリごとに特定のアクションを実行したりできます。
 
+<div id="overview" />
+
 ## 概要
 
 [![New-My-apps.jpg](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)

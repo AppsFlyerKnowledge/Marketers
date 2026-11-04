@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 
+<div id="event-integrations" />
+
 ## イベント連携
 
 このドキュメントでは、mParticleのイベントデータをAppsFlyerで活用するための設定について説明します。
@@ -38,6 +40,8 @@ x-zendesk:
 1. mParticleをご利用の場合は、アプリにAppsFlyerキットを組み込む必要があります。 mParticle SDKはAppsFlyer SDKを初期化し、必要なアプリのライフサイクルイベントをすべてAppsFlyer SDKに転送します。
 
 2. mParticle SDKとともにAppsFlyerキットをアプリに設定する方法は、<Anchor target="_blank" href="https://github.com/mParticle/mParticle-apple-SDK">iOS</Anchor>および<Anchor target="_blank" href="https://github.com/mParticle/mparticle-android-sdk">Android</Anchor> SDKのGitHubリポジトリを参照してください。
+
+<div id="configure-the-appsflyer-event-integration" />
 
 ### AppsFlyerのイベント連携の設定
 
@@ -87,6 +91,8 @@ AppsFlyerがConnected Outputとして表示されます。Custom Mappingsなど�
 
 ![Connected Outputとして表示されたAppsFlyer](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
 
+<div id="feed-integrations" />
+
 ## フィード連携
 
 このセクションでは、AppsFlyerからmParticleへのデータフィードの接続方法を説明します。
@@ -118,6 +124,8 @@ Setup画面に移動し、設定を続けられます。
 7. 表示された認証情報を使って、AppsFlyer管理画面で設定を完了します。
 
 ![AppsFlyer管理画面の認証設定](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
+
+<div id="deferred-deep-linking" />
 
 ## ディファードディープリンク
 
@@ -202,6 +210,8 @@ iOSの場合：UserDefaultsを使用します。<Anchor target="_blank" href="ht
 </Tab>
 </Tabs>
 
+<div id="appsflyermparticle-use-cases" />
+
 ### AppsFlyer／mParticleのユースケース
 
 | ユースケース | プラットフォーム | AppsFlyer SDKのメソッド | mParticle-AFキットのメソッド |
@@ -212,6 +222,8 @@ iOSの場合：UserDefaultsを使用します。<Anchor target="_blank" href="ht
 | ディファードディープリンク | Android | onConversionDataSuccess | checkForDeepLink |
 | Android App Links | Android |  | continueUserActivity |
 | アプリの起動 | Android | onAppOpenAttribution | checkForDeepLink |
+
+<div id="handling-user-flags" />
 
 ### ユーザーフラグの処理
 
@@ -232,6 +244,8 @@ AppsFlyerでは、初回起動後も、パーソナライズしたコンテン�
 AppsFlyerは、iOSの***UserDefaults***とAndroidの***Shared Preferences***を使って、ユーザーの初回起動で適切なページへの誘導が必要なのか、それともすでに起動済みで誘導も完了しているのかを判別します。この処理では、UserDefaults／SharedPreferencesに`alreadyLoggedAppsflyerConversionData`の値を読み書きし、初回起動時に***af\_dp***の値を参照しないようにします。
 
 ディープリンクでパーソナライズしたコンテンツを表示する方法の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">こちら</Anchor>を参照してください。
+
+<div id="enabling-appsflyer-uninstall-measurement-in-mparticle" />
 
 ## mParticleでAppsFlyerのアンインストール計測を有効にする
 

@@ -16,6 +16,8 @@ x-zendesk:
 ---
 > **概要：** ChatGPT 広告 は AppsFlyer の連携パートナーであり、OpenAI の広告プラットフォームです。この連携を設定することで、ChatGPT の広告キャンペーンによって獲得したモバイルアプリのインストール、アプリ内イベント、Webサイトのコンバージョンを計測・アトリビューションできます。
 
+<div id="about-the-integration-with-chatgpt-ads" />
+
 ## ChatGPT 広告との連携について
 
 AppsFlyer と ChatGPT 広告（OpenAI）の連携により、ChatGPT 広告のキャンペーンによって獲得したアプリのインストール、アプリ内イベント、および Web サイトのコンバージョンを計測・アトリビューションできます。この連携は、モバイルアプリと Web サイトの両方の計測に対応しています。
@@ -26,6 +28,8 @@ AppsFlyer と ChatGPT 広告（OpenAI）の連携により、ChatGPT 広告の�
 Web サイトで ChatGPT 広告のピクセルも利用している場合、ChatGPT 広告は共通のイベント ID を使用して、サーバーサイド（CAPI）のイベントとピクセルイベントを重複排除します。そのため、両方を並行して利用しても、コンバージョン数が重複して計上されることはありません。
 
 AppsFlyerへ送信するイベントペイロードに、この共通IDを `af_customer_event_id` として含めてください。（詳細：`af_customer_event_id`Webサイトの連携af\_customer\_event\_id）
+
+<div id="set-up-the-integration" />
 
 ## 連携設定
 
@@ -45,6 +49,8 @@ AppsFlyerへ送信するイベントペイロードに、この共通IDを `af_c
 * [**モバイルアプリ**](#モバイルアプリの連携) - ChatGPT 広告キャンペーンによるインストール、リエンゲージメント、およびアプリ内イベントをアトリビューションします。
 * [**Web サイト**](#webサイトの連携) - Web コンバージョンイベントを ChatGPT 広告の Conversions API に送信し、ChatGPT 広告のピクセルとの重複排除を行います。
 
+<div id="integrate-your-mobile-app" />
+
 ## モバイルアプリの連携
 
 以下の手順に従って、モバイルアプリ向けのアトリビューションおよびアプリ内イベントのポストバックを ChatGPT 広告用に設定します。
@@ -61,6 +67,8 @@ AppsFlyerへ送信するイベントペイロードに、この共通IDを `af_c
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 #### パートナーの有効化
 
 **連携を有効にするには：**
@@ -69,6 +77,8 @@ AppsFlyerへ送信するイベントペイロードに、この共通IDを `af_c
 
 **重要な注意点：** ChatGPT 広告を利用している間は、このトグルをオンのままにしてください。連携を無効にすると、ChatGPT 広告キャンペーンに対するアトリビューションとポストバックの送信が停止します。  
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>をご覧ください。
+
+<div id="general-settings" />
 
 #### 一般設定
 
@@ -80,11 +90,15 @@ AppsFlyerへ送信するイベントペイロードに、この共通IDを `af_c
 
 **高度なマッチングデータ共有：** AppsFlyerへ送信されるイベント情報に、ハッシュ化されたメールアドレス、電話番号、名、姓などの高度なマッチング用フィールドが含まれている場合、これらの情報をChatGPT広告と共有するには、高度なマッチングデータの共有をオンにします。（詳細：<Anchor target="_blank" href="/marketers/ja/docs/advanced-matching-data-sharing">高度なマッチングデータ共有</Anchor>）
 
+<div id="default-postbacks" />
+
 #### デフォルトのポストバック
 
 ポストバックとは、AppsFlyer が ChatGPT 広告に対して、アトリビューションされたイベント（インストールやアプリ内アクションなど）を通知するサーバー間通信（Server-to-Server）です。このセクションには、設定されているポストバックが表示されます。インストールおよびリエンゲージメントのポストバック設定について<Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">詳しくはこちらをご覧ください。</Anchor>
 
 デフォルトのポストバック設定について<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">詳しくはこちらをご覧ください。</Anchor>
+
+<div id="in-app-event-settings" />
 
 #### アプリ内イベントの設定
 
@@ -94,6 +108,8 @@ ChatGPT 広告にアプリ内イベントのポストバックを送信するに
 * API key
 
 詳細については、[前述の 一般設定](#一般設定) を参照してください。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントのポストバック
 
@@ -149,11 +165,15 @@ AppsFlyerは、この値をイベントIDとしてChatGPT広告へ転送しま�
 
 ChatGPT 広告（OpenAI）は計測リンクをサポートしています。
 
+<div id="choose-your-attribution-type" />
+
 #### アトリビューションの種類を選択する
 
 キャンペーンの要件に応じて、最終ページURLとして単一プラットフォーム向けの計測りリンクまたは<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneLink</Anchor>、もしくはSmart Scriptを実装したランディングページへ遷移させるのかを決定します。
 
 **推奨**：広告の遷移先にはランディングページのURL末尾に&pid=openai\_intを追加したものを使用し、ランディングページ側に予め実装した<Anchor target="_blank" href="/marketers/ja/docs/onelink-smart-script-overview">Smart Script</Anchor>または<Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor>を使って、ユーザーをApp StoreまたはGoogle Playへ誘導してください。
+
+<div id="select-parameters" />
 
 #### パラメーターを選択する
 
@@ -203,6 +223,8 @@ ChatGPT 広告から広告収益データを取得することはできません
 
 </Accordion>
 
+<div id="integrate-your-website" />
+
 ## Webサイトの連携
 
 以下の手順に従って、Web サイト向けに ChatGPT 広告へのサーバーサイドイベント送信を設定します。
@@ -218,6 +240,8 @@ ChatGPT 広告から広告収益データを取得することはできません
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner-1" />
+
 #### パートナーの有効化
 
 **連携を有効にするには：**
@@ -227,6 +251,8 @@ ChatGPT 広告から広告収益データを取得することはできません
 **重要な注意点：** ChatGPT 広告を利用している間は、このトグルをオンのままにしてください。連携を無効にすると、Web サイトのイベント転送が停止します。  
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>をご覧ください。
 
+<div id="in-app-event-settings-1" />
+
 #### アプリ内イベントの設定
 
 ChatGPT 広告にイベントのポストバックを送信するには、以下の認証情報を入力します。
@@ -235,6 +261,8 @@ ChatGPT 広告にイベントのポストバックを送信するには、以下
 * **API key** - Events API の呼び出しを認証するために API Key が必要です。ChatGPTの広告マネージャーアカウントの コンバージョンタブから取得してください。
 
 **高度なマッチングデータ共有：** AppsFlyerへ送信されるイベント情報に、ハッシュ化されたメールアドレス、電話番号、名、姓などの高度なマッチング用フィールドが含まれている場合、これらの情報をChatGPT広告と共有するには、高度なマッチングデータの共有をオンにします。（詳細：<Anchor target="_blank" href="/marketers/ja/docs/advanced-matching-data-sharing">高度なマッチングデータ共有</Anchor>）
+
+<div id="in-app-event-postbacks-1" />
 
 #### アプリ内イベントのポストバック
 
@@ -282,11 +310,15 @@ ChatGPT 広告とのWebサイト連携では、権限タブは利用できませ
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特徴と制限事項
 
 | 特性 | 説明 |
 | --- | --- |
 | サポート対象地域 | <Anchor target="_blank" href="https://help.openai.com/en/articles/20001245-ads-manager-availability">ChatGPT広告マネージャーが利用可能な国一覧</Anchor>をご確認ください。 |
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

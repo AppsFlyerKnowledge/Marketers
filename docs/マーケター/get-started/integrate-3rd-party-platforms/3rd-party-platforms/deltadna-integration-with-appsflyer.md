@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
 
+<div id="integrating-with-deltadna" />
+
 ## deltaDNAとの連携
 
 > 🚧 **Important**
@@ -105,6 +107,8 @@ AppsFlyer.setCustomerUserID (DDNA.Instance.UserID)
 > **注意**
 >
 > カスタマーユーザーIDまたはUserIDが定義されていない場合、deltaDNAはAppsFlyerからのインストールポストバックを拒否します。
+
+<div id="viewing-the-attribution-data-in-the-deltadna-console" />
 
 ## deltaDNAコンソールでアトリビューションデータを確認する
 

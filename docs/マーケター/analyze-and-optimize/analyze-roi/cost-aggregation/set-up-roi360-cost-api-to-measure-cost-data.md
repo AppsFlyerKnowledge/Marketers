@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** アプリ単位またはメディアソースのアカウント単位で広告費APIを利用し、広告費に関連するLTV（顧客生涯価値）ベースの成果指標を含む、マーケティング広告費の集計データを取得します。
 
+<div id="overview" />
+
 ## 概要
 
 ROI360は、アプリ単位とアカウント単位の両方で広告費を計測できます。アプリごとの詳細な広告費や、メディアソースのアカウント全体の広告費を分析できます。
@@ -92,6 +94,8 @@ ROI360は、アプリ単位とアカウント単位の両方で広告費を計�
 
 各メディアソースの方式は、<Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">メディアソースの広告費連携一覧</Anchor>の<strong>［連携方法］</strong>列で確認できます。
 
+<div id="map-apps-to-site-ids" />
+
 ## サイトIDマッピング
 
 <Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">一部のメディアソースの連携</Anchor>では、広告費を報告する際に<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#attribution::e9b53459">サイトID</Anchor>フィールドに設定する値を選択できます。これにより、AppsFlyerのアトリビューションリンクに含まれる`site-id`マクロを、メディアソースが想定する値に合わせられます。
@@ -103,6 +107,8 @@ ROI360は、アプリ単位とアカウント単位の両方で広告費を計�
 
 1. 連携済みパートナーの<strong>［広告費］</strong>タブで<strong>［サイトIDマッピング］</strong>に移動し、ドロップダウンから設定を選択します。
 2. <strong>［広告費設定を保存］</strong>をクリックします。変更はUTCの翌日から有効になります。
+
+<div id="edit-and-delete-an-integration" />
 
 ## 広告費連携の削除
 
@@ -261,6 +267,8 @@ ROI360をご利用のお客様は、<strong>［広告費設定］</strong>と<st
 > InCost対応アドネットワークを通じて、その他のメディアソースも利用できます。 InCost対応アドネットワークの全一覧は、担当のカスタマーサクセスマネージャー（CSM）にお問い合わせください。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

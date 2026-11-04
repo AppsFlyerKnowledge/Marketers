@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要:** Audiences追加識別子APIを使用して、社内システム（ビジネスインテリジェンスやCRMなど）からAppsFlyerオーディエンスにユーザー識別子を一括アップロードし、これらの識別子に基づいてより幅広いオーディエンスコミュニケーションを関連パートナーに提供します。
 
+<div id="about-the-api" />
+
 ## APIについて
 
 Audiences追加識別子APIを利用することで、社内システムから以下のユーザー識別子をAppsFlyerオーディエンスに追加できます。
@@ -34,9 +36,13 @@ Audiences追加識別子APIを利用することで、社内システムから�
 
 後にこれらの識別子をオーディエンスパートナーに送信することを選択できます（<Anchor target="_blank" href="/marketers/ja/docs/audiences-user-identifier-policy">アカウントレベルのユーザー識別子ポリシー</Anchor>に従って）、これによりパートナーはターゲットオーディエンスをより正確に識別できます。すべての広告パートナーがすべての識別子をサポートするわけではないことに注意してください。
 
+<div id="when-should-i-use-this-api" />
+
 ### このAPIはいつ使用するべきですか？
 
 このAPIは、大量の識別子データをアップロードする際に使用するよう設計されています。これは通常、時間の経過と共に収集されたデータを指します（例：過去12か月間にアプリのすべてのユーザーから収集されたハッシュ化されたメール）。特定のデバイスからの識別子をリアルタイムに個別更新するには、AppsFlyer SDKまたはS2SモバイルAPIで<Anchor target="_blank" href="/marketers/ja/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">追加識別子を設定</Anchor>してください。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -44,14 +50,20 @@ Audiences追加識別子APIを利用することで、社内システムから�
 >
 > **タイミング:** 識別子の正確な一致を保証するため、Audiences追加識別子APIは、AppsFlyer SDKによって主要な識別子がレポートされた**翌日からすぐに**使用できます（UTC）。例えば、2022年1月3日（UTC）に報告された識別子は、2022年1月4日（UTC）以降にこのAPIを通じて更新できます。
 
+<div id="actions" />
+
 ## アクション
 
 * [識別子の追加／変更](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
 * [識別子の削除](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
 
+<div id="authentication" />
+
 ## 認証
 
 リクエストには、アカウントの<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">AppsFlyer V2.0 APIトークンを含むHTTPヘッダーが含まれている必要があります。アカウント管理者に、AppsFlyer管理画面からこのトークンを取得するよう依頼してください。</Anchor>
+
+<div id="api-specifications-and-sample-code" />
 
 ## API仕様およびサンプルコード
 
@@ -111,6 +123,8 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{ハッシュ化されたメール}` | 最大2つのハッシュ化されたメールアドレスの配列<br /><br />形式：<ul><li>小文字</li><li>空白なし</li><li>SHA256ハッシュ済み</li></ul>ハッシュ化前の値の例：name@domain.com | いいえ |
 | `{電話番号_sha256}` | 電話番号（下記注記参照）<br /><br />形式：<ul><li>記号、文字、先頭のゼロを含めない</li><li>国コードを含める</li><li>SHA256ハッシュ済み</li></ul>ハッシュ化前の値の例：<br /><br />442070313000 | いいえ |
 | `{電話番号_e164_sha256}` | E164形式の電話番号（下記の注記を参照）<br /><br />形式<ul><li>E164電話番号</li><li>SHA256ハッシュ済み</li></ul>ハッシュ化前の値の例：<br /><br />+442070313000 | いいえ |
+
+<div id="notes" />
 
 > 📘 **注**
 >

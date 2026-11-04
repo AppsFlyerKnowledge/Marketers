@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** ビジネス上の要件に合わせてイベント名と送信内容を定義し、アプリ内イベントの送信に必要なアプリのコード（ネイティブAndroid・iOS、Unity）を自動生成します。
 
+<div id="introduction" />
+
 ## はじめに
 
 アプリ内イベントは、アプリのインストール後にユーザーが行う操作をもとに、**アプリの運営者が流入元ごとのユーザーの質を評価する**ための重要な手段です。また、CPAベースのマーケティングキャンペーンにもよく利用されます。
@@ -37,9 +39,13 @@ AppsFlyerの<Anchor target="_blank" href="https://evgen.appsflyer.com/">アプ�
 * **自動生成したコードを**Android・iOSのモバイルアプリ開発者に渡すことで、**数日分の作業を削減し**、不要なやり取りやミスを減らす。
 * **作成済みの内容を再利用する**ことで、後からイベントを更新・追加したり、別のアプリのイベントを設定したりする作業を効率化する。
 
+<div id="using-the-in-app-event-generator" />
+
 ## アプリ内イベント生成ツールの使用方法
 
 **アプリ内イベント生成ツールを使って、新しいアプリのイベントセットを作成したり、既存のイベントセットを更新したりできます。**
+
+<div id="creating-a-new-event-set" />
 
 ### 新しいイベントセットの作成
 
@@ -51,6 +57,8 @@ AppsFlyerの<Anchor target="_blank" href="https://evgen.appsflyer.com/">アプ�
 4. **`</>` Code**（コード）ボタンをクリックして、開発者向けに生成されたコードを表示・コピーします。対応言語はJava（ネイティブAndroid）、Obj-C／Swift（ネイティブiOS）、C#（Unity）です。
 5. **Download .zip**（ZIPをダウンロード）をクリックし、今後の利用や開発者・同僚との共同作業に備えてイベントセットを保存します。
 
+<div id="updating-an-existing-event-set" />
+
 ### 既存のイベントセットの更新
 
 **既存のイベントセットを更新するには：**
@@ -61,6 +69,8 @@ AppsFlyerの<Anchor target="_blank" href="https://evgen.appsflyer.com/">アプ�
 4. **`</>` Code**（コード）ボタンをクリックして、開発者向けに生成されたコードを表示・コピーします。対応言語はJava（ネイティブAndroid）、Obj-C／Swift（ネイティブiOS）、C#（Unity）です。
 5. **Download .zip**（ZIPをダウンロード）をクリックし、今後の利用や開発者・同僚との共同作業に備えてイベントセットを保存します。
 
+<div id="adding-events" />
+
 ### イベントの追加
 
 **イベントセットに新しいイベントを追加するには：**
@@ -70,6 +80,8 @@ AppsFlyerの<Anchor target="_blank" href="https://evgen.appsflyer.com/">アプ�
 3. イベントの目的を入力し、ビジネス上の利用シーンを説明します。
 4. イベント送信のきっかけとなる操作を入力し、ユーザーの一連の行動のうち、どのタイミングでイベントを送信すべきかを説明します。この説明は生成されたコードにコメントとして追加され、開発者がすぐに参照できます。
 5. ［任意］イベントに1つ以上のパラメータを追加します。
+
+<div id="adding-parameters" />
 
 ### パラメータの追加
 
@@ -82,6 +94,8 @@ AppsFlyerの<Anchor target="_blank" href="https://evgen.appsflyer.com/">アプ�
 5. 開発者が実装しやすいように、パラメータの概要、フィールドの型、またはアプリ内でパラメータ値を取得する場所を入力します。この内容は、生成されたコードの各イベントパラメータにコメントとして表示されます。
 
 **注意**：<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#predefined-and-custom-events">定義済みの名称</Anchor>を使用すると、イベントとパラメータをパートナー側のイベントとパラメータに自動で対応付けられるため、この方法を推奨します。
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

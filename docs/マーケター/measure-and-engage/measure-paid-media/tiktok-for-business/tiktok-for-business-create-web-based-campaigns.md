@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **概要：** TikTok AdsのWebキャンペーンを使用した、TikTok AdsにおけるWebからアプリへのコンバージョン計測について記載しています。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerでは、WebキャンペーンにおけるTikTok Ads（`tiktokweb_int`）との連携をサポートしており、TikTokのイベントAPIを使ってキャンペーンのアトリビューション情報とコンバージョンデータへTikTokへレポートすることができます。このデータを、TikTokは広告ターゲティングの最適化、パフォーマンスの計測、カスタムオーディエンスの作成に活用できます。
+
+<div id="important" />
 
 > 🚧 **重要**
 >
 > 現在、TikTok Webとの連携において、CAPIへのリエンゲージメントCVのポストバック送信はサポートしていません。
 
+<div id="prerequisites" />
+
 ### 前提条件
 
 TikTok Webの連携を有効にする前に、[TikTok Ads Manager](https://getstarted.tiktok.com/grow-your-business-gb?lang=en&attr_source=google&attr_source=google&attr_medium=search-br-ad&attr_medium=search-br-ad&attr_adgroup_id=155057567247&attr_adgroup_id=155057567247&attr_term=tiktok%20ads%20manager&attr_term=tiktok%20ads%20manager&no_parent_redirect=1&no_parent_redirect=1&creative=%7BGenZCopy%7D&matchtype=e&gad_source=1&gad_campaignid=20368896948&gbraid=0AAAAACeGRgRdqveOjiUJwxN0-j9g7VjPg&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkTKsL0d1xAZLIO_9GIkDDIJR-jZs9jDGVa1hTDbsLzcxZl2j6p7ITcaAhf1EALw_wcB)のビジネスアカウントを所有していることを確認してください。
+
+<div id="how-to-create-a-tiktok-web-ads-campaign" />
 
 ### TikTok AdsのWebキャンペーンの作成方法
 
@@ -46,6 +54,8 @@ TikTok Webの連携を有効にする前に、[TikTok Ads Manager](https://getst
 
 * <Anchor target="_blank" href="/marketers/ja/docs/meta-ads-create-web-based-campaigns#h_01HZKNS17KPJMP74HQKWY022T2">OneLink Smart Scriptを使用したランディングページの作成</Anchor>（任意）
 * [OneLink Smart Bannerを使用したランディングページの作成](#onelink-smart-bannerを使ったランディングページの作成)（任意）
+
+<div id="set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## AppsFlyer上でのTikTok Web Adsの連携設定
 
@@ -65,6 +75,8 @@ TikTok Ad Web連携を有効にするには：
 6. **Pixel ID：** Pixel ID を入力してください。TikTok Ads Manager内で作成もしくは取得できます。詳細は<Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">こちら</Anchor>を参照してください。
 7. **Access Token：** Access Tokenを入力してください。TikTok Ads Manager内で作成もしくは取得できます。詳細は<Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">これらの指示</Anchor>に従ってください。
 8. **ユーザーの個人情報のTikTok Adsでの使用を制限する（CCPA）：** このトグルをオンにすると、<Anchor target="_blank" href="/marketers/ja/docs/send-opendsr-api-requests">CCPAに沿ったデータ保護の遵守</Anchor>が可能になります。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -109,6 +121,8 @@ AppsFlyerでは、[Smart Script](#onelink-smart-scriptを使ったランディ�
 6. **送信オプション**の項目で、**このパートナーのみ**を選択すると、このパートナーから発生したユーザーが実行したイベントのみを対象に、アプリ内イベントのポストバックが送信されるようになります。
 7. **送信データ**の項目で、収益値を送信するかどうかを選択します。詳細：<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#ポストバックに含めるデータ">ポストバックに含めるデータ</Anchor>
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > * 購入イベントを設定する場合は、**送信データ**項目は**イベント値と収益を送信**に設定してください。他の選択肢を選んだ場合はポストバックが正しく送付されません。
@@ -123,6 +137,8 @@ AppsFlyerでは、[Smart Script](#onelink-smart-scriptを使ったランディ�
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-tiktok-ads" />
+
 ## TikTok Ads上におけるAppsFlyerとの連携設定
 
 TikTok Ads Manager上で以下の作業を行ってください。
@@ -132,6 +148,8 @@ TikTok Ads Manager上で以下の作業を行ってください。
 <Accordion title="1. キャンペーンの種類、目的、目標の設定">
 
 Appsflyerから送信される任意のアプリ内イベントをキャンペーンの目標として選択するか、アプリのインストールを最適化したい場合は「ダウンロード」を選択できます。
+
+<div id="warning" />
 
 > ❗️ **要注意**
 >
@@ -154,6 +172,8 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
 2. **URLパラメーターを作成する**をクリックして、パラメーターをランディングページURL もしくは AppsFlyer計測リンクに対してに追加してください。
 3. **カスタムパラメータ**の項目で、**パラメータを追加**をクリックしてください。
 4. AppsFlyerのパラメータをTikTokの値にマッピングしてください。マッピングするパラメータは、遷移先URLがランディングページ、AppsFlyerの計測リンク、PC・コンソールのストアかによって異なります。
+
+   <div id="landing-page-or-attribution-link" />
 
    #### ■ ランディングページまたはAppsFlyerの計測リンクの場合：
 
@@ -178,6 +198,8 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
    ```
 
    ※アプリのAPKファイルがGoogle Playストアに公開されていない場合には、 <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#af_r">`af_r`</Anchor> のパラメータを追加して、ストアのURLを記載してください。（例：`https://Add-your-store-url.com` ）
+
+   <div id="pc-or-console-store" />
 
    #### ■ PC・コンソールストアの場合：
 
@@ -211,12 +233,16 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
    https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=tiktokweb_int&af_campaign_id=__campaign_id__&af_campaign=__campaign_name__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
    ```
 
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > TikTokは、広告がクリックされると遷移先URLに`ttclid={{ttclid}}`を自動的に追加します。
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## OneLink Smart Scriptを使ったランディングページの作成
 
@@ -251,6 +277,8 @@ Smart Scriptを使用してTikTok Adsのキャンペーンを設定するには�
 
 1. キャンペーンのOneLink計測リンク用に、OneLinkテンプレートを設定してください。詳細は<Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#onelinkテンプレートの作成">OneLinkテンプレートの作成方法</Anchor>をご覧ください。
 2. Smart Scriptのコードを作成してください。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Scriptの作成方法</Anchor>をご覧ください。
+
+   <div id="note-6" />
 
    > 📘 **注意**
    >
@@ -292,12 +320,16 @@ TikTok Adsのキャンペーン向けにSmart Scriptをクロスプラットフ�
 
 * 送信URLに、受信パラメータ `ttclid` を含めるよう、開発者に忘れずに依頼してください。
 
+  <div id="note-5" />
+
   > 📘 **注意**
   >
   > AppsFlyerのローデータレポートのカラムに表示するには、受信URLの `ttclid` パラメータを（送信URLの`ttclid` パラメータに追加で）送信URLパラメータの `af_sub[1-5]` のいずれかにもマッピングする必要があります。
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## OneLink Smart Bannerを使ったランディングページの作成
 
@@ -337,15 +369,21 @@ Smart BannerをTikTok Adsキャンペーンを設定するには、以下の手�
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Web to Appの計測データの確認方法
 
 Webキャンペーンの各種イベントは、元々の`tiktokweb_int`のPIDでTikTokへ送信されますが、AppsFlyerの管理画面上およびローデータレポートでは`tiktokglobal_int`のPIDの下に記録されます。この仕様は、主要なコンバージョンイベントとコンバージョンアシストイベントの両方に適用されます。
 
 この統一されたレポートビューにより、Webとアプリのキャンペーンパフォーマンスを、包括的なWebとモバイルのコスト情報を含んだ状態で分析できるようになります。
 
+<div id="view-in-the-dashboard" />
+
 ### 管理画面上でのデータ表示について
 
 すべてのTikTokのWeb-to-Appキャンペーンの計測データは、オーバービューとアクティビティダッシュボードにおいて`tiktokglobal_int`の下に紐づく形で表示されます。これにより、プラットフォーム全体でのキャンペーンの結果を確認できるようになります。標準フィルタとブレークダウンを使用して、TikTok AdsのデータにおけるアプリとWebのトラフィックを比較してください。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### ローデータとAPIレポート内でのデータ表示
 

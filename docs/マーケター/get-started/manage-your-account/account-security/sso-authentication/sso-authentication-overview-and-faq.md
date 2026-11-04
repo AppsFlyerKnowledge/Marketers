@@ -21,13 +21,19 @@ x-zendesk:
 ---
 > **概要：** シングルサインオン（SSO）認証の仕組みと、IDプロバイダー（IdP）を経由してAppsFlyerにログインする手順を説明します。 SSOログインについてのよくある質問も確認できます。
 
+<div id="what-is-sso-authentication" />
+
 ## SSO認証とは
 
 SSOは、IDプロバイダー（Okta、Azure AD、OneLoginなど）で一度ログインすることで、複数の独立したアプリ、システム、プラットフォームにアクセスできる認証方式です。 IdPにAppsFlyerを追加すると、ユーザーはシングルサインオン（SSO）により、IdPからAppsFlyerへ直接ログインできます。 1組のログイン情報だけで、より**安全に認証**して自動ログインできます。
 
+<div id="how-does-sso-authentication-work" />
+
 ## SSO認証の仕組み
 
 AppsFlyerは、SAML 2.0プロトコルを使用したSSO認証に対応しています。 SAML 2.0対応のIdPにAppsFlyerの認証証明書を設定すると、IdPは認証済みユーザーのデータを含むトークンを生成します。 IdP側からAppsFlyer側にも同様の設定を行い、IdPのトークンをAppsFlyerに登録します。
+
+<div id="the-appsflyer-service-provider-authentication-certificate" />
 
 ## AppsFlyer（サービスプロバイダー）の認証証明書
 
@@ -36,9 +42,13 @@ AppsFlyerは、データの暗号化とSSOリクエストの署名に使用す�
 * **AppsFlyer署名証明書：** <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">AppsFlyerのメタデータURL</Anchor>から作成する、AppsFlyerの証明書
 * **CA署名証明書：Amazonが署名した**AppsFlyerの証明書。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyerは、シリアル番号が負の値の証明書には対応していません。
+
+<div id="troubleshooting-and-faq" />
 
 ## トラブルシューティングとよくある質問
 
@@ -86,6 +96,8 @@ AppsFlyerのSSO証明書の有効期限が近づくと、管理画面にアラ�
 <Accordion title="［SSOログインを必須にする］が操作できません。有効にするにはどうすればよいですか？">
 
 <strong>［SSOログインを必須にする］</strong>を選択して設定を保存すると、この項目は操作できなくなります。 <strong>［SSOログインを必須にする］</strong>を再び操作できるようにするには、SSO設定の<Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">手順2</Anchor>を最初からやり直す必要があります。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

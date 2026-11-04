@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **概要：** データの保持期間およびユーザーレベルデータ（ローデータ）の利用に関するポリシーは、AppsFlyer、関連法令、およびSRN（以下「**パートナー**」）の利用規約に基づいて決定されます。
 
+<div id="caution" />
+
 > ❗️ **注意**
 >
 > 本記事に記載されているデータ制限に関する説明は、情報提供のみを目的としています。  *本記事の内容は、いかなる意味でも法的助言を構成するものではありません。お客様の参考および利便性のために提供される情報です。*
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## データの保持および削除に関する義務
 
 AppsFlyerは、アプリ、パートナー、その他のソースからユーザーレベルデータを受信します。
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### 広告主が利用できるユーザーレベルデータ
 
 通常、契約しているパッケージにローデータが含まれている場合、ユーザーレベルデータはローデータレポートツールを通じて広告主に提供され、90日間アクセスできます（<Anchor target="_blank" href="/marketers/ja/docs/data-availability-windows">データの利用可能期間</Anchor>を参照）。また、場合によっては<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">ローデータに制限が適用</Anchor>されることがあります。
+
+<div id="data-retention" />
 
 ### データ保持期間
 
@@ -63,6 +71,8 @@ AppsFlyerがユーザーレベルデータを保持する期間には制限が�
   * パートナーのデータ共有ポリシーによる制限
   * <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">高プライバシー一括設定</Anchor>が有効になっている場合
 
+<div id="partner-data-retention-periods" />
+
 #### パートナー別のデータ保持期間
 
 | SRN / パートナー | パートナーID (PID) | インストール後、データを削除するまでの期間（月） |
@@ -80,6 +90,8 @@ AppsFlyerがユーザーレベルデータを保持する期間には制限が�
 | Snapchat* (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) | snapchat\_int | 6 |
 | TikTok for Business* | tiktokglobal\_int | 13 |
 | X広告（旧：Twitter広告） | twitter\_int | 3 |
+
+<div id="note" />
 
 > 📘 **注意*：**
 >

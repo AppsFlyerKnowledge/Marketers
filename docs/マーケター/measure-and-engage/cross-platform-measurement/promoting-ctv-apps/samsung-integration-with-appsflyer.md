@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要： 概要：SamsungコネクテッドTV（CTV）アプリにAppsFlyerを実装し、Samsungキャンペーンにおけるアトリビューションとイベントデータを受取りましょう。**
 
+<div id="about-samsung-ctv-attribution" />
+
 ## Samsung CTVアトリビューションについて
 
 ストリーミング用のSamsung Tizen OSは、すべてのSamsung TVで動作します。
@@ -35,9 +37,13 @@ Samsung API連携は以下をサポートしています：
 * Samsung Smart TV
 * CTV-to-CTVのアトリビューションとイベントの計測：（ユーザーのSamsung端末の計測と記録）
 
+<div id="samsung-attribution-flow" />
+
 ### Samsungアトリビューションフロー
 
 ![CTV_attribution_flow_-_Samsung__1_.png](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## 実装の手順
 

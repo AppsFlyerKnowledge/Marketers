@@ -27,9 +27,13 @@ x-zendesk:
 
 <Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-clevertap" />
 
 ## CleverTapの設定
 
@@ -51,16 +55,22 @@ x-zendesk:
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 パートナーとの連携を利用している間は、このトグルを有効にしておく必要があります。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
 **アカウントトークン**
 
 CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account Passcode、Account IDを使用します。まだ取得していない場合は、連携の設定を進める前にCleverTapから取得するか、以下の手順で取得してください。
+
+<div id="important-1" />
 
 > 🚧 **重要**
 >
@@ -70,6 +80,8 @@ CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account
 > * AppsFlyer SDKでカスタマーユーザーIDを設定します（<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid#cuidの設定">iOS、Android</Anchor>）。カスタマーユーザーIDに使用する推奨パラメータについては、[CleverTapのドキュメント](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration)を参照してください。カスタマーユーザーIDが空の場合、CleverTapにポストバックは送信されません。
 
 ![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
+
+<div id="obtain-clevertap-account-token" />
 
 ### CleverTapのアカウントトークンを取得する
 
@@ -84,6 +96,8 @@ CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account
 2. 各フィールドの横にある目のアイコンをクリックすると、値を表示できます。
 3. 値をコピーし、AppsFlyerのCleverTap設定ページに貼り付けます。
 
+   <div id="note" />
+
    > 📘 **注意**
    >
    > * リージョンは、アカウントのCleverTap管理画面のURLによって異なります。
@@ -93,6 +107,8 @@ CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account
 
 4. <Anchor target="_blank" href="https://developer.clevertap.com/docs/appsflyer#section-step-2-integration">CleverTapのドキュメント</Anchor>に従って連携の設定を完了します。
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にCleverTapへポストバックを自動送信できます。このセクションでは、イベントごとに、ポストバック送信の対象とするユーザーの流入元を設定します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
@@ -100,6 +116,8 @@ AppsFlyerは、ユーザーのインストール後にCleverTapへポストバ�
 ![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
 
 <strong>アプリをダウンロードしたすべてのユーザーのポストバックをCleverTapに送信するには、［オーガニックを含むすべてのメディアソース］</strong>を選択します。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -153,6 +171,8 @@ AppsFlyerは、ユーザーのインストール後にCleverTapへポストバ�
 CleverTapでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="measure-clevertap-owned-media" />
 
 ## CleverTapの自社メディアの成果を計測する
 

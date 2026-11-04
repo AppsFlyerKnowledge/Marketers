@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** フライト予約アプリで推奨アプリ内イベントを記録し、ユーザーの一連の行動に基づいてユーザーの質を評価します。
 
+<div id="-flight-booking" />
+
 ## <Image alt="InApp_Events_flight.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> フライト予約
 
 フライト予約アプリでは、旅行者が魅力的なプランや運賃を比較し、簡単に航空券を予約できます。記録を推奨する代表的なイベントは、フライトの予約、フライトの検索、航空券のプランの閲覧です。
@@ -32,6 +34,8 @@ x-zendesk:
 * 人気の目的地の把握
 * 季節ごとの傾向の分析
 * ユーザーによく選ばれる航空会社の把握
+
+<div id="important" />
 
 > 🚧 **重要**
 >
@@ -43,6 +47,8 @@ x-zendesk:
 > アプリ内イベントの記録については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">アプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 定義済みイベントの推奨構成
 
@@ -227,6 +233,8 @@ x-zendesk:
 | af\_receipt\_id | 注文ID。CriteoとGoogle Adsのリターゲティング連携で必須です。 | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントの推奨構成
 

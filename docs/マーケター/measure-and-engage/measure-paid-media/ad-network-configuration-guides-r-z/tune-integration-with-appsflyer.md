@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 
+<div id="setting-up-tune-integration" />
+
 ## TUNEとの連携設定
 
 AppsFlyerとTUNEの連携でクリックアトリビューションに対応します。
@@ -50,9 +52,13 @@ AppsFlyerとTUNEの連携でクリックアトリビューションに対応し�
 | **広告収益** | このパートナーは利用できません。 |
 | **権限** | 必要に応じて広告媒体 <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">権限</Anchor> を設定します。 |
 
+<div id="enabling-deep-linking-into-your-app" />
+
 ## アプリへのディープリンクを可能にする
 
 AppsFlyerで生成可能な <Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">OneLinkブランドリンク</Anchor> を使用して、TUNEでクリックを計測します。以下の手順で、アプリ内の特定のページにユーザーをディープリンクさせることができます。
+
+<div id="prerequisite" />
 
 ### 前提条件
 
@@ -60,6 +66,8 @@ AppsFlyer SDKのバージョンを確認します。
 
 * iOS:
 * Android:
+
+<div id="step-1-configure-links-for-your-campaigns" />
 
 ### ステップ1:ステップ1: キャンペーンの計測リンクを設定する
 
@@ -78,10 +86,14 @@ AppsFlyer SDKのバージョンを確認します。
 
     このメッセージを無視して、上記の指示通りにCNAMEを変更してください。
 
+<div id="step-2-set-up-the-attribution-link" />
+
 ### ステップ2:
 
 1. 計測リンクタブを開き、以下のように **計測リンク** をクリックし、リンクパラメータのみをコピーしてください。[![](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)
 2. コピーしたパラメータをブランドリンクに追加します。
+
+   <div id="example" />
 
    > 📄 **例**
    >

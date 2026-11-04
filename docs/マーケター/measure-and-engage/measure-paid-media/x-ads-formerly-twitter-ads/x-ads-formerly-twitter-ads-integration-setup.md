@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** X広告アカウントをAppsFlyerと連携して、X広告キャンペーンのアトリビューションデータを反映します。
 
+<div id="overview" />
+
 ## 概要
 
 X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得できないユーザーも含めて、すべてのユーザーのコンバージョンイベントを計測できます。
+
+<div id="x-ads-attribution-flow-in-appsflyer" />
 
 ### AppsFlyerでのX広告の計測フロー
 
@@ -43,7 +47,13 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
 
    [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## X広告アカウントをAppsFlyerに接続する
+
+<div id="h_01HDJVBAEZATGM580CNC7BCVTN" />
+
+<div id="note" />
 
 > 📘 **注**
 >
@@ -69,6 +79,8 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
     **注：** このトグルは、このパートナーとの作業を続ける限りオン（有効）のままにしておく必要があります。詳細は<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
 13. X広告アカウントを選択して有効化し、**保存して閉じる**をクリックします。
 
+<div id="x-ads-attribution-setup" />
+
 ## X広告における計測の設定
 
 連携済みパートナーの設定画面のヘッダーについての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner">こちら</Anchor>をクリックしてください。
@@ -79,6 +91,8 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
 
 **連携タブ**は以下のセクションに分かれています。設定を有効にするために、初回訪問時に<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーを有効にする</Anchor>必要があります。
 
+<div id="ad-account-connected" />
+
 ### 広告アカウントとの連携
 
 アトリビューションを有効にする広告アカウントを選択してください。
@@ -86,6 +100,8 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
 ![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
 
 **注記：** AppsFlyerでは最大200個の広告アカウントを接続できます。この上限に達しないようにし、すべてのアクティブなアカウントのアトリビューションを継続するために、使用されていない広告アカウントを削除することをお勧めします。
+
+<div id="advanced-privacy" />
 
 ### 高プライバシーポストバック
 
@@ -95,10 +111,14 @@ iOSアプリのみ：<strong>高プライバシーポストバック（AP）</st
 * ポストバックは、<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks">高プライバシーポストバックテンプレート</Anchor>に従います。
 * <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">集計データと匿名データ</Anchor>のみが共有されます。デバイスレベルの識別子は含まれません。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 高プライバシーポストバックのトグルは、X広告の連携を有効にすると**デフォルトでオンに**なります。
 > * X広告によると、高プライバシーポストバックを**オン**にすると、キャンペーンイベントが**過少にレポート**され、X広告のパフォーマンス最適化が制限される可能性があります。
+
+<div id="click-through-attribution" />
 
 ### クリックスルー計測
 
@@ -108,6 +128,8 @@ iOSアプリのみ：<strong>高プライバシーポストバック（AP）</st
 
 ![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### ビュースルー計測のルックバック期間
 
 スライダーを使用して、**インプレッションからインストールまでの最大時間**を設定できます。広告のインプレッション後、ほかに関連する広告がクリックされなかった場合、このルックバック期間内に発生したインストール（初回起動）のみが X広告に紐付けられます。
@@ -116,15 +138,21 @@ iOSアプリのみ：<strong>高プライバシーポストバック（AP）</st
 
 ![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="reinstall-settings" />
+
 ### 再インストール設定
 
 再インストールのアトリビューションを有効にするには、**再インストール計測**トグルをオンにします。
 
 再インストールアトリビューションには、インストールアトリビューション設定から値が適用されるため、ルックバック期間を設定する必要はありません。
 
+<div id="re-engagement-settings" />
+
 ### リエンゲージメントCVの計測設定
 
 Xでのリターゲティングキャンペーンの場合、AppsFlyerは**リエンゲージメントCV**計測のみをサポートしています。これは、アプリをすでにインストールしているユーザーによるリターゲティングキャンペーンとの接触を意味します。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -134,11 +162,15 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 
 **リエンゲージメントCV計測**のトグルを有効にして、Xのリエンゲージメント計測を開始します。
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### リエンゲージメントCV：クリックスルーのルックバック期間
 
 **リエンゲージメントCVのクリックスルー ルックバック期間**を設定します（広告がクリックされてからの最大期間。この期間内に、リターゲティングされたユーザーを広告に紐づけることができます）。値は、時間数（最大23時間）または日数（1～30日）を設定できます。
 
 ![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### リエンゲージメントCV - ビュースルー：ルックバック期間
 
@@ -148,15 +180,21 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 
 ![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### リエンゲージメント期間
 
 **リエンゲージメント期間**（アプリ内イベントをリターゲティング媒体の成果に紐づける期間）の長さを設定します。値は、日数（1～90）、時間数（最大23）または lifetime（ライフタイム）を設定できます。
 
 <Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### リターゲティング計測における休眠期間の設定
 
 指定された期間内にアクティブユーザーのリターゲティングコンバージョンが記録されないように、非アクティブ期間を設定します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-retargeting-inactivity-window">リターゲティング向けの休眠期間</Anchor>をご覧ください。
+
+<div id="in-app-event-postback-settings" />
 
 ### アプリ内イベントのポストバック設定
 
@@ -188,6 +226,8 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 <Accordion title="計測リンクタブ">
 
 X広告はアトリビューションに計測リンクを使用しません。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -229,6 +269,8 @@ X広告では広告収益計測はご利用いただけません。
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
 
+<div id="ad-network-permissions" />
+
 ### アドネットワークへの権限付与
 
 * **パートナー連携の設定を許可する** - パートナーに連携タブの設定（アプリ内イベントのポストバックを除く）を許可します。
@@ -241,11 +283,15 @@ X広告では広告収益計測はご利用いただけません。
 
 詳細：<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">アドネットワークへの権限付与</Anchor>
 
+<div id="agency-permissions" />
+
 ### 代理店権限
 
 <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">代理店へアクセス許可を付与する</Anchor>方法をご覧ください。
 
 </Accordion>
+
+<div id="x-ads-features" />
 
 ## X広告の機能
 
@@ -269,6 +315,8 @@ Xの非アプリキャンペーンからのアプリアクティビティを測�
 
 1. X Ads Managerでキャンペーン作成フォームを開きます。
 2. **配信**セクションで、**アプリコンバージョン**計測を有効にして、キャンペーンの結果発生したインストールとアプリ内コンバージョンの計測を有効にします。詳細については、<Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">X Adsのドキュメント</Anchor>（*Measuring app conversions on non-app objectives*セクション）を参照してください。
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >
@@ -309,6 +357,8 @@ AMMプログラムを通じて、広告主はX Adsに監査を行う権利を付
 
 </Accordion>
 
+<div id="advanced-srn-parameter-names" />
+
 ## アドバンスSRNパラメーター名
 
 X広告のアドバンスSRN連携において、以下のデータ項目は AppsFlyer ダッシュボード、集計レポート、およびイベントレベルのローデータにおいて、従来の対応するデータ項目と置き換えられます。
@@ -323,6 +373,8 @@ X広告のアドバンスSRN連携において、以下のデータ項目は App
 | **Ad Name** | Tweet ID | Ad Name  <br />（利用可能な場合） |
 | **Ad ID** | Tweet ID | Tweet ID |
 | **Match Type** | srn | id\_matching / probabilistic |
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

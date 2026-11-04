@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **概要：** アプリをAppsFlyerに追加して、インストールやアプリ内イベントに関するアトリビューションデータを取得し、AppsFlyerのさまざまなツールを使用してデータを分析する方法を学びましょう。
 
+<div id="overview" />
+
 ## 概要
 
 管理画面にまだアプリを追加していない場合、AppsFlyerにログインするとアプリのオンボーディングページが表示されます。アプリのオンボーディングでは、アプリを追加し、アトリビューションの準備を整えるために全てのステップをガイドします。
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### アプリ追加ウィザードに入る
 
@@ -37,6 +41,8 @@ x-zendesk:
 **アプリのオンボーディングページからウィザードにアクセスする：**
 
 * **アプリを追加**するステップで**アプリを追加**をクリックし、アプリ追加の指示に従います。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -52,6 +58,8 @@ x-zendesk:
 
 <Image alt="アプリを追加 (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## アプリの追加
 
 [アプリ追加ウィザード](#アプリ追加ウィザードに入る)に到達したら、次の手順に従います：
@@ -61,6 +69,8 @@ x-zendesk:
 3. **アプリを追加**をクリックします。
 4. <Anchor target="_blank" href="/marketers/ja/docs/getting-started-onboarding-for-marketers#ステップ2sdk--api実装">SDK実装</Anchor>や連携で使用するためにDevキーをコピーします（常時、<Anchor target="_blank" href="/marketers/ja/docs/app-settings#一般設定">アプリ設定</Anchor>画面からも取得可能です）。
 5. 完了後、さらにアプリを追加するには**完了**または **+ 別のアプリを追加**をクリックします。さらにアプリを追加するにはこのプロセスを繰り返します。
+
+<div id="note-1" />
 
 > 📘 **注記**
 >
@@ -73,6 +83,8 @@ x-zendesk:
 * Partner Marketplaceでアプリをパートナー（広告媒体）に接続・連携する
 
 オンボーディングプロセスを完了するための<Anchor target="_blank" href="/marketers/ja/docs/getting-started-onboarding-for-marketers">すべての手順</Anchor>をご確認ください。
+
+<div id="enter-app-details" />
 
 ### アプリの詳細を入力
 
@@ -166,6 +178,8 @@ x-zendesk:
 
         * **アプリのURL** (サードパーティのアプリストアまたは外部ストアからコピーしたもの)
 
+        <div id="important" />
+
         > 🚧 **重要！**
         >
         > 複数の媒体でアプリが利用できる場合（つまり Google Play、サードパーティストア、ストア外のロケーションのいずれかの組み合わせ）、<Anchor target="_blank" href="/marketers/ja/docs/set-up-multi-store-android-attribution">複数ストアでのAndroid計測を設定する</Anchor>オプションを検討することが重要です。リリース当初から正しい実装をすることで、必要なデータを必要な形式でアクセスできるようになります。
@@ -213,6 +227,8 @@ x-zendesk:
 
 <Accordion title="Web（PBA）">
 
+<div id="note-3" />
+
 > 📘 **注記**
 >
 > Webアプリは、ピープルベースドアトリビューション（PBA）機能向けにブランドバンドルに含めるWebサイトを指定します。
@@ -237,6 +253,8 @@ x-zendesk:
 * 最大文字数:100文字
 * XSSタグは許可されません
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > 一度作成した Webアプリは、削除して再作成しないとプロパティ（URLとアプリ名）を編集できません。**つまり、<Anchor target="_blank" href="/marketers/ja/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">その一部であるブランドバンドル</Anchor>も削除する必要があります**。
@@ -255,10 +273,14 @@ x-zendesk:
 
 Webプラットフォームを使用して新しいWebアプリを作成し、Webアトリビューションを使用してウェブサイトの訪問とコンバージョンを測定します。
 
+<div id="before-you-begin" />
+
 #### **始める前に**
 
 * レガシーの人に基づくアトリビューション（PBA）Webアプリは、「<strong>Web (PBA)」</strong>としてレガシーとしてマークされて表示されます。
 * レガシーPBA Webアプリから移行する場合は、既存のPBA Web Devキーを使用できます。
+
+<div id="to-add-a-web-app" />
 
 #### **Webアプリを追加する**
 
@@ -341,6 +363,8 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 * プライマリドメインは自動的に**除外ドメイン**にタイプ**プライマリ**として追加されます。
 
 各レガシー**ウェブ開発キーは新しい**ウェブアプリに対してのみ再利用できます。
+
+<div id="note-4" />
 
 > 📘 **注記**
 >
@@ -532,26 +556,38 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### 追加情報を入力します（Webアプリには該当しません）:
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+
+<div id="select-currency" />
 
 #### **通貨を選択**
 
 このアプリのデータを管理画面で表示する際の通貨を選択してください。収益と使うイベントは、イベント時点の為替レートを基にこの通貨に変換されます。<Anchor target="_blank" href="/marketers/ja/docs/app-settings#localization-currency">アプリの通貨設定とその影響について詳細はこちら</Anchor>。
 
+<div id="important-2" />
+
 > 🚧 **重要！**
 >
 > アプリで使用する通貨を選択する際には慎重に選んでください。コストと収益が一度記録されると、変更することはできません。
+
+<div id="select-timezone" />
 
 #### **タイムゾーンを選択**
 
 ここで選択したタイムゾーンを、Meta広告やGoogle広告など、他のアトリビューションパートナーで設定したタイムゾーンに合わせてください。これにより、AppsFlyer管理画面で報告されるデータとこれらのパートナーから受け取るデータの一致度が高まります。
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > * タイムゾーンを一度設定するとロックされ、翌日まで変更できません。
 > * <Anchor target="_blank" href="/marketers/ja/docs/changing-app-time-zone-settings">アプリのタイムゾーン設定とその影響について</Anchor>詳細はこちら。
+
+<div id="define-app-audience" />
 
 #### **アプリのユーザー層を定義する**
 
@@ -561,22 +597,32 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 1. 子供向けアプリのコンプライアンスの実装に関する<Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">ガイド</Anchor>を開いてお読みください。
 2. ガイドを読んだこと、および指定されたコントロールを実装することを確認するためには、ボックスを選択します。
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > * アプリを追加してから2週間後に、子供向けアプリのプライバシーコントロールを実装したことを確認するよう通知が届きます。確認後、確認メッセージが表示されます。通知センターから確認メッセージにいつでもアクセスでき、<Anchor target="_blank" href="/marketers/ja/docs/audit-log">監査ログ</Anchor>で確認の詳細を確認できます。
 > * 子供向けアプリに関する<Anchor target="_blank" href="/marketers/ja/docs/child-directed-apps-faq">よくある質問</Anchor>をご覧ください。
 
+<div id="manage-your-apps-in-bulk-via-api" />
+
 #### API経由でアプリを一括管理
 
 アカウント管理者は、UIの主要機能をサポートする専用のAPIを利用して、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">複数のアプリを一括管理</Anchor>できます。これには、アプリの追加と削除、およびアプリ設定の更新が含まれます。APIには同じエラー検証メカニズムが組み込まれています。
+
+<div id="note-7" />
 
 > 📘 **注意**
 >
 > 現時点では、モバイルアプリに対してのみ、API経由でのアプリの追加とアプリ設定の更新が可能です。アプリの削除はすべてのプラットフォームで可能です。
 
+<div id="add-a-debug-or-testing-app" />
+
 ### デバッグまたはテストアプリを追加してください。
 
 開発者が**デバッグ**、**サンドボックス**、または**テストアプリ**を作成した場合、そのアプリをダッシュボードに追加する必要があります。開発者がアプリでテストを開始すると、データがアプリのダッシュボードに表示されます。
+
+<div id="note-8" />
 
 > 📘 **注記**
 >
@@ -587,6 +633,8 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Androidの指示</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">iOSの指示</Anchor>
 
+<div id="about-pending-apps" />
+
 ## 保留中のアプリについて
 
 保留中のステータスのアプリを操作すると、AppsFlyer SDKをテストするときに役立ちます。
@@ -594,6 +642,8 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 管理画面上でアプリが保留中であることは、データの収集と計測にインパクトしません。アプリがアプリストアで保留中か公開中かに関係なく、ユーザーがそれをインストールして操作すると、インストールとアプリ内イベントのデータが管理画面に記録されます。
 
 保留中のアプリが公開されると、AppsFlyerがそのステータスを検出して自動的に更新するため、再度追加する必要はありません。保留中のアプリについてと、ステータスを手動で更新するオプションの手順について<Anchor target="_blank" href="/marketers/ja/docs/why-is-my-app-still-pending">詳細はこちら</Anchor>。
+
+<div id="troubleshooting" />
 
 ## トラブルシューティング
 
@@ -642,6 +692,8 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 これが起こるのは、ユーザーが以前デバイスに存在していたアプリをオペレーティングシステムを介して再インストールできるからです。アプリがApp Storeで利用できなくなっても、ユーザーはまだインストールでき、これらのインストールはAppsFlyerにカウントされます。
 
 </Accordion>
+
+<div id="other-information" />
 
 ## その他の情報
 

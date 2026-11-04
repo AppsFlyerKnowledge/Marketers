@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** Data Lockerのコホート分析機能では、広告階層の全ての要素を含んだ集計データが利用可能です。レポートには、過去365日間のアトリビューションユーザーのデータが含まれています。このレポートは、ローデータまたはコホートAPI、あるいはその両方をご契約の一部として契約している広告主が利用できます。つまり、このレポート機能はData Locker自体の有料契約は必要ありません。
 
+<div id="cohort-analytics-in-data-locker" />
+
 ## Data Lockerでのコホート分析
 
 場合によっては、メディアソースのデータ共有ポリシーや広告主側の<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">プライバシー保護ポリシーにより、AppsFlyerのアトリビューションのローデータが</Anchor><Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">制限</Anchor>されることがあります。この制限は、キャンペーンや広告セットなどのアトリビューションに関連するすべてのフィールドを含みます。コホートレポートは、ローデータの代わりに集計データを提供します。
@@ -72,6 +74,8 @@ x-zendesk:
 
 * **ディメンション：** 文字列- 文字列の最大長は動的であり、広告階層の要素をどのように設定するかによって異なります。
 * **指標：** 数値　/ **注：** selected\_currency 項目の形式は文字列です。
+
+<div id="dimensions" />
 
 #### ディメンション
 
@@ -285,6 +289,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 指標
 
 | フィールド名 | 説明 | 形式 |
@@ -333,6 +339,8 @@ x-zendesk:
 
 以下は、BI開発者が Data Lockerを介して抽出できるコホートデータの一般的で実用的なアプリケーションの例です。各例は、SQLステートメントとサンプルの Excel ビジュアルで示されています。
 
+<div id="1-calculating-retention" />
+
 #### **1.リテンションの計算**
 
 次の例では、次のことを行います：
@@ -363,6 +371,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculating-arpu-of-multiple-in-app-events" />
 
 #### **2.複数のアプリ内イベントのARPUを計算する**
 
@@ -399,6 +409,8 @@ group by 1
 | 98765432 | Re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | Re-attribution | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3.特定のコホート日のアプリ内イベントコンバージョン率を計算する**
 
 次の例では、次のことを行います：
@@ -429,6 +441,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | US | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | UK | 98765432 | null | site\_654 | 70% |
 | 2022-10-31 | KR | 07315466 | null | null | 63% |
+
+<div id="4-calculating-daily-installs" />
 
 #### **4.日次インストールの計算**
 
@@ -466,6 +480,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculating-revenue-from-facebook-ads" />
+
 #### **5.Facebook広告からの収益を計算する**
 
 次の例では、次のことを行います：
@@ -499,6 +515,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6.最大365コホート日のASAキーワードIDごとのARPU計算**
 
 次の例では、次のことを行います：
@@ -529,6 +547,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculating-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7.地域ごとのアトリビューション時間によるARPU 7日目の計算**
 
@@ -573,6 +593,8 @@ limit 20
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="traits-and-limitations" />
@@ -595,6 +617,8 @@ limit 20
 | 再インストール | <ul><li>再インストール後のイベントが未アトリビューションのオーガニックイベントと見なされる場合：<ul><li>2024年5月26日現在のみ含まれています。<Anchor target="_blank" href="/marketers/ja/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">詳細はこちら</Anchor></li><li>インストール時間は<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>フィールドに基づいています。</li><li>ユニークユーザーやリテンション測定にはカウントされません。</li></ul></li><li>再インストール後のイベントが最初のインストールに起因する場合、常に含まれます。<Anchor target="_blank" href="/marketers/ja/docs/unique-users">詳細はこちら</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

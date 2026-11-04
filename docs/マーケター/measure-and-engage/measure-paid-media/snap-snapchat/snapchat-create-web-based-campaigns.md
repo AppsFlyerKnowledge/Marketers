@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **概要：** Snapchat広告のウェブキャンペーンを使って、Snapchat広告からのウェブからアプリへのコンバージョンを帰属させましょう
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerでは、WebキャンペーンにおけるTikTok Ads（`snapweb_int`）との連携をサポートしており、TikTokのイベントAPIを使ってキャンペーンのアトリビューション情報とコンバージョンデータへTikTokへレポートすることができます。このデータを、TikTokは広告ターゲティングの最適化、パフォーマンスの計測、カスタムオーディエンスの作成に活用できます。
+
+<div id="important" />
 
 > 🚧 **【重要】**
 >
 > 現在、TikTok Webとの連携において、CAPIへのリエンゲージメントCVのポストバック送信はサポートしていません。
 
+<div id="prerequisites" />
+
 ### 前提条件
 
 Snapchatのウェブ連携を有効にする前に、必ずビジネスアカウントを登録してください。
+
+<div id="how-to-create-a-snapchat-ads-web-campaign" />
 
 ### Snapchat広告のウェブキャンペーンの作り方
 
@@ -46,6 +54,8 @@ Snapchatのウェブ連携を有効にする前に、必ずビジネスアカウ
 
 * [OneLink Smart Scriptを使ったランディングページを作成する](#onelink-smart-scriptを使ったランディングページの作成)（任意）
 * [OneLink Smart Bannerを使用したランディングページの作成](#onelink-smart-bannerを使ったランディングページの作成)（任意）
+
+<div id="set-up-snapchat-ads-web-integration-in-appsflyer" />
 
 ## AppsFlyerでSnapchat Adsのウェブ連携を設定してください
 
@@ -103,6 +113,8 @@ AppsFlyerは、Snapchatのウェブキャンペーンに対してビュースル
 6. **送信オプション**の項目で、**このパートナーのみ**を選択すると、このパートナーから発生したユーザーが実行したイベントのみを対象に、アプリ内イベントのポストバックが送信されるようになります。
 7. では**含まれます**カラムで、収益値付きのイベントを送信するかどうかを選択します。詳細：<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#ポストバックに含めるデータ">ポストバックに含めるデータ</Anchor>
 
+   <div id="note" />
+
    > 📘 **注意**
    >
    > * 購入イベントを設定する場合は、**送信データ**項目は**イベント値と収益を送信**に設定してください。他のオプションを選択するとポストバックが失敗します。
@@ -117,6 +129,8 @@ AppsFlyerは、Snapchatのウェブキャンペーンに対してビュースル
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-snapchat-ads" />
+
 ## Snapchat広告でAppsFlyer連携を設定する
 
 Snapchat広告マネージャーで次のステップを実行してください。
@@ -126,6 +140,8 @@ Snapchat広告マネージャーで次のステップを実行してください
 <Accordion title="1.キャンペーンの種類、目的、目標の設定">
 
 Appsflyerから送信される任意のアプリ内イベントをキャンペーンの目標として選択するか、アプリのインストールを最適化したい場合は「ダウンロード」を選択できます。
+
+<div id="warning" />
 
 > ❗️ **注意**
 >
@@ -203,6 +219,8 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
   https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
   ```
 
+  <div id="note-1" />
+
   > 📘 **注意**
   >
   > TikTokは、広告がクリックされると遷移先URLに`ScCid={{ScCid}}`を自動的に追加します。
@@ -214,6 +232,8 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## OneLink Smart Scriptを使ったランディングページの作成
 
@@ -249,6 +269,10 @@ Smart Scriptを使用してTikTok Adsのキャンペーンを設定するには�
 1. キャンペーンのOneLink計測リンク用に、OneLinkテンプレートを設定してください。詳細は<Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#onelinkテンプレートの作成">OneLinkテンプレートの作成方法</Anchor>をご覧ください。
 2. Smart Scriptのコードを作成してください。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Scriptの作成方法</Anchor>をご覧ください。
 
+   <div id="note-5" />
+
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > 以下の手順は、Smart ScriptでSnapchat広告キャンペーンを設定するために必要な具体的な手順を説明しています。Smart Scriptを使ったキャンペーンの設定方法に関する包括的なガイドについては、<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Script V2の設定</Anchor>ページ内の<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Scriptの作成方法</Anchor>のセクションを参照してください。
@@ -260,6 +284,8 @@ Smart Scriptを使用してTikTok Adsのキャンペーンを設定するには�
 
      1. **マッピング：** 項目で、**カスタムパラメータ**を選択してください。
      2. では **送信URLパラメータ**および <strong>URLパラメータの受信、</strong>入場**シド**.
+
+     <div id="note-3" />
 
      > 📘 **注意**
      >
@@ -289,12 +315,16 @@ TikTok Adsのキャンペーン向けにSmart Scriptをクロスプラットフ�
 
 * 送信URLに、受信パラメータ `ScCid` を含めるよう、開発者に忘れずに依頼してください。
 
+  <div id="note-4" />
+
   > 📘 **注意**
   >
   > AppsFlyerのローデータレポートのカラムに表示するには、受信URLの `ScCid` パラメータを（送信URLの`ScCid` パラメータに追加で）送信URLパラメータの `af_sub[1-5]` のいずれかにもマッピングする必要があります。
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## OneLink Smart Bannerを使ったランディングページの作成
 
@@ -334,6 +364,8 @@ Smart BannerをTikTok Adsキャンペーンを設定するには、以下の手�
    * 関連するURLパラメータがすべてランディングページ内のURL（受信URL）に追加されていることを確認してください。
    * 受信URLに付随するパラメータを確認するには、Snapchat広告マネージャーを開き、設定したURLパラメータを確認してください。 [宛先URLの作成](#2-set-destination-url).
 
+   <div id="note-6" />
+
    > 📘 **注意**
    >
    > 最も重要なのは、受信URLにおいて `pid=snapweb_int` と `ScCid` が含まれており、Smart Bannerがそれらを収集可能な状態にあることです。これら2つのパラメータは、計測とTikTokへのポストバックの送信に必要です。
@@ -341,20 +373,28 @@ Smart BannerをTikTok Adsキャンペーンを設定するには、以下の手�
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## **Web to Appの計測データの確認方法**
 
 Webキャンペーンの各種イベントは、元々の`snapweb_int`のPIDでMetaへ送信されますが、AppsFlyerの管理画面上およびローデータレポートでは`snapchat_int`のPIDの下に記録されます。これはプライマリーコンバージョンイベントとコンバージョンアシストイベントの両方に当てはまります。
 
 この統一されたレポートビューにより、Webとアプリのキャンペーンパフォーマンスを、包括的なWebとモバイルのコスト情報を含んだ状態で分析できるようになります。
 
+<div id="view-in-the-dashboard" />
+
 ### **管理画面上でのデータ表示について**
 
 MetaのWeb-to-Appキャンペーンの計測データは、オーバービューとアクティビティダッシュボードにおいてすべて`snapchat_int`の下に紐づく形で表示されます。これにより、プラットフォーム全体でのキャンペーンの結果を確認できるようになります。標準フィルタとブレークダウンを使用して、Meta広告のデータにおけるアプリとWebのトラフィックを比較してください。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### **ローデータとAPIレポート内でのデータ表示**
 
 * ローデータエクスポートと各種API経由のデータでは、`snapchat_int`のカラムにおける**のPIDのデータに、MetaのWebキャンペーンのデータが含まれます。Webキャンペーンの設定詳細を確認するには、Webキャンペーン作成時に使用されたPIDとしてを表示するフィールドを参照してください。**
 * **ポストバックレポート**は、ポストバックが送信された元のメディアソースとして`snapweb_int`を示します。
+
+<div id="traits-and-limitations" />
 
 ## 特性と制約事項
 

@@ -49,6 +49,8 @@ x-zendesk:
       <td>
         インストールとアプリ内イベントのデータ更新頻度が変わります。この表では、変更前と変更後の更新頻度を示しています。
 
+        <div id="data-freshness-rate-per-event-type" />
+
         #### イベントタイプごとのデータ更新頻度
 
         | イベントタイプ | 変更前（分） | 変更後<br /><br />（分） |
@@ -101,6 +103,8 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

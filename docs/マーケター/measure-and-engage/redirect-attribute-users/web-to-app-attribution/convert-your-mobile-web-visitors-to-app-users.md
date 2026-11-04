@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **概要：** モバイルWebサイトを活用して、訪問者をモバイルアプリの新規ユーザーへとつなげます。
 
+<div id="mobile-web-to-app-attribution-solutions" />
+
 ## モバイルWebからアプリへのアトリビューションソリューション
 
 ![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
+
+<div id="benefits-of-web-to-app-campaigns" />
 
 ### Web-to-appキャンペーンのメリット
 
@@ -37,6 +41,8 @@ Web-to-appキャンペーンには、次のメリットがあります。
 * コンバージョン率が最も高いWebページやランディングページと、最も低いページを特定できます。
 * アプリも利用しているモバイルWebユーザーに対し、より対象を絞ったオファーでリターゲティングできます。
 * ディープリンクで、Webサイトからアプリ内の特定のページへスムーズに誘導できます。
+
+<div id="attribution-solutions" />
 
 ### アトリビューションソリューション
 
@@ -63,6 +69,8 @@ AppsFlyerは、Webからアプリへの成果を正確に紐づけるために�
 
 以下の比較表を参考に、要件に最も合うソリューションを選び、実装してください。**注意**：両方のソリューションを実装し、併用することもできます。
 
+<div id="smart-banner-vs-onelink-smart-script" />
+
 #### Smart BannersとOneLink Smart Scriptの比較
 
 | 比較項目 | Smart Banners | OneLink Smart Script |
@@ -77,9 +85,13 @@ AppsFlyerは、Webからアプリへの成果を正確に紐づけるために�
 
 **注意：** Smart BannersとOneLink Smart Scriptは、対象の有料<Anchor target="_blank" href="/marketers/ja/docs/account-management-plans-payments-and-billing#appsflyer-plans">サブスクリプションプラン</Anchor>でのみ利用できます。利用できる機能は、ご契約のAppsFlyerプランによって異なります。
 
+<div id="web-assisted-installs" />
+
 ### Web訪問が貢献したインストール
 
 Web訪問が貢献したインストールとは、必ずしも特定のキャンペーンが直接のきっかけではないものの、Webサイトへの訪問後にアプリがダウンロードされたケースを指します。ユーザーはダウンロード前に、何らかの理由でWebサイトを訪問しています。その訪問は数日前、あるいは数週間前の場合もあります。 <Anchor target="_blank" href="/marketers/ja/docs/people-based-attribution-pba-overview">PBA</Anchor>の「Web訪問が貢献したインストール」では、最終的なアプリのインストールに*貢献した*接点の内訳を確認できます。  
+
+<div id="web-to-app-solutions-vs-web-assisted-installs" />
 
 #### Web-to-appソリューションと「Web訪問が貢献したインストール」の比較
 

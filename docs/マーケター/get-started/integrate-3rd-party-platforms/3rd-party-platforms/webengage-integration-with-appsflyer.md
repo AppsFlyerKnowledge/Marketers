@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるWebEngageは、モバイルファーストの時代に向けて開発されたインテリジェントなマーケティングクラウドです。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-webengage" />
 
 ## WebEngageの設定
 
@@ -50,9 +54,13 @@ WebEngageの設定で使用するのは、<strong>［連携］</strong>タブの
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 初回の設定時は、［**パートナーを有効化**］をオンにして、連携を設定できるようにします。このパートナーと連携している間は、オンにしておく必要があります。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -63,6 +71,8 @@ WebEngageとAppsFlyerの接続には、APIキーとWebEngageのデータセン�
 
 ![web_mo_engage_general_settings_en-us.png](https://files.readme.io/1297a02a9e280b238a222b14972dc657acffe4566dc49d607178ea43fdc01a77-8089123842705.png) 
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、インストールやリエンゲージメントの発生時に、WebEngageへポストバックを自動送信できます。
@@ -72,13 +82,19 @@ AppsFlyerは、インストールやリエンゲージメントの発生時に�
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > すべてのインストールを受信するネットワークであるWebEngageは、オーガニックを含むすべての流入元からの新規インストールのポストバックを受信することを推奨しています。 WebEngageは、<strong>［オーガニックを含むすべてのメディアソース］</strong>の選択を推奨しています。
 
+<div id="in-app-event-settings" />
+
 ### アプリ内イベントの設定
 
 ポストバックを使用して、AppsFlyerのイベントをWebEngageのイベントに対応付けます。ポストバック送信を有効にしている場合は、拒否されたアプリ内イベントも含まれます。これには、Protect360でブロックされたイベントと、ターゲット検証ルールで不適合と判定されたイベントが該当します。
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### アプリ内イベントポストバックを設定するには、以下の手順を実施します。
 

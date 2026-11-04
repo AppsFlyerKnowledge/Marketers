@@ -33,9 +33,13 @@ x-zendesk:
 
 AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャンペーン情報をMixpanelに取り込めます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-mixpanel" />
 
 ## Mixpanelの設定
 
@@ -56,6 +60,8 @@ AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャン
 <Accordion title="連携タブ">
 
 ［連携］タブは、以下のセクションで構成されています。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -80,11 +86,15 @@ AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャン
 * **Events：** オンにすると、インストールデータをMixpanelのEventsエンドポイントに送信します。
 * **People：** オンにすると、インストールデータをMixpanelのPeopleエンドポイントに送信します。
 
+  <div id="note" />
+
   > 📘 **注意**
   >
   > Mixpanelにインストールポストバックを送信するには、**Events**または**People**の少なくとも一方のエンドポイントをオンにする必要があります。
 
 * **拡張データ共有：** 有効にすると、c（キャンペーン）、network（pid）、impression\_based（is-impression）の追加情報をMixpanelに送信します。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -92,11 +102,15 @@ AppsFlyerは、インストールやリエンゲージメントの発生時に�
 
 [![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
+<div id="in-app-events-settings" />
+
 ### アプリ内イベントの設定
 
 ![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをMixpanelのイベントに対応付けます。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -162,6 +176,8 @@ AppsFlyerは、インストールやリエンゲージメントの発生時に�
 
 </Accordion>
 
+<div id="integrating-with-mixpanel-when-using-a-login-mechanism" />
+
 ## ログイン機能を使用する場合のMixpanelとの連携
 
 以下に連携手順の例を示します。
@@ -222,9 +238,13 @@ AppsFlyerは、インストールやリエンゲージメントの発生時に�
 
 7. Mixpanelは、AppsFlyerからcustomer\_user\_idを受信し、ユーザーID（メールアドレスなど）との紐付けに使用します。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > アプリ内でユーザー登録を行わない場合は、上記の手順1～3を実装してください。
+
+<div id="viewing-appsflyer-data-in-mixpanel" />
 
 ## MixpanelでのAppsFlyerデータの確認
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 [![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
 
+<div id="about-user-attributes" />
+
 ## ユーザー属性について
 
 ユーザー属性は、イベントベースのデータとは異なり、 ユーザーが共有する一般的な特性です。これには、性別、年齢、誕生日、国のような静的なもの、またはゲーム内のユーザースコアのような動的なものがあります。
@@ -62,6 +64,8 @@ x-zendesk:
 
 オーディエンス内で、ユーザー属性（好きなスポーツとゲームスコア）を作成します。これにより、ルールセットがCRMデータにアクセスできるようになります。
 
+<div id="scenario-user-attributes" />
+
 #### シナリオユーザー属性
 
 | 名前 | 形式 | レベル |
@@ -76,6 +80,8 @@ x-zendesk:
 [altUserAttributedExample.jpgalt](https://support.appsflyer.com/hc/article_attachments/30205926953745)
 
 </Accordion>
+
+<div id="implement-user-attributes" />
 
 ## ユーザー属性を実装する
 
@@ -137,7 +143,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>検索およびフィルター | 属性名、アプリ名、および属性レベルで。 |
 | <span id="sort-by"></span>並び替え | 列のヘッダーをクリックすると、表の行が並べ替えられます。 |
-| <span id="import-data"></span>データをインポート | <ul><li>[CSVでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[APIでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="import-data"></span>データをインポート | <ul><li>[CSVでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[APIでデータをインポート](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>APIインポートキーの変更 | **APIインポートキーを変更するには：**<ol><li>**データのインポート**をクリックします。</li><li>**API**を選択します。</li><li>**インポートキー**を更新をクリックします。</li></ol><strong>注意！</strong>スクリプトにキーが埋め込まれている場合は、新しいキーで更新してください。 |
 
 </Accordion>
@@ -247,6 +253,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 }
 ```
 
+<div id="note-1" />
+
 > 📘 **注記**
 >
 > Authorization Bearer ヘッダーでリクエストを<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens#広告主">API トークン V2.0</Anchor>を使用して認証する必要があります。
@@ -337,15 +345,19 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 <Accordion title="制限事項">
 
+<div id="general-limitations" />
+
 #### 一般的な制限
 
 * CSV／APIインポートデータでは整数（完全数）のみがサポートされます。浮動小数点型（小数）の数値はサポートされていません。**例：** 「スコア」属性値は90に設定することができますが、90.5にすることはできません。
 * ユーザー属性データは印刷もダウンロードもできません。
-* #### 属性値の制限：
+* #### <span id="attribute-value-limitations"></span>属性値の制限：
 
   * 属性値にはカンマやドット、その他の特殊文字を使用できません。
   * 文字列属性値には40文字の長さ制限があります。
   * 属性値は0で開始することはできません。
+
+<div id="api-import-limitations" />
 
 #### APIインポートの制限事項
 
@@ -358,6 +370,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "device_id": "39e123.......",
 "customer_id": "",
 ```
+
+<div id="csv-import-limitations" />
 
 #### CSVインポートの制限
 

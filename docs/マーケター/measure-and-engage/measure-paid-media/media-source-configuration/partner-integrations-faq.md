@@ -38,6 +38,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="use-partner-integrations" />
+
 ## Partner Marketplaceを使用する
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -82,6 +84,8 @@ Marketplaceを開くと、デフォルトで現在のアプリのアクティビ
 <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">参照：Partner Marketplaceから新しいパートナーと連携する方法</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## トラブルシューティング
 

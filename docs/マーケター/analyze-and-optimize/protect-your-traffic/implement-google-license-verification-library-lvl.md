@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要：** Googleライセンス検証ライブラリ（Google License Verification Library：LVL）を追加すると、Google Playとのライセンス関連の通信をすべて処理し、アプリの不正利用を防止できます。
 
+<div id="overview" />
+
 ## 概要
 
 ライセンス検証ライブラリ（LVL）は、Google Playのライセンスサービスとのライセンス関連の通信をすべて処理するライブラリです。Android SDKからダウンロードして、アプリに追加できます。
@@ -37,6 +39,8 @@ LVLは、インストールが実際のGoogle Playユーザーによるものか
 Google Playのライセンスサービスは、ユーザーがアプリを利用するためのライセンスを持っているかどうかを判定します。 Google Playでは、アプリの購入者として記録されているユーザーを、ライセンスを持つユーザーとみなします。ライセンスはアプリごとに固有のもので、アプリの保護を強化するために利用できます。<Anchor target="_blank" href="https://developer.android.com/google/play/licensing">詳細はこちら</Anchor>
 
 AppsFlyer SDKがお客様のアプリ側でデータを収集し、Protect360がサーバー側でライセンスを検証します。オーガニック・非オーガニックを問わず、検証に失敗した不正なインストールをブロックします。 Protect360のダッシュボードとレポートでは、「ブロック理由」に「ボット」と表示されます。
+
+<div id="set-up-lvl" />
 
 ## LVLの設定
 
@@ -70,6 +74,8 @@ AppsFlyer SDKがお客様のアプリ側でデータを収集し、Protect360が
        implementation("com.appsflyer:lvl:$appsflyerSdkVersion")
    }
    ```
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -125,6 +131,8 @@ AppsFlyer SDKがお客様のアプリ側でデータを収集し、Protect360が
 インストール時の送信データにLVL情報が含まれていない場合は、サポート担当またはSDK担当チームと連携して確認してください。
 
 </Accordion>
+
+<div id="faq" />
 
 ## よくある質問
 

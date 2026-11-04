@@ -29,6 +29,8 @@ x-zendesk:
 | **対象** | <ul><li>Pull API ローデータレポート</li></ul> |
 | 詳細 | <ul><li>コントリビューターの項目がレポートに表示されない場合は、**データエクスポート**ページから追加できます。</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **参照：**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#postattribution-reports">アトリビューション後のレポート</Anchor>

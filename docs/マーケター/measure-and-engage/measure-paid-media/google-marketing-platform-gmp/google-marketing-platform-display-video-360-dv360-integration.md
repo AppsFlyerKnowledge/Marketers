@@ -24,11 +24,19 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="important-1" />
+
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/bulletin-supporting-the-new-google-eu-consent-policy">新しいGoogle EU同意ポリシー支援</Anchor>に関するお知らせをご覧ください。
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+
+<div id="note" />
+
+<div id="overview" />
 
 ## 概要
 
@@ -37,6 +45,10 @@ x-zendesk:
 | DV360 |  |  |
 | CM360 & DV360 |  |  |
 | CM360 + 非DV360のサードパーティメディアソース (1) | サードパーティメディアソースからトラフィックを購入し、このトラフィックから発生するモバイルアプリコンバージョンをCM360で計測する | <Anchor target="_blank" href="/marketers/ja/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">CM360を使用した第三者トラフィックの測定</Anchor> |
+
+<div id="setting-up-gmp-dv360-for-advertisers" />
+
+<div id="data-sharing-between-appsflyer-and-gmp---dv360" />
 
 ### AppsFlyerとGMP間のデータ共有
 
@@ -83,9 +95,13 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
 
 <span id="activate-partner::e4f2f638"></span>**連携**タブには、以下で説明するセクションがあります。
 
+<div id="activate-partner" />
+
 #### パートナーの有効化
 
 連携を設定するには、まず[**パートナーの有効化**]トグルをオンにしてください。<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナーの有効化と無効化</Anchor>について詳細はこちら。
+
+<div id="general-settings" />
 
 #### 一般的な設定
 
@@ -93,11 +109,15 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
 
 <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
+<div id="install-attribution" />
+
 #### インストール計測
 
 広告を表示またはクリックしたユーザーの新規インストール（初回起動）をアトリビューションするためのアトリビューション期間を設定します。
 
 1. **インストールのクリックルックバック期間**を1-24時間または1-14日に設定します。
+
+<div id="re-engagement-attribution" />
 
 #### リエンゲージメント計測
 
@@ -113,9 +133,13 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
 
 * **リエンゲージメント期間**を1～23時間、1～90日間、または**全期間**に設定します。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### リターゲティングでアクティブユーザーを無視する
 
 直近アプリを起動したユーザーの、<Anchor target="_blank" href="/marketers/ja/docs/set-retargeting-inactivity-window#休眠期間">リエンゲージメントとリアトリビューションを計測しない</Anchor>期間を設定します。したがって、この期間中のアクティビティはAppsFlyerに記録されません。
+
+<div id="note-3" />
 
 > 📘 **注記：**
 >
@@ -123,6 +147,8 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
 
 1. リターゲティングで**アクティブユーザーを無視する**をオンにします。
 2. 非アクティブ期間を設定します。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -145,9 +171,13 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリで、連携ステップを再度実施してください。
 
+<div id="note-4" />
+
 > 📘 **注記：**
 >
 > iOS アプリの場合のみ:ポストバックや<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions">レポート</Anchor>を介してパートナーと共有されるデータのコントロールは、**高度なプライバシー（ iOS 14.5 以降）**[の切り替え状態](#advanced-privacy)によって異なります。
+
+<div id="u-parameter-mapping" />
 
 #### パラメーター マッピング:
 
@@ -223,6 +253,8 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 
 <span id="setting-up-gmp-dv360-for-agencies"></span>代理店は広告主に代わってGMPでキャンペーンを実行することができます。
 
+<div id="agency-setup" />
+
 #### 代理店の設定
 
 | 作業担当： | 手順 |
@@ -231,7 +263,7 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 | 代理店 | <ol><li>AppsFlyer管理画面左メニュー **連携** > **連携済みパートナー**を選択します。</li><li>**連携タブ**を開きます。</li><li>**パートナーを有効にする**が**オン**になっていることを確認してください。そうでない場合、広告主側でまず広告主のGMP連携 を完了する必要があります。</li><li>ルックバック期間やアプリ内イベントのマッピングなど、残りの設定が正しいことも確認してください。必要であれば、変更を広告主に依頼してください。</li><li>最低1つ以上の**DBM Advertiser ID**を入力します。IDは <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/11415707?hl=en">GMP管理画面</Anchor>で確認できます。</li><li>**保存**をクリックしてください。</li></ol> |
 
 
-| <span id="gmp-discrepancies"></span>原因 | 説明 | AppsFlyerからのアドバイス |
+| <span id="gmp-dv360-discrepancies"></span><span id="gmp-discrepancies"></span>原因 | 説明 | AppsFlyerからのアドバイス |
 | --- | --- | --- |
 | ビュースルーアトリビューションウィンドウ | DV360／CM360のビュースルー計測期間は14日ですが、AppsFlyerのデフォルト期間は1日です。 |  |
 |  | AppsFlyer と GMP のマッピングが正しくない | <ul><li>リンクIDを確認してください。</li></ul> |

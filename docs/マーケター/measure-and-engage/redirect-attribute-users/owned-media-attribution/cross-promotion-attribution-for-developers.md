@@ -25,7 +25,11 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyer SDKに追加コードを実装してクロスプロモーション計測を有効にしましょう。
 
+<div id="implementing-cross-promotion-attribution-in-the-sdk" />
+
 ## SDKにクロスプロモーション計測を実装
+
+<div id="note" />
 
 > 📘 **注**
 >
@@ -38,6 +42,8 @@ x-zendesk:
 APIメソッドに引き渡すことができる標準パラメーターの一覧については、 <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyerの計測パラメーター</Anchor>を参照してください。
 
 広告対象のアプリが初回起動すると、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">Android</Anchor> または <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor> のいずれも、SDKのコンバージョンデータAPIを介して全ての計測リンク上のパラメーターにアクセスできます。
+
+<div id="attribute-cross-promotion-clicks" />
 
 ### クロスプロモーションのクリック計測
 
@@ -138,9 +144,13 @@ AppsFlyer.attributeAndOpenStore("123456789","test campaign",parameters);
 </Tab>
 </Tabs>
 
+<div id="note-1" />
+
 > 📘 **注**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#計測リンクのパラメータ">生成されたリンクには、</Anchor>これらの計測リンクパラメーターのいずれも追加することができます。
+
+<div id="attribute-cross-promotion-impressions" />
 
 ### クロスプロモーションのインプレッション計測
 
@@ -216,6 +226,8 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 
 </Tab>
 </Tabs>
+
+<div id="attribute-cross-promotion-with-non-native-platforms" />
 
 ### ネイティブ以外のプラットフォームでクロスプロモーションを計測
 

@@ -31,6 +31,8 @@ x-zendesk:
 
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## 広告収益のアトリビューション
 
 * バナー、オファーウォール、インタースティシャルなどの広告がアプリ内に表示されると、広告収益が発生します。
@@ -60,6 +62,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="implementation" />
+
 ## 実装
 
 以下では、利用できる広告収益のアトリビューション方式と、実装・管理に必要な作業や手順を説明します。
@@ -77,6 +81,8 @@ x-zendesk:
 3. 広告収益パートナーを選択し、<strong>［次へ］</strong>をクリックします。
 
    ![ad revenue 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -131,6 +137,8 @@ x-zendesk:
   1. AppsFlyerのサイドメニューから<strong>［設定］</strong>＞**［収益設定］**＞<strong>［広告収益］</strong>を選択します。
   2. <strong>［一般設定］</strong>で、<strong>［2つのメディエーションパートナーが互いの収益を含めて報告する場合に広告収益の重複を排除］</strong>にチェックを入れます。**注意**：2つのメディエーションプラットフォームが異なる広告フォーマットを扱う場合は、チェックを入れないでください。例えば、プラットフォーム1でバナーとインタースティシャル、プラットフォーム2でアプリ起動時広告とネイティブ広告を表示する場合です。
 
+     <div id="note-1" />
+
      > 📘 **注意**
      >
      > 次の連携では、この設定は適用されません。
@@ -158,12 +166,16 @@ x-zendesk:
   * **af\_app\_opened**イベント：デフォルトで利用できます。
 * 広告収益連携を利用する場合は、アプリ内イベントで同じ広告収益の金額を別途送信しないでください。 AppsFlyerは連携を通じて広告収益化ネットワークから収益データを取得するため、両方で送信すると、ダッシュボードで広告収益が重複して計上されます。
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### イベントを使った広告収益の集計
 
 | イベントの方式 | 実装方法 | 確認事項 |
 | --- | --- | --- |
 | 収益化専用のアプリ内イベント | <ul><li>広告表示時に発生するアプリ内イベントを設定します。</li><li>ユーザーのアクションを個別に数えられるため、eRPAをより正確に計算できます。</li><li>広告収益化ネットワークごとに異なるアプリ内イベントを設定すると、さらに詳しく計測できます。これにより、広告収益化ネットワーク別に収益を確認できます。<br />詳細は、以下の表を参照してください。</li></ul> | <ul><li>開発者によるアプリの変更が必要です。</li><li>ダッシュボードで、広告収益化ネットワーク別の収益を確認できます。</li></ul> |
 | af\_app\_openedイベント | <ul><li>af\_app\_openedは、AppsFlyer SDKがデフォルトで送信するイベントです。</li><li>ユーザーのセッションごとに発生します。</li></ul> | <ul><li>アプリの変更は不要です。</li><li>短時間で導入できます。</li><li>1セッションにつき広告を1回だけ表示する場合を除き、eRPAの値に大きなずれが生じます。</li><li>広告収益化ネットワーク別の収益は確認できません。</li><li>アプリを開いたすべてのユーザーが対象となるため、広告を見る意向があったかどうかは分かりません。</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### アプリ内イベントの方式の比較
 
@@ -194,11 +206,15 @@ x-zendesk:
 | 設定情報の不足 | 認証情報のフィールドに、未入力の項目があります。 | 広告収益パートナーのダッシュボードで認証情報を取得するか、パートナーに提供を依頼してください。 |
 | イベントが見つかりません | 最近、SDKから有効な広告収益イベントを受信していません。 | SDKの実装が完了し、テストイベントが送信されていることを確認してください。<Anchor target="_blank" href="/marketers/ja/docs/testing-the-sdk-integration-for-marketers#view-live-events">ライブイベントビューアー</Anchor>で、イベントの到着をリアルタイムに確認できます。 |
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > SDK連携の場合は、<Anchor target="_blank" href="/marketers/ja/docs/testing-the-sdk-integration-for-marketers#view-live-events">ライブイベントビューアー</Anchor>で広告収益イベントがリアルタイムで記録されることも確認できます。表示されるのは、登録済みのテスト端末から送信されたイベントのみです。
 
 </Accordion>
+
+<div id="ad-revenue-data" />
 
 ## 広告収益データ
 
@@ -221,6 +237,8 @@ x-zendesk:
   * ダッシュボード：アクティビティ
   * 広告収益のローデータ
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Overview dashboard｜集計パフォーマンスレポート**
 
 ![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
@@ -239,6 +257,8 @@ Overview dashboardでは、次のように表示されます。
 
 * 収益を含む各指標は、アクティビティの発生日に基づきます。 <Anchor target="_blank" href="/marketers/ja/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTVデータとアクティビティデータの違い</Anchor>を参照してください。
 * <strong>［ユーザーあたりの平均アクション数］</strong>は、アプリ内に表示された広告にユーザーが反応する傾向を示します。
+
+<div id="examples" />
 
 #### 例
 
@@ -314,6 +334,8 @@ Overview dashboardでは、次のように表示されます。
   * **共通：** 他のローデータレポートでも同じような意味を持つフィールド。例：イベント名、イベント値、通貨。
 * イベントをユーザー獲得元のメディアソースに紐づけることで設定される情報。これらのフィールドには、ユーザー獲得時のコンバージョンイベントの情報がコピーされます。例：メディアソース、キャンペーン。これらは、以下の表には記載していません。
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### 広告収益イベントから値を取得するフィールド
 
 | api\_name | フィールド名 | フィールドの種類 | 説明 |
@@ -330,6 +352,8 @@ Overview dashboardでは、次のように表示されます。
 | <span id="impressions"></span>impressions | インプレッション数 | 広告収益固有 | ユーザーに広告が表示された回数 |
 | <span id="mediation_network"></span>mediation\_network | メディエーションネットワーク | 広告収益固有 | イベントをAppsFlyerに報告するメディエーションプラットフォーム |
 | <span id="customer_user_id"></span>customer\_user\_id | カスタマーユーザーID | 共通 | 広告主から取得できる場合に値が入ります。<ul><li>広告表示単位（SDK）の連携：AppsFlyer SDKの`setCustomerUserId()`を使って収集します。</li><li>端末単位（API）の連携：メディエーションAPIから収集します（メディエーションSDKで設定したユーザーIDまたはパブリッシャーユーザーID）。</li><li>OdeeoとAppodealでは非対応です。</li></ul> |
+
+<div id="fields-by-network" />
 
 #### アドネットワーク別のフィールド
 
@@ -383,6 +407,8 @@ Overview dashboardでは、次のように表示されます。
 * <Anchor target="_blank" href="/marketers/ja/docs/revenue-etl-reports">収益ETLレポート</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 補足情報
 

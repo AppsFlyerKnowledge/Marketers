@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要：** ROI360の収益レポートについて、データの取得元、生成の仕組み、利用可能になるタイミング、アクセス方法を説明します。フィールドや構造の詳細は、データサンプルをダウンロードして確認できます。
 
+<div id="revenue-etl" />
+
 ## 収益ETL
 
 ROI360の収益ETLは、収益データをBIシステムに取り込めるよう、Data Locker経由でクラウドストレージに配信します。
@@ -38,6 +40,8 @@ ROI360の収益ETLは、収益データをBIシステムに取り込めるよう
 | [広告収益［SDK広告表示単位］](/docs/revenue-etl-reports#impression-level-report) | <ul><li>広告表示単位（SDK経由）</li><li>広告表示単位（SDK経由）と端末単位（S2S API経由）の併用</li></ul> | <ul><li>広告収益SDKのデータを含みます。</li><li>最も早いタイミングで、最も細かい単位のデータを提供します。</li></ul> | 1時間ごと。<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#data-freshness">詳細はこちら</Anchor> |
 | [取引単位のストア収益](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | ROI360のIAP・サブスクリプション収益連携 | <ul><li>ROI360で検証したアプリ内購入・サブスクリプションのローデータを、取引単位で提供します。</li><li>最も早いタイミングで、最も細かい単位のデータを提供します。</li><li>ROI360独自の収益化関連データと純収益を含みます。</li></ul> | 1時間ごと |
 | [端末単位のストア収益［更新版あり］](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | ROI360のIAP・サブスクリプション収益連携 | <ul><li>ROI360で検証したアプリ内購入・サブスクリプションのローデータを、端末単位で提供します。</li><li>ROI360独自の純収益データを含みます。</li></ul> | 8時間ごと |
+
+<div id="reports" />
 
 ## レポート
 
@@ -53,6 +57,8 @@ ROI360の収益ETLは、収益データをBIシステムに取り込めるよう
 
 <span id="download-the-report-data-sample"></span>[単一バージョンの広告収益レポートのデータサンプルをダウンロード](https://docs.google.com/spreadsheets/d/e/2PACX-1vSuZYSPuAWIG-MappxQDIT3sl8UmN6MLKP2SKsbREekVAvKSHuUAUAtUE6JapanANJbKsTzCOID8z7G/pub?output=xlsx)。
 
+<div id="data-sources" />
+
 #### データの取得元
 
 広告収益パートナーとの連携方式に応じて、レポートのデータは次のいずれかから取得します。
@@ -61,6 +67,8 @@ ROI360の収益ETLは、収益データをBIシステムに取り込めるよう
 * **S2S：** パートナー（メディエーションまたは広告収益化ネットワーク）にAPIリクエストを送り、取得した端末単位のレポート。
 
 連携方式の設定方法は、広告収益パートナーとの連携を参照してください。
+
+<div id="data-flow" />
 
 #### データ処理の流れ
 
@@ -75,12 +83,16 @@ ROI360の収益ETLは、収益データをBIシステムに取り込めるよう
    **注意：** 同じ端末について、端末単位の集計データが複数行含まれる場合があります。端末単位の集計には、広告収益化ネットワーク、広告の掲載位置、広告の種類など、収益化に関するディメンションも使われるためです。例えば、アプリ内の2つの異なる位置に広告を表示する場合、端末単位の収益イベントは掲載位置ごとに別々に集計されます。
 3. **データの配信**：端末単位のデータを、単一バージョンのレポートに書き込みます。
 
+<div id="when-is-the-report-data-available" />
+
 #### レポートデータを利用できるタイミング
 
 | 連携方式 | バージョンの配信日（X＝収益イベントの発生日） | バージョンの利用開始時刻 | バージョンに含まれる収益イベントの発生期間 |
 | --- | --- | --- | --- |
 | SDK | X＋1日 | 20:00 | 00:00 — 24:00 |
 | SDK＋S2S | X＋1日 | 17:00 | 00:00 — 24:00 |
+
+<div id="how-to-subscribe-to-the-report" />
 
 #### レポートの配信設定
 
@@ -90,11 +102,15 @@ ROI360の収益ETLは、収益データをBIシステムに取り込めるよう
 
 **注意：** リターゲティングとオーガニックについても、同じ種類のレポート（リターゲティング／オーガニック広告収益［単一バージョン］）を選択できます。
 
+<div id="how-to-access-the-report-in-your-bucket" />
+
 #### バケット内のレポートへのアクセス方法
 
 レポートのパスは、次のフォルダー階層で構成されます。
 
 形式：`<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
+
+<div id="report-folder-hierarchy" />
 
 #### レポートのフォルダー階層
 
@@ -151,6 +167,8 @@ bucket
 
 [更新版を含む広告収益レポートのデータサンプルをダウンロード](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv)。
 
+<div id="data-sources-1" />
+
 #### データの取得元
 
 パートナーとの連携方式に応じて、レポートのデータは次のいずれかから取得します。
@@ -160,6 +178,8 @@ bucket
 * **S2S＋SDK：** SDKとS2Sの両方から送信されるデータ。
 
 連携方式の設定方法は、広告収益パートナーとの連携を参照してください。
+
+<div id="data-flow-1" />
 
 #### データ処理の流れ
 
@@ -173,6 +193,8 @@ bucket
 
    **注意：** 同じ端末について、端末単位の集計データが複数行含まれる場合があります。端末単位の集計には、広告収益化ネットワーク、広告の掲載位置、広告の種類など、収益化に関するディメンションも使われるためです。例えば、アプリ内の2つの異なる位置に広告を表示する場合、端末単位の収益イベントは掲載位置ごとに別々に集計されます。
 3. **データの配信**：以下に示す所定のスケジュールに従って、端末単位のデータをレポートの各バージョンに書き込みます。
+
+<div id="when-are-the-report-versions-available" />
 
 #### 各バージョンを利用できるタイミング
 
@@ -198,6 +220,8 @@ bucket
 | S2S | X＋14日 | 11:00-12:00 | 00:00 — 24:00 |
 | SDK＋S2S | 上記のSDK版とS2S版のすべて |  |  |
 
+<div id="how-to-subscribe-to-the-report-1" />
+
 #### レポートの配信設定
 
 1. AppsFlyerのサイドメニューから<strong>［レポート］</strong>＞<strong>［Data Locker］</strong>を選択します。
@@ -206,11 +230,19 @@ bucket
 
 **注意：** リターゲティングとオーガニックについても、同じ種類のレポート（リターゲティング／オーガニック広告収益［更新版あり］）を選択できます。
 
+<div id="how-to-access-the-report-in-your-bucket-2" />
+
+<div id="how-to-access-the-report-in-your-bucket-1" />
+
 #### バケット内のレポートへのアクセス方法
 
 レポートのパスは、次のフォルダー階層で構成されます。
 
 `<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+
+<div id="report-folder-hierarchy-2" />
+
+<div id="report-folder-hierarchy-1" />
 
 #### レポートのフォルダー階層
 
@@ -278,11 +310,15 @@ bucket
 
 [広告表示単位の広告収益レポートのデータサンプルをダウンロード](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
 
+<div id="data-source" />
+
 #### データの取得元
 
 ROI360の広告収益SDK Connectorから送信された広告表示単位のデータを使用するため、SDK方式の連携が必要です。
 
 連携方式の設定方法は、広告収益パートナーとの連携を参照してください。
+
+<div id="data-flow-2" />
 
 #### データ処理の流れ
 
@@ -293,17 +329,23 @@ ROI360の広告収益SDK Connectorから送信された広告表示単位のデ�
    3. 広告表示単位の広告収益イベントの生成。
 3. **データの配信**：インプレッションイベントを発生時刻ごとのフォルダーに分け、ファイルに書き込みます。各フォルダーには、その1時間に発生したインプレッションのみが含まれます。
 
+<div id="when-is-the-report-data-available-1" />
+
 #### レポートデータを利用できるタイミング
 
 | 連携方式 | バージョンの配信日（X＝収益イベントの発生日） | バージョンの利用開始時刻 |
 | --- | --- | --- |
 | SDK | X日 | 各レポート対象時間の終了時 |
 
+<div id="how-to-subscribe-to-the-report-2" />
+
 #### レポートの配信設定
 
 1. AppsFlyerのサイドメニューから<strong>［レポート］</strong>＞<strong>［Data Locker］</strong>を選択します。
 2. <strong>［Data Lockerのコンテンツ］</strong>ペインを下にスクロールし、<strong>［ROI360収益ETL］</strong>タイルを探します。
 3. <strong>［広告収益（SDK広告表示単位）］</strong>を選択します。
+
+<div id="how-to-access-the-report-in-your-bucket-3" />
 
 #### バケット内のレポートへのアクセス方法
 
@@ -362,9 +404,15 @@ bucket
 
 [取引単位のストア収益レポートのデータサンプルをダウンロード](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
 
+<div id="data-sources-3" />
+
+<div id="data-sources-2" />
+
 #### データの取得元
 
 ROI360 Purchase SDK Connectorとストアのサーバー間通知を通じて収集した取引データを使用します。
+
+<div id="data-flow-3" />
 
 #### データ処理の流れ
 
@@ -372,11 +420,15 @@ ROI360 Purchase SDK Connectorとストアのサーバー間通知を通じて収
 2. AppsFlyer ROI360のVIAP／サブスクリプション機能がデータを処理して獲得元に紐づけ、取引単位のイベントと値を生成します。
 3. 取引単位のイベントを、時間別フォルダーに分けてレポートに書き込みます。
 
+<div id="when-is-the-report-data-available-2" />
+
 #### レポートデータを利用できるタイミング
 
 | バージョンの配信日（X＝収益イベントの発生日） | バージョンの利用開始時刻 |
 | --- | --- |
 | X日 | 各レポート対象時間の終了時 |
+
+<div id="how-to-subscribe-to-the-report-3" />
 
 #### レポートの配信設定
 
@@ -384,11 +436,15 @@ ROI360 Purchase SDK Connectorとストアのサーバー間通知を通じて収
 2. <strong>［Data Lockerのコンテンツ］</strong>ペインを下にスクロールし、<strong>［ROI360収益ETL］</strong>タイルを探します。
 3. <strong>［取引単位のストア収益レポート］</strong>を選択します。
 
+<div id="how-to-access-the-report-in-your-bucket-4" />
+
 #### バケット内のレポートへのアクセス方法
 
 レポートのパスは、次のフォルダー階層で構成されます。
 
 `<bucket-name>/t=stores_rawdata/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="report-folder-hierarchy-3" />
 
 #### レポートのフォルダー階層
 
@@ -448,11 +504,15 @@ bucket
 1. ROI360 Purchase SDK Connector。
 2. ストア（App Store、Google Playなど）からのサーバー間通知。
 
+<div id="data-flow-4" />
+
 #### データ処理の流れ
 
 1. ROI360 Purchase SDK Connectorから送信されたデータ、またはストアのS2S通知から収集した取引データを使用します。
 2. AppsFlyer ROI360のVIAP／サブスクリプション機能がデータを処理して獲得元に紐づけ、アプリ内イベントを生成します。
 3. アプリ内イベントを端末単位で集計し、4時間ごとにレポートの各バージョンに書き込みます。
+
+<div id="when-are-the-report-versions-available-1" />
 
 #### 各バージョンを利用できるタイミング
 
@@ -462,6 +522,8 @@ bucket
 | X日 | 12:00 - 13:00 | 00:00 — 12:00 |
 | X日 | 20:00 - 21:00 | 00:00 — 20:00 |
 | X＋1日 | 05:00 - 06:00 | 00:00 — 24:00 |
+
+<div id="how-to-subscribe-to-the-report-4" />
 
 #### レポートの配信設定
 
@@ -474,6 +536,8 @@ bucket
 レポートのパスは、次のフォルダー階層で構成されます。
 
 `<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
+
+<div id="report-folder-hierarchy-4" />
 
 #### レポートのフォルダー階層
 

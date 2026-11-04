@@ -15,9 +15,13 @@ x-zendesk:
 ---
 **概要：** WebサイトにAppsFlyer Web SDK（ピクセルとも呼ばれます）を実装すると、ユーザーの訪問やイベントをAppsFlyerに送信できます。また、継続して使用するカスタマーユーザーID（CUID）を設定することで、複数のプラットフォームにまたがるユーザーの行動を紐づけられます。
 
+<div id="overview" />
+
 ## 概要
 
 Web SDKは、訪問者によるWebサイト上の操作を記録し、その情報をAppsFlyerに送信します。 Webサイト上のユーザーの訪問や操作をAppsFlyerに送信する、サイズが40～60 KBのプラグインモジュールです。
+
+<div id="integrate-the-sdk-manually" />
 
 ### SDKの手動実装
 
@@ -31,6 +35,8 @@ Web SDKは、訪問者によるWebサイト上の操作を記録し、その情�
 6. [カスタマーユーザーIDの設定](#6-カスタマーユーザーidの設定)継続して使用するCUIDを設定し、Web上の行動を他のプラットフォームでの行動と紐づけます。
 7. [プライバシーの管理](#7-プライバシーの管理)計測の有効・無効を制御し、セキュリティとデータの除外設定（コンテンツセキュリティポリシーとクエリパラメータの除外）を行います。
 8. [Web SDKのCookie一覧](#web-sdkのcookie一覧) Web SDKが設定または使用するCookieの目的、有効期間、適用範囲を確認します。
+
+<div id="integrate-the-sdk-with-an-ai-coding-agent" />
 
 #### AIコーディングエージェントを使用したSDKの実装
 
@@ -314,6 +320,8 @@ CMPがない場合は、通常のコードスニペットを使用してくだ�
 
 </Accordion>
 
+<div id="1-obtain-your-keys" />
+
 ## 1. キーの取得
 
 **Web SDK ID（Web Dev Keyとも呼ばれます）を取得します。**
@@ -327,6 +335,8 @@ CMPがない場合は、通常のコードスニペットを使用してくだ�
 1. AppsFlyerのサイドメニューから、**Engage** > **Web to App** > **Smart Banners**を開きます。
 2. 使用するSmart Banner Keyをコピーします。
 
+<div id="2-select-a-code-snippet" />
+
 ## 2. コードスニペットの選択
 
 実装方式とセキュリティ要件に合ったコードスニペットを選択します。次の2つの方式があります。
@@ -337,6 +347,8 @@ CMPがない場合は、通常のコードスニペットを使用してくだ�
 > ❗️ **Warning**
 >
 > 標準Web SDKからAdvanced SDK Verificationに移行する場合は、既存のコードスニペットを新しいものに置き換えてください。既存のコードスニペットを残したまま、新しいものを追加しないでください。
+
+<div id="standard-web-sdk" />
 
 ### 標準Web SDK
 
@@ -468,6 +480,8 @@ Webサイトでnonceを使用するコンテンツセキュリティポリシー
 
 </Accordion>
 
+<div id="3-deploy-the-snippet" />
+
 ## 3. コードスニペットの設置
 
 ステップ2で選択したコードスニペットを、次のいずれかの方法で設置します。 SDKがページの読み込みごとに1回だけ読み込まれるようにしてください。
@@ -520,6 +534,8 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
 
 <Accordion title="方法C：Adobe Launch Tag Managerを使用して設置">
 
+<div id="create-a-property-in-adobe-experience-cloud" />
+
 #### Adobe Experience Cloudでプロパティを作成
 
 1. Adobe Experience Cloud > Launchを開きます。
@@ -529,6 +545,8 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
 5. <strong>Platform（プラットフォーム）</strong>で、**Web**を選択します。
 6. Webサイトのドメインを入力します。
 7. <strong>Save（保存）</strong>をクリックします。
+
+<div id="add-the-snippet-to-the-adobe-launch-property" />
 
 #### Adobe Launchのプロパティにコードスニペットを追加
 
@@ -543,6 +561,8 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
    * <strong>Keep Changes（変更を保持）</strong>をクリックして、コードエディタを閉じます。
 5. <strong>Save（保存）</strong>をクリックします。
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 #### WebサイトにAdobe Launchのタグを追加
 
 1. <strong>My web property（Webプロパティ）</strong>ページで、<strong>Environments（環境）</strong>タブを選択します。
@@ -550,6 +570,8 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
 3. 該当する行の<strong>Install（インストール）</strong>列で、ボックスアイコンをクリックします。
 4. <strong>Web Install Instructions（Webへの設置手順）</strong>ダイアログで、スクリプトのコードスニペットをコピーし、ダイアログを閉じます。
 5. Webサイトのheadセクションに、コードスニペットを貼り付けます。
+
+<div id="publish-the-adobe-launch-environment" />
 
 #### Adobe Launchの環境を公開
 
@@ -569,6 +591,8 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
    * アクションメニューをクリックし、<strong>Build & Publish to Production（ビルドして本番環境に公開）</strong>を選択します。
 
 </Accordion>
+
+<div id="4-make-sure-the-sdk-is-working" />
 
 ## 4. SDKの動作確認
 
@@ -596,6 +620,8 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
 > 📘 **Note**
 >
 > Web SDKの実装とイベントの正常な発生をリアルタイムで視覚的に確認するには、Web SDK Testページを使用してください。
+
+<div id="5-set-and-record-events" />
 
 ## 5. イベントの設定と記録
 
@@ -667,6 +693,8 @@ window.onload = function(){
 
 この方法では、完了ページの読み込み時にタグを発火させることで、メールマガジンの購読登録など、完了したコンバージョンを記録します。
 
+<div id="1-set-up-a-thank-you-page" />
+
 #### 1. 完了ページの作成
 
 次のHTMLではGTMが読み込まれ、GTMによってWeb SDKが読み込まれます。また、関数や`localStorage`を使用して、GTMからデータを参照できるようにする方法も示しています。
@@ -694,6 +722,8 @@ window.onload = function(){
 3>
 0>
 ```
+
+<div id="2-configure-the-gtm-tag" />
 
 #### 2. GTMタグの設定
 
@@ -764,6 +794,8 @@ window.onload = function(){
 
 この方法は、GTMの組み込み変数とトリガーを使用して、<strong>Checkout（購入手続き）</strong>ボタンのクリックなど、特定の操作を記録します。
 
+<div id="1-set-up-a-checkout-page" />
+
 #### 1. 購入手続きページの作成
 
 ```javascript
@@ -784,6 +816,8 @@ window.onload = function(){
 0>
 ```
 
+<div id="2-configure-gtm-variables-and-triggers" />
+
 #### 2. GTMの変数とトリガーの設定
 
 1. GTMで**Variables（変数）** > <strong>Configure（設定）</strong>をクリックし、Built-In Variables（組み込み変数）の一覧で<strong>Click Element（クリック要素）</strong>を有効にします。
@@ -792,6 +826,8 @@ window.onload = function(){
    * トリガーの種類：**Click - All Elements（クリック：すべての要素）**。
    * トリガーの発火条件：**Some Clicks（一部のクリック）**。
    * 条件：<strong>Click Element（クリック要素）</strong>がCSSセレクタ`#checkout`に一致すること。
+
+<div id="3-create-the-interaction-tag" />
 
 #### 3. ユーザー操作用のタグの作成
 
@@ -822,6 +858,8 @@ window.onload = function(){
 
 </Accordion>
 
+<div id="6-set-customer-user-id" />
+
 ## 6. カスタマーユーザーIDの設定
 
 イベント計測の実装後、`setCustomerUserId`を使用して、継続して使用する識別子を設定します。これにより、Web上の行動を他のプラットフォーム（モバイル、PC、CTV）での行動と紐づけ、プラットフォームをまたぐユーザーの一連の行動をまとめて把握できます。
@@ -846,6 +884,8 @@ window.onload = function(){
 * サーバーが、そのユーザーに一意のCUIDを生成します。
 * 会員登録後の完了ページで、サーバーに問い合わせて新しいCUIDを取得します。
 * サーバーの応答を使用し、Web SDKの`setCustomerUserId()`メソッドでAppsFlyerのCUIDを設定します。
+
+<div id="a-sign-up-form-example" />
 
 #### 会員登録フォームの例
 
@@ -880,6 +920,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 3>
 0>
 ```
+
+<div id="a-thank-you-page-example" />
 
 #### 完了ページの例
 
@@ -992,6 +1034,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="7-manage-privacy" />
+
 ## 7. プライバシーの管理
 
 イベント計測の実装後、組織や地域の基準に対応するため、セキュリティやプライバシーに関する制限を適用する必要がある場合があります。
@@ -999,6 +1043,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="イベント送信の有効化・無効化">
 
 計測は、次の2つの方法で制御できます。
+
+<div id="sdk-initial-state-setting-in-the-snippet" />
 
 #### SDKの初期状態の設定（コードスニペット内）
 
@@ -1010,6 +1056,8 @@ Webページの初回読み込み時にSDKがイベントを送信するか、�
 > 📘 **Note**
 >
 > measurementStatusが空、またはNULLの場合、AppsFlyerはmeasurementStatus:trueと同じように扱います。
+
+<div id="explicit-control" />
 
 #### メソッドによる明示的な制御
 
@@ -1030,6 +1078,8 @@ Webページの初回読み込み時にSDKがイベントを送信するか、�
 
 Webサイトで厳格なセキュリティやデータプライバシーの要件を満たす必要がある場合は、以下の仕組みを使用して、Web SDKの動作やデータの扱いを設定してください。
 
+<div id="content-security-policy-csp" />
+
 #### コンテンツセキュリティポリシー（CSP）
 
 WebサイトでCSPによってJavaScriptの安全性を確保する必要がある場合、Web SDKでは、CSPの設定とステップ2で選択したコードスニペットに応じて、2つの方法に対応しています。
@@ -1047,6 +1097,8 @@ WebサイトでCSPによってJavaScriptの安全性を確保する必要があ�
 | `script-src 'nonce-...' 'strict-dynamic'` | はい（推奨） | nonceによってインラインスクリプトとローダーが許可され、`strict-dynamic`によって動的に挿入されるSDKのタグにも信頼が引き継がれます。許可リストにCDNのオリジンを追加する必要はありません。 |
 
 CSPポリシーとの互換性
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### CSPのnonceに対応したAdvanced SDK Verificationのコードスニペット
 
@@ -1120,6 +1172,8 @@ CSPポリシーとの互換性
 
 </Accordion>
 
+<div id="discard-query-parameters" />
+
 #### クエリパラメータの除外
 
 URLのクエリパラメータに機密情報が含まれる場合は、AppsFlyerでそれらを除外するように設定してください。URL、リファラ、`header_referer`が対象です。
@@ -1133,6 +1187,8 @@ URLのクエリパラメータに機密情報が含まれる場合は、AppsFlye
 * 除外後：`param1=value1&af_url_mask=param2;param3`
 
 </Accordion>
+
+<div id="web-sdk-cookies-reference" />
 
 ## Web SDKのCookie一覧
 

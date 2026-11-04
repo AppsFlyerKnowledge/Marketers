@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **概要**：iOS14以降では、プライバシーに関するユーザーの設定をATTで確認します。広告トラッキング制限（LAT）は廃止されました。
 
+<div id="att-values" />
+
 ### ATTの値
 
 * iOS14以降では、Appleの<Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor>（ATT）を通じて、アプリによるトラッキングの許可状況を示すステータス値を取得できます。
@@ -39,6 +41,8 @@ x-zendesk:
 * 場合によっては、AppsFlyerが定義した値がATTに設定されます。以下の表では、先頭に*af*が付いている値が該当します。
 * IDFAを取得できない場合、その値はすべてゼロになります。
 
+<div id="att-values-defined-by-apple" />
+
 #### Appleが定義するATTの値
 
 | ATTステータス | IDFAの取得可否 | 動作 |
@@ -48,6 +52,8 @@ x-zendesk:
 | denied | 取得不可 | 以下のいずれかに該当する場合に設定されます。<ul><li>許可を求めるダイアログの表示後に設定された場合</li><li>ユーザーが*［アプリからのトラッキング要求を許可］*（デバイス全体の設定）をオフにしている場合</li><li>デバイスにiOS14をインストールする前にLATがオンになっていた場合</li></ul> |
 | authorized | 取得可能 | ユーザーが明示的に同意しています。 |
 
+<div id="additional-att-values-defined-by-appsflyer" />
+
 #### AppsFlyerが独自に定義するATTの値
 
 | ATTステータス | 補足 | IDFAの取得可否 |
@@ -55,6 +61,8 @@ x-zendesk:
 | af\_unknown | 広告主からATTの値が報告されましたが、<Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor>の仕様に定義されていない値です。 | iOSのバージョンによって異なります |
 | af\_authorized | 以下のいずれかの理由により、IDFAの使用が許可されています。<ul><li>デバイスのiOSバージョンが14未満。</li><li>報告されたイベントにIDFAが含まれているものの、ATTが含まれていない。たとえば、iOS14未満のデバイスで、SDK V5.Xを実装したアプリを使用している場合が該当します。</li></ul> | 取得可能 |
 | af\_unavailable | <ul><li>広告主から送信されたイベントにATTが含まれておらず、IDFAも取得できません。</li><li>AppsFlyer SDK V5.XではATTを取得できず、IDFAも取得できていません。</li></ul> | 取得不可 |
+
+<div id="is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14" />
 
 ### iOSのIs LAT｜注意点とiOS14におけるATTとの対応
 

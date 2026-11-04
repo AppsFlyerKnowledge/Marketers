@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** DCPの接続を設定してデータソースを接続し、データをエンリッチしたり、オーディエンスをクラウドストレージやメディアパートナーへエクスポートしたりできます。
 
+<div id="about-dcp-connections" />
+
 ## DCPの接続について
 
 接続では、DCPがどのようにデータを取り込み、オーディエンスをエクスポートするかを定義します。<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">クラウドサービスの設定</Anchor>が完了したら、**接続を管理**モーダルからDCPへ接続します。利用できる接続タイプは以下のとおりです。
@@ -57,9 +59,13 @@ Amazon S3とGoogle Cloud Storageでは、1つの接続をソース（受信）�
 
 ソースの設定時に、ソース接続を直接作成することもできます。手順については、<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources">ソースの作成と管理</Anchor>を参照してください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Amazon S3またはGCSへの受信ソース接続を作成すると、対応する送信クラウドストレージ接続も自動的に作成されます（その逆も同様です）。 Amazon S3またはGCSの接続を削除すると、対応するもう一方の接続も自動的に削除されます。実際には同じ1つの接続を共有しているため、どちらかのタブから削除すると、その接続を使用しているすべての箇所から削除されます。
+
+<div id="cloud-service-connections-for-source-data" />
 
 #### ソースデータ向けクラウドサービス接続
 
@@ -71,6 +77,8 @@ Amazon S3とGoogle Cloud Storageでは、1つの接続をソース（受信）�
 
 **ACCOUNTADMIN** > **Account** > 対象アカウントにカーソルを合わせる > **Copy account identifier**の順に進みます。詳細は<Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Snowflakeのドキュメント</Anchor>を参照してください。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > **Locator**と表示されているIDを確認してください。これは、Snowflakeの送信接続を作成する際に使用するIDとは**異なります**。
@@ -78,6 +86,8 @@ Amazon S3とGoogle Cloud Storageでは、1つの接続をソース（受信）�
 **Amazon S3およびGCS：新しい接続**ダイアログに、AppsFlyer Data Clean Room（DCR）専用として<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">作成したバケット</Anchor>の名前を入力します。
 
 **Salesforce Cloud／CRM：** <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">Salesforce接続の設定方法</Anchor>を参照してください。
+
+<div id="local-file-connection" />
 
 #### ローカルファイル接続
 
@@ -146,6 +156,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN--c000.csv | この配信で出力されるファイルの1つ。詳細は以下の「ファイル形式と分割」を参照してください。 |
 | \_SUCCESS | すべてのpartファイルの書き込みが完了すると作成される、空のマーカーファイル。 |
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > このフォルダ構造は自動的に作成・管理されます。手動で名前変更や構成変更を行わないでください。これらのファイルを読み取る自動処理は、このパスパターンに従うよう実装し、途中までしか配信されていないファイルを読み込まないよう、partファイルを処理する前に\_SUCCESSが作成されるのを待つ必要があります。
@@ -200,6 +212,8 @@ Data & Identity接続では、分散したユーザーデータを統合し、�
 #### ID5
 
 ファーストパーティデータを<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">ID5識別子でエンリッチ</Anchor>することで、分散したユーザーデータを統合し、アクティベーションパートナーとのマッチ率を高め、パートナー側のオーディエンス規模を拡大できます。
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

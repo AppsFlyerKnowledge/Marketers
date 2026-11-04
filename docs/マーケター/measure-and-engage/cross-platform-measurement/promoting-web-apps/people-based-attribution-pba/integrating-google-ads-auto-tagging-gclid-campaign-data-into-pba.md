@@ -24,6 +24,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
 
+<div id="integrating-google-ads-campaign-data-in-pba" />
+
 ## PBAにGoogle Adsキャンペーンデータを連携する
 
 Google Adsアカウント（1つ以上）をブランドバンドルに接続してください。  Google Adsキャンぺーンデータは、管理画面の分析機能を向上させ、ローデータレポートをさらに強化できます。
@@ -61,6 +63,8 @@ Google Ads連携ページでは、次のアクションが可能です：
 
 * 連携先の削除
 * 接続を有効／無効にする
+
+<div id="pbagoogle-ads-status-messages" />
 
 ### PBA—Google Adsステータスメッセージ
 

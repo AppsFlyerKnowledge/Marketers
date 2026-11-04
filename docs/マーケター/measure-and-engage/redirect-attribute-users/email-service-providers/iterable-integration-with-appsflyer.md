@@ -28,11 +28,15 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## はじめに
 
 ESP (Email Service Providers) は、セグメント化されたユーザートラフィックを獲得するための有効な手段です。
 
 ESPは、独自のESPクリック記録ドメインでディープリンクURLを加工します。
+
+<div id="prerequisites" />
 
 ## 前提条件
 
@@ -51,9 +55,17 @@ ESPは、独自のESPクリック記録ドメインでディープリンクURL�
 </Tabs>
 
 
+<div id="step-1-setting-up-link-branding-in-iterable" />
+
+<div id="setting-up-iterable" />
+
 ### ステップ1:
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### ステップ2:
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### ステップ2:
 
@@ -84,7 +96,11 @@ ResponsysでiOSユニバーサルリンクをサポートするには、AASAフ�
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## アプリのセットアップ
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### ステップ1:Androidマニフェストのアクティビティにクリックドメインを追加します
 
@@ -103,6 +119,8 @@ Androidマニフェストで、ディープリンク先のアクティビティ�
 </activity>
 ```
 
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
+
 #### ステップ2: クリックドメインを解決するアプリの設定
 
 SDKは、キャンペーン詳細を取得するために、クリックドメインの背後にあるOneLinkを解決する必要があります。
@@ -118,6 +136,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 
 
 このセクションでは、ユニバーサルリンクをサポートするアプリの設定方法について説明します。
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### ステップ1:Xcodeでのクリックドメインの関連付け
 
@@ -202,6 +222,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
    </Tabs>
 
 
+<div id="sending-your-first-email" />
+
 ## 最初のEメールの送信
 
 1. リンク管理ページにて（または手動で）<Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink URLを作成</Anchor>してください。
@@ -230,6 +252,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### リンクのテスト
 

@@ -29,6 +29,8 @@ P2Pレンディングは、個人や企業が互いにお金を貸し借りす�
 
 イベントの計測から収集するデータにより、信頼できる借り手を明確化し、有利な金利を提供することができます。同様に、最も活発な貸し手は誰なのかを確認して、手数料を安く提供することができます。さらに、ユーザーに最も人気のある融資の種類がわかれば、これらユーザーを対象にマーケティングキャンペーンを開始することもできます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -39,6 +41,8 @@ P2Pレンディングは、個人や企業が互いにお金を貸し借りす�
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -81,6 +85,8 @@ P2Pレンディングは、個人や企業が互いにお金を貸し借りす�
 パラメーターなしで送信できます
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 
@@ -126,6 +132,8 @@ P2Pレンディングは悪用されやすいため、ユーザーは最初に�
 **イベントパラメーター**
 
 パラメーターなしで送信できます
+
+<div id="note" />
 
 > 📘 **注意**
 >

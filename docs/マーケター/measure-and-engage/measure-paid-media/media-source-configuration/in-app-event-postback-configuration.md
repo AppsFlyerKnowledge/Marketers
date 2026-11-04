@@ -24,18 +24,26 @@ x-zendesk:
 ---
 > **概要:** アプリエンゲージメントとユーザーの質を測定し、アプリ内イベントデータを利用してキャンペーンを最適化します。
 
+<div id="overview" />
+
 ## 概要
 
 アプリ内イベントにより、マーケターはさまざまなソースからアプリエンゲージメントとユーザーの質を測定し、適切なユーザー獲得戦略を構築できます。アドネットワークは、アプリ内イベント情報を利用してキャンペーンを最適化し、CPAまたはイベント単価キャンペーンを実行します。アドネットワークは、ポストバックを介してリアルタイムでアプリ内イベントデータを受信します。<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントに関する詳細はこちら</Anchor>。
+
+<div id="postback-in-app-event-selection" />
 
 ## アプリ内イベントポストバックの選択
 
 マーケターは、本記事で説明する設定を用いて、どのアプリ内イベントに対しアドネットワークにポストバックを送信するか選択できます。
 
+<div id="note" />
+
 > 📘 **注記**
 >
 > * アプリ内イベントには**拒否されたイベント**、つまり、Protect360によってブロックされた、または検証ルールの条件を満たさないイベントが含まれています。
 > * **アプリ内イベントポストバック**セクションが**連携**タブに存在しない場合は、パートナーがまだAppsFlyerでのアプリ内イベント記録を予備設定していないことを意味します。パートナーは、<Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">パートナーアシスタントウィジェット</Anchor>を使用してAppsFlyerに連絡し、連携を完了できます。
+
+<div id="in-app-event-postback-window" />
 
 ## アプリ内イベントポストバック期間
 
@@ -56,17 +64,25 @@ x-zendesk:
 | 1月15日 | 期間は20日に変更されます。 |
 | 1月18日 | ユーザーによる再度の購入。<br /><br />今回は、イベントが現在の期間内（20日間）に入っているため、ポストバックが送信されます。 |
 
+<div id="note-1" />
+
 > 📘 **注**
 >
 > [「オーガニックを含むすべてのメディアソース」](#ポストバック送信のオプション)が選択されている場合、このルールは適用されません。この場合、この設定を行ったパートナーは、**たとえそのコンバージョンイベントの帰属先が別のパートナーであったとしても**、**設定を行ったパートナーに対して**定義されたポストバック期間内にイベントが発生した限り、広告主が受信するすべてのコンバージョンイベントについてポストバックを受け取ります。
+
+<div id="default-postback-window" />
 
 ### デフォルトのポストバック期間
 
 アプリ内イベントのポストバック設定を始める際、デフォルトの期間は自動で6か月に設定されます。
 
+<div id="note-2" />
+
 > 📘 **注記**
 >
 > 2019年7月30日より前に、パートナーのアプリ内イベントポストバックを利用し始めた場合、デフォルトの期間設定はライフタイム（制限なし）です。つまり、アプリ内イベントのポストバックは常に送信されます。
+
+<div id="who-can-configure-postback-windows" />
 
 ### ポストバック期間を設定できるのは誰か
 
@@ -74,6 +90,8 @@ x-zendesk:
 * 代理店（**アプリ内イベントのポストバック設定を許可する** <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#代理店の許可">権限</Anchor>がある場合）。  
   **注:** 同じアドネットワークを利用するマーケターと代理店は、それぞれ独自にポストバック期間を設定できます。これはネットワークとの契約に基づきます。
 * パートナー（**アプリ内イベントのポストバック設定を許可する** <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">権限</Anchor>がある場合）。
+
+<div id="event-mapping" />
 
 ## イベントマッピング
 
@@ -83,9 +101,13 @@ x-zendesk:
 
 マーケターのイベントがパートナーのイベントと一致するようにするには、イベント名をマッピングする必要があります。
 
+<div id="note-3" />
+
 > 📘 **注**
 >
 > 特定のパートナーの連携タブでマッピングされたイベントは、標準のポストバックおよび <Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN ポストバック</Anchor> の両方に適用されます。
+
+<div id="mapping-methods" />
 
 ### マッピング方法
 
@@ -94,6 +116,8 @@ x-zendesk:
 * [パートナーイベントIDを入力してください](/docs/in-app-event-postback-configuration#h_c513e6d4-d46f-4070-a98d-1888a5ea939d)
 * [リストからイベントIDを選択](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [イベントをそのまま送信（マッピングなし）](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **注記**
 >
@@ -106,6 +130,8 @@ x-zendesk:
 
 * **AppsFlyerイベント**: アプリイベントのリストからイベントを選んでください。
 * **パートナーイベントにマッピング済み**:テキストフィールドに、パートナーから受け取った、アプリイベント（AppsFlyerイベント）に対応するイベントIDを入力してください。
+
+<div id="note-5" />
 
 > 📘 **注記**
 >
@@ -138,6 +164,8 @@ x-zendesk:
 * **手動で追加:** 特定のイベントを選択してください。
 * **すべてのイベントを送信（アンインストールとセッションは除外）**:すべてのイベントを送信します。これには、アンインストール、セッション（アプリの起動）、`af_app_opened`イベントは含まれません。
 
+<div id="note-6" />
+
 > 📘 **注記**
 >
 > 広告主が意図せず第三者のアナリティクスプラットフォームと情報を共有しすぎないようにするため、2019年3月以降、アナリティクスプラットフォームに対して、[**Send All Events (excludes uninstalls and sessions)**]（すべてのイベントを送信 - アンインストールとセッションを除く）オプションを削除しました。この日付以前に設定された分析プラットフォームでは、このオプションがそのまま保持されています。
@@ -166,12 +194,16 @@ x-zendesk:
 
 イベントマッピングの詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">アプリ内イベントポストバック</Anchor>をご覧ください。
 
+<div id="options-for-sending-postbacks" />
+
 ### ポストバック送信のオプション
 
 各イベントで、どのような場合にポストバックを送信するかを選択できます（ポストバック期間内）。
 
 * **このパートナーのみ：** イベントがこのパートナーに起因する場合、つまり、イベントを実行したユーザーがこのパートナーから来た場合にのみ、ポストバックを送信します。
 * **オーガニックを含む全メディアソース：** 任意のパートナーに起因するイベントやオーガニックイベント、つまりイベントを実行したユーザーがどのメディアソースから来た場合でも、すべてのメディアソースにポストバックを送信します。　**注：** オーガニックを含むすべてのメディアソースを選択した場合、他のパートナーのポストバックにはアトリビューションデータは含まれません。
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### ポストバックに含めるデータ
 
@@ -182,11 +214,15 @@ x-zendesk:
 * **Values & revenue（値も収益も送信する）**：収益値を含む全てのイベントパラメーターを送信します（存在する場合）。
 * 価値 / 収益 / 純収益イベントに含まれる収益値および純収益値（イベントに存在する場合）を含む、すべてのイベントパラメーターを送信してください。
 
+<div id="note-7" />
+
 > 📘 **注**
 >
 > 「**値、収益、純収益**」オプションをご利用いただくには<strong>、ROI360 Advanced</strong>のサブスクリプションが必要です。また、このオプションは および`af_ars_*` イベントでのみ`af_purchase*`ご利用いただけます。
 
 広告ネットワークがキャンペーンを最適化し、結果を改善するためには収益の共有をお勧めします。ただし、収益の共有は必須ではありません。イベントの価値に`af_revenue`が定義されている場合のみ、収益共有を有効にしてください。それ以外の場合、広告ネットワークは収益値が空のイベントを受け取ります。
+
+<div id="share-revenue" />
 
 #### シェア収益
 
@@ -202,13 +238,19 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&content
 https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-monetary=(net-monetary)&content_id=(af_content_id)
 ```
 
+<div id="note-8" />
+
 > 📘 **注**
 >
 > 」または「<strong>値あり・収益なし」</strong>を選択した場合、それぞれのパラメーターは「N/A」で表示されます。
 
+<div id="tip" />
+
 > 📘 **ヒント**
 >
 > アプリ内イベントポストバック設定では、標準の**マネタリーパラメータ**（）にグロス収益の代わりとしてネット収益を送信することも可能です。この設定を利用するには、Customer Success Manager（CSM）へお問い合わせください。
+
+<div id="h_01HBZCRNKGBEDSBZEY87KYQ60G" />
 
 > 📄 **例**
 >
@@ -229,6 +271,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 > | **価値あり & 収益あり** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_content_type":"category_a"}&monetary=50.87&content_id=1234567` | 50.87 | 米ドル | 該当なし |
 > | **価値 / 収益 / 純収益** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_net_revenue":35.61,"af_content_type":"category_a"}&monetary=50.87&net-monetary=35.61&content_id=1234567` | 50.87 | 米ドル | 35.61 |
 
+<div id="conditional-in-app-event-postbacks" />
+
 ### 条件付きアプリ内イベントポストバック
 
 異なるイベントにマッピングできる複数の条件を使用してアプリ内イベントのポストバックをフィルタリングします。フィルター条件を満たすイベントのみがSRNやAnalyticsパートナーなどのパートナーに送信されます。この機能は次の用途に利用します:
@@ -236,6 +280,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 * ユーザーのセグメンテーション、パーソナライゼーション、リテンションの最適化
 * データの最小化
 * ユーザーブライバシーの保護
+
+<div id="h_01HBZCRNKHRTMHP3JPFVCS8D6N" />
 
 > 📄 **例**
 >
@@ -261,6 +307,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
    * 条件をマッピングするパートナーイベント（これらの[マッピングオプション](/docs/in-app-event-postback-configuration#マッピング方法)のいずれかを使用）
 4. さらに条件を追加できますが、まず既存の条件の全てのフィールドを入力してください。
 5. **統合を保存**をクリックします。
+
+<div id="considerations" />
 
 #### 考慮事項
 
@@ -289,10 +337,14 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **注記**
 >
 > * この機能は、キャンペーンの最適化に与える影響を把握するために、テストアプリやマイナーなイベントなどでテストすることをお勧めします。
 > * <Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ポストバックコンテンツ</Anchor>を確認するには、ローデータポストバックレポートをダウンロードしてください。
+
+<div id="editing-multiple-events" />
 
 ### 複数のイベントを編集する
 
@@ -313,6 +365,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### カスタムイベント
 
 マッピング可能なイベントのリストには、SDKにより既に報告されたイベント、またはAppsFlyerに送信されたサーバー間イベントのみが表示されます。マップしたいイベントがドロップダウンリストに表示されない場合、次の理由が考えられます。
@@ -329,6 +383,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 4. イベントをパートナーの識別子にマッピングします。
 5. **連携を保存**をクリックしてマッピングを保存してください。
 
+<div id="note-10" />
+
 > 📘 **注意**
 >
 > * ポストバックページにカスタムイベントを追加しても、アプリから自動的に取得されるわけではありません。適切な機能を確保するには、SDKまたはS2Sでイベントを設定する必要があります。詳細はAppsFlyerにイベントを送信する方法をご覧ください。
@@ -339,6 +395,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 * カスタムイベントを追加することはできません。
 * マーケターがイベントを追加し、必要な<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">権限</Anchor>を許可した後にのみ、イベントを表示またはマッピングできます。
+
+<div id="event-mapping-by-ad-networks" />
 
 ## アドネットワークによるイベントマッピング
 
@@ -351,9 +409,13 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 アドネットワークが権限を取得すると、「[イベントIDをテキストフィールドに入力](/docs/in-app-event-postback-configuration#マッピング方法)」の指示に従ってイベントをマッピングできます。
 
+<div id="event-mapping-by-agencies" />
+
 ## 代理店によるイベントマッピング
 
 マーケティング担当者は代理店にアプリ内イベントポストバックの設定を許可することができます。
+
+<div id="note-11" />
 
 > 📘 **注意**
 >
@@ -367,6 +429,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 4. 代理店が共有できる特定のイベントを選択します。
 
 ![代理店イベント.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+
+<div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
 > 📄 **関連情報**
 >

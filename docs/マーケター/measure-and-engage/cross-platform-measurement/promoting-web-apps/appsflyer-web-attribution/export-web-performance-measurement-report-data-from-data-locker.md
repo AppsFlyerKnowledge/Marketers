@@ -28,6 +28,8 @@ x-zendesk:
 >
 > **重要**Data LockerでWeb Performance Measurementのレポートを利用するには、Data Lockerの契約が必要です。
 
+<div id="about-the-web-performance-measurement-reports" />
+
 ## Web Performance Measurementのレポートについて
 
 Data Lockerでは、Web Performance Measurement向けに**エンドユーザーイベント**と**コンバージョン**の2種類のレポートを提供しています。それぞれ用途が異なります。
@@ -44,6 +46,8 @@ Data Lockerでは、Web Performance Measurement向けに**エンドユーザー�
 
 Data LockerのアドバンスレポートのUIでは、**エンゲージメント**と**エンドユーザーイベント（クロスプラットフォーム）が**、Web Performance Measurementのレポートとして、それぞれ個別に選択できます。本記事では、Web Performance Measurementの分析で主に使用する、**エンドユーザーイベント**と**コンバージョン**の2つのレポートについて説明します。
 
+<div id="select-a-web-performance-measurement-report" />
+
 ## Web Performance Measurementレポートの選択
 
 Web Performance Measurementのデータをエクスポートするには、まずData Lockerで対象のレポートを選択します。
@@ -52,6 +56,8 @@ Web Performance Measurementのデータをエクスポートするには、ま�
 2. <strong>「アドバンスレポート」</strong>タブをクリックしてください。
 3. Web Performance Measurementレポートの一覧から、**エンドユーザーイベント**または**コンバージョン**を選択します。
 4. <strong>Save Configuration（設定を保存）</strong>をクリックします。
+
+<div id="report-fields" />
 
 ## レポート項目
 
@@ -62,12 +68,16 @@ Web Performance Measurementのデータをエクスポートするには、ま�
 
 サンプルレポートには、利用可能なすべてのレポート項目とその値が含まれています。各項目の定義については、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary">項目一覧</Anchor>を参照してください。
 
+<div id="report-timing-and-data-freshness" />
+
 ## レポート作成タイミングとデータの更新頻度
 
 以下では、新しいデータがいつ追加されるか、およびイベントがレポートへ反映されるタイミングについて説明します。
 
 * **レポートの作成頻度**：新しいデータは1時間ごとに追加されます。
 * **データの更新頻度：** イベントは通常、発生から2～3時間以内にレポートへ反映されます。
+
+<div id="heres-how-each-batch-works" />
 
 ### 各バッチ処理は以下のように動作します：
 
@@ -78,9 +88,13 @@ Web Performance Measurementのデータをエクスポートするには、ま�
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### イベントはいつレポートへ反映されますか？
 
 イベントは、**バッチ処理が完了した後**にレポートへ出力されます。例えば、**08:00～09:00**に発生したイベントは、10:00のバッチでアトリビューションされ、**11:00のバージョンレポート**に反映されます。
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### 例：AM10:00のバッチ処理の内容
 
@@ -90,9 +104,13 @@ Web Performance Measurementのデータをエクスポートするには、ま�
 | 2026-01-28 | 12:00 | 09:00 – 10:00 | 10:00 – 10:30 |
 | 2026-01-28 | 13:00 | 10:00 – 11:00 | 10:00 – 11:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## クラウドバケットからのレポートダウンロード
 
 クラウドストレージからのレポートデータへのダウンロード方法については、「<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers#folder-structure">Data Lockerのフォルダ構造</Anchor>」を参照してください。
+
+<div id="bi-developer-considerations" />
 
 ## BI開発者向けの考慮事項
 
@@ -156,6 +174,8 @@ Webアトリビューションは、識別子およびデータの取り扱い�
 
 * **コンバージョンタイプでフィルターする（任意）：** キャンペーン種別ごとに分析する場合は、以下の条件を指定します： `WHERE conversion_type = 'USER_ACQUISITION'` または `WHERE conversion_type = 'RETARGETING'`
 
+<div id="filter-summary-table" />
+
 #### フィルター一覧
 
 | フィルター | SQL条件 | 利用シーン |
@@ -192,6 +212,8 @@ COALESCE(customer_user_id, appsflyer_id_value)
 * 特定のユーザーでフィルタリングする
 * ユーザー単位でテーブルを結合する
 * ユーザーレベルの指標を計算する
+
+<div id="example-count-distinct-users" />
 
 #### 例：ユニークユーザー数を集計する
 
@@ -426,6 +448,8 @@ ORDER BY cohort_date, cohort_users DESC
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 仕様および制限事項
 
 以下のフィールドは**Webデータではサポートされておらず**、常に空の値となります。
@@ -437,6 +461,8 @@ ORDER BY cohort_date, cohort_users DESC
 | `platform_group` | コンバージョン |
 | `app_version__conversion` | エンドユーザーイベント |
 | すべての `__assist_*` フィールド | コンバージョン |
+
+<div id="see-also" />
 
 ## 関連情報：
 

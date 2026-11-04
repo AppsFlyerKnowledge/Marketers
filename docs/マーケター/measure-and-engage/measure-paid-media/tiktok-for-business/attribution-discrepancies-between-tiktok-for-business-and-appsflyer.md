@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** TikTok for BusinessとAppsFlyerのアトリビューションモデルの違いについて理解しましょう。
 
+<div id="overview" />
+
 ## 概要
 
 モバイルユーザー獲得エコシステムの2大プレーヤーであるTikTok for BusinessとAppsFlyerは、それぞれ異なるアトリビューションモデルを使用しています。このため、TikTok for BusinessとAppsFlyerダッシュボードの数値に不一致が生じる可能性があります。これらの不一致を最小限に抑えるためにTikTok for Businessと密接に連携していますが、両者の数値を分析する際に広告主は潜在的な原因を把握しておく必要があります。
+
+<div id="differences-in-attribution-models" />
 
 ## アトリビューションモデルの違い
 
@@ -33,9 +37,13 @@ x-zendesk:
 
 <table><thead><tr><th>原因</th><th>TikTok広告マネージャー</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><p><strong>クリックスルー：ルックバック期間</strong></p></td><td><p>デフォルトの期間は7日です。しかし、AndroidアプリやTikTokのセルフアトリビューション（TikTokアドバンスSRN）に移行したアプリでは、異なる設定が可能です。</p></td><td><p>デフォルトの期間は7日です。期間は1日から30日の間で設定できます。必ずTikTokのアトリビューション期間と同じ期間を設定してください。</p></td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><p><strong>ビュースルー：ルックバック期間</strong></p></td><td><p>デフォルトの期間は1日です。しかし、AndroidアプリやTikTokのセルフアトリビューション（TikTokアドバンスSRN）に移行したアプリでは、異なる設定が可能です。</p></td><td><p>デフォルトの期間は1日です。期間は1時間から48時間の間で設定できます。必ずTikTokのアトリビューション期間と同じ期間を設定してください。</p></td></tr><tr><td><span id="multichannel-sourceattribution"></span><p><strong>マルチチャネルソースアトリビューション</strong></p></td><td><p>TikTokは他のメディアソースとは無関係にインストールを自己アトリビューションします。</p></td><td><p>AppsFlyerはラストクリックアトリビューションを使用します（詳細：<a href="./appsflyer-attribution-model" target="_blank">AppsFlyerの計測モデルについて</a>）。</p></td></tr><tr><td><span id="crossdevice-attribution"></span><p><strong>クロスデバイスアトリビューション</strong></p></td><td><p>TikTokは、iOS、Android、デスクトップなど、異なるデバイスを使用してエンゲージメントとインストールの両方を行うユーザーを対象としています。</p></td><td><p>AppsFlyerは、エンゲージメントとインストールの両方を同一デバイスで実行したユーザーをアトリビューションします。</p></td></tr><tr><td><span id="different-time-zones"></span><p><strong>異なるタイムゾーン</strong></p></td><td><p><a href="https://ads.tiktok.com/help/article/time-zone" target="_blank">TikTokのタイムゾーン</a>（日付範囲の横に表示されます）は変更できません。広告アカウント作成時に設定されます。</p></td><td><p>AppsFlyerのデフォルトのアプリタイムゾーンはUTC+0です。TikTokイベントマネージャーに設定されたタイムゾーンに合わせるには、<a href="./app-settings#localization-time-zone" target="_blank">アプリ設定画面</a>でアプリのタイムゾーンを変更してください。</p></td></tr><tr><td><span id="ios-attribution"></span><p><strong>iOSアトリビューション</strong></p></td><td><p>iOSアプリに関しては、TikTok広告マネージャーにはSKANアトリビューションの結果のみが表示されます。</p></td><td><p>iOSアプリにおいて、AppsFlyerはSKANアトリビューションの結果を表示し、SRNおよびアドバンスSRNのAppsFlyerアトリビューション結果と重複排除されたSSOTデータを含めた情報を提供します。SKANデータのみが両プラットフォームで一致することが期待されます。 </p></td></tr><tr><td><span id="in-app-event-attribution-periods"></span><p><strong>アプリ内イベントのアトリビューション期間</strong></p></td><td colspan="2"><p>各プラットフォームのアトリビューションは、インストール時からの期間に基づいて異なる場合があります。</p></td></tr><tr><td><span id="day-1-90"></span><p>1日目〜90日目</p></td><td colspan="2"><p>アトリビューションの矛盾はありません。両方のプラットフォームがアプリ内イベントをインストールに紐付けます。</p></td></tr><tr><td><span id="day-91-180"></span><p>91日目〜180日目</p></td><td rowspan="2"><p>90日以降、アプリ内イベントはTikTokでサポートされなくなります。</p></td><td><div><div><div>AppsFlyerは、アプリ内イベントをインストールに紐付けます。</div></div></div></td></tr><tr><td><span id="day-180"></span><p>180日目以降</p></td><td><div><div><div> <a href="./user-level-data-retention#パートナー別のデータ保持期間" target="_blank">TikTokのデータ保持ポリシー</a>により、アプリ内イベントはオーガニックとして紐付けられます。</div></div></div></td></tr></tbody></table>
 
+<div id="differences-in-installs" />
+
 ## インストールの違い
 
 場合によっては、TikTok for BusinessにはAppsFlyerが拒否したインストールや、新規インストールとしてカウントされないインストールが含まれることがあります。
+
+<div id="re-engagement-campaigns" />
 
 ### リエンゲージメントキャンペーン
 
@@ -45,26 +53,38 @@ x-zendesk:
 
 一方で、最初のインストールに続く**設定されたリアトリビューション期間**内で発生するインストールは、リアトリビューションとして分類されます。これらのインストールは、AppsFlyerのリターゲティングページに表示されます。ただし、TikTok for Businessでは新規インストールと見なされる可能性があります。
 
+<div id="rejected-installs-when-using-validation-rules-and-protect360" />
+
 ### 検証ルールとProtect360を使用する際のインストール拒否
 
 <Anchor target="_blank" href="/marketers/ja/docs/implement-validation-rules-to-prevent-fraud">検証ルール</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/protect360-anti-fraud-guide">Protect360</Anchor>は、特定のインストールを拒否（ブロック）することで保護を提供するAppsFlyerの機能です。これらの機能を使用すると、TikTok for Business発の拒否されたインストールはAppsFlyerによってブロックされ、TikTok for Businessはそれらのインストールを自己報告します。
+
+<div id="example" />
 
 > 📄 **例**
 >
 > GreatAppのユーザー獲得マネージャーであるJeffは、北アメリカのスペイン語話者のみをターゲットにしたSPNAというキャンペーンを作成しました。これを検証するために、Jeffはカナダとアメリカのユーザーのみを受け入れる検証ルールを設定します。
 > スペインのTikTok for Businessユーザーがアプリをクリックしてインストールした場合、TikTok for Businessはそのインストールを自己報告しますが、AppsFlyerは検証ルールを通過しないインストールを拒否します。
 
+<div id="reducing-discrepancies" />
+
 ## 乖離を減少させる
 
 アトリビューションモデルの違いがあるものの、場合によっては不一致を軽減できることがあります。
+
+<div id="click-through-and-view-through-attribution" />
 
 ### クリックスルーとビュースルー計測
 
 AppsFlyerは、クリックスルーおよびビュースルーのアトリビューションをサポートしています。TikTok for BusinessとAppsFlyer間での不一致を減らすためには、クリックスルーとビュースルーの両方のルックバック期間がTikTok for Businessで定義されたものと一致していることを確認してください。
 
+<div id="example-1" />
+
 > 📄 **例**
 >
 > TikTok for Businessのクリックスルールックバック期間がアプリ`com.greatapp`に対してAppsFlyerでは1日に設定されている一方、TikTok for Businessではデフォルト値である7日に設定されていると仮定します。TikTokでGreatappの広告をクリックしたユーザーが2〜7日後に初めてアプリを起動すると、AppsFlyerではオーガニックユーザーとしてカウントされ、一方でTikTok for Businessではそのユーザーを自己レポート（アトリビューション）します。
+
+<div id="in-app-event-attribution" />
 
 ### アプリ内イベントのアトリビューション
 

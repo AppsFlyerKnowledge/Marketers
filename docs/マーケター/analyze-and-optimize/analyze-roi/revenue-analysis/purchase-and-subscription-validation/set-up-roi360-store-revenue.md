@@ -25,11 +25,17 @@ x-zendesk:
 
 > **概要：** AppsFlyerのROI360ストア収益を設定する方法を説明します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > ROI360ストア収益は、ROI360の有料プランをご契約のお客様のみ利用できます。契約プランの確認やアップグレードについては、担当のカスタマーサクセスマネージャー（CSM）にお問い合わせください。
 
+<div id="overview" />
+
 ## 概要
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -47,6 +53,8 @@ ROI360ストア収益を設定するには、次の手順を順番に実行し�
 4. [SDKの実装の確認](#手順4sdkの実装の確認)：両プラットフォームのサンドボックスで購入とサブスクリプションをテストし、SDKイベントとサーバー通知がAppsFlyerに正しく届き、処理されることを確認します。
 5. [設定の確認・更新](#手順5設定の確認更新)：購入の検証、返金への対応、サブスクリプションの計測、ストア連携の状態を確認します。これにより、各プラットフォームの収益を継続して正確に紐づけられます。
 6. [アプリのリリース](#手順6sdk-connectorを実装したアプリのリリース)：SDK Connectorを実装した更新版のアプリをリリースします。サンドボックスのフラグが無効で、必要な収益イベントが検証ルールによって許可されていることを確認してください。
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## 手順1（iOS）｜App Store Connectのキーの設定
 
@@ -102,6 +110,8 @@ iOSの認証情報を設定するには、次の手順を実行します。
 5. <strong>［保存して次へ］</strong>をクリックします。
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## 手順1（Android）｜サービスアカウントのキーと権限の設定
 
@@ -225,12 +235,16 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
 </Accordion>
 
+<div id="step-2-ios-set-up-app-store-server-notifications" />
+
 ## 手順2（iOS）｜App Storeのサーバー通知の設定
 
 AppsFlyerがApp Storeの通知を受信する方法を設定します。
 
 * App Store Connectに、すでにApp Storeのサーバー通知用エンドポイント（自社のバックエンドや別のサービスなど）を設定している場合は、<strong>方法1（推奨）</strong>または**方法2**を選択します。
 * App Store Connectにまだエンドポイントを設定していない場合は、**方法1**を選択します。
+
+<div id="option-1-recommended---appsflyer-as-the-primary-endpoint" />
 
 #### 方法1（推奨）｜通知の最初の送信先をAppsFlyerにする
 
@@ -244,11 +258,15 @@ App Store Connectの既存の通知URLをAppsFlyerのエンドポイントに置
 
 この方法を使用するには、手順[2.1](#21-copy-the-appsflyer-server-notifications-endpoint)、[2.2](#22-send-notifications-directly-to-appsflyer)、[2.4](#24-test-the-server-notifications-integration)を実行します。
 
+<div id="option-2---your-endpoint-as-the-primary-endpoint" />
+
 #### 方法2｜通知の最初の送信先を自社のエンドポイントにする
 
 既存のエンドポイントを最初の送信先として使い続ける場合は、自社サーバーからApp Storeのサーバー通知をAppsFlyerに転送するよう設定します。
 
 この方法を使用するには、手順2.1と2.2を省略し、[2.3](#23--optional--forward-notifications-from-your-endpoint-to-appsflyer)と[2.4](#24-test-the-server-notifications-integration)を実行します。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -334,6 +352,8 @@ App Storeのサーバー通知をAppsFlyerが正しく受信しているか確�
    * 有効な通知を受信したことを示す確認メッセージ。
    * 通知が見つからなかったことを示すステータスメッセージ。
 
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > Appleがテストメッセージを送信するまでに、数秒かかる場合があります。
@@ -343,6 +363,8 @@ App Storeのサーバー通知をAppsFlyerが正しく受信しているか確�
    * テストに成功したら、または次に進む準備ができたら、<strong>［保存して次へ］</strong>をクリックします。
 
 </Accordion>
+
+<div id="step-2-android-set-up-google-play-server-notifications" />
 
 ## 手順2（Android）｜Google Playのサーバー通知の設定
 
@@ -462,6 +484,8 @@ Google Playのリアルタイムデベロッパー通知（RTDN）をAppsFlyer�
 
 </Accordion>
 
+<div id="step-3-implement-sdk-connector" />
+
 ## 手順3｜SDK Connectorの実装
 
 この手順では、開発者がAppsFlyer Purchase SDK Connectorを実装できるよう準備し、テスト用のサンドボックス環境を設定します。
@@ -477,9 +501,13 @@ SDK Connectorを実装するには、次の手順を実行します。
 
 このメッセージに、実装からテスト開始までに開発者が必要とする情報がすべて含まれています。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > SDK Connectorは、取引を自動的に検出します。代わりに、`validateAndLog` SDKメソッドを実装して、取引ごとに手動で記録することもできます。ただし、このメソッドではSDK Connectorの一部の機能を利用できません。 SDK連携の2つの方法について詳しくは、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">DevHubのドキュメント</Anchor>を参照してください。
+
+<div id="step-4-verify-sdk-implementation" />
 
 ## 手順4｜SDKの実装の確認
 
@@ -493,6 +521,8 @@ SDK Connectorを実装するには、次の手順を実行します。
 
 1. <strong>［SDKの実装を確認］</strong>の手順で、<strong>［SDKの実装をテスト］</strong>をクリックします。
 2. AppsFlyerが最後にデータを受信した日時など、結果を確認します。
+
+   <div id="note-4" />
 
    > 📘 **注意**
    >
@@ -561,6 +591,8 @@ SDK Connectorを実装するには、次の手順を実行します。
 
 </Accordion>
 
+<div id="step-5-verify-and-update-settings" />
+
 ## 手順5｜設定の確認・更新
 
 最後の手順で設定を保存すると、現在の設定を確認する画面が開きます。この画面で、次の設定を確認・更新できます。
@@ -575,6 +607,8 @@ SDK Connectorを実装するには、次の手順を実行します。
    * **App Storeのキー**の設定
    * **サーバー通知用エンドポイント**の設定
    * SDK Connectorの実装とテスト
+
+<div id="step-6-release-the-app-versions-with-the-sdk-connector" />
 
 ## 手順6｜SDK Connectorを実装したアプリのリリース
 
@@ -591,6 +625,8 @@ SDK Connectorを実装したアプリが公開されると、<Anchor target="_bl
 
 **注意：** イベントが生成されるのは、SDK Connectorを実装したバージョンにアプリを更新したユーザーのみです。そのため、更新版のアプリがすべてのユーザーに行き渡るまでは、アプリの収益データとストアのデータに差異が生じます。
 
+<div id="switch-to-roi360-store-revenue-from-receipt-validation" />
+
 ## レシート検証からROI360ストア収益への切り替え
 
 レシート検証の導入が完了していて、ROI360ストア収益を有効にする場合は、次の手順を実行します。
@@ -602,6 +638,8 @@ SDK Connectorを実装したアプリが公開されると、<Anchor target="_bl
 5. <strong>［App Storeのサーバー通知を有効にする］</strong>の手順を実行します。詳しくは、[「App Storeのサーバー通知の設定」](#手順2iosapp-storeのサーバー通知の設定)または[「Google Playのサーバー通知の設定」](#手順2androidgoogle-playのサーバー通知の設定)を参照してください。
 6. <strong>［購入・サブスクリプション］</strong>セクションで、<strong>［製品タイプ］</strong>が<strong>［ROI360］</strong>に変わったことを確認します。
 7. 現在のSDKの設定で、必要なROI360ストア収益の機能を使用できるか確認します。
+
+<div id="note-5" />
 
 > 📘 **注意**
 >

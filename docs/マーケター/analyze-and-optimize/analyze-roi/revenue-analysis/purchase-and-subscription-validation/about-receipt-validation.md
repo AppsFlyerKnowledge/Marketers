@@ -29,6 +29,8 @@ x-zendesk:
 >
 > 純収益の計算、サブスクリプションのライフサイクル全体の計測、返金への対応、購入の自動検出と重複排除が必要な場合は、有料機能のROI360ストア収益をご検討ください。両機能の詳細と比較は、「購入・サブスクリプションの検証に使える2つの機能」を参照してください。
 
+<div id="how-does-receipt-validation-work" />
+
 ## レシート検証の仕組み
 
 レシート検証は、次の流れで行われます。
@@ -43,6 +45,8 @@ x-zendesk:
 8. AppsFlyerの検証サービスが、結果をSDKに返します。
 9. SDKが、レシート検証の結果（成功または失敗）をアプリに返します。
 
+<div id="activate-receipt-validation" />
+
 ## レシート検証の有効化
 
 レシート検証を有効にするには、次の手順を実行します。
@@ -52,9 +56,13 @@ x-zendesk:
 3. <strong>［1 製品タイプを選択］</strong>で、<strong>［レシート検証］</strong>を選択します。
 4. <strong>［保存して次へ］</strong>をクリックし、レシート検証の設定に進みます。
 
+<div id="set-up-receipt-validation" />
+
 ## レシート検証の設定
 
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-receipt-validation">「レシート検証の設定」</Anchor>を参照してください<Anchor target="_blank" href="/marketers/ja/docs/set-up-receipt-validation#手順3-sdkの実装の確認">。</Anchor>
+
+<div id="in-app-purchase-events-and-parameters-for-receipt-validation" />
 
 ## レシート検証のアプリ内購入イベントとパラメータ
 
@@ -91,6 +99,8 @@ x-zendesk:
 
 * SDKの呼び出し時に送信した追加のカスタムパラメータは、ローデータレポートの`custom_data`フィールドに表示されます。
 
+<div id="switch-from-roi360-store-revenue-to-receipt-validation" />
+
 ## ROI360ストア収益からレシート検証への切り替え
 
 現在ROI360ストア収益を使用していて、レシート検証に切り替える場合は、次の手順を実行します。
@@ -108,6 +118,8 @@ x-zendesk:
 7. 切り替え後は、<strong>［製品タイプ］</strong>が<strong>［レシート検証］</strong>となり、設定画面も簡略化されます。
 8. 次の項目を再確認してください。
    * validateAndLogメソッドの**SDK実装**
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** SRN経由とSRN以外の経路について、リアトリビューションとリエンゲージメントがコンバージョンデータにどのように反映されるかを説明します。
 
+<div id="retargeting-conversion" />
+
 ## リターゲティングのコンバージョン
 
 リターゲティングのコンバージョンには、リアトリビューションとリエンゲージメントの2種類があります。
@@ -29,6 +31,8 @@ x-zendesk:
 > 👍 **Tip**
 >
 > リターゲティングのコンバージョンデータだけでは、コンバージョンの種別を明確に判断できない場合があります。[コンバージョンデータを取得するその他の方法](#コンバージョンデータを取得するその他の方法)をご覧ください。
+
+<div id="re-attribution-with-srns" />
 
 ## SRN経由のリアトリビューション
 
@@ -40,11 +44,15 @@ SRN経由でユーザーがリアトリビューションされた場合、コ�
 >
 > ただし、リターゲティングであることが分かるキャンペーン名を設定しても、**確実に判別できるとは限りません**。詳しくは、[具体例](#ユーザー獲得とリアトリビューションが混在する例)をご覧ください。
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ## SRN以外のアドネットワーク経由のリアトリビューション
 
 アドネットワークへのアトリビューションには、アトリビューションリンクを使用します。リターゲティングの場合、通常のアトリビューションリンクとOneLinkのどちらにも、必ず`is_retargeting=true`パラメータを設定します。
 
 <Accordion title="Criteoのリターゲティングキャンペーン">
+
+<div id="attribution-link" />
 
 #### アトリビューションリンク
 
@@ -53,6 +61,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### コンバージョンデータの内容
 
@@ -94,6 +104,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ## ディファードディープリンクを使用したリアトリビューション
 
 リアトリビューションの対象となるユーザーは、その定義上、アプリをインストールしていない状態です。このようなユーザーを、ディープリンクでアプリ内の画面に誘導したい場合があります。例えば、アプリをアンインストールしたユーザーに再び利用してもらうためのキャンペーンを設定する場合です。このキャンペーンで商品やサービスを宣伝する際には、その商品やサービスに関連するコンテンツをユーザーに表示したいと考えられます。
@@ -103,6 +115,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="SRNでのディファードディープリンク">
 
 SRNでディファードディープリンクを実装するには、SRNのキャンペーンに追加の処理が必要です。 `onConversionSuccess`の応答に含まれるcampaign、adset、adgroupなどのデータを使用して、プログラムでユーザーの遷移先を制御してください。
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Meta広告でのディファードディープリンクのコンバージョンデータ
 
@@ -188,6 +202,8 @@ getConversionDataの応答に含まれるcampaign、adsetなどのデータを�
 
 ディープリンクでユーザーを誘導する方法は3つあります。
 
+<div id="uri-schemes" />
+
 #### URIスキーム
 
 URIスキームを使用する場合、アトリビューションリンクとOneLink、および返却データは次のようになります。
@@ -244,6 +260,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true`：このパラメータが含まれ、値がtrueの場合は、`scheme`と`host`の各フィールドを確認してください。
 * `scheme`と`host`：これらのフィールドは、アトリビューションリンクの`af_dp`パラメータから取得され、ディープリンクに使用するスキームと遷移先の画面を示します。
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### iOSのUniversal LinksとAndroidのApp Links
 
 これらが、ディープリンクを実現する3つの方法のうち、残りの2つです。
@@ -295,13 +313,19 @@ Universal LinksまたはApp Linksを使用する場合、OneLinkと返却デー�
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ## SRN経由のリエンゲージメント
 
 リアトリビューションのキャンペーンと同様に、SRN経由でユーザーがリエンゲージメントした場合も、コンバージョンデータからは、リエンゲージメントキャンペーン経由であることを確認できません。
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ## SRN以外のアドネットワーク経由のリエンゲージメント
 
 この場合も、コンバージョンデータの内容からは、ユーザーがリエンゲージメントキャンペーン経由であることを確認できません。この制限に対処するには、リエンゲージメントであることが分かるキャンペーン名を設定します。
+
+<div id="re-engagement-with-deep-linking" />
 
 ## ディープリンクを使用したリエンゲージメント
 
@@ -349,10 +373,14 @@ iOSとAndroidのどちらでも、短縮形式のOneLinkを使用した場合、
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ## コンバージョンデータを取得するその他の方法
 
 * Push APIでは、リアトリビューションまたはリエンゲージメントを判別できる、詳細なコンバージョンデータを取得できます。 Push APIの返却データには、`re_targeting_conversion_type`というフィールドが含まれます。このフィールドは、コンバージョンの種別がリアトリビューションかリエンゲージメントかを示します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/push-api-streaming-raw-data">Push APIガイド</Anchor>をご覧ください。
 * ローデータレポートにも、コンバージョンの種別を示す情報が含まれます。リターゲティングのコンバージョンを扱うローデータレポートには、***イベント名***という列があります。この列の値は、コンバージョンの種別に応じて***re-engagemen*t**または***re-attribution*** になります。
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ## ユーザー獲得とリアトリビューションが混在する例
 

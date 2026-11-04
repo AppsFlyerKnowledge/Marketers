@@ -24,12 +24,16 @@ x-zendesk:
 
 > **概要：** 概要： クラウドサービスをデータクリーンルームに接続し、データをアップロードしてレポートを受信します。
 
+<div id="overview" />
+
 ## 概要
 
 データクリーンルーム (DCR) で使用するクラウドサービス設定が完了すれば、次にそれらをDCRに接続します。
 
 * DCR がシステムからファーストパーティデータを読み取る接続を**受信接続**といいます。これらの接続は、カスタムソースを設定する際に使用します。
 * DCRが処理後にレポートを配信する際に経由する接続を**送信接続**といいます。これらの接続は、レポートを設定する際に使用します。
+
+<div id="creating-inbound-connections" />
 
 ## 受信接続を作成します
 
@@ -55,6 +59,8 @@ x-zendesk:
 1. <Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-working-with-sources#2-specify-the-source-location">ソースの場所を指定する</Anchor>ときに接続を作成します。
    * アカウントに接続が定義されていない場合は、 <strong>New connection（新規接続）</strong>ダイアログが開き、接続を作成するように求められます。
 2. 以下の[「接続を完了します」](#接続を完了します)の手順に進みます。
+
+<div id="complete-the-connection" />
 
 #### 接続を完了します
 
@@ -92,6 +98,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="creating-outbound-connections" />
+
 ## 送信接続を作成します
 
 DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>を使用して、選択したクラウドサービスにレポートを配信します。レポートはData Locker経由で配信されるため、送信DCR接続は実際にはData Locker接続です。接続は、次のいずれかにおいて作成できます。
@@ -100,6 +108,8 @@ DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers
 * レポート作成プロセスの一部として（AppsFlyerのDCRページから開始します）。
 
 どちらの方法でもプロセスはほぼ同じであり、作成した接続をまったく同じ方法で使用できます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -124,7 +134,11 @@ DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers
 2. 以下の「接続を完了します」の手順に進みます。
 3. 接続の作成後、ブラウザのDCRタブに戻り、Data Locker接続一覧から新しく作成した接続を選択します。
 
+<div id="complete-the-connection-1" />
+
 #### 接続を完了します
+
+<div id="important" />
 
 > 🚧 **重要！**
 >

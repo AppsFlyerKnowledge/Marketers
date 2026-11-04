@@ -25,6 +25,8 @@ x-zendesk:
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
+<div id="activate-partner" />
+
 ## パートナーの有効化
 
 **前提条件:** **連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡して</Anchor>アカウントを開設してください。**
@@ -39,9 +41,13 @@ x-zendesk:
    **注意：** トグルは、パートナーと作業している間、オン<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">（有効）</Anchor>にしておく必要があります。
 5. 以下の手順に従い、各タブの設定を完了してください。
 
+<div id="setting-up-avow-gmbh" />
+
 ## Avow GmbHの設定
 
 Avow GmbHとの連携では、クリックスルーおよびビュースルーのアトリビューションがサポートされています。構成には次のタブが含まれます。連携、計測リンク、コスト、広告収益、権限Avow GmbHの場合、利用可能なタブは、統合、計測リンク、および権限です。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -54,9 +60,13 @@ Avow GmbHとの連携では、クリックスルーおよびビュースルー�
 
 **連携**タブには、以下で説明するセクションがあります。
 
+<div id="activate-partner-1" />
+
 #### 連携設定
 
 連携を設定するには、まず**パートナーを有効にする**トグルを<Anchor target="_blank" href="/marketers/ja/docs/amazon-ads-campaign-configuration#連携設定">オン</Anchor>にする必要があります。詳細：パートナーのアクティブ化と非アクティブ化のページを参照してください。
+
+<div id="advanced-privacy" />
 
 #### 高プライバシーポストバック
 
@@ -68,24 +78,32 @@ iOSアプリのみ:ポストバックやレポートを介してパートナー�
 | ポストバックは<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks">高度なプライバシーテンプレート</Anchor>に従って送信されます。 |  |
 | 集計された匿名データがパートナーと共有されます。つまり、ユーザーレベルのデータ（デバイスID）は共有されません。 |  |
 
+<div id="general-settings" />
+
 #### 一般的な設定
 
 **Token**
 
 AVOWスペシャリスト(AM/BDM)から提供された認証トークンを追加します。
 
+<div id="install-attribution" />
+
 #### インストール計測
 
 Avow GmbH のビュースルーインストールをアトリビュートするには、ビュースルーアトリビューションのインストール をオンにします。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
+
+<div id="default-postbacks" />
 
 #### デフォルトのポストバック
 
 インストールおよび拒否されたインストールのポストバックは、このパートナーにのみ送信されます。
 
 
-**<span id="inapp-event-settings"></span>Token**
+**<span id="in-app-event-settings"></span><span id="inapp-event-settings"></span>Token**
 
 AVOWスペシャリスト(AM/BDM)から提供された認証トークンを追加します。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -108,6 +126,8 @@ AVOWスペシャリスト(AM/BDM)から提供された認証トークンを追�
    1. 左上隅のパートナー名下にあるアプリ名をクリックし、アプリ一覧を開きます。
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリで、連携ステップを再度実施してください。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -144,6 +164,8 @@ Avow GmbH の広告収益はご利用いただけません。
 <Accordion title="権限タブ">
 
 データにアクセスし、さまざまなアクションを実行するためにAvow GmbHに付与するアクセス許可を選択します。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >

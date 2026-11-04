@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** RTB Houseは、AppsFlyerの連携済みパートナーであり、eコマースおよびゲーム会社向けのリターゲティング技術を提供しています。RTB Houseは、リアルタイム入札モデルでオンライン広告を購入するための深層学習アルゴリズムに基づいた独自のリターゲティングソリューションを開発しました。クリックベースのモバイルアトリビューションに加えて、RTB Houseはリターゲティングアトリビューションを提供しており、これをAppsFlyerで計測できます。
 
+<div id="setting-up-rtb-house" />
+
 ## RTB Houseの連携設定
 
 **前提条件：** 連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡</Anchor>してRTB Houseアカウントを開設してください。
@@ -41,6 +43,8 @@ RTB Houseの設定画面には、3つのアクティブタブが含まれてい�
 
 連携済みパートナーの設定画面のヘッダーについての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">こちら</Anchor>をクリックしてください。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > * 連携タブでの<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#d-general-settings">一般的な設定</Anchor>の項目は、全てのパートナーにおいて**必須**です。
@@ -52,26 +56,38 @@ RTB Houseの設定画面には、3つのアクティブタブが含まれてい�
 
 連携タブは次のセクションに分かれています。
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 この画面を**初めて**開く際には、**パートナーを有効にする**というトグルをオンにして、連携タブのパラメーター設定を有効にする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 ユーザーのインストールとリエンゲージメント後に、自動でRTB Houseにポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークであるRTB Houseは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。そのためには、**オーガニックを含む全てのメディアソース**を選択して、全てのインストールポストバックをRTB Houseに送信してください。
 
+<div id="in-app-events-settings" />
+
 ### アプリ内イベントの設定
 
 このセクションでは、ポストバックを介して、AppsFlyerイベントをRTB Houseとマッピングできます。
 
+<div id="region" />
+
 #### 地域
 
 RTB Houseのデータセンターの地域を入力してください。 例： **emea**, **us**, **asia**
+
+<div id="in-app-event-postback-settings" />
 
 #### アプリ内イベントのポストバック設定
 
@@ -122,6 +138,8 @@ RTB Houseのデータセンターの地域を入力してください。 例：
 <Accordion title="権限タブ">
 
 このタブでは、パートナーがアドネットワークの場合、代理店の場合、または両方の場合に、RTB Houseに付与する権限を選択できます。RTB Houseのアトリビューションが無効になっていても、権限タブはアクティブであり、RTB Houseにコントロールを与えることができることに注意してください。
+
+<div id="ad-network-permissions" />
 
 ### アドネットワークへの権限付与
 

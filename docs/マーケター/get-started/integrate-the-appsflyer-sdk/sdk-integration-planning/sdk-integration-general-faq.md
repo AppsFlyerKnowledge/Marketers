@@ -23,15 +23,21 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer SDKを利用すると、アプリの広告配信やアトリビューション計測、ディープリンクの設定、モバイルアプリユーザーの行動データの収集を安全に行えます。アドネットワークや各種プラットフォームとの連携も、数週間から数か月かけることなく、わずか数分で設定して利用を開始できます。
 
+<div id="how-to-install-and-update-the-appsflyer-sdk" />
+
 ## AppsFlyer SDKのインストールとアップデート方法
 
 AppsFlyer SDKのインストールとアップデートの手順については、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">Dev Hub</Anchor>をご覧ください。**注意**：SDKをアップグレードするには、アプリの新しいバージョンをストアに公開する必要があります。
+
+<div id="is-it-hard-to-integrate-the-appsflyer-sdk" />
 
 ## AppsFlyer SDKの実装は難しいですか？
 
 経験豊富な開発者であれば、1時間もかからずにアプリでAppsFlyerのアトリビューション計測を利用できる状態にできます。その後は、アプリごとに数分程度の作業で対応できます。
 
 <Anchor target="_blank" href="/marketers/ja/docs/sdk-integration-overview">Android</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/sdk-integration-overview">iOS</Anchor>、Unity向けのSDK実装ガイド、または<Anchor target="_blank" href="/marketers/ja/docs/other-platforms">その他のプラットフォーム</Anchor>向けのガイドをご覧ください。
+
+<div id="does-the-appsflyer-sdk-affect-app-download-time" />
 
 ## AppsFlyer SDKはアプリのダウンロード時間に影響しますか？
 
@@ -40,11 +46,15 @@ AppsFlyer SDKのパッケージは、アプリのパフォーマンスへの影�
 * **Android SDK：** 約300KB
 * **iOS SDK：** 約3.4MB
 
+<div id="does-the-appsflyer-sdk-affect-app-performance" />
+
 ## AppsFlyer SDKはアプリのパフォーマンスに影響しますか？
 
 AppsFlyer SDKのAPIは、主に*setter*／*getter*、またはAppsFlyerサーバーとのデータ送受信を行う高速な非同期Webサービスメソッドで構成されています。そのため、SDKのAPIがアプリのパフォーマンスに与える影響は無視できるほど小さいものです。
 
 つまり、**AppsFlyer SDKがアプリのパフォーマンスやユーザー体験に影響することはありません**。
+
+<div id="can-i-record-in-app-events-that-occur-outside-my-app" />
 
 ## アプリ外で発生したアプリ内イベントを記録できますか？
 

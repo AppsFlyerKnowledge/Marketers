@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **概要：** セルフレポーティングネットワーク（SRN）におけるアトリビューション、ディープリンク、iOSへの影響、FAQについて学びましょう。
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## SRN媒体
 
 | **SRN** | **ロゴ** |
@@ -49,6 +51,8 @@ x-zendesk:
 
 **注記：** SRNには、<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention">ユーザーレベルのデータ利用とデータ保持期間の制限</Anchor>が存在します。
 
+<div id="attribution" />
+
 ## アトリビューション
 
 非SRN（アドネットワーク）は計測リンクを使用してコンバージョンをAppsFlyerにレポートしますが、SRNは、AppsFlyerからインストール通知を受け取ると、デバイスIDを用いて自己アトリビューションを行います。iOSアプリに関しては、<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKAN</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">高プライバシーフレームワーク</Anchor>がアトリビューションに使用されます。
@@ -57,6 +61,8 @@ SRNおよび非SRNのAppsFlyerアトリビューションは次の基準に基�
 
 * ラストタッチおよびマルチタッチの手法。
 * 関連するインプレッションとクリックデータを順序付けるためのAppsFlyer標準のアトリビューションロジック。
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### SRNでのアトリビューションはどのように行われますか？
 
@@ -68,9 +74,13 @@ SRNは、新規インストールやアプリ内イベントなどのイベン�
 
 AppsFlyerがアトリビューションを実行した後、<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention#パートナー別のデータ保持期間">パートナーデータ保持期間</Anchor>内に、アプリ内ポストバックがSRNに送信されます。
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### アドバンスSRNのアトリビューションはどのように機能しますか？
 
 アドバンスSRNは、通常のSRNと同じアトリビューション手法をサポートしています。さらに、アドバンスSRNは、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowledge-base-glossary#aggregated-advanced-privacy">高プライバシーフレームワーク</Anchor>を通じた計測にも対応しています。ネットワークによっては、双方の同意が得られている場合に広告IDを使用したアトリビューションを行う方法や、クリックおよびインプレッションデータに基づいてキャンペーン計測をモデリングする方法が含まれます。
+
+<div id="install-attribution" />
 
 ### インストールアトリビューション
 
@@ -83,6 +93,8 @@ AppsFlyerがアトリビューションを実行した後、<Anchor target="_bla
   * 広告ID（端末ID）が存在するかどうか
 * これらの条件が両方とも満たされている場合、AppsFlyerは広告IDを使ってSRNを照会します。
 * AppsFlyerはSRNの主張を考慮した上でアトリビューションを実行します。
+
+<div id="install-attribution-examples" />
 
 #### インストールアトリビューションの例
 
@@ -118,6 +130,8 @@ AppsFlyerは、広告主に対してインストール前のエンゲージメ�
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### アトリビューション期間
 
 アトリビューション期間には、ルックバックとビュースルーが含まれます。 一部のSRNは、インプレッションコスト（CPM）やアクション単価（CPA）に基づいてインストールの費用を広告主に請求します。これらは1～28日間の期間内に発生したクリックまたはインプレッションを基にしています。
@@ -130,6 +144,8 @@ AppsFlyerは、広告主に対してインストール前のエンゲージメ�
 * どうしてでしょう？AppsFlyerは広告主が定義した条件に基づいて実際のeCPIとeCPAをレポートするためです。
 * SRNは、独自の支払い条件を定めることが多いため、短期的に利益を得られる可能性があります。しかし、広告主はサードパーティのアトリビューションプロバイダーを利用してこの問題を解決します。
 
+<div id="deep-linking-with-srns" />
+
 ## SRNとのディープリンク
 
 ユーザーがリンクをクリックした際にアプリを開くためには、アプリリンク、ユニバーサルリンク、またはURIスキームを設定するだけです。ただし、アプリ内の特定のページまたはアクティビティへのディープリンクやディファードディープリンクを実行するには、SRNはAppsFlyerの方法を使わずに独自の方法を利用しています。
@@ -141,6 +157,8 @@ AppsFlyerは、広告主に対してインストール前のエンゲージメ�
 <Accordion title="ダイレクトディープリンク">
 
 ユーザーのデバイスがディープリンクを実行するとき、AppsFlyerのディープリンクメソッドを呼び出さずに、SRNとのダイレクトディープリンクが行われます。以下の例では、既存ユーザーが広告をクリックするとFacebookの方法でアクティビティに直接リダイレクトされ、新規ユーザーはAppsFlyerのコンバージョンデータを使用して同様の体験をします。Meta広告がどのように<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-faq#who-needs-facebooks-sdk">OneLinkをディープリンクに活用しているかを学ぶ</Anchor>
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -165,6 +183,8 @@ AppsFlyerは、広告主に対してインストール前のエンゲージメ�
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## iOSへの影響
 
 ほとんどのSRNはSKAdNetworkをサポートしており、AppsFlyerと必要な連携を行えます。
@@ -174,6 +194,8 @@ AppsFlyerは、広告主に対してインストール前のエンゲージメ�
 <Accordion title="iOS 14.5 SRNアトリビューション">
 
 iOS 14.5以降、ユーザーが広告主と媒体アプリの両方でATTに同意すると(<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowledge-base-glossary#デュアル同意">二重同意</Anchor>)、SRNインストールはSKAdNetwork管理画面に記録<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">され、従来の管理画面にも</Anchor>表示されます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -192,12 +214,16 @@ iOS 14.5以降、ユーザーが広告主と媒体アプリの両方でATTに同
 * SRNに送信されるイベントポストバックの数の減少
 * すべてのイベントを記録するAppsFlyerとSRNの間で発生する、イベントポストバック数の差異
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 広告IDを取得できない場合、インストール、アプリ起動、アプリ内イベントのポストバックはSRNに送信されません。[ただし、一部のケースでは、広告IDを取得できない場合でも、限定的なポストバックがSRNに送信されることがあります。](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)[。](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)
 > * クリック型アドネットワークは、イベントポストバック情報のセルフアトリビューションにデバイスIDではなく独自のトランザクションIDを使用するため、影響を受けません。
 
 </Accordion>
+
+<div id="faq" />
 
 ## よくある質問
 
@@ -236,6 +262,8 @@ SRNキャンペーンは特定のターゲット層を狙うべきですが、�
 
 **結論：** ユーザー獲得キャンペーンでリターゲティングイベントを取得するのは効率的ではありません。
 
+<div id="is-mistargeting-a-problem" />
+
 #### 誤ったターゲティングは問題でしょうか?
 
 AppsFlyerのデータアナリストが、特定の月におけるMeta広告**ユーザー獲得**キャンペーンを解析しました。
@@ -246,6 +274,8 @@ AppsFlyerのデータアナリストが、特定の月におけるMeta広告**�
 * **結論：SRNのユーザー獲得キャンペーンでは、10人に1人がすでに既存のユーザーです。**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### 誤ったターゲティングの問題を解決する
 

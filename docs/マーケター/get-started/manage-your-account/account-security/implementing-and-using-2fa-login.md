@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **概要：** 2要素認証（2FA）を使い、ログイン時のセキュリティを強化します。通常のログイン情報に加え、Google Authenticator、Microsoft Authenticator、またはSMSで認証します。
 
+<div id="highlights" />
+
 ## 主な内容
 
 * 2FAは、管理者が任意で有効にできる機能です。
 * **Google AuthenticatorまたはMicrosoft Authenticator**と、**SMS認証**を選択できます。
 * 有効化・無効化は、アカウントのすべてのユーザーに適用されます。
 * 有効化した時点のユーザーはそのままログインできますが、次回ログイン時に2FAの設定を求められます。
+
+<div id="-admin-managing-2fa" />
 
 ## ![admin.png](https://files.readme.io/d54680123b25ab7929285cebd778e0e74bd0d032df994b04d1bca106381c3dc6-360014518718.png) 管理者による2FAの管理
 
@@ -42,6 +46,8 @@ x-zendesk:
 <Accordion title="有効化">
 
 管理者が**Google AuthenticatorまたはMicrosoft Authenticator**と**SMS認証**の両方を有効にした場合、ユーザーは希望する方法を選択できます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -86,6 +92,8 @@ x-zendesk:
 4. 無効化を確定します。
 
 </Accordion>
+
+<div id="account-users-using-google-or-microsoft-authenticator" />
 
 ## ユーザーによるGoogle AuthenticatorまたはMicrosoft Authenticatorの利用
 
@@ -132,6 +140,8 @@ x-zendesk:
 4. <strong>［認証］</strong>をクリックすると、<strong>［マイアプリ］</strong>ページに移動します。
 
 </Accordion>
+
+<div id="account-users-using-sms-verification" />
 
 ## ユーザーによるSMS認証の利用
 

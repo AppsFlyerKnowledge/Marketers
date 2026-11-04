@@ -21,13 +21,19 @@ x-zendesk:
 ---
 > **概要：** AdjustからAppsFlyerへの移行計画を立てるためのガイドです。移行期間中の二重請求、データの重複、データの欠落を防ぐ方法を説明します。
 
+<div id="about-migrating-to-appsflyer" />
+
 ## AppsFlyerへの移行について
 
 AdjustからAppsFlyerへ移行することで、信頼性が高く、幅広い機能を備えたアトリビューション・マーケティング分析プラットフォームへ円滑に切り替えられます。 AppsFlyerは、安全性と中立性を備えたソリューションに加え、業界の変化への対応を支援するさまざまな高度なツールを提供しています。世界各地のカスタマーサポートと継続的な製品改善を通じて、企業の成長と変化への対応に必要なツールや分析結果の提供を目指しています。
 
+<div id="compare-measurement-between-appsflyer-and-adjust" />
+
 #### AppsFlyerとAdjustの計測結果の比較
 
 移行を検討する際には、同じメディアソースやキャンペーンを対象に、AppsFlyerとAdjustのアトリビューションの計測結果を比較したい場合があります。ただし、すべてのメディアソースが複数のMMPによる計測に対応しているわけではありません。対応している場合でも、アトリビューションの差異を防ぐために、一定の制限や注意点が設けられていることがあります。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/measuring-attribution-with-multiple-mmps">複数のMMPによるアトリビューション計測</Anchor>をご確認ください。
+
+<div id="tasks" />
 
 ## 移行に必要な作業
 
@@ -101,6 +107,8 @@ AdjustからAppsFlyerへ移行することで、信頼性が高く、幅広い�
 
 デバイスIDの移行により、アプリをダウンロードし、Adjustでアトリビューションが行われた既存ユーザーに関するデータ上の問題を解消できます。たとえば、AdjustでSRNにアトリビュートされたユーザーがルックバック期間内にAppsFlyerでも同じSRNにアトリビュートされ、二重請求が発生する問題に対応できます。
 
+<div id="example" />
+
 > 📄 **例**
 >
 > * 新規ユーザーがFacebookアプリで広告をクリックし、6月15日に自社アプリをインストールします。
@@ -114,6 +122,8 @@ AdjustからAppsFlyerへ移行することで、信頼性が高く、幅広い�
 * **リターゲティング：** リアトリビューションとリエンゲージメントは、通常どおり表示されます。
 * **アクティビティデータ：** 通常どおり表示されます。
 * **リテンションとコホートのデータ：** 移行したデバイスには、インストールの記録がありません。そのため、どのコホートにも紐づかず、コホートレポートとリテンションレポートには表示されません。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -141,6 +151,8 @@ AdjustからAppsFlyerへ移行することで、信頼性が高く、幅広い�
 
 以下では、SRN、SRN以外のアドネットワーク、オウンドメディア、SKANについて、それぞれAppsFlyerで計測を開始するために必要な作業を説明します。
 
+<div id="srns" />
+
 #### セルフレポーティングネットワーク（SRN）
 
 SRNは、モバイル計測パートナー（MMP）から、特定のデバイスの広告接触について照会を受けると、その情報を返します。 AppsFlyerとAdjustが、同じデバイスのインストールについて同じSRNに照会すると、二重請求が発生する可能性があります。
@@ -149,10 +161,14 @@ SRNは、モバイル計測パートナー（MMP）から、特定のデバイ�
 
 * AppsFlyerで、対象の<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns#srn媒体">SRN</Anchor>を有効化し、設定します。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * SRNは複数のMMPを併用できます（Meta adsとTwitterを除く）。
 > * Meta adsでは、アプリ内イベントの重複を排除できません。
+
+<div id="non-srn-ad-networks" />
 
 #### SRN以外のアドネットワーク
 
@@ -163,6 +179,8 @@ SRNは、モバイル計測パートナー（MMP）から、特定のデバイ�
 1. AppsFlyerで、対象のアドネットワークを<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner">有効化</Anchor>します。
 2. 各アドネットワークの<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#attribution-link-tab">AppsFlyerアトリビューションリンクを生成</Anchor>します。
 3. 各キャンペーンの既存のリンクを、AppsFlyerのアトリビューションリンクに置き換えます。
+
+<div id="owned-media" />
 
 #### オウンドメディア
 
@@ -213,6 +231,8 @@ AppsFlyerでは、複数の方法で<Anchor target="_blank" href="/marketers/ja/
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 補足情報
 
 <div id="attributed-migration" />
@@ -220,6 +240,8 @@ AppsFlyerでは、複数の方法で<Anchor target="_blank" href="/marketers/ja/
 <Accordion title="流入元情報を引き継ぐ移行">
 
 この方法でAppsFlyerに移行したデバイスのアプリ内イベントとセッションは、移行前の計測サービスが報告したメディアソースに基づき、アドネットワークのデータ保持ポリシーに従って記録・表示されます。
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### 流入元情報を引き継ぐ移行のCSV形式
 
@@ -257,6 +279,8 @@ CSVのサンプル
 <Accordion title="流入元情報を引き継がない移行">
 
 この方法でAppsFlyerに移行したデバイスは、オーガニックユーザーとして記録されますが、表示はされません。そのデバイスのアプリ内イベントとセッションも、オーガニックとして記録・表示されます。
+
+<div id="non-attributed-device-migration-csv-file-structure" />
 
 #### 流入元情報を引き継がない移行のCSV形式
 

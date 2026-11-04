@@ -21,6 +21,8 @@ x-zendesk:
 ---
 **概要：** DCPを設定して、コンバージョン、エンゲージメント、キャンペーンマッピングデータに基づいてSKUレベルの帰属を行う方法を学びます。
 
+<div id="overview" />
+
 ## 概要
 
 <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-prepare-collaboration-measurement">コンバージョン、エンゲージメント、キャンペーンマッピング</Anchor>データを準備した後、DCPを設定してそれらを測定と帰属に使用できます。
@@ -29,6 +31,8 @@ x-zendesk:
 2. [**タスクを割り当てる**](#設定タスクを割り当てる) – オーナーは、関連データにアクセスできるコラボレーターに各設定タスクを割り当てます。
 3. [**タスクを設定する**](#オンサイトおよびオフサイトでのキャンペーン計測) – コラボレーターは、コンバージョン、エンゲージメント、キャンペーンマッピングを設定します。これには、すべてのデータが接続され、マッピングされ、帰属の準備が整うように、オンサイトおよびオフサイトキャンペーンを設定することが含まれます。
 4. <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-run-and-manage-measurement">**測定を実行および管理する**</Anchor> - 測定をライブまたは過去のものとして実行し、それらを複製したり、再実行したり、範囲を変更したりします。
+
+<div id="start-the-measurement-setup" />
 
 ## 測定の設定を開始します。
 
@@ -42,6 +46,8 @@ x-zendesk:
 
 [![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
 
+<div id="select-campaign-type-on-site-off-site-or-both" />
+
 ## キャンペーンタイプを選択します：オンサイト、オフサイト、または両方。
 
 オンサイトとオフサイトのキャンペーンタイプは、コンバージョンが発生する場所と帰属の処理方法が異なるため、コラボレーションのオーナーはコラボレーション測定を設定する前にキャンペーンタイプを指定する必要があります。詳細については、以下を参照してください：<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-vs-off-site-campaign-measurement">オンサイト対。オフサイトキャンペーン測定</Anchor>。
@@ -53,6 +59,8 @@ x-zendesk:
    * [オンサイトキャンペーンを設定](#オンサイトおよびオフサイトでのキャンペーン計測)、
    * [オフサイトキャンペーンを設定](#configure-offsite-campaign-measurement)、
    * [オンサイトとオフサイトのキャンペーンを組み合わせて設定](#configure-combined-onsite-and-offsite-campaign-measurement)。
+
+<div id="assign-configuration-task" />
 
 ## 設定タスクを割り当てる
 
@@ -92,6 +100,8 @@ DCPアカウントの所有者は、データプライバシーを確保し、�
 2. 関連する構成ステップで、**割り当て先**リストから割り当てられたコラボレーターを削除します。
 
 </Accordion>
+
+<div id="configure-on-site-and-off-site-campaign-measurement" />
 
 ## オンサイトおよびオフサイトでのキャンペーン計測
 

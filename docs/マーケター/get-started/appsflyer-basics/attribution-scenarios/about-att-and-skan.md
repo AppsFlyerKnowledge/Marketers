@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要**：iOS 14.5以降、Appleは<Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor>（ATT）の実装と、その利用条件の遵守を求めています。 ATTでは、*アプリがユーザーのデータを収集し、アプリやWebサイトをまたいだトラッキングを目的として他社と共有する場合*、ATTの同意確認画面を使用し、広告を掲載するアプリと広告主のアプリの両方で、ユーザーの同意を得る必要があります。トラッキングを行わない場合は、同意確認画面を表示する必要はありません。
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## ATTが適用される環境でのアトリビューション計測
 
 AppsFlyerは、さまざまなニーズに対応する複数のアトリビューション計測方法を提供しています。 [ATT](/docs/about-att-and-skan#att-principles)による同意取得の要件は、アプリ内広告から別のアプリへのインストールを促す有料キャンペーンのアトリビューション計測に影響します。そのため、広告主は複数の計測・レポートソリューションを組み合わせて利用する必要があります。
@@ -105,7 +107,11 @@ iOS 14では、同じインストールが従来のダッシュボードとSKAN�
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## iOSのアトリビューションとプライバシーに関する重要事項
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### iOSのアトリビューション、SKAN、プライバシーに関する記事とリンク
 
@@ -127,6 +133,8 @@ iOS 14では、同じインストールが従来のダッシュボードとSKAN�
 
 <Accordion title="IDFAの利用可否がアトリビューションと計測に与える影響">
 
+<div id="metrics" />
+
 #### **指標**
 
 IDFAを利用できない場合は、次の指標に影響が生じる可能性があります。
@@ -138,6 +146,8 @@ IDFAを利用できない場合は、次の指標に影響が生じる可能性�
 | リターゲティング | オーガニックインストールとアプリ内イベント | リエンゲージメント、リアトリビューション |  |
 | Apple Ads | -- | -- | 変更なし。 IDFAの利用可否にかかわらず、正しくアトリビューション計測されます。 |
 
+<div id="deep-linking" />
+
 #### **ディープリンク**
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">onConversionDataSuccessを使用する従来の方法</Anchor>でディファードディープリンクを実行する場合、IDFAを利用できないと機能しない可能性があります。この方法では、プライバシー設定によって提供が制限される可能性のあるアトリビューションデータが必要となるためです。
@@ -145,6 +155,8 @@ IDFAを利用できない場合は、次の指標に影響が生じる可能性�
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_overview">統合ディープリンク（UDL）</Anchor>の使用を推奨します。 UDLはiOS 14.5以降のプライバシー基準に準拠しており、ディープリンクとディファードディープリンクに関連するパラメータである`deep_link_value`と`deep_link_sub1`のみを返します。 `media_source`、`campaign`、`af_sub1-5`などのアトリビューションパラメータはnullを返すため、ディープリンクには使用できません。
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## iOSのアトリビューションとATTに関するよくある質問
 
@@ -168,6 +180,8 @@ V6.10より前のSDKを使用するアプリでは、SKAN 4が機能しません
 いいえ。 ATTの同意を求める必要があるのは、ユーザーの*トラッキング*、IDFAの収集、またはその両方を行う場合のみです。
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## SKANに関するよくある質問
 
@@ -224,6 +238,8 @@ V6.10より前のSDKを使用するアプリでは、SKAN 4が機能しません
 例：6月12日のレポートに、6月11日に発生したGoogle経由のインストールが100件表示されています。 6月24日のレポートには、6月11日に発生したインストールがさらに100件記録されています。 6月11日に発生したインストールの合計200件を正しく把握するには、13日間（6月12日〜6月24日）のすべてのレポートを確認し、インストール時刻またはアドネットワークのタイムスタンプに基づいて集計する必要があります。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

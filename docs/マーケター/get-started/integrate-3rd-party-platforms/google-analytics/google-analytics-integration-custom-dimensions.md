@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** カスタムディメンションを使用して、Google Analyticsとの連携を設定します。
 
+<div id="custom-dimensions-on-google-analytics" />
+
 ## Google Analyticsのカスタムディメンション
 
 AppsFlyerのアトリビューションデータをGoogle Analyticsに送信する方法として、AppsFlyer管理画面ではなく、GA側で設定する方法もあります。
@@ -49,9 +51,13 @@ AppsFlyerのアトリビューションデータをGoogle Analyticsに送信す�
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">Android用GA SDK</Anchor>
 > * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">iOS用GA SDK</Anchor>
 
+<div id="setting-media-source-as-a-custom-dimension-on-google-analytics" />
+
 ### Google Analyticsでのメディアソースのカスタムディメンション設定
 
 Google Analyticsには、ユーザー単位のセグメント分けに使用できる、高機能なカスタムディメンションという機能があります。カスタムディメンションの値はモバイルデバイスから送信されます。これらのディメンションに基づいて、Google Analytics管理画面でレポートが生成されます。
+
+<div id="step-1-define-it-on-google-analytics" />
 
 ### 手順1：Google Analyticsでの定義
 
@@ -66,6 +72,8 @@ Google Analyticsには、ユーザー単位のセグメント分けに使用で�
    ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
 
    同じ手順でもう1つディメンションを作成し、名前を**AppsFlyer Campaign**にします。
+
+<div id="step-2-setting-and-sending-the-data-from-the-app" />
 
 ### 手順2：アプリでのデータの設定と送信
 
@@ -126,6 +134,8 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 </Tab>
 </Tabs>
+
+<div id="step-3-see-the-results-in-google-analytics" />
 
 ### 手順3：Google Analyticsでの結果の確認
 

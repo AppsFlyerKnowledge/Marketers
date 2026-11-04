@@ -25,13 +25,19 @@ x-zendesk:
 ---
 > **概要：** Segmentの分析データをAppsFlyerに送信します。
 
+<div id="introduction" />
+
 ## はじめに
 
 Segmentでは、AppsFlyerにデータを簡単に送信できます。 Segmentのオープンソースライブラリで記録したデータは、適切な形式に変換され、AppsFlyerに送信されます。 AppsFlyerは、的確なターゲティング、広告費の最適化、ROIの向上を支援します。
 
+<div id="integrating-segment-with-appsflyer" />
+
 ## SegmentとAppsFlyerを連携する
 
 連携方法は、<Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">Segmentのガイド</Anchor>を参照してください。
+
+<div id="faqs" />
 
 ## よくある質問
 
@@ -65,6 +71,8 @@ Segment SDKラッパーは、Segment SDKとAppsFlyer SDKをつなぎます。
 Segment SDKラッパーからインストールやアプリ内イベントを記録するSegmentのメソッドを呼び出すと、SegmentとAppsFlyerの両方のメソッドが呼び出されます。
 
 これにより、必要なコード量を減らし、実装の手間と時間を削減できます。
+
+<div id="warning" />
 
 > ❗️ **警告**
 >

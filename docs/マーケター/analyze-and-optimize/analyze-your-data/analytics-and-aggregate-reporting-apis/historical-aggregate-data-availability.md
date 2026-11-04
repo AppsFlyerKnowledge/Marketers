@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：概要：さまざまなAppsFlyer集計ダッシュボードとレポートから利用できる過去データについて説明します。**
 
+<div id="historical-aggregate-data-availability" />
+
 ## 過去の集計データの可用性
 
 次の表は、さまざまなAppsFlyer集計ダッシュボードとレポートを介して利用できる過去データを示しています；

@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **概要：** 各プラットフォームでのアプリのインストールを別のプラットフォームの広告閲覧に紐づけて計測する方法について記載しています。たとえば、モバイルアプリのインストールをCTV端末で表示された広告に、コンソールゲームアプリのインストールをモバイルまたはデスクトップ（ウェブ）で表示された広告に、CTVアプリのインストールをモバイルまたはデスクトップ（ウェブ）で表示された広告に、それぞれ成果を紐づけます。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerのクロスプラットフォームOneLink（インプレッションURL）を使用すると、あるプラットフォームからのインストールを別のプラットフォームに表示される広告ビューに結び付けることができます。同じ世帯内の複数のインストールは、同じクロスプラットフォーム広告インプレッションに起因する可能性があります。
+
+<div id="create-a-onelink-templatefor-cross-platform-attribution" />
 
 ## クロスプラットフォーム計測用のOneLinkテンプレートの作成
 
@@ -36,9 +40,13 @@ AppsFlyerのクロスプラットフォームOneLink（インプレッションU
 2. **クロスプラットフォーム計測**のセクションで、**編集** > **クロスプラットフォームの同等アトリビューション優先度**トグルをオンにします。
 3. 関連するプラットフォームのドロップダウンから、関連するアプリを選択します。　**注：** 各アプリは、クロスプラットフォーム計測が有効な1つのOneLinkテンプレートにのみ追加できます。[<Image alt="クロスプラットフォームの計測.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
+<div id="set-up-cross-platform-partner-integration" />
+
 ## クロスプラットフォームのパートナー連携設定
 
 クロスプラットフォームのインプレッションURLを使用してクロスプラットフォーム計測を設定するには、ターゲットアプリごとにパートナー設定を設定します。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -84,6 +92,8 @@ AppsFlyerのクロスプラットフォームOneLink（インプレッションU
    ```
 8. CTVやPC、コンソールのプラットフォーム上で表示する広告に設定するために、アドネットワークへ計測リンクを入稿してください。
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > オウンドメディアおよび連携外パートナーには、必要に応じてパラメータを追加します。 追加できるデータとパラメータの詳細については<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">こちらのページ</Anchor>をご確認ください。
@@ -101,6 +111,8 @@ AppsFlyerのクロスプラットフォームOneLink（インプレッションU
 1. クロスプラットフォーム設定セクションで、**クロスプラットフォームの同等アトリビューション優先度**のチェックボックスを選択します。
 2. **保存**をクリックしてください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > クロスプラットフォームの同等アトリビューション優先度を有効にすると、AppsFlyerが他のソースよりも自社の計測を優先する可能性があります。この設定は注意して使用し、全体的な計測戦略に合致する場合のみ使用してください。
@@ -110,6 +122,8 @@ AppsFlyerのクロスプラットフォームOneLink（インプレッションU
 ## アドネットワークのリスト
 
 CTV、PC、コンソールのプラットフォームに広告を表示し、クロスプラットフォームアトリビューション（CTVからモバイルアプリなど）をサポートしているアドネットワークの一覧は、 <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">AppsFlyer Partner Marketplace</Anchor>で確認できます。確認するには、AppsFlyerアカウントへのログインが必要になります。
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 
@@ -125,6 +139,8 @@ CTV、PC、コンソールのプラットフォームに広告を表示し、ク
 | <span id="cross-platform-attribution-links-in-mobile-devices"></span>モバイルデバイスにおけるクロスプラットフォーム計測リンク | モバイルデバイスでクロスプラットフォーム計測リンクが表示されると、計測は標準のモバイル確率モデル論理によって決定され、<Anchor target="_blank" href="/marketers/ja/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>、PC、およびコンソール用に設計されたクロスプラットフォーム計測フローによって決定されるわけではありません。その結果、モバイルインプレッションは、真のクロスプラットフォームインプレッションに対して利用可能な[同等の優先度](#step-3-enable-equal-priority-for-crossplatform-impressions)、[拡張ルックバック期間](#attribution-window)、または[世帯計測](#household-attribution)の対象にはなりません。 |
 | <span id="agency-permissions"></span>代理店権限 | 代理店アカウントで「クロスプラットフォームの同等アトリビューション優先度」は設定できません。この設定は、特定のアドネットワークの広告主の設定から適用されます。 |
 
+<div id="discrepancies" />
+
 ## 数値の乖離
 
 AppsFlyerとtvScientificではアトリビューションモデルに違いがあります。これにより、tvScientificダッシュボードとAppsFlyerダッシュボードの間に不一致が生じる可能性があります。不一致の理由：
@@ -135,6 +151,8 @@ AppsFlyerとtvScientificではアトリビューションモデルに違いが�
 | ルックバック期間 | 最大30日間 | 最大72時間 |
 | リターゲティング | 新規ユーザー（新規インストール）とリピーター（リエンゲージメント）の両方を計測 | 新規ユーザー（新規インストール）のみ計測 |
 | コストの割り当て | 広告配信費用はOS（iOS / Android）に関係なくインプレッションに割り当てられます。 | 広告配信費用は、iOS と Android の別々のシステムのインプレッションに割り当てられます。 |
+
+<div id="faq" />
 
 ## よくある質問
 

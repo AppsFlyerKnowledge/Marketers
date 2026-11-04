@@ -23,6 +23,10 @@ x-zendesk:
 ---
 > **概要：**
 
+<div id="setting-up-your-campaign-on-wechat" />
+
+<div id="introduction" />
+
 ## はじめに
 
 YouAppi を使ったキャンペーンを設定するには、以下の手順に従ってください。
@@ -39,7 +43,7 @@ YouAppi を使ったキャンペーンを設定するには、以下の手順に
 
 
 
-<span id="setting-up-wechat-campaign-as-an-agency"></span>設定は**連携済みパートナー** ページから行われますが、新しく連携する際には、まず <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations">Partner Marketplace</Anchor>にアクセスする必要があります。
+<span id="setting-up-wechat-on-appsflyer"></span><span id="setting-up-wechat-campaign-as-an-agency"></span>設定は**連携済みパートナー** ページから行われますが、新しく連携する際には、まず <Anchor target="_blank" href="/marketers/ja/docs/partner-integrations">Partner Marketplace</Anchor>にアクセスする必要があります。
 
 > 📘 **注意**
 >
@@ -69,20 +73,28 @@ AppLovinの設定画面には5つのタブがあります：次の項目をク�
 
 連携タブは次のセクションに分かれています。
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 この画面を**最初に開く**際には、以下のトグルをオンにする必要があります。[***パートナーを有効にする***] トグルをオンにして、連携タブのパラメーター設定を有効にします。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信できるネットワークであるLINEは、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバック受信を希望しています。**All media sources, including organic** を選択し、全てのインストールポストバックをLINEに送信することを推奨します。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
 **Partner ID（パートナーID）**
 
 <Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+
+<div id="default-postbacks" />
 
 ### デフォルトのポストバック
 
@@ -91,6 +103,8 @@ AppsFlyerは、ユーザーインストールとリエンゲージメント後�
 ![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
 
 AppLovinに紐づくユーザーからのイベントのみにするには、**このパートナーに紐づくイベントのみ**を選択します。 [オーガニックを含む全メディアソース]**を選択して、ユーザーベース全てをYouAppiにレポートできるようにします。**
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -121,6 +135,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -142,6 +158,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。ルックバック期間内に発生するインストール（初回起動）のみがGMPの成果に紐づきます。
@@ -151,6 +169,8 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
 [![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+
+<div id="click-attribution-link" />
 
 ### クリックアトリビューションリンク
 

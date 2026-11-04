@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** Creative Managementは、クリエイティブの一元管理、確認、配信開始までの作業を効率化します。ストレージからクリエイティブを同期し、メディアソースを横断して配信状況を把握できます。目的のクリエイティブを簡単に見つけ、対応するメディアソースのキャンペーンへ直接アップロードできます。
 
+<div id="about-creative-management" />
+
 ## Creative Managementについて
 
 Creative Managementは、ストレージとの同期からメディアソースへのアップロードまで、クリエイティブアセットのライフサイクル全体を一元管理するハブです。
@@ -38,6 +40,8 @@ Creative Managementでは、以下のことができます。
 * アップロード結果を確認し、どのクリエイティブが成功・失敗したかを把握します。
 
 大規模な運用に対応したCreative Managementは、マーケティングチームやクリエイティブチームの手作業を削減し、配信開始までの時間を短縮して、キャンペーンのパフォーマンス向上を支援します。
+
+<div id="get-started" />
 
 ## まずはじめに
 
@@ -59,6 +63,8 @@ Creative Managementは現在、Google DriveとDropboxに対応しています。
 
 * [Google Drive](#google-driveへの接続)
 * [Dropbox](#dropboxへの接続)
+
+<div id="connect-google-drive" />
 
 #### Google Driveへの接続
 
@@ -84,6 +90,8 @@ Creative Managementは現在、Google DriveとDropboxに対応しています。
 <Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. **接続**をクリックします。
+
+<div id="connect-dropbox" />
 
 #### Dropboxへの接続
 
@@ -117,6 +125,8 @@ Creative Managementのギャラリーでは、クリエイティブの確認・�
 各クリエイティブカードは、1つのクリエイティブを表します。 1つのクリエイティブに、解像度や形式が異なる複数のバージョンが含まれる場合があります。カードでは、メディアソースを横断してクリエイティブが新規・配信中・配信停止中のいずれかをすばやく把握できます。初回配信日やCreative Managementへの同期日など、主なメタデータも確認できます。新しいクリエイティブはそれぞれ自動的に分析・スコアリングされ、配信開始前に最適なものを選ぶ際の判断材料になります。スコアはC（成果につながる可能性が低い）からA（配信拡大の準備ができている）までの範囲で付与され、高いパフォーマンスが見込めるクリエイティブを優先する際の判断に役立ちます。
 
 <Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+
+<div id="filter-creatives" />
 
 #### クリエイティブの絞り込み
 
@@ -173,6 +183,8 @@ Google Adsでは、既存のアプリプロモーション用広告グループ�
 
 <Image alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 初めて大量にアップロードする前に、1つのクリエイティブでテストし、選択したメディアソースで正しく表示されることを確認するようお勧めします。
@@ -218,6 +230,8 @@ TikTok Adsでは、既存のアプリプロモーション広告にクリエイ�
 
 #### Unity Ads
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > Unity Adsでは現在、Unityのクリエイティブライブラリへのアップロードにのみ対応しています。キャンペーンへの直接アップロードには、近日中に対応予定です。
@@ -231,6 +245,8 @@ TikTok Adsでは、既存のアプリプロモーション広告にクリエイ�
 
 #### Mintegral
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > Mintegralでは現在、Mintegralのクリエイティブライブラリへのアップロードにのみ対応しています。キャンペーンへの直接アップロードには、近日中に対応予定です。
@@ -243,6 +259,8 @@ TikTok Adsでは、既存のアプリプロモーション広告にクリエイ�
 6. **Mintegralにアップロード**をクリックします。
 
 #### AppLovin
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -322,6 +340,8 @@ Creative Managementでは、配信中のクリエイティブが現在どこで�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 特性と制限
 
 | 項目 | 説明 |
@@ -332,6 +352,8 @@ Creative Managementでは、配信中のクリエイティブが現在どこで�
 | アドネットワークごとに異なるアップロード方法 | アップロード方法は、アドネットワークごとに異なります。  <br />Google Ads、Meta Ads、TikTokは、キャンペーンへの直接アップロード（広告またはクリエイティブセットとして）に対応しています。Unity AdsとMintegralは現在、各アドネットワークのクリエイティブライブラリへのアップロードにのみ対応しています。 |
 | アセットの要件 | クリエイティブのファイル形式、寸法、再生時間、ファイルサイズは、各アドネットワークの要件を満たす必要があります。 |
 | アップロード履歴の対象範囲 | アップロード履歴はアップロード結果を示すものであり、その後のクリエイティブの配信状況や審査状況は反映しません。 |
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

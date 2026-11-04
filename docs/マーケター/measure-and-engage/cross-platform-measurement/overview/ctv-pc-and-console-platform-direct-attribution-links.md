@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：**  CTV、PC、コンソールプラットフォーム向けのAppsFlyer計測リンクの構造とパラメーターについて説明します。　**注意：** Android および iOSアプリ（Android PCゲームを含む）の場合は、 <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">モバイル計測リンクの手順</Anchor>を使用します。
 
+<div id="overview" />
+
 ## 概要
 
 CTV、PC、コンソール プラットフォームのダイレクト計測リンクを使用すると、広告主はユーザーをリダイレクトし、クリック後のデータを収集できます。ダイレクト計測リンクは、**一度に1つのプラットフォーム上の1つのリンク先を持つアプリ**に対するリダイレクトとアトリビューションをサポートする、AppsFlyer のリンクです。リダイレクト先は、リンクに含まれる af\_r パラメーターの値です。
@@ -32,9 +34,13 @@ CTV、PC、コンソール プラットフォームのダイレクト計測リ�
 
 あるいは、 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">エンゲージメントAPI</Anchor>を使用してS2S経由でリンクを作成することもできます。これには開発者の作業が必要です。　**注意：** S2S経由で作成されたリンクでもインプレッションデータを収集できます。
 
+<div id="attribution-link" />
+
 ### 計測リンク
 
 <table><thead><tr><th colspan="2">計測リンクの構造</th></tr></thead><tbody><tr><td>ベースURL</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>必須のpathパラメーター</td><td><ul><li>platform<br/>例：steam</li><li>app_id<br/>例：123456</li></ul></td></tr><tr><td>必須のクエリパラメーター</td><td><ul><li>af_media_source</li><li>af_campaign_id</li></ul></td></tr><tr><td>その他のパラメーター</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#パラメーター">すべてのパラメーターはこちら</a></td></tr><tr><td>URLの構造</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr><tr><td>サンプルURL</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=aloha&amp;af_campaign_id=1234&amp;af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello</code></td></tr></tbody></table>
+
+<div id="parameters" />
 
 ### パラメーター
 
@@ -64,6 +70,8 @@ CTV、PC、コンソール プラットフォームのダイレクト計測リ�
 | af\_device\_id\_type | 該当なし | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>デバイス識別子のタイプ。以下いずれか：<ul><li>vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>custom</li></ul> | 文字列 |
 | af\_device\_id\_value | 該当なし | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>デバイス識別子のタイプ | 文字列 |
 | af\_r | 該当なし | <ul><li>正しいアプリストアまたはランディングページへのリンクが含まれています</li><li>af\_r パラメーター内の文字列すべてをエンコードする必要があります。これには、UTMパラメーター値（追加されている場合）も含まれます。</li></ul>**注記：** あなたの<Anchor target="_blank" href="/marketers/ja/docs/set-up-your-domain-redirect-allowlist">リダイレクト許可リスト</Anchor>に af\_r のURLドメインが含まれていることを確認してください。 | 文字列 |
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

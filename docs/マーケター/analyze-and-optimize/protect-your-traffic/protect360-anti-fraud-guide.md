@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Protect360の概要
 
 * アトリビューション不正から保護します。不正を検知し、不正なアトリビューションをブロックする、状況に応じて機能する各種ツールで構成されています。
@@ -117,6 +119,8 @@ AppsFlyerが不正を特定すると、関連する**アトリビューション
 
 Protect360の不正検知と処理
 
+<div id="using-protect360" />
+
 ## Protect360の利用方法
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Protect360のデータを使ってアドネットワークと精算し、不審�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 仕様と制限事項
 
 <div id="traits-and-limitations::a07033c3" />
@@ -207,6 +213,8 @@ Protect360のデータを使ってアドネットワークと精算し、不審�
 仕様と制限事項
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## よくある質問とヒント
 
@@ -252,9 +260,13 @@ Protect360のデータを使ってアドネットワークと精算し、不審�
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > 不正対策について、さらに詳しく知りたいですか？ AppsFlyerラーニングポータルの<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">短時間で学べるコース</Anchor>をご覧ください。
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

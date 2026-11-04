@@ -25,6 +25,8 @@ x-zendesk:
 
 YouAppi を使ったキャンペーンを設定するには、以下の手順に従ってください。
 
+<div id="setting-up-youappi" />
+
 ## YouAppiの設定
 
 **前提条件:** **連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡して</Anchor>アカウントを開設してください。**
@@ -43,6 +45,8 @@ YouAppi を使ったキャンペーンを設定するには、以下の手順に
 
 連携済みパートナーの設定画面のヘッダーについての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">こちら</Anchor>をクリックしてください。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > * 連携タブでの<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#d-general-settings">全般的な設定</Anchor>項目は、全てのパートナーにおいて**必須**です。
@@ -54,14 +58,20 @@ YouAppi を使ったキャンペーンを設定するには、以下の手順に
 
 連携タブは次のセクションに分かれています。
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 この**最初の訪問** では、*パートナーのアクティブ化*トグルをオンにして、連携タブパラメーターの設定を有効にする必要があります。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 全てのインストールデータを受信するネットワークである YouAppi は、オーガニックを含む全てのメディアソースに紐づく新規インストールのポストバックを受信することを希望しています。そのためには、**全てのパートナーに紐づくイベント**を選択し、全てのインストールポストバックを YouAppi に送信してください。
+
+<div id="general-settings" />
 
 ### 一般的な設定
 
@@ -73,12 +83,16 @@ YouAppiは、trackerToken を使用してAppsFlyerと連携します。連携を
 
 YouAppiでビュースルーインストールを計測したい場合は、このトグルをオンにしてください。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 ### デフォルトのポストバック
 
 ユーザーのインストールおよびリエンゲージメント後に、自動ポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
 [**このパートナーのみ**] を選択して、YouAppiの成果に紐づくユーザーのイベントのみをYouAppiに送信します。  
 [**オーガニックを含む全メディアソース**] を選択して、ユーザーベース全てをYouAppiにレポートできるようにします。
+
+<div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
@@ -108,6 +122,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 
 このタブは複数のセクションに分かれています。
 
+<div id="attribution-link-parameters" />
+
 ### 計測リンクパラメーター
 
 このセクションでは、計測リンクに追加したいパラメータを選択できます。
@@ -127,6 +143,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### クリックスルーアトリビューション
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。設定したルックバック期間内に発生したインストール（初回起動）のみYouAppi の成果として計測されます。
@@ -135,9 +153,13 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 
 クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
+<div id="click-attribution-link" />
+
 ### クリックアトリビューションリンク
 
 このリンクは、あなたが設定したすべての情報が含まれる計測リンクです。ユーザーが対応する広告をクリックした際にアクティベートされるように、この計測リンクをYouAppiに入稿してください。
+
+<div id="view-through-attribution-lookback-window" />
 
 ### ビュースルーアトリビューションルックバック期間
 
@@ -148,6 +170,8 @@ YouAppiでビュースルーインストールを計測したい場合は、こ�
 **計測リンクパラメータ**： af\_viewthrough\_lookback
 
 ビュースルー計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
+
+<div id="impressions-attribution-link" />
 
 ### インプレッションのアトリビューションリンク
 
@@ -185,6 +209,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
 
+<div id="ad-network-permissions" />
+
 ### アドネットワークへの権限付与
 
 * ***パートナー連携の設定を許可する*** - パートナーに連携タブの設定（アプリ内イベントのポストバックを除く）を許可します。
@@ -196,6 +222,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 * ***Protect360管理画面へのアクセスを許可する*** - Protect360のデータへのアクセスを許可します（パートナーのデータのみ）。＜広告主がProtect360に申込みしている場合のみ＞
 
 詳細は<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">アドネットワークへの権限付与</Anchor>をご覧ください。
+
+<div id="agency-permissions" />
 
 ### 代理店の許可
 

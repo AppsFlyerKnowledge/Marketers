@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerと連携するサードパーティプラットフォームのMoEngageは、モバイルファーストの時代に向けて開発された、AIエージェントを活用した顧客エンゲージメントプラットフォームです。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-moengage" />
 
 ## MoEngageの設定
 
@@ -49,9 +53,13 @@ x-zendesk:
 
 <strong>［連携］</strong>タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 初回の設定時は、［**パートナーを有効化**］をオンにして、連携を設定できるようにします。このパートナーと連携している間は、オンにしておく必要があります。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -63,6 +71,8 @@ MoEngageとAppsFlyerの接続には、固有のApp ID、App Key、およびMoEng
 
 ![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にMoEngageへポストバックを自動送信できます。次のいずれかのオプションを選択します。
@@ -71,6 +81,8 @@ AppsFlyerは、ユーザーのインストール後にMoEngageへポストバッ
 * **オーガニックを含むすべてのメディアソース**：すべてのパートナーの成果として計測されたイベントと、オーガニックのイベントのポストバックを送信します。
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+
+<div id="note" />
 
 > 📘 **注意**
 >

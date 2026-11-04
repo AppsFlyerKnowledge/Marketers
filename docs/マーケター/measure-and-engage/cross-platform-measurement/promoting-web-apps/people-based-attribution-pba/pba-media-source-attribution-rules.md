@@ -25,6 +25,8 @@ x-zendesk:
 
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 
+<div id="website-visits-and-web-events" />
+
 ## Webサイト訪問とWebイベント
 
 * **Web訪問の計測**
@@ -56,6 +58,8 @@ PBA管理画面とローデータレポートは、成果が紐づくメディ�
 | Email | オウンド | Email |
 | googleadwords\_int | 支払済 | Ad |
 | usatoday.com | Earned | Referral（紹介） |
+
+<div id="determining-the-media-source" />
 
 ## メディアソースの決定
 
@@ -191,6 +195,8 @@ PBAはメディアソース、メディアタイプ、メディアチャネル�
 | utm\_source | utm\_campaign |
 
 </Accordion>
+
+<div id="additional-attribution-rules" />
 
 ## 追加のアトリビューションルール
 

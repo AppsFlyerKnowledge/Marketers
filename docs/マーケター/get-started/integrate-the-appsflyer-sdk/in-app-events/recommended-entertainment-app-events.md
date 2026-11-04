@@ -39,6 +39,8 @@ x-zendesk:
 * Apple TV (tvOS)
 * Amazon Fire TV
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * アプリ内イベントの実装に関するマーケティング担当者向けの <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#アプリ内イベントの設定">手順</Anchor> を必ずお読みください。
@@ -49,6 +51,8 @@ x-zendesk:
 > アプリ内イベント計測の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントガイド</Anchor>を参照してください。
 
 [![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 規定イベントで推奨される構造
 
@@ -115,6 +119,8 @@ x-zendesk:
 | trial\_method | トライアルを開始する | 新しい携帯電話で無料、通信料と組み合わせて無料、プロモーション、クーポンコード |
 | trial\_method\_identifier | トライアル方法のID | キャリア名（例: **Vodafone**）<br /><br />クーポンコード（例: **TRA123**） |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > このイベントをMeta広告のStartTrialイベントにマッピングして、収益を関連付ける場合は、af\_revenueパラメーターの代わりにaf\_priceパラメーターを使用してください。
@@ -151,6 +157,8 @@ x-zendesk:
 | expiration\_date | サブスクリプションの有効期限 | 2024-02-26 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## カスタムイベントで推奨される構造
 

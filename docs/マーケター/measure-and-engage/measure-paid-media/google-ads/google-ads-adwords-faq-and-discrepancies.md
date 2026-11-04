@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** Google Adsに関する一般的な問題や乖離のトラブルシューティングについて説明しています。
 
+<div id="google-ads-faq" />
+
 ## Google Adsに関するよくある質問
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -52,12 +54,16 @@ Google Adsでコンバージョンをインポートする必要があります�
 
 以下のチェックリストに沿って、インストールが表示されない原因を確認してください。
 
+<div id="quick-fix" />
+
 #### まず確認すること
 
 1. **AppsFlyerでGoogle Ads連携を有効化する**  
    AppsFlyerのサイドバーから、**コラボレーション > アクティブな連携**を開き、**Google Ads**を検索し、連携がアクティブであることを確認します。
 2. **Google Adsで**`first_open`**コンバージョンをインポートする**  
    Google Adsの［<Anchor target="_blank" href="https://ads.google.com/aw/conversions">コンバージョンの概要</Anchor>］ページで、`first_open`コンバージョンイベントがインポートされていることを確認します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">アプリのコンバージョンのインポート</Anchor>を参照してください。
+
+<div id="still-not-working" />
 
 #### 解決しない場合
 
@@ -83,6 +89,8 @@ Google Adsでコンバージョンをインポートする必要があります�
 
 AppsFlyerとGoogle Ads間でアプリ内イベントが正しく設定・同期されていることを確認するため、以下のチェックリストをお試しください。
 
+<div id="quick-fix-checklist" />
+
 #### 初期確認チェックリスト
 
 以下の手順で、よくある問題を迅速に解消できます。
@@ -101,10 +109,14 @@ AppsFlyerとGoogle Ads間でアプリ内イベントが正しく設定・同期�
    2. ［**コンバージョンアクションの概要**］を確認します。
    3. 対象のアプリ内イベントをインポートします。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">アプリのコンバージョンのインポート</Anchor>を参照してください。
 
+      <div id="note" />
+
       > 📘 **注意**
       >
       > イベントの実行後、コンバージョンが表示されるまで最大6時間かかる場合があります。
 
+
+<div id="still-not-working-1" />
 
 #### 解決しない場合
 
@@ -195,6 +207,8 @@ Google Adsの並行トラッキングは、ランディングページの読み�
 
 並行トラッキングの詳細は、<Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">こちら</Anchor>を参照してください。
 
+<div id="what-is-needed" />
+
 #### 必要な設定は何ですか？
 
 並行トラッキングを正しく機能させるには、最終ページURLをキャンペーンURLに含まれるURLと一致させ、<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">GoogleのValueTrackパラメータ`{lpurl}`</Anchor>に設定する必要があります。
@@ -228,6 +242,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="AndroidまたはiOSの設定を使用して、キャンペーンを設定するには？">
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > AppsFlyerでは、Google Adsで有効なすべてのアプリキャンペーンをサポートしています。
@@ -242,6 +258,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 Androidアトリビューションを可能にするには、アプリでGAID（Google AdsID）を取得しており、弊社のSDK経由でAppsFlyerに送信されていることを確認します。
 
+<div id="creating-conversion-recording-installs" />
+
 #### コンバージョン計測の設定（インストール）
 
 コンバージョンの計測方法について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">こちら</Anchor>をクリックしてください。
@@ -249,6 +267,8 @@ Androidアトリビューションを可能にするには、アプリでGAID（
 <span id="inapp_events"></span>Google AdsのAndroid設定：アプリ内イベントの送信
 
 Googleでのモバイルアプリインストールキャンペーンの成功度をさらに詳しく測定するには、AppsFlyerアカウントからGoogle Adsアカウントにアプリ内イベントを送信できます。
+
+<div id="create-a-conversion-in-app-events" />
 
 #### コンバージョンを作成（アプリ内イベント）
 
@@ -260,6 +280,8 @@ Googleでのモバイルアプリインストールキャンペーンの成功�
 
 <Accordion title="Google Ads向けのiOS設定">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads - iOSの設定：アプリキャンペーン
 
 アプリキャンペーンでは、1か所で設定するだけで、Google検索、YouTube、ディスプレイ全体にiOSアプリを宣伝できます。
@@ -268,13 +290,19 @@ Googleでのモバイルアプリインストールキャンペーンの成功�
 
 一方、**アプリキャンペーンのiOS検索広告は、Google Adsで成果を計測できます**。これは、**Google検索アプリ**上に配信された広告が対象です。
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### コンバージョン計測の設定（インストール）
 
 コンバージョンの計測方法について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">こちら</Anchor>をクリックしてください。
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google AdsのiOS設定：アプリ内イベントの送信
 
 Googleでのモバイルアプリインストールキャンペーンの成功度をさらに詳しく測定するには、AppsFlyerアカウントからGoogle Adsアカウントにアプリ内イベントを送信できます。
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### コンバージョンを作成（アプリ内イベント）
 
@@ -296,11 +324,15 @@ Google Adsは、インストールから6か月後にユーザーレベルデー
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Google Adsでの乖離
 
 Google Ads管理画面とAppsFlyer管理画面に表示される数値が異なる場合があります。
 
 この数値の乖離を最小限に抑えるため、弊社はGoogleと緊密に連携していますが、乖離の原因については以下をご確認ください：
+
+<div id="both-ios-and-android" />
 
 #### iOS・Android共通の乖離
 
@@ -320,11 +352,15 @@ Google Ads管理画面とAppsFlyer管理画面に表示される数値が異な�
 | **first\_openイベント** | Google Adsは、DMAが正しく実装されているFirebaseからイベントを取得し、その後、DMA同意済みイベントの成果を主張します。 | Google Adsは、DMAが不適切に実装されているAppsFlyerからも同じイベントを取得し、その結果、すべてのイベントが非DMA同意としてレポートされ、Googleがそれらの成果を主張しません。<ul><li>DMAが正しく実装されているかを確認するには、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-export-page#download-report">ローデータレポートをダウンロード</Anchor>し、<Anchor target="_blank" href="/marketers/ja/docs/bulletin-dma-support-in-raw-data-reports">このお知らせ</Anchor>記事に指定された項目を確認してください。</li><li>SDKでDMAを実装する方法を学ぶには、[このAppsFlyer公式デベロッパーハブ](https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance)を参照してください。</li></ul> |
 | **リターゲティングイベント** | Google Adsは、レスポンスに`ad_type=ClickToDownload`を含めて、リエンゲージメントの成果を主張する場合があります。 | AppsFlyerは、`ad_type=ClickToDownload`をリエンゲージメントではなく、UAコンバージョンイベントとしてカウントします。その結果、AppsFlyer側のリエンゲージメント数が少なくなる可能性があります。 |
 
+<div id="notes" />
+
 > 📘 **注意**
 >
 > * Google Adsではリターゲティングキャンペーンのすべてのインストールが同じ場所に表示されます。一方、AppsFlyerのオーバービューダッシュボードでは、ユーザー獲得ビューに新規インストール、リターゲティングビューにリアトリビューション、統合ビューに両方が表示されます。
 > * Google Ads管理画面とAppsFlyerのデータを比較する際は、Google Ads管理画面のデータがサードパーティの分析ツール（AppsFlyer）からインポートされたものであることを確認してください。 FirebaseまたはGoogle Playからインポートされたデータは構造が異なるため、AppsFlyerのデータと完全には比較できません。 AppsFlyerからGoogle Adsの管理画面にデータをインポートする方法については、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">こちら</Anchor>をクリックしてください。
 > * インストールイベント（Google Adsにおけるfirst\_open）を比較する場合は、Google Adsのコンバージョンレポートでインストールイベントまでドリルダウンして確認してください。 Google Adsでは、インストールだけでなく、購入やサブスクリプション登録など、すべてのコンバージョンが表示される場合があります。 そのため、すべてのコンバージョンイベントの中から、インストールイベントのみを選択して比較することが重要です。
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
+<div id="finding-the-best-ios-14-campaign-performance-metrics" />
+
 ## 最適なiOS 14以降のキャンペーンパフォーマンス指標の発見
 
 iOS 14以降、SKAdNetwork APIによるアトリビューションと <Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model">AppsFlyerによるアトリビューション</Anchor> の両方でキャンペーンのパフォーマンスを計測しています。両者はそれぞれ異なるアトリビューション方法でインストールを計測し、それぞれ異なる特性と制限があることから、両者の数値にはしばしば乖離が生じます。例えば、SKAdNetwork APIには、Appleの検索広告キャンペーンやオウンドメディア経由の数値は含まれていません。逆に、SRN（サーバー連携媒体 - Google, Facebook, Twitterなど）のAppsFlyerの指標には、ATT拒否ユーザーのインストール数値は含まれていません。さらに、SKAdNetwork APIはインストール後の最初の1～3日間のパフォーマンスを測定するのに対し、AppsFlyerはライフタイムバリュー(LTV)を測定します。
@@ -93,6 +95,8 @@ iOS 14以降、SKAdNetwork APIによるアトリビューションと <Anchor ta
 | 例 | ![mceclip1.png](https://files.readme.io/98fc80d1e995ba8ef0cce267fa12f22d48a77d7e25db4add1108144c6de7136d-4406111715217.png)<ul><li>実際のインストール数は、最も多くインストールされたフレームワークで決定されます。</li><li>eCPIは、コスト➗インストール数という計算式で算出されます。</li></ul> |
 
 </Accordion>
+
+<div id="using-side-by-side" />
 
 ## 「並列ビュー」を使用する
 

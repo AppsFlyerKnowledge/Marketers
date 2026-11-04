@@ -31,6 +31,8 @@ x-zendesk:
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyerのSmart Banners Web SDK v1は、2023年11月8日をもって非推奨となりました。 WebサイトにSmart Bannersを表示するには、v2へのアップグレードが必要です。<Anchor target="_blank" href="/marketers/ja/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">詳細はこちら。</Anchor>
@@ -87,6 +89,8 @@ Smart Bannersでは、次のことができます。
 
 ---
 
+<div id="example" />
+
 > 📄 **例**
 >
 > マークは、好調なフードデリバリーサービス「Feed Me」のマーケターです。
@@ -99,9 +103,13 @@ Smart Bannersでは、次のことができます。
 >
 > AppsFlyerは、**クリックやインストールを、マークが指定したメディアソースとキャンペーンに紐づけます**。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > AppsFlyerのSmart Bannersと、iOSのSafariのスマートアプリバナーは、どちらか一方だけを使用してください。併用すると、モバイルWebサイトでの表示の問題や、アトリビューションの不一致が発生する可能性があります。
+
+<div id="setup" />
 
 ## 設定
 
@@ -113,6 +121,8 @@ Smart Bannersでは、次のことができます。
 <div id="1-website-workplace-setup" />
 
 <Accordion title="1. Webサイトのワークスペースの設定">
+
+<div id="prepare-your-mobile-site-to-display-smart-banners-for-the-first-time" />
 
 #### 初めてSmart Bannersを表示するためのモバイルサイトの準備
 
@@ -126,6 +136,8 @@ Smart Bannersでは、次のことができます。
    * 他のプラットフォームでの実装や、要件に合わせたコードの変更（パラメータの追加、ディープリンク、バナーの非表示、PBAとSmart Bannersの連携など）については、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Smart Banners｜Webサイトへのコード実装（開発者向け）</Anchor>を参照してください。
 7. ［任意］**Webキー**をコピーします。（このキーは、コードスニペットにも含まれています。）
 8. <strong>［続行］</strong>をクリックします。
+
+<div id="to-create-website-workplaces-after-the-first-time" />
 
 #### 2つ目以降のWebサイトのワークスペースを作成するには
 
@@ -187,6 +199,8 @@ Smart Bannersでは、次のことができます。
 9. ［推奨］Smart Banner経由のすべてのインストールを特定のチャネルに紐づけるには、デフォルトのアトリビューションパラメータで<strong>［チャネル名］</strong>を設定します。これにより、**コホートレポート**、**Overview dashboard**、**リテンションレポート**などで、複数のメディアソースの情報を同じチャネルとして集計できます。
 10. <span id="2-banner-group-setup-step10"></span>［任意］バナーをクリックしたユーザーのリエンゲージメントをバナーグループで記録する場合は、<strong>［リターゲティング］</strong>を有効にします。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">リターゲティングアトリビューションガイド</Anchor>を参照してください。
 
+    <div id="important-1" />
+
     > 🚧 **重要**
     >
     > リターゲティングを機能させるには、次の設定も必要です。
@@ -228,6 +242,8 @@ Smart Bannersでは、次のことができます。
 1. <strong>［バナーグループを作成］</strong>をクリックします。
 2. ［任意］バナーグループを再編集するには、<strong>［ターゲティングと表示動作］</strong>にカーソルを合わせ、<strong>［編集］</strong>をクリックします。
 
+<div id="example-1" />
+
 > 📄 **例**
 >
 > マークは、フードデリバリーサービス「Feed Me」のマーケターです。アプリで実施するプラムのセールに向けて、キャンペーンを作成することにしました。キャンペーンには、SMSの一斉配信に加え、アドネットワークとGoogleを利用します。
@@ -249,6 +265,8 @@ Smart Bannersでは、次のことができます。
 > * Feed Meアプリのダウンロード先へ移動し、ダウンロードしてインストールします。
 > * アプリを起動すると、プラムのセールへ誘導されます。
 > * Feed Meのモバイルサイトへの訪問につながった、正しいメディアソースに成果が紐づきます。
+
+<div id="targeting--behavior" />
 
 #### ターゲティングと表示動作
 
@@ -301,6 +319,8 @@ Smart Bannersでは、次のことができます。
 5. 新しいクリエイティブの作成が完了し、保存すると、バナーのステータスが有効になります。<strong>［ステータス］</strong>のトグルで、<strong>［有効］</strong>と<strong>［一時停止］</strong>を切り替えます。
 6. <strong>［すべて保存］</strong>をクリックして変更を保存します。保存してバナーの設定ページを閉じる場合は、<strong>［すべて保存して閉じる］</strong>をクリックします。
 
+<div id="example-2" />
+
 > 📄 **例**
 >
 > 活用のヒントは、<Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">Smart Bannersのクイックリファレンス</Anchor>を参照してください。
@@ -323,6 +343,8 @@ Smart Bannersでは、次のことができます。
 4. <strong>［クリエイティブを編集］</strong>をクリックすると設定に戻り、<strong>［完了］</strong>をクリックするとクリエイティブが保存されます。
 
 </Accordion>
+
+<div id="view-banner-performance" />
 
 ## バナーのパフォーマンスの確認
 
@@ -376,6 +398,8 @@ Smart Bannersでは、次のことができます。
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 補足情報
 
 <div id="banner-group-display-logic" />
@@ -404,6 +428,8 @@ AppsFlyerは、Smart Bannerを表示するかどうか、また、どのバナ�
 パフォーマンスダッシュボードで成果を比較し、バナーのA/Bテストを行えます。アトリビューションに関するデータをさらに取得するには、クリエイティブまたはバナーグループごとに固有の値を設定した`af_adset`、`af_ad`などのパラメータを追加することをおすすめします。ただし、`pid`、`c`、`channel`は除きます。これらのパラメータを使い、AppsFlyerのダッシュボードやレポートでバナーグループごとの成果を比較できます。
 
 </Accordion>
+
+<div id="faq" />
 
 ## よくある質問
 
@@ -499,6 +525,8 @@ AppsFlyerは、障害のある方を含むすべてのユーザーが、Smart Ba
 いいえ。 Smart Bannerを削除しても、アトリビューションデータは削除されません。
 
 </Accordion>
+
+<div id="troubleshooting--traits-and-limitations" />
 
 ## トラブルシューティング・特性・制限事項
 

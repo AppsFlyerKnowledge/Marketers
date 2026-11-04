@@ -23,6 +23,8 @@ x-zendesk:
 
 ![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
 
+<div id="about-creative-optimization" />
+
 ## Creative Optimizationについて
 
 Creative Optimizationは、キャンペーンを横断してクリエイティブのパフォーマンスを計測できる統合ツールです。すべてのメディアチャネルのクリエイティブアセットを、1つのプラットフォームまたは社内のBIシステムに集約できます。強力なAIアルゴリズムを使用して、異なるキャンペーンやメディアソースで使用されているクリエイティブを分析・集計・マッチングします。命名規則やメタデータに関係なく、同一のクリエイティブをダッシュボード上で1つにまとめて表示します。さまざまなディメンション、指標、KPIでパフォーマンスを分析できます。
@@ -35,6 +37,8 @@ Creative Optimizationは、キャンペーンを横断してクリエイティ�
 * キャンペーンとそのクリエイティブに関する重要なインサイトを得て、最適化に活用できます。
 
 以下の導入手順に従って、Creative Optimizationの利用を開始しましょう。
+
+<div id="creative-optimization-onboarding" />
 
 ## Creative Optimizationの導入
 

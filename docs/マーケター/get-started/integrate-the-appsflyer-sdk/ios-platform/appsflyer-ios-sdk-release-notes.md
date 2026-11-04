@@ -26,9 +26,13 @@ x-zendesk:
 
 <strong>iOSとAndroidの旧バージョンのSDKは、6か月ごとの定期的なサイクルでサポートが終了します。</strong>事前に終了予定を知らせることで、チームが計画的に対応し、アプリのすべての機能を支障なく維持できるようにするためです。最新のSDKに更新すると、新機能、安定性の向上、継続的なサポートを利用できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > 円滑に移行するため、アプリの開発者はサポート終了日までに最新バージョンのSDKへ更新することを推奨します。
+
+<div id="end-of-support-vs-deprecated" />
 
 ## サポート終了と非推奨の違い
 
@@ -36,6 +40,8 @@ AppsFlyerでは、サポートの範囲とデータ計測への影響を明確�
 
 * **非推奨のバージョン：** 重大な不具合など、既知の問題があるため、利用を推奨しないSDKバージョンです。 AppsFlyerへのデータ送信は引き続き可能ですが、継続利用は推奨しません。サポート対象のバージョンへの更新を強く推奨します。
 * **サポート終了のバージョン：** すべてのプラットフォームで計測が完全に停止するSDKバージョンです。 AndroidとiOSのどちらでも、インストール、セッション、アプリ内イベントは計測されません。 AppsFlyerが個別に例外として指定したものを除き、これらのバージョンからのすべてのトラフィックには、ステータスコード400が返されます。SDKは通常どおりAPIリクエストを送信しようとしますが、AppsFlyerサーバーが拒否するため、データは処理されません。
+
+<div id="ios-sdk-release-notes" />
 
 ## iOS SDKのリリースノート
 
@@ -73,6 +79,8 @@ AppsFlyerでは、サポートの範囲とデータ計測への影響を明確�
 | 6.13.2 | 2024-03-26 | <ul><li>Xcode 15.3でSPMを使用するアプリをリリースできない問題を修正しました。詳しくは、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes#version-6132">開発者向けのリリースノート</Anchor>を参照してください。</li></ul> |
 | 6.13.1 | 2024-03-05 | <ul><li>CMPを使った同意取得の流れ（DMA）で、GDPRの対象外のユーザーの同意データを送信する際に発生する問題を修正しました。</li></ul> |
 | 6.13.0   <br />非推奨 | 2024-02-08 | <ul><li>Googleの新しいEUユーザー同意ポリシーに対応しました。</li></ul> |
+
+<div id="unsupported-sdk-versions" />
 
 ## サポート終了のSDKバージョン
 
@@ -133,6 +141,8 @@ AppsFlyerでは、サポートの範囲とデータ計測への影響を明確�
 | 6.0.2   <br />サポート終了： 2024-08-31 | 2020-08-27 | <ul><li>API名の変更：<br />deviceLoggingDisabled --> anonymizeUser</li><li>iOS 14でIDFAを取得するには、AppTrackingTransparency（ATT）の確認画面が必要です。</li><li>IDFVを使ったクロスプロモーションのアトリビューションに対応しました。</li></ul> |
 | 6.0.1 ベータ版  <br />サポート終了： 2024-08-31 | 2020-08-06 | <ul><li>ユーザーのプライバシーを保護しながら広告主がキャンペーンの成果を計測できるよう、<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKAdNetworkのアトリビューション</Anchor>に対応しました。</li></ul> |
 | 6.0.0 ベータ版  <br />サポート終了： 2024-08-31 | 2020-08-04 | <ul><li>デバッグ機能を拡充しました。</li><li>SDKの機能とAPIに大幅な変更を加えました。[詳しくはこちら](/docs/appsflyer-ios-sdk-release-notes#ios-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

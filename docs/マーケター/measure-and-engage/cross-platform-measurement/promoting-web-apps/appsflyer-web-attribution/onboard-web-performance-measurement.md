@@ -24,19 +24,27 @@ x-zendesk:
 ---
 > **概要：** このガイドの導入手順に従って、Web Performance Measurementを設定します。設定が完了すると、Webサイトへの訪問やWebイベントをマーケティングソースに紐づけて計測およびアトリビューションできるようになります。これにより、Webサイト上で価値ある成果につながっている要因を把握し、クロスプラットフォーム計測に活用できます。
 
+<div id="about-web-performance-measurement" />
+
 ## Web Performance Measurementについて
 
 Web Performance Measurementを使用すると、Webサイト上で発生した訪問やWebイベントと、それらをもたらしたマーケティングソースを紐づけることができます。つまり、どのメディアソースやキャンペーンがユーザーをWebサイトへ誘導し、その後の行動に影響を与えているかを把握できるため、パフォーマンスを計測し、ROIを最適化できます。
 
+<div id="create-a-web-app-in-appsflyer" />
+
 ### AppsFlyerでWebアプリを作成する
 
 <Embed title="Web Performance Measurementの実装" typeOfEmbed="youtube" url="https://www.youtube.com/embed/MOn_UsirYCU" providerUrl="https://www.youtube.com" />
+
+<div id="set-up-network-integrations-postbacks-and-cost-measurement" />
 
 ### アドネットワーク連携、ポストバック、コスト計測を設定する
 
 <Embed title="Web Performance Measurementの実装" typeOfEmbed="youtube" url="https://www.youtube.com/embed/-sYIv3YQEwo" providerUrl="https://www.youtube.com" />
 
 AppsFlyerでWebサイトへの訪問とWebイベントの計測を開始するには、以下の「Web Performance Measurement設定チェックリスト」に記載されている導入手順に従ってください。
+
+<div id="web-performance-measurement-setup-checklist" />
 
 ## Web Performance Measurement設定チェックリスト
 

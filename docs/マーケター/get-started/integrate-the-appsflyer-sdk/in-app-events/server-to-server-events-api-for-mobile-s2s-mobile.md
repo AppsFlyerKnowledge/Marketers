@@ -31,6 +31,8 @@ x-zendesk:
 
 [![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## サーバー間イベントAPI for モバイル
 
 iOSアプリの場合、iOS 14以降では、os (オペレーティングシステム) のパラメーターを送信する必要があります。
@@ -44,6 +46,8 @@ AppsFlyerはS2Sイベントに以下の情報を設定します。
 
 API経由でイベントを送信するには、開発者に<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">サーバー間イベントAPIの手順</Anchor>に従うよう指示してください。
 
+<div id="populating-parameters" />
+
 ## パラメーターの設定
 
 <div id="difference-between-organic-and-nonorganic" />
@@ -53,6 +57,8 @@ API経由でイベントを送信するには、開発者に<Anchor target="_bla
 AppsFlyerがS2Sアプリ内イベントを処理する際、アトリビューションフィールドはAppsFlyer IDを用いて入力され、アプリ内イベントより前の関連するインストールイベントを識別します。
 
 つまり、AppsFlyerが非オーガニックS2Sアプリ内イベントに関連付けるデータの一部は、オーガニックS2Sアプリ内イベントには関連付けられないということです。
+
+<div id="note" />
 
 > 📄 **例**
 >
@@ -163,9 +169,13 @@ S2SイベントがAppsFlyerに一括で到着すると、`eventTime`プロパテ
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/incrementality-for-remarketing-overview">Incrementalityで計測されるには</Anchor>、S2Sイベントのペイロードに広告IDが含まれている必要があります（iOSの場合はIDFA、Android の場合はGAID）。
+
+<div id="increasing-the-volume-of-data-transactions" />
 
 ## データトランザクション量を増加させる方法
 
@@ -178,6 +188,8 @@ S2SイベントがAppsFlyerに一括で到着すると、`eventTime`プロパテ
   * 00:03:00 - 16K TPS に増加
   * 00:04:00 - 18K TPS に増加
 * エラーを受信した場合に使用するリトライメカニズムを実装します。
+
+<div id="troubleshooting" />
 
 ## トラブルシューティング
 

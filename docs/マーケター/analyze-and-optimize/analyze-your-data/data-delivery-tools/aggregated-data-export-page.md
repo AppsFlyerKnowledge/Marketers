@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：概要：計測日とメディアソースで絞り込んだ生涯価値（LTV）集計レポートをダウンロードします。**
 
+<div id="aggregate-data-reports" />
+
 ## 集計データレポート
 
 <Anchor target="_blank" href="/marketers/ja/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">ユーザー獲得</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/aggregated-and-analytics-reporting-overview#retargeting">リターゲティング</Anchor>レポートには、次のような特性があります。
@@ -37,6 +39,8 @@ x-zendesk:
 * レポートには、最大20万行が含まれます。
 * <Anchor target="_blank" href="/marketers/ja/docs/report-generation-quotas-rate-limitations">レート制限</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### 集計データレポートのダウンロード
 
 **レポートをダウンロードする方法：**
@@ -45,6 +49,8 @@ x-zendesk:
 2. [オプション] メディアソースを選択します。
 3. アトリビューションイベントの日付範囲を選択します。
 4. レポートを選択して、**ダウンロード**をクリックします。
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

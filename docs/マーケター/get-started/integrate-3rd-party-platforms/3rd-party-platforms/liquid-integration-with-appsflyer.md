@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるLiquidは、IT部門に依頼することなく、キャンペーンや業務プロセスを自動化できます。高度なルールエンジンが、ユーザー行動と詳細な分析結果に基づいて処理を実行します。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-liquid" />
 
 ## Liquidの設定
 
@@ -51,10 +55,14 @@ x-zendesk:
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めてこの画面を開いたとき**は、下にあるトグルをオンにする必要があります。［***パートナーを有効化***］をオンにすると、［連携］タブのパラメータを設定できるようになります。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -64,6 +72,8 @@ LiquidとAppsFlyerの接続には、固有のAPIトークンを使用します�
 
 [![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
 
+<div id="obtaining-the-api-token" />
+
 ### APIトークンの取得
 
 Liquid管理画面にログインすると、APIトークンを確認できます。
@@ -71,6 +81,8 @@ Liquid管理画面にログインすると、APIトークンを確認できま�
 * **Settings**アイコンをクリックします。
 * 本番環境のAPIトークンをコピーします。
 * Liquidから取得したAPP\_TOKENを入力します。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 

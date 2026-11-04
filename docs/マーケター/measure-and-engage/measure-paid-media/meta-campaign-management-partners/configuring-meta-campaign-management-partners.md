@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** Kenshoo、Bidalgo、SmartlyなどMetaキャンペーン管理パートナー(旧称:Facebookマーケティングパートナー) を使用したMeta広告キャンペーンを最適化します。設定すると、AppsFlyerはポストバックを送信します。
 
+<div id="configure-meta-campaign-management-partners" />
+
 ## 構成 Metaキャンペーン管理パートナー
 
 **前提条件:** **連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡して</Anchor>アカウントを開設してください。**
@@ -40,6 +42,8 @@ x-zendesk:
 4. **連携**タブで、連携アプリを選択し、**パートナーの有効化**をオンにします。  
    **注意：** トグルは、パートナーと作業している間、オン<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">（有効）</Anchor>にしておく必要があります。
 5. 以下の手順に従い、各タブの設定を完了してください。
+
+<div id="in-app-event-postback-setup" />
 
 ## アプリ内イベントのポストバック設定
 
@@ -66,6 +70,8 @@ x-zendesk:
 3. [オプション] ![conditional-iae-postbacks-icon.png](https://files.readme.io/5345c5ebe95b3f1a0d0858b88ce29f9965178ce750df86c04cb131a93d006a5e-14050481317393.png) をクリックして特定のアプリ内イベントをパートナーに送信するための<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#条件付きアプリ内イベントポストバック">条件を設定</Anchor> します。
 4. [オプション] **イベントを追加** をクリックして、別の SDK またはサーバー間イベントをリストに追加します。
 5. **連携を保存** をクリックします。
+
+<div id="important-notes" />
 
 > 📘 **重要！**
 >

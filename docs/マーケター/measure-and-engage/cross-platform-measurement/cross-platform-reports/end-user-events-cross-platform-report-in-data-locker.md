@@ -25,11 +25,15 @@ x-zendesk:
 
 ユーザーベースのアトリビューションフローおよび設定の詳細については、<Anchor target="_blank" href="/marketers/ja/docs/beta-user-based-cross-platform-attribution">ユーザーベースのクロスプラットフォームアトリビューション</Anchor>を参照してください。
 
+<div id="report-fields" />
+
 ## レポート項目
 
 レポートに含まれる項目を確認するには、[レポートサンプルをダウンロードしてください。](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv)
 
 レポートサンプルには、すべてのレポート項目とその値が含まれています。各項目の定義については、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-field-dictionary">項目一覧</Anchor>を参照してください。
+
+<div id="report-data-freshness" />
 
 ## レポートデータの更新頻度
 
@@ -40,9 +44,13 @@ x-zendesk:
 * イベントは、該当する時間単位のバケットに割り当てられます。
   * 例：3:00 AM〜4:00 AM にデータベースへ取り込まれたイベントは、3:00 AM のバケットに表示されます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > イベントが実際に発生してからデータベースに取り込まれるまでには、通常わずかな遅延があります。本レポートでは、正確で一貫した時間単位のグルーピングを行うため、データベースへの取り込み時刻を使用しています。
+
+<div id="example-of-the-800-am-batch-run" />
 
 ### 8:00 AM バッチの例
 
@@ -58,11 +66,15 @@ x-zendesk:
 * バッチ実行直前の 1 時間分のイベントは、関連する CUID を付与するための十分な時間を確保する目的で処理されません。上記例では、8:00 AM のバッチは 3:00〜7:00 に取り込まれたイベントを処理し、7:00〜8:00 に取り込まれたイベントは処理対象外となります。
 * バッチ実行後、内部処理により 1 時間後にレポートが利用可能となります。上記例では、8:00 AM のバッチは 9:00 AM に利用可能です。
 
+<div id="how-to-subscribe-to-the-report" />
+
 ## レポートの購読方法
 
 1. AppsFlyer管理画面 左メニュー **エクスポート** > **Data Locker**へ移動します。
 2. **Data Locker のコンテンツページ**で **アドバンスレポート**のセクションまでスクロールします。
 3. **クロスプラットフォーム・エンドユーザーイベント**を選択します。
+
+<div id="how-to-access-the-report-data-in-your-cloud-bucket" />
 
 ## クラウドバケットでのレポートデータの参照方法
 
@@ -72,9 +84,13 @@ x-zendesk:
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
+<div id="dl-report-folder-hierarchy" />
+
 ### レポートのフォルダ階層
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+
+<div id="bi-developer-considerations" />
 
 ## データ分析担当者向けの考慮事項
 
@@ -82,6 +98,8 @@ x-zendesk:
 * 広告収益イベントは、現時点では含まれていません。
 * すべてのアプリデータは 1 つのファイルにまとめて提供されます。App IDの項目を使用してアプリ単位に分割するか、Data Locker でアプリ単位の分割設定を行ってください。統合された分割方法の使用を推奨します。
 * コスト、クリック、インプレッションなどのアトリビューションよりも前のデータは、Cost ETL レポートから抽出してください。
+
+<div id="query-examples" />
 
 ### クエリ例
 

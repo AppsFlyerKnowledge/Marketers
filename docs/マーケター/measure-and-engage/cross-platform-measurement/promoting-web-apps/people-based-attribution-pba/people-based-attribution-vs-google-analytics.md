@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **概要：** 概要 ：ピープルベースドアトリビューション（PBA）とGoogleアナリティクスの違いについて
 
+<div id="pba-compared-to-google-analytics" />
+
 ## Google Analyticsと比較した場合のPBA
 
 PBAはこれに追加した価値を提供しています。
 
 * PBAは、アトリビューション計測に焦点を当てた、独立した、偏りのないツールです。PBAはユーザーをウェブサイトに導いてくれるメディアソースやキャンペーンにコンバージョンや収益の成果を紐づけます。
 * Google Analyticsはウェブ分析に重点をおいています。ユーザー行動に関連するデータを収集、分析、集計します。Google Analyticsを使用すると、例えば、ユーザーの行動、ファネル、ウェブイベントを分析することができます。
+
+<div id="benefits-of-pba-over-google-analytics" />
 
 ### Googleアナリティクスと比較時のPBAの利点
 
@@ -41,9 +45,13 @@ Googleアナリティクスと比較した場合のPBAの利点は次のとお�
   * Web-to-app計測。この指標は、ウェブサイトからアプリに移動したユーザー数を示します。また、どのメディアソースやキャンペーンが Web サイトにユーザーを誘導し、その後アプリをインストールしたかがわかります。
   * <Anchor target="_blank" href="/marketers/ja/docs/pba-raw-data-reports">コンバージョンやイベントのローデータ</Anchor>を活用して、独自のBIツールにデータを取り込むことができます。これにより、柔軟に分析を実行することが可能になります。
 
+<div id="reasons-for-differences" />
+
 ### 乖離の理由
 
 PBAとGoogle Analyticsを比較した場合の乖離については、以下をご参照ください。
+
+<div id="sdk-implementation" />
 
 #### SDKの実装例
 
@@ -53,9 +61,13 @@ PBAとGoogle Analyticsの実装方法は、データ収集に影響を与える�
 
 <Accordion title="Google Analyticsの方が、セッションと訪問者が多い">
 
+<div id="cause" />
+
 #### 原因
 
 Google Analyticsが Web SDK よりも前に読み込まれた場合、離脱したユーザー、またはウェブサイトに短期間滞在したユーザーは PBA ではカウントされません。これにより、セッションと訪問者のデータに乖離が生じます。
+
+<div id="solution" />
 
 #### 解決策
 
@@ -69,15 +81,21 @@ Web SDK は、できるだけ早期に読み込まれるように配置するこ
 
 <Accordion title="Google Analyticsの方がセッション、キャンペーン、コンバージョン数が多い">
 
+<div id="cause-1" />
+
 #### 原因
 
 AppsFlyerのPBA Web SDK は、特定のページにのみ存在します。Googleアナリティクスはすべてのページに存在します。結果として、Google Analyticsはウェブサイト全体のデータ収集をするのに対し、Web SDKは特定のページのデータのみを収集します。これにより、セッション、アクセスユーザー、キャンペーン、コンバージョンに乖離が生じます。
+
+<div id="solution-1" />
 
 #### 解決策
 
 Web SDKをウェブサイトのすべてのページに実装してください。
 
 </Accordion>
+
+<div id="dashboard-settings" />
 
 ### 管理画面の設定
 
@@ -87,15 +105,21 @@ Web SDKをウェブサイトのすべてのページに実装してください�
 
 <Accordion title="タイムゾーンの設定：データの乖離">
 
+<div id="cause-2" />
+
 #### 原因
 
 Google Analyticsのタイムゾーン設定が PBA ダッシュボードの設定と異なる場合は、乖離が発生する可能性があります。
+
+<div id="example" />
 
 > 📄 **例**
 >
 > これは、アプリの管理画面がGAの管理画面より1日進んでいることを意味します。
 >
 > すなわち、3月2日のAppsFlyer管理画面に表示されるデータは、GA管理画面で3月3日を選択しないと表示されません。
+
+<div id="solution-2" />
 
 #### 解決策
 
@@ -107,15 +131,21 @@ AppsFlyerとGoogleアナリティクスの両方でタイムゾーン設定が�
 
 <Accordion title="データフィルタ：データの乖離">
 
+<div id="issue" />
+
 #### 問題
 
 AppsFlyerとGoogle Analyticsの両方とも日付、アトリビューションされたメディアソース、キャンペーン、イベントに応じてデータをフィルタできます。AppsFlyerとGoogle Analyticsでの異なるフィルタ設定は、同じデータに対して異なる見え方を生成することになります。
+
+<div id="solution-3" />
 
 #### 解決策
 
 2 つの管理画面のデータを比較する場合は、フィルターが適用されていないことを確認してください。
 
 </Accordion>
+
+<div id="conversions-and-events" />
 
 ### コンバージョンとイベント
 
@@ -125,9 +155,13 @@ AppsFlyerとGoogle Analyticsの両方とも日付、アトリビューション�
 
 <Accordion title="ルックバック期間：コンバージョン計測における乖離">
 
+<div id="cause-3" />
+
 #### 原因
 
 ルックバック期間が、Google AnalyticsとPBAで異なる場合、計測データに乖離が生じる可能性があります。
+
+<div id="solution-4" />
 
 #### 解決策
 
@@ -139,9 +173,13 @@ PBAのルックバック期間は常に30日です。Google Analyticsにおい�
 
 <Accordion title="計測モデル：コンバージョン計測における乖離">
 
+<div id="cause-4" />
+
 #### 原因
 
 PBAとGoogle Analyticsで異なる計測モデルを設定している場合は、計測データに乖離が生じる可能性があります。
+
+<div id="solution-5" />
 
 #### 解決策
 
@@ -153,9 +191,13 @@ Google Analyticsでは<Anchor target="_blank" href="https://support.google.com/a
 
 <Accordion title="イベントの送信">
 
+<div id="issue-1" />
+
 #### 問題
 
 Google Analytics SDKとWebSDKの両方とも、イベントを送信することができます。Google Analyticsへのイベント送信ロジックを実装し、別にPBAへのイベント送信ロジックを実装すると、乖離が発生する可能性があります。
+
+<div id="solution-6" />
 
 #### 解決策
 
@@ -174,13 +216,19 @@ Web SDK を使用してイベントを送信する方法については、 <Anch
 
 PBAとGoogle Analyticsのいづれも、ユーザーを認識するためにクッキーを使用しています。
 
+<div id="cookie-settings-in-google-analytics" />
+
 #### Google Analyticsのクッキー設定
 
 Google Analytics SDKが自動的にクッキーの設定を処理できるようにすることをお勧めしていますが、 <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">クッキー設定を変更</Anchor> することは可能です。クッキー設定のいかなる変更も、乖離の生じる要因となります。
 
+<div id="setting-cookie-expiration" />
+
 #### クッキーの有効期限の設定
 
 Google Analyticsでは、クッキーの有効期限を設定できます。Google Analyticsのクッキー有効期限をWeb SDKの有効期限よりも前に設定した場合は、乖離が発生する可能性がございます。
+
+<div id="example-1" />
 
 > 📄 **例**
 >
@@ -194,9 +242,13 @@ Google Analyticsでは、クッキーの有効期限を設定できます。Goog
 >
 > つまり、Google Analyticsのコンバージョン率がPBAのコンバージョン率よりも低くなります。
 
+<div id="setting-cookie-subdomain" />
+
 #### クッキーのサブドメインの設定
 
 Google Analyticsではサブドメインにクッキーを設定できますが、PBAではトップレベルドメインにのみクッキーを設定します。
+
+<div id="example-2" />
 
 > 📄 **例**
 >

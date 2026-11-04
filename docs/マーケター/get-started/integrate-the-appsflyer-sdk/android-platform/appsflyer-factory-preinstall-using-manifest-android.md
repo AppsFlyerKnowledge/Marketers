@@ -32,7 +32,11 @@ x-zendesk:
 
 ![pre-install-intro-breakdown.png](https://files.readme.io/6f7476f414d3d7ff9428bbf70617f6ac71ffbc27b4c934bcbb6e0c33f870a923-52396539342865.png)
 
+<div id="introduction" />
+
 ## はじめに
+
+<div id="what-is-a-pre-install-campaign" />
 
 ### プリインストールキャンペーンとは
 
@@ -42,9 +46,13 @@ x-zendesk:
 
 アプリの所有者に代わってさまざまなメーカーと連携する、サードパーティのメディアソースと協力して実施することもできます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > AppsFlyerは、アプリが初めて起動された時点でインストールをカウントします。そのため、表示されるプリインストール数は、アプリを起動したユーザー数です。アプリがプリインストールされた端末の台数ではありません。
+
+<div id="benefits-of-recording-installs-from-pre-install-campaigns" />
 
 ### プリインストールキャンペーンによるインストールを記録するメリット
 
@@ -54,17 +62,25 @@ x-zendesk:
 * 各メーカーが獲得したアプリユーザー数
 * 各ユーザーのLTV。これにより、価値の高いユーザーを獲得しているメーカーを判断できます。
 
+<div id="how-can-i-measure-pre-install-campaigns" />
+
 ### プリインストールキャンペーンの計測方法
 
 プリインストールキャンペーンの計測には、4つの方式があります。詳しくは、この記事の[設定セクション](/docs/appsflyer-factory-preinstall-using-manifest-android#設定)を参照してください。
+
+<div id="viewing-pre-install-data" />
 
 ### プリインストールデータの確認
 
 プリインストールは、他のインストールイベントと同様に、アトリビューションされたメディアソースのデータとしてAppsFlyerダッシュボードに表示されます。ただし、キャンペーン名は常に**Pre-install**になります。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > [SDK API方式](/docs/appsflyer-factory-preinstall-using-manifest-android#sdk-api-method)では、プリインストールのキャンペーン名を個別に指定できます。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -72,6 +88,8 @@ x-zendesk:
 >
 > * 工場出荷前のプリインストールキャンペーンのMatch\_typeは、ローデータレポートで`preload_conf`と表示されます。
 > * AppsFlyerのダッシュボードには、プリロードにつながったアドネットワークと、アプリの初回起動に貢献したアドネットワークが表示されます。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model#preload-campaigns">プリロードキャンペーン</Anchor>を参照してください。
+
+<div id="setup" />
 
 ## 設定
 
@@ -94,6 +112,8 @@ SDKバージョン`V4.0+`を使用してください。
 
 システムプロパティ方式では、開発者とメーカーの両方で作業が必要です。
 
+<div id="developer" />
+
 #### 開発者
 
 メーカーまたはメディアソースにAPKを提供します。通常のAPKを提供してください。この方式では、別のAPKを用意する必要はありません。
@@ -114,6 +134,8 @@ SDKバージョン`V4.0+`を使用してください。
 com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
 ```
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > このオプションを使用する場合は、次の動作に注意してください。
@@ -125,11 +147,15 @@ com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some
 
 pre\_install.appsflyerファイルを作成したら、APKと一緒にメディアソースまたはメーカーに渡します。
 
+<div id="manufacturer" />
+
 #### メーカー
 
 メーカーは、任意のパスに***pre\_install.appsflyer***ファイルを配置します。 **pre\_install.appsflyer**ファイルのアクセス権限を744に設定してください。
 
 次に、メーカーはシステムプロパティファイルを編集し、***pre\_install.appsflyer***ファイルを参照するように設定します。この設定には、システムプロパティにキーと値のペアを追加する必要があります。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -154,11 +180,15 @@ adb shell chmod 744 /system/build.prop
 adb reboot
 ```
 
+<div id="advantages" />
+
 #### メリット
 
 メディアソースやメーカーごとに、異なるAPKを管理する必要がありません。 Google Playで配信するアプリを変更してパスを追加する必要がありません。メーカーは任意のパスを使用できます。また、異なる端末で動作する複数のプリインストールアプリ間に依存関係はありません。
 
 この方式では、プリインストールキャンペーンとメディアソースへのアトリビューションが保証されます。ユーザーが初回起動前にアプリを更新した場合や、広告をクリックした後にアプリをインストールした場合でも、プリインストールのメディアソースまたはメーカーにアトリビューションされます。
+
+<div id="disadvantages" />
 
 #### デメリット
 
@@ -176,12 +206,16 @@ SDK API方式では、ネイティブのAPIを使用して、プリインスト�
 
 `setPreinstallAttribution(String mediaSource, String campaign, String siteId)`
 
+<div id="when-working-with-a-media-source" />
+
 #### メディアソースと連携する場合
 
 ```java
 AppsFlyerLib.getInstance().setPreinstallAttribution("MEDIA_SOURCE_NAME", "CAMPAIGN_NAME", "123");
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
+
+<div id="when-working-with-a-manufacturer" />
 
 #### メーカーと連携する場合
 
@@ -190,17 +224,23 @@ AppsFlyerLib.getInstance().setPreinstallAttribution(android.os.Build.MANUFACTURE
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * メディアソースのパラメータは必須です。
 > * `android.os.Build.MANUFACTURER`プロパティには、OSで設定されたメーカー名が格納されています。このプロパティを使用しても、同じメーカーのすべての端末で、メーカー名が同じ形式で取得できるとは限りません。このプロパティに、想定どおりのメーカー名が格納されていることを確認してください。
 > * `campaign`と`siteId`パラメータの値は任意ですが、`setPreinstallAttribution`メソッドにはこれらの引数を渡す必要があります。 `campaign`と`siteId`を指定しない場合は、両方にnullを渡してください。
 
+<div id="advantages-1" />
+
 #### メリット
 
 SDK API方式では、メーカー名をプログラムで取得できます。メーカーを問わず、SDKのメソッドで端末から直接メーカー名を取得できます。そのため、連携するすべてのメーカーに対して、1つのAPKを管理すれば対応できます。
 
 `setPreinstallAttribution`メソッドでは、キャンペーン名を指定できます。すべてを「Pre-install」キャンペーンとして扱う代わりに、メーカーやメディアソースごとにキャンペーンを分けることができます。
+
+<div id="disadvantages-1" />
 
 #### デメリット
 
@@ -212,6 +252,8 @@ SDK API方式では、メーカー名をプログラムで取得できます。�
 
 * 新しい端末のユーザーが、プリインストールされたアプリを一度も起動せずにGoogle Playから直接更新した場合、インストールはオーガニックとみなされます。
 * 新しい端末のユーザーが、広告をクリックした後にGoogle Playからアプリを更新した場合、インストールは広告を配信したメディアソースにアトリビューションされます。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
@@ -241,9 +283,13 @@ applicationの閉じタグの前に、メタデータタグを追加します。
 
 アプリの初回起動時に、AppsFlyer SDKがマニフェストファイルのメタデータタグを検出し、その内容に応じてインストールをアトリビューションします。
 
+<div id="advantages-2" />
+
 #### メリット
 
 マニフェストファイルに媒体名を指定する方式は、プリインストールキャンペーンを簡単にアトリビューションできる方式です。マニフェストに追加するタグは1つだけです。また、キャンペーンを計測するために、メディアソースやメーカー側で作業を行う必要はありません。
+
+<div id="disadvantages-2" />
 
 #### デメリット
 
@@ -260,17 +306,23 @@ applicationの閉じタグの前に、メタデータタグを追加します。
 
 <Accordion title="設定ファイルのパスを指定する方式">
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > SDKバージョン4.5.0以降でサポートされています。
 
 この方式では、開発者とメーカーの両方で作業が必要です。
 
+<div id="developer-1" />
+
 #### 開発者
 
 この方式では、メディアソース名またはメーカー名が記載されたファイルのパスを指定できます。次の3つの手順を行ってください。
 
 1. キーと値のペアを記載したファイルを作成します。ファイル名は***pre\_install.appsflyer***にします。ファイルに、`<PACKAGE_NAME>`=`<MEDIA_SOURCE>`の形式でキーと値のペアを指定します。例：`com.appsflyer.sampleapp=my_media_source`。  
+
+   <div id="passing-additional-pre-install-parameters" />
 
    #### プリインストール用の追加パラメータの指定
 
@@ -279,6 +331,8 @@ applicationの閉じタグの前に、メタデータタグを追加します。
    ```json
    com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
    ```
+
+   <div id="important-2" />
 
    > 🚧 **重要！**
    >
@@ -298,11 +352,15 @@ applicationの閉じタグの前に、メタデータタグを追加します。
    <0/>
    ```
 
+<div id="manufacturer-1" />
+
 #### メーカー
 
 メーカーは、合意したパスにファイルを配置する必要があります。 pre\_install.appsflyerファイルのアクセス権限を744に設定してください。
 
 アプリが起動すると、SDKはマニフェストファイル内の指定パスを確認し、そのパスでファイルを探します。ファイルが見つかると、記載されているメディアソースにインストールをアトリビューションします。
+
+<div id="advantages-3" />
 
 #### メリット
 
@@ -316,11 +374,15 @@ AppsFlyerは、次の2つのデフォルトのパスで**pre\_install.appsflyer*
 
 メーカーによっては、デフォルト以外のパスにファイルを配置したい場合があります。その場合は、マニフェストファイルにデフォルト以外のパスを指定できます。
 
+<div id="important-3" />
+
 > 🚧 **重要！**
 >
 > デフォルト以外のパスを使用するには、SDKバージョン4.8以降が必要です。
 >
 > デフォルト以外のパスも使用できますが、代わりに[システムプロパティ方式](/docs/appsflyer-factory-preinstall-using-manifest-android#system-properties-method-recommended)の実装を推奨します。
+
+<div id="disadvantages-3" />
 
 #### デメリット
 
@@ -335,9 +397,13 @@ AppsFlyerは、次の2つのデフォルトのパスで**pre\_install.appsflyer*
 
 </Accordion>
 
+<div id="testing-pre-install-configuration" />
+
 ## プリインストール設定のテスト
 
 このセクションでは、プリインストール設定をテストして確認する方法を説明します。
+
+<div id="important-4" />
 
 > 🚧 **重要！**
 >
@@ -351,6 +417,8 @@ AppsFlyerは、次の2つのデフォルトのパスで**pre\_install.appsflyer*
 <div id="verifying-the-configuration-in-the-app" />
 
 <Accordion title="アプリでの設定の確認">
+
+<div id="tip-1" />
 
 > 👍 **ヒント**
 >
@@ -384,6 +452,8 @@ AppsFlyerアカウントにアクセスし、テスト対象のアプリのダ�
 3. プリインストールキャンペーンで連携するすべてのメーカーまたはメディアソースについて、この手順を繰り返します。
 
 </Accordion>
+
+<div id="special-cases" />
 
 ## 特殊なケース
 

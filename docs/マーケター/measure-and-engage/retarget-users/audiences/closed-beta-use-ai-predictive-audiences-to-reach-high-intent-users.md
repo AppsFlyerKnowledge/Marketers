@@ -27,13 +27,19 @@ x-zendesk:
 
 <Embed title="［Closed Beta機能］AIによるPredictive Audiences｜高意欲ユーザーへのリーチ" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
+<div id="about-predictive-audiences" />
+
 ## Predictive Audiencesについて
 
 AppsFlyer <Anchor target="_blank" href="/marketers/ja/docs/audiences-guide">Audiences</Anchor>の機能であるPredictive Audiencesは、AIを活用して特定のアクションを実行する可能性が高いユーザーのオーディエンスを作成します。例えば、今後7日以内に購入する可能性が高いユーザーを予測し、そのユーザー層にキャンペーンを集中させることで、より効率的な広告運用を実現できます。
 
 購入確率の範囲を調整することで、より購買意欲の高いユーザーに絞り込んだ小規模なオーディエンスを作成することも、リーチを広げた大規模なオーディエンスを作成することも可能です。。作成したオーディエンスは連携済みパートナーへ配信でき、作成後は毎日更新されるとともに、継続的かつ自動的に各パートナーへ送信されます
 
+<div id="create-a-predictive-audience" />
+
 ## Predictive Audienceを作成する
+
+<div id="prerequisites" />
 
 ### 事前準備
 
@@ -81,6 +87,8 @@ Predictive Audiencesを利用するには、以下の条件を満たしている
 
    選択内容に応じて、**推定オーディエンス規模**がリアルタイムで更新されます。
 
+<div id="compare-audiences-optional" />
+
 #### オーディエンス比較（任意）：
 
 オーディエンス比較は、作成するPredictive Audienceを1つまたは複数の既存オーディエンスと比較できるオプション機能です。広告費用対効果（ROAS）やコンバージョン率などの主要指標（KPI）に基づいてパフォーマンスを比較できます。比較対象には任意のオーディエンスを選択できますが、現在パフォーマンスデータを利用できるのは、Facebook、TikTok、Google、またはSnapに接続されたキャンペーンのみです。
@@ -106,6 +114,8 @@ Predictive Audiencesを利用するには、以下の条件を満たしている
 作成後、新しいPredictive Audienceは**Audiences**のテーブルに表示されます。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 仕様および制限事項
 

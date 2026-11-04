@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** 重複したデータ表示を作成せずにキャンペーンの名前を変更します。
 
+<div id="campaign-name-changes" />
+
 ## キャンペーン名の変更
 
 キャンペーンの名前を変更すると、管理画面およびレポートでの**集約データ**の表示に影響します。AppsFlyer では、キャンペーン ID をキーとして、キャンペーンを表示します。同じキャンペーン ID に関連付けられた名前が複数ある場合、直近に報告された名前がデータの表示に使用されます。
@@ -52,12 +54,14 @@ x-zendesk:
 | コストETL | はい |
 | SKAN 概要管理画面 | いいえ |
 
+<div id="example" />
+
 > 📄 **例**
 >
 > * 1月1日：**example\_a1** というキャンペーン名で配信開始。
 > * 1月2日：キャンペーン名を**example\_a1** から**example\_a2** に変更。
 >
-> #### キャンペーンのデータ例
+> #### <span id="example-campaign-data"></span>キャンペーンのデータ例
 >
 >
 >
@@ -68,11 +72,13 @@ x-zendesk:
 >
 >
 >
-> #### 管理画面表示の概要
+> #### <span id="overview-dashboard-display"></span>管理画面表示の概要
 >
 >
 >
 > <table><tbody><tr><th><p><span>Campaign</span></p></th><th><p><span>Campaign ID</span></p></th><th><p><span>インストール</span></p></th><th><p><span>広告費</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p>2024-02-26</p></td></tr><tr><td colspan="4"><p>結果:最新のキャンペーン名の下にデータが表示されます。</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### ベストプラクティス
 

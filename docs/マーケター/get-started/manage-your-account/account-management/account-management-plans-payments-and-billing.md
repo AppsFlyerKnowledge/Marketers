@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのプランと有料の追加機能について説明します。プランの利用量と請求額の算出方法を確認できます。アカウントを管理します。
 
+<div id="appsflyer-plans-and-usage" />
+
 ## AppsFlyerのプランと利用状況
 
 <div id="appsflyer-plans" />
@@ -60,15 +62,19 @@ x-zendesk:
 
 プランの料金は、**利用量**と**有料機能**に基づいて算出されます。
 
+<div id="plan-usage" />
+
 #### プランの利用状況
 
 各プランには、計測の基準となる[課金単位](/docs/account-management-plans-payments-and-billing#課金単位)<strong>が設定されています。</strong>利用量は、月単位または年単位で集計されます。プランの集計期間（月または年）に使用した分が、パッケージ全体の利用枠から差し引かれます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > [利用状況レポートをダウンロード](/docs/account-management-plans-payments-and-billing#利用状況レポートのダウンロード)すると、利用量の詳細を確認できます。
 
-<span id="premium-features"></span>**プランの利用枠を超過した場合**
+<span id="zd-premium-features"></span><span id="premium-features"></span>**プランの利用枠を超過した場合**
 
 プランの集計期間内に利用枠を超過すると、追加料金が発生します。料金の詳細は、[**［プランの詳細］**](/docs/account-management-plans-payments-and-billing#details)セクションで確認できます。利用枠の超過を防ぎ、追加料金を抑えられるよう、次の場合に通知センターからアラートが送信されます。
 
@@ -91,6 +97,8 @@ x-zendesk:
 
 これらの追加機能の詳細や、自社での活用方法については、担当CSMまたは[hello@appsflyer.com](mailto:hello@appsflyer.com)にお問い合わせください。
 
+<div id="plan-units" />
+
 #### 課金単位
 
 プランに使用される課金単位は、次のとおりです。
@@ -104,6 +112,8 @@ x-zendesk:
 | アプリ内イベント | インストール後にユーザーがアプリ内で行う操作。たとえば、ログイン、チュートリアル完了、購入、ゲーム内でのレベル到達などです。 | <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview">リッチアプリ内イベントのガイド</Anchor> |
 | 直接流入以外のWebコンバージョン  <br />（PBAパッケージの場合） | Webサイト上のユーザー操作のうち、次の条件を満たすもの：<ul><li>コンバージョンとして定義されている</li><li>Webキャンペーン経由の訪問の成果として計測されている</li></ul> | <Anchor target="_blank" href="/marketers/ja/docs/people-based-attribution-pba-overview">People-Based Attribution（PBA）</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### 有料追加機能の課金単位
 
 追加の計測機能で使用される課金単位は、次のとおりです。
@@ -111,6 +121,8 @@ x-zendesk:
 | 単位 | 説明 | 詳細 |
 | --- | --- | --- |
 | ROI360の利用量（1米ドル単位） | ROI360で計測・記録した広告費、アプリ内広告収益、アプリ内購入収益（サブスクリプションを含む）を、米ドル単位で集計した金額。 1単位は、ROI360で計測・記録した金額の1米ドル分に相当します。 | <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-cost-and-revenue-data">ROI360｜コストと収益のデータ</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### ROI360の利用量（1米ドル単位）
 
@@ -136,11 +148,15 @@ ROI360は、広告マーケティングの投資対効果を計測する追加�
 
 2026年2月1日から、CTV、PC、コンソールなどの拡張プラットフォームのアプリにおける非オーガニックインストールは、既存のコンバージョン課金の契約条件に従って、課金対象のコンバージョンに含まれます。
 
+<div id="what-is-billed" />
+
 #### 課金対象
 
 * 非オーガニックインストール。
 * 非オーガニックのリエンゲージメント。
 * 自社メディア経由のアクティビティ。
+
+<div id="what-isnt-billed" />
 
 #### 課金対象外
 
@@ -154,6 +170,8 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 
 </Accordion>
 
+<div id="account-page" />
+
 ## アカウントページ
 
 このページには、**［マイプラン］**、**［支払いと請求書］**、<strong>［請求先情報］</strong>の3つのタブがあります。このページでは、次の操作ができます。
@@ -163,6 +181,8 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 * 請求書やレポートの表示とダウンロード
 * 連絡先と請求先情報の更新
 * 支払い情報の更新
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -188,12 +208,16 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 | <span id="addons"></span>**追加機能** | プランに含まれる追加機能と、それぞれの開始日・終了日。次のような有料機能が該当します。<ul><li><Anchor target="_blank" href="/marketers/ja/docs/protect360-anti-fraud-guide">Protect360</Anchor>：モバイル不正対策</li><li><Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview">ROI360</Anchor>：コストデータ</li><li><Anchor target="_blank" href="/marketers/ja/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/ja/docs/pivot-table-user-metrics">ピボットテーブル</Anchor></li><li><Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>これらの機能の詳細や、自社での活用方法については、担当CSMまたは[hello@appsflyer.com](mailto:hello@appsflyer.com)にお問い合わせください。 |
 | <span id="future"></span>**次回のプラン** | このセクションは、次回のプランを購入済みの場合にのみ表示されます。該当する場合は、ここに次回のプランの詳細が表示されます。 |
 
+<div id="usage-report" />
+
 ### 利用状況レポート
 
 ［利用状況レポート］ページには、課金対象のコンバージョンと、ROI360をご契約の場合は投資対効果が表示されます。このページでは、次の操作ができます。
 
 * 日付、アプリ、メディアソース、イベントソース、イベントの種類によるデータの絞り込み。
 * 選択したフィルターに応じたレポートの[ダウンロード](#利用状況レポートのダウンロード)。
+
+<div id="access-to-the-usage-report-page" />
 
 #### 利用状況レポートページへのアクセス
 
@@ -207,9 +231,13 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 
 * [**［アカウント］**](#アカウントページ)ページの<strong>［マイプラン］</strong>で、右上の<strong>［利用状況レポート］</strong>をクリックします。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 月間アクティブユーザー（MAU）プランでは、利用状況レポートは利用できません。
+
+<div id="data-included-in-the-usage-report" />
 
 #### 利用状況レポートに含まれるデータ
 
@@ -226,10 +254,14 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 * デフォルトの対象期間は、当月1日から当日までです。表の上部にあるフィルターで、別の期間を選択できます。
 * レポートのデータは24か月間保持されます。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 利用状況レポートと請求書は、UTC+0を基準に集計されます。そのため、利用状況レポートと、ダッシュボード、Cohortレポート、その他の集計レポートのデータには、わずかな差異が生じる場合があります。
 > * 利用状況レポートは、<Anchor target="_blank" href="/partners/ja/docs/getting-started-agency-onboarding#運用媒体の開示">**［トランスペアレンシーを許可］**</Anchor>のオン／オフにかかわらず、**メディアソースの情報を開示せず**、計測元のメディアソースではなく代理店名を表示します。
+
+<div id="usage-report-fields" />
 
 #### 利用状況レポートの項目
 
@@ -267,11 +299,15 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 
 </Accordion>
 
+<div id="download-a-usage-report" />
+
 #### 利用状況レポートのダウンロード
 
 1. <strong>［マイプラン］</strong>タブで、<strong>［利用状況レポート］</strong>をクリックします。
 2. 対象期間と、そのほかのフィルターを選択します。
 3. 表の上部の<strong>［ダウンロード］</strong>をクリックします。 CSV形式でファイルがダウンロードされます。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -280,11 +316,15 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 > * 適用したフィルター：選択したフィルターに合うデータが含まれます。
 > * [データの状態：](#利用状況レポートに含まれるデータ)当月の日付と選択した対象期間によっては、一部のデータのみが含まれます。
 
+<div id="account-status" />
+
 ### アカウントのステータス
 
 アカウントのステータスは、［アカウント］ページの左上に表示されます。表示されるステータスは、次のとおりです。
 
 <table><thead><tr><th>アカウントのステータス</th><th>説明</th><th>補足</th></tr></thead><tbody><tr><td rowspan="2">有効なアカウント</td><td>すべての<strong>Welcome</strong>プランと<strong>Zero</strong>プラン</td><td>支払い方法の登録不要</td></tr><tr><td> 有効な支払い方法が登録されており、支払期限を過ぎた請求書がない<strong>Growth</strong>プランと<strong>Enterprise</strong>プラン</td><td> </td></tr><tr><td>利用停止予定</td><td>支払期限を過ぎた請求書が1件以上あるアカウント。請求書が30日間未払いのままだと、アカウントは利用停止になります。</td><td> <a href="./account-management-plans-payments-and-billing#支払期限を過ぎた請求書の支払い">請求書の支払い</a>により、有効な状態に戻せます。 </td></tr><tr><td>利用停止</td><td>支払期限から30日を超えて未払いの請求書があるアカウント。</td><td>［マイプラン］、ユーザー管理、支払いのセクションを除き、アカウントにアクセスできません。<br/>請求書の支払いにより、有効な状態に戻し、再びアクセスできます。 </td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### アカウントのアップグレード・ダウングレード・削除
 
@@ -304,13 +344,19 @@ Adaptive Pricingをご利用の場合、拡張プラットフォームでのア�
 * 請求書のダウンロード（PDF）
 * 支払い方法の選択（Growthプランではクレジットカードが必要）
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > タブは、支払いが必要なプラン（[Welcome、Zero以外](/docs/account-management-plans-payments-and-billing#appsflyer-plans)）でのみ利用できます。
 
+<div id="payment-methods-easy--secure-invoicing" />
+
 ### 支払い方法｜簡単で安全な請求書の支払い
 
 AppsFlyerの請求書に利用できる支払い方法と、米国のお客様にACHを推奨する理由を説明します。
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 #### 米国のお客様に推奨：ACH（Automated Clearing House）
 
@@ -327,7 +373,11 @@ ACHの仕組みと、多くの経理チームがACHに切り替えている理�
 | 銀行水準のセキュリティ | オンラインバンキングに直接接続する、安全な支払い手順。 |
 | 完全自動化 | 一度設定すれば自動で支払える**定期支払い**にも、すばやく都度払いできる**PayNow**にも便利です。 |
 
+<div id="payment-types" />
+
 ### **支払いの種類**
+
+<div id="hands-free-recurring-payments" />
 
 ##### **自動の定期支払い**
 
@@ -337,9 +387,13 @@ ACHの仕組みと、多くの経理チームがACHに切り替えている理�
 
 <strong>米国のお客様には、</strong>確実な定期支払いの方法として**ACH**を推奨します。
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > 前払いプランの場合、クレジット残高がある場合、銀行送金で支払い済みの場合、請求に問題がある場合は、自動決済されません。
+
+<div id="paynow-manual-invoice-payment" />
 
 ##### **PayNow（請求書ごとの手動支払い）**
 
@@ -348,6 +402,8 @@ ACHの仕組みと、多くの経理チームがACHに切り替えている理�
 <strong>［支払いと請求書］</strong>で未決済の請求書を選択し、<strong>［支払う］</strong>をクリックします。
 
 <strong>米国のお客様には、</strong>迅速で安定した手動支払いの方法として**ACH PayNow**を推奨します。
+
+<div id="set-up" />
 
 ## 設定
 
@@ -417,11 +473,15 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 
 </Accordion>
 
+<div id="managing-payment-methods" />
+
 ### **支払い方法の管理**
 
 定期支払いに登録した支払い方法（ACH口座またはクレジットカード）を削除するには、削除を依頼する**サポートチケットを送信**してください。
 
 **注意：** ポータルから直接、支払い方法を削除することはできません。
+
+<div id="invoices" />
 
 ### 請求書
 
@@ -436,6 +496,8 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 | **ステータス** | **支払い済み**、**未払い**、**支払期限超過** |
 | **PDF** | <strong>［表示］</strong>をクリックすると、PDF形式で請求書を開けます。 |
 
+<div id="pay-overdue-invoices" />
+
 ### 支払期限を過ぎた請求書の支払い
 
 通常の支払い方法にかかわらず、**希望する支払い方法**を使い、[**Pay Nowで都度払い**](/docs/account-management-plans-payments-and-billing#設定)することで、支払期限を過ぎた請求書を支払えます。このときに使用する支払い方法は、**保存されません**。
@@ -444,11 +506,15 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <div id="billing-details" />
 
 <Accordion title="請求先情報">
 
 このタブでは、会社の請求先情報と、請求に関する連絡先を確認・更新できます。[![billing_details_tab2.png](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
+
+<div id="company-billing-details" />
 
 ### 会社の請求先情報
 
@@ -460,12 +526,16 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 2. 利用規約を読み、チェックボックスをオンにして同意します。
 3. <strong>［送信］</strong>をクリックします。 変更が保存されたかどうかが、ポップアップメッセージに表示されます。
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > * 会社名または住所を変更した場合は、AppsFlyerの利用規約が表示され、同意が必要です。 問題がある場合は、[accounting@appsflyer.com](mailto:accounting@appsflyer.com)にお問い合わせください。
 > * 情報に不足や誤りがある場合、請求先情報は保存されません。例：
 >   * 所在国で[法人の納税者番号](/docs/account-management-plans-payments-and-billing#法人の納税者番号)が必要な場合は、その国の正しい形式で入力する必要があります。
 >   * 郵便番号は、選択した所在地と一致している必要があります。
+
+<div id="billing-contacts" />
 
 ### 請求担当者
 
@@ -476,6 +546,8 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 1. <strong>［連絡先を追加］</strong>をクリックして[必要な情報](/docs/account-management-plans-payments-and-billing#billing-details)を入力するか、既存の連絡先を変更します。
 2. <strong>［請求先情報を保存］</strong>をクリックします。請求担当者は、少なくとも1名登録してください。
 3. 変更が保存されたかどうかが、ポップアップメッセージに表示されます。
+
+<div id="note-8" />
 
 > 📘 **注意**
 >
@@ -488,9 +560,13 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 | 会社の請求先情報 | <ul><li>**請求先の会社名：** 登録フォームの情報が自動入力されます。</li><li>**法人の納税者番号：** 詳細は[次のタブ](/docs/account-management-plans-payments-and-billing#法人の納税者番号)を参照してください。</li><li>**請求書に記載する会社名**（英語）：請求書に表示されます。</li><li>**通貨：** USD、ILS、EUR、GBPのいずれか。</li><li>**住所：** 登録フォームの情報が自動入力されます。<ul><li>番地などの住所</li><li>市区町村（英語）</li><li>郵便番号：選択した所在地と一致している必要があります。</li><li>国：リストから選択します。</li></ul></li><li>該当する場合は、州・省・準州を追加します。</li><li>必要に応じて、管理画面で請求先情報を更新するか、[accounting@appsflyer.com](mailto:accounting@appsflye.com)にお問い合わせください。</li></ul> |
 | 請求担当者 | 必要な連絡先情報を入力します。<ul><li>**氏名：** 英語のみで入力してください。</li><li>**メールアドレス・電話番号：** 入力が必要です。</li></ul> |
 
+<div id="company-tax-number" />
+
 ### 法人の納税者番号
 
 以下の表の一部の国では、法人の納税者番号を記録し、請求書にVATを加算する必要があります。これらの国に所在する会社は、所在国の正しい形式で法人の納税者番号を登録する必要があります。登録されていない場合、請求先情報は保存されません。
+
+<div id="countries-requiring-company-tax-number" />
 
 #### 法人の納税者番号が必要な国
 
@@ -499,6 +575,8 @@ AppsFlyerのポータル内で、安全な自動手順に従って設定しま�
 | カナダ | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">GST/HSTプログラムのアカウント番号</Anchor> |
 | EU加盟国 | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">VAT情報交換システム（VIES）</Anchor> |
 | イスラエル | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">イスラエルのVAT登録</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### iOSアプリの請求に用いるコンバージョン計測方法
 

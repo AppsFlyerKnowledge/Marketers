@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## 概要
 
 アドバンスSRN連携では、広告配信面アプリと広告主アプリの<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">両方でATTの同意が得られている</Anchor>成果については通常のSRNのトラフィックとしてレポート・計測されます。同意のないトラフィックについては、AppsFlyerはプライバシー制限に従い、<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns#アドバンスsrnのアトリビューションはどのように機能しますか">他のアトリビューション方法</Anchor>を使用してSnapchatからのクリックとインプレッションに基づいてアトリビューションを付与および計測できます。
+
+<div id="set-up-snapchat-integration" />
 
 ## Snapchat連携設定
 
@@ -60,6 +64,8 @@ x-zendesk:
 
 この連携では、クリックとインプレッションのアトリビューション、費用、広告収益、オーディエンスがサポートされています。
 
+<div id="activate-partner" />
+
 #### パートナーの有効化
 
 ここへの**初回の訪問**では、セットアップを有効にするために**パートナーの有効化**をオンにします。  
@@ -70,6 +76,8 @@ x-zendesk:
 **パートナー連携を有効にする**を有効にして、Snapchatへのアトリビューションを許可します。
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+
+<div id="general-settings" />
 
 #### 一般的な設定
 
@@ -86,6 +94,8 @@ x-zendesk:
 * 代理店がSnapchat広告管理画面で広告主と同じ組織の下にある場合は、Snap App IDを1つだけ使用します。
 * 代理店がSnapchat広告管理画面の別の組織の下にある場合は、このアプリのSnap App IDを提供するように代理店に依頼し、この項目に入力します。複数のIDを入力できます。各IDを入力後、Enter キーを押して複数のIDを入力できます。
 
+<div id="install-attribution" />
+
 #### インストール計測
 
 広告を表示した、クリックした、または携わっているユーザーの新規インストール（初回起動）をアトリビューションするために、さまざまなアトリビューション期間を設定します。ルックバック期間内のインストールのみがSnapchatに起因する可能性があることに注意してください。
@@ -101,6 +111,8 @@ x-zendesk:
 2. [オプション] **インストールビュースルーアトリビューション**をオンにして、ルックバックウィンドウを設定します。
    * **インストールビュースルールックバック期間**は1～24時間の範囲です。**注：** Snapchatはインストール ビュースルー ルックバック期間を1日に設定することを推奨しています。
 
+<div id="re-engagement-attribution" />
+
 #### リエンゲージメントアトリビューション
 
 さまざまなアトリビューション期間を設定して、広告を表示した、クリックした、または携わっている既存のユーザーのリエンゲージメントをアトリビューションします。ルックバック期間内のリエンゲージメントのみがSnapchatに起因する可能性があることに注意してください。
@@ -115,6 +127,8 @@ x-zendesk:
    * **リエンゲージメントビュースルールックバック期間**は1～24時間の間です。**注：** Snapchat では、リエンゲージメントビュースルールックバック期間を1日に設定することを推奨しています。
 3. **リエンゲージメント期間**を1～23時間、1～90日間、または**全期間**に設定します。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### リターゲティングでアクティブユーザーを無視する
 
 直近アプリを起動したユーザーの、<Anchor target="_blank" href="/marketers/ja/docs/set-retargeting-inactivity-window#休眠期間">リエンゲージメントとリアトリビューションを計測しない</Anchor>期間を設定します。したがって、この期間中のアクティビティはAppsFlyerに記録されません。
@@ -125,6 +139,8 @@ x-zendesk:
 
 1. リターゲティングで**アクティブユーザーを無視する**をオンにします。
 2. 非アクティブ期間を設定します。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントのポストバック
 
@@ -225,11 +241,15 @@ Snapchatがあなたのデータにアクセスし、様々なアクションを
 
 </Accordion>
 
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
 ## Web to app：非アプリキャンペーンの計測
 
 AppsFlyerとTikTokの連携により、TikTok for Businessに紐づくアプリ以外のキャンペーンのインストール、リエンゲージメント、アプリ内イベントなどのアプリアクティビティを包括的に計測できます。
 
 たとえば、広告の遷移先がWebランディングページであってもアプリのインストールを計測できるため、Web-to-App（W2A）のユーザージャーニーを計測できます。
+
+<div id="deep-linking-with-snapchat" />
 
 ## Snapchatとのディープリンク
 
@@ -249,12 +269,16 @@ Snapchatでディープリンクを実行するには：
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### Snapプラットフォームでディープリンクを設定
 
 1. **Drive traffic to app** オポチュニティタイプへ移動します。
 2. ディープリンクURIを追加します。  
      
    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### Snapchatでのディファードディープリンク
 
@@ -266,9 +290,13 @@ Snapchatでディープリンクを実行するには：
 
 広告主の代理で作業する代理店は、Snapchatの連携を有効にして、キャンペーンのアトリビューションを取得することができます。ただし、この統合には、代理店に関してはいくつかの制限があります。
 
+<div id="set-up-snapchat-for-agencies" />
+
 ## 代理店向けのSnapchatのセットアップ
 
 広告主の代理で作業する代理店は、Snapchatの連携を有効にして、キャンペーンのアトリビューションを取得することができます。ただし、この統合には、代理店に関してはいくつかの制限があります。
+
+<div id="agency-limitations" />
 
 ### エージェンシーの制限
 
@@ -290,6 +318,8 @@ Snapchatでディープリンクを実行するには：
 >
 > SnapchatアカウントIDは、広告主または代理店の間で共有することはできません。共有されている場合、広告主のすべてのインストールは代理店のダッシュボードに自動的に紐付けられます。
 
+<div id="raw-data-restrictions" />
+
 ## ローデータの制限
 
 * 2023年3月1日以降、Snapchatのアンインストールはローデータレポートに含まれません
@@ -299,6 +329,8 @@ Snapchatでディープリンクを実行するには：
   * Attributed touch type (impression)
   * 起因するタッチ時間 (日付のみ "dd/mm/yyyy" 記録されます)
   * キャンペーンは 「制限あり」として報告されます
+
+<div id="snapchat-data-retention" />
 
 ## Snapchatのデータ保持期間
 

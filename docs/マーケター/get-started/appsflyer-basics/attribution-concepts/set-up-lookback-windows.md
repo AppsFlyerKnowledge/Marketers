@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** メディアソースとの合意内容に合わせて、クリックスルーとビュースルーのルックバック期間を設定します。
 
+<div id="lookback-windows" />
+
 ## ルックバック期間
 
 アトリビューションのルックバック期間は、メディアソースとの合意内容に合わせて設定できます。
@@ -36,11 +38,15 @@ x-zendesk:
 * **エンゲージビューのルックバック期間：** エンゲージビュー後に発生したインストールを、そのエンゲージビューの成果として計測できる最長の期間です。  ルックバック期間を過ぎてから発生したインストールは、オーガニックとして扱われます。
 * **ビュースルーのルックバック期間**：広告表示後に発生したインストールを、その広告の成果として計測できる最長の期間です。ルックバック期間を過ぎてから発生したインストールは、オーガニックとして扱われます。
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### アトリビューションの種類別に設定できるルックバック期間
 
 <table><thead><tr><th rowspan="2"><p><strong>アトリビューションの種類</strong></p></th><th rowspan="2"><p><strong>アトリビューション方法</strong></p></th><th colspan="2"><strong>ルックバック期間</strong> </th></tr><tr><th><strong>設定範囲</strong></th><th><strong>デフォルト</strong></th></tr></thead><tbody><tr><td rowspan="3"><p>クリックスルー</p><p>（すべてのメディアソース）</p></td><td>リファラ、IDマッチング</td><td>1～30日、または<br/>1～23時間</td><td>7日</td></tr><tr><td>確率論的モデリング（モバイル）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">状況に応じて自動調整</a></td><td>最大24時間</td></tr><tr><td>確率論的モデリング（CTV・PC・コンソール：単一プラットフォーム向けリンク）</td><td>最大7日。（リンクの<code>af_lookback_window</code>パラメータで設定します。）</td><td>7日</td></tr><tr><td rowspan="2"><p>エンゲージクリックスルー</p><p>（SRN以外の、対応する一部の<a href="./about-enriched-engagement-types#エンゲージビューとエンゲージクリックを報告できるアドネットワーク" target="_blank">メディアソース</a>\*）</p></td><td>IDマッチング</td><td>1～7日、または1～23時間</td><td>2日</td></tr><tr><td>確率論的モデリング（モバイル）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">状況に応じて自動調整</a></td><td>最大24時間</td></tr><tr><td rowspan="2"><p>エンゲージビュースルー</p><p>（SRN以外の、対応する一部の<a href="./about-enriched-engagement-types#エンゲージビューとエンゲージクリックを報告できるアドネットワーク" target="_blank">メディアソース</a>\*）</p></td><td>IDマッチング</td><td>1～7日、または1～23時間</td><td>2日</td></tr><tr><td>確率論的モデリング（モバイル）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">状況に応じて自動調整</a></td><td>最大24時間</td></tr><tr><td rowspan="4"><p>ビュースルー</p><p>（対応している一部の<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">メディアソース</a>）</p></td><td>IDマッチング</td><td><p>1～24時間</p><p>［2021年12月15日までは、上限は7日でした］</p></td><td>24時間</td></tr><tr><td>確率論的モデリング（モバイル）</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">状況に応じて自動調整</a></td><td>最大24時間</td></tr><tr><td>確率論的モデリング（CTV・PC・コンソール：単一プラットフォーム向けリンク）</td><td>最大7日。（リンクの<code>af_lookback_window</code>パラメータで設定します。）</td><td>24時間</td></tr><tr><td>確率論的モデリング（CTV・PC・コンソール：<a href="./set-up-cross-platform-links-for-multi-device-campaigns#特性と制限" target="_blank">クロスプラットフォーム向けOneLink計測リンク</a>）</td><td>最大72時間。（リンクの<code>af_xplatform_vt_lookback</code>パラメータで設定します。）</td><td>24時間</td></tr></tbody></table>
 
 *`engaged_click`と`engaged_view`のルックバック期間を個別に設定できるのは、SRN以外のアドネットワークのみです。 SRNでは、`engaged_click`と`engaged_view`にクリックと同じルックバック期間が適用されるため、**Install Click-Through Attribution Lookback**のスライダーで設定します。
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### 確率論的モデリングのルックバック期間
 
@@ -53,6 +59,8 @@ x-zendesk:
 
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model#probabilistic-modeling">AppsFlyerの確率論的モデリングによる計測方法</Anchor>をご覧ください。
 
+<div id="lookback-window-setup" />
+
 ## ルックバック期間の設定方法
 
 以下では、SRNと計測リンクのルックバック期間の設定手順を説明します。
@@ -60,7 +68,11 @@ x-zendesk:
 <Tabs>
 <Tab title="SRNのルックバック期間">
 
+<div id="attribution-lookback-window-for-srns" />
+
 ### SRNのアトリビューションのルックバック期間
+
+<div id="important" />
 
 > 🚧 **重要**
 >
@@ -89,6 +101,8 @@ x-zendesk:
 
 <div id="attribution-lookback-window-with-attribution-links" />
 
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
 ### SRN以外のクリックスルー・ビュースルーのルックバック期間
 
 1. AppsFlyerのサイドメニューで、**連携**＞**有効な連携**を選択します。
@@ -103,12 +117,16 @@ x-zendesk:
 
 <div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
 
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
 ### SRN以外のエンゲージクリックスルー・エンゲージビュースルーのルックバック期間
 
 1. AppsFlyerのサイドメニューで、**連携**＞**有効な連携**を選択します。
 2. パートナーを検索して選択します。
 3. 「連携」タブで、「**エンゲージクリックによるインストールのルックバック期間**」または「**エンゲージビューによるインストールのルックバック期間**」のスライダーまでスクロールします。
 4. スライダーを使用して、ルックバック期間を設定します。
+
+<div id="tip" />
 
 > 👍 **ヒント**
 >
@@ -128,6 +146,8 @@ OneLinkでもルックバック期間を設定できます。
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## アプリの初回起動までにかかる時間の分布
 
 以下のグラフは、広告接触からアプリの初回起動までにかかる時間の分布を示しています。
@@ -139,6 +159,8 @@ OneLinkでもルックバック期間を設定できます。
 アプリを起動するユーザーの大多数、97%強は、広告接触から7日以内に起動しています。残りの2%は、7日目からルックバック期間の終了日（30日目）までに起動しています。
 
 実際には、アプリを起動するユーザーの62%近くが広告接触から15分以内、72%が1時間以内に起動しています。
+
+<div id="scenarios-and-examples" />
 
 ## シナリオと設定例
 
@@ -185,6 +207,8 @@ SuperShoppingのマーケティング責任者であるJohnnyは、計測リン�
 また、アプリの開発者は、この短期キャンペーン経由のユーザーを識別し、キャンペーンで案内している特典を提供できます。
 
 </Accordion>
+
+<div id="tip-1" />
 
 > 👍 **ヒント**
 >

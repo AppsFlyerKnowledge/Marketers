@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** アトリビューション、リダイレクト、ディープリンクの機能を備えたリンクを作成し、デバイス、OS、チャネル、プラットフォームを問わず、オウンドメディアや有料メディアのユーザーをアプリユーザーに転換します。 Webサイト、バナー、ソーシャルメディアの投稿、メール、テキストメッセージなど、どのオウンドメディアがコンバージョンにつながった場合でも、これらのリンクを使用して最適なユーザー体験を提供できます。
 
+<div id="introduction-video" />
+
 ## 紹介動画
 
 <Embed title="OneLink｜利用ガイド" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## メリット
 
@@ -39,6 +43,8 @@ AppsFlyerの顧客体験・ディープリンクスイートを支えるOneLink�
 
 OneLinkの機能は<Anchor target="_blank" href="/marketers/ja/docs/account-management-plans-payments-and-billing#appsflyer-plans">AppsFlyerのサブスクリプションプラン</Anchor>で利用できます。 OneLinkによるユーザー体験を継続して提供できるよう、プランの契約を有効に保ってください。
 
+<div id="experiences" />
+
 ## ユーザー体験
 
 AppsFlyerの顧客体験・ディープリンクスイートを支えるOneLinkでは、ユーザーの流入元を問わず、最適な体験を提供するリンクを作成できます。次のようなユーザー体験を設定できます。
@@ -51,6 +57,8 @@ AppsFlyerの顧客体験・ディープリンクスイートを支えるOneLink�
 * **Text-to-app**：SMSやメッセージ配信キャンペーン用のリンクを作成し、テキストメッセージを通じてユーザーのエンゲージメントを促進します。
 * **Referral-to-app**：ユーザーやインフルエンサーが他のユーザーをアプリに招待したり、記事などの特定のアプリ内コンテンツを共有したりできるユーザー招待リンクを作成します。
 * **Custom**：デスクトップ／モバイル、オンライン／オフライン、オウンドメディア／有料メディアを問わず、OneLinkを使って、あらゆる流入元のユーザーを適切な遷移先へ簡単に誘導できます。
+
+<div id="setting-up-onelink" />
 
 ## OneLinkの設定
 
@@ -73,6 +81,8 @@ AppsFlyerのUIを使用し、リンクからアプリのインストールまで
 | OneLinkテンプレートの作成 | <ul><li>マーケター／プロダクトマネージャーが、AppsFlyerでテンプレートを設定します。</li><li>Android開発者が、既存ユーザー向けにアプリを開く方法（Android App LinksとURIスキーム）を設定します。</li><li>iOS開発者が、既存ユーザー向けにアプリを開く方法（iOS Universal LinksとURIスキーム）を設定します。</li></ul> | <ul><li>AppsFlyer管理画面</li><li><Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template">マーケター向けの手順</Anchor></li><li>開発者向けの手順：<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android</Anchor>／<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor></li></ul> |
 | OneLinkリンクの作成 | <ul><li>マーケター／プロダクトマネージャーがAppsFlyerでリンクを設定し、提供する顧客体験の選択や、必要なアトリビューション・ディープリンク用パラメータの追加を行います。</li><li>Android／iOS開発者が、ディープリンク用のUDLメソッドを実装します（ディープリンクが必要な場合）。</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">マーケター向けの手順</Anchor></li><li>開発者向けの手順：<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">Android</Anchor>／<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor></li><li>サンプルアプリ（GitHub）</li></ul> |
 
+<div id="additional-options" />
+
 ## 追加オプション
 
 UIで設定の一部またはすべてを完了したら、以下の追加機能の導入もご検討ください。
@@ -84,9 +94,13 @@ UIで設定の一部またはすべてを完了したら、以下の追加機能
 * <Anchor target="_blank" href="/marketers/ja/docs/understand-onelink-short-vs-long-urls">ロングURL</Anchor>：OneLinkカスタムリンクにパラメータを追加したり、スプレッドシートで独自の簡単な数式を使用して多数のOneLinkカスタムリンクを生成したりできます。
 * <Anchor target="_blank" href="/marketers/ja/docs/redirect-app-users-to-a-website">アプリからWebへのリダイレクト</Anchor>：ユーザーをアプリからWebサイトやソーシャルメディアのページへ誘導します。
 
+<div id="troubleshooting-and-faq" />
+
 ## トラブルシューティングとよくある質問
 
 OneLinkカスタムリンクのリダイレクトや動作に関する問題をテスト・デバッグする際は、<Anchor target="_blank" href="/marketers/ja/docs/onelink-troubleshooting-and-faq">OneLinkトラブルシューティングガイド</Anchor>で解決策をすばやく確認できます。
+
+<div id="limitations" />
 
 ## 制限事項
 

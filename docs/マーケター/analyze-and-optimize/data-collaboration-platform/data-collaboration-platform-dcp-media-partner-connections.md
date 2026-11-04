@@ -19,18 +19,26 @@ x-zendesk:
   section_id: 26230608274065
   url: https://support.appsflyer.com/hc/ja/articles/45669216166417
 ---
+<div id="at-a-glance" />
+
 ## 概要
 
 オーディエンスをメディアパートナーへ接続することで、目的に合わせたキャンペーンをアクティベーションし、成果の最大化を図ることができます。
+
+<div id="about-partner-connections" />
 
 ## メディアパートナー接続について
 
 <Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform（DCP）</Anchor>のメディアパートナー接続を使用すると、DCPオーディエンスを対応するメディアパートナーへ安全に接続し、各パートナーのプラットフォーム上で目的に合わせたキャンペーンをアクティベーションできます。パートナーをオーディエンスに接続すると、DCPは最新のソースデータと<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#共有権限">権限</Anchor>を使用し、設定された更新・アクティベーションフローに従ってオーディエンスを配信します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * オーディエンスは、ユーザー識別子の一覧としてアクティベーション先へ配信されます。各配信には、エクスポート時点のオーディエンス全体のスナップショットが含まれます。
 > * オーディエンスの更新は、継続的またはリアルタイムに行われるものではありません。定義されたポリシーに基づく一定の間隔で実行され、ソースデータが更新されているかどうかを確認したうえで更新されます。更新のたびにオーディエンスリストが生成され、選択した送信先へ配信されます。
+
+<div id="supported-partner-connections" />
 
 ## 対応するメディアパートナー接続
 
@@ -79,6 +87,8 @@ Google Ads
 * **App Campaigns**   
   アプリインストール向けApp Campaign（ACi）では、アップロードしたオーディエンスは最適化シグナルとしてのみ使用されます。一方、リエンゲージメントキャンペーン（ACe）は決定論的ターゲティングに対応しており、オーディエンスアクティベーションの主な方法となります。
 
+<div id="app-campaigns-aci--ace-guidelines" />
+
 #### App Campaign（ACi／ACe）のガイドライン
 
 Google App Campaign（旧Universal App Campaign - UAC）では、Customer Matchオーディエンスの扱いが他のキャンペーンタイプと異なります。
@@ -101,6 +111,8 @@ Customer Matchオーディエンスは**決定論的ターゲティング**に�
 * ライフサイクルキャンペーン（アップセル、クロスセル、リテンション）の実施
 
 DCPのオーディエンスリストは、他のプラットフォームと同様に、主要なターゲティング条件として使用されます。
+
+<div id="notes" />
 
 > 📘 **注意事項**
 >
@@ -425,6 +437,8 @@ The Trade Desk上のDCPオーディエンスは、Display、Video（CTV／OLV）
 * 推奨するオーディエンス更新：アクティベーションのユースケースやセグメントの変動性に応じて、毎日または毎週
 
 </Accordion>
+
+<div id="create-a-partner-connection" />
 
 ## メディアパートナー接続の作成
 

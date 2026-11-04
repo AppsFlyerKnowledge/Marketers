@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** 1つまたは複数のデータウェアハウス（BigQuery、Snowflake）やクラウドストレージバケット（Amazon S3、GCS）を設定し、Data Clean Roomとデータを共有し、レポートを受け取ります。
 
+<div id="overview" />
+
 ## 概要
 
 Data Clean Room(DCR)を使用する準備として以下の設定が含まれます：
@@ -36,6 +38,8 @@ Data Clean Room(DCR)を使用する準備として以下の設定が含まれま
 * **ステップ#1 –** 選択したクラウドサービスのインターフェイスを使用して、DCRで使用する準備をします（本記事）。
 * **ステップ#2 –** AppsFlyerプラットフォームを使用してそれらをDCRに接続します。（参照：<Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-working-with-connections">Data Clean Room — ソースの管理</Anchor>）
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > ソースデータ要件の完全な情報については、<Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-working-with-sources#source-format">Data Clean Room — ソースの操作</Anchor>を参照してください：
@@ -43,6 +47,8 @@ Data Clean Room(DCR)を使用する準備として以下の設定が含まれま
 > * データ形式（*すべてのソース*）
 > * 表の列（*データウェアハウスのソース*）
 > * ファイル名と形式（*クラウドストレージバケット内のソースの場合*）
+
+<div id="supported-cloud-services" />
 
 ### サポートされているクラウドサービス
 
@@ -53,14 +59,20 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
 
 これらのサービスの1つまたは任意の組み合わせを、受信および送信接続に使用できます。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > * 1つのレポートに複数のカスタムソースを使用する場合は、クラウドストレージバケットに配置する必要があります。
 > * Amazon S3 または GCS で同じクラウドストレージバケットを受信・送信接続の両方に使用することは非常に一般的です。これを設定する場合は、[特別な指示](/docs/data-clean-room-setting-up-cloud-services#同じクラウドストレージバケットを受信送信接続の両方に設定)に必ず従ってください。
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## 受信接続にクラウドサービスの設定
 
 次の項目の指示に従って、DCR受信接続で使用するために、選択したクラウドサービスを準備します。
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### データウェアハウス – BigQuery および Snowflake
 
@@ -128,6 +140,10 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
 9. **Create Share**ボタンをクリックしてください。
 
 </Accordion>
+
+<div id="code-snippet" />
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### クラウドストレージバケット – Amazon S3 および GCS
 
@@ -234,6 +250,8 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## 送信接続のクラウドサービスの設定
 
 DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>を使用して、選択したクラウドサービスにレポートを配信します。
@@ -241,6 +259,8 @@ DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers
 * **注記：** DCRレポートの受信にData Lockerの有料契約は必要ありません。Data Lockerによるその他のAppsFlyerレポートの受信についての詳細は、CSMにお問い合わせいただくか、 [hello@appsflyer.com](mailto:hello@appsflyer.com) にメールを送信してください。
 
 DCRレポートは、（受信接続に同じサービスを使用するかどうかに関係なく）クラウドサービス上の1か所以上に配信できます。次の項目の指示に従って、送信接続に使用する準備をします。
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### データウェアハウス – BigQuery および Snowflake
 
@@ -286,6 +306,8 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### クラウドストレージバケット – Amazon S3 および GCS
 
 送信接続にクラウドストレージバケットを準備する手順は、[受信接続](/docs/data-clean-room-setting-up-cloud-services#受信接続にクラウドサービスの設定)にバケットを準備する手順と非常によく似ています（両方のクラウドストレージサービスに関する手順を含みます）。
@@ -311,6 +333,8 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## 同じクラウドストレージバケットを受信・送信接続の両方に設定
 
 前述のように、Amazon S3 または GCS で同じバケットを受信・送信接続の両方に使用することは一般的です。
@@ -326,9 +350,13 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### 受信 / 送信接続用の新しいバケットを作成
 
 [受信接続にAmazon S3バケット](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound)を作成する手順に従います（手順に変更はありません）。
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### これまでData Lockerにのみ使用されていた既存のバケットを変更
 
@@ -379,11 +407,15 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### 受信 / 送信接続用の新しいバケットを作成
 
 [受信接続用のGCSバケット](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound)を作成する手順に従います。この手順のステップ 4 を変更して、**New members** ボックスに次の**2つのアカウント**を入力します：  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### これまでData Lockerにのみ使用されていた既存のバケットを変更
 

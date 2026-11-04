@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **概要：** 一部のローデータレポートのデータ項目は、プライバシーの制限により制限されています。また、サードパーティのプラットフォームとポストバックを共有する際、パートナーがメディアソースの再編集を要求する場合もあります。この記事では、制限事項とその影響について説明します。
 
+<div id="raw-data-restriction" />
+
 ## ローデータの制限
 
 AppsFlyerは、広告主の<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">AAP（高プライバシー一括設定）</Anchor>設定またはデータを提供する広告媒体のデータ共有ポリシーに基づいて、特定のローデータレポートフィールドへのアクセスを制限します。これらの制限は、レポートの種類や制限の理由によって異なります。
 
+<div id="media-source-restrictions" />
+
 ### メディアソースの制限
 
 コンバージョン、クリック、インプレッションにおけるメディアソースごとの制限について以下の表をご覧ください。
+
+<div id="note" />
 
 > 📘 **注記：**
 >
@@ -50,6 +56,8 @@ AppsFlyerは、広告主の<Anchor target="_blank" href="/marketers/ja/docs/appl
 | <span id="snapchat"></span>Snapchat | <ul><li>2023年3月1日以降、Snapchatのアンインストールはローデータレポートに含まれません。</li><li>ビュースルーCVのローデータが制限されています。以下項目はローデータ配信ツールには含まれません：<ul><li>Media source (snapchat\_int)</li><li>チャネル</li><li>Attributed touch type (impression)</li><li>Attributed touch time (日付のみ "dd/mm/yyyy" と記録されます)</li><li>キャンペーン名の項目は "*restricted*"と記録されます。</li></ul></li><li>Pinterestのクリックとインプレッションはローデータレポートには含まれません。</li></ul> |
 | <span id="tiktok-for-business"></span>TikTok for Business | <ul><li>Media source (bytedanceglobal\_int および tiktokglobal\_int)<ul><li>Channel</li><li>Attributed touch type (impression)</li><li>Attributed touch time (日付のみ "dd/mm/yyyy" と記録されます)</li><li>キャンペーン名の項目は "*restricted*"と記録されます。</li></ul></li><li>bytedanceglobal\_intからのインプレッションはローデータレポートには含まれません。</li><li>tiktokglobal\_intからのData Locker経由のクリックとインプレッションのローデータレポートは制限されています。</li></ul> |
 | <span id="x-ads-formerly-twitter"></span>X Ads（旧：Twitter Ads） | <ul><li>X Adsでは、AppsFlyerプラットフォームでローデータを利用できない場合があります。このような場合、イベントはローデータレポートには表示されません。</li><li>X Adsのクリックとインプレッションはローデータレポートには含まれません。</li></ul> |
+
+<div id="raw-data-context" />
 
 ### ローデータのコンテキスト
 
@@ -163,6 +171,8 @@ AppsFlyerのユーザーレベルの計測データは、次のローデータ�
 
 </Accordion>
 
+<div id="faq" />
+
 ## よくある質問
 
 <div id="what-events-are-restricted" />
@@ -183,6 +193,8 @@ AppsFlyerのユーザーレベルの計測データは、次のローデータ�
 **レポートの例：** <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScXJznEex0WwdCy78Bm8LtrhbCk1jNy14O_t7etrq5ab5v4CIEiInfFD4B1EsZCE-_w-dVRAxl_cu4/pub?output=csv">制限ありのメディアソースのインストールローデータサンプルCSV</Anchor> /その他のローデータレポートも同様に入力されます。
 
 </Accordion>
+
+<div id="how-does-the-restricted-media-source-impact-postbacks-sent-to-partners" />
 
 <div id="what-is-the-impact-on-postbacks-to-partners-when-the-media-source-is-restricted" />
 
@@ -215,6 +227,8 @@ AppsFlyerのユーザーレベルの計測データは、次のローデータ�
 アシストに関するデータは、計測データとみなされ利用できません。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
+<div id="overview" />
+
 ## 概要
 
 * 検証ルールは、ルール作成画面で独自の条件や条件の組み合わせを設定して作成します。アプリのインストールやアプリ内イベントのアトリビューションを絞り込み、維持するかブロックするかを指定します。
@@ -82,9 +84,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="rule-builder" />
+
 ## ルール作成画面
 
 ルール作成画面では、画面上で条件を指定しながらルールを作成できます。**ヒント**この記事を詳しく読む前に、ルール作成画面を操作して使い方を確認してみてください。
+
+<div id="use-categorized-dimensions" />
 
 ### カテゴリ別の条件項目の利用
 
@@ -115,6 +121,8 @@ x-zendesk:
 | 条件 | 指定した条件に「一致する」インストールやアプリ内イベントをブロックするか、「一致しない」ものをブロックするかを選択します。<ul><li>**条件に一致：** 指定した条件に一致するインストールやアプリ内イベントのアトリビューションをブロックします。該当するすべてのデータに、以下で選択した処理が適用されます。</li><li>**条件に一致しない：** 以下の条件に一致しないインストールやアプリ内イベントのアトリビューションをブロックします。条件に一致しないすべてのデータに、以下で選択した処理が適用されます。</li></ul>Protect360で利用できる[インストール](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions)と[アプリ内イベント](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions)の条件もご覧ください。 |
 | 処理 | インストールの場合は、指定した条件に該当するインストールに対して行う処理を選択します。<ul><li>**インストールを無効として扱い、アトリビューションしない**。インストールは、Protect360とレポートを除き、AppsFlyerのダッシュボードには表示されません。</li><li>**アトリビューションをブロックし、最後の有効なメディアソースに付け替える**。有効なメディアソースが見つからない場合は、オーガニックインストールとして扱われます。</li></ul>アプリ内イベントの場合は、指定した条件に該当するインストールに対して行う処理を選択します。<ul><li>**アトリビューションをブロックし、Protect360のデータに表示**。イベントはアトリビューションされませんが、Protect360のダッシュボードとローデータには表示されます。</li><li>**AppsFlyerから除外**。イベントはAppsFlyer上に一切表示されません。</li></ul>詳しくは、[ルール適用時の処理](/docs/implement-validation-rules-to-prevent-fraud#outcomes)をご覧ください。 |
 
+<div id="validation-rule-examples" />
+
 ## 検証ルールの設定例
 
 <Accordion title="インストールの流入元">
@@ -144,6 +152,8 @@ Protect360をご利用のお客様は、[インストール](/docs/implement-val
 
 次の表に記載されている条件項目、比較条件、値を使って設定します。
 
+<div id="bulk-upload" />
+
 #### 一括アップロード
 
 対応する条件項目で**リストに含まれる**または**リストに含まれない**を選ぶと、新しい項目の追加時にCSVファイルを一括アップロードできます。
@@ -159,6 +169,8 @@ Protect360をご利用のお客様は、[インストール](/docs/implement-val
 Protect360をご利用のお客様は、[インストール](/docs/implement-validation-rules-to-prevent-fraud#protect360-install-conditions)と[アプリ内イベント](/docs/implement-validation-rules-to-prevent-fraud#protect360-inapp-event-conditions)について追加の条件を利用できます。
 
 <table><thead><tr><th><span>条件項目</span></th><th><span>比較条件</span></th><th><span>値</span></th><th><span>補足</span></th></tr></thead><tbody><tr><td><span>キャンペーン</span></td><td rowspan="6"><ul><li><span>一致</span></li><li><span>一致しない</span></li><li><span>含まない</span></li><li><span>含む</span></li><li><span>次で始まる</span></li><li><span>次で終わる</span></li><li><span>リストに含まれる</span></li><li><span>リストに含まれない</span></li><li><span>正規表現に一致</span></li><li><span>空欄</span></li><li><span>空欄ではない</span></li></ul></td><td><ul><li>指定する値を検索します。</li><li>メニューから値を選択します。</li><li>自由入力（検索結果に表示されない値の場合）</li></ul></td><td rowspan="11"><ul><li> <span>メニューの表示内容は、次の情報に基づきます。</span><ul><li>選択したアプリと代理店。</li><li>過去30日間のトラフィック。発生頻度の高い順に表示されます。</li></ul></li><li><span>自由入力する場合は、ローデータに表示される値と完全に一致するように入力してください。</span></li></ul></td></tr><tr><td><span>キャンペーンID</span></td><td rowspan="5"><ul><li><span>自由入力のみ。</span></li><li><span>スペース区切りで複数の値を追加できます。</span></li></ul></td></tr><tr><td><span>広告ID</span></td></tr><tr><td><span>広告セットID</span></td></tr><tr><td><span>広告セット名</span></td></tr><tr><td><span>デバイスの種類</span></td></tr><tr><td><span>地域</span></td><td rowspan="3"><ul><li><span>リストに含まれる</span></li><li><span>リストに含まれない</span></li><li><span>一致</span></li><li><span>一致しない</span></li></ul></td><td><ul><li><span>国名、国コード、州、都市を使って、指定する値を検索します。</span></li><li><span>メニューから値を選択します。</span></li></ul></td></tr><tr><td><span>プラットフォーム</span></td><td><span>メニューから値を選択します。</span></td></tr><tr><td><span>通貨</span></td><td><p>通貨のみ。指定できる値：</p><p>USD, NZD, SGD, IMP, ANG, MNT, BIF, BBD, HUF, ERN, AZN, AOA, PYG, MYR, GYD, VUV, SLL', FKP, DJF, GNF, LVL, MMK, MRO, RSD, CLF, XDR, ZAR, TND, PHP, KGS, XPD, RON, RUB, KMF, SCR, GIP, TRY, JEP, UYU, XCD, FJD, GHS, MVR, AWG, UGX, TOP, CVE, MKD, COP, CUC, GTQ, KZT, MXN, MGA, AUD, BDT, ISK, KRW, DZD, GGP, OMR, ZMW, MOP, CUP, JPY, SHP, LSL, ETB, BWP, MAD, AED, NGN, BRL, GEL, IDR, EUR, GBP, WST, XAF, SZL, XOF, SEK, UZS, KES, KYD, ILS, KWD, NPR, BZD, QAR, UAH, BTN, HTG, DKK, VND, SBD, JMD, IQD, LBP, XPT, HRK, HKD, JOD, PAB, CDF, VEF, XAU, BAM, CNY, SOS, XPF, GMD, DOP, XAG, KPW, BOB, BHD, BYN, BYR, LRD, BGN, AMD, CZK, CAD, LAK, EEK, MTL, PLN, LKR, BTC, MWK, LTL, ZMK, PGK, YER, PEN, KHR, RWF, BSD, AFN, ZWL, LYD, TMT, HNL, TWD, IRR, MUR, THB, ALL, TJS, SDG, BMD, CRC, NOK, SRD, MZN, CLP, STD, SYP, TZS, EGP, ARS, MDL, INR, SAR, PKR, TTD, NIO, BND, NAD, SVC, CHF</p></td></tr><tr><td><span>収益</span></td><td><ul><li><span>より小さい</span></li><li><span>以下</span></li><li><span>より大きい</span></li><li><span>以上</span></li><li><span>範囲内</span></li><li><span>一致</span></li><li><span>一致しない</span></li></ul></td><td><ul><li><span>自由入力のみ。</span></li></ul></td></tr><tr><td><span>OSバージョン</span></td><td><ul><li><span>より小さい</span></li><li><span>以下</span></li><li><span>より大きい</span></li><li><span>以上</span></li><li><span>一致</span></li><li><span>一致しない</span></li><li><span>範囲内</span></li><li><span>リストに含まれる</span></li><li><span>リストに含まれない</span></li><li><span>空欄</span></li><li><span>空欄ではない</span></li></ul></td><td><ul><li><span>指定する値を検索します。</span></li><li><span>メニューから選択します。</span></li><li><span>自由入力（検索結果に表示されない値の場合）</span></li></ul></td></tr><tr><td><span>アプリバージョン</span></td><td><ul><li><span>より小さい</span></li><li><span>以下</span></li><li><span>より大きい</span></li><li><span>以上</span></li><li><span>一致</span></li><li><span>一致しない</span></li><li><span>範囲内</span></li><li><span>リストに含まれる</span></li><li><span>リストに含まれない</span></li><li><span>最新の指定バージョン数に含まれない</span></li><li><span>各メジャーバージョン内の最新の指定バージョン数に含まれない</span></li><li><span>空欄</span></li><li><span>空欄ではない</span></li></ul></td><td><ul><li>指定する値を検索します。</li><li>メニューから値を選択します。</li><li>自由入力（検索結果に表示されない値の場合）</li></ul></td><td><ul><li> <span>メニューの表示内容は、</span>過去30日間のトラフィックに基づき、発生頻度の高い順に表示されます。</li><li><span>自由入力する場合は、ローデータに表示される値と完全に一致するように入力してください。</span></li><li> <span>「最新の指定バージョン数に含まれない」を使う際、複数のバージョン系列がある場合は「各メジャーバージョン内の最新の指定バージョン数に含まれない」を選択してください。</span><a href="./implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work"><span>詳しくはこちら</span></a> </li></ul></td></tr><tr><td><span>ルックバック日数</span></td><td><ul><li><span>より小さい</span></li><li><span>以上</span></li><li><span>範囲内</span></li></ul></td><td><ul><li><span>自由入力：数値を1つ指定します。</span></li></ul></td><td><ul><li><span>インプレッション／クリックのルックバック期間を日数で指定します。</span></li><li><span>アトリビューションリンクの計測対象期間が不正に延長されたインストールに対して、広告費を支払うことを防ぎます。</span></li><li><span>アトリビューションリンクに設定されているルックバック期間を変更するものではありません。</span></li><li> <span>［推奨］アトリビューション対象の広告接触の種類の条件（</span><a href="./implement-validation-rules-to-prevent-fraud#protect360-install-conditions"><span>Protect360で利用可能</span></a><span>）と組み合わせて使用してください。</span> </li></ul></td></tr><tr><td><span>プリインストールの有無</span></td><td rowspan="2"><ul><li><span>はい</span></li><li><span>いいえ</span></li></ul></td><td rowspan="2"><ul><li>値の指定なし（比較条件自体が値になります）</li></ul></td><td><ul><li> <span>すべての種類のプリインストールを検証します。</span><ul><li><span>工場出荷時のプリインストール：OSの一部としてデバイスにあらかじめ搭載されているアプリです。</span></li><li><span>初期設定時に案内されるプリインストール：デバイスの初期化直後にユーザーへ紹介・提案されるアプリです。プリインストール向けに指定されたメディアソースを通じて行われます。</span></li></ul></li><li>複数のクリックや流入元があるインストールの場合、この条件は流入元のいずれかがプリインストールかどうかを検証します。</li></ul></td></tr><tr><td><span>ディープリンクの有無</span></td><td><span>ローデータのディープリンクフィールドが空欄の場合、「ディープリンクの有無＝いいえ」とみなされます。</span></td></tr></tbody></table>
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -192,6 +204,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 | --- | --- | --- | --- |
 | イベント名 | <ul><li>リストに含まれる</li><li>リストに含まれない</li><li>一致</li><li>一致しない</li><li>含む</li><li>含まない</li><li>次で始まる</li><li>次で終わる</li><li>空欄</li><li>空欄ではない</li><li>正規表現に一致</li></ul> | <ul><li>指定する値を検索します。</li><li>メニューから値を選択します。</li><li>自由入力（検索結果に表示されない値の場合）</li></ul> | <ul><li>自由入力する場合は、ローデータに表示される値と完全に一致するように入力してください。</li></ul> |
 | アプリバージョン | <ul><li>より小さい</li><li>以下</li><li>より大きい</li><li>以上</li><li>一致</li><li>一致しない</li><li>範囲内</li><li>リストに含まれる</li><li>リストに含まれない</li><li>最新の指定バージョン数に含まれない</li><li>各メジャーバージョン内の最新の指定バージョン数に含まれない</li><li>空欄</li><li>空欄ではない</li></ul> | <ul><li>指定する値を検索します。</li><li>メニューから値を選択します。</li><li>自由入力（検索結果に表示されない値の場合）</li></ul> | <ul><li>メニューの表示内容は、過去30日間のトラフィックに基づき、発生頻度の高い順に表示されます。</li><li>自由入力する場合は、ローデータに表示される値と完全に一致するように入力してください。</li><li>「最新の指定バージョン数に含まれない」を使う際、複数のバージョン系列がある場合は「各メジャーバージョン内の最新の指定バージョン数に含まれない」を選択してください。[詳しくはこちら](/docs/implement-validation-rules-to-prevent-fraud#how-do-the-not-in-last-conditions-work)</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -244,6 +258,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 
 </Accordion>
 
+<div id="additional-features" />
+
 ## その他の機能
 
 <Accordion title="ルール一覧の確認">
@@ -279,6 +295,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 6. ［任意］**トラフィックへの影響を推定**をクリックして、[ルールがトラフィックに与える影響を確認](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact)します。
 7. **保存**をクリックします。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > アプリバージョンには数字のみを使用してください。例：2.2.1
@@ -306,6 +324,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 
 推奨手順：まずタグ付けモードでルールを作成し、Data Lockerでタグ付けされたトラフィックを確認します。判定の正確性を確認できたら、ルールのステータスを「適用」に変更します。不正に対する保護を有効に保つため、この確認は7日未満で完了することを目指してください。
 
+<div id="how-tagged-mode-works" />
+
 #### タグ付けモードの仕組み
 
 検証ルールを作成・編集する際は、「ルール適用時の処理」セクションで検知ステータスを選択します。
@@ -315,6 +335,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 
 注意：タグ付けモードは、ルールを保存した時点以降の実際のトラフィックにのみ適用されます。過去のデータにはタグ付けしません。
 
+<div id="rule-outcome-configuration" />
+
 #### ルール適用時の処理の設定
 
 「ルール適用時の処理」セクション（旧称「処理」）では、ルールの条件に一致するトラフィックの扱いを指定します。ルール設定の概要も表示されるため、保存前に想定される影響を確認できます。
@@ -323,6 +345,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 | --- | --- | --- |
 | タグ付け | 影響なし。トラフィックは通常どおりアトリビューションされます。 | Data Lockerとローデータの出力レポートで確認できます。 |
 | 適用 | 実際にブロック。選択した処理に従って、アトリビューションがブロックされます。 | Protect360のダッシュボードと出力レポートで確認できます。 |
+
+<div id="what-to-expect-when-configuring-a-rule" />
 
 #### ルール設定時に確認できる内容
 
@@ -336,6 +360,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 
 検知ステータスが「適用」の場合、条件に一致するインストールやアプリ内イベントは、選択した処理に応じてアトリビューションがブロックされるか、成果の紐づけ先が変更されます。情報パネルには、保存前に現在の設定による処理の概要が表示されます。
 
+<div id="example-match-logic" />
+
 #### 例：「条件に一致」の場合
 
 選択したアプリでルールの条件に一致したインストールについて、情報パネルには次のような処理が表示されます。
@@ -343,6 +369,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 * アトリビューションをブロック、またはポストアトリビューションで検知。
 * 最後の有効な非オーガニックまたはオーガニックの流入元に成果を付け替え。
 * 出力レポートで確認可能。
+
+<div id="example-do-not-match-logic" />
 
 #### 例：「条件に一致しない」の場合
 
@@ -353,6 +381,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 * 出力レポートで確認可能。
 
 これらのアプリでルールの条件を満たすその他のインストールは、ブロックされません。
+
+<div id="set-a-rule-to-tagged-mode" />
 
 #### ルールをタグ付けモードに設定
 
@@ -365,6 +395,8 @@ Protect360の条件は、次の表に記載されている条件項目、比較�
 5. 「保存」をクリックします。
 
 保存後、AppsFlyerは条件に一致する実際のトラフィックに、レポート・分析用の目印を付けます。アトリビューションは通常どおり行われます。
+
+<div id="analyze-tagged-data" />
 
 #### タグ付けされたデータの分析
 
@@ -390,6 +422,8 @@ Data Lockerとローデータの出力レポートの次の列で、検証ルー
 | detected\_rule\_name<br /><br />（Data Locker） | そのレコードにタグ付けした検証ルールの名前。 |
 | detected\_rule\_id<br /><br />（Data Locker） | そのレコードにタグ付けした検証ルールの一意のID。 |
 
+<div id="change-a-tagged-rule-to-implemented" />
+
 #### タグ付けしたルールを適用モードに変更
 
 タグ付けされたデータを確認し、ルールが想定どおりに動作していることを確認したら、ステータスを「適用」に変更します。
@@ -414,6 +448,8 @@ Data Lockerとローデータの出力レポートの次の列で、検証ルー
   * **操作**欄：ルールを編集または削除します。
 
 </Accordion>
+
+<div id="faq" />
 
 ## よくある質問
 
@@ -493,6 +529,8 @@ Data Lockerとローデータの出力レポートの次の列で、検証ルー
 * **最新の*X*バージョンに含まれない<strong>：選択したアプリの</strong>最新Xバージョン<strong>からのインストールを許可し、</strong>それ以前のすべてのバージョン**からのインストールを**ブロック**します。
 * **各メジャーバージョン内の最新の*X*バージョンに含まれない<strong>：</strong>複数のメジャーバージョン系列<strong>（例：1.xと2.x）がある場合に使用します。この条件は、</strong>各メジャーバージョン系列内の最新Xバージョン**からのインストールを許可し、各系列のそれ以前のバージョンをブロックします。
 
+<div id="example-not-in-last" />
+
 ##### 例：最新の指定バージョン数に含まれない
 
 次のアプリバージョンが存在するとします。
@@ -515,6 +553,8 @@ Data Lockerとローデータの出力レポートの次の列で、検証ルー
   * 1.0.03
   * 2.0.01
 
+<div id="example-not-in-last-major" />
+
 ##### 例：各メジャーバージョン内の最新の指定バージョン数に含まれない
 
 上記と同じバージョン一覧で、**各メジャーバージョン内の最新の2バージョンに含まれない**を指定したルール：
@@ -527,6 +567,8 @@ Data Lockerとローデータの出力レポートの次の列で、検証ルー
 * **ブロック**：
   * 1.0.01
   * 2.0.01
+
+<div id="understand-how-the-condition-works-with-multiple-apps" />
 
 ##### **複数のアプリを選択した場合の動作**
 

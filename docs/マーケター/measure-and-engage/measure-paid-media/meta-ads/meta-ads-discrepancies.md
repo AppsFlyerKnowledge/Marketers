@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **概要：** Meta広告とAppsFlyerのアトリビューションモデルの違いについて説明します。
 
+<div id="meta-ads-discrepancies-with-appsflyer" />
+
 ## Meta広告とAppsFlyerの計測値の乖離
 
 モバイルアプリのユーザー獲得における主要なプラットフォームであるAppsFlyerとMeta広告では、アトリビューションモデルが異なります。そのため、Meta広告とAppsFlyerのダッシュボードに表示される数値に乖離が生じる場合があります。
 
 AppsFlyerはMeta広告と緊密に連携して乖離の縮小に取り組んでいますが、広告主は以下の原因を把握しておく必要があります。
 
+<div id="detect-a-discrepancy-between-appsflyer-and-meta-ads" />
+
 ### AppsFlyerとMeta広告の計測値の乖離の確認
 
 Meta広告の**イベントマネージャ**に表示されるイベントと、AppsFlyerのレポートに表示されるイベントを比較します。イベント数が大きく異なる場合は、計測値に乖離が生じている可能性があります。
 
+<div id="differences-in-attribution-models" />
+
 ## アトリビューションモデルの違い
 
 <table><thead><tr><th>原因</th><th>Meta広告</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><strong>クリックアトリビューションのルックバック期間</strong></td><td>7日間（<a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">一部のケースではデフォルト値が異なります</a>）。</td><td>1～30日間。 Meta広告に合わせて、必ず7日間に設定してください。</td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><strong>ビュースルーアトリビューションのルックバック期間</strong></td><td>1日（<a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">一部のケースではデフォルト値が異なります</a>）。</td><td>デフォルトは1日ですが、1～48時間の範囲で設定できます（デフォルト値を維持してください）。</td></tr><tr><td><span id="multichannel-sourceattribution"></span> <strong>複数のメディアソースを</strong><br/><strong>考慮したアトリビューション</strong> </td><td>Meta広告は、他のメディアソースの関与にかかわらず、自社の基準でインストールを自社にアトリビューションします。</td><td>AppsFlyerはラストクリックアトリビューションを使用します（AppsFlyerのアトリビューションの詳細は<a href="./appsflyer-attribution-model" title="AppsFlyer Attribution Model" target="_blank">こちら</a>を参照）。</td></tr><tr><td><span id="crossdevice-attribution"></span><strong>クロスデバイスアトリビューション</strong></td><td>Meta広告は、iOS、Android、デスクトップなど、異なるデバイスでクリックとインストールを行ったユーザーもアトリビューションの対象とします。</td><td>AppsFlyerは、同一のデバイスでエンゲージメントとインストールが発生した場合にアトリビューションします。</td></tr><tr><td><span id="different-time-zones"></span><strong>タイムゾーンの違い</strong></td><td>Meta広告のレポートのデフォルトタイムゾーンはPSTです。 AppsFlyerのアプリ設定で指定したアプリのタイムゾーンと一致するように、必ず<a href="https://www.facebook.com/business/help/754049591334898" target="_blank">Meta広告マネージャでタイムゾーンを変更してください</a>。</td><td>AppsFlyerのアプリのデフォルトタイムゾーンはUTC+0です。<a href="./app-settings#localization-time-zone" target="_blank">アプリ設定ページ</a>でアプリのタイムゾーンを変更し、Meta広告マネージャで指定したタイムゾーンと一致させることができます。</td></tr><tr><td><span id="google-install-referrer"></span><strong>インストールリファラ</strong></td><td colspan="2">広告IDのないインストールがGoogle Playインストールリファラ、Facebookインストールリファラ、Instagramインストールリファラを介してMeta広告にアトリビューションされた場合、AppsFlyerはそのインストールをMeta広告に報告しません。このインストールはAppsFlyerには表示され、Meta広告には表示されないため、乖離が生じる場合があります。</td></tr></tbody></table>
+
+<div id="click-through-and-view-through-attribution" />
 
 ## クリックスルーアトリビューションとビュースルーアトリビューション
 
@@ -49,9 +57,13 @@ AppsFlyerのアトリビューション期間は、Meta広告の設定値に合�
 
 ![image (13).png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
 
+<div id="example" />
+
 > 📄 **例**
 >
 > アプリcom.greatappについて、AppsFlyer側のMeta広告のクリックルックバック期間を1日、Meta広告側をデフォルトの7日間に設定したとします。 FacebookでGreatappの広告をクリックし、2～7日後に初めてアプリを起動したユーザーは、AppsFlyerではオーガニックユーザーに分類されます。一方、Meta広告はこれらのユーザーを自社の成果として報告します。
+
+<div id="in-app-events-differences" />
 
 ## アプリ内イベントの乖離
 
@@ -65,6 +77,8 @@ Meta広告とAppsFlyerに表示されるインストール後のイベント（�
 | <span id="missing-event-values-on-facebook"></span>**Meta広告にイベント値が表示されない** | AppsFlyerは、イベントのマッピングに基づき、構造が正しいパラメータと値をMeta広告に送信します。 | イベント値をMeta広告に漏れなくマッピングするため、SDKのアプリ内イベントは<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-event-structure">AppsFlyerの推奨する構造</Anchor>に従って設定してください。 |
 | <span id="different-event-count"></span>**イベント数の違い** | Facebook（FB）ダッシュボードに表示される特定のアプリ内イベント（購入イベントなど）の件数が、AppsFlyer（AF）ダッシュボードの対応する件数と異なります。 | Facebook（FB）ダッシュボードはアクティビティベースですが、AppsFlyer（AF）のOverview dashboardとイベントダッシュボードはLTVベースです。イベント数を比較する場合は、AppsFlyerのアクティビティベースのダッシュボードを使用してください。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports#about-data-differences-and-discrepancies">LTVとアクティビティの違い</Anchor>を参照してください。 |
 
+<div id="installs-from-re-engagement-campaigns-in-my-ua-dashboard" />
+
 ## リエンゲージメントキャンペーンのインストールがUAダッシュボードに表示される理由
 
 リエンゲージメントキャンペーンでは、ユーザーがインストール済みのアプリを開くことがあります（**リエンゲージメント**）。また、同じデバイスに過去のインストール履歴があるとAppsFlyerが認識した場合、そのコンバージョンを**リアトリビューション**として扱うことがあります。
@@ -73,17 +87,25 @@ Meta広告とAppsFlyerに表示されるインストール後のイベント（�
 
 一方、初回インストールから**設定済みのリアトリビューション期間内**に発生したインストールはリアトリビューションと見なされ、AppsFlyerのリターゲティングページに表示されます。Meta広告では、新規インストールとして表示される場合があります。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > Meta広告ではリターゲティングキャンペーンのすべてのインストールが同じ場所に表示されますが、AppsFlyerのダッシュボードではOverview dashboard（新規インストール）とリターゲティングページ（リアトリビューションとリエンゲージメント）に分かれて表示されます。
+
+<div id="cross-device-attribution" />
 
 ## クロスデバイスアトリビューション
 
 Meta広告は、クロスデバイスアトリビューションを報告します。そのため、あるプラットフォーム（iOSまたはAndroid）向けのキャンペーンに、別のプラットフォームのインストールが表示される場合があります。
 
+<div id="example-1" />
+
 > 📄 **例**
 >
 > LindaがAndroidスマートフォンのFacebookでGreatAppのモバイル広告をクリックします。 Meta広告は、このクリックを元のAndroid向けキャンペーン「Android Females」の成果として記録します。 Lindaは、自宅のiPadにGreatAppをインストールすることにします。初回起動時にAppsFlyerがこのiOSインストールの流入元をMeta広告に問い合わせると、Meta広告は「Android Females」キャンペーンと回答します。
+
+<div id="validation-rules-and-protect360" />
 
 ## 検証ルールとProtect360
 
@@ -91,10 +113,14 @@ Meta広告は、クロスデバイスアトリビューションを報告しま�
 
 同様に、AppsFlyerの不正対策ソリューションであるProtect360を使用している場合も、Meta広告が自社の成果として報告するインストールをAppsFlyerが拒否することがあります。
 
+<div id="example-2" />
+
 > 📄 **例**
 >
 > GreatAppのUA担当マネージャーであるJeffが、北米のスペイン語話者のみをターゲットにした「SPNA」というキャンペーンを作成します。この条件を検証するため、Jeffはカナダと米国のユーザーのみを受け入れる検証ルールを設定します。
 > スペインにいるMeta広告のユーザーが広告をクリックしてアプリをインストールすると、Meta広告は自社の成果として報告します。一方、AppsFlyerは検証ルールを満たさないため、このインストールを拒否します。
+
+<div id="sdk-related-discrepancies" />
 
 ## SDKに関連する乖離
 
@@ -103,6 +129,8 @@ Meta広告は、クロスデバイスアトリビューションを報告しま�
 * Meta広告でのアプリ内イベントの二重報告を避けるには、以下の**いずれか**の方法を使用してください。
   * Facebook SDKでイベントを設定しないようにします。
   * AppsFlyer側で<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-in-app-event-mapping">Meta広告へのアプリ内イベントのマッピング</Anchor>を無効にします。
+
+<div id="meta-probabilistic-modeling-aem-discrepancies-in-ios-apps" />
 
 ## iOSアプリにおけるMetaの確率論的モデリング（AEM）による乖離
 

@@ -84,6 +84,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="see-also" />
+
 > 📄 **参照：**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/implement-validation-rules-to-prevent-fraud">アプリ所有者向けの検証ルール</Anchor>

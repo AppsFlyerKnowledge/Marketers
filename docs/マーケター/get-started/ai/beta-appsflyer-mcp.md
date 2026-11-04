@@ -34,6 +34,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="what-is-appsflyer-mcp" />
+
 ## AppsFlyer MCPとは
 
 AppsFlyer MCPを使用すると、LLMをAppsFlyerプラットフォームに安全に接続し、簡単な会話を通じてマーケティングデータを活用できます。 AppsFlyer MCPは、リアルタイムのデータに基づく、より的確で迅速な意思決定を支援します。
@@ -46,13 +48,19 @@ MCPでは、以下の操作が可能です。
 * Audiencesの接続の点検・トラブルシューティング。
 * 設定ガイドや製品ドキュメントを取得。
 
+<div id="set-up-appsflyer-mcp" />
+
 ## AppsFlyer MCPの設定
 
 AppsFlyer MCPは、チャットアシスタント、CLI、IDE、自動化プラットフォーム、自社環境で運用するエージェントに接続できます。設定方法は、利用するクライアントと、そのクライアントが対応する認証方式によって異なります。
 
+<div id="note" />
+
 > 📘 **注記**
 >
 > プラットフォームによっては、MCPサーバーの接続に管理者の承認が必要な場合があります。以下で説明する設定項目が表示されない場合は、IT管理者またはワークスペース管理者にお問い合わせください。
+
+<div id="authentication-methods" />
 
 ## 認証方式
 
@@ -63,11 +71,15 @@ AppsFlyer MCPは、2つの認証方式に対応しています。 AppsFlyer MCP�
 | ブラウザでのOAuthログイン | Gemini CLI、Copilot CLI、ChatGPT、Claude.ai、Claude Desktop | 随時の質問、探索的な分析、単発のレポート作成 | 接続から7日間有効です。セッション終了時には再認証が必要です。 |
 | Bearerトークン認証 | Claude Code、自動化プラットフォーム、自社環境で運用するエージェント、外部連携 | 自動化、定期実行タスク、バックグラウンドエージェント、対話を必要としないワークフロー | 手動で失効させるまで有効です。 |
 
+<div id="browser-based-oauth-login" />
+
 ### ブラウザでのOAuthログイン
 
 ブラウザでのOAuthログインでは、ブラウザ上で操作して接続します。接続時に、MCPクライアントがブラウザウィンドウを開き、AppsFlyerへのログインを求めます。アクセスを承認すると、クライアントがAppsFlyerアカウントに接続します。
 
 対話形式のセッション、探索的な分析、単発のレポート作成に適しています。
+
+<div id="bearer-token-authentication" />
 
 ### Bearerトークン認証
 
@@ -81,6 +93,8 @@ Authorization: Bearer <0>
 
 トークンを作成するには、［**アカウントメニュー > セキュリティセンター > AppsFlyerトークン**］に移動し、MCPトークンを作成します。
 
+<div id="set-up-by-client" />
+
 ## クライアント別の設定方法
 
 <div id="h_claude-ai-and-claude-desktop" />
@@ -89,9 +103,13 @@ Authorization: Bearer <0>
 
 ClaudeのチャットとClaude Coworkでは、ブラウザでのOAuthログインを使用します。この手順は、Web版およびデスクトップ版のClaudeとCoworkに適用されます。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > TeamプランおよびEnterpriseプランでは、組織全体の連携を追加できるのはオーナーまたは管理者のみです。
+
+<div id="set-up-claude-chat-and-cowork" />
 
 #### ClaudeのチャットとCoworkの設定
 
@@ -107,10 +125,14 @@ ClaudeのチャットとClaude Coworkでは、ブラウザでのOAuthログイ�
 8. コネクタのセクションで、AppsFlyerの接続の横にある［**Connect**］（接続）をクリックします。
 9. 画面の案内に従ってAppsFlyerにログインします。
 
+<div id="test-the-claude-connection" />
+
 #### Claudeの接続テスト
 
 1. 任意のチャットウィンドウで、設定ボタンをクリックします。
 2. AppsFlyer MCPが正しく設定されている場合は、メニューにAppsFlyerのツールが表示されます。
+
+<div id="note-2" />
 
 > 📘 **注記**
 >
@@ -123,6 +145,8 @@ ClaudeのチャットとClaude Coworkでは、ブラウザでのOAuthログイ�
 <Accordion title="Claude Code">
 
 Claude Codeでは、自動化、定期実行、対話を必要としないワークフローにBearerトークン認証を使用します。
+
+<div id="add-appsflyer-mcp-to-claude-code" />
 
 #### Claude CodeへのAppsFlyer MCPの追加
 
@@ -215,6 +239,8 @@ ChatGPTでAppsFlyer MCPを使用する方法は2つあります。
 * [カスタムGPT](#appsflyerのカスタムgptの追加)：AppsFlyerのアシスタントを手軽に利用したい場合に適しています。
 * [ChatGPTでのMCP利用](#chatgptへのappsflyer-mcpの追加)：AppsFlyerのデータをChatGPTでの会話に取り込みたい場合に適しています。
 
+<div id="add-the-appsflyer-custom-gpt" />
+
 #### AppsFlyerのカスタムGPTの追加
 
 1. <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyerのカスタムGPT</Anchor>をクリックします。
@@ -226,7 +252,11 @@ ChatGPTでAppsFlyer MCPを使用する方法は2つあります。
    先週のMetaキャンペーンのパフォーマンスを表示してください。
    ```
 
+<div id="add-appsflyer-mcp-in-chatgpt" />
+
 #### ChatGPTへのAppsFlyer MCPの追加
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -253,6 +283,8 @@ ChatGPTでAppsFlyer MCPを使用する方法は2つあります。
 
 Gemini CLIでは、ブラウザでのOAuthログインを使用します。
 
+<div id="add-appsflyer-mcp-to-gemini-cli" />
+
 #### Gemini CLIへのAppsFlyer MCPの追加
 
 1. ターミナルで、AppsFlyer MCPサーバーを追加します。
@@ -277,6 +309,8 @@ Gemini CLIでは、ブラウザでのOAuthログインを使用します。
    私のAppsFlyerアカウントには、どのアプリがありますか？
    ```
 
+<div id="troubleshoot-gemini-cli-authentication" />
+
 #### Gemini CLIの認証に関するトラブルシューティング
 
 認証に失敗する場合は、Gemini CLIをデバッグモードで起動します。
@@ -294,6 +328,8 @@ GEMINI_LOG_LEVEL=debug gemini
 <Accordion title="Copilot CLI">
 
 Copilot CLIでは、ブラウザでのOAuthログインを使用します。
+
+<div id="add-appsflyer-mcp-to-copilot-cli" />
 
 #### Copilot CLIへのAppsFlyer MCPの追加
 
@@ -342,6 +378,8 @@ Copilot CLIでは、ブラウザでのOAuthログインを使用します。
 
 MCPトークンは、作成した管理者の権限を引き継ぐ、アカウント単位のBearerトークンです。［<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">セキュリティセンター > AppsFlyerトークン</Anchor>］からアクセスして管理できます。
 
+<div id="mcp-connection-details" />
+
 #### MCPの接続情報
 
 自動化プラットフォームまたはエージェントプラットフォームをAppsFlyer MCPに接続するには、以下の設定を使用します。
@@ -350,9 +388,13 @@ MCPトークンは、作成した管理者の権限を引き継ぐ、アカウ�
 * **Base URL / Endpoint（ベースURL / エンドポイント）：**`https://mcp.appsflyer.com/auth/mcp`
 * **Bearer Token（Bearerトークン）：** お客様のMCPトークン
 
+<div id="note-4" />
+
 > 📘 **注意**
 >
 > トークンを公開したり、誰でもアクセスできる場所で共有したりしないでください。非公開の認証情報として取り扱ってください。 MCPトークンを使用すると、MCP環境に直接アクセスできます。
+
+<div id="example-use-cases" />
 
 #### 活用例
 
@@ -387,6 +429,8 @@ AppsFlyer MCPは、以下のプラットフォームへの接続にも対応し�
 
 AppsFlyer MCPは、1つの接続につき1つのAppsFlyerアカウントに接続します。
 
+<div id="switch-between-accounts-browser-based-oauth" />
+
 #### アカウントの切り替え（ブラウザでのOAuth）
 
 同じメールアドレスで複数のAppsFlyerアカウントを管理している場合は、以下の手順でMCPの接続先アカウントを切り替えられます。
@@ -395,6 +439,8 @@ AppsFlyer MCPは、1つの接続につき1つのAppsFlyerアカウントに接�
 2. MCPクライアントで再度ログインします。
 
 1つの接続で複数のアカウントを並べて表示したり、照会したりすることはできません。
+
+<div id="connect-multiple-accounts-simultaneously-bearer-token" />
 
 #### 複数アカウントへの同時接続（Bearerトークン）
 
@@ -407,11 +453,17 @@ AppsFlyer MCPは、1つの接続につき1つのAppsFlyerアカウントに接�
 
 </Accordion>
 
+<div id="use-appsflyer-mcp" />
+
 ## AppsFlyer MCPの利用
+
+<div id="use-cases-and-prompts" />
 
 ### 用途とプロンプト
 
 AppsFlyer MCPは、マーケティング分析、パフォーマンスに関する知見、設定情報を取得するためのツールとリソースを提供します。
+
+<div id="important" />
 
 > 🚧 **重要**
 >
@@ -444,6 +496,8 @@ AppsFlyer MCPは、マーケティング分析、パフォーマンスに関す�
 **プロンプト：** 「先週とその前の週のD1リテンションを、メディアソース別に比較してください。」
 
 **想定されるAIの回答：** D1リテンション率をメディアソース別にグループ化し、前週と比較します。
+
+<div id="note-5" />
 
 > 📘 **注記**
 >
@@ -579,6 +633,8 @@ AppsFlyerのドキュメントやDevHubのリソースにすばやくアクセ�
 
 <Accordion title="Audiencesの管理">
 
+<div id="note-6" />
+
 ### Audiencesの管理
 
 オーディエンスの構成、所有者、パートナーへの接続、実行中のテストを把握できます。アップロードの状態を監視し、接続の失敗や更新されていないオーディエンスを検出して、各オーディエンスの設定を確認できます。これらの情報を活用して、部門を横断したキャンペーン管理を効率化できます。
@@ -693,6 +749,8 @@ AppsFlyerアカウントのユーザー情報とロール情報を取得でき�
 
 </Accordion>
 
+<div id="other-information" />
+
 ## その他の情報
 
 <div id="h_privacy-and-security" />
@@ -701,13 +759,19 @@ AppsFlyerアカウントのユーザー情報とロール情報を取得でき�
 
 AppsFlyer MCPを使用すると、選択したAIツールから、既存の権限に基づいてAppsFlyerのデータを照会できます。
 
+<div id="data-processing" />
+
 #### データ処理
 
 AppsFlyer MCPは、安全なプロキシとして機能します。 AppsFlyerのデータをリアルタイムに取得し、質問への回答に必要なデータを返します。 AppsFlyer MCPは、照会結果をアーカイブしたり、長期間保存したりしません。
 
+<div id="credentials" />
+
 #### 認証情報
 
 AppsFlyerにログインすることで、AppsFlyer MCPがお客様に代わってAPIを呼び出せるようになります。 AppsFlyerの認証情報がAIツールに共有されることはありません。
+
+<div id="permissions" />
 
 #### 権限
 
@@ -715,15 +779,21 @@ AppsFlyer MCPは、既存のAppsFlyerの権限を使用します。ユーザー�
 
 MCPへのアクセス用に、別途権限を設定する必要はありません。
 
+<div id="read-and-write-access" />
+
 #### 読み取りと書き込みの権限
 
 AppsFlyer MCPのほとんどのツールは、読み取りと照会のみを行います。例外はcreate\_onelink\_linkで、アカウント内にOneLinkリンクを作成します。リンクを作成する前に、AIが詳細を表示し、確認を求めます。承認するまで、リンクは作成されません。
+
+<div id="ai-provider-data-usage" />
 
 #### AI提供元によるデータの利用
 
 AppsFlyer MCPで取得したデータは、質問に回答するため、選択したAIツールに共有される場合があります。共有されるのは、回答の生成に必要なデータのみです。
 
 選択したAIツールによるデータの保存、処理、学習への利用について、AppsFlyerは管理しません。 AppsFlyer MCPを接続する前に、AI提供元の利用規約とデータ利用ポリシーを確認してください。
+
+<div id="certifications" />
 
 #### 認証
 
@@ -764,6 +834,8 @@ AppsFlyerは、ISO 27001とSOC 2の認証を取得しています。 ISO 42001�
 | MCPの無効化 | <ul><li>MCPはデフォルトで有効です。管理者は、［**アカウントとプロフィール > AI機能**］で無効にできます。</li><li>MCPを無効にすると、ユーザーは外部のAIツールからMCPを通じてAppsFlyerのデータにアクセスできなくなります。</li><li>既存の接続は、現在のセッションの有効期限が切れるまで継続する場合があります。</li><li>MCPを無効にしても、通常のAPI接続やAppsFlyerのほかのAI機能には影響しません。</li><li>MCPトークンを使用している場合は、先に［**セキュリティセンター > AppsFlyerトークン**］で削除してください。</li></ul> |
 
 </Accordion>
+
+<div id="troubleshoot-connection-issues" />
 
 ## 接続に関するトラブルシューティング
 

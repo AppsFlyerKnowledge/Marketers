@@ -25,6 +25,8 @@ x-zendesk:
 
 > **概要：** APIを使い、AppsFlyerアカウント全体または個別のアプリの広告収益パートナー連携を設定します。
 
+<div id="ad-revenue-partner-integration-api" />
+
 ## 広告収益パートナー連携API
 
 広告収益パートナー連携APIでは、次のことができます。
@@ -42,6 +44,8 @@ x-zendesk:
 2. 以下の表に従い、APIリクエストに含めるパラメータを準備します。
 3. パラメータの値を開発者に渡し、DevHubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">連携設定APIの手順</Anchor>に従って実装するよう依頼します。  
    連携は、UTCの翌日00:00に有効になります。
+
+<div id="request-parameters" />
 
 #### リクエストパラメータ
 
@@ -69,6 +73,8 @@ x-zendesk:
 2. 開発者に、DevHubの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">連携一覧取得APIの手順</Anchor>に従うよう依頼します。
 
 </Accordion>
+
+<div id="specs-and-limitations" />
 
 ### 仕様と制限事項
 

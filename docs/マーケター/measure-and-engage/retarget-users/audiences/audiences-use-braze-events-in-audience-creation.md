@@ -25,10 +25,14 @@ x-zendesk:
 
 BrazeアカウントとAppsFlyer オーディエンスの間に着信接続を設定することで、Brazeメッセージエンゲージメントイベントデータをオーディエンスに取り込めます。その後、オーディエンスを定義する際に、このデータを<Anchor target="_blank" href="/marketers/ja/docs/audiences-guide#all-about-rulesets">ルールセット</Anchor>で活用できます。
 
+<div id="important" />
+
 > 🚧 **前提条件**
 >
 > * Braze SDKとAppsFlyer SDKの両方をアプリに統合する必要があります。
 > * Brazeの**Currents**機能にサブスクライブする必要があります。
+
+<div id="set-up-the-braze-incoming-connection" />
 
 ## Brazeの着信接続を設定する
 
@@ -46,6 +50,8 @@ Brazeからの着信接続を作成するには、アプリ内のAppsFlyer SDK�
 
 * Braze External ID パラメータ
 * CUIDフィールド
+
+<div id="using-a-braze-external-id-parameter" />
 
 #### **Braze外部IDパラメータを利用する**
 
@@ -74,6 +80,8 @@ partnerInfo:brazeInfo];
 
 </Tab>
 </Tabs>
+
+<div id="using-the-cuid-field" />
 
 #### **CUIDフィールドの利用**
 
@@ -131,7 +139,11 @@ partnerInfo:brazeInfo];
 9. [カスタマー行動とユーザーイベント] セクションで、[**カスタマー行動とユーザーイベントを追跡する**] オプションをオフのままにします。
 10. [**現在の起動**] ボタンをクリックして設定を保存し、Brazeメッセージエンゲージメントイベントをオーディエンスに送信し始めます。
 
+<div id="supported-events" />
+
 #### サポートされているイベント
+
+<div id="note" />
 
 > 📘 **サポートされているBrazeイベント**
 >
@@ -151,6 +163,8 @@ partnerInfo:brazeInfo];
 > * SMS\/MMS送信
 
 </Accordion>
+
+<div id="using-braze-data-in-audiences" />
 
 ## オーディエンスで Braze データを利用する
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
+<div id="delete-user-history" />
+
 ## ユーザーの履歴を削除する
 
 GDPRやCCPAなどのプライバシー規制では、ユーザーに*データの消去を求める権利*が認められています。
@@ -31,6 +33,8 @@ GDPRやCCPAなどのプライバシー規制では、ユーザーに*データ�
 **例：** ユーザーから、自分に関連するデータを削除してほしいという依頼がありました。 GDPRでは、30日以内に対応することが求められています。
 
 **必要な対応：** <Anchor target="_blank" href="/marketers/ja/docs/send-opendsr-api-requests">OpenDSR API</Anchor>を使って消去リクエストを送信します。
+
+<div id="stop-attributing-installs-to-a-media-source" />
 
 ## メディアソースのインストール計測を停止する
 
@@ -50,13 +54,19 @@ AppsFlyerは、設定されたメディアソースのインストールとイ�
 * **自社メディア：**
   * 該当するOneLinkカスタムリンクの使用を停止します。
 
+<div id="remove-or-delete-an-app" />
+
 ## アプリの削除
 
 アプリは一時的に削除できます。
 
+<div id="temporarily-removing-an-app" />
+
 #### アプリの一時的な削除
 
 アプリを一時的に削除すると、データの記録が停止してダッシュボードに表示されなくなり、［マイアプリ］ページではグレー表示になります。ただし、アカウントとの紐付けは維持されるため、復元できます。アプリを復元した際には、アプリ設定、承認済み代理店、トークンなどの過去の情報が保持されます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -73,9 +83,13 @@ AppsFlyerは、設定されたメディアソースのインストールとイ�
 
 * 担当CSMに連絡するか、[hello@appsflyer.com](mailto:hello@appsFlyer.com)にメールを送信して、手続きを開始してください。 CSMがアプリを復元すると、アカウントに再追加できます。
 
+<div id="transfer-apps-between-accounts" />
+
 ## アカウント間でのアプリの移管
 
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/transferring-apps-between-accounts">アカウント間でのアプリの移管</Anchor>を参照してください。
+
+<div id="delete-your-account-or-downgrade-your-subscription-plan" />
 
 ## アカウントの削除または契約プランのダウングレード
 

@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerをIDプロバイダー（IdP）と連携すると、アカウントのユーザーがシングルサインオン（SSO）でAppsFlyerにログインできます。 SSO認証の設定と有効化、および別のログイン方法を割り当てる適用除外ユーザーの追加（任意）について説明します。
 
+<div id="considerations" />
+
 ## 注意事項
 
 * AppsFlyerとIDプロバイダー（IdP）の両方で、同じメールアドレスを使ってユーザーを登録する必要があります。
@@ -41,9 +43,13 @@ x-zendesk:
 * 適用除外ユーザーの代替ログイン方法として、SMSは利用できません。
 * 適用除外ユーザーを追加しなかった場合、有効化後はすべてのユーザーにSSOでのログインが必須となります。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > SSOを有効にする前に、信頼できる管理者を少なくとも1名、適用除外ユーザーに追加することを推奨します。 SSOの設定に誤りがあっても、アカウントにログインできなくなる事態を防げます。
+
+<div id="access-the-sso-configuration-page" />
 
 ## SSO設定ページを開く
 
@@ -51,9 +57,13 @@ x-zendesk:
 2. <strong>［ログインセキュリティの強化］</strong>で、<strong>［ログイン方法を設定］</strong>を選択します。
 3. <strong>［ログインセキュリティ］</strong>ページで、<strong>［SSOを設定］</strong>をクリックします。
 
+<div id="set-up-sso" />
+
 ## SSOの設定
 
 以下の手順に従い、IdPとAppsFlyerの両方でSSOを設定します。 設定のステータスは、SSOが設定済みの場合は<strong>［有効］</strong>、未設定または設定を削除した場合は<strong>［未設定］</strong>になります。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -74,6 +84,8 @@ x-zendesk:
 * <Anchor target="_blank" href="/marketers/ja/docs/configure-appsflyer-sso-in-onelogin">OneLogin</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/configure-appsflyer-sso-in-ping-identity">Ping Identity</Anchor>
 
+<div id="setup-overview-for-other-idp-platforms" />
+
 #### そのほかのIdPの設定概要
 
 そのほかのIdPの設定手順は、次のとおりです。
@@ -81,6 +93,8 @@ x-zendesk:
 * SAML 2.0プロトコルを使用してIdPにAppsFlyerアプリを作成し、[AppsFlyerの認証証明書](#the-authentication-certificate)をIdPに設定します。
 * 作成したAppsFlyerアプリにユーザーを割り当てます。
 * AppsFlyerに設定するIdPの証明書またはメタデータを取得します（[手順2：AppsFlyer側の設定→5. IdPメタデータの登録](#step-5-provide-idp-metadata)を参照）。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -107,19 +121,27 @@ IdP側の設定が完了したら、以下の手順でAppsFlyerにSSO認証を�
    * [サービスプロバイダー（AppsFlyer）](#サービスプロバイダーappsflyer)
 2. <strong>［次へ］</strong>をクリックします。
 
+<div id="identity-provider-idp" />
+
 #### IDプロバイダー（IdP）
 
 ユーザーはIdPの認証プラグインやWebページからログインし、認証後にAppsFlyerへ移動します。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > このオプションを選択すると、IdPとサービスプロバイダー（AppsFlyer）のどちらからでもログインできます。
+
+<div id="service-provider-appsflyer" />
 
 #### サービスプロバイダー（AppsFlyer）
 
 ユーザーは<Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">AppsFlyerのSSOログインページ</Anchor>で<strong>［SSOでログイン］</strong>をクリックし、メールアドレスを入力します。認証のためにIdPへ移動し、認証後にAppsFlyerのホームページへ戻ります。
 
 [<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -137,6 +159,8 @@ AppsFlyerは、データの暗号化とSSOリクエストの署名に使用す�
 **次の手順で選択します。**
 
 * 証明書の種類を選択し、<strong>［次へ］</strong>をクリックします。
+
+<div id="note-5" />
 
 > 📘 **注意**
 >
@@ -180,6 +204,8 @@ AppsFlyerは、データの暗号化とSSOリクエストの署名に使用す�
 
 適用除外ユーザーの追加は任意です。適用除外ユーザーを追加しなかった場合、有効化後は全ユーザーにSSOでのログインが必須となります。
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > SSOを有効にする前に、信頼できる管理者を少なくとも1名、適用除外ユーザーに追加してください。 SSOの設定に誤りがあっても、このユーザーが割り当てられた代替方法でログインし、設定を修正できます。
@@ -195,6 +221,8 @@ AppsFlyerは、データの暗号化とSSOリクエストの署名に使用す�
 5. 追加するユーザーごとに、手順2～4を繰り返します。
 6. <strong>［適用除外ユーザーを追加］</strong>をクリックします。
 
+<div id="add-login-methods-for-multiple-users" />
+
 ### **複数のユーザーにログイン方法をまとめて設定する**
 
 複数の適用除外ユーザーに同じ代替ログイン方法を設定するには、次の手順に従います。
@@ -204,6 +232,8 @@ AppsFlyerは、データの暗号化とSSOリクエストの署名に使用す�
 3. 次のいずれかを選択します。
    * **選択したすべてのユーザーにユーザー名とパスワードを適用**
    * **選択したすべてのユーザーに認証アプリを適用**
+
+<div id="delete-an-exception-user" />
 
 ### **適用除外ユーザーを削除する**
 
@@ -219,6 +249,8 @@ AppsFlyerは、データの暗号化とSSOリクエストの署名に使用す�
 
 <Accordion title="6. SSOを有効化する">
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > SSOを有効にする前に、信頼できる管理者を少なくとも1名、適用除外ユーザーに追加することを推奨します。 SSOの設定に誤りがあっても、アカウントにログインできなくなる事態を防げます。
@@ -232,6 +264,8 @@ SSOを有効にするには、次の手順に従います。
 設定に誤りがあると、ユーザーがAppsFlyerにログインできなくなることがあります。 SSOを有効にする前に、設定内容を確認してください。
 
 適用除外ユーザーが追加されていない場合、確認ダイアログには、有効化後は全ユーザーにSSOでのログインが必須になることを示すメッセージが表示されます。
+
+<div id="activation-results" />
 
 ### **有効化の結果**
 
@@ -256,6 +290,8 @@ SSOの設定を編集するには、次の手順に従います。
 
 証明書の種類や認証を開始する場所を変更すると、AppsFlyerのメタデータも変更されます。変更を保存したら、サービスプロバイダー（AppsFlyer）の最新SSOメタデータをすぐにコピーし、IdPのSAML設定に登録してください。
 
+<div id="edit-exception-users" />
+
 ### **適用除外ユーザーの編集**
 
 適用除外ユーザーを編集するには、次の手順に従います。
@@ -278,6 +314,8 @@ SSOの設定を編集するには、次の手順に従います。
 
 IdPとAppsFlyerの両方で設定が完了したら、IdPまたはサービスプロバイダー（AppsFlyer）の[URLコールバック方式](#single-signon-url-configuration)の**いずれか一方**で、AppsFlyerにログインできることを確認します（両方を使うものではありません）。
 
+<div id="test-authentication-via-your-idp" />
+
 #### IdP経由の認証をテストする
 
 IdPからログインする方式を設定した場合は、IdPのプラグインまたはWebページからAppsFlyerにアクセスできることを、次の手順で確認します。
@@ -286,6 +324,8 @@ IdPからログインする方式を設定した場合は、IdPのプラグイ�
 2. ブラウザでシークレットモードのページを開きます。
 3. IdPのWebページに移動します。 IdPにログインしていないため、認証の手順が表示されます。対象ユーザーでログインします。
 4. AppsFlyerを検索して選択します。 AppsFlyerのホームページに移動します。この画面に移動できれば、正常に動作しています。
+
+<div id="test-authentication-via-your-service-provider-appsflyer" />
 
 #### サービスプロバイダー（AppsFlyer）経由の認証をテストする
 
@@ -305,11 +345,15 @@ IdPからログインする方式を設定した場合は、IdPのプラグイ�
 
 </Accordion>
 
+<div id="manage-sso-configuration" />
+
 ## SSO設定の管理
 
 SSOの設定後も、設定の編集や削除ができます。
 
 [SSO設定ページを開く方法](#sso設定ページを開く)を確認してください。
+
+<div id="zd-edit-sso" />
 
 <div id="edit-sso" />
 
@@ -323,9 +367,13 @@ SSOの設定後も、設定の編集や削除ができます。
 * IDプロバイダーのメタデータ
 * 適用除外ユーザー
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > 証明書の種類や認証を開始する場所を変更すると、AppsFlyerのメタデータも変更されます。変更を保存したら、AppsFlyerからサービスプロバイダーの最新メタデータをすぐにコピーし、IDプロバイダー（IdP）のSAML設定に登録してください。
+
+<div id="note-8" />
 
 > 📘 **注意**
 >
@@ -339,6 +387,8 @@ SSOの設定を編集するには、次の手順に従います。
 4. **Save**をクリックします。
 5. <strong>［変更を保存しますか？］</strong>ダイアログで、変更内容を確認します。
 6. <strong>［変更を保存］</strong>をクリックします。
+
+<div id="edit-exception-users-1" />
 
 ### 適用除外ユーザーの編集
 
@@ -385,6 +435,8 @@ SSOの設定を削除すると、アカウントに保存されたSSOメタデ�
 | 推奨する適用除外ユーザー | SSOを有効にする前に、信頼できる管理者を少なくとも1名、適用除外ユーザーに追加することを推奨します。 SSOの設定に誤りがあっても、アカウントにログインできなくなる事態を防げます。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

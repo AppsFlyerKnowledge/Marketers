@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > **概要：** ウェブアプリ用のTikTok Web Ads統合を設定して、Events APIを介してTikTokにウェブコンバージョン信号を送信します。
 
+<div id="overview" />
+
 ## オーバービュー
 
 AppsFlyerは、ウェブアプリキャンペーンのためのTikTok Web Ads (`tiktokweb_int`)との統合をサポートしており、TikTokのEvents APIを通じてアトリビューションとコンバージョンデータを直接報告できます。このデータを、TikTokは広告ターゲティングの最適化、パフォーマンスの計測、カスタムオーディエンスの作成に活用できます。
 
 仕組みは次のとおりです：ユーザーがTikTok広告をクリックしてウェブサイトにアクセスし、その後ウェブサイトイベント（例えば、購入やサインアップ）を完了すると、AppsFlyerはEvents APIを介してTikTokにコンバージョン信号を送信します。TikTokはこのデータを使用して広告ターゲティングを最適化し、キャンペーンのパフォーマンスを測定します。
 
+<div id="see-also" />
+
 > 📄 **参照：**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/web-performance-measurement-overview">AppsFlyer Web Attribution - Overview</Anchor>
 
+<div id="important" />
+
 > 🚧 **【重要】**
 >
 > 現在、統合はEvents APIを介して再エンゲージメントのポストバックを送信することをサポートしていません。
+
+<div id="prerequisites" />
 
 ### 事前準備
 
@@ -44,12 +52,16 @@ AppsFlyerは、ウェブアプリキャンペーンのためのTikTok Web Ads (`
 * AppsFlyerに設定されたウェブアプリ
 * <Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">TikTok Ads Manager</Anchor>のビジネスアカウント
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### ウェブアプリ用のTikTok Web Adsを設定する方法
 
 設定には、TikTok Web AdsとAppsFlyerの間の統合を定義し、TikTok Ads Managerでキャンペーンを構成することが含まれます。以下の部分が含まれます：
 
 * 第1部：AppsFlyer管理画面でTikTok Web広告の連携を設定する（必須）
 * 第1部：TikTok AdsでAppsFlyerの連携を設定する(必須)
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## 第1部：AppsFlyer上でのTikTok Web Adsの連携設定
 
@@ -68,6 +80,8 @@ TikTok Ad Web連携を有効にするには：
 5. **Pixel ID：Pixel ID を入力してください。それを生成するか、<Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">TikTokのドキュメント</Anchor>の指示に従ってTikTok Ads Managerから取得できます。**
 6. **Access Token：Access Tokenを入力してください。生成または取得するには、同じ<Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">TikTokのドキュメント</Anchor>に従ってください。**
 7. **ユーザーの個人情報のTikTok Adsでの使用を制限する（CCPA）：このトグルをオンにすると、<Anchor target="_blank" href="/marketers/ja/docs/send-opendsr-api-requests">CCPAに沿ったデータ保護の遵守</Anchor>が可能になります。**
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -95,12 +109,16 @@ AppsFlyerがTikTok Adsに送信するウェブコンバージョンイベント�
 8. ［任意］**条件を追加**アイコンをクリックして、ポストバックする<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#条件付きアプリ内イベントポストバック">イベントの条件を設定可能です。</Anchor>
 9. **連携を保存**をクリックします。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > * 購入イベントを設定する場合は、**送信データ**項目は**イベント値と収益を送信**と設定します。他のオプションを選択した場合はポストバックに失敗します。
 > * また、現在収益の値を含めることができるのは購入(Purchase)イベントのみです。
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## パート2:TikTok Ads上におけるAppsFlyerとの連携設定
 
@@ -136,6 +154,8 @@ AppsFlyerから送信された任意の事前定義されたアプリ内イベ�
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **注意**
    >
    > `campaign-name_web`*campaign-name\_web キャンペーン分析を簡素化するために、キャンペーン名の冒頭または末尾に、キャンペーンタイプを示す\_webまたは\_mobileを追加することをオススメします。（例：campaign-name\_web）
@@ -149,6 +169,8 @@ AppsFlyerから送信された任意の事前定義されたアプリ内イベ�
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **注意**
    >
    > TikTokは、広告がクリックされたときに宛先URLに`ttclid={{ttclid}}`を自動的に追加します。
@@ -156,11 +178,15 @@ AppsFlyerから送信された任意の事前定義されたアプリ内イベ�
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## ウェブ帰属データを表示
 
 ウェブコンバージョンイベントは、`tiktokweb_int` PIDの下で`media_source`フィールドに報告されます。ウェブ帰属データを表示するには、生データレポートを使用し、`media_source = tiktokweb_int`でフィルタリングしてTikTokウェブサイトアプリのコンバージョンを特定します。
 
 ウェブサイトアプリキャンペーンのダッシュボードレポートはまだ利用できません。他のチャネルと並行してウェブキャンペーンのパフォーマンスを分析できる統一されたレポートビューが、将来のリリースに向けて計画されています。
+
+<div id="traits-and-limitations" />
 
 ## 特徴と制限事項
 

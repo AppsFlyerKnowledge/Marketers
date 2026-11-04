@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** OneLinkのショートURLとロングURLの違い、およびAppsFlyer以外でロングURLを作成する方法を説明します。
 
+<div id="about-onelink-links" />
+
 ## **OneLinkリンクについて**
 
 * あらゆるマーケティングチャネルで利用でき、ユーザーを次のいずれかへ誘導します。 
@@ -42,10 +44,14 @@ x-zendesk:
     * ロングURLはすべてのリンクパラメータが外部から見えるため、改ざんされる可能性があります。
     * ブラウザ、SMSなど、URLの文字数に制限がある場所では、ロングURLが上限を超える場合があります。
 
+<div id="advantages-of-a-short-onelink-url-compared-to-a-long-url" />
+
 ### ロングURLと比較したOneLinkショートURLのメリット
 
 * AppsFlyer管理画面でOneLinkショートURLのパラメータを更新しても、ショートリンクIDは変わりません。そのため、URLや関連するQRコードをすでに使用している場合でも、差し替えや再配布は不要です。
 * 更新したパラメータは、AppsFlyerのアトリビューションとレポートにそのまま適用されます。QRコードは引き続き機能し、変更内容が自動的に反映されます。
+
+<div id="procedures" />
 
 ## 手順
 

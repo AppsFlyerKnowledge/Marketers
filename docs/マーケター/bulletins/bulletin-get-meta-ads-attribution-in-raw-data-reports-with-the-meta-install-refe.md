@@ -28,6 +28,8 @@ x-zendesk:
 | **何を知っておく必要がありますか？** | リファラーデータはMeta広告連携を通じて提供されるデータよりも優先され、ローデータレポートで利用できます。また、このソリューションはクリックスルー計測にのみ適用され、ビュースルー計測には適用されません。 |
 | **影響範囲は？** | <ul><li>ローデータレポートでMetaへアトリビューションされるインストールの増加が見られる場合があります。</li><li>2つの新しいマッチタイプ項目 `fb_referrer` と `ig_referrer` がローデータレポートに含まれます：<ul><li>`fb_referrer` ：Facebookアプリからのアトリビューション</li><li>`ig_referrer` ：Instagramアプリからのアトリビューション</li><li>`fb_referrer` または `ig_referrer` ：Facebook Audience Networkからのアトリビューション</li></ul></li></ul> |
 
+<div id="see-also" />
+
 > 📄 **参照：**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/meta-ads-integration-setup#userlevel-data">Metaインストールリファラー</Anchor>

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **概要：** トークンは、データのセキュリティを高めるために使用します。ユーザーがAppsFlyer API経由でデータにアクセスしたり、サーバー間通信でイベントデータを受信したりする際に使用します。管理者は、データの送受信を中断せずに、複数のトークンを管理できます。必要に応じて、APIトークンやサーバー間トークンの作成、名前の変更、削除を行えます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
@@ -33,6 +35,8 @@ x-zendesk:
 > * トークンの確認と管理を行えるのは、管理者のみです。一般のアカウントユーザーは、［トークン］ページにアクセスできません。
 > * トークンはデータへのアクセスを可能にするため、安全に保管してください。公開コードリポジトリにトークンを掲載しないでください。
 > * 180日ごとにトークンを切り替えることを推奨します。
+
+<div id="about-appsflyer-tokens" />
 
 ## AppsFlyerトークンについて
 
@@ -45,10 +49,14 @@ x-zendesk:
 * テスト
 * OneLink APIなど、特定機能での利用
 
+<div id="reaching-the-tokens-page" />
+
 ## トークンページを開く
 
 1. 上部のバーでアカウントメニュー（メールアドレスのドロップダウン）を開き、<strong>［セキュリティセンター］</strong>を選択します。
 2. <strong>［AppsFlyer APIトークン］</strong>セクションで、**［AppsFlyer APIトークンを管理］をクリックします。** 現在のトークンが表示されます。
+
+<div id="token-types" />
 
 ## トークンの種類
 
@@ -61,13 +69,19 @@ x-zendesk:
 | <span id="s2s-token"></span>S2Sトークン | サーバー間通信でデータを送信するために使用します。 |
 | <span id="mcp-token"></span>MCPトークン | サードパーティのシステムや自社運用のシステムを、AppsFlyer MCPで認証するために使用します。 |
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/beta-advanced-security-protect360-module">Advanced Security Module</Anchor>など、専用のAPI V2トークンを必要とする機能を連携する際に、すでに上限の2個に達している場合は、新規発行を依頼する代わりに既存のAPI V2トークンを再利用できます。同じトークンを複数の用途に使用できます。
 
+<div id="manage-your-tokens" />
+
 ## トークンの管理
 
 管理者は、複数のトークンの作成、名前の変更、削除を行えます。主な用途は、現在のトークンから新しいトークンへの切り替えです。先に新しいトークンを[作成](#トークンの作成)して自社システムに設定し、利用可能になってから古いトークンを[削除](#トークンの削除)します。
+
+<div id="retrieve-tokens" />
 
 ### トークンの取得
 
@@ -76,12 +90,16 @@ x-zendesk:
 3. 利用可能なトークンが表示されます。
 4. 必要なトークンをコピーします。
 
+<div id="create-a-token" />
+
 ### トークンの作成
 
 1. [<strong>［トークン］</strong>ページ](#トークンページを開く)で、<strong>［＋新しいトークン］</strong>をクリックします。
 2. トークン名を入力します。
 3. トークンの種類を選択します。
 4. ［**トークンを作成**］をクリックします。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -91,7 +109,11 @@ x-zendesk:
 >   * ステータスが<strong>［有効］</strong>に変わってから、トークンを使用してください。
 > * 新しいトークンを、必ず自社システムに設定してください。
 
+<div id="delete-a-token" />
+
 ### トークンの削除
+
+<div id="warning" />
 
 > ❗️ **警告**
 >
@@ -103,9 +125,13 @@ x-zendesk:
 2. 削除の確認として「Delete token」と入力する必要があります。
 3. <strong>［トークンを削除］</strong>をクリックします。
 
+<div id="applications-of-the-api-v2-token" />
+
 ## API V2トークンの用途
 
 広告主とアドネットワークの、API V2トークンの用途は次のとおりです。
+
+<div id="advertiser" />
 
 ### 広告主
 
@@ -124,6 +150,8 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ja/docs/audiences-import-audience-segments-from-internal-systems#imported-audience-management-api">オーディエンスのインポートAPI</Anchor> |
 | <Anchor target="_blank" href="/marketers/ja/docs/beta-advanced-security-protect360-module">Advanced Security Moduleの連携（Android）</Anchor> |
 
+<div id="ad-network" />
+
 ### アドネットワーク
 
 | API V2トークン |
@@ -133,9 +161,13 @@ x-zendesk:
 | <Anchor target="_blank" href="/partners/ja/docs/protect360-for-integrated-partners#protect360のアドネットワーク向けレポートapi">連携済みパートナー向けProtect360レポート</Anchor> |
 | <Anchor target="_blank" href="/partners/ja/docs/incost-api-for-ad-networks">InCost</Anchor> |
 
+<div id="applications-of-the-s2s-token" />
+
 ## S2Sトークンの用途
 
 広告主とアドネットワーク向けのS2Sトークンの用途は、次のとおりです。
+
+<div id="advertiser-1" />
 
 ### 広告主
 
@@ -144,21 +176,29 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile">モバイルのアプリ内イベント用S2S API</Anchor> |
 | <Anchor target="_blank" href="/marketers/ja/docs/server-to-server-s2s-api-for-web-performance-measurement">Webイベント用S2S API</Anchor> |
 
+<div id="ad-network-1" />
+
 ### アドネットワーク
 
 | S2Sトークン |
 | --- |
 | <Anchor target="_blank" href="/marketers/ja/docs/set-up-appsflyer-preload-referrer-attribution">AppsFlyerのプリロードリファラによるアトリビューション</Anchor> |
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > ほとんどのアドネットワークでは、管理画面からS2Sトークンを生成することはできなくなっています。そのため、管理者の画面にはS2Sトークンの生成オプションが表示されません。管理画面からトークンを生成できるのは、個別に管理されている一部のパートナーのみです。
+
+<div id="applications-for-the-onelink-token" />
 
 ## OneLinkトークンの用途
 
 広告主向けのOneLink APIトークンの用途は、次のとおりです。
 
 パラメータをカスタマイズしたOneLink短縮URLの<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link">作成</Anchor>、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-attribution-link">取得</Anchor>、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-attribution-link">更新</Anchor>、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-attribution-link">削除</Anchor>。
+
+<div id="applications-for-the-mcp-token" />
 
 ## MCPトークンの用途
 

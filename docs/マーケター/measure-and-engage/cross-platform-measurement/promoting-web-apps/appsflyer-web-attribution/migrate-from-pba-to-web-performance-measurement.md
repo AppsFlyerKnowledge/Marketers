@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** People-Based Attribution（PBA）は、AppsFlyerのWeb計測を強化したソリューションであるWeb Performance Measurementに置き換えられます。この記事では、変更点、移行手順、レポートおよびサーバー側の連携における全フィールドの対応関係を説明します。
 
+<div id="why-were-upgrading-your-web-measurement" />
+
 ## Web計測を強化する背景
 
 Web計測の重要性は、これまで以上に高まっています。 Webサイトは、多くのユーザーがコンバージョンに至る場所であり、モバイルアプリへの導線の出発点でもあります。 Webサイトの役割は、ランディングページだけにとどまりません。質問への回答に応じた案内、ユーザーに合わせた利用開始の案内、有料コンテンツへのアクセス制限、オンラインストアなど、ユーザー獲得に至る一連の仕組みを備えています。こうした仕組みにより、利用や購入への意欲が高いユーザーを、より低いコストで獲得できることも少なくありません。
@@ -38,15 +40,21 @@ AppsFlyerは、Web計測をモバイル計測と同じ水準に引き上げま�
 >
 > Web SDKを置き換える必要はありません。 Web Performance Measurementは同じSDKを使用するため、Webサイトのコード変更は不要です。それ以外の移行に必要な作業は、現在のデータ取得方法がダッシュボード、Data Locker、サーバー間（S2S）APIのいずれであるかによって異なります。
 
+<div id="comparing-pba-and-web-performance-measurement" />
+
 ## PBAとWeb Performance Measurementの比較
 
 このセクションでは、全体的な機能と流入元の判定の2つの観点から、PBAとWeb Performance Measurementを比較します。
+
+<div id="web-performance-measurement-vs-pba" />
 
 ### Web Performance MeasurementとPBAの機能比較
 
 以下の表では、データ、レポート、アトリビューションに関するPBAとWeb Performance Measurementの機能を比較しています。
 
 <table><tbody><tr><td>機能</td><td>説明</td><td>PBA</td><td>Web Performance Measurement</td></tr><tr><td colspan="4"><strong>データ</strong></td></tr><tr><td>データ反映までの時間</td><td>データがレポートで利用可能になるまでの時間</td><td> <span>✗</span> 日次</td><td> <span>✓</span> 1時間ごとのレポート。データ反映まで約2時間</td></tr><tr><td>データモデル</td><td>モバイルのアトリビューションデータとのスキーマの共通化</td><td> <span>✗</span> モバイルとは異なる</td><td> <span>✓</span> モバイルと共通化され、データの結合・分析が容易</td></tr><tr><td colspan="4"><strong>レポート</strong></td></tr><tr><td>アクティビティダッシュボード</td><td>イベント発生時刻に基づくダッシュボード</td><td> <span>✓</span> 対応</td><td> <span>✓</span> 対応</td></tr><tr><td>コホートダッシュボード</td><td>獲得時期などで分類したユーザーグループごとに、成果の推移を分析</td><td> <span>✗</span> 非対応</td><td> <span>✓</span> 対応</td></tr><tr><td>Data Lockerローデータ</td><td>Data Lockerからの出力によるアトリビューションのローデータ取得</td><td> <span>✓</span> 対応</td><td> <span>✓</span> 対応</td></tr><tr><td>広告単位の詳細データ</td><td>キャンペーン単位から広告単位までのレポート内訳</td><td> <span>✗</span> ダッシュボードのみ対応。ローデータは非対応</td><td> <span>✓</span> ダッシュボードとローデータの両方で、キャンペーンの詳細な内訳に対応</td></tr><tr><td>クロスプラットフォームLTV</td><td>Webとモバイルでのユーザー行動を紐付け、統合したLTVを算出</td><td> <span>✗</span> 非対応</td><td> <span>✓</span> 対応</td></tr><tr><td colspan="4"><strong>コストと最適化用データ</strong></td></tr><tr><td>Web広告コスト</td><td>Webキャンペーンの広告費を取り込み、レポートに表示</td><td> <span>✗</span> 非対応</td><td> <span>✓</span> 対応</td></tr><tr><td>広告最適化用ポストバック</td><td>広告最適化に使用するデータをアドネットワークに送信</td><td> <span>✗</span> 非対応</td><td> <span>✓</span> 対応</td></tr><tr><td colspan="4"><strong>実装</strong></td></tr><tr><td>Web SDK（ピクセル）</td><td>Webサイトへの訪問とイベントを計測するクライアント側のSDK</td><td> <span>✓</span> 対応</td><td> <span>✓</span> 同じSDKを使用。コード変更は不要</td></tr><tr><td>S2S対応</td><td>訪問とイベントをサーバー側だけで計測</td><td> <span>✗</span> イベントのみ</td><td> <span>✓</span> イベントと訪問に対応。サーバー側だけでの実装に対応しています。</td></tr><tr><td colspan="4"><strong>アトリビューションエンジン</strong></td></tr><tr><td>アトリビューション関連の期間設定</td><td>ルックバック期間、アトリビューション期間、リエンゲージメント期間、非アクティブ期間を設定可能</td><td> <span>✗</span> クリックルックバック期間のみ</td><td> <span>✓</span> 5種類の期間を設定可能（すべて調整可能）</td></tr><tr><td>新規ユーザー獲得イベントのカスタマイズ</td><td>初回訪問以外のイベントを、新規ユーザー獲得（UA）とみなすイベントとして定義</td><td> <span>✗</span> 初回訪問のみ</td><td> <span>✓</span> 任意のカスタムイベント（登録、購入など）</td></tr><tr><td>新規ユーザー獲得とリターゲティング</td><td>新規ユーザー獲得とリエンゲージメントの成果を別々に紐付け</td><td> <span>✗</span> 新規ユーザー獲得の概念はなく、イベントは最後の接触先に紐付け</td><td> <span>✓</span> 新規ユーザー獲得とリターゲティングそれぞれの表示に対応し、両方に成果を紐付け</td></tr></tbody></table>
+
+<div id="traffic-source-resolution-pba-vs-web-performance-measurement" />
 
 ### PBAとWeb Performance Measurementの流入元判定の比較
 
@@ -87,6 +95,8 @@ Web Performance Measurementでは、`utm_source`と`utm_medium`の組み合わ�
 
 </Accordion>
 
+<div id="migrate-to-web-performance-measurement" />
+
 ## Web Performance Measurementへの移行
 
 移行には、すべての方に共通する必須の手順が1つあります。その後は、ご利用のPBAの構成に該当する手順を実施してください。
@@ -97,10 +107,14 @@ Web Performance Measurementでは、`utm_source`と`utm_medium`の組み合わ�
 >
 > PBAでの数値と、移行後の数値は完全には一致しません。 Web Performance Measurementのアトリビューションロジックは、より高度で柔軟です。 PBAは独自のメディアソースアトリビューションルールを適用していましたが、Web Performance Measurementは改良された流入元判定を使用します。値の変更については、前述の「PBAとWeb Performance Measurementの流入元判定の比較」を参照してください。セッションの記録ロジック自体は変わりません。引き続き、業界標準である30分間のアクティビティを1セッションとして扱います。
 
+<div id="step-1-create-a-web-app-required-everyone" />
+
 ### 手順1. Webアプリの作成（すべての方に必須）
 
 1. <Anchor target="_blank" href="/marketers/ja/docs/adding-an-app-to-appsflyer#web">新しいWebアプリを作成</Anchor>し、**Web SDK ID**フィールドで既存のWeb Dev Keyを選択します。これにより、現在のWebサイトのコードを変更せずに、そのまま利用できます。
 2. 新しいアプリの<Anchor target="_blank" href="/marketers/ja/docs/configure-web-performance-measurement-settings">アトリビューション設定を行います</Anchor>。
+
+<div id="step-2-if-you-send-events-through-the-s2s-api" />
 
 ### 手順2. S2S APIでイベントを送信している場合
 
@@ -109,6 +123,8 @@ Web Performance Measurementでは、`utm_source`と`utm_medium`の組み合わ�
 1. [PBA Web-S2Sから新しいS2S APIへの移行](#pba-web-s2sから新しいs2s-apiへの移行)を参照し、エンドポイント、認証、送信データのフィールドについて、現在のPBA S2S連携との違いを確認します。
 2. Web Performance Measurementの<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-s2s-api-for-web-performance-measurement">新しいS2S API</Anchor>を設定します。
 3. サーバー側の連携を更新し、新しいエンドポイントに送信するようにします。
+
+<div id="step-3-if-you-consume-pbas-raw-data-reports" />
 
 ### 手順3. PBAのローデータレポートを利用している場合
 
@@ -119,10 +135,14 @@ Web Performance Measurementでは、`utm_source`と`utm_medium`の組み合わ�
 3. <Anchor target="_blank" href="/marketers/ja/docs/export-web-performance-measurement-report-data-from-data-locker">Data LockerからのAppsFlyer Webアトリビューションレポートデータの出力</Anchor>に従い、新しいレポートを有効にします。
 4. BIツールやETL処理の参照先を、新しいレポートの保存先とフィールドに変更します。これは、イベントの送信元がSDKかS2Sかにかかわらず必要です。どちらも同じローデータレポートに格納されます。
 
+<div id="step-4-if-you-use-the-pba-brand-bundle-for-cross-platform-reporting" />
+
 ### 手順4. クロスプラットフォームレポートにPBAのブランドバンドルを使用している場合
 
 1. <Anchor target="_blank" href="/marketers/ja/docs/product-line-group-apps-for-cross-platform-attribution">プロダクトラインを作成します</Anchor>。
 2. Webアプリと他のアプリを同じプロダクトラインにまとめると、<Anchor target="_blank" href="/marketers/ja/docs/beta-user-based-cross-platform-attribution">クロスプラットフォームのユーザーLTVレポート</Anchor>を利用できます。
+
+<div id="capabilities-being-discontinued" />
 
 ## 提供が終了する機能
 
@@ -133,6 +153,8 @@ Web Performance Measurementでは、`utm_source`と`utm_medium`の組み合わ�
 | 過去のアトリビューション結果の再計算 | デフォルトの30分間の待機時間を過ぎると、過去のアトリビューション結果は再計算されません。 | アトリビューションは、30分間の待機時間後に確定します。この間にユーザーが自身を識別できる情報を提供できます。 |
 | ローデータフィールド | Web向けレポートでは、モバイル関連のフィールドが廃止されます。名称が変更されるフィールドや、値が変更されるフィールドもあります。 | すべてのフィールドの対応関係は、[ローデータフィールドの対応表](#ローデータフィールドの対応表)を参照してください。 |
 | 到着が遅れたS2Sイベント | イベントが発生したUTC日付の終了から30分を過ぎて到着したイベントも受け付けられますが、イベント時刻はAppsFlyerが受信した時刻に置き換えられます。 | イベントを1日分まとめて送信するのではなく、発生時にリアルタイムで、できれば発生から30分以内に送信してください。正確なアトリビューションには、イベントの発生時刻に近いタイミングで受信することが必要です。これにより、Webでの動作が既存のモバイルでの動作と統一されます。 |
+
+<div id="raw-data-field-mapping" />
 
 ## ローデータフィールドの対応表
 
@@ -301,6 +323,8 @@ AppsFlyerの従来のPBA Data Lockerローデータレポート（Webサイト�
 ```
 
 </Accordion>
+
+<div id="pba-web-s2s-to-new-s2s-api-migration" />
 
 ## PBA Web-S2Sから新しいS2S APIへの移行
 

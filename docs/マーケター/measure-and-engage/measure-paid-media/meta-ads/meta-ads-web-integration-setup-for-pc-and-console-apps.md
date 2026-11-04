@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** PC・コンソールアプリ向けにMeta WebとAppsFlyerを連携し、Meta Webでキャンペーンを設定する方法を説明します。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > この連携は、Steam、Epic、Native PCなどのPC・コンソールアプリでのみ利用できます。モバイルアプリについては、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-integration-setup">Meta広告の連携設定</Anchor>を参照してください。
+
+<div id="overview" />
 
 ## 概要
 
@@ -33,9 +37,13 @@ x-zendesk:
 * [AppsFlyerでのMeta Webの設定](#appsflyerでのmeta-webの設定)。
 * [MetaでのPC・コンソールアプリ向けキャンペーンの設定](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#meta-webでのpcコンソールアプリ向けキャンペーンの設定)。
 
+<div id="prerequisite" />
+
 ### 前提条件
 
 Meta Web連携を有効にする前に、[Metaビジネスマネージャのビジネスアカウント](https://www.facebook.com/business/help/1710077379203657?id=180505742745347)があることを確認してください。
+
+<div id="activating-partner-in-appsflyer" />
 
 ## AppsFlyerでのパートナーの有効化
 
@@ -47,6 +55,8 @@ Meta Web連携を有効にする前に、[Metaビジネスマネージャのビ�
 4. <strong>［連携］</strong>タブで、<strong>［パートナーを有効にする］</strong>をオンにします。  
    **注意：** このパートナーとの連携を継続する間は、トグルをオン（<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">有効</Anchor>）のままにしてください。
 5. 次のセクションの説明に従い、各タブで設定を完了します。
+
+<div id="setting-up-meta-web-in-appsflyer" />
 
 ## AppsFlyerでのMeta Webの設定
 
@@ -60,9 +70,13 @@ Meta Web連携で送信できるポストバックは、インストールとア
 
 <strong>［連携］</strong>タブには、以下のセクションがあります。
 
+<div id="activate-partner" />
+
 #### パートナーの有効化
 
 連携を設定するには、まず<strong>［パートナーを有効にする］</strong>をオンにする必要があります。
+
+<div id="general-settings" />
 
 #### 一般設定
 
@@ -75,6 +89,8 @@ Meta Web連携で送信できるポストバックは、インストールとア
 * **アクセストークン：** アクセストークンを入力します。取得方法は、[こちらの手順](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)を参照してください。
 * **Meta広告によるユーザーの個人情報の利用を制限（CCPA）：** このトグルをオンにすると、<Anchor target="_blank" href="/marketers/ja/docs/send-opendsr-api-requests">データ保護法</Anchor>への対応が有効になります。  
   **注意：** CCPAのプライバシー規制に対応すると、カリフォルニア州のMeta広告ユーザーから取得するデータが制限されます。
+
+<div id="enable-view-through-attribution" />
 
 #### ビュースルーアトリビューションの有効化
 
@@ -92,12 +108,16 @@ AppsFlyerは、確率論的モデリング（PMOD）と、<Anchor target="_blank
 6. <strong>［ビュースルーアトリビューション］</strong>セクションまでスクロールし、**ビュースルールックバック期間**を設定します（最大24時間）。
 7. <strong>［連携を保存］</strong>をクリックして、設定を適用します。
 
+<div id="default-postbacks" />
+
 #### デフォルトポストバック
 
 インストールのポストバックは、自動的にMeta Webに送信されます。<strong>［送信対象ユーザー］</strong>欄で、以下のいずれかを選択します。
 
 * **このパートナーのみ**：このパートナー経由のユーザーが行ったイベントについてのみ、アプリ内イベントポストバックを送信します。
 * **オーガニックを含むすべてのメディアソース**：このパートナー、他のパートナー、オーガニック経由のユーザーが行ったイベントについて、アプリ内イベントポストバックを送信します。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -160,6 +180,8 @@ Meta Webでは、広告収益は利用できません。
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-meta-web-for-pc-and-console-apps" />
+
 ## Meta WebでのPC・コンソールアプリ向けキャンペーンの設定
 
 **新しいキャンペーンを設定する際は、以下を行ってください**。
@@ -174,20 +196,28 @@ Meta Webでは、広告収益は利用できません。
   * Webランディングページ（複数のプラットフォームでアプリを提供している場合に推奨）
   * ストアURL（1つのプラットフォームの1つのアプリストアでアプリを提供している場合に推奨）
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Webからアプリへのアトリビューションデータの確認
 
 Web経由のコンバージョンイベントは、元のPIDである`metaweb_int`を使ってMetaに送信されますが、AppsFlyerのダッシュボードとローデータレポートでは、`Facebook Ads`のPIDで報告されます。これは、プライマリコンバージョンイベントと、コンバージョンをアシストしたイベントの両方に適用されます。
 
 この統合レポートにより、Webとモバイルのコストレポート全体を含め、Webとアプリのキャンペーンのパフォーマンスを1か所で分析できます。
 
+<div id="view-in-the-dashboard" />
+
 ### ダッシュボードでの確認
 
 Meta経由のWebからアプリへのアトリビューションはすべて、Overview dashboardとアクティビティダッシュボードで`Facebook Ads`の下に表示されます。これにより、プラットフォームを横断したキャンペーンの成果を、1つの統合ビューで確認できます。標準のフィルターと内訳を使用して、Meta広告のデータ内でアプリとWebのトラフィックを比較できます。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### ローデータとAPIレポートでの確認
 
 * MetaのWeb上のアクティビティについて、**ローデータのエクスポートとAPIレスポンス**では、`media_source`フィールドに`Facebook Ads`のPIDが含まれます。 Webキャンペーンの設定内容を確認するには、`original_url`フィールドを参照してください。Webキャンペーンの作成時に使用したPIDとして、`metaweb_int`が表示されます。
 * **ポストバックレポート**には、ポストバックの送信先である元のメディアソースとして`metaweb_int`が表示されます。
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

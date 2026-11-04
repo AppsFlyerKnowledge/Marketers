@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要： 概要 ：AppsFlyerへ自身のXboxアプリを追加し、Xbox上のキャンペーンの計測とイベントデータを取得しましょう。**
 
+<div id="about-xbox-attribution" />
+
 ## Xboxアトリビューションについて
 
 コンソールおよびCTVアプリ用のXbox OSは、全てのXboxで動作します。
@@ -31,6 +33,8 @@ Xbox API連携では、以下がサポートされています：
 
 * Xbox。
 * Xboxアプリのアトリビューションとイベントの記録（ユーザーのXbox端末の計測と記録）
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -52,6 +56,8 @@ Xbox API連携では、以下がサポートされています：
 | コストデータ | コストデータは、メールメソッドによるアップロードファイルを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">コストインポート</Anchor>経由で送信する必要があります。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

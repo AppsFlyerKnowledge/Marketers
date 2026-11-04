@@ -24,11 +24,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## SKANコンバージョン値のデコード
 
 広告主は、<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">Conversion Studio</Anchor>の設定オプションを使用する代わりに、CVのデコードを利用できます。デコードを使用する場合は、広告主側で、アプリのロジックに従って<Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor>を設定する必要があります。
 
 アプリ内でCVを設定する部分を除き、処理の流れ、機能、レポートの選択肢は、<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKANソリューションガイド</Anchor>の説明と同じです。つまり、広告主が管理するアクティビティ期間の終了後、iOSがアドネットワークにポストバックを送信し、アドネットワークがAppsFlyerに転送します。 AppsFlyerは、広告主が定義したマッピングに従ってCVをイベントに読み替えます。その後は、SDKが設定したCVをデコードした場合と同様に処理します。
+
+<div id="custom-conversion-valuedecode" />
 
 ## カスタムコンバージョン値｜デコード
 
@@ -66,6 +70,8 @@ x-zendesk:
   * 集計レポートとダッシュボードでは、その範囲の平均値を収益として算出します。例：min\_revenue=4、max\_revenue=10。算出される収益は7です。
   * ローデータレポートには、算出した収益（skad\_revenue）、min\_revenue、max\_revenueが含まれます。
 
+<div id="meta-specific-rules" />
+
 #### **Meta固有のルール**
 
 Meta広告と連携する場合は、以下のルールに従ってください。
@@ -73,6 +79,8 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 * 同じCVに設定する収益の最小値と最大値は、異なる値である必要があります。つまり、同じ値にはできません。
 * 次の表のconversion\_value 1、2、62のように、値は重複せず、連続した順序になっている必要があります。
 * event\_counter：Meta広告では、この値は使用しません。［推奨］1を設定してください。
+
+<div id="example-decode-mapping" />
 
 ### 例：デコードマッピング
 
@@ -90,12 +98,16 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 | 62 | af\_purchase | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### 例A：細かいCV 1
 
 | event\_name | skad\_revenue | min\_ revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
 | af\_purchase | 1.5 | 0 | 3 | `{abc}` |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### 例B：細かいCV 2
 
@@ -105,6 +117,8 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 | af\_purchase | 6.5 | 3 | 10 | `{def}` |
 | af\_purchase | 6.5 | 3 | 10 | `{def}` |
 | af\_purchase | 6.5 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### 例C：細かいCV 21
 
@@ -121,6 +135,8 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 | event\_e |  |  |  |  |
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
+
+<div id="example-d-fine-conversion-value-62" />
 
 ### 例D：細かいCV 62
 
@@ -139,9 +155,13 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 
 <Accordion title="デコードモードでのSSOT（Single Source of Truth）対応">
 
+<div id="overview" />
+
 #### 概要
 
 デコードモードでも、SSOTによるアトリビューションを利用できるようになりました。これにより、従来はエンコードモードに限られていた、インストールの重複除去を利用できます。エンコードモードを実装せずに、ノンオーガニックの成果をより正確に計測できます。
+
+<div id="key-benefits" />
 
 #### 主なメリット
 
@@ -152,6 +172,8 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 * アドネットワークをまたぐノンオーガニックインストールの重複を除去できます。
 * アトリビューションとレポートの精度を高められます。
 * 開発とQAを簡素化できます。
+
+<div id="how-to-enable-ssot-for-decode-mode" />
 
 #### デコードモードでSSOTを有効にする手順
 
@@ -164,6 +186,8 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 5. **レポートの確認**  
    SSOTダッシュボードとData Lockerファイルに、デコードモードのデータも含まれるようになります。
 
+<div id="faq" />
+
 #### よくある質問
 
 **Q：SSOTのアトリビューションフラグを取得するために、いつAPIに問い合わせればよいですか？**  
@@ -174,6 +198,8 @@ Meta広告と連携する場合は、以下のルールに従ってください�
 * または、精度を確保するため、インストールから25秒以上経過してから1回問い合わせる方法もあります。
 
 </Accordion>
+
+<div id="zd-decode-csv-file-specification" />
 
 <div id="decode-csv-file-specification" />
 
@@ -230,6 +256,8 @@ CVは、1つ以上のアプリ内イベントにマッピングされます。
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## CSVアップロードのエラーファイルに関するトラブルシューティング
 
 <div id="upload-error-messages" />
@@ -247,6 +275,8 @@ CVは、1つ以上のアプリ内イベントにマッピングされます。
 ExcelまたはGoogleスプレッドシートでCSVを作成する場合は、CSVとして保存する前に、event\_revenue\_usd列を正しい書式に設定する必要があります。
 
 CSVを保存した後、内容が正しい形式になっていることを確認してください。**注意**：確認にはExcelを使用せず、[テキストエディター](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel)を使用してください。
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### Excelでのevent\_revenue\_usdセルの書式設定
 

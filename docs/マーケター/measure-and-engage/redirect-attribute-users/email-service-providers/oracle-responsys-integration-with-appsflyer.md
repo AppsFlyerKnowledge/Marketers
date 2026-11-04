@@ -32,6 +32,8 @@ ESPの課題の1つは、正しいアトリビューションとディープリ�
 
 ただし、ディープリンクとクリック記録は、クリック記録ドメイン上でユニバーサルリンクとアプリリンクをサポートするESPで引き続き可能です。さらに、クリック記録ドメインとして機能する独自のクリックドメインを設定できます。
 
+<div id="prerequisites" />
+
 ## 前提条件
 
 * <Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLinkとのディープリンク</Anchor>をサポートするようにアプリを設定します。
@@ -51,9 +53,13 @@ ESPの課題の1つは、正しいアトリビューションとディープリ�
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Oracle Responsysのクリックドメイン設定
 
 この項に従って、Oracle Responsysでクリックドメイン(クリックレコーディングドメイン)を設定します。
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### ステップ1:ステップ1: Oracle Responsysでのクリックドメイン設定
 
@@ -64,6 +70,8 @@ ESPの課題の1つは、正しいアトリビューションとディープリ�
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 リンク表にクリックドメインを設定すると、Responsysはこれらのドメインを使用して、Eメールキャンペーンに含めるOneLinksをラップします。このようにして、ResponsysはOneLinkとディープリンク機能を維持しながら、システムにクリックを記録できます。
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### ステップ2:ステップ2: ResponsysにAASA(iOS)およびAsset Linksファイル(Android)を付与します。
 
@@ -95,7 +103,11 @@ ResponsysでiOSユニバーサルリンクをサポートするには、AASAフ�
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## アプリのセットアップ
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Androidマニフェストのアクティビティにクリックドメインを追加します
 
@@ -113,6 +125,8 @@ Androidマニフェストで、ディープリンク先のアクティビティ�
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### クリックドメインを解決するアプリの設定
 
@@ -136,12 +150,16 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 
 このセクションでは、ユニバーサルリンクをサポートするアプリの設定方法について説明します。
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Xcodeでのクリックドメインの関連付け
 
 1. Xcodeでプロジェクトをクリックします。
 3. <strong><em>Associated Domain（関連付ドメイン）</em></strong>をオンにします。
 4. [+] 記号をクリックし、クリックドメインを追加します。例：applinks:click.example.com.
 
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### ステップ2:クリックドメインを解決するアプリの設定
 
@@ -212,6 +230,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## 最初のEメールの送信
 
 1. リンク管理ページにて（または手動で）OneLink URLを作成してください。
@@ -231,6 +251,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 
    この段階で、Responsysは前のステップで設定したクリックドメインで上記リンクをラップします。クリックドメインをクリックすると、OneLink計測リンクにリダイレクトされます。アプリがユーザーのデバイスにインストールされている場合、クリックドメインはアプリにディープリンクします。
 
+<div id="note" />
+
 > 📄 **例**
 >
 > この例では、読みやすくするために、URLパラメータはURLエンコードされていません。
@@ -240,6 +262,8 @@ SDKは、キャンペーン詳細を取得するために、クリックドメ�
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### リンクのテスト
 

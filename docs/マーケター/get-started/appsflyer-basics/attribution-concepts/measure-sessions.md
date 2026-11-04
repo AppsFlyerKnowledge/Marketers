@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
+<div id="sessions-counting-principles" />
+
 ## セッションの集計の基本
 
 ユーザーによるセッション（起動）の回数は、アプリのユーザーエンゲージメントを計測する重要な指標です。複数のレポートやダッシュボードで確認できます。セッションは、以下の指標の算出に使用します。
@@ -39,6 +41,8 @@ x-zendesk:
 * デフォルトの「アプリを3回起動」という条件で判定するロイヤルユーザー
 
 **注意**オーガニックのセッション数は、アクティビティとコホートのダッシュボードで確認できますが、Overview dashboardでは確認できません。
+
+<div id="sessions-calculation" />
 
 ### セッション数の算出
 
@@ -57,6 +61,8 @@ x-zendesk:
 **セッションの指標**
 
 セッション数は、最初のセッションから集計します。 6回目のセッションから、セッション間の最小時間を判定する仕組みが適用されます。以下の例のとおり、デフォルトの間隔は10分です。
+
+<div id="minimum-time-between-sessions-mechanism" />
 
 ## セッション間の最小時間の判定
 
@@ -101,6 +107,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="sessions-related-topics" />
+
 ## セッションに関するその他の情報
 
 <div id="retargeting-sessions" />
@@ -129,6 +137,8 @@ x-zendesk:
 * 送信するには、*af\_app\_opened*をパートナーのイベントに明示的にマッピングします。注意 Data Lockerで取得できるAppsFlyerのローデータレポートでは、このイベントは*launch*として表示されます。
 * このイベントは送信量が多く、多くのパートナーが受信を希望しない点に注意してください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > `af_app_opened`のマッピングに対応するのは、**Send Sessions**が有効なパートナーのみです。
@@ -143,12 +153,16 @@ x-zendesk:
 
 **サーバー側：アプリの初回起動後の最初の5セッションに該当せず**、かつセッション間の最小時間の判定条件を満たす場合に、セッションを計上します。計上されたセッションには、他のアプリ内イベントと同じ<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model">アトリビューションルール</Anchor>が適用されます。
 
+<div id="explicit-sessions-reporting-by-the-developer-android-apps-only" />
+
 #### **開発者による明示的なセッションの報告（Androidアプリのみ）**
 
 Androidでは、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor>を使用して、明示的にセッションを報告します。 iOSには、同等の呼び出しはありません。
 
 * 常にバックグラウンドで動作するアプリでは、開発者がセッション報告用のロジックを実装する必要がある場合があります。たとえば、バッテリー節約、ランチャー、画面ロック、ウイルス対策などのユーティリティアプリが該当します。こうしたアプリでは、毎日午前0時、またはアプリに適した別の間隔で、セッションを報告することを検討してください。
 * また、［*メモリを解放*］ボタンの押下など、特定のアプリ内アクションを実行した時点でセッションを数える方法もあります。
+
+<div id="setting-minimum-time-between-app-launches" />
 
 #### **アプリ起動間の最小時間の設定**
 

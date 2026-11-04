@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** 概要： MobileAction の SearchAds.com を使用して、Apple Search Ads キャンペーンを最適化します。設定により、AppsFlyer は SearchAds.com にポストバックを送信します。
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Apple Search Ads のアトリビューションを有効化する
 
 この設定は、広告主、代理店のいずれでも可能です。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -32,7 +36,11 @@ x-zendesk:
 * **広告主**： Apple Search Ads でアトリビューションを有効にする方法については、以下の手順を参照してください。
 * **代理店**：Apple Search Ads でアトリビューションを有効にする方法については、<Anchor target="_blank" href="/marketers/ja/docs/apple-ads-integration-setup#agency-setup">以下の手順を参照してください</Anchor>。
 
+<div id="setting-up-searchadscom-in-appsflyer" />
+
 ## AppsFlyer での SearchAds.com の設定方法
+
+<div id="getting-required-information-from-searchadscom" />
 
 ### SearchAds.com から必要な情報を取得する
 
@@ -42,6 +50,8 @@ AppsFlyer で SearchAds.com の設定を開始する前に、**api\_key** と **
 * apple-search-ads-campaign-group-id.png
 
   ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+
+<div id="setting-up-campaigns-in-appsflyer" />
 
 ### AppsFlyer でのキャンペーンの設定方法
 
@@ -61,6 +71,8 @@ AppsFlyer で SearchAds.com の設定を開始する前に、**api\_key** と **
    5. **api\_key** フィールドに API キーを入力します。
    6. 数値（数字）のみを入力してください。
    7. **保存**をクリックしてください。
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### アプリ内イベントポストバックの設定
 

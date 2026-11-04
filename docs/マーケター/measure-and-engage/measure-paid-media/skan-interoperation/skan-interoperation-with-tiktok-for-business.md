@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **概要：** SKAN連携を有効にすると、TikTokからAppsFlyerへSKANポストバックを共有し、AppsFlyerからTikTokへコンバージョン値の計測マッピングを共有できます。
 
+<div id="skan-interoperability-appsflyer---tiktok" />
+
 ## SKAN連携｜AppsFlyer &lt;-> TikTok
 
 複数のアドネットワークパートナーと連携する場合は、AppsFlyerで設定することをおすすめします。これにより、AppsFlyer上でSKANのパフォーマンス指標をコストなどの指標とあわせて確認できます。
 
+<div id="scope-of-skan-interoperability-with-tiktok" />
+
 ### TikTokとのSKAN連携でできること
 
 この連携により、AppsFlyerで設定したSKANのコンバージョン値のマッピングを、AppsFlyerとTikTokで共有できます。これにより、両方のプラットフォームでパフォーマンス指標を確認できます。TikTok for Businessとの連携（従来の連携または<Anchor target="_blank" href="/marketers/ja/docs/tiktok-for-business-advanced-srn-integration-setup">アドバンスSRN</Anchor>連携）を有効にすると、AppsFlyerからTikTokへ最適化に使用するイベントが提供されます。TikTokが対応している項目は、<Anchor target="_blank" href="/marketers/ja/docs/skan-integrated-partners-list">データ拡充項目の一覧</Anchor>を参照してください。
+
+<div id="tiktok-for-business-guidance" />
 
 ### TikTok for Businessの設定に関するガイダンス
 
@@ -56,6 +62,8 @@ TikTokは、SKANを使用した次の機能に対応しています。
 * コンバージョン計測APIによる計測と最適化
 * TikTok for BusinessでのiOS 14専用キャンペーンのレポート
 
+<div id="campaign-limits-for-dedicated-ios-14-campaigns" />
+
 ### iOS 14専用キャンペーンの上限
 
 SKAN APIの制約により、TikTok for BusinessでiOS 14専用キャンペーンを作成する際は、次の上限が適用されます。対象は、アプリインストール広告と、アプリの新規ユーザー獲得を目的としたダイナミック商品広告です。
@@ -64,6 +72,8 @@ SKAN APIの制約により、TikTok for BusinessでiOS 14専用キャンペー�
 * iOS 14専用キャンペーンには、次の制限もあります。
   * 複数の広告アカウントから作成できますが、有効なキャンペーンの総数は15件までです。
   * 上限の15件には、対象となるすべての目的のキャンペーンが含まれます。上限に達した場合は、既存のキャンペーンを一時停止、オフ、または削除してから、枠が空くまで少なくとも72時間待つ必要があります。その後、新しいキャンペーンを開始できます。
+
+<div id="enabling-interoperation" />
 
 ### 連携の有効化
 
@@ -76,6 +86,8 @@ SKAN APIの制約により、TikTok for BusinessでiOS 14専用キャンペー�
 | <span id="1"></span>1 | アプリの前提条件 | <ul><li>最新のAppsFlyer SDKをアプリに実装します。</li></ul> |
 | <span id="2"></span>2 | SKAN設定の確認 | AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/skadnetwork-skan-solution-guide">SKANソリューション</Anchor>を設定し、有効にします。<br /><br />**SKAN設定を表示するには、次の手順を行います。**<ol><li>AppsFlyerで、［**設定**］>［**SKAN Conversion Studio**］に移動します。</li><li>オプション（⋮）をクリックし、［**SKAN計測**］がオンになっていることを確認します。<br />![skan-settings.png](https://files.readme.io/5a5b9b8b8a809336055340a14e49dacc16c5c0e95cda62c6dfb2ca9a11618d71-27548444964497.png)</li><li>使用する計測モードを選択します。<br />詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>を参照してください。</li><li>設定したイベント名を、表記を変えずに正確に控えておきます。次のステップで使用します。</li></ol> |
 | <span id="3"></span>3 | アプリ内イベントのマッピング | TikTok for Businessのアプリ内イベントのマッピングを確認し、必要に応じて変更します。<br /><br />**アプリ内イベントのマッピングを確認・設定するには、次の手順を行います。**<ol><li>AppsFlyerで、［**設定**］>［**アクティブな連携**］に移動します。</li><li>［**TikTok for Business**］を検索して選択します。</li><li>［**連携**］タブで、<Anchor target="_blank" href="/marketers/ja/docs/tiktok-for-business-advanced-srn-integration-setup">TikTok for Businessとの連携が有効になっており、設定が完了していることを確認</Anchor>します。</li><li>［**アプリ内イベントポストバック**］セクションで、次の設定を行います。<ol><li>［必須］［**アプリ内イベントポストバック**］がオフの場合は、オンにします。</li><li><Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>で設定したアプリ内イベントが、TikTok for Businessのイベント名または<Anchor target="_blank" href="/marketers/ja/docs/skan-cv-decode-map-your-cv-to-events">カスタムコンバージョンマップ</Anchor>内のイベントにマッピングされていることを確認します。<br />**注意：**`af_skad_revenue`をTikTokの`Purchase`イベントにマッピングするのは、SKANのコンバージョン値の設定ルールで収益全体を計測する場合のみです。<br />[![](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)</li></ol></li><li>［**連携を保存**］をクリックします。</li></ol> |
+
+<div id="see-also" />
 
 > 📄 **関連記事**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **概要：** WebアプリのGoogle Ads連携を設定し、Offline Conversion API（OCI）を通じてWebコンバージョンのシグナルをGoogleに送信します。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerは、WebアプリのキャンペーンにおけるGoogle Ads（`googleads_int`）連携に対応し、GoogleのOffline Conversion API（OCI）を通じてコンバージョンデータをレポートします。
@@ -32,9 +34,13 @@ AppsFlyerは、WebアプリのキャンペーンにおけるGoogle Ads（`google
 
 キャンペーンのフローは、ユーザーがGoogleの広告をクリックしてWebサイトにアクセスするところから始まります。ユーザーがWebサイトで購入や会員登録などのイベントを完了すると、AppsFlyerはOCIを通じてコンバージョンのシグナルをGoogle Adsに送信します。 Googleはこのデータを使用して、広告ターゲティングの最適化とキャンペーンのパフォーマンス計測を行います。
 
+<div id="see-also" />
+
 > 📄 **関連記事**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/web-performance-measurement-overview">Web Performance Measurementの概要</Anchor>
+
+<div id="prerequisites" />
 
 ### 前提条件
 
@@ -44,12 +50,16 @@ WebアプリのキャンペーンでGoogle Ads連携を有効にする前に、�
 * Webサイトに実装済みのAppsFlyer Web SDK
 * 適切なロールまたは権限を持つAppsFlyerアカウント
 
+<div id="how-to-set-up-a-google-ads-web-campaign" />
+
 ### Google AdsのWebキャンペーンの設定方法
 
 設定は、次の2つに分かれます。
 
 1. AppsFlyerでGoogle Ads連携を設定（必須）
 2. Google Adsでキャンペーンを設定（必須）
+
+<div id="set-up-the-google-ads-integration-in-appsflyer" />
 
 ## AppsFlyerでのGoogle Ads連携の設定
 
@@ -64,6 +74,8 @@ WebアプリのキャンペーンでGoogle Ads連携を有効にする前に、�
 3. ［**連携の設定**］をクリックします。［**アクティブな連携**］の設定ページが開きます。
 4. アプリのドロップダウンからWebアプリを選択します。
 5. ［**連携**］タブで、［**パートナーを有効にする**］をオンにします。
+
+   <div id="note" />
 
    > 📘 **注意**
    >
@@ -80,6 +92,8 @@ WebアプリのキャンペーンでGoogle Ads連携を有効にする前に、�
 9. お客様IDを取得したMCCアカウントの管理者アカウントを選択します。
 10. ［**許可**］をクリックします。
 
+    <div id="note-1" />
+
     > 📘 **注意**
     >
     > Googleでサインインし、AppsFlyerによるトークンの取得を許可すると、*Missing token*エラーメッセージは表示されなくなります。サインイン後もエラーが続く場合は、トークンに必要な権限が付与されていることを確認してください。
@@ -93,6 +107,8 @@ WebアプリのキャンペーンでGoogle Ads連携を有効にする前に、�
 
 WebサイトのイベントをGoogle Adsのコンバージョンアクションにマッピングします。 AppsFlyerは、コンバージョンに基づく最適化を可能にするため、OCIを通じてこれらのイベントをGoogleに送信します。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > WebアプリではすべてのイベントがWebイベントであり、インストールイベントはありません。 Googleに最適化させたい各イベントを、対応するGoogle AdsのコンバージョンアクションIDにマッピングする必要があります。
@@ -101,6 +117,8 @@ WebサイトのイベントをGoogle Adsのコンバージョンアクション�
 2. 必要に応じて、［**アプリ内イベントのポストバック期間**］を設定します。この期間は、ユーザーのWebサイトでの最初のコンバージョンイベントの発生時点から始まります。これは、モバイルアプリのインストール日に相当します。
 3. ［**イベントを追加**］をクリックします。
 4. ［**AppsFlyerイベント**］列で、送信するWebサイトのイベント（`purchase`、`sign_up`など）を選択します。
+
+   <div id="note-3" />
 
    > 📘 **注意**
    >
@@ -115,6 +133,8 @@ WebサイトのイベントをGoogle Adsのコンバージョンアクション�
 8. ［**連携を保存**］をクリックします。
 
 </Accordion>
+
+<div id="set-up-a-web-conversion-campaign-in-google-ads" />
 
 ## Google AdsでのWebコンバージョンキャンペーンの設定
 
@@ -148,11 +168,15 @@ AppsFlyerでマッピングしたWebサイトの各イベントに対応する�
 5. ［**コンバージョン目標**］で、コンバージョンアクションのカテゴリを選択します。
 6. ［**コンバージョン名**］を入力します。
 
+   <div id="important" />
+
    > 🚧 **重要！**
    >
    > GCLIDに加えてGBRAID／WBRAIDでもOffline Conversions APIを使用するには、コンバージョンアクションの［**カウント方法**］を［*初回のみ*］ではなく［**全件**］（デフォルト）に設定してください。
 
 7. ［**コンバージョン名**］を入力し、［**追加**］をクリックします。
+
+   <div id="note-5" />
 
    > 📘 **注意**
    >
@@ -174,6 +198,8 @@ Googleは<Anchor target="_blank" href="https://support.google.com/google-ads/ans
 2. 広告の行で編集アイコンをクリックします。
 3. ［**最終ページURL**］欄に、ランディングページのURLを入力します。
 
+   <div id="important-1" />
+
    > 🚧 **重要！**
    >
    > 最終ページURLにAppsFlyerのURL（OneLinkまたは単一プラットフォーム向けの計測URL）を設定すると、キャンペーンが不承認になる可能性があるため、使用できません。リダイレクトが発生しない、直接アクセスできるWebアドレスのみを使用してください。
@@ -187,11 +213,15 @@ Googleは<Anchor target="_blank" href="https://support.google.com/google-ads/ans
    > ```
 
 
+<div id="note-6" />
+
 > 📘 **注意**
 >
 > GoogleのWeb広告キャンペーンでは、広告接触ごとに最終ページURLとトラッキングテンプレートURLの2つのURLを使用できます。ただし、広告の遷移先がWebサイトであるWebアプリのキャンペーンでは、トラッキングテンプレートURLは不要です。キャンペーンの目標がWebからモバイルアプリへの誘導である場合にのみ、トラッキングテンプレートURLが必要になることがあります。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-create-web-based-campaigns">Google AdsのWeb to Appキャンペーンの記事</Anchor>を参照してください。
 
 </Accordion>
+
+<div id="view-web-performance-measurement-data" />
 
 ## Web Performance Measurementのデータの確認
 
@@ -201,9 +231,13 @@ Google AdsキャンペーンのWebの計測データは、クロスプラット�
 * **ローデータのエクスポート：** Webの計測データは、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-export-page">ローデータのエクスポートページ</Anchor>でも確認できます。
   * Google Adsに成果が紐づくWebイベントの`media_source`フィールドには、`googleadwords_int`が表示されます。
 
+<div id="note-7" />
+
 > 📘 **注意**
 >
 > この統合されたレポート表示により、モバイルとWebのすべてのコストレポートを含め、Webキャンペーンとアプリキャンペーンのパフォーマンスを1か所で分析できます。
+
+<div id="measure-web-performance-data-with-web-cost" />
 
 ## Webコストを利用したWeb Performance Measurementのデータ分析
 
@@ -211,6 +245,8 @@ Google AdsキャンペーンのWebの計測データは、クロスプラット�
 
 1. ［**コスト**］タブまたは［**コスト設定**］ページから、`googleads_int`ではなく`googleadwords_int`を通じて、Webアプリにコストを連携します。コスト連携の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiの有効化">コストデータを計測するためのROI360コストAPIの設定</Anchor>を参照してください。
 2. ランディングページのURLにキャンペーンID（`af_c_id`）を含めます。 Webの計測結果に紐づくコスト、クリック、インプレッションを最も細かい粒度で確認できるよう、URLにキャンペーン階層の情報をすべて含めてください。
+
+<div id="troubleshooting-in-app-event-postbacks" />
 
 ## アプリ内イベントポストバックのトラブルシューティング
 
@@ -245,6 +281,8 @@ Google Adsで、アクセストークンにオフラインコンバージョン�
 ポストバックするアプリ内イベントが、正しいコンバージョンアクションIDにマッピングされていることを確認してください。 Google AdsでコンバージョンアクションIDを確認するには、[ステップ2：コンバージョンアクションの作成](#step-2-create-conversion-actions)を参照してください。
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 機能と制限事項
 

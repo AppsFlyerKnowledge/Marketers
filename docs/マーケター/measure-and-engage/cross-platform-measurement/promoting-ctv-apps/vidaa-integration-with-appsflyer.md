@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要： 概要：Vidaa Connected TV (CTV) アプリにAppsFlyerを実装して、Vidaaのキャンペーンに関するアトリビューションとイベントデータを受取りましょう。**
 
+<div id="about-vidaa-ctv-attribution" />
+
 ## Vidaa CTVの計測について
 
 ストリーミング用のVidaa OSは、すべてのVidaa TVで動作します。
@@ -32,6 +34,8 @@ Vidaa API連携では以下をサポートしています。
 
 * Vidaa Smart TV
 * CTV-to-CTVのアトリビューションとイベントの計測：つまり、ユーザーのVidaaデバイスの計測と記録）
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -55,6 +59,8 @@ Vidaa API連携では以下をサポートしています。
 | コストデータ | コストデータは、メールメソッドによるアップロードファイルを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">コストインポート</Anchor>経由で送信する必要があります。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

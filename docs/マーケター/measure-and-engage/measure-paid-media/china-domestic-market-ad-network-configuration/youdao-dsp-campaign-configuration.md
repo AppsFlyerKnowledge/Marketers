@@ -52,10 +52,14 @@ x-zendesk:
 
 <Accordion title="Integration（連携）タブ">
 
+<div id="activate-partner" />
+
 ### パートナーの有効化
 
 この画面を**最初に開く**際には、以下のトグルをオンにする必要があります。[***パートナーを有効にする***] トグルをオンにして、連携タブのパラメーター設定を有効にします。このパートナーと連携を続ける限り、トグルをオンにしておく必要があります。  
 パートナーの有効化についての詳細は、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
+
+<div id="default-postbacks" />
 
 ### Default Postback（デフォルトのポストバック）
 
@@ -70,6 +74,8 @@ x-zendesk:
 このタブでは、YouAppiのキャンペーン、広告セット、単一の広告レベルで計測したい計測リンクを作成できます。AppsFlyerでは作成された計測リンクは保存されませんのでご注意ください。
 
 このタブは複数のセクションに分かれています。
+
+<div id="attribution-link-parameters" />
 
 ### 計測リンクパラメーター
 
@@ -92,6 +98,8 @@ x-zendesk:
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
+<div id="click-through-attribution" />
+
 ### Click-Through Attribution（クリックスルーアトリビューション）
 
 このスライダーでは**クリックからインストールまでの最大有効期間**を設定できます。設定したルックバック期間内に発生したインストール（初回起動）のみYouAppi の成果として計測されます。
@@ -101,6 +109,8 @@ x-zendesk:
 クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### 計測リンク
 
@@ -131,6 +141,8 @@ x-zendesk:
 このタブでは、パートナーがアドネットワークの場合、代理店の場合、または両方の場合に、YouAppi に付与する権限を選択できます。YouAppi での計測が無効になっている場合でも、権限タブはアクティブであり、YouAppi への権限を管理できます。
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Ad Network Permissions（アドネットワークへの権限）
 

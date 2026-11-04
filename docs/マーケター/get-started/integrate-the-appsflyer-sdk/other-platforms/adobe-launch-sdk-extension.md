@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer Adobe Launch SDK 拡張機能の単一実装で、Adobe Launch SDK と AppsFlyer SDK にデータを送信します。
 
+<div id="overview" />
+
 ## 概要
 
 Adobe Launch SDK は、Adobe Experience プラットフォームに不可欠な要素です。Adobe Experience Platform は、企業が複数のアプリケーションやプラットフォームからデータを収集、統合、分析できるようにします。これにより、ビジネス・オーナーやデベロッパーは、顧客の行動をよりよく理解し、エクスペリエンスやコンテンツ配信を最適化することができます。アプリが Adobe Launch SDK と AppsFlyer SDK の両方を実装している場合、**AppsFlyer Adobe Launch SDK 拡張機能を**1つ実装するだけで、両方にデータを送信できます。開発プロセスの全体的な複雑さを軽減し、よりクリーンで保守性の高いコードベースを実現します。
 
+<div id="note" />
+
 > 📘 **注**
 >
 > Adobe Launch 拡張機能を使用している場合、標準の<Anchor target="_blank" href="/marketers/ja/docs/adobe-analytics-integration-with-appsflyer">Adobe Analytics との統合は</Anchor>必要ありません。
+
+<div id="prerequisites" />
 
 ## 前提条件
 
@@ -58,6 +64,8 @@ AppsFlyer Adobe SDK 拡張機能を統合する前に、いくつかのことが
 * iOS の場合 - アプリ ID はアプリの iTunes ID から*id*プレフィックスを除いたものです（例：123456748）。
 
 </Accordion>
+
+<div id="step-1-configuring-adobe-launch" />
 
 ## ステップ1:Adobe Launch の設定
 
@@ -91,6 +99,8 @@ Adobe Launch に以下の拡張機能をインストールします：
 * Adobe プロファイル - SDK がクライアント側のプロファイルにデータを保存できるようにします。
 * Adobe Mobile Core - モバイル SDK の設定を可能にし、デフォルトのライフサイクルイベントと条件へのアクセスを提供します。
 
+<div id="installing-adobe-analytics-extension" />
+
 #### Adobe Analytics 拡張機能のインストール
 
 1. Adobe Analytics にログインします。
@@ -102,6 +112,8 @@ Adobe Launch に以下の拡張機能をインストールします：
 7. ***レポート・スイート***で、ステップ2で作成したレポート・を指定します。
 8. <strong><em>[保存]</em></strong>をクリックします。
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### AppsFlyer SDK 拡張機能のインストール
 
 1. ***拡張機能***をもう一度選択します。
@@ -111,6 +123,8 @@ Adobe Launch に以下の拡張機能をインストールします：
 5. ***アトリビューションデータを Adobe Analytics に送信する***を有効にします。<Anchor target="_blank" href="/marketers/ja/docs/user-level-data-retention">ユーザーレベルのデータをサードパーティのアナリティクスプラットフォームと共有するには、いくつかの制限が</Anchor>あることに注意してください。
 6. ***保存***をクリックします。
 
+<div id="install-profile-and-mobile-core-extension" />
+
 #### プロファイルとモバイルコア拡張機能のインストール
 
 1. ***拡張機能***をもう一度選択します。
@@ -119,6 +133,8 @@ Adobe Launch に以下の拡張機能をインストールします：
    * モバイルコアをインストールする際は、拡張機能をそのまま保存してください。***エクスペリエンス・クラウド・サーバー***を指定する必要はありません。
 
 </Accordion>
+
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
 
 ## ステップ2:AppsFlyer Adobe SDK 拡張機能の実装
 
@@ -161,6 +177,8 @@ SDK の実装を完了するには、環境をライブラリに公開する必�
 <Accordion title="2.3 アプリに Android インストールリファラを追加する">
 
 Android インストールリファラはアトリビューションの精度を改善し、不正インストールなどから守ります。APIはAppsFlyerのAndroid SDKバージョン4.8.6以降よりサポートされています。
+
+<div id="note-1" />
 
 > 📘 **注**
 >
@@ -213,6 +231,8 @@ ProGuard を使用中で、Google の新しいリファラ API を使用した�
 
 権限を追加することで、<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model#probabilistic-modeling">確率論的モデリングのアトリビューション</Anchor>率を高めることができます。SDKがWifiやキャリアネットワークデータなどのデータを送信できるようにします。このデータは<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ローデータレポート</Anchor>にも反映され、キャンペーンの分析や最適化に使用できます。
 
+<div id="add-required-permissions" />
+
 #### 必須パーミッションの追加
 
 1. 次の権限を AndroidManifest.xml に追加します。  
@@ -227,9 +247,13 @@ ProGuard を使用中で、Google の新しいリファラ API を使用した�
 
 </Accordion>
 
+<div id="using-the-adobe-sdk-extension" />
+
 ## Adobe SDK 拡張機能の使用
 
 これで、Adobe SDK 拡張機能を使って Adobe と AppsFlyer にデータを送信できるようになります。
+
+<div id="note-2" />
 
 > 📘 **注**
 >
@@ -351,6 +375,8 @@ AppDelegate.m で、以下のコードを実装します：
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## AppsFlyer のコンバージョンデータの取得
 
 コンバージョンデータは、イベントとともに Adobe プラットフォームに送信されます。これらの変数を使用すると、レポートのディメンション、メトリクス、またはフィルタにロジックやルールを適用できます。
@@ -369,6 +395,8 @@ AppsFlyer Context 変数のマッピングについては、以下の表を参�
 | AppsFlyer クリック時間 | appsflyer.click\_time |
 | AppsFlyer オリジナル・コスト | appsflyer.orig\_cost |
 | AppsFlyer キャンペーン | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### AppsFlyer のマッピングされたコンバージョンデータを分析および解析に使用する
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyerとAmplitudeを連携すると、ユーザーのアトリビューションデータとイベント分析データを共有し、エンゲージメント、継続率、収益をより詳しく分析できます。用途や分析の目的に応じて、**V1またはV2のいずれかの連携方式**を選択してください。
 
+<div id="about-the-integration" />
+
 ## 連携の概要
 
 AppsFlyerの連携済みパートナーであるAmplitudeは、プロダクト、グロース、マーケティングの各チームが、モバイルとWebにおけるユーザー行動を把握するためのプロダクト分析プラットフォームです。この連携により、AppsFlyerからインストール後の主要なイベントデータをAmplitudeに送信し、ユーザー単位で詳しく分析できます。
@@ -50,6 +52,8 @@ Amplitudeとの連携には、次の2つのバージョンがあります。
 > * Amplitude V1またはV2のいずれかを選択してください。**両方を同時に使用しないでください**。両方のバージョンを同時に使用すると、Amplitudeにイベントが重複して送信されることがあります。
 > * 一部のメディアソースでは、第三者とのデータ共有が制限されています。共有が制限されているイベントのポストバックは、設定済みでもこのパートナーには送信されません。
 
+<div id="prerequisites" />
+
 ## 前提条件
 
 **設定を始める前に：**
@@ -59,6 +63,8 @@ Amplitudeとの連携には、次の2つのバージョンがあります。
 * 重複を防ぐため、Amplitude SDKとAppsFlyerの両方から同じイベントを送信しないようにしてください。
 * Amplitude V2連携の追加の前提条件も確認してください。
 
+<div id="additional-prerequisites-for-the-amplitude-v2-integration" />
+
 ### Amplitude V2連携の追加の前提条件
 
 V2連携では、次の設定が必要です。
@@ -66,6 +72,8 @@ V2連携では、次の設定が必要です。
 * [AmplitudeデバイスID](/docs/amplitude-integration-with-appsflyer#amplitudeデバイスid)
 * [カスタマーユーザーID](/docs/amplitude-integration-with-appsflyer#カスタマーユーザーid)
 * [AmplitudeセッションID](/docs/amplitude-integration-with-appsflyer#amplitudeセッションid)
+
+<div id="amplitude-device-id" />
 
 #### AmplitudeデバイスID
 
@@ -164,10 +172,14 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="customer-user-id" />
+
 #### カスタマーユーザーID
 
 カスタマーユーザーID（CUID）を設定します。通常、アプリの所有者がユーザー登録時に生成・設定する  
 一意の識別子です。<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">詳細を見る</Anchor>
+
+<div id="amplitude-session-id" />
 
 #### AmplitudeセッションID
 
@@ -266,6 +278,8 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="set-up-the-integration" />
+
 ## 連携の設定
 
 **連携を設定するには、以下の手順を実施します。**
@@ -292,12 +306,18 @@ appsFlyerSdk.setAdditionalData(data);
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めて設定する場合**は、<strong>［パートナーを有効化］</strong>をオンにすると、［連携］タブのパラメータを設定できます。このパートナーと連携している間は、オンにしておく必要があります。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
 
+<div id="general-settings" />
+
 ### 一般設定
+
+<div id="advanced-data-sharing" />
 
 #### 拡張データ共有
 
@@ -320,10 +340,14 @@ appsFlyerSdk.setAdditionalData(data);
 | af\_sub5 | af\_sub5 |
 | app\_version | app\_version |
 
+<div id="amplitude-eu-data-center" />
+
 #### AmplitudeのEUデータセンター
 
 <strong>［Amplitude EU Data Center］</strong>がオフの場合、インストールポストバックは米国のデータセンターに送信されます。  
 AmplitudeのEUデータセンターにインストールポストバックを送信するには、［Amplitude EU Data Center］をオンにします。
+
+<div id="api-key" />
 
 #### APIキー
 
@@ -345,11 +369,15 @@ AmplitudeとAppsFlyerの接続には、固有のAPIキーを使用します。�
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. AppsFlyer管理画面でAmplitudeの設定に進みます。
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、ユーザーのインストール後にAmplitudeへポストバックを自動送信できます。インストールとリエンゲージメント（リアトリビューションを含む）が対象です。リエンゲージメントとは、すでにアプリをインストールしているユーザーが、キャンペーンをクリックした後にアプリを開くことです。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
 
 <Image alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
+
+<div id="in-app-event-settings" />
 
 ### アプリ内イベントの設定
 
@@ -364,6 +392,8 @@ AppsFlyerは、ユーザーのインストール後にAmplitudeへポストバ�
 * キャンペーン名
 
 iOSデバイスのIDFAを送信できるかどうかは、<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">ユーザーのATT同意と高度なプライバシー設定</Anchor>によって決まります。
+
+<div id="in-app-event-postbacks" />
 
 ### アプリ内イベントポストバック
 
@@ -395,6 +425,8 @@ Amplitudeでは、権限の設定は利用できません。
 
 </Accordion>
 
+<div id="viewing-attribution-data-in-the-amplitude-console" />
+
 ## Amplitudeコンソールでアトリビューションデータを確認する
 
 AppsFlyerからAmplitudeに送信されたアトリビューションデータは、ダッシュボードに **[AppsFlyer]** で始まるイベントやプロパティとして表示されます。
@@ -406,6 +438,8 @@ AppsFlyerからAmplitudeに送信されたアトリビューションデータ�
 > **重要**
 >
 > AppsFlyerから送信されたデータが、Amplitudeで「Blocked」と表示される場合があります。 AmplitudeでAppsFlyerのデータが表示されない場合は、ブロック対象のイベントに設定されていないか確認してください。
+
+<div id="sending-amplitude-events-to-appsflyer" />
 
 ## AmplitudeのイベントをAppsFlyerに送信する
 

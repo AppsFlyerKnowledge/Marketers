@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer は、マーケティング担当者がデジタル市場法（DMA）を遵守し、Google での広告の価値を向上できるよう支援しています。DMA への準拠と広告価値の最適化に関するよくある質問への回答をご覧ください。
 
+<div id="overview" />
+
 ## 概要
 
 Google は、 <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">デジタル市場法</Anchor>（DMA）の施行に備えて、<Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">EUユーザーの同意ポリシー</Anchor>を更新しています。Googleの公式<Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">アプリアトリビューションパートナー</Anchor>として、AppsFlyerはポリシー変更に適応しながら、広告主がGoogleでの広告を最大限に活用できるように対応しています。更新されたポリシーは、2024年3月6日現在有効です。
+
+<div id="relevant-integrations-and-continued-use-of-google-features" />
 
 ## 関連する連携とGoogle機能の継続使用
 
@@ -39,6 +43,8 @@ Google は、 <Anchor target="_blank" href="https://commission.europa.eu/strateg
 * GMP DV360 (`dv360_int`)
 
 これらの連携によるアプリのエンドユーザーが欧州経済領域（EEA）または英国に拠点を置いている場合は、Googleの新しいEU同意ポリシーの要件に準拠するために必要な措置を必ず講じてください。
+
+<div id="note" />
 
 > 📘 **注**
 >
@@ -54,6 +60,8 @@ Google は、 <Anchor target="_blank" href="https://commission.europa.eu/strateg
 
 </Accordion>
 
+<div id="updating-the-appsflyer-sdk" />
+
 ## AppsFlyer SDKの更新
 
 <div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
@@ -66,6 +74,8 @@ AppsFlyer SDK（v6.13.1以降）は、Googleの要件を満たすために、各
 * SDKアップデートが完了したら、DMAをサポートするための実装手順を<Anchor target="_blank" href="/marketers/ja/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance">こちら</Anchor>から参照してください。
 
 </Accordion>
+
+<div id="sending-consent-data" />
 
 ## AppsFlyerへの同意データの送信
 
@@ -101,6 +111,8 @@ AppsFlyer SDK（v6.13.1以降）は、Googleの要件を満たすために、各
 
 </Accordion>
 
+<div id="sending-consent-datafaq" />
+
 ### AppsFlyerへの同意データの送信 - よくある質問
 
 <div id="do-i-have-control-over-consent-data-for-nonue-users" />
@@ -108,6 +120,8 @@ AppsFlyer SDK（v6.13.1以降）は、Googleの要件を満たすために、各
 <Accordion title="同意データをGoogleに送信しないという選択肢はありますか？">
 
 AppsFlyer は、GDPRがエンドユーザーに適用されないと思われる場合（EUまたは英国圏外など）の広告主が、Googleに同意データを送信しないようにすることができます。これは、関連する連携済みパートナー画面で Non EU users トグルをオンに設定することで適用されます。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -170,19 +184,27 @@ AppsFlyerがCMPから（AppsFlyer SDKまたはS2Sを介して）TCF文字列を�
 
 </Accordion>
 
+<div id="preparing-for-the-upcoming-changes" />
+
 ## 今後の変更に備える方法
 
 <div id="how-can-i-prepare-for-the-upcoming-changes" />
 
 <Accordion title="次の準備手順を実行します。">
 
+<div id="address-user-consent-in-the-european-economic-area-eea" />
+
 #### 欧州経済領域 (EEA) および英国におけるユーザーの同意に対処する
 
 会社の法律顧問と協力してください。彼らが、Google などのパートナーと共有しているデータに対する欧州のユーザー同意ポリシーの影響についてのインサイトを提供してくれます。必要に応じて、「プライバシー設定」や「プライバシーの選択」などのプライバシープロンプトを実装して、アプリユーザーからマーケティングや広告に関連するユーザーの同意シグナルを収集します。
 
+<div id="verify-cmp-compliance-and-tcf-2223-support" />
+
 #### CMPコンプライアンスとTCF 2.2対応の確認
 
 同意管理プラットフォーム（CMP）が、最新の透明性および同意フレームワーク TCFバージョンであるTCF 2.2をサポートしていることを確認してください。TCF は、Google EU の新しい同意要件についても十分な情報を持っている必要があり、TCF を通じてそれをサポートする方法についてアドバイスできるはずです。
+
+<div id="implement-the-newest-sdkserver-to-server-s2s-apis" />
 
 #### 最新の SDK/サーバー間 (S2S) API を実装する
 
@@ -194,11 +216,15 @@ SDK または S2S APIコールを使用して、新しい同意フィールド�
 * **<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile?">S2SAPI</Anchor>コールの使用：**
   * アプリ内イベントをAppsFlyerに送信する前に、各イベントの `consent_data` オブジェクトを含むように API コールを更新します。 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">実行方法を</Anchor>参照してください。
 
+<div id="transition-from-the-legacy-gmp-integration-doubleclick" />
+
 #### 従来のGMP連携（DoubleClick）からの移行
 
 従来の AppsFlyer GMP 連携（doubleclick\_int）をまだ使用している場合は、2024年第1四半期中に新しいバージョン（dv360\_int）への移行を完了してください。従来の連携は**EUの同意と互換性がなく**、まもなく非推奨になります。詳細は <Anchor target="_blank" href="/marketers/ja/docs/bulletin-google-marketing-platform-gmp-integration-transition">こちら</Anchor>をご覧ください。
 
 </Accordion>
+
+<div id="impact-on-advertising-activityfaq" />
 
 ## 広告活動への影響 - よくある質問
 
@@ -218,6 +244,8 @@ GoogleとAppsFlyerは、GoogleのDMA規制の解釈に基づいて、ad\_user\_d
 変更は、オーディエンスに表示され、Google のリマーケティング キャンペーンに表示される EEA および英国のユーザーの数に影響を与える可能性があります。EEA および英国に拠点を置くユーザーは、情報を Google と共有する前に同意する必要があります。同意しないユーザーは Google 側の対象ユーザーから除外され、キャンペーンの対象にはなりません。これにより、ユーザーから同意を得る方法と、ビジネスや広告活動にどのような影響を及ぼす可能性があるかという問題が生じます。<Anchor target="_blank" href="/marketers/ja/docs/audiences-user-identifier-policy#eu-digital-markets-act">オーディエンスへの変更について詳しくは、こちらをご覧ください</Anchor>。
 
 </Accordion>
+
+<div id="further-information-and-contact-details" />
 
 ## 追加情報および問い合わせ詳細
 

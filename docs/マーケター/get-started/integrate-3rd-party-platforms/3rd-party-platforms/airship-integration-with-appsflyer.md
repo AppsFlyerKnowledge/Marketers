@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるAirshipは、世界をリードするモバイルエンゲージメントプラットフォームです。規模を問わず数千社の企業が、顧客と直接つながり、継続的な関係を築けるよう支援しています。 Airshipでは、アプリ、ウォレット、ユーザーレベルのデータなど、モバイル施策全体を一元的に管理できます。モバイルをはじめとするさまざまな顧客接点で、ユーザーの関心を引き、行動につながる体験を提供できます。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-airship" />
 
 ## Airshipの設定
 
@@ -52,10 +56,14 @@ x-zendesk:
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めて設定する場合**は、<strong>［パートナーを有効化］</strong>をオンにすると、［連携］タブのパラメータを設定できます。**パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります**。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -78,6 +86,8 @@ Airship SDKの最低要件：V13.1.0以降。
    * [AndroidのChannel IDの詳細](https://docs.airship.com/platform/android/segmentation/#airship-channel-ids)。
 
    このパラメータはすべてのポストバックに含まれ、ユーザーの識別に使用されます。アプリのコードに、以下のコードを追加してください。
+
+   <div id="important-note" />
 
    > 📘 **重要な注意事項**
    >
@@ -129,6 +139,8 @@ Airship SDKの最低要件：V13.1.0以降。
    5. ［**トークンを作成**］をクリックします。
    6. AppsFlyerの［**トークン認証**］欄にトークンを貼り付けます。
 
+<div id="default-postbacks" />
+
 ### デフォルトポストバック
 
 AppsFlyerは、インストールやリエンゲージメントの発生時に、Airshipへポストバックを自動送信できます。このセクションでは、ポストバックを送信する**対象ユーザーの流入元**を指定します。
@@ -176,6 +188,8 @@ Airshipでは、計測リンクは利用できません。
 Airshipでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="set-up-and-manage-the-attribution-data-in-airship-console" />
 
 ## Airshipの管理画面でのアトリビューションデータの設定と管理
 

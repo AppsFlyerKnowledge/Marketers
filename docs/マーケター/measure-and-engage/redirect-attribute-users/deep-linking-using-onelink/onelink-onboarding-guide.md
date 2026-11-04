@@ -24,6 +24,8 @@ x-zendesk:
 
 ## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
 
+<div id="about-onelink" />
+
 ## OneLinkについて
 
 AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneLink</Anchor>では、アトリビューション、リダイレクト、ディープリンクの機能を備えたキャンペーン用リンクを作成できます。デバイス、OS、チャネル、プラットフォームを問わず、ユーザーの状況に合ったスムーズな導線を提供し、オウンドメディアのユーザーをアプリユーザーに転換するとともに、既存ユーザーのエンゲージメントを促進します。 OneLinkを使用してユーザーごとの状況に合わせた導線を作成し、アプリへの誘導とコンバージョン率・収益の最大化につなげましょう。次のようなユーザー体験を作成できます。
@@ -38,6 +40,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneL
 * **Custom**：豊富なオプションを組み合わせ、ニーズに合わせて柔軟にカスタマイズしたユーザー体験を作成します。 デスクトップ／モバイル、オンライン／オフライン、オウンドメディア／有料メディアを問わず、OneLinkを使って、あらゆる流入元のユーザーを適切な遷移先へ簡単に誘導できます。
 
 **注意：** OneLinkの基本設定は無料プランでも利用できますが、ほとんどの機能にはAppsFlyerの有料<Anchor target="_blank" href="/marketers/ja/docs/account-management-plans-payments-and-billing#appsflyer-plans">サブスクリプションプラン</Anchor>が必要です。 0>
+
+<div id="onelink-onboarding" />
 
 ## OneLinkの導入
 
@@ -61,6 +65,8 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneL
 | **オプション機能** |  | 設定が完了したら、以下のようなOneLinkの追加機能もご検討ください。<ul><li>Web-to-app：Webユーザーをアプリユーザーに転換し、Webからアプリへのコンバージョン経路を計測します。</li><li><Anchor target="_blank" href="/marketers/ja/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">OneLink API</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/perform-onelink-bulk-actions-via-csv">リンクの一括作成</Anchor>：複数のキャンペーンを同時に大規模に展開し、数千ものOneLinkリンクをすばやく簡単に作成できます。<br />*OneLink APIの利用にはEnterpriseプランの契約が必要です。</li><li><Anchor target="_blank" href="/marketers/ja/docs/export-onelink-urls">OneLink URLのエクスポート</Anchor>：AppsFlyerで作成したOneLink URLをダウンロードします。</li><li><Anchor target="_blank" href="/marketers/ja/docs/user-invite-attribution">ユーザー招待のアトリビューション</Anchor>：アプリ内で直接作成するユーザー招待リンクを組み込み、エンゲージメントを促進します。</li><li><Anchor target="_blank" href="/marketers/ja/docs/cross-promotion-attribution-for-marketers">クロスプロモーションのアトリビューション</Anchor>：既存のアプリユーザーは、自社の別の新しいアプリをインストールしてくれる可能性が高いユーザーです。 SDKのメソッドを使用してクロスプロモーションキャンペーンを作成し、計測する方法をご確認ください。</li><li><Anchor target="_blank" href="/marketers/ja/docs/understand-onelink-short-vs-long-urls">ロングURL</Anchor>：OneLinkカスタムリンクにパラメータを追加したり、スプレッドシートで独自の簡単な数式を使用して多数のOneLinkカスタムリンクを生成したりできます。</li></ul>**注意：** ほとんどの機能にはAppsFlyerの有料<Anchor target="_blank" href="/marketers/ja/docs/account-management-plans-payments-and-billing#appsflyer-plans">サブスクリプションプラン</Anchor>が必要です。 | マーケターと開発者 |
 
 OneLinkの利用開始にあたってご不明な点がある場合は、営業担当者に連絡するか、[hello@appsflyer.com](mailto:hello@appsflyer.com)までお問い合わせください。
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限事項
 

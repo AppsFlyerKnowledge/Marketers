@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="activate-partner" />
+
 ## 連携設定
 
 **前提条件：** 連携設定を行う前に、<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">必ずパートナーへ連絡</Anchor>し、アカウントを開設してください。
@@ -38,6 +40,8 @@ x-zendesk:
    **注：<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーと作業している間は、トグルをオン（</Anchor><Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">アクティブ</Anchor>）にしたままにする必要があります。**
 5. 次のセクションで説明されている関連タブを使用して設定を完了します。
 
+<div id="complete-the-setup-in-amazon-ads" />
+
 ## Amazon Ads側での設定
 
 Amazon Adsでは以下の対応が必要です：
@@ -45,9 +49,13 @@ Amazon Adsでは以下の対応が必要です：
 1. アプリがAmazon Ads上に正しく登録されていることを確認してください。（詳細は「<Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">Register apps</Anchor>」を参照してください）
 2. キャンペーン作成時に、対象のコンバージョンをキャンペーンに紐付けてください。（詳細は「<Anchor target="_blank" href="https://advertising.amazon.com/help/GMQBB4PRFK8C33AE">Assign a conversion definition to a campaign</Anchor>」を参照してください）
 
+<div id="setting-up-amazon-ads" />
+
 ## Amazon Adsの設定
 
 Amazon Adsとの連携は、クリックとインプレッションのアトリビューションをサポートします。設定ウィンドウには次のタブが含まれます：連携、計測リンク、コスト、広告収益、権限（Amazon Adsで利用できるタブは、連携と権限のみです）
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -59,9 +67,13 @@ Amazon Adsとの連携は、クリックとインプレッションのアトリ�
 
 **連携**タブには、以下で説明するセクションがあります。
 
+<div id="activate-partner-1" />
+
 #### 連携設定
 
 連携を設定するには、まず**パートナーを有効にする**トグルを[オン](/docs/amazon-ads-campaign-configuration#連携設定)にする必要があります。詳細：<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation#パートナー統合を有効にする">パートナー連携</Anchor>
+
+<div id="general-settings" />
 
 #### 一般設定
 
@@ -84,6 +96,8 @@ Amazon Adsとの連携は、クリックとインプレッションのアトリ�
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-multi-store-android-attribution#単一管理画面-vs-ストアごとの管理画面">**単一管理画面アプリ**</Anchor> （同じAppsFlyerアプリのGoogle PlayとAmazonストアのデータを統合した管理画面）の場合：App IDとしてAndroidのパッケージ名を入力してください。  
   **注：<Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">アプリがAmazon AdsアカウントでAndroidアプリとして</Anchor><Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">登録</Anchor>されていることを確認してください。**
 
+<div id="install-attribution" />
+
 #### インストールアトリビューション
 
 インストール（初回起動）のクリックとビュースルーアトリビューション期間を設定します。ルックバック期間内のインストールのみがAmazon Adsへのアトリビューション対象となります。
@@ -95,6 +109,8 @@ Amazon Adsとの連携は、クリックとインプレッションのアトリ�
 2. [オプション] **インストールのビュースルー計測**を有効にし、**インストールのビュースルールックバック期間**を1-24時間に設定します。   
    **注意：** Amazon Adsでは、そのアトリビューション期間と一致させ矛盾を避けるためにビュースルールックバック期間を14日間に設定することを推奨しています。
 
+<div id="re-engagement-attribution" />
+
 #### リエンゲージメント計測
 
 **リエンゲージメントCV計測**を有効にし、広告を閲覧、クリック、または***エンゲージした***既存ユーザーのリエンゲージメントを計測するためのさまざまなアトリビューション期間を設定します。ルックバック期間内のリエンゲージメントのみがAmazon Adsへのアトリビューション対象となります。
@@ -105,9 +121,13 @@ Amazon Adsとの連携は、クリックとインプレッションのアトリ�
    * **リエンゲージメントCVのビュースルールックバック期間**を1-23時間または1-14日に設定します。
 3. **リエンゲージメント期間**を1-23時間、1-90日間、または全期間に設定します。
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### リターゲティングでアクティブユーザーを無視する
 
 直近アプリを起動したユーザーの、<Anchor target="_blank" href="/marketers/ja/docs/set-retargeting-inactivity-window#休眠期間">リエンゲージメントとリアトリビューションを計測しない</Anchor>期間を設定します。したがって、この期間中のアクティビティはAppsFlyerに記録されません。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -116,6 +136,8 @@ Amazon Adsとの連携は、クリックとインプレッションのアトリ�
 1. **リターゲティングでアクティブユーザーを無視する**をオンにします。
 2. **休眠期間**を1-30日間に設定します。  
    **注意：** Amazon広告は矛盾を避けるために、休眠期間を7日間に設定することを推奨しています。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -132,6 +154,8 @@ Amazon Adsとの連携は、クリックとインプレッションのアトリ�
 | **パートナー側のイベント名** | パートナー側で定義されている各イベントの一意の名前またはIDです。定義されたパートナーイベントのリストから、アプリイベント(AppsFlyerイベント)に対応するイベントを選択します。<br /><br />**注意：**<ul><li>アプリイベントに直接対応しないイベントには、OTHERを選択することができます。</li><li>リエンゲージメント計測を有効にしている場合、`af_app_opened` をマッピングしないか、`OTHER` にのみマッピングすることを推奨します。これにより、イベント送信時の重複を防げます。</li></ul> |
 | **送信オプション** | イベントの送信オプションを選択してください：<ul><li>**このパートナーのみ：** このイベントがこのパートナーに紐づく場合のみポストバックを送信します。</li><li>**オーガニックを含むすべてのメディアソース：** 任意のパートナーに紐づくイベント及びオーガニックイベントのポストバックを送信します。</li></ul> |
 | **含む** | <ul><li>**データなし（デフォルト）：** イベント値なしでイベント自体のみを送信します。</li><li>**イベント値と収益：** 収益の額を**含む**（存在する場合）、すべてのイベント値を送信します。</li><li>**収益を除いたイベント値：** 収益の額を**含まない**、すべてのイベント値を送信します。</li></ul> |
+
+   <div id="note-2" />
 
    > 📘 **注意**
    >
@@ -176,6 +200,8 @@ Amazon広告では広告収益は得られません。
 
 Amazon Ads にデータアクセスや各種操作を許可する権限を選択します。
 
+<div id="note-3" />
+
 > 📘 **注意**
 >
 > * 権限トグルがオンの状態で連携が<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">非アクティブ化</Anchor>された場合でも、権限は付与されたままです。
@@ -183,10 +209,14 @@ Amazon Ads にデータアクセスや各種操作を許可する権限を選択
 
 </Accordion>
 
+<div id="see-also" />
+
 > 📄 **参照**
 >
 > * <Anchor target="_blank" href="/marketers/ja/docs/setting-up-amazon-fire-tv-ad-attribution">Amazon Fireテレビ広告のアトリビューション設定</Anchor>
 > * <Anchor target="_blank" href="/marketers/ja/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer">AppsFlyerとAmazon Ads間のアトリビューションの不一致</Anchor>
+
+<div id="deferred-deep-linking" />
 
 ## ディファードディープリンク
 
@@ -195,9 +225,13 @@ Amazon Ads にデータアクセスや各種操作を許可する権限を選択
   * [UDL](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl)（Unified Deep Link） - SRNではサポートされていません。
   * [GCD](https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking)（Get Conversion Data） - Amazon Adsのアトリビューションデータは[制限されている](/docs/amazon-ads-campaign-configuration#ローデータの制限)ため、Amazon Adsでは機能しません。
 
+<div id="raw-data-restrictions" />
+
 ## ローデータの制限
 
 Amazon広告からのローデータは、<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">AppsFlyerプラットフォーム上で制限されています</Anchor>。その結果、メディアソースは restricte（制限有り）としてレポートされ、キャンペーンの詳細は null となります。Amazon Adsのクリックとインプレッションはローデータレポートには含まれません。
+
+<div id="ctv-to-mobile-attribution" />
 
 ## CTV-to-mobileの計測について
 
@@ -205,15 +239,21 @@ Amazonでは、Amazon Prime VideoなどのCTV（Connected TV）キャンペー�
 
 **注意：** キャンペーンがCTVであることを**明示的に示すレポート指標**はありません。可視性と計測を改善するため、該当する場合は キャンペーン名の中に「CTV」などの値を含めることを推奨します。
 
+<div id="support-amazon-eu-consent-policy" />
+
 ## Amazon EUの同意ポリシーをサポートする
 
 Google は、 デジタル市場法（DMA）の施行に備えて、<Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">EUユーザーの同意ポリシー</Anchor>を更新しています。Amazonのアプリアトリビューションパートナーとして、AppsFlyerはこれらのポリシー変更に適応し、広告主がAmazonでの広告から最大限の効果を得られるよう支援しています。更新されたポリシーは2026年6月30日に発効します。
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
 > 更新されたEU同意ポリシーは、EU、UK、またはスイス（CH）のユーザーからのデータ（インストール、再エンゲージメント、アプリ内イベント）にのみ適用されます。
 
 準拠するために、<Anchor target="_blank" href="/marketers/ja/docs/support-google-eu-consent-policy">GoogleのDMA同意</Anchor>に使用されるのと同じ方法でAppsFlyer DMA同意情報を送信してください。
+
+<div id="dma-consent-methods" />
 
 ### DMA同意方法
 
@@ -224,14 +264,20 @@ AppsFlyerは現在、DMA同意共有の2つの方法をサポートしていま�
 | **マニュアル** | Amazonが要求する唯一のフィールドは`ad_user_data_enabled`です。 |
 | <Anchor target="_blank" href="https://iabeurope.eu/transparency-consent-framework/">**TCF**</Anchor>**（透明性と同意のフレームワーク）** | 同意管理プラットフォーム（CMP）を使用する場合は、Amazon AdsベンダーID（**793**）が許可されたベンダーリストに含まれていることを確認してください。 |
 
+<div id="note-5" />
+
 > 📘 **注意**
 >
 > Amazonはまた、<Anchor target="_blank" href="https://iabtechlab.com/gpp/">グローバルプライバシープラットフォーム（GPP）</Anchor>を介した同意信号もサポートしていますが、AppsFlyerは現在この方法をサポートしていません。
+
+<div id="see-also-1" />
 
 > 📄 **参照**
 >
 > * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance">AppsFlyer SDKを介してDMA同意を送信する</Anchor>
 > * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview">AppsFlyer S2Sを介してDMA同意を送信する</Anchor>（`consent_data`を検索）
+
+<div id="traits-and-limitations" />
 
 ## 特性と制限
 

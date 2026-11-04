@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：Enterprise-Grade Security Package**は、企業向けのID管理、トークンのアクセス制御、監査ログの拡張機能を備えた有料パッケージで、アカウントの保護を強化します。
 
+<div id="intro" />
+
 ## はじめに
 
 Enterprise-Grade Security Packageは、組織のセキュリティを強化する3つの主要機能をまとめたパッケージです。
@@ -29,6 +31,8 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 * **監査ログAPIと保存期間の延長**：管理画面での操作を長期間さかのぼって確認し、監査イベントを既存の監視システムに取り込めます。
 * **SCIMによるユーザー管理の自動化**：IDプロバイダーを通じて、ユーザーのアクセス管理を自動化・一元化できます。
 * **ログイン用IP許可リスト：** 信頼できるネットワークとIPアドレスからのみAppsFlyer管理画面へのログインを許可し、不正アクセスを防ぎます。
+
+<div id="compare-the-standard-and-enterprise-grade-packages" />
 
 ### 標準パッケージとの違いは、次のとおりです。
 
@@ -48,6 +52,8 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 
 種類ごと（API、S2S、OneLink）に最大**30個のトークン**を作成・管理し、**利用できるサービスを制限**することで、大規模な運用にも対応しながら、トークンの安全性と管理機能を強化できます。
 
+<div id="key-features" />
+
 #### 主な機能
 
 * 管理者は、標準の2個に対して、**種類ごとに最大30個のトークン**を作成でき、大規模なチームや複雑な業務フローに対応できます。
@@ -55,6 +61,8 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 * 連携や自動処理を中断せずに、トークンの失効や切り替えができます。
 * トークンの対象を特定のアプリに限定し、そのアプリのデータへのアクセスや操作だけを許可できます。
 * トークンごとの権限設定により、社内チームや外部パートナーとの連携を管理しやすくなります。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -66,9 +74,13 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 >
 > **特定アプリ専用トークン：** 1つのアプリでのみ利用できるトークンを作成します。社内チーム、外部パートナー、自動処理のアクセス対象を特定のアプリに限定する場合に使用します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 標準トークンの概要は、<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">AppsFlyerトークンの管理</Anchor>を参照してください。
+
+<div id="how-to-access-and-control-tokens" />
 
 #### トークンの確認と管理
 
@@ -98,6 +110,8 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 * トークンの個別削除
 * 監査ログによるトークンの利用状況の確認
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > トークンは編集できません。アクセス権限を変更するには、トークンを削除して再作成してください。
@@ -110,6 +124,8 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 
 既存の監査ログ機能にAPIによる取得機能が加わり、データの保存期間が90日から180日に延長されます。ユーザーの操作ログを長期間確認したい場合や、監査イベントをSOCやSIEMなどの外部の監視環境に取り込みたいチームに適しています。
 
+<div id="key-features-1" />
+
 #### 主な機能
 
 * 専用APIを使った監査ログへのプログラムからのアクセス
@@ -118,9 +134,13 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 * サービス専用トークンによる、ログへのアクセス権限の分離
 * SIEMツール、ダッシュボード、クラウドストレージへのデータのエクスポート
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 標準の監査ログの概要は、<Anchor target="_blank" href="/marketers/ja/docs/audit-log">標準の監査ログ</Anchor>を参照してください。
+
+<div id="how-to-access-the-audit-log-via-api" />
 
 ### **APIから監査ログにアクセスする方法**
 
@@ -132,6 +152,8 @@ Enterprise-Grade Security Packageは、組織のセキュリティを強化す�
 4. 既存の**APIトークン**を使用するか、新しく作成します。
 5. <strong>［アクセス制限］</strong>で、<strong>［監査ログ］</strong>サービスを選択します。
 6. トークンを使って、監査ログAPIエンドポイントへのリクエストを認証します。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -147,11 +169,15 @@ SCIMによるユーザー管理の自動化は、AppsFlyerのSSO機能を拡張�
 
 SCIMでユーザーを同期することで、アクセス権限をリアルタイムで一元管理できます。 SAML 2.0によるSSOと組み合わせることで、企業向けの包括的なID・アクセス管理を実現できます。
 
+<div id="key-features-2" />
+
 #### **主な機能**
 
 * IDプロバイダー（IdP）の登録情報に基づいて、AppsFlyerにユーザーを自動作成します。
 * IdPでのユーザーのロールやステータスの変更が、AppsFlyerに即座に反映されます。
 * 安全なSSOに**SAML 2.0**、ユーザー管理の自動化に**SCIM**を使用し、OktaやAzure ADなどの主要なIdPに対応しています。
+
+<div id="how-to-set-up-scim-provisioning" />
 
 #### **SCIMによるユーザー管理の自動化の設定**
 
@@ -159,6 +185,8 @@ AppsFlyerでSCIMによるユーザー管理の自動化を利用するには、�
 
 1. [SSOの設定](/docs/enterprise-grade-security-package#ssoの設定)
 2. [SCIMの有効化](/docs/enterprise-grade-security-package#scimの有効化)
+
+<div id="sso-set-up" />
 
 #### SSOの設定
 
@@ -168,7 +196,11 @@ SSOを設定するには、次の手順を実施します。
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">AppsFlyerでのSSOの設定</Anchor>
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">SSO設定のテスト</Anchor>
 
+<div id="enable-scim" />
+
 #### SCIMの有効化
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -182,9 +214,15 @@ SCIMを有効にするには、次の手順に従います。
 * [ロール](/docs/enterprise-grade-security-package#ロール)を追加します。
 * [外部名前空間](/docs/enterprise-grade-security-package#external-namespace)を追加します。
 
+<div id="idp-instruction-links" />
+
 #### IdPの設定手順へのリンク
 
+<div id="the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud" />
+
 ##### 各IdPの設定手順は、以下を参照してください。 <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>、<Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>、<Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor>、<Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
+
+<div id="scim-connections" />
 
 #### SCIM接続
 
@@ -196,6 +234,8 @@ SCIM接続では、次の項目を入力します。
 | ユーザーの一意の識別子となるフィールド | userName |
 | 認証方法：AuthorizationというHTTPヘッダー | Bearer &lt;<Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">Your AppsFlyer API token</Anchor>> |
 
+<div id="scim-attributes" />
+
 #### SCIM属性
 
 | **属性** | **型** | **必須** | **項目名** | **外部名前空間** | **説明** |
@@ -203,6 +243,8 @@ SCIM接続では、次の項目を入力します。
 | ロール | 文字列 | ✅ | role | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>ユーザーに定義済みロールまたはカスタムロールを割り当てます。</li><li>入力するAppsFlyerのロール一覧は、以下を参照してください。</li></ul> |
 | 今後追加するすべてのアプリへのアクセスを許可 | 真偽値 | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | 有効にすると、今後追加されるアプリへのアクセスが自動的に許可されます。 |
 | アクセスを許可するアプリID | 文字列 | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | アプリIDをカンマ区切りで指定します。すべてのアプリを許可する場合は空欄にし、どのアプリも許可しない場合は「None」を指定します。 |
+
+<div id="roles" />
 
 #### ロール
 
@@ -221,6 +263,8 @@ SCIM接続では、次の項目を入力します。
 | Quality Assurance | quality\_assurance |
 | カスタムロール | [enter custom role value] |
 
+<div id="limitations" />
+
 #### 制限事項
 
 | **制限事項** | **説明** |
@@ -235,11 +279,15 @@ SCIM接続では、次の項目を入力します。
 
 信頼できるネットワークからのみ管理画面へのアクセスを許可することで、不正アクセスを防ぎ、セキュリティを強化します。厳格なセキュリティポリシーを適用する企業や、リモートアクセスを管理する企業に特に役立つ機能です。
 
+<div id="key-features-3" />
+
 #### 主な機能
 
 * 不明なIPアドレスからのログインをブロックし、攻撃のリスクを低減します。
 * IPアドレスや範囲を指定することで、許可されたユーザーやネットワークからのみ管理画面へアクセスできるようにします。
 * VPNを使用する組織や、厳格なアクセス管理が必要な組織に適しています。
+
+<div id="adding-ips-to-the-list" />
 
 #### IPアドレスをリストに追加する
 
@@ -253,11 +301,15 @@ SCIM接続では、次の項目を入力します。
 4. 追加したIPアドレスは、右側の<strong>［許可リストのIPアドレスを表示］</strong>に表示されます。
 5. <strong>［リストを保存］</strong>をクリックします。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > * 追加するIPアドレスや範囲に誤りがないことを確認してください。入力を誤ると、自分のアカウントにアクセスできなくなる場合があります。
 > * 保存して有効にするには、IPアドレスまたは範囲を少なくとも1件登録する必要があり、最大100件まで追加できます。
 > * ［リストを保存］をクリックすると、次回ログイン時からIPアドレスによる制限が適用されます。
+
+<div id="removing-ips-from-the-list" />
 
 #### IPアドレスをリストから削除する
 
@@ -273,41 +325,61 @@ SCIM接続では、次の項目を入力します。
 
 <Accordion title="セキュリティパッケージについてのよくある質問">
 
+<div id="what-is-appsflyers-enterprise-grade-security-package" />
+
 #### AppsFlyerのEnterprise-Grade Security Packageとは何ですか？
 
 標準の保護機能に加え、高度なセキュリティ機能により、安全に利用規模を拡大できます。企業のセキュリティ・IT責任者向けに、SCIMによるユーザー管理の自動化を備えたSSO、細かなアクセス制御、監査ログの拡張、コンプライアンス対応のツールを提供します。
+
+<div id="who-is-the-enterprise-grade-security-package-designed-for" />
 
 #### Enterprise-Grade Security Packageは、どのような方に適していますか？
 
 監査に備える企業のセキュリティ・IT責任者、規制の厳しい業界でSaaSベンダーを評価する調達・法務チーム、複数のチームや連携にまたがる複雑なアクセス要件を管理する管理者に適しています。
 
+<div id="how-does-scim-provisioning-work" />
+
 #### SCIMによるユーザー管理の自動化は、どのような仕組みですか？
 
 IDプロバイダーと直接接続し、ユーザーの作成から更新・無効化までの管理を自動化します。 SCIMは、ユーザーのアクセス権限とロールを自動同期し、利用開始・終了を即座に反映することで、手動のアカウント管理や、不要なアクセス権限が残るリスクをなくします。
+
+<div id="what-compliance-standards-does-this-support" />
 
 #### どのようなコンプライアンス基準への対応を支援しますか？
 
 180日間の監査ログ保存、包括的なアクセス記録、リアルタイムのSIEM連携により、継続的な監視と要件への適合確認を行い、SOC2、ISO 27001、GDPRの監査に備えることができます。
 
+<div id="how-many-roles-and-api-tokens-can-i-create" />
+
 #### ロールとAPIトークンは、それぞれいくつ作成できますか？
 
 組織構成に合わせてカスタマイズできるロールを最大50個、サービス別またはアプリ別の制限を最大30個作成できます。連携や担当業務ごとにアクセス権限を分離しながら、必要最小限の権限だけを付与できます。
+
+<div id="can-i-integrate-with-my-existing-security-tools" />
 
 #### 既存のセキュリティツールと連携できますか？
 
 はい。 APIを使ったログのストリーミングにより、監査データをSIEMやセキュリティツールに直接配信できます。既存のSOC（セキュリティ監視・対応組織）の基盤で、リアルタイムの監視、異常検知、セキュリティ対応の自動化を実現できます。
 
+<div id="what-network-restrictions-can-i-apply" />
+
 #### どのようなネットワーク制限を設定できますか？
 
 IP許可リストと地域による制限を使って、管理画面へのアクセスを制御できます。信頼できるネットワークと場所を指定し、不正アクセスを防ぎながら、リモートワークやパートナーとの安全な連携に対応できます。
+
+<div id="how-long-are-audit-logs-retained" />
 
 #### 監査ログは、どのくらいの期間保存されますか？
 
 管理画面でのあらゆる操作を記録した監査ログを、180日間保存できます。ユーザーの操作、API呼び出し、アクセスパターンを詳細に把握し、コンプライアンス対応の記録やセキュリティ調査に活用できます。
 
+<div id="does-this-replace-standard-security-features" />
+
 #### 標準のセキュリティ機能に代わるものですか？
 
 いいえ。 Enterprise-Grade Security Packageは、標準のセキュリティ機能に、高度な機能を追加するものです。既存の保護機能をすべて維持したまま、アクセス制御、自動化、操作状況の把握を強化できます。
+
+<div id="how-quickly-can-i-implement-these-security-controls" />
 
 #### これらのセキュリティ機能は、どのくらいの期間で導入できますか？
 

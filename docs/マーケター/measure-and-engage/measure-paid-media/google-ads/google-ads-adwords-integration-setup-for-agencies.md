@@ -34,9 +34,13 @@ x-zendesk:
 
 代理店がプロセスを開始する前に、まずは広告主がGoogle Adsの連携を設定する必要があります。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers">こちら</Anchor>を参照してください。
 
+<div id="enabling-agency-attribution-of-google-ads" />
+
 ## Google Adsの代理店による成果計測の有効化
 
 AppsFlyerでは、Google Adsの代理店設定をサポートしています。 AppsFlyerでデータの計測を正しく行うには、広告主と代理店が個別のGoogle Adsアカウントを使用していることが重要です。
+
+<div id="setting-up-google-ads-attribution-for-agencies" />
 
 ## 代理店向けのGoogle Ads計測設定
 
@@ -157,11 +161,15 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 
 4. ［***保存***］をクリックします。
 
+<div id="important" />
+
 > 🚧 **重要！**
 >
 > 初回起動とアプリ内アクションをGoogle Adsにインポートすると、Google AdsとAppsFlyer管理画面の両方でコンバージョンの計測を開始できます。
 >
 > インポートするには、アプリを起動し、マップしたアプリ内イベントを1回以上実行する必要があります。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -177,6 +185,8 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 
 （**Google Adsの管理者のみ）**
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > Google Adsで新しいコンバージョンを登録するには、少なくとも1回、**アプリを起動してマッピングしたアプリ内イベントを実行する**必要があります。 iOSアプリをテストする場合、イベントを確認するにはIDFAを収集する必要があります。イベントコンバージョンがキューに追加されるまでに最大6時間かかる場合があります。キューに追加されるとインポートできるようになり、新しいコンバージョンのステータスが［最近のコンバージョンなし］から［コンバージョンの記録中］に変わります。
@@ -188,6 +198,8 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 3. コンバージョンタイプのリストから**アプリ**を選択し、**第三者アプリ分析ツール**を選択して、**続行**をクリックします。  
    [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. すべてのアプリの**first\_open**と、インポートする各イベントの横にあるチェックボックスをオンにします。
+
+   <div id="note-1" />
 
    > 📘 **注意**
    >
@@ -202,6 +214,8 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
    [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. おめでとうございます！これで、AppsFlyerでGoogle Adsモバイルキャンペーンの計測ができるようになりました！
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 「コンバージョンに含む」設定が、Google Adsでのキャンペーン目標に合致するようにしてください。詳細はGoogleの担当者に問い合わせるか、<Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">こちら</Anchor>のGoogleのドキュメントを参照してください。
@@ -213,6 +227,8 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 「広告主向けGoogle Ads計測の設定」の動画は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#広告主向けのgoogle-ads計測の設定">こちら</Anchor>から視聴できます。
 
 広告主が複数の代理店／MCCのGoogle Adsアカウントを計測する方法は、<Anchor target="_blank" href="/marketers/ja/docs/recording-multiple-agency-mcc-google-ads-accounts">こちら</Anchor>を参照してください。
+
+<div id="agencies-collecting-cost-clicks-and-impression-data" />
 
 ## 代理店向け：コスト、クリック、インプレッションデータの取得
 

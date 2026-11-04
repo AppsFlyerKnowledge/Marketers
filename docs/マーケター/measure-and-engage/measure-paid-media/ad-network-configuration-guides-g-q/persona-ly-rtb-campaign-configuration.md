@@ -23,6 +23,8 @@ x-zendesk:
 
 <Image alt="persona.ly_logo.png" src="https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png" width="234px" />
 
+<div id="setting-up-personaly-rtb" />
+
 ## Persona.ly RTBの設定
 
 **前提条件：** 連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡し</Anchor>、アカウントを開設してください。
@@ -40,6 +42,8 @@ x-zendesk:
 Persona.ly RTB との統合により、クリックスルー アトリビューションおよびビュースルー アトリビューションがサポートされます。  
 構成には次のタブが含まれます。連携、計測リンク、コスト、広告収益、権限Persona.ly RTBでは、使用可能なタブは、統合、計測リンク、コスト、権限です。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > * iOSとAndroidデバイスでは設定が異なります
@@ -51,13 +55,19 @@ Persona.ly RTB との統合により、クリックスルー アトリビュー�
 
 **連携**タブには、以下で説明するセクションがあります。
 
+<div id="activate-partner" />
+
 #### 連携設定
 
 連携を設定するには、まず**パートナーを有効にする**トグルを<Anchor target="_blank" href="/marketers/ja/docs/amazon-ads-campaign-configuration#連携設定">オン</Anchor>にする必要があります。詳細：パートナーのアクティブ化と非アクティブ化のページを参照してください。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > Persona.ly RTB は、すべてのインストール ネットワークとして、アプリのすべての新規インストールのポストバックを任意のソースから受け取ることを好みます。これを行うには、**オーガニックを含むすべてのメディアソース**を選択して、すべてのインストールポストバックをPersona.ly RTBに送信します。
+
+<div id="advanced-privacy" />
 
 #### 高プライバシーポストバック
 
@@ -69,11 +79,17 @@ iOSアプリのみ:ポストバックやレポートを介してパートナー�
 | ポストバックは<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks">高度なプライバシーテンプレート</Anchor>に従って送信されます。 |  |
 | 集計された匿名データがパートナーと共有されます。つまり、ユーザーレベルのデータ（デバイスID）は共有されません。 |  |
 
+<div id="transaction-id" />
+
 #### トランザクションID
+
+<div id="install-attribution" />
 
 #### インストール計測
 
 Persona.ly RTB からのビュースルーインストールをアトリビューションするには、 ビュースルーアトリビューションのインストールをオンにします。ビュースルー計測のルックバックスライダーは、 計測リンク タブで使うことができます。
+
+<div id="default-postbacks" />
 
 #### デフォルトのポストバック
 
@@ -82,6 +98,8 @@ Persona.ly RTB からのビュースルーインストールをアトリビュ�
 * **インストール**で、次のいずれかを選択します。
   * このパートナーのみ：このパートナーのみ: ポストバックを送信するのは、インストールがこのパートナーに紐づいている場合、つまり、このアプリをインストールしたユーザーはPersona.ly RTB からのユーザーです。
   * オーガニックを含むすべてのメディアソース：
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -104,6 +122,8 @@ Persona.ly RTB からのビュースルーインストールをアトリビュ�
    1. 左上隅のパートナー名下にあるアプリ名をクリックし、アプリ一覧を開きます。
    2. ドロップダウンリストから別のアプリを選択してください。
    3. 選択したアプリで、連携ステップを再度実施してください。
+
+<div id="note-2" />
 
 > 📘 **注意**
 >
@@ -146,6 +166,8 @@ AppsFlyerはコストの詳細をAPIで取得します。サポートされて�
 <Accordion title="権限タブ">
 
 データにアクセスしてさまざまなアクションを実行するために Persona.ly RTB <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#permissions-tab">を付与する許可</Anchor> を選択します。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >

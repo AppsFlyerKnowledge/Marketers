@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerとGoogle Analyticsの間でデータの差異が生じる原因を説明します。
 
+<div id="discrepancies-in-data-between-appsflyer-and-google-analytics" />
+
 ## AppsFlyerとGoogle Analyticsのデータの差異
 
 AppsFlyerとGoogle Analyticsでデータに差異が生じる原因を、以下に示します。
@@ -42,6 +44,8 @@ AppsFlyerとGoogle Analyticsでデータに差異が生じる原因を、以下�
 Google Analyticsは、カスタマーユーザーIDに基づいてイベントを紐付けます。 AppsFlyerがデフォルトで送信するカスタマーユーザーIDは、GAIDまたはIDFAです。
 
 そのため、Google Analyticsは、インストール後にアンインストールし、再インストールしたユーザーを同じユーザーとして扱います。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -69,6 +73,8 @@ Google Analyticsは、カスタマーユーザーIDに基づいてイベント�
 
 GA管理画面のタイムゾーンと、AppsFlyerに設定したアプリのタイムゾーンが異なる場合、データが一致しないことがあります。
 
+<div id="example-1" />
+
 > 📄 **例**
 >
 > アプリの管理画面はGMT+13、GA管理画面はGMTに設定されているとします。この場合、アプリの管理画面の日付は、GA管理画面より1日先になります。
@@ -92,6 +98,8 @@ GA管理画面のタイムゾーンと、AppsFlyerに設定したアプリのタ
 <Accordion title="セッション数">
 
 AppsFlyerは、アプリが起動するか、フォアグラウンドに戻るたびにセッションを集計します。 Google Analyticsは、CID（カスタマーユーザーID）とアクティビティに基づいてセッションを集計します。
+
+<div id="example-2" />
 
 > 📄 **例**
 >

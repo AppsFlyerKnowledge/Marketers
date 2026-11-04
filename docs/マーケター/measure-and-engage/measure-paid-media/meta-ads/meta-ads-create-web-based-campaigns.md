@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **概要：** Meta広告のWebキャンペーンを使用して、Meta広告経由のWebからアプリへのコンバージョンを計測します。
 
+<div id="overview" />
+
 ## 概要
 
 AppsFlyerは、ユーザー獲得を目的とするWebキャンペーン向けに、Meta広告（`metaweb_int`）との連携をサポートしています。MetaのコンバージョンAPI（CAPI）を通じて、アトリビューションデータとコンバージョンデータを直接報告できます。 Metaは、このデータを広告ターゲティングの最適化、パフォーマンスの計測、カスタムオーディエンスの作成に利用できます。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > 現在、Meta Web連携では、CAPIへのリエンゲージメントポストバックの送信はサポートされていません。
 
+<div id="prerequisites" />
+
 ### 前提条件
 
 Meta広告連携を有効にする前に、[Metaビジネスマネージャのビジネスアカウント](https://www.facebook.com/business/help/1710077379203657?id=180505742745347)があることを確認してください。
+
+<div id="how-to-create-a-meta-web-ads-campaign" />
 
 ### Meta広告のWebキャンペーンの作成方法
 
@@ -46,9 +54,13 @@ Meta広告連携を有効にする前に、[Metaビジネスマネージャの�
 * [OneLink Smart Scriptを使用したランディングページを作成する](#h_01HZKNS17KPJMP74HQKWY022T2)（任意）
 * [OneLink Smart Bannersを使用したランディングページを作成する](#h_01HZKNS17KH8NQ68RPZGMEAQTV)（任意）
 
+<div id="set-up-meta-web-ads-integration-in-appsflyer" />
+
 ## AppsFlyerでのMeta広告のWeb連携の設定
 
 まず、Meta広告連携を有効にし、AppsFlyerからCAPIに送信するポストバックを設定します。
+
+<div id="a-activate-the-meta-ads-integration" />
 
 <Accordion title="1. Meta広告のWeb連携の有効化">
 
@@ -69,6 +81,8 @@ Meta広告のWeb連携を有効にするには、以下の手順に従ってく�
 
 </Accordion>
 
+<div id="d-enable-view-through-attribution-for-meta-web" />
+
 <Accordion title="2. ビュースルーアトリビューションの有効化">
 
 AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)または[Smart Banner](#set-up-smart-banners-landing-page)を実装したランディングページを使用するMeta Webキャンペーンのビュースルーアトリビューションに対応しています。これにより、ユーザーが広告を直接クリックしなくても、広告表示をきっかけに発生したアプリインストールを、確率論的モデリング（PMOD）で計測できます。
@@ -87,6 +101,8 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 </Accordion>
 
+<div id="b-set-inapp-event-postbacks" />
+
 <Accordion title="3. アプリ内イベントポストバックの設定">
 
 現在、Meta広告へのデフォルトポストバックが自動的に送信されるイベントは、インストールのみです。その他の種類のイベントについては、AppsFlyerのイベントをMeta広告のイベントにマッピングして、カスタムポストバックを作成できます。これらは[Metaイベントマネージャ](https://www.facebook.com/business/help/1541268312717919?id=818859032317965)で確認できます。  
@@ -102,6 +118,8 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
    * **オーガニックを含むすべてのメディアソース**：いずれかのパートナーにアトリビューションされたイベントと、オーガニックのイベントについてポストバックを送信します。
 7. <strong>［送信データ］</strong>列で、イベントに収益値を含めて送信するかどうかを選択します。<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#ポストバックに含めるデータ">ポストバックに含めるデータ</Anchor>を参照してください。
 
+   <div id="note-1" />
+
    > 📘 **注意**
    >
    > 購入イベントを設定する場合は、<strong>［送信データ］</strong>列で<strong>［イベント値と収益］</strong>を選択してください。それ以外の選択肢を選ぶと、ポストバックが失敗します。
@@ -113,15 +131,21 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
     2. ドロップダウンリストから、別のアプリを選択します。
     3. 選択したアプリで連携手順を繰り返します。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > `metaweb_int`にS2Sイベントを送信する場合、S2Sペイロードには`ua`（ユーザーエージェント）と`ip`（IPアドレス）のパラメータを必ず含めてください。これらの値は、Meta CAPIによるキャンペーン最適化に必要です。 SDKイベントの場合、AppsFlyerが自動的にこれらの値を含めます。 S2Sイベントの場合は、広告主が明示的に送信する必要があります。<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile">モバイル向けサーバー間イベントAPI</Anchor>を参照してください。
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-meta-ads" />
+
 ## Meta広告でのAppsFlyer連携の設定
 
 以下の手順は、Meta広告マネージャで行います。
+
+<div id="a-set-the-campaign-type-objective-and-goals" />
 
 <Accordion title="1. キャンペーンの種類、目的、目標の設定">
 
@@ -133,6 +157,8 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
    1. Meta広告で、キャンペーンの目的に設定するカスタムイベントを選択し、コンバージョンアクションとして指定します。
    2. AppsFlyerの**Meta Web連携**ページで、<strong>［アプリ内イベントポストバック］</strong>の<strong>［マッピング先のパートナーイベント］</strong>列から、AppsFlyerのイベントをカスタムパートナーイベントにマッピングし、Meta広告のコンバージョンアクションと同じ名前を付けます。
 
+      <div id="note-3" />
+
       > 📘 **注意**
       >
       > Metaのキャンペーン目的の詳細は、[Metaのドキュメント](https://www.facebook.com/business/help/175683976191028)を参照してください。
@@ -142,6 +168,8 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 6. <strong>［次へ］</strong>をクリックします。
 
 </Accordion>
+
+<div id="b-set-destination-url" />
 
 <Accordion title="2. 遷移先URLの設定">
 
@@ -157,6 +185,8 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
      これらの用途では、[Smart Script](#h_01HZKNS17KPJMP74HQKWY022T2)または[Smart Banner](#h_01HZKNS17KH8NQ68RPZGMEAQTV)を実装したランディングページを作成してください。
    * **AF計測リンク：** ランディングページを経由せず、ユーザーをストアに直接リダイレクトしてアプリをダウンロードさせたい場合は、AF計測リンク（OneLink、単一プラットフォーム、クロスプラットフォーム）の使用を推奨します。
+
+     <div id="important" />
 
      > 🚧 **重要！**
      >
@@ -211,15 +241,21 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
      https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
      ```
 
+   <div id="note-4" />
+
    > 📘 **注意**
    >
    > Metaは、広告がクリックされると遷移先URLに`fbclid={{fbclid}}`を自動的に追加します。
 
 
+   <div id="tip" />
+
    > 👍 **ヒント**
    >
    > キャンペーンの分析を容易にするため、キャンペーン名の先頭または末尾に、Webやモバイルなどのキャンペーンの種類を付けてください（例：campaign-name\_web）。
 
+
+<div id="note-5" />
 
 > 📘 **注意**
 >
@@ -227,11 +263,15 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 </Accordion>
 
+<div id="c-select-tracked-events" />
+
 <Accordion title="3. 計測対象イベントの選択">
 
 ［トラッキング］セクションで、広告で促進するコンバージョンイベントを選択します（イベント自体は[イベントマネージャ](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)で設定します）。
 
 [![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
+
+<div id="important-1" />
 
 > 🚧 **重要！**
 >
@@ -239,9 +279,13 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-script" />
+
 ## OneLink Smart Scriptを使用したランディングページの作成
 
 **ユーザーの遷移：** ユーザーがMeta広告をクリックすると、モバイルWebサイトに移動します。ランディングページには、1つまたは複数のプラットフォームでアプリのダウンロードを促すCTAボタンが表示されます。ボタンをクリックすると、ユーザーはストアにリダイレクトされます。
+
+<div id="end-to-end-data-flow" />
 
 <Accordion title="データ連携の全体の流れ">
 
@@ -262,12 +306,16 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 </Accordion>
 
+<div id="set-up-smart-script-landing-page" />
+
 <Accordion title="Smart Scriptを使用したランディングページの設定">
 
 Smart Scriptを使用するMeta広告キャンペーンを設定するには、以下の手順に従ってください。
 
 1. キャンペーンのOneLink計測リンクに使用するテンプレートを設定します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#onelinkテンプレートの作成">OneLinkテンプレートの作成方法</Anchor>を参照してください。
 2. Smart Scriptを作成します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Scriptの作成方法</Anchor>を参照してください。
+
+   <div id="note-6" />
 
    > 📘 **注意**
    >
@@ -283,12 +331,16 @@ Smart Scriptを使用するMeta広告キャンペーンを設定するには、�
        1. <strong>［マッピング対象］</strong>で、<strong>［カスタムパラメータ］</strong>を選択します。
        2. <strong>［送信URLパラメータ］</strong>と<strong>［受信URLパラメータ］</strong>の両方に、**fbclid**を入力します。
 
+     <div id="note-7" />
+
      > 📘 **注意**
      >
      > AppsFlyerのローデータレポートに表示するには、受信URLの`fbclid`パラメータを、送信URLの`fbclid`パラメータに加えて、送信URLの`af_sub[1-5]`パラメータのいずれかにもマッピングする必要があります。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">Facebook FBCLID</Anchor>を参照してください。
 
 
 </Accordion>
+
+<div id="set-up-smart-script-crossplatform-landing-page" />
 
 <Accordion title="Smart Scriptを使用したクロスプラットフォーム向けランディングページの設定">
 
@@ -308,6 +360,8 @@ Smart Scriptを使用するMeta広告キャンペーンを設定するには、�
      * クロスプラットフォーム向けランディングページを作成するための[デモと手順](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/)。
    * 受信URLの`fbclid`パラメータを送信URLに含めるよう、開発者に伝えてください。
 
+     <div id="note-8" />
+
      > 📘 **注意**
      >
      > AppsFlyerのローデータレポートに表示するには、受信URLの`fbclid`パラメータを、送信URLの`fbclid`パラメータに加えて、送信URLの`af_sub[1-5]`パラメータのいずれかにもマッピングする必要があります。
@@ -315,9 +369,13 @@ Smart Scriptを使用するMeta広告キャンペーンを設定するには、�
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-banners" />
+
 ## OneLink Smart Bannersを使用したランディングページの作成
 
 **ユーザーの遷移：** ユーザーがMeta広告をクリックすると、モバイルWebサイトに移動します。ランディングページには、アプリストアからアプリをダウンロードするよう促すCTA付きのSmart Bannerが表示されます。
+
+<div id="end-to-end-data-flow::4f887e1c" />
 
 <Accordion title="データ連携の全体の流れ">
 
@@ -333,12 +391,16 @@ Smart Scriptを使用するMeta広告キャンペーンを設定するには、�
 
 </Accordion>
 
+<div id="set-up-smart-banners-landing-page" />
+
 <Accordion title="Smart Bannersを使用したランディングページの設定">
 
 Smart Bannersを使用するMeta広告キャンペーンを設定するには、以下の手順に従ってください。
 
 1. キャンペーンのOneLink計測リンクに使用するテンプレートを設定します。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#onelinkテンプレートの作成">OneLinkテンプレートの作成方法</Anchor>を参照してください。
 2. Smart Bannerを作成します。
+
+   <div id="note-9" />
 
    > 📘 **注意**
    >
@@ -349,20 +411,28 @@ Smart Bannersを使用するMeta広告キャンペーンを設定するには、
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Webからアプリへのアトリビューションデータの確認
 
 Web経由のコンバージョンイベントは、元のPIDである`metaweb_int`を使ってMetaに送信されますが、AppsFlyerのダッシュボードとローデータレポートでは、`Facebook Ads`のPIDで報告されます。これは、プライマリコンバージョンイベントと、コンバージョンをアシストしたイベントの両方に適用されます。
 
 この統合レポートにより、Webとモバイルのコストレポート全体を含め、Webとアプリのキャンペーンのパフォーマンスを1か所で分析できます。
 
+<div id="view-in-the-dashboard" />
+
 ### ダッシュボードでの確認
 
 Meta経由のWebからアプリへのアトリビューションはすべて、Overview dashboardとアクティビティダッシュボードで`Facebook Ads`の下に表示されます。これにより、プラットフォームを横断したキャンペーンの成果を、1つの統合ビューで確認できます。標準のフィルターと内訳を使用して、Meta広告のデータ内でアプリとWebのトラフィックを比較できます。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### ローデータとAPIレポートでの確認
 
 * MetaのWeb上のアクティビティについて、**ローデータのエクスポートとAPIレスポンス**では、`media_source`フィールドに`Facebook Ads`のPIDが含まれます。 Webキャンペーンの設定内容を確認するには、`original_url`フィールドを参照してください。Webキャンペーンの作成時に使用したPIDとして、`metaweb_int`が表示されます。
 * **ポストバックレポート**には、ポストバックの送信先である元のメディアソースとして`metaweb_int`が表示されます。
+
+<div id="traits-and-limitations" />
 
 ## 仕様と制限事項
 

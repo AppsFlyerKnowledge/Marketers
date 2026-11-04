@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **概要：** 他社のアトリビューション計測サービスからAppsFlyerへの移行計画を立てるためのガイドです。移行期間中の二重請求、データの重複、データの欠落を防ぐ方法を説明します。
 
+<div id="about-migrating-to-appsflyer-from-other-vendors" />
+
 ## 他社の計測サービスからAppsFlyerへの移行について
 
 他社の計測サービスからAppsFlyerへの移行には、以下の主な作業が必要です。
@@ -36,17 +38,25 @@ x-zendesk:
 * AppsFlyer SDKを実装した更新版アプリを公開する前に、すべての作業を完了する。
 * デバイスIDの移行前に、既存のマーケティングキャンペーンを一時停止する。
 
+<div id="compare-measurement-between-appsflyer-and-other-mmps" />
+
 ### AppsFlyerと他のMMPの計測結果の比較
 
 他のMMPからAppsFlyerへの移行を検討する際には、同じメディアソースやキャンペーンを対象に、両方のMMPのアトリビューションの計測結果を比較したい場合があります。ただし、すべてのメディアソースが複数のMMPによる計測に対応しているわけではありません。対応している場合でも、アトリビューションの差異を防ぐために、一定の制限や注意点が設けられていることがあります。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/measuring-attribution-with-multiple-mmps">複数のMMPによるアトリビューション計測</Anchor>をご確認ください。
+
+<div id="tasks" />
 
 ## 移行に必要な作業
 
 以下の表に、各作業で必要な対応の範囲をまとめています。作業全体の詳しい内訳を確認し、進捗を記録するには、<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqbJIkE7kD87uSm7MH7zfkPN1VLuBaeotTEHAID2pYFVWM_LuQIA2AE2-8fVnXH-DrbXUQCs2iaiDe/pub?output=xlsx">こちらのスプレッドシート</Anchor>をダウンロードしてください。
 
+<div id="scope-of-work" />
+
 #### 必要な作業の範囲
 
 <table><thead><tr><th>作業</th><th>必要な対応</th><th>担当者</th><th>所要時間の目安</th><th>補足</th></tr></thead><tbody><tr><td>事前準備</td><td><ol><li> <a href="https://www.appsflyer.com/get-started" target="_blank">AppsFlyerアカウントを作成</a>します。</li><li> AppsFlyerに<a href="./adding-an-app-to-appsflyer" target="_blank">アプリを追加</a>します。</li><li>［任意］デフォルトで90日間の<a href="./set-up-re-attribution-window" target="_blank">リアトリビューション期間</a>を、<span>アクティブユーザーの定義に合わせて変更します。</span> </li></ol></td><td>マーケティング担当者 / AppsFlyer管理画面の利用者</td><td>2時間</td><td> </td></tr><tr><td><a href="">SDKの実装</a></td><td><ul><li>アプリにAppsFlyer SDKを実装します。</li><li>S2SまたはSDKのアプリ内イベントを対応付けます。</li><li>アプリストアでアプリのバージョンを更新します。</li></ul></td><td>アプリ開発者</td><td>1～2週間</td><td><ul><li> <strong>推奨：</strong>公開前のテスト用アプリにAppsFlyer SDKを実装し、テストを行ってください。</li><li>本番用アプリは、ほかのすべての作業を完了してから、アプリストアで更新する必要があります。</li></ul></td></tr><tr><td> <a href="./migration-to-appsflyer-from-other-vendors#デバイスidの移行任意">デバイスIDの移行</a>（任意）</td><td>既存ユーザーのアトリビューションの重複を防ぐため、デバイスIDを移行します。</td><td>データエンジニア</td><td>1～2週間</td><td rowspan="2"><ul><li>移行前に既存のキャンペーンを一時停止し、アプリのバージョンを更新してから再開することを検討してください。</li><li>移行漏れを防ぐため、最終的な移行日にデバイスIDの移行を再度実施することを検討してください。 </li></ul></td></tr><tr><td><a href="">キャンペーンの移行</a></td><td><ul><li>AppsFlyerでアドネットワークとの連携を設定します。</li><li>以下の既存のキャンペーンを移行します。<ul><li>セルフレポーティングネットワーク（SRN）</li><li>SRN以外のアドネットワーク</li><li>オウンドメディア</li></ul></li></ul></td><td>マーケティング担当者 / ユーザー獲得施策の担当者</td><td>1～3週間</td></tr><tr><td><a href="">レポート取得の設定</a></td><td><ul><li>現在のレポートの構成を調整し、AppsFlyerの構成に対応付けます。</li><li>AppsFlyerのレポートを受信するための準備を行います。</li></ul></td><td>データエンジニア</td><td>2～4週間</td><td> </td></tr></tbody></table>
+
+<div id="sdk-integration" />
 
 ### SDKの実装
 
@@ -78,6 +88,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="device-migrationoptional" />
+
 ### デバイスIDの移行（任意）
 
 <div id="about-device-migration" />
@@ -87,6 +99,8 @@ x-zendesk:
 デバイスIDの移行とは、既存ユーザーのデバイスID（IDFA、IDFV、GAID、CUID）の一覧をAppsFlyerにアップロードする作業です。 AppsFlyer SDKを含む新しいバージョンのアプリを公開する前に、この作業を実施してください。デバイスIDの移行には、[流入元情報を引き継ぐ移行](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration)と[流入元情報を引き継がない移行](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration)の2つの方法があります。
 
 デバイスIDの移行により、アプリをダウンロードし、移行前の計測サービスでアトリビューションが行われた既存ユーザーに関するデータ上の問題を解消できます。たとえば、移行前の計測サービスでSRNにアトリビュートされたユーザーがルックバック期間内にAppsFlyerでも同じSRNにアトリビュートされ、二重請求が発生する問題に対応できます。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -101,6 +115,8 @@ x-zendesk:
 * **リターゲティング：** リアトリビューションとリエンゲージメントは、通常どおり表示されます。
 * **アクティビティデータ：** 通常どおり表示されます。
 * **リテンションとコホートのデータ：** 移行したデバイスには、インストールの記録がありません。そのため、どのコホートにも紐づかず、リテンションレポートとコホートレポートには表示されません。
+
+<div id="note" />
 
 > 📘 **注意**
 >
@@ -129,6 +145,8 @@ x-zendesk:
 <Accordion title="流入元情報を引き継ぐ移行">
 
 この方法でAppsFlyerに移行したデバイスのアプリ内イベントとセッションは、移行前の計測サービスが報告したメディアソースに基づき、アドネットワークのデータ保持ポリシーに従って記録・表示されます。
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### 流入元情報を引き継ぐ移行のCSV形式
 
@@ -167,6 +185,8 @@ CSVのサンプル
 
 この方法でAppsFlyerに移行したデバイスは、オーガニックユーザーとして記録されますが、表示はされません。そのデバイスのアプリ内イベントとセッションも、オーガニックとして記録・表示されます。
 
+<div id="non-attributed-device-migration-csv-file-structure" />
+
 #### 流入元情報を引き継がない移行のCSV形式
 
 | 選択肢 | 列 | 使用する条件 | 例 |
@@ -190,6 +210,8 @@ CSVのサンプル
 
 </Accordion>
 
+<div id="campaign-migration" />
+
 ### キャンペーンの移行
 
 既存のマーケティングキャンペーンをAppsFlyerに切り替えることで、AppsFlyerでアトリビューションを行えるようにし、二重請求やアトリビューションデータの欠落を防ぎます。
@@ -205,6 +227,8 @@ SRNは、モバイル計測パートナー（MMP）から、特定のデバイ�
 **SRNのキャンペーンを移行するには**：
 
 * AppsFlyerで、対象の<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns#srn媒体">SRN</Anchor>を有効化し、設定します。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -259,6 +283,8 @@ SKAdNetwork（SKAN）のアトリビューションでは、コンバージョ�
 AppsFlyerでのSKANのコンバージョン値の設定方法をご確認ください。
 
 </Accordion>
+
+<div id="data-report-setup" />
 
 ### レポート取得の設定
 

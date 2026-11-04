@@ -25,6 +25,8 @@ x-zendesk:
 | **知っておくべきこと** | <ul><li>Unityは、新しいコストAPI連携を導入します。</li><li>古いコストAPI連携は、2024年10月1日の終了日まで有効です。</li></ul> |
 | **必須事項：** | 2024年10月1日以降も引き続きコストデータを取得するには、新しいUnityコストAPI連携の資格情報を更新する必要があります。<br /><br />必要な資格情報は次のとおりです：<ul><li>Organization Core ID</li><li>Service Account Secret Key</li><li>Service Account Key ID</li></ul>AppsFlyerでUnityコスト連携へ移行するには、次のセクションの手順に従ってください。作業は以下2つのステップに分かれます：<ol><li>Unity管理画面から[新しいUnity認証情報を取得](/docs/bulletin-unity-ads-cost-api-integration-update#get-unity-credentials)します。</li><li>[AppsFlyer管理画面の連携済みパートナーページで新しい資格情報を入力して、Unity コスト連携を設定します。](/docs/bulletin-unity-ads-cost-api-integration-update#set-up-unity-cost-api-integration-in-appsflyer)</li></ol> |
 
+<div id="unity-cost-api-integration-procedures" />
+
 ## Unityのコスト連携設定手順
 
 Unityの新しいコスト連携を設定するには、次の2つの手順が必要です：

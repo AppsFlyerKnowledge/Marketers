@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyerでGoogle Adsのコストと広告収益データの取得を有効にします。
 
+<div id="cost-clicks-and-impressions" />
+
 ## コスト、クリック数、インプレッション
 
 コスト連携では、以下の集計データを提供します：
@@ -54,17 +56,23 @@ Googleのクリックとビューの定義についてご参照ください。
 >
 > 正しいアカウントにログインしていない場合は、アカウントからログアウトして、別のGoogleアカウントのメールアドレスで再度ログインします。
 
+<div id="cost-data-sync-status" />
+
 ### コストデータ連携状況
 
 コスト（および広告収益）連携状況ダッシュボード、または各アドネットワークのダッシュボードで、<Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#広告費apiのステータス">コストAPIのステータス</Anchor>と、AppsFlyerが対応するコストデータを最後に取得できた日時を確認できます。 
 
 Google Adsでは、複数のアカウントを同期して、コストデータを取得することができます。同期されたアカウントごとに、AppsFlyerにはコスト連携のステータス（連携状況）と、一致するコストデータを最後に取得できた日時が表示されます。
 
+<div id="stopping-google-cost-sync" />
+
 ### Googleのコスト同期の停止
 
 **Googleコストの同期を停止するには、Googleアカウントの接続を削除します：**
 
 * <Anchor target="_blank" href="/marketers/ja/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">コストタブを開き、アカウントの［アクション］列にカーソルを合わせて［接続を削除］をクリックします。</Anchor> 削除すると、AppsFlyerによるコストの取得が停止します。接続を削除しても過去のデータには影響しません。
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## Google Adsでの広告収益の記録
 

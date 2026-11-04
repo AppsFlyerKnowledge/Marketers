@@ -26,15 +26,21 @@ x-zendesk:
 
 cohort main (2).png
 
+<div id="cohort-and-retention-dashboard" />
+
 ## コホート & リテンションレポート
 
 関連記事： <Anchor target="_blank" href="/marketers/ja/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">コホート機能の違い</Anchor>
 
 コホートとリテンションを使用するには、1つ以上のアプリからユーザーを選択し、コンバージョン時間で分割します。収益、ROI、イベントコンバージョン率などのコホート指標が利用可能です。比較分析のために、コホートをキャンペーンまたはメディアソースなどのディメンション別に分類します。これにより、ユーザーやキャンペーンのライフサイクルについてのパターンや変化を明らかにできます。<Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">コホートのユースケース</Anchor>をご覧ください。
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > コホートレポートについてもっと知りたいですか？クイックに重要なポイントを押さえた<Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">AppsFlyerラーニングポータルコース</Anchor>をご覧ください。
+
+<div id="using-cohort" />
 
 ## コホートを使用する
 
@@ -109,6 +115,8 @@ cohort main (2).png
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## コホートの概念
 
 <div id="cohort-periods" />
@@ -153,16 +161,22 @@ cohort main (2).png
 * **LTVベース**
 * **計測日ベース**
 
+<div id="user-lifetime-performance" />
+
 #### **LTVベース**
 
 * 表またはグラフの各列は、別のコホート期間（時間 / 日 / 週 / 月）を表します。これにより、コンバージョン後のユーザーのパフォーマンスを、コンバージョン期間から比較できます。
 * データを取得するコホート期間を、粒度オプション（時間 / 日 / 週 / 月）ごとに最大値まで選択できます。
+
+<div id="kpi-by-attribution-time" />
 
 #### **計測日ベース**
 
 * 表またはグラフの各列は、選択した日付範囲の期間のコホート期間（時間 / 日 / 週 / 月）を表します。これにより、長期にわたるキャンペーンのパフォーマンスを分析し、コンバージョン時間に対するキャンペーンKPIを表示できます。
 * データを取得するために選択できるコホート期間の最大数は '5' です。
 * データを表ではなくグラフとして表示することを選択した場合、グラフには 1 つのコホート期間（選択した最も低い期間）のみが表示されます。
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### 例：
 
@@ -251,6 +265,8 @@ cohort main (2).png
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 追加情報
 
 <div id="cohort-for-agencies" />
@@ -270,6 +286,8 @@ cohort main (2).png
 
 <Accordion title="使用事例">
 
+<div id="revenue-sum-by-geo" />
+
 #### 国別の収益合計
 
 Chart（グラフ）チャート：ユーザーごとの累積収益
@@ -279,6 +297,8 @@ Screenshot 2023-07-19 at 13.54.21.png
 テーブル
 
 cohort use case 3.png
+
+<div id="in-app-event-conversion" />
 
 #### アプリ内イベントのコンバージョン
 

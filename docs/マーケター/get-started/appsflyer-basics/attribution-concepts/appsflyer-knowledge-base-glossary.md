@@ -34,40 +34,58 @@ x-zendesk:
 
 <Accordion title="A">
 
+<div id="account-owner" />
+
 #### アカウント所有者
 
 **管理者**とも呼ばれます。  
 AppsFlyerアカウントの主要なユーザーで、最上位の管理者としてアクセス権と操作権限を持ちます。   
 ［関連記事］、［関連記事］
 
+<div id="ad" />
+
 #### 広告
 
 AppsFlyerでは、商品、ブランド、サービスの宣伝に使用するクリエイティブの名前を記録します。
 
+<div id="ad-cost" />
+
 #### 広告コスト
 
 広告に費やした金額です。 AppsFlyerは、クリック、コストAPI、CSVファイルのアップロードを通じて広告コストを記録します。 <Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview">［関連記事］</Anchor>
+
+<div id="ad-group" />
 
 #### 広告グループ
 
 類似するターゲット（商品やサービスの種類など）を持つ、1つ以上の広告をまとめたものです。各キャンペーンには、1つ以上の広告セットが含まれます。  
  *例：*Google広告では、特定の広告に関連するキーワードを整理するために使用します。
 
+<div id="ad-hierarchy" />
+
 #### 広告の階層
 
 広告＞広告セット（広告グループとも呼ばれる）＞キャンペーン＞メディアソース
+
+<div id="ad-network" />
 
 #### アドネットワーク
 
 マーケターの広告配信先となるアプリやWebサイトを集めたネットワークです。 パブリッシャーの広告枠を集約し、マーケターの需要と結び付けます。 <Anchor target="_blank" href="/partners/ja/docs/ad-network-onboarding">［関連記事］</Anchor>
 
+<div id="ad-revenue" />
+
 #### 広告収益
 
 アプリ内広告によってアプリが得る収益です。 AppsFlyerで広告収益データを使用すると、メディアソースごとに獲得ユーザーのROIを自動で確認できます。 <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution">［関連記事］</Anchor>
 
+<div id="ad-set" />
+
 #### 広告セット
 
 1つ以上の広告をまとめたものです。ターゲティング、予算、配信スケジュール、入札、掲載位置の設定に使用します。
+
+<div id="ad-spend" />
 
 #### 広告費
 
@@ -75,13 +93,19 @@ AppsFlyerでは、商品、ブランド、サービスの宣伝に使用する�
  *計算式：*広告による収益÷広告費＝広告費用対効果（ROAS）  
 <Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">［関連記事］</Anchor>、<Anchor target="_blank" href="/partners/ja/docs/cost-import-for-ad-networks">［関連記事］</Anchor>
 
+<div id="ad-types" />
+
 #### 広告タイプ
 
 *種類：*音声、バナー、インタースティシャル、プレイアブル（アプリの操作体験を試せる広告）、リワード動画（視聴と引き換えにアプリ内報酬を提供する動画）、スポンサーコンテンツ、テキスト、動画<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#計測リンクのパラメータ">［関連記事］</Anchor>
 
+<div id="ad-network-integration" />
+
 #### アドネットワーク連携
 
 記録とアトリビューションのため、アドネットワークをAppsFlyerのパートナーとして設定する処理です。 <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner">［関連記事］</Anchor>
+
+<div id="admin" />
 
 #### 管理者
 
@@ -93,10 +117,14 @@ AppsFlyerアカウントの主要なユーザーで、最上位の管理者と�
 
 **iOS 14.5以降の、同意していないユーザーにのみ適用されます。** Advanced Privacyでは、広告主がユーザーレベルのアトリビューションデータの提供可否を**パートナー単位**で制御できます。アプリ単位で適用されるAggregated Advanced Privacyとは異なります。特定のパートナーで有効にすると、**そのパートナー**に共有するポストバックとイベントデータが、集計・匿名化されたものになります。広告主自身は、ユーザーレベルのローデータを**利用できます**。 <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">［関連記事］</Anchor>
 
+<div id="advertiser" />
+
 #### 広告主
 
 関連用語：**マーケター**、**アプリ所有者**。  
 アプリやWebサイトを所有し、コンバージョンを増やすために、さまざまなチャネルで広告・マーケティングを行う事業者です。
+
+<div id="advertising-id" />
 
 #### 広告ID
 
@@ -107,14 +135,20 @@ OSが定める、ユーザーがリセット可能なデバイスIDです（IDFA
 
 現在のGoogle広告です。<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers">［関連記事］</Anchor>
 
+<div id="affiliate-networks" />
+
 #### アフィリエイトネットワーク
 
 **パブリッシャー**とも呼ばれます。  
 自社Webサイトの広告枠でマーケターのオファーを宣伝し、紹介したユーザーごとに報酬を受け取ります。パブリッシャーは、アプリへの訪問者が生んだ収益の一部、または特定のアクションを完了したアプリ訪問者1人あたりの報酬を受け取ります。 ［関連記事］
 
+<div id="agency" />
+
 #### 代理店
 
 顧客のアプリマーケティングキャンペーンの運用、アトリビューション、計測を行う第三者です。顧客には、広告主、マーケター、アプリ所有者などが含まれます。<Anchor target="_blank" href="/partners/ja/docs/about-agency-accounts">［関連記事］</Anchor>
+
+<div id="aggregate-data" />
 
 #### 集計データ
 
@@ -124,13 +158,19 @@ OSが定める、ユーザーがリセット可能なデバイスIDです（IDFA
 
 **iOS 14.5以降の、同意していないユーザーにのみ適用されます。** Aggregated Advanced Privacyでは、広告主がユーザーレベルのアトリビューションデータの提供可否を**アプリ単位**で制御できます。パートナー単位で適用されるAdvanced Privacyとは異なります。有効にすると、**すべてのパートナー**に共有するポストバックとイベントデータが集計・匿名化され、広告主自身もユーザーレベルのアトリビューションデータを**利用できなくなります**。この設定は、パートナー単位のAdvanced Privacyの設定より優先されます。 <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">［関連記事］</Anchor>
 
+<div id="all-installs-network" />
+
 #### すべてのインストールのポストバックを受信するアドネットワーク
 
 自社に紐付いていないインストールも含め、すべての流入元の新規アプリインストールについてポストバックを受信するアドネットワークです。
 
+<div id="all-launches-network" />
+
 #### すべての起動のポストバックを受信するアドネットワーク
 
 自社に紐付いていない起動も含め、すべての流入元の新しいアプリ起動についてポストバックを受信するアドネットワークです。
+
+<div id="analytics-platform" />
 
 #### 分析プラットフォーム
 
@@ -155,9 +195,13 @@ Android 10より前：GAIDを利用できない場合、このIDをアトリビ�
 AppsFlyerと顧客やビジネスパートナーの間で、データをやり取りするためのルーチン、プロトコル、ツールです。  
  *例：*Push API、Pull API、Master API、Cohort API、サーバー間API
 
+<div id="api-call" />
+
 #### API呼び出し
 
 リクエストを送信した際に行われる処理です。リクエストが転送・処理され、その応答が返されます。
+
+<div id="app-id-android--ios" />
 
 #### アプリID（Android・iOS）
 
@@ -168,15 +212,21 @@ AndroidのアプリID＝***com.coolcompany.coolapp***などのパッケージ名
 
 iOSのアプリID＝idと9桁または10桁のApp Store IDの組み合わせ。例：***id123456789***
 
+<div id="app-launch" />
+
 #### アプリ起動
 
 アプリが開かれることです。 SDKの起動や、アプリ所有者が定めたロジックに基づいて集計します。  
  *例：*ウイルス対策アプリを1日使用したことを、1セッションと数える場合があります。 <Anchor target="_blank" href="/marketers/ja/docs/measure-sessions">［関連記事］</Anchor>
 
+<div id="app-owner" />
+
 #### アプリ所有者
 
 関連用語：**広告主**、**マーケター**。  
 アプリを所有し、ユーザー数を増やすために、さまざまなプラットフォームで広告・マーケティングを行う事業者です。
+
+<div id="app-store-analytics" />
 
 #### アプリストアの分析
 
@@ -213,14 +263,20 @@ AppsFlyerのナレッジベース記事では、AppsFlyerが提供するプラ�
 **アプリストア最適化**  
 App Storeでアプリを見つけてもらいやすくするために使用します。
 
+<div id="assisted-installs" />
+
 #### アシストインストール
 
 **マルチタッチアトリビューション**とも呼ばれます。  
 インストール前の最後の計測対象の広告接触に貢献した、他のメディアソースでの広告接触です。 <Anchor target="_blank" href="/marketers/ja/docs/measure-assisted-installs">［関連記事］</Anchor>
 
+<div id="attribution" />
+
 #### アトリビューション
 
 クリックやインプレッションを通じて、メディアソースに紐付けられたインストールやその他のイベントです。 <Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model">［関連記事］</Anchor>
+
+<div id="attribution-link" />
 
 #### 計測リンク
 
@@ -235,26 +291,38 @@ App Storeでアプリを見つけてもらいやすくするために使用し�
 
 <Accordion title="B">
 
+<div id="banner" />
+
 #### バナー
 
 広告対象のWebサイトやアプリへのリンクを含む、Webサイト上の画像広告です。 マーケターはAppsFlyerのSmart Bannersを使用して、自社のモバイルWebサイト訪問者によるアプリインストールのアトリビューションと、その質の計測を行います。 <Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobile-web-to-app-for-marketers">［関連記事］</Anchor>
+
+<div id="bi-system" />
 
 #### BIシステム
 
 ローデータを、事業上の意思決定に役立つ情報に変換するための処理、構成、技術の総称です。
 
+<div id="bid" />
+
 #### 入札単価
 
 マーケターが[CPM、CPI、CPC、CPA](#c)に基づくキャンペーンで支払う単価です。
+
+<div id="brand-bundle" />
 
 #### ブランドバンドル
 
 同じブランドに関連するWebアプリとモバイルアプリのアトリビューション、アクティビティ、収益データを統合します。 <Anchor target="_blank" href="/marketers/ja/docs/pba-brand-bundles-and-settings">［関連記事］</Anchor>
 
+<div id="branded-link" />
+
 #### ブランドリンク
 
 ブランド名や関連する用語を使用して作成した短縮URLです。 <Anchor target="_blank" href="/marketers/ja/docs/brand-onelink-with-your-domain">［関連記事］</Anchor>  
 *例：*ブランド名が*Great App*の場合、*promotions.greatapp.com*のようなブランドリンクを使用できます。
+
+<div id="bundle-id" />
 
 #### バンドルID
 
@@ -271,22 +339,32 @@ Appleが個々のアプリの識別に使用する一意の識別子です。 �
 アプリのインストールや、インストール後のアクションを実行するユーザーを獲得するためのコストです。  
  *計算式：*営業・マーケティング費用÷新規顧客数
 
+<div id="campaign" />
+
 #### キャンペーン
 
 1つ以上の広告セットをまとめたものです。目的とKPI、ターゲットオーディエンス、予算とスケジュール、使用するプラットフォーム、クリエイティブと広告形式、戦略などで構成されます。<Anchor target="_blank" href="/marketers/ja/docs/measure-paid-media">［関連記事］</Anchor>。
+
+<div id="campaign-id" />
 
 #### キャンペーンID
 
 メディアソース内でキャンペーンを識別する一意のIDです。
 
+<div id="carrier" />
+
 #### 通信事業者
 
 Wi-Fiではなく、携帯電話回線によるデータ通信を提供する事業者です。
+
+<div id="channel" />
 
 #### チャネル
 
 特にGoogle広告やMeta広告など、メディアソース内のトラフィックの区分です。  
  *例：*GoogleのYouTube、Meta広告のInstagram
+
+<div id="churn" />
 
 #### チャーン（顧客離脱）
 
@@ -294,18 +372,26 @@ Wi-Fiではなく、携帯電話回線によるデータ通信を提供する事
 マーケターは、AppsFlyerのリテンションレポートとアンインストール計測を使用して、チャーン（顧客の離脱）を推定できます。  
 *計算式：*一定期間内に失ったユーザー数÷期間開始時のユーザー数
 
+<div id="click" />
+
 #### クリック
 
 メディアソース内でユーザーが広告に反応し、広告対象のページやアプリ内画面にリダイレクトされることです。
+
+<div id="click-flooding" />
 
 #### クリック洪水
 
 **クリックスパミング**とも呼ばれます。  
 インストール直前の最後のクリックとして計測されることを狙い、アドネットワークが大量の不正なクリックを送信する行為です。
 
+<div id="click-url" />
+
 #### クリックURL
 
 **計測リンク**とも呼ばれます。
+
+<div id="client" />
 
 #### クライアント
 
@@ -316,37 +402,53 @@ Wi-Fiではなく、携帯電話回線によるデータ通信を提供する事
 **獲得コスト**  
 企業が新たな顧客、資産、商品を獲得する際の費用です。 <Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview">［関連記事］</Anchor>
 
+<div id="cohort-analysis" />
+
 #### コホート分析
 
 ユーザーをグループに分けて、行動パターンを特定するための集計データです。各グループ（コホート）は通常、一定期間内の共通の特性や体験に基づいて構成されます。 <Anchor target="_blank" href="/marketers/ja/docs/cohort-and-retention-dashboard">［関連記事］</Anchor>
+
+<div id="contributor" />
 
 #### 貢献元
 
 **アシスト**とも呼ばれます。  
 インストール前かつルックバック期間内に広告接触があったものの、インストールの計測元としては選ばれなかったメディアソースやキャンペーンです。
 
+<div id="conversion" />
+
 #### コンバージョン
 
 事業にとって成果とみなす、広告に関連するアクションをユーザーが完了することです。 AppsFlyerでは、メディアソースに紐付いたインストール、再インストール、リエンゲージメントを、すべてコンバージョンとして扱います。例：ユーザーが広告をクリックした後にアプリをインストールします。このインストールが、新たなコンバージョンとなります。<Anchor target="_blank" href="/marketers/ja/docs/about-conversion-rates">［関連記事］</Anchor>
+
+<div id="conversion-chain" />
 
 #### コンバージョンに至る一連の流れ
 
 広告閲覧からアプリ内アクションに至る、一連のコンバージョンイベントです。  
  *例：*広告クリック、ランディングページ訪問、Smart Bannerのクリック、アプリのインストール、会員登録、購入というユーザーの行動。
 
+<div id="conversion-event" />
+
 #### コンバージョンイベント
 
 アプリユーザーが達成する、事業上重要な節目です。インストール前のクリックやインプレッション、ユーザーが実行したアプリ内イベントなどが含まれます。  
 *例*：アプリのインストール、カートへの追加、購入手続きの開始、購入
 
+<div id="conversion-rate" />
+
 #### コンバージョン率
 
 コンバージョンに至る一連の流れで、ある段階から次の段階へ進んだユーザーの割合です。 <Anchor target="_blank" href="/marketers/ja/docs/about-conversion-rates">［関連記事］</Anchor>
+
+<div id="conversion-types" />
 
 #### コンバージョンタイプ
 
 **リターゲティングのコンバージョンタイプ**とも呼ばれます。  
 リエンゲージメントとリアトリビューションを指します。
+
+<div id="cookies-http" />
 
 #### Cookie（HTTP）
 
@@ -385,6 +487,8 @@ Wi-Fiではなく、携帯電話回線によるデータ通信を提供する事
 課金モデルの一種です。マーケターは、パブリッシャーのプラットフォームで動画広告を配信し、ユーザーが視聴したことに対して支払います。  
  *計算式：*広告費の合計÷インプレッション数
 
+<div id="creative" />
+
 #### クリエイティブ
 
 広告を構成するコンセプト、デザイン、画像などの制作物です。 マーケターは**Smart Banners**ページで、Web開発者に依頼せずに、各バナーのクリエイティブの画像、テキスト、ボタンを設定できます。<Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobile-web-to-app-for-marketers">［関連記事］</Anchor>
@@ -394,6 +498,8 @@ Wi-Fiではなく、携帯電話回線によるデータ通信を提供する事
 **顧客関係管理**  
 企業と既存顧客や見込み顧客との関係ややり取りを管理するための技術です。
 
+<div id="cross-promotion-attribution" />
+
 #### クロスプロモーションのアトリビューション
 
 クロスプロモーションキャンペーン経由のインストールを計測・記録する方法です。特定のアプリと、自社が所有する他のアプリを使用するキャンペーンです。
@@ -402,6 +508,8 @@ Wi-Fiではなく、携帯電話回線によるデータ通信を提供する事
 
 **カスタマーサクセスマネージャー。** 担当CSMがいない、または分からない場合は、[hello@appsflyer.com](mailto:hello@appsflyer.com)にお問い合わせください。  
 **アカウントマネージャー**とも呼ばれます。
+
+<div id="csv-file" />
 
 #### CSVファイル
 
@@ -458,29 +566,43 @@ SKAdNetworkの仕組みの中でiOSアプリに設定する、ユーザーエン
 **日次アクティブユーザー数**  
 24時間以内に特定のアプリを起動したユニークユーザー数です。
 
+<div id="daumau-rate" />
+
 #### DAU/MAU率
 
 プロダクトの利用習慣の定着度を示します。たとえば、一定の間隔でプロダクトやサービスを訪れたり、利用したりするユーザーの数を表します。
+
+<div id="deep-linking" />
 
 #### ディープリンク
 
 アプリストアやWebサイトではなく、アプリ内の特定のコンテンツにユーザーを誘導するリンクです。 <Anchor target="_blank" href="/marketers/ja/docs/deep-linking-using-onelink">［関連記事］</Anchor>
 
+<div id="deferred-deep-linking" />
+
 #### 遅延ディープリンク
 
 まずユーザーをアプリストアやWebサイトに誘導し、アプリをダウンロード・インストールしてもらいます。その後、リンクのアトリビューションデータを使用して、アプリ内の特定のコンテンツに誘導します。 <Anchor target="_blank" href="/marketers/ja/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">［関連記事］</Anchor>
+
+<div id="deprecation-notice" />
 
 #### 廃止予定の通知
 
 指定日（提供終了日）以降、特定バージョンの機能の全部または一部や、関連するサポートを利用できなくなることを知らせる通知です。
 
+<div id="dev-key" />
+
 #### Devキー
 
 SDKの設定、メッセージの暗号化、顧客アカウントやAPI呼び出し元プログラムの認証に使用する、一意の識別子および認証トークンです。 通常、同じアカウント内のアプリには同じDevキーが使用されます。
 
+<div id="device-id" />
+
 #### デバイスID
 
 ユーザーがリセットできるIDFA、GAID、OAIDや、リセットできないIMEI、SSAIDなど、デバイスを一意に識別するIDです。 AppsFlyerは、デバイス単位のアトリビューションにこのIDを使用する場合があります。
+
+<div id="direct-publisher" />
 
 #### 直接契約のパブリッシャー
 
@@ -491,6 +613,8 @@ SDKの設定、メッセージの暗号化、顧客アカウントやAPI呼び�
 **指定市場地域**。**メディア市場**とも呼ばれます。  
 視聴者数の計測に使用する、人口規模で順位付けされた地理的な区分です。同じDMA内では、同じ地域のテレビ局、ラジオ局、新聞、オンラインコンテンツを利用します。
 
+<div id="domain" />
+
 #### ドメイン
 
 Webサイトを訪れる際に、ブラウザに入力するWebサイトのアドレスです。例：yourwebsite.com。
@@ -500,6 +624,8 @@ Webサイトを訪れる際に、ブラウザに入力するWebサイトのア�
 **デマンドサイドプラットフォーム**  
 デジタル広告の購入者が、複数のアドエクスチェンジやデータエクスチェンジのアカウントを1つのプラットフォームで管理するために使用します。
 
+<div id="dual-consent" />
+
 #### デュアル同意
 
 iOS 14.5以降のデバイスのユーザーが、広告主アプリとパブリッシャーアプリの両方でATTに同意している状態です。
@@ -507,6 +633,8 @@ iOS 14.5以降のデバイスのユーザーが、広告主アプリとパブリ
 </Accordion>
 
 <Accordion title="E">
+
+<div id="earned" />
 
 #### アーンドメディア
 
@@ -535,6 +663,8 @@ iOS 14.5以降のデバイスのユーザーが、広告主アプリとパブリ
 定義上、キャンペーンのCPMはeCPMと同じ値になります。 [CPM](/docs/appsflyer-knowledge-base-glossary#cpm)を参照してください。  
 *計算式：*総費用÷総インプレッション数（1,000回単位）＝eCPM（AppsFlyerによる分析値）
 
+<div id="engagement" />
+
 #### エンゲージメント
 
 ユーザーの広告接触です。  
@@ -551,21 +681,29 @@ iOS 14.5以降のデバイスのユーザーが、広告主アプリとパブリ
 **メール配信サービスプロバイダー**  
 メールマーケティングやメール一斉配信のサービスを提供する企業です。 <Anchor target="_blank" href="/marketers/ja/docs/email-service-provider-esp-integration-guide">［関連記事］</Anchor>
 
+<div id="event" />
+
 #### イベント
 
 **アプリ内イベント**とも呼ばれます。  
 ユーザーがアプリ内で実行する任意のアクションです。 SDKまたはサーバー間APIを通じて、AppsFlyerに報告されます。  
  *例：*サインイン、ゲームのレベルクリア、購入など。
 
+<div id="event-counter" />
+
 #### イベント数
 
 実行されたアプリ内イベントの合計数です。
+
+<div id="event-cvr" />
 
 #### イベントCVR
 
 **イベントコンバージョン率**  
 目的のアクションを完了したユーザーの割合です。広告によってコンバージョンに至ったユーザーの数を示します。  
  *計算式：*イベントのユニーク実行数÷アトリビューション数
+
+<div id="event-time" />
 
 #### イベント時刻
 
@@ -574,6 +712,8 @@ iOS 14.5以降のデバイスのユーザーが、広告主アプリとパブリ
 </Accordion>
 
 <Accordion title="F">
+
+<div id="fraud" />
 
 #### 不正
 
@@ -596,6 +736,8 @@ Google PlayのAndroidユーザー向けの、ユーザーがリセット可能�
 
 **コンバージョンデータの取得**インストール時にアトリビューションデータをSDKに取得する、SDKメソッドの総称です。
 
+<div id="geo" />
+
 #### 国・地域
 
 **国**とも呼ばれます。  
@@ -604,6 +746,8 @@ Google PlayのAndroidユーザー向けの、ユーザーがリセット可能�
 </Accordion>
 
 <Accordion title="I">
+
+<div id="id-matching" />
 
 #### IDマッチング
 
@@ -625,31 +769,45 @@ AppleのiOSユーザー向けの、ユーザーがリセット可能な一意の
 **国際移動体装置識別番号**  
 リセットできない一意のモバイルデバイス識別子です。 Android 10より前のバージョンでは、GAIDを利用できない場合、IMEIをアトリビューションに使用できます。 <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes">Android 10のプライバシーに関する変更</Anchor>
 
+<div id="impression" />
+
 #### インプレッション
 
 アプリユーザーやWebサイト訪問者に広告が表示されることです。インプレッションの定義は、アドネットワークによって異なる場合があります。 <Anchor target="_blank" href="/marketers/ja/docs/about-conversion-rates#マーケティングファネルの各段階とコンバージョン率-1">［関連記事］</Anchor>
+
+<div id="in-app-events" />
 
 #### アプリ内イベント
 
 アプリのインストール後にユーザーが実行する、任意のアクションです。[イベント](/docs/appsflyer-knowledge-base-glossary#イベント)を参照してください。  
  *例：*ログイン、チュートリアルの完了、購入など。
 
+<div id="install" />
+
 #### インストール
 
 AppsFlyerでは、ユーザーがモバイルアプリをダウンロードしてインストールし、起動した時点でインストールを記録します。
+
+<div id="install-hijacking" />
 
 #### インストールハイジャック
 
 **クリックインジェクション**、**リファラハイジャック**、**クリックハイジャック**とも呼ばれます。  
 モバイルマルウェアを使い、実際のアプリインストールを自分の成果として不正に計測させるモバイル広告不正の一種です。
 
+<div id="install-referrer" />
+
 #### インストールリファラ
 
 *Google Play*のリファラパラメータを使用するアトリビューション方法です。 <Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model#install-referrer-android-only">［関連記事］</Anchor>
 
+<div id="integrated-partner" />
+
 #### 連携済みパートナー
 
 AppsFlyerと連携している、アドネットワーク、代理店、マーケティングツールです。 <Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner">［関連記事］</Anchor>
+
+<div id="integrated-partner-types" />
 
 #### 連携済みパートナーの種類
 
@@ -673,9 +831,13 @@ KPI
 
 <Accordion title="L">
 
+<div id="landing-page" />
+
 #### ランディングページ
 
 ユーザーが広告をクリックした後、最初に表示されるページです。
+
+<div id="last-click-attributions" />
 
 #### ラストクリックアトリビューション
 
@@ -686,17 +848,25 @@ Web分析のモデルです。売上やコンバージョンを「最後のク�
 **広告トラッキングの制限**  
 ユーザーの広告用デバイスIDへのアクセスを防ぐ、iOSの機能です（iOS 14まで）。有効な場合、AppsFlyerはデバイスIDを受信せず、ユーザーにはターゲティング広告が表示されません。［関連記事］
 
+<div id="link-management" />
+
 #### リンク管理
 
 すべてのリンクを整理、編集、分析し、包括的に管理できる機能です。 ［関連記事］
+
+<div id="localization" />
 
 #### ローカライズ
 
 アトリビューションとレポートを、特定のタイムゾーンに合わせる処理です。デフォルトでは、AppsFlyerはすべてのアプリデータをUTC（GMT）でレポートします。
 
+<div id="lookback-window" />
+
 #### ルックバック期間
 
 広告接触後に発生したインストールを、その広告の成果として計測できる最長の期間です。 <Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">［関連記事］</Anchor>
+
+<div id="loyal-user" />
 
 #### ロイヤルユーザー
 
@@ -711,14 +881,20 @@ Web分析のモデルです。売上やコンバージョンを「最後のク�
 
 <Accordion title="M">
 
+<div id="macros" />
+
 #### マクロ
 
 パートナーが計測リンクやポストバックで使用するパラメータです。ポストバックに設定したマクロは、ユーザーに関連するデータに自動で置き換えられます。<Anchor target="_blank" href="/partners/ja/docs/postback-macros-for-ad-networks#アプリ内イベント専用マクロ">［関連記事］</Anchor>
+
+<div id="marketer" />
 
 #### マーケター
 
 関連用語：**広告主**、**アプリ所有者**。  
 アプリ所有者のもとでAppsFlyerを使用し、コンバージョンを増やすために、さまざまなチャネルでマーケティングキャンペーンを運用する担当者です。
+
+<div id="marketing-automation" />
 
 #### マーケティングオートメーション
 
@@ -733,14 +909,20 @@ Web分析のモデルです。売上やコンバージョンを「最後のク�
 **月次アクティブユーザー数**  
 30日間に特定のアプリを起動したユニークユーザー数です。同じユーザーは1回だけ数えます。 <Anchor target="_blank" href="/marketers/ja/docs/activity-dashboard#metric-definitions">［関連記事］</Anchor>
 
+<div id="media-source" />
+
 #### メディアソース
 
 ユーザーと広告との接点を提供する媒体です。 <Anchor target="_blank" href="/marketers/ja/docs/about-media-source-types">［関連記事］</Anchor>  
 *メディアソースの種類：*Self-Reporting Network（SRN）、非SRN、オウンドメディア
 
+<div id="mediation-platform" />
+
 #### メディエーションプラットフォーム
 
 1つのSDK実装で複数のアドネットワークへの接続を集約するプラットフォームです。最適化アルゴリズムを使用して、アプリ開発者の広告枠に最も高いCPMで広告を配信できるアドネットワークを選びます。
+
+<div id="meta-campaign-management-partners" />
 
 #### Metaのキャンペーン管理 パートナー
 
@@ -758,18 +940,26 @@ Meta広告を専門に扱い、Metaが定めた基準を満たすマーケティ
 <Anchor target="_blank" href="https://www.appsflyer.com/glossary/mmp/">モバイル計測パートナー</Anchor>（MMP）とは、広告・マーケティングのチャネル、メディアソース、アドネットワークを横断して、アプリのキャンペーン成果の計測を支援する企業です。  
  *例：*AppsFlyer
 
+<div id="mobile-app" />
+
 #### モバイルアプリ
 
 スマートフォンやタブレットなどのモバイルデバイス向けに設計されたソフトウェアです。
+
+<div id="monetization-network" />
 
 #### 収益化ネットワーク
 
 収益化ネットワーク（アドネットワークとも呼ばれる）は、アプリ開発者（パブリッシャー）と広告主をつなぎます。アプリ開発者は、ユーザーに広告を表示してアプリを収益化するために利用し、広告主は、自社の商品を宣伝するために利用します。
 
+<div id="multi-platform" />
+
 #### 複数プラットフォーム対応
 
 複数のプラットフォームで使用できるソリューションです。  
 *例：*AppsFlyerのOneLinkは、AndroidとiOSの両方のデバイスでインストールやイベントを記録できる計測リンクです。
+
+<div id="multi-touch-attribution" />
 
 #### マルチタッチアトリビューション
 
@@ -779,10 +969,14 @@ Meta広告を専門に扱い、Metaが定めた基準を満たすマーケティ
 
 <Accordion title="N">
 
+<div id="native-ad" />
+
 #### ネイティブ広告
 
 掲載先のプラットフォームの形式や機能になじむ広告です。  
 *例：*Webサイトの通常の記事と同じように表示される、スポンサー付きのニュース記事。
+
+<div id="native-app" />
 
 #### ネイティブアプリ
 
@@ -811,9 +1005,13 @@ AppsFlyer独自の、複数プラットフォーム向け計測リンクです�
 
 OneLinkテンプレートに対して自動生成される一意の識別子です。 OneLink APIの使用時に必要です。 <Anchor target="_blank" href="/marketers/ja/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">［関連記事］</Anchor>
 
+<div id="onelink-template" />
+
 #### OneLink™テンプレート
 
 デバイスの種類ごとに、すべての移動先を定義するテンプレートです。基本設定の完了後は、パラメータの異なるカスタムリンクを多数作成できます。各リンクは、OneLinkテンプレートで定めた移動先にユーザーを誘導します。
+
+<div id="organic-install" />
 
 #### オーガニックインストール
 
@@ -824,6 +1022,8 @@ OneLinkテンプレートに対して自動生成される一意の識別子で�
 **Over-the-top**  
 ケーブルテレビ、地上波放送、衛星放送などのプラットフォームを介さず、インターネット経由で配信するコンテンツです。 <Anchor target="_blank" href="/marketers/ja/docs/ctv-pc-and-console-platform-attribution-concepts">［関連記事］</Anchor>
 
+<div id="owned-media" />
+
 #### オウンドメディア
 
 アプリ所有者が所有・管理するメディアソースの種類です。 <Anchor target="_blank" href="/marketers/ja/docs/owned-media-attribution">［関連記事］</Anchor>  
@@ -833,10 +1033,14 @@ OneLinkテンプレートに対して自動生成される一意の識別子で�
 
 <Accordion title="P">
 
+<div id="package-id" />
+
 #### パッケージID
 
 [アプリID（Android・iOS）](#a)とも呼ばれます。  
 ストアのアプリページのURLに表示される一意の識別子です。 形式は、対象のOSによって異なります。
+
+<div id="paid" />
 
 #### ペイドメディア
 
@@ -853,6 +1057,8 @@ OneLinkテンプレートに対して自動生成される一意の識別子で�
 **パートナーID**  
 AppsFlyerで使用する、パートナーやメディアソースを一意に識別するIDです。
 
+<div id="postback" />
+
 #### ポストバック
 
 AppsFlyerを介して、広告主からパートナー（アドネットワーク）に送信する、インストールやアプリ内イベントの通知です。パートナーがキャンペーンを最適化するのに役立ちます。
@@ -862,9 +1068,13 @@ AppsFlyerを介して、広告主からパートナー（アドネットワー�
 **クリック課金**  
 主に大手検索エンジンで採用される広告モデルです。マーケターは、広告がクリックされた際にパブリッシャーへ支払います。 
 
+<div id="probabilistic-modeling" />
+
 #### 確率論的モデリング
 
 オウンドメディア向けの統計的なアトリビューション方法で、機械学習を利用してキャンペーンの成果を推定します。
+
+<div id="programmatic-advertising" />
 
 #### プログラマティック広告
 
@@ -873,6 +1083,8 @@ AppsFlyerを介して、広告主からパートナー（アドネットワー�
 #### Protect360
 
 自動かつ包括的な不正対策を提供する、AppsFlyerのプレミアム機能です。 <Anchor target="_blank" href="/marketers/ja/docs/protect360-anti-fraud-guide">［関連記事］</Anchor>
+
+<div id="publisher" />
 
 #### パブリッシャー
 
@@ -890,6 +1102,8 @@ AppsFlyerから集計データやローデータを取得する、URLベース�
 
 <Accordion title="Q">
 
+<div id="qr-code" />
+
 #### QRコード
 
 読み取ってリンクに変換できる、2次元バーコードです。
@@ -898,54 +1112,80 @@ AppsFlyerから集計データやローデータを取得する、URLベース�
 
 <Accordion title="R">
 
+<div id="raw-data" />
+
 #### ローデータ
 
 インストール、購入、Webサイト訪問、パートナーへのポストバックなど、個々のイベントを記録した、AppsFlyerが提供するユーザーレベルのデータです。 <Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">［関連記事］</Anchor>
+
+<div id="re-attribution" />
 
 #### リアトリビューション
 
 過去のアプリユーザーが、同じアプリのリターゲティングキャンペーンに接触した後、アプリを再インストールすることです。 <Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">［関連記事］</Anchor>
 
+<div id="re-attribution-window" />
+
 #### リアトリビューション期間
 
 インストール後、再インストールを新規インストールとして扱わない期間です。 <Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">［関連記事］</Anchor>
+
+<div id="re-engagement" />
 
 #### リエンゲージメント
 
 アプリユーザーが、そのアプリのリターゲティングキャンペーンに接触した後、アプリを起動することです。 <Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">［関連記事］</Anchor>
 
+<div id="registered-device" />
+
 #### 登録済みデバイス
 
 テストに使用するデバイスです。登録済みデバイスでは、AppsFlyerのリアトリビューションのルールにかかわらず、すべてのインストールが計測されます。<Anchor target="_blank" href="/marketers/ja/docs/registering-test-devices">［関連記事］</Anchor>
+
+<div id="request" />
 
 #### リクエスト
 
 [API呼び出し](#a)とも呼ばれます。
 
+<div id="retargeting" />
+
 #### リターゲティング
 
 広告キャンペーンを通じて、現在または過去のユーザーにアプローチすることです。
+
+<div id="retargeting-network" />
 
 #### リターゲティングネットワーク
 
 現在または過去のユーザーへのターゲティングを専門とするアドネットワークです。 <Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide#retargeting-dashboard">［関連記事］</Anchor>
 
+<div id="retention-report" />
+
 #### リテンションレポート
 
 アプリ内のユーザーセッションの状況を計測する、AppsFlyerの製品です。 ［関連記事］
+
+<div id="revenue" />
 
 #### 収益
 
 アプリ内イベントや広告表示（広告収益）で報告される収益です。
 
+<div id="revenue-attribution" />
+
 #### 収益のアトリビューション
 
 特定の収益イベントを、特定のキャンペーンやメディアソースに紐付けることです。 <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution">［関連記事］</Anchor>
+
+<div id="revenue-event" />
 
 #### 収益イベント
 
 収益値を含めて記録されたアプリ内イベントです。   
 *パラメータ：*ユーザーの収益を累積するパラメータは、af\_revenueのみです。ビジネスロジック上、実際の収益の発生を表すアプリ内イベントには、必ずこのパラメータを使用してください。
+
+<div id="rich-media-ad" />
 
 #### リッチメディア広告
 
@@ -978,18 +1218,26 @@ AppsFlyerから集計データやローデータを取得する、URLベース�
 **ソフトウェア開発キット**  
 アトリビューションと分析のためにアプリに組み込むコードです。 <Anchor target="_blank" href="/marketers/ja/docs/sdk-integration-planning">［関連記事］</Anchor>
 
+<div id="segmentation" />
+
 #### セグメンテーション
 
 条件に基づいてユーザーを小さなグループに分け、それぞれに合わせた広告を提供するマーケティング手法です。
+
+<div id="session" />
 
 #### セッション
 
 アプリが起動されることを前提とします。セッション数は、SDKの起動や、アプリ所有者が定めたロジックに基づいて集計します。  
  *例：*ウイルス対策アプリでは、1日の利用を1セッションと数えます。 <Anchor target="_blank" href="/marketers/ja/docs/measure-sessions">［関連記事］</Anchor>
 
+<div id="single-platform" />
+
 #### 単一プラットフォーム向け
 
 AndroidやiOSなど、1つのプラットフォームのアトリビューションに使用する計測リンクです。  （複数プラットフォーム向けの計測リンクもあります。）
+
+<div id="single-source-of-truth-ssot" />
 
 #### Single source of truth（SSOT）
 
@@ -1002,6 +1250,8 @@ AppleのiOSの一部であるSKAdNetworkの仕組みは、ユーザーのプラ�
 #### SKAN
 
 SKAdNetworkの略称です。
+
+<div id="slug" />
 
 #### スラッグ
 
@@ -1022,9 +1272,13 @@ SKAdNetworkの略称です。
 **サプライサイドプラットフォーム**  
 パブリッシャーが広告枠から得る収益を最大化するための仕組みです。広告枠の販売を自動かつ効率的に管理することで、収益の最大化を図ります。
 
+<div id="subdomain" />
+
 #### サブドメイン
 
 Webサイト内の各領域を整理し、アクセスできるようにするため、メインドメイン名に追加する部分です。 1つのメインドメインに、複数のサブドメインを設定できます。例：app.yourwebsite.com
+
+<div id="sunset-date" />
 
 #### 提供終了日
 
@@ -1034,22 +1288,32 @@ Webサイト内の各領域を整理し、アクセスできるようにする�
 
 <Accordion title="T">
 
+<div id="targeting" />
+
 #### ターゲティング
 
 特定の[オーディエンス](#a)を対象にマーケティングキャンペーンを行うことです。  
  *条件：*所在地、人口統計情報、携帯通信事業者など。
 
+<div id="account-user" />
+
 #### アカウントユーザー
 
 AppsFlyerアカウントのログイン情報を持つユーザーです。管理者からアクセス権を付与されます。 ［関連記事］
+
+<div id="touch-time" />
 
 #### 広告接触日時
 
 ユーザーの広告接触（クリックまたはインプレッション）が記録された日時（タイムスタンプ）です。
 
+<div id="touch-type" />
+
 #### 広告接触の種類
 
 ユーザーが広告に接触した方法で、クリックまたはインプレッションを指します。
+
+<div id="touchpoint" />
 
 #### タッチポイント
 
@@ -1065,30 +1329,44 @@ AppsFlyerアカウントのログイン情報を持つユーザーです。管�
 **一意のデバイス識別子**  
 個々のiOSデバイスを識別する一意のIDです。ユーザーがiCloudや設定アプリでデバイスを有効化しようとした際に、Appleのサーバーから取得されます。
 
+<div id="uninstall-measurement" />
+
 #### アンインストール計測
 
 デバイスからアプリを削除したユーザーを、計測元のメディアソース別に計測することです。 <Anchor target="_blank" href="/marketers/ja/docs/measure-uninstalls">［関連記事］</Anchor>
 
+<div id="unique-user" />
+
 #### ユニークユーザー
 
 ユニークユーザーの判定には、AppsFlyer IDを使用します。
+
+<div id="universal-links" />
 
 #### ユニバーサルリンク
 
 ユニバーサルリンクは、Webブラウザを一度開く手順を挟まず、リンク先のコンテンツを直接表示することで、スムーズなユーザー体験を提供します。  
  ユニバーサルリンクは、WebサーバーでホストするApple App Site Association（AASA）ファイルを使用して、iOS上で動作します。 AASAファイルには、Webドメインとアプリを関連付ける情報が含まれ、そのドメインのリンクからアプリ内コンテンツをスムーズに開けるようになります。
 
+<div id="user" />
+
 #### ユーザー
 
 モバイルデバイスを使用して、アプリをダウンロード、インストール、起動する人です。
+
+<div id="user-acquisition" />
 
 #### ユーザー獲得
 
 新規ユーザーの獲得を目的とする広告キャンペーンです。
 
+<div id="user-agent" />
+
 #### ユーザーエージェント
 
 ブラウザの種類、OS、ソフトウェアのバージョンなど、ユーザーのデバイスに関する技術情報です。 AppsFlyerは、この情報を確率論的モデリングによるアトリビューションに使用します。
+
+<div id="user-invite-attribution" />
 
 #### ユーザー招待のアトリビューション
 
@@ -1098,9 +1376,13 @@ AppsFlyerアカウントのログイン情報を持つユーザーです。管�
 
 <Accordion title="V">
 
+<div id="validation-rules" />
+
 #### 検証ルール
 
 ターゲティング条件の検証や独自の不正検知のためのルールです。条件に合わないインストールのアトリビューションを、アプリ所有者がブロックできます。 <Anchor target="_blank" href="/marketers/ja/docs/implement-validation-rules-to-prevent-fraud">［関連記事］</Anchor>
+
+<div id="verticals" />
 
 #### 業種
 
@@ -1108,10 +1390,14 @@ AppsFlyerアカウントのログイン情報を持つユーザーです。管�
 特定のニーズを持ち、特化したサービスへの関心が高い市場区分です。 AppsFlyerでは、マーケターの業種に応じたアプリ内イベントの報告を推奨しています。<Anchor target="_blank" href="/marketers/ja/docs/in-app-events-overview#recommended-events-by-business-vertical">［関連記事］</Anchor>  
 *例：*ゲーム、Eコマース、旅行
 
+<div id="video-ad" />
+
 #### 動画広告
 
 インターネット上での動画再生の前、途中、終了後に表示される広告です。  
  *例：*動画を埋め込んだバナー広告やインタースティシャル広告。
+
+<div id="visitor-website" />
 
 #### 訪問者（Webサイト）
 
@@ -1126,6 +1412,8 @@ AppsFlyerアカウントのログイン情報を持つユーザーです。管�
 
 <Accordion title="W">
 
+<div id="web-app" />
+
 #### Webアプリ
 
 Webブラウザ上で動作するアプリです。（ネイティブアプリは、特定のOSプラットフォーム上で動作します。）
@@ -1133,6 +1421,8 @@ Webブラウザ上で動作するアプリです。（ネイティブアプリ�
 </Accordion>
 
 <Accordion title="X">
+
+<div id="x-marketing-partners" />
 
 #### Xのマーケティングパートナー
 

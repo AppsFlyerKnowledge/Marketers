@@ -24,7 +24,11 @@ x-zendesk:
 
 ![AppsFlyer-People-Based-Attribution_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 
+<div id="pba-dashboards" />
+
 ## PBA管理画面
+
+<div id="settings" />
 
 ## 設定
 
@@ -33,6 +37,8 @@ x-zendesk:
 <Accordion title="フィルタのオプション">
 
 (A) 日付選択、(B) メインフィルター、および (C) 追加のフィルターを使用して、PBA ダッシュボードの結果を絞り込み、分析をニーズに合わせて調整します。
+
+<div id="filter-panel-in-pba-dashboards" />
 
 #### PBAダッシュボードのフィルターパネル
 
@@ -53,7 +59,7 @@ x-zendesk:
 * コンテキストを持つフィルター：下表に示されているように、一部のフィルターでは、コンテキストに関連付ける必要があります。たとえば、Webアシストインストールダッシュボードでは、国フィルターには Webメディアソースまたはモバイルメディアソースのいずれかのコンテキストが必要です。国フィルターを2つ設定することで、それぞれに国フィルターを設定できます。
 
 
-<table><tbody><tr><th><span id="filters-and-date-picker"></span>フィルター</th><th>説明／値</th><th>Webサイト計測 </th><th>Webアシストインストール</th><th>コンバージョン<br/> </th></tr><tr><td>日付選択</td><td><p>次のいずれかのPBA CVイベントが発生した日： </p><ul><li>アプリインストール</li><li>Webコンバージョン</li><li>アプリコンバージョン</li></ul></td><td><p>Y</p></td><td><p>Y</p></td><td><p>Y</p></td></tr><tr><td>地理 </td><td><p>国／地域リスト </p></td><td>Y</td><td><span>Y(1)</span></td><td><p><span>Y(2)</span></p></td></tr><tr><td>インストールタイプ</td><td>オーガニック、スマートバナー、カスタムリンク、有料</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>メディアチャネル</td><td>広告、ダイレクト、メール、紹介、オーガニック検索、ソーシャル</td><td>Y</td><td><span>Y</span></td><td><span>Y(2)</span></td></tr><tr><td>モバイルプラットフォーム</td><td>Android、iOS</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media source </td><td><p>イベントが紐づけられたメディアソース<span></span></p></td><td><p>Y</p></td><td><span>Y(1)</span></td><td>Y(1)</td></tr><tr><td><p>メディアタイプ</p></td><td><p>有料 (paid) 、<a href="./owned-media-attribution" target="_blank">オウンド</a> (owned)、獲得 (earned) を含む</p></td><td><p>Y</p></td><td>Y</td><td>Y(2)</td></tr><tr><td><p>コンバージョンイベント</p></td><td><p>コンバージョン経路のコンバージョンイベントにつながった経路を表示する</p></td><td><p>Y</p></td><td><p>--</p></td><td><p><span>Y</span></p></td></tr><tr><td><p>経路の長さ（ステップ数） </p></td><td></td><td><p>--</p></td><td><p>--</p></td><td><p>Y</p></td></tr><tr><td><p>パスの期間（日数）</p></td><td>最初のタッチポイントからのコンバージョン経路の期間</td><td>--</td><td>--</td><td>Y</td></tr><tr><td colspan="5"><p><strong>(1)</strong> Webアシストインストールダッシュボードで、フィルターを Web メディアソースまたはモバイルメディアソースに関連付けます。フィルターの複数のインスタンスを設定できます。（ケース例）</p></td></tr></tbody></table>
+<table><tbody><tr><th><span id="available-filter-dimensions-per-dashboard"></span><span id="filters-and-date-picker"></span>フィルター</th><th>説明／値</th><th>Webサイト計測 </th><th>Webアシストインストール</th><th>コンバージョン<br/> </th></tr><tr><td>日付選択</td><td><p>次のいずれかのPBA CVイベントが発生した日： </p><ul><li>アプリインストール</li><li>Webコンバージョン</li><li>アプリコンバージョン</li></ul></td><td><p>Y</p></td><td><p>Y</p></td><td><p>Y</p></td></tr><tr><td>地理 </td><td><p>国／地域リスト </p></td><td>Y</td><td><span>Y(1)</span></td><td><p><span>Y(2)</span></p></td></tr><tr><td>インストールタイプ</td><td>オーガニック、スマートバナー、カスタムリンク、有料</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>メディアチャネル</td><td>広告、ダイレクト、メール、紹介、オーガニック検索、ソーシャル</td><td>Y</td><td><span>Y</span></td><td><span>Y(2)</span></td></tr><tr><td>モバイルプラットフォーム</td><td>Android、iOS</td><td>--</td><td><span>Y</span></td><td><span>--</span></td></tr><tr><td>Media source </td><td><p>イベントが紐づけられたメディアソース<span></span></p></td><td><p>Y</p></td><td><span>Y(1)</span></td><td>Y(1)</td></tr><tr><td><p>メディアタイプ</p></td><td><p>有料 (paid) 、<a href="./owned-media-attribution" target="_blank">オウンド</a> (owned)、獲得 (earned) を含む</p></td><td><p>Y</p></td><td>Y</td><td>Y(2)</td></tr><tr><td><p>コンバージョンイベント</p></td><td><p>コンバージョン経路のコンバージョンイベントにつながった経路を表示する</p></td><td><p>Y</p></td><td><p>--</p></td><td><p><span>Y</span></p></td></tr><tr><td><p>経路の長さ（ステップ数） </p></td><td></td><td><p>--</p></td><td><p>--</p></td><td><p>Y</p></td></tr><tr><td><p>パスの期間（日数）</p></td><td>最初のタッチポイントからのコンバージョン経路の期間</td><td>--</td><td>--</td><td>Y</td></tr><tr><td colspan="5"><p><strong>(1)</strong> Webアシストインストールダッシュボードで、フィルターを Web メディアソースまたはモバイルメディアソースに関連付けます。フィルターの複数のインスタンスを設定できます。（ケース例）</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -65,6 +71,8 @@ x-zendesk:
 
 * メディアソース／キャンペーン
 * ドロップダウンにて、1つ以上のオプションを選択してください。
+
+<div id="example" />
 
 > 📄 **例**
 >
@@ -96,6 +104,8 @@ x-zendesk:
 | PBA設定 | <ul><li>コンバージョンイベントの設定</li><li>バンドル設定の変更</li></ul> |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 追加情報
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 > **概要：** Salesforceデータクラウドの統合により、ボタン一つでファーストパーティデータをAppsFlyerデータコラボレーションプラットフォームに取り込むことができます。
 
+<div id="before-you-begin" />
+
 > 🚧 **始める前に：**
 >
 > Salesforce Data Cloudを統合する前に、 **AppsFlyerアプリ拡張機能をインストールしてください** Salesforce AppExchangeより。これは、AppExchangeパッケージをダウンロードする権限を持つSalesforce管理者が行う必要があります。
@@ -34,13 +36,19 @@ x-zendesk:
 >
 > インストールが成功すれば、プロセスは完了し、追加のパッケージ構成は不要です。
 
+<div id="set-up-the-integration" />
+
 ## 連携設定方法：
 
 統合にはSalesforceデータクラウド接続を作成し、その後ソースを作成することが含まれます。Salesforceアカウントの認証には接続が1つだけで十分です。この接続を使うことで、Salesforceのテーブルに基づいて複数のソースを作成できます。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > すでにSalesforce Data Cloudとの接続を設定している場合、新しい接続を作成することはできません。
+
+<div id="create-a-salesforce-data-cloud-connection" />
 
 ### Salesforceデータクラウド接続を作成する
 
@@ -55,6 +63,8 @@ x-zendesk:
 6. 認証が成功すると、あなたは **新しい接続** Salesforceとアクティブな接続があることを示して会話をします。これで情報源を作成できます。
 7. カチッ **ソースを作成** そして [以下の指示](#salesforceデータクラウドソースの作成) Salesforceのデータクラウドソースを作成するために。
 
+<div id="create-a-salesforce-data-cloud-source" />
+
 ### Salesforceデータクラウドソースの作成
 
 Salesforceアカウントを認証し、Salesforce Data Cloudとの接続を設定したら、次のステップはソースの作成です。これらのソースは、アップデートを行うたびにAppsFlyerに必要なデータを提供します。
@@ -63,6 +73,8 @@ Salesforceアカウントを認証し、Salesforce Data Cloudとの接続を設�
 
 * 前のステップを完了したら、クリック **ソースを作成**.
 * AppsFlyerのサイドメニューから **協力しましょう** > **データクリーンルーム** > **+ 新しい情報源** ページの右上隅に表示されます。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >

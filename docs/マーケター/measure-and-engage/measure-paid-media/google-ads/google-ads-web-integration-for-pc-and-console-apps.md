@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **概要：** Google AdsのWebキャンペーンを使用して、PCやコンソール（家庭用ゲーム機）のプラットフォーム向けアプリを宣伝し、成果を計測します。 AppsFlyerは、クロスプラットフォーム向けランディングページまたはダイレクト計測リンクを使用したGoogleのWebキャンペーンに対応しています。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > この記事では、PCまたはコンソールアプリを宣伝するWebキャンペーンについて説明します。モバイルアプリを宣伝するWebキャンペーンを作成する場合は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-create-web-based-campaigns">Google Ads（AdWords）：Webキャンペーンの作成</Anchor>を参照してください。
+
+<div id="overview" />
 
 ## 概要
 
@@ -35,6 +39,8 @@ x-zendesk:
 * [AppsFlyerでのGoogle Ads Webの設定](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer)。
 * [PCおよびコンソールアプリ向けのGoogle Adsキャンペーンの設定](/docs/google-ads-web-integration-for-pc-and-console-apps#pcおよびコンソールアプリ向けのgoogle-ads-webキャンペーンの設定)。
 
+<div id="prerequisites" />
+
 ### 前提条件
 
 Google Ads Web連携を有効にする前に、以下を準備してください。
@@ -43,6 +49,8 @@ Google Ads Web連携を有効にする前に、以下を準備してください
 * AppsFlyerのアカウント
 * <Anchor target="_blank" href="https://developers.google.com/identity/protocols/oauth2/scopes">必要なOAuthスコープ</Anchor>を持つGoogleのアクセストークン。アクセストークンに紐づくスコープは、Google Developer Consoleで確認できます。
 * <Anchor target="_blank" href="/marketers/ja/docs/user-management">適切なロール／権限を持つAppsFlyerユーザー</Anchor>と、対象アプリへのアクセス権
+
+<div id="activate-partner-in-appsflyer" />
 
 ## AppsFlyerでのパートナーの有効化
 
@@ -54,6 +62,8 @@ Google Ads Web連携を有効にする前に、以下を準備してください
 4. ［**連携**］タブで、［**パートナーを有効にする**］をオンにします。  
    **注意：** このパートナーとの連携中は、トグルをオン（<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">有効</Anchor>）のままにしておく必要があります。
 5. 次のセクションの説明に従い、各タブで設定を完了します。
+
+<div id="set-up-google-ads-web-in-appsflyer" />
 
 ## AppsFlyerでのGoogle Ads Webの設定
 
@@ -67,11 +77,17 @@ Google Ads Web連携で送信できるポストバックは、インストール
 
 ［**連携**］タブには、以下のセクションがあります。
 
+<div id="activate-partner" />
+
 #### パートナーを有効にする
 
 連携を設定するには、まず［**パートナーを有効にする**］トグルをオンにします。
 
+<div id="general-settings" />
+
 #### 一般設定
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -88,6 +104,8 @@ Google Ads Web連携で送信できるポストバックは、インストール
 3. AppsFlyerがGoogle Adsにコンバージョンをアップロードできるように、［**Googleでサインイン**］をクリックします。
 4. Googleで、前の手順でお客様IDを取得したMCCアカウントの管理者アカウントを選択します。
 5. **許可**をクリックします。
+
+<div id="enable-view-through-attribution" />
 
 #### ビュースルー計測の有効化
 
@@ -107,9 +125,13 @@ AppsFlyerは、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwor
 6. ［**ビュースルー計測**］セクションまでスクロールし、［**ビュースルールックバック期間**］を設定します（最大24時間）。
 7. ［**連携を保存**］をクリックして変更を適用します。
 
+<div id="default-postbacks" />
+
 #### デフォルトのポストバック
 
 インストールのポストバックは、Google Ads Webにのみ自動送信されます。
+
+<div id="in-app-event-postbacks" />
 
 #### アプリ内イベントポストバック
 
@@ -151,6 +173,8 @@ Google Ads Webに送信するアプリ内イベントポストバックのマッ
 > キャンペーンを分析しやすいように、campaign-name\_webなど、キャンペーン名の先頭または末尾にキャンペーンの種類（webまたはmobile）を含めてください。
 
 </Accordion>
+
+<div id="set-up-campaigns-in-google-ads-web-for-pc-and-console-apps" />
 
 ## PCおよびコンソールアプリ向けのGoogle Ads Webキャンペーンの設定
 
@@ -231,6 +255,8 @@ Google Adsでは、定義済みのコンバージョンアクションと目標�
 3. コンバージョンアクションのデータソースとして、［**オフラインコンバージョン**］を選択します。
 4. コンバージョンの種類のリストから［**インポート**］を選択し、［**APIまたはアップロードによる手動インポート**］>［**クリック経由のコンバージョンを計測**］を選択します。
 
+   <div id="note-2" />
+
    > 📘 **注意**
    >
    > ［**APIまたはアップロードによる手動インポート**］が表示されない場合：
@@ -251,20 +277,28 @@ Google Adsでは、定義済みのコンバージョンアクションと目標�
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data-from-november-2-2025" />
+
 ## Web to Appの計測データの確認（2025年11月2日以降）
 
 Web経由のコンバージョンイベントは元の`googleads_int`PIDでGoogleに送信されますが、AppsFlyer管理画面とローデータレポートでは`googleadwords_int`PIDでレポートされます。これは、コンバージョンの主な成果イベントとコンバージョンのアシストイベントの両方に適用されます。
 
 この統合されたレポート表示により、モバイルとWebのすべてのコストレポートを含め、Webキャンペーンとアプリキャンペーンのパフォーマンスを1か所で分析できます。
 
+<div id="view-in-the-dashboard" />
+
 ### 管理画面での確認
 
 GoogleのWeb to Appの計測結果はすべて、オーバービューダッシュボードとアクティビティダッシュボードで`googleadwords_int`として表示されます。これにより、プラットフォームを横断したキャンペーンの成果を1つにまとめて確認できます。標準のフィルタと内訳表示を使用して、Google Adsのデータ内でアプリとWebのトラフィックを比較できます。
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### ローデータレポートとAPIレポートでの確認
 
 * **ローデータのエクスポートとAPIレスポンス**では、GoogleのWeb上のアクティビティについて、`media_source`フィールドに`googleadwords_int`PIDが含まれます。 Webキャンペーンの設定詳細を確認するには、`original_url`フィールドを参照してください。Webキャンペーンの作成時に使用されたPIDとして`googleads_int`が表示されます。
 * **ポストバックレポート**には、ポストバックの送信先となった元のメディアソースとして`googleads_int`が表示されます。
+
+<div id="traits-and-limitations" />
 
 ## 機能と制限事項
 

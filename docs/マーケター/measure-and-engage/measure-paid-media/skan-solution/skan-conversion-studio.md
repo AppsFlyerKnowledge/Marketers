@@ -24,6 +24,8 @@ x-zendesk:
 
 <Embed title="SKAN 4 Conversion Studio（計測期間の早期終了を含む）" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="skan-conversion-studio-basics" />
+
 ## SKAN Conversion Studioの基本
 
 SKAdNetwork（SKAN）のアトリビューションでは、各計測期間の終了後、iOSデバイスが最新のコンバージョン値（CV）を含むSKANポストバックを送信します。
@@ -88,6 +90,8 @@ Conversion Studioでは、利用できるすべての値とビットを最大限
   * レイアウトは、00:00（UTC）時点で有効なモードに基づき、毎日更新されます。更新後のレイアウトは、05:00（UTC）までに利用できるようになります。
   * SKAN 4、カスタム、デコードの各モードでは、アプリ内イベントと総収益のオーガニックデータは利用できません。
 
+<div id="s2s-principles" />
+
 #### **S2Sの原則**
 
 計測対象の行動は、[サーバー間（S2S）API](/docs/skan-conversion-studio#report-events-by-servertoserver-api)で報告できます。モードごとに、以下の点に注意してください。
@@ -97,6 +101,8 @@ Conversion Studioでは、利用できるすべての値とビットを最大限
 * ［従来のモード］収益、コンバージョン、エンゲージメント：イベントを送信する前に、[S2Sイベントの記録をオン](/docs/skan-conversion-studio#report-events-by-servertoserver-api)にする必要があります。
 
 </Accordion>
+
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
 
 ## SKAN Conversion StudioでのCV設定
 
@@ -110,6 +116,8 @@ SKAN Conversion Studioでは、CVを設定するために複数のモードを�
   * エンゲージメント
 
 各計測モードの詳細は、以降のセクションで説明します。
+
+<div id="important" />
 
 > 🚧 **重要！**
 >
@@ -207,6 +215,8 @@ SKAN 4を手動で設定する場合は、さまざまなオプションを試�
 
 <Accordion title="［従来のモード］固定モード">
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 2024年6月23日以降、新規アプリでは固定モードを利用できません。  すべての機能は、カスタムモードとSKAN 4モードで利用できます。
@@ -237,6 +247,8 @@ SKAN 4を手動で設定する場合は、さまざまなオプションを試�
 5. <strong>［保存］</strong>をクリックします。
 6. パートナーへのアプリ内イベントポストバックのマッピングに、設定したイベントが含まれていることを確認します。
 
+<div id="fixed-mode-measurement" />
+
 #### 固定モードの計測
 
 | 計測モード | 説明 |
@@ -263,6 +275,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 4. パートナーへのアプリ内イベントポストバックのマッピングに、設定したイベントが含まれていることを確認します。
 
 </Accordion>
+
+<div id="measurement-components" />
 
 ## 計測コンポーネント
 
@@ -590,6 +604,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 補足情報
 
 <div id="view-cv-mapping" />
@@ -601,6 +617,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 * <Anchor target="_blank" href="/marketers/ja/docs/skan-cv-schema-api-for-advertisers">広告主向けSKAN CVスキーマAPI</Anchor>を使用して、CVマッピングを取得できます。
 
 <Image alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
+
+<div id="csv-mapping-file-columns" />
 
 #### CSVマッピングファイルの列
 
@@ -637,6 +655,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 
 <Accordion title="カスタムCVを上限まで活用する例">
 
+<div id="example-1" />
+
 #### 例1
 
 | コンポーネント | 説明 |
@@ -645,6 +665,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 | 収益 | <ul><li>1つのアプリ内イベントで総収益を報告</li><li>収益範囲：15個</li></ul> |
 | アプリ内イベント | なし |
 | ファネル | アプリ内イベント3個 |
+
+<div id="example-2" />
 
 #### 例2
 
@@ -655,6 +677,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 | コンバージョン計測用のアプリ内イベント | コンバージョンを計測するアプリ内イベント1個。イベントごとに1つの範囲が必要 |
 | ファネル | なし |
 
+<div id="example-3" />
+
 #### 例3
 
 | コンポーネント | 説明 |
@@ -663,6 +687,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 | 収益 | <ul><li>1つのアプリ内イベントで総収益を報告</li><li>収益範囲：3個</li></ul> |
 | エンゲージメント計測用のアプリ内イベント | <ul><li>エンゲージメントの発生回数を計測するアプリ内イベント2個</li><li>発生回数の範囲：アプリ内イベントごとに3個</li></ul> |
 | ファネル | なし |
+
+<div id="example-4" />
 
 #### 例4
 
@@ -693,6 +719,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 * 各優先度には、収益範囲、アプリ内イベントの発生回数の範囲、またはその両方を設定します。
 * 範囲の値：下限値は含まれず、上限値は含まれます。たとえば、5〜10ドルの範囲には5は含まれませんが、10は含まれます。
 
+<div id="measurement-priorities-setting-example" />
+
 #### 計測優先度の設定例
 
 <table><thead><tr><th>優先度番号</th><th>収益範囲</th><th>アプリ内イベント</th></tr></thead><tbody><tr><td>1［最優先］</td><td>$5-$10</td><td>send_recommendation</td></tr><tr><td>2</td><td>$5-$10</td><td>--</td></tr><tr><td>3</td><td>$0-$5</td><td>send_recommendation</td></tr><tr><td>4</td><td>$0-$5</td><td>--</td></tr><tr><td>5</td><td>--</td><td>send_recommendation<br/>add_to_cart</td></tr><tr><td>6</td><td>--</td><td>send_recommendation</td></tr><tr><td>7［最低優先度］</td><td>--</td><td>add_to_cart</td></tr><tr><td colspan="3">-- 値の設定なし</td></tr></tbody></table>
@@ -703,6 +731,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 
 * 複数の操作は、>で区切っています。
 * 括弧内の値は、ユーザーが操作を完了した後にAppsFlyerが判定した優先度です。 AppsFlyerは、この優先度を使用してアプリ内のCVを更新します。
+
+<div id="user-journey-scenarios" />
 
 #### ユーザー行動のパターン
 
@@ -720,9 +750,13 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 
 <Accordion title="［従来のモード］固定モードの例">
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > 2024年6月23日以降、新規アプリでは固定モードを利用できません。すべての機能は、カスタムモードとSKAN 4モードで利用できます。
+
+<div id="example-a-revenue-measurement" />
 
 #### 例A：収益計測
 
@@ -733,6 +767,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 | 選択した指標 | 利用できる収益関連指標<ul><li>インストール：20</li><li>収益：125ドル</li><li>コンバージョン：15</li><li>ARPU：6.25ドル</li><li>ROI：316%</li></ul> |
 | レポートごとのローデータ行数 | <Anchor target="_blank" href="/marketers/ja/docs/skan-raw-data-reports">ローデータレポートは、Data Locker経由で利用できます。</Anchor><ul><li>デバイスポストバック：20行</li><li>インストール：20行</li><li>アプリ内イベント：15行。注意！複数回購入したユーザーは、収益10ドルの1行にまとめて記録されます。</li></ul> |
 | 開発者向けの注意点 | 収益を含むイベントが認識されます。 |
+
+<div id="example-b-conversion-measurement" />
 
 #### 例B：コンバージョン計測
 
@@ -757,6 +793,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
         * 5人のユーザー（A〜E）がアプリをインストールします。
         * 以下の表のとおり、0〜3種類のアプリ内イベントを実行します。
         * アドネットワークがAPIで提供したコストデータ：30ドル
+
+        <div id="inapp-events-performed-by-users" />
 
         #### ユーザーが実行したアプリ内イベント
 
@@ -785,6 +823,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
         選択した指標
       </td>
       <td>
+        <div id="inapp-related-metrics-available" />
+
         #### 利用できるアプリ内イベント関連指標
 
         | 指標 | アプリ | in-app-1 | in-app -2 | in-app- 3 |
@@ -821,6 +861,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
   </tbody>
 </Table>
 
+<div id="example-c-engagement-measurement" />
+
 #### 例C：エンゲージメント計測
 
 <Table>
@@ -842,6 +884,8 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
       </td>
       <td>
         5人のユーザーがアプリをインストールし、表に示す回数だけアプリを起動します。
+
+        <div id="app-opens" />
 
         #### アプリの起動
 
@@ -934,6 +978,8 @@ CVの分布に関するインサイトには3つのタブがあり、それぞ�
 * ［収益］タブ
 * ［イベント］タブ
 
+<div id="conversion-values-tab" />
+
 #### **［コンバージョン値］タブ**
 
 実際に使用されているCVと、使用されていないCVを確認できます。
@@ -948,6 +994,8 @@ CVがバランスよく分布していれば、スキーマがユーザー行動
 **未使用の値を判定する基準**  
 ✅ すべてのCVが使用されています  
 ⚠️ ポストバックが1件もないCVが1つでもある場合、この警告アイコンが表示されます。
+
+<div id="revenue-tab" />
 
 #### **［収益］タブ**
 
@@ -968,6 +1016,8 @@ SKANで定義する収益範囲を最適化すると、収益の精度を高め�
 ✅ 収益の誤差が3%以下
 
 ⚠️ 収益の誤差が3%超
+
+<div id="events-tab" />
 
 #### **［イベント］タブ**
 
@@ -994,6 +1044,8 @@ SKANにアプリ内イベントが1つ以上マッピングされている場合
 </Accordion>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## その他の操作
 
@@ -1064,6 +1116,8 @@ S2Sの処理の流れは次のとおりです。
 
 <Accordion title="固定モードの計測へのSSOTの追加">
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > 2024年6月23日以降、新規アプリでは固定モードを利用できません。すべての機能は、カスタムモードとSKAN 4モードで利用できます。
@@ -1095,6 +1149,8 @@ CVの引き下げを有効にする手順：
      **注意**！以下の場合にのみ利用できます。
      * Conversion Studioで、以前にSKAN 4モードの設定を保存したことがあるアプリ。
      * 編集権限を持つユーザー。
+
+<div id="examples" />
 
 #### 例
 
@@ -1143,6 +1199,8 @@ CVの引き下げを有効にする手順：
 
 <strong>［匿名化されたユーザーに対応］</strong>のトグルを有効にすると、プライバシーを保護しながら、<Anchor target="_blank" href="/marketers/ja/docs/apply-privacy-preserving-sdk-methods#ユーザー情報の匿名化">匿名化されたユーザー</Anchor>のSKAN CVを正しく更新できます。
 
+<div id="important-1" />
+
 > 🚧 **重要！**
 >
 > この機能の対象は、<Anchor target="_blank" href="/marketers/ja/docs/apply-privacy-preserving-sdk-methods#ユーザー情報の匿名化">ユーザー匿名化メソッド</Anchor>を呼び出し、ユーザーを識別するすべての情報を削除・ハッシュ化するアプリのみです。これらのアプリでは、SKANのレポートを正確にするため、<strong>［匿名化されたユーザーに対応］</strong>のトグルを有効にする必要があります。
@@ -1164,6 +1222,8 @@ SKANスキーマでSSOTを有効にすると、CVの構成方法を設定でき�
 マッピング方式は、インストールの種類を区別するために、CVをどう割り当てるかを定めます。対象には、AppsFlyerの従来の方法でアトリビューションされたインストールと、アトリビューションされなかったインストールが含まれます。  
 AppsFlyerは、2つのマッピング方式に対応しています。
 
+<div id="half-and-half" />
+
 #### **二分割**
 
 * CVを前半と後半に分けます。
@@ -1172,12 +1232,16 @@ AppsFlyerは、2つのマッピング方式に対応しています。
   * 後半は前半と同じ内容で、AppsFlyerの従来の方法でアトリビューションされたことを明示します。
     * ロジック：前半のCVに対応し、`af_attribution_flag=true`が設定されたCV
 
+<div id="pairing" />
+
 #### **ペア方式**
 
 * CVを2つずつのペアにします。
   * 各CVの直後に、同じエンゲージメント水準を表す別のCVを配置します。後者は、従来の方法でアトリビューションされたことを明示する値です。
   * CVを昇順に並べることで、ユーザーのエンゲージメントの高まりを一貫して表せます。
   * ロジック：各CVの直後に、`af_attribution_flag=true`を設定した同じ内容のCVを配置します。
+
+<div id="how-to-configure-mapping-patterns" />
 
 #### マッピング方式の設定
 
@@ -1191,6 +1255,8 @@ AppsFlyerは、2つのマッピング方式に対応しています。
    * **ペア方式**
 5. 更新されたスキーマのプレビューとカレンダービューを確認します。
 6. スキーマを保存します。
+
+<div id="faq" />
 
 #### **よくある質問**
 

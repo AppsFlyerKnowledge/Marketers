@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **概要：** Nintendo SwitchゲームやアプリをAppsFlyerと連携して、Nintendo Switchキャンペーンのアトリビューションやイベントデータを受け取ります。
 
+<div id="about-nintendo-switch-attribution" />
+
 ## Nintendo Switchのアトリビューションについて
 
 PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと連携し、どのソースやキャンペーンがアプリ起動イベントやアプリ内イベントを促進したかに関するアトリビューションデータやパフォーマンス測定値を受け取ることができます。マーケターは、これらのインサイトを活用してマーケティング活動を測定および最適化できます。
+
+<div id="example-attribution-flow" />
 
 ### アトリビューションフローの例
 
@@ -36,6 +40,8 @@ PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと�
    ランディングページは、ゲームがサポートするさまざまなプラットフォームへのリンクを提供するのに有益です。たとえば、ランディングページにXbox、マイクロソフトストア、およびSteamページへのリンクを含めることができます。
 3. アプリのページ：これは、ユーザーがダウンロードするアプリをホストするNintendo Switch AppページのURLです。
 4. ゲームのインストール：ユーザーがゲームをインストールし、アトリビューションをトリガー、アプリ内イベントとセッションを記録します。
+
+<div id="integration-procedures" />
 
 ## 連携手順
 
@@ -177,6 +183,8 @@ PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと�
 | コストデータ | コスト（広告費）データは、メールによるファイルアップロードを使用して、<Anchor target="_blank" href="/marketers/ja/docs/import-cost-data">広告費用の取り込み</Anchor>で送信する必要があります。 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **参照：**
 >

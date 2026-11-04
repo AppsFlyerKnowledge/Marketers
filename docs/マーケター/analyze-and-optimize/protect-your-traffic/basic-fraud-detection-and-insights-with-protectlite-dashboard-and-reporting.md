@@ -39,6 +39,8 @@ ProtectLITEの<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-da
 
 * ［データ出力（Export Data）］ページとPull APIから、Protect360のインストールレポートとして取得できます。
 
+<div id="dashboard" />
+
 ## ダッシュボード
 
 ProtectLITEダッシュボードを表示するには、AppsFlyerで<strong>［Protect360］</strong>に移動します。
@@ -88,6 +90,8 @@ ProtectLITEダッシュボードを表示するには、AppsFlyerで<strong>［P
 
 「推定削減額」と「不正・無効と判定されたインストール」のKPIには、パーセント値が表示されます。この値は、表示されているKPIを、直前の同じ長さの期間と比較したものです。たとえば、今週と先週、または選択した期間とその直前の同じ日数の期間を比較します。推定削減額がX%増加と表示されている場合、直前の比較対象期間には不正インストールがX%少なかったことを意味します。
 
+<div id="estimated-savings" />
+
 #### 推定削減額
 
 [![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
@@ -100,11 +104,15 @@ ProtectLITEダッシュボードを表示するには、AppsFlyerで<strong>［P
 
 金額の計算方法について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/protect360-anti-fraud-guide#faq">よくある質問</Anchor>を参照してください。
 
+<div id="identified-installs" />
+
 #### 不正・無効と判定されたインストール
 
 [![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
 
 この指標は、ProtectLITEと検証ルールによってリアルタイムで検知・ブロックされたインストール数を示します。
+
+<div id="suspected-overall-fraud-threat" />
 
 #### 推定される不正の全体規模
 
@@ -121,6 +129,8 @@ ProtectLITEダッシュボードを表示するには、AppsFlyerで<strong>［P
 
 <Accordion title="インストール：グラフ">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### 不正件数の推移グラフ
 
 日付フィルターで選択した期間について、ProtectLITEと検証ルールによってブロックされた日別のインストール数を表示します。
@@ -130,6 +140,8 @@ ProtectLITEダッシュボードを表示するには、AppsFlyerで<strong>［P
 <div id="installs-table" />
 
 <Accordion title="インストール：表">
+
+<div id="identified-fraud-breakdown" />
 
 #### 検知された不正の内訳
 
@@ -148,6 +160,8 @@ ProtectLITEダッシュボードを表示するには、AppsFlyerで<strong>［P
 * 列の設定画面で各列の項目をドラッグすると、列の順序を変更できます。
 
 [![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### 「検知された不正の内訳」表の内容
 

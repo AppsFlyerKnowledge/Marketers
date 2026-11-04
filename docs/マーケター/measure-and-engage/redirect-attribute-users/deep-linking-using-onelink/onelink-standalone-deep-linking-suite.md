@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **概要：** OneLink単独利用のディープリンクスイートでは、有料メディアのアトリビューションパッケージを契約せずに、オウンドメディアの導線（メール、Web、QRコード、ソーシャルメディア、ユーザー紹介、SMS／テキストメッセージなどからアプリへの誘導）でディープリンクとリダイレクトを利用できます。
 
+<div id="about-the-onelink-standalone-deep-linking-suite" />
+
 ## OneLink単独利用のディープリンクスイートについて
 
 単独利用のディープリンクスイートは、有料メディアのチャネルやパートナーへのポストバックを伴う連携を必要とせず、**オウンドチャネルで信頼性が高く、規模の拡大にも対応できるディープリンク、リダイレクト、アトリビューション**を利用したいチーム向けの製品です。
@@ -30,6 +32,8 @@ x-zendesk:
 * Standard
 * Advanced
 * Premium
+
+<div id="whats-included" />
 
 ### 利用できる機能
 
@@ -41,7 +45,11 @@ x-zendesk:
 
 プランごとの主な違いは、対応する運用規模、リンク管理機能、ブランドドメイン、リンクの一括作成、Smart Banners、OneLink API、ESP連携、Data Lockerなどの高度な機能を利用できるかどうかです。
 
+<div id="standalone-deep-linking-suite-plans-comparison" />
+
 ## 単独利用のディープリンクスイートのプラン比較
+
+<div id="key-differences" />
 
 ### 主な違い
 
@@ -50,6 +58,8 @@ x-zendesk:
 | **Standard** | オウンドメディアのディープリンクの利用開始 | オウンドメディアの導線に必要な基本的なディープリンク・ディファードディープリンク機能に加え、Smart Scriptとユーザー招待を利用できます。 |
 | **Advanced** | 複数チームでのリンク運用の拡大 | **Standard**のすべての機能に加え、リンクの一括作成、ブランドドメイン、Smart Banners、OneLink API（月間最大10万リクエスト）、UIからのローデータのエクスポートを利用できます。 |
 | **Premium** | オウンドメディアでの高度なディープリンク施策の実施 | **Advanced**のすべての機能に加え、OneLink APIの上限拡大（月間最大750万リクエスト）、ESP連携、Data Lockerを利用できます。 |
+
+<div id="feature-comparison" />
 
 ### 機能比較
 
@@ -65,6 +75,8 @@ x-zendesk:
 | Data Locker | **x** | **x** | ✓ |
 | UIからのローデータのエクスポート | **x** | ✓ | ✓ |
 | カスタマーサクセスマネージャー | **x** | ✓ | ✓ |
+
+<div id="notes" />
 
 > 📘 **注意**
 >

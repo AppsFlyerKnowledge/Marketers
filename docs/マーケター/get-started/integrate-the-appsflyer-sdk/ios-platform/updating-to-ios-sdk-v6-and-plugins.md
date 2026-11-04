@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** 既存のAppsFlyer iOS SDK、または他の開発環境向けの連携用ライブラリを使用した実装を、iOS SDK V6に更新します。
 
+<div id="about-ios-sdk-v6" />
+
 ## iOS SDK V6の概要
 
 この記事では、SDK V6について説明します。
@@ -38,6 +40,8 @@ AppsFlyer iOS SDK V6は、次の機能を提供します。
 * 以前のバージョンから、APIメソッドに大幅な変更が加えられています。 0>
 
 SDK V6の詳細や、AppsFlyer SDKをまだ使用していない新しいアプリへの実装方法は、<Anchor target="_blank" href="/marketers/ja/docs/sdk-integration-overview">マーケター向けiOS SDK実装ガイド</Anchor>を参照してください。
+
+<div id="update-to-ios-sdk-v6" />
 
 ## iOS SDK V6への更新
 
@@ -326,6 +330,8 @@ AppsFlyer iOS SDK V6では、一部のAPI名が変更されています。以下
 <Anchor target="_blank" href="/marketers/ja/docs/measuring-push-notification-re-engagement-campaigns">プッシュ通知の手順</Anchor>に従い、handlePushNotificationDataメソッドを使って、プッシュ通知が実装されていることを確認してください。
 
 </Accordion>
+
+<div id="plugins" />
 
 ## プラグイン
 

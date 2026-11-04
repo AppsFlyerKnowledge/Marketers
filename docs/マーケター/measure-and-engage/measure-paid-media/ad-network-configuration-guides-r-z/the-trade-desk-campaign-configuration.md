@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyerの連携パートナーであるThe Trade Deskは、強化されたモバイル広告ソリューションを使用して、クロスデバイスユーザーのニーズを満たす戦略的でスケーラブルなスマートなキャンペーンを提供しています。The Trade Deskは、クリックベースのモバイルアトリビューションと、ビュースルーモバイルアトリビューション、そしてクリックベースのリターゲティングを提供しており、これらすべてをAppsFlyerで記録することができます。
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## The Trade Desk (TTD) の設定
 
 AppsFlyerでキャンペーンの計測を有効にするには、次の手順に従いご設定ください。
@@ -93,6 +95,8 @@ AppsFlyerがコンバージョンイベントを定義しイベントポスト�
 
 </Accordion>
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > [ステップ 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd) でコンバージョンを TTD でアトリビューションすることを選択した場合は、アトリビューション期間を編集できます：
@@ -101,6 +105,8 @@ AppsFlyerがコンバージョンイベントを定義しイベントポスト�
 > 2. **アトリビューション期間** まで下にスクロールし、右側の編集ボタンをクリックします。
 > 3. **アトリビューションウィンドウの管理**ページで、アトリビューション期間を編集します：
 > 4. **保存**をクリックします。
+
+<div id="integrating-ttd-with-appsflyer" />
 
 ## TTDとAppsFlyerの連携
 
@@ -124,14 +130,20 @@ AppsFlyerがコンバージョンイベントを定義しイベントポスト�
 
 <Accordion title="連携タブ">
 
+<div id="activate-partner" />
+
 #### パートナーの有効化
 
 最初にこの画面を開く際に、連携を設定するには、まず**パートナーの有効化**トグルをオンにする必要があります。TTDで配信している間、トグルはオンのままにしておく必要があります。  
 パートナーの有効化についての詳細は、 <Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>をご覧ください。
 
+<div id="advanced-privacy" />
+
 #### 高プライバシーポストバック
 
 iOS アプリの場合、<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework">高度なプライバシーを有効にする</Anchor>トグルが表示されます。オンにすると、パートナーとのユーザー識別子の共有が制限されます。
+
+<div id="general-settings" />
 
 #### 一般的な設定
 
@@ -145,6 +157,8 @@ The Trade Deskは、一意のネットワークIDを介してAppsFlyerに接続�
 
 The Trade Deskからのビュースルーインストールを計測するには、**ビュースルーアトリビューションを有効にする** トグルをオンにします。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
+<div id="default-postbacks" />
+
 #### デフォルトのポストバック
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -154,9 +168,13 @@ The Trade Deskからのビュースルーインストールを計測するには
 * **このパートナーのみ**：The Trade Deskに成果が紐づくユーザーからのみのイベント向けです。
 * **オーガニックを含むすべてのメディアソース：** ユーザーベース全体をThe Trade Deskにレポートできるようにします。
 
+<div id="note-1" />
+
 > 📘 **注意**
 >
 > すべてのインストールネットワークとして、The Trade Deskは、任意のソースからアプリのすべての新規インストールのポストバックを受信することを好み、すべてのインストールポストバックを The Trade Deskに送信するには、**オーガニックを含むすべてのメディアソース** を選択することをお勧めします。
+
+<div id="in-app-events-settings" />
 
 #### アプリ内イベントの設定
 
@@ -189,6 +207,8 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 計測リンクを生成して保存し、TTD側に入稿することで、特定のキャンペーン、広告セット、または単一の広告（UAおよびリターゲティングキャンペーンの両方）をアトリビューションできます。シングルプラットフォームリンクまたは<Anchor target="_blank" href="/marketers/ja/docs/onelink-guide">OneLink</Anchor>のいずれかを使用できます。
 
+<div id="attribution-link-parameters" />
+
 #### 計測リンクパラメーター
 
 アトリビューションリンクにパラメーターを追加すると、詳細なドリルダウン分析を実行できます。アトリビューションリンクですでに定義されているパラメーターは、それらと新しい値をここで追加することで編集できます。 アトリビューションリンクを保存すると、このタブで設定したすべてのパラメーターが保存されます。
@@ -196,6 +216,8 @@ The Trade Deskからのビュースルーインストールを計測するには
 アトリビューションリンクに追加するパラメーターを選択します。
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### デフォルトのパラメーター
 
@@ -209,6 +231,8 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 計測リンクのパラメータはさらに追加できます。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#attribution-link-tab">計測リンクの設定</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">計測リンクの構造とパラメータ</Anchor>をご覧ください。
 
+<div id="parameters-for-measuring-ctv" />
+
 #### CTV計測のためのパラメータ
 
 以下のパラメータと値を追加することで、AppsFlyerでCTVトラフィックを計測できます。
@@ -217,6 +241,8 @@ The Trade Deskからのビュースルーインストールを計測するには
 | --- | --- | --- |
 | リダイレクト | false |  |
 | af\_xplatform\_vt\_lookback | 1h-72h | 1 - 72時間の間の任意の値を入力できます |
+
+<div id="click-through-attribution" />
 
 #### クリックスルーアトリビューション
 
@@ -231,6 +257,8 @@ The Trade Deskからのビュースルーインストールを計測するには
 <Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">ルックバック期間</Anchor>の詳細をご覧ください。
 
 クリックスルーアトリビューションリンクをコピーしてパートナーに送信し、リードが対応する広告をクリックしたときにアクティブにすることができます。
+
+<div id="view-through-attribution" />
 
 #### ビュースルーアトリビューション
 
@@ -273,6 +301,8 @@ The Trade Deskでは広告収益をサポートしていません。
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
+
+<div id="ad-network-permissions" />
 
 #### **アドネットワークへの権限付与**
 

@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **概要：** WebサイトにSmart Bannersのコードを追加し、訪問者をモバイルアプリのユーザーへ誘導します。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyerのSmart Banners Web SDK v1は、2023年11月8日をもって非推奨となりました。 WebサイトにSmart Bannersを表示するには、v2へのアップグレードが必要です。<Anchor target="_blank" href="/marketers/ja/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">詳細はこちら</Anchor>
+
+<div id="website-code-implementation" />
 
 ## Webサイトへのコード実装
 
@@ -214,6 +218,8 @@ x-zendesk:
 4. <strong>［ファイルを更新］</strong>をクリックします。
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **関連情報**
 >

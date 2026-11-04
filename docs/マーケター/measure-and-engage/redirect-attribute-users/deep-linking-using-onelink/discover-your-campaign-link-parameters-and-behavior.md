@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのキャンペーンリンクに含まれるパラメータを確認し、想定されるユーザー体験とリンクの動作を把握します。
 
+<div id="about-link-discovery" />
+
 ## Link Discoveryについて
 
 Link Discoveryでは、AppsFlyerのキャンペーンリンクに関する情報を確認できます。リンクのパラメータや、そのリンクで想定されるユーザー体験などが表示されます。
+
+<div id="benefits" />
 
 ### メリット
 
@@ -35,6 +39,8 @@ Link Discoveryでは、AppsFlyerのキャンペーンリンクに関する情報
 * キャンペーンでリンクを公開する前に、詳細を確認できます。
 * 想定外の動作の原因を調べられます。
 * アトリビューションパラメータを確認し、管理画面でどの情報を探せばよいかを把握できます。
+
+<div id="information-available-via-link-discovery" />
 
 ### Link Discoveryで確認できる情報
 
@@ -47,12 +53,16 @@ Link Discoveryでは、URLについて以下の情報が表示されます。
 * **機能**：リターゲティング、ディープリンク、ソーシャルメディアプレビュー、ソーシャルメディア向けランディングページなど、リンクで有効になっている機能。
 * **リダイレクト**：デバイス、プラットフォーム、アプリのインストール状況に応じて、ユーザーをどこへ誘導するよう設定されているかの概要。
 
+<div id="using-link-discovery" />
+
 ## Link Discoveryの使用方法
 
 **Link DiscoveryでURLの情報を確認するには**：
 
 1. AppsFlyerのサイドメニューから、［**Engage**］>［**Link Discovery**］を選択します。
 2. URLを入力し、［**確認**］をクリックします。
+
+<div id="specifications-and-limitations" />
 
 ## 仕様と制限事項
 

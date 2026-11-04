@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **概要：** Luna Labsは、プレイアブル広告と動画広告の作成、管理、最適化を一貫して行えるプラットフォームです。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-luna-labs" />
 
 ## Luna Labsの設定
 
@@ -46,18 +50,26 @@ x-zendesk:
 
 AppsFlyerで、［**連携＞パートナー連携＞有効な連携**］タブに移動し、パートナーを検索して設定を変更します。
 
+<div id="integration" />
+
 ## 連携
 
 ［連携］タブで設定します。その他のタブは無効です。
+
+<div id="note" />
 
 > 📘 **注意**
 >
 > Luna Labsは独自の計測リンクを使用しません。広告主のキャンペーンを配信しているアドネットワークからポストバックを受信します。 Luna Labsが受信するのは、自社のクリエイティブに関するポストバックのうち、パラメータと値`af_addpb=1`を含むものだけです。詳しくは、以下の説明を参照してください。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 **初めて設定する場合**は、<strong>［パートナーを有効化］</strong>をオンにすると、［連携］タブのパラメータを設定できます。**パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります**。  
 <Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">パートナーの有効化と無効化</Anchor>の詳細を確認してください。
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 

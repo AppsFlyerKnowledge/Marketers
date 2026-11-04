@@ -27,15 +27,21 @@ x-zendesk:
 ---
 > **概要：** オーガニック検索の詳細なアトリビューションデータを取得して、オーガニックのコンバージョンを最適化できます。<Anchor target="_blank" href="/marketers/ja/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">新しいオーガニック検索の計測方法を確認する</Anchor>。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">新しいオーガニック検索の計測方法</Anchor>の導入を推奨します。
+
+<div id="organic-search-attribution" />
 
 ## オーガニック検索のアトリビューション
 
 オーガニック検索のアトリビューションは、すでにモバイルアプリをインストールしているユーザーのアプリ起動を、オーガニック検索に紐付けて計測できる革新的なソリューションです。
 
 Webのオーガニック検索を経由してアプリを再利用した既存ユーザーを、この機能で計測できます。
+
+<div id="flow" />
 
 #### 処理の流れ
 

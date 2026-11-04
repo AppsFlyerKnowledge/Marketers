@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerから外部へのAPIリクエストに使用するIPアドレスを説明します。
 
+<div id="appsflyer-server-ip-address-ranges" />
+
 ## AppsFlyerサーバーのIPアドレス範囲
 
 記載されているIPアドレスは、AppsFlyerが管理し、自社の用途に使用するものです。このリストは、処理能力や運用上の要件に応じて変更されることがあります。リストの変更頻度をできる限り抑えるよう努めています。
@@ -45,11 +47,15 @@ AppsFlyerのAPIは、広告主やパートナーにアトリビューション�
 * [45.92.116.0/22]
 * [194.28.46.0/23]
 
+<div id="uploading-audiences" />
+
 ### Audiencesのアップロード
 
 ファイアウォールやプロキシサーバーなど、ネットワーク境界の機器を使用している場合は、この[AudiencesのIP許可リスト](https://support.appsflyer.com/hc/article_attachments/16888953497617)に記載されたAppsFlyerのIPアドレスを許可するよう、セキュリティチームに依頼してください。
 
 <Anchor target="_blank" href="/marketers/ja/docs/audiences-guide">Audiences</Anchor>の詳細を確認してください。
+
+<div id="pull-api-and-server-to-server-s2s" />
 
 ### Pull APIとサーバー間（S2S）通信
 

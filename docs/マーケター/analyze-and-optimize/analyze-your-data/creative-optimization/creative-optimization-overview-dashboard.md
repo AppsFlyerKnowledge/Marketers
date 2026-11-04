@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## Creative Optimizationオーバービューダッシュボードについて
 
 <Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide">**Creative Optimization**</Anchor>ダッシュボードでは、すべてのメディアチャネルのすべてのクリエイティブを1か所にまとめることで、クリエイティブのパフォーマンスを測定できます。複数のキャンペーンやチャネルなど、選択したディメンションごとにパフォーマンスを分析し、次のクリエイティブのバッチを計画、選択、制作する前に重要なインサイトを得ることができます。
@@ -43,11 +45,15 @@ x-zendesk:
 * クリエイティブのパフォーマンスを経時的に確認できます。
 * その他多数
 
+<div id="get-started" />
+
 ## まずはじめに
 
 Creative Optimizationをまだ設定していない場合は、<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide#get-started">こちら</Anchor>で設定方法をご覧ください。設定後、Creative Optimizationダッシュボードは<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide#dashboard-updates">1日1回</Anchor>更新されます。
 
 **注意：** コストデータの指標は、AppsFlyer ROI360の契約があるかどうかによって、管理画面での表示方法が異なります。<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-guide#creative-optimization-roi360">詳細はこちら</Anchor>
+
+<div id="charts" />
 
 ## チャート
 
@@ -71,6 +77,8 @@ Creative Optimizationをまだ設定していない場合は、<Anchor target="_
 ## テーブル
 
 表を使用して詳細をドリルダウンします。さまざまなディメンションでのグループ化、表設定のカスタマイズによるディメンションや指標の表への追加、データ並べ替え、表示、比較など、必要な分析情報が得られます。
+
+<div id="zd-table" />
 
 <div id="table" />
 
@@ -116,7 +124,7 @@ Creative Optimizationをまだ設定していない場合は、<Anchor target="_
   * CPM  
     **注意：** パートナー指標は、その横に「パートナー」の表示とともに示されます。
 
-* #### **アプリ内イベント**
+* #### <span id="in-app-events"></span>**アプリ内イベント**
 
   このデータを使用して、アプリ内イベントのパフォーマンスに対する特定のクリエイティブの効果を把握します。各イベントで算出される指標は：
 

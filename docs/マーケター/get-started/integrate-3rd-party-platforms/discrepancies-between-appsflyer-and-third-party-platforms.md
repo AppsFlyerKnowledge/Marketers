@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyerとサードパーティプラットフォームで、アトリビューションに差異が生じる原因を説明します。
 
+<div id="overview" />
+
 ## 概要
 
 メディアソースのデータ共有ポリシーにより、ユーザー単位の<Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">データが、分析・マーケティングなどのサードパーティプラットフォームにすべて共有されるわけではありません</Anchor>。このため、サードパーティプラットフォームに表示されるデータとAppsFlyerのデータでは、アトリビューションに差異が生じることがあります。
@@ -31,9 +33,13 @@ x-zendesk:
 >
 > AppsFlyerの集計データと分析データは、制限なく利用できます。
 
+<div id="postback-restrictions-on-third-party-platforms" />
+
 ## サードパーティプラットフォームへのポストバックの制限
 
 サードパーティプラットフォームへのポストバック送信には、メディアソースによって異なる制限が設けられています。ポストバックは、まったく送信されない場合、計測元の情報を含めずに送信される場合、制限なく送信される場合があります。
+
+<div id="types-of-postback-restrictions" />
 
 #### ポストバックの制限の種類
 
@@ -79,6 +85,8 @@ x-zendesk:
 </Accordion>
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th colspan="6">ポストバックの制限は、以下を含む、AppsFlyerと連携しているすべてのサードパーティプラットフォームに適用されます。</th></tr></thead><tbody><tr><td><span id="airship"></span>Airship</td><td>Amplitude</td><td>Batch</td><td>Braze</td><td>CleverTap</td><td>Cloud</td></tr><tr><td><span id="convertro"></span>Convertro</td><td>deltaDNA</td><td>Eulerian</td><td>GameAnalytics</td><td>IBM UBX</td><td>Insider</td></tr><tr><td><span id="itunes"></span>iTunes</td><td>Kahuna</td><td>Leanplum</td><td>Liquid</td><td>Localytics</td><td>Luna labs</td></tr><tr><td><span id="Medialyzer"></span>Medialyzer</td><td>Mixpanel</td><td>MoEngage</td><td>mParticle</td><td>OneSignal</td><td>Rocketbox</td></tr><tr><td><span id="salesforce"></span>Salesforce</td><td>Marketing</td><td>MobilePush</td><td>Segment</td><td>Spoteffects</td><td>Swrve</td></tr><tr><td><span id="tapcart"></span>Tapcart</td><td>Tealium</td><td>WebEngage</td><td>Winclap Analytics</td><td>Google Analytics 4</td><td> </td></tr></tbody></table>
+
+<div id="examples-of-discrepancies" />
 
 ## データの差異の例
 

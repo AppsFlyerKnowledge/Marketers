@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **At a glance:** ログイン、登録、アプリ内購入など、インストール後に発生するアプリ内イベントを記録し、メディアソースやキャンペーンに紐づけます。
 
+<div id="why-record-in-app-events" />
+
 ## アプリ内イベントを記録する目的
 
 アプリ内イベントを使うと、アプリ内で何が起きているかを把握でき、アプリユーザーの価値や**各メディアソースからの流入の質**を評価できます。アプリ内イベントを記録することで、ROI（投資対効果）やLTV（顧客生涯価値）などの主要業績評価指標（KPI）を計測できます。
 
 ユーザーの登録、チュートリアルの完了、カートへの商品追加、購入などを、詳細情報とともにアプリ内イベントとして記録できます。インストール後の分析を行うには、アプリ内イベントの実装が必要です。
+
+<div id="about-in-app-events" />
 
 ## アプリ内イベントについて
 
@@ -43,9 +47,13 @@ x-zendesk:
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
 
+<div id="tip" />
+
 > 👍 **ヒント**
 >
 > アプリ内イベントについて、さらに詳しく知りたいですか？ <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">AppsFlyer Learning Portalのコース</Anchor>で、短時間で分かりやすく学べます。
+
+<div id="predefined-and-custom-events" />
 
 ### 定義済みイベントとカスタムイベント
 
@@ -55,6 +63,8 @@ x-zendesk:
   * 定義済みの名称を使うと、AppsFlyerのイベントをパートナー側のイベントにスムーズに対応付けられます。
   * AppsFlyerがイベント名やイベントパラメータ名を変更しても、既存の実装との後方互換性が保たれます。
 * **カスタム：** アプリ内の特定の利用シーンに合わせて、独自に定義するイベント名とパラメータです。イベント名やパラメータ名には任意の文字列を使用できますが、カスタムイベントは開発者による保守が必要です。[ヒント](/docs/in-app-events-overview#tips)と[制限事項](/docs/in-app-events-overview#limitations)を参照してください。
+
+<div id="revenue-in-in-app-events" />
 
 ## アプリ内イベントの収益
 
@@ -79,6 +89,8 @@ x-zendesk:
 * 例：1234.56
 * 収益を文字列として送信する場合は、引用符内の値が有効である必要があります。例："1234.56"
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > AppsFlyerは、SDKから`af_revenue`で送信された収益をそのまま表示します。 VAT（付加価値税）やアプリストアの手数料などは、開発者がSDK側で計算して送信する金額に反映しない限り、AppsFlyer側では計算しません。これらを差し引いた収益を送信する場合は、`af_net_revenue`で追加送信してください（[純収益](#net-revenue)を参照）。
@@ -98,6 +110,8 @@ x-zendesk:
 * 通貨は`af_revenue`と同様に、`af_currency`で指定した通貨になります（デフォルトはUSD）。
 * `af_net_revenue`には定義済みのSDK定数がないため、キーを`af_net_revenue`とするカスタムパラメータとして送信する必要があります。
 * 純収益は、<Anchor target="_blank" href="/marketers/ja/docs/my-dashboards#metrics">マイダッシュボード</Anchor>の純収益ベースの指標（純収益［Net revenue］、純収益ベースのROI［Net ROI］・ROAS［Net ROAS］・ARPU［Net ARPU］、純利益［Net profit］）に使用されます。
+
+<div id="note-1" />
 
 > 📘 **注意**
 >
@@ -123,6 +137,8 @@ AppsFlyerは、アプリ内イベントの通貨がアプリ設定の通貨と�
 
 AppsFlyerは、通貨換算に<Anchor target="_blank" href="https://openexchangerates.org/">Open Exchange Rates</Anchor>を使用します。為替レートは1時間ごとに更新されます。通貨換算の際は、その時点で最新の為替レートを使用します。
 
+<div id="currency-conversion" />
+
 #### 通貨換算
 
 <span id="h_01HDBZW9XERK3VN1GS8GHM911W"></span>**例**
@@ -140,6 +156,8 @@ AppsFlyerLib.getInstance().trackEvent(getApplicationContext() , AFInAppEventType
 
 この場合、AppsFlyerは収益をEURからUSDに換算し、その後GBPに換算します。為替レートを€1＝$1.13とします。すると、€200は$226.85になります。次に、AppsFlyerはUSDからGBPに換算します。為替レートを$1＝£0.78とします。すると、$226.85は£176.92になります。
 
+<div id="currency-display" />
+
 #### 通貨の表示
 
 <Anchor target="_blank" href="/marketers/ja/docs/app-settings#localization-currency">通貨はアプリ設定で指定します</Anchor>。アプリ設定で指定した通貨が、ダッシュボードに表示される通貨です。アプリ内イベントをどの通貨で送信しても、ダッシュボードの収益は常にアプリ設定の通貨で表示されます。
@@ -154,6 +172,8 @@ AppsFlyerに3件のアプリ内イベントを送信します。
 2. イベントBの収益は**171**、通貨は**EUR**です。
 3. イベントCの収益は**171**ですが、**通貨は指定されていません**。
 
+<div id="revenue-data-in-the-dashboard" />
+
 #### ダッシュボードの収益データ
 
 ダッシュボードに表示される収益は、アプリ内イベントの通貨からUSDに換算し、さらにアプリ設定の通貨に**換算した値**です。
@@ -165,6 +185,8 @@ AppsFlyerに3件のアプリ内イベントを送信します。
 | A | 1 | 1 | £234 |
 | B | 1 | 1 | £149.4 - EURからUSDに換算し、さらにGBPに換算。 |
 | C | 1 | 1 | £132.9 - 通貨の指定がないため、デフォルトのUSDを使用。 USDからGBPに直接換算。 |
+
+<div id="revenue-data-in-raw-data-reports" />
 
 #### ローデータレポートの収益データ
 
@@ -182,6 +204,8 @@ AppsFlyerに3件のアプリ内イベントを送信します。
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## イベントの送信
 
 AppsFlyerにアプリ内イベントを送信するには、いくつかの方法があります。
@@ -190,6 +214,8 @@ AppsFlyerにアプリ内イベントを送信するには、いくつかの方�
 * <Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile">**サーバー間（S2S）API：**</Anchor>モバイルアプリ外で発生するイベントを、サーバー間（S2S）APIでAppsFlyerに直接送信します。たとえば、Webとモバイルの両方を利用しているユーザーについて、両方で発生したイベントを記録し、AppsFlyerで同一ユーザーに紐づけられます。アプリ内イベントだけでなく、Webサイトやコールセンターで発生するイベント、実店舗での購入なども対象にできます。
 * <Anchor target="_blank" href="/marketers/ja/docs/purchase-and-subscription-validation-overview">**レシート検証**</Anchor>：AppleやGoogleなどの決済プラットフォームが、報告されたアプリ内購入が実際に行われたかを検証する安全な仕組みです。購入の検証は、不正な収益イベントを防止するための主要な手段です。実際の収益を把握し、未完了のアプリ内購入を除外することにも役立ちます。
 * <Anchor target="_blank" href="/marketers/ja/docs/in-app-events-for-hybrid-apps">**ハイブリッドアプリ：**</Anchor>ネイティブ画面とHTMLコンテンツを組み合わせたアプリでも、アプリ内イベントを記録できます。ただし、SDKがイベントを送信できるのはネイティブ側のみのため、開発者はすべてのイベントデータをネイティブコードに渡す必要があります。
+
+<div id="setting-up-in-app-events" />
 
 ## アプリ内イベントの設定
 
@@ -264,6 +290,8 @@ eコマースアプリのマーケターが、人気のある商品カテゴリ�
 
   ローデータレポートは、有料オプション機能です。
 
+<div id="note-2" />
+
 > 📘 **注意**
 >
 > アプリ内イベントのパラメータ値を確認できるのは、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview#アプリ内イベント">アプリ内イベントのローデータレポート</Anchor>のみです。 Overview dashboard、イベントダッシュボード、アクティビティダッシュボードや、集計データレポートには表示されません。
@@ -297,6 +325,8 @@ eコマースアプリのマーケターが、人気のある商品カテゴリ�
 * Meta adsには、イベント名とパラメータに関する制限があります。制限の詳細は<Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/faq#limits">こちら</Anchor>を参照してください。
 
 </Accordion>
+
+<div id="faq" />
 
 ## よくある質問
 
@@ -337,6 +367,8 @@ AppsFlyerは、インストールがアトリビューションされていて�
 2. 成功応答を受信しなかった場合、イベントはキャッシュに保存されます。
 3. 次に成功応答を受信すると、保存されたイベントをサーバーに再送信します。
 4. キャッシュに複数のイベントがある場合は、1件ずつ順番に送信します。
+
+<div id="note-3" />
 
 > 📘 **注意**
 >
@@ -379,6 +411,8 @@ AppsFlyerは、インストールがアトリビューションされていて�
 }
 ```
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > `af_content`の文字列が1,000文字を超えると、AppsFlyerは`fb_content`パラメータを含めずにMetaにイベントを送信する場合があります。このとき`af_content_list`も含まれていないと、Metaは商品を識別するデータを受信できません。商品数の多いイベントでは、`af_content`を1,000文字未満にしてください。
@@ -403,6 +437,8 @@ Metaへの複数の商品情報を含むアプリ内イベントの送信につ�
 
 複数の商品は、<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration">ポストバック</Anchor>内の配列として転送されます。現在、Meta adsとX Adsは、配列パラメータを正しく解析できません。この問題に対応するため、AppsFlyerは、これらのSelf-Reporting Network（SRN）に商品数（`af_quantity`）を配列で送信せず、合計値を送信します。この例では、Meta adsに`af_quantity=4`が送信されます。
 
+<div id="notes" />
+
 > 📘 **注意**
 >
 > * AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/audiences-guide#limitations">Audiences</Anchor>では、イベント属性で配列はサポートされておらず、数値または文字列のみを使用できます。
@@ -421,6 +457,8 @@ AppsFlyerには、アプリ内イベントの重複を排除する仕組みが�
 * イベントの値
 * アプリID
 * AppsFlyer ID
+
+<div id="note-4" />
 
 > 📘 **注意**
 >
@@ -454,6 +492,8 @@ AppsFlyerは、連携の種類とパートナーの要件に基づいて、ユ�
 この方法は、`metaweb_int`、`tiktokweb_int`、`snapweb_int`、`pinterest_int`、`pinterest_int`でサポートされています。
 
 </Accordion>
+
+<div id="see-also" />
 
 ## 関連情報
 

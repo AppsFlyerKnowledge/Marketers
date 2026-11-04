@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるLeanplumは、データに基づく的確な施策を実現するモバイルマーケティングプラットフォームです。メッセージ配信とアプリ内体験を統合し、ユーザーエンゲージメントを高めます。 Leanplumは、メッセージ配信、自動化、アプリ編集、パーソナライズ、A/Bテスト、分析の機能を提供しています。
 
+<div id="important" />
+
 > 🚧 **重要**
 >
 > <Anchor target="_blank" href="/marketers/ja/docs/about-raw-data-identifier-restrictions#メディアソースの制限">一部のメディアソース</Anchor>は、第三者へのデータ共有を制限しています。 そのため、制限対象のイベントのポストバックは、送信設定にかかわらず、このパートナーには送信されません。
+
+<div id="setting-up-leanplum" />
 
 ## Leanplumの設定
 
@@ -59,10 +63,14 @@ Leanplumの設定で使用するのは、<strong>［連携］</strong>タブの�
 
 ［連携］タブは、以下のセクションで構成されています。
 
+<div id="activate-partner" />
+
 ### パートナーを有効化
 
 <strong>初めて設定する場合</strong>は、<strong><em>［パートナーを有効化］</em></strong>をオンにすると、［連携］タブのパラメータを設定できます。パートナーとの連携を利用している間は、このトグルをオンにしておく必要があります。  
 パートナーの有効化について詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">こちら</Anchor>を参照してください。
+
+<div id="general-settings" />
 
 ### 一般設定
 
@@ -80,6 +88,8 @@ LeanplumとAppsFlyerの接続には、固有のアプリIDとクライアント�
 
 どちらも取得できない場合は、ポストバックを送信しません。
 
+<div id="obtaining-the-app-id-and-client-key" />
+
 ### アプリIDとクライアントキーの取得
 
 画面右上の自分の名前をクリックし、**App Settings**を選択します。
@@ -91,6 +101,8 @@ LeanplumとAppsFlyerの接続には、固有のアプリIDとクライアント�
 [![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
 
 ![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+
+<div id="default-postbacks" />
 
 ### デフォルトポストバック
 
@@ -135,6 +147,8 @@ Leanplumでは、計測リンクは利用できません。
 Leanplumでは、権限の設定は利用できません。
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-leanplum" />
 
 ## Leanplumでユーザーのアトリビューションデータを確認する
 

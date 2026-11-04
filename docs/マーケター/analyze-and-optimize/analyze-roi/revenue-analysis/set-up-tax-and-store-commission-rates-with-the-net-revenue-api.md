@@ -34,9 +34,13 @@ ROI360ストア収益は、総収益からストア手数料と税金を自動�
 
 純収益の計算方法は、<Anchor target="_blank" href="/marketers/ja/docs/about-roi360-store-revenue#true-revenue">「純収益」</Anchor>を参照してください。
 
+<div id="note" />
+
 > 📘 **注意**
 >
 > 純収益は、ローデータレポートと、マイダッシュボードの純収益ベースの指標（純収益、純ROI、純ROAS、純ARPU、純利益）に表示されます。
+
+<div id="update-tax-rate-rules" />
 
 ## 税率ルールの更新
 
@@ -69,6 +73,8 @@ ROI360で計測する取引の税金は、デフォルトの税率設定に基�
    * 計算に使用する税金を指定するパラメータと値。以下の表を参照してください。
 3. 開発者に、[税率設定REST API](https://dev.appsflyer.com/hc/reference/post_tax-rates-app-app-id)を使って税率ルールを作成するよう依頼します。 POSTリクエストの本文に、JSONファイルを指定します。[このJSONファイル](https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub)には、対応するすべての国と、各国のデフォルトの税率が含まれています。開発者は、このファイルを必要に応じて編集するか、そのままAPIで使用できます。
 
+<div id="tax-rate-api-parameters" />
+
 ### 税率設定APIのパラメータ
 
 | パラメータ | 必須 | 補足 |
@@ -80,6 +86,8 @@ ROI360で計測する取引の税金は、デフォルトの税率設定に基�
 | `subdivision` | いいえ | <ul><li>一部の国では、州などの行政区画を追加で指定できます。</li><li>[ISO 3166-2の行政区画コード](https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm)に従って処理されます。</li><li>国コードと行政区画コードの両方を含める必要があります。</li><li>例：US-CA</li></ul> |
 | `postal_code` | いいえ | <ul><li>文字、数字、またはその組み合わせからなる文字列。</li><li>例：L4J8E3</li></ul> |
 | `deduction_order` | いいえ | <ul><li>**0**、**1**、**2**のいずれかを指定する列挙値：<ul><li>**0**：総収益から先にストア手数料を差し引き、残額から税金を差し引きます。</li><li>**1**：総収益から先に税金を差し引き、残額からストア手数料を差し引きます。</li><li>**2**：税金とストア手数料の両方を、総収益を基準に差し引きます。</li></ul></li></ul> |
+
+<div id="set-up-store-commission-rates" />
 
 ## ストア手数料率の設定
 
@@ -93,6 +101,8 @@ AppsFlyerは、デフォルトで標準のストア手数料の計算ルール�
 * 適用されるストア手数料率が変わった場合。AppsFlyerは変更を自動で把握できないため、純収益APIで手動更新する必要があります。例：
   * 手数料の優遇条件を満たした時点で、低い手数料率を適用する。
   * 優遇条件を満たさなくなった時点で、デフォルトの手数料計算ルールに戻す。
+
+<div id="update-store-commission-with-the-net-revenue-api" />
 
 ### 純収益APIによるストア手数料の更新
 
