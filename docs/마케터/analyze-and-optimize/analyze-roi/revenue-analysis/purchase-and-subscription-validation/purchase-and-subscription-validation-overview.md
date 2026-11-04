@@ -71,12 +71,12 @@ Use the tables below to determine which solution best fits your needs.
 | --- | --- | --- |
 | **Receipt validation**  <br />Verifies in-app purchases to filter out fraudulent transactions. | ✔ | ✔ |
 | **Automated purchase detection & deduplication**  <br />Automatically detects in-app purchases (IAPs) and subscriptions, including transactions from existing subscribers, and removes duplicates for cleaner reporting. | ✖ | ✔ |
-| **Refund handling**  <br />Detects refunds and attributes them to the original purchase to reflect true revenue. | ✖ | ✔* |
+| **Refund handling**  <br />Detects refunds and attributes them to the original purchase to reflect true revenue. | ✖ | ✔<sup>*</sup> |
 | **Complete IAP measurement**  <br />Handles family sharing and reports the final outcome of pending purchases using App Store confirmation. | ✖ | ✔ |
 | **Full subscription funnel coverage**  <br />Measures renewals, upgrades, and conversions to reflect the full value from your subscriber base. | ✖ | ✔ |
 | **Net revenue calculation**  <br />Calculates both gross and net revenue by deducting store fees and taxes automatically. | ✖ | ✔ |
 
-* Refund handling **for in-app purchases** is available only on the ROI360 Advanced plan.
+<sup>*</sup> Refund handling **for in-app purchases** is available only on the ROI360 Advanced plan.
 
 </Accordion>
 
@@ -85,14 +85,14 @@ Use the tables below to determine which solution best fits your needs.
 | **Event name** | **Receipt validation** | **ROI360 store revenue** |
 | --- | --- | --- |
 | af\_purchase | ✔ | ✔ |
-| af\_purchase\_refund* | ✖ | ✔ |
+| af\_purchase\_refund<sup>*</sup> | ✖ | ✔ |
 | af\_purchase\_pending | ✖ | ✔ |
-| af\_purchase\_canceled* | ✖ | ✔ |
+| af\_purchase\_canceled<sup>*</sup> | ✖ | ✔ |
 | af\_purchase\_free | ✖ | ✔ |
 | af\_purchase\_sandbox\_sdk | ✔ | ✔ |
-| af\_purchase\_sandbox\_s2s* | ✖ | ✔ |
+| af\_purchase\_sandbox\_s2s<sup>*</sup> | ✖ | ✔ |
 
-* Available only on the ROI360 Advanced plan.
+<sup>*</sup> Available only on the ROI360 Advanced plan.
 
 </Accordion>
 

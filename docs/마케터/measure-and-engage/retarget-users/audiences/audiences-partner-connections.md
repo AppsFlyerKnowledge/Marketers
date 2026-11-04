@@ -463,7 +463,8 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 3. **+ 파트너 연결**을 클릭합니다.
 4. 연결 이름을 입력합니다.
 5. **Google Ads를 선택합니다.** 구글 애즈 아이콘이 표시되지 않으면 담당 고객 성공 매니저나 [hello@appsflyer.com](mailto:hello@appsflyer.com) 에 문의하여 오디언스를 활성화하고 구글 애드워즈를 사용할 수 있도록 요청하십시오.
-6. **Google Ads에 로그인**Google 로그인 창/strong>이 열립니다.
+6. **Google Ads에 로그인**  
+   Google 로그인 창/strong>이 열립니다.
 7. Google 로그인 후 Google Ads에서 선택 내용을 확인하십시오.    
    윈도우가 닫힙니다.
 8. 앱스플라이어 플랫폼에서 **계정을 선택합니다.**

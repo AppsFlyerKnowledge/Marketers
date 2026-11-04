@@ -205,7 +205,7 @@ x-zendesk:
 | 페이지 범위에서 가능한 한 빨리 로드되도록 [위에서 선택한 스니펫 코드](#코드-스니펫-선택하기)를 배치하십시오. 헤드 태그의 맨 위 근처에 코드를 배치하면 됩니다. |
 | Google Tag Manager(GTM)를 사용하여 SDK를 연동하는 경우:<ul><li>SDK가 페이지 로드당 한 번 로드되는지 확인합니다.</li><li><Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">GTM 우선순위</Anchor>를 사용하여 페이지가 로드되자마자 SDK가 로드되도록 설정합니다.</li></ul> |
 | 스마트 배너를 **사용하거나** **사용하지 않고** 웹 SDK를 구현할 수 있습니다. 다음 섹션의 관련 지침을 따르십시오. |
-| 연동 필수 요구사항<ul><li>방문 기록</li><li>이벤트 기록</li><li>자세한 정보는 고객 사용자 ID 설정하기 안내를 참고하십시오. CUID가 없는 경우, 대안을 논의하기 위해 CSM에게 연락하십시오.</li></ul><Anchor target="_blank" href="/marketers/ko/docs/test-pba-web-sdk-integration">검사 도구</Anchor>를 사용한 연동 유효성 검증 |
+| 연동 필수 요구사항<ul><li>방문 기록</li><li>이벤트 기록</li><li>자세한 정보는 <mark>고객 사용자 ID 설정하기</mark> 안내를 참고하십시오. CUID가 없는 경우, 대안을 논의하기 위해 CSM에게 연락하십시오.</li></ul><Anchor target="_blank" href="/marketers/ko/docs/test-pba-web-sdk-integration">검사 도구</Anchor>를 사용한 연동 유효성 검증 |
 
 **시작하기 전에**:
 

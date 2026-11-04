@@ -154,7 +154,8 @@ Apple Search Ads는 SRN으로 앱스플라이어와 API를 통해 연동되기 �
 2. **Apple Search Ads 대시보드에서** 마케팅 파트너와 관련된 Apple Search Ads Campaign Group ID 파라미터를 가져옵니다. ID를 찾는 데 도움이 되도록 다음 스크린샷을 가이드로 활용하세요.  ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
 3. **앱스플라이어에서 ASA 마케팅 파트너를 다음과 같이 설정합니다.**
    1. 앱스플라이어의 사이드 메뉴에서 **Collaboration** > **Active integrations**를 선택하세요.
-   2. **Apple Search Ads** ***마케팅 파트너***를 검색합니다. **마케팅 파트너 목록이 표시됩니다.**
+   2. **Apple Search Ads** ***마케팅 파트너***를 검색합니다.  
+      **마케팅 파트너 목록이 표시됩니다.**
    3. 마케팅 파트너를 선택합니다.
    4. **파트너 활성화**를 설정합니다.
    5. 이전 단계에서 가져온 파트너의 **Apple Search Ads Campaign Group ID**를 입력하세요. 숫자만 입력하세요 .

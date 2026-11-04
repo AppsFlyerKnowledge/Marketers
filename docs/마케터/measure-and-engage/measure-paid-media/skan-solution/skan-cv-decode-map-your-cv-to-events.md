@@ -173,7 +173,7 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 
 * 형식: CSV 파일
 * 최대 행 수: 640 + 헤더 행; 총 641개.
-* 머리글 행  여기에 표시되는 대로 모든 열 이름을 정확히 포함해야 합니다. 모범 사례: 첨부된 예제 파일을 템플릿으로 사용합니다. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor>및 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>에 대한 샘플 디코딩 CSV 파일을 참조하세요.
+* 머리글 행  <mark>여기에 표시되는 대로 모든 열 이름을 정확히 포함해야 합니다.</mark> 모범 사례: 첨부된 예제 파일을 템플릿으로 사용합니다. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor>및 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>에 대한 샘플 디코딩 CSV 파일을 참조하세요.
 * 다음 문자를 열의 첫 번째 문자로 사용하지 마세요:`=`,`+`,`-` 및 `@` (편집됨).
 
 ### csv 파일 사양 디코딩
@@ -182,11 +182,11 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 | --- | --- | --- | --- |
 | 전환 값 | 예, 다음과 같은 경우:<ul><li>SKAN 3 이하</li><li>postback\_sequence\_index가 0인 SKAN 4</li></ul> | 정수 값 1–63 | 동일한 미세한 전환 값이 두 번 이상 나열될 수 있습니다. 자세한 설명은 예제를 참조하십시오. |
 | coarse\_conversion\_value | SKAN 4에만 해당 | 문자열:<ul><li>낮음</li><li>중간 규모</li><li>높음</li></ul> | 동일한 대략적인 변환 값이 두 번 이상 나열될 수 있습니다. |
-| event\_name | 예 | 문자열 | 인앱 이벤트. 앱스플라이어에 이미 존재하는 이벤트일 필요는 없습니다.<br /><br />참고! 인앱 이벤트 이름은 대소문자를 구분합니다.<br /><br />모범 사례: 수익 af\_skad\_revenue의 이벤트 이름입니다. |
+| event\_name | 예 | 문자열 | 인앱 이벤트. 앱스플라이어에 이미 존재하는 이벤트일 필요는 없습니다.<br /><br />참고! 인앱 이벤트 이름은 <mark>대소문자를 구분합니다.</mark><br /><br />모범 사례: 수익 af\_skad\_revenue의 이벤트 이름입니다. |
 | event\_value | 아니요 | 문자열 | 광고주가 시스템에서 디코딩할 데이터를 포함하는 개발자가 설정한 문자열입니다. 일반적으로 JSON 형식입니다. |
 | min\_revenue | 아니요 | 정수 또는 부동 소수점 | <ul><li>수익을 전환 가치와 연결하지 않으려면 min\_revenue 및 max\_revenue를 비워 두세요.</li><li>min\_revenue에 설정된 값은 포함되지 않습니다. 0보다 큼을 의미합니다. 0.0001과 유사</li><li>max\_value에 설정된 값은 포함됩니다.</li><li>예시: min\_revenue이 0이고 max\_revenue이 4이면 범위가 0.0001-4임을 의미합니다</li></ul>**참고!** Excel을 사용하여 파일을 생성하는 경우 저장하기 전에 열 형식을 통화가 아닌 쉼표로 변경하여 Excel에서 CSV 파일에 $ 기호가 포함되지 않도록 합니다. |
 | max\_revenue | 아니요 |  | min\_revenue 채우는 경우: max\_revenue은 0보다 큰 값을 가져야 합니다.<br /><br />자세한 내용은 min\_revenue 참조하십시오. |
-| event\_revenue\_usd | 아니요 |  | 2021년 6월 7일부터 더 이상 사용되지 않습니다. min\_revenue 및 max\_revenue 사용 |
+| ~~event\_revenue\_usd~~ | 아니요 |  | 2021년 6월 7일부터 더 이상 사용되지 않습니다. min\_revenue 및 max\_revenue 사용 |
 | event\_counter | 예 | 정수 | <ul><li>디코딩 시 이벤트가 중복되는 횟수입니다. 일반적으로 사용자가 지정된 작업을 수행한 횟수를 나타냅니다.</li><li>최소값 1.</li></ul>예시: 사용자가 지정된 이벤트를 5번 수행한 경우 5개의 이벤트가 생성됩니다.<br /><br />고려 사항: 수익을 보내는 경우 보고된 총 USD 금액에 event\_counter의 값을 곱합니다. 즉, min\_revenue = 0, max\_revenue = 3, event\_counter = 4인 경우 총 수익은 1.5 X 4 = 6으로 보고됩니다.<br /><br />예제를 참조하십시오. |
 | hours\_from\_install | 예 | 정수 | <ul><li>설치 후 경과 시간</li><li>최소값: 1</li><li>최대값: 1512(63일)</li><li>지정된 conversion\_value의 모든 행에 대한 값은 동일해야 합니다. 즉, 서로 다른 변환 값에 대해 다른 값이 허용됩니다.</li></ul>앱스플라이어는 이를 사용하여 다음과 같이 설치 날짜를 도출하고 설정합니다.<ul><li>포스트백이 SKAN V4인 경우 설치 날짜 공식은 다음과 같습니다. 설치 날짜 = 포스트백 도착 시간 - [누적 윈도우 길이] - [평균 포스트백 지연].<ul><li>포스트백 1: 설치 날짜 = 포스트백 도착 시간 - 48시간 - 36시간</li></ul></li><li>포스트백이 SKAN V3인 경우 설치 날짜 공식은 다음과 같습니다. 설치 날짜 = 포스트백 도착 시간 - 36시간 - [평균 최종 활성 범위].<ul><li>기본값 [평균 최종 활성 범위]는 12시간입니다.</li><li>전환 값이 0인 경우 평균 최종 활성 범위는 0으로 설정됩니다.</li></ul></li></ul> |
 | postback\_sequence\_index | 예, 하지만 SKAN 4에만 해당 | 정수<ul><li>0</li><li>1</li><li>2</li></ul> | 정확한 값의 경우 0의 값만 받을 수 있습니다. |

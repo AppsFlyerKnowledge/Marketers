@@ -54,7 +54,7 @@ Google Analytics has a powerful tool to create user-level segmentation called cu
 1. Select your app from the GA menu
 2. Select ***Admin*** at the top bar on GA dashboard
 3. On the ***PROPERTY*** column select ***Custom Definition***
-4. Select ***Custom Dimensions***
+4. Select ***Custom Dimensions***  
    ![Custom Dimensions option in the Google Analytics Admin panel](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
 5. Create a new dimension. Call it **AppsFlyer Media Source** and make sure you select ***User*** scope. This ensures the data is saved over multiple sessions. ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 

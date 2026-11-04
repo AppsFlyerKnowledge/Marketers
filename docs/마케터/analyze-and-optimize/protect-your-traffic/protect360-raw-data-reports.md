@@ -325,7 +325,7 @@ Protect360 로데이터에는 리타겟팅 캠페인에서 발생한 사기성 �
 
 Protect360 리타겟팅 로데이터는 다음과 같이 실시간 차단 및 사후 어트리뷰션에 식별된 프로드를 위해 사용할 수 있습니다.
 
-<table><thead><tr><th>리포트 </th><th>데이터 내보내기</th><th>Pull API</th><th>데이터 락커</th></tr></thead><tbody><tr><td>인스톨</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>사후 어트리뷰션 인스톨</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* 리인게이지먼트 데이터는 사용할 수 없습니다</span><span><span><br/></span> </span> </td></tr></tbody></table>
+<table><thead><tr><th>리포트 </th><th>데이터 내보내기</th><th>Pull API</th><th>데이터 락커</th></tr></thead><tbody><tr><td>인스톨</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>사후 어트리뷰션 인스톨</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* 리인게이지먼트 데이터는 사용할 수 없습니다</span><span><span></span></span><br/> </td></tr></tbody></table>
 
 <div id="hijacked-installs-attribution-correction" />
 

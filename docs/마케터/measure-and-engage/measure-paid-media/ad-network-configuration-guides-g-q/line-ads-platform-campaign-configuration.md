@@ -89,7 +89,7 @@ LINE 광고 플랫폼은 고유한 LINE\_Ad\_account\_id 및 LINE\_Ad\_app\_ID�
 > 📄 **예시**
 >
 > ```http
-> https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
+> https://app.appsflyer.com/id123456789?pid=example_int;...<mark>line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&</mark>...;redirect=false
 > ```
 
 <div id="default-postbacks" />

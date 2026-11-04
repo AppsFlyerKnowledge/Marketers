@@ -311,11 +311,11 @@ x-zendesk:
        >
        > 예를 들어, 과일 종류의 **deep\_link\_value**가 선택되었고, 개발자가 그 값을 동적으로 설정했습니다. 이렇게 하면 개발팀의 추가 작업 없이도 마케터가 모든 과일을 입력할 수 있습니다.
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=apples...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=bananas...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=peaches...`
 
 2. 개발자가 앱이 선택한 파라미터 및 값에 따라 작동하는 것을 확인하면, 링크 설정 페이지의 **딥링킹 및 리디렉션** 섹션에서, 개발자와 결정한 대로 **딥 링크 값**을 입력합니다.
 3. [선택 사항] 딥링킹에 하나 이상의 인앱 경험이 필요한 경우(예: 사용자를 상품으로 연결하고 별도로 할인을 제공하려는 경우) 딥링크 데이터 페이로드에 (파라미터 deep\_link\_sub1을 사용하는) **추가 딥링크 값**을 추가할 수 있습니다. **추가 파라미터** 섹션에서 딥링크 파라미터(deep\_link\_sub2-10)를 추가할 수 있습니다.

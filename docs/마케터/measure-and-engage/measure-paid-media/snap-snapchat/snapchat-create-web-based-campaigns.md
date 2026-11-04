@@ -303,7 +303,7 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 1. 캠페인의 원링크 어트리뷰션 링크에 대한 템플릿을 설정합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template#원링크-템플릿-만들기">원링크 템플릿을 만드는 방법</Anchor>을 참조하세요.
    * 크로스 플랫폼 어트리뷰션을 위해 OneLink 템플릿을 활성화하려면 여기를 참조하세요. 자세한 내용은 다음을 참조하십시오. <Anchor target="_blank" href="/marketers/ko/docs/set-up-cross-platform-links-for-multi-device-campaigns#step-1-create-or-edit-a%C2%A0onelink-template%C2%A0for-crossplatform-attribution">크로스 플랫폼 어트리뷰션용 OneLink 템플릿 만들기</Anchor>.
 2. 모든 관련 URL 파라미터가 수신 URL에 추가되었는지 확인합니다. 수신 URL에 추가된 매개변수를 검토하려면 Meta 광고 관리자를 열고 도착 URL을 만들 때 설정한 URL 매개변수를 검토하세요. 자세한 내용은 [도착 URL 설정](#2-set-destination-url)을 참고하세요.
-3. 각 입력 매개 변수에 대해 매핑될 출력 매개 변수를 결정합니다. 예를 들어, 입력 매개 변수 `af_site_id``af_site_id` 들어오는 URL의 매개 변수는 다음과 매핑됩니다.  `af_site_id``af_site_id`이(가) 포함된 URL이 전송됩니다.
+3. 각 입력 매개 변수에 대해 매핑될 출력 매개 변수를 결정합니다. 예를 들어, 입력 매개 변수 `af_site_id` `af_site_id` 들어오는 URL의 매개 변수는 다음과 매핑됩니다.  `af_site_id` `af_site_id`이(가) 포함된 URL이 전송됩니다.
 4. 비워 둘 수 없는 필수 발신 파라미터의 기본값을 결정합니다.
 5. 개발자에게 다음 정보를 보냅니다.
    * 수신-발신 파라미터 매핑입니다. 개발자는 수신-발신 파라미터 매핑을 기반으로 발신 직접 URL을 생성하는 스크립트를 만듭니다.

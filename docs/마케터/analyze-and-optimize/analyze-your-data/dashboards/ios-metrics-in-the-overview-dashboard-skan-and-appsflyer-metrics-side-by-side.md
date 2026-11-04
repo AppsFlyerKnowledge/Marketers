@@ -34,7 +34,7 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 
 두 프레임워크에서 제공하는 데이터를 사용하여 캠페인 성과를 나란히 볼 수 있습니다. 각 프레임워크의 지표를 비교하여 실제 캠페인 성과를 가장 잘 나타내는 지표를 결정할 수 있습니다.
 
-대시보드에 SKAN 지표가 표시되지 않으면 [테이블 설정](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table)을 업데이트해야 합니다.
+<mark>대시보드에 SKAN 지표가 표시되지 않으면 [테이블 설정](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table)을 업데이트해야 합니다.</mark>
 
 나란히 보기에서는 캠페인 지표에 대한 통찰력을 제공합니다. 이것은 다음에 관하여 캠페인 성과 지표를 평가하는 데 사용합니다.
 

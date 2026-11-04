@@ -77,8 +77,8 @@ x-zendesk:
 | 포함할 정보 | <ul><li>[미디어 소스](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[캠페인](#c)</li><li>[사이트 ID \/ 하위 사이트 ID](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | <ul><li>[미디어 소스](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[캠페인](#c)</li><li>[사이트 ID \/ 하위 사이트 ID](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> |
 | 기본 URL | `{subdomain}`.onelink.me | app.appsflyer.com |
 | 고유 식별자 | 템플릿 ID | app\_id |
-| URL 구조 | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
-| 예시 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
+| URL 구조 | `https://{subdomain}.onelink.me/`<br />`{templateid}?pid={media_source}`<br />`&af_siteid={ApplicationID}`<br />`&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
+| 예시 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int`<br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`<br />`c=GreatCampaign&af_siteid=A1b1` |
 
 <div id="important" />
 

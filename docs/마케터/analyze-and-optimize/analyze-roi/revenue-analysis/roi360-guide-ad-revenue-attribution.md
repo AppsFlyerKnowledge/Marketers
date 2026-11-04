@@ -84,7 +84,8 @@ x-zendesk:
 
 1. 앱스플라이어의 사이드 메뉴에서 설정 > **수익 설정** > 광고 수익을 선택합니다.
 2. 광고 수익 연동에서 + 광고 수익 연동 추가를 클릭합니다.
-3. 매출 파트너 추가를 선택하고 다음을 클릭합니다. **[![ad revenue 3.6(2).png](https://support.appsflyer.com/hc/article_attachments/23135465810961)](https://support.appsflyer.com/hc/article_attachments/23135465810961)**
+3. 매출 파트너 추가를 선택하고 다음을 클릭합니다.  
+   **[![ad revenue 3.6(2).png](https://support.appsflyer.com/hc/article_attachments/23135465810961)](https://support.appsflyer.com/hc/article_attachments/23135465810961)**
 4. 받으려는 광고 수익 데이터 유형을 선택합니다. **참고**: 일러두기: 일부 광고 네트워크는 아래에 나열된 모든 옵션을 제공하지는 않습니다.
    * 어트리뷰션 수익. 유저 인입 소스에 기반한 수익을 의미합니다. 어트리뷰트 수익 리포트는 다음 수준일 수 있습니다.
      * S2S API를 통한 [집약형 수준](/docs/roi360-guide-ad-revenue-attribution#aggregate-granularity-using-app-open-or-inapp-events).

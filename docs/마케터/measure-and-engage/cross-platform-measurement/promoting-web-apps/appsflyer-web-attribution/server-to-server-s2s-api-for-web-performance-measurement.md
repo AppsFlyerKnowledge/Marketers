@@ -296,15 +296,18 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 
 Web SDK와 Segment는 하나가 다른 하나로 데이터를 전달하는 구조가 아니라, 앱스플라이어로 들어가는 서로 분리된 두 개의 병렬 경로입니다. Web SDK는 어트리뷰션 파라미터를 포함하는 방문을 계속 전송하고, Segment는 SDK가 없는 속성의 이벤트를 전송합니다. 두 경로는 서로를 알지 못하며, 앱스플라이어에서 만납니다. 앱스플라이어는 양쪽에서 전송한 식별자를 사용해 방문을 해당 이벤트와 연결합니다.
 
-Web SDK - 방문 전송
-
-Segment - 이벤트 전송
-
-S2S API
-
-다음으로 결합: `appsflyer_id` 또는 `customer_user_id`
-
-앱스플라이어 - 방문 + 이벤트, 연결됨
+```mermaid
+flowchart LR
+  sdk["Web SDK - 방문 전송"] --> join["다음으로 결합: appsflyer_id 또는 customer_user_id"]
+  seg["Segment - 이벤트 전송"] --> s2s["S2S API"] --> join
+  join --> af["앱스플라이어 - 방문 + 이벤트, 연결됨"]
+  classDef src fill:#e8f1fb,stroke:#7ea6d8,color:#1f3b5c
+  classDef mid fill:#ececec,stroke:#c8c8c8,color:#333333
+  classDef dst fill:#d6f5dd,stroke:#5cb874,color:#14532d
+  class sdk,seg,s2s src
+  class join mid
+  class af dst
+```
 
 Web SDK와 Segment는 앱스플라이어로 들어가는 두 개의 병렬 경로이며, 공통 식별자로 연결됩니다.
 

@@ -129,7 +129,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 페이로드 파라미터는 사용자 식별자 및 이벤트 파라미터로 구분됩니다.
 
-* 유저 ID: 최소한 하나 이상의 사용자 ID 파라미터를 전송해야 합니다.
+* 유저 ID: <mark>최소한 하나 이상의 사용자 ID 파라미터를 전송해야 합니다.</mark>
 * 이벤트: 필수 파라미터와 필요에 따라 선택적 파라미터를 전송하세요.
 
 <div id="user-identifier-parameters-send-at-least-one-parameter" />
@@ -153,7 +153,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 | <span id="timestamp"></span>타임 스탬프 | 아니오 | 이벤트 발생 시간(밀리초 단위). 13자리 <Anchor target="_blank" href="https://www.unixtimestamp.com/">Unix 타임스탬프</Anchor> 형식으로 보내세요.<ul><li>타임스탬프를 보내지 않을 경우 서버의 시간을 이용해 시간이 설정됩니다.</li><li>**지연 도착 이벤트는 현재 서버 시간으로 타임스탬프가 설정됩니다.** 지연된 도착이란 이벤트 발생 다음 날 UTC 자정 이후에 도착한 경우를 의미합니다. 예를 들어, 월요일에 발생한 이벤트는 화요일 UTC 자정 전에 처리되어야 **합니다**.</li><li>현재 서버 시간에 비해 미래의 타임스탬프가 있는 이벤트는 서버 시간으로 타임스탬프가 설정됩니다.</li><li>형식: Int</li><li>예: `"timestamp" : 1584835200123`</li><li>로 데이터 필드 채우기: `event_time`</li></ul> |
 | <span id="eventvalue"></span>eventValue | 아니오 | 이벤트를 설명하는 이벤트 파라미터의 집합입니다. 제품 SKU, 개별 항목 가격과 같은 리치 인앱 이벤트 전송에 이 파라미터를 사용하세요.<ul><li>**수익 관련 중요 안내!** 이 파라미터를 수익 정보로 채우세요. 그리고 *eventRevenue*와 *eventRevenueCurrency*도 함께 입력해야 합니다.</li></ul><ul><li>형식: JSON</li><li>예시: 예: 블루 색상의 SKU ABC123, 단위 가격 $3.99일 때, eventValue를 다음과 같이 설정하세요:<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>제한사항: 1000자입니다. 이 값을 초과하지 마세요. 초과하는 경우 내용이 잘릴 수 있습니다.</li><li>로데이터 필드에 적용됩니다: `event_value`</li></ul> |
 | <span id="eventrevenuecurrency"></span>eventRevenueCurrency | 아니오 | 수익 이벤트의 통화 코드는 3자리 <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> 통화 코드를 사용합니다.<ul><li>기본 설정: USD</li><li>형식: 문자열</li><li>예:  `"eventRevenueCurrency" : "EUR"`</li><li>로 데이터 필드 채우기: `event_revenue_currency`</li></ul> |
-| <span id="eventrevenue"></span>이벤트 수익 | 아니오 | 이벤트에 할당된 수익(금액).<br /><br />일러두기! 수익을 *eventValue*에 보고할 때는 *eventRevenue*에도 보고하고, eventRevenueCurrency도 함께 기입해야 합니다.<ul><li>음수 값도 입력 가능합니다. 예를 들어 환불 시와 같은 경우를 의미합니다.</li><li>형식: Float</li><li>예시 값들: `1``1.2``1234.20``-1234.20`</li><li>로 데이터 필드 채우기: `event_revenue`</li></ul> |
+| <span id="eventrevenue"></span>이벤트 수익 | 아니오 | 이벤트에 할당된 수익(금액).<br /><br />일러두기! 수익을 *eventValue*에 보고할 때는 *eventRevenue*에도 보고하고, eventRevenueCurrency도 함께 기입해야 합니다.<ul><li>음수 값도 입력 가능합니다. 예를 들어 환불 시와 같은 경우를 의미합니다.</li><li>형식: Float</li><li>예시 값들: `1` `1.2` `1234.20` `-1234.20`</li><li>로 데이터 필드 채우기: `event_revenue`</li></ul> |
 | <span id="eventcategory"></span>eventCategory | 아니오 | 이 파라미터는 더 이상 사용되지 않으며, 앞으로 시스템에서 제거될 예정입니다. 대신에 eventValue를 사용해주세요. |
 | <span id="eventlabel"></span>eventLabel | 아니오 | 이 파라미터는 더 이상 사용되지 않으며, 앞으로 시스템에서 제거될 예정입니다. 대신에 eventValue를 사용해주세요. |
 | <span id="referrer"></span>리퍼러 | 아니오 | HTTP 리퍼러<ul><li>형식: 문자열</li><li>예시: `"referrer" : "https://www.google.com/"`</li><li>로데이터 필드에 적용됩니다: `http_referrer`</li></ul> |

@@ -174,7 +174,7 @@ x-zendesk:
 1. **프로젝트 ID를 얻으려면**:
    1. FCM <Anchor target="_blank" href="https://console.firebase.google.com/">콘솔로 이동합니다.</Anchor>
    2. 프로젝트를 선택하세요.
-   3. **프로젝트 개요** > **프로젝트 설정으로 이동합니다.**
+   3. **프로젝트 개요** > **프로젝트 설정으로 이동합니다.**  
 
       ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
    4. 프로젝트 ID를 복사하세요. 이는 나중에 필요합니다.
