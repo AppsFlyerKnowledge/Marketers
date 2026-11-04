@@ -87,7 +87,7 @@ AppsFlyer支持专用于网页广告的Meta Ads对接（`metaweb_int`），通�
    > <Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">在您与该渠道合作期间，请确保该开关总是处于打开（即启用）状态。</Anchor>
 
 5. 填写**像素 ID**字段。要从 Meta Ads Manager 中检索您的像素 ​​ID：
-   1. 在<Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads manager</Anchor>侧边栏菜单中，向下滚动到**All tools**> **Events Manager**。
+   1. <span class="af-ol-a"></span>在<Anchor target="_blank" href="https://www.facebook.com/ads/manager">Ads manager</Anchor>侧边栏菜单中，向下滚动到**All tools**> **Events Manager**。
 
       <div id="note-2" />
 

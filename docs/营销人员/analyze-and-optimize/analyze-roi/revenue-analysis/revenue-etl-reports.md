@@ -61,7 +61,7 @@ x-zendesk:
 
 2. <span id="data-flow-2"></span><span id="data-flow-1"></span><span id="data-flow"></span><span id="the-report-data-flow"></span>AppsFlyer的ROI360广告收入报告功能会完成下列数据处理工作：
 
-   1. 数据规范化
+   1. <span class="af-ol-a"></span>数据规范化
    2. 将收入归因到带来激活的渠道，并进行数据扩充。
    3. 生成广告收入事件
    4. 将事件汇总到设备级别
@@ -143,7 +143,7 @@ bucket
 
 2. AppsFlyer的ROI360广告收入报告功能会完成下列数据处理工作：
 
-   1. 数据规范化
+   1. <span class="af-ol-a"></span>数据规范化
    2. 将收入归因到带来激活的渠道，并进行数据扩充。
    3. 生成广告收入事件
    4. 将事件汇总到设备级别
@@ -238,7 +238,7 @@ bucket
 
 
 2. AppsFlyer的ROI360广告收入报告功能会完成下列数据处理工作：
-   1. 数据规范化
+   1. <span class="af-ol-a"></span>数据规范化
    2. 将收入归因到带来激活的渠道，并进行数据扩充。
 3. 数据传输
 

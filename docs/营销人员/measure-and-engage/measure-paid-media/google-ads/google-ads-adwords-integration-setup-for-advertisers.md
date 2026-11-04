@@ -132,7 +132,7 @@ x-zendesk:
    > 重装激活的转化数据在Google Ads控制面板上**记录为session\_start** ，而AppsFlyer则会对其归因并在面板上将其记录为再归因。
 
 10. 配置**再互动归因**：
-    1. <Anchor target="_blank" href="/marketers/zh/docs/app-settings#reengagement-attribution">在应用配置页面启用再营销</Anchor>。
+    1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/zh/docs/app-settings#reengagement-attribution">在应用配置页面启用再营销</Anchor>。
     2. 在Google Ads的对接设置中启用再互动归因
     3. 设置**再互动点击回溯窗口期**。用户点击广告后在该窗口期内打开应用时，AF会将其记录为再互动。选择归因窗口期的单位（小时或天），并将滑块滑动到所需值。
     4. 启用**浏览型再互动归因**。  

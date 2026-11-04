@@ -135,7 +135,7 @@ x-zendesk:
 
 1. 创建或找到**服务账号**：
 
-   1. 在Google Cloud Platform中，前往<strong>Service accounts（服务账号）</strong>部分，点击 **“Create Service Account（创建服务账号）”**。
+   1. <span class="af-ol-a"></span>在Google Cloud Platform中，前往<strong>Service accounts（服务账号）</strong>部分，点击 **“Create Service Account（创建服务账号）”**。
    2. 填写服务账号的详细信息。
    3. 复制电子邮件地址。
    4. 点击**Create and continue（创建并继续）**，进入下一步。
@@ -145,7 +145,7 @@ x-zendesk:
       [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. 下载服务账号私钥：
 
-   1. 在Google Cloud Platform中，进入<strong>Service accounts（服务账号）</strong>部分，从列表中找到你刚创建的服务账号，点击 **“更多操作”** 图标。
+   1. <span class="af-ol-a"></span>在Google Cloud Platform中，进入<strong>Service accounts（服务账号）</strong>部分，从列表中找到你刚创建的服务账号，点击 **“更多操作”** 图标。
    2. 点击 **“管理私钥（Manage keys）”**。
    3. 点击 **添加私钥** > **创建新私钥**。
 

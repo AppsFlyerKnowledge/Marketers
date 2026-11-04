@@ -437,7 +437,7 @@ AppsFlyer将TikTok Smart Plus广告系列数据映射如下：
 #### 推荐的解决方案
 
 1. 您可以暂时关闭AppsFlyer中的AAP设置，仅允许TikTok接收自然回传用于验证目的。（禁用 AAP 可以使用户级数据对广告商和合作伙伴可用。详情请见：AAP关闭时
-   1. 转到 <Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">应用级设置</Anchor> 并禁用 AAP。
+   1. <span class="af-ol-a"></span>转到 <Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">应用级设置</Anchor> 并禁用 AAP。
    2. 导航到 [TikTok 的合作伙伴集成配置](#高级隐私保护) 并在那里也禁用 AAP。
 2. 在[回调部分](#默认回传)中，将回调方法设置为：所有媒体渠道，包括自然流量：
 3. 等待TikTok至少接收一个安装或应用内事件回调。一旦收到，您的应用程序应在TikTok仪表板上自动更新为“已验证”。
