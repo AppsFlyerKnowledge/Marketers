@@ -48,6 +48,14 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 
 [![In_appEvents__Healthcare__en-us.png](https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png)](https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png)
 
+<div id="purchase-af_purchase" />
+
+<div id="add-to-cart-af_add_to_cart" />
+
+<div id="complete-registration-af_complete_registration" />
+
+<div id="login-af_login" />
+
 <div id="recommended-structures-for-predefined-events" />
 
 ## Structures recommandées pour les événements prédéfinis
@@ -331,6 +339,8 @@ AppsFlyer.sendEvent ("af_purchase", purchaseEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="topup-success-top_up_success" />
 
 <div id="recommended-structures-for-custom-events" />
 

@@ -284,6 +284,8 @@ Pour plus d'informations, consultez notre guide sur le <Anchor target="_blank" h
 
 </Accordion>
 
+<div id="note-4" />
+
 <div id="testing-retargeting-using-attribution-links" />
 
 ## Tester le retargeting à l'aide de liens d'attribution
@@ -350,6 +352,10 @@ Vous pouvez maintenant procéder au test de réattribution et de réengagement.
 1. Désinstallez l'application de l'appareil. Si vous venez d'installer l'application, attendez quelques minutes.
 2. Copiez le [lien d'attribution](/docs/testing-the-sdk-integration-for-marketers#prerequisites-to-run-retargeting-tests) que vous avez créé précédemment, soit le lien d'attribution spécifique à l'application, soit le lien long personnalisé du modèle OneLink, envoyez-le à l'appareil de test, puis cliquez sur le lien.
 
+   <div id="tip" />
+
+   <div id="note-3" />
+
    > 📘 **Note**
    >
    > Sous iOS, utilisez iMessage ou email pour envoyer le lien à l'appareil. Ne collez pas le lien dans l'application Notes iOS et ne cliquez pas sur le lien. Cette action peut entraîner la rupture du lien.
@@ -365,6 +371,8 @@ Vous pouvez maintenant procéder au test de réattribution et de réengagement.
    Vous devriez voir l'installation attribuée à la source média et à la campagne. Attendez jusqu'à 30 minutes pour que l'installation reciblée apparaisse dans le tableau de bord.
 
    [altTesting\_SDK\_Reattributionalt](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+
+<div id="tip-1" />
 
 > 👍 **Conseil**
 >
@@ -425,6 +433,10 @@ Nous vous recommandons de commencer par tester une installation organique.
 2. Lancez l'application.
 
 Le tableau de bord de l'application affiche une nouvelle installation organique. Prévoyez jusqu'à 30 minutes pour que l'installation apparaisse.
+
+<div id="traits-and-limitations" />
+
+<div id="note-5" />
 
 <div id="testing-ctv" />
 

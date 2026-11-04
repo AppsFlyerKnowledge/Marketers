@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** Comprendre la différence entre les URL courtes et longues de OneLink, et comment créer des URL longues en dehors d'AppsFlyer.
 
+<div id="advantages-of-a-short-onelink-url-compared-to-a-long-url" />
+
 <div id="about-onelink-links" />
 
 ## URL longs de OneLink

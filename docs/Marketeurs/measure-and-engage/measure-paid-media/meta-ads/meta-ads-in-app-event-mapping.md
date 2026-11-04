@@ -31,6 +31,10 @@ Les annonceurs mappent leurs événements in-app, SDK ou Server-to-server, aux �
 
 Les annonceurs pourront ainsi utiliser les capacités d'optimisation avancées de Meta, et créer des segments d'audience personnalisés ou Lookalike.
 
+<div id="availability-limitations" />
+
+<div id="mapping-ad-revenue-data-for-campaign-optimization" />
+
 <div id="predefined-event-mapping" />
 
 ### Mappage des événements prédéfinis
@@ -73,6 +77,16 @@ Veuillez noter que vous pouvez <Anchor target="_blank" href="https://www.faceboo
 ### Mappage automatique des paramètres avec l'événement CUSTOM
 
 Grâce à l'intégration étendue d'AppsFlyer avec Meta, la majorité des paramètres d'événement du SDK de base AppsFlyer sont automatiquement mappés sur les paramètres prédéfinis de Meta. Par exemple, le paramètre **af\_revenue** est converti en paramètre **valueToSum** dans Meta, ce qui vous permet d'envoyer un revenu par événement qui sera mesuré et optimisé pour Meta.
+
+<div id="important" />
+
+<div id="example-unified-format-compatible-with-meta-and-tiktok" />
+
+<div id="note-1" />
+
+<div id="send-complex-in-app-events-to-meta-ads" />
+
+<div id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter" />
 
 > 📘 **Note**
 >
@@ -127,6 +141,8 @@ Le tableau suivant répertorie les paramètres d'événement AppsFlyer qui, lors
 | af\_travel\_end | fb\_travel\_end |
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
+
+<div id="important-1" />
 
 <div id="event-and-parameter-limitations" />
 

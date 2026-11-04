@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="tv-screens" />
+
 <div id="the-appsflyer-cross-platform-solution" />
 
 ## La solution multiplateforme AppsFlyer
@@ -36,6 +38,8 @@ Dans le paysage numérique d'aujourd'hui, les professionnels de la croissance do
 AppsFlyer offre une solution multiplateforme étendue qui complète les outils d'attribution mobiles conventionnels. Il aide les professionnels de la croissance à mesurer et à attribuer avec précision les efforts de marketing lorsque les utilisateurs interagissent sur plusieurs plateformes et appareils. Cette solution est axée sur les plates-formes CTV, PC et consoles.
 
 Les annonceurs peuvent faire la promotion d'une application sur la même plateforme ou sur une plateforme différente de celle sur laquelle la publicité est affichée. Par exemple, un annonceur peut afficher une publicité pour une application Steam sur la plateforme Steam. Ils peuvent également afficher une publicité pour une application Steam sur le web, par exemple via Google Ads. Quelle que soit leur stratégie marketing, les annonceurs s'intègrent à AppsFlyer pour recevoir des données d'attribution et des mesures de performance concernant les sources (non organiques ou organiques) et les campagnes qui génèrent des installations d'applications sur les plates-formes CTV, PC et consoles, ainsi que des événements post-installation. Les spécialistes du marketing utilisent ces informations pour calculer la valeur de la durée de vie de l'utilisateur (LTV) et pour mesurer et optimiser les activités de marketing. <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model">En savoir plus sur l'attribution d'AppsFlyer</Anchor>
+
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
 
 <div id="supported-platforms" />
 
@@ -145,6 +149,8 @@ Informations supplémentaires
 * <Anchor target="_blank" href="/marketers/fr/docs/cross-platform-landing-pages-with-smart-script">Apprenez à créer des pages d'atterrissage multiplateformes avec Smart Script</Anchor>
 
 </Accordion>
+
+<div id="note" />
 
 <div id="data-availability" />
 

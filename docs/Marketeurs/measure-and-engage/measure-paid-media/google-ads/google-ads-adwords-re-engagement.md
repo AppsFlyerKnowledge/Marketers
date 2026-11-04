@@ -91,6 +91,8 @@ Il n'est pas nécessaire d'ajouter des paramètres supplémentaires au deep link
 
 </Accordion>
 
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
+
 <div id="dynamic-remarketing-and-shopping-campaigns" />
 
 ## Remarketing dynamique et campagnes de shopping

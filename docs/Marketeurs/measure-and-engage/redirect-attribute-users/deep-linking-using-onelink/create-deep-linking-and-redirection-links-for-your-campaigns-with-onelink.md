@@ -38,6 +38,10 @@ Les étapes nécessaires à la configuration d'un lien sont détaillées dans la
 * Paramètres de deep linking et de redirection
 * Paramètres supplémentaires
 
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## Créer un lien OneLink
@@ -219,6 +223,10 @@ Lorsque l'utilisateur interagit avec le bouton CTA sur la page de d'accueil :
 
 <div id="note-2" />
 
+<div id="url-id" />
+
+<div id="important" />
+
 > 📘 **Note**
 >
 > La page d'accueil de l'app sociale prend uniquement en charge l'URL courte OneLink.
@@ -233,6 +241,8 @@ Lorsque l'utilisateur interagit avec le bouton CTA sur la page de d'accueil :
 3. Publiez l'URL courte OneLink sur l'app sociale.
 
 L'attribution est déterminée en fonction de vos  paramètres d'attribution.
+
+<div id="note-3" />
 
 <div id="to-set-up-the-social-apps-landing-page" />
 
@@ -596,6 +606,18 @@ La solution DDL Copier/Coller la page d'accueil nécessite les points suivants 
 </Accordion>
 
 </Accordion>
+
+<div id="xiaomi-browser" />
+
+<div id="telegram-webview" />
+
+<div id="chrome-browser-on-ios" />
+
+<div id="deep-linking-is-not-supported-on-android-naver-blog-app" />
+
+<div id="ad-networks" />
+
+<div id="maximum-links" />
 
 <div id="additional-information" />
 

@@ -34,6 +34,10 @@ Pour que vous puissiez envoyer des événements in-app, votre développeur doit 
 
 Pour vous aider à définir quels événements et paramètres doivent être enregistrés, consultez <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#recommended-events-by-business-vertical">nos articles avec différents exemples et flux</Anchor> en fonction des secteurs d'activité.
 
+<div id="lead-lead" />
+
+<div id="app-open-af_app_opened" />
+
 <div id="predefined-event-names" />
 
 ## Noms d'événements prédéfinis
@@ -778,6 +782,12 @@ Cliquez sur le lien pour afficher le mappage vers les SRN.
 ## Paramètres d'événements prédéfinis
 
 La section suivante fournit une liste de paramètres d'événements prédéfinis. Chaque nom d'événement comprend le mappage utilisé pour Meta ads, Google Ads, Snap, Twitter et Criteo. Vous pouvez choisir d'inclure n'importe lequel des paramètres d'événement dans un événement.
+
+<div id="af_projected_revenue" />
+
+<div id="h_01NEWAFNETREVENUE0001" />
+
+<div id="note-3" />
 
 > 📘 **Note**
 >

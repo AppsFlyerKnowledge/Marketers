@@ -558,6 +558,10 @@ Vous pouvez charger des rapports unifiés, d'acquisition d'utilisateurs et de re
 
 <Accordion title="Jours post-attribution">
 
+<div id="organic-d7-revenue" />
+
+<div id="nonorganic-d7-revenue" />
+
 <div id="important" />
 
 > 🚧 **Attention !**

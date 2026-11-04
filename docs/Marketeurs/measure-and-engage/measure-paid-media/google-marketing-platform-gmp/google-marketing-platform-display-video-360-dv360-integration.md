@@ -75,6 +75,8 @@ Le tableau ci-dessous décrit les solutions d’intégration GMP :
 | external\_customer\_id | network\_account\_id |
 | site\_id | af\_siteid |
 
+<div id="note-1" />
+
 <div id="setting-up-gmp-dv360-for-advertisers" />
 
 ## Configuration de GMP-DV360 pour les annonceurs
@@ -135,6 +137,8 @@ Définissez les différentes fenêtres d'attribution pour attribuer les nouvelle
 
 1. Définissez la **Fenêtre rétrospective post-clic d'installation** sur 1-23 heures ou 1-30 jours.
 2. [Facultatif] Activez **l'attribution après affichage de l'installation** et définissez la fenêtre de rétrospection sur 1 à 23 heures ou 1 à 30 jours.
+
+<div id="note-2" />
 
 <div id="re-engagement-attribution" />
 
@@ -249,6 +253,8 @@ Il est possible d'**utiliser les liens d'attribution d'AppsFlyer avec DV360 pour
 
 Si vous souhaitez pouvoir mesurer le nombre de clics provenant de DVM360 sur AppsFlyer, vous devez ajouter une URL d'attribution AppsFlyer à votre tableau de bord DVM360. Assurez-vous (si possible) que le nom de la campagne dans l'URL d'attribution **est identique** à l'ID d'emplacement sur GMP, et ce afin qu'AppsFlyer puisse récupérer et ajouter les données de clic aux campagnes appropriées.
 
+<div id="note-5" />
+
 <div id="important-1" />
 
 > 🚧 **Important !**
@@ -309,6 +315,8 @@ Les agences peuvent mener des campagnes avec GMP-DV360 en votre nom.
 | --- | --- |
 | Annonceur | <ol><li>Vérifiez que vous avez bien complété l’intégration de l’annonceur GMP-DV360.</li><li>Dans AppsFlyer, dans le menu latéral, choisissez Collaborer > **Intégrations actives**.</li><li>Sélectionnez une agence.</li><li>Allez dans l'onglet **Autorisations** et cliquez sur **Autorisations de l'agence.**</li><li>[Obligatoire] Dans l'onglet Integration, activez **Postbacks d'évènement in-app**. **Cela permettra à l'agence d'activer ou désactiver les postbacks de son côté.**</li></ol> |
 | Agence | <ol><li>Dans AppsFlyer, dans le menu latéral, choisissez Collaborer > **Intégrations actives**.</li><li>Sélectionnez **Google Marketing Platform - Display & Video 360 (DV360).**</li><li>Ouvrez l'onglet **Intégration**.<br />Le statut de l'intégration avec GMP s'affiche.</li></ol>[![mceclip2.png](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)<ol><li>Vérifiez que l’option **Activer le partenaire** est cochée. Si ce n’est pas encore fait, l’annonceur doit compléter [l’intégration de l’annonceur GMP-DV360.](#configuration-de-gmp-dv360-pour-les-annonceurs)</li><li>Vérifiez que les paramètres restants, comme les fenêtres rétrospectives et le mappage des événements in-app, sont corrects. Demandez à l'annonceur d'apporter les modifications nécessaires en cas de besoin.</li><li>Saisissez un ou plusieurs **ID d’annonceur DBM**. L'ID se trouve dans votre <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/3423704?hl=en&ref_topic=9133452">tableau de bord GMP.</Anchor></li><li>Cliquez sur **Enregistrer**.</li></ol> |
+
+<div id="see-also" />
 
 <div id="gmp-dv360-discrepancies" />
 

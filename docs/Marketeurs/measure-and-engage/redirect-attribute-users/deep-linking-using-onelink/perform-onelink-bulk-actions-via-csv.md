@@ -34,6 +34,8 @@ Les groupes de liens vous permettent de créer et d'afficher des liens créés e
    2. **Créer un template OneLink** - Un template OneLink est nécessaire pour créer une collection. Voir <Anchor target="_blank" href="/marketers/fr/docs/create-a-onelink-template">Templates OneLink</Anchor>.
    3. **Mise à niveau** - Les groupes de liens ne sont pas disponibles avec votre package actuel. Contactez votre CSM ou écrivez à [hello@appsflyer.com](mailto:hello@appsflyer.com) pour obtenir une mise à niveau.
 
+<div id="managing-your-bulk-links-with-collections" />
+
 <div id="creating-your-first-collection" />
 
 ## Créer votre première collection
@@ -55,6 +57,20 @@ Les groupes de liens sont gérés dans des collections.
   * Actuellement, la limite par défaut est fixée à 20 000 créations de liens par mois.
 * La section **Collections** vous permet de créer une nouvelle collection et d'effectuer d'autres actions sur vos collections de liens actuelles.
 * Si vous avez plus de sept collections, vous pouvez effectuer des recherches et filtrer votre liste de collections.
+
+<div id="downloading-a-collection-of-qr-codes" />
+
+<div id="downloading-a-collection-of-links" />
+
+<div id="empty-collections" />
+
+<div id="important-notes" />
+
+<div id="notes" />
+
+<div id="note" />
+
+<div id="important" />
 
 <div id="other-actions" />
 
@@ -181,6 +197,20 @@ Les collections peuvent être vides pour les raisons suivantes :
 * La création de nouvelle collection a été interrompu ou ne s'est pas achevé avant la création des liens. Ce qui crée une collection vide.
 
 </Accordion>
+
+<div id="can-you-bulk-create-qr-codes" />
+
+<div id="what-options-are-available-for-generating-qr-codes-in-appsflyer" />
+
+<div id="can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example" />
+
+<div id="qr-with-long-links-vs-short-links---is-there-any-difference" />
+
+<div id="parameters-in-the-uploaded-csv" />
+
+<div id="faq" />
+
+<div id="note-1" />
 
 <div id="general-information" />
 

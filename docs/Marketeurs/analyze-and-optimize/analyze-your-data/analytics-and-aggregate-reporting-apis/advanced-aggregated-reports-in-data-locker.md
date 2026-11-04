@@ -990,6 +990,10 @@ group by 1
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
 
+<div id="9-calculate-dau" />
+
+<div id="8-calculate-purchases-day-7-after-conversion" />
+
 <div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calcul du ARPU (revenu moyen par utilisateur) à J+7 par heure d'attribution et par zone géographique**

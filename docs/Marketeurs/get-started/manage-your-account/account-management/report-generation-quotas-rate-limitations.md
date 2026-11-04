@@ -47,6 +47,10 @@ Le nombre maximum de rapports pouvant être générés par jour et par type de r
 | API de cohorte | 60 appels par minute et par compte |
 | Rapports agrégés SKAN | 60 appels par minute et par compte |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### Données Brutes

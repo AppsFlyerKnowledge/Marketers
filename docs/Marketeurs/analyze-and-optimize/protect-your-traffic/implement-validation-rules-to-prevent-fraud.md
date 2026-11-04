@@ -262,6 +262,16 @@ Les développeurs peuvent utiliser l'API des règles de validation pour [obtenir
 * [Mettre une règle à jour](https://dash.readme.com/project/hc/v0.1/refs/update-rule) : change/modifie les conditions d'une règle existante.
 * [Mettre à jour le statut d'une règle](https://dash.readme.com/project/hc/v0.1/refs/update-rule-status) : active, désactive ou supprime une règle existante.
 
+<div id="example-latest-version-calculation" />
+
+<div id="how-appsflyer-determines-the-latest-version" />
+
+<div id="understand-how-the-condition-works-with-multiple-apps" />
+
+<div id="example-not-in-last-major" />
+
+<div id="example-not-in-last" />
+
 ## FAQ
 
 <Accordion title="Qu'est-ce qu'une « expression régulière » ?">

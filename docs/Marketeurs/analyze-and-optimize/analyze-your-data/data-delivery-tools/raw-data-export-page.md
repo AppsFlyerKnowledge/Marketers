@@ -152,6 +152,8 @@ La page d'exportation des données brutes offre des rapports avec les fonctionna
 
 </Accordion>
 
+<div id="note" />
+
 <div id="procedures" />
 
 ## Marche à suivre

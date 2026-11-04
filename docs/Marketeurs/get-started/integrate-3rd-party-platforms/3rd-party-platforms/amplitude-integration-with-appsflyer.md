@@ -176,6 +176,10 @@ Les autorisations ne sont pas disponibles pour Amplitude.
 
 </Accordion>
 
+<div id="sending-amplitude-events-to-appsflyer" />
+
+<div id="important-1" />
+
 <div id="viewing-attribution-data-in-the-amplitude-console" />
 
 ## Visualisation des données d'attribution dans la console Amplitude

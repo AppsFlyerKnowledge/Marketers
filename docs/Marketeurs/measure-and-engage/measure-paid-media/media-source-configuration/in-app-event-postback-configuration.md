@@ -333,6 +333,12 @@ La liste des événements disponibles pour le mappage ne comprend que les évén
 
 <div id="note-10" />
 
+<div id="tip" />
+
+<div id="note-8" />
+
+<div id="share-revenue" />
+
 > 📘 **Note**
 >
 > * Lorsqu'un événement personnalisé est ajouté à un certain partenaire, l'événement est ajouté à la liste des événements pour tous les partenaires. Cela signifie que vous pouvez voir cet événement dans la liste déroulante des événements de n'importe quel partenaire.
@@ -372,6 +378,8 @@ Les marketeurs peuvent autoriser les agences à configurer les postbacks d'évé
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
+
+<div id="note-11" />
 
 > 📄 **À consulter également**
 >

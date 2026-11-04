@@ -39,6 +39,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/fr/docs/onelink-guide">OneLin
 * **Référent vers application** : Créez des liens d'invitation utilisateur permettant aux utilisateurs et aux influenceurs d'inviter d'autres personnes à rejoindre votre application ou de partager du contenu spécifique dans l'application, par exemple un article.
 * **Personnalisé** : Créez une expérience hautement personnalisée avec une myriade d'options pour une personnalisation maximale. Peu importe d'où viennent vos utilisateurs, qu'ils soient sur un ordinateur de bureau ou un appareil mobile, en ligne ou hors ligne, à partir de médias détenus ou payés, utilisez OneLink pour les diriger facilement vers l'endroit approprié.
 
+<div id="traits-and-limitations" />
+
 <div id="onelink-onboarding" />
 
 ## Intégration de OneLink

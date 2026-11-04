@@ -29,6 +29,8 @@ x-zendesk:
 
 > **En bref** : les rapports de données brutes détaillent les installations et événements in-app bloqués par le moteur Protect360, ainsi que par les règles de validation ajoutées manuellement.
 
+<div id="note" />
+
 <div id="about-protect360-raw-data-reports" />
 
 ## À propos des rapports de données brutes Protect360
@@ -47,6 +49,18 @@ Rapports de données brutes :
 <div id="report-types" />
 
 <Accordion title="Types de rapport">
+
+<div id="blocked-install-postbacks" />
+
+<div id="clicks" />
+
+<div id="postattribution-inapp-events" />
+
+<div id="blocked-inapp-events" />
+
+<div id="postattribution-installs" />
+
+<div id="installs" />
 
 <div id="protect360-raw-data-report-types" />
 
@@ -317,6 +331,8 @@ Les données brutes Protect360 incluent les installations et sessions frauduleus
 Les données brutes de retargeting Protect360 sont proposées pour les blocages en temps réel et la fraude identifiée en post attribution comme suit :
 
 <table><thead><tr><th>Rapport </th><th>Données d'exportation</th><th>API pull</th><th>Data Locker</th></tr></thead><tbody><tr><td>d'installations</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Installations post-attribution</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Données de réengagement non disponibles</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="traits-and-limitations" />
 
 <div id="hijacked-installs-attribution-correction" />
 

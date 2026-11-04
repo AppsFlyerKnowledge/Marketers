@@ -31,6 +31,8 @@ En savoir plus sur <Anchor target="_blank" href="https://www.braze.com/">braze.c
 >
 > <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions#restrictions-des-sources-média">Certaines sources média</Anchor> restreignent le partage de données avec des tiers. Par conséquent, les postbacks pour les événements restreints ne seront pas envoyés à ce partenaire, peu importe la configuration choisie pour l'envoi des postbacks.
 
+<div id="note" />
+
 <div id="integration-overview" />
 
 ## Présentation de l'intégration
@@ -179,6 +181,8 @@ Une fois la configuration enregistrée, AppsFlyer envoie les données suivantes 
 * Nom de la campagne
 * Nom du groupe d'annonces
 * Nom de la publicité
+
+<div id="note-1" />
 
 <div id="default-postbacks" />
 

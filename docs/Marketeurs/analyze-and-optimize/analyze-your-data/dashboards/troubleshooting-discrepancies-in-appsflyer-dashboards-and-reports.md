@@ -60,6 +60,26 @@ Les deux méthodes sont utiles aux annonceurs, mais à des fins différentes. C'
 * Quelles pages et quels rapports pouvez-vous comparer sur AppsFlyer ?
 * Comment comparer les données LTV et les données d'activité ?
 
+<div id="compare-inapp-event-raw-data-with-the-activity-view" />
+
+<div id="compare-appsflyer-data-with-external-data" />
+
+<div id="compare-different-appsflyer-aggregated-data-dashboards-and-reports" />
+
+<div id="compare-ltv-and-activity-data-in-appsflyer" />
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
+
+<div id="to-retrieve-activity-data-out-of-ltv-data" />
+
+<div id="to-retrieve-ltv-data-out-of-raw-activity-data" />
+
+<div id="compare-data-between-different-dashboards-and-reports" />
+
+<div id="appsflyer-dashboards-and-reportsltv-or-activity" />
+
+<div id="the-train-analogy" />
+
 ### L'analogie du train
 
 **Activité** : imaginez que vous regardez un train qui passe. Lorsque le train avance, vous voyez uniquement les actions effectuées par les passagers du train au moment où ils passent devant vous. Il s'agit des données d'activité.

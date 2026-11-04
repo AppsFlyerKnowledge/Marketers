@@ -51,6 +51,8 @@ Le tableau de bord vous permet de consulter vos données sous forme de graphique
 
 Si vous n'avez pas encore configuré l'optimisation créative, vous trouverez des instructions <Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide#démarrer">ici</Anchor>.
 
+<div id="h_01JJS288YJ31DH3RMK395X998N" />
+
 <div id="charts" />
 
 ## Diagrammes
@@ -75,6 +77,8 @@ Utilisez les diagrammes pour lire immédiatement les résultats et les comparer 
 Utilisez le tableau pour approfondir les détails. Regroupez les données par dimensions, ou personnalisez les paramètres du tableau pour y ajouter des dimensions et des mesures, puis triez et comparez les données pour obtenir les infos dont vous avez besoin.
 
 <div id="zd-table" />
+
+<div id="in-app-events" />
 
 <div id="table" />
 

@@ -29,6 +29,10 @@ x-zendesk:
 ---
 > **En bref :** en partenariat avec votre développeur mobile ou d'app CTV, intégrez et installez le SDK dans vos apps Android ou iOS. Une fois les opérations d'intégration de base terminées, votre app sera prête à attribuer les installations et à mesurer les événements in-app.
 
+<div id="provide-the-dev-key-to-your-developer" />
+
+<div id="retrieve-the-dev-key" />
+
 <div id="implementing-the-dev-key-in-your-app" />
 
 ## **Récupérer la clé dev**
@@ -69,6 +73,8 @@ Choisissez de démarrer le SDK dans la classe globale `Application` ou dans la c
 * **Démarrez le SDK dans la **classe** globale `Application`** : il est recommandé d'initialiser le SDK dans la classe/sous-classe globale `Application` car la classe `Application` se charge et s'initialise avant que l'interface utilisateur de l'app ne s'affiche. Cela vous garantit que le SDK démarre dans n'importe quel contexte, y compris celui du deep linking.
 * **Lancez le SDK dans une classe** `Activity` **(démarrage différé)** pour permettre aux utilisateurs d'accepter le partage des données. Obtenir le consentement de l'utilisateur requiert en effet d'avoir une interface utilisateur (UI) rendue dans une classe `Activity`.
 
+<div id="starting-the-sdk-in-ios-native" />
+
 <div id="android-developer-instructions" />
 
 #### INSTRUCTIONS POUR LES DEVS ANDROID
@@ -99,6 +105,10 @@ Il est important de savoir s'il faut retarder le `démarrage` du SDK jusqu'à ce
 Le SDK fournit la méthode `waitForATTUserAuthorization` qui vous permet de **définir combien de temps le SDK doit attendre le consentement de l'utilisateur avant d'envoyer les données aux serveurs AppsFlyer.**
 
 Pour plus d'infos sur le flux de données de la méthode et son interaction avec l'infrastructure ATT d'iOS, consultez la section [Comment configurer l'App Tracking Transparency (ATT)](/docs/basic-sdk-integration-guide#aperçu-de-waitforattuserauthorization).
+
+<div id="starting-the-sdk-in-react-native" />
+
+<div id="starting-the-sdk-in-unity" />
 
 <div id="ios-developer-instructions" />
 
@@ -295,6 +305,8 @@ Lorsque l'attribution se produit à l'aide de l'IDFA, il est important que ce de
 
 #### Aperçu de waitForATTUserAuthorization
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > N'appelez pas `waitForATTUserAuthorization` si vous n'avez pas l'intention d'invoquer la boîte de dialogue de consentement ATT.
@@ -359,6 +371,8 @@ Cf le Dev Hub pour voir les [instructions de personnalisation de la boîte de di
 <div id="support-for-skan-attribution" />
 
 <Accordion title="Prise en charge de l'attribution SKAN">
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -506,6 +520,8 @@ Consultez notre guide sur le paramétrage du <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="accessing-attribution-and-deep-linking-data" />
 
 ## **Accéder aux données d'attribution et de deep linking**
@@ -531,6 +547,8 @@ Ce qui suit s'applique uniquement aux utilisateurs d'iOS 14.5 et + qui n'ont pas
 >
 > * Utilisez l'API Push pour récupérer les données d'attribution et les envoyer à vos serveurs pour traitement. Cette méthode permet d'attendre que les données soient disponibles, elle est donc très précise et quasi en temps réel. La GCD renvoie des données en temps réel, mais peut être imprécise lorsque les décisions d'attribution finales sont déterminées après plus de 5 secondes.
 > * Utilisez l'API Pull pour traiter par cycle (par exemple chaque jour) les données d'attribution en temps réel, vous éviterez ainsi les éventuelles erreurs de communication.
+
+<div id="note-1" />
 
 <div id="testing-your-sdk-integration" />
 

@@ -29,6 +29,16 @@ x-zendesk:
 
 > **En bref :** Pour obtenir une certaine partie de la LTV, l’activité, la rétention, la cohorte et des KPI de performance des campagnes Protect360 via API, au format CSV ou JSON. Sélectionner un ou plusieurs événements in-app.
 
+<div id="protect360" />
+
+<div id="cohort" />
+
+<div id="activity" />
+
+<div id="retention" />
+
+<div id="ltv" />
+
 <div id="master-apiuser-acquisition-metrics-via-api" />
 
 ## API principale : mesurer l’acquisition d’utilisateurs via API

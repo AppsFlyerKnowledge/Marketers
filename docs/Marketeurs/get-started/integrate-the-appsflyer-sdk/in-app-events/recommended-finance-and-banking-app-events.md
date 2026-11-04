@@ -48,6 +48,10 @@ L'enregistrement de ces événements peut vous aider à déterminer :
 
 [![Flowchart_for_recommended_events finance_banking_app_user_journey](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
 
+<div id="complete-registration-af_complete_registration" />
+
+<div id="login-af_login" />
+
 <div id="recommended-structures-for-predefined-events" />
 
 ## Structures recommandées pour les événements prédéfinis
@@ -169,6 +173,14 @@ AppsFlyer.sendEvent ("af_complete_registration", CompletedRegistrationEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="open-account-rejected-open_account_rejected" />
+
+<div id="open-account-success-open_account_success" />
+
+<div id="submit-account-application-submit_account_application" />
+
+<div id="registration-verified-registration_verified" />
 
 <div id="recommended-structures-for-custom-events" />
 

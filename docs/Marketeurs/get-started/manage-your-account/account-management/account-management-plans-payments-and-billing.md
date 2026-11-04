@@ -117,6 +117,12 @@ Les unités sur lesquelles les modules mesurés peuvent reposer :
 | --- | --- | --- |
 | Unités ROI360 USD | Unités monétaires enregistrées dans votre coût publicitaire, revenu publicitaire in-app et de revenu d'achat in-app (abonnements compris), et mesurées par le module ROI360. Chaque unité représente 1 $ de la mesure ROI360 enregistrée. | <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-cost-and-revenue-data">ROI360 : données sur les coûts et les revenus</Anchor> |
 
+<div id="understand-billing-for-extended-platform-apps" />
+
+<div id="what-isnt-billed" />
+
+<div id="what-is-billed" />
+
 <div id="roi360-dollar-units" />
 
 #### Unités ROI360 USD
@@ -170,6 +176,8 @@ Dans l'onglet **Mon forfait**, vous pouvez consulter les détails de votre forfa
 | <span id="addons"></span>**Modules complémentaires** | Modules inclus dans votre forfait, avec leurs dates de début et fin. Ce sont des fonctionnalités premium, comme :<ul><li><Anchor target="_blank" href="/marketers/fr/docs/protect360-anti-fraud-guide">Protect360</Anchor> : protection contre la fraude mobile</li><li><Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview">ROI360</Anchor> : données sur les coûts</li><li><Anchor target="_blank" href="/marketers/fr/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/fr/docs/pivot-table-user-metrics">Tableau Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/fr/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>Pour en savoir plus sur ces fonctionnalités et en quoi elles peuvent servir votre entreprise, contactez votre CSM ou écrivez à [hello@appsflyer.com.](mailto:hello@appsflyer.com) |
 | <span id="future"></span>**Forfait suivant** | Cette section n'apparaît que lorsqu'un forfait suivant a été acheté. Le cas échéant, vous trouverez ici les détails de votre prochain forfait. |
 
+<div id="access-to-the-usage-report-page" />
+
 <div id="usage-report" />
 
 ### Rapports de consommation
@@ -177,6 +185,14 @@ Dans l'onglet **Mon forfait**, vous pouvez consulter les détails de votre forfa
 #### Comprendre les rapports de consommation
 
 Les rapports de consommation indiquent les conversions agrégées regroupées par date, app, source média, source de conversion et type de conversion. Vous pouvez ainsi facilement trier, filtrer ou croiser les tableaux avec l'une ou l'autre de ces dimensions.
+
+<div id="partial::64822c61" />
+
+<div id="partial" />
+
+<div id="complete" />
+
+<div id="data-included-in-the-usage-report" />
 
 > 📘 **Note**
 >
@@ -218,6 +234,12 @@ Seuls les admins ou utilisateurs de compte ayant les autorisations suivantes peu
    * Lorsque le rapport est prêt, le statut passe à **Télécharger.**
 3. Cliquez sur **Télécharger** pour enregistrer le rapport au format CSV.
 
+<div id="roi360" />
+
+<div id="measurement" />
+
+<div id="usage-report-fields" />
+
 > 📘 **Note**
 >
 > * Le rapport de consommation mensuel est disponible à compter du 2e jour du mois suivant. Par exemple, le jour où vous pouvez télécharger le rapport pour janvier 2023 est le 8 février 2023.
@@ -255,6 +277,12 @@ Pour supprimer un compte ou revenir à un forfait inférieur, contactez votre CS
 > 📘 **Note**
 >
 > L'onglet **Paiements et factures** n'est disponible que pour les forfaits payants (ie forfaits autres que [Bienvenue ou Zéro](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
+
+<div id="hands-free-recurring-payments" />
+
+<div id="payment-types" />
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 <div id="payment-methods-easy--secure-invoicing" />
 
@@ -350,6 +378,18 @@ Est la personne référente pour tout échange concernant les problèmes liés a
 3. Un message popup indique si les modifications ont été enregistrées avec succès.
 
 <div id="note-8" />
+
+<div id="other-payment-methods" />
+
+<div id="credit-card" />
+
+<div id="ach-for-us-customers-recurring-or-paynow" />
+
+<div id="managing-payment-methods" />
+
+<div id="set-up" />
+
+<div id="paynow-manual-invoice-payment" />
 
 > 📘 **Note**
 >

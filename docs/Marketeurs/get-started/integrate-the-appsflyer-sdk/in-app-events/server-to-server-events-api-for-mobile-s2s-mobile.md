@@ -58,6 +58,14 @@ Lorsque AppsFlyer traite des événements in-app S2S, les champs d'attribution s
 
 Cela signifie que certaines données qu'AppsFlyer associe à des événements in-app S2S non organiques ne sont pas associées à des événements in-app S2S organiques.
 
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
+
+<div id="increasing-the-volume-of-data-transactions" />
+
+<div id="note-1" />
+
+<div id="note" />
+
 > 📄 **Exemple**
 >
 > Par exemple, si vous comparez les rapports de données brutes d'événements in-app S2S non organiques et organiques, les événements non organiques contiennent des données que les événements in-app organiques ne contiennent pas.
@@ -170,6 +178,8 @@ Les événements qui ont une valeur négative de revenus peuvent être envoyés.
 Lorsque vous remplissez `af_quantity`, vous pouvez avoir besoin de renseigner une valeur négative en fonction du fonctionnement de votre système. AppsFlyer n'utilise pas `af_quantity`.
 
 </Accordion>
+
+<div id="S2S_in-app_events_are_wrongly_attributed_as_organic" />
 
 <div id="troubleshooting" />
 

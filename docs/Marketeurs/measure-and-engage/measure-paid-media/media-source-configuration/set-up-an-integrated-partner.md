@@ -118,6 +118,8 @@ La page est structurée comme suit :
 
 </Accordion>
 
+<div id="important" />
+
 <div id="set-up-a-partner-non-srn" />
 
 ## Configurer un partenaire (non-SRN)
@@ -140,6 +142,26 @@ Les intégrations de partenaire varient d'un partenaire à l'autre et peuvent n�
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Veuillez renseigner les sections tel que demandé.
+
+<div id="i-connect-more-apps-optional" />
+
+<div id="g-in-app-event-postback-configuration" />
+
+<div id="default-postbacks" />
+
+<div id="e-cross-platform-attribution" />
+
+<div id="reengagement-window" />
+
+<div id="non-eu-users" />
+
+<div id="d-general-settings" />
+
+<div id="c-transaction-id" />
+
+<div id="b-advanced-privacy" />
+
+<div id="a-activate-partner" />
 
 <div id="integration-sections" />
 
@@ -580,6 +602,8 @@ Si vous avez le rôle d'éditeur en diffusant les publicités dans votre app, l'
 | <span id="use-ad-spend-ingestion"></span>Utiliser l'ingestion des dépenses publicitaires | Le réseau publicitaire peut :<ul><li>Accéder à la fenêtre <Anchor target="_blank" href="/marketers/fr/docs/import-cost-data">d'ingestion des dépenses publicitaires</Anchor>. Cette fenêtre affiche uniquement les apps pour lesquelles le partenaire a une autorisation.</li><li>Envoyer les fichiers de dépenses publicitaires pour ingestion.</li></ul> |
 | <span id="access-protect360-dashboard-raw-data"></span>Accéder au tableau de bord Protect360 et aux données brutes | Le réseau publicitaire peut :<ul><li>Accéder au tableau de bord Protect360 (inclut <Anchor target="_blank" href="/marketers/fr/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Accéder à Protect360, aux règles de validation et aux données brutes, si elles sont comprises dans la formule d'abonnement. ProtectLITE n'inclut pas l'accès aux données brutes.</li></ul>**Remarque :** si vous avez un abonnement <Anchor target="_blank" href="/marketers/fr/docs/protect360-anti-fraud-guide">Protect360</Anchor>, le réseau publicitaire peut voir le tableau de bord complet. Sans abonnement Protect360, il peut uniquement accéder au tableau de bord réduit. |
 | <span id="access-ad-revenue-raw-data"></span>Accédez aux données brutes des revenus publicitaires | Le réseau publicitaire peut accéder à ses <Anchor target="_blank" href="/partners/fr/docs/ad-revenue-signals-for-ua-ad-networks">données de revenus publicitaires afin d'optimiser l'AU</Anchor>.   <br />**Remarque :** Cette permission n'est disponible que pour les apps disposant d'un abonnement <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>. |
+
+<div id="important-1" />
 
 <div id="agency-permissions" />
 

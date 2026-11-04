@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** trouvez les principales causes et solutions en cas de non réception des postbacks attendus par votre partenaire. Examinez chacun des sujets ci-dessous et voyez s'ils peuvent en être la cause.
 
+<div id="1703758710.321359" />
+
 <div id="check-the-integration-toggles" />
 
 ## Contrôler l'activation des fonctions d'intégration
@@ -52,6 +54,8 @@ Il est également possible que la fonction <Anchor target="_blank" href="/market
 </Accordion>
 
 <div id="the-inapp-event-postbacks-toggle-was-turned-off" />
+
+<div id="1703760110.503549" />
 
 <Accordion title="L'option Postback d'évènement d'app est désactivée">
 
@@ -141,6 +145,8 @@ Lorsque le lien d'attribution inclut le paramètre `af_installpostback=false`, l
 
 </Accordion>
 
+<div id="the-sdk-was-set-not-to-share-information-with-the-partner" />
+
 <div id="privacy-restrictions" />
 
 ## Restrictions de confidentialité
@@ -164,6 +170,8 @@ Lorsque le mode <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregate
 <Anchor target="_blank" href="/marketers/fr/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms">Certaines sources média</Anchor> limitent le partage des données avec les tiers. AppsFlyer n'autorise pas le partage de données d'utilisateurs provenant de ces sources média avec des plateformes ou services tiers.Toute installation issue de ces sources média est donc transmise comme organique. Notez que Meta ads ne partage aucune donnée avec les plateformes tierces.
 
 </Accordion>
+
+<div id="advanced-privacy-postbacks" />
 
 <div id="miscellaneous" />
 

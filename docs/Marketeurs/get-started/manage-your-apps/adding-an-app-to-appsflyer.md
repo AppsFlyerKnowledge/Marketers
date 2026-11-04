@@ -80,6 +80,8 @@ Après avoir enregistré l'app, celle-ci apparaîtra dans le tableau de bord. Po
 
 Voir <Anchor target="_blank" href="/marketers/fr/docs/getting-started-onboarding-for-marketers">toutes les étapes</Anchor> du processus d'intégration.
 
+<div id="note-2" />
+
 <div id="enter-app-details" />
 
 ### Saisir les infos de l'app
@@ -168,6 +170,16 @@ Inclure –
 
 * Longueur maxi du paramètre : 100 caractères
 * Les balises XSS ne sont pas autorisées
+
+<div id="amazon-vega-os" />
+
+<div id="web" />
+
+<div id="note-4" />
+
+<div id="to-add-a-web-app" />
+
+<div id="before-you-begin" />
 
 <div id="important-1" />
 
@@ -329,6 +341,8 @@ Inclure –
 
 </Accordion>
 
+<div id="select-currency" />
+
 <div id="enter-additional-information-not-applicable-to-web-apps" />
 
 ### #2 – Saisir les infos supplémentaires *(ne concerne pas les apps web) :*
@@ -338,6 +352,12 @@ Inclure –
 1. **Sélectionner une devise**
 
    Sélectionnez la devise qui sera utilisée pour afficher les données de cette application dans le tableau de bord. Les événements de revenus et de dépenses seront convertis dans cette devise en se basant sur le taux de change en vigueur au moment de l'événement. <Anchor target="_blank" href="/marketers/fr/docs/app-settings#localization-currency">En savoir plus</Anchor> sur le paramétrage de la devise d'une app, et ses effets.
+
+   <div id="define-app-audience" />
+
+   <div id="note-5" />
+
+   <div id="select-timezone" />
 
    <div id="important-2" />
 
@@ -356,6 +376,14 @@ Inclure –
    1. Ouvrez et lisez le <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guide</Anchor> sur la conformité des applications destinées aux enfants.
    2. Cochez la case pour confirmer que vous avez lu le guide et que vous mettrez en place les systèmes de vérifications qui y sont détaillés.
 
+      <div id="note-8" />
+
+      <div id="add-a-debug-or-testing-app" />
+
+      <div id="note-7" />
+
+      <div id="manage-your-apps-in-bulk-via-api" />
+
       <div id="note-6" />
 
       > 📘 **Remarque**
@@ -372,6 +400,12 @@ Travailler avec une application en attente peut être utile lorsque vous corrige
 Lorsqu'une app a le statut *en attente* dans le tableau de bord, cela n'affecte ni la collecte ni la mesure des données. Si l'app est *en ligne* ou *en attente* sur un app store et que des utilisateurs l'installent et interagissent avec elle, les données des événements d'installation et des événements in-app seront toujours enregistrées dans le tableau de bord.
 
 Une fois que votre app n'est plus en attente et passe en ligne, AppsFlyer détecte et met automatiquement à jour son statut, vous n'avez donc pas à l'ajouter une nouvelle fois. <Anchor target="_blank" href="/marketers/fr/docs/why-is-my-app-still-pending">En savoir plus</Anchor> sur les apps en attente et sur l'opération facultative visant à actualiser manuellement leur statut.
+
+<div id="product-line" />
+
+<div id="my-ios-app" />
+
+<div id="other-information" />
 
 <div id="troubleshooting" />
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 Un message de nos avocats : *rien de ce qui est énoncé ici n'a valeur de conseil juridique. Les éléments ne sont fournis qu'à titre d'information. Vous devez travailler en étroite collaboration avec des conseillers juridiques ou assimilés pour déterminer avec précision comment le RGPD, la CCPA ou toute autre loi doit s'appliquer à votre cas.*La relation de confidentialité qui existe entre AppsFlyer et vous est régie par la <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">politique de confidentialité des services AppsFlyer.</Anchor> Pour toute question relative à la présente Politique de confidentialité des services ou pour contacter notre délégué à la protection des données, veuillez nous envoyer un e-mail à [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Aux fins de l'article 27 du Règlement général sur la protection des données, le représentant d'AppsFlyer au sein de l'UE est AppsFlyer Germany GmbH Schönhauser Allee 180, 10119, Berlin, Allemagne (contact : [privacy@appsflyer.com](mailto:privacy@appsflyer.com), +49-30-166373500).
 
+<div id="privacy-regulations" />
+
 ## Politiques de confidentialité
 
 Dans cet article, les références aux règles de confidentialité incluent les réglementations détaillées dans le tableau suivant.
@@ -39,6 +41,8 @@ Dans cet article, les références aux règles de confidentialité incluent les 
 
 Chacun des termes "règlement sur la protection de la vie privée", "RGPD", "CCPA", "LGPD" et "PDPA" est utilisé indifféremment dans cet article.
 
+<div id="the-opendsr-initiative" />
+
 ### L'initiative OpenDSR
 
 Pour répondre aux demandes des personnes concernées et les gérer, conformément aux règles de confidentialité, AppsFlyer, en collaboration avec mParticle, Amplitude et Braze, ont lancé le protocole OpenDSR (anciennement connu sous le nom de OpenGDPR).
@@ -47,6 +51,8 @@ OpenDSR est un cadre open-source facilitant la coopération entre les entreprise
 
 En <Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">savoir plus sur l'initiative OpenDSR</Anchor>.
 
+<div id="definitions" />
+
 ### Définitions
 
 | Conditions DSR | Termes Appsflyer | Description |
@@ -54,6 +60,8 @@ En <Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/o
 | Personne concernée | Utilisateur d'app ou utilisateur final | L'utilisateur d'app dont les données sont collectées |
 | Responsable du traitement des données | Propriétaire d'app ou annonceur | Le propriétaire d'app détermine le but et les moyens par lesquels les données personnelles sont traitées. |
 | Processeur de données | AppsFlyer et ses partenaires | AppsFlyer et ses partenaires traitent les données personnelles au nom du responsable du traitement des données |
+
+<div id="dsr-requirements" />
 
 ### Exigences DSR
 
@@ -65,6 +73,8 @@ DSR détaille les droits obligatoires de la personne concernée par les données
 | **Portabilité** | L'utilisateur de l'app doit recevoir toutes ses données personnelles sous un format structuré, communément utilisé et lisible par une machine, comme un fichier CSV. | Le propriétaire de l'app reçoit une copie du traitement des données personnelles de l'utilisateur de l'app. |
 | **Rectification** | Permet aux utilisateurs d'app de corriger leurs données s'ils voient qu'elles sont inexactes ou erronées.Les propriétaires d'app sont tenus d'effacer ou corriger les données inexactes ou incomplètes. | <ul><li>AppsFlyer supprime les données de l'utilisateur de l'app qui ont enregistrées avant la date de la demande de *rectification*.</li><li>Les données qui sont reçues après cette date sont enregistrées par AppsFlyer.</li></ul> |
 | **Effacement** | Le droit à l'effacement oblige les propriétaires d'app à supprimer toutes les données personnelles dans un délai de 14 jours après réception de la demande. | Les données sont effacées |
+
+<div id="appsflyer-gdpr-requests-api" />
 
 ## API de demande RGPD d'AppsFlyer
 
@@ -78,6 +88,8 @@ Pour implémenter la conformité RGPD, utilisez l'API de demande RGPD, comme dé
 Les propriétaires d'apps doivent apporter des modifications dans l'IU de leur app avant que les utilisateurs de l'app ne puissent remplir une demande. Notez que chaque demande RGPD ne concerne qu'un utilisateur à la fois.
 
 <Accordion title="1. Demande RGPD">
+
+<div id="gdpr-request-flow" />
 
 ### Flux de demande RGPD
 
@@ -94,6 +106,8 @@ Les types de demande RGPD, que ce soit l'accès, la portabilité, l'effacement o
 
    **Remarque :** Cette période de 14 jours commence une fois que la période d'***attente de*** 48 heures a pris fin. Ainsi, la période totale pour répondre à la demande est de 16 jours après que le propriétaire de l'app a soumis la demande à AppsFlyer.
 
+<div id="gdpr-request-format" />
+
 ### Format de la demande RGPD
 
 Une API de demande RGPD peut être envoyée via HTTP POST au point de terminaison suivant :
@@ -104,9 +118,13 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 
 Pour l'autorisation API, utilisez le même jeton API V2 que pour l'API Pull. Un utilisateur admin peut <Anchor target="_blank" href="/marketers/fr/docs/managing-appsflyer-tokens#récupération-des-jetons-dapi">récupérer le jeton</Anchor> à partir de la page du jeton API dans le tableau de bord. Ajoutez le jeton dans l'en-tête de la requête comme suit : `'Authorization': 'Bearer %AuthTokenV2%'`
 
+<div id="parameters" />
+
 #### Paramètres
 
 <table><thead><tr><th><strong>Nom de la propriété</strong></th><th><strong>Obligatoire</strong></th><th><strong>Description</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Oui</td><td>Chaîne UUID v4. Générée par le responsable du traitement au moment de la soumission de la demande à un processeur. Elle peut ensuite être utilisée pour vérifier l'état de la demande, la mettre à jour ou l'annuler.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Oui</td><td><p>Valeur de chaîne représentant le type de demande RGPD.  Valeurs prises en charge :</p><ul><li>effacement</li><li>portabilité</li><li>Accès</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Oui</td><td><ul><li>Un ensemble de d'éléments d'identification permettant de définir l'identité du demandeur (voir ci-dessous).</li><li>Chaque demande peut contenir une seule identité.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Oui</td><td><ul><li>Chaîne de date RFC 3339 indiquant l'heure de la demande d'origine par la personne sujette.</li><li>Horodateurs en UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Oui</td><td><p>Chaîne représentant l'application mobile à laquelle cette�demande est étendue</p><p><strong>Exemples</strong> :</p><ul><li> iOS : id123456789</li><li> <strong>Android</strong> : com.example, com.publishers.name</li><li> <strong>Android hors store</strong> : com.publisher.name-channel<br/> <strong>Remarque</strong> Dans certains cas, les propriétaires d'app enregistrent l'attribution hors store à l'aide du nom Android Google Play. Le cas échéant, utilisez le nom habituel de l'app, tel qu'il s'affiche dans le tableau de bord.</li></ul></td></tr><tr><td><strong><strong>api_version</strong></strong></td><td>Non</td><td>Chaîne de version représentant la version souhaitée de l'API de demandes RGPD</td></tr><tr><td><strong>status_callback_urls</strong> </td><td>Non, mais recommandé</td><td><ul><li>Ensemble de 3 points de terminaison maxi pour les callbacks d'état à envoyer lors des changements d'état de demande suivants.</li><li>Seuls<span> les points de terminaison HTTPS sont pris en charge.</span> </li><li><span>Les URL non valides sont rejetées.</span></li></ul></td></tr><tr><td rowspan="2"> <strong>platform</strong> </td><td>Non</td><td><p>Value est l'une des plateformes DSR prises en charge :<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code></p></td></tr><tr><td>Oui</td><td><p>Pour une demande de plateforme CTV, PC ou Console, inclure l'une des plateformes suivantes : </p><p><span> </span><code>nativepc</code><span>, </span><code>playstation</code><span>, </span><code>roku</code><span>, </span><code>steam</code><span>, </span><code>webos</code><span>, <br/></span><code>vidaa</code><span>,</span><code>tizen</code><span>, </span><code>smartcast</code><span>, </span><code>chatgpt</code><span>, </span><code>battlenet</code><span>, <br/></span><code>quest</code><span>, </span><code>switch</code><span>, </span><code>xbox</code><span>, </span><code>epic</code></p></td></tr></tbody></table>
+
+<div id="subject_identities-objects" />
 
 #### Éléments Subject\_identities
 
@@ -115,6 +133,10 @@ Pour l'autorisation API, utilisez le même jeton API V2 que pour l'API Pull. Un 
 | identity\_type | Oui | <ul><li>Le type d'identité de format chaîne pour les plateformes `android`, `ios`, `web`, `windowsphone` sera choisi parmi les suivants :<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li></ul></li></ul><ul><li>Le type d'identité au format chaîne de caractères pour les plateformes `CTV`, `PC` et `Console` :<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Exemple : `android_advertising_id`</li></ul> |
 | identity\_value | Oui | <ul><li>Format : chaîne</li><li>Exemple : "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
 | identity\_format | Oui | <ul><li>La méthode utilisée pour encoder identity\_value : `raw` est la seule prise en charge :</li><li>Example : "raw"</li></ul> |
+
+<div id="zd-gdpr-erasure-request-code-example" />
+
+<div id="example-gdpr-erasure-request" />
 
 ### Exemple : demande d'effacement RGPD
 
@@ -171,6 +193,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
  ]
 }'
 ```
+
+<div id="gdpr-erasure-request-code-example" />
 
 ### Exemple de code de demande RGPD d'effacement
 
@@ -344,6 +368,8 @@ Chaque demande RGPD peut être interrogée ultérieurement pour connaître son �
 3. ***completed*** - Une demande a été satisfaite
 4. ***cancelled*** - Une demande a été annulée
 
+<div id="status-request-format" />
+
 ### Format de l'état de la demande
 
 Une demande d'état peut être envoyée via HTTP GET au point de terminaison suivant :
@@ -351,6 +377,8 @@ Une demande d'état peut être envoyée via HTTP GET au point de terminaison sui
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
+
+<div id="status-response-example" />
 
 ### Exemple de réponse concernant l'état
 
@@ -367,6 +395,8 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
  "request_status":"pending",
 }
 ```
+
+<div id="status-postbacks" />
 
 ### Postbacks de l'état
 
@@ -389,6 +419,8 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 "Request_status":"pending"
 }
 ```
+
+<div id="validate-postback" />
 
 ### Valider le postback
 
@@ -429,6 +461,8 @@ Pour en savoir plus sur les formats pris en charge par AppsFlyer, une demande de
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
+<div id="discovery-response-example" />
+
 ### Exemple de réponse à une demande de découverte
 
 ```http
@@ -461,6 +495,8 @@ Pour envoyer un HTTP DELETE avec `subject_request_id` :
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
+<div id="cancellation-response" />
+
 ### Réponse à une demande d'annulation
 
 Lors de la réception d'une demande d'annulation RGPD, AppsFlyer renvoie une réponse HTTP avec le code d'état 202 et plusieurs autres paramètres.
@@ -472,6 +508,8 @@ Une fois l'annulation de la demande effectuée, AppsFlyer envoie un postback ave
 <Accordion title="6. API de test des demandes RGPD">
 
 Cette API AppsFlyer est une API test pour l'API des demandes RGPD d'AppsFlyer.
+
+<div id="how-does-it-work" />
 
 ### Comment fonctionne l'API de test ?
 
@@ -517,6 +555,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
+<div id="note" />
+
 > 📘 **Remarques**
 >
 > * Un jeton API V2 valide doit être présent dans l'en-tête de la demande comme suit : `'Authorization' : 'Bearer %AuthTokenV2%'`
@@ -543,6 +583,8 @@ Pour accéder au tableau de bord Logs :
 
 Les codes de retour et messages d'erreur HTTP de l'API de demande RGPD sont présentés dans ce chapitre.
 
+<div id="gdpr-api-return-codes" />
+
 #### Codes de retour d'API de demande RGPD
 
 | Code de retour | Description |
@@ -551,11 +593,15 @@ Les codes de retour et messages d'erreur HTTP de l'API de demande RGPD sont pré
 | 202 | Demande d'annulation reçue |
 | 400 | Demande incorrecte. Le corps contient le code et le message d'erreur tels qu'indiqués dans le tableau suivant. |
 
+<div id="http-return-code-400---bad-request" />
+
 ### Code de retour HTTP 400 - demande incorrecte
 
 Les messages avec code de retour 400 contiennent un JSON indiquant le code et le message d'erreur.
 
 `{ "error":{ "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%"}}`
+
+<div id="return-code-400-bad-request-messages" />
 
 #### Code de retour 400, messages de demande incorrecte
 
@@ -587,6 +633,8 @@ Les messages avec code de retour 400 contiennent un JSON indiquant le code et le
 | e511 | Problème interne, veuillez patienter 60 minutes avant de réessayer. Si le problème persiste, contactez l'assistance AppsFlyer. support@AppsFlyer.com |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Particularités et limites
 

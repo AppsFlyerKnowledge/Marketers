@@ -136,6 +136,16 @@ Si vous intégrez des annonces Meta, respectez les règles suivantes :
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
 
+<div id="ssot-support-for-decode-mode" />
+
+<div id="faq" />
+
+<div id="how-to-enable-ssot-for-decode-mode" />
+
+<div id="key-benefits" />
+
+<div id="overview" />
+
 <div id="example-d-fine-conversion-value-62" />
 
 ### Exemple D : Valeur de conversion précise 62

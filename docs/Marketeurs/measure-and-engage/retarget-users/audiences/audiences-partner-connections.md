@@ -254,6 +254,8 @@ La création d'une intégration S3 permet à AppsFlyer d'envoyer les ID des appa
     ```
 12. Remplacez **BUCKET-NAME** par le nom du compartiment dans lequel vous souhaitez que AppsFlyer importe votre audience.
 
+    <div id="prerequisite" />
+
     > 📘 **Note**
     >
     > La politique doit contenir uniquement le compartiment racine, sans aucun répertoire supplémentaire dans le chemin. Par exemple, la ressource **arn:aws:s3 : ::bucket-name/directory \* n'est pas prise en charge**. Si vous avez besoin de transférer les fichiers vers un répertoire spécifique, reportez-vous à l'étape 14.
@@ -482,6 +484,8 @@ Pour permettre à AppsFlyer d'envoyer des audiences vers Google Ads, les actions
 
 <Accordion title="Leanplum">
 
+<div id="prerequisite-1" />
+
 > 🚧 **Conditions**
 >
 > Pour importer correctement des audiences sur Leanplum :
@@ -611,6 +615,8 @@ Les audiences synchronisées avec MoEngage depuis AppsFlyer seront disponibles s
 4. Sélectionnez **SFTP.**
 5. Entrez les identifiants SFTP.
 6. Si vous souhaitez que les fichiers soient transférés vers un certain chemin de dossier sur le serveur, entrez le chemin avec des séparateurs «/» (par exemple, « appsflyer/audiences »).
+
+   <div id="x-formerly-twitter" />
 
    > 📘 **Note**
    >

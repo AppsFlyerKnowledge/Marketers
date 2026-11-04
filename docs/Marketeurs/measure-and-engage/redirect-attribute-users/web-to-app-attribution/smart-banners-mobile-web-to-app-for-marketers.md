@@ -137,6 +137,10 @@ Suivez ces étapes pour définir une bannière intelligente qui :
 7. [facultatif] Copier la **clé web** (cette clé existe déjà en tant que partie de l'extrait de code).
 8. Cliquez sur **Continuer**.
 
+<div id="attributed-sources" />
+
+<div id="param-table" />
+
 <div id="to-create-website-workplaces-after-the-first-time" />
 
 #### Pour créer des pages web ensuite
@@ -192,6 +196,8 @@ Le groupe de bannières contient une ou plusieurs bannières. De là, vous pouve
 
 9. [Recommandé] Définissez le paramètre d'attribution par défaut **Nom du canal** pour attribuer toutes les installations provenant de la bannière intelligente au canal spécifié. Cela vous permet d'agréger des informations provenant de plusieurs sources média sous le même canal dans le **rapport de cohorte**, le **tableau de bord de présentation**, le **rapport de rétention**, etc.
 10. <span id="2-banner-group-setup-step10"></span>[Facultatif] Activez le **retargeting** si vous prévoyez d'utiliser le groupe de bannières pour enregistrer les réengagements effectués par les utilisateurs qui cliquent sur la bannière. Pour en savoir plus sur le retargeting, consultez le <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">guide d'attribution du retargeting.</Anchor>
+
+    <div id="dismissal-behaviour" />
 
     <div id="important-1" />
 
@@ -421,6 +427,8 @@ Si la réponse aux deux questions est oui, c'est-à-dire s'il y a des règles, e
 Vous pourrez comparer les performances des groupes de bannières A et B en accédant au tableau de bord de performances. Pour obtenir plus de données d'attribution, nous vous recommandons d'ajouter `af_adset` , `af_ad` ou tout autre paramètre d'attribution (à l'exception de `pid`, `c` et `channel`) en définissant une valeur unique pour chaque bannière créative ou groupe de bannières. Avec ces paramètres vous pourrez comparer les performances de chaque groupe de bannières en accédant aux données dans les tableaux de bord et rapports AppsFlyer.
 
 </Accordion>
+
+<div id="if-a-smart-banner-is-deleted-from-a-banner-group-will-the-data-associated-with-that-banner-group-also-be-removed" />
 
 ## FAQ
 

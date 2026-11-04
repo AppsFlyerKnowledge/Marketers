@@ -88,6 +88,8 @@ Exemple :
 * Si vous possédez plusieurs apps, nous vous conseillons de régler toutes vos applications sur le même fuseau horaire. Pour afficher les paramètres de fuseau horaire d'une app, allez dans **Paramètres** > **Paramètres de l'app.**
 * La plupart des rapports et outils d'extraction des données prennent en charge les fuseaux horaires spécifiques aux apps. Cela inclut les rapports multi-applications lorsque toutes les apps sont définies sur le même fuseau horaire spécifique à l'app.
 
+<div id="exception-my-dashboards-cohort-and-activity-metrics" />
+
 <div id="daily-processing" />
 
 #### Traitement quotidien

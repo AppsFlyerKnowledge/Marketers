@@ -24,6 +24,8 @@ x-zendesk:
 
 ![flux de migration](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="compare-measurement-between-appsflyer-and-other-mmps" />
+
 <div id="about-migrating-to-appsflyer-from-other-vendors" />
 
 ## Présentation
@@ -98,6 +100,8 @@ Le SDK AppsFlyer intégré à l'app est le lien entre l'app et la plateforme App
 La migration d'appareil consiste à importer dans AppsFlyer la liste des ID de vos appareils existants (IDFA, IDFV, GAID, CUID). Vous devez effectuer cette opération avant de publier la nouvelle version de l'app, qui inclura le SDK AppsFlyer. Il existe deux manières de migrer des appareils, via [migration attribuée](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) ou via [migration non attribuée](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration).
 
 La migration des appareils vient corriger les erreurs de données qui faisaient que les utilisateurs existants d'une app qui téléchargeaient l'application étaient attribués par votre précédent fournisseur. Par exemple la double facturation SRN, qui a lieu lorsque des utilisateurs initialement attribués à un SRN sous votre précédent fournisseur, et qui se trouvent toujours dans la fenêtre rétrospective, sont attribués une deuxième fois au SRN sous AppsFlyer.
+
+<div id="note" />
 
 <div id="example" />
 

@@ -152,6 +152,8 @@ La méthode de matching la plus complète permet à votre rapport d'inclure tous
 * L'identifiant dans votre source mappé à install\_time doit être au format suivant : **aaaa-MM-jj HH:mm:ss.**
 * **Remarque :** Même si le nom de l'identifiant des données d'attribution est install\_time, il indique en réalité **l'heure de l'événement** lorsqu'il fait référence aux événements de réinstallation, ré-engagement ou ré-attribution.
 
+<div id="note-1" />
+
 <div id="matching-a-single-event" />
 
 #### **Matcher un événement unique**

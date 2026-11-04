@@ -167,6 +167,8 @@ Vous pouvez :
 * Lorsque les détournements sont bloqués en temps réel, les attributions correctes s'affichent dans les tableaux de bord et dans les rapports AppsFlyer (pas seulement dans Protect360). Lorsque les détournements sont identifiés en post-attribution, les attributions correctes s'affichent uniquement dans les données brutes Protect360.
 * Ce tableau peut afficher la correction **vers l**'organique, mais pas **depuis l**'organique.
 
+<div id="affiliate-attribution-model" />
+
 <div id="identified-fraud-chart" />
 
 #### Diagramme des fraudes identifiées

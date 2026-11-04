@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** pour comprendre ce qui se passe lorsqu'un utilisateur équipé d'un appareil iOS clique sur un lien personnalisé OneLink et que Universal Links ne parvient pas à ouvrir l'application.
 
+<div id="note" />
+
 <div id="about-uri-fallback-for-ios" />
 
 ## À propos du schéma d'URI de secours pour iOS

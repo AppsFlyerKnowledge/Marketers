@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** AppsFlyer utilise Google Play Auto Install (PAI) pour attribuer les installations à des campagnes de préchargement, où les marketeurs s’engagent auprès des opérateurs mobile et partenaires de découverte d'apps pour précharger leur app au moment où l'appareil est allumé pour la première fois par l'utilisateur. **Remarque** : Cette méthode d'attribution diffère de l'<Anchor target="_blank" href="/marketers/fr/docs/appsflyer-factory-preinstall-using-manifest-android">attribution de la préinstallation APK.</Anchor>
 
+<div id="note" />
+
 <div id="pai-preload-attribution" />
 
 ## Attribution des préchargements via PAI
@@ -62,6 +64,8 @@ Les données brutes incluent les champs suivants :
 * Match\_type = preload\_pai
 * Campaign\_name = campagne de préchargement par `<preloadpartner ID>`
 
+<div id="note-1" />
+
 <div id="set-up-google-play-auto-install-pai-preload-attribution" />
 
 ### Configurer l'attribution de préchargement de Google Play Auto Install (PAI)
@@ -74,6 +78,8 @@ Les données brutes incluent les champs suivants :
 4. Définissez la longueur de la **fenêtre rétrospective de préchargement.** Période : 1-180 jours
 5. Cliquez sur **Enregistrer l'intégration**.
 6. Informez le partenaire de préchargement que vous êtes en capacité d'attribuer ses campagnes.
+
+<div id="note-2" />
 
 <div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
 

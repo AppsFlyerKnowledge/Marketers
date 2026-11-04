@@ -222,6 +222,8 @@ Lorsque le tag automatique est activé, l'URL contient le paramètre *GCLID*.
 1. Obtenez les données GCLID du param **af\_sub[1-5]** via le CSV ou l'API Push en temps réel pour chaque installation.
 2. Téléchargez les données GCLID vers Google <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">manuellement</Anchor> ou via l'<Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">API Google Ads</Anchor>.
 
+<div id="tiktok-ttclid-x-twclid-and-snapsccid" />
+
 <div id="note" />
 
 > 📘 **Remarque**
@@ -279,6 +281,8 @@ Les liens d'attribution AppsFlyer peuvent être utilisés lorsque la source méd
 **Action** Utilisez l’argument **urlSkipList** pour répertorier le paramètre **af\_r**.
 
 **Résultat**: Lorsque le Smart Script trouve le paramètre **af\_r** dans le lien entrant, il ne produit pas d'URL sortant et le développeur doit décider quel lien placer en tant qu'URL sortant, puis l'intégrer.
+
+<div id="seo-referrer-mapping" />
 
 <div id="example-1" />
 

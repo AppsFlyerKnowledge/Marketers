@@ -62,6 +62,10 @@ L'attribution des revenus publicitaires prend en charge différentes méthodes d
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="note" />
+
 <div id="implementation" />
 
 ## Implémentation
@@ -157,6 +161,8 @@ La granularité agrégée des revenus publicitaires fonctionne comme suit :
 | --- | --- | --- |
 | Événement d'app unique de monétisation | <ul><li>Un événement d'app est défini au moment de l'affichage de la publicité</li><li>Cela fournit un nombre distinct d'actions utilisateur, ce qui permet d'effectuer des calculs eRPA supérieurs</li><li>On peut augmenter le niveau de précision en créant un événement in-app différent pour chaque réseau de monétisation, ce qui permet de ventiler les revenus par réseau de monétisation<br />. Voir le tableau suivant pour une explication avancée.</li></ul> | <ul><li>Nécessite que le développeur modifie l'app</li><li>Les revenus peuvent être divisés par réseau de monétisation dans le tableau de bord</li></ul> |
 | af\_app\_opened event | <ul><li>L'événement af\_app\_opened est envoyé par le SDK Appsflyer par défaut</li><li>Est déclenché par chaque session d'utilisateur</li></ul> | <ul><li>Aucune modification requise dans l'app</li><li>Implémentation rapide</li><li>Les valeurs eRPA sont significativement déformées à moins que vous n'affichiez qu'une seule app par session</li><li>Pas de répartition des revenus par réseau de monétisation</li><li>L'événement concerne tous les utilisateurs qui lancent l'app, et dans le cas ou vous n'avez aucune indication de l'intention de l'utilisateur de regarder les publicités ou non</li></ul> |
+
+<div id="note-2" />
 
 <div id="comparison-of-in-app-event-methods" />
 
@@ -323,6 +329,30 @@ Les champs des rapports sur les revenus publicitaires sont remplis :
   * **Contexte :** les champs ayant une signification similaire dans d'autres rapports de données brutes. Par exemple, nom de l'événement, valeur de l'événement, devise.
 * Correspond à l'attribution de l'événement à la source média qui a drainé l'utilisateur. Ce qui signifie que ces champs sont copiés depuis l'événement de conversion qui a drainé l'utilisateur. Par exemple, la source média et la campagne. Ces champs ne figurent pas dans le tableau qui suit.
 
+<div id="customer_user_id" />
+
+<div id="mediation_network" />
+
+<div id="impressions" />
+
+<div id="monetization_network" />
+
+<div id="segment" />
+
+<div id="ad_unit" />
+
+<div id="country" />
+
+<div id="event_revenue_xxx" />
+
+<div id="event_revenue_currency" />
+
+<div id="event_revenue" />
+
+<div id="event_name" />
+
+<div id="event_time" />
+
 <div id="fields-populated-by-ad-revenue" />
 
 #### Champs alimentés par les revenus publicitaires
@@ -340,6 +370,8 @@ Les champs des rapports sur les revenus publicitaires sont remplis :
 | monetization\_network | Réseau de monétisation | Spécifique | Réseau qui envoie la publicité |
 | Impressions | Impressions | Spécifique | Nombre de fois où l'utilisateur a vu la publicité |
 | mediation\_network | Réseau de médiation | Spécifique | Réseau de médiation qui signale l'événement à AppsFlyer |
+
+<div id="h_01KRKHJN2G5SER73D3EZB14GDS" />
 
 <div id="fields-by-network" />
 

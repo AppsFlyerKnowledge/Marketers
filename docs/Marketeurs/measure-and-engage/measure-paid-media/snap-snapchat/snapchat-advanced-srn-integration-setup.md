@@ -69,6 +69,8 @@ L'intégration prend en charge l'attribution des clics et des impressions, les c
 Lors de votre **première visite** ici, vous devez activer la fonction **Activer le partenaire** pour permettre la configuration.  
 Pour plus de détails sur l'activation des partenaires, cliquez <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">ici</Anchor>.
 
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### Paramètres généraux
@@ -111,6 +113,12 @@ Vous pouvez personnaliser cette valeur en heures (1 à 23) ou en jours (1 à 7).
 Obtenez plus de détails concernant <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">l'attribution post vue ici</Anchor>.
 
 <Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
+
+<div id="note-3" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="note-2" />
 
 <div id="re-engagement-attribution" />
 
@@ -171,6 +179,20 @@ Mappage des événements AppsFlyer avec le partenaire via postback. Si l'envoi d
 <Accordion title="Onglet Lien d'attribution">
 
 Les liens d'attribution ne sont pas disponibles pour Snapchat.
+
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
+<div id="note-6" />
+
+<div id="note-5" />
+
+<div id="note-1" />
+
+<div id="install-attribution" />
+
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -272,6 +294,8 @@ En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-in
 
 </Accordion>
 
+<div id="note-7" />
+
 <div id="deep-linking-with-snapchat" />
 
 ## Deep linking avec Snapchat
@@ -310,6 +334,10 @@ Vous pouvez accéder aux données de conversion des utilisateurs de Snapchat en 
 <Anchor target="_blank" href="/marketers/fr/docs/conversion-data-payloads-and-scenarios#snapchat-conversion-data">Les données de conversion Snapchat</Anchor> comprennent le paramètre **af\_dp**, qui vous permet d'utiliser le deep linking et de diffuser du contenu personnalisé en fonction de l'engagement de l'utilisateur avec votre publicité dans Snapchat.
 
 Vous pouvez également utiliser d'autres paramètres de données de conversion tels que **af\_adset** ou **af\_channel**.
+
+<div id="important" />
+
+<div id="agency-limitations" />
 
 <div id="set-up-snapchat-for-agencies" />
 

@@ -117,6 +117,8 @@ Pour en savoir plus sur les différents modes de mesure, consultez les sections 
 
 <div id="important" />
 
+<div id="note" />
+
 > 🚧 **Important !**
 >
 > La définition des valeurs de conversion dans SKAN Conversion Studio doit être effectuée par un admin ou un utilisateur de compte disposant des autorisations **de gestion** dans **SKAN Conversion Studio**.
@@ -720,6 +722,8 @@ Dans le tableau :
 * Les actions multiples sont séparées par des >
 * La valeur entre parenthèses () correspond à la priorité définie par AppsFlyer une fois que l'utilisateur a réalisé l'action. En fonction de la priorité AppsFlyer met à jour la CV dans l'app.
 
+<div id="note-1" />
+
 <div id="user-journey-scenarios" />
 
 #### Exemples de parcours utilisateur
@@ -843,6 +847,14 @@ Dans le tableau :
   </tbody>
 </Table>
 
+<div id="skan-schema-analysis" />
+
+<div id="events-tab" />
+
+<div id="revenue-tab" />
+
+<div id="conversion-values-tab" />
+
 <div id="example-c-engagement-measurement" />
 
 #### Exemple C  : mesure de l'engagement
@@ -947,6 +959,26 @@ Si vous souhaitez appliquer les mêmes configurations de valeurs de conversion S
 * L'API Studio de conversion SKAN n'est pas disponible pour les agences.
 
 </Accordion>
+
+<div id="ssot-mapping-patterns" />
+
+<div id="support-anonymized-users" />
+
+<div id="conversion-value-decrease" />
+
+<div id="faq" />
+
+<div id="how-to-configure-mapping-patterns" />
+
+<div id="pairing" />
+
+<div id="half-and-half" />
+
+<div id="important-1" />
+
+<div id="examples" />
+
+<div id="note-2" />
 
 <div id="additional-procedures" />
 

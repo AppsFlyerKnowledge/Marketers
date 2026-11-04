@@ -36,6 +36,16 @@ x-zendesk:
   * Sélectionner une devise
   * Sélectionner un fuseau horaire
 
+<div id="raw-data-reports-nonorganic" />
+
+<div id="protect360-fraud" />
+
+<div id="ad-revenue-raw-data" />
+
+<div id="retargeting" />
+
+<div id="raw-data-reports-organic" />
+
 <div id="raw-data-reports-available-via-pull-api" />
 
 #### Rapports de données brutes disponibles via API Pull

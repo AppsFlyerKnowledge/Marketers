@@ -43,6 +43,18 @@ Ce qui suit détaille les termes relatifs à l'actualisation des données utilis
 
 </Accordion>
 
+<div id="h_01K9CROSSPLATFORMREPORT" />
+
+<div id="conversion-report" />
+
+<div id="advanced-reports" />
+
+<div id="note-1" />
+
+<div id="note" />
+
+<div id="advanced-raw-data-reports-beta" />
+
 <div id="raw-data-reports" />
 
 ## Rapports de données brutes
@@ -158,6 +170,10 @@ Cf <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attr
 Cf <Anchor target="_blank" href="/marketers/fr/docs/ctv-pc-and-console-data-via-data-locker">Les données des plateformes CTV, PC et console via Data Locker</Anchor>
 
 </Accordion>
+
+<div id="creative-optimization-etl" />
+
+<div id="advanced-aggregated-reports" />
 
 <div id="aggregated-reports" />
 

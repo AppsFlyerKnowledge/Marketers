@@ -69,6 +69,8 @@ Dans AppsFlyer, un événement attribuable se produit lorsque l'un des événeme
   * **RÉENGAGEMENT**
   * **Réattribution**
 
+<div id="attribution-method-priorities-attribution-waterfall" />
+
 <div id="attribution-methods" />
 
 ## Méthodes d'attribution
@@ -230,6 +232,10 @@ Voir les sections suivantes pour le détail des cas où des méthodes d'attribut
 <table><thead><tr><th rowspan="2">Source média</th><th colspan="3">Méthode d'attribution</th></tr><tr><th>Android</th><th>iOS</th><th><strong>Plateformes CTV, PC et console</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">Les SRN</a></td><td><p>Correspondance du Device ID</p></td><td><ul><li>Correspondance du Device ID</li><li>AAP (IOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td><p>Correspondance du Device ID</p></td></tr><tr><td><ul><li>Réseaux publicitaires (non SRN) via des <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">liens d'attribution pour les partenaires</a> </li><li><span>Plateformes CTV, PC et console</span></li></ul></td><td><ul><li>Référent d'installation</li><li>Correspondance du Device ID</li><li>Modélisation probabiliste</li></ul></td><td><ul><li>Correspondance du Device ID</li><li>Modélisation probabiliste (avant iOS 14.5)</li><li>AAP (IOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><p><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Préinstallé sur l'appareil</a></p></td><td>Préinstallations</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="engaged-view-attribution" />
+
+<div id="engaged-click-attribution" />
 
 <div id="user-engagement-attribution-types" />
 

@@ -164,6 +164,18 @@ part-<number>
 | bid\_amount | Composant des propriétés de la campagne. <Anchor target="_blank" href="/marketers/fr/docs/campaign-properties-in-cost-etl-reports">En savoir plus</Anchor> | Non | Entier | - |
 | original\_bid\_amount | Composant des propriétés de la campagne. <Anchor target="_blank" href="/marketers/fr/docs/campaign-properties-in-cost-etl-reports">En savoir plus</Anchor> | Non | Entier | - |
 
+<div id="edit-or-change-connection" />
+
+<div id="set-up-cost-etl" />
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
+
+<div id="change-data-locker-connection" />
+
+<div id="edit-connection" />
+
+<div id="procedures" />
+
 <div id="metrics" />
 
 #### Métriques
@@ -296,6 +308,12 @@ Par Défaut, lorsque AppsFlyer écrit des objets dans votre compartiment AWS, le
 6. Cliquez sur **Enregistrer**.
 
 </Accordion>
+
+<div id="combine-cost-etl-and-cohort-reports" />
+
+<div id="combine-geo-report-and-all-cost-report" />
+
+<div id="report-schedule" />
 
 <div id="best-practices" />
 

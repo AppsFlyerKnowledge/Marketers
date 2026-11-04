@@ -72,6 +72,10 @@ Pour obtenir une description détaillée de l'en-tête de page de configuration 
 
 L'**onglet Intégration** est divisé en différentes sections, comme indiqué ci-dessous. Le <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">partenaire doit être activé</Anchor> lors de sa première visite pour permettre sa configuration.
 
+<div id="note-1" />
+
+<div id="advanced-privacy" />
+
 <div id="ad-account-connected" />
 
 ### Compte publicitaire connecté
@@ -90,6 +94,8 @@ Vous pouvez personnaliser cette valeur en heures (de 1 à 23) ou en jours (de 1 
 
 ![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="reinstall-settings" />
+
 <div id="view-through-attribution-lookback-window" />
 
 ### Fenêtre rétrospective d'attribution post vue
@@ -99,6 +105,8 @@ Ce curseur vous permet de définir le **délai maximum entre l'impression et l'
 Vous pouvez personnaliser cette valeur en heures (1 à 23) ou en jours (1 à 7). Nous recommandons de définir la durée de la fenêtre d'attribution sur 1 jour, afin de garantir la correspondance avec X Ads.
 
 ![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+
+<div id="important" />
 
 <div id="re-engagement-settings" />
 
@@ -125,6 +133,8 @@ Pour commencer à attribuer des impressions d'annonces de retargeting, activez *
 Définissez la durée de la **Fenêtre rétrospective de réengagement post vue** (la période maximale pendant laquelle une publicité est vue et pendant laquelle un utilisateur reciblé peut être attribué à la publicité). Vous pouvez définir la valeur en heures (jusqu'à 23) ou en jours (1-7) :
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+
+<div id="ignore-active-users-for-retargeting" />
 
 <div id="re-engagement-window" />
 
@@ -221,6 +231,22 @@ Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre 
 * **Autoriser l'accès à votre tableau de bord Protect360** : valable uniquement pour les données Protect360 du partenaire, attendu que cette fonctionnalité est activée chez l'annonceur
 
 En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">l'octroi d'autorisations à un réseau publicitaire.</Anchor>
+
+<div id="twitter-user-privacy" />
+
+<div id="twitter-ads-and-appsflyer-skan-interoperation" />
+
+<div id="webtoapp-measuring-app-activity-for-nonapp-campaigns-android-only" />
+
+<div id="mobile-app-promotion-on-x-ads" />
+
+<div id="traits-and-limitations" />
+
+<div id="advanced-srn-parameter-names" />
+
+<div id="important-1" />
+
+<div id="x-ads-features" />
 
 <div id="agency-permissions" />
 

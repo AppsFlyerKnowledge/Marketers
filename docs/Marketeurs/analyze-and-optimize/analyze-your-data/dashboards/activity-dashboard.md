@@ -42,6 +42,10 @@ x-zendesk:
 >
 > Vous voulez en savoir plus sur le tableau de bord d’activité ? Suivez cette <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">brève formation sur le portail d'apprentissage AppsFlyer.</Anchor>
 
+<div id="conversion-rate" />
+
+<div id="average-ecpi" />
+
 <div id="dashboard-features-and-layout" />
 
 ## Fonctionnalités et contenu du tableau de bord

@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **En bref** : en savoir plus sur la structure et les paramètres des liens d’attribution.
 
+<div id="important" />
+
 <div id="overview" />
 
 ## Présentation
@@ -86,6 +88,10 @@ Les liens d’attribution sont générés via **OneLink** ou à partir d'un **li
 
 * Les paramètres énumérés sont disponibles pour être utilisés dans le lien d'attribution.
 * La valeur dans la colonne **Type de champ** correspond à la limite de caractères de la valeur du paramètre. Pour des informations sur les limites de la longueur des valeurs du paramètre, cliquez <Anchor target="_blank" href="/marketers/fr/docs/raw-data-field-dictionary">ici.</Anchor>
+
+<div id="af_engagement_destination" />
+
+<div id="af_ad_format" />
 
 <div id="attribution-link-parametersua-and-retargeting" />
 
@@ -190,6 +196,8 @@ En fonction du type de publicités, vous pouvez également envoyer le paramètre
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | S/O | Identifiant de publicité Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Liste personnalisée des stores dans Google Console | chaîne |
 
+<div id="md5_idfa" />
+
 <div id="ios-specific-parameters" />
 
 ### Paramètres spécifiques à iOS
@@ -217,6 +225,8 @@ En fonction du type de publicités, vous pouvez également envoyer le paramètre
 > ```
 
 Tous les paramètres sont disponibles dans le <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">Rapport d'installations</Anchor> et les <Anchor target="_blank" href="/marketers/fr/docs/analytics-and-aggregate-reporting-apis">Analyses, Rapports et API</Anchor>.
+
+<div id="note" />
 
 <div id="custom-parameters" />
 
@@ -331,6 +341,8 @@ Les paramètres sont :
 * `Ensemble de publicités (af_adset=)`
 * `Nom de publicité (af_ad=)`
 
+<div id="frequently-asked-questions" />
+
 <div id="example-2" />
 
 > 📄 **Exemple**
@@ -341,6 +353,22 @@ Les paramètres sont :
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="telegram-webview-attribution" />
+
+<div id="uri-scheme-validity-requirements" />
+
+<div id="a-popup-appears-when-clicking-on-a-uri-scheme-link-from-chrome-browser-on-ios" />
+
+<div id="deep-linking-is-not-supported-in-the-android-naver-blog-app" />
+
+<div id="agencies" />
+
+<div id="url-characteravailable" />
+
+<div id="redirection-parameters" />
+
+<div id="special-characters" />
 
 <div id="traits-and-limitations" />
 

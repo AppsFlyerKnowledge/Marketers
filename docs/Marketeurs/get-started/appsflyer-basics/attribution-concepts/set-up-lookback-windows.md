@@ -64,6 +64,14 @@ Nous présentons ci-après le processus de configuration de la fenêtre d'attrib
 <Tabs>
 <Tab title="Fenêtre d'attribution du SRN">
 
+<div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
+
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
+<div id="important" />
+
 <div id="attribution-lookback-window-for-srns" />
 
 ### Attribution de la fenêtre d'attribution pour les SRN
@@ -94,6 +102,8 @@ Voir ci-dessous chaque fenêtre d'attribution SRN :
 <Tab title="Fenêtre d'attribution des liens d'attribution">
 
 <div id="attribution-lookback-window-with-attribution-links" />
+
+<div id="tip" />
 
 ### Fenêtre d'attribution rétrospective avec liens d'attribution
 
@@ -138,6 +148,8 @@ Le graphique peut vous donner une meilleure idée du nombre d'utilisateurs qui i
 La majorité des utilisateurs, un peu plus de 97 %, qui lancent l'application le font dans les sept jours suivant l'affichage de la publicité. Les 2 % restants le font entre le 7ème jour et la fin de la fenêtre d'attribution (30ème jour).
 
 Près de 62 % des utilisateurs qui lancent l'application le font dans les 15 minutes qui suivent la diffusion de la publicité. 72 % des utilisateurs le font dans la première heure.
+
+<div id="tip-1" />
 
 <div id="scenarios-and-examples" />
 

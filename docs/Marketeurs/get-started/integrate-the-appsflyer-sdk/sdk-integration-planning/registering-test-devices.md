@@ -71,6 +71,22 @@ Les identifiants des appareils sont les suivants :
 
 </Accordion>
 
+<div id="android::7db075c7" />
+
+<div id="ios::41efa11e" />
+
+<div id="windows::6c6af14b" />
+
+<div id="ios::80f176b3" />
+
+<div id="android::db8cc168" />
+
+<div id="windows" />
+
+<div id="ios" />
+
+<div id="android" />
+
 <div id="managing-test-device-registration" />
 
 ## Gestion de l'enregistrement des appareils de test

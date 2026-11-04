@@ -34,6 +34,12 @@ Depuis le Marketplace partenaires, vous pouvez [accéder aux intégrations de pa
 >
 > Le Marketplace partenaires est actuellement disponible pour les spécialistes du marketing, mais pas encore pour les agences et les partenaires.
 
+<div id="what-you-can-do-from-the-active-integrations-tab" />
+
+<div id="note" />
+
+<div id="manage-active-integrations" />
+
 <div id="quick-start" />
 
 ## Démarrage rapide
@@ -67,6 +73,8 @@ Pour vous aider à trouver plus facilement les partenaires les mieux adaptés à
 * [**Partenaires de la Data Clean Room (DCR) :** des partenaires technologiques qui fournissent des données de première et de tierce partie que vous pouvez utiliser pour enrichir vos données et optimiser les performances de vos campagnes.](#partenaire-dcr)
 * **Populaires dans votre catégorie :** partenaires de votre catégorie principale avec les intégrations les plus actives.
 * **Dernière visite :** partenaires que vous avez récemment consultés sur le Marketplace.
+
+<div id="filter-the-list-of-partners" />
 
 <div id="partner-cards" />
 
@@ -124,6 +132,14 @@ Utilisez la barre de recherche du Marketplace partenaires pour rechercher des pa
 * Un point vert ou orange à gauche du logo du partenaire indique le <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#integration-activity-indication">niveau d'activité</Anchor> pour l'intégration.
 * Une fois que vous avez recherché et visité des partenaires, les cinq résultats les plus récents s'affichent dans vos recherches suivantes.
 * Vous pouvez également effectuer une recherche [dans vos intégrations de partenaires actifs](/docs/partner-integrations#intégrations-actives).
+
+<div id="note-1" />
+
+<div id="contact-the-partner" />
+
+<div id="what-you-can-see-on-the-partner-page" />
+
+<div id="what-you-can-do-from-the-partner-page" />
 
 <div id="learn-about-partners" />
 
@@ -191,6 +207,8 @@ Fournit des informations sur le niveau de service du partenaire selon les critè
 
 Les graphiques par défaut affichent les 10 principales catégories et zones géographiques dans lesquelles le partenaire est actif, sur toutes les plate-formes. Vous pouvez modifier les paramètres par défaut en sélectionnant jusqu'à 10 autres zones géographiques ou catégories, ainsi que toutes les plates-formes disponibles dans le coin supérieur droit.
 
+<div id="note-2" />
+
 <div id="integrate-with-a-new-partner" />
 
 ## Intégration avec un nouveau partenaire
@@ -210,11 +228,15 @@ Après [avoir découvert de nouveaux partenaires](/docs/partner-integrations#dé
 
 Une fois l'intégration définie, le partenaire devient <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#active-partners">actif</Anchor>. Vous pouvez ensuite filtrer la page pour afficher uniquement vos partenaires actifs en cliquant sur **Afficher les partenaires actifs dans les sections**.
 
+<div id="partner-verification" />
+
 <div id="invite-new-partners-to-appsflyer" />
 
 ### Inviter de nouveaux partenaires dans AppsFlyer
 
 Si le réseau publicitaire avec lequel vous travaillez n’est pas encore intégré à AppsFlyer, vous pouvez lui envoyer un lien d’invitation.
+
+<div id="note-3" />
 
 <div id="validation-period-for-new-integrations" />
 

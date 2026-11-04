@@ -205,6 +205,8 @@ Pour modifier le bundle dans lequel une app est incluse, supprimez le bundle ini
 
 <Accordion title="Si je supprime un bundle, que se passe-t-il ?">
 
+<div id="page-404" />
+
 <div id="faqs-what-happens-if-i-delete-a-bundle" />
 
 #### FAQ Que se passe-t-il si je supprime un bundle ?

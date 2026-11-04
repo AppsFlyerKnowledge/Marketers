@@ -53,6 +53,10 @@ Un événement in-app comprend un nom d'événement et peut inclure des paramèt
 >
 > Voulez-vous en savoir plus sur les évènements in-app ? Suivez cette <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">formation éclaire</Anchor> sur le portail d'apprentissage AppsFlyer.
 
+<div id="note" />
+
+<div id="revenue-in-in-app-events" />
+
 <div id="predefined-and-custom-events" />
 
 <Accordion title="Événements prédéfinis et personnalisés">
@@ -96,6 +100,8 @@ La valeur des revenus ne doit contenir que des chiffres (et un point décimal, s
 **af\_currency** représente la devise indiquée dans **af\_revenue** (ou **af\_price**). Si **af\_currency** ne figure pas dans les paramètres de l’événement, AppsFlyer l'envoie avec la valeur par défaut USD.
 
 Vous pouvez utiliser **af\_price** comme paramètre monétaire qui ne sera pas considéré comme revenu (par exemple, dans un événement « Ajouter au panier »). Ce paramètre renvoie au prix de chaque article individuel. Le montant total des achats s’affiche sous le paramètre af\_revenue.
+
+<div id="note-1" />
 
 ### Devise du revenu
 
@@ -198,6 +204,8 @@ Vous pouvez envoyer des événements in-app à AppsFlyer de différentes manièr
 * **<Anchor target="_blank" href="/marketers/fr/docs/server-to-server-events-api-for-mobile-s2s-mobile">API de serveur à serveur :</Anchor>** utilisez l'API de serveur à serveur pour envoyer directement à AppsFlyer des événements qui se produisent en dehors de l'app mobile. Par exemple, si un utilisateur est actif sur les interfaces web et mobile, vous pouvez enregistrer des événements provenant des deux sources puis les attribuer au même utilisateur dans AppsFlyer. Il peut s'agir d'un événement in-app ou d'un autre événement, comme les événements de site, événements de centre d'appels ou bien encore les achats dans votre boutique de matériaux de construction.
 * **<Anchor target="_blank" href="/marketers/fr/docs/legacy-receipt-validation-for-in-app-purchases">Validation de la réception</Anchor> :** il s'agit d'un mécanisme sécurisé où la plate-forme de paiement, par exemple Apple ou Google, vérifie que l'achat in-app a eu lieu comme indiqué. La validation de l'achat est le tout premier outil pour empêcher les événement de revenus frauduleux. Cela vous permet également de voir le revenu réel et d'éliminer les achats in-app incomplets.
 * **<Anchor target="_blank" href="/marketers/fr/docs/in-app-events-for-hybrid-apps">Apps hybrides</Anchor>** : combinent des vues natives et du contenu HTML, et peuvent également enregistrer des événements in-app. Cependant, étant donné que le SDK peut uniquement envoyer des événements du côté natif, les développeurs doivent transférer toutes les données d'événement au code natif.
+
+<div id="note-2" />
 
 <div id="setting-up-in-app-events" />
 
@@ -365,6 +373,12 @@ Si un utilisateur initie un évènement lorsque la connexion Internet est indisp
 3. Une fois la réponse positive suivante reçue, l'événement stocké est renvoyé au serveur.
 4. S'il y a plusieurs événements dans le cache, ils sont envoyés au serveur les uns après les autres.
 
+<div id="h_01HDBZW9XFB9TAT8W4CGNP1892" />
+
+<div id="h_01KSMX2ECGTDXQP3G9PZW1PFQD" />
+
+<div id="important" />
+
 <div id="note-3" />
 
 > 📘 **Remarque**
@@ -463,6 +477,8 @@ Deux événements sont considérés comme identiques si les champs suivants sont
 * Valeur de l'événement
 * ID d'app
 * ID AppsFlyer
+
+<div id="see-also" />
 
 <div id="note-4" />
 

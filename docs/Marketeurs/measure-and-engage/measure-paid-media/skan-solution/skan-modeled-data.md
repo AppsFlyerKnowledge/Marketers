@@ -38,6 +38,8 @@ Les données modélisées par SKAN résolvent ces problèmes :
 
 **Remarque** : Lorsque vous modifiez votre schéma de valeurs de conversion, les données sont disponibles sous 2 jours.
 
+<div id="inapp-event-ltv" />
+
 <div id="modeled-data-types-and-availability" />
 
 ## Types de données modélisées et disponibilité

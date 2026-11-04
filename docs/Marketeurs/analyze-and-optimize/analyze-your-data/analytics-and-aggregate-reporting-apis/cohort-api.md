@@ -29,6 +29,20 @@ x-zendesk:
 
 > **En bref :** L'API de rapports des cohortes donne aux annonceurs un moyen pratique pour obtenir les données de cohorte. L'API permet d'intégrer les données de cohorte dans les BI et les systèmes d'automatisation marketing.
 
+<div id="per_user" />
+
+<div id="aggregation_type" />
+
+<div id="preferred_timezone" />
+
+<div id="preferred_currency" />
+
+<div id="kpis" />
+
+<div id="groupings" />
+
+<div id="bearer" />
+
 <div id="cohort-api" />
 
 ## API de rapports des cohortes

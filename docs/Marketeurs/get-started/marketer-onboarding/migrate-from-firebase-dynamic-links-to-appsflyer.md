@@ -27,6 +27,12 @@ x-zendesk:
 
 Avec l'<Anchor target="_blank" href="https://firebase.google.com/support/dynamic-links-faq">annonce de Google</Anchor> de la fermeture de Firebase Dynamic Links, c'est le moment idéal pour migrer facilement vers AppsFlyer.
 
+<div id="step-3-create-a-onelink-template" />
+
+<div id="step-2-add-your-app" />
+
+<div id="step-1-create-an-appsflyer-account" />
+
 <div id="migrate-from-firebase-to-appsflyer" />
 
 ## Comment migrer de Firebase vers AppsFlyer
@@ -76,7 +82,11 @@ Le SDK AppsFlyer intégré à l'application est le lien entre l'application et l
 
 Intégrez le SDK AppsFlyer dans votre application en suivant les étapes ci-dessous.
 
+<div id="step-5-understand-parameter-mapping" />
+
 <div id="appsflyer-sdk-integration-steps" />
+
+<div id="step-4-set-up-the-appsflyer-sdk" />
 
 <Accordion title="Étapes d'intégration du SDK AppsFlyer">
 
@@ -111,6 +121,8 @@ Un mappage correct et une bonne compréhension des paramètres correspondants ga
 Le tableau ci-dessous répertorie tous les paramètres de Firebase avec leurs équivalents AppsFlyer.
 
 Utilisez ce tableau comme référence pour tous les paramètres que vous utilisez actuellement lors de votre migration vers AppsFlyer.
+
+<div id="step-6-create-onelink-links-with-mapped-parameters" />
 
 <div id="note" />
 

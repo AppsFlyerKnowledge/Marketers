@@ -35,11 +35,43 @@ Les tableaux de bord d'<Anchor target="_blank" href="/marketers/fr/docs/creative
 
 Alimenté par l'IA, le **tableau de bord Découverte** donne à votre équipe créative toutes les informations dont elle a besoin pour produire des créations performantes. Il fournit des données granulaires sur les performances, ce qui permet de prendre des décisions éclairées basées sur les éléments ou caractéristiques d'une création qui contribuent à son efficacité. Ce tableau de bord vous permet de produire des créations performantes basées sur des données et optimisées pour un impact maximal. En fonction des principaux filtres sélectionnés, vous pouvez afficher une galerie de vos créations ou les regrouper par scènes ou éléments.
 
+<div id="set-discovery-card-metrics" />
+
+<div id="set-up-the-dashboard" />
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
+
 <div id="get-started" />
 
 ## Démarrer
 
 Si vous n'avez pas encore configuré l'optimisation créative, vous trouverez des instructions <Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide#démarrer">ici</Anchor>.
+
+<div id="traits-and-limitations" />
+
+<div id="discovery-card-drilldown" />
+
+<div id="texts" />
+
+<div id="coming-soon--smart-tags" />
+
+<div id="discovery-ai-search" />
+
+<div id="additional-information" />
+
+<div id="notes" />
+
+<div id="combining-properties" />
+
+<div id="narrative-and-high-level-concepts" />
+
+<div id="audio" />
+
+<div id="text" />
+
+<div id="visual" />
+
+<div id="what-you-can-search-for" />
 
 <div id="concepts" />
 

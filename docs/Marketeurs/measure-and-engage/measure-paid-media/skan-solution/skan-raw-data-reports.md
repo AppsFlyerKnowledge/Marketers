@@ -63,6 +63,18 @@ Les types de rapports disponibles sont les suivants :
 * Champs d'enrichissement non obligatoires tels que campaign\_name, ad\_network\_campaign\_id, ip, que le réseau publicitaire n'a pas fournis.
 * Apple n'a pas divulgué les données en raison de ses politiques de seuil. Champs tels que source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
 
+<div id="decoded-event::5dac9cbb" />
+
+<div id="decoded-event::b8f2b4a4" />
+
+<div id="decoded-event::5c7e459f" />
+
+<div id="decoded-event" />
+
+<div id="postback::315d5a62" />
+
+<div id="postback" />
+
 <div id="skan-raw-data-report-format-and-content" />
 
 ## Format et contenu du rapport sur les données brutes SKAN

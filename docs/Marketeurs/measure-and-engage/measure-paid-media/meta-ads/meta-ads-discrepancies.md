@@ -78,6 +78,8 @@ Comme Meta ads ne transmet aucune données de niveau utilisateur, il peut arrive
 
 Toutefois, pour l'attribution posts clic, si l'annonce dirige les utilisateurs vers le Google Play Store, les champs d'attribution sont disponibles pour les annonceurs dans le référent d'installation Google. Les champs fournis via le référent peuplent les rapports de données brutes AppsFlyer mis à votre disposition et permettent à AppsFlyer d'attribuer des utilisateurs qui n'ont pas d'identifiant publicitaire (option LAT activée).
 
+<div id="different-event-count" />
+
 <div id="in-app-events-differences" />
 
 ## Discordances entre les événements in-app
@@ -132,6 +134,8 @@ De même, si vous utilisez la solution antifraude AppsFlyer, Protect360, vous po
 >
 > Jeff, directeur AU de GreatApp, crée une campagne appelée SPNA, qui cible uniquement les hispanophones basés en Amérique du Nord. Pour ce faire, Jeff définit une règle de validation qui accepte exclusivement les utilisateurs basés au Canada et aux États-Unis.
 > Lorsqu'un utilisateur Meta ads résidant en Espagne clique et installe l'app, Meta ads s'auto-attribue l'installation, tandis qu'AppsFlyer rejette toutes les installations qui ne suivent pas la règle de validation.
+
+<div id="meta-probabilistic-modeling-aem-discrepancies-in-ios-apps" />
 
 <div id="sdk-related-discrepancies" />
 

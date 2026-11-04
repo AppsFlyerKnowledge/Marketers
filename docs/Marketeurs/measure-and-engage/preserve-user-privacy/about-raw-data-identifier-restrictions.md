@@ -38,6 +38,16 @@ AppsFlyer limite la présence de certains champs dans les rapports de données b
 
 Le tableau suivant répertorie les restrictions pour chaque source média.
 
+<div id="x-ads-formerly-twitter" />
+
+<div id="uber" />
+
+<div id="reddit" />
+
+<div id="discord" />
+
+<div id="amazon-ads" />
+
 <div id="note" />
 
 > 📘 **Remarque**
@@ -56,6 +66,8 @@ Le tableau suivant répertorie les restrictions pour chaque source média.
 | <span id="snapchat"></span>Snapchat | <ul><li>Depuis le 1er mars 2023, les désinstallations de Snapchat ne sont pas incluses dans les rapports de données brutes.</li><li>Depuis le 13 septembre 2023, l'attribution post-vue est soumise à limitation. Les champs suivants **sont renseignés** dans les outils de transmission des données brutes :<ul><li>Source média (snapchat\_int)</li><li>Canal</li><li>Type de touch attribué (impression)</li><li>Date de touch attribué (date uniquement - « jj/mm/aaaa »)</li><li>La campagne est marquée comme « *restreinte* »</li></ul></li></ul> |
 | <span id="tiktok-for-business"></span>TikTok pour les entreprises | <ul><li>Entre le 28 juillet 2021 et le 23 octobre 2021, la consultation des données d'attribution post-vue est restreinte.</li><li>Depuis le 23 octobre 2021, l'attribution post-vue est soumise à limitation. Les champs suivants **sont renseignés** dans les outils de transmission des données brutes :<ul><li>Source média (bytedanceglobal\_int et tiktokglobal\_int)</li><li>Canal</li><li>Type de touch attribué (impression)</li><li>Date de touch attribué (date uniquement - « jj/mm/aaaa »)</li><li>La campagne est marquée comme « *restreinte* »</li></ul></li></ul> |
 | <span id="twitter"></span>Twitter | Dans certains cas, Twitter refuse la mise à disposition des données brutes sur la plateforme AppsFlyer. Lorsque cela se produit, les événements n'apparaissent pas dans les rapports de données brutes. |
+
+<div id="delivery-of-raw-data" />
 
 <div id="raw-data-context" />
 

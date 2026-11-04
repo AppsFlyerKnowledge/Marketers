@@ -32,6 +32,8 @@ x-zendesk:
 
 L'intégration d'un partenaire permet d'importer en continu dans l'Optimisation des créations toutes les créations issues des campagnes menées par ce même partenaire.
 
+<div id="note" />
+
 <div id="data-availability" />
 
 ### Disponibilité des données
@@ -45,6 +47,20 @@ Une fois l'intégration d'un partenaire ajoutée :
 Les tableaux de bord de l'optimisation des créations affichent l'ensemble des données décrites ci-dessus.
 
 **Remarque :** Pour voir les données de coût AppsFlyer (comme le ROAS), l'<Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview">abonnement à ROI360</Anchor> est obligatoire.
+
+<div id="smadex" />
+
+<div id="revx" />
+
+<div id="reddit" />
+
+<div id="personaly" />
+
+<div id="mintegral" />
+
+<div id="notes" />
+
+<div id="note-1" />
 
 <div id="media-partner-integrations" />
 
@@ -473,6 +489,8 @@ L'ID de la clé et la clé secrète s'affichent.
 
 **Remarque :** Si vous n'avez pas accès à ces rôles, veuillez contacter votre CSM Unity ou envoyez un e-mail à [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) pour demander les autorisations nécessaires.
 
+<div id="x-ads" />
+
 <div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Pour ajouter une intégration Unity au tableau de bord des créations :**
@@ -519,6 +537,12 @@ Pour plus d'informations, consultez la <Anchor target="_blank" href="https://sup
 6. Cliquez sur ***Enregistrer***.
 
 </Accordion>
+
+<div id="creative-integrations-dashboard" />
+
+<div id="grant-dashboard-access-to-an-agency" />
+
+<div id="add-an-agency-integration" />
 
 <div id="additional-information" />
 

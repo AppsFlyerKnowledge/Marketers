@@ -88,6 +88,10 @@ Pour plus d'informations sur l'attribution de retargeting, cliquez <Anchor targe
 
 </Accordion>
 
+<div id="postreinstall-events-attribution-state" />
+
+<div id="note" />
+
 <div id="post-reinstall-in-app-events" />
 
 ## Évènement in-app
@@ -157,6 +161,8 @@ Les données des KPI organiques affichées dans le tableau de bord peuvent avoir
 <div id="examples" />
 
 <Accordion title="Exemples">
+
+<div id="confirm-inapps-are-attributed-to-the-original-install" />
 
 <div id="examples-for-first-install-mode-attribution" />
 

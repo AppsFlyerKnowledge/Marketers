@@ -58,6 +58,8 @@ Les données analytiques des installations assistées sont disponibles au niveau
 
 Il arrive souvent que des utilisateurs potentiels se familiarisent avec une app via la source d'assistance, mais qu'ils ne parviennent pas à l'installer, pour différentes raisons. Il est donc important de mesurer et repérer les assistances pour mieux mesurer les campagnes et les optimiser.
 
+<div id="note" />
+
 <div id="assisted-installs-reporting" />
 
 ### Le reporting des installations assistées
@@ -76,6 +78,10 @@ Pour chacun des réseaux contributeurs, le rapport de données brutes contient l
 * Type de correspondance (ID, Google Play Referrer ou SRN)
 
 Cf <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview#rapports-de-parcours-utilisateur">Données brutes sur le parcours de l'utilisateur</Anchor>.
+
+<div id="note-2" />
+
+<div id="total-candidates-field" />
 
 <div id="note-1" />
 

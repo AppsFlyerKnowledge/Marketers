@@ -155,6 +155,8 @@ Définissez les niveaux d’accès des utilisateurs pour les sources multimédia
 
 Par défaut, le paramètre **Tout** Permet d’accéder à toutes les sources multimédias du compte. Cela inclut ceux qui seront ajoutés à l’avenir. La sélection de sources multimédias spécifiques n’inclut pas l’accès aux sources multimédias futures.
 
+<div id="custom_media_sources" />
+
 <div id="note-1" />
 
 > 📘 **Remarque**
@@ -216,6 +218,8 @@ Une fois l’utilisateur créé, vous pouvez le voir dans la table des utilisate
 <Accordion title="Ajouter des utilisateurs à plusieurs comptes">
 
 Les utilisateurs peuvent être ajoutés à plusieurs comptes et se voir attribuer des rôles différents dans chaque compte. Cela permet aux utilisateurs de travailler avec différents comptes sans avoir à ressaisir leurs identifiants.
+
+<div id="note-3" />
 
 <div id="log-in-to-multiple-accounts" />
 
@@ -542,6 +546,10 @@ Les rôles temporaires ont été créés uniquement pour permettre un passage en
 * Lorsqu'un utilisateur ayant un rôle temporaire passe à un rôle prédéfini, il ne peut pas retrouver le rôle temporaire qui lui avait été attribué précédemment (ni d’ailleurs aucun autre rôle temporaire).
 * Si le dernier utilisateur avec un rôle temporaire quitte ce rôle, le rôle n'apparaîtra plus dans votre compte.
 
+<div id="combined-media-source-and-agency-access" />
+
+<div id="example-3" />
+
 <div id="example-2" />
 
 > 📄 **Exemple**
@@ -590,6 +598,8 @@ Comme tous les admins disposent de facto des mêmes autorisations que le propri�
 > 🚧 **Important !**
 >
 > Le changement de propriétaire du compte doit être effectué manuellement en suivant les étapes ci-dessous. Il n'est pas possible de le faire depuis la page **Gestion des utilisateurs**.
+
+<div id="2send-an-email-request" />
 
 <div id="1assign-a-team-member-the-admin-role" />
 

@@ -73,7 +73,19 @@ Voici les paramètres généraux de l’onglet Intégration de Pinterest.
 
 Activez cette option si vous souhaitez attribuer les installations post-vue de Pinterest. Le curseur rétroactif post-vue est disponible dans l'onglet Lien d'attribution (détails ci-dessous).
 
+<div id="legacy-set-tag-id" />
+
 <div id="in-app-events-settings" />
+
+<div id="including" />
+
+<div id="to-users-from" />
+
+<div id="partner-event-name" />
+
+<div id="appsflyer-event-name" />
+
+<div id="in-app-event-postbacks" />
 
 ### Paramètres des événements in-app
 

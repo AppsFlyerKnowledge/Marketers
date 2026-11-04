@@ -34,6 +34,40 @@ L'intégration de l'API Roku prend en charge :
 * Les appareils Roku Smart TV et CTV. L'intégration **ne prend pas** en charge les appareils mobiles, les tablettes ou les ordinateurs de bureau (desktop).
 * L’attribution CTV-to-CTV et enregistrement des événements. Cela sous-entend l’attribution et l’enregistrement des installations de l'application Roku et des événements qui se produisent sur l'appareil Roku d'un utilisateur.
 
+<div id="permissions-tab" />
+
+<div id="ad-revenue-tab" />
+
+<div id="cost-tab" />
+
+<div id="attribution-link-tab" />
+
+<div id="integration-tab" />
+
+<div id="warning" />
+
+<div id="agency-limitations" />
+
+<div id="setting-up-roku-ads-integration-for-agencies" />
+
+<div id="types-of-permissions-advertisers-can-grant-to-roku-ads" />
+
+<div id="important" />
+
+<div id="in-app-events-postbacks" />
+
+<div id="cross-platform-attribution" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="re-engagement-attribution" />
+
+<div id="install-attribution" />
+
+<div id="general-settings" />
+
+<div id="setting-up-roku-ads-integration-for-advertisers" />
+
 <div id="roku-attribution-flow" />
 
 ### Flux d'attribution Roku

@@ -179,6 +179,8 @@ La création d'un ID de lien nécessite un **accès admin** au compte Google.
 
 <Accordion title="Étape 4 mesure de vos conversions d'app (obligatoire)">
 
+<div id="note" />
+
 <div id="important-1" />
 
 > 🚧 **Important !**
@@ -259,6 +261,8 @@ Attendu que les conversions modélisées ne reposent pas sur les ID d'appareils,
 * Le canal ou l'inventaire YouTube IOS ACI n'est pas attribué, et comme l'app YouTube ne demande pas l'ATT, l'IDFA ne peut pas être utilisé.
 * Le canal ou l'inventaire d'affichage IOS ACI ne peut être attribué que lorsqu'un ID d'appareil est renseigné, dans le cas où l'accord a été donné aussi bien pour les apps de l'annonceur que de l'éditeur.
 
+<div id="note-2" />
+
 <div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## Utilisation du deep linking différé dans les campagnes d'app
@@ -282,6 +286,8 @@ Lorsqu'un utilisateur potentiel clique sur un flux, il est redirigé vers la pag
 Le tableau ci-dessous indique le mappage des paramètres entre Google Ads et AppsFlyer. Notez que les annonceurs ne peuvent pas ajouter de paramètres personnalisés aux campagnes Google Ads.
 
 <table><thead><tr><th><p><strong>Type de réseau</strong></p></th><th><strong>Recherche</strong></th><th><strong>Affichage</strong></th><th><strong>Youtube</strong></th></tr></thead><tbody><tr><td>Canal (af_channel)</td><td>Voir le tableau ci-dessous, <a href="./google-ads-adwords-integration-setup-for-advertisers#comment-remplir-le-paramètre-canal">Comment remplir le paramètre <kbd>Canal</kbd></a> </td></tr><tr><td>Campagne (c)</td><td>Oui</td><td>Oui</td><td>Oui</td></tr><tr><td><p>Identifiant de la campagne (af_c_id)</p></td><td>Oui</td><td>Oui</td><td>Oui</td></tr><tr><td>Ensemble de publicités (af_adset)<br/>Renseigné d'après le paramètre ad_group_name.<br/>Si ce paramètre est nul, AF définit af_adset avec ad_group_id.</td><td>Oui</td><td>Oui</td><td>Oui</td></tr><tr><td>ID d'adset (af_adset_id) renseigné d'après le paramètre Google ad_group_id</td><td>Oui</td><td>Oui</td><td>Oui</td></tr><tr><td><p>Publicité (af_ad)</p></td><td>N/A</td><td>N/A</td><td>N/A</td></tr><tr><td>Identifiant de publicité (af_ad_id)</td><td>N/A</td><td>N/A</td><td>N/A</td></tr><tr><td>Type de publicité (af_ad_type)</td><td>Oui\*</td><td>Oui\*</td><td>Oui\*</td></tr><tr><td>ID du site (af_siteid)</td><td>GoogleSearch/<br/>SearchPartners</td><td>N/A</td><td>YouTubeVideos/<br/>VideoPartners</td></tr><tr><td>Mots-clés</td><td>N/A</td><td>N/A</td><td>N/A</td></tr></tbody></table>
+
+<div id="note-3" />
 
 <div id="populate-the-channel-parameter" />
 
@@ -316,6 +322,8 @@ Google Ads n’envoie pas le paramètre `Canal (af_channel)`. AppsFlyer détermi
 Une vue engagée correspond à l'impression d'un utilisateur sur une publicité vidéo pour une durée de plus de 10 secondes. L'action compte comme un clic. Pour Android, elle s'affiche dans les rapports de données brutes, au niveau du paramètre sub param 5.  
 Ce paramètre s'affiche si la vue engagée s'est produite dans la fenêtre d'attribution de clic définie dans AppsFlyer, qui dure au maximum 3 jours.
 
+<div id="send-complex-in-app-events-to-google-ads" />
+
 <div id="important-2" />
 
 > 🚧 **Important !**
@@ -337,6 +345,10 @@ Depuis IOS 14.5 et Android 12, Google Ads a introduit différents identifiants. 
 
 Lorsque AppsFlyer reçoit ces identifiants et les transfère via postback Google Ads, Google Ads peut réclamer les conversions liées à ces identifiants. AppsFlyer reçoit la réclamation et analyse les paramètres pour attribuer et associer les événements LTV.  
 **Aucune action n'est requise du côté annonceur pour activer la réception de ces paramètres.**
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
+
+<div id="advertising-without-the-firebase-sdk" />
 
 <div id="data-visibility-by-operating-system" />
 

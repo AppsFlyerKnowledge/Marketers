@@ -50,6 +50,8 @@ Le processus de configuration utilisant le protocole SAML2.0 se fait en trois é
 
 <div id="step-1-configure-the-idp-platform" />
 
+<div id="step-1-set-up-the-idp-platform" />
+
 <Accordion title="Étape 1 : Configurer la plateforme IdP">
 
 La première étape consiste à configurer le côté IdP.
@@ -72,6 +74,44 @@ Aperçu du processus de configuration sur d'autres plate-formes IdP :
 * Une application AppsFlyer est créée sur la plateforme IdP, basée sur le protocole SAML 2.0, et le [certificat d'authentification AppsFlyer](#the-authentication-certificate) est implémenté dans la plate-forme IdP.
 * Les utilisateurs sont affectés à la nouvelle app AppsFlyer
 * Le certificat IdP ou les métadonnées sont récupérés pour être utilisés dans AppsFlyer (à l'[étape 2)](#step-2-complete-the-configuration-at-appsflyer).
+
+<div id="6-activate-sso" />
+
+<div id="5-add-exception-users" />
+
+<div id="step-5-provide-idp-metadata" />
+
+<div id="step-4-obtain-service-provider-appsflyer-metadata" />
+
+<div id="step-3-select-certificate-type" />
+
+<div id="step-1-select-authentication-starting-point" />
+
+<div id="step-2-set-up-appsflyer" />
+
+<div id="edit-exception-users" />
+
+<div id="edit-sso" />
+
+<div id="activation-results" />
+
+<div id="note-7" />
+
+<div id="delete-an-exception-user" />
+
+<div id="add-login-methods-for-multiple-users" />
+
+<div id="note-6" />
+
+<div id="note-5" />
+
+<div id="note-4" />
+
+<div id="service-provider-appsflyer" />
+
+<div id="note-3" />
+
+<div id="identity-provider-idp" />
 
 <div id="note-2" />
 
@@ -126,6 +166,8 @@ Après avoir configuré la plate-forme IdP, retournez dans AppsFlyer pour termin
 
 <div id="step-3-test-the-sso-process" />
 
+<div id="step-3-test-the-sso-configuration" />
+
 <Accordion title="Étape 3 : Tester le processus SSO">
 
 Après avoir terminé la configuration du SSO sur les deux plateformes — le fournisseur d'identité (IdP) et AppsFlyer — assurez-vous que les utilisateurs peuvent se connecter à AppsFlyer via l'**une ou l'autre** des [méthodes de rappel d'URL](#configurer-lurl-de-rappel) : votre IdP ou le fournisseur de services (AppsFlyer), mais pas les deux.
@@ -140,6 +182,22 @@ Si vous avez configuré l'authentification pour vous connecter via votre IdP, v�
 2. Ouvrez une page web en mode incognito.
 3. Allez sur la page web de votre IdP. Comme vous n'êtes pas connecté à l'IdP, vous devez passer par un processus d'authentification. Se connecter avec l'utilisateur concerné.
 4. Recherchez et sélectionnez AppsFlyer. Vous êtes dirigé vers la page d'accueil d'AppsFlyer. Cela indique que le processus s'est déroulé avec succès.
+
+<div id="traits-and-limitations" />
+
+<div id="remove-sso-configuration" />
+
+<div id="zd-edit-sso" />
+
+<div id="see-also" />
+
+<div id="edit-exception-users-1" />
+
+<div id="note-8" />
+
+<div id="important" />
+
+<div id="manage-sso-configuration" />
 
 <div id="test-authentication-via-your-service-provider-appsflyer" />
 
@@ -225,6 +283,10 @@ Après avoir obtenu les données requises, créez un fichier texte contenant les
 > Certains sites web en ligne offrent la possibilité de copier et de coller le certificat X.509 pour vérifier que le format est correct.
 
 </Accordion>
+
+<div id="access-the-sso-configuration-page" />
+
+<div id="note" />
 
 <div id="considerations" />
 

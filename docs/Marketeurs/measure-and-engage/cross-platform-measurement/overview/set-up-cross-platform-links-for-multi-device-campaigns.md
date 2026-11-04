@@ -24,11 +24,17 @@ x-zendesk:
 ---
 > **En bref :** découvrez comment promouvoir, attribuer et mesurer les installations d’applications sur des plateformes à des vues publicitaires sur d’autres plateformes. Par exemple, les installations d’apps mobile pour les publicités visionnées sur les appareils CTV, les installations d’apps de console de jeu pour les publicités affichées sur mobile ou ordinateur de bureau (Web), et les installations d’apps CTV pour les publicités affichées sur mobile ou sur ordinateur de bureau (Web).
 
+<div id="how-does-the-attribution-logic-work" />
+
 <div id="overview" />
 
 ## Présentation
 
 Avec les liens d’attribution multiplateforme AppsFlyer (URL d’impression), vous pouvez attribuer les installations d’une plateforme aux vues de publicités affichées sur une autre plateforme. Plusieurs installations au sein d’un même foyer peuvent être attribuées à la même impression d’une publicité multiplateforme.
+
+<div id="h_01K2HBXDWSG3R1WZXT5RB0W48D" />
+
+<div id="important" />
 
 <div id="set-up-cross-platform-partner-integration" />
 
@@ -101,6 +107,10 @@ Pour créer un<Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integra
    ```
 8. Transmettez le lien au réseau publicitaire pour qu’il le place après la publicité affichée sur les plateformes CTV, PC ou console.
 
+<div id="equal-priority-advanced-setting" />
+
+<div id="note" />
+
 <div id="important-1" />
 
 > 🚧 **Attention !**
@@ -112,6 +122,8 @@ Pour créer un<Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integra
 ## Liste des réseaux publicitaires
 
 La liste des réseaux publicitaires qui diffusent des publicités sur les plateformes CTV, PC et console, et qui prennent en charge l’attribution multiplateforme (ex. CTV vers app mobile) se trouve dans la section <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">Marketplace des partenaires AppsFlyer</Anchor>. Pour y accéder vous devrez vous connecter à votre compte AppsFlyer.
+
+<div id="agency-permissions" />
 
 <div id="traits-and-limitations" />
 
@@ -140,6 +152,10 @@ AppsFlyer et tvScientific n’ont pas les mêmes modèles d’attribution. Cela 
 | Fenêtre rétrospective | Jusqu'à 30 jours | Jusqu’à 72 heures |
 | Retargeting | Attribution des nouveaux utilisateurs (installations) **et** des utilisateurs récurrents (réengagements) | Attribution des nouveaux utilisateurs (installations) uniquement |
 | Attribution des coûts | Le coût est attribué à l’impression quel que soit le système d’exploitation | Le coût est attribué à l’impression sur des systèmes séparés pour iOS et Android |
+
+<div id="why-don-t-i-see-impressions-for-my-crossplatform-campaigns-in-the-dashboard" />
+
+<div id="does-enable-viewthrough-attribution-via-probabilistic-modeling-need-to-be-turned-on" />
 
 ## FAQ
 

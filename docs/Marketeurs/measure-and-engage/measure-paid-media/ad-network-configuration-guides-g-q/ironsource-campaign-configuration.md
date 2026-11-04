@@ -115,6 +115,8 @@ Sélectionnez **Événements attribués à tout partenaire, ou organique** pour 
 
 <div id="note-3" />
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > En tant que réseau *toutes-installations*, ironSource préfère recevoir les postbacks pour toute nouvelle installation de votre app, quelle que soit la source, y compris organique. Pour ce faire, sélectionnez **Événements attribués à tout partenaire, ou organique** pour envoyer tous les postbacks d'installation à ironSource.

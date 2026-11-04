@@ -59,6 +59,12 @@ Les données de performance des campagnes d'engagement pour télécharger par pr
 * **Tableau de bord général :** les engagements sont comptabilisés comme des clics dans les rapports et tableaux de bord agrégés. Ils sont agrégés au niveau du partenaire de préchargement (source média) et de la campagne.
 * **Données brutes :** les engagements sont disponibles dans les rapports de clics disponibles uniquement via Data Locker. Ils se trouvent dans le champ URL d'origine et peuvent être définis dans le paramètre af\_engagement\_type soit comme *preload*, soit comme *click\_to\_download*. Pour les installations, cf le tableau de la section précédente pour voir comment le type de matching est indiqué dans les données brutes.
 
+<div id="traits-and-limitations" />
+
+<div id="set-up-samsung-preload-referrer-attribution" />
+
+<div id="samsung-preload-referrer" />
+
 <div id="set-up-preload-referrer-attribution" />
 
 ### Configurer l'attribution du référent de préchargement

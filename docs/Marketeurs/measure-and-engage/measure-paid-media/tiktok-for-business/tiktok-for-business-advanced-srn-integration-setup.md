@@ -55,6 +55,8 @@ La configuration se fait depuis la page **Intégrations actives**, mais pour tro
 
 La fenêtre de configuration comprend les onglets suivants : Intégration, Lien d'attribution, Coût, Revenus publicitaires et Autorisations. L'onglet **Lien d'attribution** n'est pas disponible dans TikTok for Business, les autres onglets sont facultatifs.
 
+<div id="note-1" />
+
 > 📘 **Remarque**
 >
 > * Certains paramètres diffèrent entre les appareils iOS et Android.
@@ -73,6 +75,10 @@ L'onglet **Integration** comprend un certain nombre de sections, décrites ci-de
 
 Pour configurer l'intégration, vous devez d'abord [activer](#activation-du-partenaire) la fonction **Activer le partenaire**. En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#activating-a-partner">l'activation et la désactivation des intégrations des partenaires</Anchor>.
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-2" />
+
 <div id="advanced-data-sharing" />
 
 #### Protection de la vie privée avancée
@@ -90,6 +96,8 @@ Pour les apps iOS uniquement : votre contrôle des données partagées avec le 
 > * Lors de l'activation de l'intégration (`tiktokglobal_int`), l'option **Confidentialité avancée** est activée par défaut.
 > * Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), l'option **Confidentialité avancée** est activée par défaut, même si elle ne l'était pas avant la migration.
 > * D'après TikTok for Business, laisser la **Confidentialité avancée** **activée** peut générer une sous-déclaration du nombre d'événements de la campagne et limiter les performances des campagnes futures sur TikTok.
+
+<div id="note-3" />
 
 <div id="general-settings" />
 
@@ -112,6 +120,8 @@ L'ID d'app TikTok est un code unique généré dans TikTok Ads Manager et utilis
 > * Après la migration vers la nouvelle intégration (`tiktokglobal_int`), toutes les valeurs de l'ancienne intégration (`bytedanceglobal_int`) sont automatiquement remplies.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">En savoir plus sur les conditions relatives à l'ID d'app TikTok pour iOS 14</Anchor>
 
+<div id="note-4" />
+
 <div id="default-postbacks" />
 
 #### Postbacks par défaut
@@ -127,6 +137,14 @@ Configurer l'envoi des postbacks pour les **installations**, **installations rej
 >
 > * Pour les applications iOS uniquement : votre contrôle des données partagées avec le partenaire via les postbacks et les <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">rapports</Anchor> dépend de l'état de la fonction **Confidentialité avancée (pour iOS 14.5 et +)**.
 > * Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), les postbacks d'installations sont réglés par défaut sur **Ce partenaire uniquement**, sans aucun rapport avec leur statut avant la migration.
+
+<div id="note-7" />
+
+<div id="reinstall-attribution" />
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="install-attribution" />
 
@@ -150,6 +168,14 @@ Définir l'attribution post-clic et post-vue pour les installations (premiers la
 >   * La campagne est signalée comme étant «restreinte»
 >     Ces données ne sont pas disponibles dans le GCD. Les rapports de données agrégées continuent d'afficher les conversions post-vue.
 > * Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), les fenêtres rétrospectives sont réglées sur les **Valeurs par défaut**, sans aucun rapport avec leur statut avant la migration. Vous pouvez mettre à jour ces paramètres.
+
+<div id="note-9" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="warning" />
+
+<div id="note-8" />
 
 <div id="re-engagement-attribution" />
 
@@ -191,6 +217,10 @@ Configurer le mappage des événements in-app avec les événements TikTok for B
    1. Dans le coin en haut à gauche, sous le nom du partenaire, cliquez sur le nom de l’app pour ouvrir la liste des apps.
    2. Sélectionnez une autre app dans la liste déroulante.
    3. Répétez les différentes étapes d’intégration pour l’app sélectionnée.
+
+<div id="note-11" />
+
+<div id="note-10" />
 
 > 📘 **Remarque**
 >
@@ -234,6 +264,12 @@ Cette intégration fournit des données agrégées sur les coûts, les clics et 
 
 6. Cliquez sur **Sauvegarder les coûts**.
 
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
+
+<div id="deep-linking-with-tiktok-for-business" />
+
 <div id="for-roi360-subscribers" />
 
 #### Pour les abonnés à ROI360
@@ -274,6 +310,18 @@ En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-in
 ## Configuration de TikTok for Business pour les agences
 
 Les agences travaillant pour le compte d'annonceurs peuvent activer l'intégration de TikTok for Business et obtenir les attributions pour leurs campagnes. Toutefois, cette intégration présente certaines limites en ce qui concerne les agences.
+
+<div id="note-12" />
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
+
+<div id="how-smart-plus-campaigns-are-structured" />
+
+<div id="smart-plus-campaigns-reporting" />
+
+<div id="send-complex-in-app-events-to-tiktok" />
+
+<div id="important" />
 
 <div id="agency-limitations" />
 

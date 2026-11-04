@@ -100,6 +100,8 @@ Les deux flux de travail sont expliqués dans les sections qui suivent.
 
 <div id="csv-file-format-and-schema" />
 
+<div id="prepare-csv-file-with-cost-data" />
+
 <Accordion title="Format de fichier CSV et schéma">
 
 Le format de fichier CSV, le schéma et les règles de validation des dépenses publicitaires sont détaillés ici. Si vous utilisez Excel ou Google Sheets pour créer le fichier, vous devez consulter les instructions de [mise en forme d'Excel](/docs/import-cost-data#using-excel-to-format-date-and-spend-fields-of-csv-files).
@@ -126,6 +128,18 @@ Le format de fichier CSV, le schéma et les règles de validation des dépenses 
 | Extension de nom de fichier | Exemple de fichier CSV : abc123.csv |
 | Structure des fichiers | <ul><li>Format Les fichiers sont au format CSV, ce qui signifie que chaque colonne est séparée par une virgule. Notez que c'est ainsi qu'Excel formate les fichiers CSV par défaut. Si Excel met en forme le fichier avec un point-virgule (;), cela est lié au réglage régional de votre ordinateur.</li><li>**Ligne d'en-tête** : La première ligne est une ligne d'en-tête qui correspond au schéma</li><li>**Lignes de données** : Contient les colonnes obligatoires. **Remarque** : Assurez-vous qu'il n'y a aucun espace à la fin de vos données. Par exemple, [USD] (un espace après le **D**) doit être remplacé par [USD].</li><li>**Lignes vides** : Non autorisé</li><li>**Lignes dupliquées** ayant la même clé : Non autorisé. La clé est dérivée de l'utilisation des champs obligatoires.</li><li>**Cellules vides :** Les valeurs vides ne sont pas autorisées dans le fichier. Si vous ne souhaitez pas charger certains champs, ils ne doivent pas figurer dans le fichier.</li></ul> |
 | Hiérarchie publicitaire | Toutes les données partielles téléchargées à un niveau hiérarchique inférieur remplaceront toutes les données depuis le niveau inférieur de la campagne.<br /><br />Exemple,  Si vous importez un fichier avec le coût de la campagne pour l'ensemble d'annonces 1 et que vous importez séparément un autre fichier pour l'ensemble d'annonces 2 de la même campagne, le coût total de la campagne sera remplacé et seules les données de l'ensemble d'annonces 2 seront affichées. Pour le coût total de la campagne, le fichier que vous importez doit inclure les ensembles d'annonces 1 et 2. |
+
+<div id="matched-rows" />
+
+<div id="cost-import-dashboard" />
+
+<div id="email-file" />
+
+<div id="upload-file" />
+
+<div id="dashboard" />
+
+<div id="csv-format-and-rules" />
 
 <div id="csv-schema" />
 
@@ -444,6 +458,12 @@ Après avoir enregistré le fichier CSV, vérifiez que le contenu est correcteme
 
 <div id="formatting-spend-cells" />
 
+<div id="cost-import-permissions-for-ad-networks" />
+
+<div id="token-for-email-import" />
+
+<div id="verify-content-format" />
+
 #### Formatage des cellules de dépenses dans Excel
 
 Excel met généralement en forme les cellules de valeur par une virgule pour séparer les milliers, comme indiqué dans la figure. Ce format n'est pas adapté aux fichiers d'importation d'Ad Spend.
@@ -527,7 +547,13 @@ Les erreurs HTML peuvent empêcher le traitement correct de l'e-mail. Par exempl
 
 </Accordion>
 
+<div id="using-excel-or-google-sheets-to-prepare-csv-file" />
+
 <div id="additional-information" />
+
+<div id="see-also" />
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Informations supplémentaires
 

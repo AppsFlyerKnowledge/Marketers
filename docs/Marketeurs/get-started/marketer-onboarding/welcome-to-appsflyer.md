@@ -54,11 +54,19 @@ Il y a plusieurs façons de se connecter à votre compte AppsFlyer :
 * Connexion avec Google : connectez-vous à l'aide de votre compte Google
 * <Anchor target="_blank" href="/marketers/fr/docs/set-up-sso-authentication-with-your-identity-provider-idp">Connexion via SSO</Anchor>
 
+<div id="primary-account" />
+
+<div id="note-1" />
+
+<div id="using-multiple-accounts" />
+
 <div id="note" />
 
 > 📘 **Remarque**
 >
 > Si votre admin a configuré une authentification à deux facteurs<Anchor target="_blank" href="/marketers/fr/docs/implementing-and-using-2fa-login">(2FA)</Anchor> pour votre compte, il vous sera demandé de vérifier la connexion à l'aide d'une autre méthode d'authentification.
+
+<div id="note-2" />
 
 <div id="switch-between-accounts" />
 

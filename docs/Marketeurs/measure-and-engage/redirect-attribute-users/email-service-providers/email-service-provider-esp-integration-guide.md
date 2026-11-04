@@ -47,6 +47,8 @@ Les problèmes sont dus à la manière dont les ESP gèrent le plus souvent leur
 
 Pour éviter ces problèmes et offrir aux utilisateurs mobile la meilleure expérience possible, cliquez sur votre ESP dans la section ci-dessous et suivez les instructions d'intégration fournies. Certains ESP sont pris en charge par une solution d'intégration AppsFlyer qui permet à AppsFlyer de servir d'intermédiaire entre le serveur ESP et votre nom de domaine. Son rôle de proxy permet de fournir des fichiers d'association (AASA/liens vers des actifs), ce qui facilite le deep linking.
 
+<div id="other-esps" />
+
 <div id="supported-esps" />
 
 ## Les ESP pris en charge

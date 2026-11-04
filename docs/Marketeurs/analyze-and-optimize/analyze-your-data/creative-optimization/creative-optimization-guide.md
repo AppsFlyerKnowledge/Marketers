@@ -63,6 +63,8 @@ Une fois que vous êtes abonné et que votre compte a été configuré, le table
 | 4 | Parcourez vos tableaux de bord :<br /><br /><Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-overview-dashboard">Tableau de bord général</Anchor> - Permet d'analyser les performances créatives et de maximiser l'impact de vos campagnes.<br /><br /><Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-discovery-ai-dashboard">Tableau de bord Découvertes</Anchor> - Permet de produire non stop des créations efficaces. |
 | 5 | Analysez les données de performance des créations et optimisez vos créations et/ou campagnes en fonction des résultats. |
 
+<div id="notes" />
+
 <div id="creative-assets" />
 
 ## Ressources de créations
@@ -123,6 +125,8 @@ Meta Advantage+ (créations dynamiques) et Google Universal App Campaigns (UAC) 
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="creative-optimization-roi360" />
 
 <div id="using-the-dashboard" />
 
@@ -416,6 +420,12 @@ f. Copiez la clé API.
 
 5. Copiez l'**ID de l'organisation**.
 
+<div id="share-view-url" />
+
+<div id="save-shared-dashboard-view" />
+
+<div id="save-private-dashboard-view" />
+
 <div id="note" />
 
 > 📘 **Remarque**
@@ -447,6 +457,10 @@ Cliquez sur l'icône en haut à droite du tableau de bord pour copier l'URL de l
 <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
+
+<div id="h_01HA282W8WHHNDG75XZNSV2QQF" />
+
+<div id="additional-information" />
 
 <div id="custom-tags" />
 

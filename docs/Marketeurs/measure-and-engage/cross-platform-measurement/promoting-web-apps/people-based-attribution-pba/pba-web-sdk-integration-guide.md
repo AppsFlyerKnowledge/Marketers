@@ -24,6 +24,22 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="advanced-verification-with-smart-banners" />
+
+<div id="advanced-verification-without-smart-banners" />
+
+<div id="standard-with-smart-banners" />
+
+<div id="standard-without-smart-banners" />
+
+<div id="advanced-sdk-verification" />
+
+<div id="standard-web-sdk" />
+
+<div id="important" />
+
+<div id="selecting-a-code-snippet" />
+
 <div id="web-sdk-user-and-integration-guide" />
 
 ## Guide d’utilisation et d’intégration du SDK Web
@@ -340,6 +356,14 @@ N'oubliez pas :
 | --- | --- |
 | [Par défaut] Envoyer des événements | Apportez la modification suivante à l’extrait de code du SDK Web. Si nécessaire, ajoutez le paramètre measurementStatus :<br /><br />Définir measurementStatus=true<br /><br />`{pba:{webAppId: "********-****-****-*****************",measurementStatus:true}` |
 | Ne pas envoyer d’événements | Apportez la modification suivante à l’extrait de code du SDK Web. Si nécessaire, ajoutez le paramètre measurementStatus :<br /><br />Définir measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************",measurementStatus:false}` |
+
+<div id="nonce-with-smart-banners" />
+
+<div id="nonce-without-smart-banners" />
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
+
+<div id="content-security-policy-csp" />
 
 <div id="explicit-control" />
 

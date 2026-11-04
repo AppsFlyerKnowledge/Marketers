@@ -121,6 +121,10 @@ Le CAA est un commutateur au niveau de l'application qui contrôle les paramètr
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
+<div id="advanced-aggregated-privacy-implications-for-your-partners" />
+
+<div id="aap-disabled" />
+
 <div id="aap-enabled" />
 
 #### **CAA activée**

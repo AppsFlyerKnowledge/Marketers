@@ -65,6 +65,8 @@ Un template OneLink :
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. Dans le champ **nom du template** **One** Link, saisissez un nom.
 
+   <div id="tip" />
+
    > 📘 **Note**
    >
    > * Un bon nom de template OneLink contient le **nom de l'app** (par exemple livrez\_moi) ou le cas d'utilisation, ou bien l'expérience représentée par le OneLink (ex : page\_accueil\_pre\_lancement).
@@ -204,6 +206,10 @@ Pour optimiser l'expérience utilisateur, la sécurité et la couverture des app
    </Tabs>
 
 5. Cliquez sur **Mettre à jour le template OneLink**.
+
+<div id="h_favicon" />
+
+<div id="note-2" />
 
 > 📘 **Note**
 >

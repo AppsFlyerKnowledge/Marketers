@@ -58,6 +58,10 @@ Pour récupérer l'**ID d'app Facebook** :
 
 AppsFlyer attribue les données en fonction des ID d'app. Un même ID d'app Facebook peut être utilisé à la fois pour [vos apps Android et iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Notez que pour iOS 14 et +, Meta Ads limite le nombre de comptes par application à 9.
 
+<div id="enable-meta-ads-device-level-data" />
+
+<div id="create-and-retreive-facebook-app-id" />
+
 <div id="basic-meta-ads-attribution-setup" />
 
 ## Configuration de base de l'attribution Meta ads
@@ -106,6 +110,16 @@ Pour commencer l'attribution de campagnes Meta Ads avec AppsFlyer, procédez com
 Vous ne voyez toujours pas les résultats dans AppsFlyer ? Reportez-vous à Dépannage de l'intégration Meta ads
 
 </Accordion>
+
+<div id="note-1" />
+
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
+<div id="note" />
+
+<div id="meta-install-referrer" />
+
+<div id="google-play-install-referrer-api" />
 
 <div id="advanced-meta-ads-attribution-setup" />
 
@@ -192,6 +206,8 @@ Un ciblage large est nécessaire pour obtenir une visibilité Données d'install
 * Pour un ciblage « détendu », le « ciblage détaillé Advantage » la case pour les campagnes publicitaires doit être sélectionnée :  
 
   <Image alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Données cryptées provenant de l'API Google Play Referrer ou du référent Meta install
 
@@ -295,6 +311,16 @@ En savoir plus sur l'enrichissement de vos données avec les <Anchor target="_bl
   * Point (.)
   * Caractères non latins (anglais) : As du 12 janvier 2020, Meta Ads rejette Caractères chinois. AppsFlyer n'a pas testé d'autres jeux de caractères et vous devriez utilisez-les uniquement après vérification auprès de Meta annonces si elles prennent en charge ces jeux de caractères Les postbacks
 * Les noms d'événements sont sensibles à la casse. Éviter les écarts assurez-vous d'utiliser le bon étui en cas d'événement noms pour toutes les sources multimédia et toutes les versions d'applications.
+
+<div id="use-deep-links-in-meta-ads-campaigns" />
+
+<div id="advanced_matching_data_sharing" />
+
+<div id="see-also" />
+
+<div id="note-3" />
+
+<div id="whatsapp-retargeting-campaign-attribution" />
 
 <div id="note-2" />
 
@@ -404,6 +430,8 @@ En savoir plus sur : <Anchor target="_blank" href="/marketers/fr/docs/set-up-an
 
 <Anchor target="_blank" href="/marketers/fr/docs/meta-ads-aggregate-event-measurement-aem-for-ios">AppsFlyer prend en charge la Mesure agrégée des événements (AEM) de Meta ads.. Cette solution permet d'optimiser les conversions iOS et les événements in-app, tout en attribuant les réengagements iOS à Meta ads.</Anchor>
 
+<div id="aem-attribution-is-not-working" />
+
 <div id="meta-ads-integration-troubleshooting" />
 
 ## Dépannage de l'intégration Meta ads
@@ -469,6 +497,10 @@ Configuration incorrecte - échec de l'attribution.
 </Accordion>
 
 ## Mise à jour de Meta Ads
+
+<div id="optional--configure-recommended-settings" />
+
+<div id="set-the-meta-ads-active-integration" />
 
 > 🚧 **Important**
 >

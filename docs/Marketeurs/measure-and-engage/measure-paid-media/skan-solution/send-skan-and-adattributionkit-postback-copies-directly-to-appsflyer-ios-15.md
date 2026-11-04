@@ -33,6 +33,8 @@ x-zendesk:
 
 **Remarque !** AppsFlyer doit malgré tout continuer à recevoir les postbacks des réseaux publicitaires car ils contiennent d'autres données relatives au réseau publicitaire (ex : le nom de la campagne).
 
+<div id="important" />
+
 <div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Configurer votre app pour envoyer des copies de postback à AppsFlyer
@@ -49,6 +51,8 @@ Selon la documentation d'Apple, vous pouvez définir un seul point de terminaiso
 <div id="common-misconceptions" />
 
 ## Infos ou intox ?
+
+<div id="traits-and-limitations" />
 
 <div id="dont-believe-everything-you-hear" />
 

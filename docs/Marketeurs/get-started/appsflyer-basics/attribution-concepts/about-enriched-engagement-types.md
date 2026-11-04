@@ -232,6 +232,20 @@ Dans les scénarios ci-dessous, le nouveau champ restera vide dans les rapports 
 
 Pour voir le type d'engagement dans les rapports de données brutes, les annonceurs doivent sélectionner ces champs dans le produit de données brutes concerné (le type d'engagement et le type d'engagement des contributeurs ne sont pas sélectionnés par défaut).
 
+<div id="owned-media-support" />
+
+<div id="cross-platform-engaged-view-support" />
+
+<div id="why-cant-i-see-the-engagement-type-i2" />
+
+<div id="traits-and-limitations" />
+
+<div id="faqs" />
+
+<div id="how-to-calculate-installs-per-mille-ipm" />
+
+<div id="note-3" />
+
 <div id="dashboards" />
 
 ### Tableaux de bord

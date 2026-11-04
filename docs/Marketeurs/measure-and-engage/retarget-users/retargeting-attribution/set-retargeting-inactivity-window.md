@@ -152,6 +152,8 @@ Agence (autorisation accordée par l'annonceur)
 | Google Ads | <ul><li>Impossible d'activer/désactiver le retargeting</li><li>Si une agence a les autorisations, elle peut configurer une période d'inactivité</li></ul> |
 | Meta ads / X Ads / Snapchat | Ne peut pas accéder au retargeting et à la configuration de la période d'**inactivité** |
 
+<div id="traits-and-limitations" />
+
 #### Non SRN
 
 Partenaire (prend en charge le retargeting)

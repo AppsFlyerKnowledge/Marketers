@@ -171,7 +171,7 @@ Si vous menez des campagnes Meta ads sans avoir signé les conditions d'utilisat
 
 <Tab title="ASA">
 
-<table><caption><h3><span id="apple-search-ads-conversion-data"></span>Données de conversion de Apple Search Ads</h3></caption><thead><tr><th>Nom du champ</th><th>Remarques</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Toujours <code>"srn"</code> </td></tr><tr><td><code>media_source</code></td><td>Toujours <code>"Apple Search Ads"</code> </td></tr><tr><td><code>{"<strike>adset</strike>"}</code></td><td>Remarque (2)</td></tr><tr><td><code>adset_id</code></td><td> </td></tr><tr><td><code>{"<strike>af_adset</strike>"}</code></td><td>Remarque (2)</td></tr><tr><td><code>af_adset_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Remarque (1)</td></tr><tr><td><code>{"<strike>af_keywords</strike>"}</code></td><td><p>Remarque (2) - Utilisez les ID de mots-clés</p></td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Toujours <code>"Non-organic"</code> </td></tr><tr><td><code>af_sub [1-5]</code></td><td> </td></tr><tr><td><code>agency</code></td><td> <code>null</code> ou la valeur de <code>af_prt</code> </td></tr><tr><td><code>{"<strike>campagne</strike>"}</code></td><td>Remarque (2)</td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> <code>true</code>, <code>false</code> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Remarque (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Remarque (1)</td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr></tbody><tbody><tr><td colspan="3"><p><strong>Remarque<br/></strong>(1) Apple Search Ads prend en charge le partage des coûts en masse, mais pas les données de conversion.<br/>(2) Obsolète depuis le 15 février 2021 suite à l'adoption de l'API AdServices. par Apple Search Ads.</p></td></tr></tbody></table>
+<table><caption><h3><span id="tiktok-conversion-data"></span><span id="twitter-conversion-data"></span><span id="tiktok-for-business-conversion-data"></span><span id="x-ads-conversion-data"></span><span id="snapchat-conversion-data"></span><span id="apple-search-ads-conversion-data"></span>Données de conversion de Apple Search Ads</h3></caption><thead><tr><th>Nom du champ</th><th>Remarques</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Toujours <code>"srn"</code> </td></tr><tr><td><code>media_source</code></td><td>Toujours <code>"Apple Search Ads"</code> </td></tr><tr><td><code>{"<strike>adset</strike>"}</code></td><td>Remarque (2)</td></tr><tr><td><code>adset_id</code></td><td> </td></tr><tr><td><code>{"<strike>af_adset</strike>"}</code></td><td>Remarque (2)</td></tr><tr><td><code>af_adset_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Remarque (1)</td></tr><tr><td><code>{"<strike>af_keywords</strike>"}</code></td><td><p>Remarque (2) - Utilisez les ID de mots-clés</p></td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Toujours <code>"Non-organic"</code> </td></tr><tr><td><code>af_sub [1-5]</code></td><td> </td></tr><tr><td><code>agency</code></td><td> <code>null</code> ou la valeur de <code>af_prt</code> </td></tr><tr><td><code>{"<strike>campagne</strike>"}</code></td><td>Remarque (2)</td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> <code>true</code>, <code>false</code> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Remarque (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Remarque (1)</td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr></tbody><tbody><tr><td colspan="3"><p><strong>Remarque<br/></strong>(1) Apple Search Ads prend en charge le partage des coûts en masse, mais pas les données de conversion.<br/>(2) Obsolète depuis le 15 février 2021 suite à l'adoption de l'API AdServices. par Apple Search Ads.</p></td></tr></tbody></table>
 
 </Tab>
 
@@ -384,6 +384,8 @@ Cependant, les données de coûts **n'apparaissent pas dans le lien d'attributio
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="retargeting-conversion-data" />
 
 ## Données de conversion pour le retargeting
@@ -393,6 +395,8 @@ Le retargeting comprend deux types de conversions : la réattribution ou le rée
 > 👍 **Astuce**
 >
 > Les données de conversion pour le retargeting n'indiquent pas toujours clairement le type de conversion. Cf [Autres sources de données de conversion](#autres-sources-de-données-de-conversion).
+
+<div id="note" />
 
 <div id="re-attribution-with-srns" />
 
@@ -481,6 +485,8 @@ C'est ce qu'on appelle le Deep Linking différé. La charge utile des données d
 <Accordion title="Deferred Deep Linking avec des SRN">
 
 Les paramètres de Deep Link définis dans les campagnes SRN ne sont pas disponibles en dehors du SRN. Il le paramètre `af_dp`, qui contient le chemin du schéma dans l'application. La seule exception à cette règle est lorsque vous utilisez les <Anchor target="_blank" href="/marketers/fr/docs/google-ads-adwords-integration-setup-for-advertisers#utilisation-du-deep-linking-différé-dans-les-campagnes-dapp">campagnes Google App dans Feeds</Anchor>. Pour installer le deep linking différé, une autre logique s'applique aux campagnes SRN. Vous devez utiliser les données de la réponse `onConversionSuccess`, comme la campagne, l'adset, l'adgroup, pour rediriger par programme vos utilisateurs.
+
+<div id="note-1" />
 
 <div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
@@ -628,6 +634,10 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink : true` - lorsque ce paramètre apparaît et qu'il est défini sur *true*, recherchez les champs `scheme` et `host`
 * `scheme` et `host` - ces champs découlent du paramètre `af_dp` du lien d'attribution, ils indiquent le schéma et l'activité vers lesquels l'utilisateur doit être deep linké.
 
+<div id="note-2" />
+
+<div id="important" />
+
 <div id="ios-universal-links-and-android-app-links" />
 
 #### Liens universels iOS et liens vers les apps Android
@@ -732,6 +742,8 @@ Exemple :
 
 * Le développeur d'app peut utiliser ces paramètres, comme `af_dp` ou le nom de la campagne, pour envoyer l'utilisateur vers une activité précise, et lui proposer le contenu correspondant.
 
+<div id="important-1" />
+
 > 🚧 **Important !**
 >
 > Nous vous recommandons d'utiliser la version courte du OneLink. Cliquez <Anchor target="_blank" href="/marketers/fr/docs/understand-onelink-short-vs-long-urls">ici</Anchor> pour en savoir plus.
@@ -752,6 +764,8 @@ Une autre des raisons qui fait qu'il vaut mieux utiliser la version courte du On
 
 * API Push offre une charge utile de conversion détaillée qui stipule la réattribution ou le ré-engagement. Les charges utiles de l'API Push comprennent un champ appelé `re_targeting_conversion_type`. Ce champ indique le type de conversion, réattribution ou réengagement. Pour en savoir plus, consultez notre guide sur <Anchor target="_blank" href="/marketers/fr/docs/push-api-streaming-raw-data">l'API Push</Anchor>.
 * Les rapports de données brutes contiennent également des indicateurs pour le type de conversion. Dans le rapport de données brutes pour les conversions de retargeting, il se trouve une colonne ***Nom de l'événement***. La valeur de cette colonne est soit **reengagement** soit ***reattribution*** en fonction du type de conversion.
+
+<div id="note-3" />
 
 <div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 

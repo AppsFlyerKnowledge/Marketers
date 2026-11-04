@@ -47,6 +47,8 @@ L'intégration des coûts fournit les données agrégées suivantes :
 * Données sur les coûts pour vos campagnes, vos adsets, vos zones géographiques/pays et vos niveaux de canaux.Consultez le <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tableau d'intégration des coûts du réseau publicitaire</Anchor> pour obtenir plus d'infos sur les dimensions, les métriques et les fonctionnalités prises en charge.**Remarque :** Les données de coût nécessitent un abonnement <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>.
 * Données sur les clics, les impressions et les données enrichies (mots-clés, noms de campagne et adsets).
 
+<div id="tip" />
+
 > 📘 **Note**
 >
 > * Les comptes MCC sont pris en charge.

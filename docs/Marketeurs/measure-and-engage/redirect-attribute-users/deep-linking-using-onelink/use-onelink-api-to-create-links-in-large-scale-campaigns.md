@@ -26,6 +26,10 @@ x-zendesk:
 
 > **En bref :** l'API OneLink vous aide à engager les utilisateurs finaux et à tirer parti des médias propres en générant des liens personnalisés dans les campagnes à grande échelle, par SMS, etc. Nécessite une implémentation côté annonceur et côté développeur.
 
+<div id="get-started" />
+
+<div id="example" />
+
 <div id="about-onelink-api" />
 
 ## API OneLink
@@ -61,6 +65,16 @@ Vous pouvez contacter votre CSM pour augmenter le nombre de requêtes API autori
    * Si l'admin ne peut pas récupérer la clé API OneLink, cela signifie que vous n'avez pas le package requis et que vous devez contacter votre CSM.
 4. Donnez l'ID OneLink et la clé API OneLink au développeur.
 5. Demandez au développeur de suivre les <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink_rest_api">instructions du dev hub</Anchor>.
+
+<div id="referral-and-advocate-sharing" />
+
+<div id="offline-and-qrbased-engagement" />
+
+<div id="crmpowered-channels-sms-email-whatsapp" />
+
+<div id="crossplatform-journeys-ctv-desktop-webtoapp" />
+
+<div id="use-cases" />
 
 <div id="dashboard" />
 

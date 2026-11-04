@@ -244,6 +244,8 @@ Cette modification peut avoir une incidence sur le nombre d'utilisateurs de l'EE
 
 </Accordion>
 
+<div id="see-also" />
+
 <div id="further-information-and-contact-details" />
 
 ## Informations complémentaires et coordonnées

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** découvrez les paramètres qui agissent sur l'attribution et l'analyse de votre app sur l'ensemble des sources média.
 
+<div id="note" />
+
 <div id="app-settings" />
 
 ## Paramètres d'application
@@ -40,6 +42,8 @@ x-zendesk:
 1. Dans AppsFlyer, rendez-vous dans **Configuration** > **Paramètres de l'app.**
 2. Affichez les paramètres et faites les modifications requises sur la page Paramètres de l'app.
 3. Cliquez sur **Enregistrer les paramètres**.
+
+<div id="minimum-time-between-sessions" />
 
 <div id="general-app-settings" />
 
@@ -145,6 +149,10 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="minimum-time-between-reengagement-conversions" />
+
+<div id="note-1" />
 
 <div id="attribution-settings" />
 

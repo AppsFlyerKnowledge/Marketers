@@ -29,6 +29,8 @@ x-zendesk:
 
 Pour comprendre la valeur des utilisateurs de votre app, vous devez analyser à la fois le nombre d'installations et les taux de désinstallations. La mesure des désinstallations peut vous permettre d'évaluer les performances de votre app, et de comprendre dans quel cas et pour quel motif les utilisateurs abandonnent votre application.
 
+<div id="note" />
+
 <div id="how-does-it-work" />
 
 ### Comment fonctionne l'API de test ?
@@ -46,6 +48,8 @@ Les exemples suivants vous permettent de comprendre ce que la mesure des désins
 <Accordion title="Comparer la qualité des sources">
 
 En comparant la qualité des utilisateurs d'après leur source (source média, campagne, publicité ou géo), vous pouvez repérer les sources média qui ont les taux de désinstallation les plus bas, et investir plus sur elles.
+
+<div id="note-1" />
 
 > 📄 **Exemple**
 >
@@ -66,6 +70,10 @@ En comparant la qualité des utilisateurs d'après leur source (source média, c
 <Accordion title="Partager les données de désinstallations avec les réseaux publicitaires afin d'optimiser les résultats">
 
 Envoyer les postbacks d'évènement de désinstallation aux réseaux publicitaires est un bon moyen pour optimiser vos campagnes d'acquisition d'utilisateurs. Vous pouvez envoyer chaque événement de désinstallation [en mappant af\_uninstall à votre réseau publicitaire](/docs/measure-uninstalls#mappage-de-lévènement-de-désinstallation). Une fois le mappage effectué, un événement est envoyé dès qu’un utilisateur désinstalle l’app.Les réseaux publicitaires peuvent mettre à profit ces informations pour repérer les utilisateurs les moins engagés et plutôt chercher à obtenir ceux qui le sont le plus.
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 > 📄 **Exemple**
 >
@@ -142,6 +150,8 @@ Le marketeur et le développeur doivent suivre les étapes suivantes :
 
 Pour permettre l'implémentation, votre développeur mobile doit intégrer un mécanisme qui répond aux notifications push envoyées sur votre application. Les étapes de la mise en œuvre varient en fonction du système d’exploitation.
 
+<div id="note-4" />
+
 <div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Connecter la messagerie cloud Firebase à AppsFlyer (Android)
@@ -190,6 +200,8 @@ Pour mesurer les désinstallations sous Android, vous devez configurer la mesure
 
 <Accordion title="[Obsolète] HTTP version héritée">
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > L'API en version HTTP héritée a été classée comme obsolète par Firebase le 20 juin 2023, elle sera définitivement supprimée en juin 2024. Si vous utilisez l'ancienne version d'API, nous vous recommandons vivement d'utiliser [l'API HTTP v1](/docs/measure-uninstalls#http-v1). <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">En savoir plus</Anchor>
@@ -209,6 +221,8 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 </Accordion>
 
 <div id="configure-uninstall-measurement-in-appsflyer" />
+
+<div id="note-5" />
 
 ### Configurer la mesure des désinstallations dans AppsFlyer
 
@@ -249,6 +263,8 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 
 </Tab>
 </Tabs>
+
+<div id="note-6" />
 
 <div id="testing-uninstall-measurement" />
 

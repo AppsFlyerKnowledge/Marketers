@@ -42,6 +42,10 @@ L'objectif du contrôle des versions est le suivant :
 * Améliorer la stabilité (la rétrocompatibilité est de 2 ans et demi), ce qui élimine les éventuelles erreurs lors de l'utilisation de versions du SDK très datées.
 * Vous pouvez profiter des nouvelles fonctionnalités qui requièrent les mises à jour du SDK.
 
+<div id="end-of-support-vs-deprecated" />
+
+<div id="important" />
+
 <div id="sdk-version-lifecycles" />
 
 ## Cycles de vie des versions du SDK

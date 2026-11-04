@@ -267,6 +267,12 @@ Pour l'attribution d'événements in-app :
 
 </Accordion>
 
+<div id="still-not-working" />
+
+<div id="quick-fix-checklist" />
+
+<div id="not-seeing-skan-inapp-events-from-meta" />
+
 <div id="additional-information" />
 
 ## Informations supplémentaires

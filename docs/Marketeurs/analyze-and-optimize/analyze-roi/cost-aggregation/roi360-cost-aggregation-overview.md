@@ -46,6 +46,14 @@ Les indicateurs suivants sont disponibles pour les annonceurs ne disposant pas d
 * <Anchor target="_blank" href="/marketers/fr/docs/view-aggregated-cost-data-for-attribution-links">Données sur les coûts par clic</Anchor>.
 * Données de clics et d'impressions du SRN, configurées via l'onglet **Coût** du partenaire intégré du SRN.
 
+<div id="example" />
+
+<div id="cost-in-the-unified-view" />
+
+<div id="note" />
+
+<div id="cost-in-the-ua-view" />
+
 <div id="principles-of-cost-data-aggregation" />
 
 ## Principes de l'agrégation des données sur les coûts
@@ -75,6 +83,8 @@ Pour la compréhension du tableau, les explications suivantes s'appliquent, sauf
 * UA : Données sur les coûts pour les campagnes d'acquisition d'utilisateurs avec au moins une installation récemment enregistrée (non attribuée par SKAN) (c'est-à-dire au cours des 7 derniers jours environ).
 * Unifié : Données sur les coûts de toutes les campagnes de l'application sélectionnée, y compris celles pour lesquelles aucune installation n'a été enregistrée récemment (c'est-à-dire au cours des 7 derniers jours environ). Le tableau indique quand les données ne sont disponibles que pour les campagnes ayant au moins une installation récemment enregistrée.
 * Si les changements de nom de campagne ne sont pas pris en charge, les deux noms de campagne s'affichent, l'un avec les données d'attribution, l'autre avec les données de coût. Aucun des noms de campagne affichés ne comprendra l'ensemble des données.
+
+<div id="note-1" />
 
 <div id="cost-data-availability-and-reports-table" />
 
@@ -122,6 +132,16 @@ Le mécanisme de hiérarchisation des coûts a une incidence sur les rapports de
 **Priorisation de la méthode de calcul du coût des campagnes**
 
 ![](https://support.appsflyer.com/hc/article_attachments/24855895951377)  
+
+<div id="closed-beta--cost-split" />
+
+<div id="limitations" />
+
+<div id="equal-split-no-conversions" />
+
+<div id="note-2" />
+
+<div id="proportional-split-by-conversions" />
 
 <div id="example-1" />
 

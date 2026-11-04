@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="complete-the-setup-in-amazon-ads" />
+
 <div id="activate-partner" />
 
 ## Activation du partenaire
@@ -95,6 +97,12 @@ Configurez l'envoi de postbacks pour les installations :
 > * Pour les apps IOS uniquement : la manière dont vous pouvez gérer les données envoyées au partenaire via les postbacks et <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">rapports</Anchor> dépend si la **Confidentialité avancée (pour IOS 14.5 et +)** est <Anchor target="_blank" href="/marketers/fr/docs/tiktok-for-business-advanced-srn-integration-setup#protection-de-la-vie-privée-avancée">activée ou non.</Anchor>
 > * Les postbacks sont partagés via Data Locker dans un rapport horaire, et non en temps réel.
 
+<div id="note-1" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="re-engagement-attribution" />
+
 <div id="install-attribution" />
 
 #### Attribution d'installation
@@ -110,6 +118,8 @@ Définir les fenêtres d'attribution post-clic et post-vue pour les installation
 #### Postback d'évènements in-app
 
 Configurer le mappage des événements in-app avec les événements Amazon DSP qui sont envoyés via postback.
+
+<div id="note-2" />
 
 > 📘 **Remarque**
 >
@@ -178,6 +188,24 @@ Sélectionnez les autorisations données à Amazon DSP pour accéder à vos donn
 > * En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">l'octroi d'autorisations</Anchor> à une agence.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
+
+<div id="see-also-1" />
+
+<div id="note-5" />
+
+<div id="dma-consent-methods" />
+
+<div id="note-4" />
+
+<div id="support-amazon-eu-consent-policy" />
+
+<div id="ctv-to-mobile-attribution" />
+
+<div id="raw-data-restrictions" />
+
+<div id="deferred-deep-linking" />
 
 <div id="see-also" />
 

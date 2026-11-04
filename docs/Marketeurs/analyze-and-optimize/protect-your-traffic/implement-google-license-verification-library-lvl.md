@@ -37,6 +37,8 @@ Le service de gestion des licences Google Play détermine si l’utilisateur est
 
 Le SDK d’AppsFlyer collecte les données côté client et Protect360 effectue la vérification de la licence côté serveur, bloquant les installations frauduleuses qui échouent à la vérification pour les installations organiques et non organiques. La « raison du blocage » dans le tableau de bord et les rapports de Protect360 sera « Bots ».
 
+<div id="note" />
+
 <div id="set-up-lvl" />
 
 ## Configurer LVL
