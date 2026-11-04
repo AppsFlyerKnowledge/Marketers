@@ -154,8 +154,8 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 | <span id="eventvalue"></span>Event value | 否 | 描述事件的事件参数映射。用于发送富应用内事件，如商品SKU、单价。<ul><li><strong>关于收入的说明！</strong>您可以用收入详情填充此参数。此外，您必须填充 *eventRevenue,* 和 *eventRevenueCurrency.*</li></ul><ul><li>格式：JSON</li><li>举例来说， 要发送 SKU ABC123，颜色为蓝色，单价为 $3.99，请将 eventValue 设置为：<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>局限性： 1000个字符。超出部分将被截断。</li><li>填充原始数据字段： `event_value`</li></ul> |
 | <span id="eventrevenuecurrency"></span>eventRevenueCurrency | 否 | 收入事件的货币代码，为三字符 <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> 货币代码。<ul><li>默认USD</li><li>格式：字符串</li><li>示例： `"eventRevenueCurrency" : "EUR"`</li><li>填充原始数据字段：`event_revenue_currency`</li></ul> |
 | <span id="eventrevenue"></span>事件收入 | 否 | 分配给事件的收入（货币价值）。<br /><br />**请注意：** 如果收入在 *eventValue,* 中报告，也请在 *eventRevenue* 中报告，并填充 eventRevenueCurrency。<ul><li>允许负值。例如，退款。</li><li>格式：浮点数</li><li>示例值：`1`、`1.2`、`1234.20`</li><li>填充原始数据字段：`event_revenue`</li></ul> |
-| <span id="eventcategory"></span>eventCategory | 否 | 此参数已弃用，将在未来某个日期从系统中删除。请改用 eventValue。 |
-| <span id="eventlabel"></span>eventLabel | 否 | 此参数已弃用，将在未来某个日期从系统中删除。请改用 eventValue。 |
+| <span id="eventcategory"></span>~~eventCategory~~ | 否 | 此参数已弃用，将在未来某个日期从系统中删除。请改用 eventValue。 |
+| <span id="eventlabel"></span>~~eventLabel~~ | 否 | 此参数已弃用，将在未来某个日期从系统中删除。请改用 eventValue。 |
 | <span id="referrer"></span>\_referrer | 否 | HTTP Referrer<ul><li>格式：字符串</li><li>比如</li><li>填充原始数据字段： `http_referrer`</li></ul> |
 | <span id="useragent"></span>userAgent | 否 | <Anchor target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent">用户代理请求</Anchor> 由浏览器发送到服务器。<ul><li>在可能的情况下发送此值，因为它有助于确定设备类型。</li><li>格式：字符串</li><li>比如</li><li>填充原始数据字段： `user_agent`</li></ul> |
 | <span id="ip"></span>ip | 否 | 用户 IP 地址<ul><li>在可能的情况下发送此字段的值。它有助于确定用户的 <Anchor target="_blank" href="/marketers/zh/docs/determine-user-location">地理位置</Anchor>。</li></ul><ul><li>格式：字符串</li><li>比如</li><li>填充原始数据字段： `ip`</li></ul> |

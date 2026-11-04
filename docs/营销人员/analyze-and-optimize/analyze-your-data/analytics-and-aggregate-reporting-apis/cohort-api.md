@@ -53,7 +53,7 @@ Cohort API旨在帮助广告主从AppsFlyer平台获取不同用户群组的投�
 | 参数名称 | 说明 | 必须配置 |
 | --- | --- | --- |
 | <span id="bearer"></span>bearer | 在API验证头（authentication header）中使用的API token。 | 是 |
-| <span id="cohort-_type"></span>cohort \_type | 可能出现的群组归因（转化）类型为：`user_acquisition` user\_acquisition`retargetingunified`（新用户获取）、（再营销）、retargeting（统一）<ul><li>Unified（统一）指同时包含拉新广告和再营销广告的投放效果数据。</li><li>如果一个事件同时被归因到再营销和拉新广告，则返回的KPI中仅包含再营销事件，即is_primary=true。</li><li>格式：字符串</li><li>例如： `"cohort_type": "user_acquisition"`</li></ul> | 是 |
+| <span id="cohort-_type"></span>cohort \_type | 可能出现的群组归因（转化）类型为：`user_acquisition` user\_acquisition`retargeting` `unified`（新用户获取）、（再营销）、retargeting（统一）<ul><li>Unified（统一）指同时包含拉新广告和再营销广告的投放效果数据。</li><li>如果一个事件同时被归因到再营销和拉新广告，则返回的KPI中仅包含再营销事件，即is_primary=true。</li><li>格式：字符串</li><li>例如： `"cohort_type": "user_acquisition"`</li></ul> | 是 |
 | <span id="min_cohort_size"></span>min\_cohort\_size | 群组体量下限可排除用户数量较少的群组，从而减少返回的数据条数。 也就是说用户KPI的值不小于您指定的群组体量下限。<ul><li>格式：整数</li><li>允许发送的最小值:1. 请勿发送零值（0）</li><li>默认1</li><li>例如： `"min_cohort_size": 50`</li></ul> | 否 |
 | <span id="from"></span>from | 用于指定日期范围中的起始日期（LTV维度）最早可设为当前日期之前的720天。<ul><li>格式：格式为yyyy-mm-dd的字符串</li><li>示例：`"from": "2020-01-02"`</li></ul> | 是 |
 | <span id="to"></span>to | LTV归因日期范围的截止日期<ul><li>日期范围内可包含的天数：1-31天</li><li>如需查看单天数据：请将`from`和`to`设为同一个值。</li><li>格式：yyyy-mm-dd</li><li>示例：`"from": "2020-01-01", "to": 2020-01-31`，即为31天。</li></ul> | 是 |

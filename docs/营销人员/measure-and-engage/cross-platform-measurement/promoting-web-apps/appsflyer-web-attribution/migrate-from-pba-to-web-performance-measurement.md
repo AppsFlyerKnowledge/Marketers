@@ -309,7 +309,7 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 | **`ip` **|** `ip`** | 未更改。 |
 | — | **`event_url`** | 新增字段。访问调用必填，事件调用可选。 |
 | — | **`customer_dedup_id`** | 新增字段。用于对来自其他来源（例如网页端SDK）的同一事件进行去重。 |
-| — | `email_hashedphone_number_hashedphone_number_e164_hashedfirst_name_hashedlast_name_hashed` | 新增字段。**对标准化后的值进行SHA256哈希处理（64位小写十六进制），用于补充身份信息。** |
+| — | `email_hashed` `phone_number_hashed` `phone_number_e164_hashed` `first_name_hashed` `last_name_hashed` | 新增字段。**对标准化后的值进行SHA256哈希处理（64位小写十六进制），用于补充身份信息。** |
 
 </Accordion>
 

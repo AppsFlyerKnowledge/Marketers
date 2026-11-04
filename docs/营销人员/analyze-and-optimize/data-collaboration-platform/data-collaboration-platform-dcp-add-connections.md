@@ -167,8 +167,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 **文件格式和拆分**
 
 * 受众始终导出为未压缩的 CSV 文件，包含两列：`value`（标识符）和`taxonomy`（标识符类型）。
-* 更大的受众可能以多个文件而不是编号的单个文件`part-00000part-00001`等形式交付。默认情况下，每个文件最多包含大约 500,000 行。
-* 单个文件可以在同一行中包含多种标识符类型——使用所需的标识符`taxonomy`列进行过滤。常见的分类值包括`customer_id`、`mobile_ad_idhashed_email`、和。`hashed_phone_number_without_plus_sha256`
+* 更大的受众可能以多个文件而不是编号的单个文件`part-00000` `part-00001`等形式交付。默认情况下，每个文件最多包含大约 500,000 行。
+* 单个文件可以在同一行中包含多种标识符类型——使用所需的标识符`taxonomy`列进行过滤。常见的分类值包括`customer_id`、`mobile_ad_id` `hashed_email`、和。`hashed_phone_number_without_plus_sha256`
 
 **示例：**
 

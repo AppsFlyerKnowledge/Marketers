@@ -30,4 +30,4 @@ x-zendesk:
 | **生效日期** | 1月18日 |
 | **面板位置** | <ul><li>OneLink API</li></ul> |
 | 更新内容 | **更新前**：<br /><br />**更新后**：<ul><li>365天</li><li>60天</li><li>OneLink API31天</li></ul> |
-| **重要须知** | <ul><li>`ttl={value}`如需更改默认TTL，可以添加参数，指定TTL的天数、小时数或分钟数。比如`ttl=7dttl=12httl=10m`、ttl=10m或。</li><li>`renew_ttl=false`如果您不想让TTL自动延期，请在链接中添加参数。<br />**请注意**：<ul><li>`renew_ttl`参数不会出现在实际链接中。renew\_ttl</li></ul></li></ul> |
+| **重要须知** | <ul><li>`ttl={value}`如需更改默认TTL，可以添加参数，指定TTL的天数、小时数或分钟数。比如`ttl=7d` `ttl=12h` `ttl=10m`、ttl=10m或。</li><li>`renew_ttl=false`如果您不想让TTL自动延期，请在链接中添加参数。<br />**请注意**：<ul><li>`renew_ttl`参数不会出现在实际链接中。renew\_ttl</li></ul></li></ul> |
