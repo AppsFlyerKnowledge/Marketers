@@ -30,9 +30,15 @@ x-zendesk:
 * 변경되는 사항
 * 1월 18일
 
+<div id="before-the-change" />
+
 #### 변경 전
 
 해당 없음
+
+<div id="what-you-need-to-do-to-prepare-for-the-change" />
+
+<div id="after-the-change" />
 
 #### 변경 후:
 

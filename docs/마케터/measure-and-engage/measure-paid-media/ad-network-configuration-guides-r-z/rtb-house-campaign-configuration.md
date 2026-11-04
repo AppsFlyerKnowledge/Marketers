@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 애드 네트워크 통합 파트너인 RTB House는 이커머스 및 게임 기업을 위한 리타겟팅 기술을 제공합니다. RTB House는 실시간 입찰 모델에서 온라인 광고를 구매하기 위한 딥 러닝 알고리즘을 기반으로 하는 자체 리타겟팅 솔루션을 개발했습니다. RTB House는 클릭 기반 모바일 어트리뷰션 외에도 리타겟팅 어트리뷰션을 제공하며, 이는 앱스플라이어로 기록할 수 있습니다.
 
+<div id="setting-up-rtb-house" />
+
 ## RTB House 설정
 
 **전제 조건:**  연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.
@@ -41,6 +43,8 @@ RTB House의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">여기</Anchor>를 클릭하여 파트너 설정 창 헤더에 대한 자세한 설명을 확인하십시오.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > * 연동 탭의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#d-general-settings">일반 설정</Anchor> 단계는 모든 파트너에게 **필수** 항목입니다
@@ -52,26 +56,38 @@ RTB House의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 여기 **첫 번째 방문**에서 연동 파라미터 설정을 사용 가능하게 하려면 **파트너 활성화**를 설정해야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 사용자 설치 및 리인게이지먼트 이후 RTB House에 자동 포스트백을 보냅니다. 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
 > RTB House는 모든 인스톨 네트워크로서 오가닉을 포함한 모든 소스에서 앱의 모든 신규 인스톨에 대한 포스트백을 수신하는 것을 선호합니다. 이렇게 하려면 **모든 파트너에 어트리뷰션된 이벤트**를 선택하여 모든 인스톨 포스트백을 RTB House로 전송합니다.
 
+<div id="in-app-events-settings" />
+
 ### 인앱 이벤트 설정
 
 이 섹션에서는 포스트백을 통해 앱스플라이어 이벤트를 RTB House와 매핑합니다.
 
+<div id="region" />
+
 #### 리전
 
 RTB House 데이터 센터의 리전을 입력합니다. 가능한 옵션은 **emea**, **us**, **asia**입니다.
+
+<div id="in-app-event-postback-settings" />
 
 #### 인앱 이벤트 포스트백 설정
 
@@ -122,6 +138,8 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 <Accordion title="권한 탭">
 
 이 탭에서는 RTB House에 애드 네트워크, 에이전시 또는 양쪽 모두로 활동하는지에 따라 부여할 권한을 선택할 수 있습니다. RTB House에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 RTB House에 제어 권한을 부여할 수 있습니다.
+
+<div id="ad-network-permissions" />
 
 ### 애드 네트워크 권한
 

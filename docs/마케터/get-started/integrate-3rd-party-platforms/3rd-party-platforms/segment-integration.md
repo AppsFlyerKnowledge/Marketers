@@ -25,13 +25,19 @@ x-zendesk:
 ---
 > **한눈에 보기:** Segment 분석 데이터를 앱스플라이어에 전송합니다.
 
+<div id="introduction" />
+
 ## 소개
 
 Segment를 사용하면 데이터를 앱스플라이어로 쉽게 전송할 수 있습니다. Segment의 오픈 소스 라이브러리를 통해 데이터를 기록한 경우 데이터가 적절한 형식으로 변환되어 앱스플라이어로 라우팅됩니다. 마케터는 앱스플라이어를 사용해 타겟팅을 정확히 찾아내고, 광고 지출을 최적화하며, ROI를 높일 수 있습니다.
 
+<div id="integrating-segment-with-appsflyer" />
+
 ## Segment와 앱스플라이어 연동하기
 
 <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">Segment의 이 가이드</Anchor>를 따라 Segment를 앱스플라이어와 연동하는 방법을 알아보세요.
+
+<div id="faqs" />
 
 ## 자주 묻는 질문
 
@@ -65,6 +71,8 @@ Segment SDK 래퍼는 Segment SDK와 앱스플라이어 SDK를 연결합니다.
 Segment SDK 래퍼를 사용하여 설치 및 인앱 이벤트를 기록하기 위해 Segment의 메서드를 호출하는 경우, SDK 랩퍼는 Segment 메서드와 앱스플라이어 메서드를 모두 호출합니다.
 
 따라서 시간과 노력이 절약되고 코딩이 덜 필요합니다.
+
+<div id="warning" />
 
 > ❗️ **경고**
 >

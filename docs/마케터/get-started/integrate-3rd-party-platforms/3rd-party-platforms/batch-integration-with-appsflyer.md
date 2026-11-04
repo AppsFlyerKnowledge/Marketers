@@ -29,6 +29,10 @@ x-zendesk:
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 매체 소스</Anchor>는 제3자와 데이터 공유를 제한합니다. 따라서 포스트백 전송 설정에 관계없이 제한된 이벤트 포스트백은 이 파트너에게 전송되지 않습니다.
 
 
+<div id="setting-customer-user-id" />
+
+<div id="integrating-batch-and-appsflyer" />
+
 ### 고객 사용자 ID 가져오기
 
 <Tabs>
@@ -41,6 +45,8 @@ Batch.User.editor()
     .setIdentifier("user@example.com")
     .save();
 ```
+
+<div id="appsflyer" />
 
 #### 앱스플라이어
 
@@ -94,7 +100,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 </Tabs>
 
 
-**<span id="setting-up-batch-in-appsflyer-dashboard"></span>전제 조건:** **연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.**
+**<span id="setting-up-batch"></span><span id="setting-up-batch-in-appsflyer-dashboard"></span>전제 조건:** **연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.**
 
 **연동 활성화 또는 편집 방법:**
 
@@ -110,14 +116,22 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 여기서 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 **파트너 활성화** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
 
+<div id="general-settings" />
+
 ### 일반 설정
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+
+<div id="viewing-appsflyer-data-in-the-batch-dashboard" />
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 

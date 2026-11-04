@@ -27,6 +27,8 @@ x-zendesk:
 
 헬스케어 앱을 통해 사용자는 건강보험 가입하기, 예약하기, 의료 자문 받기 등의 작업을 수행할 수 있습니다. 기록되는 일반적인 이벤트에는 로그인, 등록 및 개인 정보나 건강 정보가 없는 기타 일반 이벤트가 포함됩니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 변호사의 조언: 건강 데이터는 "제한된 데이터"로 간주되며 많은 관할 구역에서 데이터의 특별한 범주로 간주됩니다. 따라서 고객은 이러한 데이터를 앱스플라이어에 보낼 수 없습니다.
@@ -38,6 +40,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -132,6 +136,8 @@ x-zendesk:
 | payment\_method\_type | 사용한 결제 수단 | 신용 카드, 현지 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 

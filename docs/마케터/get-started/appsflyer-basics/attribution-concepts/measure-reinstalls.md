@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **간단히 보기**: 재설치는 유저가 앱을 인스톨하고 삭제한 후, 다시 인스톨하는 경우에 발생합니다. 재설치는 논오가닉 재설치, 오가닉 재설치 또는 리어트리뷰션(리타게팅)과 같은 어트리뷰션 유형 중 하나가 됩니다. 재설치하면 유저가 제거했다가 다시 설치할 때 중복 청구되는 것을 방지할 수 있습니다.
 
+<div id="what-is-a-reinstall" />
+
 ## 재설치란?
 
 재설치는 앱 유저가 앱을 삭제한 다음 <Anchor target="_blank" href="/marketers/ko/docs/set-up-re-attribution-window#re-attribution-window">리어트리뷰션 윈도우</Anchor> 중에 앱을 다시 설치할 때 발생합니다.
@@ -43,9 +45,13 @@ x-zendesk:
 | 오가닉 또는 논오가닉 소스에서 | 예 | 아니요 | 예 또는 아니요 | 재설치 |
 | 오가닉 또는 논오가닉 소스에서 | 아니요 | 아니요 | 예 또는 아니요 | 신규 인스톨 (New install) |
 
+<div id="why-are-reinstalls-important" />
+
 ## 재설치가 중요한 이유
 
 유저가 앱을 다시 사용하고 캠페인이 작동하고 있다는 좋은 징후일 뿐만 아니라, 리어트리뷰션 윈도우 내에 앱을 삭제했다가 다시 설치하는 유저에게 요금이 여러 번 부과되지 않도록 해주는 적절한 재설치 어트리뷰션이 중요합니다
+
+<div id="reinstall-flow-and-outcome" />
 
 ## 재설치 흐름 및 성과
 
@@ -79,6 +85,8 @@ x-zendesk:
 리타겟팅 어트리뷰션 관련 더 자세한 정보는 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">여기</Anchor>를 클릭하십시오.
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## 인앱 이벤트
 
@@ -136,6 +144,8 @@ x-zendesk:
 
 (2) 로데이터로만 볼 수 있습니다.
 
+<div id="note-1" />
+
 > 📘 **참고사항**
 >
 > 이러한 숫자 중 일부는 이제 논오가닉 미디어소스에 어트리뷰트될 수 있으므로, 대시보드의 오가닉 KPI 데이터는 재설치 후 이벤트 어트리뷰션이 **첫 번째 설치에 어트리뷰트됨**으로 설정된 상태에서 더 낮은 값을 표시할 수 있습니다.
@@ -145,6 +155,8 @@ x-zendesk:
 <div id="examples" />
 
 <Accordion title="예시">
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### **첫 번째 설치에 어트리뷰트됨**이 활성화된 경우.
 
@@ -197,10 +209,16 @@ x-zendesk:
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## 앱스플라이어 대시보드에 데이터가 표시되는 방식
 
 <table><tbody><tr><th colspan="2"> </th><th>논오가닉 재설치</th><th>오가닉 재설치  </th><th>리어트리뷰션</th></tr><tr><td colspan="2">재설치 자체</td><td>보이지 않음</td><td>보이지 않음</td><td><span>미디어소스 리타게팅\*</span></td></tr><tr><td rowspan="2">향후 인앱이벤트 어트리뷰션</td><td>재설치 후 이벤트가 <strong>오가닉 인앱으로 어트리뷰션됨</strong>으로 설정됨 </td><td>어트리뷰트되지 않은 오가닉</td><td>어트리뷰트되지 않은 오가닉</td><td><span>미디어소스 리타게팅</span></td></tr><tr><td> <strong>첫 번째 설치에 어트리뷰트됨</strong>으로 설정된 재설치 후 이벤트 </td><td>첫 번째 미디어 소스</td><td>첫 번째 미디어 소스</td><td>리타겟팅 캠페인</td></tr><tr><td colspan="5">\*개요 대시보드에서만 가능합니다.</td></tr></tbody></table>
 
+
+<div id="prerequisites" />
+
+<div id="reinstalls-raw-data-reports" />
 
 > 🚧 **필수 조건**
 >
@@ -208,9 +226,13 @@ x-zendesk:
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">예제 리포트를 CSV 파일로 리인스톨</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### 설치 및 인앱이벤트의 어트리뷰션 방식
 
 <table><tbody><tr><th colspan="2"> </th><th>논오가닉 재설치</th><th>오가닉 재설치  </th><th>리어트리뷰션</th><th>install-non-organic</th><th>오가닉 설치</th></tr><tr><td colspan="2">어트리뷰트 대상  </td><td>UA 캠페인</td><td>오가닉</td><td>리타겟팅 캠페인</td><td>UA 캠페인</td><td>오가닉</td></tr><tr><td rowspan="2">향후 이벤트 어트리뷰션</td><td>재설치 후 이벤트가 <strong>오가닉 인앱으로 어트리뷰션됨</strong>으로 설정됨 </td><td>오가닉</td><td>오가닉</td><td>리타겟팅 캠페인</td><td>UA 캠페인</td><td>오가닉</td></tr><tr><td> <strong>첫 번째 설치에 어트리뷰트됨</strong>으로 설정된 재설치 후 이벤트 </td><td>최초 인스톨 (First install)</td><td>최초 인스톨 (First install)</td><td>리타겟팅 캠페인</td><td>UA 캠페인</td><td>오가닉</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### 재설치 리포트의 가용성
 

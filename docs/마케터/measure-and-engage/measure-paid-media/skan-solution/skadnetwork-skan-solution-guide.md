@@ -31,6 +31,8 @@ x-zendesk:
 
 Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호하면서 캠페인 성과를 측정할 수 있게 합니다. SKAN은 IDFA나 기타 광고 ID 없이 운영됩니다. SKAN은 앱 추적 투명성(ATT) 동의 없이도 작동합니다.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > * iOS 15부터 앱스플라이어에 <Anchor target="_blank" href="/marketers/ko/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">SKAN 포스트백 사본</Anchor>을 발송하는 것이 좋습니다. 이를 통해 앱스플라이어가 포스트백의 전환 값이 조작되지 않았음을 확인할 수 있습니다.
@@ -65,6 +67,8 @@ Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## 앱스플라이어 SKAN 솔루션
 
 앱스플라이어는 iOS의 SKAN 포스트백을 사용하여 데이터 집약형 iOS 어트리뷰션 결과를 제공합니다. 이러한 포스트백은 iOS가 애드 네트워크로 발송한 후, 애드 네트워크는 이를 앱스플라이어에 전달합니다. 포스트백에는 광고주가 설정한 전환 값(CV)으로 보강된 익명화된 어트리뷰션 기록이 포함됩니다. CV는 앱 설치 후 초기 기간 동안 유저의 가치를 측정하는 지표입니다.
@@ -78,6 +82,8 @@ Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호
 <div id="principles-and-flow" />
 
 <Accordion title="원칙과 흐름">
+
+<div id="skan-attribution-flow" />
 
 #### **SKAN 어트리뷰션 흐름**
 
@@ -123,6 +129,8 @@ SKAdNetwork 인프라의 기능적, 구조적 한계를 극복하기 위해 앱�
 | 유연한 | <Anchor target="_blank" href="/marketers/ko/docs/skan-cv-decode-map-your-cv-to-events">디코드</Anchor> | <ul><li>자체 전환 값을 이벤트에 매핑하여 앱에서 직접 설정하세요. 앱스플라이어 SDK를 앱에 연동할 수 없는 경우 이 옵션을 사용하세요. 디코드를 사용하려면 **SKAN 컨버전 스튜디오**에 가서 옵션(⋮)을 클릭한 다음 **커스텀 디코드 매핑 파일 업로드**를 선택하세요.</li></ul> | 12-1512시간(63일) |
 
 </Accordion>
+
+<div id="additional-skadnetwork-information" />
 
 ## 추가 SKAdNetwork 정보
 
@@ -225,6 +233,8 @@ SKAdNetwork 대시보드의 오가닉 지표는 다음 메커니즘을 통해 �
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## SKAN 연동 파트너
 
 <div id="recording-ad-revenue" />
@@ -256,6 +266,8 @@ SKAN 대시보드에서 광고 수익을 기록하려면:
 | <span id="inapp-event-mapping-verification"></span>인앱 이벤트 매핑 검증 | **<span id="1611499069.009700"></span>필요한 조치**: 파트너가 포스트백을 올바르게 기록할 수 있도록 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#매핑-방법">인앱 이벤트를</Anchor> 해당 파트너 이벤트 이름에 매핑해야 합니다.<br /><br />SKAdNetwork 캠페인을 운영하는 각 파트너에 대해, 인앱 이벤트가 선택한 앱 측정 유형에 따라 설정되었는지 확인하세요.<br /><br />**파트너 인앱 이벤트 매핑을 확인하고 변경하려면**:<ol><li>앱스플라이어에서 **협업** > **활성화된 연동**으로 이동합니다.</li><li>파트너를 선택하세요.</li><li>**연동** 탭으로 이동합니다.</li><li>다음과 같이 확인하고 필요한 경우 설정을 변경하세요.<ol><li>**인앱 이벤트 포스트백**을 켭니다.</li><li>SKAdNetwork 측정에서 설정한 인앱 이벤트(**SDK 이벤트 이름**)가 **파트너 이벤트 식별자**에 매핑되었는지 확인하세요.</li></ol></li><li>**연동 저장**을 클릭합니다.</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 사항**
 >

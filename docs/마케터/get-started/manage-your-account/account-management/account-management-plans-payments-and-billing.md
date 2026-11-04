@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어의 플랜과 프리미엄 추가 기능에 대해 알아보세요. 플랜 사용량 및 청구서 계산 방식을 확인하세요. 귀사의 계정을 관리하세요.
 
+<div id="appsflyer-plans-and-usage" />
+
 ## 앱스플라이어 플랜 및 사용 방법
 
 <div id="appsflyer-plans" />
@@ -57,15 +59,19 @@ x-zendesk:
 
 귀사의 플랜 결제는 귀사의 **플랜 사용량**과 **프리미엄 기능**에 따라 계산됩니다.
 
+<div id="plan-usage" />
+
 #### 플랜 사용량
 
 각 플랜은 특정 [단위](/docs/account-management-plans-payments-and-billing#계획-단위). 측정을 기반으로 함 단위 사용량은 월별 또는 연간 기준으로 계산됨 플랜 주기(월 또는 년) 동안 사용한 단위 수가 전체 패키지 단위에서 차감됨
+
+<div id="note" />
 
 > 📘 **참고**
 >
 > [사용량 보고서를 다운로드](/docs/account-management-plans-payments-and-billing#사용-리포트-다운로드)하여 귀사의 단위 사용량에 대한 상세 정보를 얻을 수 있음
 
-<span id="premium-features"></span>**플랜 사용량 초과**
+<span id="zd-premium-features"></span><span id="premium-features"></span>**플랜 사용량 초과**
 
 플랜 주기의 단위 수를 초과하면 추가 비용이 발생될 수 있음 모든 비용은 [**플랜 세부 정보**](/docs/account-management-plans-payments-and-billing#details) 섹션에서 확인 가능 플랜 초과 사용을 방지하거나 추가 비용을 줄이기 위해 다음 경우에 알림 센터를 통해 경고가 전송됨:
 
@@ -87,6 +93,8 @@ x-zendesk:
 
 이러한 추가 기능과 귀사의 비즈니스에 미치는 잠재적 이점에 대해 더 알아보려면 귀사의 CSM에 문의하거나 [hello@appsflyer.com](mailto:hello@appsflyer.com)으로 문의하세요.
 
+<div id="plan-units" />
+
 #### 계획 단위
 
 플랜의 기반이 될 수 있는 다양한 단위:
@@ -100,6 +108,8 @@ x-zendesk:
 | 인앱 이벤트 | 귀사의 앱 인스톨 후 사용자가 수행하는 모든 작업입니다. 예를 들어, 로그인, 튜토리얼 완료, 구매, 게임 수준 달성 등이 있습니다. | <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">리치 인앱 이벤트 가이드</Anchor> |
 | 비직접 웹 전환  <br />(PBA 패키지용) | 귀사의 웹사이트에서 다음과 같은 사용자 작업:<ul><li>전환으로 정의된 작업</li><li>웹 캠페인에서 시작된 방문으로 어트리뷰션된 경우</li></ul> | <Anchor target="_blank" href="/marketers/ko/docs/people-based-attribution-pba-overview">사람 기반 어트리뷰션(PBA)</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### 프리미엄 추가 단위
 
 추가 측정 애드온을 기준으로 할 수 있는 단위:
@@ -107,6 +117,8 @@ x-zendesk:
 | 단위 | 설명 | 더 보기 |
 | --- | --- | --- |
 | ROI360 달러 단위 | ROI360 애드온을 통해 측정된 귀사의 광고 비용, 인앱 광고 수익, 인앱 구매 수익 (구독 포함)이 기록된 달러 단위입니다. 각 단위는 기록된 ROI360 측정의 1달러를 나타냅니다. | <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-cost-and-revenue-data">ROI360—비용 및 수익 데이터</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### ROI360 달러 단위
 
@@ -124,6 +136,8 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 
 </Accordion>
 
+<div id="account-page" />
+
 ## 계정 관리 페이지
 
 이 페이지에는 세 개의 탭이 포함되어 있습니다. **내 요금제**, **결제 및 송장**, **청구 세부 정보**. 여기에서 할 수 있는 작업:
@@ -132,6 +146,8 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 * 요금제를 업그레이드하세요.
 * 송장 및 보고서를 보고 다운로드하세요.
 * 연락처 및 결제 정보를 업데이트하세요.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -157,12 +173,16 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 | <span id="addons"></span>**추가 기능** | 귀사의 플랜에 포함된 추가 기능과 그 시작\/종료 날짜입니다. 이들은 프리미엄 기능의 예입니다.<ul><li><Anchor target="_blank" href="/marketers/ko/docs/protect360-anti-fraud-guide">Protect360</Anchor>: 모바일 프로드 보호</li><li><Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: 비용 데이터</li><li><Anchor target="_blank" href="/marketers/ko/docs/audiences-guide">오디언스</Anchor></li><li><Anchor target="_blank" href="/marketers/ko/docs/pivot-table-user-metrics">피벗 표</Anchor></li><li><Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers">데이터 락커</Anchor></li></ul>이 기능과 귀사의 사업에 미치는 잠재적 이점에 대해 더 알기 원하시면 귀사의 CSM에 문의하거나 [hello@appsflyer.com](mailto:hello@appsflyer.com)으로 연락하세요. |
 | <span id="future"></span>**미래 계획** | 이 섹션은 미래 계획을 구매했을 때만 나타납니다. 그럴 경우, 여기서 다음 계획에 대한 세부 사항을 확인할 수 있습니다. |
 
+<div id="usage-report" />
+
 ### 사용 리포트
 
 사용 리포트 페이지에서는 ROI360 구독자의 청구 가능한 전환과 투자 수익을 보여줍니다. 이 페이지에서 할 수 있는 작업:
 
 * 날짜, 앱, 매체 소스, 이벤트 소스, 이벤트 유형별로 데이터를 필터링할 수 있습니다.
 * 선택한 필터에 따라 리포트를 [다운로드](#사용-리포트-다운로드) 하세요.
+
+<div id="access-to-the-usage-report-page" />
 
 #### 사용 리포트 페이지에 액세스
 
@@ -176,9 +196,13 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 
 * [**계정 관리**](#계정-관리-페이지) 페이지 > **내 요금제**에서 오른쪽 상단의 **사용 리포트**를 클릭하세요.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 월간 활성 유저(MAU) 플랜에서는 사용 리포트가 지원되지 않습니다.
+
+<div id="data-included-in-the-usage-report" />
 
 #### 사용 리포트에 포함되는 데이터
 
@@ -195,10 +219,14 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 * 기본적으로 날짜 범위는 이번 달 1일부터 현재까지의 데이터를 표시합니다. 표 상단의 필터에서 다른 날짜를 선택하여 변경할 수 있습니다.
 * 리포트의 데이터는 24개월 동안 보관됩니다.
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > * 사용 리포트와 청구서는 UTC+0 시간대를 기준으로 계산됩니다. 따라서 사용 리포트와 대시보드, 코호트 리포트, 기타 데이터 집약형 리포트에 보고된 데이터 사이에 약간의 차이가 있을 수 있습니다.
 > * 사용 리포트의 데이터는 <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#투명성">**투명성 허용**</Anchor>이 켜져 있더라도 **투명하지 않게** 유지됩니다. 즉, 미디어 소스가 아니라 에이전시 이름만 표시됩니다.
+
+<div id="usage-report-fields" />
 
 #### 사용 리포트 필드
 
@@ -236,11 +264,15 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 
 </Accordion>
 
+<div id="download-a-usage-report" />
+
 #### 사용 리포트 다운로드
 
 1. **내 계획** 탭에서 **사용 리포트**를 클릭하세요.
 2. 날짜 범위와 기타 필터를 선택하세요.
 3. 표 상단에서 **다운로드**를 클릭하세요. 파일은 CSV 형식으로 다운로드됩니다.
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -249,11 +281,15 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 > * 적용된 필터: 사용 리포트는 선택된 필터에 맞춰 정렬됩니다.
 > * [완전성:](#사용-리포트에-포함되는-데이터) 리포트는 현재 날짜와 선택한 날짜 범위에 따라 부분적일 수 있습니다.
 
+<div id="account-status" />
+
 ### 계정 상태
 
 귀사의 계정 상태는 계정 관리 페이지의 왼쪽 상단에 표시됩니다. 가능한 상태는 다음과 같습니다.
 
 <table><thead><tr><th>계정 상태</th><th>설명</th><th>댓글</th></tr></thead><tbody><tr><td rowspan="2">활성 계정</td><td>모든 <strong>Welcome</strong> 및 <strong>Zero</strong> 플랜</td><td>결제 메서드를 요구하지 않습니다</td></tr><tr><td> 유효한 결제 메서드와 연체된 송장이 없는 <strong>Growth</strong> 및 <strong>Enterprise</strong> 플랜</td><td> </td></tr><tr><td>정지 예정</td><td>연체된 송장이 하나 이상 있는 계정입니다. 30일 동안 송장을 지불하지 않으면 계정이 정지됩니다.</td><td> <a href="./account-management-plans-payments-and-billing#연체된-송장-결제하기">송장 지불</a>을 통해 활성 상태를 다시 얻을 수 있습니다. </td></tr><tr><td>정지됨</td><td>30일 이상 연체된 송장이 있는 계정입니다.</td><td>결제 섹션을 제외하고는 귀사의 계정에 액세스할 수 없습니다.<br/>송장 지불을 수행하면 액세스를 되찾고 활성 상태를 다시 얻을 수 있습니다. </td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### 계정 업그레이드, 다운그레이드 또는 삭제
 
@@ -273,9 +309,13 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 * 송장 다운로드(PDF)
 * **Growth** 및 커스텀 **Enterprise** 플랜에 대한 결제 메서드를 업데이트하세요: 송금 또는 신용 카드
 
+<div id="note-5" />
+
 > 📘 **참고**
 >
 > 탭은 결제가 필요한 플랜([Welcome 또는 Zero](/docs/account-management-plans-payments-and-billing#appsflyer-plans) 이외의 플랜)에만 사용할 수 있습니다.
+
+<div id="payment-methods-easy--secure-invoicing" />
 
 ### 결제 메서드
 
@@ -298,6 +338,8 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
    * **신용카드로 결제하는 경우:** 필요한 세부 정보를 입력하고 **신용카드 등록**을 클릭하세요.
    * **송금으로 결제하는 경우:** 청구 세부 정보를 입력하고 **저장**을 클릭합니다.
 
+<div id="invoices" />
+
 ### 송장
 
 이 섹션에서는 유료 및 무료 송장을 확인하고 다운로드하며, [연체된 송장 지불](/docs/account-management-plans-payments-and-billing#연체된-송장-결제하기)을 할 수 있습니다. 월별 청구서는 매월 첫째 주 이후에 발행됩니다.
@@ -311,6 +353,8 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 | **상태** | **유료**, **마감 예정** 또는 **연체 중** |
 | **PDF** | PDF 형식으로 송장을 열려면 **보기**를 클릭하세요. |
 
+<div id="pay-overdue-invoices" />
+
 #### 연체된 송장 결제하기
 
 귀사의 일반 결제 방법과 상관없이, 신용카드 정보가 **저장되지 않아도** 신용카드로 연체된 송장을 결제할 수 있습니다. [상태](/docs/account-management-plans-payments-and-billing#계정-상태) **보류 중지** 및 **중지** 상태인 계정의 결제를 마치면 **활성** 상태를 회복할 수 있습니다.
@@ -323,11 +367,15 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <div id="billing-details" />
 
 <Accordion title="청구 세부 정보">
 
 이 탭에서 귀사의 회사 세부 정보와 청구 담당자를 보고 업데이트할 수 있습니다. [altbilling\_details\_tab2.pngalt](https://support.appsflyer.com/hc/article_attachments/30445641360273)
+
+<div id="company-billing-details" />
 
 ### 회사 청구 세부 정보
 
@@ -339,12 +387,16 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 2. 법적 약관을 읽고 체크박스를 표시하여 동의하세요.
 3. **제출**을 클릭하세요. 팝업 메시지로 변경 사항이 성공적으로 저장되었는지 확인할 수 있습니다.
 
+<div id="note-7" />
+
 > 📘 **참고사항**
 >
 > * 회사 이름이나 주소를 변경하면 앱스플라이어의 법적 약관이 표시되며 이를 동의해야 합니다. 문제가 발생하면 [accounting@appsflyer.com](mailto:accounting@appsflyer.com)으로 문의하세요.
 > * 정보가 누락되었거나 잘못되면 청구 세부 정보가 저장되지 않습니다. 예를 들어:
 >   * 귀사의 국가에서 [회사 세금 번호](/docs/account-management-plans-payments-and-billing#회사-세금-번호)가 필요하다면, 올바른 형식으로 입력해야 합니다.
 >   * 우편번호(ZIP 코드)는 선택한 위치와 일치해야 합니다.
+
+<div id="billing-contacts" />
 
 ### 청구 연락처
 
@@ -355,6 +407,8 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 1. **연락처 추가**를 클릭하고 [필수 세부 정보](/docs/account-management-plans-payments-and-billing#billing-details)를 입력하거나 현재 연락처를 변경하세요.
 2. **결제 세부 정보 저장**을 클릭하세요. 청구 연락처가 최소한 하나 이상 있어야 합니다.
 3. 팝업 메시지로 변경 사항이 성공적으로 저장되었는지 확인할 수 있습니다.
+
+<div id="note-8" />
 
 > 📘 **참고**
 >
@@ -367,9 +421,13 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 | 회사 청구 세부 정보 | <ul><li>**회사 청구 이름:** 가입 양식에 따라 자동으로 입력됩니다.</li><li>**회사 세금 번호:** 자세한 내용은 [다음 탭](/docs/account-management-plans-payments-and-billing#회사-세금-번호)을 참조하세요.</li><li>**회사 송장 이름**(영어): 송장에 표시됩니다.</li><li>**통화:** USD, ILS, EUR 또는 GBP</li><li>**도로 주소:** 가입 양식에 따라 자동으로 입력됨:<ul><li>도로 주소</li><li>도시(영어)</li><li>우편번호: 선택한 위치와 일치해야 합니다.</li><li>국가: 목록에서 선택하세요.</li></ul></li><li>해당되는 경우 주, 도 또는 지역을 추가하세요.</li><li>필요할 경우 플랫폼 내에서 청구 세부 정보를 업데이트하거나 [accounting@appsflyer.com](mailto:accounting@appsflye.com)에 문의하세요.</li></ul> |
 | 청구 연락처 | 필수 연락처 정보를 입력하세요:<ul><li>**이름:** 영어로만 작성해야 합니다.</li><li>**이메일, 전화번호:** 반드시 제공해야 합니다.</li></ul> |
 
+<div id="company-tax-number" />
+
 ### 회사 세금 번호
 
 아래 표에 나열된 특정 국가에서는 귀사의 회사 세금 번호를 기록하고 귀사의 인보이스에 VAT를 추가해야 합니다. 귀사의 회사가 이러한 국가 중 하나에 속해 있다면, 해당 국가의 형식에 맞게 귀사의 회사 세금 번호를 제공해야 합니다. 그렇지 않으면 귀사의 청구 정보가 저장되지 않습니다.
+
+<div id="countries-requiring-company-tax-number" />
 
 #### 회사 세금 번호가 필요한 국가
 
@@ -378,6 +436,8 @@ ROI360 애드온은 귀사의 광고 마케팅에 대한 투자 수익률을 측
 | 캐나다 | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">GST\/HST 프로그램 계정 번호</Anchor> |
 | EU 국가 | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">부가가치세 정보 교환 시스템(VIES)</Anchor> |
 | 이스라엘 | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">이스라엘 부가가치세 등록</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### iOS 앱 청구를 위한 전환 측정 옵션
 

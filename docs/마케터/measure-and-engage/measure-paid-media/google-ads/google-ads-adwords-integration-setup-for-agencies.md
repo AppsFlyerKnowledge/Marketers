@@ -34,9 +34,13 @@ x-zendesk:
 
 에이전시가 프로세스를 시작하기 전에 광고주는 먼저 Google Ads 연동을 구성해야 합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers">여기</Anchor>를 클릭하세요.
 
+<div id="enabling-agency-attribution-of-google-ads" />
+
 ## Google Ads의 에이전시 어트리뷰션 활성화
 
 앱스플라이어는 Google Ads와 함께 에이전시 구성을 지원합니다. 앱스플라이어가 데이터를 정확하게 어트리뷰션할 수 있도록 광고주와 대행사는 별도의 Google Ads 계정을 가지고 있어야 합니다.
+
+<div id="setting-up-google-ads-attribution-for-agencies" />
 
 ## 에이전시를 위한 Google Ads 어트리뷰션 설정
 
@@ -157,11 +161,15 @@ Google Ads 링크 ID 공유에 대한 자세한 내용을 보려면 <Anchor targ
 
 4. ***저장***을 클릭합니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > Google Ads와 앱스플라이어 대시보드 모두에서 전환 계산을 시작하려면 처음 열기 및 인앱 액션을 Google Ads로 가져오십시오.
 >
 > 가져올 수 있으려면 앱을 실행하고 매핑된 인앱이벤트를 한 번 이상 수행해야 합니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -177,6 +185,8 @@ Google Ads 링크 ID 공유에 대한 자세한 내용을 보려면 <Anchor targ
 
 (**구글 애즈** 관리자만)
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > Google Ads에 새 전환을 등록하려면 앱을 실행하고 매핑된 인앱 이벤트를 최소한 한 번 이상 **수행해야 합니다. iOS 앱을 시험하려면 이벤트를 확인하기 위해 IDFA를 수집해야 합니다. 이벤트 전환이 대기열에 추가되는 데 최대 6시간이 걸릴 수 있습니다. 추가되면 가져올 수 있으며, 새로운 전환의 상태가 "최근 전환 없음"에서 "전환 기록 중"으로 변경됩니다.**
@@ -188,6 +198,8 @@ Google Ads 링크 ID 공유에 대한 자세한 내용을 보려면 <Anchor targ
 3. 전환 유형 목록에서 **앱**을 선택한 다음 **타사 앱 분석**을 선택하고 **계속**을 클릭합니다.  
     [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. 모든 앱의 **first\_open** 옆에 있는 확인란과 가져오려는 각 이벤트의 확인란을 선택하십시오.   
+
+   <div id="note-1" />
 
    > 📘 **참고사항**
    >
@@ -202,6 +214,8 @@ Google Ads 링크 ID 공유에 대한 자세한 내용을 보려면 <Anchor targ
     [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. 축하합니다! 이제 앱스플라이어로 Google Ads 모바일 캠페인을 측정할 수 있습니다!
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > "전환에 포함(include in conversions)" 설정이 구글 애즈 상 캠페인 목표와 일치하는지 확인하십시오. 자세한 내용은 구글 담당자와 상담 또는 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">여기</Anchor>의 구글 문서를 참고하십시오.
@@ -213,6 +227,8 @@ Google Ads 링크 ID 공유에 대한 자세한 내용을 보려면 <Anchor targ
 "광고주를 위한 Google Ads 어트리뷰션 설정" 동영상을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#광고주를-위한-google-ads-어트리뷰션-구성">여기를 클릭</Anchor>하십시오.
 
 광고주가 여러 에이전시/MCC Google Ads 계정을 어트리뷰션하는 방법에 대한 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/recording-multiple-agency-mcc-google-ads-accounts">여기</Anchor>를 클릭하십시오.
+
+<div id="agencies-collecting-cost-clicks-and-impression-data" />
 
 ## 에이전시: 비용, 클릭 및 노출 데이터 수집
 

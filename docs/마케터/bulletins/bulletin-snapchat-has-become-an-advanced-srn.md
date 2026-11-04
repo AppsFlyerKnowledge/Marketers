@@ -27,6 +27,8 @@ x-zendesk:
 | **필요한 작업** | 아무 조치도 필요하지 않습니다. |
 | **변경되는 사항?** | 2023년 9월 12일부터 스냅챗은 고급 SRN이 되었습니다. 이는 다음을 의미합니다.<ul><li>클릭과 노출은 앱스플라이어로 전송되며 IDFA 없이 어트리뷰션은 확률적으로 수행됩니다.</li><li>스냅챗 뷰-쓰루 전환은 로데이터 리포트에서 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">부분적으로 제한됩니다</Anchor>.</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **참고 항목**
 >
 > * <Anchor target="_blank" href="/marketers/ko/docs/snapchat-advanced-srn-integration-setup">스냅챗—고급 SRN 연동 설정</Anchor>

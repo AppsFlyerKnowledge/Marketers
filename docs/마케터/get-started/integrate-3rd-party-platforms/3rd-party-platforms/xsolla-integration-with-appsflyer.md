@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 엑솔라(Xsolla)는 앱스플라이어 연동 파트너로, 전통적인 앱 플랫폼의 외부에서 발생하는 결제 처리를 전문으로 하는 게임 커머스 기술 파트너입니다. 엑솔라와 앱스플라이어의 연동을 통해, 엑솔라는 웹샵(Web Shop)에서 이루어진 구매 및 수익을 자동으로 앱스플라이어에 전송할 수 있으며, 이를 통해 엑솔라 웹샵에서 이루어진 구매를 포함한 게임의 전체 ROAS 및 LTV를 확인할 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 써드 파티와의 데이터 공유를 제한합니다. 따라서 포스트백 전송 설정에 관계없이 제한된 이벤트 포스트백은 이 파트너에게 전송되지 않습니다.
+
+<div id="integration-types" />
 
 ## 연동 유형
 
@@ -36,6 +40,8 @@ x-zendesk:
 
 * 연동을 설정하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
 * 연동이 제대로 작동하도록 하려면 고객 사용자 ID(CUID)를 앱스플라이어와 공유하고, 엑솔라와 공유된 사용자 ID가 일치하는지 확인해야 합니다. 이 과정을 통해 사용자가 엑솔라의 웹샵에 원활히 로그인할 수 있으며, 사용자 데이터가 앱스플라이어에 정확하게 전송됩니다.
+
+<div id="setting-up-the-tech-partner-integration" />
 
 ## 기술 파트너 연동 설정
 
@@ -57,13 +63,19 @@ x-zendesk:
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 연동 탭에 처음으로 들어간 경우, **파트너 활성화** 토글을 켜서 연동을 설정해야 합니다. 엑솔라와 작업하는 동안, 토글이 켜져 있어야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너 활성화</Anchor>에 대해 더 알아보십시오.
 
+<div id="advanced-privacy" />
+
 #### 고급 개인정보 보호
 
 iOS 앱의 경우, <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">고급 개인정보 보호</Anchor> 토글이 나타납니다. 이 기능을 켜면 파트너와의 사용자 식별자 공유가 제한됩니다. 앱 설정에서 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집약형 프라이버시 강화(Aggregated Advanced Privacy )</Anchor> 토글을 켜면, **Advanced Privacy(iOS 14.5+ 이상의 경우)** 가 기본적으로 켜지고 잠깁니다.
+
+<div id="default-postbacks" />
 
 #### 기본 포스트백
 
@@ -74,6 +86,8 @@ iOS 앱의 경우, <Anchor target="_blank" href="/marketers/ko/docs/apply-aggreg
 * **오가닉을 포함한 모든 미디어 소스:** 인스톨 포스트백은 파트너에 어트리뷰트된 이벤트와 오가닉 이벤트 모두에 대해 전송됩니다.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -128,6 +142,8 @@ Xsolla에 대한 권한이 없습니다.
 
 </Accordion>
 
+<div id="setting-up-the-pba-web-sdk-integration" />
+
 ## PBA 웹 SDK 통합 설정하기
 
 이 연동을 통해, PBA 대시보드 내에서 앱 성과 분석에 활용할 수 있는 LTV 데이터와 인사이트를 얻을 수 있습니다.
@@ -149,6 +165,8 @@ Xsolla에 대한 권한이 없습니다.
    5. **AppsFlyer Dev Key** 필드에 앱스플라이어 웹 개발 키를 입력하세요. [앱스플라이어에서 웹 개발 키를 찾는 방법](/docs/xsolla-integration-with-appsflyer#앱스플라이어에서-웹-개발-키-찾기)은 아래에서 확인하세요.
    6. **Connect**를 클릭하세요.
 
+<div id="finding-the-web-dev-key-in-appsflyer" />
+
 #### 앱스플라이어에서 웹 개발 키 찾기
 
 1. **나의 앱** 페이지에서, **View brand bundles**를 클릭합니다.
@@ -156,7 +174,11 @@ Xsolla에 대한 권한이 없습니다.
 
 ![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
 
+<div id="identifying-xsollas-events-in-appsflyer" />
+
 ## 앱스플라이어에서 엑솔라의 이벤트 식별하기
+
+<div id="tech-partner-s2s-integration" />
 
 ### 기술 파트너(S2S) 연동:
 
@@ -166,6 +188,8 @@ Xsolla에 대한 권한이 없습니다.
 * xsolla-billing-refund - 구매 환불한 황목
 
 두 이벤트 모두 모바일 앱 인앱 이벤트의 일부입니다.
+
+<div id="web-sdk-integration" />
 
 ### 웹 SDK 연동:
 
@@ -179,6 +203,8 @@ Xsolla에 대한 권한이 없습니다.
 PC / 콘솔 지원 - 이 단계에서 엑솔라와 앱스플라이어의 연동은 PC / 콘솔 앱을 지원하지 않습니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

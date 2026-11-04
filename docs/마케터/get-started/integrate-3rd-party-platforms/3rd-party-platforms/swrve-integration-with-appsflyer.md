@@ -32,6 +32,8 @@ x-zendesk:
 
 * 이메일
 
+<div id="integrating-swrve-and-appsflyer" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
@@ -77,16 +79,24 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 연동 탭은 아래 설명과 같이 여러 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 여기서 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 ***파트너 활성화*** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
 ![Swrve_msc_new_3.png](https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png)
 
 * API 키를 입력합니다.
+
+<div id="swrve-reporting-with-appsflyer-data" />
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 

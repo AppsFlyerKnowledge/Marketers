@@ -32,7 +32,11 @@ x-zendesk:
 
 ![pre-install-intro-breakdown.png](https://files.readme.io/cb21162bd0fa0850cdfd7d380841ca47eda40173f5a05b95dab87bf602583d25-51857559113617.png)
 
+<div id="introduction" />
+
 ## 소개
+
+<div id="what-is-a-pre-install-campaign" />
 
 ### 사전 설치 캠페인이란 무엇입니까?
 
@@ -46,6 +50,8 @@ x-zendesk:
 >
 > 앱스플라이어는 앱이 처음으로 실행되었을 때 인스톨수를 집계합니다. 따라서 표시되는 사전 인스톨 수는 앱을 사전 인스톨한 디바이스의 수가 아니라 앱을 실행한 사용자 수입니다.
 
+<div id="benefits-of-recording-installs-from-pre-install-campaigns" />
+
 ### 사전 설치 캠페인으로 인한 인스톨 기록의 이점
 
 어트리뷰션된 사전 인스톨 캠페인을 통해 측정할 수 있는 항목:
@@ -54,9 +60,13 @@ x-zendesk:
 * 각 제조업체가 제공하는 앱 사용자 수
 * 각 사용자의 LTV(유저생애가치)를 판단하여 어떤 제조업체가 고부가가치 사용자를 유입시키는지 파악
 
+<div id="how-can-i-measure-pre-install-campaigns" />
+
 ### 사전 설치 캠페인은 어떻게 측정합니까?
 
 사전 인스톨 캠페인을 측정하는 방법에는 네 가지가 있습니다. 자세한 내용은 본 문서의 [설정 섹션](/docs/appsflyer-factory-preinstall-using-manifest-android#설정)을 참조하세요.
+
+<div id="viewing-pre-install-data" />
 
 ### 사전 설치 데이터 보기
 
@@ -72,6 +82,8 @@ x-zendesk:
 >
 > * 공장 사전 설치 캠페인의 Match\_type은 로데이터 리포트에 `preload_conf`으로 표시됩니다.
 > * 앱스플라이어는 프리로드를 유도한 애드 네트워크와 첫 번째 앱 실행에 기여한 광고 네트워크를 대시보드에표시합니다. <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#preload-campaigns">프리로드 캠페인</Anchor>에 대해 자세히 알아보십시오.
+
+<div id="setup" />
 
 ## 설정
 
@@ -93,6 +105,8 @@ SDK 버전 `V4.0+`을 사용하십시오.
 이 메서드는 가장 강력하므로 권장되지만, 모든 후속 앱 인스톨에 대해 사전 설치 미디어 소스가 항상 어트리뷰션된다는 점을 고려하십시오. 이것은 신규설치든 재설치든 관계없이 적용됩니다.
 
 시스템 속성 방법을 사용하려면 개발자와 제조업체 모두의 조치가 필요합니다.
+
+<div id="developer" />
 
 #### 개발자
 
@@ -125,6 +139,8 @@ com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some
 
 pre\_install.appsflyer 파일이 있으면 APK와 함께 미디어 소스나 제조업체에 제공하십시오.
 
+<div id="manufacturer" />
+
 #### 제조업체
 
 제조업체는 ***pre\_install.appsflyer*** 파일을 선택한 경로에 배치합니다. **pre\_install.appsflyer** 파일 권한을 744로 설정하십시오.
@@ -154,11 +170,15 @@ adb shell chmod 744 /system/build.prop
 adb reboot
 ```
 
+<div id="advantages" />
+
 #### 장점
 
 미디어 소스나 제조사마다 다른 APK를 유지할 필요가 없습니다. 구글 플레이에서 앱을 변경하거나 경로를 추가할 필요가 없습니다. 제조업체는 커스텀 경로를 사용할 수 있으며, 서로 다른 기기에서 운영되는 여러 사전 설치된 앱 사이에 종속성이 없습니다.
 
 이 메서드는 사전 설치 캠페인 및 미디어 소스로 어트리뷰션을 보장합니다. 유저가 앱을 실행하기 전에 업데이트하더라도, 혹은 광고를 클릭한 후 인스톨하더라도 사전 설치는 여전히 사전 설치 미디어 소스나 제조업체로 어트리뷰션됩니다.
+
+<div id="disadvantages" />
 
 #### 단점
 
@@ -176,12 +196,16 @@ SDK API 메서드는 사전 인스톨이 어트리뷰트되는 제조업체나 �
 
 `setPreinstallAttribution(String mediaSource, String campaign, String siteId)`
 
+<div id="when-working-with-a-media-source" />
+
 #### 미디어 소스와 협업할 때
 
 ```java
 AppsFlyerLib.getInstance().setPreinstallAttribution("MEDIA_SOURCE_NAME", "CAMPAIGN_NAME", "123");
 AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
+
+<div id="when-working-with-a-manufacturer" />
 
 #### 제조사와 협업할 때
 
@@ -196,11 +220,15 @@ AppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplication
 > * `android.os.Build.MANUFACTURER` 속성은 운영 체제에 설정된 대로 제조업체 이름을 유지합니다. 이 속성을 사용한다고 해서 해당 제조업체의 모든 디바이스에서 동일한 형식으로 제조업체 이름을 얻을 수 있는 것은 아닙니다. 이 속성에 예상대로 제조업체 이름이 있는지 확인하세요.
 > * `campaign` 및 `siteId` 파라미터는 선택사항이지만 `setPreinstallAttribution` 메서드에서는 필수입니다. `campaign`와 `siteId`를 지정하지 않으려면 둘 다 null을 전달하세요.
 
+<div id="advantages-1" />
+
 #### 장점
 
 SDK API 메서드를 사용하면 프로그래밍 방식으로 제조업체 이름을 검색할 수 있습니다. 제조업체에 관계없이 SDK 메서드는 디바이스에서 직접 이름을 가져옵니다. 즉, 협업하는 모든 제조업체에 대해 하나의 APK를 유지할 수 있습니다.
 
 `setPreinstallAttribution` 메서드를 사용하여 캠페인 이름을 지정할 수 있습니다. 모든 제조업체나 미디어 소스를 "사전 인스톨" 캠페인 아래에 두는 대신, 각 제조업체나 미디어 소스를 다른 캠페인으로 분리할 수 있습니다.
+
+<div id="disadvantages-1" />
 
 #### 단점
 
@@ -241,9 +269,13 @@ SDK API 메서드를 사용하면 프로그래밍 방식으로 제조업체 이�
 
 앱이 처음 실행되면, 앱스플라이어 SDK가 매니페스트 파일에서 이 메타데이터 태그를 감지하고, 이에 따라 인스톨을 어트리뷰션합니다.
 
+<div id="advantages-2" />
+
 #### 장점
 
 매니페스트 메서드는 사전 설치 캠페인을 어트리뷰션하기 위한 쉬운 메서드로 간주됩니다. 매니페스트에 추가할 태그는 하나뿐입니다. 게다가, 미디어 소스나 제조사는 캠페인 측정을 위해 별도로 할 필요는 없습니다.
+
+<div id="disadvantages-2" />
 
 #### 단점
 
@@ -266,11 +298,15 @@ SDK API 메서드를 사용하면 프로그래밍 방식으로 제조업체 이�
 
 이 메서드를 사용하려면 개발자와 제조업체 모두 몇 가지 작업을 수행해야 합니다.
 
+<div id="developer-1" />
+
 #### 개발자
 
 경로 메서드를 사용하면, 미디어 소스 또는 제조업체의 이름이 포함된 파일의 경로를 지정할 수 있습니다. 다음 세 단계를 완료해야 합니다.
 
 1. 키-값 쌍을 포함하는 파일을 생성합니다. 파일의 이름은 ***pre\_install.appsflyer***여야 합니다. 파일에서 다음 형식으로 키-값 쌍을 지정합니다: `<PACKAGE_NAME>`=`<MEDIA_SOURCE>`. 예를 들어, `com.appsflyer.sampleapp=my_media_source`.  
+
+   <div id="passing-additional-pre-install-parameters" />
 
    #### 추가 사전 설치 파라미터 전달
 
@@ -299,11 +335,15 @@ SDK API 메서드를 사용하면 프로그래밍 방식으로 제조업체 이�
          android:value="/data/local/temp/pre_install.appsflyer" />
    ```
 
+<div id="manufacturer-1" />
+
 #### 제조업체
 
 제조업체는 합의된 경로에 파일을 넣어야 합니다. pre\_install.appsflyer 파일 권한은 744로 설정해야 합니다.
 
 앱이 실행되면 SDK는 매니페스트 파일을 확인하고 지정된 경로에서 파일을 찾습니다. 파일을 찾으면, 지정된 미디어 소스에 따라 인스톨을 측정합니다.
+
+<div id="advantages-3" />
 
 #### 장점
 
@@ -323,6 +363,8 @@ OR
 >
 > 기본이 아닌 경로가 허용되지만 대신 [시스템 속성 메서드](/docs/appsflyer-factory-preinstall-using-manifest-android#system-properties-method-recommended)를 구현하는 것이 좋습니다.
 
+<div id="disadvantages-3" />
+
 #### 단점
 
 매체 소스 또는 제조업체에 따라 별도의 ***pre\_install.appsflyer*** 파일을 유지해야 합니다.
@@ -335,6 +377,8 @@ OR
 * 새 디바이스를 가진 사용자가 광고를 클릭한 후 구글 플레이에서 앱을 설치하면, 해당 설치는 광고를 제공하는 미디어 소스에 어트리뷰션됩니다.
 
 </Accordion>
+
+<div id="testing-pre-install-configuration" />
 
 ## 사전 인스톨 설정 테스트
 
@@ -385,6 +429,8 @@ OR
 3. 사전 설치 캠페인에 협업하는 모든 제조업체나 미디어 소스에 대해 이 과정을 반복하세요.
 
 </Accordion>
+
+<div id="special-cases" />
 
 ## 특별한 경우
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 추가적인 데이터 포인트들로 성과가 더 풍부해진 SKAN. SKAdNetwork 대시보드의 데이터와 비슷합니다. 설치 날짜 또는 포스트백 도착 날짜를 기준으로 집계할 수 있습니다.
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## SKAN 통합 성과 리포트 API
 
 API는 Apple SKAdNetwork에서 보고한 어트리뷰션 지표(실제 데이터)와 설치나 포스트백 도착 날짜를 통해 얻은 기타 데이터 포인트들을 반환합니다. <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN 대시보드</Anchor><Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">에 나타낸 데이터 구조와 비슷한 리포트입니다.</Anchor>
@@ -37,6 +39,8 @@ API는 Apple SKAdNetwork에서 보고한 어트리뷰션 지표(실제 데이터
 2. 인증 헤더에 사용할 API 토큰을 개발자에게 제공합니다.
 3. API 호출 시 입력해야 할 파라미터를 개발자에게 제공하세요. 다음 섹션에서 설명합니다. 파라미터는 리포트의 초점이 무엇인지, 구성 방법을 결정하며, 리포팅 기간을 제공합니다.
 4. 개발자에게 개발자 허브에서 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">SKAN 데이터 집약형 성과 리포트 API</Anchor>를 따르라고 하세요.
+
+<div id="parameters" />
 
 #### 파라미터
 
@@ -60,6 +64,8 @@ API를 통해 CSV 파일이 제공됩니다.
 * 일부 지표(수익, 인게이지먼트, 전환)는 SKAN <Anchor target="_blank" href="/marketers/ko/docs/skan-conversion-studio">성과 측정 설정</Anchor>에 따라 달라집니다.
 * 리포트에는 리포팅 기간 동안 사용자가 수행한 인앱 이벤트만 포함됩니다. 그래서 리포트마다 인앱 이벤트 컬럼의 수와 순서는 변할 수 있습니다. 데이터를 추출하는 프로세스 설계에 열 순서를 기준으로 삼지 마세요.
 * 예시: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### 리포트 필드
 

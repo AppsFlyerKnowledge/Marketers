@@ -82,6 +82,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="see-also" />
+
 > 📄 **참고 항목**
 >
 > * <Anchor target="_blank" href="/marketers/ko/docs/implement-validation-rules-to-prevent-fraud">앱 소유자에 대한 유효성 검증 규칙</Anchor>

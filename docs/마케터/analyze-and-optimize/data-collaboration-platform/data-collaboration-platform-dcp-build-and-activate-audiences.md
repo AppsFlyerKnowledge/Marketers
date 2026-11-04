@@ -25,6 +25,8 @@ x-zendesk:
 >
 > 데이터 협업 플랫폼(DCP)은 오디언스 생성 및 활성화를 포함하여 데이터 협업의 중앙 지점 역할을 합니다. DCP는 협업 및 오디언스 관리 프로세스를 위한 데이터 프라이버시와 보안을 보장하기 위해 데이터 클린룸(DCR)의 고급 기술을 사용합니다.
 
+<div id="about-dcp-audiences" />
+
 ## 개요
 
 광범위한 데이터셋에서 오디언스를 구축하는 과정에는 데이터 세트를 결합하여 풍부한 데이터를 생성하는 것을 포함합니다. 이러한 데이터를 활용하여 고객에게 정확하게 도달할 수 있습니다. 오디언스는 양 당사자 모두의 결합된 데이터셋을 사용하거나 한 당사자가 제공하는 데이터셋을 사용하여 생성될 수 있습니다. 두 가지 경우 모두, 데이터를 제공하는 공동 작업자가 동의한 조건에 따라 권한과 액세스 권한을 부여합니다. 오디언스를 생성한 후, 미디어 파트너로 보내서 활성화하거나 클라우드 서비스로 보낼 수 있습니다.
@@ -35,6 +37,10 @@ x-zendesk:
 
 * **시각적 오디언스 빌더:** 시각적 오디언스 빌더는 비 기술 사용자가 SQL 기술을 필요로 하지 않고도 오디언스 세그먼트를 생성할 수 있는 사용자 친화적인 도구입니다. 그래픽 인터페이스를 사용하여 고급 오디언스 세분화를 할 수 있습니다.
 * **SQL 오디언스 빌더:** 제한 없이 데이터를 쿼리할 수 있는 SQL 쿼리입니다. SQL 전문 지식 필요.
+
+<div id="key-features" />
+
+<div id="build-an-audience" />
 
 #### 주요 기능
 
@@ -57,6 +63,8 @@ x-zendesk:
 
 **아래 단계에 따라 시각적 오디언스 빌더를 사용하여 오디언스를 구축하십시오.**
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 오디언스를 생성할 수 있는 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">오디언스 구축</Anchor> 권한이 있는지 확인하십시오.
@@ -72,6 +80,8 @@ x-zendesk:
 
    <Image alt="새로운 Aud 비주얼 오디언스 builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 아래의 **잠재 고객 작성기** 과정을 진행하십시오.
+
+<div id="step-1-details-and-sources" />
 
 #### 1단계: 세부 정보 및 소스
 
@@ -94,6 +104,8 @@ x-zendesk:
      <Image alt="arrow.png 으로 활성화된 모든 데이터 허가를 사용할 수" src="https://support.appsflyer.com/hc/article_attachments/34588579107345" width="87.42%" /> 있습니다.
 4. **다음**을 클릭합니다.
 
+<div id="step-2-define-the-audience" />
+
 #### 2단계: 오디언스 정의
 
 데이터 소스가 선택된 후에는 오디언스에 포함할 속성 및 값을 선택하는 작업이 포함됩니다.
@@ -105,6 +117,8 @@ x-zendesk:
      최근 "X" 일 사이의 값보다 작거나 같음(현재 일 포함 가능)
    * 연산자로 필터링할 수 있는 **텍스트 속성**:  
      같음 또는 비슷함
+
+     <div id="note-2" />
 
      > 📘 **참고**
      >
@@ -126,6 +140,8 @@ x-zendesk:
 
 아래 단계에 따라 SQL 오디언스 빌더를 사용하여 오디언스를 구축하십시오.
 
+<div id="note-4" />
+
 > 📘 **참고**
 >
 > 오디언스를 생성할 수 있는 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">오디언스 구축</Anchor> 권한이 있는지 확인하십시오.
@@ -141,9 +157,13 @@ x-zendesk:
    <Image alt="새로운 Aud SQL 오디언스 builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. 다음과 같은 **오디언스 작성기** 과정을 진행하십시오.
 
+<div id="set-details" />
+
 #### 세부 정보 설정
 
 오디언스 이름을 지정하고 **다음**을 클릭합니다.
+
+<div id="build-query" />
 
 #### 쿼리 생성
 
@@ -152,6 +172,8 @@ x-zendesk:
 3. **테스트**를 클릭하고 쿼리 문서 아래에 표시된 쿼리 결과(잠재 고객 샘플)를 검토합니다.
 4. 다음 단계의 **오디언스 작성기** 워크스루를 진행하려면 **계속**을 클릭한 다음 **다음**을 클릭하거나 나중에 다시 시작하고 **초안으로 저장**합니다.
 5. 계속하여 [잠재 고객 전송](#오디언스-활성화를-위해-보내기).
+
+<div id="the-sql-audience-builder" />
 
 #### SQL 오디언스 빌더
 
@@ -166,12 +188,16 @@ SQL 빌더를 사용하여 데이터를 쿼리하고 오디언스를 생성합�
 
 </Accordion>
 
+<div id="send-an-audience-for-activation" />
+
 ## 오디언스 활성화를 위해 보내기
 
 오디언스 정의를 완료하면 (필수한 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#공유-권한">권한을 고려하여</Anchor>) 전달할 오디언스 위치를 선택합니다. 즉, 오디언스를 구성하는 사용자 ID 목록이 끊임없이 새로고침되고 매일 선택한 목적지로 전송됩니다. 두가지 목적지를 사용할 수 있습니다. 다음을 할 수 있습니다.
 
 * 오디언스를 미디어 파트너와 [**연결시키세요**](#잠재고객을-미디어-파트너에-연결) - 미디어 파트너 플랫폼에는 Meta Ads, Google Ads 등이 있습니다. 유료 캠페인, 리마케팅 또는 유사 확장을 실행할 때 잠재 고객과 미디어 파트너를 연결합니다.
 * [**오디언스를 클라우드 서비스로 내보내기**](#오디언스를-클라우드-서비스로-내보내기) - 클라우드 스토리지는 앱스플라이어 데이터 락커를 통해 관리됩니다. BI 모델, CDP 또는 내부 강화 파이프라인에서 파일이 필요한 경우 잠재 고객을 클라우드 서비스에 연결합니다.
+
+<div id="note-6" />
 
 > 📘 **참고**
 >
@@ -181,6 +207,8 @@ SQL 빌더를 사용하여 데이터를 쿼리하고 오디언스를 생성합�
 #### 잠재고객을 미디어 파트너에 연결
 
 Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/10010286?hl=en">Google Ads</Anchor>와 같은 선호하는 미디어 파트너 플랫폼에서 활성화를 위해 오디언스를 직접 전송합니다. 시스템은 사용자 ID의 CSV를 전달하며, 파트너가 필요한 경우 자동으로 해시합니다.
+
+<div id="note-7" />
 
 > 📘 **참고**
 >
@@ -217,6 +245,8 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
 2. 오디언스를 전송할 수 있는 목록에서 기존 클라우드 연결을 선택하려면 **연결 선택**을 클릭하거나 데이터 락커에서 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#set-up-data-locker">새로운 연결 만들기</Anchor>를 위해 **+ 새 연결** 을 클릭합니다. 사용 방법은 여기를 참조하세요.
 3. **저장하고 닫기를 클릭합니다**. 오디언스가 선택된 클라우드 서비스로 전송됩니다. 이 프로세스는 최대 15분 정도 소요될 수 있습니다.
 
+<div id="manage-audiences" />
+
 ## 오디언스 관리
 
 관련 공동 작업 대시보드의 **오디언스** 섹션에서 연관된 오디언스를 보고 관리할 수 있습니다.
@@ -235,6 +265,8 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
   * **일시 중지:** 데이터 소스가 수정되면 오디언스가 업데이트되고 다시 활성화되지 않도록 합니다.
   * [삭제](#잠재-고객-삭제): 잠재 고객을 삭제합니다.
 
+<div id="edit-the-audience-activation-destination" />
+
 ### 오디언스 활성화 목적지를 편집합니다.
 
 오디언스를 작성할 때 초안으로 저장한 다음 다시 오디언스로 돌아와 활성화 대상(권한에 따라 다름)을 편집할 수 있습니다.
@@ -247,6 +279,8 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
 4. 연결 및 내보내기(오디언스 페이지의 하단)에서 해당 토글을 설정합니다.
    * [미디어 파트너에 연결하기](#잠재고객을-미디어-파트너에-연결)
    * [클라우드 서비스 내보내기](#오디언스를-클라우드-서비스로-내보내기)
+
+<div id="delete-an-audience" />
 
 ### 잠재 고객 삭제
 

@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **요약:** 메타 퀘스트 (Oculus) 앱을 앱스플라이어와 통합하여 메타 퀘스트(Oculus)에서 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 수신할 수 있습니다.
 
+<div id="about-meta-quest-oculus-attribution" />
+
 ## 메타 퀘스트(Oculus) 어트리뷰션 정보
 
 게임용 메타 퀘스트 (Oculus) OS는 모든 메타 퀘스트(Oculus) 기기에서 실행됩니다.
 
 메타 퀘스트에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어와 통합하여 어떤 소스 및 캠페인이 앱 오픈 및 인앱 이벤트를 유도하는지에 대한 어트리뷰션 데이터 및 성과 측정을 받을 수 있습니다. 마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다.
+
+<div id="integration-procedures" />
 
 ## 통합 절차
 
@@ -164,6 +168,8 @@ x-zendesk:
 | 비용 데이터 | 비용 데이터는 이메일 방식으로 파일 업로드를 사용하여 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">비용 가져오기</Anchor>를 통해 전송해야 합니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

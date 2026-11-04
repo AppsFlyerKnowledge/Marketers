@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## 파트너 연동에 대하여
 
 파트너 연동은 파트너를 통해 운영되고 있는 캠페인의 크리에이티브를 <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-guide">크리에이티브 최적화</Anchor>로 지속적으로 원활하게 가져오도록 합니다.
+
+<div id="data-availability" />
 
 ### 데이터 가용성
 
@@ -37,9 +41,13 @@ x-zendesk:
 * 시스템은 지난 90일 동안의 광고 크리에이티브 데이터 및 앱스플라이어 성과 데이터를 백필합니다. 해당 데이터는 일반적으로 24시간 이내에 광고 크리에이티브 최적화에서 사용할 수 있습니다.
 * 광고 크리에이티브 데이터는 매일 하루에 두 번씩 연동 파트너로부터 수집됩니다. 데이터는 통합되어, 앱스플라이어에서 제공하는 다른 성과 데이터 포인트(예: 어트리뷰션, 지출, 클릭, 노출, 수익 등)와 매칭됩니다. (앱스플라이어 성과 데이터는 매 시간 마다 업데이트 됩니다.) **크리에이티브 최적화 대시보드에는 위의 모든 프로세스를 통해 결합된 데이터가 표시되며 하루 한 번  UTC + 10에 업데이트됩니다.** (지난 90일 동안의 모든 광고 크리에이티브 데이터가 업데이트됨).
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview">참고:</Anchor> 앱스플라이어 비용 데이터(예: ROAS)를 보려면 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview">ROI360 구독</Anchor> 이 필요합니다.
+
+<div id="media-partner-integrations" />
 
 ## 미디어 파트너 연동
 
@@ -119,6 +127,8 @@ x-zendesk:
 4. 홍보 중인 앱을 선택합니다.
 5. **앱러빈 계정 ID, 캠페인 관리 API 키, 리포팅 API** **키를 입력합니다.**
 6. 그런 다음 **저장**을 클릭하세요.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -436,6 +446,8 @@ x-zendesk:
 6. 로그인을 완료하고 권한을 제공합니다.  앱스플라이어가 전체 데이터를 가져오려면 전체 권한을 허용하는 것을 권장합니다.
 7. **저장**을 클릭합니다.
 
+<div id="notes" />
+
 > 📘 **참고 사항**
 >
 > * 2023년 1월 30일에 새로운 **TikTok for Business —고급 SRN** 연동 `tiktokglobal_int`이 추가되었으며, **레거시 TikTok for Business** 연동`bytedanceglobal_int`은 단계적으로 중단되어 2024년 3월부터 종료됩니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-tiktok-for-business-advanced-srn">업데이트 알림</Anchor>을 확인하세요.
@@ -466,6 +478,8 @@ x-zendesk:
 
 **참고:** 이 역할이 제공되지 않는 경우, Unity Ads CSM에 문의하세요.
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### 자격 증명 검색 지침
 
 **Key ID 및 Secret Key를 검색하려면 다음을 수행합니다.**
@@ -489,6 +503,8 @@ x-zendesk:
    ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
 5. **Organization core ID**를 복사합니다.
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **서비스 계정(organization) 역할을 선택하려면:**
 
 1. Unity 대시보드에서 **Administration**을 클릭합니다.   
@@ -506,6 +522,8 @@ x-zendesk:
 5. **저장**을 클릭합니다.
 
 **참고:** 해당 역할에 액세스할 수 없는 경우, Unity 고객 성공 관리자에게 문의하거나 [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com)로 이메일을 보내 필요한 권한을 요청하세요.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **광고 크리에이티브 대시보드에 Unity 연동을 추가하는 방법은 다음과 같습니다.**
 
@@ -570,6 +588,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="creative-integrations-dashboard" />
@@ -593,6 +613,8 @@ x-zendesk:
 
 <Accordion title="에이전시 연동">
 
+<div id="add-an-agency-integration" />
+
 #### 에이전시 연동 추가하기:
 
 에이전시 파트너와 연동하여 해당 데이터를 광고 크리에이티브 대시보드로 가져올 수 있습니다.
@@ -615,6 +637,8 @@ x-zendesk:
 * 각각의 에이전시가 운영하는 크리에이티브에 대한 데이터를 대시보드에서 보고자 하는 경우, "에이전시" 체크박스를 선택한 상태에서 별도의 파트너 연동을 진행해야 합니다.
 * 에이전시 투명성이 설정돼 있는 에이전시의 데이터만 사용할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/view-agency-data">더 알아보기</Anchor>
 * 광고 크리에이티브 데이터는 에이전시에서만 가져옵니다. 위의 예시는 에이전시가 운영하는 Google Ads 캠페인이 있을 경우에 해당되는 예시이나, 직접 운영 중인 Google Ads 캠페인도 있는 경우 Google Ads를 위한 추가 파트너 연동을 진행해야 합니다.
+
+<div id="grant-dashboard-access-to-an-agency" />
 
 #### 에이전시에 대시보드 액세스 권한 부여
 

@@ -25,15 +25,21 @@ x-zendesk:
 
 > **요약:** 귀사의 Amplitude에서 코호트를 가져온 오디언스로 앱스플라이어에 동기화하여 귀사의 1당사자 데이터를 활용하세요.
 
+<div id="about-the-amplitude-integration" />
+
 ## Amplitude 연동에 대하여
 
 **앱스플라이어 오디언스-Amplitude 연동**을 통해 Amplitude 계정에서 정의한 코호트를 앱스플라이어의 <Anchor target="_blank" href="/marketers/ko/docs/audiences-import-audience-segments-from-internal-systems">가져온 오디언스</Anchor>로 직접 동기화할 수 있습니다. 앱스플라이어는 이러한 오디언스를 파트너와 연결·유지하고, 연결된 캠페인 지표를 검토하며, 귀사의 Amplitude 및 앱스플라이어 데이터를 연결하여 시너지 효과를 발휘할 수 있는 중앙 집중형 위치로 활용할 수 있습니다.
 
 Amplitude 코호트는 앱스플라이어와 한 번에 동기화하거나, 매일 또는 매시간 업데이트하는 예약된 동기화를 통해 동기화할 수 있습니다.
 
+<div id="setting-up-the-integration" />
+
 ## 연동 설정
 
 Amplitude 플랫폼 내에서 오디언스-Amplitude 연동을 설정하세요.
+
+<div id="define-appsflyer-data-destinations" />
 
 ### 앱스플라이어 데이터 목적지 정의
 
@@ -56,6 +62,8 @@ Amplitude 플랫폼 내에서 오디언스-Amplitude 연동을 설정하세요.
 | 식별자 | Amplitude 유저 속성을 왼쪽에서 선택한 후, 오른쪽에서 매핑할 앱스플라이어 키를 선택하여 귀사의 Amplitude 데이터를 앱스플라이어 데이터와 연결하도록 앱스플라이어에 지시하세요. 선택한 앱스플라이어 키는 다음 중 하나여야 합니다.<ul><li>**iOS 오디언스의 경우:** iOS 광고주 ID, Amplitude 유저 ID 또는 앱스플라이어 고객 유저 ID</li><li>**안드로이드 오디언스의 경우:** Google 광고주 ID, Amplitude 유저 ID 또는 앱스플라이어 고객 유저 ID</li></ul> |
 
 4. **저장**을 클릭하여 새로운 앱스플라이어 목적지를 저장하세요.
+
+<div id="sync-amplitude-cohorts-to-appsflyer-destinations" />
 
 ### Amplitude 코호트를 앱스플라이어 대상에 동기화하기
 

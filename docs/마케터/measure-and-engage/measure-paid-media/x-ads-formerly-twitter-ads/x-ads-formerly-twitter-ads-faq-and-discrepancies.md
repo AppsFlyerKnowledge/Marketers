@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="x-ads-faq-and-discrepancies" />
+
 ## X Ads 자주 묻는 질문 및 불일치
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -103,6 +105,8 @@ X Ads 계정에서 앱스플라이어의 연결을 해제할 수 있습니다. �
 
 네.  
 네.에이전시가 새로운 X Ads 캠페인을 생성할 때, 캠페인 이름은 에이전시 이름과 함께 밑줄로 시작해야 합니다 (예시: "AgencyName\_Campaign1"). "AgencyName\_Campaign1").
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -222,6 +226,8 @@ X Ads에서는 한 캠페인에 여러 앱을 추가할 수 있습니다. X Ads�
 
 </Accordion>
 
+<div id="discrepancies-between-x-ads-and-appsflyer" />
+
 ## X Ads와 앱스플라이어 간의 수치 차이
 
 앱스플라이어와 X Ads는 가깝게 협업하고 있지만, X Ads 대시보드와 앱스플라이어 대시보드/리포트 사이에 수치 차이가 발생할 수 있습니다.
@@ -237,6 +243,8 @@ X Ads에서는 한 캠페인에 여러 앱을 추가할 수 있습니다. X Ads�
 | **어트리뷰션 터치 유형** | X Ads의 어트리뷰션은 자체 클릭과 노출을 기반으로 합니다. | 앱스플라이어는 클릭-쓰루 어트리뷰션을 뷰-쓰루 어트리뷰션보다 우선합니다. 만약 X Ads가 광고 노출을 집계했고, 앱스플라이어는 클릭-쓰루 어트리뷰션 윈도우 내의 또 다른 클릭을 인지했다면, 앱스플라이어 대시보드에서는 다른 소스에서의 클릭으로 어트리뷰션 됩니다. X Ads에서는, 해당 광고 노출로 어트리뷰션되고 X Ads 대시보드에 표시됩니다. |
 | **X Ads 데이터 공유 설정** | X Ads는 사용자가 <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">자신의 개인 정보를 제 3자에 공유 금지 설정</Anchor>을 허용합니다. 이 데이터는 그들이 상호작용한 광고도 포함합니다.<br /><br />X Ads 대시보드의 수치는 데이터 공유를 금지한 사용자를 포함한 모든 인게이지먼트를 반영합니다. | 앱스플라이어는 이런 X Ads 사용자들을 통합 데이터에서 표시하지만, 사용자 단계 로데이터에서는 리포트하지 않습니다 (<Anchor target="_blank" href="/marketers/ko/docs/x-ads-formerly-twitter-ads-setup-guide-overview#x-ads-사용자-개인정보-보호">상세 설명</Anchor>). |
 | **X Ads 리인게이지먼트 로직** | X Ads는 순 사용자 수를 계산합니다. 유저가 동일 캠페인에 두 번 이상 참여하는 경우, X Ads는 유저 참여 건수를 전환한 건으로 표기합니다. | 앱스플라이어는 각 리인게이지먼트 건을 계수하며, 이 경우, 전환을 복수 건으로 기록합니다. |
+
+<div id="note-1" />
 
 > 📘 **참고**
 >

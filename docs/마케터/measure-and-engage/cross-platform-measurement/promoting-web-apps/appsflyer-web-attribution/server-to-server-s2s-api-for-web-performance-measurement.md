@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **At a glance:** 웹 성과 측정을 위한 S2S API를 사용하면 광고 차단기 및 쿠키 제한과 같은 브라우저 제한을 우회하여 서버에서 웹 방문과 이벤트를 앱스플라이어로 직접 전송할 수 있습니다. 더 완전하고 품질 높은 어트리뷰션 데이터를 얻기 위해 웹 SDK와 함께 사용하거나 단독으로 사용할 수 있습니다.
 
+<div id="about-the-s2s-api-for-web-attribution" />
+
 ## 웹 어트리뷰션용 S2S API 소개
 
 앱스플라이어는 어트리뷰션을 위해 웹 데이터를 전송하는 두 가지 방법을 지원합니다. 웹 SDK(클라이언트 측)와 S2S API(서버 간, 즉 S2S)입니다. 설정과 요구 사항에 따라 두 방법 중 하나를 독립적으로 사용하거나 함께 조합해 사용할 수 있습니다.
 
 웹 SDK는 브라우저에서 실행됩니다. 대신 S2S API를 사용하면 자체 백엔드에서 동일한 데이터를 전송할 수 있습니다. 그 이유는 다음과 같습니다. Safari ITP, Firefox ETP, Brave를 비롯한 개인정보 보호 중심 브라우저와 광고 차단기가 클라이언트 측 측정을 차단하거나 제한할 수 있기 때문입니다. 업계는 브라우저 수준의 차단은 웹 사용자 중 25&#126;40%에 영향을 미치는 것으로 예측합니다. S2S 호출은 서버에서 시작되고 브라우저를 거치지 않으므로 이러한 제한의 영향을 전혀 받지 않습니다.
 
+<div id="how-it-works" />
+
 ### 작동 방법
 
 1. 사용자가 웹사이트를 방문하거나 브라우저에서 이벤트를 트리거합니다.
 2. 서버가 이벤트를 수신합니다.
 3. 서버가 어트리뷰션을 위해 이벤트를 앱스플라이어 서버로 직접 전송합니다.
+
+<div id="why-use-s2s" />
 
 ### S2S를 사용하는 이유
 
@@ -43,9 +49,13 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 * **백엔드의 데이터 보강:** S2S를 사용하면 서버가 이벤트를 전송하기 전에 고객 사용자 ID, 해쉬 처리된 이메일 또는 전화번호, CRM 속성, 구독 상태 또는 내부 식별자 등을 포함한 추가 데이터를 이벤트에 추가할 수 있습니다. 이를 통해 ID 식별이 개선되고 신호 품질이 강화됩니다.
 * **보안:** Dev 키, 사용자 식별자 및 추가된 모든 데이터는 서버에 유지되며 보안 연결을 통해 전송되므로 인프라에서 외부로 나가는 항목을 완전히 제어할 수 있습니다.
 
+<div id="api-specification" />
+
 ## API 사양
 
 기본 URL: `https://events.appsflyer.com`
+
+<div id="authentication" />
 
 ### 인증
 
@@ -56,9 +66,13 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 | `Authorization` | API 토큰 | S2S API 토큰은 다음 형식으로 헤더에 포함됩니다:<br /><br />`Authorization: Bearer {s2s-token}` |
 | `Content-Type` | 스트링 | `application/json`이어야 합니다. 모든 요청에 필요합니다. |
 
+<div id="note" />
+
 > 📘 **노트**
 >
 > S2S API 토큰을 생성하려면 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens#토큰-관리">앱스플라이어 토큰 관리</Anchor> 가이드를 참조하세요.
+
+<div id="measure-an-event" />
 
 ### 이벤트 측정
 
@@ -117,6 +131,8 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 
 </Accordion>
 
+<div id="measure-a-visit" />
+
 ### 방문 측정
 
 `POST /v2.0/s2s/visits/app/web/{appId}`
@@ -171,6 +187,8 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 
 </Accordion>
 
+<div id="set-up-a-fully-server-side-integration" />
+
 ## 완전한 서버 측 연동 설정
 
 웹 SDK를 S2S와 함께 실행 중이라면 [웹 SDK afUserID 추출](#extracting-the-web-sdk-afuserid)을 대신 사용하세요. 이 섹션은 SDK 없이 연동하는 경우에만 해당합니다.
@@ -211,6 +229,8 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 다음 사항을 유념하세요. 방문은 대부분 익명이므로 항상 쿠키 값을 전송해야 합니다. 사이트 내 이벤트의 경우 사용자가 식별되면 `customer_user_id`를 추가하고, 쿠키도 함께 계속 전송하세요. 브라우저에서 발생하지 않은 이벤트의 경우, 앱스플라이어가 이전에 식별된 세션을 통해 해당 사용자를 이미 알고 있다면 `customer_user_id`만으로도 충분합니다.
 
 </Accordion>
+
+<div id="things-to-consider" />
 
 ## 고려 사항
 
@@ -268,6 +288,8 @@ S2S API를 사용할 때 얻을 수 있는 이점을 다음과 같이 정리했�
 
 </Accordion>
 
+<div id="send-events-via-segment-cdp" />
+
 ## Segment(CDP)를 통해 이벤트 전송
 
 **Segment를 사용해 이벤트를 S2S API로 라우팅할 수 있습니다.** (Segment는 고객 이벤트를 수집해 구성된 대상에 전송하는 데 사용되는 도구인 고객 데이터 플랫폼입니다.)
@@ -286,6 +308,8 @@ S2S API
 
 Web SDK와 Segment는 앱스플라이어로 들어가는 두 개의 병렬 경로이며, 공통 식별자로 연결됩니다.
 
+<div id="note-1" />
+
 > 📘 **노트**
 >
 > 여기서는 Segment 사용자 지정 대상에서 S2S를 통해 전송되는 **웹** 이벤트를 다룹니다. 앱 설치 및 인앱 이벤트를 앱스플라이어 모바일 SDK에 연결하는 Segment의 모바일 SDK 래퍼에 대해서는 <Anchor target="_blank" href="/marketers/ko/docs/segment-integration">Segment integration</Anchor>을 참조하세요. 이는 다른 플랫폼을 위한 별도의 연동입니다.
@@ -293,6 +317,8 @@ Web SDK와 Segment는 앱스플라이어로 들어가는 두 개의 병렬 경�
 <Accordion title="Segment에서 대상 설정">
 
 앱스플라이어에는 아직 S2S API용으로 사전 구축된 Segment 대상이 없으므로, Segment에서 각 이벤트를 S2S 엔드포인트로 전송하는 사용자 지정 대상으로 설정해야 합니다. 데이터 형식을 얼마나 세밀하게 컨트롤해야 하는지에 따라 두 가지 방법이 있습니다.
+
+<div id="option-1-webhooks-actions-destination" />
 
 #### 옵션 1: Webhooks(Actions) 목적지
 
@@ -303,6 +329,8 @@ Web SDK와 Segment는 앱스플라이어로 들어가는 두 개의 병렬 경�
 1. Segment에서 대상 카탈로그의 Webhooks 대상을 추가하세요.
 2. 전송하려는 이벤트를 수집하는 소스에 연결하세요.
 3. 각 이벤트 유형에 대해 앱스플라이어 URL을 정의하고, 메서드를 POST로 설정하고, 필요한 헤더를 추가하고, 이벤트 필드에서 JSON 페이로드를 구성하는 매핑을 생성하세요.
+
+<div id="option-2-destination-function" />
 
 #### 옵션 2: 목적지 함수
 

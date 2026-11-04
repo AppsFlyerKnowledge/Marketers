@@ -25,6 +25,10 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="important-note" />
+
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
@@ -73,10 +77,14 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 이곳을 **처음 방문**하면 아래를 토글해야 합니다. ***파트너 활성화*** 버튼을 **켜서** 연동 탭의 파라미터 설정을 활성화합니다. 파트너와 함께 작업하는 동안에는 토글이 **켜져 있어야** 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -92,6 +100,8 @@ NSString *kahunaDeviceID = [Kahuna getKahunaDeviceId];
 4.
 
 * **저장**을 클릭합니다.
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -146,7 +156,7 @@ Braze에서는 권한 설정을 사용할 수 없습니다.
 
 
 
-<span id="view-user-attribution-data-in-kahuna"></span>1.
+<span id="testing-with-sandbox"></span><span id="view-user-attribution-data-in-kahuna"></span>1.
 
 2.
 

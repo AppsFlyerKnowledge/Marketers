@@ -42,6 +42,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 파트너 설정 창 헤더에 대한 자세한 설명은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">여기</Anchor>를 클릭하십시오.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > * 연동 탭의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#d-general-settings">일반 설정</Anchor> 단계는 모든 파트너에게 **필수** 항목입니다
@@ -53,16 +55,22 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다. 일반 설정
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 이곳을 **처음 방문**하면 아래를 토글해야 합니다. ***파트너 활성화*** 버튼을 **켜서** 연동 탭의 파라미터 설정을 활성화합니다. 파트너와 함께 작업하는 동안에는 토글이 **켜져 있어야** 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
 사용자 설치 및 리인게이지먼트 이후 RTB House에 자동 포스트백을 보냅니다. 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
 
 아이언소스에 어트리뷰트된 사용자에게만 발생하는 이벤트에 대해 **이 파트너에 기여한 이벤트만** 선택합니다.
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -91,6 +99,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 이 탭은 여러 섹션으로 나눠집니다.
 
+<div id="attribution-link-parameters" />
+
 ### 어트리뷰션 링크 파라미터
 
 이 섹션에서는 어트리뷰션 링크에 추가하고 싶은 파라미터를 선택합니다.
@@ -108,6 +118,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 다른 파라미터를 새 파라미터 상자에 입력하기만 하면, 어트리뷰션 링크에 추가할 수 있습니다. 더 많은 정보는 **앱스플라이어 어트리뷰션 링크 구조와 파라미터**에서 참조하십시오.
 
+<div id="click-through-attribution" />
+
 ### 클릭-쓰루 어트리뷰션
 
 **클릭에서 인스톨까지의 최대 시간**을 이 슬라이더에서 설정할 수 있습니다. 기여 기간 내에 일어난 인스톨(앱 최초 실행)만 트위터로 어트리뷰션됩니다.
@@ -115,6 +127,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 **어트리뷰션 링크 파라미터:** af\_click\_lookback
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">클릭 룩백 윈도우 관련 상세 내용은 여기</Anchor>를 참조하십시오.
+
+<div id="click-attribution-link" />
 
 ### 클릭 어트리뷰션 링크
 
@@ -144,6 +158,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 이 탭에서는 X Ads에 애드 네트워크, 에이전시 또는 양쪽 모두로 활동하는지에 따라 부여할 권한을 선택할 수 있습니다. X Ads에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 X Ads에 제어 권한을 부여할 수 있습니다.
 
+<div id="ad-network-permissions" />
+
 ### 애드 네트워크 권한
 
 * ***파트너 연동 설정 허용*** - 파트너가 연동 탭을 설정할 수 있도록 허용 (인앱 이벤트 포스트백 제외)
@@ -155,6 +171,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 * ***Protect360 대시보드 접근 허용*** - 파트너 자사의 Protect360 데이터에만 해당되며, 이 기능을 사용하고 있는 광고주만 부여 가능
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">애드 네트워크 권한 부여</Anchor>에 대해 자세히 알아보십시오.
+
+<div id="agency-permissions" />
 
 ### 에이전시 권한
 

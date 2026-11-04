@@ -24,11 +24,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## SKAN 전환 값 디코딩
 
 광고주는 <Anchor target="_blank" href="/marketers/ko/docs/skan-conversion-studio">변환 스튜디오</Anchor>에서 사용할 수 있는 옵션을 사용하는 대신 전환 가치 디코딩을 사용합니다. Decode를 사용하는 경우 앱 로직에 따라 <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor>를 설정해야 합니다.
 
 앱에서 전환 가치(CV)를 설정하는 것 외에도 나머지 흐름, 기능 및 보고 옵션은 <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">SKAN 솔루션 가이드</Anchor>에 설명된 것과 동일합니다. 즉, 액티비티 윈도우(사용자가 제어)가 만료되면 iOS는 포스트백을 광고 네트워크로 전송하고, 광고 네트워크는 이를 앱스플라이어에 전달합니다. 앱스플라이어는 SDK에서 설정한 디코딩된 CV와 마찬가지로 처리된 이벤트로 매핑에 따라 CV를 디코딩합니다.
+
+<div id="custom-conversion-valuedecode" />
 
 ## 사용자 지정 변환 값 - 디코딩
 
@@ -66,6 +70,8 @@ x-zendesk:
   * 집계된 보고서 및 대시보드에서 수익은 범위의 평균으로 계산됩니다. 예: min\_revenue=4 및 max\_revenue=10인 경우, 계산된 수익은 7입니다.
   * 로데이터 보고서에는 계산된 수익(skad\_revenue), min\_revenue 및 max\_revenue이 포함됩니다.
 
+<div id="meta-specific-rules" />
+
 #### **메타 특정 규칙**
 
 Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
@@ -73,6 +79,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 * 지정된 전환 가치에 대한 최소 및 최대 수익 값은 서로 달라야 합니다. 즉, 같지 않습니다.
 * 값은 겹치지 않아야 하며 다음 표의 conversion\_value 1-2 및 62와 같이 연속된 순서여야 합니다.
 * 이벤트 횟수: Meta 광고는 이 값을 고려하지 않습니다. [모범 사례] 값 1로 채웁니다.
+
+<div id="example-decode-mapping" />
 
 ### 예시: 디코딩 매핑
 
@@ -90,12 +98,16 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 | 62 | af\_구매 | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### 예제 A: 미세한 변환 값 1
 
 | event\_name | skad\_수익 | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | 인스톨 |  |  |  |  |
 | af\_구매 | 1.5 | 0 | 3 | abc |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### 예시 B: 미세한 변환 값 2
 
@@ -105,6 +117,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 | af\_구매 | 6.5 | 3 | 10 | `{def}` |
 | af\_구매 | 6.5 | 3 | 10 | `{def}` |
 | af\_구매 | 6.5 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### 예시 C: 미세한 변환 값 21
 
@@ -122,6 +136,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
 
+<div id="example-d-fine-conversion-value-62" />
+
 ### 예시 D: 미세한 변환 값 62
 
 | event\_name | skad\_수익 | min\_revenue | max\_revenue | event\_value |
@@ -134,6 +150,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 | event\_a |  |  |  | `{klm}` |
 
 </Accordion>
+
+<div id="zd-decode-csv-file-specification" />
 
 <div id="decode-csv-file-specification" />
 
@@ -190,6 +208,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## CSV 업로드 오류 파일 문제 해결
 
 파일에 있는 하나 이상의 값이 필요한 형식과 일치하지 않습니다. 2021년 6월 7일부터 파일 형식이 변경되었습니다. 파일 형식이 이 문서의 예제와 일치하는지 확인합니다.
@@ -202,6 +222,8 @@ Meta 광고와 통합하는 경우 다음 규칙을 준수하세요.
 Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV 파일로 저장하기 전에 event\_revenue\_usd 열의 형식을 올바르게 지정해야 합니다.
 
 CSV 파일을 저장한 후 콘텐츠의 형식이 올바른지 확인합니다. **참고**: 확인을 위해 Excel을 사용하지 말고 [편집기](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel)를 사용하세요.
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### Excel에서 event\_revenue\_usd 셀 서식 지정
 

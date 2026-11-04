@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 모바일 앱에 내장된 웹 뷰에서 인앱 이벤트를 기록하여, 상호작용이 앱의 웹 기반 콘텐츠에서 발생할 때도 전체 이벤트 측정이 가능합니다.
 
+<div id="introduction" />
+
 ## 소개
 
 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">앱 내 이벤트</Anchor>는 SDK를 사용하여 보고됩니다. 앱 외부에서 발생하는 이벤트는 어떻게 되나요?
@@ -41,6 +43,8 @@ x-zendesk:
 
 본 가이드에서는 하이브리드 시나리오를 다룹니다. HTML 뷰와 네이티브 뷰 간의 차이를 해소하여 HTML 뷰에서 이벤트를 기록하고 앱으로 보낼 수 있는 방법에 대해 알아봅니다.
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > 구독 서비스를 제공하는 하이브리드 앱이 있습니다. 웹사이트에서 실제로 로드되는 web view에서 구독 양식을 구현합니다.
@@ -51,12 +55,16 @@ x-zendesk:
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
+<div id="recording-in-app-events-in-hybrid-apps" />
+
 ### 하이브리드 앱에서의 인앱 이벤트 기록
 
 이 가이드에서는, 하이브리드 앱의 인앱 이벤트를 기록하는 두 가지 방법을 안내합니다.
 
 * **[추천]** [**JavaScript 인터페이스**](/docs/in-app-events-for-hybrid-apps#자바스크립트-인터페이스): 이 메서드는 네이티브 자바스크립트 인터페이스를 사용하여 HTML 또는 웹 뷰와 네이티브 코드 사이의 통신을 설정합니다. 이런 방식으로 웹 뷰에서 네이티브 코드로 인앱 이벤트 관련 데이터를 보낼 수 있습니다. 네이티브 코드가 데이터를 확보하면, SDK를 사용하여 앱스플라이어로 전송합니다.
 * URL 로딩 URL 로딩: 이 메서드에서, 네이티브 코드는 url 로딩 이벤트를 수신 대기합니다.  네이티브 코드를 설정하여 특정 URL로 로딩 이벤트를 수신 대기하고 URL 파라미터에서 데이터를 추출할 수 있습니다. 그런 다음 이 데이터는 앱스플라이어 SDK로 전달됩니다.
+
+<div id="javascript-interface" />
 
 ## 자바스크립트 인터페이스
 
@@ -80,6 +88,8 @@ URL 로딩에 비한 네이티브 자바스크립트 인터페이스 사용의 �
 <div id="android" />
 
 <Accordion title="안드로이드">
+
+<div id="html-code-for-android" />
 
 #### 안드로이드 용 HTML 코드
 
@@ -112,6 +122,8 @@ function recordEvent(){
   ```
 * 가능한 문제를 피하기 위해 AppsFlyer는 다음을 사용하는 것을 권장합니다. 딥링킹을 작동시키고 소문자 알파벳 숫자 문자(a-z 및 0-9)를 사용하여 인앱 이벤트 이름
 
+<div id="webactivity-class" />
+
 #### WebActivity 클래스
 
 다음 코드를 사용하여 웹 액티비티 클래스를 작성합니다.
@@ -133,6 +145,8 @@ public class WebActivity extends AppCompatActivity {
 ```
 
 위 코드는 **앱**이라는 객체를 생성합니다. 그 웹 뷰와 네이티브 코드 간의 다리 역할을 합니다.
+
+<div id="javascript-interface-class" />
 
 #### Javascript 인터페이스 클래스
 
@@ -184,6 +198,8 @@ HTML 코드에서 메서드가 호출되는 것을 볼 수 있습니다. `app.re
 
 <Accordion title="iOS">
 
+<div id="html-code-for-ios" />
+
 #### 에 대한 HTML 코드입니다. iOS
 
 다음 HTML 코드를 web view 또는 웹 페이지에 추가합니다.
@@ -218,6 +234,8 @@ HTML 코드에서 메서드가 호출되는 것을 볼 수 있습니다. `app.re
   "{\"af_revenue\":\"6.72\", \"af_content_type\": \"wallets\", \"af_content_id\": \"15854\"}"
   ```
 * 가능한 문제를 피하기 위해 AppsFlyer는 다음을 사용하는 것을 권장합니다. 딥링킹을 작동시키고 소문자 알파벳 숫자 문자(a-z 및 0-9)를 사용하여 인앱 이벤트 이름
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -278,6 +296,8 @@ Web view controller에서 다음 코드를 view controller에 추가합니다. �
 
 위 코드는 웹 뷰의 메시지를 수신합니다. 메시지입니다. 이벤트 이름과 이벤트 값을 포함합니다. 코드가 감지할 때입니다. 마지막 매시간 업데이트된 들어오는 메시지는 `recordEvent`으로 전달됩니다. 값을 구문 분석하고 네이티브 SDK를 호출하는 메서드입니다. 방법
 
+<div id="swift-webview-controller" />
+
 #### Swift WebView 컨트롤러
 
 웹 뷰 컨트롤러에 다음 코드를 추가하세요:
@@ -335,6 +355,8 @@ import JavaScriptCore
 
 </Accordion>
 
+<div id="url-loading" />
+
 ## URL 로딩
 
 안드로이드와 iOS 모두 url 로딩 이벤트를 받는(listen) 네이티브 메서드를 구현합니다. 이 메서드를 사용하면 다음을 할 수 있습니다.
@@ -348,7 +370,11 @@ import JavaScriptCore
 1. Webview 또는 웹페이지를 위한 HTML 코드
 2. URL 로딩을 위한 네이티브 코드 구현
 
+<div id="webview-implementation" />
+
 ### Webview 구현
+
+<div id="html-code-for-both-android-webview-and-ios-wkwebview" />
 
 #### HTML 코드 (안드로이드 WebView 및 iOS WKWebView 모두에 사용)
 
@@ -399,6 +425,10 @@ import JavaScriptCore
 
 <Tabs>
 <Tab title="안드로이드">
+
+<div id="ios-implementation" />
+
+<div id="android-implementation" />
 
 #### 안드로이드 구현
 

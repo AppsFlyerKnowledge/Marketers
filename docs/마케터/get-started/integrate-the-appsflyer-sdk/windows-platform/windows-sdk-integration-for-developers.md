@@ -37,6 +37,10 @@ x-zendesk:
 
 앱스플라이어 SDK를 통해 설치, 업데이트, 세션을 기록할 수 있고, 또한 앱 설치 이 외에도 인앱 구매나 게임 레벨 달성과 같은 인앱 이벤트를 추가로 기록하여 ROI 및 사용자 인게이지먼트 수준을 파악할 수 있습니다.
 
+<div id="important-1" />
+
+<div id="1-integration-steps" />
+
 ## 1. 통합 단계
 
 [![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
@@ -44,6 +48,10 @@ x-zendesk:
 [altalt](https://support.appsflyer.com/hc/article_attachments/51857613739153)
 
 [altalt](https://support.appsflyer.com/hc/article_attachments/51857613739409)
+
+<div id="recording-app-launchasynchronously" />
+
+<div id="2-sdk-initialization--installation-event-minimum-requirement-for-attributing" />
 
 ## 2.
 
@@ -73,6 +81,8 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="3-in-app-event-recording-api-optional" />
+
 ## 3.
 
 ```csharp
@@ -80,6 +90,10 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 ```
 
 * 양수 또는 음수의 모든 숫자를 입력할 수 있습니다.
+
+<div id="recording-events-asynchronously" />
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -105,10 +119,16 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="45-c--cx-integration-example" />
+
+<div id="44-getconversiondataasync-optional" />
+
+<div id="4-advanced-integration" />
+
 ## 4. 고급 연동
 
 
-<span id="51-set-currency-code-optional"></span>AppsFlyer로 전송된 각 인앱이벤트의 일부로 사용할 수 있는 특정 통화 코드 이외에도 다음 API를 이용해서 국제 통화 코드를 설정할 수 있습니다.
+<span id="41-set-currency-code-optional"></span><span id="51-set-currency-code-optional"></span>AppsFlyer로 전송된 각 인앱이벤트의 일부로 사용할 수 있는 특정 통화 코드 이외에도 다음 API를 이용해서 국제 통화 코드를 설정할 수 있습니다.
 
 통화 코드를 설정하려면 다음의 API를 사용하세요:
 
@@ -117,14 +137,14 @@ tracker.currencyCode = "GBP";
 ```
 
 
-<span id="52-getappsflyeruid-optional"></span>고유 앱스플라이어 ID가 앱이 새로 설치될 때마다 발급됩니다.
+<span id="42-getappsflyeruid-optional"></span><span id="52-getappsflyeruid-optional"></span>고유 앱스플라이어 ID가 앱이 새로 설치될 때마다 발급됩니다.
 
 ```csharp
 public string getAppsFlyerUID()
 ```
 
 
-<span id="53-customer-user-id-optional"></span>이 ID는 내부 ID와 상호 참조할 수 있도록 포스트백 API와 AppsFlyer CSV 보고서에 보여집니다.
+<span id="43-customer-user-id-optional"></span><span id="53-customer-user-id-optional"></span>이 ID는 내부 ID와 상호 참조할 수 있도록 포스트백 API와 AppsFlyer CSV 보고서에 보여집니다.
 
 다음을 통해 고객 사용자 ID를 설정하세요:
 

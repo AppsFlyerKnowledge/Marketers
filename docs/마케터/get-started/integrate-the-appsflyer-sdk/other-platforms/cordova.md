@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 사용 중지될 버전과 그에 따른 영향 및 최신 SDK 버전으로 업데이트하는 방법에 대해 알아 보시려면 <Anchor target="_blank" href="/marketers/ko/docs/sdk-integration-overview#sdk-정보">여기</Anchor>를 클릭하십시오.

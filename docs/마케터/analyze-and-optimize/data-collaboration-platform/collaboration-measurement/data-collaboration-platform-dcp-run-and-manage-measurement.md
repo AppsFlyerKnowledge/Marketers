@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 현장 또는 비현장 측정을 구성한 후, 이를 실시간 측정 또는 역사적 측정으로 실행합니다. 목표에 가장 적합한 모드를 선택하십시오: 성능을 지속적으로 측정하거나 정의된 기간 동안 결과를 검증합니다.
 
+<div id="about-the-measurement-run-modes" />
+
 ## 측정 실행 모드에 대하여
 
 현장 또는 비현장 측정을 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#온사이트-및-오프사이트-캠페인-측정">구성한 후</Anchor>, 측정을 실행하는 방법을 선택할 준비가 되었습니다.
@@ -29,6 +31,8 @@ x-zendesk:
 
 * **실시간 측정**: 정기적으로 업데이트되는 지속적인 측정으로, 실시간 대시보드에 새로운 데이터가 추가됨에 따라 성능을 지속적으로 모니터링할 수 있습니다.
 * **역사적 측정**: 특정 날짜 범위에 대한 일회성 측정으로, 역사적 대시보드에서 보고 분석할 수 있습니다.
+
+<div id="live-vs-historical-measurements" />
 
 ### 실시간 측정 대 역사적 측정
 
@@ -39,6 +43,8 @@ x-zendesk:
 | 지원되는 소스 유형 | <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">추가</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">덮어쓰기(스냅샷)</Anchor> | <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">사용자 정의 소스 추가</Anchor> |
 | 시간 프레임 선택 | 사용 가능한 데이터에서 **시작 및 종료 날짜**를 선택하세요 | **시작 날짜만 선택하세요** (플랫폼이 활성화 시 역사적 시간 프레임을 계산하고 데이터를 계속 축적합니다) |
 | 측정당 몇 개 | 다수 | 하나의 |
+
+<div id="choose-the-measurement-you-need" />
 
 ### 필요한 측정을 선택하세요
 
@@ -58,6 +64,8 @@ x-zendesk:
 
 **팁:** 설정을 테스트하거나 특정 기간을 먼저 검증하는 경우 **역사적 측정**부터 시작하세요. 지속적인 모니터링을 준비할 때, **실시간 측정**으로 전환하여 지속적인 업데이트를 받으세요.
 
+<div id="run-a-live-measurement" />
+
 ## 실시간 측정을 실행하세요
 
 **시작하기 전에**  <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#온사이트-및-오프사이트-캠페인-측정">측정 설정 페이지에서 현장 또는 비현장 측정 캠페인을 구성하세요</Anchor>.
@@ -66,6 +74,8 @@ x-zendesk:
 
    **실행하기**가 비활성화되어 있으면, 측정 작업이 완료되지 않습니다. 측정을 실행하기 위해 필요한 모든 설정 작업을 완료하십시오.
 2. **실행 준비** 대화 상자에서 **실시간 대시보드**를 선택하십시오.
+
+   <div id="note" />
 
    > 📘 **참고**
    >
@@ -76,6 +86,8 @@ x-zendesk:
 4. **측정 시작 날짜**를 선택하십시오. 기본값은 오늘 날짜이며, 날짜 선택기에서 과거 날짜를 선택할 수 있습니다. (데이터 소스에 존재하는 날짜만 선택할 수 있습니다.)
 5. **시작**을 클릭하여 실시간 측정을 시작하십시오. 협업 측정 페이지로 리디렉션됩니다.
 6. 협업 측정 페이지에서 자동 검증 검사가 성공적으로 완료된 후 **실행하기**를 클릭하십시오.
+
+<div id="run-a-historical-measurement" />
 
 ## 히스토리 측정을 실행하십시오.
 
@@ -91,9 +103,13 @@ x-zendesk:
 5. **시작**을 클릭하여 역사적 측정을 시작하십시오. 협업 측정 페이지로 리디렉션됩니다.
 6. 협업 측정 페이지에서 자동 검증 검사가 성공적으로 완료된 후 **실행하기**를 클릭하십시오.
 
+<div id="manage-measurements" />
+
 ## 측정 관리
 
 측정을 설정하고 실행한 후, 협업 측정 페이지의 측정 패널에서 이를 관리하십시오. 실시간 측정을 일시 중지하거나 재시작하고, 날짜를 조정하며, 역사적 측정을 다시 실행하거나, 측정을 복제하여 새로운 실행을 생성할 수 있습니다.
+
+<div id="the-collaboration-measurement-page" />
 
 ### 협업 측정 페이지
 
@@ -102,6 +118,8 @@ x-zendesk:
 <div id="pause-or-restart-live-measurement" />
 
 <Accordion title="실시간 측정을 일시 중지하거나 재시작하십시오.">
+
+<div id="legend" />
 
 #### 범례
 

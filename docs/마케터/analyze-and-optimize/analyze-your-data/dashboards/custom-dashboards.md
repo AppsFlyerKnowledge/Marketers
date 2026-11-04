@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## 커스텀 대시보드
 
 모든 커스텀 대시보드는 유저 인입 지표를 포함하는 하나 이상의 위젯으로 구성됩니다. 위젯 마법사를 사용하여 지표, 프레젠테이션 형식, 앱 등을 선택하여 위젯을 구성합니다.
@@ -32,6 +34,8 @@ x-zendesk:
 사용 가능한 지표는 개요 대시보드 유저 인입 보기 지표와 유사합니다. 참고! 일러두기! 통합 개요 또는 리타게팅 뷰와 비교하지 **마십시오**.
 
 커스텀 대시보드가 정의되면 계정의 모든 사용자가 사용할 수 있습니다. 
+
+<div id="dashboard-personalization" />
 
 ## 대시보드 개인화
 
@@ -42,6 +46,8 @@ x-zendesk:
 | 위젯 크기 조정 | 위젯의 맨 아래 오른쪽 모서리를 끌어서 크기를 조정합니다. |
 | 위젯 위치 | 대시보드에서 위젯을 드래그 앤 드롭하여 위치를 변경합니다. |
 | 작업 | 오른쪽 상단 모서리에 있는 위젯 위에 마우스를 가져가 조치를 클릭하십시오. 위젯별로 다음 조치를 사용할 수 있습니다.<ul><li>수정</li><li>복제</li><li>삭제</li><li>CSV 다운로드</li></ul> |
+
+<div id="procedures" />
 
 ## 절차
 
@@ -115,6 +121,8 @@ x-zendesk:
    CSV 파일의 날짜 형식은 dd/mm/yyyy입니다. Excel에서 이 형식을 mm/dd/yyyy와 같은 <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">다른 형식으로 전환</Anchor>할 수 있습니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

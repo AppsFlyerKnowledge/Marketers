@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹사이트에 앱스플라이어 웹 SDK(픽셀)를 설치하여 사용자 방문 및 이벤트를 앱스플라이어에 보고하고, 고유한 고객 사용자 ID(CUID)를 설정하여 여러 플랫폼 간의 여정을 통합하세요.
 
+<div id="overview" />
+
 ## 개요
 
 웹 SDK를 사용하면 방문자가 웹사이트와 상호작용하는 방식을 기록하고 이 정보를 앱스플라이어로 전송할 수 있습니다. 해당 모듈은 40–60 KB 용량의 플러그인으로, 사용자의 웹사이트 방문 및 액션 데이터를 앱스플라이어 플랫폼으로 전송합니다.
@@ -39,6 +41,8 @@ x-zendesk:
 7. [개인 정보 관리.](#5-개인-정보-관리) 측정 옵트인(opt-in) 및 옵트아웃(opt-out) 여부를 관리하고, 보안 및 데이터 필터링(콘텐츠 보안 정책 및 쿼리 파라미터 제외 설정)을 설정하세요.
 8. [Web SDK 쿠키 참조.](#웹-sdk-쿠키-참조) Web SDK가 설정하거나 사용하는 쿠키, 목적, 수명 및 범위를 포함하여 검토합니다.
 
+<div id="1-obtain-your-keys" />
+
 ## 1. 키 얻기
 
 **Web SDK ID(웹 개발자 키라고도 함):**
@@ -52,6 +56,8 @@ x-zendesk:
 1. 앱스플라이어 측면 메뉴에서 **인게이지(Engage)** > **웹-to-앱(Web to App)** > **스마트 배너(Smart Banners)** 를 선택합니다.
 2. 필요한 스마트 배너 키를 복사합니다.
 
+<div id="2-select-a-code-snippet" />
+
 ## 2. 코드 스니펫 선택
 
 연동 유형 및 보안 요구 사항에 맞는 코드 스니펫을 선택하세요. 두 가지 옵션:
@@ -62,6 +68,8 @@ x-zendesk:
 > 🚧 **중요!**
 >
 > Standard Web SDK에서 Advanced SDK Verification로 전환하는 경우 기존 스냅트를 새 스냅트로 교체합니다. 기존 스냅트 위에 새 스냅트를 추가하지 마십시오.
+
+<div id="standard-web-sdk" />
 
 ### 표준 웹 SDK
 
@@ -121,6 +129,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### 고급 SDK 검증
 
@@ -201,6 +211,8 @@ Advanced SDK SDK Verification 는 선택 사항입니다. 표준 통합은 여�
 
 </Accordion>
 
+<div id="3-deploy-the-snippet" />
+
 ## 3. Deploy the 스냅트
 
 단계 2에서 선택한 스냅트를 다음 방법 중 하나를 사용하여 배포합니다. SDK가 페이지 로드당 한 번 로드되는지 확인합니다.
@@ -259,6 +271,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
 
 <Accordion title="옵션 B: Adobe Launch Tag Manager를 통해 구축">
 
+<div id="create-a-property-in-adobe-experience-cloud" />
+
 #### Adobe Experience Cloud에 속성 생성
 
 1. Adobe Experience Cloud > Launch로 가십시오.
@@ -268,6 +282,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
 5. **플랫폼** 아래 **웹**을 선택합니다.
 6. 귀하의 웹사이트 도메인을 입력합니다.
 7. **저장**을 클릭하세요.
+
+<div id="add-the-snippet-to-the-adobe-launch-property" />
 
 #### Adobe Launch 속성에 스냅트 추가
 
@@ -282,6 +298,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
    * **변경 유지**를 클릭하여 코드 편집기를 닫습니다.
 5. **저장**을 클릭하세요.
 
+<div id="add-the-adobe-launch-tag-to-the-website" />
+
 #### Adobe Launch 태그를 웹사이트에 추가
 
 1. **My web property** 페이지에서 **환경** 탭을 선택합니다.
@@ -289,6 +307,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
 3. **Install** 열 아래에 해당 행의 상자 아이콘을 클릭합니다.
 4. **웹 설치 지침** 대화 상자에서 스크립트 코드 조각을 복사하고 대화 상자를 닫습니다.
 5. 코드 조각을 귀하의 웹사이트 &lt;head> 태그에 붙여넣습니다.
+
+<div id="publish-the-adobe-launch-environment" />
 
 #### Adobe Launch 환경 게시
 
@@ -308,6 +328,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
    * 조치 메뉴를 클릭하고 > **프로덕션에 빌드 및 게시**를 선택합니다.
 
 </Accordion>
+
+<div id="4-make-sure-the-sdk-is-working" />
 
 ## 2. SDK가 작동하는지 확인하십시오.
 
@@ -331,6 +353,8 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
    * (E) 상태 코드는 200입니다.
 8. `site_id`가 AppsFlyer > 상단 메뉴 > **내 앱**의 `WEB_SDK_KEY`와 일치하는지 확인합니다.
 9. SDK가 한 번만 로드되도록 하십시오. SDK가 여러 번 로드되면 SDK 기능이 중지될 수 있습니다.
+
+<div id="5-set-and-record-events" />
 
 ## 3. 설정 및 이벤트 기록
 
@@ -406,6 +430,8 @@ window.onload = function(){
 
 이 접근법은 "감사합니다" 페이지가 로드될 때 태그를 촬영하여 뉴스레터 구독과 같은 성공적인 변환을 기록하는 데 사용됩니다.
 
+<div id="1-set-up-a-thank-you-page" />
+
 #### 1. 감사 페이지 설정
 
 다음 HTML 구조는 GTM를 로드하여 Web SDK를 로드합니다. 또한 기능이나 `localStorage`을 통해 GTM에 데이터를 제공하는 방법도 보여줍니다.
@@ -433,6 +459,8 @@ window.onload = function(){
 </body>
 </html>
 ```
+
+<div id="2-configure-the-gtm-tag" />
 
 #### 2. GTM 태그 구성
 
@@ -505,6 +533,8 @@ window.onload = function(){
 
 이 방법은 GTM의 내장 변수와 트리거를 사용하여 특정 작업을 캡처합니다. 예를 들어 **결정** 버튼을 클릭하는 것과 같은 작업을 캡처합니다.
 
+<div id="1-set-up-a-checkout-page" />
+
 #### 1. 결제 페이지 설정
 
 ```html
@@ -525,6 +555,8 @@ window.onload = function(){
 </html>
 ```
 
+<div id="2-configure-gtm-variables-and-triggers" />
+
 #### 2. GTM 변수 및 트리거 구성
 
 1. GTM에서 **Variables** > **Configure를** 클릭하고 Built-In Variables 목록에서 **Click Element를** 활성화합니다.
@@ -533,6 +565,8 @@ window.onload = function(){
    * 트리거 유형: **클릭 - 모든 요소**.
    * 이 트리거는 화재 : **어떤 클릭**.
    * 조건 **Element를 클릭하면** CSS Selector `#checkout`가 일치합니다.
+
+<div id="3-create-the-interaction-tag" />
 
 #### 3. Interaction 태그 만들기
 
@@ -562,6 +596,8 @@ window.onload = function(){
 
 </Accordion>
 
+<div id="6-set-customer-user-id" />
+
 ## 4. 고객 사용자 ID 설정하기
 
 이벤트 측정을 구현한 후, `setCustomerUserId`를 사용하여 다른 플랫폼(모바일, PC, CTV)과 웹 활동을 연결하는 지속적인 ID를 설정하여 플랫폼 간의 사용자 여행에 대한 통합된 뷰를 얻습니다.
@@ -588,6 +624,8 @@ window.onload = function(){
 * 서버는 사용자에 대해 고유한 CUID를 생성합니다.
 * 가입 후 감사 페이지에서 서버에 대해 새 CUID를 쿼리합니다.
 * 서버 응답을 사용하여 웹 SDK `setCustomerUserId()` 메서드를 사용하여 AppsFlyer CUID를 설정합니다.
+
+<div id="a-sign-up-form-example" />
 
 #### A sign-up form 예
 
@@ -622,6 +660,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 </body>
 </html>
 ```
+
+<div id="a-thank-you-page-example" />
 
 #### 감사 페이지 예
 
@@ -736,6 +776,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 
 </Accordion>
 
+<div id="7-manage-privacy" />
+
 ## 5. 개인 정보 관리
 
 이벤트 측정을 구현한 후에는 조직 또는 지역 표준을 준수하기 위해 특정 보안 및 개인 정보 보호 제약을 적용해야 할 수도 있습니다.
@@ -745,6 +787,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
 <Accordion title="이벤트 보내기를 선택하거나 선택하지 않음">
 
 측정을 두 가지 방법으로 제어할 수 있습니다.
+
+<div id="sdk-initial-state-setting-in-the-snippet" />
 
 #### SDK 초기 상태 설정 ( snippet)
 
@@ -756,6 +800,8 @@ SDK가 웹 페이지가 처음 로드되었을 때 이벤트를 전송하거나 
 > 📘 **참고**
 >
 > `measurementStatus`가 비어 있거나 `NULL`인 경우 AppsFlyer는 `measurementStatus:true`로 간주합니다.
+
+<div id="explicit-control" />
 
 #### 명시적 제어
 
@@ -778,6 +824,8 @@ SDK가 웹 페이지가 처음 로드되었을 때 이벤트를 전송하거나 
 
 웹 사이트에 엄격한 보안 또는 데이터 보호 프로토콜이 필요하다면 Web SDK가 환경과 데이터와 상호 작용하는 방법을 구성하려면 다음 메커니즘을 사용하십시오.
 
+<div id="content-security-policy-csp" />
+
 #### 콘텐츠 보안 정책(CSP)
 
 웹사이트가 CSP에서 JavaScript를 보호해야 하는 경우, Web SDK는 CSP 구성과 2단계에서 선택한 스냅트에 따라 두 가지 접근 방식을 지원합니다.
@@ -795,6 +843,8 @@ SDK가 웹 페이지가 처음 로드되었을 때 이벤트를 전송하거나 
 | `script-src 'nonce-...' 'strict-dynamic'` | 예 ( 추천) | Nonce는 인라인 스크립트와 로더를 담고 있습니다. `strict-dynamic`는 동적으로 삽입된 SDK 태그에 대한 신뢰를 전파합니다. 허용 목록에 CDN 원본이 필요하지 않습니다. |
 
 CSP 정책 호환성
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### CSP nonce 스냅킷을 사용한 고급 SDK 검증
 
@@ -868,6 +918,8 @@ CSP 정책 호환성
 
 </Accordion>
 
+<div id="discard-query-parameters" />
+
 #### 쿼리 파라미터 삭제
 
 URL 쿼리 매개 변수에 민감한 정보가 포함되어 있는 경우 AppsFlyer에 해당 정보(URL, 참조자 및 `header_referer`)를 폐기하도록 지시합니다.
@@ -881,6 +933,8 @@ URL 쿼리 매개 변수에 민감한 정보가 포함되어 있는 경우 AppsF
 * 결과:
 
 </Accordion>
+
+<div id="web-sdk-cookies-reference" />
 
 ## 웹 SDK 쿠키 참조
 

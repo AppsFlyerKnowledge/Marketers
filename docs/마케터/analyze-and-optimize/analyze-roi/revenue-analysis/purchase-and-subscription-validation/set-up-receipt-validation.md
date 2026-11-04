@@ -21,7 +21,11 @@ x-zendesk:
 ---
 > **한눈에 보기:** 수수료 검증은 앱 내 구매 및 구독으로부터의 수익을 측정하고 앱 스토어와 확인하여 정확한 광고 지출 반환 (ROAS) 결과를 보장합니다.
 
+<div id="overview" />
+
 ## 개요
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -36,6 +40,8 @@ Receipt validation을 설정하려면 다음 단계를 수행하십시오.
 3. [Test validateAndLog SDK API 구현](#3단계-sdk-구현-확인): iOS 및 Android에서 샌드박스 테스트 구매 및 구독을 수행하여 Receipt 검증 이벤트가 AppsFlyer에서 생성되고 올바르게 기록되었는지 확인합니다.
 4. [설정 확인 및 업데이트](#4단계-설정-확인-및-업데이트): 제품 유형이 Receipt validation로 설정되어 있는지 확인하고 스토어 키 및 SDK 통합 상태를 검토하여 정확하고 지속적인 수익 측정을 보장합니다.
 5. [validateAndLog SDK API를 사용하여 앱 버전을 출시](#5단계-validateandlog-sdk-api를-사용하여-앱-버전을-출시합니다)합니다. `validateAndLog` SDK API가 통합되어 업데이트된 앱 버전을 출시하여 샌드박스 플래그가 비활성화되고 필요한 앱 내 이벤트가 검증 규칙에 의해 차단되지 않도록 합니다.
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## 단계 1 (iOS) App Store Connect 키 설정
 
@@ -91,6 +97,8 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
 5. **보관하고 다음**을 클릭합니다.
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## 단계 1 (Android). 서비스 계정 키 및 권한
 
@@ -203,6 +211,8 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
 
 </Accordion>
 
+<div id="step-2-implement-sdk" />
+
 ## 2단계: 2. SDK V6을 구현합니다.
 
 이 단계에서 개발자가 SDK `validateAndLog` API를 통합하고 테스트를 위해 모래 상자 환경을 설정할 수 있도록 준비합니다. 최신 `validateAndLog` API를 지원하는 최소 SDK 버전은 Android용으로는 **6.17.5**, iOS용으로는 **6.17.8**입니다.
@@ -219,6 +229,8 @@ validateAndLog SDK API를 구현하려면 다음 단계를 따르십시오.
 
    이 메시지는 개발자가 통합을 완료하고 테스트를 시작하는 데 필요한 모든 정보를 제공합니다.
 3. **다음**을 클릭합니다. **Verify SDK implementation** 단계가 열립니다.
+
+<div id="step-3-verify-sdk-implementation" />
 
 ## 3단계: SDK 구현 확인
 
@@ -275,6 +287,8 @@ AppsFlyer가 지난 7일 동안 앱에서 유효한 `validateAndLog` 페이로�
 
 </Accordion>
 
+<div id="step-4-verify-and-update-settings" />
+
 ## 4단계: 설정 확인 및 업데이트
 
 위의 설정 구성을 완료하고 위의 단계를 저장한 후 활성 구성 보기로 리디렉션됩니다. 여기에서 다음 설정을 확인하거나 업데이트할 수 있습니다.
@@ -285,6 +299,8 @@ AppsFlyer가 지난 7일 동안 앱에서 유효한 `validateAndLog` 페이로�
 
    * **App Store 키** 설정
    * **SDK 통합** 설정
+
+<div id="step-5-release-the-app-versions-with-the-validateandlog-sdk-api" />
 
 ## 5단계: validateAndLog SDK API를 사용하여 앱 버전을 출시합니다.
 

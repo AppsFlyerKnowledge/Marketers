@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **간단히 보기**: 요약: SKAN 권장 사항을 사용하여 전환 가치 설정을 최적화하고 보다 정확한 포스트 인스톨 활동 측정 값을 받으세요.
 
+<div id="overview" />
+
 ## 개요
 
 Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호하면서 캠페인 성과를 측정할 수 있게 합니다. SKAdNetwork를 사용하면 포스트 인스톨 활동이 0-63 사이의 숫자(전환 값)만 사용하여 측정됩니다.
@@ -37,11 +39,15 @@ Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호
 * CV 설정을 결정할 때 발생할 수 있는 어려움을 해결합니다.
 * 특정 수직 관계, 지역, SKAN 및 비 SKAN 앱 데이터와 사용자 동작을 기반으로 합니다.
 
+<div id="recommendations" />
+
 ## 권장 사항
 
 <div id="revenue" />
 
 <Accordion title="수익">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **수익 권장 사항 이해**
 
@@ -57,13 +63,19 @@ Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호
 * 수익을 정확하게 측정하기 위해 더 적은 범위를 사용하여 전환 가치를 저장합니다.
 * 인앱 구매와 광고 수익을 모두 고려하십시오.
 
+<div id="revenue-recommendations-layout" />
+
 #### **수익 권장 레이아웃**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>A</span></p></td><td><span>SKAN 수익이 측정되는 동안 활동 기간이 Conversion Studio 구성에 저장됩니다.</span></td></tr><tr><td><p><span>B</span></p></td><td><span>앱스플라이어(AF) 방식을 통해 어트리뷰트된 오가닉 및 논오가닉 사용자의 정확한 데이터를 기반으로 한 유료 사용자당 실제 앱 평균 수익(ARPPU).</span></td></tr><tr><td><p><span>C</span></p></td><td><p>현재 설정 ARPPU(SKAN ARPPU)는 <span>활동 기간 및 수익 리포트를 위한 CV 설정을 위해 Conversion Studio에서 현재 설정을 기준으로</span> 측정한 ARPPU를 의미합니다.</p></td></tr><tr><td><span>D</span></td><td><p>   F 및 G를 참조하십시오.</p><p><span><strong>참고:</strong> </span></p></td></tr><tr><td><p><span>E</span></p></td><td><p> 대략적인 오류: <span>B와 C의 차이점입니다. 이는 SKAN ARPPU가 과대 보고되었는지 과소 보고되었는지 여부에 따라 긍정 오류 또는 부정 오류일 수 있습니다.</span></p><p><span>예: 예: 실제 ARPPU가 $10이고 SKAN ARPPU가 $7인 경우 대략적인 오류는 30%(사용자당 -$3 달러)의 과소 보고입니다.</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>SKAN 수익 구성에 대한 권장 사항. 설정에 포함할 범위 수를 선택합니다.</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>Conversion Studio에 설정된 현재 수익 구성입니다.</span><span></span></p></td></tr></tbody></table>
 
+<div id="using-revenue-recommendations" />
+
 #### **수익 권장 사항 이용**
 
 **전제 조건: 전제 조건: 수익 권장 사항에는 14일 이상의 수익 데이터가 필요합니다.**
+
+<div id="note" />
 
 > 📘 **참고**
 >

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 다음을 사용하여 계정 보호 강화 **고급 보안 패키지,** 엔터프라이즈급 ID 관리, 토큰 액세스 제어 및 확장된 감사 가시성을 위해 설계된 프리미엄 제품입니다.
 
+<div id="intro" />
+
 ## 소개
 
 고급 보안 패키지는 조직의 보안을 강화하는 세 가지 주요 기능을 제공합니다.
@@ -29,6 +31,8 @@ x-zendesk:
 * **보존 기간이 연장된 감사 로그 API**: 플랫폼 활동에 대한 장기적인 가시성을 확보하고 감사 이벤트를 모니터링 스택에 통합합니다.
 * **SCIM 프로비저닝**: ID 공급자를 통해 사용자 액세스 제어를 자동화하고 중앙 집중화합니다.
 * **로그인을 위한 IP 허용 목록:** 무단 액세스를 방지하여 신뢰할 수 있는 네트워크 및 IP에서만 앱스플라이어 대시보드에 로그인할 수 있도록 합니다.
+
+<div id="compare-the-standard-and-enterprise-grade-packages" />
 
 ### 표준 및 고급 패키지를 비교하십시오.
 
@@ -48,12 +52,16 @@ x-zendesk:
 
 최대 생성 및 관리 **토큰 30개** 유형별(API, S2S, OneLink) **서비스 수준 제한 사항** 토큰에 대한 확장성, 보안 및 제어를 강화합니다.
 
+<div id="key-features" />
+
 #### 주요 기능
 
 * 관리자는 최대 **유형당 토큰 30개**, 표준 토큰이 있는 2개의 토큰과 비교하여 더 큰 팀과 복잡한 워크플로를 지원합니다.
 * API 토큰에 서비스별 액세스 권한을 할당하여 민감한 작업에 대한 액세스를 제한합니다.
 * 토큰은 통합 또는 자동화를 중단하지 않고 취소하거나 교체할 수 있습니다.
 * 토큰별 권한을 통해 내부 팀 및 외부 파트너와의 협업을 단순화합니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -63,9 +71,13 @@ x-zendesk:
 >
 > **설정 전용 액세스 토큰:** 내부 팀이 구성 설정을 관리할 수 있지만 데이터를 끌어오는 것은 허용하지 않는 토큰을 발급합니다. 이렇게 하면 관리 기능이 데이터 액세스에서 분리됩니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 표준 토큰에 대한 일반적인 정보는 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">앱스플라이어 토큰 관리</Anchor>.
+
+<div id="how-to-access-and-control-tokens" />
 
 #### 토큰에 액세스하고 제어하는 방법
 
@@ -92,6 +104,8 @@ x-zendesk:
 * 토큰을 개별적으로 삭제
 * 감사 로그에서 토큰 활동 모니터링
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 토큰은 편집할 수 없습니다. 액세스를 변경하려면 토큰을 삭제하고 다시 생성합니다.
@@ -104,6 +118,8 @@ x-zendesk:
 
 기존 감사 로그 기능을 향상시키는 이 기능은 감사 로그 사용을 위한 API를 도입하고 데이터 보존 기간을 90일에서 180일로 연장합니다. 사용자 작업 로그에 장기간 액세스하거나 감사 이벤트를 외부 모니터링 도구에 통합해야 하는 팀에 적합 SOC 및 SEIM과 같은.
 
+<div id="key-features-1" />
+
 #### 주요 기능
 
 * 전용 API를 사용하여 프로그래밍 방식으로 감사 로그에 액세스
@@ -112,9 +128,13 @@ x-zendesk:
 * 서비스별 토큰을 사용하여 로그 액세스 격리
 * SIEM 도구, 대시보드 또는 클라우드 스토리지로 데이터 내보내기
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 표준 감사 로그에 대한 일반적인 정보는 <Anchor target="_blank" href="/marketers/ko/docs/audit-log">표준 감사 로그</Anchor>.
+
+<div id="how-to-access-the-audit-log-via-api" />
 
 ### **API를 통해 감사 로그에 액세스하는 방법**
 
@@ -126,6 +146,8 @@ x-zendesk:
 4. 기존 사용 또는 새 **API 토큰**.
 5. 아래의 **액세스 제한**고르다 **감사 로그** 서비스.
 6. 토큰을 사용하여 감사 로그 API 엔드포인트에 대한 요청을 인증합니다.
+
+<div id="note-3" />
 
 > 📘 **참고**
 >
@@ -141,11 +163,15 @@ SCIM 프로비저닝은 Okta, Entra ID(Azure), OneLogin, JumpCloud 또는 속성
 
 SCIM을 통해 사용자를 동기화하면 실시간으로 액세스 권한을 완전히 제어할 수 있습니다. SAML 2.0 SSO와 결합하면 기업 고객을 위한 완벽한 ID 및 액세스 관리 솔루션을 형성할 수 있습니다.
 
+<div id="key-features-2" />
+
 #### **주요 기능**
 
 * IdP(ID 공급자) 레코드를 기반으로 AppsFlyer에서 사용자를 자동으로 생성합니다.
 * IdP의 사용자 역할 또는 상태 변경은 AppsFlyer에 즉시 반영됩니다.
 * 사용 **SAML 2.0** 보안 SSO를 위해 및 **심** 프로비저닝을 위해 - Okta 및 Azure AD와 같은 주요 IdP와 호환됩니다.
+
+<div id="how-to-set-up-scim-provisioning" />
 
 #### **SCIM 프로비저닝을 설정하는 방법**
 
@@ -153,6 +179,8 @@ SCIM을 통해 사용자를 동기화하면 실시간으로 액세스 권한을 
 
 1. [SSO 설정](/docs/enterprise-grade-security-package#sso-설정)
 2. [SCIM 사용](/docs/enterprise-grade-security-package#scim-사용)
+
+<div id="sso-set-up" />
 
 #### SSO 설정
 
@@ -162,7 +190,11 @@ SSO를 설정하려면 다음을 수행해야 합니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">앱스플라이어에서 SSO 설정하기</Anchor>
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">SSO 구성 테스트</Anchor>
 
+<div id="enable-scim" />
+
 #### SCIM 사용
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -176,9 +208,15 @@ SCIM을 사용하도록 설정하려면 따라야 하는 몇 가지 단계가 �
 * 더하다 [역할](/docs/enterprise-grade-security-package#역할)
 * 더하다 [외부 네임스페이스](/docs/enterprise-grade-security-package#external-namespace)
 
+<div id="idp-instruction-links" />
+
 #### IdP 명령 링크
 
+<div id="the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud" />
+
 ##### IdP에 대한 지침은 아래에서 찾을 수 있습니다. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">옥타</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">원로그인</Anchor>, <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">점프클라우드</Anchor>
+
+<div id="scim-connections" />
 
 #### SCIM 연결
 
@@ -190,6 +228,8 @@ SCIM 연결에서 다음 필드를 채워야 합니다.
 | 사용자의 고유 식별자 필드 | Username: |
 | 인증 방법: "Authorization"이라는 HTTP 헤더 | 무기명 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">앱스플라이어 API 토큰</Anchor>> |
 
+<div id="scim-attributes" />
+
 #### SCIM 속성
 
 | **속성** | **유형** | **필수** | **필드 이름** | **외부 네임스페이스** | **설명** |
@@ -197,6 +237,8 @@ SCIM 연결에서 다음 필드를 채워야 합니다.
 | 역할 | 문자열 | ✅ | 역할 | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | <ul><li>사용자에게 미리 정의된 역할 또는 사용자 지정 역할을 할당합니다.</li><li>입력해야 하는 앱스플라이어 역할 목록은 아래를 참조하세요</li></ul> |
 | 향후의 모든 앱에 대한 액세스 허용 | Boolean | ❌ | allowAccessToAllFutureApps | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | 사용하도록 설정하면 사용자에게 새 앱에 대한 액세스 권한이 자동으로 부여됩니다. |
 | 허용된 앱 ID | 문자열 | ❌ | appIDs | urn:ietf:params:scim:schemas:extension:AppsFlyer:2.0:User | 쉼표로 구분된 앱 ID 목록입니다. 모든 앱에 대해 비워 두거나 앱이 없는 경우 "없음"으로 설정합니다. |
+
+<div id="roles" />
 
 #### 역할
 
@@ -215,6 +257,8 @@ SCIM 연결에서 다음 필드를 채워야 합니다.
 | 품질 보증 | quality\_assurance |
 | 커스텀 역할 | [사용자 지정 역할 값 입력] |
 
+<div id="limitations" />
+
 #### 제한 사항
 
 | **제한 사항** | **설명** |
@@ -228,6 +272,8 @@ SCIM 연결에서 다음 필드를 채워야 합니다.
 <Accordion title="IP 허용 목록">
 
 향상된 IP 허용 목록은 무단 액세스를 방지하여 보안을 강화하고 신뢰할 수 있는 네트워크만 플랫폼과 상호 작용할 수 있도록 합니다. 이 기능은 엄격한 보안 정책을 시행하거나 원격 액세스를 관리하는 기업에 특히 유용합니다.
+
+<div id="key-features-3" />
 
 #### 주요 기능
 

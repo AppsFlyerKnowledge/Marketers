@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **한눈에 보기:** **요약:** 2단계 인증(2FA)을 사용하여 로그인 프로세스에 보호 계층을 추가하고 보안을 강화합니다. 계정 사용자의 로그인 자격 증명은 Google Authenticator 또는 SMS 인증으로 보강됩니다.
 
+<div id="highlights" />
+
 ## 주요 기능
 
 * 2FA는 관리자가 활성화할 수 있는 선택적 기능입니다.
 * 인증 방식은 **Google Authenticator** 및 **SMS 인증**이 있습니다.
 * 활성화/비활성화는 모든 계정 사용자에게 적용됩니다.
 * 활성화된 시점에는 계정 사용자의 로그인이 허용되고 다음 로그인 시에 2FA를 설정하도록 메시지가 표시됩니다.
+
+<div id="-admin-managing-2fa" />
 
 ## ![admin.png](https://files.readme.io/d54680123b25ab7929285cebd778e0e74bd0d032df994b04d1bca106381c3dc6-360014518718.png) Admin: 2FA 관리
 
@@ -42,6 +46,8 @@ x-zendesk:
 <Accordion title="활성화">
 
 관리자가 **Google Authenticator** 및 **SMS 인증**을 활성화할 경우, 계정 사용자는 둘 중에 인증 방법을 선택할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -86,6 +92,8 @@ x-zendesk:
 4. 비활성화를 확인합니다.
 
 </Accordion>
+
+<div id="account-users-using-google-or-microsoft-authenticator" />
 
 ## 계정 사용자: Google Authenticator 사용하기
 
@@ -132,6 +140,8 @@ Google Authenticator 화면이 디폴트로 표시되지만, 지난 로그인 �
 4. **인증**을 클릭하면 **마이 앱(My apps)** 페이지로 리디렉트됩니다.
 
 </Accordion>
+
+<div id="account-users-using-sms-verification" />
 
 ## 계정 사용자: SMS 인증 방법 사용
 

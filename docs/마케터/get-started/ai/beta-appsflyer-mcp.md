@@ -36,6 +36,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="what-is-appsflyer-mcp" />
+
 ## 앱스플라이어 MCP란 무엇인가요?
 
 앱스플라이어 MCP를 사용하여 LLM을 앱스플라이어 플랫폼에 안전하게 연결하고, 간단한 대화를 통해 마케팅 데이터를 분석합니다. 앱스플라이어 MCP는 실시간 데이터를 기반으로 더 스마트하고 신속한 의사 결정을 내릴 수 있도록 합니다.
@@ -47,13 +49,19 @@ MCP는 다음의 기능을 수행합니다:
 * 원링크 템플릿, 링크 및 오디언스 연결 검사 및 문제 해결
 * 설정 가이드, 제품 문서 불러오기
 
+<div id="set-up-appsflyer-mcp" />
+
 ## AppsFlyer MCP 설정
 
 AppsFlyer MCP는 채팅 어시스턴트, CLI, IDE, 자동화 플랫폼 및 자체 호스팅 에이전트에 연결할 수 있습니다. 설정은 사용하는 클라이언트와 해당 클라이언트가 지원하는 인증 방법에 따라 다릅니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 일부 플랫폼에서는 MCP 서버를 연결하기 위해 관리자 승인이 필요할 수 있습니다. 아래에 설명된 설정 옵션이 보이지 않으면 IT 또는 작업 공간 관리자에게 문의하십시오.
+
+<div id="authentication-methods" />
 
 ## 인증 방법
 
@@ -64,11 +72,15 @@ AppsFlyer MCP는 두 가지 인증 방법을 지원합니다. AppsFlyer MCP에 �
 | 브라우저 기반 OAuth 로그인 | Gemini CLI, Copilot CLI, ChatGPT, Claude.ai 및 Claude 데스크톱 | 임시 질문, 탐색적 분석 및 일회성 보고서 | 연결 후 7일 동안 유효합니다. 세션 종료 시 재인증이 필요합니다. |
 | 보안 토큰 인증 | Claude 코드, 자동화 플랫폼, 자체 호스팅 에이전트 및 통합 | 자동화, 예약된 작업, 백그라운드 에이전트 및 비대화형 워크플로 | 수동으로 해지될 때까지 유효 |
 
+<div id="browser-based-oauth-login" />
+
 ### 브라우저 기반 OAuth 로그인
 
 브라우저 기반 OAuth 로그인을 사용하면 브라우저를 통해 대화형으로 연결할 수 있습니다. 연결하면 MCP 클라이언트가 브라우저 창을 열고 AppsFlyer에 로그인하라는 메시지를 표시합니다. 접근을 승인하면 클라이언트가 고객님의 AppsFlyer 계정에 연결됩니다.
 
 대화형 세션, 탐색적 분석 및 일회성 보고서에 이 방법을 사용하십시오.
+
+<div id="bearer-token-authentication" />
 
 ### 보안 토큰 인증
 
@@ -82,6 +94,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 
 토큰을 생성하려면 다음으로 이동하십시오. **계정 메뉴 > 보안 센터 > AppsFlyer 토큰** 그리고 MCP 토큰을 생성하십시오.
 
+<div id="set-up-by-client" />
+
 ## 클라이언트에 의해 설정됨
 
 <div id="h_claude-ai-and-claude-desktop" />
@@ -90,9 +104,13 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 
 브라우저 기반 OAuth 로그인을 사용하여 Claude.ai 및 Claude 데스크톱을 사용하십시오. 이 지침은 웹 및 데스크톱의 Claude에 적용됩니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 팀 및 기업 플랜 사용자의 경우 소유자 또는 관리자만 조직 전체 통합을 추가할 수 있습니다.
+
+<div id="set-up-claude-chat-and-cowork" />
 
 #### Claude.ai 및 Claude 데스크톱 설정
 
@@ -108,6 +126,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 8. 커넥터 섹션에서 AppsFlyer connection 옆에 있는 **연결**을 클릭합니다.
 9. 로그인 창이 뜨면 앱스플라이어에 로그인합니다.
 
+<div id="test-the-claude-connection" />
+
 #### Claude 연결 테스트
 
 1. 채팅 창에서 설정 버튼을 클릭합니다.   
@@ -121,6 +141,8 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 <Accordion title="Claude Code">
 
 Claude Code를 사용하여 자동화, 스케줄링 및 비대화형 워크플로우에 대한 액세스 토큰 인증을 사용합니다.
+
+<div id="add-appsflyer-mcp-to-claude-code" />
 
 #### Claude Code에 AppsFlyer MCP 추가
 
@@ -213,6 +235,8 @@ ChatGPT를 AppsFlyer MCP와 함께 사용하는 방법은 두 가지가 있습�
 * [맞춤형 GPT](#appsflyer-맞춤형-gpt-추가): AppsFlyer 어시스턴트에 간단하게 액세스하는 데 가장 적합합니다.
 * [ChatGPT의 MCP](#chatgpt에-appsflyer-mcp-추가): AppsFlyer 데이터를 ChatGPT 대화에 가져오려는 사용자에게 가장 적합합니다.
 
+<div id="add-the-appsflyer-custom-gpt" />
+
 #### AppsFlyer 맞춤형 GPT 추가
 
 1. 클릭 <Anchor target="_blank" href="https://chatgpt.com/g/g-68b6a92eb8e0819194cbb81e1e635c0d-appsflyer">AppsFlyer 맞춤형 GPT</Anchor>.
@@ -224,7 +248,11 @@ ChatGPT를 AppsFlyer MCP와 함께 사용하는 방법은 두 가지가 있습�
    Show me my Meta campaign performance from last week.
    ```
 
+<div id="add-appsflyer-mcp-in-chatgpt" />
+
 #### ChatGPT에 AppsFlyer MCP 추가
+
+<div id="note-3" />
 
 > 📘 **참고**
 >
@@ -251,6 +279,8 @@ ChatGPT를 AppsFlyer MCP와 함께 사용하는 방법은 두 가지가 있습�
 
 브라우저 기반 OAuth 로그인으로 Gemini CLI 사용.
 
+<div id="add-appsflyer-mcp-to-gemini-cli" />
+
 #### Gemini CLI에 AppsFlyer MCP 추가
 
 1. 터미널에서 AppsFlyer MCP 서버를 추가합니다:
@@ -275,6 +305,8 @@ ChatGPT를 AppsFlyer MCP와 함께 사용하는 방법은 두 가지가 있습�
    What apps are in my AppsFlyer account?
    ```
 
+<div id="troubleshoot-gemini-cli-authentication" />
+
 #### Gemini CLI 인증 문제 해결
 
 인증에 실패하면 디버그 모드에서 Gemini CLI를 시작합니다.
@@ -292,6 +324,8 @@ GEMINI_LOG_LEVEL=debug gemini
 <Accordion title="Copilot CLI">
 
 브라우저 기반 OAuth 로그인을 사용하여 Copilot CLI를 사용합니다.
+
+<div id="add-appsflyer-mcp-to-copilot-cli" />
 
 #### AppsFlyer MCP를 Copilot CLI에 추가합니다.
 
@@ -340,6 +374,8 @@ MCP 토큰을 사용하여 타사 또는 자체 호스팅 시스템을 AppsFlyer
 
 MCP 토큰은 해당 토큰을 만든 관리자의 권한을 상속받는 계정 수준의 보유자 토큰입니다. <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">에서 액세스하고 관리할 수 있습니다.</Anchor> <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">보안 센터 > AppsFlyer 토큰</Anchor>.
 
+<div id="mcp-connection-details" />
+
 #### MCP 연결 세부 정보
 
 자동화 또는 에이전트 플랫폼을 AppsFlyer MCP에 연결하려면 다음 구성을 사용하십시오.
@@ -348,9 +384,13 @@ MCP 토큰은 해당 토큰을 만든 관리자의 권한을 상속받는 계정
 * **기본 URL/엔드포인트:** `https://mcp.appsflyer.com/auth/mcp`
 * **보유자 토큰:** MCP 토큰
 
+<div id="note-4" />
+
 > 📘 **참고**
 >
 > 토큰을 공개적으로 공유하거나 게시하지 마십시오. 개인 자격 증명으로 취급하십시오. MCP 토큰은 MCP 환경에 대한 직접 액세스 권한을 부여합니다.
+
+<div id="example-use-cases" />
 
 #### 사용 사례 예시
 
@@ -375,6 +415,8 @@ MCP 토큰은 해당 토큰을 만든 관리자의 권한을 상속받는 계정
 
 AppsFlyer MCP는 한 번에 하나의 AppsFlyer 계정에 연결됩니다.
 
+<div id="switch-between-accounts-browser-based-oauth" />
+
 #### 계정 전환(브라우저 기반 OAuth)
 
 동일한 이메일로 여러 AppsFlyer 계정을 관리하는 경우 MCP가 연결되는 계정을 전환할 수 있습니다.
@@ -383,6 +425,8 @@ AppsFlyer MCP는 한 번에 하나의 AppsFlyer 계정에 연결됩니다.
 2. MCP 클라이언트에서 다시 로그인합니다.
 
 단일 연결에서 여러 계정을 나란히 보거나 쿼리할 수 없습니다.
+
+<div id="connect-multiple-accounts-simultaneously-bearer-token" />
 
 #### 여러 계정을 동시에 연결(담당자 토큰)
 
@@ -395,11 +439,17 @@ AppsFlyer MCP는 한 번에 하나의 AppsFlyer 계정에 연결됩니다.
 
 </Accordion>
 
+<div id="use-appsflyer-mcp" />
+
 ## AppsFlyer MCP 사용
+
+<div id="use-cases-and-prompts" />
 
 ### 사용 사례 및 프롬프트
 
 앱스플라이어 MCP는 마케팅 분석 정보 및 성과 인사이트를 불러오고 설정 작업을 수행할 수 있도록 툴과 리소스를 제공합니다.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -641,6 +691,8 @@ AppsFlyer 계정에서 사용자 및 역할 정보를 검색합니다. 이는 �
 
 </Accordion>
 
+<div id="other-information" />
+
 ## 기타 정보
 
 <div id="h_privacy-and-security" />
@@ -649,13 +701,19 @@ AppsFlyer 계정에서 사용자 및 역할 정보를 검색합니다. 이는 �
 
 AppsFlyer MCP는 선택한 AI 도구가 기존 권한을 기반으로 AppsFlyer 데이터를 쿼리할 수 있도록 합니다.
 
+<div id="data-processing" />
+
 #### 데이터 처리:
 
 아닙니다. 앱스플라이어 MCP는 보안 프록시 역할을 합니다. 실시간으로 AppsFlyer 데이터를 가져와 쿼리에 대한 답변에 필요한 데이터를 반환합니다. AppsFlyer MCP는 쿼리 결과를 장기간 보관하거나 저장하지 않습니다.
 
+<div id="credentials" />
+
 #### 자격 증명
 
 AppsFlyer 로그인을 통해 AppsFlyer MCP가 대신 API 호출을 할 수 있습니다. AppsFlyer 자격 증명은 AI 도구와 공유되지 않습니다.
+
+<div id="permissions" />
 
 #### 권한
 
@@ -663,15 +721,21 @@ AppsFlyer MCP는 기존 AppsFlyer 권한을 사용합니다. 사용자는 AppsFl
 
 MCP 액세스를 구성하기 위한 별도의 권한 계층은 없습니다.
 
+<div id="read-and-write-access" />
+
 #### 읽기 전용 액세스
 
 AppsFlyer MCP는 현재 읽기 및 쿼리 전용입니다. 사용자 없이는 AppsFlyer에서 아무런 조치를 취하지 않습니다.
+
+<div id="ai-provider-data-usage" />
 
 #### AI 제공업체 데이터 사용
 
 AppsFlyer MCP에서 검색한 데이터는 사용자의 쿼리에 응답하기 위해 선택한 AI 도구와 공유될 수 있습니다. 응답을 생성하는 데 필요한 데이터만 공유됩니다.
 
 AppsFlyer는 선택한 AI 도구가 데이터를 저장, 처리 또는 학습하는지 여부를 제어하지 않습니다. AppsFlyer MCP를 연결하기 전에 AI 제공업체의 약관 및 데이터 사용 정책을 검토하십시오.
+
+<div id="certifications" />
 
 #### 인증
 
@@ -712,6 +776,8 @@ AppsFlyer는 ISO 27001 및 SOC 2 인증을 받았습니다. ISO 42001 인증 진
 | MCP 비활성화 | <ul><li>MCP는 기본적으로 활성화되어 있으며 관리자가 비활성화할 수 있습니다. **계정 및 프로필 > AI 기능**.</li><li>MCP가 비활성화되면 사용자는 외부 AI 도구의 MCP를 통해 AppsFlyer 데이터에 액세스할 수 없습니다.</li><li>기존 연결은 현재 세션이 만료될 때까지 계속될 수 있습니다.</li><li>MCP를 비활성화해도 AppsFlyer의 일반 API 연결이나 기타 AI 기능에는 영향을 주지 않습니다.</li><li>MCP 토큰을 사용 중인 경우 먼저 다음에서 삭제하십시오. **보안 센터 > AppsFlyer 토큰**.</li></ul> |
 
 </Accordion>
+
+<div id="troubleshoot-connection-issues" />
 
 ## 연결 문제 해결 방법Troubleshoot connection issues
 

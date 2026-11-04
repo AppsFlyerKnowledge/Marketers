@@ -25,12 +25,16 @@ x-zendesk:
 
 ![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
 
+<div id="overview" />
+
 ## 개요
 
 수익은 ROI 그림의 절반입니다. (나머지 절반은 비용이죠.) 출처 미디어소스 및 캠페인으로 어트리뷰션된 정확한 수익 데이터가 있으면 다음을 수행할 수 있습니다.
 
 * ROI와 ROAS를 완전하게 파악할 수 있습니다. 즉, 설치나 인게이지먼트뿐만 아니라 어떤 애드 네트워크, 캠페인, 광고가 가장 가치 있는 사용자를 유입시키는지 확인할 수 있습니다.
 * 이에 따라 광고 지출과 마케팅 캠페인을 조정하세요.
+
+<div id="premium-revenue-reporting" />
 
 ### 광고 수익 리포팅
 
@@ -41,6 +45,8 @@ x-zendesk:
 **구독 수익**: 여기에는 앱 또는 서비스 구독에서 발생하는 수익이 포함됩니다. 또한 업그레이드, 취소, 환불 등 구독에 대한 모든 변경 사항도 포함됩니다. 설정 및 리포팅에 대해 자세히 알아보기
 
 <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution">**광고 수익**</Anchor>: 여기에는 광고를 호스팅하고 앱 사용자에게 광고를 표시하여 발생하는 수익이 포함됩니다. 예를 들어 앱에서 다른 앱의 광고를 표시할 수 있습니다. 사용자가 이러한 광고를 클릭하면 클릭당 수익이 발생합니다. <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution">광고 수익 설정 및 리포팅에 대해 자세히 알아보기</Anchor>
+
+<div id="basic-revenue-reporting" />
 
 ### 기본 수익 리포트
 

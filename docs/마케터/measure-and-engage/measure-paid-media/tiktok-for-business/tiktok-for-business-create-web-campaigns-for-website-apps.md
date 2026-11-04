@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹사이트 앱에 TikTok 웹 광고 연동 설정하여 이벤트 API 통해 웹 전환 신호를 TikTok으로 전송하세요.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어 TikTok 웹 광고와의 연동 지원합니다.`tiktokweb_int` 웹사이트 및 앱 캠페인의 경우, TikTok 이벤트 API 통해 직접 기여도 및 전환 데이터를 리포트 할 수 있습니다. 그런 다음 Meta는 해당 데이터를 활용하여 광고 타겟팅을 최적화하고, 성과를 측정하며, 오디언스를 커스텀하여 구축할 수 있습니다.
 
 작동 방식은 다음과 같습니다. 사용자가 TikTok 광고를 클릭하여 웹사이트에 방문한 후 웹사이트 이벤트 (예: 구매 또는 가입)를 완료하면 앱스플라이어 이벤트 API 통해 TikTok에 전환 신호를 보냅니다. 틱톡은 이 데이터를 활용하여 광고 타겟팅 최적화하다 하고 캠페인 성과 측정합니다.
 
+<div id="see-also" />
+
 > 📄 **참고 항목**
 >
 > * <Anchor target="_blank" href="/marketers/ko/docs/web-performance-measurement-overview">앱스플라이어 웹 어트리뷰션 - 개요</Anchor>
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 현재로서는 이벤트 API 통한 리인게이지먼트 포스트백 전송은 연동 지원 되지 않습니다.
+
+<div id="prerequisites" />
 
 ### 필수 조건
 
@@ -44,12 +52,16 @@ x-zendesk:
 * 앱스플라이어 에서 설정된 웹사이트 앱
 * <Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">틱톡 광고 관리자</Anchor> 의 비즈니스 계정
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### 웹사이트 앱에 틱톡 웹 광고를 설정하는 방법
 
 설정 과정에는 TikTok 웹 광고와 앱스플라이어 간의 연동 정의하고 TikTok 광고 관리자에서 캠페인 구성하는 작업이 포함됩니다. 다음 부분들을 포함합니다:
 
 * 2부: 앱스플라이어에서 Meta 웹 광고 연동 설정 (필수)
 * 2부: TikTok 웹 광고에 앱스플라이어 연동 설정하기 (필수의)
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## 1부: 앱스플라이어 에 TikTok 웹 광고 연동 설정하기
 
@@ -68,6 +80,8 @@ TikTok 웹 광고 연동 활성화하려면 다음 단계를 따르세요.
 5. **픽셀 ID: 픽셀 ID를 입력합니다. <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">틱톡 문서</Anchor> 에 나와 있는 지침에 따라 틱톡 광고 관리자에서 생성하거나 가져올 수 있습니다.**
 6. **액세스 토큰: 액세스 토큰을 입력합니다. 이를 생성하거나 검색하려면 <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">TikTok 문서에</Anchor> 나와 있는 절차를 따르세요.**
 7. **틱톡 웹 광고의 사용자 개인 정보 사용을 제한하십시오(CCPA):** <Anchor target="_blank" href="/marketers/ko/docs/send-opendsr-api-requests">데이터 보호법</Anchor> 준수를 활성화하려면 이 토글을 켭니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -95,12 +109,16 @@ TikTok 웹 광고 연동 활성화하려면 다음 단계를 따르세요.
 8. [선택 사항] **조건 추가** 아이콘을 클릭하여 이벤트에 대한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#조건부-인앱-이벤트-포스트백">조건을 설정</Anchor>합니다.
 9. **연동 저장**을 클릭하세요.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * 구매 이벤트를 설정하는 경우, **포함** 열을 **값 및 수익**으로 설정합니다. 다른 옵션을 선택하면 포스트백이 실패하게 됩니다.
 > * 현재, 오직 구매 이벤트만 수익(revenue)을 포함하도록 설정할 수 있습니다.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## 2부: TikTok 웹 광고에 앱스플라이어 연동 설정하기
 
@@ -136,6 +154,8 @@ TikTok 웹 광고 연동 활성화하려면 다음 단계를 따르세요.
 | `af_ad` | `__cid_name__` |
 | `af_ad_id` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **참고**
    >
    > 캠페인 분석을 간소화하려면 캠페인 이름에 캠페인 유형(웹 또는 모바일)을 접두사 또는 접미사로 포함하세요. 예를 들어,`campaign-name_web` .
@@ -149,6 +169,8 @@ TikTok 웹 광고 연동 활성화하려면 다음 단계를 따르세요.
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **참고**
    >
    > 틱톡은 자동으로 추가합니다`ttclid={{ttclid}}` 광고를 클릭된 때 목적지 URL 로 이동합니다.
@@ -156,11 +178,15 @@ TikTok 웹 광고 연동 활성화하려면 다음 단계를 따르세요.
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## 웹 어트리뷰션 데이터 보기
 
 웹 전환 이벤트는 다음 항목에 보고됩니다.`tiktokweb_int` PID에서`media_source` 필드. 웹 어트리뷰션 데이터 보려면 로데이터 보고서를 사용하고 필터링하세요.`media_source = tiktokweb_int` 틱톡 웹사이트 앱 전환율을 분리하기 위해.
 
 웹사이트 앱 캠페인에 대한 대시보드 리포팅 아직 제공되지 않습니다. 웹 캠페인 성과 다른 채널과 함께 분석할 수 있는 통합 리포팅 기능이 향후 출시 에 포함될 예정입니다.
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

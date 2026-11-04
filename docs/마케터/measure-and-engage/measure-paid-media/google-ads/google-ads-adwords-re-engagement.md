@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Google Ads 리타겟팅 캠페인 측정
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Google Ads 리타겟팅 캠페인
 
 앱스플라이어를 통해 **Google Ads 앱 리인게이지먼트 캠페인** 결과를 측정할 수 있습니다.  
@@ -33,6 +35,8 @@ x-zendesk:
 * 앱을 보유하고 있지 않은 사용자에 의한 리타겟팅 인게이지먼트는 **리인스톨(Re-install)** 또는 **리어트리뷰션(Re-attribution)** 이라고 합니다.
 
 자세한 내용은 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">Google Ads 앱 리인게이지먼트 캠페인 지원 문서</Anchor>를 참고하십시오.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## 인게이지먼트를 위한 Google Ads 앱 캠페인 생성하기
 
@@ -70,6 +74,8 @@ x-zendesk:
 
 Google Ads에서 전환을 가져오는 방법을 알아보려면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">여기</Anchor>를 참조하십시오.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 다른 이벤트와 달리, session\_start 이벤트는 앱스플라이어에서 Google Ads로 가져오지 않아도 Google Ads API에서 자동으로 인식하고 어트리뷰션을 할 수 있습니다.
@@ -87,6 +93,8 @@ Google Ads에서 전환을 가져오는 방법을 알아보려면 <Anchor target
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## 동적 리마케팅(Dynamic remarketing) 및 쇼핑 캠페인
 
 앱스플라이어에서는 앱 및 쇼핑 캠페인에 대한 동적 리마케팅을 지원합니다. 앱스플라이어 플랫폼은 이를 다른 리인게이지먼트 캠페인과 동일하게 취급합니다.
@@ -94,6 +102,8 @@ Google Ads에서 전환을 가져오는 방법을 알아보려면 <Anchor target
 * 앱을 위한 동적 리마케팅에 대해 알아보려면 <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">여기를</Anchor> 클릭하십시오.
 * 쇼핑 캠페인에 대해 알아보려면 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">여기를</Anchor> 클릭하십시오.
 * Google Ads 인게이지먼트에 대해 더 자세히 알아보려면 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">여기를</Anchor> 클릭하십시오.
+
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
 
 ### 앱 외 캠페인(Demand Gen 및 SEM)에 대한 지원
 
@@ -112,6 +122,8 @@ AppsFlyer는 Google의 비앱 캠페인에 대한 재참여 측정만 지원합�
 * Demand Gen 또는 SEM 캠페인으로부터 발생한 **인스톨**은 어떤 플랫폼에서도 어트리뷰션되지 않습니다.
 
 **옵트 아웃:** Google은 현재 앱 외 캠페인 측정에 대한 옵트인 및 옵트 아웃을 지원하지 않습니다(틱톡이나 메타와 같은 플랫폼과 구분됨).
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

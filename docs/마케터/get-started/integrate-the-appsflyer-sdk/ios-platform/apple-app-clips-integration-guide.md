@@ -24,6 +24,8 @@ x-zendesk:
 
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 
+<div id="app-clip-integration" />
+
 ## App Clip 연동
 
 * App Clip은 iOS 14 유저가 전체 앱을 다운로드할 필요 없이 빠르고 편리하게 앱 환경에 액세스할 수 있게 합니다.
@@ -35,11 +37,15 @@ x-zendesk:
     * iOS 13 이전 버전 또는 Android의 경우 원링크의 설정에 따라 앱 스토어 등으로 리디렉션됩니다.
   * 앱이 설치된 유저들은 원링크에 설정된 유니버설 링크 또는 앱링크에 따라 앱으로 연결됩니다.
 
+<div id="considerations" />
+
 ### 고려 사항
 
 * App Clip의 크기는 최대 10MB 입니다. 앱스플라이어 SDK는 1.5MB 정도 입니다.
 * 사용할 수 있는 광고 식별자가 없습니다.
 * App Clip은 30일 동안 사용하지 않으면 OS에서 자동으로 삭제됩니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -54,6 +60,8 @@ x-zendesk:
 > * 앱이 없고 iOS 13 이하 또는 Android가 설치된 디바이스의 경우, 카페 앱의 앱 스토어 페이지가 열립니다.
 >
 > 마크는 앱스플라이어 대시보드와 리포트를 활용하여 App Clip에 얼마나 많은 클릭과 인스톨이 기록됐는지, 그리고 얼마나 많은 유저가 전체 앱을 다운로드하는지 확인합니다.
+
+<div id="metrics-and-reporting" />
 
 ## 지표 및 리포팅
 
@@ -74,9 +82,13 @@ App Clip 분석 및 로데이터는 다음 표에 설명된 유저 활동에 따
 * App Clip에서 전체 앱 인스톨까지 유저가 소요하는 시간을 확인할 수 있습니다.
 * 인앱 전환 지표를 사용하여 다양한 캠페인의 성과를 비교할 수 있습니다.
 
+<div id="app-clip-implementation" />
+
 ## App Clip 구현
 
 App Clip을 개발하고 연동하기 위해 마케터와 iOS 개발자가 수행해야 하는 작업에 대해서는 아래를 참고해 주시기 바랍니다.
+
+<div id="scope-of-work" />
 
 #### 작업 범위
 
@@ -192,6 +204,8 @@ iOS 개발자에게 다음 링크를 보내고 관련 가이드를 따르도록 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 특징 및 제약 사항
 
 <div id="traits-and-limitations::26141033" />
@@ -206,6 +220,8 @@ iOS 개발자에게 다음 링크를 보내고 관련 가이드를 따르도록 
 | Protect360 | Protect360은 App Clip을 지원하지 않습니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

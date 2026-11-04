@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 도메인 리디렉션 허용 목록을 설정하여, 유저를 검증되고 신뢰할 수 있는 도메인으로 안내합니다. 이로써 데이터를 보호하고 브랜드 신뢰도를 확보하세요.
 
+<div id="about-the-redirect-allowlist" />
+
 ## <Image alt="메인 리디렉션 허용 목록 이미지.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />리디렉션 허용 목록에 대하여
 
 리디렉션 허용 목록을 사용하여 링크 리디렉션이 허용되는 특정 루트 도메인 및 서브 도메인 목록을 정의하여 무단 리디렉션, 피싱 공격 및 프로드로부터 링크를 보호합니다. 허용 목록이 활성화되면 앱스플라이어를 통해 생성하는 링크는 도메인이 허용 목록에 있는 웹 URL로만 유저를 리디렉션합니다. 그렇지 않은 경우, 유저가 앱 스토어로 이동합니다. 리디렉션 허용 목록은 <Anchor target="_blank" href="/marketers/ko/docs/onelink-guide">원링크</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">파트너 연동</Anchor>을 통한 단일 플랫폼 어트리뷰션 링크와 CTV, PC 및 콘솔 플랫폼을 위한 <Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-direct-attribution-links">다이렉트 어트리뷰션 링크</Anchor>에 적용됩니다. 리디렉션 허용 목록(및 사용자 정의 웹 리디렉션)은 Growth, Enterprise 플랜 구독 회원에게 제공됩니다.
+
+<div id="set-up-your-redirect-allowlist" />
 
 ## 리디렉션 허용 목록 설정
 
@@ -108,6 +112,8 @@ x-zendesk:
 **참고:** 저장이 완료되면, 업데이트된 리디렉션 허용 목록은 약 1시간 내에 클릭에 적용됩니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

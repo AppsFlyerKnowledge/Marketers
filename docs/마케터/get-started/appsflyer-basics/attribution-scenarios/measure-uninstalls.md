@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **한눈에 보기**: 귀사의 앱 삭제 비율을 측정하고 어떤 소스(미디어 소스, 캠페인, 광고 크리에이티브, 지역)가 우수한 사용자를 유입시키는지 판단합니다.
 
+<div id="overview" />
+
 ## 개요
 
 귀사의 앱 사용자 가치를 파악하려면 인스톨과 앱 삭제 비율을 모두 분석해야 합니다. 앱 삭제 지표는 귀사의 성과를 측정하고 사용자가 앱을 떠나는 시기와 이유를 이해하는 데 도움이 됩니다.
+
+<div id="how-does-it-work" />
 
 ### 어떻게 작동하나요?
 
@@ -37,6 +41,8 @@ x-zendesk:
 > 📘 **참고**
 >
 > 앱 삭제 지표는 유저 유입 보기에서만 제공합니다
+
+<div id="how-to-use-uninstall-data" />
 
 ## 앱 삭제 데이터 활용 방법
 
@@ -103,6 +109,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## 앱 삭제 측정 설정
 
 앱 삭제 지표를 설정하려면 마케터와 개발자가 협력해야 합니다. 구현 지침은 앱이 운영되는 운영 체제에 따라 다릅니다.
@@ -135,9 +143,13 @@ x-zendesk:
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## 구현 절차
 
 구현에는 모바일 개발자가 푸시 알림에 대응할 수 있는 메커니즘을 앱에 연동하기 위한 작업이 필요합니다. 구현 지침은 운영 체제에 따라 다릅니다.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Firebase Cloud 메시징을 앱스플라이어에 연결하기(안드로이드)
 
@@ -212,6 +224,8 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### 앱스플라이어에서 앱 삭제 측정 구성
 
 <Tabs>
@@ -251,6 +265,8 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 
 </Tab>
 </Tabs>
+
+<div id="testing-uninstall-measurement" />
 
 ## 앱 삭제 측정 시험하기
 
@@ -293,6 +309,8 @@ iOS 앱을 시험할 때 다음 사항을 유의하세요.
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## 앱 삭제 이벤트 매핑
 
 ![앱삭제_이벤트_포스트백.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
@@ -304,10 +322,14 @@ iOS 앱을 시험할 때 다음 사항을 유의하세요.
 * 앱스플라이어가 이벤트가 실제로 발생하고 기록될 때만 포스트백을 발송할 수 있습니다.
 * 대시보드의 개요 페이지나 원시 데이터 리포트에서 앱 삭제가 보이지 않는다면, 이는 **af\_uninstall** 이벤트가 매핑되어 있더라도 파트너에게 앱 삭제 포스트백이 전송되지 않았음을 의미합니다.
 
+<div id="limitations" />
+
 #### 제한 사항
 
 * 인앱 이벤트 포스트백 리포트에는 앱 삭제 이벤트가 포함되지 않습니다.
 * **af\_uninstall** 이벤트는 모든 파트너가 지원합니다. 이벤트를 파트너와 매핑하고자 하나 파트너의 연동 탭에서 이벤트가 보이지 않는 경우, 귀사의 CSM에게 문의하거나 [hello@appsflyer.com](mailto:hello@appsflyer.com)으로 연락하세요.
+
+<div id="turning-off-uninstall-measurement" />
 
 ## 앱 삭제 측정 해제
 
@@ -326,6 +348,8 @@ P12 인증서가 제공되고 검증되면 앱 삭제 측정이 기본적으로 
 </Tabs>
 
 **참고:** 앱 삭제가 보고되려면, 앱 설치 시 **앱 삭제 측정 사용**이 켜져 있어야 합니다. **앱 삭제 측정 사용**이 꺼져 있을 때 발생한 인스톨은 보고되지 않습니다.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **앱 삭제 측정을 끄려면**:
 

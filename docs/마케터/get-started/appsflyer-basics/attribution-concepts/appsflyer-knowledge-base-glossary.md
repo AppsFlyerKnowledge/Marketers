@@ -36,6 +36,8 @@ A · **B** · [C](#a) · [D](#b) · [E](#h_263aee69-4598-4bbd-a6a9-0f222626b4f8)
 
 <Accordion title="A">
 
+<div id="account-owner" />
+
 #### 계정 소유자
 
 또한, 관리자앱스플라이어 계정에 대한 최고 관리자 액세스 및 권한을 가진 기본 계정 사용자.    
@@ -45,30 +47,44 @@ A · **B** · [C](#a) · [D](#b) · [E](#h_263aee69-4598-4bbd-a6a9-0f222626b4f8)
 
 앱스플라이어는 제품, 브랜드 또는 서비스를 홍보를 하기 위해 사용되는 광고 소재의 이름을 기록합니다.
 
+<div id="ad-cost" />
+
 #### 광고 비용
 
 (Ad cost) 광고에 지출 된 금액. 앱스플라이어는 클릭, 비용 API 및 CSV 파일 업로드로 광고 비용을 기록합니다.
+
+<div id="ad-group" />
 
 #### adgroup
 
 유사 목표(제품이나 서비스 홍보)를 공유하는 광고 한 개 이상의 모음 모든 캠페인은 한 개 이상의 광고 세트를 포함합니다.  
 *예시:* 예 구글 애즈는 이를 사용하여 특정 광고와 관련된 키워드를 구성합니다.
 
+<div id="ad-hierarchy" />
+
 #### 광고 계층 구조
 
 광고 > 광고 세트 (광고 그룹) > 캠페인 > 미디어 소스
+
+<div id="ad-network" />
 
 #### 애드 네트워크
 
 마케터를 대신해 트래픽을 생성하는 미디어 소스인 앱과 웹사이트를 수집합니다. 애드 네트워크는 매체 광고 지면을 모아 마케터에게 제공합니다.
 
+<div id="ad-revenue" />
+
 #### 광고 수익
 
 광고 수익은 앱이 인앱 광고에서 벌어들이는 수익입니다. 앱스플라이어 광고 수익 데이터는 각 미디어 소스에서 유입된 유저의 ROI를 자동으로 보여줍니다.
 
+<div id="ad-set" />
+
 #### 광고세트
 
 한 개 이상의 광고 모음. 타겟팅, 예산, 일정, 과금 모델, 광고 게재 위치를 정할 때 사용합니다.
+
+<div id="ad-spend" />
 
 #### 광고 비용
 
@@ -76,65 +92,97 @@ A · **B** · [C](#a) · [D](#b) · [E](#h_263aee69-4598-4bbd-a6a9-0f222626b4f8)
 *공식:* 공식 : 광고로 발생한 수익 / 광고 비용 = ROAS (Return on Ad Spend)   
  <Anchor target="_blank" href="/partners/ko/docs/cost-import-for-ad-networks">[이 문서]</Anchor> 와 [이 문서]를 읽어보세요.
 
+<div id="ad-types" />
+
 #### 광고 타입
 
 다음이 포함됩니다: 예시: 오디오, 배너, 전면 광고, 상호반응형 광고(사용자가 직접 앱을 미리 체험할 수 있는 광고) /em> ,  리워드 광고 (동영상 광고를 시청하면 인앱 보상을 제공하는 광고) , 스폰서 콘텐츠, 텍스트 및 동영상  [관련 문서]
 
+<div id="ad-network-integration" />
+
 #### 애드 네트워크(매체) 연동
 
 애드 테트워크를 성과 기록 및 어트리뷰션 목적으로 앱스플라이어 파트너로 설정하는 프로세스 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner">[관련 문서]</Anchor>
+
+<div id="admin" />
 
 #### 관리자
 
 또한, 관리자앱스플라이어 계정에 대한 최고 관리자 액세스 및 권한을 가진 기본 계정 사용자.   
  [이 문서] 와 [이 문서]를 읽어보세요.
 
+<div id="advanced-privacy" />
+
 #### 프라이버시 강화 모드
 
 **(iOS 14.5 이상 비동의 사용자에게만 적용).** Advanced Privacy를 통해 광고주는 **개별 파트너** 수준에서 사용자 수준 어트리뷰션 데이터의 가용성을 제어할 수 있습니다(앱 수준에서 적용되는 집약형 프라이버시 강화와 반대). 해당 파트너와 공유된 포스트백 및 이벤트 데이터는 **특정 파트너**에 대해 설정되어 있으면 집계되고 익명으로 처리됩니다. 사용자 수준 로데이터는 광고주 자체에서 사용할 수 있습니다 .
 
+<div id="advertiser" />
+
 #### 광고주
+
+<div id="advertising-id" />
 
 #### 광고 ID
 
 광고 ID라고도 함. 사용자 리셋이 가능한 디바이스 ID. OS와 기기에 따라 IDFA, GAID, OAID로 나뉩니다. 사용자 참여 및 앱 사용을 측정하는 데 사용됩니다.
 
+<div id="adwords" />
+
 #### 애드워즈
 
 현 구글 애즈 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers">[관련 문서]</Anchor>
+
+<div id="affiliate-networks" />
 
 #### 제휴 네트워크
 
 유의어: 퍼블리셔 웹 사이트 지면을 사용하여 마케터 제품이나 서비스를 홍보하고 유입된 사용자당 과금합니다. 퍼블리셔는 앱 방문자가 창출한 수익 중 일부를 받거나 앱 방문자가 특정 작업을 완료 할때마다 수수료를 받습니다.
 
+<div id="agency" />
+
 #### 에이전시
+
+<div id="aggregate-data" />
 
 #### 데이터 집계
 
 예를 들어 계정 또는 앱 수준에서 보다 세분화된 데이터를 사용하여 요약으로 컴파일되는 고급 데이터입니다. [관련 기사]
 
+<div id="aggregated-advanced-privacy" />
+
 #### 프라이버시
 
 **iOS 14.5 이상 비동의 사용자에게만 적용됩니다.** 집약형 프라이버시 강화를 통해 광고주는 앱 수준에서 사용자 수준 어트리뷰션 데이터의 가용성을 제어할 수 있습니다(개별 파트너 수준에서 적용되는 Advanced Privacy/strong>와 반대). 이 기능을 사용 설정하면 **모든 파트너와** 공유되는 포스트백 및 이벤트 데이터는 집계되고 익명으로 처리되며 광고주 자체에서 사용자 수준 어트리뷰션 데이터를 **사용할 수 없습니다** . 이렇게 하면 개별 파트너 수준에서 적용된 모든 Advanced Privacy 설정이 재정의됩니다.
+
+<div id="all-installs-network" />
 
 #### 모든 인스톨 네트워크
 
 자사의 네트워크로 어트리뷰션되지 않는 앱 설치를 포함하여 모든 소스에서 발생하는 모든 신규 앱 설치에 대해 포스트백을 수신하는 애드 네트워크
 
+<div id="all-launches-network" />
+
 #### 모든 실행 네트워크
 
 자사의 네트워크로 어트리뷰션되지 않는 앱 실행을 포함하여 모든 소스에서 발생하는 모든 신규 앱 실행에 대해 포스트백을 수신하는 애드 네트워크
+
+<div id="analytics-platform" />
 
 #### 어낼리틱스 플랫폼
 
 데이터 분석 지표 라이브러리를 제공하여 사용자, 특히 대규모 데이터 중심 기업의 요구를 해결하도록 설계된 솔루션입니다.  
 다음이 포함됩니다: 차트 및 기타 데이터 시각화 도구, 대시 보드 구성 요소, 사용자 지정 테마
 
+<div id="android-app-link" />
+
 #### 안드로이드 앱 링크
 
 Android 앱 링크는 Android 애플리케이션용 딥링킹의 특정 유형으로, 앱이 사용자의 기기에 설치되어 있는 경우 링크가 앱 내의 특정 페이지 또는 위치를 직접 열 수 있도록 합니다. 이러한 링크는 앱과 고유하게 연결된 HTTP/HTTPS 링크로, 보다 원활하고 통합된 사용자 환경을 제공하도록 설계되었습니다.
 
 사용자가 Android 앱 링크를 클릭하면 Android 운영 체제는 웹 브라우저에서 링크를 열지 아니면 앱 내에서 열지 지능적으로 결정할 수 있습니다. Android 앱 링크는 디지털 애셋 링크 추가를 통한 인증이 필요하며 앱 코드와 웹사이트의 연결된 도메인 모두에서 구성해야 합니다.
+
+<div id="android-id" />
 
 #### 안드로이드 ID
 
@@ -148,9 +196,13 @@ Google Play 서비스가 설치된 안드로이드 기기에서 찾을 수 있�
 앱스플라이어와 고객 및 비즈니스 파트너간에 데이터를 이동하는 데 사용되는 루틴, 프로토콜 및 도구.  
 *예시* Push API, Pull API, 마스터 API, 코호트(Cohort) API 및 서버 간 API
 
+<div id="api-call" />
+
 #### API 호출
 
 요청을 보낼 때 발생하는 프로세스 요청이 전송되고 처리되며 피드백이 돌아옵니다.
+
+<div id="app-id-android--ios" />
 
 #### 앱 ID (안드로이드 & iOS)
 
@@ -161,22 +213,32 @@ Google Play 서비스가 설치된 안드로이드 기기에서 찾을 수 있�
 
 iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
+<div id="app-launch" />
+
 #### 앱 실행
 
 앱이 열립니다. SDK 실행 수나 앱 소유주가 정한 논리에 따라 계산됩니다.  
 *예: 바이러스 백신 앱을 하루 동안 사용하면 하나의 세션으로 간주될 수 있습니다.*
 
+<div id="app-owner" />
+
 #### 앱 소유자
 
 앱을 소유하고 사용자 기반을 늘리기 위해 다양한 플랫폼에서 앱을 광고하고 마케팅하는 주체.
+
+<div id="app-store-analytics" />
 
 #### 앱스토어 애널리틱스
 
 앱스토어 분석. 앱스토어(구글 플레이, 애플 앱스토어 등)에서의 앱 데이터 수집 및 분석 작업.
 
+<div id="appsflyer" />
+
 #### 앱스플라이어
 
 앱스플라이어 기술 자료 문서에서는 앱스플라이어 플랫폼을 나타냅니다.
+
+<div id="appsflyer-id" />
 
 #### 앱스플라이어 ID
 
@@ -205,19 +267,27 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 **앱 스토어 최적화**  
 앱스토어에서 앱 가시성을 향상시키는 데 사용됩니다.
 
+<div id="assisted-installs" />
+
 #### 어시스트된 인스톨
 
 <em>H3</em><strong>: 멀티터치 어트리뷰션</strong>  
 앱 설치 직전 마지막으로 앱 설치에 기여한 인게이지먼트에 이르도록 도움을 준 매체 광고 인게이지먼트입니다.
 
+<div id="attribution" />
+
 #### 어트리뷰션
 
 매체에 개제된 유료 광고 클릭 및 광고 노출과 연관된 앱 설치 및 기타 이벤트<Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">[관련 문서]</Anchor>
+
+<div id="attribution-link" />
 
 #### 어트리뷰션 링크
 
 클릭 수를 기록하고 앱을 다운로드하도록 사용자를 리디렉션하기 위해 필요한 정보가 포함된 광고 URL입니다. 어트리뷰션 및 데이터 분석에 사용되는 정보가 포함되어 있습니다.    
 *예시:* 사용자가 어트리뷰션 링크를 클릭하면 앱스플라이어가 정보를 기록하고 사용자를 리디렉션하여 앱을 다운로드할 수 있도록 합니다.
+
+<div id="audiences" />
 
 #### 오디언스
 
@@ -229,26 +299,38 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
 <Accordion title="B">
 
+<div id="banner" />
+
 #### 배너
 
 웹사이트에 게재된 그래픽 광고로, 홍보하는 웹사이트나 앱으로 연결합니다.  마케터는 앱스플라이어 스마트 배너를 사용하여 모바일 웹사이트 방문자가 앱을 설치했을 때, 그 앱 설치의 가치와 그 앱 설치에 기여한 미디어 소스를 측정합니다.
+
+<div id="bi-system" />
 
 #### BI 시스템
 
 로데이터를 비즈니스 의사결정에 도움이 되는 정보로 변환시키는 시스템
 
+<div id="bid" />
+
 #### 과금제
 
 마케터가 [CPM, CPI, CPC, or CPA](#h_263aee69-4598-4bbd-a6a9-0f222626b4f8) 과금 모델에 따라 캠페인에 지불하는 가격.
+
+<div id="brand-bundle" />
 
 #### 브랜드 번들
 
 브랜드 관련 웹 및 모바일 앱의 어트리뷰션, 활동 및 수익 데이터를 통합합니다.<Anchor target="_blank" href="/marketers/ko/docs/pba-brand-bundles-and-settings">[관련 문서]</Anchor>
 
+<div id="branded-link" />
+
 #### 브랜드 링크
 
 브랜드 이름 또는 브랜드 관련 용어를 중심으로 생성된 짧은 URL.  
 *예시:* [관련 문서]**예:* 브랜드명이 Great App이면, 브랜드 링크는 promotions.greatapp.com이 될 수 있습니다.*
+
+<div id="bundle-id" />
 
 #### 번들 ID
 
@@ -267,38 +349,56 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
 *공식:* 공식: 판매 및 마케팅 비용 / 신규 고객 수
 
+<div id="campaign" />
+
 #### 캠페인
 
 하나 이상의 광고 세트를 포함합니다. 목표 및 KPI, 타겟 오디언스, 예산 및 일정, 플랫폼, 광고 크리에이티브 및 형식, 전략 등에 따라 다릅니다.<Anchor target="_blank" href="/marketers/ko/docs/measure-paid-media">관련 문서</Anchor>
+
+<div id="campaign-id" />
 
 #### 캠페인 ID
 
 미디어 소스 내 고유 캠페인 식별자
 
+<div id="carrier" />
+
 #### 통신사
 
 통신사는 셀룰러 데이터 네트워크 (Wi-Fi가 아님)를 포함합니다.
+
+<div id="channel" />
 
 #### 채널
 
 미디어 소스, 특히 Google Ads 및 메타 광고 내의 트래픽 세분화.  
 *예시:* Google의 YouTube, Meta Ads의 인스타그램
 
+<div id="churn" />
+
 #### 이탈
 
 *공식:* 공식: 일정 기간 동안 감소한 사용자 수 / 해당 기간 시작 시점 의 사용자 수
+
+<div id="click" />
 
 #### 클릭
 
 미디어 소스 내 사용자 참여 활동(인게이지먼트) 측정 단위. 사용자가 특정 미디어 소스에서 광고를 클릭하여 광고된 페이지나 앱으로 리디렉션되면 계산됩니다.
 
+<div id="click-flooding" />
+
 #### 클릭 플러딩
 
 유의어: 클릭 스팸 모바일 광고 사기의 한 종류로서, 어트리뷰션으로 정의되는 앱 설치 직전 마지막 클릭으로 기록되기를 바라며 사기성 클릭을 대량 전송하는 행위
 
+<div id="click-url" />
+
 #### URL 클릭
 
 동의어: **어트리뷰션 링크**
+
+<div id="client" />
 
 #### 고객
 
@@ -306,33 +406,49 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
 #### COA
 
+<div id="cohort-analysis" />
+
 #### 코호트 분석
+
+<div id="contributor" />
 
 #### 기여자
 
 유의어: 어시스트 앱 설치 전, 어트리뷰션 룩백 윈도우 내 사용자 참여가 발생했으나 어트리뷰션되지 않은 미디어 소스/캠페인
 
+<div id="conversion" />
+
 #### 전환
 
 사용자가 비즈니스에 도움이 되고 광고와 연관된 행위를 완료하면 발생합니다.  예시:
+
+<div id="conversion-chain" />
 
 #### 전환 체인
 
 광고 조회에서 인앱 구매 같은 인앱 액션 수행에 이르기까지 다양한 전환 이벤트의 연속  
 *예시:* 예:  사용자가 광고를 클릭하고 랜딩 페이지를 방문하고, 스마트 배너를 클릭하고 앱을 설치한 다음 회원 가입을 하고 구매를 수행합니다.
 
+<div id="conversion-event" />
+
 #### 전환 이벤트
 
 앱 사용자가 수행한 행위이자 비즈니스 성과 지표 앱 설치나 앱 사용 활동 전 광고 클릭 및 광고 조회 포함   
 *예시*: 예: 앱 설치, 장바구니에 상품 추가, 결제 절차 시작, 구매 완료
 
+<div id="conversion-rate" />
+
 #### 전환율
 
 전환 체인을 따라 한 단계에서 다음 단계로 이동하는 사용자 비율 <Anchor target="_blank" href="/marketers/ko/docs/about-conversion-rates">[관련 문서]</Anchor>
 
+<div id="conversion-types" />
+
 #### 전환 유형
 
 리타겟팅 전환 유형
+
+<div id="cookies-http" />
 
 #### 쿠키(HTTP)
 
@@ -366,11 +482,15 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 과금제 모델 마케터는 퍼블리셔의 플랫폼에서 광고 매체(동영상 광고) 시청 횟수당 비용을 지불합니다.   
 *공식:* 공식: 총 광고비 / 광고 시청 수
 
+<div id="creative" />
+
 #### 광고소재
 
 광고 소재. 광고에 포함된 개념, 디자인, 그래픽 등.   **스마트 배너** 페이지에서 웹 개발자 필요없이 광고주가 손쉽게 각 배너의 광고 소재를 이미지, 텍스트 및 버튼으로 설정합니다. <Anchor target="_blank" href="/marketers/ko/docs/smart-banners-mobile-web-to-app-for-marketers">[관련 문서]</Anchor>
 
 #### CRM
+
+<div id="cross-promotion-attribution" />
 
 #### 크로스 프로모션 어트리뷰션
 
@@ -380,6 +500,8 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
 **고객 성공 매니저.** CSM이 없거나 모르는 경우 hello@appsflyer.com 으로 문의하십시오 [.](mailto:hello@appsflyer.com)  
 또한 **계정 관리자**
+
+<div id="csv-file" />
 
 #### CSV 파일
 
@@ -427,6 +549,8 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
 <Accordion title="D">
 
+<div id="data-locker" />
+
 #### 데이터 락커
 
 아마존 웹서비스(AWS) 내 전용 저장소에 로데이터를 저장하고 사용할 수 있는 앱스플라이어 프리미엄 제품. 마케터는 로데이터를 AWS 버킷에서 얻습니다.
@@ -435,29 +559,43 @@ iOS 앱 ID = ID + 9/10 자리 앱스토어 ID (예 : ***id123456789***
 
 일일 활성 사용자 수:
 
+<div id="daumau-rate" />
+
 #### DAU/MAU 비율
 
 월간 실 사용자 수 대비 일일 실 사용자 수. 앱 고착도(stickiness) 측정 지표입니다. 특정 기간 내 앱 사용자의 평균 앱 실행률이나 사용률을 알 수 있습니다.
+
+<div id="deep-linking" />
 
 #### 딥링킹
 
 사용자를 앱스토어나 웹사이트를 거치지 않고 바로 앱 내부의 특정 콘텐츠로 보내는 링크. <Anchor target="_blank" href="/marketers/ko/docs/deep-linking-using-onelink">[관련 문서]</Anchor>
 
+<div id="deferred-deep-linking" />
+
 #### 디퍼드 딥링킹
 
 앱을 설치하지 않은 사용자를 먼저 앱스토어나 웹사이트에 보내 앱을 다운로드하고 설치하도록 하는 링크입니다. 사용자가 앱을 설치하면, 디퍼드 딥링크는 링크 어트리뷰션 데이터를 이용해 어트리뷰션 광고와 관련된 앱 내 특정 콘텐츠를 사용자에게 바로 보여줍니다.
+
+<div id="deprecation-notice" />
 
 #### 운영 중단 통지
 
 특정 날짜부터 특정 기능 버전 및 / 또는 관련 지원의 일부 또는 전부를 이용할 수 없다는 알림.
 
+<div id="dev-key" />
+
 #### 개발 키
 
 SDK를 구성하고 메시지를 암호화하며 사용자, 개발자 또는 API 호출 프로그램을 인증하기 위해 사용하는 인증 토큰이며 고유 ID입니다.  동일한 계정의 앱들은 보통 개발 키가 동일합니다.
 
+<div id="device-id" />
+
 #### 디바이스 ID
 
 사용자 재설정 가능 IDFA, GAID 및 OAID 또는 재설정 불가능 IMEI 및 SSAID 형식의 고유 식별자입니다. 앱스플라이어는 디바이스 어트리뷰션 목적으로 디바이스 ID를 사용할 수 있습니다.
+
+<div id="direct-publisher" />
 
 #### 직접 퍼블리셔
 
@@ -466,6 +604,8 @@ SDK를 구성하고 메시지를 암호화하며 사용자, 개발자 또는 API
 #### DMA
 
 DMA는 동일한 현지 TV 및 라디오 방송을 시청/청취하고 동일한 신문과 온라인 콘텐츠를 받는 지역입니다.
+
+<div id="domain" />
 
 #### 도메인
 
@@ -476,6 +616,8 @@ DMA는 동일한 현지 TV 및 라디오 방송을 시청/청취하고 동일한
 DSP(demand-side platform)  
 (Demand-Side Platform) 광고 구매자 플랫폼 디지털 광고 구매자는 하나의 DSP 플랫폼에서 여러 광고를 거래하고 데이터 거래 계정을 관리합니다.
 
+<div id="dual-consent" />
+
 #### 이중 동의
 
 iOS 디바이스 14.5 이상을 사용하는 유저가 광고주 앱과 퍼블리셔 앱에서 모두 ATT에 동의하는 경우.
@@ -485,6 +627,8 @@ iOS 디바이스 14.5 이상을 사용하는 유저가 광고주 앱과 퍼블�
 <div id="h_cbdb4ac9-1b2a-4338-9733-f0cdb060f306" />
 
 <Accordion title="E">
+
+<div id="earned" />
 
 #### 언드 미디어
 
@@ -512,6 +656,8 @@ eCPI(인스톨당 유효 비용)
  [CPM](/docs/appsflyer-knowledge-base-glossary#cpm)참조.  
 *공식:* 공식: 총 비용 / 총 노출 수(1000초) = eCPM(앱스플라이어가 분석한 값)
 
+<div id="engagement" />
+
 #### 인게이지먼트
 
 *예시:*
@@ -524,18 +670,26 @@ eCPI(인스톨당 유효 비용)
 
 이메일 서비스 제공업체
 
+<div id="event" />
+
 #### 이벤트
 
 *예시:*
+
+<div id="event-counter" />
 
 #### 이벤트 횟수
 
 수행된 인앱 이벤트의 총 수
 
+<div id="event-cvr" />
+
 #### 이벤트 CVR
 
 광고로 전환된 사용자 수를 나타냅니다.   
 *공식:*
+
+<div id="event-time" />
 
 #### 이벤트 시간
 
@@ -546,6 +700,8 @@ eCPI(인스톨당 유효 비용)
 <div id="f" />
 
 <Accordion title="F">
+
+<div id="fraud" />
 
 #### 프로드
 
@@ -571,6 +727,8 @@ eCPI(인스톨당 유효 비용)
 전환 데이터 얻기  
 (Get Conversion Data) 변환 데이터 가져오기 /strong> 앱 설치시 어트리뷰션 데이터를 SDK로 가져오는 SDK 메서드의 일반 명칭입니다.
 
+<div id="geo" />
+
 #### 지역
 
 *예시:*
@@ -580,6 +738,8 @@ eCPI(인스톨당 유효 비용)
 <div id="i" />
 
 <Accordion title="I">
+
+<div id="id-matching" />
 
 #### ID 매칭
 
@@ -597,28 +757,42 @@ eCPI(인스톨당 유효 비용)
 
 GAID를 사용할 수없는 경우 어트리뷰션 목적으로 사용할 수 있습니다. <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes">안드로이드 10 개인 정보 설정 변경</Anchor>
 
+<div id="impression" />
+
 #### 노출
 
 앱 사용자 또는 웹 사이트 방문자가 광고를 보는 행위 애드 네트워크마다 광고 노출에 대한 정의가 다를 수 있습니다.
+
+<div id="in-app-events" />
 
 #### 인앱 이벤트
 
 앱 설치 이후, 유저가 앱에서 수행하는 모든 행동 [이벤트](/docs/appsflyer-knowledge-base-glossary#이벤트) 를 참조하십시오.   
 *예시:* 예: 로그인, 튜토리얼 완료, 구매 등
 
+<div id="install" />
+
 #### 인스톨
 
 앱스플라이어는 사용자가 모바일 앱을 다운받고 설치하고  실행 한 후에 앱 설치를 기록합니다.
 
+<div id="install-hijacking" />
+
 #### 설치 하이재킹
+
+<div id="install-referrer" />
 
 #### 인스톨 리퍼러
 
 *구글 플레이* 리퍼러 매개 변수를 사용하는 어트리뷰션 방법입니다.<Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#install-referrer-android-only">[관련 문서]</Anchor>
 
+<div id="integrated-partner" />
+
 #### 연동 파트너
 
 앱스플라이어와 연동된 애드 네트워크, 에이전시 또는 마케팅 툴 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner">[관련 문서]</Anchor>
+
+<div id="integrated-partner-types" />
 
 #### 연동 파트너 유형
 
@@ -644,9 +818,13 @@ GAID를 사용할 수없는 경우 어트리뷰션 목적으로 사용할 수 �
 
 <Accordion title="L">
 
+<div id="landing-page" />
+
 #### 랜딩 페이지
 
 사용자가 광고를 클릭한 후에 처음으로 보게 되는 페이지.
+
+<div id="last-click-attributions" />
 
 #### 라스트 클릭 어트리뷰션
 
@@ -656,6 +834,8 @@ GAID를 사용할 수없는 경우 어트리뷰션 목적으로 사용할 수 �
 
 **광고 트래킹 제한**
 
+<div id="link-management" />
+
 #### 링크 관리
 
 모든 링크를 구성, 편집, 분석하고 완전히 자유롭게 관리할 수 있는 기능[관련 문서]
@@ -664,13 +844,19 @@ GAID를 사용할 수없는 경우 어트리뷰션 목적으로 사용할 수 �
 
 KPI를 적극적으로 모니터링해서 광고 성과에 통계적으로 유의미한 변화 포착 시, 설정한 계정 사용자에게 알림을 보내는 기능입니다. [관련 기사]
 
+<div id="localization" />
+
 #### 현지화
 
 현지 시간대에 맞게 어트리뷰션 데이터를 조정하는 프로세스 앱스플라이어에서 기본적으로 모든 앱 데이터는 UTC (GMT) 시간대를 기준으로 보고됩니다.
 
+<div id="lookback-window" />
+
 #### 룩백 윈도우
 
 어트리뷰션 인정 기간. 앱 설치가 특정 광고에 어트리뷰션을 할 수 있는 최대 인게이지먼트에서 앱 인스톨 사이 기간입니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">[관련 문서]</Anchor>
+
+<div id="loyal-user" />
 
 #### 충성 유저
 
@@ -684,13 +870,21 @@ KPI를 적극적으로 모니터링해서 광고 성과에 통계적으로 유�
 
 <Accordion title="M">
 
+<div id="macros" />
+
 #### 매크로
 
+<div id="marketer" />
+
 #### 마케터
+
+<div id="marketing-automation" />
 
 #### 마케팅 자동화
 
 마케팅 이메일, 푸시 알림, 인앱 메시징 캠페인을 수행하는 플랫폼을 포함합니다. 연동 후, 앱스플라이어는 마케팅 자동화로 집행한 캠페인에 대한 어트립션 데이터를 제공합니다.
+
+<div id="master-api" />
 
 #### 마스터 API
 
@@ -701,19 +895,27 @@ KPI를 적극적으로 모니터링해서 광고 성과에 통계적으로 유�
 월간 활성 사용자 수  
 <Anchor target="_blank" href="/marketers/ko/docs/activity-dashboard#metric-definitions">(Monthly Active User) 월간 실 사용자</Anchor> 30일 내 특정 앱을 실행(한 번만 계산)한 고유 사용자 수[관련 문서]
 
+<div id="media-source" />
+
 #### 미디어 소스
 
 광고를 제공하는  매체.   
 미디어소스의 유형
 
+<div id="mediation-platform" />
+
 #### 중재 플랫폼
 
 중재 플랫폼은 하나의 SDK 연동으로 여러 광고 네트워크에 대한 액세스를 중앙 집중화하고 최적화 알고리즘을 활용하여 앱 개발자의 인벤토리를 가장 높은 CPM으로 채울 수 있는 중재 광고 네트워크를 결정합니다.
+
+<div id="meta-campaign-management-partners" />
 
 #### 파트너에게
 
 메타 광고 마케팅 파트너는 메타 광고 작업을 전문으로 하며 설정한 기준을 준수합니다. 메타 캠페인 관리 파트너 카테고리에는 특정 기술을 보유하거나 미디어 구매의 두 가지 카테고리가 있습니다.  
 *예시:* 예시: 마케터가 메타 광고에서 자동 캠페인 최적화를 수행할 수 있도록 허용하는 파트너입니다. 메타 캠페인 관리 파트너는 앱스플라이어와 연동하여 실시간으로 포스트백을 수신할 수 있습니다.
+
+<div id="mcp" />
 
 #### MMP
 
@@ -721,18 +923,26 @@ KPI를 적극적으로 모니터링해서 광고 성과에 통계적으로 유�
 <Anchor target="_blank" href="https://www.appsflyer.com/glossary/mmp/">모바일 측정 파트너(MMP)는 앱이 광고 마케팅 채널, 미디어 소스, 애드 네트워크 전반에서 캠페인 성과를 측정하도록 돕는 회사입니다.</Anchor>  
 *예시:* 앱스플라이어
 
+<div id="mobile-app" />
+
 #### 모바일 앱
 
 스마트폰, 태블릿같은 모바일 디바이스 전용으로 설계된 소프트웨어.
+
+<div id="monetization-network" />
 
 #### 수익화 네트워크
 
 수익 창출 네트워크(광고 네트워크)는 앱 개발자(퍼블리셔)와 광고주를 연결합니다. 앱 개발자는 광고 네트워크를 사용하여 앱에서 수익을 창출하기 위해 사용자에게 광고를 게재하는 반면 광고주는 광고 네트워크를 사용하여 제품을 홍보합니다.
 
+<div id="multi-platform" />
+
 #### 멀티 플랫폼
 
 모든 플랫폼에서 사용할 수 있는 솔루션.    
 *예시:* 예: 앱스플라이어의 원링크는 안드로이드와 iOS 디바이스에서 발생한 앱 설치 및 인앱 이벤트를 기록하고 그 어트리뷰션을 측정하는 어트리뷰션 링크입니다.
+
+<div id="multi-touch-attribution" />
 
 #### 멀티터치 어트리뷰션
 
@@ -744,10 +954,14 @@ KPI를 적극적으로 모니터링해서 광고 성과에 통계적으로 유�
 
 <Accordion title="N">
 
+<div id="native-ad" />
+
 #### 네이티브 광고
 
 표시되는 플랫폼의 형식 및 기능에 맞춰 자연스럽게 표시되는 광고    
 *예시:* 예 : 사이트의 다른 무보수 기사와 동일하게 표시되는 스폰서 뉴스 기사.
+
+<div id="native-app" />
 
 #### 네이티브 앱
 
@@ -770,13 +984,21 @@ Non-Organic Install, 논오가닉 설치 앱스플라이어가 유료 마케팅 
 OAID - **Open Advertiser Identifier**  
 <Anchor target="_blank" href="/marketers/ko/docs/android-oaid-implementation-in-the-sdk">Open Advertiser Identifier</Anchor> 구글 플레이 외 안드로이드 앱스토어를 사용하는 사용자 식별자. 리셋이 불가능하며 IDFA, GAID와 비슷한 정보[관련 문서]
 
+<div id="onelink" />
+
 #### 원링크(OneLink)
 
  앱스플라이어 멀티 플랫폼 어트리뷰션 링크이며 고유 정보를 포함함. 리드를 관련 앱스토어나 관련 앱 내 콘텐츠로 리디렉션하는 링크
 
+<div id="onelink-id" />
+
 #### 원링크(OneLink™) ID
 
+<div id="onelink-template" />
+
 #### 원링크 템플릿
+
+<div id="organic-install" />
 
 #### 오가닉 인스톨(앱 설치)
 
@@ -785,6 +1007,8 @@ OAID - **Open Advertiser Identifier**
 #### OTT
 
 <Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-attribution-concepts">OTT(Over-the-top)</Anchor>인터넷, 바이패싱 케이블, 방송 및 위성 플랫폼을 통해 스트리밍된 콘텐츠입니다. [관련 문서]
+
+<div id="owned-media" />
 
 #### 소유 매체
 
@@ -797,10 +1021,14 @@ OAID - **Open Advertiser Identifier**
 
 <Accordion title="P">
 
+<div id="package-id" />
+
 #### 패키지 ID
 
 앱 ID (안드로이드 & iOS)  
  형식은 운영 체제(OS)에 따라 다릅니다.
+
+<div id="paid" />
 
 #### 페이드 미디어
 
@@ -816,15 +1044,21 @@ OAID - **Open Advertiser Identifier**
 **파트너 ID**  
  파트너 ID 앱스플라이어에서 사용되는 고유한 파트너/ 미디어 소스 식별자입니다.
 
+<div id="postback" />
+
 #### 포스트백
 
 앱 설치나 인앱 이벤트가 발생했을 때 광고주가 앱스플라이어를 통해 파트너(애드 네트워크)에 보내는 알림. 파트너사가 캠페인을 최적화하는 데 도움이 됩니다.
 
 #### PPC
 
+<div id="probabilistic-modeling" />
+
 #### 확률적 모델링
 
 온드 미디어에 대해 머신 러닝을 활용하여 캠페인 성과를 추정하는 통계적 어트리뷰션 방법입니다.
+
+<div id="programmatic-advertising" />
 
 #### 프로그래머틱 방식 광고
 
@@ -833,6 +1067,8 @@ OAID - **Open Advertiser Identifier**
 #### Protect360
 
 모바일 광고 프로드를 종합적으로 자동 탐지하고 차단하는 앱스플라이어 프리미엄 솔루션 <Anchor target="_blank" href="/marketers/ko/docs/protect360-anti-fraud-guide">[관련 문서]</Anchor>
+
+<div id="publisher" />
 
 #### 퍼블리셔
 
@@ -852,6 +1088,8 @@ OAID - **Open Advertiser Identifier**
 
 <Accordion title="Q">
 
+<div id="qr-code" />
+
 #### QR 코드
 
 스캔해서 링크로 전환할 수 있는 이차원 바코드
@@ -862,54 +1100,80 @@ OAID - **Open Advertiser Identifier**
 
 <Accordion title="R">
 
+<div id="raw-data" />
+
 #### 로데이터
 
 앱스플라이어가 제공하는 사용자별 이벤트 데이터. 예: 앱 설치, 인앱 구매, 웹 사이트 방문 및 파트너에 대한 포스트백<Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">[관련 문서]</Anchor>
+
+<div id="re-attribution" />
 
 #### 리어트리뷰션
 
 이전 앱 사용자가 리타겟팅 캠페인을 보고 앱을 다시 설치합니다.<Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">[관련 문서]</Anchor>
 
+<div id="re-attribution-window" />
+
 #### 리어트리뷰션 윈도우
 
 앱 설치 후, 재 설치가 신규 앱 설치로 인정되지 않는 기간<Anchor target="_blank" href="/marketers/ko/docs/set-up-re-attribution-window">[관련 문서]</Anchor>
+
+<div id="re-engagement" />
 
 #### 리인게이지먼트
 
 앱 유저가 리타겟팅 캠페인에 반응하여 앱을 처음 실행합니다.  <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">[관련 문서]</Anchor>
 
+<div id="registered-device" />
+
 #### 등록된 디바이스
 
 테스트 목적으로 사용됩니다. 등록된 디바이스는 앱스플라이어 리어트리뷰션 규칙에 관계없이 모든 인스톨에서 어트리뷰트됩니다. <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">[관련 기사]</Anchor>
+
+<div id="request" />
 
 #### 요청
 
 [API 호출](#a)이라고도 함.
 
+<div id="retargeting" />
+
 #### 리타겟팅
 
 현재나 과거 유저에게 도달하는 광고 캠페인
+
+<div id="retargeting-network" />
 
 #### 리타게팅 네트워크
 
 현재나 과거 유저를 타겟팅하는 캠페인에 특화된 애드 네트워크 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide#retargeting-dashboard">[관련 문서]</Anchor>
 
+<div id="retention-report" />
+
 #### 리텐션 리포트
 
 앱 내 유저 세션 수를 측정하는 앱스플라이어 제품. [관련 문서]
+
+<div id="revenue" />
 
 #### 수익
 
 인앱 이벤트 및 인앱 광고로 발생한 수익
 
+<div id="revenue-attribution" />
+
 #### 광고 수익 어트리뷰션
 
 특정 수익 이벤트를 특정 캠페인/미디어 소스와 연결합니다.<Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution">[관련 문서]</Anchor>
+
+<div id="revenue-event" />
 
 #### 수익 이벤트
 
 (EN: Revenue Event) 관련 수익 값으로 기록된 인앱 이벤트.   
  항상 귀사의 비즈니스 로직에서 실제 수익 창출을 나타내는 인앱 이벤트와 함께 사용하세요.
+
+<div id="rich-media-ad" />
 
 #### 리치 미디어 광고
 
@@ -921,6 +1185,8 @@ OAID - **Open Advertiser Identifier**
 **광고 지출 수익률(%).**  
 Return On Ad Spend, 광고 수익률 광고비용 단위당 생성된 수익을 계산하여 캠페인 성과를 측정하는 측정 항목입니다.   
 *공식:*
+
+<div id="roi" />
 
 #### ROI (투자수익률)
 
@@ -941,18 +1207,26 @@ Return On Ad Spend, 광고 수익률 광고비용 단위당 생성된 수익을 
 
 #### SDK
 
+<div id="segmentation" />
+
 #### 세그멘테이션
 
 개인화된 광고를 제공하기 위해 기준을 세워 사용자를 그룹화하는 마케팅 기법.
+
+<div id="session" />
 
 #### 세션
 
 앱이 열리는 횟수. SDK 실행 수나 앱 소유주가 정한 논리에 따라 계산됩니다.  
 *예시:* 예: 바이러스 백신 앱을 하루 동안 사용하면 세션 1회로 간주 됩니다.
 
+<div id="single-platform" />
+
 #### 단일 플랫폼
 
 앱스플라이어 고객이 한 번에 하나의 플랫폼(예: 안드로이드, iOS)에 대해 어트리뷰션을 수행할 수 있는 어트리뷰션 링크 유형  (다중 플랫폼 어트리뷰션 링크와 반대).
+
+<div id="single-source-of-truth-ssot" />
 
 #### 단일 데이터 소스(SSOT)
 
@@ -966,9 +1240,13 @@ Apple이 iOS의 일부로 운영하는 SKAdNetwork 인프라는 마케터가 사
 
 SKAdNetwork의 약어.
 
+<div id="slug" />
+
 #### 슬러그
 
 앱 ID (안드로이드 & iOS)
+
+<div id="smart-banner" />
 
 #### 스마트 배너
 
@@ -984,9 +1262,13 @@ SKAdNetwork의 약어.
 광고 지면 판매 플랫폼:  
  효율적으로 자동으로 광고 지면 판매를 관리합니다.
 
+<div id="subdomain" />
+
 #### 하위 도메인
 
 웹 사이트의 다른 섹션을 구성하고 탐색하기 위해 만들어진 기본 도메인 이름에 대한 추가 정보입니다. 주 도메인은 여러 개의 하위 도메인을 가질 수 있습니다. 예: app.yourwebsite.com
+
+<div id="sunset-date" />
 
 #### 운영 종료 일자
 
@@ -998,22 +1280,32 @@ SKAdNetwork의 약어.
 
 <Accordion title="T">
 
+<div id="targeting" />
+
 #### 타겟팅
 
 마케팅 캠페인을 특정 [오디언스](#a)를 겨냥해 집행합니다.  
  기준 : 위치, 인구 통계 특징(성별, 나이 등), 이동 통신사 등
 
+<div id="account-user" />
+
 #### 계정 사용자
 
 앱스플라이어 로그인 계정이 있는 앱스플라이어 사용자 계정 사용자는 관리자에 의해 액세스 할당을 받습니다.
+
+<div id="touch-time" />
 
 #### 터치 타임
 
 유저 참여(광고 클릭이나 광고 조회) 활동 발생 기록 시각(타임 스탬프)
 
+<div id="touch-type" />
+
 #### 터치 타입
 
 유저가 광고에 반응한 행동 종류, 광고 클릭이나 광고 조회
+
+<div id="touchpoint" />
 
 #### 터치포인트
 
@@ -1030,30 +1322,44 @@ SKAdNetwork의 약어.
 
 유저가 iCloud 또는 설정 앱을 사용하여 디바이스를 활성화하려고 할 때 애플 서버에서 가져옵니다.
 
+<div id="uninstall-measurement" />
+
 #### 앱 삭제 측정
 
 디바이스에서 앱을 삭제한 유저를 어트리뷰션된 미디어 소스별로 분류하여 측정합니다. <Anchor target="_blank" href="/marketers/ko/docs/measure-uninstalls">[관련 문서]</Anchor>
 
+<div id="unique-user" />
+
 #### 고유 사용자
 
 앱스플라이어 ID를 사용하여 고유 사용자를 식별합니다.
+
+<div id="universal-links" />
 
 #### 유니버설 링크
 
 Universal Links는 사용자가 웹 브라우저를 먼저 여는 중간 단계 없이 링크된 콘텐츠로 바로 이동할 수 있도록 하여 원활한 사용자 경험을 유지합니다.  
 유니버설 링크는 웹 서버에서 호스팅되는 AASA(Apple App Site Association) 파일을 사용하는 iOS를 통해 작동합니다. AASA 파일에는 웹 도메인을 앱과 연결하는 정보가 포함되어 있어 도메인의 링크에서 앱 내의 콘텐츠를 원활하게 열 수 있습니다.
 
+<div id="user" />
+
 #### 사용자
 
 모바일 디바이스를 이용해 앱을 다운로드하고, 설치하고 실행하는 사람
+
+<div id="user-acquisition" />
 
 #### 유저 유입
 
 신규 유저를 얻기 위한 목적으로 집행하는 광고 캠페인
 
+<div id="user-agent" />
+
 #### 유저 에이전트
 
 유저 디바이스 기술 정보. 브라우저 종류, 운영 체제, 소프트웨어 버전 등. 앱스플라이어는 확률적 모델링 어트리뷰션에 대해 이 정보를 사용합니다.
+
+<div id="user-invite-attribution" />
 
 #### 앱 추천 어트리뷰션
 
@@ -1065,19 +1371,27 @@ Universal Links는 사용자가 웹 브라우저를 먼저 여는 중간 단계 
 
 <Accordion title="V">
 
+<div id="validation-rules" />
+
 #### 유효성 검증 규칙
 
 앱 소유자가 허위 어트리뷰션을 차단할 수 있도록 지정하는 유효 앱 설치 검증 기준. 모바일 광고 프로드 차단 장치.<Anchor target="_blank" href="/marketers/ko/docs/implement-validation-rules-to-prevent-fraud">[관련 문서]</Anchor>
+
+<div id="verticals" />
 
 #### 카테고리
 
 업종이라고도 함. 특정 서비스에 더 관심을 보이는 (특정 수요가 있는) 시장.    
 *예시:*
 
+<div id="video-ad" />
+
 #### 동영상 광고
 
 인터넷에서 동영상 스트리밍 전, 도중, 혹은 후에 나타나는 광고.   
 *예시:* 예 : 동영상이 삽입된 배너 또는 전면 광고
+
+<div id="visitor-website" />
 
 #### 방문자 (웹 사이트)
 
@@ -1094,6 +1408,8 @@ Universal Links는 사용자가 웹 브라우저를 먼저 여는 중간 단계 
 
 <Accordion title="W">
 
+<div id="web-app" />
+
 #### 웹 앱
 
 웹 브라우저에서 실행됨. (특정 OS에서 실행되는 네이티브 앱)
@@ -1103,6 +1419,8 @@ Universal Links는 사용자가 웹 브라우저를 먼저 여는 중간 단계 
 <div id="X" />
 
 <Accordion title="X">
+
+<div id="x-marketing-partners" />
 
 #### X 마케팅 파트너
 

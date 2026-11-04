@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 사용자에게 원하는 경험을 정확하게 제공하는 원링크 링크를 만드세요. 링크를 클릭하는 사용자는 올바른 앱 스토어, 웹 URL 또는 앱으로 정확하게 리디렉션됩니다.
 
+<div id="onelink-links-and-experiences" />
+
 ## 원링크 링크 및 경험
 
 <Embed title="YouTube video player" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ x-zendesk:
 * 경험별 설정
 * 딥링킹 및 리디렉션 설정
 * 추가 파라미터 설정
+
+<div id="create-a-onelink-link" />
 
 ## 캠페인을 위한 원링크 링크 생성하기
 
@@ -113,6 +117,8 @@ x-zendesk:
    * 브랜드를 반영할 수 있도록 다른 도메인을 선택하세요. <Anchor target="_blank" href="/marketers/ko/docs/brand-onelink-with-your-domain">더 알아보기</Anchor>
    * <span id="url-id"></span>캠페인 오퍼를 강조 표시하려면 URL ID를 편집합니다. URL ID는 최대 50자여야 하며 문자와 숫자의 조합일 수 있습니다. 기본 세팅은 8자 입니다.
 
+<div id="enable-retargeting-for-the-app" />
+
 #### 앱에 대한 리타겟팅 활성화
 
 이 앱에 대해 리타겟팅이 설정되지 않았다면, 먼저 앱 리타겟팅을 설정해야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/app-settings#어트리뷰션-설정">더 알아보기</Anchor>
@@ -174,6 +180,8 @@ x-zendesk:
 
 <Accordion title="소셜 앱 랜딩 페이지">
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > 이제 iOS Universal Links가 Meta ads에서 지원됩니다.
@@ -209,9 +217,13 @@ x-zendesk:
 * **앱이 이미 설치된 경우**: 앱이 실행됩니다.
 * **앱이 설치되지 않은 경우**: 사용자는 관련 앱 스토어로 이동합니다. 설치 시 사용자 딥링킹을 연기할 수 있습니다([딥링킹 및 디퍼드 딥링킹](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)에서 설명).
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 소셜 앱 랜딩 페이지는 원링크 짧은 URL만 지원합니다.
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **소셜 앱 랜딩 페이지를 사용하는 방법:**
 
@@ -221,6 +233,8 @@ x-zendesk:
 3. 소셜 앱에 원링크 짧은 URL을 게시합니다.
 
 어트리뷰션은 어트리뷰션 설정에 따라 결정됩니다.
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **소셜 앱 랜딩 페이지 설정하기:**
 
@@ -275,6 +289,8 @@ x-zendesk:
        * 클릭 룩백 윈도우는 최대 15분까지 가능합니다.
      * **참고**: 이미 딥링킹에 원링크를 사용하고 있는 고객은 UDL 대신 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">안드로이드</Anchor> 및 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor> 레거시 메소드를 사용할 수 있습니다.  
 
+       <div id="tips" />
+
        > 👍 **팁**
        >
        > **deep\_link\_value**는 제품 SKU, 소셜미디어 게시물 ID, URL 경로 또는 기타 값을 기반으로 할 수 있습니다.
@@ -309,6 +325,8 @@ x-zendesk:
       </Tabs>
 
    3. **추가 파라미터** 섹션에서 개발자와의 협의 및 결정 사항에 따라 필요한대로 커스텀 파라미터 **deep\_link\_sub2-10**와 값을 추가합니다.
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -353,6 +371,8 @@ x-zendesk:
 * 앱이 설치되지 않은 신규 사용자
 * 앱이 설치된 기존 사용자
 
+<div id="new-users-without-your-app-installed" />
+
 #### 앱이 설치되지 않은 신규 사용자
 
 **선행 조건**: 앱이 설치되지 않은, <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">등록된 테스트 디바이스</Anchor>
@@ -375,6 +395,8 @@ x-zendesk:
    미디어소스(예: 테스트) 및 URL에 입력한 캠페인 이름에서 새 클릭 및 인스톨을 찾습니다.
 
 링크가 예상대로 작동하지 않습니까? <Anchor target="_blank" href="/marketers/ko/docs/onelink-troubleshooting-and-faq">원링크 FAQ 및 문제 해결 가이드</Anchor>에서 해결 방법을 확인하세요.
+
+<div id="existing-users-with-your-app-installed" />
 
 #### 앱이 설치된 기존 사용자
 
@@ -399,6 +421,8 @@ x-zendesk:
 링크가 예상대로 작동하지 않습니까? <Anchor target="_blank" href="/marketers/ko/docs/onelink-troubleshooting-and-faq">원링크 FAQ 및 문제 해결 가이드</Anchor>에서 해결 방법을 확인하세요.
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## 추가 절차
 
@@ -479,6 +503,8 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
 
 이 솔루션은 원링크 짧은 URL과 iOS에서 사용할 수 있는 앱 클립 기술을 결합하여 전체 앱을 설치할 필요 없이 사용자를 제품의 특정 플로우로 보낼 수 있습니다. 원링크 짧은 URL은 사용자 어트리뷰션 데이터를 제공하며, DDL을 통해 달성하고자 하는 것과 유사한 맞춤형 앱 클립 경험으로 사용자를 안내합니다. 앱 클립에는 사용자를 앱 클립에서 전체 앱으로 안내하는 플로우도 포함할 수 있습니다. **참고**: 사용자가 앱 클립 기반 솔루션에서 전체 앱을 재설치하면, 앱스플라이어에 오가닉 인스톨로 보고될 수 있습니다. 
 
+<div id="flow" />
+
 #### **플로우**
 
 앱 클립 기반 DDL 솔루션의 플로우는 다음과 같습니다.
@@ -514,6 +540,8 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
 
 <Accordion title="클립보드 기반 솔루션">
 
+<div id="flow-1" />
+
 #### **플로우**
 
 클립보드 기반 DDL 솔루션의 플로우는 다음과 같습니다.
@@ -530,6 +558,8 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
 5. 사용자가 **앱 가져오기**를 누릅니다.
 6. 사용자가 앱 스토어로 가서 앱을 설치합니다. 그런 다음, 앱 첫 실행 시 특정 앱 페이지로 이동합니다.
 
+<div id="requirements" />
+
 #### **요구 사항**
 
 랜딩 페이지 DDL 솔루션 복사/붙여넣기에는 다음이 필요합니다.
@@ -539,6 +569,8 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
 * 앱스플라이어 iOS SDK V6 이상.
 * iOS 앱 개발자가 클립보드의 URL에 디퍼드 딥링크 데이터를 붙여넣는 코드를 구현할 수 있습니다. 이는 앱스플라이어 SDK의 일부가 아닙니다.
 * 엔드 유저가 확인란을 선택한 상태로 유지합니다. (기본값) 이 옵션을 선택하지 않으면 URL이 복사되지 않고 디퍼드 딥링킹이 작동하지 않습니다.
+
+<div id="setup" />
 
 #### **설정**
 
@@ -553,6 +585,8 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

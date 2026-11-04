@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## 크리에이티브 최적화 개요 대시보드 정보
 
 <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-guide">**크리에이티브 최적화**</Anchor> 대시보드를 사용하면 모든 미디어 채널의 모든 크리에이티브를 한 곳으로 가져와 광고소재의 성과를 측정할 수 있습니다. 선택한 디멘션별로 여러 캠페인과 채널 등에 걸친 성과를 분석하여, 다음 크리에이티브 세트를 기획, 선정 및 제작하기 전에 핵심적인 인사이트를 확보하세요.
@@ -43,11 +45,15 @@ x-zendesk:
 * 시간 경과에 따른 크리에이티브 성과를 확인할 수 있습니다.
 * 기타
 
+<div id="get-started" />
+
 ## 시작하기
 
 아직 크리에이티브 최적화를 구성하지 않았다면 여기에서 설정 방법에 대한 안내를 확인할 수 <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-guide#get-started">있습니다</Anchor>. 설정이 완료되면 크리에이티브 최적화 대시보드는 <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-guide#dashboard-updates">하루에 한 번</Anchor> 업데이트됩니다.
 
 **참고:** 비용 데이터 지표는 앱스플라이어 ROI360 구독 여부에 따라 대시보드에 다르게 표시됩니다. <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-guide#creative-optimization-roi360">더 알아보기</Anchor>
+
+<div id="charts" />
 
 ## 차트
 
@@ -71,6 +77,8 @@ x-zendesk:
 ## 표
 
 표를 사용하여 세부 정보를 상세 분석해 보세요. 다양한 디멘션별로 그룹화하거나 테이블 설정을 커스텀하여 차원 및 지표를 표에 추가한 뒤, 데이터를 정렬·확인·비교하여 필요한 인사이트를 도출해 보세요.
+
+<div id="zd-table" />
 
 <div id="table" />
 
@@ -116,7 +124,7 @@ x-zendesk:
   * CPM  
     **참고:** 파트너 지표 옆에는 해당 지표가 매체 데이터임을 나타내는 "파트너(Partners)" 표시가 함께 나타납니다.
 
-* #### **인앱 이벤트**
+* #### <span id="in-app-events"></span>**인앱 이벤트**
 
   이 데이터를 활용하여 특정 크리에이티브가 인앱 이벤트 성과에 미치는 영향을 파악할 수 있습니다. 각 이벤트에 대해 계산된 지표는 다음과 같습니다.
 

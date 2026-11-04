@@ -27,13 +27,19 @@ x-zendesk:
 
 <Embed title="[클로즈 베타] AI 예측 오디언스를 사용하여 높은 의도를 가진 사용자에게 도달하세요." typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
+<div id="about-predictive-audiences" />
+
 ## 예측 오디언스에 대하여
 
 예측 오디언스는 AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide">오디언스</Anchor>의 일부로, 주요 행동을 취할 가능성이 가장 높은 사용자들의 AI 기반 오디언스를 생성하는 데 도움을 줍니다. 다음 7일 이내에 구매할 가능성이 가장 높은 사용자를 예측하여, 캠페인을 높은 의도를 가진 사용자에게 집중하고 캠페인 효율성을 향상시킬 수 있습니다.
 
 가능성 범위를 조정하여 높은 의도를 가진 사용자의 더 좁은 오디언스를 생성하거나 더 넓은 도달 범위를 가진 오디언스를 생성한 후, 해당 오디언스를 파트너와 연결하여 활성화할 수 있습니다. 한 번 생성되면, 오디언스는 매일 새로 고쳐지며 자동으로 연결된 파트너에게 지속적으로 전송됩니다.
 
+<div id="create-a-predictive-audience" />
+
 ## 예측 오디언스 생성하기
+
+<div id="prerequisites" />
 
 ### 필수 조건
 
@@ -81,6 +87,8 @@ x-zendesk:
 
    **예상 청중 규모** 는 선택에 따라 실시간으로 업데이트됩니다.
 
+<div id="compare-audiences-optional" />
+
 #### 청중 비교(선택 사항):
 
 청중 비교는 예측 청중을 하나 이상의 기존 청중과 비교할 수 있는 선택적 기능입니다. 이 기능은 광고 지출 수익(ROAS) 및 전환율과 같은 주요 지표(KPI) 전반에 걸쳐 성과를 비교할 수 있게 해줍니다. 비교할 청중을 선택할 수 있지만, 성과 데이터는 현재 Facebook, TikTok, Google 또는 Snap에 연결된 캠페인에 대해서만 제공됩니다.
@@ -106,6 +114,8 @@ x-zendesk:
 생성 후, 귀하의 새로운 예측 청중은 **청중** 테이블에 나타납니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

@@ -21,14 +21,20 @@ x-zendesk:
 ---
 > **한눈에 보기:** AppsFlyer와 구글 애널리틱스(GA4)의 통합은 광고주가 AppsFlyer에서 GA4로 귀속 데이터와 선택된 인앱 이벤트를 전송할 수 있게 해줍니다. 이 통합은 이미 [구글 애널리틱스 포 파이어베이스 SDK](https://firebase.google.com/docs/analytics)가 구현된 iOS 및 안드로이드 앱에서 작동합니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 이 통합은 이미 [구글 애널리틱스 포 파이어베이스 SDK가 구현된](https://firebase.google.com/docs/analytics) iOS 및 안드로이드 앱에서 작동합니다.  통합이 성공하려면, AppsFlyer SDK가 Firebase SDK에서 `app_instance_id` 값을 수집해야 합니다. Firebase SDK에서 앱 인스턴스 ID를 검색하는 방법에 대한 지침을 참조하세요 [여기](#5-retrieve-app-instance-id-in-appsflyer-sdk).
+
+<div id="how-does-it-work" />
 
 ## 어떻게 작동하나요?
 
 * **새로운 설치가 발생할 때** **AppsFlyer가** **터치포인트 세부정보— 미디어 소스, 캠페인 이름 및 캠페인 ID를 GA4로 전송합니다.** 또한 Firebase SDK의 `app_instance_id`를 전송하여 해당 사용자의 GA4에 터치포인트가 기록되도록 합니다.
 * **인앱 이벤트가 발생할 때** **GA4는** 마지막 터치포인트에 이벤트를 귀속시킵니다.
+
+<div id="set-up-google-analytics-ga4-integration" />
 
 ## 구글 애널리틱스(GA4) 통합 설정
 
@@ -68,6 +74,8 @@ x-zendesk:
 4. 광고 ID(IDFA) 대신 고객 사용자 ID(CUID)를 전송하려면 **고객 사용자 ID**를 활성화하십시오.
 5. **기본 포스트백** 섹션에서 **사용자 출처**에 대해 **유기적을 포함한 모든 미디어 소스**를 선택하십시오.
 
+   <div id="note" />
+
    > 📘 **참고**
    >
    > 설치 포스트백에는 터치포인트(미디어 소스, 캠페인 이름 및 캠페인 ID)의 세부정보만 포함됩니다.
@@ -80,6 +88,8 @@ x-zendesk:
 <Accordion title="3. 인앱 이벤트 포스트백을 설정합니다.">
 
 **통합** 탭에서 AppsFlyer 인앱 이벤트를 Google Analytics(GA4) 이벤트에 매핑하고 포스트백을 통해 전송합니다.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -111,16 +121,22 @@ x-zendesk:
 * **AF 이벤트:** AppsFlyer 이벤트의 이름입니다.
 * **Google 이벤트에 매핑됨:** Google Analytics의 이벤트 이름입니다.
 
+  <div id="important-1" />
+
   > 🚧 **중요!**
   >
   > 사용자 정의 Google Analytics 이벤트의 이름으로 [Google 예약 이벤트](#예약된-google-이벤트-이름) 중 어떤 것도 사용하지 마십시오.
 
 * **AF 이벤트 매개변수(필수):** Google Analytics에 전송되는 이벤트 포스트백에 포함되어야 하는 미리 정의된 AppsFlyer 이벤트 매개변수입니다.
 
+  <div id="important-2" />
+
   > 🚧 **중요!**
   >
   > 이벤트 정의에 모든 미리 정의된 AF 이벤트 매개변수를 표에 나열된 대로 정확히 포함하는 것은 필수입니다. 이를 준수하지 않으면 Google Analytics가 포스트백을 거부합니다.
 
+
+<div id="the-event-mapping-table" />
 
 #### 이벤트 매핑 테이블
 
@@ -160,6 +176,8 @@ x-zendesk:
 |  | [view\_promotion](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_promotion) | <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_price">af\_price</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_content_id">af\_content\_id</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_content">af\_content</Anchor> |
 |  | [검색 결과 보기](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#view_search_results) |  |
 | af\_ad\_view | [ad\_impression](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events#ad_impression) | <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_currency">af\_currency</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure#af_revenue">af\_revenue</Anchor> |
+
+<div id="reserved-google-event-names" />
 
 #### 예약된 Google 이벤트 이름
 
@@ -210,6 +228,8 @@ x-zendesk:
 
 1. Firebase에서 `app_instance_id` 필드를 수집하십시오.
 2. 첫 번째 실행 전에 `setAdditionalData`을 호출하여 앱 인스턴스 ID(및 사용되는 경우 `ga_session_id`)를 설치, 세션 및 인앱 이벤트에 포함합니다.
+
+<div id="important-3" />
 
 > 🚧 **중요!**
 >
@@ -306,6 +326,8 @@ API 참조: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_a
 1. Firebase에서 `ga_session_id` 필드를 수집하십시오.
 2. 첫 번째 실행 전에 `setAdditionalData`을 호출하여 세션 ID(및 사용되는 경우 `app_instance_id`)를 포함합니다.
 3. API를 호출할 때 `ga_session_id` 키를 사용하십시오.
+
+<div id="important-4" />
 
 > 🚧 **중요!**
 >

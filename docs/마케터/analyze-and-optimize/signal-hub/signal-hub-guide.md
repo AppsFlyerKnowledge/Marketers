@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="YouTube video player" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo?si=gAgmyUqH7PKsQsf-" providerUrl="https://www.youtube.com" />
 
+<div id="about-signal-hub" />
+
 ## 시그널 허브 소개
 
 AppsFlyer 시그널 허브는 프라이버시를 보호하는 첨단 솔루션으로, 기업이 자사 데이터를 뛰어넘어 유저에 대한 인사이트를 확보할 수 있도록 지원합니다. 마케터는 실제 구매 신호로 오디언스를 강화함으로써 고가치 유저를 조기에 식별하고, 입증된 지출 행동을 기반으로 캠페인을 개인화하고, 메타, Google 및 TikTok과 같은 주요 미디어 플랫폼에서 오디언스를 즉시 활성화할 수 있습니다.
@@ -44,6 +46,8 @@ AppsFlyer 클린룸 인프라와 ID 해결 제공업체와의 통합을 사용�
   해시 처리된 pseudonym화된 식별자를 사용하여 클린룸 환경에서 안전하게 활성화하세요. 로데이터를 이전, 공유 또는 내보내지 않습니다.
 * **풀 퍼널 명확도 확보**  
   상세 세그먼트가 설치, 구매, 잔존율, SKU 수준 측정 및 수익에 미치는 영향을 AppsFlyer의 전체 퍼널 옴니채널 측정을 통해 측정합니다.
+
+<div id="get-started-using-signal-hub" />
 
 ## 시그널 허브 사용 시작하기
 
@@ -85,6 +89,8 @@ AppsFlyer 클린룸 인프라와 ID 해결 제공업체와의 통합을 사용�
 
 </Accordion>
 
+<div id="use-cases" />
+
 ## 활용 사례
 
 시그널 허브의 활용 사례는 무한합니다. 다음은 업계별 몇 가지 예입니다.
@@ -112,6 +118,8 @@ AppsFlyer 클린룸 인프라와 ID 해결 제공업체와의 통합을 사용�
 소비 전자 제품 브랜드가 새로운 스마트 TV를 홍보하고자 합니다. 이들은 스트리밍 플랫폼 데이터(예: 디바이스 소유권, 구독 구매, 엔터테인먼트 앱 인게이지먼트)를 활용하여 프리미엄 가구를 식별하고 고도로 타게팅된 캠페인을 실행할 수 있습니다. 이렇게 하면 빅티켓 아이템의 전환율이 향상됩니다.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

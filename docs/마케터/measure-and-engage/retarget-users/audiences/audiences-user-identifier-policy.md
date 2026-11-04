@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 오디언스가 파트너와 공유하는 데이터에 대한 **계정 수준** 제어를 위해 귀사의 유저 식별자 정책을 구성하세요.
 
+<div id="about" />
+
 ## 소개
 
 <Anchor target="_blank" href="/marketers/ko/docs/audiences-partner-connections">오디언스를 정의한 후, 앱스플라이어 오디언스가 해당 오디언스 구성원의 식별자를 귀사의</Anchor> 파트너에게 전송합니다. 이를 통해 귀사의 광고를 오직 이 유저에게만 제공할 수 있습니다.
@@ -35,6 +37,8 @@ iOS 14.5의 개인정보 보호 요구 사항 및 기타 사용자 개인정보 
 * 파트너 연결 수준에서
 
 이 문서 는 계정 수준에서 귀사의 유저 식별자 정책을 관리하는 프로세스를 설명합니다. 파트너 연결 수준에서 공유되는 식별자 관리를 위한 자세한 내용은 오디언스 가이드의 <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide#manage-connections">관리 연결</Anchor> 섹션을 참조하세요.
+
+<div id="user-identifiers" />
 
 ## 유저 식별자
 
@@ -72,6 +76,8 @@ iOS 14.5의 개인정보 보호 요구 사항 및 기타 사용자 개인정보 
 
 </Accordion>
 
+<div id="setting-account-level-user-identifier-policy" />
+
 ## 계정 수준 유저 식별자 정책 설정
 
 유저 식별자 정책은 관리자 유저만 설정할 수 있습니다.
@@ -86,6 +92,8 @@ iOS 14.5의 개인정보 보호 요구 사항 및 기타 사용자 개인정보 
 4. **저장**을 클릭하세요.
 
 귀사의 IDFA 정책 변경 사항은 Apple의 iOS 14.5 출시부터 적용됩니다. 유저 식별자 정책의 기타 변경 사항은 다음 파트너 데이터 업로드 시부터 적용됩니다.
+
+<div id="privacy-regulations" />
 
 ## 개인정보 보호 규정
 
@@ -145,7 +153,7 @@ Google은 디지털 시장법(DMA) 시행의 일환으로 2024년 3월 6일 EU �
   2024년 3월 6일 이전에 이미 Google의 오디언스에 속해 있던 모든 디바이스는 영향을 받지 않으며 계속해서 오디언스의 일부로 유지됩니다. 기존 오디언스에 New 오디언스나 새로운 EEA 디바이스가 추가된 경우에만 동의를 받아 Google에 업로드됩니다.
 * **오디언스 업로드 크기**  
   사용자가 동의하거나 거부하는 수에 따라 예상 오디언스 크기와 실제 업로드 크기가 영향을 받을 수 있습니다.
-* #### **오디언스 가져오기**
+* #### <span id="importing-audiences"></span>**오디언스 가져오기**
 
   * **표준 오디언스 가져오기** - 앱스플라이어는 앱스플라이어 SDK에서 수집한 동의 데이터를 추가하고, Google에 전송하기 전에 동의하지 않거나 지정되지 않은 디바이스를 오디언스에서 제거합니다.
   * **있는 그대로의 오디언스 가져오기** - <Anchor target="_blank" href="/marketers/ko/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor> 또는 <Anchor target="_blank" href="/marketers/ko/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>를 통해 있는 그대로의 오디언스를 가져올 때 두 개의 추가 동의 필드를 추가해야 합니다. 이러한 필드는 다음과 같습니다.
@@ -156,6 +164,8 @@ Google은 디지털 시장법(DMA) 시행의 일환으로 2024년 3월 6일 EU �
 | <span id="ad_user_data"></span>ad\_user\_data\_enabled | ad\_user\_data | true\/false | 유저가 자신의 유저 데이터를 Google에 발송하는 데 동의했나요? |
 
 동의 필드에 값이 입력되지 않으면 '지정되지 않음'으로 Google에 전송됩니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >

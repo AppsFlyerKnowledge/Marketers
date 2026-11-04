@@ -33,6 +33,8 @@ x-zendesk:
 
 > **한눈에 보기:** 비용 가져오기, AppsFlyer ROI360의 일부로, 광고주가 업로드 또는 이메일을 통해 CSV 파일을 가져와 마케팅 비용을 완전하고 정확하게 파악할 수 있도록 합니다.
 
+<div id="overview" />
+
 ## 개요
 
 비용 가져오기 사용
@@ -46,6 +48,8 @@ x-zendesk:
 
 * 광고 네트워크는 관련 권한이 제공되면 고객을 위해 비용 파일을 가져올 수 있습니다.
 * 에이전시는 데이터를 업로드할 수 없습니다. 파일을 준비하고 광고주에게 보내 업로드할 수 있습니다.
+
+<div id="procedures" />
 
 ## 절차
 
@@ -69,9 +73,13 @@ CSV 파일 준비
 * 다음 표에 자세히 설명된 파일 스키마, 형식 및 규칙을 따르십시오.  
   **참고**: Excel 또는 Google Sheets를 사용하여 파일을 생성하는 경우 [Excel 및 Google Sheets 형식 지침](/docs/import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file)을 따르십시오.
 
+<div id="csv-schema" />
+
 #### CSV 스키마
 
 <table><thead><tr><th><p><span>열 이름</span></p><p><span>(대소문자 구분)</span></p></th><th><span>형식/비고</span></th><th><span>예시</span></th><th><span>필수 여부</span></th></tr></thead><tbody><tr><td><span>date</span></td><td><ul><li><span>비용이 발생한 날짜</span></li><li> <span>형식: 문자열</span><br/><span>모범 사례:<ul><li><span>YYYY-MM-DD</span></li><li><span>YYYY/MM/DD</span></li><li><span>MM-DD-YYYY</span></li><li> <span>MM/DD/YYYY </span><br/> </li></ul></span> </li><li>향후 날짜는 허용되지 않습니다.</li><li> <strong>모범 사례</strong>: 앱스플라이어에서 앱에 대해 정의된 시간대와 동일한 시간대를 사용하세요.</li><li> <strong>참고</strong>: Excel/Google 시트를 사용하여 파일을 준비하고 있습니까? <a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">이것을 읽어보십시오</a>. </li></ul></td><td><ul><li><span>2019-05-30</span></li><li>$475.22</li><li><span>5-30-2019</span></li><li>5/30/2019</li><li>05-30-2019</li><li>05-30-2019</li></ul></td><td><span>✓</span></td></tr><tr><td><span>app-id</span></td><td><ul><li><span>형식: 문자열</span></li><li> 앱스플라이어에 표시되는 앱 ID</li><li>단일 파일에 여러 앱이 허용됩니다.</li><li>모든 앱 ID는 동일한 광고주 계정에 속해야 합니다.</li></ul></td><td><ul><li><span>com.app.name </span></li><li><span>id12356789</span></li></ul></td><td><span>✓</span></td></tr><tr><td><span>media-source</span></td><td><ul><li><span>형식: 문자열</span></li><li><span>미디어 소스 이름 <strong>정확히</strong> AppsFlyer에 표시된 대로입니다. <strong>참고:</strong> 관련이 있는 경우 _int 접미사를 포함하세요.</span></li><li> <span>파일당 하나의 미디어 소스만 허용됩니다.</span> 동일한 미디어 소스에 대해 여러 앱이 허용됩니다.</li></ul></td><td><span>network_x_int</span></td><td><span>✓</span></td></tr><tr><td><span>campaign</span></td><td><ul><li> <span>형식: 문자열</span><span></span> </li><li><span>캠페인 이름. 캠페인 이름이 광고 네트워크에 표시되면, 이 파일의 이름은 대소문자를 구분하여 일치해야 합니다.</span></li><li>다중 앱에 동일한 캠페인 이름을 사용하지 마십시오.</li></ul></td><td>campaign_a</td><td><p><span>✓</span></p><p><span><strong>참고</strong>: 어트리뷰션 데이터에 이름과 ID가 모두 존재하는 경우, 일치하려면 CSV에 두 가지가 모두 포함되어야 합니다.</span></p></td></tr><tr><td><span>지출</span></td><td><ul><li><span>금전적 비용</span></li><li><span>소수점 뒤에 5자리 숫자 허용</span></li><li><span>값 0(영)은 허용</span></li><li> 참고:<ul><li>1000개의 쉼표 구분자는 허용되지 않습니다. 예를 들어: "2,874.12".</li><li>Excel/Google 시트를 사용하여 파일을 준비하고 있습니까? <a href="./import-cost-data#using-excel-or-google-sheets-to-prepare-csv-file">여기를 참조하세요</a>.</li></ul></li></ul></td><td><p><span>2874.12345</span></p></td><td><span><span>✓</span></span></td></tr><tr><td><span>geo</span></td><td><ul><li><span>형식: 문자열</span></li><li> <span><a href="https://www.iso.org/iso-3166-country-codes.html">ISO 3166을</a> 준수하는 두 자리 국가 코드입니다. </span> <strong>참고</strong>: 공백 없이 두 개의 문자를 보내야 합니다. </li><li> <span>영국의 경우</span> GB가 아닌 UK<span> 를 사용합니다.<br/> </span> </li></ul></td><td><p><span>US, CN, AU</span></p></td><td><span>아니요</span></td></tr><tr><td><span>currency</span></td><td><ul><li><span>형식: 문자열</span></li><li>세 글자의 통화 코드는 ISO 4217을 준수해야 합니다.  <strong>참고</strong>: 선행 또는 후행 공백 없이 세 글자를 보내야 합니다.</li><li> <span>파일에 앱당 하나의 통화 코드가 허용됩니다. </span><span>앱마다 통화 코드가 다를 수 있습니다 </span>. </li></ul></td><td><span>USD, GBP, EUR, JPY</span></td><td><p><span>그것은 아닙니다.</span></p><p><span>비워 두면 기본적으로 USD로 설정됩니다.</span></p></td></tr><tr><td><span>campaign-id</span></td><td>형식: 문자열</td><td>abc1234def</td><td rowspan="5"><p>그것은 아닙니다.</p><p><strong>참고</strong>: 어트리뷰션 데이터에 이름과 ID가 모두 존재하는 경우, 일치하려면 CSV에 두 가지가 모두 포함되어야 합니다.</p></td></tr><tr><td><span>adset</span></td><td>형식: 문자열 </td><td>my_adset_1</td></tr><tr><td><span>adset-id</span></td><td>형식: 문자열</td><td>id5678ghi</td></tr><tr><td><span>ad</span></td><td>형식: 문자열 </td><td>my_ad_name</td></tr><tr><td> <span>ad-</span><span>id</span> </td><td>형식: 문자열 </td><td>id91011jkl</td></tr><tr><td><span>site-id</span></td><td><ul><li>형식: 문자열 </li><li>광고를 게재하는 퍼블리셔를 식별하는 고유 ID입니다. <a href="./about-link-structure-and-parameters#site-id-parameter" target="_blank">더 알아보기</a> </li></ul></td><td>id1213mno</td><td>아니요</td></tr><tr><td><span>channe</span></td><td>형식: 문자열 </td><td> 비디오</td><td>아니요</td></tr><tr><td><span>키워드</span></td><td>형식: 문자열</td><td><ul><li>더 좋은</li><li>더 나은 앱</li><li>더 나은 온라인</li></ul></td><td>아니요</td></tr><tr><td><span>에이전시</span></td><td><ul><li>형식: 문자열</li><li>에이전시 이름. <code>af_prt</code> 파라미터의 값입니다.</li><li>하나의 에이전시만 파일에 포함할 수 있습니다.그리고 해당 에이전시에서 관리하는 캠페인만 파일에 포함할 수 있습니다.</li><li>행마다 에이전시 이름을 입력해야 합니다. 에이전시 열에는 빈 셀이 허용되지 않습니다.</li><li>에이전시는 파일에 포함된 모든 앱에 대한 권한이 있어야 합니다.</li><li>광고주만 파일을 업로드할 수 있습니다. 에이전시는 데이터를 업로드할 수 없습니다. 파일을 준비하고 광고주에게 보내 업로드할 수 있습니다.</li><li>동일한 날짜에 대한 비용 데이터가 다시 전송되고 원본에 없는 후속 제출에 에이전시 이름(<code>af_prt</code>)이 포함된 경우 중복된 비용 데이터가 발생합니다.</li></ul></td><td>에이전시 이름</td><td>아니요</td></tr><tr><td colspan="4"><span><strong>참고:</strong> 영어가 아닌 문자가 포함된 이름은 UTF-8을 사용하여 인코딩해야 합니다.</span></td></tr></tbody></table>
+
+<div id="csv-format-and-rules" />
 
 #### CSV 형식 및 규칙
 
@@ -143,6 +151,8 @@ CSV 파일 준비
 
 </Accordion>
 
+<div id="dashboard" />
+
 ## 대시보드
 
 비용 가져오기 대시보드를 사용하면 파일을 업로드하고 이전에 업로드된 파일의 세부 정보를 볼 수 있습니다.
@@ -183,6 +193,8 @@ CSV 파일 준비
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="using-excel-or-google-sheets-to-prepare-csv-file" />
@@ -194,6 +206,8 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 * 날짜 셀 형식 지정하기.
 * 지출 셀 형식 지정하기.
 * 내용 형식 확인하기.
+
+<div id="format-date-cells" />
 
 #### 날짜 셀 형식 지정하기.
 
@@ -207,6 +221,8 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 4. 유형 필드에 **YYYY-MM-DD**를 입력합니다
 5. **확인**을 클릭하세요.  
    날짜가 포맷됩니다.
+
+<div id="formatting-spend-cells" />
 
 #### 지출 셀 서식 지정
 
@@ -225,6 +241,8 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 5. (선택 사항) **소수점 이하 자릿수**를 설정합니다. 기본값은 2입니다. 허용되는 최대 개수는 5개입니다.
 6. **확인**을 클릭하십시오.  
    셀이 올바르게 포맷되었습니다.
+
+<div id="verify-content-format" />
 
 #### 내용 형식 확인
 
@@ -284,6 +302,8 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 7. 권한 저장을 클릭합니다.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## 문제 해결, 특성 및 제한 사항
 

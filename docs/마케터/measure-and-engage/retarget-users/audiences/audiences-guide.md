@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
+<div id="audiences-basics" />
+
 ## 오디언스 기반
 
 앱스플라이어 오디언스를 사용하면 오디언스 세그먼트를 쉽게 구축하고 이를 소유 채널과 유료 채널에 연결할 수 있으므로, 더 나은 인게이지먼트와 성과를 위한 맞춤형 캠페인을 제공할 수 있습니다. 캠페인이 전송되면 오디언스에서도 성과 지표를 볼 수 있습니다.
@@ -41,9 +43,13 @@ x-zendesk:
 
 오디언스가 데이터를 미디어 파트너에게 업로드하는 데 필요한 모든 정보는 파트너 연결에 지정되어 있습니다. 단일 미디어 파트너에 대해 다중 연결을 사용할 수 있습니다(다른 계정, 로그인 정보 등의 사용). iOS 14.5의 프라이버시 요구 사항 및 기타 사용자의 프라이버시 고려사항을 준수할 수 있도록 하기 위해, **오디언스를 통해 계정 수준 및 각 파트너 연결에서 파트너와 공유하는 식별자 결정에 대해 완전히 제어할 수 있습니다**.
 
+<div id="audience-split-and-incrementality-testing" />
+
 ### 오디언스 분할 및 성과 증분 테스트
 
 <Anchor target="_blank" href="/marketers/ko/docs/incrementality-for-remarketing-overview">성과 증분</Anchor> 테스트에서는 "성과 증가분"(마케팅 캠페인의 결과로 발생한 전환과 어쨌든 발생했을 전환 사이의 차이)을 정확하게 측정하는 A/B 테스트를 통해 캠페인의 실제 영향을 측정합니다. 앱스플라이어 잠재 고객은 선택한 미디어 파트너와 대조군 간에 잠재 고객을 분할하는 옵션 기능으로 테스트의 단계를 설정하므로, 성과 증분 대시보드를 사용하여 캠페인의 진정한 가치를 이해할 수 있습니다.
+
+<div id="get-started" />
 
 ## 시작하기
 
@@ -57,6 +63,8 @@ x-zendesk:
 | 4 | 오디언스를 하나 이상의 미디어 파트너에 연결 |
 | 선택 가능 | [오디언스를 파트너와 대조군으로 분할](/docs/audiences-guide#audience-split-and-control-groups) |
 | 선택 가능 | <Anchor target="_blank" href="/marketers/ko/docs/audiences-create-better-audiences-with-user-attribute-data">사용자 어트리뷰트를 가져옵니다.</Anchor> |
+
+<div id="create-and-manage-audiences" />
 
 ## 오디언스 생성 및 관리
 
@@ -87,6 +95,8 @@ x-zendesk:
 13. 오디언스 정의를 완료하고 **다음**을 클릭합니다.  
     **오디언스 연결** 창이 나타납니다. 여기에서 [오디언스를 미디어 파트너와 연결합니다](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
+<div id="notes" />
+
 > 📘 **참고**
 >
 > * 한 번에 최대 100개의 활성 맞춤/추천 오디언스를 보유할 수 있습니다.
@@ -109,6 +119,8 @@ x-zendesk:
 * 구매 유도
 * 구매자 수익화
 * 그 외 다수
+
+<div id="example-use-case" />
 
 > 📄 **사용 사례 예시**
 >
@@ -133,6 +145,8 @@ x-zendesk:
    * **고객 ID**: CUID를 사용해 기기를 그룹화하여 규칙 평가를 적용합니다. (데이터가 유효한 CUID를 가지고 있는지 확인한 후에 이 방법을 사용합니다.)
 10. 추가 [규칙 세트](/docs/audiences-guide#규칙-집합에-대한-모든-것)를 추가하여 오디언스를 추가로 사용자 정의하려면 **+ 필터**를 클릭하여 그렇게 할 수 있습니다. 완료되면 **다음**을 클릭합니다.   
     **오디언스 연결** 창이 나타납니다. 여기에서 [오디언스를 미디어 파트너와 연결합니다](/docs/audiences-guide#connect-an-audience-to-media-partners).
+
+<div id="notes-1" />
 
 > 📘 **참고**
 >
@@ -189,6 +203,8 @@ x-zendesk:
     * CUID를 식별자로 사용하여 오디언스를 구축할 때, 관련 디바이스와의 완전한 연결과 디바이스 식별자(즉 GAID, IDFA)를 통한 성공적인 보강을 위해 앱스플라이어가 설치 시(설치 후 이벤트 발생 시가 아니라) CUID 연결을 수신했음에 틀림없습니다. <Anchor target="_blank" href="/marketers/ko/docs/customer-user-id-field-cuid#cuid-설정방법">더 알아보기</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+
+<div id="example-device-id-vs-cuid" />
 
 > 📄 **예시 디바이스 ID vs. CUID**
 >
@@ -348,6 +364,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="all-about-rulesets" />
+
 ## 규칙 집합에 대한 모든 것
 
 규칙 세트를 사용하여 오디언스를 정의하는 방법을 알아보세요.
@@ -373,11 +391,15 @@ x-zendesk:
 
 <Accordion title="룰 세트 예시">
 
+<div id="example-location-based-rule" />
+
 > 📄 **예: 위치 기반 규칙**
 >
 > 지난 달에 앱을 삭제한 뉴욕 사용자.
 >
 > ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966552209)
+
+<div id="example-user-attributes-based-rule" />
 
 > 📄 **예: 사용자 특성 기반 규칙**
 >
@@ -385,11 +407,15 @@ x-zendesk:
 >
 > ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966566801)
 
+<div id="example-revenue" />
+
 > 📄 **예: 수익**
 >
 > 지난 7일 동안 앱을 설치하고 $1 을 지출한 사용자.
 >
 > ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/30258966567825)
+
+<div id="example-owned-media-filter" />
 
 > 📄 **예: 온드 미디어 필터**
 >
@@ -400,6 +426,8 @@ x-zendesk:
 > ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/30258966580753)
 >
 > 오디언스는 온드 미디어 또는 유료 미디어에서 개인화된 메시지로 이러한 사용자를 리인게이지하는 데 사용하거나 캠페인을 실행할 때 관련성이 없거나 불필요한 광고가 표시되지 않도록 제외 목록으로 사용할 수 있습니다.
+
+<div id="example-remarketing" />
 
 > 📄 **예: 리마케팅**
 >
@@ -449,6 +477,8 @@ x-zendesk:
 * 가져온 오디언스는 사용할 수 없습니다.
 
 </Accordion>
+
+<div id="create-and-manage-partner-connections" />
 
 ## 파트너 연결 생성 및 관리
 
@@ -500,6 +530,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="dashboard-and-metrics" />
+
 ## 대시보드 및 지표
 
 이 섹션에서는 대시보드에 표시되는 기능 및 캠페인 지표에 대해 설명합니다.
@@ -526,7 +558,11 @@ x-zendesk:
 
 <Accordion title="캠페인 지표">
 
+<div id="metrics-hash" />
+
 #### 지표 해시
+
+<div id="campaign-metrics-basics" />
 
 #### 캠페인 지표 기본
 
@@ -547,6 +583,8 @@ x-zendesk:
 2. 파일은 생성되면 자동으로 다운로드됩니다.
 
 
+<div id="summary-view" />
+
 #### 개요 뷰
 
 초기 **캠페인 지표** 뷰는 각 오디언스에 대한 다음과 같은 개요 캠페인 데이터를 표시합니다.
@@ -558,6 +596,8 @@ x-zendesk:
 | <span id="campaigns"></span>캠페인 | 선택한 기간에 오디언스를 대상으로 사용한 총 캠페인 수(지원 파트너와 함께 진행되는 캠페인만 해당) |
 | <span id="campaign-cost"></span>캠페인 비용 | 선택한 기간에 이러한 캠페인의 총비용 |
 | <span id="campaign-revenue"></span>캠페인 수익 | 선택한 기간에 이러한 캠페인에 어트리뷰트된 총수익 |
+
+<div id="detailed-view" />
 
 #### 상세 보기
 
@@ -579,6 +619,8 @@ x-zendesk:
 | <span id="cost"></span>비용 | 선택한 기간의 캠페인 비용(총비용, 이것을 지원 파트너 및 캠페인별로 구분) |
 | <span id="revenue"></span>수익 | 선택한 기간에 캠페인에 어트리뷰트되는 수익(총비용, 이것을 지원 파트너 및 캠페인별로 구분) |
 | <span id="daily-reach"></span>일일 도달 범위 | 선택한 기간에 캠페인에서 광고를 본 하루 평균 고유 사용자 수(파트너 리포트에 따름) |
+
+<div id="data-sources-and-availability" />
 
 #### 데이터 소스 및 가용성
 
@@ -626,6 +668,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 특징 및 제약 사항
 
 다음 특성 및 제한 사항에 유의하십시오.
@@ -671,7 +715,7 @@ x-zendesk:
 
 > 📄
 >
-> * <Anchor target="_blank" href="/marketers/ko/docs/incrementality-for-remarketing-overview"><span id="h_01HDNZ24ZDXSAPJ1F5QCB9X1EN"></span>Incrementality 가이드</Anchor>
+> * <Anchor target="_blank" href="/marketers/ko/docs/incrementality-for-remarketing-overview"><span id="see-also"></span><span id="h_01HDNZ24ZDXSAPJ1F5QCB9X1EN"></span>Incrementality 가이드</Anchor>
 > * <Anchor target="_blank" href="/marketers/ko/docs/run-an-incrementality-for-remarketing-experiment">성과 증분 측정 실험 실행</Anchor>
 
 <div data-zendesk-anchors="audiences-basics=%EC%98%A4%EB%94%94%EC%96%B8%EC%8A%A4-%EA%B8%B0%EB%B0%98 h_01HBQMA619CKEESZD3ADSP3PSB=%EC%98%A4%EB%94%94%EC%96%B8%EC%8A%A4-%EA%B8%B0%EB%B0%98 audience-split-and-incrementality-testing=%EC%98%A4%EB%94%94%EC%96%B8%EC%8A%A4-%EB%B6%84%ED%95%A0-%EB%B0%8F-%EC%84%B1%EA%B3%BC-%EC%A6%9D%EB%B6%84-%ED%85%8C%EC%8A%A4%ED%8A%B8 h_01HBQMA619KMJFVX7Y8MXMMQ6N=%EC%98%A4%EB%94%94%EC%96%B8%EC%8A%A4-%EB%B6%84%ED%95%A0-%EB%B0%8F-%EC%84%B1%EA%B3%BC-%EC%A6%9D%EB%B6%84-%ED%85%8C%EC%8A%A4%ED%8A%B8 get-started=%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0 h_01HBQMA619118PWF4TA98C4X0B=%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0 create-and-manage-audiences=%EC%98%A4%EB%94%94%EC%96%B8%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EA%B4%80%EB%A6%AC h_01HBQMA619DBX2C7DRY7MSV3P9=%EC%98%A4%EB%94%94%EC%96%B8%EC%8A%A4-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EA%B4%80%EB%A6%AC h_01HBQMA6195AT0YD7783V6BQR6=create-a-custom-audience h_01JXA0GDBMBX541W6P63XXDVKQ=%EC%B0%B8%EA%B3%A0 h_01HBQMA619F2P2CVPCSMX9RTKB=create-a-suggested-audience h_01HBQMA619RBRYNMVMNQ839196=%EC%82%AC%EC%9A%A9-%EC%82%AC%EB%A1%80-%EC%98%88%EC%8B%9C h_01JXA0WJFMSHA710CTNF84BPQ5=%EC%B0%B8%EA%B3%A0-1 h_01HBQMA619ATHVJARHYXQNY955=import-an-audience h_01HBQMA6193FFM66XDTB6WYX06=connect-an-audience-to-media-partners user-identifier%E2%80%94device-id-vs-customer-id=user-identifier-device-id-vs-customer-id h_01HBQMA61A192YFES8TK1347FJ=user-identifier-device-id-vs-customer-id 01ECF4ZD0NWN5QQPP88ZKW0578=%EC%98%88%EC%8B%9C-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-id-vs-cuid 01ECF4ZD0WNEF6FRPF1NJHZ9WR=audience-split-and-control-groups h_01HBQMA61ANM52HBDAFA5QZPFN=manage-audiences h_01HT04HW2VBB9ZY28V5KQ5K2AJ=pause all-about-rulesets=%EA%B7%9C%EC%B9%99-%EC%A7%91%ED%95%A9%EC%97%90-%EB%8C%80%ED%95%9C-%EB%AA%A8%EB%93%A0-%EA%B2%83 h_01HBQMA61ANB4K0TCJ4WBHMV8D=%EA%B7%9C%EC%B9%99-%EC%A7%91%ED%95%A9%EC%97%90-%EB%8C%80%ED%95%9C-%EB%AA%A8%EB%93%A0-%EA%B2%83 h_01HBQMA61A30YGERD8Z6DXV3KA=audience-segmentation-rulesets h_01HBQMA61AF7V3M0Y8ZN1R0HZC=ruleset-examples h_01HBQMA61ATV5MHN35XMTJ8MEH=%EC%98%88-%EC%9C%84%EC%B9%98-%EA%B8%B0%EB%B0%98-%EA%B7%9C%EC%B9%99 h_01HBQMA61ATB7NYKBP7CD6SZZH=%EC%98%88-%EC%82%AC%EC%9A%A9%EC%9E%90-%ED%8A%B9%EC%84%B1-%EA%B8%B0%EB%B0%98-%EA%B7%9C%EC%B9%99 h_01HBQMA61APWHKS4EP2NKABSQD=%EC%98%88-%EC%88%98%EC%9D%B5 01ECF4ZD0MJ8HVQCC54YHFE6DX=%EC%98%88-%EC%98%A8%EB%93%9C-%EB%AF%B8%EB%94%94%EC%96%B4-%ED%95%84%ED%84%B0 h_01JRAGFYEQ28R6RQNPEK6WZV2F=%EC%98%88-%EB%A6%AC%EB%A7%88%EC%BC%80%ED%8C%85 h_01HBQMA61AEKT6N97SJBW4B01C=ruleset-filters h_01HBQMA61A17Y4928D2ZDGAEXV=events h_01HBQMA61BK8NZF79KDPK0JBX6=inapp-events h_01HBQMA61B4FGBE11W6BW2Z9AH=revenue::3358edf4 h_01HBQMA61BX9XQKBX3MAGYXC2Y=geo h_01HBQMA61B9DRMSNKJM3B0WBE1=owned-media h_01HBQMA61BC1G2VZSJEJF90T7Q=device h_01HBQMA61BF2N8FN6TJ3JD6YXC=attribution h_01HBQMA61CKVMYYS8GG6CP72WD=user-attributes h_01HBQMA61C7K8R4AR13D4WHTHX=combine-rulesets create-and-manage-partner-connections=%ED%8C%8C%ED%8A%B8%EB%84%88-%EC%97%B0%EA%B2%B0-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EA%B4%80%EB%A6%AC h_01HBQMA61C6WS72DQ8FXVR0KVW=%ED%8C%8C%ED%8A%B8%EB%84%88-%EC%97%B0%EA%B2%B0-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EA%B4%80%EB%A6%AC h_01HBQMA61CRDF41WBYCDQ91M3R=create-a-new-connection h_01HBQMA61CXZYEW2R12KS99X2N=manage-connections dashboard-and-metrics=%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%EB%B0%8F-%EC%A7%80%ED%91%9C h_01HBQMA61C6WPFFR1F8P0HE4KA=%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%EB%B0%8F-%EC%A7%80%ED%91%9C h_01HBQMA61CMPNC9TYAW82ED18Q=audiences-dashboard h_01HBQMA61CWHR9GDANKT7P6Z27=campaign-metrics metrics-hash=%EC%A7%80%ED%91%9C-%ED%95%B4%EC%8B%9C h_01HBQMA61CMF3WZFPXKY89076K=%EC%A7%80%ED%91%9C-%ED%95%B4%EC%8B%9C campaign-metrics-basics=%EC%BA%A0%ED%8E%98%EC%9D%B8-%EC%A7%80%ED%91%9C-%EA%B8%B0%EB%B3%B8 h_01HBQMA61C4D5HFCDY83HNF5K7=%EC%BA%A0%ED%8E%98%EC%9D%B8-%EC%A7%80%ED%91%9C-%EA%B8%B0%EB%B3%B8 summary-view=%EA%B0%9C%EC%9A%94-%EB%B7%B0 h_01HBQMA61DW9Z84G8CH1RNY2RF=%EA%B0%9C%EC%9A%94-%EB%B7%B0 h_01K3R8C7GK77FNVZ3N0C3XZGYG=%EA%B0%9C%EC%9A%94-%EB%B7%B0 detailed-view=%EC%83%81%EC%84%B8-%EB%B3%B4%EA%B8%B0 h_01HBQMA61D3VHDKD103EMN61YH=%EC%83%81%EC%84%B8-%EB%B3%B4%EA%B8%B0 data-sources-and-availability=%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%8C%EC%8A%A4-%EB%B0%8F-%EA%B0%80%EC%9A%A9%EC%84%B1 h_01HBQMA61DB595QKRTPE97F94E=%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%86%8C%EC%8A%A4-%EB%B0%8F-%EA%B0%80%EC%9A%A9%EC%84%B1 h_01HBQMA61DCV0M97GMXRA1A30F=partner-data-availability h_01HBQMA61DXNR275AT9SK0G32S=appsflyer-data-availability h_01HBQMA61DH9P5B1H5GYXQ9CCN=why-dont-i-see-campaign-metrics-data-for-campaigns-run-with-supported-partners traits-and-limitations=%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%A0%9C%EC%95%BD-%EC%82%AC%ED%95%AD h_01HBQMA61DT46P43FNSRC1KGAX=%ED%8A%B9%EC%A7%95-%EB%B0%8F-%EC%A0%9C%EC%95%BD-%EC%82%AC%ED%95%AD h_01HBQMA61DYHF0REXYKDQBDXP5=traits h_01HBQMA61D28F5RG2WXT801XXZ=limitations" />

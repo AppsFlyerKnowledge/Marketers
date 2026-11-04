@@ -23,6 +23,8 @@ x-zendesk:
 
 측정 대시보드를 사용하여 캠페인 성과를 보고 분석합니다. 성과 KPI, 시간에 따른 추세, 노출 수 및 클릭 수, 수익 및 기타 지표가 포함되어 있습니다.
 
+<div id="the-measurement-dashboard" />
+
 ## 측정 대시보드
 
 [![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
@@ -83,6 +85,8 @@ x-zendesk:
 
 <Accordion title="E - 차트 보기">
 
+<div id="performance-comparison-charts" />
+
 ### **성능 비교 차트**
 
 [![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
@@ -90,6 +94,8 @@ x-zendesk:
 **표시 설정**
 
 기준 및 지표
+
+<div id="trend-over-time-comparison" />
 
 ### **시간에 따른 추세 비교**
 

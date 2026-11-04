@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **요약:** 삼성 커넥티드 TV (CTV) 앱을 앱스플라이어와 통합하여 삼성 캠페인의 어트리뷰션 및 이벤트 데이터를 수신할 수 있습니다.
 
+<div id="about-samsung-ctv-attribution" />
+
 ## 삼성 CTV 어트리뷰션에 대하여
 
 스트리밍용 삼성 Tizen OS는 모든 삼성 TV에서 실행됩니다.
@@ -35,9 +37,13 @@ x-zendesk:
 * 삼성 스마트 TV.
 * CTV에서 CTV로의 어트리뷰션 및 이벤트 레코딩. 사용자의 삼성 디바이스에서의 의미, 어트리뷰션 및 기록.
 
+<div id="samsung-attribution-flow" />
+
 ### 삼성 어트리뷰션 플로우
 
 ![CTV_attribution_flow_-_Samsung__1_.png](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## 통합 절차
 

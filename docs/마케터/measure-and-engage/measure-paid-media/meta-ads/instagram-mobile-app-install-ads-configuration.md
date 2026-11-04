@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
+<div id="setting-up-instagram" />
+
 ## Instagram 설정
 
 Instagram 설정은 앱스플라이어 활성 연동 섹션의 Meta 광고 아래에 나열되어 있습니다.
@@ -44,6 +46,8 @@ Meta 문서는 <Anchor target="_blank" href="https://developers.facebook.com/doc
 3. Facebook 앱 ID를 추가하여 활성 연동 구성에서 Meta 광고를 설정하세요.
 4. Facebook 앱 ID가 없는 경우 <Anchor target="_blank" href="https://developers.facebook.com/apps">여기</Anchor>에서 만드세요.  
    [![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://files.readme.io/4141ee358e80c69521e134fb686e7d0b872c1f4def1033db511d5a9e206dab61-360002280605.png)
+
+<div id="instagram-landing-page-for-deep-linking" />
 
 ## 딥링크를 위한 Instagram 랜딩페이지
 

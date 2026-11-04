@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="시작하기 - 마케터를 위한 온보딩" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## 소개
 
 본 문서는 마케터(앱 소유자) 및 프로덕트 매니저가 **앱스플라이어 온보딩을 계획하고 실행하는 데 도움을 주기 위해 작성되었습니다**. 각 항목별로 담당자 및 예상 구축 시간이 제공됩니다.
 
 본 문서에 기재된 예상 소요 시간은 일반적인 가이드라인입니다. 해당 수치는 다수의 신규 고객사와 협업한 경험을 바탕으로 산정되었으나, 각 앱 소유자와 앱, 그리고 구축 환경에 따라 차이가 있을 수 있음을 인지하고 있습니다. 실제 요구되는 시간은 다를 수 있습니다.
+
+<div id="account-setup" />
 
 ## 계정 설정
 
@@ -44,9 +48,13 @@ x-zendesk:
 
 **결과:** 안녕하세요! 이제 활성화된 앱스플라이어 계정과 해당 계정에 액세스할 수 있는 계정 사용자가 준비되었습니다.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 앱스플라이어를 처음 접하시며, 본 솔루션이 비즈니스에 어떠한 가치를 제공할 수 있을지 궁금하신가요? <Anchor target="_blank" href="/marketers/ko/docs/welcome-to-appsflyer#앱스플라이어로-무엇을-할-수-있을까요">이 6분짜리 비디오를 시청하세요</Anchor>.
+
+<div id="app-onboarding" />
 
 ## 앱 온보딩
 
@@ -58,6 +66,8 @@ x-zendesk:
 
 1. 메뉴 바에서 사용자 메뉴(이메일 주소 드롭다운)를 클릭하세요.
 2. 앱 온보딩을 선택하세요.
+
+<div id="step-1-app-setup" />
 
 ## 1단계: 앱 설정
 
@@ -71,6 +81,8 @@ x-zendesk:
 | [선택 사항] 기존 사용자 디바이스를 앱스플라이어로 마이그레이션하세요. | 2시간 | 앱이 이미 대규모 사용자 기반을 확보하고 있는 경우, 중복 과금을 방지하기 위해 해당 사용자를 <Anchor target="_blank" href="/marketers/ko/docs/migration-to-appsflyer-from-other-vendors#device-migration%E2%80%94optional">앱스플라이어로 마이그레이션하는 것</Anchor>을 고려해 보시기 바랍니다.<br /><br />**참고:** 앱스플라이어 CSM 또는 [hello@appsflyer.com](mailto:hello@appsflyer.com)) 지원팀의 도움을 받을 수 있습니다. |
 
 **결과:** 이제 앱스플라이어 대시보드에 귀사의 앱 등록이 완료됩니다.
+
+<div id="step-2-sdk--api-integration" />
 
 ## 2단계: SDK / API 연동
 
@@ -88,6 +100,8 @@ x-zendesk:
 
 **결과:** 이제 추가적인 개발 리소스 투입 없이도 앱에서 설치 어트리뷰션 분석, 인앱 이벤트 측정 및 기타 앱스플라이어 기능들을 바로 활용하실 수 있습니다.
 
+<div id="step-3-attribution-setup" />
+
 ## 3단계: 귀속 설정
 
 [1단계에서 앱스플라이어에 등록한 모든 앱에 대해 다음 단계를 완료하세요. 앱 설정](/docs/getting-started-onboarding-for-marketers#1단계-앱-설정):
@@ -101,6 +115,8 @@ x-zendesk:
 | [선택 사항] 리타게팅 캠페인 활성화 | 제품 관리자 | 2분 | <Anchor target="_blank" href="/marketers/ko/docs/app-settings#reengagement-attribution">앱 설정 페이지에서 리타케팅을 활성화하세요</Anchor>.<br /><br />자세히 알아보기: <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">리타겟팅 가이드</Anchor> |
 
 **결과:** 신규 또는 재참여 사용자가 유입될 때마다 귀사의 앱으로 트래픽을 가져오는 모든 미디어 소스의 어트리뷰션이 측정됩니다.
+
+<div id="step-4-additional-setup" />
 
 ## 4단계: 추가 설정
 
@@ -120,6 +136,8 @@ x-zendesk:
 | 채널, 플랫폼 및 기기 전반의 고객 여정에 대한 통합 뷰 제공 | 제품 관리자/  <br />개발자 | <Anchor target="_blank" href="/marketers/ko/docs/people-based-attribution-pba-overview">사람 기반 어트리뷰션(PBA)</Anchor> |
 | 개인정보 규정 준수 보장: GDPR, CCPA, 등. | 제품 관리자/  <br />개발자 | 사용자가 어트리뷰선을 <Anchor target="_blank" href="/marketers/ko/docs/apply-privacy-preserving-sdk-methods">옵트아웃</Anchor>할 수 있도록 설정. |
 
+<div id="enrich-your-knowledge" />
+
 ## 지식 넓히기
 
 모든 앱스플라이어 사용자에게 권장:
@@ -132,11 +150,17 @@ x-zendesk:
 | <Anchor target="_blank" href="/marketers/ko/docs/aggregated-and-analytics-reporting-overview">종합 리포트 도구와 애널리틱스</Anchor> 자세히 알아보기 | 30분 |
 | <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">로우 데이터 리포</Anchor> 자세히 알아보기 | 30분 |
 
+<div id="related" />
+
 ## 관련
+
+<div id="tip-1" />
 
 > 👍 **팁**
 >
 > UA(사용자 유입)가 처음이십니까? 신규 UA(사용자 유입) 전략 수립, 실행 및 지속적인 최적화 과정에서 직면하는 핵심 과제와 필수 요소에 대한 <Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">모든</Anchor> 내용을 확인해 보세요.
+
+<div id="note" />
 
 > 📘 **참고**
 >

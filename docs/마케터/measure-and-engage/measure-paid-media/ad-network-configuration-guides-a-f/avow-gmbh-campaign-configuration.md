@@ -25,6 +25,8 @@ x-zendesk:
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
+<div id="activate-partner" />
+
 ## 파트너 활성화
 
 **전제 조건:** **연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.**
@@ -39,9 +41,13 @@ x-zendesk:
    **참고:** 토글은 파트너와 함께 작업하는 동안 켜져 있어야<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">(활성화되어야)</Anchor> 합니다.
 5. 아래 설명된 대로 관련 탭을 사용하여 설정을 완료하십시오.
 
+<div id="setting-up-avow-gmbh" />
+
 ## Avow GmbH 설립
 
 Avow GmbH와의 통합은 클릭-쓰루 및 뷰-쓰루 어트리뷰션을 지원합니다. 구성 창에는 다음과 같은 탭이 포함되어 있습니다: 연동, 어트리뷰션 링크, 비용, 광고 수익, 권한. Avow GmbH의 경우 사용 가능한 탭은 통합, 저작자 표시 링크 및 권한입니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -54,9 +60,13 @@ Avow GmbH와의 통합은 클릭-쓰루 및 뷰-쓰루 어트리뷰션을 지원
 
 **연동** 탭에는 아래 설명된 여러 섹션이 포함되어 있습니다.
 
+<div id="activate-partner-1" />
+
 #### 파트너 활성화
 
 연동을 구성하려면 먼저 **파트너 활성화** 토글을 <Anchor target="_blank" href="/marketers/ko/docs/amazon-ads-campaign-configuration#파트너-활성화">켜야</Anchor> 합니다. <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">파트너 연동 활성화 및 비활성화</Anchor>에 대해 자세히 알아보세요.
+
+<div id="advanced-privacy" />
 
 #### 프라이버시 강화 모드
 
@@ -68,25 +78,35 @@ iOS 앱만 해당: 포스트백 및 리포트를 통해 파트너와 공유되�
 | 포스트백은 <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks">고급 개인정보 보호 템플릿</Anchor>에 따라 전송됩니다. |  |
 | <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집약된 익명 데이터</Anchor>는 파트너와 공유되므로 사용자 수준 데이터(디바이스 ID)가 공유되지 않습니다. |  |
 
+<div id="general-settings" />
+
 #### 일반 설정
 
 **토큰**
 
 AVOW Specialist(AM/BDM)에서 제공하는 확인 토큰을 추가합니다.
 
+<div id="install-attribution" />
+
 #### 인스톨 어트리뷰션
 
 Avow GmbH의 뷰-쓰루 인스톨을 어트리뷰션하려면 인스톨 뷰-쓰루 어트리뷰션을 켭니다. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
+<div id="default-postbacks" />
+
 #### 기본 포스트백
 
 인스톨 및 인스톨 거부에 대한 포스트백은 이 파트너에게만 전송됩니다.
+
+<div id="in-app-event-settings" />
 
 #### 인앱 이벤트 설정
 
 **토큰**
 
 AVOW Specialist(AM/BDM)에서 제공하는 확인 토큰을 추가합니다.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -109,6 +129,8 @@ AVOW Specialist(AM/BDM)에서 제공하는 확인 토큰을 추가합니다.
    1. 왼쪽 상단 모서리에서 파트너 이름 아래에 있는 앱 이름을 클릭하여 앱 목록을 엽니다.
    2. 드롭다운 목록에서 다른 앱을 선택합니다.
    3. 선택한 앱에 대해 <Anchor target="_blank" href="/marketers/ko/docs/amazon-ads-campaign-configuration#integration-tab">연동 단계</Anchor>를 반복합니다.
+
+<div id="note-1" />
 
 > 📘 **참고사항**
 >
@@ -145,6 +167,8 @@ Avow GmbH의 경우 광고 수익을 사용할 수 없습니다.
 <Accordion title="권한 탭">
 
 데이터에 액세스하고 다양한 작업을 수행할 수 있도록 Avow GmbH에 부여할 권한을 선택합니다.
+
+<div id="note-2" />
 
 > 📘 **참고사항**
 >

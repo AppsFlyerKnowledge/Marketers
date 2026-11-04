@@ -24,12 +24,18 @@ x-zendesk:
 
 계정에서 특정 이벤트 발생 시 알림을 수신하도록 설정할 수 있습니다. **알림 설정**에서 알림을 수신할지 여부를 선택할 수 있습니다.
 
+<div id="accessing-and-configuring-notification-preferences" />
+
 ## 알림 기본 설정에 접근하고 설정하기
+
+<div id="to-access-notifications" />
 
 ### 알림 액세스 방법:
 
 * 화면 상단 표시줄에서 계정(이메일 주소) 아래 드롭다운 메뉴를 펼치고 **알림**을 클릭합니다.
 * 플랫폼 내의 벨 아이콘에서 > **설정 아이콘**으로 이동합니다.
+
+<div id="configuring-notifications" />
 
 ### 알림 설정
 
@@ -38,6 +44,8 @@ x-zendesk:
 알림 수신을 중지하려면 알림을 끄십시오.
 
 참고: 일부 알림은 이메일을 통해서만 제공됩니다. 이메일 전용 알림 탭에는 이러한 [알림](/docs/notifications#이메일-전용-알림) 설정이 포함되어 있습니다.
+
+<div id="what-notifications-can-i-receive" />
 
 ## 어떤 알림을 받을 수 있나요?
 
@@ -57,6 +65,8 @@ x-zendesk:
   * 예를 들어, 귀사가 앱스플라이어 Push API 기능을 구독하지 않은 경우, 이 기능과 관련된 스위치는 표시되지 않습니다.
 * **사용자 권한에 따라 사용할 수 있습니다.** 알림이 특정 기능 관련되어 있고, 해당 기능에 대한 접근 권한이 부여되지 않은 경우, 알림을 활성화하는 스위치가 표시되지 않습니다.
   * 예를 들어 연동 파트너 추가/편집 권한이 없는 경우 연동 파트너 구성과 관련된 알림을 켜고 끄는 스위치가 활성화되지 않습니다.
+
+<div id="when-will-i-receive-notifications" />
 
 ## 알림은 언제 받을 수 있나요?
 
@@ -84,6 +94,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="where-will-i-receive-notifications" />
+
 ## 알림은 어디서 받을 수 있나요?
 
 알림은 [벨](/docs/notifications#bell-notification) 아이콘, [이메일](/docs/notifications#email-notification), 또는 [슬랙](/docs/notifications#slack-notification) 연동을 통해 받을 수 있습니다. 
@@ -106,9 +118,13 @@ x-zendesk:
 
 일부 알림은 이메일을 통해서만 제공됩니다. 이 알림 설정은 **이메일 전용 알림** 탭에서 찾을 수 있습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 모든 앱스플라이어 알림 이메일은 [notifications@appsflyer.com](mailto:notifications@appsflyer.com)에서 발송됩니다.
+
+<div id="email-only-notifications" />
 
 #### 이메일 전용 알림
 

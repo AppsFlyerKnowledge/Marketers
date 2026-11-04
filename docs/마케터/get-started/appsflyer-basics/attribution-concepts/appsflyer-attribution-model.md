@@ -37,6 +37,8 @@ x-zendesk:
 
  [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
+<div id="what-is-attribution" />
+
 ## 어트리뷰션이란 무엇인가요?
 
 **어트리뷰션**은 사용자가 앱을 인스톨하거나 리인게이지먼트, 리어트리뷰션과 같은 인앱 활동을 수행하도록 동기를 부여한 요인을 판단하는 행위입니다. 어트리뷰션 결과는 다음 중 하나입니다.
@@ -49,6 +51,8 @@ x-zendesk:
 > 👍 **팁**
 >
 > 어트리뷰션에 대해 더 알고 싶으신가요? <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7766/play/18609/attribution-101-part-1">앱스플라이어 학습 포털에서 짧지만 유익한 강의 코스</Anchor>를 확인해 보세요.
+
+<div id="what-is-an-app-install" />
 
 ## 앱 인스톨이란 무엇인가요?
 
@@ -65,11 +69,15 @@ x-zendesk:
   * **리인게이지먼트**
   * **리어트리뷰션**
 
+<div id="attribution-methods" />
+
 ## 어트리뷰션 메서드
 
 앱스플라이어는 다음 표에 나열된 여러 가지 어트리뷰션 메서드를 사용합니다.
 
 <table><thead><tr><th>메서드</th><th>디바이스 ID 사용</th><th>기술</th><th>어트리뷰션 주체</th><th><p>안드로이드 (구글 플레이 및 써드 파티 스토어)</p></th><th>iOS </th><th>유니버설 윈도우 플랫폼(UWP)</th><th>CTV, PC, 콘솔 플랫폼(3)</th></tr></thead><tbody><tr><td> <a href="#install-referrer-android-only">리퍼러</a> (1)</td><td>아니오</td><td>결정론적</td><td>앱스플라이어</td><td>예 (2)</td><td>아니오</td><td>예</td><td>아니오</td></tr><tr><td> <a href="#device-id-matching">디바이스 ID 매칭</a> (1)</td><td>예</td><td>결정론적</td><td>앱스플라이어</td><td>예 </td><td>예</td><td>예</td><td>예</td></tr><tr><td> <a href="#probabilistic-modeling">확률적 모델링</a> (1)</td><td>아니오</td><td>확률론적</td><td>앱스플라이어</td><td>예 </td><td>예 </td><td>아니오</td><td>예</td></tr><tr><td> <a href="#aggregated-advanced-privacy-aap">데이터 집약형 프라이버시 강화(AAP)</a> (1)</td><td>아니오</td><td>집합</td><td>앱스플라이어</td><td>아니오</td><td>예</td><td>아니오</td><td>아니오</td></tr><tr><td> <a href="#preload-campaigns">프리로드</a> (1)</td><td>아니오</td><td>결정론적</td><td>앱스플라이어</td><td>예</td><td>아니오</td><td>예</td><td>아니오</td></tr><tr><td> <a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork</a>(SKAN)</td><td>아니오</td><td>결정론적</td><td>Apple</td><td>아니오</td><td>예</td><td>아니오</td><td>아니오</td></tr><tr><td> <a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a> (1)</td><td>아니오</td><td>결정론적</td><td>Apple</td><td>아니오</td><td>예</td><td>아니오</td><td>아니오</td></tr><tr><td> <a href="./appsflyer-attribution-model#deep-link">딥 링크</a> (1)</td><td>아니오</td><td>결정론적</td><td>앱스플라이어</td><td>예</td><td>예</td><td>예</td><td>아니오</td></tr><tr><td colspan="7"><p>(1) 앱스플라이어 대시보드 및 보고서에서 "클래식" 어트리뷰션 메서드로도 알려져 있음</p><p>(2) 일부 써드 파티 스토어에서 지원함</p><p>(3) <a href="./ctv-pc-and-console-platform-attribution-concepts#지원되는-플랫폼" target="_blank">CTV, PC 및 콘솔<span> 플랫폼</span>의 전체 목록</a>을 참조하세요</p></td><td> </td></tr></tbody></table>
+
+<div id="attribution-method-priorities-attribution-waterfall" />
 
 ### 어트리뷰션 메서드 우선순위(어트리뷰션 워터폴)
 
@@ -198,6 +206,8 @@ AAP는 Apple의 SKAdNetwork 개인정보 보호 수준을 개인정보 보호 �
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### 미디어 소스 및 앱스플라이어 기능별 어트리뷰션 메서드
 
 지원되는 특정 어트리뷰션 메서드에 대한 전체 설명은 다음 섹션을 참조하세요.
@@ -221,6 +231,8 @@ AAP는 Apple의 SKAdNetwork 개인정보 보호 수준을 개인정보 보호 �
 <table><thead><tr><th rowspan="2">미디어 소스</th><th colspan="3">어트리뷰션 메서드</th></tr><tr><th>안드로이드</th><th>iOS</th><th><strong>CTV, PC 및 콘솔 플랫폼</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRNs</a></td><td>디바이스 ID 매칭</td><td><ul><li>디바이스 ID 매칭</li><li>AAP(iOS 14.5+)</li><li>SKAdNetwork(iOS 14+)</li></ul></td><td>디바이스 ID 매칭</td></tr><tr><td><ul><li> <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">파트너용 어트리뷰션 링크</a>를 통한 애드 네트워크(비 SRN) </li><li><span>CTV, PC 및 콘솔 플랫폼</span></li></ul></td><td><ul><li>인스톨 리퍼러</li><li>디바이스 ID 매칭</li><li>확률적 모델링</li></ul></td><td><ul><li>디바이스 ID 매칭</li><li>확률적 모델링(iOS 14.5 이전)</li><li>AAP(iOS 14.5+)</li><li>SKAdNetwork(iOS 14+)</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">디바이스에 사전 설치됨</a></td><td>사전 인스톨</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## 유저 인게이지먼트 어트리뷰션 유형
 
@@ -268,6 +280,8 @@ AAP는 Apple의 SKAdNetwork 개인정보 보호 수준을 개인정보 보호 �
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## 고급 어트리뷰션 주제
 
 <div id="in-app-events" />
@@ -308,6 +322,8 @@ AAP는 Apple의 SKAdNetwork 개인정보 보호 수준을 개인정보 보호 �
 디바이스 테스트 및 멀티 인스톨을 위해 앱스플라이어에 디바이스를 <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">등록</Anchor>하세요. 디바이스를 등록하지 않으면, 첫 번째 인스톨만 기록됩니다.
 
 앱스플라이어는 광고주 ID 없이도 iOS 재설치를 더 정확하게 어트리뷰션할 수 있도록 지원합니다. <Anchor target="_blank" href="/marketers/ko/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">앱 설정 페이지</Anchor>에서 이 기능을 활성화할 수 있습니다.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### iCloud에 백업된 iOS 앱 재설치
 

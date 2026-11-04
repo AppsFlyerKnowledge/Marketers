@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 공동 작업자 데이터 세트 간의 일치율을 극대화하고 협업 결과를 최적화하다 하려면 소스 데이터를 준비하십시오.
 
+<div id="about-data-preparation" />
+
 ## 데이터 준비에 관하여
 
 앱스플라이어 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-guide">데이터 협업 플랫폼(DCP)</Anchor> 은 여러 협업자로부터 대규모 거래 데이터, 사용자 수준 데이터 또는 이 둘의 조합을 수집하고 처리하도록 설계되었습니다. 일단 데이터가 수집되면 DCP는 공유 식별자(예: 해시 처리된 이메일 또는 해시 처리된 전화번호)를 사용하여 데이터 세트 간 사용자를 일치시키고 해당 데이터를 기반으로 협업 워크플로를 활성화할 수 있습니다.
@@ -32,6 +34,8 @@ x-zendesk:
 * 어떤 데이터 구조가 권장되고 어떤 데이터 구조는 권장되지 않는가?
 * CSV 파일을 사용할 때 다중 값 식별자를 처리하는 방법
 
+<div id="understand-data-types" />
+
 ## 데이터 유형을 이해하세요
 
 협업에 사용되는 대부분의 소스는 다음 데이터 유형 중 하나 또는 둘 다를 포함합니다.
@@ -42,6 +46,8 @@ x-zendesk:
 * **거래(이벤트) 데이터**
   * 목표 사용자 활동(구매, 방문, 거래)을 나타냅니다.
   * **일반적인 구조:** 사용자당 여러 행이 표시됩니다 (사용자 한 명이 여러 거래를 할 수 있기 때문입니다).
+
+<div id="data-structuring-guidelines" />
 
 ## 데이터 구조화 지침
 
@@ -60,6 +66,8 @@ x-zendesk:
 4. 거래 데이터 세트(및 해당되는 경우 기타 데이터 유형)의 경우 **DCP 데이터 보기 도구를 사용하여** 협업에 최적화된 비즈니스 지향적이고 개인 정보 보호가 안전한 데이터 하위 집합을 생성하고 원시 테이블 대신 공유하세요. [데이터 뷰를 사용하는 것이 권장되는 이유](/docs/data-collaboration-platform-dcp-prepare-source-data-for-ingestion#appendix-c-why-dataviews-matter-and-recommended) .
 
 다른 구조를 사용할 수도 있지만, DCP를 최대한 활용하는 데에는 이상적이지 않을 수 있습니다. [권장하지 않는 데이터 구조를](#data-structures-that-arent-recommended) 참조하세요.
+
+<div id="recommended-identifier-structures" />
 
 #### 권장 식별자 구조
 
@@ -128,6 +136,8 @@ x-zendesk:
 
 <Accordion title="데이터 구조화를 위한 실용적인 체크리스트">
 
+<div id="identity-user-level-dataset-checklist" />
+
 #### 신원(사용자 수준) 데이터 세트 체크리스트
 
 * 한 행은 한 명의 사용자를 나타냅니다.
@@ -135,10 +145,14 @@ x-zendesk:
 * 여러 값이 존재하는 경우(예: 여러 이메일 주소) 가능한 한 네이티브 배열을 사용하십시오.
 * 셀에 목록을 넣지 마세요. 예를 들어 "email\_1/email\_2/email\_3"과 같은 형식을 사용하지 말고, 여러 행에 걸쳐 동일한 주소를 사용하는 구조도 피하세요.
 
+<div id="transactional-events-dataset-checklist" />
+
 #### 거래(이벤트) 데이터 세트 체크리스트
 
 * 이벤트/트랜잭션 행은 그대로 유지하세요. [거래 데이터 예시를](#appendix-a-transactional-data-examples) 참조하세요.
 * 필요에 따라 [데이터 뷰를](#appendix-c-why-dataviews-matter-and-recommended) 사용하다 공동 작업에 적합한 사용자 수준 요약을 생성하세요.
+
+<div id="data-views-checklist" />
 
 #### 데이터 보기 체크리스트
 
@@ -159,6 +173,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 * Google 클라우드 스토리지
 * BigQuery
 * Snowflake
+
+<div id="format-guidance" />
 
 #### 형식 안내
 
@@ -181,6 +197,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 
 특정 유형의 데이터 구조는 DCP로의 수집에 이상적으로 적합하지만, 그렇지 않은 유형도 있습니다. 다음은 **권장하지 않는** 데이터 구조 목록입니다.
 
+<div id="avoid-multiple-columns-for-the-same-identifier-type" />
+
 #### 피하다: 동일한 식별자 유형에 대한 여러 열
 
 "기본/보조/제3 이메일"과 같은 예시는 사용하지 않는 것이 좋습니다.
@@ -197,6 +215,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 * 사용자별 값의 개수는 예측할 수 없습니다.
 * 컬럼이 과도하게 늘어나고 스키마 유지 관리 문제가 발생합니다.
 
+<div id="avoid-lists-inside-a-single-cell-free-text" />
+
 #### 피하다: "단일 셀 내의 목록"(자유 텍스트)
 
 편리해 보일지라도 오류 발생 가능성이 높습니다.
@@ -212,6 +232,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 * 진정한 배열 유형이 아닙니다.
 * 서식/이스케이프 오류는 흔히 발생합니다.
 * 사소한 불일치가 섭취를 방해할 수 있습니다.
+
+<div id="avoid-multiple-rows-per-user-for-identifiers-when-your-goal-is-a-user-identity-table" />
 
 #### 피하다: 사용자 식별자를 위한 여러 행이 사용자별로 필요합니다(사용자 ID 표 만들려 목표 경우).
 
@@ -235,6 +257,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -263,6 +287,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 
 <Accordion title="커넥터별 예제 자산(AWS S3, GCS, BigQuery, Snowflake)">
 
+<div id="what-does-arraylist-of-identifiers-mean" />
+
 ### “식별자 배열/목록”이란 무엇을 의미합니까?
 
 경우에 따라 한 사용자가 여러 개의 이메일 나 전화번호를 가질 수 있습니다(예: 개인 이메일과 작업하다 이메일). 이러한 값들을 별도의 열이나 복잡한 텍스트 필드에 억지로 넣는 대신, 값들의 목록으로 표현합니다.
@@ -271,6 +297,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 | --- | --- |
 | u\_0001 | [a1b2 · c3d4 · e5f6] |
 | u\_0002 | [z9y8 · x7w6] |
+
+<div id="1-aws-s3-and-gcs-connector-parquet" />
 
 ### 1. AWS S3 및 GCS 커넥터(Parquet)
 
@@ -285,6 +313,8 @@ DCP는 다음과 같은 여러 클라우드 서비스를 통한 데이터 수집
 
 Parquet은 목록을 기본적으로 지원하므로 사용자가 여러 개의 이메일 주소나 전화번호를 사용하는 경우에 권장됩니다.
 
+<div id="2-bigquery-connector-table-preview-and-schema-screenshot" />
+
 ### 2. BigQuery 커넥터(표 미리보기 및 스키마 스크린샷)
 
 **예시 ID 스키마 (BigQuery)**
@@ -297,6 +327,8 @@ Parquet은 목록을 기본적으로 지원하므로 사용자가 여러 개의 
 | 하녀 | 문자열 | 널 가능 |
 
 BigQuery에서는 배열이 기본 기능입니다(반복 필드). 여러 개의 이메일 주소나 전화번호가 있는 경우 권장되는 접근 방식입니다.
+
+<div id="3-snowflake-connector-table-preview-and-schema-screenshot" />
 
 ### 3. Snowflake 커넥터(표 미리보기 및 스키마 스크린샷)
 
@@ -319,10 +351,14 @@ Snowflake는 리스트와 유사한 필드(배열)를 지원합니다. 이는 em
 
 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-customized-data-views">데이터 뷰는</Anchor> 기존 데이터 소스의 사용자 지정 하위 집합으로, 원본 데이터 세트를 변경하지 않고 생성할 수 있습니다. 이 기능들을 사용하면 데이터를 수정, 정제 및 요약하여 협업에서 관련성 있는 데이터만 공유할 수 있으므로 공유하는 데이터는 명확하고 핵심에 집중된 상태로 유지하고 나머지 데이터는 비공개로 안전하게 보호할 수 있습니다. 협업에서 데이터 뷰를 사용하다 이유는 다음과 같습니다.
 
+<div id="are-business-oriented-and-easier-to-collaborate-with" />
+
 #### 비즈니스 지향적이며 협업이 더 용이합니다.
 
 * 데이터 뷰를 사용하면 원시 로그나 복잡한 거래 스키마 대신 깔끔하고 비즈니스 친화적인 구조(예: "고객 ID 뷰", "대상 고객 뷰", "구매 요약 뷰")로 데이터를 표시할 수 있습니다.
 * 이러한 표준화된 정의(예: "활성 고객", "지난 30일간 총 지출 ")를 통해 양측이 일관된 논리를 사용하도록 돕다 .
+
+<div id="are-more-privacy-safe-by-design" />
 
 #### 설계상 개인정보 보호에 더욱 안전합니다.
 
@@ -332,6 +368,8 @@ Snowflake는 리스트와 유사한 필드(배열)를 지원합니다. 이는 em
   * 세부 정보 수준을 제한하세요(예: 개별 거래 내역 대신 집계된 지표를 공유하세요).
   * 매칭에 필요한 식별자만 공유하고, 추가적인 민감한 열은 공유하지 마세요.
 
+<div id="protect-sensitive-business-data" />
+
 #### 중요한 비즈니스 데이터를 보호하세요
 
 * 가공되지 않은 거래 테이블에는 매우 민감한 비즈니스 신호(예: 상세한 구매 행태, 가격 패턴, 가맹점 관계, 내부 ID)가 포함될 수 있습니다.
@@ -339,6 +377,8 @@ Snowflake는 리스트와 유사한 필드(배열)를 지원합니다. 이는 em
   * 예시: 품목별 세부 정보 대신 카테고리별 집계 정보를 공유합니다.
   * 예: 정확한 항목별 지출 대신 지출 구간별 비율 또는 요약 지표를 공유하세요.
 * 이는 경쟁사 정보나 자체 개발한 정보를 의도치 않게 공개할 위험을 줄여줍니다.
+
+<div id="can-make-your-data-more-cost-effective-and-performant" />
 
 #### 데이터를 더욱 비용 효율적이고 성능이 뛰어나게 만들 수 있습니다.
 

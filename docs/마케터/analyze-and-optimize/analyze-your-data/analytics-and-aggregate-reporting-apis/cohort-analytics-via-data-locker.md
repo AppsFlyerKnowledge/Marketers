@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **간단히 보기**: 데이터 락커의 코호트 분석에는 광고 계층 구조에 속한 모든 요소의 집약 데이터를 포함합니다. 보고서에는 지난 365일 동안 어트리뷰트된 사용자의 데이터가 포함됩니다. 이 보고서는 로데이터 또는 코호트 API를 구독하거나 둘 다 가진 광고주에게 제공됩니다. 즉, 이 리포트에는 데이터 락커 가입이 필요하지 않습니다.
 
+<div id="cohort-analytics-in-data-locker" />
+
 ## 데이터 락커에서 코호트 분석
 
 어떤 경우에는 미디어 소스 데이터 공유 정책이나 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">회사 개인정보 보호 정책으로 인해 앱스플라이어에서 어트리뷰션 로데이터가</Anchor> <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">제한</Anchor>될 수 있습니다. 이 제한에는 캠페인, 광고세트 등 모든 어트리뷰션 관련 필드가 포함됩니다. 코호트 보고서는 로데이터의 대안으로 사용할 수 있는 집약 데이터를 제공합니다.
@@ -72,6 +74,8 @@ x-zendesk:
 
 * **차원**: 문자열입니다. 문자열의 최대 길이는 동적으로, 대부분 광고 계층 구조의 요소를 어떻게 채우느냐에 따라 달라집니다.
 * **지표**: 숫자입니다. **참고:** selected\_currency 필드 형식은 문자열입니다.
+
+<div id="dimensions" />
 
 #### 디멘션
 
@@ -285,6 +289,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 측정 지표
 
 | 필드 이름 | 설명 | 형식 |
@@ -333,6 +339,8 @@ x-zendesk:
 
 다음은 BI 개발자가 데이터 락커를 통해 추출할 수 있는 코호트 데이터의 인기 있고 실용적인 애플리케이션의 예입니다. 각 예제를 SQL 문과 샘플 Excel 시각적 개체로 설명합니다.
 
+<div id="1-calculating-retention" />
+
 #### **1. 리텐션 계산**
 
 아래 예제에서는 다음을 수행합니다.
@@ -365,6 +373,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculating-arpu-of-multiple-in-app-events" />
 
 #### **2. 여러 인앱 이벤트의 ARPU 계산**
 
@@ -401,6 +411,8 @@ group by 1
 | 98765432 | 리인게이지먼트 | 3.57 | 1.34 | 4.86 |
 | 07315466 | 리어트리뷰션 | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. 특정 코호트일의 인앱 이벤트 전환율 계산**
 
 아래 예제에서는 다음을 수행합니다.
@@ -431,6 +443,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | 미국 | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | 영국 | 98765432 | null | 사이트\_654 | 70% |
 | 2022-10-31 | 한국 | 07315466 | null | null | 63% |
+
+<div id="4-calculating-daily-installs" />
 
 #### **4. 일일 인스톨 계산**
 
@@ -468,6 +482,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculating-revenue-from-facebook-ads" />
+
 #### **5. 페이스북 광고 수익 계산**
 
 아래 예제에서는 다음을 수행합니다.
@@ -501,6 +517,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. 최대 365일의 코호트 일 동안 ASA 키워드 ID당 ARPU 계산**
 
 아래 예제에서는 다음을 수행합니다.
@@ -531,6 +549,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculating-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. 지역별 어트리뷰션 시간에 따른 ARPU 7일 계산**
 
@@ -575,6 +595,8 @@ limit 20
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="traits-and-limitations" />
@@ -597,6 +619,8 @@ limit 20
 | 재설치 | <ul><li>재설치 후 이벤트가 속성이 없는 오가닉이라고 간주되는 경우:<ul><li>2024년 5월 26일부터 포함됩니다. <Anchor target="_blank" href="/marketers/ko/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">더 알아보기</Anchor></li><li>설치 시간은 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> 필드를 기반으로 합니다.</li><li>고유 사용자 및 유지 측정에 포함되지 않습니다.</li></ul></li><li>재설치 후 이벤트가 첫 설치에 속하는 경우 항상 포함됩니다. <Anchor target="_blank" href="/marketers/ko/docs/unique-users">더 알아보기</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

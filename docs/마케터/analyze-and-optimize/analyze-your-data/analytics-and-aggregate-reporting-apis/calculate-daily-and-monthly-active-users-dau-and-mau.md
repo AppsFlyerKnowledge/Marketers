@@ -21,21 +21,29 @@ x-zendesk:
 ---
 > **한눈에 보기:** 캠페인에 대한 중요한 인사이트를 얻기 위해 일일 및 월간 활성 사용자를 계산하는 방법을 알아보세요.
 
+<div id="overview" />
+
 ## 개요
 
 일일 활성 사용자(DAU) 및 월간 활성 사용자(MAU)는 앱 참여도와 전반적인 사용자 행동을 이해하는 데 있어 핵심 지표입니다. 이 데이터는 사용자의 충성도, 캠페인 성과 및 시간 경과에 따른 성장 추세를 포함하여 활성 사용자 기반을 이해하는 데 유용한 인사이트를 제공합니다.
 
 이 문서에서는 사용자 유입 및 리타겟팅 트래픽을 나타내는 두 개의 Data Locker 로데이터 테이블인 `sessions` 및 `sessions_retargeting`에 쿼리를 실행하여 DAU 및 MAU를 계산하는 방법을 설명합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 2025년 2월부터 앱스플라이어의 활동 대시보드는 통합(UA 및 리타겟팅) 데이터를 표시합니다. <Anchor target="_blank" href="/marketers/ko/docs/activity-metrics-in-my-dashboards#사양-및-제한-사항">승인된 알고리즘 조정</Anchor>으로 인해 로데이터와 대시보드 숫자 사이에 약간의 차이가 있을 수 있습니다.
+
+<div id="querying-for-active-unique-users" />
 
 ### 활성 고유 사용자 쿼리 실행
 
 고유 사용자 수를 계산하려면 `advertising_id`을 쿼리의 기본 식별자로 사용하세요. `advertising_id`를 사용할 수 없는 경우, `appsflyer_id`으로 대체하세요. 이 방법은 <Anchor target="_blank" href="/marketers/ko/docs/measure-reinstalls#attributed-to-the-first-install">첫 인스톨 모드</Anchor>로 구성된 앱에만 적용됩니다.
 
 이 모드를 사용하지 않는 앱의 경우 `count(distinct appsflyer_id)`을 적용하는 것이 좋습니다.
+
+<div id="calculate-daily-active-users-dau" />
 
 ## 일일 활성 사용자(DAU) 계산
 
@@ -123,6 +131,8 @@ FROM all_sessions;
 ```
 
 </Accordion>
+
+<div id="calculate-monthly-active-users-mau" />
 
 ## **월간 활성 유저 (MAU) 계산 방법**
 

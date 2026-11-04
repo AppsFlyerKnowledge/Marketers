@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 매체 소스와 캠페인에 귀속된 인앱 이벤트(로그인, 등록, 인앱 구매 등)를 앱 설치 후 기록합니다.
 
+<div id="why-record-in-app-events" />
+
 ## 인앱 이벤트를 기록해야 하는 이유
 
 인앱 이벤트는 앱 내에서 무슨 일이 일어나고 있는지 인사이트를 제공하며, 앱 사용자 가치와 **다양한 매체 소스에서 발생하는 트래픽의 품질**을 판단하는 데 이상적인 도구입니다. 인앱 이벤트를 기록하면 ROI (투자수익률)나 LTV (유저생애가치) 같은 KPI를 측정하는 데 도움이 됩니다.
 
 사용자가 등록, 튜토리얼 완료, 장바구니에 상품 추가, 구매 시 인앱 이벤트 데이터를 통해 해당 이벤트의 세부 정보를 기록할 수 있습니다. 모든 앱 설치 후 분석을 위해 인앱 이벤트 구현은 필수입니다.
+
+<div id="about-in-app-events" />
 
 ## 인앱 이벤트에 대하여
 
@@ -43,9 +47,13 @@ x-zendesk:
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 인앱 이벤트에 대해 더 알고 싶으신가요? 앱스플라이어 학습 포털에서 짧고 유익한 <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">코스를 확인해 보세요</Anchor>.
+
+<div id="predefined-and-custom-events" />
 
 ### 사전 정의된 사용자정의 이벤트
 
@@ -55,6 +63,8 @@ x-zendesk:
   * 사전 정의된 네이밍 방식을 활용하면 파트너사로의 이벤트 매핑을 매끄럽게 처리할 수 있습니다.
   * 앱스플라이어가 이벤트나 이벤트 파라미터의 이름을 변경하더라도 귀사의 구현은 이전 버전과 호환됩니다.
 * **커스텀:** 이는 귀사의 앱에서 발생하는 특정 사용자 시나리오에 대해 정의한 이벤트 이름과 파라미터입니다. 어떤 커스텀 이벤트 이름이나 파라미터 이름을 사용할 수 있지만, 커스텀 이벤트는 귀사의 개발자가 유지 보수해야 함을 명심하세요. [팁](/docs/in-app-events-overview#tips) 및 [제한 사항](/docs/in-app-events-overview#limitations)을 참조하세요.
+
+<div id="revenue-in-in-app-events" />
 
 ## 인앱 이벤트 수익
 
@@ -105,6 +115,8 @@ x-zendesk:
 * SDK 에 미리 정의된 상수가 없으므로`af_net_revenue` 해당 키를 사용하여 사용자 커스텀 매개변수로 전송해야 합니다.`af_net_revenue` .
 * 수익 <Anchor target="_blank" href="/marketers/ko/docs/my-dashboards#metrics">내 대시보드</Anchor> 의 순매출 지표( 수익, 순 ROI, 순ROAS, 순 ARPU 및 순총이익)를 뒷받침합니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-roi360-store-revenue">ROI360 앱 내 수익</Anchor> 사용하는 경우`af_net_revenue` 인앱 구매 및 구독 이벤트의 경우 자동으로 채워지므로 별도로 전송할 필요가 없습니다.`af_net_revenue` 해당 행사들을 위해서요. 수익 총 수익 에서 앱 스토어 수수료와 세금을 뺀 금액입니다.
@@ -131,7 +143,11 @@ x-zendesk:
 
 앱스플라이어는 <Anchor target="_blank" href="https://openexchangerates.org/">공개 환율</Anchor>을 사용하여 통화를 변환합니다. 환율은 매 시간 업데이트됩니다. 앱스플라이어는 통화 변환을 수행할 때마다 마지막 시간의 업데이트 환율을 사용합니다.
 
+<div id="currency-conversion" />
+
 #### 통화 전환
+
+<div id="h_01HDBZW9XERK3VN1GS8GHM911W" />
 
 > 📄 **예시**
 >
@@ -148,9 +164,13 @@ x-zendesk:
 >
 > 이 경우 앱스플라이어는 수익을 먼저 EUR에서 USD로 변환한 다음 GBP로 변환합니다. 환율이 €1 = $1.13이라고 가정해 보겠습니다. 그러면 €200는 $226.85가 됩니다. 다음으로 앱스플랄이어는 USD에서 GBP로 변환합니다. 환율이 $1 = £0.78이라고 가정해 보겠습니다. 그러면 $226.85는 £176.92가 됩니다.
 
+<div id="currency-display" />
+
 #### 통화 표시
 
 <Anchor target="_blank" href="/marketers/ko/docs/app-settings#localization-currency">통화는 앱 설정에서 설정됩니다</Anchor>. 앱 설정에서 설정한 통화가 대시보드에 표시되는 통화입니다. 인앱이벤트를 보내는 통화에 관계없이 대시보드의 수익은 항상 앱 설정에서 설정한 통화로 표시됩니다.
+
+<div id="h_01HDBZW9XEQNG1RDH7A8H002ZD" />
 
 > 📄 **예시**
 >
@@ -162,7 +182,7 @@ x-zendesk:
 > 2. 이벤트 B의 수익은 **171**이고 통화는 **EUR**입니다.
 > 3. 이벤트 C의 수익은 **171**이고 지정된 **통화는 없습니다**.
 >
-> #### 대시보드의 수익 데이터
+> #### <span id="revenue-data-in-the-dashboard"></span>대시보드의 수익 데이터
 >
 > 대시보드에 표시되는 수익은 인앱이벤트 통화에서 USD로 변환된 다음 앱 설정 통화로 변**환된 값**입니다.
 >
@@ -178,7 +198,7 @@ x-zendesk:
 >
 >
 >
-> #### 로우 데이터 리포트의 수익 데이터
+> #### <span id="revenue-data-in-raw-data-reports"></span>로우 데이터 리포트의 수익 데이터
 >
 > 앱 설정에서 통화를 **GBP**로 설정했지만 인앱이벤트를 다른 통화로 보내는 경우 로데이터 리포트에는 수익이 앱 설정 통화와 인앱이벤트 통화 모두로 표시됩니다.
 >
@@ -196,6 +216,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## 이벤트 발송
 
 앱스플라이어에 인앱 이벤트를 발송하는 방법은 여러 가지가 있습니다.
@@ -204,6 +226,8 @@ x-zendesk:
 * <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">**서버-투-서버 API:**</Anchor> 서버-투-서버 API를 사용하여 모바일 앱 외부에서 발생하는 이벤트를 앱스플라이어로 직접 발송합니다. 예를 들어, 웹과 모바일 인터페이스를 모두 사용하는 유저가 있는 경우 두 소스의 이벤트를 기록하여 앱스플라이어에서 동일한 유저로 연결할 수 있습니다. 인앱 이벤트일 수도 있고, 웹사이트 이벤트, 콜센터 이벤트 또는 귀사의 매장에서의 구매와 같은 다른 이벤트일 수도 있습니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/purchase-and-subscription-validation-overview">**영수증 검증**</Anchor>: 이는 결제 플랫폼(예: Apple, Google)이 인앱 구매가 보고된 대로 이루어졌는지 확인하는 보안 메커니즘입니다. 구매 유효성 검증은 사기성 수익 이벤트를 방지하는 주요 도구입니다. 이를 통해 실제 수익을 확인할 수 있으며, 미완료된 인앱 구매를 걸러냅니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-for-hybrid-apps">**하이브리드 앱:**</Anchor> 이러한 앱은 기본적 뷰와 HTML 콘텐츠를 결합하며 인앱 이벤트를 기록할 수 있습니다. 하지만 SDK는 네이티브 측에서만 이벤트를 발송할 수 있으므로 개발자는 모든 이벤트 데이터를 네이티브 코드로 전달해야 합니다.
+
+<div id="setting-up-in-app-events" />
 
 ## 인앱 이벤트 설정
 
@@ -225,6 +249,8 @@ x-zendesk:
 1. 기록하려는 시나리오에 가장 적합한 이벤트 이름을 선택하세요.
 2. 이벤트와 연관시킬 이벤트 파라미터를 선택하세요. 이벤트에 추가 정보를 제공하고 데이터를 풍부하게 할 파라미터를 선택하세요.
 3. 인앱 이벤트 생성기에서 완료된 파일을 다운로드하여 개발자와 공유하세요.
+
+<div id="h_01HDBZW9XFN2B8AC18VW99G8Z6" />
 
 > 📄 **예시**
 >
@@ -286,6 +312,8 @@ x-zendesk:
 
   로데이터 리포팅은 프리미엄 기능입니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 인앱 이벤트 파라미터 값은 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview#인앱-이벤트">로데이터 인앱 이벤트 리포트</Anchor>에서만 확인 가능합니다. 개요, 이벤트, 액티비티 대시보드 및 통합 데이터 리포트에서는 확인이 어렵습니다.
@@ -323,6 +351,8 @@ x-zendesk:
 * Meta Ads에는 이벤트 이름과 파라미터에 대한 일부 제한이 있습니다. 제한 사항에 대한 내용은 <Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/faq#limits">여기</Anchor>에서 읽어보세요.
 
 </Accordion>
+
+<div id="faq" />
 
 ## 자주 묻는 질문
 
@@ -370,6 +400,8 @@ x-zendesk:
 3. 다음에 성공적인 응답이 오면 저장된 이벤트가 다시 서버로 전송됩니다.
 4. 캐시에 여러 이벤트가 있을 경우, 이벤트는 순차적으로 서버로 전송됩니다.
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > SDK 캐시는 최대 40개의 이벤트를 저장할 수 있으므로, 오프라인 상태에서 발생하는 이벤트 중 처음 40개만 저장됩니다. 이후에 이어지는 모든 내용은 다음 성공적인 응답 전까지 무시됩니다.
@@ -386,6 +418,8 @@ x-zendesk:
 
 복합 인앱 이벤트를 구성하려면 `af_content`을(를) JSON 배열로 사용하세요. 배열의 각 객체에는 `id` 및 `quantity`이(가) 포함되어야 합니다. `af_content_list`은(는) 선택 사항이며 생략할 수 있습니다.
 
+<div id="h_01KSMX2ECGTDXQP3G9PZW1PFQD" />
+
 > 📄 **예시**
 >
 > ```json
@@ -396,6 +430,8 @@ x-zendesk:
 >   "af_content": "[{"id":"ID1","quantity":"1"},{"id":"ID2","quantity":"1"},{"id":"ID3","quantity":"2"}]"
 > }
 > ```
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -413,6 +449,8 @@ Meta로 복합 인앱 이벤트를 전송하는 방법에 대한 자세한 내�
 
 하나의 거래에 여러 항목을 추가할 수 있습니다. 이벤트 파라미터당 단일 값을 사용하는 대신, 쉼표로 구분하여 거래를 설명하는 항목의 배열을 사용할 수 있습니다. 형식은 JSON 문자열이어야 합니다.
 
+<div id="h_01HDBZW9XFB9TAT8W4CGNP1892" />
+
 > 📄 **예시**
 >
 > 같은 거래에서 스미스 씨는 미국 온라인 매장에서 동일한 셔츠 두 개, 신발 한 켤레, 모자 하나를 구매했습니다. 포스트백에서 여러 항목이 배열 형태로 전달되므로, 각 항목이 나열되는 순서는 반드시 동일해야 합니다.
@@ -423,7 +461,7 @@ Meta로 복합 인앱 이벤트를 전송하는 방법에 대한 자세한 내�
 >
 > 여러 항목이 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration">포스트백</Anchor>의 배열로 전송됩니다. 현재 Meta Ads와 X Ads는 배열 파라미터를 올바르게 구문 분석할 수 없습니다. 이 문제에 대처하기 위해, 앱스플라이어는 배열로 전송하는 대신 항목 수(af\_quantity)를 합산하여 알려줍니다. 예를 들어, Meta Ads는 **af\_quantity=4**를 받습니다.
 >
-> **<span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>참고 사항**
+> **<span id="notes"></span><span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>참고 사항**
 >
 > * 앱스플라이어 <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide#limitations">오디언스(Audiences)</Anchor>의 경우, 이벤트 속성값으로 배열은 허용되지 않으며 오직 숫자와 문자열 형태만 사용할 수 있습니다.
 > * 다음 인앱 이벤트와 함께 여러 항목을 사용할 수 있습니다:
@@ -445,6 +483,8 @@ Meta로 복합 인앱 이벤트를 전송하는 방법에 대한 자세한 내�
 * 이벤트 값
 * 앱 ID
 * 앱스플라이어 ID
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -474,6 +514,8 @@ Meta로 복합 인앱 이벤트를 전송하는 방법에 대한 자세한 내�
 * <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor>의 경우 2021년 7월 1일부터 iOS 앱에 대해 OS(운영 체제) 매개변수를 발송해야 합니다. 이 매개변수를 발송하지 않으면, 데이터는 iOS 14.5 사용자로부터 온 것으로 간주되어 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">로데이터 제공 방법</Anchor>에 영향을 미칩니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

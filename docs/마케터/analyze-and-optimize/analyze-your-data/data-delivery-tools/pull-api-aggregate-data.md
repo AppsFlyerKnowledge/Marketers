@@ -34,9 +34,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **Pull API 로데이터를 찾고 계신가요?**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/pull-api-raw-data">여기</Anchor>에서 자세히 알아보세요.
+
+<div id="pull-api-aggregate-data" />
 
 ## Pull API 집약형 데이터
 
@@ -46,6 +50,8 @@ x-zendesk:
 * Pull API의 추가 기능은 다음과 같습니다.
   * 어트리뷰션 터치 유형 추가
   * 시간대 선택
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### Pull API를 통해 사용 가능한 집약형 성과 리포트
 
@@ -103,6 +109,8 @@ x-zendesk:
 | 캠페인 이름 변경 | Pull API 리포트는 캠페인 이름 변경 기능을 지원하지 않습니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

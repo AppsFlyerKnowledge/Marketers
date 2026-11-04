@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Protect360 개요
 
 * 어트리뷰션 프로드에 대항하여 보호합니다. 이는 프로드를 탐지하고 프로드 어트리뷰션을 차단하는 동적인 툴로 구성됩니다.
@@ -117,6 +119,8 @@ x-zendesk:
 
 Protect360 사기 감지 및 결과
 
+<div id="using-protect360" />
+
 ## Protect360 사용
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Protect360을 사용하면 광고주들은 광고 네트워크가 사기 행위�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 특징 및 제약 사항
 
 <div id="traits-and-limitations::a07033c3" />
@@ -207,6 +213,8 @@ Protect360을 사용하면 광고주들은 광고 네트워크가 사기 행위�
 특징 및 제약 사항
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## FAQ 및 팁
 
@@ -252,9 +260,13 @@ Protect360을 사용하면 광고주들은 광고 네트워크가 사기 행위�
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 프로드 방지에 대해 더 알고 싶으신가요? <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">앱스플라이어 학습 포털에서 짧지만 유익한 강의 코스</Anchor>를 확인해 보세요.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

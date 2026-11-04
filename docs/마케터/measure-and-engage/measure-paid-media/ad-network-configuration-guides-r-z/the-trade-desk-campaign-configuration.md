@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 앱스플라이어 애드 네트워크 연동 파트너인 트레이드 데스크(The Trade Desk)는 향상된 모바일 광고 솔루션을 사용하여 크로스 디바이스 사용자의 요구를 충족하기 위해 전략적이고 확장 가능하며 스마트한 캠페인을 개발합니다. 트레이드 데스크는 클릭 기반 모바일 어트리뷰션, 뷰-쓰루 모바일 어트리뷰션 및 클릭 기반 리타게팅을 제공하며, 이 모든 것은 앱스플라이어를 통해 기록할 수 있습니다.
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## 트레이드 데스크(TTD) 설정
 
 다음 단계에 따라 앱스플라이어 캠페인 측정을 활성화하십시오.
@@ -93,6 +95,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > [1단계에서](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd) TTD에 의해 전환이 어트리뷰션되도록 선택한 경우 어트리뷰션 기간을 수정할 수 있습니다.
@@ -101,6 +105,8 @@ x-zendesk:
 > 2. **어트리뷰션 기간**까지 아래로 스크롤하고 오른쪽에 있는 편집 버튼을 클릭합니다.
 > 3. **어트리뷰션 기간 관리** 페이지에서 어트리뷰션 기간을 편집합니다.
 > 4. **저장**을 클릭합니다.
+
+<div id="integrating-ttd-with-appsflyer" />
 
 ## TTD와 앱스플라이어 연동하기
 
@@ -124,14 +130,20 @@ x-zendesk:
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 처음 방문 시에 **파트너 활성화** 토글을 켜서 연동을 설정해야 합니다. 토글은 TTD에서 작동하는 동안 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
 
+<div id="advanced-privacy" />
+
 #### 프라이버시 강화 모드
 
 iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">고급 개인 정보 보호 활성화</Anchor> 토글이 나타납니다. 이 기능을 켜면 파트너와의 사용자 식별자 공유가 제한됩니다.
+
+<div id="general-settings" />
 
 #### 일반 설정
 
@@ -145,6 +157,8 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 
 **뷰-쓰루 어트리뷰션 활성화**를 켜서 트레이드 데스크에서 뷰-쓰루 인스톨을 어트리뷰트합니다. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
+<div id="default-postbacks" />
+
 #### 기본 포스트백
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -154,9 +168,13 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 * **이 파트너만 해당**: 트레이드 데스크로 어트리뷰트된 사용자로부터 발생한 이벤트에만 적용됩니다.
 * **오가닉을 포함한 모든 미디어소스**: 트레이드 데스크에 리포트할 수 있는 전체 사용자 기반을 가지는 미디어소스를 의미합니다.
 
+<div id="note-1" />
+
 > 📘 **참고사항**
 >
 > 모든 인스톨 네트워크인 트레이드 데스크는 모든 소스에서 앱의 모든 신규 설치에 대한 포스트백을 수신하는 것을 선호하며, 모든 인스톨 포스트백을 트레이드 데스크로 전송하려면 **오가닉을 포함한 모든 미디어소스**를 선택할 것을 권장했습니다.
+
+<div id="in-app-events-settings" />
 
 #### 인앱 이벤트 설정
 
@@ -189,6 +207,8 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 
 UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 또는 단일 광고를 제공하기 위해 어트리뷰션 링크를 생성하고 저장한 후 TTD에 보냅니다. 단일 플랫폼 링크 또는 <Anchor target="_blank" href="/marketers/ko/docs/onelink-guide">원링크</Anchor>를 사용할 수 있습니다.
 
+<div id="attribution-link-parameters" />
+
 #### 어트리뷰션 링크 파라미터
 
 어트리뷰션 링크에 파라미터를 추가하면 철저한 드릴다운 분석이 가능합니다. 이미 정의된 어트리뷰션 링크 파라미터를 여기에서 새 값을 추가하여 편집할 수 있습니다. 어트리뷰션 링크를 저장할 때 이 탭에서 구성된 모든 파라미터가 저장됩니다.
@@ -196,6 +216,8 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 어트리뷰션 링크에 추가할 파라미터를 선택하세요.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### 기본 파라미터
 
@@ -209,6 +231,8 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 어트리뷰션 링크에 더 많은 파라미터를 추가할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">어트리뷰션</Anchor> 링크 설정과 어트리뷰션 링크 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">구조 및 파라미터</Anchor>에 대해 자세히 알아보십시오.
 
+<div id="parameters-for-measuring-ctv" />
+
 #### CTV 측정을 위한 파라미터
 
 앱스플라이어로 CTV 트래픽을 측정하려면 다음 파라미터와 값을 추가할 수 있습니다.
@@ -217,6 +241,8 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 | --- | --- | --- |
 | 리디렉트 | false |  |
 | af\_xplatform\_vt\_lookback | 1&#126;72시간 | 1&#126;72시간 사이의 값을 입력할 수 있습니다. |
+
+<div id="click-through-attribution" />
 
 #### 클릭-쓰루 어트리뷰션
 
@@ -231,6 +257,8 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">클릭 전환 확인 기간에</Anchor>대해 자세히 알아보세요.
 
 클릭-쓰루 어트리뷰션 링크를 복사하여 파트너에게 보내 잠재 고객이 해당 광고를 클릭할 때 활성화되도록 할 수 있습니다.
+
+<div id="view-through-attribution" />
 
 #### 뷰-쓰루 어트리뷰션
 
@@ -273,6 +301,8 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 이 토글을 사용하여, 앱에 대한 자체 설정 권한을 애드 네트워크에 부여할 수 있습니다.
+
+<div id="ad-network-permissions" />
 
 #### **애드 네트워크 권한**
 

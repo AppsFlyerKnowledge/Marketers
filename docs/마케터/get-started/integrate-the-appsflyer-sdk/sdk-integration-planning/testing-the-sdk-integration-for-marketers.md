@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 안드로이드 또는 iOS 앱과 앱스플라이어 연동을 테스트합니다.
 
+<div id="overview" />
+
 ## 개요
 
 SDK 연동이 완료되면 SDK가 앱스플라이어 서버와 성공적으로 연결되어 있는지 확인할 수 있습니다. 마케터는 두 가지 테스트 방법 중에서 하나를 선택할 수 있습니다.
@@ -41,16 +43,22 @@ SDK 연동이 완료되면 SDK가 앱스플라이어 서버와 성공적으로 �
 
 CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-테스트) 문서를 확인하세요.
 
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 ## SDK 연동 테스트 페이지를 사용한 테스트
 
 **SDK 연동 테스트** 페이지를 통해 앱에서 발생하는 실시간 라이브 이벤트, 인스톨 및 인앱 이벤트를 확인할 수 있습니다. 뿐만 아니라 논오가닉 설치, 인앱 이벤트, 딥링킹(리타겟팅)을 테스트하고, 프로젝트 중 생길 수 있는 연동 문제를 확인하는 것도 가능합니다. 기존의 인앱 이벤트 테스트 툴은 라이브 이벤트 뷰어로 대체됩니다.
 
 **iOS에만 해당되는 사항**: SDK 연동 테스트 페이지는 ATT를 구현하는 iOS 앱에만 적용됩니다. [여기](https://dev.appsflyer.com/hc/docs/testing-ios#apps-that-dont-implement-att)에 설명된 절차에 따라 비 ATT 앱을 테스트할 수 있습니다.
 
+<div id="prepare-a-test-device" />
+
 ### **테스트 장치 준비**
 
 1. 앱이 설치되지 않은 디바이스(안드로이드 또는 iOS)를 준비합니다. 필요한 경우 디바이스에서 앱을 삭제합니다.
 2. <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">준비한 디바이스를 테스트 장치로 등록합니다.</Anchor>
+
+<div id="perform-the-integration-tests" />
 
 ### 연동 테스트 수행하기
 
@@ -133,6 +141,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 5. **계속**을 클릭하고 각 마법사 단계를 따릅니다.
 
 </Accordion>
+
+<div id="testing-using-attribution-links" />
 
 ## 어트리뷰션 링크를 사용한 테스트
 
@@ -275,6 +285,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 </Accordion>
 
+<div id="testing-retargeting-using-attribution-links" />
+
 ## 어트리뷰션 링크를 사용한 리타겟팅 테스트
 
 다음은 리타겟팅 어트리뷰션을 테스트하기 위해 따라야 하는 절차에 대해서 설명합니다.
@@ -402,6 +414,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 </Accordion>
 
+<div id="testing-organic-installs" />
+
 ## 오가닉 인스톨 테스트
 
 먼저 오가닉 인스톨 테스트부터 시작할 것을 권장합니다.
@@ -414,6 +428,8 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 앱의 대시보드에 신규 오가닉 인스톨이 표시됩니다. 인스톨이 표시될 때까지 최대 30분 정도 기다리십시오.
 
 [![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+
+<div id="testing-ctv" />
 
 ## CTV 테스트
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹사이트 랜딩 페이지 링크에 일관되고 완전한 URL 파라미터를 사용하여 웹 성과 측정에서 정확한 기여를 유지하는 동시에 최적의 캠페인 세분성을 확보하세요.
 
+<div id="about-url-attribution-parameter-classes" />
+
 ## URL 어트리뷰션 파라미터 클래스 안내
 
 앱스플라이어는 랜딩 페이지 URL(사용자가 클릭하는 링크)에서 캠페인 파라미터를 읽어 세션과 이벤트를 올바른 **미디어 소스**, **캠페인**, 그리고 (가능한 경우) **광고 세트** 및 **광고**와 같은 하위 계층에 어트리뷰션합니다.
@@ -36,6 +38,8 @@ URL 파라미터는 PID와 UTM의 두 가지 클래스 중 하나에 속할 수 
 * UTM 클래스에는 표준 UTM 파라미터가 포함됩니다.
 
 웹 성과 측정이 URL 파라미터를 처리하는 방식에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/about-traffic-source-resolution">트래픽 소스 확인 정보</Anchor>를 참조하세요.
+
+<div id="supported-pid-and-utm-parameters" />
 
 ### 지원된 PID 및 UTM 파라미터
 
@@ -54,6 +58,8 @@ URL 파라미터는 PID와 UTM의 두 가지 클래스 중 하나에 속할 수 
 | 9 | `utm_medium` | 미디어 유형 | UTM | 아니오 | `media_type` |
 | 10 | `utm_campaign` | 캠페인 이름 | UTM | 네 | `campaign_name` |
 
+<div id="choose-the-right-attribution-parameters" />
+
 ## 올바른 어트리뷰션 파라미터 선택
 
 앱스플라이어는 특정 우선순위 워터폴을 사용하여 보고 필드(미디어 소스 또는 캠페인 등)별로 URL 파라미터를 독립적으로 평가합니다. 이 방식을 사용하면 동일한 URL에서 **PID 클래스**(앱스플라이어 기본)와 **UTM 클래스**(표준 마케팅)를 모두 활용하여 Google Analytics와 같은 다른 툴과 함께 앱스플라이어 어트리뷰션을 동시에 지원할 수 있습니다.
@@ -65,6 +71,8 @@ URL 파라미터는 PID와 UTM의 두 가지 클래스 중 하나에 속할 수 
 <Accordion title="시나리오 A. PID 클래스만 사용한 URL (앱스플라이어 리포팅)">
 
 앱스플라이어 리포팅이 주목적인 경우 PID 클래스를 사용하세요.
+
+<div id="example" />
 
 #### 예시
 
@@ -81,6 +89,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 <Accordion title="시나리오 B. UTM 클래스만 사용한 URL(폴백)">
 
 `pid`가 누락된 경우, 앱스플라이어는 UTM 클래스로 전환됩니다.
+
+<div id="example-1" />
 
 #### 예시
 
@@ -100,6 +110,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 
 앱스플라이어는 미디어 소스 및 캠페인과 같은 어트리뷰션 필드를 독립적으로 처리합니다. 각 특정 필드에 대해 시스템은 특정 우선순위 워터폴을 따라 기록할 값을 결정합니다. 일반적으로 해당 특정 필드에 대해 **PID 클래스**가 **UTM 클래스**보다 우선 적용됩니다.
 
+<div id="example-1-overlapping-parameters" />
+
 #### 예시 1: 중복되는 파라미터
 
 ```http
@@ -109,6 +121,8 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 * **미디어 소스:** 앱스플라이어가 `pid`와 `utm_source`를 모두 감지합니다. 이 필드의 우선순위 워터폴에 따라 `facebook_ads`를 기록합니다.
 * **캠페인:** 앱스플라이어가 `c`와 `utm_campaign`을 모두 감지합니다. 이 필드의 우선순위 워터폴에 따라 `summer_sale`을 기록합니다.
 * **결과:** 앱스플라이어는 우선순위가 더 높은 PID 클래스 값을 사용하고, 외부 도구는 여전히 UTM 값을 읽을 수 있습니다.
+
+<div id="example-2-mixed-parameter-classes" />
 
 #### 예시 2: 혼합된 파라미터 클래스
 
@@ -121,6 +135,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **결과:** 각 필드가 독립적으로 처리되므로 앱스플라이어는 두 클래스의 값을 모두 사용하여 이벤트를 성공적으로 어트리뷰션합니다.
 
 </Accordion>
+
+<div id="other-best-practices" />
 
 ## 기타 모범 사례
 

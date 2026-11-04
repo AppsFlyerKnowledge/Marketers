@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **요약: 요약: 앱스플라이어 연동 파트너인 Salesforce Marketing Cloud MobilePush는 마케팅, 성장 및 인게이지먼트 팀을 위한 유저 인게이지먼트 플랫폼입니다.**
 
+<div id="overview" />
+
 ## 개요
 
 Salesforce Marketing Cloud MobilePush를 사용하면 크로스 채널 소비자 데이터를 기반으로 타겟 푸시 메시지를 작성하여 보낼 수 있습니다. 이렇게 하면 앱 사용을 장려하고 ROI를 높일 수 있습니다. 사용자는 MobilePush를 사용하면 유저가 보는 제품에서 각 페이지에서 보낸 시간에 이르기까지 유저가 앱을 탐색하는 방법을 알아볼 수 있습니다. MobilePush를 연동하면 다음 이점이 있습니다:
@@ -30,35 +32,53 @@ Salesforce Marketing Cloud MobilePush를 사용하면 크로스 채널 소비자
 * 크로스 채널 캠페인을 쉽게 구축
 * 메시지 세분화 및 예약
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
+
+<div id="setting-up-salesforce-marketing-cloud-mobilepush" />
 
 ## Salesforce Marketing Cloud MobilePush 설정
 
 대부분의 설정은 Salesforce에서 수행됩니다(1-4단계). 5단계는 앱스플라이어에서 수행됩니다.
 
+<div id="step-1-set-up-mobilepush-sdk" />
+
 ### 1단계:
 
 * <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_get_started.htm&type=5">MobilePush SDK 설정 구현</Anchor>
 
+<div id="step-2-provision-for-push-notifications" />
+
 ### 2단계: 2단계: 푸시 알림 프로비저닝
+
+<div id="step-3-enable-app-push-notifications" />
 
 ### 3단계: 3단계: 앱 푸시 알림 활성화
 
 * <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-configureforpush.html">푸시 알림 구현</Anchor>
 
+<div id="step-4-set-up-app-push-notifications" />
+
 ### 4단계: 4단계: 앱 푸시 알림 설정
 
 * 푸시 메시지를 작성하여 모바일 장치로 전송
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
 > Salesforce Marketing Cloud에서 푸시 알림을 생성할 때 앱스플라이어가 올바른 PID 및 캠페인 속성으로 올바르게 어트리뷰션할 수 있도록 <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_custom_keys.htm&type=5">커스텀 키</Anchor>를 추가해야 합니다.
 
+<div id="step-5-set-up-push-notifications-in-appsflyer" />
+
 ### 3단계: 5단계: 앱스플라이어에서 푸시 알림 설정
 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications-ios#addpushnotificationdeeplinkpath-recommended">원링크를 사용하여 iOS SDK 설정(이 링크의 3단계)</Anchor>
+
+<div id="note-1" />
 
 > 📘 **참고사항**
 >

@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **요약:** 리타겟팅(리마케팅) 캠페인은 사용자가 앱에 다시 참여하거나, 앱을 삭제한 사용자가 앱을 재설치하도록 유도합니다.
 
+<div id="retargeting-fundamentals" />
+
 ## 리타겟팅 기본 사항
 
 리타겟팅 어트리뷰션은 사용자가 [리타겟팅 어트리뷰션 링크](/docs/retargeting-attribution-guide#retargeting-attribution-links) 또는 <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template">딥 링크</Anchor>를 클릭하여 리타겟팅 캠페인에 참여할 때 발생합니다. 이로 인해 다음 중 하나의 어트리뷰션 이벤트가 발생할 수 있습니다.
@@ -38,6 +40,8 @@ x-zendesk:
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 리타겟팅 캠페인을 운영하기 전에, 다음 섹션에서 리인게이지먼트 규칙과 사례를 확인한 후, 리타겟팅 절차 섹션에 설명된 대로 리타겟팅을 설정하세요. 이해를 돕기 위해, 앱스플라이어 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">어트리뷰션 모델</Anchor>과 관련된 어트리뷰션 기간에 대한 이해가 필요합니다.
+
+<div id="tip" />
 
 > 👍 **팁**
 >
@@ -62,6 +66,8 @@ x-zendesk:
 
 다음 표는 리타겟팅 어트리뷰션 관련 기간에 대한 참조 정보를 포함합니다.
 
+<div id="inclusion-windows" />
+
 #### 포함 기간
 
 | 기간 유형 | 설명 |
@@ -70,6 +76,8 @@ x-zendesk:
 | 클릭 룩백 | 사용자가 광고를 클릭한 후 앱을 열 때까지의 최대 기간입니다.<br /><br />**구성 위치**: 어트리뷰션 링크<br /><br />**기간** :<ul><li>기본값: 7일</li><li>범위: 1-23시간\/1-30일</li></ul>**SRN 비고:** SRN의 특정 룩백 윈도우 정책을 확인하세요. |
 | 리인게이지먼트 | 리인게이지먼트 기간에 대해 다음 사항을 고려하세요.<ul><li>이 기간은 사용자가 리타겟팅 미디어 소스와 상호작용한 후 처음 앱을 열 때 시작됩니다.</li><li>인앱 이벤트는 기간 동안 리타겟팅과 유저 유입 미디어 소스에 <Anchor target="_blank" href="/marketers/ko/docs/resolve-retargeting-double-attribution">이중 어트리뷰션</Anchor>됩니다.</li><li>기간은 앱 설정이나 SRN에 의해 결정됩니다.</li><li>리인게이지먼트 기간 중 사용자가 다른 리타겟팅 캠페인과 상호작용하며 제외 기간에 의해 차단되지 않는 경우, 현재 리인게이지먼트 기간이 즉시 종료되고 새 리인게이지먼트 기간이 시작됩니다.</li><li>리어트리뷰션의 맥락에서:  **어트리뷰션 윈도우** 기간은 시간 제한이 없습니다 (인스톨과 유사). 그러나 새로 인스톨하거나 재설치하는 경우 또는 데이터 리텐션 제한으로 인해 이 기간이 종료됩니다.</li></ul>**설정 위치:** 어트리뷰션 링크<ul><li>기본값: 30일</li><li>범위: 1-23시간\/1-90일\/수명</li></ul>**SRN 비고**: SRN에 대해 설정할 수 있습니다.<br /><br />기간 설정을 변경하면 앞으로의 리인게이지먼트에 영향을 미칩니다. 기존 리인게이지먼트에는 영향을 미치지 않습니다. |
 
+<div id="exclusion-windows" />
+
 #### 제외 기간
 
 | 기간 유형 | 설명 |
@@ -77,6 +85,8 @@ x-zendesk:
 | 리인게이지먼트 전환 사이의 최소 시간 | 제외 기간 동안 리인게이지먼트를 기록하지 마세요.<br /><br />**리인게이지먼트 전환 사이의 최소 시간**<ul><li>리인게이지먼트 시, 인앱 이벤트가 리타겟팅 및 UA 캠페인 양측에 어트리뷰션되는 기간이 열립니다.</li><li>이로 인해 리타겟팅 캠페인의 성과를 측정할 수 있습니다.</li><li>이 기간 중 다른 네트워크나 캠페인이 리인게이지먼트를 가져오면:<ul><li>[기본값] 기존 리인게이지먼트 기간이 닫히고, 새로운 리인게이지먼트가 기록되며 이후의 인앱 이벤트는 최근의 리인게이지먼트에 어트리뷰션됩니다.</li><li>이를 방지하려면, 리인게이지먼트 전환 사이의 최소 시간을 설정하세요. 이 경우, 최소 경과 시간이 지난 후에만 추가적인 리인게이지먼트를 기록할 수 있습니다.</li></ul></li><li>이 설정은 리인게이지먼트 기간이 이 설정의 기간보다 짧은 경우에는 영향을 미치지 않습니다. 예: 리인게이지먼트 기간이 1일이고, 이 설정이 4일인 경우, 이 설정은 아무런 영향을 미치지 않습니다.</li><li>이러한 설정은 인스톨과 리인게이지먼트 사이의 기간에는 영향을 미치지 않습니다.</li></ul>**설정 위치**: 앱 설정 페이지<br /><br />**기간**:<ul><li>기본값: 없음</li><li>범위: 1-23시간\/1-30일</li></ul> |
 | <Anchor target="_blank" href="/marketers/ko/docs/set-retargeting-inactivity-window">최소 비활성 기간</Anchor> | 제외 기간 동안 리인게이지먼트 또는 리어트리뷰션을 기록하지 마세요.<br /><br />**설정 위치:** 연동 탭의 통합 파트너 설정 페이지.<br /><br />**기간**:<ul><li>기본값: 없음</li><li>0-30일</li></ul>**SRN 비고**: SRN은 일반적으로 고유의 비활성 기간 규칙을 가지고 있다는 점을 고려하세요. 귀사의 설정이 SRN의 설정과 다르면 불일치가 발생할 수 있습니다. |
 | <Anchor target="_blank" href="/marketers/ko/docs/set-up-re-attribution-window">리어트리뷰션</Anchor> | 리어트리뷰션 윈도우는 리어트리뷰션에 영향을 미치지만 리인게이지먼트에는 영향을 미치지 않습니다.<br /><br />리타겟팅 캠페인에 참여한 후 리어트리뷰션 윈도우 동안 재설치를 한 사용자는 리타겟팅 매체 소스에 어트리뷰션됩니다. 관련 자료: <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#reinstalls">재설치</Anchor><br /><br />**설정 위치:** 앱 설정 |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### **규칙 구현 예시 흐름**
 
@@ -104,6 +114,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## 리타겟팅 작업
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ x-zendesk:
 | --- | --- | --- |
 | 리인게이지먼트 | <ol><li>앱스플라이어의 사이드 메뉴에서 **설정** > **앱 설정**을 선택합니다.</li><li>**리인게이지먼트** **어트리뷰션** 이 켜져 있는지 확인하세요.</li><li>SRN별:</li><li>사이드 메뉴에서 **협업** > **활성 연동**을 선택하고 SRN을 선택합니다.</li><li>**리인게이지먼트 어트리뷰션**을 켭니다.</li></ol> | <ol><li>앱스플라이어의 사이드 메뉴에서 **설정** > **앱 설정**을 선택합니다.</li><li>**리인게이지먼트 어트리뷰션** 이 켜져 있는지 확인하세요.</li><li>비 SRN별: 이 섹션에 자세히 설명된 대로 어트리뷰션 링크에 리타겟팅 매개변수를 추가합니다.</li></ol> |
 | 리어트리뷰션 | <ol><li>사이드 메뉴에서 **협업** > **활성 연동**을 선택합니다.</li><li>**재설치 어트리뷰션**을 켭니다.</li></ol> | <ol><li>명시적인 설정이 필요하지 않습니다.</li><li>이 섹션에 자세히 설명된 대로 어트리뷰션 링크에 리타겟팅 매개변수를 추가합니다.</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **비 SRN 설정**
 
@@ -167,6 +181,8 @@ x-zendesk:
 | 리타겟팅 뷰-쓰루 룩백 타이머 | <ul><li>리타겟팅 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">뷰-쓰루 룩백 윈도우</Anchor>는 유저 유입 캠페인과 유사하게 작동합니다.</li><li>사용자가 광고를 본 후 귀속되기까지의 최대 기간을 정의합니다.</li><li>기본값은 1일입니다.</li><li>룩백 윈도우는 다음을 사용하여 설정합니다.</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>예**<br />5시간의 뷰-쓰루 룩백 윈도우를 설정하려면 리타겟팅 캠페인의 어트리뷰션 링크에 다음을 추가하세요: `&af_viewthrough_lookback=5h` | 아니요 |
 | 리인게이지먼트 윈도우 | <ul><li>**리인게이지먼트 윈도우**는 어트리뷰션 링크 사용자 인터페이스에서 설정할 수 있습니다. 이 설정은 어트리뷰션 링크에 **af\_reengagement\_window** 매개변수를 추가합니다. 매개변수는 수동으로 추가할 수 있습니다.</li><li>기본값은 30일입니다.</li><li>사용 가능한 리인게이지먼트 윈도우 값은 다음과 같습니다.</li><li>시간: 1-23시간</li><li>일: 1-90일</li><li>평생: 사용자가 앱 삭제하거나 다른 리인게이지먼트를 수행할 때까지 지속됩니다. 예: af\_reengagement\_window=lifetime</li></ul>예를 들어, **af\_reengagement\_window=60d**는 리인게이지먼트 후 60일 이내에 보고된 이벤트가 리타겟팅 미디어 소스에 어트리뷰션된다는 뜻입니다. | 아니요 |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### 리타겟팅 뷰-쓰루 룩백 윈도우
 
 ```http
@@ -209,6 +225,8 @@ clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_i
 | 기여자 필드 | 리인게이지먼트에 대해 사용 불가 |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -255,6 +273,8 @@ clickid={clickid}&af_siteid={publisher}&idfa={device_id_raw}&sha1_idfa={device_i
 | **어트리뷰션 된 터치와 인스톨 시간이 언제 동일한가요?**<ul><li>유니버설 링크나 안드로이드 앱 링크를 사용하는 사용자가 딥 링크를 수행하면 앱스플라이어를 거치지 않고 앱으로 직접 이동합니다.</li><li>앱이 실행되고 SDK가 새로운 리인게이지먼트를 보고하면, 앱스플라이어는 실행과 동일한 타임스탬프를 사용하여 클릭 데이터를 복원합니다. 이로 인해 참여 시점과 실행 시간이 동일해집니다.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

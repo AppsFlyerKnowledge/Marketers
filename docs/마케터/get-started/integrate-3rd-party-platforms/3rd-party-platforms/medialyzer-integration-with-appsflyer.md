@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
+
+<div id="setting-up-medialyzer" />
 
 ## Medialyzer 설정
 
@@ -47,13 +51,19 @@ x-zendesk:
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 처음 방문 시에 **파트너 활성화** 토글을 켜서 연동을 설정해야 합니다. 토글은 Medialyzer로 작업하는 동안 켜져 있어야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너 활성화</Anchor>에 대해 더 알아보십시오.
 
+<div id="advanced-privacy" />
+
 #### 프라이버시 강화 모드
 
 iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">고급 개인 정보 보호</Anchor> 토글이 나타납니다. 이 기능을 켜면 파트너와의 사용자 식별자 공유가 제한됩니다. 앱 설정에서 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집약형 프라이버시 강화</Anchor> 토글을 설정하면 **Advanced Privacy(iOS 14.5+ 이상의 경우)** 가 기본적으로 켜지고 잠깁니다.
+
+<div id="default-postbacks" />
 
 #### 기본 포스트백
 
@@ -63,6 +73,8 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 * **오가닉을 포함한 모든 매체 소스**:
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 

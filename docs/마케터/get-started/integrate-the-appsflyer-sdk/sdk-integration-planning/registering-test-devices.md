@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 어트리뷰션 테스트을 할 때, 테스트 디바이스를 등록하여 각 인스톨이 새로운 인스톨로 기록되도록 하세요. 등록된 테스트 디바이스는 인스톨이 재설치로 기록되는 것을 방지합니다.
 
+<div id="why-register-a-test-device" />
+
 ## 테스트 디바이스를 등록해야 하는 이유
 
 어트리뷰션 테스트를 할 때, 리어트리뷰션 윈도우는 인스톨 어트리뷰션을 90일 동안 하나로 제한합니다. 따라서 동일한 디바이스를 반복적으로 사용하여 인스톨 어트리뷰션을 테스트하면, 아무것도 기록되지 않습니다. 테스트 디바이스로 등록하면, 등록된 디바이스에서 반복 인스톨이 재설치로 기록되는 것을 방지할 수 있습니다.
+
+<div id="methods-for-registering-a-test-device" />
 
 ## 테스트 디바이스를 등록하는 방법
 
@@ -38,6 +42,8 @@ x-zendesk:
 다음 방법 중 하나를 사용하여 등록할 수 있습니다.
 
 * [앱스플라이어의 My Device ID 앱을 다운로드하고 인스톨 합니다:](#register-a-device-using-the-appsflyer-device-id-app-admin-only) 테스트 디바이스에 앱을 설치하면 자동으로 디바이스가 등록되고 디바이스 ID 세부 정보를 앱스플라이어 계정에 공유할 수 있습니다. 해당 디바이스는 자동으로 **테스트 디바이스** 페이지에 표시됩니다.
+
+  <div id="note" />
 
   > 📘 **참고**
   >
@@ -58,6 +64,8 @@ x-zendesk:
 
 * **안드로이드:** AID(GAID 또는 OAID), IMEI, 안드로이드 ID
 
+  <div id="note-1" />
+
   > 📘 **참고**
   >
   > 테스트 디바이스를 등록할 때, 귀사의 앱이 이러한 식별자를 수집하고 사용하는 경우에만 IMEI 또는 안드로이드 ID 디바이스 식별자를 추가해야 합니다.
@@ -66,6 +74,8 @@ x-zendesk:
 * **윈도우 폰:** Windows 광고 ID
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## 테스트 디바이스 등록 관리
 
@@ -179,6 +189,8 @@ x-zendesk:
 
 5. **저장**을 클릭하세요. 등록된 디바이스 목록에 표시됩니다. **참고**: 디바이스가 등록된 디바이스 목록에 즉시 표시되지만, 시스템에 등록되어 제대로 작동하려면 몇 분이 걸릴 수 있습니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 테스트 디바이스에 두 개 이상의 식별자를 추가하려는 경우가 있습니다. 예를 들어, 동일한 디바이스에서 IDFA와 IDFV를 모두 원할 때가 있습니다.
@@ -205,6 +217,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## iOS 테스트 디바이스 등록
 
 아래의 순서도는 iOS 테스트 디바이스 등록 시 고려할 수 있는 다양한 진행 절차를 설명합니다.
@@ -215,9 +229,13 @@ iOS 테스트 디바이스 등록 시 다음 옵션 중 하나를 선택하세�
 
 <Accordion title="IDFA로 테스트 디바이스 등록">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **IDFA를 사용하여 테스트 디바이스를 등록하는 경우는 언제인가요?**
 
 앱에 앱 추적 투명성(ATT)이 구현되어 있고 동의한 유저의 자격으로 측정을 실행하려는 경우 IDFA로 등록할 수 있습니다. 테스트한 앱을 처음 실행할 때, 앱 추적 투명성 프롬프트에서 **허용**을 클릭해야 합니다.
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **IDFA를 사용하여 테스트 디바이스를 등록하는 방법**
 
@@ -229,6 +247,8 @@ IDFA에 등록하려면 앱스플라이어 디바이스 ID 앱을 사용하여 �
 
 <Accordion title="IDFV를 사용하여 테스트 디바이스를 등록하기">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **테스트 디바이스 등록에 IDFV를 사용하는 경우는 언제인가요?**
 
 IDFA에 접근할 수 없을 때 IDFV가 유일한 선택입니다. 다음과 같은 경우 **IDFV를 사용해야 합니다**:
@@ -236,11 +256,15 @@ IDFA에 접근할 수 없을 때 IDFV가 유일한 선택입니다. 다음과 �
 * **앱 추적 투명성이 구현되었지만** 동의하지 않은 유저로서 테스트을 실행하려고 할 때. 앱을 처음 실행할 때, 앱 추적 투명성 프롬프트에서 **허용 안 함**을 클릭하세요.
 * **앱 추적 투명성이 전혀 구현되지 않았을 때**
 
+<div id="how-to-register-your-device-with-idfv" />
+
 #### **IDFV로 귀사의 디바이스를 등록하는 방법**
 
 1. IDFV로 테스트 디바이스를 등록하기 전에, 개발자가 귀사의 테스트 디바이스에 IDFV 테스트 도구 앱을 설치해야 합니다. 개발자 지침은 귀사의 개발자에게 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-the-idfv-test-tool-app">이 문서</Anchor>를 참조하라고 하세요.
 2. 개발자가 IDFV 테스트 도구 앱을 설치한 후 이를 실행하여 표시된 IDFV를 복사합니다.
 3. IDFV를 사용하여 [테스트 디바이스를 수동으로 등록합니다](#register-a-device-manually).
+
+<div id="note-3" />
 
 > 📘 **참고**
 >

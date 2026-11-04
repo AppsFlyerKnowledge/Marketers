@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **요약: 요약: 어트리뷰션 날짜 및 미디어 소스별로 필터링된 유저생애가치(LTV) 집약형 리포트를 다운로드합니다.**
 
+<div id="aggregate-data-reports" />
+
 ## 집약형 데이터 리포트
 
 <Anchor target="_blank" href="/marketers/ko/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">유저 인입</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/aggregated-and-analytics-reporting-overview#retargeting">리타게팅</Anchor> 리포트에는 다음과 같은 특징이 있습니다.
@@ -37,6 +39,8 @@ x-zendesk:
 * 리포트는 최대 20만 개의 행을 보유합니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/report-generation-quotas-rate-limitations">콜 제한</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### 집약형 데이터 리포트 다운로드
 
 **리포트를 다운로드하는 방법:**
@@ -45,6 +49,8 @@ x-zendesk:
 2. [선택 사항] 미디어 소스를 선택합니다.
 3. 어트리뷰션 이벤트 날짜 범위를 선택합니다.
 4. 리포트를 선택하고 **다운로드**를 클릭합니다.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

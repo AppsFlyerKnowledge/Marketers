@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## 대시보드 원칙
 
 대시보드에는 SKAN 캠페인 성과 데이터가 포함되어 있으며 다음 원칙을 준수합니다.
@@ -40,6 +42,8 @@ x-zendesk:
   * 지정된 날짜에 받은 포스트백은 UTC에서 하루의 종료 시점에 처리됩니다. 데이터는 다음날 오전 8:00 UTC까지 이용 가능합니다. 즉, 월요일에 받은 포스트백을 화요일 아침에 대시보드에서 사용할 수 있습니다.
   * <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">예상 대시보드 가동 업데이트 시간</Anchor>을 참조하십시오.
 
+<div id="skan-dashboard-view-options" />
+
 ## SKAN 대시보드 표시 모드
 
 [인스톨 날짜 또는 포스트백 도착 날짜](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options)를 이용한 데이터를 표시합니다.
@@ -47,6 +51,8 @@ x-zendesk:
 필터 표시줄에서 날짜별 표시 옵션을 선택합니다.
 
 다음 절에서 추가 필터 및 표시 옵션을 설명합니다.
+
+<div id="dashboard-use" />
 
 ## 대시보드 사용
 
@@ -279,6 +285,8 @@ SKAN 지표는 앱스플라이어 어트리뷰션 모델을 이용하여 사용�
 * **SDK:** SDK: 앱에 내장된 앱스플라이어 SDK.
 * 규칙 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">앱스플라이어 어트리뷰션 모델</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### 어트리뷰션 프레임워크 차이
 
 | 개념 | SKAN | 앱스플라이어 |
@@ -292,6 +300,8 @@ SKAN 지표는 앱스플라이어 어트리뷰션 모델을 이용하여 사용�
 | 인스톨 리포트 담당자 | <ul><li>SKAN SKAN: 논오가닉 인스톨 및 논오가닉 재다운로드로 제한됩니다.</li><li>**SDK**: SDK: 모든 인스톨이 리포트됩니다. 처음 설치하는 것만 지표 목적으로 계산됩니다. 리어트리뷰션 측정은 무시됩니다.</li></ul> | SDK는 규칙을 사용하여 처음 인스톨 및 리타게팅 재인스톨(리어트리뷰션)로 분류된 모든 인스톨을 리포트합니다. |
 | 광고 세분성 수준 | 캠페인, 광고 세트, 광고 세트 ID 및 광고 ID. | Full Hierarchy (전체 계층 구조) 전체 계층: 캠페인, 캠페인 ID, 광고 세트, 채널 및 파트너와 같은 추가 파라미터. |
 | 재다운로드 대 리인스톨 | 재다운로드는 해당 Apple ID 사용자의 동작과 관련됩니다. 리어트리뷰션과 병렬 처리되지 않습니다. | 리타게팅(리인게이지먼트 리어트리뷰션)은 리타게팅 대시보드를 반영합니다. 재다운로드와 병렬 처리되지 않습니다. |
+
+<div id="metric-differences" />
 
 #### 지표 차이
 
@@ -333,6 +343,8 @@ SKAN 지표는 앱스플라이어 어트리뷰션 모델을 이용하여 사용�
 |  | <ul><li>구글</li><li>메타</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

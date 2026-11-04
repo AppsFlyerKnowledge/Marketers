@@ -24,6 +24,8 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
@@ -49,17 +51,25 @@ x-zendesk:
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">파트너 활성화</Anchor>에 대해 더 알아보십시오.
 
+<div id="general-settings" />
+
 ### 일반 설정
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
 앱스플라이어는 유저 인스톨 후 자동 포스트백을 믹스패널로 전송할 수 있습니다. 이 섹션을 사용하여 각 이벤트에 대해 포스트백을 보내는 유저 소스를 정의합니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#default-postbacks">기본 포스트백</Anchor>에 대해 자세히 알아보세요.
 
 **앱을 다운로드하는 모든 유저에 대한 포스트백을 믹스패널로 전송하려면** 모든 미디어소스(오가닉 포함)를 선택하세요.
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 

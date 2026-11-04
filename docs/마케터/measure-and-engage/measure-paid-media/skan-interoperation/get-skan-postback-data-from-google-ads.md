@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **요약: 요약: Google에서 SKAdNewtork(SKAN) 앱 iOS 포스트백의 콘텐츠를 앱스플라이어와 공유할 수 있도록 설정합니다.**
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Google Ads에서 SKAN 포스트백 데이터 가져오기
 
 다양한 애드 네트워크 파트너와 작업하는 경우 앱스플라이어 한 플랫폼에 연동하는 것이 효율적입니다. 이렇게 하면 비용과 같은 다른 지표로 강화된 모든 광고 네트워크 파트너에 대한 SKAN 성과 지표가 앱스플라이어 플랫폼을 통해 제공됩니다.
@@ -40,6 +42,8 @@ Google의 클릭 리포트 방법론과 매일 소급하는 데이터 업데이�
 
 * 집약형 리포트 및 대시보드는 소급하여 업데이트됩니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/skan-raw-data-reports">로데이터 리포트</Anchor>는 소급하여 변경되지 않습니다. 데이터(데이터 락커를 통해 제공)는 Google이 앱스플라이어에 데이터를 제공한 날짜(데이터 도착일)에 따라 폴더에 제공됩니다.
+
+<div id="set-up-interoperation" />
 
 ## 상호 연동 설정
 
@@ -90,6 +94,8 @@ Google Ads와의 상호 운용성을 설정하려면 다음 탭의 단계를 완
 11. [측정 차이](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads)에 대해 읽어보십시오.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -145,6 +151,8 @@ Google Ads 연동을 끌 때 **파트너 활성화** 토글을 끄는 것만으�
 | <span id="agencies"></span>대행사 | 에이전시에 광고주의 Google Ads 계정에서 관리자 사용자 역할이 있는 경우 에이전시는 이 문서에서 제시된 절차를 수행하여 광고주를 대신하여 SKAN 상호 운용을 활성화할 수 있습니다. 광고주는 Google Ads에도 로그인할 필요가 없습니다. 에이전시 로그인이 광고주의 계정에 표시됩니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

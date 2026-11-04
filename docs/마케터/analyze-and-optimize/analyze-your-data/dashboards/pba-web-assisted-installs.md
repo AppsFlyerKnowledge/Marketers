@@ -26,7 +26,11 @@ x-zendesk:
 
 ![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
 
+<div id="web-assisted-installs-analysis" />
+
 ## 웹 지원 설치 분석
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### 웹 지원 설치 헤드라인 지표
 
@@ -41,6 +45,8 @@ x-zendesk:
 | 총 인스톨 | 모든 설치는 어느 시점에서 웹 미디어소스와 함께 참여합니다. | <ul><li>모든 앱 설치와 관련된 웹 마케팅의 기여도는 얼마입니까?</li><li>웹 마케팅 활동은 미디어소스와 채널 간에 어떻게 분산됩니까?</li><li>스마트 배너의 기여도는 무엇입니까?</li></ul> |
 | 오가닉 설치 | 모바일 미디어소스를 사용하지 않고 앱을 설치합니다. | <ul><li>오가닉 인스톨 중 순전히 웹 트래픽에 의해 발생하는 부분은 무엇입니까?</li><li>지배적인 미디어 채널은 무엇입니까?</li><li>유료, 온드 미디어, 언드 미디어 유형 간의 비율은 어떻게 되나요?</li></ul> |
 | 논오가닉 인스톨 |  | <ul><li>논오가닉 설치의 양은 웹의 영향을 얼마나 받나요?</li><li>어떤 웹 미디어 채널과 유형이 논오가닉 설치에 영향을 미치나요?</li><li>유료 모바일 미디어소스가 웹 미디어소스와 겹치나요?</li></ul> |
+
+<div id="web-assisted-installs-dashboard" />
 
 ## 웹 보조 설치 대시보드
 

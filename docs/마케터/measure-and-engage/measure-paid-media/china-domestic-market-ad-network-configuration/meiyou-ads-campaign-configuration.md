@@ -53,10 +53,14 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 이곳을 **처음 방문**하면 아래를 토글해야 합니다. ***파트너 활성화*** 버튼을 **켜서** 연동 탭의 파라미터 설정을 활성화합니다. 파트너와 함께 작업하는 동안에는 토글이 **켜져 있어야** 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -66,9 +70,13 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 <Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="548px" />
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -100,6 +108,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 이 탭은 여러 섹션으로 나눠집니다.
 
+<div id="attribution-link-parameters" />
+
 ### 어트리뷰션 링크 파라미터
 
 이 섹션에서는 어트리뷰션 링크에 추가하고 싶은 파라미터를 선택합니다.
@@ -119,6 +129,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 다른 파라미터를 새 파라미터 상자에 입력하기만 하면, 어트리뷰션 링크에 추가할 수 있습니다. 더 많은 정보는 **앱스플라이어 어트리뷰션 링크 구조와 파라미터**에서 참조하십시오.
 
+<div id="click-through-attribution" />
+
 ### 클릭 조회(click-through) 어트리뷰션
 
 **클릭에서 인스톨까지의 최대 시간**을 이 슬라이더에서 설정할 수 있습니다. 기여 기간 내에 일어난 인스톨(앱 최초 실행)만 X Ads로 어트리뷰션됩니다.
@@ -129,9 +141,13 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
 
+<div id="click-attribution-link" />
+
 ### 클릭 어트리뷰션 링크
 
 이것은 설정해둔 모든 설정 정보를 포함하는 어트리뷰션 링크입니다.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### 뷰-쓰루 어트리뷰션 룩백 윈도우
 
@@ -142,6 +158,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 **어트리뷰션 링크 변수:** af\_viewthrough\_lookback
 
 더 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">여기에서 뷰-쓰루 어트리뷰션</Anchor> 항목을 참조하십시오.
+
+<div id="impressions-attribution-link" />
 
 ### 노출 어트리뷰션 링크
 
@@ -173,6 +191,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 이 탭에서는 X Ads에 애드 네트워크, 에이전시 또는 양쪽 모두로 활동하는지에 따라 부여할 권한을 선택할 수 있습니다. X Ads에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 X Ads에 제어 권한을 부여할 수 있습니다.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### 광고 네트워크 권한
 

@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
+<div id="sessions-counting-principles" />
+
 ## 세션 집계 원칙
 
 사용자가 수행한 세션 수(일명 출시)는 중요한 지표이며 앱에 대한 사용자 인게이지먼트의 척도로 사용됩니다. 여러 리포트 및 대시보드를 통해 사용할 수 있습니다. 세션은 다음 지표를 도출하는 데 사용됩니다.
@@ -39,6 +41,8 @@ x-zendesk:
 * 기본 설정인 3-앱 열기를 사용하는 로열 유저
 
 **참고!** 오가닉 세션의 경우 지표는 액티비티 및 코호트 대시보드에서 사용할 수 있지만 개요 대시보드에서는 사용할 수 없습니다.
+
+<div id="sessions-calculation" />
 
 ### 세션 계산
 
@@ -55,6 +59,8 @@ x-zendesk:
 * 안드로이드 앱에서 개발자의 명시적 세션 리포트입니다. 예를 들어, 이것은 항상 백그라운드에 있는 유틸리티 앱에 의해 구현됩니다.
 
 **세션 지표**
+
+<div id="minimum-time-between-sessions-mechanism" />
 
 ## 세션 메커니즘 간의 최소 시간
 
@@ -95,6 +101,10 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note" />
+
+<div id="sessions-related-topics" />
+
 ## 세션 관련 주제
 
 <div id="retargeting-sessions" />
@@ -133,10 +143,14 @@ x-zendesk:
 
 계수된 세션은 다른 인앱이벤트와 동일한 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">어트리뷰션 규칙</Anchor>을 사용하여 어트리뷰트됩니다.
 
+<div id="explicit-sessions-reporting-by-the-developer-android-apps-only" />
+
 #### **개발자의 명시적 세션 리포트(안드로이드 앱만 해당)**
 
 * 백그라운드에서 계속 작동하는 앱은 세션을 리포트하기 위해 개발자가 구현한 일부 논리가 필요할 수 있습니다. 예를 들어 배터리 세이버, 런처, 화면 잠금 및 바이러스 백신 앱과 같은 유틸리티 앱을 들 수 있습니다. 이러한 유형의 앱의 경우 매일 자정에 또는 앱에 적절한 다른 간격으로 세션을 리포트하는 것이 좋습니다.
 * 다른 경우 사용자가 메모리 지우기 버튼 누르기 등과 같은 일부 인앱 작업을 수행할 때 세션을 계수할 수 있습니다.
+
+<div id="setting-minimum-time-between-app-launches" />
 
 #### **앱 실행 사이의 최소 시간 설정**
 

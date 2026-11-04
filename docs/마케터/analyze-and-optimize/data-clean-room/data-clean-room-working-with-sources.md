@@ -25,6 +25,8 @@ x-zendesk:
 
 > **한눈에 보기:** 요약: DCR(Data Clean Room)과 공유하는 사용자 지정 데이터 소스를 설정하여 어트리뷰션 데이터와 일치시키고 DCR 리포트를 생성합니다.
 
+<div id="introduction" />
+
 ## 소개
 
 많은 DCR 리포트는 **어트리뷰션 데이터**를 **커스텀 소스**의 데이터와 일치시키도록 설계되었습니다. 본 기사에는 다음 방법을 포함하여 사용자 지정 소스 작업에 대해 알아야 할 모든 것이 포함되어 있습니다.
@@ -46,7 +48,7 @@ x-zendesk:
 >   * 이러한 연결이 이전에 설정되지 않은 경우 소스를 생성하는 동안 설정하라는 메시지가 표시됩니다.
 
 
-<span id="source-format"></span>소스는 소스 생성 및 리포트 처리에서 오류를 방지하기 위해 다음 요구 사항을 충족해야 합니다.
+<span id="source-requirements"></span><span id="source-format"></span>소스는 소스 생성 및 리포트 처리에서 오류를 방지하기 위해 다음 요구 사항을 충족해야 합니다.
 
 소스 내의 데이터는 다음 요구 사항을 충족해야 합니다.
 
@@ -94,6 +96,8 @@ Amazon S3 또는 GCS에 저장된 소스 파일은 다음 파일 이름 및 형�
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## 소스 만들기
 
 소스 생성 프로세스는 **아래에 설명한 모든 단계**로 구성됩니다. 이 단계는 읽기 쉽도록 탭으로 구분되어 있습니다.
@@ -130,6 +134,8 @@ Amazon S3 또는 GCS에 저장된 소스 파일은 다음 파일 이름 및 형�
    * 상기 지침에 따라 만드십시오.
 2. 소스에 대한 데이터가 있는 위치에 따라 아래의 관련 지침을 따라 계속 진행합니다.
 
+<div id="source-locations-in-bigquery" />
+
 #### BigQuery의 소스 위치
 
 BigQuery 소스의 소스 위치 지정을 완료하려면 다음 안내를 따르십시오.
@@ -138,6 +144,8 @@ BigQuery 소스의 소스 위치 지정을 완료하려면 다음 안내를 따�
 2. 소스 데이터가 있는 테이블을 선택합니다.
 
 이러한 선택 목록에는 연결을 만들 때 지정한 BigQuery 프로젝트에서 각각 사용 가능한 데이터 세트와 테이블이 포함됩니다.
+
+<div id="source-locations-in-snowflake" />
 
 #### Snowflake의 소스 위치
 
@@ -148,6 +156,8 @@ BigQuery 소스의 소스 위치 지정을 완료하려면 다음 안내를 따�
 3. 소스 데이터가 있는 테이블을 선택합니다.
 
 이러한 선택 목록에는 연결을 생성할 때 지정한 Snowflake 계정의 공유, 스키마 및 테이블이 각각 포함됩니다.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Cloud Storage 버킷의 소스 위치
 
@@ -182,6 +192,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
   * **\_데이터 기준** 기준: 앱 사용자를 분류하는 속성(예를 들어 지역, 인스톨 날짜, 캠페인 등)/span>
   * 지표 지표: 앱 사용자와 관련하여 수집한 수치 데이터(예로는 수익, 앱 열기 횟수, LTV 등이 포함될 수 있음.)
     * 지표로 식별된 데이터 필드에는 숫자 값만 포함될 수 있습니다.
+
+<div id="loading-source-fields" />
 
 #### 소스 필드 로드하기
 
@@ -242,6 +254,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### 필드 분류
 
 필드를 로드하면 앱스플라이어가 파일을 분석하고 모든 데이터 필드(열)의 목록이 **사용 가능한 필드** 목록에 표시됩니다.
@@ -279,6 +293,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
    새 소스는 Data Clean Room의 **소스** 탭에 있는 모든 기존 소스 목록에 표시됩니다.
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## 리포트 처리를 트리거하기 위한 소스 업데이트
 
@@ -336,6 +352,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 <Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
+
+<div id="working-with-existing-sources" />
 
 ## 기존 소스로 작업하기
 
@@ -399,6 +417,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 
 </Accordion>
 
+<div id="reference" />
+
 ## 참고
 
 <div id="manually-creating-a-folder-structure" />
@@ -406,6 +426,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 <Accordion title="수동으로 스토리지 버킷 폴더 구조 만들기 (그렇게 하도록 선택한 경우에만 관련됨)">
 
 일반적으로 앱스플라이어가 소스 생성 프로세스의 일부로 필요한 폴더 구조를 자동으로 생성하도록 허용하는 것이 가장 쉽습니다. 그러나 이러한 폴더를 수동으로 만들려면 다음과 같이 해야 할 수 있습니다.
+
+<div id="create-a-dcr-key-folder" />
 
 #### DCR 키 폴더 만들기
 
@@ -421,6 +443,8 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### 최상위 입력 폴더
 
 필수 사항은 아니지만 가장 좋은 방법은 DCR 키 폴더 바로 아래에 최상위 입력 폴더를 만드는 것입니다. 이 폴더는 DCR에 업로드하는 파일을 위한 전용 폴더입니다.
@@ -433,6 +457,8 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 최상위 입력 폴더를 만든 후 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### 각 데이터 소스의 두 번째 수준 폴더
 

@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** CUID를 통해 동일한 유저의 이벤트를 다양한 디바이스, 매체소스 또는 채널에서 그룹화할 수 있습니다.
 
+<div id="what-is-cuid" />
+
 ## **CUID란 무엇인가요?**
 
 고객 유저 ID (CUID)는 고유한 유저 식별자입니다. 일반적으로 앱 소유자가 유저를 등록할 때 발생한 설정합니다. CUID를 통해 앱 소유자는 다양한 디바이스에서 유저의 여정을 추적할 수 있습니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -41,6 +45,8 @@ x-zendesk:
 > * 같은 앱에서 동일한 유저가 여러 디바이스(휴대폰, 태블릿, TV, 데스크톱)에서 인앱 구매를 수행할 경우 단일 뷰로 결합할 수 있습니다.
 > * 다양한 플랫폼(데스크톱, 모바일, TV)에 설치된 게임에 대한 유저 성과가 이러한 플랫폼 간에 공유되어 전체적인 유저 경험을 달성할 수 있습니다.
 
+<div id="setting-the-cuid" />
+
 ## **CUID 설정방법**
 
 SDK 초기화 흐름에서 가능한 한 일찍 CUID를 설정하여 가능한 많은 이벤트가 CUID와 연관될 수 있도록 권장합니다.
@@ -50,6 +56,8 @@ SDK 초기화 흐름에서 가능한 한 일찍 CUID를 설정하여 가능한 �
 
 CUID를 사용할 준비가 되면 `setCustomerUserID`를 호출하여 설정할 수 있습니다. CUID는 설정된 후 발생한 인앱 이벤트만 연관될 수 있습니다. 따라서 `setCustomerUserID`이 `setCustomerUserID` 전에 호출되면 인스톨 이벤트는 CUID와 연관되지 않습니다.
 
+<div id="associate-the-cuid-with-the-install-event" />
+
 ### **CUID를 인스톨 이벤트와 연결하기**
 
 인스톨 이벤트를 CUID와 연결하는 것이 중요하다면, `start`을 호출하기 전에 설정해야 합니다.
@@ -58,15 +66,21 @@ CUID를 사용할 준비가 되면 `setCustomerUserID`를 호출하여 설정할
 
 안드로이드에서는 `start` 메서드와 CUID 설정을 앱 구현에 따라 글로벌 `Application` 클래스 또는 `Activity` 클래스에서 실행할 수 있습니다. 자세한 정보는 <Anchor target="_blank" href="/marketers/ko/docs/basic-sdk-integration-guide#sdk를-어느-클래스에서-시작할지-선택하세요">SDK를 시작할 클래스를 선택</Anchor>를 참조하세요.
 
+<div id="if-the-sdk-starts-in-the-application-class" />
+
 #### SDK가 Application 클래스에서 시작되는 경우
 
 글로벌 `Application` 클래스에서 인스톨 이벤트와 CUID를 연관시키려면 `waitForCustomerUserId` 메서드를 사용하여 인스톨 이벤트 발송을 지연시켜야 합니다. 이 메서드는 CUID가 설정될 때까지 SDK를 대기 모드로 전환합니다.
 
 참고: CUID 설정이 실패하면 SDK는 대기 모드 상태로 남아 이벤트를 발송하지 않습니다.
 
+<div id="if-the-sdk-starts-in-an-activity-class" />
+
 #### SDK가 액티비티 클래스에서 시작되는 경우
 
 `Activity` 클래스에서 시작할 때 CUID를 인스톨 이벤트와 연관시키려면 인스톨 이벤트 발송을 지연할 필요가 없습니다. `start`를 호출하기 전에 `start`을 호출하세요.
+
+<div id="developer-instructions" />
 
 #### 개발자 지침
 
@@ -85,6 +99,8 @@ CUID를 사용할 준비가 되면 `setCustomerUserID`를 호출하여 설정할
 * `start`를 호출하기 전에 `customerUserId`이 호출되면 CUID는 인스톨 및 그 후의 인앱 이벤트와 연결됩니다.
 * `start` 이후 호출되면, CUID는 CUID 설정 후 기록된 이벤트에만 연결됩니다.
 
+<div id="developer-instructions-1" />
+
 #### 개발자 지침
 
 귀사의 개발자에게 Dev Hub에서 [고객 유저 ID 설정](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#setting-the-customer-user-id)을 확인하도록 하세요.
@@ -92,6 +108,8 @@ CUID를 사용할 준비가 되면 `setCustomerUserID`를 호출하여 설정할
 </Tab>
 
 <Tab title="유니티">
+
+<div id="developer-instructions-2" />
 
 #### 개발자 지침
 
@@ -101,12 +119,16 @@ CUID를 사용할 준비가 되면 `setCustomerUserID`를 호출하여 설정할
 
 <Tab title="리액트 네이티브">
 
+<div id="developer-instructions-3" />
+
 #### 개발자 지침
 
 귀사의 개발자에게 Dev Hub의 [setCustomerUserId](https://dev.appsflyer.com/hc/docs/rn_api#setcustomeruserid) API 참조를 확인하도록 하세요.
 
 </Tab>
 </Tabs>
+
+<div id="cuid-and-privacy" />
 
 ## **CUID 및 프라이버시**
 
@@ -115,6 +137,8 @@ CUID를 사용할 준비가 되면 `setCustomerUserID`를 호출하여 설정할
 귀사의 사용자 프라이버시 보호를 위해, CUID에 사용자를 직접 식별하는 정보를 포함해서는 안 됩니다. 여기에는 소셜 보안 번호나 국민식별번호가 포함됩니다.
 
 또한, 설정된 CUID에 사용자의 이메일 주소나 전화번호가 포함된 경우, 이러한 정보는 앱스플라이어에 발송할 때 반드시 해시되어야 합니다. 개인 정보가 포함된 해시되지 않은 CUID를 앱스플라이어로 발송하는 것은 금지되어 있습니다.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

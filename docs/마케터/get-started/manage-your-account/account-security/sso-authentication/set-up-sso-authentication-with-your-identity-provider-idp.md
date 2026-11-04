@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어를 ID 제공업체(IdP)와 통합하면 앱스플라이어 계정 유저가 SSO(Single Sign-On)를 사용하여 앱스플라이어에 로그인할 수 있습니다. SSO 인증을 AppsFlyer와 IdP 플랫폼에서 설정하는 방법을 배우십시오.
 
+<div id="considerations" />
+
 ## 고려 사항
 
 * **전제 조건:** 유저는 동일한 이메일을 사용하여 두 시스템(앱스플라이어 및 IdP)에 모두 설정되어야 합니다.
@@ -37,15 +39,21 @@ x-zendesk:
 * SSO를 사용할 때 2FA는 지원되지 않습니다.
 * 사용자 이름과 비밀번호로 SSO를 동시에 활성화하는 것은 권장되지 않습니다.
 
+<div id="access-the-sso-configuration-page" />
+
 ## SSO 구성 페이지에 액세스하십시오.
 
 1. **상단 막대에서 계정 메뉴(관리자 이메일 주소 드롭다운)** > 보안 센터를 엽니다.
 2. **향상된 로그인 보안** 아래에서 **로그인 방법 구성**을 선택합니다.
 3. **로그인 보안** 페이지에서 **SSO 구성**를 클릭하십시오.
 
+<div id="set-up-sso" />
+
 ## SSO를 설정하십시오.
 
 SSO 구성은 아래 단계에 자세히 설명된 대로 IdP 플랫폼과 AppsFlyer 모두에서 수행됩니다. 구성 상태는 SSO가 설정된 경우 **활성**이거나, 구성되지 않았거나 구성 설정이 제거된 경우 **구성되지 않음**일 수 있습니다.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -66,6 +74,8 @@ SSO 구성은 아래 단계에 자세히 설명된 대로 IdP 플랫폼과 AppsF
 * <Anchor target="_blank" href="/marketers/ko/docs/configure-appsflyer-sso-in-onelogin">OneLogin</Anchor>
 * <Anchor target="_blank" href="/marketers/ko/docs/configure-appsflyer-sso-in-ping-identity">Ping Identity</Anchor>
 
+<div id="setup-overview-for-other-idp-platforms" />
+
 #### 다른 IdP 플랫폼에 대한 설정 개요
 
 다른 IdP 플랫폼을 구성하는 과정은 아래에 설명되어 있습니다:
@@ -73,6 +83,8 @@ SSO 구성은 아래 단계에 자세히 설명된 대로 IdP 플랫폼과 AppsF
 * SAML 2.0 프로토콜을 사용하여 IdP 플랫폼에서 AppsFlyer 앱을 생성하고, IdP 플랫폼 내에서 [AppsFlyer 인증서](#the-authentication-certificate)를 통합하십시오.
 * 새로 생성된 AppsFlyer 앱에 사용자를 할당하십시오.
 * AppsFlyer에서 사용할 IdP 인증서 또는 메타데이터를 가져오십시오( [2단계에서 언급된 대로: AppsFlyer 설정 --> 5. IdP 메타데이터 제공](#step-5-provide-idp-metadata)
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -99,19 +111,27 @@ SSO 구성 설정 페이지에 [접근하는 방법](#sso-구성-페이지에-�
    * [서비스 제공업체(앱스플라이어)](#서비스-제공업체앱스플라이어)
 2. **다음**을 클릭합니다.
 
+<div id="identity-provider-idp" />
+
 #### ID 제공업체(IdP)
 
 IdP 인증 플러그인 또는 웹페이지를 통해 로그인하는 사용자는 인증 후 앱스플라이어 웹페이지로 이동됩니다.
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > 이 옵션을 선택한 사용자는 IdP와 서비스 제공업체(앱스플라이어) 둘 다를 통해 로그인할 수 있습니다.
+
+<div id="service-provider-appsflyer" />
 
 #### 서비스 제공업체(앱스플라이어)
 
 유저는 <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">앱스플라이어 SSO 로그인 페이지</Anchor>에서 **SSO로 로그인**을 클릭하고 이메일 주소를 입력하여 앱스플라이어에 들어갈 수도 있습니다. 그들은 인증을 위해 IdP로 안내되고 앱스플라이어 홈페이지로 리디렉션됩니다.
 
 [<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -140,6 +160,8 @@ IdP 인증 플러그인 또는 웹페이지를 통해 로그인하는 사용자�
 **이 단계를 수행하려면:**
 
 * 인증서 유형을 선택하고 **다음**을 클릭하세요.
+
+<div id="note-5" />
 
 > 📘 **참고**
 >
@@ -183,6 +205,8 @@ IdP 인증 플러그인 또는 웹페이지를 통해 로그인하는 사용자�
 
 IdP와 앱스플라이어의 두 플랫폼에서 모두 SSO 구성을 완료한 후 유저가 [URL 콜백 방법](#single-signon-url-configuration) (IdP 또는 서비스 제공업체(앱스플라이어) 중 **하나**를 사용하여 앱스플라이어에 로그인할 수 있는지 확인하세요(둘 다는 아님).
 
+<div id="test-authentication-via-your-idp" />
+
 #### IdP를 통한 인증 테스트
 
 IdP를 통해 로그인하도록 인증을 구성한 경우, 유저가 IdP 플러그인이나 웹페이지에서 앱스플라이어에 들어갈 수 있는지 확인하세요.
@@ -191,6 +215,8 @@ IdP를 통해 로그인하도록 인증을 구성한 경우, 유저가 IdP 플�
 2. 시크릿 모드로 웹페이지를 엽니다.
 3. IdP 웹페이지로 이동합니다. IdP에 로그인되어 있지 않으므로 인증 과정을 거치게 됩니다. 해당 유저로 로그인하세요.
 4. 앱스플라이어를 검색하고 선택합니다. 앱스플라이어 홈페이지로 이동됩니다. 이는 프로세스가 성공했음을 나타냅니다.
+
+<div id="test-authentication-via-your-service-provider-appsflyer" />
 
 #### 서비스 제공업체(앱스플라이어)를 통한 인증 테스트
 
@@ -210,11 +236,15 @@ IdP를 통해 로그인하도록 인증을 구성한 경우, 유저가 IdP 플�
 
 </Accordion>
 
+<div id="manage-sso-configuration" />
+
 ## SSO 구성을 관리하십시오.
 
 SSO 구성을 설정한 후에는 구성을 편집하거나 제거할 수 있습니다.
 
 SSO 구성 페이지에 [접근하는 방법](#sso-구성-페이지에-액세스하십시오)을 확인하십시오.
+
+<div id="zd-edit-sso" />
 
 <div id="edit-sso" />
 
@@ -265,6 +295,8 @@ SSO 구성 페이지에 [접근하는 방법](#sso-구성-페이지에-액세스
 | 이메일 주소의 기호 | SSO는 이메일 주소에 + 기호가 포함된 이메일 주소를 지원하지 않습니다.<br /><br />예: my+customer@demo.com<br /><br />이것이 있으면 로그인 실패가 발생합니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

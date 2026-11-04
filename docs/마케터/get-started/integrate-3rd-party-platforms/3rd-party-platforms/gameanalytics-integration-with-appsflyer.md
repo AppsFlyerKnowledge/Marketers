@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 매체 소스</Anchor>는 제3자와 데이터 공유를 제한합니다. 따라서 포스트백 전송 설정에 관계없이 제한된 이벤트 포스트백은 이 파트너에게 전송되지 않습니다.
@@ -55,10 +57,14 @@ Google Analytics 설정 윈도우는 *연동* 탭만 사용합니다.
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 여기서 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 ***파트너 활성화*** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -66,11 +72,15 @@ Google Analytics 설정 윈도우는 *연동* 탭만 사용합니다.
 
 ![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 이 섹션을 사용하여 이러한 포스트백 전송을 정의합니다.
 
 ![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+
+<div id="in-app-event-settings" />
 
 ### 인앱 이벤트 설정
 

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 기존 앱스플라이어 iOS SDK/iOS SDK V6와 래퍼 연동을 업데이트합니다.
 
+<div id="about-ios-sdk-v6" />
+
 ## iOS SDK V6 소개
 
 이 문서는 SDK V6에 관련된 참고자료입니다.
@@ -38,6 +40,8 @@ x-zendesk:
 * API 메서드가 이전 버전과 다릅니다.
 
 SDK V6 관련 상세 내용과 그 버전을 앱스플라이어 SDK 기존 버전이 설치되지 않은 새 앱에 설치하는 방식은 <Anchor target="_blank" href="/marketers/ko/docs/sdk-integration-overview">마케터용 iOS SDK 연동 가이드</Anchor>를 참고하십시오.
+
+<div id="update-to-ios-sdk-v6" />
 
 ## iOS SDK V6로 업데이트하기
 
@@ -326,6 +330,8 @@ extension AppDelegate: AppsFlyerLibDelegate {
 <Anchor target="_blank" href="/marketers/ko/docs/measuring-push-notification-re-engagement-campaigns">푸시 알림 지침</Anchor>을 따라 handlePushNotificationData 메서드를 이용하여 푸시 알림이 연동되었음을 확인합니다.
 
 </Accordion>
+
+<div id="plugins" />
 
 ## 플러그인
 

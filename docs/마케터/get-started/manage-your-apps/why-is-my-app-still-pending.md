@@ -30,6 +30,8 @@ x-zendesk:
 
 ![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## 무슨 일일까요?
 
 앱스플라이어는 자동으로 앱의 상태를 하루에 여러 번 확인합니다.
@@ -37,6 +39,8 @@ x-zendesk:
 앱스플라이어가 앱 상태를 확인할 때 앱이 스토어에 라이브 되지 않은 경우 앱은 대시보드에 등록대기 중으로 나타납니다. 앱이 마침내 iTunes 또는 Google에 배포되면 앱이 활성 상태로 업데이트되고 앱 로고가 배포된 앱의 고유 로고로 변경됩니다.
 
 대시보드에서 앱의 상태는 데이터 수집 및 측정에 아무런 영향을 미치지 않습니다. 앱이 Google Play 또는 App Store에 배포되어 있고 사용자가 앱을 설치하고 앱과 상호 작용하는 경우 설치 및 인앱 이벤트 데이터는 대시보드에 그대로 표시됩니다.
+
+<div id="refreshing-the-app-status" />
 
 ## 앱 상태 새로고침
 
@@ -50,6 +54,8 @@ x-zendesk:
    만약 앱의 상태가 변경되지 않았다면, 앱은 여전히 등록대기 중으로 보이게 됩니다. 만약 상태가 변경되었다면, 상태가 라이브로 바뀌고 로고가 업데이트 될 것입니다.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+
+<div id="store-country" />
 
 ## 스토어 국가
 
@@ -65,6 +71,8 @@ x-zendesk:
 2. **앱스토어 국가(App Store Country)** 아래 정확한 국가를 선택해주세요.
 3. 하단으로 스크롤한 후 **설정 저장(Save Settings)** 을 눌러 변경된 정보를 저장해주세요.
 4. 앱이 여전히 등록대기 중으로 보인다면, [**상태 새로 고침(Refresh Status)** 을 클릭해주세요.](/docs/why-is-my-app-still-pending#앱-상태-새로고침)
+
+<div id="android" />
 
 ### 안드로이드
 

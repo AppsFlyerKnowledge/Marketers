@@ -30,6 +30,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## SDK API를 통한 노출 수준 광고 수익 보고
 
 **광고 수익 보고 옵션**
@@ -43,6 +45,8 @@ x-zendesk:
 **참고:**
 
 * 광고 수익 노출은 앱스플라이어에서 수집 및 처리되지만 인앱 패키지에는 포함되지 않습니다.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### SDK API를 사용한 광고 수익 보고
 
@@ -79,6 +83,8 @@ x-zendesk:
 * **오전 1시와 이후 매시간마다 업데이트되는 DataLocker 노출 수준 주제,**
 * **UTC 오전 5시와 이후 매 4시간마다 업데이트되는 앱스플라이어 활동 및 코호트 보고서.**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## 앱스플라이어 광고 수익 SDK API 구현
 
 **앱스플라이어 광고 수익 SDK API를 구현하려면**:
@@ -86,6 +92,8 @@ x-zendesk:
 1. <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">연결하려는 파트너를 위해 앱스플라이어에서 SDK 수준 광고 수익을 활성화하십시오.</Anchor> **참고**: 이 과정은 각 앱에 대해 개별적으로 진행해야 합니다.
 2. 개발자에게 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">이 설명서</Anchor>를 사용하여 귀사의 앱스플라이어 광고 수익 SDK API를 통합하도록 요청하세요.
 3. SKAdNetwork 대시보드에서 광고 수익을 기록하려면 <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">SKAN 광고 수익 지침</Anchor>을 따르세요.
+
+<div id="traits-and-limitations" />
 
 ## 특성 및 한계
 

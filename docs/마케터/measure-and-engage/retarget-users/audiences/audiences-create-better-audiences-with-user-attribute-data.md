@@ -27,6 +27,8 @@ x-zendesk:
 
 [altUserAttributionNavigationXL3\_us-en.pngalt](https://support.appsflyer.com/hc/article_attachments/30448659840785)
 
+<div id="about-user-attributes" />
+
 ## 사용자 속성에 관하여
 
 이벤트 기반 데이터와 달리  사용자 속성은 귀사의 사용자가 귀사와 공유하는 일반적인 특성입니다. 이 속성들은 성별, 나이, 생일, 국가처럼 정적일 수 있고, 게임의 사용자 점수처럼 동적일 수 있습니다.
@@ -62,6 +64,8 @@ x-zendesk:
 
 오디언스에서 사용자 속성(좋아하는 스포츠와 게임 점수)을 생성합니다. 이를 통해 규칙 세트가 CRM 데이터에 액세스할 수 있게 됩니다.
 
+<div id="scenario-user-attributes" />
+
 #### 시나리오 사용자 속성
 
 | 이름 | 형식 | 수준 |
@@ -76,6 +80,8 @@ x-zendesk:
 [alt유저속성예.jpgalt](https://support.appsflyer.com/hc/article_attachments/30448652652561)
 
 </Accordion>
+
+<div id="implement-user-attributes" />
 
 ## 유저 속성 구현
 
@@ -137,7 +143,7 @@ x-zendesk:
 | --- | --- |
 | <span id="search-and-filter"></span>검색 및 필터 | 속성 이름, 앱 이름, 속성 수준별로. |
 | <span id="sort-by"></span>정렬 기준 | 표 행을 정렬하려면 열 머리글을 클릭하세요. |
-| <span id="import-data"></span>데이터 가져오기 | <ul><li>[CSV로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[API로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
+| <span id="zd-import-data"></span><span id="import-data"></span>데이터 가져오기 | <ul><li>[CSV로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-csv)</li><li>[API로 데이터 가져오기](/docs/audiences-create-better-audiences-with-user-attribute-data#import-data-by-api)</li></ul> |
 | <span id="change-api-import-key"></span>API 가져오기 키 변경 | **API 가져오기 키를 변경하려면:**<ol><li>**데이터 가져오기**를 클릭합니다.</li><li>**API**를 선택하세요.</li><li>**가져오기 키y** *새로고침*을 클릭합니다.</li></ol>**참고!** 스크립트에 내장된 키가 있는 경우 새 키로 업데이트하세요. |
 
 </Accordion>
@@ -247,6 +253,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 }
 ```
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens#광고주">API 토큰 V2.0</Anchor>을 사용하여 Authorization Bearer 헤더로 요청을 인증해야 합니다.
@@ -337,15 +345,19 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 
 <Accordion title="제한 사항">
 
+<div id="general-limitations" />
+
 #### 일반 제한 사항
 
 * CSV/ API 가져오기 데이터는 정수(완전한 숫자)만 지원됩니다. 실수형(소수점) 숫자는 지원되지 않습니다. **예시:** "점수" 속성 값은 90이 될 수 있지만 90.5는 될 수 없습니다.
 * 유저 속성 데이터는 출력하거나 다운로드할 수 없습니다.
-* #### 속성 값 제한:
+* #### <span id="attribute-value-limitations"></span>속성 값 제한:
 
   * 속성 값에 쉼표, 점 또는 기타 특수 문자를 사용할 수 없습니다.
   * 문자열 속성 값의 길이는 40자로 제한됩니다.
   * 속성 값은 0으로 시작할 수 없습니다.
+
+<div id="api-import-limitations" />
 
 #### API 가져오기 제한
 
@@ -358,6 +370,8 @@ https://hq1.appsflyer.com/api/user-attributes-import-api/set-user-data
 "device_id": "39e123.......",
 "customer_id": "",
 ```
+
+<div id="csv-import-limitations" />
 
 #### CSV 가져오기 제한 사항
 

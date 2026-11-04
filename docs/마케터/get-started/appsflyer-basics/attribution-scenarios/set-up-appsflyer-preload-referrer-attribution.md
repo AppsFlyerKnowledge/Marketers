@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 앱스플라이어는 프리로드 리퍼러를 사용하여 인스톨을 프리로드 캠페인에 어트리뷰션하며, 마케터는 OEM(주문자 상표부착 생산자), 이동통신사 및 앱 검색 파트너와 계약을 맺어 공장에서 또는 사용자가 기기를 처음 실행할 때 앱을 미리 로드합니다.
 
+<div id="overview" />
+
 ## 개요
 
 프리로드 캠페인에서 OEM(주문자 상표부착 생산자), 이동통신사, 앱 검색 파트너는 사용자가 앱을 사용하기 전에 기기에 앱을 미리 로드합니다. 이 작업은 공장의 OEM 또는 첫 번째 디바이스 활성화 시 제공업체가 수행할 수 있습니다.
@@ -35,9 +37,13 @@ x-zendesk:
 * 앱 업데이트 및 앱 재다운로드에 대한 투명한 지원.
 * 첫 번째 장치 활성화와 첫 번째 앱 실행 사이의 가시성 및 측정 능력을 제공합니다. 이를 통해 특정 파트너가 앱을 미리 로드하여 활성화된 디바이스가 몇 대인지 확인하고, 앱이 처음 실행된 시점을 확인할 수 있습니다.
 
+<div id="partners-supporting-preload-referrer-campaigns" />
+
 ## 프리로드 리퍼러 캠페인을 지원하는 파트너
 
 <table><thead><tr><th rowspan="2">파트너</th><th rowspan="2">PID</th><th colspan="2">프리로드 리퍼러 캠페인 옵션 <a href="./set-up-appsflyer-preload-referrer-attribution#프리로드-리퍼러-옵션"><span>자세히 알아보기</span></a> </th></tr><tr><th>프리로드</th><th>클릭하여 다운로드</th></tr></thead><tbody><tr><td><a href="#특징-및-제약-사항">Samsung</a></td><td>samsung_int</td><td><span>✓</span></td><td> </td></tr><tr><td>Digital Turbine On Device</td><td>digitalturbine_int</td><td><span>✓</span></td><td>업데이트 예정</td></tr><tr><td>Unity의 Aura</td><td>aura_int</td><td><span>✓</span></td><td>업데이트 예정</td></tr><tr><td>Appnext</td><td>appnext_int</td><td><span>✓</span></td><td>업데이트 예정</td></tr><tr><td>Glance<br/> </td><td>glance_int</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
+
+<div id="preload-referrer-options" />
 
 ## 프리로드 리퍼러 옵션
 
@@ -55,6 +61,8 @@ x-zendesk:
 
 * 개요 대시보드  이 수값은 프리로드 파트너(미디어 소스) 및 캠페인 수준에서 집계됩니다.
 * **로데이터:** 로데이터: 인게이지먼트는 데이터 락커를 통해서만 사용할 수 있는 클릭 리포트서에서 사용할 수 있습니다. 원래 URL 필드에서 찾을 수 있으며 af\_engagement\_type 파라미터에서 프리로드 또는 클릭 투 다운로드로 식별할 수 있습니다. 인스톨인 경우 이전 섹션의 표를 참조하여 검색 유형이 로데이터에 어떻게 표시되는지 확인합니다.
+
+<div id="set-up-preload-referrer-attribution" />
 
 ## 프리로드 리퍼러 어트리뷰션 설정
 
@@ -76,6 +84,12 @@ x-zendesk:
 7. 프리로드 파트너에게 캠페인에 기여할 준비가 되었음을 알립니다.
 
 
+
+<div id="traits-and-limitations" />
+
+<div id="set-up-samsung-preload-referrer-attribution" />
+
+<div id="samsung-preload-referrer" />
 
 ### 특징 및 제약 사항
 

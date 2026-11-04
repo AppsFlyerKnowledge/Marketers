@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 통합 파트너인 ByteDance Ads China(Ocean Engine)는 여러 머신러닝 지원 콘텐츠 플랫폼을 운영하는 인터넷 기술 회사입니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > ByteDance Ads China를 통해 안드로이드 앱을 홍보하려면 <Anchor target="_blank" href="/marketers/ko/docs/sdk-integration-overview">앱스플라이어 SDK 연동 - 안드로이드</Anchor>의 지침에 따라 OAID를 앱스플라이어 SDK로 보내야 합니다. Google Play 서비스는 중국에서 차단되었으며 OAID는 광고 어트리뷰션에 가장 많이 사용되는 안드로이드 디바이스 ID입니다.
@@ -30,6 +32,8 @@ x-zendesk:
 클릭 기반 모바일 어트리뷰션 외에도 ByteDance Ads China는 귀사가 앱스플라이어로 기록할 수 있는 뷰-쓰루 어트리뷰션도 제공합니다.
 
 ByteDance Ads China로 캠페인을 구성하려면 아래 단계를 따르세요.
+
+<div id="setting-up-bytedance-ads-china" />
 
 ## ByteDance Ads China 설정
 
@@ -58,6 +62,8 @@ ByteDance Ads China로 캠페인을 구성하려면 아래 단계를 따르세�
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partners" />
+
 ### 파트너 활성화
 
 여기서 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 ***파트너 활성화*** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
@@ -71,11 +77,15 @@ ByteDance Ads China로 캠페인을 구성하려면 아래 단계를 따르세�
 
 ByteDance Ads China로 뷰-쓰루 인스톨을 어트리뷰션하려면 이 옵션을 **설정하세요**. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 앱스플라이어는 사용자 설치 및 리인게이지먼트 후 ByteDance Ads China에 자동 포스트백을 보낼 수 있습니다. 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
 
 ![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -105,6 +115,8 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">어트리뷰션 링크 구조 및 파라미터에 대해 더 알아보기</Anchor>.  
 
 **어트리뷰션 링크를 생성하려면** <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">다음 지침</Anchor>을 따르십시오.
+
+<div id="click-attribution-link" />
 
 ### 클릭 어트리뷰션 링크
 
@@ -142,6 +154,8 @@ Ocean Engine에 로그인([https://ad.oceanengine.com/](https://ad.oceanengine.c
 
 앱스플라이어는 비용 API로 트위터 비용 정보를 가져옵니다. 앱스플라이어는 v1.0 ByteDance 시스템에서 실행되는 캠페인을 제외하고는 ByteDance에 대한 광고 수준 비용 데이터를 지원하지 않습니다.
 
+<div id="api-dimensions-supported" />
+
 ### API로 지원되는 데이터
 
 | 지역 | 미디어 소스 | 캠페인 | 광고 세트 | 광고 | 기타 |
@@ -177,6 +191,8 @@ Ocean Engine에 로그인([https://ad.oceanengine.com/](https://ad.oceanengine.c
 이 탭에서는 ByteDance Ads China에 애드 네트워크, 에이전시 또는 양쪽 모두로 활동하는지에 따라 부여할 권한을 선택할 수 있습니다. ByteDance Ads China에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 ByteDance Ads China에 제어 권한을 부여할 수 있습니다.
 
 이 토글을 사용하여, 앱에 대한 자체 설정 권한을 애드 네트워크에 부여할 수 있습니다.
+
+<div id="ad-network-permissions" />
 
 ### 애드 네트워크 권한
 

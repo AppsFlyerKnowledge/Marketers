@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** PBA(People-Based Attribution)가 앱스플라이어의 업그레이드된 웹 측정 솔루션인 웹 성과 측정(Web Performance Measurement)으로 대체됩니다. 본 문서에서는 변경 사항, 마이그레이션 단계, 리포트 및 서버 사이드 연동을 위한 전체 필드 매핑 정보를 안내합니다.
 
+<div id="why-were-upgrading-your-web-measurement" />
+
 ## 웹 측정을 업그레이드하는 이유
 
 웹 측정이 그 어느 때보다 중요해졌습니다. 웹사이트는 많은 사용자 전환을 발생시키는 공간이자 모바일 앱으로 향하는 여정이 시작되는 지점입니다. 웹사이트는 단순한 랜딩 페이지가 아닙니다. 퀴즈 플로우, 개인화된 온보딩, 페이월, 웹스토어로 이루어진 완전한 유입 파이프라인으로, 보다 적은 비용으로 구매 의도가 높은 사용자를 확보하게 되는 경우가 많습니다.
@@ -42,9 +44,13 @@ x-zendesk:
 >
 > 수치상 약간의 차이가 발생할 수 있습니다. 웹 성과 측정의 기여 로직은 더욱 고도화되고 유연해졌기 때문에, 기존 PBA의 수치와 완전히 일치하지는 않습니다.
 
+<div id="web-performance-measurement-vs-pba" />
+
 ## 웹 성능 측정 vs. PBA
 
 <table><thead><tr><th>기능</th><th>설명</th><th>PBA</th><th>웹 성과 측정</th></tr></thead><tbody><tr><td colspan="4"><strong>Data</strong></td></tr><tr><td>데이터 최신성</td><td>리포팅에 데이터가 반영되기까지 얼마나 걸리나요?</td><td>✗ 일일</td><td>✓ 시간별 보고서, 약 2시간의 데이터 새로고침</td></tr><tr><td>데이터 모델</td><td>모바일 어트리뷰션 데이터와의 스키마 정렬</td><td>✗ 모바일과 다른 점</td><td>✓ 모바일 데이터와 얼라인되어 쉽게 결합하고 분석 가능</td></tr><tr><td colspan="4"><strong>리포팅</strong></td></tr><tr><td>액티비티 대시보드</td><td>이벤트 시간 기반 대시보드</td><td>✓ 지원됨</td><td>✓ 지원됨</td></tr><tr><td>코호트 대시보드</td><td>시간 경과에 따른 유입 코호트별 성과 분석</td><td>✗ 지원되지 않음</td><td>✓ 지원됨</td></tr><tr><td>Data Locker 로우 데이터</td><td>Data Locker 내보내기를 통한 로우 어트리뷰션 데이터 액세스</td><td>✓ 지원됨</td><td>✓ 지원됨</td></tr><tr><td>광고 수준 세분성</td><td>캠페인부터 소재 레벨까지의 리포트 세부 내역</td><td>✗ 대시보드 전용, 로우 데이터 제외</td><td>✓ 대시보드와 로우 데이터 모두에서 전체 캠페인 세분화</td></tr><tr><td>크로스 플랫폼 LTV</td><td>웹 및 모바일 사용자 여정을 LTV로 통합 산출</td><td>✗ 지원되지 않음</td><td>✓ 지원됨</td></tr><tr><td colspan="4"><strong>비용 및 신호</strong></td></tr><tr><td>웹 비용</td><td>웹 캠페인 광고 지출에 대한 인제스트 및 리포트</td><td>✗ 지원되지 않음</td><td>✓ 지원됨</td></tr><tr><td>포스트백 최적화</td><td>최적화 신호를 광고 네트워크로 다시 전송</td><td>✗ 지원되지 않음</td><td>✓ 지원됨</td></tr><tr><td colspan="4"><strong>구현</strong></td></tr><tr><td>Web SDK(픽셀)</td><td>웹 방문 및 이벤트 측정을 위한 클라이언트측 SDK</td><td>✓ 지원됨</td><td>✓ 동일한 SDK, 코드 변경 필요 없음</td></tr><tr><td>S2S 지원</td><td>방문 및 이벤트에 대한 전체 서버 측 측정</td><td>✗ 이벤트 전용</td><td>✓ 이벤트 및 방문 전체 서버 측 구현 지원</td></tr><tr><td colspan="4"><strong>어트리뷰션 엔진</strong></td></tr><tr><td>어트리뷰션 기간</td><td>룩백, 어트리뷰션, 리인게이지먼트 및 비활성 기간 구성</td><td>✗ 룩백 윈도우만 클릭</td><td>✓ 5개 기간 구성(전체 제어)</td></tr><tr><td>커스텀 UA 이벤트</td><td>첫 방문 이의 사용자 획득으로 간주되는 이벤트 정의</td><td>✗ 첫 방문만 가능</td><td>✓ 모든 커스텀 이벤트(예: 가입, 구매)</td></tr><tr><td>UA vs. 리타겟팅</td><td>신규 유입 및 리인게이지먼트 시 별도의 크레딧</td><td>✗ UA 컨셉 없음, 라스트 터치로 인한 이벤트</td><td>✓ 전용 UA 및 리타겟팅 뷰(이중 어트리뷰션 크레딧 포함)</td></tr></tbody></table>
+
+<div id="migrate-to-web-performance-measurement" />
 
 ## 마이그레이션 단계
 
@@ -62,6 +68,8 @@ x-zendesk:
 >
 > 수치상 약간의 차이가 발생할 수 있습니다. 웹 성과 측정의 기여 로직은 더욱 고도화되고 유연해졌기 때문에, 기존 PBA의 수치와 완전히 일치하지는 않습니다. <Anchor target="_blank" href="/marketers/ko/docs/about-traffic-source-resolution#1단계-방문-기록">세션 기록 로직</Anchor> 자체는 변경되지 않으며, 시장 표준대로 30분간의 액티비티 동안 세션이 유지됩니다.
 
+<div id="capabilities-being-discontinued" />
+
 ## 지원 중단되는 기능
 
 | 기능 | 변경된 내용 | 세부 정보 |
@@ -71,6 +79,8 @@ x-zendesk:
 | 소급 재계산 | 기본 30분의 지연 시간 이후에는 과거 데이터 소급 계산이 적용되지 않습니다. | 30분의 지연 시간 이후 어트리뷰션이 최종 확정되며, 이 시간 동안 사용자가 본인을 식별할 수 있는 유예 시간이 제공됩니다. |
 | 로우 데이터 필드 | 모바일 관련 필드는 웹에서 더 이상 지원되지 않습니다. 일부 필드명이 변경되고 일부 값이 변경됩니다. | 아래 [로우 데이터 필드 매핑 부록을](#부록-로우-데이터-보고서-변경-사항) 참조하십시오. |
 | 후기 S2S 이벤트 | 해당 이벤트가 발생한 UTC 기준 일자가 종료된 후 30분을 초과하여 수신된 이벤트도 수용은 되지만, 해당 이벤트의 발생 시간은 앱스플라이어가 수신한 시간으로 대체됩니다. | 이벤트를 일별로 일괄 업로드하기보다는 이벤트 발생 후 가급적 30분 이내에 실시간으로 전송하는 것을 권장합니다. 정확한 어트리뷰션은 이벤트가 발생한 시점과 최대한 가까운 때에 수신되는 것에 달려 있습니다. 이는 웹 환경의 동작 방식을 기존 모바일 동작 방식과 동일하게 맞추어 줍니다. |
+
+<div id="raw-data-field-mapping" />
 
 ## 부록: 로우 데이터 보고서 변경 사항
 
@@ -240,6 +250,8 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 
 </Accordion>
 
+<div id="pba-web-s2s-to-new-s2s-api-migration" />
+
 ## 부록: PBA 웹-S2S에서 새로운 S2S API로 마이그레이션
 
 PBA Web <Anchor target="_blank" href="/marketers/ko/docs/web-server-to-server-events-api-for-pba-web-s2s">서버 간 이벤트 API(Web-S2S)</Anchor>를 통해 이벤트를 전송 중이신 경우, <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-s2s-api-for-web-performance-measurement">신규 S2S API</Anchor>로 전환하세요. 신규 API는 방문과 이벤트를 모두 지원하므로 웹사이트를 완전한 서버 사이드 방식으로 운영할 수 있습니다. 기존 PBA의 S2S는 이벤트만 수신했습니다.
@@ -381,6 +393,8 @@ Present this inventory to me and wait for my confirmation before proceeding.
 ```
 
 </Accordion>
+
+<div id="traffic-source-resolution-pba-vs-web-performance-measurement" />
 
 ## 부록: 트래픽 소스 해상도, PBA vs. 웹 성과 측정
 

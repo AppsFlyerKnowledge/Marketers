@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 사전 정의된 이벤트 이름 목록과 이벤트 파라미터를 확인하여, 앱 설치 후 인앱 이벤트(예: 로그인, 가입, 인앱 구매)를 기록하세요.
 
+<div id="overview" />
+
 ## 개요
 
 인앱 이벤트를 발송하려면, 귀사의 개발자가 해당 코드 구현을 해야 합니다. 본 문서는 사전 정의된 이벤트 이름과 사전 정의된 파라미터에 대해 설명합니다.
 
 어떤 이벤트와 파라미터를 기록할지 판단하는 데 도움이 되도록, 비즈니스 분야별 예시와 흐름을 포함한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#recommended-events-by-business-vertical">문서</Anchor>를 참고하세요.
+
+<div id="predefined-event-names" />
 
 ## 사전 정의된 이벤트 이름
 
@@ -634,6 +638,8 @@ x-zendesk:
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 이 이벤트를 Meta ads StartTrial 이벤트와 매핑하고 수익을 연관시키려면 af\_revenue 대신 af\_price 파라미터를 사용하세요.
@@ -765,13 +771,19 @@ x-zendesk:
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 이 섹션에서 설명된 미리 정의된 이벤트 이름 이외에도 <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-in-app-event-mapping#사전-정의된-이벤트-매핑">Meta Ads는 속성 없이 전송되는 추가 이벤트</Anchor>를 제공합니다.
 
+<div id="predefined-event-parameters" />
+
 ## 미리 정의된 Event Parameter
 
 다음 섹션에서는 미리 정의된 Event Parameter 목록을 제공합니다. 각 Event Parameter는 Meta Ads, Google Ads, Snap, X Ads 및 Criteo에 대한 매핑이 포함되어 있습니다. 이벤트에 Event Parameter를 포함하도록 선택할 수 있습니다.
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -1341,6 +1353,8 @@ x-zendesk:
 
 **설명**: 총 구매 금액. af\_revenue는 앱스플라이어 플랫폼에서 수익으로 계산됩니다. 취소 또는 환불로 인한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#revenue-events">음수 수익</Anchor>도 포함됩니다.
 
+<div id="important" />
+
 > 🚧 **중요 사항!**
 >
 > 수익 값에는 쉼표, 통화, 특수 문자 또는 텍스트가 포함되지 않아야 합니다. 예를 들어, 수익 값은 1234.56이어야 합니다. 앱스플라이어는 소수점 다섯 자리까지의 정확도로 수익 가치를 제공합니다.
@@ -1521,6 +1535,8 @@ x-zendesk:
 * af\_튜토리얼\_아이디
 * af\_가상\_화폐\_이름
 * af\_기간\_초
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **요약:** 안드로이드 OAID를 수집하여 타사 안드로이드 앱 스토어의 설치에 기여합니다.
 
+<div id="about-oaid" />
+
 ## OAID 소개
 
 OAID(익명 장치 식별기 열기)는 사용자가 재설정할 수 있는 안드로이드 장치의 고유 식별자입니다. 이는 IMEI와 같이 재설정할 수 없는 장치 식별자에 대한 개인 정보 보호 대안으로 MSA(모바일 보안 연합), 중국 정보 통신 연구소 및 장치 제조업체에서 도입되었습니다.
@@ -29,6 +31,8 @@ OAID(익명 장치 식별기 열기)는 사용자가 재설정할 수 있는 안
 OAID는 일반적으로 Google Play 서비스를 사용할 수 없는 기기(즉, Google 광고 ID가 존재하지 않는 기기)에서 광고 측정 및 설치 속성에 사용됩니다.
 
 <span id="supported-devices"></span>OAID는 MSA에서 제공하는 SDK를 사용하는 모든 장치 또는 Huawei 모바일 서비스 (HMS) 코어 SDK를 사용하는 Huawei 장치에서 읽을 수 있습니다.
+
+<div id="integration" />
 
 ## 연동
 
@@ -65,6 +69,8 @@ OAID 통합은 3단계로 구성됩니다.
 * 개발자에게<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration">통합 지침</Anchor>을 따르도록 합니다.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

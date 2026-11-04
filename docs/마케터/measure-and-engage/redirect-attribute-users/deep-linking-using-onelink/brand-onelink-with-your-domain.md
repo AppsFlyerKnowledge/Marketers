@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## 브랜드 도메인
 
 * 브랜드 도메인은 브랜드와 도메인으로 어트리뷰션 링크를 브랜딩하는 데 사용됩니다. 위의 그림에 설명된 것을 토대로 예를 들어보겠습니다.
@@ -39,6 +41,8 @@ x-zendesk:
   * 보낸 사람 이메일과 일치하지 않는 링크 때문에 스팸으로 지정되는 일이 없습니다.
   * <Anchor target="_blank" href="/marketers/ko/docs/account-management-plans-payments-and-billing">브랜드 도메인은 앱스플라이어 유료 구독 플랜에 포함됩니다.</Anchor>
 
+<div id="principles-of-implementation" />
+
 ### 구현 원칙
 
 브랜드 도메인은 DNS (Domain Name System)에 정의된 전체 도메인을 원링크 서브 도메인(앱스플라이어 CNAME 대상)과 연결함으로써 구현됩니다. 이 작업은 DNS의 표준 설정을 통해 이루어지며, 앱스플라이어 내에서 브랜드 도메인을 설정해야 합니다. 또한, 브랜드 도메인을 지원하려면 앱 내에 일부 간단한 수정이 필요합니다.
@@ -46,6 +50,8 @@ x-zendesk:
 보통 IT 팀이나 DNS 호스팅 제공자 및 앱 개발자로 구성된 DNS 관리자의 도움이 필요합니다.
 
 하나의 원링크 서브도메인에는 여러 개의 전체 도메인을 연결할 수 있습니다. 즉, 여러 브랜드가 동일한 원링크 서브 도메인을 공유하여 사용할 수 있습니다.
+
+<div id="setting-up-branded-domains" />
 
 ### 브랜드 도메인 설정
 
@@ -57,6 +63,8 @@ x-zendesk:
 | 2 | 개발자 | [앱에서 브랜드 도메인 설정](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | 앱 코드에 약간의 변경 사항을 적용합니다. |
 | 3 | 마케터 | [브랜드 도메인 사용 및 테스트](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | 필요 시 | 마케터 | [브랜드 도메인 편집 및 삭제](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### 절차
 
@@ -93,6 +101,8 @@ x-zendesk:
      "앱스플라이어 CNAME이 발견되었습니다"가 표시됩니다.
    * CNAME을 찾을 수 없는 경우 앱스플라이어 CNAME 대상을 복사하여 DNS 관리자에게 보내고, 전체 도메인이 CNAME 대상과 연결되었는지 확인을 요청하십시오. DNS 관리자는 전체 도메인을 앱스플라이어 CNAME 대상으로 매핑해야 합니다. 그렇지 않으면 브랜드 도메인이 생성되더라도 작동하지 않습니다.
 
+     <div id="note" />
+
      > 📘 **참고**
      >
      > CNAME 레코드는 브랜드 도메인 생성일로부터 확인 대화 상자에 지정된 날짜까지의 7일 이내에 매핑되어야 합니다.   
@@ -101,15 +111,21 @@ x-zendesk:
 
 7. **완료**를 클릭합니다. 이제 브랜드 도메인이 있는 원링크 템플릿을 기반으로 새 링크를 만들 수 있습니다.
 
+   <div id="note-1" />
+
    > 📘 **참고**
    >
    > * 브랜드 도메인 없이 원링크 템플릿을 기반으로 이미 링크를 만든 경우에도 계속 작동합니다.
    > * 새 브랜드 도메인이 작동되기까지 최대 24시간이 걸릴 수 있습니다.
 
 
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
 #### CNAME 레코드 매핑을 위한 7일 기간 갱신하기
 
 새로운 브랜드 도메인은 전체 도메인의 CNAME 레코드가 브랜드 도메인 생성일로부터 7일 이내에 앱스플라이어에 매핑되지 않으면 작동하지 않습니다.
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -121,9 +137,13 @@ x-zendesk:
 2. 앱스플라이어에 아직 매핑되지 않은 브랜드 도메인으로 이동하십시오. 해당 도메인은 경고 아이콘(![alert.png](https://files.readme.io/7df53739ca5c629ec0bda789563f59717da9699986222705228f57e0d947c8de-30192946335761.png))으로 표시됩니다.
 3. 7일 기간을 갱신하려면 새로 고침 아이콘(<Image alt="refresh.png" src="https://files.readme.io/052b47c423612c1b0549f37ed6394373d37f28331e09f4c709601a7e5473bf2b-30192959741585.png" width="18px" />)을 클릭하세요.
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > 7일 기간을 갱신하지 않기로 했다면, 삭제 아이콘(<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />)을 클릭하여 브랜드 도메인을 삭제할 수 있습니다. 아직 앱스플라이어에 매핑되지 않은 브랜드 도메인만 삭제할 수 있습니다.
+
+<div id="custom-ssl-certificate-optional" />
 
 #### 사용자 지정 SSL 인증서 (선택 사항)
 
@@ -142,6 +162,8 @@ AppsFlyer에서 관리하는 SSL은 대부분의 고객에게 권장되는 기�
 6. 새 SSL 인증서를 받으면 앱스플라이어에 다시 업로드하세요.
 
 <Image alt="새 SSL 인증서를 AF.png 에 업로드" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -287,6 +309,8 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 
 <Accordion title="브랜드 도메인 편집, 검증 및 삭제">
 
+<div id="edit-a-branded-domain-mapping" />
+
 #### **브랜드 도메인 매핑을 편집하는 방법**
 
 기존 전체 도메인의 매핑을 다른 원링크 서브 도메인으로 변경할 수 있습니다. CNAME을 설정하지 않아도 됩니다.
@@ -298,9 +322,13 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 5. **다음을 클릭합니다.** CNAME을 설정하지 않아도 됩니다.
 6. **완료**를 클릭합니다.
 
+<div id="important" />
+
 > ❗️ **경고**
 >
 > 활성 캠페인에 대한 브랜드 도메인을 수정하면, 링크 기능이 변경되거나 비활성화될 수 있습니다.
+
+<div id="verify-a-branded-domain-mapping" />
 
 #### **브랜드 도메인 매핑 확인**
 
@@ -310,20 +338,28 @@ AppsFlyerLib.shared().oneLinkCustomDomains = ["promotion.greatapp.com", "click.g
 2. 확인하려는 브랜드 도메인으로 이동합니다.
 3. 확인 아이콘을 클릭하세요.(<Image alt="verify-2.png" src="https://files.readme.io/4ac94a535e9101b3e727351f67df8917c0870d6ede8ec963de8c5528893b8e2b-30192946342929.png" width="17px" />)
 
+<div id="note-5" />
+
 > 📘 **참고**
 >
 > CNAME 레코드가 아직 매핑되지 않아 인증에 실패한 경우, 인증 실패 대화 상자에 표시된 날짜까지 최대 7일의 기간 내에 매핑을 완료할 수 있습니다.
 > 지정된 날짜까지 CNAME 레코드가 매핑되지 않으면, 반드시 7일 기간을 갱신해야 합니다.
 
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
 #### **도메인 CNAME 레코드가 더 이상 앱스플라이어와 연결되지 않음**
 
 CNAME 레코드가 앱스플라이어와 연결되지 않도록 설정을 변경하면 앱스플라이어에서 브랜드 도메인이 삭제됩니다.
+
+<div id="delete-a-branded-domain-mapping" />
 
 #### **브랜드 도메인 매핑 삭제**
 
 브랜드 도메인을 삭제하려면 앱스플라이어 CSM 또는 hello@appsflyer.com에 문의하십시오.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## 문제 해결, 특성 및 제한 사항
 

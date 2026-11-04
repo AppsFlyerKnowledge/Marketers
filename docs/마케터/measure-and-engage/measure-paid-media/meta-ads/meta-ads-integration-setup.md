@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Meta Ads를 앱스플라이어와 연동하는 방법에 대해 알아보세요.
 
+<div id="meta-ads-setup-guide" />
+
 ## Meta Ads 설정 가이드
 
 앱스플라이어로 Meta 모바일 앱 광고를 어트리뷰션 하는 데에 소요되는 시간은 얼마인가요?
@@ -36,6 +38,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/ko/docs/integrate-the-appsflyer-sdk">귀사의 앱에 앱스플라이어 SDK가 이미 연동되어 있고 Meta Ads에 앱이 정의되어 있다면, 1분도 채 걸리지 않습니다!</Anchor>
 
 모바일 어트리뷰션에는 Facebook 로그인이나 Facebook SDK 연동이 필요하지 않습니다. 아래 [단계별 설정](#기본-meta-ads-어트리뷰션-설정) 지침을 따르세요. 이후 Meta Ads의 [고급 설정 옵션을](#고급-meta-ads-어트리뷰션-설정) 확인하세요.
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## 기본 Meta Ads 어트리뷰션 설정
 
@@ -78,6 +82,8 @@ Meta Ads를 앱스플라이어와 연동하려면 먼저 <Anchor target="_blank"
 1. <Anchor target="_blank" href="https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fadvanced_mobile_measurement%2Fterms">Meta Ads</Anchor>를 방문하세요.
 2. 관련 앱 ID를 선택하세요.
 3. Meta의 고급 모바일 측정 약관에 동의하세요.
+
+<div id="important" />
 
 > 🚧 **중요 사항!**
 >
@@ -123,6 +129,8 @@ Meta Ads를 앱스플라이어와 연동하려면 먼저 <Anchor target="_blank"
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## 고급 Meta Ads 어트리뷰션 설정
 
 Meta Ads의 기본 어트리뷰션 설정을 마쳤다면 이제 고급 어트리뷰션을 설정을 알아보겠습니다.
@@ -131,11 +139,17 @@ Meta Ads의 기본 어트리뷰션 설정을 마쳤다면 이제 고급 어트�
 
 <Accordion title="안드로이드 설치를 위한 장치 수준 데이터 가져오기">
 
+<div id="google-play-install-referrer-api" />
+
 #### Google Play 설치 리퍼러 API
 
 Meta Ads는 Google Play 스토어로 사용자를 유도하는 안드로이드 앱 광고의 캠페인 메타데이터를 광고주와 공유합니다. 이 경우, 광고주는 Google Play 설치 리퍼러 API에서 어트리뷰션 필드를 확인할 수 있으며, 이를 사용하려면 <Anchor target="_blank" href="/marketers/ko/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">앱에 API를 연동해야 합니다.</Anchor> Google Play 설치 리퍼러 API를 통해 제공되는 필드는 `gp_referrer` 매치 타입으로 앱스플라이어 로우 데이터 리포트에 반영됩니다. 이는 디크립션 키가 제출되고 설치가 Meta Ads에 어트리뷰션된 경우에만 볼 수 있습니다. 이를 통해 앱스플라이어는 광고 ID가 없는 사용자(LAT를 설정한 사용자)의 기여도를 분석할 수 있습니다.
 
+<div id="meta-install-referrer" />
+
 #### **Meta 설치 리퍼러**
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -148,6 +162,8 @@ Google Play 설치 리퍼러 API 외에도, 앱스플라이어는 Meta 설치 �
 
 결과적으로 Meta에 의해 어트리뷰션된 설치이 증가하는 것을 로우 데이터 리포트에서 확인할 수 있습니다. Google Play 설치 리퍼러 API 또는 Meta 설치 리퍼러를 통해 설치 어트리뷰션이 기록된 경우, 해당 데이터는 로우 데이터 리포트에서 확인할 수 있습니다. Meta 설치 리퍼러를 통한 어트리뷰션에 사용할 수 있는 필드는 앱스플라이어 로우 데이터 리포트에 Facebook 앱 어트리뷰션의 경우 `fb_referrer`으로, Instagram 앱 어트리뷰션의 경우 `ig_referrer`으로 매치 타입이 채워집니다. 이는 디크립션 키가 제출되고 설치이 Meta Ads에 어트리뷰션된 경우에만 볼 수 있습니다. Meta 설치 리퍼러 디크립션 키는 Google Play 설치 리퍼러에 사용된 것과 동일한 키이기 때문에 다시 제출할 필요 없습니다.
 
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
 #### **리퍼러를 통해 제공되는 캠페인 어트리뷰션 필드:**
 
 * Ad ID
@@ -159,6 +175,8 @@ Google Play 설치 리퍼러 API 외에도, 앱스플라이어는 Meta 설치 �
 * Account ID
 * Channel
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * **Google Play 설치 리퍼러 API의 경우:**
@@ -166,6 +184,8 @@ Google Play 설치 리퍼러 API 외에도, 앱스플라이어는 Meta 설치 �
 >   * 채널 필드는 Google Play 리퍼러 API로부터 수신된 채널 값(Meta가 Google Play에 전송한 값)에 의해 결정됩니다. 빈 문자열이 수신되면 채널 필드에 '없음'이 표시됩니다.
 >
 > * **Meta 설치 리퍼러의 경우:** 업데이트 공지에 설명된 **전제 조건 및 필요한 조치/strong>를 참고하십시오.**
+
+<div id="meta-install-referrerfaq" />
 
 #### Meta 설치 리퍼러—FAQ
 
@@ -188,6 +208,8 @@ Google Play 설치 리퍼러 API 외에도, 앱스플라이어는 Meta 설치 �
 * 세부 타겟팅: 관심 세그먼트, 행동 및 고급 인구 통계 설정은 완화됩니다.
 * 커스텀 오디언스: 완화된 상태로 설정합니다.
 * "완화된" 기법의 어트리뷰션을 적용하려면 광고 캠페인 설정 시 "어드밴티지 상세 타겟팅(Advantage detailed targeting)" 체크박스를 반드시 선택해야 합니다. [![](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)](https://files.readme.io/58ad1f360c324a4e53290f2aa6bc18e30efea0a08f37012342f2811bbb022c6a-30354145604369.png)
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 불러오는 암호화된 데이터
 
@@ -238,10 +260,14 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 
 **연결된 Meta Ads 계정을 삭제하는 방법:** 작업 열에서 삭제를 원하는 계정에 마우스 커서를 이동하고 **연결 삭제**를 클릭합니다.
 
+<div id="notes" />
+
 > 📘 **참고**
 >
 > * Meta ads에 로그인된 경우 **f 로그인** 버튼을 클릭했을 때 창이 즉시 열렸다 닫힙니다. 이것은 정상적인 동작입니다.
 > * Meta Ads에 권한을 가지고 있는 사용자가 여러 명이라면, <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">전체 데이터를 얻기 위해서는</Anchor> 모든 사용자가 로그인하는 것이 좋습니다.
+
+<div id="cost-data-sync-status" />
 
 #### 비용 데이터 동기화 상태
 
@@ -283,6 +309,8 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
   * 라틴어(영어) 이외의 문자 집합: 2020년 1월 12일부터 Meta Ads에서는 한자 사용이 제한됩니다. 앱스플라이어는 지원되는 문자 집합 외의 문자 세트는 테스트하지 않았으므로, 포스트백에서 해당 문자 세트 지원 여부를 Meta Ads에서 확인한 후에만 사용해야 합니다.
 * 이벤트 이름은 대소문자를 구분합니다. 불일치를 방지하려면, 모든 미디어 소스와 앱 버전에서 이벤트 이름의 대소문자를 정확히 일치시켜 사용해야 합니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > Meta 광고는 <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-in-app-event-mapping#mapping-ad-revenue-data-for-campaign-optimization">af\_ad\_revenue 이벤트를 올바른 Meta 광고 이벤트에 매핑</Anchor>하여 광고 수익 데이터를 기반으로 캠페인을 최적화할 수 있습니다.
@@ -312,6 +340,8 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 
 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns#srn을-활용한-딥링킹">Meta Ads와 같이 SRN에서 사용자를 딥링크하는 방법</Anchor>에 대해 더 알아보세요.
 
+<div id="whatsapp-retargeting-campaign-attribution" />
+
 #### WhatsApp 리타겟팅 캠페인 어트리뷰션
 
 앱스플라이어는 iOS와 Android 모두에서 딥링크 어트리뷰션을 통한 리엔게이지먼트용 WhatsApp 마케팅 메시지 캠페인의 측정을 지원합니다.
@@ -331,6 +361,8 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 또한, **고급 데이터 공유**가 활성화되면 앱스플라이어는 이러한 이벤트의 기여를 측정합니다. 비활성화된 경우, IDFA가 있는 디바이스에서 발생한 포스트백과 이벤트만 전송 및 어트리뷰션됩니다.
 
 이 방법은 iOS 클릭-쓰루 및 뷰-쓰루 설치와 iOS 딥링크 리인게이지먼트를 단일 옵트아웃 기기와 이중 옵트아웃 기기에서도 어트리뷰션합니다. 어트리뷰션은 사용자의 마지막 터치를 기준으로 하며, 어트리뷰션 윈도우는 최대 24시간입니다.
+
+<div id="note-3" />
 
 > 📘 **참고**
 >
@@ -358,6 +390,8 @@ CCPA 개인 정보 보호 규정으로 인해 미국 캘리포니아에 거주�
 
 앱에서 광고 수익화를 위해 Meta Audience Network Ad Revenue(Meta 잠재고객 네트워크 광고 수익)를 사용하고 있다면, 앱스플라이어의 Meta 광고 수익을 기록할 수 있습니다. 이에 따라 인앱 구매 수익 데이터 유무와 관계없이 **사용자 수익의 종합적인 현황을** 파악할 수 있습니다.
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### Meta 오디언스 네트워크 광고 수익 기록
 
 1. **광고 수익** 탭에서 **광고 수익 데이터 가져오기**를 설정합니다.
@@ -384,9 +418,13 @@ Meta Ads가 다양한 작업을 수행하고 사용 가능한 권한에 따라 �
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## iOS용 데이터 집약형 이벤트 측정(AEM)
 
 앱스플라이어는 <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-aggregate-event-measurement-aem-for-ios">Meta Ads 데이터 집약형 이벤트 측정(AEM)</Anchor> 솔루션을 지원합니다. 이 솔루션은 iOS 전환 및 인앱 이벤트를 최적화하며 Meta Ads에서 iOS 리인게이지먼트를 어트리뷰션하는데 도움이 됩니다.
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Meta Ads 연동 문제 해결
 
@@ -458,9 +496,13 @@ Meta 앱 설치 캠페인을 설정할 때는 드롭다운 목록에서 앱을 �
 
 </Accordion>
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### Meta Ads와 관련된 iOS 14 업데이트
 
 앱스플라이어는 Meta Ads와의 MMP 연동 시 *Advertiser Tracking Enabled* 플래그를 항상 적용되도록 합니다. 즉, 귀하가 앱스플라이어 계정에서 별도로 취해야 할 조치는 없습니다. 이 정보는 2021년 2월 게재된 Meta Ads 앱 가이드 iOS 14 체크리스트에 따라 구성되었습니다.
+
+<div id="see-also-1" />
 
 > 📄 **참고 항목**
 >

@@ -152,6 +152,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="procedures" />
+
 ## 절차
 
 <div id="create-a-default-report" />
@@ -237,6 +239,8 @@ x-zendesk:
    * 리포트 생성 중에도 작업을 계속하거나, 추가 리포트를 만들거나, 다른 페이지로 이동할 수 있습니다.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

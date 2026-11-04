@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **요약:** 앱스플라이어에 앱을 추가하여 인스톨 및 인앱 이벤트에 대한 어트리뷰션 데이터를 얻고, 다양한 도구를 사용하여 데이터를 분석하는 방법을 알아보세요.
 
+<div id="overview" />
+
 ## 개요
 
 아직 대시보드에 앱을 추가하지 않았다면, 앱스플라이어에 로그인 시 앱 온보딩 페이지가 표시됩니다. 앱 온보딩은 앱을 추가하고 어트리뷰션 준비를 마칠 수 있도록 모든 단계를 안내합니다.
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### 앱 추가 마법사 시작
 
@@ -37,6 +41,8 @@ x-zendesk:
 **앱 온보딩 페이지에서 마법사를 시작하려면:**
 
 * **앱 추가** 단계에서 **앱 추가**를 클릭하고, 앱 추가 지침을 따르세요.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -52,6 +58,8 @@ x-zendesk:
 
 <Image alt="앱 추가(1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## 앱 추가
 
 [앱 추가 마법사에 들어간 후](#앱-추가-마법사-시작), 다음 단계를 따르세요.
@@ -61,6 +69,8 @@ x-zendesk:
 3. **내 앱 추가**를 클릭하세요.
 4. <Anchor target="_blank" href="/marketers/ko/docs/getting-started-onboarding-for-marketers#2단계-sdk--api-연동">SDK 연동</Anchor>에 사용할 개발 키를 복사합니다(나중에 <Anchor target="_blank" href="/marketers/ko/docs/app-settings#일반-앱-설정">앱 설정</Anchor> 페이지에서 다시 얻을 수 있습니다).
 5. 더 많은 앱을 추가하려면 **완료** 또는 **+ 다른 앱 추가**를 클릭하세요. 추가적인 앱 추가를 위해 이 과정을 반복하세요.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -73,6 +83,8 @@ x-zendesk:
 * 파트너 마켓플레이스에서 앱을 파트너와 연결하세요
 
 온보딩 프로세스를 완료하기 위한 <Anchor target="_blank" href="/marketers/ko/docs/getting-started-onboarding-for-marketers">모든 단계</Anchor>를 확인하세요.
+
+<div id="enter-app-details" />
 
 ### 앱 세부 정보를 입력하세요
 
@@ -166,6 +178,8 @@ x-zendesk:
 
         * **앱 URL** (타사 앱 스토어 또는 스토어 밖 위치에서 복사)
 
+        <div id="important" />
+
         > 🚧 **중요!**
         >
         > 앱이 둘 이상의 소스(즉, 구글 플레이, 타사 스토어 또는 스토어 밖 위치의 조합)에서 제공되는 경우 <Anchor target="_blank" href="/marketers/ko/docs/set-up-multi-store-android-attribution">다중 스토어 안드로이드 속성 설정</Anchor> 옵션을 고려하는 것이 중요합니다. 처음부터 제대로 구현하면 필요한 데이터에 필요한 형식으로 액세스할 수 있습니다.
@@ -213,6 +227,8 @@ x-zendesk:
 
 <Accordion title="웹(PBA)">
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > 웹 앱은 PBA(유저 중심 어트리뷰션) 기능을 위해 브랜드 번들에 포함할 웹사이트를 정의하는 곳입니다.
@@ -237,6 +253,8 @@ x-zendesk:
 * 최대 길이: 100자
 * XSS 태그는 허용되지 않습니다.
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > 웹 앱을 만든 후에는 삭제했다가 다시 만들지 않으면 해당 속성(URL 및 앱 이름)을 편집할 수 없습니다. 즉, **웹 앱이 속한 <Anchor target="_blank" href="/marketers/ko/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">브랜드 번들도 삭제</Anchor>해야 합니다.**
@@ -255,10 +273,14 @@ x-zendesk:
 
 웹 플랫폼을 사용하여 새로운 웹 앱을 만들고 웹 방문 및 전환을 웹 귀속을 사용하여 측정하십시오.
 
+<div id="before-you-begin" />
+
 #### **시작하기 전에**
 
 * 구형 사람 기반 귀속(PBA) 웹 앱은 “**웹 (PBA)”** 로 표시됩니다.
 * 구형 PBA 웹 앱에서 마이그레이션하는 경우 기존 PBA 웹 개발 키를 사용할 수 있습니다.
+
+<div id="to-add-a-web-app" />
 
 #### **웹 앱 추가**
 
@@ -341,6 +363,8 @@ x-zendesk:
 * 기본 도메인은 자동으로 **제외된 도메인**에 유형 **기본**으로 추가됩니다.
 
 각 구형 **웹 개발 키는 하나의** 새로운 웹 앱에만 재사용할 수 있습니다.
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -532,26 +556,38 @@ x-zendesk:
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### 추가 정보를 입력하세요(웹 앱에는 해당되지 않음):
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+
+<div id="select-currency" />
 
 #### **통화 선택**
 
 대시보드에 표시될 앱의 데이터 통화를 선택하세요. 수익 및 지출 이벤트는 이벤트 시점의 환율을 사용하여 이 통화로 변환됩니다. <Anchor target="_blank" href="/marketers/ko/docs/app-settings#localization-currency">더 보기</Anchor>: 앱의 통화 설정과 그 영향에 대해
 
+<div id="important-2" />
+
 > 🚧 **중요!**
 >
 > 앱에 사용할 통화를 선택할 때 주의하세요. 비용과 수익이 기록되면 변경이 불가능합니다.
+
+<div id="select-timezone" />
 
 #### **시간대 선택**
 
 여기서 선택한 시간대를 다른 어트리뷰션 파트너(예: Meta Ads 및 Google Ads)에서 설정한 시간대와 맞춥니다. 이를 통해 앱스플라이어 대시보드에 보고된 데이터와 해당 파트너에서 수신한 데이터 간의 일치도를 최대로 높일 수 있습니다.
 
+<div id="note-5" />
+
 > 📘 **참고**
 >
 > * 시간대가 설정되면 잠금 상태가 유지되어 다음 날까지 변경할 수 없습니다.
 > * 앱 시간대 설정과 그 영향에 대해 <Anchor target="_blank" href="/marketers/ko/docs/changing-app-time-zone-settings">더 보기</Anchor>.
+
+<div id="define-app-audience" />
 
 #### **앱 오디언스 정의**
 
@@ -561,22 +597,32 @@ x-zendesk:
 1. 아동 대상 앱의 준수 구현에 대한 <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">가이드</Anchor>를 열어 읽어보세요.
 2. 가이드를 읽었고 명시된 제어를 구현했음을 확인하려면 상자를 선택하세요.
 
+<div id="note-6" />
+
 > 📘 **참고**
 >
 > * 앱을 추가한 후 2주 후에, 아동 대상 앱의 개인정보 보호 설정을 완료했는지 확인하는 알림을 받게 됩니다. 확인 후 확인 메시지를 받게 됩니다. 알림 센터에서 언제든지 확인 메시지에 액세스할 수 있으며, <Anchor target="_blank" href="/marketers/ko/docs/audit-log">감사 로그</Anchor>에서 확인 세부 정보를 볼 수 있습니다.
 > * <Anchor target="_blank" href="/marketers/ko/docs/child-directed-apps-faq">아동 대상 앱에 관한 자주 묻는 질문</Anchor>을 참조하세요.
 
+<div id="manage-your-apps-in-bulk-via-api" />
+
 #### API를 통해 귀사의 앱을 대량으로 관리하세요
 
 계정 관리자는 UI의 주요 기능을 지원하는 전용 API를 사용하여 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">여러 앱을 대량으로 관리</Anchor>할 수 있습니다. 여기에는 앱 추가 및 삭제, 앱 설정 업데이트가 포함됩니다. API는 동일한 오류 검증 메커니즘도 포함하고 있습니다.
+
+<div id="note-7" />
 
 > 📘 **참고**
 >
 > 이 단계에서는 API를 통해 앱을 추가하고 앱 설정을 업데이트하는 것이 모바일 앱에서만 가능합니다. 모든 플랫폼에서 앱을 삭제할 수 있습니다.
 
+<div id="add-a-debug-or-testing-app" />
+
 ### 디버그 또는 테스트 앱을 추가하십시오.
 
 개발자가 **디버그**, **샌드박스** 또는 **테스트 앱**을 생성하는 경우, 해당 앱을 대시보드에 추가해야 합니다. 개발자가 앱으로 테스트를 시작하면, 데이터가 앱의 대시보드에 표시됩니다.
+
+<div id="note-8" />
 
 > 📘 **참고**
 >
@@ -587,6 +633,8 @@ x-zendesk:
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">안드로이드 지침</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">iOS 지침</Anchor>
 
+<div id="about-pending-apps" />
+
 ## 보류 중인 앱에 대하여
 
 보류 상태의 앱은 앱스플라이어 SDK를 시험하거나 디버깅할 때 유용할 수 있습니다.
@@ -594,6 +642,8 @@ x-zendesk:
 대시보드에서 앱 상태가 보류 중으로 표시되어도 데이터 수집 및 측정에는 영향을 미치지 않습니다. 앱이 앱 스토어에 보류 중이든 출시 중이든, 사용자가 앱을 인스톨 하고 상호작용하면 인스톨 및 인앱 이벤트 데이터는 대시보드에 동일하게 기록됩니다.
 
 귀사의 보류 중인 앱이 공개되면 앱스플라이어가 해당 앱의 상태를 감지하고 자동으로 업데이트하므로, 앱을 다시 추가할 필요가 없습니다. 보류 중인 앱과 관련된 정보 및 상태를 수동으로 새로 고치는 절차에 대해 <Anchor target="_blank" href="/marketers/ko/docs/why-is-my-app-still-pending">더 보기</Anchor>.
+
+<div id="troubleshooting" />
 
 ## 문제 해결
 
@@ -642,6 +692,8 @@ x-zendesk:
 이것은 사용자가 이전에 장치에 존재했던 앱을 운영 체제를 통해 다시 설치할 수 있기 때문에 발생합니다. 앱이 더 이상 App Store에서 제공되지 않더라도, 사용자는 여전히 설치할 수 있으며, 이러한 설치는 AppsFlyer에 기록됩니다.
 
 </Accordion>
+
+<div id="other-information" />
 
 ## 기타 정보
 

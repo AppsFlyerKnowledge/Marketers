@@ -25,6 +25,8 @@ x-zendesk:
 
 ![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
 
+<div id="overview" />
+
 ## 개요
 
 * 유지 또는 차단할 앱 인스톨 또는 인앱 이벤트를 필터링하고 선택하는 사용자 지정 조건 및 논리를 사용하여 규칙 작성기에서 유효성 검사 규칙이 정의됩니다.
@@ -85,6 +87,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="rule-builder" />
+
 ## 규칙 빌더
 
 규칙 빌더 UI는 대화식으로 규칙을 작성하도록 고안되었습니다. **팁!** 팁! 이 항목을 자세히 살펴보기 전에, 규칙 빌더를 잘 알고 실험해보십시오.
@@ -127,6 +131,8 @@ x-zendesk:
 모든 규칙에 다중 조건 및 조건 그룹을 추가할 수 있습니다.
 
 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라 정의됩니다.
+
+<div id="bulk-upload" />
 
 #### 대량 업로드
 
@@ -229,6 +235,8 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 
 </Accordion>
 
+<div id="additional-features" />
+
 ## 절차
 
 <div id="view-rule-list" />
@@ -263,6 +271,8 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 5. [선택 사항] 필요에 따라 조건 및/또는 조건 그룹을 추가합니다. [조건/조건 그룹 간에 관련 논리](/docs/implement-validation-rules-to-prevent-fraud#logic-between-conditions-and-condition-groups)를 선택해야 합니다.
 6. [선택사항] **트래픽 영향 평가**[를 클릭하여](/docs/implement-validation-rules-to-prevent-fraud#view-validation-rule-impact) 규칙이 트래픽에 영향을 주는지를 보십시오.
 7. **저장**을 클릭하세요.
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -314,6 +324,8 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 </Accordion>
 
 </Accordion>
+
+<div id="faq" />
 
 ## 자주 묻는 질문
 

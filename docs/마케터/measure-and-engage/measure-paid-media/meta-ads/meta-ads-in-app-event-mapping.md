@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 한눈에 보기: 앱의 풍부한 인앱이벤트를 앱스플라이어에서 메타 광고로 전송하세요.
 
+<div id="meta-in-app-events-mapping" />
+
 ## 메타 인앱이벤트 매핑
 
 광고주는 인앱이벤트(SDK 또는 서버 간)를 메타 사전 정의 이벤트에 매핑합니다. 광고주는 또한 각 <Anchor target="_blank" href="/marketers/ko/docs/measure-sessions">앱 실행</Anchor> 또는 확인된 모든 <Anchor target="_blank" href="/marketers/ko/docs/measure-uninstalls#앱-삭제-이벤트-매핑">앱 삭제</Anchor>에 대해 페이스북에 포스트백을 보낼 수 있습니다.
 
 이를 통해 광고주는 메타의 고급 최적화 기능을 활용하고 맞춤 및 유사 타겟 세그먼트를 구축할 수 있습니다.
+
+<div id="predefined-event-mapping" />
 
 ### 사전 정의된 이벤트 매핑
 
@@ -63,6 +67,8 @@ x-zendesk:
 * 이 *af\_ad\_revenue* 이벤트는 <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-cost-and-revenue-data">ROI360 고급 패키지</Anchor>가 포함된 플랜에서만 사용할 수 있습니다.
   * ROI360이 아닌 플랜은 다른 이벤트 이름을 사용하여 광고 수익 데이터를 보낼 수 있습니다.
 
+<div id="custom-in-app-events-mapping" />
+
 ### 커스텀 인앱 이벤트 매핑
 
 앱스플라이어를 사용하면 커스텀 메타 이벤트 식별자 옵션을 사용하여 메타로 전송할 커스텀 인앱이벤트를 매핑할 수 있습니다.
@@ -73,9 +79,13 @@ SDK에 설정된 이벤트 이름 및 이벤트 값(이벤트 파라미터 포�
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
 
+<div id="automatic-parameter-mapping-with-the-custom-event" />
+
 ### 사용자정의 이벤트와 자동 파라미터 매핑
 
 페이스북과 앱스플라이어의 밀접한 연동을 통해서, 앱스플라이어의 많은 표준 SDK 이벤트 파라미터는 페이스북 사전 정의 파라미터로 자동 매핑됩니다. 예를 들면, **af\_revenue** 파라미터는 페이스북의 **valueToSum** 파라미터로 변환됩니다. 따라서 페이스북에서 측정하고 최적화할 수 있는 이벤트당 수익을 전송할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -131,7 +141,7 @@ SDK에 설정된 이벤트 이름 및 이벤트 값(이벤트 파라미터 포�
 | af\_user\_score | fb\_user\_score |
 
 
-| **<span id="value-to-sum"></span>Meta event** |  |
+| **<span id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter"></span><span id="value-to-sum"></span>Meta event** |  |
 | --- | --- |
 | fb\_모바일\_수준\_달성 | none |
 | fb\_mobile\_add\_payment\_info | none |
@@ -148,6 +158,8 @@ SDK에 설정된 이벤트 이름 및 이벤트 값(이벤트 파라미터 포�
 | fb\_mobile\_content\_view | af\_가격 |
 | StartTrial | af\_가격 |
 | Subscribe | af\_수익 |
+
+<div id="event-and-parameter-limitations" />
 
 ## 이벤트 및 파라미터 제한
 
@@ -169,6 +181,8 @@ SDK에 설정된 이벤트 이름 및 이벤트 값(이벤트 파라미터 포�
 * 앱스플라이어의 이벤트 이름은 메타 이벤트 이름과 동일하게 지정할 수 있지만(예: fb\_price), 메타에 커스텀 이벤트로 전송해서는 안 됩니다.  
   **안전을 위해 메타 이벤트 이름과 동일한 이벤트 이름을 지정하지 마세요.**
 * 메타에서 인앱이벤트 포스트백 매핑을 수행하려면 오가닉을 포함한 모든 소스에서 이벤트 데이터를 가져오세요.
+
+<div id="important-1" />
 
 > 🚧 **중요!**
 >

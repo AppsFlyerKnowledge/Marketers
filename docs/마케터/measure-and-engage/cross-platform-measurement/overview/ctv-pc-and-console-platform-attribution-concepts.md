@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## 앱스플라이어 크로스 플랫폼 솔루션
 
 오늘날의 디지털 환경에서 성장 전문가들은 다양한 기기와 플랫폼에서 소비자에게 도달해야 하는 과제에 직면해 있습니다. 기존의 측정 접근 방식으로는 여러 플랫폼에 걸친 유저 여정의 전체 범위를 파악하는 데 한계가 있습니다. 크로스 플랫폼 측정은 마케팅 활동의 영향을 파악하고 정보에 기반한 의사 결정을 내리는 데 필수적입니다.
@@ -36,6 +38,8 @@ x-zendesk:
 광고주는 광고가 표시되는 플랫폼과 동일하거나 다른 플랫폼에서 앱을 홍보할 수 있습니다. 예를 들어, 광고주는 Steam 플랫폼에 Steam 앱 광고를 표시할 수 있습니다. 또는 예컨대 Google Ads를 통해 데스크톱 웹에 Steam 앱 광고를 표시할 수도 있습니다.
 
 광고주는 마케팅 전략이 무엇이든, 앱스플라이어와 연동하여 CTV, PC 및 콘솔 플랫폼 앱 설치 및 설치 후 이벤트를 유도한 소스(논오가닉 또는 오가닉)와 캠페인에 대한 어트리뷰션 데이터 및 성과 측정을 받습니다. 마케팅 담당자는 이러한 인사이트를 사용하여 사용자 생애 가치(LTV)를 계산하고 마케팅 활동을 측정 및 최적화합니다. <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">앱스플라이어 어트리뷰션에 대해 자세히 알아보기</Anchor>
+
+<div id="supported-platforms" />
 
 ### 지원되는 플랫폼
 
@@ -47,7 +51,9 @@ x-zendesk:
 1. 앱스플라이어의 측면 메뉴에서 **협업**> **파트너 마켓플레이스**를 선택하세요.
 
 
-1. <span id="list-of-specified-platforms"></span>앱스플라이어의 측면 메뉴에서 **협업**> **파트너 마켓플레이스**를 선택하세요.
+1. <span id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms"></span><span id="list-of-specified-platforms"></span>앱스플라이어의 측면 메뉴에서 **협업**> **파트너 마켓플레이스**를 선택하세요.
+
+<div id="cross-platform-attribution-flows" />
 
 ## 크로스 플랫폼 어트리뷰션 흐름
 
@@ -149,6 +155,8 @@ SRN에 대한 어트리뷰션은 결정론적 매칭을 통해 이루어집니�
 * <Anchor target="_blank" href="/marketers/ko/docs/cross-platform-landing-pages-with-smart-script">스마트 스크립트로 크로스 플랫폼 랜딩 페이지를 설정하는 방법 알아보기</Anchor>
 
 </Accordion>
+
+<div id="data-availability" />
 
 ## 데이터 가용성
 

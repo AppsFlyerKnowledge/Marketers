@@ -23,11 +23,19 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="ip-masking" />
+
 ## IP 차단
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
 > * AEM 데이터 공유는 <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-aggregate-event-measurement-aem-for-ios#aem-데이터-공유">IP 마스킹이 켜져 있는 경우</Anchor> 서버 간 및 SDK 이벤트 모두에 대해 지원되지 않습니다. 즉, 데이터는 메타 광고와 공유되지 않습니다.
+
+<div id="ip-masking-in-raw-data-reports" />
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -52,7 +60,7 @@ x-zendesk:
 > | 1월 15일 | 꺼짐 | User\_A 192.0.2.1  <br />User\_B 1.1.1.1  <br />User\_C 203.0.113.1 |
 
 
-1. **<span id="enabling-ip-masking"></span>앱스플라이어의 사이드 메뉴에서**  설정 > 앱 설정을 선택합니다.
+1. **<span id="turn-on-ip-masking"></span><span id="enabling-ip-masking"></span>앱스플라이어의 사이드 메뉴에서**  설정 > 앱 설정을 선택합니다.
 
 
 ![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)

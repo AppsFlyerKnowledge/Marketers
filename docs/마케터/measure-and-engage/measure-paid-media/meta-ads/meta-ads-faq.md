@@ -78,9 +78,13 @@ Meta Ads의 리타겟팅을 활성화하면 신규 사용자 유치(UA) 캠페�
 
 Google Play Install Referrer API를 사용하면 광고주는 Google Play Store에서 발생한 설치의 캠페인 정보와 같은 기여 데이터를 확보할 수 있습니다. 이 API는 <Anchor target="_blank" href="/marketers/ko/docs/basic-sdk-integration-guide#attribute-apps-published-on-google-play">앱 내에 반드시 연동</Anchor>되어야 하며, 설치 후 앱을 처음 열 때 리퍼러 데이터를 전달하는 방식으로 작동합니다. 필수 복호화 키를 제출하면 앱스플라이어의 로우 데이터 리포트에서 매칭 타입 `gp_referrer`와(과) 함께 어트리뷰션 필드를 확인할 수 있습니다.
 
+<div id="meta-install-referrer" />
+
 #### Google Play Install Referrer
 
 Meta Install Referrer는 디바이스 내부에 로컬로 저장된 추가 캠페인 메타데이터를 제공합니다. [앱스플라이어 SDK](https://dev.appsflyer.com/hc/docs/install-android-sdk#meta-install-referrer)를 통해 접근할 수 있습니다. 이는 클릭 및 임프레션 데이터를 모두 포함한 한층 더 풍부한 데이터를 확보할 수 있게 하고, 여러 세션에 걸친 유입까지 지원함으로써 Google Play Install Referrer를 보완합니다. Meta Install Referrer를 통한 귀속은 `fb_referrer` (Facebook) 및 `ig_referrer` (Instagram)과 같은 일치 유형을 사용합니다.
+
+<div id="campaign-attribution-fields" />
 
 #### 캠페인 귀속 필드
 
@@ -93,10 +97,14 @@ Meta Install Referrer는 디바이스 내부에 로컬로 저장된 추가 캠�
 * Account ID
 * Channel
 
+<div id="sdk-and-setup-notes" />
+
 #### SDK 및 설정 노트
 
 * Google Play 추천자 데이터에는 앱스플라이어 SDK 버전 5.4.0+가 필요합니다.
 * Meta 추천자 지원은 올바른 SDK 구성에 따라 달라집니다. 구현 세부정보는 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">이 게시판</Anchor>을 참조하세요.
+
+<div id="submitting-the-decryption-key" />
 
 #### 복호화 키 제출
 
@@ -259,11 +267,15 @@ iOS 유니버설 링크 및 Android 앱 링크는 유료 광고에서만 지원�
 
   여전히 검색할 수 있습니다 **캠페인, 광고 세트 및 광고 이름** GCD를 통해 - 제공되는 경우 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#meta-ads">Advanced Mobile Measurement (AMM)이 서명되었습니다</Anchor>. 이러한 경우, 해당 값들을 활용하여 자체 **커스텀 딥링크 로직**을 적용할 수 있습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > Meta의 데이터 공유 정책은 GCD를 통해 사용 가능한 세부 수준에 영향을 줄 수 있습니다. 사용 가능한 캠페인 수준 데이터를 최대화하려면 AMM이 서명되어 있는지 확인하세요.
 
 </Accordion>
+
+<div id="meta-ads-cost-faq" />
 
 ## Meta Ads 비용 FAQ
 
@@ -455,6 +467,8 @@ Meta Ads 로그인(위에서 설명함)을 수행하는 사용자가 실행 중�
 * **다이나믹 제품 광고 캠페인 데이터**: 다이나믹 제품 광고에 대한 데이터는 Facebook SDK를 통해서만 얻을 수 있습니다.
 * **기타 Meta Ads 기능**: 인증, 광고 수익화, 소셜 공유, 사용자 초대 등 어트리뷰션과 관련 없는 이유로 Facebook SDK가 필요할 수 있습니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 딥링킹 및 디퍼트 딥링킹과 관련된 상기 정보와 권장 사항은 라이브 광고와는 다른 메커니즘을 사용하는 Meta Ads의 사용 가능한 데모/미리 보기 도구를 사용하여 수행한 철저한 테스트를 기반으로 합니다.
@@ -474,6 +488,8 @@ Meta Ads 로그인(위에서 설명함)을 수행하는 사용자가 실행 중�
     iOS 14.5 이상에 대해 SKAN 어트리뷰션을 활성화하려면 <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">인앱이벤트를 Facebook Ads로 매핑</Anchor>해야 함을 알아두세요.
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## Meta Ads 어트리뷰션 FAQ
 
@@ -510,6 +526,8 @@ Meta Ads는 Google Play 외 다른 스토어, 예를 들어 바이두에 있는 
 3. 랜딩 페이지에는 **앱 다운로드** 버튼을 꼭 포함해야 합니다. 이 버튼은 APK가 있는 Google와 앱스토어 외 앱 마켓으로 직접 연결합니다.
 4. 리드가 버튼을 클릭하고 다른 스토어로 리디렉션됩니다. 앱 설치를 완료하면 앱스플라이어는 MMP API를 통해 해당 사용자를 Meta Ads에 어트리뷰트 합니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > Google와 앱스토어의 앱에 동일한 솔루션이 적용됩니다. 앱 마켓에 리디렉션하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">랜딩 페이지가 필요합니다.</Anchor>
@@ -525,6 +543,8 @@ Amazon 앱 어트리뷰션과 관련된 자세한 안내는 <Anchor target="_bla
 Meta Ads는 Meta Ads 계정을 기반으로 사용자를 식별합니다. 일부 사용자들은 동일한 Meta Ads 계정에 연동된 iOS 및 Android 기기를 가지고 있습니다.
 
 이러한 사용자가 Android 기기에서는 앱 광고를 클릭하거나 보지만 iOS 기기에는 앱을 설치하는 경우 Meta Ads는 자신이 설치를 생성한 것으로 간주합니다. 결과적으로 Android 캠페인 이름이 iOS 대시보드에 표시됩니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >

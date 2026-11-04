@@ -25,6 +25,8 @@ x-zendesk:
 
 > **한눈에 보기:** API를 통해 앱스플라이어 계정 또는 개별 앱에 대한 광고 수익 파트너 연동을 구성합니다.
 
+<div id="ad-revenue-partner-integration-api" />
+
 ## 광고 수익 파트너 연동 API
 
 광고 수익 파트너 연동 API는 다음과 같은 목적으로 사용됩니다.
@@ -42,6 +44,8 @@ API를 통해 광고 수익 파트너 연동을 설정하는 방법:
 2. 다음 표에 설명된 대로 API 요청에 포함할 파라미터를 준비합니다.
 3. 개발자에게 파라미터 값을 제공하고 개발 허브에서 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">연동 설정 API 지침</Anchor>을 따르도록 지시합니다.  
    연동은 다음 날 00:00 UTC에 적용됩니다.
+
+<div id="request-parameters" />
 
 #### 요청 파라미터
 
@@ -69,6 +73,8 @@ API를 통해 광고 수익 파트너 연동을 설정하는 방법:
 2. 개발자에게 개발 허브에서 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">리스트 연동 API 지침</Anchor>을 따르도록 하십시오.
 
 </Accordion>
+
+<div id="specs-and-limitations" />
 
 ### 사양 및 제한 사항
 

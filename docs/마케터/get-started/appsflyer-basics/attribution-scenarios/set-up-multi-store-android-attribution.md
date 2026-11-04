@@ -31,9 +31,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 여러 안드로이드 스토어에서 앱을 어트리뷰트하고 단일 앱 대시보드 또는 스토어별 앱 대시보드에서 데이터를 봅니다.
 
+<div id="multi-store-android-attribution" />
+
 ## 멀티 스토어 Android 어트리뷰션
 
 앱스플라이어는 앱 스토어와 상관없이 앱을 어트리뷰트합니다. Google Play 스토어 및 Amazon, Opera, GetJar, Baidu 및 Huawei와 같은 타사 안드로이드 앱 스토어를 의미합니다. (일명 아웃 오브 마켓 스토어 또는 대체 안드로이드 앱 스토어.) 여러 스토어를 통해 앱을 마케팅하는 앱 담당자는 모든 스토어의 데이터가 함께 포함된 **단일** **대시보드** 또는 **스토어별 대시보드** 중에서 선택할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -42,6 +46,8 @@ x-zendesk:
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
 
+<div id="single-dashboard-vs-dashboard-per-store" />
+
 ### 단일 대시보드 대 스토어 대시보드
 
 * 단일 대시보드 단일 대시보드: Google Play 스토어를 포함한 모든 스토어의 데이터를 결합하는 하나의 대시보드
@@ -49,11 +55,15 @@ x-zendesk:
 
 <table><thead><tr><th> </th><th>단일 대시보드<br/>[모범 사례]</th><th> 스토어별 대시보드</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>안드로이드 패키지 이름</td><td colspan="2">선택한 옵션에 관계없이 동일한(동일한) 패키지 이름을 사용하십시오.  </td></tr><tr><td><span id="channel-name"></span>채널명</td><td>설정할 결과 없음</td><td><ul><li> <span>안드로이드 아웃 어브 마켓 APK</span> 옵션을 사용하여 앱스플라이어 대시보드에 앱을 추가할 때 채널을 설정하십시오.</li><li><span>채널은 스토어를 식별합니다. </span></li><li>안드로이드 패키지 이름과 채널의 조합은 각 앱스플라이어 대시보드를 고유하게 식별합니다.  </li><li>예시: 예: Android 패키지 이름은 com.abc.def이고 채널은 xyzdevicestore입니다. 고유한 대시보드 식별자는 com.abc.def-xyz_device_store입니다.  </li><li>APK에 채널 설정이 있지만 이 설정이 있는 앱이 없는 경우 트래픽은 Google Play 스토어인 빈 채널 설정이 있는 앱인 기본 앱에 어트리뷰트합니다.  </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>install_app_store 필드 채우기</td><td><ul><li>다운로드를 통해 앱을 제공하는 스토어를 고유하게 식별합니다.</li><li>Google Play 스토어의 경우 공백입니다.  </li><li>스토어 이름은 <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">manifest/APK</a>에 설정됩니다.</li></ul></td><td>해당 없음</td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#원링크-템플릿-만들기" target="_blank">원링크 템플릿</a></td><td>원링크로 작업할 때 이 방법을 권장합니다.  </td><td>해당 없음 </td></tr><tr><td><span id="measurementattribution-links"></span>측정/어트리뷰션 링크  </td><td><ul><li>링크는 스토어에 상관없이 동일합니다.</li><li>올바른 저장소로 리디렉션하려면 <a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">af_r</a>을 사용하여 리디렉션 URL을 설정하십시오.</li></ul></td><td><ul><li>각 스토어마다 고유한 링크가 필요합니다.</li><li> <strong>활성 연동</strong> 페이지를 사용하여 이들을 생성합니다.</li><li>앱 ID는 안드로이드 패키지 이름에 추가된 채널 이름입니다. 예: com.abc.def-def_store.<br/>따라서 어트리뷰션 링크가 다릅니다.</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>install_app_store 필드가 있는 리포트 옵션 사용 가능</td><td>  </td><td>해당 없음 </td></tr><tr><td><span id="considerations"></span>고려 사항</td><td><ul><li>어트리뷰션 정확도  </li><li><span>오가닉 인스톨은 하나의 대시보드 아래 모든 스토어의 APK 오가닉 인스톨을 반영합니다.</span></li><li><span>스토어별로 세분화된 리포트 옵션은 현재 개요, 코호트 및 로데이터로 제한됩니다.</span></li></ul></td><td><ul><li>어트리뷰션 정확도 </li><li> <span>앱스플라이어</span>의 별도 앱 대시보드에서 스토어(채널)별 오가닉 및 논오가닉 인스톨 및 인앱이벤트 데이터를 봅니다.</li><li><span>코호트를 사용하여 모든 스토어에 대해 결합된 리포트를 함께 표시</span></li><li>협력하는 파트너가 <strong>모든</strong> 대시보드에서 <a href="./partner-activation-deactivation" target="_blank">활성</a> 상태(<strong>파트너 활성화</strong>가 켜져 있음)인지 확인합니다. 이는 불일치를 방지하기 위한 것입니다(데이터를 SRN과 비교할 때 더 일반적임). </li></ul></td></tr></tbody></table>
 
+<div id="set-up-tasks" />
+
 ## 설정 작업
 
 다음 워크플로는 원하는 옵션을 설정하는 데 필요한 활동을 기재합니다. 작업은 마케터와 개발자로 나뉩니다.
 
 스토어별 대시보드 옵션의 경우 각 스토어에 대해 태스크를 반복하십시오.
+
+<div id="before-you-begin" />
 
 ### **시작하기 전에**
 
@@ -63,6 +73,8 @@ x-zendesk:
 
 <table><thead><tr><th>파라미터</th><th>지침</th><th>단일 대시보드<br/>[모범 사례]</th><th>스토어별 대시보드</th></tr></thead><tbody><tr><td>안드로이드 패키지 이름</td><td>모든 대시보드 옵션에 대해 동일한 패키지 이름</td><td colspan="2">앱이 이미 Google Play 스토어에 있는 경우 기존 패키지 이름을 사용합니다. 예: comb.abc.def</td></tr><tr><td>채널명</td><td>각 스토어에 대한 고유한 가치.</td><td>설정되지 않음. 공백으로 남겨 둡니다.  </td><td><p>스토어마다 고유합니다. 스토어용으로 준비한 개별 APK와 앱스플라이어에서 앱 추가 시 값을 설정하십시오.  </p><p>Google Play 스토어 APK용 채널을 설정하지 마십시오.  </p></td></tr><tr><td>인스톨 앱 스토어 AF_STORE</td><td>스토어를 식별하는 고유한 값</td><td>스토어마다 고유합니다. 매니페스트를 통해 APK에서 설정합니다. 각 스토어에는 자체 APK가 있습니다. </td><td> 설정되지 않음.</td></tr></tbody></table>
 
+<div id="tasks" />
+
 ### 작업
 
 | 단계 | 책임 | 단일 대시보드 | 스토어별 대시보드 |
@@ -71,6 +83,8 @@ x-zendesk:
 | 2 | 마케터 | 조치가 필요하지 않습니다. 앱이 이미 앱스플라이어에서 활성화되어 있다고 가정합니다. | 앱스플라이어에 [앱을 추가](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app)합니다. |
 | 3 | 마케터 | [어트리뷰션 링크 준비](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | 채널 이름과 결합된 앱 ID로 어트리뷰션 링크를 준비합니다. |
 | 4 | 개발자 및 마케터 | [테스트](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [테스트](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## 절차
 
@@ -176,6 +190,8 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 
 <Accordion title="테스트 - 두 대시보드 옵션">
 
+<div id="non-organic-installs" />
+
 #### **논오가닉 인스톨**
 
 **논오가닉 인스톨을 테스트하려면:**
@@ -195,6 +211,8 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 | --- | --- |
 | <ol><li>데이터 내보내기 페이지에서 앱의 인스톨 로데이터 리포트를 확인합니다.</li><li>테스트 미디어 소스와 함께 하나의 인스톨 전환이 표시되어야 합니다. **앱 스토어 설치** 라는 열 아래에 manifest.xml 파일에 표시되는 스토어 이름이 표시되어야 합니다.</li></ol> | <ol><li>필요한 스토어별 앱 대시보드로 이동합니다.</li><li>데이터 내보내기 페이지나 앱의 개요 페이지에서 앱의 인스톨 로데이터 리포트를 확인합니다.</li><li>인스톨 전환 하나가 "test" 미디어 소스로 되어 있는 것을 볼 수 있습니다.</li></ol> |
 
+<div id="organic-installs" />
+
 #### **오가닉 설치**
 
 **오가닉 인스톨을 테스트하려면:**
@@ -203,6 +221,8 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 2. 업데이트된 베타 버전 앱을 앱스플라이어의 트래킹 SDK 임베디드와 함께 설치하고 실행합니다.
 3. 결과 확인:
 
+<div id="expected-results" />
+
 #### 예상 결과
 
 | 단일 대시보드 | 스토어별 대시보드 |
@@ -210,6 +230,8 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 | 새로운 오가닉 인스톨에 대한 개요 페이지를 확인하십시오("오가닉" 미디어 소스 아래). 현재 단일 앱 방식으로는 오가닉 인스톨의 출처에 대한 표시가 없습니다. | <ol><li>테스트한 스토어로 지정된 앱의 대시보드와 개요 페이지로 이동합니다.</li><li>인스톨 전환 하나가 "오가닉" 미디어 소스 아래에 있는 것을 볼 수 있습니다.</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## 추가 기능
 
@@ -264,11 +286,17 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
   * 어트리뷰션은 사용자를 Samsung Galaxy 스토어로 리디렉션하도록 하는 광고 네트워크에 부여됩니다. Google은 기여자로 인정됩니다.
 
 
+<div id="troubleshooting" />
+
 ## 문제 해결
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### 기본 앱으로 인한 인스톨 수
 
 기본 앱이 없으면 해당 앱에 대한 데이터가 기록되지 않습니다.
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

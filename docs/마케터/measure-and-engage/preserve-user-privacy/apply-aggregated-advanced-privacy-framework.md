@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 광고주는 iOS 14.5 이상의 일반 출시와 Apple의 ATT 시행으로 시작하여 집약형 프라이버시 강화 dva프레임워크(Aggregated Advanced Privacy, AAP) 프레임워크를 사용하여 플랫폼에서 사용자 수준 어트리뷰션 데이터의 가용성을 제어합니다.
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## 집약형 프라이버시 강화(Aggregated Advanced Privacy, AAP) 프레임워크
 
 앱스플라이어 AAP(집약형 프라이버시 강화) 프레임워크는 다른 회사가 소유한 앱과 웹사이트 전반에 걸친 추적을 방지하고 사용자 또는 장치를 고유하게 식별하는 기능을 제공합니다. AAP는 개인 정보 보호 임계값에 대한 최소 벤치마크로 Apple 앱 추적 투명성 개인 정보 수준을 활용합니다.
@@ -35,6 +37,8 @@ x-zendesk:
 iOS 14.5 일반 가용성 및 Apple의 ATT 시행 이후 AAP가 켜져 있으면 광고주 또는 파트너는 iOS 14.5이상을 실행하는 비동의 사용자에 대한 사용자 수준 어트리뷰션 데이터를 사용할 수 없습니다.
 
 AAP는 광고주 및 파트너에 대한 집계된 어트리뷰션 데이터 및 분석 리포트의 가용성에 영향을 미치지 않습니다.
+
+<div id="aap-impacted-features" />
 
 ### AAP 영향을 받는 기능
 
@@ -52,6 +56,8 @@ AAP가 다음과 같이 설정되어 있으면 데이터 가용성이 영향을 
 * **귀속 데이터 및 사기(Protect360):** <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">일부 속성 필드는 제한되거나 사용할 수 없습니다.</Anchor>
 * **클릭, 노출 및 차단된 클릭(사기) 데이터:** <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#identifier-restriction">사용자 및 장치 관련 식별자</Anchor>는 사용할 수 없습니다.
 * **디퍼드 딥링킹(Deferred Deep Linking)**: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">디퍼드 딥링킹</Anchor>: 유료 미디어에서 디퍼드 딥링킹을 구현하는 경우 통합 딥링킹 API(UDL)를 사용합니다. GCD를 사용하는 레거시 API는 비동의 사용자의 맥락에서 사용할 수 없습니다. 소유 미디어의 경우, 소유 미디어에 대한 지연 심층 링크는 GCD 및 최신 지연 심층 링크 API를 통해 지원됩니다.
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## 집약형 프라이버시 강화 프레임워크의 데이터 가용성 원칙
 
@@ -73,6 +79,8 @@ Advanced Privacy Framework - Advertisers (4).png
 
 사전 개인 정보 보호는 웹에서 게재될 때 다르게 작동하며 af\_media\_type=web 또는 af\_media\_type=app 매개변수를 사용해야 합니다. <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks#웹-캠페인">자세한 내용은 여기를 참조하세요</Anchor> .
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### 유료 및 온드 미디어 데이터 가용성
 
 <div id="paid-media" />
@@ -80,6 +88,8 @@ Advanced Privacy Framework - Advertisers (4).png
 <Accordion title="페이드(paid) 미디어">
 
 유료 미디어에는 광고주가 캠페인을 실행하는 앱스플라이어 플랫폼에 연동된 모바일 광고 네트워크가 포함됩니다.
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### ATT 상태에 의한 유료 미디어 데이터 가용성
 
@@ -97,6 +107,8 @@ Apple의 AppTrackingTransparency 프레임워크는 다른 회사에서 수집�
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## Advanced Aggregated Privacy 제어
 
 <div id="aap-central-switch" />
@@ -107,11 +119,15 @@ AAP는 선택한 앱의 모든 파트너에 대한 프라이버시 강화 프레
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
+<div id="aap-enabled" />
+
 #### AAP가 활성화됨
 
 * 집계된 어트리뷰션을 사용할 수 있습니다. 여기에는 예를 들어 개요 대시보드 및 코호트 및 Master API와 같은 리포트 도구가 포함됩니다.
 * [고급 개인정보 보호 파트너 전환](#partner-advanced-privacy-switch)이 켜져 있으며 수정할 수 없습니다. 참고! 그들은 고정된 상태입니다.
 * 광고주 및 파트너에 대한 사용자 수준 데이터의 가용성은 [이전 섹션](/docs/apply-aggregated-advanced-privacy-framework#집약형-프라이버시-강화-프레임워크의-데이터-가용성-원칙)에 정의된 대로 제한됩니다.
+
+<div id="aap-disabled" />
 
 #### AAP가 비활성화됨
 
@@ -153,11 +169,15 @@ AAP가 비활성화된 경우 광고주는 각 광고 네트워크에 대해 프
 
 </Accordion>
 
+<div id="advanced-aggregated-privacy-implications-for-your-partners" />
+
 ## Advanced Aggregated Privacy implications for your partners(파트너에 대한 고급 집계 개인 정보 보호 영향)
 
 <div id="ad-networks" />
 
 <Accordion title="애드 네트워크">
+
+<div id="postbacks-to-ad-network-partners" />
 
 #### **광고 네트워크 파트너에 대한 포스트백**
 
@@ -167,6 +187,8 @@ AAP는 공유된 데이터와 관련하여 광고 네트워크에 영향을 미�
 
 * AAP: AAP: 앱 수준 전환
 * AP: AP: 파트너 수준 전환
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **어트리뷰트된 광고 네트워크에 대한 포스트백**
 
@@ -182,6 +204,8 @@ AAP는 공유된 데이터와 관련하여 광고 네트워크에 영향을 미�
 AAP - Attributed ad networks.png
 
 사전 개인 정보 보호는 웹에서 게재될 때 다르게 작동하며 af\_media\_type=web 또는 af\_media\_type=app 매개변수를 사용해야 합니다. <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks#웹-캠페인">자세한 내용은 여기를 참조하세요</Anchor> .
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **어트리뷰트되지 않은 파트너를 위한 포스트백**
 
@@ -241,6 +265,8 @@ AAP - Analytics partner.png
 4. **저장**을 클릭하세요.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

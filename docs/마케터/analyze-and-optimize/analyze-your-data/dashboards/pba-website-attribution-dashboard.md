@@ -23,6 +23,8 @@ x-zendesk:
 
 [![Website_Attribution.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
 
+<div id="pba-website-attribution" />
+
 ## PBA 웹사이트 어트리뷰션
 
 웹사이트 어트리뷰션 대시보드를 사용하여 광고주는 방문자 및 전환을 유도하는 미디어소스에 대한 통찰력을 얻을 수 있습니다.

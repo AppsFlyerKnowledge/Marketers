@@ -27,11 +27,15 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## PBA 원리
 
 * PBA 데이터는 PBA 대시보드와 로데이터 리포트에 나타나며, 마케팅 분석과 캠페인 최적화에 사용할 수 있습니다.
 * 데이터는 웹사이트 방문과 사용자 이벤트로 구성되며, <Anchor target="_blank" href="/marketers/ko/docs/pba-web-sdk-integration-guide">SDK 및/또는 API</Anchor>를 통해 얻습니다.
 * 웹사이트 방문 시: 방문을 유도하는 데 관여하는 미디어소스가 결정됩니다. 결과 이벤트(전환)는 방문을 유발하는 미디어소스에 <Anchor target="_blank" href="/marketers/ko/docs/pba-media-source-attribution-rules">어트리뷰트됩니다</Anchor>.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### PBA 애널리틱스 대시보드 및 로데이터
 
@@ -41,11 +45,15 @@ x-zendesk:
   * 로데이터(Raw data) 보고서
 * 대시보드 데이터는 모바일 플랫폼, 미디어 채널 및 미디어 타입과 같은 기준으로 <Anchor target="_blank" href="/marketers/ko/docs/using-pba-dashboards">필터링 및 그룹화</Anchor>를 하여 데이터를 상세히 검색하고 분석할 수 있습니다.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/ko/docs/pba-website-attribution-dashboard">웹사이트 어트리뷰션</Anchor>
 
 [![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)
 
 웹 사이트에 대한 사용자 방문 및 전환을 추동하는 웹 트래픽 소스 및 마케팅 캠페인을 분석합니다. 광고 수준까지 성과 차이를 파악합니다. 사용자를 앱스플라이어 서버로 리디렉션할 필요 없이 링크의 모든 앱스플라이어 쿼리 매개 변수를 지원합니다.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/ko/docs/pba-web-assisted-installs">웹 인스톨 어시스트</Anchor>
 
@@ -57,6 +65,8 @@ x-zendesk:
 * 귀사의 웹 마케팅으로 발생한 오가닉 인스톨을 어트리뷰션 합니다.
 * 웹 마케팅과 논오가닉 인스톨 사이의 관계를 분석합니다.
 
+<div id="raw-data" />
+
 ### <Anchor target="_blank" href="/marketers/ko/docs/pba-raw-data-reports">로데이터</Anchor>
 
 로데이터 리포트는 데이터 락커를 통해 제공됩니다 로데이터는 깊이 있는 통찰력을 제공하며 사용자를 웹사이트로 유입시킨 데 기여하거나 원인을 제공한 미디어소스를 포함합니다.
@@ -64,6 +74,8 @@ x-zendesk:
 * 웹 방문: 웹 사이트에 대한 방문
 * 웹 이벤트: 웹사이트에서 수행된 행동. 예: 구독, 구매
 * BI 툴로 로데이터를 분석해 또다른 인사이트를 얻을 수 있습니다.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

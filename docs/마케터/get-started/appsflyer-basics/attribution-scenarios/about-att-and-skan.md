@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## ATT 환경에서의 어트리뷰션 측정
 
 유료 앱-투-앱 캠페인의 경우 SKAN은 확정적 어트리뷰션 결과를 제공합니다. 온드 미디어, 웹-투-앱 및 Apple Search Ads와 같은 다른 캠페인 유형은 앱스플라이어 기존 어트리뷰션 도구를 사용합니다. 기존 도구는 장기적인 LTV 측정을 제공하는 반면 SKAN은 인스톨 후 짧은 실치후 포스트 동안 사용자 성과를 측정합니다.
@@ -106,7 +108,11 @@ iOS14에서 인스톨은 기존 대시보드와 SKAN 대시보드 모두에 어�
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## iOS 14 중요한 지식
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### iOS 14 및 SKAN 기사 및 링크
 
@@ -128,6 +134,8 @@ iOS14에서 인스톨은 기존 대시보드와 SKAN 대시보드 모두에 어�
 
 <Accordion title="iOS 14가 어트리뷰션 및 측정에 미치는 영향">
 
+<div id="metrics" />
+
 #### **측정 지표**
 
 ATT로 인해 ATT 동의하지 않은 사용자와 관련된 지표가 다음과 같이 영향을 받을 수 있음을 고려하십시오.
@@ -139,6 +147,8 @@ ATT로 인해 ATT 동의하지 않은 사용자와 관련된 지표가 다음과
 | 리타겟팅 | 오가닉 인스톨 및 인앱이벤트 | 리인게이지먼트, 리어트리뷰션 |  |
 | Apple Search Ads | -- | -- | 변경되지 않음. 동의하는 사용자와 동의하지 않은 사용자 모두 올바르게 어트리뷰트됩니다. |
 
+<div id="deep-linking" />
+
 #### **딥링킹**
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-legacy-apis#deferred-deep-linking">onConversionDataSuccess의 레거시 메서드</Anchor>를 사용하는 디퍼드 딥링크는 개인 정보 보호로 인해 사용할 수 없는 어트리뷰션 데이터가 필요하기 때문에 iOS 14.5 이상에서 작동하지 않을 수 있습니다.
@@ -146,6 +156,8 @@ ATT로 인해 ATT 동의하지 않은 사용자와 관련된 지표가 다음과
  <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">통합 딥링킹(UDL)</Anchor>를 사용하는 것이 좋습니다. 더 알아보기
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## FAQ—iOS 14 이상
 
@@ -225,6 +237,8 @@ V6.0 이전 SDK 버전을 사용하는 앱의 경우:
 예시: 예시: 6월 12일 리포트에 6월 11일에 발생한 Google의 인스톨 100건이 표시됩니다. 6 월 24 일 리포트에는 6 월 11 일에 100 건의 인스톨이 더 발생했다고 기록되어 있습니다. 지난 13일(6월 12일부터 6월 24일까지)의 모든 리포트를 살펴보고 인스톨 시간 또는 광고 네트워크 타임스탬프를 기준으로 집계해야 6월 11일에 발생한 총 인스톨 수 200건을 정확하게 파악할 수 있습니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

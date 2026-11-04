@@ -34,6 +34,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="about-onelink-smart-script" />
+
 ## 원링크 스마트 스크립트 소개
 
 사용자는 앱 스토어 페이지에 도달하기 전 또는 광고 캠페인에 참여한 후에 모바일 웹 사이트에 도착합니다. 그러나 다음과 같이 작동하는 두 번의 클릭이 있습니다.
@@ -59,9 +61,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ko/docs/legacy-onelink-smart-script-v1-setup">**원링크 스마트 스크립트 V1(레거시)**</Anchor>: 이미 원링크 스마트 스크립트를 설정한 경우, 이 버전에 대한 문서를 참고하여 스크립트를 유지관리하고 편집하십시오. **참고**: 반드시 필요하지는 않지만, V2로 마이그레이션하는 것을 권장합니다. 
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > 원링크 스마트 스크립트가 적합한 솔루션인지 잘 모르시겠나요? 원링크 스마트 스크립트를 다른 앱스플라이어 웹-투-앱 솔루션과 <Anchor target="_blank" href="/marketers/ko/docs/convert-your-mobile-web-visitors-to-app-users">비교해 보십시오</Anchor>.
+
+<div id="examples" />
 
 ### 예시
 
@@ -90,6 +96,8 @@ x-zendesk:
 링크를 클릭하면 호텔의 모바일 웹 사이트로 리디렉션됩니다. 리디렉션된 웹사이트에서 호텔의 모바일 앱을 다운로드하도록 초대하는 버튼을 볼 수 있습니다. 원클릭 스마트 스크립트는 이메일의 원래 링크와 동일한 **pid** 및 **c** 파라미터를 포함하는 URL을 자동으로 생성합니다. 링크는 다음과 같은 형태입니다. https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
 **엠마가 모바일 사이트의 버튼을 클릭하면 앱 스토어로 리디렉션됩니다. 그리고 앱을 다운로드하여 실행하면, 앱의 올랜도 호캉스 페이지와 딥링킹됩니다.**
+
+<div id="note-1" />
 
 > 📘 **참고사항**
 >

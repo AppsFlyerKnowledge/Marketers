@@ -23,12 +23,16 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 연동 파트너인 Pinterest는 블로거와 브랜드의 트래픽에 가장 많이 기여하는 기업 중 하나입니다. Pinterest는 클릭 기반 및 뷰-쓰루 모바일 어트리뷰션을 모두 제공합니다. 또한 Pinterest는 앱스플라이어로 기록할 수 있는 클릭 기반 리타겟팅도 제공합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 2021년 6월부터 Pinterest는 더 이상 CPI 캠페인을 진행하지 않습니다. 그 결과, 앱스플라이어는 Pinterest에 설치 포스트백을 전송하지 않습니다.
 > * Pinterest 광고 약관에 동의한 후 <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">여기</Anchor>에서 Pinterest 모바일 측정 약관에 동의하세요.
 > * Pinterest는 어트리뷰션 파트너에게 사용자 <Anchor target="_blank" href="/marketers/ko/docs/user-level-data-retention#파트너-데이터-리텐션-기간">앱 설치 이후 6개월이 지나면</Anchor>, 사용자 레벨 데이터를 삭제하도록 요구합니다. 즉, 사용자가 앱을 설치한 후 6개월 이후에 수행한 이벤트는 오가닉으로 집계됩니다. 과거 종합 데이터는 동일하게 유지됩니다.
 > * <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">2023년 9월 4일부터 Pinterest에서는 사용자 개인정보를 보호하고 정보보호법 준수를 보장하기 위해 로데이터 리포트에서 일부 필드의 가용성을 제한할 것을 어트리뷰션 제공업체에 요구합니다.</Anchor>
+
+<div id="set-up-pinterest" />
 
 ## Pinterest 설정
 
@@ -52,10 +56,14 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 비용, 권한이�
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 **파트너 활성화** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -64,6 +72,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 비용, 권한이�
 **뷰-쓰루 어트리뷰션 활성화**
 
 Pinterest의 뷰-쓰루 설치를 어트리뷰션하려면 이 옵션을 켭니다. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -103,11 +113,17 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 **어트리뷰션 링크를 생성하려면** <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">다음 지침</Anchor>을 따르십시오.
 
+<div id="attribution-link-for-retargeting-campaign" />
+
 #### 리타겟팅 캠페인을 위한 어트리뷰션 링크
 
 Pinterest는 리타겟팅 캠페인을 위해 OS별 어트리뷰션 링크를 사용할 것을 권장합니다. **단일 플랫폼 링크 사용** 옵션을 선택하고 필요한 파라미터를 리타겟팅 어트리뷰션 링크에 추가합니다.
 
+<div id="deep-link-url" />
+
 #### 딥링크 URL
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -124,6 +140,8 @@ Pinterest는 리타겟팅 캠페인을 위해 OS별 어트리뷰션 링크를 �
 
 Pinterest의 비용을 설정한 후에는 실행 중인 캠페인, 광고 세트 또는 단일 광고의 이름을 변경하거나 캠페인 이름 파라미터와 함께 동적 매크로를 사용하면 심각한 불일치가 발생하거나 비용 데이터가 누락될 수 있으므로 이러한 작업을 수행하지 마세요.
 
+<div id="enabling-and-testing-pinterest-integration" />
+
 ### Pinterest 연동 활성화 및 테스트
 
 앱스플라이어는 비용 API로 트위터 비용 정보를 가져옵니다. 지원되는 기준, 지표 및 기능에 대한 세부 정보를 얻으려면 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">애드 네트워크 비용 연동 표</Anchor>를 참조하세요. 주의: 비용 데이터를 사용하려면 ROI360 구독이 필요합니다.
@@ -132,9 +150,13 @@ Pinterest의 비용을 설정한 후에는 실행 중인 캠페인, 광고 세�
 
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#비용-api-활성화">이 연동 지침</Anchor>을 따르세요.
 
+<div id="cost-data-sync-status" />
+
 ### 비용 데이터 동기화 상태
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">비용 API 상태</Anchor>와 앱스플라이어가 비용(및 광고 수익) 연동 상태 대시보드 또는 개별 광고 네트워크 대시보드에서 일치하는 비용 데이터를 가져온 마지막 시간을 확인합니다.
+
+<div id="stop-pinterest-cost-sync" />
 
 ### Pinterest 비용 동기화 중지
 
@@ -161,6 +183,8 @@ Pinterest의 비용을 설정한 후에는 실행 중인 캠페인, 광고 세�
 </Accordion>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## 문제 해결
 

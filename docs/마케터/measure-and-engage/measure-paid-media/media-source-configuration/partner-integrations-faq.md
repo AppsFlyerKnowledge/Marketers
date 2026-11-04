@@ -38,6 +38,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="use-partner-integrations" />
+
 ## 파트너 마켓플레이스 사용하기
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -84,6 +86,8 @@ x-zendesk:
 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">파트너 마켓프레이스에서 새로운 파트너와 연동하는 방법</Anchor>을 확인하세요.
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## 문제 해결
 

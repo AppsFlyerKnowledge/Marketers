@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 전자지갑 앱에 대해 제안된 인앱 이벤트를 기록하여 사용자 여정 내내 사용자의 특성을 측정합니다.
 
+<div id="-ewallet" />
+
 ## <Image alt="InApp_Events_eWallet.png" src="https://files.readme.io/4d2ed4994bbe8e8eca7009b8ec8f5dbf22a626421a7a1efb213ddb4a12c7b487-4402543191825.png" width="67px" /> 전자지갑
 
 사용자는 전자지갑 앱을 사용하여 자신의 기기에서 디지털 결제 또는 구매를 할 수 있습니다. 기록할 것을 권장하는 일반적인 이벤트에는 자금 추가, 콘텐츠 보기, 판매자 선택, 프로모션 보기, 거래 완료 등이 있습니다.
@@ -32,6 +34,8 @@ x-zendesk:
 * 사용자의 인기를 끌고 유사하거나 연관된 제품을 제공할 수 있는 콘텐츠와 프로모션의 유형
 * 사용자가 대금 결제 시 전자지갑을 사용하는 가장 인기 있는 서비스 유형
 * 가장 인기 있는 판매자
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -43,6 +47,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -109,6 +115,8 @@ x-zendesk:
 | merchant\_name | 판매자 이름 | cineplex |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 

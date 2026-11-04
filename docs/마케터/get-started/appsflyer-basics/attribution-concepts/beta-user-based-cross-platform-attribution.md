@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **한눈에 보기:** 크로스 플랫폼 사용자 기반 어트리뷰션이 무엇인지, 어떻게 작동하는지, 그리고 AppsFlyer에서 설정하는 방법을 알아보세요.
 
+<div id="what-is-user-based-attribution" />
+
 ## 사용자 기반 어트리뷰션이란?
 
 사용자 기반 어트리뷰션은 <Anchor target="_blank" href="/marketers/ko/docs/customer-user-id-field-cuid">지속적 고객 사용자 ID(CUID)</Anchor>를 기반으로 플랫폼 간 전환 이벤트를 연결하는 크로스 플랫폼 모델입니다. 이 모델은 CUID를 사용하여 모든 활동을 사용자의 첫 번째 전환 이벤트를 유도한 원래의 미디어 소스로 어트리뷰션 합니다.
+
+<div id="a-cross-platform-user-journey-example" />
 
 ### 크로스 플랫폼 유저 여정 예시
 
 예를 들어, 사용자가 구글 웹 광고를 클릭하고 가입하여 데스크톱 브라우저에서 구매를 완료합니다. 그런 다음, 동일한 사용자가 인스타그램 모바일 광고를 클릭하고 모바일 앱을 설치하고 또 다른 인앱 구매를 합니다. 일주일 후, 사용자는 브랜드의 CTV 앱을 설치하고, 동일한 CUID를 사용하여 로그인하고, 유료 구독을 시작합니다.
 
 CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해당 CUID와 연관된 최초의 논오가닉 런칭 이벤트가 Google 웹 캠페인이었기 때문에, 이후 모든 활동(모바일 앱 구매 및 CTV 구독 포함)은 Google 캠페인에 귀속됩니다.
+
+<div id="user-based-vs-device-based-attribution" />
 
 ### 사용자 기반 vs. 기기 기반 어트리뷰션
 
@@ -49,6 +55,8 @@ CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해�
 | **PC 앱 구매** ($100) | **YouTube**에 어트리뷰션됨 (최근 기기 수준 상호 작용 기반) | **Meta**에 어트리뷰션됨 (CUID를 통해 식별된 동일 유저) |
 | **총 구매액** (150달러) | **오가닉 50달러**, **유튜브 100달러**(캠페인별로 분할) | Meta(단일 통합 소스)에 어트리뷰션된 총 **150달러** |
 
+<div id="what-makes-an-event-a-candidate-for-cross-platform-attribution" />
+
 ### 이벤트를 크로스 플랫폼 어트리뷰션 후보로 만드는 요인은 무엇일까요?
 
 이벤트는 **다음 조건**을 모두 충족할 경우 **크로스 플랫폼 어트리뷰션의 대상**이 됩니다:
@@ -59,6 +67,8 @@ CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해�
 * **제품군에 속합니다:** 이벤트를 생성하는 앱은 반드시 **제품 라인**에 속해야 합니다. 제품 라인이란 동일한 브랜드 아래에서 속성 범위가 지정되고 일괄적으로 구성된 관련 앱(예: iOS, Android, CTV)의 집합을 의미합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/product-line-group-apps-for-cross-platform-attribution#about-product-line">크로스 플랫폼 어트리뷰션을 위한 앱 그룹화</Anchor> 항목을 참조하십시오.
 * **비활성 복원 윈도우 내에서:** 이벤트는 설정 가능한 기간(예: 7&#126;390일)으로 정의된 **비활성 기간(inactivity window)** 내에 포함되어야 합니다. 이 기간 동안 CUID는 여전히 활성으로 간주되며, 지정된 제품 라인 내에서 어트리뷰션 대상이 됩니다. 이 윈도우 내에 CUID가 보이지 않으면 이전 어트리뷰션 매핑이 무시됩니다.
 * **기기 수준 어트리뷰션 필드가 있습니다:** 이벤트는 이미 AppsFlyer의 전통적인 기기 기반 어트리뷰션 모델에서 파생된 유효한 **기기 수준 어트리뷰션 파라미터**(예: 미디어 소스, 캠페인 ID)를 포함해야 합니다.
+
+<div id="how-is-the-attribution-source-determined" />
 
 ### 어트리뷰션 소스는 어떻게 결정되나요?
 
@@ -75,6 +85,8 @@ CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해�
 > 📘 **참고**
 >
 > AppsFlyer는 동일한 제품군 **내에서** 동일한 CUID를 매칭합니다. 앱스플라이어는 다른 제품군이나 다른 고객을 대상으로 CUID를 매칭, 추정 또는 공유하지 않습니다. 이는 엄격한 개인정보 보호 우선 접근 방식을 보장하며, 각 고객의 데이터를 분리된 독립적인 상태로 유지합니다.
+
+<div id="the-cuid-enrichment-processing-window" />
 
 #### CUID 보강 처리 기간
 
@@ -102,12 +114,16 @@ CUID 보충 처리 창은 AppsFlyer가 새로 도착한 인앱 이벤트를 처�
 >
 > 크로스 플랫폼 매칭을 극대화하려면 전송되는 모든 인앱 이벤트에 항상 CUID를 포함해야 합니다.
 
+<div id="set-up-cross-platform-attribution" />
+
 ## 크로스 플랫폼 어트리뷰션 설정
 
 크로스 플랫폼 어트리뷰션을 설정하려면 AppsFlyer에서 몇 가지 설정을 적용하고 앱 코드에 특정 SDK 기능을 구현해야 합니다.
 
 * **앱스플라이어에서** 앱을 제품 라인에 할당하고, 크로스 플랫폼 어트리뷰션을 선택하고, 비활성화 복구 기간을 지정합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/product-line-group-apps-for-cross-platform-attribution#how-to-set-up-a-product-line">제품 라인 설정</Anchor>을 참조하십시오.
 * 앱스플라이어 SDK를 CUID와 함께 이벤트를 보내도록 **앱에서** 설정합니다. 개발사 지침은 [고객 사용자 ID 설정](https://dev.appsflyer.com/hc/docs/set-customer-user-id) 항목을 참조하십시오.
+
+<div id="view-cross-platform-attribution-results" />
 
 ## 크로스 플랫폼 어트리뷰션 결과 보기
 

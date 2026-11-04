@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 크로스 플랫폼 재참여 귀속이 기존 사용자를 귀하의 제품으로 다시 데려오는 미디어 소스에 어떻게 크레딧을 부여하는지 알아보세요.
 
+<div id="about-cross-platform-re-engagement-attribution" />
+
 ## 크로스 플랫폼 재참여 귀속에 대하여
 
 크로스 플랫폼 재참여 귀속은 최신 광고 참여를 기반으로 사용자 집단을 측정하는 것을 포함하여 <Anchor target="_blank" href="/marketers/ko/docs/beta-user-based-cross-platform-attribution">사용자 기반 크로스 플랫폼 귀속</Anchor> 모델을 확장합니다.
@@ -40,6 +42,8 @@ x-zendesk:
 
 재참여 귀속은 사용자 획득과 함께 작동하므로, 사용자를 처음 획득한 소스와 그들을 다시 데려온 소스를 동일한 보고 뷰에서 모두 볼 수 있습니다.
 
+<div id="how-does-re-engagement-attribution-work" />
+
 ## 재참여 귀속은 어떻게 작동합니까?
 
 인앱 이벤트가 재참여 미디어 소스에 귀속되기 위해서는 다음 모든 조건이 충족되어야 합니다:
@@ -48,6 +52,8 @@ x-zendesk:
 * **CUID가 존재합니다:** 이벤트에는 동일한 제품 라인에서 이전에 본 CUID와 일치하는 유효한 고객 사용자 ID(CUID)가 포함되어야 합니다. 이것이 AppsFlyer가 사용자를 새로운 사용자 대신 돌아온 사용자로 식별하는 방법입니다.
 * **리타게팅 비활성화 창이 경과했습니다:** CUID는 마지막 출현 이후 재참여를 위한 비활성화 창의 기간 동안 최소한 한 번도 보이지 않아야 합니다. 이 창 내에서 이벤트가 발생하면 재참여로 간주되지 않으며, 원래 획득 소스에 귀속됩니다.
 * **이벤트가 재참여 창 내에서 발생합니다:** 자격을 갖춘 재참여 귀속이 감지되면 재참여 창이 열립니다. 이 창 내에서 발생하는 인앱 이벤트만 재참여 미디어 소스에 귀속됩니다. 창이 닫힌 후 발생하는 이벤트는 원래 획득 소스에 귀속됩니다.
+
+<div id="cross-platform-re-engagement-user-journey-example" />
 
 ## 크로스 플랫폼 재참여 사용자 여정 예시
 
@@ -89,11 +95,17 @@ x-zendesk:
 
 </Accordion>
 
+<div id="set-up-cross-platform-re-engagement-attribution" />
+
 ## 크로스 플랫폼 재참여 귀속 설정하기
 
 크로스 플랫폼 재참여 귀속을 설정하려면, 제품 라인 설정 위에 재참여에 특정한 몇 가지 설정을 AppsFlyer에 적용해야 합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/product-line-group-apps-for-cross-platform-attribution#how-to-create-a-product-line">제품 라인 생성 방법</Anchor>을 참조하십시오.
 
+<div id="view-cross-platform-attribution-results" />
+
 ## 크로스 플랫폼 어트리뷰션 결과 보기
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** iOS 전환 및 인앱 이벤트를 최적화하고, Meta Ads 에서 iOS 리인게이지먼트 성과를 측정하기 위한 AEM 솔루션에 대해 알아보세요.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 <Anchor target="_blank" href="https://www.facebook.com/business/help/721422165168355">Meta Ads 데이터 집약형 이벤트 측정(AEM)</Anchor> 솔루션을 지원합니다. 이 솔루션을 통해 다음 어트리뷰션 방법을 사용하여 iOS 14+ 디바이스의 웹 및 앱 이벤트를 측정할 수 있습니다:
@@ -34,9 +36,13 @@ AEM 솔루션의 일환으로, Meta는 이벤트가 AEM에 적합한 경우 앱�
 
 * [앱 이벤트가 AEM에 적합한지 확인하기](#앱-이벤트가-aem에-적합한지-확인하기)
 
+<div id="app-aem-for-re-engagement" />
+
 ## 리인게이지먼트를 위한 앱 AEM
 
 AEM을 통해 Meta Ads는 디바이스 ID 없이 iOS 사용자의 딥 링크 리인게이지먼트 어트리뷰션을 얻습니다.
+
+<div id="attribution-flow" />
 
 ### 어트리뷰션 플로우
 
@@ -45,6 +51,8 @@ Meta Ads는 AEM `campaign_ids`식별자와 함께 딥 링크에 어트리뷰션 
 * 데이터 집약형 리포팅 데이터를 Meta Ads로 다시 보냅니다.
 * Meta Ads에서 추가한 딥 링크 정보를 기반으로 어트리뷰션을 수행합니다.
 * 딥 링크 어트리뷰션 데이터를 로데이터와 데이터 집약형 리포트에 포함합니다.
+
+<div id="attribution-data-parameters" />
 
 ### 어트리뷰션 데이터 파라미터
 
@@ -55,6 +63,8 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 * `campaign_id`
 * `campaign_group_id`
 * `account_id`
+
+<div id="faqs-on-deep-link-re-engagement-attribution" />
 
 ### 딥 링크 리인게이지먼트 어트리뷰션 FAQ
 
@@ -86,7 +96,11 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 
 </Accordion>
 
+<div id="app-aem-for-app-promotion" />
+
 ## 앱 프로모션을 위한 앱 AEM
+
+<div id="aem-eligibility" />
 
 ### AEM 자격
 
@@ -94,9 +108,13 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 
 <Image alt="aem_meta_ads_platform.png" src="https://support.appsflyer.com/hc/article_attachments/19228698538769" width="563px" />
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > AEM 적합성에 문제가 있는 경우, [앱 이벤트가 AEM에 적합한지 확인하기](#앱-이벤트가-aem에-적합한지-확인하기)를 참조하세요.
+
+<div id="aem-data-sharing" />
 
 ### AEM 데이터 공유
 
@@ -107,6 +125,8 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 
 ![aem](https://support.appsflyer.com/hc/article_attachments/19228710265361)
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > * 모든 이벤트에는 인스톨, 앱 열기 및 인앱 이벤트가 포함됩니다.
@@ -114,9 +134,13 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 > * Server-to-Server (S2S)을 통해 전송된 인앱 이벤트의 경우, Meta는 이벤트 페이로드에 **IP 주소**와 **벤더 식별자 (IDFV)** 가 포함되어야 합니다. 해당 식별자가 없으면, 해당 이벤트는 Meta의 AEM 어트리뷰션 대상에서 제외됩니다.
 > * 앱 프로모션을 위한 Meta AEM은 비확정적 뷰 쓰루 클레임을 포함할 수 있습니다. Meta AEM을 통한 비확정적 뷰 쓰루 어트리뷰션 (View-through Attribution)을 지원하려면, 앱 레벨의 **확률적 모델링을 통한 뷰 쓰루 어트리뷰션 활성화** 토글이 켜져 있는지 확인하십시오. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/app-settings#viewthrough-attribution-via-probabilistic-modeling">확률적 모델링을 통한 뷰 쓰루 어트리뷰션</Anchor>을 참조하세요.
 
+<div id="check-if-your-app-events-are-eligible-for-aem" />
+
 ## 앱 이벤트가 AEM에 적합한지 확인하기
 
 Meta 이벤트 관리자에 방문하여 앱 이벤트가 AEM에 적합한지 확인할 수 있습니다. 앱 이벤트가 적합해지면, 광고 관리자 (Ads Manager) 에서 선택한 AEM 캠페인의 결과를 볼 수 있습니다. 앱 이벤트가 AEM에 적합한지 파악하는 구체적인 방법은 <Anchor target="_blank" href="https://www.facebook.com/business/help/716239976391518?id=1877298665783613">Meta 문서</Anchor>를 참조하세요.
+
+<div id="enable-aem-summary" />
 
 ## AEM 활성화 방법 - 요약
 
@@ -128,6 +152,8 @@ Meta 이벤트 관리자에 방문하여 앱 이벤트가 AEM에 적합한지 �
 | **AEM 앱 프로모션 (설치)** | 고급 데이터 공유 | 파트너 연동 (Meta Ads) | 앱 프로모션을 위해 AEM을 활성화하며, ATT 옵트아웃 사용자로부터의 공유 이벤트와 비결정론적 어트리뷰션을 수락합니다 (해당되는 경우). |
 | **AEM 앱 프로모션 (설치)** | 확률적 모델링을 통해 광고 조회 어트리뷰션 활성화 | 앱 설정 (App Settings) | 비확정적 성과 측정에 대한 뷰 쓰루 어트리뷰션을 활성화합니다. |
 
+<div id="troubleshooting" />
+
 ## 문제 해결
 
 <div id="troubleshooting-ineligible-events-in-meta-aem" />
@@ -135,6 +161,8 @@ Meta 이벤트 관리자에 방문하여 앱 이벤트가 AEM에 적합한지 �
 <Accordion title="Meta AEM 측정 부적합 이벤트 해결 방법">
 
 Meta 광고가 앱 이벤트를 자격이 없다고 표시하는 경우—**“누락된 옵트아웃 이벤트”** 와 같은 오류 또는 기타 AEM 관련 메시지를 표시하는 경우—일반적으로 누락되었거나 잘못 설정된 데이터 때문입니다. 아래 체크리스트를 사용하여 일반적인 문제를 진단하고 수정하세요.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -197,6 +225,8 @@ Meta는 IDF가 누락되었거나 0으로 설정된 이벤트에 대해 제한�
 
 </Accordion>
 
+<div id="still-not-working" />
+
 #### 아직도 작동하지 않나요?
 
 특정 이벤트가 여전히 적합하지 않은 경우:
@@ -204,6 +234,8 @@ Meta는 IDF가 누락되었거나 0으로 설정된 이벤트에 대해 제한�
 1. Meta의 이벤트 관리자에 가서 화면의 안내를 따르세요.
 2. 영향을 받는 앱 이벤트를 선택하세요.
 3. **MMP 트래픽**을 선호하는 연결 방법으로 설정하십시오.
+
+<div id="need-help" />
 
 #### 도움이 필요하신가요?
 

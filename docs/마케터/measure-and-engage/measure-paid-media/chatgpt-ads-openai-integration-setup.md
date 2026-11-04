@@ -16,6 +16,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 통합 파트너인 ChatGPT Ads는 OpenAI의 광고 플랫폼 입니다. ChatGPT Ads 캠페인을 통해 발생한 모바일 앱 설치, 인앱 이벤트 및 웹사이트 전환을 측정하고 기여도를 분석할 수 있도록 연동 설정하세요.
 
+<div id="about-the-integration-with-chatgpt-ads" />
+
 ## ChatGPT Ads 연동 알아보기
 
 앱스플라이어 와 ChatGPT Ads(OpenAI)의 연동 통해 ChatGPT Ads 캠페인으로 발생한 앱 설치, 인앱 이벤트 및 웹사이트 전환을 측정하고 기여를 분석할 수 있습니다. 모바일 앱 과 웹사이트 측정 모두 지원합니다.
@@ -26,6 +28,8 @@ x-zendesk:
 웹사이트에서 ChatGPT Ads 픽셀도 함께 실행하는 경우, ChatGPT Ads는 공유된 이벤트 ID를 사용하여 서버 측(CAPI) 이벤트와 픽셀 이벤트 간의 중복을 제거하므로, 전환 수가 부풀려질 걱정 없이 두 가지를 동시에 병행하여 실행할 수 있습니다.
 
 앱스플라이어로 전송하는 이벤트 페이로드에 해당 공통 ID를 `af_customer_event_id`로 포함하세요. 아래 [웹사이트 연동](#웹사이트-연동)을 참조하세요.
+
+<div id="set-up-the-integration" />
 
 ## 연동 설정
 
@@ -45,6 +49,8 @@ x-zendesk:
 * [**모바일 앱**](#모바일-앱-연동) - 설치, 재참여 및 인앱 이벤트 ChatGPT Ads 캠페인에 기여(어트리뷰션)합니다.
 * [**웹사이트**](#웹사이트-연동) - ChatGPT Ads 픽셀 수집 데이터와의 디듀플리케이션(중복 제거)을 통해, 웹상에서 발생한 전환 이벤트를 ChatGPT Ads의 전환 API(Conversions API)로 연동하여 전송합니다.
 
+<div id="integrate-your-mobile-app" />
+
 ## 모바일 앱 연동
 
 모바일 앱에서 ChatGPT Ads의 어트리뷰션 및 인앱 이벤트 포스트백을 설정하려면 다음 단계를 따르십시오.
@@ -61,6 +67,8 @@ x-zendesk:
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 **연동을 활성화 하려면:**
@@ -70,6 +78,8 @@ x-zendesk:
 **중요 사항:** ChatGPT Ads를 이용하는 동안에는 해당 토글이 **항상 켜져 있는 상태**를 유지해야 합니다. 연동을 비활성화하면 귀하의 캠페인에 대한 어트리뷰션 및 포스트백 기능이 중단됩니다.  
 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너 활성화</Anchor>에 대해 더 알아보세요.
 
+<div id="general-settings" />
+
 #### 일반 설정
 
 다음 자격 증명을 입력하세요.
@@ -78,6 +88,8 @@ x-zendesk:
 * **API 키** - Events API 호출을 인증하려면 API 키가 필요합니다. ChatGPT Ads Manager 계정의 '전환(Conversions)' 탭에서 확인하세요.   
   **참고:** 필요한 권한을 확보하려면 CAPI 키가 필요하므로, 광고 관리 API 키가 아닌 전환 API 키를 사용해야 합니다.
 
+<div id="advanced-privacy" />
+
 ##### **고급 개인정보 보호**
 
 고급 개인정보 보호(AP) 토글은 IDFA를 제공하지 않은 iOS 사용자(14.5 이상)의 이벤트가 OpenAI로 전송되는 방식을 제어합니다.
@@ -85,15 +97,21 @@ x-zendesk:
 * 고급 개인정보 보호 **비활성화**: IDFA를 사용할 수 없는 경우에도 사용 가능한 모든 사용자 식별자(IP, user agent 등)와 함께 이벤트가 전송됩니다.
 * 고급 개인정보 보호 **활성화**: `openai_int`에 어트리뷰션된 이벤트만 전송되며, 이러한 포스트백에는 어트리뷰션 데이터만 포함됩니다. 모든 사용자 수준 식별자가 전송 전 포스트백에서 제거되었습니다.
 
+<div id="advanced-matching-data-sharing" />
+
 ##### **고급 매칭 데이터 공유**
 
 해당 필드가 앱스플라이어로 전송된 이벤트 정보에 포함되어 있는 경우, 해시된 이메일, 해시된 전화번호, 해시된 이름, 해시된 성과 같은 고급 매칭 필드를 ChatGPT Ads와 공유하려면 활성화하세요. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/advanced-matching-data-sharing">고급 매칭 데이터 공유</Anchor>를 참고하세요.
+
+<div id="default-postbacks" />
 
 #### 기본 포스트백
 
 포스트백은 앱스플라이어가 기여된 이벤트(설치 또는 인앱 액션 등)를 보고하기 위해 ChatGPT Ads에 전송하는 서버 간 알림입니다. 이 섹션에는 포스트백이 표시됩니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-re-attribution-window">설치 및 재기여 포스트백을 설정하는</Anchor> 방법을 알아보세요.
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#default-postbacks">기본 포스트백 설정</Anchor>에 대해 더 알아보기.
+
+<div id="in-app-event-settings" />
 
 #### 인앱 이벤트 설정
 
@@ -103,6 +121,8 @@ ChatGPT Ads에 인앱 이벤트 포스트백을 전송할 수 있도록 필요�
 * API 키
 
 자세한 내용은 위의 [일반 설정](#일반-설정)을 참조하세요.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -158,6 +178,8 @@ ChatGPT Ads는 아래의 표준 이벤트를 지원하며, 하단에 포함되�
 
 ChatGPT Ads(OpenAI)는 어트리뷰션 링크를 지원합니다.
 
+<div id="choose-your-attribution-type" />
+
 #### 어트리뷰션 유형을 선택하세요
 
 다음 여부를 결정하세요.
@@ -166,6 +188,8 @@ ChatGPT Ads(OpenAI)는 어트리뷰션 링크를 지원합니다.
 
    또는
 2. 랜딩 페이지를 광고 목적지로 사용한 다음, <Anchor target="_blank" href="/marketers/ko/docs/onelink-smart-script-overview">Smart Script</Anchor> 또는 <Anchor target="_blank" href="/marketers/ko/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor>를 사용하여 사용자를 App Store나 Google Play로 이동시킵니다(어트리뷰션이 가능한 링크를 생성하면서 이동).
+
+<div id="select-parameters" />
 
 #### 파라미터 선택
 
@@ -179,6 +203,8 @@ ChatGPT Ads(OpenAI)는 어트리뷰션 링크를 지원합니다.
   * `af_ad_id={ad_id}`
   * `clickid={oppref}`
 * 이름 필드 매크로는 지원되지 않습니다.
+
+<div id="important" />
 
 > 🚧 **중요**
 >
@@ -217,6 +243,8 @@ ChatGPT Ads 팀원들에게 귀하의 데이터에 대한 접근 권한을 부�
 
 </Accordion>
 
+<div id="integrate-your-website" />
+
 ## 웹사이트 연동
 
 웹사이트에서 ChatGPT Ads로 서버 측 이벤트 전달을 설정하려면 다음 단계를 따르세요.
@@ -232,6 +260,8 @@ ChatGPT Ads 팀원들에게 귀하의 데이터에 대한 접근 권한을 부�
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner-1" />
+
 #### 파트너 활성화
 
 **연동을 활성화 하려면:**
@@ -241,6 +271,8 @@ ChatGPT Ads 팀원들에게 귀하의 데이터에 대한 접근 권한을 부�
 **중요 사항:** ChatGPT Ads를 이용하는 동안에는 해당 토글이 **항상 켜져 있는 상태**를 유지해야 합니다. 연동을 비활성화하면 웹사이트의 이벤트 전달 기능이 중단됩니다.  
 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너 활성화</Anchor>에 대해 더 알아보세요.
 
+<div id="in-app-event-settings-1" />
+
 #### 인앱 이벤트 설정
 
 ChatGPT Ads로 이벤트 포스트백을 전송하려면 다음 자격 증명을 입력하세요.
@@ -249,6 +281,8 @@ ChatGPT Ads로 이벤트 포스트백을 전송하려면 다음 자격 증명을
 * **API 키** - Events API 호출을 인증하려면 API 키가 필요합니다. ChatGPT Ads Manager 계정의 '전환(Conversions)' 탭에서 확인하세요.
 
 **고급 매칭 데이터 공유:** 해당 필드가 앱스플라이어로 전송된 이벤트 정보에 포함되어 있는 경우, 해시된 이메일, 해시된 전화번호, 해시된 이름, 해시된 성과 같은 고급 매칭 필드를 ChatGPT Ads와 공유하려면 활성화하세요. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/advanced-matching-data-sharing">고급 매칭 데이터 공유</Anchor>를 참조하세요.
+
+<div id="in-app-event-postbacks-1" />
 
 #### 인앱 이벤트 포스트백
 
@@ -296,11 +330,15 @@ ChatGPT Ads(OpenAI)는 웹사이트 연동 시 외부 어트리뷰션 링크를 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## 특징과 제한사항
 
 | 특징 | 설명 |
 | --- | --- |
 | 지원하는 국가 | ChatGPT Ads Manager를 사용할 수 있는 <Anchor target="_blank" href="https://help.openai.com/en/articles/20001245-ads-manager-availability">국가 목록</Anchor>입니다. |
+
+<div id="see-also" />
 
 > 📄 **참고 자료**
 >

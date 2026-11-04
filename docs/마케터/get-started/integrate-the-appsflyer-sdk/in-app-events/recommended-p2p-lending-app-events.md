@@ -29,6 +29,8 @@ P2P 대출은 개인과 기업이 서로 돈을 빌려주고 돌려받을 수 �
 
 이벤트 기록을 통해 수집한 데이터를 통해 신뢰할 수 있는 차용인을 강조 표시하고 더 좋은 이자율을 제시할 수 있습니다. 마찬가지로, 가장 활발하게 활동하는 대출 제공자를 파악하고 더 낮은 수수료를 제시할 수 있습니다. 또한 어떤 유형의 대출이 사용자에게 가장 인기가 있는지 알게 되고, 이러한 잠재 고객을 대상으로 하는 마케팅 캠페인을 시작할 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 인앱 이벤트 구현과 관련한 마케터용 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#인앱-이벤트-설정">지침</Anchor>을 반드시 읽어보십시오.
@@ -39,6 +41,8 @@ P2P 대출은 개인과 기업이 서로 돈을 빌려주고 돌려받을 수 �
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -81,6 +85,8 @@ P2P 대출은 개인과 기업이 서로 돈을 빌려주고 돌려받을 수 �
 추가 파라미터 없이 전송 가능
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 
@@ -126,6 +132,8 @@ P2P 대출은 오남용의 우려가 있으므로 먼저 사용자 확인이 필
 **이벤트 파라미터**
 
 추가 파라미터 없이 전송 가능
+
+<div id="note" />
 
 > 📘 **참고사항**
 >

@@ -24,9 +24,13 @@ x-zendesk:
 
 <Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 ## X Ads 모바일 앱 프로모션
 
 X Ads 모바일 앱 프로모션은 트위터에 앱을 프로모션하는 방식입니다. 광고주가 효과적 앱 카드 디자인으로 모바일 앱을 홍보하여 인스톨, 앱 참여도 및 딥 링크를 유도할 수 있도록 지원합니다. 앱 유저는 X Ads 타임라인에서 바로 앱을 설치하고 쉽게 사용할 수 있습니다.
+
+<div id="x-ads-user-privacy" />
 
 ## X Ads 사용자 개인정보 보호
 
@@ -44,6 +48,8 @@ X Ads 사용자는 광고주와 정보를 공유하는 방법을 제어할 수 �
 AMM 프로그램에 가입하기 전에 수신된 사용자 수준 데이터는 내보낼 수 없습니다.
 
 자세한 정보는 X Ads 계정 관리자에게 문의하십시오.
+
+<div id="x-ads-and-appsflyer-skan-interoperation" />
 
 ## X Ads 및 앱스플라이어 SKAN 상호 운용성
 

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **요약: 한 눈에 보기: 앱스플라이어에서 구글 애즈 비용 및 광고 수익 데이터를 활성화합니다.**
 
+<div id="cost-clicks-and-impressions" />
+
 ## 비용, 클릭 수, 노출 수
 
 비용 연동은 다음의 집약형 데이터를 제공합니다.
@@ -55,17 +57,23 @@ Google에서 클릭 및 뷰를 정의하는 방법에 대한 자세한 정보를
 >
 > 만약 올바른 계정이 아니라면, 계정에서 로그아웃 한 후 다른 구글 계정의 이메일 주소를 사용하여 다시 로그인하십시오.
 
+<div id="cost-data-sync-status" />
+
 ### 비용 데이터 동기화 상태
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">비용 API 상태</Anchor>와 앱스플라이어가 비용(및 광고 수익) 연동 상태 대시보드 또는 개별 애드 네트워크 대시보드에서 일치하는 비용 데이터를 가져온 마지막 시간을 확인합니다.
 
 구글 애즈는 비용 데이터를 가져올 수 있도록 여러 계정을 동기화하는 것을 허용합니다. 동기화된 각 계정에 대해 앱스플라이어는 비용 연동 상태 및 앱스플라이어가 일치하는 비용 데이터를 가져온 마지막 시간을 표시합니다.
 
+<div id="stopping-google-cost-sync" />
+
 ### 구글 비용 동기화 중지하기
 
 **구글 비용 동기화를 중지하려면, 구글 계정 연결을 제거하십시오.**
 
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">비용 연동 탭으로 이동하여 Action 열에서 계정 위로 마우스를 가져가 연결 삭제를 클릭합니다.</Anchor> 삭제되면 앱스플라이어가 비용 수신을 중지합니다. 연결 삭제는 과거 데이터에 영향을 주지 않습니다.
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## 구글 애즈 광고 수익 기록
 

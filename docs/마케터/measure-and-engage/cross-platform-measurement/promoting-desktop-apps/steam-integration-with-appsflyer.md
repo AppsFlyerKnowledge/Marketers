@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **요약:** Steam 게임/앱을 앱스플라이어와 연동하여 Steam 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 측정하세요. Steam 연동은 유저의 Steam 디바이스에 있는 Steam 앱에 대한 어트리뷰션 및 인앱 이벤트 기록을 지원합니다. Steam 연동은 유저의 Steam 디바이스에 있는 Steam 앱에 대한 어트리뷰션 및 인앱 이벤트 기록을 지원합니다.
 
+<div id="about-steam-attribution" />
+
 ## Steam 어트리뷰션
 
 Steam은 Windows 및 Mac 디바이스, Steam Deck 및 기타 Steam OS 디바이스에서 실행됩니다.
 
 Steam에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어와 연동되어, 어떤 소스 및 캠페인이 앱 오픈 및 인앱 이벤트를 유도하는지에 대한 어트리뷰션 데이터 및 성과를 측정할 수 있습니다. 마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다. 마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다.
+
+<div id="example-attribution-flow" />
 
 ### 어트리뷰션 흐름의 예
 
@@ -40,6 +44,8 @@ Steam에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어�
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
 3. <span id="marketing-touchpoint"></span>Steam 앱 페이지: 고객이 다운로드할 수 있는 Steam 앱을 호스팅하는 Steam 스토어 페이지입니다.
 4. 게임 설치: 유저가 게임을 설치하면 어트리뷰션이 트리거되고 인앱 이벤트 및 세션이 기록됩니다.
+
+<div id="integration-procedures" />
 
 ## 연동 절차
 
@@ -171,12 +177,18 @@ Steam에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어�
 </Table>
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 특징 및 제약 사항
 
 | 특성 | 비고 |
 | --- | --- |
 | 리타겟팅 | 현재 지원되지 않음 |
 | 비용 데이터 | 비용 데이터는 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">Cost Import</Anchor>기능을 통해 이메일을 보내는 방법으로 전송해야 합니다. |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

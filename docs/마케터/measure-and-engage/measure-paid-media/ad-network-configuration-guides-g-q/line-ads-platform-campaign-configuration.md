@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
+<div id="setting-up-line-ads-platform" />
+
 ## LINE 광고 플랫폼 설정
 
 **전제 조건:** 연동을 설정하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
@@ -54,14 +56,24 @@ LINE 광고 플랫폼의 설정 창에는 2개의 활성 탭이 있습니다. �
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="note-1" />
+
+<div id="connect-multiple-accounts-and-apps" />
+
+<div id="note" />
+
 > 📘 **참고**
 >
 > LINE은 모든 인스톨 네트워크로서 오가닉을 포함한 모든 소스에서 앱의 모든 신규 인스톨에 대한 포스트백을 수신하는 것을 선호합니다. 이렇게 하려면 **모든 파트너에 어트리뷰션된 이벤트**를 선택하여 모든 인스톨 포스트백을 LINE으로 전송합니다. 이 작업은 계정 소유자만 수행할 수 있습니다.
+
+<div id="activate-partner" />
 
 ### 파트너 활성화
 
 이곳을 **처음 방문**하면 아래를 토글해야 합니다. ***파트너 활성화*** 버튼을 **켜서** 연동 탭의 파라미터 설정을 활성화합니다. 파트너와 함께 작업하는 동안에는 토글이 **켜져 있어야** 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -72,11 +84,15 @@ LINE 광고 플랫폼은 고유한 LINE\_Ad\_account\_id 및 LINE\_Ad\_app\_ID�
 * 고유한 **LINE\_Ad\_account\_id 및 LINE\_Ad\_app\_ID**를 입력합니다.
 
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > ```http
 > https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
 > ```
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -84,6 +100,8 @@ LINE 광고 플랫폼은 고유한 LINE\_Ad\_account\_id 및 LINE\_Ad\_app\_ID�
 
 LINE 광고 플랫폼에 어트리뷰션된 유저에게서만 발생하는 이벤트에 대해 **이 파트너에 어트리뷰션된 이벤트만**을 선택합니다.  
 전체 유저 기반을 LINE 광고 플랫폼에 리포트할 수 있도록 하려면 **모든 파트너 또는 오가닉에 어트리뷰션된 이벤트**를 선택합니다.
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -104,6 +122,8 @@ LINE 광고 플랫폼에 어트리뷰션된 유저에게서만 발생하는 이�
 | **SDK 이벤트 이름** | 앱에 연동된 SDK 또는 서버 간(S2S) 이벤트에서 앱스플라이어가 수신한 이벤트의 이름입니다.  <br />**팁** - 원하는 이벤트가 목록에 없으면, 논오가닉으로 인스톨한 기기에서 이벤트를 실행하고 다시 점검해 봅니다. |
 | **파트너 이벤트 식별자** | LINE 광고 플랫폼 측에 정의되어 있는 각 이벤트의 고유 이름 또는 ID입니다.  <br />LINE 광고 플랫폼에서 해당 이벤트 ID를 가져와서 텍스트 필드에 설정합니다. |
 | **수익 전송** | **체크하지 않은 경우** - **af\_revenue** 파라미터에 포함된 수익 파라미터를 제외하고, 리치 인앱 이벤트의 모든 파라미터를 파트너에게 전송합니다.  <br />**선택한 경우** - 수익 값(이벤트에 존재하는 경우)을 포함하여 모든 파라미터를 전송합니다. |
+
+<div id="custom-in-app-events-mapping" />
 
 ### 커스텀 인앱 이벤트 매핑
 

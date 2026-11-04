@@ -42,6 +42,8 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 
 파트너 설정 창 헤더에 대한 자세한 설명은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">여기</Anchor>를 클릭하십시오.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > * 연동 탭의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#d-general-settings">일반 설정</Anchor> 단계는 모든 파트너에게 **필수** 항목입니다
@@ -50,6 +52,10 @@ Pinterest의 구성 창에는 연동, 어트리뷰션 링크, 권한이라는 3�
 <div id="integration-tab" />
 
 <Accordion title="연동 탭">
+
+<div id="note" />
+
+<div id="activate-partner" />
 
 ### 파트너 활성화
 
@@ -94,6 +100,8 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 이 탭에서는 X Ads에 애드 네트워크, 에이전시 또는 양쪽 모두로 활동하는지에 따라 부여할 권한을 선택할 수 있습니다. X Ads에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 X Ads에 제어 권한을 부여할 수 있습니다.
 
 이 토글을 사용하여, 앱에 대한 자체 설정 권한을 애드 네트워크에 부여할 수 있습니다.
+
+<div id="ad-network-permissions" />
 
 ### 애드 네트워크 권한
 

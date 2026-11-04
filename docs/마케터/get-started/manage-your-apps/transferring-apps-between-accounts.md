@@ -31,9 +31,13 @@ x-zendesk:
 
 ![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
+<div id="app-transfer-between-accounts" />
+
 ## 계정 간 앱 전송
 
 앱스플라이어 계정 간에 앱을 이전하려면 송수신 앱 소유자(앱스플라이어 계정 관리자)가 필요한 전송 필수 조건을 완료하고 전송에 동의해야 합니다.
+
+<div id="prerequisites" />
 
 ### 필수 조건
 
@@ -41,6 +45,8 @@ x-zendesk:
 * 두 계정 모두 활성 상태여야 합니다. 정지된 계정은 앱을 보내거나 받을 수 없습니다.
 * 두 계정 모두 미지급 인보이스가 없어야 합니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/account-management-plans-payments-and-billing#appsflyer-plans">더 알아보기</Anchor>
+
+<div id="app-transfer-process" />
 
 ### 앱 전송 과정
 
@@ -61,6 +67,8 @@ x-zendesk:
 <table><thead><tr><th>항목</th><th>이전 완료/<br/>이전되지 않음</th><th>세부 사항/결정 고려사항</th></tr></thead><tbody><tr><td>앱 설정 </td><td>이전 완료</td><td> <strong>결정권:</strong> 발신자는 전송 전에 FireBase/GCM 서버 키를 삭제할 수 있습니다. </td></tr><tr><td rowspan="2">연동된 파트너</td><td>이전 완료</td><td><p>연동, 비용 및 수익 설정(비용 및 수익 데이터 포함)</p><p><strong>결정권:</strong> 수신자에게 이전할 연동 파트너가 없는 경우, 전송자는 해당 파트너를 비활성화하고 설정 및 자격 증명(비용 및 광고 수익 설정 포함)을 삭제해야 합니다.</p></td></tr><tr><td>이전되지 않음</td><td><p>광고 네트워크 및 에이전시 권한</p><p>Twitter 설정 및 신용 정보</p></td></tr><tr><td>링크 관리</td><td>이전되지 않음</td><td>원링크 템플릿과 링크는 자동으로 전송되지 않지만 CSM이 전송할 수 있습니다. <strong>결정권:</strong> <ul><li>템플릿과 링크를 전송하려면 CSM에 문의하거나 <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a> 에 메시지를 보냅니다.</li><li>발신자는 전송하기 전에 오래된 링크를 삭제할 수 있습니다.</li></ul></td></tr><tr><td>Push API</td><td>이전 완료</td><td> <strong>결정권:</strong><ul><li>수신자가 전송되는 Push API 설정(엔드포인트)을 필요로 하지 않는 경우 발신자는 해당 설정을 삭제해야 합니다. 그렇지 않으면 데이터가 발신자 정의 엔드포인트로 계속 전달됩니다.</li><li>그 대신, 수신자는 발신자가 사용자-수준 데이터를 수신하지 않도록 보장하기 위해 수신에 대한 설정을 변경할 수 있습니다.  </li></ul></td></tr><tr><td>스마트 배너</td><td>이전되지 않음</td><td><p>배너, 배너 그룹, 광고 소재, 웹사이트는 이전되지 않습니다.  </p></td></tr><tr><td>스마트 스크립트</td><td>이전되지 않음</td><td>앱스플라이어 UI 내에서 생성된 스마트 스크립트는 새 계정에서 사용할 수 없습니다. </td></tr><tr><td>대행사</td><td>이전되지 않음</td><td>에이전시는 앱에 액세스할 수 없게 됩니다.</td></tr><tr><td>오디언스</td><td>이전되지 않음</td><td>잠재 고객들은 삭제됩니다.</td></tr><tr><td>비용 가져오기</td><td>해당 없음</td><td>수신자는 과거 비용 가져오기 파일에 액세스할 수 없습니다. 이는 비용 기록에 영향을 주지 않습니다.  </td></tr><tr><td>데이터 락커</td><td>이전되지 않음</td><td>앱이 데이터 보관함 구성에서 제거되고, 발신자 계정의 앱 데이터 수신이 중지됩니다. </td></tr><tr><td>과거 데이터</td><td>이전 완료</td><td> </td></tr><tr><td>PBA 브랜드 번들</td><td>이전되지 않음</td><td><p>관련 앱이 이전되면 발신자는 번들을 더는 사용할 수 없습니다. 수신자는 PBA 데이터에 액세스할 수 없습니다.</p><p>즉, 클라이언트가 새 계정에서 PBA를 계속 사용해야 하는 경우 앱 이전이 완료되기 전에 웹 번들을 삭제해야 하며, 그렇지 않으면 새 계정에서 동일한 웹 번들을 만들 수 없습니다.</p></td></tr><tr><td>프로텍트 360 데이터</td><td>이전 완료</td><td> </td></tr><tr><td>로데이터 및 통합 데이터</td><td>이전 완료</td><td> </td></tr><tr><td>SDK 개발 키</td><td>이전 완료</td><td> </td></tr><tr><td>유효성 검증 규칙</td><td>이전 완료</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="transfer-procedures" />
 
 ## 전송 절차
 

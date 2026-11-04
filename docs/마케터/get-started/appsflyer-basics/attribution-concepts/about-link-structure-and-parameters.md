@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **한눈에 보기:**  앱스플라이어 어트리뷰션 링크 구조와 파라미터에 대해 알아보세요.
 
+<div id="overview" />
+
 ## 개요
 
 어트리뷰션 링크를 통해 광고주는 광고에 대한 사용자 인게이지먼트에 관한 데이터를 수집할 수 있습니다. 어트리뷰션 링크는 광고 뒤에 배치되어 사용자가 광고에 참여할 때 앱스플라이어에 알립니다. 인게이지먼트는 광고를 클릭하거나 광고 노출을 볼 때 발생할 수 있습니다. 어트리뷰션 URL 사본이 앱스플라이어로 전송됩니다.
@@ -78,14 +80,20 @@ x-zendesk:
 | URL 구조 | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | 예시 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 앱스플라이어는 클릭 및 노출과 같은 인게이지먼트 트래픽 수신 시, HTTPS 프로토콜만을 지원합니다.
+
+<div id="attribution-link-parameters" />
 
 ## 어트리뷰션 링크 파라미터
 
 * 나열된 파라미터는 어트리뷰션 링크에서 사용할 수 있습니다.
 * 값 **필드 유형** 열은 매개변수 값의 문자 제한입니다. 매개변수 값의 길이 제한에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary">여기</Anchor>에서 확인하세요.
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### 어트리뷰션 링크 파라미터—UA 및 리타겟팅
 
@@ -140,12 +148,16 @@ x-zendesk:
 | <span id="af_og_description"></span>af\_og\_description | 해당 없음 | 링크가 소셜미디어에 게시되면, 오픈그래프(OG) 설명이 설명의 미리 보기를 생성합니다. | 문자열 300 |
 | <span id="af_og_image"></span>af\_og\_image | 해당 없음 | 링크가 소셜미디어에 게시되면, 오픈그래프(OG) 이미지가 이미지 미리 보기를 생성합니다. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### 어트리뷰션 링크 파라미터 - 리타겟팅 전용
 
 | 파라미터 | 로데이터에서의 표시 이름 | 설명 | 필드 유형과 너비 |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | 리타겟팅 (캠페인) | 모든 리타겟팅 캠페인의 클릭 URL에는 `&is_retargeting=true`(이)가 포함되어야 합니다.  <br />매개변수가 포함되지 않았거나 값이 "false"인 경우, 캠페인은 일반 사용자 유입 캠페인으로 간주됩니다. | 열거형 5 문자 |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | 리인게이지먼트 기간 | 이 파라미터를 어트리뷰션 링크에 추가하여 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide#reengagement-rules-and-windows">리인게이지먼트 어트리뷰션 기간</Anchor>을 변경합니다.<br /><br />가능한 기간 범위 옵션은 다음과 같습니다.<ul><li>일: 1-90 또는 시간 1-36</li><li>수명: 즉, 리인게이지먼트 기간은 무제한입니다. 예:`&af_reengagement_window=lifetime`</li></ul>기본값: 30일<br /><br />예: `&af_reengagement_window=30d`은(는) 리인게이지먼트 기간을 30일로 설정합니다. | 해당 없음 |
+
+<div id="viewability-parameters" />
 
 ### 조회 가능성 파라미터
 
@@ -160,6 +172,8 @@ x-zendesk:
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | 디바이스 화면에 표시된 광고 단위의 최대 비율 |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | 초 | 오디오의 총 가능한 길이 |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | 초 | 오디오가 얼마나 재생되었는지 |
+
+<div id="android-specific-parameters" />
 
 ### Android 특정 파라미터
 
@@ -182,6 +196,8 @@ x-zendesk:
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | 해당 없음 | Amazon Fire 광고 ID |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Google 콘솔에서의 커스텀 스토어 리스트 | 문자열 |
 
+<div id="ios-specific-parameters" />
+
 ### iOS 전용 파라미터
 
 | 파라미터 | 표시 이름 | 설명 |
@@ -198,6 +214,8 @@ x-zendesk:
 | <span id="md5_idfv"></span>md5\_idfv | 해당 없음 | MD5로 해시된 IDFV |
 | <span id="sha1_mac"></span>sha1\_mac | 해당 없음 | SHA1로 해시된 디바이스의 MAC 주소. 애드 네트워크 지원이 필요합니다. |
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > ```http
@@ -206,6 +224,8 @@ x-zendesk:
 > ```
 
 모든 파라미터는 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">설치 리포트</Anchor>와 <Anchor target="_blank" href="/marketers/ko/docs/analytics-and-aggregate-reporting-apis">분석, 리포트 및 API</Anchor>에서 이용할 수 있습니다.
+
+<div id="custom-parameters" />
 
 ### 사용자 지정 파라미터
 
@@ -230,11 +250,15 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 각 <Anchor target="_blank" href="http://appsflyer.com/partners">파트너사</Anchor> 에는 *\_int* 접미사로 끝나는 고유한 PID 값이 부여됩니다. <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">OneLink 링크</Anchor> 를 사용할 때는 연동 파트너사가 선점한 값이 아니라면 원하시는 어떤 값으로든 PID를 설정하실 수 있습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 앱스플라이어는 이메일이나 SMS 같은 커스텀 미디어 소스에서 예약된 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns#앱스플라이어와-통합된-srn">SRN</Anchor> 이름을 PID 값으로 사용하는 어트리뷰션 링크를 차단합니다. 이 제한은 ASRN에는 **적용되지 않습니다**.
 
 중요한 연동 파트너 전용 PID의 대표적인 예로는 organic, googleadwords\_int(Google AdWords), facebook\_int(Meta ads), twitter\_int(X Ads) 등이 있습니다. 이메일, SMS, mail pigeons와 같은 비연동 소스의 경우 원하는 어떤 이름이든 사용할 수 있습니다.
+
+<div id="avoid-common-pid-issues" />
 
 #### 일반적인 PID 문제를 방지하세요:
 
@@ -245,6 +269,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
   * 해당 클릭 또는 설치는 대시보드상에서 ***af\_invalid\_param*** 항목으로 표시됩니다.
   * 어트리뷰션 링크는 귀속되지 않습니다.
   * 클릭 시 딥링킹 기능이 작동하지 않습니다.
+
+<div id="tip" />
 
 > 👍 **팁**
 >
@@ -269,6 +295,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 앱 내 배너, 전면 광고, 비디오 등 광고 유형이나 지면(위치), 또는 둘 다에 대한 추가 정보를 포함하려면 서브 사이트 ID 파라미터를 사용하세요.
 
+<div id="example-1" />
+
 > 📄 **예시**
 >
 > 다음 어트리뷰션 링크에는 다음이 포함됩니다.
@@ -284,6 +312,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > * ABCD = 퍼블리셔와 협력하는 어필리에이트 소스(서브 퍼블리셔)
 > * 4567 = 배너, 전면 광고, 동영상 등 앱 내 광고 유형 지면
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **자주 묻는 질문: 트래픽으로 차단된 설치가 많은 이유는 무엇입니까?**
 
 차단된 설치는 다음과 같은 이유로 발생할 수 있습니다.
@@ -295,6 +325,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 설치가 차단되는 것을 방지하려면 예시에 나온 것처럼 퍼블리셔당 단 하나의 사이트 ID 파라미터만 전송하도록 하세요.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## 데이터의 세분화 수준
 
@@ -313,6 +345,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 * `Ad set (af_adset=)`
 * `Ad name (af_ad=)`
 
+<div id="example-2" />
+
 > 📄 **예시**
 >
 > 다음 어트리뷰션 링크는 통합된 "네트워크" 미디어 소스에서 운영되는 "겨울" 캠페인의 "코트" 광고 세트 내 "캐시미어" 광고를 기록하기 위해 4단계의 세분성을 사용합니다.
@@ -321,6 +355,8 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="frequently-asked-questions" />
 
 ## 자주 묻는 질문
 
@@ -371,6 +407,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 
 구독자 파라미터, 즉 af\_sub1, af\_sub2, ..., af\_sub\_5는 유용한 KPI를 기록하는 데 사용할 수 있습니다. 이러한 파라미터는 분석되어 로데이터 리포트에 표시되므로 데이터 집계나 필터링을 수행하는 데 매우 유용합니다.
 
+<div id="example-3" />
+
 > 📄 **예시**
 >
 > 우박 차량 호출 앱인 Luber에는 파란색, 노란색, 빨간색의 3가지 색상 템플릿이 있는 크리에이티브가 있습니다. Luber의 모바일 마케터인 Linda는 어떤 색상 템플릿이 더 많은 설치를 가져오는지 시험하고 싶어합니다. 이를 위해 그녀는 모든 비(非) SRN 매체 소스의 모든 파란색 광고의 어트리뷰션 링크에 `&af_sub3=blue`을 추가합니다. 노란색과 빨간색 광고에도 동일한 작업이 수행됩니다. 이러한 정보를 분석하여 로데이터 리포트에 표시되면 Linda는 다양한 색상의 광고의 성공 여부를 분석하고 가장 전환율이 높은 광고를 선택할 수 있습니다.
@@ -385,6 +423,8 @@ https://app.appsflyer.com/com.travelco?pid=globalwide_int&clickid=#reqid#
 * 캠페인 이름은 공백으로 시작하거나 끝나서는 안 됩니다. 이는 대시보드와 리포트에서 불일치를 일으킬 수 있습니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특성 및 제한 사항
 

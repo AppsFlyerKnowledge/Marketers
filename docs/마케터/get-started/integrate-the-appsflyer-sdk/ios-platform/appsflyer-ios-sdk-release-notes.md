@@ -26,9 +26,13 @@ x-zendesk:
 
 **iOS 및 Android의 레거시 SDK 버전은 고정된 6개월 주기로 지원이 중단됩니다.** 이 주기는 사전 통지를 제공하도록 설계되어 팀이 미리 계획하고 중단 없이 전체 앱 기능을 유지하는 데 도움을 줍니다. 최신 SDK로 업그레이드하면 최신 기능, 향상된 안정성 및 지속적인 지원에 접근할 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 원활한 전환을 보장하기 위해 앱 개발자는 지원 종료 날짜 이전에 최신 SDK 버전으로 업데이트할 것을 권장합니다.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## 지원 종료 vs. 사용 중단
 
@@ -36,6 +40,8 @@ AppsFlyer는 지원 수준과 데이터 측정에 미치는 영향을 명확히 
 
 * **사용 중단된 버전** 알려진 문제로 인해 더 이상 권장되지 않는 SDK 버전, 예를 들어 치명적인 버그가 있는 경우입니다. 이 버전은 여전히 AppsFlyer에 데이터를 전송할 수 있지만, 계속 사용하지 않는 것이 권장되며 지원되는 버전으로 업그레이드하는 것이 강력히 권장됩니다.
 * **지원 종료 버전:** 모든 플랫폼에서 측정이 완전히 중단된 SDK 버전입니다. Android와 iOS 모두에서 설치, 세션 및 인앱 이벤트는 측정되지 않습니다. 이 버전에서 발생하는 모든 트래픽(특히 AppsFlyer에 의해 제외되지 않는 한)은 400 상태 코드를 받게 되며, 이는 SDK가 평소처럼 API 호출을 전송하려고 시도하지만 AppsFlyer 서버가 이를 거부하고 데이터가 처리되지 않음을 의미합니다.
+
+<div id="ios-sdk-release-notes" />
 
 ## 웹 SDK 릴리스 노트
 
@@ -77,6 +83,8 @@ AppsFlyer는 지원 수준과 데이터 측정에 미치는 영향을 명확히 
 | 6.11.0 | 2023-04-25 | <ul><li>SDK가 앱스플라이어 서버에 요청을 전송하기 위해 URL의 새 앱스플라이어 도메인 이름을 사용합니다.</li><li>빈 값 또는 null 값이 전송될 때 setHost API의 동작이 변경되었습니다. [더 알아보기](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#sethost)</li></ul> |
 | 6.10.1 | 2023-04-02 | 다이렉트 딥 링킹 시나리오의 UDL 페이로드에 `link` 파라미터를 추가했습니다. |
 | 6.10.0 | 2023-02-15 | SKAdNetwork 4.0 지원. <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">앱스플라이어 SKAdNetwork 솔루션에 대해 자세히 알아보기</Anchor> |
+
+<div id="unsupported-sdk-versions" />
 
 ## 지원되지 않는 SDK 버전
 
@@ -128,6 +136,8 @@ AppsFlyer는 지원 수준과 데이터 측정에 미치는 영향을 명확히 
 | 6.0.2   <br />지원 종료: 2024-08-31 | 2020-08-27 | <ul><li>API 이름 변경:<br />deviceLoggingDisabled --> anonymizeUser</li><li>iOS 14용 IDFA를 수집하려면 AppTrackingTransparency(ATT) 대화상자가 필요합니다.</li><li>IDFV 크로스 프로모션 어트리뷰션에 대한 지원 추가</li></ul> |
 | 6.0.1 베타  <br />지원 종료: 2024-08-31 | 2020-08-06 | <ul><li><Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">SKAdNetwork 어트리뷰션</Anchor>에 대한 지원이 추가되어 광고주가 사용자의 개인 정보를 보호하면서 캠페인의 성과를 측정할 수 있습니다.</li></ul> |
 | 6.0.0 베타  <br />지원 종료: 2024-08-31 | 2020-08-04 | <ul><li>확장된 디버깅 기능</li><li>SDK 기능 및 API에 대한 주요 변경 사항. [더 알아보기](/docs/appsflyer-ios-sdk-release-notes#ios-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

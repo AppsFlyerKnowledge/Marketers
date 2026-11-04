@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 마지막 터치 전에 사용자를 참여시키고 도움을 준 매체사의 광범위한 영향을 측정합니다.
 
+<div id="assisted-installs" />
+
 ## 어시스트된 인스톨
 
 <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">어시스트 인스톨</Anchor> (일명 멀티터치 어트리뷰션)은 미디어소스/캠페인이 마지막 터치를 하지 않았지만 인스톨 전과 어트리뷰션 윈도우 동안 유저를 터치한 인스톨입니다. 하나의 인스톨에는 최대 3개의 인스톨 어시스트가 있을 수 있습니다.
 
 각 미디어소스와 캠페인의 광범위한 영향을 측정하기 위해 미디어소스 및 캠페인 수준에서 어시스트 인스톨의 분석 데이터를 사용할 수 있습니다.
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### 개요 대시보드에서 어시스트 인스톨 지표 확인하기
 
@@ -49,9 +53,13 @@ x-zendesk:
 
    ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### 어시스트가 중요한 이유
 
 많은 경우, 어시스트 소스를 통해 잠재적 사용자는 앱에 익숙해지지만, 어떤 이유인지 인스톨까지는 도달하지 못합니다. 따라서 캠페인 최적화 및 측정에 있어 어시스트를 측정하고 인식하는 것이 중요합니다.
+
+<div id="assisted-installs-reporting" />
 
 ### 인스톨 어시스트 리포트
 
@@ -70,6 +78,8 @@ x-zendesk:
 * 연관된 에이전시 이름 (partner), 에이전시가 있는 경우.
 
 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview#유저-여정-리포트">사용자 여정 로데이터</Anchor>를 참조하십시오.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >

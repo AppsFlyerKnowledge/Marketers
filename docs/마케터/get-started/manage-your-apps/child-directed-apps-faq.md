@@ -25,9 +25,13 @@ x-zendesk:
 ---
 **한눈에 보기:** 요약: 어린이용 앱에 대해 자주 묻는 질문(FAQ)에 대한 답변을 확인하세요.
 
+<div id="overview" />
+
 ## 개요
 
 어린이의 개인 정보를 보호하기 위해 어린이용 앱에 대한 많은 정책, 법률 및 규정이 있습니다. 주요한 것들로는 [COPPA](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa)와 [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2029-1-1)이 있습니다. 최근 몇 년 동안 iOS 및 Android와 같은 플랫폼은 어린이의 개인 정보 보호를 개선하기 위한 정책을 구현했습니다. 앱을 만들 때 가장 먼저 해야 할 일 중 하나는 어린이만을 대상으로 하는지 아니면 다양한 대상(어린이와 성인 모두)을 대상으로 하는지 확인하는 것입니다. 이 가이드에서 아동을 대상으로 하는 앱을 위한 호환 어트리뷰션 솔루션을 구현하는 방법을 알아보세요.
+
+<div id="adding-a-child-directed-app" />
 
 ## 어린이용 앱 추가하기
 
@@ -76,6 +80,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="implementing-appsflyer-compliance-tools" />
+
 ## 앱스플라이어 규정 준수 도구 구현
 
 <div id="how-do-i-know-which-tool-to-use" />
@@ -83,6 +89,8 @@ x-zendesk:
 <Accordion title="어떤 도구를 사용해야 하는지 어떻게 알 수 있습니까?">
 
 앱이 어린이 또는 다양한 대상(어린이 및 성인)을 대상으로 하는 경우 법적 요구 사항에 부합하는 이 가이드의 권장 도구를 사용할 수 있습니다. 이 페이지 하단에서 더 많은 SDK 리소스를 참조하세요.
+
+<div id="examples-of-compliance-tools-and-their-use" />
 
 #### 규정 준수 도구 및 사용의 예
 
@@ -148,6 +156,8 @@ x-zendesk:
 <Accordion title="내 앱이 어린이용이고 모든 애드 네트워크가 차단된 경우 SDK가 필요한가요?">
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

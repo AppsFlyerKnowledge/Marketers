@@ -33,6 +33,8 @@ x-zendesk:
 
 Google Ads 캠페인을 통해 발생하는 설치와 인앱 이벤트를 측정하고 어트리뷰션하기 위해, 앱스플라이어에서 Google Ads 연동을 설정하세요. 앱스플라이어에서 이 연동은 `googleadwords_int`이며 어트리뷰션 결과는 `googleadwords_int` 미디어 소스 아래에 보고됩니다.
 
+<div id="google-ads-attribution-flow-with-advanced-data-sharing" />
+
 ## 고급 데이터 공유를 활용한 Google Ads 어트리뷰션 흐름
 
 [![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
@@ -43,6 +45,8 @@ Google Ads 캠페인을 통해 발생하는 설치와 인앱 이벤트를 측정
 4. 앱스플라이어는 자체 보유한 확률론적 모델링 기술을 통해 Google의 비확정적 매칭 데이터를 다시 한번 검증합니다. 검증된 클레임만 수락됩니다.
 5. 검증을 거친 Google의 클레임이 수용되면 최종 어트리뷰션 판단 단계에 진입합니다. 여기서 앱스플라이어는 Google의 성과를 다른 매체(타 SRN, 클릭 기반 네트워크)나 오가닉 유입과 비교하여 최종 기여도를 결정합니다. 설치 데이터는 앱스플라이어의 어트리뷰션 로직과 우선순위 규칙에 따라 최종 승리한 매체에 할당됩니다.
 6. 클레임이 수용되고 최종 승리 후보로 선택되면, 해당 설치는 Google에 어트리뷰션됩니다. 로우 데이터 보고서상에서 확정적 클레임은 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary#attribution::cecc12c5">match\_type</Anchor>이 `srn`(으)로, 비확정적 매칭은 매치 타입이 ‘`probabilistic`’(으)로 나타납니다.
+
+<div id="configuring-google-ads-attribution-for-advertisers" />
 
 ## 광고주를 위한 Google Ads 어트리뷰션 구성
 
@@ -119,6 +123,8 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 
    재설치 귀속은 설치 귀속 설정의 값을 사용하므로 별도의 회고 창 구성은 필요하지 않습니다. 자세한 정보는 <Anchor target="_blank" href="/marketers/ko/docs/measure-reinstalls">재설치 측정</Anchor>을 참조하십시오.
 
+   <div id="important" />
+
    > 🚧 **중요!**
    >
    > 재설치 전환 데이터는 Google Ads 대시보드에서 **session\_start**로 표시됩니다. 앱스플라이어에서는 이를 어트리뷰션하고 리어트리뷰션으로 간주합니다.
@@ -140,6 +146,8 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 14. **Google Ads 연결** 버튼을 클릭하고 Google 계정에 로그인하면 앱스플라이어에서 모든 Google Ads 캠페인 비용을 확인할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-cost-and-ad-revenue">자세한 내용은 여기에서 확인하세요</Anchor>.
 15. **저장**을 클릭합니다.
 
+<div id="stop" />
+
 > ❗️ **멈추세요!**
 >
 > * Google Ads에서 설치 및 재참여에 대한 앱스플라이어 어트리뷰션을 보려면 다음 앱스플라이어 이벤트를 가져와야 합니다.
@@ -153,6 +161,8 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 
 <Accordion title="4단계: 앱 전환 가져오기(필수)">
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > Google Ads에 새 전환을 등록하려면 **앱을 실행하고 매핑된 인앱 이벤트를 최소한 한 번 이상 수행**해야 합니다. iOS 앱을 시험하려면 이벤트를 확인하기 위해 IDFA를 수집해야 합니다. 이벤트 전환이 대기열에 추가되는 데 최대 6시간이 걸릴 수 있습니다. 추가되면 가져올 수 있으며, 새로운 전환의 상태가 "최근 전환 없음"에서 "전환 기록 중"으로 변경됩니다.
@@ -164,6 +174,8 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 * 모든 앱에 대해 **first\_open** 이벤트를 전환 이벤트로 설정하세요(설치 측정을 위해 필수입니다).
 * Google을 통한 리인게이지먼트를 측정할 계획이라면, **session\_start** 이벤트를 전환 이벤트로 설정하세요.
 * Google에서 측정하려는 각 인앱 이벤트에 대해 이 과정을 반복하세요.
+
+  <div id="note" />
 
   > 📘 **참고**
   >
@@ -187,6 +199,8 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
 1. **연동** 탭으로 이동하여 **인앱 이벤트 포스트백** 섹션까지 아래로 스크롤합니다.
+
+   <div id="note-1" />
 
    > 📘 **참고**
    >
@@ -214,9 +228,13 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > Google Ads API 연동에는 Google Ads 리마케팅 기능이 자동으로 포함됩니다. 이 연동을 완료하고 이벤트를 Google Ads에 전송하면 추가 연동 없이 Google Ads에서 리마케팅 오디언스 목록을 생성할 수 있습니다.
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## Google Ads 팀원에게 권한 부여
 
@@ -235,15 +253,21 @@ Google Ads 팀원에게 귀사의 앱에 대한 액세스를 부여하려면 다
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">광고 네트워크에 권한 제공하기</Anchor>에 대해 자세히 알아보세요.
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## 에이전시를 위한 Google Ads 어트리뷰션 활성화
 
 앱스플라이어는 Google Ads와 함께 에이전시 구성을 지원합니다. 앱스플라이어가 데이터를 정확하게 어트리뷰션할 수 있도록 광고주와 대행사는 별도의 Google Ads 계정을 가지고 있어야 합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-agencies">Google Ads 통합을 위한 대행사 구성</Anchor>을(를) 참조하세요.
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## 여러 Google Ads 계정으로 운영
 
 앱스플라이어는 동일한 앱에 대해 여러 Google Ads 계정 사용을 지원합니다. 이 작업은 Google Ads에서 링크 ID를 공유하고 각 Google Ads 계정으로 이벤트를 가져오는 방식으로 수행됩니다.
 
 자세한 내용은 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">Google Ads 링크 ID 공유에 관한 Google 문서</Anchor>를 참조하세요.
+
+<div id="ios-app-campaigns" />
 
 ## iOS 앱 캠페인
 
@@ -262,6 +286,8 @@ Google Ads 팀원에게 귀사의 앱에 대한 액세스를 부여하려면 다
 * 모든 iOS ACI 캠페인은 ICM을 통해 어트리뷰션이 가능합니다. 이는 광고주 앱, 퍼블리셔 앱 또는 두 앱 모두에서 디바이스 ID를 사용할 수 없는 경우에 적용됩니다.
 * Google은 현재 iOS에서 클릭만 클레임합니다. 노출에 대해서는 클레임하지 않습니다.
 
+<div id="using-deferred-deep-linking-in-app-campaigns" />
+
 ## 앱 캠페인에서 디퍼드 딥링킹 사용하기
 
 **딥링크란 무엇이며 어떻게 작동하나요?**
@@ -279,6 +305,10 @@ Google Ads 팀원에게 귀사의 앱에 대한 액세스를 부여하려면 다
 3. 앱스플라이어에서 **구성** > **활성화된 연동** 으로 이동합니다. **Google Ads (Adwords)** 를 선택하세요.
 4. **연동** 탭에서 **Google Ads와의 디퍼드 딥링킹**을 켭니다.
 5. **연동 저장을 클릭합니다.**
+
+<div id="populate-the-channel-parameter" />
+
+<div id="google-ads-parameter-mapping" />
 
 ## Google Ads 파라미터 매핑
 
@@ -305,11 +335,17 @@ Google Ads는 `채널(af_channel)` 파라미터를 발송하지 않습니다. �
 
 Google 응답에서 사용할 수 있는 광고 유형에 대한 자세한 내용은 <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google 요청 및 응답 사양</Anchor>을(를) 참조하세요.
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > Google이 확률론적 어트리뷰션을 통해 설치 성과를 어트리뷰트 할 때, Google은 앱스플라이어와 `network_type`을(를) 공유하지 않습니다. 그 결과, 네트워크 유형이 누락되며, 채널 값은 (접미사 없이)`ACI_`(으)로 표시됩니다.
 
+<div id="campaign-type-app-campaigns" />
+
 ### 캠페인 유형: 앱 캠페인
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Google Ads에서의 캠페인 이름 변경
 
@@ -321,15 +357,21 @@ Google 응답에서 사용할 수 있는 광고 유형에 대한 자세한 내�
 
 **참고:** 캠페인 이름 유형은 클릭 또는 노출 날짜를 기준으로 설정되며, 설치 날짜는 아닙니다.
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### 로데이터 리포트의 참여 뷰 파라미터
 
 적극적 조회란 사용자가 10초 이상 지속된 비디오 광고에 노출된 경우를 의미합니다. 적극적 조회는 클릭과 동일한 어트리뷰션 우선 순위를 가지고 있습니다.  안드로이드의 경우, 적극적 조회는 로데이터 리포트에서 `Engagement Type` 및 `Sub Param 5` 파라미터 아래에 `engaged_view`로 표시됩니다.   
 적극적 조회는 앱스플라이어에서 설정된 클릭 룩백 윈도우 기간 내에 발생한 경우에만 집계되며, 최대 3일까지로 제한됩니다.
 
+<div id="important-2" />
+
 > 🚧 **중요!**
 >
 > * Google은 SRN(Self Reporting Network)입니다. 이러한 네트워크의 기여 흐름이 작동하는 방식에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns">자체 보고 네트워크(SRN)</Anchor>을(를) 참조하세요.
 > * 앱스플라이어는 Google에서 제공되는 모든 캠페인 정보를 제시할 수 있습니다. 캠페인 유형(검색, 비디오, 디스플레이) 및 관련 정보는 Google에 의해 결정됩니다. 자세한 내용은 <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">Google 요청 및 응답 사양</Anchor>을(를) 참조하세요.
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## 디바이스 ID 없이 전환을 위해 Google Ads 캠페인을 최적화하세요.
 
@@ -345,6 +387,8 @@ iOS14.5 이상 및 Android 12 이상부터 Google Ads에 여러 식별자가 도
 Google Ads와 앱스플라이어에서 광고주는 리인게이지먼트, 설치, 리어트리뷰션 활동에 대해 디바이스 ID가 없는 트래픽이라도 캠페인 수준 데이터를 수신할 수 있습니다. 그러나 광고 세트 및 광고 수준 데이터는 Google에 의해 공유되지 않습니다.  
 **이러한 파라미터를 수신하기 위해 광고주가 별도의 조치를 취할 필요는 없습니다.**
 
+<div id="data-visibility-by-operating-system" />
+
 ### 운영 체제별 데이터 가시성
 
 **Android 앱:**
@@ -355,6 +399,8 @@ Google Ads와 앱스플라이어에서 광고주는 리인게이지먼트, 설�
 
 Google Ads와 앱스플라이어에서 광고주는 리인게이지먼트에 관한 기기 ID 없이 트래픽에 대한 전체 캠페인 데이터를 받을 수 있습니다.
 
+<div id="advertising-without-the-firebase-sdk" />
+
 ## Firebase SDK 없이 광고하기
 
 Firebase SDK가 구현되지 않은 상태에서 Google Ads로 광고할 때는 다음과 같은 제한 사항이 적용됩니다.
@@ -363,6 +409,8 @@ Firebase SDK가 구현되지 않은 상태에서 Google Ads로 광고할 때는 
 | --- | --- |
 | tROAS 지원되지 않음 | tROAS(광고 지출 대비 목표 수익) 최적화는 Firebase SDK 수익 이벤트를 사용할 때만 가능합니다. AppsFlyer 수익 이벤트 및 다른 모든 MMP의 수익 이벤트는 이 최적화에 적합하지 않습니다. |
 | 청중 제외 지원되지 않음 | 광고주는 캠페인이 Firebase SDK 이벤트를 최적화할 때만 앱 캠페인에서 사용자를 제외할 수 있습니다. |
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
 
 ## Google의 확률론적 어트리뷰션(ICM) 특성과 한계
 
@@ -376,6 +424,8 @@ Firebase SDK가 구현되지 않은 상태에서 Google Ads로 광고할 때는 
 | 어트리뷰션된 터치 시간 | Google 확률론적 어트리뷰션 성과 클레임 시점의 타임스탬프는 15분 간격(00:00, 00:15, 00:30 등)으로 반올림됩니다. |
 | IP 차단 | IP 마스킹을 사용하면 ICM 성능에 영향을 줄 수 있습니다. Google은 IP 마스킹이 Google Ads 측정 및 성능에 영향을 줄 수 있으므로 이를 사용 중지할 것을 권장합니다. <Anchor target="_blank" href="/marketers/ko/docs/apply-ip-masking-to-user-data#ip-차단">사용자 데이터에 IP 마스킹 적용</Anchor>을(를) 참조하세요. |
 | IDFV | Google은 ICM 성능을 극대화하기 위해 설치, 앱 열기 및 인앱 이벤트와 함께 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary#idfv">IDFV</Anchor>(사용 가능한 경우)를 전송할 것을 요구합니다. |
+
+<div id="h_01HDP0SBEE75MAT4A4S9E7Y7FF" />
 
 > 📄 **참고 문서**
 >

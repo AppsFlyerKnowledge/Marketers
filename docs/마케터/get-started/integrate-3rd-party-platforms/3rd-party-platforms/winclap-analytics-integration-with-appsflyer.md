@@ -21,12 +21,16 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
 
 
 <span id="setting-up-winclap"></span>설정은 **활성 연동** 페이지에서 수행되지만 파트너를 찾으려면 먼저 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations">마켓플레이스</Anchor>로 이동해야 합니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -49,10 +53,14 @@ x-zendesk:
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 여기서 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 ***파트너 활성화*** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/user-level-data-retention">여기</Anchor>를 클릭하십시오.
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -74,6 +82,8 @@ x-zendesk:
 * 앱 버전
 * 앱 이름
 * 설치 시간
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 

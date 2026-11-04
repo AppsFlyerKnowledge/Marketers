@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어와 타사 플랫폼 간의 어트리뷰션 결과가 다른 원인을 확인해 보세요.
 
+<div id="overview" />
+
 ## 개요
 
 미디어 소스의 데이터 공유 정책에 따라, 모든 유저 수준 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">데이터가 제3자 플랫폼</Anchor> (예: 애널리틱스 플랫폼 및 마케팅 플랫폼)<Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">과 공유되는 것은</Anchor> 아닙니다. 이러한 이유로, 제3자 플랫폼에 표시되는 데이터와 앱스플라이어의 데이터 간에 어트리뷰션 분석에 차이가 발생할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
 > 앱스플라이어 플랫폼의 집계 및 분석 데이터는 제한 없이 사용할 수 있습니다.
 
+<div id="postback-restrictions-on-third-party-platforms" />
+
 ## 타사 플랫폼에 대한 포스트백 제한
 
 타사 플랫폼으로 포스트백을 보낼 때 다양한 수준의 미디어소스 제한이 있습니다. 포스트백은 전혀 전송되지 않거나, 어트리뷰션 없이 전송되거나, 아무 제한 없이 전송될 수 있습니다.
+
+<div id="types-of-postback-restrictions" />
 
 #### 포스트백 제한의 유형
 
@@ -57,6 +65,8 @@ x-zendesk:
 * Bing
 * 야후 (Oath: 광고 플랫폼 \/ Yahoo Gemini)
 
+<div id="note-1" />
+
 > 📘 **참고사항**
 >
 > 메타 광고의 경우, 포스트백 동작은 광고주가 AMM(Advanced Mobile Measurement) 약관에 동의했는지 여부에 따라 달라집니다:
@@ -76,6 +86,8 @@ x-zendesk:
 
 <table><colgroup><col/><col/><col/><col/><col/><col/></colgroup><thead><tr><th colspan="6">포스트백 제한 사항은 앱스플라이어와 연동된 모든 제3자 플랫폼에 적용되며, 여기에는 다음이 포함됩니다:</th></tr></thead><tbody><tr><td><span id="airship"></span>Airship</td><td>Amplitude</td><td>Batch</td><td>Braze</td><td>CleverTap</td><td>클라우드</td></tr><tr><td><span id="convertro"></span>Convertro</td><td>deltaDNA</td><td>Eulerian</td><td>GameAnalytics</td><td>IBM UBX</td><td>Insider</td></tr><tr><td><span id="itunes"></span>iTunes</td><td>Kahuna</td><td>Leanplum</td><td>Liquid</td><td>Localytics</td><td>Luna labs</td></tr><tr><td><span id="Medialyzer"></span>Medialyzer</td><td>믹스패널</td><td>MoEngage</td><td>mParticle</td><td>원시그널</td><td>Rockerbox</td></tr><tr><td><span id="salesforce"></span>Salesforce</td><td>마케팅</td><td>모바일푸시</td><td>세그먼트</td><td>스폿 이펙트</td><td>Swrve</td></tr><tr><td><span id="tapcart"></span>탭카트</td><td>Tealium</td><td>웹인게이지(WebEngage)</td><td>Winclap 분석</td><td>Google Analytics 4</td><td> </td></tr></tbody></table>
 
+<div id="examples-of-discrepancies" />
+
 ## 수치 차이 예시
 
 <div id="example-1" />
@@ -84,6 +96,8 @@ x-zendesk:
 
 <Tabs>
 <Tab title="AMM 미지원">
+
+<div id="note-2" />
 
 > 📄 **예시 1**
 >
@@ -98,6 +112,8 @@ x-zendesk:
 </Tab>
 
 <Tab title="AMM 허용됨">
+
+<div id="note-3" />
 
 > 📄 **예시 1**
 >
@@ -118,6 +134,8 @@ x-zendesk:
 
 <Accordion title="MoEngage의 로데이터 제한 사항">
 
+<div id="note-4" />
+
 > 📄 **예시 2**
 >
 > 광고주가 Pinterest를 사용하여 광고를 게재합니다. 또한 MoEngage와 협력하여 고객 참여에 대한 인사이트를 얻고 있습니다. 광고주는 지난달에 Pinterest에 기여한 '위시리스트에 추가' 이벤트 수를 확인합니다.
@@ -134,6 +152,8 @@ x-zendesk:
 
 <Accordion title="비행선에 대한 제한 사항">
 
+<div id="note-5" />
+
 > 📄 **예시 3**
 >
 > 광고주가 Bing을 사용하여 광고를 게재합니다. 또한 모바일 앱에서 사용자 여정을 최적화하기 위해 Airship과 협력하고 있습니다. 광고주는 지난 달에 Bing에 기인한 구매 이벤트 수를 확인합니다.
@@ -145,6 +165,8 @@ x-zendesk:
 > | 광고주는 Bing에 기인한 35개의 구매 이벤트를 확인합니다. | 광고주는 오가닉 소스에서 84개의 구매 이벤트를 확인합니다. 그 중 35개는 Bing에서 왔지만 이러한 구매 이벤트가 유기적으로 표시되기 때문에 알 수 없습니다. |
 
 </Accordion>
+
+<div id="note-6" />
 
 > 📄 **참고 항목**
 >

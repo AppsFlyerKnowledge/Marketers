@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** 광고 파트너에게 맞춤 오디언스를 전송하기 위한 추가 사용자 식별자를 구성합니다.
 
+<div id="about-additional-identifiers" />
+
 ## 추가 식별자에 대하여
 
 앱스플라이어 오디언스는 <Anchor target="_blank" href="/marketers/ko/docs/audiences-partner-connections">광고 파트너</Anchor>에게 맞춤 오디언스를 전송하기 위해 다음 디바이스 식별자를 자동으로 지원합니다.
@@ -37,6 +39,8 @@ x-zendesk:
 
 이러한 추가 식별자에는 전화번호와 이메일이 포함될 수 있으며, **SHA256 해싱으로 암호화된 경우에만** 사용할 수 있습니다.  이러한 추가 식별자를 사용할 때는 [추가 식별자 이용약관](https://support.appsflyer.com/hc/article_attachments/16567368205201)의 적용을 받습니다.
 
+<div id="next-steps" />
+
 ## 다음 단계
 
 1. [사용 가능한 식별자 표](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting)에서 사용하려는 추가 식별자를 선택하세요. 모든 광고 파트너가 모든 식별자를 지원하는 것은 아닙니다.
@@ -47,6 +51,8 @@ x-zendesk:
    * <Anchor target="_blank" href="/marketers/ko/docs/audiences-user-identifier-policy">계정 수준의 유저 식별자 정책</Anchor>을 설정하세요.
    * 각 <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide#manage-connections">파트너 연결</Anchor>에 업로드할 식별자를 선택하세요.
 
+<div id="available-identifiers" />
+
 ## 사용 가능한 식별자
 
 아래 표에 표시된 대로, 하나 이상의 식별자를 구성할 수 있습니다.
@@ -56,6 +62,8 @@ x-zendesk:
 <table><tbody><tr><td>식별자</td><td>파라미터 이름</td><td>형식</td><td>예시 값(해싱 전)</td></tr><tr><td>이메일 주소</td><td>email_sha256</td><td><p><strong>SDK v7.0.0 이전</strong></p><ul><li>소문자</li><li>공백 없음</li><li>전달하기 전에 클라이언트 측에서 해시 처리(SHA256)함</li></ul><p><strong>SDK v7.0.1 이후:</strong> 일반 텍스트 SDK가 이 데이터를 자동으로 정규화 및 해시 처리합니다.</p></td><td>name@domain.com</td></tr><tr><td>전화번호<br/>(아래 참고사항 참조)</td><td><p><strong>v7.0.0 이전(또는 S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 이후:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 이전(또는 S2S):</strong></p><ul><li>기호, 문자 또는 선행 0 없음</li><li>국가 코드 포함</li><li>SHA256 해시됨</li></ul><p><strong>SDK v7.0.1 이후:</strong> 일반 텍스트 SDK가 국가 코드와 번호를 연결하고, 자동으로 정규화 및 해시 처리합니다.</p></td><td>442070313000</td></tr><tr><td><p>전화번호 E164</p><p>(아래 참고사항 참조)</p></td><td><p>v7.0.0 이전(또는 S2S): phone_number_e164_sha256</p><p><strong>v7.0.1 이후:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 이전(또는 S@S):</strong></p><ul><li>E164 전화번호</li><li>SHA256 해시됨</li></ul><p><strong>v7.0.1 이후</strong> 일반 텍스트 SDK가 국가 코드와 번호를 연결하고, 자동으로 정규화 및 해시 처리합니다.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>참고사항</strong></p><p>광고 파트너마다 지원하는 전화번호 형식이 다릅니다. 따라서 전화번호를 사용하기로 선택한 경우 <em>전화번호</em> 및 <em>전화번호 E164</em> 두 식별자를 모두 설정하세요. </p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="sdk-reference-and-code-samples" />
 
 ## SDK 참조 및 코드 샘플
 
@@ -78,9 +86,13 @@ SDK를 통해 오디언스 식별자를 발송할 때:
 > * **이메일: SDK v7.0.1부터 setUserEmails(iOS/Android)가 완전히 제거되었으며 setUserEmail로 대체되었습니다. 이는 기능 제공 중단(Deprecation)이 아닌 단절적 변경 사항(Breaking change)입니다. v7.0.0 및 이전 버전을 사용하는 앱은 setUserEmails를 계속 사용해야 합니다. v7.0.1 및 이후 버전을 사용하는 앱은 setUserEmail로 전환해야 합니다. 참조할 예제 코드를 선택하기 전에 연동된 SDK 버전을 확인하세요.**
 > * **전화**: SDK v7.0.1부터 전용 setUserPhone API를 사용할 수 있습니다. 이는 고급 매칭을 위해 전화번호 식별자를 전송하는 권장 방식입니다. 이는 단절적 변경 사항(Breaking change)이 아닙니다. setAdditionalData는 여전히 작동합니다. 신규 연동의 경우 및 v7.0.1 및 이후 버전으로 업그레이드하는 고객의 경우 setUserPhone으로 전환하는 것을 권장합니다. v7.0.0 및 이전 버전을 사용하는 앱은 해당 SDK 버전에 setUserPhone이 존재하지 않으므로 setAdditionalData를 계속 사용해야 합니다.
 
+<div id="ios-sdk-configuration" />
+
 ## iOS SDK 설정
 
 추가 유저 식별자로 해시된 *전화번호*를 설정하려면:
+
+<div id="sdk-v700-and-earlier--setadditionaldata" />
 
 ### **SDK v7.0.0 이전 — setAdditionalData**
 
@@ -120,7 +132,11 @@ AppsFlyerLib.shared().customData = customData
 >
 > 전달하기 전에 두 값을 모두 미리 해시 처리(SHA-256)해야 합니다.
 
+<div id="sdk-v701-and-later--setuserphone-recommended" />
+
 ### **SDK v7.0.1 및 이후 — setUserPhone(권장)**
+
+<div id="method-signature" />
 
 #### 메소드 시그니처
 
@@ -128,6 +144,8 @@ AppsFlyerLib.shared().customData = customData
 - (void)setUserPhone:(NSString *_Nonnull)countryCode
 phoneNumber:(NSString *_Nonnull)phoneNumber;
 ```
+
+<div id="usage-example" />
 
 #### 사용 예시
 
@@ -157,7 +175,11 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 
 추가 유저 식별자로 해시된 *이메일 주소*를 설정하려면:
 
+<div id="sdk-v700-and-earlier" />
+
 ### **SDK v7.0.0 이전**
+
+<div id="method-signature-1" />
 
 #### 메소드 시그니처
 
@@ -165,6 +187,8 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 - (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails 
 withCryptType:(EmailCryptType)type;
 ```
+
+<div id="usage-example-1" />
 
 #### 사용 예시
 
@@ -188,13 +212,19 @@ AppsFlyerLib.shared().setUserEmails(emails, with: EmailCryptTypeSHA256)
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later" />
+
 ### **SDK v7.0.1 이후**
+
+<div id="method-signature-2" />
 
 #### 메소드 시그니처
 
 ```objectivec
 - (void)setUserEmail:(NSString *_Nonnull)email;
 ```
+
+<div id="usage-example-2" />
 
 #### 사용 예시
 
@@ -222,9 +252,13 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
 >
 > 일반 텍스트 형태의 이메일을 전달하세요. SDK는 해당 값을 로컬에서 정규화 및 해시 처리(SHA-256)합니다. 사전 해시 처리를 하지 마세요. 호출당 단 하나의 이메일만 허용됩니다. setUserEmail을 다시 호출하면 기존에 설정된 값을 추가하는 대신 덮어씁니다.
 
+<div id="android-sdk-configuration" />
+
 ## 안드로이드 SDK 설정
 
 추가 유저 식별자로 해시된 *전화번호*를 설정하려면:
+
+<div id="sdk-v700-and-earlier--setadditionaldata-1" />
 
 ### **SDK v7.0.0 및 이전 — setAdditionalData**
 
@@ -262,13 +296,19 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
 >
 > 전달하기 전에 두 값을 모두 사전 해시 처리(SHA-256)해야 합니다.
 
+<div id="sdk-v701-and-later--setuserphone-recommended-1" />
+
 ### **SDK v7.0.1 및 이후 — setUserPhone(권장)**
+
+<div id="method-signature-3" />
 
 #### 메소드 시그니처
 
 ```java
 public abstract void setUserPhone(String countryCode, String phoneNumber);
 ```
+
+<div id="usage-example-3" />
 
 #### 사용 예시
 
@@ -298,7 +338,11 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
 
 추가 유저 식별자로 해시된 *이메일 주소*를 설정하려면:
 
+<div id="sdk-v700-and-earlier-1" />
+
 ### **SDK v7.0.0 이전**
+
+<div id="method-signature-4" />
 
 #### 메소드 시그니처
 
@@ -308,6 +352,8 @@ public abstract void setUserEmails(
   String... emails
 );
 ```
+
+<div id="usage-example-4" />
 
 #### 사용 예시
 
@@ -337,13 +383,19 @@ AppsFlyerLib.getInstance().setUserEmails(
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later-1" />
+
 ### **SDK v7.0.1 이후**
+
+<div id="method-signature-5" />
 
 #### 메소드 시그니처
 
 ```java
 public abstract void setUserEmail(String email);
 ```
+
+<div id="usage-example-5" />
 
 #### 사용 예시
 
@@ -356,6 +408,8 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 > **참고 사항**
 >
 > v7.0.1 및 이후 버전에서는 호출당 단 하나의 이메일만 허용됩니다. 다중 이메일은 지원되지 않습니다. setUserEmail을 다시 호출하면 기존에 설정된 값을 추가하는 대신 덮어씁니다.
+
+<div id="s2s-reference-and-code-samples" />
 
 ## S2S 참조 및 코드 샘플
 

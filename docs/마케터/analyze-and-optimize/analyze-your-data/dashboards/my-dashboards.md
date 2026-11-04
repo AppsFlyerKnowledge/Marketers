@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** “My Dashboards”를 사용하여 나만의 대시보드를 디자인하고, 위젯, 차트, 표를 추가 및 사용자 지정하여 원하는 방식으로 원하는 성과 지표를 정확히 표시할 수 있습니다.
 
+<div id="about-my-dashboards" />
+
 ## My Dashboards 소개
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/euXEfhL0cmE?si=SI8qQAd7EpSeEaJk" providerUrl="https://www.youtube.com" />
@@ -41,11 +43,15 @@ My Dashboards를 사용하면 다음을 수행할 수 있습니다:
 * 마케팅 전략을 최적화하고 미래를 계획하는 데 도움이 되는 중요한 인사이트를 얻으세요.
 * 보고서 요구사항에 맞는 비즈니스 범주별로 대시보드 데이터를 그룹화하고 필터링할 수 있도록 맞춤 디멘션을 생성하세요.
 
+<div id="get-started" />
+
 ## 시작하기
 
 My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위해 설계되었습니다. 이 문서의 정보를 참고하여 새 대시보드를 생성하고, 위젯을 추가하며, 사용 가능한 지표, 필터, 그룹화 기준 등에 대해 살펴보세요.
 
 **팁**! 문서를 검토하기 전에 플랫폼을 먼저 익히고, 직접 사용해 보며 주요 기능을 파악해 보십시오.
+
+<div id="proceduresusing-the-platform" />
 
 ## 절차—플랫폼 사용하기
 
@@ -136,6 +142,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 * 보고 기능 향상: 보고 요구사항에 최적화된 사용자 지정 대시보드 뷰를 생성해 보세요.
 * 더 스마트한 의사결정: KPI에 비즈니스에 특화된 맥락을 더해 트렌드와 패턴, 그리고 최적화 기회를 훨씬 쉽게 식별할 수 있습니다.
 
+<div id="suggested-custom-dimensions" />
+
 #### 제안된 사용자 지정 디멘션
 
 | **제안된 디멘션** | **설명** |
@@ -143,6 +151,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 | 캠페인 목표 | 최적화 목표별로 캠페인을 분류하여 성과를 측면에서 바로 비교할 수 있습니다. |
 | 지역 | 개별 국가를 비즈니스 권역으로 매핑하여 지역별 성과를 분석할 수 있습니다. |
 | 유료 vs. 소유 데이터 | 미디어 소스를 상위 범주로 그룹화하여 페이드, 오가닉, 오운드 미디어의 성과를 한눈에 비교할 수 있습니다. |
+
+<div id="example-use-cases" />
 
 #### 사용 사례 예시
 
@@ -152,6 +162,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 | UA 매니저별 미디어 소스 그룹화 | 미디어 소스를 기반으로 맞춤형 디멘션을 생성하여 다양한 미디어 소스를 팀원별로 그룹화할 수 있습니다. 예를 들어 Google 및 Meta 캠페인은 Kevin 아래에, TikTok 및 Instagram 캠페인은 Natasha 아래에 그룹화할 수 있습니다. |
 | 지리적 계층 비교 | 비즈니스 우선순위나 매출 잠재력에 따라 국가를 그룹화하여 등급별 성과를 비교할 수 있습니다. |
 | 제품 또는 비즈니스 라인 성과 분석 | 캠페인을 기반으로 맞춤형 디멘션을 생성하여 홍보하는 제품이나 서비스별로 캠페인을 그룹화할 수 있습니다. 이를 통해 여러 제품에 대한 캠페인이 다양한 네트워크에서 실행될 때 어떤 제품이 가장 많은 설치나 매출을 견인하는지 확인할 수 있습니다. |
+
+<div id="procedures" />
 
 ### **절차**
 
@@ -264,6 +276,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 
 기본적으로 My Dashboards는 기본 표 정렬 로직을 사용하여 표 데이터를 정렬합니다. 정렬 기준 지표를 선택하면 앱스플라이어는 선택한 지표를 기준으로 상위 행을 불러와 표시합니다.
 
+<div id="limitations" />
+
 #### 제한 사항
 
 일부 지표는 정렬을 지원하지 않습니다. 현재 다음 항목에 대해서는 정렬이 지원되지 않습니다.
@@ -277,6 +291,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 <div id="skan-data" />
 
 <Accordion title="SKAN 데이터">
+
+<div id="skan-and-appsflyer-data-scope-differences" />
 
 #### SKAN과 AppsFlyer 데이터 범위 차이
 
@@ -293,6 +309,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 | 통화 | 앱별 통화 | USD |
 
 내 대시보드에서 **SKAdNetwork (SKAN) 지표**의 다양한 범위를 탐색할 수 있으며, **iOS 성능 (SKAN, 클래식 및 SSOT)** 을 한 곳에서 모두 볼 수 있습니다. 설치 후 추적 기간 연장이 필요하거나 Null CV 데이터를 확인해야 하는 파워 유저는 <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">SKAN Overview**를 활용해 더욱 면밀한 데이터 분석을 진행할 수 있습니다.**</Anchor>
+
+<div id="available-skan-metrics" />
 
 #### 사용 가능한 SKAN 지표
 
@@ -313,6 +331,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 | 인앱이벤트 | CPA | SKAN 이벤트 고유 사용자 / 비용 | D1-D2 |
 | 인앱이벤트 | 수익 | 최소 이벤트 수익 | D1-D2 |
 
+<div id="supported-dimensions" />
+
 #### 지원되는 디멘션
 
 1. 앱 ID
@@ -325,6 +345,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 8. 에이전시
 9. 어트리뷰션된 터치 유형
 10. 어트리뷰션 유형
+
+<div id="how-to-use" />
 
 #### 사용 방법
 
@@ -340,9 +362,13 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 
 <Accordion title="크로스 플랫폼 대시보드">
 
+<div id="intro" />
+
 #### 소개
 
 전통적으로 어트리뷰션은 기기 중심이었으며, 이벤트와 전환을 개별 기기와 연결했습니다. 새로운 크로스 플랫폼 모델을 사용하면, 이를 사용자 중심 어트리뷰션으로 전환할 수 있습니다. 다양한 기기와 플랫폼에 걸친 사용자 상호작용은 단일 식별자인 고객 사용자 ID(CUID)를 통해 통합됩니다. 전체 사용자 여정에 대한 명확한 인사이트, 향상된 어트리뷰션 정확도, 그리고 더 나은 정보를 바탕으로 한 마케팅 의사결정을 제공합니다.
+
+<div id="prerequisites" />
 
 #### 필수 조건
 
@@ -351,6 +377,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 * 앱스플라이어에서 앱을 제품 라인에 할당하고, 크로스 플랫폼 어트리뷰션 및 리엔게이지먼트 크로스 플랫폼 어트리뷰션 수신을 동의한 후, 비활성화 복원 기간을 지정합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/product-line-group-apps-for-cross-platform-attribution#how-to-set-up-a-product-line">제품 라인 설정</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/beta-user-based-cross-platform-re-engagement-attribution">크로스 플랫폼 재인게이지먼트 어트리뷰션</Anchor>을 참조하세요.
 * 앱 내에서 앱스플라이어 SDK가 CUID와 함께 이벤트를 전송하도록 설정하세요. 개발자 안내 사항은 [Customer User ID](https://dev.appsflyer.com/hc/docs/set-customer-user-id) 설정을 참조하세요.  
   서버 간(S2S) 통합을 통해 CUID를 전송할 수도 있습니다.
+
+<div id="dashboard-overview" />
 
 #### 대시보드 개요
 
@@ -365,6 +393,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 현재 보기 유형은 **통합** 및 **사용자 획득**입니다.
 
 <Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+
+<div id="widgets" />
 
 #### 위젯
 
@@ -383,9 +413,13 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 * **리인게이지먼트** - 리인게이지먼트는 선택한 기간 동안, 여러 플랫폼에 걸쳐 기존 사용자를 다시 유입시킨 미디어 소스에 어트리뷰트된 전환 조건 충족 크로스 플랫폼 재인게이지먼트 총수입니다.  
   **참고:** 크로스 플랫폼 리인게이지먼트 어트리뷰션이 활성화되면 선택한 지표, 위젯 및 어트리뷰션 컨텍스트에 따라 대시보드 결과에 최초 신규 획득 소스와 크로스 플랫폼 리인게이지먼트로 인정된 미디어 소스가 모두 반영될 수 있습니다.
 
+<div id="metrics-and-dimensions" />
+
 #### 지표 및 디멘션
 
 [My Dashboards](/docs/my-dashboards#metrics)에서 제공되는 모든 지표를 크로스 플랫폼 어트리뷰션 분석용으로 사용하실 수 있습니다. 크로스 플랫폼 어트리뷰션에서만 전용으로 사용되는 몇 가지 고유한 지표와 디멘션이 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -399,6 +433,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 * **플랫폼 그룹** - 모든 플랫폼을 그룹으로 집계한 것입니다. 예를 들어 모바일 플랫폼 그룹은 Android 및 iOS로 구성될 수 있습니다. CTV 플랫폼 그룹은 Roku, Samsung, LG 등으로 구성됩니다. <Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-attribution-concepts#지원되는-플랫폼">전체 목록은 여기에서 확인하세요</Anchor>.
 * 제품 라인 - 단일 브랜드에 속한 플랫폼별 앱입니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/product-line-group-apps-for-cross-platform-attribution">여기</Anchor>를 참조하세요.
 
+<div id="web-attribution-in-the-cross-platform-dashboard" />
+
 #### 크로스 플랫폼 대시보드의 웹 어트리뷰션
 
 웹 앱이 크로스 플랫폼 어트리뷰션이 활성화된 제품 라인에 포함되면(위의 전제 조건 참조) 웹 세션 및 이벤트가 크로스 플랫폼 대시보드에 포함됩니다. CUID를 사용해 웹 활동이 모바일, CTV, PC 및 콘솔 활동과 연결되므로, 독립된 웹 방문이 아닌 전체 사용자 여정을 파악할 수 있습니다.
@@ -409,6 +445,8 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 * **코호트에서 제외되는 맞춤 사용자 획득 이벤트 이전의 이벤트** - 기본 설정인 첫 방문 대신 커스텀 사용자 획득 이벤트를 지정한 경우, 코호트는 획득 날짜를 기준으로 집계되므로 해당 이벤트 발생 이전에 수집된 웹 이벤트는 `PRE_USER_ACQUISITION`(으)로 분류되어 코호트 지표에서 제외됩니다.
 * **독립 웹 어트리뷰션 보고서와 다를 수 있는 결과** - 웹 활동이 전체 크로스 플랫폼 상황에 통합되면 <Anchor target="_blank" href="/marketers/ko/docs/export-web-performance-measurement-report-data-from-data-locker">웹 어트리뷰션 보고서</Anchor>와 비교하여 기여도가 변경될 수 있습니다.
 * **각 지표 어트리뷰션 방식 확인** - Classic으로 라벨링된 지표는 크로스 플랫폼(CUID 기반) 뷰가 아닌 디바이스 또는 플랫폼 수준의 어트리뷰션을 반영합니다. 통합된 사용자 여정에 합성된 웹 데이터를 확인하려면 크로스 플랫폼을 선택하십시오.
+
+<div id="limitations-1" />
 
 #### **제한 사항**
 
@@ -450,15 +488,21 @@ My Dashboards 기본 설정을 지정하려면:
 
    <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
+<div id="theme" />
+
 #### 테마
 
 대시보드 테마를 선택하세요. 라이트 모드 또는 다크 모드를 선택하세요.
+
+<div id="auto-save" />
 
 #### 자동 저장
 
 레이아웃 변경 사항과 위젯 조정을 자동으로 저장합니다.
 
 참고: [필터 변경사항](/docs/my-dashboards#view-dashboard)은 자동 저장되지 않으며 대시보드를 다음에 열 때 적용하려면 수동으로 저장해야 합니다.
+
+<div id="data-labels" />
 
 #### 데이터 라벨
 
@@ -468,6 +512,8 @@ My Dashboards 기본 설정을 지정하려면:
 
 </Accordion>
 
+<div id="concepts" />
+
 ## 개념
 
 <div id="metrics" />
@@ -475,6 +521,8 @@ My Dashboards 기본 설정을 지정하려면:
 <Accordion title="지표">
 
 위젯(표, KPI 및 차트)에 사용할 수 있는 지표는 다음 표에 설명되어 있습니다.
+
+<div id="custom-metrics" />
 
 > 🚧 **사용자 지정 지표**
 >
@@ -575,6 +623,8 @@ My Dashboards 기본 설정을 지정하려면:
 | 플랫폼 | Android, iOS, Samsung, LG, Roku 등 앱이 실행되는 플랫폼. |
 | 플랫폼 그룹 | 모든 플랫폼(위의 플랫폼 항목 참조)을 그룹별로 집계한 값입니다. 예를 들어 모바일 플랫폼 그룹은 Android 및 iOS로 구성될 수 있습니다. CTV 플랫폼 그룹은 Roku, Samsung, LG 등으로 구성됩니다. <Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-attribution-concepts#지원되는-플랫폼">전체 목록은 여기에서 확인하세요</Anchor>. |
 
+<div id="ssot-supported-dimension-metrics" />
+
 #### SSOT 지원 디멘션 지표.
 
 | 디멘션 | 비고 |
@@ -598,11 +648,15 @@ My Dashboards 기본 설정을 지정하려면:
 'My Dashboards'의 전체 지표가 모든 데이터 그룹화 옵션과 호환되지는 않습니다. 지표의 호환 여부는 적용 기간, 시간 단위 분할, 어트리뷰션 모델 등 해당 지표의 세부 구성 조건에 맞춰 결정됩니다.  
 각 지표 조합에서 제공되는 데이터 그룹화 기준은 아래 표/항목을 확인해 주시기 바랍니다.
 
+<div id="installs-re-attributions-re-engagements" />
+
 #### 설치, 재어트리뷰션, 리엔게이지먼트
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되는 디멘션** |
 | --- | --- | --- | --- |
 | - | 일간, 주간, 월간 | 기본 | API로 지원되는 데이터 |
+
+<div id="cost-impressions-clicks-ctr-click-to-install-rate-ipm-ecpi" />
 
 #### 비용, 노출수, 클릭수, CTR, 클릭 대비 설치율, IPM, eCPI
 
@@ -610,11 +664,15 @@ My Dashboards 기본 설정을 지정하려면:
 | --- | --- | --- | --- |
 | - | 일일 | - | 제품 라인, 플랫폼, 플랫폼 그룹, 전환 유형 |
 
+<div id="click-through-view-through" />
+
 #### 클릭 쓰루, 뷰 쓰루
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되지 않는 디멘션** |
 | --- | --- | --- | --- |
 | - | 일일 | 기본 | 제품 라인, 플랫폼, 플랫폼 그룹, 전환 유형, 앱 버전, OS 버전 |
+
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions" />
 
 #### 총 매출, ROAS, ROI, ARPU, 총이익, 세션 수
 
@@ -627,6 +685,8 @@ My Dashboards 기본 설정을 지정하려면:
 
 순매출, 순 ROAS, 순 ROI, 순 ARPU, 순총이익은 총 지표와 동일한 세부 분석을 지원하며, 이는 LTV가 아닌 **액티비티 및 코호트 기간에만** 적용됩니다.
 
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions-retention-rate" />
+
 #### 총 매출, ROAS, ROI, ARPU, 총이익, 세션 수, 리텐션율
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되지 않는 디멘션** |
@@ -636,6 +696,8 @@ My Dashboards 기본 설정을 지정하려면:
 | M0–36 | 데이터포인트 수 | 기본 | 소스, 제품군, 플랫폼, 플랫폼 그룹, 설치 앱스토어, 스토어 제품 페이지, 참여 유형 |
 
 참고: 리텐션율은 코호트 기반 지표에서만 제공됩니다.
+
+<div id="in-app-events-unique-users-count-revenue-ecpi-conversion-rate-average-count" />
 
 #### 인앱 이벤트: 고유 사용자 수, 건수, 매출, eCPI, 전환율, 평균 건수
 
@@ -649,12 +711,16 @@ My Dashboards 기본 설정을 지정하려면:
 | D0–1 | 일일 | SKAN | 제품 라인, 플랫폼, 플랫폼 그룹, 전환 유형 |
 | D2, D7 | 일일 | SSOT | 제품 라인, 플랫폼, 플랫폼 그룹, 전환 유형 |
 
+<div id="active-users" />
+
 #### 활성 유저
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되는 디멘션** |
 | --- | --- | --- | --- |
 | 실제 | 일일 | 기본 | 앱, 미디어 소스, 캠페인, 캠페인 ID, 국가 및 지역, 대행사 |
 | 실제 | 데이터포인트 수 | 기본 | 앱, 미디어 소스, 캠페인, 캠페인 ID, 국가 및 지역, 대행사 |
+
+<div id="active-users-last-31-days" />
 
 #### 지난 31일 동안의 활성 사용자 수
 
@@ -669,6 +735,8 @@ My Dashboards 기본 설정을 지정하려면:
 | 실제 | 일일 | 기본 | 앱, 미디어 소스, 캠페인, 캠페인 ID, 지역, 대행사 |
 | 2행 셀 콘텐츠 | 2행 셀 콘텐츠 | 2행 셀 콘텐츠 |  |
 
+<div id="uninstalls" />
+
 #### 앱 삭제
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되는 디멘션** |
@@ -678,17 +746,23 @@ My Dashboards 기본 설정을 지정하려면:
 | W0–156 | 주간 | 기본 | 소스, 제품군, 플랫폼, 플랫폼 그룹, 설치 앱스토어, 스토어 제품 페이지 |
 | M0–36 | 데이터포인트 수 | 기본 | 소스, 제품군, 플랫폼, 플랫폼 그룹, 설치 앱스토어, 스토어 제품 페이지 |
 
+<div id="assisted-installs" />
+
 #### 어시스트된 설치
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되는 디멘션** |
 | --- | --- | --- | --- |
 | - | 일일 | 기본 | 앱, 미디어 소스, 캠페인 |
 
+<div id="skan-duplicates" />
+
 #### SKAN 중복
 
 | **기간** | **시간 세분화** | **어트리뷰션 방법** | **지원되는 디멘션** |
 | --- | --- | --- | --- |
 | - | 일일 | SSOT | 제품 라인, 플랫폼, 플랫폼 그룹, 전환 유형, 앱 버전, OS 버전 |
+
+<div id="first-visits-re-visits" />
 
 #### 첫 방문, 재방문
 
@@ -698,12 +772,16 @@ My Dashboards 기본 설정을 지정하려면:
 | --- | --- | --- | --- |
 | 전체 | 전체 | 전체 | 스토어 제품 페이지, 플랫폼 그룹, 제품군, 전환 유형 |
 
+<div id="multiple-metrics-in-a-table" />
+
 #### 표 내 다중 지표
 
 * 선택한 그룹화 기준에서 지원되지 않는 일부 지표가 있는 경우, 해당 지표에만 **N/A**가 표시됩니다.  
   지원되는 지표에는 데이터가 계속 표시됩니다.
 * 선택한 설정에서 지표를 사용할 수 없는 경우 다음 메시지가 표시됩니다.  
   **"이 지표는 선택한 그룹화 또는 필터에 사용할 수 없습니다."**
+
+<div id="multiple-groupings-in-a-table" />
 
 #### 표 내 다중 그룹화
 
@@ -720,6 +798,8 @@ My Dashboards 기본 설정을 지정하려면:
 
 사용자는 대시보드 수준과 위젯 수준 모두에서 날짜 범위를 설정할 수 있습니다.
 
+<div id="dashboard-level" />
+
 #### 대시보드 수준
 
 <Image alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
@@ -727,6 +807,8 @@ My Dashboards 기본 설정을 지정하려면:
 * 기본적으로 대시보드는 **위젯별** 날짜 범위를 따릅니다. 이 모드에서는 각 위젯이 개별 설정에 따라 데이터를 표시합니다.
 * 각 위젯에 선택된 시간 범위는 항상 보조 제목으로 표시됩니다.
 * 날짜 범위를 **Per widget(위젯별)** 이 아닌 다른 옵션으로 설정하면, 대시보드의 모든 위젯이 선택한 시간 범위를 반영하도록 업데이트됩니다.
+
+<div id="widget-level" />
 
 #### 위젯 수준
 
@@ -823,6 +905,8 @@ My Dashboards 기본 설정을 지정하려면:
 
 증감률을 기준으로 표를 정렬하여 가장 큰 폭으로 증가하거나 감소한 세그먼트를 빠르게 확인할 수 있습니다.
 
+<div id="comparison-period-options" />
+
 ### 비교 기간 옵션
 
 선택한 날짜 범위에 따라 다음 비교 기간이 제공됩니다:
@@ -833,12 +917,16 @@ My Dashboards 기본 설정을 지정하려면:
 * **전월:** 지난달 기간 설정 시, 달력상의 지난달과 상관없이 각 날짜를 정확히 4주 전(동일한 일수)의 날짜와 비교합니다.
 * **사용자 지정:** 사용자 지정 종료일을 선택하면 이전 기간이 동일한 일수로 자동 설정됩니다.
 
+<div id="how-to-add-a-compare-to-in-tables" />
+
 ### 표에서 비교 추가하는 방법
 
 1. 표 위젯에서 표 수정으로 이동합니다.
 2. 위젯 설정 헤더에서 **비교하기**를 클릭합니다.
 3. 기간을 선택합니다. 비교된 기간은 선택한 기간에 따라 선택해야 합니다.
 4. 변경 사항 저장
+
+<div id="use-case-example" />
 
 ### 활용 사례
 
@@ -852,6 +940,8 @@ My Dashboards 기본 설정을 지정하려면:
 <Accordion title="조건부 서식 지정">
 
 조건부 서식을 활용하면 대시보드의 성과 트렌드를 한눈에 시각적으로 파악할 수 있습니다. 표 위젯에 색상 기반 표시기를 직접 적용하면 수치를 일일이 확인하지 않고도 주의가 필요한 패턴, 이상값 및 수치를 빠르게 식별할 수 있습니다.
+
+<div id="available-formatting-types" />
 
 #### 사용 가능한 서식 유형
 
@@ -876,6 +966,8 @@ My Dashboards 기본 설정을 지정하려면:
   이 방식은 어떤 작업이 우수한 성과를 내는지 강조하여 캠페인 최적화 및 예산 배분에 대한 신속한 데이터 기반 의사결정을 지원합니다.
 
   <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+
+<div id="how-to-apply-conditional-formatting" />
 
 #### 조건부 서식 적용 방법
 
@@ -916,13 +1008,19 @@ My Dashboards 기본 설정을 지정하려면:
 
 <Accordion title="지연된 이벤트 날짜">
 
+<div id="understand-event-dates-and-late-events" />
+
 #### 이벤트 날짜 및 지연된 이벤트 이해하기
 
 일부 대시보드 위젯은 **매일** **02:00 UTC**경 1회 실행되는 일일 데이터 처리 서비스를 통해 데이터를 집계합니다. 이로 인해 **UTC 기준 자정 직후 수신되는 인앱 이벤트**는 대시보드에서 예상되는 일자와 다른 **이벤트 일자**로 표시될 수 있습니다.
 
+<div id="what-are-late-events" />
+
 ##### 지연된 이벤트란 무엇인가요?
 
 지연 이벤트는 **00:00에서 02:00 UTC 사이에 앱스플라이어로 수신되는 인앱 이벤트**를 의미합니다.
+
+<div id="how-dashboards-determine-the-event-date" />
 
 ##### 대시보드에서 이벤트 날짜를 결정하는 방법
 
@@ -932,6 +1030,8 @@ My Dashboards 기본 설정을 지정하려면:
 * **대시보드 시간대 보기** (예: **UTC** 또는 선택한 **현지 시간대**)
 
 **00:00&#126;02:00 UTC** 사이에 도착하는 이벤트는 **이전 UTC 날짜**로 표시될 수 있습니다.
+
+<div id="example-event-date-differences-between-utc-and-utc-8" />
 
 ##### 예시: UTC와 UTC-8 간의 이벤트 날짜 차이
 
@@ -943,6 +1043,8 @@ My Dashboards 기본 설정을 지정하려면:
 **참고:** 선택한 시간대가 **UTC보다 늦은 경우**(예: **UTC-8**), 특히 자정 무렵이나 지연 이벤트가 처리되는 동안 대시보드에서는 UTC 보기와 비교해 이벤트 일자가 **하루 전**으로 표시될 수 있습니다.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -981,6 +1083,8 @@ My Dashboards는 기존의 이벤트, 개요 및 활동 대시보드를 대체�
 
 **2026년 6월 30일** 이후에는 기존의 이벤트, 개요 및 활동 대시보드에 더 이상 접근할 수 없습니다.
 
+<div id="match-legacy-dashboards-to-my-dashboards" />
+
 #### 기존 대시보드를 My Dashboards에 매칭
 
 | 기존 대시보드 | 이 템플릿을 사용하거나 My Dashboards에서 보기 | 사용 용도 |
@@ -988,6 +1092,8 @@ My Dashboards는 기존의 이벤트, 개요 및 활동 대시보드를 대체�
 | 이벤트 | 이벤트 템플릿 | 인앱 이벤트 성과, 매출 이벤트 및 이벤트 기반 KPI를 분석합니다. |
 | 개요 | 성과 분석 또는 마케팅 개요 템플릿 | 마케팅 성과, 캠페인 결과 및 고위험/전사적 KPI를 분석합니다. |
 | 액티비티 | 액티비티 보기 | 액티비티 데이터, 활성 유저 수, 세션 및 액티비티 추이를 분석합니다. |
+
+<div id="open-the-replacement-template-or-view" />
 
 #### 대체 템플릿 또는 뷰 열기
 
@@ -1012,6 +1118,8 @@ My Dashboards는 기존의 이벤트, 개요 및 활동 대시보드를 대체�
 * 최대 100,000행까지 포함된 표를 다운로드할 수 있습니다.
 * 데이터는 15분 이내에 다운로드 준비가 됩니다.
 
+<div id="how-it-works" />
+
 #### 작동 원리
 
 1. 대시보드에서 내보내기를 선택하세요.
@@ -1029,6 +1137,8 @@ My Dashboards는 기존의 이벤트, 개요 및 활동 대시보드를 대체�
 
 **My Dashboards**에서 사용할 수 있는 KPI는 **광고주가 대행사 및 광고 네트워크에 부여한 권한 범위**에 따라 달라집니다. 이 이러한 권한 설정은 파트너가 접근할 수 있는 데이터 소스, 지표 및 어트리뷰션 보기 항목을 제어합니다.
 
+<div id="agency-access" />
+
 #### 에이전시 액세스
 
 광고주가 **대행사 권한**을 부여하면, 대행사는 자신들이 관리하는 캠페인에 기여된 성과 데이터를 확인할 수 있습니다. 인앱 이벤트 및 수익에 대한 액세스는 기본적으로 제공됩니다. 추가 권한에 따라 대행사는 오가닉 및 집계된 데이터도 볼 수 있습니다.
@@ -1042,6 +1152,8 @@ My Dashboards는 기존의 이벤트, 개요 및 활동 대시보드를 대체�
 
   **참고:** 대행사는 광고주가 부여한 권한에 포함된 KPI만 볼 수 있습니다.
 
+<div id="ad-network-access" />
+
 #### 광고 네트워크 액세스
 
 광고주가 **광고 네트워크 권한**을 부여하면, 광고 네트워크는 자신이 전달한 트래픽과 관련된 성과 데이터를 확인할 수 있습니다. 대행사와 달리 인앱 이벤트 및 매출 데이터의 조회 가능 여부는 광고주가 설정한 세부 권한에 따라 결정됩니다.
@@ -1054,6 +1166,8 @@ My Dashboards는 기존의 이벤트, 개요 및 활동 대시보드를 대체�
 * 해당되는 경우 **SKAN** 지표
 
 **참고:** 광고주는 인앱 이벤트 및 매출 데이터의 제공 여부를 제어합니다. 광고 네트워크는 자사의 미디어 소스에 연결된 트래픽 데이터만 확인할 수 있습니다.
+
+<div id="configure-settings" />
 
 #### 설정 구성
 

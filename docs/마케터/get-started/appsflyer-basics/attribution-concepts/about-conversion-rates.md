@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 한눈에 보기: 앱스플라이어에서 전환율 KPI를 찾아 마케팅 퍼널의 여러 단계에서 발견되는 강점과 약점을 파악하세요.
 
+<div id="marketing-funnel-stages" />
+
 ## 마케팅 퍼널 단계
 
 신규 사용자는 첫 번째 광고 조회부터 수익이 발생할 때까지 마케팅 퍼널을 거칩니다. 각 퍼널 단계에는 고유한 성공 수준이 있습니다. 사용자가 더 많이 진행할수록 모바일 광고주에게 더 나은 결과를 가져다 줄 수 있습니다. 다음 이미지는 마케팅 퍼널 단계를 보여줍니다.
 
 ![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+
+<div id="marketing-funnel-stages-and-conversion-rates" />
 
 ## 마케팅 퍼널 단계 및 전환율
 
@@ -43,6 +47,8 @@ x-zendesk:
   * **앱스플라이어**: 앱스플라이어: 개요 대시보드 와 <Anchor target="_blank" href="/marketers/ko/docs/aggregated-and-analytics-reporting-overview">종합 리포트 및 분석</Anchor>
   * 복사됨) App Store: 데이터는 App Store에서만 사용할 수 있습니다.
 * 광고주가 지표를 사용하여 마케팅 결과를 개선하는 방법
+
+<div id="marketing-funnel-stages-and-conversion-rates-1" />
 
 #### 마케팅 퍼널 단계 및 전환율
 
@@ -59,6 +65,8 @@ x-zendesk:
 | 전환율 | **클릭 투 설치율(설치/클릭)\*100** | 광고를 클릭한 후 앱을 설치한 사용자 수를 측정합니다. | 앱스플라이어 | <ul><li>잠재고객 타겟팅을 개선합니다.</li><li>앱 설치 시간을 줄입니다.</li></ul> |
 | 6 | 인앱 이벤트 | 사용자가 구매와 같은 인앱 작업을 수행합니다. | 앱스플라이어 |  |
 | 전환율 | 이벤트 전환율(이벤트 CVR)<br /><br />**(인앱이벤트/인스톨)\*100** | <ul><li>설치 후 인앱 이벤트를 수행하는 사용자 수를 측정합니다. [관련 문서]</li><li>예시 예: 등록, 구매, 레벨 완료 등</li><li>전환당 비용(CPA) 계산을 활성화합니다.</li></ul> | 앱스플라이어 | <ul><li>시기적절한 메시지와 클릭 유도문안을 제공합니다.</li><li>사용자 인터페이스를 개선합니다.</li><li>딥링크(Deep Link)를 사용하여 리타게팅 캠페인을 구성합니다. <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[관련 문서]</Anchor></li></ul> |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

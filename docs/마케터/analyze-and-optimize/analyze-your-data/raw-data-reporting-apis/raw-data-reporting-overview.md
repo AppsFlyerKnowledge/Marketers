@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 행 수준 데이터(로데이터라고도 함)는 유저와 관련된 인스톨, 인앱 이벤트, 웹사이트 방문, Protect360에서 차단된 인스톨, 발생한 광고 수익, 파트너에게 전송된 유저 관련 포스트백 등의 이벤트를 설명합니다. 로데이터 리포트는 다운로드, API 및 데이터 락커를 통해 사용할 수 있습니다.
 
+<div id="raw-data-reportingtools-and-reports" />
+
 ## 로데이터 리포팅—도구 및 리포트
 
 로데이터 리포트를 통해 유저 행동과 여정을 분석하고, 애드 네트워크 계정을 조정하며, 귀사의 CRM 및 BI 시스템을 강화할 수 있습니다. 로데이터를 사용하면 분석, 최적화, 앱 성과 개선의 가능성을 높일 수 있습니다.
 
 리포트는 리포팅 도구를 통해 제공됩니다. 각 도구는 다양한 사용 사례에 맞는 특성을 지니고 있습니다. 예를 들어, 특정 애드 네트워크 계정을 조정하려면 필요에 따라 데이터 내보내기 페이지를 통해 리포트를 다운로드하세요. 유저 성과 데이터를 BI 시스템에 로드하려면 데이터 락커 또는 Pull API를 사용해 프로그래밍 방식으로 데이터를 가져오세요.
+
+<div id="tip" />
 
 > 👍 **팁**
 >
@@ -51,13 +55,19 @@ x-zendesk:
 * 리포트 날짜 범위는 이벤트가 발생한 실제 날짜와 관련이 있습니다. 이는 날짜 범위가 <Anchor target="_blank" href="/marketers/ko/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV(유저생애가치) 기반</Anchor>인 데이터 집약형 리포트와는 대조적입니다.
 * 필드 설명—<Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary">데이터 필드 사전</Anchor>을 참조하세요.
 
+<div id="reporting-tools" />
+
 #### 리포팅 도구
 
 <table><thead><tr><th>도구</th><th>설명</th><th>여러 개/단일 앱(1)</th><th>데이터 최신성 기능(2)</th><th>스크립트에 포함</th><th>시간대</th><th>통화</th></tr></thead><tbody><tr><td><a href="./raw-data-export-page" target="_blank">로데이터 내보내기 페이지</a></td><td><ul><li>유저 인터페이스를 사용하여 리포트를 다운로드하세요.</li><li>형식: CSV 파일</li></ul></td><td>단일</td><td>지속적으로 업데이트됨</td><td><span><strong>x</strong></span></td><td>앱별</td><td>앱별</td></tr><tr><td><a href="./pull-api-raw-data" target="_blank">Pull API\*</a></td><td><ul><li>API 호출을 사용하여 리포트를 다운로드하세요.</li><li>형식: CSV 파일</li></ul></td><td>단일</td><td>지속적으로 업데이트됨</td><td><span>✓</span></td><td><ul><li>선택 가능</li><li>기본값: UTC</li></ul></td><td><ul><li>선택 가능</li><li>기본값: USD</li></ul></td></tr><tr><td> <a href="./data-locker-for-marketers" target="_blank">데이터 락커</a> <span><strong>P</strong></span> </td><td><ul><li> <a href="./data-locker-cloud-service-setup" target="_blank">클라우드에 있는 버킷</a>으로 스트리밍된 데이터 </li><li>볼륨 제한 없음</li><li>데이터 가용성 기간: 14일.</li><li>형식: CSV 또는 파케이</li></ul></td><td>다수</td><td>몇 시간 간격으로 지속 업데이트</td><td><span>✓</span></td><td>UTC</td><td>USD </td></tr><tr><td> <a href="./push-api-streaming-raw-data" target="_blank">Push API<span></span></a> <span><strong>P</strong></span> </td><td><ul><li>유저 여정 데이터(인스톨, 인앱, 리타겟팅, SKAN)를 실시간으로 귀사의 서버로 전송합니다.</li><li>형식: JSON 또는 쿼리 매개변수</li></ul></td><td>같은 종단점을 사용할 수 있습니다</td><td>앱스플라이어에서 이벤트 기록 후 몇 분 이내</td><td><span>✓</span></td><td>UTC + 앱별</td><td>USD + 앱별</td></tr><tr><td> <a href="./conversion-data-payloads-and-scenarios" target="_blank">SDK 전환 데이터</a> (3)</td><td><ul><li>앱 내에서 어트리뷰션 전환 데이터를 얻습니다.</li><li>형식: JSON</li></ul></td><td>N\/A</td><td>앱 최초 실행 후 몇 초 이내</td><td><span>✓</span></td><td>UTC</td><td>N\/A</td></tr><tr><td colspan="7"> <strong>참고 및 약어:</strong><br/>(1) 여러 앱 지원<br/>(2) 데이터 최신성은 리포트 자체에 따라 달라지며, 일부 리포트는 일별로 제공됩니다.<br/>(3) SDK 전환 데이터는 앱 최초 실행 후 몇 초 이내에 사용자 어트리뷰션 데이터를 가져오므로 정확도가 가장 낮습니다.<br/><span><strong>(P)</strong> </span><strong>프리미엄 기능<br/><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) 리포트 생성 할당량 적용</a> </strong> </td></tr></tbody></table>
 
+<div id="tool-limitations" />
+
 #### 도구 한계
 
 <table><thead><tr><th>제한 사항 </th><th>Pull API (\*)</th><th>Push API</th><th>데이터 락커</th><th>SDK<br/>전환 데이터</th></tr></thead><tbody><tr><td>데이터 한계</td><td>호출당 100만 행</td><td>N\/A</td><td>N/A</td><td>N\/A</td></tr><tr><td>데이터 선택 옵션</td><td>데이터 유형을 선택하세요. 제한된 필드 선택 옵션</td><td>데이터 유형, 필드 및 인앱 항목 선택</td><td>데이터 유형, 필드 및 인앱 항목 선택</td><td>아니오</td></tr><tr><td>데이터 가용성 기간</td><td>90일</td><td>N\/A</td><td>14일 </td><td>수명( SDK에서 사용 가능)</td></tr><tr><td colspan="5"><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) 리포트 생성 할당량 적용</a></td></tr></tbody></table>
+
+<div id="integration-considerations" />
 
 #### 연동 고려 사항
 
@@ -93,6 +103,8 @@ x-zendesk:
 
 이해의 편의를 위해, 유저 여정 필드는 맥락에 따라 그룹으로 나뉩니다.
 
+<div id="user-journey-raw-data-field-groups" />
+
 #### 유저 여정 로데이터 필드 그룹
 
 | 필드 그룹 | 오가닉 사용자와 관련됨 | 예시 필드 |
@@ -105,6 +117,8 @@ x-zendesk:
 | 이벤트 | 예 | 인앱 이벤트 리포트에 입력됨:<br /><br />이벤트 이름, 이벤트 가치, 이벤트 수익 |
 
 </Accordion>
+
+<div id="user-journey-reports" />
 
 ## 유저 여정 리포트
 
@@ -150,6 +164,8 @@ x-zendesk:
 * 리포트에는 오가닉 유저, 논오가닉 유저, 또는 둘 다 포함될 수 있습니다.
 * 리텐션 정책은 리포팅 도구와 로데이터의 출처에 따라 과거 로데이터 리포트에 적용됩니다. 일반적으로, 이전 90일 동안의 데이터가 제공됩니다. **참고**! 데이터 집약형 데이터에는 리텐션 정책이 적용되지 않습니다.
 
+<div id="user-journey-reports-1" />
+
 #### 유저 여정 리포트
 
 <table><thead><tr><th>카테고리</th><th>데이터 락커만의 고유 특징</th><th>리포트 주제</th><th>오가닉</th><th>논오가닉</th></tr></thead><tbody><tr><td>유저 유입</td><td><span>✓</span></td><td>클릭</td><td colspan="2">N\/A</td></tr><tr><td>리타겟팅</td><td><span>✓</span></td><td>리타겟팅 캠페인에서의 클릭 </td><td colspan="2">리타겟팅은 항상 논오가닉</td></tr><tr><td>유저 유입</td><td><span>✓</span></td><td>노출</td><td colspan="2">N\/A</td></tr><tr><td>리타겟팅</td><td><span>✓</span></td><td>리타겟팅 캠페인에서의 노출</td><td colspan="2">리타겟팅은 항상 논오가닉</td></tr><tr><td>유저 유입</td><td>-</td><td>인스톨 </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>유저 유입</td><td>-</td><td>인앱 이벤트 </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>유저 유입</td><td>-</td><td>어트리뷰션된 광고 수익</td><td>-</td><td><span>✓</span></td></tr><tr><td>유저 유입</td><td>-</td><td>오가닉 광고 수익</td><td><span>✓</span></td><td>-</td></tr><tr><td>리타겟팅</td><td>-</td><td>리타겟팅 광고 수익</td><td colspan="2">리타겟팅은 항상 논오가닉</td></tr><tr><td>리타겟팅</td><td>-</td><td>리타겟팅 전환 (리인게이지먼트 및 리어트리뷰션)</td><td colspan="2">리타겟팅은 항상 논오가닉</td></tr><tr><td>리타겟팅</td><td>-</td><td>리타겟팅 인앱 이벤트 (리인게이지먼트 및 리어트리뷰션)</td><td colspan="2">리타겟팅은 항상 논오가닉</td></tr><tr><td>리타겟팅</td><td><span>✓</span></td><td>리타겟팅 세션 (리인게이지먼트 및 리어트리뷰션)</td><td colspan="2">리타겟팅은 항상 논오가닉</td></tr><tr><td>유저 유입</td><td><span>✓</span></td><td>세션</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>유저 유입</td><td>-</td><td>논오가닉 앱 삭제 </td><td>-</td><td><span>✓</span></td></tr><tr><td>유저 유입</td><td>-</td><td>오가닉 앱 삭제</td><td><span>✓</span></td><td>-</td></tr><tr><td>유저 유입</td><td><span>✓</span></td><td>크로스 플랫폼 인게이지먼트</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
@@ -159,6 +175,8 @@ x-zendesk:
 <div id="user-journey-report-descriptions" />
 
 <Accordion title="유저 여정 리포트 설명">
+
+<div id="clicks-and-impressions" />
 
 #### 클릭과 노출
 
@@ -171,9 +189,13 @@ x-zendesk:
 | 비고 | SRN 데이터를 사용할 수 없습니다. |
 | 제한된 사용자 | 어떤 경우에는 개인정보 보호 규칙으로 인해 노출 및 클릭 데이터가 제한되거나(유저 식별자 없음) 전혀 사용할 수 없는 경우도 있습니다. 이용 가능 여부는 미디어 소스 및 플랫폼에 따라 다릅니다. |
 
+<div id="installs-and-retargeting-conversions" />
+
 #### 인스톨 및 리타겟팅 전환
 
 <table><thead><tr><th rowspan="2">리포트 이름 </th><th rowspan="2"><p>유저 유입: 인스톨</p></th><th rowspan="2">리타겟팅: 전환</th></tr></thead><tbody><tr><td>컨텍스트</td><td><p>유저가 처음으로 앱을 열 때.</p></td><td><p>유저가 리타겟팅 광고에 참여한 후 앱을 엽니다. 리타겟팅 전환은 리인게이지먼트 또는 리어트리뷰션을 의미합니다.</p><a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">리타겟팅 어트리뷰션 가이드</a>를 참조하세요. </td></tr><tr><td>활용 사례</td><td><ul><li>앱스플라이어 분석 도구를 통해 사용할 수 없는 필드를 이용하여 데이터 집약형 리포트를 생성합니다.</li><li>다른 리포트와 결합하여 심층적인 횡단면 분석을 실시할 수 있습니다.</li><li>도시, 광역도시 등 다양한 측면에서 성과를 분석합니다. </li><li>타겟팅 목적으로 국가, 도시, 언어별로 유저를 세분화합니다.</li><li>리타겟팅 목적으로 유저 디바이스 ID를 얻습니다.</li></ul></td><td>인스톨과 유사합니다.</td></tr><tr><td>오가닉 vs. 논오가닉</td><td><ul><li> <strong>논오가닉:</strong> 어트리뷰션 및 기여자 어트리뷰션 필드 그룹이 채워집니다.</li><li> <strong>오가닉:</strong> 미디어 소스 필드는 비어 있거나 null이거나 오가닉입니다. 데이터를 시스템에 로드할 때 이 점을 고려하세요. </li></ul></td><td>적용 불가</td></tr><tr><td>리포트 예시</td><td><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yvNGmZp8ataHBj89CFq856PmDixnyjKK75O8fQcS9TjT8J2jBAnJoTn3350NV-7pCSlaT0oh8ebs/pub?output=csv" target="_blank">인스톨</a></td><td>리타겟팅 전환 리포트는 인스톨 리포트와 동일한 구조를 가지고 있습니다. 일부 필드는 리타겟팅 맥락에서 채워집니다. <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">리타겟팅 로데이터</a>를 참조하세요. </td></tr></tbody></table>
+
+<div id="in-app-events" />
 
 #### 인앱 이벤트
 
@@ -263,6 +285,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="sessions" />
+
 #### 세션
 
 | 리포트 | 특성 |
@@ -271,6 +295,8 @@ x-zendesk:
 | 특성 | 리포트 구조는 인앱 이벤트 리포트와 동일합니다. 세션(세션 이벤트)은 해당 이벤트의 수가 많기 때문에 별도의 리포트에 나와 있습니다. |
 | 사례 | 앱 유저 인게이지먼트를 이해합니다. |
 | 리포트 예시 | 세션 리포트는 인앱 이벤트 리포트와 유사합니다. 참고: 로데이터에서 세션의 이벤트 이름은 *launch*입니다. |
+
+<div id="uninstalls" />
 
 #### 앱 삭제
 
@@ -288,9 +314,13 @@ x-zendesk:
 
 <Accordion title="도구별 유저 여정 리포트 가용성">
 
+<div id="ad-engagement-report-by-tool" />
+
 #### 도구별 광고 인게이지먼트 리포트
 
 <table><thead><tr><th>리포트</th><th>데이터 내보내기</th><th>Pull API</th><th>데이터 락커</th><th>Push API</th><th>SDK<br/>전환 데이터</th></tr></thead><tbody><tr><td>노출 (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td>클릭 (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td colspan="6">(1) 클릭 및 노출 데이터는 비-SRN에 의해 제공됩니다. SRN은 이 데이터를 제공하지 않습니다.</td></tr></tbody></table>
+
+<div id="user-acquisition-reports-by-tool" />
 
 #### 도구별 유저 유입 리포트
 
@@ -300,6 +330,8 @@ x-zendesk:
 | 세션 | - | - | ✓ | - | - |
 | 인앱 이벤트 | ✓ | ✓ | ✓ | ✓ | - |
 | 앱 삭제 | ✓ | ✓ | ✓ | - | - |
+
+<div id="retargeting-raw-data-reports-by-tool" />
 
 #### 도구별 리타겟팅 로데이터 리포트
 
@@ -333,18 +365,18 @@ x-zendesk:
 
 > 📄 **예시**
 >
-> #### 참여 유저 - 강력함
+> #### <span id="engaged-userstrong"></span>참여 유저 - 강력함
 >
 > * 한 유저가 8월 20일 09:31에 앱을 설치했습니다.
 > * 통합된 리포트에 따르면, 이 유저는 8월 20일 10:31, 8월 22일 15:22, 8월 25일 16:47에 구매를 했습니다.
 > * 이를 통해 해당 유저가 적극적으로 참여하는 유저임을 알 수 있습니다. 앱 실행 한 지 1시간 만에 구매를 시작했으며, 설치 후 며칠 동안 계속해서 구매를 이어갔습니다.
 >
-> #### 참여 유저 - 약함
+> #### <span id="engaged-userweak"></span>참여 유저 - 약함
 >
 > * 한 유저가 7월 30일에 앱을 설치했습니다. 병합된 리포트에 따르면, 8월 15일에 장바구니에 상품을 추가했지만 그 이후 구매 이벤트가 없습니다.
 > * 이 유저가 구매를 주저하는 것으로 가정하고, 장바구니에 담긴 상품으로 리타겟팅을 시도해 볼 수 있습니다.
 >
-> #### 캠페인 최적화를 위한 유저 여정 분석
+> #### <span id="analyzing-the-user-journey-for-campaign-optimization"></span>캠페인 최적화를 위한 유저 여정 분석
 >
 > * 여행 앱의 UA 매니저가 인스톨 및 인앱 이벤트 리포트를 다운로드하여 병합합니다.
 > * 그런 다음 앱에서의 유저 여정을 보려면 앱스플라이어 ID로 데이터를 필터링하거나 집계합니다.
@@ -354,6 +386,8 @@ x-zendesk:
 > * UA 매니저가 유저 여정을 분석하면 캠페인이 지나치게 협소하게 집중되어 사용자들이 앱에 충분히 참여하지 않았다는 결론에 이를 수 있습니다.
 
 </Accordion>
+
+<div id="feature-reports" />
 
 ## 기능 리포트
 
@@ -380,6 +414,8 @@ x-zendesk:
 * 2021년 3월부터 필드는 네트워크의 고급 개인정보 설정에 따라 채워집니다. 고급 개인정보가 활성화되어 있으면 사용자 식별자와 같은 특정 필드는 제외됩니다. <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">광고 네트워트에 대한 고급 개인정보 보호 포스트백 사양</Anchor>을 참조하십시오.
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_app-id-postbacks-v5">푸시 API로 포스트백 보고서 가져오기</Anchor>
 
+<div id="postback-reports-available-via-the-export-data-page-and-pull-api" />
+
 #### 포스트백 리포트(데이터 내보내기 페이지 및 Pull API 통해 제공)
 
 | 리포트 주제 | 귀속된 미디어 소스로 전송된 이벤트 |
@@ -388,6 +424,8 @@ x-zendesk:
 | 인앱 이벤트 | 논오가닉 인앱 이벤트 |
 | 리타겟팅 전환 포스트백 | 리타겟팅(리인게이지먼트 및 리어트리뷰션) |
 | 리타게팅 인앱 이벤트 | 리타게팅 인앱 이벤트 |
+
+<div id="additional-fields-in-postback-reports" />
 
 #### 포스트백 리포트의 추가 필드
 
@@ -415,6 +453,8 @@ x-zendesk:
 4. 인앱 이벤트(CPA) 대시보드에 액세스하려면 **집계된 인앱 이벤트 데이터 액세스**를 켜세요.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

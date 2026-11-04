@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 데이터 소스를 연결하고, 데이터를 풍부화하며, 클라우드 스토리지 및 미디어 파트너로 오디언스를 내보낼 수 있도록 DCP 연결을 설정하세요.
 
+<div id="about-dcp-connections" />
+
 ## DCP 연결에 관하여
 
 연결은 DCP가 데이터를 수집하고 오디언스를 내보내는 방식을 결정합니다. <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">클라우드 서비스를 설정</Anchor>한 후, **연결 관리** 모달을 사용하여 이를 DCP에 연결하세요. 다음과 같은 연결 유형을 사용할 수 있습니다.
@@ -58,9 +60,13 @@ DCP로 자사 데이터를 가져오기 위한 소스 연결을 생성합니다.
 
 소스를 설정할 때 소스 연결을 직접 생성할 수도 있습니다. 자세한 지침은 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources">소스 생성 및 관리</Anchor>를 참고하세요.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > S3 또는 GCS로 소스 연결을 생성하면 일치하는 클라우드 스토리지(내보내기) 연결이 자동으로 생성되며, 그 반대의 경우도 마찬가지입니다. Amazon S3 또는 GCS 연결을 삭제하면 다른 쪽 연결도 자동으로 삭제됩니다. 실제로는 하나의 단일 연결이므로, 어느 탭에서 삭제하든 해당 연결이 사용된 모든 위치에서 삭제됩니다.
+
+<div id="cloud-service-connections-for-source-data" />
 
 #### 소스 데이터에 대한 클라우드 서비스 연결
 
@@ -72,6 +78,8 @@ DCP로 자사 데이터를 가져오기 위한 소스 연결을 생성합니다.
 
 **ACCOUNTADMIN** > **계정** > 해당 계정에 마우스를 올린 후 > **계정 식별자 복사**를 클릭하세요. 자세한 내용은 <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Snowflake 문서</Anchor>를 참고하세요.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 라고 표시된 ID 를 찾으세요. 이것은 아웃바운드 Snowflake 연결을 생성하는 데 사용되는 ID와 동일하지 **않습니다**.
@@ -79,6 +87,8 @@ DCP로 자사 데이터를 가져오기 위한 소스 연결을 생성합니다.
 **Amazon S3 및 GCS:** **새 연결** 대화 상자에서 앱스플라이어 Data Clean Room (DCR) 전용으로 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#cloud-storage-buckets-inbound">생성한 버킷</Anchor>의 이름을 입력하세요.
 
 **Salesforce Cloud/CRM:** <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-integration-with-salesforce-data-cloud">Salesforce 연결 설정 방법을</Anchor> 확인하세요.
+
+<div id="local-file-connection" />
 
 #### 로컬 파일 연결
 
@@ -148,6 +158,8 @@ s3://af-dcr-example-bucket/dcp-output/audiences/8f3a1c02-44b1-4e9a-9c7d-2b6e1a0f
 | part-NNNNN--c000.csv | 이 전송에 대한 출력 파일 중 하나입니다 — 아래의 파일 형식 및 분일을 참고하세요. |
 | \_SUCCESS | 모든 파트 파일의 내보내기가 완료되면 작성되는 빈 마커 파일입니다. |
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 이 폴더 구조는 자동으로 생성되고 관리됩니다. 이 구조를 수동으로 이름을 변경하거나 재구성하지 마세요. 이 파일들을 읽는 모든 자동화 프로세스는 이 경로 패턴을 따르도록 구축되어야 하며, 부분적으로 전송된 파일을 읽지 않도록 파트 파일을 처리하기 전에 \_SUCCESS가 나타날 때까지 기다려야 합니다.
@@ -202,6 +214,8 @@ c1d3e5f7a9b1c3d5e7f9a1b3c5d7e9f1a3b5c7d9e1f3a5b7c9d1e3f5a7b9c1d3,hashed_phone_nu
 #### ID5
 
 파편화된 사용자 데이터를 통합하고, 활성화 파트너와의 매칭률을 개선하며, 파트너 측 오디언스 규모를 확대하려면 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-enrich-sources-with-id5">ID5 식별자로 퍼스트 파티 데이터를 보강하세요</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

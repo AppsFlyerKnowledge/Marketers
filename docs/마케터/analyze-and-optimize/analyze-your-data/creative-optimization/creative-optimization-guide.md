@@ -27,6 +27,8 @@ x-zendesk:
 
 메인 이미지 - 기본 보기.jpg
 
+<div id="about-creative-optimization" />
+
 ## 광고소재 최적화 소개
 
 **크리에이티브 최적화**는 모든 캠페인에 사용된 크리에이티브의 성과를 측정할 수 있는 원스톱 상점입니다. 이를 통해 모든 미디어 채널의 모든 광고소재 자산을 한 곳 또는 BI 시스템으로 손쉽게 가져오고 여러 캠페인, 채널 등에서 선택한 차원별로 성과를 분석할 수 있습니다. 광고소재 최적화를 사용하면 다양한 지표와 KPI를 기준으로 세분화하여 다음 광고소재 배치를 계획, 선택 및 제작하기 전에 중요한 통찰력을 얻을 수 있습니다.
@@ -48,6 +50,8 @@ AI 기반 크리에이티브 <Anchor target="_blank" href="/marketers/ko/docs/cr
 * 시간/채널/캠페인 전반에 걸쳐 광고소재의 효율성 감소를 식별하고 최적화를 위해 정보에 입각한 결정을 내립니다.
 * 기타
 
+<div id="creative-assets" />
+
 ## 광고소재 자산
 
 이 섹션에서는 측정하는 광고소재 자산에 대한 정보를 제공합니다.
@@ -63,6 +67,8 @@ AI 기반 크리에이티브 <Anchor target="_blank" href="/marketers/ko/docs/cr
 * 캐러셀 광고(메타만 해당)
 * HTML(플레이어블 포함)
 * 텍스트
+
+<div id="notes" />
 
 > 📘 **참고**
 >
@@ -91,6 +97,8 @@ AI 기반 크리에이티브 <Anchor target="_blank" href="/marketers/ko/docs/cr
 
 Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인(UAC)에는 여러 자산이 포함된 광고 광고소재가 포함될 수 있습니다. 그러나 앱스플라이어는 자산 수준에서 데이터를 분류하지 않습니다. Meta 광고는 **광고 수준**까지의 데이터를 제공하고 Google은 **광고 그룹 수준**까지의 데이터만 제공합니다. 이러한 유형의 광고소재의 경우, 앱스플라이어는 데이터 모델링을 사용하여 자산 전반에 걸쳐 성과 데이터를 나눕니다.
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > 페이스북에 여러 자산이 있는 광고소재가 있다고 가정해 보겠습니다. 페이스북은 총 100개의 인스톨로 어트리뷰션하며, 페이스북에서 측정한 애셋은 다음과 같이 애셋으로 분류됩니다: 애셋 **A**는 60회, **애셋 B**는 40회 설치되었습니다. 앱스플라이어에서 광고가 50개의 인스톨로 어트리뷰션되었다고 가정해 보겠습니다(앱스플라이어와 SRN 간의 고유한 어트리뷰션 차이로 인해). 애셋 수준 분석을 활성화하기 위해 앱스플라이어는 아래 그림과 같이 총계의 애셋 지표 비율을 기반으로 성과 데이터(노출, 클릭, 설치 및 비용)를 배포합니다.
@@ -109,6 +117,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## 대시보드 사용하기
 
@@ -276,6 +286,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 
 파일 다운로드: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
+<div id="to-set-up-partner-metrics" />
+
 #### **파트너 지표 설정 방법:**
 
 새로운 파트너 <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-partner-integrations">연동</Anchor>을 추가하기만 하면 지원되는 파트너에 대한 지표가 자동으로 크리에이티브 최적화로 가져옵니다(Unity 애즈는 예외이며 **특별 지침**이 있음). 설정되면 이러한 지표는 지표와 함께 "파트너"로 표시됩니다.
@@ -349,6 +361,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
         Get Organization ID instructions 2 arrows.jpg
      5. 2. **조직 ID**복사
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 새 파트너 연동을 설정할 때 파트너 지표 자격 증명을 입력하는 것이 좋습니다. 그러나 필수는 아닙니다. 연동을 저장하고 나중에 자격 증명을 추가할 수 있습니다. 그러나 파트너 연동이 생성된 시점부터 90일간의 파트너 데이터를 가져오므로 파트너 지표 자격 증명을 입력하지 않으면 데이터가 누락될 수 있습니다.
@@ -365,6 +379,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 
 **참고**: 보기를 저장하지 않고 대시보드 설정을 변경한 경우 현재 보기 옆에 주황색 표시기 점이 표시됩니다.
 
+<div id="save-private-dashboard-view" />
+
 #### **비공개 대시보드 보기 저장**
 
 **비공개 대시보드 보기를 저장하려면(사용자에게만 표시됨):**
@@ -373,6 +389,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. 대시보드 이름을 입력하고 **저장**을 클릭합니다.
 3. 메뉴 아이콘을 사용하여 대시보드 보기를 편집 및 삭제하거나 공유에서 공유로 공유 설정을 변경하거나 보기를 별표로 표시하여 로그인 시 표시되는 기본 보기로 표시합니다.
+
+<div id="save-shared-dashboard-view" />
 
 #### **공유 대시보드 보기 저장**
 
@@ -384,6 +402,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
    뷰가 저장되고 다른 모든 계정 사용자의 대시보드 뷰 목록에 나타납니다.
 3. 메뉴 아이콘을 사용하여 대시보드 보기를 편집 및 삭제하거나 공유 설정을 비공개로 변경하거나 보기를 별표로 표시하여 로그인 시 표시할 기본 보기로 표시합니다.
 
+<div id="share-view-url" />
+
 #### **공유 보기 URL**
 
 **보기 URL을 다른 계정 사용자와 공유하려면:**
@@ -393,6 +413,8 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
   **참고**: 비공개 대시보드에서도 URL 보기를 공유할 수 있습니다. 비공개 대시보드 URL이 열리면 표시되는 리포트 이름은 "저장되지 않은 리포트"입니다.
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## 사용자 지정 태그
 
@@ -524,6 +546,8 @@ CSV 파일을 다운로드하고 업로드하는 절차는 다음과 같습니�
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

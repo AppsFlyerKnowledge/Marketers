@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **요약:** WWDC23에서 Apple은 새로운 프라이버시 매니페스트를 도입했습니다. 프라이버시 매니페스트를 통해 앱 개발자는 앱의 개인 정보 보호 관행을 보다 정확하게 설명할 수 있습니다. 앱스플라이어가 앱스플라이어 SDK를 위한 프라이버시 매니페스트를 작성하였으며, 상세 내용은 아래를 참고하십시오.
 
+<div id="background" />
+
 ## 배경
 
 프라이버시 매니페스트를 통해 앱 개발자는 독립적으로 수집하거나 앱에서 사용하는 써드 파티 SDK와 같은 써드 파티 종속성을 사용해 수집하는 데이터 카테고리 기록을 작성할 수 있습니다. 이 정보는 앱 개발자가 사용자에게 제공하는 영양 라벨을 포함하여 앱의 개인 정보 보호 관행을 정확하게 나타내는 데 도움이 됩니다.
 
 많은 경우에 앱 개발자는 써드 파티 SDK가 수집하는 데이터나 특정 SDK가 데이터를 사용하는 목적을 잘 모릅니다. 프라이버시 매니페스트는 써드 파티 SDK가 이 정보를 앱 개발자에게 쉽게 전달하여 정확한 영양 라벨을 만들 수 있게 도와줍니다.
 
+<div id="what-are-nutrition-labels" />
+
 ### 영양 라벨은 무엇인가요?
 
 영양 라벨은 앱의 개인 정보 보호 관행에 대한 정보를 읽기 쉽고 이해하기 쉬운 형식으로 제공합니다. 최종 사용자는 앱이 어떤 데이터를 어떤 목적으로 수집하는지 더 투명하게 알 수 있습니다. 영양 라벨에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/preparing-for-the-app-store-review-nutrition-labels">여기</Anchor>를 참조하세요.
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## 앱스플라이어 프라이버시 매니페스트에 무엇이 들어 있나요?
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -44,6 +52,8 @@ x-zendesk:
 * [필수 이유 API](#required-reason-api)
 * [트래킹 도메인](#트래킹-도메인)
 
+<div id="data-usage" />
+
 ### 데이터 사용
 
 Apple은 앱 및 SDK 개발자에게 데이터의 카테고리와 앱이나 써드 파티 SDK가 그러한 데이터를 수집하는 이유를 기록하도록 요구합니다.
@@ -51,6 +61,8 @@ Apple은 앱 및 SDK 개발자에게 데이터의 카테고리와 앱이나 써�
 그런 다음 앱 개발자는 Xcode를 사용하여 수집된 데이터에 대한 정보를 요약하는 프라이버시 리포트를 만들 수 있습니다.
 
 다음은 앱스플라이어 SDK가 수집하며 프라이버시 매니페스트에 포함된 데이터 유형입니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -60,6 +72,8 @@ Apple은 앱 및 SDK 개발자에게 데이터의 카테고리와 앱이나 써�
 | --- | --- | --- | --- | --- |
 | 디바이스 ID (IDFA, IDFV) | NSPrivacyCollectedDataTypeDeviceID | 예 | 예 | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | 제품 상호작용 (실행) | NSPrivacyCollectedDataTypeProductInteraction | 아니요 | 아니요 | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### Required Reason API
 
@@ -125,9 +139,13 @@ Apple이 사용 이유가 필요한 API 목록을 제공했습니다. 이러한 
 
 </Accordion>
 
+<div id="tracking-domains" />
+
 ### 트래킹 도메인
 
 앱 또는 써드 파티 SDK에서 사용하는 모든 트래킹 도메인은 프라이버시 매니페스트에 기록되어야 합니다. 사용자가 앱 추적 투명성(ATT, AppTrackingTransparency) 프레임워크를 통해 권한을 부여하지 않으면 iOS 운영 체제가 해당 도메인으로 나가는 모든 트래픽을 차단합니다. 앱스플라이어 SDK는 서버 요청 전에 사용자의 ATT 상태를 확인하고 사용자가 권한을 부여했는지 여부에 따라 요청을 실행합니다.
+
+<div id="faq" />
 
 ## 자주 묻는 질문
 

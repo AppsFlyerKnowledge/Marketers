@@ -29,6 +29,8 @@ x-zendesk:
 
 > **한눈에 보기:** 선택한 LTV, 액티비티, 리텐션, 코호트, 및 Protect360 캠페인 성과 KPI를 API별로 CSV 또는 JSON 형식으로 가져옵니다. 1개 이상의 앱을 선택합니다.
 
+<div id="master-apiuser-acquisition-metrics-via-api" />
+
 ## 마스터 API—API를 통한 유저 인입 지표
 
 마스터 API:
@@ -250,6 +252,8 @@ x-zendesk:
 
    </Accordion>
 
+   <div id="calculated-kpis" />
+
    #### 계산된 KPI
 
    앞서 설명한 KPI에 더하여, 마스터 API 리포트에 계산된 KPI를 추가할 수 있습니다. 이렇게 하면 마스터 API 리포트에 자체 계산된 리포트를 포함시킬 수 있습니다.
@@ -259,6 +263,8 @@ x-zendesk:
    표준 산술 연산자가 지원됩니다: 더하기(+)는 인코딩 되어 %2b, 빼기(-), 곱하기(*), 나누기(/)는 %2f 로 인코딩 됩니다.
 
    계산된 KPI 필드 키는 **반드시** "calculated\_kpi\_"로 시작하여 유효한 스트링으로 이어져야 합니다. 예, "calculated\_kpi\_purchaserate"
+
+   <div id="example" />
 
    > 📄 **예시**
    >
@@ -318,6 +324,8 @@ x-zendesk:
    | 시간대 | 앱 별 설정한 시간대에 따라 시간대 사용. | timezone=preferred | 아니요 |
 
    </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

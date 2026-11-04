@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** **계정 설정** 페이지를 사용하여 개인 프로필, 계정 수준 설정 및 AI 기능을 한 곳에서 관리할 수 있습니다.
 
+<div id="about-account-settings" />
+
 ## **계정 설정 정보**
 
 **계정 설정** 페이지에는 세 가지 탭이 있습니다.
@@ -29,15 +31,21 @@ x-zendesk:
 * 계정 계정 수준 설정
 * [**AI 기능**](/docs/account-settings#ai-기능): AI 기반 제품 및 액세스 제어
 
+<div id="profile" />
+
 ## **프로파일**
 
 **프로필** 섹션에는 계정 이름, 소유자 이메일, 웹사이트 및 계정 ID와 같은 개인 계정 세부 정보가 표시됩니다.
 
 이 섹션을 사용하여 계정 정보를 검토하고 지원되는 프로필 필드를 업데이트할 수 있습니다.
 
+<div id="account" />
+
 ## **계정**
 
 **계정** 섹션에는 계정 수준 보안 설정이 포함되어 있습니다. 시간이 지남에 따라 추가 셀프 서비스 계정 설정이 추가될 수 있습니다.
+
+<div id="unique-dev-key" />
 
 ### <Anchor target="_blank" href="/marketers/ko/docs/dev-key-management">**고유한 Dev Key**</Anchor>
 
@@ -47,13 +55,19 @@ x-zendesk:
 
 참고: 이 설정은 설정이 켜져 있는 후 생성된 앱에만 적용됩니다. 기존 앱의 Dev 키는 변경되지 않습니다.
 
+<div id="ai-capabilities" />
+
 ## **AI 기능**
 
 관리자는 **AI 기능** 섹션에서 계정에 사용할 수 있는 지원되는 AI 기반 제품을 관리할 수 있습니다.
 
+<div id="ai-assistant" />
+
 ### AI 어시스턴트
 
 AI 어시스턴트는 앱스플라이어에서 자체 가상 애널리스트 및 플랫폼 지식 도움말자입니다. 이를 사용하여 인사이트를 파악하고, 성과를 측정하며, 성과가 가장 높고 낮은 항목을 파악하고, 캠페인 트렌드를 파악하며, 테이블과 차트와 같은 시각적 인사이트를 플랫폼의 모든 페이지에서 바로 탐색할 수 있습니다.
+
+<div id="appsflyer-mcp" />
 
 ### <Anchor target="_blank" href="/marketers/ko/docs/beta-appsflyer-mcp">앱스플라이어 MCP</Anchor>
 
@@ -68,9 +82,13 @@ MCP 비활성화:
 
 **중요:** MCP 토큰이 사용 중인 경우 먼저 **보안 센터 > 앱스플라이어 토큰**에서 삭제해야 합니다.
 
+<div id="agent-hub" />
+
 ### <Anchor target="_blank" href="/marketers/ko/docs/beta-agent-hub-overview">에이전트 허브</Anchor>
 
 에이전트 허브는 AppsFlyer의 중앙 집중식 플랫폼으로, AI 기반 에이전트를 관리하여 실행 가능한 마케팅 인사이트를 워크플로우에 선제적으로 제공합니다. 이러한 에이전트는 귀하의 데이터를 지속적으로 분석하여 가치 있는 결과를 제공하고 실행 가능한 조치를 권장하며, 이 모든 과정이 팀의 협업 환경 내에서 이루어집니다.
+
+<div id="permissions" />
 
 ## **권한**
 

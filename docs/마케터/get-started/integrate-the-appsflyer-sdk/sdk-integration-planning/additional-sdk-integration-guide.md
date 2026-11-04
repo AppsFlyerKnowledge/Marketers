@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 앱 삭제 측정, 사용자 초대 어트리뷰션, 푸시 알림 및 프라이버시 설정과 같은 API를 구현하기 위해 개발자와 함께 사용할 수 있는 추가 SDK 기능을 고찰합니다.
 
+<div id="additional-attribution-methods" />
+
 ## 추가 어트리뷰션 방법
 
 TV, 앱 제거 또는 사전 설치된 앱을 측정하려는 경우 이러한 추가 어트리뷰션 방법을 고려하십시오.
@@ -66,6 +68,8 @@ TV, 앱 제거 또는 사전 설치된 앱을 측정하려는 경우 이러한 �
 
 </Accordion>
 
+<div id="sessions" />
+
 ## 세션
 
 일정 기간 동안 사용자 세션 수를 계산하여 앱에 대한 사용자 인게이지먼트를 측정합니다. 
@@ -91,6 +95,8 @@ TV, 앱 제거 또는 사전 설치된 앱을 측정하려는 경우 이러한 �
 <Anchor target="_blank" href="/marketers/ko/docs/measure-sessions#session-reporting-by-the-app-sdk">사용자 세션을 수동으로 리포트</Anchor>할 수 있습니다. 이 방법은 백그라운드에서 동작하는 유틸리티 앱에 유용할 수 있습니다.
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## 소유 매체
 
@@ -172,6 +178,8 @@ TV, 앱 제거 또는 사전 설치된 앱을 측정하려는 경우 이러한 �
 **팁!** 팁! <Anchor target="_blank" href="/marketers/ko/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">원링크 스마트 스크립트</Anchor>는 앱 소유자가 웹사이트 방문자를 앱 사용자로 전환하도록 지원합니다.
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## 사용자 프라이버시
 

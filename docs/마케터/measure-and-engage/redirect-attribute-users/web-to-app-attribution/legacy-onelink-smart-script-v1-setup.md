@@ -27,6 +27,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## 설정
 
 OneLink Smart Script는 두 가지 버전이 있습니다.
@@ -56,6 +58,8 @@ OneLink Smart Script V1(레거시) 설정
 
 <Accordion title="파라미터">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-the-smart-script" />
+
 #### 스마트 스크립트를 구현하기 위해 개발사에게 제공하는 파라미터/값
 
 | 파라미터/값 | 비고 | 응답(개발자가 사용할) 기록 |
@@ -71,6 +75,8 @@ OneLink Smart Script V1(레거시) 설정
 | 다른 쿼리 파라미터 | <ul><li>어트리뷰션 또는 딥링킹을 위해 나가는 원링크 URL에 포함할 다른 파라미터를 나열합니다.</li><li>딥링킹을 위한 **deep\_link\_value**를 추가합니다.<ul><li>파라미터를 추가하는 것 외에도, 사용자와 개발자는 딥링킹 논리를 구현해야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#캠페인을-위한-원링크-링크-생성하기">더 알아보기</Anchor>.</li></ul></li><li>들어오는 URL의 파라미터를 사용하거나 정적 값을 강제 적용할 수 있습니다.</li></ul> |  |
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## 활용 사례
 
@@ -118,6 +124,8 @@ Google 광고 캠페인의 인스톨 어트리뷰션(GCLID 파라미터를 포�
 1. 각 인스톨에 대해 CSV 또는 푸시 API를 통해 실시간으로 파라미터 af\_sub[1-5]에서 GCLID 데이터를 가져옵니다.
 2. 수동으로 또는 <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">Adwords API</Anchor>를 통해 GCLID 데이터를 Google에 업로드합니다.
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > GCLID 솔루션은 구글이 공식적으로 지원하거나 권고하지 않습니다. 구글이 GCLID 파라미터를 삭제하는 경우, 앱스플라이어는 그에 따라 스크립트를 변경하겠습니다. 이 문서 헤더 부분 왼쪽에서 **팔로우**버튼을 클릭하여 이 문서를 팔로우하면 이 문서나 첨부 스크립트가 업데이트할 때 알림을 받으실 수 있습니다.
@@ -140,6 +148,8 @@ Snapchat 또는 X Ads와 같은 <Anchor target="_blank" href="/marketers/ko/docs
 
 **결과**: 결과: 이러한 SRN/미디어소스의 경우 미디어소스의 값과 들어오는 링크의 캠페인 파라미터는 나가는 링크의 **pid** 및 **c** 파라미터의 값을 채우는 데 사용됩니다.
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > **들어오는 URL**: https://hotel.me/af_pid=twitter&af_c=big_social
@@ -155,6 +165,8 @@ Snapchat 또는 X Ads와 같은 <Anchor target="_blank" href="/marketers/ko/docs
 앱스플라이어 어트리뷰션 링크는 미디어소스가 클릭 광고 네트워크일 때 사용할 수 있습니다. 앱스플라이어에서 이러한 링크를 설정할 때 웹 캠페인-앱 어트리뷰트를 위해 원하는 URL 경로가 포함된 **리디렉션 URL 경로(af\_r)** 파라미터를 모바일 웹 사이트에 추가할 수 있습니다.
 
 결과: 결과: af\_r 및 **af\_redirect=true** 파라미터는 들어오는 링크에 있으며 랜딩 페이지 스크립트는 변경되지 않습니다. 웹/랜딩 페이지의 앱스토어 바로가기 링크를 그대로 둡니다.
+
+<div id="example-1" />
 
 > 📄 **예시**
 >

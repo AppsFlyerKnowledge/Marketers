@@ -36,10 +36,14 @@ GTM을 사용하여 전송된 이벤트는 앱스플라이어 인앱이벤트에
 
 이 가이드의 단계와 지침을 사용하여 이벤트를 보냅니다. 
 
+<div id="considerations" />
+
 ### 고려 사항
 
 * SDK에서 이벤트를 리포트하므로 이로 인해 약간의 혼란이 발생할 수 있습니다.
 * SKAdNetwork 전환 가치 업데이트: 이 가이드에 설명된 대로 GTM에서 생성되고 SDK에 리포트된 이벤트로 인해 SDK는 일반 SDK 이벤트와 유사한 방식으로 전환 가치를 업데이트합니다. <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">SKAdNetwork 측정 설정</Anchor>을 켜고 설정하기만 하면 됩니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -50,6 +54,8 @@ GTM을 사용하여 전송된 이벤트는 앱스플라이어 인앱이벤트에
 >   * 인앱이벤트 포스트백을 SRN으로 보낼 때 `att`attatt 파라미터가 필요합니다.
 >   * Meta 광고에 인앱 이벤트 포스트백을 보낼 때는 and `att`osatt 매개변수가 `os`attos 필요합니다.
 
+<div id="prerequisites" />
+
 ### 필수 조건
 
 GTM을 사용하여 앱스플라이어에 이벤트 전송을 시작하려면 먼저 앱에 GTM SDK를 구현해야 합니다. 필요한 것은 다음과 같습니다.
@@ -59,6 +65,8 @@ GTM을 사용하여 앱스플라이어에 이벤트 전송을 시작하려면 �
 3. 아직 그렇게 하지 않았다면 <Anchor target="_blank" href="/marketers/ko/docs/integrate-the-appsflyer-sdk">앱스플라이어 SDK를 연동하십시오</Anchor>.
 
 모든 것이 준비되면 <Anchor target="_blank" href="/marketers/ko/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">GTM 설정</Anchor>으로 진행합니다.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -24,18 +24,26 @@ x-zendesk:
 ---
 > **한눈에 보기:** 인앱 이벤트 데이터를 활용하여 앱 인게이지먼트와 귀사의 유저의 가치를 측정하고 캠페인을 최적화합니다.
 
+<div id="overview" />
+
 ## 개요
 
 인앱 이벤트는 마케터가 다양한 소스에서 앱 인게이지먼트와 유저의 가치를 측정하고 적절한 유저 유입 전략을 수립할 수 있게 합니다. 광고 네트워크는 인앱 이벤트 정보를 사용하여 캠페인을 최적화하고 비용당 액션\/이벤트 캠페인을 실행합니다. 광고 네트워크는 실시간으로 전송되는 포스트백을 통해 인앱 이벤트 데이터를 수신합니다. <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">리치 인앱 이벤트에 대해 더 보기</Anchor>.
+
+<div id="postback-in-app-event-selection" />
 
 ## 인앱 이벤트 포스트백 선택
 
 마케터는 이 문서에 설명된 설정을 사용하여 광고 네트워크에 포스트백으로 발송할 인앱 이벤트를 선택할 수 있습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 인앱 이벤트에는 **거부된 이벤트**가 포함됩니다. 이는 Protect360에 의해 차단되었거나 대상 유효성 검증 규칙에 부합하지 않는 이벤트를 의미합니다.
 > * **연동** 탭에 **인앱 이벤트 포스트백** 섹션이 없는 경우, 이는 파트너가 앱스플라이어와의 예비 구성에서 인앱 이벤트 기록을 설정하지 않았음을 의미합니다. 파트너는 <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">파트너 어시스턴트 위젯</Anchor>을 사용하여 앱스플라이어에 연락하여 연동을 완료할 수 있습니다.
+
+<div id="in-app-event-postback-window" />
 
 ## 인앱 이벤트 포스트백 기간
 
@@ -56,17 +64,25 @@ x-zendesk:
 | 1월 15일 | 기간이 20일로 변경되었습니다. |
 | 1월 18일 | 사용자가 다시 구매를 진행합니다.<br /><br />이번에는 이벤트가 현재 기간(20일)에 포함되므로 포스트백이 발송됩니다. |
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 이 [모든 미디어 소스, 유기적 설정 포함](#포스트백-발송-옵션)이 선택되면, 이 규칙은 적용되지 않습니다. 이 경우, 이 설정을 구성한 파트너는 광고주가 수신하는 모든 전환 이벤트에 대해 포스트백을 받습니다. **다른 파트너가 이벤트에 귀속되었더라도**, 이벤트가 포스트백 윈도우 내에서 발생한 한, 가능합니다. **이 설정을 구성한 파트너를 위해 정의된.**
+
+<div id="default-postback-window" />
 
 ### 기본 포스트백 기간
 
 인앱 이벤트 포스트백을 설정할 때 기본 기간은 자동으로 6개월로 설정됩니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 2019년 7월 30일 이전에 특정 파트너와 인앱 이벤트 포스트백을 사용하기 시작한 경우 기간의 기본 설정은 평생입니다. 즉, 인앱 이벤트 포스트백은 항상 발송됩니다.
+
+<div id="who-can-configure-postback-windows" />
 
 ### 포스트백 기간을 설정할 수 있는 사람
 
@@ -74,6 +90,8 @@ x-zendesk:
 * 대행사는 **인앱 이벤트 포스트백 구성 허용** <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">권한</Anchor>이 부여된 경우 설정 가능합니다.  
   **참고:** 동일한 애드 네트워크와 협력하는 마케터와 대행사는 네트워크와의 계약에 따라 각각 별도로 포스트백 기간을 설정할 수 있습니다.
 * 파트너는 **인앱 이벤트 포스트백 구성 허용** <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">권한</Anchor>이 부여된 경우 가능합니다.
+
+<div id="event-mapping" />
 
 ## 이벤트 매핑
 
@@ -83,9 +101,13 @@ x-zendesk:
 
 마케터의 이벤트가 파트너의 동일한 이벤트와 일치하도록 하려면 이벤트 이름을 매핑해야 합니다.
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > 특정 파트너 연동 탭에서 매핑된 이벤트는 표준과 <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN 포스트백</Anchor> 모두에 적용됩니다.
+
+<div id="mapping-methods" />
 
 ### 매핑 방법
 
@@ -94,6 +116,8 @@ x-zendesk:
 * [파트너 이벤트 ID 입력](/docs/in-app-event-postback-configuration#h_c513e6d4-d46f-4070-a98d-1888a5ea939d)
 * [목록에서 이벤트 ID 선택](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [이벤트를 있는 그대로 발송(매핑 없음)](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -106,6 +130,8 @@ x-zendesk:
 
 * **앱스플라이어 이벤트**: 귀사의 앱 이벤트 목록에서 이벤트 선택.
 * **파트너 이벤트**에 매핑됨: 텍스트 필드에 귀사의 앱 이벤트에 해당하는 파트너로부터 받은 이벤트 ID를 입력합니다.
+
+<div id="note-5" />
 
 > 📘 **참고**
 >
@@ -138,6 +164,8 @@ x-zendesk:
 * **수동으로 추가:** 특정 이벤트를 선택하세요.
 * **모든 이벤트 발송 (앱 삭제 및 세션 제외)**: 모든 귀사의 이벤트를 발송하세요. 여기에는 앱 삭제, 세션(앱 실행), 그리고 `af_app_opened` 이벤트는 포함되지 않습니다.
 
+<div id="note-6" />
+
 > 📘 **참고**
 >
 > 광고주가 의도치 않게 써드 파티 분석 플랫폼에 너무 많은 정보를 공유하는 것을 방지하기 위해, 2019년 3월부터 해당 플랫폼에서 **모든 이벤트 발송 (앱 삭제 및 세션 제외)** 옵션을 제거했습니다. 이 날짜 이전에 구성된 분석 플랫폼은 여전히 이 설정 옵션을 유지합니다.
@@ -166,12 +194,16 @@ x-zendesk:
 
 이벤트 매핑에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">인앱 이벤트 포스트백</Anchor>을 참조하세요.
 
+<div id="options-for-sending-postbacks" />
+
 ### 포스트백 발송 옵션
 
 각 이벤트에 대해 어느 경우에 포스트백을 발송할지 선택할 수 있습니다 (포스트백 기간 내에서):
 
 * **해당 파트너만:** 이 파트너에 어트리뷰션된 경우에만 포스트백을 발송합니다. 즉, 이벤트를 실행한 사용자가 이 파트너에서 온 경우입니다.
 * **오가닉 포함 모든 매체 소스**: 모든 파트너에 어트리뷰션된 이벤트와 오가닉 이벤트에 대해 모든 매체 소스로 포스트백을 발송합니다. 즉, 이를 실행한 사용자가 어떤 매체 소스에서 온 경우입니다. **참고**: 오가닉 포함 모든 매체 소스가 선택되면 다른 파트너의 포스트백에는 어트리뷰션 데이터가 포함되지 않습니다.
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### 포스트백에 포함할 데이터
 
@@ -182,11 +214,15 @@ x-zendesk:
 * **값 있음 & 수익 있음**: 수익 값(이벤트에 존재할 경우)을 포함한 모든 이벤트 파라미터를 전송합니다.
 * 가치, 수익 및 순이익 이벤트의 모든 매개변수를 전송하십시오. 수익 값과 순수익 값(존재하는 경우)을 포함하여.
 
+<div id="note-7" />
+
 > 📘 **참고**
 >
 > 옵션은 **ROI360 고급** 구독이 필요하며 `af_purchase*` 및 `af_ars_*` 이벤트에 대해서만 사용할 수 있습니다.
 
 광고 네트워크에서 귀사의 캠페인을 최적화하고 캠페인 결과를 개선하려면 수익 공유를 권장합니다. 그러나, 수익 공유는 필수 사항이 아닙니다. 이벤트 값에 `af_revenue` 또는 `af_projected_revenue`가 정의된 이벤트에 대해서만 수익 공유를 활성화해야 합니다. 그렇지 않으면 광고 네트워크에서 수익 값이 비어 있는 이벤트를 받습니다.
+
+<div id="share-revenue" />
 
 #### 수익 공유
 
@@ -202,13 +238,19 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&content
 https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-monetary=(net-monetary)&content_id=(af_content_id)
 ```
 
+<div id="note-8" />
+
 > 📘 **참고**
 >
 > 또는 **값 및 수익 없음**을 선택할 때, 해당 매개변수는 N/A로 마스킹됩니다.
 
+<div id="tip" />
+
 > 📘 **팁**
 >
 > 앱 내 이벤트 포스트백을 구성하여 표준 수익(금전적) 매개변수에서 총 수익 대신 순수익을 전송할 수도 있습니다. 이 구성을 이용하려면 고객 성공 관리자(CSM)에게 문의하십시오.
+
+<div id="h_01HBZCRNKGBEDSBZEY87KYQ60G" />
 
 > 📄 **예시**
 >
@@ -229,6 +271,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 > | **값 있음 & 수익** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_content_type":"category_a"}&monetary=50.87&content_id=1234567` | 50.87 | USD | 해당 없음 |
 > | **가치, 수익 및 순이익** | `{"af_currency":"USD","af_content_id":"1234567","af_revenue":50.87,"af_net_revenue":35.61,"af_content_type":"category_a"}&monetary=50.87&net-monetary=35.61&content_id=1234567` | 50.87 | USD | 35.61 |
 
+<div id="conditional-in-app-event-postbacks" />
+
 ### 조건부 인앱 이벤트 포스트백
 
 다양한 이벤트에 매핑할 수 있는 여러 조건을 사용하여 인앱 이벤트 포스트백을 필터링합니다. 필터 조건을 충족하는 이벤트만 SRN 및 분석 파트너를 포함한 파트너에게 발송됩니다. 이 기능은 다음과 같은 경우에 유용합니다:
@@ -236,6 +280,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 * 사용자 세분화, 개인화 및 리텐션 최적화
 * 데이터 최소화
 * 사용자 개인 정보 보호
+
+<div id="h_01HBZCRNKHRTMHP3JPFVCS8D6N" />
 
 > 📄 **예시**
 >
@@ -261,6 +307,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
    * 조건을 매핑할 파트너 이벤트 (다음 [매핑 옵션](/docs/in-app-event-postback-configuration#매핑-방법) 중 하나 사용)
 4. 더 많은 조건을 추가할 수 있지만, 먼저 기존 조건의 모든 필드를 입력해야 합니다.
 5. **연동 저장**을 클릭합니다.
+
+<div id="considerations" />
 
 #### 고려 사항
 
@@ -289,10 +337,14 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **참고**
 >
 > * 캠페인 최적화에 대한 영향을 이해하려면 시험 앱이나 사소한 이벤트에서 이 기능을 시험해 보는 것이 좋습니다.
 > * <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">포스트백 콘텐츠</Anchor>를 보려면 로데이터 포스트백 리포트를 다운로드하세요.
+
+<div id="editing-multiple-events" />
 
 ### 여러 이벤트 편집
 
@@ -313,6 +365,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 [alt앱\_내\_이벤트\_포스트백\_en-us.pngalt](https://support.appsflyer.com/hc/article_attachments/30448114091153)
 
+<div id="custom-events" />
+
 ### 커스텀 이벤트
 
 매핑에 사용할 수 있는 이벤트 목록에는 SDK에서 이미 보고된 이벤트 또는 앱스플라이어로 전송된 서버-투-서버 이벤트만 표시됩니다. 매핑하려는 이벤트가 드롭다운 목록에 나타나지 않는 경우에는 다음과 같은 이유가 있을 수 있습니다.
@@ -329,6 +383,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 4. 이벤트를 파트너 식별자에 매핑하세요.
 5. 매핑이 기록되었는지 확인하려면 **연동 저장**을 클릭하세요.
 
+<div id="note-10" />
+
 > 📘 **참고**
 >
 > * 포스트백 페이지에 커스텀 이벤트를 추가해도 귀사의 앱에서 해당 이벤트가 자동으로 가져오지 않습니다. 적절한 기능을 위해 SDK나 S2S에서 이벤트를 구성해야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#이벤트-발송">앱스플라이어에 이벤트를 발송하는 방법</Anchor>을 참조하세요.
@@ -339,6 +395,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 * 커스텀 이벤트를 추가할 수 없습니다.
 * 마케터가 이벤트를 추가하고 필요한 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">권한</Anchor>을 부여한 후에만 이벤트를 보거나 매핑할 수 있습니다.
+
+<div id="event-mapping-by-ad-networks" />
 
 ## 애드 네트워크에 의한 이벤트 매핑
 
@@ -351,9 +409,13 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 
 애드 네트워크가 권한을 받으면 [텍스트 필드에 이벤트 ID 입력](/docs/in-app-event-postback-configuration#매핑-방법)의 지침에 따라 이벤트를 매핑할 수 있습니다.
 
+<div id="event-mapping-by-agencies" />
+
 ## 대행사에 의한 이벤트 매핑
 
 마케터는 에이전트가 인앱이벤트 포스트백을 설정하도록 허용할 수 있습니다.
+
+<div id="note-11" />
 
 > 📘 **참고**
 >
@@ -367,6 +429,8 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 4. 대행사가 공유할 수 있는 특정 이벤트를 선택하세요.
 
 ![대행사-이벤트.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+
+<div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
 > 📄 **참고 항목**
 >

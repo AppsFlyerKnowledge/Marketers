@@ -24,6 +24,8 @@ x-zendesk:
 
 <Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
+<div id="delete-user-history" />
+
 ## 사용자 기록 삭제
 
 GDPR 또는 CCPA와 같은 일부 개인 정보 보호 규정은 사용자에게 *삭제 권한을 부여합니다*.
@@ -31,6 +33,8 @@ GDPR 또는 CCPA와 같은 일부 개인 정보 보호 규정은 사용자에게
 **시나리오:** 사용자가 자신과 관련된 데이터를 삭제하도록 요청합니다. GDPR에 따라 30일 이내에 이 작업을 수행해야 합니다.
 
 **필요한 조치:** 필요한 조치: <Anchor target="_blank" href="/marketers/ko/docs/send-opendsr-api-requests">OpenDSR API</Anchor> 를 사용하여 삭제 요청을 보냅니다.
+
+<div id="stop-attributing-installs-to-a-media-source" />
 
 ## 미디어소스에 대한 인스톨 어트리뷰션 중지
 
@@ -50,13 +54,19 @@ GDPR 또는 CCPA와 같은 일부 개인 정보 보호 규정은 사용자에게
 * **온드 미디어:**
   * 관련 원링크 커스텀 링크 사용을 중단하십시오.
 
+<div id="remove-or-delete-an-app" />
+
 ## 앱 제거 혹은 삭제
 
 앱을 일시적으로 삭제할 수 있는 옵션이 있습니다.
 
+<div id="temporarily-removing-an-app" />
+
 #### 앱을 일시적으로 삭제하기
 
 앱을 일시적으로 제거하면 데이터 기록이 중지되고, 대시보드 에 앱이 표시되지 않으며, '내 앱' 페이지에서 회색으로 표시됩니다. 하지만 앱은 계정과 연결된 상태로 유지되므로 복원할 수 있습니다. 앱을 복원하면 앱 설정, 승인된 기관, 토큰과 같은 이전 데이터가 유지됩니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -73,9 +83,13 @@ GDPR 또는 CCPA와 같은 일부 개인 정보 보호 규정은 사용자에게
 
 * 고객 성공 관리자(CSM)에게 연락하거나 [hello@appsflyer.com](mailto:hello@appsFlyer.com) 으로 이메일 보내 절차를 시작하세요. 고객 성공 관리자(CSM)가 앱을 복원하면 계정에 다시 추가할 수 있습니다.
 
+<div id="transfer-apps-between-accounts" />
+
 ## 계정 간 앱 전송
 
 자세한 내용은 가이드를 참조하십시오. <Anchor target="_blank" href="/marketers/ko/docs/transferring-apps-between-accounts">계정 간 앱 전송하기</Anchor>.
+
+<div id="delete-your-account-or-downgrade-your-subscription-plan" />
 
 ## 계정 삭제 또는 구독 플랜 다운그레이드
 

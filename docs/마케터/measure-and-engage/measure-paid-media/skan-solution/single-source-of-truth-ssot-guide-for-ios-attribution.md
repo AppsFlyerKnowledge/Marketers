@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="iOS 어트리뷰션을 위한 Single Source of Truth (SSOT) 가이드" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## Single Source of Truth에 관한 사항 - 진정한 iOS 성과 데이터
 
 iOS 14부터 앱스플라이어는 SKAdNetwork, 앱 추적 투명성 동의 사용자, 확률적 모델링, 증분 기반 데이터 인사이트, Apple Search Ads 전용 API를 포함한 여러 데이터 스트림을 활용하여 iOS 사용자 어트리뷰션을 수행합니다. IDFA가 없으면, 중복된 데이터를 포함하지 않고 여러 어트리뷰션 방법을 연결하는 것이 사실상 불가능합니다.
@@ -52,6 +54,8 @@ SSOT 메커니즘은 중복된 인스톨 데이터를 제거하고 잘못 어트
 <Anchor target="_blank" href="/marketers/ko/docs/skan-conversion-studio">SKAN 컨버전 스튜디오</Anchor>를 참조하세요.
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## 개요 대시보드의 Single Source of Truth 보기
 
@@ -106,6 +110,8 @@ SSOT 보기에서:
 * **시간대**: 앱스플라이어가 보고한 인스톨 및 이벤트는 UTC 또는 <Anchor target="_blank" href="/marketers/ko/docs/app-settings">앱 설정 페이지</Anchor>에서 설정한 앱별 로컬 시간대로 표시됩니다. SKAN에서 보고한 데이터의 경우 인스톨과 이벤트는 UTC를 사용하여 표시되며, Meta 및 Google SKAN 데이터는 Meta와 Google 계정에서 설정한 시간대에 기반하여 표시됩니다.
 * **통화**: <Anchor target="_blank" href="/marketers/ko/docs/app-settings">앱 설정 페이지</Anchor>에 설정된 USD 또는 앱별 현지 통화로 표시됩니다.
 * **수익 지표 (D2, D7):** 불완전하거나 누락된 SKAN 포스트백(Null 변환 값)을 고려한 모델링된 데이터 포함
+
+<div id="filter-considerations" />
 
 #### 필터 고려 사항
 
@@ -171,6 +177,8 @@ SSOT 대시보드에서 사용 가능한 지표:
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## SSOT 작동 방식
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -221,6 +229,8 @@ SSOT 메커니즘은 유저 디바이스에 있는 귀사의 앱에서 사용되
 **고려 사항**
 
 * 일반적으로, 앱스플라이어는 재설치를 포함하지 않습니다. SSOT에서는 재설치 상태를 고려하지 않습니다. 즉, SSOT 분석 컨텍스트에서 재설치로 인한 중복된 SKAN 인스톨은 제거되지 않으며 af\_attribution 플래그 설정에 영향을 미치지 않습니다.
+
+<div id="attribution-flag-field" />
 
 #### **어트리뷰션 플래그 필드**
 
@@ -283,6 +293,8 @@ SKAN 데이터를 다른 어트리뷰션 방법의 데이터와 결합할 때는
 | 인앱 이벤트 | (분류 기준으로서의) 인앱 이벤트와 인앱 이벤트 지표는 다음과 같은 조건으로만 사용할 수 있습니다.<ul><li>Window 1 기간 동안 발생한 이벤트는 확인할 수 있습니다.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -28,6 +28,8 @@ x-zendesk:
 
 * 사용자 참여 방식
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 인앱 이벤트 구현과 관련한 마케터용 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#인앱-이벤트-설정">지침</Anchor>을 반드시 읽어보십시오.
@@ -38,6 +40,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -78,6 +82,8 @@ x-zendesk:
 | af\_registration\_method | 가입 방법의 유형 | 이메일, 페이스북 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 

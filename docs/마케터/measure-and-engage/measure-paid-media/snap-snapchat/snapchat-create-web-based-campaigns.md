@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **한눈에 보기:** Snapchat 광고의 웹 캠페인을 사용하여 Snapchat 광고의 웹-앱 전환을 기여합니다.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 사용자 유입 웹 기반 캠페인을 위해 Meta 광고 (`snapweb_int`)와의 연동을 지원하며, 이로써 Meta의 Conversion API(CAPI)를 통해 직접 어트리뷰션 및 전환 데이터를 보고할 수 있습니다. 그런 다음 Meta는 해당 데이터를 활용하여 광고 타겟팅을 최적화하고, 성과를 측정하며, 오디언스를 커스텀하여 구축할 수 있습니다.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
 > 현재 Meta 웹과의 연동은 CAPI로의 리인게이지먼트 포스트백 전송을 지원하지 않습니다.
 
+<div id="prerequisites" />
+
 ### 필수 조건
 
 Snapchat 웹 통합을 활성화하기 전에 에 비즈니스 계정이 있는지 확인하십시오.
+
+<div id="how-to-create-a-snapchat-ads-web-campaign" />
 
 ### Snapchat 광고 웹 캠페인을 만드는 방법
 
@@ -46,6 +54,8 @@ Snapchat 웹 통합을 활성화하기 전에 에 비즈니스 계정이 있는�
 
 * [원링크 스마트 스크립트로 랜딩 페이지 만들기](#원링크-스마트-스크립트로-랜딩-페이지-만들기) (선택 사항)
 * [원링크 스마트 배너로 랜딩 페이지 만들기](#원링크-스마트-배너로-랜딩-페이지-만들기) (선택 사항)
+
+<div id="set-up-snapchat-ads-web-integration-in-appsflyer" />
 
 ## AppsFlyer에서 Snapchat 광고 웹 통합 설정
 
@@ -103,6 +113,8 @@ AppsFlyer는 Snapchat 웹 캠페인에 대해 뷰-스루 어트리뷰션을 지�
 6. **사용자 출처** 열에서 **‘이 파트너만’** 을 선택하면, 해당 파트너로부터 유입된 사용자가 수행한 이벤트에 대해서만 인앱 이벤트 포스트백이 전송되도록 보장됩니다.
 7. In the **포함하여** 열에서 수익 값이 포함된 이벤트를 보낼지 여부를 선택합니다. 포스트백에 포함할 데이터 참조
 
+   <div id="note" />
+
    > 📘 **참고**
    >
    > * 구매 이벤트를 설정하는 경우, **포함** 열을 **값 및 수익**으로 설정합니다. 다른 옵션을 선택하면 포스트백이 실패합니다.
@@ -117,6 +129,8 @@ AppsFlyer는 Snapchat 웹 캠페인에 대해 뷰-스루 어트리뷰션을 지�
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-snapchat-ads" />
+
 ## Snapchat 광고에서 AppsFlyer 통합 설정
 
 Snapchat 광고 관리자에서 다음 단계를 수행합니다.
@@ -126,6 +140,8 @@ Snapchat 광고 관리자에서 다음 단계를 수행합니다.
 <Accordion title="1. 캠페인 유형, 목적, 목표 설정">
 
 AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 사용할 이벤트를 선택하거나 모바일 앱 설치를 최적화하려면 "PAGE\_VIEW"를 선택할 수 있습니다.
+
+<div id="warning" />
 
 > ❗️ **경고**
 >
@@ -203,6 +219,8 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
   https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=snapweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
   ```
 
+  <div id="note-1" />
+
   > 📘 **참고**
   >
   > Meta는 광고가 클릭될 때, `ScCid={{ScCid}}`을 도착 URL로 자동으로 추가합니다.
@@ -214,6 +232,8 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 원링크 스마트 스크립트로 랜딩 페이지 만들기
 
@@ -249,6 +269,10 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 1. 캠페인의 원링크 어트리뷰션 링크에 대한 템플릿을 설정합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template#원링크-템플릿-만들기">원링크 템플릿을 만드는 방법</Anchor>을 참조하세요.
 2. 스마트 스크립트를 만듭니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">원링크 스마트 스크립트 생성 방법</Anchor>을 참조하세요.
 
+   <div id="note-5" />
+
+   <div id="note-2" />
+
    > 📘 **참고**
    >
    > 아래 지침은 Smart Script을 사용하여 Snapchat 광고 캠페인을 설정하는 데 필요한 구체적인 단계를 설명합니다. 스마트 스크립트 캠페인을 설정하는 방법에 대한 포괄적인 가이드는 <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Script V2 설정</Anchor> 문서의 <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">OneLink Smart Script를 만드는 방법</Anchor> <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">섹션을 참조하세요.</Anchor>
@@ -260,6 +284,8 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 
      1. **Mapping for**에서 **커스텀 파라미터**를 선택하세요.
      2. `{i:In {b:the} {u:Korean}:} **{b}발신 URL 매개변수{/b}`<strong> 그리고 the </strong>들어오는 URL 매개 변수,<strong> 입력하십시오 </strong>ScCid.
+
+     <div id="note-3" />
 
      > 📘 **참고**
      >
@@ -289,12 +315,16 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 
 * 개발자에게 발신 URL에 수신 `ScCid`매개변수를 포함하라고 상기시켜주세요.
 
+  <div id="note-4" />
+
   > 📘 **참고**
   >
   > 앱스플라이어 로데이터 보고서에 표시하려면 들어오는 `ScCid`매개변수도 나가는 `ScCid`매개변수와 함께 나가는 매개변수 `af_sub[1-5]`중 하나에 매핑되어야 합니다.
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## 원링크 스마트 배너로 랜딩 페이지 만들기
 
@@ -334,6 +364,8 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
    * 모든 관련 URL 파라미터가 수신 URL에 추가되었는지 확인합니다.
    * 들어오는 URL에 추가된 매개 변수를 검토하려면 Snapchat 광고 관리자를 열고 URL 매개 변수를 검토하십시오. [대상 URL 생성](#2-set-destination-url).
 
+   <div id="note-6" />
+
    > 📘 **참고**
    >
    > 가장 중요한 것은 `pid=snapweb_int` 그리고 `ScCid`가 수신 URL에 포함되어 스마트 배너가 이를 수집할 수 있도록 해야 한다는 것입니다. 이 두 매개변수는 어트리뷰션과 Meta 광고에 포스트백을 전송하는 데 필요합니다.
@@ -341,20 +373,28 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## **웹 대 애플리케이션 어트리뷰션 데이터 보기**
 
 웹 기반 전환 이벤트는 원래대로 Snapchat으로 전송되지만 `snapweb_int` PID는 AppsFlyer 대시보드 및 원시 데이터 보고서에서 보고됩니다. `snapchat_int` PID. 이는 기본 전환 이벤트와 전환 지원 이벤트 모두에 적용됩니다.
 
 이 통합 보고서 보기를 통해 모바일 및 웹 비용 보고를 포함하여 웹 및 앱 캠페인 성과를 한 곳에서 분석할 수 있습니다.
 
+<div id="view-in-the-dashboard" />
+
 ### **대시보드에서 보기**
 
 모든 Snapchat 웹앱 출처는 아래에 표시됩니다. `snapchat_int` 개요 및 활동 대시보드에서. 이는 플랫폼 전반에 걸친 캠페인 결과를 단일 통합된 보기로 제공합니다. Snapchat 데이터 내에서 앱 및 웹 트래픽을 비교하려면 표준 필터와 구분을 사용합니다.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### **원시 데이터 및 API 보고서에서 보기**
 
 * **원시 데이터 내보내기 및 API 응답** 포함하십시오. `snapchat_int` PID in the `media_source` Google 웹 활동 필드. 웹 캠페인 설정 세부 정보를 확인하려면 다음을 참조하십시오. `original_url` 표시되는 필드 `snapchat_int` 웹 캠페인 생성 시 사용된 PID처럼.
 * **포스트백 보고서**  **`snapweb_int` 포스트백이 전송된 원본 미디어 소스로 표시됩니다.**
+
+<div id="traits-and-limitations" />
 
 ## 특성과 제한 사항
 

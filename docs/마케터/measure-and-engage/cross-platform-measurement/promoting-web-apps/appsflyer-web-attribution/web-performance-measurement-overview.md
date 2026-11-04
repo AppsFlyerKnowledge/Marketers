@@ -27,6 +27,8 @@ x-zendesk:
 
 > **한눈에 보기:** 웹 성과 측정을 통해 어떤 미디어 소스와 캠페인이 웹사이트로 사용자를 유입시키는지 확인하고, 이러한 방문이 시간이 지남에 따라 하위 액션에 어떠한 영향을 미치는지 측정할 수 있습니다. 이를 통해 최초 방문부터 생애 가치 측정에 이르기까지 신규 사용자 획득(최초 방문자)과 리인게이지먼트 모두를 지원하며, 사용자의 상호작용을 엔드투엔드로 캡처하고 어트리뷰션할 수 있습니다.
 
+<div id="about-web-performance-measurement" />
+
 ## 웹 성과 측정에 대하여
 
 웹 어트리뷰션은 어떤 미디어 소스와 캠페인이 사용자의 웹사이트 방문을 유도하고 이후의 액션에 영향을 미치는지 확인하는 프로세스입니다.
@@ -35,9 +37,13 @@ x-zendesk:
 
 이 아티클의 목적은 최초 웹사이트 방문부터 생애 가치 측정에 이르기까지 사용자 상호작용이 어떻게 수집되고 식별되며 측정되는지 설명하면서, 엔드투엔드 웹 성과 측정 프로세스의 개요를 전달하는 것입니다. 이 프로세스를 통해 엔진은 신규 방문자를 식별하고 어트리뷰션하는 신규 사용자 획득뿐만 아니라, 재방문 사용자를 타겟팅하는 캠페인의 성과를 측정하기 위한 리타겟팅 또는 리인게이지먼트까지 모두 지원할 수 있습니다.
 
+<div id="if-you-use-people-based-attribution-pba" />
+
 #### People-Based Attribution(PBA)을 사용하는 경우
 
 현재 <Anchor target="_blank" href="/marketers/ko/docs/people-based-attribution-pba">People-Based Attribution(PBA)</Anchor>을 사용 중인 경우, 더 세분화된 어트리뷰션과 추가적인 시그널을 활용할 수 있는 웹 성과 측정으로 전환하는 것을 고려해 보세요.
+
+<div id="the-web-performance-measurement-flow" />
 
 ### 웹 성과 측정 플로우
 
@@ -52,6 +58,8 @@ x-zendesk:
 7. [획득 전 기간](#7-preacquisition-period): 최초 방문과 UA 이벤트 사이에 발생하는 중간 이벤트를 어트리뷰션합니다.
 8. [리인게이지먼트 및 재획득](#8-reengagement-and-reacquisition): 비활성화 윈도우를 기준으로 재방문 사용자를 어트리뷰션하고, 해당 재방문이 리인게이지먼트인지 또는 재획득인지를 판정합니다.
 9. [LTV 측정](#9-ltv-measurement): 어트리뷰션 윈도우 기준에 따라 지속적인 이벤트와 매출을 어트리뷰션하여 사용자의 생애 가치를 측정합니다.
+
+<div id="the-web-performance-measurement-process---step-by-step" />
 
 ## 단계별 웹 성과 측정 프로세스
 

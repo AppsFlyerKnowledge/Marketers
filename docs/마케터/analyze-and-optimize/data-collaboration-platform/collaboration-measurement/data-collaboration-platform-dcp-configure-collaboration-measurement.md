@@ -21,6 +21,8 @@ x-zendesk:
 ---
 **한눈에 보기:** DCP를 구성하여 전환, 참여 및 캠페인 매핑 데이터를 기반으로 SKU 수준의 귀속을 수행하는 방법을 배우십시오.
 
+<div id="overview" />
+
 ## 개요
 
 전환, 참여 및 캠페인 매핑 데이터를 준비한 후, DCP를 구성하여 이를 측정 및 귀속에 사용할 수 있습니다:
@@ -29,6 +31,8 @@ x-zendesk:
 2. 작업 할당 – 소유자는 각 구성 작업을 관련 데이터에 접근할 수 있는 협력자에게 할당합니다.
 3. 작업 구성 – 협력자는 전환, 참여 및 캠페인 매핑을 구성합니다. 여기에는 모든 데이터가 연결되고 매핑되어 귀속을 위해 준비되도록 온사이트 및 오프사이트 캠페인을 설정하는 것이 포함됩니다.
 4. 측정 실행 및 관리 - 실시간 또는 과거 측정을 실행하고, 복제하고, 다시 실행하거나 범위를 변경하십시오.
+
+<div id="start-the-measurement-setup" />
 
 ## 측정 설정을 시작하십시오.
 
@@ -42,6 +46,8 @@ x-zendesk:
 
 [![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
 
+<div id="select-campaign-type-on-site-off-site-or-both" />
+
 ## 캠페인 유형 선택: 온사이트, 오프사이트 또는 둘 다
 
 온사이트 및 오프사이트 캠페인 유형은 전환이 발생하는 위치와 귀속 처리 방식이 다르므로, 협업 소유자는 협업 측정을 구성하기 전에 캠페인 유형을 지정해야 합니다. 자세한 내용은 다음을 참조하세요. 온사이트 대. 오프사이트 캠페인 측정.
@@ -53,6 +59,8 @@ x-zendesk:
    * [온사이트 캠페인 구성](#온사이트-및-오프사이트-캠페인-측정),
    * [오프사이트 캠페인 구성](#configure-offsite-campaign-measurement),
    * [온사이트 및 오프사이트 캠페인 결합 구성](#configure-combined-onsite-and-offsite-campaign-measurement).
+
+<div id="assign-configuration-task" />
 
 ## 구성 작업 할당
 
@@ -92,6 +100,8 @@ DCP 계정 소유자는 데이터 프라이버시를 보장하고 책임 분담�
 2. 관련 구성 단계에서 **할당자** 목록에서 할당된 협력자를 제거하십시오.
 
 </Accordion>
+
+<div id="configure-on-site-and-off-site-campaign-measurement" />
 
 ## 온사이트 및 오프사이트 캠페인 측정
 

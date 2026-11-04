@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 나가는 API 요청에 사용되는 앱스플라이어 IP 주소입니다.
 
+<div id="appsflyer-server-ip-address-ranges" />
+
 ## 앱스플라이어 서버 IP 주소 범위
 
 나열된 IP 주소는 앱스플라이어에서 앱스플라이어를 사용하기 위해 제어됩니다. 이 목록은 당사의 능력 및 운영 요구사항에 따라 수시로 변경됩니다. 우리는 이 목록을 적게 수정하기 위해 모든 노력을 기울입니다.
@@ -45,11 +47,15 @@ x-zendesk:
 * [45.92.116.0/22]
 * [194.28.46.0/23]
 
+<div id="uploading-audiences" />
+
 ### 잠재 고객 업로딩
 
 방화벽 및 프록시 서버와 같은 네트워크 경계 디바이스를 사용하는 경우 보안팀에 [잠재 고객용 IP 허용 목록](https://support.appsflyer.com/hc/article_attachments/16888953497617)에 나열된 앱스플라이어 IP 주소를 허용하도록 요청해야 합니다.
 
 <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide">잠재고객</Anchor>에 대해 자세히 알아보세요.
+
+<div id="pull-api-and-server-to-server-s2s" />
 
 ### Pull API 및 서버 간 통신(S2S)
 

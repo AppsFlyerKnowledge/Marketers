@@ -50,9 +50,13 @@ Push API는 앱스플라이어 어트리뷰션 및 메시지로서의 SKAN(SKAdN
 | 메시지 콘텐츠(필드) | <ul><li>메시지는 `key:value` 구조를 가집니다.</li><li>사용 가능한 앱스플라이어 속성 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor> 필드를 참조하십시오.</li><li>각 키는 로데이터 필드를 나타냅니다. <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary#data-fields-dictionary">앱스플라이어의 로데이터 필드 설명</Anchor>을 참조하십시오.</li><li>공백 또는 null 키는 전송되지 않습니다.</li><li>이 예시에는 null 필드와 빈 필드를 모두 포함합니다. 실제 포스트백에는 비어 있지도 않고 null 필드도 없습니다. 제공된 예시는 JSON 형식입니다.<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[안드로이드](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | 타임 스탬프 필드 형식 | <ul><li>UTC 타임스탬프: `yyyy-mm-dd hh:mm:ss.sss`. 예를 들면, `2019-09-17 00:09:00.123`2019-09-17 00:09:00.123과 같이 표시됩니다. 이벤트가 도쿄 시간 18:00에 이루어졌습니다. UTC로 변환된 시간은 09:00입니다. 기록된 시간은 UTC 시간대 입니다.</li><li>선택한 시간대(앱 별) 타임스탬프: `yyyy-mm-dd hh:mm:ss.sss±th:tm`. 예를 들어: 이벤트가 도쿄 시간 18:00에 이루어졌습니다. 표시된 이벤트 시간은 18:00+09:00로 기록됩니다. 09:00은 도쿄 표준 시간대입니다.</li></ul> |
 
+<div id="available-message-types" />
+
 #### 사용 가능한 메시지 유형
 
 <table><thead><tr><th>어트리뷰션 컨텍스트</th><th>메시지 유형</th><th>conversion_type 필드</th><th>campaign_type 필드</th><th>event_name 필드</th><th>event_type 필드</th></tr></thead><tbody><tr><td>유저 유입</td><td>인스톨\*</td><td>인스톨</td><td><p>논오가닉: UA</p><p>오가닉: 오가닉</p></td><td>인스톨</td><td><ul><li>인스톨</li><li>organic-install</li></ul></td></tr><tr><td>유저 유입 </td><td>install in-app events</td><td><span>인스톨</span></td><td><p>논오가닉: UA</p><p>오가닉: 오가닉</p></td><td>광고주가 정의한 이벤트 이름</td><td><ul><li>install-in-app-event</li><li>organic-install-in-app-event</li></ul></td></tr><tr><td>리타겟팅</td><td>리인게이지먼트</td><td>리인게이지먼트</td><td>리타겟팅</td><td>리인게이지먼트</td><td>리어트리뷰션</td></tr><tr><td>리타겟팅 </td><td>Re-engagement in-app events</td><td>리인게이지먼트</td><td>리타겟팅</td><td>광고주가 정의한 이벤트 이름</td><td>re-engagement-in-app-event</td></tr><tr><td>리타겟팅 </td><td>리어트리뷰션 </td><td>재설치 (Reinstall)</td><td>리타겟팅</td><td>리어트리뷰션</td><td>리어트리뷰션</td></tr><tr><td>유저 유입 </td><td>재설치</td><td>재설치 (Reinstall)</td><td><p>논오가닉: UA</p><p>오가닉: 오가닉</p></td><td>재설치 (Reinstall)</td><td><ul><li>재설치 (Reinstall)</li><li>organic-reinstall</li></ul></td></tr><tr><td>리타겟팅</td><td>Re-attribution in-app events</td><td>재설치 (Reinstall)</td><td>리타겟팅</td><td>광고주가 정의한 이벤트 이름</td><td>re-attribution-in-app-event</td></tr><tr><td colspan="6">광고 조회 어트리뷰션과 관련되는 일부 인스톨은 <a href="./about-raw-data-identifier-restrictions" target="_blank">제한된 미디어 소스</a>로 어트리뷰트됩니다. </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### 고유 필드
 
@@ -76,6 +80,8 @@ Push API는 앱스플라이어 어트리뷰션 및 메시지로서의 SKAN(SKAdN
 | 데이터 최신성 | <ul><li>인스톨, 재다운로드 및 인앱 이벤트:<ul><li>매일 처리됨</li><li>앱스플라이어에서 iOS 포스트백을 받은 다음 날 엔드포인트로 전송됩니다</li><li>이벤트 메시지는 05:00–08:00 UTC에 받을 것으로 예상됩니다(정확한 시간은 변동됩니다)</li><li>예시: 예시: 월요일에 받은 포스트백은 화요일 05:00 UTC부터 시작하여 전송됩니다</li></ul></li><li>iOS의 포스트백 및 포스트백 사본: 메시지는 앱스플라이어에 도착한 직후에 전송됩니다.</li></ul> |
 | 메시지 예시 | 스프레드시트에는 메시지 예시가 포함되어 있습니다. 제공된 예시는 JSON 형식입니다. SKAN 예시 메시지. |
 
+<div id="message-types-for-skan-attribution" />
+
 #### SKAN 어트리뷰션에 대한 메시지 유형
 
 | 메시지 유형 | event\_name 필드 | skad\_redownload 필드 | event\_type 필드 |
@@ -88,7 +94,11 @@ Push API는 앱스플라이어 어트리뷰션 및 메시지로서의 SKAN(SKAdN
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Push API 엔드포인트 설정하기
+
+<div id="caution" />
 
 > ❗️ **주의**
 >
@@ -102,6 +112,8 @@ Push API는 앱스플라이어 어트리뷰션 및 메시지로서의 SKAN(SKAdN
 
 Push API를 설정하려면 다음 작업 목록을 완료하십시오.
 
+<div id="push-api-setup-checklist" />
+
 #### Push API 설정 체크리스트
 
 <table><thead><tr><th>단계 번호  </th><th>Appsflyer 어트리뷰션</th><th>SKAdNetwork 어트리뷰션:  </th></tr></thead><tbody><tr><td>1</td><td colspan="2"><p>활성 Push API 엔드포인트가 이미 있는 경우 이 단계를 건너뛸 수 있습니다.  </p><p><a href="./push-api-streaming-raw-data#serverside-requirements-your-server">서버 측 필요 사항</a>을 완료하십시오.</p></td></tr><tr><td>2</td><td>앱스플라이어 어트리뷰션의 경우 <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">Push API 계획 체크리스트</a>를 사용하여 엔드포인트 설정을 계획합니다. </td><td>적용 불가</td></tr><tr><td>3</td><td><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">앱스플라이어 어트리뷰션 엔드포인트 설정하기</a></td><td><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">SKAdNetwork 어트리뷰션 엔드포인트 설정하기</a></td></tr></tbody></table>
@@ -111,6 +123,8 @@ Push API를 설정하려면 다음 작업 목록을 완료하십시오.
 <Accordion title="서버 측 필요 사항 (앱 개발사 서버)">
 
 서버가 다음 요구 사항을 준수하는지 확인하십시오.
+
+<div id="server-side-requirements" />
 
 #### 서버 측 필요 사항
 
@@ -136,6 +150,8 @@ Push API를 설정하려면 다음 작업 목록을 완료하십시오.
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
 
+<div id="endpoint-planning-table" />
+
 #### 엔드포인트 계획 체크리스트
 
 | 아니오. | 설정 | 세부 정보 | 이 열에 계획한 설정을 기록합니다 |
@@ -153,6 +169,8 @@ Push API를 설정하려면 다음 작업 목록을 완료하십시오.
 <Accordion title="앱스플라이어 어트리뷰션 엔드포인트 설정하기">
 
 API에 접근할 수 있는 권한이 있는 모든 팀원은 Push API 설정을 변경할 수 있습니다. 다른 계정 사용자는 설정을 볼 수만 있습니다.
+
+<div id="add-an-appsflyer-attribution-endpoint" />
 
 #### 앱스플라이어 어트리뷰션 엔드포인트 추가 방법:
 
@@ -173,6 +191,8 @@ API에 접근할 수 있는 권한이 있는 모든 팀원은 Push API 설정을
 8. **저장**을 클릭하세요.  
    Push API가 지금 활성화되었습니다. 전환 데이터가 엔드포인트로 전송됩니다.
 9. 아래 설명된 절차를 통해 엔드포인트를 테스트 합니다.
+
+<div id="test-the-endpoint" />
 
 #### 엔드포인트를 테스트하려면:
 
@@ -214,6 +234,8 @@ API에 접근할 수 있는 권한이 있는 모든 팀원은 Push API 설정을
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## 추가 절차—엔드포인트 관리
 
 API에 접근할 수 있는 권한이 있는 모든 팀원은 Push API 설정을 변경할 수 있습니다. 다른 계정 사용자는 설정을 볼 수만 있습니다.
@@ -243,6 +265,8 @@ API에 접근할 수 있는 권한이 있는 모든 팀원은 Push API 설정을
    엔드포인트가 삭제되었습니다.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## 문제 해결, 특성 및 제한 사항
 
@@ -331,6 +355,8 @@ https://your.server.com?consumer_key=abc456
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

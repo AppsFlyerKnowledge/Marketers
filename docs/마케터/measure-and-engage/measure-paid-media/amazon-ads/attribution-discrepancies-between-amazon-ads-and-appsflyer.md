@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** Amazon Ads와 앱스플라이어의 어트리뷰션 모델 차이점에 대해 알아보세요.
 
+<div id="overview" />
+
 ## 개요
 
 모바일 유저 유입 생태계의 두 주요 업체인 Amazon Ads와 앱스플라이어는 서로 다른 어트리뷰션 모델을 사용합니다. 이로 인해 Amazon Ads와 앱스플라이어 대시보드 간에 불일치가 발생할 수 있습니다. Amazon Ads와 긴밀히 협력하여 이러한 불일치를 최소화하고 있지만, 광고주는 잠재적인 원인을 알고 있어야 합니다.
+
+<div id="differences-in-attribution-models" />
 
 ## 어트리뷰션 모델의 차이점
 

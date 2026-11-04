@@ -31,6 +31,8 @@ x-zendesk:
 
 [![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## 모바일용 서버-투-서버 이벤트 API
 
 iOS 앱의 경우 iOS 14부터 운영 체제 파라미터를 발송해야 합니다.
@@ -44,6 +46,8 @@ iOS 앱의 경우 iOS 14부터 운영 체제 파라미터를 발송해야 합니
 
 API를 통해 이벤트를 발송하려면 개발자에게 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">서버 간 이벤트 API 지침</Anchor>을 따르라고 요청하세요.
 
+<div id="populating-parameters" />
+
 ## 파라미터 채우기
 
 <div id="difference-between-organic-and-nonorganic" />
@@ -53,6 +57,8 @@ API를 통해 이벤트를 발송하려면 개발자에게 <Anchor target="_blan
 앱스플라이어가 S2S 인앱 이벤트를 처리할 때, 앱스플라이어 ID를 사용하여 어트리뷰션 필드가 채워지고, 이를 통해 인앱 이벤트 이전에 발생한 관련 인스톨 이벤트를 식별합니다.
 
 즉, 앱스플라이어가 논오가닉 S2S 인앱 이벤트와 연관시키는 일부 데이터는 오가닉 S2S 인앱 이벤트와는 연관되지 않습니다.
+
+<div id="note" />
 
 > 📄 **예시**
 >
@@ -163,9 +169,13 @@ S2S 이벤트가 앱스플라이어에 대량으로 도달하면 `eventTime` 속
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/incrementality-for-remarketing-overview">증분성</Anchor>으로 측정되기 위해, S2S 이벤트는 페이로드에 광고 ID를 포함해야 합니다 (iOS의 IDFA, Android의 GAID).
+
+<div id="increasing-the-volume-of-data-transactions" />
 
 ## 데이터 거래량 증가
 
@@ -179,6 +189,8 @@ S2S 이벤트가 앱스플라이어에 대량으로 도달하면 `eventTime` 속
   * 00:04:00 - 18천 TPS로 증가
   * …
 * 오류가 발생할 때 사용할 재시도 메커니즘을 구현하십시오.
+
+<div id="troubleshooting" />
 
 ## 문제 해결
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기** Rokuads\_int는 광고주가 Roku Ads와 모바일 또는 Roku CTV 앱을 연동하여 Roku Ads에서 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 받아볼 수 있도록 하는 SRN 연동입니다.
 
+<div id="about-roku-ads-attribution" />
+
 ## Roku Ads 어트리뷰션에 대하여
 
 Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 보유하고 있는 독특한 애드 네트워크입니다. AppsFlyer와 Roku Ads 간의 SRN 연동은 광고주가 다음을 포함한 여러 사용자 여정을 측정할 수 있도록 합니다:
@@ -31,9 +33,13 @@ Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 �
 * 모바일-to-모바일: 모바일 앱 설치 및 이벤트를 유도하는 모바일 앱 광고
 * CTV-to-모바일 및 모바일-to-CTV: 한 플랫폼에서의 광고 노출이 다른 플랫폼에서의 설치 및 이벤트로 이어질 때
 
+<div id="roku-attribution-flow" />
+
 ### Roku 어트리뷰션 흐름
 
 [<Image alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39554303369489)
+
+<div id="setting-up-roku-ads-integration-for-advertisers" />
 
 ## 광고주를 위한 Roku Ads 연동 설정
 
@@ -55,11 +61,15 @@ Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 �
 
 <Accordion title="연동 탭">
 
+<div id="general-settings" />
+
 #### 일반 설정
 
 * **이벤트 그룹 ID:** Roku Ads 관리자가 부여한 이벤트 그룹 ID를 입력하여 앱을 AppsFlyer에 연결합니다. 자세한 내용은 <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/11885912-setting-up-an-integration-with-appsflyer-a-mobile-measurement-partner-mmp">Roku 광고 관련 문서</Anchor>를 참조하십시오.
 * **고급 데이터 공유:**  ON으로 설정하면 Roku는 모든 장치에 대해 IP 주소가 포함된 포스트백 및 이벤트 데이터를 수신합니다. 여기에는 광고 ID(IDFA)를 제공하지 않은 장치도 포함됩니다. 고급 공유를 OFF로 유지하면 해당 파트너는 IDFA가 존재하는 기기에 대해서만 포스트백 및 이벤트 데이터를 수신하게 됩니다.
 * **제한된 데이터 사용:** ON으로 설정하면 Roku Ads가 특정 미국 주에서 주어진 이벤트에 한하여 개인 정보 사용을 제한하게 됩니다. 자세한 내용은 <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/8766138-limited-data-use">Roku 광고 관련 문서</Anchor>를 참조하십시오.
+
+<div id="install-attribution" />
 
 #### 인스톨 어트리뷰션
 
@@ -67,6 +77,8 @@ Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 �
 
 * **인스톨 클릭-쓰루 룩백 윈도우**를 1&#126;23시간 또는 1&#126;14일로 설정하세요. **참고:** Roku Ads는 이를 14일로 설정할 것을 권장합니다.
 * [선택사항] **인스톨 뷰-쓰루 어트리뷰션**을 활성화하고 **인스톨 뷰-쓰루 룩백 윈도우**를 1-23시간 혹은 1-14일로 설정합니다. **참고:** Roku Ads는 14일을 권장합니다.
+
+<div id="re-engagement-attribution" />
 
 #### 리인게이지먼트 어트리뷰션
 
@@ -76,6 +88,8 @@ Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 �
 
 [리인게이지먼트 규칙 및 윈도우](#)에 대해 자세히 알아보세요.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 리타깃팅 시 활성 유저 무시
 
 지정된 기간 내에 앱을 실행한 유저의 리인게이지먼트를 무시하도록 윈도우 시간을 설정합니다. 이는 해당 기간 동안의 활동이 귀속되지 않음을 의미합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-retargeting-inactivity-window#비활성-기간">비활동 기간</Anchor>을 참조하십시오.
@@ -83,12 +97,16 @@ Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 �
 1. **리타깃팅을 위해 활성 유저 무시**를 켭니다.
 2. **비활성 기간**을 설정합니다.
 
+<div id="cross-platform-attribution" />
+
 #### 크로스 플랫폼 어트리뷰션
 
 이 연동에 한해 크로스 플랫폼 어트리뷰션이 디폴트로 활성화되어 있습니다.
 
 * **크로스 플랫폼 룩백 윈도우**를 1–23시간 또는 1–3일로 설정합니다.
 * [선택 사항] **크로스 플랫폼 간 동등한 우선순위** 설정이 활성화되면 Roku가 리포팅하는 크로스 플랫폼 노출이 다른 네트워크의 클릭과 동일한 우선순위를 갖게 됩니다. 활성화된 경우 **크로스 플랫폼 동등 우선 순위 윈도우**를 1–6시간으로 설정합니다 (기본값: 3시간).
+
+<div id="in-app-events-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -151,10 +169,14 @@ Roku Ads에 대한 권한을 활성화한 후, 팀 구성원을 추가하고 선
 2. 애드 네트워크 팀원의 이메일을 입력합니다.
 3. **추가**를 클릭합니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * Roku Ads에 연동을 설정하고 인앱 이벤트 포스트백을 변경할 수 있는 권한을 부여하면, 모든 미디어소스의 오가닉 및 논오가닉 트래픽을 포함한 모든 어트리뷰션 이벤트에 접근할 수 있도록 허용하게 됩니다.
 > * 사용자(광고주)가 현재 구성을 설정했더라도 Roku OneView에서 변경한 사항이 현재 구성보다 우선 적용됩니다.
+
+<div id="types-of-permissions-advertisers-can-grant-to-roku-ads" />
 
 #### 광고주가 Roku Ads에 부여할 수 있는 권한의 유형
 
@@ -173,9 +195,13 @@ Roku Ads에 대한 권한을 활성화한 후, 팀 구성원을 추가하고 선
 
 </Accordion>
 
+<div id="setting-up-roku-ads-integration-for-agencies" />
+
 ## 에이전시를 위한 Roku Ads 연동 설정
 
 광고주를 대신하여 일하는 에이전시는 Roku Ads 연동을 켜고 캠페인에 대한 어트리뷰션을 시작할 수 있습니다. 그러나 이 연동은 에이전시에 대한 몇 가지 제한 사항이 있습니다.
+
+<div id="agency-limitations" />
 
 ### 에이전시 제한 사항
 
@@ -188,6 +214,8 @@ Roku Ads에 대한 권한을 활성화한 후, 팀 구성원을 추가하고 선
 2. **Roku Ads (rokuads\_int)** 를 선택합니다.
 3. 귀하의 에이전시 **Roku Ads 계정 ID**를 입력합니다. 이를 통해 에이전시 트래픽을 확인하고 광고주 트래픽과 구별할 수 있습니다.
 4. **연동 저장**을 클릭합니다.
+
+<div id="warning" />
 
 > ❗️ **경고**
 >

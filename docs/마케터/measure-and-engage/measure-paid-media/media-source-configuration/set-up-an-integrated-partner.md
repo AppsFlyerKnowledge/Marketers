@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어와 연동을 설정하여 어트리뷰션 측정을 활성화하고, 파트너에게 포스트백을 발송하며 기타 연동 기능을 활성화하세요.
 
+<div id="overview" />
+
 ## 개요
 
 파트너, 미디어 소스 및 써드 파티 플랫폼은 API를 통해 앱스플라이어와 연동됩니다. 이 문서에는 비 SRN 애드 네트워크에 대한 어트리뷰션 링크 생성을 포함하여 연동을 활성화하고 설정하기 위한 일반적인 지침이 포함되어 있습니다.
@@ -63,6 +65,8 @@ x-zendesk:
 
 * 앱스플라이어의 사이드 메뉴에서 **협업** > **파트너 마켓플레이스**를 선택합니다. 다양한 검색 **필터**를 사용할 수 있습니다.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### 앱스플라이어에 새로운 파트너 초대
 
 협력하고 있는 파트너가 아직 앱스플라이어와 연동되지 않은 경우, <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#앱스플라이어에-새로운-파트너-초대하기">초대 링크를 발송</Anchor>할 수 있습니다.
@@ -74,6 +78,8 @@ x-zendesk:
 <Accordion title="활성화된 귀사의 연동된 파트너">
 
 파트너 통합의 1. (기능이) 활성화된 2. (사용자가 앱을) 사용중인 통합 탭에는 현재 통합된 모든 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">활성</Anchor> 파트너가 표시됩니다. 이 페이지에서 파트너에 대해 알아보고 연동을 관리할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -103,13 +109,19 @@ x-zendesk:
   * **변경 사항 취소:** 저장하지 않고 마지막 변경 사항을 취소합니다.
   * **저장:** 현재 탭의 설정만 저장합니다.
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### 파트너 유형별 적용 가능한 설정 탭
 
 <table><thead><tr><th> </th><th colspan="2">설정 탭</th><th> </th></tr><tr><th>파트너 유형</th><th>연동 </th><th>권한</th><th>비고</th></tr></thead><tbody><tr><td>미디어 소스</td><td>Y</td><td>Y</td><td><p><strong>추가 탭 사용 가능</strong>: 비용, 광고 수익, 어트리뷰션 링크</p><p>광고 네트워크, 제휴 네트워크, 직접 게시자, 프로그래매틱 광고, 중국 국내 광고 네트워크, 리타겟팅 매체가 포함됩니다.<br/>SRN의 경우 어트리뷰션 링크 탭은 적용되지 않습니다.</p></td></tr><tr><td>대행사 </td><td>N</td><td>Y</td><td>광고 네트워크로 동작하지 않는 독립형 대행사</td></tr><tr><td>써드 파티 플랫폼</td><td>Y</td><td>N</td><td>마케팅 자동화 플랫폼 또는 분석 플랫폼</td></tr><tr><td>마케팅 파트너 </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
 </Accordion>
 
+<div id="set-up-a-partner-non-srn" />
+
 ## 파트너 설정(비 SRN)
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -118,6 +130,8 @@ x-zendesk:
 **설정에 접근하고 파트너와의 캠페인을 구성하려면 다음 단계를 따르세요.**
 
 [파트너 연동](/docs/set-up-an-integrated-partner#partners-in-the-marketplace)에서 파트너를 검색하고 선택하세요.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -132,6 +146,8 @@ x-zendesk:
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 요구 사항에 따라 섹션을 작성하세요.
+
+<div id="integration-sections" />
 
 #### 연동 섹션
 
@@ -305,6 +321,8 @@ x-zendesk:
       <td>
         파트너 연동이 켜져 있으면, 앱 실행 전에 발생하는 유저 행동(예: 인스톨, 인스톨 거부, 리인게이지먼트)과 관련된 기본 포스트백이 파트너에게 전송됩니다.
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **참고**
         >
         > * 거부된 이벤트는 <Anchor target="_blank" href="/marketers/ko/docs/protect360-anti-fraud-guide">Protect360</Anchor>에 의해 차단되었거나, 타겟 검증 과정에서 기준을 충족하지 못한 인앱 이벤트를 의미합니다. 거부된 이벤트의 경우, 파트너가 앱스플라이어와의 거부 이벤트 연동을 활성화했는지 확인하세요.
@@ -415,6 +433,8 @@ x-zendesk:
 3. 필요 시 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#android-특정-파라미터">안드로이드</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#ios-전용-파라미터">iOS</Anchor>에 대한 파라미터를 추가하세요.
 4. [선택 사항] 추가 어트리뷰션 파라미터를 선택하세요.
 
+<div id="attribution-link-parameters" />
+
 #### 어트리뷰션 링크 파라미터
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -422,6 +442,8 @@ x-zendesk:
 어트리뷰션 링크에 파라미터를 추가하면 철저한 드릴다운 분석이 가능합니다. 이미 정의된 어트리뷰션 링크 파라미터를 여기에서 새 값을 추가하여 편집할 수 있습니다. 어트리뷰션 링크를 저장할 때 이 탭에서 구성된 모든 파라미터가 저장됩니다.
 
 어트리뷰션 링크에 추가할 파라미터를 선택하세요.
+
+<div id="attribution-link-parameters-1" />
 
 #### 어트리뷰션 링크 파라미터
 
@@ -434,6 +456,8 @@ x-zendesk:
 | 구독자 파라미터 | 사용 가능한 5개의 구독자 파라미터로 유용한 값을 삽입하세요. 이러한 파라미터는 분석되어 로우 데이터 리포트에 표시됩니다. 그래서 데이터 집계나 필터링에 매우 편리합니다. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 새 파라미터 상자에 입력하여 어트리뷰션 링크에 다른 파라미터를 추가할 수 있습니다. 모든 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">앱스플라이어 사용 가능한 URL 파라미터를 사용할 수 있습니다.</Anchor> URI 스킴과 원링크 파라미터만 어트리뷰션 링크에 인코딩된다는 점에 유의하세요.
+
+<div id="retargeting-settings" />
 
 #### 리타겟팅 설정
 
@@ -453,6 +477,8 @@ x-zendesk:
 5. 리인게이지먼트 이후 사용자의 인앱 이벤트가 리타겟팅 미디어 소스로 어트리뷰션되는 기간을 설정하여 판단합니다.
    * 값은 일(1&#126;90), 시간(최대 23시간) 또는 수명 단위로 설정할 수 있습니다.
    * 리인게이지먼트 기간이 af\_reengagement\_window 파라미터의 링크에 추가됩니다.
+
+<div id="click-through-attribution" />
 
 #### 클릭-쓰루 어트리뷰션
 
@@ -476,6 +502,8 @@ x-zendesk:
 2. 생성된 링크를 복사합니다.
 
 귀사의 잠재 고객이 해당 광고를 클릭하면 활성화되도록 파트너에게 링크를 발송합니다.
+
+<div id="view-through-attribution-lookback-window" />
 
 #### 뷰-쓰루 어트리뷰션 룩백 윈도우
 
@@ -512,15 +540,21 @@ x-zendesk:
 * 가장 좋은 방법은 비용 API를 구현하는 것입니다.(ROI360 구독 필요)
 * 비용 API에는 클릭수 및 노출수 리포트가 포함되어 있습니다. 지원되는 디멘션, 지표 및 기능에 대한 세부 정보는 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">애드 네트워크 비용 연동 표</Anchor>를 참조하세요.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 광고주가 대행사를 통해 캠페인을 실행하는 경우, 광고주가 아닌 대행사가 관련 파트너와 연동해야 합니다. 그렇지 않으면 광고주와 대행사가 동일한 앱에 대해 동일한 자격 증명을 사용하여 파트너와 연동하면 비용 데이터가 중복됩니다.
+
+<div id="enabling-cost-data-by-api" />
 
 #### API를 통한 비용 데이터 활성화
 
 **비용 API**를 활성화하려면:
 
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#비용-api-활성화">이 연동 지침</Anchor>을 따르세요.
+
+<div id="cost-data-sync-status" />
 
 #### 비용 데이터 동기화 상태
 
@@ -534,10 +568,14 @@ x-zendesk:
 
 귀사가 앱에 광고를 게재하는 퍼블리셔로 활동 중인 경우, 광고 수익 기능을 이용하여 사용자를 데려온 미디어 소스에 광고 수익을 귀속할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution">광고 수익 어트리뷰션에 대해서</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### 광고 수익 어트리뷰션 활성화
 
 1. 파트너가 지원하는 메서드를 확인하세요. (<Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">집계 또는 사용자 수준 어트리뷰션</Anchor>)
 2. <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution#구현하기">광고 수익 연동 가이드</Anchor>에 따라 적절한 방법을 따르세요.
+
+<div id="ad-revenue-api-status-messages" />
 
 #### 광고 수익 API 상태 메시지
 
@@ -565,9 +603,13 @@ x-zendesk:
 * 파트너와의 관계가 귀사의 대행사로서의 역할만 있는 경우 **대행사 권한**을 사용하고, **애드 네트워크 권한**은 사용하지 마세요. 대행사 권한 토글을 활성화하면 대행사가 광고 네트워크 권한을 제어할 수 있도록 허용하게 됩니다. 자세한 내용은 <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#이것은-마케터로부터-권한을-부여받는다는-것을-의미합니다">마케터 권한 승인의 의미</Anchor> 노트를 참고하세요.
 * 현재 선택된 앱에 대한 권한이 부여됩니다.
 
+<div id="ad-network-permissions" />
+
 #### 애드 네트워크 권한
 
 **애드 네트워크 권한**을 켜면 애드 네트워크가 귀사의 대시보드에 접근할 수 있으며, 아래 표에 자세히 설명된 추가 권한을 부여할 수 있습니다.
+
+<div id="note-3" />
 
 > 📘 **참고**
 >
@@ -597,9 +639,13 @@ x-zendesk:
 | <span id="access-protect360-dashboard-raw-data"></span>Protect360 대시보드 및 로데이터에 접근 | 애드 네트워크는 다음을 수행할 수 있습니다:<ul><li>Protect360 대시보드에 액세스합니다 (<Anchor target="_blank" href="/marketers/ko/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor> 포함).</li><li>구독 플랜에 포함되어 있는 경우 Protect360, 유효성 검증 규칙, 로데이터에 접근 가능합니다. ProtectLITE에는 로데이터에 대한 접근 권한이 포함되지 않습니다.</li></ul>**참고:** <Anchor target="_blank" href="/marketers/ko/docs/protect360-anti-fraud-guide"> Protect360</Anchor>에 구독되어 있으면, 애드 네트워크가 전체 대시보드를 조회할 수 있습니다. Protect360 구독이 없으면 LITE 대시보드를 볼 수 있습니다. |
 | <span id="access-ad-revenue-raw-data"></span>광고 수익 로데이터 접근 | 애드 네트워크는 <Anchor target="_blank" href="/partners/ko/docs/ad-revenue-signals-for-ua-ad-networks"> UA 최적화에 사용할 광고 수익 데이터</Anchor>에 접근할 수 있습니다.  <br />**참고:** 이 권한은 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> 구독이 있는 앱에서만 사용할 수 있습니다. |
 
+<div id="agency-permissions" />
+
 #### 에이전시 권한
 
 대행사가 권한을 받았을 때 <Anchor target="_blank" href="/partners/ko/docs/getting-started-agency-onboarding#이것은-마케터로부터-권한을-부여받는다는-것을-의미합니다">무엇을 할 수 있는지</Anchor> 자세히 알아보세요.
+
+<div id="important-1" />
 
 > 🚧 **중요!**
 >
@@ -636,9 +682,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## 연동을 시험합니다.
 
 파트너 연동을 완료한 후 새로 추가된 파트너와  캠페인을 운영하기 전에 연동을 시험하는 것이 중요합니다. 설정 중에 실수가 발생하기 쉽습니다. 사전에 테스트를 진행하면, 어트리뷰션 데이터의 누락이나 오류로 인해 리소스가 낭비되는 상황을 방지할 수 있습니다.
+
+<div id="note-4" />
 
 > 📘 **참고**
 >
@@ -695,6 +745,8 @@ Meta ads, Apple Ads, Google Ads와 같은 SRN은 어트리뷰션을 진행할 �
 2. 시험한 미디어 소스를 선택하세요.
 3. 설치 후 최대 15분이 소요될 수 있으며, 그런 다음 설치 리포트를 다운로드하세요.
 4. 파트너 설치 기록이 있는지 확인하고 미디어 소스, 캠페인 이름, 터치 시간 및 유형, 디바이스 ID(해당되는 경우), 대행사 이름(리포트에서는 "파트너"라고 함) 등의 파라미터가 포함되어 있는지 확인하세요.
+
+<div id="important-2" />
 
 > 🚧 **중요!**
 >

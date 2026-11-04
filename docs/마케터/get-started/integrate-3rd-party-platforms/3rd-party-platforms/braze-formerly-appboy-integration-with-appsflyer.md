@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 매체 소스</Anchor>는 제3자와 데이터 공유를 제한합니다. 따라서 포스트백 전송 설정에 관계없이 제한된 이벤트 포스트백은 이 파트너에게 전송되지 않습니다.
 
+<div id="integration-overview" />
+
 ## 연동 개요
 
 아래 지침에 따라 Braze와의 연동을 구성하십시오.
@@ -120,6 +122,8 @@ AppsFlyer.setAdditionalData(customData);
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Braze 설정
 
 **전제 조건:** 연동 설정 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
@@ -142,10 +146,14 @@ AppsFlyer.setAdditionalData(customData);
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 **처음 방문**시, 연동 탭 파라미터 설정을 활성화하려면 *파트너를 활성화해야 합니다*. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -171,6 +179,8 @@ Braze는 고유한 API 키와 REST 엔드포인트를 통해 앱스플라이어�
 * 캠페인 이름
 * 광고 그룹 이름
 * 광고 이름
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -219,6 +229,8 @@ Braze에서는 어트리뷰션 링크를 사용할 수 없습니다.
 Braze에서는 권한 설정을 사용할 수 없습니다.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Braze에서 사용자 어트리뷰션 데이터 보기
 

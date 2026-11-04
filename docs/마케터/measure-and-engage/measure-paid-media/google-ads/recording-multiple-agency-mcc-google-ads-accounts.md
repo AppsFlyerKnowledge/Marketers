@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 트래픽이 올바르게 어트리뷰트되도록 다른 Google Ads 계정에 대한 기록을 설정합니다.
 
+<div id="introduction" />
+
 ## 소개
 
 구글 애즈 트래픽은 종종 다양한 계정에서 유입됩니다. (예, 구글 애즈에 특화된 에이전시 또는 앱 소유자의 조직 내 다양한 지역 담당 팀) 올바른 당사자에게 잘 어트리뷰션되도록, 서로 다른 Google Ads 계정의 기록 설정 방법을 이해하는 것이 중요합니다.
 
 본 기사는 에이전시 측정부터 MCC 및 MCC의 MCC를 사용까지 과정을 설명합니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -36,9 +40,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-agencies">구글 애즈 캠페인 에이전시 계정 설정 관련 상세 내용은 여기를 클릭하십시오.</Anchor>
 
+<div id="important-definitions" />
+
 ## 중요한 정의
 
 * **링크 ID (Link ID)** – **구글 애즈에 등록된 모바일 앱의 고유 식별자**.
+
+<div id="note-1" />
 
 > 📘 **참고사항**
 >
@@ -49,9 +57,13 @@ x-zendesk:
 * **MCC** - 구글 애즈 관리자 계정 (MCC, 과거 My Clients Center라고 불려짐)은 구글 애즈에서 **다수의 구글 애즈 계정을 다루는 도구**입니다.  
   MCC 계정을 사용하면, 여러 계정을 연결하여 단일 위치에서 모두를 확인할 수 있습니다. (<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">더 보기</Anchor>)
 
+<div id="setting-up-google-ads-recording" />
+
 ## 구글 애즈 기록 설정하기
 
 앱스플라이어는 앱 당 하나의 링크 ID를 등록할 수 있습니다. **여러 계정이 하나의 앱을 다루는 경우, 계정들은 모두 동일한 링크 ID를 사용해야 합니다.** 이것은 어트리뷰션 목적으로 앱스플라이어 대시보드에 설정되어야 합니다.
+
+<div id="sharing-google-link-id-with-another-account" />
 
 ### 구글 링크 ID를 다른 계정과 공유하기
 
@@ -59,16 +71,22 @@ x-zendesk:
 
 앱 소유자는 아래에 표시된 스크린샷 처럼, 고객 ID로 구별되는 다른 어떤 계정과도 링크 ID를 공유할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-agencies#에이전시를-위한-google-ads-어트리뷰션-설정">에이전시와 링크 ID 공유하기</Anchor> 관련 추가 내용을 참고하십시오.
 
+<div id="important" />
+
 > 🚧 **중요**
 >
 > * 만약 MCC가 하위 계정의 기록 관리자(Recording Manager)인 경우, MCC에서 하위 계정으로 링크 ID를 공유할 필요가 없습니다. 하지만 만약 MCC 아래의 하위 계정이 자신의 기록 관리자라면, MCC는 반드시 하위 계정의 기록 관리자와 링크 ID를 공유해야만 합니다.
 > * 전환 가져오기(Importing Conversions): 만약 MCC가 기록 관리자라면, 하위 계정을 위해 MCC가 전환을 가져와야 합니다. 하지만 만약 MCC 아래의 하위 계정이 자신의 기록 관리자라면, 하위 계정도 반드시 전환을 가져와야 합니다.
+
+<div id="note-2" />
 
 > 📘 **참고사항**
 >
 > * 구글 애즈 대시보드에서 3개의 점을 클릭 >> ***연결된 계정*** >> ***타사 앱 분석 세부 정보*** [![](https://files.readme.io/bb36fb31e18577f1a7d4e57f5122e51a3edf5b5e4da94f90ab78281707c91f57-51858059772945.png)](https://files.readme.io/bb36fb31e18577f1a7d4e57f5122e51a3edf5b5e4da94f90ab78281707c91f57-51858059772945.png)
 > * 다른 계정은 "공유"를 승인해야 합니다.
 > * 이에 따라, 다른 계정은 해당 앱에 대한 구글 애즈 캠페인을 운영하도록 승인 받았습니다.
+
+<div id="tip" />
 
 > 👍 **팁**
 >
@@ -86,9 +104,13 @@ MCC를 설정하는 중에, MCC 또는 하위 계정이 전환을 관리하는�
 
 ![mmc-googleads-settings.png](https://files.readme.io/077df22cde5479a95c19faa7e37c946088bb95794cb64a9f053f31066875d751-51858050900625.png)
 
+<div id="mcc-of-mccs" />
+
 ## MCC 중 MCC
 
 다수의 에이전시와 협업하는 대형 광고주는 MCC의 MCC를 사용할 수도 있습니다. 일반 MCC 계정과 비슷합니다. 광고주 또는 최상위 단계의 MCC에서 링크 ID를 생성하는 것이 권장됩니다. 이 구조에 대한 올바른 설정을 수행하려면, 하위 계정이 올바른 단계의 MCC (아마, 가장 높은 단계의 MCC)를 기록 관리자로 선택해야합니다. 이렇게 설정된 경우, 링크 ID는 하위 계정으로 공유될 필요가 없고, 최고 단계 MCC에서의 전환 가져오기로 충분합니다.
+
+<div id="tip-1" />
 
 > 👍 **팁**
 >
@@ -99,6 +121,8 @@ MCC를 설정하는 중에, MCC 또는 하위 계정이 전환을 관리하는�
 > * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">고객 계정 사용하기</Anchor>
 >
 > 계정 구조 및 권장 사항에 대해서는 구글 담당자와 상의하십시오.
+
+<div id="opening-a-google-ads-campaign" />
 
 ## 구글 애즈 캠페인 개설하기
 

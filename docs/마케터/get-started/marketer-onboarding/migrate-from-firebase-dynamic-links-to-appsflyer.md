@@ -23,6 +23,10 @@ x-zendesk:
 
 
 
+<div id="migrate-from-firebase-to-appsflyer" />
+
+<div id="about-the-migration" />
+
 ## Firebase에서 앱스플라이어로 마이그레이션하는 방법
 
 **필수 조건**
@@ -71,6 +75,8 @@ x-zendesk:
 
 아래 단계에 따라 앱에 앱스플라이어 SDK를 연동하세요.
 
+<div id="appsflyer-sdk-integration-steps" />
+
 #### 앱스플라이어 SDK 연동 단계
 
 1. 앱에 앱스플라이어 SDK를 연동합니다.  
@@ -105,6 +111,8 @@ Firebase 동적 링크 파라미터가 앱스플라이어의 해당 파라미터
 
 이 표를 앱스플라이어로 마이그레이션할 때 현재 사용하는 모든 파라미터에 대한 참조로 사용하세요.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > Firebase 파라미터가 목록에 없다면, 링크에 파라미터를 넣을 필요 없이 앱스플라이어가 원링크 템플릿 설정에서 이를 처리하기 때문입니다.
@@ -132,6 +140,8 @@ Firebase 동적 링크 파라미터가 앱스플라이어의 해당 파라미터
 |  | <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors">스마트 스크립트</Anchor> | 웹투앱 경험을 위해 웹 페이지에서 긴 링크를 동적으로 구성하려는 경우 |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 
 > **한눈에 보기:**  오디언스를 파트너와 연결하세요.
 
+<div id="about-partner-connections" />
+
 ## 파트너 연결 정보
 
 파트너 연결을 사용하면 오디언스를 파트너에게 쉽고 지속적으로 보낼 수 있으므로 맞춤형 캠페인을 제공할 수 있습니다. 다음은 오디언스 파트너, 연결 요구 사항, 각 파트너가 지원하는 사용자 식별자 목록입니다.
@@ -190,6 +192,8 @@ x-zendesk:
 | YouAppi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/youappi.png" width="118px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 | Zoomd DSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png" width="118px" /> | API key | <ul><li>IDFA(해시됨)</li><li>GAID(해시됨)</li></ul> |
 
+<div id="we-love-working-with-new-audiences-partners" />
+
 > 📘 **새로운 오디언스 파트너와 함께 일하는 것이 정말 좋습니다!**
 >
 > 찾고 있는 파트너가 위 목록에 나타나지 않으면 언제든지 CSM에 문의하세요. CSM이 파트너에게 연락해 어떤 옵션을 사용할 수 있는지 확인할 것입니다.
@@ -281,6 +285,8 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
     ```
 12. **BUCKET-NAME**을 앱스플라이어가 광고주의 오디언스를 업로드하기 원하는 버킷 이름으로 바꿉니다.
 
+    <div id="note" />
+
     > 📘 **참고**
     >
     > 정책(policy)은 루트 버킷(root bucket)만 포함하고 경로의 추가 디렉토리는 포함하지 않아야 합니다. 예를 들어, 리소스 **arn:aws:s3:::BUCKET-NAME/Directory/\*** 는 지원되지 않습니다. 파일을 특정 디렉토리로 전송해야한다면, 14 단계를 참조하십시오.
@@ -312,6 +318,8 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
 
 <Accordion title="Braze">
 
+<div id="prerequisite" />
+
 > 🚧 **전제 조건**
 >
 > Braze와 앱스플라이어 SDK가 모두 귀사의 앱에
@@ -321,7 +329,7 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
 > * Braze 외부 ID 매개변수
 > * CUID 필드
 >
-> #### Braze 외부 ID 매개변수 사용
+> #### <span id="using-a-braze-external-id-parameter"></span>Braze 외부 ID 매개변수 사용
 >
 > 오디언스를 Braze에 업로드하려면 앱스플라이어 SDK의 `setPartnerData` 기능을 사용하여 각 사용자의 Braze 외부 ID를 앱스플라이어에 전달합니다. 다음은 사용 예시입니다.
 >
@@ -350,6 +358,8 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
 > </Tab>
 > </Tabs>
 >
+
+<div id="using-the-cuid-field" />
 
 #### CUID 필드 사용
 
@@ -517,6 +527,8 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 
 <Accordion title="Leanplum">
 
+<div id="prerequisite-1" />
+
 > 🚧 **전제 조건**
 >
 > Leanplum에 오디언스를 성공적으로 업로드하는 방법:
@@ -548,6 +560,8 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 <div id="moengage" />
 
 <Accordion title="MoEngage">
+
+<div id="prerequisite-2" />
 
 > 🚧 **전제 조건**
 >
@@ -662,6 +676,8 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 6. 사용자의 **Organization**과 **Ad account**을 선택합니다.
 7. **저장**을 클릭합니다.  
    업로드 후 24 시간이 지나면,스냅챗 대시보드에 오디언스가 표시됩니다.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >

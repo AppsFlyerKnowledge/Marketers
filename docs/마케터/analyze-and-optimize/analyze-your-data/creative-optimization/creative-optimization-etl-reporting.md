@@ -32,6 +32,8 @@ x-zendesk:
 
 광고 소재 최적화 ETL은 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers">데이터 락커</Anchor>를 활용하여 광고 소재 최적화 보고 데이터를 클라우드 스토리지로 보냅니다. Amazon Web Services(AWS)의 앱스플라이어 소유 버킷 또는 AWS, GCS, Yandex, BigQuery, Snowflake 등의 자체 스토리지와 같은 다양한 스토리지 대상 중에서 선택할 수 있습니다. 데이터 락커는 여러 목적지를 지원하므로, 모든 데이터를 하나 이상의 목적지로 전송하고, 특정 데이터를 특정 목적지로 전송하고, 필요에 따라 데이터 전달을 사용자 지정할 수 있습니다. Creative Optimization ETL은 **Creative Optimization Premium 구독 플랜에서 사용할 수 있습니다.**
 
+<div id="get-started" />
+
 ## 시작하기
 
 이 섹션에서는 크리에이티브 최적화 보고를 위해 데이터 락커를 설정하는 방법에 대해 설명합니다.

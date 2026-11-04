@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: SDK의 대시보드 보기, 운영 체제(iOS, 안드로이드) 채택 비율 및 iOS ATT 동의 지표.
 
+<div id="version-adoption-and-att-consent-dashboard" />
+
 ## 버전 채택 및 ATT 동의 대시보드
 
 대시보드의 데이터는 af\_open(세션) 이벤트에서 파생되며 인스톨 이벤트와 관련이 없습니다. 대시보드에는 다음과 같은 기본 섹션이 있습니다.
@@ -69,6 +71,8 @@ SDK 정보 대시보드를 보는 방법:
 
 * 차트 지표는 주어진 날짜에 고유한 사용자 앱 실행 이벤트를 사용하여 계산합니다. 즉, 사용자가 지정된 날짜에 앱을 열지 않은 경우 사용자는 해당 날짜의 지표에서 계수되지 않습니다.
 * iOS 및 ATT 지표에는 <Anchor target="_blank" href="/marketers/ko/docs/att-implications-ios-14-and-deprecation-of-lat#apple에서-정의한-att-값">Apple에서 정의한 ATT 값</Anchor>만 포함됩니다. 앱스플라이어에서 정의한 추가 값이 아닙니다.
+
+<div id="att-and-ios-adoption-metrics-for-ios-apps" />
 
 #### iOS 앱의 ATT 및 iOS 채택 지표
 

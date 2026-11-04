@@ -34,6 +34,8 @@ x-zendesk:
 * 결제를 완료한 구매자 수
 * 반복 구매하는 사용자와 한 번만 구매하는 구매자 수
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 인앱 이벤트 구현과 관련한 마케터용 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#인앱-이벤트-설정">지침</Anchor>을 반드시 읽어보십시오.
@@ -44,6 +46,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -270,6 +274,8 @@ x-zendesk:
 | af\_영수증\_ID | 주문 ID<br /><br />**구매 유효성 검증을 위한 CRITEO 및 Google Ad Words의 필수 파라미터** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 

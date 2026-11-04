@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어는 Google Play 자동 설치l(PAI)를 사용하여 마케터가 모바일 통신사 및 앱 검색 파트너와 계약을 맺고 사용자가 기기를 처음 켤 때 앱을 미리 로드하는 프리로드 캠페인에 설치를 어트리뷰션합니다. **참고**: 이 어트리션 방법은 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-factory-preinstall-using-manifest-android">APK 사전 설치 어트리뷰션</Anchor>과 다릅니다.
 
+<div id="pai-preload-attribution" />
+
 ## PAI 프리로드 어트리뷰션
 
 프리로드 캠페인에서 OEM(주문자 상표 부착 생산), 이동통신사, 앱 검색 파트너는 첫 번째 기기 활성화 시 다운로드되는 기기에 앱을 프리로드합니다.
@@ -34,6 +36,8 @@ Google Play 자동 설치(PAI) (3가지 프리로드 어트리뷰션 방법 중 
 
 **참고**: 에이전시는 클라이언트에 대해 프리로드 캠페인을 활성화할 수 없습니다.
 
+<div id="flow" />
+
 ### 플로우
 
 1. 새 기기가 처음으로 활성화되고 프리로드 파트너가 설정한 규칙에 따라 Google Play에서 사전 정의된 앱이 자동으로 설치됩니다.
@@ -42,6 +46,8 @@ Google Play 자동 설치(PAI) (3가지 프리로드 어트리뷰션 방법 중 
 4. 앱스플라이어는 검색된 데이터를 기반으로 속성을 지정합니다.
 
 ![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+
+<div id="data-availability" />
 
 ### 데이터 가용성
 
@@ -56,6 +62,8 @@ Google Play 자동 설치(PAI) 사전 로드 성능 데이터는 다음에서 �
 * Match\_type = preload\_pai
 * Campaign\_name = 캠페인 프리로드 기준 `<preloadpartner ID>`
 
+<div id="set-up-google-play-auto-install-pai-preload-attribution" />
+
 ### Google Play 자동 설치(PAI) 프리로드 어트리뷰션 설정
 
 **PAI 프리로드 어트리뷰션을 설정하려면:**
@@ -67,9 +75,13 @@ Google Play 자동 설치(PAI) 사전 로드 성능 데이터는 다음에서 �
 5. **연동 저장**을 클릭합니다.
 6. 프리로드 파트너에게 캠페인에 기여할 준비가 되었음을 알립니다.
 
+<div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
+
 ### Google Play 자동 설치(PAI) 사전 로드 캠페인을 지원하는 파트너
 
 <table><thead><tr><th rowspan="2">파트너</th><th rowspan="2">PID</th></tr></thead><tbody><tr><td></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>Motorola</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>Lenovotab</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>KDDI Pre-Install</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
+
+<div id="postbacks-for-preload-partners" />
 
 ## 프리로드 파트너를 위한 포스트백
 
@@ -91,6 +103,8 @@ Google Play 자동 설치(PAI) 사전 로드 성능 데이터는 다음에서 �
 | app\_version | SDK | 앱 개발자가 앱 코드에서 설정한 앱 버전 |
 | device\_type | SDK | 장치의 상용 모델 이름입니다. 예시: |
 | os\_버전 | SDK | 디바이스 운영 체제 버전 |
+
+<div id="postback-example" />
 
 #### 포스트백 예시
 

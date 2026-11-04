@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **요약**: iOS 14부터 iOS는 앱 추적 투명성(ATT)을 통해 유저의 개인정보 보호 설정을 판단하며, 광고 측정 제한(LAT)은 더 이상 사용되지 않습니다.
 
+<div id="att-values" />
+
 ### ATT 값
 
 * iOS 14부터: Apple의 <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> (ATT)은 앱 측정 권한 상태 값을 제공합니다.
@@ -39,6 +41,8 @@ x-zendesk:
 * 경우에 따라 ATT 값은 앱스플라이어가 정의합니다. 이들은 표에서 접두사 *af*로 표시됩니다.
 * IDFA를 사용할 수 없는 경우 0으로 채워집니다.
 
+<div id="att-values-defined-by-apple" />
+
 #### Apple에서 정의한 ATT 값
 
 | ATT 상태 | IDFA 이용 가능 여부 | 행동 |
@@ -48,6 +52,8 @@ x-zendesk:
 | 거부됨 | 사용 불가 | 다음 중 하나라도 해당되면 발생합니다:<ul><li>프롬프트 표시 후 설정</li><li>유저가 *앱 추적 요청 허용*(디바이스 수준의 마스터 스위치)을 껐습니다.</li><li>디바이스에 iOS 14를 설치하기 전에 LAT가 켜져 있었습니다.</li></ul> |
 | 허용됨 | 사용 가능 | 유저가 명시적으로 동의했습니다. |
 
+<div id="additional-att-values-defined-by-appsflyer" />
+
 #### 앱스플라이어가 정의한 추가 ATT 값
 
 | ATT 상태 | 참고 | IDFA 이용 가능 여부 |
@@ -55,6 +61,8 @@ x-zendesk:
 | af\_unknown | 광고주가 신고한 ATT 값이 <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> 사양에 존재하지 않는 값입니다. | iOS 버전에 따라 다름 |
 | af\_authorized | 다음 요인으로 인해 IDFA 사용이 허용됩니다:<ul><li>기기 iOS 버전: iOS 14 이전.</li><li>리포트된 이벤트에 IDFA는 포함되어 있지만 ATT는 포함되어 있지 않습니다. 예를 들어, iOS 14 이전 버전으로 운영되는 디바이스에 SDK V5.X가 포함된 앱이 있습니다.</li></ul> | 사용 가능 |
 | af\_unavailable | <ul><li>광고주가 이 이벤트에서 앱 추적 투명성을 보고하지 않았고 IDFA를 사용할 수 없습니다.</li><li>앱스플라이어 SDK 버전 V5.X는 앱 추적 투명성을 받을 수 없고 IDFA도 받지 못했습니다.</li></ul> | 사용 불가 |
+
+<div id="is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14" />
 
 ### iOS에서 LAT에 대한 고려사항 및 iOS 14에서 LAT를 앱 추적 투명성으로 변환하는 방법
 

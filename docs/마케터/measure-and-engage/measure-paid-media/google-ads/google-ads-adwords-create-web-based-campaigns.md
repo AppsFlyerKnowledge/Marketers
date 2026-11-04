@@ -25,6 +25,8 @@ x-zendesk:
 >
 > 이 문서는 모바일 앱을 홍보하는 웹 캠페인에 중점을 둡니다. PC 또는 콘솔 앱을 홍보하는 캠페인을 만들고 싶다면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-web-integration-for-pc-and-console-apps">Google Ads Web—PC 및 콘솔 앱 연동</Anchor>을 참조하세요.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 웹 기반 캠페인에 대해 Google Ads(`googleads_int`)와의 연동을 지원하고 Google Offline Conversion API(OCI)를 통해 캠페인의 어트리뷰션 및 전환 데이터를 리포트합니다.
@@ -37,6 +39,8 @@ x-zendesk:
 
 구글은 이 데이터를 사용하여 광고 타겟팅을 최적화하고, 성과를 측정하고, 사용자 지정 오디언스를 구축합니다.
 
+<div id="prerequisite" />
+
 ### 전제 조건
 
 웹 캠페인용 Google Ads 연동을 활성화하기 전에 다음 사항을 확인하세요.
@@ -44,6 +48,8 @@ x-zendesk:
 * 모바일 앱
 * 앱스플라이어 계정
 * <Anchor target="_blank" href="/marketers/ko/docs/user-management">적절한 역할 또는 권한</Anchor>과 관련 앱에 대한 액세스 권한을 가진 앱스플라이어 사용자
+
+<div id="create-a-google-ads-web-campaign" />
 
 ### Google Ads 웹 캠페인을 만드는 방법
 
@@ -56,6 +62,8 @@ Google Ads와 앱스플라이어 연동을 통해 1단계에서 어트리뷰션 
 
 * [원링크 스마트 스크립트로 랜딩 페이지 만들기](#원링크-스마트-스크립트로-랜딩-페이지-만들기) (선택 사항)
 * [원링크 스마트 배너로 랜딩 페이지 만들기](#원링크-스마트-배너로-랜딩-페이지-만들기) (선택 사항)
+
+<div id="create-a-google-ads-integration-in-appsflyer" />
 
 ## 앱스플라이어에서 Google Ads 연동 생성
 
@@ -164,6 +172,8 @@ Google Ads 캠페인에 대한 원링크 어트리뷰션 링크를 생성하기 
 
 </Accordion>
 
+<div id="create-a-web-campaign-in-google-ads" />
+
 ## Google Ads에서 웹 캠페인 만들기
 
 Google Ads에서 다음 단계를 수행합니다.
@@ -238,6 +248,8 @@ Google Ads에서는 여기에서 선택한 캠페인 유형의 목적과 목표�
 
 Google Web Ads 캠페인은 각 인게이지먼트에 대해 최종 URL과 추적 템플릿 URL이라는 두 URL을 활용합니다. 이러한 URL은 광고를 클릭하면 동시에 활성화되는데, 구글에서는 이 기능을 병렬 추적이라고 합니다. 병렬 추적에 대한 자세한 내용은 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">구글 문서</Anchor>에서 확인할 수 있습니다.
 
+<div id="set-the-final-url" />
+
 #### 최종 URL을 설정하는 방법은 다음과 같습니다.
 
 구글에서는 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6080568?sjid=9660882197247124000-EU">최종 URL</Anchor>을 "사용자가 광고를 클릭하면 연결되는 웹사이트에서 웹페이지의 URL 주소"로 정의합니다. ‘랜딩 페이지'라고도 합니다.
@@ -277,6 +289,8 @@ Google Web Ads 캠페인은 각 인게이지먼트에 대해 최종 URL과 추�
      https://play.google.com/store/apps/details?id=.com.app.id&hl=en&gl=US&referrer={gclid}&gclid={gclid}&campaignid={campaignid}
      ```
    * 사용자가 스토어로 리디렉션되지 않고 앱을 직접 다운로드하도록 하려는 경우 **앱 APK 파일에 대한 직접 다운로드 링크**.
+
+<div id="set-the-tracking-template-url" />
 
 #### 추적 템플릿 URL 설정
 
@@ -320,6 +334,8 @@ Google Ads는 기본적으로 병렬 추적을 사용하므로 추적 템플릿 
    > 추적 템플릿 URL에 대한 추가 제한 사항은 이 문서의 [특성 및 제한 사항](#특징-및-제약-사항) 섹션을 참조하십시오.
 
 
+<div id="google-tracking-template-url-examples" />
+
 #### Google 추적 템플릿 URL 예시
 
 구글 추적 템플릿 URL의 **원링크** 예:
@@ -334,6 +350,8 @@ https://subdomain.onelink.me/aAB1?pid=googleads_int&af_force_transparent=true&af
 https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=true&c=examplecamp&af_siteid=123456&af_adset=exampleadset&af_adset_id={adgroupid}&af_c_id={campaignid}&af_ad_id={creative}&af_click_lookback=7d&af_r={lpurl}
 ```
 
+<div id="using-the-tracking-template-url-with-smart-script-or-smart-banners" />
+
 #### 스마트 스크립트 또는 스마트 배너와 함께 추적 템플릿 URL 사용
 
 광고가 스마트 스크립트 또는 스마트 배너를 사용하는 랜딩 페이지로 리디렉션될 경우, 추적 템플릿 URL에 앱스플라이어 어트리뷰션 링크로 입력할 필요가 없습니다. 이는 사용자가 랜딩 페이지 CTA 버튼을 클릭할 때 이러한 도구가 앱스플라이어에 등록되는 어트리뷰션 링크를 자동으로 생성하기 때문입니다. 그러나 추적 템플릿 URL 필드를 비워 두는 것에 대해 고려해야 할 사항이 있습니다.
@@ -342,6 +360,8 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 * 추적 템플릿 URL에 어트리뷰션 링크를 **채우고** 사용자가 광고를 클릭한 후 랜딩 페이지의 CTA 버튼을 클릭하면, 한 번이 아닌 두 번의 클릭으로 기록되어 전환율 데이터에 영향을 미칠 수 있습니다.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 원링크 스마트 스크립트로 랜딩 페이지 만들기
 
@@ -432,6 +452,8 @@ W2A 스마트 스크립트 사용 사례는 다음 단계로 구성됩니다.
 
 </Accordion>
 
+<div id="create-a-landing-page-with-onelink-smart-banners" />
+
 ## 원링크 스마트 배너로 랜딩 페이지 만들기
 
 **사용자 여정:** 사용자가 구글 광고를 클릭하면 모바일 웹사이트로 연결됩니다. 페이지에 도착하면 앱 스토어에서 앱을 다운로드할 수 있는 CTA와 함께 스마트 배너가 표시됩니다.
@@ -475,6 +497,8 @@ W2A 스마트 스크립트 사용 사례는 다음 단계로 구성됩니다.
 
 </Accordion>
 
+<div id="troubleshooting-in-app-events-postbacks" />
+
 ## 인앱 이벤트 포스트백 문제 해결
 
 인앱 이벤트 데이터가 Google Ads 또는 Google Analytics에 표시되지 않거나 누락된 토큰 오류가 발생하는 경우, 지원팀에 연락하기 전에 다음 설정이 올바른지 확인하십시오:
@@ -516,6 +540,8 @@ Google Ads에서 액세스 토큰이 오프라인 전환을 업로드하는 데 
 스마트 스크립트 또는 스마트 배너의 외부 URL에는 Google OCI로 정상적으로 포스트백되어 Google Ads에 등록되도록 하기 위해 `gclid`, `wbraid`, 또는 `gbraid` 중 하나가 반드시 포함되어야 합니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

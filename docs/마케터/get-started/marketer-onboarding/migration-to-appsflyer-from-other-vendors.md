@@ -24,6 +24,8 @@ x-zendesk:
 
 마이그레이션 흐름
 
+<div id="about-migrating-to-appsflyer-from-other-vendors" />
+
 ## 타 업체에서 앱스플라이어로 마이그레이션 하기
 
 다른 공급업체의 앱스플라이어로 마이그레이션하는 데는 다음과 같은 기본 태스크가 포함됩니다.
@@ -38,19 +40,29 @@ x-zendesk:
 * 앱스플라이어 SDK를 사용하여 업데이트된 앱을 릴리스하기 전에 모든 태스크를 완료합니다.
 * 디바이스 ID 마이그레이션을 수행하기 전에 기존의 마케팅 캠페인을 일시정지합니다.
 
+<div id="compare-measurement-between-appsflyer-and-other-mmps" />
+
 ### 앱스플라이어와 애드저스트 간의 측정 비교
 
 다른 MMP 에서 앱스플라이어 로 이전을 고려할 때 광고주는 동일한 미디어 소스 와 캠페인에 걸쳐 두 MMP 기여도 측정 방식을 비교해 보는 것이 좋습니다. 그러나 모든 미디어소스가 두 개 이상의 MMP를 사용한 측정을 지원하는 것은 아닙니다.   그러한 방식은 출처 불일치를 방지하기 위해 특정 제한 사항과 어려움을 수반할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/measuring-attribution-with-multiple-mmps">여러 MMP의 어트리뷰션 측정</Anchor>에서 자세한 내용을 살펴보세요.
+
+<div id="tasks" />
 
 ## 작업
 
 다음 표는 각 과제에 필요한 작업의 범위를 설명합니다. 전반적인 작업 내용을 자세히 확인하고 진행 상황을 기록하려면 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQqbJIkE7kD87uSm7MH7zfkPN1VLuBaeotTEHAID2pYFVWM_LuQIA2AE2-8fVnXH-DrbXUQCs2iaiDe/pub?output=xlsx">이 스프레드시트를</Anchor> 다운로드.
 
+<div id="scope-of-work" />
+
 #### 작업 범위
 
 <table><thead><tr><th>작업</th><th>필요한 조치</th><th>담당자</th><th>예상 시간</th><th>비고</th></tr></thead><tbody><tr><td>필수 조건</td><td><ol><li> <a href="https://www.appsflyer.com/get-started" target="_blank">앱스플라이어 계정을 만듭니다</a>.</li><li> 앱스플라이어에 <a href="./adding-an-app-to-appsflyer" target="_blank">앱을 추가합니다</a>.</li><li>[선택사항] 활동적인 사용자 정의와 <a href="./set-up-re-attribution-window" target="_blank">맞추기 위해 기본 90일 <span>리어트리뷰션 기간</span>을 변경하십시오.</a> </li></ol></td><td>마케터/앱스플라이어 대시보드 사용자</td><td>2시간</td><td> </td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#sdk-integration">SDK 통합</a></td><td><ul><li>앱에 앱스플라이어 SDK를 연동합니다.</li><li>S2S 또는 SDK 인앱이벤트를 매핑합니다.</li><li>앱 스토어에서 앱 버전을 갱신합니다.</li></ul></td><td>앱 개발자</td><td>1&#126;2주</td><td><ul><li> <strong>권장 사항</strong>: 권장사항: 테스트를 위해 사전 프로덕션 앱에 앱스플라이어 SDK를 통합하십시오.</li><li>다른 모든 과제가 완료된 후에 앱 스토어에서 프로덕션 앱을 업데이트해야 합니다.</li></ul></td></tr><tr><td> <a href="./migration-to-appsflyer-from-other-vendors#device-migration%E2%80%94optional">디바이스 마이그레이션</a> [선택사항]</td><td>기존 사용자의 이중 어트리뷰션을 피하기 위해 디바이스 ID를 마이그레이션합니다.</td><td>데이터 엔지니어</td><td>1&#126;2주</td><td rowspan="2"><ul><li>마이그레이션 전에 기존 캠페인을 일시정지하고 앱 버전이 업데이트된 후에 재개하는 것을 고려하십시오. </li><li>완전한 적용 범위를 보장하기 위해 최종 마이그레이션 날짜에 디바이스 마이그레이션을 반복하십시오.  </li></ul></td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#campaign-migration">캠페인 데이터 마이그레이션</a></td><td><ul><li>광고 네트워크를 앱스플라이어에 연동하기</li><li>다음에 존재하는 기존 캠페인을 마이그레이션합니다. <ul><li>SRNs</li><li>비-SRN 애드 네트워크</li><li>소유 매체</li></ul></li></ul></td><td>마케터/UA 관리자</td><td>1&#126;3주</td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#data-report-setup">데이터 리포트 설정</a></td><td><ul><li>현재 리포트 구조를 앱스플라이어 구조로 적용/매핑합니다.</li><li>앱스플라이어 리포트를 받을 준비를 합니다.</li></ul></td><td>데이터 엔지니어</td><td>2&#126;4주</td><td> </td></tr></tbody></table>
 
+<div id="sdk-integration" />
+
 ### SDK 통합
+
+<div id="sdk-integration::c763138b" />
 
 <Accordion title="SDK 통합">
 
@@ -78,13 +90,19 @@ x-zendesk:
 
 </Accordion>
 
+<div id="device-migrationoptional" />
+
 ### 디바이스 마이그레이션-선택사항
+
+<div id="about-device-migration" />
 
 <Accordion title="디바이스 마이그레이션 소개">
 
 디바이스 마이그레이션은 기존 사용자 디바이스 ID(IDFA, IDFV, GAID, CUID)의 목록을 앱스플라이어로 업로드하는 프로세스입니다. 이 프로세스는 앱스플라이어 SDK를 포함하는 새 앱 버전을 출시하기 전에 수행해야 합니다. [디바이스 마이그레이션에는 두 가지 옵션,](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) [어트리뷰트 마이그레이션 또는 어트리뷰트되지 않은 마이그레이션이 있습니다.](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration)
 
 디바이스 마이그레이션은 앱을 다운로드하고 이전 벤더에 의해 어트리뷰트된 기존 앱 사용자와 관련된 데이터 문제를 해결합니다. 예를 들어, 사용자가 원래 이전 벤더에서 SRN에 어트리뷰트되고 아직 기여 기간 내에 있는 경우 발생하는 SRN 이중 요금은 앱스플라이어에서 SRN에 의해 다시 청구되는 것입니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -100,11 +118,15 @@ x-zendesk:
 * 액티비티 데이터 정상적으로 표시됩니다.
 * **리텐션 및 코호트 데이터:** 마이그레이션된 장치에는 인스톨 기록이 없습니다. 이와 같이, 이들은 어떠한 코호트와도 관련되어 있지 않으며, 리텐션 및 코호트 리포트에는 표시될 수 없습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 마이그레이션 날짜로부터 180일 이내에 앱을 실행하지 않으면 마이그레이션된 기기 데이터가 모두 삭제됩니다. 따라서 180일 이후에 앱을 실행하면 새로운 인스톨 로 기록됩니다.
 
 </Accordion>
+
+<div id="how-to-migrate-devices" />
 
 <Accordion title="디바이스 마이그레이션 방법">
 
@@ -120,9 +142,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="attributed-migration" />
+
 <Accordion title="어트리뷰트된 마이그레이션">
 
 이 방법을 사용하여 앱스플라이어로 마이그레이션된 디바이스에는 인앱 이벤트가 있으며, 이전 어트리뷰션 벤더에서 보고된 미디어소스에 따라, 그리고 광고 네트워크의 데이터 리텐션 정책에 따라 매체 소스에 따라 세션이 기록되고 표시됩니다.
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### 어트리뷰트된 디바이스 마이그레이션 CSV 구조
 
@@ -155,9 +181,13 @@ x-zendesk:
 
 </Accordion>
 
+<div id="nonattributed-migration" />
+
 <Accordion title="어트리뷰션 되지 않은 마이그레이션">
 
 이 방법을 통해 앱스플라이어에 마이그레이션된 디바이스는 오가닉 사용자로 기록됩니다(그러나 표시되지는 않습니다). 이들의 인앱 이벤트와 세션도 또한 오가닉으로 기록되고 표시됩니다.
+
+<div id="non-attributed-device-migration-csv-file-structure" />
 
 #### 어트리뷰션되지 않은 디바이스 마이그레이션 CSV 파일 구조
 
@@ -182,11 +212,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="campaign-migration" />
+
 ### 캠페인 데이터 마이그레이션
 
 기존 마케팅 캠페인을 앱스플라이어로 전환하여 앱스플라이어 어트리뷰션을 활성화하고 중복 비용 및 어트리뷰션 데이터 손실을 방지합니다.
 
 **참고**: 일러두기: 한 번에 몇 개의 마케팅 캠페인만 마이그레이션하도록 선택할 수 있습니다. 이 경우, 미디어소스(예: 광고 네트워크 또는 에이전시), 지역 또는 캠페인에 의해 마이그레이션하려는 항목을 세그먼트화할 수 있습니다.
+
+<div id="srns" />
 
 <Accordion title="SRNs">
 
@@ -196,12 +230,16 @@ SRN은 MMP(Mobile Measurement Partner)가 특정 디바이스의 인게이지먼
 
 * 앱스플라이어에서 관련 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns#앱스플라이어와-통합된-srn">SRN</Anchor>을 활성화하고 설정하십시오.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * SRN은 여러 MMP를 실행할 수 있습니다(메타 광고 및 트위터 제외).
 > * 메타 광고는 인앱 이벤트의 중복을 제거할 수 없습니다.
 
 </Accordion>
+
+<div id="nonsrn-ad-networks" />
 
 <Accordion title="비-SRN 애드 네트워크">
 
@@ -214,6 +252,8 @@ SRN은 MMP(Mobile Measurement Partner)가 특정 디바이스의 인게이지먼
 3. 각 캠페인의 기존 링크를 앱스플라이어 어트리뷰션 링크로 전환합니다.
 
 </Accordion>
+
+<div id="owned-media" />
 
 <Accordion title="소유 매체">
 
@@ -236,6 +276,8 @@ SRN은 MMP(Mobile Measurement Partner)가 특정 디바이스의 인게이지먼
 
 </Accordion>
 
+<div id="skan" />
+
 <Accordion title="SKAN">
 
 SKAdNetwork(SKAN) 어트리뷰션의 경우, 변환 값은 SDK 하나만 업데이트할 수 있습니다. 그렇지 않으면, SKAN 데이터는 무의미하게 됩니다. 따라서 마이그레이션 후에 앱스플라이어 SDK만이 SKAN 변환 값을 업데이트합니다.
@@ -244,7 +286,11 @@ SKAdNetwork(SKAN) 어트리뷰션의 경우, 변환 값은 SDK 하나만 업데�
 
 </Accordion>
 
+<div id="data-report-setup" />
+
 ### 데이터 리포트 설정
+
+<div id="adapt-and-map-report-structures" />
 
 <Accordion title="리포트 구조 적용 및 매핑">
 
@@ -255,6 +301,8 @@ SKAdNetwork(SKAN) 어트리뷰션의 경우, 변환 값은 SDK 하나만 업데�
 * 앱스플라이어 CSM에 문의하여 Adjust, Branch/Tune, 또는 Kochava에서 앱스플라이어로 리포트 데이터 구조를 빠르게 적용/마이그레이션하는 데 도움을 받으십시오.
 
 </Accordion>
+
+<div id="prepare-report-methods" />
 
 <Accordion title="리포트 준비 방법">
 

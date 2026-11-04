@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **한눈에 보기:** 신뢰할 수 있는 웹 활동(TWA)과 함께 앱스플라이어를 사용하여 인스톨 수를 측정하고 인앱 이벤트를 기록하세요.
 
+<div id="introduction" />
+
 ## 소개
+
+<div id="what-are-trusted-web-activities" />
 
 ### 신뢰할 수 있는 웹 활동이란 무엇입니까?
 
 신뢰할 수 있는 웹 활동(TWA)은 웹 콘텐츠를 안드로이드 앱과 통합하는 새로운 방법입니다. TWA의 과제는 인앱 이벤트를 기록하는 것입니다. 이 과제는 이 문서에서 다룹니다. TWA에 대한 자세한 내용은 <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">여기</Anchor>를 참조하세요.
 
 TWA는 프로그레시브 웹 앱에서도 사용할 수 있습니다.
+
+<div id="what-are-progressive-web-apps" />
 
 ### 프로그레시브 웹 앱이란 무엇입니까?
 
@@ -52,6 +58,8 @@ TWA는 프로그레시브 웹 앱에서도 사용할 수 있습니다.
 <Accordion title="TWA에서 인앱 이벤트 전송하기">
 
 인앱 이벤트는 네이티브 앱 활동에서 앱스플라이어 SDK를 사용하여 전송됩니다. TWA는 웹 기반이고 네이티브 활동이 아니기 때문에 앱스플라이어 SDK를 사용하여 인앱 이벤트를 전송할 수 없습니다. 대안으로 <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">서버 간 인앱 이벤트</Anchor>를 사용할 수 있습니다. TWA를 사용하여 서버 간 이벤트를 보내려면 아래 지침을 따르십시오.
+
+<div id="prerequisites" />
 
 ### 선행 조건
 
@@ -92,6 +100,8 @@ TWA에서 앱스플라이어로 이벤트 전송을 시작하기 전에 다음�
        import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
        ```
 
+<div id="getting-the-appsflyer-id" />
+
 ### 앱스플라이어 ID 가져오기
 
 서버 간 이벤트를 보내려면 앱스플라이어 ID가 필요합니다. 앱스플라이어 안드로이드 SDK에서 앱스플라이어 ID를 얻을 수 있습니다.
@@ -101,6 +111,8 @@ TWA에서 앱스플라이어로 이벤트 전송을 시작하기 전에 다음�
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
+
+<div id="sending-the-appsflyer-id-to-twa" />
 
 ### 앱스플라이어 ID를 TWA로 보내기
 
@@ -141,6 +153,8 @@ private void launchTwa(String cuid, String af_id) {
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="retrieving-the-appsflyer-id" />
 
 #### 앱스플라이어 ID 확인하기
 
@@ -199,6 +213,8 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
+<div id="retrieving-the-appsflyer-id-1" />
+
 #### 앱스플라이어 ID 확인하기
 
 JavaScript는 개발사가 헤더에 액세스할 수 있는 API를 제공하지 않습니다. 따라서 서버는 전환 데이터를 쿠키로 웹 활동에 다시 보내야 합니다. 서버는 앱스플라이어 ID가 포함된 커스텀 헤더를 가져와 데이터를 파싱한 후 이를 웹페이지에 쿠키로 보냅니다.
@@ -219,6 +235,8 @@ console.log(appsflyer_id);
 ```
 
 </Accordion>
+
+<div id="sending-the-in-app-event" />
 
 ### 인앱 이벤트 전송하기
 
@@ -243,6 +261,8 @@ console.log(appsflyer_id);
 * <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">앱 오픈 어트리뷰션 시</Anchor> - 앱이 원링크를 사용하여 딥링크될 때 호출됩니다.
 
 전환 데이터를 사용하여 웹 콘텐츠를 커스터마이징할 수 있습니다.
+
+<div id="sending-conversion-data-to-twa" />
 
 ### TWA로 전환 데이터 보내기
 
@@ -281,6 +301,8 @@ private void launchTwa(Map<String, String> conversionData, String cuid, String a
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="fetching-the-conversion-data-from-the-client-side" />
 
 ### 클라이언트 측에서 전환 데이터 가져오기
 

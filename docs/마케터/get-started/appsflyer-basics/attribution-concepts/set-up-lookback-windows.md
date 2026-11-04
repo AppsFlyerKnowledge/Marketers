@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 미디어소스와의 협의에 따라 클릭-쓰루 및 뷰-쓰루 룩백 기간을 사용자 정의합니다.
 
+<div id="lookback-windows" />
+
 ## 룩백 윈도우
 
 맞춤 설정 가능한 어트리뷰션 룩백 윈도우를 사용하면 미디어소스와의 협의에 따라 어트리뷰션 기간을 사용자 정의할 수 있습니다.
@@ -36,11 +38,15 @@ x-zendesk:
 * **적극적 조회 룩백 윈도우:** 적극적 조회 이후, 앱 설치가 해당 적극적 조회에 어트리뷰션될 수 있는 최대 기간.  룩백 기간 이후에 발생하는 인스톨은 오가닉으로 간주됩니다.
 * **뷰-쓰루 룩백 윈도우**: 광고가 조회된 이후, 앱 설치가 해당 광고에 어트리뷰션될 수 있는 최대 기간 룩백 기간 이후에 발생하는 인스톨은 오가닉으로 간주됩니다.
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### 어트리뷰션 유형당 어트리뷰션 룩백 윈도우 설정 기능
 
 <table><thead><tr><th rowspan="2"><p><strong>어트리뷰션 유형</strong></p></th><th rowspan="2"><p><strong>어트리뷰션 메서드</strong></p></th><th colspan="2"><strong>룩백 윈도우</strong></th></tr><tr><th><strong>범위</strong></th><th><strong>기본값</strong></th></tr></thead><tbody><tr><td rowspan="3"><p>클릭-쓰루</p><p>(모든 미디어 소스)</p></td><td>리퍼러, ID 매칭</td><td>1-30일 또는<br/>1-23시간</td><td>7일</td></tr><tr><td>확률적 모델링(모바일)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">적응형</a></td><td>최대 24시간</td></tr><tr><td>확률적 모델링 (CTV, PC 및 콘솔 - 단일 플랫폼 링크)</td><td>최대 7일 (<code>af_lookback_window</code> 링크 파라미터에 설정)</td><td>7일</td></tr><tr><td rowspan="2"><p>적극적 클릭-쓰루</p><p>(비 SRN <a href="./about-enriched-engagement-types#allowed-networks" target="_blank">미디어소스</a> 선택\*)</p></td><td>ID 매칭</td><td>1–7 일 또는 1-23 시간</td><td>2일</td></tr><tr><td>확률적 모델링(모바일)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">적응형</a></td><td>최대 24시간</td></tr><tr><td rowspan="2"><p>적극적 뷰-쓰루</p><p>(비 SRN <a href="./about-enriched-engagement-types#allowed-networks" target="_blank">미디어소스</a> 선택\*)</p></td><td>ID 매칭</td><td>1–7 일 또는 1-23 시간</td><td>2일</td></tr><tr><td>확률적 모델링(모바일)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">적응형</a></td><td>최대 24시간</td></tr><tr><td rowspan="4"><p>뷰-쓰루</p><p>(선택한 <a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">미디어소스</a>)</p></td><td>ID 매칭</td><td><p>1-24시간</p><p>[2021년 12월 15일까지의 상한은 7일]</p></td><td>24시간</td></tr><tr><td>확률적 모델링(모바일)</td><td><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">적응형</a></td><td>최대 24시간</td></tr><tr><td>확률적 모델링 (CTV, PC 및 콘솔 - 단일 플랫폼 링크)</td><td>최대 7일 (<code>af_lookback_window</code> 링크 파라미터에 설정)</td><td>24시간</td></tr><tr><td>확률적 모델링 (CTV, PC 및 콘솔 - <a href="./set-up-cross-platform-links-for-multi-device-campaigns#traits-and-limitations" target="_blank">크로스 플랫폼 원링크 어트리뷰션 링크</a>)</td><td>최대 72시간 (<code>af_xplatform_vt_lookback</code> 링크 파라미터에 설정)</td><td>24시간</td></tr></tbody></table>
 
 *`engaged_click` 및 `engaged_view`의 룩백 윈도우는 비 SRN 네트워크에서만 설정할 수 있습니다. SRN의 경우, `engaged_click` 및 `engaged_view` 파라미터는 클릭수와 동일한 룩백 윈도우를 공유하므로, `engaged_click`인스톨 클릭-쓰루 어트리뷰션 룩백engaged\_click 슬라이더에 의해 설정됩니다.
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### 확률적 모델링 룩백 윈도우
 
@@ -53,6 +59,8 @@ x-zendesk:
 
 더 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#probabilistic-modeling">앱스플라이어 확률적 모델링 메서드</Anchor>를 참조하십시오.
 
+<div id="lookback-window-setup" />
+
 ## 룩백 윈도우 설정하기
 
 다음은 SRN(Self Reporting Network) 및 어트리뷰션 링크에 대한 룩백 윈도우 설정 절차를 설명합니다.
@@ -60,7 +68,11 @@ x-zendesk:
 <Tabs>
 <Tab title="SRN 룩백 윈도우">
 
+<div id="attribution-lookback-window-for-srns" />
+
 ### SRN(Self Reporting Network)의 어트리뷰션 룩백 윈도우
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -91,6 +103,8 @@ x-zendesk:
 
 <div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
 
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
 ### 클릭-쓰루 및 뷰-쓰루를 위한 비 SRN 어트리뷰션 룩백 윈도우
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **활성화된 연동**을 선택하세요.
@@ -103,12 +117,16 @@ x-zendesk:
 7. 캠페인 관련 파라미터를 선택합니다. (예, 캠페인 이름, 애드 세트 등)
 8. 링크를 복사하여 저장해둡니다 - 애드 네트워크에 제공해야 하는 링크입니다.
 
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
 ### 클릭-쓰루 및 뷰-쓰루를 위한 비 SRN 어트리뷰션 룩백 윈도우
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **활성화된 연동**을 선택하세요.
 2. 파트너를 검색하고 선택합니다.
 3. 연동 탭에서 **인스톨 적극적 클릭-쓰루 룩백 윈도우** 슬라이더 또는 **인스톨 적극적 조회 룩백 윈도우** 슬라이더로 스크롤을 내립니다.
 4. 슬라이더를 사용하여 룩백 윈도우를 설정합니다.
+
+<div id="tip" />
 
 > 👍 **팁**
 >
@@ -128,6 +146,8 @@ x-zendesk:
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## 최초 앱 실행 분포도
 
 아래는 인게이지먼트 일로부터 최초 앱 실행 시점의 분포를 보여주는 그래프입니다.
@@ -139,6 +159,8 @@ x-zendesk:
 앱을 실행한 사용자의 97%를 약간 상회하는 대다수는 광고에 참여한지 7일 이내에 앱을 실행합니다. 남은 2%는 7일 차와 룩백 윈도우의 종료(30일 차) 사이에 앱을 실행합니다.
 
 실제로, 앱을 실행한 사용자의 약 62%는 광고에 참여한지 15분 이내에 앱을 실행합니다. 72%의 사용자는 처음 한시간 이내에 앱을 실행합니다.
+
+<div id="scenarios-and-examples" />
 
 ## 시나리오 및 예시
 
@@ -185,6 +207,8 @@ SuperShopping의 마케팅 책임자 Johnny는 어트리뷰션 링크를 생성�
 또한 이를 통해, 앱의 개발자도 플래시 캠페인을 통해 유입된 사용자를 구별할 수 있고, 캠페인이 광고한 특별 할인을 전달할 수 있습니다.
 
 </Accordion>
+
+<div id="tip-1" />
 
 > 👍 **팁**
 >

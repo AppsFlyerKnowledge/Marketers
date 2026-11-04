@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Kenshoo, Bidalgo, Smartly 등의 Meta 캠페인 관리 파트너(구 Facebook Marketing Partner(FMP))를 사용하여 Meta 광고 캠페인을 최적화하세요. 구성되면 앱스플라이어가 캠페인에 포스트백을 보냅니다.
 
+<div id="configure-meta-campaign-management-partners" />
+
 ## Meta 캠페인 관리 파트너 구성
 
 **전제 조건:**  연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.
@@ -40,6 +42,8 @@ x-zendesk:
 4. **연동** 탭에서 연동할 앱을 선택하고  **파트너 활성화** 을 켭니다.  
    **참고:** 토글은 파트너와 함께 작업하는 동안 켜져 있어야<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">(활성화되어야)</Anchor> 합니다.
 5. 아래 설명된 대로 관련 탭을 사용하여 설정을 완료하십시오.
+
+<div id="in-app-event-postback-setup" />
 
 ## 인앱 이벤트 포스트백 설정
 
@@ -66,6 +70,8 @@ x-zendesk:
 3. [선택 사항] 파트너에게 특정 인앱 이벤트를 전송하기 위한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#조건부-인앱-이벤트-포스트백">조건을 설정</Anchor>하려면 ![conditional-iae-postbacks-icon.png](https://files.readme.io/5345c5ebe95b3f1a0d0858b88ce29f9965178ce750df86c04cb131a93d006a5e-14050481317393.png)를 클릭합니다.
 4. [선택 사항] **이벤트 추가**를 클릭하여 목록에 다른 SDK 또는 서버 간 이벤트를 추가합니다.
 5. **연동 저장**을 클릭합니다.
+
+<div id="important-notes" />
 
 > 📘 **중요 사항**
 >

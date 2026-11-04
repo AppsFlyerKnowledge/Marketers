@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 셀프 리포팅 네트워크(SRN)에 대해 알아보세요. 어트리뷰션, 딥링킹, iOS 관련 사항 및 FAQ를 확인하세요.
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## 앱스플라이어와 통합된 SRN
 
 | **SRN** | **로고** |
@@ -49,6 +51,8 @@ x-zendesk:
 
 **참고:** SRN은 <Anchor target="_blank" href="/marketers/ko/docs/user-level-data-retention">유저 수준 데이터 사용 및 리텐션 제한</Anchor>이 있습니다.
 
+<div id="attribution" />
+
 ## 어트리뷰션
 
 비 SRN(광고 네트워크)은 이벤트를 앱스플라이어에 리포팅하기 위해 어트리뷰션 링크를 사용하지만, SRN은 앱스플라이어로부터 인스톨 알림을 받을 때 디바이스 ID로 자체 어트리뷰션을 수행합니다. iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide">SKAN</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">데이터 집약형 고급 개인 정보 보호 프레임워크</Anchor>를 어트리뷰션에 사용합니다.
@@ -57,6 +61,8 @@ x-zendesk:
 
 * 마지막 터치와 멀티 터치 방법론.
 * 앱스플라이어 표준 어트리뷰션 로직을 사용하여 관련 노출 및 클릭 데이터를 정렬합니다.
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### SRN과의 어트리뷰션은 어떻게 작동합니까?
 
@@ -68,9 +74,13 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 
 앱스플라이어가 어트리뷰션을 수행한 후, 인앱 포스트백은 <Anchor target="_blank" href="/marketers/ko/docs/user-level-data-retention#파트너-데이터-리텐션-기간">파트너 데이터 리텐션 기간</Anchor> 동안 SRN으로 전송됩니다.
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### 고급 SRN의 어트리뷰션은 어떻게 작동합니까?
 
 고급 SRN은 SRN과 동일한 방식으로 어트리뷰션을 수행합니다. 그러나 고급 SRN은 디바이스 ID(IDFA)가 없는 경우에도 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary#프라이버시">데이터 집약형 고급 개인정보 보호</Anchor> 프레임워크를 사용해 인게이지먼트를 어트리뷰션할 수 있습니다. 어떤 경우에는 이중 동의를 통해 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#device-id-matching">ID 매칭</Anchor>을 사용해 어트리뷰션이 수행되며, 일부 고급 SRN의 경우 클릭과 노출에 대한 API 통신을 통해 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#probabilistic-modeling">확률적 모델링</Anchor>을 사용해 어트리뷰션이 이루어집니다.
+
+<div id="install-attribution" />
 
 ### 인스톨 어트리뷰션
 
@@ -83,6 +93,8 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
   * 유저는 광고 ID가 있습니다.
 * 두 조건이 모두 참일 경우, 앱스플라이어는 광고 ID를 사용해 SRN을 쿼리합니다.
 * 앱스플라이어는 SRN의 주장들을 고려해 어트리뷰션을 수행합니다.
+
+<div id="install-attribution-examples" />
 
 #### 인스톨 어트리뷰션 예시
 
@@ -118,6 +130,8 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### 어트리뷰션 기간
 
 어트리뷰션 기간에는 룩백과 뷰-쓰루(view-through)가 포함됩니다. 일부 SRN은 노출당 비용(CPM)과 비용당 행동(CPA)을 기준으로 인스톨 비용을 청구하는데, 이는 1&#126;28일 기간 내의 클릭 또는 노출을 기준으로 합니다.
@@ -130,6 +144,8 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 * 이유는? 앱스플라이어가 광고주가 정의한 조건에 따라 실제 eCPI와 eCPA를 보고하기 때문입니다.
 * SRN은 종종 자체적으로 지불 조건을 정의하므로 단기적으로 이익을 얻을 수 있습니다. 하지만 광고주는 써드 파티 어트리뷰션 제공업체를 사용하여 이를 바로잡습니다.
 
+<div id="deep-linking-with-srns" />
+
 ## SRN을 활용한 딥링킹
 
 링크를 클릭했을 때 귀사의 앱을 열 수 있도록 앱 링크/유니버설 링크/URI 스키마를 설정하기만 하면 됩니다. 그러나 특정 페이지나 액티비티로 딥링크 또는 디퍼드 딥링킹을 수행하기 위해 SRN은 앱스플라이어 딥링킹 메서드를 사용하지 않고 자체 방법을 사용합니다.
@@ -141,6 +157,8 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 <Accordion title="직접 딥링크">
 
 사용자 디바이스가 딥링킹을 수행할 때, 앱스플라이어의 딥링킹 메서드를 호출하지 않고도 SRN과 직접적인 딥링크가 수행됩니다. 아래 예제에서, 기존 사용자가 광고를 클릭하면 페이스북의 방법을 사용하여 직접 해당 액티비티로 리디렉션되며, 신규 사용자는 앱스플라이어의 전환 데이터를 활용해 동일한 경험을 얻습니다. <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta 광고가 원링크를 활용한 딥링킹 방법</Anchor>을 알아보세요.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -165,6 +183,8 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## iOS 관련 사항
 
 대부분의 SRN은 SKAdNetwork를 지원하며, 앱스플라이어와의 필요한 연동을 갖추고 있습니다.
@@ -174,6 +194,8 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 <Accordion title="iOS 14.5 SRN 어트리뷰션">
 
 iOS 14.5부터  광고주와 퍼블리셔 앱에서 앱 추적 투명성(ATT, AppTrackingTransparency) 동의를 받은 경우(<Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary#이중-동의">이중 동의</Anchor>), SKAdNetwork 대시보드에 기록된 SRN 인스톨이 기존 대시보드에도 표시됩니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -192,12 +214,16 @@ iOS 14.5부터  광고주와 퍼블리셔 앱에서 앱 추적 투명성(ATT, Ap
 * SRN에 전송되는 이벤트 포스트백 수의 감소
 * SRN과 모든 이벤트를 기록하는 앱스플라이어 간의 이벤트 포스트백 수에 차이가 발생합니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * IDFA가 없으면 인스톨, 앱 오픈 또는 인앱 이벤트에 대한 포스트백이 SRN으로 전송되지 않습니다. [그러나 특정 상황에서는 광고 ID가 없어도 앱스플라이어가 SRN에 포스트백을 보냅니다.](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)
 > * 클릭 기반 광고 네트워크는 디바이스 ID가 아닌 자체 거래 ID를 사용하기 때문에 이벤트 포스트백 정보를 자체적으로 어트리뷰션하여 영향을 받지 않습니다.
 
 </Accordion>
+
+<div id="faq" />
 
 ## 자주 묻는 질문
 
@@ -236,6 +262,8 @@ SRN 캠페인은 특정 오디언스를 타겟으로 해야 하지만 항상 그
 
 **결론:** 유저 유입 캠페인에서 리타겟팅 이벤트를 얻는 것은 낭비입니다.
 
+<div id="is-mistargeting-a-problem" />
+
 #### 잘못된 타겟팅이 문제인가요?
 
 앱스플라이어 데이터 분석가는 특정 달 동안 Meta Ads **유저 유입** 캠페인을 확인했습니다.
@@ -246,6 +274,8 @@ SRN 캠페인은 특정 오디언스를 타겟으로 해야 하지만 항상 그
 * **결론: SRN 유저 유입 캠페인에서 타겟 사용자 10명 중 1명은 이미 기존 사용자입니다.**
 
 [alt잘못된 대상 사용자.pngalt](https://support.appsflyer.com/hc/article_attachments/30709726739473)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### 잘못된 타겟팅 문제 해결
 

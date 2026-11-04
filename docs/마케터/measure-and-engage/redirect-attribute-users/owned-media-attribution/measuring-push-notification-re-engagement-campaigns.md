@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: iOS 및 안드로이드 모두에서 푸시 알림 캠페인을 측정합니다.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 Firebase 클라우드 메시징 또는 APNS(Apple 푸시 알림 서비스) 상단에 직접 구현된 캠페인뿐만 아니라 모든 푸시 제공업체의 푸시 알림 캠페인 측정을 지원합니다.
@@ -35,6 +37,8 @@ x-zendesk:
 * 푸시 알림의 페이로드에 `af`afaf 키가 있는 JSON 오브젝트 전송(레거시).
 
 전환 결과는 개요 대시보드, 리타겟팅 또는 통합 보기에 표시됩니다.
+
+<div id="how-does-it-work" />
 
 ## 어떻게 작동하나요?
 
@@ -47,9 +51,13 @@ x-zendesk:
 
 원링크 시나리오에서 원링크가 사용자를 앱의 특정 위치로 라우팅하도록 설정된 경우 딥링크 흐름이 트리거됩니다.
 
+<div id="prerequisites" />
+
 ## 필수 조건
 
 계속하기 전에 앱에 <Anchor target="_blank" href="/marketers/ko/docs/basic-sdk-integration-guide">앱스플라이어 SDK가 연동</Anchor>되어 있는지 **그리고** 푸시 알림을 수신할 수 있는 지 확인하십시오.
+
+<div id="steps" />
 
 ## 단계
 
@@ -66,12 +74,16 @@ x-zendesk:
 
 먼저 다음 방법 중 하나를 사용하여 어트리뷰션 데이터가 포함된 푸시 알림을 만듭니다.
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > 다음 데모에서는 Firebase를 푸시 제공업체로 사용합니다. 지침은 약간의 차이(있는 경우)가 있더라도 모든 푸시 제공업체에 적용되어야 합니다. 해당 푸시 제공업체의 설명서를 참조하십시오.
 
 <Tabs>
 <Tab title="원링크 사용(권장)">
+
+<div id="using-onelink-recommended" />
 
 #### **원링크 사용(권장)**
 
@@ -80,6 +92,8 @@ x-zendesk:
 1. <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">원링크 템플릿을 만들어 리타겟팅용으로 설정합니다.</Anchor>  
    **참고**: 참고: 원링크의 단축 URL과 긴 URL이 모두 지원됩니다.
 2. 푸시 알림 커스텀 데이터에서 앱스플라이어로 보내려는 어트리뷰션 데이터가 포함된 원링크를 추가합니다.
+
+<div id="note-1" />
 
 > 📄 **Firebase 예시**
 >
@@ -93,7 +107,11 @@ x-zendesk:
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **JSON 사용(레거시)**
+
+<div id="note-2" />
 
 > 📘 **참고사항**
 >
@@ -104,6 +122,8 @@ x-zendesk:
 * `pid`
 * `is_retargeting`
 * `c`
+
+<div id="note-3" />
 
 > 📄 **Firebase 예시**
 >

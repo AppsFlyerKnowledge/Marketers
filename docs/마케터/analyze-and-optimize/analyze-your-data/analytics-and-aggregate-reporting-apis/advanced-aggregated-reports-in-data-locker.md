@@ -25,6 +25,8 @@ x-zendesk:
 
 > **간단히 보기**: 데이터 락커의 고급 집계 보고서에는 최적의 데이터 최신성, 정확성, 세분성 및 무제한 볼륨으로 집계된 데이터가 포함됩니다.
 
+<div id="advanced-aggregated-reports-in-data-locker" />
+
 ## 데이터 락커의 고급 집계 리포트
 
 데이터 락커의 고급 집계 보고서:
@@ -33,6 +35,8 @@ x-zendesk:
 * 데이터를 BI 시스템에 로드하여 캠페인 성과 및 최적화 프로세스의 일부로 사용할 수 있습니다.
 * 데이터 최신성을 정확하게 유지하세요. 데이터는 <Anchor target="_blank" href="/marketers/ko/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">하루에 여러 번</Anchor> 도착하며 해당 날짜에 사용 가능한 모든 데이터와 함께 보고서의 각 후속 버전으로 업데이트됩니다.
 * 미디어 소스 데이터 공유 정책 또는 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">개인 정보 보호 정책</Anchor>으로 인해 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">제한</Anchor>될 수 있는 원시 데이터를 보강하는 데 도움이 됩니다. 이러한 제한은 캠페인 및 광고 세트와 같은 어트리뷰션 관련 필드에 영향을 미칩니다.
+
+<div id="setup" />
 
 ## 설정
 
@@ -43,7 +47,11 @@ x-zendesk:
 | Yes | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)데이터 락커에 리포트를 추가하려면:<ol><li>앱스플라이어의 사이드 메뉴에서 **내보내기 > 데이터 락커**를 선택합니다.</li><li>가져올 리포트를 모두 선택합니다.</li><li>**구성 저장**을 클릭합니다.<br />리포트는 다음 날 사용할 수 있습니다.</li></ol> |
 | 아니요 | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)**To set up Data Locker**:<ol><li>최초 데이터 락커(<Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#set-up-data-locker">광고주</Anchor> \| <Anchor target="_blank" href="/partners/ko/docs/data-locker-for-partners">파트너</Anchor>) 설정을 완료하십시오.</li><li>데이터 락커에 리포트를 추가합니다.<ol><li>앱스플라이어의 사이드 메뉴에서 **내보내기 > 데이터 락커**를 선택합니다.</li><li>가져올 리포트를 모두 선택합니다.</li><li>**구성 저장**을 클릭합니다.<br />리포트는 다음 날 사용할 수 있습니다.</li></ol></li></ol> |
 
+<div id="reports-available" />
+
 ## 사용 가능한 리포트
+
+<div id="report-facts" />
 
 ### 사실 보고
 
@@ -57,6 +65,8 @@ x-zendesk:
 | 디렉터리 및 파일 이름 구조 | [더 알아보기](/docs/advanced-aggregated-reports-in-data-locker#리포트-구조) |
 | 파트너의 데이터 보존 정책의 영향 | 일부 파트너는 데이터 보존 정책을 시행할 수 있습니다. 이 경우, 보존 기간이 끝난 후 발생한 이벤트는 코호트 보고서에서 오가닉으로 간주됩니다.<br /><br />예시: SRN A의 데이터 보존 정책은 180일입니다. |
 
+<div id="report-structure" />
+
 ### 리포트 구조
 
 보고서는 차원과 지표로 구성됩니다.
@@ -66,6 +76,8 @@ x-zendesk:
 * **차원**: 문자열입니다. 문자열의 최대 길이는 동적으로, 대부분 광고 계층 구조의 요소를 어떻게 채우느냐에 따라 달라집니다.
 * **지표**: 숫자입니다. **참고:** selected\_currency 필드 형식은 문자열입니다.  
   사용할 수 있는 지표는 수익, 이벤트를 수행하는 고유 사용자 및 이벤트 발생 횟수입니다. ROI 및 ROAS와 같은 비용 관련 지표를 계산하려면 수익 및 비용 지표가 모두 있어야 합니다. 수익 지표는 코호트에서 제공되며, 비용 지표는 ROI360 Cost ETL에서 제공됩니다.
+
+<div id="dimensions" />
 
 #### 디멘션
 
@@ -279,6 +291,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### 측정 지표
 
 | 필드 이름 | 설명 | 형식 |
@@ -290,11 +304,15 @@ x-zendesk:
 | revenue\_selected\_currency | <ul><li>선택한 통화의 수익 금액입니다. 예를 들어 선택한 통화가 EUR인 경우 €1234.56는 1234.56으로 반영됩니다.</li><li>소수점 이하 2자리까지 가능</li></ul> | 숫자 |
 | first\_inapp | <ul><li>전환 후 처음으로 이벤트를 수행하는 사용자 수입니다.</li><li>first\_inapp 지표를 합산하면 이벤트에 대한 누적 고유 사용자 수를 얻을 수 있습니다.</li></ul> | 숫자 |
 
+<div id="directory-and-filename-structure" />
+
 #### 디렉터리 및 파일 이름 구조
 
 보고서 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
 다음 형식으로: `/t=cohort_unified_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy" />
 
 #### 보고서 폴더 계층 구조
 
@@ -334,6 +352,8 @@ bucket
 * **t:** 보고서 유형.
 * **버전**: 버전이 생성되었을 때의 Unix 타임스탬프.
 
+<div id="report-versions-and-data-freshness" />
+
 ### 보고서 버전 및 데이터 새로 고침
 
 * 당일 내 보고서는 몇 시간마다 전송됩니다.
@@ -354,6 +374,8 @@ bucket
 | 10 | 8일차 오전 7시 | 0일차의 전체 전환 및 인앱 이벤트 데이터와 S2S를 통해 전송된 전체 광고 수익 데이터(광고 수익 네트워크 측에서 발생할 수 있는 잠재적 문제를 고려) | 8일차 오후 1시 |
 
 
+<div id="report-facts-1" />
+
 ### 사실 보고
 
 | 개요 | 코호트 시간대 버전 보고서에는 현지화된 시간대에 따라 모든 캠페인 측정기준 세분성과 함께 코호트된 모든 집계 데이터가 포함됩니다. 보고서는 데이터 최신성과 정확성을 최대화하기 위해 몇 시간마다 업데이트됩니다.<br /><br /><Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk1cZkeJhlx3trW13SjGbD4aWX3LmXZJRDJRApuAJkjB7XAg4nSFUyN0_YoirX-QMHkhFeMHwEmiVj/pub?output=xlsx">샘플 보고서 다운로드</Anchor> |
@@ -366,6 +388,8 @@ bucket
 | 디렉터리 및 파일 이름 구조 | [더 알아보기](/docs/advanced-aggregated-reports-in-data-locker#리포트-구조-1) |
 | 파트너의 데이터 보존 정책의 영향 | 일부 파트너는 데이터 보존 정책을 시행할 수 있습니다. 이 경우 리텐션 기간 종료 이후에 발생하는 이벤트는 코호트 리포트에서 무시됩니다.<br /><br />예시: SRN A의 데이터 보존 정책은 180일입니다.<br /><br />**참고**: 이벤트는 개요 대시보드에 오가닉으로 표시됩니다. |
 
+<div id="report-structure-1" />
+
 ### 리포트 구조
 
 보고서는 차원과 지표로 구성됩니다.
@@ -375,6 +399,8 @@ bucket
 * **차원**: 문자열입니다. 문자열의 최대 길이는 동적으로, 대부분 광고 계층 구조의 요소를 어떻게 채우느냐에 따라 달라집니다.
 * **지표**: 숫자입니다. **참고:** selected\_currency 필드 형식은 문자열입니다.  
   사용할 수 있는 지표는 수익, 이벤트를 수행하는 고유 사용자 및 이벤트 발생 횟수입니다. ROI 및 ROAS와 같은 비용 관련 지표를 계산하려면 수익 및 비용 지표가 모두 있어야 합니다. 수익 지표는 코호트에서 제공되며, 비용 지표는 ROI360 Cost ETL에서 제공됩니다.
+
+<div id="dimensions-1" />
 
 #### 디멘션
 
@@ -600,6 +626,8 @@ bucket
   </tbody>
 </Table>
 
+<div id="metrics-1" />
+
 #### 측정 지표
 
 | 필드 이름 | 설명 | 형식 |
@@ -611,11 +639,15 @@ bucket
 | revenue\_selected\_currency | <ul><li>선택한 통화의 수익 금액입니다. 예를 들어 선택한 통화가 EUR인 경우 €1234.56는 1234.56으로 반영됩니다.</li><li>소수점 이하 2자리까지 가능</li></ul> | 숫자 |
 | first\_inapp | <ul><li>전환 후 처음으로 이벤트를 수행하는 사용자 수입니다.</li><li>first\_inapp 지표를 합산하면 이벤트에 대한 누적 고유 사용자 수를 얻을 수 있습니다.</li></ul> | 숫자 |
 
+<div id="directory-and-filename-structure-1" />
+
 #### 디렉터리 및 파일 이름 구조
 
 보고서 경로는 다음과 같은 폴더 계층으로 구성됩니다.
 
 다음 형식으로: `/t=cohort_unified_timezone_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### 보고서 폴더 계층 구조
 
@@ -655,6 +687,8 @@ bucket
 * **t:** 보고서 유형.
 * **버전**: 버전이 생성되었을 때의 Unix 타임스탬프.
 
+<div id="report-versions-and-data-freshness-1" />
+
 ### 보고서 버전 및 데이터 새로 고침
 
 * 당일 내 보고서는 몇 시간마다 전송됩니다.
@@ -686,6 +720,8 @@ bucket
 | 20 | 1일 오후 11:59 | 0일차의 전체 전환 및 인앱 이벤트 데이터와 S2S를 통해 전송된 전체 광고 수익 데이터(광고 수익 네트워크 측에서 발생할 수 있는 잠재적 문제를 고려) | 2일차 오전 4시 |
 | 21 | 8일 오전 00:00 | 0일차의 전체 전환 및 인앱 이벤트 데이터와 S2S를 통해 전송된 전체 광고 수익 데이터(광고 수익 네트워크 측에서 발생할 수 있는 잠재적 문제를 고려) | 8일차 오전 6시 |
 
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -738,6 +774,8 @@ bucket
 
 다음은 BI 개발자가 데이터 락커를 통해 추출할 수 있는 코호트 데이터의 인기 있고 실용적인 애플리케이션의 예입니다. 각 예제를 SQL 문과 샘플 Excel 시각적 개체로 설명합니다.
 
+<div id="1-calculate-retention" />
+
 #### **1.**
 
 아래 예제에서는 다음을 수행합니다.
@@ -770,6 +808,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15% |
 | 07315466 | 613770 | 300 | 20% | 12% |
+
+<div id="2-calculate-arpu-of-multiple-in-app-events" />
 
 #### **2.**
 
@@ -807,6 +847,8 @@ group by 1
 | 98765432 | 리인게이지먼트 | 3.57 | 1.34 | 4.86 |
 | 07315466 | 리어트리뷰션 | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. 특정 코호트일의 인앱 이벤트 전환율 계산**
 
 아래 예제에서는 다음을 수행합니다.
@@ -837,6 +879,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | 미국 | 12345678 | 123456 | site\_123 | 45% |
 | 2022-11-05 | 영국 | 98765432 | null | 사이트\_654 | 70% |
 | 2022-10-31 | 한국 | 07315466 | null | null | 63% |
+
+<div id="4-calculate-daily-installs" />
 
 #### **4.**
 
@@ -874,6 +918,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculate-revenue-from-facebook-ads" />
+
 #### **5.**
 
 아래 예제에서는 다음을 수행합니다.
@@ -907,6 +953,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99.23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. 최대 365일의 코호트 일 동안 ASA 키워드 ID당 ARPU 계산**
 
 아래 예제에서는 다음을 수행합니다.
@@ -937,6 +985,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. 지역별 어트리뷰션 시간에 따른 ARPU 7일 계산**
 
@@ -979,6 +1029,8 @@ limit 20
 | 캐나다 | 35,099 | 64,867.84달러 | 7,050.19달러 | 5,656.33달러 | 9,553.75달러 | 8,632.41달러 | 11,308.06달러 |
 | 칠레 | 26,750 | 48,160.02 | 21,249.55달러 | 22,584.57달러 | 24,033.07 | 31,118.91달러 | 41,145.22달러 |
 
+<div id="8-calculate-purchases-day-7-after-conversion" />
+
 #### 24,033.07 전환 후 7일째 되는 날 구매 계산
 
 아래 예제에서는 다음을 수행합니다.
@@ -1019,6 +1071,8 @@ group by 1,2,3,4,5
 | id123456789 | 2024-03-05 | adnet1\_int | campaign\_1 | adset\_1 | 100 | 20 | 20% |
 | id123456789 | 2024-03-07 | adnet2\_int | campaign\_2 | adset\_2 | 200 | 10 | 5% |
 | id123456789 | 2024-03-31 | adnet3\_int | campaign\_3 | adset\_3 | 150 | 15 | 10% |
+
+<div id="9-calculate-dau" />
 
 #### 24,033.07
 
@@ -1074,6 +1128,8 @@ group by 1,2,3
 | 재설치 | <ul><li>재설치 후 이벤트가 속성이 없는 오가닉이라고 간주되는 경우:<ul><li>2024년 5월 26일부터 포함됩니다. <Anchor target="_blank" href="/marketers/ko/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">더 알아보기</Anchor></li><li>설치 시간은 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor> 필드를 기반으로 합니다.</li><li>고유 사용자 및 유지 측정에 포함되지 않습니다.</li></ul></li><li>재설치 후 이벤트가 첫 설치에 속하는 경우 항상 포함됩니다. <Anchor target="_blank" href="/marketers/ko/docs/unique-users">더 알아보기</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

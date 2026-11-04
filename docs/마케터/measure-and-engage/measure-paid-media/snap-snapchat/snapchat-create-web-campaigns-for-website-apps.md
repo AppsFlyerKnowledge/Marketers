@@ -21,19 +21,27 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹사이트 앱에 스냅챗 웹 광고 연동 설정하여 전환 API 통해 웹 전환 신호를 스냅챗 으로 전송하세요.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어 스냅챗 웹 광고와의 연동 지원합니다.`snapweb_int` 웹사이트 앱 캠페인의 경우 Snapchat의 전환 API 통해 직접 기여도 및 전환 데이터를 리포트 할 수 있습니다. 그런 다음 Meta는 해당 데이터를 활용하여 광고 타겟팅을 최적화하고, 성과를 측정하며, 오디언스를 커스텀하여 구축할 수 있습니다.
 
 작동 방식은 다음과 같습니다. 사용자가 스냅챗 광고를 클릭하여 웹사이트에 방문한 후 웹사이트에서 특정 이벤트 (예: 구매 또는 가입)를 완료하면 앱스플라이어 전환 API 통해 스냅챗 에 전환 신호를 전송합니다. 스냅챗 이 데이터를 활용하여 광고 타겟팅 최적화하다 하고 캠페인 성과 측정합니다.
 
+<div id="see-also" />
+
 > 📄 **참고 항목**
 >
 > * <Anchor target="_blank" href="/marketers/ko/docs/web-performance-measurement-overview">앱스플라이어 웹 어트리뷰션 - 개요</Anchor>
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 현재로서는 전환 API 통한 리인게이지먼트 포스트백 전송은 연동 지원 하지 않습니다.
+
+<div id="prerequisites" />
 
 ### 필수 조건
 
@@ -42,12 +50,16 @@ x-zendesk:
 * 앱스플라이어 에서 설정된 웹사이트 앱
 * <Anchor target="_blank" href="https://ads.snapchat.com/">스냅챗 광고 관리자</Anchor> 의 비즈니스 계정
 
+<div id="how-to-set-up-snapchat-ads-for-your-website-app" />
+
 ### 웹사이트 앱에 스냅챗 웹 광고를 설정하는 방법
 
 설정 과정에는 스냅챗 웹 광고와 앱스플라이어 간의 연동 정의하고 스냅챗 광고 관리자에서 캠페인 구성하는 작업이 포함됩니다. 다음 단계를 포함합니다.
 
 * 2부: 앱스플라이어 에 스냅챗 웹 광고 연동 설정하세요(필수).
 * 2부: 스냅챗 웹 광고에 앱스플라이어 연동 설정하세요(필수).
+
+<div id="part-1-set-up-snapchat-ads-integration-in-appsflyer" />
 
 ## 1부: 앱스플라이어 에서 스냅챗 웹 광고 연동 설정하세요
 
@@ -88,12 +100,16 @@ x-zendesk:
 8. [선택 사항] **조건 추가** 아이콘을 클릭하여 이벤트에 대한 <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#조건부-인앱-이벤트-포스트백">조건을 설정</Anchor>합니다.
 9. **연동 저장**을 클릭하세요.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > * 구매 이벤트를 설정하는 경우, **포함** 열을 **값 및 수익**으로 설정합니다. 다른 옵션을 선택하면 포스트백이 실패합니다.
 > * 현재로서는 구매 이벤트 에만 수익 포함하도록 설정할 수 있습니다.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-snapchat-ads" />
 
 ## 2부: 스냅챗 웹 광고에 앱스플라이어 연동 설정하기
 
@@ -138,11 +154,15 @@ x-zendesk:
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > Meta는 광고가 클릭될 때, `ScCid={{ScCid}}`을 도착 URL로 자동으로 추가합니다.
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## 웹 어트리뷰션 데이터 보기
 
@@ -155,12 +175,16 @@ x-zendesk:
 >
 > 웹사이트 앱 캠페인에 대한 대시보드 리포팅 아직 제공되지 않습니다. 웹 캠페인 성과 다른 채널과 함께 분석할 수 있는 통합 리포팅 기능이 향후 출시 에 포함될 예정입니다.
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## 웹 비용으로 웹 어트리뷰션 데이터 측정하세요
 
 스냅챗 광고의 웹 어트리뷰션 데이터 와 웹 비용 데이터를 대시보드 와 <Anchor target="_blank" href="/marketers/ko/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">비용 ETL 보고서</Anchor> 에서 완벽 성과 확인하려면 <Anchor target="_blank" href="/marketers/ko/docs/roi360-onboarding-guide#roi360-소개">ROI360 패키지를</Anchor> 보유하고 다음 설정을 완료해야 합니다.
 
 1. 웹사이트 앱에 비용을 연결하려면 다음을 이용하세요.`snapchat_int` (통하지 않음)`snapweb_int` **비용** 탭 또는 **비용 설정** 페이지에서 확인할 수 있습니다. 비용 데이터 연결 방법에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">ROI360 비용 API 설정하여 비용 데이터 측정하기를</Anchor> 참조하세요.
 2. 캠페인 ID 포함하세요(`af_c_id` ) 랜딩 페이지 URL 에 있습니다. 비용, 클릭 수, 노출 수를 웹 기여도와 연결하여 가장 세밀한 수준 까지 확인할 수 있도록 URL 에 전체 캠페인 계층 구조가 포함되어 있는지 확인하세요.
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

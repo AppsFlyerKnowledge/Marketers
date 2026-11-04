@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 스마트 배너 코드를 웹사이트에 추가하여 웹사이트 방문자를 모바일 앱으로 전환시키세요.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 2023년 11월 8일 기준, 앱스플라이어 스마트 배너 웹 SDK v1은 지원이 종료되었습니다. 웹사이트에 스마트 배너를 표시하기 위해 v2로 업그레이드해야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">더 알아보기</Anchor>
+
+<div id="website-code-implementation" />
 
 ## 웹사이트 코드 구현
 
@@ -214,6 +218,8 @@ x-zendesk:
 4. **파일 업데이트** 버튼을 클릭해 변경사항을 저장하세요.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

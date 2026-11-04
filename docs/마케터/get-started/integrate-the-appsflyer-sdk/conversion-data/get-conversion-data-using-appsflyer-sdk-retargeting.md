@@ -22,13 +22,19 @@ x-zendesk:
 ---
 > **한눈에 보기:** 리어트리뷰션과 리인게이지먼트가 SRN 및 비 SRN 유저 여정에 대한 전환 데이터에 어떻게 반영되는지 알아보세요.
 
+<div id="retargeting-conversion" />
+
 ## 리타겟팅 전환
 
 리타겟팅에는 리어트리뷰션 또는 리인게이지먼트의 두 가지 유형의 전환이 포함됩니다.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 리타겟팅을 위한 전환 데이터가 항상 전환 유형을 명확하게 나타내는 것은 아닙니다. [대체 전환 데이터 소스](#대체-전환-데이터-소스) 참조.
+
+<div id="re-attribution-with-srns" />
 
 ## SRN을 사용한 리어트리뷰션
 
@@ -36,9 +42,13 @@ SRN을 통해 유저가 리어트리뷰션되는 경우 전환 데이터 페이�
 
 이것은 SDK 수준에서 인스톨이 리타겟팅 캠페인에서 발생하는지 확인할 방법이 없다는 것을 의미합니다. 유일한 방법은 리타겟팅 캠페인을 나타내도록 캠페인 이름을 설정하는 것입니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 리타겟팅을 나타내도록 캠페인 이름을 설정하는 것은 **완벽한 방법이 아닙니다**. [자세한 내용은 예제](#유저-유입-및-리어트리뷰션의-혼합-예시)를 참조하십시오.
+
+<div id="re-attribution-with-regular-ad-networks" />
 
 ## 일반 애드 네트워크를 통한 리어트리뷰션
 
@@ -48,6 +58,8 @@ SRN을 통해 유저가 리어트리뷰션되는 경우 전환 데이터 페이�
 
 <Accordion title="Criteo를 통한 리타겟팅 캠페인">
 
+<div id="attribution-link" />
+
 #### 어트리뷰션 링크
 
 ```http
@@ -55,6 +67,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### 전환 데이터 페이로드
 
@@ -96,6 +110,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ## 디퍼드 딥링킹을 사용한 리어트리뷰션
 
 종종 리어트리뷰션의 정의에 따라 앱을 설치하지 않은 리어트리뷰션된 유저를 딥링크하려고 합니다. 예를 들어 앱을 삭제한 유저를 다시 불러오는 것을 목표로 하는 캠페인을 설정합니다. 캠페인이 제품 또는 서비스를 홍보하고 여러분은 광고하는 제품 또는 서비스와 관련된 콘텐츠를 유저에게 제공하려고 합니다.
@@ -107,6 +123,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 <Accordion title="SRN의 디퍼드 딥링킹">
 
 SRN 캠페인에 정의된 딥링크 파라미터는 SRN 외부에서 사용할 수 없습니다. 여기에는 `af_dp` 파라미터가 포함되며, 앱의 스킴 경로가 있습니다. 따라서 디퍼드 딥링킹을 구현하려면 SRN 캠페인에 추가 로직을 적용해야 합니다. `onConversionSuccess` 응답에 캠페인, 광고 세트, 광고 그룹과 같은 데이터를 사용하여 프로그래밍 방식으로 유저를 리디렉션합니다.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Meta 광고와의 디퍼드 딥링킹에 대한 전환 데이터
 
@@ -182,6 +200,8 @@ SRN 캠페인에 정의된 딥링크 파라미터는 SRN 외부에서 사용할 
 
 getConversionData 응답에서 캠페인, 광고 세트 등과 같은 데이터를 사용하여 프로그래밍 방식으로 유저를 리디렉션하고 관련 콘텐츠를 제공합니다.
 
+<div id="note-1" />
+
 > 📄 **예시**
 >
 > 이 앱은 스포츠웨어를 전문으로 하는 이커머스 앱입니다. 앱을 설치하지 않은 유저는 광고에 참여하고 앱을 설치합니다. 앱이 실행되면 SDK가 전환 데이터를 반환합니다. 개발자는 앱이 앱 내에서 **여름 러닝화 컬렉션**(캠페인) 활동을 열도록 하고 **여성용 러닝화** 카테고리(광고 세트)를 제공합니다.
@@ -193,6 +213,8 @@ getConversionData 응답에서 캠페인, 광고 세트 등과 같은 데이터�
 <Accordion title="어트리뷰션 링크를 사용한 디퍼드 딥링킹">
 
 유저를 딥링크하는 방법에는 세 가지가 있습니다.
+
+<div id="uri-schemes" />
 
 #### URI 스킴
 
@@ -250,6 +272,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - 이 파라미터가 나타나고 true로 설정되면 `scheme` 및 `host` 필드를 찾습니다.
 * `scheme` 및 `host` - 이 필드는 어트리뷰션 링크에서 `af_dp` 파라미터를 가져오며 유저가 딥링크되어야 하는 스킴과 액티비티를 나타냅니다
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### iOS 유니버설 링크 및 안드로이드 앱 링크
 
 이것은 딥링킹을 수행하는 세 가지 방법 중 다른 두 가지입니다.
@@ -289,6 +313,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 
 * `shortlink`필드 - 유저가 유입된 특정 원링크를 나타내는 필드입니다. 개발자가 액티비티를 시작하고 콘텐츠를 제공하는 방법을 알 수 있도록 도와줍니다. `campaign`와 같은 다른 필드도 이 목적으로 사용할 수 있습니다.
 
+  <div id="important" />
+
   > 🚧 **중요!**
   >
   > 긴 원링크를 사용할 때 페이로드에 `shortlink` 필드가 나타나지 않습니다.
@@ -296,19 +322,27 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
   > 두 경우 모두(짧거나 긴 원링크) 액티비티를 나타내는 커스텀 파라미터를 추가하는 것이 좋습니다. 예를 들어 `&deep_link_activity=shoes_cateogry`
 
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 유니버설 링크 및 앱 링크 사용은 원링크에서만 가능합니다.
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ## SRN을 사용한 리인게이지먼트
 
 리어트리뷰션 캠페인과 무척 유사하게 유저가 SRN을 통해 리인게이지먼트할 때 전환 데이터는 이것이 리인게이지먼트 캠페인임을 나타내지 않습니다. 리인게이지먼트 캠페인을 나타내도록 캠페인 이름을 설정할 수 있습니다.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ## 일반 애드 네트워크를 통한 리인게이지먼트
 
 여기에서도 전환 데이터 페이로드는 유저가 리인게이지먼트 캠페인에서 왔다는 것을 나타내지 않습니다. 이 제한을 극복하려면 리인게이지먼트를 나타낼 수 있게 캠페인 이름을 설정해야 합니다.
+
+<div id="re-engagement-with-deep-linking" />
 
 ## 딥링킹을 통한 리인게이지먼트
 
@@ -346,6 +380,8 @@ iOS와 안드로이드에서 단축 버전의 원링크를 사용할 때, 전환
 
 * 앱 개발자는 `af_dp` 및 캠페인 이름과 같은 파라미터를 사용하여 유저를 특정 액티비티로 보내고 관련 콘텐츠를 제공할 수 있습니다.
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > 단축 버전의 원링크를 사용하는 것을 권장합니다. 더 자세히 알아보려면 <Anchor target="_blank" href="/marketers/ko/docs/understand-onelink-short-vs-long-urls">여기</Anchor>를 클릭하십시오.
@@ -360,12 +396,18 @@ iOS와 안드로이드에서 단축 버전의 원링크를 사용할 때, 전환
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ## 대체 전환 데이터 소스
 
 * Push API는 리어트리뷰션 또는 리인게이지먼트를 나타내는 상세한 전환 페이로드를 제공합니다. Push API 페이로드에는 `re_targeting_conversion_type`라는 필드가 포함됩니다. 이 필드는 전환 유형(리어트리뷰션 또는 리인게이지먼트)을 나타냅니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/push-api-streaming-raw-data">Push API 가이드</Anchor>를 참조하십시오.
 * 로데이터 리포트에는 전환 유형에 대한 지표도 포함되어 있습니다. 리타겟팅 전환에 대한 로데이터 리포트에는 ***이벤트 이름*** 열이 있습니다. 이 열의 값은 전환 유형에 따라 ***리인게이지먼트*** 또는 ***리어트리뷰션***입니다.
 
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
+
 ## 유저 유입 및 리어트리뷰션의 혼합 예시
+
+<div id="note-3" />
 
 > 📄 **예시**
 >

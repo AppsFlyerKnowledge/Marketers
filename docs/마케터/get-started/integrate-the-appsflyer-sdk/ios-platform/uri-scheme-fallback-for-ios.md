@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: iOS 기기 사용자가 원링크 커스텀 링크를 클릭하고 유니버설 링크가 앱을 열지 못하는 경우의 흐름을 이해합니다.
 
+<div id="about-uri-fallback-for-ios" />
+
 ## iOS용 URI 폴백 정보
 
 * iOS 기기에서 앱을 실행하는 가장 좋은 방법은 유니버설 링크를 사용하는 것입니다. 2016년 이후 iOS 유니버설 링크가 앱을 열지 못하면 내장 OS에서 URI 스킴을 폴백 메서드로 사용하는 데 상당한 제약이 있습니다. 이러한 제한은 앱스플라이어와 관련이 없으며 앱을 여는 데 사용할 수 있는 URI 스키마가 있는 다른 링크에도 영향을 미칩니다.
@@ -34,9 +36,13 @@ x-zendesk:
 * 다른 브라우저의 경우 URI 스키마는 예측할 수 없으므로 기본적으로 지원되지 않습니다. 링크를 클릭하는 사용자는 앱 스토어(또는 설정된 경우 af\_ios\_url 파라미터에 설정된 URL)로 리디렉션될 수 있습니다.
 * 자세한 내용은 시나리오 순서도 및 사용 사례를 참조하십시오.
 
+<div id="scenarios-flowchart" />
+
 ### 시나리오 흐름도
 
 ![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://files.readme.io/aec44d772261fb7461b3cfeb6331c93659206c6b7ad62f5914f26c0bd2cab407-51912778632465.png)
+
+<div id="use-cases" />
 
 ## 활용 사례
 
@@ -51,6 +57,8 @@ x-zendesk:
 * Naver
 * 네이버 블로그
 * Weibo
+
+<div id="flowchart" />
 
 #### **흐름도**
 
@@ -87,6 +95,8 @@ x-zendesk:
   8. 사용자가 **확인**을 클릭하면 앱 스토어로 리디렉션됩니다.
   9. 사용자가 **취소**를 클릭하면 방문 페이지에 남아 있습니다.
 
+<div id="flowchart-1" />
+
 #### **흐름도**
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
@@ -115,6 +125,8 @@ x-zendesk:
 4. 사용자가 **닫기**를 클릭하면 백그라운드에서 랜딩 페이지가 표시됩니다.  
    [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. 사용자가 앱 스토어 배지를 클릭하면 앱 스토어로 리디렉션됩니다.
+
+<div id="flowchart-2" />
 
 #### **흐름도**
 

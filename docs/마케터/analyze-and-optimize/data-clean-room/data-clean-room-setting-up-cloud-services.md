@@ -24,6 +24,8 @@ x-zendesk:
 
 > **한눈에 보기:** 요약: 하나 이상의 데이터 웨어하우스(BigQuery, Snowflake) 및/또는 클라우드 스토리지 버킷(Amazon S3, GCS)을 설정하여 Data Clean Room에 데이터를 공유하고 리포트를 수신합니다.
 
+<div id="overview" />
+
 ## 개요
 
 DCR(Data Clean Room) 사용 준비에는 다음 설정이 포함됩니다.
@@ -36,6 +38,8 @@ DCR(Data Clean Room) 사용 준비에는 다음 설정이 포함됩니다.
 * **1 단계 –** 선택한 클라우드 서비스의 인터페이스를 사용하여 DCR과 함께 사용할 수 있도록 준비합니다(본 기사).
 * **#2단계 –** 앱스플라이어 플랫폼을 사용하여 DCR에 연결합니다. (<Anchor target="_blank" href="/marketers/ko/docs/data-clean-room-working-with-connections">Data Clean Room - 연결 작업</Anchor> 참조).
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/data-clean-room-working-with-sources#source-format">Data Clean Room—소스</Anchor> 데이터 요구사항에 대한 전체 정보는 소스 작업을 참조하십시오.
@@ -43,20 +47,28 @@ DCR(Data Clean Room) 사용 준비에는 다음 설정이 포함됩니다.
 > * 테이블 열(*데이터 웨어하우스의 원본용)*
 > * 파일 이름 및 형식*(Cloud Storage 버킷의 소스용)*
 
+<div id="supported-cloud-services" />
+
 ### 지원되는 클라우드 서비스
 
 DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 클라우드 서비스가 지원됩니다.
 
 인바운드 및 아웃바운드 연결에 이러한 서비스 중 하나 또는 임의의 조합을 사용할 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 단일 리포트에 여러 커스텀 소스를 사용하려는 경우 해당 소스는 클라우드 저장소 버킷에 있어야 합니다.
 > * 인바운드 및 아웃바운드 연결 모두에 대해 Amazon S3 또는 GCS에서 동일한 클라우드 스토리지 버킷을 사용하는 것은 매우 일반적입니다. [해당 설정에 대한 특별 지침](/docs/data-clean-room-setting-up-cloud-services#인바운드-및-아웃바운드-연결-모두에-대해-동일한-클라우드-저장소-버킷-설정)을 반드시 따라야 합니다.
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## 인바운드 연결을 위한 클라우드 서비스 설정
 
 다음 탭의 지침에 따라 DCR 인바운드 연결에 사용할 클라우드 서비스를 선택하여 준비합니다.
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### 데이터 웨어하우스 – BigQuery와 Snowflake
 
@@ -119,6 +131,12 @@ DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 �
 9. **공유 만들기** 버튼을 클릭합니다.
 
 </Accordion>
+
+<div id="code-snippet" />
+
+<div id="step-4" />
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### 클라우드 스토리지 버킷 – Amazon S3 및 GCS
 
@@ -226,6 +244,8 @@ DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 �
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## 아웃바운드 연결을 위한 클라우드 서비스 설정
 
 DCR은 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers">앱스플라이어 데이터 락커</Anchor>를 사용하여 선택한 클라우드 서비스에 리포트를 제공합니다.
@@ -233,6 +253,8 @@ DCR은 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketer
 * **참고:** DCR 리포트를 수신하는 데 데이터 락커에 대한 프리미엄 구독이 필요하지 않습니다. 데이터 락커를 통해 다른 앱스플라이어 리포트를 수신하려면 CSM에 문의하거나 [hello@appsflyer.com](mailto:hello@appsflyer.com)로 이메일을 보내주십시오.
 
 DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 수 있습니다(인바운드 연결에 동일한 서비스를 사용하는지 여부에 관계없이). 다음 탭의 지침에 따라 아웃바운드 연결과 함께 사용할 수 있도록 준비합니다.
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### 데이터 웨어하우스 – BigQuery와 Snowflake
 
@@ -275,6 +297,8 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### 클라우드 스토리지 버킷 – Amazon S3 및 GCS
 
 아웃바운드 연결을 위해 클라우드 스토리지 버킷을 준비하는 절차는 [인바운드 연결을](/docs/data-clean-room-setting-up-cloud-services#인바운드-연결을-위한-클라우드-서비스-설정) 위해 준비하는 절차와 매우 유사합니다(두 클라우드 스토리지 서비스와 관련된 지침 포함).
@@ -300,6 +324,8 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## 인바운드 및 아웃바운드 연결 모두에 대해 동일한 클라우드 저장소 버킷 설정
 
 앞서 언급했듯이 인바운드 및 아웃바운드 연결 모두에 대해 Amazon S3 또는 GCS에서 동일한 버킷을 사용하는 것이 일반적입니다.
@@ -315,9 +341,13 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### 인바운드/아웃바운드 연결을 위한 새 버킷 생성
 
 [인바운드 연결을 위한 Amazon S3 버킷](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) 생성 지침을 따르십시오(해당 절차는 변경하지 않음).
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### 이전에 데이터 락커에만 사용되었던 기존 버킷 수정
 
@@ -369,11 +399,15 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### 인바운드/아웃바운드 연결을 위한 새 버킷 생성
 
 [인바운드 연결을 위한 GCS 버킷](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound) 생성 안내를 따르십시오.   
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### 이전에 데이터 락커에만 사용되었던 기존 버킷 수정
 

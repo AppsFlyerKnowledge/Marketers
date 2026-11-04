@@ -23,13 +23,19 @@ x-zendesk:
 
 <span id="ssot-reports-in-data-locker"></span>참고: SSOT 데이터 보관소 보고서는 활동 기반 데이터가 아닌 LTV 기반 데이터를 포함합니다. 이는 데이터가 사용자의 모든 접점에서의 생애 가치를 반영하며, 앱 내 또는 이벤트 활동을 반영하지 않음을 의미합니다.
 
+<div id="what-is-data-locker" />
+
 ## 데이터 락커란?
 
 데이터 락커는 AWS, GCS, Snowflake 등 주요 클라우드 플랫폼에 직접 데이터를 제공하는 보안 솔루션입니다. 마케터는 데이터 락커를 통해 포괄적인 분석 및 리포팅을 위해 내부 BI 시스템에 데이터를 쉽게 통합하고 사용할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/data-locker-advertiser-reports?query=data%20locker">더 알아보기</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## SSOT(Single Source of Truth)란?
 
 SSOT(Single Source of Truth) 솔루션은 ID 매칭, SKAN 등의 다양한 어트리뷰션 방법에서 얻은 데이터를 병합하여 앱 캠페인 성과에 대한 통합적이고 정확한 개요를 제공하여 데이터 단편화 문제를 해결하는 것을 목표로 합니다. <Anchor target="_blank" href="/marketers/ko/docs/single-source-of-truth-ssot-guide-for-ios-attribution">더 알아보기</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## 데이터 락커에서 SSOT 리포트의 이점
 
@@ -66,6 +72,8 @@ SSOT(Single Source of Truth) 리포트를 활성화하려면 다음 절차 중 �
 | 데이터 최신성 | <ul><li>일별.</li><li>지표는 해당 날짜가 끝나는 시점인 자정(UTC)에 사용 가능한 데이터를 사용하여 계산합니다.</li><li>SLA: 새 리포트는 16:00 UTC까지 데이터 락커에서 확인할 수 있습니다. 매일 마지막 15개 설치 날짜에 대해 새 버전이 생성됩니다. [더 보기](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
 
 </Accordion>
+
+<div id="directory-structure" />
 
 ## 디렉터리 구조
 
@@ -135,6 +143,8 @@ bucket
 * version: 버전이 생성된 시점을 나타내는 Unix 타임스탬프입니다.
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## 리포트 구조
 
@@ -523,6 +533,8 @@ bucket
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## BI 개발사 고려사항
 
 **리포트의 데이터 범위:**
@@ -548,6 +560,8 @@ bucket
 <div id="days-postattribution" />
 
 <Accordion title="어트리뷰션 후 일수">
+
+<div id="important" />
 
 > 🚧 **중요!**
 >

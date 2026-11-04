@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **한눈에 보기:** 원링크 사용자정의 링크 리디렉선/동작 이슈를 테스트하고 디버깅하는 간단한 해결 방식을 안내해 드립니다.
 
+<div id="onelink-troubleshooting-guide" />
+
 ## 원링크 문제 해결 가이드
 
+<div id="onelink-frequently-asked-questions" />
+
 ## 원링크 FAQ
+
+<div id="onelink-template-faq" />
 
 ### 원링크 템플릿 FAQ
 
@@ -36,6 +42,8 @@ x-zendesk:
 
 **App Links:** 안드로이드 버전 6.0 이상 사용자용 **참고**: 삼성 OS는 안드로이드 앱 링크를 사용하여 앱을 실행할 수 없습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 유니버설 링크와 앱 링크는 모두 클릭한 URL(즉, 원링크 사용자정의 링크 도메인 또는 브랜드 도메인)의 도메인이 열려는 특정 앱과 연결되어 있다는 증거가 필요합니다. 이 도메인 연결은 iOS용 **Apple 앱 사이트 연결 파일(AASA)** 및 안드로이드용 **Assetlinks** 파일을 통해 수행됩니다.
@@ -46,6 +54,8 @@ x-zendesk:
 
 * 6.0 이전 버전을 사용하는 안드로이드 사용자(안드로이드 사용자의 15% 미만)에게 사용
 * 유니버설 링크와 앱 링크가 작동하지 않거나 설정되지 않았기 때문에 유니버설 링크와 앱 링크가 앱을 열지 못할 경우 폴백으로 사용 가능합니다. **참고:** 유니버설 링크에 대해 URI 스킴을 폴백으로 사용하면 iOS 기반 제한 사항이 적용됩니다. <Anchor target="_blank" href="/marketers/ko/docs/uri-scheme-fallback-for-ios">더 알아보기</Anchor>.
+
+<div id="deep-linking" />
 
 #### 딥링킹
 
@@ -194,6 +204,8 @@ iOS 유니버설 링크 및 안드로이드 앱 링크를 사용하여 앱을 �
 
 **참고:** 링크에 `af_web_dp`가 포함된 경우, 앱스플라이어는 데스크톱의 클릭을 등록하지 않습니다.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > SMS 또는 이메일을 통해 데스크톱 사용자의 모바일 기기에 원링크 URL을 보내는 전용 웹 양식이 포함된 웹 URL로 데스크톱 사용자 리디렉션을 시도해 보십시오. <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#desktop">원링크 스마트 스크립트</Anchor> 솔루션의 일부인 이 옵션에 대해 자세히 알아보십시오.
@@ -215,6 +227,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
    링크 설정을 통해 추가되면 `af_android_url` 파라미터의 링크에 URL이 추가됩니다.
 
 </Accordion>
+
+<div id="onelink-link-faq" />
 
 ### 원링크 링크 FAQ
 
@@ -277,6 +291,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 
 사용자 환경을 개선하기 위한 두 가지 솔루션은 폴백 URL과 강제 딥링킹입니다.
 
+<div id="fallback-urls" />
+
 #### 폴백 URL
 
 어떤 이유로든 앱 열기 또는 딥링킹이 실패할 경우 폴백 URL은 사용자를 지정된 웹 페이지로 보냅니다. **주의!** 또한 앱을 설치하지 않은 사용자를 올바른 앱 스토어 대신 폴백 URL로 보냅니다. 따라서 앱을 이미 설치한 사용자를 리타겟팅하는 경우에만 이 옵션을 사용하십시오.
@@ -286,6 +302,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 [![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
 
 이 설정을 사용하면 `af_ios_url` 및 `af_android_url`이 폴백의 대상 파라미터로 추가되므로 iOS 사용자는 `af_ios_url`에서 지정한 페이지로, 안드로이드 사용자는 `af_android_url`에서 지정한 페이지로 리디렉션됩니다.
+
+<div id="tip-1" />
 
 > 📄 **예시**
 >
@@ -301,9 +319,13 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 > * iOS: www.yoursite.com/ios-bonus
 > * 안드로이드: www.yoursite.com/android-bonus
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 리디렉션이 발생하면 원링크 URL 파라미터는 `af_ios_url` 또는 `af_android_url`로 지정된 대상 페이지로 전달됩니다. 이 동작을 방지하려면 `af_param_forwarding=false` 파라미터를 원링크에 추가합니다.
+
+<div id="forced-deep-linking" />
 
 #### 강제 딥링킹
 
@@ -344,6 +366,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 **설치당 비용 사용**(**고급 파라미터**에서)을 설정하면 링크에서 오는 각 설치에 구체적 CPI 값을 적용할 수 있습니다.
 
 비용 통화 단위를 선택한 다음 CPI를 나타내는 **숫자 값**(소수점 이후 최대 4자리)을 선택합니다. 그러면 링크에 af\_cost\_currency 및 af\_cost\_value 파라미터가 추가됩니다.
+
+<div id="tip-2" />
 
 > 📄 **예시**
 >
@@ -490,6 +514,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### 원링크 파라미터 FAQ
 
 <div id="what-parameters-are-mandatory-for-onelink-custom-links" />
@@ -507,6 +533,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 **예,** 모든 파라미터를 짧은 URL에 추가할 수 있습니다.
 
 **중요!** 짧은 URL에 첨부된 파라미터는 링크 내부의 파라미터를 재정의하지 않습니다.
+
+<div id="tip-3" />
 
 > 📄 **예시**
 >
@@ -568,6 +596,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 
 </Accordion>
 
+<div id="integrated-partner-faq" />
+
 ### 연동 파트너 FAQ
 
 <div id="can-i-use-onelink-in-social-apps-unpaid" />
@@ -590,6 +620,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 
 **예,** 그러나 원링크는 주로 광고 네트워크가 아닌 온드 미디어와 함께 사용된다는 점을 명심해야 합니다. 광고 네트워크는 일반적으로 앱(사용자의 플랫폼, 기기 ID 등을 알고 있다는 의미)에 광고를 하므로 앱 및 플랫폼별 어트리뷰션 링크로 충분하므로 원링크를 사용할 필요가 없습니다. 하지만 애드 네트워크가 사용자 플랫폼을 미리 알지 못하는 경우(예를 들어, 이메일 또는 SMS 캠페인을 직접 실행할 경우)에는 원링크가 솔루션이 될 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 원링크를 애드 네트워크에서 사용할 때는 원링크의 긴 URL을 사용해야 합니다.
@@ -599,6 +631,8 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">광고 네트워크 어트리뷰션 링크 지침</Anchor>을 따르고 메시지가 표시되면 **원링크 사용**을 선택합니다.
 
 안드로이드 및 iOS에 대한 모든 파라미터가 올바르게 추가되었으면, 원링크 커스텀 링크를 누르고 사용자를 올바른 플랫폼으로 리디렉션하면 사용자가 설치한 후 필요한 파라미터가 포스트백 내의 네트워크로 전송됩니다.
+
+<div id="tip-4" />
 
 > 📄 **예시**
 >
@@ -674,6 +708,8 @@ WeChat은 안드로이드 및 iOS 딥링크를 재정의하여 사용자를 웹�
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### 테스트 FAQ
 
 <div id="how-can-i-ab-test-the-social-app-landing-page" />
@@ -711,6 +747,8 @@ WeChat은 안드로이드 및 iOS 딥링크를 재정의하여 사용자를 웹�
 원링크를 테스트할 때 앱 선택 대화상자가 나타나면 <Anchor target="_blank" href="https://developer.android.com/studio/publish/app-signing">디버그 앱</Anchor>이더라도 <Anchor target="_blank" href="https://developer.android.com/studio/publish/app-signing#debug-mode">앱에 로그인</Anchor>하세요. 앱에 로그인할 때 사용하는 인증서는 앱 링크에 대한 원링크를 구성할 때 <Anchor target="_blank" href="https://dev.appsflyer.com/docs/initial-setup-for-deep-linking-and-deferred-deep-linking#generating-a-sha256-fingerprint">SHA256 핑거프린트를 생성</Anchor>하는 데 사용하는 것과 동일한 인증서입니다.
 
 </Accordion>
+
+<div id="deep-linking-faq" />
 
 ### 딥링킹 FAQ
 

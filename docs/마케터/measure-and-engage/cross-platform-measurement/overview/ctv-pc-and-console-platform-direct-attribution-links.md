@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **요약:**  CTV, PC, 콘솔 플랫폼에 대한 앱스플라이어 어트리뷰션 링크와 파라미터를 자세히 알아보십시오. **참고**: 안드로이드 PC 게임을 포함한 안드로이드 및 iOS 앱에는 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters">모바일 어트리뷰션 링크 지침</Anchor>을 사용하십시오.
 
+<div id="overview" />
+
 ## 개요
 
 CTV, PC 및 콘솔 플랫폼 다이렉트 어트리뷰션 링크를 사용하면 광고주가 클릭 후 사용자를 리디렉션하고 데이터를 수집할 수 있습니다. 이러한 직접 어트리뷰션 링크는 **한 번에 한 플랫폼에서 실행되는 하나의 목적 앱에 대한** 리디렉션 및 어트리뷰션을 지원하는 앱스플라이어 링크입니다. 리디렉션 대상은 링크에 포함된 af\_r 파라미터의 값입니다.
@@ -32,9 +34,13 @@ CTV, PC 및 콘솔 플랫폼 다이렉트 어트리뷰션 링크를 사용하면
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">또는 EngagementsAPI를 사용하여 S2S를 통해 링크를 만들 수 있습니다. 이는 약간의 개발 작업을 요구합니다. **참고**: S2S를 통해 생성된 링크도 노출 데이터를 수집할 수 있습니다.</Anchor>
 
+<div id="attribution-link" />
+
 ### 어트리뷰션 링크
 
 <table><thead><tr><th colspan="2">어트리뷰션 링크 구조</th></tr></thead><tbody><tr><td>기본 URL</td><td>engagement.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>필수 경로 파라미터</td><td><ul><li>플랫폼<br/>예: steam</li><li>app_id<br/>예: 123456</li></ul></td></tr><tr><td>필수 쿼리 파라미터</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>기타 파라미터</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#파라미터">전체 보기</a></td></tr><tr><td>URL 구조</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr><tr><td>샘플 URL</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=aloha&amp;af_campaign_id=1234&amp;af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello</code></td></tr></tbody></table>
+
+<div id="parameters" />
 
 ### 파라미터
 
@@ -64,6 +70,8 @@ CTV, PC 및 콘솔 플랫폼 다이렉트 어트리뷰션 링크를 사용하면
 | af\_device\_id\_type | 해당 없음 | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>디바이스 식별자 유형 다음 중 하나:<ul><li>Vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>커스텀</li></ul> | 문자열 |
 | af\_device\_id\_value | 해당 없음 | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>디바이스 식별자 값 | 문자열 |
 | af\_r | 해당 없음 | <ul><li>필수</li><li>올바른 애플 앱 스토어나 랜딩 페이지로 연결되는 링크를 포함합니다.</li><li>af\_r 매개변수 내의 모든 것은 인코딩해야 합니다. 여기에는 UTM 매개변수 값이 포함됩니다(추가된 경우).</li></ul>**참고:** | 문자열 |
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

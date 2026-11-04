@@ -25,11 +25,15 @@ x-zendesk:
 
 사용자 기반 어트리뷰션 흐름 및 설정에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/beta-user-based-cross-platform-attribution">사용자 기반 크로스 플랫폼 어트리뷰션</Anchor>을 참조하십시오.
 
+<div id="report-fields" />
+
 ## 리포트 필드
 
 리포트에 포함된 필드를 확인하려면 [리포트 샘플을 다운로드하십시오](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
 
 리포트 샘플은 모든 리포트 필드와 해당 값을 포함합니다. 필드의 정의는 필드 사전 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary">을 참조하십시오</Anchor>.
+
+<div id="report-data-freshness" />
 
 ## 리포트 데이터 최신성
 
@@ -40,9 +44,13 @@ x-zendesk:
 * 이벤트는 해당 시간 별 버킷에 할당됩니다.
   * 예시: 오전 3시에서 4시 사이에 데이터베이스에 입력한 이벤트는 오전 3시 버킷에 표시됩니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 일반적으로 이벤트의 실제 발생과 데이터베이스에 입력 사이에 짧은 지연이 있습니다. 리포트는 데이터베이스 입력 시간을 사용하여 정확하고 일관된 시간 별 그룹화를 보장합니다.
+
+<div id="example-of-the-800-am-batch-run" />
 
 ### 8:00 AM 배치 실행 예시
 
@@ -58,11 +66,15 @@ x-zendesk:
 * 실행 전 마지막 시간의 이벤트는 관련 CUID로 이벤트를 보강할 충분한 시간이 필요하도록 처리되지 않습니다. 위의 예시에서는 8:00 AM 배치 프로세스 이벤트가 3:00&#126;7:00 사이에 데이터베이스에 입력되었습니다. 7:00시에서 8:00시 사이에 데이터베이스에 입력한 이벤트는 처리되지 않습니다.
 * 내부 프로세스가 해당 시간 동안 배치를 업데이트하기 때문에 이 리포트는 배치 실행 후 한 시간 후에만 사용할 수 있습니다. 위의 예시에서는 8:00 AM 배치가 9:00 AM에 제공됩니다.
 
+<div id="how-to-subscribe-to-the-report" />
+
 ## 보고서를 구독하려면 어떻게 해야 하나요?
 
 1. 앱스플라이어의 사이드 메뉴에서 **내보내기 > 데이터 락커**를 선택합니다.
 2. **데이터 락커 콘텐츠 창**에서 스크롤을 내려서 **고급 리포트** 섹션으로 이동합니다.
 3. 최종 사용자 이벤트 크로스 플랫폼
+
+<div id="how-to-access-the-report-data-in-your-cloud-bucket" />
 
 ## 클라우드 버킷의 리포트 데이터에 어떻게 액세스하나요?
 
@@ -72,9 +84,13 @@ x-zendesk:
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
+<div id="dl-report-folder-hierarchy" />
+
 ### 리포트 폴더 계층 구조
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+
+<div id="bi-developer-considerations" />
 
 ## BI 개발사 고려사항
 
@@ -82,6 +98,8 @@ x-zendesk:
 * 광고 수익 이벤트는 아직 포함되지 않았습니다.
 * 모든 앱 데이터는 단일 파일로 제공됩니다. 앱 ID 필드를 사용하여 앱별로 데이터를 분리하거나 데이터 락커를 앱별로 분리하도록 설정합니다. 통합 분류 유형을 사용하는 것이 좋습니다.
 * 비용, 클릭 및 노출과 같은 사전 어트리뷰션 데이터는 비용 ETL 리포트에서 추출해야 합니다.
+
+<div id="query-examples" />
 
 ### 쿼리 예시
 

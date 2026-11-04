@@ -28,6 +28,8 @@ x-zendesk:
 | **내가 뭘 알아야 하지?** | 리퍼러 데이터는 Meta 광고 연동에서 제공하는 데이터보다 우선하며, 로데이터 리포트에서 확인할 수 있습니다. 이 솔루션은 클릭-쓰루 어트리뷰션과 뷰-쓰루 어트리뷰션 모두에 적용됩니다. |
 | **어떤 영향이 있을까요?** | <ul><li>결과적으로 로데이터 리포트에서 Meta 어트리뷰션 인스톨이 증가하는 것을 확인할 수 있습니다.</li><li>페이스북 앱 및</li></ul> |
 
+<div id="see-also" />
+
 > 📄 **참고 항목**
 >
 > * <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-integration-setup#userlevel-data">Meta 인스톨 리퍼러</Anchor>

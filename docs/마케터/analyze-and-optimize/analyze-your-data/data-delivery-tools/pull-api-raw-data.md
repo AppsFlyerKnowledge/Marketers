@@ -26,6 +26,8 @@ x-zendesk:
 
 [altPullAPIRaw\_us-en.pngalt](https://support.appsflyer.com/hc/article_attachments/30996075641233)
 
+<div id="pull-api-raw-data" />
+
 ## Pull API 로데이터
 
 * Pull API를 사용하면 CSV 파일 형식으로 원시 데이터 보고서를 받을 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">원시 데이터 보고서에 대해 자세히 알아보기</Anchor>
@@ -33,6 +35,8 @@ x-zendesk:
 * Pull API의 추가 기능은 다음과 같습니다.
   * 통화 선택
   * 시간대 선택
+
+<div id="raw-data-reports-available-via-pull-api" />
 
 #### Pull API를 통해 사용할 수 있는 로데이터 리포트
 
@@ -48,6 +52,8 @@ x-zendesk:
 2. 인증 헤더에 사용할 API 토큰을 귀사의 개발자에게 제공하세요.
 3. 다음 절에 설명한 데 따라 개발자에게 API 호출을 할 때 입력할 파라미터를 제공합니다. 파라미터는 리포트의 중점 사항, 구성 방법을 결정하고 리포팅 기간을 제공합니다.
 4. 개발자에게 개발자 허브에서 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-5">Pull API 원시 데이터 지침</Anchor>을 따르라고 알려주세요.
+
+<div id="parameters" />
 
 #### 파라미터
 
@@ -199,6 +205,8 @@ API 결과가 최대값을 초과하면, 시간과 분을 기준으로 보고서
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="traits-and-limitations" />
@@ -232,6 +240,8 @@ API 결과가 최대값을 초과하면, 시간과 분을 기준으로 보고서
 | 리포트에 선택한 시간 범위에 따라 예상된 데이터가 포함되어 있지 않거나 원본 데이터 리포트와 집계 데이터 리포트 간에 불일치가 있습니다. | `timezone`매개변수를 설정했는지 확인하십시오. 설정하지 않으면 앱 시간대가 아닌 UTC로 데이터가 전송됩니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

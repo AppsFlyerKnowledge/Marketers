@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **요약:** 특정 앱의 비용을 활성화하세요.
 
+<div id="overview" />
+
 ## 개요
 
 Cost API를 사용하여 집계된 마케팅 비용 데이터(비용 관련 LTV 성과 지표 포함)를 가져옵니다. 데이터는 정확하고, 소급 적용되며 자동화되어 있습니다.
@@ -66,6 +68,8 @@ Cost API를 사용하여 집계된 마케팅 비용 데이터(비용 관련 LTV 
 특정 파트너가 사용하는 방법을 확인하려면 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">광고 네트워크 비용 통합 표</Anchor>의 **통합 방법** 열을 참조하세요.
 
 </Accordion>
+
+<div id="map-apps-to-site-ids" />
 
 <div id="site-id-mapping" />
 

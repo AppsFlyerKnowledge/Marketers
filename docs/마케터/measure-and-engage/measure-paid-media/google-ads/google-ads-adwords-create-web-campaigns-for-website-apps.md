@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹사이트 앱을 위한 구글 광고 통합을 설정하여 오프라인 전환 API(OCI)를 통해 구글에 웹 전환 신호를 전송합니다.
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 웹사이트 앱 캠페인을 위한 구글 광고(`googleads_int`)와의 통합을 지원하며, 구글 오프라인 전환 API(OCI)를 통해 전환 데이터를 보고합니다.
@@ -32,9 +34,13 @@ x-zendesk:
 
 캠페인 흐름은 사용자가 구글 광고를 클릭하고 귀하의 웹사이트에 도착할 때 시작됩니다. 사용자가 웹사이트 이벤트(예: 구매 또는 가입)를 완료하면, 앱스플라이어는 OCI를 통해 구글 광고에 전환 신호를 전송합니다. 구글은 이 데이터를 사용하여 광고 타겟팅을 최적화하고 캠페인 성과를 측정합니다.
 
+<div id="see-also" />
+
 > 📄 **참고 항목**
 >
 > * <Anchor target="_blank" href="/marketers/ko/docs/web-performance-measurement-overview">앱스플라이어 웹 귀속 - 개요</Anchor>
+
+<div id="prerequisites" />
 
 ### 필수 조건
 
@@ -44,12 +50,16 @@ x-zendesk:
 * 귀하의 웹사이트에 배포된 앱스플라이어 웹 SDK
 * 적절한 역할 또는 권한이 있는 앱스플라이어 계정
 
+<div id="how-to-set-up-a-google-ads-web-campaign" />
+
 ### 구글 광고 웹 캠페인 설정 방법
 
 설정은 두 부분으로 나뉩니다:
 
 1. 앱스플라이어에서 Google Ads 연동 설정(필수)
 2. 구글 광고에서 캠페인 설정(필수)
+
+<div id="set-up-the-google-ads-integration-in-appsflyer" />
 
 ## 앱스플라이어에서 구글 광고 통합 설정
 
@@ -65,6 +75,8 @@ x-zendesk:
 4. 앱 드롭다운에서 웹 앱을 선택합니다.
 5. **연동** 탭에서 **파트너 활성화**를 켭니다.
 
+   <div id="note" />
+
    > 📘 **참고**
    >
    > 파트너와 작업하는 동안에는 토글이 켜져(활성화) 있어야 합니다.
@@ -79,6 +91,8 @@ x-zendesk:
 8. Google에서, 고객 ID를 불러온 MCC 계정의 관리자 계정을 선택하세요.
 9. **허용**을 클릭합니다.
 
+   <div id="note-1" />
+
    > 📘 **참고**
    >
    > Google에 로그인하고 아래 단계에서 앱스플라이어가 토큰을 가져오도록 허용하면 *누락된 토큰* 오류 메시지가 더 이상 나타나지 않습니다. 로그인 후에도 오류가 지속되면 토큰에 필요한 권한이 있는지 확인하세요.
@@ -92,6 +106,8 @@ x-zendesk:
 
 웹사이트 이벤트를 Google Ads 전환 작업에 매핑하십시오. AppsFlyer는 이러한 이벤트를 OCI를 통해 Google에 전송하여 전환 기반 최적화를 지원합니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 웹사이트 앱의 경우 모든 이벤트는 웹 이벤트이며 설치 이벤트는 없습니다. Google이 최적화할 각 이벤트는 해당 Google Ads 전환 작업 ID에 매핑되어야 합니다.
@@ -100,6 +116,8 @@ x-zendesk:
 2. 필요한 경우 **앱 내 이벤트 포스트백 창**을 설정하십시오. 창은 사용자의 첫 번째 웹사이트 전환 이벤트 발생 시 열립니다(모바일 설치 날짜의 웹 버전).
 3. **이벤트 추가**를 클릭하세요.
 4. **AppsFlyer 이벤트** 열에서 전송할 웹사이트 이벤트를 선택하십시오(예: `purchase`, `sign_up`).
+
+   <div id="note-3" />
 
    > 📘 **참고**
    >
@@ -114,6 +132,8 @@ x-zendesk:
 8. **연동 저장**을 클릭하세요.
 
 </Accordion>
+
+<div id="set-up-a-web-conversion-campaign-in-google-ads" />
 
 ## Google Ads에서 웹 전환 캠페인 설정하기
 
@@ -147,11 +167,15 @@ AppsFlyer에서 매핑한 각 웹사이트 이벤트에 대해 Google Ads에서 
 5. **전환 목표**에서 전환 동작 카테고리를 선택합니다.
 6. **전환 이름**을 입력합니다.
 
+   <div id="important" />
+
    > 🚧 **중요!**
    >
    > GBRAID/WBRAID(GCLID 외 추가로)와 함께 오프라인 전환 API를 사용하려면 전환 작업의 <strong>Count</strong> 필드가 <strong>‘매번’</strong> (기본값)으로 설정되어 있고 <em>‘한 번’</em>으로 설정되어 있지 않은지 확인하십시오.
 
 7. **전환 이름**을 입력하고 **추가**를 클릭하십시오.
+
+   <div id="note-5" />
 
    > 📘 **참고**
    >
@@ -173,6 +197,8 @@ Google은 <Anchor target="_blank" href="https://support.google.com/google-ads/an
 2. 광고 행에서 수정 아이콘을 클릭합니다.
 3. **최종 URL 필드**에 랜딩 페이지의 URL을 입력하십시오.
 
+   <div id="important-1" />
+
    > 🚧 **중요!**
    >
    > 최종 URL은 앱스플라이어 URL(원링크 또는 단일 플랫폼 어트리뷰션 URL)이 될 수 없습니다. 그럴 경우 캠페인이 거부될 수 있습니다. 리디렉션이 없는 직접 웹 주소만 사용하십시오.
@@ -186,11 +212,15 @@ Google은 <Anchor target="_blank" href="https://support.google.com/google-ads/an
    > ```
 
 
+<div id="note-6" />
+
 > 📘 **참고**
 >
 > Google 웹 광고 캠페인은 참여당 두 개의 URL을 사용할 수 있습니다: 최종 URL과 추적 템플릿 URL. 그러나 광고 목적지가 웹사이트인 웹사이트 앱 캠페인에서는 추적 템플릿 URL이 필요하지 않습니다. 캠페인 목표가 웹에서 모바일로 전환될 때만 추적 템플릿 URL이 필요할 수 있습니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-create-web-based-campaigns">Google Ads 웹-앱 캠페인 기사</Anchor>를 참조하십시오.
 
 </Accordion>
+
+<div id="view-web-performance-measurement-data" />
 
 ## 웹 귀속 데이터 보기
 
@@ -200,9 +230,13 @@ Google Ads 캠페인에 대한 웹 귀속 데이터는 크로스 플랫폼 대�
 * 로데이터 내보내기   웹 귀속 데이터는 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-export-page">원시 데이터 내보내기 페이지</Anchor>에서도 사용할 수 있습니다.
   * `media_source` 필드는 Google Ads에 귀속된 웹 이벤트에 대한 `googleadwords_int`를 보여줍니다.
 
+<div id="note-7" />
+
 > 📘 **참고**
 >
 > 이 통합 보고 뷰를 통해 웹과 앱 캠페인 성과를 한 곳에서 분석할 수 있으며, 전체 모바일 및 웹 비용 보고도 포함됩니다.
+
+<div id="measure-web-performance-data-with-web-cost" />
 
 ## 웹 비용으로 웹 귀속 데이터 측정하기
 
@@ -210,6 +244,8 @@ Google Ads의 웹 귀속 데이터와 웹 비용 데이터에 대한 완전한 �
 
 1. `googleadwords_int` ( `googleads_int`를 통해서가 아니라)에서 **비용** 탭 또는 **비용 설정** 페이지를 통해 웹사이트 앱에 비용을 연결하십시오. 비용 연결 방법에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">비용 데이터 측정을 위한 ROI360 비용 API 설정</Anchor>을 참조하십시오.
 2. 랜딩 페이지 URL에 캠페인 ID (`af_c_id`)를 포함하십시오. URL에 비용, 클릭 및 노출을 웹 귀속에 가장 세분화된 수준으로 보기 위해 전체 캠페인 계층이 포함되어 있는지 확인하십시오.
+
+<div id="troubleshooting-in-app-event-postbacks" />
 
 ## 인앱 이벤트 포스트백 문제 해결
 
@@ -244,6 +280,8 @@ Google Ads에서 액세스 토큰이 오프라인 전환을 업로드하는 데 
 포스트백 인앱 이벤트가 올바른 전환 작업 ID에 매핑되어 있는지 확인하십시오. Google Ads에서 전환 작업 ID를 찾으려면 [여기](#step-2-create-conversion-actions)를 참조하세요. 전환 작업을 생성하십시오.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

@@ -24,11 +24,17 @@ x-zendesk:
 ---
 > **한눈에 보기:** Google 마케팅 플랫폼 - Display & Video 360 (GMP-DV360)은 앱스플라이어의 자가 리포팅 네트워크(SRN) 파트너로, 광고와 분석을 결합합니다. GMP-DV360 연동(dv360\_int)은 광고와 분석을 통합하여 고객 연계를 강화, 인사이트를 드러내며 마케팅 성과를 향상시킵니다.
 
+<div id="important-1" />
+
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/bulletin-supporting-the-new-google-eu-consent-policy">새로운 Google EU 동의 정책 지원</Anchor>에 대한 공지를 확인하세요.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+
+<div id="overview" />
 
 ## 개요
 
@@ -36,6 +42,8 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 * [광고주를 위한 DV360](#광고주를-위한-gmp-dv360설정): 일회성 과정 - 필수
 * [대행사를 위한 DV360](#대행사용-gmp-dv360-설정하기): 대행사별로 선택 사항
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -49,6 +57,8 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 | DV360 시리즈 | DV360을 앱스플라이어와 연동해 dv360\_int 어트리뷰션을 측정하십시오 | [광고주 연동 완료](#광고주를-위한-gmp-dv360설정) |
 | CM360 & DV360 | CM360을 통해 DV360 트래픽을 구입하고, 앱스플라이어에서는 dvc360\_int 어트리뷰션으로 측정합니다. | [광고주 연동 완료](#광고주를-위한-gmp-dv360설정) |
 | CM360 및 비-DV360 타사 미디어 소스 | 타사 미디어 소스로부터 트래픽을 구입하고, 이 트래픽에서 발생하는 모바일 앱 전환을 CM360에서 측정합니다. | <Anchor target="_blank" href="/marketers/ko/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">CM360을 사용한 타사 트래픽 측정</Anchor> |
+
+<div id="data-sharing-between-appsflyer-and-gmp---dv360" />
 
 ### 앱스플라이어와 GMP - DV360 간 데이터 공유
 
@@ -66,6 +76,8 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 | product\_type | af\_channel |
 | external\_customer\_id | network\_account\_id |
 | site\_id | af\_siteid |
+
+<div id="setting-up-gmp-dv360-for-advertisers" />
 
 ## 광고주를 위한 GMP-DV360설정
 
@@ -101,9 +113,13 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 <span id="activate-partner::e4f2f638"></span>**연동** 탭에는 아래 설명과 같이 여러 섹션이 있습니다.
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 연동을 구성하려면 먼저 **파트너 활성화** 토글을 켜야 합니다. 파트너 연동을 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">활성화 및 비활성화하는 방법</Anchor>에 대해 더 알아보세요.
+
+<div id="general-settings" />
 
 #### 일반 설정
 
@@ -113,12 +129,16 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
+<div id="install-attribution" />
+
 #### 인스톨 어트리뷰션
 
 광고를 본 또는 클릭한 사용자의 신규 설치(첫 실행 포함)를 어트리뷰션하기 위한 다양한 어트리뷰션 기간을 설정하세요. 이는 클릭 또는 조회로부터 설치까지의 최대 시간을 나타냅니다. Google Marketing Platform - Display & Video 360 (DV360)에 측정되기 위해서는 설치가 룩백 윈도우 내에 있어야만 합니다.
 
 1. 설치 클릭-쓰루 룩백 윈도우를 1-23시간 또는 1-30일 중에서 설정하세요.
 2. [선택 가능] 설치 뷰-쓰루 어트리뷰션을 활성화하고 룩백 윈도우를 1-23시간 또는 1-30일로 설정하세요.
+
+<div id="re-engagement-attribution" />
 
 #### 리인게이지먼트 어트리뷰션
 
@@ -129,15 +149,21 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide#reengagement-rules-and-windows">리인게이지먼트 규칙 및 기간</Anchor>에 대해 자세히 알아보세요.
 
+<div id="re-engagement-window" />
+
 #### 리인게이지먼트 기간
 
 인앱 이벤트가 주로 리인게이지먼트 전환으로 측정되는 시간 기간을 설정합니다. <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide#setup-reengagement-window">더 알아보기</Anchor>.
 
 * **리인게이지먼트 기간**을 1-23시간, 1-90일, 또는 **생애** 중에서 설정하세요.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 리타겟팅 대상으로 활성 유저 무시
 
 앱을 실행한 사용자들의 리인게이지먼트 및 리-어트리뷰션을 <Anchor target="_blank" href="/marketers/ko/docs/set-retargeting-inactivity-window#비활성-기간">무시할</Anchor> 시간대를 정하세요. 이는 지정된 시간대 동안의 사용자 활동이 앱스플라이어에 기록되지 않는다는 것을 의미합니다.
+
+<div id="note-3" />
 
 > 📘 **참고**
 >
@@ -145,6 +171,8 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 1. 리타겟팅을 위해 **활동 중인 사용자 무시** 기능을 활성화하세요.
 2. 비활성 기간을 설정하세요.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -167,9 +195,13 @@ GMP-DV360 이벤트로부터 포스트백을 통해 발송되는 인앱 이벤�
    2. 드롭다운 목록에서 다른 앱을 선택합니다.
    3. 선택한 앱에 대해 연동 단계를 반복합니다.
 
+<div id="note-4" />
+
 > 📘 **참고**
 >
 > iOS 앱의 경우에만: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">리포트</Anchor>를 통해 파트너와 공유된 데이터에 대한 제어 권한은 **고급 개인정보 보호(iOS 14.5 이상)** [토글 상태](#advanced-privacy)에 따라 달라집니다.
+
+<div id="u-parameter-mapping" />
 
 #### U 매개변수 매핑
 
@@ -251,9 +283,13 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 
 </Accordion>
 
+<div id="setting-up-gmp-dv360-for-agencies" />
+
 ## 대행사용 GMP-DV360 설정하기
 
 대행사는 귀사를 대신해 GMP-DV360을 사용하여 캠페인을 운영할 수 있습니다.
+
+<div id="agency-setup" />
 
 #### 에이전시 설정
 
@@ -261,6 +297,8 @@ https://impression.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=%24{UNIVERSA
 | --- | --- |
 | 광고주 | <ol><li>광고주의 GMP-DV360 연동이 완료되었는지 확인하세요.</li><li>앱스플라이어의 측면 메뉴에서 **협업** > **활성화된 연동**을 선택하세요.</li><li>대행사를 선택합니다.</li><li>**권한** 탭으로 이동하여 **에이전시 권한**을 켭니다.</li><li>**[옵션]** 연동 **탭에서 인앱 이벤트 포스트백&lt;3>을 켭니다. 이렇게 하면 대행사가 포스트백을 켜거나 끌 수 있게 됩니다.**</li></ol> |
 | 에이전시 | <ol><li>앱스플라이어의 측면 메뉴에서 **협업** > **활성화된 연동**을 선택하세요.</li><li>**Google 마케팅 플랫폼 - Display & Video 360 (DV360)&lt;2>을 선택하세요..**</li><li>**연동 탭**으로 이동합니다.</li><li>활성화 파트너가 **켜짐** 상태인지 확인하세요. **그렇지 않을 경우, 광고주가 [광고주 GMP-DV360 연동&lt;4>을 완료해야 합니다.](#광고주를-위한-gmp-dv360설정)**</li><li>룩백 기간 및 인앱 이벤트 매핑과 같은 나머지 설정들이 정확한지 확인하세요. 필요하다면, 광고주에게 수정을 요청하세요.</li><li>하나 이상의 **DBM 광고주 ID**를 입력하세요. ID는 귀하의 <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/11415707?hl=en">GMP 대시보드</Anchor>에서 확인할 수 있습니다.</li><li>**저장**을 클릭합니다.</li></ol> |
+
+<div id="gmp-dv360-discrepancies" />
 
 ## GMP-DV360 차이점
 

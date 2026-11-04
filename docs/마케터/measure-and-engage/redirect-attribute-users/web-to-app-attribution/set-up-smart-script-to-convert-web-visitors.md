@@ -26,6 +26,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## 설정
 
 OneLink Smart Script는 두 가지 버전이 있습니다.
@@ -34,12 +36,16 @@ OneLink Smart Script는 두 가지 버전이 있습니다.
 
 <Anchor target="_blank" href="/marketers/ko/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1(레거시)**</Anchor>: Onelink Smart Script를 이미 설정한 경우 이 버전의 설명서를 사용하여 스크립트를 유지 관리하고 편집하세요. **노트**: 필수 사항은 아니지만 OneLink Smart Script를 사용하여 <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">뷰-쓰루 어트리뷰션</Anchor>을 제대로 얻으려면 V2로 마이그레이션하는 것이 좋습니다.
 
+<div id="set-up-onelink-smart-script" />
+
 ### OneLink Smart Script 설정
 
 Smart Script를 설정하려면 다음 중 하나를 수행하세요.
 
 * 웹사이트에 스크립트를 내장합니다.
 * Google 태그 매니저를 사용합니다.
+
+<div id="scope-of-work" />
 
 #### 작업 범위
 
@@ -105,6 +111,8 @@ Smart Script를 설정하려면 다음 중 하나를 수행하세요.
     5. 웹 개발자에게 생성된 발신 URL로 수행할 작업을 알려주세요. 예를 들어 모바일 사이트의 CTA 버튼 아래에 배치하거나 데스크톱 사이트에 QR 코드를 제시합니다. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager">개발자 가이드</Anchor>
 13. 저장된 스크립트는 [드롭다운 메뉴](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script)에서볼 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 스크립트를 업데이트 할 때마다 다시 구현해야합니다.
@@ -124,6 +132,8 @@ Smart Script를 설정하려면 다음 중 하나를 수행하세요.
 2. 편집하려는 스크립트 옆에 있는 펜 아이콘을 클릭합니다.
    1. [OneLink Smart Script를 만드는 방법](/docs/set-up-smart-script-to-convert-web-visitors#onelink-smart-script-설정)을 따르세요.
 3. 휴지통 아이콘을 클릭하여 Smart Script를 삭제합니다.
+
+<div id="important-1" />
 
 > 🚧 **중요!**
 >
@@ -163,6 +173,8 @@ OneLink Smart Script는 인수를 사용하여 수신 URL의 파라미터와 스
 
 OneLink Smart Script는 인수를 사용하여 수신 URL의 파라미터와 스크립트에 정의된 인수를 기반으로 발신 URL을 생성합니다.
 
+<div id="arguments-parameters-and-values-to-implement-the-smart-script" />
+
 #### Smart Script를 구현하기 위한 인수(파라미터 및 값)
 
 <table><thead><tr><th colspan="2">인수</th><th>참고</th><th>응답 기록(사용자 또는 사용자의 개발자가 사용)</th></tr></thead><tbody><tr><td colspan="2">OneLink URL(필수)</td><td><ul><li>OneLink 템플릿 도메인 + 템플릿 ID를 제공합니다. <strong>노트:</strong> OneLink 사용자정의 링크 URL이 아닙니다!</li><li>예: <strong>yourbrand.onelink.me/A1b2</strong> </li><li>브랜드 도메인 예: <strong>click.yourbrand.com/A1b2</strong> </li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>(필수)</p></td><td><p>mediaSource</p><p>(필수)</p></td><td><ul><li>미디어 소스의 설정 개체.</li><li>예:<ul><li>키: ['incoming_mediasource’' 'utm_source']</li><li>기본값: ['any_source']</li><li>재정의 값: `{twitter: 'twitter_int', orig_src: 'new_src'}</li></ul></li></ul></td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>campaign</td><td><ul><li>캠페인의 설정 개체.</li><li>예:<ul><li>키: ['incoming_campaign', 'utm_campaign']</li><li>기본값: ['any_campaign_name']</li><li>재정의 값: {campaign_name: 'new_campaign_name'}</li></ul></li></ul></td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>channel</td><td><ul><li>채널의 설정 개체.</li><li>예:<ul><li>키: ['incoming_channel', 'utm_channel']</li><li>기본값: ['any_video']</li><li>재정의 값: {video: 'new_video'}</li></ul></li></ul></td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>ad</td><td><ul><li>광고의 설정 개체.</li><li>예:<ul><li>키: ['incoming_ad', 'utm_ad']</li><li>기본값: ['any_ad_name']</li><li>재정의 값: {ad_name: 'new_ad_name'}</li></ul></li></ul></td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>adSet</td><td><ul><li>광고 세트의 설정 개체.</li><li>예:<ul><li>키: ['incoming_adset', 'utm_adset']</li><li>기본값: ['any_ad_name']</li><li>재정의 값: {adset_name: 'new_adset_name'}</li></ul></li></ul></td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>deepLinkValue</td><td><ul><li> <strong>deep_link_value</strong>의 설정 개체.</li><li>예:<ul><li>키: ['product_id', 'page_name']</li><li>기본값: 'new_offers_page'</li><li>재정의 값: {twenty_percent_off: 'thirty_percent_off'}</li></ul></li></ul></td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>afSub1-5</td><td> <strong>af_sub[1-5]</strong>의 설정 개체.</td><td><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr><tr><td>googleClickIdKey</td><td> <a href="https://support.google.com/google-ads/answer/9744275?hl=en" target="_blank">GCLID</a>를 전달하는 파라미터를 호출할 내용을 설명하세요.<br/><strong>노트</strong>! <span>앱스플라이어 로우 데이터 리포트에 표시하려면 파라미터가 <strong>af_sub[1-5]</strong> 중 하나여야 합니다.</span> </td><td> </td></tr><tr><td> <span>기타(사용자정의) 쿼리 파라미터</span><br/> </td><td><ul><li>어트리뷰션 또는 딥링크를 위해 발신 OneLink URL에 포함할 기타 파라미터를 해당 설정 개체와 함께 나열합니다.</li><li>사용자정의 파라미터의 이름은 개발자에 의해 설정 개체에 paramKey로 나열됩니다.<span></span> </li><li>예:<ul><li>paramKey: 'deep_link_sub1'</li><li>키: ['page_id']</li><li>기본값: 'page1'</li><li>재정의 값: {page12: 'new_page12'}`</li></ul></li></ul></td><td><p>파라미터 키:</p><p>키:</p><p>기본값:</p><p>재정의 값:</p></td></tr></tbody></table>
@@ -175,11 +187,15 @@ OneLink Smart Script는 인수를 사용하여 수신 URL의 파라미터와 스
 
 다음 표에서는 기술적 이해도가 높은 마케터나 개발자가 Smart Script에 구현할 수 있는 인수들을 설명합니다.
 
+<div id="advanced-arguments-parameters-and-values-to-implement-in-the-smart-script" />
+
 #### Smart Script에서 구현을 위한 고급 인수(파라미터 및 값)
 
 <table><thead><tr><th colspan="2">인수</th><th>참고</th><th>응답 기록(사용자 또는 사용자의 개발자가 사용)</th></tr></thead><tbody><tr><td colspan="2"> <br/>referrerSkipList</td><td><ul><li>특정 클릭(예: Twitter 또는 Facebook)의 HTTP 리퍼러에서 발견될 경우 Smart Script가 <code>null</code>을 반환하도록 만드는 문자열 목록. 이는 클릭수가 이미 보고된 X 광고 및 Meta 광고와 같은 SRN에 유용할 수 있습니다.</li><li>이 인수를 구현하면 스크립트가 OneLink URL을 생성하지 않습니다.</li></ul></td><td> </td></tr><tr><td colspan="2">urlSkipList</td><td><ul><li>특정 클릭(예: af_r)에 대한 URL의 문자열 목록으로, 발견될 경우 Smart Script가 <code>null</code>을 반환하게 됩니다. 이 기능은 af_r을 포함된 앱스플라이어 어트리뷰션 링크를 사용하여 사용자를 모바일 웹사이트로 리디렉션할 때 최초 클릭했던 데이터가 손실되지 않도록 하려는 경우에 유용할 수 있습니다.</li><li>이 인수를 구현하면 스크립트가 OneLink URL을 생성하지 않습니다.</li></ul></td><td> </td></tr><tr><td colspan="2">SEO</td><td><ul><li>활성화되어 있고 <strong>URL 파라미터 매핑</strong> 섹션에서 미디어 소스가 확인되지 않은 경우, 웹 리퍼러 URL을 기반으로 사용자가 검색 엔진을 통해 유입되었는지 확인한 뒤 그에 맞춰 미디어 소스를 설정합니다. (버전 2.10.3부터 사용 가능)</li></ul></td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## 활용 사례
 
@@ -230,6 +246,8 @@ Google Ads 캠페인의 일반적인 설치 어트리뷰션 프로세스(GCLID �
 
 1. 각 설치에 대해 CSV 또는 푸시 API를 통해 실시간으로 파라미터 **af\_sub[1-5]** 에서 GCLID 데이터를 가져옵니다.
 2. <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">수동으로</Anchor> 또는 <Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">Google Ads API</Anchor>를 통해 GCLID 데이터를 Google에 업로드합니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -291,6 +309,8 @@ Snapchat 또는 X Ads와 같은 <Anchor target="_blank" href="/marketers/ko/docs
 
 **결과**: 이러한 SRN/미디어 소스의 경우 미디어 소스의 값과 수신 링크의 캠페인 파라미터는 발신 링크의 **media\_source** 및 **campaign** 파라미터의 값을 채우는 데 사용됩니다.
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > **수신 URL**: https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
@@ -308,6 +328,8 @@ Snapchat 또는 X Ads와 같은 <Anchor target="_blank" href="/marketers/ko/docs
 **조치:** **urlSkipList** 인수를 사용하여 **af\_r** 파라미터를 나열합니다.
 
 **결과**: Smart Script가 수신 링크에서 **af\_r** 파라미터를 찾으면 Smart Script는 발신 URL을 생성하지 않으며 개발자는 발신 URL로 배치할 링크를 결정하고 구현해야 합니다.
+
+<div id="example-1" />
 
 > 📄 **예시**
 >
@@ -382,6 +404,8 @@ Smart Script는 링크가 있는 버튼 대신 웹 페이지에 QR 코드를 표
 
 **결과**: 스크립트는 URL이 연결된 버튼 대신 QR 코드를 표시합니다.
 
+<div id="example-2" />
+
 > 📄 **예시**
 >
 > **수신 URL**:
@@ -415,11 +439,15 @@ OneLink Smart Script를 사용하여 웹사이트의 노출수를 계산할 수 
 2. 개발자에게 Smart Script에서 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression">노출 함수를 호출</Anchor>할 것을 요청합니다.
 3. <Anchor target="_blank" href="/marketers/ko/docs/measure-view-through-engagements">뷰-쓰루 어트리뷰션이 켜져 있는지</Anchor> 확인하하세요.
 
+<div id="important-2" />
+
 > 🚧 **중요!**
 >
 > 2023년 2월 1일(Chrome 110 정식 버전 출시)부터 Google은 <Anchor target="_blank" href="https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/">User-Agent 데이터를 축소</Anchor>하기 위한 몇 가지 변경 사항을 적용했습니다. OneLink Smart Script를 사용하여 <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">뷰 쓰루 어트리뷰션</Anchor>을 올바르게 측정하려면 OneLink Smart Script 버전 2.3 이상을 사용해야 합니다.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -427,13 +455,19 @@ OneLink Smart Script를 사용하여 웹사이트의 노출수를 계산할 수 
 
 <Accordion title="FAQ">
 
+<div id="will-the-incoming-url-for-onelink-link-generation-work-if-the-user-browses-to-a-different-page-on-the-website" />
+
 #### **사용자가 웹사이트 내 다른 페이지로 이동하는 경우에도 OneLink 링크 생성을 위한 수신 URL이 작동하나요?**
 
 예. 수신 URL 파라미터는 브라우징 세션 기간 동안 저장되며 Smart Script로 생성된 원링크 링크의 발신 파라미터에 적용됩니다. 구현에 대한 자세한 내용은 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages">개발자 허브를 참조하세요</Anchor>.
 
+<div id="why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager" />
+
 #### **Google Tag Manager를 통해 Smart Script를 구현할 때 오류가 발생하는 이유는 무엇인가요?**
 
 앱스플라이어에서 Smart Script를 생성하고 이를 Google Tag Manager(GTM)에 삽입하려고 할 때 "JavaScript가 너무 깁니다"라는 오류가 표시되는 경우가 있습니다. 이 경우 GTM 태그를 삭제하고 새 태그를 만드십시오.
+
+<div id="can-i-add-parameters-that-are-not-listed" />
 
 #### **나열되지 않은 파라미터를 추가할 수 있나요?**
 
@@ -447,9 +481,13 @@ OneLink Smart Script를 사용하여 웹사이트의 노출수를 계산할 수 
 
 ![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
 
+<div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
+
 #### **Adset 및 기타 파라미터가 드롭다운에 표시되지 않습니다.**
 
 새 파라미터를 만들거나 추가할 때 브라우저에 있는 모든 광고 차단기를 끄는 것이 좋습니다. 때때로 광고 차단기는 '광고'라는 단어가 포함된 옵션을 제거합니다.
+
+<div id="what-browsers-does-smart-script-work-on" />
 
 #### **Smart Script는 어떤 브라우저에서 작동하나요?**
 

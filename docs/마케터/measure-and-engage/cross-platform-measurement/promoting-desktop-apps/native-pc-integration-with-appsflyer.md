@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **요약:** PC 게임이나 앱을 앱스플라이어와 연동하여 PC 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 받아보세요. Native PC 연동은 PC 앱에 대한 어트리뷰션 및 인앱 이벤트 기록(즉, 사용자 PC에서의 어트리뷰션 및 기록)을 지원합니다.
 
+<div id="about-native-pc-attribution" />
+
 ## Native PC 어트리뷰션 정보
 
 Native PC는 .EXE 또는 .MSI 파일 확장자를 설치하여 Windows 기기에서 실행됩니다.
@@ -28,6 +30,8 @@ Native PC는 .EXE 또는 .MSI 파일 확장자를 설치하여 Windows 기기에
 이는 Microsoft App Store, Windows Phone, UWP에서 설치하여 작동하는 <Anchor target="_blank" href="/marketers/ko/docs/windows-sdk-integration-for-developers">AppsFlyer Windows SDK 2.4.1</Anchor>과는 다릅니다.
 
 PC에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어와 연동되어, 어떤 소스 및 캠페인이 앱 오픈 및 인앱 이벤트를 유도하는지에 대한 어트리뷰션 데이터 및 성과를 측정할 수 있습니다. 마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다. 마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다.
+
+<div id="example-attribution-flow" />
 
 ### 어트리뷰션 흐름의 예
 
@@ -40,6 +44,8 @@ PC에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어와 
    또한, 랜딩 페이지가 유용한 이유는 게임이 지원하는 다양한 플랫폼에 대한 링크를 제공하기 때문입니다. 예를 들어 랜딩 페이지에 Xbox, Microsoft Store 및 Steam 페이지로 안내하는 링크를 포함시킬 수도 있습니다.
 3. 앱 페이지: 고객이 다운로드할 수 있도록 앱을 호스팅하는 Native PC 앱 페이지의 URL입니다.
 4. 게임 설치: 유저가 게임을 설치하면 어트리뷰션이 트리거되고 인앱 이벤트 및 세션이 기록됩니다.
+
+<div id="integration-procedures" />
 
 ## 연동 절차
 
@@ -56,12 +62,18 @@ PC에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어와 
 | 리포트 설정/데이터 보기 | <Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-attribution-concepts#데이터-가용성">대시보드 및 리포트의 데이터 가용성에 대해 알아보기</Anchor> | 마케터/데이터 엔지니어 |
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 특징 및 제약 사항
 
 | 특성 | 비고 |
 | --- | --- |
 | 리타겟팅 | 현재 지원되지 않음 |
 | 비용 데이터 | 비용 데이터는 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">Cost Import</Anchor>기능을 통해 이메일을 보내는 방법으로 전송해야 합니다. |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

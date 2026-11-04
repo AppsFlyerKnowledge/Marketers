@@ -25,6 +25,8 @@ x-zendesk:
 
 Unity Ads로 캠페인을 구성하려면 다음 단계를 따르십시오.
 
+<div id="setting-up-unity-ads" />
+
 ## Unity Ads 설정
 
 **전제 조건:** 연동을 설정하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
@@ -52,10 +54,14 @@ Unity Ads로 캠페인을 구성하려면 다음 단계를 따르십시오.
 
 <Accordion title="연동 탭">
 
+<div id="activate-partners" />
+
 ### 파트너 활성화
 
 처음 방문 시에 **파트너 활성화** 토글을 켜서 연동을 설정해야 합니다. 파트너와 함께 작업하는 동안 토글은 켜져 있는 상태로 남아있어야 합니다.  
 파트너 활성화에 대한 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -79,6 +85,8 @@ Unity Ads 플랫폼은 계정 레벨당 하나의 앱을 하나의 Unity Ads 게
 
 ![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 ![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
@@ -88,15 +96,23 @@ Unity Ads 플랫폼은 계정 레벨당 하나의 앱을 하나의 Unity Ads 게
 * **이 파트너만 해당**: Unity Ads로 어트리뷰션된 사용자로부터 발생한 이벤트에만 적용됩니다.
 * **오가닉을 포함한 모든 미디어 소스**: Unity Ads에 리포트할 수 있는 전체 사용자 기반을 가지는 미디어 소스를 의미합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 모든 설치 네트워크인 Unity Ads는 모든 소스에서 앱의 모든 신규 설치에 대한 포스트백을 수신하는 것을 선호하며, 모든 설치 포스트백을 Unity Ads로 전송하려면 **오가닉을 포함한 모든 미디어 소스**를 선택할 것을 권장했습니다.
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
 포스트백을 통해 앱스플라이어 이벤트를 파트너와 매핑할 수 있습니다. 포스트백 발송이 활성화된 경우, 이는 거부된 인앱 이벤트(Protect360에 의해 차단된 이벤트나 유효성 검증 규칙을 준수하지 않는 것으로 판단된 이벤트)를 포함합니다.
 
 [![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+
+<div id="important" />
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백 설정 방법
 
@@ -112,6 +128,8 @@ Unity Ads 플랫폼은 계정 레벨당 하나의 앱을 하나의 Unity Ads 게
 | **파트너 이벤트에 매핑** | 파트너 측에서 정의한 각 이벤트의 고유한 이름 또는 ID입니다. 가능한 매핑 구성은 다음과 같습니다.<ul><li>**텍스트 필드:** 파트너로부터 해당 이벤트 ID를 받으세요.</li><li>**드롭다운 상자:** 가장 적합한 사전 정의된 앱스플라이어 이벤트를 선택합니다.</li><li>**그대로**: 이름 매핑 없이 이벤트를 있는 그대로 전송합니다.</li></ul> |
 | **사용자용** | 이벤트의 전송 옵션을 선택합니다.<ul><li>**이 파트너만**: 이 이벤트가 이 파트너에게 귀속된 경우에만 포스트백을 발송합니다.</li><li>**오가닉을 포함한 모든 미디어소스**: 오가닉 이벤트를 포함하여 모든 파트너로 어트리뷰션된 이벤트의 포스트백을 전송합니다.</li></ul> |
 | **포함** | <ul><li>**데이터 없음(기본값)**: 이벤트 값 없이 이벤트 자체만 보냅니다.</li><li>**값 및 수익**: 매출 값(이벤트에 존재하는 경우)을 **포함하여** 모든 이벤트 파라미터를 전송합니다.</li><li>**수익이 없는 값**: 수익 값을 **제외한** 모든 파라미터를 전송합니다.</li></ul> |
+
+<div id="note-1" />
 
 > 📘 **참고**
 >

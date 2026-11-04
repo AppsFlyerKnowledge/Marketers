@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** PC 및 콘솔용 Meta Web 앱을 앱스플라이어와 연동하는 방법과 Meta Web에서 캠페인을 설정하는 방법을 알아보세요.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 이 연동 기능은 Steam, Epic, Native PC와 같은 PC 및 콘솔 앱에서만 사용할 수 있습니다. 모바일 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-integration-setup">메타 광고 연동 설정</Anchor> 페이지를 참조하세요.
+
+<div id="overview" />
 
 ## 개요
 
@@ -33,9 +37,13 @@ x-zendesk:
 * [앱스플라이어에서 메타 웹 설정하기](#앱스플라이어에서-메타-웹-설정하기).
 * [PC 및 콘솔 앱용 메타에서 캠페인 설정하기](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#pc-및-콘솔-앱용-메타-웹에서-캠페인-설정하기).
 
+<div id="prerequisite" />
+
 ### 전제 조건
 
 Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니스 계정이](https://www.facebook.com/business/help/1710077379203657?id=180505742745347) 있는지 확인하십시오.
+
+<div id="activating-partner-in-appsflyer" />
 
 ## 앱스플라이어 파트너 활성화
 
@@ -47,6 +55,8 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
 4. **연동** 탭에서 **파트너 활성화**를 켭니다.  
    **참고: <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다(</Anchor><Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">활성화됨</Anchor>).**
 5. 다음 섹션에 설명된 대로 관련 탭을 사용하여 구성을 완료합니다.
+
+<div id="setting-up-meta-web-in-appsflyer" />
 
 ## 앱스플라이어에서 메타 웹 설정하기
 
@@ -60,9 +70,13 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
 
 **연동** 탭에는 아래 설명된 여러 섹션이 포함되어 있습니다.
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 연동을 구성하려면 먼저 파트너 활성화 토글을 **켜야** 합니다.
+
+<div id="general-settings" />
 
 #### 일반 설정
 
@@ -75,6 +89,8 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
 * **액세스 토큰:** 액세스 토큰을 입력합니다. 관련 검색은 다음 [지침](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)을 따르세요.
 * **메타 광고의 사용자 개인정보 사용 제한(CCPA):** <Anchor target="_blank" href="/marketers/ko/docs/send-opendsr-api-requests">데이터 보호법</Anchor> 준수를 활성화하려면 이 토글을 켭니다.  
   **참고:** CCPA 개인정보 보호 규정을 준수하면 캘리포니아에 거주하는 메타 광고 사용자의 데이터가 제한됩니다.
+
+<div id="enable-view-through-attribution" />
 
 #### 뷰-쓰루 어트리뷰션 활성화
 
@@ -92,12 +108,16 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
 6. **뷰-쓰루 어트리뷰션** 섹션으로 스크롤하여 **뷰-쓰루 룩백 윈도우**를 설정합니다(최대 24시간).
 7. 설정을 적용하려면 **연동 저장**을 클릭하세요.
 
+<div id="default-postbacks" />
+
 #### 포스트백 디폴트 설정
 
 설치에 대한 포스트백은 메타 웹으로만 자동으로 전송됩니다. **사용자 선택** 필드에서 다음 중 하나를 선택하십시오:
 
 * **이 파트너 전용**으로, 이 파트너에서 유래한 사용자에 의해 수행된 이벤트에 대해서만 인앱 이벤트 포스트백이 전송되도록 합니다.
 * **모든 미디어 소스, 유기적 포함**은 이 파트너, 다른 파트너 또는 유기적 소스에서 유래한 사용자에 의해 수행된 이벤트에 대해 인앱 이벤트 포스트백이 전송되도록 합니다.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -160,6 +180,8 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-meta-web-for-pc-and-console-apps" />
+
 ## PC 및 콘솔 앱용 메타 웹에서 캠페인 설정하기
 
 **새 캠페인을 설정할 때 다음 사항이 적용됩니다.**
@@ -174,20 +196,28 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
   * 웹 랜딩 페이지(여러 플랫폼에 앱이 있는 경우 권장)
   * 스토어 URL(앱이 단일 플랫폼의 단일 앱 스토어에 있는 경우 권장)
 
+<div id="view-web-to-app-attribution-data" />
+
 ## 웹-앱 귀속 데이터 보기
 
 웹 기반 전환 이벤트는 원래 `metaweb_int` PID 아래에서 Meta에 전송되지만, `Facebook Ads` PID 아래에서 AppsFlyer 대시보드 및 원시 데이터 보고서에 보고됩니다. 이는 기본 전환 이벤트와 전환 보조 이벤트 모두에 적용됩니다.
 
 이 통합 보고 뷰를 통해 웹 및 앱 캠페인 성과를 한 곳에서 분석할 수 있으며, 전체 웹 및 모바일 비용 보고가 포함됩니다.
 
+<div id="view-in-the-dashboard" />
+
 ### 대시보드에서 보기
 
 모든 Meta 웹-앱 귀속은 개요 및 활동 대시보드에서 `Facebook Ads` 아래에 나타납니다. 이는 플랫폼 전반에 걸친 캠페인 결과의 단일 통합 뷰를 제공합니다. 표준 필터 및 분류를 사용하여 Meta 광고 데이터 내에서 앱 및 웹 트래픽을 비교하십시오.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### 원시 데이터 및 API 보고서에서 보기
 
 * **원시 데이터 내보내기 및 API 응답**은 Meta 웹 활동을 위한 `media_source` 필드에 `Facebook Ads` PID를 포함합니다. 웹 캠페인 설정 세부정보를 확인하려면, 웹 캠페인 생성 시 사용된 PID로 `metaweb_int`를 보여주는 `original_url` 필드를 참조하십시오.
 * **포스트백 보고서**는 포스트백이 전송된 원래 미디어 소스로 `metaweb_int`를 보여줍니다.
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

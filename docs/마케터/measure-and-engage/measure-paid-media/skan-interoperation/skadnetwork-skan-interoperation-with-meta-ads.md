@@ -27,9 +27,13 @@ x-zendesk:
 
 <Embed title="Meta Ads와 SKAdNetwork(SKAN) 상호 운용" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/15jnbml3h7" providerUrl="https://fast.wistia.com" />
 
+<div id="skan-interoperability-appsflyer---meta-ads" />
+
 ## SKAN 상호 운용성: 앱스플라이어 &lt;-> Meta Ads
 
 여러 애드 네트워크 파트너와 협력하는 경우, 앱스플라이어에서 설정하는 것이 가장 좋습니다. 이렇게 하면 비용 등의 다른 지표로 강화된 SKAN 성과 지표를 앱스플라이어 플랫폼에서 확인할 수 있습니다.
+
+<div id="scope-of-skan-interoperability-with-meta-ads" />
 
 #### Meta Ads와 SKAN 상호 운용성 범위
 
@@ -54,12 +58,16 @@ Meta Ads와의 상호 운용을 통해 다음이 가능합니다:
 * <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns#ios-145-srn-attribution">iOS 14.5가 SRN 리포팅에 미치는 영향</Anchor>
 * Meta Ads와의 MMP 연동 과정에서 앱스플라이어는 *Advertiser Tracking Enabled* 플래그를 상시 구현하고 있습니다. (본 정보는 2021년 2월 기준 Meta Ads 앱 가이드 iOS 14 체크리스트에 따라 제공됩니다).
 
+<div id="considerations" />
+
 #### 고려 사항
 
 * 측정 설정을 변경할 때마다 상호 운용성이 활성화되면, 이 문서에 나와 있는 MMP 연동 절차를 반복할 필요가 없습니다. 즉, MMP 연결 URL을 다시 복사할 필요가 없습니다.
 * 앱스플라이어에서 SKAN 측정을 끄면 Meta Ads에서 CV 매핑을 받을 수 없습니다.
 * 앱스플라이어 SDK vs. 페이스북 SDK: 페이스북 SDK는 Meta Ads로만 캠페인을 실행하는 경우에 적합합니다. 여러 파트너와 캠페인을 실행하는 경우 앱스플라이어 SDK를 사용하면 모든 파트너의 데이터를 볼 수 있습니다.
 * 이 문서의 [불일치](/docs/skadnetwork-skan-interoperation-with-meta-ads#troubleshooting-discrepancies-and-faq) 섹션을 검토하세요.
+
+<div id="meta-ads-app-install-ads-guidance" />
 
 #### Meta Ads 앱 설치 광고 안내
 
@@ -70,6 +78,8 @@ Meta ads iOS 14 앱 설치 캠페인을 설정할 때 다음 <Anchor target="_bl
 * Meta ads 최적화 방법과 앱스플라이어에서 선택한 측정 유형 간에는 다음과 같은 관계가 있습니다.
   * **수익 측정**: VO 및 AEO
   * **전환 측정**: AEO— Meta Ads 표준 이벤트와 구매 이벤트를 포함합니다. 앱스플라이어의 앱 이벤트를 관련 Meta Ads 이벤트에 매핑해야 합니다.
+
+<div id="interoperation-procedures" />
 
 ## 상호운용 절차
 
@@ -112,6 +122,8 @@ Meta Ads가 앱스플라이어와 SKAN 데이터를 공유하도록 허용합니
 <Accordion title="CV 스키마를 Meta Ads와 공유">
 
 ![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+
+<div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 
 #### Meta Ads와 앱스플라이어 SKAN 연동 활성화
 
@@ -181,11 +193,13 @@ Meta Ads가 앱스플라이어와 SKAN 데이터를 공유하도록 허용합니
              ![in-app_events_fb_en-us.png](https://files.readme.io/98e2c8048444331c5d24343e683605e8388ee93bbfcb70aa5e8dad183c995859-40032591364241.png)
            * SKAN 측정에서 설정한 인앱 이벤트(**앱스플라이어 이벤트**)가 Meta Ads 이벤트 식별자(**파트너 이벤트에 매핑됨**)와 매핑되었는지 확인하세요. 이벤트를 매핑하지 않으면 Meta ads가 최적화를 진행할 수 없어 설치 수만 집계하게 됩니다.
 
+             <div id="h_01H8XRMVR5GY77K7GJ4TXGWEHS" />
+
              > 📘 **참고**
              >
              > SKAN 컨버전 스튜디오에서 전환 값(CV)을 추가, 변경 또는 제거할 때, 해당 이벤트가 **인앱 이벤트 포스트백**에 매핑되어 있는지 확인하세요. 그렇지 않으면 전환 값이 Meta Ads에 업데이트되지 않습니다.
              >
-             > #### 인앱 이벤트 매핑 가이드
+             > #### <span id="inapp-event-mapping-guide"></span>인앱 이벤트 매핑 가이드
 
 
         | 측정 유형 | 매핑 요구 사항 |
@@ -251,6 +265,8 @@ Meta Ads가 앱스플라이어와 SKAN 데이터를 공유하도록 허용합니
 </Table>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -327,6 +343,8 @@ ads\_read 권한은 Meta Ads 고객에게 커스텀 대시보드 및 데이터 �
 | <span id="modeled-data-differences-in-appsflyer-and-facebook-ads-manager"></span>앱스플라이어와 Meta Ads Manager의 모델링된 데이터 차이 | 앱스플라이어는 기본 SKAN 리포팅에서 제공할 수 없는 집계 데이터를 모델링합니다. <Anchor target="_blank" href="/marketers/ko/docs/skan-modeled-data">더 알아보기</Anchor><br /><br />앱스플라이어가 데이터를 모델링할 때, Meta Ads에서 모델링된 데이터는 고려되지 않습니다. 앱스플라이어는 확인되고 공정한 데이터에만 의존하기 때문입니다. 따라서 Meta ads Manager 보고서와 앱스플라이어 보고서 사이에 데이터 및 세부성 차이가 있을 수 있습니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

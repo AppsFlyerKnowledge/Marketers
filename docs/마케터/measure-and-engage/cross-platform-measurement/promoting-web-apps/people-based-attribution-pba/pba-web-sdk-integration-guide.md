@@ -24,6 +24,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Web SDK 사용자 가이드 및 연동 가이드
 
 * 웹 SDK JavaScript 태그:
@@ -34,6 +36,8 @@ x-zendesk:
 * 앱스플라이어 모바일 SDK와 함께 웹 SDK를 구현하여 모바일 앱 및 웹 환경 전반에서 사용자 활동을 기록하고 매핑하십시오.
 * 웹사이트 밖에서 발생하는 이벤트는 <Anchor target="_blank" href="/marketers/ko/docs/web-server-to-server-events-api-for-pba-web-s2s">웹 서버 간 이벤트 API</Anchor> (Web S2S)를 사용하여 기록할 수 있습니다.
 
+<div id="selecting-a-code-snippet" />
+
 ## 코드 스니펫 선택하기
 
 귀하의 통합 유형 및 보안 요구 사항에 맞는 스니펫을 선택하십시오. 두 가지 옵션이 있습니다:
@@ -41,9 +45,13 @@ x-zendesk:
 * [표준 웹 SDK](#표준-웹-sdk): 표준 통합입니다.
 * [고급 SDK 검증](#고급-sdk-검증): 웹 SDK에 대한 공급망 보호를 추가하는 향상된 통합입니다. 이것을 사용하여 CDN 손상, DNS 하이재킹 및 중간자 공격에 대한 추가 보안 계층을 추가하십시오.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 표준 웹 SDK에서 고급 SDK 검증으로 전환하는 경우 기존 스니펫을 새 스니펫으로 교체하십시오. 기존 스니펫 위에 새 스니펫을 추가하지 마십시오.
+
+<div id="standard-web-sdk" />
 
 ### 표준 웹 SDK
 
@@ -99,6 +107,8 @@ x-zendesk:
 ```
 
 </Accordion>
+
+<div id="advanced-sdk-verification" />
 
 ### 고급 SDK 검증
 
@@ -177,11 +187,15 @@ x-zendesk:
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## 웹 SDK를 웹사이트에 연동하기
 
 <div id="installation-and-integration" />
 
 <Accordion title="인스톨 및 연동">
+
+<div id="considerations-and-actions-required" />
 
 #### 고려사항 및 필수 조치
 
@@ -218,15 +232,21 @@ x-zendesk:
 <Tabs>
 <Tab title="네이티브">
 
+<div id="javascript-code-snippet" />
+
 #### JavaScript 코드 스니펫
 
 다음 방법 중 하나를 사용하여 웹 SDK를 연동하십시오.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **스마트 배너 없이 웹 SDK를 인스톨하는 방법:**
 
 1. 웹 사이트의 모든 페이지에서 다음 절차를 반복하십시오.
 2. 다음 코드 조각에서 전제 조건에 지정된 키를 사용하여 `WEB_DEV_KEY`WEB\_DEV\_KEYWEB\_DEV\_KEY를 바꿉니다.
 3. 선택한 코드 스니펫 [위에서](#코드-스니펫-선택하기)을(를) 웹사이트의 head 태그에 붙여넣으십시오. 헤드 태그의 맨 위 가까이에 붙여넣도록 하십시오.
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **스마트 배너로 웹 SDK를 구현하는 방법:**
 
@@ -418,12 +438,16 @@ x-zendesk:
   * 웹 SDK에서 설정하거나 브라우저에서 결정한 기간이 지나면 만료됩니다. 쿠키가 만료되면 웹 SDK는 초기 상태 설정으로 되돌아갑니다.
   * 웹 SDK 쿠키는 브라우저별 쿠키 설정을 방해하지 않으며 항상 적용됩니다.
 
+<div id="sdk-initial-state-setting" />
+
 #### SDK 초기 상태 설정
 
 | 설정 | 스니펫 필수 |
 | --- | --- |
 | [기본값] 이벤트 전송하기 | 웹 SDK 스니펫을 다음과 같이 변경하십시오. 필요한 경우, 다음과 같은 measurementStatus 파라미터를 추가하십시오.<br /><br />Set measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | 이벤트를 전송하지 않기 | 웹 SDK 스니펫을 다음과 같이 변경하십시오. 필요한 경우 다음과 같은 measurementStatus 파라미터를 추가하십시오.<br /><br />Set measurementStatus=false\{pba:   <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### 명시적 제어
 
@@ -439,6 +463,8 @@ x-zendesk:
 <Accordion title="콘텐츠 보안 정책(CSP) 구현">
 
 웹사이트가 엄격한 보안 또는 데이터 개인 정보 보호 프로토콜을 요구하는 경우, 웹 SDK가 귀하의 환경 및 데이터와 상호 작용하는 방식을 구성하기 위해 다음 메커니즘을 사용하십시오.
+
+<div id="content-security-policy-csp" />
 
 #### 콘텐츠 보안 정책(CSP)
 
@@ -457,6 +483,8 @@ x-zendesk:
 | `script-src 'nonce-...' 'strict-dynamic'` | 예 (권장) | Nonce는 인라인 스크립트와 로더를 포함하며, `strict-dynamic`은 동적으로 주입된 SDK 태그에 신뢰를 전파합니다. 허용 목록에 CDN 출처가 필요하지 않습니다. |
 
 CSP 정책 호환성
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### CSP nonce 스니펫을 사용한 고급 SDK 검증
 
@@ -538,6 +566,8 @@ CSP 정책 호환성
 
 URL, 참조자 및 header\_referer와 관련하여 설명된 방법을 구현할 수 있습니다.
 
+<div id="query-discard-options" />
+
 #### 쿼리 삭제 옵션
 
 | 방법 | 설명 |
@@ -546,6 +576,8 @@ URL, 참조자 및 header\_referer와 관련하여 설명된 방법을 구현할
 | 지정된 쿼리 구문 삭제 | 쿼리 구문 마스크를 설정하여 삭제할 구문을 지정합니다.   param이 매개변수 이름인 `af_url_mask=param`을 사용하여 폐기 마스크를 설정하십시오.<br /><br />예시:<br /><br />**마스크를 포함한 URL:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**삭제 후 URL:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## 이벤트 기록 원리
 
@@ -558,6 +590,8 @@ URL, 참조자 및 header\_referer와 관련하여 설명된 방법을 구현할
 * 전환 이벤트 데이터는 PBA 대시보드에서 사용할 수 있습니다.
 * 전환 이벤트 및 표준 이벤트 데이터는 <Anchor target="_blank" href="/marketers/ko/docs/pba-raw-data-reports">로데이터 리포트에서 사용할 수 있습니다.</Anchor>
 
+<div id="conversion-events" />
+
 ### 전환 이벤트
 
 * 전환 이벤트는 마케팅 및 비즈니스 활동에 대한 통찰력을 제공합니다. 전환 이벤트에는 구매, 다운로드, 가입 및 구독이 포함됩니다.
@@ -566,11 +600,15 @@ URL, 참조자 및 header\_referer와 관련하여 설명된 방법을 구현할
 * 전환 이벤트는 수익을 기록하고 ROI를 계산하는 데 사용됩니다.
 * 특정 미디어소스에 대한 광고 예산을 이러한 미디어소스에서 발생하는 사용자로부터 발생하는 수익과 비교하기 위해 사용합니다.
 
+<div id="standard-events" />
+
 ### 표준 이벤트
 
 * 표준 이벤트는 전환으로 이어지는 사용자 여정과 퍼널을 검증하는 데 사용됩니다.
 * 이를 사용하여 사용자 활동을 측정하고 사용자 인게이지먼트를 유도하는 미디어소스를 강조 표시합니다.
 * 사용자 활동을 기록하여 사용자를 리인게이지먼트 캠페인에 표시합니다.
+
+<div id="recording-events" />
 
 ### 이벤트 기록
 
@@ -629,6 +667,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 전송하는 이벤트는 웹 앱의 특성에 따라 다릅니다. 예를 들어 온라인 스토어 앱에는 뉴스 매체와는 다른 일련의 이벤트가 필요합니다. 다음 시나리오를 참조하여 전송해야 하는 이벤트와 전송 시기를 파악하십시오.
 
+<div id="online-store" />
+
 #### 온라인 스토어
 
 온라인 스토어을 관리한다고 가정하겠습니다. 기록하려고 하는 몇 가지 표준 이벤트는 다음과 같을 것입니다.
@@ -672,6 +712,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    2. 요청 페이로드는 이벤트의 파라미터와 일치한다.
 
 </Accordion>
+
+<div id="examples" />
 
 ## 예시
 
@@ -1082,6 +1124,8 @@ setCustomerUserId 함수는 사용자 흐름의 모든 단계(예: 사용자 로
 모바일 앱의 setCustomerUserd 기능에서와 동일한 CUID 값을 사용합니다(<Anchor target="_blank" href="/marketers/ko/docs/customer-user-id-field-cuid#cuid-설정방법">iOS</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/customer-user-id-field-cuid#cuid-설정방법">안드로이드,</Anchor> Unity에 대해서는 모바일 setCustomerUserId 참조)
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## 추가 정보
 

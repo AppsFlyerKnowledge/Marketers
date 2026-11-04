@@ -32,6 +32,8 @@ ESP의 과제 중 하나는 올바른 어트리뷰션과 딥링킹을 수행하�
 
 그러나 딥링킹과 클릭 기록은 클릭 기록 도메인 위에 유니버셜 링크와 앱링크를 지원하는 ESP를 통해 여전히 가능합니다. 또한 클릭 기록 도메인 역할을 하도록 고유한 클릭 도메인을 설정할 수 있습니다.
 
+<div id="prerequisites" />
+
 ## 필수 조건
 
 * <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">원링크로 딥링킹</Anchor>을 지원하도록 앱을 설정합니다.
@@ -51,9 +53,13 @@ ESP의 과제 중 하나는 올바른 어트리뷰션과 딥링킹을 수행하�
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Oracle Responsys 클릭 도메인 설정
 
 이 절에 따라 Oracle Responsys에서 클릭 도메인(클릭 기록 도메인)을 설정합니다.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### 1단계: 1단계: Oracle Responsys에서 클릭 도메인 설정
 
@@ -64,6 +70,8 @@ ESP의 과제 중 하나는 올바른 어트리뷰션과 딥링킹을 수행하�
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 링크 테이블에서 클릭 도메인을 설정하면 Responsys는 이러한 도메인을 사용하여 이메일 캠페인에 포함된 OneLink를 래핑합니다. 이러한 방식으로 Responsys는 원링크 및 딥링킹 기능을 유지하면서 시스템에서 클릭을 기록할 수 있습니다.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### 2단계: 2단계: Responsys에 AASA(iOS) 및 자산 링크 파일(Android) 제공
 
@@ -95,11 +103,15 @@ Responsys가 iOS 유니버셜 링크를 지원하려면 AASA 파일이 필요합
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## 앱 설정
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Android에 대한 1단계: 앱 링크를 지원하도록 앱 설정">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Android 매니페스트의 활동에 클릭 도메인 추가
 
@@ -117,6 +129,8 @@ Android 매니페스트에서 클릭 도메인 호스트와 딥링크하려는 �
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### 클릭 도메인을 확인하도록 앱 설정
 
@@ -145,6 +159,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 
 이 섹션에서는 유니버설 링크를 지원하도록 앱을 설정하는 방법을 설명합니다.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Xcode에서 클릭 도메인 연결
 
 1. Xcode에서 프로젝트를 클릭합니다.
@@ -153,6 +169,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 4. + 기호를 클릭하고 클릭 도메인을 추가합니다. 예를 들면 applinks:click.example.com과 같습니다.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### 2단계: 클릭 도메인을 확인하도록 앱 설정
 
@@ -223,6 +241,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## 첫 번째 이메일 보내기
 
 1. 링크 관리 페이지에서(또는 수동으로) 원링크 URL을 생성합니다.
@@ -242,6 +262,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 
    이 단계에서 Responsys는 위의 링크를 이전 단계에서 설정한 클릭 도메인으로 래핑합니다. 시나리오 : 세 개의 클릭 도메인이 귀하의 원링크 [https://mysubdomain.onelink.me/abCD](https://mysubdomain.onelink.me/abCD)로 리디렉션됩니다. 앱이 사용자의 기기에 설치되어 있는 경우 클릭 도메인은 앱에 딥 링크됩니다.
 
+<div id="note" />
+
 > 📄 **예시**
 >
 > URL 매개변수는 가독성을 위해 이 예제에서 URL로 인코딩되지 않습니다.
@@ -251,6 +273,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### 링크 테스트
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## 사용자 초대 어트리뷰션 소개
 
 사용자 초대란 기존 앱 사용자가 다른 사용자(예: 친구)를 앱을 다운로드하거나 열 수 있는 링크를 공유함을 의미합니다.
@@ -45,6 +47,8 @@ x-zendesk:
 
 사용자들이 다른 사람과 공유하는 초대 링크는 실제로 앱에 연동된 앱스플라이어 SDK에 의해 생성된 원링크 커스텀 링크(숏 URL)입니다. 원링크 설정을 통해 초대를 받은 사용자가 올바른 위치로 리디렉션되도록 할 수 있습니다. 즉, 올바른 앱 스토어로 이동하거나, 앱 내로 진입하거나, 앱의 특정 페이지로 딥링크/디퍼드 딥링크 될 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/onelink-guide">원링크에 대해 더 알아보기</Anchor>
 
+<div id="flow" />
+
 ### 플로우
 
 전체 플로우는 다음과 같이 작동합니다.
@@ -57,6 +61,8 @@ x-zendesk:
    * 설치된 앱이 없으면 올바른 앱 스토어로 전송됩니다. 사용자 B는 최초 앱 실행 후 또는 사용자 A가 보상을 받은 이후 앱 내 특정 페이지와의 디퍼드 딥링킹이 가능합니다.
    * 인앱 이벤트를 수행하며 사용자 A에게 보상을 제공할 수 있습니다.
 
+<div id="viewing-data" />
+
 ## 데이터 보기
 
 사용자 초대 데이터는 앱스플라이어 대시보드 및 리포트를 통해 사용할 수 있습니다. 앱스플라이어 대시보드에서 다음과 같이 사용자 초대 어트리뷰션을 필터링할 수 있습니다.
@@ -66,6 +72,8 @@ x-zendesk:
 * **캠페인**: 마케터의 결정에 따라
 
 리포트에서 미디어 소스 (`pid` 파라미터)는 SDK에서 기본값 `af_app_invites`로 전송됩니다.
+
+<div id="procedures" />
 
 ## 절차
 
@@ -105,6 +113,8 @@ x-zendesk:
 
 <Accordion title="파라미터">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### SDK에 구현하기 위해 개발자에게 제공된 파라미터/값
 
 <table><thead><tr><th>파라미터/값</th><th>비고</th><th>개발자가 구현해야 할 값/활용 사례를 기록합니다.</th></tr></thead><tbody><tr><td>원링크 템플릿 ID</td><td>모든 사용자 초대 링크의 기반이 될 기본 설정이 있는 원링크 템플릿의 ID입니다. 예시: H5hv</td><td> </td></tr><tr><td>채널</td><td>채널 이름. 이를 통해 앱스플라이어 UI에서 채널별로 어트리뷰션을 정렬하고 볼 수 있습니다.</td><td> </td></tr><tr><td>캠페인</td><td>캠페인 이름. 이를 통해 앱스플라이어 UI에서 캠페인별로 어트리뷰션을 정렬하고 볼 수 있습니다.</td><td> </td></tr><tr><td> <span>is_retargeting=true</span><br/> </td><td>캠페인이 기존 사용자를 리타겟팅하려는 경우 추가됩니다.</td><td> </td></tr><tr><td>deep_link_value</td><td>초대된 사용자의 디바이스에서 특정 경험을 제공하기 위해 사용할 파라미터입니다. 일반적으로 사용자가 연결될 특정 페이지 이름을 지정하는 데 사용됩니다. 예를 들어, 앱에서 과일을 판매하는 경우 사용자를 사과 페이지로 딥링킹할 수 있습니다.</td><td> </td></tr><tr><td>deep_link_sub1</td><td rowspan="10">초대된 사용자의 디바이스에서 특정 경험을 제공하기 위해 사용할 파라미터입니다. deep_link_value는 일반적으로 사용자를 특정 페이지로 보내는 데 사용되지만, 이 파라미터는 원하는 다른 기능에도 활용할 수 있습니다. 예를 들어, 보상 또는 할인을 추가하거나 초대를 한 사용자를 기록하는 데에도 사용됩니다. </td><td> </td></tr><tr><td>deep_link_sub2</td><td> </td></tr><tr><td>deep_link_sub3</td><td> </td></tr><tr><td>deep_link_sub4</td><td> </td></tr><tr><td>deep_link_sub5</td><td> </td></tr><tr><td>deep_link_sub6</td><td> </td></tr><tr><td>deep_link_sub7</td><td> </td></tr><tr><td>deep_link_sub8</td><td> </td></tr><tr><td>deep_link_sub9</td><td> </td></tr><tr><td>deep_link_sub10</td><td> </td></tr><tr><td>[선택 사항] pid</td><td><p>기본적으로 생성하는 링크에는 값이 <code>af_app_invites</code>인 미디어 소스(<code>pid</code> 파라미터)가 포함됩니다. </p><p>값을 변경하려면, 원하는 값을 가진 <code>pid</code>라는 커스텀 파라미터를 개발자가 추가해야 합니다. <strong>참고</strong>: 안드로이드의 경우 SDK V6.4.2+에서만 작동합니다.</p></td><td> </td></tr><tr><td>브랜드 이름</td><td>브랜드 도메인 이름입니다. 이를 통해 앱스플라이어 UI에서 브랜드 도메인별로 어트리뷰션을 정렬하고 볼 수 있습니다.</td><td> </td></tr></tbody></table>
@@ -131,6 +141,8 @@ x-zendesk:
 | 캠페인 | summer\_sale | 어트리뷰션의 경우, 그리고 앱스플라이어의 데이터를 보려는 경우. |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

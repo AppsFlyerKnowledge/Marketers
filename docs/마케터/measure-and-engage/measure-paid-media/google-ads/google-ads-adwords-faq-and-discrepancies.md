@@ -52,12 +52,16 @@ x-zendesk:
 
 누락된 설치 문제를 해결하기 위해 이 체크리스트를 따르세요:
 
+<div id="quick-fix" />
+
 #### 빠른 수정
 
 1. **AppsFlyer에서 Google Ads 활성화**  
    AppsFlyer에서 사이드바에서 **협업 > 활성 통합**을 열고, **Google Ads**를 검색하여 통합이 활성화되어 있는지 확인하세요.
 2. **Google Ads에서** `first_open`**전환 가져오기**  
    Google Ads에서 <Anchor target="_blank" href="https://ads.google.com/aw/conversions">전환 요약</Anchor> 페이지로 이동하여 `first_open` 전환 이벤트가 가져와졌는지 확인하세요. 자세한 내용은 앱 전환 가져오기를 참조하세요.
+
+<div id="still-not-working" />
 
 #### 아직도 작동하지 않나요?
 
@@ -83,6 +87,8 @@ x-zendesk:
 
 이 체크리스트를 사용하여 앱스플라이어와 구글 광고 간에 인앱 이벤트가 올바르게 설정되고 동기화되었는지 확인하세요.
 
+<div id="quick-fix-checklist" />
+
 #### 빠른 수정 체크리스트
 
 가장 일반적인 문제를 신속하게 해결하기 위해 다음 단계를 따르세요:
@@ -101,10 +107,14 @@ x-zendesk:
    2. **변환 작업 요약**을 확인하세요.
    3. 관련 인앱 이벤트를 가져오세요. 자세한 내용은 앱 변환 가져오기를 참조하세요.
 
+      <div id="note" />
+
       > 📘 **참고**
       >
       > 전환은 이벤트를 수행한 후 최대 6시간이 걸려 나타날 수 있습니다.
 
+
+<div id="still-not-working-1" />
 
 #### 아직도 작동하지 않나요?
 
@@ -195,6 +205,8 @@ MCC 수준 및 계정 수준의 링크 ID 모두 앱스플라이어에서 지원
 
 병렬 추적에 대한 전체 설명을 보려면 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">여기</Anchor>를 클릭하십시오.
 
+<div id="what-is-needed" />
+
 #### 필요한 것은 무엇입니까?
 
 병렬 추적이 의도한 대로 작동하려면 최종 URL이 캠페인 URL과 일치해야 하며 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">Google의 ValueTrack 파라미터</Anchor>에 입력해야 합니다.
@@ -228,6 +240,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="안드로이드 또는 iOS 구성으로 캠페인을 설정하는 방법.">
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 앱스플라이어는 구글 애즈에서 사용하는 모든 앱 캠페인을 지원합니다.
@@ -242,6 +256,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 안드로이드 어트리뷰션을 지원하려면, 앱이 GAID (구글 광고 ID) 수집하고, 광고 ID가 앱스플라이어 SDK를 통해 앱스플라이어로 전달되고 있는지 확인하십시오.
 
+<div id="creating-conversion-recording-installs" />
+
 #### 인스톨 전환 기록 만들기
 
 전환 기록을 생성하는 방법에 대한 자세한 내용을 보시려면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">여기</Anchor>를 클릭하십시오.
@@ -249,6 +265,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 <span id="inapp_events"></span>Google Ads - 안드로이드 설정 - 인앱 이벤트 보내기
 
 구글의 모바일 앱 설치 캠페인의 성공 여부를 더 깊게 측정하기 원하신다면, 앱스플라이어 계정에서 구글 애즈 계정으로 인앱 이벤트를 보낼 수 있습니다.
+
+<div id="create-a-conversion-in-app-events" />
 
 #### 인앱 이벤트 전환 만들기
 
@@ -260,6 +278,8 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 <Accordion title="구글 애즈 iOS 설정">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### 구글 애즈 - iOS 설정: 앱 캠페인
 
 앱 캠페인을 사용하면 한번의 설정으로 구글 검색, 유튜브 및 디스플레이에서 iOS 앱을 홍보할 수 있습니다.
@@ -268,13 +288,19 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 반대로, **앱 캠페인에서 iOS 검색은**구글 애즈에 의해 어트리뷰션 될 수 있습니다. 광고가 구글 검색 앱에 게재되기 때문입니다.
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### 인스톨 전환 기록 생성
 
 전환 기록을 생성하는 방법에 대한 자세한 내용을 보시려면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">여기</Anchor>를 클릭하십시오.
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### 구글 애즈 - iOS 설정 - 인앱 이벤트 전송
 
 구글의 모바일 앱 설치 캠페인의 성공 여부를 더 깊게 측정하기 원하신다면, 앱스플라이어 계정에서 구글 애즈 계정으로 인앱 이벤트를 보낼 수 있습니다.
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### 인앱 이벤트 전환 만들기
 
@@ -296,11 +322,15 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Google Ads 불일치
 
 구글 애즈 대시보드와 앱스플라이어 대시보드 간에 불일치가 생기는 경우가 있습니다.
 
 이 차이를 줄이기 위해서 앱스플라이어는 구글 애즈와 긴밀히 협조하고 있지만, 광고주는 다음의 원인에 대해서 알고 있어야 합니다.
+
+<div id="both-ios-and-android" />
 
 #### iOS와 안드로이드 모두
 
@@ -320,11 +350,15 @@ https://subdomain.onelink.me/template_id?pid=xxx&af_ios_url={lpurl}
 | **첫 번째 열기 이벤트** | Google Ads는 DMA가 올바르게 구현된 Firebase에서 이벤트를 가져오고, 이후 DMA 동의된 이벤트가 청구됩니다. | Google Ads는 또한 AppsFlyer에서 잘못 구현된 DMA로 인해 모든 이벤트가 비 DMA 동의된 것으로 보고되고 Google이 이를 청구하지 않도록 하는 동일한 이벤트를 가져옵니다.<ul><li>DMA가 올바르게 구현되었는지 확인하려면 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-export-page#download-report">원시 데이터 보고서 다운로드</Anchor>하고 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-dma-support-in-raw-data-reports">이 게시물</Anchor>에 지정된 필드에 집중하세요.</li><li>DMA를 SDK에 구현하는 방법을 배우려면 [개발자 허브](https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance)를 참조하세요.</li></ul> |
 | **리타게팅 이벤트** | Google Ads는 응답에서 `ad_type=ClickToDownload`와의 재참여를 청구할 수 있습니다. | AppsFlyer는 `ad_type=ClickToDownload`을 재참여가 아닌 UA 전환 이벤트로 계산합니다. 그 결과, AppsFlyer의 재참여 수는 더 낮을 수 있습니다. |
 
+<div id="notes" />
+
 > 📘 **참고**
 >
 > * Google Ads는 리타게팅 캠페인의 모든 설치를 동일한 위치에 표시하지만, 앱스플라이어 개요 대시보드에서 UA 보기는 신규 설치, 리타게팅 보기는 리어트리뷰션, 통합 보기는 둘 다 표시합니다.
 > * 구글 애즈 대시보드와 앱스플라이어의 데이터를 비교할 때, 구글 애즈 대시보드의 데이터가 타사 앱 분석 서비스 제공업체(AppsFlyer)에서 가져온 데이터인지 확인하십시오. Firebase 또는 구글 플레이에서 가져온 데이터는 다르게 구성되며 앱스플라이어 데이터와 완전히 비교할 수 없습니다. 앱스플라이어에서 구글 애즈 대시보드로 데이터를 가져오는 방법을 알아 보려면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">여기</Anchor>를 클릭하십시오.
 > * 인스톨 이벤트 (구글 애즈 상, first\_open)를 비교하려면 구글 애즈의 전환 보고서에서 인스톨 이벤트까지 내려가십시오. Google Ads는 모든 전환(예: 설치, 구매, 구독)을 표시할 수 있으므로 모든 전환 이벤트 중에서 설치 이벤트만 선택하는 것이 중요합니다.
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

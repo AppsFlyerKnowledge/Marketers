@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **요약:** 일부 파트너는 특정 로데이터 리포트의 특정 필드를 제한하도록 앱스플라이어에 요구합니다. 다른 경우, 파트너는 써드 파티 플랫폼에 포스트백을 공유할 때 미디어 소스를 삭제해달라고 요청할 수 있습니다. 이 문서에서는 이러한 제한사항과 그에 따른 의미를 설명합니다.
 
+<div id="raw-data-restriction" />
+
 ## 로데이터 제한
 
 앱스플라이어는 광고주의 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">AAP</Anchor> 설정이나 데이터를 제공하는 광고 네트워크의 데이터 공유 정책에 따라 특정 로데이터 리포트 필드에 대한 액세스가 제한됩니다. 이러한 제한은 리포트의 유형과 제한 이유에 따라 달라집니다.
 
+<div id="media-source-restrictions" />
+
 ### 미디어 소스 제한
 
 다음 표는 전환, 클릭, 노출에 대한 미디어 소스별 제한 사항을 나열합니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -50,6 +56,8 @@ x-zendesk:
 | <span id="snapchat"></span>스냅챗 | <ul><li>2023년 3월 1일부터 스냅챗 언인스톨은 로데이터 리포트에 포함되지 않습니다.</li><li>뷰-쓰루 어트리뷰션은 제한적입니다. 다음은 로데이터 전달 도구에 포함되지 않습니다.<ul><li>미디어 소스 (snapchat\_int)</li><li>채널</li><li>어트리뷰트 터치 유형(노출)</li><li>귀속된 터치 시간(날짜로만 보고됨 - "dd\/mm\/yyyy")</li><li>캠페인은 *"제한됨"*으로 보고됩니다.</li></ul></li><li>스냅챗의 클릭 및 노출은 로데이터 리포트에 포함되지 않습니다.</li></ul> |
 | <span id="tiktok-for-business"></span>TikTok for Business | <ul><li>미디어 소스 (bytedanceglobal\_int 및 tiktokglobal\_int)<ul><li>채널</li><li>어트리뷰트 터치 유형(노출)</li><li>귀속된 터치 시간(날짜로만 보고됨 - "dd\/mm\/yyyy")</li><li>캠페인은 *"제한됨"*으로 보고됩니다.</li></ul></li><li>bytedanceglobal\_int의 노출은 로데이터 리포트에서 제한됩니다.</li><li>tiktokglobal\_int의 클릭 및 노출 로데이터 리포트는 데이터 락커를 통해 제한됩니다.</li></ul> |
 | <span id="x-ads-formerly-twitter"></span>X Ads(이전의 트위터) | <ul><li>일부 경우, X Ads는 로데이터를 앱스플라이어 플랫폼에서 사용할 수 없도록 합니다. 이런 경우에는 이벤트가 로데이터 리포트에 나타나지 않습니다.</li><li>X Ads의 클릭 및 노출은 로데이터 리포트에 포함되지 않습니다.</li></ul> |
+
+<div id="raw-data-context" />
 
 ### 로데이터 컨텍스트
 
@@ -163,6 +171,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="faq" />
+
 ## 자주 묻는 질문
 
 <div id="what-events-are-restricted" />
@@ -183,6 +193,8 @@ x-zendesk:
 **리포트 예시:** CSV 파일에 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScXJznEex0WwdCy78Bm8LtrhbCk1jNy14O_t7etrq5ab5v4CIEiInfFD4B1EsZCE-_w-dVRAxl_cu4/pub?output=csv">제한된 로데이터</Anchor>로 인스톨합니다. 다른 로데이터 리포트도 비슷한 방식으로 처리됩니다.
 
 </Accordion>
+
+<div id="how-does-the-restricted-media-source-impact-postbacks-sent-to-partners" />
 
 <div id="what-is-the-impact-on-postbacks-to-partners-when-the-media-source-is-restricted" />
 
@@ -215,6 +227,8 @@ x-zendesk:
 지원과 관련된 데이터는 어트리뷰션 데이터로 간주되어 제공되지 않습니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 자료**
 >

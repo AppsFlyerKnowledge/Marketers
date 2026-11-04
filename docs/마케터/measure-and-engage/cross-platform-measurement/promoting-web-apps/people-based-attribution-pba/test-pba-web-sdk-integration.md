@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹 SDK PBA 플러그인 연동 테스트하는 법
 
+<div id="test-pba-web-events" />
+
 ## PBA 웹 이벤트 테스트
 
 **테스트 페이지 사용 원칙**
@@ -32,6 +34,8 @@ x-zendesk:
 * 접수 즉시 분석 및 검증됩니다.
 * 사용자 인터페이스에서 확인 가능합니다. UI에서는 처리 오류도 확인할 수 있습니다. 처리 오류 발생 시, 정확히 처리될 수 있도록 수정된 이벤트를 재전송합니다.
 * 일일 처리 과정에서 다른 이벤트와 같이 처리됩니다. 즉, 수정된 이벤트가 대시보드와 로데이터에 추가됩니다.
+
+<div id="web-sdk-integration-test-page" />
 
 #### 웹 SDK 통합 테스트 페이지
 
@@ -72,6 +76,8 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="procedures" />
 
 ## 절차
 
@@ -148,6 +154,8 @@ x-zendesk:
 | 3 | <Anchor target="_blank" href="/marketers/ko/docs/pba-web-sdk-integration-guide#recording-event-scenarios">웹 이벤트를 전송해</Anchor> PBA 처리 상태를 확인해 보세요.<br /><br />**참고:**<br /><br />별도로 설정하지 않은 경우, `eventRevenue`와 `eventRevenueCurrency`는 기본값으로 설정됩니다:<ul><li>`eventRevenueCurrency: "USD"`</li><li>`eventRevenue: 0`</li></ul>[![PBAWebSDKTestEventEVENT_en-us.png](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)](https://files.readme.io/208c42edaa132b69279a5a99232763e2e9da1be950dd3dec3b5636d650e540c8-360011317918.png)<br /><br />더 자세한 정보는 <Anchor target="_blank" href="/marketers/ko/docs/pba-web-sdk-integration-guide#web-sdk-event-parameters">웹 SDK 이벤트 파라미터</Anchor>를 참조하세요. | [![mceclip5.png](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png)](https://files.readme.io/51f3c824c253bc825d22c672393adc002c365a2084d71ce6183e412b76e9d3eb-360011199578.png) |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## 문제 해결
 

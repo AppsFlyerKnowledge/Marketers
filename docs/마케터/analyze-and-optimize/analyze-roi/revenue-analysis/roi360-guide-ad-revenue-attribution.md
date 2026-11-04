@@ -31,6 +31,8 @@ x-zendesk:
 
 [![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## 광고 수익 어트리뷰션
 
 * 광고는 배너, 오퍼월(offer wall), 전면 광고 등으로 앱에 표시되며 광고 수익을 생성합니다.
@@ -59,6 +61,8 @@ x-zendesk:
 | 노출 수준(SDK를 통해)과 디바이스 수준(S2S API를 통해) | <ul><li>SDK를 통해 도착하는 노출 수준 데이터가 X일에 어트리뷰트 및 리포트되도록 허용하고, 1일 이후에 API를 통해 도착하는 디바이스 수준 데이터로 전환할 수 있습니다. **참고**: 참고: Android의 경우 알 수 없는 기기에서 SDK를 통해 보고된 데이터(사용 가능한 기기 ID 없음)는 API를 통해 도착하는 데이터로 대체되지 않습니다.</li><li>데이터 최신성을 정확하게 유지합니다. 즉, X+1일 이후의 데이터 정확도와 함께 X일에 대한 데이터 최신성의 이점을 얻을 수 있습니다.</li><li>SKAN을 지원합니다.</li></ul> |
 
 </Accordion>
+
+<div id="implementation" />
 
 ## 구현하기
 
@@ -146,12 +150,16 @@ x-zendesk:
   * **af\_app\_open\_event**는 기본으로 사용할 수 있습니다.
 * 광고 수익 연동과 병행하여 인앱이벤트에서 광고 수익 금액을 리포트하지 마십시오. 왜냐하면 앱스플라이어는 수익을 광고 수익화 네트워크와 연동하여 수신하고 있기 때문에, 그렇게하면 대시보드에서 광고 수익이 중복될 수 있습니다.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### 이벤트를 통한 종합 광고 수익
 
 | 이벤트 메서드 | 구현 방법 | 고려 사항 |
 | --- | --- | --- |
 | 고유 수익화 인앱 이벤트 | <ul><li>인앱 이벤트가 광고 표시 시점에 설정됩니다.</li><li>이를 통해 사용자 액션을 별도 집계하고, 고급 eRPA 계산이 가능합니다.</li></ul> | <ul><li>개발자가 앱 코드에 구현해야합니다.</li><li>대시보드에서 광고 수익을 광고 수익화 네트워크 별로 구분할 수 있습니다.</li></ul> |
 | af\_app\_opened 이벤트 | <ul><li>af\_app\_opened 이벤트는 앱스플라이어 SDK에 의해 기본으로 전송됩니다.</li><li>매 사용자 세션에 트리거 됩니다.</li></ul> | <ul><li>별도의 앱 코드 작업이 필요하지 않습니다.</li><li>빠르게 구현할 수 있습니다.</li><li>세션 당 한번의 광고만 게재하는 것이 아닌 이상, eRPA 값이 심각하게 왜곡됩니다.</li><li>광고 수익화 네트워크 별로 구분할 수 없습니다.</li><li>이벤트는 앱을 실행한 모든 사용자에 적용되며, 사용자의 광고 시청 의사에 대한 표시가 없습니다.</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### 인앱 이벤트 메서드 비교
 
@@ -181,6 +189,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="ad-revenue-data" />
+
 ## 광고 수익 데이터
 
 광고 수익 데이터는 앱스플라이어 대시보드 및 로데이터 리포트를 통해 제공됩니다.
@@ -204,6 +214,8 @@ x-zendesk:
   * 대시보드가 액티비티(Activity)
   * 광고 수익 로데이터
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **개요 대시보드 - 종합 성과 리포트**
 
 [![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
@@ -220,6 +232,8 @@ x-zendesk:
 
 * 수익을 포함한 값(value)들은 액티비티 날짜 기반입니다. <Anchor target="_blank" href="/marketers/ko/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV 대 액티비티 데이터</Anchor>를 참고하십시오.
 * **Average Actions per User** 는 사용자가 앱에 게시된 광고에 참여하는 경향을 나타냅니다.
+
+<div id="examples" />
 
 > 📄 **예시**
 >
@@ -310,6 +324,8 @@ x-zendesk:
   * 컨텍스트 상황: 다른 로데이터 리포트에서 비슷한 의미를 가지는 필드. 예를 들어, event name, event value, currency.
 * 사용자를 유입시킨 미디어 소스로 이벤트를 어트리뷰션한 결과입니다. 즉, 이 필드는 해당 사용자를 유입시킨 전환 이벤트에서 복사된 것입니다. 예를 들어, 미디어 소스 및 캠페인. 이런 필드는 다음의 표에 나열되어 있지 않습니다.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### 광고 수익에 의해 채워진 필드
 
 | api\_name | 필드 이름 | 필드 유형 | 설명 |
@@ -325,6 +341,8 @@ x-zendesk:
 | monetization\_network | Monetization Network | 특정 | 광고를 전송한 네트워크 |
 | 노출 | 노출 | 특정 | 유저가 광고를 본 횟수 |
 | mediation\_network | Mediation Network | 특정 |  |
+
+<div id="fields-by-network" />
 
 #### 네트워크 별 필드
 
@@ -369,6 +387,8 @@ S2S API 연동의 경우 데이터를 사용할 수 있는 가장 빠른 시기�
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

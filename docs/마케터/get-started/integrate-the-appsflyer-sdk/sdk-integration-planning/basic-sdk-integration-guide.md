@@ -29,9 +29,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 모바일 또는 CTV 앱 개발자와 함께 안드로이드 또는 iOS 앱에 SDK를 연동하고 인스톨하세요. 기본 연동 작업이 완료되면 귀사의 앱은 인스톨 어트리뷰션과 인앱 이벤트 측정을 할 준비가 됩니다.
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **애플리케이션 내 개발 키 구현**
 
 앱스플라이어는 개발 키를 사용하여 귀사의 계정을 고유하게 식별합니다. 개발 키는 SDK가 귀사의 계정에 속한 데이터를 안전하게 발송하고 검색할 수 있도록 하는 필수 항목입니다. 개발자가 SDK를 인스톨하고 연동하며 개발 키를 내장해야 합니다.
+
+<div id="retrieve-the-dev-key" />
 
 #### 개발 키 검색
 
@@ -40,12 +44,16 @@ x-zendesk:
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **앱 설정**을 선택합니다.
 2. Dev key를 복사하여 모바일 개발자에게 전달하세요.[![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 
+<div id="provide-the-dev-key-to-your-developer" />
+
 #### 개발자에게 Dev key 제공
 
 개발자에게 Dev Key, App ID 및 AppsFlyer API v2 토큰을 제공하고 다음 지침을 따르도록 요청하십시오.
 
 * 자동화된 SDK 설치 및 연동을 위해 <Anchor target="_blank" href="https://dj.dev.appsflyer.com/?utm_source=kb&amp;utm_medium=kb-basic-sdk-integration">SDK 연동 마법사</Anchor>를 사용
 * 단계별 지침을 사용하여 SDK를 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">설치</Anchor>하고 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">연동</Anchor>하기
+
+<div id="where-to-start-the-sdk" />
 
 ## **SDK, 어디에서 시작할까요?**
 
@@ -58,7 +66,11 @@ x-zendesk:
 <Tabs>
 <Tab title="안드로이드 native">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### 안드로이드 네이티브에서 SDK 시작
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### SDK를 어느 클래스에서 시작할지 선택하세요
 
@@ -66,6 +78,8 @@ x-zendesk:
 
 * <strong>글로벌</strong> 클래스에서 SDK 시작:<strong> 일반적으로 글로벌 `Application` 클래스 또는 하위 클래스에서 SDK를 초기화하는 것은 좋은 방법입니다. 이 `Application` 클래스가 앱 UI가 표시되기 전에 로드되고 초기화되기 때문입니다. 이렇게 함으로써 딥링킹을 포함한 모든 시나리오에서 SDK를 시작할 수 있습니다.</strong>
 * 사용자가 데이터 공유를 선택할 수 있도록 클래스에서 지연된 시작으로<strong> SDK를 시작합니다. 이는 사용자 동의를 얻기 위해서는 `Activity` 클래스에서 렌더링된 사용자 인터페이스(UI)가 필요하기 때문입니다.</strong>
+
+<div id="android-developer-instructions" />
 
 #### 안드로이드 개발자 지침
 
@@ -80,6 +94,8 @@ x-zendesk:
 <Tab title="iOS native">
 
 <div id="starting-the-sdk-in-ios" />
+
+<div id="starting-the-sdk-in-ios-native" />
 
 ### iOS 네이티브에서 SDK 시작하기
 
@@ -111,6 +127,8 @@ SDK는 `waitForATTUserAuthorization` 메서드를 제공하며, 이를 통해 **
 
 <div id="starting-the-sdk-in-Unity" />
 
+<div id="starting-the-sdk-in-unity" />
+
 ### Unity에서 SDK 시작하기
 
 SDK를 시작하는 방법에 대한 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/basicintegration#manual-integration">Dev Hub 문서</Anchor>를 개발자에게 발송하세요.
@@ -121,6 +139,8 @@ SDK를 시작하는 방법에 대한 <Anchor target="_blank" href="https://dev.a
 
 <div id="starting-the-sdk-in-react" />
 
+<div id="starting-the-sdk-in-react-native" />
+
 ### React Native에서 SDK 시작하기
 
 SDK를 시작하는 방법에 대한 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#startsdk">Dev Hub 문서</Anchor>를 개발자에게 발송하세요.
@@ -128,11 +148,15 @@ SDK를 시작하는 방법에 대한 <Anchor target="_blank" href="https://dev.a
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## 개인 정보 보호 전략을 선택하세요
 
 **사용자 개인 정보를 보호하는 방법**을 선택하세요. 예를 들어, SDK를 설치 시 중지하거나, 데이터 공유를 타사와 방지하고, 사용자 데이터를 익명화하거나 특정 식별자를 비활성화하는 방법 중 선택하세요.
 
 사용 가능한 다양한 개인정보 보호 방법에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/apply-privacy-preserving-sdk-methods">SDK의 개인정보 보호 방법</Anchor>을 참조하세요.
+
+<div id="attribution" />
 
 ## **어트리뷰션**
 
@@ -264,7 +288,11 @@ ATT 구현을 위한 개발자 지침은 Dev Hub에서 를 참조하세요.
 
 IDFA를 사용하여 어트리뷰션이 이루어질 때는 IDFA가 **앱 최초 오픈 시 전송되는 것이 중요합니다. `waitForATTUserAuthorization`이러한 이유로 SDK는 `waitForATTUserAuthorization` 메서드를 제공합니다.**
 
+<div id="waitforattuserauthorization-overview" />
+
 #### waitForATTUserAuthorization 개요
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -323,6 +351,8 @@ IDFA를 사용하여 어트리뷰션이 이루어질 때는 IDFA가 **앱 최초
 
 <Accordion title="SKAN 어트리뷰션 지원">
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > SKAN 어트리뷰션을 완벽하게 지원하려면 iOS SDK V6.2.3+로 업그레이드하세요.
@@ -359,6 +389,8 @@ SKAN 어트리뷰션 비활성화하려면 <Anchor target="_blank" href="https:/
 </Accordion>
 
 </Accordion>
+
+<div id="recording-in-app-events" />
 
 ## **인앱 이벤트 기록**
 
@@ -410,6 +442,8 @@ SKAN 어트리뷰션 비활성화하려면 <Anchor target="_blank" href="https:/
 여행, 게임, 이커머스 등 업종별, 앱 카테고리별 추천 인앱 이벤트 목록<Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#recommended-events-by-business-vertical">을 확인하세요.</Anchor>
 
 </Accordion>
+
+<div id="deep-linking-with-onelink" />
 
 ## **원링크를 사용한 딥링킹**
 
@@ -463,6 +497,8 @@ SKAN 어트리뷰션 비활성화하려면 <Anchor target="_blank" href="https:/
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **어트리뷰션 및 딥링킹 데이터 액세스**
 
 다음 표는 어트리뷰션 및 딥링킹 데이터를 검색하는 데 사용할 수 있는 방법을 설명합니다.
@@ -480,12 +516,16 @@ iOS 14.5 이상 동의하지 않은 사용자들의 경우 다음 사항을 유�
 * 유료 및 소유 매체에서 UDL을 사용하는 경우, 딥링킹 데이터를 사용할 수 있습니다.
 * 페이드 미디어에 GCD를 사용할 경우, 제공되는 데이터는 제한적이며 어트리뷰션 및 딥링크 관련 세부 정보가 포함되지 않습니다.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 다음을 추천합니다.
 >
 > * Push API를 사용하여 어트리뷰션 데이터를 가져와 귀사의 서버로 발송하여 추가 처리하세요. 이 메서드는 데이터가 준비될 때까지 기다리므로 정확도가 높고 실시간에 가깝습니다. GCD는 실시간으로 데이터를 반환하지만, 최종 어트리뷰션 결정이 5초 이상 소요될 경우 정확하지 않을 수 있습니다.
 > * Pull API를 사용하여 주기적으로(예: 매일) 실시간 어트리뷰션 데이터를 보완하고, 발생할 수 있는 통신 오류를 보상하세요.
+
+<div id="testing-your-sdk-integration" />
 
 ## **SDK 연동 테스트**
 
@@ -494,6 +534,8 @@ SDK 연동이 완료되면 앱스플라이어 대시보드로 이동하여 SDK �
 시험 시나리오와 지침은 <Anchor target="_blank" href="/marketers/ko/docs/testing-the-sdk-integration-for-marketers">SDK 연동 시험</Anchor>을 참조하세요.
 
 **참고:** 어트리뷰션 시험을 수행할 때, <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">시험 디바이스(안드로이드 또는 iOS)를 등록하여</Anchor> 각 인스톨이 새 인스톨로 기록되도록 합니다. 등록된 시험 디바이스는 인스톨이 재인스톨로 기록되는 것을 방지합니다.
+
+<div id="note-1" />
 
 > 📄 **또한 참조하세요**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 애드 네트워크에 연동된 파트너인 Reddit은 다른 곳에서는 찾아볼 수 없는 월간 기준 참여도가 높은 사용자 수가 4억 3천만 명이나 되는 회사입니다.
 
+<div id="setting-up-reddit" />
+
 ## Reddit 설정
 
 **전제 조건:** 연동을 설정하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
@@ -46,17 +48,25 @@ x-zendesk:
 
 ***연동 탭***은 여러 섹션으로 나뉘어져 있습니다.
 
+<div id="activate-partners" />
+
 #### 파트너 활성화
 
 구성을 활성화하려면 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">파트너를 활성화하세요</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### 프라이버시 강화 모드
 
 iOS**앱의 경우에만 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#b-advanced-privacy">고급 개인 정보 보호(iOS 14.5+ 이상)</Anchor>** 가 켜져 있으면 포스트백 및 리포트를 통해 Reddit과 공유되는 데이터를 제어할 수 있습니다.
 
+<div id="transaction-id" />
+
 #### 트랜잭션 ID
 
 **iOS 앱에 한해, <Anchor target="_blank" href="/marketers/ko/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN 트랜잭션 ID 공유</Anchor>** 가 켜져 있으면 앱스플라이어가 SKAdNetwork 포스트백의 트랜잭션 ID를 Reddit과 공유할 수 있습니다. 그러면 Reddit이 SKAdNetwork 전환 값을 디코딩할 수 있습니다.
+
+<div id="general-settings" />
 
 #### 일반 설정
 
@@ -64,12 +74,16 @@ iOS**앱의 경우에만 <Anchor target="_blank" href="/marketers/ko/docs/set-up
 
 Reddit의 뷰-쓰루 설치를 어트리뷰션하려면 활성화합니다. 뷰-쓰루 룩백 슬라이더는 [***어트리뷰션 링크***](/docs/reddit-campaign-configuration#attribution-link-tab) 탭에서 사용할 수 있습니다.
 
+<div id="default-postbacks" />
+
 #### 기본 포스트백
 
 사용자 설치 후 자동 포스트백을 Reddit으로 전송합니다. 어트리뷰션된 설치에 대해 포스트백을 보낼지 여부를 선택합니다.
 
 * Reddit만 해당
 * 오가닉을 포함한 모든 소스
+
+<div id="in-app-events-settings" />
 
 #### 인앱 이벤트 설정
 
@@ -131,6 +145,8 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 이 탭에서 Reddit에 부여할 권한을 선택할 수 있습니다. Reddit에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 Reddit에 제어 권한을 부여할 수 있습니다.
 
+<div id="ad-network-permissions" />
+
 #### 애드 네트워크 권한
 
 이 탭에서 Reddit에 부여할 권한을 선택할 수 있습니다. Reddit에 대한 어트리뷰션이 비활성화되어 있더라도 권한 탭은 활성화되어 있으며 Reddit에 제어 권한을 부여할 수 있습니다.
@@ -149,6 +165,8 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">애드 네트워크 권한 부여</Anchor>에 대해 자세히 알아보십시오.
 
 </Accordion>
+
+<div id="raw-data-restrictions" />
 
 ## 로데이터 제한
 

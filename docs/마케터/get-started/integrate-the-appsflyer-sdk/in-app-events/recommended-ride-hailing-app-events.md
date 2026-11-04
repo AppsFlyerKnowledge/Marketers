@@ -33,6 +33,8 @@ x-zendesk:
 * 차량 공유 서비스를 더 많이 이용하는 국가를 알 수 있습니다.
 * 요금, 탑승 횟수, 탑승 거리 등의 지표
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 인앱 이벤트 구현과 관련한 마케터용 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#인앱-이벤트-설정">지침</Anchor>을 반드시 읽어보십시오.
@@ -43,6 +45,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -145,6 +149,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## 사용자 지정 이벤트에 대한 권장 구조
 
 다음 섹션에서는 사용자 지정 이벤트 이름과 사용하도록 제안된 이벤트 파라미터를 포함한 이벤트 구조 목록을 제공합니다. 인앱 이벤트에는 비즈니스 요구를 충족하는 이벤트 파라미터가 포함될 수 있습니다.
@@ -199,6 +205,8 @@ x-zendesk:
 * 각 운전자의 평균 및 전체 탑승 요금을 알 수 있습니다.
 
 추가로, 다른 세 가지 예약 관련 이벤트와 함께 이 이벤트를 기록하면 운전자 활동에 대해 더 잘 이해할 수 있습니다. 어느 운전자가 승차 예약 요청을 가장 많이 확인하고, 어느 운전자가 단거리 또는 장거리를 선택하는지 등을 알 수 있습니다.
+
+<div id="trigger" />
 
 #### **트리거**
 

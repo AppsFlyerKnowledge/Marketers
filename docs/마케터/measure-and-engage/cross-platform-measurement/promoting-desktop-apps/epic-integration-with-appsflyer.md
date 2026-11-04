@@ -22,7 +22,9 @@ x-zendesk:
 > **요약:  Native PC 연동은 PC 앱에 대한 어트리뷰션 및 인앱 이벤트 기록(즉, 사용자 PC에서의 어트리뷰션 및 기록)을 지원합니다.**
 
 
-<span id="about-steam-attribution"></span>마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다.
+<span id="about-epic-game-attribution"></span><span id="about-steam-attribution"></span>마케팅 담당자는 이러한 인사이트를 바탕으로 마케팅 활동을 측정하고 최적화합니다.
+
+<div id="example-attribution-flow" />
 
 ### 어트리뷰션 흐름의 예
 
@@ -34,6 +36,8 @@ x-zendesk:
 2. 게임 랜딩 페이지: 게임 랜딩 페이지는 고객을 Steam 게임 페이지로 안내합니다. 이 단계에서 UTM 및 기타 URL 파라미터를 수집하는 데 중요한 역할을 하며, 고객의 클릭/설치를 오리지널 미디어 소스 또는 온드 미디어 소스로 어트리뷰트합니다.  
    또한, 랜딩 페이지가 유용한 이유는 게임이 지원하는 다양한 플랫폼에 대한 링크를 제공하기 때문입니다. 예를 들어 랜딩 페이지에 Xbox, Microsoft Store 및 Steam 페이지로 안내하는 링크를 포함시킬 수도 있습니다.
 4. 게임 설치: 유저가 게임을 설치하면 어트리뷰션이 트리거되고 인앱 이벤트 및 세션이 기록됩니다.
+
+<div id="integration-procedures" />
 
 ## 연동 절차
 
@@ -162,12 +166,18 @@ x-zendesk:
 </Table>
 
 
+<div id="traits-and-limitations" />
+
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ## 특징 및 제약 사항
 
 | 특성 | 비고 |
 | --- | --- |
 | 리타겟팅 | 현재 지원되지 않음 |
 | 비용 데이터 | 비용 데이터는 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">Cost Import</Anchor>기능을 통해 이메일을 보내는 방법으로 전송해야 합니다. |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

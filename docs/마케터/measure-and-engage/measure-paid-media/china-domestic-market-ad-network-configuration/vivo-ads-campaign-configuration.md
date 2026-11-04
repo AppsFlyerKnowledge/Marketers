@@ -49,14 +49,20 @@ Pinterest의 구성 창에는 연동 및 어트리뷰션 링크. 탭 설정에 �
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 이곳을 **처음 방문**하면 아래를 토글해야 합니다. ***파트너 활성화*** 버튼을 **켜서** 연동 탭의 파라미터 설정을 활성화합니다. 파트너와 함께 작업하는 동안에는 토글이 **켜져 있어야** 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
 
+<div id="enable-view-through-attribution" />
+
 ### 뷰-쓰루 어트리뷰션 활성화
 
 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -71,6 +77,8 @@ Pinterest의 구성 창에는 연동 및 어트리뷰션 링크. 탭 설정에 �
 앱스플라이어는 생성된 파트너 어트리뷰션 링크를 저장하지 않음을 주의하십시오.
 
 이 탭은 여러 섹션으로 나눠집니다.
+
+<div id="attribution-link-parameters" />
 
 ### 어트리뷰션 링크 파라미터
 
@@ -91,6 +99,8 @@ Pinterest의 구성 창에는 연동 및 어트리뷰션 링크. 탭 설정에 �
 
 다른 파라미터를 새 파라미터 상자에 입력하기만 하면, 어트리뷰션 링크에 추가할 수 있습니다. 더 많은 정보는 **앱스플라이어 어트리뷰션 링크 구조와 파라미터**에서 참조하십시오.
 
+<div id="click-through-attribution" />
+
 ### 클릭-쓰루 어트리뷰션
 
 **클릭에서 인스톨까지의 최대 시간**을 이 슬라이더에서 설정할 수 있습니다. 기여 기간 내에 일어난 인스톨(앱 최초 실행)만 X Ads로 어트리뷰션됩니다.
@@ -101,9 +111,13 @@ Pinterest의 구성 창에는 연동 및 어트리뷰션 링크. 탭 설정에 �
 
 ![viewthrough_en-us.png](https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png)
 
+<div id="attribution-link" />
+
 ### 어트리뷰션 링크
 
 이것은 설정해둔 모든 설정 정보를 포함하는 어트리뷰션 링크입니다.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### 뷰-쓰루 어트리뷰션 룩백 윈도우
 
@@ -114,6 +128,8 @@ Pinterest의 구성 창에는 연동 및 어트리뷰션 링크. 탭 설정에 �
 **어트리뷰션 링크 변수:** af\_viewthrough\_lookback
 
 더 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">여기에서 뷰-쓰루 어트리뷰션</Anchor> 항목을 참조하십시오.
+
+<div id="impressions-attribution-link" />
 
 ### 노출 어트리뷰션 링크
 

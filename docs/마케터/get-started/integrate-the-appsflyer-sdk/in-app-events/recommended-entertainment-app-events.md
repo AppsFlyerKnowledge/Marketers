@@ -39,6 +39,8 @@ x-zendesk:
 * 애플 TV (tvOS)
 * 아마존 파이어 TV
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * 인앱 이벤트 구현과 관련한 마케터용 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview#인앱-이벤트-설정">지침</Anchor>을 반드시 읽어보십시오.
@@ -49,6 +51,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -115,6 +119,8 @@ x-zendesk:
 | trial\_method | 시험판 활성화 방법 | 새 휴대폰 무료, 통신사 무료, 프로모션, 쿠폰 코드 |
 | trial\_method\_identifier | 무료 체험 방법 식별자 | 통신사 이름(예: **Vodafone**)<br /><br />파트너 이름, 예를 들어 **메타 광고**<br /><br />쿠폰 코드(예: **TRA123**) |
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > 이 이벤트를 Meta ads StartTrial 이벤트와 매핑하고 수익을 연관시키려면 af\_revenue 대신 af\_price 파라미터를 사용하세요.
@@ -153,6 +159,8 @@ x-zendesk:
 | expiration\_date | 구독 만료 날짜 | 2018/07/18 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 

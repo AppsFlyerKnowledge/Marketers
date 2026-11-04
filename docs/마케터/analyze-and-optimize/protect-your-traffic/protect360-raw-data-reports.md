@@ -29,6 +29,8 @@ x-zendesk:
 
 > **한눈에 보기:** 로데이터 리포트는 Protect360 엔진이 차단한 인스톨 및 인앱 이벤트와 수동으로 추가한 유효성 검증 규칙을 설명합니다.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Protect360 로데이터 리포트에 대하여
 
 로데이터 리포트:
@@ -42,6 +44,8 @@ x-zendesk:
 * 리포트 유형과 다운로드, API, 데이터 락커(S3 버킷)에 따른 가용성에 대해 다음 섹션에서 설명합니다.
 * 역사적인 로데이터 리포트 리텐션은 리포팅 도구와 로데이터 출처에 따라 최대 90일까지 보관됩니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 프라이버시와 관련된 로데이터 제한으로 인해 로데이터 리포트는 비어 있는 값이 포함된 필드를 보여줄 수 있습니다. 그 예가 기여자 필드입니다.
@@ -49,6 +53,8 @@ x-zendesk:
 <div id="report-types" />
 
 <Accordion title="리포트 유형">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Protect360 로데이터 리포트 유형
 
@@ -76,6 +82,8 @@ x-zendesk:
   * 대시보드 사용자 인터페이스: 한 달 동안 하나의 미디어 소스로 제한됩니다.
   * Pull API: 모든 미디어 소스를 포함합니다. (제한 사항: 앱 소유자에게만 제공됨.)
 
+<div id="using-post-attribution-reports" />
+
 #### **사후 어트리뷰션 리포트 사용하기**
 
 * 원하는 인스톨\/IAE와 감지 날짜 범위 조합을 선택하세요.
@@ -85,6 +93,8 @@ x-zendesk:
   * 인스톨 날짜 범위를 현재 날짜에서 60일 이전으로 설정합니다.
   * 감지 시작/종료 범위를 현재 날짜의 전날로 설정합니다.  
     이는 어제 감지된 사후 어트리뷰션 프로드 목록을 받게 된다는 뜻입니다. 며칠 동안 리포트를 가져오지 못했다면 감지 날짜 범위를 조정하고 리포트를 가져오세요.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -98,11 +108,15 @@ x-zendesk:
 
 <Accordion title="도구 유형별 로데이터 가용성">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### 도구 유형별 Protect360 로데이터 가용성
 
 <table><thead><tr><th>리포트</th><th>데이터 최신성</th><th>Pull API</th><th>데이터 내보내기 페이지</th><th>데이터 락커</th></tr></thead><tbody><tr><td>인스톨</td><td>실시간</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>차단된 인앱 이벤트</td><td>실시간</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>클릭</td><td>실시간</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>차단된 인스톨 포스트백</td><td>실시간</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>사후 어트리뷰션 인스톨</td><td><p>매일 10:00 UTC</p></td><td><p><span>✓</span></p></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>사후 어트리뷰션 인앱 이벤트</td><td><p>매일 10:00 UTC</p></td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr></tbody><tfoot><tr><td colspan="5"><p>\* 데이터 락커를 통한 리포트의 제한 사항:</p><ul><li>에이전시 투명성 지원되지 않음. 즉, 에이전시 주도 트래픽에는 인스톨을 보낸 미디어 소스의 이름을 포함하지 않습니다. </li><li>이 리포트는 다른 데이터 락커 리포트와 대비하여 고유한 필드 집합을 가지고 있습니다. 이 목록은 변경할 수 없습니다. </li><li>리타겟팅 데이터는 인스톨 리포트에서는 사용할 수 없고, 사후 어트리뷰션 인스톨 리포트에서는만 사용할 수 있습니다. </li></ul></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## 로데이터 리포트 받기
 
@@ -142,6 +156,8 @@ Pull API 토큰이 필요합니다. 어드민 <Anchor target="_blank" href="/mar
 3. 필요에 따라 파라미터를 입력하세요. 다음 표에 파라미터가 나열됩니다.
 4. 리포트를 가져오세요.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Pull API 로데이터 리포트 파라미터
 
 | 파라미터 | 설명 | 형식 | 필수 |
@@ -169,11 +185,15 @@ Pull API 토큰이 필요합니다. 어드민 <Anchor target="_blank" href="/mar
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Protect360 리포트 구조
 
 Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구조를 갖고 있습니다.
 
 일반적인 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary">로데이터 리포트 필드</Anchor> 외에도 Protect360 리포트에는 리타겟팅 및 차단 이유 필드도 포함되어 있습니다. 예를 들면 다음과 같습니다:
+
+<div id="blocked-reasons" />
 
 ### 차단된 이유
 
@@ -204,6 +224,8 @@ Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구�
 
 다음 표에는 인스톨 수준에서 차단된 이유가 나열되어 있습니다:
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### 인스톨 수준: 가짜 인스톨 차단 하위 이유
 
 | 차단된 이유 | 차단된 하위 이유 | 설명 |
@@ -215,6 +237,8 @@ Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구�
 | 검증 봇 | 잘못된 디바이스 파라미터 | 특정 디바이스 필드 기대의 불일치 - 고객이 정의함 |
 | 검증 봇 | 유효성 검증 규칙 | 수동으로 정의된 유효성 검증 규칙에 따라 차단된 인스톨 규칙 |
 | 봇 | ai\_layer | AI 모델이 방대한 양의 데이터 포인트를 분석하여 사기 디바이스 및 인스톨 활동을 식별하는 탐지 능력을 향상시킵니다. |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### 인스톨 수준: 어트리뷰션 하이재킹 차단 하위 이유
 
@@ -240,6 +264,8 @@ Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구�
 
 다음 표에는 클러스터 수준에서 차단된 이유들이 나열되어 있습니다:
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### 클러스터 수준: 가짜 인스톨 차단 이유
 
 | 차단된 이유 | 차단된 하위 이유 | 설명 |
@@ -248,6 +274,8 @@ Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구�
 | 봇, 사이트 블랙리스트 | 디바이스 에뮬레이터 | 가상 환경에서 작동하는 자동 스크립트에 의해 발생한 대규모 인스톨 |
 | 사이트 블랙리스트 | 디바이스 팜 | 높은 비율의 알려지지 않은(신규) 디바이스 |
 | 행동적 이상 | 행동적 이상 | 일반적인 앱 유저 행동 패턴과 비교하여 인앱에서 의심스러운 행동 |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### 클러스터 수준: 어트리뷰션 하이재킹 차단 이유
 
@@ -271,6 +299,8 @@ Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구�
 
 다음 표에는 인앱 수준에서 차단된 이유가 나열되어 있습니다.
 
+<div id="in-app-level-block-reasons" />
+
 #### 인앱 수준 차단 이유
 
 | 차단된 이유 | 차단된 하위 이유 | 설명 |
@@ -281,6 +311,8 @@ Protect360 리포트는 유저 유입 리포트 필드와 동일한 일반 구�
 | validation\_inapps | 유효성 검증 규칙 | 수동으로 정의된 유효성 검증 규칙 기반 |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### 리타겟팅
 
@@ -294,6 +326,8 @@ Protect360 로데이터에는 리타겟팅 캠페인에서 발생한 사기성 �
 Protect360 리타겟팅 로데이터는 다음과 같이 실시간 차단 및 사후 어트리뷰션에 식별된 프로드를 위해 사용할 수 있습니다.
 
 <table><thead><tr><th>리포트 </th><th>데이터 내보내기</th><th>Pull API</th><th>데이터 락커</th></tr></thead><tbody><tr><td>인스톨</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>사후 어트리뷰션 인스톨</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* 리인게이지먼트 데이터는 사용할 수 없습니다</span><span><span><br/></span> </span> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### 하이재킹된 인스톨 어트리뷰션 수정
 

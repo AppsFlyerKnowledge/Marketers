@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** Google Ads 웹 캠페인을 사용하여 PC 및 콘솔 플랫폼에서 앱을 홍보하고 어트리뷰션을 활성화하세요. 앱스플라이어는 크로스 플랫폼 랜딩 페이지 또는 다이렉트 어트리뷰션 링크를 사용하는 구글 웹 기반 캠페인을 지원합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 이 문서는 PC 또는 콘솔 앱을 홍보하는 웹 캠페인에 중점을 둡니다. 모바일 앱을 홍보하는 웹 캠페인을 만들고 싶다면 <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-create-web-based-campaigns">Google Ads (AdWords) - 웹 기반 캠페인 만들기</Anchor>를 참조하세요.
+
+<div id="overview" />
 
 ## 개요
 
@@ -35,6 +39,8 @@ x-zendesk:
 * [앱스플라이어에서 Google Ads 웹 설정하기](/docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer)
 * [Google Ads에서 PC 및 콘솔 앱용 캠페인 설정하기](/docs/google-ads-web-integration-for-pc-and-console-apps#google-ads-웹에서-pc-및-콘솔-앱용-캠페인-설정하기).
 
+<div id="prerequisites" />
+
 ### 필수 조건
 
 Google Ads 웹 연동을 활성화하기 전에 다음이 있는지 확인하세요.
@@ -43,6 +49,8 @@ Google Ads 웹 연동을 활성화하기 전에 다음이 있는지 확인하세
 * 앱스플라이어 계정
 * <Anchor target="_blank" href="https://developers.google.com/identity/protocols/oauth2/scopes">필수 OAuth 범위</Anchor>가 포함된 Google 액세스 토큰입니다. Google 개발자 콘솔에서 액세스 토큰과 관련된 범위를 확인할 수 있습니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/user-management">적절한 역할/권한</Anchor> 및 관련 앱에 대한 액세스 권한을 가진 앱스플라이어 사용자
+
+<div id="activate-partner-in-appsflyer" />
 
 ## 앱스플라이어에서 파트너 활성화
 
@@ -54,6 +62,8 @@ Google Ads 웹 연동을 활성화하기 전에 다음이 있는지 확인하세
 4. **연동** 탭에서 **파트너 활성화**를 켭니다.  
    **참고: <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다(</Anchor><Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">활성화됨</Anchor>).**
 5. 다음 섹션에 설명된 대로 관련 탭을 사용하여 구성을 완료하세요.
+
+<div id="set-up-google-ads-web-in-appsflyer" />
 
 ## 앱스플라이어에서 Google Ads 웹 설정하기
 
@@ -67,11 +77,17 @@ Google Ads 웹과의 연동은 설치 및 인앱 이벤트에 대한 포스트�
 
 **연동** 탭에는 아래 설명된 여러 섹션이 포함되어 있습니다.
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 연동을 구성하려면 먼저 파트너 활성화 토글을 **켜야** 합니다.
 
+<div id="general-settings" />
+
 #### 일반 설정
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -88,6 +104,8 @@ Google Ads 웹과의 연동은 설치 및 인앱 이벤트에 대한 포스트�
 3. 앱스플라이어가 Google Ads에 전환을 업로드할 수 있도록 하려면 **Google로 로그인**을 클릭하세요.
 4. Google에서, 고객 ID를 불러온 MCC 계정의 관리자 계정을 선택하세요.
 5. **허용**을 클릭합니다.
+
+<div id="enable-view-through-attribution" />
 
 #### 뷰-쓰루 어트리뷰션 활성화
 
@@ -107,9 +125,13 @@ Google Ads 웹과의 연동은 설치 및 인앱 이벤트에 대한 포스트�
 6. **뷰-쓰루 어트리뷰션** 섹션으로 스크롤하여 선호하는 **뷰-쓰루 룩백 윈도우**를 설정합니다(최대 24시간).
 7. 변경 사항을 적용하려면 **연동 저장**을 클릭합니다.
 
+<div id="default-postbacks" />
+
 #### 포스트백 디폴트 설정
 
 인스톨에 대한 포스트백은 자동으로 Google Ads Web으로만 전송됩니다.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱이벤트 포스트백
 
@@ -146,11 +168,15 @@ Google Ads Web으로 전송된 인앱이벤트 포스트백의 매핑을 구성�
 | 크로스 플랫폼 랜딩 페이지 | **권장 사항**: 여러 플랫폼(예: 에픽 게임 스토어와 스팀)에서도 이용 가능한 앱을 캠페인에서 홍보하는 경우<br /><br /><Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">크로스 플랫폼 랜딩 페이지에 대해 알아보기</Anchor><br /><br /><Anchor target="_blank" href="/marketers/ko/docs/cross-platform-landing-pages-with-smart-script">크로스 플랫폼 랜딩 페이지를 설정하는 방법 알아보기</Anchor><ul><li>모든 관련 URL 파라미터(나중에 스마트 스크립트에 의해 캡처됨)가 광고 URL에 추가되었는지 확인합니다.</li><li>스크립트가 수신 URL에서 GCLID를 가져와 생성된 링크에 추가하는지 확인합니다. 즉, 발신 FBCLID URL 파라미터 `gclid`를 수신 URL 파라미터 `gclid`에 매핑합니다. **참고**! `gclid`앱스플라이어 로데이터 리포트에 표시하려면, 수신 `gclid` 파라미터가 발신 파라미터 **중 하나에 매핑되어야 합니다.gclid`gclid`**</li></ul> | 마케터(개발자 지원이 필요할 수 있음) |
 | 다이렉트 어트리뷰션 링크 | 하나의 플랫폼에 하나의 앱만 있기 때문에 크로스 플랫폼 랜딩 페이지를 사용하지 않는 경우, 직접 어트리뷰션 링크를 생성하여 광고 뒤에 배치할 수 있습니다.<br /><br /><Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-direct-attribution-links">직접 어트리뷰션 링크를 만드는 방법 알아보기</Anchor><ul><li>다음 파라미터가 링크에 포함되어 있는지 확인합니다.<ul><li>af\_media\_source</li><li>af\_campaign\_id</li><li>af\_r<br />**참고**: <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3095550?hl=en">자동 태깅</Anchor>을 사용하는 경우, Google Ads는 모든 아웃바운드 클릭에 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9744275?hl=en">Google 클릭 식별자(GCLID)</Anchor>매개변수를 자동으로 추가합니다. Google Ads 계정에서 자동 태깅이 비활성화된 경우 Google Ads 추적 템플릿 URL에 `gclid={gclid}`를 추가합니다.</li></ul></li><li>af\_camapign\_id, af\_adset\_id 및 af\_ad\_id 파라미터의 경우 구글의 [값 추적 파라미터](https://support.google.com/google-ads/answer/6305348)(동적 URL 파라미터) 매크로를 사용할 수 있습니다. 다른 모든 파라미터는 수동으로 설정해야 합니다.</li><li>af\_dp 파라미터를 포함하지 마십시오.</li></ul>**대부분의 플랫폼(Epic, Steam, Xbox, PlayStation 등)에 사용할 템플릿**:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Steam으로 연결되는 샘플 링크**: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**구글 PC 및 Mac 앱에서만 사용할 템플릿**:<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**구글 PC로 연결되는 샘플 링크**: `https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | 마케터 |
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 캠페인 분석을 단순화하기 위해 캠페인 이름에 캠페인 유형(웹 또는 모바일)을 접두사 또는 접미사로 포함하십시오(예: 캠페인-이름\_web)
 
 </Accordion>
+
+<div id="set-up-campaigns-in-google-ads-web-for-pc-and-console-apps" />
 
 ## Google Ads 웹에서 PC 및 콘솔 앱용 캠페인 설정하기
 
@@ -231,6 +257,8 @@ Google Ads에서는 미리 정의된 전환 작업 및 목표 목록에서 선�
 3. 전환 작업 데이터 소스로 **오프라인 전환**을 선택하십시오.
 4. 전환 유형 목록에서 **가져오기**를 선택한 다음 **API를 사용한 수동 가져오기 또는 업로드** > **클릭으로 인한 전환 추적**을 선택합니다.
 
+   <div id="note-2" />
+
    > 📘 **참고**
    >
    > **API 또는 업로드를 사용한 수동 가져오기**가 사용 불가능한 경우:
@@ -251,20 +279,28 @@ Google Ads에서는 미리 정의된 전환 작업 및 목표 목록에서 선�
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data-from-november-2-2025" />
+
 ## 웹-앱 귀속 데이터를 확인하십시오(2025년 11월 2일부터)
 
 웹 기반 전환 이벤트는 원래 `googleads_int` PID로 Google에 전송되지만, AppsFlyer 대시보드 및 원시 데이터 보고서에서는 `googleadwords_int` PID 아래에 보고됩니다. 이는 기본 전환 이벤트와 전환 보조 이벤트 모두에 적용됩니다.
 
 이 통합 보고 뷰를 통해 웹과 앱 캠페인 성과를 한 곳에서 분석할 수 있으며, 전체 모바일 및 웹 비용 보고를 포함합니다.
 
+<div id="view-in-the-dashboard" />
+
 ### 대시보드에서 보기
 
 모든 Google 웹-앱 귀속은 개요 및 활동 대시보드의 `googleadwords_int` 아래에 나타납니다. 이는 플랫폼 전반에 걸쳐 캠페인 결과의 단일 통합 뷰를 제공합니다. 표준 필터와 분류를 사용하여 Google Ads 데이터 내에서 앱과 웹 트래픽을 비교하십시오.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### 원시 데이터 및 API 보고서에서 보기
 
 * **원시 데이터 내보내기 및 API 응답**은 Google 웹 활동을 위한 `media_source` 필드에 `googleadwords_int` PID를 포함합니다. 웹 캠페인 설정 세부정보를 확인하려면 웹 캠페인 생성 시 사용된 PID로 `googleads_int`를 표시하는 `original_url` 필드를 참조하십시오.
 * **포스트백 보고서**는 포스트백이 전송된 원래 미디어 소스로 `googleads_int`를 보여줍니다.
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

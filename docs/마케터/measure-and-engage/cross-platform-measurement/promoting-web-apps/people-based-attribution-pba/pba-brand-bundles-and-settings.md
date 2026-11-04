@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## 브랜드 번들 정보
 
 브랜드는 웹과 모바일 자산을 모두 아우르는 생태계에서 운영됩니다. 광고주로서 플랫폼 전반–웹과 모바일–에 걸친 브랜드 성과에 대한 전체적인 이해가 필요합니다. PBA에서 브랜드 번들은 분석 및 로데이터를 위해 모바일 및 웹 속성의 데이터를 단일 엔티티에 통합합니다.
+
+<div id="what-is-a-web-app" />
 
 > 📘 **웹 앱이란 무엇입니까?**
 >
@@ -45,6 +49,8 @@ x-zendesk:
 * [원래 번들을 삭제하지 않고](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle) 번들에서 앱을 삭제하거나 번들에서 다른 번들로 이동할 수 없습니다.
   * 번들 삭제 시 앱스플라이어는 번들에 대한 PBA 데이터 어트리뷰트를 중지하고 더 이상 해당 기록 데이터에 액세스할 수 없습니다.
 
+<div id="accessing-brand-bundles" />
+
 ## 브랜드 번들 액세스
 
 **브랜드 번들** 페이지에 액세스하여 브랜드 번들과 해당 설정을 관리합니다.
@@ -52,6 +58,8 @@ x-zendesk:
 * 앱스플라이어에서 상단 메뉴를 선택하고 **내 앱** > **브랜드** 번들 보기를 선택합니다.  
                            또는
 * 앱스플라이어의 사이드 메뉴에서 **설정** > **브랜드 번들을 선택합니다.**
+
+<div id="managing-brand-bundles" />
 
 ## 브랜드 번들 관리
 
@@ -84,6 +92,8 @@ x-zendesk:
    * * 번들을 만드는 데 모바일 앱이 필요하지 않습니다.
      * 번들에 포함할 수 있는 모바일 앱의 개수에는 제한이 없습니다.
 4. 번들 생성을 클릭합니다.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -159,6 +169,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="faq" />
+
 ## 자주 묻는 질문
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -191,6 +203,8 @@ x-zendesk:
 
 <Accordion title="번들을 삭제하면 어떻게 됩니까?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### 번들을 삭제한 경우 발생하는 일에 대한 자주 묻는 질문
 
 번들을 삭제한 경우:
@@ -210,6 +224,8 @@ x-zendesk:
 * 기타 계정 사용자: 추가하려는 앱에 액세스하는 데 필요한 역할과 권한이 있는지 계정 관리자에게 확인하십시오.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -57,6 +57,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="set-data-locker-report-settings" />
+
 ## 데이터 락커 리포트 설정하기
 
 데이터 락커를 설정하려면 다음의 단계에 따라 클라우드 서비스를 연결하고, 내보내기 설정을 정의하고, 리포트 내용을 사용자 지정해야 합니다.
@@ -83,6 +85,8 @@ x-zendesk:
 <Accordion title="2. 클라우드 서비스에 연결 추가">
 
 클라우드 서비스 계정을 데이터 락커와 함께 작동하도록 설정한 후(위의 "클라우드 서비스 설정" 참조), 계정의 자격 증명을 사용하여 데이터 락커에서 연결을 생성하십시오. 최대 두 개의 연결을 생성할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -190,6 +194,8 @@ x-zendesk:
 
 6. **저장**을 클릭하세요. **리포트 출력 설정 섹션**이 표시됩니다.
 
+<div id="note-1" />
+
 > 📘 **참고사항**
 >
 > 연결이 생성, 업데이트 또는 삭제되었는지, 그리고 누가 변경했는지 확인하려면 [감사 로그](#track-connection-changes-in-the-audit-log)를 참조하세요.
@@ -210,6 +216,8 @@ x-zendesk:
    * Snappy(Parquet 파일에만 사용 가능)
    * GZIP
 4. 파일에서 원하는 최대 행 번호를 선택하세요. 10k, 25k, 50, 100k, 200k, 또는 500k 중 선택할 수 있습니다. 파일에 행이 많을수록 파일 수는 적지만 파일 크기는 커집니다.
+
+   <div id="note-2" />
 
    > 📘 **참고사항**
    >
@@ -335,9 +343,13 @@ x-zendesk:
 1. 레거시 필드 탭을 엽니다.
 2. 끄기: **리포트에 레거시 필드 포함하기**
 
+<div id="note-3" />
+
 > 📘 **참고사항**
 >
 > 리포트에 레거시 필드를 포함하고 싶지만 레거시 필드 목록이 회색으로 표시되고 잠겨 있어 포함할 수 없는 경우 고객 성공 관리자에게 문의하세요.
+
+<div id="non-empty-legacy-fields" />
 
 #### 비어 있지 않은 레거시 필드
 
@@ -356,11 +368,15 @@ x-zendesk:
 
 **저장(Save)** 을 클릭하면 첫 번째 데이터 덤프가 3시간 이내에 클라우드 서비스에 작성됩니다. 후속 데이터 업데이트 일정은 각 리포트에 따라 다릅니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 데이터 락커에 적용한 모든 변경 사항이 적용되는 데 최대 3시간이 소요됩니다.
 
 </Accordion>
+
+<div id="set-user-permissions" />
 
 ## 사용자 권한 설정
 
@@ -369,11 +385,17 @@ x-zendesk:
 * 관리자는 데이터 락커 페이지에 액세스하고, 모든 연결을 생성 및 관리하고, 편집자를 추가하고, 기존 연결에 소유자를 할당할 수 있습니다.
 * 팀원은 데이터 락커 페이지에 접근하거나, 자신이 소유한 기존 연결을 편집하거나, 새 연결을 만들 수 있습니다. 그들은 계정 소유자라 하더라도 소유권(소유자 및 편집자 설정)을 관리할 수 없습니다.
 
+<div id="manage-data-locker-access-and-ownership-admins" />
+
 ### 데이터 락커 액세스 및 소유권 관리 (관리자)
+
+<div id="give-data-locker-access" />
 
 #### 데이터 락커 액세스 부여하세요
 
 * 팀 구성원에게 데이터 락커 접근 권한을 부여하려면, 데이터 락커 권한이 '관리(Manage)'로 설정된 **역할(role)** 을 할당해야 합니다.
+
+<div id="manage-ownership-and-editors" />
 
 #### 소유권 및 편집자 관리
 
@@ -383,6 +405,8 @@ x-zendesk:
 2. **소유권 관리를** 선택하세요.
 3. 연결 소유자를 변경하거나 편집자를 추가하세요.
 
+<div id="review-filters-after-changing-ownership" />
+
 #### 소유권 변경 후 검토 필터
 
 데이터 락커 연결의 소유자를 데이터 액세스 제한이 있는 사용자(예: 앱, 미디어 소스, 에이전시 또는 국가별로 제한됨)로 변경하는 경우 기존의 [전역 수준](#select-global-level-filters) 또는 [보고서 수준 필터가](#7-select-the-reportlevel-filters) 새 소유자의 권한에 맞게 재설정될 수 있습니다.
@@ -391,11 +415,17 @@ x-zendesk:
 
 데이터 액세스 제한에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/user-management#데이터-액세스">유저 관리 > 데이터 액세스</Anchor> 참조하세요.
 
+<div id="note-4" />
+
 > 📘 **참고사항**
 >
 > AF AWS 연결에서는 관리자조차도 **소유권 관리** 옵션이 없습니다. AF AWS 연결을 편집, 삭제 또는 새로 생성할 수 있는 권한은 관리자만 가지고 있기 때문입니다. 이 예방 조치는 버킷 자격 증명의 노출을 방지하기 위해 취해집니다.
 
+<div id="data-storage-architecture" />
+
 ## 데이터 스토리지 아키텍처
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -458,6 +488,8 @@ x-zendesk:
 
 <Accordion title="스토리지 옵션">
 
+<div id="caution" />
+
 > ❗️ **주의!**
 >
 > 마케터 소유 스토리지 옵션을 사용하는 경우:
@@ -486,6 +518,8 @@ x-zendesk:
 | 스토리지 용량 | 앱스플라이어에서 관리 | 마케터가 관리 |
 | 버킷 정책을 포함한 VPC 엔드 포인트를 사용한 액세스 제어 | 해당 사항 없음. | [선택 사항] AWS에서 버킷 수준에서 VPC 엔드포인트 보안을 구현하는 경우 앱스플라이어 서버 목록을 허용해야 합니다. |
 
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
+
 #### **고객이 관리하는 스토리지의 경우 보안 담당자 알림 사항**
 
 효과적 관리를 위해 다음과 같은 사항을 고려해야 합니다.
@@ -512,6 +546,8 @@ x-zendesk:
 * 연결 세부사항을 확인하거나, 연결을 복제 혹은 삭제하려면, ⋮ (옵션)을 클릭하세요.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -573,6 +609,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## AWS 데이터 검색
 
 선호하는 AWS 데이터 검색 툴, AWS CLI, 혹은 다음 섹션에 소개되는 툴 중 하나를 사용하십시오. 참고! 해당 지침은 앱스플라이어 소유 버킷에 적합합니다. 귀하의 버킷에 연결하는 경우 필요에 따라 지침을 조정하십시오.
@@ -605,6 +643,8 @@ x-zendesk:
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### 파일 및 폴더 나열하기
 
@@ -694,6 +734,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
    이제 데이터 락커 파일에 액세스할 수 있습니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

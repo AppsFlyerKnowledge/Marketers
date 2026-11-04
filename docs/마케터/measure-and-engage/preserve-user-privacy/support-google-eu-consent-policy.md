@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어는 마케터가 디지털 시장법(DMA)을 준수하고 Google에서 광고의 가치를 높일 수 있도록 돕습니다. DMA 준수 및 광고 가치 최적화와 관련된 자주 묻는 질문(FAQ)에 대한 답변을 찾아보세요.
 
+<div id="overview" />
+
 ## 개요
 
 Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">디지털 시장법</Anchor> (DMA) 시행에 대비하여 <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">EU 사용자 동의 정책</Anchor>을 업데이트하고 있습니다. Google <Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">앱 어트리뷰션 파트너</Anchor>로서 앱스플라이어는 광고주가 Google에서 광고를 최대한 활용할 수 있도록 지원하는 동시에 정책 변화에 적응하고 있습니다.
+
+<div id="relevant-integrations-and-continued-use-of-google-features" />
 
 ## 관련 연동 및 Google 기능의 지속적인 사용
 
@@ -40,6 +44,8 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 이러한 연동에서 앱의 최종 유저가 유럽 경제 지역(EEA) 또는 영국에 거주하는 경우 Google의 새로운 EU 동의 정책의 요구사항을 준수하기 위해 필요한 조치를 취해야 합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > [레거시] Google 마케팅 플랫폼 DV360/CM 연동(`doubleclick_int`)은 Google의 새로운 EU 동의 정책에 따라 사용이 중단되며 지원되지 않습니다. 이 연동을 사용하시는 경우 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-google-marketing-platform-gmp-integration-transition">새로운 DV360 연동(dv360\_int)으로 전환</Anchor>하시기를 추천해 드립니다.
@@ -49,6 +55,8 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 마케터가 측정, 개인 맞춤 광고, 리마케팅과 관련된 Google Ads 및 GMP DV360 기능을 계속 사용하려면 EEA 및 영국의 최종 유저의 개인 데이터 사용에 대한 동의를 얻어야 합니다.
 
 
+<div id="updating-the-appsflyer-sdk" />
+
 ## 앱스플라이어 SDK 업데이트
 
 앱스플라이어 SDK(v6.13.0 이상)는 Google의 요구사항을 충족하기 위해 각 이벤트와 함께 필요한 동의 데이터를 전송할 수 있습니다.
@@ -57,7 +65,7 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 
 
-<span id="how-consent-data-is-sent"></span>마케터가 필요한 동의 데이터를 앱스플라이어에 전송하는 옵션에는 두 가지가 있습니다.
+<span id="sending-consent-data"></span><span id="how-consent-data-is-sent"></span>마케터가 필요한 동의 데이터를 앱스플라이어에 전송하는 옵션에는 두 가지가 있습니다.
 
 * [S2S API 또는 **SDK를 통해 직접 전송**:](#앱스플라이어-sdk-업데이트) 마케터는 SDK를 사용하여 동의 데이터를 앱스플라이어에 직접 전송할 수 있습니다. Android 또는 iOS 앱에 적용할 수 있습니다.
 * **TCF 문자열을 통해 전송:** 현재 CMP(동의 관리 플랫폼)를 사용 중이거나 사용할 계획인 마케터는 표준 IAB TCF 문자열(TCF V2.2)을 통해 데이터 필드를 전송할 수 있습니다. 동의한 공급업체 목록에 Google 공급업체 ID(755)를 포함해야 합니다.
@@ -79,11 +87,15 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 <div id="do-i-have-control-over-consent-data-for-nonue-users" />
 
+<div id="sending-consent-datafaq" />
+
 <div id="sending-consent-data-faq" />
 
 <Accordion title="Google에 동의 데이터를 전송하지 않는 옵션이 있나요?">
 
 앱스플라이어는 광고주가 자신의 최종 유저를 GDPR 및 DMA 요구사항의 적용을 받지 않는 최종 유저(예: EU 또는 영국 이외 국가 거주자)라고 생각하는 경우, 동의 데이터를 Google에 전송하지 않도록 할 수 있습니다. 이 작업은 관련 연동 페이지에서 토글을 활성화하여 수행됩니다.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -109,6 +121,8 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 
 
+<div id="preparing-for-the-upcoming-changes" />
+
 <div id="what-i-can-do-on-my-side" />
 
 <div id="how-can-i-prepare-for-the-upcoming-changes" />
@@ -116,11 +130,15 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 <Accordion title="다음 준비 단계를 수행합니다.">
 
 
-<span id="address-user-consent-in-the-european-economic-area-eea-and-in-the-uk"></span>회사의 법률 고문과 협력합니다. 유럽 사용자 동의 정책이 Google과 같은 파트너와 공유하는 데이터에 미치는 영향에 대한 인사이트를 제공할 수 있습니다. 필요한 경우 '개인정보 설정' 또는 '개인정보 보호 선택'과 같은 개인정보 보호 프롬프트를 구현하여 앱 유저로부터 마케팅 및 광고 관련 유저 동의 신호를 수집합니다.
+<span id="address-user-consent-in-the-european-economic-area-eea"></span><span id="address-user-consent-in-the-european-economic-area-eea-and-in-the-uk"></span>회사의 법률 고문과 협력합니다. 유럽 사용자 동의 정책이 Google과 같은 파트너와 공유하는 데이터에 미치는 영향에 대한 인사이트를 제공할 수 있습니다. 필요한 경우 '개인정보 설정' 또는 '개인정보 보호 선택'과 같은 개인정보 보호 프롬프트를 구현하여 앱 유저로부터 마케팅 및 광고 관련 유저 동의 신호를 수집합니다.
+
+<div id="verify-cmp-compliance-and-tcf-2223-support" />
 
 #### CMP 규정 준수 및 TCF 2.2 지원 확인
 
 동의 관리 플랫폼(CMP)이 가장 업데이트된 투명성 및 동의 프레임워크(TCF) 버전인 TCF 2.2를 지원하는지 확인합니다. 또한 TCF는 새로운 Google EU 동의 요구사항에 대해 잘 알고 있어야 하며 TCF를 통해 이를 지원하는 방법에 대해 조언해 줄 수 있습니다.
+
+<div id="implement-the-newest-sdkserver-to-server-s2s-apis" />
 
 #### 최신 SDK/서버 간(S2S) API 구현
 
@@ -132,6 +150,8 @@ SDK 또는 S2S API 호출을 사용하여 새 동의 필드를 전송하려면 �
 * **<Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile?">S2S</Anchor> API 호출 사용:**
   * 앱스플라이어에 인앱 이벤트를 전송하기 전에 각 이벤트에 대한 `consent_data` 오브젝트를 포함하도록 API 호출을 업데이트합니다. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">이 작업을 수행하는 방법</Anchor>을 참조하세요.
 
+<div id="transition-from-the-legacy-gmp-integration-doubleclick" />
+
 #### 레거시 GMP 연동(DoubleClick)에서 전환
 
 레거시 앱스플라이어 GMP 연동(doubleclick\_int)을 계속 사용 중인 경우, 2024년 1분기 이내에 최신 버전(dv360\_int)으로의 전환을 완료하도록 계획합니다. 레거시 연동은 **EU 동의와 호환되지 않으며** 곧 더 이상 사용할 수 없게 됩니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-google-marketing-platform-gmp-integration-transition">여기</Anchor>를 참조하세요.
@@ -139,7 +159,7 @@ SDK 또는 S2S API 호출을 사용하여 새 동의 필드를 전송하려면 �
 </Accordion>
 
 
-<span id="impact-on-my-advertising-activity"></span>Google에서 광고 목적으로 데이터를 사용하는 데 동의하지 않는 EU 및 영국의 유저는 Google Ads 및 DV360의 어트리뷰션에 관한 요청을 받지 않습니다. 즉, 앱스플라이어는 해당 유저를 어트리뷰션할 수 없습니다.
+<span id="impact-on-advertising-activityfaq"></span><span id="impact-on-my-advertising-activity"></span>Google에서 광고 목적으로 데이터를 사용하는 데 동의하지 않는 EU 및 영국의 유저는 Google Ads 및 DV360의 어트리뷰션에 관한 요청을 받지 않습니다. 즉, 앱스플라이어는 해당 유저를 어트리뷰션할 수 없습니다.
 
 
 <div id="how-will-the-upcoming-change-affect-my-audiences" />

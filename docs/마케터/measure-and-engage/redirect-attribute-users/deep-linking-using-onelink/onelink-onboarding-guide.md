@@ -24,6 +24,8 @@ x-zendesk:
 
 ## ![53010_원링크.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
 
+<div id="about-onelink" />
+
 ## 원링크 정보
 
 <Anchor target="_blank" href="/marketers/ko/docs/onelink-guide">앱스플라이어 원링크를 사용하면 어트리뷰션, 리디렉션, 딥링킹 기능을 가진 캠페인 링크를 만들어 온드(owned) 미디어 사용자를 앱 사용자로 전환하고, 디바이스, 운영 체제, 채널, 플랫폼에 관계없이 원활한 사용자 여정을 통해 기존 유저 참여를 유도할 수 있습니다. 원링크를 사용하여 개인화되고 상황에 맞는 사용자 여정을 만들어 사용자를 귀사의 앱으로 유도하여 최대 전환율과 수익을 달성하세요. 사용자 맞춤형 경험은 다음과 같은 것들이 있습니다:</Anchor>
@@ -36,6 +38,8 @@ x-zendesk:
 * **텍스트-투-앱**: SMS 문자메시지 및 메시징 캠페인을 위한 링크를 생성하여 문자 메시지를 통해 유저를 (유저를 앱에) 참여시키세요.
 * **리퍼럴-투-앱**: 앱 초대 링크를 생성하여 유저와 인플루언서가 다른 사람을 귀사의 앱으로 초대하거나 특정 인앱 콘텐츠(예: 문서)를 공유할 수 있습니다.
 * **사용자 지정**: 다양한 옵션으로 커스텀 경험을 만들어 최대한의 사용자 정의를 구현하세요. 사용자가 데스크톱, 모바일, 온라인, 오프라인, 온드(owned) 미디어, 유료 미디어 어디에서든 시작해도 원링크를 사용하면 쉽게 올바른 장소로 안내할 수 있습니다.
+
+<div id="onelink-onboarding" />
 
 ## 원링크 온보딩
 
@@ -58,6 +62,8 @@ x-zendesk:
 | **선택적 기능** |  | 이제 모든 설정이 완료되었으므로 추가 원링크 기능을 탐색하고 알아보세요:<ul><li>웹에서 앱으로: 웹 사용자를 앱 사용자로 전환하여 웹-앱 전환 경로를 측정하세요.</li><li><Anchor target="_blank" href="/marketers/ko/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">원링크 API</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/perform-onelink-bulk-actions-via-csv">대량 링크 생성</Anchor>: S여러 캠페인을 동시에 확장하고 실행하며, 수천 개의 원링크를 빠르고 쉽게 생성합니다.<br />*원링크 API는 Enterprise 구독이 필요합니다.</li><li><Anchor target="_blank" href="/marketers/ko/docs/export-onelink-urls">원링크 URL 내보내기: 앱스플라이어에서 생성한 귀사의 원링크 URL을 다운로드하세요.</Anchor></li><li><Anchor target="_blank" href="/marketers/ko/docs/measuring-push-notification-re-engagement-campaigns">푸시 알림 리인게이지먼트 캠페인 측정</Anchor>: 원링크와 푸시 알림을 활용해 모바일 사용자의 리인게이지먼트를 측정하세요.</li><li><Anchor target="_blank" href="/marketers/ko/docs/cross-promotion-attribution-for-marketers">크로스 프로모션 어트리뷰션</Anchor>: 기존 앱 사용자는 귀사의 다른 새로운 앱을 설치할 수 있는 훌륭한 대상입니다. SDK 방법을 활용해 크로스 프로모션 캠페인을 만들고 측정하는 방법을 학습합니다.</li><li><Anchor target="_blank" href="/marketers/ko/docs/understand-onelink-short-vs-long-urls">긴 URL</Anchor>: 귀사의 원링크 커스텀 링크에 파라미터를 추가하거나, 스프레드시트에서 간단한 수식을 적용하여 대량의 원링크 커스텀 링크를 생성합니다.</li></ul> | 마케터 및 개발자 |
 
 원링크 시작에 도움이 필요하면 귀사의 담당자에게 문의하거나 [hello@appsflyer.com](mailto:hello@appsflyer.com)으로 이메일을 보내주세요.
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

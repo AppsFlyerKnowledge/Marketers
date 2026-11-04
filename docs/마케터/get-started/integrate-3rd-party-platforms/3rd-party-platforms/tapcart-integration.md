@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **한눈에 보기:** 탭카트를 사용하여 앱에서 AppsFlyer 기능을 활용하세요.
 
+<div id="introduction" />
+
 ## 소개
 
 탭카트를 사용하면 데이터를 AppsFlyer에 쉽게 전송하고 그 기능을 활용할 수 있습니다. 탭카트로 앱을 개발할 때, AppsFlyer SDK는 기본적으로 앱에 구현됩니다. 탭카트를 통해 데이터를 기록한 후, 유기적 및 비유기적 설치를 포함한 데이터가 AppsFlyer에 표시됩니다.
+
+<div id="integrating-tapcart-with-appsflyer" />
 
 ## 탭카트와 AppsFlyer 통합
 
 AppsFlyer의 SDK를 사용하면 설치, 제거, 추천, 푸시 알림을 통한 사용자 참여, 딥링크 수행, 사용자 개인정보 보호 시나리오 처리 등을 측정할 수 있습니다.
 
 탭카트와 AppsFlyer를 통합하는 방법을 배우려면 <Anchor target="_blank" href="https://tapcart.com/integrations/appsflyer">이 페이지</Anchor>를 따르세요.
+
+<div id="default-in-app-events-configured-in-the-appsflyer-sdk" />
 
 ## AppsFlyer SDK에 구성된 기본 인앱 이벤트
 
@@ -47,6 +53,8 @@ AppsFlyer의 SDK를 사용하면 설치, 제거, 추천, 푸시 알림을 통한
 * 구매 완료
 * 장바구니에서 제거
 * 첫 구매
+
+<div id="enable-deep-linking-with-appsflyer" />
 
 ## AppsFlyer로 딥링크 활성화
 

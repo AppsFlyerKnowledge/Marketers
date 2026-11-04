@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** <Anchor target="_blank" href="/marketers/ko/docs/my-dashboards">내 대시보드</Anchor>에서 활동 메트릭을 사용하여 앱 성능을 신속하게 평가하고, 참여 추세를 파악하며, 수익을 분석하고, 문제를 조기에 감지할 수 있습니다. 모든 날짜 범위에서 향상된 정확성과 유연성을 제공합니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 수익 지표는 2026년 7월부터 8월까지 고객 에게 점진적으로 공개될 예정입니다. 아직 해당 아이템이 보이지 않더라도 별도의 조치는 필요하지 않습니다. 해당 아이템들은 이 기간 내에 계정에 추가될 예정입니다. 보다 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">회보: 내 대시보드에서 코호트 및 활동 지표가 업데이트되었습니다.</Anchor> .
+
+<div id="about-activity-metrics" />
 
 ## 활동 메트릭에 대하여
 
@@ -37,6 +41,8 @@ x-zendesk:
 * **일일 또는 월간** (활성 사용자) 세분화를 사용하여 보고서를 사용자 정의합니다.
 
 참고: 내 대시보드에서 A**ctivity**라는 용어는 **Actual**로 이름이 변경되었습니다. 이 변경은 이러한 메트릭이 선택한 날짜 범위 동안 실제 사용자 행동을 반영하며 LTV 집계와 연결되지 않음을 명확히 합니다. Actual은 세션, 총 이익 및 총 수익의 기본 기간이기도 합니다.
+
+<div id="dashboard-information" />
 
 ## 대시보드 정보
 
@@ -56,6 +62,8 @@ x-zendesk:
 
 더 자세한 지침은 <Anchor target="_blank" href="/marketers/ko/docs/my-dashboards#add-metric">여기</Anchor>에서 확인할 수 있습니다.
 
+<div id="available-activity-metrics" />
+
 ## 사용 가능한 활동 메트릭
 
 * 활성 사용자, 지난 31일의 활성 사용자 및 DAU/MAU를 제외한 모든 메트릭은 코호트 기간 및 LTV를 지원합니다.
@@ -71,6 +79,8 @@ x-zendesk:
 | 첫 방문 | 웹 앱 최초 방문 횟수. conversion\_name = first\_visit인 행으로 계산됩니다. 웹 앱에서만 사용 가능합니다. |
 | 재방문 | 웹 앱에 대한 논오가닉 재방문 횟수. conversion\_name이 revisit인 행으로 계산됩니다. 웹 앱에서만 사용 가능합니다. |
 | 유저 유입 | 크로스 플랫폼 어트리뷰션 또는 웹 앱에서 사용 가능합니다. 웹 앱의 경우, 유저 획득 이벤트가 구성되지 않은 한 유저 획득은 첫 방문을 반영합니다. 모바일 앱의 경우 유저 확보는 설치 수와 같습니다. 여러 앱을 함께 볼 경우, 유저 확보는 설치 수 + 첫 방문 수(또는 클라이언트가 구성한 커스텀 웹 이벤트 )를 합산한 수치입니다. |
+
+<div id="available-in-app-metrics" />
 
 ## 사용 가능한 인앱 메트릭
 
@@ -105,6 +115,8 @@ x-zendesk:
 * 어느 쪽에서도 수익 제공하지 않으면 해당 항목에는 N/A가 표시됩니다.
 
 <Anchor target="_blank" href="/marketers/ko/docs/about-roi360-store-revenue">ROI360 앱 내 수익</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure">인앱 이벤트 - 이벤트 구조</Anchor> 에 대한 자세한 내용을 참조하세요.
+
+<div id="supported-filter-and-group-by-dimensions" />
 
 ## 지원되는 필터 및 그룹화 차원
 
@@ -141,6 +153,8 @@ x-zendesk:
   * 월
   * 미디어 소스
   * 에이전시
+
+<div id="specifications-and-limitations" />
 
 ## 사양 및 제한 사항
 

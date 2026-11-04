@@ -102,6 +102,8 @@ x-zendesk:
 
 <Accordion title="파일 필드">
 
+<div id="fieldsdimensions" />
+
 #### 필드 및 차원
 
 | **필드** | **설명** | **기본적으로 채워짐** | **형식** | **요약 파일에 포함** |
@@ -134,11 +136,21 @@ x-zendesk:
 | bid\_amount | 캠페인 속성에서 중요한 구성 요소입니다. <Anchor target="_blank" href="/marketers/ko/docs/campaign-properties-in-cost-etl-reports">더 알아보기</Anchor> | 아니요 | 정수 | - |
 | original\_bid\_amount | 캠페인 속성에서 중요한 구성 요소입니다. <Anchor target="_blank" href="/marketers/ko/docs/campaign-properties-in-cost-etl-reports">더 알아보기</Anchor> | 아니요 | 정수 | - |
 
+<div id="metrics" />
+
 #### 측정 지표
 
 <table><thead><tr><th><strong>필드</strong></th><th><strong>설명</strong></th><th><strong>기본적으로 채워짐</strong></th><th><strong>형식</strong></th><th><strong>요약 파일에 포함</strong></th></tr></thead><tbody><tr><td>노출</td><td><ul><li>앱스플라이어로 계산됩니다.</li><li>UA 및 리타겟팅 작업을 모두 포함합니다.</li><li> </li></ul></td><td rowspan="13"><p>네.</p><p>특정 지표에 대한 값이 없으면 0으로 채워집니다.</p></td><td>정수</td><td><span>✓</span></td></tr><tr><td>클릭</td><td><ul><li>앱스플라이어로 계산됩니다.</li><li>UA 및 리타겟팅 작업을 모두 포함합니다.</li><li> </li></ul></td><td>정수</td><td><span>✓</span></td></tr><tr><td>reported_impressions</td><td>미디어 소스로 계산됩니다</td><td>정수</td><td><span>✓</span></td></tr><tr><td>reported_clicks</td><td>미디어 소스로 계산됩니다</td><td>정수</td><td><span>✓</span></td></tr><tr><td>설치</td><td>앱스플라이어로 집계됩니다</td><td>정수</td><td><span>✓</span></td></tr><tr><td>reported_conversions</td><td>미디어 소스로 계산됩니다</td><td>정수</td><td> </td></tr><tr><td>re_engagements</td><td>앱스플라이어로 집계됩니다</td><td>정수</td><td><span>✓</span></td></tr><tr><td>re_attributions</td><td>앱스플라이어로 집계됩니다</td><td>정수</td><td><span>✓</span></td></tr><tr><td>비용</td><td>해당되는 경우 에이전시 수수료를 포함한 총 지출액</td><td>값</td><td><span>✓</span></td></tr><tr><td>original_cost</td><td>네트워크가 보고한 통화단위로, 화폐 변환 전의 네트워크 비용(해당되는 경우 앱스플라이어가 계산한 대행사 수수료 포함)</td><td>값 </td><td><span>-</span></td></tr><tr><td>impressions_discrepancy</td><td><ul><li>애드 네트워크와 앱스플라이어가 집계한 수치의 차이</li><li>다음의 경우 이 지표는 고려하지 않아도 됩니다:<ul><li>비용과 어트리뷰션 데이터가 일치하지 않을 때</li><li>애드 네트워크가 노출 수를 지원하지 않는 경우 </li></ul></li></ul></td><td>정수</td><td><span>-</span></td></tr><tr><td>clicks_discrepancy</td><td><ul><li>애드 네트워크와 앱스플라이어가 집계한 수치의 차이</li><li>다음의 경우 이 지표는 고려하지 않아도 됩니다:<ul><li>비용과 어트리뷰션 데이터가 일치하지 않을 때</li><li>애드 네트워크가 클릭 수를 지원하지 않는 경우 </li></ul></li></ul></td><td>정수</td><td><span>-</span></td></tr><tr><td>installs_discrepancy</td><td><ul><li>애드 네트워크와 앱스플라이어가 집계한 수치의 차이</li><li>다음의 경우 이 지표는 고려하지 않아도 됩니다:<ul><li>비용과 어트리뷰션 데이터가 일치하지 않을 때</li><li>애드 네트..트워크가 전환 수를 지원하지 않는 경우 </li></ul></li></ul></td><td>정수</td><td><span>-</span></td></tr><tr><td>수수료</td><td>대행사가 일반적인 광고 비용 이외에 부과하는 추가 수수료입니다. 앱스플라이어가 집계함</td><td>예</td><td>정수</td><td><span>-</span></td></tr><tr><td>cost_without_fees</td><td>대행사 수수료를 제외한 순수 비용. 앱스플라이어로 집계됩니다</td><td>예</td><td>정수</td><td><span>-</span></td></tr><tr><td>original_cost_without_fees</td><td>대행사 수수료를 제외하고 애드 네트워크가 보고한 초기 비용</td><td>예</td><td>정수</td><td><span>-</span></td></tr><tr><td>CTR</td><td><ul><li>클릭률 앱스플라이어로 집계됩니다</li><li>공식: 클릭 수 / 노출 수</li></ul></td><td rowspan="12"><p>아니요</p></td><td>정수</td><td><span>-</span></td></tr><tr><td>CVR</td><td><ul><li>전환율 앱스플라이어로 집계됩니다</li><li>공식: 설치 수 / 클릭 수</li></ul></td><td>정수 </td><td><span>-</span></td></tr><tr><td>ecpm</td><td><ul><li>앱스플라이어로 집계됩니다</li><li>공식: (비용 \/ 노출) \* 1000 </li></ul></td><td>정수</td><td><span>- </span></td></tr><tr><td>cpi</td><td><ul><li>앱스플라이어로 집계됩니다</li><li>공식: 비용 / 설치 수</li></ul></td><td>정수</td><td><span>- </span></td></tr><tr><td>ccvr</td><td><ul><li>전환당 비용</li><li><span>공식: 비용 / (설치 수 + 재어트리뷰션 수 + 재참여 수)</span></li></ul></td><td>정수</td><td><span>- </span></td></tr><tr><td>반응형 비디오 시청률(CVVR)</td><td><ul><li>완료된 비디오 시청 비율. 앱스플라이어로 집계됩니다</li><li>공식: 비디오 완료 수 / 노출 수</li></ul></td><td>정수</td><td><span>-</span></td></tr><tr><td>reported_cvr</td><td><ul><li>리포트된 전환율</li><li>공식: 보고된 전환 수 / 보고된 클릭 수</li></ul></td><td>정수</td><td><span>- </span></td></tr><tr><td>ecpc</td><td><ul><li>앱스플라이어로 집계됩니다</li><li>공식: 비용 \/ 클릭</li></ul></td><td>정수</td><td><span>-</span></td></tr><tr><td>25% 비디오 시청</td><td>비디오 75% 재생됨. 애드 네트워크 보고</td><td>정수</td><td><span>- </span></td></tr><tr><td>video_50p_views</td><td>비디오 75% 재생됨. 애드 네트워크 보고</td><td>정수</td><td><span>- </span></td></tr><tr><td>video_75p_views</td><td>비디오 75% 재생됨. 애드 네트워크 보고</td><td>정수</td><td><span>- </span></td></tr><tr><td>비디오 재생 완료</td><td>애드 네트워크 보고</td><td>정수</td><td><span>- </span></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
+
+<div id="change-data-locker-connection" />
+
+<div id="edit-connection" />
+
+<div id="procedures" />
 
 ## 절차
 
@@ -248,6 +260,8 @@ AWS에서 앱스플라이어가 귀하의 버킷에 객체를 작성할 기본 �
 6. **저장**을 클릭합니다.
 
 
+<div id="best-practices" />
+
 ## 모범 활용 사례
 
 <div id="override-data" />
@@ -303,6 +317,8 @@ Cost ETL은 귀사의 모든 비용 데이터에 관한 정보를 제공합니�
 <Anchor target="_blank" href="/marketers/ko/docs/combine-cost-etl-and-cohort-reports-via-data-locker">더 알아보기</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## 추가 정보
 

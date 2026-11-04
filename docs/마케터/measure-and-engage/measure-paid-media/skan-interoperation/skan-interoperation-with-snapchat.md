@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Snapchat과 앱스플라이어는 SKAN 데이터가 상호 호환되어 Snapchat은 SKAN 포스트백을 앱스플라이어와 공유할 수 있고, 앱스플라이어는 앱 기업의 전환 값 매핑 정보를 틱톡과 공유할 수 있습니다.
 
+<div id="skan-interoperability-appsflyer---snapchat" />
+
 ## SKAN 상호 운용성: 앱스플라이어 &lt;-> Snapchat
 
 다양한 애드 네트워크 파트너와 작업하는 경우 앱스플라이어에서 SKAN 연동을 구성하는 것이 효율적입니다. 이렇게 하면 비용 등의 다른 지표와 함께 향상된 SKAN 성능 지표를 앱스플라이어 플랫폼에서 확인할 수 있습니다.
@@ -45,6 +47,8 @@ Snapchat에서 다음 사항을 고려하세요.
 * Snapchat에서 광고하는 각 앱에 대한 [Snap 앱 ID](https://businesshelp.snapchat.com/en-US/a/snap-app-id)를 구성합니다.
 * SKAN 측정을 위한 Snapchat 광고 세트를 선택합니다.
 * 특정 앱의 경우, 한 번에 최대 10개의 광고 세트만 SKAN 어트리뷰션에 옵트인할 수 있습니다.
+
+<div id="enabling-appsflyer-skan-interoperation-with-snapchat" />
 
 ### Snapchat과 앱스플라이어 SKAN 상호 운용 활성화
 
@@ -120,6 +124,10 @@ Snapchat에서 다음 사항을 고려하세요.
 
            SKAN 측정에서 설정한 인앱이벤트, **SDK 이벤트 이름**이 Snapchat 이벤트 이름을 의미하는 **파트너 이벤트 식별자**에 매핑되는지 확인하십시오. 현재 선택한 SKAN 측정 유형 이벤트 또는 <Anchor target="_blank" href="/marketers/ko/docs/skan-cv-decode-map-your-cv-to-events">사용자 지정 전환 맵</Anchor>의 이벤트를 매핑해야 합니다. **참고**! 기본 측정 유형은 수익입니다.
 
+           <div id="inapp-event-mapping-guide" />
+
+           <div id="in-app-event-mapping-guide" />
+
            #### 인앱 이벤트 매핑 가이드
 
         | 측정 타입 | 매핑 요구 사항 |
@@ -150,6 +158,8 @@ Snapchat에서 다음 사항을 고려하세요.
   </tbody>
 </Table>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="discrepancies-guide" />
@@ -162,6 +172,8 @@ Snapchat에서 다음 사항을 고려하세요.
 | 설치 날짜 차이 | **불일치 원인**<br /><br />앱스플라이어 및 Snapchat 설치 날짜는 다음과 같이 차이가 있을 수 있습니다.<ul><li>앱스플라이어: 다음 수식을 사용하여 설치 날짜를 도출합니다. 포스트백 도착 시간 - 24시간 - 측정 기간(기본값 24시간) 따라서 기본 조정은 48시간입니다. 모든 시간은 UTC입니다. <Anchor target="_blank" href="/marketers/ko/docs/about-data-freshness-and-timezone-support#skan">SKAN 데이터 최신성</Anchor></li><li>Snapchat: 일반적으로 iOS 포스트백 도착 시간을 조정 없이 설치 날짜로 사용합니다.</li></ul>**해결 방안**<br /><br />결과를 비교할 때 위의 사항을 고려하세요. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참조 항목**
 >

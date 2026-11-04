@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: iOS가 사파리 브라우저로 지원하는 <Anchor target="_blank" href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">스마트 앱 배너</Anchor> 기능은  애플 앱스토어에서 앱을 홍보하는 표준 방식입니다.
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > 앱스플라이어 스마트 배너를 사용하여 웹사이트 방문자를 앱 사용자로 전환하는 것이 좋습니다.
@@ -33,6 +35,8 @@ x-zendesk:
 > * 모든 브라우저 지원
 > * 커스터마이즈 가능
 > * 모든 안드로이드 및 iOS 기기에서 작동
+
+<div id="ios-app-banner" />
 
 ## iOS 앱 배너
 
@@ -47,6 +51,8 @@ iOS 앱 배너를 구현하기 전에 다음을 고려하십시오.
 * iOS 앱 배너와 앱스플라이어 스마트 배너를 동시에 구현하지 마십시오. 동시에 구현하면 모바일 웹 사이트에 디스플레이 문제가 발생할 수 있습니다.
 * 배너 솔루션은 iOS에 최적화되어 있고, OS X에서 작동하지 않습니다.
 * 앱 배너는 사파리에서만 작동합니다.
+
+<div id="setting-a-web-page-with-an-app-banner-and-click-attribution-link" />
 
 ### 웹페이지에 앱 배너와 클릭 어트리뷰션 링크 설정하기
 

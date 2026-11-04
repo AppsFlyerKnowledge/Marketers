@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 페이스북 광고와 앱스플라이어 사이의 어트리뷰션 모델의 차이점에 대해 자세히 알아봅니다.
 
+<div id="meta-ads-discrepancies-with-appsflyer" />
+
 ## 앱스플라이어와의 메타 광고 불일치
 
 모바일 유저 유입 생태계에서 중요한 선도 기업인 앱스플라이어와 페이스북은 어트리뷰션 모델에 차이가 있습니다. 이로 인해 메타 광고와 앱스플라이어 대시보드 간에 불일치가 발생할 수 있습니다.
 
 이 차이를 줄이기 위해서 앱스플라이어는 페이스북과 긴밀히 협조하고 있지만, 광고주는 다음의 원인에 대해서 알고 있어야 합니다.
 
+<div id="detect-a-discrepancy-between-appsflyer-and-meta-ads" />
+
 ### 앱스플라이어 광고와 메타 광고의 불일치 감지
 
 메타 광고 이벤트 매니저에 나열된 **이벤트** 와 앱스플라이어 보고서에 나열된 이벤트를 비교합니다. 이벤트 개수가 현저히 차이나는 경우 불일치가 발생할 수 있습니다.
 
+<div id="differences-in-attribution-models" />
+
 ## 어트리뷰션 모델의 차이점
 
 <table><thead><tr><th>1. 일으키다. 2. 발생시키다. </th><th>Meta Ads</th><th>앱스플라이어</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><strong>클릭 어트리뷰션 룩백 기간</strong></td><td>7일(<a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">기본값이 차이 나게 되는 특수한 경우가 있다는 점</a>을 알아두십시오).</td><td>1-30일. 메타 광고의 경우 7일로 설정해야 합니다.</td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><strong>뷰-쓰루 어트리뷰션 룩백 윈도우</strong></td><td>1일(<a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">기본값이 차이 나게 되는 특수한 경우가 있다는 점</a>을 알아두십시오).</td><td>기본 1일, 그러나 1시간 - 48시간 사이에서 설정 가능(기본값 유지 권장)</td></tr><tr><td><span id="multichannel-sourceattribution"></span> <br/><strong>어트리뷰션</strong> </td><td>Meta 광고는 다른 미디어 소스에 관계없이 자체 속성 설치를 합니다.</td><td></td></tr><tr><td><span id="crossdevice-attribution"></span><strong>크로스 디바이스 어트리뷰션</strong></td><td>페이스북은 다양한 기기, 예를 들면, iOS/안드로이드/데스크톱에서의 클릭 및 인스톨까지 해당 사용자로 어트리뷰션합니다.</td><td>앱스플라이어는 인게이지먼트와 인스톨이 모두 이루어진 단일 기기에 대해서만 어트리뷰션합니다.</td></tr><tr><td><span id="different-time-zones"></span><strong>다른 표준 시간대</strong></td><td>메타 광고의 기본 보고 시간대는 PST입니다.  <a href="https://www.facebook.com/business/help/754049591334898" target="_blank">메타 광고 관리자에서</a> 앱스플라이어의 앱 설정에 정의된 앱 시간대와 일치하도록 변경해야 합니다.</td><td>앱스플라이어의 기본 앱 시간대는 UTC+0입니다. <a href="./app-settings#localization-time-zone" target="_blank">앱 설정 페이지</a>에서 앱에 설정된 시간대를 페이스북 광고 관리자에 정의된 시간대와 일치하도록 변경할 수도 있습니다.</td></tr><tr><td><span id="google-install-referrer"></span><strong>인스톨 리퍼러:</strong></td><td colspan="2"> </td></tr></tbody></table>
+
+<div id="click-through-and-view-through-attribution" />
 
 ## 클릭-쓰루 및 뷰-쓰루 어트리뷰션
 
@@ -46,6 +54,8 @@ x-zendesk:
 Meta 광고의 기본 클릭연결 전환 확인 기간은 7일로 정의됩니다. [기본값이 다른 경우도](https://www.facebook.com/business/help/395050428485124?id=428636648170202)있지만, 앱스플라이어의 클릭연결 전환 확인 기간을 7일로 설정하여 모든 메타 광고의 기본 옵션을 포함하는 것이 좋습니다.
 
 ![image (13).png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -69,6 +79,8 @@ Meta 광고의 기본 클릭연결 전환 확인 기간은 7일로 정의됩니�
 
 하지만 클릭-쓰루 어트리뷰션의 경우 광고에서 사용자들을 구글 플레이 스토어로 리디렉트하면, 어트리뷰션 필드들은 Google 인스톨 리퍼러의 광고주들이 이용할 수 있습니다. 레퍼러를 통해 제공되는 필드는 사용자가 사용할 수 있는 앱스플라이어 로데이터 리포트에 입력되며 앱스플라이어에서 광고 ID(LAT-사용 가능)가 없는 사용자를 어트리뷰트할 수 있게 합니다.
 
+<div id="in-app-events-differences" />
+
 ## 인앱 이벤트 차이
 
 플랫폼 간의 차이는 페이스북 및 앱스플라이어에 표시되는 설치 후 이벤트(예: 인앱 구매)에서도 나타날 수 있습니다. 다음 표에서는 이런 차이가 나타나는 일반적인 원인과 이를 최소화하는 방법에 대해 설명합니다.
@@ -81,6 +93,8 @@ Meta 광고의 기본 클릭연결 전환 확인 기간은 7일로 정의됩니�
 | <span id="missing-event-values-on-facebook"></span>**메타 광고에서 누락된 이벤트 값** | 올바른 구조를 가지고 있으면, 앱스플라이어는 이벤트 매핑의 일부로 파라미터와 값(event value)을 페이스북에 전송합니다. | 페이스북과 이벤트 값을 완전 매핑하려면 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-event-structure">앱스플라이어 권장 구조</Anchor>에 따라 SDK 인앱 이벤트를 구축해야 합니다. |
 |  <span id="different-event-count"></span>|  | 더 자세한 정보는 <Anchor target="_blank" href="/marketers/ko/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports#데이터-차이-및-불일치에-대한-정보">여기</Anchor>를 참고하십시오. 액티비티(Activity) |
 
+<div id="installs-from-re-engagement-campaigns-in-my-ua-dashboard" />
+
 ## 나의 UA 대시보드에서 리인게이지먼트 캠페인으로부터의 설치란?
 
 리인게이지먼트 캠페인을 통해 사용자가 이미 설치된 앱을 열 수 있습니다(**리인게이지먼트**). 또는, 앱스플라이어가 같은 기기에서 있었던 앱의 이전 설치를 인식했을 때, 앱스플라이어는 그 전환을 **리어트리뷰션**으로 간주할 수 있습니다.
@@ -89,17 +103,25 @@ Meta 광고의 기본 클릭연결 전환 확인 기간은 7일로 정의됩니�
 
 반면에, 기존 설치 후 **설정된 리어트리뷰션 기간 내**에 앱 설치가 이루어지면, 페이스북에서는 신규 설치로 표시될 수 있지만, 앱스플라이어에서는 리어트리뷰션으로 간주하고 앱스플라이어 리타겟팅 페이지에 표시됩니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 트위터는 리타겟팅 캠페인의 모든 앱 설치를 한 곳에서 보여주지만, 앱스플라이어 대시보드에서는 앱 설치를 개요 페이지(신규 설치)와 리타겟팅 페이지(리어트리뷰션 및 리인게이지먼트)에 나눠서 표시합니다.
+
+<div id="cross-device-attribution" />
 
 ## 크로스 디바이스 어트리뷰션
 
 Meta 광고는 교차 기기 기여에 대해 보고합니다. 때로는 어떤 플랫폼(iOS/안드로이드)의 캠페인이 다른 플랫폼의 인스톨로 표시되는 문제를 발생시킬 수 있습니다.
 
+<div id="example-1" />
+
 > 📄 **예시**
 >
 > 린다는 안드로이드 휴대전화를 사용하여 페이스북에서 GreatApp의 모바일 광고를 클릭합니다. 메타 광고는 원래 안드로이드 타겟팅 캠페인 '안드로이드 Females'에서 린다가 수행한 클릭을 기록합니다. Linda는 집에 있는 iPad에 GreatApp을 설치하기로 마음먹습니다. 앱스플라이어는 처음 출시되자마자 메타 광고에 iOS 설치의 출처를 묻고, 페이스북은 "안드로이드 여성" 캠페인으로 답변합니다.
+
+<div id="validation-rules-and-protect360" />
 
 ## 유효성 검증 규칙 및 Protect360
 
@@ -107,10 +129,14 @@ Meta 광고는 교차 기기 기여에 대해 보고합니다. 때로는 어떤 
 
 마찬가지로, 앱스플라이어의 사기 방지 솔루션, Protect360을 사용하고 있을 때, 페이스북은 자체 보고하지만 앱스플라이어는 인스톨로 기록하지 않는 경우가 있습니다.
 
+<div id="example-2" />
+
 > 📄 **예시**
 >
 > GreatApp의 UA 매니저 제프는 북미의 스페인어 사용자만을 타겟으로 하는 SPNA 캠페인을 만듭니다. 이를 검증하기 위해 제프는 캐나다와 미국 사용자만 수용하는 검증 규칙을 정의합니다.
 > 스페인의 Meta 광고 사용자가 앱을 클릭하여 설치하면 Meta 광고는 설치를 자체 보고하지만 앱스플라이어는 유효성 검사 규칙을 통과하지 못한 설치를 거부합니다.
+
+<div id="sdk-related-discrepancies" />
 
 ## SDK 관련 불일치
 

@@ -25,9 +25,13 @@ x-zendesk:
 
 영수증 검증은 모든 계정 플랜에 대해 무료입니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 순수익 계산, 전체 구독 퍼널 커버리지, 환불 처리 및 자동 구매 감지 및 중복 제거의 혜택을 누리기 위해 프리미엄 ROI360 스토어 수익 솔루션을 사용하는 것을 고려하십시오. 구매 및 구독 유효성 검사를 위한 두 가지 솔루션에 대한 자세한 내용과 비교는 다음을 참조하십시오. <Anchor target="_blank" href="/marketers/ko/docs/purchase-and-subscription-validation-overview#the-two-solutions-for-purchase-and-subscription-validation">구매 및 구독 유효성 검사를 위한 두 가지 솔루션.</Anchor>
+
+<div id="how-does-receipt-validation-work" />
 
 ## 영수증 검증은 어떻게 작동합니까?
 
@@ -43,6 +47,8 @@ x-zendesk:
 8. AppsFlyer 검증 서비스는 응답을 SDK로 전송합니다.
 9. SDK는 영수증 검증 응답을 앱으로 전송합니다(성공 또는 실패).
 
+<div id="activate-receipt-validation" />
+
 ## 영수증 검증 활성화
 
 영수증 검증을 활성화하려면 다음 단계를 따르십시오:
@@ -52,9 +58,13 @@ x-zendesk:
 3. **1 제품 유형 선택**에서 **영수증 검증**을 선택하십시오.
 4. 계속 진행하려면 **저장 및 다음**을 클릭하여 영수증 검증을 설정하십시오.
 
+<div id="set-up-receipt-validation" />
+
 ## 영수증 검증 설정
 
 자세한 내용은 다음을 참조하십시오. <Anchor target="_blank" href="/marketers/ko/docs/set-up-receipt-validation">영수증 유효성 검사 설정</Anchor><Anchor target="_blank" href="/marketers/ko/docs/set-up-receipt-validation#3단계-sdk-구현-확인">.</Anchor>
+
+<div id="in-app-purchase-events-and-parameters-for-receipt-validation" />
 
 ## 영수증 검증을 위한 인앱 구매 이벤트 및 매개변수
 
@@ -91,6 +101,8 @@ x-zendesk:
 
 * SDK 호출에서 전송된 추가 사용자 정의 매개변수는 원시 데이터 보고서의 `custom_data` 필드에 나타납니다.
 
+<div id="switch-from-roi360-store-revenue-to-receipt-validation" />
+
 ## ROI360 스토어 수익에서 영수증 검증으로 전환
 
 현재 ROI360 스토어 수익을 사용 중이고 영수증 검증으로 전환하려면 다음 단계를 따르세요:
@@ -108,6 +120,8 @@ x-zendesk:
 7. 전환 후 **제품 유형**이 **영수증 검증,** 으로 업데이트되며 화면에 간소화된 구성이 반영됩니다.
 8. 다음 항목을 다시 검증해야 합니다:
    * **SDK 구현** validateAndLog 메서드에 대한
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

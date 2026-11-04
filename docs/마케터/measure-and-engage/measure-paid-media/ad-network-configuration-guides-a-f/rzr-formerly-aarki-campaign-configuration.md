@@ -26,7 +26,7 @@ x-zendesk:
 <Image alt="Aarki-logo.png" src="https://files.readme.io/7771a303a92fa22e0fc216038a7a367b3e249daa354593a81f4776f97b59afc6-51912636702865.png" width="207px" />
 
 
-**<span id="setting-up-aarki"></span>전제 조건:** 연동 설정 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
+**<span id="setting-up-rzr"></span><span id="setting-up-aarki"></span>전제 조건:** 연동 설정 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
 
 **연동 활성화 또는 편집 방법:**
 
@@ -51,13 +51,19 @@ x-zendesk:
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 <span id="01ECJ9TJKEFXN53XDEBJ5Z92SS"></span>**첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 **파트너 활성화** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다. 파트너 활성화에 대한 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/user-level-data-retention">여기</Anchor>를 클릭하십시오.
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > LINE은 모든 인스톨 네트워크로서 오가닉을 포함한 모든 소스에서 앱의 모든 신규 인스톨에 대한 포스트백을 수신하는 것을 선호합니다.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -67,11 +73,15 @@ x-zendesk:
 
 <span id="01ECJ9TJKFE4E8GZQ2EN3Z1SM4"></span>뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 <span id="01ECJ9TJKFT13WB1T328ET3PGC"></span>사용자 설치 및 리인게이지먼트 이후 RTB House에 자동 포스트백을 보냅니다. 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
 
 <span id="01ECJ9TJKFQH37DQZ3V3NAESRF"></span>아이언소스에 어트리뷰트된 사용자에게만 발생하는 이벤트에 대해 **이 파트너에 기여한 이벤트만** 선택합니다. 전체 사용자 기반을 아이언소스에 리포트할 수 있도록 하려면 파트너 또는 오가닉에 어트리뷰트되는 이벤트를 선택합니다.
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -106,17 +116,21 @@ x-zendesk:
 
 <span id="01ECJ9TJKFTGNEZ68AR6DGXJNA"></span>이 탭은 여러 섹션으로 나눠집니다.
 
+<div id="attribution-link-parameters" />
+
 ### 어트리뷰션 링크 파라미터
 
 <span id="01ECJ9TJKFJRJ2BYN069CK80C8"></span>이 섹션에서는 어트리뷰션 링크에 추가하고 싶은 파라미터를 선택합니다.
 
 <span id="01ECJ9TJKG144FJ8R72S2XDKQS"></span><span id="01ECJ9TJKFY5Q8P4QS57HD44T3"></span>여기서 파라미터를 어트리뷰션 링크에 추가하면, 나중에 심층 분석을 수행할 수 있습니다. 이미 정의된 어트리뷰션 링크 파라미터를 여기에서 새 값을 추가하여 편집할 수 있습니다.
 
-* <span id="01ECJ9TJKGC25XCE8GEB04ZE0P"></span>**<span id="01ECJ9TJKGZP0D1TYCB5R8XJ80"></span>광고 이름** - 미디어소스의 특정 캠페인에서 특정 광고 세트의 다양한 광고 소재를 비교하기 위해 광고의 이름을 설정합니다. **어트리뷰션 링크 파라미터: af\_ad**
+* <span id="01ECJ9TJKGC25XCE8GEB04ZE0P"></span>**<span id="01ECJ9TJKGSVH0XGW2R8HRDA4T"></span><span id="01ECJ9TJKGTPN4NF8CC66XBRRS"></span><span id="01ECJ9TJKGZP0D1TYCB5R8XJ80"></span>광고 이름** - 미디어소스의 특정 캠페인에서 특정 광고 세트의 다양한 광고 소재를 비교하기 위해 광고의 이름을 설정합니다. **어트리뷰션 링크 파라미터: af\_ad**
 * <span id="01ECJ9TJKGWG1QBKJ9MVW4Q5FG"></span>**사이트 ID** 및 **하위 사이트 ID** - 설치를 특정 퍼블리셔로 어트리뷰션 설정하려면 사이트 ID 파라미터를 설정합니다.
 * <span id="01ECJ9TJKGQPS0GAY5SY562VFS"></span>**보조 파라미터** - 유용한 값을 삽입하기 위해 5개의 보조 파라미터 중 하나를 사용합니다.
 
 <span id="01ECJ9TJKGQN0Y1H6F2WNHRBCV"></span>다른 파라미터를 새 파라미터 상자에 입력하기만 하면, 어트리뷰션 링크에 추가할 수 있습니다. 더 많은 정보는 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters"><span id="01ECJ9TJKG3AQCMW2FDDZ7HWWB"></span>앱스플라이어 어트리뷰션 링크 구조와 파라미터</Anchor>에서 참조하십시오.
+
+<div id="retargeting-settings" />
 
 ### 리타겟팅 설정
 
@@ -148,6 +162,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKH449C02X1Y3ESR48Y"></span><span id="01ECJ9TJKHK7S19JDRMS3Z318C"></span>**어트리뷰션 링크 파라미터:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### 클릭-쓰루 어트리뷰션
 
 <span id="01ECJ9TJKHGWANE9EGZZ0KKEX9"></span>**클릭에서 인스톨까지의 최대 시간**을 이 슬라이더에서 설정할 수 있습니다. 기여 기간 내에 일어난 인스톨(앱 최초 실행)만 트위터로 어트리뷰션됩니다.
@@ -156,9 +172,13 @@ x-zendesk:
 
 <span id="01ECJ9TJKHWEDC7RP2ZHHPFDNV"></span><Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows"><span id="01ECJ9TJKHY557S7J91YTE5VH8"></span>클릭 룩백 윈도우 관련 상세 내용은 여기</Anchor>를 참조하십시오.
 
+<div id="click-attribution-link" />
+
 ### 클릭 어트리뷰션 링크
 
 <span id="01ECJ9TJKJ6TJBPEP5JNEPYTVB"></span>이것은 설정해둔 모든 설정 정보를 포함하는 어트리뷰션 링크입니다.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### 뷰-쓰루 어트리뷰션 룩백 윈도우
 
@@ -169,6 +189,8 @@ x-zendesk:
 <span id="01ECJ9TJKJB20VJH63A8NK3KGB"></span>**어트리뷰션 링크 변수:** af\_viewthrough\_lookback
 
 <span id="01ECJ9TJKJNTQ7AJVYKVWYMJNZ"></span>더 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows"><span id="01ECJ9TJKJX8GHDCAW0QQYD4BV"></span>여기에서 뷰-쓰루 어트리뷰션</Anchor> 항목을 참조하십시오.
+
+<div id="impressions-attribution-link" />
 
 ### 노출 어트리뷰션 링크
 
@@ -187,6 +209,8 @@ x-zendesk:
 * 다음 <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#비용-api-활성화">연동 지침을 따르십시오</Anchor>.
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">비용 API 상태</Anchor>와 앱스플라이어가 비용(및 광고 수익) 연동 상태 대시보드 또는 개별 애드 네트워크 대시보드에서 일치하는 비용 데이터를 가져온 마지막 시간을 확인합니다.
+
+<div id="warning" />
 
 #### 경고
 
@@ -210,6 +234,8 @@ x-zendesk:
 
 <span id="01ECJ9TJKQFJM45QTAMC6AJQW3"></span>이 토글을 사용하여, 앱에 대한 자체 설정 권한을 애드 네트워크에 부여할 수 있습니다.
 
+<div id="ad-network-permissions" />
+
 ### 애드 네트워크 권한
 
 * <span id="01ECJ9TJKQAHY9CZ2H3W09GQPZ"></span>***<span id="01ECJ9TJKQXT4HNE0HKH13F4SX"></span>연동 탭 설정 허용*** - 파트너가 연동 탭을 설정할 수 있도록 허용(인앱 이벤트 포스트백 제외)
@@ -221,6 +247,10 @@ x-zendesk:
 * <span id="01ECJ9TJKQZJGSVZMKFDHE2ACJ"></span>***Protect360 대시보드 접근 허용*** - 파트너 자사의 Protect360 데이터에만 해당되며, 이 기능을 사용하고 있는 광고주만 부여 가능
 
 <span id="01ECJ9TJKQZ5ADC4QSTHP0KN95"></span><Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab"><span id="01ECJ9TJKQJ0Y1QQK4EM92C06V"></span>애드 네트워크 권한 부여</Anchor>에 대해 자세히 알아보십시오.
+
+<div id="01ECJ9TJKRMD549KXA59E682CH" />
+
+<div id="agency-permissions" />
 
 ### 에이전시 권한
 

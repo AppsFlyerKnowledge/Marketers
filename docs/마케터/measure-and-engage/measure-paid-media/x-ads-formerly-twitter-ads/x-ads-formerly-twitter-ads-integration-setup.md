@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** X Ads 계정을 앱스플라이어와 연동하여 X Ads 캠페인의 어트리뷰션 데이터를 표시합니다.
 
+<div id="overview" />
+
 ## 개요
 
 X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 ID가 없는 사용자를 포함한 모든 사용자의 전환 이벤트를 기여 감정할 수 있도록 지원합니다.
+
+<div id="x-ads-attribution-flow-in-appsflyer" />
 
 ### 앱스플라이어 내 X-Ads 어트리뷰션 플로우
 
@@ -43,7 +47,11 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
 
    [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## X Ads 계정을 앱스플라이어에 연동하기
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -69,6 +77,8 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
     **참고:** 토글은 파트너와 함께 작업하는 동안 켜져(활성화) 있어야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너 활성화</Anchor>에 대해 더 알아보세요.
 13. X Ads 계정을 선택하여 활성화한 다음 **저장 및 닫기**를 클릭합니다.
 
+<div id="x-ads-attribution-setup" />
+
 ## X Ads 어트리뷰션 설정
 
 파트너 설정 페이지의 상단 메뉴에 대한 자세한 설명은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner">여기</Anchor>를 클릭하십시오.
@@ -79,6 +89,8 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
 
 **연동 탭**은 아래 설명된 것처럼 여러 섹션으로 나누어져 있습니다. 설정을 사용 가능하게 하려면 첫 번째 방문에서 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너가 활성화되어야 합니다</Anchor>.
 
+<div id="ad-account-connected" />
+
 ### 연결 광고 계정
 
 어트리뷰션을 활성화할 계정을 선택합니다.
@@ -86,6 +98,8 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
 ![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
 
 **참고:** 앱스플라이어에서 최대 200개의 광고 계정을 연결할 수 있습니다. 이 한도에 도달하는 것을 방지하고 모든 활성 계정에 대해 연속적인 어트리뷰션을 보장하려면, 더 이상 사용하지 않는 광고 계정을 삭제하는 것을 권장합니다.
+
+<div id="advanced-privacy" />
 
 ### 고급 개인정보 보호
 
@@ -95,10 +109,14 @@ AP 토글이 켜져 있을 때:
 * 포스트백은 <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks">고급 개인정보 보호 템플릿</Anchor>을 따릅니다.
 * 오직 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집계되고 익명화된 데이터</Anchor>만 공유됩니다. 장치 수준 식별자는 포함되지 않습니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * X Ads 연동을 활성화할 때 고급 개인정보 보호 토글은 기본적으로 켜져(On) 있습니다.
 > * X Ads에 따르면, 고급 개인 정보 보호 **켜짐**을 유지하면 캠페인 이벤트의 **보고 누락**이 발생하고 X Ads에서 성능 최적화가 제한될 수 있습니다.
+
+<div id="click-through-attribution" />
 
 ### 클릭-쓰루 어트리뷰션
 
@@ -108,6 +126,8 @@ AP 토글이 켜져 있을 때:
 
 ![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### 뷰-쓰루 어트리뷰션 룩백 윈도우
 
 이 슬라이더를 사용하여 **노출에서 설치까지의 최대 시간**을 설정할 수 있습니다. 광고 노출 후 다른 관련 광고 클릭이 없었던 경우, 해당 룩백 윈도우 이내에 발생한 설치(첫 실행)만 X Ads로 어트리뷰션됩니다.
@@ -116,15 +136,21 @@ AP 토글이 켜져 있을 때:
 
 ![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="reinstall-settings" />
+
 ### 설정 재설치
 
 재설치 어트리뷰션을 활성화하려면 **재설치 어트리뷰션** 토글을 켭니다.
 
 재설치 어트리뷰션에 대한 룩백 윈도우는 설정을 따로 진행할 필요가 없습니다. 해당 값은 설치 어트리뷰션 설정값을 그대로 가져옵니다.
 
+<div id="re-engagement-settings" />
+
 ### 리인게이지먼트 설정
 
 X Ads의 리타겟팅 캠페인의 경우, 앱스플라이어는 리엔게이지먼트 측정만 지원합니다. 이는 참여 시점에 이미 앱이 설치되어 있는 사용자가 리타겟팅 캠페인에 참여한 건을 의미합니다.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -134,11 +160,15 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 
 **리인게이지먼트 어트리뷰션** 토글을 켜서 X Ads에 대한 리인게이지먼트 어트리뷰션을 시작합니다.
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### 리인게이지먼트 클릭-쓰루 룩백 윈도우
 
 **리인게이지먼트 클릭-쓰루 룩백 윈도우**를 설정합니다. (광고가 클릭된 후, 리타게팅된 사용자가 해당 광고에 어트리뷰션될 수 있는 최대 기간) 그 값은 시간(최대 23시간) 또는 일(1&#126;30일)로 설정할 수 있습니다.
 
 ![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### 리인게이지먼트 뷰-쓰루 룩백 윈도우
 
@@ -148,15 +178,21 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 
 ![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### 리인게이지먼트 윈도우
 
 **리인게이지먼트 윈도우**(사용자의 인앱 이벤트가 리타겟팅 미디어 소스로 어트리뷰션되는 기간)를 설정합니다. 값은 '일(1-90)', '시간(최대 23)', 또는 '라이프타임'으로 설정할 수 있습니다.
 
 <Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 리타게팅 시 활성 사용자 제외
 
 지정된 기간 내 활성 사용자에 대한 리타겟팅 전환이 기록되지 않도록 비활성 기간을 설정합니다. <Anchor target="_blank" href="/marketers/ko/docs/set-retargeting-inactivity-window">리타겟팅 비활성 기간</Anchor>에 대해 자세히 알아보세요.
+
+<div id="in-app-event-postback-settings" />
 
 ### 인앱이벤트 포스트백 설정
 
@@ -188,6 +224,8 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 <Accordion title="어트리뷰션 링크 탭">
 
 X Ads는 어트리뷰션을 위해 어트리뷰션 링크를 사용하지 않습니다.
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -229,6 +267,8 @@ X Ads의 경우 광고 수익을 사용할 수 없습니다.
 
 이러한 토글을 사용하면 앱에 대한 설정 권한을 광고 네트워크에 부여할 수 있습니다.
 
+<div id="ad-network-permissions" />
+
 ### 애드 네트워크 권한
 
 * **파트너 연동 설정 허용** - 파트너가 연동 탭을 설정할 수 있도록 허용(인앱이벤트 포스트백 제외)
@@ -241,11 +281,15 @@ X Ads의 경우 광고 수익을 사용할 수 없습니다.
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">광고 네트워크 권한</Anchor> 부여에 대해 자세히 알아보세요.
 
+<div id="agency-permissions" />
+
 ### 에이전시 권한
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#에이전시-권한">에이전시 권한 부여</Anchor>에 대해 알아보세요.
 
 </Accordion>
+
+<div id="x-ads-features" />
 
 ## X-Ads 기능
 
@@ -269,6 +313,8 @@ X 비앱 캠페인에서 앱 활동을 측정하고 사용자 행동에 대한 �
 
 1. X Ads 관리자에서 캠페인 생성 양식으로 이동합니다.
 2. **게재** 섹션에서 **앱 전환** 측정을 활성화하여 캠페인을 통해 발생하는 설치 및 인앱 전환을 추적할 수 있도록 설정하세요. 자세한 내용은 <Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">X Ads 설명서</Anchor> (*"Measuring app conversions on non-app objectives" 섹션*)를 참조하세요.
+
+<div id="important-1" />
 
 > 🚧 **중요!**
 >
@@ -309,6 +355,8 @@ AMM 프로그램을 통해 광고주는 X Ads에 감사를 수행할 수 있는 
 
 </Accordion>
 
+<div id="advanced-srn-parameter-names" />
+
 ## 고급 SRN 매개변수 이름
 
 X Ads용 Advanced SRN 연동의 아래 항목들은 앱스플라이어 대시보드, 집계 리포트 및 이벤트 수준 로우 데이터 전체에서 기존 항목을 **대체**합니다.
@@ -323,6 +371,8 @@ X Ads용 Advanced SRN 연동의 아래 항목들은 앱스플라이어 대시보
 | **광고 이름** | Tweet ID | 광고 이름  <br />(사용 가능한 경우) |
 | **광고 ID** | Tweet ID | Tweet ID |
 | **Match Type** | SRN (영문) | id\_matching / probabilistic |
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제한 사항
 

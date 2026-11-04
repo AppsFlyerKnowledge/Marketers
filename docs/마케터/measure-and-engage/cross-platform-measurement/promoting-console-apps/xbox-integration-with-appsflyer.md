@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Xbox 앱을 앱스플라이어와 통합하여 Xbox에서 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 수신하세요.
 
+<div id="about-xbox-attribution" />
+
 ## Xbox 어트리뷰션 정보
 
 콘솔 및 CTV 앱용 Xbox OS는 모든 Xbox에서 실행됩니다.
@@ -31,6 +33,8 @@ Xbox API 통합은 다음을 지원합니다.
 
 * Xbox.
 * Xbox 앱의 어트리뷰션 및 이벤트 기록. 사용자의 Xbox 기기에 관한 의미, 어트리뷰션 및 기록.
+
+<div id="integration-procedures" />
 
 ## 통합 절차
 
@@ -52,6 +56,8 @@ Xbox API 통합은 다음을 지원합니다.
 | 비용 데이터 | 비용 데이터는 이메일 방식으로 파일 업로드를 사용하여 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">비용 가져오기</Anchor>를 통해 전송해야 합니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

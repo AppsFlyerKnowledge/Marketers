@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** Firebase SDK를 통해 보고된 이벤트를 앱에서 앱스플라이어로 전송하기 위한 설정 지침입니다.
 
+<div id="configuring-events-in-the-app" />
+
 ## 앱에서 이벤트 구성하기
 
 이 섹션에서는 Google Tag Manager(GTM)를 사용하여 앱에서 이벤트를 설정하고 생성하는 방법에 대해 설명합니다.
@@ -31,6 +33,8 @@ x-zendesk:
 <div id="creating-event-variables-for-revenue-and-price" />
 
 <Accordion title="매출 및 가격에 대한 이벤트 변수 생성">
+
+<div id="android" />
 
 #### 안드로이드
 
@@ -114,6 +118,8 @@ iOS의 경우 앱 전체에서 파라미터를 사용할 수 있습니다. AppsF
 첫 번째 단계에서는 앱에서 이벤트를 구성합니다. 이벤트는 앱스플라이어 ID, 이벤트 이름, 이벤트 파라미터를 지정하는 경우 Firebase 이벤트 로깅을 사용하여 전송됩니다. 앱스플라이어 ID는 <Anchor target="_blank" href="/marketers/ko/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#google-태그-관리자-설정">설정 단계</Anchor>에서 생성된 변수에서 검색됩니다.
 
 <Anchor target="_blank" href="https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables">Google Tag Manager는 Firebase Analytics</Anchor> 이벤트를 사용하여 태그 이벤트를 트리거합니다. 이벤트가 Firebase로 전송될 때마다 Tag Manager가 이벤트를 인식하여 앱스플라이어에도 전송합니다.
+
+<div id="android-1" />
 
 #### 안드로이드
 
@@ -203,9 +209,13 @@ iOS
 
 </Accordion>
 
+<div id="sending-install-events-to-firebase" />
+
 ## Firebase로 설치 이벤트 보내기
 
 모든 설치 관련 데이터와 함께 설치 이벤트를 Firebase로 보낼 수도 있습니다.
+
+<div id="android-2" />
 
 #### 안드로이드
 
@@ -213,6 +223,8 @@ iOS
 <Tab title="Java">
 
 Android에서 설치 이벤트를 Firebase로 전송하려면 `conversionData` 객체를 사용하면 됩니다.
+
+<div id="creating-the-send-event-method" />
 
 #### 이벤트 보내기 메서드 만들기
 
@@ -233,6 +245,8 @@ public void sendInstallToFirebase(Map<String, String> conversionData){
 
 이 메서드는 `conversionData` 객체를 받습니다. 이 메서드는 설치 시간, 미디어소스, 캠페인이 null인지 확인하고 null인 경우 설치 시간을 현재 시간으로, 미디어소스 및 캠페인을 오가닉으로 설정합니다. 그렇지 않으면 `conversionData` 객체에서 데이터를 가져와서 Firebase로 보냅니다.
 
+<div id="sending-the-install-event" />
+
 #### 설치 이벤트 보내기
 
 `onConversionDataSuccess` 메서드에 다음 코드를 추가합니다.
@@ -251,6 +265,8 @@ if(conversionData.get("is_first_launch").equals("true")){
 
 Android에서 설치 이벤트를 Firebase로 전송하려면 `conversionData` 객체를 사용하면 됩니다.
 
+<div id="creating-the-send-event-method-1" />
+
 #### 이벤트 보내기 메서드 만들기
 
 `onCreate` 메서드 바로 아래 `AFApplication` 클래스에 다음 메서드를 추가합니다.
@@ -268,6 +284,8 @@ fun sendInstallToFirebase(conversionData: Map<String, Any>) {
 ```
 
 이 메서드는 `conversionData` 객체를 받습니다. 이 메서드는 설치 시간, 미디어소스, 캠페인이 null인지 확인하고 null인 경우 설치 시간을 현재 시간으로, 미디어소스 및 캠페인을 오가닉으로 설정합니다. 그렇지 않으면 `conversionData` 객체에서 데이터를 가져와서 Firebase로 보냅니다.
+
+<div id="sending-the-install-event-1" />
 
 #### 설치 이벤트 보내기
 
@@ -290,6 +308,8 @@ if(conversionData?.get("is_first_launch") == true){
 
 <Tabs>
 <Tab title="Objective-C">
+
+<div id="creating-the-send-event-method-2" />
 
 #### 이벤트 보내기 메서드 만들기
 
@@ -329,6 +349,8 @@ AppDelegate.m에서 파일 끝에 다음 메서드를 추가합니다.
 설치가 논오가닉인 경우 메서드는 관련 논오가닉 설치 데이터를 가져옵니다.
 
 파라미터가 설정되면 메서드는 설치 이벤트를 Firebase로 전송합니다.
+
+<div id="sending-the-install-event-2" />
 
 #### 설치 이벤트 보내기
 
@@ -385,6 +407,8 @@ func sendInstallToFirebase(_ installData: [AnyHashable : Any]!){
 
 파라미터가 설정되면 메서드는 설치 이벤트를 Firebase로 전송합니다.
 
+<div id="sending-the-install-event-3" />
+
 #### 설치 이벤트 보내기
 
 AppDelegate.swift의 메서드 `didFinishLaunchingWithOptions`에서 `FirebaseApp.configure();`를 추가합니다.
@@ -408,6 +432,8 @@ if let is_first_launch = data["is_first_launch"] , let launch_code = is_first_la
 
 </Tab>
 </Tabs>
+
+<div id="warning" />
 
 > ❗️ **경고**
 >

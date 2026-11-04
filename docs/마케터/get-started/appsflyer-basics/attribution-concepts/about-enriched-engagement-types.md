@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 광고 유형은 정교하고 복잡해졌지만, 리포트가 다루는 범위는 뷰스루와 클릭률 어트리뷰션에만 초점을 맞춰 매우 협소하게 유지돼 왔습니다. 강화된 인게이지먼트 유형은 광고를 보거나 상호작용할 때 유저의 모든 인게이지먼트와 의도를 반영하여 이를 변화시킵니다.
 
+<div id="introduction" />
+
 ## 소개
 
 지난 몇 년 동안 플레이어블, 건너뛸 수 있는 광고, 숏폼 동영상 광고와 같은 새로운 크리에이티브 광고 유형이 시장에 등장하여 유저와 소통할 수 있는 방식이 확대되었습니다. 이러한 유형의 광고는 과거의 정적인 배너 및 저해상도 비디오 광고와 크게 다르며, 광고주에게 더 넓은 기능과 다양한 형식을 제공합니다.
@@ -28,6 +30,8 @@ x-zendesk:
 이렇듯 광고 유형이 복잡해지고 정교해지며 상호작용이 가능해졌지만, 리포팅이 다루는 범위는 여전히 매우 협소하며 뷰-쓰루 및 클릭쓰루 어트리뷰션에만 초점을 맞추고 있습니다. 다양한 유형의 인게이지먼트는 서로 다른 가중치, 의도 수준 및 영향을 지니지만 현재의 측정 방법론은 이러한 새로운 현실을 간과하고 있습니다. 당연히 애드 네트워크는 의도와 인게이지먼트의 수준이 가능한 정확하게 반영되기를 원하며, 이러한 상황에서 생태계 전반에 걸쳐 표준화의 부재라는 문제가 더욱 부각되었습니다. 표준화가 부재한 상황에서 광고주는 결국 광고 지출 성과에 대해 부분적으로 파악할 수 밖에 없습니다.
 
 앱스플라이어는 선도적인 네트워크와의 협업을 통해 생태계 전반에 걸쳐 신뢰와 투명성을 제공하기 위해 인게이지먼트에 대한 새로운 표준을 도입하고 있습니다. 상세 인게이지먼트 유형은 유저가 광고를 보거나 상호작용할 때 보이는 순간적인 노출부터 직접적인 반응에 이르기까지 유저의 모든 인게이지먼트와 의도를 반영합니다. 이 프레임워크의 목표는 상세 인게이지먼트 유형 표준이 앱스플라이어의 파트너 생태계와 그 외의 관련 분야에서도 일관성있게 활용되도록 하는 것입니다. 광고주는 상세 인게이지먼트 유형을 통해 광고 지출 성과에 대한 매우 포괄적이면서도 표준에 입각한 정보를 확보할 수 있으며, 이러한 인사이트를 활용하여 예산을 효과적으로 분배하고 ROAS를 높일 수 있습니다.
+
+<div id="what-are-enriched-engagement-types" />
 
 ## 상세 인게이지먼트 유형이란 무엇인가요?
 
@@ -45,6 +49,8 @@ x-zendesk:
 | view | 광고 조회는 광고가 렌더링되고 노출이 발생하는 경우입니다. |
 | listening | 유저가 팟캐스트 광고와 같은 오디오 광고를 청취하는 경우를 뜻합니다. |
 
+<div id="eet-attribution-priority-and-lookback-window" />
+
 ## **EET 어트리뷰션 우선 순위 및 룩백 윈도우**
 
 상세 인게이지먼트 유형 프레임워크는 인게이지먼트 유형 어트리뷰션 우선 순위에 영향을 미치지 않습니다. 따라서, EET를 도입하더라도 귀하의 인스톨 및 전환율에는 영향을 미치지 않을 것으로 예상됩니다.
@@ -56,6 +62,8 @@ x-zendesk:
 *인게이지먼트 유형이 보고되지 않으면 기본 우선 순위가 설정됩니다. (클릭수는 2, 노출수는 3)
 
 <strong>`engaged_click` 및 `engaged_view`의 룩백 윈도우는 비 SRN 네트워크에서만 설정할 수 있습니다. SRN의 경우, `engaged_click` 및 `engaged_view`는 클릭수와 동일한 룩백 윈도우를 공유하므로, </strong>인스톨 클릭-쓰루 어트리뷰션 룩백 슬라이더에 의해 설정됩니다.
+
+<div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## 어떤 네트워크가 적극적 조회수와 적극적 클릭수를 리포트할 수 있나요?
 
@@ -98,9 +106,13 @@ x-zendesk:
 
 * TikTok은 강화된 참여 유형을 지원하지만, 현재 보고서에 참여 조회수가 제대로 반영되지 않고 있습니다. AppsFlyer는 이 문제를 해결하기 위해 TikTok과 협력하고 있습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 특정 네트워크가 실제로 `engaged_clicks` 및 `engaged_views`를 지원하는지 확인하려면, 해당 네트워크에서 보고된 인게이지먼트 데이터가 포함된 로데이터 리포트를 참조하고, `engagement_type` 파라미터가 위의 값으로 채워져 있는지 확인하세요.
+
+<div id="set-lookback-windows-for-engaged-clicks-and-engaged-views" />
 
 ## 적극적 클릭수 및 적극적 조회수에 대한 룩백 윈도우 설정하기
 
@@ -110,6 +122,8 @@ x-zendesk:
 2. 연동 파트너를 선택하세요.
 3. 적극적 뷰-쓰루 및 클릭-쓰루 어트리뷰션의 룩백 윈도우를 설정합니다.
 
+   <div id="note-1" />
+
    > 📘 **참고**
    >
    > 어트리뷰션 링크에서 설정할 수 있는 뷰-쓰루 및 클릭-쓰루 룩백 윈도우와 달리, 적극적 클릭 및 적극적 조회 룩백 윈도우는 항상 파트너 **연동 탭**에서 설정됩니다.
@@ -118,11 +132,17 @@ x-zendesk:
 
 4. **연동 저장**을 클릭합니다.
 
+<div id="view-and-analyze-eet-data" />
+
 ## EET 데이터 조회 및 분석하기
+
+<div id="raw-data-reports" />
 
 ### 로데이터(Raw data) 리포트
 
 `engagement_type`은 애드 네트워크에서 보고할 때마다 로데이터 리포트에 보고됩니다. 또한 컨트리뷰터의 데이터에서도 사용할 수 있습니다.
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -137,21 +157,31 @@ x-zendesk:
 
 로데이터 리포트에서 인게이지먼트 유형을 보려면 광고주가 관련 로데이터 제품에서 해당 필드를 선택해야 합니다. (인게이지먼트 유형 및 컨트리뷰터 인게이지먼트 유형은 기본으로 선택되지 않음)
 
+<div id="dashboards" />
+
 ### 대시보드
 
 대시보드 상에서 인게이지먼트 유형 별로 데이터를 분리해 볼 수 있도록 데이터 기준을 추가할 수 있습니다.
 
 [![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
 
+<div id="note-3" />
+
 > 📘 **참고**
 >
 > 적극적 조회수는 뷰-쓰루 어트리뷰션이 꺼져 있어도 대시보드에 항상 표시됩니다.
+
+<div id="how-to-calculate-installs-per-mille-ipm" />
 
 ### **IPM**(Installs per Mille, 노출 1,000회당 설치수) 계산하는 방법
 
 총 노출수에는 적극적 조회수와 일반 조회수가 모두 포함됩니다. IPM을 계산하려면 **적극적 조회수를 총 노출수에서 빼야 합니다**. 적극적 조회수는 노출수의 하위 집합이므로 이를 중복 계산하면 노출수가 부풀려지기 때문입니다.
 
+<div id="faqs" />
+
 ## 자주 묻는 질문
+
+<div id="what-kinds-of-campaigns-are-relevant-for-enriched-engagement-types" />
 
 <Accordion title="상세 인게이지먼트 유형에 적합한 캠페인에는 어떤 종류가 있나요?">
 
@@ -159,11 +189,15 @@ EET는 특정 네트워크에 따라 UA 및 리타겟팅 캠페인 모두에 적
 
 </Accordion>
 
+<div id="are-engaged_clicks-and-engaged_views-included-in-the-aggregate-numbers-of-clicks-and-impressions-on-the-overview-dashboard" />
+
 <Accordion title="적극적 클릭과 적극적 조회수가 개요 대시보드의 총 클릭 수와 노출 수에 포함되나요?">
 
 비SRN의 경우 터치 유형에 따라 수치가 포함되고 집계됩니다. (예: 적극적 클릭은 클릭 수로, 적극적 조회수는 노출 수로 집계) SRN의 경우, 현재 포함 및 계산되지 않으며, SRN의 API가 지원될 때까지 보류 중입니다.
 
 </Accordion>
+
+<div id="why-cant-i-see-the-engagement-type-in-metas-gp_referrer-conversions" />
 
 <Accordion title="Meta의 gp_referrer 전환에서 인게이지먼트 유형을 볼 수 없는 이유는 무엇인가요?">
 
@@ -171,11 +205,15 @@ Meta는 SRN API에서 engagement\_type=engaged\_view만 보고합니다. gp\_ref
 
 </Accordion>
 
+<div id="why-cant-i-see-the-engagement-type-i2" />
+
 <Accordion title="왜 뷰-쓰루 토글을 끄고도 attributed_touch_type = impression 으로 인스톨 및 리인게이지먼트 기록되는 것을 볼 수 있나요?">
 
 적극적 조회수는 **뷰-쓰루** 토글이 꺼져 있어도 측정 및 리포트됩니다. 해당 노출을 적극적 조회로 구분하려면 대시보드와 로데이터 리포트에서 지표를 사용하고, `engagement_type = engaged_views`에만 단독으로 의존하지 마십시오.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

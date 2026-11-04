@@ -26,9 +26,13 @@ x-zendesk:
 
 **iOS 및 Android용 레거시 SDK 버전은 고정된 6개월 주기로 지원이 중단됩니다.** 이 주기는 사전 통지를 제공하여 팀이 미리 계획하고 중단 없이 전체 앱 기능을 유지할 수 있도록 설계되었습니다. 최신 SDK로 업그레이드하면 최신 기능, 향상된 안정성 및 지속적인 지원에 접근할 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 원활한 전환을 보장하기 위해 앱 개발자는 지원 종료 날짜 이전에 최신 SDK 버전으로 업데이트할 것을 권장합니다.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## 지원 종료 vs. 사용 중단
 
@@ -36,6 +40,8 @@ AppsFlyer는 지원 수준과 데이터 측정에 미치는 영향을 명확히 
 
 * **사용 중단된 버전** 알려진 문제로 인해 더 이상 권장되지 않는 SDK 버전, 예를 들어 치명적인 버그가 있는 경우입니다. 이 버전은 여전히 AppsFlyer에 데이터를 전송할 수 있지만, 계속 사용하지 않는 것이 권장되며 지원되는 버전으로 업그레이드하는 것이 강력히 권장됩니다.
 * **지원 종료 버전:** 모든 플랫폼에서 측정이 완전히 중단된 SDK 버전입니다. Android 및 iOS 모두에서 설치, 세션 및 인앱 이벤트는 측정되지 않습니다. 이 버전에서 발생하는 모든 트래픽(제품 팀에 의해 특별히 제외되지 않는 한)은 400 상태 코드를 받게 되며, 이는 SDK가 API 호출을 평소처럼 시도하지만 AppsFlyer 서버가 이를 거부하고 데이터가 처리되지 않음을 의미합니다.
+
+<div id="android-sdk-releases" />
 
 ## Android SDK 릴리스
 
@@ -75,6 +81,8 @@ AppsFlyer는 지원 수준과 데이터 측정에 미치는 영향을 명확히 
 | 6.10.1 | 2023-03-01 | <ul><li>SDK를 초기화할 때 가끔 삼성 디바이스의 앱이 닫히는 문제를 해결했습니다. 이 문제는 SDK V6.6.0 이상을 사용하는 앱에 영향을 미쳤습니다.</li></ul> |
 | 6.10.0 | 2023년 2월 13일 | <ul><li>SDK와 앱스플라이어 서버 간의 통신을 위한 새로운 앱스플라이어 도메인입니다.</li><li>빈 값이나 null 값이 전송될 때 setHost API가 변경되었습니다. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#sethost">더 알아보기</Anchor></li></ul> |
 
+<div id="unsupported-sdk-versions" />
+
 ## 지원되지 않는 SDK 버전
 
 다음 SDK 버전은 **지원 종료** 상태에 도달했습니다. 이러한 버전은 더 이상 앱스플라이어로 데이터를 전송할 수 없으며, 해당 버전으로부터의 모든 트래픽이 거부됩니다.
@@ -112,6 +120,8 @@ AppsFlyer는 지원 수준과 데이터 측정에 미치는 영향을 명확히 
 | 6.1.0  <br />지원 종료: 2024-08-31 | 2020-11-09 | <ul><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">통합 딥링킹 API</Anchor>에 대한 지원 추가</li></ul> |
 | 6.0.1  <br />지원 종료: 2024-08-31 | 2020-10-28 | SDK 유지 관리 |
 | 6.0.0  <br />지원 종료: 2024-08-31 | 2020-10-14 | <ul><li>사용 중단 및 메서드 이름 변경을 포함하여 SDK 기능 및 API에 대한 주요 변경 사항. [더 알아보기](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

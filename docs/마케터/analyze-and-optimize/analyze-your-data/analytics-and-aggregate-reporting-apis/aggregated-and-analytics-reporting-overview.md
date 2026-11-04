@@ -26,7 +26,7 @@ x-zendesk:
 > **한눈에 보기:** 요약: 집약형 분석 어트리뷰션 리포트, 도구 및 API 사용에 대한 설명 및 비교.
 
 
-<span id="aggregated-and-analytics-performance-reporting-tools-and-reports"></span>플랫폼의 집약형 분석 도구는 광고주에게 앱, 캠페인 및 사용자의 성과를 평가할 수 있는 지표를 제공합니다.
+<span id="aggregated-and-analytics-performance-reporting-overview"></span><span id="aggregated-and-analytics-performance-reporting-tools-and-reports"></span>플랫폼의 집약형 분석 도구는 광고주에게 앱, 캠페인 및 사용자의 성과를 평가할 수 있는 지표를 제공합니다.
 
 도구는 데이터가 표시되는 방식에 따라 다릅니다. 예를 들어, 개요 대시보드는 캠페인(LTV)의 유저 생애 가치 지표를 제공하는 반면, 코호트는 시간에 따른 사용자 인게이지먼트를 분석하는 데 사용됩니다.
 
@@ -85,6 +85,8 @@ x-zendesk:
 | 사용자정의 가능 요청 | 아니요 | No | Yes | 예 |
 
 
+<div id="user-journey-reports" />
+
 ### 유저 여정 리포트
 
 설명한 리포트들은 데이터 다운로드 페이지 또는 Pull API 종합 리포트 항목에서 사용할 수 있습니다.
@@ -100,9 +102,13 @@ x-zendesk:
 
 CSV 파일의 날짜 필드는 yyyy-mm-dd 형식입니다. 엑셀에서 CSV 파일을 열면, 컴퓨터의 날짜 및 시간 설정을 사용하여 날짜 필드의 형식이 지정됩니다. <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">엑셀에서</Anchor> 적절한 날짜 표시를 선택하십시오.
 
+<div id="examples-of-aggregate-reports" />
+
 #### 종합 리포트 예시
 
 [스프레드 시트 형식의 리포트 예시](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### UA 종합 리포트 필드
 
@@ -116,6 +122,8 @@ CSV 파일의 날짜 필드는 yyyy-mm-dd 형식입니다. 엑셀에서 CSV 파�
 
 Pull API를 통해 리포트를 리타게팅하려면 성과 리포트 URI에 *&reattr=true* 파라미터를 추가하십시오.
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### 종합 LTV 리타겟팅 리포트
 
 | 리포트 이름 | 조회 기준 |
@@ -125,6 +133,8 @@ Pull API를 통해 리포트를 리타게팅하려면 성과 리포트 URI에 *&
 | 날짜 별 액티비티 | 날짜, 에이전시, 미디어 소스, 캠페인 |
 | 국가 | 국가, 에이전시, 미디어 소스, 캠페인 |
 | 국가 별, 날짜 별 | 날짜, 국가, 에이전시, 미디어 소스, 캠페인 |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### 종합 LTV 리타겟팅 리포트
 
@@ -149,6 +159,8 @@ Pull API를 통해 리포트를 리타게팅하려면 성과 리포트 URI에 *&
 | ARPU |  | ✓ | ✓ | ✓ | - | ✓ |
 
 
+<div id="feature-reports" />
+
 ## 기능 리포트
 
 <div id="skadnetwork" />
@@ -171,6 +183,8 @@ Pull API를 통해 리포트를 리타게팅하려면 성과 리포트 URI에 *&
 
 날짜 기간은 인스톨 날짜 기준입니다.
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Pull API를 통해 사용 가능한 집약형 Protect360 리포트
 
 | 리포트 이름 |
@@ -184,6 +198,8 @@ Pull API를 통해 리포트를 리타게팅하려면 성과 리포트 URI에 *&
 **제약: 제한 사항: 차단 이유** Bots /strong>은, 그 이유가 **앱 버전** 이나 **고객 사용자 id 누락**인 경우에도 표시될 수 있습니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

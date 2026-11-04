@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 오디언스 추가 식별자 API를 사용하여 귀사의 내부 시스템(BI 및 CRM 등)에서 앱스플라이어 오디언스로 사용자 식별자를 대량 업로드하여, 이들 식별자를 통해 관련 파트너와의 오디언스 통신을 더욱 확대할 수 있습니다.
 
+<div id="about-the-api" />
+
 ## API 개요
 
 오디언스 추가 식별자 API를 사용하면 귀사의 내부 시스템에서 다음과 같은 사용자 식별자를 앱스플라이어 오디언스에 추가할 수 있습니다:
@@ -34,9 +36,13 @@ x-zendesk:
 
 귀사의 오디언스 파트너에게 이러한 식별자를 발송하도록 선택할 수 있습니다(<Anchor target="_blank" href="/marketers/ko/docs/audiences-user-identifier-policy">귀사의 계정 수준 사용자 식별자 정책</Anchor>에 따라), 이를 통해 목표 오디언스를 보다 정확하게 식별할 수 있습니다. 모든 광고 파트너가 모든 식별자를 지원하는 것은 아닙니다.
 
+<div id="when-should-i-use-this-api" />
+
 ### 이 API는 언제 사용해야 하나요?
 
 이 API는 대량의 식별자 데이터를 업로드해야 할 때 사용하도록 설계되었습니다. 일반적으로 이는 시간 경과에 따라 수집된 데이터를 의미합니다 (예: 지난 12개월 동안 앱을 사용한 모든 사용자로부터 수집된 해싱된 이메일). 특정 디바이스의 식별자를 실시간으로 개별 업데이트하려면 앱스플라이어 SDK 또는 S2S-모바일 API에서 <Anchor target="_blank" href="/marketers/ko/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">추가 식별자를 구성</Anchor>하세요.
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -44,14 +50,20 @@ x-zendesk:
 >
 > **타이밍:** 식별자의 정확한 매칭을 보장하기 위해, 오디언스 추가 식별자 API는 **주요 식별자가 앱스플라이어 SDK를 통해 보고된 다음 날**부터 사용할 수 있습니다 (UTC 기준). 예를 들어, 2022년 1월 3일(UTC)에 보고된 주요 식별자는 이 API를 통해 2022년 1월 4일(UTC) 또는 그 이후에 업데이트될 수 있습니다.
 
+<div id="actions" />
+
 ## 작업
 
 * [식별자 추가\/수정](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
 * [식별자 제거](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
 
+<div id="authentication" />
+
 ## 인증
 
 요청에는 귀사의 계정 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens">앱스플라이어 V2.0 API 토큰이 포함된 HTTP 헤더가 포함되어야 합니다. 이 토큰을 앱스플라이어 대시보드에서 받으려면 귀사의 계정 관리자에게 문의하세요.</Anchor>
+
+<div id="api-specifications-and-sample-code" />
 
 ## API 사양 및 샘플 코드
 
@@ -111,6 +123,8 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{해시된_이메일}` | 최대 2개의 해시된 이메일 주소 배열<br /><br />형식:<ul><li>소문자</li><li>공백이 없음</li><li>SHA256 해시됨</li></ul>해싱 전 예시 값: name@domain.com | 아니요 |
 | `{전화번호_sha256}` | 전화번호 (아래 참고)<br /><br />형식:<ul><li>기호, 문자 또는 선행 0 없음</li><li>국가 코드 포함</li><li>SHA256 해시됨</li></ul>해싱 전 예시 값:<br /><br />442070313000 | 아니요 |
 | `{전화번호_e164_sha256}` | E164 형식의 전화번호 (아래 참고)<br /><br />형식<ul><li>E164 전화번호</li><li>SHA256 해시됨</li></ul>해싱 전 예시 값:<br /><br />+442070313000 | 아니요 |
+
+<div id="notes" />
 
 > 📘 **참고**
 >

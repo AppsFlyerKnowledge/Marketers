@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 다양한 마케팅 캠페인을 위해 생성하는 모든 원링크 링크에 대한 리디렉션 논리의 기초를 형성하는 템플릿을 생성합니다. 링크 및 최종 사용자 경험을 생성하려면 템플릿이 필요합니다.
 
+<div id="onelink-templates" />
+
 ## 원링크 템플릿
 
 <Embed title="원링크 템플릿 만들기" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ x-zendesk:
   * **앱을 설치하지 않은 신규 사용자**: 올바른 앱 스토어 또는 웹 URL로 연결합니다.
   * **앱이 이미 설치된 기존 사용자**: 안드로이드 앱 링크, iOS 유니버설 링크 또는 URI 스키마를 통해 앱을 엽니다. 여기에는 설정을 위한 일부 개발자 작업이 포함됩니다.
   * **참고**: 웹 사이트 또는 앱 스토어의 리디렉션 설정을 링크 수준에서 재정의할 수 있습니다.
+
+<div id="create-a-onelink-template" />
 
 ## 원링크 템플릿 만들기
 
@@ -54,6 +58,8 @@ x-zendesk:
    원링크 템플릿 설정 페이지가 열립니다.  
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. **원링크 템플릿 이름** 입력란에 이름을 입력합니다.
+
+   <div id="note" />
 
    > 📘 **참고**
    >
@@ -213,6 +219,8 @@ x-zendesk:
 
 6. **원링크 템플릿 업데이트**를 클릭합니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * 원링크 템플릿을 저장하거나 업데이트하면, 앱스플라이어는 앱 도메인을 확인하기 위해 AASA 및/또는 디지털 자산 링크 JSON 파일을 자동으로 생성하고 이를 호스팅합니다. 이 작업은 유니버설 링크와 앱 링크가 제대로 작동하는 데 매우 중요합니다.
@@ -252,6 +260,8 @@ x-zendesk:
 
 ## 특징 및 제약 사항
 
+<div id="key-traits-and-limitations" />
+
 <div id="traits-and-limitations" />
 
 <Accordion title="특징 및 제한 사항">
@@ -269,6 +279,8 @@ x-zendesk:
 </Accordion>
 
 원링크 템플릿에 대해 궁금한 점이 있으신가요? <Anchor target="_blank" href="/marketers/ko/docs/onelink-troubleshooting-and-faq#원링크-템플릿-faq">자주 묻는 질문(FAQ)</Anchor>을 확인하세요!
+
+<div id="next-step" />
 
 ## 다음 단계
 

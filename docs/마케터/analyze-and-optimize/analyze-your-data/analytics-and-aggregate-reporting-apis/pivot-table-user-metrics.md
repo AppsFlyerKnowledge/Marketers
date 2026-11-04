@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Full_Funnel.gif](https://files.readme.io/f74b45f8fcaa29cc0941a90d6cca5ef7fb87a8034edb36697d8d595a6be7b3a5-51912582394385.gif)
 
+<div id="about-pivot-reports-page" />
+
 ## 피벗 보고서 페이지에 대하여
 
 피봇을 사용하면 유저 인입 지표를 포함하는 커스텀 리포트를 생성할 수 있습니다. 피봇에는 사용자정의된 리포트를 생성하는 기준으로 사용할 수 있는 여러 가지 미리 정의된 리포트가 함께 제공됩니다. 지정된 계정 사용자가 작성한 리포트는 모든 사용자가 사용할 수 있습니다.
@@ -40,6 +42,8 @@ x-zendesk:
 * 비용 분석
 
 **참고**: 캠페인 데이터가 피벗에 표시되려면 캠페인에 설치가 있어야 합니다.
+
+<div id="pivot-procedures" />
 
 ## 피봇 절차
 
@@ -170,6 +174,8 @@ x-zendesk:
 | (5) 액션 | [피봇 리포트 목록](/docs/pivot-table-user-metrics#view-a-pivot-report)에서와 동일한 피봇 리포트 별 액션을 수행할 수 있습니다. |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

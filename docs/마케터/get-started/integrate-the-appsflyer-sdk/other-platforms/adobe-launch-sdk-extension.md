@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 Adobe Launch SDK 확장 프로그램의 단일 구현으로 Adobe Launch SDK와 앱스플라이어 SDK로 데이터를 전송할 수 있습니다.
 
+<div id="overview" />
+
 ## 개요
 
 Adobe Launch SDK는 Adobe Experience Platform의 필수적인 부분입니다. Adobe Experience Platform은 기업이 여러 앱과 플랫폼에서 데이터를 수집, 연동 및 분석할 수 있도록 지원합니다. 이를 통해 비즈니스 소유자와 개발자는 고객 행동을 더 잘 이해하여 경험과 콘텐츠 전달을 최적화할 수 있습니다. 앱이 Adobe Launch SDK와 앱스플라이어 SDK를 모두 구현하는 경우, **앱스플라이어 Adobe Launch SDK 확장 프로그램**을 한 번만 구현하여 두 가지 모두에 데이터를 전송할 수 있습니다. 개발 프로세스의 전반적인 복잡성을 줄이고 더 깔끔하고 유지 관리하기 쉬운 코드베이스를 만들 수 있습니다.
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > Adobe Launch 확장 프로그램을 사용하는 경우 표준 <Anchor target="_blank" href="/marketers/ko/docs/adobe-analytics-integration-with-appsflyer">Adobe Analytics 연동</Anchor>이 필요하지 않습니다.
+
+<div id="prerequisites" />
 
 ## 선행 조건
 
@@ -58,6 +64,8 @@ Adobe Launch SDK는 Adobe Experience Platform의 필수적인 부분입니다. A
 * iOS - 앱 ID는 *id* 접두사가 없는 앱의 iTunes ID입니다(예: 123456748).
 
 </Accordion>
+
+<div id="step-1-configuring-adobe-launch" />
 
 ## 1단계: Adobe Launch 구성
 
@@ -91,6 +99,8 @@ Adobe Launch에서 다음 확장 프로그램을 설치합니다.
 * Adobe Profile - SDK가 클라이언트 측 프로필에 데이터를 저장할 수 있습니다.
 * Adobe Mobile Core - 모바일 SDK를 구성할 수 있으며 기본 수명 주기 이벤트 및 조건에 대한 액세스를 제공합니다.
 
+<div id="installing-adobe-analytics-extension" />
+
 #### Adobe Analytics 확장 프로그램 설치
 
 1. Adobe Analytics에 로그인합니다.
@@ -102,6 +112,8 @@ Adobe Launch에서 다음 확장 프로그램을 설치합니다.
 7. ***보고서 세트***에서 2단계에서 만든 보고서 세트를 지정합니다.
 8. ***저장***을 클릭합니다.
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### 앱스플라이어 SDK 확장 프로그램 설치
 
 1. ***확장 프로그램***을 다시 선택합니다.
@@ -111,6 +123,8 @@ Adobe Launch에서 다음 확장 프로그램을 설치합니다.
 5. ***어트리뷰션 데이터를 Adobe Analytics로 전송***을 활성화합니다. <Anchor target="_blank" href="/marketers/ko/docs/user-level-data-retention">타사 분석 플랫폼과 사용자 수준 데이터를 공유하는 데에는 몇 가지 제한 사항</Anchor>이 있습니다.
 6. ***저장***을 클릭합니다.
 
+<div id="install-profile-and-mobile-core-extension" />
+
 #### Profile 및 Mobile Core 확장 프로그램 설치
 
 1. ***확장 프로그램***을 다시 선택합니다.
@@ -119,6 +133,8 @@ Adobe Launch에서 다음 확장 프로그램을 설치합니다.
    * Mobile Core를 설치할 때는 확장 프로그램을 그대로 저장하기만 하면 됩니다. ***Experience Cloud 서버***를 지정할 필요가 없습니다.
 
 </Accordion>
+
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
 
 ## 2단계: 앱스플라이어 Adobe SDK 확장 프로그램 구현하기
 
@@ -161,6 +177,8 @@ SDK 구현을 완료하려면 환경을 라이브러리에 게시해야 합니�
 <Accordion title="2.3 앱에 안드로이드 설치 리퍼러 추가하기">
 
 안드로이드 인스톨 리퍼러는 어트리뷰션 정확도를 높이고 인스톨 사기 등을 방지합니다. 이는 앱스플라이어 안드로이드 SDK 4.8.6 버전 이상에서 지원됩니다.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -213,6 +231,8 @@ ProGuard를 사용 중인데 구글의 새로운 리퍼러 API를 사용하려�
 
 권한을 추가하면 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#probabilistic-modeling">확률적 모델링 어트리뷰션</Anchor>의 매칭 확률을 더욱 높일 수 있습니다. 또한 SDK에서 Wifi 및 통신사 네트워크 데이터와 같은 더 많은 데이터를 전송할 수 있게 합니다. 이런 데이터를 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">로데이터 리포트</Anchor>에서 확인하고 캠페인 분석 및 최적화에 사용할 수 있습니다.
 
+<div id="add-required-permissions" />
+
 #### 필요한 권한 추가하기
 
 1. AndroidManifest.xml에 다음 권한을 추가합니다.  
@@ -227,9 +247,13 @@ ProGuard를 사용 중인데 구글의 새로운 리퍼러 API를 사용하려�
 
 </Accordion>
 
+<div id="using-the-adobe-sdk-extension" />
+
 ## Adobe SDK 확장 프로그램 사용
 
 이제 Adobe SDK 확장 프로그램을 사용하여 어도비와 앱스플라이어로 데이터를 전송할 수 있습니다.
+
+<div id="note-2" />
 
 > 📘 **참고**
 >
@@ -351,6 +375,8 @@ AppDelegate.m에서 다음 코드를 구현합니다.
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## 앱스플라이어 전환 데이터 연결
 
 전환 데이터는 이벤트와 함께 Adobe 플랫폼으로 전송됩니다. 이러한 변수를 사용하면 리포팅 차원, 메트릭 또는 필터에 로직과 규칙을 적용할 수 있습니다.
@@ -369,6 +395,8 @@ AppDelegate.m에서 다음 코드를 구현합니다.
 | 앱스플라이어 클릭 시간 | appsflyer.click\_time |
 | 앱스플라이어 오리지널 비용 | appsflyer.orig\_cost |
 | 앱스플라이어 캠페인 | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### 앱스플라이어 매핑된 전환 데이터를 분석 및 분석에 활용하기
 

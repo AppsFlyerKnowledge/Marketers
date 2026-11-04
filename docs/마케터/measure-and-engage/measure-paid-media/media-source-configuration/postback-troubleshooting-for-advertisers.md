@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 파트너가 예상한 포스트백을 받지 못하는 주요 원인과 해결 방법을 찾아보게 됩니다. 아래의 각 항목을 살펴보고 원인이 될 수 있는지 확인하십시오.
 
+<div id="check-the-integration-toggles" />
+
 ## 연동 토글 확인
 
 다양한 토글을 통해 연동의 서로 다른 부분을 제어합니다. 토글의 상태가 포스트백을 받지 못하는 이유로 될 수 있습니다.
@@ -66,6 +68,8 @@ x-zendesk:
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## 이벤트 설정 확인
 
@@ -140,6 +144,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## 개인 정보 보호 제한
 
 다음과 같은 경우, 앱스플라이어는 개인 정보 보호 제한으로 인해 포스트백을 전송하지 않습니다.
@@ -171,6 +177,8 @@ x-zendesk:
 자세한 내용은 다음을 참조하세요.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## 기타
 
@@ -249,6 +257,8 @@ x-zendesk:
 포스트백은 <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks#포스트백을-보내기-위한-템플릿의-종류">고급 개인정보 보호 템플릿</Anchor>에 따라 전송됩니다.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

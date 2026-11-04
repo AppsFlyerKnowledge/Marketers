@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 다른 공동 작업자와 안전하게 자사 데이터를 공유할 수 있도록 소스를 생성하고 관리하세요.
 
+<div id="about-dcp-sources" />
+
 ## DCP 소스에 대하여
 
 데이터 협업 플랫폼(DCP)에서 소스 데이터 세트를 의미하며, 일반적으로 클라우드 스토리지에서 앱스플라이어 로 업로드된 데이터 세트입니다. 이러한 자료들은 모든 협업의 기반을 형성하며, 협업자들이 잠재 고객을 발굴하고 활성화하는 데 사용할 수 있는 데이터를 제공합니다. 이 문서에는 소스를 생성하고 관리하는 데 필요한 모든 정보가 포함되어 있습니다.
@@ -34,6 +36,8 @@ x-zendesk:
 > 소스를 생성하기 전에 먼저 다음 사항을 확인해야 합니다.
 >
 > * 앱스플라이어 DCR이 소스 데이터를 가져올 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">클라우드 서비스를 설정하십시오</Anchor> . 이러한 연결이 설정되어 있지 않으면 소스 생성 중에 연결을 설정하라는 메시지가 표시됩니다.
+
+<div id="source-data-requirements" />
 
 ## 소스 데이터 요구 사항
 
@@ -91,6 +95,8 @@ Amazon S3 또는 GCS에 저장된 소스 파일은 다음 파일 이름 및 형�
 
 </Accordion>
 
+<div id="create-a-source" />
+
 ## 소스 생성하세요
 
 DCP에서 소스 생성하려면 아래 단계를 따르세요.
@@ -114,6 +120,8 @@ DCP에서 소스 생성하려면 아래 단계를 따르세요.
 <Accordion title="2단계: 소스 이름 설정">
 
 소스 이름을 입력하세요. 소스 식별하는 데 돕다 되는 고유한 이름이면 어떤 것이든 가능합니다. 출처를 쉽게 식별 돕다 있도록 소스 에 대한 설명을 선택적으로 추가할 수도 있습니다(예: "2025년 이후 모든 구매 내역").
+
+<div id="requirements-and-guidelines" />
 
 #### 요구 사항 및 지침
 
@@ -144,6 +152,8 @@ DCP에서 소스 생성하려면 아래 단계를 따르세요.
 
 **참고:** 데이터 양이 많을 때 최상의 성과 위해 데이터의 일부를 별도로 저장할 수 있습니다. 이 데이터는 소스 업데이트될 때마다 업데이트되고 소스 삭제될 때 삭제됩니다.
 
+<div id="source-locations-in-bigquery" />
+
 #### BigQuery의 소스 위치
 
 **BigQuery 소스의 소스 위치 지정을 완료하려면 다음 안내를 따르십시오.**
@@ -152,6 +162,8 @@ DCP에서 소스 생성하려면 아래 단계를 따르세요.
 2. 소스 데이터가 있는 테이블을 선택합니다.
 
 이러한 선택 목록에는 연결을 만들 때 지정한 BigQuery 프로젝트에서 각각 사용 가능한 데이터 세트와 테이블이 포함됩니다.
+
+<div id="source-locations-in-snowflake" />
 
 #### Snowflake의 소스 위치
 
@@ -162,6 +174,8 @@ DCP에서 소스 생성하려면 아래 단계를 따르세요.
 3. 소스 데이터가 있는 테이블을 선택합니다.
 
 이러한 선택 목록에는 연결을 생성할 때 지정한 Snowflake 계정의 공유, 스키마 및 테이블이 각각 포함됩니다.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Cloud Storage 버킷의 소스 위치
 
@@ -181,10 +195,14 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
     * **입력** 폴더는 필요하지 않으며 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">DCR 이름지정 요구 사항</Anchor>을 준수하는 한 제거하거나 다른 이름을 지정할 수 있습니다.
     * 이 폴더가 필수는 아니지만 **입력** 폴더(또는 다른 이름의 동등한 폴더)를 가지는 것이 가장 좋은 방법입니다. 이 방법은 데이터 파일 업로드(입력)와 리포트 수신(출력)에 동일한 클라우드 스토리지 버킷을 사용하는 경우 더욱 권장됩니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 폴더 경로를 수동으로 만든 경우 **소스 위치** 섹션에 입력한 연결 및 경로가 수동으로 만든 경로와 일치하는지 확인하십시오.
 
+
+<div id="source-location-as-local-files" />
 
 #### 소스 위치는 로컬 파일입니다.
 
@@ -195,6 +213,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 소스 위치를 선택할 때 **'로컬 파일 시스템'을** 클릭 하고 **'다음'을** 클릭하면 기기에서 로컬 파일을 업로드하는 옵션이 추가됩니다.
 
 <Image alt="로컬 파일 시스템을 선택하세요.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -215,10 +235,14 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 
 <Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > 선택하기 전에 어떤 방법이 가장 적합한지 먼저 확인하십시오. 옵션을 선택하고 **'폴더 생성'을** 클릭된 하면 선택한 클라우드 서비스 내에 데이터 업로드 처리 방법에 대한 지침과 함께 파일 경로가 생성됩니다. 폴더 중복 및 오류를 방지하기 위해 최초 선택 후에는 **동기화 방법을 한 번만 변경할** 수 있습니다.
 
+
+<div id="snapshot-upload-requirements" />
 
 #### 스냅샷 업로드 요구 사항
 
@@ -246,6 +270,8 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 | `data/` **sub-folder** | 파일을 정리해줍니다 | Parquet/ CSV /Avro 파일을 이 폴더에 저장하세요. |
 | `_SUCCESS` **채점자** | DCP 섭취 시작을 알립니다 | 빈 파일을 업로드하세요.`_SUCCESS` 안쪽`v=` 모든 데이터 파일이 저장된 폴더 |
 | **지원되는 파일 형식 및 크기** |  | <ul><li>지원되는 파일 형식: .csv 또는 .gz</li><li>최대 파일 크기: GB</li></ul> |
+
+<div id="important-2" />
 
 > 🚧 **중요!**
 >
@@ -298,6 +324,10 @@ source_name1/
 
 [<Image alt="스냅샷 예시 버킷.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
+
+<div id="h_01K2A7MAWTV3FY1GZSXQFNX4JS" />
+
+<div id="append-upload-requirements" />
 
 #### 업로드 요구 사항 추가
 
@@ -382,6 +412,8 @@ source_name/
 4. [소스 데이터를 테스트합니다](#4-소스-데이터를-테스트합니다)
 5. [소스 저장](#5-소스-저장)
 
+<div id="1-load-your-source-fields" />
+
 #### 1. 소스 필드를 로드하세요
 
 소스 필드가 자동으로 로드됩니다. 수동 로딩이 필요한 경우, 소스 위치에 따라 아래 지침을 따르십시오.
@@ -389,6 +421,8 @@ source_name/
 **데이터 웨어하우스 소스**
 
 데이터 웨어하우스(BigQuery 또는 Snowflake)에 있는 소스에서 필드를 로드하려면 **버튼을 클릭합니다.**
+
+<div id="important-3" />
 
 > 🚧 **중요!**
 >
@@ -446,9 +480,13 @@ source_name/
 </Tab>
 </Tabs>
 
+<div id="2-configure-the-source-fields" />
+
 #### 2. 소스 필드를 구성합니다.
 
 소스 필드를 불러온 후, 각 소스 필드(열)에는 DCP 필드가 표시됩니다. 각 소스 필드를 검토하고 옆에 있는 드롭다운 목록에서 적절한 DCP 필드에 매핑하십시오. 다음 사항을 고려하십시오.
+
+<div id="note-1" />
 
 > 📘 **고려사항:**
 >
@@ -522,17 +560,25 @@ source_name/
   * app\_id
   * 텍스트 목록
 
+<div id="identifier-vs-list-of-identifiers" />
+
 #### **식별자 vs. 식별자 목록**
 
 식별자 유형은 행당 하나의 가치 저장합니다(예: 행당 하나의 이메일 또는 하나의 CUID). 식별자 유형 목록은 행당 값 배열을 저장합니다(예: 단일 행에 여러 개의 해시된 이메일 또는 장치 ID가 포함될 수 있음). 소스 에서 레코드당 둘 이상의 식별자를 일치시켜야 하는 경우에 사용합니다.
+
+<div id="important-5" />
 
 > 🚧 **중요!**
 >
 > 소스 에 **'목록'** 유형(식별자 목록, 숫자 목록 또는 텍스트 목록)에 매핑된 필드가 포함된 경우, 소스 파일은 Parquet 형식으로 업로드하거나 연결해야 합니다. CSV 및 GZ 파일은 배열 형식 열을 지원 하지 않으므로 해당 형식에서 목록 필드를 올바르게 가져오지 못할 수 있습니다.
 
+<div id="reload-source-fields" />
+
 #### 소스 필드 다시 로드
 
 데이터 파일 중 하나의 구성이 변경된 경우, 소스 파일을 업데이트하여 변경 사항을 반영할 수 있습니다.
+
+<div id="note-2" />
 
 > 📘 **참고사항**
 >
@@ -546,15 +592,21 @@ source_name/
    * 클라우드 서비스의 파일을 보려면: **"클라우드 버킷에서 로드"를** 클릭하고 지침을 따르세요.
 3. **확인**을 클릭하세요. 업데이트된 파일이 이제 표시됩니다.
 
+<div id="3-verify-eu-user-inclusion" />
+
 #### 3. EU 사용자 포함 여부 확인
 
 * 질문에 대해 **'예'** 또는 **'아니오'를** 선택하세요. **귀하의 소스에 EU DMA 규정이 적용되는 유럽 사용자가 포함되어 있습니까?**
 
 EU 디지털 시장법의 개인정보 보호 규정에 대해 더 알아보기 .
 
+<div id="4-test-the-source-data" />
+
 #### 4. 소스 데이터를 테스트합니다
 
 * [선택사항] **을 클릭하여 소스 필드의 형식 또는 유효성 오류를 확인합니다.**
+
+<div id="5-save-the-source" />
 
 #### 5. 소스 저장
 
@@ -562,11 +614,15 @@ EU 디지털 시장법의 개인정보 보호 규정에 대해 더 알아보기 
 
 확인 후 새 소스 **가 소스** 탭에 추가됩니다.
 
+<div id="note-3" />
+
 > 📘 **참고사항**
 >
 > 로컬 파일에서 소스를 업로드한 경우 소스를 저장하면 폴더 구조가 자동으로 생성되고 표시되는 확인 메시지에 소스 폴더에 대한 링크가 포함됩니다.
 
 </Accordion>
+
+<div id="manage-your-sources" />
 
 ## 소스를 관리하세요
 
@@ -581,9 +637,13 @@ EU 디지털 시장법의 개인정보 보호 규정에 대해 더 알아보기 
 3. **'소스 편집'** 페이지에서 아래에 자세히 설명된 대로 관련 필드를 편집하세요.
 4. **저장**을 클릭하세요.
 
+<div id="edit-the-source-name" />
+
 #### 소스 이름을 편집하는 방법:
 
 소스 이름을 편집할 때는 [다음 명명 규칙을 준수](#요구-사항-및-지침) 해야 합니다.
+
+<div id="edit-the-source-location" />
 
 #### 소스 위치를 편집하는 방법:
 
@@ -592,10 +652,14 @@ EU 디지털 시장법의 개인정보 보호 규정에 대해 더 알아보기 
 3. [선택 사항] [소스 를 테스트합니다](#4-소스-데이터를-테스트합니다) .
 4. **저장**을 클릭하세요.
 
+<div id="edit-the-field-mapping" />
+
 #### 필드 매핑을 편집합니다.
 
 1. 필드 매핑으로 이동하여 필요한 변경 사항을 적용하세요. 필드를 변경하거나 매핑된 DCP 필드를 업데이트합니다.
 2. **저장**을 클릭하세요.
+
+<div id="important-6" />
 
 > 🚧 **중요!**
 >
@@ -619,9 +683,13 @@ EU 디지털 시장법의 개인정보 보호 규정에 대해 더 알아보기 
 
 </Accordion>
 
+<div id="sharing-permissions" />
+
 ## 공유 권한
 
 공동 작업자가 소스 데이터를 보고 사용할 수 있도록 권한을 부여하는 작업은 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-a-collaboration">공동 작업을 생성할</Anchor> 때 수행됩니다. <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-sharing-permissions">공유 권한</Anchor> 에 대해 더 알아보기 .
+
+<div id="additional-information" />
 
 ## 추가 정보
 
@@ -632,6 +700,8 @@ EU 디지털 시장법의 개인정보 보호 규정에 대해 더 알아보기 
 <Accordion title="스토리지 버킷 폴더 구조를 수동으로 생성합니다(선택 사항).">
 
 일반적으로 앱스플라이어가 소스 생성 프로세스의 일부로 필요한 폴더 구조를 자동으로 생성하도록 허용하는 것이 가장 쉽습니다. 그러나 이러한 폴더를 수동으로 만들려면 다음과 같이 해야 할 수 있습니다.
+
+<div id="create-a-dcr-key-folder" />
 
 #### DCR 키 폴더 만들기
 
@@ -649,6 +719,8 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### 최상위 입력 폴더
 
 필수 사항은 아니지만 가장 좋은 방법은 DCR 키 폴더 바로 아래에 최상위 입력 폴더를 만드는 것입니다. 이 폴더는 DCR에 업로드하는 파일을 위한 전용 폴더입니다.
@@ -661,6 +733,8 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 최상위 입력 폴더를 만든 후 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### 각 데이터 소스의 두 번째 수준 폴더
 
@@ -678,6 +752,8 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 </Accordion>
 
+<div id="privacy-regulations" />
+
 ## 개인정보 보호 규정
 
 이 섹션에서는 현행 개인정보 보호 규정에 관한 중요 정보를 간략하게 설명합니다.
@@ -688,12 +764,16 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 구글 은 디지털 시장법(DMA) 시행의 일환으로 2024년 3월 6일부로 EU 사용자 동의 정책을 업데이트했습니다. Google 앱 어트리뷰션 파트너인 앱스플라이어는 광고주가 Google Ads 마케팅 채널에서 가치를 극대화할 수 있도록 지원하며, Google의 정책 요구사항을 충족하기 위한 필요한 변경을 진행하고 있습니다.
 
+<div id="note-4" />
+
 > 📘 **참고사항**
 >
 > * 구글의 디지털 시장법(DMA) 시행은 모든 플랫폼에 적용됩니다.
 > * 자세한 내용은 다음을 참조하세요.
 >   * [디지털 마케터법에 대한 인사이트 과 리소스](https://www.appsflyer.com/hubs/dma/)
 >   * [구글 FAQ](https://support.google.com/google-ads/answer/14310715)
+
+<div id="adding-consent-fields" />
 
 #### 동의 입력란 추가
 
@@ -702,6 +782,8 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 **추가 동의 항목 및 응답 값:**
 
 <table><thead><tr><th>필드 이름</th><th>응답 가치</th><th>필드 설명</th></tr></thead><tbody><tr><td><span id="eea"></span><code>eea</code></td><td>true/false</td><td>사용자가 DMA가 적용되는 유럽 경제 지역(EEA)에 거주하고 있습니까?</td></tr><tr><td><span id="ad_personalization"></span><code>ad_personalization</code></td><td>\*true/false</td><td>유저가 개인 맞춤 광고를 위해 구글에서 자신의 데이터를 사용하는 데 대해 동의했나요?</td></tr><tr><td><span id="ad_user_data"></span><code>ad_user_data</code></td><td>\*true/false</td><td>유저가 자신의 유저 데이터를 Google에 발송하는 데 동의했는지 여부 </td></tr><tr><td colspan="3"><span id="when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them"></span>\* " <strong>true</strong> "로 설정하면 앱스플라이어 동의한 사용자에 대해 전송한 사용자 식별자를 포함합니다.<br/>   " <strong>거짓</strong> "일 경우: 앱스플라이어 해당 내용이 포함되지 않습니다. 앱스플라이어 로 전송되지 않았기 때문입니다.</td></tr></tbody></table>
+
+<div id="potential-impact-on-the-audience-size" />
 
 #### 시청자 규모에 미칠 수 있는 잠재적 영향
 

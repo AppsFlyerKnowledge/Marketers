@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 토큰은 데이터 보안을 강화합니다. 이를 통해 사용자는 앱스플라이어 API를 통해 데이터에 액세스하거나 서버 간 호출을 사용하여 이벤트 데이터를 수신할 수 있습니다. 관리자는 데이터 연속성을 유지하면서 여러 토큰을 관리할 수 있습니다. 여기에는 필요에 따라 API와 서버 간 토큰을 만들고, 이름을 바꾸고, 제거하는 작업이 포함됩니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
@@ -33,6 +35,8 @@ x-zendesk:
 > * 관리자만이 토큰을 보고 관리할 수 있습니다. 계정 사용자는 토큰 페이지에 접근할 수 없습니다.
 > * 토큰이 귀하의 데이터에 액세스할 수 있도록 안전하게 보관합니다. 공개 코드 리포지토리에 토큰을 게시하지 마십시오.
 > * 180일마다 토큰을 교체하는 것이 좋습니다.
+
+<div id="about-appsflyer-tokens" />
 
 ## 앱스플라이어 토큰 정보
 
@@ -45,10 +49,14 @@ x-zendesk:
 * 테스트 목적
 * 원링크 API와 같은 특정 기능과 함께 사용
 
+<div id="reaching-the-tokens-page" />
+
 ## 토큰 페이지로 이동하기
 
 1. 상단 표시줄에서 계정 메뉴(이메일 주소 드롭다운) > **보안 센터**를 엽니다.
 2. **앱스플라이어 API 토큰** 섹션에서 **앱스플라이어 API 토큰 관리**를 클릭합니다.  현재 토큰이 표시됩니다.
+
+<div id="token-types" />
 
 ## 토큰 유형
 
@@ -61,9 +69,13 @@ x-zendesk:
 | <span id="s2s-token"></span>S2S 토큰 | 서버 간 호출을 사용하여 데이터를 보내는 데 사용됩니다. |
 | <span id="mcp-token"></span>MCP 토큰 | 타사 또는 자체 호스팅 시스템을 AppsFlyer MCP로 인증하는 데 사용됩니다. |
 
+<div id="manage-your-tokens" />
+
 ## 토큰 관리
 
 관리자는 토큰 생성, 이름 바꾸기 및 제거와 같은 작업을 수행하며 여러 토큰들을 관리할 수 있습니다. 주요 목표는 현재 토큰을 새 토큰으로 교체하는 것입니다. 먼저 새 토큰을 [만들고](#토큰-만들기), 시스템에서 구현하여 사용할 수 있게 만든 후 이전 토큰을 [삭제](#토큰-삭제)하는 작업이 필요합니다.
+
+<div id="retrieve-tokens" />
 
 ### 토큰 검색
 
@@ -72,12 +84,16 @@ x-zendesk:
 3. 사용 가능한 토큰이 표시됩니다.
 4. 필요한 토큰을 복사합니다.
 
+<div id="create-a-token" />
+
 ### 토큰 만들기
 
 1. [**토큰** 페이지](#토큰-페이지로-이동하기)에서 **+ 새 토큰**을 클릭합니다.
 2. 토큰 이름을 입력합니다.
 3. 토큰 유형을 선택합니다.
 4. **토큰 만들기**를 클릭합니다.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -90,7 +106,11 @@ x-zendesk:
 2. 토큰의 이름을 바꿉니다.
 3. **저장**을 클릭합니다.
 
+<div id="delete-a-token" />
+
 ### 토큰 삭제
+
+<div id="warning" />
 
 > ❗️ **주의**
 >
@@ -102,9 +122,13 @@ x-zendesk:
 2. "토큰 삭제"를 입력하여 토큰 삭제를 확인해야 합니다.
 3. **토큰 삭제**을 클릭합니다.
 
+<div id="applications-of-the-api-v2-token" />
+
 ## API V2 토큰의 응용 프로그램
 
 API V2 토큰을 사용하는 광고주 및 광고 네트워크의 사용 사례:
+
+<div id="advertiser" />
 
 ### 광고주
 
@@ -122,6 +146,8 @@ API V2 토큰을 사용하는 광고주 및 광고 네트워크의 사용 사례
 | <Anchor target="_blank" href="/marketers/ko/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor> |
 | 오디언스 API 가져오기 |
 
+<div id="ad-network" />
+
 ### 애드 네트워크
 
 | API V2 토큰 |
@@ -131,9 +157,13 @@ API V2 토큰을 사용하는 광고주 및 광고 네트워크의 사용 사례
 | <Anchor target="_blank" href="/partners/ko/docs/protect360-for-integrated-partners#protect360-애드-네트워크-리포팅-api">연동 파트너를 위한 Protect360 리포트</Anchor> |
 | <Anchor target="_blank" href="/partners/ko/docs/incost-api-for-ad-networks">InCost</Anchor> |
 
+<div id="applications-of-the-s2s-token" />
+
 ## S2S 토큰의 응용
 
 광고주 및 S2S 토큰을 사용하는 광고주를 위한 사용 사례:
+
+<div id="advertiser-1" />
 
 ### 광고주
 
@@ -142,21 +172,29 @@ API V2 토큰을 사용하는 광고주 및 광고 네트워크의 사용 사례
 | <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">모바일 인앱 이벤트 S2S API</Anchor> |
 | <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-s2s-api-for-web-performance-measurement">웹 이벤트 S2S API</Anchor> |
 
+<div id="ad-network-1" />
+
 ### 애드 네트워크
 
 | S2S 토큰 |
 | --- |
 | <Anchor target="_blank" href="/marketers/ko/docs/set-up-appsflyer-preload-referrer-attribution">앱스플라이어 프리로드 리퍼러 어트리뷰션</Anchor> |
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 대부분의 광고 네트워크에서 S2S 토큰 생성은 더 이상 셀프 서비스가 아닙니다. 그 결과, 관리자는 UI에서 S2S 토큰을 생성하는 옵션을 볼 수 없습니다. 셀프 서비스 토큰 생성은 특정 관리 파트너에게만 제공됩니다.
+
+<div id="applications-for-the-onelink-token" />
 
 ## 원링크 토큰 신청
 
 원링크 API 토큰을 사용하는 광고주의 사용 사례:
 
 맞춤형 파라미터가 포함된 원링크 짧은 URL을 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-onelink-attribution-link">생성</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-attribution-link">가져오기</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/update-onelink-attribution-link">업데이트</Anchor>, 그리고 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/delete-onelink-attribution-link">삭제</Anchor>할 수 있습니다.
+
+<div id="applications-for-the-mcp-token" />
 
 ## MCP 토큰 신청
 

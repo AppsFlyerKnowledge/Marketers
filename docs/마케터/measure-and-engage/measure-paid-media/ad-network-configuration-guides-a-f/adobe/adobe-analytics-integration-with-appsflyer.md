@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **한눈에 보기:** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (구 Omniture)는 써드 파티 소스에 통합할 수 있는 예측 및 실시간 분석 도구 세트입니다. Marketing Reports and Analytics(SiteCatalyst), Ad hoc analysis(Adobe Discover), Insight 애플리케이션을 포함하여 고객과의 상호작용 데이터를 통찰력으로 변환해 비즈니스 활동에 대한 종합적인 시야를 제공합니다.
 
+<div id="overview" />
+
 ## 개요
 
 이 연동은 Adobe와 앱스플라이어 사이에 데이터를 양방향으로 흐를 수 있게 구성되어 있습니다. 성공적인 연동을 위해서는 귀사의 앱 내에 코드를 구현해야 합니다. 연동이 성공적으로 완성되기 위해서는 앱스플라이어와 Adobe 양쪽의 요구 조건을 모두 충족해야 합니다.
 
+<div id="setting-up-adobe-analytics-integration" />
+
 ## Adobe Analytics 연동 준비하기
 
 Adobe Analytics Report Suite를 활용해 전체 캠페인 성과 분석과 세그먼트 생성을 하고 계시다면, Adobe Analytics와 앱스플라이어의 연동을 통해 앱스플라이어에서 Adobe로 어트리뷰션 데이터가 자동으로 전송되도록 할 수 있습니다.
+
+<div id="prerequisites" />
 
 ### 선행 조건:
 
 * Adobe Experience Platform 모바일 SDK 문서 설정하기
 * <Anchor target="_blank" href="https://marketing.adobe.com/resources/help/en_US/mcvid/">Marketing Cloud Visitor ID</Anchor> 혹은 Experience Cloud ID 서비스
 * 이 연동만을 위해 리포트 스위트마다 사용할 수 있는 세 개의 eVars
+
+<div id="step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer" />
 
 ### 1단계: Adobe Experience Cloud ID(ECID, Marketing Cloud ID 또는 Visitor ID)를 앱스플라이어와 공유해주세요.
 
@@ -137,6 +145,8 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 
 </Accordion>
 
+<div id="step-2-configure-adobe-analytics-in-appsflyer" />
+
 ### 2단계: 앱스플라이어에서 Adobe Analytics 설정하기
 
 **선행 조건:** 연동을 시작하기 전에, [Adobe Marketing Cloud Visitor ID를 앱스플라이어 SDK에 전달하세요.](/docs/adobe-analytics-integration-with-appsflyer#1단계-adobe-experience-cloud-idecid-marketing-cloud-id-또는-visitor-id를-앱스플라이어와-공유해주세요)
@@ -162,9 +172,13 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
 * 미디어 소스
 * 캠페인 이름
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > Meta 광고와 X 광고의 이용 약관에 따라, 앱스플라이어는 사용자 개별 데이터를 제삼자에게 공유할 수 없습니다. 즉, Meta 광고 및 X 광고로부터의 인스톨이 오가닉으로 처리됩니다.
+
+<div id="step-3-map-data-to-evars-in-adobe-analytics" />
 
 ### 3단계: Adobe Analytics에서 eVars로 데이터 매핑
 
@@ -180,6 +194,8 @@ Adobe Analytics 데이터 커넥터가 지원 중단됨에 따라, 컨텍스트 
 
 처리 규칙을 통해 앱스플라이어 컨텍스트 데이터 변수의 매핑에 문제가 있다면, 추가적인 지원을 위해 Adobe 계정 팀에 문의해 주세요.
 
+<div id="step-4-optional-set-up-your-marketing-channel" />
+
 ### 4단계 [선택 사항]: 마케팅 채널 설정
 
 해당 플랫폼에서 마케팅 채널을 어떻게 설정하는지는 <Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">Adobe Analytics 문서</Anchor>를 확인하세요. 식별 규칙을 설정할 때 다음 필드들을 선택하세요:
@@ -187,6 +203,8 @@ Adobe Analytics 데이터 커넥터가 지원 중단됨에 따라, 컨텍스트 
 1. "Adobe의 웹 비콘에 의해 설정된 전환 변수 값": **앱스플라이어** 및 **존재** 선택.
 2. "채널을 다음과 같이 식별": **모바일 앱 어트리뷰션** 선택.
 3. "채널 값 설정": **앱스플라이어 캠페인** 선택.
+
+<div id="domain-and-security-details" />
 
 ## 도메인 및 보안 관련 상세 정보
 

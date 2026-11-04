@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** 랜딩 페이지 로드 시 확인 가능한 URL 파라미터와 리퍼러 데이터를 활용하여, 각 웹 방문의 최초 미디어 소스, 캠페인 및 채널을 식별하려면 트래픽 소스 리졸루션을 사용하세요. 이를 통해 어트리뷰션에 필요한 트래픽 소스 컨텍스트를 제공하여 신규 사용자 유입 이벤트를 포함한 하위 웹 이벤트를 정확하게 어트리뷰션할 수 있습니다.
 
+<div id="what-is-traffic-source-resolution" />
+
 ## 트래픽 소스 리졸루션이란 무엇인가요?
 
 웹 어트리뷰션의 경우, 랜딩 페이지 로드(**웹 방문**)는 사용자가 웹사이트와 갖는 첫 번째 참여입니다. 앱스플라이어는 URL 파라미터 및 리퍼러 데이터와 같이 당시에 확인 가능한 정보를 기반으로 사용자의 미디어 소스, 캠페인, 채널을 식별합니다.
@@ -36,6 +38,8 @@ x-zendesk:
 
 트래픽 소스 리졸루션의 메커니즘을 이해하는 것은 정확한 URL을 생성하기 위해 필수적입니다. 올바른 구조의 URL을 생성하는 방법을 알아보려면, <Anchor target="_blank" href="/marketers/ko/docs/choose-attribution-parameters-for-landing-page-urls">랜딩 페이지 URL용 어트리뷰션 파라미터 선택하기</Anchor>를 참조하세요.
 
+<div id="the-traffic-source-resolution-flow" />
+
 ## 트래픽 소스 리졸루션 흐름
 
 트래픽 소스 리졸루션은 각 웹 방문에 대한 어트리뷰션 컨텍스트를 단계적으로 구축하는 체계적인 다단계 플로우를 따릅니다. 웹 방문 자체를 캡처하는 것부터 리포팅을 위한 트래픽 분류에 이르기까지, 각 단계는 특정 정보 레이어를 제공합니다. 트래픽 소스 리졸루션 플로우에서 사용되는 데이터는 웹 SDK 또는 Web S2S에 의해 수집됩니다.
@@ -47,11 +51,15 @@ x-zendesk:
 3. [캠페인 리졸루션](#3단계-캠페인-리졸루션): 식별된 미디어 소스에 연결된 세부 캠페인 정보를 리졸루션하여 심도 있는 성과 분석을 가능하게 합니다.
 4. [채널 분류](#4단계-채널-분류): 리졸루션된 미디어 소스를 기반으로 각 방문을 상위 수준의 트래픽 채널에 할당하여 리포팅 및 분석을 위한 표준화된 뷰를 제공합니다.
 
+<div id="step-1-visit-recording" />
+
 ## 1단계: 방문 기록
 
 방문 기록은 웹 성능 측정 흐름의 첫 번째 단계입니다. 이는 미디어 소스 리졸루션 및 어트리뷰션 이전에 수행되며, 정제되지 않은 사용자 활동을 캡처하는 전처리 레이어 역할을 합니다.
 
 로직은 두 단계로 작동합니다. 첫째, **리퍼러**(사용자가 사이트에 도달하기 전에 거쳐 온 도메인)를 분류합니다. 그런 다음 리퍼러 유형에 따라 사용자의 세션 상태와 미디어 소스 정보의 존재 여부를 평가하여 방문을 기록할지 결정합니다.
+
+<div id="stage-1-referrer-classification" />
 
 #### 단계 1: 리퍼러 분류
 
@@ -60,6 +68,8 @@ x-zendesk:
 * **외부 제외 항목** (예: 결제 처리 업체 또는 제외 대상으로 지정한 도메인)
 * **내부 제외** (예: 귀하의 하위 도메인 또는 로그인 흐름)
 * **기타** (모든 다른 리퍼러)
+
+<div id="stage-2-session-evaluation-and-visit-recording" />
 
 #### 2 단계: 세션 평가 및 방문 기록
 
@@ -75,6 +85,8 @@ x-zendesk:
   * 활성 세션이 존재하고 미디어 소스 정보가 없는 경우, 해당 세션 내에서 새로운 방문을 기록하지 않습니다.
 
 <Image alt="트래픽 흐름 해결" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+
+<div id="step-2-media-source-resolution" />
 
 ## 2단계: 미디어 소스 리졸루션
 
@@ -121,12 +133,16 @@ x-zendesk:
 
 URL에서 PID가 확인되지 않은 경우, 앱스플라이어는 `utm_source` 및 `utm_medium` 파라미터를 평가하여 미디어 소스를 식별합니다. 이 두 필드의 조합에 의해 최종 리졸루션 결과가 결정됩니다.
 
+<div id="how-utm-logic-works" />
+
 #### **UTM 논리가 작동하는 방식**
 
 * 대부분의 경우, 앱스플라이어는 `utm_source`의 원본 값을 추출하여 이를 미디어 소스로 지정함으로써 미디어 소스를 결정합니다.
 * `utm_medium`이(가) `email`, `mail` 또는 `e-mail`인 경우, 미디어 소스는 자동으로 `e-mail`(으)로 리졸루션됩니다.
 * `utm_medium`이(가) 존재하고 이메일 값이 아닌 경우, 앱스플라이어는 특정 커스텀 매핑 규칙에 따라 해당 값을 확인합니다(아래 매핑 표 참조).
 * `utm_medium`이(가) 누락되었거나 커스텀 규칙과 일치하지 않는 경우, 앱스플라이어는 대체 수단으로 `utm_source`을(를) 미디어 소스로 사용합니다.
+
+<div id="utm-mapping-rules" />
 
 #### **UTM 매핑 규칙**
 
@@ -179,6 +195,8 @@ URL에 PID와 UTM 파라미터가 모두 없는 경우, 앱스플라이어는 **
 
 URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱스플라이어는 `http_referrer`을(를) 사용하여 트래픽 소스를 식별합니다. 이는 도메인 호스트를 추출하여 미디어 소스 매핑을 수행하는 내부 파싱 메커니즘을 기반으로 합니다.
 
+<div id="the-parsing-mechanism" />
+
 #### **파싱 메커니즘**
 
 유입 소스를 식별하기 위해 앱스플라이어는 다음과 같이 리퍼러 문자열을 정제합니다.
@@ -189,6 +207,8 @@ URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱
 
 *예:* `www.mywebsite.com?param=example`*의 리퍼러는* `mywebsite`*의 미디어 소스로 리졸루션됩니다.*
 
+<div id="referrer-mapping-rules" />
+
 #### **리퍼러 매핑 규칙**
 
 | 도메인 호스트에 다음이 포함되어 있는 경우 | 리졸루션된 미디어 소스 |
@@ -198,6 +218,8 @@ URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
 
+<div id="search-engine-mapping" />
+
 #### **검색 엔진 매핑**
 
 | 도메인 호스트에 다음이 포함되어 있는 경우 | 리졸루션된 미디어 소스 |
@@ -205,6 +227,8 @@ URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱
 | `google.` | Google Search |
 | `search.yahoo` | Yahoo Search |
 | `bing.com` | Bing Search |
+
+<div id="android-app-referrers" />
 
 #### **Android 앱 리퍼러**
 
@@ -219,6 +243,8 @@ URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱
 | `org.telegram.messenger` | Telegram |
 
 </Accordion>
+
+<div id="step-3-campaign-resolution" />
 
 ## 3단계: 캠페인 리졸루션
 
@@ -236,15 +262,21 @@ URL에서 쿼리 파라미터(PID, UTM, 클릭 ID)가 발견되지 않으면 앱
 | `af_ad_id` | Ad ID | — |
 | `af_keywords` | 키워드 | — |
 
+<div id="step-4-channel-classification" />
+
 ## 4단계: 채널 분류
 
 미디어 소스를 식별하는 것 외에도 앱스플라이어는 각 방문을 특정 채널로 분류합니다. 이러한 분류를 통해 로우 데이터 리포트 및 대시보드에서 트래픽 유형에 대한 고차원적인 인사이트를 확인할 수 있습니다.
+
+<div id="overriding-the-channel-with-af_channel" />
 
 ### af\_channel을 사용한 채널 값 덮어쓰기
 
 커스텀 채널 값을 할당하려면 랜딩 페이지 URL에 `af_channel` 파라미터를 추가하세요. 예를 들어 `af_channel=ig` 설정은 채널을 `ig`(으)로 지정하여 광고 지면 노출 위치처럼 표준 카테고리에서는 파악하기 어려운 수준까지 트래픽을 세분화하여 분석할 수 있게 해줍니다.
 
 `af_channel` 방문에 대한 미디어 소스도 식별된 경우에만 리졸루션됩니다. 유입 방문이 오가닉(미디어 소스가 식별되지 않은 경우)인 경우, `af_channel` 여부와 관계없이 항상 `Direct`(으)로 리졸루션됩니다.
+
+<div id="default-channel-classification" />
 
 ### 기본 채널 분류
 

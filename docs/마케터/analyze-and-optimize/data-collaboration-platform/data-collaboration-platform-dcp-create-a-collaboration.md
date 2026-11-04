@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 협업을 통해 상거래 미디어 네트워크와 브랜드는 결합된 데이터를 활용하여 새로운 광고 수익 흐름을 창출하고 최대 캠페인 결과를 달성할 수 있습니다.
 
+<div id="about-collaborations" />
+
 ## 협업에 대해
 
 AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-guide">데이터 협업 플랫폼(DCP)</Anchor> 상거래 미디어 네트워크와 브랜드가 파트너 관계를 맺고 1차 데이터의 잠재력을 활용하여 고의도 사용자에게 도달할 수 있도록 지원합니다. 보안 및 개인정보 보호 중심의 플랫폼은 원활한 협업을 가능하게 하여 파트너가 새로운 광고 수익 흐름을 생성하고 상거래 미디어 네트워크 또는 Meta, Google 등의 미디어 채널에서 활성화를 위해 협업 데이터에서 맞춤형 잠재고객을 구축할 수 있도록 합니다.
+
+<div id="create-a-collaboration" />
 
 ## 협업 생성
 
@@ -130,6 +134,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 다 됐습니다! 귀하의 협업이 준비되었습니다. 이제 귀하와 협력자는 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-build-and-activate-audiences">대상 그룹을 만들고</Anchor> 캠페인을 실행해야 합니다. 그 후, <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-collaboration-measurement-overview">측정을 설정하고</Anchor> 결과를 분석하여 통찰력을 얻습니다.
 
+<div id="manage-collaborations" />
+
 ## 협업 관리
 
 이 섹션에서는 기존 협업을 관리하는 방법에 대해 설명합니다.
@@ -148,11 +154,15 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
    <Image alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
+<div id="associate-new-sources" />
+
 #### 새 소스 연결
 
 **새 소스를 연결하려면:** 클릭 **+ 소스 연결** > 드롭다운 메뉴에서 소스를 선택합니다 > 클릭합니다 **저장**.  
 
 <Image alt="기존 협업에 소스 연결.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+
+<div id="manage-sources" />
 
 #### 소스 관리
 
@@ -177,6 +187,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 2. 협업 대시보드에서 오른쪽 상단의 작업(3개의 점) 메뉴를 클릭하고 특정 작업을 선택합니다.   
 
    <Image alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+
+<div id="notes-on-suspended-collaborations" />
 
 > 📘 **중단된 협업에 대한 메모**
 >

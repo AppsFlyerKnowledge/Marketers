@@ -29,6 +29,8 @@ x-zendesk:
 
 6. **저장**을 클릭하세요.
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
@@ -38,7 +40,13 @@ x-zendesk:
 - 이 파트너에 어트리뷰션된 유저에게서만 발생하는 이벤트에 대해 **이 파트너에 어트리뷰션된 이벤트만**  
 전체 사용자 베이스가 해당 파트너에게 보고되도록 하려면 "**Events attributed to any partner or organic**"을 선택합니다.
 
+<div id="important" />
+
+<div id="in-app-events" />
+
 ### 인앱 이벤트
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

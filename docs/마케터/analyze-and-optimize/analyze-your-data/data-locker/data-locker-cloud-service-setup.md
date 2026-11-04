@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Locker를 사용하면 버킷이든 데이터 웨어하우스든 선택한 자체 스토리지 솔루션으로 데이터를 스트리밍할 수 있습니다. 다음 절차 중 하나를 사용하여 클라우드 서비스를 설정합니다.
 
+<div id="bucket-cloud-storage" />
+
 ## 버킷 클라우드 스토리지
 
 <div id="gcs-storage" />
@@ -151,6 +153,8 @@ Data Locker는 스토리지로 데이터를 스트리밍하기 위한 앱스플�
 7. **변경 사항 저장**을 클릭합니다.
 8. <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#데이터-락커-리포트-설정하기">Data Locker 설정 절차</Anchor>를 완료합니다.
 
+<div id="supported-aws-regions" />
+
 #### **지원되는 AWS 지역**
 
 Data Locker 는 다음 AWS 지역을 지원합니다.
@@ -244,6 +248,8 @@ Data Locker는 스토리지로 데이터를 스트리밍하기 위한 앱스플�
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## 데이터 웨어하우스 클라우드 스토리지
 
 <div id="bigquery" />
@@ -265,6 +271,8 @@ Data Locker는 스토리지로 데이터를 스트리밍하기 위한 앱스플�
 1. BigQuery에서 프로젝트를 만들거나 기존 프로젝트를 사용합니다.
 2. 프로젝트에서 **CREATE DATASET**를 클릭합니다. [![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
 3. 데이터 세트에 적합한 ID를 부여합니다.
+
+   <div id="note" />
 
    > 📘 **참고**
    >
@@ -293,6 +301,8 @@ Data Locker를 Snowflake 계정에 연결합니다. 그러면 데이터가 Snowf
 
 다음 절차에 따라 Snowflake를 Data Locker에 연결하세요.
 
+<div id="snowflake-connector-procedures" />
+
 #### **Snowflake 커넥터 절차**
 
 **Snowflake 계정 ID와 지역을 가져오는 방법**:
@@ -320,6 +330,8 @@ Data Locker를 Snowflake 계정에 연결합니다. 그러면 데이터가 Snowf
 6. 데이터베이스에 가져온 테이블이 표시됩니다. 표 이름 및 구조는 Data Locker 버킷의 이름 및 구조와 동일합니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제한 사항
 

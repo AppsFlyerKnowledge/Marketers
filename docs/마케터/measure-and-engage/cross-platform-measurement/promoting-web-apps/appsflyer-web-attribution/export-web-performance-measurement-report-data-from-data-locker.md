@@ -28,6 +28,8 @@ x-zendesk:
 >
 > 데이터 락커에서 웹 성능 측정 보고서에 액세스하려면 데이터 락커 구독이 있어야 합니다.
 
+<div id="about-the-web-performance-measurement-reports" />
+
 ## 웹 성과 측정 보고서 정보
 
 데이터 락커는 웹 성과 측정, **최종 사용자 이벤트** 및 **전환에 대한 두 가지 보고서를 제공하며,** 각 보고서는 서로 다른 분석 요구에 맞게 설계되었습니다.
@@ -42,6 +44,8 @@ x-zendesk:
   * 사용자가 확보되었음을 표시한다는 *사용자 획득 이벤트* (가입 또는 첫 입금과 같은 커스텀 이벤트)
 * 모든 사용자 이벤트는 나중에 이러한 전환과 연결되며 캠페인 세부 정보를 상속합니다.
 
+<div id="report-fields" />
+
 ## 리포트 필드
 
 보고서에 어떤 필드가 포함되는지 알아보려면 각 보고서의 샘플을 다운로드하십시오.
@@ -51,12 +55,16 @@ x-zendesk:
 
 샘플 보고서에는 모든 리포트 필드와 해당 값이 포함됩니다. 필드 정의는 필드 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-field-dictionary">사전을</Anchor> 참조하십시오.
 
+<div id="report-timing-and-data-freshness" />
+
 ## 리포트 타이밍 및 데이터 새로고침
 
 이러한 세부 정보를 사용하여 새 데이터가 추가되는 시점과 최근 이벤트가 보고서에 표시되는 시기를 파악할 수 있습니다.
 
 * **리포트 생성 빈도:** 매시간 새 데이터가 추가됩니다.
 * 데이터 최신성 이벤트는 일반적으로 발생 후 2&#126;3시간 내에 리포트에 나타납니다.
+
+<div id="heres-how-each-batch-works" />
 
 ### 각 배치의 작동 방식은 다음과 같습니다.
 
@@ -67,9 +75,13 @@ x-zendesk:
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### 이러한 이벤트는 언제 리포트에 표시되나요?
 
 이벤트는 **처리가 완료된 후** 보고서에 기록됩니다. **예를 들어 오전 10시 배치에서 발생한** 08:00 ~ 09:00 **이벤트는 오전 11시 리포트 버전에 표시됩니다.**
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### 예: 오전 10시 배치의 기능
 
@@ -79,9 +91,13 @@ x-zendesk:
 | 2026-01-28 | 12:00 | 09:00 – 10:00 | 10:00–10:30 |
 | 2026-01-28 | 13:00 | 10:00 – 11:00 | 10:00-11:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## 클라우드 버킷의 보고서 데이터에 액세스하는 방법
 
 클라우드 버킷의 보고서 데이터에 액세스하는 방법에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#folder-structure">데이터 락커 폴더 구조를 참조하세요</Anchor>.
+
+<div id="bi-developer-considerations" />
 
 ## BI 개발사 고려사항
 
@@ -151,6 +167,8 @@ x-zendesk:
 
 * **전환 유형별 필터링 (선택 사항):** 캠페인 유형에 따라 어트리뷰션 데이터를 `WHERE conversion_type = 'USER_ACQUISITION'` 포함하거나 `WHERE conversion_type = 'RETARGETING'` 분리할 수 있습니다.
 
+<div id="filter-summary-table" />
+
 #### 필터 요약 표
 
 | 필터 요구 사항 | SQL 로직 | 구현 컨텍스트 |
@@ -189,6 +207,8 @@ COALESCE(customer_user_id, appsflyer_id_value)
 * 특정 사용자별 필터링
 * 사용자별 테이블 조인
 * 모든 사용자 수준 지표 계산
+
+<div id="example-count-distinct-users" />
 
 #### 예: 고유 사용자 수 계산
 
@@ -448,6 +468,8 @@ ORDER BY cohort_date, cohort_users DESC
 </Accordion>
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제한 사항
 

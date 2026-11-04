@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## 소개
 
 ESP(이메일 서비스 제공업체)는 세분화된 사용자 트래픽을 위한 훌륭한 소스가 될 수 있습니다.
@@ -35,6 +37,8 @@ ESP(이메일 서비스 제공업체)는 세분화된 사용자 트래픽을 위
 ESP의 문제점 중 하나는 딥링킹 기능을 그대로 유지하면서 클릭 수를 기록하는 것입니다. ESP는 딥링킹 URL을 자체 ESP의 클릭 기록 도메인으로 래핑합니다. 이 절차는 때때로 iOS 유니버설 링크 프로세스를 중단시킵니다.
 
 클릭 기록 도메인 위에 유니버설 링크를 지원하는 Iterable을 사용하면 딥링킹과 클릭 기록을 계속 수행할 수 있습니다.
+
+<div id="prerequisites" />
 
 ## 선행 조건
 
@@ -54,7 +58,11 @@ Iterable은 Android 앱 링크를 지원하지 않습니다. 그러나 <Anchor t
 </Tab>
 </Tabs>
 
+<div id="setting-up-iterable" />
+
 ## Iterable 설정
+
+<div id="step-1-setting-up-link-branding-in-iterable" />
 
 ### 1단계: Iterable에서 링크 브랜딩 설정하기
 
@@ -62,9 +70,13 @@ Iterable은 Android 앱 링크를 지원하지 않습니다. 그러나 <Anchor t
 
 Iterable로 클릭 기록 도메인을 설정하는 방법에 대한 자세한 내용은 <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">여기</Anchor>를 참조하세요.
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### 2단계: Iterable에 SSL 인증서 업로드하기
 
 클릭 기록 도메인에 도메인의 SSL 인증서를 포함해야 합니다. SSL 인증서는 Iterable 계정에 설치되어 있어야 합니다. SSL 인증서 설치에 대한 지침은 <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">여기</Anchor>에서 확인할 수 있습니다.
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### 2단계: Iterable에 AASA(iOS) 및 에셋 링크 파일(Android)을 제공합니다.
 
@@ -97,6 +109,8 @@ Iterable이 iOS 유니버설 링크를 지원하려면 AASA 파일이 필요합�
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## 앱 설정
 
 앱 및 유니버설 링크를 지원하도록 앱을 설정하려면 다음을 참조하세요.
@@ -104,6 +118,8 @@ Iterable이 iOS 유니버설 링크를 지원하려면 AASA 파일이 필요합�
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Android에 대한 1단계: 앱 링크를 지원하도록 앱 설정">
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### 1단계: Android 매니페스트의 활동에 클릭 도메인 추가
 
@@ -121,6 +137,8 @@ Android 매니페스트에서 클릭 도메인 호스트와 딥링크하려는 �
      </intent-filter>
 </activity>
 ```
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### 2단계: 클릭 도메인을 확인하도록 앱 설정
 
@@ -142,6 +160,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 <Accordion title="iOS에 대한 1단계: 유니버설 링크를 지원하도록 앱 설정">
 
 이 섹션에서는 유니버설 링크를 지원하도록 앱을 설정하는 방법을 설명합니다.
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### 1단계: Xcode에서 클릭 도메인 연결
 
@@ -240,6 +260,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 
 </Accordion>
 
+<div id="sending-your-first-email" />
+
 ## 첫 번째 이메일 보내기
 
 1. 링크 관리 페이지에서(또는 수동으로) <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">원링크 URL을 만듭니다</Anchor>.
@@ -259,6 +281,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 
    이 단계에서 Iterable은 위의 링크를 이전 단계에서 설정한 클릭 도메인으로 래핑합니다. 시나리오 : 세 개의 클릭 도메인이 귀하의 원링크 [https://mysubdomain.onelink.me/abCD](https://mysubdomain.onelink.me/abCD)로 리디렉션됩니다. 앱이 사용자의 기기에 설치되어 있는 경우 클릭 도메인은 앱에 딥 링크됩니다.
 
+<div id="note" />
+
 > 📄 **예시**
 >
 > URL 매개변수는 가독성을 위해 이 예제에서 URL로 인코딩되지 않습니다.
@@ -268,6 +292,8 @@ SDK는 캠페인 세부 정보를 얻기 위해 클릭 도메인 뒤에 있는 �
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### 링크 테스트
 

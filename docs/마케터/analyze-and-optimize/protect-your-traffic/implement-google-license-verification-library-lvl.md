@@ -25,6 +25,8 @@ x-zendesk:
 
 > **한눈에 보기:** Google Play와의 모든 라이선스 관련 커뮤니케이션을 처리하는 Google License Verification Library(LVL)를 추가하여 앱의 무단 사용을 미리 방지하세요.
 
+<div id="overview" />
+
 ## 개요
 
 LVL은 귀하의 앱에 추가할 수 있는 라이브러리(Android SDK에서 다운로드 가능)로서 Google Play 라이선스 서비스와의 모든 라이선스 관련 커뮤니케이션을 처리하는 역할을 합니다.
@@ -34,6 +36,10 @@ LVL은 귀하의 앱에 추가할 수 있는 라이브러리(Android SDK에서 �
 Google Play 라이선스 서비스는 유저에게 앱 사용 라이선스가 있는지 여부를 확인하는 역할을 합니다. Google Play에서는 유저가 앱 구매자로 기록되면 라이선스가 부여된 것으로 간주합니다. 라이선스는 앱마다 고유하게 부여되며 프로드 방지 강화를 위해 사용될 수 있습니다. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">더 알아보기</Anchor>
 
 앱스플라이어의 SDK는 고객 측으로부터의 데이터를 수집하고 Protect360은 서버 측 라이선스 유효성을 검사하여, 오가닉 인스톨과 논오가닉 인스톨 확인에 모두 실패한 프로드 인스톨을 차단합니다. Protect360 대시보드 및 리포트에 표시되는 “차단 이유”는 “Bots”입니다.
+
+<div id="note" />
+
+<div id="set-up-lvl" />
 
 ## LVL 설정
 
@@ -108,6 +114,8 @@ Google Play 라이선스 서비스는 유저에게 앱 사용 라이선스가 �
 설치 메시지에 LVL 정보가 없는 경우 지원/SDK 팀과 상의하십시오.
 
 </Accordion>
+
+<div id="faq" />
 
 ## 자주 묻는 질문
 

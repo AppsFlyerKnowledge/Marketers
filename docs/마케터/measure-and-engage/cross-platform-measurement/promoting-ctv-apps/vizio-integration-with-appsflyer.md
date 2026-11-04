@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **요약:** 비지오 커넥티드 TV(CTV) 앱(채널)을 앱스플라이어와 통합하여 비지오에서 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 수신할 수 있습니다.
 
+<div id="about-vizio-ctv-attribution" />
+
 ## Vizio CTV 어트리뷰션 정보
 
 스트리밍용 Vizio SmartCast OS는 모든 Vizio TV에서 실행됩니다.
@@ -34,9 +36,13 @@ Vizio API 통합 다음을 지원합니다.
 * Vizio 스마트 TV.
 * CTV-to-TV 어트리뷰션 및 이벤트 녹화. 사용자의 Vizio 기기에서 발생하는 첫 번째 앱 열기 (설치에 해당) 및 이벤트의 의미, 어트리뷰션 및 기록.
 
+<div id="vizio-attribution-flow" />
+
 ### Vizio 어트리뷰션 흐름
 
 ![CTV_attribution_flow_-_Vizio__1_.png](https://files.readme.io/f4ab4b6c9e045fe00b537814fa9f10746b525a5512e5805e62eb0c2e4c9a8615-6318406872337.png)
+
+<div id="integration-procedures" />
 
 ## 통합 절차
 
@@ -61,6 +67,8 @@ Vizio API 통합 다음을 지원합니다.
 | 비용 데이터 | 비용 데이터는 이메일 방식으로 파일 업로드를 사용하여 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">비용 가져오기</Anchor>를 통해 전송해야 합니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

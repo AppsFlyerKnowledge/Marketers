@@ -33,9 +33,13 @@ x-zendesk:
 
 앱스플라이어와 믹스패널의 연동을 통해 앱스플라이어에서 믹스패널로 유입 캠페인 정보를 가져올 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions#미디어-소스-제한">일부 미디어소스</Anchor>는 타사와의 데이터 공유를 제한합니다. 따라서 제한된 이벤트에 대한 포스트백은 포스트백을 보내기 위해 구성된 선택에 관계없이 이 파트너에게 전송되지 않습니다.
+
+<div id="setting-up-mixpanel" />
 
 ## 믹스패널 설정
 
@@ -58,6 +62,8 @@ x-zendesk:
 <Accordion title="연동 탭">
 
 연동 탭은 아래 설명과 같이 여러 섹션으로 나누어져 있습니다.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
@@ -82,11 +88,15 @@ x-zendesk:
     * **이벤트:** 인스톨 데이터를 믹스패널 이벤트 엔드포인트로 보내려면 켜세요.
     * **피플:** 인스톨 데이터를 믹스패널 피플 엔드포인트로 보내려면 이 옵션을 켜세요.  
 
+      <div id="note" />
+
       > 📘 **참고**
       >
       > 인스톨 포스트백을 믹스패널로 보내려면 **이벤트** 또는 **피플**이라는 두 가지 엔드포인트 중 하나 이상이 켜져 있어야 합니다.
 
     * **고급 데이터 공유:** 추가 정보인 c(campaign), network(pid), impression\_based(is-impression)를 믹스패널에 전송하려면 이 옵션을 활성화하세요.
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -94,11 +104,15 @@ x-zendesk:
 
 [![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
 
+<div id="in-app-events-settings" />
+
 ### 인앱 이벤트 설정
 
 ![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
 
 이 섹션에서는 포스트백을 통해 앱스플라이어 이벤트를 믹스패널과 매핑합니다.
+
+<div id="note-1" />
 
 > 📘 **참고**
 >
@@ -164,6 +178,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="integrating-with-mixpanel-when-using-a-login-mechanism" />
+
 ## 로그인 메커니즘을 사용할 때 믹스패널과 연동하기
 
 다음은 연동 단계의 예를 보여줍니다.
@@ -224,9 +240,13 @@ x-zendesk:
 
 7. 믹스패널은 앱스플라이어로부터 유저 ID의 별칭(예: 이메일 주소)과 함께 customer\_user\_id를 수신합니다.
 
+<div id="note-2" />
+
 > 📘 **참고**
 >
 > 애플리케이션 내에서 등록 프로세스를 사용하지 않는 경우 위에 설명된 대로 1&#126;3단계를 구현합니다.
+
+<div id="viewing-appsflyer-data-in-mixpanel" />
 
 ## 믹스패널에서 앱스플라이어 데이터 보기
 

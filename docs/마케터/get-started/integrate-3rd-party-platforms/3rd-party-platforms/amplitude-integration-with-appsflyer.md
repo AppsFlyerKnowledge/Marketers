@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어와 Amplitude를 연동하여 사용자 어트리뷰션 데이터 및 이벤트 분석 정보를 공유하고 유저 인게이지먼트, 리텐션 및 수익에 대한 더 풍부한 인사이트를 확보하세요. 사용 사례 및 분석 정보 필요에 따라 **두 개의 연동 버전—V1 또는 V2** 중에서 선택하십시오.
 
+<div id="about-the-integration" />
+
 ## 연동에 대하여
 
 Amplitude는 앱스플라이어 연동 파트너로, 제품, 성장 및 마케팅 팀이 모바일 및 웹에서 사용자 행동을 이해하기 위해 활용하는 제품 분석 플랫폼입니다. 이번 연동은 앱스플라이어가 Amplitude에 설치 후 핵심 이벤트 데이터를 전송할 수 있게 하여 포괄적인 사용자 수준 분석을 가능하게 합니다.
@@ -43,10 +45,14 @@ Amplitude는 앱스플라이어 연동 파트너로, 제품, 성장 및 마케�
 | **V1** | 어트리뷰션 API | 광고 ID (AdID) | 인스톨만 |
 | **V2** | HTTP V2 API | `user_id`, `device_id` (폴백 로직) | 설치 및 인앱 이벤트 |
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > * Amplitude V1 또는 V2 연동 중 하나를 선택하세요. **두 개의 버전을 동시에 사용하지 마세요** 두 버전을 동시에 사용하면 중복 이벤트가 Amplitude로 전송될 수 있습니다.
 > * 일부 미디어 소스는 제3자와의 데이터 공유를 제한합니다. 제한된 이벤트에 대한 포스트백은 설정이 되어 있더라도 해당 파트너에게 전송되지 않습니다.
+
+<div id="prerequisites" />
 
 ## 선행 조건
 
@@ -57,6 +63,8 @@ Amplitude는 앱스플라이어 연동 파트너로, 제품, 성장 및 마케�
 * 중복을 방지하기 위해 Amplitude SDK와 앱스플라이어에서 동일한 이벤트를 전송하지 않도록 하세요.
 * Amplitude V2 연동에 대한 추가 전제 조건을 참조하세요.
 
+<div id="additional-prerequisites-for-the-amplitude-v2-integration" />
+
 ### Amplitude V2 연동을 위한 추가 전제 조건
 
 V2 연동은 다음의 설정이 필요합니다:
@@ -64,6 +72,8 @@ V2 연동은 다음의 설정이 필요합니다:
 * [Amplitude 디바이스 ID](/docs/amplitude-integration-with-appsflyer#amplitude-디바이스-id)
 * [고객 사용자 ID](/docs/amplitude-integration-with-appsflyer#고객-사용자-id)
 * [Amplitude 세션 ID](/docs/amplitude-integration-with-appsflyer#amplitude-세션-id)
+
+<div id="amplitude-device-id" />
 
 #### Amplitude 디바이스 ID
 
@@ -162,10 +172,14 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="customer-user-id" />
+
 #### 고객 사용자 ID
 
 고객 사용자 ID(CUID)를 설정합니다. 이는 일반적으로 사용자 등록 시 앱 소유자가  
 생성하고 설정하는 고유의 식별자입니다. <Anchor target="_blank" href="/marketers/ko/docs/customer-user-id-field-cuid?utm_source=chatgpt.com">더 알아보기</Anchor>
+
+<div id="amplitude-session-id" />
 
 #### Amplitude 세션 ID
 
@@ -264,6 +278,8 @@ appsFlyerSdk.setAdditionalData(data);
 </Tab>
 </Tabs>
 
+<div id="set-up-the-integration" />
+
 ## 연동 설정
 
 **연동을 설정하려면:**
@@ -293,12 +309,18 @@ appsFlyerSdk.setAdditionalData(data);
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 **첫 번째 방문** 시에 **파트너 활성화**를 켜서 연동 탭의 파라미터 설정을 활성화해야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너 활성화</Anchor>에 대해 더 알아보십시오.
 
+<div id="general-settings" />
+
 ### 일반 설정
+
+<div id="advanced-data-sharing" />
 
 #### 고급 데이터 공유
 
@@ -320,6 +342,8 @@ Amplitude와 추가 설치 정보를 공유하려면 **고급 데이터 공유**
 | af\_sub4 | af\_sub4 |
 | af\_sub5 | af\_sub5 |
 | app\_version | app\_version |
+
+<div id="amplitude-eu-data-center" />
 
 #### Amplitude EU 데이터 센터
 
@@ -343,9 +367,13 @@ Amplitude는 고유한 API 키를 통해 앱스플라이어와 연결됩니다. 
    Amplitude
 5. 앱스플라이어 대시보드에서 Amplitude 설정을 진행합니다.
 
+<div id="default-postbacks" />
+
 ### 기본 포스트백
 
 앱스플라이어는 사용자 인스톨 후 자동 포스트백을 전송할 수 있습니다. 이 섹션에서는 각 이벤트별로 포스트백을 전송할 사용자 소스를 설정합니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#default-postbacks">기본 포스트백</Anchor>에 대해 자세히 알아보세요.
+
+<div id="in-app-event-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -360,6 +388,8 @@ Amplitude는 고유한 API 키를 통해 앱스플라이어와 연결됩니다. 
 * 캠페인 이름
 
 iOS 디바이스의 IDFA 전송은 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">ATT에 대한 사용자 동의 및 고급 개인정보 보호 정책 설정</Anchor>에 따릅니다.
+
+<div id="in-app-event-postbacks" />
 
 ### 인앱 이벤트 포스트백
 
@@ -399,15 +429,21 @@ Amplitude에 대한 권한이 제공되지 않습니다.
 
 </Accordion>
 
+<div id="viewing-attribution-data-in-the-amplitude-console" />
+
 ## Amplitude 콘솔에서 어트리뷰션 데이터 보기
 
 앱스플라이어에서 Amplitude로 전송된 어트리뷰션 데이터는 대시보드에 **[앱스플라이어]** 접두사가 붙어 이벤트와 속성으로 표시됩니다.
 
 ![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > 경우에 따라 Amplitude는 앱스플라이어에서 전송된 데이터를 “차단됨"으로 표시합니다. Amplitude에서 앱스플라이어 데이터를 볼 수 없는 경우, 차단된 이벤트로 정의되어 있는지 확인하십시오.![amplitude-blocked-data.png](https://files.readme.io/1d1a327cca509f002110d6908087c0b4f628e8643eee1a96aa7bdb018d96734e-51912986509329.png)
+
+<div id="sending-amplitude-events-to-appsflyer" />
 
 ## Amplitude 이벤트를 앱스플라이어로 전송하기
 

@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 디바이스, 운영 체제, 채널 또는 플랫폼에 관계없이 온드(owned) 미디어 또는 페이드(paid) 미디어 유저를 앱 유저로 전환하는 어트리뷰션, 리디렉션 및 딥링킹 기능을 사용하여 링크를 생성합니다. 이렇게 생성된 링크는 웹사이트, 배너, 소셜 미디어 게시물, 이메일, 문자 메시지 등 다양한 온드 미디어에서 유저에게 최상의 경험을 제공할 것입니다.
 
+<div id="introduction-video" />
+
 ## 원링크 소개 동영상
 
 <Embed title="YouTube 동영상 플레이어" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## 장점
 
@@ -39,6 +43,8 @@ x-zendesk:
 
 해당 제품군은 등록한 플랜에 상관없이 무료입니다.
 
+<div id="experiences" />
+
 ## 유저 경험
 
 원링크가 제공하는 앱스플라이어 고객 경험 및 딥링킹 제품군을 사용하면 유저가 어디에서 왔는지에 관계없이 최적의 경험을 제공하는 링크를 생성할 수 있습니다. 다음과 같은 고객 경험을 설정할 수 있습니다.
@@ -51,6 +57,8 @@ x-zendesk:
 * **텍스트 - 앱**: SMS 문자메시지 및 메시징 캠페인을 위한 링크를 생성하여 문자 메시지를 통해 유저를 (유저를 앱에) 참여시키세요.
 * **앱 추천**: 앱 초대 링크를 생성하여 유저와 인플루언서가 다른 사람을 귀사의 앱으로 초대하거나 특정 인앱 콘텐츠(예: 문서)를 공유할 수 있습니다.
 * **커스텀**: 기타: 데스크톱 또는 모바일, 온라인, 오프라인, 온드(owned) 미디어, 페이드(paid) 미디어 등 유저 여정이 어디에서 시작하든, 원링크를 사용하여 유저를 올바른 곳으로 쉽게 보낼 수 있습니다./span>
+
+<div id="setting-up-onelink" />
 
 ## 원링크 설정하기
 
@@ -70,6 +78,8 @@ x-zendesk:
 | 원링크 템플릿 만들기 | <ul><li>마케터/제품 관리자가 앱스플라이어에서 템플릿을 설정합니다.</li><li>안드로이드 개발자는 기존 유저를 위한 앱 오픈 방법)을 설정합니다. (안드로이드 App Links 및 URI 스키마)</li><li>iOS 개발자는 기존 유저를 위한 앱 오픈 방법을 설정합니다. (iOS Universal Links 및 URI 스키마)</li></ul> | <ul><li>앱스플라이어 대시보드</li><li><Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template">마케터 지침</Anchor></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">안드로이드</Anchor> 및 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor> 개발자 지침</li></ul> |
 | 원링크 링크 만들기 | <ul><li>마케터/제품 관리자가 앱스플라이어에서 링크를 설정하고, 이때 원하는 고객 경험을 선택하고 원하는 어트리뷰션 또는 딥링킹 파라미터를 추가합니다.</li><li>안드로이드 및 iOS 개발자는 딥링킹을 위해 UDL 방식을 구현합니다. (딥링킹이 필요한 경우)</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">마케터 지침</Anchor></li><li><Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">안드로이드</Anchor> 및 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor> 개발자 지침</li><li>샘플 앱 (Github)</li></ul> |
 
+<div id="additional-options" />
+
 ## 추가 옵션
 
 UI에서 먼저 일부 또는 전체 설정을 완료한 후에 아래에 설명된 추가 기능을 구현하는 것이 좋습니다.
@@ -83,9 +93,13 @@ UI에서 먼저 일부 또는 전체 설정을 완료한 후에 아래에 설명
 * <Anchor target="_blank" href="/marketers/ko/docs/understand-onelink-short-vs-long-urls">긴 URL</Anchor>: 원링크 커스텀 링크에 파라미터를 추가하거나 스프레드시트에 귀하가 생성한 간단한 수식을 적용하여 많은 원링크 커스텀 링크를 생성합니다.
 * <Anchor target="_blank" href="/marketers/ko/docs/redirect-app-users-to-a-website">앱-투-웹 리디렉션</Anchor>: 유저를 앱에서 웹사이트 또는 소셜 미디어 페이지로 리디렉션합니다.
 
+<div id="troubleshooting-and-faq" />
+
 ## 문제 해결 및 FAQ
 
 <Anchor target="_blank" href="/marketers/ko/docs/onelink-troubleshooting-and-faq">원링크 문제해결 가이드</Anchor>를 확인하시고, 원링크 커스텀 링크 리디렉션/작동 문제를 테스트하고 디버깅하기 위한 솔루션을 신속하게 찾으세요.
+
+<div id="limitations" />
 
 ## 제한 사항
 

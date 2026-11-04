@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 이러한 대시보드를 통해 캠페인 성과 및 앱 동작을 볼 수 있습니다.
 
+<div id="appsflyer-dashboards" />
+
 ## 앱스플라이어 대시보드
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)

@@ -29,6 +29,8 @@ x-zendesk:
 
 > **한눈에 보기:** Protect360 대시보드는 유효성 검증 규칙 적용으로 인해 차단된 사기 트래픽과 인스톨에 대한 통찰력을 제공합니다.
 
+<div id="about-protect360-dashboard" />
+
 ## Protect360 대시보드 소개
 
 Protect360 대시보드:
@@ -79,6 +81,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 
 </Accordion>
 
+<div id="installs-dashboard" />
+
 ## 대시보드 인스톨
 
 인스톨 대시보드는 LTV 기반 데이터를 표시합니다. 이는 선택한 날짜 범위에 발생한 인스톨, 리어트리뷰션 및 리인게이지먼트와 관련된 데이터를 의미합니다.
@@ -116,6 +120,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 
 <Accordion title="인스톨—차트">
 
+<div id="identified-fraud-trend-chart" />
+
 #### 식별된 사기 경향 차트
 
 식별된 사기 경향 차트는 하루 동안의 사기성 인스톨, 리어트리뷰션 및 리인게이지먼트 횟수를 다음 중 하나로 구분하여 표시합니다.
@@ -125,6 +131,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 * **소스 유형**: 논오가닉 및 오가닉
 
 화면표시는 선 그래프 또는 막대 차트일 수 있습니다.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### 하이재킹 인스톨 어트리뷰션 수정 차트
 
@@ -141,6 +149,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 * 이 차트는 광고주만 액세스할 수 있습니다. 에이전시 및 광고 네트워크는 액세스할 수 없습니다.
 * 하이재킹이 실시간으로 차단되면 올바른 어트리뷰션이 앱스플라이어 대시보드 및 리포트에 표시됩니다(Protect360뿐만 아니라). 하이재킹이 포스트 어트리뷰션으로 확인되면 Protect360 로데이터에만 올바른 어트리뷰션이 표시됩니다.
 * 이 차트는 오가닉에 **대한** 보정은 표시할 수 있지만 오가닉**에서** 얻은 것은 아닙니다.
+
+<div id="identified-fraud-chart" />
 
 #### 식별된 사기 차트
 
@@ -159,6 +169,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 <div id="installs-table" />
 
 <Accordion title="인스톨—표">
+
+<div id="identified-fraud-breakdown" />
 
 #### 프로드 상세
 
@@ -179,6 +191,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 * 사용자별로 설정되므로 Protect360 액세스를 가진 모든 계정 사용자는 스스로의 표 구조를 개인적으로 맞춤 설정할 수 있습니다. [추가 표 옵션](/docs/protect360-dashboard#추가적인-표-옵션)을 참조하십시오.
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### 식별된 프로드 쪼개보기 표 내용
 
@@ -241,6 +255,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 | CTIT > 60분 이상 | 설치, 리어트리뷰션, 리인게이지먼트(클릭과 첫 앱 실행 사이의 시간이 60분 이상인 경우). 계산에는 CTIT가 25시간 미만인 설치만 포함됩니다(모든 설치가 아님). 일반적으로 첫 번째 앱 실행의 약 30%는 다운로드 후 60분 이상 발생합니다. |
 | CTIT > 5시간 이상 | 설치, 리어트리뷰션, 리인게이지먼트(클릭과 첫 앱 실행 사이의 시간이 5시간 이상인 경우). 계산에는 CTIT가 25시간 미만인 설치만 포함됩니다(모든 설치가 아님). 일반적으로 첫 번째 앱 실행의 약 20%는 다운로드 후 5시간 이상 발생합니다. |
 
+<div id="additional-table-options" />
+
 #### 추가적인 표 옵션
 
 * CSV 형식으로 테이블을 데스크톱에 다운로드하려면 **CSV 내보내기**를 클릭하십시오.
@@ -259,6 +275,8 @@ Protect360 대시보드를 보려면 앱스플라이어에서 **최적화 > Prot
 CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지정된 날짜 범위에 발생한 인스톨과 관련된 모든 인앱 이벤트입니다.
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## 인앱 이벤트 대시보드
 
@@ -285,6 +303,8 @@ CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지�
 
 <Accordion title="인앱이벤트—차트">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **시간 경과에 따른 프로드 경향 차트**
 
 시간에 따른 사기 경향 차트는 일별 이벤트 수를 표시하며 다음과 같이 구분됩니다.
@@ -292,6 +312,8 @@ CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지�
 * **실시간**: 사기성 인앱 이벤트를 실시간으로 차단
 * **포스트 어트리뷰션**: 포스트 어트리뷰션에서 식별된 사기성 이벤트
 * **비사기**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **미디어소스에 의한 상위 IAE 사기 차트**
 
@@ -327,6 +349,8 @@ CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지�
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### 인앱이벤트 사기 내역 표 콘텐츠
 
 | 표 열 | 설명 |
@@ -351,6 +375,8 @@ CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지�
 | 차단된 IAE | 유형성 검증 규칙에 의해 차단된 IAE. |
 | 오가닉으로 정정 | 오가닉으로 되는 비사기성 소스를 가진 하이재크된 인스톨. |
 | 논-오가닉 소스로 정정 | 논오가닉 미디어소스로 되는 마지막 사기성 소스를 가진 하이재크된 인스톨. |
+
+<div id="additional-table-options-1" />
 
 #### 추가적인 표 옵션
 
@@ -406,6 +432,8 @@ CPI 대시보드의 인앱 이벤트 데이터는 LTV 기반입니다. 즉 지�
 | 데이터 최신성 | 일일 단위 업데이트.<ul><li>인스톨(CPI), 16:00 UTC</li><li>인앱 이벤트(CPA), 21:00 UTC</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참조 항목**
 >

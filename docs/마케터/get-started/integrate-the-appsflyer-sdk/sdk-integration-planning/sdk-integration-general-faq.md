@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 SDK를 사용하면 귀사의 앱 광고, 어트리뷰션 설정, 딥링크와 모바일 유저의 행동 정보 수집을 안전하게 할 수 있습니다. 몇 분 만에 애드 네트워크 및/또는 플랫폼과 작업을 설정하고 착수할 수 있습니다. 몇 주나 몇 달 걸리지 않습니다!
 
+<div id="how-to-install-and-update-the-appsflyer-sdk" />
+
 ## 앱스플라이어 SDK를 설치 및 업데이트하는 방법은?
 
 앱스플라이어 SDK의 설치 및 업데이트 방법은 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">개발자 허브</Anchor>에서 확인하세요. **참고**: SDK를 업그레이드하면 앱스토어에 새 버전의 앱을 출시해야 합니다.
+
+<div id="is-it-hard-to-integrate-the-appsflyer-sdk" />
 
 ## 앱스플라이어 SDK를 통합하는 것이 어려운가요?
 
@@ -33,17 +37,23 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ko/docs/sdk-integration-overview">안드로이드</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/sdk-integration-overview">iOS</Anchor>, Unity 및 이러한 <Anchor target="_blank" href="/marketers/ko/docs/other-platforms">기타 플랫폼</Anchor>에 대한 앱스플라이어 SDK 연동 가이드를 확인해보세요.
 
+<div id="does-the-appsflyer-sdk-affect-app-download-time" />
+
 ## 앱스플라이어 SDK가 앱 다운로드 시간에 영향을 끼치나요?
 
 *앱스플라이어 SDK 패키지*는 앱의 성능에 거의 영향을 주지 않도록 설계되고 코딩되었습니다. 모든 SDK 버전은 경량이며, 앱의 크기 중에서 불과 1% 미만을 차지합니다. 즉, **전체 앱 다운로드 시간에 대한 영향은 거의 없습니다**.
 
 * **iOS SDK:** 약 3.4MB
 
+<div id="does-the-appsflyer-sdk-affect-app-performance" />
+
 ## 앱스플라이어 SDK가 앱의 성능에 영향을 주나요?
 
 *앱스플라이어 SDK API는 주로 *setter*/getter 또는 앱스플라이어 서버와 데이터를 송수신하는 빠른 비동기 웹 서비스 방법을 사용합니다. 이는 SDK API가 앱 성능에 미미한 영향을 준다는 뜻입니다.*
 
 **결론적으로,** 앱스플라이어 SDK는 앱 성능이나 사용자 경험에 아무런 영향을 끼치지 않습니다.
+
+<div id="can-i-record-in-app-events-that-occur-outside-my-app" />
 
 ## 앱 외부에서 발생하는 인앱 이벤트도 기록할 수 있나요?
 

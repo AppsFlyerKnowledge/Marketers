@@ -28,11 +28,15 @@ x-zendesk:
   section_id: 6551285343761
   url: https://support.appsflyer.com/hc/ko/articles/207032106
 ---
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 이 문서에서는 더 이상 사용되지 않는 영수증 검증 기능에 대해 설명합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/bulletin-legacy-receipt-validation-is-deprecated">게시판을 참조하십시오: 구식 영수증 검증은 더 이상 사용되지 않습니다</Anchor>
 
 > **한눈에 보기:** iOS 및 Android 앱 스토어에서 발생한 사기성 인앱 구매를 방지하기 위해 영수증 검증을 구현하고, 보고된 대로 인앱 구매가 발생했는지 확인하십시오. **참고**: 이것은 레거시 기능입니다. 새롭고 완전 자동화된 개선된 <Anchor target="_blank" href="/marketers/ko/docs/purchase-and-subscription-validation-overview">인앱 구매 검증 메커니즘</Anchor>에 대해 자세히 알아보십시오.
+
+<div id="receipt-validation-flow" />
 
 ## 영수증 검증 흐름
 
@@ -64,9 +68,13 @@ x-zendesk:
 * AppsFlyer 영수증 검증 서비스 모든 계정 플랜에 대해 무료입니다.
 * Android의 경우, 영수증 검증은 `null` 결과를 반환할 수 있으며, 최종 사용자가 구매 중 인터넷에 접속할 수 없는 경우 검증이 실패한 것으로 간주됩니다.
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > `validateAndLogInAppPurchase` 호출은 **af\_purchase** 인앱 이벤트도 생성합니다. 따라서 검증할 때 af\_purchase 이벤트를 생성하지 마십시오. 이렇게 하면 중복 수익 이벤트가 발생합니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >

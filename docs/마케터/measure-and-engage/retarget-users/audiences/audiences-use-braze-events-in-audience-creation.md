@@ -25,10 +25,14 @@ x-zendesk:
 
 Braze 계정과 앱스플라이어 오디언스 사이의 수신 연결을 설정하여 Braze 메시지 인게이지먼트 이벤트 데이터를 오디언스로 가져올 수 있습니다. 이 데이터는 오디언스를 정의할 때 <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide#all-about-rulesets">규칙 집합</Anchor>에 사용할 수 있습니다.
 
+<div id="important" />
+
 > 🚧 **필수 조건**
 >
 > * Braze와 앱스플라이어 SDK가 모두 귀사의 앱에 통합되어야 합니다.
 > * Braze의 **Currents** 기능을 구독해야 합니다.
+
+<div id="set-up-the-braze-incoming-connection" />
 
 ## Braze 수신 연결 설정
 
@@ -46,6 +50,8 @@ Braze에서 들어오는 연결을 만들려면 귀사의 앱에 있는 앱스�
 
 * Braze 외부 ID 매개변수
 * CUID 필드
+
+<div id="using-a-braze-external-id-parameter" />
 
 #### **Braze 외부 ID 매개변수 사용**
 
@@ -74,6 +80,8 @@ partnerInfo:brazeInfo];
 
 </Tab>
 </Tabs>
+
+<div id="using-the-cuid-field" />
 
 #### **CUID 필드 사용**
 
@@ -131,7 +139,11 @@ partnerInfo:brazeInfo];
 9. 고객 행동 및 사용자 이벤트 섹션에서 **고객 행동 및 사용자 이벤트 측정** 옵션을 비활성화 상태로 유지합니다.
 10. **현재 실행** 버튼을 클릭하여 설정을 저장하고 Braze 메시지 인게이지먼트 이벤트를 오디언스로 보내기 시작합니다.
 
+<div id="supported-events" />
+
 #### 지원되는 이벤트
+
+<div id="note" />
 
 > 📘 **지원되는 Braze 이벤트**
 >
@@ -151,6 +163,8 @@ partnerInfo:brazeInfo];
 > * SMS 문자메시지 / MMS 발송
 
 </Accordion>
+
+<div id="using-braze-data-in-audiences" />
 
 ## 오디언스에서 Braze 데이터 사용
 

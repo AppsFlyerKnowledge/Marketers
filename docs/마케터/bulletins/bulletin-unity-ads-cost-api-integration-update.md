@@ -25,6 +25,8 @@ x-zendesk:
 | **중요 사항** | <ul><li>Unity는 새로운 비용 API 연동을 도입할 예정입니다.</li><li>기존 비용 API 연동으로는 종료일인 2024년 10월 1일까지만 비용 데이터를 가져올 수 있습니다.</li></ul> |
 | **해야 할 일** | 2024년 10월 1일 이후에도 비용 데이터를 계속 전송받기 위해서는 새로운 Unity 비용 API 연동에 대한 자격 증명을 업데이트해야 합니다.<br /><br />필요한 자격 증명은 다음과 같습니다.<ul><li>Organization Core ID</li><li>Service Account Secret Key</li><li>Service Account Key ID (서비스 계정 키 ID)</li></ul>앱스플라이어의 Unity 비용 연동을 업데이트하려면 다음 섹션의 지침을 따르세요. Unity 비용 연동을 업데이트하려면 다음 2가지 단계를 수행해야 합니다.<ol><li>[새로운 Unity 자격 증명을 받습니다](/docs/bulletin-unity-ads-cost-api-integration-update#get-unity-credentials).</li><li>[앱스플라이어에 자격 증명을 입력하여 Unity 비용 API 연동을 업데이트합니다.](/docs/bulletin-unity-ads-cost-api-integration-update#set-up-unity-cost-api-integration-in-appsflyer)</li></ol> |
 
+<div id="unity-cost-api-integration-procedures" />
+
 ## Unity 비용 API 연동 절차
 
 Unity 비용 API를 연동하려면 다음 2가지 단계를 거쳐야 합니다.

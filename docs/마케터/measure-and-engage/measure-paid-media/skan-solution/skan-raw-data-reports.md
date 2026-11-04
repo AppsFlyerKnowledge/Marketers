@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** SKAN 로데이터 리포트는 SKAN 포스트백뿐만 아니라 앱스플라이어가 iOS로부터 수신한 포스트백을 해석하고 디코딩한 후 생성하는 정보도 포함합니다. 세션 로데이터는 **데이터 락커**를 통해 사용 가능합니다.
 
+<div id="skan-raw-data-reports" />
+
 ## SKAN 로데이터 리포트
 
 원리:
@@ -59,6 +61,8 @@ x-zendesk:
 
 * 광고 네트워크가 제공하지 않는 campaign\_name, ad\_network\_campaign\_id, ip 등의 임의 보강 필드.
 * 애플의 개인정보보호 기준(privacy threshold)에 따라 데이터를 공개하지 않았습니다. source\_app\_id, skad\_campaign\_id, skad\_conversion\_value 등의 필드.
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## SKAN 로데이터 리포트 형식 및 콘텐츠
 
@@ -206,6 +210,8 @@ x-zendesk:
 
 <Accordion title="로데이터 필드 형식 유형">
 
+<div id="field-formats" />
+
 #### 필드 형식
 
 | 필드 이름 | 설명 |
@@ -236,6 +242,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="traits-and-limitations" />
@@ -256,6 +264,8 @@ x-zendesk:
 | 계정 유저 액세스 | 사용 가능. 계정 권한에 따름 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

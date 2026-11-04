@@ -22,12 +22,16 @@ x-zendesk:
 ---
 > **한눈에 보기:** 광고주가 데이터에 액세스하거나 업데이트하는 데 사용할 수 있는 API입니다.
 
+<div id="advertiser-api-list-and-interfaces" />
+
 ## 광고주 API 목록 및 인터페이스
 
 <span id="01EEQJERAWW3HY59HVPY3YWA0B"></span>리포트, 리포트 도구 및 리포트 API에 대한 특정 정보:
 
 * <span id="01EEQJERAW2ZTBWBQKBCDSC76Z"></span><span id="01EEQJERAWQ2WCPV0207XM6FR4"></span><Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview"><span id="01EEQJERAX0W7RCYQWVM2M5S13"></span>로데이터 리포트 도구/API</Anchor>
 * <span id="01EEQJERAWA09P200SGR985846"></span><span id="01EEQJERAW6AC6WR7E46T5DMHW"></span><Anchor target="_blank" href="/marketers/ko/docs/aggregated-and-analytics-reporting-overview">종합 및 애널리틱스 리포트 도구/API</Anchor>
+
+<div id="interfaces-for-advertisers" />
 
 #### 광고주를 위한 인터페이스
 

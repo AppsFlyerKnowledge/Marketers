@@ -25,6 +25,8 @@ x-zendesk:
 
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
+<div id="activity-dashboard" />
+
 ## 액티비티 대시보드
 
 * 오가닉 및 논오가닉 트래픽을 포함합니다.
@@ -34,9 +36,13 @@ x-zendesk:
   * **평균:** 일별. 예시: MAU, 평균 DAU, 평균 MAU
 * 지역(Geo) 필터는 인스톨 시점의 사용자 위치와 관련됩니다.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 액티비티 대시보드에 대해 자세히 알고 싶으신가요? <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">앱스플라이어 학습 포털에서 제공하는 짧고 유익한 강의 코스</Anchor>를 확인해 보세요.
+
+<div id="dashboard-features-and-layout" />
 
 ## 대시보드 기능 및 레이아웃
 
@@ -123,6 +129,8 @@ x-zendesk:
         일일 활성 사용자당 평균 수익입니다.  
         공식: [[n]일의 매출/[n]일의 DAU]] 합/일수
 
+        <div id="h_01HHYHP1HFZBRTWB8MJ1F6XKZS" />
+
         > 📄 **예시: ARPDAU 계산**
         >
         > | 일 | 당일 수익($) | DAU | 평균 일일 사용자 수익($) |
@@ -194,6 +202,8 @@ x-zendesk:
 * 월별 총이익: 매출, 비용, 총이익
 
 </Accordion>
+
+<div id="specifications-and-limitations" />
 
 ## 사양 및 제한 사항
 

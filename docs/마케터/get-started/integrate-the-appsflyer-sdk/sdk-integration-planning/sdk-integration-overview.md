@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 사용 가능한 앱스플라이어  SDK 기능을 알아보고 안드로이드 또는 iOS 앱에 적용할 API를 판단하세요.
 
+<div id="about-the-sdk" />
+
 ## SDK 정보
 
 SDK 연동에 대한 전반적인 내용을 아래 영상에서 확인하실 수 있습니다.
@@ -79,6 +81,8 @@ SDK는 앱 설치 및 이벤트 기록 기능을 제공합니다. 인스톨, 세
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## SDK 호환성
 
 앱스플라이어 SDK는 다음 플랫폼과 호환됩니다:
@@ -110,13 +114,19 @@ SDK V6.0.8부터 <Anchor target="_blank" href="/marketers/ko/docs/apple-app-clip
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## SDK 연동
 
 SDK를 설치하고 연동하는 과정에는 제품 관리자와 모바일 개발자가 함께 협력해야 합니다. **앱에 SDK를 연동하기 전에**, 모든 연동 작업을 검토하고 앱에서 사용할 기능을 고려하세요.
 
+<div id="sdk-planning-checklist" />
+
 ### SDK 계획 체크리스트
 
 시작을 돕기 위해서, 계획 과정에 도움을 줄 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">체크 리스트</Anchor>를 준비했습니다. 각 작업에 대한 마케터 및 개발자 문서 링크가 있습니다.
+
+<div id="sdk-integration-tasks" />
 
 ### SDK 연동 작업
 
@@ -139,6 +149,8 @@ SDK를 설치하고 연동하는 과정에는 제품 관리자와 모바일 개�
 | <Anchor target="_blank" href="/marketers/ko/docs/additional-sdk-integration-guide#세션">유저 세션 리포팅</Anchor>을 판단하세요. | 30분 |
 | <Anchor target="_blank" href="/marketers/ko/docs/additional-sdk-integration-guide#소유-매체">온드(owned) 미디어 소스</Anchor>에 사용할 어트리뷰션 방법을 판단하세요. | 1시간 |
 | 앱이 개인정보 보호 규정(GDPR, CCPA)을 준수하도록 <Anchor target="_blank" href="/marketers/ko/docs/additional-sdk-integration-guide#사용자-프라이버시">유저 개인정보 보호</Anchor> 정책을 관리하세요. | 1시간 |
+
+<div id="note" />
 
 > 📄 **참고 항목**
 >

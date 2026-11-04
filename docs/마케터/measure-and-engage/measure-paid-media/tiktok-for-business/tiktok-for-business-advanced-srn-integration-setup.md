@@ -28,9 +28,13 @@ x-zendesk:
 
 <Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
+<div id="overview" />
+
 ## 개요
 
 Advanced SRN 연동은 광고 ID를 포함하는 모든 트래픽이 일반적인 SRN 트래픽으로 어트리뷰션되어 리포트에 반영됨을 의미합니다. 광고 ID를 사용할 수 없는 경우, 앱스플라이어는 프라이버시 제한 규정에 따라 TikTok의 클릭 및 노출 수를 기반으로 어트리뷰션을 측정합니다.
+
+<div id="set-up-tiktok-for-business" />
 
 ## TikTok for Business 설정
 
@@ -60,9 +64,13 @@ Advanced SRN 연동은 광고 ID를 포함하는 모든 트래픽이 일반적�
 
 **연동** 탭에는 아래 설명된 바와 같이 여러 섹션이 포함되어 있습니다.
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 연동을 구성하려면 먼저 **파트너 활성화**토글을 켜야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation#파트너-연동-활성화">파트너 활성화 및 비활성화</Anchor>에 대한 자세한 내용은 연동 탭을 참조하세요.
+
+<div id="advanced-data-sharing" />
 
 #### Advanced Privacy
 
@@ -78,6 +86,8 @@ iOS 앱만 해당: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/
 >
 > * 연동(`tiktokglobal_int`)을 활성화할 때 **Advanced Privacy** 토글이 기본적으로 켜집니다.
 > * 기존 연동(`bytedanceglobal_int`)에서 새 연동(`tiktokglobal_int`)으로 마이그레이션하고 활성화하면 마이그레이션 이전 상태와 관계없이 **Advanced Privacy** 토글이 기본으로 켜집니다.
+
+<div id="general-settings" />
 
 #### 일반 설정
 
@@ -98,6 +108,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 > * 새로운 연동(`tiktokglobal_int`)으로 마이그레이션할 때 기존 연동(`bytedanceglobal_int`)의 모든 값이 이 필드에 자동으로 입력됩니다.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">iOS 14에 대한 TikTok 앱 ID 요구 사항에 대해 더 보기</Anchor>
 
+<div id="default-postbacks" />
+
 #### 기본 포스트백
 
 앱 **인스톨**에 대한 포스트백 발송 방법을 설정합니다. **거부된 인스톨** 및 **리인게이지먼트**의 경우 포스트백은 TikTok for Business에만 전송됩니다.
@@ -109,6 +121,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 >
 > * iOS 앱만 해당: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">리포트</Anchor>를 통해 파트너와 공유되는 데이터 제어는 **Advanced Privacy( iOS 14.5 이상)** [토글 상태](#advanced-privacy)에 따라 달라집니다.
 > * 기존 연동(`bytedanceglobal_int`)에서 마이그레이션하고 새로운 연동(`tiktokglobal_int`)을 활성화할 때, 마이그레이션 전 상태와 관계없이 포스트백 인스톨의 기본 선택 상태는 **이 파트너만**입니다.
+
+<div id="install-attribution" />
 
 #### 설치 어트리뷰션
 
@@ -134,6 +148,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 >     이 데이터는 GCD에서 사용할 수 없습니다. 집계 데이터 보고서에는 뷰-쓰루 전환이 계속 표시됩니다.
 > * 기존 연동 (`bytedanceglobal_int`)에서 새로운 연동 (`tiktokglobal_int`)으로 마이그레이션할 때, 이전 상태와 관계없이 룩백 윈도우 설정(클릭-쓰루 및 뷰-쓰루)이 **기본값**으로 재설정됩니다. 이러한 설정은 업데이트가 가능합니다.
 
+<div id="reinstall-attribution" />
+
 #### 리인스톨 어트리뷰션
 
 재설치 어트리뷰션을 통해 리어트리뷰션 윈도우 기간 내에 앱을 재설치한 사용자를 측정하고, 이들을 유효한 TikTok 클릭 및 노출 성과로 어트리뷰션할 수 있습니다.
@@ -146,6 +162,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 >
 > * 재설치를 위한 별도의 룩백 윈도우 설정은 필요하지 않습니다. 재설치 어트리뷰션은 기존 설치 어트리뷰션 설정과 동일한 클릭스루 및 뷰스루 활성화 상태와 룩백 윈도우 기준을 적용합니다.
 > * 이 기능을 활성화하면, 조건에 부합하는 재설치 포스트백이 TikTok으로 전송됩니다.
+
+<div id="re-engagement-attribution" />
 
 #### 리인게이지먼트 어트리뷰션
 
@@ -167,6 +185,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 
 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide#reengagement-rules-and-windows">리인게이지먼트 규칙 및 기간</Anchor>에 대해 자세히 알아보세요.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 리타겟팅을 위해 활성 사용자 무시
 
 앱을 실행한 사용자들의 리인게이지먼트 및 리어트리뷰션을 <Anchor target="_blank" href="/marketers/ko/docs/set-retargeting-inactivity-window#비활성-기간">무시할</Anchor> 시간대를 정하세요. 이는 지정된 시간대 동안의 사용자 활동이 앱스플라이어에 기록되지 않는다는 것을 의미합니다.
@@ -177,6 +197,8 @@ TikTok Ads Manager에서 생성된 고유 코드로, 앱의 소유자가 광고�
 
 1. 리타겟팅을 위해 **활동 중인 사용자 무시** 기능을 활성화하세요.
 2. 비활성 기간을 설정하세요.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -241,6 +263,8 @@ SRN은 자체 플랫폼에서 어트리뷰션을 수행합니다. Advanced SRN�
 
 6. **비용 저장**을 클릭하세요.
 
+<div id="for-roi360-subscribers" />
+
 #### ROI360 구독자용
 
 * 기존 `bydanceglobal_int` 통합과 현재 `tiktokglobal_int` 통합에서 모두 비용 API를 사용하도록 설정한 광고주와 에이전시에게 중복된 비용 데이터가 표시될 수 있습니다. 이를 방지하려면 `bytedanceglobal_int` 통합 > **비용** 탭으로 이동하여 토글을 끕니다.  
@@ -273,9 +297,13 @@ Pangle로부터 광고 수익 데이터를 가져오려면, Pangle (ad revenue) 
 
 </Accordion>
 
+<div id="deep-linking-with-tiktok-for-business" />
+
 ## TikTok for Business와 함께하는 딥링크
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/understanding-deeplinks-and-deferred-deeplinks?lang=en">TikTok은 딥링킹과 디퍼드 딥링크를 캠페인, 광고 그룹, 그리고 광고 생성 시 광고 수준에서 다양한 캠페인 목표에 대해 지원합니다.</Anchor> 사용자가 특정 콘텐츠로 이동할 수 있는 딥링크를 만들면, TikTok 광고에 대한 유저의 인게이지먼스에 따라 맞춤형 콘텐츠를 제공할 수 있습니다.
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
 
 ### AppsFlyer의 GCD API를 통해 딥링크를 위한 TikTok 전환 데이터 액세스
 
@@ -284,6 +312,8 @@ Pangle로부터 광고 수익 데이터를 가져오려면, Pangle (ad revenue) 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">**통합 딥링크(UDL)**</Anchor>: TikTok 클릭에는 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#deep_link_value">deep\_link\_value</Anchor> 필드가 포함되어 있으며(광고에 딥 링크가 설정된 경우), UDL 솔루션에서 지원됩니다.
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#recommended-implement-extended-deferred-deep-linking">**GCD(전환 데이터 가져오기) API**</Anchor>: 이는 SDK 수준에서 TikTok 사용자 전환 데이터를 실시간으로 액세스할 수 있는 권장 옵션입니다. GCD API에서 반환되는 데이터에는 실제 딥 링크 목적지(앱 내 사용자 목적지)를 담고 있는 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#af_dp">`af_dp`</Anchor> 파라미터가 포함되어 있습니다.
 * **전환 데이터 파라미터 사용:** 캠페인 이름, 광고 세트 이름 또는 TikTok 인스톨에 대한 어트리뷰션 데이터의 일부로 반환되는 다른 필드와 같은 다른 파라미터를 사용하여 사용자가 귀사의 콘텐츠로 이동할 수 있는 커스텀 로직을 생성할 수 있습니다.
+
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
 
 ## 웹-투-앱: 비앱 캠페인의 앱 액티비티 측정
 
@@ -298,9 +328,13 @@ TikTok Ads Manager에서 아래 단계를 진행하면, TikTok 논앱 캠페인�
 3. **저장**을 클릭하세요.
 4. 이 단계들은 캠페인 내의 모든 관련 광고에 적용됩니다.
 
+<div id="set-up-tiktok-for-business-for-agencies" />
+
 ## 에이전시를 위한 TikTok for Business 설정하기
 
 광고주를 대신하여 일하는 에이전시는 TikTok for Business 통합을 켜고 캠페인에 대한 어트리뷰션을 받을 수 있습니다. 그러나 이 통합에는 에이전시와 관련하여 몇 가지 제한 사항이 있습니다.
+
+<div id="agency-limitations" />
 
 ### 에이전시 제한 사항
 
@@ -324,11 +358,15 @@ TikTok Ads Manager에서 아래 단계를 진행하면, TikTok 논앱 캠페인�
 >
 > TikTok for Business 계정 ID는 광고주 또는 에이전시 간에 공유해서는 안 됩니다. 공유된 경우 모든 광고주의 인스톨이 에이전시의 대시보드에 자동으로 어트리뷰션됩니다.
 
+<div id="smart-plus-campaigns-reporting" />
+
 ## Smart Plus 캠페인 리포트
 
 Smart Plus는 단일 광고 소재 단위에서 다수의 크리에이티브를 검증할 수 있는 신규 TikTok 캠페인 타입이며, 자동 크리에이티브 테스팅을 거쳐 광고 성과를 극대화할 수 있도록 지원합니다.
 
 <Anchor target="_blank" href="https://ads.tiktok.com/help/article/about-smart-plus-campaign?lang=en">Smart Plus 캠페인에 대해 더 알아보기</Anchor>
+
+<div id="how-smart-plus-campaigns-are-structured" />
 
 ### Smart Plus 캠페인은 어떻게 구성되나요?
 
@@ -338,6 +376,8 @@ Smart Plus는 단일 광고 소재 단위에서 다수의 크리에이티브를 
 2. 광고 세트
 3. 광고
 4. 크리에이티브
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
 
 ### Smart Plus 데이터가 앱스플라이어에 리포트되는 방식
 

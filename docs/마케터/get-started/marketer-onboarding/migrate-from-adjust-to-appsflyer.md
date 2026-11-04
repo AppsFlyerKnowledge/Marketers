@@ -23,13 +23,19 @@ x-zendesk:
 
 <Image alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
 
+<div id="about-migrating-to-appsflyer" />
+
 ## 앱스플라이어로 마이그레이션
 
 Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 마케팅 애널리틱스를 위한 신뢰할 수 있고 포괄적인 플랫폼으로의 원활한 전환을 제공합니다. 앱스플라이어는 브랜드가 업계 변화에 대처할 수 있도록 설계된 고급 툴 세트와 함께 안전하고 공정한 솔루션을 제공합니다. 글로벌 고객 지원과 지속적인 제품 개선에 중점을 두고 있는 앱스플라이어는 기업이 성장하고 적응하는 데 필요한 툴과 인사이트를 갖추도록 지원하는 것을 목표로 합니다.
 
+<div id="compare-measurement-between-appsflyer-and-adjust" />
+
 #### 앱스플라이어와 애드저스트 간의 측정 비교
 
 마이그레이션을 고려할 때, 동일한 미디어 소스 및 캠페인 전체에서 앱스플라이어와 Adjust의 어트리뷰션 측정 방식을 비교해 보고 싶을 수 있습니다. 하지만 모든 미디어 소스가 둘 이상의 MMP를 통한 측정을 지원하는 것은 아닙니다. 복수 측정을 지원하는 미디어 소스라 하더라도 어트리뷰션 데이터 불일치를 방지하기 위해 특정 제한 사항이나 까다로운 조건이 존재할 수 있습니다. <Anchor target="_blank" href="/marketers/ko/docs/measuring-attribution-with-multiple-mmps">여러 MMP의 어트리뷰션 측정</Anchor>에서 자세한 내용을 살펴보세요.
+
+<div id="tasks" />
 
 ## 작업
 
@@ -42,6 +48,8 @@ Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 
 
 <table><thead><tr><th>단계</th><th>담당자</th><th>예상 시간</th><th>비고</th></tr></thead><tbody><tr><td>1. 앱스플라이어 계정 만들기</td><td>마케터/앱스플라이어 대시보드 사용자</td><td>2시간</td><td> </td></tr><tr><td>2. 앱스플라이어에 앱 추가</td><td>마케터/앱스플라이어 대시보드 사용자</td><td>2시간</td><td> </td></tr><tr><td>3. SDK 연동</td><td>앱 개발자</td><td>1일 + 테스트 및 반복 1주일</td><td><ul><li> <strong>권장 사항</strong>: 테스트를 위해 사전 프로덕션 앱에 앱스플라이어 SDK를 연동하십시오.</li><li>다른 모든 과제가 완료된 후에 앱 스토어에서 프로덕션 앱을 업데이트해야 합니다.</li></ul></td></tr><tr><td>4. 디바이스 마이그레이션(선택 사항)</td><td>데이터 엔지니어</td><td>1&#126;2주</td><td rowspan="2"><ul><li>마이그레이션 전에 기존 캠페인을 일시 중지하고, 앱 버전이 업데이트된 후에 캠페인을 재개하는 것을 고려하세요. </li><li>완전한 적용 범위를 보장하기 위해 최종 마이그레이션 날짜에 디바이스 마이그레이션을 반복하세요. </li></ul></td></tr><tr><td>5. 캠페인 마이그레이션</td><td>마케터/UA 관리자</td><td>각 미디어 소스마다 1-3일</td></tr><tr><td>6. 데이터 리포팅 설정</td><td>데이터 엔지니어</td><td>3&#126;6주</td><td> </td></tr></tbody></table>
 
+<div id="step-1-create-an-appsflyer-account" />
+
 <Accordion title="1단계: 앱스플라이어 계정 만들기">
 
 **앱스플라이어 계정 만들기**:
@@ -50,6 +58,8 @@ Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 
 2. <Anchor target="_blank" href="/marketers/ko/docs/user-management">적합한 권한이 있는 계정 사용자 추가</Anchor>
 
 </Accordion>
+
+<div id="step-2-add-your-app" />
 
 <Accordion title="2단계: 앱 추가">
 
@@ -60,6 +70,8 @@ Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 
 3. 앱스플라이어 앱 온보딩 위저드의 일환으로, SDK 연동 및 인앱 이벤트 매핑을 위한 가이드와 타스크를 담당 개발자에게 이메일로 작성하여 발송하세요.
 
 </Accordion>
+
+<div id="step-3-integrate-the-sdk" />
 
 <Accordion title="3단계: SDK 연동">
 
@@ -89,11 +101,15 @@ Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 
 
 </Accordion>
 
+<div id="step-4-migrate-devices-optional" />
+
 <Accordion title="4단계: 디바이스 마이그레이션 — 선택사항">
 
 디바이스 마이그레이션은 기존 사용자 디바이스 ID(IDFA, IDFV, GAID, CUID)의 목록을 앱스플라이어로 업로드하는 프로세스입니다. (필요한 모든 디바이스 ID를 보유하고 있지 않은 경우, CUID를 사용하여 마이그레이션 프로세스를 진행할 수 있도록 지원하는 귀하의 CSM에게 연락할 수 있습니다.) 앱스플라이어 SDK가 포함될 새 앱 버전을 마켓에 출시하기 전에 이 프로세스를 수행해야 합니다. 디바이스를 마이그레이션할 때 [어트리뷰션 마이그레이션](/docs/migrate-from-adjust-to-appsflyer#attributed-migration)과 [비어트리뷰션 마이그레이션](/docs/migrate-from-adjust-to-appsflyer#nonattributed-migration)의 두 가지 옵션이 있습니다.
 
 디바이스 마이그레이션은 이전에 앱을 다운로드하고 Adjust에 의해 기여가 인정된 기존 앱 사용자들과 관련된 데이터 문제를 해결해 줍니다. 를 들어, 원래 Adjust에서 SRN의 성과로 인정되었던 사용자가 아직 룩백 윈도우 기간 내에 있는 상태에서, 앱스플라이어 하에 해당 SRN에 의해 다시 한번 성과로 주장될 때 발생하는 'SRN 중복 과금' 문제가 이에 해당합니다.
+
+<div id="example" />
 
 > 📄 **예시**
 >
@@ -108,6 +124,8 @@ Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 
 * **리타겟팅:** 리어트리뷰션과 리인게이지먼트는 정상적으로 표시됩니다.
 * **액티비티 데이터:** 정상적으로 표시됩니다.
 * **리텐션 및 코호트 데이터:** 마이그레이션된 디바이스는 설치 기록이 없습니다. 따라서 이러한 디바이스는 어떠한 코호트 그룹과도 연결되지 않으며, 코호트 및 잔존율 리포트에 표시될 수 없습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
@@ -125,6 +143,8 @@ Adjust에서 앱스플라이어로의 마이그레이션은 어트리뷰션 및 
 
 </Accordion>
 
+<div id="step-5-migrate-campaigns" />
+
 <Accordion title="5단계: 캠페인 마이그레이션">
 
 기존 마케팅 캠페인을 앱스플라이어로 전환하여 앱스플라이어 어트리뷰션을 활성화하고, 비용이 중복 청구되거나 어트리뷰션 데이터가 누락되는 것을 방지하세요.
@@ -141,10 +161,14 @@ SRN은 MMP(Mobile Measurement Partner)가 특정 디바이스의 인게이지먼
 
 * 앱스플라이어에서 관련 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns#앱스플라이어와-통합된-srn">SRN</Anchor>을 활성화하고 설정하세요.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > * SRN은 여러 MMP를 실행할 수 있습니다(메타 광고 및 트위터 제외).
 > * Meta 광고는 인앱 이벤트의 중복을 제거할 수 없습니다.
+
+<div id="non-srn-ad-networks" />
 
 #### 비-SRN 애드 네트워크
 
@@ -155,6 +179,8 @@ SRN은 MMP(Mobile Measurement Partner)가 특정 디바이스의 인게이지먼
 1. 앱스플라이어에서 관련 광고 네트워크를 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner">활성화</Anchor>하세요.
 2. 각 광고 네트워크에 대해 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">앱스플라이어 어트리뷰션 링크를 생성</Anchor>합니다.
 3. 각 캠페인의 기존 링크를 앱스플라이어 어트리뷰션 링크로 전환합니다.
+
+<div id="owned-media" />
 
 #### 온드 미디어
 
@@ -183,6 +209,8 @@ SKAdNetwork(SKAN) 어트리뷰션의 경우, 변환 값은 SDK 하나만 업데�
 
 </Accordion>
 
+<div id="step-6-set-up-data-reporting" />
+
 <Accordion title="6단계: 데이터 리포팅 설정">
 
 여러 가지 방법을 사용하여 앱스플라이어에서 <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-apis">로우</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/analytics-and-aggregate-reporting-apis">집약형</Anchor> 보고 데이터를 가져올 수 있습니다. 방법을 숙지하고 관련된 사용자와 관련된 방법을 설정하세요.
@@ -203,11 +231,17 @@ SKAdNetwork(SKAN) 어트리뷰션의 경우, 변환 값은 SDK 하나만 업데�
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
+
+<div id="attributed-migration" />
 
 <Accordion title="어트리뷰션된 마이그레이션">
 
 이 방법으로 앱스플라이어에 마이그레이션된 디바이스는 이전 어트리뷰션 벤더가 리포팅한 미디어 소스 및 해당 애드 네트워크의 데이터 보유 정책에 따라 인앱 이벤트와 세션이 기록되고 표시됩니다.
+
+<div id="attributed-device-migration-csv-structure" />
 
 #### 어트리뷰트된 디바이스 마이그레이션 CSV 구조
 
@@ -240,9 +274,13 @@ SKAdNetwork(SKAN) 어트리뷰션의 경우, 변환 값은 SDK 하나만 업데�
 
 </Accordion>
 
+<div id="nonattributed-migration" />
+
 <Accordion title="어트리뷰션 되지 않은 마이그레이션">
 
 이 방법을 통해 앱스플라이어에 마이그레이션된 디바이스는 오가닉 사용자로 기록됩니다(그러나 표시되지는 않습니다). 이들의 인앱 이벤트와 세션도 또한 오가닉으로 기록되고 표시됩니다.
+
+<div id="non-attributed-device-migration-csv-file-structure" />
 
 #### 어트리뷰션되지 않은 디바이스 마이그레이션 CSV 파일 구조
 

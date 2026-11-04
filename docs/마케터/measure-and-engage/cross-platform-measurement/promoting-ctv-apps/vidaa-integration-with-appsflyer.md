@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **요약:** Vidaa 커넥티드 TV(CTV) 앱을 앱스플라이어와 연동하여 Vidaa 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 수신할 수 있습니다.
 
+<div id="about-vidaa-ctv-attribution" />
+
 ## Vidaa CTV 어트리뷰션 정보
 
 스트리밍용 Vidaa OS는 모든 Vidaa TV에서 실행됩니다.
@@ -32,6 +34,8 @@ Vidaa API 연동은 다음을 지원합니다.
 
 * Vidaa 스마트 TV.
 * CTV-투-CTV 어트리뷰션 및 이벤트 기록. 즉, 사용자의 Vidaa 기기에 대한 어트리뷰션 및 기록.
+
+<div id="integration-procedures" />
 
 ## 연동 절차
 
@@ -55,6 +59,8 @@ Vidaa API 연동은 다음을 지원합니다.
 | 비용 데이터 | 비용 데이터는 이메일 방식으로 파일 업로드를 사용하여 <Anchor target="_blank" href="/marketers/ko/docs/import-cost-data">비용 가져오기</Anchor>를 통해 전송해야 합니다. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

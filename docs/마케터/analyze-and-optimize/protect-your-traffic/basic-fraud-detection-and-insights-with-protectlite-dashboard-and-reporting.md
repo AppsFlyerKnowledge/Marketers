@@ -38,6 +38,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 * Protect360 인스톨 리포트에서 데이터 내보내기 페이지 및 Pull API를 통해 사용할 수 있습니다.
 
+<div id="dashboard" />
+
 ## 대시보드
 
 **ProtectLITE 대시보드를 보려면 앱스플라이어에서** Protect360으로 이동하십시오.
@@ -87,6 +89,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 예상 절감액 및 확인된 설치 KPI의 경우 백분율 값이 있습니다. 이 값은 제시된 KPI가 이전 기간의 병렬 날짜 범위와 어떻게 비교되는지를 나타냅니다. 예를 들어, 지난 주에 비해 이번 주 또는 이전과 같은 기간과 비교하여 날짜 범위에서 선택한 요일: 예상 절감액이 X% 증가하면 이전 병렬 날짜 범위에서 사기 인스톨 횟수가 X% 감소했음을 의미합니다.
 
+<div id="estimated-savings" />
+
 #### 예상 절약액 (Estimated Savings)
 
 [![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
@@ -99,11 +103,15 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 이 합계가 계산되는 방식에 대한 더 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>에서 확인하세요.
 
+<div id="identified-installs" />
+
 #### 식별된 인스톨
 
 [![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
 
 식별된 인스톨 지표는 ProtectLITE 및 유효성 검증 규칙에 의해 실시간으로 식별 및 차단된 인스톨 수를 표시합니다.
+
+<div id="suspected-overall-fraud-threat" />
 
 #### 의심스러운 전체 Fraud 위협
 
@@ -120,6 +128,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 <Accordion title="인스톨—차트">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### 시간 경과에 따른 프로드 경향 차트
 
 이 차트는 날짜 필터에서 선택한 기간 동안 ProtectLITE 및 유효성 검증 규칙에 의해 차단된 일별 인스톨 수를 표시합니다.
@@ -129,6 +139,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 <div id="installs-table" />
 
 <Accordion title="인스톨—표">
+
+<div id="identified-fraud-breakdown" />
 
 #### 프로드 상세
 
@@ -147,6 +159,8 @@ CSV 형식으로 테이블을 데스크톱에 다운로드하려면 **CSV 내보
 * 열 설정에서 열 섹션을 끌어 열 순서를 변경합니다.
 
 [![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### 식별된 프로드 쪼개보기 표 내용
 

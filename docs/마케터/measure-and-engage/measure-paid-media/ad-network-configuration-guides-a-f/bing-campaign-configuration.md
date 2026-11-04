@@ -24,6 +24,10 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="note-1" />
+
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > 스냅챗은 어트리뷰션 파트너에게 사용자 앱 설치 이후 12개월이 지나면, 사용자 레벨 데이터를 삭제하도록 요구합니다. 즉, 사용자가 앱을 설치한 후 12개월 이후에 수행한 이벤트는 오가닉으로 집계됩니다. 과거 종합 데이터는 동일하게 유지됩니다.
@@ -45,10 +49,14 @@ x-zendesk:
 
 <Accordion title="연동 탭">
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 여기서 **첫 번째 방문**에서 연동 탭의 파라미터 설정을 사용 가능하게 하려면 ***파트너 활성화*** 버튼을 켜야 합니다. 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다.  
 파트너 활성화에 대한 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
+
+<div id="default-postbacks" />
 
 #### 기본 포스트백
 

@@ -24,13 +24,15 @@ x-zendesk:
 > **한눈에 보기:** 요약: 재무 및 뱅킹 앱에 대해 제안된 인앱 이벤트를 기록하여 사용자 여정 내내 사용자의 특성을 측정합니다.
 
 
-<span id="finance-and-banking"></span>금융 및 은행 앱은 사용자에게 새로운 신용카드 가입이나 대출 신청과 같은 광범위한 재무 관련 목표를 수행할 수 있는 기능을 제공합니다. 기록을 제안하는 대표적인 이벤트로는 계좌 개설, 신용카드 신청, 대출 신청 등이 있습니다.
+<span id="-finance-and-banking"></span><span id="finance-and-banking"></span>금융 및 은행 앱은 사용자에게 새로운 신용카드 가입이나 대출 신청과 같은 광범위한 재무 관련 목표를 수행할 수 있는 기능을 제공합니다. 기록을 제안하는 대표적인 이벤트로는 계좌 개설, 신용카드 신청, 대출 신청 등이 있습니다.
 
 이런 이벤트 기록에 의해 다음을 확인할 수 있습니다.
 
 * 사용자가 가장 원하며 리타게팅 아이디어를 제공하는 계정 유형
 * 사용자가 신용카드로 찾아보는 이점
 * 사용자가 재무 지원이 필요한 항목 및 원하는 지원 수준
+
+<div id="important" />
 
 > 🚧 **중요!**
 >
@@ -43,6 +45,8 @@ x-zendesk:
 > 인앱 이벤트 기록에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/in-app-events-overview">인앱 이벤트 가이드를</Anchor> 참조하십시오.
 
 [![Flowchart_for_recommended_events finance_banking_app_user_journey](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## 사전 정의된 이벤트에 권장되는 구조
 
@@ -85,6 +89,8 @@ x-zendesk:
 | af\_registration\_method | 가입 방법의 유형 | 이메일, 페이스북 |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## 사용자 지정 이벤트에 대한 권장 구조
 

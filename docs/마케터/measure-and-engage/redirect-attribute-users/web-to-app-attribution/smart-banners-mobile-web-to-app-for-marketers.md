@@ -31,9 +31,13 @@ x-zendesk:
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 2023년 11월 8일 기준, 앱스플라이어 스마트 배너 웹 SDK v1은 지원이 종료되었습니다. 웹사이트에 스마트 배너를 표시하기 위해 v2로 업그레이드해야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">더 알아보기.</Anchor>
+
+<div id="smart-banners" />
 
 ## 스마트 배너
 
@@ -87,6 +91,8 @@ x-zendesk:
 
 ---
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > 마크는 성공적인 음식 배달 서비스 ‘Feed Me’에서 일하는 마케터입니다.
@@ -99,9 +105,13 @@ x-zendesk:
 >
 > 그런 다음 앱스플라이어는 **클릭/설치를 마크가 정의한 미디어소스 및 캠페인에 어트리뷰션**합니다.
 
+<div id="important" />
+
 > 🚧 **중요!**
 >
 > 앱스플라이어 스마트 배너 또는 iOS 사파리 스마트 앱 배너 중 하나를 사용하되, 둘 다 사용할 수는 없습니다. 두 가지를 모두 사용하면 모바일 웹사이트에 표시 문제가 발생하고 어트리뷰션 불일치가 발생할 수 있습니다.
+
+<div id="setup" />
 
 ## 설정
 
@@ -113,6 +123,8 @@ x-zendesk:
 <div id="1-website-workplace-setup" />
 
 <Accordion title="1. 웹사이트 작업 공간 설정">
+
+<div id="prepare-your-mobile-site-to-display-smart-banners-for-the-first-time" />
 
 #### 모바일 사이트에 스마트 배너 최초 게재 준비하기
 
@@ -126,6 +138,8 @@ x-zendesk:
    * 다른 플랫폼을 통해 코드를 추가하거나 필요에 따라 코드를 변경하려면(매개변수 추가, 딥 링크, 배너 숨기기 또는 PBA와 스마트 배너 통합 포함) <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">개발자를 위한 스마트 배너 웹 사이트 코드 구현을</Anchor> 참조하세요.
 7. [선택 사항] **웹 키를** 복사합니다. (이 키는 코드 조각의 일부로 이미 존재합니다.)
 8. **계속**을 클릭합니다.
+
+<div id="to-create-website-workplaces-after-the-first-time" />
 
 #### 웹사이트 워크플레이스 최초 생성하기
 
@@ -186,6 +200,8 @@ x-zendesk:
 9. [권장] 기본 어트리뷰션 파라미터 **채널 이름**을 설정하여 스마트 배너에서 발생하는 모든 설치를 지정된 채널로 어트리뷰션합니다. 이렇게 함으로써 여러 미디어 소스의 정보가 같은 채널에서 집계되어 **코호트 리포트**, **개요 대시보드**, **리텐션 리포트** 등의 형태로 나타납니다.
 10. <span id="2-banner-group-setup-step10"></span>[선택 사항] 배너 그룹을 사용하여 유저가 배너를 클릭했을 때 집계된 리인게이지먼트를 기록하려면 **리타겟팅**을 설정하세요. 리타겟팅에 대해 자세히 알아보려면 리타게팅 어트리뷰션 가이드를 참조하십시오.
 
+    <div id="important-1" />
+
     > 🚧 **중요**
     >
     > 리타겟팅이 작동되려면 다음을 수행해야 합니다:
@@ -225,6 +241,8 @@ x-zendesk:
 19. **배너 그룹 생성**을 클릭합니다.
 20. [선택 사항] 배너 그룹을 다시 수정하려면 **타게팅 및 동작** 위에 커서를 가져가 **편집**을 클릭합니다.
 
+<div id="example-1" />
+
 > 📄 **예시**
 >
 > 마크는 'Feed Me’라는 음식 배달 서비스의 마케터입니다. 그는 앱에서 자두 판매를 위한 캠페인을 만들기로 결정합니다. 마크는 캠페인에 SMS뿐만 아니라 광고 네트워크와 구글을 사용하기로 결정했습니다.
@@ -246,6 +264,8 @@ x-zendesk:
 > * Feed Me 앱으로 이동하여 다운로드하고 설치합니다.
 > * 앱 실행 시 자두 세일로 바로 연결됩니다.
 > * Feed Me 모바일 사이트로 유도한 올바른 미디어 소스에 기인합니다.
+
+<div id="targeting--behavior" />
 
 #### 타게팅 및 행동
 
@@ -298,6 +318,8 @@ x-zendesk:
 5. 새 크리에이티브를 완성하고 저장하면 배너의 상태가 활성화됩니다. **상태** 토글을 사용하여 **활성 상태** 및 **일시 정지** 상태를 전환합니다.
 6. **모두 저장**을 클릭하여 작업을 저장하거나 **모두 저장 후 닫기**를 클릭하여 작업을 저장하고 배너 설정 페이지를 닫습니다.
 
+<div id="example-2" />
+
 > 📄 **예시**
 >
 > 팁과 요령은 <Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">스마트 배너 치트 시트</Anchor>를 참조하세요.
@@ -320,6 +342,8 @@ x-zendesk:
 4. 크리에이티브 **편집을** 클릭하여 크리에이티브 구성으로 돌아가거나 **완료**를 클릭하여 크리에이티브를 저장합니다.
 
 </Accordion>
+
+<div id="view-banner-performance" />
 
 ## 배너 성과 보기
 
@@ -372,6 +396,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="banner-group-display-logic" />
@@ -400,6 +426,8 @@ x-zendesk:
 실적 대시보드에서 배너의 실적을 비교하여 배너를 A/B 테스트할 수 있습니다. 추가 어트리뷰션 관련 데이터는 `af_adset`, `af_ad` 또는 기타 어트리뷰션 파라미터( `pid`, `c`, `channel` 제외)를 각 배너 크리에이티브 또는 배너 그룹에 고유 값으로 추가하는 것을 권장합니다. 앱스플라이어 대시보드 및 보고서에서 데이터를 볼 때 이러한 매개변수를 사용하여 각 배너 그룹의 성과를 비교할 수 있습니다.
 
 </Accordion>
+
+<div id="faq" />
 
 ## 자주 묻는 질문(FAQ)
 
@@ -495,6 +523,8 @@ x-zendesk:
 아니요. 스마트 배너가 삭제되더라도 귀속 데이터는 삭제되지 않습니다.
 
 </Accordion>
+
+<div id="troubleshooting--traits-and-limitations" />
 
 ## 문제 해결 & 특성 및 제한 사항
 

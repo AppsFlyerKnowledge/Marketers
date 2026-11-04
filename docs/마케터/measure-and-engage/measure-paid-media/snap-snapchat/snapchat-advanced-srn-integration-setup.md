@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## 개요
 
 고급 SRN 연동은 모든 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">양자 동의된</Anchor> 트래픽이 일반 SRN 트래픽으로 어트리뷰션되고 리포팅된다는 것을 의미합니다. 동의하지 않은 트래픽의 경우 앱스플라이어는 개인정보 보호 제한에 따라 <Anchor target="_blank" href="/marketers/ko/docs/self-reporting-networks-srns#고급-srn의-어트리뷰션은-어떻게-작동합니까">다른 어트리뷰션 방법</Anchor>을 사용하여 스냅챗에서 발생하는 클릭 및 노출을 기반으로 어트리뷰션을 지정하고 측정할 수 있습니다.
+
+<div id="set-up-snapchat-integration" />
 
 ## 스냅챗 연동 설정
 
@@ -60,6 +64,8 @@ x-zendesk:
 
 연동은 클릭 및 노출 어트리뷰션, 비용, 광고 수익 및 잠재고객을 지원합니다.
 
+<div id="activate-partner" />
+
 #### 파트너 활성화
 
 **처음 방문** 시 설정을 활성화하려면 **파트너 활성화**를 켜야 합니다.  
@@ -70,6 +76,8 @@ x-zendesk:
 **파트너 활성화**를 활성화하여 스냅챗에 대한 어트리뷰션을 허용합니다.
 
 ![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+
+<div id="general-settings" />
 
 #### 일반 설정
 
@@ -86,6 +94,8 @@ x-zendesk:
 * 에이전시가 스냅챗 광고 플랫폼에서 귀하와 동일한 조직에 속해 있는 경우 하나의 Snap 앱 ID만 사용하십시오.
 * 에이전시가 스냅챗 광고 플랫폼의 다른 조직에 속해 있는 경우 에이전시에 이 앱에 대한 Snap 앱 ID를 제공하도록 요청하고 이 필드에 입력하십시오. 여러 ID를 입력할 수 있습니다. 각 ID를 입력한 다음에 Enter 키를 누릅니다.
 
+<div id="install-attribution" />
+
 #### 인스톨 어트리뷰션
 
 광고를 본, 클릭한 또는 귀사의 광고에 참여한 사용자의 새로운 인스톨(첫 실행)을 어트리뷰션하기 위해 다양한 어트리뷰션 기간을 설정하세요. 룩백 윈도우 내의 인스톨만 스냅챗에 어트리뷰션될 수 있습니다.
@@ -101,6 +111,8 @@ x-zendesk:
 2. [선택 사항] **설치 뷰-쓰루(view-through) 어트리뷰션**을 켜고 룩백 기간을 설정합니다:
    * **뷰-쓰루 룩백 윈도우 설치를** 1-24시간 사이로 설정합니다. **참고:** 스냅챗에서는 설치 뷰-쓰루 룩백 윈도우를 1일로 설정하여 조정할 것을 권장합니다.
 
+<div id="re-engagement-attribution" />
+
 #### 리인게이지먼트 어트리뷰션
 
 귀사의 기존 사용자의 리인게이지먼트를 어트리뷰션하기 위해 광고를 보거나 클릭 또는 인게이지먼트한 사용자들에 대해 다양한 어트리뷰션 기간을 설정하세요. 룩백 윈도우 내의 리인게이지먼트만 스냅챗에 어트리뷰션될 수 있습니다.
@@ -115,6 +127,8 @@ x-zendesk:
    * **리인게이지먼트 뷰-쓰루 룩백 윈도우**는 1&#126;24시간입니다. **참고:** 스냅챗 추천에 따라 리인게이지먼트 뷰-쓰루 룩백 윈도우를 1일로 설정하세요.
 3. **리인게이지먼트 기간**을 1-23시간, 1-90일, 또는 **생애** 중에서 설정하세요.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### 리타겟팅 대상으로 활성 유저 무시
 
 앱을 실행한 사용자들의 리인게이지먼트 및 리-어트리뷰션을 <Anchor target="_blank" href="/marketers/ko/docs/set-retargeting-inactivity-window#비활성-기간">무시할</Anchor> 시간대를 정하세요. 이는 지정된 시간대 동안의 사용자 활동이 앱스플라이어에 기록되지 않는다는 것을 의미합니다.
@@ -125,6 +139,8 @@ x-zendesk:
 
 1. 리타겟팅을 위해 **활동 중인 사용자 무시** 기능을 활성화하세요.
 2. 비활성 기간을 설정하세요.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -225,7 +241,11 @@ x-zendesk:
 
 </Accordion>
 
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
 ## 웹에서 앱으로: 비앱 캠페인의 앱 액티비티 측정
+
+<div id="deep-linking-with-snapchat" />
 
 ## 스냅챗을 통한 딥링킹
 
@@ -245,12 +265,16 @@ x-zendesk:
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### Snap 플랫폼에서 딥링크를 설정하는 방법은 무엇입니까?
 
 1. **앱 기회 유형으로 트래픽 유도**로 이동합니다.
 2. 딥링크 URI를 추가합니다.  
      
    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### 스냅챗을 통한 디퍼드 딥링킹
 
@@ -262,9 +286,13 @@ x-zendesk:
 
 광고주를 대신하여 일하는 대행사는 Snapchat 통합을 켜고 캠페인에 대한 어트리뷰션을 시작할 수 있습니다. 그러나 이 통합에는 에이전시와 관련하여 몇 가지 제한 사항이 있습니다.
 
+<div id="set-up-snapchat-for-agencies" />
+
 ## 에이전시를 위한 스냅챗 설정하기
 
 광고주를 대신하여 일하는 대행사는 Snapchat 통합을 켜고 캠페인에 대한 어트리뷰션을 시작할 수 있습니다. 그러나 이 통합에는 대행사와 관련하여 몇 가지 제한 사항이 있습니다.
+
+<div id="agency-limitations" />
 
 ### 에이전시 제한 사항
 
@@ -286,6 +314,8 @@ x-zendesk:
 >
 > 스냅챗 계정 ID는 광고주 또는 에이전시 간에 공유되어서는 안 됩니다. 공유된 경우 모든 광고주의 설치가 에이전시의 대시보드에 자동으로 어트리뷰션됩니다. 공유된 경우 모든 광고주의 설치가 에이전시의 대시보드에 자동으로 어트리뷰션됩니다.
 
+<div id="raw-data-restrictions" />
+
 ## 로데이터 제한
 
 * 2023년 3월 1일부터 스냅챗 제거는 로데이터 리포트에 포함되지 않습니다.
@@ -295,6 +325,8 @@ x-zendesk:
   * 어트리뷰트 터치 유형(노출)
   * 어트리뷰트 터치 시간(날짜로만 리포트됨 - "dd/mm/yyyy")
   * 캠페인은 "제한됨"으로 보고됩니다.
+
+<div id="snapchat-data-retention" />
 
 ## 스냅챗 데이터 보관
 

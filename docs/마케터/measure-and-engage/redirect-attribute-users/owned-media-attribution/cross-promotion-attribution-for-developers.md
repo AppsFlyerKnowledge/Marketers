@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="implementing-cross-promotion-attribution-in-the-sdk" />
+
 ## SDK에서 크로스 프로모션 어트리뷰션 구현
 
 > 📘 **참고**
@@ -40,7 +42,7 @@ API 메서드에 넘겨주는 표준 매개변수들은  <Anchor target="_blank
 크로스 프로모션한 앱이 처음 실행되면, 모든 매개변수를 SDK의 conversion data API를 통해 확인할 수 있습니다. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-android">안드로이드</Anchor>, <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/conversion-data-ios">iOS</Anchor> conversion data API 확인하기
 
 
-<span id="attribute-crosspromotion-clicks"></span>다음 코드를 이용하여 클릭을 어트리뷰션하고 앱스토어의 앱 페이지를 실행하십시오. 이 코드는 어트리뷰션 링크를 생성하고 생성된 어트리뷰션 링크에 디바이스 광고 ID를 추가합니다.
+<span id="attribute-cross-promotion-clicks"></span><span id="attribute-crosspromotion-clicks"></span>다음 코드를 이용하여 클릭을 어트리뷰션하고 앱스토어의 앱 페이지를 실행하십시오. 이 코드는 어트리뷰션 링크를 생성하고 생성된 어트리뷰션 링크에 디바이스 광고 ID를 추가합니다.
 
 <Tabs>
 <Tab title="안드로이드">
@@ -142,7 +144,7 @@ AppsFlyer.attributeAndOpenStore("123456789","test campaign",parameters);
 > 이 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#어트리뷰션-링크-파라미터">어트리뷰션 링크 매개변수</Anchor> 중 아무 매개변수나 생성된 링크에 추가할 수 있습니다.
 
 
-<span id="attribute-crosspromotion-impressions"></span>크로스 프로모션 노출 어트리뷰션은 다음 API 호출을 사용합니다. 크로스 프로모션 대상 앱 ID가 앱스플라이어 대시보드에 나타납니다. 그러므로 꼭 프로모션할 앱의 ID를 사용하십시오.
+<span id="attribute-cross-promotion-impressions"></span><span id="attribute-crosspromotion-impressions"></span>크로스 프로모션 노출 어트리뷰션은 다음 API 호출을 사용합니다. 크로스 프로모션 대상 앱 ID가 앱스플라이어 대시보드에 나타납니다. 그러므로 꼭 프로모션할 앱의 ID를 사용하십시오.
 
 <Tabs>
 <Tab title="Java">
@@ -214,6 +216,8 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 
 </Tab>
 </Tabs>
+
+<div id="attribute-cross-promotion-with-non-native-platforms" />
 
 ### 안드로이드, iOS, 유니티 외 Non-native 플랫폼에서 크로스 프로모션 어트리뷰션하기
 

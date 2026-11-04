@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹 어트리뷰션 설정을 구성하여 앱스플라이어가 웹사이트 방문, 전환, 사용자 활동을 마케팅 캠페인에 기여하는 방식을 제어하세요. 설정 항목에는 어트리뷰션 윈도우, 사용자 획득 이벤트, 리인게이지먼트 규칙, 도메인 제외가 포함됩니다.
 
+<div id="overview" />
+
 ## 개요
 
 웹 어트리뷰션 설정은 앱스플라이어가 웹사이트 내 사용자 활동을 측정하고 기여도를 산정하는 방식을 정의합니다. 이러한 설정은 다음 항목들을 결정합니다.
@@ -31,9 +33,13 @@ x-zendesk:
 * 사용자를 복귀(리인게이지먼트) 또는 재획득으로 간주하는 시점.
 * 어트리뷰션에서 제외할 도메인.
 
+<div id="who-should-configure-these-settings" />
+
 ### 해당 설정을 구성해야 하는 담당자
 
 일반적으로 마케팅 팀과 그로스 매니저가 비즈니스 목표에 따라 이러한 설정을 구성합니다. SDK 연동 및 도메인 설정을 위해 기술 팀이 관여할 수 있습니다.
+
+<div id="accessing-web-attribution-settings" />
 
 ### 웹 어트리뷰션 설정 접근
 
@@ -42,6 +48,8 @@ x-zendesk:
 1. 앱스플라이어에서 **My Apps**로 이동
 2. 목록에서 웹 앱 선택
 3. **앱 설정** > **어트리뷰션**으로 이동
+
+<div id="quick-reference" />
 
 ## 빠른 참조
 
@@ -64,6 +72,8 @@ x-zendesk:
 **제약 조건:**  
 리인게이지먼트 비활성 윈도우는 재획득 비활성 윈도우보다 **짧거나 같아야** 합니다. 그렇지 않으면 사용자가 리타게팅 대상 자격을 갖추기 전에 재획득될 수 있습니다.
 
+<div id="basic-settings" />
+
 ## **기본 설정**
 
 웹 앱 기본 설정:
@@ -76,6 +86,8 @@ x-zendesk:
 
 더 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/adding-an-app-to-appsflyer#web">앱스를라이어에 앱 추가하기</Anchor>를 참고하세요.
 
+<div id="user-acquisition-settings" />
+
 ## 사용자 획득 설정
 
 사용자 획득(UA) 설정은 사용자가 처음 획득된 시점을 앱스플라이어가 식별하는 방식과 해당 획득 성과를 마케팅 소스에 어트리뷰션하는 방식을 결정합니다.
@@ -86,11 +98,15 @@ x-zendesk:
 
 사용자 획득을 유발하는 이벤트입니다. 이는 사용자가 진정으로 "획득"되었다고 간주하는 기준을 정의하는 중요한 비즈니스 액션입니다.
 
+<div id="why-customize" />
+
 #### 사용자 지정하는 이유
 
 기본값인 **첫 방문** 은 사용자의 가치를 판단하기에 다소 약한 신호인 경우가 많습니다. 사용자가 실수로 광고를 클릭했거나 즉시 이탈했을 수 있습니다. 이 설정을 맞춤 구성하면 단순한 호기심성 클릭이 아닌 의미 있는 액션을 유도한 마케팅 소스에 고객 생애 가치(LTV)가 어트리뷰션되도록 보장할 수 있습니다.
 
 **기본값:** 첫 방문(사용자가 웹사이트를 처음 방문할 때 획득된 것으로 처리)
+
+<div id="common-alternatives-by-industry" />
 
 #### 산업군 별 일반적인 대안
 
@@ -101,6 +117,8 @@ x-zendesk:
 | 음식 배달 | first\_order |
 | SaaS/구독 | subscription\_start |
 | 게이밍 | sign\_up ortutorial\_complete 또는 first\_purchase |
+
+<div id="how-it-works" />
 
 #### 작동 장법
 
@@ -114,6 +132,8 @@ x-zendesk:
 * 사용자는 첫 방문부터 해당 이벤트를 수행할 때까지 **"사전 획득 기간(pre-acquisition period)**"에 진입합니다.
 * 사전 획득 기간 동안 발생하는 이벤트는 룩백 윈도우 내의 마지막 논오가닉 접점에 어트리뷰션됩니다(라스트 터치 어트리뷰션).
 * 맞춤 UA 이벤트가 발생하면 **User Acquisition 전환**이 생성되고 장기 어트리뷰션이 시작됩니다.
+
+<div id="example-scenario-ua-event--sign_up" />
 
 #### 예시 시나리오(UA 이벤트 = sign\_up):
 
@@ -137,15 +157,21 @@ x-zendesk:
 
 범위: 1시간에서 90일
 
+<div id="how-it-works-1" />
+
 #### 작동 방법
 
 사용자가 UA 이벤트(예: sign\_up)를 수행하면, 앱스플라이어는 이 윈도우 기간 내를 역추적하여 가장 최근의 논오가닉 접점을 찾고 해당 마케팅 소스에 획득 성과를 어트리뷰션합니다.
+
+<div id="example-1-30-day-lookback" />
 
 #### 예시 1(30일 룩백):
 
 * **Day 0:** 사용자가 Facebook 광고를 클릭하고 웹사이트를 방문함
 * **Day 25:** 사용자가 직접 재방문하여 sign\_up 이벤트를 완료함
 * **결과:** 사용자 획득이 Facebook에 어트리뷰션됨 (30일 룩백 윈도우 이내)
+
+<div id="example-2-window-expired" />
 
 #### 예시 2(윈도우 만료)
 
@@ -155,6 +181,8 @@ x-zendesk:
 **결과:** 사용자 획득이 오가닉(organic)으로 표시됨 (30일 룩백 윈도우 초과)
 
 </Accordion>
+
+<div id="re-engagement-settings" />
 
 ## 리인게이지먼트 설정
 
@@ -172,6 +200,8 @@ x-zendesk:
 
 **범위:** 1시간 - 90일
 
+<div id="how-it-works-2" />
+
 #### 작동 방법
 
 이미 획득된 사용자가 논오가닉 소스(예: 리타게팅 광고)를 통해 재방문하고 리인게이지먼트 기준을 충족하면 **리타게팅 전환**이 생성됩니다. 이 윈도우 기간 내에 발생하는 이벤트는 **이중 어트리뷰션(dual attribution)** 을 적용받습니다.
@@ -180,6 +210,8 @@ x-zendesk:
    * 목적: 리타게팅 캠페인 크레딧
 2. **보조 어트리뷰션** → 오리지널 UA 소스
    * 목적: 최초 획득 시점부터 사용자의 전체 생애 가치(LTV)를 측정하는 UA 뷰 지원
+
+<div id="example-within-window" />
 
 #### 예(윈도우 동안):
 
@@ -208,6 +240,8 @@ x-zendesk:
 
 **범위:** 0(비활성화) - 30일
 
+<div id="how-it-works-3" />
+
 #### 작동 방법
 
 **비활성화 시:**
@@ -223,6 +257,8 @@ x-zendesk:
 
 * 비활성 윈도우(재획득)를 초과할 수 없음
 
+<div id="example-7-day-inactivity-window" />
+
 #### 예(7일 비활성 윈도우):
 
 * **Day 0:** Facebook 광고를 통해 사용자 획득
@@ -231,6 +267,8 @@ x-zendesk:
 * **Day 15:** 사용자가 리타게팅 광고를 클릭함 → **리타게팅 전환 생성** (12일 동안 비활성 상태)
 
 </Accordion>
+
+<div id="re-acquisition-settings" />
 
 ## 재획득 설정
 
@@ -248,6 +286,8 @@ x-zendesk:
 
 **범위:** 1일에서 180일
 
+<div id="how-it-works-4" />
+
 #### 작동 방법
 
 **사용자가 이탈 상태로 표시되는 경우:**
@@ -261,6 +301,8 @@ x-zendesk:
 * 사용자가 재획득 이벤트를 수행하는 경우 → 새로운 UA 전환 생성
 * 윈백 캠페인이 새로운 획득 소스로서 기여도를 인정받음
 * 리포트 관점에서 사용자가 완전히 새로운 신규 획득으로 처리됨
+
+<div id="example-90-day-window" />
 
 #### 예(90일 윈도우)
 
@@ -285,6 +327,8 @@ x-zendesk:
 
 **자주 사용되는 대체 이벤트:** sign\_in 또는 purchase
 
+<div id="how-it-works-5" />
+
 #### 작동 방법
 
 **맞춤 이벤트(예:** **sign\_in)로 설정된 경우:**
@@ -293,6 +337,8 @@ x-zendesk:
 * 재획득이 발생하기 전까지 사용자가 여러 번 방문할 수 있습니다.
 * "진정한" 재획득에 대한 더욱 엄격한 정의입니다.
 
+<div id="example-re-acquisition-event--sign_in" />
+
 #### 예시(재획득 이벤트 = sign\_in):
 
 * 사용자가 90일 동안 비활성 상태로 유지된 후 이탈 처리됨
@@ -300,6 +346,8 @@ x-zendesk:
 * 하루 뒤 사용자가 로그인함 → 재획득 전환이 생성되어 이메일 캠페인에 어트리뷰션됨
 
 </Accordion>
+
+<div id="attribution-window" />
 
 ## 어트리뷰션 윈도우
 
@@ -315,6 +363,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="excluded-domains" />
+
 ## 제외 도메인
 
 어트리뷰션에서 제외할 도메인입니다. 사용자가 지정된 도메인과 웹사이트 사이를 이동할 때 앱스플라이어가 방문이나 이벤트를 어트리뷰션하는 것을 방지합니다.
@@ -328,6 +378,8 @@ x-zendesk:
 
 <Accordion title="도메인 유형">
 
+<div id="primary-required-automatic" />
+
 #### 기본(필수, 자동)
 
 * 기본 웹사이트 도메인(앱 생성 시 설정됨)
@@ -337,6 +389,8 @@ x-zendesk:
   * 예시: example.com은 shop.example.com, blog.example.com 등을 자동으로 제외합니다.
 * **제외 효과:** 자체 어트리뷰션 방지
 
+<div id="internal-optional" />
+
 #### 내부(선택 사항)
 
 * 기본 도메인에 포함되지 않는 브랜드의 기타 다른 도메인
@@ -344,9 +398,13 @@ x-zendesk:
 * 예시: example.co.uk, example.in과 같은 서로 다른 최상위 도메인
 * **제외 효과:** 자체 어트리뷰션 방지
 
+<div id="external-optional" />
+
 #### 외부(선택 사항)
 
 외부 도메인 제외 유형에는 두 가지가 있습니다.
+
+<div id="external-listed-by-you" />
 
 #### 외부(사용자 지정 목록)
 
@@ -355,6 +413,8 @@ x-zendesk:
 * 최대 99개의 추가 도메인 등록 가능
 * 예시: auth0.com, okta.com, facebook.com, google.com
 * **제외 효과:** 방문이 무시됨
+
+<div id="external-listed-by-appsflyer" />
 
 #### 외부(앱스플라이어 목록)
 
@@ -422,11 +482,15 @@ x-zendesk:
 
 <Accordion title="요구 사항 및 유효성 검사">
 
+<div id="domain-format" />
+
 #### 도메인 형식
 
 * 도메인 이름만(프로토콜, 경로 및 포트 제외)
 * 도메인당 최대 500자
 * 프로토콜(https://)은 자동으로 제거되며 소문자로 변환됩니다.
+
+<div id="examples" />
 
 #### 예:
 
@@ -436,11 +500,15 @@ x-zendesk:
 * example.com/path ❌ (경로 허용 안됨)
 * example.com:8080 ❌ (경로 허용 안됨)
 
+<div id="limits" />
+
 #### 제한:
 
 * 총 최대 100개 도메인 (기본 도메인 1개 포함)
 
 </Accordion>
+
+<div id="migrating-from-people-based-attribution-pba" />
 
 ## People-Based Attribution(PBA)에서의 마이그레이션 가이드
 

@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > **요약:** 모바일 광고 어트리뷰션이 무엇이며, 마케터가 앱스플라이어를 통해 타겟팅 정확도를 높이고, 광고 비용을 최적화하며 ROI를 향상시키는 방법에 대해 알아봅니다.
 
+<div id="what-is-app-attribution" />
+
 ## 앱 어트리뷰션이란 무엇입니까?
 
 앱 어트리뷰션이란 앱 인스톨과 인스톨 이후 발생하는 인앱 구매 같은 인앱 이벤트를 일으킨 **캠페인, 파트너, 채널을 규명**하는 것입니다. 마케터는 이러한 인사이트에 근거하여 유저 유입(UA) 및 리타겟팅 캠페인의 성과를 측정하고 마케팅 활동을 최적화합니다.
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## 앱스플라이어로 무엇을 할 수 있을까요?
 
 <Embed title="앱스플라이어 시작하기" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **요약:** 앱스플라이어 계정에 처음 로그인하는 방법과 계정을 전환하는 방법에 대해 알아봅니다.
+
+<div id="first-login" />
 
 ## 처음 로그인하기
 
@@ -48,6 +54,10 @@ login page.png
 * Google 계정으로 로그인
 * <Anchor target="_blank" href="/marketers/ko/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO를 사용하여 로그인</Anchor>
 
+<div id="using-multiple-accounts" />
+
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > 관리자가 계정에 대해 2단계 인증(<Anchor target="_blank" href="/marketers/ko/docs/implementing-and-using-2fa-login">2FA)</Anchor>을 구성한 경우 다른 인증 방법을 사용하여 로그인을 확인하라는 메시지가 표시됩니다.
@@ -56,19 +66,29 @@ login page.png
 
 <Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
 
+<div id="switch-between-accounts" />
+
+<div id="primary-account" />
+
 ### 계정 간 전환
 
 계정 간 전환
 
+<div id="get-started" />
+
 ## 시작하기
 
 앱스플라이어를 시작하려면 단계별 가이드에 따라 진행하세요.
+
+<div id="tip" />
 
 > 👍 **팁**
 >
 > 모바일 생태계에 대해 더 자세히 알아보시겠어요? 앱스플라이어 학습 포털에서 짧고 유용한 코스를 밟아보세요.
 
 관련 자료:  <Anchor target="_blank" href="/marketers/ko/docs/convert-your-mobile-web-visitors-to-app-users">모바일 어트리뷰션</Anchor> | <Anchor target="_blank" href="/marketers/ko/docs/ctv-pc-and-console-platform-attribution-concepts">CTV 어트리뷰션</Anchor>
+
+<div id="see-also" />
 
 > 📄 **참고 자료**
 >

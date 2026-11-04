@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 데이터 락커를 통해 사용 가능한 집약 데이터 리포트 및 로데이터 리포트들.
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## 광고주용 데이터 락커를 통해 사용 가능한 리포트들
 
 <table><colgroup><col/><col/><col/></colgroup><thead><tr><th>데이터 유형</th><th>리포트 그룹</th><th>데이터 락커 구독 필수</th></tr></thead><tbody><tr><td>로데이터</td><td>사용자 여정 - 로데이터</td><td>예 (2)</td></tr><tr><td>로데이터</td><td>Protect360</td><td>예</td></tr><tr><td>로데이터</td><td>사람 기반 어트리뷰션(PBA) </td><td>아니요 </td></tr><tr><td>로데이터</td><td>증분성</td><td>아니요 </td></tr><tr><td>로데이터</td><td>SKAN</td><td>아니요(1)</td></tr><tr><td>로데이터</td><td>수익</td><td><p>광고 수익 단일 버전 보고서는 데이터 잠금 장치 구독이 필요합니다.</p><p>모든 다른 보고서는 ROI360 고급 패키지 구독이 필요합니다.</p></td></tr><tr><td>로데이터</td><td>CTV, PC, 콘솔 앱</td><td>예</td></tr><tr><td>통합 데이터</td><td>코호트 분석</td><td>아니요(1)</td></tr><tr><td>고급 집계</td><td>코호트 분석</td><td>아니요(1)</td></tr><tr><td>통합 데이터</td><td>광고소재 최적화</td><td><p>아니요(1)</p><p>창의적 최적화 프리미엄 구독 계획이 필요합니다.</p></td></tr><tr><td>통합 데이터</td><td>SSOT</td><td>아니요(1)</td></tr><tr><td colspan="3"><p>(1) 데이커 락커 구독이 없는 경우 <a href="./data-locker-for-marketers#storage-options" target="_blank">사용자가 소유한 스토리지</a>를 제공해야 합니다.</p><p>(2) 크로스 플랫폼 인게이지먼트 제외</p><p>(3) 데이터 잠금 장치 구독 또는 분석 API 제품군과 함께 사용할 수 있습니다.</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ x-zendesk:
 | 매일+1 | 광고 수익 데이터는 1일 후에 사용 가능합니다. 즉, 월요일에 생성된 데이터는 화요일 UTC 시간으로 20:00 이후 월요일 h=23 폴더에서 사용할 수 있다는 뜻입니다. <Anchor target="_blank" href="/marketers/ko/docs/roi360-guide-ad-revenue-attribution#data-freshness">광고 수익 데이터 최신성</Anchor> 참조 |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## 로데이터(Raw data) 보고서
 
@@ -157,6 +161,8 @@ ROI360 수익 ETL 데이터 락커 보고서
 
 </Accordion>
 
+<div id="advanced-raw-data-reports-beta" />
+
 ## 고급 원시 데이터 보고서 (베타)
 
 고급 보고서는 구조화되고 검증된 **AI 준비 데이터 세트**를 제공하도록 설계된 새로운 세대의 원시 데이터 보고서를 소개합니다. 이 보고서는 **첫 번째 참여부터 전환 및 설치 후 활동까지의 전체 사용자 여정을 단 3개의 보고서를 사용하여 수집하고 분석할 수 있도록 합니다.**  
@@ -186,6 +192,8 @@ ROI360 수익 ETL 데이터 락커 보고서
 | --- | --- | --- | --- |
 | 유저 유입(UA) 및 리타겟팅 가이드 | 전환 | 1–24시간 | ✅ |
 
+<div id="note" />
+
 > 📘 **참고**
 >
 > 재설치는 이 보고서에 포함되지 않습니다.
@@ -203,6 +211,8 @@ ROI360 수익 ETL 데이터 락커 보고서
 | 유저 유입(UA) 및 리타겟팅 가이드 | 최종 사용자 이벤트 | 1–24시간 | ✅ |
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## 종합 리포트
 

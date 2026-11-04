@@ -23,6 +23,10 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
+<div id="setting-up-your-campaign-on-wechat" />
+
+<div id="introduction" />
+
 ## 소개
 
 
@@ -37,7 +41,7 @@ x-zendesk:
 
 
 
-<span id="setting-up-wechat-campaign-as-an-agency"></span>설정은 **활성 연동** 페이지에서 수행되지만 신규 파트너를 찾으려면 먼저 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations">마켓플레이스</Anchor>로 이동해야 합니다.
+<span id="setting-up-wechat-on-appsflyer"></span><span id="setting-up-wechat-campaign-as-an-agency"></span>설정은 **활성 연동** 페이지에서 수행되지만 신규 파트너를 찾으려면 먼저 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations">마켓플레이스</Anchor>로 이동해야 합니다.
 
 > 📘 **참고사항**
 >
@@ -67,20 +71,28 @@ x-zendesk:
 
 연동 탭은 아래와 같이 다양한 섹션으로 나누어져 있습니다.
 
+<div id="activate-partner" />
+
 ### 파트너 활성화
 
 이곳을 **처음 방문**하면 아래를 토글해야 합니다. ***파트너 활성화*** 버튼을 **켜서** 연동 탭의 파라미터 설정을 활성화합니다. 파트너와 함께 작업하는 동안에는 토글이 **켜져 있어야** 합니다.  
 파트너 활성화에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">여기</Anchor>를 클릭하십시오.
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > LINE은 모든 인스톨 네트워크로서 오가닉을 포함한 모든 소스에서 앱의 모든 신규 인스톨에 대한 포스트백을 수신하는 것을 선호합니다.
+
+<div id="general-settings" />
 
 ### 일반 설정
 
 **파트너 ID**
 
 <Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+
+<div id="default-postbacks" />
 
 ### 기본 포스트백
 
@@ -89,6 +101,8 @@ x-zendesk:
 ![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
 
 아이언소스에 어트리뷰트된 사용자에게만 발생하는 이벤트에 대해 **이 파트너에 기여한 이벤트만** 선택합니다. **전체 사용자 기반을 아이언소스에 리포트할 수 있도록 하려면 파트너 또는 오가닉에 어트리뷰트되는 이벤트를 선택합니다.**
+
+<div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
@@ -119,6 +133,8 @@ x-zendesk:
 
 이 탭은 여러 섹션으로 나눠집니다.
 
+<div id="attribution-link-parameters" />
+
 ### 어트리뷰션 링크 파라미터
 
 이 섹션에서는 어트리뷰션 링크에 추가하고 싶은 파라미터를 선택합니다.
@@ -138,6 +154,8 @@ x-zendesk:
 
 다른 파라미터를 새 파라미터 상자에 입력하기만 하면, 어트리뷰션 링크에 추가할 수 있습니다. 더 많은 정보는 **앱스플라이어 어트리뷰션 링크 구조와 파라미터**에서 참조하십시오.
 
+<div id="click-through-attribution" />
+
 ### 클릭-쓰루 어트리뷰션
 
 **클릭에서 인스톨까지의 최대 시간**을 이 슬라이더에서 설정할 수 있습니다. 기여 기간 내에 일어난 인스톨(앱 최초 실행)만 트위터로 어트리뷰션됩니다.
@@ -145,6 +163,8 @@ x-zendesk:
 **어트리뷰션 링크 파라미터:** af\_click\_lookback
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">클릭 룩백 윈도우 관련 상세 내용은 여기</Anchor>를 참조하십시오.
+
+<div id="click-attribution-link" />
 
 ### 클릭 어트리뷰션 링크
 

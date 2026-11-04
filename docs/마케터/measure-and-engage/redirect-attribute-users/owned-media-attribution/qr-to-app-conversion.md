@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
 
+<div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
+
 ## 모바일, 비모바일, 오프라인 트래픽을 모바일 앱 유저로 전환
 
 원링크에서 생성된 QR 코드를 데스크톱, TV, CTV 또는 오프라인 광고(예: 매장 내 디스플레이, 브로슈어 및 포장)에 게시하면 다음과 같은 이점이 있습니다.
@@ -42,6 +44,8 @@ QR 코드는 다음 중 하나로 생성할 수 있습니다.
 <div id="qr-to-app-conversion" />
 
 <Accordion title="QR에서 앱으로 전환">
+
+<div id="manual-qr-code-setup" />
 
 #### 수동 QR 코드 설정
 

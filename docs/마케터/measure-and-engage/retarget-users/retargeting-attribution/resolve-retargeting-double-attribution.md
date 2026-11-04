@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## 개요
 
 * 재참여
@@ -43,12 +45,16 @@ x-zendesk:
   * [모범 사례] **conversion\_type**: 인스톨 또는 리인게이지먼트.
   * is\_retargeting: true인 경우 데이터는 리타게팅 캠페인과 관련이 있습니다.
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### 리인게이지먼트 윈도우에 대한 어트리뷰션
 
 | 미디어 소스 | 재계약 전 | 리인게이지먼트 중 | 인게이지먼트 후 |
 | --- | --- | --- | --- |
 | 유저 유입 | is\_primary\_attribution: True<br /><br />conversion\_type=인스톨<br /><br />(is\_retargeting: False | 보조<br /><br />is\_primary\_attribution: 거짓됨<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: False | is\_primary\_attribution: True<br /><br />conversion\_type=인스톨<br /><br />(is\_retargeting: False |
 | 리타겟팅 | 해당 없음 | is\_primary\_attribution: True<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: True | 해당 없음 |
+
+<div id="support-for-dashboard-view-types" />
 
 ## 대시보드 보기 유형 지원
 
@@ -58,6 +64,8 @@ x-zendesk:
 
 
 <table><thead><tr><th><span id="data-filtering-by-view-type-using-the-conversion_type-field"></span>보기 유형</th><th>conversion_type</th><th>1차 어트리뷰션</th><th>어트리뷰션</th></tr></thead><tbody><tr><td rowspan="2">유저 유입</td><td>인스톨</td><td>True 또는 False</td><td>UA 미디어소스에 어트리뷰트되는 UA 이벤트</td></tr><tr><td>리인게이지먼트</td><td>거짓됨</td><td>UA 미디어소스에 어트리뷰션된 리타게팅 이벤트입니다.</td></tr><tr><td>리타겟팅</td><td>리인게이지먼트 또는 리어트리뷰션</td><td>True</td><td>리타게팅 미디어소스에 어트리뷰트된 리타게팅 이벤트</td></tr><tr><td>통합</td><td>인스톨 또는 리인게이지먼트</td><td>True</td><td>마지막 터치 미디어소스에 어트리뷰트되는 모든 이벤트</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## 유저 인입 인앱 보고서에서 이중 어트리뷰션 리타게팅 이벤트를 식별하려면 어떻게 해야 합니까?
 

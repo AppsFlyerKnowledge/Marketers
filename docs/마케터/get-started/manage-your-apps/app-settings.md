@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 모든 매체 소스에서 귀사의 앱 어트리뷰션 및 분석에 영향을 미치는 설정에 대해 알아보세요.
 
+<div id="app-settings" />
+
 ## 앱 설정
 
 **액세스:**
@@ -38,6 +40,8 @@ x-zendesk:
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **앱 설정**을 선택합니다.
 2. 앱 설정 페이지에서 설정을 확인하고 필요에 따라 변경하세요.
 3. **설정 저장**을 클릭하세요.
+
+<div id="general-app-settings" />
 
 ### 일반 앱 설정
 
@@ -127,6 +131,8 @@ x-zendesk:
           * 수익이나 비용이 없는 앱은 통화 변경이 가능합니다.
           * New 앱의 경우, 앱이 추가될 때 통화가 설정됩니다.
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### 앱 통화의 영향을 받는 리포팅 도구
 
         | 리포팅 도구 | 사용 가능한 통화 옵션 |
@@ -142,6 +148,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### 어트리뷰션 설정
 
 | 설정 | 설명 |
@@ -152,6 +160,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>오가닉 검색(SEO) 모바일 앱 어트리뷰션 | 관련 문서: <Anchor target="_blank" href="/marketers/ko/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">오가닉 검색 어트리뷰션</Anchor><br /><br />**오가닉 검색 어트리뷰션을 활성화하려면:**<ul><li>앱스플라이어의 사이드 메뉴에서 **설정** > **앱 설정**을 선택하고 **오가닉 검색(SEO) 모바일 앱 어트리뷰션**을 켭니다.</li></ul> |
 | <span id="uninstall-measurement"></span>앱 삭제 측정 | <Anchor target="_blank" href="/marketers/ko/docs/measure-uninstalls">앱 삭제 측정</Anchor>은 앱 삭제 측정이 활성화되어 있을 때 발생하는 인스톨과 관련됩니다.<br /><br />**앱 삭제 측정을 활성화하려면:**<ol><li>각 운영 체제별로 다음 작업을 완료하세요.<ul><li>**iOS**: 앱이 iOS 앱 삭제 어트리뷰션 기능을 구현하면 여기에 P12 인증서를 업로드해야 합니다.</li><li>**안드로이드**: 안드로이드 앱 삭제 어트리뷰션을 위해 Firebase/GCM 서버 키를 여기에 정의해야 합니다.</li></ul></li><li>앱 **삭제 측정**를 켭니다.</li><li>**설정 저장**을 클릭합니다.</li></ol>**앱 삭제 측정을 중지하려면:**<ol><li>**앱 삭제 측정**을 끕니다.</li><li>**설정 저장**을 클릭하세요.</li></ol> |
 
+<div id="advanced-settings" />
+
 ### 고급 설정
 
 | 설정 | 설명 |
@@ -161,6 +171,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>iOS 10.3 리디렉션 대체 | [더 이상 사용되지 않음] iOS 10.3 이상용. iOS 사용자에 대해 흐름을 단순화했으며 이 매개변수는 더 이상 사용되지 않습니다. <Anchor target="_blank" href="/marketers/ko/docs/uri-scheme-fallback-for-ios">iOS 리디렉션</Anchor>.<br /><br />이 옵션은 iOS 앱에서만 이용 가능합니다. |
 | <span id="change-app-name"></span>앱 이름 변경 | <ul><li>대시보드와 데이터 보고서 전체에 표시되는 앱 이름입니다. 예를 들어, 지역에 따라 동일한 앱의 여러 버전이 있는 경우, 이 기능이 유용할 수 있습니다.</li><li>이 변경은 앱 표시 방식에 영향을 줍니다. 앱 ID는 다양한 앱스플라이어 API를 사용할 때 앱을 식별하는 데 사용되며, **변경되지 않습니다**.</li><li>이름은 최대 50자까지 가능합니다.</li></ul> |
 | <span id="outofstore-app-url"></span>앱 스토어 외 다른 곳에서 다운로드된 앱 URL | <ul><li>앱과 연결된 어트리뷰션 링크에서 기본 리디렉션 목적지로 사용될 앱 다운로드 URL을 설정하세요.</li><li>이 필드는 스토어 외부 앱으로 지정된 안드로이드 앱에서는 필수입니다.</li><li>설정 후 약 1시간 내에 URL이 기본 리디렉션 대상으로 적용됩니다.</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

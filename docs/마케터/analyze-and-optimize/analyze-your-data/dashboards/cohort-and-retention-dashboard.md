@@ -26,15 +26,21 @@ x-zendesk:
 
 cohort main (2).png
 
+<div id="cohort-and-retention-dashboard" />
+
 ## 코호트 및 리텐션 대시보드
 
 관련 문서: <Anchor target="_blank" href="/marketers/ko/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">코호트 개념 사이의 차이</Anchor>
 
 코호트 및 리텐션을 사용하려면 하나 이상의 앱에서 사용자를 선택하고 전환 시간별로 분류합니다. 수익, ROI, 이벤트 전환율과 같은 코호트 분석 지표를 사용할 수 있습니다. 캠페인이나 미디어소스 같은 기준으로 코호트를 나누어 비교합니다. 이렇게 하여 사용자 또는 캠페인의 라이프 사이클에 걸친 패턴이나 성과 변화를 발견할 수 있습니다. <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">코호트 사용 사례</Anchor>를 참조하세요.
 
+<div id="tip" />
+
 > 👍 **팁**
 >
 > 코호트 보고서에 대해 자세히 알고 싶으십니까? 앱스플라이어 학습 포털에서 짧지만 유익한 <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">과정</Anchor>을 확인해 보세요.
+
+<div id="using-cohort" />
 
 ## 코호트 사용하기
 
@@ -109,6 +115,8 @@ cohort main (2).png
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## 코호트 개념
 
 <div id="cohort-periods" />
@@ -153,15 +161,21 @@ cohort main (2).png
 * **사용자 창출 가치**
 * **어트리뷰션 날짜별 KPI**
 
+<div id="user-lifetime-performance" />
+
 #### **사용자 창출 가치**
 
 * 표의 각 열 또는 차트의 포인트는 다른 코호트 기간(시간/일/주/월)을 나타냅니다. 이렇게 하면 전환 기간부터 시작하여 전환 후 사용자 실적을 비교할 수 있습니다.
 * 데이터를 가져올 코호트 기간을 각 세부 수준 옵션(시간/일/주/월)에 대해 최대값까지 선택할 수 있습니다.
 
+<div id="kpi-by-attribution-time" />
+
 #### **어트리뷰션 날짜별 KPI**
 
 * 표의 각 열 또는 차트의 포인트는 선택한 날짜 범위의 기간에 대한 코호트 기간(시간/일/주/월)을 나타냅니다. 이를 통해, 시간 경과에 따른 캠페인 성과를 평가하고 전환 시점 관련 상대적인 캠페인 KPI를 볼 수 있습니다.
 * 데이터를 얻기 위해 선택할 수 있는 최대 코호트 기간 수는 5개입니다.
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### 예시:
 
@@ -250,6 +264,8 @@ cohort main (2).png
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="cohort-for-agencies" />
@@ -269,6 +285,8 @@ cohort main (2).png
 
 <Accordion title="활용 사례">
 
+<div id="revenue-sum-by-geo" />
+
 #### 지역별 수익 합계
 
 차트 차트: 사용자 1인당 누적 수익
@@ -278,6 +296,8 @@ Screenshot 2023-10-23 at 9.59.01.png
 표
 
 cohort use case 3.png
+
+<div id="in-app-event-conversion" />
 
 #### 인앱 이벤트 전환 (In-app event conversion)
 

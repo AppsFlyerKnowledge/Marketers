@@ -26,6 +26,8 @@ x-zendesk:
 
 ![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
 
+<div id="finding-the-best-ios-14-campaign-performance-metrics" />
+
 ## 최고의 iOS 14 이상 캠페인 성과 지표 찾기
 
 iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">앱스플라이어 어트리뷰션</Anchor> 프레임워크 모두 캠페인 성과 지표를 생성합니다. 지표는 서로 다르게 어트리뷰트하고, 서로 다른 특성과 한계를 가지고 있으며, 그들 사이에 종종 불일치가 발생합니다. 예를 들어, SKAN에는 Apple Search Ads 캠페인이나 온드 미디어의 지표가 없습니다. 반대로 SRN의 앱스플라이어 지표에는 비동의 사용자 인스톨이 포함되지 않습니다. 또한 SKAN은 1&#126;3일의 초기 사후 설치 중 성과를 측정하지만 앱스플라이어는 사용자생애가치(LTV)를 측정합니다.
@@ -51,6 +53,8 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 * 실제: 실제는 데이터를 가장 잘 나타내는 지표를 의미하지만, 모든 데이터를 포함하지는 않을 수도 있습니다.
 * 사용자 동의 동의하는 사용자: 퍼블리셔 앱 및 광고 앱 모두에서 ATT 권한/strong>을 부여하는 iOS 14 이상 사용자입니다.
 
+<div id="campaign-precision" />
+
 <Accordion title="캠페인 정밀도">
 
 | 질문 | 캠페인에 어트리뷰트된 실제 인스톨 건수는 몇 건입니까? |
@@ -67,6 +71,8 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="campaign-effectiveness" />
+
 <Accordion title="캠페인 효과성">
 
 | 질문 | 몇 명의 사용자가 전환했으며 ROI는 무엇입니까? |
@@ -78,6 +84,8 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="campaign-efficiency" />
+
 <Accordion title="캠페인 효율성">
 
 | 질문 | 실제 캠페인 eCPI는 무엇입니까? |
@@ -88,7 +96,11 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="using-side-by-side" />
+
 ## 나란히 보기 사용
+
+<div id="principles" />
 
 <Accordion title="원칙">
 
@@ -102,6 +114,8 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
     * Google Ads 캠페인을 실행할 경우 가장 빠른 날짜는 현재 날짜보다 8일 이전이어야 합니다.
 
 </Accordion>
+
+<div id="display-skan-metrics-in-the-table" />
 
 <Accordion title="표에 SKAN 지표를 표시합니다.">
 
@@ -122,11 +136,15 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="timerelated-differences" />
+
 <Accordion title="시간 관련 차이">
 
 <table><thead><tr><th>차이</th><th>앱스플라이어</th><th>SKAN</th></tr></thead><tbody><tr><td>과거 데이터</td><td><p>사용성; 제한 없음</p></td><td><p>사용성; 제한 없음 </p></td></tr><tr><td>시간대</td><td><p>앱별 시간대</p></td><td>UTC </td></tr><tr><td>데이터 최신성 </td><td>최대 60분의 대기 시간으로 지속적으로 업데이트합니다.</td><td><p><span>매일 08:00 UTC에 업데이트합니다. </span></p><p>대기 시간은 활동 기간의 지속에 따라 다릅니다. 기본값: 기본값: 2&#126;5일, 캠페인이 Google Ads 캠페인으로 실행되는 경우 최대 13일입니다.</p></td></tr><tr><td>설치 날짜</td><td>인스톨이 발생한 날짜  </td><td>포스트백 도착 시간에서 추출. (1) </td></tr><tr><td>측정 지속 기간</td><td>제한 없음; LTV 기반</td><td><p>활동 기간인 12&#126;72시간으로 제한됩니다. 기본값 = 24시간.</p></td></tr><tr><td>어트리뷰션 룩백 윈도우</td><td><ul><li>광고주 또는 SRN이 결정</li><li> 7일</li></ul></td><td><ul><li>Apple이 결정</li><li>click_to_download 30일</li><li> 60일</li></ul></td></tr><tr><td colspan="3"><p>참고</p><p>(1) Google Ads 데이터 업데이트의 최대 지연은 13일입니다.</p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="cost-clicks-and-impressions" />
 
 <Accordion title="비용, 클릭 수, 노출 수">
 
@@ -140,6 +158,8 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 * Google Ads에 의한 인스톨의 경우 지연은 최대 8일입니다.
 
 </Accordion>
+
+<div id="data-scope-differences" />
 
 <Accordion title="데이터 범위 차이">
 
@@ -155,11 +175,15 @@ iOS 14 이상부터 SKAN 어트리뷰션 및 <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="matching-considerations" />
+
 <Accordion title="매칭 고려사항">
 
 <table><thead><tr><th>고려 사항</th><th>앱스플라이어</th><th>SKAN</th></tr></thead><tbody><tr><td>에이전시 투명성</td><td>지원됨.</td><td><p>인스톨을 가져오는 미디어 원본에 기인합니다. 에이전시는 미디어소스에 캠페인 이름에 <em><a href="/partners/ko/docs/getting-started-agency-onboarding" target="_blank">prt</a></em>을 접두사로 붙이도록 지시할 수 있으며, 이 경우 에이전시 기반 트래픽을 식별할 수 있습니다.</p></td></tr><tr><td>캠페인 이름 변경</td><td><ul><li>지원됨.</li><li>광고 네트워크에서 리포트한 가장 최근 이름을 통해 지정된 캠페인 ID와 관련된 모든 인스톨에 사용되는 캠페인 이름을 결정합니다. 여기에는 이전에 기록된 인스톨도 포함됩니다.  </li></ul></td><td><ul><li>지원되지 않음</li><li>사용자가 앱을 인스톨할 때 리포트된 캠페인 이름이 사용됩니다. 이 이름은 시간이 지나도 변경되지 않습니다. 따라서 지정된 캠페인 ID에 여러 이름을 연결할 수 있습니다. </li></ul></td></tr><tr><td>지원되는 디멘션</td><td>제한 없음</td><td><p>사용 가능 </p><p><strong>에이전시:</strong> </p><p>지원되지 않는 기준을 선택하면 SKAN 데이터가 없음으로 표시됩니다.</p></td></tr><tr><td>SRN 인스톨 지표</td><td>동의하는 사용자로 제한. 따라서 앱스플라이어 리포트 지표는 SKAN 리포트 지표 및 SRN 자체에서 제공하는 지표보다 낮을 것으로 예상합니다.  </td><td>모든 SKAN 어트리뷰트 인스톨. 일반적으로 앱스플라이어 지표보다 높습니다.  </td></tr><tr><td>숨겨진 SKAN 캠페인</td><td colspan="2"><p>대시보드의 표는 행 수가 제한되어 있습니다. 나머지 행은 <em>기타</em>로 지정된 행에 결합됩니다.</p><p>이 행을 보려면 전체 표를 스프레드시트로 내보내십시오.  </p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="dimensions-available" />
 
 <Accordion title="사용 가능한 기준">
 

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** 중복 데이터 표시를 만들지 않고 캠페인 이름을 변경합니다.
 
+<div id="campaign-name-changes" />
+
 ## 캠페인 이름 변경
 
 캠페인 이름을 변경하면 대시보드와 리포트의 **집계 데이터** 표시에 영향을 미칩니다. 앱스플라이어는 캠페인 ID를 키로 사용하여 캠페인을 표시합니다. 동일한 캠페인 ID와 연결된 이름이 두 개 이상 있는 경우 가장 최근에 보고된 이름이 데이터를 표시하는 데 사용됩니다.
@@ -52,12 +54,14 @@ x-zendesk:
 | Cost ETL | 예 |
 | SKAN 개요 대시보드 | 아니요 |
 
+<div id="example" />
+
 > 📄 **예시**
 >
 > * 1월 1일, 캠페인 **example\_a1**이 실행되기 시작했습니다.
 > * 1월 2일, 캠페인 이름이 **example\_a1**에서 **example\_a2**로 변경되었습니다.
 >
-> #### 캠페인 데이터 예시
+> #### <span id="example-campaign-data"></span>캠페인 데이터 예시
 >
 >
 >
@@ -68,11 +72,13 @@ x-zendesk:
 >
 >
 >
-> #### 개요 대시보드 표시
+> #### <span id="overview-dashboard-display"></span>개요 대시보드 표시
 >
 >
 >
 > <table><tbody><tr><th><p><span>캠페인</span></p></th><th><p><span>캠페인 ID</span></p></th><th><p><span>인스톨</span></p></th><th><p><span>광고 비용</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>결과: 데이터는 가장 최근의 캠페인 이름 아래에 표시됩니다.</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### 모범 사례
 

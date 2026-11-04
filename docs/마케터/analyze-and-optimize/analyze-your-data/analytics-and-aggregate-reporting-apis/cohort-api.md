@@ -29,6 +29,8 @@ x-zendesk:
 
 > **한눈에 보기:** 코호트 API는 광고주가 프로그래밍을 통해 코호트 데이터를 얻을 수 있도록 지원합니다. API를 사용하여 코호트 데이터를 BI 및 마케팅 자동화 시스템에 연동합니다.
 
+<div id="cohort-api" />
+
 ## 코호트 API
 
 코호트 API는 앱스플라이어 플랫폼에서 코호트 캠페인 성과 데이터를 가져오는 데 사용됩니다. <Anchor target="_blank" href="/marketers/ko/docs/cohort-and-retention-dashboard">코호트 대시보드</Anchor>와 기능적으로 동일합니다.
@@ -83,6 +85,8 @@ x-zendesk:
 
 <table><thead><tr><th> </th><th> </th><th colspan="5">함수 (Functions)</th></tr><tr><th rowspan="2">기본값/선택 사항  </th><th rowspan="2">KPI(데이터 기준 이름) </th><th>횟수(Count)</th><th>전환율 (CVR)</th><th>비율</th><th>합계 (Sum)</th><th>고유 사용자</th></tr><tr><th>숫자</th><th>백분율</th><th>백분율</th><th>숫자</th><th>숫자</th></tr></thead><tbody><tr><td>항상</td><td>users</td><td><span>Y</span></td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>항상</td><td>ecpi</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>항상</td><td>cost</td><td>-</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>선택 사항</td><td> <code>"event_name"</code>(4) </td><td><span>Y</span></td><td><span>Y</span></td><td>-</td><td><span>Y (3)</span></td><td><span>Y</span></td></tr><tr><td>선택 사항</td><td>revenue</td><td><span>Y</span></td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td></tr><tr><td>선택 사항</td><td>roas</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>선택 사항</td><td>roi</td><td>-</td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td>선택 사항</td><td>sessions</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td><span>Y (1)</span></td></tr><tr><td>선택 사항</td><td>uninstalls (2)</td><td><span>Y</span></td><td>-</td><td><span>Y</span></td><td>-</td><td>-</td></tr><tr><td colspan="7"><p>(1) 고유 세션 수는 <em>aggregation_type=on_day</em> 일 때 반환됩니다.</p><p>(2) cohort_type=unified일 경우 사용할 수 없습니다.  </p><p>(3) 합계(Sum)는 이벤트에서 발생한 총 수익을 의미합니다. 리포트에서 해당 부분은 <code>sum_event_name"</code>으로 표시됩니다. </p><p>(4) 주의! 이벤트 이름은 대소문자를 구분합니다.</p></td></tr></tbody></table>
 
+<div id="formatting-kpi-functions" />
+
 #### KPI 기능 형식 설정하기
 
 다음 파라미터로 반환되는 KPI의 형식을 설정합니다.
@@ -104,6 +108,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## 추가 정보
 
 <div id="using-period-filters" />
@@ -116,6 +122,8 @@ x-zendesk:
 
 * 기간의 값은 다음 0-180 중 하나 이상일 수 있습니다. 예시: 0, 1, 2, 30, 180
 * 기간을 지정하지 않으면 0, 1, 2 등의 기본값에서 30, 60, 90 및 180이 반환됩니다.
+
+<div id="example-period-filter" />
 
 > 📄 **기간 필터의 예시**
 >

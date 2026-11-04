@@ -26,6 +26,8 @@ x-zendesk:
 
 ## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
+<div id="about-the-appsflyer-esp-integration" />
+
 ## AppsFlyer ESP 통합에 대하여
 
 마케터들은 종종 대규모 이메일 캠페인을 보내기 위해 이메일 서비스 제공업체(ESP)를 사용합니다. 이 과정은 간단해야 하지만, 예측 가능한 사용자 여정을 제공하는 것은 종종 그렇지 않습니다. 그 이유는 일반적인 ESP가 분석을 처리하는 방식에 있으며, 이는 딥 링크를 깨뜨리고 모바일 사용자 경험에 부정적인 영향을 미치는 경향이 있습니다. 결과적으로 사용자는 때때로 앱 대신 모바일 웹사이트로 라우팅되어 전환 가능성이 낮아집니다.
@@ -34,9 +36,13 @@ AppsFlyer는 ESP 통합 솔루션으로 이 문제를 해결하며, 이를 통�
 
 AppsFlyer와의 ESP 통합을 설정하여 이메일 캠페인에서 원활하고 안전한 딥 링크 경험을 제공하고, 최적의 모바일 사용자 참여 및 전환율을 달성하세요.
 
+<div id="set-up-the-integration" />
+
 ## 연동을 설정하려면:
 
 <span id="h_01J3JHFXRP57VS9D22FEWS2JZW"></span>이 섹션에서는 AppsFlyer와의 ESP 통합을 설정하는 방법을 설명합니다.
+
+<div id="prerequisites" />
 
 ### 선행 조건
 
@@ -60,12 +66,16 @@ AppsFlyer와의 ESP 통합을 설정하기 전에 지원되는 ESP*에 계정이
 
 **새 CTD를 만드는 것은 필수입니다**, 기존의 것을 이미 사용하고 있더라도. 이것은 현재 진행 중인 이메일 캠페인의 트래픽에 영향을 미치지 않도록 보장합니다.
 
+<div id="notes" />
+
 > 📘 **참고**
 >
 > * SSL 인증서는 AppsFlyer에 의해 처리됩니다 (3단계에서).
 > * 이 단계에서는 이메일 링크가 보안되지 않을 가능성이 높으며, URL 접두사는 HTTPS 대신 HTTP가 됩니다. 이는 [5단계에서 해결됩니다.](#h_01JMYDQGPF3B9GNH0RY27JW3E4)).
 
 </Accordion>
+
+<div id="h_01JMYD02VRGT8353RDBARRPJ2M" />
 
 <div id="step-2-use-a-oneLink-template-for--your-email-campaign" />
 
@@ -141,6 +151,8 @@ b. 지침을 복사하고 보낸 후 **완료**를 클릭하세요.
 * [앱이 딥 링크를 지원하도록 구성하세요](#앱이-딥-링크를-지원하도록-구성하세요)
 * [앱이 웹 링크 및 애플리케이션 링크를 처리하도록 구성하세요](#웹-링크-및-애플리케이션-링크를-처리하도록-앱을-구성하세요)
 
+<div id="configure-your-app-to-support-associated-domains" />
+
 #### **앱이 연관된 도메인을 지원하도록 구성하세요**
 
 AppsFlyer는 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary#유니버설-링크">유니버설 링크(iOS)</Anchor> 또는 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledge-base-glossary#안드로이드-앱-링크">앱 링크(Android)</Anchor>를 활성화하기 위해 귀하의 앱에 대한 앱 연관 파일을 호스팅합니다.
@@ -159,6 +171,8 @@ AppsFlyer는 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledg
 **참고:** 클릭 도메인은 Android 매니페스트에 이미 정의된 현재 도메인에 추가되어야 합니다.
 
 
+<div id="configure-your-app-to-support-deep-linking" />
+
 #### **앱이 딥 링크를 지원하도록 구성하세요**
 
 앱 링크 또는 유니버설 링크를 클릭하면 앱이 열려야 합니다.
@@ -172,6 +186,8 @@ AppsFlyer는 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-knowledg
 
 2. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">통합 딥링크 API</Anchor>를 사용하여 딥 링크 매개변수를 가져오고 딥 링크 데이터를 처리합니다.
 
+
+<div id="configure-your-app-to-handle-weblinks-and-application-links" />
 
 #### **웹 링크 및 애플리케이션 링크를 처리하도록 앱을 구성하세요**
 

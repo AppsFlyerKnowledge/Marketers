@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 리텐션 및 사용자 수준(로데이터) 사용 정책은 앱스플라이어, 관련 법률 및 SRN("**파트너**") 이용 약관에 의해 결정됩니다.
 
+<div id="caution" />
+
 > ❗️ **주의**
 >
 > 앱스플라이어는 본 문서에서 정보 제공의 목적으로만 데이터를 제한하여 설명을 제공합니다.   여기에 명시된 내용은 법적 조언이 아닙니다. 정보와 편의를 위해 제공됩니다.
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## 데이터 리텐션 및 삭제 의무
 
 앱스플라이어는 앱, 파트너 및 기타 소스로부터 사용자 수준 데이터를 수신합니다.
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### 광고주의 사용자 수준 데이터 가용성
 
 일반적으로 사용자 수준의 데이터는 구독 패키지에 원시 데이터가 포함된 경우 90일 접근 기간 동안 원시 데이터 보고 도구를 통해 광고주에게 제공됩니다 (참조 <Anchor target="_blank" href="/marketers/ko/docs/data-availability-windows">데이터 가용성 창</Anchor>). 경우에 따라 로데이터 제한이 있습니다.
+
+<div id="data-retention" />
 
 ### 데이터 보존
 
@@ -63,6 +71,8 @@ AppsFlyer는 사용자 수준의 데이터를 제한된 기간 동안 보관합�
   * 파트너 데이터 공유 정책
   * <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집약형 프라이버시 강화 모드</Anchor>가 설정되어 있습니다.
 
+<div id="partner-data-retention-periods" />
+
 #### 파트너 데이터 리텐션 기간
 
 | SRN/파트너 | 파트너 ID(PID) | 인스톨한 다음 [x]개월 후에 데이터 삭제 |
@@ -80,6 +90,8 @@ AppsFlyer는 사용자 수준의 데이터를 제한된 기간 동안 보관합�
 | Snapchat (<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">TOS</Anchor>) * | snapchat\_int | 6 |
 | TikTok for Business | tiktokglobal\_int | 13 |
 | X Ads(이전의 트위터) | twitter\_int | 3 |
+
+<div id="note" />
 
 > 📘 **참고:**
 >

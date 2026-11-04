@@ -26,6 +26,8 @@ x-zendesk:
 
 변호사로부터의 한마디: 여기에 명시된 내용은 법적 조언이 아닙니다. 정보와 편의를 위해 제공됩니다. 귀하는 GDPR, CCPA 또는 기타 법률이 귀하에게 어떻게 적용될 수 있는지 또는 적용되지 않을 수 있는지를 정확히 판단하기 위해 법률 및 기타 전문 자문가와 긴밀히 협력해야 합니다. 사용자와 앱스플라이어간의 프라이버시 관계는 <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">앱스플라이어 서비스 개인정보 보호 정책</Anchor>에 의해 관리됩니다. 본 서비스 개인 정보 보호 정책과 관련하여 질문이 있거나 데이터 보호 책임자에게 문의하려면 privacy@appsflyer.com. 일반 데이터 보호 규정(General Data Protection Regulation) 제27조에 의거하여, 앱스플라이어의 EU 내 대리인은 AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Germany (연락처 privacy@appsflyer.com; +49-30-166373500)입니다.
 
+<div id="privacy-regulations" />
+
 ## 개인정보 보호 규정
 
 본 기사에서 개인정보 보호정책에 대한 참조에는 다음 테이블에 기재한 규정이 포함됩니다.
@@ -39,6 +41,8 @@ x-zendesk:
 
 용어 프라이버시 규정, GDPR, CCPA, LGPD 및 PDPA는 본 기술자료에서 상호 교환 가능하게 사용됩니다.
 
+<div id="the-opendsr-initiative" />
+
 ### OpenDSR 이니셔티브
 
 개인 정보 보호 규정에 따라 제출된 데이터 주체의 요청을 처리하고 관리하기 위해 앱스플라이어는 mParticle, Amplitude 및 Braze와 함께 OpenDSR 프로토콜(이전의 OpenGDPR)을 시작했습니다.
@@ -47,6 +51,8 @@ OpenDSR은 소비자 데이터의 공정하고 투명한 사용을 위해 기술
 
 <Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">OpenDSR 이니셔티브에 대해 자세히 알아보세요</Anchor>.
 
+<div id="definitions" />
+
 ### 정의
 
 | DSR 용어 | 앱스플라이어 용어 | 설명 |
@@ -54,6 +60,8 @@ OpenDSR은 소비자 데이터의 공정하고 투명한 사용을 위해 기술
 | 데이터 주체 | 앱 사용자 또는 최종 사용자 | 데이터가 수집되는 앱 사용자 |
 | 데이터 처리자 | 앱 소유자 또는 광고주 | 앱 소유자는 개인 데이터가 처리되는 목적 및 수단을 판별합니다. |
 | 데이터 처리 수탁자 | 앱스플라이어 및 파트너 | AppsFlyer 및 관련 파트너가 데이터 처리자를 대신해 개인 데이터를 처리합니다. |
+
+<div id="dsr-requirements" />
 
 ### DSR 요구 사항
 
@@ -65,6 +73,8 @@ DSR은 데이터 처리자가 준수해야 하는 데이터 주체의 필수 권
 | **이동성** | 앱 사용자에게 제공되는 모든 개인 데이터는 CSV 파일처럼 흔히 사용되는, 기계로 판독 가능한 구조화된 형식이어야 합니다. | 앱 소유자는 앱 사용자의 처리된 개인 데이터의 사본을 수신합니다. |
 | **정정** | 데이터가 정확하지 않거나 사실이 아닌 경우 앱 사용자에게 이를 정정할 수 있도록 허용합니다. 앱 소유자는 부정확하거나 불완전한 데이터를 지우거나 정정해야 합니다. | <ul><li>앱스플라이어는 정정 요청 이전에 기록된 앱 사용자의 데이터를 삭제합니다.</li><li>이후에 수신된 데이터는 앱스플라이어에서 기록합니다.</li></ul> |
 | **삭제** | 삭제 권리에 따라 앱 소유자가 요청을 받은 날로부터 14일 이내에 개인 데이터를 제거해야 합니다. | 데이터를 삭제합니다. |
+
+<div id="appsflyer-gdpr-requests-api" />
 
 ## AppsFlyer의 GDPR 요청 API
 
@@ -80,6 +90,8 @@ DSR은 데이터 처리자가 준수해야 하는 데이터 주체의 필수 권
 <div id="1-gdpr-request" />
 
 <Accordion title="1. GDPR 요청">
+
+<div id="gdpr-request-flow" />
 
 ### GDPR 요청 과정
 
@@ -99,6 +111,8 @@ GDPR 요청 유형인 열람, 이동, 삭제 및 정정 과정은 모두 동일�
 
      **참고: 이 10일 기간은 앱 소유자가 요청을 제출할 때 시작됩니다. 48시간 후, 요청 상태가 진행 중으로 변경되며 추가 8일 이내에 완료되어 총 10일이 소요됩니다.**
 
+<div id="gdpr-request-format" />
+
 ### GDPR 요청 형식
 
 HTTP POST를 통해 GDPR 요청 API를 다음 엔드포인트로 제출할 수 있습니다.
@@ -109,9 +123,13 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 
 API 권한 부여의 경우 Pull API와 동일한 V2 API 토큰을 사용합니다. 관리자는 대시보드의 API 토큰 페이지에서 <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens#토큰-검색">토큰을 검색할</Anchor> 수 있습니다. 요청 헤더에 토큰을 다음과 같이 추가하세요:
 
+<div id="parameters" />
+
 #### 파라미터
 
 <table><thead><tr><th><strong>속성 이름</strong></th><th><strong>필수</strong></th><th><strong>설명</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>예</td><td>UUID v4 문자열입니다. 데이터 처리 수탁자에게 요청을 제출할 때 데이터 처리자가 생성합니다. 요청의 상태를 체크하고 요청을 업데이트 또는 취소하기 위해 사용할 수 있습니다.</td></tr><tr><td><strong>subject_request_type</strong></td><td>예</td><td>GDPR 요청 유형을 나타내는 문자열 값입니다. 지원 값:<ul><li>erasure</li><li>portability</li><li>액세스</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>예</td><td><ul><li>요청자의 신원을 정의하는 ID 오브젝트의 배열(아래 참조).</li><li>각 요청은 하나의 주체만 포함할 수 있습니다.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>예</td><td><ul><li>데이터 주체가 최초로 요청한 시간에 대한 RFC 3339 날짜 문자열</li><li>UTC의 타임 스탬프</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>예</td><td><p>이 요청을 시도한 모바일 앱을 나타내는 문자열입니다.</p><p><strong>예</strong>:</p><ul><li> <strong>iOS</strong>: id123456789 </li><li> <strong>안드로이드</strong>: com.example, com.publishers.name  </li><li> <strong>스토어 외 안드로이드</strong>: com.publisher.name-channel<br/><strong>일러두기</strong> 일부 경우에는 앱 소유자가 Android Google Play 이름을 사용하여 스토어 외 어트리뷰션을 기록하는 경우도 있습니다. 이러한 경우 대시보드에 표시되는 대로 일반 앱 이름을 사용하십시오.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>아니요</td><td>GDPR 요청 API의 알맞은 버전을 나타내는 버전 문자열</td></tr><tr><td><strong>status_callback_urls</strong></td><td>아니요, 하지만 추천합니다</td><td><ul><li>다음 요청 상태 변경으로 보낼 상태 콜백에 대한 최대 3개의 엔드포인트 배열입니다.</li><li>HTTPS 엔드포인트만 지원됩니다.</li><li>잘못된 URL은 거부됩니다.</li></ul></td></tr><tr><td rowspan="2"> <strong>플랫폼</strong><br/><br/> </td><td>아니요</td><td>가치는 지원되는 DSR 플랫폼 중 하나입니다:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code> </td></tr><tr><td>예</td><td><p>CTV, PC 또는 콘솔 플랫폼 요청의 경우 다음 플랫폼 중 하나를 포함합니다.  </p><p> <code>nativepc</code>, <code>playstation</code>, <code>roku</code>, <code>steam</code>, <code>webos</code>, <br/><code>vidaa</code>,<code>tizen</code>, <code>smartcast</code>, <code>chatgpt</code>, <code>battlenet</code>, <br/><code>quest</code>, <code>switch</code>, <code>xbox</code>, <code>epic</code></p></td></tr></tbody></table>
+
+<div id="subject_identities-objects" />
 
 #### Subject\_identities 오브젝트
 
@@ -120,6 +138,10 @@ API 권한 부여의 경우 Pull API와 동일한 V2 API 토큰을 사용합니�
 | identity\_type | 예 | <ul><li>다음 플랫폼의 문자열 형식의 ID 유형은 다음 중 하나입니다:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li><li>customer\_user\_id(CUID)</li></ul></li></ul><ul><li>다음과 같은 플랫폼에 대해서만:<ul><li>appsflyer\_id</li><li>customer\_user\_id(CUID)</li></ul></li></ul><ul><li>예: `android_advertising_id`</li></ul>**<span id="01JFVT3ATDGJXBX4VN7BHX6JB8"></span>중요!**<br />OpenDSR API를 통해 CUID를 사용하려면, 인앱 이벤트에서 CUID를 /와 함께 전송해야 합니다 : 또는 |
 | identity\_value | 예 | <ul><li>형식: 문자열</li><li>예시: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
 | identity\_format | 예 | <ul><li>identity\_value를 인코딩하는 데 사용되는 방법: `raw`rawraw만 지원됩니다.</li><li>예시: "raw"</li></ul> |
+
+<div id="zd-gdpr-erasure-request-code-example" />
+
+<div id="example-gdpr-erasure-request" />
 
 ### 예시: GDPR 삭제 요청
 
@@ -177,6 +199,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
  ]
 }'
 ```
+
+<div id="gdpr-erasure-request-code-example" />
 
 ### GDPR 삭제 요청 코드 예시
 
@@ -280,6 +304,8 @@ print(res.text)
 3. ***completed*** - 요청이 처리되었습니다.
 4. ***canceled*** - 요청이 취소되었습니다.
 
+<div id="status-request-format" />
+
 ### 상태 요청 형식
 
 HTTP GET을 통해 상태 요청을 다음 엔드포인트로 제출할 수 있습니다.
@@ -287,6 +313,8 @@ HTTP GET을 통해 상태 요청을 다음 엔드포인트로 제출할 수 있�
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
+
+<div id="status-response-example" />
 
 ### 상태 응답 예시
 
@@ -303,6 +331,8 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
  "request_status":"pending",
 }
 ```
+
+<div id="status-postbacks" />
 
 ### 상태 포스트백
 
@@ -325,6 +355,8 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 "Request_status":"pending"
 }
 ```
+
+<div id="validate-postback" />
 
 ### 포스트백 유효성 검사
 
@@ -369,6 +401,8 @@ AppsFlyer가 지원하는 형식을 알아보기 위해 HTTP GET을 통한 검�
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
+<div id="discovery-response-example" />
+
 ### 검색 응답 예시
 
 ```http
@@ -403,6 +437,8 @@ HTTP DELETE를 제출하려면 :
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
+<div id="cancellation-response" />
+
 ### 취소 응답
 
 GDPR 취소 요청을 받으면 AppsFlyer는 상태 코드 202 및 기타 여러 파라미터와 함께 HTTP 응답을 반환합니다.
@@ -416,6 +452,8 @@ GDPR 취소 요청을 받으면 AppsFlyer는 상태 코드 202 및 기타 여러
 <Accordion title="6. 6. GDPR 요청 테스트 API">
 
 이 AppsFlyer API는 AppsFlyer의 GDPR 요청 API용 테스트 API입니다.
+
+<div id="how-does-it-work" />
 
 ### 어떻게 작동하나요?
 
@@ -491,6 +529,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 
 이 절에서는 GDPR API HTTP 리턴 코드 및 오류 메시지를 자세히 설명합니다.
 
+<div id="gdpr-api-return-codes" />
+
 #### GDPR API 리턴 코드
 
 | 리턴 코드 | 설명 |
@@ -499,11 +539,15 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 | 202 | 취소 요청 수신함 |
 | 400 | 잘못된 요청. 본문에는 다음 표에 나열된 오류 코드 및 메시지가 포함되어 있습니다. |
 
+<div id="http-return-code-400---bad-request" />
+
 ### HTTP 리턴 코드 400-잘못된 요청
 
 리턴 코드 400을 가진 메시지에는 오류 코드 및 메시지와 함께 JSON이 포함되어 있습니다.
 
 `{ "error": { "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%" } }`
+
+<div id="return-code-400-bad-request-messages" />
 
 #### 리턴 코드 400 잘못된 요청 메시지
 
@@ -535,6 +579,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 | e511 | 내부 문제, 60분 기다렸다가 다시 시도하십시오. 문제가 지속되면 AppsFlyer 지원팀에 문의하십시오. support@AppsFlyer.com |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특징 및 제약 사항
 

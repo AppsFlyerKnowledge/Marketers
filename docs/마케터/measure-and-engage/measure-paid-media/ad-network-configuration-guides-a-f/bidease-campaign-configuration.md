@@ -23,11 +23,15 @@ x-zendesk:
 
 <Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="298px" />
 
+<div id="setting-up-bidease" />
+
 ## Medialyzer 설정
 
 Bidease와의 통합은 클릭스루 및 뷰스루 어트리뷰션을 지원합니다.
 
 구성 창에는 다음과 같은 탭이 포함되어 있습니다: 연동, 어트리뷰션 링크, 비용, 광고 수익, 권한. Bidease의 경우 사용 가능한 탭은 통합, 어트리뷰션 링크 및 권한입니다.
+
+<div id="note" />
 
 > 📘 **참고사항**
 >
@@ -39,6 +43,8 @@ Bidease와의 통합은 클릭스루 및 뷰스루 어트리뷰션을 지원합�
 <Accordion title="연동 탭">
 
 **연동** 탭에는 아래 설명된 여러 섹션이 포함되어 있습니다.
+
+<div id="activate-partner" />
 
 #### 파트너 활성화
 
@@ -54,6 +60,8 @@ Bidease와의 통합은 클릭스루 및 뷰스루 어트리뷰션을 지원합�
    **참고:** 토글은 파트너와 함께 작업하는 동안 켜져 있어야<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">(활성화되어야)</Anchor> 합니다.
 5. 아래 설명된 대로 관련 탭을 사용하여 설정을 완료하십시오.
 
+<div id="advanced-privacy" />
+
 #### 프라이버시 강화 모드
 
 iOS 앱의 경우에만: 포스트백 및 리포트를 통해 파트너와 공유되는 데이터 제어는 고급 개인정보 보호( iOS 14.5 이상) <Anchor target="_blank" href="/marketers/ko/docs/about-raw-data-identifier-restrictions">토글 상태</Anchor>에 따라 달라집니다.
@@ -64,13 +72,19 @@ iOS 앱의 경우에만: 포스트백 및 리포트를 통해 파트너와 공�
 | 포스트백은 <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks">고급 개인정보 보호 템플릿</Anchor>에 따라 전송됩니다. |  |
 | <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집약된 익명 데이터</Anchor>는 파트너와 공유되므로 사용자 수준 데이터(디바이스 ID)가 공유되지 않습니다. |  |
 
+<div id="transaction-id" />
+
 #### 트랜잭션 ID
 
 iOS 앱의 경우에만: SKAN 트랜잭션 ID 공유가 켜져 있으면 앱스플라이어가 SKAdNetwork 포스트백의 트랜잭션 ID를 파트너와 공유할 수 있습니다. 그러면 Reddit이 SKAdNetwork 전환 값을 디코딩할 수 있습니다.
 
+<div id="install-attribution" />
+
 #### 인스톨 어트리뷰션
 
 Bidease의 뷰스루 인스톨을 어트리뷰션하려면 인스톨 뷰스루 어트리뷰션을 사용 설정하세요. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에서 사용할 수 있습니다.
+
+<div id="default-postbacks" />
 
 #### 기본 포스트백
 
@@ -79,6 +93,8 @@ Bidease의 뷰스루 인스톨을 어트리뷰션하려면 인스톨 뷰스루 �
 * **설치**의 경우 다음 중 하나를 선택합니다.
   * 이 파트너사만 이 파트너만 해당: 인스톨이 이 파트너에게 어트리뷰션된 경우, 즉 앱을 설치한 사용자가 Bidease에서 온 경우에만 포스트백을 보냅니다.
   * 오가닉을 포함한 모든 미디어 소스
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -101,6 +117,8 @@ Bidease의 뷰스루 인스톨을 어트리뷰션하려면 인스톨 뷰스루 �
    1. 왼쪽 상단 모서리의 파트너 이름 아래에서 앱 이름을 클릭하면 앱 목록이 열립니다.
    2. 드롭다운 목록에서 다른 앱을 선택합니다.
    3. 선택한 앱에 대해 <Anchor target="_blank" href="/marketers/ko/docs/amazon-ads-campaign-configuration#integration-tab">통합 단계를</Anchor> 반복합니다.
+
+<div id="note-1" />
 
 > 📘 **참고사항**
 >
@@ -139,6 +157,8 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 <Accordion title="권한 탭">
 
 데이터에 액세스하고 다양한 작업을 수행할 수 있도록 Bidease <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">에 부여할 권한을</Anchor> 선택합니다.
+
+<div id="note-2" />
 
 > 📘 **참고사항**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **한눈에 보기:** LG 커넥티드 TV(CTV) 앱을 앱스플라이어와 연동하여 LG 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 수신하세요.
 
+<div id="about-lg-ctv-attribution" />
+
 ## LG CTV 어트리뷰션 정보
 
 스트리밍용 LG Webos OS는 모든 LG TV에서 실행됩니다.
@@ -34,6 +36,8 @@ LG API 연동은 다음을 지원합니다.
 
 * LG 스마트 TV.
 * CTV 간 어트리뷰션 및 이벤트 녹화. 사용자의 LG 기기에 대한 의미, 어트리뷰션 및 기록.
+
+<div id="integration-procedures" />
 
 ## 연동 절차
 
@@ -58,6 +62,8 @@ LG API 연동은 다음을 지원합니다.
 | 어트리뷰션 |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **참고 항목**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 
 ![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
 
+<div id="activate-partner" />
+
 ## 파트너 활성화
 
 **전제 조건:** 연동을 설정하기 전에 <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락</Anchor>하여 계정을 개설하세요.
@@ -37,16 +39,22 @@ x-zendesk:
    **참고:** 파트너와 협력하는 동안 토글은 반드시 켜져<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">(활성화)</Anchor> 있어야 합니다.
 5. 아래 설명된 대로 관련 탭을 사용하여 설정을 완료하십시오.
 
+<div id="setting-up-awin" />
+
 ## Awin 설정
 
 Awin과의 통합은 클릭스루 어트리뷰션을 지원합니다.
 
 구성 창에는 다음과 같은 탭이 포함되어 있습니다: 연동, 어트리뷰션 링크, 비용, 광고 수익, 권한. Avow GmbH의 경우 사용 가능한 탭은 통합, 저작자 표시 링크 및 권한입니다.
 
+<div id="note" />
+
 > 📘 **참고사항**
 >
 > * 일부 설정은 iOS와 안드로이드 기기마다 다릅니다.
 > * <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner">파트너 연동 설정</Anchor>에 대해 더 알아보세요.
+
+<div id="prerequisite" />
 
 ### 전제 조건
 
@@ -58,9 +66,13 @@ Awin과의 통합은 클릭스루 어트리뷰션을 지원합니다.
 
 **연동** 탭에는 아래 설명된 여러 섹션이 포함되어 있습니다.
 
+<div id="activate-partner-1" />
+
 #### 파트너 활성화
 
 연동을 구성하려면 먼저 **파트너 활성화** 토글을 <Anchor target="_blank" href="/marketers/ko/docs/amazon-ads-campaign-configuration#파트너-활성화">켜야</Anchor> 합니다. 파트너를 활성화 및 비활성화하는 방법에 대해 알아보세요. 추가 정보는 <Anchor target="_blank" href="https://developer.awin.com/docs/appsflyer">Awin 통합 페이지</Anchor>를 참조할 수 있습니다.
+
+<div id="advanced-privacy" />
 
 #### 프라이버시 강화 모드
 
@@ -72,25 +84,35 @@ iOS 앱의 경우: 포스트백 및 <Anchor target="_blank" href="/marketers/ko/
 | 포스트백은 <Anchor target="_blank" href="/partners/ko/docs/advanced-privacy-guide-postback-macros-for-ad-networks">고급 개인정보 보호 템플릿</Anchor>에 따라 전송됩니다. |  |
 | <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework">집계된 익명 데이터</Anchor>만 파트너와 공유되며, 유저 수준 데이터(디바이스 ID)는 공유되지 않습니다. |  |
 
+<div id="general-settings" />
+
 #### 일반 설정
 
 **Awin 광고주 ID**
 
 Awin 판매자 ID를 추가합니다.
 
+<div id="note-1" />
+
 > 📘 **참고**
 >
 > 여러 상인 ID가 있는 경우, 주요 ID를 연결하십시오.
 
+<div id="default-postbacks" />
+
 #### 기본 포스트백
 
 인스톨 포스트백은 이 파트너에게만 전송됩니다.
+
+<div id="in-app-event-settings" />
 
 #### 인앱 이벤트 설정
 
 **Awin 광고주 ID**
 
 Awin 판매자 ID를 추가합니다.
+
+<div id="in-app-event-postbacks" />
 
 #### 인앱 이벤트 포스트백
 
@@ -113,6 +135,8 @@ Awin 판매자 ID를 추가합니다.
    1. 왼쪽 상단 모서리에서 파트너 이름 아래에 있는 앱 이름을 클릭하여 앱 목록을 엽니다.
    2. 드롭다운 목록에서 다른 앱을 선택합니다.
    3. 선택한 앱에 대해 <Anchor target="_blank" href="/marketers/ko/docs/amazon-ads-campaign-configuration#integration-tab">연동 단계</Anchor>를 반복합니다.
+
+<div id="note-2" />
 
 > 📘 **참고사항**
 >
@@ -150,12 +174,16 @@ Awin의 경우 광고 수익을 사용할 수 없습니다.
 
 Awin이 데이터에 액세스하고 다양한 작업을 수행할 수 있도록 부여할 권한을 선택합니다.
 
+<div id="note-3" />
+
 > 📘 **참고사항**
 >
 > * 권한 토글이 켜진 상태에서 연동이 <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">비활성화</Anchor>되면 권한이 계속 부여됩니다.
 > * <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#permissions-tab">권한 부여</Anchor>에 대해 자세히 알아보십시오.
 
 </Accordion>
+
+<div id="deep-linking-and-deferred-deep-linking-using-onelink" />
 
 ## OneLink를 사용한 딥링킹(Deep Linking) 및 디퍼드 딥링킹(Deferred Deep Linking)
 
@@ -165,6 +193,8 @@ AWIN은 고객에게 분석 데이터를 제공할 수 있도록 플랫폼에서
 AWIN을 통해 원링크로 딥링킹하는 방법:
 
 * <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template#add-redirection-logic-for-existing-app-users">URI 스킴으로 원링크 URL 설정</Anchor>
+
+<div id="note-4" />
 
 > 📘 **참고사항**
 >

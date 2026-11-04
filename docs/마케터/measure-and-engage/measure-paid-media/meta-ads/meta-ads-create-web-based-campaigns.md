@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **요약:** Meta 광고 웹 캠페인을 사용하여 Meta 광고의 웹-to-앱 전환 측정
 
+<div id="overview" />
+
 ## 개요
 
 앱스플라이어는 사용자 유입 웹 기반 캠페인을 위해 Meta 광고 (`metaweb_int`)와의 연동을 지원하며, 이로써 Meta의 Conversion API(CAPI)를 통해 직접 어트리뷰션 및 전환 데이터를 보고할 수 있습니다. 그런 다음 Meta는 해당 데이터를 활용하여 광고 타겟팅을 최적화하고, 성과를 측정하며, 오디언스를 커스텀하여 구축할 수 있습니다.
+
+<div id="note" />
 
 > 📘 **참고**
 >
 > 현재 Meta 웹과의 연동은 CAPI로의 리인게이지먼트 포스트백 전송을 지원하지 않습니다.
 
+<div id="prerequisites" />
+
 ### 필수 조건
 
 Meta 광고 연동을 활성화하기 전에 [Meta Business Manager에 비즈니스 계정이](https://www.facebook.com/business/help/1710077379203657?id=180505742745347) 있는지 확인하십시오.
+
+<div id="how-to-create-a-meta-web-ads-campaign" />
 
 ### Meta 웹 광고 캠페인을 만드는 방법
 
@@ -45,6 +53,8 @@ Meta 광고 연동을 활성화하기 전에 [Meta Business Manager에 비즈�
 
 * [OneLink Smart Script로 랜딩 페이지 만들기](#원링크-스마트-스크립트로-랜딩-페이지-만들기) (선택 사항)
 * [OneLink Smart Banners로 랜딩 페이지 만들기](#원링크-스마트-배너로-랜딩-페이지-만들기) (선택 사항)
+
+<div id="set-up-meta-web-ads-integration-in-appsflyer" />
 
 ## 앱스플라이어에서 Meta 웹 광고 연동 설정
 
@@ -109,6 +119,8 @@ Meta 웹 광고 통합을 활성화하려면 다음 단계를 따르세요.
    * **오가닉을 포함한 모든 미디어 소스**: 파트너 및 오가닉 이벤트에 어트리뷰트된 이벤트에 대한 포스트백을 전송합니다.
 7. **포함** 열에서 이벤트가 수익 값과 함께 전송될지 여부를 선택합니다. <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#포스트백에-포함할-데이터">포스트백에 포함할 데이터</Anchor> 참조
 
+   <div id="note-1" />
+
    > 📘 **참고**
    >
    > 구매 이벤트를 설정하는 경우, **포함** 열을 **값 및 수익**으로 설정합니다. 다른 옵션을 선택하면 포스트백이 실패하게 됩니다.
@@ -121,6 +133,8 @@ Meta 웹 광고 통합을 활성화하려면 다음 단계를 따르세요.
     3. 선택한 앱에 대해 연동 단계를 반복합니다.
 
 </Accordion>
+
+<div id="set-up-appsflyer-integration-in-meta-ads" />
 
 ## Meta 광고에서 앱스플라이어 연동 설정하기
 
@@ -137,6 +151,8 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 3. [선택 사항] 위의 옵션에 사용자 지정 목표를 추가하려면 다음을 수행합니다.
    1. Meta 광고에서 캠페인 목표로 설정하려는 맞춤 이벤트를 선택하고 Meta 광고에서 전환 행동으로 표시합니다.
    2. 앱스플라이어 **Meta 웹 연동** 페이지 **인앱 이벤트 포스트백**탭에서 앱스플라이어 이벤트를 사용자 지정 파트너 이벤트에 매핑하고(**파트너 이벤트에 매핑** 열), Meta 광고의 전환 액션과 동일한 이름으로 지정합니다.
+
+      <div id="note-3" />
 
       > 📘 **참고**
       >
@@ -164,6 +180,8 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
      이러한 모든 사용 사례에 대해 [스마트 스크립트가 있는 랜딩 페이지](#원링크-스마트-스크립트로-랜딩-페이지-만들기) 또는 [스마트 배너](#원링크-스마트-배너로-랜딩-페이지-만들기)를 만듭니다.
    * **AF 어트리뷰션 링크:** AF 어트리뷰션 링크(원링크, 싱글 플랫폼 또는 크로스 플랫폼)를 사용하는 것은 사용자가 랜딩 페이지를 먼저 방문하지 않고 앱을 다운로드할 수 있도록 스토어로 직접 리디렉션되도록 하려는 경우에 권장됩니다.
+
+     <div id="important" />
 
      > 🚧 **중요!**
      >
@@ -218,15 +236,21 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
      https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=metaweb_int&af_campaign_id={{campaign.id}}&af_campaign={{campaign.name}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
      ```
 
+   <div id="note-4" />
+
    > 📘 **참고**
    >
    > Meta는 광고가 클릭될 때, `fbclid={{fbclid}}`을 도착 URL로 자동으로 추가합니다.
 
 
+   <div id="tip" />
+
    > 👍 **팁**
    >
    > 캠페인 분석을 간소화하기 위해 캠페인 이름에는 캠페인 유형(웹 또는 모바일)을 접두사 또는 접미사로 포함합니다. (예: campaign-name\_web)
 
+
+<div id="note-5" />
 
 > 📘 **참고**
 >
@@ -242,11 +266,15 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 [![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
 
+<div id="important-1" />
+
 > 🚧 **중요!**
 >
 > 를 선택하지 않도록 주의하세요. 그렇지 않으면 Meta가 SRN API를 사용하여 해당 전환을 청구하며, 이로 인해 리포팅 및 최적화가 잘못 정렬될 수 있습니다.
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## 원링크 스마트 스크립트로 랜딩 페이지 만들기
 
@@ -281,6 +309,8 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 1. 캠페인의 원링크 어트리뷰션 링크에 대한 템플릿을 설정합니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template#원링크-템플릿-만들기">원링크 템플릿을 만드는 방법</Anchor>을 참조하세요.
 2. 스마트 스크립트를 만듭니다. 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">원링크 스마트 스크립트 생성 방법</Anchor>을 참조하세요.
+
+   <div id="note-9" />
 
    > 📘 **참고**
    >
@@ -323,12 +353,16 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
      * 크로스 플랫폼 랜딩 페이지를 만드는 방법에 대한 [데모와 지침](https://appsflyersdk.github.io/appsflyer-sample-app-smartscript-demo-page/)입니다.
    * 개발자에게 발신 URL에 수신 `fbclid`매개변수를 포함하라고 상기시켜주세요.
 
+     <div id="note-8" />
+
      > 📘 **참고**
      >
      > 앱스플라이어 로데이터 보고서에 표시하려면 들어오는 `fbclid`매개변수도 나가는 `fbclid`매개변수와 함께 나가는 매개변수 `af_sub[1-5]`중 하나에 매핑되어야 합니다.
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## 원링크 스마트 배너로 랜딩 페이지 만들기
 
@@ -368,15 +402,21 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## 웹 투 앱 어트리뷰션 데이터 보기
 
 웹 기반 전환 이벤트는 원래의 `metaweb_int` PID로 메타에 전송되지만, 앱스플라이어 대시보드와 로데이터 리포트에서 `Facebook Ads` PID로 보고됩니다. 이는 운영 컨버전 이벤트와 컨버전 지원 이벤트에 모두 적용됩니다.
 
 이 통합 리포팅 뷰에서는 전체 웹 및 모바일 비용 리포팅을 포함하여 한 곳에서 웹 및 앱 캠페인 성과를 모두 분석할 수 있습니다.
 
+<div id="view-in-the-dashboard" />
+
 ### 대시보드에서 보기
 
 모든 메타 웹투앱 어트리뷰션은 개요 및 액티비티 대시보드의 `Facebook Ads` 아래에 표시됩니다. 이를 통해 플랫폼 전반에 걸친 캠페인 성과에 대한 통합된 단일 시야를 제공합니다. 표준 필터와 분석 기준을 사용하여 Meta Ads 데이터에서 앱 및 웹 트래픽을 비교할 수 있습니다.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### 로데이터 및 API 리포트에서 보기
 
@@ -392,6 +432,8 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 Meta 광고에서 [추적된 이벤트를 설정](#c-select-tracked-events)했을 때 웹 이벤트 대신 앱 이벤트로 설정했습니다. 웹 이벤트로 설정해야 합니다.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## 특성과 제한 사항
 
