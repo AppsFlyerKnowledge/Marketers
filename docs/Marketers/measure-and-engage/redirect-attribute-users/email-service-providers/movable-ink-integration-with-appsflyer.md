@@ -74,7 +74,7 @@ Movable Ink es un partner de optimización de contenido dinámico que ofrece exp
 | `{{onelink.domain}}` | Tu dominio de AppsFlyer | mink.onelink.com |  | UI de AppsFlyer |
 | `{{template_id}}` | ID de la plantilla de enlace configurada en AppsFlyer | 1a6f |  | UI de AppsFlyer |
 | `{{pid_value}}` | ID del ESP o de la fuente de medios | Nombre del ESP |  | UI de AppsFlyer |
-| `{{mi_link_from_creative<br /><br />\n<br /><br />_tag}}` | El enlace HREF de clic de la etiqueta creativa de Movable Ink. Disponible en la página Finish & Export (consulta la imagen en el paso 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | El enlace debe estar codificado. | Movable Ink |
+| `{{mi_link_from_creative`<br /><br />`\n`<br /><br />`_tag}}` | El enlace HREF de clic de la etiqueta creativa de Movable Ink. Disponible en la página Finish & Export (consulta la imagen en el paso 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | El enlace debe estar codificado. | Movable Ink |
 
    <div id="note" />
 
