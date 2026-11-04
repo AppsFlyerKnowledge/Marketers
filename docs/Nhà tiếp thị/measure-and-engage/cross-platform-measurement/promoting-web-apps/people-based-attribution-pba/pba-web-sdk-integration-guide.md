@@ -476,8 +476,8 @@ AF('pba', 'setCustomerUserId' , '663274')
 | --- | --- | --- |
 | eventType | Có | Loại sự kiện<br /><br />Định dạng: Chuỗi<br /><br />Luôn điền thông số này với SỰ KIỆN.<br /><br />Ví dụ: eventType: "EVENT" (SỰ KIỆN) |
 | Tên của sự kiện | Có | Tên của sự kiện<br /><br />Định dạng: Chuỗi<br /><br />Ví dụ: Mua hàng, Đặt mua dài hạn |
-| eventCategory | Không | Thông số này không còn được hỗ trợ nữa và sẽ bị xóa khỏi hệ thống vào một ngày sẽ được công bố. Thay vào đó, hãy sử dụng thông số eventValue. |
-| eventLabel | Không | Thông số này không còn được hỗ trợ nữa và sẽ bị xóa khỏi hệ thống vào một ngày sẽ được công bố. Thay vào đó, hãy sử dụng thông số eventValue. |
+| ~~eventCategory~~ | Không | Thông số này không còn được hỗ trợ nữa và sẽ bị xóa khỏi hệ thống vào một ngày sẽ được công bố. Thay vào đó, hãy sử dụng thông số eventValue. |
+| ~~eventLabel~~ | Không | Thông số này không còn được hỗ trợ nữa và sẽ bị xóa khỏi hệ thống vào một ngày sẽ được công bố. Thay vào đó, hãy sử dụng thông số eventValue. |
 | eventRevenue | Không | Doanh thu được chỉ định cho một sự kiện chuyển đổi<br /><br />Định dạng: Động |
 | eventRevenueCurrency | Không | Tiền tệ doanh thu<ul><li>Mã tiền tệ 3 ký tự <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor></li><li>Mặc định: USD</li></ul>Định dạng: Chuỗi |
 | Giá trị của sự kiện | Không | Bản đồ các thông số sự kiện mô tả sự kiện. Sử dụng thông số này để gửi các sự kiện phong phú trong ứng dụng như SKU sản phẩm, giá của mục hàng.<br /><br />Định dạng: JSON<br /><br />**Ví dụ:** Để gửi SKU ABC123, có màu xanh lam và đơn giá là $3,99<br /><br />`{"sku": "ABC123", “color": "blue", "unit_price":3.99,"currency": "USD"}`<br /><br />**Giới hạn:** 1000 ký tự. Không được vượt quá mức này, vì nội dung sẽ bị cắt bớt. |
