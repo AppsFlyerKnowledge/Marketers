@@ -36,7 +36,7 @@ x-zendesk:
 
 **Ограничение на предоставление данных**: Метрики SKAN на обзорном дэшборде недоступны рекламным сетям и агентствам.
 
-Если метрики SKAN не отображаются на дэшборде, необходимо обновить [настройки таблицы](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
+<mark>Если метрики SKAN не отображаются на дэшборде, необходимо обновить [настройки таблицы](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).</mark>
 
 Параллельное представление позволяет получить аналитические сведения о метриках кампании. Используйте его для оценки метрик эффективности кампании для определения следующего:
 

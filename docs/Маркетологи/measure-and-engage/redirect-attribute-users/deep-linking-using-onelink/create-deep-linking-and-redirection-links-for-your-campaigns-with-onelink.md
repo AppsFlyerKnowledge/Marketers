@@ -320,11 +320,11 @@ AppsFlyer предоставляет различные шаблоны ленд�
        >
        > Например, для значения **deep\_link\_value** выбран тип фрукта, и разработчики сделали значения динамическими. Это означает, что вы можете вводить любые фрукты без необходимости дополнительной работы вашей команды разработчиков.
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=apples...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=bananas...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=peaches...`
 
 2. Получив подтверждение от разработчиков, что приложение работает в соответствии с выбранными параметрами и значениями, в разделе **Диплинкинг и перенаправление** на странице настройки ссылки введите **значение диплинка** в соответствии с тем, что вы решили с разработчиками.
 3. [Необязательно] Если для диплинкинга требуется более одной интеракции в приложении (например, вы хотите направить пользователей к продукту и отдельно предложить им скидку), вы можете добавить к полезной нагрузке диплинка **дополнительное значение диплинка** (используя параметр deep\_link\_sub1). Вы можете добавить дополнительные параметры диплинка (deep\_link\_sub2-10) в разделе **Дополнительные параметры**.

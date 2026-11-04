@@ -296,15 +296,18 @@ Web SDK работает в браузере. API S2S вместо этого п
 
 Web SDK и Segment — это два отдельных параллельных пути в AppsFlyer, а не один, подпитывающий другой: Web SDK продолжает отправлять визиты, которые содержат параметры атрибуции, а Segment отправляет события для ресурсов, где нет SDK. Ни один из этих путей не знает о другом; они пересекаются в AppsFlyer, где визит связывается с его событиями с помощью идентификатора, который вы отправляете по обоим путям.
 
-Web SDK — отправляет визиты
-
-Segment — отправляет события
-
-S2S API
-
-Joined by `appsflyer_id` or `customer_user_id`
-
-AppsFlyer — визит + событие, связанные
+```mermaid
+flowchart LR
+  sdk["Web SDK — отправляет визиты"] --> join["Joined by appsflyer_id or customer_user_id"]
+  seg["Segment — отправляет события"] --> s2s["S2S API"] --> join
+  join --> af["AppsFlyer — визит + событие, связанные"]
+  classDef src fill:#e8f1fb,stroke:#7ea6d8,color:#1f3b5c
+  classDef mid fill:#ececec,stroke:#c8c8c8,color:#333333
+  classDef dst fill:#d6f5dd,stroke:#5cb874,color:#14532d
+  class sdk,seg,s2s src
+  class join mid
+  class af dst
+```
 
 Web SDK и Segment — это два параллельных пути передачи данных в AppsFlyer, связанные общим идентификатором.
 

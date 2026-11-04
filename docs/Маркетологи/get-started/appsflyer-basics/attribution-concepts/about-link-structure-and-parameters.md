@@ -77,8 +77,8 @@ x-zendesk:
 | Информация для включения | <ul><li>[Медиа-источник](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[Кампания](#c)</li><li>[Идентификатор сайта \/ идентификатор подсайта](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | <ul><li>[Медиа-источник](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[Кампания](#c)</li><li>[Идентификатор сайта \/ идентификатор подсайта](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> |
 | Базовый URL-адрес | `{поддомен}`.onelink.me | app.appsflyer.com |
 | Уникальный идентификатор | Идентификатор шаблона | app\_id (идентификатор приложения) |
-| Структура URL-адреса | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
-| Пример | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
+| Структура URL-адреса | `https://{subdomain}.onelink.me/`<br />`{templateid}?pid={media_source}`<br />`&af_siteid={ApplicationID}`<br />`&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
+| Пример | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int`<br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`<br />`c=GreatCampaign&af_siteid=A1b1` |
 
 <div id="important" />
 
