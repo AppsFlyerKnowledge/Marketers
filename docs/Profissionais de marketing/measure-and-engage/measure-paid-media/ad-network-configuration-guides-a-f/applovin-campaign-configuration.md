@@ -48,7 +48,8 @@ x-zendesk:
 
 ### Ativar parceiro
 
-Na **primeira visita** aqui, você precisará ativar o botão **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
+Na **primeira visita** aqui, você precisará ativar o botão **Ativar parceiro** para habilitar a configuração dos parâmetros da aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
+**Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
 
 <div id="note" />
 

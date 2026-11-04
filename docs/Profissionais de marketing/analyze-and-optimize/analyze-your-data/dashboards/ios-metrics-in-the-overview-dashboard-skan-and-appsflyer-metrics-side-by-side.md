@@ -38,7 +38,7 @@ Em lado a lado, você exibe o desempenho da campanha usando os dados fornecidos 
 
 **Limitação do compartilhamento de dados**: As métricas SKAN no painel Visão geral não estão disponíveis para ad networks e agências.
 
-Se as métricas SKAN não aparecerem no painel, você deve atualizar as [configurações da tabela](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).
+<mark>Se as métricas SKAN não aparecerem no painel, você deve atualizar as [configurações da tabela](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table).</mark>
 
 A visualização lado a lado fornece insights sobre as métricas da campanha. Use-a para avaliar as métricas de desempenho da campanha em termos de:
 

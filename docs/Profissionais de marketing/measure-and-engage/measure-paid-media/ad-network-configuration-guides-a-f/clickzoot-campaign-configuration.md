@@ -53,7 +53,8 @@ Para uma descrição detalhada da Janela de configuração de Pprceiros, clique�
 
 ### Ativar parceiro
 
-No **primeira visita** aqui, você deve ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
+No **primeira visita** aqui, você deve ativar o botão ***Ativar parceiro*** para habilitar a configuração dos parâmetros da guia de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
+**Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
 
 <div id="integration-tab" />
 

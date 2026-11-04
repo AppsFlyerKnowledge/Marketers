@@ -75,7 +75,8 @@ Após a confirmação, você pode visualizar essa informação de duas maneiras:
 * **Log de auditoria**
   1. Na barra do menu, acesse o menu do usuário (lista suspensa de endereço de e-mail).
   2. Selecione **Central de segurança.**
-  3. Na seção do **log de auditoria**, clique em **Ver log de auditoria.** Você pode ver os detalhes de confirmação em **meus aplicativos**.
+  3. Na seção do **log de auditoria**, clique em **Ver log de auditoria.**  
+     Você pode ver os detalhes de confirmação em **meus aplicativos**.
 
 </Accordion>
 

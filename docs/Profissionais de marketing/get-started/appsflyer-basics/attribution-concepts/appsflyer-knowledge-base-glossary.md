@@ -673,7 +673,8 @@ Indica qual teria sido o CPA se um profissional de marketing tivesse pago por a�
 
 **Custo efetivo por clique**  
 (EN: Effective Cost per Click)  
- Indica qual teria sido o CPC se um profissional de marketing tivesse comprado cliques ao invés de impressões ou conversões. Veja [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Fórmula: Gasto total / Número de cliques = eCPC (conforme análise da AppsFlyer)*
+ Indica qual teria sido o CPC se um profissional de marketing tivesse comprado cliques ao invés de impressões ou conversões. Veja [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc)  
+*Fórmula: Gasto total / Número de cliques = eCPC (conforme análise da AppsFlyer)*
 
 #### eCPI
 

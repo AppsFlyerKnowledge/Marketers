@@ -227,7 +227,7 @@ Se o seu site impõe uma Política de Segurança de Conteúdo (CSP) usando nonce
 | Coloque o snippet code [que você selecionou acima](#selecionar-um-code-snippet) para que ele carregue o mais cedo possível no escopo da página. Para isso, coloque o código perto do topo da tag do cabeçalho. |
 | Se você estiver integrando o SDK usando o Google Tag Manager (GTM):<ul><li>Certifique-se de que o SDK é carregado uma vez por carregamento de página.</li><li>Configure o SDK para ativar assim que a página carregar usando a <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">priorização GTM.</Anchor></li></ul> |
 | Você pode implementar o Web SDK **com** ou **sem** Smart Banners. Siga as instruções relevantes nas seções a seguir. |
-| Requisitos obrigatórios de integração<ul><li>Gravação de visita</li><li>Gravação de evento</li><li>Definir o [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) (CUID) : Se você não tiver um CUID, entre em contato com seu CSM para conversar sobre alternativas.</li></ul>Valide a integração usando a <Anchor target="_blank" href="/marketers/pt/docs/test-pba-web-sdk-integration">ferramenta de teste</Anchor> |
+| Requisitos obrigatórios de integração<ul><li>Gravação de visita</li><li>Gravação de evento</li><li>Definir o [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) <mark>(CUID)</mark> : Se você não tiver um CUID, entre em contato com seu CSM para conversar sobre alternativas.</li></ul>Valide a integração usando a <Anchor target="_blank" href="/marketers/pt/docs/test-pba-web-sdk-integration">ferramenta de teste</Anchor> |
 
 **Antes de começar**:
 

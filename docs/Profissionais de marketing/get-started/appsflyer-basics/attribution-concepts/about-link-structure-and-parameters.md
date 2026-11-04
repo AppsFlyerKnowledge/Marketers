@@ -77,8 +77,8 @@ Os links de atribuição são gerados através do **OneLink** ou de um **link de
 | Informações necessárias | <ul><li>[Canal de mídia](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[Campaign](#c)</li><li>[ID do site/ID do subsite](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | <ul><li>[Canal de mídia](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[Campaign](#c)</li><li>[ID do site/ID do subsite](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> |
 | URL base | `{subdomain}`.onelink.me | app.appsflyer.com |
 | Identificador único | ID do template | ativado |
-| Estrutura da URL | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
-| Exemplo | `https://suamarca.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
+| Estrutura da URL | `https://{subdomain}.onelink.me/`<br />`{templateid}?pid={media_source}`<br />`&af_siteid={ApplicationID}`<br />`&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
+| Exemplo | `https://suamarca.onelink.me/aAB1?pid=greatnetwork_int`<br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`<br />`c=GreatCampaign&af_siteid=A1b1` |
 
 <div id="important" />
 

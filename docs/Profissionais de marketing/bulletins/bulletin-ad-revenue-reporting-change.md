@@ -25,7 +25,7 @@ x-zendesk:
 ---
 * **O que está mudando**: A data dos dados de receita de anúncios (em nível de usuário e agregado) na plataforma passa a ser o próprio dia do evento de exibição do anúncio (o dia em que a receita do anúncio ocorre), em vez do dia seguinte. Isso significa que, se um anúncio for exibido na segunda-feira, a receita aparecerá na segunda-feira. Isso dá aos anunciantes uma visão mais precisa e acionável dos dados de receita de anúncios.
 * **Quem é impactado**: proprietários de aplicativos, agências
-* **Onde isso está mudando**: Essencialmente, o alinhamento dos dados ao dia do evento de exibição do anúncio está ativo em todos os relatórios e APIs, para todos os tipos de integrações de network. Consulte a tabela a seguir para ver onde e quando o alinhamento entrou em vigor.
+* **Onde isso está mudando**: Essencialmente, o alinhamento dos dados ao dia do evento de exibição do anúncio está ativo em todos os relatórios e APIs, para todos os tipos de integrações de network. Consulte a tabela a seguir para ver onde e quando o alinhamento entrou em vigor.
 
 <div id="ad-revenue-reporting-change" />
 

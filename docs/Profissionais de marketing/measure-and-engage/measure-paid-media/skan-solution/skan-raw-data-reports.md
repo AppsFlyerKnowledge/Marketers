@@ -128,7 +128,8 @@ Os tipos de relatórios disponíveis são:
       <td>
         **Primeiras instalações do aplicativo**
 
-        SKAN relatou *redownload=false*. Ou seja, é a primeira vez que o usuário, representado pelo ID Apple, fez o download do app. *[Baixe nosso exemplo de instalação](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4rNJAio8Ub2cffUEiYhzdavVfXaJAD6OpjhRBjVpGQsAlibOWCkZpfLl29n1OCDBZ2eToO4_gOvbl/pub?gid=1472391837&single=true&output=csv) (CSV).*
+        SKAN relatou *redownload=false*. Ou seja, é a primeira vez que o usuário, representado pelo ID Apple, fez o download do app.  
+        *[Baixe nosso exemplo de instalação](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4rNJAio8Ub2cffUEiYhzdavVfXaJAD6OpjhRBjVpGQsAlibOWCkZpfLl29n1OCDBZ2eToO4_gOvbl/pub?gid=1472391837&single=true&output=csv) (CSV).*
 
         **Nome do tópico no Data Locker**: skad\_installs
       </td>

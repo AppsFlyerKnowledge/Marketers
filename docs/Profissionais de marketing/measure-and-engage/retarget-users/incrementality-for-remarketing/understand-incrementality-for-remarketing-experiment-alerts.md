@@ -135,7 +135,8 @@ Se a infração for relativamente pequena, basta garantir que o alvo do grupo de
 
 A segmentação detalhada é uma funcionalidade disponível em algumas redes de anúncios que permite afinar quem vê os seus anúncios. Este alerta aparecerá se a alternância de segmentação detalhada da campanha estiver ativada. Quando ativada, permitirá que a campanha alcance fora do público configurado.
 
-**Ações recomendadas:** Certifique-se de que a alternância de segmentação detalhada está desativada na configuração da campanha do parceiro.
+**Ações recomendadas:**  
+Certifique-se de que a alternância de segmentação detalhada está desativada na configuração da campanha do parceiro.
 
 <div id="low-activity" />
 

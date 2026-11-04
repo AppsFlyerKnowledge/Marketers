@@ -83,12 +83,12 @@ Use as tabelas abaixo para determinar qual solução se adapta melhor às suas n
 | --- | --- | --- |
 | **Validação de recibos**  <br />Verifique compras in-app para filtrar transações fraudulentas. | ✔ | ✔ |
 | **Detecção & desduplicação automatizadas de compras**  <br />Detecta automaticamente compras in-app (IAPs) e assinaturas, incluindo transações de assinantes existentes, e remove duplicatas para relatórios mais limpos. | ✖ | ✔ |
-| **Reembolsos**  <br />Detecta reembolsos e os atribui à compra original para refletir a receita real. | ✖ | ✔* |
+| **Reembolsos**  <br />Detecta reembolsos e os atribui à compra original para refletir a receita real. | ✖ | ✔<sup>*</sup> |
 | **Mensuração completa de compras in-app**  <br />Gerencie o compartilhamento familiar e relate o resultado final de compras pendentes usando a confirmação da loja de aplicativos. | ✖ | ✔ |
 | **Cobertura completa do funil de assinatura**  <br />Mensure renovações, atualizações e conversões para acessar o valor completo da sua base de assinantes. | ✖ | ✔ |
 | **Cálculo da receita líquida**  <br />Calcula tanto a receita bruta quanto a líquida, deduzindo automaticamente as taxas e impostos da loja. | ✖ | ✔ |
 
-* O tratamento de reembolsos **para compras in-app** está disponível apenas no plano ROI360 Advanced.
+<sup>*</sup> O tratamento de reembolsos **para compras in-app** está disponível apenas no plano ROI360 Advanced.
 
 </Accordion>
 
@@ -97,14 +97,14 @@ Use as tabelas abaixo para determinar qual solução se adapta melhor às suas n
 | **Tipo de correspondência do colaborador[n]** | **Validação de recibos** | **Receita da loja do ROI360** |
 | --- | --- | --- |
 | af\_compra | ✔ | ✔ |
-| af\_purchase\_refund* | ✖ | ✔ |
+| af\_purchase\_refund<sup>*</sup> | ✖ | ✔ |
 | af\_purchase\_pending | ✖ | ✔ |
-| af\_purchase\_canceled* | ✖ | ✔ |
+| af\_purchase\_canceled<sup>*</sup> | ✖ | ✔ |
 | af\_purchase\_free | ✖ | ✔ |
 | af\_purchase\_sandbox\_sdk | ✔ | ✔ |
-| af\_purchase\_sandbox\_s2s* | ✖ | ✔ |
+| af\_purchase\_sandbox\_s2s<sup>*</sup> | ✖ | ✔ |
 
-* Disponível somente para o ROI360 Advanced.
+<sup>*</sup> Disponível somente para o ROI360 Advanced.
 
 </Accordion>
 

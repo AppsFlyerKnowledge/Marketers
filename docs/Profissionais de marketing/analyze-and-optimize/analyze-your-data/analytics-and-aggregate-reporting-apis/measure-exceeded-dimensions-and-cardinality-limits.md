@@ -84,7 +84,8 @@ A tabela a seguir lista os limites de cardinalidade por dia, por aplicativo.
 > 👍 **Observação**
 >
 > "Divida e conquiste" novamente. Defina um pequeno número de nomes gerais de conjuntos de anúncios (de preferência até 50) e atribua todos os nomes de conjuntos de anúncios anteriores como anúncios únicos. Você também pode usar o **af\_sub** nos links de atribuição da AppsFlyer. Isso permite que você:
-> 1. Impeça a visualiazação de **Exceeded\_AdSet\_Limit** ou **Exceeded\_Ad\_Limit.** 2. Otimize com eficiência de acordo com conjuntos de anúncios significativos e tráfego de anúncios.
+> 1. Impeça a visualiazação de **Exceeded\_AdSet\_Limit** ou **Exceeded\_Ad\_Limit.**
+> 2. Otimize com eficiência de acordo com conjuntos de anúncios significativos e tráfego de anúncios.
 > 3. Realize uma análise profunda com base no conjunto de anúncios e nos nomes dos anúncios nos dados brutos.
 
 </Accordion>
@@ -193,7 +194,8 @@ O ID do site (por cliques, impressões, instalações e eventos in-app) tem 2 li
 > 👍 **Observação**
 >
 > "Divida e conquiste". Em vez de usar milhares de IDs de site por canal de mídia, o que distorce seus dados agregados, use um segundo parâmetro em seus links de atribuição chamado **af\_sub\_siteid.** Defina um pequeno número de IDs de site gerais (de preferência até 50) e atribua todas os IDs de site anteriores como IDs de subsite nesses IDs de site gerais. Isso permite que você:
-> 1. Impeça a visualização de **Exceeded\_SiteID\_Limit**2. Otimize com eficiência de acordo com o tráfego de IDs de sites significativos
+> 1. Impeça a visualização de **Exceeded\_SiteID\_Limit**
+> 2. Otimize com eficiência de acordo com o tráfego de IDs de sites significativos
 > 3. Realize uma análise profunda com base nos IDs de site e IDs de sub-site nos dados brutos
 
 <div id="note" />

@@ -98,7 +98,7 @@ As ações mensuráveis podem ser relatadas pela API de [servidor para servidor 
 
 * SKAN 4 e Personalizado: O S2S está sempre ativado.
 * Descodificação: O S2S não é adequado para o modo de descodificação e não está disponível. A AppsFlyer não define o CV neste modo.
-* [Legado] Modos de receita, conversão e engajamento: Necessita ativar a [gravação de eventos S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) antes de enviar eventos.
+* [Legado] Modos de receita, conversão e engajamento: <mark>Necessita ativar a</mark> [<mark>gravação de eventos S2S</mark>](/docs/skan-conversion-studio#report-events-by-servertoserver-api) antes de enviar eventos.
 
 </Accordion>
 
@@ -253,7 +253,7 @@ Com modos fixos, pode medir o valor do utilizador utilizando uma das seguintes m
 
 | Modo de medição | Descrição |
 | --- | --- |
-| Resultados | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Receita gerada durante a janela de atividade de 24 horas.**<br /><br />Escolha uma taxa de unidade para USD de uma das seguintes opções:<ul><li>0,01 dólares para medir até 0,63 dólares</li><li>1 dólar para medir até 63 dólares</li><li>10 dólares para medir até 630 dólares</li></ul>A AppsFlyer preenche automaticamente 63 intervalos de medição de receitas. Certifique-se de que o nome do evento `af_skad_revenue` está bem mapeado para os parceiros. No painel, a receita é registada como o máximo do intervalo. Por exemplo, se o intervalo for de 60 a 61 dólares, a receita registada será de 61 dólares. Nota! A receita personalizada usa um método diferente para calcular a receita.<br /><br />**Métricas disponíveis:**<ul><li>Resultados<ul><li>ROI</li><li>ROAS</li><li>ARPU: Receita/utilizadores a instalar a aplicação</li><li>Taxa de conversão de utilizadores: Utilizadores que fazem uma compra/utilizadores que instalam a aplicação</li><li>eCPA</li></ul></li></ul> |
+| Resultados | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Receita gerada durante a janela de atividade de 24 horas.**<br /><br />Escolha uma taxa de unidade para USD de uma das seguintes opções:<ul><li>0,01 dólares para medir até 0,63 dólares</li><li>1 dólar para medir até 63 dólares</li><li>10 dólares para medir até 630 dólares</li></ul>A AppsFlyer preenche automaticamente 63 intervalos de medição de receitas. Certifique-se de que o nome do evento `af_skad_revenue` está bem mapeado para os parceiros. No painel, <mark>a receita é registada como o máximo do intervalo.</mark> Por exemplo, se o intervalo for de 60 a 61 dólares, a receita registada será de 61 dólares. Nota! A receita personalizada usa um método diferente para calcular a receita.<br /><br />**Métricas disponíveis:**<ul><li>Resultados<ul><li>ROI</li><li>ROAS</li><li>ARPU: Receita/utilizadores a instalar a aplicação</li><li>Taxa de conversão de utilizadores: Utilizadores que fazem uma compra/utilizadores que instalam a aplicação</li><li>eCPA</li></ul></li></ul> |
 | Conversão | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**Eventos na aplicação ocorridos uma ou mais vezes durante a janela de atividade de 24 horas**<br /><br />**Definições**:<ul><li>Escolha de 1 a 6 eventos na aplicação para medir na lista suspensa. Limitação: A lista está limitada aos 300 principais eventos durante os últimos 30 dias.</li><li>No painel SKAdNetwork, selecione um evento como o <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">evento de conversão</Anchor>.</li></ul>**Métricas por evento na aplicação:**<ul><li>Contagem de utilizadores que realizam um evento<ul><li>Taxa de conversão: Utilizadores que realizam o Evento de Conversão/utilizadores que instalam a aplicação</li><li>eCPA</li><li>Sessões (usa o evento *af\_app\_opened*)</li></ul></li></ul>Exemplo de contagens de utilizadores:<ul><li>Registo concluído</li><li>Efetuou uma compra</li><li>Alcançou um nível no jogo</li></ul>Esclarecimento! **Utilize a medição de conversão para verificar** se **um utilizador realizou um evento. Para contabilizar quantas vezes um utilizador executa um evento, utilize a medição de interação.** |
 | com o anúncios | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Número de vezes que o utilizador realizou um evento específico na aplicação durante o Período de Atividade**<br /><br />**Configurações:**<ul><li>Selecione um evento na aplicação a partir da lista suspensa.</li><li>A seleção na aplicação também é designada como Evento de Conversão.</li><li>Intervalo de valores: 0-63</li></ul>**Métricas para o evento na aplicação**:<ul><li>Contagem de utilizadores a realizar o evento<ul><li>Número médio de eventos por utilizador</li><li>Taxa de conversão</li><li>eCPA</li><li>Sessões</li></ul></li></ul>Exemplos:<ul><li>Meça o número de vezes:<ul><li>um utilizador abriu a aplicação</li><li>o utilizador visualizou um anúncio</li></ul></li></ul> |
 
@@ -422,7 +422,7 @@ Desenvolva o seu próprio mapeamento de CV para evento e defina o CV na aplicaç
           * A medição de diferentes fluxos de receita pode ser feita selecionando eventos específicos na aplicação no esquema SKAN. Após adicionar a medição de receita, selecione "evento na aplicação" na seleção da fonte de receita. Assegure-se de que todos os eventos estão corretamente mapeados para as redes de anúncios.  
             Nota: Ao medir a receita de eventos específicos na aplicação, `af_skad_revenue` não deve ser mapeado.
           * O componente pode ser utilizado múltiplas vezes.
-          * Ao reportar receita via postback para redes de anúncios, verifique se os mapeamentos de postback de eventos na aplicação incluem os eventos de receita que definiu.
+          * <mark>Ao reportar receita via postback para redes de anúncios, verifique se os mapeamentos de postback de eventos na aplicação incluem os eventos de receita que definiu.</mark>
       </td>
     </tr>
     <tr>
@@ -445,7 +445,7 @@ Desenvolva o seu próprio mapeamento de CV para evento e defina o CV na aplicaç
         **Registo de receitas utilizando intervalos**
 
         * Quando a receita é reportada, o SKAN associa a receita ao intervalo apropriado. A receita registada corresponde ao valor médio do intervalo.
-        * Se a receita reportada ultrapassar o valor médio do intervalo de maior valor, a receita é associada a esse intervalo. **Nota**! A receita registada é o valor médio deste intervalo. Em outras palavras, o montante real da receita é ignorado.
+        * Se a receita reportada ultrapassar o valor médio do intervalo de maior valor, a receita é associada a esse intervalo. **Nota**! <mark>A receita registada é o valor médio deste intervalo.</mark> Em outras palavras, o montante real da receita é ignorado.
         * Nos dados brutos, estão disponíveis a receita registada e o intervalo associado.
 
         **Exemplo:**
@@ -1103,7 +1103,7 @@ O fluxo S2S é da seguinte forma:
    * Se o modo selecionado for receita, conversão ou envolvimento:
      1. No AppsFlyer, aceda a **Definições** > **SKAN Conversion Studio.**
      2. Clique em opções (⋮).
-     3. Ative a opção **Registar eventos na aplicação enviados pela API de servidor para servidor**.
+     3. Ative a opção <mark>**Registar eventos na aplicação enviados pela API de servidor para servidor**</mark>.
 2. Envie eventos por S2S.
 
 **Limitação**

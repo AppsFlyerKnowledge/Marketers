@@ -33,7 +33,7 @@ x-zendesk:
 
 **Para ativar a integração:**
 
-1. **Para ativar:** na AppsFlyer, no menu lateral, selecione**colaborar**> **Partner Marketplace**.  
+1. **Para ativar:** na AppsFlyer, no menu lateral, selecione**colaborar** > **Partner Marketplace**.  
    **Para editar**: na AppsFlyer, no menu lateral, selecione **colaborar** > **integrações ativas**
 2. Selecione o aplicativo correspondente.
 3. Na aba **Integração** selecione **Ativar parceiro**.

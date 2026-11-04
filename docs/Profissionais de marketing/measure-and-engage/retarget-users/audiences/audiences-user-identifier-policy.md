@@ -109,7 +109,7 @@ As opções de política de públicos-alvo para a partilha de identificadores no
 | --- | --- |
 | Nunca enviar | Este identificador não é enviado aos parceiros |
 | Estado ATT: apenas autorizado | O identificador é enviado se o estado ATT mais recente for **autorizado** ou **af\_autorizado** |
-| Estado ATT: autorizado ou não determinado | O identificador é enviado se o estado ATT mais recente for **autorizado**, **af\_authorized**, **não\_determinado** ou **af\_unavailable***Opção padrão para o IDFA, com o lançamento do iOS 14.5 da Apple* |
+| Estado ATT: autorizado ou não determinado | O identificador é enviado se o estado ATT mais recente for **autorizado**, **af\_authorized**, **não\_determinado** ou **af\_unavailable**  <br />  <br />*Opção padrão para o IDFA, com o lançamento do iOS 14.5 da Apple* |
 | Enviar sempre | O identificador é enviado independentemente do estado ATT. Assegure-se de cumprir os termos de uso da sua aplicação.  <br />  <br />*Opção indisponível para IDFA* |
 
 **Nota:** Os públicos tratam o estado ATT de um novo utilizador como **não determinado** até que este veja e responda ao diálogo de consentimento ATT.

@@ -146,7 +146,8 @@ Para adicionar o código ao seu site por meio de outras plataformas ou fazer alt
 4. Na seção **Submetido**:
    1. Clique no menu de ação e selecione **Construir para Preparação**.
    2. Clique novamente no menu de ação e selecione **Aprovar para publicação**.
-5. Na seção **Aprovado**, clique no menu de ação e selecione **Criar e Publicar para Produção.** O processo está concluído.
+5. Na seção **Aprovado**, clique no menu de ação e selecione **Criar e Publicar para Produção.**  
+   O processo está concluído.
 
 </Accordion>
 

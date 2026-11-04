@@ -64,7 +64,7 @@ O Google Analytics tem uma ferramenta poderosa para criar segmentação no níve
 1. Selecione seu aplicativo no menu do GA menu
 2. Selecione ***Admin*** na barra superior do GA dashboard
 3. Na coluna ***PROPERTY***, selecione ***Custom Definition***
-4. Selecione ***Custom Dimensions***
+4. Selecione ***Custom Dimensions***  
    ![Opção Dimensões personalizadas no painel de administração do Google Analytics](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
 5. Crie uma nova dimensão. Chame-a de **AppsFlyer Media Source** e certifique-se de selecionar o escopo ***usuário***. Isso garante que os dados sejam salvos em várias sessões. ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 

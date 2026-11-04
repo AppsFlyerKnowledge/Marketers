@@ -54,9 +54,10 @@ Os dados de hierarquia de campanha e anúncios estão disponíveis nos dashboard
 
 **Para se conectar ao Google Ads:**
 
-1. Na AppsFlyer, no menu lateral, selecione **Configurações**> **Pacotes de marcas**
+1. Na AppsFlyer, no menu lateral, selecione **Configurações** > **Pacotes de marcas**
 2. Acesse a aba **Integração do Google Ads**.
-3. Clique em **Conectar conta.** Abre-se a página de login do Google Ads.
+3. Clique em **Conectar conta.**  
+   Abre-se a página de login do Google Ads.
 4. Faça login na sua conta do Google Ads. Conclua o processo para conceder à AppsFlyer acesso.
 
 **Gerenciar conexões do Google Ads**

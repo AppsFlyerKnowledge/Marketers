@@ -410,7 +410,7 @@ Cada **chave legada do Web Dev só pode ser reutilizada para um** novo aplicativ
 **Nome do aplicativo:** O nome que você escolheu para o seu aplicativo.
 
 **App ID:** O ID do aplicativo. Encontrado usando a notação DNS reversa:  `<tld>`.`<company_name>`.`<app_name>`  
-Deve conter no mínimo 2 segmentos. Cada segmento deve começar com uma letra, seguida de caracteres entre: `A-Z` `a-z` `0-9.``_` `-`.
+Deve conter no mínimo 2 segmentos. Cada segmento deve começar com uma letra, seguida de caracteres entre: `A-Z` `a-z` `0-9.` `_` `-`.
 
 Para mais informações, consulte o campo “id” na <Anchor target="_blank" href="https://developer.amazon.com/docs/vega/0.21/manifest-package.html#fields">documentação do Amazon Vega OS</Anchor>.
 
@@ -422,7 +422,7 @@ Para mais informações, consulte o campo “id” na <Anchor target="_blank" hr
 
 **Nome do aplicativo:** O nome que você escolheu para o seu aplicativo.
 
-**App ID:** O App ID, reconhecido pela Vizio. Começa com as letras `vz`, seguido de 2 a 10 caracteres de: `.``-` `0-9``.` `-`. Se precisar confirmar o App ID, fale com o seu representante da Vizio.
+**App ID:** O App ID, reconhecido pela Vizio. Começa com as letras `vz`, seguido de 2 a 10 caracteres de: `.` `-` `0-9` `.` `-`. Se precisar confirmar o App ID, fale com o seu representante da Vizio.
 
 </Accordion>
 
@@ -555,7 +555,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **Nome do aplicativo:** O nome que você escolheu para o seu aplicativo.
 
-**App ID:** O App ID do Xbox, conforme aparece no final da URL da loja do Xbox, de onde o aplicativo é baixado. Inclui apenas 12 letras e dígitos (`0-9` `0-9``0-9`).
+**App ID:** O App ID do Xbox, conforme aparece no final da URL da loja do Xbox, de onde o aplicativo é baixado. Inclui apenas 12 letras e dígitos (`0-9` `0-90-9`).
 
 </Accordion>
 

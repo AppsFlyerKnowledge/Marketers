@@ -34,7 +34,8 @@ x-zendesk:
 
 1. Faça o seguinte:
    * No PC, clique em **Ctrl+K.**
-   * No Mac, clique em **Cmd+K.** A barra de pesquisa é exibida.A barra de pesquisa é exibida.
+   * No Mac, clique em **Cmd+K.**  
+     A barra de pesquisa é exibida.A barra de pesquisa é exibida.
 2. Digite um termo de pesquisa.  
    Os resultados da pesquisa são exibidos.   
    O Launchpad exibe links para páginas que você tem permissão para visualizar.

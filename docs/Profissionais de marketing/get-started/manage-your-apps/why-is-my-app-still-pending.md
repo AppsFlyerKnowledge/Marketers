@@ -51,7 +51,8 @@ Para que o status do aplicativo mude para ativo, a AppsFlyer verifica seu status
 **Para atualizar manualmente o status do aplicativo:**
 
 1. No painel, clique em **Meus aplicativos** no canto superior direito.
-2. Ao lado do aplicativo pendente, clique em **Atualizar status.** Se o status do aplicativo não for alterado, o aplicativo ainda será exibido como Pendente. Se tiver sido atualizado, o status será exibido como Online e o logotipo será atualizado.  
+2. Ao lado do aplicativo pendente, clique em **Atualizar status.**  
+   Se o status do aplicativo não for alterado, o aplicativo ainda será exibido como Pendente. Se tiver sido atualizado, o status será exibido como Online e o logotipo será atualizado.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 

@@ -62,7 +62,8 @@ A aba Integração está dividida em diferentes seções, conforme descrito abai
 
 ### Ativar parceiro
 
-Na sua **primeira visita** aqui, você deverá ativar a opção abaixo. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
+Na sua **primeira visita** aqui, você deverá ativar a opção abaixo. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro.  
+**Para obter mais detalhes sobre a ativação do parceiro, clique aqui.**
 
 <div id="general-settings" />
 
