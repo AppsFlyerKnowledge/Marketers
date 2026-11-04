@@ -83,7 +83,7 @@ Start by activating the integration with Google Ads for web campaigns and settin
 > If you still need to set the 'First open' action in Google Ads, you can enter a placeholder value temporarily until the action is fully set up.
 
 1. Enter your **Customer ID**. You can retrieve it from your Google Ads Manager:
-   1. Sign in to your Google Ads account.
+   1. <span class="af-ol-a"></span>Sign in to your Google Ads account.
    2. In the top right corner, click the Google account icon and scroll down to where the Customer ID is displayed.
 2. If you have multiple Google Ads accounts running campaigns for your app, you must use the Customer ID from a manager (MCC) for cross-account conversion tracking. Paste the **MCC ID** (and not a specific account’s Customer ID) in the **Customer ID** text box and also in the **MCC Customer ID** text box (same ID in both boxes).   
    If you only use a single Google Ads account to run ads, simply paste the account ID in the **Customer ID** text box and leave the **MCC Customer ID** text box empty. See <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google instructions on configuring an MCC account</Anchor>.
@@ -138,7 +138,7 @@ Installs are currently the only events that trigger automatic default postbacks 
 
    **To find the conversion action ID in Google Ads:**
 
-   1. Go to Google Ads.
+   1. <span class="af-ol-a"></span>Go to Google Ads.
    2. Open the page of the conversion action you want to map.
    3. Open the **Details** tab.
    4. From the page URL, copy the value of the `ctid=*` query parameter.
@@ -149,7 +149,7 @@ Installs are currently the only events that trigger automatic default postbacks 
 8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
 10. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-    1. From the top-left corner, click the app name under the partner name to open the list of apps.
+    1. <span class="af-ol-a"></span>From the top-left corner, click the app name under the partner name to open the list of apps.
     2. Select a different app from the drop-down list.
     3. Repeat the integration steps for the selected app.
 

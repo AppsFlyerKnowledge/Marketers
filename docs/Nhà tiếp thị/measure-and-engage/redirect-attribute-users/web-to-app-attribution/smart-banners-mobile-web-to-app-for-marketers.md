@@ -159,14 +159,14 @@ Banner groups contain one or more banners. Here you can:
 
 1. In AppsFlyer, from the side menu, select **Engage** > **Web-to-app** > **Smart Banners.**
 2. **To set up a banner group for the first time**
-   1. On the left-hand side, click **Add banner group**.
+   1. <span class="af-ol-a"></span>On the left-hand side, click **Add banner group**.
    2. Follow steps 5 and onwards.
 3. **To set up additional banner groups**
-   1. Go to the **Studio** tab.
+   1. <span class="af-ol-a"></span>Go to the **Studio** tab.
    2. Click on **+ New.**
    3. Follow steps 5 and onwards.
 4. **To duplicate a banner group**
-   1. Click on the **Duplicate** icon found next to the delete icon.
+   1. <span class="af-ol-a"></span>Click on the **Duplicate** icon found next to the delete icon.
 5. Enter a unique **Banner group name**. The name should reflect a general common theme between the Banners to be defined for the banner group (e.g., the advertised app).
 6. Select the OneLink template for the banner group.
 7. [optional] Set **URI scheme** for the banner group as a fallback for Universal Links and Android App Links users. This is rarely needed as, by default, the value is taken from the OneLink template. Set this for the banner group only if you need a different value than the one in the template.
@@ -214,7 +214,7 @@ Banner groups contain one or more banners. Here you can:
     * Just Android or just iOS.
 16. [Optional] **Schedule** the banner group's activation: start immediately (default) or set a time-limited campaign.
 17. [Optional] Set **Locations** where the banner group is activated for.
-    1. Select **Worldwide** to display this banner group to all users. If needed, exclude visitors coming from different regions, countries, or states.
+    1. <span class="af-ol-a"></span>Select **Worldwide** to display this banner group to all users. If needed, exclude visitors coming from different regions, countries, or states.
     2. Select **Pick specific location** option to display this banner group to users from one or more specific locations.
 18. [Optional] Set **Show on pages**, meaning, on which pages the banner group can be displayed to visitors:
     * [Default] **Show on all pages** of the website. **Note**: We recommend defining at least one banner group for all pages as a fallback.
@@ -266,7 +266,7 @@ The Targeting & behavior panel shows you the settings you configured for that ba
 1. Click **New banner** to enter the **Edit banners** page.
 2. Set the **Name** of the banner.
 3. Create a **Design creative**:
-   1. Click **Design creative** to set the creative of the banner.
+   1. <span class="af-ol-a"></span>Click **Design creative** to set the creative of the banner.
 
       A window to choose a banner template opens.
 

@@ -205,7 +205,7 @@ Bạn có thể tạo báo cáo tùy chỉnh bằng cách đặt bộ lọc và 
    * **Địa lý:** [Tùy chọn] Chỉ những sự kiện được phân bổ cho các khu vực địa lý được chọn mới được đưa vào báo cáo.
    * **Bộ lọc cụ thể theo loại báo cáo**: Mỗi loại báo cáo có thể có bộ lọc riêng mà từ đó bạn có thể chọn tiêu chí lọc.
 6. [Tùy chọn]: Báo cáo được điền tự động với các trường cần thiết. Bạn có thể thêm hoặc xóa các trường như sau:
-   1. Đi tới tab **Report fields** (Trường báo cáo). Danh sách các trường đã chọn sẽ hiển thị. Bạn không thể thay đổi lựa chọn các trường bắt buộc.
+   1. <span class="af-ol-a"></span>Đi tới tab **Report fields** (Trường báo cáo). Danh sách các trường đã chọn sẽ hiển thị. Bạn không thể thay đổi lựa chọn các trường bắt buộc.
    2. Chọn hoặc xóa các trường chọn lọc theo yêu cầu.
    3. [Tùy chọn] Đặt **Thứ tự trường báo cáo (CSV)** để đặt trình tự các cột.
    4. [Tùy chọn] Nhấp **Restore defaults** (Khôi phục mặc định) nếu cần.

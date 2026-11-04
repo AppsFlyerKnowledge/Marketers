@@ -75,7 +75,7 @@ Set up the Advanced Security Module to validate that in-app traffic is coming fr
 #### **Step 2: Add certificate**
 
 1. Add the:
-   1. Certificate name
+   1. <span class="af-ol-a"></span>Certificate name
    2. Certificate Value
 2. Click **Next**
 
