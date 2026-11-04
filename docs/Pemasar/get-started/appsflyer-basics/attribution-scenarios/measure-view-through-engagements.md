@@ -22,19 +22,27 @@ x-zendesk:
 ---
 > **Sekilas:** Pengguna yang melihat (tayangan) iklan kemudian menginstal aplikasi, diatribusikan melalui atribusi lihat-tayang.
 
+<div id="overview" />
+
 ## Ringkasan
 
 Atribusi lihat-tayang mengukur penginstalan, atribusi ulang, dan interaksi ulang pengguna yang melihat iklan namun tidak mengekliknya.
 
+<div id="view-through-attribution-flow" />
+
 ### Alur atribusi lihat-tayang
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### Terminologi
 
 * **Tayangan:** Tampilan iklan kepada pengguna terlepas dari klik atau interaksi pengguna lainnya.
 * **Penginstalan**: Dalam artikel ini berarti penginstalan, atribusi ulang, dan interaksi ulang.
 * **Atribusi lihat-tayang:** Mengatribusikan penginstalan ke sumber media setelah pengguna melihat tayangan.
+
+<div id="view-through-attribution-principles" />
 
 ### Prinsip atribusi lihat-tayang
 
@@ -47,12 +55,16 @@ Tayangan merupakan kandidat untuk atribusi lihat-tayang menggunakan prinsip beri
 * Jika beberapa tayangan ditemukan, tayangan terbaru akan dipertimbangkan.
 * Klik diprioritaskan dibandingkan tayangan. Artinya, jika ada klik di periode waktu lookback klik-tayang, klik terbaru yang menang. Tayangan terbaru diatribusikan sebagai kontributor (bantuan).
 
+<div id="view-through-lookback-window" />
+
 ### Periode waktu lookback lihat-tayang
 
 * Untuk non-SRN, durasi periode waktu lookback atribusi lihat-tayang adalah 1-24 jam. Untuk SRN, periode waktu lookback bisa lebih lama.
 * Untuk mengatur jendela:
   * **Non-SRN:** Tetapkan durasi menggunakan tautan atribusi tayangan dengan menetapkan parameter  `af_viewthrough_lookback` . Jika parameter tidak diatur, periode waktu 24 jam default akan digunakan.
   * **SRNs**: Periode waktu ditentukan oleh SRN. Kami merekomendasikan pengaturan nilai yang sama dengan SRN di AppsFlyer.
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### Pelaporan dan metrik atribusi lihat-tayang
 
@@ -63,6 +75,8 @@ Tayangan merupakan kandidat untuk atribusi lihat-tayang menggunakan prinsip beri
   * Data tingkat pengguna (data lengkap) dari pengguna yang diatribusikan melalui atribusi lihat-tayang tersedia dan serupa dengan data pengguna yang diatribusikan melalui klik. Namun, beberapa mitra membatasi ketersediaan data ini.
   * Data tayangan (mirip dengan data klik) tersedia.
   * Bidang atributted\_touch\_type berisi *tayangan* nilai.
+
+<div id="view-through-operations" />
 
 ## Operasi lihat-tayang
 

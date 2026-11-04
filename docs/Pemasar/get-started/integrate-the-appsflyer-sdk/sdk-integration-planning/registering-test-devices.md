@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **Sekilas:** Saat melakukan pengujian atribusi, daftarkan perangkat pengujian Anda untuk memastikan setiap penginstalan dicatat sebagai penginstalan baru. Perangkat uji yang terdaftar mencegah penginstalan agar tidak dicatat sebagai penginstalan ulang.
 
+<div id="why-register-a-test-device" />
+
 ## Mengapa mendaftarkan perangkat uji
 
 Saat melakukan uji atribusi, jendela atribusi ulang membatasi penginstalan atribusi menjadi satu atribusi per jendela 90 hari. Oleh karena itu, jika Anda berulang kali menggunakan perangkat yang sama untuk menguji atribusi penginstalan, tidak ada yang dicatat. Mendaftarkan perangkat sebagai perangkat uji mencegah penginstalan berulang pada perangkat terdaftar agar tidak direkam sebagai penginstalan ulang.
+
+<div id="methods-for-registering-a-test-device" />
 
 ## Metode untuk mendaftarkan perangkat uji
 
@@ -38,6 +42,8 @@ Mendaftarkan perangkat uji termasuk memilih sistem operasi perangkat (Android, i
 Anda dapat menggunakan salah satu metode berikut untuk mendaftar:
 
 * [Unduh dan instal aplikasi My Device ID by AppsFlyer:](#register-a-device-using-the-appsflyer-device-id-app-admin-only) Setelah Anda menginstal aplikasi pada perangkat uji, Anda dapat mendaftarkan perangkat secara otomatis dan membagikan detail ID perangkat ke akun AppsFlyer Anda. Perangkat akan terdaftar secara otomatis di halaman **Perangkat uji** .
+
+  <div id="note" />
 
   > 📘 **Catatan**
   >
@@ -58,6 +64,8 @@ Pengenal perangkat termasuk hal-hal berikut:
 
 * **Android:** BANTUAN (GAID atau OAID), IMEI, ID Android
 
+  <div id="note-1" />
+
   > 📘 **Catatan**
   >
   > Saat mendaftarkan perangkat uji, Anda hanya boleh menambahkan pengenal perangkat IMEI atau ID Android jika aplikasi Anda mengumpulkan dan menggunakan pengenal ini.
@@ -66,6 +74,8 @@ Pengenal perangkat termasuk hal-hal berikut:
 * **Windows Phone:** ID iklan Windows
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## Mengelola pendaftaran perangkat uji
 
@@ -179,6 +189,8 @@ Pengguna akun dapat mendaftarkan perangkat secara manual:
 
 5. Klik **Simpan**. Perangkat ditampilkan dalam daftar perangkat terdaftar. **Catatan**: Meskipun perangkat segera ditampilkan dalam daftar perangkat yang terdaftar, mungkin perlu waktu beberapa menit untuk mendaftar di sistem dan berfungsi sebagaimana mestinya.
 
+<div id="note-2" />
+
 > 📘 **Catatan**
 >
 > **Menambahkan lebih dari satu pengidentifikasi**
@@ -207,6 +219,8 @@ Maksimal 200 perangkat dapat didaftarkan per akun. Hanya pengguna admin yang dap
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## Mendaftarkan perangkat uji iOS
 
 Bagan alur di bawah ini menggambarkan kemungkinan tindakan saat mendaftarkan perangkat uji iOS Anda.
@@ -219,9 +233,13 @@ Pilih di antara opsi berikut saat mendaftarkan perangkat uji iOS Anda:
 
 <Accordion title="Daftarkan perangkat uji Anda dengan IDFA">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **Kapan menggunakan IDFA untuk pendaftaran perangkat uji?**
 
 Anda dapat mendaftar dengan IDFA jika Pelacakan Transparansi Aplikasi (ATT) diterapkan di aplikasi Anda dan Anda ingin menjalankan pengujian sebagai pengguna yang menyetujui. Saat meluncurkan aplikasi yang diuji untuk pertama kali, pastikan untuk mengeklik **Izinkan** di perintah ATT.
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **Bagaimana cara mendaftarkan perangkat uji Anda dengan IDFA?**
 
@@ -233,6 +251,8 @@ Untuk mendaftar dengan IDFA, daftarkan perangkat menggunakan aplikasi ID perangk
 
 <Accordion title="Daftarkan perangkat uji Anda dengan IDFV">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **Kapan menggunakan IDFV untuk pendaftaran perangkat uji?**
 
 Saat IDFA tidak dapat diakses, IDFV adalah satu-satunya pilihan Anda. Dalam skenario berikut, Anda **harus menggunakan IDFV**:
@@ -240,11 +260,15 @@ Saat IDFA tidak dapat diakses, IDFV adalah satu-satunya pilihan Anda. Dalam sken
 * **ATT diterapkan** tetapi Anda ingin menjalankan pengujian sebagai pengguna yang tidak menyetujui. Saat meluncurkan aplikasi untuk pertama kali, pastikan untuk mengeklik **Jangan Izinkan** di perintah ATT.
 * **ATT tidak diterapkan** sama sekali.
 
+<div id="how-to-register-your-device-with-idfv" />
+
 #### **Cara mendaftarkan perangkat Anda dengan IDFV**
 
 1. Sebelum Anda dapat mendaftarkan perangkat pengujian dengan IDFV, pengembang Anda harus menginstal aplikasi alat uji IDFV di perangkat uji Anda. Untuk instruksi pengembang, Anda dapat merujuk pengembang Anda ke <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-the-idfv-test-tool-app">artikel ini</Anchor>.
 2. Setelah pengembang Anda menginstal aplikasi alat uji IDFV, luncurkan dan salin IDFV yang ditampilkan.
 3. [Daftarkan perangkat uji secara manual](#register-a-device-manually) menggunakan IDFV.
+
+<div id="note-3" />
 
 > 📘 **Catatan**
 >

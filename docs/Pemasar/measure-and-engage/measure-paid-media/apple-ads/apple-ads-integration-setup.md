@@ -36,6 +36,8 @@ Relevansi aplikasi menentukan apakah iklan Anda ditampilkan sebagai tanggapan at
 
 ASA menawarkan [atribusi seluler berbasis klik](/docs/apple-ads-integration-setup#asa-attribution), <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">penargetan ulangpengguna</Anchor>, dan data <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">biaya</Anchor> melalui API (dengan langganan ROI360).
 
+<div id="set-up-apple-ads-integration" />
+
 ## Pengaturan integrasi ASA
 
 <div id="get-started" />
@@ -106,6 +108,8 @@ Integrasi biaya menyediakan data teragregasi berikut ini:
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## Atur agensi dan mitra pemasaran ASA
 
 <div id="principles" />
@@ -118,6 +122,8 @@ Pengiklan dan agensi dapat memilih untuk bekerja dengan Mitra Pemasaran ASA untu
 
 Perbedaan antara biro iklan dan mitra pemasaran dicantumkan dalam tabel berikut.
 
+<div id="agency-vs-marketing-partner" />
+
 #### Agensi vs. mitra pemasaran
 
 |  | Agensi | Mitra pemasaran |
@@ -125,9 +131,13 @@ Perbedaan antara biro iklan dan mitra pemasaran dicantumkan dalam tabel berikut.
 | AppsFlyer mengirim postback | Tidak | Ya |
 | Teknologi | Jalankan kampanye atas nama Anda | Memiliki nilai tambah solusi teknologi untuk mengoptimalkan kampanye |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### Mengonfigurasi agensi dan mitra pemasaran
 
 Gunakan daftar periksa berikut untuk memastikan bahwa Anda menyelesaikan semua langkah dalam proses konfigurasi. Disertakan instruksi terperinci per jenis mitra di bagian berikutnya.
+
+<div id="configuration-steps-checklist" />
 
 #### Daftar periksa langkah-langkah konfigurasi
 
@@ -183,6 +193,8 @@ Pemasang iklan mengizinkan agensi untuk menjalankan kampanye atas nama mereka me
 * Jangan gunakan karakter dan spasi khusus untuk nama grup.
 * Saat Anda masuk dengan Apple, otorisasi grup kampanye ASA tidak bersifat kumulatif. Artinya, saat Anda mengintegrasikan aplikasi baru, otorisasi untuk grup kampanye yang dipilih untuk aplikasi sebelumnya akan dicabut kecuali dipilih lagi. Anda harus memilih **Akses Terbatas** dan masing-masing grup kampanye yang relevan (terkait dengan aplikasi yang ingin Anda hubungkan untuk pemasang iklan).
 
+<div id="advertiser-actions" />
+
 #### **Tindakan pengiklan**
 
 **Prasyarat**:
@@ -196,6 +208,8 @@ Pemasang iklan mengizinkan agensi untuk menjalankan kampanye atas nama mereka me
 3. Buka tab **Integration (Integrasi)**, hidupkan **Activate partner (aktifkan mitra\_** .
 4. [Opsional] Jika Anda ingin mengatribusikan pengguna yang menginstal ulang aplikasi selama jendela atribusi ulang, aktifkan **Penginstalan ulang atribusi.**
 5. Klik ***Save***.
+
+<div id="agency-actions" />
 
 #### **Tindakan agensi**
 
@@ -211,6 +225,8 @@ Pemasang iklan mengizinkan agensi untuk menjalankan kampanye atas nama mereka me
 > 📘 **Catatan**
 >
 > Saat agensi bekerja dengan Apple Search Ads Marketing Partner (Mitra Pemasaran Iklan Penelusuran Apple), agensi harus mengonfigurasi ID grup kampanye yang sama di laman konfigurasi Apple Search Ads dan laman konfigurasi Marketing Partner (Mitra Pemasaran).
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### Data Biaya, Klik, dan Impresi
 
@@ -239,6 +255,8 @@ Jika Anda mengaktifkan API biaya, AppsFlyer menerima data biaya, klik, dan taya
 4. Klik **Save Integration (Simpan Integrasi)** .
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi Tambahan
 
@@ -269,6 +287,8 @@ AppsFlyer dan Apple Search Ads menggunakan logika atribusi berbeda yang menyebab
 * Hal berikut tidak dilaporkan: Tayangan, ketukan, atau biaya geografis yang memiliki kurang dari 100 tayangan untuk kampanye tertentu.
 * Saat dikelompokkan berdasarkan Geo di AppsFlyer, Geo dengan data yang tidak tersedia tidak ditampilkan, dan total data yang tidak tersedia muncul di bawah N/A.
 
+<div id="retargeting-related-discrepancies" />
+
 ### Perbedaan terkait penargetan ulang
 
 Mekanisme atribusi penargetan ulang AppsFlyer memungkinkan pemasang iklan untuk mengukur dan menganalisis kampanye penargetan ulang, selain kampanye akuisisi pengguna.
@@ -282,6 +302,8 @@ Gambar berikut menggambarkan bagaimana perbedaan dapat terjadi dalam kaitannya d
 **Penargetan ulang dinonaktifkan**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### Alasan tambahan untuk perbedaan
 

@@ -27,12 +27,16 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## Prinsip-Prinsip PBA
 
 * PBA menggabungkan data situs web dan aplikasi seluler untuk menyediakan wawasan menyeluruh tentang kinerja kampanye di semua properti merek digital. Pengiklan menggunakan PBA untuk memahami perjalanan pengguna terkait orangnya, bukan perangkat.
 * Data PBA—di dasbor PBA dan dalam laporan data lengkap—digunakan untuk analisis pemasaran dan pengoptimalan kampanye.
 * Data terdiri dari kunjungan situs web dan event pengguna yang diperoleh menggunakan <Anchor target="_blank" href="/marketers/id/docs/pba-web-sdk-integration-guide">SDKs dan/atau APIs.</Anchor>
 * Untuk setiap kunjungan ke situs web: ditentukan sumber media yang bertanggung jawab membawa kunjungan. Setiap event yang dihasilkan (konversi) <Anchor target="_blank" href="/marketers/id/docs/pba-media-source-attribution-rules">diatribusikan</Anchor> ke sumber media yang membawa kunjungan.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### Dashboard analisis dan data lengkap PBA
 
@@ -43,11 +47,15 @@ x-zendesk:
   * Laporan Data Lengkap
 * Data di dashboard <Anchor target="_blank" href="/marketers/id/docs/using-pba-dashboards">difilter dan dikelompokkan</Anchor> menggunakan dimensi seperti platform seluler, kanal media, dan jenis media. Ini memungkinkan Anda untuk menelusuri lebih detail dan memerinci data.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/id/docs/pba-website-attribution-dashboard">Atribusi Situs Web</Anchor>
 
 [![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
 
 Analisis sumber lalu lintas web dan kampanye pemasaran yang mendorong kunjungan dan konversi pengguna di situs web Anda. Temukan perbedaan kinerja hingga ke tingkat iklan. Mendukung semua parameter kueri AppsFlyer di tautan tanpa perlu mengarahkan pengguna ke server AppsFlyer.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/id/docs/pba-web-assisted-installs">Penginstalan Berbasis Web</Anchor>
 
@@ -59,6 +67,8 @@ Gunakan Penginstalan Berbasis Web untuk mengkaji dampak dan hasil dari upaya pem
 * Atribusikan instalasi organik yang didorong oleh upaya web Anda.
 * Kaji interaksi antara upaya web dan instalasi non-organik.
 
+<div id="raw-data" />
+
 ### <Anchor target="_blank" href="/marketers/id/docs/pba-raw-data-reports">Data Lengkap</Anchor>
 
 Data lengkap menawarkan wawasan terperinci dan mencakup sumber media yang diatribusikan/bertanggung jawab untuk membawa pengguna ke situs web.
@@ -67,6 +77,8 @@ Data lengkap menawarkan wawasan terperinci dan mencakup sumber media yang diatri
 * **Event web**: aktivitas yang dilakukan di situs web seperti berlangganan atau pembelian
 * **Penginstalan Berbasis Web** dan perjalanan **Jalur konversi** disediakan secara lengkap.
 * Alat BI digunakan untuk menganalisis data sebagai wawasan tambahan.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

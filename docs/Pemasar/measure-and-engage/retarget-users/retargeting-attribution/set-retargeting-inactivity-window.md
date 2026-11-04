@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Increase incremental lift by retargeting inactive users. Set inactivity windows by media source.
 
+<div id="inactivity-period" />
+
 ## Inactivity period
 
 Advertisers regain inactive users by retargeting them. These campaigns usually have a good conversion rate and generate significant ROAS. However, many retargeting campaigns underperform as they don't filter out active users. To increase the incremental lift of retargeting campaigns, implement **minimum inactivity time** to filter out active users.
@@ -36,6 +38,8 @@ By setting a minimum inactivity time, Advertisers don't attribute active users. 
 * **Attributed:** Dormant users who haven't used the app for longer than the defined inactivity period. Retargeting re-engagements and reinstalls are attributed.
 * **Not attributed**: Active users who open the app and don't exceed the minimum inactivity period are disregarded and not attributed to the retargeting campaign.
 
+<div id="retargeting-inactivity-terminology" />
+
 ### Retargeting inactivity terminology
 
 | Term | Definition |
@@ -44,6 +48,8 @@ By setting a minimum inactivity time, Advertisers don't attribute active users. 
 | Default value | 0 (none)  <br />The **Inactivity period** feature is not active by default for media sources. |
 | User activity | Installs or sessions reported by the SDK or via S2S. |
 | Migrated devices | Migration time is the last activity time. |
+
+<div id="scenarios" />
 
 ## Scenarios
 
@@ -87,6 +93,8 @@ The user scenario is depicted in the figure that follows. The user:
 
 </Accordion>
 
+<div id="partner-setup" />
+
 ## Partner setup
 
 <div id="zd-srn" />
@@ -127,6 +135,8 @@ SRNs that support inactivity periods have this feature set up on their Integrati
 
 <Accordion title="Agencies">
 
+<div id="srn" />
+
 #### SRN
 
 Agency (permission granted by the advertiser)
@@ -143,6 +153,8 @@ Agency (permission granted by the advertiser)
 | Google Ads | <ul><li>Cannot enable/disable retargeting</li><li>If an agency has permissions, they can configure an inactivity period</li></ul> |
 | Meta ads/X Ads/Snapchat | Can't access retargeting and **Inactivity period** setup |
 
+<div id="non-srn" />
+
 #### Non-SRN
 
 Partner (supports retargeting)
@@ -153,6 +165,8 @@ Partner (supports retargeting)
 2. Select a non-SRN Ad network > **Attribution link** tab.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

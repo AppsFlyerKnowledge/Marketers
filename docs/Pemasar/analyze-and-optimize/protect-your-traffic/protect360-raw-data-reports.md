@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Sekilas:** Laporan data lengkap menjelaskan penginstalan dan in-app event yang diblokir oleh mesin Protect360, serta dari Aturan Validasi yang ditambahkan secara manual.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Tentang laporan data lengkap Protect360
 
 Laporan data lengkap:
@@ -45,6 +47,8 @@ Laporan data lengkap:
 <div id="report-types" />
 
 <Accordion title="Jenis laporan">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Jenis laporan data lengkap Protect 360
 
@@ -72,6 +76,8 @@ Laporan data lengkap:
   * Dashboard antarmuka pengguna: terbatas pada satu sumber media selama satu bulan kalender.
   * Pull API: memuat semua sumber media.  (Pembatasan: Hanya tersedia bagi pemilik aplikasi)
 
+<div id="using-post-attribution-reports" />
+
 #### **Menggunakan laporan pasca-atribusi**
 
 * Pilih semua kombinasi penginstalan/IAE dan deteksi rentang tanggal sesuai kebutuhan.
@@ -81,6 +87,8 @@ Laporan data lengkap:
   * Atur rentang tanggal instalasi menjadi 60 hari sebelum hari ini.
   * Atur rentang tanggal deteksi dari/deteksi hingga ke hari sebelum hari ini.  
     Ini berarti bahwa Anda akan mendapatkan daftar kecurangan pasca-atribusi yang terdeteksi kemarin. Jika Anda tidak menarik laporan selama beberapa hari, sesuaikan rentang tanggal deteksi dan tarik laporan.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -94,11 +102,15 @@ Laporan data lengkap:
 
 <Accordion title="Ketersediaan data lengkap berdasarkan jenis alat">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### Ketersediaan data lengkap Protect 360 berdasarkan jenis alat
 
 <table><thead><tr><th>Laporan</th><th>Kesegaran data</th><th>Pull API</th><th>Halaman Export Data</th><th>Data Locker</th></tr></thead><tbody><tr><td>Install</td><td>Waktu sebenarnya</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>In-app event yang diblokir </td><td>Waktu sebenarnya</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Klik</td><td>Waktu sebenarnya</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Postback instalasi yang diblokir</td><td>Waktu sebenarnya</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Instalasi pasca atribusi</td><td><p>Setiap Hari 10:00 UTC</p></td><td><p><span>✓</span></p></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>In-app event pasca atribusi</td><td><p>Setiap Hari 10:00 UTC</p></td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr></tbody><tfoot><tr><td colspan="5"><p>\* Batasan untuk melaporkan melalui Data Locker:</p><ul><li>Transparansi agensi tidak didukung. Artinya, lalu lintas yang didorong agensi tidak berisi nama sumber media yang mengirimkan penginstalan. </li><li>Laporan tersebut memiliki sekumpulan bidang unik yang terkait dengan laporan Data Locker lainnya. Daftar ini tidak dapat diubah. </li><li>Data penargetan ulang tidak tersedia di laporan Penginstalan; hanya di laporan penginstalan pasca-atribusi. </li></ul></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## Mendapatkan laporan data lengkap
 
@@ -139,6 +151,8 @@ Anda memerlukan token Pull API. Dapatkan token dari <Anchor target="_blank" href
 3. Isi parameter sesuai kebutuhan. Tabel berikut mencantumkan parameter.
 4. Tarik laporan.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Parameter laporan data lengkap Pull API
 
 | Parameter | Deskripsi | Format | Wajib |
@@ -166,11 +180,15 @@ Data Locker menulis  data lengkap ke bucket AWS S3.
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Struktur laporan Protect360
 
 Laporan Protect360 memiliki struktur umum yang sama seperti bidang laporan akuisisi pengguna.
 
 Selain <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary">bidang laporan data lengkap</Anchor>, Laporan Protect360 juga memiliki bidang penargetan ulang dan alasan pemblokiran sebagai berikut:
+
+<div id="blocked-reasons" />
 
 ### Alasan Pemblokiran
 
@@ -201,6 +219,8 @@ Pada level instalasi, kami mengidentifikasi informasi yang cukup pada saat insta
 
 Tabel berikut mencantumkan kemungkinan alasan pemblokiran pada level instalasi:
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### Level instalasi: Alasan pemblokiran instalasi palsu
 
 | Alasan Pemblokiran | Sub Alasan Pemblokiran | Deskripsi |
@@ -211,6 +231,8 @@ Tabel berikut mencantumkan kemungkinan alasan pemblokiran pada level instalasi:
 | install\_store\_validation | - | Validasi tanda terima penginstalan Apple App Store  gagal |
 | validasi\_bot | invalid\_device\_parameters | Ketidaksesuaian ekspektasi bidang perangkat tertentu, ditentukan oleh pelanggan |
 | validasi\_bot | aturan\_validasi | Aturan yang hasilnya berupa penginstalan yang diblokir berdasarkan aturan validasi yang ditetapkan secara manual |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### Level instalasi: Alasan pemblokiran pembajakan atribusi
 
@@ -236,6 +258,8 @@ Ketika pola penipuan terdeteksi, sumber penipuan dimasukkan ke dalam daftar hita
 
 Tabel berikut mencantumkan kemungkinan alasan pemblokiran pada level kluster:
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### Level kluster: Alasan pemblokiran instalasi palsu
 
 | Alasan Pemblokiran | Sub Alasan Pemblokiran | Deskripsi |
@@ -244,6 +268,8 @@ Tabel berikut mencantumkan kemungkinan alasan pemblokiran pada level kluster:
 | bot, site\_blacklist | device\_emulators | Instalasi dihasilkan pada skala besar dengan skrip otomatis yang bekerja pada lingkungan virtual. |
 | site\_blacklist | device\_farms | Tingkat perangkat tidak dikenal (baru) yang tinggi |
 | behavioral\_anomalies | behavioral\_anomalies | Perilaku in-app yang mencurigakan dibandingkan dengan pola perilaku pengguna aplikasi umum |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### Level kluster: Alasan pemblokiran pembajakan atribusi
 
@@ -266,6 +292,8 @@ In-app event dapat diblokir karena alasan berikut:
 * Karena algoritma kami mendeteksi kecurangan.
 
 Tabel berikut mencantumkan kemungkinan alasan pemblokiran tingkat in-app.
+
+<div id="in-app-level-block-reasons" />
 
 #### Alasan pemblokiran in-app
 
@@ -290,6 +318,8 @@ Data lengkap Protect360 mencakup penginstalan dan sesi penipuan dari kampanye pe
 Data lengkap penargetan ulang Protect360 tersedia untuk pemblokiran waktu aktual dan kecurangan yang teridentifikasi pasca-atribusi sebagai berikut:
 
 <table><thead><tr><th>Laporan </th><th>Ekspor data</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>Install</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalasi pasca atribusi</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Data interaksi ulang tidak tersedia</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### Koreksi atribusi penginstalan yang dibajak
 

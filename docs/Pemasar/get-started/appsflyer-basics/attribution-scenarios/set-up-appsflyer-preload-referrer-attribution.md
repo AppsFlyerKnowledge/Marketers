@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** AppsFlyer menggunakan perujuk pramuat untuk mengaitkan penginstalan ke kampanye pramuat, di mana pemasar membuat kontrak dengan Original Equipment Manufacturers (Produsen Peralatan Asli/OEM), operator seluler, dan mitra penemuan aplikasi untuk memuat aplikasi mereka di pabrik atau pada saat perangkat pertama kali dihidupkan oleh pengguna.
 
+<div id="overview" />
+
 ## Atribusi perujuk pramuat AppsFlyer
 
 Dalam kampanye pramuat, Produsen Perangkat Asli (OEM), operator seluler, dan mitra penemuan aplikasi melakukan pramuat aplikasi di perangkat sebelum menjangkau pengguna. Ini dapat dilakukan oleh OEM di pabrik atau oleh penyedia setelah aktivasi perangkat pertama kali.
@@ -35,6 +37,8 @@ Solusinya menyediakan:
 * Dukungan transparan untuk pembaruan aplikasi dan pengunduhan ulang aplikasi.
 * Kemampuan visibilitas dan pengukuran antara aktivasi perangkat pertama dan peluncuran aplikasi pertama. Ini memungkinkan Anda melihat berapa banyak perangkat yang diaktifkan dengan aplikasi yang dimuat sebelumnya di perangkat oleh mitra tertentu, lalu melihat kapan aplikasi diluncurkan untuk pertama kali.
 
+<div id="preload-referrer-options" />
+
 ### Opsi perujuk pramuat
 
 Perujuk dapat digunakan untuk mengaitkan penginstalan dengan pramuat atau dengan klik untuk mengunduh. Lihat tabel berikut untuk lebih jelasnya.
@@ -46,12 +50,16 @@ AppsFlyer memberikan prioritas tertinggi untuk pramuat atribusi. Artinya, jika p
 | Pramuat | <ul><li>Aplikasi dimuat sebelumnya di pabrik atau dimuat saat pertama kali perangkat diaktifkan. Alternatifnya, wizard meminta pengguna untuk mengunduh aplikasi saat perangkat pertama kali diaktifkan.</li><li>Event pramuat, setara dengan klik, dilaporkan ke AppsFlyer saat perangkat dihidupkan untuk pertama kali.</li><li>Atribusi terjadi saat pengguna membuka aplikasi untuk pertama kalinya.</li><li>Event pramuat memiliki prioritas atribusi tertinggi (kecuali prioritas atribusi yang setara diaktifkan).</li></ul> | `preload_rfr` |
 | Klik untuk mengunduh | <ul><li>Penginstalan aplikasi dilakukan nanti dalam siklus hidup perangkat, melalui notifikasi push, toko alternatif mitra, dll.</li><li>Saat pengguna terlibat dengan iklan atau pesan push, aplikasi diunduh dan dipasang secara otomatis di perangkat tanpa dialihkan ke app store.</li><li>Atribusi diberikan menggunakan aturan kemenangan klik terakhir AppsFlyer.</li></ul> | `af_referrer` |
 
+<div id="view-preload-attribution-data" />
+
 ### Ketersediaan data
 
 Pramuat/klik untuk mengunduh data kinerja kampanye keterlibatan tersedia sebagai berikut:
 
 * **Dashboard ikhtisar:** Interaksi dihitung sebagai klik dalam laporan gabungan dan dashboard. Mereka digabungkan pada tingkat mitra pramuat (sumber media) dan kampanye.
 * **Data lengkap:** Interaksi tersedia di laporan klik yang hanya tersedia melalui Data Locker. Mereka ditemukan di bidang URL asli dan dapat diidentifikasi di parameter af\_engagement\_type sebagai pramuat atau click\_to\_download. Untuk penginstalan, lihat tabel di bagian sebelumnya untuk melihat bagaimana jenis pencocokan ditampilkan dalam data lengkap.
+
+<div id="set-up-preload-referrer-attribution" />
 
 ### Siapkan atribusi perujuk pramuat
 
@@ -72,6 +80,8 @@ Pramuat/klik untuk mengunduh data kinerja kampanye keterlibatan tersedia sebagai
    Hal ini memberikan klik deterministik prioritas atribusi yang sama seperti atribusi pramuat, artinya jika klik deterministik didaftarkan antara interaksi perujuk pramuat dan penginstalan, klik tersebut mendapat atribusi berdasarkan logika atribusi sentuhan terakhir standar, dan bukan digantikan oleh perujuk pramuat .
 6. Klik **Simpan Integrasi**.
 7. Beri tahu mitra pramuat bahwa Anda siap mengatribusikan kampanye mereka.
+
+<div id="partners-supporting-preload-referrer-campaigns" />
 
 ### Mitra mendukung kampanye perujuk pramuat
 

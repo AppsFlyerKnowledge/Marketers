@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="Panduan Source of Truth (SSOT) untuk atribusi iOS" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## Cara mendapatkan data kinerja iOS 14+ yang sebenarnya
 
 Bacaan terkait: <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide">panduan solusi SKAN</Anchor> |  <Anchor target="_blank" href="/marketers/id/docs/skan-conversion-studio">Studio konversi SKAN</Anchor> | Dasbor ikhtisar
@@ -54,6 +56,8 @@ Untuk menyertakan tanda SSOT dalam data Anda, Anda harus mengaktifkan SSOT di St
 Lihat <Anchor target="_blank" href="/marketers/id/docs/skan-conversion-studio">Studio Konversi SKAN</Anchor>
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## Dasbor Ikhtisar Single Source of Truth
 
@@ -109,6 +113,8 @@ Dalam tampilan SSOT:
 * **Pengunduhan ulang**: Disertakan dalam metrik penginstalan. Tidak ada pemisahan antara penginstalan vs pengunduhan ulang.
 * **Zona Waktu**: Penginstalan yang dilaporkan AppsFlyer dan event yang ditampilkan dalam UTC atau dalam zona waktu lokal khusus aplikasi sebagaimana diatur pada <Anchor target="_blank" href="/marketers/id/docs/app-settings">halaman pengaturan aplikasi</Anchor>. Untuk data yang dilaporkan SKAN, penginstalan dan tampilan event menggunakan UTC, dengan pengecualian data Meta dan Google SKAN, yang zona waktunya didasarkan pada zona waktu yang dikonfigurasi di akun Meta dan Google Anda masing-masing.
 * **Mata Uang**: Ditampilkan dalam USD atau mata uang lokal khusus aplikasi sebagaimana diatur di <Anchor target="_blank" href="/marketers/id/docs/app-settings">halaman pengaturan aplikasi</Anchor>.
+
+<div id="filter-considerations" />
 
 #### Pertimbangan filter
 
@@ -169,6 +175,8 @@ Metrik tersedia di dashboard SSOT:
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## Bagaimana cara kerja SSOT?
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -219,6 +227,8 @@ Mekanisme SSOT ada di AppsFlyer SDK di aplikasi Anda di perangkat pengguna dan d
 **Pertimbangan**
 
 * Secara umum, AppsFlyer tidak menghitung penginstalan ulang. Dalam konteks SSOT, status penginstalan ulang tidak dipertimbangkan. Ini berarti SSOT tidak menghapus penginstalan SKAN duplikat yang berasal dari penginstalan ulang dalam konteks analitik SSOT dan mereka tidak mempengaruhi pengaturan tanda af\_attribution.
+
+<div id="attribution-flag-field" />
 
 #### **Bidang flag atribusi**
 
@@ -279,6 +289,8 @@ Formula untuk menghitung metrik contoh:
 | In-App Event | In-app event (sebagai dimensi) dan metriknya hanya tersedia untuk:<ul><li>Event yang dikonfigurasi di SKAN Conversion Studio tersedia.</li><li>Event yang terjadi selama periode Jendela 1 tersedia.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

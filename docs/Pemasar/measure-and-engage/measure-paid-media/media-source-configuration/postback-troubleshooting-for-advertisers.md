@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Sekilas:** Temukan penyebab utama dan solusi mengapa partner Anda tidak menerima postback yang diharapkan. Telusuri setiap topik di bawah ini dan lihat apakah mungkin itu penyebabnya.
 
+<div id="check-the-integration-toggles" />
+
 ## Periksa tombol integrasi
 
 Berbagai tombol mengendalikan berbagai bagian integrasi. Keadaan tombol bisa menjadi alasan untuk tidak menerima postback. 
@@ -64,6 +66,8 @@ Tombol **<Anchor target="_blank" href="/marketers/id/docs/in-app-event-postback-
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## Periksa konfigurasi event
 
@@ -137,6 +141,8 @@ Saat tautan atribusi menyertakan parameter`af_installpostback=false` , penginsta
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## Pembatasan privasi
 
 Dalam kasus berikut, AppsFlyer tidak mengirimkan postback karena pembatasan privasi.
@@ -168,6 +174,8 @@ Filter berbagi telah diterapkan di SDK untuk mencegah mitra menerima informasi. 
 Untuk informasi selengkapnya lihat: <Anchor target="_blank" href="/marketers/id/docs/apply-privacy-preserving-sdk-methods#cegah-berbagi-data-dengan-pihak-ketiga">Mencegah berbagi data dengan pihak ketiga</Anchor> dan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">setSharingFilterForPartners</Anchor>.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## Aneka ragam
 
@@ -233,11 +241,15 @@ Ada sejumlah <Anchor target="_blank" href="/marketers/id/docs/self-reporting-net
 
 <div id="media-source-restrictions-on-thirdparty-platforms::40092c14" />
 
+<div id="advanced-privacy-postbacks" />
+
 <Accordion title="Pembatasan sumber media pada platform pihak ketiga">
 
 <Anchor target="_blank" href="/marketers/id/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms">Beberapa sumber media</Anchor> membatasi berbagi data dengan pihak ketiga. AppsFlyer tidak dapat membagikan data tingkat pengguna yang diperoleh melalui sumber media ini dengan platform atau layanan pihak ketiga mana pun. Oleh karena itu, semua penginstalan dari sumber media tersebut dikirim sebagai organik. Perhatikan bahwa iklan Meta tidak membagikan data apa pun dengan platform pihak ketiga.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

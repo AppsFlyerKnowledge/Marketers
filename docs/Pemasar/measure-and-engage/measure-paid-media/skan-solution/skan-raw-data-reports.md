@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Sekilas:** Laporan data lengkap SKAN berisi data tingkat baris yang dihasilkan setelah menerjemahkan dan mendekode postback yang diterima AppsFlyer dari iOS, serta postback SKAN lengkap. Data tersedia melalui <Anchor target="_blank" href="/marketers/id/docs/data-locker-for-marketers">Data Locker</Anchor> dan <Anchor target="_blank" href="/marketers/id/docs/push-api-streaming-raw-data">Push API</Anchor>. Jika paket langganan Anda menyertakan data lengkap, langganan Data Locker tidak diperlukan.
 
+<div id="skan-raw-data-reports" />
+
 ## Laporan data lengkap SKAN
 
 Prinsip-prinsip: 
@@ -59,6 +61,8 @@ Jenis laporan yang tersedia adalah:
 
 * Bidang pengayaan yang tidak wajib seperti campaign\_name, ad\_network\_campaign, ip yang tidak disediakan oleh jaringan iklan.
 * Apple menahan data karena kebijakan ambang batas Apple. Bidang seperti source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## Format dan konten laporan data lengkap SKAN
 
@@ -208,6 +212,8 @@ Jenis laporan yang tersedia adalah:
 
 <Accordion title="Jenis format bidang data lengkap">
 
+<div id="field-formats" />
+
 #### Format bidang
 
 | Nama format | Deskripsi |
@@ -238,6 +244,8 @@ Jenis laporan yang tersedia adalah:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informasi tambahan
 
 <div id="traits-and-limitations" />
@@ -258,6 +266,8 @@ Jenis laporan yang tersedia adalah:
 | Akses pengguna akun | Tersedia. Menurut izin akun |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Sekilas:** Buat tautan dengan kemampuan atribusi, pengalihan, dan deep linking yang mengubah pengguna media milik sendiri atau berbayar menjadi pengguna aplikasi, terlepas dari perangkat, sistem operasi, saluran, atau platform.Tautan ini membantu memberikan pengalaman terbaik bagi pengguna Anda, apa pun sumber media milik asal konversi mereka: situs web, spanduk, postingan media sosial, email, teks, dan banyak lagi.
 
+<div id="introduction-video" />
+
 ## Video pengantar
 
 <Embed title="Pemutar video YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## Manfaat
 
@@ -39,6 +43,8 @@ Pengalaman pelanggan AppsFlyerdan rangkaian deep linking yang didukung oleh OneL
 
 Suite ini i gratis untuk semua paket akun.
 
+<div id="experiences" />
+
 ## Pengalaman
 
 Pengalaman pelangganAppsflyerdan suite deep linking yang didukung oleh OneLinkmemungkinkan Anda membuat tautan yang memberikan pengalaman optimal bagi pengguna Anda, dari mana pun mereka berasal. Pengalaman pelanggan yang dapat Anda konfigurasikan meliputi:
@@ -51,6 +57,8 @@ Pengalaman pelangganAppsflyerdan suite deep linking yang didukung oleh OneLinkme
 * **Teks-ke-aplikasi**:Buat tautan untuk SMS dan kampanye pesan Anda dan libatkan pengguna melalui pesan teks.
 * **Referral-ke-aplikasi** : Buat tautan undangan pengguna yang memungkinkan pengguna atau pemberi pengaruh mengundang orang lain ke aplikasi Anda atau berbagi konten dalam aplikasi tertentu, misalnya, sebuah artikel.
 * **Lainnya**: Dari mana pun asal pengguna Anda, baik melalui desktop atau seluler, online atau offline, media milik sendiri atau berbayar, gunakan OneLink untuk mengarahkan pengguna Anda ke tempat yang tepat dengan mudah.
+
+<div id="setting-up-onelink" />
 
 ## Pengaturan
 
@@ -70,6 +78,8 @@ Tabel berikut menjelaskan detail tugas pemasar dan pengembang dan menyediakan ta
 | Buat templat OneLink | <ul><li>Pemasar/manajer produk menyiapkan templat di AppsFlyer.</li><li>Pengembang Android mengonfigurasi metode pembukaan aplikasi untuk pengguna yang ada (Tautan Aplikasi Android dan skema URI).</li><li>Pengembang iOS mengonfigurasi metode pembukaan aplikasi untuk pengguna yang ada (Tautan Universal iOS dan skema URI).</li></ul> | <ul><li>Dashboard AppsFlyer</li><li><Anchor target="_blank" href="/marketers/id/docs/create-a-onelink-template">Instruksi pemasar</Anchor></li><li>Petunjuk pengembang untuk <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android</Anchor> dan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor></li></ul> |
 | Buat tautan OneLink | <ul><li>Pemasar/manajer produk menyiapkan tautan di AppsFlyer, termasuk memilih pengalaman pelanggan yang diinginkan dan menambahkan atribusi atau parameter deep linking yang diinginkan.</li><li>Pengembang Android dan iOS menerapkan metode UDL untuk deep linking (jika deep linking diperlukan).</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Instruksi pemasar</Anchor></li><li>Petunjuk pengembang untuk <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">Android</Anchor> dan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor></li><li>Aplikasi sampel (Github)</li></ul> |
 
+<div id="additional-options" />
+
 ## Opsi tambahan
 
 Setelah menyelesaikan beberapa atau semua penyiapan di UI, pertimbangkan untuk menerapkan fitur tambahan yang dijelaskan di bawah ini.
@@ -83,9 +93,13 @@ Setelah menyelesaikan beberapa atau semua penyiapan di UI, pertimbangkan untuk m
 * <Anchor target="_blank" href="/marketers/id/docs/understand-onelink-short-vs-long-urls">URL panjang</Anchor> : Tambahkan parameter ke tautan khusus OneLink Anda atau buat tautan khusus OneLink dalam jumlah besar dengan menerapkan rumus sederhana Anda sendiri dalam spreadsheet.
 * <Anchor target="_blank" href="/marketers/id/docs/redirect-app-users-to-a-website">Pengarahan aplikasi-ke-web</Anchor> : Mengarahkan pengguna dari aplikasi Anda ke situs web atau halaman media sosial.
 
+<div id="troubleshooting-and-faq" />
+
 ## Pemecahan masalah dan Pertanyaan Umum (FAQ)
 
 Temukan solusi dengan cepat untuk menguji dan men-debug masalah pengarahan/perilaku tautan kustom OneLink dengan <Anchor target="_blank" href="/marketers/id/docs/onelink-troubleshooting-and-faq">panduan pemecahan masalah OneLink</Anchor> kami.
+
+<div id="limitations" />
 
 ## Batasan
 

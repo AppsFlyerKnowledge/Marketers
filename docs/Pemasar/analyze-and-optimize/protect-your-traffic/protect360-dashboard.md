@@ -31,6 +31,8 @@ x-zendesk:
 
 [![p360_dashboard_main.png](https://support.appsflyer.com/hc/article_attachments/5218491552273)](https://support.appsflyer.com/hc/article_attachments/5218491552273)
 
+<div id="about-protect360-dashboard" />
+
 ## Tentang dashboard Protect360
 
 Dashboard Protect360:
@@ -81,6 +83,8 @@ Tersedia opsi penyaringan dan pengelompokan berikut:
   * **Geo**: membandingkan penipuan yang teridentifikasi dari semua negara
 
 </Accordion>
+
+<div id="installs-dashboard" />
 
 ## Dashboard instalasi
 
@@ -134,6 +138,8 @@ Metrik in-app event yang diblokir menampilkan jumlah in-app event yang diblokir 
 
 <Accordion title="Bagan — p enginstalan">
 
+<div id="identified-fraud-trend-chart" />
+
 #### Grafik tren penipuan yang teridentifikasi
 
 Diagram tren penipuan yang teridentifikasi menampilkan jumlah penginstalan, atribusi ulang, dan interaksi ulang palsu per hari, yang dikelompokkan berdasarkan:
@@ -143,6 +149,8 @@ Diagram tren penipuan yang teridentifikasi menampilkan jumlah penginstalan, atri
 * **Jenis sumber**: Non-organik dan organik
 
 Tampilannya dapat berupa grafik garis atau diagram batang.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### Bagan koreksi atribusi penginstalan yang dibajak
 
@@ -160,6 +168,8 @@ Anda dapat:
 * Saat pembajakan diblokir secara real-time, atribusi yang benar akan ditampilkan di dashboard dan laporan AppsFlyer (bukan hanya Protect360). Ketika pembajakan teridentifikasi setelah atribusi, atribusi yang benar hanya ditampilkan di data lengkap Protect360.
 * Bagan ini dapat menampilkan koreksi **ke** organik, tetapi tidak **dari** organik.
 
+<div id="identified-fraud-chart" />
+
 #### Bagan penipuan yang teridentifikasi
 
 Bagan penipuan yang teridentifikasi menampilkan jenis penipuan yang Anda alami, berdasarkan persentase. Perincian penipuan dapat dilakukan dengan:
@@ -176,6 +186,8 @@ Bagan penipuan yang teridentifikasi menampilkan jenis penipuan yang Anda alami, 
 <div id="installs-table" />
 
 <Accordion title="Penginstalan—tabel">
+
+<div id="identified-fraud-breakdown" />
 
 #### Perincian penipuan yang teridentifikasi
 
@@ -196,6 +208,8 @@ Struktur tabel dinamis:
 * Adalah per pengguna, sehingga setiap pengguna akun dengan akses ke Protect360 dapat secara pribadi menyesuaikan struktur tabel mereka sendiri. Lihat [opsi tabel lainnya](/docs/protect360-dashboard#opsi-tabel-tambahan) .
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Konten tabel rincian kecurangan yang teridentifikasi
 
@@ -260,6 +274,8 @@ Struktur tabel dinamis:
 | CTIT > Lebih dari 60 menit | Penginstalan, atribusi ulang, dan interaksi ulang dengan waktu antara klik dan peluncuran aplikasi pertama lebih dari 60 menit. Penghitungan hanya mencakup penginstalan yang CTIT-nya di bawah 25 jam (dan tidak semua penginstalan). Biasanya, sekitar 30% peluncuran aplikasi pertama terjadi lebih dari 60 menit setelah pengunduhan. |
 | CTIT > Lebih dari 5 jam | Penginstalan, atribusi ulang, dan interaksi ulang dengan waktu antara klik dan peluncuran aplikasi pertama lebih dari 5 jam. Penghitungan hanya mencakup penginstalan yang CTIT-nya di bawah 25 jam (dan tidak semua penginstalan). Biasanya, sekitar 20% peluncuran aplikasi pertama terjadi lebih dari 5 jam setelah pengunduhan. |
 
+<div id="additional-table-options" />
+
 #### Opsi tabel tambahan
 
 * Klik tombol **Ekspor CSV** untuk mengunduh tabel ke desktop Anda dalam format CSV
@@ -278,6 +294,8 @@ Perhatikan bahwa rasio tidak umum dari KPI ini mana pun tidak selalu mengindikas
 Data in-app event di dashboard CPI berbasis LTV, artinya semua in-app event yang terkait dengan instal yang terjadi selama rentang tanggal yang ditentukan.
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## Dashboard in-app event
 
@@ -304,6 +322,8 @@ Metrik headline memungkinkan Anda untuk melihat:
 
 <Accordion title="—B agan in-app">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **Grafik tren kecurangan dari waktu ke waktu**
 
 Grafik tren penipuan dari waktu ke waktu menampilkan jumlah event per hari, dibagi menjadi:
@@ -311,6 +331,8 @@ Grafik tren penipuan dari waktu ke waktu menampilkan jumlah event per hari, diba
 * **Waktu aktual** : In-app event penipuan diblokir secara waktu aktual
 * **Pasca-atribusi** : Event penipuan diidentifikasi pasca-atribusi
 * **Non-penipuan**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **Penipuan IAE teratas menurut grafik sumber media**
 
@@ -346,6 +368,8 @@ Struktur tabel dinamis:
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### Konten tabel rincian penipuan in-app event
 
 | Kolom Tabel | Deskripsi |
@@ -370,6 +394,8 @@ Struktur tabel dinamis:
 | IAE terblokir | IAEs yang diblokir oleh aturan validasi. |
 | Dikoreksi menjadi organik | Penginstalan yang dibajak dengan sumber non-penipuan terakhir adalah organik. |
 | Dikoreksi menjadi sumber non-organik | Penginstalan yang dibajak dengan sumber non-penipuan terakhir adalah sumber media non-organik. |
+
+<div id="additional-table-options-1" />
 
 #### Opsi tabel tambahan
 
@@ -486,6 +512,8 @@ Area yang ditempati oleh sumber media mewakili jumlah total instalasinya, termas
 | Data historis | Data tersedia sejak awal langganan Protect360 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

@@ -64,6 +64,8 @@ Semua mitra, sumber media, dan platform lain yang terintegrasi dengan AppsFlyer 
 
 * Di AppsFlyer, di bawah **Konfigurasi** buka **Pasar Mitra**. Anda dapat menggunakan berbagai <Anchor target="_blank" href="/marketers/id/docs/partner-integrations#filters">filterpencarian</Anchor>.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Undang mitra baru ke AppsFlyer
 
 Jika mitra yang bekerja sama dengan Anda belum terintegrasi dengan AppsFlyer, Anda dapat mengirimkan tautan undangan kepada mereka.
@@ -75,6 +77,8 @@ Jika mitra yang bekerja sama dengan Anda belum terintegrasi dengan AppsFlyer, An
 <Accordion title="Mitra terintegrasi aktif Anda">
 
 Halaman <Anchor target="_blank" href="/marketers/id/docs/partner-integrations#active-partner-integrations">Integrasi aktif</Anchor> di Pasar Mitra menampilkan semua mitra terintegrasi <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">aktif</Anchor> Anda. Dari halaman ini, Anda dapat mempelajari tentang mitra dan mengelola integrasinya.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -106,11 +110,15 @@ Halaman ini disusun sebagai berikut:
   * **Buang Perubahan:** Membatalkan perubahan terakhir tanpa menyimpan.
   * **Simpan:** Menyimpan pengaturan dari tab saat ini saja.
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### Tab pengaturan yang berlaku per jenis mitra
 
 <table><thead><tr><th> </th><th colspan="2">Tab Pengaturan</th><th> </th></tr><tr><th>Jenis mitra</th><th>Integrasi </th><th>Hak Akses</th><th>Catatan</th></tr></thead><tbody><tr><td>Media Source</td><td>Y</td><td>Y</td><td><p><strong>Tersedia tab tambahan</strong>: Biaya, pendapatan iklan, tautan atribusi</p><p>Termasuk jaringan iklan, jaringan afiliasi, penerbit langsung, pengiklanan terprogram, jaringan iklan domestik China, dan Jaringan Penargetan Ulang.<br/>Untuk SRN, tab tautan atribusi tidak berlaku.</p></td></tr><tr><td>Agensi </td><td>N</td><td>Y</td><td>Agensi mandiri yang tidak berfungsi sebagai ad network </td></tr><tr><td>Platform pihak ketiga</td><td>Y</td><td>N</td><td>Platform otomatisasi Marketing atau Analisis</td></tr><tr><td> Mitra pemasaran </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="set-up-a-partner-non-srn" />
 
 ## Siapkan mitra (non-SRN)
 
@@ -118,6 +126,8 @@ Untuk mengakses pengaturan dan mengonfigurasi kampanye Anda dengan mitra:
 
 1. Cari mitra Anda, bisa <Anchor target="_blank" href="/marketers/id/docs/partner-integrations#manage-existing-integrations">dari marketplace</Anchor> atau dari halaman **Konfigurasi** > halaman **Integrasi** A**ktif** .
 2. Selesaikan pengaturan per tab, sesuai kebutuhan. Lihat bagian berikut.
+
+<div id="note-1" />
 
 > 📘 **Catatan**
 >
@@ -132,6 +142,8 @@ Integrasi mitra berbeda dalam persyaratannya dan dapat berisi sebagian dari semu
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Selesaikan bagian sesuai kebutuhan.
+
+<div id="integration-sections" />
 
 #### Bagian integrasi
 
@@ -263,6 +275,8 @@ Tabel berikut mencakup berbagai bagian berbeda dari halaman integrasi. Beberapa 
       <td>
         Jika integrasi partner diaktifkan, Anda dapat mengirimkan postback default terkait tindakan pengguna yang terjadi sebelum peluncuran aplikasi kepada partner, seperti misalnya penginstalan, penginstalan yang ditolak, dan interaksi ulang.
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **Catatan**
         >
         > * Event yang ditolak adalah in-app event yang diblokir oleh <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">Protect360</Anchor> atau event yang ditemukan tidak sesuai dengan validasi target. Jika event ditolak, konfirmasikan dengan mitra bahwa mereka telah mengaktifkan penolakan integrasi event dengan AppsFlyer.
@@ -374,6 +388,8 @@ Buat dan simpan tautan atribusi untuk penggunaan jaringan iklan klik (non-SRN), 
 3. Tambahkan parameter untuk <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters#parameter-khusus-android">Android</Anchor> dan <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters#parameter-spesifik-ios">iOS</Anchor>, sesuai kebutuhan.
 4. [Opsional] Pilih parameter atribusi tambahan.
 
+<div id="attribution-link-parameters" />
+
 #### Parameter link atribusi
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -381,6 +397,8 @@ Buat dan simpan tautan atribusi untuk penggunaan jaringan iklan klik (non-SRN), 
 Menambahkan parameter ke tautan atribusi memungkinkan Anda melakukan analisis penelusuran secara menyeluruh. Parameter yang sudah ditentukan pada tautan atribusi dapat diedit dengan menambahkannya dan nilai barunya di sini. Saat menyimpan tautan atribusi, semua parameter yang dikonfigurasikan di tab ini disimpan.
 
 Pilih parameter mana yang ingin Anda tambahkan ke tautan atribusi.
+
+<div id="attribution-link-parameters-1" />
 
 #### Parameter link atribusi
 
@@ -393,6 +411,8 @@ Pilih parameter mana yang ingin Anda tambahkan ke tautan atribusi.
 | Parameter Pelanggan | Gunakan salah satu dari 5 parameter pelanggan untuk memasukkan nilai yang berguna. Harap perhatikan bahwa parameter ini di-parsing dan muncul di laporan data lengkap, yang membuat parameter ini sangat berguna untuk melakukan agregasi atau pemfilteran. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 Anda dapat menambahkan parameter lain ke tautan atribusi dengan menuliskannya pada kotak parameter baru. Anda dapat menggunakan semua <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters">Parameter URL AppsFlyer yang tersedia.</Anchor> Perhatikan bahwa hanya skema URI dan parameter OneLink yang disandikan pada tautan atribusi.
+
+<div id="retargeting-settings" />
 
 #### Pengaturan Retargeting
 
@@ -412,6 +432,8 @@ Untuk menggunakan tautan Anda untuk penargetan ulang:
 
    * Anda dapat mengatur nilai dalam satuan hari (1-90), jam (hingga 23), atau bahkan selamanya.
    * Jendela interaksi ulang ditambahkan ke tautan di parameter af\_reengagement\_window.
+
+<div id="click-through-attribution" />
 
 #### Atribusi Click-Through
 
@@ -435,6 +457,8 @@ Ini adalah tautan atribusi yang berisi semua informasi pengaturan yang telah And
 2. Salin tautan yang dihasilkan.
 
 Kirim tautan ke mitra untuk diaktifkan saat calon pelanggan mengklik iklan terkait.
+
+<div id="view-through-attribution-lookback-window" />
 
 #### Lookback Window Atribusi View-Through
 
@@ -471,15 +495,21 @@ Kirim ke mitra untuk diaktifkan saat iklan terkait tampil, biasanya selama 1 det
 * Praktik terbaiknya adalah menerapkan Cost API (API Biaya) (langganan ROI360 diperlukan).
 * API Biaya mencakup laporan klik dan tayangan. Lihat <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabel integrasi biaya jaringan iklan</Anchor> untuk detail lengkap tentang dimensi, metrik, dan fitur yang didukung.
 
+<div id="note-2" />
+
 > 📘 **Catatan**
 >
 > Jika pengiklan menggunakan biro iklan untuk menjalankan kampanye mereka, biro iklan, dan bukan pengiklan, harus berintegrasi dengan mitra terkait. Jika tidak, jika pengiklan dan agensi berintegrasi dengan partner menggunakan kredensial yang sama untuk aplikasi yang sama, data biaya akan digandakan.
+
+<div id="enabling-cost-data-by-api" />
 
 #### Mengaktifkan data biaya oleh API
 
 **Untuk mengaktifkan API Biaya**:
 
 * Ikuti <Anchor target="_blank" href="/marketers/id/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">petunjuk integrasi ini</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Status Sinkronisasi Data Biaya
 
@@ -493,10 +523,14 @@ Kirim ke mitra untuk diaktifkan saat iklan terkait tampil, biasanya selama 1 det
 
 Jika Anda bertindak sebagai penerbit yang menampilkan iklan di aplikasi Anda, fungsi pendapatan iklan memungkinkan Anda untuk mengatribusikan pendapatan iklan dengan media source (sumber media) yang membawa pengguna. <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution">Tentang atribusi pendapatan iklan.</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### Mengaktifkan atribusi pendapatan iklan
 
 1. Periksa untuk melihat metode mana, <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">agregat atau atribusi tingkat pengguna</Anchor>, yang didukung oleh mitra.
 2. Ikuti metode yang sesuai dalam panduan <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution#implementasi">integrasi pendapatan iklan</Anchor>.
+
+<div id="ad-revenue-api-status-messages" />
 
 #### Pesan status API pendapatan iklan
 
@@ -521,6 +555,8 @@ Jika Anda bertindak sebagai penerbit yang menampilkan iklan di aplikasi Anda, fu
 * Anda tidak harus mengaktifkan integrasi atribusi dengan mitra untuk memberikan mereka hak akses.
 * **Jaringan iklan yang diatur oleh agensi:** Saat pengaturan mitra dilakukan oleh agensi, pemasang iklan tidak dapat melihat status aktivasi jaringan iklan atau hak akses yang diberikan.
 * Jika hubungan Anda dengan mitra hanya agensi, abaikan bagian **Hak Akses Jaringan Iklan** dan atur bagian **Hak Akses Agensi** .
+
+<div id="ad-network-permissions" />
 
 #### Hak Akses Ad Network
 
@@ -551,6 +587,8 @@ Jika Anda bertindak sebagai penerbit yang menampilkan iklan di aplikasi Anda, fu
 | <span id="access-protect360-dashboard-raw-data"></span>Akses dasboard Protect360 & data lengkap | Jaringan iklan dapat:<ul><li>Mengakses dashboard Protect360 mereka (termasuk <Anchor target="_blank" href="/marketers/id/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Akses Protect360, Aturan Validasi, dan data lengkap jika merupakan mereka merupakan bagian dari paket langganan Anda. ProtectLITE tidak menyertakan akses ke data lengkap.</li></ul>**Catatan:** Ketika Anda berlangganan <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">Protect360</Anchor> , jaringan iklan dapat melihat dashboard lengkap. Tanpa langganan Protect360, mereka dapat melihat dashboard lite. |
 | <span id="access-ad-revenue-raw-data"></span>Mengakses data lengkap pendapatan iklan | Jaringan iklan dapat mengakses <Anchor target="_blank" href="/partners/id/docs/ad-revenue-signals-for-ua-ad-networks">data pendapatan iklan mereka untuk digunakan demi pengoptimalan UA</Anchor>.   <br />**Catatan:** Izin ini hanya tersedia untuk aplikasi dengan langganan <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> . |
 
+<div id="agency-permissions" />
+
 #### Hak Akses Agensi
 
 * Saat Anda memberikan izin kepada agensi, mereka dapat memberikan hak akses untuk mengelola aplikasi Anda kepada jaringan iklan yang bekerja sama dengan mereka. Hal ini sama seperti memberikan hak akses ke jaringan iklan.
@@ -578,9 +616,13 @@ Pelajari lebih lanjut tentang <Anchor target="_blank" href="/partners/id/docs/ab
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## Uji integrasinya
 
 Setelah menyelesaikan integrasi mitra, dan sebelum Anda mulai menjalankan kampanye dengan mitra yang baru ditambahkan, penting untuk menguji integrasi tersebut. Kesalahan kemungkinan besar terjadi selama penyiapan. Pengujian lebih awal menghindari risiko menghabiskan banyak sumber daya, hanya untuk menemukan data atribusi Anda hilang atau salah. 
+
+<div id="note-4" />
 
 > 📘 **Catatan**
 >
@@ -637,6 +679,8 @@ Jika paket langganan Anda mencakup akses ke data lengkap, Anda harus menguji dat
 2. Pilih sumber media yang diuji.
 3. Tunggu hingga 15 menit sejak penginstalan, lalu unduh laporan Penginstalan.
 4. Periksa catatan penginstalan dari mitra yang ada, dan sertakan parameter seperti sumber media, nama kampanye, waktu dan jenis touch, ID perangkat (jika ada), nama agensi (disebut "Mitra" di laporan), dll.
+
+<div id="important-2" />
 
 > 🚧 **Penting!**
 >

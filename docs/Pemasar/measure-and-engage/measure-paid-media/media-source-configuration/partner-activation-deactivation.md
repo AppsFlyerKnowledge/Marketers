@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Mengaktifkan atau menonaktifkan integrasi mitra, mengizinkan atau menolak mereka untuk mendapatkan data Anda dan melakukan tindakan.
 
+<div id="activation-overview" />
+
 ## Iktisar aktivasi
 
 Integrasi mitra dapat bersifat aktif atau tidak aktif. Integrasi pertama kali diaktifkan dengan **mengaktifkan tombol Aktifkan mitra** dari halaman integrasi utama. Ada berbagai jenis integrasi. Integrasi juga dapat dianggap aktif jika [jenis integrasi](#integration-types) lainnya (lihat tabel di bawah) diaktifkan, bahkan ketika sakelar **Aktifkan mitra** dimatikan.
@@ -83,6 +85,8 @@ Tabel berikut ini menyajikan dampak pengaturan aktivasi mitra pada atribusi dan 
 
 </Accordion>
 
+<div id="activate-a-partner-integration" />
+
 ## Mengaktifkan integrasi mitra
 
 **Untuk mengaktifkan atau mengedit integrasi utama (tab Integrasi) dari aplikasi yang sedang dipilih:**
@@ -95,9 +99,13 @@ Tabel berikut ini menyajikan dampak pengaturan aktivasi mitra pada atribusi dan 
 
 Lihat [jenis integrasi lainnya](#integration-types).
 
+<div id="caution" />
+
 > ❗️ **Perhatian**
 >
 > Pastikan untuk tidak menggunakan pengaturan **Aktifkan mitra** untuk menjeda atau mengakhiri kampanye. Melakukan hal tersebut dapat menyebabkan kerusakan permanen pada pengukuran kampanye aktif.
+
+<div id="who-can-activate-an-integration" />
 
 #### Siapa yang dapat mengaktifkan integrasi?
 
@@ -107,6 +115,8 @@ Integrasi mitra dapat diaktifkan oleh pemasar dan agensi sesuai dengan tabel ber
 | --- | --- | --- |
 | Pemasar | Diaktifkan untuk penggunaan sendiri dan atas nama agensi | Mengaktifkan untuk penggunaan sendiri |
 | Agensi | Tidak dapat mengaktifkan | Mengaktifkan non-SRN yang ditunjuk oleh agensi |
+
+<div id="deactivate-a-partner-integration" />
 
 ## Menonaktifkan integrasi mitra
 
@@ -162,9 +172,13 @@ Sebagai alternatif, mitra dapat dinonaktifkan dengan membuka halaman integrasi m
 * Agensi melihat pesan tersebut namun hanya dapat menonaktifkan integrasi mereka sendiri.
 * Mitra **tidak dapat melihat** pesan penonaktifan, meskipun mereka memiliki izin untuk mengonfigurasi integrasi.
 
+<div id="partner-and-agency-access-to-dashboards" />
+
 ## Akses Mitra dan Agensi ke dasbor
 
 Mitra dan agensi memiliki tampilan dasbor dan opsi konfigurasi yang berbeda, sesuai dengan izin mereka.
+
+<div id="partner-visibility" />
 
 ### Visibilitas mitra
 
@@ -175,6 +189,8 @@ Mitra dan agensi memiliki tampilan dasbor dan opsi konfigurasi yang berbeda, ses
 | --- | --- |
 | Pemasar | Ya |
 | Agensi | Tidak |
+
+<div id="agency-permissions" />
 
 ### Hak Akses Agensi
 
@@ -187,10 +203,14 @@ Anda bisa memberikan izin kepada agensi untuk bekerja dengan aplikasi Anda dan m
 3. Buka tab **Izin** dan nyalakan pada **Izin Agensi.**
 4. [Opsional] Berikan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#hak-akses-agensi">izin</Anchor> tambahan kepada agensi.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > * **Agensi** dapat mengaktifkan atau menonaktifkan pengaturan **Aktifkan mitra** untuk **mitra non-SRN**.
 > * **Pemasar** dapat mengaktifkan atau menonaktifkan pengaturan **Aktifkan mitra** untuk **SRN**. Ketika melakukannya, instalasi dari SRN tersebut **tidak dikaitkan dengan agensi.**
+
+<div id="disabled-agency-permissions" />
 
 #### Izin agensi yang dinonaktifkan
 
@@ -205,6 +225,8 @@ Catatan: **Jika pemasar menonaktifkan izin keagenan, data historis keagenan (sep
 
 Contoh berikut menjelaskan apa yang terjadi pada lalu lintas yang terus dikirim setelah pemasar menghapus izin keagenan:
 
+<div id="example-1" />
+
 > 📄 **Contoh 1**
 >
 > **Kampanye agensi dengan non-SRN (mitra tautan atribusi)**
@@ -212,6 +234,8 @@ Contoh berikut menjelaskan apa yang terjadi pada lalu lintas yang terus dikirim 
 > Lalu lintas dikaitkan ke organik, atau ke keterlibatan sebelumnya jika masih dalam jendela penelusuran. Agensi tidak dikaitkan.
 >
 > Contoh ini juga berlaku untuk skenario di mana AppsFlyer menerima tautan atribusi klik-tayang serta meminta API mitra
+
+<div id="example-2" />
 
 > 📄 **Contoh 2**
 >

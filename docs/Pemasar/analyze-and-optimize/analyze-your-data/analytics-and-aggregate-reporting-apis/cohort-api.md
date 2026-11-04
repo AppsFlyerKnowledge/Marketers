@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Sekilas:** API pelaporan kelompok memberi pemasang iklan cara terprogram untuk mendapatkan data Kelompok. Gunakan API untuk mengintegrasikan data Kelompok ke dalam BI dan sistem otomasi pemasaran.
 
+<div id="cohort-api" />
+
 ## API pelaporan kelompok
 
 API pelaporan kelompok digunakan untuk mendapatkan data kinerja kampanye kelompok dari platform AppsFlyer. Ini secara fungsional setara dengan <Anchor target="_blank" href="/marketers/id/docs/cohort-and-retention-dashboard">dashboard Kelompok</Anchor>.
@@ -108,6 +110,8 @@ Gunakan parameter pengelompokan berikut untuk menyertakan kolom tambahan dan mem
 | Parameter | Nilai | Parameter wajib |
 | --- | --- | --- |
 | kpi | Pilih **satu** KPI dari beberapa KPI yang tersedia. Di masa mendatang, kami berencana untuk mengizinkan pemilihan beberapa KPI.<ul><li>Untuk setiap KPI yang diminta, semua fungsi dikembalikan.</li><li>Format: String dalam suatu larik</li><li>Contoh A: `"kpis": ["sessions"]`</li><li>Contoh B: `"kpi": ["event_name"]`</li></ul> | Ya |
+
+<div id="formatting-kpi-functions" />
 
 ### Presentasi fungsi KPI
 
@@ -272,6 +276,8 @@ Gunakan data yang tersedia melalui <Anchor target="_blank" href="/marketers/id/d
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informasi tambahan
 
 <div id="response-codes-and-troubleshooting" />
@@ -324,6 +330,8 @@ Jika rentang tanggal laporan Anda adalah 1 Januari hingga 11 Januari, pengguna y
 
 * Nilai periode dapat berupa satu atau lebih dari 0-180 berikut ini. Misalnya 0, 1, 2, 30, 180.
 * Jika tidak ada periode yang ditentukan, nilai default 0, 1, 2, dan seterusnya hingga 30, 60, 90, dan 180 akan dikembalikan.
+
+<div id="example-period-filter" />
 
 > 📄 **Contoh filter periode**
 >

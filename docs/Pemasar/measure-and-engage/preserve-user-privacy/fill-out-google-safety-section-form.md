@@ -24,11 +24,15 @@ x-zendesk:
 
 Pelanggan harus bekerja sama dengan penasihat hukum dan profesional lainnya untuk menentukan dengan tepat bagaimana kebijakan Google berlaku untuk mereka dan harus menyesuaikan tanggapan mereka sesuai dengan konfigurasi dan penggunaan khusus mereka.
 
+<div id="disclaimer" />
+
 #### **Penafian**
 
 Informasi yang ada dalam artikel ini dimaksudkan untuk membantu menjawab Kuesioner Bagian Keamanan Google **hanya** terkait dengan apa yang diproses AppsFlyer atas nama pelanggan.
 
 Ini disediakan untuk tujuan informasi dan kenyamanan saja. Pelanggan harus bekerja sama dengan penasihat hukum dan profesional lainnya untuk menentukan dengan tepat bagaimana kebijakan Google berlaku untuk mereka dan harus menyesuaikan tanggapan mereka sesuai dengan konfigurasi dan penggunaan khusus mereka.
+
+<div id="introduction" />
 
 ## Pengantar
 
@@ -36,9 +40,13 @@ Mulai April 2022, pengembang aplikasi diwajibkan untuk memberikan informasi terk
 
 Informasi yang diberikan oleh setiap aplikasi akan ditampilkan di store listing Google untuk membantu pengguna akhir lebih memahami praktik privasi aplikasi.
 
+<div id="audience" />
+
 ## Audiens
 
 Semua pengembang aplikasi akan diwajibkan untuk mengisi kuesioner bagian keamanan dan mempublikasikan tautan ke kebijakan privasi meskipun mereka tidak mengumpulkan jenis data apa pun yang ditentukan oleh Google.
+
+<div id="google-safety-form-questionnaire" />
 
 ## Formulir keamanan Google (kuesioner)
 
@@ -54,6 +62,8 @@ Sehubungan dengan penggunaan AppsFlyer, pengembang aplikasi diingatkan bahwa mer
 
 Pengembang aplikasi harus menjawab kuesioner sesuai dengan kasus penggunaan, konfigurasi, dan integrasi mitra khusus mereka.
 
+<div id="data-collection-and-security" />
+
 ### Pengumpulan dan keamanan data
 
 Di bagian ini, Anda akan ditanyai beberapa pertanyaan umum ya/tidak:
@@ -63,6 +73,8 @@ Di bagian ini, Anda akan ditanyai beberapa pertanyaan umum ya/tidak:
 3. Apakah Anda menyediakan cara bagi pengguna untuk meminta penghapusan data mereka?
 
 Sehubungan dengan penggunaan AppsFlyer Anda, AppsFlyer mengenkripsi semua data sebelum dikirim melalui SDK. AppsFlyer juga memberi pelanggan kemampuan untuk menghapus data pengguna akhir tertentu melalui kerangka kerja OpenGDPR-nya. Untuk jenis data yang dikumpulkan, lihat tabel di bagian [Jenis data](/docs/fill-out-google-safety-section-form#jenis-data).
+
+<div id="data-types" />
 
 ### Jenis data
 
@@ -105,13 +117,19 @@ Pengecualian termasuk yang berikut:
 
 Penting untuk diperhatikan bahwa meskipun AppsFlyer hanya bertindak sebagai penyedia layanan atas nama Anda dan sesuai instruksi Anda, jika Anda berbagi data dengan jaringan pihak ketiga (misalnya, melalui postback, SRN, dan audiens ), ini akan dianggap berbagi data.  Oleh karena itu, setiap pengembang aplikasi perlu menilai konfigurasi dan integrasi mitranya serta meresponsnya dengan tepat.
 
+<div id="ephemeral-processing" />
+
 ## Pemrosesan sementara
 
 Pemrosesan sementara mengacu pada data yang diproses dalam memori, hanya untuk periode waktu yang diperlukan untuk memproses tindakan tertentu secara waktu aktual dan tidak untuk tujuan lain. Mengingat karakteristik layanan AppsFlyer, data yang diproses oleh AppsFlyer atas nama Anda tidak diproses secara sementara.
 
+<div id="user-choice" />
+
 ## Pilihan pengguna
 
 Secara umum, data yang dikumpulkan diperlukan untuk menyediakan layanan. Dengan demikian, pengembang aplikasi memiliki kemampuan untuk mengatur pengumpulan data apa pun ke kontrol menyetujui atau menolak.
+
+<div id="purpose" />
 
 ## Tujuan
 
@@ -126,6 +144,8 @@ Google telah menyediakan daftar tujuan yang harus dipilih oleh pengembang aplika
 | Penipuan, pencegahan, keamanan, dan kepatuhan | Ya |
 | Personalisasi | Pilih jika Anda menggunakan data untuk semua jenis personalisasi produk |
 | Manajemen akun | Pilih jika Anda menggunakan data untuk pengaturan dan pengelolaan akun pengguna |
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

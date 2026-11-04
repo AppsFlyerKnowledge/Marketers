@@ -43,6 +43,8 @@ Untuk mengatribusi pengguna dari platform lainnya, mis. Pengguna Windows Phone, 
 
 Untuk mengonfigurasi jenis kampanye spesifik lainnya selain Kampanye Aplikasi, hubungi perwakilan Google Anda.
 
+<div id="configuring-google-ads-attribution-for-advertisers" />
+
 ## Mengonfigurasi atribusi Google Ads untuk pemasang iklan
 
 Untuk mulai mengatribusi kampanye Google Ads dengan AppsFlyer, ikuti langkah-langkah berikut:
@@ -102,6 +104,8 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 8. Untuk mengaktifkan atribusi penginstalan ulang, aktifkan **Reinstall attribution (Atribusi penginstalan ulang)**.  
    Tidak perlu mengonfigurasi jendela lookback untuk atribusi penginstalan ulang, karena nilainya diambil dari pengaturan atribusi penginstalan.  
 
+   <div id="important" />
+
    > 🚧 **Penting!**
    >
    > Data konversi penginstalan ulang **disajikan sebagai session\_start** di dashboard Google Ads. Di AppsFlyer, hal ini diatribusikan dan dilihat sebagai atribusi ulang.
@@ -126,6 +130,8 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 13. Klik tombol **Hubungkan Google Ads**dan masuk ke akun Google Anda untuk menampilkan semua biaya kampanye Google Ads Anda di AppsFlyer.  <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-cost-and-ad-revenue">Detail selengkapnya di sini</Anchor>.
 14. Klik **Simpan**.
 
+<div id="stop" />
+
 > ❗️ **Berhenti!**
 >
 > Anda HARUS **[melalui langkah 4](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory) untuk melihat penginstalan Google Ads di AppsFlyer.** Jika Anda juga perlu memetakan in-app event Anda ke Google Ads, ikuti [langkah 3](/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended) terlebih dahulu.
@@ -141,6 +147,8 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
 1. Buka tab **Integrasi** lalu gulir ke bawah ke bagian **Postback in-app event**.
+
+   <div id="note-1" />
 
    > 📘 **Catatan**
    >
@@ -172,6 +180,8 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 
 <Accordion title="Langkah 4: Mengukur konversi aplikasi Anda (wajib)">
 
+<div id="important-1" />
+
 > 🚧 **Penting!**
 >
 > Agar dapat mendaftarkan konversi baru di Google Ads, Anda harus **meluncurkan aplikasi Anda dan melakukan in-app event yang dipetakan**minimal satu kali. Untuk menguji aplikasi iOS, Anda harus mengumpulkan IDFA untuk melihat event tersebut. Mungkin diperlukan waktu hingga 6 jam hingga konversi event ditambahkan ke antrean. Setelah ditambahkan, Anda dapat mengimpornya atau konversi baru tersebut akan berubah status dari “No recent conversion (Tidak ada konversi baru)” menjadi “recording conversion (mencatat konversi)".
@@ -194,9 +204,13 @@ Selamat! Anda sekarang mengukur kampanye seluler Google Ads dengan AppsFlyer!
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Tips**
 >
 > Integrasi API Google Ads secara otomatis menyertakan fitur pemasaran ulang Google Ads. Dengan melengkapi integrasi ini dan mengirimkan event ke Google Ads, Anda dapat membuat daftar audiens pemasaran ulang di Google Ads tanpa integrasi tambahan apa pun.
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## Memberikan izin kepada anggota tim Google Ads
 
@@ -215,15 +229,21 @@ Untuk memberikan akses ke aplikasi Anda kepada anggota tim Google Ads, lakukan h
 
 Baca lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">memberikan izin kepada Jaringan iklan</Anchor>.
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## Mengaktifkan atribusi Google Ads untuk agensi
 
 AppsFlyer mendukung konfigurasi agensi dengan Google Ads. Sangatlah penting bagi pemasang iklan dan agensi untuk memiliki akun Google Ads terpisah agar AppsFlyer dapat mengatribusikan data dengan tepat. Untuk detail selengkapnya, klik <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-agencies">di sini</Anchor>.
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## Mengunakan beberapa akun Google Ads
 
 AppsFlyer mendukung penggunaan beberapa akun Google Ads dengan aplikasi yang sama. Hal ini dilakukan dengan cara membagikan ID Tautan di Google Ads dan mengimpor event ke setiap akun Google Ads.
 
 Untuk detail selengkapnya tentang cara membagikan ID Tautan Google Ads, klik <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">di sini</Anchor>.
+
+<div id="ios-app-campaigns" />
 
 ## Kampanye Aplikasi iOS
 
@@ -241,6 +261,8 @@ Karena konversi yang dimodelkan tidak bergantung pada ID perangkat, mulai dari r
 * Saluran/inventaris YouTube ACI iOS tidak diatribusikan, karena aplikasi YouTube tidak meminta ATT sehingga IDFA tidak dapat digunakan.
 * Saluran/inventaris Tampilan ACI iOS dapat diatribusikan, hanya jika ada ID perangkat, jika ada persetujuan pada aplikasi pemasang iklan dan penerbit.
 
+<div id="using-deferred-deep-linking-in-app-campaigns" />
+
 ## Menggunakan penautan langsung yang ditangguhkan di Kampanye aplikasi
 
 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9959794?hl=en&ref_topic=10011599">Google feed di Kampanye aplikasi</Anchor> memungkinkan Anda untuk menciptakan pengalaman konten khusus yang lancar untuk pengguna seluler baru.
@@ -255,11 +277,15 @@ Saat calon pengguna mengeklik feed, mereka dialihkan ke halaman aplikasi. Setela
 4. Di tab **Integration (Integrasi)**, aktifkan **Deferred deep linking (Penautan langsung yang ditangguhkan) dengan Google Ads.**
 5. Klik **Simpan integrasi**.
 
+<div id="google-ads-parameter-mapping" />
+
 ## Pemetaan parameter Google Ads
 
 Tabel berikut menjelaskan pemetaan parameter antara Google Ads dan AppsFlyer. Perhatikan bahwa pemasang iklan tidak dapat menambahkan parameter yang dipersonalisasi ke kampanye Google Ads mana pun.
 
 <table><thead><tr><th><p><strong>Jenis jaringan</strong></p></th><th><strong>Pencarian</strong></th><th><strong>Tampilan</strong></th><th><strong>YouTube</strong></th></tr></thead><tbody><tr><td>Channel (af_channel)</td><td>Lihat tabel di bawah, <a href="./google-ads-adwords-integration-setup-for-advertisers#cara-mengisi-parameter-channel">Cara mengisi parameter <kbd>Channel</kbd></a> </td></tr><tr><td>Campaign (c)</td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td><p>Campaign id (af_c_id)</p></td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td>Adset (af_adset)<br/>Diisi oleh parameter ad_group_name.<br/>Jika parameter ini null, AF mengisi af_adset dengan ad_group_id.</td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td>Adset ID (af_adset_id) diisi oleh parameter ad_group_id Google</td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td><p>Ad (af_ad)</p></td><td>T/A</td><td>T/A</td><td>T/A</td></tr><tr><td>Ad ID (af_ad_id)</td><td>T/A</td><td>T/A</td><td>T/A</td></tr><tr><td>Ad Type (af_ad_type)</td><td>Ya\*</td><td>Ya\*</td><td>Ya\*</td></tr><tr><td>Site ID (af_siteid)</td><td>GoogleSearch/<br/>SearchPartners</td><td>T/A</td><td>YouTubeVideos/<br/>VideoPartners</td></tr><tr><td>Kata Kunci</td><td>T/A</td><td>T/A</td><td>T/A</td></tr></tbody></table>
+
+<div id="populate-the-channel-parameter" />
 
 ### Cara mengisi parameter `Channel`
 
@@ -269,7 +295,11 @@ Google Ads tidak mengirimkan parameter `Channel(af_channel)` . AppsFlyer menent
 
 Untuk informasi lebih lanjut tentang jenis iklan apa yang tersedia di tanggapan Google, lihat <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">di sini</Anchor>.
 
+<div id="campaign-type-app-campaigns" />
+
 ### Jenis kampanye: kampanye aplikasi
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Perubahan nama kampanye oleh Google Ads
 
@@ -281,15 +311,21 @@ Untuk informasi lebih lanjut tentang jenis iklan apa yang tersedia di tanggapan 
 
 **Catatan:** Jenis nama kampanye diatur sesuai dengan tanggal klik atau tayangan, bukan tanggal penginstalan.
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### Parameter tampilan yang berinteraksi dalam laporan data lengkap
 
 Engaged view adalah tayangan pengguna dari iklan video yang berlangsung lebih dari 10 detik. Ini dihitung sebagai satu klik. Untuk Android, ini ditampilkan dalam laporan data lengkap yang mengisi “sub param 5”.  
 Parameter ini ditampilkan jika tampilan interaksi terjadi dalam jendela lookback klik yang ditentukan di AppsFlyer, tetapi durasi maksimalnya adalah 3 hari.
 
+<div id="important-2" />
+
 > 🚧 **Penting!**
 >
 > * Google adalah SRN (Self Reporting Network). Untuk informasi lebih lanjut tentang cara kerja alur atribusi untuk jaringan tersebut, klik <Anchor target="_blank" href="/marketers/id/docs/self-reporting-networks-srns">di sini</Anchor>.
 > * AppsFlyer dapat menampilkan informasi kampanye apa pun yang disediakan oleh Google. Jenis kampanye (Penelusuran, Video, Tampilan) dan informasi terkait ditentukan oleh Google. Untuk informasi lebih lanjut, klik <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">di sini</Anchor>.
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## Optimalkan kampanye Google Ads untuk konversi tanpa ID perangkat
 
@@ -304,6 +340,8 @@ Dimulai dengan iOS14.5+ dan Android 12+, Google Ads memperkenalkan beberapa peng
 Saat AppsFlyer menerima pengenal ini dan mengirimkannya dalam postback Google Ads, Google Ads dapat mengklaim konversi berdasarkan pengenal tersebut. AppsFlyer menggunakan klaim tersebut dan mempertimbangkan parameter untuk atribusi dan untuk mengaitkan event LTV.  
 **Tidak diperlukan tindakan dari pemasang iklan untuk mengaktifkan penerimaan parameter ini.**
 
+<div id="data-visibility-by-operating-system" />
+
 ### Visibilitas data menurut sistem operasi
 
 **Aplikasi Android:**
@@ -313,6 +351,8 @@ Di AppsFlyer dan Google Ads, pemasang iklan dapat menerima data kampanye lengkap
 **Aplikasi iOS:**
 
 Di Google Ads dan AppsFlyer, pemasang iklan dapat menerima data kampanye lengkap untuk lalu lintas tanpa ID perangkat bagi aktivitas interaksi ulang mereka.
+
+<div id="h_01HDP0SBEE75MAT4A4S9E7Y7FF" />
 
 > 📄 **Lihat juga**
 >

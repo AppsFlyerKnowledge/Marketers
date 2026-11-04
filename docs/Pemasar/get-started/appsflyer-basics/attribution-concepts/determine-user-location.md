@@ -35,6 +35,8 @@ x-zendesk:
 
 ![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
 
+<div id="determining-user-location" />
+
 ## Determining user location
 
 User actions in the device are reported to AppsFlyer. The actions (events) contain various data fields including the device IP address.
@@ -54,12 +56,16 @@ The IP address is converted by AppsFlyer into geo-location information using dat
 
 **Example: Conversion of IP address to geolocation**![IPTables_us-en.png](https://files.readme.io/0d7d4d4190face77e18476bdb9e47fdd26ed62ab91cd641f76f728d9a7c8d005-360011787798.png)
 
+<div id="note-regarding-the-united-kingdom-uk" />
+
 > 📘 **Note regarding the United Kingdom (UK)**
 >
 > <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * In the platform, the United Kingdom is denoted using the code UK.
 > * The ISO 3166 code for the United Kingdom is GB. UK is reserved, but not allocated, by ISO for the United Kingdom.
+
+<div id="location-discrepancies" />
 
 ### Location discrepancies
 

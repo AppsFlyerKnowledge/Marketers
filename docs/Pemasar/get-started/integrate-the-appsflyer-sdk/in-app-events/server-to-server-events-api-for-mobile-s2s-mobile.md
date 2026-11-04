@@ -31,6 +31,8 @@ x-zendesk:
 
 [![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## API event server-ke-server untuk aplikasi seluler
 
 Untuk aplikasi iOS, mulai iOS 14, Anda harus mengirimkan parameter os (sistem operasi).
@@ -43,6 +45,8 @@ AppsFlyer mengisi event S2S dengan:
 * Beberapa AppsFlyer menginstal nilai atribusi seperti, waktu penginstalan dan sumber media.
 
 Untuk mengirimkan acara lewat API, beri tahu pembuat program Anda untuk mengikuti <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">instruksi API server-to-server event</Anchor> mereka.
+
+<div id="populating-parameters" />
 
 ## Mengisi parameter
 
@@ -166,6 +170,8 @@ Event yang memiliki nilai pendapatan negatif dapat dikirim. Misalnya, jika pembe
 Jika Anda mengisi `af_quantity`, Anda mungkin ingin mengisinya dengan nilai negatif tergantung pada logika sistem Anda. AppsFlyer tidak menggunakan `af_quantity`.
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Pemecahan Masalah
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 <Embed title="SKAN 4 Conversion Studio (termasuk kunci periode waktu)" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="skan-conversion-studio-basics" />
+
 ## Dasar-dasar SKAN Conversion Studio
 
 Dalam alur atribusi SKAdNetwork (SKAN), perangkat iOS mengirimkan postback SKAN yang berisi nilai konversi (CV) terbaru setelah setiap jendela pengukuran.
@@ -87,6 +89,8 @@ Studio Konversi memberi Anda fleksibilitas maksimum untuk membuat setiap nilai d
   * Layout diperbarui setiap hari berdasarkan mode aktif pada tengah malam UTC. Perkiraan pembaruan layout akan tersedia pada pukul 05:00 UTC.
   * Di SKAN 4, Khusus dan Dekode, data organik untuk in-app event dan keseluruhan pendapatan tidak tersedia.
 
+<div id="s2s-principles" />
+
 #### **prinsip S2S**
 
 Tindakan terukur dapat dilaporkan oleh API [server-to-server (S2S)](/docs/skan-conversion-studio#report-events-by-servertoserver-api) . Pertimbangkan hal berikut per mode:
@@ -96,6 +100,8 @@ Tindakan terukur dapat dilaporkan oleh API [server-to-server (S2S)](/docs/skan-c
 * Model pendapatan, konversi, dan interaksi: Anda harus mengaktifkan [perekaman event S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) sebelum mengirim events.
 
 </Accordion>
+
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
 
 ## Mengatur nilai konversi di Studio Konversi SKAN
 
@@ -109,6 +115,8 @@ Ada beberapa mode tersedia di Studio Konversi SKAN untuk mengatur nilai konversi
   * Interaksi
 
 Pelajari lebih banyak tentang mode pengukuran berbeda di bagian berikut ini.
+
+<div id="important" />
 
 > 🚧 **Penting!**
 >
@@ -230,6 +238,8 @@ Saat Anda membuat perubahan terhadap pengaturan mode, **ringkasan Kapasitas nila
 5. Klik **Simpan**.
 6. Verifikasi bahwa pemetaan postback in-app event mitra Anda memetakan event yang telah Anda konfigurasikan.
 
+<div id="fixed-mode-measurement" />
+
 #### Pengukuran mode tetap
 
 | Mode pengukuran | Deskripsi |
@@ -256,6 +266,8 @@ Buat CV Anda sendiri ke pemetaan event dan atur sendiri CV di aplikasi. Gunakan 
 4. Verifikasi bahwa pemetaan postback in-app event mitra Anda memetakan event yang telah Anda konfigurasikan.
 
 </Accordion>
+
+<div id="measurement-components" />
 
 ## Komponen pengukuran
 
@@ -580,6 +592,8 @@ Prioritas dijelaskan dengan sangat baik dalam [contoh terperinci](/docs/skan-con
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informasi Tambahan
 
 <div id="view-cv-mapping" />
@@ -591,6 +605,8 @@ Prioritas dijelaskan dengan sangat baik dalam [contoh terperinci](/docs/skan-con
 * Dapatkan pemetaan CV menggunakan <Anchor target="_blank" href="/marketers/id/docs/skan-cv-schema-api-for-advertisers">API skema SKAN CV untuk pengiklan</Anchor>.
 
 ![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
+
+<div id="csv-mapping-file-columns" />
 
 #### Kolom file pemetaan CSV
 
@@ -630,6 +646,8 @@ Sesuaikan rumus untuk memasukkan semua komponen pengukuran
 
 <Accordion title="Contoh CV Kustom yang Dimaksimalkan">
 
+<div id="example-1" />
+
 #### Contoh 1
 
 | Komponen | Deskripsi |
@@ -638,6 +656,8 @@ Sesuaikan rumus untuk memasukkan semua komponen pengukuran
 | Pendapatan | <ul><li>Pendapatan dilaporkan menggunakan satu in-app event (keseluruhan)</li><li>Rentang pendapatan: 15</li></ul> |
 | In-app | Tidak ada |
 | Corong (Funnel) | 3 in-app event |
+
+<div id="example-2" />
 
 #### Contoh 2
 
@@ -648,6 +668,8 @@ Sesuaikan rumus untuk memasukkan semua komponen pengukuran
 | Pengaturan in-app untuk konversi | 1 in-app event untuk mengukur konversi; setiap in-app membutuhkan 1 rentang |
 | Corong (Funnel) | Tidak ada |
 
+<div id="example-3" />
+
 #### Contoh 3
 
 | Komponen | Deskripsi |
@@ -656,6 +678,8 @@ Sesuaikan rumus untuk memasukkan semua komponen pengukuran
 | Pendapatan | <ul><li>Pendapatan dilaporkan menggunakan satu in-app event (keseluruhan)</li><li>Rentang pendapatan: 3</li></ul> |
 | Pengaturan in-app untuk interaksi | <ul><li>2 in-app event untuk mengukur kejadian interaksi</li><li>Rentang kejadian: 3 per in-app event</li></ul> |
 | Corong (Funnel) | Tidak ada |
+
+<div id="example-4" />
 
 #### Contoh 4
 
@@ -686,6 +710,8 @@ Pertimbangkan:
 * Setiap prioritas terdiri dari rentang pendapatan atau rentang in-app event, atau keduanya.
 * Nilai rentang: Nilai batas yang lebih rendah tidak disertakan dalam rentang tetapi nilai batas yang lebih tinggi disertakan. Misalnya, rentang $5-$10 tidak menyertakan nilai 5 tetapi menyertakan nilai 10.
 
+<div id="measurement-priorities-setting-example" />
+
 #### Contoh pengaturan prioritas pengukuran
 
 <table><tbody><tr><th><p>Prioritas #</p></th><th><p>Rentang pendapatan</p></th><th>In-app event</th></tr><tr><td>1 [Prioritas tertinggi]</td><td>$5-$10</td><td>send_recommendation</td></tr><tr><td>2</td><td>$5-$10</td><td>--</td></tr><tr><td>3</td><td>$0-$5</td><td>send_recommendation</td></tr><tr><td>4</td><td>$0-$5</td><td>--</td></tr><tr><td>5</td><td>--</td><td>send_recommendation<br/>add_to_cart</td></tr><tr><td>6</td><td>--</td><td><p>send_recommendation</p></td></tr><tr><td>7 [Prioritas terendah]</td><td>--</td><td>add_to_cart</td></tr><tr><td colspan="3">-- Tidak ada nilai yang ditetapkan</td></tr></tbody></table>
@@ -696,6 +722,8 @@ Di tabel:
 
 * Beberapa tindakan dipisahkan menggunakan >
 * Nilai dalam tanda kurung (), adalah prioritas yang ditentukan oleh AppsFlyer yang ditetapkan setelah pengguna menyelesaikan tindakan. Menggunakan prioritas AppsFlyer, perbarui CV di aplikasi.
+
+<div id="user-journey-scenarios" />
 
 #### Skenario perjalanan pengguna
 
@@ -713,6 +741,8 @@ Di tabel:
 
 <Accordion title="Contoh mode tetap">
 
+<div id="example-a-revenue-measurement" />
+
 #### Contoh A: Pengukuran pendapatan
 
 | Faktor | Catatan |
@@ -722,6 +752,8 @@ Di tabel:
 | Metrik yang dipilih | Metrik terkait pendapatan tersedia<ul><li>Penginstalan: 20</li><li>Pendapatan: $125</li><li>Konversi:15</li><li>ARPU: $6,25</li><li>ROI: 316%</li></ul> |
 | Jumlah baris data lengkap per laporan | <Anchor target="_blank" href="/marketers/id/docs/skan-raw-data-reports">Laporan data lengkap tersedia melalui Data Locker</Anchor><ul><li>Postback perangkat: 20 baris</li><li>Penginstalan: 20 baris</li><li>In-app event: 15 baris. Perhatikan! Pengguna yang melakukan beberapa pembelian diwakili oleh satu baris $10.</li></ul> |
 | Pertimbangan pengembang | Event yang membawa pendapatan dikenali |
+
+<div id="example-b-conversion-measurement" />
 
 #### Contoh B: Pengukuran konversi
 
@@ -746,6 +778,8 @@ Di tabel:
         * 5 pengguna (AE) menginstal aplikasi
         * Mereka melakukan 0-3 in-app event yang berbeda, seperti yang digambarkan dalam tabel
         * Data biaya yang disediakan oleh API dari jaringan iklan: $30
+
+        <div id="inapp-events-performed-by-users" />
 
         #### In-app event yang dilakukan oleh pengguna
 
@@ -774,6 +808,8 @@ Di tabel:
         Metrik yang dipilih
       </td>
       <td>
+        <div id="inapp-related-metrics-available" />
+
         #### Metrik terkait in-app tersedia
 
         | Metrik | Aplikasi | in-app-1 | in-app -2 | in-app- 3 |
@@ -810,6 +846,8 @@ Di tabel:
   </tbody>
 </Table>
 
+<div id="example-c-engagement-measurement" />
+
 #### Contoh C: Pengukuran interaksi
 
 <Table>
@@ -831,6 +869,8 @@ Di tabel:
       </td>
       <td>
         5 pengguna menginstal aplikasi dan membuka aplikasi beberapa kali yang tercantum dalam tabel.
+
+        <div id="app-opens" />
 
         #### Aplikasi dibuka
 
@@ -910,6 +950,8 @@ Jika Anda memiliki banyak aplikasi yang menginginkan konfigurasi nilai konversi 
 * API Studio Konversi SKAN tidak tersedia untuk agensi.
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Prosedur tambahan
 

@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## Tentang integrasi mitra
 
 Integrasi mitra secara lancar dan terus-menerus mengimpor materi iklan Anda dari kampanye yang dijalankan melalui mitra ke Optimisasi Materi Iklan.
+
+<div id="data-availability" />
 
 ### Ketersediaan data
 
@@ -41,6 +45,8 @@ Setelah integrasi mitra ditambahkan:
 Dashboard Optimisasi Materi Iklan menampilkan data gabungan dari semua proses di atas.
 
 **Catatan:** Untuk melihat data biaya AppsFlyer (seperti ROAS), diperlukan <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">langganan ROI360</Anchor> .
+
+<div id="media-partner-integrations" />
 
 ## Integrasi mitra media
 
@@ -404,6 +410,8 @@ Anda harus memiliki izin akun iklan untuk aplikasi relevan yang ingin Anda integ
 
 Setelah prasyarat di atas terpenuhi, Anda kemudian dapat [menambahkan integrasi Unity ke dasbor Optimisasi Kreatif.](/docs/creative-optimization-partner-integrations#untuk-menambahkan-integrasi-unity-ke-dashboard-materi-iklan)
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### Instruksi untuk memperoleh kredensial
 
 **Untuk memperoleh ID kunci dan Kunci rahasia:**
@@ -439,6 +447,8 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
 
 5. Salin **ID inti organisasi**
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **Untuk memilih peran akun layanan (organisasi):**
 
 1. Di dashboard Unity, klik **Administrasi**.
@@ -462,6 +472,8 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
 5. Klik **Simpan**.
 
 **Catatan:** Jika Anda tidak memiliki akses ke peran ini, silakan hubungi manajer kesuksesan pelanggan Unity Anda atau kirim email ke [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) untuk meminta izin yang diperlukan.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Untuk menambahkan integrasi Unity ke dashboard Materi Iklan:**
 
@@ -508,6 +520,8 @@ Untuk informasi lebih lanjut, lihat <Anchor target="_blank" href="https://suppor
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Integrasi agensi
 
 Bagian ini menjelaskan cara mengatur integrasi dengan agensi.
@@ -546,6 +560,8 @@ Integrasi agensi kini ditambahkan.
 * Data materi iklan hanya akan diambil dari agensi. Ini berarti jika Anda memilih Google Ads sebagai mitra, seperti pada contoh di atas, tetapi Anda juga memiliki kampanye yang berjalan langsung dengan Google Ads, Anda perlu membuat integrasi mitra tambahan untuk Google Ads.
 
 </Accordion>
+
+<div id="update-credentials" />
 
 > 🚧 **Penting!**
 >

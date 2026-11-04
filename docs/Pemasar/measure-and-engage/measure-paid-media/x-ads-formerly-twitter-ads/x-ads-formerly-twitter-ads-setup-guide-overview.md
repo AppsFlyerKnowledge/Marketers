@@ -24,9 +24,13 @@ x-zendesk:
 
 <Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 ## Promosi aplikasi seluler di X Ads
 
 Promosi Aplikasi Seluler X Ads adalah metode untuk mempromosikan aplikasi di X Ads. Ini memungkinkan pemasang iklan untuk mempromosikan aplikasi seluler mereka dengan desain kartu Aplikasi yang bagus yang mendorong penginstalan, interaksi aplikasi, dan tautan langsung. Pengguna aplikasi dapat dengan mudah menginstal dan berinteraksi dengan aplikasi, langsung dari timeline X Ads.
+
+<div id="x-ads-user-privacy" />
 
 ## Privasi pengguna X Ads
 
@@ -44,6 +48,8 @@ Melalui Program AMM, pemasang iklan dapat menerima data tingkat pengguna yang le
 Perhatikan bahwa data tingkat pengguna yang diterima sebelum bergabung dengan program AMM, tidak dapat diekspor.
 
 Untuk informasi lebih detail, hubungi Manajer Akun X Ads Anda.
+
+<div id="x-ads-and-appsflyer-skan-interoperation" />
 
 ## Interoperasi SKAN X Ads dan AppsFlyer
 

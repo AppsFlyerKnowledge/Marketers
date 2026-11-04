@@ -36,6 +36,8 @@ x-zendesk:
 
 <Accordion title="A">
 
+<div id="account-owner" />
+
 #### Pemilik Akun
 
 Juga, **Admin**  
@@ -46,14 +48,20 @@ Pengguna akun utama dengan akses dan izin admin pengguna super ke akun AppsFlyer
 
 AppsFlyer mencatat nama materi iklan yang digunakan untuk mempromosikan produk, merek, atau layanan.
 
+<div id="ad-cost" />
+
 #### Biaya iklan
 
 Jumlah uang yang dikeluarkan untuk iklan. Biaya iklan rekaman AppsFlyer dengan mengklik, biaya API, dan unggahan file CSV. <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">[Artikel]</Anchor>
+
+<div id="ad-group" />
 
 #### Grup iklan
 
 Berisi satu atau lebih iklan yang memiliki target yang mirip (misalnya berbagai jenis produk atau layanan). Setiap kampanye mencakup satu atau lebih pengaturan iklan.   
  *Contoh:* Google Ads menggunakannya untuk mengatur kata kunci yang berhubungan dengan iklan tertentu.
+
+<div id="ad-hierarchy" />
 
 #### Tingkatan iklan
 
@@ -63,13 +71,19 @@ Iklan > Pengaturan iklan (juga Grup iklan) > Kampanye > Sumber media
 
 Mengumpulkan aplikasi dan situs web sebagai sumber media lalu lintas untuk pemasar. Jaringan iklan menggabungkan ruang iklan penerbit dan mencocokkannya dengan permintaan pemasar. <Anchor target="_blank" href="/partners/id/docs/ad-network-onboarding">[Artikel]</Anchor>
 
+<div id="ad-revenue" />
+
 #### Pendapatan Iklan
 
 Pendapatan iklan adalah uang yang dihasilkan aplikasi dari iklan in-app. Gunakan data pendapatan iklan di AppsFlyer untuk secara otomatis melihat ROI pengguna dari berbagai sumber media. <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution">[Artikel]</Anchor>
 
+<div id="ad-set" />
+
 #### adset
 
 Berisi satu atau lebih iklan. Ini digunakan untuk menentukan penargetan, anggaran, jadwal, penawaran, dan penempatan.
+
+<div id="ad-spend" />
 
 #### Pengeluaran iklan
 
@@ -77,9 +91,13 @@ Jumlah uang yang dikeluarkan untuk mengiklankan sebuah produk atau aktivitas.
  *Formula:* Penghasilan yang dihasilkan oleh iklan / Pengeluaran iklan = Return on Ad Spend (ROAS)   
  <Anchor target="_blank" href="/marketers/id/docs/import-cost-data">[Artikel]</Anchor> dan <Anchor target="_blank" href="/partners/id/docs/cost-import-for-ad-networks">[Artikel]</Anchor>
 
+<div id="ad-types" />
+
 #### Jenis iklan
 
 *Termasuk:* Audio, spanduk, pengantara, dapat diputar (pratinjau interaktif pengalaman aplikasi), video promo (video yang menawarkan imbalan dalam aplikasi dengan imbalan ditonton), konten, teks, dan video yang disponsori <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters#parameter-link-atribusi">[Artikel]</Anchor>
+
+<div id="ad-network-integration" />
 
 #### Integrasi jaringan iklan
 
@@ -91,14 +109,20 @@ Juga, **Pemilik akun**
 Pengguna akun utama dengan akses dan izin pengguna super (Admin) ke akun AppsFlyer.  
 [Artikel] dan [Artikel]
 
+<div id="advanced-privacy" />
+
 #### Privasi Lanjutan
 
 **Berlaku hanya untuk pengguna yang tidak menyetujui iOS 14.5+.** Privasi Lanjutan memberikan kontrol kepada pemasang iklan atas ketersediaan data atribusi tingkat pengguna di **tingkat mitra individual** (berlawanan dengan Privasi Lanjutan Gabungan, yang diterapkan di tingkat aplikasi). Saat diaktifkan untuk mitra tertentu, postback dan data event yang dibagikan dengan **mitra tersebut** bersifat agregat dan anonim. Data lengkap tingkat pengguna **tersedia** untuk pemasang iklan itu sendiri. <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">[Artikel]</Anchor>
+
+<div id="advertiser" />
 
 #### (EN: Advertiser) Pemasang iklan
 
 Selain itu, **Pemasar** dan **Pemilik aplikasi**   
  Memiliki aplikasi atau situs web dan mengiklankan/memasarkannya di berbagai kanal untuk meningkatkan konversi.
+
+<div id="advertising-id" />
 
 #### ID Iklan
 
@@ -109,6 +133,8 @@ Selain itu, **ID Iklan**
 
 Sekarang, Google Ads<Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers">[Artikel]</Anchor>
 
+<div id="affiliate-networks" />
+
 #### Jaringan afiliasi
 
 Selain itu, **Penerbit**   
@@ -118,30 +144,44 @@ Selain itu, **Penerbit**
 
 Pihak ketiga yang menjalankan, mengatribusi, dan mengukur kampanye pemasaran aplikasi untuk klien. Klien agensi termasuk pemasang iklan, pemasar, dan pemilik aplikasi. <Anchor target="_blank" href="/partners/id/docs/about-agency-accounts">[Artikel]</Anchor>
 
+<div id="aggregate-data" />
+
 #### Data agregat
 
 Data tingkat tinggi, misalnya, di tingkat akun atau aplikasi, disusun sebagai ringkasan menggunakan data yang lebih terperinci. <Anchor target="_blank" href="/marketers/id/docs/aggregated-and-analytics-reporting-overview">[Artikel]</Anchor>
+
+<div id="aggregated-advanced-privacy" />
 
 #### Privasi Gabungan Lanjutan
 
 **Berlaku hanya untuk pengguna yang tidak menyetujui iOS 14.5+.** Privasi Lanjutan Gabungan memberikan kontrol kepada pemasang iklan atas ketersediaan data atribusi tingkat pengguna di **tingkat aplikasi** (berlawanan dengan Privasi Lanjutan, yang diterapkan di tingkat mitra individual). Saat diaktifkan, data postback dan event yang dibagikan dengan **SEMUA mitra** bersifat agregat dan anonim, dan data atribusi tingkat pengguna **TIDAK tersedia** untuk pemasang iklan itu sendiri. Ini mengesampingkan pengaturan Privasi Lanjutan apa pun yang dibuat di tingkat mitra individu. <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">[Artikel]</Anchor>
 
+<div id="all-installs-network" />
+
 #### Network Seluruh-Install
 
 Jaringan iklan yang menerima postback, dari semua sumber, untuk setiap pemasangan aplikasi baru meskipun pemasangan tidak dikaitkan dengan jaringan mereka.
 
+<div id="all-launches-network" />
+
 #### Network Seluruh-Peluncuran
 
 Jaringan iklan yang menerima postback, dari semua sumber, untuk setiap peluncuran aplikasi baru meskipun peluncuran tidak dikaitkan dengan jaringan mereka.
+
+<div id="analytics-platform" />
 
 #### Platform analisis
 
 Solusi yang dirancang untuk memenuhi permintaan pengguna, terutama perusahaan besar yang menggunakan data untuk mengambil keputusan dengan menyediakan perpustakaan elemen.   
  *Termasuk:* Bagan dan alat visualisasi data lainnya, komponen dashboard, tema kustomisasi
 
+<div id="android-app-link" />
+
 #### Tautan Aplikasi Android
 
 URL yang menghubungkan para pengguna dari halaman web ke konten tertentu dalam aplikasi Android. <Anchor target="_blank" href="/marketers/id/docs/onelink-guide">[Artikel]</Anchor>
+
+<div id="android-id" />
 
 #### ID Android
 
@@ -155,9 +195,13 @@ ID perangkat yang tidak dapat direset ditemukan di perangkat Android dengan Laya
 Rutin, protokol, dan alat yang digunakan untuk memindahkan data antara AppsFlyer dan pelanggan serta mitra bisnis mereka.   
  *Contoh:* Push API, Pull API, Master API, Cohort API, dan API server-ke-server
 
+<div id="api-call" />
+
 #### Panggilan API
 
 Suatu proses yang terjadi ketika Anda mengirim permintaan. Permintaan ditransfer, diproses, dan umpan balik dikembalikan.
+
+<div id="app-id-android--ios" />
 
 #### ID Aplikasi (Android dan iOS)
 
@@ -168,15 +212,21 @@ ID aplikasi Android = Nama paket seperti ***com.coolcompany.coolapp***
 
 ID aplikasi iOS = ID + ID Store Aplikasi 9/10-digit seperti ***id123456789***
 
+<div id="app-launch" />
+
 #### Peluncuran Aplikasi
 
 Aplikasi dibuka. Jumlah didasarkan pada peluncuran SDK atau logika yang ditentukan oleh pemilik aplikasi.   
  *Contoh:* Satu hari penggunaan aplikasi antivirus dapat dihitung sebagai satu sesi. <Anchor target="_blank" href="/marketers/id/docs/measure-sessions">[Artikel]</Anchor>
 
+<div id="app-owner" />
+
 #### Pemilik App
 
 Selain itu , **Pemasang Iklan** dan **Pemasar**  
  Memiliki aplikasi dan mengiklankan/memasarkannya di berbagai platform untuk meningkatkan basis pengguna.
+
+<div id="app-store-analytics" />
 
 #### Analisis app-store
 
@@ -218,9 +268,13 @@ Digunakan untuk meningkatkan visibilitas aplikasi di App Store.
 Juga ,**Atribusi multi-sentuh**   
 Interaksi, melalui sumber media, yang berkontribusi pada interaksi teratribusi terakhir sebelum instalasi. <Anchor target="_blank" href="/marketers/id/docs/measure-assisted-installs">[Artikel]</Anchor>
 
+<div id="attribution" />
+
 #### Atribusi
 
 Instalasi dan event lain yang dikaitkan dengan sumber media melalui klik dan tayangan. <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model">[Artikel]</Anchor>
+
+<div id="attribution-link" />
 
 #### Link Atribusi
 
@@ -241,6 +295,8 @@ Fitur AppsFlyer yang memungkinkan pemasang iklan mengelompokkan pengguna ke dala
 
 Iklan situs web grafis yang menautkan ke situs web atau aplikasi yang diiklankan. Pemasar menggunakan Spanduk Cerdas AppsFlyer untuk mengatribusi dan mengukur kualitas penginstalan aplikasi yang dihasilkan dari pengunjung ke situs web seluler mereka. <Anchor target="_blank" href="/marketers/id/docs/smart-banners-mobile-web-to-app-for-marketers">[Artikel]</Anchor>
 
+<div id="bi-system" />
+
 #### Sistem BI
 
 Seperangkat proses, arsitektur, dan teknologi yang mengubah data lengkap menjadi informasi yang membantu mengarahkan tindakan bisnis.
@@ -249,14 +305,20 @@ Seperangkat proses, arsitektur, dan teknologi yang mengubah data lengkap menjadi
 
 Harga yang dibayar pemasar untuk kampanye yang dibayar berdasarkan [CPM, CPI, CPC, atau CPA](#h_263aee69-4598-4bbd-a6a9-0f222626b4f8).
 
+<div id="brand-bundle" />
+
 #### Bundle merek
 
 Mengonsolidasikan atribusi, aktivitas, dan data pendapatan dari web dan aplikasi mobile yang terkait dengan merek. <Anchor target="_blank" href="/marketers/id/docs/pba-brand-bundles-and-settings">[Artikel]</Anchor>
+
+<div id="branded-link" />
 
 #### Tautan bermerek
 
 Versi lebih pendek dari URL yang dibangun di sekitar nama merek atau istilah terkait. <Anchor target="_blank" href="/marketers/id/docs/brand-onelink-with-your-domain">[Artikel]</Anchor>   
  *Contoh:*Jika merek Anda adalah *App Luar Biasa* , maka tautan bermerek bisa menjadi *promosi.aplikasiluarbiasa.com* .
+
+<div id="bundle-id" />
 
 #### ID Bundle
 
@@ -275,9 +337,13 @@ Identifier unik yang digunakan Apple untuk mengidentifikasi aplikasi individual.
  Biaya untuk mendapatkan pengguna yang menginstalasi aplikasi atau melakukan tindakan pasca instalasi lainnya.   
  *Formula:*Pengeluaran penjualan dan pemasaran / Jumlah pelanggan baru
 
+<div id="campaign" />
+
 #### Kampanye
 
 Berisi satu atau lebih pengaturan iklan. Ditandai oleh tujuan dan KPI, audiens target, anggaran dan jadwal, platform pilihan, materi iklan dan format, strategi, dll. <Anchor target="_blank" href="/marketers/id/docs/measure-paid-media">[Artikel]</Anchor> .
+
+<div id="campaign-id" />
 
 #### ID kampanye
 
@@ -298,6 +364,8 @@ Juga **Pengurangan pelanggan**, **Perputaran**, dan **Pembelotan** 
 Pemasar dapat memperkirakan churn (kehilangan pelanggan) mereka menggunakan laporan retensi AppsFlyer dan pengukuran uninstall.  
 *Rumus:* Jumlah pengguna yang hilang selama periode waktu / Jumlah pengguna di awal periode waktu
 
+<div id="click" />
+
 #### Klik
 
 Interaksi pengguna (dalam media source/sumber media) yang mengarahkan pengguna ke halaman yang diiklankan atau aktivitas aplikasi.
@@ -307,9 +375,13 @@ Interaksi pengguna (dalam media source/sumber media) yang mengarahkan pengguna k
 Juga, **Klik spamming**    
  Jaringan iklan mengirimkan sejumlah besar klik palsu dengan harapan memberikan klik terakhir sebelum instalasi
 
+<div id="click-url" />
+
 #### URL Klik
 
 Selain itu, **tautan Atribusi**
+
+<div id="client" />
 
 #### Klien
 
@@ -320,37 +392,53 @@ Pemasang iklan, pemasar, atau pemilik aplikasi.
 **Biaya Akuisisi**   
  Biaya yang dikeluarkan ketika sebuah bisnis mendapatkan klien baru, aset, atau barang. <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">[Artikel]</Anchor>
 
+<div id="cohort-analysis" />
+
 #### Analisis kohort
 
 Data Agregat mengatur bahwa membagi pengguna ke dalam kelompok untuk mengidentifikasi pola perilaku. Grup, atau kohort, biasanya berbagi karakteristik atau pengalaman yang sama dalam periode waktu yang ditentukan. <Anchor target="_blank" href="/marketers/id/docs/cohort-and-retention-dashboard">[Artikel]</Anchor>
+
+<div id="contributor" />
 
 #### Kontributor
 
 Selain itu, **Assist**   
   Sumber/kampanye media memberikan interaksi pengguna sebelum instalasi — dan di dalam attribution lookback — tetapi tidak dikaitkan.
 
+<div id="conversion" />
+
 #### Konversi
 
 Terjadi ketika seorang pengguna menyelesaikan tindakan terkait iklan yang dianggap baik untuk bisnis. Di AppsFlyer, instalasi yang teratribusi, instal ulang, dan interaksi kembali semuanya dianggap konversi. Contoh: Pengguna mengklik iklan, lalu menginstal. Instalasi merupakan konversi baru. <Anchor target="_blank" href="/marketers/id/docs/about-conversion-rates">[Artikel]</Anchor>
+
+<div id="conversion-chain" />
 
 #### Rantai Konversi
 
 Urutan peristiwa konversi, mulai dari melihat iklan hingga melakukan tindakan in-app.  
  *Contoh:* Pengguna mengklik sebuah iklan, mengunjungi laman awal, mengklik Spanduk Cerdas, menginstal aplikasi, lalu mendaftar dan melakukan pembelian.
 
+<div id="conversion-event" />
+
 #### Event konversi
 
 Tonggak pencapaian yang dicapai oleh pengguna aplikasi adalah penting bagi bisnis Anda. Termasuk: klik dan tayangan sebelum instalasi atau event in-app yang dilakukan oleh pengguna.  
 *Contoh*: Instalasi aplikasi, menambah keranjang, memulai proses checkout, melakukan pembelian
 
+<div id="conversion-rate" />
+
 #### Rasio konversi
 
 Persentase pengguna yang bergerak di sepanjang rantai konversi, dari satu langkah ke langkah lainnya. <Anchor target="_blank" href="/marketers/id/docs/about-conversion-rates">[Artikel]</Anchor>
+
+<div id="conversion-types" />
 
 #### Jenis Konversi
 
 Juga, **Penargetan Ulang jenis konversi**   
  Mengacu pada interaksi ulang dan atribusi ulang.
+
+<div id="cookies-http" />
 
 #### Kuki (HTTP)
 
@@ -389,6 +477,8 @@ Model harga. Pemasar membayar untuk setiap 1000 impresi iklan (tampilan/klik ikl
  Model penetapan harga. Pemasar membayar untuk kontak visual yang dihasilkan dengan meminta media iklan (iklan video) pada platform penerbit.   
 *Formula:* Total biaya iklan / Jumlah impresi
 
+<div id="creative" />
+
 #### Kreatif
 
 Konsep, desain, dan karya seni yang masuk ke dalam iklan. Di halaman **Spanduk Cerdas** , pemasar mengatur visual spanduk, teks, dan tombol untuk setiap materi iklan spanduk, tanpa memerlukan pengembang web. <Anchor target="_blank" href="/marketers/id/docs/smart-banners-mobile-web-to-app-for-marketers">[Artikel]</Anchor>
@@ -398,6 +488,8 @@ Konsep, desain, dan karya seni yang masuk ke dalam iklan. Di halaman **Spanduk 
 **Manajemen Hubungan Pelanggan (Customer Relationship Management)**  
  Teknologi yang digunakan untuk mengelola hubungan dan interaksi perusahaan dengan pelanggan dan pelanggan potensial.
 
+<div id="cross-promotion-attribution" />
+
 #### Atribusi Promosi Silang
 
 Metode untuk menghubungkan dan merekam instalasi dari kampanye promosi silang. Kampanye ini melibatkan aplikasi tertentu dan juga yang Anda miliki.
@@ -406,6 +498,8 @@ Metode untuk menghubungkan dan merekam instalasi dari kampanye promosi silang. K
 
 **Customer Success Manager.** Jika Anda tidak memiliki atau tidak mengetahui CSM Anda, hubungi [hello@appsflyer.com](mailto:hello@appsflyer.com).  
 Juga, **Manajer Akun**
+
+<div id="csv-file" />
 
 #### File CSV
 
@@ -464,29 +558,43 @@ Fitur AppsFlyer untuk pengiriman data lengkap ke bucket AWS (repositori khusus).
 **Pengguna Aktif Harian**   
  Jumlah pengguna unik yang membuka aplikasi tertentu dalam periode 24 jam.
 
+<div id="daumau-rate" />
+
 #### Rasio DAU/MAU
 
 Mengukur daya tarik produk Anda. Misalnya, berapa banyak pengguna mengunjungi atau berinteraksi dengan produk atau layanan selama interval tertentu.
+
+<div id="deep-linking" />
 
 #### Penautan Langsung
 
 Tautan yang mengarahkan pengguna ke konten tertentu dalam aplikasi dan bukan ke toko aplikasi atau situs web. <Anchor target="_blank" href="/marketers/id/docs/deep-linking-using-onelink">[Artikel]</Anchor>
 
+<div id="deferred-deep-linking" />
+
 #### Penautan langsung yang tertunda
 
 Pertama, tautan mengirim pengguna ke toko aplikasi atau situs web untuk mengunduh dan menginstal aplikasi. Kemudian, menggunakan data atribusi tautan, pengguna diarahkan ke konten tertentu dalam aplikasi. <Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">[Artikel]</Anchor>
+
+<div id="deprecation-notice" />
 
 #### Pemberitahuan penghentian
 
 Pemberitahuan bahwa semua atau sebagian dari versi fitur tertentu dan/atau dukungan terkait tidak akan tersedia mulai dari tanggal tertentu (tanggal peniadaan versi).
 
+<div id="dev-key" />
+
 #### Kunci pengembang
 
 Identifier unik dan token otentikasi yang digunakan untuk mengonfigurasi SDK, mengenkripsi pesannya, dan mengautentikasi akun klien atau program panggilan ke API. Aplikasi di akun yang sama biasanya memiliki kode pengembang yang sama.
 
+<div id="device-id" />
+
 #### ID Perangkat
 
 Identifier unik dalam bentuk IDFA, GAID, dan OAID yang dapat disetel ulang oleh pengguna, atau IMEI dan SSAID yang tidak dapat disetel ulang. AppsFlyer dapat menggunakan ID ini untuk tujuan atribusi perangkat.
+
+<div id="direct-publisher" />
 
 #### Penerbit langsung
 
@@ -506,6 +614,8 @@ Alamat situs web yang diketik orang di browser untuk mengunjungi situs web terse
 **Platform sisi permintaan**   
  Pembeli iklan digital menggunakan satu platform DSP untuk mengelola beberapa akun pertukaran dan pertukaran data.
 
+<div id="dual-consent" />
+
 #### Persetujuan ganda
 
 Saat pengguna dengan perangkat iOS 14.5+ memberikan persetujuan ATT di aplikasi pemasang iklan dan penerbit.
@@ -515,6 +625,8 @@ Saat pengguna dengan perangkat iOS 14.5+ memberikan persetujuan ATT di aplikasi 
 <div id="h_cbdb4ac9-1b2a-4338-9733-f0cdb060f306" />
 
 <Accordion title="E">
+
+<div id="earned" />
 
 #### Dihasilkan
 
@@ -543,6 +655,8 @@ Mengindikasikan seperti apa CPC jika pemasar membeli klik, bukan impresi atau ko
  Menurut definisi, tarif CPM identik dengan nilai eCPM dari sebuah kampanye. Lihat [CPM.](/docs/appsflyer-knowledge-base-glossary#cpm)  
 *Rumus:* Total pendapatan / Total jumlah impresi (dalam 1000-an) = eCPM (seperti yang dianalisis oleh AppsFlyer)
 
+<div id="engagement" />
+
 #### Interaksi
 
 Interaksi pengguna dengan iklan.   
@@ -565,6 +679,8 @@ Juga, **In-app event**
  Setiap tindakan yang dilakukan pengguna dalam suatu aplikasi. Acara dilaporkan ke AppsFlyer melalui SDK atau API server-ke-server.   
  *Contoh:* Login, lulus level permainan, lakukan pembelian, dll.
 
+<div id="event-counter" />
+
 #### Penghitung Event
 
 Jumlah total in-app event yang dilakukan.
@@ -584,6 +700,8 @@ Stempel waktu yang direkam untuk sebuah in-app event.
 <div id="f" />
 
 <Accordion title="F">
+
+<div id="fraud" />
 
 #### Kecurangan
 
@@ -619,6 +737,8 @@ Juga, **Negara**
 
 <Accordion title="I">
 
+<div id="id-matching" />
+
 #### Pencocokan ID
 
 Metode atribusi yang menggunakan identifier perangkat unik. Identifier, diambil dari tautan atribusi, dicocokkan dengan pengidentifikasi yang diambil oleh AppsFlyer SDK.   
@@ -639,9 +759,13 @@ Pengenal unik untuk pengguna iOS Apple untuk semua aplikasi oleh satu pengembang
 **International Mobile Equipment Identity (Identitas Peralatan Seluler Internasional)**   
 Identifier perangkat seluler yang unik dan tidak dapat disetel ulang. Versi Android sebelum Android 10: Jika GAID tidak tersedia, maka IMEI dapat digunakan untuk tujuan atribusi. <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes">Perubahan privasi di Android 10</Anchor>
 
+<div id="impression" />
+
 #### Impresi
 
 Tindakan melihat iklan oleh pengguna aplikasi atau pengunjung situs web. Jaringan iklan dapat memiliki definisi khusus untuk tayangan. <Anchor target="_blank" href="/marketers/id/docs/about-conversion-rates#marketing-funnel-stages-and-conversion-rates-1">[Artikel]</Anchor>
+
+<div id="in-app-events" />
 
 #### In-App Event
 
@@ -652,6 +776,8 @@ Setelah memasang aplikasi, tindakan apa pun dilakukan oleh pengguna. Lihat [Acar
 
 Di AppsFlyer, instalasi dicatat ketika pengguna mengunduh, menginstal, dan  meluncurkan  sebuah aplikasi mobile.
 
+<div id="install-hijacking" />
+
 #### Pembajakan install
 
 Juga, **Klik injeksi** , **Referrer pembajakan** , dan **Klik pembajakan**   
@@ -661,9 +787,13 @@ Juga, **Klik injeksi** , **Referrer pembajakan** , dan **Klik pembajakan**
 
 Metode atribusi yang menggunakan parameter pengarah *Google Play* .<Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#install-referrer-android-only">[Artikel]</Anchor>
 
+<div id="integrated-partner" />
+
 #### Partner Terintegrasi
 
 Sebuah jaringan iklan, agensi, atau alat pemasaran yang terintegrasi dengan AppsFlyer. <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner">[Artikel]</Anchor>
+
+<div id="integrated-partner-types" />
 
 #### Tipe partner terintegrasi
 
@@ -691,9 +821,13 @@ Digunakan dalam iklan online. Pemasar membayar agar iklan muncul ketika seseoran
 
 <Accordion title="L">
 
+<div id="landing-page" />
+
 #### Halaman Awal
 
 Laman pertama yang dilihat pengguna setelah mengklik iklan.
+
+<div id="last-click-attributions" />
 
 #### Atribusi klik terakhir
 
@@ -704,6 +838,8 @@ Model analisis web. "Klik terakhir" diberikan kredit untuk penjualan atau konver
 **Batas Pelacakan Iklan**  
  Fitur iOS (hingga iOS 14) yang mencegah akses ke ID pengiklan perangkat pengguna. Saat diaktifkan, ID perangkat tidak diterima oleh AppsFlyer dan pengguna tidak dapat melihat iklan yang ditargetkan. [Artikel]
 
+<div id="link-management" />
+
 #### Manajemen tautan
 
 Kemampuan untuk mengatur, mengedit, menganalisis, dan memiliki kendali penuh atas semua tautan Anda. [Artikel]
@@ -711,6 +847,8 @@ Kemampuan untuk mengatur, mengedit, menganalisis, dan memiliki kendali penuh ata
 #### Live alert
 
 Secara aktif memonitor KPI Anda dan mengirim pemberitahuan untuk mengatur pengguna akun jika ada perubahan signifikan dalam kinerja iklan. [Artikel]
+
+<div id="localization" />
 
 #### Lokalisasi
 
@@ -735,14 +873,20 @@ KPI untuk keterlibatan pengguna. Secara default, ini adalah pengguna yang membuk
 
 <Accordion title="M">
 
+<div id="macros" />
+
 #### Makro
 
 Parameter yang digunakan oleh mitra dalam tautan atribusi dan postback. Makro, ketika ditempatkan di postback, secara otomatis diganti oleh data terkait pengguna. <Anchor target="_blank" href="/partners/id/docs/postback-macros-for-ad-networks#inapp-event-only-macros">[Artikel]</Anchor>
+
+<div id="marketer" />
 
 #### Pemasar
 
 Terkait dengan, **pemasang iklan** dan **pemilik aplikasi**  
 Orang yang bekerja untuk pemilik aplikasi yang menggunakan AppsFlyer dan menjalankan kampanye pemasaran di berbagai saluran untuk meningkatkan konversi.
+
+<div id="marketing-automation" />
 
 #### Otomasi pemasaran
 
@@ -762,14 +906,20 @@ API data agregat yang memungkinkan pengguna membuat laporan khusus dengan pengel
 Bertanggung jawab untuk melibatkan pengguna dengan iklan. <Anchor target="_blank" href="/marketers/id/docs/about-media-source-types">[Artikel]</Anchor>   
  *Jenis sumber media:* Jaringan pelaporan sendiri (SRN), non-SRN, dan media yang dimiliki
 
+<div id="mediation-platform" />
+
 #### Platform Mediasi
 
 Platform mediasi memusatkan akses ke beberapa jaringan iklan dalam satu integrasi SDK, memanfaatkan algoritme pengoptimalan untuk menentukan jaringan iklan termediasi mana yang dapat mengisi inventaris pengembang aplikasi dengan CPM tertinggi.
+
+<div id="meta-campaign-management-partners" />
 
 #### Mitra manajemen kampanye Meta
 
 Mitra pemasaran Meta ads memiliki spesialisasi dalam bekerja dengan Meta ads dan mematuhi kriteria yang mereka tetapkan. Ada dua kategori mitra manajemen kampanye Meta—mereka yang memiliki teknologi khusus atau untuk pembelian media.  
 *Contoh:* Mitra yang memungkinkan pemasar melakukan pengoptimalan kampanye otomatis pada Meta ads. Mitra manajemen kampanye Meta dapat berintegrasi dengan AppsFlyer untuk menerima postback secara real time.
+
+<div id="mcp" />
 
 #### MMP
 
@@ -777,9 +927,13 @@ Mitra pemasaran Meta ads memiliki spesialisasi dalam bekerja dengan Meta ads dan
 Seorang <Anchor target="_blank" href="https://www.appsflyer.com/glossary/mmp/">mitra pengukuran seluler</Anchor>, atau MMP, adalah perusahaan yang membantu aplikasi mengukur kinerja kampanye di seluruh kanal pemasaran iklan, sumber media, dan jaringan iklan.  
 *Contoh:* AppsFlyer
 
+<div id="mobile-app" />
+
 #### Aplikasi Mobile
 
 Perangkat lunak yang dirancang khusus untuk perangkat seluler, mis. ponsel cerdas atau tablet.
+
+<div id="monetization-network" />
 
 #### Jaringan monetisasi
 
@@ -789,6 +943,8 @@ Jaringan monetisasi (alias jaringan iklan) menghubungkan pengembang aplikasi (al
 
 Solusi yang dapat digunakan di berbagai platform.   
 *Contoh:* AppsFlyer's OneLink adalah tautan atribusi yang dapat digunakan untuk merekam pemasangan dan acara di perangkat Android dan iOS.
+
+<div id="multi-touch-attribution" />
 
 #### Atribusi Multi-Touch
 
@@ -800,10 +956,14 @@ Instalasi di mana sumber/kampanye media tidak memiliki sentuhan terakhir; namun,
 
 <Accordion title="N">
 
+<div id="native-ad" />
+
 #### Iklan asli
 
 Iklan yang cocok dengan bentuk dan fungsi platform di mana ia muncul.   
 *Contoh:* Artikel berita disponsori yang nampak sama dengan artikel tidak dibayar lainnya di situs.
+
+<div id="native-app" />
 
 #### Aplikasi Native
 
@@ -830,13 +990,19 @@ Dikembangkan untuk platform tertentu seperti iOS atau Android.
 
 Tautan atribusi multi-platform AppsFlyer  unik. Menggunakan satu tautan untuk mengarahkan ulang arahan ke toko yang relevan atau ke tautan dalam pengguna aplikasi yang ada. <Anchor target="_blank" href="/marketers/id/docs/onelink-guide">[Artikel]</Anchor>
 
+<div id="onelink-id" />
+
 #### ID OneLink ™
 
 Identifier unik secara otomatis untuk template Onelink. Diperlukan saat menggunakan OneLink API  .<Anchor target="_blank" href="/marketers/id/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">[Artikel]</Anchor>
 
+<div id="onelink-template" />
+
 #### Template OneLink™
 
 Template di mana semua tujuan, per jenis perangkat, ditentukan. Setelah pengaturan dasar selesai, Anda dapat membuat banyak tautan khusus dengan parameter berbeda, dan semuanya mengarah ke tujuan yang dinyatakan dalam template OneLink  .
+
+<div id="organic-install" />
 
 #### Install Organic
 
@@ -846,6 +1012,8 @@ Penginstalan aplikasi seluler yang terjadi tanpa upaya langsung dari pemasar. Ti
 
 **Over-the-top**  
 Konten ditayangkan melalui internet, melewati platform kabel, siaran, dan satelit. <Anchor target="_blank" href="/marketers/id/docs/ctv-pc-and-console-platform-attribution-concepts">[Artikel]</Anchor>
+
+<div id="owned-media" />
 
 #### Media yang Dimiliki Sendiri
 
@@ -858,10 +1026,14 @@ Jenis sumber media yang dimiliki/dikelola oleh pemilik aplikasi. <Anchor target=
 
 <Accordion title="P">
 
+<div id="package-id" />
+
 #### ID Paket
 
 Juga, [ID Aplikasi (Android & iOS)](#a)  
 Identifier unik yang muncul di alamat URL laman aplikasi store. Format menunjukkan sistem operasi terkait (OS).
+
+<div id="paid" />
 
 #### Dibayar
 
@@ -887,9 +1059,13 @@ Penginstalan atau notifikasi event dalam aplikasi dikirim dari pemasang iklan ke
 **Bayar per Klik (Pay per Click)**  
  Model iklan yang umumnya dikaitkan dengan mesin pencari tingkat pertama. Pemasar membayar penerbit ketika iklan mereka diklik. 
 
+<div id="probabilistic-modeling" />
+
 #### Pemodelan probabilistik
 
 Metode atribusi statistik, untuk media yang dimiliki, memanfaatkan pembelajaran mesin untuk memperkirakan kinerja kampanye.
+
+<div id="programmatic-advertising" />
 
 #### Iklan terprogram
 
@@ -898,6 +1074,8 @@ Jaringan iklan terhubung dengan berbagai platform dan membeli media (spot iklan)
 #### Protect360
 
 Fitur premium AppsFlyer yang menyediakan perlindungan anti-penipuan otomatis dan komprehensif. <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">[Artikel]</Anchor>
+
+<div id="publisher" />
 
 #### Penerbit
 
@@ -917,6 +1095,8 @@ Memberikan data atribusi waktu sebenarnya ke titik akhir sisi server pemasar. <A
 
 <Accordion title="Q">
 
+<div id="qr-code" />
+
 #### Kode QR
 
 (EN: QR Code) Barcode dua dimensi yang dapat dipindai dan dikonversikan ke link.
@@ -927,6 +1107,8 @@ Memberikan data atribusi waktu sebenarnya ke titik akhir sisi server pemasar. <A
 
 <Accordion title="R">
 
+<div id="raw-data" />
+
 #### Data Lengkap
 
 Data tingkat pengguna yang disediakan oleh AppsFlyer yang menjelaskan event khusus seperti, pembelian, kunjungan situs web, dan postback ke mitra. <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">[Artikel]</Anchor>
@@ -934,6 +1116,8 @@ Data tingkat pengguna yang disediakan oleh AppsFlyer yang menjelaskan event khus
 #### Re-attribution
 
 Pengguna aplikasi sebelumnya menginstal ulang aplikasi setelah interaksi dengan kampanye penargetan ulang (untuk aplikasi yang sama ini). <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">[Artikel]</Anchor>
+
+<div id="re-attribution-window" />
 
 #### Periode Waktu Re-attribution
 
@@ -943,9 +1127,13 @@ Periode waktu, setelah instalasi, ketika menginstal ulang tidak dianggap sebagai
 
 Pengguna aplikasi tertentu terlibat dengan kampanye penargetan ulang untuk aplikasi ini dan kemudian meluncurkannya. <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">[Artikel]</Anchor>
 
+<div id="registered-device" />
+
 #### Perangkat terdaftar
 
 Digunakan untuk tujuan pengujian. Perangkat terdaftar akan diatribusikan pada setiap penginstalan, terlepas dari apa pun aturan atribusi ulang AppsFlyer. <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices">[Artikel]</Anchor>
+
+<div id="request" />
 
 #### Permintaan
 
@@ -955,26 +1143,38 @@ Juga, [Panggilan API](#a)
 
 Untuk menjangkau pengguna saat ini atau sebelumnya melalui kampanye iklan.
 
+<div id="retargeting-network" />
+
 #### Jaringan penargetan ulang
 
 Spesialisasi dalam menargetkan pengguna saat ini atau sebelumnya. <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide#retargeting-dashboard">[Artikel]</Anchor>
+
+<div id="retention-report" />
 
 #### Laporan Retensi
 
 Produk AppsFlyer yang mengukur kinerja sesi pengguna dalam suatu aplikasi. [Artikel]
 
+<div id="revenue" />
+
 #### Pendapatan
 
 Pendapatan dilaporkan oleh peristiwa dalam aplikasi dan tampilan iklan (pendapatan iklan).
+
+<div id="revenue-attribution" />
 
 #### Atribusi Pendapatan
 
 Mengaitkan acara pendapatan tertentu dengan sumber kampanye/media tertentu. <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution">[Artikel]</Anchor>
 
+<div id="revenue-event" />
+
 #### Event Pendapatan
 
 Berbagai in-app event yang dicatat menurut nilai pendapatan terkait.   
   *Parameter:* af\_revenue adalah satu-satunya parameter yang mengakumulasi pendapatan pengguna. Selalu gunakan dengan acara dalam aplikasi yang mewakili perolehan pendapatan aktual dalam logika bisnis Anda.
+
+<div id="rich-media-ad" />
 
 #### Iklan media yang kaya
 
@@ -1009,18 +1209,26 @@ milik penerbit super yang secara independen melakukan penghitungan atribusi (ins
 **Software Development Kit**   
  Kode diintegrasikan ke dalam aplikasi untuk tujuan atribusi dan analitik. <Anchor target="_blank" href="/marketers/id/docs/sdk-integration-planning">[Artikel]</Anchor>
 
+<div id="segmentation" />
+
 #### Segmentasi
 
 Teknik pemasaran yang menggunakan kriteria untuk mengelompokkan pengguna ke dalam subkelompok untuk memberi mereka iklan hasil personalisasi.
+
+<div id="session" />
 
 #### Sesi
 
 Sebuah aplikasi harus diluncurkan. Jumlah sesi didasarkan pada peluncuran SDK atau logika yang ditentukan oleh pemilik aplikasi.   
  *Contoh:* Untuk aplikasi anti-virus, satu hari penggunaan sama dengan satu sesi. <Anchor target="_blank" href="/marketers/id/docs/measure-sessions">[Artikel]</Anchor>
 
+<div id="single-platform" />
+
 #### Platform Tunggal
 
 Tautan atribusi yang memungkinkan pelanggan melakukan atribusi untuk satu platform (Android, iOS, dll.) secara sekaligus.  (Ada juga tautan atribusi multi-platform).
+
+<div id="single-source-of-truth-ssot" />
 
 #### Sumber kebenaran tunggal (SSOT)
 
@@ -1037,6 +1245,8 @@ Singkatan dari SKAdNetwork.
 #### Slug
 
 Juga, [ID Aplikasi (Android & iOS)](#a)
+
+<div id="smart-banner" />
 
 #### Spanduk Cerdas
 
@@ -1057,6 +1267,8 @@ Platform milik penerbit super yang secara independen melakukan penghitungan atri
 
 Tambahan untuk nama domain utama Anda yang dibuat untuk mengatur dan menavigasi ke berbagai bagian situs web. Domain utama dapat memiliki beberapa subdomain. Misalnya: app.yourwebsite.com
 
+<div id="sunset-date" />
+
 #### Tanggal peniadaan versi
 
 Tanggal ketika semua atau sebagian fitur/versi usang tertentu "dimatikan" dan semua dukungan berhenti.
@@ -1072,17 +1284,25 @@ Tanggal ketika semua atau sebagian fitur/versi usang tertentu "dimatikan" dan se
 Fokus kampanye pemasaran pada [pemirsa](#a) tertentu.  
  *Kriteria:* Lokasi, demografi, operator seluler, dll.
 
+<div id="account-user" />
+
 #### Pengguna akun
 
 Pengguna dengan kredensial masuk untuk akun AppsFlyer. Pengguna akun diberi akses oleh admin. [Artikel]
+
+<div id="touch-time" />
 
 #### Waktu sentuh
 
 Tanggal dan waktu yang direkam (stempel waktu) dari interaksi pengguna (klik atau tayangan).
 
+<div id="touch-type" />
+
 #### Tipe Sentuh
 
 Jenis interaksi, klik atau tayangan, yang dimiliki pengguna dengan iklan.
+
+<div id="touchpoint" />
 
 #### Titik sentuh
 
@@ -1104,25 +1324,37 @@ Instalasi aplikasi yang dikaitkan dengan tayangan iklan TV selama jendela atribu
 **Identifier Perangkat Unik**   
 Identifier unik untuk satu perangkat iOS. Ini diambil dari server Apple ketika pengguna mencoba untuk mengaktifkan perangkat mereka menggunakan iCloud atau aplikasi Pengaturan.
 
+<div id="uninstall-measurement" />
+
 #### Pengukuran Uninstall
 
 Pengukuran pengguna yang menghapus sebuah aplikasi dari perangkat mereka, dirinci berdasarkan sumber media yang dikaitkan. <Anchor target="_blank" href="/marketers/id/docs/measure-uninstalls">[Artikel]</Anchor>
+
+<div id="unique-user" />
 
 #### Pengguna Unik
 
 ID AppsFlyer digunakan untuk menentukan pengguna unik.
 
+<div id="universal-links" />
+
 #### User
 
 Orang yang mengunduh, menginstal, dan meluncurkan aplikasi menggunakan perangkat seluler mereka.
+
+<div id="user-acquisition" />
 
 #### Akuisisi User
 
 Kampanye iklan yang ditujukan untuk mendapatkan pengguna baru.
 
+<div id="user-agent" />
+
 #### Agen User
 
 Informasi teknis untuk perangkat pengguna, seperti jenis browser, sistem operasi, dan versi perangkat lunak. AppsFlyer menggunakan ini untuk atribusi pemodelan probabilistik.
+
+<div id="user-invite-attribution" />
 
 #### Atribusi Undangan Pengguna
 
@@ -1134,9 +1366,13 @@ Atribusi dan analisis pengguna baru yang memasang aplikasi setelah pengguna yang
 
 <Accordion title="V">
 
+<div id="validation-rules" />
+
 #### Aturan Validasi
 
 Aturan untuk validasi target dan deteksi penipuan khusus yang memungkinkan pemilik aplikasi untuk memblokir atribusi instalasi yang tidak patuh.<Anchor target="_blank" href="/marketers/id/docs/implement-validation-rules-to-prevent-fraud">[Artikel]</Anchor>
+
+<div id="verticals" />
 
 #### Vertikal
 
@@ -1144,10 +1380,14 @@ Juga, **Industri**
  Pasar (dengan kebutuhan spesifik) yang lebih cenderung tertarik pada penawaran yang terfokus. AppsFlyer merekomendasikan penggunaan pelaporan in-app event spesifik berdasarkan vertikal pemasar. <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview#recommended-events-by-business-vertical">[Artikel]</Anchor>  
 *Contoh:* Gaming, eCommerce, pariwisata
 
+<div id="video-ad" />
+
 #### Iklan video
 
 Mengacu pada iklan yang terjadi sebelum, selama, dan/atau setelah streaming video di internet.   
  *Contoh:*Iklan dengan spanduk atau pengantara dengan video disematkan.
+
+<div id="visitor-website" />
 
 #### Pengunjung (situs web)
 
@@ -1164,6 +1404,8 @@ Instalasi atau tindakan diatribusikan dengan tayangan iklan. Mainkan peran dalam
 
 <Accordion title="W">
 
+<div id="web-app" />
+
 #### Aplikasi Web
 
 Menjalankan browser web. (Aplikasi asli berjalan pada platform OS tertentu.)
@@ -1173,6 +1415,8 @@ Menjalankan browser web. (Aplikasi asli berjalan pada platform OS tertentu.)
 <div id="X" />
 
 <Accordion title="X">
+
+<div id="x-marketing-partners" />
 
 #### Mitra pemasaran X
 

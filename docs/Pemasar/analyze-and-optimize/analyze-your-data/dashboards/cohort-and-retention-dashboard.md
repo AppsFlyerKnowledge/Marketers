@@ -28,6 +28,8 @@ x-zendesk:
 
 ![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Dashboard kohort
 
 Untuk menggunakan Cohort (Kelompok), pilih pengguna dari salah satu aplikasi Anda atau lebih dan kelompokkan mereka berdasarkan tanggal konversi. Metrik kelompok seperti pendapatan, ROI, dan tingkat konversi event tersedia. Bagi kelompok, untuk tujuan perbandingan, ke dalam dimensi seperti kampanye atau sumber media. Melakukan hal itu dapat mengungkap pola atau perubahan kinerja selama siklus hidup pengguna atau kampanye. Lihat <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Kasus penggunaan kelompok</Anchor>.
@@ -85,6 +87,8 @@ Dalam contoh ini, data lengkap yang sama digunakan untuk menghasilkan dua jenis 
 <table><thead><tr><th> </th><th> </th><th colspan="6">Fungsi</th></tr><tr><th rowspan="2">Selalu/ Opsional </th><th rowspan="2"><p>Metrik</p></th><th>Count (Hitung)</th><th>cvr (rasio konversi)</th><th>Rating</th><th>Jumlah</th><th>Pengguna Unik</th><th>eCPA</th></tr><tr><th>Jumlah</th><th>Persentase</th><th>Persentase</th><th>Jumlah</th><th>Jumlah</th><th>Jumlah</th></tr></thead><tbody><tr><td>Selalu</td><td>Pengguna (4)</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Selalu</td><td>Biaya (3)</td><td><span>-</span></td><td><span>-</span></td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Selalu</td><td>eCPI Rata-Rata</td><td><span>-</span></td><td><span>-</span></td><td><span>✓</span></td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td><code>"event_name"</code></td><td> </td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td><span>✓</span></td><td> <span>✓</span><span><span>(5)</span></span> </td></tr><tr><td>OPSIONAL</td><td>Pendapatan</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td>ROAS (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td>ROI (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td>Sesi (2)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td> ✓(1) </td><td><span><span>-</span></span></td></tr><tr><td>OPSIONAL</td><td>Uninstall (3)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr></tbody><tfoot><tr><td colspan="8"><p>(1) Sesi unik muncul saat aggregation_type=on_day<br/>(2) Sesi penargetan ulang (interaksi ulang dan atribusi ulang) tersedia untuk sesi yang muncul mulai dari tanggal 13 Juli 2020. Artinya, sesi yang berlangsung hingga 12 Juli 2020 tidak ditampilkan. <br/>(3) Tidak tersedia dalam kasus berikut:</p><ul><li>Jenis tampilan disatukan</li><li>Rinciannya adalah per jam. Dihitung setiap hari menggunakan waktu UTC. </li></ul><p>(4) Metrik <em>Pengguna</em> menghitung jumlah atribusi (penginstalan, interaksi ulang, atribusi ulang) yang terjadi selama periode yang dipilih.   </p><p>(5) Biaya efektif per tindakan (eCPA): Biaya / Jumlah kumulatif pengguna unik yang melakukan event.</p></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="using-cohort" />
 
 ## Menggunakan Kohort
 
@@ -256,6 +260,8 @@ Untuk hari tertentu dalam rentang data konversi, jika jumlah hari yang telah ber
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informasi
 
 <div id="cohort-for-agencies" />
@@ -275,6 +281,8 @@ Untuk hari tertentu dalam rentang data konversi, jika jumlah hari yang telah ber
 
 <Accordion title="Gunakan case (kasus)">
 
+<div id="revenue-sum-by-geo" />
+
 #### Jumlah pendapatan berdasarkan negara
 
 **Grafik: Pendapatan kumulatif per pengguna**
@@ -284,6 +292,8 @@ Untuk hari tertentu dalam rentang data konversi, jika jumlah hari yang telah ber
 **Tabel: Pendapatan per hari**
 
 [![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
+
+<div id="in-app-event-conversion" />
 
 #### Konversi In-app event
 

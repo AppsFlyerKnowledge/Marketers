@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## Solusi lintas platform AppsFlyer
 
 Dalam lanskap digital saat ini, para profesional yang sedang berkembang menghadapi tantangan untuk menjangkau konsumen di berbagai perangkat dan platform. Pendekatan pengukuran tradisional gagal dalam menangkap cakupan penuh perjalanan pengguna yang menjangkau berbagai platform. Pengukuran lintas platform sangat penting untuk memahami dampak aktivitas pemasaran dan membuat keputusan yang tepat.
@@ -35,9 +37,13 @@ AppsFlyer menawarkan solusi lintas platform yang luas yang melengkapi alat atrib
 
 Pengiklan dapat mempromosikan aplikasi pada platform yang sama atau berbeda dengan yang ditampilkan iklan. Misalnya, pengiklan dapat menampilkan iklan untuk aplikasi Steam di platform Steam. Atau, mereka dapat menampilkan iklan untuk aplikasi Steam di web desktop, misalnya melalui Google Ads. Apa pun strategi pemasaran mereka, pengiklan berintegrasi dengan AppsFlyer untuk menerima data atribusi dan pengukuran kinerja tentang sumber (non-organik atau organik) dan kampanye yang mendorong penginstalan aplikasi CTV, PC, dan platform konsol serta acara pasca-penginstalan. Pemasar menggunakan wawasan ini untuk menghitung nilai seumur hidup pengguna (LTV) dan mengukur serta mengoptimalkan aktivitas pemasaran. <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model">Pelajari lebih lanjut tentang atribusi AppsFlyer</Anchor>
 
+<div id="supported-platforms" />
+
 ### Platform yang didukung
 
 <table><thead><tr><th>platform</th><th colspan="2">Metode integrasi AppsFlyer</th></tr><tr><th> </th><th>S2S</th><th>SDK</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span><span>✓</span></span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span><span>✓</span></span></td></tr><tr><td>MacOS</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Amazon Fire TV</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Chromecast</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Roku</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Vizio</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>LG</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>PlayStation</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Vidaa</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>PC asli</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span><span>✓</span></span></td><td><span><span><span>✓</span></span></span></td></tr><tr><td>Epic Games</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Nintendo Switch</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr></tbody></table>
+
+<div id="cross-platform-attribution-flows" />
 
 ## Aliran atribusi lintas platform
 
@@ -139,6 +145,8 @@ Informasi Tambahan
 * <Anchor target="_blank" href="/marketers/id/docs/cross-platform-landing-pages-with-smart-script">Pelajari cara menyiapkan laman landas lintas platform dengan Smart Script</Anchor>
 
 </Accordion>
+
+<div id="data-availability" />
 
 ## Ketersediaan data
 

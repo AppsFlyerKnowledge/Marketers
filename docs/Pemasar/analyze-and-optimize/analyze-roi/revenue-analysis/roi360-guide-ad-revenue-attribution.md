@@ -31,6 +31,8 @@ x-zendesk:
 
 [![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## Atribusi pendapatan iklan
 
 * Tampilan iklan di aplikasi pada spanduk, offer wall, interstisial, dll., dan menghasilkan pendapatan iklan.
@@ -59,6 +61,8 @@ Atribusi pendapatan iklan mendukung berbagai metode perincian. Perinciannya berg
 | Tingkat impresi (melalui SDK) dengan tingkat perangkat (melalui S2S API) | <ul><li>Mengizinkan data tingkat impresi yang diterima melalui SDK untuk diatribusikan dan dilaporkan pada Hari X, dan dialihkan dengan data tingkat perangkat yang diterima melalui API pada Hari 1 dan seterusnya. **Catatan**: Untuk Android, data yang dilaporkan melalui SDK dari perangkat yang tidak dikenal (tanpa ID perangkat yang tersedia) tidak digantikan oleh data yang masuk melalui API.</li><li>Mengaktifkan keaktualan data untuk akurasi. Artinya, Anda mendapatkan manfaat keaktualan data untuk Hari X dengan keakuratan data untuk Hari X+1 dan seterusnya.</li><li>Mendukung SKAN.</li></ul> |
 
 </Accordion>
+
+<div id="implementation" />
 
 ## Implementasi
 
@@ -145,12 +149,16 @@ Perincian agregat untuk pendapatan iklan berfungsi sebagai berikut:
   * event ***af\_app\_opened*** yang tersedia secara default,
 * Jangan laporkan jumlah pendapatan iklan dalam in-app event secara paralel dengan integrasi pendapatan iklan. Hal itu menyebabkan pendapatan iklan terduplikasi di dashboard karena AppsFlyer mendapatkan data pendapatan dari jaringan monetisasi melalui integrasi.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### Gabungkan pendapatan iklan menggunakan event
 
 | Metode event | Cara implementasi | Pertimbangan |
 | --- | --- | --- |
 | Monetisasi unik dari in-app event | <ul><li>In-app event diatur pada saat iklan ditampilkan</li><li>Ini memberikan jumlah tindakan pengguna yang berbeda yang memungkinkan perhitungan eRPA yang unggul</li><li>Ini dapat disempurnakan lebih lanjut dengan memiliki in-app event yang berbeda untuk setiap jaringan monetisasi, sehingga memungkinkan Anda untuk membagi pendapatan dengan jaringan monetisasi<br />Lihat tabel berikut untuk pembahasan lengkapnya.</li></ul> | <ul><li>Mengharuskan pengembang untuk memodifikasi aplikasi</li><li>Pendapatan dapat diperinci berdasarkan jaringan monetisasi di Dashboard</li></ul> |
 | af\_app\_opened event | <ul><li>Event af\_app\_opened dikirim oleh SDK Appsflyer secara default</li><li>Ini dipicu oleh setiap sesi pengguna</li></ul> | <ul><li>Tidak diperlukan modifikasi aplikasi</li><li>Cepat diimplementasikan</li><li>Nilai eRPA terdistorsi secara signifikan kecuali jika Anda hanya menampilkan satu aplikasi per sesi</li><li>Tidak ada perincian pendapatan berdasarkan jaringan monetisasi</li><li>Acara terkait dengan semua pengguna yang meluncurkan aplikasi dan Anda tidak memiliki indikasi kesediaan pengguna untuk menonton iklan</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### Perbandingan metode in-app event
 
@@ -180,6 +188,8 @@ Perincian agregat untuk pendapatan iklan berfungsi sebagai berikut:
 
 </Accordion>
 
+<div id="ad-revenue-data" />
+
 ## Data pendapatan iklan
 
 Data pendapatan iklan tersedia melalui dashboard AppsFlyer dan laporan data lengkap.
@@ -203,6 +213,8 @@ Atribusi pendapatan iklan tersedia sebagai berikut:
   * Dashboard: Aktivitas
   * Data lengkap pendapatan iklan
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Dashboard ikhtisar - laporan kinerja gabungan**
 
 [![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
@@ -219,6 +231,8 @@ Di dashboard Aktivitas:
 
 * Nilai termasuk pendapatan didasarkan pada tanggal aktivitas. Lihat  <Anchor target="_blank" href="/marketers/id/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">LTV vs. data aktivitas</Anchor> .
 * Tindakan **Rata-rata per Pengguna** menunjukkan kecenderungan pengguna untuk berinteraksi dengan iklan yang disajikan dalam aplikasi.
+
+<div id="examples" />
 
 > 📄 **Contoh**
 >
@@ -309,6 +323,8 @@ Bidang dalam laporan pendapatan iklan diisi:
   * **Konteks:** Bidang yang memiliki arti serupa dalam laporan data lengkap lainnya. Misalnya, nama acara, nilai acara, mata uang.
 * Sebagai hasil dari mengatribusikan event tersebut ke sumber media yang menghadirkan pengguna. Artinya bidang ini disalin dari event konversi yang membawa pengguna. Misalnya, sumber media dan kampanye. Bidang ini tidak tercantum dalam tabel berikut.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### Bidang yang diisi oleh pendapatan iklan
 
 | api\_name | Nama kolom | Jenis kolom | Deskripsi |
@@ -324,6 +340,8 @@ Bidang dalam laporan pendapatan iklan diisi:
 | monetization\_network | Jaringan Monetisasi | Spesifik | Jaringan mengirimkan iklan |
 | Tayangan | Tayangan | Spesifik | Berapa kali pengguna melihat iklan |
 | mediation\_network | Jaringan Mediasi | Spesifik | Jaringan mediasi melaporkan event tersebut ke AppsFlyer |
+
+<div id="fields-by-network" />
 
 #### Bidang berdasarkan jaringan
 
@@ -373,6 +391,8 @@ Untuk integrasi lama (pra-ROI360), keaktualan data paling cepat adalah Hari X+1,
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi Tambahan
 

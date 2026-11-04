@@ -50,9 +50,13 @@ Karakteristik pesan
 | Isi pesan (bidang) | <ul><li>Pesan memiliki struktur `key:value`.</li><li>Lihat bidang atribusi AppsFlyer <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor> yang tersedia.</li><li>Setiap kode (key) mewakili bidang data lengkap. Lihat <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary#data-fields-dictionary">deskripsi bidang data lengkap di AppsFlyer</Anchor>.</li><li>Kode kosong atau null tidak dikirim sama sekali.</li><li>Contoh berisi bidang null dan kosong. Postback real tidak memiliki bidang kosong atau null. Contoh yang diberikan memiliki format JSON.<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | Format bidang stempel waktu | <ul><li>Stempel waktu UTC: `yyyy-mm-dd hh:mm:ss.sss`. Misalnya, ditampilkan sebagai`2019-09-17 00:09:00.123`. Sebuah event berlangsung pada pukul 18:00 waktu Tokyo. Waktu event dikonversi ke UTC, yaitu pukul 09:00. Waktu yang dicatat adalah waktu UTC.</li><li>Stempel zona waktu yang dipilih (khusus aplikasi): `yyyy-mm-dd hh:mm:ss.sss±th:tm`. Misalnya `2019-09-17 18:00:16.000+0900`. Sebuah event berlangsung pada pukul 18:00 waktu Tokyo. Waktu event yang ditampilkan dicatat sebagai 18:00+09:00. 09:00 adalah zona waktu Tokyo.</li></ul> |
 
+<div id="available-message-types" />
+
 #### Jenis pesan yang tersedia
 
 <table><tbody><tr><th>Konteks atribusi</th><th>Jenis pesan</th><th>Bidang conversion_type </th><th>bidang campaign_type</th><th>bidang event_name</th><th>Bidang event_type</th></tr><tr><td>Akuisisi User</td><td>Penginstalan\*</td><td><span>Install</span></td><td><p>Non-organik: UA</p><p>Organik: organic</p></td><td><p>Install</p></td><td><ul><li><p>Install</p></li><li><p>penginstalan-organik</p></li></ul></td></tr><tr><td>Akuisisi pengguna </td><td>Instal in-app event</td><td><span>Install</span></td><td><p>Non-organik: UA</p><p>Organik: organic</p></td><td><p>Nama event yang ditentukan pengiklan</p></td><td><ul><li><p>penginstalan-in-app-event</p></li><li><p>penginstalan-organik-in-app-event</p></li></ul></td></tr><tr><td><p>Retargeting</p></td><td>Re-engagement</td><td><span>Re-engagement</span></td><td>penargetan ulang</td><td>Re-engagement</td><td><p>Re-engagement</p></td></tr><tr><td>Penargetan ulang </td><td>In-App Event Re-engagment</td><td>Re-engagement</td><td>penargetan ulang</td><td>Nama event yang ditentukan pengiklan</td><td><p>interaksi-ulang-in-app-event</p></td></tr><tr><td>Penargetan ulang </td><td>Atribusi ulang </td><td>instal ulang</td><td>penargetan ulang</td><td>Re-attribution</td><td><p>Re-attribution</p></td></tr><tr><td>Akuisisi pengguna </td><td>Penginstalan ulang</td><td>instal ulang</td><td><p>Non-organik: UA</p><p>Organik: organic</p></td><td><p>instal ulang</p></td><td><ul><li><p>instal ulang</p></li><li><p>penginstalan-organik</p></li></ul></td></tr><tr><td>Retargeting</td><td>In-App Event Re-attribution</td><td>instal ulang</td><td>penargetan ulang</td><td>Nama event yang ditentukan pengiklan</td><td><p>atribusi-ulang-in-app-event</p></td></tr><tr><td colspan="6">\* Beberapa penginstalan terkait atribusi lihat-tayang diatribusikan ke <a href="./about-raw-data-identifier-restrictions" target="_blank">sumber media yang dibatasi.</a> </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### Bidang unik
 
@@ -76,6 +80,8 @@ Karakteristik pesan:
 | Kesegaran data | <ul><li>Penginstalan, pengunduhan ulang, dan in-app event:<ul><li>Diproses setiap hari</li><li>Dikirim ke titik akhir Anda pada hari setelah menerima postback iOS oleh AppsFlyer</li><li>Perkiraan waktu penerimaan pesan event 05:00–08:00 UTC (waktu tepatnya berfluktuasi)</li><li>Misalnya: Postback yang diterima pada hari Senin dikirim mulai hari Selasa 05:00 UTC</li></ul></li><li>Postback dari iOS dan salinan Postback: Pesan dikirim segera setelah tiba di AppsFlyer</li></ul> |
 | Contoh pesan | Lembar kerja berisi contoh pesan. Contoh yang diberikan memiliki format JSON. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">Pesan contoh SKAN</Anchor>. |
 
+<div id="message-types-for-skan-attribution" />
+
 #### Jenis pesan untuk atribusi SKAN
 
 | Message type | bidang event\_name | bidang skad\_redownload | Bidang event\_type |
@@ -94,7 +100,11 @@ Karakteristik pesan:
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Atur titik akhir Push API
+
+<div id="caution" />
 
 > ❗️ **Perhatian**
 >
@@ -108,6 +118,8 @@ Karakteristik pesan:
 
 Untuk mengatur Push API, selesaikan daftar tindakan berikut.
 
+<div id="push-api-setup-checklist" />
+
 #### Daftar periksa pengaturan API
 
 <table><tbody><tr><th>Langkah Nomor. </th><th>Atribusi AppsFlyer</th><th>Atribusi SKAdNetwork: </th></tr><tr><td>1</td><td colspan="2"><p>Jika Anda telah memiliki titik akhir Push API yang aktif, Anda dapat melewati langkah ini. </p><p>Selesaikan <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">persyaratan sisi server</a>.</p></td></tr><tr><td>2</td><td><p>Untuk atribusi AppsFlyer, rencanakan pengaturan titik ahir menggunakan <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">Daftar periksa perencanaan Push API.</a></p></td><td><p>Tak dapat diterapkan</p></td></tr><tr><td>3</td><td><p><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Atur titik akhir atribusi AppsFlyer</a></p></td><td><p><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Atur titik akhir atribusi SKAdNetwork</a></p></td></tr></tbody></table>
@@ -117,6 +129,8 @@ Untuk mengatur Push API, selesaikan daftar tindakan berikut.
 <Accordion title="Persyaratan sisi server (server Anda)">
 
 Pastikan server Anda mematuhi persyaratan berikut:
+
+<div id="server-side-requirements" />
 
 #### Persyaratan sisi server
 
@@ -139,6 +153,8 @@ Pastikan server Anda mematuhi persyaratan berikut:
 **Titik akhir**
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+
+<div id="endpoint-planning-table" />
 
 #### Tabel perencanaan titik akhir
 
@@ -213,6 +229,8 @@ Pastikan server Anda mematuhi persyaratan berikut:
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## Prosedur tambahan—mengelola titik akhir
 
 <div id="change-an-endpoint" />
@@ -245,6 +263,8 @@ Pastikan server Anda mematuhi persyaratan berikut:
     Titik akhir dihapus.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Penyelesaian masalah, karakteristik, dan batasan
 
@@ -318,6 +338,8 @@ Apakah Anda menggunakan Amazon CloudFront sebagai titik akhir Anda? Jika demikia
 | <span id="account-owneruser-access"></span>Pemilik akun/akses pengguna | Hanya **pemilik akun**AppsFlyer yang dapat melakukan perubahan pada pengaturan Push API.<ul><li>Setiap akun AppsFlyer **hanya memiliki satu** pemilik akun. Ini adalah pengguna AppsFlyer pertama (dibuat pada saat akun dibuka) .</li></ul>Pengguna akun lainnya dapat melihat pengaturan Push API tetapi tidak dapat melakukan perubahan. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

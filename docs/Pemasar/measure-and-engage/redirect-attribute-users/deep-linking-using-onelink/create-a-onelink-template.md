@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Buat templat untuk membentuk dasar logika pengarahan untuk semua tautan OneLink yang Anda buat untuk berbagai kampanye pemasaran Anda. Template diperlukan untuk membuat tautan dan pengalaman pengguna akhir.
 
+<div id="onelink-templates" />
+
 ## Templat OneLink
 
 <Embed title="Pemutar video YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ templat OneLink:
   * Pengguna baru yang tidak menginstal aplikasi Anda ke toko aplikasi atau URL web yang benar.
   * **Pengguna yang sudah ada, yang menginstal aplikasi Anda** : Membuka aplikasi melalui Tautan Aplikasi Android, Tautan Universal iOS, atau skema URI. Ini melibatkan beberapa pekerjaan pengembang untuk disiapkan.
   * **Catatan**: Pengaturan pengarahan untuk situs web atau toko aplikasi dapat diganti pada tingkat tautan.
+
+<div id="create-a-onelink-template" />
 
 ## Prosedur
 
@@ -60,6 +64,8 @@ templat OneLink:
 
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. Di kolom nama templat **OneLink**, masukkan nama.  
+
+   <div id="note" />
 
    > 📘 **Catatan**
    >
@@ -201,6 +207,8 @@ Untuk pengalaman pengguna, keamanan, dan jangkauan perangkat terbaik, kami merek
 
 5. Klik **Update OneLink template** (Perbarui templat OneLink).
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > * Saat Anda menyimpan atau memperbarui templat OneLink, AppsFlyer secara otomatis menghasilkan file AASA dan/atau Tautan Aset Digital JSON untuk memverifikasi domain aplikasi Anda dan mengelolanya untuk Anda. Ini sangat penting agar Tautan Universal dan Tautan Aplikasi Anda dapat berfungsi dengan baik.
@@ -239,6 +247,8 @@ Anda dapat menyesuaikan kode QR yang dibuat melalui OneLink dengan:
 
 </Accordion>
 
+<div id="key-traits-and-limitations" />
+
 <div id="traits-and-limitations" />
 
 <Accordion title="Karakteristik dan batasan">
@@ -255,6 +265,8 @@ Anda dapat menyesuaikan kode QR yang dibuat melalui OneLink dengan:
 </Accordion>
 
 Punya pertanyaan tentang templat OneLink? Lihat <Anchor target="_blank" href="/marketers/id/docs/onelink-troubleshooting-and-faq#pertanyaan-umum-templat-onelink">Pertanyaan Umum (FAQ)</Anchor> kami!
+
+<div id="next-step" />
 
 ## Langkah berikutnya
 

@@ -31,6 +31,8 @@ x-zendesk:
 
 SKAdNetwork (SKAN), bagian dari Apple iOS, memungkinkan pengiklan mengukur kinerja kampanye sekaligus menjaga privasi pengguna.. SKAN beroperasi tanpa IDFA atau ID iklan lainnya. SKAN berfungsi tanpa perlu persetujuan ATT.
 
+<div id="tip" />
+
 > 👍 **Tips**
 >
 > * Mulai iOS 15, kami menyarankan agar Anda mengirim <Anchor target="_blank" href="/marketers/id/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">salinan postback SKAN</Anchor> ke AppsFlyer. Melakukan hal tersebut memungkinkan AppsFlyer untuk memverifikasi bahwa Nilai Konversi di postback belum dimanipulasi.
@@ -65,6 +67,8 @@ Artikel ini menjelaskan karakteristik yang relevan dari infrastruktur dan solusi
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## Solusi AppsFlyer SKAN
 
 AppsFlyer memberikan hasil atribusi iOS teragregasi menggunakan postback SKAN dari iOS. Postback ini dikirim oleh iOS ke jaringan iklan yang kemudian meneruskannya ke AppsFlyer. Postback berisi catatan atribusi anonim yang diperkaya dengan nilai konversi (CV) yang ditetapkan oleh pemasang iklan. CV adalah ukuran kualitas pengguna selama periode waktu setelah penginstalan awal.
@@ -77,6 +81,8 @@ Solusi SKAN AppsFlyer memberi pemasang iklan:
 <div id="principles-and-flow" />
 
 <Accordion title="Prinsip dan alur">
+
+<div id="skan-attribution-flow" />
 
 #### **Alur atribusi SKAN**
 
@@ -122,6 +128,8 @@ Untuk mengatasi keterbatasan fungsional dan struktural infrastruktur SKAdNetwork
 | Fleksibel | <Anchor target="_blank" href="/marketers/id/docs/skan-cv-decode-map-your-cv-to-events">Decode</Anchor> | <ul><li>Buat CV Anda sendiri untuk pemetaan event dan atur CV di aplikasi sendiri. Gunakan opsi ini jika Anda tidak dapat mengintegrasikan AppsFlyer SDK ke aplikasi Anda. Untuk menggunakan Decode, buka **SKAN Conversion Studio,** klik opsi (⋮), pilih **Upload custom decode mapping file**.</li><li>SKAN 4 tidak didukung</li></ul> | 12-1512j (63 hari) |
 
 </Accordion>
+
+<div id="additional-skadnetwork-information" />
 
 ## Informasi SKAdNetwork tambahan
 
@@ -222,6 +230,8 @@ Metrik organik di dasbor SKAdNetwork dihitung menggunakan mekanisme berikut:
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## Mitra terintegrasi SKAN
 
 <div id="recording-ad-revenue" />
@@ -253,6 +263,8 @@ Perhatikan berbagai opsi dan persyaratan dalam tabel berikut
 | <span id="inapp-event-mapping-verification"></span>Verifikasi pemetaan in-app event | **<span id="1611499069.009700"></span>Diperlukan tindakan** : Anda harus <Anchor target="_blank" href="/marketers/id/docs/in-app-event-postback-configuration#metode-pemetaan">memetakan in-app event</Anchor> ke nama event mitra yang sesuai sehingga mitra dapat mencatat postback dengan benar.<br /><br />Untuk setiap mitra yang menjalankan kampanye SKAdNetwork, verifikasi bahwa in-app event disetel sesuai dengan jenis pengukuran aplikasi yang dipilih.<br /><br />**Untuk memverifikasi dan mengubah pemetaan in-app event mitra**:<ol><li>Di AppsFlyer, Buka **Konfigurasi** > **Integrasi Aktif**.</li><li>Pilih mitra.</li><li>Buka tab **Integration** .</li><li>Verifikasi dan, jika perlu, buat perubahan pengaturan sebagai berikut:<ol><li>Aktifkan **Postback in-app event**.</li><li>Pastikan bahwa in-app event,  **nama event SDK yang** Anda tetapkan dalam pengukuran SKAdNetwork dipetakan ke **pengenal event Mitra** .</li></ol></li><li>Klik **Save integration**.</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

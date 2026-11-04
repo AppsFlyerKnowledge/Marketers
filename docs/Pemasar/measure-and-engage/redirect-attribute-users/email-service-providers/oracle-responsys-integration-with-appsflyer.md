@@ -32,6 +32,8 @@ Salah satu tantangan dengan ESP adalah melakukan atribusi dan tautan langsung ya
 
 Namun, tautan langsung dan pencatatan klik masih dapat dilakukan dengan ESP yang mendukung Tautan Universal dan Tautan Aplikasi di atas domain pencatatan kliknya. Selain itu, Anda dapat menyiapkan domain klik Anda sendiri untuk bertindak sebagai domain pencatatan klik.
 
+<div id="prerequisites" />
+
 ## Prasyarat
 
 * Konfigurasikan aplikasi Anda untuk mendukung <Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">tautan langsung dengan OneLink</Anchor>.
@@ -51,9 +53,13 @@ Namun, tautan langsung dan pencatatan klik masih dapat dilakukan dengan ESP yang
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Menyiapkan domain klik Oracle Responsys
 
 Ikuti bagian ini untuk menyiapkan domain klik Anda (domain pencatatan klik) di Oracle Responsys.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### Langkah 1: Siapkan domain klik di Oracle Responsys
 
@@ -64,6 +70,8 @@ Untuk menyiapkan domain klik, ikuti panduan resmi Oracle Responsys tentang cara 
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 Setelah Anda mengatur domain klik di Tabel Tautan, Responsys menggunakan domain ini untuk menggabungkan OneLink yang Anda sertakan dalam kampanye email. Dengan cara ini, Responsys dapat mencatat klik di sistem mereka sambil mempertahankan OneLink dan fungsionalitas tautan langsung.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Langkah 2: Berikan Responsys file AASA (iOS) dan file Tautan Aset (Android)
 
@@ -95,11 +103,15 @@ Saat Anda mengatur OneLink dengan Tautan Aplikasi, Anda sudah memiliki file Taut
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Mengatur aplikasi Anda
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Langkah 1 untuk Android: Menyiapkan aplikasi Anda untuk mendukung Tautan Aplikasi">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Menambahkan domain klik ke aktivitas di manifes Android
 
@@ -117,6 +129,8 @@ Di manifes Android, tambahkan host domain klik dan awalan apa pun di tag aktivit
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### Mengatur aplikasi untuk menyelesaikan domain klik
 
@@ -145,6 +159,8 @@ Untuk mengatasi domain klik:
 
 Bagian ini membahas cara mengatur aplikasi Anda untuk mendukung Tautan Universal.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Mengaitkan domain klik di Xcode
 
 1. Di Xcode, klik proyek Anda.
@@ -153,6 +169,8 @@ Bagian ini membahas cara mengatur aplikasi Anda untuk mendukung Tautan Universal
 4. Klik tanda + dan tambahkan domain klik Anda. Misalnya, applinks:click.example.com.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### Langkah 2: Mengatur aplikasi untuk menyelesaikan domain klik
 
@@ -223,6 +241,8 @@ Untuk mengatasi domain klik:
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## Mengirim email pertama Anda
 
 1. Buat URL OneLink di halaman Manajemen Tautan (atau secara manual).
@@ -242,6 +262,8 @@ Untuk mengatasi domain klik:
 
    Pada tahap ini, Responsys menggabungkan tautan di atas dengan domain klik yang Anda atur pada langkah sebelumnya. Setiap klik pada domain klik mengalihkan ke tautan atribusi OneLink. Jika aplikasi diinstal pada perangkat pengguna, domain klik akan ditautkan langsung ke aplikasi.
 
+<div id="note" />
+
 > 📄 **Contoh**
 >
 > Parameter URL bukan URL yang dikodekan dalam contoh ini, hanya demi keterbacaan:
@@ -251,6 +273,8 @@ Untuk mengatasi domain klik:
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Menguji tautan Anda
 

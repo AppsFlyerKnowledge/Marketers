@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## Prinsip dasbor
 
 Dasbor berisi data kinerja kampanye SKAN dan mematuhi prinsip-prinsip berikut:
@@ -40,6 +42,8 @@ Dasbor berisi data kinerja kampanye SKAN dan mematuhi prinsip-prinsip berikut:
   * Postback yang diterima pada hari tertentu diproses pada akhir hari UTC. Data tersedia pada pukul 08:00 UTC pada hari berikutnya. Artinya postback yang diterima pada hari Senin tersedia di dasbor pada Selasa pagi.
   * Lihat <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">waktu pembaruan dasbor yang diharapkan.</Anchor>
 
+<div id="skan-dashboard-view-options" />
+
 ## Opsi tampilan dasbor SKAN
 
 Menampilkan data menggunakan tanggal [instal atau tanggal kedatangan postback](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options).
@@ -47,6 +51,8 @@ Menampilkan data menggunakan tanggal [instal atau tanggal kedatangan postback](/
 **Untuk memilih opsi tampilan tanggal**, di AppsFlyer, dari menu samping, pilih **Analisis** > **Ikhtisar SKAN.** Di bilah filter, pilih opsi **Tampilan berdasarkan** tanggal.
 
 Filter tambahan dan opsi tampilan dijelaskan di bagian berikut.
+
+<div id="dashboard-use" />
 
 ## Penggunaan dasbor
 
@@ -284,6 +290,8 @@ Definisi:
 * **SDK:** AppsFlyer SDK tertanam di aplikasi.
 * **Peraturan**: <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model">Model Atribusi AppsFlyer</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### Perbedaan kerangka atribusi
 
 | Konsep | SKAN | AppsFlyer |
@@ -297,6 +305,8 @@ Definisi:
 | Penginstalan dilaporkan oleh | <ul><li>SKAN Terbatas untuk penginstalan non-organik dan unduhan ulang non-organik.</li><li>**SDK**: Semua instalasi dilaporkan. Hanya penginstalan pertama yang dihitung untuk tujuan metrik. Artinya reatribusi diabaikan.</li></ul> | SDK melaporkan semua penginstalan yang dikategorikan menggunakan Aturan ke dalam penginstalan pertama kali dan penargetan ulang penginstalan ulang (atribusi ulang). |
 | Tingkat perincian iklan | Kampanye, set iklan, ID iklan, iklan, dan ID iklan. | Hirarki penuh: Kampanye, ID kampanye, adset, parameter tambahan seperti saluran dan mitra. |
 | Pengunduhan ulang vs. penginstalan ulang | Pengunduhan ulang terkait dengan tindakan pengguna ID Apple tertentu. Mereka tidak paralel dengan atribusi ulang. | Penargetan ulang (atribusi ulang interaksi ulang) tercermin di dasbor Penargetan Ulang. Mereka tidak sejajar dengan unduhan ulang. |
+
+<div id="metric-differences" />
 
 #### Perbedaan metrik
 
@@ -337,6 +347,8 @@ Definisi:
 | Zona waktu | Untuk data yang dilaporkan SKAN, penginstalan dan tampilan event menggunakan UTC, dengan pengecualian data Meta dan Google SKAN, yang zona waktunya didasarkan pada zona waktu yang dikonfigurasi di akun Meta dan Google Anda masing-masing. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

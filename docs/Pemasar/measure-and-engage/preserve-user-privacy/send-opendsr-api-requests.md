@@ -26,6 +26,8 @@ x-zendesk:
 
 **Pernyataan dari pengacara kami:** *Tidak ada pernyataan di sini yang merupakan nasihat hukum. Panduan ini hanya disediakan untuk informasi dan kenyamanan Anda. Anda harus bekerja sama dengan penasihat hukum dan profesional lainnya untuk menentukan dengan pasti apakah  GDPR, CCPA, atau undang-undang lainnya berlaku atau tidak untuk Anda.* Hubungan privasi antara Anda dan AppsFlyer diatur oleh<Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">Kebijakan Privasi Layanan AppsFlyer</Anchor>. Untuk pertanyaan apa pun yang berkaitan dengan Kebijakan Privasi Layanan ini atau untuk menghubungi petugas perlindungan data kami, silakan kirim email kepada kami ke [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Untuk tujuan Pasal 27 Regulasi Perlindungan Data Umum, perwakilan AppsFlyer di Uni Eropa adalah AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Jerman (hubungi [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 
+<div id="privacy-regulations" />
+
 ## Peraturan perlindungan privasi
 
 Dalam artikel ini, referensi peraturan privasi mencakup peraturan yang tercantum dalam tabel berikut.
@@ -39,6 +41,8 @@ Dalam artikel ini, referensi peraturan privasi mencakup peraturan yang tercantum
 
 Istilah peraturan privasi, GDPR, CCPA, LGPD, dan PDPA digunakan secara bergantian dalam artikel ini.
 
+<div id="the-opendsr-initiative" />
+
 ### Inisiatif OpenDSR
 
 Untuk menjawab dan mengelola permintaan oleh Subjek Data yang dikirimkan sesuai dengan peraturan privasi, AppsFlyer, bersama dengan mParticle, Amplitudo, dan Braze, memprakarsai protokol OpenDSR (sebelumnya dikenal sebagai OpenGDPR).
@@ -47,6 +51,8 @@ OpenDSR adalah kerangka kerja sumber terbuka, yang memfasilitasi kerja sama anta
 
 <Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">Pelajari lebih lanjut tentang inisiatif OpenDSR</Anchor>.
 
+<div id="definitions" />
+
 ### Definisi
 
 | Istilah DSR | Istilah AppsFlyer | Deskripsi |
@@ -54,6 +60,8 @@ OpenDSR adalah kerangka kerja sumber terbuka, yang memfasilitasi kerja sama anta
 | User | Pengguna Aplikasi atau Pengguna Akhir | Pengguna Aplikasi adalah orang yang datanya dikumpulkan |
 | Pengontrol Data | Pemilik Aplikasi atau Pengiklan | Pemilik Aplikasi menentukan tujuan dan sarana yang digunakan untuk memproses data pribadi. |
 | Pemroses Data | AppsFlyer dan mitra | AppsFlyer dan partnernya memproses data pribadi atas nama pengontrol data |
+
+<div id="dsr-requirements" />
 
 ### persyaratan DSR
 
@@ -65,6 +73,8 @@ DSR merinci hak wajib Subjek Data, yang harus dipatuhi oleh Pengontrol Data. Unt
 | **Portabilitas** | Pengguna Aplikasi harus menerima semua data pribadi mereka dalam format yang terstruktur, umum digunakan, dan dalam format yang dapat dibaca sistem, seperti file CSV. | Pemilik Aplikasi menerima salinan data pribadi Pengguna Aplikasi yang diproses. |
 | **Rektifikasi** | Mengizinkan Pengguna Aplikasi mengoreksi data mereka jika mereka melihatnya sebagai data tidak akurat atau tidak benar. Pemilik Aplikasi diwajibkan untuk menghapus atau mengoreksi data yang tidak benar atau tidak selesai. | <ul><li>AppsFlyer menghapus data Pengguna Aplikasi yang direkam sebelum tanggal permintaan *koreksi* .</li><li>Data yang diterima setelahnya direkam oleh AppsFlyer.</li></ul> |
 | **Penghapusan** | Hak penghapusan mengharuskan Pemilik Aplikasi untuk menghapus data pribadi dalam waktu 14 hari setelah menerima permintaan. | Data dihapus |
+
+<div id="appsflyer-gdpr-requests-api" />
 
 ## GDPR Requests API AppsFlyer
 
@@ -81,6 +91,8 @@ Pemilik Aplikasi harus menerapkan perubahan UI pada aplikasi mereka sehingga Pen
 
 <Accordion title="1. Permintaan GDPR">
 
+<div id="gdpr-request-flow" />
+
 ### Alur Permintaan GDPR
 
 Jenis-jenis permintaan GDPR, akses, portabilitas, penghapusan, dan koreksi, memiliki alur yang sama:
@@ -96,6 +108,8 @@ Jenis-jenis permintaan GDPR, akses, portabilitas, penghapusan, dan koreksi, memi
 
    **Catatan:** Periode 14 hari ini dimulai setelah periode ***tertunda*** 48 jam berakhir. Dengan demikian, total periode pemenuhan permintaan adalah 16 hari setelah Pemilik Aplikasi mengirimkan permintaan ke AppsFlyer.
 
+<div id="gdpr-request-format" />
+
 ### Format Permintaan GDPR
 
 GDPR Request API dapat dikirimkan via HTTP POST ke titik akhir berikut ini:
@@ -106,9 +120,13 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 
 Untuk otorisasi API, gunakan token V2 API yang sama seperti untuk Pull API. Pengguna admin dapat <Anchor target="_blank" href="/marketers/id/docs/managing-appsflyer-tokens#mengambil-token-api">mengambil token</Anchor> dari halaman token API di dashboard. Tambahkan token ke header permintaan sebagai berikut: `'Otorisasi': 'Pembawa %AuthTokenV2% '`
 
+<div id="parameters" />
+
 #### Parameter
 
 <table><thead><tr><th><strong>Nama Properti</strong></th><th><strong>Wajib</strong></th><th><strong>Deskripsi</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Ya</td><td>String UUID v4. Dihasilkan oleh pengontrol pada saat pengajuan permintaan ke Prosesor. String ini dapat digunakan untuk memeriksa status permintaan, memperbarui, atau membatalkannya.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Ya</td><td><p>Nilai string yang mewakili jenis Permintaan GDPR.  Nilai bantuan:</p><ul><li>erasure</li><li>portability</li><li>access</li><li>rectification</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Ya</td><td><ul><li>Serangkaian objek identitas yang mendefinisikan identitas pemohon (lihat di bawah).</li><li>Setiap permintaan hanya dapat berisi satu identitas subjek.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Ya</td><td><ul><li>String tanggal RFC 3339 yang mewakili waktu permintaan aktual dari subjek data</li><li>Stempel waktu dalam UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Ya</td><td><p>String yang mewakili aplikasi mobile yang mana�permintaan ini dicakup</p><p><strong>Contoh</strong>:</p><ul><li> iOS: id123456789 </li><li> <strong>Android</strong>: com.example, com.publishers.name </li><li> <strong>Android out-of-store</strong>: com.publisher.name-channel<br/> <strong>Catatan:</strong> Dalam beberapa kasus, pemilik aplikasi merekam atribusi out-of-store menggunakan nama Google Play Android. Dalam kasus ini, gunakan nama aplikasi reguler seperti yang ditampilkan di Dashboard.</li></ul></td></tr><tr><td><strong>api_version</strong></td><td>Tidak</td><td>Versi string  yang diinginkan dari API GDPR Requests</td></tr><tr><td><strong>status_callback_urls</strong> </td><td>Tidak, tapi direkomendasikan</td><td><ul><li>Larik sampai 3 titik akhir untuk status callback yang akan dikirim ke perubahan status permintaan berikut.</li><li>Hanya <span>titik akhir HTTPS yang didukung.</span> </li><li><span>URL yang tidak valid ditolak.</span></li></ul></td></tr><tr><td rowspan="2"> <strong>platform</strong><br/><br/> </td><td>Tidak</td><td><p>Nilai adalah salah satu platform DSR yang didukung: <br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code></p></td></tr><tr><td>Ya</td><td><p>Untuk permintaan platform CTV, PC, atau Konsol, sertakan salah satu platform berikut: </p><p><span> </span><code>nativepc</code><span>, </span><code>playstation</code><span>, </span><code>roku</code><span>, </span><code>steam</code><span>, </span><code>webos</code><span>, <br/></span><code>vidaa</code><span>,</span><code>tizen</code><span>, </span><code>smartcast</code><span>, </span><code>chatgpt</code><span>, </span><code>battlenet</code><span>, <br/></span><code>quest</code><span>, </span><code>switch</code><span>, </span><code>xbox</code><span>, </span><code>epic</code></p></td></tr></tbody></table>
+
+<div id="subject_identities-objects" />
 
 #### Objek Subject\_identities
 
@@ -117,6 +135,8 @@ Untuk otorisasi API, gunakan token V2 API yang sama seperti untuk Pull API. Peng
 | identity\_type | Ya | <ul><li>Jenis identitas dalam format string untuk platform `android`, `ios`, `web`, `windowsphone` adalah salah satu dari berikut ini:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li></ul></li></ul><ul><li>Jenis identitas dalam format string untuk platform `CTV`, `PC`, dan `Konsol`:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Contoh: `android_advertising_id`</li></ul> |
 | identity\_value | Ya | <ul><li>Format: String</li><li>Misalnya: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
 | identity\_format | Ya | <ul><li>Metode ini digunakan untuk menyandikan identity\_value: `raw` adalah satu-satunya yang didukung:</li><li>Contoh: "raw"</li></ul> |
+
+<div id="example-gdpr-erasure-request" />
 
 ### Contoh: permintaan penghapusan GDPR
 
@@ -174,6 +194,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
  ]
 }'
 ```
+
+<div id="zd-gdpr-erasure-request-code-example" />
 
 <div id="gdpr-erasure-request-code-example" />
 
@@ -351,6 +373,8 @@ Setiap permintaan GDPR yang diajukan nanti akan dapat dilihat statusnya dengan m
 3. ***completed*** - Permintaan telah diselesaikan
 4. ***canceled*** - Permintaan telah dibatalkan
 
+<div id="status-request-format" />
+
 ### Format Permintaan Status
 
 Permintaan dapat dikirimkan via HTTP GET ke *endpoint* berikut:
@@ -358,6 +382,8 @@ Permintaan dapat dikirimkan via HTTP GET ke *endpoint* berikut:
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
+
+<div id="status-response-example" />
 
 ### Contoh Respons Status
 
@@ -374,6 +400,8 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
  "request_status":"pending",
 }
 ```
+
+<div id="status-postbacks" />
 
 ### Postback Status
 
@@ -396,6 +424,8 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 "Request_status":"pending"
 }
 ```
+
+<div id="validate-postback" />
 
 ### Memvalidasi postback
 
@@ -440,6 +470,8 @@ Untuk mempelajari format yang didukung oleh AppsFlyer, permintaan keterangan dap
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
+<div id="discovery-response-example" />
+
 ### Contoh Respons Keterangan
 
 ```http
@@ -474,6 +506,8 @@ Untuk melakukan itu, kirimkan HTTP DELETE dengan `subject_request_id` ke:
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
+<div id="cancellation-response" />
+
 ### Respons Pembatalan
 
 Saat permintaan pembatalan GDPR diterima, AppsFlyer akan mengembalikan respons HTTP dengan kode status 202 dan beberapa parameter lainnya.
@@ -487,6 +521,8 @@ Setelah pembatalan permintaan diproses, AppsFlyer mengirimkan postback dengan st
 <Accordion title="6. Menguji API untuk Permintaan GDPR">
 
 API AppsFlyer ini adalah API pengujian untuk Permintaan GDPR API AppsFlyer.
+
+<div id="how-does-it-work" />
 
 ### Bagaimana Cara Kerja API ini?
 
@@ -562,6 +598,8 @@ Untuk mengakses Log Dashboard:
 
 Kode pengembalian HTTP API GDPR dan pesan kesalahan dirinci dalam sesi ini.
 
+<div id="gdpr-api-return-codes" />
+
 #### Kode pengembalian API GDPR
 
 | Kode pengembalian | Deskripsi |
@@ -570,11 +608,15 @@ Kode pengembalian HTTP API GDPR dan pesan kesalahan dirinci dalam sesi ini.
 | 202 | Permintaan pembatalan diterima |
 | 400 | Bad request (permintaan bermasalah). Bodi berisi kode dan pesan kesalahan seperti yang tercantum pada tabel berikut. |
 
+<div id="http-return-code-400---bad-request" />
+
 ### Kode pengembalian kode 400 - bad request
 
 Pesan yang memiliki kode 400 berisi JSON dengan kode dan pesan kesalahan.
 
 `{ "error":{ "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%"}}`
+
+<div id="return-code-400-bad-request-messages" />
 
 #### Pesan kode pengembalian 400 bad request
 
@@ -606,6 +648,8 @@ Pesan yang memiliki kode 400 berisi JSON dengan kode dan pesan kesalahan.
 | e511 | Masalah internal, tunggu 60 menit lalu coba lagi. Jika masalah berlanjut, hubungi tim dukungan AppsFlyer. support@AppsFlyer.com |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Karakteristik dan batasan
 

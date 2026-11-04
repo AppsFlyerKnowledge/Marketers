@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **Sekilas:** Kirim data ke Adobe Launch SDK dan AppsFlyer SDK dengan implementasi tunggal Ekstensi AppsFlyer Adobe Launch SDK.
 
+<div id="overview" />
+
 ## Ringkasan
 
 Adobe Launch SDK merupakan bagian integral dari Adobe Experience Platform. Adobe Experience Platform membantu bisnis mengumpulkan, mengonsolidasikan, dan menganalisis data dari berbagai aplikasi dan platform. Hal ini memungkinkan pemilik bisnis dan pengembang untuk lebih memahami perilaku pelanggan untuk mengoptimalkan pengalaman dan pengiriman konten. Jika aplikasi Anda mengimplementasikan Adobe Launch SDK dan AppsFlyer SDK, Anda dapat mengirim data ke keduanya dengan satu implementasi dari **Ekstensi AppsFlyer Adobe Launch SDK**. Hal ini mengurangi kompleksitas keseluruhan proses pengembangan Anda dan membuat basis kode lebih bersih dan mudah dipelihara.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Jika Anda menggunakan ekstensi Adobe Launch, Anda tidak memerlukan <Anchor target="_blank" href="/marketers/id/docs/adobe-analytics-integration-with-appsflyer">integrasi Adobe Analytics</Anchor> standar.
+
+<div id="prerequisites" />
 
 ## Prasyarat
 
@@ -58,6 +64,8 @@ Beberapa hal diperlukan sebelum mengintegrasikan Ekstensi AppsFlyer Adobe SDK.
 * Untuk iOS - ID aplikasi adalah ID iTunes aplikasi tanpa awalan *id*, misalnya 123456748.
 
 </Accordion>
+
+<div id="step-1-configuring-adobe-launch" />
 
 ## Langkah 1: Melakukan konfigurasi Adobe Launch
 
@@ -91,6 +99,8 @@ Instal ekstensi berikut di Adobe Launch:
 * Profil Adobe - memungkinkan SDK untuk menyimpan data ke dalam profil sisi klien.
 * Adobe Mobile Core - memungkinkan konfigurasi SDK seluler dan menyediakan akses ke event dan kondisi siklus hidup default.
 
+<div id="installing-adobe-analytics-extension" />
+
 #### Menginstal ekstensi Adobe Analytics
 
 1. Masuk ke Adobe Analytics.
@@ -102,6 +112,8 @@ Instal ekstensi berikut di Adobe Launch:
 7. Di bawah ***Rangkaian Laporan***, tentukan rangkaian laporan yang telah Anda buat di langkah 2.
 8. Klik ***Simpan (Save)***.
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### Menginstal Ekstensi AppsFlyer SDK
 
 1. Pilih ***Ekstensi*** lagi.
@@ -111,6 +123,8 @@ Instal ekstensi berikut di Adobe Launch:
 5. Aktifkan ***Mengirim data atribusi ke Adobe Analytics***. Perhatikan bahwa ada beberapa <Anchor target="_blank" href="/marketers/id/docs/user-level-data-retention">pembatasan dalam membagikan data tingkat pengguna dengan platform analitik pihak ketiga</Anchor>.
 6. Klik ***Simpan (Save)***.
 
+<div id="install-profile-and-mobile-core-extension" />
+
 #### Instal Profil dan ekstensi Mobile Core
 
 1. Pilih ***Ekstensi*** lagi.
@@ -119,6 +133,8 @@ Instal ekstensi berikut di Adobe Launch:
    * Saat menginstal Mobile Core, cukup simpan ekstensi apa adanya. Tidak perlu menentukan ***Experience Server Cloud***.
 
 </Accordion>
+
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
 
 ## Langkah 2: Menerapkan Ekstensi AppsFlyer Adobe SDK
 
@@ -161,6 +177,8 @@ Untuk menyelesaikan implementasi SDK, Anda perlu memublikasikan lingkungan pada 
 <Accordion title="2.3 Menambahkan pengarah instal (install referrer) Android ke aplikasi Anda">
 
 Pengarah Instal Android meningkatkan keakuratan atribusi, melindungi dari kecurangan penginstalan, dan banyak lagi. Ini didukung dari AppsFlyer Android SDK versi 4.8.6.
+
+<div id="note-1" />
 
 > 📘 **Catatan**
 >
@@ -213,6 +231,8 @@ Jika Anda menggunakan ProGuard dan ingin menggunakan pengarah API baru dari Goog
 
 Menambahkan hak akses membantu meningkatkan tingkat <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#probabilistic-modeling">Atribusi pemodelan probabilistik</Anchor>. Hal ini juga memungkinkan SDK untuk mengirimkan lebih banyak data seperti Wifi dan data jaringan operator. Anda dapat menemukan data ini di <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">laporan data lengkap</Anchor> dan menggunakannya untuk analisis dan pengoptimalan kampanye.
 
+<div id="add-required-permissions" />
+
 #### Tambahkan Hak Akses yang Diperlukan
 
 1. Tambahkan hak akses berikut ke AndroidManifest.xml:  
@@ -227,9 +247,13 @@ Menambahkan hak akses membantu meningkatkan tingkat <Anchor target="_blank" href
 
 </Accordion>
 
+<div id="using-the-adobe-sdk-extension" />
+
 ## Menggunakan ekstensi Adobe SDK
 
 Sekarang Anda dapat mulai menggunakan ekstensi Adobe SDK untuk mengirim data ke Adobe dan AppsFlyer.
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -353,6 +377,8 @@ Di AppDelegate.m, terapkan kode berikut:
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## Menghubungkan data konversi AppsFlyer
 
 Data konversi dikirim bersama event ke platform Adobe. Variabel-variabel ini memungkinkan Anda menerapkan logika dan aturan pada dimensi, metrik, atau filter laporan.
@@ -377,6 +403,8 @@ Lihat tabel berikut untuk memetakan variabel Konteks AppsFlyer:
 | Waktu Klik AppsFlyer | appsflyer.click\_time |
 | Biaya Asli AppsFlyer | appsflyer.orig\_cost |
 | Kampanye AppsFlyer | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### Menggunakan data konversi yang dipetakan AppsFlyer untuk Analitik dan Analisis
 

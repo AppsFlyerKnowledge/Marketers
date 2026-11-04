@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="activate-partner" />
+
 ## Aktifkan mitra
 
 **Prasyarat:** Sebelum menyiapkan integrasi, pastikan Anda <Anchor target="_blank" href="/marketers/id/docs/partner-integrations#contact-details">menghubungi mitra</Anchor> dan membuka akun dengan mereka.
@@ -38,9 +40,13 @@ Penyiapan dilakukan dari halaman **Integrasi Aktif** , tetapi untuk menemukan mi
    **Catatan:** Tombol harus tetap aktif <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">(diaktifkan)</Anchor> selama Anda bekerja dengan mitra.
 5. Selesaikan konfigurasi menggunakan tab yang relevan, seperti yang dijelaskan di bagian berikutnya.
 
+<div id="setting-up-amazon-ads" />
+
 ## Mengatur integrasi Amazon DSP
 
 Integrasi dengan Amazon DSP mendukung atribusi klik dan impresi. Jendela konfigurasi mencakup tab berikut: Integrasi, Tautan atribusi, Biaya, Pendapatan iklan, dan Izin. Tab yang tersedia untuk Amazon DSP adalah Integrasi dan Izin.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -52,6 +58,8 @@ Integrasi dengan Amazon DSP mendukung atribusi klik dan impresi. Jendela konfigu
 <Accordion title="Tab Integrasi">
 
 Tab **Integrasi** mencakup sejumlah bagian, seperti yang dijelaskan di bawah ini.
+
+<div id="activate-partner-1" />
 
 #### Aktifkan mitra
 
@@ -66,6 +74,8 @@ Hanya untuk aplikasi iOS: Kontrol Anda atas data yang dibagikan dengan mitra mel
 | Postback dikirim hanya untuk event yang diatribusikan ke mitra | Postback dikirim sesuai dengan konfigurasi Anda:<ul><li>**Semua sumber media, termasuk organik.**</li><li>**Mitra ini saja**</li></ul> |
 | Postback dikirim sesuai dengan <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks">templat Privasi Tingkat Lanjut</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">Data gabungan dan anonim</Anchor> dibagikan dengan mitra, artinya tidak ada data tingkat pengguna (ID perangkat) yang dibagikan. |  |
+
+<div id="general-settings" />
 
 #### Pengaturan umum
 
@@ -85,6 +95,8 @@ Konfigurasikan cara mengirim postback untuk penginstalan:  
 > * Hanya untuk aplikasi iOS: Kontrol Anda atas data yang dibagikan dengan mitra melalui postback dan <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions">laporan</Anchor> bergantung pada status sakelar **Privasi Lanjutan (untuk iOS 14.5+ dan yang lebih baru)** .
 > * Postback dibagikan melalui Data Locker dalam laporan per jam, bukan dalam waktu aktual.
 
+<div id="install-attribution" />
+
 #### Instal atribusi
 
 Atur jendela atribusi klik-tayang dan lihat-tayang untuk penginstalan (peluncuran pertama). Perhatikan bahwa hanya pemasangan dalam jendela lihat balik yang dapat diatribusikan ke Amazon DSP.
@@ -92,6 +104,8 @@ Atur jendela atribusi klik-tayang dan lihat-tayang untuk penginstalan (peluncura
 1. Atur **Jendela lookback klik-tayang penginstalan** ke 1-23 jam atau 1-30 hari.  
    **Catatan:** Amazon DSP merekomendasikan pengaturan jendela lookback klik-tayang ke 14 hari, agar selaras dengan jendela atribusinya.
 2. [Opsional] Aktifkan **Instal atribusi lihat-tayang** dan atur **Instal jendela atribusi lihat-tayang** ke 1-24 jam.
+
+<div id="in-app-event-postbacks" />
 
 #### Postback in-app event
 
@@ -156,12 +170,16 @@ Pendapatan iklan tidak tersedia untuk Amazon DSP.
 
 Pilih izin mana yang akan diberikan kepada Amazon DSP untuk mengakses data Anda dan melakukan berbagai tindakan.
 
+<div id="note-3" />
+
 > 📘 **Catatan**
 >
 > * Saat integrasi <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">dinonaktifkan</Anchor> saat sakelar Izin masih diaktifkan, izin tetap diberikan.
 > * Pelajari lebih banyak tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">pemberian izin</Anchor>.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

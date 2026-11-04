@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Memungkinkan Google untuk membagikan konten postback iOS aplikasi SKAdNewtork (SKAN) Anda dengan AppsFlyer.
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Dapatkan data postback SKAN dari Google Ads
 
 Jika Anda bekerja dengan beberapa mitra jaringan iklan, praktik terbaiknya adalah menyiapkannya di AppsFlyer. Dengan demikian, metrik kinerja SKAN untuk semua mitra jaringan iklan Anda, yang diperkaya dengan metrik lain seperti biaya, tersedia melalui platform AppsFlyer.
@@ -40,6 +42,8 @@ Karena metodologi pelaporan klik Google dan pembaruan data retroaktifnya setiap 
 
 * Laporan gabungan dan pembaruan dashboard secara retroaktif.
 * <Anchor target="_blank" href="/marketers/id/docs/skan-raw-data-reports">Laporan data lengkap</Anchor> tidak berubah secara retroaktif. Data (disediakan melalui Data Locker) disediakan dalam folder sesuai dengan tanggal Google memberikan data tersebut ke AppsFlyer (tanggal kedatangan data).
+
+<div id="set-up-interoperation" />
 
 ## Siapkan interoperasi
 
@@ -90,6 +94,8 @@ Untuk melihat penginstalan SKAN yang diatribusikan ke Google Ads di dashboard SK
 11. Baca tentang [perbedaan pengukuran](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi tambahan
 
@@ -145,6 +151,8 @@ Saat menonaktifkan integrasi Google Ads , menonaktifkan sakelar **Aktifkan mitr
 | <span id="agencies"></span>Agensi | Jika agensi memiliki peran pengguna Administrator di akun Google Ads pemasang iklan, maka mereka dapat melakukan prosedur dalam artikel ini dan mengaktifkan interoperasi SKAN Google atas nama pemasang iklan. Pemasang iklan juga tidak perlu masuk ke Google Ads mereka juga. Login agensi ditunjukkan di akun pemasang iklan. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

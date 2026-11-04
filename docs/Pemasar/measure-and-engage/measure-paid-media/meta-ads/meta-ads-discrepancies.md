@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang perbedaan model atribusi antara Iklan Meta ads dan AppsFlyer.
 
+<div id="meta-ads-discrepancies-with-appsflyer" />
+
 ## Perbedaan Meta ads dengan AppsFlyer
 
 Sebagai dua pemain utama dalam ekosistem akuisisi user seluler, AppsFlyer dan Meta ads memiliki model atribusi yang berbeda. Hal ini dapat menyebabkan perbedaan antara dasbor Meta ads dan AppsFlyer.
 
 Sementara kami bekerja sama dengan Meta ads untuk meminimalkan perbedaan ini, pemasang iklan harus mengetahui penyebab-penyebab berikut.
 
+<div id="detect-a-discrepancy-between-appsflyer-and-meta-ads" />
+
 ### Mendeteksi perbedaan antara AppsFlyer dan Meta ads
 
 Bandingkan event yang tercantum di **Event Manager** Meta ads dengan yang ada di laporan AppsFlyer. Jika jumlah event sangat bervariasi, mungkin ada perbedaan.
 
+<div id="differences-in-attribution-models" />
+
 ## Perbedaan Model Attribution
 
 <table><thead><tr><th>Penyebab</th><th>Iklan Meta</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><p><strong>Lookback Window Atribusi Klik</strong></p></td><td><p>7 hari (Perhatikan <a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">bahwa ada beberapa kasus tertentu di mana default-nya berbeda</a> ).</p></td><td><p>1-30 hari. Pastikan untuk mengatur ke 7 hari dengan Meta ads.</p></td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><p><strong>Lookback Window Atribusi View-Through</strong></p></td><td><p>1 hari (Perhatikan bahwa <a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">ada beberapa kasus tertentu di mana default-nya berbeda</a>).</p></td><td><p>1 hari secara default, tetapi dapat dikonfigurasi hingga 1-48 jam (biarkan nilai default ini)</p></td></tr><tr><td><span id="multichannel-sourceattribution"></span><p><strong>Atribusi<br/>Sumber Multi Channel</strong></p></td><td><p>Pemasangan atribut mandiri Meta ads terlepas dari sumber media lainnya.</p></td><td><p>AppsFlyer menggunakan atribusi klik terakhir (informasi lebih lanjut tentang atribusi AppsFlyer dapat dilihat <a href="./appsflyer-attribution-model" title="Model Atribusi AppsFlyer" target="_blank">di sini</a>).</p></td></tr><tr><td><span id="crossdevice-attribution"></span><p><strong>Atribusi Cross-device</strong></p></td><td><p>Meta ads mengatribusi penggunanya yang mengeklik dan menginstal di perangkat berbeda, misalnya, iOS/Android/desktop.</p></td><td><p>AppsFlyer mengatribusi device tunggal yang melakukan interaksi dan install</p></td></tr><tr><td><span id="different-time-zones"></span><p><strong>Zona Waktu yang Berbeda</strong></p></td><td><p>Zona waktu pelaporan default Meta ads adalah PST. Pastikan untuk <a href="https://www.facebook.com/business/help/754049591334898" target="_blank">mengubahnya di Meta Ads Manager</a> agar sesuai dengan zona waktu aplikasi yang ditentukan dalam pengaturan aplikasi di AppsFlyer.</p></td><td><p>Zona waktu aplikasi default AppsFlyer adalah UTC+0. Anda dapat mengubah zona waktu yang ditetapkan untuk aplikasi di <a href="./app-settings#localization-time-zone" target="_blank">halaman pengaturan aplikasi</a> agar cocok dengan zona waktu yang ditentukan dalam Meta ads Manager.</p></td></tr><tr><td><span id="google-install-referrer"></span><p><strong>Perujuk penginstalan Google</strong></p></td><td colspan="2"><p>Saat penginstalan tanpa ID pemasang iklan diatribusikan ke Meta ads menggunakan perujuk penginstalan Google Play, AppsFlyer tidak melaporkannya kembali ke Meta ads. Ini akan menyebabkan perbedaan karena akan ditampilkan di AppsFlyer dan bukan di Meta ads.  </p></td></tr><tr><td><span id="AEM-for-data-sharing"></span><p><strong>AEM untuk berbagi data</strong></p></td><td colspan="2"><p><span>Untuk <a href="./meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing" target="_blank">berbagi data AEM</a>, Meta ads menerima semua event konversi. Atribusi tambahan ini tidak ditampilkan di AppsFlyer. Oleh karena itu, terdapat peningkatan perbedaan data antara platform untuk penginstalan (dalam banyak kasus) dan peristiwa dalam aplikasi, termasuk sesi</span>.</p></td></tr></tbody></table>
+
+<div id="click-through-and-view-through-attribution" />
 
 ## Atribusi Click-Through dan View-Through
 
@@ -48,6 +56,8 @@ Jendela lookback klik-tayang default dari Meta ads ditentukan hingga 7 hari. Mes
 Untuk membandingkan jendela atribusi klik-tayang dan lihat-tayang pada Meta ads dengan yang ada di AppsFlyer, kunjungi Meta ads. Kami menyarankan untuk mengonfigurasi jendela atribusi di AppsFlyer sesuai nilai Meta ads seperti yang ditunjukkan pada tangkapan layar berikut:
 
 ![Facebook_Discrepancies.png](https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png)
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -68,6 +78,8 @@ Karena Meta ads tidak mengirimkan data tingkat pengguna, AppsFlyer mungkin tidak
 
 Namun, untuk atribusi klik-tayang, jika iklan mengarahkan pengguna ke Google Play Store, bidang atribusi tersedia untuk pengiklan di Google Install Referrer. Bidang ini tersedia melalui referrer yang mengisi laporan data lengkap AppsFlyer yang tersedia untuk Anda dan mengaktifkan AppsFlyer untuk mengatribusikan pengguna yang tidak memiliki ID iklan (LAT diaktifkan).
 
+<div id="in-app-events-differences" />
+
 ## Perbedaan In-App Event
 
 Perbedaan antar platform dapat juga ditampilkan sebagai event setelah penginstalan (misalnya, pembelian in-app), yang ditampilkan di Meta ads dan di AppsFlyer. Tabel berikut menjelaskan alasan paling umum atas perbedaan ini serta saran untuk meminimalkannya:
@@ -80,6 +92,8 @@ Perbedaan antar platform dapat juga ditampilkan sebagai event setelah penginstal
 | <span id="unsent-revenue"></span>**Pendapatan Tidak Terkirim** | AppsFlyer mendapatkan pendapatan dari event yang berasal dari SDK, tetapi tidak dikirimkan ke Meta ads. | Pastikan kotak **Send Revenue (Kirim Pendapatan)** in-app event selalu dicentang, misalnya event pembelian pada gambar screenshot di bawah ini. |
 | <span id="missing-event-values-on-facebook"></span>**Nilai peristiwa tidak ada di Meta ads** | AppsFlyer mengirimkan parameter dan nilai ke Meta ads sebagai bagian pemetaan event jika keduanya memiliki struktur yang tepat. | Buat in-app event SDK sesuai dengan <Anchor target="_blank" href="/marketers/id/docs/in-app-events-event-structure">struktur rekomendasi AppsFlyer</Anchor> untuk sepenuhnya memetakan nilai event dengan Meta ads. |
 
+<div id="installs-from-re-engagement-campaigns-in-my-ua-dashboard" />
+
 ## Install dari Kampanye Re-Engagement di Dashboard My UA?
 
 Kampanye re-engagement dapat menyebabkan user membuka app yang sudah diinstall(**re-engagement**). Sebagai alternatif, saat AppsFlyer mengenali install app yang sebelumnya sudah ada pada perangkat yang sama, AppsFlyer dapat mengartikan konversi tersebut sebagai **re-attribution**.
@@ -88,17 +102,25 @@ Jika pada kampanye keterlibatan ulang, Meta ads menargetkan **pengguna baru** at
 
 Di sisi lain, penginstalan yang terjadi **dalam jendela atribusi ulang yang telah ditentukan** dan mengikuti penginstalan aslinya, dianggap sebagai atribusi ulang dan muncul pada halaman penargetan ulang AppsFlyer, sementara penginstalan tersebut mungkin muncul sebagai penginstalan baru oleh Meta ads.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Jika Meta ads menampilkan semua penginstalan dari kampanye penargetan ulang di tempat yang sama, penginstalan pada dasbor AppsFlyer dibagi menjadi halaman Ikhtisar dan halaman Penargetan Ulang (atribusi ulang dan interaksi ulang).
+
+<div id="cross-device-attribution" />
 
 ## Atribusi Cross-device
 
 Meta ads melaporkan atribusi lintas perangkat. Hal ini kadang dapat menyebabkan masalah di mana kampanye untuk satu platform (iOS/Android) menampilkan instalasi di platform lain.
 
+<div id="example-1" />
+
 > 📄 **Contoh**
 >
 > Linda mengeklik iklan seluler GreatApp pada Facebook menggunakan ponsel Android-nya. Meta ads mencatat klik yang dilakukan Linda di bawah kampanye bertarget Android "Android Female". Linda memutuskan untuk menginstal GreatApp di iPad di rumahnya. Saat peluncuran pertama, AppsFlyer menanyakan Meta ads untuk asal penginstalan iOS ini, dan Meta ads menjawab dengan kampanye "Android Female".
+
+<div id="validation-rules-and-protect360" />
 
 ## Validation Rules dan Protect360
 
@@ -106,10 +128,14 @@ Jika Anda menggunakan <Anchor target="_blank" href="/marketers/id/docs/implement
 
 Demikian pula, jika Anda menggunakan solusi anti-penipuan AppsFlyer, Protect360, mungkin ada penginstalan karena Meta ads melaporkan sendiri, sedangkan AppsFlyer menolak.
 
+<div id="example-2" />
+
 > 📄 **Contoh**
 >
 > Jeff, manajer UA GreatApp, membuat kampanye yang disebut SPNA, yang hanya menargetkan penutur bahasa Spanyol di Amerika Utara. Untuk melakukan verifikasi hal ini, Jeff menetapkan aturan validasi, yang hanya menerima pengguna dari Kanada dan AS.
 > Saat pengguna iklan Meta dari Spanyol mengeklik dan menginstal aplikasi, Meta ads melaporkan sendiri penginstalan tersebut, sementara AppsFlyer menolak penginstalan yang tidak lulus aturan validasi.
+
+<div id="sdk-related-discrepancies" />
 
 ## Perbedaan terkait SDK
 

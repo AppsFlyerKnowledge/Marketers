@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **Sekilas**: Perbedaan antara Atribusi Berbasis Orang (PBA) dan Google Analytics
 
+<div id="pba-compared-to-google-analytics" />
+
 ## PBA dibandingkan dengan Google Analytics
 
 PBA dan Google Analytics adalah analitik web dan solusi pengukuran konversi. Masing-masing berfokus pada aspek pengukuran yang berbeda. PBA juga menawarkan manfaat tambahan.
 
 * PBA adalah otoritas atribusi independen yang tidak memihak yang berfokus pada pengukuran atribusi. PBA mengaitkan konversi dan pendapatan dengan sumber media dan kampanye yang membawa pengguna ke situs web Anda.
 * Google Analytics lebih berfokus pada analisis web. Google Analytics mengumpulkan, menganalisis dan mengumpulkan data yang terkait dengan perilaku pengguna. Dengan Google Analytics Anda dapat menganalisis, misalnya, perilaku pengguna, perjalanan, event web.
+
+<div id="benefits-of-pba-over-google-analytics" />
 
 ### Manfaat PBA dibandingkan Google Analytics
 
@@ -41,9 +45,13 @@ Berikut ini adalah manfaat PBA dibandingkan Google Analytics:
   * Pengukuran web-ke-aplikasi. Metrik ini memberi tahu Anda berapa banyak pengguna yang pindah dari situs web Anda ke aplikasi Anda. Metrik ini juga memberi tahu Anda sumber media dan kampanye mana yang membawa pengguna ke situs web Anda yang kemudian menginstal aplikasi Anda.
   * <Anchor target="_blank" href="/marketers/id/docs/pba-raw-data-reports">Data lengkap untuk konversi dan event</Anchor> yang dapat Anda tarik ke sistem BI Anda sendiri. Data ini memberi Anda kemampuan dan dukungan untuk menjalankan analisis Anda.
 
+<div id="reasons-for-differences" />
+
 ### Alasan perbedaan
 
 Jika Anda membandingkan data dari PBA dan Google Analytics, lihat alasan perbedaan data berikut.
+
+<div id="sdk-implementation" />
 
 #### Implementasi SDK
 
@@ -53,9 +61,13 @@ Cara Anda menerapkan PBA dan Google Analytics dapat memengaruhi pengumpulan data
 
 <Accordion title="Google Analytics menunjukkan lebih banyak sesi dan pengunjung">
 
+<div id="cause" />
+
 #### Penyebab
 
 Jika Google Analytics dimuat sebelum pengguna SDK Web yang pindah ke situs web lain atau pengguna yang menghabiskan waktu singkat di situs web Anda tidak dihitung dalam PBA. Hal tersebut menyebabkan perbedaan data untuk sesi dan pengunjung.
+
+<div id="solution" />
 
 #### Solusi
 
@@ -69,15 +81,21 @@ Apakah Anda <Anchor target="_blank" href="/marketers/id/docs/pba-web-sdk-integra
 
 <Accordion title="Google Analytics menunjukkan lebih banyak data untuk sesi, kampanye, dan konversi">
 
+<div id="cause-1" />
+
 #### Penyebab
 
 SDK Web hanya ada pada halaman tertentu. Google Analytics muncul di semua halaman. Akibatnya, Google Analytics mengumpulkan data dari seluruh situs web Anda sedangkan SDK Web mengumpulkan data hanya dari halaman tertentu. Hal ini menyebabkan perbedaan data untuk sesi, pengunjung, kampanye, dan konversi.
+
+<div id="solution-1" />
 
 #### Solusi
 
 Terapkan SDK Web di semua halaman situs web Anda.
 
 </Accordion>
+
+<div id="dashboard-settings" />
 
 ### Pengaturan dasbor
 
@@ -87,15 +105,21 @@ Pengaturan dasbor seperti zona waktu dan filter data dapat memengaruhi cara data
 
 <Accordion title="Pengaturan zona waktu - perbedaan data">
 
+<div id="cause-2" />
+
 #### Penyebab
 
 Jika pengaturan zona waktu di Google Analytics Anda berbeda dari yang ada di dasbor PBA Anda, Anda mungkin menemukan perbedaan.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
 > Dasbor AppsFlyer Anda dikonfigurasikan ke UTC dan dasbor GA Anda dikonfigurasikan ke UTC +13. Ini berarti bahwa dasbor GA Anda lebih cepat satu hari dari dasbor AppsFlyer Anda.
 >
 > Karena itu, data yang muncul di dasbor AppsFlyer untuk 2 Maret hanya muncul di dashboard GA Anda jika Anda memilih 3 Maret di filter rentang tanggal.
+
+<div id="solution-2" />
 
 #### Solusi
 
@@ -107,15 +131,21 @@ Pastikan pengaturan zona waktu sama di AppsFlyer dan Google Analytics.
 
 <Accordion title="Filter data - perbedaan dalam data">
 
+<div id="issue" />
+
 #### Berita
 
 AppsFlyer dan Google Analytics memungkinkan Anda memfilter data berdasarkan tanggal, sumber media, kampanye, dan event yang dikaitkan. Filter berbeda di AppsFlyer dan Google Analytics dapat menghasilkan tampilan berbeda untuk data yang sama.
+
+<div id="solution-3" />
 
 #### Solusi
 
 Saat Anda membandingkan data dari dua dasbor, pastikan tidak ada filter yang diterapkan ke kumpulan data.
 
 </Accordion>
+
+<div id="conversions-and-events" />
 
 ### Konversi dan event
 
@@ -125,9 +155,13 @@ Berbagai model atribusi, jendela lookback, cara Anda mengirim event, dan pengatu
 
 <Accordion title="Jendela Lookback - perbedaan dalam pengukuran konversi">
 
+<div id="cause-3" />
+
 #### Penyebab
 
 Jika Anda memiliki jendela lookback berbeda di Google Analytics dan PBA, perbedaan mungkin terjadi pada data atribusi.
+
+<div id="solution-4" />
 
 #### Solusi
 
@@ -139,9 +173,13 @@ Jendela lookback PBA selalu 30 hari. Pastikan untuk menetapkan jendela lookback 
 
 <Accordion title="Model atribusi -perbedaan dalam pengukuran konversi">
 
+<div id="cause-4" />
+
 #### Penyebab
 
 Berbagai model atribusi dalam PBA dan Google Analytics dapat menyebabkan perbedaan dalam data atribusi.
+
+<div id="solution-5" />
 
 #### Solusi
 
@@ -153,9 +191,13 @@ Google Analytics menawarkan <Anchor target="_blank" href="https://support.google
 
 <Accordion title="Mengirim event">
 
+<div id="issue-1" />
+
 #### Berita
 
 Kedua SDK Google Analytics dan SDK Web memungkinkan Anda mengirim event. Jika Anda menerapkan satu logika untuk mengirim event ke Google Analytics dan yang lain untuk mengirim event ke PBA, perbedaan mungkin timbul.
+
+<div id="solution-6" />
 
 #### Solusi
 
@@ -174,13 +216,19 @@ Klik <Anchor target="_blank" href="/marketers/id/docs/pba-web-sdk-integration-gu
 
 Kedua PBA dan Google Analytics menggunakan kuki untuk mengenali pengguna.
 
+<div id="cookie-settings-in-google-analytics" />
+
 #### Pengaturan kuki di Google Analytics
 
 Meskipun disarankan untuk mengizinkan Google Analytics SDK secara otomatis menangani pengaturan cookie, Anda masih dapat  <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">mengonfigurasi dan mengubah pengaturan kuki</Anchor> . Setiap perubahan dalam pengaturan kuki dapat menyebabkan perbedaan.
 
+<div id="setting-cookie-expiration" />
+
 #### Mengatur Kedaluwarsa Kuki
 
 Google Analytics memungkinkan Anda untuk mengatur kedaluwarsa kuki. Jika Anda mengatur kuki Google Analytics untuk kedaluwarsa sebelum kuki SDK Web tersebut kedaluwarsa, ini dapat menyebabkan perbedaan.
+
+<div id="example-1" />
 
 > 📄 **Contoh**
 >
@@ -194,9 +242,13 @@ Google Analytics memungkinkan Anda untuk mengatur kedaluwarsa kuki. Jika Anda me
 >
 > Hal tersebut berarti bahwa tingkat konversi Anda di Google Analytics lebih rendah daripada di PBA.
 
+<div id="setting-cookie-subdomain" />
+
 #### Pengaturan Subdomain Kuki
 
 Google Analytics memungkinkan Anda untuk mengatur kuki untuk subdomain sedangkan PBA hanya menetapkan kuki pada domain tingkat atas.
+
+<div id="example-2" />
 
 > 📄 **Contoh**
 >

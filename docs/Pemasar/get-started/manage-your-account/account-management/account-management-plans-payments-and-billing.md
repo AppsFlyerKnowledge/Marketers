@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang paket AppsFlyer dan fitur add-on premium. Lihat bagaimana penggunaan paket dan faktur dihitung. Kelola akun Anda.
 
+<div id="appsflyer-plans-and-usage" />
+
 ## Paket dan penggunaan AppsFlyer
 
 <div id="appsflyer-plans" />
@@ -57,15 +59,19 @@ Pelajari lebih lanjut tentang semua fitur yang disertakan dan <Anchor target="_b
 
 Pembayaran untuk paket Anda dihitung berdasarkan **penggunaan paket** dan **fitur premium**Anda.
 
+<div id="plan-usage" />
+
 #### Penggunaan paket
 
 Setiap paket didasarkan pada pengukuran [unittertentu](/docs/account-management-plans-payments-and-billing#unit-paket). Penggunaan unit dihitung bulanan atau tahunan. Jumlah unit yang digunakan selama siklus paket (bulan atau tahun) dikurangkan dari total unit paket.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
 > Anda dapat [mengunduh laporan penggunaan](/docs/account-management-plans-payments-and-billing#mengunduh-laporan-penggunaan) untuk mendapatkan informasi terperinci tentang penggunaan unit Anda.
 
-<span id="premium-features"></span>**Melebihi penggunaan paket**
+<span id="zd-premium-features"></span><span id="premium-features"></span>**Melebihi penggunaan paket**
 
 Ketika melebihi jumlah unit dalam siklus paket Anda, biaya tambahan akan diterapkan. Anda dapat melihat semua biaya di bagian [**detail Paket**](/docs/account-management-plans-payments-and-billing#details) . Untuk membantu mencegah penggunaan paket yang melebihi atau mengurangi biaya tambahan, peringatan dikirim melalui pusat notifikasi dalam kasus berikut:
 
@@ -87,6 +93,8 @@ Anda dapat memeriksa dengan CSM Anda atau menghubungi [hello@appsflyer.com](mail
 
 Untuk mempelajari lebih lanjut tentang add-on ini dan potensi manfaatnya bagi bisnis Anda, hubungi CSM Anda atau kontak [halo@appsflyer.com](mailto:hello@appsflyer.com).
 
+<div id="plan-units" />
+
 #### Unit paket
 
 Unit-unit berbeda yang menjadi dasar paket:
@@ -100,6 +108,8 @@ Unit-unit berbeda yang menjadi dasar paket:
 | In-App Event | Tindakan apa pun yang dilakukan oleh pengguna di aplikasi Anda setelah penginstalan. Misalnya, login, menyelesaikan tutorial, membeli, dan mencapai level game. | <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview">Panduan rich in-app event</Anchor> |
 | Konversi web tidak langsung  <br />(untuk paket PBA) | Setiap tindakan pengguna di situs web Anda yang:<ul><li>Anda telah mendefinisikannya sebagai konversi</li><li>Itu diatribusikan sebagai kunjungan rujukan (berasal dari kampanye web)</li></ul> | <Anchor target="_blank" href="/marketers/id/docs/people-based-attribution-pba-overview">Atribusi berbasis orang (PBA)</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### Unit add-on premium
 
 Unit-unit yang menjadi dasar add-on terukur tambahan:
@@ -107,6 +117,8 @@ Unit-unit yang menjadi dasar add-on terukur tambahan:
 | Unit | Deskripsi | Pelajari lebih lanjut |
 | --- | --- | --- |
 | unit dolar ROI360 | Unit dolar yang tercatat dari biaya iklan, pendapatan iklan dalam aplikasi, dan pendapatan pembelian dalam aplikasi Anda (termasuk langganan), diukur dengan add-on ROI360. Setiap unit mewakili $1 dari pengukuran ROI360 yang tercatat. | <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-cost-and-revenue-data">ROI360—data biaya dan pendapatan</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### unit dolar ROI360
 
@@ -124,6 +136,8 @@ Add-on ROI360 mengukur laba atas investasi pemasaran iklan Anda. Paket add-on me
 
 </Accordion>
 
+<div id="account-page" />
+
 ## Halaman manajemen akun
 
 Halaman ini mencakup 3 tab: **Paket saya**, **Pembayaran dan faktur**, dan **Detail penagihan**. Dari sini Anda dapat:
@@ -132,6 +146,8 @@ Halaman ini mencakup 3 tab: **Paket saya**, **Pembayaran dan faktur**, dan **Det
 * Meng-upgrade paket Anda
 * Melihat dan mengunduh faktur dan laporan
 * Memperbarui informasi kontak dan penagihan Anda
+
+<div id="note-1" />
 
 > 📘 **Catatan**
 >
@@ -156,6 +172,8 @@ Dari tab **Paket saya**, Anda dapat melihat detail paket Anda saat ini, meninjau
 | <span id="usage"></span>**Penggunaan paket** | Menampilkan penggunaan [unit](/docs/account-management-plans-payments-and-billing#unit-paket) di paket Anda, sejak pembaruan terakhir (UTC). Anda dapat melihat dan [mengunduh laporan penggunaan](/docs/account-management-plans-payments-and-billing#mengunduh-laporan-penggunaan) untuk mendapatkan data gabungan tentang penggunaan unit.  <br />**Catatan:** [Pembayaran faktur](/docs/account-management-plans-payments-and-billing#payments-and-invoices) Anda bergantung pada jumlah unit yang digunakan dan add-on yang disertakan sesuai dengan [paket Anda](/docs/account-management-plans-payments-and-billing#appsflyer-plans). |
 | <span id="addons"></span>**Add-on** | Add-on yang disertakan dalam paket Anda dan tanggal mulai/akhirnya. Ini adalah fitur premium, misalnya:<ul><li><Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Perlindungan penipuan seluler</li><li><Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Data biaya</li><li><Anchor target="_blank" href="/marketers/id/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/id/docs/pivot-table-user-metrics">Tabel Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/id/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>Untuk mempelajari lebih lanjut tentang fitur ini dan potensi manfaatnya bagi bisnis Anda, hubungi CSM Anda atau hubungi [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Paket mendatang** | Bagian ini hanya muncul bila paket mendatang telah dibeli. Jika demikian, Anda akan melihat detail tentang paket Anda berikutnya di sini. |
+
+<div id="usage-report" />
 
 ### Laporan penggunaan
 
@@ -185,6 +203,8 @@ Laporan penggunaan menampilkan konversi gabungan yang dikelompokkan menurut tang
 | <span id="conversion-type"></span>**Tipe konversi** | Jenis konversi yang diatribusikan. Nilai [unit](/docs/account-management-plans-payments-and-billing#unit-paket) yang mungkin meliputi:<ul><li>Penginstalan non-organik/Non-organic installs (NOI)</li><li>Interaksi ulang</li><li>Re-attribution (Atribusi ulang)</li><li>Pengguna aktif bulanan (PAB)</li><li>In-App Event</li><li>Konversi web tidak langsung</li></ul>Bidang **Conversion Type (Jenis Konversi)** tidak diisi untuk konversi **pasca-atribusi Protect360**. |
 | <span id="total-conversions"></span>**Total Konversi** | Jumlah total unit yang dibebankan.<ul><li>**Konversi setelah atribusi Protect360** selalu **negatif** karena mereka mengembalikan konversi yang ditagih, yang diidentifikasi sebagai penipuan.</li><li>Untuk informasi selengkapnya tentang cara penghitungan konversi aplikasi iOS, lihat [Penagihan untuk aplikasi iOS](/docs/account-management-plans-payments-and-billing#opsi-pengukuran-konversi-untuk-penagihan-aplikasi-ios) (di bawah).</li></ul> |
 
+<div id="download-a-usage-report" />
+
 #### Mengunduh laporan penggunaan
 
 Hanya admin akun dan pengguna akun dengan izin berikut yang dapat mengunduh laporan penggunaan:
@@ -207,11 +227,15 @@ Hanya admin akun dan pengguna akun dengan izin berikut yang dapat mengunduh lapo
 > * Setelah laporan tersedia untuk diunduh, laporan tetap tersedia selama 24 bulan setelah bulan laporan. Anda tidak perlu meminta laporan lagi.
 > * Jika status laporan yang ingin Anda unduh muncul selain dari **Minta laporan,** berarti seseorang di organisasi Anda telah meminta laporan tersebut.
 
+<div id="account-status" />
+
 ### Status akun
 
 Status akun Anda ditampilkan di kiri atas halaman Manajemen akun. Status yang mungkin adalah:
 
 <table><thead><tr><th>Status akun</th><th>Deskripsi</th><th>Komentar</th></tr></thead><tbody><tr><td rowspan="2">Akun aktif</td><td>Semua paket <strong>Selamat Datang</strong> dan <strong>Nol</strong> </td><td>Tidak memerlukan metode pembayaran</td></tr><tr><td> Paket<strong>Growth</strong> dan <strong>Perusahaan</strong> dengan metode pembayaran yang valid dan tidak ada faktur jatuh tempo</td><td> </td></tr><tr><td>Penangguhan sementara</td><td><p>Akun dengan satu atau lebih faktur jatuh tempo. Setelah 30 hari faktur belum dibayar, akun akan ditangguhkan.</p></td><td><p>Anda dapat memperoleh kembali status Aktif dengan melakukan <a href="./account-management-plans-payments-and-billing#membayar-tagihan-yang-jatuh-tempo">pembayaran tagihan</a></p></td></tr><tr><td>Ditangguhkan</td><td>Akun dengan faktur jatuh tempo lebih dari 30 hari.</td><td>Anda tidak memiliki akses ke akun Anda kecuali untuk bagian pembayaran.<br/>Anda dapat memperoleh kembali akses dan mendapatkan kembali status Aktif dengan melakukan pembayaran faktur </td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### Upgrade, downgrade, atau hapus akun
 
@@ -231,9 +255,13 @@ Untuk menghapus atau menurunkan versi akun, hubungi CSM Anda atau kirim email ke
 * Unduh faktur (PDF)
 * Perbarui metode pembayaran untuk paket **Perusahaan** Khusus dan **Growth** : Transfer bank atau kartu kredit
 
+<div id="note-5" />
+
 > 📘 **Catatan**
 >
 > Tab **Pembayaran dan faktur** hanya tersedia untuk paket yang memerlukan pembayaran (paket selain [Selamat Datang atau Nol](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
+
+<div id="payment-methods-easy--secure-invoicing" />
 
 ### Metode pembayaran
 
@@ -256,6 +284,8 @@ Di bagian ini, Anda dapat melihat metode pembayaran yang dipilih. Anda juga akan
    * **Untuk pembayaran dengan kartu kredit:** Masukkan detail yang diperlukan, dan klik **Daftarkan Kartu Kredit**.
    * **Untuk pembayaran melalui transfer bank:** Masukkan rincian tagihan, dan klik **Simpan.**
 
+<div id="invoices" />
+
 ### Faktur
 
 Di bagian ini, Anda dapat melihat faktur yang telah dibayar dan yang belum dibayar, mengunduhnya, dan [membayar faktur yang jatuh tempo](/docs/account-management-plans-payments-and-billing#membayar-tagihan-yang-jatuh-tempo). Faktur bulanan diterbitkan setelah minggu pertama setiap bulan.
@@ -269,6 +299,8 @@ Di bagian ini, Anda dapat melihat faktur yang telah dibayar dan yang belum dibay
 | **Status** | **Dibayar**, **Jatuh Tempo**, atau **Terlambat** |
 | **PDF** | Klik **Lihat** untuk membuka faktur dalam format PDF |
 
+<div id="pay-overdue-invoices" />
+
 #### Membayar tagihan yang jatuh tempo
 
 Terlepas dari metode pembayaran reguler Anda, Anda dapat membayar faktur yang jatuh tempo dengan kartu kredit **tanpa** menyimpan rincian kartu kredit. Membayar untuk akun dengan [status](/docs/account-management-plans-payments-and-billing#status-akun) **Penangguhan sementara** dan **Ditangguhkan** akan mendapatkan kembali status **Aktif** .
@@ -281,11 +313,15 @@ Terlepas dari metode pembayaran reguler Anda, Anda dapat membayar faktur yang ja
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <div id="billing-details" />
 
 <Accordion title="Rincian tagihan">
 
 Dari tab ini Anda dapat melihat dan memperbarui detail perusahaan dan narahubung yang dapat dihubungi untuk penagihan. [![billing_details_tab2.png](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
+
+<div id="company-billing-details" />
 
 ### Rincian tagihan perusahaan
 
@@ -297,12 +333,16 @@ Saat memilih paket **Growth** atau **Perusahaan** kustom, Anda harus memberikan 
 2. Baca ketentuan hukum dan setujui dengan menandai kotak centang.
 3. Klik **Kirim**. Pesan popup menunjukkan jika perubahan berhasil disimpan.
 
+<div id="note-7" />
+
 > 📘 **Catatan**
 >
 > * Jika Anda mengubah nama atau alamat perusahaan, maka persyaratan hukum AppsFlyer muncul dan harus diterima. Jika ada masalah, hubungi accounting@appsflyer.com.
 > * Jika ada informasi yang hilang atau tidak valid, detail tagihan tidak akan disimpan. Contoh:
 >   * Jika [nomor pajak perusahaan](/docs/account-management-plans-payments-and-billing#nomor-pajak-perusahaan) diminta oleh negara Anda, nomor harus dimasukkan dalam format yang benar.
 >   * Kode pos (ZIP code) harus sesuai dengan lokasi yang dipilih.
+
+<div id="billing-contacts" />
 
 ### Kontak tagihan
 
@@ -313,6 +353,8 @@ Bertindak sebagai titik fokus untuk menerima faktur dan untuk komunikasi terkait
 1. Klik **Tambahkan kontak** dan masukkan [detail yang diperlukan](/docs/account-management-plans-payments-and-billing#billing-details) atau buat perubahan pada kontak saat ini.
 2. Klik **Simpan detail penagihan**. Pastikan untuk memiliki setidaknya satu kontak penagihan.
 3. Pesan popup menunjukkan jika perubahan berhasil disimpan.
+
+<div id="note-8" />
 
 > 📘 **Catatan**
 >
@@ -325,9 +367,13 @@ Bertindak sebagai titik fokus untuk menerima faktur dan untuk komunikasi terkait
 | Rincian tagihan perusahaan | <ul><li>**Nama tagihan perusahaan** Diisi otomatis sesuai formulir pendaftaran</li><li>**Nomor pajak perusahaan:** Lihat [tab berikut](/docs/account-management-plans-payments-and-billing#nomor-pajak-perusahaan) untuk detailnya</li><li>**Nama faktur perusahaan** (dalam Bahasa Inggris) Muncul pada faktur</li><li>**Mata uang:** USD, ILS, EUR, atau GBP</li><li>**Alamat surat** Diisi otomatis sesuai formulir pendaftaran:<ul><li>Alamat surat</li><li>Kota (dalam Bahasa Inggris)</li><li>Kode pos: Harus sesuai dengan lokasi yang dipilih.</li><li>Negara: Pilih dari daftar</li></ul></li><li>Jika relevan, tambahkan provinsi, kota, atau wilayah</li><li>Jika diperlukan, perbarui informasi tagihan dalam platform atau hubungi [accounting@appsflyer.com](mailto:accounting@appsflye.com)</li></ul> |
 | Kontak tagihan | Masukkan detail kontak yang diperlukan:<ul><li>**Nama:** Harus dalam bahasa Inggris saja</li><li>**Email, Telepon:** Harus disediakan</li></ul> |
 
+<div id="company-tax-number" />
+
 ### Nomor pajak perusahaan
 
 Negara-negara tertentu, yang tercantum dalam tabel di bawah, mengharuskan kami mencatat nomor pajak perusahaan Anda dan menambahkan PPN ke faktur Anda. Jika perusahaan Anda berada di salah satu negara tersebut, Anda harus memberikan nomor pajak perusahaan Anda dalam format negara yang benar. Jika tidak, detail penagihan Anda tidak akan disimpan.
+
+<div id="countries-requiring-company-tax-number" />
 
 #### Negara yang mawajibkan nomor pajak perusahaan
 
@@ -336,6 +382,8 @@ Negara-negara tertentu, yang tercantum dalam tabel di bawah, mengharuskan kami m
 | Kanada | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">Nomor akun program GST / HST</Anchor> |
 | Negara-negara Uni Eropa | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">Sistem Pertukaran Informasi PPN (VIES)</Anchor> |
 | Israel | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">Pendaftaran PPN Israel</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### Opsi pengukuran konversi untuk penagihan aplikasi iOS
 

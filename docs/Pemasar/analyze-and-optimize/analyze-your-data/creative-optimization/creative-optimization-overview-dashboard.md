@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## Tentang dashboard Ikhtisar
 
 Dashboard <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide">**Optimisasi Materi Iklan**</Anchor> memungkinkan Anda untuk mengukur kinerja materi iklan dengan mengumpulkan semua materi iklan dari semua saluran media ke satu tempat. Analisis kinerjanya berdasarkan dimensi yang dipilih, di beberapa kampanye, saluran, dan lainnya, untuk mendapatkan wawasan penting sebelum merencanakan, memilih, dan memproduksi kumpulan materi iklan Anda berikutnya.
@@ -43,9 +45,13 @@ Gunakan dashboard untuk melihat data Anda disajikan secara visual dalam berbagai
 * Lihat kinerja materi iklan dari waktu ke waktu.
 * Dan banyak lagi
 
+<div id="get-started" />
+
 ## Memulai
 
 Jika Anda belum mengonfigurasi Optimisasi Materi Iklan, Anda dapat menemukan instruksi tentang cara melakukannya <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide#memulai">di sini</Anchor>.
+
+<div id="charts" />
 
 ## Grafik
 
@@ -67,6 +73,8 @@ Gunakan bagan untuk mendapatkan representasi visual sekilas dengan cepat tentang
 ## Tabel
 
 Gunakan tabel untuk menelusuri detailnya. Kelompokkan menurut berbagai dimensi atau sesuaikan pengaturan tabel untuk menambahkan dimensi dan metrik tambahan ke tabel, lalu urutkan, lihat, dan bandingkan data untuk mendapatkan wawasan yang Anda perlukan.
+
+<div id="zd-table" />
 
 <div id="table" />
 

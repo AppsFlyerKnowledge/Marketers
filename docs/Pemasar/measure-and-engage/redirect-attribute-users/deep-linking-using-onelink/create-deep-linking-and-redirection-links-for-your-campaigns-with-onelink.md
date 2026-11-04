@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** [Buat tautan OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#buat-tautan-onelink) yang memberi pengguna pengalaman yang Anda inginkan. Pengguna yang mengklik tautan akan diarahkan ke toko aplikasi, URL web, atau ke aplikasi yang benar sesuai kebutuhan. Dan pengguna diatribusikan ke sumber media yang benar.
 
+<div id="onelink-links-and-experiences" />
+
 ## Tautan dan pengalaman OneLink
 
 <Embed title="Pemutar video YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ Langkah-langkah yang diperlukan untuk menyiapkan tautan dijelaskan secara rinci 
 * Pengaturan khusus pengalaman
 * Deep linking dan pengaturan pengarahan
 * Pengaturan parameter tambahan
+
+<div id="create-a-onelink-link" />
 
 ## Buat tautan OneLink
 
@@ -113,6 +117,8 @@ Pengaturan umum adalah bagian dari proses pembuatan tautan OneLink yang berlaku 
    * Pilih domain yang berbeda untuk mencerminkan merek Anda. <Anchor target="_blank" href="/marketers/id/docs/brand-onelink-with-your-domain">Pelajari lebih lanjut</Anchor>
    * Edit ID URL untuk menyoroti penawaran kampanye. Maksimal karakter ID URL adalah 50 karakter dan dapat berupa kombinasi huruf dan angka. Secara default, ini adalah 8 karakter.
 
+<div id="enable-retargeting-for-the-app" />
+
 #### Aktifkan penargetan ulang untuk aplikasi
 
 Jika Penargetan Ulang tidak pernah diaktifkan untuk aplikasi, Anda perlu melakukannya sekali. <Anchor target="_blank" href="/marketers/id/docs/app-settings#pengaturan-atribusi">Pelajari lebih lanjut</Anchor>
@@ -174,6 +180,8 @@ Fitur pratinjau media sosial didukung oleh platform berikut:
 
 <Accordion title="Laman awal aplikasi sosial">
 
+<div id="important-1" />
+
 > 🚧 **Penting!**
 >
 > Tautan Universal iOS kini didukung di Meta ads.
@@ -209,9 +217,13 @@ Saat pengguna berinteraksi dengan tombol CTA di laman arahan:
 * **Jika aplikasi terinstal**: pengguna yang mengklik membuka aplikasi.
 * **Jika aplikasi TIDAK terinstal**: pengguna diarahkan ke app store yang relevan. Setelah menginstal, pengguna dapat menunda deep linking (dijelaskan di [deep linking dan deferred deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)).
 
+<div id="note-2" />
+
 > 📘 **Catatan**
 >
 > Laman arahan aplikasi media sosial hanya mendukung URL pendek OneLink.
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **Untuk menggunakan laman arahan aplikasi media sosial:**
 
@@ -221,6 +233,8 @@ Saat pengguna berinteraksi dengan tombol CTA di laman arahan:
 3. Posting URL pendek OneLink di aplikasi sosial.
 
 Atribusi ditentukan berdasarkan pada pengaturan atribusi Anda.
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **Untuk mengatur laman arahan aplikasi Sosial:**
 
@@ -320,6 +334,8 @@ Deferred deep linking berarti Anda memberikan pengalaman deep linking serupa kep
 
    3. Di bagian**Parameter tambahan**, tambahkan parameter khusus **deep\_link\_sub2-10** dan nilai yang diperlukan, sesuai dengan apa yang Anda putuskan dengan pengembang.
 
+<div id="note-4" />
+
 > 📘 **Catatan**
 >
 > Setelah parameter dan nilai dinamis diterapkan oleh pengembang, pemasar dapat menggunakan OneLink API untuk secara otomatis menghasilkan ribuan tautan kustom. <Anchor target="_blank" href="/marketers/id/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">Pelajari lebih lanjut</Anchor>
@@ -363,6 +379,8 @@ Anda dapat menguji apakah tautan Anda berfungsi untuk mengarahkan ulang:
 * Pengguna baru yang tidak menginstal aplikasi Anda
 * Pengguna yang sudah ada, yang menginstal aplikasi Anda
 
+<div id="new-users-without-your-app-installed" />
+
 #### Pengguna baru yang tidak menginstal aplikasi Anda
 
 **Prasyarat**:  <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices">Perangkat uji terdaftar</Anchor> tanpa aplikasi.
@@ -385,6 +403,8 @@ Anda dapat menguji apakah tautan Anda berfungsi untuk mengarahkan ulang:
    Cari  klik dan penginstalan baru di bawah sumber media (misalnya tes) dan nama kampanye yang Anda masukkan ke dalam URL.
 
 Tautan tidak berfungsi seperti yang diharapkan? Periksa di <Anchor target="_blank" href="/marketers/id/docs/onelink-troubleshooting-and-faq">Panduan penyelesaian masalah dan Pertanyaan Umum OneLink.</Anchor>
+
+<div id="existing-users-with-your-app-installed" />
 
 #### Pengguna yang sudah ada, yang menginstal aplikasi Anda
 
@@ -409,6 +429,8 @@ Tautan tidak berfungsi seperti yang diharapkan? Periksa di <Anchor target="_blan
 Tautan tidak berfungsi seperti yang diharapkan? Periksa di <Anchor target="_blank" href="/marketers/id/docs/onelink-troubleshooting-and-faq">Panduan penyelesaian masalah dan Pertanyaan Umum OneLink.</Anchor>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Prosedur tambahan
 
@@ -489,6 +511,8 @@ Untuk memastikan bahwa deferred deep linking (DDL) tetap berfungsi sebagaimana m
 
 Solusi ini menggabungkan URL pendek OneLink dengan teknologi App Clip yang tersedia di iOS, dan memungkinkan Anda untuk mengirim pengguna ke alur tertentu di produk Anda tanpa harus menginstal aplikasi lengkap. URL pendek OneLink memberi Anda data atribusi pengguna dan mengarahkan pengguna ke pengalaman App Clip yang dipersonalisasi mirip dengan apa yang Anda inginkan untuk dicapai DDL. App clip juga dapat menyertakan alur untuk mengarahkan pengguna dari App Clip ke aplikasi lengkap Anda. **Catatan**: Jika pengguna menginstal ulang aplikasi lengkap dari solusi berbasis App Clip, ini dapat dilaporkan di AppsFlyer sebagai penginstalan organik. 
 
+<div id="flow" />
+
 #### **Alur**
 
 Alur dari solusi DDL berbasis App Clip adalah sebagai berikut:
@@ -524,6 +548,8 @@ Alur dari solusi DDL berbasis App Clip adalah sebagai berikut:
 
 <Accordion title="Solusi berbasis Clipboard">
 
+<div id="flow-1" />
+
 #### **Alur**
 
 Alur solusi DDL berbasis clipboard adalah sebagai berikut:
@@ -541,6 +567,8 @@ Alur solusi DDL berbasis clipboard adalah sebagai berikut:
 5. Pengguna mengetuk **Get the app (Dapatkan aplikasi)**.
 6. Pengguna diarahkan ke App Store untuk menginstal aplikasi. Kemudian, pada peluncuran pertama, pengguna diarahkan ke halaman aplikasi tertentu.
 
+<div id="requirements" />
+
 #### **Persyaratan**
 
 Solusi salin/rekat DDL laman arahan mewajibkan:
@@ -550,6 +578,8 @@ Solusi salin/rekat DDL laman arahan mewajibkan:
 * AppsFlyer iOS SDK V6+.
 * Pengembang aplikasi iOS Anda untuk menerapkan kode yang merekatkan data deferred deep link di URL dari clipboard. Ini bukan bagian dari SDK AppsFlyer.
 * Pengguna akhir untuk mencentang kotak (default). Jika tidak dicentang, URL tidak disalin dan deferred deep linking tidak berfungsi.
+
+<div id="setup" />
 
 #### **Pengaturan**
 
@@ -564,6 +594,8 @@ Solusi salin/rekat DDL laman arahan mewajibkan:
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi Tambahan
 

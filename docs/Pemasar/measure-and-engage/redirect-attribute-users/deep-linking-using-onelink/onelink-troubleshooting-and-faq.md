@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **Sekilas:** Temukan solusi dengan cepat untuk menguji dan men-debug masalah pengalihan/perilaku tautan khusus OneLink.
 
+<div id="onelink-troubleshooting-guide" />
+
 ## Panduan pemecahan masalah OneLink
 
+<div id="onelink-frequently-asked-questions" />
+
 ## OneLink pertanyaan yang sering diajukan
+
+<div id="onelink-template-faq" />
 
 ### Pertanyaan umum Templat OneLink
 
@@ -35,6 +41,8 @@ x-zendesk:
 **Tautan Universal:** Diperlukan untuk lebih dari 98% pengguna iOS
 
 **Tautan Aplikasi** Untuk pengguna Android dengan versi 6.0+. **Catatan**: Samsung OS tidak dapat membuka aplikasi menggunakan Tautan Aplikasi Android.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -48,6 +56,8 @@ x-zendesk:
 * Sebagai cadangan saat Tautan Universal dan Tautan Aplikasi tidak membuka aplikasi karena tidak berfungsi atau tidak disiapkan.
 
   **Catatan:** Menggunakan skema URI sebagai cadangan untuk Tautan Universal tunduk pada batasan berbasis iOS. <Anchor target="_blank" href="/marketers/id/docs/uri-scheme-fallback-for-ios">Pelajari lebih lanjut</Anchor>.
+
+<div id="deep-linking" />
 
 #### Penautan Langsung
 
@@ -206,6 +216,8 @@ Untuk Chromebook, untuk mengalihkan pengguna baru tanpa menginstal aplikasi Anda
 
 </Accordion>
 
+<div id="onelink-link-faq" />
+
 ### Pertanyaan umum tautan OneLink
 
 <div id="does-onelink-work-without-the-appsflyer-sdk" />
@@ -267,6 +279,8 @@ Ada beberapa kemungkinan alasan untuk hal ini:
 
 Dua solusi untuk meningkatkan pengalaman pengguna adalah Fallback URL dan penautan langsung paksa.
 
+<div id="fallback-urls" />
+
 #### URL fallback
 
 URL fallback mengarahkan pengguna ke halaman web tertentu jika membuka aplikasi atau penautan langsung gagal karena alasan apa pun. **Peringatan!** Mereka juga mengirim pengguna tanpa aplikasi Anda terinstal ke URL fallback, bukan ke toko aplikasi yang benar. Jadi, pastikan untuk hanya menggunakan opsi ini jika Anda menargetkan ulang pengguna dengan aplikasi yang sudah terinstal.
@@ -276,6 +290,8 @@ Untuk menerapkan URL fallback, di templat OneLink atau pengaturan link khusus, a
 [![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
 
 Menggunakan pengaturan ini menambah `af_ios_url` dan `af_android_url` sebagai parameter tujuan untuk fallback, yang akan menyebabkan pengguna iOS dialihkan ke halaman yang ditentukan oleh `af_ios_url` dan pengguna Android diarahkan ke halaman yang ditentukan oleh`af_android_url`.
+
+<div id="tip-1" />
 
 > 📄 **Contoh**
 >
@@ -291,10 +307,14 @@ Menggunakan pengaturan ini menambah `af_ios_url` dan `af_android_url` sebagai pa
 > * iOS: www.yoursite.com/ios-bonus
 > * Android: www.yoursite.com/android-bonus
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > * Jika Anda menyertakan simbol tagar (#) sebagai bagian dari nilai parameter di URL, Anda perlu menyandikannya.
 > * Saat pengalihan terjadi, parameter URL OneLink melewati halaman tujuan yang ditentukan oleh `af_ios_url` atau `af_android_url`. Untuk mencegah perilaku ini, tambahkan parameter `af_param_forwarding=false` ke OneLink.
+
+<div id="forced-deep-linking" />
 
 #### Penautan langsung yang dipaksakan
 
@@ -335,6 +355,8 @@ Ya. Namun, di Android, saat pengguna mengeklik tautan OneLink di browser Brave, 
 Mengaktifkan **Aktifkan biaya per penginstalan** (di bawah **Parameter lanjutan**) memungkinkan Anda untuk menerapkan nilai CPI tertentu ke setiap penginstalan yang berasal dari tautan.
 
 Pilih mata uang, kemudian**nilai yang HANYA berisi angka** (hingga 4 digit angka desimal) untuk mewakili CPI.  Ini menambahkan parameter af\_cost\_currency dan af\_cost\_value ke tautan.
+
+<div id="tip-2" />
 
 > 📄 **Contoh**
 >
@@ -471,6 +493,8 @@ Tautan berikut secara fungsional identik dan berfungsi sama di mana saja:
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### Pertanyaan umum parameter OneLink
 
 <div id="what-parameters-are-mandatory-for-onelink-custom-links" />
@@ -488,6 +512,8 @@ Hanya parameter sumber media (**pid**) yang wajib.
 **Ya,** parameter apa pun dapat ditambahkan ke URL pendek.
 
 **Penting!** Parameter yang ditambahkan ke URL pendek tidak menggantikan parameter di dalam tautan.
+
+<div id="tip-3" />
 
 > 📄 **Contoh**
 >
@@ -549,6 +575,8 @@ Untuk data yang diurai, gunakan parameter pelanggan `af_sub1-5`, yang masing-mas
 
 </Accordion>
 
+<div id="integrated-partner-faq" />
+
 ### Pertanyaan umum mitra terintegrasi
 
 <div id="can-i-use-onelink-in-social-apps-unpaid" />
@@ -571,6 +599,8 @@ Tabel berikut merangkum kapan OneLinks dapat digunakan di aplikasi media sosial 
 
 **Ya,** tetapi perhatikan bahwa OneLink terutama digunakan dengan media yang dimiliki, bukan dengan jaringan iklan.  Ini karena jaringan iklan biasanya beriklan di aplikasi (yang berarti mereka mengetahui platform pengguna, ID perangkat, dan sebagainya), tautan atribusi khusus aplikasi dan platform sudah cukup, jadi menggunakan OneLink tidak diperlukan. Namun, untuk kasus di mana jaringan iklan tidak mengetahui platform pengguna sebelumnya (misalnya, ketika mereka sendiri menjalankan kampanye email atau SMS), OneLink dapat menjadi solusinya.
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > Saat Anda menggunakan OneLink dengan jaringan iklan, Anda harus menggunakan URL panjang OneLink.
@@ -580,6 +610,8 @@ Tabel berikut merangkum kapan OneLinks dapat digunakan di aplikasi media sosial 
 * Ikuti <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#attribution-link-tab">instruksi tautan atribusi jaringan iklan</Anchor>, dan pilih **Gunakan OneLink** saat diminta.
 
 Setelah semua parameter untuk Android dan iOS ditambahkan dengan benar, saat tautan khusus OneLink diklik dan pengguna dialihkan ke platform yang tepat, parameter yang diperlukan dikirim ke jaringan dalam postback setelah pengguna menginstal.
+
+<div id="tip-4" />
 
 > 📄 **Contoh**
 >
@@ -656,6 +688,8 @@ Membuka aplikasi dan menautkannya langsung dari iklan di Facebook biasanya dimun
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### Pertanyaan Umum tentang Pengujian
 
 <div id="how-can-i-ab-test-the-social-app-landing-page" />
@@ -694,6 +728,8 @@ Jika Anda melihat dialog pilihan aplikasi saat menguji OneLink, pastikan Anda <A
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### Pertanyaan umum tentang tautan langsung
 
 <div id="what-deep-linking-methods-should-be-implemented" />
@@ -717,6 +753,8 @@ Setelah aplikasi diluncurkan menggunakan salah satu metode ini, SDK AppsFlyer me
 **Praktik terbaik untuk menambahkan parameter khusus, adalah melalui halaman pengaturan tautan khusus**.
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### Pertanyaan umum iOS 14
 

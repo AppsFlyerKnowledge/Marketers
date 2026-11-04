@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Sekilas:** catatan rilis Android SDK mulai dari V4.x.
 
+<div id="android-sdk-releases" />
+
 ## Android SDK V6
 
 <Anchor target="_blank" href="/marketers/id/docs/sdk-integration-overview">Panduan integrasi Android SDK untuk pemasar</Anchor>
@@ -260,6 +262,8 @@ GCD mengembalikan struktur yang sama terlepas dari datanya. Jika sebuah paramete
 
 </Accordion>
 
+<div id="unsupported-sdk-versions" />
+
 <div id="deprecated-versions" />
 
 <Accordion title="Versi usang">
@@ -400,6 +404,8 @@ AppsFlyer menggunakan checksum md5:
 | 4.7.0 | b060ad140ffd0c8f2b3febb26122d173 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

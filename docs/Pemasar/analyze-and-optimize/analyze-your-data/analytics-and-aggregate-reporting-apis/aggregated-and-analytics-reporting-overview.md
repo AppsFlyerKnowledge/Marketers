@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Sekilas:** Deskripsi dan perbandingan laporan gabungan dan atribusi analitik, alat, dan API tersedia.
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## Pelaporan kinerja gabungan dan analitik—alat dan laporan
 
 Alat analitik gabungan di platform memberikan pemasang iklan metrik yang memungkinkan mereka menilai kinerja aplikasi, kampanye, dan pengguna mereka.
@@ -91,6 +93,8 @@ Kelompok tersedia dalam beberapa *rasa* yang berbeda menjadi <Anchor target="_bl
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### Laporan perjalanan pengguna
 
 * Uraian laporan tersedia via laman data Ekspor atau dengan menggunakan agregat Pull API.
@@ -107,9 +111,13 @@ Kelompok tersedia dalam beberapa *rasa* yang berbeda menjadi <Anchor target="_bl
 
 Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file CSV di Excel, bidang tanggal diformat menggunakan pengaturan tanggal dan waktu komputer Anda. Pastikan untuk memilih tampilan tanggal yang sesuai di <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel.</Anchor>
 
+<div id="examples-of-aggregate-reports" />
+
 #### Contoh laporan agregat
 
 [Contoh laporan dalam lembar kerja](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### Bidang dalam laporan agregat UA
 
@@ -125,6 +133,8 @@ Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file
 * Dalam laporan penargetan ulang, tidak ada perbedaan antara pengguna organik dan non-organik.
 * Untuk mendapatkan laporan penargetan ulang melalui Pull API, tambahkan  parameter *& reattr = true* ke URI laporan kinerja.
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### Laporan penargetan ulang LTV agregat
 
 | Nama laporan | Dikelompokkan berdasarkan |
@@ -134,6 +144,8 @@ Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file
 | Aktivitas berdasarkan tanggal | Tanggal, agensi, sumber media, kampanye |
 | Negara | Negara, agensi, sumber media, kampanye |
 | Negara berdasarkan tanggal | Tanggal, negara, agensi, sumber media, kampanye |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### Laporan penargetan ulang LTV agregat
 
@@ -159,6 +171,8 @@ Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## Laporan fitur
 
 <div id="skadnetwork" />
@@ -179,6 +193,8 @@ Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file
 * Laporan tersedia via Pull API. Laporan ini tidak tersedia melalui halaman Data Ekspor.
 * Rentang tanggal terkait dengan tanggal instalasi.
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Laporan Protect360 agregat tersedia melalui Pull API
 
 | Nama laporan |
@@ -192,6 +208,8 @@ Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file
 **Batasan:** Alasan pemblokiran **Bot** muncul bahkan dalam kasus di mana alasannya seharusnya **versi aplikasi** atau **id pengguna pelanggan tidak ada**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

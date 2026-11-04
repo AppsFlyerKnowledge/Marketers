@@ -27,15 +27,21 @@ x-zendesk:
 
 [![Main Discovery image New.jpg](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## Tentang dashboard Discovery (Penemuan)
 
 Dashboard <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide">**Optimisasi Materi Iklan**</Anchor> memungkinkan Anda untuk mengukur kinerja materi iklan dengan mengumpulkan semua materi iklan dari semua saluran media ke satu tempat. Analisis kinerjanya berdasarkan dimensi yang dipilih, di beberapa kampanye, saluran, dan lainnya, untuk mendapatkan wawasan penting sebelum merencanakan, memilih, dan memproduksi kumpulan materi iklan Anda berikutnya.
 
 **Dashboard Penemuan** yang didukung AI memberi tim kreatif Anda semua informasi yang mereka perlukan untuk menghasilkan materi iklan yang unggul. Hal ini memberikan data kinerja terperinci, memungkinkan keputusan yang tepat berdasarkan elemen atau fitur tertentu dalam materi iklan yang berkontribusi terhadap efektivitasnya. Dengan dashboard ini, Anda dapat secara konsisten memproduksi dan memelihara materi iklan sukses yang berdasarkan data dan dioptimalkan untuk dampak maksimal. Berdasarkan pilihan filter utama, Anda dapat melihat galeri materi iklan Anda, atau mengelompokkannya menjadi adegan dan elemen individual.
 
+<div id="get-started" />
+
 ## Memulai
 
 Jika Anda belum mengonfigurasi Optimisasi Materi Iklan, Anda dapat menemukan instruksi tentang cara melakukannya <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide#memulai">di sini</Anchor>.
+
+<div id="concepts" />
 
 ## Pemfilteran, Kueri Cepat, dan penyortiran
 
@@ -110,6 +116,8 @@ Metrik yang tersedia meliputi:
 Lihat <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide#standard-metrics-and-dimensions">daftar</Anchor> definisi metrik yang mendalam.
 
 </Accordion>
+
+<div id="discovery-tabs" />
 
 ## Tab penemuan
 

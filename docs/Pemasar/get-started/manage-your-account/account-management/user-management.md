@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Buat dan kelola pengguna AppsFlyer akun Anda, dan beri mereka izin untuk mengakses fitur, aplikasi, dan data.
 
+<div id="overview" />
+
 ## Latar belakang
 
 Akun AppsFlyer memungkinkan untuk banyak pengguna, masing-masing dengan izin yang dikelola secara individual. Jumlah maksimal pengguna per akun ditentukan oleh paket langganan Anda.
@@ -37,11 +39,15 @@ Izin dalam masing-masing dimensi ini diberikan secara independen. Dengan kata la
 
 Fitur baru, yang saat ini masih dalam versi Beta, memungkinkan Anda untuk [menambahkan pengguna ke beberapa akun](#multiple-accounts) sehingga mereka dapat dengan mudah beralih antar akun.
 
+<div id="manage-roles" />
+
 ## Peran
 
 Setiap pengguna akun AppsFlyer Anda harus diberi peran. Setiap peran menentukan fitur AppsFlyer spesifik yang dapat diakses pengguna dan fungsi yang dapat mereka lakukan. Daftar lengkap kemampuan per peran tersedia di [tab Peran](/docs/user-management#tab-peran) di halaman **Pengelolaan pengguna** .
 
 Peran dalam AppsFlyer dapat berupa [peran yang telah ditentukan sebelumnya](/docs/user-management#peran-yang-telah-ditentukan), [peran khusus](/docs/user-management#peran-khusus), atau (dalam keadaan tertentu) [peran sementara](/docs/user-management#peran-sementara).
+
+<div id="predefined-roles" />
 
 ### Peran yang telah ditentukan
 
@@ -59,6 +65,8 @@ AppsFlyer dikonfigurasikan dengan banyak peran yang telah ditentukan sebelumnya:
 
 Untuk masing-masing peran yang telah ditentukan ini, kapabilitas fungsionalnya tetap: tidak ada "pencampuran dan pencocokan" yang diperbolehkan. Namun, Anda dapat mengubah kemampuan fungsional pengguna kapan saja dengan menugaskannya ke peran berbeda yang telah ditentukan sebelumnya atau peran khusus (kecuali untuk [pemilik akun](#pemilik-akun), seperti yang dibahas di bawah).
 
+<div id="example-1" />
+
 > 📄 **Contoh**
 >
 > Anda telah menugaskan Bill Bates sebagai **Manajer tim.** Peran ini memberi Bill kemampuan untuk mengelola **templat OneLink,** tetapi tidak mengizinkannya untuk mengakses halaman **Paket saya** dan **Pembayaran** .
@@ -67,11 +75,15 @@ Untuk masing-masing peran yang telah ditentukan ini, kapabilitas fungsionalnya t
 >
 > **Jawaban:** Tidak. Selama Bill tetap dalam peran manajer Tim, Anda tidak dapat memberinya kemampuan untuk mengakses halaman Paket Saya dan Pembayaran. Anda juga tidak dapat menghapus kemampuannya untuk mengelola templat OneLink. Tentu saja, Anda dapat menugaskan Bill ke peran yang telah ditentukan sebelumnya, dan kemampuannya akan berubah sesuai dengan yang ditentukan oleh peran tersebut. Atau, Anda dapat membuat peran khusus untuk Bill yang mengubah kemampuannya sesuai kebutuhan Anda.
 
+<div id="custom-roles" />
+
 ### Peran khusus
 
 Peran yang telah ditentukan sebelumnya di AppsFlyer telah dikonfigurasikan dengan kombinasi kemampuan khusus yang diperlukan di sebagian besar situasi. Karena alasan ini, banyak pemasang iklan merasa bahwa mereka tidak perlu menyesuaikan peran lebih lanjut. Namun, saat penyesuaian tambahan diperlukan, peran yang telah ditentukan masih merupakan titik awal yang bagus untuk mengelola kemampuan pengguna Anda.
 
 Pelajari lebih lanjut tentang [mengelola peran khusus](/docs/user-management#mengelola-peran-khusus).
+
+<div id="temp-roles" />
 
 ### Peran sementara
 
@@ -79,9 +91,13 @@ Jika akun AppsFlyer Anda ada di bawah sistem manajemen pengguna kami sebelumnya 
 
 Pelajari lebih lanjut tentang [mengelola peran sementara](/docs/user-management#managing-temp-roles).
 
+<div id="admin" />
+
 ### Admin—peran khusus
 
 Akun AppsFlyer dapat memiliki **satu atau lebih Admin**. Peran khusus ini memiliki beberapa karakteristik unik:
+
+<div id="access" />
 
 #### Akses
 
@@ -93,9 +109,13 @@ Peran Admin memiliki akses ke **semua kemampuan akun**, termasuk:
 
 Karakteristik "akses penuh" dari peran Admin ini tidak dapat diubah atau dibatasi.
 
+<div id="role-duplication" />
+
 #### Duplikasi peran
 
 Peran Admin **tidak dapat diduplikasi** saat membuat [peran khusus](/docs/user-management#mengelola-peran-khusus).
+
+<div id="account-owner" />
 
 #### Pemilik Akun
 
@@ -109,12 +129,16 @@ Seorang pemilik akun memiliki ciri-ciri unik:
   * Mengambil atau menyetel ulang <Anchor target="_blank" href="/marketers/id/docs/managing-appsflyer-tokens">token AppsFlyer API</Anchor>
   * Mengonfigurasikan atau membuat perubahan pada <Anchor target="_blank" href="/marketers/id/docs/push-api-streaming-raw-data">pengaturan Push API</Anchor>
 
+<div id="user-management-page" />
+
 ## Halaman manajemen pengguna
 
 **Untuk mengakses halaman Manajemen pengguna:**
 
 1. Di bilah menu, klik tarik-turun alamat email.
 2. Pilih **Manajemen pengguna.**
+
+<div id="users-tab" />
 
 ### Tab pengguna
 
@@ -132,6 +156,8 @@ Tips untuk menavigasi tab Pengguna:
 * Khusus admin: Klik ikon unduh <Image alt="download_icon.png" src="https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png" width="24px" /> di pojok kanan atas halaman untuk mengunduh tabel pengguna lengkap sebagai file CSV.
   * File yang diunduh menyertakan kolom yang sama dengan tabel di tab **Pengguna** .
 
+<div id="roles-tab" />
+
 ### Tab peran
 
 Tab **Peran** menampilkan daftar semua peran yang ditentukan di akun Anda, termasuk:
@@ -143,6 +169,8 @@ Tab **Peran** menampilkan daftar semua peran yang ditentukan di akun Anda, terma
 Di samping setiap peran, Anda dapat melihat jumlah pengguna yang saat ini ditetapkan untuk peran tersebut.
 
 Klik nama peran apa pun di panel kiri untuk menampilkan detail lengkap kemampuan peran tersebut.
+
+<div id="manage-users" />
 
 ## Mengelola pengguna
 
@@ -164,6 +192,8 @@ Ada dua tahap untuk membuat pengguna. Pertama, pengguna dibuat di platform. Sela
    * Dapat berisi huruf, angka, apostrof ('), ampersan (&), tanda dolar ($), simbol hash (#), tanda hubung (-), garis bawah (\_), dan tanda titik (.)
    * Dua titik berturut-turut (..) dan karakter khusus lainnya tidak diperbolehkan.
    * Harus diakhiri dengan domain email yang valid.
+
+   <div id="important" />
 
    > 🚧 **Penting!**
    >
@@ -195,9 +225,13 @@ Ada dua tahap untuk membuat pengguna. Pertama, pengguna dibuat di platform. Sela
    * [Dashboard dan fitur AppsFlyer tertentu tidak tersedia](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access) untuk pengguna dengan akses geografis terbatas.
 9. Klik **Simpan** untuk membuat pengguna.
 
+<div id="user-activation" />
+
 #### Aktivasi pengguna
 
 Setelah pengguna dibuat, Anda dapat melihatnya di tabel pengguna dengan ikon amplop ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png). Ini menandakan undangan telah terkirim dan akun sedang menunggu aktivasi. Pengguna harus mengaktifkan akunnya menggunakan tautan di emailnya. Tautan aktivasi berlaku selama 48 jam. Setelah pengguna mengaktifkan akunnya, amplop tersebut menghilang.
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -216,6 +250,8 @@ Setelah pengguna dibuat, Anda dapat melihatnya di tabel pengguna dengan ikon amp
 
 Pengguna dapat ditambahkan ke beberapa akun dan ditetapkan ke peran berbeda di setiap akun. Ini membantu pengguna bekerja di akun yang berbeda tanpa perlu memasukkan kembali kredensial.
 
+<div id="supported-accounts-and-users" />
+
 #### Akun dan pengguna yang didukung
 
 Akun berikut mendukung adanya pengguna yang sama di beberapa akun:
@@ -228,6 +264,8 @@ Batasan pengguna berikut berlaku saat menambahkan pengguna ke beberapa akun:
 * Fitur ini hanya tersedia untuk pengguna dengan izin manajemen Pengguna yang sesuai.
 * [Pemilik akun](#pemilik-akun) hanya bisa ada di satu akun. Pengguna ini tidak boleh ada di akun lain mana pun, bahkan dalam peran yang berbeda.
 * Pengguna yang belum [mengaktifkan akunnya](#aktivasi-pengguna) tidak dapat ditambahkan ke akun lain.
+
+<div id="add-users-to-multiple-accounts" />
 
 #### Tambahkan pengguna ke beberapa akun
 
@@ -247,6 +285,8 @@ Batasan pengguna berikut berlaku saat menambahkan pengguna ke beberapa akun:
 
 Pengguna dapat diedit, satu per satu atau dalam kelompok.
 
+<div id="individual-editing" />
+
 #### Pengeditan perorangan
 
 **Untuk mengedit pengguna perorangan:**
@@ -257,9 +297,13 @@ Pengguna dapat diedit, satu per satu atau dalam kelompok.
 4. Semua pengaturan selain alamat email dapat diedit (termasuk peran, aplikasi, sumber media, dan lokasi).
 5. Klik **Save**.
 
+<div id="multi-user-editing" />
+
 #### Pengeditan multi-pengguna
 
 Pengeditan multi-pengguna adalah cara yang efisien untuk mengubah izin akun beberapa pengguna sekaligus. Menggunakan fitur ini bersama dengan kemampuan pencarian dan pemfilteran pada tab **Pengguna** dapat membuatnya sangat membantu untuk mengelola sejumlah besar pengguna.
+
+<div id="note-4" />
 
 > 📘 **Catatan**
 >
@@ -277,6 +321,8 @@ Pengeditan multi-pengguna adalah cara yang efisien untuk mengubah izin akun bebe
    * Ingatlah bahwa perubahan Anda berlaku untuk semua pengguna yang dipilih!
 5. Pengguna yang diedit disorot dalam tabel, dan pengguna muncul sebagaimana adanya setelah perubahan disimpan. Namun, Anda masih memiliki kesempatan untuk meninjau perubahan dan mengonfirmasi atau membatalkannya di langkah berikutnya.
 6. Tinjau perubahan Anda. Klik **Simpan** untuk mengonfirmasi atau **Batal** untuk membatalkannya.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -311,6 +357,8 @@ Pengeditan multi-pengguna adalah cara yang efisien untuk mengubah izin akun bebe
 2. Pilih **Hapus** dari menu.
 
 </Accordion>
+
+<div id="manage-custom-roles" />
 
 ## Mengelola peran khusus
 
@@ -357,6 +405,8 @@ Proses pembuatan peran khusus melibatkan duplikasi peran **yang telah ditentukan
 4. Saat Anda puas dengan semua pilihan Anda, klik tombol **Simpan peran** .
 5. Tingkat izin peran diubah untuk semua pengguna baru dan yang sudah ada.
 
+<div id="important-1" />
+
 > 🚧 **Penting!**
 >
 > Setiap perubahan yang Anda buat pada peran khusus diterapkan secara otomatis ke **semua pengguna yang ada** dalam peran tersebut.
@@ -376,6 +426,8 @@ Proses pembuatan peran khusus melibatkan duplikasi peran **yang telah ditentukan
 
 </Accordion>
 
+<div id="special-situations-and-additional-procedures" />
+
 ## Situasi khusus dan prosedur tambahan
 
 <div id="managing-temp-roles" />
@@ -387,6 +439,8 @@ Jika akun Anda sebelumnya menggunakan sistem manajemen pengguna kami sebelumnya,
 * Pengguna dengan kemampuan yang sama diberi peran sementara yang sama.
 * Gunakan fitur [tab Peran](/docs/user-management#tab-peran) untuk meninjau kemampuan setiap peran sementara dan daftar pengguna yang saat ini ada di dalamnya.
 
+<div id="temp-role-limitations" />
+
 #### Batasan peran sementara
 
 Peran sementara dirancang khusus untuk memungkinkan transisi yang mulus dari sistem manajemen pengguna kami sebelumnya. Dengan demikian, mereka hanya tersedia dalam situasi terbatas:
@@ -396,6 +450,8 @@ Peran sementara dirancang khusus untuk memungkinkan transisi yang mulus dari sis
   * Perhatikan bahwa akses pengguna ke aplikasi mendatang **tidak dapat** diubah saat pengguna dalam peran sementara.
 * Saat pengguna dengan peran sementara diubah ke peran yang ditentukan sebelumnya, mereka tidak dapat dikembalikan ke peran sementara yang ditetapkan sebelumnya (atau ke peran sementara lainnya).
 * Jika pengguna terakhir dalam peran sementara dihapus darinya, peran tersebut tidak akan muncul lagi di akun Anda.
+
+<div id="example-2" />
 
 > 📄 **Contoh**
 >
@@ -438,9 +494,13 @@ Selain itu, fitur AppsFlyer berikut **tidak tersedia** untuk pengguna ini:
 
 Karena semua Admin pada dasarnya memiliki izin yang sama dengan pemilik akun, maka perubahan pemilik akun biasanya tidak diperlukan. Namun jika ternyata Anda harus mengubah pemilik akun, ikuti langkah-langkah berikut untuk melakukannya.
 
+<div id="important-2" />
+
 > 🚧 **Penting!**
 >
 > Mengubah pemilik akun harus diselesaikan secara manual sesuai dengan langkah-langkah ini. Itu tidak dapat dilakukan dari halaman **Manajemen pengguna** .
+
+<div id="1assign-a-team-member-the-admin-role" />
 
 #### #1–Kirim permintaan email
 
@@ -460,6 +520,8 @@ Sertakan informasi berikut dalam permintaan Anda:
 Gunakan contoh email ini sebagai referensi:
 
 ![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+
+<div id="3next-steps" />
 
 #### #2–Langkah selanjutnya
 

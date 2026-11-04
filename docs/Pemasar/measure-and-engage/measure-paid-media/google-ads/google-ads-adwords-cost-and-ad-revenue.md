@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **Sekilas:** Aktifkan data biaya dan pendapatan iklan Google Ads di AppsFlyer.
 
+<div id="cost-data-sync-status" />
+
 ## Status Sinkronisasi Data Biaya
 
 <Anchor target="_blank" href="/marketers/id/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">Lihat status API biaya</Anchor> dan terakhir kali AppsFlyer berhasil menarik data biaya yang cocok di dashboard status integrasi biaya (dan pendapatan iklan), atau di dashboard jaringan iklan individual. 
 
 Google Ads memungkinkan Anda untuk melakukan sinkronisasi beberapa akun untuk mengambil data biaya. Untuk setiap akun yang disinkron, AppsFlyer menampilkan status integrasi biaya dan kali terakhir AppsFlyer berusaha mengambil data biaya yang cocok.
 
+<div id="stopping-google-cost-sync" />
+
 ### Menonaktifkan sinkronisasi biaya Google
 
 **Untuk berhenti menyinkronkan biaya Google, hapus koneksi akun Google:**
 
 * <Anchor target="_blank" href="/marketers/id/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">Buka tab biaya, di kolom tindakan, arahkan kursor ke akun, klik Hapus koneksi.</Anchor> Setelah dihapus, AppsFlyer berhenti menerima biayanya. Menghapus koneksi tidak memengaruhi data historis.
+
+<div id="cost-clicks-and-impressions" />
 
 ## Biaya, Klik, dan Impresi
 
@@ -65,6 +71,8 @@ Baca selengkapnya tentang <Anchor target="_blank" href="https://support.google.c
 >  Jika akun Google Ads tersebut adalah sub-akun dari akun MCC, maka ID MCC berada di kanan atas,  dan ID sub-akun berada di pojok kiri atas.
 >
 > Jika akun yang digunakan salah, logout dari akun, lalu login kembali menggunakan alamat email untuk akun Google yang berbeda.
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## Mencatat pendapatan iklan dengan Google Ads
 

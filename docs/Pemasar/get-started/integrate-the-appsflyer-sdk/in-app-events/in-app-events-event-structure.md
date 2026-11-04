@@ -32,6 +32,8 @@ In-app event yang ingin Anda kirim mewajibkan pengembang untuk menerapkan kode j
 
 Untuk membantu Anda menentukan event dan parameter apa yang akan dicatat, lihat <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview#recommended-events-by-business-vertical">artikel kami yang menyertakan contoh dan alur</Anchor> menurut vertikal bisnis.
 
+<div id="predefined-event-names" />
+
 ## Nama event yang telah ditentukan sebelumnya
 
 Bagian berikut memberikan daftar nama event yang telah ditentukan sebelumnya dan pemetaan event yang digunakan untuk Meta ads, Google Ads, TikTok, Snap, Twitter, dan Criteo.
@@ -634,6 +636,8 @@ Klik tautan untuk melihat pemetaan ke SRN.
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Jika Anda memetakan event ini ke event StartTrial Meta ads dan ingin mengaitkan pendapatan, gunakan parameter af\_price, bukan parameter af\_revenue.
@@ -765,13 +769,19 @@ Klik tautan untuk melihat pemetaan ke SRN.
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > Selain nama event yang telah ditentukan yang dijelaskan di bagian ini, <Anchor target="_blank" href="/marketers/id/docs/meta-ads-in-app-event-mapping#pemetaan-event-yang-telah-ditentukan-sebelumnya">Meta ads menawarkan event tambahan</Anchor> yang dikirim tanpa atribut.
 
+<div id="predefined-event-parameters" />
+
 ## Parameter event yang telah ditentukan sebelumnya
 
 Bagian berikut menyediakan daftar parameter event yang telah ditentukan sebelumnya. Setiap parameter peristiwa menyertakan pemetaan yang digunakan untuk Meta ads, Google Ads, Snap, Twitter, dan Criteo. Anda dapat memilih untuk menyertakan salah satu parameter peristiwa dalam suatu event.
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -1329,6 +1339,8 @@ Pemetaan parameter:
 
 **Deskripsi**: Total jumlah pembelian. af\_revenue dihitung sebagai pendapatan di platform AppsFlyer. Ini juga menghitung <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview#revenue-events">pendapatan negatif</Anchor>, dari pembatalan atau pengembalian dana.
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > Nilai pendapatan tidak boleh berisi pemisah koma, mata uang, karakter khusus, atau teks. Misalnya, nilai pendapatan seharusnya, 1234,56. AppsFlyer memberikan nilai pendapatan dengan akurasi hingga lima desimal.
@@ -1509,6 +1521,8 @@ Berikut adalah daftar parameter event yang telah ditentukan sebelumnya yang tida
 * af\_tutorial\_id
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

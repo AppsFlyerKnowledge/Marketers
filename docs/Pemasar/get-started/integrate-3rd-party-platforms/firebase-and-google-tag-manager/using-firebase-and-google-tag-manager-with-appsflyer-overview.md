@@ -36,10 +36,14 @@ Event yang dikirim menggunakan GTM dimodelkan pada in-app event AppsFlyer. Nama 
 
 Gunakan langkah-langkah dan instruksi dalam panduan ini untuk mengirimkan event. 
 
+<div id="considerations" />
+
 ### Pertimbangan
 
 * **Sumber event pada data lengkap:** Event yang dihasilkan oleh GTM menetapkan sumbernya ke S2S dalam laporan data lengkap. Hal ini dapat menimbulkan kebingungan karena event tersebut dilaporkan oleh SDK.
 * **Memperbarui nilai konversi SKAdNetwork**: Event yang dihasilkan oleh GTM dan dilaporkan ke SDK seperti yang dijelaskan dalam panduan ini menyebabkan SDK memperbarui nilai konversi dengan cara yang serupa dengan event SDK reguler. Anda hanya perlu mengaktifkan dan mengatur <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide">pengaturan pengukuran SKAdNetwork</Anchor> Anda.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -50,6 +54,8 @@ Gunakan langkah-langkah dan instruksi dalam panduan ini untuk mengirimkan event.
 >   * Saat mengirim postback in-app event ke SRN, parameter `att` diperlukan.
 >   * Saat mengirimkan postback in-app event ke Meta ads, parameter `att` dan `os` diperlukan.
 
+<div id="prerequisites" />
+
 ### Prasyarat
 
 Sebelum Anda dapat mulai mengirim event ke AppsFlyer menggunakan GTM, Anda perlu mengimplementasikan GTM SDK di aplikasi Anda. Anda membutuhkan:
@@ -59,6 +65,8 @@ Sebelum Anda dapat mulai mengirim event ke AppsFlyer menggunakan GTM, Anda perlu
 3. <Anchor target="_blank" href="/marketers/id/docs/integrate-the-appsflyer-sdk">Integrasikan SDK AppsFlyer</Anchor> jika Anda belum melakukannya.
 
 Setelah semuanya siap, lanjutkan ke <Anchor target="_blank" href="/marketers/id/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">penyiapan GTM</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

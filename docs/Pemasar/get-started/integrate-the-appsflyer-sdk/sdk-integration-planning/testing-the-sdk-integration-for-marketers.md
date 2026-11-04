@@ -102,6 +102,8 @@ Lakukan salah satu prosedur berikut untuk menambahkan aplikasi debug:
 </Tab>
 </Tabs>
 
+<div id="testing-ctv" />
+
 ### Kasus uji khusus
 
 Kasus uji khusus meliputi:
@@ -210,6 +212,8 @@ Untuk kesalahan integrasi, hubungi pengembang Anda.
    ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
 
 </Accordion>
+
+<div id="testing-using-attribution-links" />
 
 ## Menguji menggunakan tautan atribusi
 
@@ -339,6 +343,8 @@ Selain itu, OneLink mengaktifkan deep linking. Deep linking memungkinkan Anda un
 Untuk informasi lebih lanjut, lihat panduan tentang <Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">pengujian URL OneLink</Anchor>.
 
 </Accordion>
+
+<div id="testing-retargeting-using-attribution-links" />
 
 ## Menguji penargetan ulang mengggunakan tautan atribusi
 

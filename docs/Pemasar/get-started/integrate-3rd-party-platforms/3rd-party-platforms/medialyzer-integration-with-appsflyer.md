@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Sekilas:** Medialyzer, mitra terintegrasi AppsFlyer, mengembangkan dan memasarkan perangkat lunak sebagai solusi layanan. Solusi ini memungkinkan perencana media mengoptimalkan kampanye TV mereka untuk bisnis online berdasarkan kunjungan dan konversi yang dihasilkan secara langsung per penayangan iklan TV.
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions#pembatasan-sumber-media">Beberapa sumber media</Anchor> membatasi pembagian data dengan pihak ketiga. Oleh karena itu, postback untuk event terbatas tidak akan dikirim ke mitra ini, terlepas dari pilihan yang dikonfigurasi untuk mengirim postback.
+
+<div id="setting-up-medialyzer" />
 
 ## Mengatur Medialyzer
 
@@ -50,13 +54,19 @@ Untuk deskripsi terperinci dari Header Partner Configuration Window (Periode Wak
 
 <Accordion title="Tab Integrasi">
 
+<div id="activate-partner" />
+
 #### Aktifkan mitra
 
 Pada kunjungan pertama, Anda harus mengaktifkan tombol **Aktifkan mitra** untuk menyiapkan integrasi. Tombol harus tetap aktif selama Anda bekerja dengan Medialyzer. Pelajari lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">aktivasi mitra</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privasi Lanjutan
 
 Untuk aplikasi iOS, tombol <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">Privasi Tingkat Lanjut</Anchor> muncul. Ketika diaktifkan, tombol membatasi pembagian identifier pengguna dengan mitra. Perhatikan bahwa ketika tombol <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">Privasi Lanjutan Teragregasi</Anchor> diaktifkan di Pengaturan Aplikasi, **Privasi Lanjutan (untuk iOS 14.5+ dan yang lebih baru)** diaktifkan dan dikunci secara default.
+
+<div id="default-postbacks" />
 
 #### Postback Default
 
@@ -66,6 +76,8 @@ AppsFlyer mengirimkan postback default ke Medialyzer setelah penginstalan penggu
 * **Semua sumber media, termasuk organik**: Postback penginstalan dikirim untuk event yang diatribusikan ke mitra mana pun dan untuk event organik.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Postback in-app event
 

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Dimulai dengan ketersediaan umum iOS 14.5+ dan pemberlakuan ATT oleh Apple, pemasang iklan menggunakan kerangka kerja Privasi Lanjutan Gabungan (AAP) untuk mengontrol ketersediaan data atribusi tingkat pengguna dari platform.
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## Kerangka Privasi Lanjutan Gabungan (AAP).
 
 Kerangka kerja Privasi Lanjutan Gabungan (AAP) AppsFlyer mencegah pelacakan di seluruh aplikasi dan situs web yang dimiliki oleh berbagai perusahaan dan kemampuan untuk mengidentifikasi pengguna atau perangkat secara unik. AAP menggunakan tingkat privasi Transparansi Pelacakan Aplikasi Apple sebagai tolok ukur minimum untuk ambang perlindungan privasinya.
@@ -35,6 +37,8 @@ Framework ini memberi pemasang iklan kemampuan untuk mengontrol ketersediaan dat
 Mulai dari  ketersediaan umum iOS 14.5 dan pemberlakuan ATT oleh  Apple, jika AAP aktif, data atribusi tingkat pengguna untuk pengguna yang tidak menyetujui yang menjalankan iOS 14.5+ tidak akan tersedia untuk pemasang iklan atau mitra. 
 
 AAP tidak memengaruhi ketersediaan data atribusi gabungan dan laporan analitik untuk pemasang iklan dan mitra.
+
+<div id="aap-impacted-features" />
 
 ### Fitur yang terpengaruh AAP
 
@@ -52,6 +56,8 @@ Ketersediaan data terpengaruh saat AAP aktif sebagai berikut:
 * **Data atribusi dan penipuan (Protect360):** <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions">Beberapa bidang atribusi dibatasi atau tidak tersedia.</Anchor>
 * **Data klik, impresi, dan klik yang diblokir (penipuan):** <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions#identifier-restriction">ID terkait pengguna dan perangkat</Anchor> tidak tersedia.
 * **Deferred deep linking**: Jika Anda mengimplementasikan deferred deep linking di media berbayar, gunakan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">unified deep linking API (UDL).</Anchor> API lama, yang menggunakan GCD, tidak dapat digunakan dalam konteks pengguna yang tidak menyetujui. Dalam kasus media yang dimiliki, deferred deep linking untuk media yang dimiliki didukung melalui GCD dan deferred deep linking API terbaru.
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## Prinsip ketersediaan data dalam Privasi Lanjutan Gabungan
 
@@ -75,6 +81,8 @@ Istilah yang didefinisikan digunakan dalam gambar dan bagian berikut untuk mende
 
 Privasi Tingkat Lanjut berperilaku berbeda saat ditayangkan di web dan parameter af\_media\_type=web atau af\_media\_type=app harus digunakan. Lihat <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">di sini</Anchor> untuk informasi lebih lanjut.
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### Ketersediaan data media berbayar dan yang dimiliki
 
 <div id="paid-media" />
@@ -82,6 +90,8 @@ Privasi Tingkat Lanjut berperilaku berbeda saat ditayangkan di web dan parameter
 <Accordion title="Media berbayar">
 
 Media berbayar mencakup jaringan iklan seluler dengan integrasi di platform AppsFlyer tempat pemasang iklan menjalankan kampanye. 
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### Ketersediaan data media berbayar berdasarkan status ATT
 
@@ -99,6 +109,8 @@ Media yang dimiliki termasuk kampanye pemasaran digital yang digunakan oleh pema
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## Mengontrol AAP
 
 <div id="aap-central-switch" />
@@ -108,6 +120,8 @@ Media yang dimiliki termasuk kampanye pemasaran digital yang digunakan oleh pema
 AAP adalah sakelar tingkat aplikasi yang mengontrol pengaturan Privasi Lanjutan untuk semua mitra aplikasi yang dipilih. Sakelar AAP terletak di halaman **Pengaturan Aplikasi** . Saat sakelar AAP aktif, sakelar **Privasi Lanjutan** untuk semua mitra aplikasi yang dipilih secara otomatis diaktifkan dan tidak dapat dimodifikasi. Saat nonaktif, pemasang iklan dapat membuka setiap integrasi mitra satu per satu dan mengaktifkan **Privasi Lanjutan**.
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+
+<div id="aap-enabled" />
 
 #### **AAP diaktifkan**
 
@@ -161,6 +175,8 @@ Seperti yang dinyatakan sebelumnya, pengaturan AAP menggantikan pengaturan Priva
 
 <Accordion title="Jaringan iklan">
 
+<div id="postbacks-to-ad-network-partners" />
+
 #### **Postback ke mitra jaringan iklan**
 
 <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks">AAP memengaruhi jaringan iklan</Anchor> sehubungan dengan data yang dibagikan kepada mereka dan selaras dengan prinsip AAP yang berlaku bagi pemasang iklan dalam konteks jaringan iklan. Data yang dibagikan dengan jaringan iklan dilakukan melalui postback yang berbeda antara jaringan iklan yang diatribusikan dan jaringan iklan yang tidak diatribusikan.
@@ -169,6 +185,8 @@ Aturan berbagi data yang dijelaskan berlaku untuk jaringan iklan tertentu jika s
 
 * AAP: Sakelar tingkat aplikasi
 * AP: Sakelar tingkat mitra
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **Postback untuk jaringan iklan yang dikaitkan**
 
@@ -184,6 +202,8 @@ Berbagai skenario izin pengguna dan jenis postback yang digunakan diilustrasikan
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 Privasi Lanjutan berperilaku berbeda saat disajikan di web dan parameter af\_media\_type=web atau af\_media\_type=app harus digunakan. Lihat <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">di sini</Anchor> untuk informasi lebih lanjut.
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **Postback untuk mitra yang belum diatribusikan**
 
@@ -242,6 +262,8 @@ Privasi Tingkat Lanjut berperilaku berbeda saat disajikan di web dan parameter a
 3. Klik ***Save***.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

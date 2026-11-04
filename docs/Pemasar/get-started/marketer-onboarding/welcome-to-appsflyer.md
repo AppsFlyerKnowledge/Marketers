@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari apa itu atribusi periklanan seluler dan bagaimana AppsFlyer membantu pemasar menentukan penargetan mereka, mengoptimalkan pengeluaran iklan mereka, dan meningkatkan ROI.
 
+<div id="what-is-app-attribution" />
+
 ## Apa itu atribusi aplikasi?
 
 Atribusi aplikasi seluler **menentukan kampanye, mitra, dan channel mana yang mendorong penginstalan aplikasi Anda** dan event pasca-penginstalan, seperti pembelian dalam aplikasi. Pemasar mengandalkan informasi ini untuk mengukur dan mengoptimalkan aktivitas pemasaran untuk kampanye akuisisi pengguna dan penargetan ulang.
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## Apa yang Anda bisa lakukan dengan AppsFlyer?
 
 <Embed title="Selamat datang di AppsFlyer" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **Sekilas:** Cara masuk ke akun Anda untuk pertama kali dan cara beralih antar akun.
+
+<div id="first-login" />
 
 ## Masuk pertama kali
 
@@ -48,9 +54,13 @@ Ada beberapa cara untuk masuk ke akun AppsFlyer Anda:
 * Masuk dengan Google: Masuk menggunakan Akun Google Anda
 * <Anchor target="_blank" href="/marketers/id/docs/set-up-sso-authentication-with-your-identity-provider-idp">Masuk menggunakan SSO</Anchor>
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Jika administrator Anda mengonfigurasi autentikasi dua faktor (<Anchor target="_blank" href="/marketers/id/docs/implementing-and-using-2fa-login">2FA</Anchor>) untuk akun Anda, Anda akan diminta memverifikasi login menggunakan metode autentikasi lain.
+
+<div id="switch-between-accounts" />
 
 ### Beralih antar akun
 
@@ -63,15 +73,21 @@ Jika Anda memiliki lebih dari satu akun, saat masuk ke salah satu akun tersebut,
 
 ![multiple accounts.png](https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png)
 
+<div id="get-started" />
+
 ## Memulai
 
 Untuk memulai AppsFlyer, lanjutkan ke panduan <Anchor target="_blank" href="/marketers/id/docs/getting-started-onboarding-for-marketers">langkah demi langkah</Anchor>. 
+
+<div id="tip" />
 
 > 👍 **Tips**
 >
 > Ingin tahu lebih banyak tentang ekosistem seluler? Lihat <Anchor target="_blank" href="https://elevate.appsflyer.com/lms/index.php?r=course/deeplink&course_id=7767&generated_by=14109&hash=b421539db1c0352890d6f3e82e7fe9a74c0e5cce">kursus singkat dan informatif</Anchor> ini di Portal Pembelajaran AppsFlyer.
 
 Bacaan terkait: <Anchor target="_blank" href="/marketers/id/docs/convert-your-mobile-web-visitors-to-app-users">Atribusi seluler</Anchor>  | <Anchor target="_blank" href="/marketers/id/docs/ctv-pc-and-console-platform-attribution-concepts">Atribusi CTV</Anchor>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

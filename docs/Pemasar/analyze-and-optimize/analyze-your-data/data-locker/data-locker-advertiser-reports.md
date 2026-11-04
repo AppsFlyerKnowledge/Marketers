@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Sekilas:** Laporan data agregat dan lengkap tersedia melalui Data Locker
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## Laporan tersedia melalui Data Locker untuk pemasang iklan
 
 <table><thead><tr><th>Jenis data</th><th>Kelompok laporan</th><th>Diperlukan langganan Data Locker</th></tr></thead><tbody><tr><td>Lengkap</td><td>Perjalanan pengguna—data lengkap</td><td>Ya (2)</td></tr><tr><td>Lengkap</td><td>Protect360</td><td>Ya</td></tr><tr><td>Lengkap</td><td>Atribusi berbasis orang (PBA) </td><td>No (1)</td></tr><tr><td>Lengkap</td><td>Inkrementalitas</td><td>No (1)</td></tr><tr><td>Lengkap</td><td>SKAN</td><td>No (1)</td></tr><tr><td>Lengkap</td><td>Pendapatan Iklan</td><td>Ya</td></tr><tr><td>Lengkap</td><td>CTV</td><td>Ya</td></tr><tr><td>Teragregasi</td><td>Analisis kelompok</td><td>No (1)</td></tr><tr><td colspan="3"><p>(1) Jika Anda tidak berlangganan Data Locker, Anda harus menyediakan <a href="./data-locker-for-marketers#storage-options" target="_blank">penyimpanan yang Anda miliki</a>.</p><p>(2) Kecuali untuk interaksi lintas platform</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ Berikut ini penjelasan tentang istilah-istilah keaktualan data yang dirujuk dala
 | Harian+1 | Data pendapatan iklan tersedia setelah 1 hari, artinya data yang dihasilkan selama hari Senin akan tersedia di folder Senin h=23 setelah pukul 20.00 UTC pada hari Selasa. Lihat <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution#data-freshness">keaktualan data pendapatan iklan</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## Laporan Data Lengkap
 
@@ -154,6 +158,8 @@ Lihat <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-a
 Lihat <Anchor target="_blank" href="/marketers/id/docs/ctv-pc-and-console-data-via-data-locker">data platform CTV, PC, dan konsol melalui Data Locker</Anchor>
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## Laporan agregat
 

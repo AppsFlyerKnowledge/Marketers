@@ -152,6 +152,8 @@ Halaman ekspor data lengkap menyediakan laporan yang memiliki fitur-fitur yang t
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Prosedur
 
 <div id="create-a-default-report" />
@@ -237,6 +239,8 @@ Anda dapat membuat laporan khusus dengan mengatur filter dan bidangnya.
    * Selama pembuatan laporan, Anda dapat terus bekerja, membuat laporan tambahan, atau menavigasi ke halaman lain.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi tambahan
 

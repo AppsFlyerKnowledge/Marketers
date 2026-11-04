@@ -78,10 +78,14 @@ Tautan atribusi dibuat menggunakan **OneLink** atau **tautan platform tunggal**.
 | Struktur URL | `https://{subdomain}.onelink.me/  <br />{templateid}?pid={media_source}  <br />&af_siteid={ApplicationID}  <br />&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | Contoh | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int  <br />&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&  <br />c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="attribution-link-parameters" />
+
 ## Parameter link atribusi
 
 * Parameter yang tercantum tersedia untuk digunakan di tautan atribusi.
 * Kolom **nilai jenis bidang** adalah batas karakter dari nilai parameter. Temukan lebih lanjut tentang batasan panjang nilai parameter <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary">di sini.</Anchor>
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### Parameter tautan atribusi — UA dan penargetan ulang
 
@@ -134,12 +138,16 @@ Tabel berikut dapat [diunduh sebagai file `.csv`](https://docs.google.com/spread
 | <span id="af_og_description"></span>af\_og\_description | N/A | Saat tautan diposting ke media sosial, deskripsi grafik terbuka (OG) akan menghasilkan pratinjau deskripsi. | String 300 |
 | <span id="af_og_image"></span>af\_og\_image | N/A | Saat tautan diposting ke media sosial, gambar grafik terbuka (OG) akan menghasilkan pratinjau gambar. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### Parameter tautan atribusi —khusus penargetan ulang
 
 | Parameter | Tampilkan nama dalam data lengkap | Deskripsi | Jenis dan lebar bidang |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | Merupakan Penargetan ulang (kampanye) | URL klik dari semua kampanye penargetan ulang harus menyertakan `&is_retargeting=true` .  <br />Jika parameter tidak disertakan atau nilainya "false", kampanye dianggap sebagai kampanye akuisisi pengguna biasa. | Enum 5 karakter |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | Periode Waktu Re-engagement | Ubah <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window#setting-the-re-attribution-window">jendela atribusi interaksi ulang</Anchor> dengan menambahkan parameter ini ke tautan atribusi.<br /><br />Opsi rentang jendela yang mungkin adalah:<ul><li>Hari: 1-90 atau Jam 1-36</li><li>Seumur hidup: Ini berarti jendela interaksi ulang tidak terbatas. Contoh: `&af_reengagement_window=lifetime`</li></ul>Nilai default: 30 hari<br /><br />Contoh: `&af_reengagement_window=30d` menyetel jendela interaksi ulang menjadi 30 hari. | N/A |
+
+<div id="viewability-parameters" />
 
 ### Parameter jenis iklan
 
@@ -156,6 +164,8 @@ Bergantung pada jenis iklan, Anda juga dapat mengirim parameter visibilitas yang
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | Persentase maksimum unit iklan yang terlihat di layar perangkat |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | detik | Total kemungkinan durasi audio |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | detik | Berapa banyak audio yang didengar |
+
+<div id="android-specific-parameters" />
 
 ### Parameter khusus Android
 
@@ -178,6 +188,8 @@ Bergantung pada jenis iklan, Anda juga dapat mengirim parameter visibilitas yang
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | N/A | ID Iklan Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Listing toko kustom di Google Console | string |
 
+<div id="ios-specific-parameters" />
+
 ### Parameter spesifik iOS
 
 | Parameter | Nama Tampilan | Deskripsi |
@@ -193,6 +205,8 @@ Bergantung pada jenis iklan, Anda juga dapat mengirim parameter visibilitas yang
 | <span id="md5_idfv"></span>md5\_idfv | N/A | IDFV di-hash dengan MD5 |
 | <span id="sha1_mac"></span>sha1\_mac | N/A | Alamat mac perangkat di-hash dengan SHA1. Membutuhkan dukungan jaringan iklan |
 
+<div id="example" />
+
 > 📄 **Contoh**
 >
 > ```http
@@ -201,6 +215,8 @@ Bergantung pada jenis iklan, Anda juga dapat mengirim parameter visibilitas yang
 > ```
 
 Semua parameter tersedia di <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">Install report (Laporan penginstalan)</Anchor> dan <Anchor target="_blank" href="/marketers/id/docs/analytics-and-aggregate-reporting-apis">Analytics (Analisis), Reports (Laporan), serta APIs</Anchor>.
+
+<div id="custom-parameters" />
 
 ### Parameter Kustom
 
@@ -227,6 +243,8 @@ Setiap <Anchor target="_blank" href="http://appsflyer.com/partners">mitra terint
 
 Contoh ID penerbit terintegrasi yang penting: organik, googleadwords\_int (Google AdWords), Meta ads (iklan Meta), dan Twitter. Anda dapat menggunakan nama apa pun untuk sumber yang tidak terintegrasi seperti email, sms, atau mail pigeon.
 
+<div id="avoid-common-pid-issues" />
+
 #### Hindari masalah PID umum
 
 * **Selalu sertakan PID di tautan atribusi Anda.** Tanpa PID di tautan atribusi, pengguna secara otomatis diatribusi ke sumber media "Tidak Ada" dan sumber penginstalan aslinya hilang.
@@ -235,6 +253,8 @@ Contoh ID penerbit terintegrasi yang penting: organik, googleadwords\_int (Googl
   * Klik atau instal muncul di dashboard di bawah ***af\_invalid\_param***
   * Tautan atribusi tidak akan diatribusikan
   * Kemampuan deep linking tidak akan berfungsi pada klik
+
+<div id="tip" />
 
 > 👍 **Tips**
 >
@@ -259,6 +279,8 @@ Parameter ID situs hanya menyertakan ID penayang yang menayangkan iklan.
 
 Untuk menyertakan informasi tambahan, seperti jenis iklan, penempatan, atau keduanya dalam aplikasi, misalnya spanduk, pengantara, atau video, gunakan parameter ID sub situs.
 
+<div id="example-1" />
+
 > 📄 **Contoh**
 >
 > Tautan atribusi berikut mencakup:
@@ -274,6 +296,8 @@ Untuk menyertakan informasi tambahan, seperti jenis iklan, penempatan, atau kedu
 > * ABCD = Sumber afiliasi (sub-penayang) yang bekerja sama dengan penayang
 > * 4567 = Penempatan jenis iklan di dalam aplikasi, seperti spanduk, iklan interstisial, atau video
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **Pertanyaan Umum: Mengapa lalu-lintas menghasilkan banyak penginstalan yang diblokir?**
 
 Penginstalan yang diblokir dapat disebabkan oleh hal berikut:
@@ -285,6 +309,8 @@ Penginstalan yang diblokir dapat disebabkan oleh hal berikut:
 Untuk menghindari pemblokiran penginstalan, pastikan Anda mengirimkan satu parameter ID situs per penayang, seperti yang ditunjukkan pada contoh.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## Tingkat perincian data
 
@@ -302,6 +328,8 @@ Parameternya adalah:
 * `nama kampanye (c=)`
 * `Set iklan (af_adset=)`
 * `Nama iklan (af_ad=)`
+
+<div id="example-2" />
 
 > 📄 **Contoh**
 >
@@ -370,6 +398,8 @@ Biasanya, karakter ini ada di tautan karena mereka adalah makro, dan secara dina
 <Accordion title="Apa gunanya parameter pelanggan?">
 
 Parameter pelanggan, yaitu af\_sub1, af\_sub2, ..., af\_sub\_5 dapat digunakan untuk mencatat semua KPI yang berguna. Harap perhatikan bahwa parameter ini di-parsing dan muncul di laporan data lengkap, yang membuat parameter ini sangat berguna untuk menggabungkan atau memfilter data.  
+
+<div id="example-3" />
 
 > 📄 **Contoh**
 >

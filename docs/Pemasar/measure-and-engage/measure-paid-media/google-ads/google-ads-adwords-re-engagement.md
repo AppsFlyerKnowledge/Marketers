@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Ukur kampanye penargetan ulang Google Ads.
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Kampanye Penargetan Ulang Google Ads
 
 Dengan AppsFlyer, Anda dapat mengukur hasil **Kampanye Aplikasi Google Ads untuk Interaksi**.  
@@ -33,6 +35,8 @@ Kampanye penargetan ulang itu menargetkan pengguna yang telah menginstal aplikas
 * Pelibatan penargetan ulang oleh pengguna, yang tidak menginstal aplikasi Anda itu disebut **Instalasi ulang** atau **Atribusi ulang**.
 
 Untuk informasi lebih lanjut, lihat <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">Dokumentasi Google Ads untuk dukungan interaksi</Anchor>.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Menyiapkan kampanye aplikasi Google Ads untuk pelibatan
 
@@ -70,6 +74,8 @@ Event ini muncul di Google Ads jika sedikitnya satu user meluncurkan aplikasi se
 
 Untuk mempelajari cara mengimpor konversi di Google Ads, lihat <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">di sini</Anchor>.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Tidak seperti semua event lainnya, session\_start dapat diklaim oleh Google Ads API, bahkan jika Anda tidak mengimpor session\_start ke Google Ads dari AppsFlyer.
@@ -87,6 +93,8 @@ Anda tidak perlu menambahkan parameter tambahan apa pun ke deep link (is\_retarg
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## Pemasaran ulang dinamis dan kampanye belanja
 
 Pemasaran ulang dinamis untuk aplikasi dan kampanye belanja didukung di AppsFlyer. Platform AppsFlyer memperlakukan mereka sama seperti kampanye interaksi ulang lainnya.
@@ -94,6 +102,8 @@ Pemasaran ulang dinamis untuk aplikasi dan kampanye belanja didukung di AppsFlye
 Untuk mempelajari tentang Pemasaran ulang dinamis untuk aplikasi, klik <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">di sini</Anchor>.  
  Untuk mempelajari tentang Kampanye belanja, klik <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">di sini</Anchor>.  
  Untuk mempelajari lebih lanjut tentang Google Ads untuk Interaksi klik <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">di sini</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

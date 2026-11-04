@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Memahami pengidentifikasi perangkat yang didukung di SDK AppsFlyer.
 
+<div id="overview" />
+
 ## Ringkasan
 
 SDK AppsFlyer mengumpulkan pengidentifikasi perangkat untuk <Anchor target="_blank" href="/marketers/id/docs/basic-sdk-integration-guide#atribusi">tujuan atribusi</Anchor>. Pengidentifikasi dapat membantu Anda memetakan perjalanan pengguna dan memahami preferensi mereka.
@@ -41,15 +43,21 @@ SDK mendukung pengidentifikasi perangkat berikut untuk semua platform:
 | <span id="appsflyer-id"></span>AppsFlyer ID | ID AppsFlyer secara otomatis dibuat untuk setiap penginstalan aplikasi. Anda dapat menggunakan pengidentifikasi ini untuk melakukan tindakan berikut:<ul><li>Mengirim <Anchor target="_blank" href="/marketers/id/docs/server-to-server-events-api-for-mobile-s2s-mobile">in-app event server ke server</Anchor> .</li><li>Cocokkan ID AppsFlyer dengan catatan pengguna di sistem back end</li><li>Memetakan entri saat menggabungkan data dari pull dan push API.</li></ul> |
 | <span id="customer-user-id"></span>ID User Pelanggan | Bidang <Anchor target="_blank" href="/marketers/id/docs/customer-user-id-field-cuid">ID pengguna Pelanggan (CUID)</Anchor> adalah pengidentifikasi unik yang ditetapkan oleh pemilik aplikasi dan situs web. Mengatur CUID Anda sendiri di SDK AppsFlyer memungkinkan Anda melakukan referensi silang ID unik Anda dengan ID AppsFlyer dan pengidentifikasi lainnya. CUID tersedia di laporan <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary">data lengkap</Anchor> AppsFlyer. Anda juga dapat menggunakannya di API postback untuk melakukan referensi silang dengan ID internal Anda. |
 
+<div id="android-device-identifiers" />
+
 ## Pengidentifikasi perangkat Android
 
 SDK mendukung pengidentifikasi perangkat berikut untuk platform Android:
+
+<div id="apps-published-on-google-play" />
 
 #### Aplikasi dipublikasikan di Google Play
 
 | Pengenal perangkat | Tujuan |
 | --- | --- |
 | <span id="gaid"></span>GAID | Pengidentifikasi **yang dapat diatur ulang pengguna** untuk pengguna Google Play Android.<br /><br />Mulai SDK V4.8.0, AppsFlyer secara otomatis mengumpulkan identifier perangkat ini. |
+
+<div id="apps-published-in-third-party-app-stores" />
 
 #### Aplikasi yang diterbitkan di app store pihak ketiga
 
@@ -60,6 +68,8 @@ SDK mendukung pengidentifikasi perangkat berikut untuk platform Android:
 | <span id="imei"></span>IMEI | Pengidentifikasi perangkat seluler unik dan **tidak dapat diatur ulang** yang digunakan di pasar non-Google Play. SDK tidak secara otomatis mengumpulkan IMEI. Namun, jika ada kebutuhan untuk mengumpulkan pengidentifikasi ini, pengembang Anda dapat mengimplementasikan pengumpulan.<br /><br />**Catatan:**<ul><li>Dimulai dengan Android 10, akses ke IMEI <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes#non-resettable-device-ids">dibatasi</Anchor>.</li><li>IMEI tidak dapat digunakan bersamaan dengan GAID.</li></ul> |
 | <span id="android-id"></span>ID Android | Pengidentifikasi perangkat seluler unik dan **tidak dapat diatur ulang** yang digunakan di app store pihak ketiga. SDK tidak secara otomatis mengumpulkan ID Android. Namun, jika ada kebutuhan untuk mengumpulkan pengidentifikasi ini, pengembang Anda dapat mengimplementasikan pengumpulan.<br /><br />**Catatan:** ID Android tidak dapat digunakan bersama dengan GAID. |
 
+<div id="apple-device-identifiers" />
+
 ## Pengidentifikasi perangkat Apple
 
 SDK mendukung pengidentifikasi perangkat berikut untuk platform iOS:
@@ -68,6 +78,8 @@ SDK mendukung pengidentifikasi perangkat berikut untuk platform iOS:
 | --- | --- |
 | <span id="idfa"></span>idfa | Pengidentifikasi unik **yang dapat diatur ulang pengguna** untuk pengguna Apple iOS atau tvOS (Apple TV). Sejak rilis iOS 14.5, IDFA hanya tersedia jika pengguna menyetujui melalui <Anchor target="_blank" href="/marketers/id/docs/about-att-and-skan#att-principles">perintah ATT</Anchor>. |
 | <span id="idfv"></span>IDFV | Pengidentifikasi perangkat bersama digunakan oleh semua aplikasi dari **vendor yang sama** di perangkat. Setelah aplikasi pertama diinstal, ID ditetapkan padanya, dan aplikasi lain dari vendor yang sama diberi IDFV yang sama. Aplikasi dari vendor lain diberi IDFV berbeda.<br /><br />Selain itu, ketika semua aplikasi dari vendor tertentu dihapus, IDFV untuk vendor tersebut akan dihapus, dan setelah penginstalan baru, IDFV baru akan ditetapkan. |
+
+<div id="ctv--pc-and-console-app-device-identifiers" />
 
 ## Pengidentifikasi perangkat CTV
 

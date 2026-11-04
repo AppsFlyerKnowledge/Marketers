@@ -24,6 +24,8 @@ x-zendesk:
 
 ![alur migrasi](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="about-migrating-to-appsflyer-from-other-vendors" />
+
 ## Overview
 
 Bermigrasi ke AppsFlyer dari vendor lain mencakup tugas-tugas utama berikut:
@@ -42,13 +44,19 @@ Anda dapat mengerjakan tugas ini secara bersamaan. Namun, kami menyarankan Anda:
 >
 > Jika Anda ingin membandingkan pengukuran atribusi antara MMP Anda saat ini dan AppsFlyer untuk kampanye dan sumber media yang sama, lihat <Anchor target="_blank" href="/marketers/id/docs/measuring-attribution-with-multiple-mmps">artikel ini</Anchor>.
 
+<div id="tasks" />
+
 ## Tugas
 
 Tabel berikut menjelaskan ruang lingkup pekerjaan yang diperlukan untuk setiap tugas. Untuk melihat perincian tugas-tugas umum secara tepat sesuai urutan yang harus Anda selesaikan, serta untuk mencatat kemajuan Anda, unduh <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/1x6kdhfnfKLYHJgsROPUv7pQYC6i-Q5H3DdejBr8jKjw/export?format=xlsx">spreadsheet ini</Anchor>
 
+<div id="scope-of-work" />
+
 #### Lingkup kerja
 
 <table><thead><tr><th>Tugas</th><th>Tindakan yang diperlukan</th><th>Siapa saja yang terlibat</th><th>Perkiraan waktu</th><th>Catatan</th></tr></thead><tbody><tr><td>Prasyarat</td><td><ol><li> <a href="https://www.appsflyer.com/get-started" target="_blank">Buat akun AppsFlyer</a> .</li><li> <a href="./adding-an-app-to-appsflyer" target="_blank">Tambahkan aplikasi</a> di AppsFlyer</li><li>[Opsional] Ubah <a href="./set-up-re-attribution-window" target="_blank">jendela atribusi ulang</a> 90 hari default agar sesuai <span>dengan definisi Anda tentang pengguna aktif.</span> </li></ol></td><td>Pengguna dashboard Marketer/AppsFlyer</td><td><p>2 jam</p></td><td> </td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#integrasi-sdk">Integrasi SDK</a></td><td><ul><li>Integrasikan AppsFlyer SDK di aplikasi Anda.</li><li>Memetakan in-app event S2S atau SDK.</li><li>Perbarui versi aplikasi pada app store.</li></ul></td><td>Pengembang aplikasi:</td><td><p>1-2 minggu</p></td><td><ul><li> <strong>Direkomendasikan</strong>: Integrasikan SDK AppsFlyer dalam aplikasi pra-produksi untuk pengujian.</li><li>Aplikasi produksi harus diperbarui di app store setelah semua tugas lainnya selesai.</li></ul></td></tr><tr><td> <a href="./migration-to-appsflyer-from-other-vendors#migrasi-perangkat---opsional">Migrasi perangkat</a> [opsional]</td><td>Migrasikan ID perangkat untuk menghindari atribusi ganda dari pengguna yang sudah ada.</td><td>Data engineer</td><td>1-2 minggu</td><td rowspan="2"><ul><li>Pertimbangkan untuk menjeda kampanye saat ini sebelum migrasi, dan melanjutkannya setelah versi aplikasi diperbarui. </li><li>Pertimbangkan untuk mengulangi migrasi perangkat pada tanggal migrasi terakhir untuk memastikan cakupan yang lengkap. </li></ul></td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#migrasi-kampanye">Migrasi kampanye</a></td><td><ul><li>Integrasikan jaringan iklan Anda di AppsFlyer</li><li>Migrasikan kampanye yang ada dari:  <ul><li>SRN</li><li>Jaringan iklan non-SRN</li><li>Media yang Dimiliki Sendiri</li></ul></li></ul></td><td>Pemasar/manajer UA</td><td>1-3 minggu</td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#penyiapan-laporan-data">Penyiapan laporan data</a></td><td><ul><li>Adaptasi/petakan struktur laporan Anda saat ini ke struktur laporan AppsFlyer.</li><li>Bersiaplah untuk menerima laporan AppsFlyer.</li></ul></td><td>Data engineer</td><td>2-4 minggu</td><td> </td></tr></tbody></table>
+
+<div id="sdk-integration" />
 
 ### Integrasi SDK
 
@@ -80,6 +88,8 @@ SDK AppsFlyer yang terintegrasi ke dalam aplikasi adalah penghubung antara aplik
 
 </Accordion>
 
+<div id="device-migrationoptional" />
+
 ### Migrasi perangkat - opsional
 
 <div id="about-device-migration" />
@@ -89,6 +99,8 @@ SDK AppsFlyer yang terintegrasi ke dalam aplikasi adalah penghubung antara aplik
 Migrasi perangkat adalah proses mengunggah daftar ID perangkat pengguna Anda yang sudah ada (IDFA, IDFV, GAID, CUID) ke AppsFlyer. Anda harus melakukan proses ini sebelum merilis versi aplikasi baru, yang akan menyertakan SDK AppsFlyer. Ada dua opsi saat memigrasi perangkat, migrasi yang [diatribusikan](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) atau yang [tidak diatribusikan](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration) .
 
 Migrasi perangkat memecahkan masalah data yang terkait dengan pengguna aplikasi yang sudah ada yang mengunduh aplikasi, dan diatribusi oleh vendor Anda sebelumnya. Misalnya, biaya ganda SRN, yang terjadi ketika pengguna awalnya diatribusi ke SRN di bawah vendor sebelumnya, dan yang masih dalam jendela lookback, diklaim oleh SRN lagi di bawah AppsFlyer.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -128,6 +140,8 @@ Setelah Anda bermigrasi perangkat, data ditampilkan di AppsFlyer sebagai berikut
 
 Perangkat yang dimigrasikan ke AppsFlyer dengan metode ini memiliki in-app event dan sesi yang dicatat serta ditampilkan sesuai dengan sumber media yang dilaporkan oleh vendor atribusi sebelumnya, dan menurut kebijakan penyimpanan data jaringan iklan.
 
+<div id="attributed-device-migration-csv-structure" />
+
 #### Struktur CSV migrasi perangkat yang teratribusi
 
 | Nama   <br />kolom | Deskripsi | Wa-jib | Contoh |
@@ -165,6 +179,8 @@ Perangkat yang dimigrasikan ke AppsFlyer dengan metode ini memiliki in-app event
 
 Perangkat yang dimigrasikan ke AppsFlyer dengan metode ini dicatat (tetapi tidak ditampilkan) sebagai pengguna organik. In-app event dan sesi-nya juga dicatat dan ditampilkan sebagai organik.
 
+<div id="non-attributed-device-migration-csv-file-structure" />
+
 #### Struktur file CSV migrasi perangkat yang tidak diatribusikan
 
 | Kolom | Kapan digunakan | Contoh |
@@ -188,6 +204,8 @@ Perangkat yang dimigrasikan ke AppsFlyer dengan metode ini dicatat (tetapi tidak
 
 </Accordion>
 
+<div id="campaign-migration" />
+
 ### Migrasi kampanye
 
 Alihkan kampanye pemasaran yang ada ke AppsFlyer untuk mengaktifkan atribusi AppsFlyer, dan hindari tagihan ganda dan hilangnya data atribusi.
@@ -203,6 +221,8 @@ SRN merespons Mitra Pengukuran Seluler (MMP) ketika diminta tentang interaksi pe
 **Untuk memigrasi kampanye SRN** :
 
 * Aktifkan dan konfigurasikan <Anchor target="_blank" href="/marketers/id/docs/self-reporting-networks-srns#srn-diintegrasikan-dengan-appsflyer">SRN</Anchor> yang relevan di AppsFlyer.
+
+<div id="note-1" />
 
 > 📘 **Catatan**
 >
@@ -257,6 +277,8 @@ Untuk atribusi SKAdNetwork (SKAN), Anda hanya dapat meminta satu SDK yang memper
 <Anchor target="_blank" href="/marketers/id/docs/skan-conversion-studio">Pelajari tentang mengatur nilai konversi SKAN di AppsFlyer.</Anchor>
 
 </Accordion>
+
+<div id="data-report-setup" />
 
 ### Penyiapan laporan data
 

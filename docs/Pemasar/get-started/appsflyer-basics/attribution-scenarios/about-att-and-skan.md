@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## Pengukuran atribusi di lingkungan ATT
 
 AppsFlyer menyediakan untuk Anda beberapa metode atribusi yang memberikan Anda berbagai solusi atribusi yang lengkap. Persyaratan persetujuan [ATT](/docs/about-att-and-skan#att-principles) memengaruhi atribusi dalam konteks kampanye aplikasi-ke-aplikasi berbayar. Dengan demikian, pemasang iklan perlu menggunakan campuran solusi atribusi dan pelaporan. 
@@ -109,7 +111,11 @@ Di iOS 14, penginstalan dapat dikaitkan dengan dashboard tradisional dan SKAN. S
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## Pengetahuan penting iOS 14
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### Artikel dan tautan iOS 14 dan SKAN
 
@@ -131,6 +137,8 @@ Di iOS 14, penginstalan dapat dikaitkan dengan dashboard tradisional dan SKAN. S
 
 <Accordion title="Dampak iOS 14 pada atribusi dan pengukuran">
 
+<div id="metrics" />
+
 #### **Metrik**
 
 Pertimbangkan bahwa karena ATT, metrik yang berkaitan dengan pengguna yang tidak menyetujui ATT dapat terdampak sebagai berikut:
@@ -142,6 +150,8 @@ Pertimbangkan bahwa karena ATT, metrik yang berkaitan dengan pengguna yang tidak
 | Penargetan ulang | Penginstalan organik dan in-app event | Keterlibatan ulang, Atribusi ulang |  |
 | Apple Search Ads | -- | -- | Tidak Berubah. Pengguna yang menyetujui dan tidak menyetujui diatribusikan dengan benar. |
 
+<div id="deep-linking" />
+
 #### **Penautan Langsung**
 
 Penautan langsung yang ditangguhkan menggunakan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-legacy-apis#deferred-deep-linking">metode lama onConversionDataSuccess</Anchor> mungkin tidak berfungsi untuk iOS 14.5+ karena memerlukan data atribusi yang mungkin tidak tersedia karena perlindungan privasi.
@@ -149,6 +159,8 @@ Penautan langsung yang ditangguhkan menggunakan <Anchor target="_blank" href="ht
 Kami merekomendasikan penggunaan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">penautan langsung terpadu (Unified Deep Linking-UDL)</Anchor>. UDL sesuai dengan standar privasi iOS 14.5+ dan hanya menampilkan parameter yang relevan dengan penautan langsung dan penautan langsung yang ditangguhkan: `deep_link_value` dan `deep_link_sub1`. Parameter atribusi seperti `media_source`, `campaign`, dan `af_sub1-5`menampilkan null dan tidak dapat digunakan untuk tujuan penautan langsung. <Anchor target="_blank" href="https://content.appsflyer.com/ios-14-hub/deep-linking-deferred-deep-linking/">Pelajari lebih lanjut</Anchor>
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## FAQ—iOS 14+
 
@@ -172,6 +184,8 @@ Untuk aplikasi yang menggunakan SDK yang lebih lama dari V6.10: SKAN 4 tidak aka
 Tidak. Anda hanya perlu meminta persetujuan ATT jika Anda mau *melacak* pengguna, mengumpulkan IDFA, atau keduanya.
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## PERTANYAAN UMUM—SKAN
 
@@ -230,6 +244,8 @@ Seringkali, perbedaan ini disebabkan karena melihat laporan Data Locker di tempa
 Contoh: Dalam laporan 12 Juni, laporan ini menampilkan 100 penginstalan dari Google yang terjadi pada 11 Juni. Dalam laporan 24 Juni, dikatakan 100 penginstalan YANG LEBIH BANYAK terjadi pada 11 Juni. Anda harus melihat semua laporan selama 13 hari terakhir (dari 12 Juni-24 Juni) dan menggabungkan berdasarkan waktu penginstalan atau stempel waktu jaringan iklan untuk mendapatkan pembacaan yang akurat dari total 200 penginstalan yang terjadi pada 11 Juni.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

@@ -24,18 +24,26 @@ x-zendesk:
 ---
 > **Sekilas:** Ukur interaksi aplikasi dan kualitas pengguna Anda, dan optimalkan kampanye menggunakan data in-app event.
 
+<div id="overview" />
+
 ## Ringkasan
 
 In-app event memungkinkan pemasar untuk mengukur interaksi aplikasi dan kualitas pengguna dari berbagai sumber berbeda dan untuk membangun strategi akuisisi pengguna yang tepat. Jaringan iklan menggunakan informasi in-app event untuk mengoptimalkan kampanye dan menjalankan kampanye biaya per tindakan/event. Jaringan iklan menerima data in-app event melalui postback—yang dikirim dalam waktu aktual. <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview">Pelajari lebih banyak tentang rich in-app event</Anchor>.
+
+<div id="postback-in-app-event-selection" />
 
 ## Pemilihan in-app event postback
 
 Pemasar dapat memilih untuk in-app event mana yang ingin mereka kirimkan postback ke jaringan iklan, menggunakan setelan yang dijelaskan dalam artikel ini.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > * In-app event mencakup **event yang ditolak**, artinya in-app event diblokir oleh Protect360 atau event ditemukan tidak sesuai dengan aturan validasi target.
 > * Jika bagian **Postback in-app event** tidak ada di tab **Integrasi** , itu berarti mitra belum menyiapkan catatan in-app event dengan AppsFlyer dalam konfigurasi awalnya. Mitra dapat menghubungi AppsFlyer menggunakan <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget asisten mitra</Anchor> untuk menyelesaikan integrasi.
+
+<div id="in-app-event-postback-window" />
 
 ## Periode waktu postback in-app event
 
@@ -56,13 +64,19 @@ Postback selalu dikirim berdasarkan pengaturan jendela **saat ini** . Lihat cont
 | 15 Januari | Periode waktu diubah menjadi 20 hari. |
 | 18 Januari | Pengguna melakukan pembelian lagi.<br /><br />Kali ini postback dikirim—karena event tersebut termasuk dalam periode waktu saat ini (20 hari). |
 
+<div id="default-postback-window" />
+
 ### Periode waktu postback default
 
 Saat mulai menyiapkan postback in-app event, periode waktu default secara otomatis diatur ke enam bulan.
 
+<div id="note-2" />
+
 > 📘 **Catatan**
 >
 > Jika Anda sudah mulai menggunakan postback in-app event dengan mitra tertentu sebelum 30 Juli 2019, pengaturan default untuk periode waktu tersebut adalah Seumur Hidup. Artinya, postback in-app event selalu dikirim.
+
+<div id="who-can-configure-postback-windows" />
 
 ### Siapa yang dapat mengonfigurasi periode waktu postback
 
@@ -70,6 +84,8 @@ Saat mulai menyiapkan postback in-app event, periode waktu default secara otomat
 * Agensi, jika mereka diberi izin untuk **Izinkan untuk mengonfigurasi postback in-app event** .  
   **Catatan:** Pemasar dan agensi yang bekerja dengan jaringan iklan yang sama dapat mengonfigurasi periode waktu postback secara terpisah satu sama lain, berdasarkan kontrak mereka dengan jaringan.
 * Mitra, jika mereka diberi izin untuk **Izinkan untuk mengonfigurasi postback in-app event** .
+
+<div id="event-mapping" />
 
 ## Pemetaan event
 
@@ -79,9 +95,13 @@ Misalnya, saat pengguna membeli sesuatu melalui aplikasi, pemasar dapat menamain
 
 Untuk memastikan event pemasar cocok dengan event yang sama dengan mitra, nama event harus dipetakan.
 
+<div id="note-3" />
+
 > 📘 **Catatan**
 >
 > Event yang dipetakan di tab Integrasi untuk mitra tertentu berlaku untuk <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">postback standar dan SKAN.</Anchor>
+
+<div id="mapping-methods" />
 
 ### Metode pemetaan
 
@@ -90,6 +110,8 @@ Setiap mitra memutuskan metode mana yang akan digunakan untuk memetakan in-app e
 * [Masukkan ID event mitra](/docs/in-app-event-postback-configuration#h_c513e6d4-d46f-4070-a98d-1888a5ea939d)
 * [Pilih ID event dari daftar](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [Kirim event apa adanya (belum dipetakan)](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **Catatan**
 >
@@ -102,6 +124,8 @@ Setiap mitra memutuskan metode mana yang akan digunakan untuk memetakan in-app e
 
 * **Event AppsFlyer**: Dari daftar event aplikasi Anda, pilih event.
 * **dipetakan ke event mitra**: Di bidang teks, masukkan ID event yang diterima dari mitra, yang sesuai dengan event aplikasi Anda (event AppsFlyer)
+
+<div id="note-5" />
 
 > 📘 **Catatan**
 >
@@ -134,6 +158,8 @@ Anda dapat memilih event mana yang belum dipetakan untuk dikirim ke mitra:
 * **Tambahkan secara manual:** Pilih event tertentu.
 * **Kirim semua event (tidak termasuk uninstal dan sesi)**: Kirim semua event Anda. Ini tidak termasuk uninstal, sesi (peluncuran aplikasi), dan event `af_app_opened` .
 
+<div id="note-6" />
+
 > 📘 **Catatan**
 >
 > Untuk mencegah pemasang iklan membagikan terlalu banyak informasi secara tidak sengaja dengan platform analisis pihak ketiga, kami telah menghapus opsi **Kirim semua event (tidak termasuk uninstal dan sesi)** untuk platform ini, mulai Maret 2019. Platform Analisis yang dikonfigurasi sebelum tanggal ini masih mempertahankan opsi penyiapan ini.
@@ -162,12 +188,16 @@ Anda dapat memilih event mana yang belum dipetakan untuk dikirim ke mitra:
 
 Untuk informasi selengkapnya tentang event pemetaan, lihat <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postback in-app event</Anchor>.
 
+<div id="options-for-sending-postbacks" />
+
 ### Pilihan untuk mengirim postback
 
 Untuk setiap event, Anda dapat memilih kapan akan mengirim postback (dalam periode waktu postback):
 
 * **Khusus mitra ini**: Kirim postback hanya jika event diatribusikan ke mitra ini—artinya, pengguna yang melakukannya berasal dari mitra ini.
 * **Semua sumber media termasuk organik**: Kirim postback ke semua sumber media untuk event yang diatribusikan ke mitra mana pun dan untuk event organik—artinya, jika pengguna yang melakukannya berasal dari sumber media mana pun.
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### Data untuk disertakan dalam postback
 
@@ -182,6 +212,8 @@ Disarankan untuk berbagi pendapatan jika Anda ingin jaringan iklan mengoptimalka
 Dalam postback, `af_revenue` dan `af_currency` ditulis di luar event\_value JSON sebagai **moneter** dan **mata uang** dan dapat dikirim secara terpisah. Contoh struktur postback: `https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&content_id=(af_content_id)`
 
 **Catatan**: Saat memilih opsi dengan **Tanpa nilai & Tanpa pendapatan** atau **Nilai & tanpa pendapatan**, masing-masing parameter ditutupi dengan T/A.
+
+<div id="h_01HBZCRNKGBEDSBZEY87KYQ60G" />
 
 > 📄 **Contoh**
 >
@@ -198,6 +230,8 @@ Dalam postback, `af_revenue` dan `af_currency` ditulis di luar event\_value JSON
 > | **Nilai & tidak ada pendapatan** | `{"af_currency":"N/A","af_content_id":"1234567",`<br /><br />`"af_revenue":"N/A","af_content_type":"category_a"}`<br /><br />`&monetary=N/A&content_id=1234567` | N/A | N/A |
 > | **Nilai & pendapatan** | `"af_currency":"USD","af_content_id":"1234567",`<br /><br />`"af_revenue":200,"af_content_type":"category_a"}`<br /><br />`&monetary=1.856918&content_id=1234567` | 50,87 | USD |
 
+<div id="conditional-in-app-event-postbacks" />
+
 ### Postback in-app event bersyarat
 
 Filter postback in-app event menggunakan beberapa kondisi yang dapat dipetakan ke berbagai event. Hanya event yang memenuhi ketentuan filter yang dikirim ke mitra, termasuk SRN dan mitra Analisis. Gunakan fitur ini untuk:
@@ -205,6 +239,8 @@ Filter postback in-app event menggunakan beberapa kondisi yang dapat dipetakan k
 * Mengoptimalkan segmentasi, personalisasi, dan retensi pengguna
 * Meminimalkan data
 * Melindungi privasi pengguna
+
+<div id="h_01HBZCRNKHRTMHP3JPFVCS8D6N" />
 
 > 📄 **Contoh**
 >
@@ -230,6 +266,8 @@ Filter postback in-app event menggunakan beberapa kondisi yang dapat dipetakan k
    * Event mitra untuk memetakan persyaratan (menggunakan salah satu dari [opsi pemetaan](/docs/in-app-event-postback-configuration#metode-pemetaan) ini)
 4. Anda dapat menambahkan lebih banyak persyaratan, pastikan Anda memasukkan semua bidang persyaratan yang ada terlebih dahulu.
 5. Klik **Save Integration (Simpan Integrasi)**.
+
+<div id="considerations" />
 
 #### Pertimbangan
 
@@ -258,10 +296,14 @@ Saat mengonfigurasi persyaratan, pastikan pertimbangan berikut dipenuhi untuk ev
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **Catatan**
 >
 > * Direkomendasikan untuk menguji fitur ini dengan aplikasi pengujian atau untuk event minor guna memahami dampaknya terhadap pengoptimalan kampanye.
 > * Untuk melihat <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">konten postback</Anchor>, Anda dapat mengunduh laporan postback data lengkap.
+
+<div id="editing-multiple-events" />
 
 ### Mengedit beberapa event
 
@@ -282,6 +324,8 @@ Saat memetakan event, nilai di bidang **untuk pengguna dari** dan **termasuk** 
 
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### Event khusus
 
 Daftar event yang tersedia untuk pemetaan hanya menampilkan event yang telah dilaporkan oleh SDK atau dari event server-ke-server ke AppsFlyer. Jika event yang ingin Anda petakan tidak muncul di daftar tarik-turun, hal ini dapat terjadi karena alasan berikut:
@@ -299,6 +343,8 @@ Daftar event yang tersedia untuk pemetaan hanya menampilkan event yang telah dil
 3. Petakan event ke pengidentifikasi mitra.
 4. Klik **Simpan Integrasi** untuk memastikan pemetaan direkam.
 
+<div id="note-10" />
+
 > 📘 **Catatan**
 >
 > * Saat event khusus ditambahkan di bawah mitra tertentu, event tersebut ditambahkan ke daftar event untuk semua mitra. Artinya, Anda dapat melihat event ini di bawah daftar tarik-turun event mitra mana pun.
@@ -308,6 +354,8 @@ Daftar event yang tersedia untuk pemetaan hanya menampilkan event yang telah dil
 
 * Tidak dapat menambahkan event khusus
 * Hanya dapat melihat dan/atau memetakan event setelah pemasar menambahkan event dan memberikan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">izinyang</Anchor> diperlukan
+
+<div id="event-mapping-by-ad-networks" />
 
 ## Pemetaan event oleh jaringan iklan
 
@@ -319,6 +367,8 @@ Pemasar dapat mengizinkan jaringan iklan untuk memetakan event dan menonaktifkan
 ![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
 
 Setelah jaringan iklan menerima izin, mereka dapat memetakan event dengan mengikuti instruksi di [Ketikkan ID Event Ke Bidang Teks](/docs/in-app-event-postback-configuration#metode-pemetaan).
+
+<div id="event-mapping-by-agencies" />
 
 ## Pemetaan event oleh agensi
 
@@ -332,6 +382,8 @@ Pemasar dapat mengizinkan agensi untuk mengonfigurasi postback in-app event.
 4. Pilih event tertentu yang boleh dibagikan oleh agensi.
 
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+
+<div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
 > 📄 **Lihat juga**
 >

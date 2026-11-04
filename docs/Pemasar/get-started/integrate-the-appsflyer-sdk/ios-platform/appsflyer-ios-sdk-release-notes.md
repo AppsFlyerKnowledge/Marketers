@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Sekilas:** Catatan rilis untuk iOS SDK `V4+`.
 
+<div id="ios-sdk-release-notes" />
+
 ## iOS SDK V6
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk">Panduan integrasi SDK iOS bagi pengembang</Anchor>
@@ -396,6 +398,8 @@ AppsFlyer menggunakan checksum md5:
 | 4.7.0 | c3c0a453caa9971492ef8acd8bee04ae | cadeab0479c4a723173943d77d253051 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

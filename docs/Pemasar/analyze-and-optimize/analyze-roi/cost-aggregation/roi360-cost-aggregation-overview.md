@@ -30,6 +30,8 @@ x-zendesk:
 
 ![roi360_image.png](https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png)
 
+<div id="cost-aggregation" />
+
 ## Agregasi biaya
 
 **ROI360**:
@@ -43,6 +45,8 @@ Metrik berikut tersedia bagi pemasang iklan tanpa langganan ROI360:
 
 * <Anchor target="_blank" href="/marketers/id/docs/view-aggregated-cost-data-for-attribution-links">Data biaya berdasarkan klik</Anchor>.
 * Data klik dan impresi SRN, dikonfigurasi melalui tab **Biaya** mitra terintegrasi SRN.
+
+<div id="principles-of-cost-data-aggregation" />
 
 ## Prinsip agregasi data biaya
 
@@ -71,6 +75,8 @@ Untuk keperluan pemahaman tabel, penjelasan berikut berlaku, kecuali dinyatakan 
 * UA: Data biaya untuk kampanye akuisisi pengguna dengan paling sedikit 1 penginstalan yang tercatat baru-baru ini (artinya dalam sekitar 7 hari terakhir).
 * Terpadu: Data biaya semua kampanye, termasuk kampanye yang tidak mencatat instalasi baru-baru ini (artinya dalam sekitar 7 hari terakhir). Tabel ini menunjukkan kapan data hanya tersedia untuk kampanye dengan setidaknya 1 penginstalan yang tercatat baru-baru ini.
 * Jika perubahan nama kampanye tidak didukung, kedua nama kampanye akan ditampilkan, satu dengan data atribusi, dan satu lagi dengan data biaya. Nama kampanye yang ditampilkan tidak akan menyertakan gambaran data lengkap.
+
+<div id="cost-data-availability-and-reports-table" />
 
 #### Ketersediaan dan laporan data biaya
 
@@ -111,6 +117,8 @@ Untuk sumber media tertentu, biaya dapat diperoleh melalui lebih dari satu metod
 * Mekanisme ini berdampak pada laporan data agregat dan dashboard.
 * Data biaya klik yang tersedia dalam laporan data lengkap tidak terdampak oleh mekanisme penentuan prioritas.
 
+<div id="example-1" />
+
 > 📄 **Contoh**
 >
 > **Skenario:** Jaringan iklan melaporkan biaya per klik, namun Anda memutuskan untuk mengaktifkan API Biaya jaringan iklan.
@@ -133,6 +141,8 @@ Untuk sumber media tertentu, biaya dapat diperoleh melalui lebih dari satu metod
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Daftar jaringan iklan
 
 <div id="ad-networks-supporting-cost-api" />
@@ -150,6 +160,8 @@ Unduh file: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5
 <Embed title="ROI360—ringkasan agregasi biaya" typeOfEmbed="iframe" url="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pubhtml?widget=true&amp;headers=false" providerUrl="https://docs.google.com" height="500px" />
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Karakteristik dan batasan
 

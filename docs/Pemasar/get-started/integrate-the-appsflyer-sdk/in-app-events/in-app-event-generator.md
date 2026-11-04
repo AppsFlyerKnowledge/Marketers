@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Secara otomatis membuat kode aplikasi (Android dan iOS asli, Unity) untuk mengirim in-app event dengan menentukan nama event dan konten sesuai dengan kebutuhan bisnis Anda.
 
+<div id="introduction" />
+
 ## Pengantar
 
 In-app event adalah alat utama bagi **pemilik aplikasi untuk mengukur kualitas pengguna mereka yang berasal dari berbagai sumber** berdasarkan tindakan yang diambil setelah penginstalan aplikasi. Event juga sering digunakan untuk melakukan kampanye pemasaran berbasis CPA.
@@ -37,9 +39,13 @@ Dengan menggunakan In-app event generator, pemasar dapat:
 * **Mengirimkan kode yang dihasilkan secara otomatis** ke pembuat aplikasi seluler Android dan iOS mereka – **menghemat hari kerja,** komunikasi yang berlebihan, dan potensi kesalahan.
 * **Menggunakan kembali pekerjaan mereka** jika nanti mereka memperbarui acara, menambahkan event baru, atau menambahkan aplikasi baru.
 
+<div id="using-the-in-app-event-generator" />
+
 ## Menggunakan in-app event generator
 
 **Menggunakan in-app event generator untuk membuat rangkaian event untuk aplikasi baru, atau untuk memperbarui rangkaian yang sudah ada.**
+
+<div id="creating-a-new-event-set" />
 
 ### Membuat rangkaian event baru
 
@@ -51,6 +57,8 @@ Dengan menggunakan In-app event generator, pemasar dapat:
 4. Klik tombol **`</>` Code** untuk melihat dan menyalin kode yang dihasilkan untuk programmer Anda: Java (Android asli), Obj-C/Swift (iOS asli), atau C# (Unity).
 5. Klik **Download .zip** untuk menyimpan rangkaian event untuk digunakan di masa mendatang atau untuk berkolaborasi dengan programmer dan kolega.
 
+<div id="updating-an-existing-event-set" />
+
 ### Memperbarui rangkaian event yang sudah ada
 
 **Untuk memperbarui rangkaian event yang sudah ada**
@@ -61,6 +69,8 @@ Dengan menggunakan In-app event generator, pemasar dapat:
 4. Klik tombol **`</>` Code** untuk melihat dan menyalin kode yang dihasilkan untuk programmer Anda: Java (Android asli), Obj-C/Swift (iOS asli), atau C# (Unity).
 5. Klik **Download .zip** untuk menyimpan rangkaian event untuk digunakan di masa mendatang atau untuk berkolaborasi dengan programmer dan kolega.
 
+<div id="adding-events" />
+
 ### Menambahkan event
 
 **Untuk menambahkan event baru ke rangkaian event:**
@@ -70,6 +80,8 @@ Dengan menggunakan In-app event generator, pemasar dapat:
 3. Masukkan tujuan event, yang menjelaskan skenario bisnis.
 4. Masukkan tindakan pemicu untuk event tersebut, yang menjelaskan waktu dalam perjalanan pengguna saat event harus dikirim. Penjelasan ini ditambahkan sebagai komentar dalam kode yang dihasilkan untuk referensi cepat oleh programmer.
 5. [Opsional] Tambahkan satu atau beberapa parameter ke event.
+
+<div id="adding-parameters" />
 
 ### Menambahkan parameter
 
@@ -82,6 +94,8 @@ Dengan menggunakan In-app event generator, pemasar dapat:
 5. Untuk membantu programmer Anda, ketikkan deskripsi umum, jenis bidang, atau sumber yang sesuai untuk nilai parameter di aplikasi Anda. Ini muncul sebagai komentar untuk setiap parameter event dalam kode yang dihasilkan.
 
 **Catatan**:<Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview#predefined-and-custom-events">Penamaan standar</Anchor> memungkinkan pemetaan event dan parameter secara otomatis ke mitra dan merupakan metode yang direkomendasikan.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

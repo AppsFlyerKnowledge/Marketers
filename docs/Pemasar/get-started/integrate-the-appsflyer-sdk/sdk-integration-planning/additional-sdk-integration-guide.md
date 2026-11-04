@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pertimbangkan fungsionalitas SDK tambahan yang tersedia dan bekerja sama dengan programmer Anda untuk mengimplementasikan API seperti pengukuran uninstal, atribusi undangan pengguna, notifikasi push, dan pengaturan privasi.
 
+<div id="additional-attribution-methods" />
+
 ## Metode atribusi tambahan
 
 Pertimbangkan metode atribusi tambahan ini jika Anda berencana untuk mengukur TV, uninstal, atau aplikasi yang sudah diinstal sebelumnya.
@@ -66,6 +68,8 @@ Dengan AppsFlyer, Anda dapat dengan mudah mengatribusikan penginstalan aplikasi 
 
 </Accordion>
 
+<div id="sessions" />
+
 ## Sesi
 
 Ukur interaksi pengguna dengan aplikasi Anda dengan menghitung jumlah sesi pengguna selama periode tertentu. 
@@ -91,6 +95,8 @@ Menyetel **nilai tinggi** **ke waktu khusus antar-peluncuran dapat mengganggu AP
 Anda dapat <Anchor target="_blank" href="/marketers/id/docs/measure-sessions#session-reporting-by-the-app-sdk">melaporkan sesi pengguna secara manual</Anchor> . Ini dapat berguna untuk aplikasi utilitas yang berjalan di latar belakang.
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## Media yang Dimiliki Sendiri
 
@@ -180,6 +186,8 @@ Dokumentasi pengembang tersedia sebagai berikut:
 **Tips!** <Anchor target="_blank" href="/marketers/id/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">OneLink Smart Script</Anchor> dapat membantu pemilik aplikasi mengonversi pengunjung situs web menjadi pengguna aplikasi.
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## Privasi pengguna
 

@@ -28,9 +28,13 @@ x-zendesk:
 
 Dengan mengintegrasikan Tealium dengan AppsFlyer, pelanggan seluler dapat memanfaatkan SDK atribusi seluler AppsFlyer dan mengirimkan data konversi atribusi langsung ke profil Tealium AudienceStream mereka.
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions#pembatasan-sumber-media">Beberapa sumber media</Anchor> membatasi pembagian data dengan pihak ketiga. Oleh karena itu, postback untuk event terbatas tidak akan dikirim ke mitra ini, terlepas dari pilihan yang dikonfigurasi untuk mengirim postback.
+
+<div id="setting-up-tealium" />
 
 ## Menyiapkan Tealium
 
@@ -39,6 +43,8 @@ Anda dapat memilih salah satu cara berikut untuk mengintegrasikan Tealium dengan
 * Integrasi sisi klien
 * Integrasi sisi server
 
+<div id="client-side-integration" />
+
 ### Integrasi sisi klien
 
 Gunakan perintah jarak jauh untuk perpustakaan iOS dan Android, yang memungkinkan kode asli dipicu di SDK AppsFlyer.
@@ -46,6 +52,8 @@ Gunakan perintah jarak jauh untuk perpustakaan iOS dan Android, yang memungkinka
 **Untuk mengintegrasikan Tealium menggunakan integrasi sisi klien:**
 
 * Ikuti <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">panduan integrasi perintah jarak jauh</Anchor>
+
+<div id="server-side-integration" />
 
 ### Integrasi sisi server
 

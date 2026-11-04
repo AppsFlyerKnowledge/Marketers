@@ -24,6 +24,8 @@ Phishing is a deceptive tactic used by cybercriminals to obtain sensitive inform
 
 At AppsFlyer, we are committed to maintaining the security and integrity of our digital environment. This article outlines how to identify phishing attempts and protect yourself from malicious activity, with particular emphasis on verifying the legitimacy of communications related to AppsFlyer.
 
+<div id="official-appsflyer-domain" />
+
 ## **Official AppsFlyer domain**
 
 The only official AppsFlyer domain is: [https://www.appsflyer.com](https://www.appsflyer.com)
@@ -31,6 +33,8 @@ The only official AppsFlyer domain is: [https://www.appsflyer.com](https://www.a
 Any other domain is not affiliated with AppsFlyer and may be used as part of a phishing scheme. Users are strongly advised to exercise caution when accessing websites or clicking on links purporting to represent AppsFlyer.
 
 Always verify that the domain in use is accurate and corresponds exactly to our official website.
+
+<div id="identifying-a-phishing-attempt" />
 
 ## **Identifying a phishing attempt**
 
@@ -61,6 +65,8 @@ If you encounter unusual requests for information, actions or upfront fees be ve
 
 If you encounter requests to communicate via messaging apps, such as WhatsApp, Telegram etc. you should view such requests as very suspicious and avoid such requests. 
 
+<div id="be-aware-of-employment-scams" />
+
 ## **Be aware of employment scams**
 
 A recent common scam is an employment scam in which scammers pretend to  be employers or recruiters in order to trick people into giving personal information, paying for fake job offers, or other forms of financial exploitation.   
@@ -70,6 +76,8 @@ Therefore, you should be aware of the following warning signs:
 * Request for Upfront Fees: Legitimate employers never ask for money to process applications, training, for the work or equipment.
 * Vague Job Descriptions: Scammers often provide unclear or overly broad job descriptions.
 * Requests for Personal Information: Legitimate employers do not ask for sensitive personal information (like Social Security numbers or bank account details) early in the hiring process.
+
+<div id="reporting-suspicious-activity" />
 
 ## **Reporting suspicious activity**
 
@@ -81,6 +89,8 @@ If you receive a communication or encounter a website that appears to be affilia
 * Report the activity promptly to our security team at: security@appsflyer.com.
 
 Your proactive reporting enables us to respond swiftly and helps protect the wider community.
+
+<div id="best-practices-for-online-safety" />
 
 ## **Best practices for online safety**
 

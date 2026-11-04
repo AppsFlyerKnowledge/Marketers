@@ -31,6 +31,8 @@ Watch the video below to learn:
 * How to set up an agency integration with your app?
 * How can you get both the agency and ad network attribution data?
 
+<div id="important" />
+
 > 🚧 **Important!**
 >
 > When working with agencies, turning off an integrated partner does not automatically disable certain attribution capabilities for the agencies linked to that partner:

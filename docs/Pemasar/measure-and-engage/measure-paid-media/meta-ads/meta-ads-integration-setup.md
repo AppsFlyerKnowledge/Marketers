@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang mengintegrasikan Meta ads dengan AppsFlyer.
 
+<div id="meta-ads-setup-guide" />
+
 ## Panduan pengaturan Meta ads
 
 Berapa lama waktu yang diperlukan untuk mulai menghubungkan iklan aplikasi seluler Meta ads Anda dengan AppsFlyer?
@@ -55,6 +57,8 @@ Untuk mengintegrasikan Meta ads dengan AppsFlyer, pertama, buat <Anchor target="
    ![meta-ads-for-developters.jpg](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
 
 AppsFlyer mengatribusikan data per ID Aplikasi. ID Aplikasi Facebook yang sama dapat digunakan untuk [aplikasi Android dan iOS Anda](https://developers.facebook.com/docs/app-ads/app-setup/). Perhatikan bahwa untuk iOS 14+, Meta ads membatasi akun iklan hingga sembilan akun per aplikasi.
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## Pengaturan atribusi Meta ads dasar
 
@@ -103,6 +107,8 @@ Masih belum melihat hasilnya di AppsFlyer? Lihat Pemecahan masalah integrasi Met
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## Pengaturan atribusi Meta ads lanjutan
 
 Setelah mengatur atribusi dasar untuk Meta ads, kini waktunya untuk mengatur atribusi lanjutan cepat.
@@ -126,6 +132,8 @@ Efektif 29 Oktober 2021, hanya pelaporan agregat tersedia untuk pengiklan. Ini b
 Ini berlaku untuk semua pemasang iklan, sistem operasi, dan MMP. Ini terkait data tingkat perangkat untuk semua pengguna iOS dan Android, apa pun status izin ATT atau personalisasi iklannya.
 
 AppsFlyer terus menerima data tingkat perangkat dari Meta ads, yang berarti bahwa kemampuan atribusi dan pelaporan kami (termasuk atribusi multi-sentuh, LTV, ROI, kohort, laporan retensi, perlindungan penipuan, Audiens, dan layanan lainnya) tetap tidak berubah. Lihat <Anchor target="_blank" href="/marketers/id/docs/aggregated-and-analytics-reporting-overview">alat pelaporan gabungan dan analitik</Anchor>.
+
+<div id="getting-userlevel-data-for-android-installs" />
 
 #### Mendapatkan data tingkat pengguna untuk penginstalan Android dan in-app event
 
@@ -236,10 +244,14 @@ Baca lebih lanjut tentang bagaimana iklan Meta mendefinisikan klik dan tampilan.
 
 **Untuk menghapus akun Meta ads yang terhubung: IN pada kolom tindakan, arahkan kursor ke akun dan klik Hapus koneksi**
 
+<div id="notes" />
+
 > 📘 **Catatan**
 >
 > * Jika Anda sudah masuk ke iklan Meta, ketika Anda mengklik **f login** tombol, jendela akan segera terbuka dan menutup. Ini adalah perilaku normal.
 > * Jika Anda memiliki beberapa pengguna dengan izin untuk iklan Meta, praktik terbaik adalah melakukan login untuk mereka semua, untuk <Anchor target="_blank" href="/marketers/id/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">hindari mendapatkan data parsial</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Status sinkronisasi data biaya
 
@@ -280,6 +292,8 @@ Pelajari lebih banyak tentang memperkaya data Anda dengan <Anchor target="_blank
   * Titik (.)
   * Set karakter non-Latin (Inggris): Sebagai tanggal 12 Januari 2020, iklan Meta menolak Karakter Cina. AppsFlyer belum menguji set karakter lain dan Anda harus gunakan ini hanya setelah memverifikasi dengan Meta iklan jika mereka mendukung set karakter ini di postback.
 * Nama *event* peka huruf besar-kecil. Untuk menghindari perbedaan, pastikan Anda menggunakan huruf besar yang benar dalam acara tersebut nama untuk semua sumber media dan versi aplikasi.
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -351,6 +365,8 @@ Pelajari lebih lanjut tentang SSOT <Anchor target="_blank" href="/marketers/id/d
 
 Jika aplikasi Anda menggunakan Pendapatan Iklan Meta Audience Network untuk monetisasi iklan, Anda dapat mencatat pendapatan Anda dari iklan Meta di AppsFlyer. Ini, dengan atau tanpa data pendapatan pembelian dalam aplikasi, memberi Anda **gambaran lengkap tentang pendapatan pengguna Anda.**
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### Catat Pendapatan Iklan Jaringan Audiens Meta
 
 1. Pada tab **Pendapatan Iklan** dan Aktifkan Dapatkan data pendapatan iklan.
@@ -379,9 +395,13 @@ Pelajari lebih lanjut tentang SSOT <Anchor target="_blank" href="/marketers/id/d
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## Pengukuran Event Gabungan (AEM) untuk iOS
 
 <Anchor target="_blank" href="/marketers/id/docs/meta-ads-aggregate-event-measurement-aem-for-ios">AppsFlyer mendukung Pengukuran Event Gabungan Meta ads (AEM). Solusi ini membantu mengoptimalkan konversi iOS dan *in-app event* sekaligus mengatribusikan interaksi ulang iOS pada Meta ads.</Anchor>
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Pemecahan masalah integrasi Meta ads
 
@@ -454,9 +474,13 @@ Pengaturan salah - atribusi gagal.
 > Perhatikan bahwa data tingkat pengguna bisa didapatkan melalui Google *Install Referrer*.
 > Lihat <Anchor target="_blank" href="/marketers/id/docs/bulletin-action-required-get-meta-ads-raw-data-using-google-install-referrer">buletin beritauntuk</Anchor> informasi selengkapnya.
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### Pembaruan iOS 14 terkait Meta ads
 
 AppsFlyer mengonfirmasi bahwa integrasi MMP kami dengan Meta ads selalu menerapkan tanda *Pengukuran Efektivitas Iklan (Advertiser Tracking) Diaktifkan*. Artinya, Anda tidak perlu melakukan tindakan apa pun di AppsFlyer. Informasi ini diberikan sesuai dengan daftar periksa iOS 14 panduan aplikasi Meta ads untuk Februari 2021.
+
+<div id="see-also-1" />
 
 > 📄 **Lihat juga**
 >

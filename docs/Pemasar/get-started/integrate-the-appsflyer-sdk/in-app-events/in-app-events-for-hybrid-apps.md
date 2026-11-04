@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Sekilas:** Rekam in-app event Aplikasi dari pengguna yang menginstal aplikasi Anda, tetapi melakukan event di situs web seluler Anda, dan bukan aplikasinya.
 
+<div id="introduction" />
+
 ## Pengantar
 
 <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview">In-app event</Anchor> yang terjadi dalam aplikasi dilaporkan menggunakan SDK. Bagaimana dengan event yang terjadi di luar aplikasi?
@@ -51,12 +53,16 @@ Panduan ini berkaitan dengan skenario hybrid. Pelajari cara menjembatani kesenja
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
+<div id="recording-in-app-events-in-hybrid-apps" />
+
 ### Mencatat in-app event di aplikasi hybrid
 
 Dalam panduan ini kami menyediakan dua metode untuk mencatat in-app event di aplikasi hybrid:
 
 * **[Direkomendasikan] [Antarmuka JavaScript](/docs/in-app-events-for-hybrid-apps#antarmuka-javascript)** : Menggunakan antarmuka JavaScript native untuk membangun komunikasi antara HTML atau Tampilan Web dan kode native.Dengan cara ini Anda dapat mengirim data terkait peristiwa dalam aplikasi dari tampilan web ke kode native. Setelah kode native mendapatkan data, kode ini mengirimkannya ke AppsFlyer menggunakan SDK.
 * [**Pemuatan URL**](/docs/in-app-events-for-hybrid-apps#pemuatan-url): Dalam metode ini, kode native mendengarkan event pemuatan URL.Anda dapat menyetel kode asli untuk mendengarkan event pemuatan URL tertentu dan mengekstrak data dari parameter URL. Data tersebut kemudian diteruskan ke SDK.
+
+<div id="javascript-interface" />
 
 ## Antarmuka Javascript
 
@@ -80,6 +86,8 @@ Implementasinya terdiri dari langkah-langkah berikut:
 <div id="android" />
 
 <Accordion title="Android">
+
+<div id="html-code-for-android" />
 
 #### Kode HTML untuk Android
 
@@ -108,6 +116,8 @@ Saat meneruskan nilai event, perhatikan hal berikut:
   ```
 * Untuk menghindari terjadinya masalah, AppsFlyer menyarankan penggunaan karakter alfanumerik huruf kecil (a-z dan 0-9) untuk nama event in-app.
 
+<div id="webactivity-class" />
+
 #### Kelas Aktivitas Web
 
 Buat kelas aktivitas web dengan kode berikut:
@@ -129,6 +139,8 @@ public class WebActivity extends AppCompatActivity {
 ```
 
 Kode di atas membuat obyek bernama **aplikasi** yang bertindak sebagai jembatan antara tampilan web dan kode asli.
+
+<div id="javascript-interface-class" />
 
 #### Kelas antarmuka JavaScript
 
@@ -174,6 +186,8 @@ Dalam kode HTML, Anda dapat melihat bahwa metode tersebut dipanggil menggunakan 
 
 <Accordion title="iOS">
 
+<div id="html-code-for-ios" />
+
 #### Kode HTML untuk iOS
 
 Tambahkan kode HTML berikut ke tampilan web atau halaman web:
@@ -209,7 +223,11 @@ Saat meneruskan nilai event, perhatikan hal berikut:
 >
 > Kode HTML untuk Objective C dan Swift.
 
+<div id="objective-c" />
+
 #### Tujuan c
+
+<div id="web-view-controller" />
 
 #### Pengontrol tampilan web
 
@@ -264,6 +282,8 @@ Di pengontrol web view (tampilan web) Anda, tambahkan kode berikut di pengontrol
 
 Kode di atas menerima pesan dari tampilan web. Pesan tersebut berisi nama event dan nilai event. Saat kode mendeteksi pesan masuk, kode akan meneruskannya ke metode `recordEvent` yang mengurai nilai dan memanggil metode `logEvent` SDK native.
 
+<div id="swift-webview-controller" />
+
 #### Pengontrol Swift WebView
 
 Di pengontrol web view (tampilan web) Anda, tambahkan kode berikut dalam metode `viewDidLoad`
@@ -317,6 +337,8 @@ Kode di atas menerima pesan dari tampilan web. Pesan tersebut berisi nama event 
 
 </Accordion>
 
+<div id="url-loading" />
+
 ## Pemuatan URL
 
 Baik Android dan iOS menerapkan metode asli yang merespons event pemuatan url. Metode ini memungkinkan Anda melakukan hal berikut:
@@ -330,7 +352,11 @@ Implementasi di bawah ini terdiri dari dua langkah:
 1. Kode HTML untuk tampilan web atau halaman web
 2. Penerapan kode asli untuk pemuatan URL
 
+<div id="webview-implementation" />
+
 ### Implementasi Tampilan Web
+
+<div id="html-code-for-both-android-webview-and-ios-wkwebview" />
 
 #### Kode HTML (untuk Android WebView dan iOS UIWebView)
 
@@ -377,10 +403,16 @@ Saat meneruskan nilai event, perhatikan hal berikut:
   ```
 * Untuk menghindari terjadinya masalah, AppsFlyer menyarankan penggunaan karakter alfanumerik huruf kecil (a-z dan 0-9) untuk nama event in-app.
 
+<div id="native-implementation" />
+
 ### Implementasi asli
 
 <Tabs>
 <Tab title="Android">
+
+<div id="ios-implementation" />
+
+<div id="android-implementation" />
 
 #### Implementasi Android
 

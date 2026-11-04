@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Kecualikan pengguna yang ada dari kampanye akuisisi pengguna (UA) untuk mendapatkan lebih banyak penginstalan dengan anggaran yang sama dan meningkatkan ROAS.
 
+<div id="issues-and-consequences" />
+
 ## Masalah dan konsekuensi
 
 Jika aplikasi Anda menerima lalu lintas dari berbagai media source (sumber media), maka sumber ini dapat  menargetkan pengguna yang ada di kampanye UA mereka.
@@ -39,9 +41,13 @@ Kinerja kampanye dapat terganggu karena alasan berikut:
 
 <Anchor target="_blank" href="/marketers/id/docs/self-reporting-networks-srns#what-is-srn-mistargeting">Kesalahan penargetan SRN</Anchor> adalah masalah kinerja yang serupa dan umum. Masalah signifikan ini dapat terjadi jika kampanye UA dan penargetan ulang Anda memiliki SRN yang sama. <Anchor target="_blank" href="/marketers/id/docs/self-reporting-networks-srns#apakah-salah-sasaran-merupakan-masalah">Pelajari lebih lanjut</Anchor>
 
+<div id="solutions" />
+
 ## Solusi
 
 Solusi ini menguraikan cara  memperbarui jaringan iklan untuk mengecualikan pengguna yang ada dari kampanye UA.
+
+<div id="manual-update" />
 
 ### Pembaruan manual
 
@@ -53,6 +59,8 @@ Ada beberapa cara untuk menambahkan data lengkap ini ke sistem BI Anda:
 * Gunakan permintaan Pull API data lengkap secara berkala
 * Gunakan Push API untuk mengimplementasikan pengumpulan waktu sebenarnya
 * Dapatkan data konversi dari SDK
+
+<div id="note" />
 
 > 📘 **Catatan**
 >

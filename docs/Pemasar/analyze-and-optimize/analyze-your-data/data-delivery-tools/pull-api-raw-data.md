@@ -26,6 +26,8 @@ x-zendesk:
 
 [![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 
+<div id="pull-api-raw-data" />
+
 ## Data lengkap Pull API
 
 * Pull API memungkinkan Anda mendapatkan laporan data lengkap dalam file CSV. <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">Pelajari lebih lanjut tentang laporan data lengkap</Anchor>
@@ -33,6 +35,8 @@ x-zendesk:
 * Keunggulan tambahan dalam Pull API adalah:
   * Pilih mata uang
   * Pilih zona waktu
+
+<div id="raw-data-reports-available-via-pull-api" />
 
 #### Laporan data lengkap tersedia melalui Pull API
 
@@ -48,6 +52,8 @@ x-zendesk:
 2. Berikan token API kepada pengembang Anda untuk digunakan di header autentikasi.
 3. Beri programmer Anda parameter untuk diinput saat mereka melakukan panggilan API, seperti yang dijelaskan di bagian berikut. Parameter menentukan fokus laporan dan cara pengaturannya serta memberikan jangka waktu pelaporan.
 4. Beri tahu pengembang Anda untuk mengikuti mereka <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-5">instruksi data lengkap Pull API</Anchor> di hub programmer.
+
+<div id="parameters" />
 
 #### Parameter
 
@@ -198,6 +204,8 @@ Bidang laporan tambahan tidak ditambahkan ke daftar bidang default sehingga bida
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informasi Tambahan
 
 <div id="traits-and-limitations" />
@@ -231,6 +239,8 @@ Bidang laporan tambahan tidak ditambahkan ke daftar bidang default sehingga bida
 | Laporan tidak berisi data yang diharapkan menurut rentang waktu yang dipilih atau terdapat perbedaan antara laporan data lengkap dan laporan data teragregasi. | Pastikan Anda telah menetapkan parameter `zona waktu`. Jika tidak, data dikirim menggunakan UTC dan bukan zona waktu aplikasi Anda. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

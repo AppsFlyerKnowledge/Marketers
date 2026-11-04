@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **Sekilas:** Bidang di beberapa laporan data lengkap dibatasi karena batasan privasi. Dalam kasus lain, mitra memerlukan penyuntingan sumber media saat membagikan postback ke platform pihak ketiga. Artikel ini menjelaskan batasan dan implikasinya.
 
+<div id="raw-data-restriction" />
+
 ## Pembatasan data lengkap
 
 AppsFlyer membatasi ketersediaan beberapa bidang dalam laporan data lengkap untuk menjaga privasi pengguna.Hal ini sesuai dengan pengaturan<Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">AAP</Anchor> pemasang iklanatau sesuai dengan kebijakan berbagi data dari jaringan iklan yang menyediakan data tersebut. Pembatasannya berbeda-beda, bergantung pada jenis laporan dan alasan pembatasan. Pembatasan ini memengaruhi data lengkap yang disediakan menggunakan <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">alat pengiriman data lengkap</Anchor>.
 
+<div id="media-source-restrictions" />
+
 ### Pembatasan sumber media
 
 Tabel berikut mencantumkan batasan per sumber media.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -48,6 +54,8 @@ Tabel berikut mencantumkan batasan per sumber media.
 | <span id="snapchat"></span>Snapchat | <ul><li>Mulai 1 Maret 2023, Uninstall Snapchat tidak disertakan dalam laporan data lengkap</li><li>Mulai 13 September 2023, atribusi lihat-tayang dibatasi. Bidang berikut **diisi** di alat pengiriman data lengkap:<ul><li>Sumber media (snapchat\_int)</li><li>Channel</li><li>Jenis sentuhan yang diatribusikan (tayangan)</li><li>Waktu sentuh yang dikaitkan (dilaporkan sebagai tanggal saja - "hh/bb/tttt")</li><li>Kampanye dilaporkan sebagai *"dibatasi"*</li></ul></li></ul> |
 | <span id="tiktok-for-business"></span>TikTok untuk Bisnis | <ul><li>Antara 28 Juli 2021 hingga 23 Oktober 2021, data atribusi lihat-tayang dibatasi.</li><li>Mulai 23 Oktober 2021, atribusi lihat-tayang dibatasi. Bidang berikut **diisi** di alat pengiriman data lengkap:<ul><li>Sumber media (bytedanceglobal\_int dan tiktokglobal\_int)</li><li>Channel</li><li>Jenis sentuhan yang diatribusikan (tayangan)</li><li>Waktu sentuh yang dikaitkan (dilaporkan sebagai tanggal saja - "hh/bb/tttt")</li><li>Kampanye dilaporkan sebagai *"dibatasi"*</li></ul></li></ul> |
 | <span id="twitter"></span>Twitter | Dalam beberapa kasus, Twitter tidak mengizinkan data lengkap tersedia di platform AppsFlyer. Dalam kasus ini, event tidak muncul di laporan data lengkap. |
+
+<div id="raw-data-context" />
 
 ### Konteks data lengkap
 
@@ -161,6 +169,8 @@ Saat pembatasan pengidentifikasi berlaku, bidang yang tercantum dalam tabel beri
 
 </Accordion>
 
+<div id="faq" />
+
 ## Pertanyaan Umum
 
 <div id="what-events-are-restricted" />
@@ -181,6 +191,8 @@ Event yang dibatasi, sebagaimana dirinci dalam [tabel di atas](/docs/about-raw-
 **Contoh laporan:** Penginstalan <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScXJznEex0WwdCy78Bm8LtrhbCk1jNy14O_t7etrq5ab5v4CIEiInfFD4B1EsZCE-_w-dVRAxl_cu4/pub?output=csv">data lengkap terbatas</Anchor> dalam file CSV. Laporan data lengkap lainnya diisi dengan cara yang sama.
 
 </Accordion>
+
+<div id="how-does-the-restricted-media-source-impact-postbacks-sent-to-partners" />
 
 <div id="what-is-the-impact-on-postbacks-to-partners-when-the-media-source-is-restricted" />
 
@@ -213,6 +225,8 @@ Postback untuk jaringan iklan yang diatribusikan yang tercantum pada [tabel di 
 Data terkait bantuan dianggap sebagai data atribusi dan tidak tersedia.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

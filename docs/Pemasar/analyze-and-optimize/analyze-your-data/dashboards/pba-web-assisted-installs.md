@@ -28,9 +28,13 @@ x-zendesk:
 
 Pelajari lebih lanjut tentang dashboard PBA lainnya:  <Anchor target="_blank" href="/marketers/id/docs/pba-website-attribution-dashboard">Atribusi Situs Web</Anchor> | Jalur Konversi
 
+<div id="web-assisted-installs-analysis" />
+
 ## Analisis Penginstalan Berbantuan Web
 
 Penginstalan Berbantuan Web mengukur dampak upaya pemasaran untuk mendorong pengguna menginstal aplikasi. Pemasang iklan melihat keterlibatan web dalam konteks event penginstalan; mereka dapat menentukan sumber media yang mengarahkan pengunjung situs web ke penginstalan aplikasi.–
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### Metrik headline Penginstalan Berbantuan Web
 
@@ -46,6 +50,8 @@ Pertimbangkan skenario kasus penggunaan dalam tabel berikut, untuk analisis Peng
 | Organic installs (Instalasi organik) | Penginstalan aplikasi tanpa melibatkan sumber media seluler. | <ul><li>Bagian apa, jika ada, dari instalasi organik yang murni didorong oleh lalu lintas web?</li><li>Manakah kanal media yang dominan?</li><li>Berapa proporsi antara jenis media berbayar, dimiliki, dan diperoleh?</li></ul> |
 | Penginstalan Non-Organik | Perjalanan pengguna dimulai di web. Aplikasi diinstal nanti setelah berinteraksi dengan kampanye seluler. | <ul><li>Berapa volume instalasi non-organik yang dipengaruhi oleh web?</li><li>Kanal dan jenis media web apa yang memengaruhi instalasi non-organik?</li><li>Apakah sumber media seluler berbayar Anda tumpang tindih dengan sumber media web?</li></ul> |
 
+<div id="web-assisted-installs-dashboard" />
+
 ## Dashboard Penginstalan Berbantuan Web
 
 **Untuk membuka dashboard Penginstalan Berbantuan Web:**
@@ -53,6 +59,8 @@ Pertimbangkan skenario kasus penggunaan dalam tabel berikut, untuk analisis Peng
 | Pilihan 1 | Pilihan 2 |
 | --- | --- |
 | <ol><li>**Aplikasi Saya** > **Lihat bundel merek.**</li><li>Klik dashboard PBA.</li><li>Buka tab **Web-Assisted Installs (Penginstalan Berbantuan Web)**.</li></ol> | Buka menu navigasi > **Tab Atribusi Berbasis Orang** > **Penginstalan Berbantuan Web** |
+
+<div id="website-assisted-installs-and-reinstalls" />
 
 <Accordion title="Penginstalan dan penginstalan ulang berbantuan situs web">
 
@@ -63,6 +71,8 @@ Instalasi dianggap telah dipengaruhi oleh situs web jika terjadi dalam 30 hari s
 Untuk informasi tentang kesegaran data, lihat  <Anchor target="_blank" href="/marketers/id/docs/about-data-freshness-and-timezone-support#pba-daily-8">PBA harian</Anchor> .
 
 </Accordion>
+
+<div id="dashboard-features" />
 
 <Accordion title="Fitur dashboard">
 

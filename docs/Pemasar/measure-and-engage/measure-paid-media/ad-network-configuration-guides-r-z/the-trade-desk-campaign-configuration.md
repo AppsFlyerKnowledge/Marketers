@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Sekilas:** The Trade Desk, mitra terintegrasi jaringan iklan AppsFlyer, menggunakan solusi periklanan seluler yang disempurnakan untuk mengembangkan kampanye yang strategis, terukur, dan cerdas untuk memenuhi kebutuhan pengguna lintas perangkat. The Trade Desk menawarkan atribusi seluler berbasis klik, atribusi seluler lihat-tayang, dan penargetan ulang berbasis klik, semuanya dapat dicatat melalui AppsFlyer.
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## Menyiapkan The Trade Desk (TTD)
 
 Ikuti langkah-langkah ini untuk mengaktifkan pengukuran kampanye AppsFlyer.
@@ -97,6 +99,8 @@ Pada langkah ini, Anda akan menambahkan pelacak klik dan impresi yang dibuat di 
 
 </Accordion>
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Jika Anda telah memilih agar konversi diatribusikan oleh TTD (pada [Langkah 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), Anda dapat mengedit jendela atribusi:
@@ -107,6 +111,8 @@ Pada langkah ini, Anda akan menambahkan pelacak klik dan impresi yang dibuat di 
 >    * **Menghapus duplikasi Windows:** Jumlah konversi yang dapat Anda lihat dalam jangka waktu tertentu.
 >    * **Jendela Atribusi Kampanye:** Jangka waktu dari paparan iklan hingga konversi.
 > 4. Klik **SIMPAN**.
+
+<div id="integrating-ttd-with-appsflyer" />
 
 ## Mengintegrasikan TTD dengan AppsFlyer
 
@@ -129,14 +135,20 @@ Untuk deskripsi terperinci dari Partner Configuration Window (Jendela Konfiguras
 
 <Accordion title="Tab Integration">
 
+<div id="activate-partner" />
+
 #### Aktifkan mitra
 
 Pada kunjungan pertama, Anda harus mengaktifkan sakelar **Aktifkan mitra** untuk menyiapkan integrasi. Sakelar harus tetap aktif selama Anda bekerja dengan TTD.  
 Untuk detail lebih lanjut tentang aktivasi mitra, silakan klik <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">di sini</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privasi Lanjutan
 
 Untuk aplikasi iOS, sakelar <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">Aktifkan Privasi Lanjutan</Anchor> muncul. Saat diaktifkan, ini membatasi pembagian pengidentifikasi pengguna dengan mitra. Perhatikan bahwa ketika sakelar <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">Privasi Lanjutan Gabungan</Anchor> diaktifkan di Pengaturan Aplikasi, **Aktifkan Privasi Lanjutan** diaktifkan dan dikunci secara default. 
+
+<div id="general-settings" />
 
 #### Pengaturan Umum
 
@@ -150,6 +162,8 @@ The Trade Desk terhubung dengan AppsFlyer melalui ID jaringan unik. Jika Anda be
 
 Nyalakan **Aktifkan atribusi Lihat-Tayang** untuk mengaitkan penginstalan lihat-tayang dari The Trade Desk. Slider lookback lihat-tayang tersedia di tab tautan atribusi  (dideskripsikan di bawah).
 
+<div id="default-postbacks" />
+
 #### Postback Default
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -159,9 +173,13 @@ Kirim postback otomatis ke The Trade Desk setelah penginstalan dan interaksi ula
 * **Mitra ini saja**: untuk event yang datang hanya dari pengguna yang dikaitkan dengan The Trade Desk.
 * **Semua sumber media termasuk organik**: agar seluruh basis pengguna Anda tersedia untuk dilaporkan ke The Trade Desks.
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > Sebagai jaringan semua penginstalan, The Trade Desk lebih suka menerima postback untuk semua penginstalan baru aplikasi Anda dari sumber mana pun, dan mereka merekomendasikan untuk memilih **Semua sumber media termasuk organik** untuk mengirim semua postback penginstalan ke The Trade Desk.
+
+<div id="in-app-events-settings" />
 
 #### Pengaturan In-App Event
 
@@ -194,6 +212,8 @@ Petakan event AppsFlyer dengan TTD melalui postback. Jika pengiriman postback di
 
 Hasilkan dan simpan tautan atribusi dan kirim ke TTD untuk mengatribusikan kampanye, ad set, atau iklan tunggal tertentu - baik untuk UA maupun kampanye penargetan ulang. Anda dapat menggunakan tautan platform tunggal atau <Anchor target="_blank" href="/marketers/id/docs/onelink-guide">OneLink</Anchor>.
 
+<div id="attribution-link-parameters" />
+
 #### Parameter tautan atribusi
 
 Menambahkan parameter ke tautan atribusi memungkinkan Anda melakukan analisis penelusuran secara menyeluruh. Parameter yang sudah ditentukan pada tautan atribusi dapat diedit dengan menambahkannya dan nilai barunya di sini.  Saat menyimpan tautan atribusi, semua parameter yang dikonfigurasikan di tab ini disimpan.
@@ -201,6 +221,8 @@ Menambahkan parameter ke tautan atribusi memungkinkan Anda melakukan analisis pe
 Pilih parameter mana yang ingin Anda tambahkan ke tautan atribusi.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### Parameter default
 
@@ -214,6 +236,8 @@ Pilih parameter mana yang ingin Anda tambahkan ke tautan atribusi.
 
 Anda dapat menambahkan lebih banyak parameter untuk tautan atribusi. Pelajari lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#attribution-link-tab">menyiapkan tautan atribusi</Anchor> dan tentang <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters">struktur dan parameter</Anchor> tautan atribusi .
 
+<div id="parameters-for-measuring-ctv" />
+
 #### Parameter untuk mengukur CTV
 
 Anda dapat mengukur lalu lintas CTV dengan AppsFlyer dengan menambahkan parameter dan nilai berikut:
@@ -222,6 +246,8 @@ Anda dapat mengukur lalu lintas CTV dengan AppsFlyer dengan menambahkan paramete
 | --- | --- | --- |
 | redirect | false |  |
 | af\_xplatform\_vt\_lookback | 1h-72h | Nilai apa pun antara 1-72 jam dapat dimasukkan |
+
+<div id="click-through-attribution" />
 
 #### Atribusi Click-Through
 
@@ -236,6 +262,8 @@ Parameter tautan atribusi: af\_click\_lookback
 Pelajari selengkapnya tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">jendela lookback klik</Anchor>.
 
 **Tautan atribusi klik-tayang:** Berisi semua parameter yang Anda sertakan dalam penyiapan tautan atribusi. Anda dapat menyalin tautan dan mengirimkannya ke mitra untuk diaktifkan saat prospek Anda mengeklik iklan yang sesuai. 
+
+<div id="view-through-attribution" />
 
 #### Atribusi lihat-tayang
 
@@ -278,6 +306,8 @@ Di tab ini, Anda dapat memilih izin untuk diberikan kepada The Trade Desk, baik 
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Gunakan tombol ini untuk memberikan izin pada jaringan iklan untuk menangani konfigurasinya sendiri bagi aplikasi Anda:
+
+<div id="ad-network-permissions" />
 
 #### **Hak Akses Ad Network**
 

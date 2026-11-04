@@ -36,6 +36,8 @@ Tonton video ini untuk mendapatkan gambaran besar tentang integrasi SDK.
 
 <Embed title="Tinjauan integrasi SDK" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/4iybquc6q3" providerUrl="https://fast.wistia.com" />
 
+<div id="about-the-sdk" />
+
 ## Tentang SDK
 
 SDK menyediakan fungsi penginstalan aplikasi dan perekaman event. Anda dapat merekam penginstalan, sesi, dan peristiwa dalam aplikasi. In-app event mencakup, misalnya, pembelian dalam aplikasi atau naik level dalam game. Merekam event ini dapat membantu Anda mengevaluasi ROI dan kualitas pengguna. 
@@ -79,6 +81,8 @@ Dokumentasi tambahan mencakup hal-hal berikut:
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## Kompatibilitas SDK
 
 SDK iOS AppsFlyer kompatibel dengan platform berikut:
@@ -110,13 +114,19 @@ Mulai dari SDK V6.0.8, <Anchor target="_blank" href="/marketers/id/docs/apple-ap
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## Integrasi SDK
 
 Proses menginstal dan mengintegrasikan SDK memerlukan kerja sama antara manajer produk dan pengembang aplikasi seluler.  **Sebelum** mengintegrasikan SDK dengan aplikasi Anda, tinjau semua tugas integrasi dan pertimbangkan fungsionalitas yang Anda inginkan untuk digunakan oleh aplikasi Anda.
 
+<div id="sdk-planning-checklist" />
+
 ### Daftar periksa perencanaan SDK
 
 Untuk memulai, kami telah menyiapkan <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">daftar periksa</Anchor> untuk membantu memandu Anda melalui proses perencanaan. Untuk setiap tugas, ada tautan ke dokumentasi pemasar dan programmer.
+
+<div id="sdk-integration-tasks" />
 
 ### Tugas integrasi SDK
 
@@ -139,6 +149,8 @@ Anda dapat bekerja sama dengan pengembang seluler untuk menerapkan API tambahan 
 | Tentukan <Anchor target="_blank" href="/marketers/id/docs/additional-sdk-integration-guide#sesi">pelaporan sesi pengguna</Anchor> . | 30 menit |
 | Tentukan metode atribusi yang akan digunakan untuk <Anchor target="_blank" href="/marketers/id/docs/additional-sdk-integration-guide#media-yang-dimiliki-sendiri">sumber media yang dimiliki</Anchor> . | 1 jam |
 | Kelola <Anchor target="_blank" href="/marketers/id/docs/additional-sdk-integration-guide#privasi-pengguna">kebijakan privasi pengguna</Anchor> untuk memastikan aplikasi Anda mematuhi peraturan privasi (GDPR, CCPA). | 1 jam |
+
+<div id="note" />
 
 > 📄 **Lihat juga**
 >

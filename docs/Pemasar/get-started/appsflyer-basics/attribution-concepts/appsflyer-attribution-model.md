@@ -37,6 +37,8 @@ x-zendesk:
 
 [![Mobile_user_journey.png](https://support.appsflyer.com/hc/article_attachments/19544107641105)](https://support.appsflyer.com/hc/article_attachments/19544107641105)
 
+<div id="what-is-attribution" />
+
 ## Apa itu atribusi?
 
 **Atribusi** adalah tindakan untuk menentukan apa yang memotivasi (menyebabkan) pengguna menginstal aplikasi atau melakukan tindakan pasca-penginstalan seperti interaksi ulang dan atribusi ulang. Hasil atribusinya adalah:
@@ -49,6 +51,8 @@ Atribusi penting untuk mengoptimalkan akuisisi pengguna, upaya interaksi ulang, 
 > 👍 **Tips**
 >
 > Ingin tahu lebih banyak tentang atribusi? Lihat <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7766/play/18609/attribution-101-part-1">kursus singkat dan informatif ini di Portal Pembelajaran AppsFlyer</Anchor>.
+
+<div id="what-is-an-app-install" />
 
 ## Apa itu penginstalan aplikasi?
 
@@ -64,6 +68,8 @@ Di AppsFlyer, event yang dapat diatribusikan terjadi ketika salah satu dari hal 
 * Dalam konteks [retargeting (penargetan ulang)](/docs/appsflyer-attribution-model#retargeting-attribution) :
   * **Re-engagement**
   * **Atribusi ulang**
+
+<div id="attribution-methods" />
 
 ## Metode Atribusi
 
@@ -199,6 +205,8 @@ Hanya untuk interaksi ulang, pengguna tidak diarahkan ke app store untuk mengund
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### Metode atribusi per sumber media dan fitur AppsFlyer
 
 Lihat bagian berikut untuk rincian lengkap tentang kapan metode atribusi tertentu tersedia, bergantung pada:
@@ -222,6 +230,8 @@ Lihat bagian berikut untuk rincian lengkap tentang kapan metode atribusi tertent
 <table><thead><tr><th rowspan="2">Media Source</th><th colspan="3">Metode Atribusi</th></tr><tr><th>Android</th><th>iOS</th><th><strong>Platform CTV, PC, dan konsol</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN</a></td><td><p>Pencocokan ID Device</p></td><td><ul><li>Pencocokan ID Device</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td><p>Pencocokan ID Device</p></td></tr><tr><td><ul><li>Jaringan iklan (non-SRN) melalui <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">tautan atribusi untuk mitra</a> </li><li><span>Platform CTV, PC, dan konsol</span></li></ul></td><td><ul><li>Install Referrer</li><li>Pencocokan ID Device</li><li>Pemodelan probabilistik</li></ul></td><td><ul><li>Pencocokan ID Device</li><li>Pemodelan probabilistik (sebelum iOS 14.5)</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><p><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Pra-penginstalan pada perangkat</a></p></td><td>Pra-install</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## Jenis Atribusi Interaksi User
 
@@ -267,6 +277,8 @@ Pada kasus di mana terjadi sebuah klik dan tayangan iklan, klik selalu mendahulu
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## Topik Atribusi Tingkat Lanjut
 
 <div id="in-app-events" />
@@ -307,6 +319,8 @@ Penginstalan ulang terjadi ketika pengguna menginstal aplikasi, menghapus pengin
 Untuk pengujian perangkat dan beberapa penginstalan, <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices">daftarkan</Anchor> perangkat di AppsFlyer. Jika Anda tidak mendaftarkan perangkat, hanya penginstalan pertama yang dicatat.
 
 Perhatikan bahwa AppsFlyer memungkinkan akurasi yang lebih baik untuk mengatribusikan penginstalan ulang iOS tanpa ID pengiklan. Anda dapat mengaktifkan fitur ini di <Anchor target="_blank" href="/marketers/id/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">halaman Pengaturan Aplikasi</Anchor>.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### Menginstal ulang aplikasi iOS yang dicadangkan di iCloud
 

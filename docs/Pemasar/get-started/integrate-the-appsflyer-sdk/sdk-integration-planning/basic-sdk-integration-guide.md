@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Sekilas:** Bekerja samalah dengan pengembang aplikasi seluler atau CTV Anda untuk mengintegrasikan dan menginstal SDK ke aplikasi Android atau iOS. Setelah tugas integrasi dasar selesai, aplikasi Anda siap untuk atribusi instalasi dan pengukuran in-app event.
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **Mengambil kode pengembang**
 
 Sebelum pengembang Anda dapat menginstal dan mengintegrasikan SDK, Anda harus mengambil kode pengembang. AppsFlyer menggunakan kode pengembang untuk mengidentifikasi akun Anda secara unik. Kode pengembang bersifat wajib karena memungkinkan SDK mengirim dan mengambil data milik akun Anda dengan aman.
@@ -41,6 +43,8 @@ Sebelum pengembang Anda dapat menginstal dan mengintegrasikan SDK, Anda harus me
    [![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 3. Berikan instruksi kepada pengembang seluler Anda untuk <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">menginstal</Anchor> dan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">mengintegrasikan SDK</Anchor>.
 
+<div id="where-to-start-the-sdk" />
+
 ## **Di mana memulai SDK?**
 
 Saat merencanakan integrasi SDK AppsFlyer, keputusan pertama yang harus Anda buat adalah di mana menginisialisasi dan memulai SDK dalam alur peluncuran aplikasi Anda.
@@ -52,7 +56,11 @@ Namun, untuk mematuhi peraturan menjaga privasi seperti GDPR dan CCPA, sering ka
 <Tabs>
 <Tab title="Android asli">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### Memulai SDK di Android asli
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### PILIH DI KELAS APA UNTUK MEMULAI SDK
 
@@ -60,6 +68,8 @@ Pilih apakah akan memulai SDK di kelas `Application` global atau kelas `Activ
 
 * **Memulai SDK di kelas** `Application` **global:** Secara umum, menginisialisasi SDK di kelas/subkelas `Aplikasi` global adalah praktik yang baik karena kelas `Application` dimuat dan diinisialisasi sebelum UI aplikasi apa pun ditampilkan. Hal ini memastikan bahwa SDK dapat dimulai dalam skenario apa pun, termasuk deep linking.
 * **Mulai SDK di** kelas`Activity`**(awal tertunda)** untuk memungkinkan pengguna ikut serta dalam berbagi data. Hal ini karena untuk mendapatkan izin pengguna memerlukan antarmuka pengguna (UI) yang dirender dalam kelas `Activity` .
+
+<div id="android-developer-instructions" />
 
 #### INSTRUKSI PENGEMBANG ANDROID
 
@@ -126,11 +136,15 @@ Kirimkan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/rn_api#
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## Pilih strategi untuk menjaga privasi Anda
 
 Pilih **cara menjaga privasi pengguna.** Misalnya, pilih antara menghentikan SDK saat instalasi, mencegah berbagi data dengan pihak ketiga, menganonimkan data pengguna, atau menonaktifkan pengidentifikasi tertentu.
 
 Untuk informasi selengkapnya tentang berbagai skenario penyisihan yang tersedia, lihat <Anchor target="_blank" href="/marketers/id/docs/apply-privacy-preserving-sdk-methods#skenario-ikut-serta-dan-tidak-ikut-serta">Skenario Keikutsertaan dan Ketidakikutsertaan</Anchor>.
+
+<div id="attribution" />
 
 ## **Atribusi**
 
@@ -169,6 +183,8 @@ Bagian berikut menjelaskan pertimbangan atribusi untuk Google Play Store atau to
 <div id="attribute-apps-published-on-google-play" />
 
 <Accordion title="Aplikasi atribut yang dipublikasikan di Google Play">
+
+<div id="google-play-install-referrer" />
 
 #### PERUJUK INSTALASI GOOGLE PLAY
 
@@ -276,6 +292,8 @@ Lihat Dev Hub untuk <Anchor target="_blank" href="https://dev.appsflyer.com/hc/d
 </Tabs>
 
 Ketika atribusi terjadi menggunakan IDFA, penting agar IDFA dikirim pada **peluncuran pertama.** Karena alasan ini, SDK menyediakan metode `waitForATTUserAuthorization` .
+
+<div id="waitforattuserauthorization-overview" />
 
 #### Ikhtisar waitForATTUserAuthorization
 
@@ -385,6 +403,8 @@ Untuk menonaktifkan atribusi SKAN gunakan `disableSKAd`
 
 </Accordion>
 
+<div id="recording-in-app-events" />
+
 ## **Merekam in-app event**
 
 In-app event (IAE) menyediakan wawasan tentang aktivitas yang terjadi di aplikasi Anda. Merekam in-app event membantu Anda mengukur KPI seperti Return on Investment (ROI) dan Lifetime Value (LTV). Sebaiknya luangkan waktu untuk menentukan event yang ingin Anda rekam.
@@ -440,6 +460,8 @@ Lihat <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview#r
 
 </Accordion>
 
+<div id="deep-linking-with-onelink" />
+
 ## **Tautan langsung (deep linking) dengan OneLink**
 
 OneLink adalah solusi AppsFlyer untuk atribusi multi-platform, **pengarahan, dan deep linking**.
@@ -486,6 +508,8 @@ Lihat panduan kami tentang mengatur <Anchor target="_blank" href="/marketers/id
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **Mengakses data atribusi dan deep linking**
 
 Tabel berikut menjelaskan metode yang tersedia untuk mengambil data atribusi dan deep linking:
@@ -509,6 +533,8 @@ Perhatikan hal berikut untuk pengguna iOS 14.5+ yang tidak memberikan persetujua
 >
 > * Gunakan Push API saat mengambil data atribusi dan mengirimkannya ke server Anda untuk diproses lebih lanjut. Metode ini menunggu data tersedia, dan karena itu sangat akurat dan mendekati waktu aktual. GCD mengembalikan data secara waktu aktual, tetapi mungkin tidak akurat saat keputusan atribusi akhir ditentukan setelah lebih dari 5 detik.
 > * Gunakan Pull API untuk secara periodik (misalnya, setiap hari) melengkapi data atribusi waktu aktual, dan untuk mengompensasi kesalahan komunikasi yang mungkin terjadi.
+
+<div id="testing-your-sdk-integration" />
 
 ## **Menguji integrasi SDK Anda**
 

@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="Memulai—Orientasi untuk pemasar" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## Pengantar
 
 Dokumen ini membantu pengiklan (pemilik aplikasi) manajer produk **merencanakan dan menerapkan integrasi mereka dengan AppsFlyer**. Untuk setiap item, pemilik dan perkiraan waktu implementasi disediakan.
 
 Perhatikan bahwa perkiraan waktu dalam artikel ini hanya dimaksudkan sebagai pedoman umum. Perkiraan ini didasarkan pada pengalaman kami bekerja dengan banyak pelanggan baru, tetapi kami menyadari bahwa masing-masing pemilik aplikasi, aplikasi, dan penerapannya berbeda. Persyaratan waktu Anda yang sebenarnya mungkin berbeda.
+
+<div id="account-setup" />
 
 ## Pengaturan akun
 
@@ -44,9 +48,13 @@ Perhatikan bahwa perkiraan waktu dalam artikel ini hanya dimaksudkan sebagai ped
 
 **Hasil:** Selamat datang! Anda sekarang memiliki akun AppsFlyer aktif dan pengguna akun yang dapat mengaksesnya.
 
+<div id="tip" />
+
 > 👍 **Tips**
 >
 > Baru mengenal AppsFlyer dan ingin tahu apa saja fitur-fiturnya?<Anchor target="_blank" href="/marketers/id/docs/welcome-to-appsflyer#apa-yang-anda-bisa-lakukan-dengan-appsflyer">Tonton video yang berdurasi 6 menit ini</Anchor>.
+
+<div id="app-onboarding" />
 
 ## Orientasi aplikasi
 
@@ -58,6 +66,8 @@ Anda dapat mengikuti langkah-langkahnya menggunakan panduan ini atau melalui hal
 
 1. Di bilah menu, klik menu pengguna (tarik-turun alamat email)
 2. Pilih Orientasi aplikasi
+
+<div id="step-1-app-setup" />
 
 ## Langkah 1: Pengaturan aplikasi
 
@@ -71,6 +81,8 @@ Anda dapat mengikuti langkah-langkahnya menggunakan panduan ini atau melalui hal
 | [Opsional] Migrasikan perangkat pengguna yang ada ke AppsFlyer | 2 jam | Jika aplikasi Anda sudah memiliki basis pengguna yang substansial, pertimbangkan <Anchor target="_blank" href="/marketers/id/docs/migration-to-appsflyer-from-other-vendors#migrasi-perangkat---opsional">untuk memigrasikan mereka ke AppsFlyer</Anchor> untuk menghindari tagihan ganda.<br /><br />**Catatan:** Dengan bantuan CSM AppsFlyer Anda atau tim dukungan di [hello@appsflyer.com](mailto:hello@appsflyer.com)). |
 
 **Hasil:** Aplikasi Anda sekarang ditentukan di dasbor AppsFlyer.
+
+<div id="step-2-sdk--api-integration" />
 
 ## Langkah 2: Integrasi SDK
 
@@ -87,6 +99,8 @@ Selesaikan langkah-langkah berikut untuk setiap aplikasi yang ditentukan di Apps
 
 **Hasil:** Aplikasi Anda siap untuk menginstal atribusi, mengukur in-app event, dan fungsi AppsFlyer lainnya yang tidak memerlukan sumber daya pengembang tambahan.
 
+<div id="step-3-attribution-setup" />
+
 ## Langkah 3: Pengaturan atribusi
 
 Selesaikan langkah-langkah berikut untuk setiap aplikasi yang ditentukan di AppsFlyer dalam [Langkah 1: Penyiapan aplikasi](/docs/getting-started-onboarding-for-marketers#langkah-1-pengaturan-aplikasi):
@@ -100,6 +114,8 @@ Selesaikan langkah-langkah berikut untuk setiap aplikasi yang ditentukan di Apps
 | [Opsional] Aktifkan kampanye penargetan ulang | Manajer produk | 2 menit | <Anchor target="_blank" href="/marketers/id/docs/app-settings#reengagement-attribution">Aktifkan Penargetan Ulang di halaman Pengaturan Aplikasi</Anchor>.<br /><br />Pelajari lebih lanjut tentang: <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">Panduan penargetan ulang</Anchor> |
 
 **Hasil:** Semua sumber media yang mendatangkan lalu lintas ke aplikasi Anda diatribusikan setiap kali pengguna baru atau pengguna kembali berinteraksi dengan sumber media tersebut.
+
+<div id="step-4-additional-setup" />
 
 ## Langkah 4: Pengaturan tambahan
 
@@ -119,6 +135,8 @@ Langkah-langkah tertentu mungkin wajib untuk memenuhi tujuan bisnis Anda.
 | Mendapatkan wawasan terpadu tentang perjalanan pelanggan di seluruh saluran, platform, dan perangkat | Manajer produk/  <br /> Pengembang | <Anchor target="_blank" href="/marketers/id/docs/people-based-attribution-pba-overview">Atribusi berbasis orang (PBA)</Anchor> |
 | Memastikan kepatuhan terhadap peraturan privasi: GDPR, CCPA, dll. | Manajer produk/  <br /> Pengembang | Mengizinkan pengguna untuk <Anchor target="_blank" href="/marketers/id/docs/apply-privacy-preserving-sdk-methods">menonaktifkan</Anchor> atribusi. |
 
+<div id="enrich-your-knowledge" />
+
 ## Memperkaya pengetahuan Anda
 
 Direkomendasikan untuk semua pengguna AppsFlyer
@@ -131,11 +149,17 @@ Direkomendasikan untuk semua pengguna AppsFlyer
 | Mempelajari tentang <Anchor target="_blank" href="/marketers/id/docs/aggregated-and-analytics-reporting-overview">alat pelaporan dan analitik gabungan</Anchor> | 30 menit |
 | Mempelajari tentang <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">pelaporan data lengkap</Anchor> | 30 menit |
 
+<div id="related" />
+
 ## Terkait
+
+<div id="tip-1" />
 
 > 👍 **Tips**
 >
 > Baru mengenal UA (akuisisi pengguna)? Pelajari <Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">semua tentang</Anchor> tantangan terbesar dan elemen terpenting dari perencanaan, pelaksanaan, dan terus mengoptimalkan upaya akuisisi pengguna Anda.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Sekilas:** Temukan jawaban atas pertanyaan yang sering ditanyakan tentang penggunaan Meta ads di AppsFlyer.
 
+<div id="meta-ads-faq" />
+
 ## FAQ iklan meta
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -188,6 +190,8 @@ Ya. Tautan OneLink dengan Tautan Aplikasi, Tautan Universal, atau skema URI yang
 
 </Accordion>
 
+<div id="meta-ads-cost-faq" />
+
 ## FAQ biaya Meta ads
 
 <div id="getting-facebook-cost-data-in-the-appsflyer-dashboard" />
@@ -341,6 +345,8 @@ Jika Anda ingin beralih ke akun iklan baru tetapi biaya Meta ads Anda sudah dita
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## FAQ SDK Facebook
 
 <div id="who-needs-facebooks-sdk" />
@@ -369,6 +375,8 @@ Aplikasi Anda memerlukan SDK Facebook selain SDK AppsFlyer untuk hal berikut:
 * **Data kampanye Iklan Produk Dinamis** : Anda hanya bisa mendapatkan data untuk Iklan Produk Dinamis dari SDK Facebook.
 * **Fitur Meta ads lainnya**: Anda mungkin memerlukan SDK Facebook untuk alasan yang tidak terkait dengan atribusi seperti autentikasi, monetisasi iklan, berbagi sosial, undangan pengguna, dll.
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > Informasi dan rekomendasi di atas mengenai deep linking dan deferred deep linking didasarkan pada pengujian menyeluruh yang kami lakukan menggunakan alat demo/pratinjau Meta ads yang tersedia, yang menggunakan mekanisme berbeda dari iklan aktif.
@@ -388,6 +396,8 @@ Jika Anda memiliki <Anchor target="_blank" href="https://developers.facebook.com
     Perhatikan bahwa untuk mengaktifkan atribusi SKAN untuk iOS 14.5+, Anda harus <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">memetakan in-app event ke Meta ads</Anchor>.
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## FAQ atribusi Meta ads
 
@@ -424,6 +434,8 @@ Namun, Anda dapat mengiklankan dan mencatat penginstalan untuk aplikasi di luar 
 3. Laman arahan harus menyertakan tombol **Unduh Aplikasi** , yang langsung menautkan ke pasar aplikasi out-of-store di mana APK ada.
 4. Prospek mengeklik tombol dan dialihkan ke pasar di luar toko. Setelah menyelesaikan penginstalan, AppsFlyer mengatribusikan pengguna ke Meta ads, melalui API MMP-nya.
 
+<div id="note-2" />
+
 > 📘 **Catatan**
 >
 > Solusi yang sama berlaku untuk aplikasi di Google Play dan App store, yang <Anchor target="_blank" href="/marketers/id/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">membutuhkan laman arahan</Anchor> sebelum pengalihan ke pasar.
@@ -439,6 +451,8 @@ Untuk instruksi khusus tentang pengaitan untuk aplikasi di Amazon, klik <Anchor 
 Meta ads mengidentifikasi pengguna berdasarkan akun Meta ads mereka. Beberapa pengguna memiliki perangkat iOS dan Android yang diasosiasikan dengan akun Meta ads yang sama.
 
 Jika pengguna tersebut mengeklik atau melihat iklan untuk aplikasi Anda di perangkat Android mereka, tetapi menginstal aplikasi tersebut di perangkat iOS mereka, Meta ads menganggap diri mereka telah menghasilkan penginstalan. Akibatnya, nama Kampanye Android muncul di dashboard iOS Anda.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >

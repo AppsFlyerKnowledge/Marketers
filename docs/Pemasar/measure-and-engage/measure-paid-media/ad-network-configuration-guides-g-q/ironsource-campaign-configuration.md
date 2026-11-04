@@ -55,28 +55,40 @@ Untuk deskripsi terperinci tentang Partner Configuration Window Header (Header J
 
 <Accordion title="Tab Integrasi">
 
+<div id="activate-partners" />
+
 ### Aktifkan partner
 
 Pada **kunjungan pertama** ke sini, Anda harus mengaktifkan sakelar **Aktifkan Partner** untuk mengaktifkan pengaturan parameter tab integrasi. Sakelar harus tetap aktif selama Anda bekerja dengan partner.  
 Untuk detail lebih lanjut tentang aktivasi partner, silakan klik <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">di sini</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privasi Lanjutan
 
 Khusus untuk aplikasi iOS, ketika **Privasi Tingkat Lanjut (untuk iOS 14.5+ dan lebih baru)** diaktifkan, Anda dapat <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#b">mengontrol data apa yang dibagikan</Anchor> dengan ironSource melalui postback dan laporan.
+
+<div id="transaction-id" />
 
 ### ID transaksi
 
 Khusus untuk aplikasi iOS, saat **Bagikan ID transaksi SKAN** diaktifkan, Anda  mengizinkan AppsFlyer untuk <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">membagikan ID transaksi postback SKAdNetwork</Anchor> dengan ironSource. Dengan melakukannya, ironSource dapat mendekodekan Nilai Konversi SKAdNetwork Anda.
 
+<div id="note-2" />
+
 > 📘 **Catatan**
 >
 > Untuk interoperasi SKAN dengan AppsFlyer, hubungi manajer akun ironSource Anda untuk <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">mengaktifkan pengiriman data SKAN ke MMP</Anchor>.
+
+<div id="general-settings" />
 
 ### Pengaturan umum
 
 **ID Pemasang Iklan**
 
 ironSource terhubung dengan AppsFlyer melalui ID pemasang iklan unik (angka 6 digit) dan kata sandi. Jika Anda belum memiliki ID dan kata sandi pemasang iklan, Anda harus mendapatkannya dari ironSource untuk melanjutkan integrasi. Jika tidak, salin ID dan kata sandi dan tempelkan ke bidang masing-masing.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Atribusi Penginstalan dan Interaksi Ulang
 
@@ -92,6 +104,8 @@ Kedua sakelar ini mengaktifkan pengaitan ke penginstalan baru ironSource dan pen
 1. Aktifkan **Atribusi lihat-tayang interaksi ulang**.
 2. Konfigurasikan panjang jendela lookback **lihat-tayang** di [tab tautan Atribusi](/docs/ironsource-campaign-configuration#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Postback Default
 
 Kirim postback otomatis ke ironSource setelah penginstalan dan interaksi ulang pengguna. Gunakan bagian ini untuk menentukan **sumber pengguna** yang mengizinkan pengiriman postback ini.
@@ -99,9 +113,13 @@ Kirim postback otomatis ke ironSource setelah penginstalan dan interaksi ulang p
 Pilih **Hanya acara yang diatribusikan ke partner ini** untuk acara yang hanya berasal dari pengguna yang diatribusikan dengan ironSource.  
 Pilih **Acara yang diatribusikan ke partner mana pun, atau organik** agar seluruh basis pengguna Anda tersedia untuk dilaporkan ke ironSource.
 
+<div id="note-3" />
+
 > 📘 **Catatan**
 >
 > Sebagai jaringan semua penginstalan, ironSource lebih suka menerima postback untuk semua penginstalan baru aplikasi Anda dari sumber apa pun, termasuk organik. Untuk melakukannya, pilih **Acara yang diatribusikan ke partner mana pun, atau organik** untuk mengirim semua postback penginstalan ke ironSource.
+
+<div id="in-app-event-postbacks" />
 
 ### Postback in-app event
 
@@ -123,6 +141,8 @@ Konfigurasikan pemetaan in-app event dengan event ironSource, dikirim melalui po
    1. Dari pojok kiri atas, di bawah nama mitra, klik nama aplikasi untuk membuka daftar aplikasi.
    2. Pilih aplikasi lainnya dari daftar drop-down.
    3. Ulangi <Anchor target="_blank" href="/marketers/id/docs/amazon-ads-campaign-configuration#integration-tab">langkah integrasi</Anchor>  untuk aplikasi yang dipilih.
+
+<div id="note-4" />
 
 > 📘 **Catatan**
 >
@@ -182,6 +202,8 @@ Di tab ini, Anda dapat memilih izin untuk diberikan kepada ironSource, baik part
 
 Gunakan tombol ini untuk memberikan izin jaringan iklan untuk menangani konfigurasinya sendiri bagi aplikasi Anda:
 
+<div id="ad-network-permissions" />
+
 ### Izin jaringan iklan
 
 * **Allow to configure integration** (Izinkan untuk mengonfigurasi integrasi) - mengizinkan mitra untuk mengatur tab integrasi (kecuali pada postback in-app event)
@@ -193,6 +215,8 @@ Gunakan tombol ini untuk memberikan izin jaringan iklan untuk menangani konfigur
 * **Allow access to your Protect360 dashboard** (Izinkan akses ke dashboard Protect360 Anda) - hanya ke data Protect360 milik mitra dan dengan syarat fitur ini diaktifkan untuk pemasang iklan
 
 Pelajari lebih lanjut tentang memberikan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">izin jaringan iklan</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Hak Akses Agensi
 

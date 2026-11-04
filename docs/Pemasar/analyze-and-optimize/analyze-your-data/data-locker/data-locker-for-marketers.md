@@ -57,7 +57,11 @@ Di Data Locker, pilih aplikasi, sumber media, event, dan laporan Anda untuk dise
 
 </Accordion>
 
+<div id="data-storage-architecture" />
+
 ## Arsitektur penyimpanan data
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -120,6 +124,8 @@ File data bergantung pada jenis pemisahan
 
 <Accordion title="Opsi penyimpanan">
 
+<div id="caution" />
+
 > ❗️ **Perhatian!**
 >
 > Jika Anda menggunakan opsi penyimpanan milik pemasar:
@@ -147,6 +153,8 @@ File data bergantung pada jenis pemisahan
 | Keamanan | AppsFlyer mengontrol penyimpanan. Pelanggan memiliki akses baca. | Pemasar mengontrol penyimpanan.<ul><li>**AWS**: AppsFlyer memerlukan izin GetObject, ListBucket, DeleteObject, PutObject ke bucket. Bucket harus ditujukan khusus untuk penggunaan AppsFlyer. Jangan gunakan bucket untuk tujuan lain.</li><li>**GCS**: Lihat <Anchor target="_blank" href="/marketers/id/docs/data-locker-cloud-service-setup">Artikel konfigurasi GCS</Anchor>.</li></ul> |
 | Kapasitas penyimpanan | Dikelola oleh AppsFlyer | Dikelola oleh pemasar |
 | Akses kontrol menggunakan titik akhir VPC dengan kebijakan bucket | Tidak Berlaku | [Opsional] Di AWS, jika Anda menerapkan keamanan titik akhir pada tingkat bucket, Anda harus mengizinkan server AppsFlyer. |
+
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
 
 #### **Pemberitahuan kepada petugas keamanan dalam hal penyimpanan yang dikontrol pelanggan**
 
@@ -288,6 +296,8 @@ Admin dapat mereset kredensial bucket AppsFlyer kapan saja. Perhatikan! Jika And
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informasi Tambahan
 
 <div id="traits-and-limitations" />
@@ -325,6 +335,8 @@ Admin dapat mereset kredensial bucket AppsFlyer kapan saja. Perhatikan! Jika And
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## Pengambilan data AWS
 
 Gunakan alat pengambil data S3 pilihan Anda, AWS CLI, atau salah satu alat yang dijelaskan di bagian berikut. Perhatikan! Instruksi yang tepat cocok untuk bucket milik AppsFlyer. Sesuaikan instruksi sesuai kebutuhan jika Anda terhubung ke bucket.
@@ -357,6 +369,8 @@ Dalam perintah berikut, nilai `{home-folder}` dapat ditemukan
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### Mendaftar file dan folder
 
@@ -451,6 +465,8 @@ Sebelum Anda mulai:
    Anda sekarang dapat mengakses file Data Locker.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

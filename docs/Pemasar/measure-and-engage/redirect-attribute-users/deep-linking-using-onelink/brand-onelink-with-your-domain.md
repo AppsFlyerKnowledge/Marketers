@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## Domain Bermerek
 
 * Domain Bermerek digunakan untuk tautan atribusi merek dengan merek dan domain Anda. Misalnya, seperti yang diilustrasikan pada gambar sebelumnya:
@@ -38,6 +40,8 @@ x-zendesk:
   * Mempromosikan kesadaran merek: Merek Anda menandai kampanye Anda, bukan tautan umum.
   * Mengaktifkan email agar tidak ditandai sebagai spam karena tautan tidak cocok dengan email pengirim.
 
+<div id="principles-of-implementation" />
+
 ### Prinsip implementasinya
 
 Domain Bermerek diimplementasikan dengan mengaitkan domain lengkap yang ditentukan dalam Domain Name System (DNS) dengan subdomain OneLink (tujuan CNAME AppsFlyer). Ini dilakukan dengan menggunakan pengaturan standar di DNS Anda dan menyiapkan Domain Bermerek di AppsFlyer. Selain itu, Anda perlu membuat beberapa perubahan kecil pada aplikasi Anda untuk mendukung Domain Bermerek .
@@ -45,6 +49,8 @@ Domain Bermerek diimplementasikan dengan mengaitkan domain lengkap yang ditentuk
 Anda akan memerlukan bantuan admin DNS, biasanya anggota tim IT atau penyedia hosting DNS dan pengembang aplikasi.
 
 Beberapa domain lengkap dapat dikaitkan dengan satu subdomain OneLink. Ini berarti Anda dapat memiliki beberapa merek menggunakan subdomain OneLink yang sama.
+
+<div id="setting-up-branded-domains" />
 
 ### Menyiapkan Domain Bermerek
 
@@ -56,6 +62,8 @@ Lengkapi daftar tindakan untuk menyiapkan Domain Bermerek.
 | 2 | Pengembang | [Menyiapkan Domain Bermerek di aplikasi](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Membuat perubahan kecil pada kode aplikasi. |
 | 3 | Pemasar | [Menggunakan dan menguji Domain Bermerek](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | Sesuai kebutuhan | Pemasar | [Mengedit dan menghapus Domain Bermerek](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### Prosedur
 
@@ -257,6 +265,8 @@ Pengeditan memungkinkan Anda mengubah pemetaan domain lengkap yang ada ke subdom
 * Hubungi CSM AppsFlyer Anda atau <Anchor target="_blank" href="hello@appsflyer.com">hello@appsflyer.com</Anchor>.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Penyelesaian masalah, karakteristik, dan batasan
 

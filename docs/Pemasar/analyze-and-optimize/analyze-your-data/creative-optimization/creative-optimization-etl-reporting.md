@@ -32,6 +32,8 @@ Pelaporan kinerja tingkat aset lengkap disediakan, termasuk semua indikator kine
 
 Optimisasi Materi Iklan ETL menggunakan <Anchor target="_blank" href="/marketers/id/docs/data-locker-for-marketers">Data Locker</Anchor> untuk mengirimkan data pelaporan Optimisasi Materi Iklan Anda ke penyimpanan cloud. Anda dapat memilih dari berbagai tujuan penyimpanan, seperti bucket milik AppsFlyer di Amazon Web Services (AWS) atau penyimpanan Anda sendiri di AWS, GCS, Yandex, BigQuery, Snowflake, dan banyak lagi. Data Locker mendukung banyak tujuan, yang berarti Anda dapat mengirim semua data ke satu atau beberapa tujuan, mengirim data spesifik ke tujuan tertentu, dan menyesuaikan pengiriman data sesuai kebutuhan Anda. Creative Optimization ETL **tersedia dengan paket berlangganan Creative Optimization Premium.**
 
+<div id="get-started" />
+
 ## Memulai
 
 Bagian ini menjelaskan cara menyiapkan Data Locker untuk pelaporan Pengoptimalan Materi Iklan.

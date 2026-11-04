@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Sekilas:** Mekanisme kuota (batasan tarif) membatasi jumlah laporan yang dapat dihasilkan per hari oleh Pull API dan halaman ekspor data.
 
+<div id="rate-limits-for-reports" />
+
 ## Batas tarif untuk laporan
 
 Kuota membatasi jumlah laporan yang dapat dihasilkan per hari per jenis laporan. Kuota bervariasi sesuai dengan paket langganan Anda.
@@ -33,6 +35,8 @@ Kuota membatasi jumlah laporan yang dapat dihasilkan per hari per jenis laporan.
 * **Jaringan iklan**: Laporan yang dihasilkan oleh jaringan iklan tidak dihitung sebagai bagian dari kuota pemasang iklan.
 * **Hari**: Kuota adalah per hari kalender mulai pukul 00.00 UTC
 
+<div id="aggregated-and-analytics-reports" />
+
 ### Laporan gabungan dan analitik
 
 | Alat pengiriman data | Kuota |
@@ -42,6 +46,8 @@ Kuota membatasi jumlah laporan yang dapat dihasilkan per hari per jenis laporan.
 | Master API | Tidak terbatas |
 | API Kelompok | 60 panggilan per menit per akun |
 | Laporan gabungan SKAN | 10 panggilan per menit per akun |
+
+<div id="raw-data" />
 
 ### Data Lengkap
 
@@ -58,12 +64,16 @@ Kuota membatasi jumlah laporan yang dapat dihasilkan per hari per jenis laporan.
 
 Untuk kemudahan pemahaman, lihat FAQ yang mengikuti tabel.
 
+<div id="ad-network-postback-reports-daily-quota" />
+
 #### Kuota harian data lengkap jaringan iklan
 
 | Grup | Jenis laporan  <br />(setiap jenis laporan memiliki kuota terpisah) | Kuota tingkat aplikasi | Kuota tingkat akun |
 | --- | --- | --- | --- |
 | Atribusi | <ul><li>Organic installs (Instalasi organik)</li><li>Install Non-Organik</li><li>Konversi penargetan ulang</li><li>mencopot pemasangan</li><li>Pendapatan iklan teratribusi</li><li>Pendapatan iklan organik</li><li>Pendapatan iklan penargetan ulang</li></ul> | 24 | Tak dapat diterapkan |
 | In-App Event | <ul><li>Organic installs (Instalasi organik)</li><li>Install Non-Organik</li><li>Konversi penargetan ulang</li><li>mencopot pemasangan</li></ul> | 12 | Tak dapat diterapkan |
+
+<div id="faq" />
 
 #### **Pertanyaan Umum**
 
@@ -73,6 +83,8 @@ Untuk kemudahan pemahaman, lihat FAQ yang mengikuti tabel.
   J: Ya. Kuota per jenis laporan terpisah.
 * P: Saya memiliki 25 aplikasi di akun saya. Dapatkah saya membuat 10 laporan penginstalan organik untuk setiap aplikasi?  
   J: Tidak. Ini menghasilkan total 250 laporan yang melebihi kuota tingkat akun sebesar 120.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

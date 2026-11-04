@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **Sekilas**: Ukur rasio uninstal untuk aplikasi Anda dan tentukan sumber mana (sumber media, kampanye, materi iklan, dan geo) yang mendatangkan pengguna berkualitas.
 
+<div id="overview" />
+
 ## Ringkasan
 
 Untuk memahami nilai pengguna aplikasi, Anda harus menganalisis tingkat penginstalan dan uninstall. Metrik uninstal dapat membantu Anda mengukur performa aplikasi, serta memahami kapan dan mengapa pengguna meninggalkan aplikasi Anda.
 
+<div id="how-does-it-work" />
+
 ### Bagaimana Cara Kerja API ini?
 
 AppsFlyer menggunakan notifikasi push senyap, dikirim sekali sehari, untuk memverifikasi apakah aplikasi masih terpasang di perangkat tertentu. Jika tidak ada respons, penghapusan instalan dicatat, dan dikaitkan dengan sumber media yang awalnya membawa pengguna.
+
+<div id="how-to-use-uninstall-data" />
 
 ## Cara menggunakan uninstall data
 
@@ -96,6 +102,8 @@ Metode untuk mengecualikan pengguna termasuk yang berikut:
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## Menyiapkan pengukuran uninstall
 
 Proses penyiapan metrik uninstall mengharuskan pemasar dan pengembang bekerja sama. Petunjuk penerapan bergantung pada sistem operasi yang menjalankan aplikasi Anda.
@@ -128,9 +136,13 @@ Alur untuk pemasar dan pengembang adalah sebagai berikut:
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## Prosedur implementasi
 
 Implementasi mengharuskan pengembang seluler Anda untuk mengintegrasikan mekanisme yang merespons notifikasi push ke aplikasi Anda. Instruksi implementasi bervariasi sesuai dengan sistem operasi.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Hubungkan Firebase Cloud Messaging ke AppsFlyer (Android)
 
@@ -196,6 +208,8 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### Untuk mengonfigurasi pengukuran uninstall di AppsFlyer
 
 <Tabs>
@@ -235,6 +249,8 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 
 </Tab>
 </Tabs>
+
+<div id="testing-uninstall-measurement" />
 
 ## Menguji pengukuran uninstall
 
@@ -277,6 +293,8 @@ Ingatlah hal-hal berikut saat menguji aplikasi iOS:
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## Memetakan Event Uninstall
 
 ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
@@ -287,6 +305,8 @@ Ingatlah hal berikut:
 
 * AppsFlyer hanya dapat mengirimkan postback jika event tersebut benar-benar terjadi dan direkam oleh AppsFlyer.
 * Jika Anda tidak melihat uninstall di halaman Ikhtisar dashboard atau di laporan data lengkap, ini berarti postback uninstall tidak dikirim ke mitra, meskipun event **af\_uninstall** telah dipetakan.
+
+<div id="limitations" />
 
 #### Batasan
 
@@ -307,6 +327,8 @@ aturan GCM
 </Tab>
 </Tabs>
 
+<div id="turning-off-uninstall-measurement" />
+
 ## Sedang menonaktifkan pengukuran uninstall
 
 <Tabs>
@@ -324,6 +346,8 @@ Jika sertifikat P12 disediakan dan divalidasi, pengukuran uninstall aplikasi dia
 </Tabs>
 
 **Catatan:** Agar uninstall dilaporkan, **Aktifkan pengukuran uninstall** harus diaktifkan pada saat aplikasi diinstal. Penginstalan yang terjadi ketika **Enable uninstalls measurement (Aktifkan pengukuran uninstall)** tidak aktif, tidak dilaporkan.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **Untuk mematikan pengukuran uninstall**:
 

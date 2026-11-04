@@ -34,9 +34,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **Mencari data lengkap API Pull?**
 >
 > Pelajari semuanya di <Anchor target="_blank" href="/marketers/id/docs/pull-api-raw-data">sini</Anchor>.
+
+<div id="pull-api-aggregate-data" />
 
 ## data teragregasi Pull API
 
@@ -46,6 +50,8 @@ x-zendesk:
 * Keunggulan tambahan dalam Pull API adalah:
   * Tambahkan jenis sentuh atribusi
   * Pilih zona waktu
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### Laporan kinerja agregat tersedia melalui Pull API
 
@@ -103,6 +109,8 @@ x-zendesk:
 | Perubahan nama kampanye | Laporan Pull API tidak mendukung perubahan nama kampanye |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

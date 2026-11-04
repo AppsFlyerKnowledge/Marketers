@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang jaringan pelaporan mandiri (SRN)—atribusi, tautan dalam, implikasi iOS, dan FAQ.
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## SRN diintegrasikan dengan AppsFlyer
 
 | **SRN** | **Logo** |
@@ -47,6 +49,8 @@ x-zendesk:
 
 **Catatan:** SRN memiliki <Anchor target="_blank" href="/marketers/id/docs/user-level-data-retention">batasan penggunaan dan retensi data tingkat pengguna.</Anchor>
 
+<div id="attribution" />
+
 ## Atribusi
 
 Tidak seperti non-SRN (jaringan iklan), yang menggunakan tautan atribusi untuk melaporkan event ke AppsFlyer, SRN mengatribusikan sendiri menggunakan ID perangkat saat diberi tahu tentang penginstalan oleh AppsFlyer.
@@ -55,6 +59,8 @@ Atribusi AppsFlyer untuk SRN dan non-SRN didasarkan pada:
 
 * Metodologi sentuhan terakhir dan multisentuh.
 * Logika atribusi standar AppsFlyer untuk mengurutkan data impresi dan klik yang relevan.
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### Bagaimana cara kerja atribusi dengan SRN?
 
@@ -66,9 +72,13 @@ SRN melaporkan kejadian, seperti penginstalan baru dan kejadian dalam aplikasi, 
 
 Setelah AppsFlyer melakukan atribusi, postback dalam aplikasi dikirim ke SRN selama durasi <Anchor target="_blank" href="/marketers/id/docs/user-level-data-retention#partner-data-retention-periods">periode retensi data mitra</Anchor>.
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### Bagaimana cara kerja pengaitan dengan SRN tingkat lanjut?
 
 SRN tingkat lanjut beratribusi dengan cara yang sama seperti SRN. Namun, SRN tingkat lanjut juga dapat mengatribusikan interaksi ketika tidak ada ID perangkat (IDFA)—menggunakan kerangka kerja <Anchor target="_blank" href="/marketers/id/docs/appsflyer-knowledge-base-glossary#privasi-gabungan-lanjutan">Privasi Lanjutan Teragregasi</Anchor> dan menggunakan <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#device-id-matching">pencocokan ID</Anchor> dan <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#probabilistic-modeling">pemodelan probabilistik</Anchor> melalui tautan atribusi.
+
+<div id="install-attribution" />
 
 ### Instal atribusi
 
@@ -81,6 +91,8 @@ Saat aplikasi pertama kali diluncurkan:
   * Pengguna memiliki ID iklan.
 * Jika kedua kondisi tersebut benar, AppsFlyer melakukan kueri SRN menggunakan ID iklan.
 * AppsFlyer melakukan atribusi setelah mempertimbangkan klaim SRN.
+
+<div id="install-attribution-examples" />
 
 #### Instal contoh atribusi
 
@@ -116,6 +128,8 @@ AppsFlyer memberikan data bantuan kepada pemasang iklan (interaksi tanpa atribut
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### Jendela atribusi
 
 Jendela atribusi mencakup lookback dan lihat-tayang. Beberapa SRN menagih pemasang iklan untuk penginstalan berdasarkan Biaya per Impresi (CPM) dan Biaya per Tindakan (CPA)—ini didasarkan pada klik atau impresi yang terjadi dalam periode 1-28 hari.
@@ -128,6 +142,8 @@ Jendela atribusi mencakup lookback dan lihat-tayang. Beberapa SRN menagih pemas
 * Mengapa? Karena AppsFlyer melaporkan eCPI dan eCPA aktual berdasarkan persyaratan yang ditetapkan pemasang iklan.
 * SRN mungkin mendapat manfaat dalam jangka pendek karena mereka sering menentukan ketentuan pembayarannya sendiri. Namun, pemasang iklan memperbaikinya dengan menggunakan penyedia atribusi pihak ketiga.
 
+<div id="deep-linking-with-srns" />
+
 ## Deep Linking dengan SRN
 
 Agar pengguna membuka aplikasi Anda saat tautan diklik, Anda hanya perlu menyiapkan skema Tautan Aplikasi/Tautan Universal/URI. Namun, untuk melakukan deep linking atau deferred deep linking ke halaman atau aktivitas tertentu di aplikasi Anda, SRN menggunakan metodenya sendiri—tanpa melibatkan metode deep linking AppsFlyer.
@@ -139,6 +155,8 @@ Jadi, bagaimana Anda dapat menautkan langsung user Anda dan mendapatkan data yan
 <Accordion title="Deep linking langsung">
 
 Saat perangkat pengguna melakukan deep linking, deep linking langsung dengan SRN dilakukan tanpa memanggil metode deep linking AppsFlyer. Pada contoh di bawah ini, pengguna lama yang mengeklik iklan dialihkan ke aktivitas secara langsung menggunakan metode Facebook, sementara pengguna baru mendapatkan pengalaman yang sama menggunakan data konversi AppsFlyer. Pelajari cara <Anchor target="_blank" href="/marketers/id/docs/meta-ads-faq#who-needs-facebooks-sdk">iklan Meta menggunakan OneLink untuk deep linking</Anchor>
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -165,6 +183,8 @@ Namun, dengan SRN, parameter deep linking AppsFlyer biasa tidak ada sebagai bagi
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## implikasi iOS
 
 Sebagian besar SRN mendukung SKAdNetwork dan memiliki integrasi yang diperlukan dengan AppsFlyer.
@@ -174,6 +194,8 @@ Sebagian besar SRN mendukung SKAdNetwork dan memiliki integrasi yang diperlukan 
 <Accordion title="Atribusi SRN iOS 14.5">
 
 Mulai iOS 14.5, saat pengguna memberikan persetujuan ATT di aplikasi pengiklan dan penerbit (<Anchor target="_blank" href="/marketers/id/docs/appsflyer-knowledge-base-glossary#persetujuan-ganda">persetujuan ganda</Anchor>), penginstalan SRN, yang dicatat di <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">dasbor SKAdNetwork</Anchor>, juga ditampilkan di  dasbor tradisional.
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -192,12 +214,16 @@ SRN yang menerima postback event bergantung pada penyertaan ID perangkat di post
 * Penurunan jumlah postback peristiwa yang dikirim ke SRN
 * Perbedaan jumlah postback event antara SRN dan AppsFlyer—yang mencatat semua event.
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > * Jika tidak ada IDFA, postback untuk penginstalan, pembukaan aplikasi, atau in-app event tidak dikirim ke SRN ([kecuali untuk skenario ini di Google ads](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)). Namun, beberapa SRN tingkat lanjut mendapatkan postback gabungan juga saat tidak ada IDFA.
 > * Jaringan iklan klik tidak terpengaruh, karena mereka menggunakan ID transaksinya sendiri, dan bukan ID perangkat, untuk mengatribusikan sendiri informasi postback event.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Pertanyaan Umum
 
@@ -236,6 +262,8 @@ Jika satu SRN digunakan untuk menjalankan kampanye akuisisi pengguna dan penarge
 
 **Kesimpulan:** Mendapatkan event penargetan ulang dari kampanye akuisisi pengguna adalah pemborosan.
 
+<div id="is-mistargeting-a-problem" />
+
 #### Apakah salah sasaran merupakan masalah?
 
 Analis data AppsFlyer memeriksa kampanye **akuisisi pengguna** Meta ads selama bulan tertentu.
@@ -246,6 +274,8 @@ Analis data AppsFlyer memeriksa kampanye **akuisisi pengguna** Meta ads selama b
 * **Kesimpulan: Dalam kampanye akuisisi pengguna SRN, 1 dari 10 pengguna yang ditargetkan sudah menjadi pengguna yang sudah ada.**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### Memecahkan masalah salah sasaran
 

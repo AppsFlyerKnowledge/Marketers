@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Sekilas:** Sesuaikan jendela lookback klik-tayang dan lihat-tayang, berdasarkan perjanjian Anda dengan sumber media.
 
+<div id="lookback-windows" />
+
 ## Jendela lookback
 
 Jendela lookback atribusi yang dapat dikonfigurasi memungkinkan Anda untuk menyesuaikan periode atribusi berdasarkan perjanjian Anda dengan sumber media.
@@ -34,9 +36,13 @@ Dengan mengatur jendela lookback atribusi per sumber media, AppsFlyer mengatribu
 * **Jendela lookback klik**: Jangka waktu maksimal setelah iklan diklik di mana penginstalan dapat diatribusikan ke iklan. Penginstalan yang terjadi setelah jendela lookback dianggap Organik.
 * **Jendela lookback lihat-tayang**: Jangka waktu maksimal setelah iklan dilihat di mana penginstalan dapat diatribusikan ke iklan. Penginstalan yang terjadi setelah jendela lookback dianggap Organik.
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### Jendela lookback yang dapat dikonfigurasi per jenis atribusi
 
 <table><thead><tr><th rowspan="2"><p><strong>Jenis Atribusi</strong></p></th><th rowspan="2"><p><strong>Metode Atribusi</strong></p></th><th colspan="2"><p><strong>Klik jendela lookback</strong> </p></th></tr><tr><th><p><strong>Jangkauan</strong></p></th><th><p><strong><strong>Default</strong></strong></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Klik-tayang</p><p>(Semua sumber media)</p></td><td><p>Perujuk, Pencocokan ID</p></td><td><p>1-30 Hari ATAU<br/>1-23 Jam</p></td><td><p>7 Hari</p></td></tr><tr><td><p>Pemodelan probabilistik</p></td><td><p><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptif</a></p></td><td><p>Hingga 24 jam</p></td></tr><tr><td rowspan="3"><p>View-Through (Lihat-Tayang)</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Sumber media</a> yang dipilih)</p></td><td><p>Pencocokan ID</p></td><td><p>1-24 jam</p><p>[Hingga 15 Des 2021, batas atas adalah 7 hari]</p></td><td><p>24 jam</p></td></tr><tr><td><p>Pemodelan probabilistik</p></td><td><p><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptif</a></p></td><td><p>Hingga 24 jam</p></td></tr><tr><td><p>Pemodelan probabilistik (lintas platform)</p></td><td><p>1-72 jam</p></td><td><p>24 jam</p></td></tr></tbody></table>
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### Jendela lookback pemodelan probabilistik
 
@@ -49,12 +55,16 @@ Jendela lookback pemodelan probabilistik, yang digunakan untuk mempertahankan ak
 
 Untuk mempelajari lebih lanjut, baca tentang <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#probabilistic-modeling">metode pemodelan Probabilistik AppsFlyer</Anchor>.
 
+<div id="lookback-window-setup" />
+
 ## Pengaturan jendela lookback
 
 Selanjutnya, kami mencantumkan proses pengaturan jendela lookback untuk SRN dan Tautan Atribusi
 
 <Tabs>
 <Tab title="Jendela Lookback SRN">
+
+<div id="attribution-lookback-window-for-srns" />
 
 ### Jendela lookback atribusi untuk SRN
 
@@ -115,6 +125,8 @@ Anda juga dapat mengatur jendela lookback di OneLink.
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## Distribusi peluncuran aplikasi pertama
 
 Di bawah ini adalah grafik yang menunjukkan distribusi peluncuran aplikasi pertama sejak hari interaksi.
@@ -126,6 +138,8 @@ Grafik tersebut dapat memberikan gambaran yang lebih baik tentang jumlah penggun
 Mayoritas pengguna, sedikit di atas 97%, yang meluncurkan aplikasi melakukannya dalam waktu 7 hari setelah berinteraksi dengan iklan. 2% sisanya melakukannya dalam rentang antara hari ke-7 dan akhir jendela lookback (hari ke-30).
 
 Faktanya, hampir 62% pengguna yang meluncurkan aplikasi melakukannya dalam waktu 15 menit setelah berinteraksi dengan iklan. 72% pengguna melakukannya dalam satu jam pertama.
+
+<div id="scenarios-and-examples" />
 
 ## Skenario dan contoh
 

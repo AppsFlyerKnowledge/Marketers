@@ -24,6 +24,8 @@ x-zendesk:
 
 Tautan massal memungkinkan Anda membuat dan melihat tautan yang dibuat secara massal. Tautan massal ini dikelompokkan dalam format koleksi yang mudah digunakan yang memungkinkan Anda melakukan tindakan pada seluruh koleksi seperti menambahkan tautan baru atau mengunduhnya.
 
+<div id="getting-started" />
+
 ## Persiapan
 
 1. Di AppsFlyer, buka **Pengalaman & Deep Linking** > **Tautan Massal OneLink**.
@@ -31,6 +33,8 @@ Tautan massal memungkinkan Anda membuat dan melihat tautan yang dibuat secara ma
    1. **Memulai** - (kirim untuk membuat koleksi pertama Anda).
    2. **Membuat templat OneLink** - Templat OneLink diperlukan untuk membuat koleksi. Lihat <Anchor target="_blank" href="/marketers/id/docs/create-a-onelink-template">Templat OneLink</Anchor>.
    3. **Upgrade** - Tautan massal tidak tersedia dengan paket Anda saat ini. Hubungi CSM Anda atau kirim pesan ke [hello@appsflyer.com](mailto:hello@appsflyer.com) tentang meng-upgrade paket Anda.
+
+<div id="creating-your-first-collection" />
 
 ## Membuat koleksi pertama Anda
 
@@ -51,6 +55,8 @@ Tautan massal dikelola dalam koleksi.
   * Saat ini, batas default adalah 20.000 pembuatan tautan per bulan
 * Bagian **Koleksi** memungkinkan Anda membuat koleksi baru dan melakukan tindakan lain ke koleksi tautan Anda saat ini.
 * Jika ada lebih dari tujuh koleksi, Anda dapat mencari dan memfilter daftar koleksi Anda.
+
+<div id="other-actions" />
 
 ## Tindakan lainnya
 
@@ -175,6 +181,8 @@ Koleksi dapat menjadi kosong karena:
 * Proses pengumpulan Baru dibatalkan atau gagal diselesaikan sebelum tautan dibuat. Ini menciptakan koleksi kosong.
 
 </Accordion>
+
+<div id="general-information" />
 
 ## Informasi umum
 

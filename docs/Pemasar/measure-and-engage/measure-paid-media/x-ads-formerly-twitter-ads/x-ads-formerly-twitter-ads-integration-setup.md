@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Integrasikan akun X Ads Anda dengan AppsFlyer untuk menampilkan data atribusi kampanye X Ads.
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Menghubungkan akun X Ads Anda ke AppsFlyer
 
 <Accordion title="Tonton">
@@ -64,6 +66,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="x-ads-attribution-setup" />
+
 ## Pengaturan atribusi X Ads
 
 Untuk penjelasan rinci tentang Header halaman konfigurasi mitra, klik <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner">di sini</Anchor>.
@@ -74,11 +78,15 @@ Untuk penjelasan rinci tentang Header halaman konfigurasi mitra, klik <Anchor ta
 
 **Tab Integrasi** dibagi menjadi beberapa bagian, seperti yang dijelaskan di bawah. <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">Mitra harus diaktifkan</Anchor> pada kunjungan pertama untuk mengaktifkan pengaturannya.
 
+<div id="ad-account-connected" />
+
 ### Akun iklan terhubung
 
 Pilih akun untuk mengaktifkan atribusi.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+
+<div id="click-through-attribution" />
 
 ### Atribusi Click-Through
 
@@ -88,6 +96,8 @@ Anda dapat menyesuaikan nilai ini ke 1-23 jam atau 1-30 hari. Kami merekomendasi
 
 ![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### Lookback Window Atribusi View-Through
 
 Slider ini memungkinkan Anda untuk mengatur **waktu maksimal mulai dari tayangan hingga penginstalan**. Hanya penginstalan (peluncuran pertama) yang terjadi dalam jendela lihat balik ini, setelah tayangan iklan, yang diatribusikan ke X Ads, asalkan tidak ada klik iklan lain yang relevan.
@@ -96,17 +106,23 @@ Anda dapat mengkustomisasi nilai ini ke 1-23 jam atau 1-7 hari. Kami merekomend
 
 ![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
 
+<div id="re-engagement-settings" />
+
 ### Pengaturan interaksi ulang
 
 Atribusi penargetan ulang X Ads hanya mencakup konversi interaksi ulang.
 
 Aktifkan sakelar **Atribusi interaksi ulang** untuk mulai mengatribusikan interaksi ulang untuk X Ads.
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### Jendela lihat-balik klik-tayang interaksi ulang
 
 Tetapkan durasi **Jendela lihat balik klik-tayang interaksi ulang** (jangka waktu maksimal setelah iklan diklik, yang mana pengguna yang ditargetkan ulang dapat diatribusikan ke iklan tersebut). Anda dapat mengatur nilainya dalam jam (hingga 23) atau hari (1-30).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Jendela lihat-balik lihat-tayang interaksi ulang
 
@@ -116,11 +132,15 @@ Tetapkan durasi **Re-engagement view-through lookback window (jendela lookback k
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
 
+<div id="re-engagement-window" />
+
 #### Periode Waktu Re-engagement
 
 Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (periode ketika in-app event pengguna dikaitkan ke sumber media retargeting (penargetan ulang). Anda dapat mengatur nilai dalam hari (1-90), jam (hingga 23), atau bahkan selamanya:
 
 ![Twitter-reengagement-window.png](https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png)
+
+<div id="in-app-event-postback-settings" />
 
 ### Pengaturan postback in-app event
 
@@ -152,6 +172,10 @@ Pada bagian ini, Anda dapat memetakan event AppsFlyer Anda dengan mitra Anda mel
 <Accordion title="Tab Link Atribusi">
 
 X Ads tidak menggunakan tautan atribusi untuk atribusi.
+
+<div id="h_01HDJVBAEZATGM580CNC7BCVTN" />
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -193,6 +217,8 @@ Di tab ini, Anda dapat memilih izin untuk diberikan kepada X Ads, untuk mitra be
 
 Gunakan tombol ini untuk memberikan hak akses kepada ad network dalam menangani konfigurasinya sendiri pada app Anda:
 
+<div id="ad-network-permissions" />
+
 ### Hak Akses Ad Network
 
 * **Allow to configure integration** (Izinkan untuk mengonfigurasi integrasi) - mengizinkan partner untuk mengatur tab integration(kecuali pada postback in-app event)
@@ -204,6 +230,8 @@ Gunakan tombol ini untuk memberikan hak akses kepada ad network dalam menangani 
 * **Allow access to your Protect360 dashboard** (Izinkan akses ke dashboard Protect360 Anda) - hanya ke data Protect360 milik partner, dan dengan syarat fitur ini diaktifkan untuk pemasang iklan
 
 Pelajari lebih lanjut tentang memberikan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">izin jaringan iklan.</Anchor>
+
+<div id="agency-permissions" />
 
 ### Hak Akses Agensi
 

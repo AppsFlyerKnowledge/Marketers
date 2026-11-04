@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **At a glance:** Easily manage your app’s currency settings to align your revenue reporting with your business needs. This article clarifies how currency changes impact your historical and future data, helps you understand who can make changes, and outlines the required approval steps.
 
+<div id="about-changing-app-currency-settings" />
+
 ## **About changing app currency settings**
 
 By default, your AppsFlyer dashboards display data using your selected local currency. You can easily switch to USD view at any time without changing the actual currency settings of your app.
 
 If you're viewing data from multiple apps with different local currencies, the dashboard defaults to USD automatically.
+
+<div id="who-can-change-the-app-currency" />
 
 ## **Who can change the app currency?**
 
@@ -39,6 +43,8 @@ Currency changes depend on your app's existing data:
 1. Contact your AppsFlyer representative or submit a support ticket.
 2. Provide your app details.
 3. Attach written approval acknowledging the impact on reporting.
+
+<div id="how-currency-changes-impact-your-data" />
 
 ## **How currency changes impact your data**
 
@@ -69,6 +75,8 @@ The impact varies:
 
 </Accordion>
 
+<div id="example" />
+
 ### **Example**
 
 <div id="reporting-impacts" />
@@ -84,6 +92,8 @@ If you change your app currency on **October 1**, here's how revenue reporting m
 | **SSOT** | Accurate up to 7 days before the change | Mixed currencies (inaccurate) | Accurate |
 
 </Accordion>
+
+<div id="important" />
 
 > 🚧 **Important!**
 >

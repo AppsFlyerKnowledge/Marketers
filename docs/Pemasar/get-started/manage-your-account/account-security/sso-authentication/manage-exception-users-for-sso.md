@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Exception users are users who aren’t required to log in through SSO. SSO remains enforced for the account, and admins can give specific users access to an assigned alternative login method.
 
+<div id="about-exception-users" />
+
 ## **About exception users**
 
 Exception users provide controlled access for users who need a non-SSO login method. For example, admins can use exception users for break-glass access or for users who can’t use the account’s identity provider.
@@ -29,6 +31,8 @@ Exception users provide controlled access for users who need a non-SSO login met
 Exception users can log in with SSO or with the alternative login method assigned to them. Users who aren’t added as exception users must log in through SSO.
 
 We recommend adding at least one trusted admin as an exception user during initial SSO setup. If the SSO configuration is incorrect, the admin can log in with their assigned alternative login method and update the configuration.
+
+<div id="prerequisites" />
 
 ## **Prerequisites**
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Gambar KB utama 2023-11-14_10-07-47.jpg](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)
 
+<div id="about-creative-optimization" />
+
 ## Tentang Optimisasi Materi Iklan
 
 **Pengoptimalan Materi Iklan** adalah solusi terpadu untuk mengukur kinerja materi iklan yang digunakan di semua kampanye Anda. Hal ini memungkinkan Anda dengan mudah menarik semua aset materi iklan Anda dari semua saluran media ke dalam satu platform, atau sistem BI Anda, dan menganalisis kinerjanya berdasarkan dimensi yang dipilih, di berbagai kampanye, saluran, dan banyak lagi. Pengoptimalan Materi Iklan memungkinkan Anda memilah-milah berdasarkan metrik dan KPI yang berbeda untuk mendapatkan wawasan penting sebelum merencanakan, memilih, dan memproduksi kumpulan materi iklan Anda berikutnya.
@@ -60,6 +62,8 @@ Setelah Anda berlangganan dan akun Anda telah disiapkan, dashboard **Optimisasi 
 | OPSIONAL | Mengatur:<ul><li>[Tag khusus](/docs/creative-optimization-guide#tag-khusus)</li><li>[Metrik khusus](/docs/creative-optimization-guide#custom-metrics)</li><li>[Tampilan dashboard yang dipersonalisasi](/docs/creative-optimization-guide#save-and-share-views)</li></ul> |
 | 4 | Jelajahi dashboard Anda:<br /><br /><Anchor target="_blank" href="/marketers/id/docs/creative-optimization-overview-dashboard">Dashboard ikhtisar</Anchor> - Gunakan untuk menganalisis kinerja materi iklan dan memaksimalkan dampak kampanye Anda.<br /><br /><Anchor target="_blank" href="/marketers/id/docs/creative-optimization-discovery-ai-dashboard">Dasbor penemuan</Anchor> - Gunakan untuk terus memproduksi dan memelihara materi iklan pemenang. |
 | 5 | Analisis data kinerja materi iklan dan optimalkan materi iklan dan/atau kampanye Anda, berdasarkan temuan. |
+
+<div id="creative-assets" />
 
 ## Aset kreatif
 
@@ -99,6 +103,8 @@ Optimisasi Materi Iklan memiliki kemampuan unik untuk mengidentifikasi aset mana
 
 Meta Advantage+ (materi iklan dinamis), dan Kampanye Aplikasi Universal Google (UAC) dapat menyertakan materi iklan dengan banyak aset. Namun, AppsFlyer tidak mengelompokkan data pada tingkat aset. Iklan Meta menyediakan data hingga **tingkat iklan** dan Google hanya menyediakan data hingga **tingkat grup iklan**. Untuk jenis materi iklan ini, AppsFlyer menggunakan pemodelan data untuk membagi data kinerja di seluruh aset.
 
+<div id="example" />
+
 > 📄 **Contoh**
 >
 > Misalkan ada materi iklan di Facebook dengan banyak aset. Facebook mengaitkannya dengan total 100 penginstalan, yang dibagi menjadi aset sebagai berikut: **aset A** memiliki 60 penginstalan dan **aset B** memiliki 40 penginstalan, sebagaimana diukur oleh Facebook. Di AppsFlyer, katakanlah iklan dikaitkan dengan 50 penginstalan (karena perbedaan atribusi yang melekat antara AppsFlyer dan SRN). Untuk mengaktifkan analisis tingkat aset, AppsFlyer mendistribusikan data kinerja (tayangan, klik, penginstalan, dan biaya) berdasarkan rasio metrik aset dari total seperti yang diilustrasikan di bawah ini.
@@ -117,6 +123,8 @@ Meta Advantage+ (materi iklan dinamis), dan Kampanye Aplikasi Universal Google (
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## Pemfilteran dan metrik
 
@@ -268,11 +276,15 @@ Metrik khusus juga dapat dengan mudah diedit atau dihapus.
 
 </Accordion>
 
+<div id="partner-dimensions-and-metrics" />
+
 <div id="partner-metrics::e592ecd3" />
 
 <Accordion title="Metrik mitra">
 
 Metrik mitra adalah data yang langsung berasal dari mitra media terintegrasi (dan bukan dari data atribusi AppsFlyer). Metrik bervariasi menurut mitra dan dapat mencakup impresi, klik, biaya, instalasi, IPM, CVR, CTR, eCPI, CPM, dan lainnya (lihat tabel di bawah untuk detail khusus mitra). Metrik dapat dipilih di filter, dilihat di seluruh dashboard, dan ditambahkan ke tabel.
+
+<div id="to-set-up-partner-metrics" />
 
 #### Meja mitra
 
@@ -404,6 +416,8 @@ f. Salin kunci API.
 
 5. Salin **ID Organisasi**.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Kami menyarankan Anda memasukkan kredensial metrik mitra saat menyiapkan integrasi mitra baru. Namun, hal ini tidak wajib. Anda dapat menyimpan integrasi dan menambahkan kredensial di lain waktu. Namun harap diperhatikan bahwa kami mengambil data mitra selama 90 hari sejak integrasi mitra dibuat, sehingga tidak memasukkan kredensial metrik mitra dapat mengakibatkan data hilang.
@@ -433,6 +447,8 @@ Klik ikon di kanan atas dashboard untuk menyalin URL halaman, lalu bagikan.
 <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## Tag khusus
 

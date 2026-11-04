@@ -54,12 +54,18 @@ Untuk deskripsi terperinci dari Partner Configuration Window (Jendela Konfiguras
 
 ***Integration tab (Tab integrasi)*** dibagi menjadi beberapa bagian seperti dijelaskan di bawah ini.
 
+<div id="activate-partner" />
+
 ### Aktifkan mitra
 
 Pada **kunjungan pertama** ke sini, Anda harus mengaktifkan **Aktivasi Mitra** untuk mengaktifkan penyiapan parameter tab integrasi. Sakelar harus aktif selama Anda bekerja dengan mitra.  
 Pelajari lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">aktivasi mitra</Anchor>.
 
+<div id="general-settings" />
+
 ### Pengaturan Umum
+
+<div id="advanced-data-sharing" />
 
 #### Berbagi data tingkat lanjutan
 
@@ -79,10 +85,14 @@ Untuk berbagi informasi penginstalan tambahan dengan Amplitude, aktifkan **Berba
 | af\_sub2 | af\_sub2 |
 | app\_version | app\_version |
 
+<div id="amplitude-eu-data-center" />
+
 #### Pusat Data Amplitude UE
 
 Jika **Pusat Data Amplitude UE** tidak aktif, postback penginstalan dikirim ke pusat data AS.  
 Untuk mengirim postback penginstalan ke pusat data Amplitude UE, aktifkan Pusat Data Amplitude UE.
+
+<div id="api-key" />
 
 #### Kunci API
 
@@ -104,9 +114,13 @@ Amplitude terhubung dengan AppsFlyer melalui Kunci API unik. Jika Anda belum mem
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Lanjutkan untuk mengonfigurasi Amplitude di Dashboard AppsFlyer.
 
+<div id="default-postbacks" />
+
 ### Postback Default
 
 AppsFlyer mengirimkan postback otomatis ke penginstalan pengguna Amplitude hanya ketika mereka diatribusikan ke Amplitude.
+
+<div id="in-app-event-settings" />
 
 ### Pengaturan in-app event
 
@@ -121,6 +135,8 @@ Setelah Anda menyimpan konfigurasi, AppsFlyer mengirimkan data berikut ke Amplit
 * Nama kampanye
 
 Mengirim IDFA untuk perangkat iOS tunduk pada <Anchor target="_blank" href="/marketers/id/docs/apply-aggregated-advanced-privacy-framework">persetujuan ATT oleh pengguna dan setelan Privasi Lanjutan</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 ### Postback in-app event
 
@@ -159,6 +175,8 @@ Pendapatan Iklan tidak didukung di integrasi dengan mitra ini.
 Izin tidak tersedia untuk Amplitude.
 
 </Accordion>
+
+<div id="viewing-attribution-data-in-the-amplitude-console" />
 
 ## Melihat data atribusi di konsol Amplitude
 

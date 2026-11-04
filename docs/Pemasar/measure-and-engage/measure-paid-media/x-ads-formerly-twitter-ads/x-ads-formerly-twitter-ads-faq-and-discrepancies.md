@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Selesaikan FAQ X Ads dan pahami perbedaannya.
 
+<div id="x-ads-faq-and-discrepancies" />
+
 ## FAQ X Iklan dan perbedaannya
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -103,6 +105,8 @@ Misalkan anggota tim Anda adalah Jenny dan nama penggunanya adalah @jenny. Nama 
 
 Ya.  
  Saat agensi membuat kampanye Twitter baru, nama kampanye harus dimulai dengan nama agensi dan garis bawah (Contoh: "AgencyName\_Campaign1").
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -228,6 +232,8 @@ Akun Twitter Anda harus menjadi Akun Iklan aktif untuk menerima data atribusi da
 
 </Accordion>
 
+<div id="discrepancies-between-x-ads-and-appsflyer" />
+
 ## Perbedaan antara Twitter dan AppsFlyer
 
 Meskipun kami bekerja sama dengan Twitter, perbedaan mungkin muncul antara dasbor Twitter dan dashboard/laporan AppsFlyer.
@@ -243,6 +249,8 @@ Berikut adalah alasan umum perbedaan yang harus diperhatikan pemasang iklan:
 | **Jenis sentuhan atribusi** | Atribusi Twitter didasarkan pada klik dan tayangan mereka sendiri. | AppsFlyer memprioritaskan atribusi klik-tayang daripada atribusi lihat-tayang. Jika Twitter menghitung sebuah tayangan dan AppsFlyer mengetahui adanya klik tambahan dalam jendela atribusi klik-tayang, klik dari sumber lain akan diatribusikan di dashboard AppsFlyer. Di Twitter, tayangan tersebut diatribusikan dan ditampilkan di dasbor mereka. |
 | **Pengaturan berbagi data Twitter** | Twitter mengizinkan penggunanya untuk TIDAK <Anchor target="_blank" href="https://twitter.com/settings/account/personalization">membagikan data pribadi mereka dengan pihak ketiga</Anchor> . Data ini termasuk iklan yang berinteraksi dengan mereka.<br /><br />Statistik di dashboard Twitter mencerminkan semua interaksi, termasuk pengguna yang memilih untuk tidak membagikan data. | AppsFlyer menampilkan data agregat pengguna Twitter ini, namun tidak melaporkan data lengkap tingkat pengguna mereka ( <Anchor target="_blank" href="/marketers/id/docs/x-ads-formerly-twitter-ads-setup-guide-overview#privasi-pengguna-x-ads">detail</Anchor> lebih lanjut). |
 | **Logika interaksi ulang Twitter** | Twitter menghitung pengguna unik. Jika pengguna berinteraksi ulang lebih dari sekali sebagai hasil dari kampanye yang sama, Twitter menampilkan interaksi ini sebagai satu konversi. | AppsFlyer menghitung setiap instance re-engagement (interaksi ulang), dan oleh karena itu, dalam kasus serupa, menampilkan interaksi ini sebagai beberapa konversi. |
+
+<div id="note-1" />
 
 > 📘 **Catatan**
 >

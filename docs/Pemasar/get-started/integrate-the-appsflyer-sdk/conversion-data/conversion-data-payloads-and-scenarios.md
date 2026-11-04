@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **Sekilas:** Gunakan data konversi untuk mengidentifikasi berbagai skenario konversi, menyesuaikan pengalaman pengguna, dan lainnya.
 
+<div id="overview" />
+
 ## Ringkasan
 
 Panduan berikut berisi berbagai skenario konversi pengguna dan payload data konversi terkait:
@@ -43,7 +45,11 @@ Data konversi tersedia di platform menggunakan salah satu dari berikut ini:
 
 Karena pengorbanan akurasi/latensi, data konversi untuk ID perangkat yang sama mungkin berbeda di seluruh API.
 
+<div id="non-organic-conversion-data-payload-fields" />
+
 ### Bidang payload data konversi non-organik
+
+<div id="fields-always-available" />
 
 #### Bidang selalu tersedia
 
@@ -67,11 +73,15 @@ Tabel berikut mencantumkan bidang yang selalu ada untuk konversi **non-organik**
 | `retargeting_conversion_type` | Jenis Konversi Penargetan Ulang | "tidak ada", atau retargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | Sub Param [n] (n=1–5) |  |
 
+<div id="fields-available-in-some-cases" />
+
 #### Kolom tersedia dalam beberapa kasus
 
 Kolom dalam tabel berikut tersedia dalam beberapa kasus, bergantung pada cara SRN mengisi event individu.
 
 <table><thead><tr><th>Nama kolom payload</th><th>Nama kolom data lengkap</th><th>Catatan</th></tr></thead><tbody><tr><td><code>af_channel</code></td><td>Channel</td><td><p>SRN mengisi parameter ini:</p><ul><li>AppLovin</li><li>Google Ads</li><li>Iklan Meta</li><li>Snapchat</li><li>TikTok untuk Bisnis</li><li>Twitter</li></ul><p>Contoh: Facebook—Instagram, Google—YouTube </p></td></tr><tr><td><code>orig_cost</code></td><td> </td><td><p>Catatan (1)</p></td></tr><tr><td><code>costs_cents_USD</code></td><td> </td><td><p>Catatan (1)</p></td></tr><tr><td><code>af_cpi</code></td><td> </td><td><p>Catatan (1)</p></td></tr></tbody><tbody><tr><td colspan="4"><p><strong>Catatan</strong></p><p>(1) Kolom biaya diisi dengan nilai yang dibagikan oleh jaringan iklan. Agar jaringan iklan berbagi data biaya dengan AppsFlyer, Anda harus mengaktifkan integrasi biaya di halaman <a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>Integrasi aktif</strong></a> . Beberapa SRN mendukung pembagian biaya secara massal. Dalam hal ini, bidang biaya tingkat kejadian kembali sebagai 0. </p></td></tr></tbody></table>
+
+<div id="additional-fields" />
 
 ### Kolom Tambahan
 
@@ -79,6 +89,8 @@ Kolom dalam tabel berikut tersedia dalam beberapa kasus, bergantung pada cara SR
 * Anda dapat menambahkan parameter  ke tautan atribusi, parameter tersebut tersedia di payload
 
 Lihat <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary#data-fields-dictionary">kamus kolom data lengkap</Anchor> untuk informasi tambahan.
+
+<div id="limitations" />
 
 ### Batasan
 
@@ -94,6 +106,8 @@ Jika sebuah parameter disebut `nama`, maka akan dihapus dari payload.
 
 ---
 
+<div id="ua-conversion-data-with-srns" />
+
 ## Data konversi UA dengan SRN
 
 <Anchor target="_blank" href="/marketers/id/docs/self-reporting-networks-srns">Jaringan pelaporan mandiri</Anchor> (SRN) adalah jaringan iklan yang menerapkan mekanisme atribusi mereka sendiri, misalnya Meta ads dan Google.
@@ -105,6 +119,8 @@ SRN tidak menggunakan tautan atribusi. Artinya:
 
 SRN melaporkan konversi ke AppsFlyer. Data konversi tersedia di aplikasi. Kolom yang tersedia bervariasi menurut SRN dan dirinci dalam bilah SRN individual yang mengikuti.
 
+<div id="a-note-about-meta-ads" />
+
 #### Catatan tentang Meta ads
 
 Jika Anda menjalankan kampanye di Meta ads dan tidak menandatangani persyaratan layanan Meta, AppsFlyer mengatribusikan penginstalan. Ketersediaan laporan terbatas sebagai berikut:
@@ -114,6 +130,8 @@ Jika Anda menjalankan kampanye di Meta ads dan tidak menandatangani persyaratan 
 
 <Tabs>
 <Tab title="Meta ads">
+
+<div id="meta-ads-conversion-data" />
 
 ### Data konversi Meta ads
 
@@ -227,6 +245,8 @@ Jika Anda menjalankan kampanye di Meta ads dan tidak menandatangani persyaratan 
 </Tab>
 </Tabs>
 
+<div id="ua-conversion-with-other-ad-networks" />
+
 ## Konversi UA dengan jaringan iklan lain
 
 Untuk jaringan iklan lainnya, data di payload dipengaruhi langsung oleh <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters">parameter di tautan atribusi</Anchor>.
@@ -238,6 +258,8 @@ Periksa payload JSON berikut ini.
 <div id="applovin" />
 
 <Accordion title="Applovin">
+
+<div id="attribution-link" />
 
 #### Tautan atribusi:
 
@@ -295,6 +317,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 <div id="ironsource" />
 
 <Accordion title="ironSource">
+
+<div id="attribution-link-1" />
 
 #### Tautan atribusi:
 
@@ -356,6 +380,8 @@ Namun, data terkait biaya **tidak muncul di tautan atribusi**. ironSource mengen
 
 </Accordion>
 
+<div id="retargeting-conversion-data" />
+
 ## Menargetkan ulang data konversi
 
 Penargetan ulang mencakup dua jenis konversi, atribusi ulang atau interaksi ulang.
@@ -363,6 +389,8 @@ Penargetan ulang mencakup dua jenis konversi, atribusi ulang atau interaksi ulan
 > 👍 **Tips**
 >
 > Data konversi untuk penargetan ulang tidak selalu memberikan indikasi yang jelas tentang jenis konversi. Lihat [sumber data konversi alternatif](#sumber-data-konversi-alternatif).
+
+<div id="re-attribution-with-srns" />
 
 ### Atribusi ulang dengan SRN
 
@@ -374,6 +402,8 @@ Artinya, tidak ada cara untuk menentukan, pada tingkat SDK, apakah penginstalan 
 >
 > Menyetel nama kampanye sedemikian rupa sehingga menunjukkan penargetan ulang **bukanlah metode yang sangat mudah**. Lihat [contoh untuk mempelajari lebih lanjut](#contoh-akuisisi-pengguna-campuran-dan-atribusi-ulang).
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ### Atribusi ulang dengan jaringan iklan biasa
 
 Atribusi ke jaringan iklan bergantung pada tautan atribusi. Baik tautan atribusi reguler atau OneLink, dengan penargetan ulang tautan atribusi selalu memiliki parameter `is_retargeting=true` yang ditetapkan di dalamnya.
@@ -382,6 +412,8 @@ Atribusi ke jaringan iklan bergantung pada tautan atribusi. Baik tautan atribusi
 
 <Accordion title="Kampanye penargetan ulang dengan Criteo">
 
+<div id="attribution-link-2" />
+
 #### Link Atribusi
 
 ```http
@@ -389,6 +421,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### Payload data konversi
 
@@ -430,6 +464,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ### Atribusi ulang dengan deferred deep linking
 
 Sering kali, Anda ingin menautkan langsung pengguna yang dikaitkan ulang yang mana, menurut definisi dikaitkan ulang, tidak menginstal aplikasi. Misalnya, Anda menetapkan kampanye yang bertujuan untuk mengembalikan pengguna yang meng-uninstal aplikasi. Kampanye mempromosikan produk atau layanan dan Anda ingin melayani pengguna dengan konten yang terkait dengan produk atau layanan yang Anda iklankan.
@@ -441,6 +477,8 @@ Ini disebut sebagai Deferred Deep Linking (Tautan Langsung yang Tertunda) Payloa
 <Accordion title="Deferred Deep Linking dengan SRN">
 
 Parameter Deep Link (Tautan Langsung) yang ditentukan dalam kampanye SRN tidak tersedia di luar SRN. Ini termasuk parameter `af_dp` , yang menyimpan jalur skema di aplikasi. Satu-satunya pengecualian untuk hal ini adalah saat menggunakan <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#menggunakan-penautan-langsung-yang-ditangguhkan-di-kampanye-aplikasi">kampanye Aplikasi Google pada Feeds</Anchor>. Untuk menerapkan deferred deep linking (tautan langsung yang tertunda), logika tambahan harus diterapkan untuk kampanye SRN. Gunakan data dalam tanggapan `onConversionSuccess` , seperti kampanye, set iklan, grup iklan, untuk mengalihkan pengguna Anda secara terprogram.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Data konversi untuk deferred deep linking dengan Meta ads
 
@@ -528,6 +566,8 @@ Anda dapat menggunakan data dalam respons getConversionData, seperti kampanye, a
 
 Ada tiga cara untuk menautkan pengguna secara langsung:
 
+<div id="uri-schemes" />
+
 #### Skema URI
 
 Ketika menggunakan Skema URI, untuk tautan atribusi dan OneLink, tautan atribusi dan payload adalah sebagai berikut:
@@ -584,6 +624,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - ketika parameter ini muncul dan diatur ke true, lihat untuk bidang skema dan `tuan rumah`
 * `skema` dan `tuan rumah` - bidang-bidang ini datang dari parameter `af_dp` di tautan atribusi dan mengindikasikan skema dan aktivitas yang seharusnya sudah ditautkan langsung dengan pengguna
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### Tautan universal iOS dan tautan aplikasi Android
 
 Ini adalah dua dari tiga cara untuk melakukan deep linking (tautan langsung).
@@ -636,13 +678,19 @@ Ketika menggunakan tautan universal atau tautan aplikasi, OneLink dan payload ad
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ### Interaksi ulang dengan SRN
 
 Seperti dengan kampanye Atribusi Ulang, ketika pengguna berinteraksi ulang melalui sebuah SRN, data konversi tidak mengindikasikan bahwa ini adalah kampanye interaksi ulang. Anda dapat mengatur nama kampanya sehingga mengindikasikan bahwa ini adalah kampanye interaksi ulang.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ### Interaksi Ulang dengan jaringan iklan reguler
 
 Di sini juga, payload data konversi tidak mengindikasikan bahwa pengguna datang dari kampanye interaksi ulang. Untuk mengatasi keterbatasan ini, Anda dapat mengatur nama kampanye untuk mengindikasikan interaksi ulang.
+
+<div id="re-engagement-with-deep-linking" />
 
 ### Interaksi ulang dengan deep linking
 
@@ -694,10 +742,14 @@ Alasan lain untuk menggunakan OneLink versi pendek adalah struktur data konversi
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ### Sumber data konversi alternatif
 
 * Push API menawarkan muatan konversi mendetail yang menunjukkan atribusi ulang atau keterlibatan ulang. Payload Push API menyertakan bidang yang disebut `re_targeting_conversion_type`. Kolom ini menunjukkan jenis konversi, baik atribusi ulang atau interaksi ulang. Untuk mempelajari lebih lanjut, lihat <Anchor target="_blank" href="/marketers/id/docs/push-api-streaming-raw-data">panduan Push APIkami</Anchor>.
 * Laporan Data Lengkap juga berisi indikator untuk jenis konversi. Di laporan data lengkap untuk penargetan ulang konversi, terdapat kolom bernama ***Nama Event***. Nilai dalam kolom ini adalah ***interaksi ulang*** atau ***atribusi ulang*** menurut jenis konversi.
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ### Contoh akuisisi pengguna campuran dan atribusi ulang
 

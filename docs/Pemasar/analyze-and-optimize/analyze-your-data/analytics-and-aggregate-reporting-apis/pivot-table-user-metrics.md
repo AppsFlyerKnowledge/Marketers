@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Full_Funnel.gif](https://files.readme.io/4e1a398e3e5496afd5e0001123685a7aa14ccb9b72e9ebd98e9f87cff658d427-115004271966.gif)
 
+<div id="about-pivot-reports-page" />
+
 ## Pivot reports page
 
 Using Pivot, you generate customized reports containing user acquisition metrics. Pivot comes with a number of pre-defined reports to use as a base from which you create your customized reports. Reports created by a given team member are available to all team members.
@@ -47,6 +49,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 * In AppsFlyer, go to **Reports** > **Pivot**.  
   The list of currently defined reports displays.
+
+<div id="pivot-page-controls-and-options" />
 
 <Accordion title="Pivot page—controls and options">
 
@@ -123,6 +127,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 </Accordion>
 
+<div id="add-a-pivot-report" />
+
 <Accordion title="Add a pivot report">
 
 **To add a pivot report**:
@@ -141,6 +147,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 | Filters | Place the required filters in the filters section. Configure how filters are set:<ul><li>Text</li><li>Multi-select</li></ul> |
 
 </Accordion>
+
+<div id="view-a-pivot-report" />
 
 <Accordion title="View a pivot report">
 
@@ -161,6 +169,8 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 </Accordion>
 
 ## Traits and limitations
+
+<div id="traits-and-limitations::e6883df" />
 
 <Accordion title="Traits and limitations">
 

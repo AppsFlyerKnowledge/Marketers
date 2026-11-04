@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## Tentang atribusi undangan pengguna
 
 Undangan pengguna berarti pengguna aplikasi Anda saat ini membagikan tautan yang mengarahkan orang lain (misalnya, teman mereka) untuk mengunduh/membuka aplikasi Anda.
@@ -45,6 +47,8 @@ Anda juga dapat menggunakan data dari tautan ke:
 
 Tautan undangan pengguna yang dibagikan pengguna dengan orang lain sebenarnya adalah tautan khusus OneLink (URL pendek) yang dihasilkan oleh SDK AppsFlyer yang terintegrasi dalam aplikasi Anda. Pengaturan OneLink Anda memastikan bahwa pengguna yang mendapat undangan dialihkan ke tempat yang tepat—ke app store yang benar, ke dalam aplikasi Anda, atau tautan langsung/menunda deep link (tautan langsung) ke halaman tertentu di aplikasi Anda. <Anchor target="_blank" href="/marketers/id/docs/onelink-guide">Pelajari lebih banyak tentang OneLink</Anchor>
 
+<div id="flow" />
+
 ### Alur
 
 Alur kerjanya sebagai berikut:
@@ -57,6 +61,8 @@ Alur kerjanya sebagai berikut:
    * Tidak menginstal aplikasi, aplikasi dikirim ke app store yang tepat. Pengguna B dapat ditangguhkan tautan langsungnya ke halaman tertentu di aplikasi setelah peluncuran aplikasi pertama, dan/atau Pengguna A dapat diberi hadiah.
    * Melakukan in-app event, Pengguna A dapat diberi hadiah.
 
+<div id="viewing-data" />
+
 ## Melihat data
 
 Data undangan pengguna tersedia melalui dashboard dan laporan AppsFlyer. Di dashboard AppsFlyer, Anda dapat memfilter atribusi undangan pengguna berdasarkan:
@@ -66,6 +72,8 @@ Data undangan pengguna tersedia melalui dashboard dan laporan AppsFlyer. Di dash
 * **Kampanye**: Seperti yang diputuskan oleh pemasar.
 
 Dalam laporan, sumber media (parameter `pid` ) dikirim oleh SDK dengan nilai default `af_app_invites`. 
+
+<div id="procedures" />
 
 ## Prosedur
 
@@ -105,6 +113,8 @@ Dalam laporan, sumber media (parameter `pid` ) dikirim oleh SDK dengan nilai def
 
 <Accordion title="Parameter">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### Parameter/nilai diberikan kepada pengembang untuk diterapkan di SDK
 
 <table><thead><tr><th><span>Parameter/nilai</span></th><th><span>Catatan</span></th><th><span>Catat nilai/kasus penggunaan yang harus diterapkan pengembang</span></th></tr></thead><tbody><tr><td><span>ID templat OneLink</span></td><td><p>ID templat OneLink dengan pengaturan dasar yang menjadi dasar semua tautan undangan pengguna. Misalnya: H5hv</p></td><td></td></tr><tr><td><span>Channel</span></td><td><p>Nama kanal. Ini membantu Anda mengurutkan dan melihat atribusi berdasarkan kanal di UI AppsFlyer.</p></td><td></td></tr><tr><td><span>Kampanye</span></td><td><p>Nama kampanye. Ini membantu Anda mengurutkan dan melihat atribusi berdasarkan kampanye di UI AppsFlyer.</p></td><td></td></tr><tr><td> <span>is_retargeting=true</span><span><br/></span> </td><td><p>Ditambahkan jika kampanye Anda menargetkan ulang pengguna yang sudah ada.</p></td><td></td></tr><tr><td><span>deep_link_value</span></td><td><p>Parameter yang akan digunakan pada perangkat pengguna yang dirujuk untuk memberikan mereka pengalaman tertentu. Biasanya, ini digunakan untuk <span>memberi nama halaman tertentu yang akan dituju pengguna. Misalnya, jika aplikasi Anda menjual buah, Anda dapat menautkan langsung pengguna ke halaman apel.</span></p></td><td></td></tr><tr><td><span>deep_link_sub1</span></td><td rowspan="10"><p>Parameter yang akan digunakan pada perangkat pengguna yang dirujuk untuk memberikan mereka pengalaman tertentu. Karena deep_link_value biasanya digunakan untuk mengarahkan pengguna ke halaman tertentu, parameter ini dapat digunakan untuk fungsi lain yang diinginkan. Misalnya untuk menambahkan hadiah atau diskon, atau mencatat pengguna yang melakukan referral. </p></td><td></td></tr><tr><td><span>deep_link_sub2</span></td><td></td></tr><tr><td><span>deep_link_sub3</span></td><td></td></tr><tr><td><span>deep_link_sub4</span></td><td></td></tr><tr><td><span>deep_link_sub5</span></td><td></td></tr><tr><td><span>deep_link_sub6</span></td><td></td></tr><tr><td><span>deep_link_sub7</span></td><td></td></tr><tr><td><span>deep_link_sub8</span></td><td></td></tr><tr><td><span>deep_link_sub9</span></td><td></td></tr><tr><td><span>deep_link_sub10</span></td><td></td></tr><tr><td><span>[Opsional] pid</span></td><td><p>Secara default, tautan yang Anda buat menyertakan<span> sumber media (parameter <code>pid</code> ) dengan nilai <code>af_app_invites</code>. </span></p><p><span>Untuk mengubah nilainya, pengembang Anda perlu menambahkan parameter khusus yang disebut <code>pid</code> dengan nilai yang Anda inginkan. <strong>Catatan</strong>: Untuk Android, ini hanya berfungsi untuk SDK V6.4.2+.</span></p></td><td></td></tr><tr><td><span>Nama bermerek</span></td><td><p>Nama domain bermerek. Ini membantu Anda mengurutkan dan melihat atribusi berdasarkan domain bermerek di UI AppsFlyer.</p></td><td></td></tr></tbody></table>
@@ -131,6 +141,8 @@ Agar semua ini berfungsi, Mark mengirimkan kepada pengembangnya daftar parameter
 | Kampanye | summer\_sale | Untuk atribusi dan melihat data di AppsFlyer. |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi Tambahan
 

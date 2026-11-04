@@ -38,6 +38,8 @@ Metrik dan grafik didasarkan pada data dari lalu lintas yang dikirim ke AppsFlye
 
 </Accordion>
 
+<div id="use-partner-integrations" />
+
 ## Menggunakan Pasar Mitra
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -84,6 +86,8 @@ Integrasinya sendiri dilakukan dari halaman pengaturan integrasi mitra, namun un
 Lihat <Anchor target="_blank" href="/marketers/id/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">cara berintegrasi dengan mitra baru dari Pasar Mitra</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Pemecahan Masalah
 

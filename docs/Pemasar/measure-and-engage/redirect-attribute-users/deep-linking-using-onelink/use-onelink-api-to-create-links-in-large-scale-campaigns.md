@@ -26,6 +26,8 @@ x-zendesk:
 
 > **Sekilas:** OneLink API membantu Anda melibatkan pengguna akhir dan memanfaatkan media yang dimiliki dengan menghasilkan tautan yang dipersonalisasi dalam kampanye skala besar, melalui SMS, dan masih banyak lagi. Mengharuskan pengiklan dan pengembang untuk menerapkan.
 
+<div id="about-onelink-api" />
+
 ## OneLink API
 
 OneLink API digunakan untuk:
@@ -70,6 +72,8 @@ Dashboard OneLink API menampilkan:
 **Untuk melihat dashboard OneLink API**: 
 
 Di AppsFlyer, buka **Pengalaman & Deep Linking** > **OneLink API**.
+
+<div id="traits-and-limitations" />
 
 ### Karakteristik dan batasan
 

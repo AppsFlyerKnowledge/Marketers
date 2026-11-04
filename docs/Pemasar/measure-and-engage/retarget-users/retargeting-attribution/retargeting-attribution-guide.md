@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **Sekilas:** Kampanye penargetan ulang (pemasaran ulang) memotivasi pengguna untuk membuka dan berinteraksi ulang dengan aplikasi atau mendorong pengguna yang telah menghapus aplikasi untuk menginstalnya kembali.
 
+<div id="retargeting-fundamentals" />
+
 ## Dasar-dasar penargetan ulang
 
 Atribusi penargetan ulang terjadi ketika pengguna berinteraksi dengan kampanye penargetan ulang dengan mengklik [tautan atribusi penargetan ulang](/docs/retargeting-attribution-guide#retargeting-attribution-links) atau <Anchor target="_blank" href="/marketers/id/docs/create-a-onelink-template">deep link (tautan langsung)</Anchor>. Atribusi penargetan ulang ini menghasilkan salah satu event atribusi berikut:
@@ -38,6 +40,8 @@ Atribusi penargetan ulang terjadi ketika pengguna berinteraksi dengan kampanye p
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 Sebelum menjalankan kampanye penargetan ulang, tinjau aturan interaksi dan contoh kasus di bagian berikut, lalu atur penargetan ulang seperti yang dijelaskan di bagian prosedur penargetan ulang. Untuk lebih mudahnya, Anda harus terbiasa dengan <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model">model atribusi</Anchor> AppsFlyer dan jendela atribusi terkait.
+
+<div id="tip" />
 
 > 👍 **Tips**
 >
@@ -62,6 +66,8 @@ Diagram berikut berisi sekumpulan aturan interaksi ulang. Gunakan aturan tersebu
 
 Tabel berikut berisi informasi referensi terkait jendela yang terkait dengan atribusi penargetan ulang.
 
+<div id="inclusion-windows" />
+
 #### Jendela inklusi
 
 | Jenis jendela | Deskripsi |
@@ -70,6 +76,8 @@ Tabel berikut berisi informasi referensi terkait jendela yang terkait dengan atr
 | Klik lookback (lihat-balik) | Durasi maksimum dimulai saat pengguna mengklik iklan hingga mereka membuka aplikasi.<br /><br />**Lokasi konfigurasi**: Tautan atribusi<br /><br />**Durasi** :<ul><li>Default: 7 hari</li><li>Rentang: 1-23 jam/1-30 hari</li></ul>**Catatan SRN:** Periksa dengan SRN, apa saja kebijakan khusus mereka tentang jendela lookback. |
 | Re-engagement | Pertimbangkan hal berikut sehubungan dengan jendela re-engagement (interaksi ulang):<ul><li>Jendela dimulai saat pengguna membuka aplikasi untuk pertama kalinya setelah berinteraksi dengan sumber media penargetan ulang.</li><li>In-app event <Anchor target="_blank" href="/marketers/id/docs/resolve-retargeting-double-attribution">diatribusikan dua kali</Anchor> pada pernargetan ulang dan sumber media akuisisi pengguna selama durasi jendela</li><li>Durasi jendela ditentukan oleh pengaturan aplikasi atau oleh SRN.</li><li>Jika pengguna berinteraksi dengan kampanye penargetan ulang lainnya selama jendela interaksi ulang yang tidak diblokir oleh jendela eksklusi, jendela interaksi ulang segera berakhir dan jendela interaksi ulang yang baru dimulai.</li><li>Dalam konteks atribusi ulang: Durasi **jendela atribusi** tidak terbatas dalam waktu (mirip dengan penginstalan). Namun, jendela ini berakhir jika ada penginstalan baru, penginstalan ulang, atau karena batas penyimpanan data.</li></ul>**Di mana disetel:** Tautan atribusi<ul><li>Default: 30 hari</li><li>Rentang: 1-23 jam/1-90 hari/seumur hidup</li></ul>**Catatan SRN**: Dapat dikonfigurasi untuk SRN<br /><br />Jika Anda mengubah pengaturan jendela, perubahan tersebut berdampak pada interaksi ulang di masa mendatang. Ini tidak berdampak pada interaksi ulang yang ada. |
 
+<div id="exclusion-windows" />
+
 #### Jendela eksklusi
 
 | Jenis jendela | Deskripsi |
@@ -77,6 +85,8 @@ Tabel berikut berisi informasi referensi terkait jendela yang terkait dengan atr
 | Waktu minimal antara konversi re-engagement | Jangan merekam interaksi ulang selama jendela eksklusi.<br /><br />**Waktu minimal antara konversi re-engagement**<ul><li>Saat interaksi ulang, jendela saat in-app event diatribusikan ke kampanye penargetan ulang (utama) dan UA (non-utama) dibuka.</li><li>Hal ini memungkinkan pengukuran kinerja kampanye penargetan ulang.</li><li>Jika jaringan atau kampanye lain menghasilkan interaksi ulang selama jendela ini:<ul><li>[Default] jendela interaksi ulang yang ada ditutup, interaksi ulang lainnya dicatat, dan in-app event berikutnya diatribusikan ke interaksi ulang terbaru.</li><li>Untuk mencegah hal ini, atur waktu Minimum antar konversi interaksi ulang. Dalam hal ini, hanya setelah waktu berlalu minimum, interaksi ulang lebih lanjut dapat direkam.</li></ul></li><li>Pengaturan ini tidak berdampak jika re-engagement window (jendela interaksi ulang) lebih singkat dari durasi pengaturan ini. Contoh: Jika re-engagement windows (jendela interaksi ulang) adalah 1 hari, dan pengaturan ini adalah 4 hari, maka pengaturan ini tidak memiliki pengaruh apa pun.</li><li>Pengaturan ini tidak mempengaruhi waktu antara instalasi dan re-engagement (interaksi ulang).</li></ul>**Lokasi pengaturan**: Laman pengaturan aplikasi<br /><br />**Durasi**:<ul><li>Default: Tidak ada</li><li>Rentang: 1-23 jam/1-30 hari</li></ul> |
 | <Anchor target="_blank" href="/marketers/id/docs/set-retargeting-inactivity-window">Periode ketidakaktifan minimum</Anchor> | Jangan rekam keterlibatan ulang atau atribusi ulang selama periode pengecualian.<br /><br />**Tempat pengaturan** Halaman pengaturan mitra terintegrasi di tab Integrasi.<br /><br />**Durasi**:<ul><li>Default: Tidak ada</li><li>0-30 hari</li></ul>**Catatan SRN** : Pertimbangkan bahwa SRN biasanya memiliki aturan periode tidak aktifnya sendiri. Jika pengaturan Anda berbeda dari SRN, ini dapat menyebabkan perbedaan. |
 | <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window">Re-attribution</Anchor> | Jendela atribusi ulang memengaruhi atribusi ulang tetapi tidak memengaruhi interaksi ulang.<br /><br />Pengguna yang menginstal ulang selama jendela atribusi ulang setelah berinteraksi dengan kampanye penargetan ulang diatribusikan ke sumber media penargetan ulang. Bacaan terkait: <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#reinstalls">Reinstalls (penginstalan ulang)</Anchor><br /><br />**Lokasi pengaturan:** Pengaturan aplikasi |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### **Contoh alur penerapan aturan**
 
@@ -104,6 +114,8 @@ Daftar periksa aturan interaksi ulang untuk atribusi klik-tayang dan lihat-tayan
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## Operasi penargetan ulang
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ Pengaturan berikut diperlukan tergantung pada skenario.
 | --- | --- | --- |
 | Re-engagement | <ol><li>Buka **Konfigurasi** > **Pengaturan aplikasi.**</li><li>Pastikan bahwa **atribusi** **interaksi ulang**aktif.</li><li>Per SRN: Buka **Konfigurasi** > **Integrasi aktif,** pilih SRN.</li><li>Aktifkan **Atribusi interaksi ulang**.</li></ol> | <ol><li>Buka **Konfigurasi** > **Pengaturan aplikasi.**</li><li>Pastikan bahwa **atribusi interaksi ulang** aktif.</li><li>Per non-SRN: Tambahkan parameter penargetan ulang ke tautan atribusi seperti yang dijelaskan di bagian ini</li></ol> |
 | Re-attribution | <ol><li>Buka **Konfigurasi** > **Integrasi aktif,** pilih SRN.</li><li>Aktifkan **Reinstall attribution (atribusi penginstalan ulang).**</li></ol> | <ol><li>Tidak diperlukan pengaturan eksplisit.</li><li>Tambahkan parameter penargetan ulang ke tautan atribusi seperti yang dijelaskan di bagian ini.</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **Pengaturan Non-SRN**
 
@@ -169,6 +183,8 @@ Penargetan ulang parameter tautan atribusi
 | Penargetan ulang timer lookback lihat-tayang (view-through lookback timer) | <ul><li>Penargetan ulang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">jendela lookback lihat-tayang</Anchor> bekerja persis seperti kampanye akuisisi pengguna.</li><li>Penargetan ulang ini menentukan periode maksimum waktu berlalu setelah pengguna melihat iklan hingga pengguna diatribusikan.</li><li>Defaultnya adalah 1 hari.</li><li>Jendela lookback diatur menggunakan</li></ul>`af_viewthrough_lookback = {time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>Contoh**<br />Untuk menetapkan jendela lookback lihat-tayang 5 jam, tambahkan berikut ini ke tautan atribusi kampanye penargetan ulang: `& af_viewthrough_lookback = 5j` | Tidak |
 | Periode Waktu Re-engagement | <ul><li>Jendela **interaksi ulang** dapat diatur pada antarmuka pengguna tautan atribusi. Ini mengatur parameter **af\_reengagement\_window** ke tautan atribusi. Parameter ini dapat ditambahkan secara manual.</li><li>Default-nya adalah 30 hari.</li><li>Nilai untuk re-engagement window tersedia sebagai berikut:</li><li>Jam:1- 23 jam</li><li>Hari: 1-90 hari</li><li>Masa pakai selamanya: Tetap ada sampai pengguna mencopot penginstalan (uninstall) atau melakukan interaksi ulang lainnya, misalnya, af\_reengagement\_window=lifetime</li></ul>Misalnya, **af\_reengagement\_window=60d** artinya event yang dilaporkan dalam 60 hari setelah interaksi ulang diatribusikan ke sumber media penargetan ulang. | Tidak |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### Penargetan ulang periode lookback lihat-tayang
 
 ```http
@@ -211,6 +227,8 @@ Interpretasi laporan data lengkap dalam konteks penargetan ulang
 | Bidang kontribusi | Tidak tersedia untuk interaksi ulang |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informasi Tambahan
 
@@ -257,6 +275,8 @@ Untuk menjalankan kampanye penargetan ulang, aplikasi harus memenuhi persyaratan
 | **Kapan waktu interaksi teratribusi sama dengan waktu penginstalan?**<ul><li>Ketika user klik universal link atau app link dan melakukan deep linking, mereka diarahkan ke app tanpa melalui AppsFlyer terlebih dahulu.</li><li>Ketika app diluncurkan dan SDK melaporkan re-engagement baru, AppsFlyer akan mereproduksi data klik, menggunakan label waktu yang sama dengan peluncuran app. Hal ini membuat waktu interaksi dan peluncuran sama.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

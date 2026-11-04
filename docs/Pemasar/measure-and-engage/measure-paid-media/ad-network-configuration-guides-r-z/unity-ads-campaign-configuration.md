@@ -25,6 +25,8 @@ x-zendesk:
 
 Untuk mengonfigurasi kampanye Anda dengan Unity Ads, ikuti langkah-langkah di bawah ini.
 
+<div id="setting-up-unity-ads" />
+
 ## Menyiapkan Unity Ads
 
 Pengaturan dilakukan dari halaman **Integrasi Aktif** , tetapi untuk menemukan partner, Anda harus pergi ke <Anchor target="_blank" href="/marketers/id/docs/partner-integrations">pasarterlebih</Anchor> dahulu.
@@ -55,10 +57,14 @@ Untuk deskripsi terperinci dari Header Partner Configuration Window (Periode Wak
 
 <Accordion title="Tab Integrasi">
 
+<div id="activate-partners" />
+
 ### Aktifkan partner
 
 Pada kunjungan pertama, Anda harus mengaktifkan tombol **Aktifkan partner** untuk mengatur integrasi. Sakelar harus tetap aktif selama Anda bekerja dengan partner.  
 Untuk detail lebih lanjut tentang aktivasi partner, silakan klik <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">di sini</Anchor>.
+
+<div id="general-settings" />
 
 ### Pengaturan umum
 
@@ -82,6 +88,8 @@ Aktifkan opsi ini untuk mengaitkan penginstalan view-through dari Unity Ads. Sli
 
 ![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
 
+<div id="default-postbacks" />
+
 ### Postback Default
 
 ![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
@@ -91,15 +99,21 @@ Kirim postback otomatis ke Unity Ads setelah penginstalan dan interaksi ulang pe
 * **Partner ini saja**: untuk acara yang datang hanya dari pengguna yang diatribusikan ke Unity Ads.
 * **Semua sumber media termasuk organik**: agar seluruh basis pengguna Anda tersedia untuk dilaporkan ke Unity Ads.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Sebagai jaringan semua penginstalan, Unity Ads lebih suka menerima postback untuk semua penginstalan baru aplikasi Anda dari sumber mana pun, dan mereka merekomendasikan untuk memilih **Semua sumber media termasuk organik** untuk mengirimkan semua postback penginstalan ke Unity Ads.
+
+<div id="in-app-events-settings" />
 
 ### Pengaturan In-App Event
 
 Petakan event AppsFlyer dengan mitra melalui postback. Jika pengiriman postback diaktifkan, ini termasuk in-app event yang ditolak (event yang diblokir oleh Protect360 atau event yang ditemukan tidak sesuai dengan aturan validasi target).
 
 [![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### Untuk mengonfigurasi postback in-app event:
 
@@ -116,9 +130,13 @@ Petakan event AppsFlyer dengan mitra melalui postback. Jika pengiriman postback 
 | **untuk pengguna dari** | Pilih opsi pengiriman untuk event:<ul><li>**Khusus mitra ini**: kirim postback hanya jika event ini diatribusikan ke mitra ini.</li><li>**Semua sumber media, termasuk organik**: mengirimkan postback untuk event yang diatribusikan ke mitra mana pun, serta event organik. Menurut Unity Ads, opsi ini direkomendasikan.</li></ul> |
 | **termasuk** | <ul><li>**Tanpa data (default)**: hanya mengirim event itu sendiri tanpa nilai event.</li><li>**Nilai dan pendapatan**: mengirimkan semua parameter event, **termasuk** nilai pendapatan (jika ada dalam event). Menurut Unity Ads, opsi ini direkomendasikan.</li><li>**Nilai tanpa pendapatan**: kirim semua parameter  **kecuali**  nilai pendapatan.</li></ul> |
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > Pilih event SDK/server-ke-server yang benar dan pengidentifikasi event partner yang sesuai. Jangan menduplikasi acara (jangan meneruskan acara yang sama dengan nama acara SDK/server-ke-server yang berbeda).
+
+<div id="note-1" />
 
 > 📘 **Catatan**
 >

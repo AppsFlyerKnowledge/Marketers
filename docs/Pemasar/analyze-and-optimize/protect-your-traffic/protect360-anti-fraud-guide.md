@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Ikhtisar Protect360
 
 * Melindungi dari penipuan atribusi. Ini terdiri dari alat dinamis yang mendeteksi penipuan dan memblokir atribusi penipuan.
@@ -112,6 +114,8 @@ Tabel di bawah ini menguraikan berbagai macam penginstalan dan in-app palsu, dan
 
 <table><caption>Deteksi penipuan dan kegunaan Protect360</caption><thead><tr><th>Jenis penipuan</th><th>Waktu deteksi</th><th>Apa yang terjadi dengan penginstalan</th><th>Apa yang terjadi dengan in-app event</th></tr></thead><tbody><tr><td rowspan="2"><span>Penginstalan palsu</span></td><td><span>Waktu sebenarnya</span></td><td><span>Diblokir secara waktu aktual</span></td><td><span>Diblokir secara waktu aktual</span></td></tr><tr><td><span>Pasca-atribusi</span></td><td><span>Ditandai dalam laporan Penginstalan Setelah Atribusi</span></td><td><ul><li><span>In-app event yang terjadi sebelum deteksi penipuan akan ditandai dalam laporan In-app event Setelah Atribusi.</span></li><li><span>Setelah terdeteksi: diblokir secara waktu aktual</span></li></ul></td></tr><tr><td rowspan="2"><span>Instal pembajakan atribusi</span></td><td><span>Waktu sebenarnya</span></td><td><ul><li><span>Diblokir secara waktu aktual</span></li><li><span>Attribusi dikoreksi ke sumber valid terakhir</span></li></ul></td><td><ul><li><span>Muncul di laporan In-App Event yang Diblokir</span></li><li><span>Diatribusikan ke sumber valid yang sama dengan penginstalan</span></li></ul></td></tr><tr><td><span>Pasca-atribusi</span></td><td><span>Ditandai dalam laporan Penginstalan Setelah Atribusi</span></td><td><ul><li><span>In-app event yang terjadi sebelum deteksi penipuan akan ditandai dalam laporan In-app event Setelah Atribusi.</span></li><li><p>Setelah deteksi penipuan: ditandai dalam laporan In-App Event SetelahAtribusi hingga 30 hari sejak penginstalan.\*</p><p>\*In-app event diperbaiki sampai sumber media terakhir yang valid selama 30 hari sejak penginstalan. Event yang terjadi setelah 30 hari tidak diperbaiki.</p></li></ul></td></tr><tr><td rowspan="2"><span>Penipuan in-app event</span></td><td><span>Waktu sebenarnya</span></td><td>-</td><td><span>Diblokir secara waktu aktual</span></td></tr><tr><td><span>Pasca-atribusi</span></td><td>-</td><td><span>Ditandai dalam laporan In-App Event Setelah Atribusi</span></td></tr></tbody></table>
 
+<div id="using-protect360" />
+
 ## Menggunakan Protect360
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Anda juga dapat menggunakan data Protect360 untuk melakukan rekonsiliasi dengan 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Karakteristik dan batasan
 
 <div id="traits-and-limitations::a07033c3" />
@@ -205,6 +211,8 @@ Anda juga dapat menggunakan data Protect360 untuk melakukan rekonsiliasi dengan 
 | Batasan | <ul><li>Tabel dibatasi hingga maksimum 20.000 baris.</li><li>Jika Anda meminta pengaturan data yang lebih besar, beberapa sumber media mungkin akan dikeluarkan dari tabel tersebut. Untuk mengatasi batasan ini, kami menyarankan tindakan berikut:<ul><li>Mintalah dataset yang lebih kecil - rentang tanggal lebih kecil, app spesifik dan media source spesifik</li><li>Ekspor Protect360 <Anchor target="_blank" href="/marketers/id/docs/protect360-raw-data-reports">laporan data lengkap</Anchor></li><li>Ekspor Laporan Deteksi Lanjutan Teragregasi Protect360 <Anchor target="_blank" href="/marketers/id/docs/pull-api-aggregate-data">melalui Pull API</Anchor></li></ul></li></ul> |
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## Pertanyaan umum dan tips
 
@@ -245,9 +253,13 @@ Anda juga dapat menggunakan data Protect360 untuk melakukan rekonsiliasi dengan 
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Tips**
 >
 > Ingin memahami lebih banyak mengenai perlindungan dari penipuan? Lihat <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">kursus singkat dan informatif ini di Portal Pembelajaran AppsFlyer</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

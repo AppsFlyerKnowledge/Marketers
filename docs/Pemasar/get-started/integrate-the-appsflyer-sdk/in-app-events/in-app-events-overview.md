@@ -31,17 +31,23 @@ x-zendesk:
 ---
 > **Sekilas:** Rekam rich in-app event pasca penginstalan (seperti login, pendaftaran, atau pembelian dalam aplikasi) yang diatribusikan dengan sumber media dan kampanye.
 
+<div id="why-record-in-app-events" />
+
 ## Mengapa merekam in-app event?
 
 In-app event memberikan wawasan tentang apa yang terjadi di aplikasi Anda dan merupakan alat yang ideal untuk menentukan nilai pengguna aplikasi dan **kualitas lalu lintas yang berasal dari sumber media yang berbeda** . Merekam in-app event membantu Anda mengukur KPI seperti ROI (Laba atas Investasi) dan LTV (Nilai Periode Retensi).
 
 Jika pengguna melakukan registrasi, menyelesaikan tutorial, menambahkan item ke keranjang belanja, atau melakukan pembelian, maka data in-app event dapat mencatat event beserta detailnya. Implementasi in-app event adalah wajib untuk semua tujuan analisis pasca penginstalan.
 
+<div id="about-in-app-events" />
+
 ## Tentang in-app events
 
 In-app event terdiri dari nama event dan dapat menyertakan parameter event. Saat Anda menambahkan parameter event ke in-app event, ini disebut sebagai rich in-app event. Parameter event memberi Anda lebih banyak konteks dan informasi tentang event yang terjadi. Misalnya, meskipun parameter ini membantu mengetahui bahwa pengguna melakukan pemesanan, parameter event dapat memberi Anda detail seperti jenis pembelian, tujuan, dan pendapatan.
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+
+<div id="tip" />
 
 > 👍 **Tips**
 >
@@ -109,7 +115,11 @@ Diagram di atas menunjukkan proses berikut:
 
 AppsFlyer menggunakan <Anchor target="_blank" href="https://openexchangerates.org/">Open Exchange Rates</Anchor> untuk konversi mata uang. Nilai tukar ini diperbarui setiap jam. Kapan pun AppsFlyer melakukan konversi mata uang, AppsFlyer menggunakan nilai tukar pembaruan per jam terakhir.
 
+<div id="currency-conversion" />
+
 #### Konversi mata uang
+
+<div id="h_01HDBZW9XERK3VN1GS8GHM911W" />
 
 > 📄 **Contoh**
 >
@@ -126,9 +136,13 @@ AppsFlyer menggunakan <Anchor target="_blank" href="https://openexchangerates.or
 >
 > Dalam hal ini, AppsFlyer mengonversi pendapatan dari EUR ke USD, lalu ke GBP. Mari kita asumsikan nilai tukarnya adalah €1 = $1,13. Jadi €200 menjadi $226,85. Selanjutnya, AppsFlyer mengonversi dari USD ke GBP. Mari kita asumsikan nilai tukarnya adalah $1 = £0,78. Jadi $226,85 menjadi £176,92.
 
+<div id="currency-display" />
+
 #### Tampilan mata uang
 
 <Anchor target="_blank" href="/marketers/id/docs/app-settings#localization-currency">Mata uang ditetapkan dalam pengaturan aplikasi</Anchor>. Mata uang yang Anda tetapkan di pengaturan aplikasi, adalah mata uang yang muncul di dasbor. Mata uang apa pun yang Anda kirimkan untuk in-app event, pendapatan di dasbor selalu muncul dalam mata uang yang Anda tetapkan di pengaturan aplikasi.
+
+<div id="h_01HDBZW9XEQNG1RDH7A8H002ZD" />
 
 > 📄 **Contoh**
 >
@@ -140,7 +154,7 @@ AppsFlyer menggunakan <Anchor target="_blank" href="https://openexchangerates.or
 > 2. Event B memiliki pendapatan **171** dan **EUR** sebagai mata uang
 > 3. Event C memiliki pendapatan **171** tetapi **tidak ada mata uang** yang ditentukan
 >
-> #### Data pendapatan di dasbor
+> #### <span id="revenue-data-in-the-dashboard"></span>Data pendapatan di dasbor
 >
 > Pendapatan yang muncul di dasbor adalah **nilai yang dikonversi** dari mata uang in-app event ke USD, lalu ke mata uang pengaturan aplikasi.
 >
@@ -156,7 +170,7 @@ AppsFlyer menggunakan <Anchor target="_blank" href="https://openexchangerates.or
 >
 >
 >
-> #### Data pendapatan dalam laporan data lengkap
+> #### <span id="revenue-data-in-raw-data-reports"></span>Data pendapatan dalam laporan data lengkap
 >
 > Jika Anda menyetel mata uang ke **GBP** di pengaturan aplikasi, tetapi mengirim in-app event dengan mata uang berbeda, laporan data lengkap menunjukkan pendapatan dalam mata uang pengaturan aplikasi dan mata uang in-app event.
 >
@@ -174,6 +188,8 @@ AppsFlyer menggunakan <Anchor target="_blank" href="https://openexchangerates.or
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## Mengirim event
 
 Ada beberapa cara untuk mengirim in-app event ke AppsFlyer:
@@ -182,6 +198,8 @@ Ada beberapa cara untuk mengirim in-app event ke AppsFlyer:
 * **<Anchor target="_blank" href="/marketers/id/docs/server-to-server-events-api-for-mobile-s2s-mobile">API server-ke-server:</Anchor>** Gunakan API server-ke-server untuk mengirim event yang terjadi di luar aplikasi seluler, langsung ke AppsFlyer. Misalnya, jika Anda memiliki pengguna yang aktif di antarmuka web dan seluler, Anda dapat mencatat event dari kedua sumber dan mengatribusikannya ke pengguna yang sama di AppsFlyer. Ini bisa berupa in-app event atau event lainnya, seperti event situs web, event pusat panggilan, atau pembelian di toko fisik Anda.
 * **<Anchor target="_blank" href="/marketers/id/docs/legacy-receipt-validation-for-in-app-purchases">Validasi tanda terima</Anchor>** Ini adalah mekanisme aman di mana platform pembayaran, misalnya, Apple dan Google, memvalidasi bahwa pembelian dalam aplikasi terjadi seperti yang dilaporkan. Memvalidasi pembelian adalah alat utama untuk mencegah penipuan event pendapatan. Fitur ini juga membantu Anda untuk melihat pendapatan sebenarnya, dan menyaring pembelian dalam aplikasi yang belum selesai.
 * **<Anchor target="_blank" href="/marketers/id/docs/in-app-events-for-hybrid-apps">Aplikasi hybrid:</Anchor>** Aplikasi ini menggabungkan tampilan asli dan konten HTML dan juga dapat merekam in-app event. Namun, karena SDK hanya dapat mengirim event dari sisi native, pengembang harus meneruskan semua data event ke kode native.
+
+<div id="setting-up-in-app-events" />
 
 ## Mengatur in-app event
 
@@ -203,6 +221,8 @@ Setelah Anda menentukan in-app event yang ingin Anda ukur, gunakan <Anchor targe
 1. Pilih nama event yang paling sesuai dengan skenario yang ingin Anda rekam.
 2. Pilih parameter event yang ingin Anda kaitkan dengan event. Pilih parameter yang akan memberikan konteks tambahan pada event dan memperkaya data.
 3. Unduh file yang telah selesai dari pembuat in-app event, lalu bagikan dengan pengembang Anda.
+
+<div id="h_01HDBZW9XFN2B8AC18VW99G8Z6" />
 
 > 📄 **Contoh**
 >
@@ -298,6 +318,8 @@ Ingat hal berikut ini saat menentukan nama dan parameter event di aplikasi:
 
 </Accordion>
 
+<div id="faq" />
+
 ## Pertanyaan Umum
 
 Bagian berikut mencakup berbagai Pertanyaan yang Sering Diajukan (FAQ) tentang in-app event.
@@ -344,6 +366,8 @@ Jika pengguna menginisiasi event (aktivitas) saat koneksi internet tidak tersedi
 2. Jika SDK tidak menerima respons yang berhasil, event tersebut disimpan dalam cache.
 3. Setelah respons berhasil berikutnya diterima, event yang disimpan dikirim ke server lagi.
 4. Jika ada beberapa event dalam cache, mereka akan dikirim ke server, satu demi satu.
+
+<div id="note-3" />
 
 > 📘 **Catatan**
 >
@@ -419,7 +443,7 @@ Anda dapat menambahkan beberapa item dalam satu transaksi. Alih-alih satu nilai 
 >
 > Beberapa item dikirim berikutnya sebagai larik di <Anchor target="_blank" href="/marketers/id/docs/in-app-event-postback-configuration">postback</Anchor> . Saat ini, Meta ads dan Twitter tidak dapat mengurai parameter array dengan tepat. Untuk membantu masalah ini, AppsFlyer menjumlahkan jumlah item (af\_quantity) alih-alih mengirimkannya ke SRN ini sebagai larik. Di contoh kita, Meta ads akan mendapatkan **af\_quantity=4**.
 >
-> **<span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>Catatan**
+> **<span id="notes"></span><span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>Catatan**
 >
 > Penggunaan item berganda dapat dilakukan dengan event in-app berikut:
 >
@@ -441,6 +465,8 @@ Dua event dianggap identik jika kolom berikut di kedua event itu sama:
 * nilai event
 * ID Aplikasi
 * AppsFlyer ID
+
+<div id="note-4" />
 
 > 📘 **Catatan**
 >

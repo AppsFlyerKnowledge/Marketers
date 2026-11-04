@@ -28,9 +28,13 @@ x-zendesk:
 ---
 > **Sekilas:** CUID memungkinkan Anda untuk mengelompokkan event dari pengguna yang sama di berbagai perangkat, sumber media, atau kanal.
 
+<div id="what-is-cuid" />
+
 ## **Apa itu CUID?**
 
 ID Pengguna Pelanggan (CUID) adalah  pengidentifikasi pengguna unik. Biasanya CUID dibuat dan diatur oleh pemilik aplikasi pada saat pendaftaran pengguna. CUID memungkinkan pemilik aplikasi mengikuti perjalanan pengguna di berbagai perangkat.
+
+<div id="example" />
 
 > 📄 **Contoh**
 >
@@ -41,6 +45,8 @@ ID Pengguna Pelanggan (CUID) adalah  pengidentifikasi pengguna unik. Biasanya C
 > * Pembelian dalam aplikasi yang dilakukan oleh pengguna yang sama di aplikasi yang sama tetapi di beberapa perangkat (ponsel, tablet, TV, desktop) dapat digabungkan dalam satu tampilan.
 > * Performa pengguna dalam game yang diinstal di berbagai platform (desktop, seluler, TV) dapat dibagikan di seluruh platform ini untuk mencapai pengalaman pengguna yang holistik.
 
+<div id="setting-the-cuid" />
+
 ## **Mengatur CUID**
 
 Direkomendasikan untuk menyetel CUID sedini mungkin dalam alur inisialisasi SDK sehingga sebanyak mungkin event mendapatkan asosiasi CUID.
@@ -50,6 +56,8 @@ Direkomendasikan untuk menyetel CUID sedini mungkin dalam alur inisialisasi SDK 
 
 Setelah CUID tersedia, Anda dapat mengaturnya dengan memanggil `setCustomerUserID`. CUID hanya dapat diasosiasikan dengan in-app event yang terjadi setelah CUID ditetapkan. Oleh karena itu, event penginstalan tidak akan diasosiasikan dengan CUID saat  `start` dipanggil sebelum `setCustomerUserID`.
 
+<div id="associate-the-cuid-with-the-install-event" />
+
 ### **Kaitkan CUID dengan acara penginstalan**
 
 Jika penting bagi Anda untuk mengasosiasikan event penginstalan ke CUID, Anda harus mengaturnya sebelum menghubungi `start`.
@@ -58,15 +66,21 @@ Jika penting bagi Anda untuk mengasosiasikan event penginstalan ke CUID, Anda ha
 
 Di Android, metode `start` dan penyiapan CUID dapat dijalankan dari kelas `Aplikasi` global atau kelas `Activitas` , bergantung pada implementasi aplikasi. Untuk informasi selengkapnya, lihat <Anchor target="_blank" href="/marketers/id/docs/basic-sdk-integration-guide#pilih-di-kelas-apa-untuk-memulai-sdk">Pilih di kelas mana untuk memulai SDK</Anchor>.
 
+<div id="if-the-sdk-starts-in-the-application-class" />
+
 #### Jika SDK dimulai di kelas Aplikasi
 
 Jika Anda ingin mengasosiasikan CUID dengan  event penginstalan saat memulai dari kelas `Aplikasi`global, pastikan untuk menunda pengiriman event penginstalan menggunakan metode  `waitForCustomerUserId` . Metode ini menempatkan SDK pada mode menunggu hingga CUID diatur.
 
 Catatan:  Jika karena alasan tertentu pengaturan CUID gagal, SDK akan tetap dalam mode menunggu dan tidak mengirimkan event apa pun.
 
+<div id="if-the-sdk-starts-in-an-activity-class" />
+
 #### Jika SDK dimulai di kelas Aktivitas
 
 Jika Anda ingin mengasosiasikan CUID dengan event  penginstalan saat memulai dari kelas `Aktivitas` , Anda tidak perlu menunda pengiriman event penginstalan. Cukup hubungi `setCustomerUserId` sebelum memanggil `start`.
+
+<div id="developer-instructions" />
 
 #### INSTRUKSI PENGEMBANG
 
@@ -85,6 +99,8 @@ Gunakan metode `customerUserId` untuk mengatur CUID. Lokasi  `customerUserId`
 * Jika `customerUserId` dipanggil sebelum memanggil `mulai`, CUID dikaitkan dengan penginstalan dan in-app event berikut ini
 * Jika dipanggil setelah  `start (mulai)`, CUID hanya dikaitkan dengan event yang dicatat setelah penyetelan CUID.
 
+<div id="developer-instructions-1" />
+
 #### INSTRUKSI PENGEMBANG
 
 Rujuk pengembang Anda ke [Mengatur ID Pengguna Pelanggan](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#setting-the-customer-user-id) di Dev Hub.
@@ -92,6 +108,8 @@ Rujuk pengembang Anda ke [Mengatur ID Pengguna Pelanggan](https://dev.appsflyer.
 </Tab>
 
 <Tab title="Unity">
+
+<div id="developer-instructions-2" />
 
 #### INSTRUKSI PENGEMBANG
 
@@ -101,12 +119,16 @@ Rujuk pengembang Anda ke [Mengatur ID Pengguna Pelanggan](https://dev.appsflyer.
 
 <Tab title="React Asli">
 
+<div id="developer-instructions-3" />
+
 #### INSTRUKSI PENGEMBANG
 
 Rujuk pengembang Anda ke referensi API [setCustomerUserId](https://dev.appsflyer.com/hc/docs/rn_api#setcustomeruserid) di Dev Hub.
 
 </Tab>
 </Tabs>
+
+<div id="cuid-and-privacy" />
 
 ## **CUID dan privasi**
 
@@ -115,6 +137,8 @@ AppsFlyer menghargai dan menghormati privasi pengguna Anda dan [tidak mengizink
 Untuk mengamankan privasi pengguna Anda, tidak diperbolehkan merancang CUID dengan informasi yang mengidentifikasi pengguna secara langsung. Ini termasuk nomor jaminan sosial atau nomor identifikasi nasional.
 
 Selain itu, jika CUID yang diatur berisi alamat email atau nomor telepon pengguna,  informasi tersebut harus selalu di-hash saat dikirim ke AppsFlyer. Dilarang mengirimkan CUID yang berisi data pribadi tanpa hash ke AppsFlyer.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

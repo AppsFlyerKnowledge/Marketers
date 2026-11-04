@@ -37,6 +37,8 @@ Ada 2 kemungkinan cara untuk mengimplementasikan integrasi:
 
 Konversi ditampilkan di dasbor Ikhtisar, dalam tampilan penargetan ulang atau terpadu.
 
+<div id="how-does-it-work" />
+
 ## Bagaimana Cara Kerja API ini?
 
 Setelah Anda menyelesaikan langkah-langkah dalam artikel ini, aplikasi Anda akan berfungsi sebagai berikut:
@@ -49,9 +51,13 @@ Setelah Anda menyelesaikan langkah-langkah dalam artikel ini, aplikasi Anda akan
 
 Dalam skenario OneLink, jika OneLink dikonfigurasi untuk merutekan pengguna ke lokasi tertentu di aplikasi, alur deep link dipicu.
 
+<div id="prerequisites" />
+
 ## Prasyarat
 
 Sebelum melanjutkan, pastikan aplikasi Anda memiliki <Anchor target="_blank" href="/marketers/id/docs/basic-sdk-integration-guide">AppsFlyer SDK yang terintegrasi</Anchor> **dan**  dapat menerima notifikasi push.
+
+<div id="steps" />
 
 ## Langkah
 
@@ -68,12 +74,16 @@ Untuk mengatur pengukuran notifikasi push, langkah-langkah berikut harus diseles
 
 Pertama, buat notifikasi push yang berisi data atribusi menggunakan salah satu metode berikut.
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > Dalam demonstrasi berikut, kami menggunakan Firebase sebagai penyedia layanan notifikasi push. Instruksi harus berlaku untuk semua penyedia layanan notifikasi push, dengan perbedaan kecil (jika ada). Lihat dokumentasi penyedia layanan notifikasi push masing-masing.
 
 <Tabs>
 <Tab title="Menggunakan OneLink (metode yang disarankan)">
+
+<div id="using-onelink-recommended" />
 
 #### **Menggunakan OneLink (disarankan)**
 
@@ -82,6 +92,8 @@ Ini adalah metode yang direkomendasikan untuk mengintegrasikan AppsFlyer dengan 
 1. Buat <Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">tautan OneLink dan atur untuk penargetan ulang.</Anchor>  
    **Catatan**: OneLink pendek dan URL panjang, keduanya didukung.
 2. Dalam data kustom notifikasi push, tambahkan OneLink yang berisi data atribusi yang ingin Anda kirim ke AppsFlyer.
+
+<div id="note-1" />
 
 > 📄 **Contoh Firebase**
 >
@@ -95,7 +107,11 @@ Ini adalah metode yang direkomendasikan untuk mengintegrasikan AppsFlyer dengan 
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **Menggunakan JSON (metode lama)**
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -106,6 +122,8 @@ Dalam data kustom notifikasi push, tambahkan kode kustom yang disebut `af` yang 
 * `PID`
 * `is_retargeting`
 * `c`
+
+<div id="note-3" />
 
 > 📄 **Contoh Firebase**
 >

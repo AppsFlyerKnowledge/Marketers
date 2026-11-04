@@ -24,12 +24,18 @@ x-zendesk:
 
 You can select to receive notifications from AppsFlyer when certain events occur in your account. In your **notification preferences**, you can opt in or out of receiving these notifications.
 
+<div id="accessing-and-configuring-notification-preferences" />
+
 ## Accessing and configuring notification preferences
+
+<div id="to-access-notifications" />
 
 ### To access notifications
 
 * From the top bar, open the account menu (email address dropdown) > **Notifications.**
 * From the bell icon within the platform > **Setting icon.**
+
+<div id="configuring-notifications" />
 
 ### Configuring notifications
 
@@ -38,6 +44,8 @@ To opt in to receive a notification, turn it on from the list of available notif
 To stop receiving it, turn it off.
 
 Note: Some notifications are available only via email. The Email-only Notification tab contains these [notification](/docs/notifications#email-only-notifications) settings. 
+
+<div id="what-notifications-can-i-receive" />
 
 ## What notifications can I receive?
 
@@ -58,6 +66,8 @@ To opt in to a particular notification, it must be:
   * For example, if your company does not subscribe to the AppsFlyer Push API feature, the switch related to this feature is not visible.
 * **Available to you, based on your user permissions.** If a notification is related to a capability or feature to which you have not been assigned permissions, the switch to turn it on and off is disabled.
   * For example, if you do not have permission to add or edit integrated partners, the switch to turn on or off a notification related to integrated partner configuration is disabled.
+
+<div id="when-will-i-receive-notifications" />
 
 ## When will I receive notifications?
 
@@ -85,6 +95,8 @@ Result:
 
 </Accordion>
 
+<div id="where-will-i-receive-notifications" />
+
 ## Where will I receive notifications?
 
 Notifications can be received via the [bell](/docs/notifications#bell-notification) icon, [email](/docs/notifications#email-notification), or [Slack](/docs/notifications#slack-notification) integration. 
@@ -107,9 +119,13 @@ Email notifications are sent to the email address associated with your AppsFlyer
 
 Some notifications are available only via email. These notification settings can be found in the **Email-only Notification** tab.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > All AppsFlyer notification emails are sent from [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
+
+<div id="email-only-notifications" />
 
 #### Email-only notifications
 

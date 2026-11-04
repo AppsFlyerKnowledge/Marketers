@@ -31,6 +31,8 @@ x-zendesk:
 
 **Sepatah kata dari pengacara kami:** *Tidak ada yang dinyatakan di sini adalah nasihat hukum. Ini disediakan untuk informasi dan kenyamanan Anda. Anda harus bekerja sama dengan penasihat hukum dan profesional lainnya untuk menentukan dengan tepat bagaimana kebijakan Apple berlaku untuk Anda.*
 
+<div id="nutrition-labels-and-the-app-store-review" />
+
 ## Label nutrisi dan tinjauan App Store
 
 * Untuk membuat label privasi, pengembang aplikasi harus menjawab kuesioner saat mengirimkan aplikasi mereka ke App Store Connect yang meliputi bagian berikut:
@@ -44,6 +46,8 @@ x-zendesk:
 * Menurut pemahaman AppsFlyer tentang kebijakan Apple, AppsFlyer tidak melakukan *pengukuran.* Oleh karena itu, pengembang Aplikasi harus menjawab kuesioner sesuai dengan penggunaan khusus dan integrasi mitranya.
 * Jika Anda menggunakan data yang dikumpulkan untuk tujuan pengukuran, Anda harus menerapkan prompt ATT.
 * Berikut ini asumsi konfigurasi default perangkat lunak AppsFlyer. Pengembang aplikasi bertanggung jawab memastikan bahwa software tersebut beradaptasi sesuai dengan konfigurasi dan penggunaan spesifik mereka.
+
+<div id="data-types-collected" />
 
 #### Tipe data yang dikumpulkan
 
@@ -64,6 +68,8 @@ x-zendesk:
 | **Data diagnostik**<ul><li>Data crash</li><li>Data kinerja</li><li>Data diagnostik lainnya</li></ul> | <ul><li>Tidak</li><li>Ya</li><li>Tidak</li></ul> | Waktu peluncuran dan/atau level baterai dapat diterima untuk deteksi penipuan. |
 | **Data lainnya**<ul><li>Jenis data lainnya</li><li>IDFV</li></ul> | Ya | <ul><li>Informasi perangkat teknis (misalnya, OS, jenis perangkat, bahasa, ukuran layar, dll.) atau informasi jaringan (misalnya, alamat IP, agen pengguna HTTP) diterima oleh AppsFlyer.</li><li>AppsFlyer menerapkan ID penginstalan untuk setiap penginstalan aplikasi yang disebut AF ID.</li><li>IDFV dikumpulkan</li></ul> |
 
+<div id="data-use-purposes" />
+
 ### Tujuan penggunaan data
 
 Apple memiliki daftar tujuan yang harus dipilih pengembang aplikasi, seperti yang dijelaskan dalam tabel berikut. Anda harus mengidentifikasi tujuan yang relevan untuk setiap jenis data yang terkait dengan penggunaan khusus Anda.
@@ -77,11 +83,15 @@ Apple memiliki daftar tujuan yang harus dipilih pengembang aplikasi, seperti yan
 | Fungsionalitas aplikasi | Ya |
 | Tujuan lainnya | Pilih jika Anda menggunakan data untuk tujuan lain yang tidak dinyatakan sebaliknya. |
 
+<div id="data-linked-to-an-identity" />
+
 ### Data terhubung ke identitas
 
 Jenis data yang dikumpulkan melalui AppsFlyer biasanya terhubung ke pengenal seperti ID perangkat (jika ada), atau pengenal lainnya seperti ID yang diterbitkan pelanggan saat dikonfigurasikan.
 
 Oleh karena itu, pengembang aplikasi harus memilih **Ya** saat ditanya apakah data terhubung ke identitas.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

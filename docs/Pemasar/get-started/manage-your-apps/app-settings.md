@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang pengaturan yang memengaruhi atribusi dan analitik aplikasi Anda di seluruh sumber media.
 
+<div id="app-settings" />
+
 ## Pengaturan aplikasi
 
 **Mengakses:**
@@ -38,6 +40,8 @@ x-zendesk:
 1. Di AppsFlyer, buka ***Configuration (Konfigurasi)*** > ***App Settings (Pengaturan Aplikasi).***
 2. Lihat pengaturan dan buat perubahan sesuai kebutuhan di laman Pengaturan Aplikasi.
 3. Klik **Simpan Pengaturan**.
+
+<div id="general-app-settings" />
 
 ### Pengaturan aplikasi umum
 
@@ -124,6 +128,8 @@ x-zendesk:
         * Tersedia opsi perubahan mata untuk aplikasi tanpa pendapatan atau biaya.
         * Untuk aplikasi baru, mata uang diatur saat aplikasi ditambahkan.
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### Alat pelaporan yang dipengaruhi oleh mata uang aplikasi
 
         | Alat pelaporan | Tersedia opsi mata uang |
@@ -139,6 +145,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### Pengaturan atribusi
 
 | Pengaturan | Deskripsi |
@@ -149,6 +157,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>Atribusi aplikasi seluler penelusuran organik (SEO). | Bacaan terkait: <Anchor target="_blank" href="/marketers/id/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Atribusi pencarian organik</Anchor><br /><br />**Untuk mengaktifkan atribusi pencarian organik:**<ul><li>Buka **Pengaturan** > **Pengaturan aplikasi**, aktifkan **Atribusi aplikasi seluler penelusuran organik (SEO)**.</li></ul> |
 | <span id="uninstall-measurement"></span>Pengukuran Uninstall | Pengukuran uninstall berkaitan dengan penginstalan yang terjadi saat pengukuran uninstall aktif.<br /><br />**Untuk mengaktifkan pengukuran uninstal:**<ol><li>Selesaikan per sistem operasi berikut ini:<ul><li>**iOS**: Aplikasi yang menerapkan fitur atribusi uninstall iOS harus mengunggah sertifikat P12 di sini.</li><li>Aplikasi**Android** memerlukan Kode Server Firebase/GCM yang akan ditentukan di sini untukatribusi uninstall Android.</li></ul></li><li>Aktifkan**Uninstall pengukuran**.</li><li>Klik **Simpan Pengaturan**.</li></ol>**Untuk menghentikan pengukuran uninstall:**<ol><li>Matikan **Uninstall pengukuran** .</li><li>Klik **Simpan Pengaturan**.</li></ol> |
 
+<div id="advanced-settings" />
+
 ### Pengaturan lanjutan
 
 | Pengaturan | Deskripsi |
@@ -158,6 +168,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>Fallback pengarahan iOS 10.3 | [Tidak digunakan lagi] Untuk iOS 10.3+. Kami menyederhanakan alur untuk pengguna iOS dan parameter ini tidak digunakan lagi. <Anchor target="_blank" href="/marketers/id/docs/uri-scheme-fallback-for-ios">pengalihan iOS</Anchor>.<br /><br />Opsi ini hanya tersedia untuk aplikasi iOS. |
 | <span id="change-app-name"></span>Ubah nama aplikasi | <ul><li>Nama aplikasi, yang kemudian ditampilkan di semua dashboard dan laporan data. Ini berguna jika Anda memiliki versi berbeda dari aplikasi yang sama, misalnya, untuk alasan distribusi regional.</li><li>Perubahan ini memengaruhi tampilan aplikasi. ID aplikasi, yang digunakan untuk mengidentifikasi aplikasi saat menggunakan berbagai API AppsFlyer, **tetaplah sama**.</li><li>Nama dibatasi hingga 50 karakter.</li></ul> |
 | <span id="outofstore-app-url"></span>URL aplikasi out of store | <ul><li>Setel URL unduhan aplikasi yang digunakan untuk mengisi tautan atribusi.</li><li>Pengaturan ini tidak mengubah tautan atribusi yang dibuat sebelumnya.</li></ul>**Batasan**: Opsi tidak ditampilkan sama sekali jika Anda tidak mengatur URL saat menambahkan aplikasi. Dalam hal ini, tanyakan kepada CSM atau hubungi [hello@appsflyer.com](mailto:hello@Appsflyer.com) untuk melakukan pengaturan untuk Anda.<br /><br />Opsi ini hanya tersedia untuk aplikasi Android. |
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

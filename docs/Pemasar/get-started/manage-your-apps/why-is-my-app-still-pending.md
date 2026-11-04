@@ -30,6 +30,8 @@ Aplikasi yang tertunda di AppsFlyer terlihat sama dengan aplikasi aktif. Aplikas
 
 ![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## Apa yang terjadi?
 
 AppsFlyer secara otomatis memeriksa status aplikasi beberapa kali sehari.
@@ -37,6 +39,8 @@ AppsFlyer secara otomatis memeriksa status aplikasi beberapa kali sehari.
 Jika aplikasi masih belum tersedia di toko saat AppsFlyer memeriksa status aplikasi, aplikasi akan muncul sebagai tertunda di dashboard. Setelah aplikasi akhirnya dikirimkan ke iTunes atau Google, aplikasi ini diperbarui statusnya menjadi aktif dan logo aplikasi berubah menjadi logo asli aplikasi.
 
 Status aplikasi di dashboard tidak berpengaruh pada pengumpulan dan pengukuran data. Jika aplikasi aktif di Google Play atau App Store dan pengguna menginstal aplikasi dan berinteraksi dengannya, data penginstalan dan in-app event ditampilkan serupa.
+
+<div id="refreshing-the-app-status" />
 
 ## Memuat ulang status aplikasi
 
@@ -49,6 +53,8 @@ Agar status aplikasi berubah menjadi aktif, AppsFlyer memeriksa statusnya di tok
 1. Di dashboard, klik **My Apps (Aplikasi Saya)** di pojok kanan atas.  
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 2. Di samping aplikasi yang tertunda, klik  **Refresh Status (Segarkan Status).** Jika status aplikasi tidak berubah, aplikasi tetap ditampilkan sebagai Tertunda. Jika sudah diperbarui, statusnya ditampilkan sebagai Live (Aktif) dan logo diperbarui.
+
+<div id="store-country" />
 
 ## Negara App Store
 

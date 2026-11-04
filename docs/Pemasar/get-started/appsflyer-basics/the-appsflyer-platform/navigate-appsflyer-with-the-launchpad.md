@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** At a glance: Use Launchpad (Ctrl+K or Cmd+K) to quickly navigate to a page on the dashboard.
 
+<div id="using-launchpad" />
+
 ## Using Launchpad
 
 **To open Launchpad:**

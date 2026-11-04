@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Optimize Google AdWords campaigns by using Adquant by Kenshoo. When configured, AppsFlyer sends postbacks to Adquant.
 
+<div id="setting-up-adquant-by-kenshoo" />
+
 ## Setting up Adquant by Kenshoo
 
 **Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
@@ -43,6 +45,8 @@ x-zendesk:
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The Google Ads Customer ID must be entered **without** hyphens.
@@ -53,6 +57,8 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 7. Enter the **Action Identifier**, **Disable\_Country\_Sending** (provided by Adquant) and the **Google Ads Customer ID** number in the appropriate fields.
 
+<div id="in-app-events" />
+
 ### In-app events
 
 1. To send in-app event postbacks to Adquant by Kenshoo, toggle the In-App Events Postback to **ON**.
@@ -62,6 +68,8 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 3. Select **Send Revenue** to send all the parameters including the revenue value (if it exists in the event).
 
 4. Click **Save**
+
+<div id="important-note" />
 
 > 📘 **Important Note**
 >

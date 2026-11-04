@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## Tentang bundel merek
 
 Merek beroperasi dalam ekosistem yang mencakup properti web dan seluler. Sebagai pemasang iklan, gambaran lengkap tentang kinerja merek di seluruh platform–web dan seluler–diperlukan. Di PBA, bundel merek menggabungkan data properti seluler dan web menjadi satu kesatuan untuk tujuan analitik dan data lengkap.
+
+<div id="what-is-a-web-app" />
 
 > 📘 **Apa itu aplikasi web?**
 >
@@ -45,6 +49,8 @@ Merek beroperasi dalam ekosistem yang mencakup properti web dan seluler. Sebagai
 * Aplikasi tidak dapat dihapus dari suatu bundel atau dipindahkan dari satu bundel ke bundel lainnya tanpa [menghapus bundel aslinya](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
   * Saat bundel dihapus, AppsFlyer berhenti mengatribusikan data PBA untuk bundel tersebut, dan akses ke data historisnya tidak lagi tersedia.
 
+<div id="accessing-brand-bundles" />
+
 ## Mengakses bundel merek
 
 Akses halaman **Bundel Merek** untuk mengelola bundel merek dan pengaturannya:
@@ -52,6 +58,8 @@ Akses halaman **Bundel Merek** untuk mengelola bundel merek dan pengaturannya:
 * Buka **Aplikasi saya** > **Lihat bundel merek.**  
                            - atau -
 * Dari pohon navigasi sebelah kiri di dashboard, buka **Konfigurasi** > **Bundel Merek.**
+
+<div id="managing-brand-bundles" />
 
 ## Mengelola bundel merek
 
@@ -85,6 +93,8 @@ Sebelum melanjutkan, pastikan semua aplikasi yang ingin Anda sertakan dalam bund
      * Aplikasi seluler tidak diperlukan untuk membuat bundel.
      * Tidak ada batasan jumlah aplikasi seluler yang dapat Anda sertakan dalam satu bundel.
 4. Klik Buat bundel.
+
+<div id="important" />
 
 > 🚧 **Penting!**
 >
@@ -163,6 +173,8 @@ Mekanisme pengecualian domain, yang merupakan bagian dari <Anchor target="_blank
 
 </Accordion>
 
+<div id="faq" />
+
 ## Pertanyaan Umum
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -195,6 +207,8 @@ Untuk mengubah bundel yang menyertakan suatu aplikasi, hapus bundel asli dan bua
 
 <Accordion title="Apa yang terjadi jika saya menghapus bundel?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### FAQ apa yang terjadi jika saya menghapus bundel
 
 Jika Anda menghapus bundel:
@@ -214,6 +228,8 @@ Jika Anda menghapus bundel:
 * **Pengguna akun lain:** Hubungi admin akun untuk memastikan Anda memiliki peran dan izin yang diperlukan untuk mengakses aplikasi yang ingin Anda tambahkan.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

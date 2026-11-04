@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Sekilas:** Tinjau dan kelola status semua fitur terkait keamanan akun AppsFlyer Anda dari satu lokasi.
 
+<div id="what-can-i-do-from-the-security-center" />
+
 ## Apa yang dapat saya lakukan dari pusat Keamanan?
 
 **Pusat Keamanan** memberi Anda gambaran sekilas tentang status keamanan akun AppsFlyer Anda. Klik tombol di bagian mana pun dari **Pusat keamanan** untuk mengakses fitur berikut:

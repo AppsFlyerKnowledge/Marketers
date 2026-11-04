@@ -30,6 +30,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## Pelaporan pendapatan iklan tingkat tayangan oleh konektor SDK
 
 **Opsi pelaporan pendapatan iklan**
@@ -43,6 +45,8 @@ Pendapatan iklan dilaporkan ke AppsFlyer berdasarkan perincian agregat (melalui 
 
 * Tayangan ini dikumpulkan dan diproses di AppsFlyer, tetapi tidak dihitung terhadap paket dalam aplikasi Anda.
 * Ada <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad_revenue_unity_connector">plugin pendapatan iklan AppsFlyer untuk Unity</Anchor>.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### Melaporkan pendapatan iklan menggunakan konektor SDK
 
@@ -78,6 +82,8 @@ Konektor **SDK mengirimkan data pendapatan ke platform pada saat iklan ditampilk
 * **Topik tingkat tayangan DataLocker pada pukul 1 pagi dan setiap 1 jam setelahnya,**
 * **Laporan Aktivitas dan Kelompok AppsFlyer pada pukul 5 pagi UTC dan setiap 4 jam setelahnya.**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## Menerapkan konektor SDK pendapatan iklan AppsFlyer generik
 
 **Untuk menerapkan konektor SDK pendapatan iklan AppsFlyer generik**:
@@ -85,6 +91,8 @@ Konektor **SDK mengirimkan data pendapatan ke platform pada saat iklan ditampilk
 1. <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Aktifkan pendapatan iklan tingkat SDK di AppsFlyer</Anchor> untuk mitra yang ingin Anda hubungkan. **Catatan**: Ini perlu dilakukan untuk setiap aplikasi secara individual.
 2. Beri tahu pengembang Anda untuk mengintegrasikan konektor SDK pendapatan iklan AppsFlyer generik menggunakan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">instruksi ini</Anchor>.
 3. Untuk mencatat pendapatan iklan di dasbor SKAdNetwork, ikuti <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">instruksi pendapatan iklan SKAN</Anchor>.
+
+<div id="traits-and-limitations" />
 
 ## Karakteristik dan batasan
 

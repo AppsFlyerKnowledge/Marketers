@@ -25,6 +25,8 @@ x-zendesk:
 
 > **Sekilas:** Lindungi app Anda dari penggunaan yang tidak sah dengan menambahkan Google License Verification Library (LVL) untuk menangani semua komunikasi terkait lisensi dengan Google Play.
 
+<div id="overview" />
+
 ## Ringkasan
 
 License Verification Library (LVL) merupakan pustaka yang dapat Anda tambahkan ke app Anda (dapat diunduh dari Android SDK) yang menangani semua komunikasi terkait lisensi dengan layanan lisensi Google Play.
@@ -34,6 +36,8 @@ Hal ini menambahkan lapisan perlindungan lain, di atas algoritme Protect360, den
 Layanan Lisensi Google Play menentukan apakah pengguna memiliki lisensi untuk menggunakan app atau tidak. Google Play menganggap pengguna memiliki lisensi jika mereka tercatat sebagai pembeli aplikasi. Lisensi ini unik untuk setiap app dan dapat digunakan untuk perlindungan yang lebih baik. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">Pelajari lebih lanjut</Anchor>
 
 SDK AppsFlyer mengumpulkan data dari sisi pelanggan dan Protect360 melakukan verifikasi lisensi sisi server, memblokir penginstalan palsu yang gagal diverifikasi baik untuk penginstalan organik maupun non-organik. "Alasan pemblokiran" yang akan Anda lihat di dasbor dan laporan Protect360 adalah "Bot".
+
+<div id="set-up-lvl" />
 
 ## Mengatur LVL
 
@@ -106,6 +110,8 @@ Setelah kami menerima permintaan Anda, tim Protect360 akan mengonfigurasi verifi
 * CSM Anda akan memberi tahu Anda dan membantu Anda memecahkan masalah implementasi di aplikasi.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Pertanyaan Umum
 

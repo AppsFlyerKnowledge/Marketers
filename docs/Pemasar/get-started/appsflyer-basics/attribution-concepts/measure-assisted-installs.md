@@ -36,6 +36,8 @@ x-zendesk:
 
 Data analitik dari penginstalan terbantu tersedia di tingkat sumber media dan kampanye untuk mengukur dampak yang lebih luas dari setiap sumber media dan kampanye.
 
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
+
 ### Lihat metrik penginstalan terbantu di dashboard Ikhtisar
 
 **Untuk melihat penginstalan terbantu di dashboard Ikhtisar**:
@@ -48,9 +50,13 @@ Data analitik dari penginstalan terbantu tersedia di tingkat sumber media dan ka
 
    ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### Mengapa bantuan itu penting?
 
 Dalam banyak kasus, calon pengguna menjadi terbiasa dengan aplikasi melalui sumber bantuan, tetapi gagal menginstal karena beberapa alasan. Oleh karena itu, mengukur dan mengenali bantuan adalah hal yang penting dalam pengoptimalan dan pengukuran kampanye.
+
+<div id="assisted-installs-reporting" />
 
 ### Pelaporan assisted installs (penginstalan berbantuan)
 
@@ -68,6 +74,8 @@ Untuk masing-masing dari jaringan yang berkontribusi, laporan data lengkap menca
 * Jenis pencocokan (pencocokan ID, Google Play Referrer, atau SRN)
 
 Lihat <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview#laporan-perjalanan-pengguna">data lengkap perjalanan pengguna.</Anchor>
+
+<div id="note-1" />
 
 > 📘 **Pertimbangan agensi**
 >

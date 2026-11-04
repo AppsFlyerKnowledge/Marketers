@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Sekilas**: Penginstalan ulang terjadi saat pengguna menginstal aplikasi, menghapusnya, lalu menginstalnya ulang. Penginstalan ulang menghasilkan salah satu jenis atribusi berikut ini: penginstalan ulang non-organik, penginstalan ulang organik, atau atribusi ulang (penargetan ulang). Penginstalan ulang membantu menghindari beberapa biaya bagi pengguna yang mencopot pemasangan dan menginstalnya ulang.
 
+<div id="what-is-a-reinstall" />
+
 ## Apa itu penginstalan ulang
 
 Penginstalan ulang terjadi saat pengguna aplikasi menghapus aplikasi lalu menginstal ulang aplikasi selama <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window#re-attribution-window">jendela atribusi ulang.</Anchor>
@@ -43,11 +45,15 @@ Tabel di bawah menunjukkan apa yang AppsFlyer sebut sebagai penginstalan ulang y
 | Dari sumber organik atau non-organik | Ya | Tidak | Ya atau Tidak | Penginstalan ulang |
 | Dari sumber organik atau non-organik | Tidak | Tidak | Ya atau Tidak | Instal baru |
 
+<div id="why-are-reinstalls-important" />
+
 ## Mengapa menginstal ulang itu hal penting
 
 Selain menjadi indikasi yang baik bahwa pengguna kembali ke aplikasi Anda dan bahwa kampanye Anda berfungsi, atribusi penginstalan ulang yang tepat penting untuk membantu menghindari beberapa tagihan bagi pengguna yang menghapus penginstalan dan menginstal lagi dalam <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window#re-attribution-window">jendela atribusi ulang.</Anchor>
 
 Demikian pula, menghubungkan in-app event dari penginstalan ulang ke sumber media asli (penginstalan pertama) memberikan gambaran yang lebih baik kepada pemasang iklan tentang bagaimana pengguna terlibat. Ini juga menunjukkan seberapa efektif kampanye UA dan iklan Penargetan Ulang. Untuk informasi selengkapnya, lihat [in-app event](/docs/measure-reinstalls#in-app-event) di bawah ini.
+
+<div id="reinstall-flow-and-outcome" />
 
 ## Alur dan hasil penginstalan ulang
 
@@ -81,6 +87,8 @@ Hal berikut terjadi:
 Untuk informasi Atribusi Penargetan Ulang lainnya, klik <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">di sini</Anchor>.
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## In-App Event
 
@@ -138,6 +146,8 @@ Memberi pemasang iklan gambaran yang lebih baik tentang bagaimana pengguna terli
 
 (2) Anda hanya akan melihat ini di data lengkap.
 
+<div id="note-1" />
+
 #### Catatan
 
 Data KPI organik di dashboard mungkin menampilkan nilai yang lebih rendah dengan **Post Reinstall Events Attribution** diatur ke **Attributed to the first install** karena beberapa dari angka tersebut sekarang mungkin dikaitkan dengan sumber media non-organik
@@ -147,6 +157,8 @@ Data KPI organik di dashboard mungkin menampilkan nilai yang lebih rendah dengan
 <div id="examples" />
 
 <Accordion title="Contoh">
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### Dengan **Attributed to the first install** diaktifkan.
 
@@ -202,11 +214,17 @@ Hari berikutnya (hari 1), pengguna menginstal ulang aplikasi dari kampanye UA da
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## Bagaimana data muncul di dashboard AppsFlyer
 
 <table><tbody><tr><th colspan="2"> </th><th>Penginstalan ulang non-organik</th><th>Penginstalan ulang organik </th><th>Atribusi ulang</th></tr><tr><td colspan="2">Penginstalan ulang sendiri</td><td>Tidak terlihat</td><td>Tidak terlihat</td><td><span>Menargetkan ulang sumber media\*</span></td></tr><tr><td rowspan="2">Atribusi in-app event ke depannya</td><td>Event Setelah Penginstalan Ulang diatur ke <strong>Attributed as organic in-apps</strong> </td><td>Organik tanpa atribusi</td><td>Organik tanpa atribusi</td><td><span>Menargetkan ulang sumber media</span></td></tr><tr><td>Event Setelah Penginstalan Ulang diatur ke <strong>Attributed to the first install</strong> </td><td>Sumber media pertama</td><td>Sumber media pertama</td><td>Kampanye penargetan ulang</td></tr><tr><td colspan="5">\*Hanya di dashboard ringkasan.</td></tr></tbody></table>
 
+<div id="reinstalls-raw-data-reports" />
+
 ## Menginstal ulang laporan data lengkap
+
+<div id="prerequisites" />
 
 > 🚧 **Prasyarat**
 >
@@ -214,9 +232,13 @@ Hari berikutnya (hari 1), pengguna menginstal ulang aplikasi dari kampanye UA da
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">Instal ulang laporan contoh sebagai file CSV</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### Cara penginstalan dan in-app event dikaitkan
 
 <table><tbody><tr><th colspan="2"> </th><th>Penginstalan ulang non-organik</th><th>Penginstalan ulang organik </th><th>Atribusi ulang</th><th>Penginstalan non-organik</th><th>Penginstalan organik</th></tr><tr><td colspan="2">Dikaitkan ke </td><td>kampanye UA</td><td>Organik</td><td>Kampanye penargetan ulang</td><td>kampanye UA</td><td>Organik</td></tr><tr><td rowspan="2">Atribusi event ke depannya</td><td>Event Setelah Penginstalan Ulang diatur ke <strong>Attributed as organic in-apps</strong> </td><td>Organik</td><td>Organik</td><td>Kampanye penargetan ulang</td><td>kampanye UA</td><td>Organik</td></tr><tr><td>Event Setelah Penginstalan Ulang diatur ke <strong>Attributed to the first install</strong> </td><td>Penginstalan pertama</td><td>Penginstalan pertama</td><td>Kampanye penargetan ulang</td><td>kampanye UA</td><td>Organik</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### Ketersediaan laporan penginstalan ulang
 

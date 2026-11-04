@@ -25,11 +25,15 @@ x-zendesk:
 
 <Embed title="Custom dimensions" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/tvcdofnwjo" providerUrl="https://fast.wistia.com" />
 
+<div id="overview" />
+
 ## Overview
 
 Custom dimensions let you use existing dimensions to create your own dimensions for data analytics relevant to your business purposes. These dimensions can be used in all widgets in the Overview dashboard to group data and help you gain deeper insights and make data-driven decisions that align with your business objectives.
 
 The custom dimensions you create are at the account level, meaning different apps in the same AppsFlyer account can use the same custom dimensions.
+
+<div id="benefits" />
 
 ### Benefits
 
@@ -37,6 +41,8 @@ The custom dimensions you create are at the account level, meaning different app
 * Segmented analysis: Group and analyze your data based on specific relevant attributes or characteristics to get a more detailed view of user behavior, customer segments, or product performance.
 * Enhanced reporting: Create custom dashboards and reports that align with your unique reporting requirements.
 * Improved decision-making: By capturing custom dimensions that align with your business goals, you can make more informed decisions. Custom dimensions provide the necessary context to evaluate the impact of different variables and factors on your key performance indicators (KPIs), helping you identify trends, patterns, and opportunities for optimization.
+
+<div id="example-use-cases" />
 
 ### Example use cases
 
@@ -47,6 +53,8 @@ The custom dimensions you create are at the account level, meaning different app
 | Owned vs paid media | <ul><li>Based on media sources.</li><li>Group different media sources into "owned" and "paid." For example: Group SMS and Facebook post into the value "owned," and Facebook and Google into the value "paid."</li><li>AppsFlyer groups data from these media sources into the values "owned" and "paid," respectively.</li></ul> |
 | Cities | <ul><li>Based on your campaign names.</li><li>Values include the cities you have specific campaigns for in your campaign names. For example: "US\_Facebook\_NY" for New York and "US\_Google\_SF" for San Francisco.</li><li>AppsFlyer parses the campaign name and groups data based on the cities.</li></ul> |
 | UA manager | <ul><li>Based on media sources.</li><li>Group different media sources according to specific team members. For example: Group Google and Facebook campaigns into the value "Kevin" and TikTok and Instagram campaigns into the value "Natasha."</li><li>AppsFlyer groups data from these media sources into the values "Kevin" and "Natasha," respectively.</li></ul> |
+
+<div id="procedures" />
 
 ## Procedures
 

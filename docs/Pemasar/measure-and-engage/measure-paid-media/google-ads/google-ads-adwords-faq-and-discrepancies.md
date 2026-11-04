@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pecahkan masalah umum dan perbedaan terkait dengan Google Ads.
 
+<div id="google-ads-faq" />
+
 ## FAQ Google Ads
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -150,6 +152,8 @@ Pengukuran paralel Google Ads memungkinkan halaman awal Anda untuk memuat lebih 
 
 Untuk informasi lebih lanjut tentang Pengukuran Paralel, klik <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">di sini</Anchor>.
 
+<div id="what-is-needed" />
+
 #### Apa yang dibutuhkan?
 
 Agar pelacakan paralel berfungsi sebagaimana mestinya, URL final harus cocok dengan apa yang ada di URL kampanye dan ditempatkan di <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">parameter ValueTrack `{lpurl}` Google.</Anchor>
@@ -183,6 +187,8 @@ Klik di sini untuk melihat cara mengonfigurasi kampanye web iklan Google dengan 
 
 <Accordion title="Bagaimana cara mengonfigurasi kampanye dengan Konfigurasi Android atau iOS">
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > AppsFlyer mendukung semua kampanye app yang diizinkan oleh Google Ads.
@@ -197,6 +203,8 @@ Klik di sini untuk melihat cara mengonfigurasi kampanye web iklan Google dengan 
 
 Untuk mendukung atribusi Android, pastikan app Anda mendukung pengumpulan GAID (Google Advertising ID) dan diteruskan ke AppsFlyer melalui SDK kami.
 
+<div id="creating-conversion-recording-installs" />
+
 #### Membuat Rekaman Konversi (Install)
 
 Untuk detail tentang cara membuat pencatatan konversi, klik <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">di sini</Anchor>.
@@ -204,6 +212,8 @@ Untuk detail tentang cara membuat pencatatan konversi, klik <Anchor target="_bla
 <span id="inapp_events"></span>Google Ads - Konfigurasi Android - Mengirim In-App Event
 
 Jika Anda ingin mengukur lebih jauh keberhasilan kampanye Instalasi Mobile App di Google, Anda dapat mengirim in-app event ke akun Google Ads dari akun AppsFlyer.
+
+<div id="create-a-conversion-in-app-events" />
 
 #### Membuat Konversi (In-App Event)
 
@@ -215,6 +225,8 @@ Untuk detail tentang cara mengukur konversi aplikasi Anda, klik <Anchor target="
 
 <Accordion title="Konfigurasi iOS untuk Google Ads">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads - konfigurasi iOS: kampanye aplikasi
 
 Kampanye App memungkinkan Anda untuk mempromosikan app iOS di Google Penelusuran, YouTube, dan Display dalam satu tempat konfigurasi.
@@ -223,13 +235,19 @@ Umumnya, Google tidak dapat mengukur install iOS atribusi mandiri dari kampanye 
 
 Sebaliknya, **penelusuran iOS** **di** **Kampanye App dapat diukur oleh Google**, untuk iklan yang ditayangkan di **App Penelusuran Google.**
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### Membuat Rekaman Konversi (Install)
 
 Untuk detail tentang cara membuat pencatatan konversi, klik <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">di sini</Anchor>.
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google Ads - Konfigurasi iOS - mengirim In-App Event
 
 Jika Anda ingin mengukur lebih jauh keberhasilan kampanye Instalasi Mobile App di Google, Anda dapat mengirim in-app event ke akun Google Ads dari akun AppsFlyer.
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### Membuat Konversi (In-App Event)
 
@@ -251,11 +269,15 @@ Hal ini relevan untuk semua channel Google Ads.
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Perbedaan Google Ads
 
 Terkadang ada perbedaan antara dashboard Google Ads  dan dashboard AppsFlyer.
 
 Sementara kami bekerja sama dengan Google untuk meminimalkan perbedaan ini, pemasang iklan harus mengetahui beberapa penyebab berikut:
+
+<div id="both-ios-and-android" />
 
 #### Untuk iOS dan Android
 
@@ -273,11 +295,15 @@ Sementara kami bekerja sama dengan Google untuk meminimalkan perbedaan ini, pema
 | **Biaya - Saluran kampanye Google Ads** | Google melaporkan biaya untuk semua saluran kampanye tertentu, YouTube, tampilan, dan pencarian. | AppsFlyer mendapatkan data biaya dari Google untuk semua saluran kampanye, tetapi hanya konversi atribut dari YouTUbe dan saluran tampilan di AC iOS. Akibatnya, CPI (Biaya Per Instal) di AppsFlyer lebih tinggi. |
 | **Penginstalan SKAN** | Dari Google Ads API V10+, dashboard Google Ads tidak membedakan antara penginstalan dengan did\_win=TRUE dan did\_win=NULL. Perbedaannya hanya pada data lengkap. | Dari Google Ads API V10+, AppsFlyer hanya menampilkan penginstalan dari postback dengan did\_win=TRUE. Akibatnya, jumlah penginstalan di AppsFlyer mungkin lebih rendah. |
 
+<div id="notes" />
+
 > 📘 **Catatan**
 >
 > * Meskipun Google Ads menampilkan semua penginstalan kampanye penargetan ulang di tempat yang sama, di dashboard Ikhtisar AppsFlyer, tampilan UA menampilkan penginstalan baru, tampilan penargetan ulang menampilkan atribusi ulang, dan tampilan terpadu menampilkan keduanya.
 > * Saat membandingkan data dari dasbor Google Ads dan AppsFlyer, pastikan data di dasbor Google Ads adalah data yang diimpor dari analitik pihak ke-3 (AppsFlyer). Data yang diimpor dari Firebase atau Google Play memiliki struktur yang berbeda dan tidak sepenuhnya dapat dibandingkan dengan data AppsFlyer. Untuk mempelajari cara mengimpor data dari AppsFlyer ke dasbor Google Ads, klik <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">di sini</Anchor>.
 > * Untuk membandingkan event install (first\_open di Google Ads), pastikan Anda melakukan drill down hingga event install pada laporan konversi di Google Ads. Google Ads dapat menampilkan semua konversi (mis. memasang, membeli, berlangganan) yang mengapa hal tersebut penting untuk memilih bagi mereka yang hanya memasang event dari semua event konversi.
+
+<div id="see-also" />
 
 > 📄 **Lihat juga**
 >

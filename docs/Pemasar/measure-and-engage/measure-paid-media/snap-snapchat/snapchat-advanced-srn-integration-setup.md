@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## Ringkasan
 
 Integrasi SRN Tingkat Lanjut berarti semua lalu lintas<Anchor target="_blank" href="/marketers/id/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">dengan izin ganda</Anchor> diatribusikan dan dilaporkan sebagai lalu lintas SRN reguler. Untuk lalu lintas yang tidak mendapat izin, AppsFlyer dapat mengatribusikan dan mengukur atribusi berdasarkan klik dan tayangan yang berasal dari Snapchat menggunakan <Anchor target="_blank" href="/marketers/id/docs/self-reporting-networks-srns#bagaimana-cara-kerja-pengaitan-dengan-srn-tingkat-lanjut">metode atribusi lain</Anchor>, sesuai dengan batasan privasi.
+
+<div id="set-up-snapchat-integration" />
 
 ## Menyiapkan integrasi Snapchat
 
@@ -58,10 +62,14 @@ Untuk deskripsi terperinci dari header partner confuration window (jendela konfi
 
 Integrasi tersebut mendukung atribusi klik dan tayangan, biaya, pendapatan iklan, dan audiens.
 
+<div id="activate-partner" />
+
 #### Aktifkan mitra
 
 Pada **kunjungan pertama** di sini, Anda harus mengaktifkan **Aktifkan Mitra** untuk mengaktifkan pengaturan.  
 Untuk detail lebih lanjut tentang aktivasi mitra klik <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">di sini</Anchor>.
+
+<div id="general-settings" />
 
 #### Pengaturan umum
 
@@ -104,6 +112,8 @@ Detail lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set
 
 <Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
 
+<div id="re-engagement-attribution" />
+
 #### Atribusi interaksi ulang
 
 Aktifkan atribusi interaksi ulang untuk mulai mengatribusi interaksi ulang untuk Snapchat.  
@@ -127,6 +137,8 @@ Tetapkan durasi Re-engagement view-through lookback window (jendela lookback kli
 Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (periode ketika in-app event pengguna dikaitkan ke sumber media retargeting (penargetan ulang). Anda dapat mengatur nilai dalam hari (1-90), jam (hingga 23), atau bahkan selamanya:
 
 <Image alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
+
+<div id="in-app-event-postbacks" />
 
 #### Pengaturan postback in-app event
 
@@ -261,6 +273,8 @@ Pelajari lebih lanjut tentang memberikan <Anchor target="_blank" href="/marketer
 
 </Accordion>
 
+<div id="deep-linking-with-snapchat" />
+
 ## Deep linking dengan Snapchat
 
 Deep linking dengan Snapchat didasarkan pada tautan langsung asli di platform Snapchat dengan menambahkan parameter AppsFlyer ke dalamnya.
@@ -279,12 +293,16 @@ Untuk melakukan deep linking dengan Snapchat:
 >
 > klien://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### Bagaimana cara mengatur tautan langsung di platform Snap?
 
 1. Buka jenis peluang **Drive traffic to app**.
 2. Tambahkan URI Deeplink:  
      
     [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### Deferred deep linking dengan Snapchat
 
@@ -293,6 +311,8 @@ Anda dapat mengakses data konversi pengguna Snapchat secara aktual dan langsung 
 <Anchor target="_blank" href="/marketers/id/docs/conversion-data-payloads-and-scenarios#snapchat-conversion-data">Data konversi Snapchat</Anchor> termasuk parameter **af\_dp**, yang memungkinkan ANda untuk menautkan secara langsung dan menyajikan konten terkustomisasi, berdasarkan keterlibatan pengguna dengan iklan Anda di Snapchat.
 
 Sebagai tambahan, Anda dapat menggunakan parameter data konversi lain, seperti **af\_adset** atau **af\_channel**.
+
+<div id="set-up-snapchat-for-agencies" />
 
 ## Mengatur Snapchat untuk agensi
 
@@ -310,6 +330,8 @@ Untuk menyelesaikan pengaturan, dua langkah diperlukan:
 >
 > <span id="01H7WQ47EDPEDQHX9XRDKYKB1W"></span>ID akun Snapchat tidak boleh dibagikan kepada pemasang iklan atau agensi. Jika ID dibagikan maka SEMUA penginstalan pemasang iklan secara otomatis teratribusi di dashboard agensi.
 
+<div id="raw-data-restrictions" />
+
 ## Pembatasan data lengkap
 
 * Mulai 1 Maret 2023, Uninstall Snapchat tidak disertakan dalam laporan data lengkap
@@ -320,6 +342,8 @@ Untuk menyelesaikan pengaturan, dua langkah diperlukan:
   * Jenis sentuhan yang diatribusikan (tayangan)
   * Waktu sentuh yang dikaitkan (dilaporkan sebagai tanggal saja - "hh/bb/tttt")
   * Kampanye dilaporkan sebagai "terbatas"
+
+<div id="snapchat-data-retention" />
 
 ## Menyimpan data Snapchat
 

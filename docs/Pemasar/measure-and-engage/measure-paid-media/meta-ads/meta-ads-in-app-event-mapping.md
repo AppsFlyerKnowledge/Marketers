@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Sekilas:** Kirimkan rich in-app event dari aplikasi Anda dari AppsFlyer ke Meta ads.
 
+<div id="meta-in-app-events-mapping" />
+
 ## Pemetaan in-app event Meta
 
 Pemasang iklan memetakan in-app event mereka, SDK atau Server-ke-server, ke event Meta yang telah ditentukan sebelumnya. Pemasang iklan juga dapat mengirimkan postback ke Meta tentang setiap <Anchor target="_blank" href="/marketers/id/docs/measure-sessions">peluncuran aplikasi</Anchor> atau setiap <Anchor target="_blank" href="/marketers/id/docs/measure-uninstalls#memetakan-event-uninstall">unistall aplikasi</Anchor> yang diketahui.
 
 Hal ini memungkinkan pemasang iklan untuk memanfaatkan kemampuan optimisasi tingkat lanjut Meta serta membangun segmen Audiens Khusus dan Serupa.
+
+<div id="predefined-event-mapping" />
 
 ### Pemetaan event yang telah ditentukan sebelumnya
 
@@ -52,6 +56,8 @@ Berikut adalah daftar event Meta lain yang telah ditentukan sebelumnya, yang tid
 | Kontak | Telepon atau SMS, email, obrolan, jenis kontak lainnya antara pelanggan dan bisnis Anda. | af\_contact |
 | SesuaikanProduk | Kustomisasi produk melalui alat konfigurasi atau aplikasi lain yang dimiliki bisnis Anda. | af\_customize\_product |
 
+<div id="custom-in-app-events-mapping" />
+
 ### Pemetaan In-App Event Personalisasi
 
 AppsFlyer memungkinkan Anda untuk memetakan in-app event khusus mana pun untuk dikirim ke Meta, dengan menggunakan opsi Pengidentifikasi Event Meta KHUSUS.
@@ -61,6 +67,8 @@ Nama event dan nilai event (termasuk parameter event) yang dikonfigurasi di SDK 
 Perhatikan bahwa Anda dapat <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">menggunakan event ini untuk mengoptimalkan kampanye Anda</Anchor>.
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+
+<div id="automatic-parameter-mapping-with-the-custom-event" />
 
 ### Pemetaan Parameter Otomatis dengan CUSTOM Event
 
@@ -119,6 +127,8 @@ Tabel berikut memerinci semua parameter event AppsFlyer, yang saat dipetakan mel
 | af\_travel\_end | fb\_travel\_end |
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
+
+<div id="event-and-parameter-limitations" />
 
 ## Batasan Event dan Parameter
 
