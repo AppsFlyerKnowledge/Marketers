@@ -87,7 +87,7 @@ Meta 웹 광고 통합을 활성화하려면 다음 단계를 따르세요.
    > <Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">파트너와 작업하는 동안에는 토글이 켜져(활성화) 있어야 합니다.</Anchor>
 
 5. **'Pixel ID'** 필드를 입력하세요. Meta Ads Manager에서 픽셀 ID를 확인하려면:
-   1. <Anchor target="_blank" href="https://www.facebook.com/ads/manager">광고 관리자</Anchor> 사이드 메뉴에서 **모든 도구** > **이벤트 관리자**로 이동합니다.
+   1. <span class="af-ol-a"></span><Anchor target="_blank" href="https://www.facebook.com/ads/manager">광고 관리자</Anchor> 사이드 메뉴에서 **모든 도구** > **이벤트 관리자**로 이동합니다.
 
       <div id="note-2" />
 

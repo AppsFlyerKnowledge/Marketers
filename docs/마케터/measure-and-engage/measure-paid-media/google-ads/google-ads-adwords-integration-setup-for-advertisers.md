@@ -130,7 +130,7 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
    > 재설치 전환 데이터는 Google Ads 대시보드에서 **session\_start**로 표시됩니다. 앱스플라이어에서는 이를 어트리뷰션하고 리어트리뷰션으로 간주합니다.
 
 10. **리인게이지먼트 어트리뷰션**을 구성합니다.
-    1. <Anchor target="_blank" href="/marketers/ko/docs/app-settings#reengagement-attribution">앱 설정에서 리타겟팅을 활성화하세요</Anchor>.
+    1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/ko/docs/app-settings#reengagement-attribution">앱 설정에서 리타겟팅을 활성화하세요</Anchor>.
     2. Google Ads 연동 설정에서 리인게이지먼트 어트리뷰션을 활성화하세요.
     3. **리인게이지먼트 클릭-쓰루 룩백 윈도우**를 설정합니다. 이는 광고 클릭 이후 앱이 실행되어야 리인게이지먼트로 기록되는 기간입니다. 시간 또는 일 단위로 룩백 윈도우를 선택하고 슬라이더를 원하는 값으로 설정하세요.
     4. **리인게이지먼트 뷰-쓰루 어트리뷰션**을 활성화하세요.  

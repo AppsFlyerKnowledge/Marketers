@@ -437,7 +437,7 @@ Smart Plus는 단일 광고 소재 단위에서 다수의 크리에이티브를 
 #### 권장 설정
 
 1. 인증을 완료하기 위한 목적으로 오가닉 포스트백이 TikTok에 수신될 수 있도록, 앱스플라이어에서 AAP 설정을 일시적으로 비활성화할 수 있습니다. AAP 설정을 비활성화하면 광고주와 파트너사가 사용자 레벨 데이터에 접근할 수 있게 됩니다. 자세한 내용은 다음을 참조하세요. <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework#aap가-비활성화됨">AAP가 비활성화됨</Anchor>
-   1. <Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">앱 수준 설정</Anchor>으로 이동하여 AAP를 비활성화합니다.
+   1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/ko/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">앱 수준 설정</Anchor>으로 이동하여 AAP를 비활성화합니다.
    2. [TikTok의 파트너 연동 구성](#advanced-privacy)으로 이동하여 거기에서도 AAP를 비활성화하세요
 2. [포스트백 섹션](#기본-포스트백)에서 포스트백 방법을 다음과 같이 설정합니다. **오가닉을 포함한 모든 미디어 소스:**
 3. TikTok이 최소 한 건 이상의 설치 또는 인앱 이벤트 포스트백을 수신할 때까지 기다립니다. 포스트백이 수신되면 TikTok 대시보드에서 앱 상태가 자동으로 인증됨으로 업데이트됩니다.
