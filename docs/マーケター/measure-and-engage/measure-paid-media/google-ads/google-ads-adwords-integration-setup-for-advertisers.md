@@ -117,7 +117,7 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
    > 再インストールのコンバージョンデータは、Google Ads管理画面では**session\_startとして表示されます**。 AppsFlyerでは、リアトリビューションとして計測・表示されます。
 
 10. ［**リエンゲージメントの計測**］の設定：
-    1. <Anchor target="_blank" href="/marketers/ja/docs/app-settings#reengagement-attribution">アプリ設定画面でリターゲティングを有効に設定</Anchor>します。
+    1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/ja/docs/app-settings#reengagement-attribution">アプリ設定画面でリターゲティングを有効に設定</Anchor>します。
     2. Google Adsの連携設定で、リエンゲージメントの計測を有効にします。
     3. ［**リエンゲージメント：クリックスルールックバック期間**］を設定します。これは広告クリックからの期間で、クリックをリエンゲージメントとして計測するには、この期間内にアプリが起動される必要があります。時間または日数でルックバック期間を選択し、スライダーを希望の値に設定します。
     4. **リエンゲージメント：ビュースルー計測**トグルを有効にします。  

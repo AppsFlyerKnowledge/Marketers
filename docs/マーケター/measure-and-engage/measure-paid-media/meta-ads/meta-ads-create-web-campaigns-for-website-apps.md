@@ -85,7 +85,7 @@ Meta広告連携を有効にするには、以下の手順に従ってくださ�
    > このパートナーとの連携を継続する間は、トグルをオン（<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">有効</Anchor>）のままにしてください。
 
 5. <strong>［ピクセルID］</strong>欄に入力します。 Meta広告マネージャでピクセルIDを取得するには、以下の手順に従ってください。
-   1. <Anchor target="_blank" href="https://www.facebook.com/ads/manager">広告マネージャ</Anchor>のサイドメニューから、**［すべてのツール］**><strong>［イベントマネージャ］</strong>に移動します。
+   1. <span class="af-ol-a"></span><Anchor target="_blank" href="https://www.facebook.com/ads/manager">広告マネージャ</Anchor>のサイドメニューから、**［すべてのツール］**><strong>［イベントマネージャ］</strong>に移動します。
 
       <div id="note-2" />
 

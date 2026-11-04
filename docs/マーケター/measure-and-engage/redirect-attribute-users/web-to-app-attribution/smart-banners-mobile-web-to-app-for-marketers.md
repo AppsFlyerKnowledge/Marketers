@@ -170,10 +170,10 @@ Smart Bannersでは、次のことができます。
 
 1. AppsFlyerのサイドメニューから、**［Engage］** > **［Web-to-app］** > <strong>［Smart Banners］</strong>を選択します。
 2. **初めてバナーグループを設定する場合**
-   1. 左側の<strong>［バナーグループを追加］</strong>をクリックします。
+   1. <span class="af-ol-a"></span>左側の<strong>［バナーグループを追加］</strong>をクリックします。
    2. 手順5以降に進みます。
 3. **バナーグループを追加する場合**
-   1. <strong>［Studio］</strong>タブに移動します。
+   1. <span class="af-ol-a"></span><strong>［Studio］</strong>タブに移動します。
    2. <strong>［＋新規］</strong>をクリックします。
    3. 手順5以降に進みます。
 4. **バナーグループを複製する場合**
@@ -283,7 +283,7 @@ Smart Bannersでは、次のことができます。
 1. <strong>［新しいバナー］</strong>をクリックし、<strong>［バナーを編集］</strong>ページを開きます。
 2. バナーの**名前**を設定します。
 3. <strong>［クリエイティブをデザイン］</strong>でクリエイティブを作成します。
-   1. <strong>［クリエイティブをデザイン］</strong>をクリックして、バナーのクリエイティブを設定します。
+   1. <span class="af-ol-a"></span><strong>［クリエイティブをデザイン］</strong>をクリックして、バナーのクリエイティブを設定します。
 
       バナーテンプレートを選択するウィンドウが開きます。
 

@@ -147,7 +147,7 @@ iOSの認証情報を設定するには、次の手順を実行します。
 **サービスアカウントを設定するには、次の手順を実行します**。
 
 1. **サービスアカウント**を作成するか、既存のサービスアカウントを使用します。
-   1. Google Cloudの<strong>［サービスアカウント］</strong>で、<strong>［サービスアカウントを作成］</strong>をクリックします。
+   1. <span class="af-ol-a"></span>Google Cloudの<strong>［サービスアカウント］</strong>で、<strong>［サービスアカウントを作成］</strong>をクリックします。
 
       [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
    2. サービスアカウントの詳細を入力します。
@@ -166,7 +166,7 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
       [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. **サービスアカウントの秘密鍵**をダウンロードします。
-   1. Google Cloudの<strong>［サービスアカウント］</strong>で、先ほど作成したアカウントを一覧から選び、<strong>［その他の操作］</strong>アイコンをクリックします。
+   1. <span class="af-ol-a"></span>Google Cloudの<strong>［サービスアカウント］</strong>で、先ほど作成したアカウントを一覧から選び、<strong>［その他の操作］</strong>アイコンをクリックします。
    2. <strong>［鍵を管理］</strong>をクリックします。
 
       [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)

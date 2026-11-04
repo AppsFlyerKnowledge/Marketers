@@ -437,7 +437,7 @@ AppsFlyerで、アプリレベルまたはTikTokパートナーレベルのい�
 #### 推奨アクション
 
 1. 検証目的に限り、一時的にAppsFlyer側で高プライバシー設定を無効化し、TikTokがオーガニックポストバックを受信できるようにしてください。高プライバシー一括設定を無効にすると、ユーザーレベルのデータが広告主やパートナーに利用可能になる場合があります。詳細は「<Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework#高プライバシー一括設定aapが無効の場合">高プライバシー一括設定の無効化</Anchor>」を参照してください。
-   1. <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">アプリ設定</Anchor>に移動して高プライバシー一括を無効にします。
+   1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework#aap-central-switch">アプリ設定</Anchor>に移動して高プライバシー一括を無効にします。
    2. [TikTokのパートナー連携設定](#高プライバシーポストバック)に移動し、高プライバシーポストバックを無効にします。
 2. [ポストバックセクション](#デフォルトのポストバック)で、ポストバック内容を設定します：[オーガニックを含むすべてのメディアソース：](#デフォルトのポストバック)
 3. TikTokが少なくとも1回のインストールまたはアプリ内イベントのポストバックを受信するのを待ってください。受信後、アプリは自動的にTikTokダッシュボードで「認証済み」に更新されるべきです。
