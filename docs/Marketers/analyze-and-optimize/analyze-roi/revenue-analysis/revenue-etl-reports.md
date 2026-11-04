@@ -73,7 +73,7 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 1. **Ingestión de datos:** El reporte puede provenir del conector del SDK de ingresos por publicidad o de la solicitud de API S2S (consulta la sección anterior).
 2. **Procesamiento de datos**: Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
 
-   1. Normalización de datos
+   1. <span class="af-ol-a"></span>Normalización de datos
    2. Atribución a la fuente de instalación y enriquecimiento de datos,
    3. Generación de eventos de ingresos por publicidad
    4. Los eventos se agregan a nivel de dispositivo
@@ -184,7 +184,7 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 1. **Ingestión de datos:** El reporte puede provenir de la solicitud de API de S2S o del SDK (consulta la sección anterior).
 2. **Procesamiento de datos:** Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
 
-   1. Normalización de datos
+   1. <span class="af-ol-a"></span>Normalización de datos
    2. Atribución a la fuente de instalación y enriquecimiento de datos,
    3. Generación de eventos de ingresos por publicidad
    4. Los eventos se agregan a nivel de dispositivo
@@ -318,7 +318,7 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 
 1. **Ingestión de datos:** Los datos del reporte provienen de datos a nivel de impresión enviados por el conector SDK de ingresos por publicidad de ROI360 y requieren una integración tipo SDK.
 2. **Procesamiento de datos**: Los ingresos por publicidad de ROI360 de AppsFlyer realizan lo siguiente:
-   1. Normalización de datos
+   1. <span class="af-ol-a"></span>Normalización de datos
    2. Atribución a la fuente de instalación y enriquecimiento de datos,
    3. Generación de eventos de ingresos por publicidad a nivel de impresión.
 3. **Entrega de datos**: Los eventos de impresión se escriben en archivos divididos por carpetas según la hora de aparición. Cada carpeta solo contiene las impresiones que se produjeron durante esa hora.

@@ -143,7 +143,7 @@ Configura la asignación de postbacks de eventos in-app enviados a Google Ads We
 | Nombre de parámetro | Descripción |
 | --- | --- |
 | **Evento de AppsFlyer** | El nombre del evento, tal como lo recibió AppsFlyer, ya sea del SDK integrado en tu aplicación o de los eventos de servidor a servidor.<ul><li>Haz clic en **Agregar elemento**, ingresa el nombre del evento y haz clic en ![check.png](https://files.readme.io/66d595d0ac8a01489ce810bbd3865fca2556342086dc6b20f26fa3d7b7e3afc2-19124971382289.png).</li></ul> |
-| **Asignado al evento de partner** | El ID de acción de conversión de cada evento, tal como se define del lado del partner.<ol><li>En la página de **Objetivos de conversión** de Google Ads, haz clic en la acción de conversión que has creado.</li><li>En la página de **Detalles** de la acción de conversión, copia el **ID de acción de conversión** del parámetro de URL `ctId=`.</li><li>Regresa a AppsFlyer y pégala. Por ejemplo, si `ctid=123456789`, pega `123456789`.</li></ol> |
+| **Asignado al evento de partner** | El ID de acción de conversión de cada evento, tal como se define del lado del partner.<ol><li><span class="af-ol-a"></span>En la página de **Objetivos de conversión** de Google Ads, haz clic en la acción de conversión que has creado.</li><li>En la página de **Detalles** de la acción de conversión, copia el **ID de acción de conversión** del parámetro de URL `ctId=`.</li><li>Regresa a AppsFlyer y pégala. Por ejemplo, si `ctid=123456789`, pega `123456789`.</li></ol> |
 | **para usuarios de** | **Sólo este partner:** Los postbacks de eventos in-app se envían solo para eventos atribuidos a este partner, es decir, el usuario que los realizó proviene de este partner. |
 | **incluyendo** | **Valores e ingresos:** Todos los parámetros del evento, incluyendo el valor de los ingresos (si existe en el evento), se envían en el postback. |
 
@@ -263,7 +263,7 @@ En Google Ads, puedes seleccionar de la lista predefinida de acciones y objetivo
    >
    > Si la **importación manual usando API o cargas** no está disponible:
    >
-   > 1. Selecciona **CRM, archivos u otras fuentes de datos** > **Rastrear conversiones de clics**.
+   > 1. <span class="af-ol-a"></span>Selecciona **CRM, archivos u otras fuentes de datos** > **Rastrear conversiones de clics**.
    > 2. En **Fuente de datos** selecciona **Omitir este paso y configurar la fuente de datos más tarde**.
 
 5. Haz clic en **Continuar**.  
