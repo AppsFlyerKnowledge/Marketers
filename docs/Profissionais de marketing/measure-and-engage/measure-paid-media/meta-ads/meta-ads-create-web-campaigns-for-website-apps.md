@@ -79,7 +79,7 @@ Para ativar a integração do Meta Ads:
    > O botão deve permanecer <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativado</Anchor> enquanto você trabalhar com o parceiro.
 
 5. Preencha o campo **Pixel ID**. Para recuperar seu Pixel ID do Gerenciador do Meta Ads:
-   1. No menu lateral do <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Gerenciador de Anúncios</Anchor>, acesse **Todas as ferramentas** > **Gerenciador de eventos**.
+   1. <span class="af-ol-a"></span>No menu lateral do <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Gerenciador de Anúncios</Anchor>, acesse **Todas as ferramentas** > **Gerenciador de eventos**.
 
       <div id="note-2" />
 

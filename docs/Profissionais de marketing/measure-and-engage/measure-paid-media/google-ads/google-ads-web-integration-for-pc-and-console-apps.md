@@ -272,7 +272,7 @@ No Google Ads, você pode selecionar ações e metas de conversão a partir da l
 7. Para **otimização de metas e ações**, selecione uma categoria para mapear sua ação de conversão.  
    **Atenção:** a otimização de campanhas do Google Ads é feita por categoria, não por ação específica. Se você quiser que suas campanhas sejam otimizadas para uma única ação, mapeie somente essa ação para essa categoria. Por exemplo, se você quiser que sua campanha seja otimizada para a ação “instalar”, mapeie a ação “instalar” para a categoria desejada, por exemplo, “outros”. Em seguida, você poderá selecionar essa categoria como a meta da campanha.
 8. Copie o conversion action ID do Google Ads e insira-o no campo **mapeado para o evento do parceiro.** O **conversion action ID** é usado como o partner event ID ao mapear o nome do evento do AppsFlyer para o partner event ID na configuração de postbacks de eventos in-app. Para copiar o conversion action ID do Google Ads:
-   1. Na página de **metas de conversão** do Google Ads, clique na ação de conversão que você criou.
+   1. <span class="af-ol-a"></span>Na página de **metas de conversão** do Google Ads, clique na ação de conversão que você criou.
    2. Na página de **detalhes** da ação de conversão, copie o **conversion action ID** do parâmetro `ctId=` da URL e cole-o.
 9. Clique em **criar e continuar**.
 10. Clique em **terminar**.

@@ -132,7 +132,7 @@ Configure o mapeamento de postbacks de eventos in-app enviados para o TikTok web
 4. Defina a **janela de postbacks de eventos in-app**, se necessário (saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#janela-de-postback-de-eventos-in-app">configuração dessa janela aqui</Anchor>).
 5. Clique em **Salvar integração**.
 6. [Opcional] Após salvar a integração, você pode integrar mais aplicativos com o parceiro em questão:
-   1. No canto superior esquerdo, abaixo do nome do parceiro, clique no nome do aplicativo para abrir a lista de apps.
+   1. <span class="af-ol-a"></span>No canto superior esquerdo, abaixo do nome do parceiro, clique no nome do aplicativo para abrir a lista de apps.
    2. Selecione um aplicativo diferente a partir da lista suspensa.
    3. Repita as etapas de integração para o aplicativo selecionado.
 

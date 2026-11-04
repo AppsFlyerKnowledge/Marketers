@@ -154,7 +154,7 @@ Para criar ou editar um campo calculado, faça o seguinte:
    * **Criar**: Clique em **+ Calculated field.**
    * **Editar**: Passe o cursor sobre o campo calculado e clique no menu de ações → Edit calculated field.
 2. Na caixa de diálogo **Editar** ou **Novo campo calculado**, faça o seguinte:
-   1. Na caixa **Campo**, insira o nome do campo.
+   1. <span class="af-ol-a"></span>Na caixa **Campo**, insira o nome do campo.
    2. Na lista **Definir função**, escolha a função usada para calcular o novo valor.
 3. Defina a função de acordo com a tabela abaixo:
 
@@ -192,7 +192,7 @@ Por padrão, as dimensões são removidas na ordem inversa de sua posição na l
 2. Arraste a dimensão para reorganizar a ordem.
    * A dimensão rotulada como **Prioridade mais alta** (no topo da lista) significa que ela será a última a ser eliminada se o reagrupamento for necessário.
 3. [Opcional] Para aplicar o reagrupamento às dimensões de origem personalizadas:
-   1. Clique em **Usar opções avançadas para refinar o reagrupamento**
+   1. <span class="af-ol-a"></span>Clique em **Usar opções avançadas para refinar o reagrupamento**
    2. Selecione dimensões de origem personalizadas às quais você gostaria de aplicar o reagrupamento.
    3. As dimensões selecionadas são adicionadas à **lista Manage dimension priority** .
       * Por padrão, essas dimensões são adicionadas ao final da lista como a **Menor prioridade** para reagrupamento. No entanto, você pode reordená-las da mesma forma que as dimensões de dados de atribuição, conforme descrito acima.

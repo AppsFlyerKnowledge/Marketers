@@ -76,7 +76,7 @@ Comece ativando a integração do Google Ads para campanhas na web e configure o
    > O botão deve permanecer habilitado (ativado) enquanto você trabalhar com o parceiro.
 
 6. Insira seu **Customer ID**. Você pode encontrá-lo no Google Ads Manager:
-   1. Faça login na sua conta do Google Ads.
+   1. <span class="af-ol-a"></span>Faça login na sua conta do Google Ads.
    2. No canto superior direito, clique no ícone da conta do Google e role para baixo até encontrar o Customer ID.
    3. Siga uma das opções abaixo:
       * Se você tiver várias contas do Google Ads executando campanhas para seu aplicativo, use o Customer ID de uma conta MCC para o rastreamento de conversões entre contas. Cole o MCC ID (e não o Customer ID de uma conta específica) nas caixas de texto "Customer ID" e "MCC Customer ID" (mesmo ID para ambas).  Para mais informações, veja <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">as instruções do Google sobre como configurar uma conta MCC</Anchor>.

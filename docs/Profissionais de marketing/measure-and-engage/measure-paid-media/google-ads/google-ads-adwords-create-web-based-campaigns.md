@@ -90,7 +90,7 @@ Comece ativando a integração do Google Ads para campanhas na web e configure o
 > Se você ainda precisar definir a ação "Primeira abertura" no Google Ads, poderá inserir um valor de espaço reservado temporariamente até que a ação esteja totalmente configurada.
 
 1. Insira seu **Customer ID**. Você pode encontrá-lo no Google Ads Manager:
-   1. Faça login na sua conta do Google Ads.
+   1. <span class="af-ol-a"></span>Faça login na sua conta do Google Ads.
    2. No canto superior direito, clique no ícone da conta do Google e role para baixo até encontrar o Customer ID.
 2. Se você tiver várias contas do Google Ads executando campanhas para seu aplicativo, use o Customer ID de uma conta MCC para o rastreamento de conversões entre contas. Cole o **MCC ID** (e não o Customer ID de uma conta específica) nas caixas de texto **Customer ID** e **MCC Customer ID** (mesmo ID para ambas).   
    Se você usar apenas uma única conta do Google Ads para executar anúncios, basta colar o ID da conta na caixa de texto **Customer ID** e deixar a **MCC Customer ID** vazia. Veja <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Instruções do Google sobre como configurar uma conta MCC</Anchor>.
@@ -145,7 +145,7 @@ Atualmente, instalações são os únicos eventos que acionam postbacks padrão 
 
    **No Google Ads, abra a página das ações de conversão.**
 
-   1. Configurar a campanha no Google Ads (obrigatória)
+   1. <span class="af-ol-a"></span>Configurar a campanha no Google Ads (obrigatória)
    2. Abra a página de conversion action que você quer mapear.
    3. Abra a aba **Detalhes**.
    4. Copie o valor do parâmetro de consulta `ctid=*` do URL da página.
@@ -156,7 +156,7 @@ Atualmente, instalações são os únicos eventos que acionam postbacks padrão 
 8. [Opcional] Clique no ícone **Adicionar condição** para <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#postbacks-condicionais-de-eventos-in-app">definir condições</Anchor> para um evento.
 9. Clique em **Guardar Integração**.
 10. [Opcional] Após salvar a integração, você pode integrar mais aplicativos com o parceiro em questão:
-    1. No canto superior esquerdo clique no nome do aplicativo para abrir a lista de aplicativos.
+    1. <span class="af-ol-a"></span>No canto superior esquerdo clique no nome do aplicativo para abrir a lista de aplicativos.
     2. Selecione um aplicativo diferente na lista suspensa.
     3. Repita as etapas de integração para o aplicativo selecionado.
 

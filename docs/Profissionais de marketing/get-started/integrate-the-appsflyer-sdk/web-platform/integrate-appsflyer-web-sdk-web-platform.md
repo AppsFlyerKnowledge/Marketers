@@ -510,7 +510,7 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
      6. Defina a página e as condições de gatilho conforme necessário.
      7. Clique em **Guardar**.
      8. Associe o gatilho à tag do Web SDK da AppsFlyer.
-        1. Na janela principal do **GTM**, selecione **Gatilhos**.
+        1. <span class="af-ol-a"></span>Na janela principal do **GTM**, selecione **Gatilhos**.
         2. Selecione a etiqueta que criou anteriormente.
         3. No painel de gatilhos, clique no ícone de edição.
         4. Selecione o gatilho da visualização da página que criou anteriormente.
@@ -790,7 +790,7 @@ Esse método captura ações específicas, como clicar em um botão de **checkou
 
 #### 2. Configure variáveis e gatilhos no GTM
 
-1. No GTM, clique em **Variáveis** > **Configurar** e ative **Elementos de clique** na lista de variáveis incorporadas.
+1. <span class="af-ol-a"></span>No GTM, clique em **Variáveis** > **Configurar** e ative **Elementos de clique** na lista de variáveis incorporadas.
 2. Crie uma nova variável definida pelo usuário (tipo: **Todos os elementos**).
 3. Crie um novo **gatilho**:
    * Tipo de gatilho: **Clique - Todos os elementos**.
@@ -801,7 +801,7 @@ Esse método captura ações específicas, como clicar em um botão de **checkou
 
 #### 3. Crie a tag de interação
 
-1. Crie uma nova tag **HTML personalizado** para a ação do checkout.
+1. <span class="af-ol-a"></span>Crie uma nova tag **HTML personalizado** para a ação do checkout.
 2. Cole o script de interação:
 
    ```html

@@ -170,14 +170,14 @@ Os grupos de banners contêm um ou mais banners. Aqui você pode:
 
 1. Na AppsFlyer, no menu lateral, vá para **Engajar** > **Web-to-app** > **Smart Banners**.
 2. **Para configurar um grupo de banners pela primeira vez**
-   1. No lado esquerdo, clique em **adicionar grupo de banners**.
+   1. <span class="af-ol-a"></span>No lado esquerdo, clique em **adicionar grupo de banners**.
    2. Siga o 5º passo e os passos seguintes.
 3. **Para configurar grupos de banners adicionais**
-   1. Acesse a aba **Studio**.
+   1. <span class="af-ol-a"></span>Acesse a aba **Studio**.
    2. Clique em **+ Novo.**
    3. Siga o 5º passo e os passos seguintes.
 4. **Para duplicar um grupo de banners**
-   1. Clique no ícone **duplicar** ao lado do ícone de deletar.
+   1. <span class="af-ol-a"></span>Clique no ícone **duplicar** ao lado do ícone de deletar.
 5. Insira um **nome exclusivo para o grupo de banners**. O nome deve representar um tema comum geral entre os banners definidos para o grupo de banners em questão (por exemplo, o aplicativo anunciado).
 6. Selecione o template do OneLink para o grupo de banners.
 7. [opcional] Defina um **esquema URI** para o grupo de banners como um fallback para usuários de Universal Links e de Android App Links. Isso raramente é necessário, pois, como padrão, o valor é retirado do template do OneLink. Só faça essa configuração para o grupo de banners caso seja necessário um valor diferente do que o definido no template.
@@ -226,7 +226,7 @@ Os grupos de banners contêm um ou mais banners. Aqui você pode:
     * Apenas Android ou apenas iOS.
 16. [Opcional] **Configure** a ativação do grupo de banners: iniciar imediatamente (padrão) ou definir uma campanha com tempo limitado.
 17. [Opcional] Configure em quais **locais** o grupo de banners ficará ativado.
-    1. Selecione **global** para exibir esse grupo de banners a todos os usuários. Se necessário, exclua visitantes de diferentes regiões, países ou estados.
+    1. <span class="af-ol-a"></span>Selecione **global** para exibir esse grupo de banners a todos os usuários. Se necessário, exclua visitantes de diferentes regiões, países ou estados.
     2. Selecione a opção **escolher localização específica** para exibir esse grupo de banners para usuários de um ou mais locais específicos.
 18. [Opcional] Configure **exibir nas páginas** para definir em quais páginas o grupo de banners pode ser exibido aos visitantes:
     * **[Padrão]** Exibir em todas as páginas do site. **Atenção**: recomendamos que você defina pelo menos um grupo de banners para todas as páginas como fallback.
@@ -282,7 +282,7 @@ O dashboard de segmentação e comportamento mostra as configurações definidas
 1. Clique em **Novo banner** para entrar  na página **Editar banners**.
 2. Configure o **Nome** do banner.
 3. Crie um **Criativo de design**:
-   1. Clique em **Criativo de design** para configurar o criativo do banner.
+   1. <span class="af-ol-a"></span>Clique em **Criativo de design** para configurar o criativo do banner.
 
       Uma janela para escolher um template de banner aparece.
 

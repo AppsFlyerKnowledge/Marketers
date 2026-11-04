@@ -147,7 +147,7 @@ Obtenha as seguintes credenciais do App Store Connect e insira-as na página de 
 **Para configurar sua conta de serviço, siga estas etapas**:
 
 1. Crie ou localize a **Service Account**:
-   1. Acesse a seção **Service accounts** na Google Cloud Platform e clique em **Create Service Account**.
+   1. <span class="af-ol-a"></span>Acesse a seção **Service accounts** na Google Cloud Platform e clique em **Create Service Account**.
 
       [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
    2. Insira os detalhes da service account.
@@ -166,7 +166,7 @@ Obtenha as seguintes credenciais do App Store Connect e insira-as na página de 
 
       [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. Baixe a **Service Account Private Key**:
-   1. Na Google Cloud Platform, acesse a seção **Service accounts** , encontre na lista a conta desejada (a que você acabou de criar) e clique no ícone **More actions** .
+   1. <span class="af-ol-a"></span>Na Google Cloud Platform, acesse a seção **Service accounts** , encontre na lista a conta desejada (a que você acabou de criar) e clique no ícone **More actions** .
    2. Clique em **Manage keys**.
 
       [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)

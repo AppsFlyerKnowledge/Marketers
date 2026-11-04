@@ -100,7 +100,7 @@ x-zendesk:
            Para a nova configuração de postbacks, você deve inserir tanto o **Ad Account ID** quanto o **Access Token** (que podem ser acessados no Pinterest, se ainda não estiverem disponíveis). **Se algum desses valores estiver faltando, o postback falhará**. Por favor, certifique-se de que ambos os parâmetros estejam preenchidos corretamente na página de **Active Integration** do Pinterest. Para mais informações, veja <Anchor target="_blank" href="/marketers/pt/docs/pinterest-create-a-mobile-app-integration#configurações-de-eventos-in-app">esse artigo</Anchor>.  
            Sua cooperação é importante para garantir uma transição rápida e fácil. Agradecemos o seu apoio.
         2. **Mapeamento de eventos in-app e configurações de postbacks**
-           1. Substitua e mapeie os nomes dos eventos atuais do Pinterest usando os novos nomes de eventos da Conversion API na seção **Partner event name**. Por exemplo, se você estiver usando `pin_add_to_cart` na seção de eventos do parceiro, substitua por `add_to_cart`. Para mais informações, acesse <Anchor target="_blank" href="/marketers/pt/docs/pinterest-create-a-mobile-app-integration#aba-permissões">esse artigo</Anchor>.
+           1. <span class="af-ol-a"></span>Substitua e mapeie os nomes dos eventos atuais do Pinterest usando os novos nomes de eventos da Conversion API na seção **Partner event name**. Por exemplo, se você estiver usando `pin_add_to_cart` na seção de eventos do parceiro, substitua por `add_to_cart`. Para mais informações, acesse <Anchor target="_blank" href="/marketers/pt/docs/pinterest-create-a-mobile-app-integration#aba-permissões">esse artigo</Anchor>.
 
         | Nome do evento (legado) | Nome do evento (nova Conversions API) |
         | --- | --- |

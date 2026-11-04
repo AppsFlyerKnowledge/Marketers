@@ -403,7 +403,7 @@ Três tipos de regras estão disponíveis:
 2. Na seção **Política de geodesign**, clique em **+ Nova regra de geodesign**.
 3. Na caixa de diálogo **Nova regra de geodesign**, selecione o **aplicativo** e o **país** aos quais essa regra se aplica.
 4. Em **Regras**, configure cada regra:
-   1. Selecione o tipo de **Regra de geodesign:** Não usar holdout, não segmentar ou excluir da análise.
+   1. <span class="af-ol-a"></span>Selecione o tipo de **Regra de geodesign:** Não usar holdout, não segmentar ou excluir da análise.
    2. Selecione as **regiões** (estados ou sub-regiões, de acordo com cada país). Você pode pesquisar por nome ou código.
 5. Para adicionar outro tipo de regra para o mesmo aplicativo e país, clique em **+ Adicionar regra**.
 6. Revise o painel **Resumo** à direita, que é atualizado em tempo real à medida que você faz seleções.

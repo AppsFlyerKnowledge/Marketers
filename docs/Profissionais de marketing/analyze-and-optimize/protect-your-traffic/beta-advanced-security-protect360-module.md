@@ -90,7 +90,7 @@ Configure o módulo avançado de segurança para validar se o tráfego in-app es
 #### **2º passo: Adicionar certificado**
 
 1. Adicione:
-   1. Nome do certificado
+   1. <span class="af-ol-a"></span>Nome do certificado
    2. Valor do certificado
 2. Clique em **Próximo**.
 

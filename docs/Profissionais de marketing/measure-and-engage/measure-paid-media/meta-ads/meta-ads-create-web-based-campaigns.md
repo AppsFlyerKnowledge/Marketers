@@ -72,7 +72,7 @@ Para ativar a integração do Meta Web Ads:
 4. Desative a **Privacidade avançada** (se você estiver configurando uma integração de aplicativos iOS).
 5. **Compartilhamento de dados de correspondência avançada:** Ative para compartilhar campos de correspondência avançada, como e-mail com hash, número de telefone com hash, nome com hash, sobrenome com hash e ID de login do Facebook, com a Meta, se esses campos estiverem incluídos nas informações do evento enviadas à AppsFlyer. Para mais informações, consulte: <Anchor target="_blank" href="/marketers/pt/docs/advanced-matching-data-sharing">Compartilhamento de dados de correspondência avançada (em inglês)</Anchor>.
 6. Preencha o campo **Pixel ID**. Você pode recuperar o ID do pixel do seu Meta Ads Manager:
-   1. No menu lateral do [Ads manager](https://www.facebook.com/ads/manager), vá para **Todas as ferramentas** > **Gerenciador de eventos**. **Atenção:** Certifique-se de selecionar a empresa certa no menu suspenso no canto superior direito.
+   1. <span class="af-ol-a"></span>No menu lateral do [Ads manager](https://www.facebook.com/ads/manager), vá para **Todas as ferramentas** > **Gerenciador de eventos**. **Atenção:** Certifique-se de selecionar a empresa certa no menu suspenso no canto superior direito.
    2. No menu lateral do **Gerenciador de eventos**, selecione **Fontes de dados**. Você verá uma lista dos seus pixels. Caso você não encontre um pixel para o negócio selecionado, você pode criá-lo.
    3. Copie o ID do pixel exibido abaixo do nome do pixel.  
       e cole-o no  
@@ -128,7 +128,7 @@ Para definir os postbacks de eventos in-app, faça o seguinte:
 8. [Opcional] Clique no ícone **Adicionar condição** para <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#postbacks-condicionais-de-eventos-in-app">definir condições</Anchor> para um evento.
 9. Clique em **Guardar Integração**.
 10. [Opcional] Após salvar a integração, você pode integrar mais aplicativos com o parceiro em questão:
-    1. No canto superior esquerdo clique no nome do aplicativo para abrir a lista de aplicativos.
+    1. <span class="af-ol-a"></span>No canto superior esquerdo clique no nome do aplicativo para abrir a lista de aplicativos.
     2. Selecione um aplicativo diferente a partir da lista suspensa.
     3. Repita as etapas de integração para o aplicativo selecionado.
 
@@ -155,7 +155,7 @@ Execute as próximas etapas no Meta Ads Manager.
    * **Vendas**: Isso permite que o Meta faça a otimização visando um evento específico (seu principal KPI).
    * **Tráfego**: Isso permite que o Meta faça a otimização visando cliques em anúncios. Essa opção só deve ser usada se você não possui outros KPIs, ou se o volume de outros eventos de KPI for muito baixo.
 3. [Opcional] Se você quiser adicionar um objetivo personalizado às opções acima, faça o seguinte:
-   1. No Meta Ads, selecione o evento personalizado que você deseja definir como objetivo da campanha e marque-o como uma ação de conversão em Meta Ads.
+   1. <span class="af-ol-a"></span>No Meta Ads, selecione o evento personalizado que você deseja definir como objetivo da campanha e marque-o como uma ação de conversão em Meta Ads.
    2. Na AppsFlyer, na página de **integração do Meta Web**, em **Postbacks de eventos in-app, mapeie um evento** da AppsFlyer para um evento de parceiro personalizado (na coluna de eventos **mapeados para parceiros**) e nomeie-o com o mesmo nome da ação de conversão no Meta Ads.
 
       <div id="note-3" />

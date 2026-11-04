@@ -206,7 +206,7 @@ Pode criar um relatório personalizado ao definir os seus filtros e campos.
    * **Geográfico:** [Opcional] Só os eventos atribuídos às áreas geográficas selecionadas serão incluídos no relatório.
    * **Filtro específico do tipo de relatório**: Cada tipo de relatório pode ter o seu próprio filtro que permite selecionar critérios de filtragem.
 6. [Opcional]: Os relatórios são preenchidos automaticamente com os campos necessários. Pode adicionar ou remover campos da seguinte forma:
-   1. Aceda ao separador **Campos do relatório**. Não é possível alterar a seleção de campos obrigatórios.
+   1. <span class="af-ol-a"></span>Aceda ao separador **Campos do relatório**. Não é possível alterar a seleção de campos obrigatórios.
    2. Selecione ou desmarque os campos conforme necessário.
    3. [Opcional] Defina a **Ordem dos campos do relatório (CSV)** para estabelecer a sequência das colunas.
    4. [Opção] Se necessário, clique em **Restaurar predefinições**.

@@ -98,7 +98,7 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
 
    Além disso, quando o **compartilhamento avançado de dados** está ativado, a AppsFlyer atribui esses eventos. Quando desativado, apenas postbacks e eventos de dispositivos com IDFA são enviados e atribuídos.
 8. Configurando a **atribuição de instalação**:
-   1. Defina a **Janela lookback de click-through**.  
+   1. <span class="af-ol-a"></span>Defina a **Janela lookback de click-through**.  
       Selecione as unidades da janela de lookback (horas ou dias) e defina a barra deslizante para o valor desejado. Recomendamos a definição da janela de lookback para 30 dias para corresponder ao período do Google Ads.
    2. [Opcional] se você executar campanhas de pré-registro para aplicativos Android, defina a **janela de lookback de campanha de pré-registro** (o padrão é 90 dias). Esse cursor determina a janela de lookback para a atribuição de instalações a campanhas de pré-registro.
    3. Ative a **atribuição de view-through de instalação**.

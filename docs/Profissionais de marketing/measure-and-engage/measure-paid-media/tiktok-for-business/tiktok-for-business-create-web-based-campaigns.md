@@ -131,7 +131,7 @@ Para definir os postbacks de eventos in-app, faça o seguinte:
 8. [Opcional] Clique no ícone **Adicionar condição** para <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#postbacks-condicionais-de-eventos-in-app">definir condições</Anchor> para um evento.
 9. Clique em **Salvar integração**.
 10. [Opcional] Após salvar a integração, você pode integrar mais aplicativos com o parceiro em questão:
-    1. No canto superior esquerdo clique no nome do aplicativo para abrir a lista de aplicativos.
+    1. <span class="af-ol-a"></span>No canto superior esquerdo clique no nome do aplicativo para abrir a lista de aplicativos.
     2. Selecione um aplicativo diferente a partir da lista suspensa.
     3. Repita as etapas de integração para o aplicativo selecionado.
 

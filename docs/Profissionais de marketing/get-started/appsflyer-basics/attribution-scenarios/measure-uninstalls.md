@@ -33,7 +33,7 @@ Para entender o valor dos usuários do seu aplicativo, você deve analisar tanto
 
 ### Como funciona?
 
-1. A AppsFlyer envia uma solicitação de API diária para o Firebase Cloud Messaging (FCM) e o Apple Push Notification Services (APNS).
+1. <span class="af-ol-a"></span>A AppsFlyer envia uma solicitação de API diária para o Firebase Cloud Messaging (FCM) e o Apple Push Notification Services (APNS).
 2. Em seguida, o FCM e o APNS enviam uma notificação push silenciosa para verificar se um aplicativo ainda está instalado em um determinado dispositivo.
 3. Uma desinstalação é registrada se a resposta indicar que o aplicativo foi desinstalado (FCM e APNS) ou se não houver qualquer atividade do usuário nos últimos 270 dias (somente FCM).
 4. A AppsFlyer atribui a desinstalação à fonte de mídia que inicialmente atraiu o usuário.
