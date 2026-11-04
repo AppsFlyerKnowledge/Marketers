@@ -38,6 +38,10 @@ Los pasos necesarios para configurar un enlace se describen en detalle en la sec
 * Configuración de deep linking y redireccionamientos
 * Configuración de parámetros adicionales
 
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## Crear un enlace de OneLink
