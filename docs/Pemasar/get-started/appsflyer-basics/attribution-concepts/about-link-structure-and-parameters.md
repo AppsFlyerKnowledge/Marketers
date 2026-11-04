@@ -77,8 +77,8 @@ Tautan atribusi dibuat menggunakan **OneLink** atau **tautan platform tunggal**.
 | Informasi wajib | <ul><li>[Media Source](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[Kampanye](#c)</li><li>[ID Situs / ID Sub Situs](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | <ul><li>[Media Source](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[Kampanye](#c)</li><li>[ID Situs / ID Sub Situs](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> |
 | URL Dasar | `{subdomain}`.onelink.me | app.appsflyer.com |
 | Pengenal unik | ID Templat | app\_id |
-| Struktur URL | `https://{subdomain}.onelink.me/  <br />{templateid}?pid={media_source}  <br />&af_siteid={ApplicationID}  <br />&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
-| Contoh | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int  <br />&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&  <br />c=GreatCampaign&af_siteid=A1b1` |
+| Struktur URL | `https://{subdomain}.onelink.me/`<br />`{templateid}?pid={media_source}`<br />`&af_siteid={ApplicationID}`<br />`&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
+| Contoh | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int`<br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`<br />`c=GreatCampaign&af_siteid=A1b1` |
 
 <div id="attribution-link-parameters" />
 
