@@ -31,6 +31,8 @@ x-zendesk:
 
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 
+<div id="push-api" />
+
 ## API Push
 
 API Push truyền trực tiếp dữ liệu thô được tạo bởi quá trình phân bổ AppsFlyer và phân bổ SKAdNetwork (SKAN) dưới dạng thông báo tới máy chủ của bạn. Bạn có thể chọn loại và nội dung thông báo và đặt các điểm cuối đích.
@@ -50,9 +52,13 @@ Các loại thông báo có sẵn, tính cập nhật của dữ liệu và các
 | Nội dung thông báo (trường) | <ul><li>Thông báo có cấu trúc `key:value`.</li><li>Xem các trường <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">Push API</Anchor> phân bổ có sẵn của AppsFlyer.</li><li>Mỗi mã khóa đại diện cho một trường dữ liệu thô. Xem <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary#data-fields-dictionary">mô tả về các trường dữ liệu thô trong AppsFlyer</Anchor>.</li><li>Các mã khóa trống hoặc rỗng hoàn toàn sẽ không được gửi đi.</li><li>Ví dụ này chứa cả trường rỗng và trường trống. Các đăng lại thực không có trường trống hoặc rỗng. Ví dụ được cung cấp có định dạng JSON.<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | Định dạng của trường nhãn thời gian | <ul><li>Nhãn thời gian UTC: `yyyy-mm-dd hh:mm:ss.sss`. Ví dụ: hiển thị là`2019-09-17 00:09:00.123`. Một sự kiện diễn ra lúc 18:00 theo giờ Tokyo. Thời gian sự kiện được chuyển đổi thành UTC, tức là 09:00. Thời gian được ghi nhận là thời gian UTC.</li><li>Nhãn thời gian đã chọn của múi giờ (cụ thể cho ứng dụng): `yyyy-mm-dd hh:mm:ss.sss±th:tm`. Ví dụ: `2019-09-17 18:00:16.000+0900`. Một sự kiện diễn ra lúc 18:00 theo giờ Tokyo. Thời gian sự kiện hiển thị được ghi nhận là 18:00+09:00. 09:00 là múi giờ Tokyo.</li></ul> |
 
+<div id="available-message-types" />
+
 #### Các loại thông báo khả dụng
 
 <table><tbody><tr><th>Bối cảnh phân bổ</th><th>Loại thông báo</th><th>trường conversion_type</th><th>Trường campaign_type</th><th>Trường event_name</th><th>trường event_type</th></tr><tr><td>Thu hút người dùng</td><td>Lượt cài đặt\*</td><td><span>Cài đặt</span></td><td><p>Không tự nhiên: UA</p><p>Tự nhiên: organic</p></td><td><p>Cài đặt</p></td><td><ul><li><p>Cài đặt</p></li><li><p>organic-install</p></li></ul></td></tr><tr><td>Thu hút người dùng </td><td>Cài đặt các sự kiện trong ứng dụng</td><td><span>Cài đặt</span></td><td><p>Không tự nhiên: UA</p><p>Tự nhiên: organic</p></td><td><p>Tên sự kiện do nhà quảng cáo xác định</p></td><td><ul><li><p>install-in-app-event</p></li><li><p>organic-install-in-app-event</p></li></ul></td></tr><tr><td><p>Nhắm mục tiêu lại</p></td><td>Thu hút lại (Re-engagement) </td><td><span>Thu hút lại</span></td><td>nhắm mục tiêu lại</td><td>Thu hút lại</td><td><p>Thu hút lại</p></td></tr><tr><td>Tái xác định mục tiêu </td><td>Sự kiện trong ứng dụng tương tác lại (Re-engagement in-app events)</td><td>Thu hút lại</td><td>nhắm mục tiêu lại</td><td>Tên sự kiện do nhà quảng cáo xác định</td><td><p>re-engagement-in-app-event</p></td></tr><tr><td>Tái xác định mục tiêu </td><td>Tái phân bổ </td><td>cài đặt lại</td><td>nhắm mục tiêu lại</td><td>Ghi công lại</td><td><p>Ghi công lại</p></td></tr><tr><td>Thu hút người dùng </td><td>Lượt cài đặt lại</td><td>cài đặt lại</td><td><p>Không tự nhiên: UA</p><p>Tự nhiên: organic</p></td><td><p>cài đặt lại</p></td><td><ul><li><p>cài đặt lại</p></li><li><p>organic-reinstall</p></li></ul></td></tr><tr><td>Nhắm mục tiêu lại</td><td>Sự kiện trong ứng dụng phân bổ lại</td><td>cài đặt lại</td><td>nhắm mục tiêu lại</td><td>Tên sự kiện do nhà quảng cáo xác định</td><td><p>re-attribution-in-app-event</p></td></tr><tr><td colspan="6">\* Một số lượt cài đặt liên quan đến phân bổ lượt xem hết được phân bổ cho <a href="./about-raw-data-identifier-restrictions" target="_blank">nguồn truyền thông bị hạn chế.</a> </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### Các trường duy nhất
 
@@ -76,6 +82,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 | Độ mới của dữ liệu | <ul><li>Lượt cài đặt, lượt tải xuống lại và sự kiện trong ứng dụng:<ul><li>Xử lý hàng ngày</li><li>Được gửi tới điểm cuối của bạn vào ngày sau khi AppsFlyer nhận được đăng lại iOS</li><li>Dự kiến nhận được thông báo sự kiện từ 05:00–08:00 UTC (thời gian chính xác có thể thay đổi)</li><li>Ví dụ: Các đăng lại nhận được vào Thứ Hai được bắt đầu gửi từ Thứ Ba 05:00 UTC</li></ul></li><li>Đăng lại từ iOS và bản sao Đăng lại: Thông báo được gửi ngay sau khi chúng đến AppsFlyer</li></ul> |
 | Ví dụ về thông báo | Bảng tính chứa các ví dụ về thông báo. Ví dụ cung cấp có định dạng JSON. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">Thông báo ví dụ SKAN</Anchor>. |
 
+<div id="message-types-for-skan-attribution" />
+
 #### Các loại thông báo cho phân bổ SKAN
 
 | Loại thông báo | Trường event\_name | Trường skad\_redownload | trường event\_type |
@@ -94,7 +102,11 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Thiết lập điểm cuối API Push
+
+<div id="caution" />
 
 > ❗️ **Chú ý**
 >
@@ -108,6 +120,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 
 Để thiết lập API Push, hãy hoàn thành danh sách hành động sau.
 
+<div id="push-api-setup-checklist" />
+
 #### Danh sách kiểm tra thiết lập API Push
 
 <table><tbody><tr><th>Số bước </th><th>Phân bổ AppsFlyer</th><th>Phân bổ SKAdNetwork </th></tr><tr><td>1</td><td colspan="2"><p>Nếu đã có một điểm cuối API Push đang hoạt động, bạn có thể bỏ qua bước này. </p><p>Hoàn thành các <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">yêu cầu phía máy chủ</a>.</p></td></tr><tr><td>2</td><td><p>Đối với phân bổ AppsFlyer, hãy lập kế hoạch cài đặt điểm cuối bằng cách sử dụng <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">danh sách kiểm tra lập kế hoạch API Push.</a></p></td><td><p>Không áp dụng</p></td></tr><tr><td>3</td><td><p><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Thiết lập điểm cuối phân bổ AppsFlyer</a></p></td><td><p><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Thiết lập điểm cuối phân bổ SKAdNetwork</a></p></td></tr></tbody></table>
@@ -117,6 +131,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 <Accordion title="Yêu cầu phía máy chủ (máy chủ của bạn)">
 
 Đảm bảo rằng máy chủ của bạn tuân thủ các yêu cầu sau:
+
+<div id="server-side-requirements" />
 
 #### Yêu cầu phía máy chủ
 
@@ -139,6 +155,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 **Điểm cuối**
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+
+<div id="endpoint-planning-table" />
 
 #### Bảng kế hoạch điểm cuối
 
@@ -211,6 +229,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## Các quy trình bổ sung—quản lý điểm cuối
 
 <div id="change-an-endpoint" />
@@ -242,6 +262,8 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
     Điểm cuối đã bị xóa.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Khắc phục sự cố, đặc điểm và hạn chế
 
@@ -315,6 +337,8 @@ Bạn có đang sử dụng Amazon CloudFront làm điểm cuối của mình kh
 | <span id="account-owneruser-access"></span>Quyền truy cập của chủ sở hữu tài khoản/người dùng | Chỉ **chủ sở hữu tài khoản** AppsFlyer mới có thể thực hiện thay đổi đối với các tùy chọn cài đặt API Push.<ul><li>Mỗi tài khoản AppsFlyer **chỉ có một** chủ sở hữu tài khoản. Đây là người dùng AppsFlyer đầu tiên (được tạo vào thời điểm tài khoản được mở).</li></ul>Những người dùng tài khoản khác có thể xem các tùy chọn cài đặt API Push nhưng không thể thay đổi. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

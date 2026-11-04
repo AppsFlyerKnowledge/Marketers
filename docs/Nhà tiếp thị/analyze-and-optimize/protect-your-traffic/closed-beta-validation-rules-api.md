@@ -25,9 +25,13 @@ x-zendesk:
 
 > **At a glance:** Automate the creation and management of Validation Rules at scale. The Validation Rules API lets technical teams programmatically create, update, patch, and delete rules, going beyond the UI's value limits and cutting out manual rule management overhead.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The Validation Rules API is available to Protect360 customers. It's currently in closed beta, and access is limited and enabled per account. Contact your Customer Success Manager (CSM) to request access.
+
+<div id="about-the-validation-rules-api" />
 
 ## About the Validation Rules API
 
@@ -62,6 +66,8 @@ The Validation Rules API is available to Protect360 customers. It's currently in
 
 </Accordion>
 
+<div id="how-it-works" />
+
 ## How it works
 
 <Accordion title="Authenticate">
@@ -71,6 +77,8 @@ The API uses Bearer token (JWT) authentication.
 1. In your AppsFlyer account, go to **Security Center** > **API tokens**.
 2. Generate a token.
 3. Include the token in the **Authorization** header of your API requests.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -93,6 +101,8 @@ The API uses Bearer token (JWT) authentication.
 The patch endpoint is especially useful for high-frequency updates. You update only what changed, not the entire rule. This works well for workflows like daily fraud-source blocklist updates.
 
 </Accordion>
+
+<div id="scope-and-supported-configurations" />
 
 ## Scope and supported configurations
 
@@ -157,6 +167,8 @@ For full technical details, including endpoint references, request and response 
 
 </Accordion>
 
+<div id="faq" />
+
 ## FAQ
 
 <Accordion title="Who can use the Validation Rules API?">
@@ -212,6 +224,8 @@ No. Only AND logic is supported between dimensions.
 Install events only. In-app events aren't supported in this version.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **See also**
 >

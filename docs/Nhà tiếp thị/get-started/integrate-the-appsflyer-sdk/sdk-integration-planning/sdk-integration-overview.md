@@ -36,6 +36,8 @@ Xem video này để có được bức tranh tổng thể về tích hợp SDK.
 
 <Embed title="Tổng quan về tích hợp SDK" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/4iybquc6q3" providerUrl="https://fast.wistia.com" />
 
+<div id="about-the-sdk" />
+
 ## Giới thiệu về SDK
 
 SDK cung cấp chức năng cài đặt ứng dụng và ghi nhận sự kiện. Bạn có thể ghi nhận số lượt cài đặt, phiên và sự kiện trong ứng dụng. Các sự kiện trong ứng dụng bao gồm, ví dụ, mua hàng trong ứng dụng hoặc lên cấp trong trò chơi. Việc ghi nhận những sự kiện này có thể giúp bạn đánh giá ROI và chất lượng người dùng. 
@@ -79,6 +81,8 @@ Tài liệu bổ sung bao gồm những phần sau:
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## Khả năng tương thích của SDK
 
 SDK của AppsFlyer tương thích với các nền tảng sau:
@@ -110,13 +114,19 @@ Kể từ SDK V6.0.8, <Anchor target="_blank" href="/marketers/vi/docs/apple-app
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## Tích hợp SDK
 
 Quy trình cài đặt và tích hợp SDK yêu cầu người quản lý sản phẩm và nhà phát triển thiết bị di động phải làm việc cùng nhau.  **Trước khi** tích hợp SDK với ứng dụng của bạn, hãy xem lại tất cả các tác vụ tích hợp và xem xét các chức năng mà bạn muốn có trong ứng dụng của mình.
 
+<div id="sdk-planning-checklist" />
+
 ### Danh sách kiểm tra hoạt động lập kế hoạch SDK
 
 Để giúp bạn bắt đầu, chúng tôi đã soạn lập một <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">danh sách kiểm tra</Anchor> để hướng dẫn bạn trong quá trình lập kế hoạch. Đối với mỗi tác vụ, có các liên kết đến tài liệu dành cho nhà tiếp thị và nhà phát triển.
+
+<div id="sdk-integration-tasks" />
 
 ### Các tác vụ tích hợp SDK
 
@@ -139,6 +149,8 @@ Bạn có thể làm việc với đội ngũ phát triển ứng dụng thiết
 | Xác định <Anchor target="_blank" href="/marketers/vi/docs/additional-sdk-integration-guide#các-phiên">báo cáo phiên của người dùng</Anchor>. | 30 phút |
 | Xác định các phương thức phân bổ để sử dụng cho <Anchor target="_blank" href="/marketers/vi/docs/additional-sdk-integration-guide#truyền-thông-sở-hữu">các nguồn truyền thông sở hữu</Anchor>. | 1 giờ |
 | Quản lý các chính sách <Anchor target="_blank" href="/marketers/vi/docs/additional-sdk-integration-guide#quyền-riêng-tư-của-người-dùng">quyền riêng tư của người dùng</Anchor> để đảm bảo ứng dụng của bạn tuân thủ các quy định về quyền riêng tư (GDPR, CCPA). | 1 giờ |
+
+<div id="note" />
 
 > 📄 **Xem thêm**
 >

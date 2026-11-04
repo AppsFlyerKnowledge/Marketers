@@ -31,6 +31,8 @@ x-zendesk:
 
 SKAdNetwork (SKAN), một phần của Apple iOS, cho phép các nhà quảng cáo đo lường hiệu suất chiến dịch đồng thời bảo vệ quyền riêng tư của người dùng. SKAN hoạt động mà không cần đến IDFA hoặc ID quảng cáo khác. SKAN hoạt động mà không cần sự đồng ý về ATT.
 
+<div id="tip" />
+
 > 👍 **Mách nhỏ**
 >
 > * Bắt đầu từ iOS 15, chúng tôi đề nghị bạn nên gửi <Anchor target="_blank" href="/marketers/vi/docs/send-skan-and-adattributionkit-postback-copies-directly-to-appsflyer-ios-15">bản sao đăng lại SKAN</Anchor> tới AppsFlyer. Làm như vậy sẽ cho phép AppsFlyer xác minh rằng Giá trị chuyển đổi trong các bản đăng lại chưa bị thao túng.
@@ -65,6 +67,8 @@ Bài viết này mô tả các đặc điểm liên quan của cơ sở hạ t�
 
 </Accordion>
 
+<div id="appsflyer-skan-solution" />
+
 ## Giải pháp AppsFlyer SKAN
 
 AppsFlyer cung cấp kết quả phân bổ hợp nhất trên thiết bị iOS bằng các postback SKAN từ thiết bị iOS. Các bài đăng lại này được iOS gửi đến các mạng quảng cáo, các mạng này chuyển tiếp chúng đến AppsFlyer. Các postback này chứa hồ sơ phân bổ ẩn danh được bổ sung giá trị chuyển đổi (CV) do nhà quảng cáo đặt. CV là thước đo lường chất lượng người dùng trong cửa sổ sau cài đặt ban đầu.
@@ -77,6 +81,8 @@ Giải pháp SKAN của AppsFlyer cung cấp cho các nhà quảng cáo:
 <div id="principles-and-flow" />
 
 <Accordion title="Nguyên tắc và luồng phân bổ">
+
+<div id="skan-attribution-flow" />
 
 #### **Luồng phân bổ SKAN**
 
@@ -122,6 +128,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/vi/docs/skan-conversion-studi
 | Linh hoạt | <Anchor target="_blank" href="/marketers/vi/docs/skan-cv-decode-map-your-cv-to-events">Giải mã</Anchor> | <ul><li>Tạo CV của riêng bạn để ánh xạ sự kiện và tự đặt CV trong ứng dụng. Sử dụng tùy chọn này nếu bạn không thể tích hợp SDK AppsFlyer vào ứng dụng của mình. Để sử dụng Giải mã, hãy đi đến **SKAN Conversion Studio,** nhấp vào tùy chọn (⋮), chọn **Tải lên tệp tin ánh xạ giải mã tùy chỉnh**.</li><li>SKAN 4 không được hỗ trợ</li></ul> | 12-1512 giờ (63 ngày) |
 
 </Accordion>
+
+<div id="additional-skadnetwork-information" />
 
 ## Thông tin bổ sung về SKAdNetwork
 
@@ -222,6 +230,8 @@ Các chỉ số tự nhiên trong bảng điều khiển SKAdNetwork được t�
 
 </Accordion>
 
+<div id="skan-integrated-partners" />
+
 ## Đối tác tích hợp SKAN
 
 <div id="recording-ad-revenue" />
@@ -253,6 +263,8 @@ Lưu ý các tùy chọn và yêu cầu khác nhau trong bảng sau
 | <span id="inapp-event-mapping-verification"></span>Xác minh ánh xạ sự kiện trong ứng dụng | **<span id="1611499069.009700"></span>Hành động bắt buộc**: Bạn phải <Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-configuration#phương-thức-ánh-xạ">ánh xạ các sự kiện trong ứng dụng</Anchor> của mình với tên sự kiện đối tác tương ứng để đối tác ghi lại các bài đăng lại một cách chính xác.<br /><br />Đối với mỗi đối tác chạy chiến dịch SKAdNetwork, hãy xác minh rằng sự kiện trong ứng dụng được đặt theo loại đo lường ứng dụng đã chọn.<br /><br />**Để xác minh và thay đổi ánh xạ sự kiện trong ứng dụng của đối tác**:<ol><li>Trong AppsFlyer, đi đến **Configuration** > **Active Integrations**.</li><li>Chọn đối tác.</li><li>Đi tới tab **Integration** (Tích hợp).</li><li>Xác minh và nếu cần, thực hiện các thay đổi cài đặt như sau:<ol><li>Bật tùy chọn **In-app events postback (Đăng lại sự kiện trong ứng dụng)**.</li><li>Xác minh rằng các sự kiện trong ứng dụng, **tên sự kiện SDK** mà bạn đặt trong đo lường SKAdNetwork được ánh xạ tới **Mã định danh sự kiện của đối tác**.</li></ol></li><li>Nhấp vào **Save integration (Lưu tích hợp)**.</li></ol> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

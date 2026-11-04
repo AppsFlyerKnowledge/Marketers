@@ -31,6 +31,8 @@ x-zendesk:
 ---
 > **Khái quát:** Phân bổ ứng dụng của bạn trong nhiều cửa hàng Android và xem dữ liệu trong một bảng điều khiển ứng dụng duy nhất hoặc trong một bảng điều khiển ứng dụng cho mỗi cửa hàng.
 
+<div id="multi-store-android-attribution" />
+
 ## Phân bổ Android nhiều cửa hàng
 
 AppsFlyer phân bổ ứng dụng, không phân biệt cửa hàng ứng dụng. Điều này có nghĩa là cửa hàng Google Play và các cửa hàng ứng dụng Android của bên thứ ba như Amazon, Opera, GetJar, Baidu và Huawei. (Hay còn gọi là cửa hàng ngoài thị trường hoặc cửa hàng ứng dụng Android thay thế.) Chủ sở hữu ứng dụng, người tiếp thị ứng dụng qua nhiều cửa hàng, có thể chọn một **bảng điều khiển** **duy nhất** chứa dữ liệu của tất cả cửa hàng hoặc một **bảng điều khiển cho mỗi cửa hàng.**
@@ -42,12 +44,16 @@ AppsFlyer phân bổ ứng dụng, không phân biệt cửa hàng ứng dụng.
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
 
+<div id="single-dashboard-vs-dashboard-per-store" />
+
 ### Bảng điều khiển duy nhất so với bảng điều khiển cho mỗi cửa hàng
 
 * **Bảng điều khiển duy nhất:** Một bảng điều khiển kết hợp dữ liệu từ tất cả cửa hàng, bao gồm cả Cửa hàng Google Play
 * **Bảng điều khiển cho mỗi cửa hàng:** Nhiều bảng điều khiển—mỗi cửa hàng có bảng điều khiển riêng. Điều này có nghĩa là số lượng bảng điều khiển bằng số lượng cửa hàng cung cấp ứng dụng.
 
 <table><thead><tr><th> </th><th><p>Bảng điều khiển duy nhất<br/> [Phương pháp thực hành tốt nhất]</p></th><th> Bảng điều khiển cho mỗi cửa hàng</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>Tên gói Android</td><td colspan="2">Sử dụng cùng tên gói (giống hệt nhau) bất kể tùy chọn đã chọn là gì. </td></tr><tr><td><span id="channel-name"></span>Tên kênh</td><td>Không có gì để thiết lập</td><td><ul><li><span>Khi thêm Ứng dụng vào bảng điều khiển AppsFlyer bằng tùy chọn <strong>APK ngoài cửa hàng Android</strong>, hãy đặt kênh.</span></li><li><span>Kênh xác định cửa hàng. </span></li><li>Sự kết hợp giữa tên gói Android và kênh đặc biệt xác định mỗi bảng điều khiển AppsFlyer. </li><li>Ví dụ: Tên gói Android là com.abc.def và kênh là xyz_device_store. Mã định danh bảng điều khiển duy nhất là com.abc.def-xyz_device_store. </li><li>Nếu APK có cài đặt kênh nhưng không có ứng dụng nào có cài đặt này, lưu lượng truy cập được phân bổ cho ứng dụng mặc định, là ứng dụng có cài đặt kênh trống là Cửa hàng Google Play. </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>Điền trường install_app_store</td><td><ul><li>Xác định đặc biệt cửa hàng cung cấp ứng dụng bằng cách tải xuống.</li><li>Trong trường hợp đối với Google Play Store, đây sẽ để trống. </li><li>Tên cửa hàng được đặt trong <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">tệp tin kê khai/APK</a>.</li></ul></td><td><p>Không áp dụng</p></td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#quy-trình" target="_blank">Mẫu OneLink</a></td><td>Nên sử dụng phương thức này khi làm việc với OneLink. </td><td>Không áp dụng </td></tr><tr><td><span id="measurementattribution-links"></span>Đo lường/Đường dẫn phân bổ </td><td><ul><li>Liên kết là giống nhau bất kể là cửa hàng nào.</li><li>Để chuyển hướng đến đúng cửa hàng, hãy sử dụng <a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">af_r</a> để đặt URL chuyển hướng</li></ul></td><td><ul><li>Cần có một liên kết đặc biệt cho mỗi cửa hàng.</li><li>Tạo các đường dẫn này thông qua trang <strong>Active integrations</strong>.</li><li>ID ứng dụng là tên kênh được nối với tên gói android. Ví dụ: com.abc.def-def_store.<br/>Do đó các đường dẫn phân bổ sẽ khác nhau.</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>Tùy chọn báo cáo có sẵn có trường install_app_store</td><td><p>Các báo cáo Tổng quan, Nhóm người và dữ liệu thô đều chứa trường này. Liên hệ với CSM của bạn để yêu cầu thêm cờ tính năng SFDC cần thiết. </p></td><td>Không áp dụng </td></tr><tr><td><span id="considerations"></span><p>Những điều cần lưu ý</p></td><td><ul><li>Độ chính xác phân bổ: Các lượt cài đặt lại từ các cửa hàng khác nhau không dẫn đến số lượt cài đặt tăng đột biến. </li><li><span>Lượt cài đặt tự nhiên sẽ phản ánh các lượt cài đặt tự nhiên của APK từ tất cả các cửa hàng trong một bảng điều khiển.</span></li><li><span>Hiện tại, các tùy chọn báo cáo được tách theo từng cửa hàng bị giới hạn chỉ có báo cáo Tổng quan, Nhóm người và dữ liệu thô.</span></li></ul></td><td><ul><li>Độ chính xác phân bổ: Các lượt cài đặt lại cũng được tính, dẫn đến phân bổ kém chính xác hơn.</li><li> <span>Xem </span>dữ liệu lượt cài đặt <span>tự nhiên</span><span> và </span><span>không tự nhiên</span><span> và sự kiện trong ứng dụng cho mỗi cửa hàng (kênh) trên bảng điều khiển ứng dụng riêng trong AppsFlyer.</span> </li><li><span>Sử dụng Nhóm người để hiển thị các báo cáo kết hợp của tất cả các cửa hàng</span></li><li>Đảm bảo rằng các đối tác mà bạn hợp tác <strong>đang hoạt động</strong> (bật tính năng <a href="./partner-activation-deactivation" target="_blank">Activate partner</a>) trên <strong>mọi</strong> bảng điều khiển. Điều này <span>nhằm tránh tình trạng không nhất quán (xuất hiện phổ biến hơn khi so sánh dữ liệu với SRN).</span><span></span> </li></ul></td></tr></tbody></table>
+
+<div id="set-up-tasks" />
 
 ## Công việc thiết lập
 
@@ -71,6 +77,8 @@ Công việc
 | 2 | Nhà tiếp thị | Không yêu cầu hành động. Giả định ứng dụng đã hoạt động trong AppsFlyer. | [Thêm ứng dụng](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) trong AppsFlyer. |
 | 3 | Nhà tiếp thị | [Chuẩn bị đường dẫn phân bổ](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | Chuẩn bị đường dẫn phân bổ kèm theo ID ứng dụng đã kết hợp với tên kênh. Thực hiện điều này thông qua trang **Active integrations** như thông thường. |
 | 4 | Nhà phát triển và nhà tiếp thị | [Thử nghiệm](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [Thử nghiệm](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## Quy trình
 
@@ -177,6 +185,8 @@ Thêm bảng điều khiển (ứng dụng) được xác định bằng cách k
 
 <Accordion title="Thử nghiệm—cả hai tùy chọn bảng điều khiển">
 
+<div id="non-organic-installs" />
+
 #### **Các lượt Cài đặt không tự nhiên**
 
 **Để thử nghiệm lượt cài đặt không tự nhiên:**
@@ -196,6 +206,8 @@ Thêm bảng điều khiển (ứng dụng) được xác định bằng cách k
 | --- | --- |
 | <ol><li>Kiểm tra báo cáo dữ liệu thô cho cài đặt của ứng dụng của bạn trong trang Xuất Dữ liệu.</li><li>Bạn sẽ thấy một lượt chuyển đổi cài đặt với nguồn truyền thông thử nghiệm. Trong cột có tiêu đề **Install App Store** (Cài đặt Cửa hàng Ứng dụng), bạn sẽ thấy tên của cửa hàng như tên xuất hiện ở tệp tin manifest.xml.</li><li>Bạn cũng có thể thấy thông số "af\_installstore": "STORE\_NAME" trong nhật ký cài đặt.</li></ol> | <ol><li>Đi đến ứng dụng cần thiết cho mỗi bảng điều khiển cửa hàng.</li><li>Kiểm tra báo cáo dữ liệu thô cho cài đặt của ứng dụng của bạn trong trang Xuất Dữ liệu hoặc xem trang tổng quan của ứng dụng.</li><li>Bạn sẽ thấy một lượt chuyển đổi cài đặt với nguồn truyền thông "thử nghiệm".</li></ol> |
 
+<div id="organic-installs" />
+
 #### **Lượt cài đặt tự nhiên**
 
 **Để thử nghiệm lượt cài đặt tự nhiên:**
@@ -204,6 +216,8 @@ Thêm bảng điều khiển (ứng dụng) được xác định bằng cách k
 2. Cài đặt ứng dụng phiên bản beta được cập nhật có nhúng SDK phân bổ của AppsFlyer và khởi chạy nó.
 3. Kiểm tra kết quả:
 
+<div id="expected-results" />
+
 #### Kết quả mong đợi
 
 | Bảng điều khiển duy nhất | Bảng điều khiển cho mỗi cửa hàng |
@@ -211,6 +225,8 @@ Thêm bảng điều khiển (ứng dụng) được xác định bằng cách k
 | Kiểm tra trang tổng quan của ứng dụng của bạn xem có lượt cài đặt tự nhiên mới không (trong nguồn truyền thông "organic"). Hiện tại, với phương thức ứng dụng duy nhất, không có dấu hiệu nào cho thấy nguồn gốc của cài đặt tự nhiên. | <ol><li>Chuyển đến bảng điều khiển và trang tổng quan của ứng dụng dành riêng cho cửa hàng được thử nghiệm.</li><li>Bạn sẽ thấy một lượt chuyển đổi cài đặt trong phần nguồn truyền thông "tự nhiên".</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## Tính năng bổ sung
 
@@ -276,6 +292,8 @@ Cửa hàng Android bên thứ ba có tích hợp phân bổ người giới thi
 <div id="troubleshooting" />
 
 <Accordion title="Xử lý sự cố">
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### Các lượt cài đặt được phân bổ cho ứng dụng mặc định
 

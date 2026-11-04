@@ -25,6 +25,8 @@ x-zendesk:
 
 Để cấu hình chiến dịch của bạn với Unity Ads, hãy thực hiện theo các bước dưới đây.
 
+<div id="setting-up-unity-ads" />
+
 ## Thiết lập Unity Ads
 
 Quá trình thiết lập được thực hiện từ trang **Tích hợp hoạt động** (Active Integrations),nhưng để tìm đối tác, trước tiên bạn phải truy cập vào <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations">thị trường</Anchor> (marketplace).
@@ -55,10 +57,14 @@ Cửa sổ cấu hình của Unity Ads bao gồm 5 thẻ: Tích hợp (Integrati
 
 <Accordion title="Thẻ Integration">
 
+<div id="activate-partners" />
+
 ### Kích hoạt đối tác
 
 Trong lần truy cập đầu tiên, bạn sẽ cần bật nút chuyển đổi **Kích hoạt đối tác** (Activate partner) để thiết lập tích hợp. Nút chuyển đổi phải giữ bật chừng nào bạn còn làm việc với đối tác.  
 Để biết thêm chi tiết về kích hoạt đối tác, vui lòng nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">đây</Anchor>.
+
+<div id="general-settings" />
 
 ### Cài đặt chung
 
@@ -82,6 +88,8 @@ Bật tùy chọn này để phân bổ lượt cài đặt qua lượt xem từ
 
 ![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
 
+<div id="default-postbacks" />
+
 ### Các bài đăng lại mặc định
 
 ![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
@@ -91,15 +99,21 @@ Gửi postback tự động đến Unity Ads sau lượt cài đặt và tái t�
 * **Chỉ đối tác này** (This partner only): chỉ dành cho các sự kiện đến từ người dùng được phân bổ đến Unity Ads.
 * **Tất cả các nguồn truyền thông, bao gồm cả các nguồn tự nhiên** (All media sources including organic): để toàn bộ cơ sở người dùng của bạn được báo cáo cho Unity Ads.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Là một mạng cho tất cả các lượt cài đặt, Unity Ads ưu tiên nhận postback cho tất cả lượt cài đặt mới ứng dụng của bạn từ bất kỳ nguồn nào và họ khuyến khích chọn **Tất cả các nguồn truyền thông, bao gồm cả các nguồn tự nhiên** (All media sources including organic) để gửi mọi postback lượt cài đặt đến Unity Ads.
+
+<div id="in-app-events-settings" />
 
 ### Thiết lập Sự kiện trong Ứng dụng
 
 Ánh xạ các sự kiện AppsFlyer với đối tác qua các đăng lại. Nếu bật tính năng gửi đăng lại, điều này bao gồm các sự kiện trong ứng dụng bị từ chối (các sự kiện bị Protect360 chặn hoặc các sự kiện bị phát hiện là không tuân thủ theo quy tắc xác thực mục tiêu).
 
 [![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### Để cấu hình postback sự kiện trong ứng dụng
 
@@ -116,9 +130,13 @@ Gửi postback tự động đến Unity Ads sau lượt cài đặt và tái t�
 | **for users from** | Chọn tùy chọn gửi cho sự kiện:<ul><li>**This partner only**: chỉ gửi đăng lại khi sự kiện này được phân bổ cho đối tác này.</li><li>**Tất cả các nguồn truyền thông bao gồm cả các nguồn tự nhiên (All media sources, including organic)**: gửi postback cho các sự kiện được phân bổ cho bất cứ đối tác cũng như các sự kiện tự nhiên. Theo Unity Ads, nên sử dụng tùy chọn này.</li></ul> |
 | **bao gồm** | <ul><li>**Không có dữ liệu (mặc định) (No data (default))**: chỉ gửi sự kiện mà không gửi giá trị sự kiện.</li><li>**Giá trị và doanh thu (Values and revenue)**: gửi tất cả các thông số sự kiện, **bao gồm** giá trị doanh thu (nếu có trong sự kiện). Theo Unity Ads, nên sử dụng tùy chọn này.</li><li>**Giá trị không có doanh thu (Values without revenue)**: gửi tất cả các thông số, **ngoại trừ** giá trị doanh thu.</li></ul> |
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > Chọn sự kiện SDK/máy chủ đến máy chủ chính xác và mã định danh sự kiện đối tác tương ứng. Không được sao chép các sự kiện (không được chuyển cùng các sự kiện theo các tên sự kiện SDK/máy chủ đến máy chủ khác nhau).
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >

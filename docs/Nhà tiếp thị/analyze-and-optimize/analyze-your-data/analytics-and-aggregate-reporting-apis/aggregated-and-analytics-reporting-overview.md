@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Khái quát:** Mô tả và so sánh các báo cáo phân bổ hợp nhất và phân tích, các công cụ và API có sẵn.
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## Báo cáo hiệu suất hợp nhất và phân tích—các công cụ và báo cáo
 
 Các công cụ phân tích hợp nhất trong nền tảng này cung cấp cho nhà quảng cáo các số liệu để họ có thể đánh giá hiệu suất của các ứng dụng, chiến dịch và người dùng của họ.
@@ -91,6 +93,8 @@ Cohort có sẵn một số *biến thể* khác nhau bao gồm <Anchor target="
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### Báo cáo hành trình của người dùng
 
 * Báo cáo được mô tả có sẵn thông qua trang Xuất dữ liệu hoặc bằng cách sử dụng API Pull hợp nhất.
@@ -107,9 +111,13 @@ Cohort có sẵn một số *biến thể* khác nhau bao gồm <Anchor target="
 
 Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-tháng-ngày). Khi bạn mở tệp tin CSV trong Excel, các trường ngày được định dạng bằng cách sử dụng cài đặt ngày và giờ của máy tính của bạn. Hãy nhớ chọn cách hiển thị ngày thích hợp trong <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel.</Anchor>
 
+<div id="examples-of-aggregate-reports" />
+
 #### Ví dụ về báo cáo hợp nhất
 
 [Các ví dụ về báo cáo có trong bảng tính](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### Các trường trong báo cáo hợp nhất UA
 
@@ -125,6 +133,8 @@ Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-th�
 * Trong báo cáo nhắm mục tiêu lại, không có sự phân biệt giữa người dùng tự nhiên và người dùng không tự nhiên.
 * Để nhận báo cáo nhắm mục tiêu lại qua API Pull, hãy thêm thông số *& reattr=true* vào URI báo cáo hiệu suất.
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### Báo cáo hợp nhất nhắm mục tiêu lại LTV
 
 | Tên báo cáo | Được nhóm theo |
@@ -134,6 +144,8 @@ Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-th�
 | Hoạt động theo ngày | Ngày, đại lý, nguồn truyền thông, chiến dịch |
 | Quốc gia | Quốc gia, đại lý, nguồn truyền thông, chiến dịch |
 | Quốc gia theo ngày | Ngày, quốc gia, đại lý, nguồn truyền thông, chiến dịch |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### Báo cáo hợp nhất nhắm mục tiêu lại LTV
 
@@ -159,6 +171,8 @@ Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-th�
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## Báo cáo tính năng
 
 <div id="skadnetwork" />
@@ -179,6 +193,8 @@ Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-th�
 * Các báo cáo có sẵn thông qua API Pull. Các báo cáo này không có sẵn trên trang Export Data.
 * Phạm vi ngày liên quan đến ngày cài đặt.
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Báo cáo Protect360 hợp nhất có sẵn thông qua API Pull
 
 | Tên báo cáo |
@@ -192,6 +208,8 @@ Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-th�
 **Hạn chế:** Lý do chặn mà **Bot** hiển thị ngay cả trong trường hợp lý do là **phiên bản ứng dụng** hoặc **thiếu customer user id**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

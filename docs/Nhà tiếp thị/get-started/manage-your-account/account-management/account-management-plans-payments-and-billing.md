@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về các gói AppsFlyer và các tính năng của phần bổ trợ cao cấp. Xem cách tính toán việc sử dụng gói và hóa đơn. Quản lý tài khoản của bạn.
 
+<div id="appsflyer-plans-and-usage" />
+
 ## Các gói và cách sử dụng của AppsFlyer
 
 <div id="appsflyer-plans" />
@@ -57,15 +59,19 @@ Tìm hiểu thêm về tất cả các tính năng tích hợp và <Anchor targe
 
 Khoản thanh toán cho gói của bạn được tính theo **mức độ sử dụng gói** và **các tính năng cao cấp** của bạn.
 
+<div id="plan-usage" />
+
 #### Mức độ sử dụng gói
 
 Mỗi gói được dựa trên việc đo lường một [đơn vị cụ thể](/docs/account-management-plans-payments-and-billing#đơn-vị-gói). Mức độ sử dụng đơn vị được tính hàng tháng hoặc hàng năm. Số lượng đơn vị được sử dụng trong chu kỳ gói (theo tháng hoặc năm) được trừ vào tổng đơn vị gói.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
 > Bạn có thể [tải xuống các báo cáo mức độ sử dụng](/docs/account-management-plans-payments-and-billing#tải-xuống-báo-cáo-mức-sử-dụng) để biết chi tiết về mức độ sử dụng đơn vị của mình.
 
-<span id="premium-features"></span>**Vượt quá mức độ sử dụng gói**
+<span id="zd-premium-features"></span><span id="premium-features"></span>**Vượt quá mức độ sử dụng gói**
 
 Khi vượt quá số lượng đơn vị trong chu kỳ gói của bạn, chi phí bổ sung sẽ được áp dụng. Bạn có thể xem tất cả các chi phí trong phần [**Thông tin gói**](/docs/account-management-plans-payments-and-billing#details). Để giúp ngăn chặn việc vượt quá mức độ sử dụng gói hoặc giảm chi phí bổ sung, các cảnh báo được gửi qua trung tâm thông báo trong các trường hợp sau:
 
@@ -87,6 +93,8 @@ Bất kỳ [phần mở rộng](/docs/account-management-plans-payments-and-bill
 
 Để tìm hiểu thêm về các phần bổ trợ này và những lợi ích tiềm năng đối với doanh nghiệp của bạn, hãy kiểm tra với CSM của bạn hoặc liên hệ qua địa chỉ [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
+<div id="plan-units" />
+
 #### Đơn vị gói
 
 Các đơn vị khác nhau có thể làm cơ sở cho gói:
@@ -100,6 +108,8 @@ Các đơn vị khác nhau có thể làm cơ sở cho gói:
 | Sự kiện trong ứng dụng | Bất kỳ hành động nào do người dùng thực hiện trong ứng dụng của bạn sau khi cài đặt. Ví dụ như đăng nhập, hoàn tất hướng dẫn, mua hàng và đạt được cấp độ trò chơi. | <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor> |
 | Chuyển đổi web không trực tiếp  <br />(đối với gói PBA) | Bất kỳ hành động nào của người dùng trên trang web của bạn:<ul><li>Bạn đã xác định đây là một lượt chuyển đổi</li><li>Lượt chuyển đổi được phân bổ dưới dạng một lượt truy cập được giới thiệu (bắt nguồn từ một chiến dịch web)</li></ul> | <Anchor target="_blank" href="/marketers/vi/docs/people-based-attribution-pba-overview">Phân bổ trên Cơ sở Người dùng (PBA)</Anchor> |
 
+<div id="premium-add-on-units" />
+
 #### Đơn vị phần phụ trợ cao cấp
 
 Các đơn vị có thể làm cơ sở cho phần phụ trợ được đo lường bổ sung:
@@ -107,6 +117,8 @@ Các đơn vị có thể làm cơ sở cho phần phụ trợ được đo lư�
 | Đơn vị | Mô tả | Tìm hiểu thêm |
 | --- | --- | --- |
 | Đơn vị đô la của ROI360 | Đơn vị đô la được ghi nhận của chi phí quảng cáo, doanh thu quảng cáo trong ứng dụng và doanh thu mua hàng trong ứng dụng (bao gồm cả các gói đăng ký), được đo lường bằng phần bổ trợ ROI360. Mỗi đơn vị đại diện cho 1 đô la trong phép đo ROI360 được ghi nhận. | <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-cost-and-revenue-data">ROI360—dữ liệu chi phí và doanh thu</Anchor> |
+
+<div id="roi360-dollar-units" />
 
 #### Đơn vị đô la của ROI360
 
@@ -124,6 +136,8 @@ Phần bổ trợ ROI360 đo lường lợi tức đầu tư của hoạt độn
 
 </Accordion>
 
+<div id="account-page" />
+
 ## Trang quản lý tài khoản
 
 Trang này bao gồm 3 thẻ: **My plan**, **Payment and invoices** và **Billing details**. Từ đây bạn có thể:
@@ -132,6 +146,8 @@ Trang này bao gồm 3 thẻ: **My plan**, **Payment and invoices** và **Billin
 * Nâng cấp gói của bạn
 * Xem và tải xuống hóa đơn và báo cáo
 * Cập nhật thông tin liên hệ và thanh toán của bạn
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >
@@ -156,6 +172,8 @@ Từ thẻ **My plan**, bạn có thể xem thông tin chi tiết về gói hi�
 | <span id="usage"></span>**Mức độ sử dụng gói** | Hiển thị mức độ sử dụng [đơn vị](/docs/account-management-plans-payments-and-billing#đơn-vị-gói) trong gói của bạn, kể từ lần cập nhật cuối cùng (giờ UTC). Bạn có thể xem và [tải xuống các báo cáo mức độ sử dụng](/docs/account-management-plans-payments-and-billing#tải-xuống-báo-cáo-mức-sử-dụng) để nhận dữ liệu hợp nhất về mức độ sử dụng đơn vị.  <br />**Lưu ý:** [Khoản thanh toán hóa đơn](/docs/account-management-plans-payments-and-billing#payments-and-invoices) của bạn phụ thuộc vào số lượng đơn vị được sử dụng và các phần bổ trợ có trong [gói của bạn](/docs/account-management-plans-payments-and-billing#appsflyer-plans). |
 | <span id="addons"></span>**Phần bổ trợ** | Các phần bổ trợ có trong gói của bạn và ngày bắt đầu/kết thúc của các phần bổ trợ đó. Đây là những tính năng cao cấp, ví dụ:<ul><li><Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Chống gian lận trên di động</li><li><Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Dữ liệu chi phí</li><li><Anchor target="_blank" href="/marketers/vi/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/vi/docs/pivot-table-user-metrics">Bảng Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/vi/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>Để tìm hiểu thêm về các tính năng này và những lợi ích tiềm năng của chúng đối với doanh nghiệp của bạn, hãy kiểm tra với CSM của bạn hoặc liên hệ theo địa chỉ [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Gói trong tương lai** | Phần này chỉ xuất hiện khi bạn đã mua một gói trong tương lai. Nếu đúng như vậy, bạn sẽ thấy thông tin chi tiết về gói tiếp theo của mình tại đây. |
+
+<div id="usage-report" />
 
 ### Báo cáo mức sử dụng
 
@@ -185,6 +203,8 @@ Báo cáo mức độ sử dụng hiển thị các lượt chuyển đổi hợ
 | <span id="conversion-type"></span>**Loại chuyển đổi** | Loại lượt chuyển đổi được phân bổ. Các giá trị [đơn vị](/docs/account-management-plans-payments-and-billing#đơn-vị-gói) có thể có bao gồm:<ul><li>Các lượt cài đặt không tự nhiên (NOI)</li><li>Tương tác lại</li><li>Phân bổ lại</li><li>Số người dùng hoạt động hàng tháng (MAU)</li><li>Sự kiện trong ứng dụng</li><li>Chuyển đổi web không trực tiếp</li></ul>Trường **Loại chuyển đổi** không được điền cho chuyển đổi **Protect360 - hậu phân bổ**. |
 | <span id="total-conversions"></span>**Tổng lượt chuyển đổi** | Tổng số lượng đơn vị bị tính phí.<ul><li>**Protect360 - post attribution** Các lượt chuyển đổi luôn mang giá trị **âm** vì chúng đảo ngược các lượt chuyển đổi bị tính phí được xác định là gian lận.</li><li>Để biết thêm thông tin về cách tính lượt chuyển đổi trên ứng dụng iOS, hãy xem [Thanh toán cho ứng dụng iOS](/docs/account-management-plans-payments-and-billing#tùy-chọn-đo-lường-lượt-chuyển-đổi-đối-với-thanh-toán-qua-ứng-dụng-ios) (ở trên).</li></ul> |
 
+<div id="download-a-usage-report" />
+
 #### Tải xuống báo cáo mức sử dụng
 
 Chỉ quản trị viên tài khoản và người dùng tài khoản có các quyền sau mới có thể tải xuống báo cáo mức độ sử dụng:
@@ -207,11 +227,15 @@ Chỉ quản trị viên tài khoản và người dùng tài khoản có các q
 > * Sau khi báo cáo có sẵn để tải xuống, trạng thái này được duy trì trong 24 tháng kể từ sau tháng báo cáo. Bạn không cần yêu cầu báo cáo lại.
 > * Nếu trạng thái của báo cáo bạn muốn tải xuống hiển thị dưới bất kỳ hình thức nào khác ngoài **Request report**, thì có nghĩa là ai đó trong tổ chức của bạn đã yêu cầu báo cáo đó.
 
+<div id="account-status" />
+
 ### Trạng thái tài khoản
 
 Trạng thái tài khoản của bạn được hiển thị ở trên cùng bên trái của trang Account management. Các trạng thái có thể có là:
 
 <table><thead><tr><th>Trạng thái tài khoản</th><th>Mô tả</th><th>Nhận xét</th></tr></thead><tbody><tr><td rowspan="2">Tài khoản đang hoạt động</td><td>Tất cả các gói <strong>Welcome</strong> và <strong>Zero</strong> </td><td>Không yêu cầu phương thức thanh toán</td></tr><tr><td> Gói <strong>Growth</strong> và <strong>Enterprise</strong> với phương thức thanh toán hợp lệ và không có hóa đơn quá hạn</td><td> </td></tr><tr><td>Pending suspension (Đang xử lý tạm dừng)</td><td><p>Một tài khoản có một hoặc nhiều hóa đơn quá hạn. Sau 30 ngày hóa đơn vẫn chưa được thanh toán, tài khoản sẽ bị tạm ngừng hoạt động.</p></td><td><p>Bạn có thể kích hoạt lại trạng thái Hoạt động bằng cách <a href="./account-management-plans-payments-and-billing#thanh-toán-hóa-đơn-quá-hạn">thanh toán hóa đơn</a></p></td></tr><tr><td>Suspended (Đã tạm dừng)</td><td>Tài khoản có hóa đơn quá hạn trên 30 ngày.</td><td>Bạn không có quyền truy cập vào tài khoản của mình ngoại trừ phần thanh toán.<br/>Bạn có thể lấy lại quyền truy cập và kích hoạt lại trạng thái Hoạt động bằng cách thanh toán hóa đơn </td></tr></tbody></table>
+
+<div id="upgrade-downgrade-or-delete-an-account" />
 
 #### Nâng cấp, hạ cấp hoặc xóa tài khoản
 
@@ -231,9 +255,13 @@ Bạn có thể yêu cầu nâng cấp tài khoản trực tiếp thông qua nú
 * Tải xuống hóa đơn (PDF)
 * Cập nhật phương thức thanh toán cho gói **Growth** và **Enterprise** tùy chỉnh: Chuyển khoản ngân hàng hoặc thẻ tín dụng
 
+<div id="note-5" />
+
 > 📘 **Lưu ý**
 >
 > Thẻ **Payments and invoices** chỉ khả dụng cho các gói yêu cầu thanh toán (các gói khác ngoài gói [Welcome hoặc Zero](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
+
+<div id="payment-methods-easy--secure-invoicing" />
 
 ### Phương thức thanh toán
 
@@ -256,6 +284,8 @@ Trong phần này, bạn có thể thấy phương thức thanh toán đã chọ
    * **Đối với thanh toán bằng thẻ tín dụng:** Nhập thông tin chi tiết cần thiết và nhấp vào **Register Credit Card**.
    * **Đối với thanh toán bằng chuyển khoản ngân hàng:** Nhập thông tin thanh toán chi tiết và nhấp vào **Save.**
 
+<div id="invoices" />
+
 ### Hóa đơn
 
 Trong phần này, bạn có thể xem các hóa đơn đã thanh toán và chưa thanh toán, tải xuống và [thanh toán các hóa đơn quá hạn](/docs/account-management-plans-payments-and-billing#thanh-toán-hóa-đơn-quá-hạn). Bạn sẽ nhận được hóa đơn hàng tháng vào tuần đầu tiên của mỗi tháng.
@@ -269,6 +299,8 @@ Trong phần này, bạn có thể xem các hóa đơn đã thanh toán và chư
 | **Trạng thái** | **Paid**, **Due** hoặc **Overdue** |
 | **PDF** | Nhấp vào **View** để mở hóa đơn ở định dạng PDF |
 
+<div id="pay-overdue-invoices" />
+
 #### Thanh toán hóa đơn quá hạn
 
 Bất kể phương thức thanh toán thông thường của bạn là gì, bạn đều có thể thanh toán hóa đơn quá hạn bằng thẻ tín dụng **mà không** cần lưu thông tin chi tiết của thẻ tín dụng. Thanh toán cho các tài khoản có [trạng thái](/docs/account-management-plans-payments-and-billing#trạng-thái-tài-khoản) **Pending suspension** và **Suspended** sẽ kích hoạt lại trạng thái **Active**.
@@ -281,11 +313,15 @@ Bất kể phương thức thanh toán thông thường của bạn là gì, b�
 
 </Accordion>
 
+<div id="zd-billing-details" />
+
 <div id="billing-details" />
 
 <Accordion title="Thông tin thanh toán">
 
 Từ thẻ này, bạn có thể xem và cập nhật thông tin chi tiết về công ty và người liên hệ để thanh toán. [![billing_details_tab2.png](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)](https://files.readme.io/b1695dd5bdc0a593a2140aea99f727a6838aee7dfbe83504751b60addf7f62a8-36118432522129.png)
+
+<div id="company-billing-details" />
 
 ### Thông tin thanh toán của công ty
 
@@ -297,12 +333,16 @@ Khi chọn gói **Growth** hoặc **Enterprise** tùy chỉnh, bạn phải cung
 2. Đọc các điều khoản pháp lý, sau đó đánh dấu vào hộp kiểm nếu chấp nhận.
 3. Nhấp vào **Submit**. Hệ thống sẽ bật lên một thông báo nếu các thay đổi đã được lưu thành công.
 
+<div id="note-7" />
+
 > 📘 **Lưu ý**
 >
 > * Nếu bạn đổi địa chỉ hoặc tên công ty, thì các điều khoản pháp lý của AppsFlyer sẽ xuất hiện và bạn phải chấp nhận. Nếu có sự cố, vui lòng liên hệ qua địa chỉ [accounting@appsflyer.com](mailto:accounting@appsflyer.com).
 > * Nếu thông tin bị thiếu hoặc không hợp lệ, thông tin thanh toán chi tiết sẽ không được lưu. Ví dụ:
 >   * Nếu quốc gia của bạn yêu cầu [mã số thuế công ty](/docs/account-management-plans-payments-and-billing#mã-số-thuế-công-ty), thì mã số thuế đó phải được nhập theo đúng định dạng.
 >   * Mã bưu chính (mã ZIP) phải khớp với nơi được chọn.
+
+<div id="billing-contacts" />
 
 ### Người liên hệ thanh toán
 
@@ -313,6 +353,8 @@ Khi chọn gói **Growth** hoặc **Enterprise** tùy chỉnh, bạn phải cung
 1. Nhấp vào **Add contact** và nhập [các thông tin chi tiết cần thiết](/docs/account-management-plans-payments-and-billing#billing-details) hoặc thực hiện các thay đổi đối với liên hệ hiện tại.
 2. Nhấp vào **Save billing details**. Đảm bảo phải có ít nhất một liên hệ thanh toán.
 3. Hệ thống sẽ bật lên một thông báo nếu các thay đổi đã được lưu thành công.
+
+<div id="note-8" />
 
 > 📘 **Lưu ý**
 >
@@ -325,9 +367,13 @@ Khi chọn gói **Growth** hoặc **Enterprise** tùy chỉnh, bạn phải cung
 | Thông tin thanh toán của công ty | <ul><li>**Company billing name:** Được hệ thống tự động điền dựa trên thông tin trong mẫu đăng ký</li><li>**Company tax number:** Xem [thẻ sau](/docs/account-management-plans-payments-and-billing#mã-số-thuế-công-ty) để biết thêm chi tiết</li><li>**Company invoice name** (bằng tiếng Anh): Hiển thị trên hóa đơn</li><li>**Tiền tệ:** USD, ILS, EUR, hoặc GBP</li><li>**Street address:** Được hệ thống tự động điền dựa trên thông tin trong mẫu đăng ký:<ul><li>Địa chỉ đường</li><li>Thành phố (bằng tiếng Anh)</li><li>Mã bưu chính: Phải khớp với vị trí được chọn</li><li>Quốc gia: Chọn từ danh sách</li></ul></li><li>Nếu có liên quan, hãy thêm tiểu bang, tỉnh hoặc lãnh thổ</li><li>Nếu cần, hãy cập nhật thông tin thanh toán trong nền tảng hoặc liên hệ qua địa chỉ [accounting@appsflyer.com](mailto:accounting@appsflye.com)</li></ul> |
 | Liên hệ Thanh toán | Nhập thông tin chi tiết cần thiết của liên hệ:<ul><li>**Name:** Phải bằng tiếng Anh</li><li>**Email, Phone:** Bắt buộc có</li></ul> |
 
+<div id="company-tax-number" />
+
 ### Mã số thuế công ty
 
 Một số quốc gia nằm trong bảng bên dưới yêu cầu chúng tôi ghi lại mã số thuế công ty của bạn và thêm thuế GTGT vào hóa đơn của bạn. Nếu công ty của bạn thuộc một trong những quốc gia này, bạn phải cung cấp mã số thuế công ty theo đúng định dạng của quốc gia đó. Nếu không, thông tin thanh toán chi tiết của bạn sẽ không được lưu.
+
+<div id="countries-requiring-company-tax-number" />
 
 #### Các quốc gia yêu cầu mã số thuế của công ty
 
@@ -336,6 +382,8 @@ Một số quốc gia nằm trong bảng bên dưới yêu cầu chúng tôi ghi
 | Canada | <Anchor target="_blank" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/you-need-a-business-number-a-program-account.html">Số tài khoản chương trình GST/HST</Anchor> |
 | Các quốc gia Châu Âu | <Anchor target="_blank" href="https://ec.europa.eu/taxation_customs/vies/#/vat-validation">Hệ thống trao đổi thông tin VAT (VIES)</Anchor> |
 | Israel | <Anchor target="_blank" href="https://www.avalara.com/vatlive/en/country-guides/africa-and-middle-east/israel/israel-vat-registration.html">Đăng ký VAT của người Israel</Anchor> |
+
+<div id="conversion-measurement-options-for-ios-app-billing" />
 
 ### Tùy chọn đo lường lượt chuyển đổi đối với thanh toán qua ứng dụng iOS
 

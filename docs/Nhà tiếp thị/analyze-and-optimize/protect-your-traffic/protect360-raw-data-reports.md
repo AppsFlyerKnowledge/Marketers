@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Khái quát:** Báo cáo dữ liệu thô mô tả lượt cài đặt và các sự kiện trong ứng dụng bị chặn bởi công cụ Protect360, cũng như từ các Quy tắc Xác thực được thêm vào theo cách thủ công.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Giới thiệu về báo cáo dữ liệu thô của Protect360
 
 Báo cáo dữ liệu thô:
@@ -45,6 +47,8 @@ Báo cáo dữ liệu thô:
 <div id="report-types" />
 
 <Accordion title="Loại báo cáo">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Các loại báo cáo dữ liệu thô của Protect360
 
@@ -72,6 +76,8 @@ Báo cáo dữ liệu thô:
   * Giao diện người dùng bảng điều khiển: giới hạn ở một nguồn đa phương tiện trong một tháng.
   * Pull API (API kéo): chứa tất cả các nguồn đa phương tiện.  (Hạn chế: Chỉ dành cho chủ sở hữu ứng dụng)
 
+<div id="using-post-attribution-reports" />
+
 #### **Sử dụng báo cáo hậu phân bổ**
 
 * Chọn bất kỳ cài đặt/IAE kết hợp nào và dò phạm vi ngày nếu cần.
@@ -81,6 +87,8 @@ Báo cáo dữ liệu thô:
   * Đặt phạm vi ngày cài đặt thành 60 ngày trở về trước kể từ ngày hiện tại.
   * Đặt phạm vi ngày bắt đầu/ngày kết thúc thành ngày trước ngày hiện tại.  
     Điều này có nghĩa là bạn sẽ nhận được danh sách gian lận hậu phân bổ được phát hiện ngày hôm qua. Nếu bạn không kéo báo cáo trong vài ngày, hãy điều chỉnh phạm vi ngày phát hiện và kéo báo cáo.
+
+<div id="example" />
 
 > 📄 **Ví dụ:**
 >
@@ -94,11 +102,15 @@ Báo cáo dữ liệu thô:
 
 <Accordion title="Tính khả dụng của dữ liệu thô theo loại công cụ">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### Tính khả dụng của dữ liệu thô Protect 360 theo loại công cụ
 
 <table><thead><tr><th>Báo cáo</th><th>Độ mới của dữ liệu</th><th>API Pull</th><th>Trang Dữ liệu xuất</th><th>Hộp khóa dữ liệu</th></tr></thead><tbody><tr><td>Lượt cài đặt</td><td>Thời gian thực</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Các sự kiện trong ứng dụng bị chặn </td><td>Thời gian thực</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Lượt nhấp</td><td>Thời gian thực</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Postback lượt cài đặt bị chặn</td><td>Thời gian thực</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Lượt cài đặt hậu phân bổ</td><td><p>10:00 UTC hàng ngày</p></td><td><p><span>✓</span></p></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Sự kiện trong ứng dụng hậu phân bổ</td><td><p>10:00 UTC hàng ngày</p></td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr></tbody><tfoot><tr><td colspan="5"><p>\* Hạn chế đối với báo cáo qua Hộp khóa Dữ liệu:</p><ul><li>Tính minh bạch của đại lý không được hỗ trợ. Có nghĩa là lưu lượng truy cập do đại lý thúc đẩy không chứa tên của nguồn truyền thông gửi lượt cài đặt. </li><li>Báo cáo có một bộ các trường duy nhất liên quan đến các báo cáo Data Locker khác. Không thể thay đổi danh sách này. </li><li>Dữ liệu nhắm mục tiêu lại không có sẵn trong báo cáo Lượt cài đặt; chỉ trong báo cáo Lượt cài đặt hậu phân bổ. </li></ul></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## Nhận báo cáo dữ liệu thô
 
@@ -139,6 +151,8 @@ Bạn cần mã thông báo API Pull. Nhận token từ <Anchor target="_blank" 
 3. Điền các thông số theo yêu cầu. Bảng sau liệt kê các thông số.
 4. Kéo báo cáo.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Thông số báo cáo dữ liệu thô API Pull
 
 | Tham số | Mô tả | Định dạng | Bắt buộc |
@@ -166,11 +180,15 @@ Hộp khóa Dữ liệu ghi dữ liệu thô vào một bộ chứa S3 AWS.
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Cấu trúc báo cáo Protect360
 
 Báo cáo Protect360 có cùng cấu trúc giống như các trường báo cáo thu hút người dùng.
 
 Ngoài các <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary">trường báo cáo dữ liệu thô</Anchor> thông thường, báo cáo Protect360 cũng có các trường nhắm mục tiêu lại và lý do bị chặn, như sau:
+
+<div id="blocked-reasons" />
 
 ### Lý do bị chặn
 
@@ -201,6 +219,8 @@ Ngoài các <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dict
 
 Các bảng sau đây liệt kê các lý do bị chặn cấp cài đặt có thể xảy ra:
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### Cấp cài đặt: Lý do chặn lượt cài đặt giả
 
 | Lý do bị chặn | Lý do phụ bị chặn | Mô tả |
@@ -211,6 +231,8 @@ Các bảng sau đây liệt kê các lý do bị chặn cấp cài đặt có t
 | install\_store\_validation | - | <Anchor target="_blank" href="/marketers/vi/docs/implement-apple-app-store-itunes-install-validation">Xác thực nhận lượt cài đặt</Anchor> Apple App Store không thành công |
 | validation\_bots | invalid\_device\_parameters | Các kỳ vọng trường thiết bị cụ thể không khớp nhau - được xác định bởi khách hàng |
 | validation\_bots | validation\_rules | Các quy tắc trong đó kết quả là các lượt cài đặt bị chặn dựa trên quy tắc xác thực được xác định theo cách thủ công |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### Cấp cài đặt: Lý do chặn đánh cắp phân bổ
 
@@ -236,6 +258,8 @@ Khi có dạng gian lận bị phát hiện, nguồn gian lận được cho và
 
 Các bảng sau đây liệt kê các lý do bị chặn cấp cụm có thể xảy ra:
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### Cấp cụm: Lý do chặn lượt cài đặt giả
 
 | Lý do bị chặn | Lý do phụ bị chặn | Mô tả |
@@ -244,6 +268,8 @@ Các bảng sau đây liệt kê các lý do bị chặn cấp cụm có thể x
 | bot, site\_blacklist | device\_emulators | Các lượt cài đặt được tạo trên quy mô lớn bởi các tập lệnh tự động làm việc trong môi trường ảo. |
 | site\_blacklist | device\_farms | Tỷ lệ cao của các thiết bị chưa biết (mới) |
 | behavioral\_anomalies | behavioral\_anomalies | Hành vi đáng ngờ trong ứng dụng so với dạng hành vi người dùng ứng dụng thông thường |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### Cấp cụm: Lý do chặn đánh cắp phân bổ
 
@@ -267,6 +293,8 @@ Các sự kiện trong ứng dụng có thể bị chặn vì những lý do sau
 
 Bảng sau liệt kê các lý do bị chặn cấp trong ứng dụng có thể xảy ra.
 
+<div id="in-app-level-block-reasons" />
+
 #### Lý do chặn cấp trong ứng dụng
 
 | Lý do bị chặn | Lý do phụ bị chặn | Mô tả |
@@ -277,6 +305,8 @@ Bảng sau liệt kê các lý do bị chặn cấp trong ứng dụng có thể
 | validation\_inapps | validation\_rules | Dựa trên quy tắc xác thực được xác định theo cách thủ công |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### Nhắm mục tiêu lại
 
@@ -290,6 +320,8 @@ Dữ liệu thô của Protect360 bao gồm các lượt cài đặt gian lận 
 Dữ liệu thô nhắm mục tiêu lại của Protect360 có sẵn cho các lượt chặn thời gian thực và gian lận được phát hiện hậu phân bổ như sau:
 
 <table><thead><tr><th>Báo cáo </th><th>Xuất dữ liệu</th><th>API Pull</th><th>Hộp khóa dữ liệu</th></tr></thead><tbody><tr><td>Lượt cài đặt</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Lượt cài đặt hậu phân bổ</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Dữ liệu thu hút lại không có sẵn</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### Điều chỉnh phân bổ lượt cài đặt bị đánh cắp
 

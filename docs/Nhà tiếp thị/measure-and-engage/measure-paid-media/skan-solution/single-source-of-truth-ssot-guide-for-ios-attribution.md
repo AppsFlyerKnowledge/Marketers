@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="Hướng dẫn Nguồn dữ liệu tin cậy duy nhất (SSOT) để phân bổ iOS" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## Cách nhận dữ liệu thực về hiệu suất iOS 14+
 
 Bài viết liên quan: <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide">Hướng dẫn giải pháp SKAN</Anchor> |  <Anchor target="_blank" href="/marketers/vi/docs/skan-conversion-studio">SKAN conversion studio</Anchor> | Bảng điều khiển tổng quan
@@ -54,6 +56,8 @@ Hiểu đơn giản là cơ chế SSOT gắn cờ hiệu các lượt cài đặ
 Xem <Anchor target="_blank" href="/marketers/vi/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## Chế độ xem Nguồn dữ liệu tin cậy duy nhất trên Bảng điều khiển tổng quan
 
@@ -109,6 +113,8 @@ Trong chế độ xem SSOT:
 * **Lượt tải lại**: Được bao gồm trong số liệu lượt cài đặt. Không có sự phân tách giữa lượt cài đặt và lượt tải lại.
 * **Múi giờ**: Các sự kiện và lượt cài đặt được AppsFlyer báo cáo hiển thị theo UTC hoặc theo múi giờ địa phương dành riêng cho ứng dụng như được thiết lập trên <Anchor target="_blank" href="/marketers/vi/docs/app-settings">trang cài đặt ứng dụng</Anchor>. Đối với dữ liệu, lượt cài đặt và sự kiện do SKAN báo cáo hiển thị bằng UTC, ngoại trừ dữ liệu Meta và Google SKAN, trong đó múi giờ dựa trên múi giờ được cấu hình tương ứng trong tài khoản Meta và Google của bạn.
 * **Tiền tệ**: Hiển thị theo đơn vị USD hoặc đồng nội tệ cụ thể cho ứng dụng như được thiết lập trên <Anchor target="_blank" href="/marketers/vi/docs/app-settings">trang cài đặt ứng dụng</Anchor>.
+
+<div id="filter-considerations" />
 
 #### Những điều cần lưu ý về bộ lọc
 
@@ -169,6 +175,8 @@ Các phép đo có sẵn trong bảng điều khiển SSOT:
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## SSOT hoạt động như thế nào
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -219,6 +227,8 @@ Cơ chế SSOT tồn tại trong AppsFlyer SDK trong ứng dụng của bạn tr
 **Những điều cần lưu ý**
 
 * Nói chung, AppsFlyer không tính các lượt cài đặt lại này. Trong SSOT, trạng thái cài đặt lại không được xem xét. Điều này có nghĩa là SSOT không xóa các lượt cài đặt SKAN trùng lặp đến từ các lượt cài đặt lại trong các phân tích SSOT và các lượt cài đặt trùng lặp này không ảnh hưởng đến cài đặt của cờ af\_attribution.
+
+<div id="attribution-flag-field" />
 
 #### **Trường cờ phân bổ**
 
@@ -279,6 +289,8 @@ Công thức tính toán các phép đo mẫu:
 | Sự kiện trong ứng dụng | Sự kiện trong ứng dụng (dưới dạng phương diện) và số liệu của sự kiện chỉ có sẵn cho:<ul><li>Các sự kiện được định cấu hình trong SKAN Converter Studio đều có sẵn.</li><li>Các sự kiện xảy ra trong Khoảng thời gian 1 đều có sẵn.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

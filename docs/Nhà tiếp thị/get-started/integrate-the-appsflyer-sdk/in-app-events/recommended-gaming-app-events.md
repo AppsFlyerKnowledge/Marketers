@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Khái quát:** Đo lường chất lượng người dùng trong suốt hành trình của họ bằng cách ghi nhận các sự kiện trong ứng dụng trò chơi của bạn.
 
+<div id="-gaming" />
+
 ## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" /> Chơi game
 
 Các ứng dụng trò chơi bao gồm các trò chơi như trò chơi điện tử, trò chơi chiến lược, trò chơi giáo dục và thậm chí là trò chơi cá cược. Các sự kiện điển hình chúng tôi đề nghị bạn nên ghi nhận là mua hàng trong ứng dụng, chia sẻ trên mạng xã hội và mời bạn bè. Ngoài ra, bạn có thể đưa vào các sự kiện như lên cấp và hoàn thành hướng dẫn trong trò chơi.
@@ -42,6 +44,8 @@ Các sự kiện này cũng có thể được sử dụng cho các ứng dụng
 * Xbox
 * Thiết bị di động Windows
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > * Hãy đọc các <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#thiết-lập-sự-kiện-trong-ứng-dụng">hướng dẫn</Anchor> dành cho nhà tiếp thị về cách triển khai các sự kiện trong ứng dụng.
@@ -52,6 +56,8 @@ Các sự kiện này cũng có thể được sử dụng cho các ứng dụng
 > Để biết thêm thông tin về cách ghi lại các sự kiện trong ứng dụng, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor>.
 
 [![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Cấu trúc sự kiện chuẩn khuyên dùng
 
@@ -215,6 +221,8 @@ Khi người dùng mời thành công một người bạn tải xuống và cà
 | af\_description | Mô tả lời mời | Dùng thử ứng dụng này |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Cấu trúc sự kiện tuỳ chỉnh khuyên dùng
 

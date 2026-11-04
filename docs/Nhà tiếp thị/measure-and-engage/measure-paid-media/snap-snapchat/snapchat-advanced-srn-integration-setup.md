@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## Tổng quan
 
 Tích hợp SRN Nâng cao có nghĩa là tất cả lưu lượng truy cập <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">được chấp thuận kép</Anchor> sẽ được phân bổ và báo cáo là lưu lượng truy cập SRN thông thường. Đối với lưu lượng truy cập không được chấp thuận, AppsFlyer có thể phân bổ và đo lường lưu lượng phân bổ dựa trên số lượt nhấp và lượt hiển thị từ Snapchat, tuân thủ các quy định hạn chế về quyền riêng tư. Tính năng tích hợp hỗ trợ phân bổ lượt nhấp và lượt hiển thị, chi phí, doanh thu quảng cáo và đối tượng.
+
+<div id="set-up-snapchat-integration" />
 
 ## Thiết lập tích hợp Snapchat
 
@@ -58,10 +62,14 @@ Quy trình thiết lập được thực hiện từ trang **Active Integrations
 
 Thẻ Integration được chia thành các phần khác nhau như được mô tả dưới đây.
 
+<div id="activate-partner" />
+
 #### Kích hoạt đối tác
 
 Trong **first visit** tại đây, bạn phải bật **Activate Partner** để bật thiết lập.  
 Để biết thêm chi tiết về kích hoạt đối tác, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">đây</Anchor>.
+
+<div id="general-settings" />
 
 #### Cài đặt chung
 
@@ -104,6 +112,8 @@ Thông tin chi tiết về <Anchor target="_blank" href="/marketers/vi/docs/set-
 
 ![snap-viewthrough-window.png](https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png)
 
+<div id="re-engagement-attribution" />
+
 #### Phân bổ thu hút lại
 
 Kích hoạt Phân bổ thu hút lại để bắt đầu phân bổ thu hút lại cho Snapchat.  
@@ -127,6 +137,8 @@ Nếu bạn là đại lý, hãy yêu cầu nhà quảng cáo làm điều đó 
 Đặt thời lượng cho **Re-engagement window** (khoảng thời gian khi sự kiện trong ứng dụng của người dùng được phân bổ cho nguồn truyền thông nhắm lại mục tiêu). Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời:
 
 ![snap-reengagement-window.png](https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Cài đặt đăng lại sự kiện trong ứng dụng
 
@@ -261,6 +273,8 @@ Tìm hiểu thêm về việc cấp <Anchor target="_blank" href="/marketers/vi/
 
 </Accordion>
 
+<div id="deep-linking-with-snapchat" />
+
 ## Liên kết sâu với Snapchat
 
 Liên kết sâu với Snapchat dựa trên việc sử dụng liên kết sâu gốc trong nền tảng của Snapchat, đồng thời bổ sung các thông số AppsFlyer vào liên kết đó.
@@ -279,12 +293,16 @@ Cách thực hiện liên kết sâu với Snapchat:
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### Làm cách nào để thiết lập liên kết sâu trên nền tảng Snap?
 
 1. Đi tới loại cơ hội **Drive traffic to app**.
 2. Thêm URI liên kết sâu:  
      
     [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### Liên kết sâu bị trì hoãn với Snapchat
 
@@ -293,6 +311,8 @@ Bạn có thể truy cập trực tiếp vào dữ liệu chuyển đổi của 
 <Anchor target="_blank" href="/marketers/vi/docs/conversion-data-payloads-and-scenarios#snapchat-conversion-data">Dữ liệu chuyển đổi Snapchat</Anchor> bao gồm thông số **af\_dp**, cho phép bạn liên kết sâu và cung cấp nội dung tùy chỉnh, dựa trên mức độ tương tác của người dùng với quảng cáo của bạn trong Snapchat.
 
 Ngoài ra, bạn có thể sử dụng các thông số dữ liệu chuyển đổi khác như **af\_adset** hoặc **af\_channel**.
+
+<div id="set-up-snapchat-for-agencies" />
 
 ## Thiết lập Snapchat cho các đại lý
 
@@ -310,6 +330,8 @@ Bạn cần thực hai bước để hoàn tất thiết lập:
 >
 > Các ID tài khoản Snapchat không được chia sẻ giữa nhà quảng cáo hoặc đại lý. Nếu đã chia sẻ, TẤT CẢ lượt cài đặt của nhà quảng cáo sẽ tự động được phân bổ trên bảng điều khiển của đại lý.
 
+<div id="raw-data-restrictions" />
+
 ## Hạn chế dữ liệu thô
 
 * Bắt đầu từ ngày 1 tháng 3 năm 2023, lượt gỡ cài đặt Snapchat không được đưa vào báo cáo dữ liệu thô
@@ -320,6 +342,8 @@ Bạn cần thực hai bước để hoàn tất thiết lập:
   * Loại tương tác được phân bổ (lượt hiển thị)
   * Thời gian tương tác được phân bổ (chỉ được báo cáo dưới dạng ngày - "dd/mm/yyyy")
   * Chiến dịch được báo cáo là "bị hạn chế"
+
+<div id="snapchat-data-retention" />
 
 ## Lưu trữ dữ liệu Snapchat
 

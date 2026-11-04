@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **Khái quát**: Đo lường tỷ lệ gỡ cài đặt cho ứng dụng của bạn và xác định nguồn nào (nguồn truyền thông, chiến dịch, quảng cáo và địa lý) mang đến người dùng chất lượng.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Để hiểu giá trị của người dùng ứng dụng, bạn phải phân tích cả tỷ lệ lượt cài đặt và lượt gỡ cài đặt. Số liệu lượt gỡ cài đặt có thể giúp bạn đo lường hiệu suất của ứng dụng, đồng thời hiểu rõ thời điểm và lý do người dùng rời khỏi ứng dụng của bạn.
 
+<div id="how-does-it-work" />
+
 ### Nó hoạt động như thế nào?
 
 AppsFlyer sử dụng thông báo đẩy ngầm, một lần một ngày, để xác minh xem một ứng dụng có còn được cài đặt trên một thiết bị cụ thể hay không. Nếu không có phản hồi, lượt gỡ cài đặt sẽ được ghi nhận và được phân bổ cho nguồn truyền thông ban đầu mang đến người dùng.
+
+<div id="how-to-use-uninstall-data" />
 
 ## Cách sử dụng dữ liệu lượt gỡ cài đặt
 
@@ -96,6 +102,8 @@ Các phương thức để loại trừ người dùng bao gồm:
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## Thiết lập đo lường lượt gỡ cài đặt
 
 Quá trình thiết lập số liệu lượt gỡ cài đặt yêu cầu nhà tiếp thị và nhà phát triển phải phối hợp với nhau. Hướng dẫn triển khai tùy thuộc vào hệ điều hành chạy ứng dụng của bạn.
@@ -128,9 +136,13 @@ Luồng cho nhà tiếp thị và nhà phát triển như sau:
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## Quy trình thực hiện
 
 Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích hợp cơ chế phản hồi thông báo đẩy vào ứng dụng của bạn. Hướng dẫn thực hiện sẽ khác nhau tùy theo hệ điều hành.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Kết nối Firebase Cloud Messaging với AppsFlyer (Android)
 
@@ -197,6 +209,8 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### Cấu hình đo lường lượt gỡ cài đặt trong AppsFlyer
 
 <Tabs>
@@ -236,6 +250,8 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 
 </Tab>
 </Tabs>
+
+<div id="testing-uninstall-measurement" />
 
 ## Thử nghiệm đo lường lượt gỡ cài đặt
 
@@ -278,6 +294,8 @@ Hãy ghi nhớ những điều sau đây khi thử nghiệm ứng dụng iOS:
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## Ánh xạ Sự kiện Gỡ cài đặt
 
 ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
@@ -288,6 +306,8 @@ Hãy ghi nhớ những điều sau:
 
 * AppsFlyer chỉ có thể gửi bài đăng lại nếu sự kiện thực sự xảy ra và được AppsFlyer ghi nhận.
 * Nếu bạn không thấy các lượt gỡ cài đặt trong trang Tổng quan của bảng điều khiển hoặc trong báo cáo dữ liệu thô, điều này có nghĩa là các đăng lại lượt gỡ cài đặt đã không được gửi tới đối tác, ngay cả khi sự kiện **af\_uninstall** đã được ánh xạ.
+
+<div id="limitations" />
 
 #### Điểm hạn chế
 
@@ -308,6 +328,8 @@ Quy tắc GCM
 </Tab>
 </Tabs>
 
+<div id="turning-off-uninstall-measurement" />
+
 ## Tắt tùy chọn đo lường lượt gỡ cài đặt
 
 <Tabs>
@@ -325,6 +347,8 @@ Nếu chứng chỉ P12 được cung cấp và xác thực, tính năng đo lư
 </Tabs>
 
 **Lưu ý:** Để báo cáo lượt gỡ cài đặt, bạn phải bật tính năng **Enable uninstall measurement** ở thời điểm cài đặt ứng dụng. Lượt cài đặt xảy ra khi tính năng **Enable uninstalls measurement** đang tắt sẽ không được báo cáo.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **Để tắt tính năng đo lường lượt gỡ cài đặt**:
 

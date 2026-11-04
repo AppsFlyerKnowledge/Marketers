@@ -29,11 +29,15 @@ x-zendesk:
 
 ![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
 
+<div id="overview" />
+
 ## Tổng quan
 
 ROI360 là một bộ công cụ báo cáo chi phí và doanh thu độc đáo cung cấp cho bạn dữ liệu chính xác nhất trong thời gian nhanh nhất có thể.
 
 Với thông tin chi tiết về chi phí và doanh thu tổng hợp, bạn sẽ có được thông tin tổng quan đầy đủ về lợi tức trên chi tiêu quảng cáo (ROAS) và lợi tức đầu tư (ROI) của mình.
+
+<div id="cost-tools" />
 
 ### Công cụ tính chi phí
 
@@ -42,6 +46,8 @@ Trước đây được gọi là Xpend, công cụ tính chi phí ROI360 tổng
 <table><thead><tr><th>Công cụ</th><th>Mô tả</th></tr></thead><tbody><tr><td><a href="./roi360-cost-aggregation-overview" target="_blank">Chi phí phân bổ</a></td><td><p><span>Dữ liệu chi phí có liên quan đến sự phân bổ, số lượt truy cập và số lần hiển thị ở mức tiết nhất hiện có.</span></p><p><span>Trong đó bao gồm quyền truy cập vào hơn 80 tích hợp API, cho phép bạn dễ dàng kết nối với các mạng quảng cáo toàn cầu hoặc địa phương.</span></p></td></tr><tr><td><a href="./import-cost-data" target="_blank">Nhập tệp tin</a></td><td><p><span>Nhập chi tiêu quảng cáo để ghi lại dữ liệu chi phí không nhận được qua API.</span></p></td></tr><tr><td><a href="./incorporate-agency-fees-into-campaign-costs" target="_blank">Phí đại lý</a></td><td><p><span>Tính toán phí đại lý được bao gồm trong chi phí của bạn.</span></p></td></tr><tr><td><a href="./set-up-and-use-roi360-cost-etl-reports" target="_blank">ETL Chi phí\*</a></td><td><span>Cung cấp dữ liệu chi phí chiến dịch, được cập nhật 4 lần mỗi ngày, vào bộ chứa AWS S3 hoặc GCS của bạn để sẵn sàng tải vào hệ thống BI của nhà quảng cáo.</span></td></tr><tr><td colspan="2"><span>\* Có sẵn với gói ROI360 nâng cao</span></td></tr></tbody></table>
 
 **Lưu ý**: Bạn cũng có thể tổng hợp <Anchor target="_blank" href="/marketers/vi/docs/view-aggregated-cost-data-for-attribution-links">dữ liệu chi phí theo lượt truy cập</Anchor> mà không cần ROI360. Tuy nhiên, phương pháp này chỉ dành cho mô hình chi phí CPI, không dành cho các mô hình khác như CPA, CPC và CPM.
+
+<div id="revenue-tools" />
 
 ### Công cụ tính doanh thu
 

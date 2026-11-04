@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Sơ lược:** API báo cáo Nhóm người cung cấp cho nhà quảng cáo theo cách có lập trình để lấy dữ liệu Nhóm người. Sử dụng API để tích hợp dữ liệu Nhóm người vào BI và hệ thống tự động hóa tiếp thị.
 
+<div id="cohort-api" />
+
 ## API báo cáo Nhóm người
 
 API báo cáo Nhóm người được sử dụng để lấy dữ liệu hiệu suất chiến dịch theo nhóm từ nền tảng AppsFlyer. API này có chức năng tương đương với <Anchor target="_blank" href="/marketers/vi/docs/cohort-and-retention-dashboard">bảng điều khiển Nhóm người</Anchor>.
@@ -108,6 +110,8 @@ Sử dụng các thông số nhóm sau để gộp các cột bổ sung và giú
 | Tham số | Giá trị | Thông số bắt buộc |
 | --- | --- | --- |
 | kpi | Chọn **một** KPI từ các KPI có sẵn. Trong tương lai, chúng tôi dự định cho phép lựa chọn nhiều KPI.<ul><li>Đối với mỗi KPI được yêu cầu, tất cả các hàm đều được trả về.</li><li>Định dạng: Chuỗi trong một mảng</li><li>Ví dụ A: `"kpis": ["sessions"]`</li><li>Ví dụ B: `"kpis": ["event_name"]`</li></ul> | Có |
+
+<div id="formatting-kpi-functions" />
 
 ### Trình bày các hàm KPI
 
@@ -272,6 +276,8 @@ Dữ liệu sử dụng có sẵn qua <Anchor target="_blank" href="/marketers/v
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Thông tin bổ sung
 
 <div id="response-codes-and-troubleshooting" />
@@ -324,6 +330,8 @@ Nếu phạm vi ngày báo cáo của bạn là từ ngày 1 tháng 1 đến ng�
 
 * Giá trị của khoảng thời gian có thể là một hoặc nhiều giá trị từ 0-180 sau đây. Ví dụ: 0, 1, 2, 30, 180.
 * Nếu không có khoảng thời gian nào được chỉ định, thì các giá trị mặc định là 0, 1, 2, v.v. cho đến 30, 60, 90 và 180 sẽ được trả về.
+
+<div id="example-period-filter" />
 
 > 📄 **Ví dụ về bộ lọc khoảng thời gian**
 >

@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Khái quát:** Tạo liên kết với khả năng phân bổ, chuyển hướng và liên kết sâu để chuyển đổi người dùng nguồn truyền thông sở hữu hoặc trả phí thành người dùng ứng dụng, bất kể thiết bị, hệ điều hành, kênh hoặc nền tảng. Các liên kết này giúp bạn mang đến trải nghiệm tốt nhất cho người dùng, bất kể họ chuyển đổi từ nguồn truyền thông nào trong số các nguồn truyền thông bạn sở hữu: trang web, biểu ngữ, bài đăng trên mạng xã hội, email, tin nhắn, v.v.
 
+<div id="introduction-video" />
+
 ## Video giới thiệu
 
 <Embed title="Trình phát video YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## Lợi ích
 
@@ -39,6 +43,8 @@ Trải nghiệm khách hàng AppsFlyer và bộ ứng dụng liên kết sâu do
 
 Bộ ứng dụng miễn phí cho tất cả các gói tài khoản.
 
+<div id="experiences" />
+
 ## Trải nghiệm
 
 Trải nghiệm khách hàng AppsFlyer và bộ ứng dụng liên kết sâu do OneLink cung cấp sẽ giúp bạn tạo các liên kết mang đến trải nghiệm tối ưu cho người dùng, bất kể họ đến từ đâu. Các trải nghiệm khách hàng mà bạn có thể cấu hình bao gồm:
@@ -51,6 +57,8 @@ Trải nghiệm khách hàng AppsFlyer và bộ ứng dụng liên kết sâu do
 * **Tin nhắn sang ứng dụng**: Tạo liên kết cho các chiến dịch SMS và tin nhắn của bạn và thu hút người dùng thông qua tin nhắn văn bản.
 * **Giới thiệu đến ứng dụng**: Tạo liên kết lời mời người dùng cho phép người dùng và những người có ảnh hưởng mời người khác đến ứng dụng của bạn hoặc chia sẻ nội dung cụ thể trong ứng dụng, chẳng hạn như một bài viết.
 * **Tùy chỉnh**: Bất kể người dùng của bạn đến từ đâu, qua máy tính để bàn hay thiết bị di động, trực tuyến hay ngoại tuyến, truyền thông sở hữu hoặc trả phí, hãy sử dụng OneLink để dễ dàng đưa người dùng của bạn đến đúng nơi mong muốn.
+
+<div id="setting-up-onelink" />
 
 ## Thiết lập
 
@@ -70,6 +78,8 @@ Bảng sau đây mô tả chi tiết về công việc của nhà tiếp thị v
 | Tạo mẫu OneLink | <ul><li>Nhà tiếp thị/quản lý sản phẩm thiết lập mẫu trong AppsFlyer.</li><li>Nhà phát triển Android cấu hình các phương thức mở ứng dụng cho người dùng hiện có (Liên kết Ứng dụng Android và lược đồ URI).</li><li>Nhà phát triển iOS cấu hình các phương thức mở ứng dụng cho người dùng hiện có (Liên kết Chung iOS và lược đồ URI).</li></ul> | <ul><li>Bảng điều khiển AppsFlyer</li><li><Anchor target="_blank" href="/marketers/vi/docs/create-a-onelink-template">Hướng dẫn dành cho nhà tiếp thị</Anchor></li><li>Hướng dẫn dành cho nhà phát triển đối với hệ điều hành <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android</Anchor> và <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor></li></ul> |
 | Tạo liên kết OneLink | <ul><li>Nhà tiếp thị/quản lý sản phẩm thiết lập liên kết trong AppsFlyer, bao gồm việc chọn trải nghiệm khách hàng mong muốn và thêm bất kỳ thông số phân bổ hoặc liên kết sâu mong muốn nào.</li><li>Nhà phát triển Android và iOS triển khai phương thức UDL để liên kết sâu (nếu yêu cầu liên kết sâu).</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/vi/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Hướng dẫn dành cho nhà tiếp thị</Anchor></li><li>Hướng dẫn dành cho nhà phát triển đối với hệ điều hành <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">Android</Anchor> và <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor></li><li>Ứng dụng mẫu (Github)</li></ul> |
 
+<div id="additional-options" />
+
 ## Tùy chọn bổ sung
 
 Sau khi hoàn thành một số hoặc tất cả các thiết lập trong giao diện người dùng, hãy xem xét triển khai các tính năng bổ sung được mô tả bên dưới.
@@ -83,9 +93,13 @@ Sau khi hoàn thành một số hoặc tất cả các thiết lập trong giao 
 * <Anchor target="_blank" href="/marketers/vi/docs/understand-onelink-short-vs-long-urls">URL đầy đủ</Anchor>: Thêm thông số vào liên kết tùy chỉnh OneLink của bạn hoặc tạo một số lượng lớn liên kết tùy chỉnh OneLink bằng cách áp dụng các công thức đơn giản của riêng bạn trong bảng tính.
 * <Anchor target="_blank" href="/marketers/vi/docs/redirect-app-users-to-a-website">Chuyển hướng từ ứng dụng đến web</Anchor>: Chuyển hướng người dùng từ ứng dụng của bạn đến một trang web hoặc trang mạng xã hội.
 
+<div id="troubleshooting-and-faq" />
+
 ## Khắc phục sự cố và Câu hỏi thường gặp
 
 Nhanh chóng tìm giải pháp để thử nghiệm và gỡ lỗi các vấn đề về hành vi/chuyển hướng liên kết tùy chỉnh OneLink qua <Anchor target="_blank" href="/marketers/vi/docs/onelink-troubleshooting-and-faq">hướng dẫn khắc phục sự cố OneLink</Anchor> của chúng tôi.
+
+<div id="limitations" />
 
 ## Điểm hạn chế
 

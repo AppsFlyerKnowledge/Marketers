@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sơ lược:** Giải quyết các Câu hỏi thường gặp về Twitter Ads và tìm hiểu những khác biệt.
 
+<div id="x-ads-faq-and-discrepancies" />
+
 ## Câu hỏi thường gặp về Twitter Ads và sự khác biệt
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -103,6 +105,8 @@ Giả sử tên thành viên nhóm của bạn là Jenny và tên tài khoản c
 
 Yes.   
 Khi Agency tạo chiến dịch Twitter mới, tên chiến dịch phải bắt đầu bằng tên đại lý và dấu gạch dưới (Ví dụ: "AgencyName\_Campaign1").
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -228,6 +232,8 @@ Ví dụ: nếu bạn chạy một chiến dịch có chi phí 1.000 đô la cho
 
 </Accordion>
 
+<div id="discrepancies-between-x-ads-and-appsflyer" />
+
 ## Sự khác biệt giữa Twitter và AppsFlyer
 
 Mặc dù chúng tôi hợp tác chặt chẽ với Twitter, sự khác biệt có thể xuất hiện giữa bảng điều khiển Twitter và bảng điều khiển/báo cáo AppsFlyer.
@@ -243,6 +249,8 @@ Mặc dù chúng tôi hợp tác chặt chẽ với Twitter, sự khác biệt c
 | **Loại tiếp xúc được phân bổ** | Phân bổ của Twitter dựa trên các lượt nhấp chuột và lượt hiển thị của riêng họ. | AppsFlyer ưu tiên phân bổ nhấp qua hơn phân bổ xem qua. Nếu Twitter đếm số lần hiển thị và AppsFlyer biết về một nhấp chuột bổ sung trong khoảng thời gian phân bổ nhấp qua, thì lượt nhấp chuột từ một nguồn khác được phân bổ cho bảng điều khiển của AppsFlyer. Trên Twitter, lượt hiển thị được phân bổ và được nhìn thấy trên bảng điều khiển. |
 | **Cài đặt chia sẻ dữ liệu Twitter** | Twitter cho phép người dùng KHÔNG<Anchor target="_blank" href="https://twitter.com/settings/account/personalization">chia sẻ dữ liệu cá nhân của họ với bên thứ ba</Anchor>. Dữ liệu này bao gồm quảng cáo mà họ tương tác.<br /><br />Số liệu thống kê trên bảng điều khiển Twitter phản ánh tất cả các lượt tương tác, bao gồm cả người dùng đã chọn không chia sẻ dữ liệu. | AppsFlyer hiển thị dữ liệu tổng hợp của những người dùng Twitter này, nhưng không báo cáo dữ liệu thô ở cấp độ người dùng của họ (xem thêm <Anchor target="_blank" href="/marketers/vi/docs/x-ads-formerly-twitter-ads-setup-guide-overview#quyền-riêng-tư-của-người-dùng-x-ads">chi tiết</Anchor>). |
 | **Logic thu hút lại trên Twitter** | Twitter tính người dùng duy nhất. Nếu người dùng thu hút lại nhiều lần do cùng một chiến dịch, Twitter sẽ hiển thị những tương tác thu hút này dưới dạng một lượt chuyển đổi. | AppsFlyer tính từng trường hợp thu hút lại và do đó, trong trường hợp tương tự, hiển thị những tương tác thu hút này dưới dạng nhiều lượt chuyển đổi. |
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >

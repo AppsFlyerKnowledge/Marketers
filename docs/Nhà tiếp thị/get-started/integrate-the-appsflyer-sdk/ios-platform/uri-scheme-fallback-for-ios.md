@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Understand the flow when a user with an iOS device clicks on a OneLink custom link and Universal Links fails to open the app.
 
+<div id="about-uri-fallback-for-ios" />
+
 ## About URI fallback for iOS
 
 * The best-supported way to open apps on iOS devices is by using Universal Links. Since 2016, there are considerable built-in OS limitations to using URI schemes as a fallback method for when iOS Universal Links don't open the app. These limitations are not AppsFlyer-related, and would also impact any other links with URI schemes you might use to open the app.
@@ -35,13 +37,19 @@ x-zendesk:
 * For other browsers, URI schemes are unpredictable and therefore, not supported by default. Users clicking the link are likely to be redirected to the App Store (or if set, to the URL set on the `af_ios_url` param).
 * See the scenarios flowchart and use cases that follow for additional details.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > X (Twitter) does not support URI schemes. We recommend using a social app landing page with Universal Link setup to avoid app-launching issues.
 
+<div id="scenarios-flowchart" />
+
 ### Scenarios flowchart
 
 <Image alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
+
+<div id="use-cases" />
 
 ## Use cases
 
@@ -56,6 +64,8 @@ Sometimes, Universal Links fail to open the app, either because the app does not
 * Naver
 * Naver-Blog
 * Weibo
+
+<div id="flowchart" />
 
 #### **Flowchart**
 
@@ -95,6 +105,8 @@ The following describes the flow for users when Universal Links fail to open the
   8. If the user clicks **OK**, they are redirected to the App Store.
   9. If the user clicks **Cancel**, they remain on the landing page.
 
+<div id="flowchart-1" />
+
 #### **Flowchart**
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
@@ -124,6 +136,8 @@ The following describes the flow for users when Universal Links fail to open the
 4. If the user clicks **Close**, the landing page in the background displays.  
    [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. User clicks the App Store badge and is redirected to the App Store.
+
+<div id="flowchart-2" />
 
 #### **Flowchart**
 

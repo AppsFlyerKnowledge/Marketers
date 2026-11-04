@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Khái quát:** [Tạo liên kết OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#tạo-liên-kết-onelink) mang đến cho người dùng chính xác trải nghiệm mà bạn mong muốn mang lại cho họ. Những người dùng nhấp vào liên kết sẽ được chuyển hướng đến đúng cửa hàng ứng dụng, URL web hoặc vào ứng dụng nếu cần. Và người dùng được phân bổ vào đúng nguồn truyền thông.
 
+<div id="onelink-links-and-experiences" />
+
 ## Liên kết và trải nghiệm OneLink
 
 <Embed title="Trình phát video YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ Các bước thiết lập liên kết cần thiết được mô tả chi tiế
 * Cài đặt trải nghiệm cụ thể
 * Cài đặt liên kết sâu và chuyển hướng
 * Cài đặt thông số bổ sung
+
+<div id="create-a-onelink-link" />
 
 ## Tạo liên kết OneLink
 
@@ -113,6 +117,8 @@ Cài đặt chung là một phần của quy trình tạo liên kết OneLink á
    * Chọn một miền khác để phản ánh thương hiệu của bạn. <Anchor target="_blank" href="/marketers/vi/docs/brand-onelink-with-your-domain">Tìm hiểu thêm</Anchor>
    * Chỉnh sửa ID URL để làm nổi bật các dịch vụ cung cấp của chiến dịch. ID URL phải có tối đa 50 ký tự và có thể sử dụng kết hợp chữ cái và số. Theo mặc định, ID này gồm 8 ký tự.
 
+<div id="enable-retargeting-for-the-app" />
+
 #### Bật tính năng nhắm mục tiêu lại cho ứng dụng
 
 Nếu chưa từng bật tính năng Nhắm mục tiêu lại cho ứng dụng, thì bạn cần phải thực hiện thao tác đó một lần. <Anchor target="_blank" href="/marketers/vi/docs/app-settings#cài-đặt-phân-bổ">Tìm hiểu thêm</Anchor>
@@ -174,6 +180,8 @@ Tính năng Bản xem trước trên mạng xã hội được hỗ trợ bởi 
 
 <Accordion title="Trang đích ứng dụng mạng xã hội">
 
+<div id="important-1" />
+
 > 🚧 **Quan trọng!**
 >
 > Liên kết Chung iOS hiện được hỗ trợ trong Meta ads.
@@ -209,9 +217,13 @@ Khi người dùng tương tác với nút CTA trong trang đích:
 * **Nếu ứng dụng đã được cài đặt**: người dùng thực hiện thao tác nhấp vào sẽ khởi chạy ứng dụng.
 * **Nếu ứng dụng CHƯA được cài đặt**: người dùng sẽ được đưa đến cửa hàng ứng dụng thích hợp. Sau khi cài đặt, có thể trì hoãn liên kết sâu người dùng (được giải thích trong [liên kết sâu và deferred deep linking](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)).
 
+<div id="note-2" />
+
 > 📘 **Lưu ý**
 >
 > Trang đích của ứng dụng mạng xã hội chỉ hỗ trợ URL OneLink rút gọn.
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **Để sử dụng trang đích ứng dụng mạng xã hội:**
 
@@ -221,6 +233,8 @@ Khi người dùng tương tác với nút CTA trong trang đích:
 3. Đăng URL OneLink rút gọn trên ứng dụng mạng xã hội.
 
 Phân bổ được xác định dựa trên cài đặt phân bổ của bạn.
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **Để thiết lập trang đích cho ứng dụng mạng xã hội:**
 
@@ -279,6 +293,8 @@ Deferred deep linking có nghĩa là bạn cung cấp cho người dùng mới t
        * Khung thời gian xem lại lượt nhấp có thể lên đến 15 phút.
      * **Lưu ý**: Những khách hàng đã sử dụng OneLink để liên kết sâu có thể đang sử dụng các phương thức kế thừa dành cho <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">Android</Anchor> và <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor>, thay vì UDL.  
 
+       <div id="tips" />
+
        > 👍 **Lời khuyên**
        >
        > **deep\_link\_value** có thể dựa trên SKU sản phẩm, ID bài đăng mạng xã hội, đường dẫn URL hoặc bất kỳ giá trị nào khác.
@@ -319,6 +335,8 @@ Deferred deep linking có nghĩa là bạn cung cấp cho người dùng mới t
       </Tabs>
 
    3. Trong phần **Additional parameters**, hãy thêm thông số tùy chỉnh **deep\_link\_sub2-10** và các giá trị theo yêu cầu, theo những gì bạn đã quyết định với nhà phát triển.
+
+<div id="note-4" />
 
 > 📘 **Lưu ý**
 >
@@ -363,6 +381,8 @@ Bạn có thể kiểm tra xem liên kết của mình có hoạt động để 
 * Người dùng mới chưa cài đặt ứng dụng của bạn
 * Người dùng hiện có đã cài đặt ứng dụng của bạn
 
+<div id="new-users-without-your-app-installed" />
+
 #### Người dùng mới chưa cài đặt ứng dụng của bạn
 
 **Điều kiện tiên quyết**: Một <Anchor target="_blank" href="/marketers/vi/docs/registering-test-devices">thiết bị thử nghiệm đã đăng ký</Anchor> chưa cài đặt ứng dụng.
@@ -385,6 +405,8 @@ Bạn có thể kiểm tra xem liên kết của mình có hoạt động để 
    Tìm một lượt nhấp mới và lượt cài đặt trong nguồn truyền thông (ví dụ: thử nghiệm) và tên chiến dịch bạn đặt trong URL.
 
 Liên kết không hoạt động như mong đợi? Xem phần <Anchor target="_blank" href="/marketers/vi/docs/onelink-troubleshooting-and-faq">Câu hỏi thường gặp và hướng dẫn khắc phục sự cố OneLink.</Anchor>
+
+<div id="existing-users-with-your-app-installed" />
 
 #### Người dùng hiện có đã cài đặt ứng dụng của bạn
 
@@ -409,6 +431,8 @@ Liên kết không hoạt động như mong đợi? Xem phần <Anchor target="_
 Liên kết không hoạt động như mong đợi? Xem phần <Anchor target="_blank" href="/marketers/vi/docs/onelink-troubleshooting-and-faq">Câu hỏi thường gặp và hướng dẫn khắc phục sự cố OneLink.</Anchor>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Các quy trình bổ sung
 
@@ -489,6 +513,8 @@ Với sự ra mắt iOS 15, Apple cung cấp cho người dùng iCloud+ tính n�
 
 Giải pháp này kết hợp các URL rút gọn của OneLink với công nghệ Clip Ứng dụng có sẵn trên iOS và cho phép bạn gửi người dùng đến các quy trình cụ thể trong sản phẩm của bạn mà không cần cài đặt ứng dụng đầy đủ. URL rút gọn của OneLink cung cấp cho bạn dữ liệu phân bổ người dùng và hướng người dùng đến một trải nghiệm Clip Ứng dụng tùy chỉnh tương tự với trải nghiệm bạn muốn DDL đạt được. Clip ứng dụng cũng có thể bao gồm quy trình để hướng người dùng từ Clip Ứng dụng của bạn đến ứng dụng đầy đủ. **Lưu ý**: Nếu người dùng cài đặt lại ứng dụng đầy đủ từ giải pháp dựa trên Clip Ứng dụng thì việc này có thể được báo cáo trong AppsFlyer là cài đặt tự nhiên. 
 
+<div id="flow" />
+
 #### **Quy trình**
 
 Quy trình của giải pháp DDL dựa trên Clip Ứng dụng như sau:
@@ -524,6 +550,8 @@ Quy trình của giải pháp DDL dựa trên Clip Ứng dụng như sau:
 
 <Accordion title="Giải pháp dựa trên bảng nhớ tạm">
 
+<div id="flow-1" />
+
 #### **Quy trình**
 
 Quy trình của giải pháp DDL dựa trên bảng nhớ tạm như sau:
@@ -541,6 +569,8 @@ Quy trình của giải pháp DDL dựa trên bảng nhớ tạm như sau:
 5. Người dùng nhấn vào **Tải ứng dụng**.
 6. Người dùng được đưa đến Cửa hàng Ứng dụng để cài đặt ứng dụng. Sau đó, vào lần khởi chạy đầu tiên, họ được đưa đến trang ứng dụng cụ thể.
 
+<div id="requirements" />
+
 #### **Yêu cầu**
 
 Giải pháp DDL trang đích sao chép/dán yêu cầu:
@@ -550,6 +580,8 @@ Giải pháp DDL trang đích sao chép/dán yêu cầu:
 * SDK AppsFlyer iOS V6+.
 * Nhà phát triển ứng dụng iOS của bạn phải triển khai mã dán dữ liệu liên kết sâu gián tiếp trong URL từ bảng nhớ tạm. Đây không phải là một phần của SDK AppsFlyer.
 * Người dùng cuối phải duy trì trạng thái đánh dấu hộp kiểm (mặc định). Nếu không đánh dấu, URL sẽ không được sao chép và deferred deep linking sẽ không hoạt động.
+
+<div id="setup" />
 
 #### **Thiết lập**
 
@@ -564,6 +596,8 @@ Giải pháp DDL trang đích sao chép/dán yêu cầu:
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 

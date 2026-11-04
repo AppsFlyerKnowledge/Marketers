@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Khái quát:** AppsFlyer sử dụng liên kết giới thiệu tải trước để phân bổ lượt cài đặt cho chiến dịch tải trước, trong đó nhà tiếp thị ký kết hợp đồng với Nhà sản xuất Thiết bị Gốc (OEM), nhà cung cấp dịch vụ di động và đối tác khám phá ứng dụng để tải trước ứng dụng của họ tại nhà máy hoặc tại thời điểm thiết bị được người dùng bật lần đầu.
 
+<div id="overview" />
+
 ## Phân bổ liên kết giới thiệu tải trước AppsFlyer
 
 Trong chiến dịch tải trước, Nhà sản xuất Thiết bị Gốc (OEM), nhà cung cấp dịch vụ di động và đối tác khám phá ứng dụng tải trước ứng dụng trên thiết bị trước khi chúng đến tay người dùng. Điều này có thể được OEM thực hiện tại nhà máy hoặc các nhà cung cấp thực hiện khi kích hoạt thiết bị lần đầu.
@@ -35,6 +37,8 @@ Giải pháp cung cấp:
 * Sự hỗ trợ minh bạch cho các bản cập nhật ứng dụng và lượt tải xuống lại ứng dụng.
 * Khả năng hiển thị và đo lường giữa lần kích hoạt thiết bị đầu tiên và lần khởi chạy ứng dụng đầu tiên. Điều này cho phép bạn xem có bao nhiêu thiết bị đã được một đối tác cụ thể kích hoạt mà có ứng dụng được tải sẵn trên thiết bị và sau đó xem thời điểm ứng dụng được khởi chạy lần đầu tiên.
 
+<div id="preload-referrer-options" />
+
 ### Các tùy chọn liên kết giới thiệu tải trước
 
 Có thể sử dụng liên kết giới thiệu để phân bổ lượt cài đặt bằng cách tải trước hoặc bằng cách nhấp để tải xuống. Xem bảng sau để biết thêm chi tiết.
@@ -46,12 +50,16 @@ AppsFlyer ưu tiên cao nhất cho phân bổ tải trước. Điều này có n
 | Tải trước | <ul><li>Ứng dụng được tải trước tại nhà máy hoặc được tải trước vào thời điểm thiết bị được kích hoạt lần đầu tiên. Ngoài ra, một trình hướng dẫn sẽ nhắc người dùng tải xuống ứng dụng khi thiết bị được kích hoạt lần đầu.</li><li>Một sự kiện tải trước, tương đương với một lượt nhấp, được báo cáo cho AppsFlyer khi thiết bị được bật lần đầu tiên.</li><li>Phân bổ diễn ra khi người dùng mở ứng dụng lần đầu tiên.</li><li>Sự kiện tải trước có mức độ ưu tiên phân bổ cao nhất (trừ khi bật mức độ ưu tiên phân bổ bằng nhau).</li></ul> | `preload_rfr` |
 | Nhấp để tải xuống | <ul><li>Quá trình cài đặt ứng dụng diễn ra sau này trong vòng đời của thiết bị, thông qua thông báo đẩy, cửa hàng thay thế của đối tác, v.v.</li><li>Khi người dùng tương tác với quảng cáo hoặc thông báo đẩy, ứng dụng sẽ tự động được tải xuống và cài đặt trên thiết bị mà không cần chuyển hướng đến cửa hàng ứng dụng.</li><li>Phân bổ được ghi nhận bằng cách sử dụng quy tắc lượt nhấp cuối cùng sẽ thắng của AppsFlyer.</li></ul> | `af_referrer` |
 
+<div id="view-preload-attribution-data" />
+
 ### Tính khả dụng của dữ liệu
 
 Dữ liệu hiệu suất chiến dịch tương tác tải trước/nhấp để tải xuống sẽ được cung cấp như sau:
 
 * **Bảng điều khiển tổng quan:** Tương tác được tính là lượt nhấp trong báo cáo hợp nhất và bảng điều khiển. Chúng được hợp nhất ở cấp đối tác tải trước (nguồn truyền thông) và cấp chiến dịch.
 * **Dữ liệu thô:** Tương tác được cung cấp trong báo cáo lượt nhấp chỉ có sẵn qua Data Locker. Chúng được tìm thấy trong trường URL gốc và có thể được xác định trong thông số af\_engagement\_type dưới dạng preload hoặc click\_to\_download. Đối với lượt cài đặt, hãy xem bảng trong phần trước để biết loại so khớp được hiển thị như thế nào trong dữ liệu thô.
+
+<div id="set-up-preload-referrer-attribution" />
 
 ### Thiết lập phân bổ liên kết giới thiệu tải trước
 
@@ -72,6 +80,8 @@ Dữ liệu hiệu suất chiến dịch tương tác tải trước/nhấp đ�
    Điều này mang lại mức độ ưu tiên phân bổ cho các lượt nhấp chuột xác định ngang bằng với mức độ ưu tiên của các lượt phân bổ tải trước, nghĩa là nếu một lượt nhấp chuột xác định được đăng ký giữa lượt tương tác và lượt cài đặt liên kết giới thiệu tải trước, thì lượt nhấp chuột sẽ nhận được phân bổ theo logic phân bổ tương tác cuối cùng tiêu chuẩn, thay vì bị thay thế bởi liên kết giới thiệu tải trước.
 6. Nhấp vào **Save Integration**.
 7. Cho đối tác tải trước biết rằng bạn đã sẵn sàng phân bổ chiến dịch của họ.
+
+<div id="partners-supporting-preload-referrer-campaigns" />
 
 ### Các đối tác hỗ trợ các chiến dịch liên kết giới thiệu tải trước
 

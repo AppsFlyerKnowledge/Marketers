@@ -22,19 +22,27 @@ x-zendesk:
 ---
 > **Sơ lược:** Người dùng xem quảng cáo (lượt hiển thị) và sau đó cài đặt ứng dụng sẽ được phân bổ theo phân bổ lượt xem qua.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Phân bổ lượt xem qua đo lường số lượt cài đặt, lượt phân bổ lại và lượt tương tác lại của những người dùng đã xem quảng cáo nhưng không nhấp vào quảng cáo đó.
 
+<div id="view-through-attribution-flow" />
+
 ### Luồng phân bổ lượt xem qua
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### Bảng thuật ngữ
 
 * **Lượt hiển thị:** Hiển thị quảng cáo cho người dùng, bất kể người dùng có nhấp chuột hay tương tác khác hay không.
 * **Lượt cài đặt**: nghĩa là lượt cài đặt, lượt phân bổ lại và lượt tương tác lại trong bài viết này.
 * **Phân bổ lượt xem qua:** Phân bổ số lượt cài đặt cho một nguồn truyền thông sau khi người dùng nhìn thấy quảng cáo hiển thị.
+
+<div id="view-through-attribution-principles" />
 
 ### Nguyên tắc phân bổ lượt xem qua
 
@@ -47,12 +55,16 @@ Lượt hiển thị có thể được sử dụng để phân bổ lượt xem
 * Xem xét lượt hiển thị gần đây nhất nếu có nhiều lượt hiển thị.
 * Số lượt nhấp chuột được ưu tiên hơn số lượt hiển thị. Điều này có nghĩa là nếu có nhấp chuột trong giai đoạn xem lại nhấp qua thì nhấp chuột gần đây nhất sẽ thắng. Lần hiển thị gần đây nhất được coi là người đóng góp (hỗ trợ).
 
+<div id="view-through-lookback-window" />
+
 ### Khoảng thời gian xem lại lượt xem qua
 
 * Đối với các kênh không phải là SRN, thời lượng xem lại phân bổ lượt xem qua là 1-24 giờ. Đối với các kênh là SRN, khoảng thời gian xem lại có thể dài hơn.
 * Cách đặt khoảng thời gian:
   * **Các kênh không phải là SRN:** Đặt thời lượng xem lại thông qua các đường dẫn phân bổ lượt hiển thị bằng cách cài đặt thông số  `af_viewthrough_lookback`. Nếu không đặt thông số này thì khoảng thời gian xem lại mặc định là 24 giờ.
   * **Các kênh là SRN**: Khoảng thời gian được xác định bởi SRN. Bạn nên cài đặt giá trị giống với giá trị của các kênh là SRN trong AppsFlyer.
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### Báo cáo và số liệu phân bổ lượt xem qua
 
@@ -63,6 +75,8 @@ Lượt hiển thị có thể được sử dụng để phân bổ lượt xem
   * Dữ liệu cấp độ người dùng (dữ liệu thô) của người dùng được phân bổ thông qua phân bổ lượt xem qua có sẵn và tương tự như dữ liệu của người dùng được phân bổ theo lượt nhấp. Tuy nhiên, một số đối tác hạn chế tính sẵn có của dữ liệu này.
   * Dữ liệu lượt hiển thị (tương tự như dữ liệu lượt nhấp chuột) có sẵn.
   * Trường attributed\_touch\_type chứa giá trị *lượt hiển thị.*
+
+<div id="view-through-operations" />
 
 ## Hoạt động xem qua
 

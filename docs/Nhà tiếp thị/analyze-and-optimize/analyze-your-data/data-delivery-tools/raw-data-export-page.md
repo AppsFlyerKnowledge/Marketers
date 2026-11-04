@@ -152,6 +152,8 @@ Trang xuất dữ liệu thô cung cấp các báo cáo có các tính năng đ�
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Quy trình
 
 <div id="create-a-default-report" />
@@ -237,6 +239,8 @@ Bạn có thể tạo báo cáo tùy chỉnh bằng cách đặt bộ lọc và 
    * Trong quá trình tạo báo cáo, bạn có thể tiếp tục làm việc, tạo báo cáo bổ sung hoặc điều hướng đến các trang khác.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 

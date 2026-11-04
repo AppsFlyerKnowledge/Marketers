@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm câu trả lời cho các câu hỏi thường gặp về việc sử dụng Meta ads trong AppsFlyer.
 
+<div id="meta-ads-faq" />
+
 ## Câu hỏi thường gặp về Meta ads
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -188,6 +190,8 @@ Có. Các liên kết OneLink với Liên kết Ứng dụng, Liên kết Chung 
 
 </Accordion>
 
+<div id="meta-ads-cost-faq" />
+
 ## Câu hỏi thường gặp về chi phí Meta ads
 
 <div id="getting-facebook-cost-data-in-the-appsflyer-dashboard" />
@@ -341,6 +345,8 @@ Nếu bạn muốn chuyển sang tài khoản quảng cáo mới nhưng chi phí
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## Câu hỏi thường gặp về SDK Facebook
 
 <div id="who-needs-facebooks-sdk" />
@@ -369,6 +375,8 @@ Nếu bạn muốn chuyển sang tài khoản quảng cáo mới nhưng chi phí
 * **Dữ liệu chiến dịch Quảng cáo Sản phẩm Động**: Bạn chỉ có thể nhận dữ liệu cho Quảng cáo Sản phẩm Động từ SDK Facebook.
 * **Các tính năng khác của Meta ads**: Bạn có thể cần SDK Facebook vì những lý do không liên quan đến phân bổ như xác thực, kiếm tiền từ quảng cáo, chia sẻ mạng xã hội, mời người dùng, v.v.
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > Thông tin và khuyến nghị ở trên về liên kết sâu và liên kết sâu bị trì hoãn được dựa trên quá trình thử nghiệm kỹ lưỡng mà chúng tôi đã tiến hành bằng cách sử dụng các công cụ dùng thử/xem trước có sẵn của Meta ads, sử dụng cơ chế khác với quảng cáo trực tiếp.
@@ -388,6 +396,8 @@ Nếu bạn có <Anchor target="_blank" href="https://developers.facebook.com/do
     Lưu ý rằng để bật phân bổ SKAN cho iOS 14.5 trở lên, bạn cần <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-interoperation-with-meta-ads#in-app-event-mapping">ánh xạ các sự kiện trong ứng dụng tới Meta ads</Anchor>.
 
 </Accordion>
+
+<div id="meta-ads-attribution-faq" />
 
 ## Câu hỏi thường gặp về phân bổ Meta ads
 
@@ -424,6 +434,8 @@ Tuy nhiên, bạn có thể quảng cáo và ghi nhận lượt cài đặt cho 
 3. Trang đích phải bao gồm nút **Tải xuống Ứng dụng**, liên kết trực tiếp đến thị trường không có trong cửa hàng nơi APK tồn tại.
 4. Khách hàng tiềm năng nhấp vào nút và được chuyển hướng đến thị trường không có trong cửa hàng. Sau khi hoàn tất cài đặt, AppsFlyer phân bổ người dùng cho Meta ads, thông qua API MMP của nó.
 
+<div id="note-2" />
+
 > 📘 **Lưu ý**
 >
 > Giải pháp tương tự áp dụng cho các ứng dụng trong Google Play và App store, trong đó <Anchor target="_blank" href="/marketers/vi/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">yêu cầu có trang đích</Anchor> trước khi chuyển hướng đến thị trường.
@@ -439,6 +451,8 @@ Tuy nhiên, bạn có thể quảng cáo và ghi nhận lượt cài đặt cho 
 Meta ads nhận diện người dùng dựa trên tài khoản Meta ads của họ. Một số người dùng có cả thiết bị iOS và Android được liên kết với cùng một tài khoản Meta ads.
 
 Nếu người dùng đó nhấp vào và xem một quảng cáo cho ứng dụng của bạn trên thiết bị Android của họ, nhưng lại cài đặt ứng dụng trên thiết bị iOS của họ, Meta ads sẽ coi là họ đã tạo lượt cài đặt. Do đó, tên Chiến dịch Android sẽ xuất hiện trên bảng điều khiển iOS của bạn.
+
+<div id="example" />
 
 > 📄 **Ví dụ**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Khái quát:** Hiểu rõ các mã định danh thiết bị được hỗ trợ trong SDK AppsFlyer.
 
+<div id="overview" />
+
 ## Tổng quan
 
 SDK AppsFlyer thu thập các mã định danh thiết bị cho <Anchor target="_blank" href="/marketers/vi/docs/basic-sdk-integration-guide#phân-bổ">các mục đích phân bổ</Anchor>. Mã định danh có thể giúp bạn ánh xạ hành trình của người dùng và hiểu được sở thích của họ.
@@ -41,15 +43,21 @@ SDK hỗ trợ các mã định danh thiết bị sau cho mọi nền tảng:
 | <span id="appsflyer-id"></span>ID AppsFlyer | ID AppsFlyer được tạo tự động cho mọi lượt cài đặt ứng dụng. Bạn có thể sử dụng mã định danh này để thực hiện các hoạt động sau:<ul><li>Gửi <Anchor target="_blank" href="/marketers/vi/docs/server-to-server-events-api-for-mobile-s2s-mobile">các sự kiện trong ứng dụng máy chủ đến máy chủ</Anchor>.</li><li>Khớp ID AppsFlyer với hồ sơ người dùng trong các hệ thống backend của bạn.</li><li>Ánh xạ các mục nhập khi hợp nhất dữ liệu từ API kéo và đẩy.</li></ul> |
 | <span id="customer-user-id"></span>Customer User ID | Trường <Anchor target="_blank" href="/marketers/vi/docs/customer-user-id-field-cuid">Customer user ID (CUID)</Anchor> là một mã định danh người dùng duy nhất do chủ sở hữu ứng dụng và trang web thiết lập. Đặt CUID của riêng bạn vào SDK AppsFlyer cho phép bạn tham chiếu chéo ID duy nhất của mình với ID AppsFlyer và các mã định danh khác. CUID có sẵn trong các báo cáo <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary">dữ liệu thô</Anchor> của AppsFlyer. Bạn cũng có thể sử dụng CUID này trong API đăng lại để tham chiếu chéo với ID nội bộ của bạn. |
 
+<div id="android-device-identifiers" />
+
 ## Mã định danh thiết bị Android
 
 SDK hỗ trợ các mã định danh thiết bị sau cho các nền tảng Android:
+
+<div id="apps-published-on-google-play" />
 
 #### Các ứng dụng được phát hành trên Google Play
 
 | Mã định danh của thiết bị | Mục đích |
 | --- | --- |
 | <span id="gaid"></span>GAID | Mã định danh **có thể được người dùng đặt lại** dành cho người dùng Google Play Android.<br /><br />Kể từ phiên bản SDK V4.8.0, AppsFlyer sẽ tự động thu thập mã nhận dạng thiết bị này. |
+
+<div id="apps-published-in-third-party-app-stores" />
 
 #### Ứng dụng được phát hành trong cửa hàng ứng dụng của bên thứ ba
 
@@ -60,6 +68,8 @@ SDK hỗ trợ các mã định danh thiết bị sau cho các nền tảng Andr
 | <span id="imei"></span>IMEI | Mã định danh thiết bị di động duy nhất, **không thể đặt lại** được sử dụng ở các thị trường không sử dụng Google Play. SDK không tự động thu thập IMEI. Tuy nhiên, nếu có nhu cầu cần thu thập các mã định danh này, nhà phát triển của bạn có thể triển khai việc thu thập.<br /><br />**Lưu ý:**<ul><li>Bắt đầu từ Android 10, quyền truy cập vào IMEI bị <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes#non-resettable-device-ids">hạn chế</Anchor>.</li><li>Không thể sử dụng IMEI cùng với GAID.</li></ul> |
 | <span id="android-id"></span>ID Android | Mã định danh thiết bị di động duy nhất, **không thể đặt lại** được sử dụng ở các cửa hàng ứng dụng của bên thứ ba. SDK không tự động thu thập ID Android. Tuy nhiên, nếu có nhu cầu cần thu thập các mã định danh này, nhà phát triển của bạn có thể triển khai việc thu thập.<br /><br />**Lưu ý:** Không thể sử dụng ID Android cùng với GAID. |
 
+<div id="apple-device-identifiers" />
+
 ## Mã định danh thiết bị Apple
 
 SDK hỗ trợ các mã định danh thiết bị sau cho các nền tảng iOS:
@@ -68,6 +78,8 @@ SDK hỗ trợ các mã định danh thiết bị sau cho các nền tảng iOS:
 | --- | --- |
 | <span id="idfa"></span>IDFA | Mã định danh duy nhất **có thể được người dùng đặt lại** dành cho người dùng Apple iOS hoặc tvOS (Apple TV). Kể từ khi phát hành iOS 14.5, IDFA chỉ khả dụng nếu người dùng đồng ý thông qua <Anchor target="_blank" href="/marketers/vi/docs/about-att-and-skan#att-principles">lời nhắc ATT</Anchor>. |
 | <span id="idfv"></span>IDFV | Mã định danh thiết bị được chia sẻ bởi tất cả các ứng dụng từ **cùng một nhà cung cấp** trên thiết bị. Sau khi ứng dụng đầu tiên được cài đặt, ID sẽ được gán cho ứng dụng đó và các ứng dụng khác từ cùng một nhà cung cấp sẽ được gán cùng một IDFV. Ứng dụng từ các nhà cung cấp khác được gán một IDFV khác.<br /><br />Ngoài ra, khi tất cả các ứng dụng từ một nhà cung cấp cụ thể bị xóa, IDFV cho nhà cung cấp đó sẽ bị xóa và sau khi có cài đặt mới, IDFV mới sẽ được chỉ định. |
+
+<div id="ctv--pc-and-console-app-device-identifiers" />
 
 ## Mã định danh thiết bị CTV
 

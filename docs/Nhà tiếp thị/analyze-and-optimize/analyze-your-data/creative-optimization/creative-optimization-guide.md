@@ -27,7 +27,7 @@ x-zendesk:
 
 [![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)
 
-**<span id="overview"></span>Các bài viết liên quan:** <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-overview-dashboard">Creative Optimization—Bảng điều khiển Tổng quan</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-discovery-ai-dashboard">Creative Optimization—Bảng điều khiển Khám phá</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-partner-integrations">Creative Optimization—tích hợp đối tác</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-etl-reporting">Creative Optimization—Báo cáo ETL</Anchor>
+**<span id="about-creative-optimization"></span><span id="overview"></span>Các bài viết liên quan:** <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-overview-dashboard">Creative Optimization—Bảng điều khiển Tổng quan</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-discovery-ai-dashboard">Creative Optimization—Bảng điều khiển Khám phá</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-partner-integrations">Creative Optimization—tích hợp đối tác</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-etl-reporting">Creative Optimization—Báo cáo ETL</Anchor>
 
 ## Giới thiệu về Creative Optimization
 
@@ -62,6 +62,8 @@ Sau khi bạn đăng ký và thiết lập tài khoản, bảng điều khiển 
 | Tùy chọn | Thiết lập:<ul><li>[Thẻ tùy chỉnh](/docs/creative-optimization-guide#thẻ-tùy-chỉnh)</li><li>[Số liệu tùy chỉnh](/docs/creative-optimization-guide#custom-metrics)</li><li>[Chế độ xem bảng điều khiển cá nhân hóa](/docs/creative-optimization-guide#save-and-share-views)</li></ul> |
 | 4 | Tìm hiểu bảng điều khiển của bạn:<br /><br /><Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-overview-dashboard">Bảng điều khiển Tổng quan</Anchor> - Sử dụng để phân tích hiệu suất mục sáng tạo và tối đa mức tác động của chiến dịch.<br /><br /><Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-discovery-ai-dashboard">Bảng điều khiển Khám phá</Anchor> - Sử dụng để liên tục tạo và duy trì các mục sáng tạo thành công. |
 | 5 | Phân tích dữ liệu hiệu suất mục sáng tạo và tối ưu hóa các mục sáng tạo và/hoặc chiến dịch của bạn dựa trên những phát hiện. |
+
+<div id="creative-assets" />
 
 ## Nội dung mục sáng tạo
 
@@ -101,6 +103,8 @@ Khả năng độc nhất của Creative Optimization là xác định nội dun
 
 Meta Advantage+ (mục sáng tạo động) và Google Universal App Campaigns (UAC) có thể bao gồm các mục sáng tạo quảng cáo có nhiều nội dung. Tuy nhiên, AppsFlyer không chia nhỏ dữ liệu ở cấp độ nội dung. Meta ads cung cấp dữ liệu ở **cấp độ quảng cáo** và Google chỉ cung cấp dữ liệu ở **cấp độ nhóm quảng cáo**. Đối với các loại mục sáng tạo quảng cáo này, AppsFlyer sử dụng mô hình hóa dữ liệu để phân chia dữ liệu hiệu suất trên các nội dung.
 
+<div id="example" />
+
 > 📄 **Ví dụ**
 >
 > Giả sử có một mục sáng tạo quảng cáo trên Facebook có nhiều nội dung. Nội dung A có 60 lượt cài đặt và Nội dung B có 40 lượt cài đặt. Trong AppsFlyer, mục sáng tạo quảng cáo có 50 lượt cài đặt. AppsFlyer phân phối dữ liệu hiệu suất (số lần hiển thị, số lần nhấp, số lượt cài đặt, chi phí và doanh thu) dựa trên tỷ lệ số liệu từ tổng số. Vì vậy, đối với Nội dung A có 60/(60+40)=0,6*50=30 lượt cài đặt và đối với Nội dung B có 40/(60+40)=0,4*50=20 lượt cài đặt. Các chỉ số ở kênh dưới, chẳng hạn như Doanh thu và ROAS, được tính toán dựa trên tỷ lệ cài đặt.
@@ -108,6 +112,8 @@ Meta Advantage+ (mục sáng tạo động) và Google Universal App Campaigns (
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## Lọc và số liệu
 
@@ -259,11 +265,15 @@ Bạn cũng có thể dễ dàng chỉnh sửa hoặc xóa số liệu tùy ch�
 
 </Accordion>
 
+<div id="partner-dimensions-and-metrics" />
+
 <div id="partner-metrics::e592ecd3" />
 
 <Accordion title="Số liệu của đối tác">
 
 Số liệu của đối tác là dữ liệu đến trực tiếp từ các đối tác truyền thông tích hợp (chứ không phải từ dữ liệu phân bổ của AppsFlyer). Các số liệu khác nhau tùy theo đối tác và có thể bao gồm số lần hiển thị, số nhấp chuột, chi phí, số lượt cài đặt, IPM, CVR, CTR, eCPI, CPM, v.v. (tham khảo bảng bên dưới để biết chi tiết dành riêng cho đối tác). Bạn có thể chọn số liệu trong bộ lọc, xem trên toàn bộ bảng điều khiển và thêm vào bảng.
+
+<div id="to-set-up-partner-metrics" />
 
 #### Bảng đối tác
 
@@ -377,6 +387,8 @@ e. Sao chép và dán khóa vào cửa sổ tích hợp mới Creative Optimizat
 
 <Image alt="Unity - tìm ID tổ chức.jpg" src="https://files.readme.io/2cab075ad07eec5d0acdadea27400133dd5edff168c2728e1f624132158a47cf-18564718445969.jpg" width="455px" />
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Chúng tôi khuyên bạn nên nhập thông tin xác thực về số liệu của đối tác khi thiết lập tích hợp đối tác mới. Tuy nhiên, không bắt buộc. Bạn có thể lưu tích hợp này và thêm thông tin xác thực sau. Nhưng xin lưu ý rằng chúng tôi lấy dữ liệu của đối tác trong 90 ngày kể từ thời điểm tích hợp đối tác được tạo, do đó, việc không nhập thông tin xác thực về số liệu của đối tác có thể dẫn đến thiếu dữ liệu.
@@ -406,6 +418,8 @@ Nhấp vào biểu tượng ở phía trên bên phải trang tổng quan để 
 <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## Thẻ tùy chỉnh
 

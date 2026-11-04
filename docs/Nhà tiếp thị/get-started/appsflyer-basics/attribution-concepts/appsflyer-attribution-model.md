@@ -37,6 +37,8 @@ x-zendesk:
 
 [![Mobile_user_journey.png](https://support.appsflyer.com/hc/article_attachments/19544107641105)](https://support.appsflyer.com/hc/article_attachments/19544107641105)
 
+<div id="what-is-attribution" />
+
 ## Phân bổ là gì?
 
 **Phân bổ** là hành động xác định nguyên nhân thúc đẩy (khiến) người dùng cài đặt một ứng dụng hoặc thực hiện các hành vi hậu cài đặt như thu hút lại và phân bổ lại. Kết quả phân bổ là:
@@ -49,6 +51,8 @@ Phân bổ là thiết yếu trong việc tối ưu hóa việc thu hút ngườ
 > 👍 **Lời khuyên**
 >
 > Bạn muốn biết thêm về phân bổ? Hãy xem <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7766/play/18609/attribution-101-part-1">khóa học ngắn, bổ ích</Anchor> này trên Cổng thông tin Học tập AppsFlyer.
+
+<div id="what-is-an-app-install" />
 
 ## Lượt cài đặt ứng dụng là gì?
 
@@ -64,6 +68,8 @@ Trong AppsFlyer, có thể xảy ra một sự kiện phân bổ khi xảy ra b�
 * Trong trường hợp [nhắm mục tiêu lại](/docs/appsflyer-attribution-model#retargeting-attribution):
   * **Thu hút lại**
   * **Phân bổ lại**
+
+<div id="attribution-methods" />
 
 ## Phương thức phân bổ
 
@@ -199,6 +205,8 @@ Chỉ dành cho tương tác lại, người dùng không được chuyển hư�
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### Phương thức phân bổ cho mỗi nguồn truyền thông và tính năng AppsFlyer
 
 Xem các phần tiếp theo để biết phân tích đầy đủ về các phương thức phân bổ cụ thể nào được hỗ trợ, tùy thuộc vào:
@@ -222,6 +230,8 @@ Xem các phần tiếp theo để biết phân tích đầy đủ về các phư
 <table><thead><tr><th rowspan="2">Nguồn truyền thông</th><th colspan="3">Phương thức phân bổ</th></tr><tr><th>Android</th><th>iOS</th><th><strong>Nền tảng CTV, PC và bảng điều khiển</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN</a></td><td><p>Khớp ID thiết bị</p></td><td><ul><li>Khớp ID thiết bị</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td><p>Khớp ID thiết bị</p></td></tr><tr><td><ul><li>Mạng quảng cáo (không phải SRN) thông qua <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">đường dẫn phân bổ cho đối tác</a> </li><li><span>Nền tảng CTV, PC và bảng điều khiển</span></li></ul></td><td><ul><li>Người giới thiệu cài đặt</li><li>Khớp ID thiết bị</li><li>Mô hình xác suất</li></ul></td><td><ul><li>Khớp ID thiết bị</li><li>Mô hình xác suất (trước iOS 14.5)</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><p><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Được cài đặt sẵn trên thiết bị</a></p></td><td>Trước khi cài đặt</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## Loại phân bổ lượt tương tác người dùng
 
@@ -267,6 +277,8 @@ Trong trường hợp cả lượt nhấp và lượt hiển thị đều xảy 
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## Chủ đề phân bổ nâng cao
 
 <div id="in-app-events" />
@@ -307,6 +319,8 @@ Lượt cài đặt lại phát sinh khi người dùng cài đặt ứng dụng
 Khi thử nghiệm thiết bị và cài đặt nhiều lần, hãy <Anchor target="_blank" href="/marketers/vi/docs/registering-test-devices">đăng ký</Anchor> thiết bị với AppsFlyer. Nếu bạn không đăng ký thiết bị thì chỉ có lần cài đặt đầu tiên sẽ được ghi nhận.
 
 Lưu ý rằng AppsFlyer mang lại độ chính xác cao hơn trong việc phân bổ lượt cài đặt lại iOS mà không cần ID nhà quảng cáo. Bạn có thể bật tính năng này trên trang <Anchor target="_blank" href="/marketers/vi/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">App Settings</Anchor>.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### Cài đặt lại các ứng dụng iOS được sao lưu trên iCloud
 

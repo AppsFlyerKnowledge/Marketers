@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Tổng quan:** Báo cáo dữ liệu thô và hợp nhất có sẵn qua Data Locker
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## Báo cáo có sẵn qua Data Locker dành cho nhà quảng cáo
 
 <table><thead><tr><th>Loại dữ liệu</th><th>Nhóm báo cáo</th><th>Cần đăng ký Data Locker</th></tr></thead><tbody><tr><td>Thô</td><td>Hành trình của người dùng—dữ liệu thô</td><td>Có (2)</td></tr><tr><td>Thô</td><td>Protect360</td><td>Có</td></tr><tr><td>Thô</td><td>Phân bổ trên cơ sở người dùng (PBA) </td><td>Không (1)</td></tr><tr><td>Thô</td><td>Tính gia tăng</td><td>Không (1)</td></tr><tr><td>Thô</td><td>SKAN</td><td>Không (1)</td></tr><tr><td>Thô</td><td>Doanh thu Quảng cáo</td><td>Có</td></tr><tr><td>Thô</td><td>CTV</td><td>Có</td></tr><tr><td>Đã hợp nhất</td><td>Phân tích nhóm người</td><td>Không (1)</td></tr><tr><td colspan="3"><p>(1) Nếu không đăng ký Data Locker, bạn phải cung cấp <a href="./data-locker-for-marketers#storage-options" target="_blank">bộ nhớ lưu trữ do bạn sở hữu</a>.</p><p>(2) Ngoại trừ tương tác Đa nền tảng</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ Dưới đây là phần giải thích về các thuật ngữ về tính cập 
 | Hàng ngày+1 | Dữ liệu doanh thu quảng cáo sẽ có sau 1 ngày, nghĩa là dữ liệu được tạo vào ngày thứ Hai sẽ có trong thư mục h=23 thứ Hai sau 20:00 UTC vào thứ Ba. Xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-attribution#data-freshness">tính cập nhật của dữ liệu doanh thu quảng cáo</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## Báo cáo dữ liệu thô
 
@@ -154,6 +158,8 @@ Xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-att
 Xem <Anchor target="_blank" href="/marketers/vi/docs/ctv-pc-and-console-data-via-data-locker">dữ liệu nền tảng CTV, PC và console thông qua Data Locker</Anchor>
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## Báo cáo tổng hợp
 

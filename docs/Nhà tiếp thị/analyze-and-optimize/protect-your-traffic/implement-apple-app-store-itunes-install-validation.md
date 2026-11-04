@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **At a glance:** Prevent attribution of fraudulent activities by using the Apple install validation service for any iOS install (both organic and non-organic).
 
+<div id="receipt-validation-flow" />
+
 ## Receipt validation flow
 
 The receipt validation flow is as follows:
@@ -39,6 +41,8 @@ The receipt validation flow is as follows:
    * The install is rejected and does not appear in our dashboard
    * The ad network does not receive a postback or API call for the invalidated install
    * The install and all the corresponding in-app events are logged in the Protect360 Raw Data Reports: Installs and Blocked in-app events.
+
+<div id="notes" />
 
 > 📘 **Notes**
 >

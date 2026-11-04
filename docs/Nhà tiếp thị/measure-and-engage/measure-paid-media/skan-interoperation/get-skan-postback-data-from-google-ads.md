@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sơ lược:** Cho phép Google chia sẻ nội dung đăng lại iOS của ứng dụng SKAdNewtork (SKAN) của bạn với AppsFlyer.
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Nhận dữ liệu đăng lại SKAN từ Google Ads
 
 Nếu bạn làm việc với nhiều đối tác mạng quảng cáo, cách tốt nhất là thiết lập nó trong AppsFlyer. Bằng cách đó, số liệu hiệu suất SKAN cho tất cả đối tác mạng quảng cáo của bạn, được bổ sung thêm các số liệu khác như chi phí, sẽ có sẵn thông qua nền tảng AppsFlyer.
@@ -40,6 +42,8 @@ Do phương thức báo cáo lượt nhấp chuột của Google và cập nhậ
 
 * Báo cáo tổng hợp và bảng điều khiển cập nhật trở về trước.
 * <Anchor target="_blank" href="/marketers/vi/docs/skan-raw-data-reports">Báo cáo dữ liệu thô</Anchor> không thay đổi hồi tố. Dữ liệu (được cung cấp qua Data Locker) được cung cấp trong các thư mục theo ngày Google cung cấp dữ liệu cho AppsFlyer (ngày đến dữ liệu).
+
+<div id="set-up-interoperation" />
 
 ## Thiết lập hoạt động tương tác
 
@@ -90,6 +94,8 @@ Do phương thức báo cáo lượt nhấp chuột của Google và cập nhậ
 11. Đọc về [sự sai khác về đo lường](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 
@@ -145,6 +151,8 @@ Khi tắt tính năng tích hợp Google Ads, việc tắt nút chuyển đổi
 | <span id="agencies"></span>Đại lý | Nếu đại lý có vai trò người dùng Quản trị viên trong tài khoản Google Ads của nhà quảng cáo thì họ có thể thực hiện quy trình trong bài viết này và thay mặt nhà quảng cáo cho phép hoạt động tương tác Google SKAN. Nhà quảng cáo cũng không cần phải đăng nhập vào Google Ads của mình. Thông tin đăng nhập của đại lý được chỉ định trong tài khoản của nhà quảng cáo. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

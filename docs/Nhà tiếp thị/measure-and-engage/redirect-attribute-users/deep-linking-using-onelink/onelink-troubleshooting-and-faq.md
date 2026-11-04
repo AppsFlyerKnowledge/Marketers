@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **Sơ lược:** Nhanh chóng tìm giải pháp để kiểm tra và gỡ lỗi các vấn đề về chuyển hướng/trạng thái liên kết tùy chỉnh OneLink.
 
+<div id="onelink-troubleshooting-guide" />
+
 ## Hướng dẫn khắc phục sự cố OneLink
 
+<div id="onelink-frequently-asked-questions" />
+
 ## Câu hỏi thường gặp về OneLink
+
+<div id="onelink-template-faq" />
 
 ### Câu hỏi thường gặp về mẫu OneLink
 
@@ -35,6 +41,8 @@ x-zendesk:
 **Liên kết Chung:** Bắt buộc đối với hơn 98% người dùng iOS
 
 **Liên kết Ứng dụng:** Dành cho người dùng Android từ phiên bản 6.0 trở lên. **Lưu ý**: Hệ điều hành Samsung không thể mở ứng dụng bằng Liên kết Ứng dụng Android.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -48,6 +56,8 @@ x-zendesk:
 * Là phương án dự phòng khi Liên kết Chung và Liên kết Ứng dụng không mở được ứng dụng, vì chúng không hoạt động hoặc không được thiết lập.
 
   **Lưu ý:** Việc sử dụng lược đồ URI làm phương án dự phòng cho Liên kết Chung phải tuân theo các hạn chế dựa trên iOS. <Anchor target="_blank" href="/marketers/vi/docs/uri-scheme-fallback-for-ios">Tìm hiểu thêm</Anchor>.
+
+<div id="deep-linking" />
 
 #### Liên kết Sâu
 
@@ -184,6 +194,8 @@ Người dùng máy tính để bàn có thể tương tác với các liên k�
 
 Trong URL hoặc mẫu OneLink, bạn có thể chuyển hướng người dùng máy tính để bàn (Windows hoặc Mac) đến một URL khác. URL web này được thêm vào liên kết trong tham số `af_web_dp`. **Lưu ý:** Nếu liên kết của bạn chứa `af_web_dp`, AppsFlyer không ghi nhận lượt nhấp khi lượt nhấp đó đến từ máy tính để bàn.
 
+<div id="tip" />
+
 > 👍 **Mẹo**
 >
 > Thử chuyển hướng người dùng máy tính để bàn đến URL web có chứa biểu mẫu web dành riêng gửi URL OneLink đến thiết bị di động của người dùng máy tính để bàn qua SMS hoặc email. Tìm hiểu thêm về tùy chọn này thuộc giải pháp <Anchor target="_blank" href="/marketers/vi/docs/set-up-smart-script-to-convert-web-visitors#desktop">Tập lệnh Thông minh OneLink</Anchor>.
@@ -205,6 +217,8 @@ Các ứng dụng trên Chromebook được coi là ứng dụng Android.
    Khi được thêm qua cài đặt liên kết, URL sẽ được thêm vào liên kết của bạn trong tham số `af_android_url`.
 
 </Accordion>
+
+<div id="onelink-link-faq" />
 
 ### Câu hỏi thường gặp về liên kết OneLink
 
@@ -267,6 +281,8 @@ Có thể là do một số lý do sau:
 
 Hai giải pháp để cải thiện trải nghiệm người dùng là URL Dự phòng và liên kết sâu bắt buộc.
 
+<div id="fallback-urls" />
+
 #### URL Dự phòng
 
 URL Dự phòng đưa người dùng đến các trang web được chỉ định nếu việc mở ứng dụng hoặc liên kết sâu không thành công vì bất kỳ lý do gì. **Thận trọng!** Các URL này cũng đưa những người dùng chưa cài đặt ứng dụng của bạn đến URL dự phòng thay vì đến đúng cửa hàng ứng dụng. Vì vậy, hãy đảm bảo chỉ sử dụng tùy chọn này nếu bạn đang nhắm mục tiêu lại người dùng đã cài đặt ứng dụng của bạn.
@@ -276,6 +292,8 @@ URL Dự phòng đưa người dùng đến các trang web được chỉ địn
 [![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
 
 Việc sử dụng tùy chọn cài đặt này sẽ thêm `af_ios_url` và `af_android_url` làm tham số đích cho phương án dự phòng, điều này sẽ khiến người dùng iOS được chuyển hướng đến trang được chỉ định bởi `af_ios_url` và người dùng Android được chuyển hướng đến trang được chỉ định bởi `af_android_url`.
+
+<div id="tip-1" />
 
 > 📄 **Ví dụ**
 >
@@ -291,10 +309,14 @@ Việc sử dụng tùy chọn cài đặt này sẽ thêm `af_ios_url` và `af_
 > * iOS: www.yoursite.com/ios-bonus
 > * Android: www.yoursite.com/android-bonus
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > * Nếu bạn thêm ký hiệu dấu thăng (#) vào giá trị tham số ở URL, bạn cần mã hóa nó.
 > * Khi chuyển hướng xảy ra, tham số URL OneLink đi qua trang đích được chỉ định bởi `af_ios_url` hoặc `af_android_url`. Để ngăn chặn hiện tượng này, hãy thêm tham số `af_param_forwarding=false` vào OneLink.
+
+<div id="forced-deep-linking" />
 
 #### Liên kết sâu bắt buộc
 
@@ -335,6 +357,8 @@ Có. Tuy nhiên, trên Android, khi người dùng nhấp vào liên kết OneLi
 Bật tùy chọn **Enable cost per install** (trong **Advanced parameters**) sẽ cho phép bạn áp dụng giá trị CPI cụ thể cho mỗi lượt cài đặt đến từ liên kết.
 
 Chọn đơn vị tiền tệ chi phí và sau đó là **giá trị CHỈ chứa số** (tối đa 4 chữ số sau dấu phẩy thập phân) biểu thị chỉ số CPI. Điều này sẽ thêm các tham số af\_cost\_currency và af\_cost\_value vào liên kết.
+
+<div id="tip-2" />
 
 > 📄 **Ví dụ**
 >
@@ -471,6 +495,8 @@ Các liên kết sau đây có chức năng giống hệt nhau và hoạt độn
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### Câu hỏi thường gặp về tham số OneLink
 
 <div id="what-parameters-are-mandatory-for-onelink-custom-links" />
@@ -488,6 +514,8 @@ Chỉ tham số kênh truyền thông (**pid**) là bắt buộc.
 **Có,** mọi tham số đều có thể được nối vào URL rút gọn.
 
 **Quan trọng!** Các tham số được nối vào URL rút gọn không ghi đè các tham số bên trong liên kết.
+
+<div id="tip-3" />
 
 > 📄 **Ví dụ**
 >
@@ -549,6 +577,8 @@ Xem thêm thông tin về các <Anchor target="_blank" href="/marketers/vi/docs
 
 </Accordion>
 
+<div id="integrated-partner-faq" />
+
 ### Câu hỏi thường gặp về đối tác tích hợp
 
 <div id="can-i-use-onelink-in-social-apps-unpaid" />
@@ -571,6 +601,8 @@ Bảng sau đây tóm tắt thời điểm OneLink có thể được sử dụn
 
 **Có,** nhưng lưu ý rằng OneLink chủ yếu được sử dụng với mạng truyền thông sở hữu, không phải với mạng quảng cáo. Điều này là do mạng quảng cáo thường quảng cáo trong ứng dụng (có nghĩa là họ biết nền tảng của người dùng, ID thiết bị, v.v.), liên kết phân bổ cụ thể cho ứng dụng và nền tảng là đủ, vì vậy việc sử dụng OneLink là không cần thiết. Tuy nhiên, đối với các trường hợp mạng quảng cáo không biết trước về nền tảng người dùng (ví dụ: khi họ tự chạy các chiến dịch email hoặc SMS), OneLink có thể là giải pháp.
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > Khi sử dụng OneLink với các mạng quảng cáo, bạn phải sử dụng URL đầy đủ của OneLink.
@@ -580,6 +612,8 @@ Bảng sau đây tóm tắt thời điểm OneLink có thể được sử dụn
 * Thực hiện theo <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#attribution-link-tab">hướng dẫn liên kết phân bổ mạng quảng cáo</Anchor> rồi chọn **Use OneLink** khi được nhắc.
 
 Sau khi tất cả các tham số cho Android và iOS được thêm vào đúng cách, khi liên kết tùy chỉnh OneLink được nhấp vào và người dùng được chuyển hướng đến nền tảng phù hợp, các tham số bắt buộc sẽ được gửi đến mạng trong một lượt đăng lại sau khi người dùng cài đặt.
+
+<div id="tip-4" />
 
 > 📄 **Ví dụ**
 >
@@ -656,6 +690,8 @@ Bạn thường có thể mở ứng dụng và liên kết sâu từ quảng c�
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### Câu hỏi thường gặp về thử nghiệm
 
 <div id="how-can-i-ab-test-the-social-app-landing-page" />
@@ -694,6 +730,8 @@ Nếu bạn thấy hộp thoại chọn ứng dụng khi thử nghiệm OneLinks
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### Câu hỏi thường gặp về liên kết sâu
 
 <div id="what-deep-linking-methods-should-be-implemented" />
@@ -717,6 +755,8 @@ Sau khi ứng dụng được khởi chạy bằng bất kỳ phương thức n�
 **Cách tốt nhất để thêm tham số tùy chỉnh là thông qua trang thiết lập liên kết tùy chỉnh**.
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### Câu hỏi thường gặp về iOS 14
 

@@ -32,6 +32,8 @@ Một trong những thách thức với ESP là thực hiện phân bổ chính 
 
 Tuy nhiên, bạn vẫn có thể thực hiện liên kết sâu và ghi lại lượt nhấp chuột với các ESP hỗ trợ Liên kết Chung và Liên kết Ứng dụng trên miền ghi lượt nhấp chuột của chúng. Ngoài ra, bạn có thể thiết lập miền nhấp chuột của riêng mình để hoạt động như miền ghi lượt nhấp chuột.
 
+<div id="prerequisites" />
+
 ## Điều kiện tiên quyết
 
 * Cấu hình ứng dụng của bạn để hỗ trợ <Anchor target="_blank" href="/marketers/vi/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">liên kết sâu với OneLink</Anchor>.
@@ -51,9 +53,13 @@ Tuy nhiên, bạn vẫn có thể thực hiện liên kết sâu và ghi lại l
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Thiết lập miền nhấp chuột Oracle Responsys
 
 Thực hiện theo phần này để thiết lập miền nhấp chuột của bạn (miền ghi lượt nhấp chuột) trong Oracle Responsys.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### Bước 1: Thiết lập miền nhấp chuột trong Oracle Responsys
 
@@ -64,6 +70,8 @@ Thực hiện theo phần này để thiết lập miền nhấp chuột của b
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 Sau khi bạn đặt các miền nhấp chuột trong Bảng Liên kết, Responsys sẽ sử dụng các miền này để bao bọc các OneLink mà bạn đưa vào chiến dịch email. Bằng cách này, Responsys có thể ghi lại các lượt nhấp chuột trong hệ thống của họ đồng thời duy trì chức năng OneLink và liên kết sâu.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Bước 2: Cung cấp cho Responsys tệp AASA (iOS) và tệp Liên kết Nội dung (Android)
 
@@ -95,11 +103,15 @@ Khi bạn thiết lập OneLink với Liên kết Ứng dụng, bạn đã có t
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Thiết lập ứng dụng của bạn
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Bước 1 dành cho Android: Thiết lập ứng dụng của bạn để hỗ trợ Liên kết Ứng dụng">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Thêm miền nhấp chuột vào hoạt động trong tệp kê khai Android
 
@@ -117,6 +129,8 @@ Trong tệp kê khai Android, hãy thêm máy chủ miền nhấp chuột và b�
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### Thiết lập ứng dụng để phân giải các miền nhấp chuột
 
@@ -145,6 +159,8 @@ SDK cần phân giải OneLink đằng sau miền nhấp chuột để biết th
 
 Phần này thảo luận cách thiết lập ứng dụng của bạn để hỗ trợ Liên kết Chung.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Liên kết các miền nhấp chuột trong Xcode
 
 1. Trong Xcode, hãy nhấp vào dự án của bạn.
@@ -153,6 +169,8 @@ Phần này thảo luận cách thiết lập ứng dụng của bạn để h�
 4. Nhấp vào dấu + và thêm miền nhấp chuột của bạn. Ví dụ: applinks:click.example.com.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### Bước 2: Thiết lập ứng dụng để phân giải các miền nhấp chuột
 
@@ -223,6 +241,8 @@ SDK cần phân giải OneLink đằng sau miền nhấp chuột để biết th
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## Gửi email đầu tiên của bạn
 
 1. Tạo URL OneLink trong trang Link Management (hoặc theo cách thủ công).
@@ -242,6 +262,8 @@ SDK cần phân giải OneLink đằng sau miền nhấp chuột để biết th
 
    Ở giai đoạn này, Responsys bao bọc liên kết trên bằng miền nhấp chuột mà bạn đã đưa vào các bước trước. Bất kỳ nhấp chuột nào vào tên miền nhấp chuột đều chuyển hướng đến liên kết phân bổ OneLink. Nếu ứng dụng được cài đặt trên thiết bị của người dùng, miền nhấp chuột sẽ liên kết sâu vào ứng dụng.
 
+<div id="note" />
+
 > 📄 **Ví dụ**
 >
 > Các tham số URL không được mã hóa URL trong ví dụ này, chỉ nhằm mục đích dễ đọc:
@@ -251,6 +273,8 @@ SDK cần phân giải OneLink đằng sau miền nhấp chuột để biết th
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Kiểm tra liên kết của bạn
 

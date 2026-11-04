@@ -130,6 +130,8 @@ part-<number>
 
 <Accordion title="Trường tệp">
 
+<div id="fieldsdimensions" />
+
 #### Trường/Phương diện
 
 | **Trường** | **Lưu ý** | **Luôn được điền** | **Định dạng** | **Có trong tệp tin tóm lược** |
@@ -161,6 +163,8 @@ part-<number>
 | af\_bid\_strategy | Chiến lược đấu thầu được AppsFlyer ánh xạ và chuẩn hóa. Thành phần của thuộc tính chiến dịch. <Anchor target="_blank" href="/marketers/vi/docs/campaign-properties-in-cost-etl-reports">Tìm hiểu thêm</Anchor> | Không | Chuỗi | - |
 | bid\_amount | Thành phần của thuộc tính chiến dịch. <Anchor target="_blank" href="/marketers/vi/docs/campaign-properties-in-cost-etl-reports">Tìm hiểu thêm</Anchor> | Không | Số nguyên | - |
 | original\_bid\_amount | Thành phần của thuộc tính chiến dịch. <Anchor target="_blank" href="/marketers/vi/docs/campaign-properties-in-cost-etl-reports">Tìm hiểu thêm</Anchor> | Không | Số nguyên | - |
+
+<div id="metrics" />
 
 #### Số liệu
 
@@ -293,6 +297,8 @@ Trong AWS, theo mặc định, khi AppsFlyer ghi đối tượng vào bộ chứ
 
 </Accordion>
 
+<div id="best-practices" />
+
 ## Phương pháp thực hành tốt nhất
 
 <div id="override-data" />
@@ -340,6 +346,8 @@ Không phải tất cả các mạng đều cung cấp dữ liệu với mức �
 ETL Chi phí cung cấp thông tin liên quan đến tất cả dữ liệu chi phí của bạn. Một số chiến dịch được cung cấp trong ETL Chi phí không xuất hiện trong một số giao diện điều khiển AppsFlyer, ví dụ: dữ liệu của các chiến dịch không hoạt động, nghĩa là các chiến dịch không có bất kỳ lượt cài đặt nào được ghi lại. Để so sánh dữ liệu, hãy tìm ID chiến dịch cụ thể trong trang tổng quan và so sánh nó với dữ liệu chi phí trong ETL Chi phí. <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">Tìm hiểu thêm về tính khả dụng của dữ liệu chi phí</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Khái quát:** Bật đo lường phân bổ, gửi đăng lại cho đối tác và bật các tính năng tích hợp khác bằng cách thiết lập kết nối đối tác với AppsFlyer.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Đối tác, nguồn truyền thông và nền tảng bên thứ ba tích hợp với AppsFlyer bằng API. Bài viết này hướng dẫn chung về cách kích hoạt và thiết lập tích hợp, bao gồm tạo đường dẫn phân bổ cho các mạng quảng cáo không phải SRN.
@@ -64,6 +66,8 @@ Bạn có thể tìm thấy tất cả các đối tác, nguồn truyền thông
 
 * Trong AppsFlyer, dưới phần **Configuration** đi đến **Partner Marketplace**. Bạn có thể dùng nhiều <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations#lọc-danh-sách-đối-tác">bộ lọc</Anchor> tìm kiếm.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Mời các đối tác mới vào AppsFlyer
 
 Nếu đối tác mà bạn đang làm việc cùng chưa được tích hợp với AppsFlyer, bạn có thể <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations#mời-các-đối-tác-mới-vào-appsflyer">gửi cho họ một đường liên kết lời mời</Anchor>.
@@ -75,6 +79,8 @@ Nếu đối tác mà bạn đang làm việc cùng chưa được tích hợp v
 <Accordion title="Đối tác tích hợp đang hoạt động của bạn">
 
 Trang <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations#tích-hợp-tích-cực">Active integrations</Anchor> trong Partner Marketplace hiển thị tất cả các đối tác tích hợp <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">đang hoạt động</Anchor> của bạn. Từ trang này, bạn có thể tìm hiểu về đối tác và quản lý việc tích hợp.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -106,11 +112,15 @@ Trang này có cấu trúc như sau:
   * **Hủy Thay đổi:** Hoàn tác các thay đổi gần nhất mà không lưu.
   * **Lưu:** Chỉ lưu tùy chọn cài đặt của tab hiện tại.
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### Các tab cài đặt áp dụng cho mỗi loại đối tác
 
 <table><thead><tr><th> </th><th colspan="2">Tab Cài đặt</th><th> </th></tr><tr><th>Loại đối tác</th><th>Tích hợp </th><th>Quyền</th><th>Lưu ý</th></tr></thead><tbody><tr><td>Nguồn truyền thông</td><td>Y</td><td>Y</td><td><p><strong>Các tab khả dụng khác</strong>: Chi phí, doanh thu quảng cáo, đường dẫn phân bổ</p><p>Bao gồm mạng quảng cáo, mạng liên kết, nhà phát hành trực tiếp, quảng cáo có lập trình, mạng quảng cáo nội địa Trung Quốc và Mạng nhắm mục tiêu lại.<br/>Đối với SRN, tab đường dẫn phân bổ không thể áp dụng.</p></td></tr><tr><td>Đại lý </td><td>N</td><td>Y</td><td>Các đại lý độc lập không hoạt động như mạng quảng cáo </td></tr><tr><td>Nền tảng của bên thứ ba</td><td>Y</td><td>N</td><td>Nền tảng tự động hóa Phân tích hoặc Marketing</td></tr><tr><td>Đối tác tiếp thị </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="set-up-a-partner-non-srn" />
 
 ## Thiết lập đối tác (không phải SRN)
 
@@ -118,6 +128,8 @@ Trang này có cấu trúc như sau:
 
 1. Tìm kiếm và chọn đối tác của bạn <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations#quản-lý-các-tiện-ích-tích-hợp-hiện-có">từ marketplace</Anchor> hoặc từ trang **Configuration** > **Active** I**ntegrations**.
 2. Hoàn thành các cài đặt trên mỗi tab, theo yêu cầu. Xem các phần sau.
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >
@@ -132,6 +144,8 @@ Tích hợp đối tác sẽ có yêu cầu khác nhau và có thể chứa mộ
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Hoàn thành các mục theo yêu cầu.
+
+<div id="integration-sections" />
 
 #### Các phần trong Integration
 
@@ -263,6 +277,8 @@ Bảng sau bao gồm các phần khác nhau của trang tích hợp. Một số 
       <td>
         Nếu bật partner integration, bạn có thể gửi đăng lại mặc định cho các đối tác liên quan đến hành động của người dùng xảy ra trước khi khởi chạy ứng dụng, chẳng hạn như lượt cài đặt, lượt cài đặt bị từ chối và lượt thu hút lại.
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **Lưu ý**
         >
         > * Các sự kiện bị từ chối là các sự kiện trong ứng dụng bị <Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">Protect360</Anchor> chặn hoặc các sự kiện được phát hiện là không tuân thủ theo quy tắc xác thực mục tiêu. Trong trường hợp các sự kiện bị từ chối, hãy xác nhận với đối tác rằng họ đã bật tự chối tích hợp sự kiện với AppsFlyer.
@@ -374,6 +390,8 @@ Tạo và lưu các đường dẫn phân bổ để sử dụng mạng quảng 
 3. Thêm thông số cho <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters#các-tham-số-cụ-thể-cho-android">Android</Anchor> và <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters#các-thông-số-cụ-thể-cho-ios">iOS</Anchor>, nếu cần.
 4. [Tùy chọn] Chọn các thông số phân bổ bổ sung.
 
+<div id="attribution-link-parameters" />
+
 #### Thông số đường dẫn phân bổ
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -381,6 +399,8 @@ Tạo và lưu các đường dẫn phân bổ để sử dụng mạng quảng 
 Việc thêm thông số vào đường dẫn phân bổ này cho phép bạn thực hiện việc phân tích truy cập sâu toàn diện. Các thông số đã được xác định trên đường dẫn phân bổ có thể được chỉnh sửa bằng cách thêm chúng và các giá trị mới của chúng ở đây. Khi lưu đường dẫn phân bổ, tất cả các thông số được cấu hình trong tab này cũng sẽ được lưu.
 
 Chọn thông số bạn muốn thêm vào đường dẫn phân bổ.
+
+<div id="attribution-link-parameters-1" />
 
 #### Thông số đường dẫn phân bổ
 
@@ -393,6 +413,8 @@ Chọn thông số bạn muốn thêm vào đường dẫn phân bổ.
 | Thông số Người đăng ký | Sử dụng bất kỳ thông số nào trong số 5 thông số người đăng ký để chèn các giá trị hữu ích. Lưu ý rằng các tham số này được phân tích cú pháp và xuất hiện trong báo cáo dữ liệu thô, giúp chúng trở nên rất tiện dụng để thực hiện hợp nhất hoặc lọc dữ liệu. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 Bạn có thể thêm các thông số khác vào đường dẫn phân bổ bằng cách nhập chúng vào hộp thông số mới. Bạn có thể sử dụng tất cả các <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters">thông số URL có sẵn của AppsFlyer.</Anchor> Lưu ý rằng chỉ lược đồ URI và thông số OneLink được mã hóa trên đường dẫn phân bổ.
+
+<div id="retargeting-settings" />
 
 #### Thiết lập Nhắm lại mục tiêu
 
@@ -412,6 +434,8 @@ Bạn có thể thêm các thông số khác vào đường dẫn phân bổ b�
 
    * Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời.
    * Khung thời gian thu hút lại được thêm vào liên kết trong thông số af\_reengagement\_window.
+
+<div id="click-through-attribution" />
 
 #### Phân bổ lượt nhấp qua
 
@@ -435,6 +459,8 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-l
 2. Sao chép đường dẫn được tạo.
 
 Gửi đường dẫn đến đối tác để được kích hoạt khi khách hàng tiềm năng của bạn nhấp vào quảng cáo tương ứng.
+
+<div id="view-through-attribution-lookback-window" />
 
 #### Cửa sổ xem lại phân bổ lượt xem qua
 
@@ -471,15 +497,21 @@ Gửi đường dẫn cho đối tác để được kích hoạt khi quảng c�
 * Thực hành tốt nhất là triển khai API Chi phí (yêu cầu phải có đăng ký ROI360).
 * API Chi phí bao gồm các báo cáo lượt nhấp và lượt hiển thị. Xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">bảng tích hợp chi phí mạng quảng cáo</Anchor> để biết chi tiết đầy đủ về các phương diện, số liệu và tính năng được hỗ trợ.
 
+<div id="note-2" />
+
 > 📘 **Lưu ý**
 >
 > Nếu nhà quảng cáo sử dụng đại lý để chạy các chiến dịch của họ, thì chính đại lý đó chứ không phải nhà quảng cáo, cần tích hợp với các đối tác có liên quan. Mặt khác, nếu cả nhà quảng cáo và đại lý đều tích hợp với đối tác bằng cách sử dụng cùng thông tin đăng nhập cho cùng một ứng dụng, thì dữ liệu chi phí sẽ bị trùng lặp.
+
+<div id="enabling-cost-data-by-api" />
 
 #### Kích hoạt dữ liệu chi phí bằng API
 
 **Để kích hoạt API Chi phí**:
 
 * Tuân thủ <Anchor target="_blank" href="/marketers/vi/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">hướng dẫn tích hợp này</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Trạng thái đồng bộ dữ liệu chi phí
 
@@ -493,10 +525,14 @@ Gửi đường dẫn cho đối tác để được kích hoạt khi quảng c�
 
 Nếu bạn là nhà phát hành hiển thị quảng cáo trong ứng dụng, thì chức năng doanh thu quảng cáo sẽ cho phép bạn phân bổ doanh thu quảng cáo tới nguồn truyền thông đã mang cho bạn người dùng. <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-attribution">Giới thiệu về phân bổ doanh thu quảng cáo.</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### Cho phép phân bổ doanh thu quảng cáo
 
 1. Kiểm tra xem đối tác hỗ trợ phương thức nào, <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">phân bổ hợp nhất hay cấp độ người dùng</Anchor>.
 2. Thực hiện theo phương thức phù hợp trong <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-attribution#thực-hiện">hướng dẫn tích hợp doanh thu quảng cáo</Anchor>.
+
+<div id="ad-revenue-api-status-messages" />
 
 #### Thông báo trạng thái API doanh thu quảng cáo
 
@@ -521,6 +557,8 @@ Nếu bạn là nhà phát hành hiển thị quảng cáo trong ứng dụng, t
 * Bạn không cần phải bật tích hợp phân bổ với đối tác để cấp quyền cho họ.
 * **Mạng quảng cáo do đại lý thiết lập:** Khi việc thiết lập đối tác do đại lý thực hiện thì nhà quảng cáo không thể xem trạng thái kích hoạt mạng quảng cáo cũng như các quyền được cấp.
 * Nếu mối quan hệ của bạn với đối tác chỉ là đại lý, thì hãy bỏ qua phần **Quyền cấp cho Mạng Quảng cáo** và đặt phần **Quyền cấp cho Đại lý**.
+
+<div id="ad-network-permissions" />
 
 #### Quyền truy cập mạng quảng cáo
 
@@ -551,6 +589,8 @@ Nếu bạn là nhà phát hành hiển thị quảng cáo trong ứng dụng, t
 | <span id="access-protect360-dashboard-raw-data"></span>Truy cập bảng điều khiển Protect360 & dữ liệu thô | Mạng quảng cáo có thể:<ul><li>Truy cập bảng điều khiển Protect360 của họ (bao gồm <Anchor target="_blank" href="/marketers/vi/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Truy cập Protect360, Quy tắc xác thực và dữ liệu thô nếu nằm trong gói đăng ký. ProtectLITE không bao gồm quyền truy cập vào dữ liệu thô.</li></ul>**Lưu ý:** Khi bạn có đăng ký <Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">Protect360</Anchor>, mạng quảng cáo có thể xem toàn bộ bảng điều khiển. Nếu không có đăng ký Protect360, họ có thể xem bảng điều khiển thu gọn. |
 | <span id="access-ad-revenue-raw-data"></span>Truy cập dữ liệu thô về doanh thu quảng cáo | Mạng quảng cáo có thể truy cập <Anchor target="_blank" href="/partners/vi/docs/ad-revenue-signals-for-ua-ad-networks">dữ liệu doanh thu quảng cáo của họ để tối ưu hóa UA</Anchor>.   <br />**Lưu ý:** Quyền này chỉ khả dụng cho các ứng dụng có đăng ký <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>. |
 
+<div id="agency-permissions" />
+
 #### Cấp quyền cho Đại lý
 
 * Khi bạn cấp quyền cho các đại lý, họ có thể cấp quyền cho các mạng quảng cáo mà họ hợp tác cùng để quản lý ứng dụng của bạn. Điều này giống như cấp quyền cho các mạng quảng cáo.
@@ -578,9 +618,13 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/partners/vi/docs/about-age
 
 </Accordion>
 
+<div id="test-the-integration" />
+
 ## Thử nghiệm tích hợp
 
 Sau khi hoàn tất quá trình tích hợp đối tác và trước khi bạn bắt đầu chạy các chiến dịch với đối tác mới được thêm vào, quan trọng là bạn phải thử nghiệm tích hợp. Trong quá trình thiết lập rất có thể xảy ra sai lầm. Thử nghiệm trước giúp tránh rủi ro tiêu tốn nhiều tài nguyên chỉ rồi để phát hiện ra dữ liệu phân bổ của bạn bị thiếu hoặc không chính xác. 
+
+<div id="note-4" />
 
 > 📘 **Lưu ý**
 >
@@ -637,6 +681,8 @@ Nếu gói đăng ký của bạn với AppsFlyer bao gồm quyền truy cập v
 2. Chọn nguồn truyền thông đã thử nghiệm.
 3. Cho phép tối đa 15 phút kể từ khi cài đặt và sau đó tải xuống Báo cáo lượt cài đặt.
 4. Kiểm tra bản ghi lượt cài đặt từ đối tác hiện tại và bao gồm các thông số như nguồn truyền thông, tên chiến dịch, thời gian và loại tiếp xúc, ID thiết bị (nếu được áp dụng), tên đại lý (được gọi là "Đối tác" trong báo cáo), v.v.
+
+<div id="important-2" />
 
 > 🚧 **Quan trọng!**
 >

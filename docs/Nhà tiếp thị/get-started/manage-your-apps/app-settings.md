@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về các tùy chọn cài đặt ảnh hưởng đến phân bổ và phân tích ứng dụng của bạn trên tất cả các nguồn truyền thông.
 
+<div id="app-settings" />
+
 ## Cài đặt Ứng dụng
 
 **Quyền truy cập:**
@@ -38,6 +40,8 @@ x-zendesk:
 1. Trong AppsFlyer, đi tới **Configuration** (Cấu hình) > **App Settings** (Cài đặt của Ứng dụng).
 2. Xem phần cài đặt và thực hiện thay đổi nếu cần trong trang Cài đặt của Ứng dụng.
 3. Nhấp vào **Save settings** (Lưu cài đặt).
+
+<div id="general-app-settings" />
 
 ### Cài đặt ứng dụng chung
 
@@ -124,6 +128,8 @@ x-zendesk:
         * Chức năng thay đổi tiền tệ có sẵn cho các ứng dụng không có doanh thu hoặc chi phí.
         * Đối với các ứng dụng mới, tiền tệ được đặt khi ứng dụng được thêm vào.
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### Công cụ báo cáo bị ảnh hưởng bởi tiền tệ của ứng dụng
 
         | Công cụ báo cáo | Tùy chọn tiền tệ khả dụng |
@@ -139,6 +145,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### Cài đặt phân bổ
 
 | Cài đặt | Mô tả |
@@ -149,6 +157,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>Organic search (SEO) mobile app attribution | Bài đọc liên quan: <Anchor target="_blank" href="/marketers/vi/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Phân bổ tìm kiếm tự nhiên</Anchor><br /><br />**Cách bật phân bổ tìm kiếm tự nhiên:**<ul><li>Đi đến **Settings** > **App settings**, bật **Organic search (SEO) mobile app attribution**.</li></ul> |
 | <span id="uninstall-measurement"></span>Đo lường lượt Gỡ cài đặt | Đo lường lượt gỡ cài đặt liên quan đến lượt cài đặt xảy ra khi bật tính năng đo lường lượt gỡ cài đặt.<br /><br />**Để bật tùy chọn đo lường lượt gỡ cài đặt:**<ol><li>Hoàn thành theo hệ điều hành như sau:<ul><li>**iOS**: Các ứng dụng triển khai tính năng phân bổ lượt gỡ cài đặt iOS cần tải lên chứng chỉ P12 tại đây.</li><li>**Android**: Các ứng dụng yêu cầu Mã khóa Máy chủ Firebase/GCM được xác định tại đây đối với phân bổ lượt gỡ cài đặt Android.</li></ul></li><li>Bật tùy chọn **Uninstall measurement** (Đo lường lượt gỡ cài đặt).</li><li>Nhấp vào **Save settings** (Lưu cài đặt)</li></ol>**Để dừng đo lường lượt gỡ cài đặt:**<ol><li>Tắt tùy chọn **Uninstall measurement** (Đo lường lượt gỡ cài đặt).</li><li>Nhấp vào **Save settings** (Lưu cài đặt).</li></ol> |
 
+<div id="advanced-settings" />
+
 ### Cài đặt nâng cao
 
 | Cài đặt | Mô tả |
@@ -158,6 +168,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>Dự phòng chuyển hướng iOS 10.3 | [Không còn được hỗ trợ] Đối với iOS 10.3+. Chúng tôi đã đơn giản hóa quy trình cho người dùng iOS và thông số này không còn được sử dụng nữa. <Anchor target="_blank" href="/marketers/vi/docs/uri-scheme-fallback-for-ios">Chuyển hướng iOS</Anchor>.<br /><br />Tùy chọn này chỉ có sẵn cho các ứng dụng iOS. |
 | <span id="change-app-name"></span>Thay đổi Tên Ứng dụng | <ul><li>Tên của ứng dụng, tên này sau đó sẽ được hiển thị trên bảng điều khiển và báo cáo dữ liệu. Điều này rất hữu ích nếu bạn có các phiên bản khác nhau của cùng một ứng dụng, ví dụ vì lý do phân phối khu vực.</li><li>Thay đổi này tác động đến việc hiển thị ứng dụng. ID ứng dụng, được sử dụng để xác định ứng dụng khi sử dụng các API AppsFlyer khác nhau, **vẫn giữ nguyên**.</li><li>Tên giới hạn chỉ 50 ký tự.</li></ul> |
 | <span id="outofstore-app-url"></span>URL ứng dụng ngoài cửa hàng | <ul><li>Đặt URL tải xuống ứng dụng được sử dụng để điền các đường dẫn phân bổ.</li><li>Cài đặt này không làm thay đổi các đường dẫn phân bổ đã tạo trước đó.</li></ul>**Giới hạn**: Tùy chọn hoàn toàn không hiển thị nếu bạn không đặt URL khi thêm ứng dụng. Trong trường hợp này, hãy yêu cầu CSM của bạn hoặc liên hệ với [hello@appsflyer.com](mailto:hello@Appsflyer.com) để đặt URL cho bạn.<br /><br />Tùy chọn này chỉ có sẵn cho các ứng dụng Android. |
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

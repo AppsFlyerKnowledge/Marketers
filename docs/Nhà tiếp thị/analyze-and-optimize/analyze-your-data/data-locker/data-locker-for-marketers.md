@@ -57,7 +57,11 @@ Trong Data Locker, hãy chọn ứng dụng, nguồn truyền thông, sự kiệ
 
 </Accordion>
 
+<div id="data-storage-architecture" />
+
 ## Kiến trúc lưu trữ dữ liệu
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -120,6 +124,8 @@ Tệp tin dữ liệu phụ thuộc vào loại phân tách.
 
 <Accordion title="Tùy chọn lưu trữ">
 
+<div id="caution" />
+
 > ❗️ **Chú ý!**
 >
 > Nếu bạn đang sử dụng tùy chọn bộ lưu trữ do nhà tiếp thị sở hữu:
@@ -147,6 +153,8 @@ Tệp tin dữ liệu phụ thuộc vào loại phân tách.
 | Bảo mật | AppsFlyer kiểm soát bộ nhớ. Khách hàng có quyền truy cập đọc. | Nhà tiếp thị kiểm soát bộ lưu trữ.<ul><li>**AWS**: AppsFlyer yêu cầu quyền GetObject, ListBucket, DeleteObject, PutObject đối với bộ chứa. Bộ chứa phải dành riêng cho việc sử dụng AppsFlyer. Không sử dụng bộ chứa cho các mục đích khác.</li><li>**GCS**: Xem <Anchor target="_blank" href="/marketers/vi/docs/data-locker-cloud-service-setup">bài viết về cấu hình GCS</Anchor>.</li></ul> |
 | Dung lượng lưu trữ | Do AppsFlyer quản lý | Do nhà tiếp thị quản lý |
 | Kiểm soát truy cập bằng cách sử dụng điểm cuối VPC với chính sách cho bộ chứa | Không áp dụng | [Tùy chọn] Trong AWS, nếu bạn triển khai thao tác bảo mật điểm cuối VPC ở cấp độ bộ chứa thì bạn phải đưa các máy chủ AppsFlyer vào danh sách cho phép. |
+
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
 
 #### **Thông báo cho nhân viên bảo mật trong trường hợp bộ nhớ do khách hàng kiểm soát**
 
@@ -288,6 +296,8 @@ Quản trị viên có thể đặt lại thông tin đăng nhập của bộ ch
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Thông tin bổ sung
 
 <div id="traits-and-limitations" />
@@ -325,6 +335,8 @@ Quản trị viên có thể đặt lại thông tin đăng nhập của bộ ch
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## Truy xuất dữ liệu AWS
 
 Sử dụng công cụ truy xuất dữ liệu AWS yêu thích của bạn, AWS CLI hoặc một trong những công cụ được mô tả trong các phần tiếp theo. Lưu ý! Các hướng dẫn chính xác phù hợp với các bộ chứa do AppsFlyer sở hữu. Điều chỉnh hướng dẫn, nếu cần, nếu bạn đang kết nối với bộ chứa của mình.
@@ -357,6 +369,8 @@ Trong các lệnh sau, có thể tìm thấy giá trị của `{home-folder}`
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### Liệt kê các tệp tin và thư mục
 
@@ -451,6 +465,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
    Bây giờ bạn có thể truy cập các tệp tin Data Locker.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

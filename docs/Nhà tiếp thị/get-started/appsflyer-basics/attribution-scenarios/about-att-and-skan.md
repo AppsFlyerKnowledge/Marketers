@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## Đo lường phân bổ trong môi trường ATT
 
 AppsFlyer cung cấp cho bạn nhiều phương pháp phân bổ, cung cấp cho bạn một loạt các giải pháp phân bổ hoàn chỉnh. Yêu cầu chấp thuận [ATT](/docs/about-att-and-skan#att-principles) ảnh hưởng đến việc phân bổ trong bối cảnh chiến dịch ứng dụng đến ứng dụng phải trả phí. Do đó, các nhà quảng cáo cần sử dụng kết hợp các giải pháp phân bổ và báo cáo. 
@@ -109,7 +111,11 @@ Trong iOS 14, lượt cài đặt có thể được phân bổ cho cả bảng 
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## Kiến thức quan trọng về iOS 14
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### Các bài viết và liên kết về iOS 14 và SKAN
 
@@ -131,6 +137,8 @@ Trong iOS 14, lượt cài đặt có thể được phân bổ cho cả bảng 
 
 <Accordion title="Tác động của iOS 14 đối với phân bổ và đo lường">
 
+<div id="metrics" />
+
 #### **Số liệu**
 
 Xem xét rằng do ATT, các chỉ số liên quan đến người dùng không chấp thuận ATT có thể bị ảnh hưởng như sau:
@@ -142,6 +150,8 @@ Xem xét rằng do ATT, các chỉ số liên quan đến người dùng không 
 | Nhắm mục tiêu lại | Lượt cài đặt tự nhiên và sự kiện trong ứng dụng | Tương tác lại, Phân bổ lại |  |
 | Apple Search Ads | -- | -- | Không thay đổi. Cả người dùng chấp thuận và không chấp thuận đều được phân bổ chính xác. |
 
+<div id="deep-linking" />
+
 #### **Liên kết Sâu**
 
 Liên kết sâu bị trì hoãn sử dụng <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-legacy-apis#deferred-deep-linking">phương pháp kế thừa onConversionDataSuccess</Anchor> có thể không hoạt động đối với iOS 14.5+ vì nó yêu cầu dữ liệu phân bổ có thể không khả dụng do bảo vệ quyền riêng tư.
@@ -149,6 +159,8 @@ Liên kết sâu bị trì hoãn sử dụng <Anchor target="_blank" href="https
 Chúng tôi khuyên bạn nên sử dụng <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">liên kết sâu hợp nhất (UDL)</Anchor>. UDL tuân thủ các tiêu chuẩn bảo mật iOS 14.5+ và chỉ trả về các tham số liên quan đến liên kết sâu và liên kết sâu bị trì hoãn: `deep_link_value` và `deep_link_sub1`. Các thông số phân bổ như `media_source`, `campaign` và `af_sub1-5` trả về giá trị rỗng và không thể sử dụng cho mục đích liên kết sâu. <Anchor target="_blank" href="https://content.appsflyer.com/ios-14-hub/deep-linking-deferred-deep-linking/">Tìm hiểu thêm</Anchor>
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## Câu hỏi thường gặp—iOS 14+
 
@@ -172,6 +184,8 @@ Chúng tôi khuyên bạn nên sử dụng <Anchor target="_blank" href="https:
 Không. Bạn chỉ cần yêu cầu chấp thuận ATT nếu bạn muốn *theo dõi* một người dùng, thu thập IDFA hoặc làm cả hai.
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## CÂU HỎI THƯỜNG GẶP—SKAN
 
@@ -230,6 +244,8 @@ Thông thường, sự khác biệt này là do xem báo cáo Data Locker không
 Ví dụ: Trong báo cáo ngày 12 tháng 6, báo cáo hiển thị 100 lượt cài đặt từ Google xảy ra vào ngày 11 tháng 6. Trong báo cáo ngày 24 tháng 6, báo cáo cho biết có THÊM 100 lượt cài đặt đã xảy ra vào ngày 11 tháng 6. Bạn sẽ cần xem tất cả các báo cáo trong 13 ngày qua (từ ngày 12 tháng 6 đến ngày 24 tháng 6) và tổng hợp dựa trên thời gian cài đặt hoặc dấu thời gian mạng quảng cáo để đọc chính xác tổng số 200 lượt cài đặt đã xảy ra vào ngày 11 tháng 6.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

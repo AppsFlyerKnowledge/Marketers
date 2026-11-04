@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## Giải pháp đa nền tảng AppsFlyer
 
 Trong bối cảnh kỹ thuật số ngày nay, các chuyên gia tăng trưởng phải đối mặt với thách thức tiếp cận người tiêu dùng trên nhiều thiết bị và nền tảng. Các phương pháp đo lường truyền thống không thể nắm bắt được toàn bộ phạm vi hành trình của người dùng trải dài trên các nền tảng. Đo lường đa nền tảng là điều cần thiết để hiểu tác động của các hoạt động tiếp thị và đưa ra quyết định sáng suốt.
@@ -35,9 +37,13 @@ AppsFlyer cung cấp một giải pháp đa nền tảng mở rộng bổ sung c
 
 Nhà quảng cáo có thể quảng bá một ứng dụng trên cùng một nền tảng hoặc các nền tảng khác nhau như quảng cáo hiển thị. Ví dụ: nhà quảng cáo có thể hiển thị quảng cáo cho ứng dụng Steam trên nền tảng Steam. Hoặc, họ có thể hiển thị quảng cáo cho ứng dụng Steam trên web máy tính để bàn, ví dụ như thông qua Google Ads. Dù chiến lược tiếp thị của họ là gì, các nhà quảng cáo đều tích hợp với AppsFlyer để nhận dữ liệu phân bổ và đo lường hiệu suất về các nguồn (không phải tự nhiên hoặc tự nhiên) và các chiến dịch thúc đẩy cài đặt ứng dụng CTV, PC và nền tảng giao diện điều khiển và các sự kiện sau cài đặt. Các nhà tiếp thị sử dụng những thông tin chi tiết này để tính toán giá trị trọn đời người dùng (LTV) và đo lường và tối ưu hóa các hoạt động tiếp thị. <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model">Tìm hiểu thêm về phân bổ AppsFlyer</Anchor>
 
+<div id="supported-platforms" />
+
 ### Nền tảng được hỗ trợ
 
 <table><thead><tr><th>nền tảng</th><th colspan="2">Phương pháp tích hợp AppsFlyer</th></tr><tr><th> </th><th>S2S</th><th>SDK</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span><span>✓</span></span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span><span>✓</span></span></td></tr><tr><td>MacOS</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Amazon Fire TV</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Chromecast</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Roku</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Vizio</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>LG</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>PlayStation</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Vidaa</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>PC gốc</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span><span>✓</span></span></td><td><span><span><span>✓</span></span></span></td></tr><tr><td>Epic Games</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Nintendo Switch</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr></tbody></table>
+
+<div id="cross-platform-attribution-flows" />
 
 ## Phân bổ nền tảng chéo
 
@@ -139,6 +145,8 @@ Thông tin bổ sung
 * <Anchor target="_blank" href="/marketers/vi/docs/cross-platform-landing-pages-with-smart-script">Tìm hiểu cách thiết lập trang đích đa nền tảng với Smart Script</Anchor>
 
 </Accordion>
+
+<div id="data-availability" />
 
 ## Tính khả dụng của dữ liệu
 

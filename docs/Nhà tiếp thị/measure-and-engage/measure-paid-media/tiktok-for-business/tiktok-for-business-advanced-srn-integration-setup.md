@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
 
+<div id="overview" />
+
 ## Tổng quan
 
 Tích hợp SRN Nâng cao có nghĩa là tất cả lưu lượng truy cập <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">được chấp thuận kép</Anchor> được phân bổ và báo cáo là lưu lượng truy cập SRN thông thường. Đối với lưu lượng truy cập không được chấp thuận, AppsFlyer có thể phân bổ và đo lường lượng phân bổ dựa trên số lượt nhấp và lượt hiển thị từ TikTok, tuân thủ các quy định hạn chế về quyền riêng tư. Tính năng tích hợp hỗ trợ phân bổ lượt nhấp và lượt hiển thị, chi phí, doanh thu quảng cáo và đối tượng.
@@ -47,6 +49,8 @@ Quá trình thiết lập được thực hiện từ trang **Active Integration
 5. Nhấp vào **Save Integration**.
 6. Hoàn thành cấu hình bằng cách sử dụng các thẻ có liên quan, như được mô tả ở phần tiếp theo.
 
+<div id="set-up-tiktok-for-business" />
+
 ## Thiết lập TikTok for Business
 
 Cửa sổ cấu hình bao gồm các thẻ sau: Integration, Attribution link, Cost, Ad revenue và Permissions. Thẻ **Attribution link** không khả dụng đối với TikTok for Business, các thẻ còn lại là tùy chọn.
@@ -63,9 +67,13 @@ Cửa sổ cấu hình bao gồm các thẻ sau: Integration, Attribution link, 
 
 Thẻ **Integration** bao gồm một số phần, như được mô tả bên dưới.
 
+<div id="activate-partner" />
+
 #### Kích hoạt đối tác
 
 Để cấu hình tích hợp, trước tiên bạn phải [bật](#kích-hoạt-đối-tác) nút bật/tắt **Activate partner**. Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation#activating-a-partner">kích hoạt và hủy kích hoạt tích hợp</Anchor> đối tác.
+
+<div id="advanced-data-sharing" />
 
 #### Quyền riêng tư Nâng cao
 
@@ -82,6 +90,8 @@ Chỉ dành cho ứng dụng iOS: Bạn có thể chia sẻ quyền kiểm soát
 > * Khi kích hoạt chức năng tích hợp (`tiktokglobal_int`), nút chuyển đổi **Advanced Privacy** được bật theo mặc định.
 > * Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), nút chuyển đổi **Advanced Privacy** được bật theo mặc định, bất kể trạng thái trước khi di chuyển.
 > * Theo TikTok for Business, giữ nút **on** chuyển đổi **Advanced Privacy** có thể dẫn đến các sự kiện chiến dịch không được báo cáo đầy đủ và hạn chế cải thiện hiệu suất chiến dịch trong tương lai trên TikTok
+
+<div id="general-settings" />
 
 #### Cài đặt chung
 
@@ -102,6 +112,8 @@ Một mã duy nhất được tạo trong Trình quản lý Quảng cáo TikTok 
 > * Khi di chuyển sang tích hợp mới (`tiktokglobal_int`), mọi giá trị từ tích hợp cũ (`bytedanceglobal_int`) đều được tự động nhập vào trường này.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">Tìm hiểu thêm về yêu cầu ID Ứng dụng TikTok đối với iOS 14</Anchor>
 
+<div id="default-postbacks" />
+
 #### Các bài đăng lại mặc định
 
 **Phần này chỉ liên quan đến** **lưu lượng truy cập không được chấp thuận**. Lưu lượng truy cập được chấp thuận sẽ được gửi trực tiếp đến TikTok for Business qua <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns?query=about%20srn">chế độ SRN</Anchor>.
@@ -115,6 +127,8 @@ Cấu hình cách gửi các bài đăng lại cho **lượt cài đặt**, **l�
 >
 > * Chỉ dành cho ứng dụng iOS: Quyền kiểm soát dữ liệu của bạn được chia sẻ với đối tác thông qua các bài đăng lại và <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions">báo cáo</Anchor> tùy thuộc vào trạng thái chuyển đổi **Quyền riêng tư Nâng cao (dành cho iOS 14.5+ trở lên)**.
 > * Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), trạng thái mặc định của cài đặt bài đăng lại là **This partner only**, bất kể trạng thái trước khi di chuyển.
+
+<div id="install-attribution" />
 
 #### Phân bổ lượt cài đặt
 
@@ -137,6 +151,8 @@ Cấu hình cách gửi các bài đăng lại cho **lượt cài đặt**, **l�
 >     Dữ liệu này không có sẵn trong GCD. Báo cáo dữ liệu tổng hợp tiếp tục hiển thị các chuyển đổi lượt xem qua.
 > * Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), cài đặt cửa sổ xem lại (lượt nhấp qua và lượt xem qua) được đặt về **các giá trị mặc định**, bất kể trạng thái trước khi di chuyển. Bạn có thể cập nhật các cài đặt này.
 
+<div id="re-engagement-attribution" />
+
 #### Phân bổ thu hút lại
 
 Đặt khung thời gian thu hút lại, bao gồm phân bổ lượt nhấp qua và lượt xem hết:
@@ -150,6 +166,8 @@ Cấu hình cách gửi các bài đăng lại cho **lượt cài đặt**, **l�
 > Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), nút chuyển đổi **Re-engagement** được **tắt theo mặc định**, bất kể trạng thái trước khi di chuyển. Nếu tích hợp cũ của bạn có <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">chiến dịch nhắm mục tiêu lại</Anchor>, **để đảm bảo tính liên tục, hãy nhớ** **bật tính năng này** trong tích hợp mới.
 
 Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide#reengagement-rules-and-windows">quy tắc và khung thời gian</Anchor> thu hút lại.
+
+<div id="in-app-event-postbacks" />
 
 #### Đăng lại sự kiện trong ứng dụng
 
@@ -216,6 +234,8 @@ Việc tích hợp này cung cấp dữ liệu hợp nhất về chi phí, lư�
 
 6. Nhấp vào **Save Cost**.
 
+<div id="for-roi360-subscribers" />
+
 #### Đối với người đăng ký ROI360
 
 * Các nhà quảng cáo và đại lý đã bật API chi phí trong cả các tích hợp `bytedanceglobal_int` cũ và tích hợp `tiktokglobal_int` hiện tại có thể thấy dữ liệu chi phí trùng lặp. Để tránh điều này, hãy đi đến tích hợp `bytedanceglobal_int` > thẻ **Cost** và tắt nút chuyển đổi.  
@@ -250,9 +270,13 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-a
 
 </Accordion>
 
+<div id="set-up-tiktok-for-business-for-agencies" />
+
 ## Thiết lập TikTok For Business dành cho đại lý
 
 Các đại lý làm việc thay mặt cho nhà quảng cáo có thể bật chức năng tích hợp TikTok for Business và bắt đầu nhận phân bổ cho các chiến dịch của họ. Tuy nhiên, chức năng tích hợp này có một số hạn chế đối với các đại lý.
+
+<div id="agency-limitations" />
 
 ### Hạn chế của đại lý
 

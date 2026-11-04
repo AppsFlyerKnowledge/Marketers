@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **Khái quát:** Xem xét các chức năng SDK bổ sung có sẵn và làm việc với nhà phát triển ứng dụng để triển khai các API như đo lường lượt gỡ cài đặt, phân bổ lời mời người dùng, thông báo đẩy và cài đặt quyền riêng tư.
 
+<div id="additional-attribution-methods" />
+
 ## Các phương thức phân bổ bổ sung
 
 Xem xét các phương thức phân bổ bổ sung này nếu bạn định đo lường TV, số lượt gỡ cài đặt hoặc ứng dụng được cài đặt sẵn.
@@ -66,6 +68,8 @@ Với AppsFlyer, bạn có thể dễ dàng phân bổ lượt cài đặt các 
 
 </Accordion>
 
+<div id="sessions" />
+
 ## Các phiên
 
 Đo lường mức độ tương tác của người dùng với ứng dụng bằng cách đếm số lượng phiên của người dùng trong một khoảng thời gian nhất định. 
@@ -91,6 +95,8 @@ Việc đặt **giá trị cao cho thời gian tùy chỉnh giữa các lần 
 Bạn có thể <Anchor target="_blank" href="/marketers/vi/docs/measure-sessions#session-reporting-by-the-app-sdk">báo cáo phiên người dùng theo cách thủ công</Anchor>. Điều này có thể hữu ích đối với các ứng dụng tiện ích chạy nền.
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## Truyền thông Sở hữu
 
@@ -178,6 +184,8 @@ Tài liệu dành cho nhà phát triển có sẵn như sau:
 **Mẹo!** <Anchor target="_blank" href="/marketers/vi/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">OneLink Smart Script</Anchor> có thể giúp chủ sở hữu ứng dụng chuyển đổi khách truy cập trang web thành người dùng ứng dụng.
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## Quyền riêng tư của người dùng
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Hướng dẫn tích hợp và người dùng SDK Web
 
 * Thẻ JavaScript SDK Web:
@@ -34,11 +36,15 @@ x-zendesk:
 * Triển khai SDK Web cùng với SDK AppsFlyer di động để ghi nhận và lập bản đồ hoạt động của người dùng trên các môi trường web và ứng dụng di động của bạn.
 * Các sự kiện xảy ra bên ngoài trang web có thể được ghi nhận bằng cách sử dụng <Anchor target="_blank" href="/marketers/vi/docs/web-server-to-server-events-api-for-pba-web-s2s">API sự kiện từ máy chủ đến máy chủ Web</Anchor> (Web S2S)
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Tích hợp SDK Web vào trang web
 
 <div id="installation-and-integration" />
 
 <Accordion title="Cài đặt và tích hợp">
+
+<div id="considerations-and-actions-required" />
 
 #### Những điều cần lưu ý và hành động cần thiết
 
@@ -75,9 +81,13 @@ x-zendesk:
 <Tabs>
 <Tab title="Gốc">
 
+<div id="javascript-code-snippet" />
+
 #### Đoạn mã JavaScript
 
 Tích hợp SDK web bằng một trong các phương thức sau.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **Để cài đặt SDK Web không có Biểu ngữ Thông minh:**
 
@@ -94,6 +104,8 @@ o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {webAppId: "WEB_DEV_KEY"}})
 </script>
 ```
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **Để triển khai SDK Web với Biểu ngữ Thông minh:**
 
@@ -365,6 +377,8 @@ Bạn có thể thực hiện các phương thức được mô tả liên quan 
 
 </Accordion>
 
+<div id="principles-of-event-recording" />
+
 ## Nguyên tắc ghi nhận sự kiện
 
 <div id="conversion-and-standard-events" />
@@ -376,6 +390,8 @@ Bạn có thể thực hiện các phương thức được mô tả liên quan 
 * Dữ liệu sự kiện chuyển đổi có sẵn trong các bảng điều khiển PBA.
 * Dữ liệu sự kiện chuyển đổi và tiêu chuẩn có sẵn trong <Anchor target="_blank" href="/marketers/vi/docs/pba-raw-data-reports">báo cáo dữ liệu thô.</Anchor>
 
+<div id="conversion-events" />
+
 ### Sự kiện chuyển đổi
 
 * Sự kiện chuyển đổi cung cấp thông tin chi tiết về nỗ lực tiếp thị và kinh doanh của bạn. Các sự kiện chuyển đổi bao gồm mua, tải xuống, đăng ký và đặt mua dài hạn.
@@ -384,11 +400,15 @@ Bạn có thể thực hiện các phương thức được mô tả liên quan 
 * Sự kiện chuyển đổi được sử dụng để ghi nhận doanh thu và tính toán ROI.
 * Sử dụng chúng để so sánh ngân sách quảng cáo cho các nguồn truyền thông cụ thể so với doanh thu được tạo ra từ người dùng đến từ các nguồn truyền thông này.
 
+<div id="standard-events" />
+
 ### Sự kiện tiêu chuẩn
 
 * Các sự kiện tiêu chuẩn được sử dụng để xác thực hành trình của người dùng và các kênh đưa đến lượt chuyển đổi.
 * Sử dụng chúng để đo lường hoạt động của người dùng và đánh dấu các nguồn truyền thông mang đến người dùng bị thu hút.
 * Ghi nhận hoạt động của người dùng để đánh dấu người dùng cho các chiến dịch thu hút lại.
+
+<div id="recording-events" />
 
 ### Ghi nhận sự kiện
 
@@ -447,6 +467,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 Các sự kiện mà bạn gửi phụ thuộc vào bản chất của ứng dụng web của bạn. Ví dụ: một ứng dụng cửa hàng trực tuyến yêu cầu một tập hợp các sự kiện khác với một đơn vị đưa tin. Xem các tình huống sau để biết các sự kiện bạn nên gửi và thời điểm gửi.
 
+<div id="online-store" />
+
 #### Cửa hàng trực tuyến
 
 Giả sử bạn đang quản lý một cửa hàng trực tuyến. Một số sự kiện tiêu chuẩn mà bạn có thể muốn ghi nhận sẽ là:
@@ -490,6 +512,8 @@ Phần này dành cho các nhà phát triển web.
    2. Tải trọng Yêu cầu phù hợp với các thông số trong sự kiện.
 
 </Accordion>
+
+<div id="examples" />
 
 ## Ví dụ:
 
@@ -899,6 +923,8 @@ Hàm setCustomerUserId có thể được gửi ở bất kỳ giai đoạn nào
 Sử dụng cùng một giá trị CUID như bạn đã làm trong hàm setCustomerUserId trong ứng dụng dành cho thiết bị di động (xem setCustomerUserId dành cho thiết bị di động cho: <Anchor target="_blank" href="/marketers/vi/docs/customer-user-id-field-cuid#ios-sdk-developer-instructions">iOS</Anchor>, <Anchor target="_blank" href="/marketers/vi/docs/customer-user-id-field-cuid#android-sdk-developer-instructions">Android,</Anchor> Unity)
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## Thông tin bổ sung
 

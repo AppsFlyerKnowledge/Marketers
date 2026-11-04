@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **Khái quát:** Khi thực hiện các thử nghiệm phân bổ, hãy đăng ký thiết bị thử nghiệm của bạn để đảm bảo mỗi lượt cài đặt được ghi nhận dưới dạng một lượt cài đặt mới. Thiết bị thử nghiệm đã đăng ký ngăn không cho ghi nhận các lượt cài đặt dưới dạng lượt cài đặt lại.
 
+<div id="why-register-a-test-device" />
+
 ## Lý do phải đăng ký thiết bị thử nghiệm
 
 Khi thực hiện thử nghiệm phân bổ, khung thời gian phân bổ lại giới hạn số lần phân bổ lượt cài đặt thành một lần trong 90 ngày. Vì vậy, nếu bạn sử dụng cùng một thiết bị nhiều lần để thử nghiệm phân bổ lượt cài đặt, thì sẽ không có thông tin nào được ghi nhận. Việc đăng ký một thiết bị làm thiết bị thử nghiệm sẽ tránh ghi lại các lượt cài đặt lặp lại trên thiết bị đã đăng ký thành lượt cài đặt lại.
+
+<div id="methods-for-registering-a-test-device" />
 
 ## Phương pháp đăng ký thiết bị thử nghiệm
 
@@ -38,6 +42,8 @@ Khi thực hiện thử nghiệm phân bổ, khung thời gian phân bổ lại 
 Bạn có thể sử dụng một trong các phương thức sau để đăng ký:
 
 * [Tải xuống và cài đặt ID thiết bị của tôi bằng ứng dụng AppsFlyer:](#register-a-device-using-the-appsflyer-device-id-app-admin-only) Sau khi cài đặt ứng dụng trên thiết bị thử nghiệm, bạn có thể tự động đăng ký thiết bị và chia sẻ thông tin ID thiết bị cho tài khoản AppsFlyer của mình. Thiết bị sẽ được liệt kê tự động trên trang **Thiết bị thử nghiệm**.
+
+  <div id="note" />
 
   > 📘 **Lưu ý**
   >
@@ -58,6 +64,8 @@ Mã định danh thiết bị bao gồm:
 
 * **Android:** AID (GAID hoặc OAID), IMEI, ID Android
 
+  <div id="note-1" />
+
   > 📘 **Lưu ý**
   >
   > Khi đăng ký thiết bị thử nghiệm, bạn nên thêm IMEI hoặc mã định danh thiết bị ID Android chỉ nếu như ứng dụng của bạn thu thập và sử dụng các mã định danh này.
@@ -66,6 +74,8 @@ Mã định danh thiết bị bao gồm:
 * **Windows Phone:** ID quảng cáo của Windows
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## Quản lý đăng ký thiết bị thử nghiệm
 
@@ -179,6 +189,8 @@ Người dùng tài khoản có thể đăng ký thiết bị theo cách thủ c
 
 5. Nhấp vào **Save**. Thiết bị hiển thị trong danh sách các thiết bị đã đăng ký. **Lưu ý**: Mặc dù thiết bị hiển thị ngay lập tức trong danh sách các thiết bị đã đăng ký, nhưng quy trình đăng ký vào hệ thống và hoạt động như dự kiến có thể mất vài phút.
 
+<div id="note-2" />
+
 > 📘 **Lưu ý**
 >
 > **Thêm nhiều hơn một mã định danh**
@@ -207,6 +219,8 @@ Mỗi tài khoản có thể đăng ký tối đa 200 thiết bị. Chỉ ngư�
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## Đăng ký thiết bị thử nghiệm iOS
 
 Biểu đồ tiến trình bên dưới minh họa các đường lối hành động khả thi khi đăng ký thiết bị thử nghiệm iOS của bạn.
@@ -219,9 +233,13 @@ Chọn giữa các tùy chọn sau khi đăng ký thiết bị thử nghiệm iO
 
 <Accordion title="Đăng ký thiết bị thử nghiệm của bạn bằng IDFA">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **Khi nào nên dùng IDFA để đăng ký thiết bị thử nghiệm?**
 
 Bạn có thể đăng ký bằng IDFA nếu AppTransparency Tracking (ATT) được triển khai trên ứng dụng của bạn và bạn muốn chạy thử nghiệm với tư cách là người dùng đồng ý. Khi khởi chạy ứng dụng đã thử nghiệm lần đầu, hãy nhớ nhấp vào **Allow** trong lời nhắc ATT.
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **Làm thế nào để đăng ký thiết bị thử nghiệm bằng IDFA?**
 
@@ -233,6 +251,8 @@ Bạn có thể đăng ký bằng IDFA nếu AppTransparency Tracking (ATT) đ�
 
 <Accordion title="Đăng ký thiết bị thử nghiệm bằng IDFV">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **Khi nào nên dùng IDFV để đăng ký thiết bị thử nghiệm?**
 
 Nếu không thể truy cập IDFA, IDFV là lựa chọn duy nhất của bạn. Dưới đây là các tình huống bạn **phải sử dụng IDFV**:
@@ -240,11 +260,15 @@ Nếu không thể truy cập IDFA, IDFV là lựa chọn duy nhất của bạn
 * **ATT đã được triển khai** nhưng bạn muốn chạy thử nghiệm với tư cách là người dùng không đồng ý. Khi khởi chạy ứng dụng lần đầu, hãy nhớ nhấp vào **Don't Allow** trong lời nhắc ATT.
 * **ATT không hề được triển khai**.
 
+<div id="how-to-register-your-device-with-idfv" />
+
 #### **Làm thế nào để đăng ký thiết bị bằng IDFV?**
 
 1. Trước khi bạn có thể đăng ký thiết bị thử nghiệm bằng IDFV, nhà phát triển của bạn phải cài ứng dụng công cụ thử nghiệm IDFV trên thiết bị thử nghiệm của bạn. Để xem hướng dẫn dành cho nhà phát triển, bạn có thể giới thiệu <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-the-idfv-test-tool-app">bài viết này</Anchor> cho nhà phát triển của bạn.
 2. Sau khi nhà phát triển của bạn cài đặt ứng dụng công cụ thử nghiệm IDFV, khởi chạy ứng dụng và sao chép IDFV được hiển thị.
 3. [Đăng ký thiết bị thử nghiệm thủ công](#register-a-device-manually) bằng IDFV.
+
+<div id="note-3" />
 
 > 📘 **Lưu ý**
 >

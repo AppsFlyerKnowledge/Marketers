@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Khái quát:** The Trade Desk, một đối tác tích hợp mạng quảng cáo của AppsFlyer, sử dụng giải pháp quảng cáo di động nâng cao của mình để phát triển các chiến dịch chiến lược, thông minh và có khả năng mở rộng nhằm đáp ứng nhu cầu của người dùng sử dụng nhiều thiết bị. The Trade Desk cung cấp phân bổ di động dựa trên lượt nhấp, phân bổ di động lượt xem qua và nhắm mục tiêu lại dựa trên lượt nhấp, tất cả đều có thể được ghi nhận thông qua AppsFlyer.
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## Thiết lập The Trade Desk (TTD)
 
 Thực hiện theo các bước sau để bật tính năng đo lường chiến dịch AppsFlyer.
@@ -97,6 +99,8 @@ Trong bước này, bạn sẽ thêm các trình theo dõi lượt nhấp và l�
 
 </Accordion>
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Nếu bạn đã chọn để các lượt chuyển đổi sẽ do TTD phân bổ (ở [Bước 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), bạn có thể chỉnh sửa khung thời gian phân bổ:
@@ -107,6 +111,8 @@ Trong bước này, bạn sẽ thêm các trình theo dõi lượt nhấp và l�
 >    * **De-duplication Windows:** Số lượt chuyển đổi bạn có thể thấy trong một khoảng thời gian nhất định.
 >    * **Campaign Attribution Windows:** Khoảng thời gian từ khi hiển thị quảng cáo đến khi chuyển đổi.
 > 4. Nhấp vào **SAVE**.
+
+<div id="integrating-ttd-with-appsflyer" />
 
 ## Tích hợp TTD với AppsFlyer
 
@@ -129,14 +135,20 @@ Cửa sổ cấu hình TTD bao gồm ba thẻ hoạt động: Integration, Attri
 
 <Accordion title="Tab tích hợp">
 
+<div id="activate-partner" />
+
 #### Kích hoạt đối tác
 
 Trong lần truy cập đầu tiên, bạn sẽ cần bật nút bật/tắt **Activate partner** để thiết lập tích hợp. Nút chuyển đổi phải ở trạng thái bật trong thời gian bạn làm việc với TTD.  
 Để biết thêm chi tiết về kích hoạt đối tác, vui lòng nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">đây</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Quyền riêng tư Nâng cao
 
 Đối với các ứng dụng iOS, nút bật/tắt <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">Enable Advance Privacy</Anchor> sẽ xuất hiện. Khi được bật, tính năng này sẽ giới hạn việc chia sẻ mã định danh người dùng với đối tác. Lưu ý rằng khi bật nút chuyển đổi <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> trong Cài đặt của Ứng dụng, **Enable Advanced Privacy** sẽ được bật và khóa theo mặc định. 
+
+<div id="general-settings" />
 
 #### Cài đặt chung
 
@@ -150,6 +162,8 @@ The Trade Desk kết nối với AppsFlyer thông qua ID mạng duy nhất. Nế
 
 Bật **Enable View-Through attribution** để phân bổ lượt cài đặt lượt xem từ The Trade Desk. Thanh trượt xem lại lượt xem qua có sẵn trên thẻ đường dẫn phân bổ (mô tả dưới đây).
 
+<div id="default-postbacks" />
+
 #### Postback Mặc định
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -159,9 +173,13 @@ Gửi bài đăng lại tự động đến The Trade Desk sau lượt cài đ�
 * **This partner only**: chỉ dành cho các sự kiện đến từ người dùng được phân bổ đến The Trade Desk.
 * **All media sources including organic**: để toàn bộ cơ sở người dùng của bạn được báo cáo cho The Trade Desks.
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > Là một mạng cho tất cả các lượt cài đặt, The Trade Desk ưu tiên nhận bài đăng lại cho tất cả lượt cài đặt mới ứng dụng của bạn từ bất kỳ nguồn nào và họ khuyến khích chọn **All media sources including organic** để gửi mọi bài đăng lại lượt cài đặt đến The Trade Desk.
+
+<div id="in-app-events-settings" />
 
 #### Thiết lập Sự kiện trong Ứng dụng
 
@@ -194,6 +212,8 @@ Gửi bài đăng lại tự động đến The Trade Desk sau lượt cài đ�
 
 Tạo và lưu đường dẫn phân bổ và gửi chúng cho TTD để phân bổ các chiến dịch, nhóm quảng cáo hoặc quảng cáo đơn lẻ cụ thể - cho cả chiến dịch UA và chiến dịch nhắm mục tiêu lại. Bạn có thể sử dụng liên kết một nền tảng hoặc <Anchor target="_blank" href="/marketers/vi/docs/onelink-guide">OneLink</Anchor>.
 
+<div id="attribution-link-parameters" />
+
 #### Thông số đường dẫn phân bổ
 
 Việc thêm thông số vào đường dẫn phân bổ này cho phép bạn thực hiện việc phân tích truy cập sâu toàn diện. Các thông số đã được xác định trên đường dẫn phân bổ có thể được chỉnh sửa bằng cách thêm chúng và các giá trị mới của chúng ở đây. Khi lưu đường dẫn phân bổ, tất cả các thông số được cấu hình trong thẻ này cũng sẽ được lưu.
@@ -201,6 +221,8 @@ Việc thêm thông số vào đường dẫn phân bổ này cho phép bạn th
 Chọn thông số bạn muốn thêm vào đường dẫn phân bổ.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### Thông số mặc định
 
@@ -214,6 +236,8 @@ Chọn thông số bạn muốn thêm vào đường dẫn phân bổ.
 
 Bạn có thể thêm nhiều thông số hơn cho đường dẫn phân bổ. Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#attribution-link-tab">cách thiết lập đường dẫn phân bổ</Anchor> và về <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters">cấu trúc và thông số</Anchor> đường dẫn phân bổ .
 
+<div id="parameters-for-measuring-ctv" />
+
 #### Thông số đo lường CTV
 
 Bạn có thể đo lưu lượng CTV với AppsFlyer bằng cách thêm các thông số và giá trị sau:
@@ -222,6 +246,8 @@ Bạn có thể đo lưu lượng CTV với AppsFlyer bằng cách thêm các th
 | --- | --- | --- |
 | redirect | false |  |
 | af\_xplatform\_vt\_lookback | 1h-72h | Có thể nhập bất kỳ giá trị nào trong khoảng từ 1 - 72 giờ |
+
+<div id="click-through-attribution" />
 
 #### Phân bổ lượt nhấp qua
 
@@ -236,6 +262,8 @@ Thông số đường dẫn phân bổ: af\_click\_lookback
 Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">khung thời gian xem lại lượt nhấp</Anchor>.
 
 **Đường dẫn phân bổ lượt nhấp qua:** Chứa tất cả các thông số bạn đã đưa vào thiết lập đường dẫn phân bổ. Bạn có thể sao chép liên kết và gửi cho đối tác để được kích hoạt khi khách hàng tiềm năng của bạn nhấp vào quảng cáo tương ứng. 
+
+<div id="view-through-attribution" />
 
 #### Phân bổ lượt xem qua
 
@@ -278,6 +306,8 @@ Trong thẻ này, bạn có thể chọn các quyền để cấp cho The Trade 
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Sử dụng các nút chuyển đổi này để cấp quyền cho mạng quảng cáo xử lý cấu hình riêng cho ứng dụng của bạn:
+
+<div id="ad-network-permissions" />
 
 #### **Quyền truy cập mạng quảng cáo**
 

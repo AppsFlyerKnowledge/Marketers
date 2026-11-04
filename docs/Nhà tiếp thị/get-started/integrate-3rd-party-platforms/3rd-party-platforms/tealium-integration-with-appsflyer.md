@@ -24,13 +24,19 @@ x-zendesk:
 
 <Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
+<div id="overview" />
+
 ## Tổng quan
 
 Bằng cách tích hợp Tealium với AppsFlyer, khách hàng di động có thể tận dụng SDK phân bổ di động AppsFlyer và gửi dữ liệu chuyển đổi phân bổ trực tiếp đến hồ sơ Tealium AudienceStream của họ.
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions#hạn-chế-nguồn-truyền-thông">Một số nguồn truyền thông</Anchor> hạn chế chia sẻ dữ liệu với các bên thứ ba. Do đó, đăng lại cho các sự kiện bị hạn chế sẽ không được gửi tới đối tác này, bất kể lựa chọn đã định cấu hình để gửi đăng lại là gì.
+
+<div id="setting-up-tealium" />
 
 ## Thiết lập Tealium
 
@@ -39,6 +45,8 @@ Bạn có thể chọn một trong các cách sau để tích hợp Tealium vớ
 * Tích hợp phía máy khách
 * Tích hợp phía máy chủ
 
+<div id="client-side-integration" />
+
 ### Tích hợp phía máy khách
 
 Sử dụng lệnh từ xa cho thư viện iOS và Android, cho phép kích hoạt mã gốc trong SDK AppsFlyer.
@@ -46,6 +54,8 @@ Sử dụng lệnh từ xa cho thư viện iOS và Android, cho phép kích ho�
 **Để tích hợp Tealium bằng chức năng tích hợp phía máy khách:**
 
 * Làm theo <Anchor target="_blank" href="https://docs.tealium.com/platforms/remote-commands/integrations/appsflyer/">hướng dẫn tích hợp lệnh từ xa</Anchor>
+
+<div id="server-side-integration" />
 
 ### Tích hợp phía máy chủ
 

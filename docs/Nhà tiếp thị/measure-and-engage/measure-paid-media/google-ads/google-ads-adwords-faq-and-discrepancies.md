@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Tổng quan:** Khắc phục sự cố thường gặp và sự khác biệt liên quan đến Google Ads.
 
+<div id="google-ads-faq" />
+
 ## Câu hỏi thường gặp về Google Ads
 
 <div id="why-am-i-not-seeing-clicks-from-google-ads" />
@@ -150,6 +152,8 @@ Theo dõi song song của Google Ads cho phép trang đích của bạn tải nh
 
 Để đọc thêm giải thích đầy đủ về Theo dõi Song song, nhấp vào <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7544674?hl=en">đây</Anchor>.
 
+<div id="what-is-needed" />
+
 #### Điều gì cần thiết?
 
 Để tính năng theo dõi song song hoạt động như dự định, URL cuối cùng phải khớp với URL của chiến dịch và được đưa vào <Anchor target="_blank" href="https://support.google.com/google-ads/answer/6305348?hl=en">thông số ValueTrack `{lpurl}` của Google.</Anchor>
@@ -183,6 +187,8 @@ Nhấp vào đây để xem cách định cấu hình các chiến dịch web c�
 
 <Accordion title="Làm cách nào để thiết lập cấu hình một chiến dịch với Cấu hình Android hoặc iOS">
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > AppsFlyer hỗ trợ tất cả các chiến dịch ứng dụng được kích hoạt bởi Quảng cáo Google.
@@ -197,6 +203,8 @@ Nhấp vào đây để xem cách định cấu hình các chiến dịch web c�
 
 Để hỗ trợ phân bổ Android, hãy đảm bảo rằng ứng dụng của bạn hỗ trợ thu thập GAID (ID Quảng cáo của Google) và ứng dụng đó được chuyển đến AppsFlyer thông qua SDK của chúng tôi.
 
+<div id="creating-conversion-recording-installs" />
+
 #### Tạo Ghi nhận Chuyển đổi (Lượt cài đặt)
 
 Để biết chi tiết về cách tạo ghi nhận chuyển đổi, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">here</Anchor>.
@@ -204,6 +212,8 @@ Nhấp vào đây để xem cách định cấu hình các chiến dịch web c�
 <span id="inapp_events"></span>Quảng cáo Google - Cấu hình Android - Gửi Sự kiện trong Ứng dụng
 
 Nếu bạn muốn đo lường thêm sự thành công của các chiến dịch Cài đặt Ứng dụng Di động trong Google, bạn có thể gửi các sự kiện trong ứng dụng đến tài khoản Quảng cáo Google từ tài khoản AppsFlyer của mình.
+
+<div id="create-a-conversion-in-app-events" />
 
 #### Tạo một Chuyển đổi (Sự kiện trong Ứng dụng)
 
@@ -215,6 +225,8 @@ Nếu bạn muốn đo lường thêm sự thành công của các chiến dịc
 
 <Accordion title="Cấu hình iOS cho Quảng cáo Google">
 
+<div id="google-ads---ios-configuration-app-campaigns" />
+
 #### Google Ads - Cấu hình iOS: chiến dịch ứng dụng
 
 Các chiến dịch ứng dụng cho phép bạn quảng bá ứng dụng iOS của mình trên Tìm kiếm Google, YouTube và Display ở một nơi cấu hình duy nhất.
@@ -223,13 +235,19 @@ Nói chung, bản thân Google không thể tự phân bổ cài đặt iOS từ
 
 Trái lại, **tìm kiếm iOS** **trên** **Chiến dịch Ứng dụng có thể được phân bổ bởi Google**, cho những quảng cáo được phục vụ trên **Ứng dụng Tìm kiếm Google.**
 
+<div id="creating-conversion-recording-installs-1" />
+
 #### Tạo Ghi nhận Chuyển đổi (Lượt cài đặt)
 
 Để biết chi tiết về cách tạo ghi nhận chuyển đổi, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#step-2-set-up-google-ads-on-appsflyer-mandatory">here</Anchor>.
 
+<div id="google-ads---ios-configuration---sending-in-app-events" />
+
 #### Google Ads - Cấu hình iOS - gửi sự kiện trong ứng dụng
 
 Nếu bạn muốn đo lường thêm sự thành công của các chiến dịch Cài đặt Ứng dụng Di động trong Google, bạn có thể gửi các sự kiện trong ứng dụng đến tài khoản Quảng cáo Google từ tài khoản AppsFlyer của mình.
+
+<div id="creating-a-conversion-in-app-events" />
 
 #### Tạo một Chuyển đổi (Sự kiện trong Ứng dụng)
 
@@ -251,11 +269,15 @@ Dữ liệu tổng hợp trong quá khứ vẫn giữ nguyên.
 
 </Accordion>
 
+<div id="google-ads-discrepancies" />
+
 ## Sự khác biệt về Google Ads
 
 Đôi khi, có sự khác biệt giữa bảng điều khiển Quảng cáo Google và bảng điều khiển AppsFlyer.
 
 Trong khi chúng tôi làm việc chặt chẽ với Google để giảm thiểu những khác biệt này, các nhà quảng cáo nên biết các nguyên nhân sau đây cho những khác biệt đó.
+
+<div id="both-ios-and-android" />
 
 #### iOS và Android
 
@@ -273,11 +295,15 @@ Trong khi chúng tôi làm việc chặt chẽ với Google để giảm thiểu
 | **Chi phí - Các kênh chiến dịch Google Ads** | Google báo cáo chi phí cho tất cả các kênh của một chiến dịch nhất định - YouTube, hiển thị và tìm kiếm. | AppsFlyer nhận dữ liệu chi phí từ Google cho tất cả các kênh của chiến dịch, nhưng chỉ phân bổ lượt chuyển đổi từ YouTube và các kênh hiển thị trong iOS AC. Do đó, tổng CPI trong AppsFlyer sẽ cao hơn. |
 | **Lượt cài đặt SKAN** | Từ API Google Ads V10+, trang tổng quan Google Ads không phân biệt giữa các lượt cài đặt với did\_win=TRUE và did\_win=NULL. Sự khác biệt chỉ trong dữ liệu thô. | Từ Google Ads API V10+, AppsFlyer chỉ hiển thị các lượt cài đặt từ các lượt đăng lại với did\_win=TRUE. Do đó, số lượt cài đặt trong AppsFlyer có thể thấp hơn. |
 
+<div id="notes" />
+
 > 📘 **Lưu ý**
 >
 > * Mặc dù Google Ads hiển thị tất cả lượt cài đặt của chiến dịch nhắm mục tiêu lại ở cùng một nơi, nhưng trong bảng điều khiển Tổng quan của AppsFlyer, chế độ xem UA sẽ hiển thị lượt cài đặt mới, chế độ xem nhắm mục tiêu lại hiển thị các lượt phân bổ lại và chế độ xem hợp nhất hiển thị cả hai.
 > * Khi so sánh dữ liệu từ bảng điều khiển Quảng cáo Google và AppsFlyer, hãy đảm bảo rằng dữ liệu trong bảng điều khiển Quảng cáo Google là dữ liệu được nhập từ phân tích của bên thứ 3 (AppsFlyer). Dữ liệu được nhập từ Firebase hoặc Google Play có cấu trúc khác nhau và không thể so sánh hoàn toàn với dữ liệu AppsFlyer. Để tìm hiểu cách nhập dữ liệu từ AppsFlyer vào bảng điều khiển Quảng cáo Google, nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">here</Anchor>.
 > * Để so sánh các sự kiện cài đặt (first\_open trong Google Ads), hãy đảm bảo rằng bạn đi sâu vào để cài đặt các sự kiện trong báo cáo chuyển đổi trong Google Ads. Google Ads có thể hiển thị tất cả các lượt chuyển đổi (VD: lượt cài đặt, mua, đăng ký), đó là lý do tại sao việc chỉ chọn những sự kiện cài đặt đó trong số tất cả các sự kiện chuyển đổi là rất quan trọng.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

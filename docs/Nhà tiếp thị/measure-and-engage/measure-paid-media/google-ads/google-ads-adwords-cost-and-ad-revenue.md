@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **Sơ lược:** Bật dữ liệu chi phí và doanh thu quảng cáo của Google Ads trong AppsFlyer.
 
+<div id="cost-data-sync-status" />
+
 ## Trạng thái đồng bộ dữ liệu chi phí
 
 <Anchor target="_blank" href="/marketers/vi/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">Xem trạng thái API chi phí của bạn</Anchor> và lần cuối cùng AppsFlyer quản lý kéo dữ liệu chi phí phù hợp vào trang tổng quan trạng thái tích hợp chi phí (và doanh thu quảng cáo) hoặc trang tổng quan mạng quảng cáo cá nhân. 
 
 Google Ads cho phép bạn đồng bộ vài tài khoản để kéo dữ liệu chi phí. Đối với từng tài khoản đã đồng bộ, AppsFlyer hiển thị trạng thái tích hợp chi phí và lần cuối cùng AppsFlyer kéo thành công dữ liệu chi phí khớp.
 
+<div id="stopping-google-cost-sync" />
+
 ### Ngừng đồng bộ hóa chi phí Google
 
 **Để ngừng đồng bộ hóa chi phí Google, hãy xóa kết nối tài khoản Google:**
 
 * <Anchor target="_blank" href="/marketers/vi/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">Chuyển đến tab chi phí, trong cột hành động, di chuột qua một tài khoản, nhấp vào Delete connection.</Anchor> Sau khi xóa, AppsFlyer sẽ ngừng nhận chi phí. Xóa kết nối không ảnh hưởng đến dữ liệu lịch sử.
+
+<div id="cost-clicks-and-impressions" />
 
 ## Chi phí, lượt nhấp và lượt hiển thị
 
@@ -65,6 +71,8 @@ Tích hợp chi phí cung cấp dữ liệu tổng hợp sau:
 >  Nếu tài khoản Google Ads là tài khoản phụ của tài khoản MCC, thì ID bên phải trên cùng là của MCC,  và ID của tài khoản phụ sẽ nằm ở góc trên cùng bên trái.
 >
 > Nếu tài khoản không chính xác, hãy đăng xuất khỏi tài khoản và đăng nhập lại bằng địa chỉ email cho một tài khoản Google khác.
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## Ghi nhận doanh thu quảng cáo bằng Google Ads
 

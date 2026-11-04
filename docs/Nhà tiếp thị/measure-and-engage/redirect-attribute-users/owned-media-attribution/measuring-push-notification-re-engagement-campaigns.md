@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Khái quát:** Đo lường các chiến dịch thông báo đẩy trên cả iOS và Android.
 
+<div id="overview" />
+
 ## Tổng quan
 
 AppsFlyer hỗ trợ đo lường các chiến dịch thông báo đẩy từ tất cả các nhà cung cấp dịch vụ đẩy, cũng như các chiến dịch được triển khai trực tiếp trên Firebase Cloud Messaging hoặc Dịch vụ thông báo đẩy của Apple (APNS).
@@ -36,6 +38,8 @@ Có 2 cách triển khai tích hợp có thể thực hiện:
 * Bằng cách gửi một đối tượng JSON có mã khóa `af` trong tải trọng của thông báo đẩy (kế thừa).
 
 Các lượt chuyển đổi hiển thị trong bảng điều khiển Tổng quan, trong các chế độ xem nhắm mục tiêu lại hoặc thống nhất.
+
+<div id="how-does-it-work" />
 
 ## Nó hoạt động như thế nào?
 
@@ -49,9 +53,13 @@ Khi bạn đã hoàn thành các bước trong bài viết này, ứng dụng c�
 
 Trong trường hợp OneLink, nếu OneLink được cấu hình để định tuyến người dùng đến một vị trí cụ thể trong ứng dụng, thì luồng liên kết sâu sẽ được kích hoạt.
 
+<div id="prerequisites" />
+
 ## Điều kiện tiên quyết
 
 Trước khi tiếp tục, hãy đảm bảo rằng ứng dụng của bạn đã <Anchor target="_blank" href="/marketers/vi/docs/basic-sdk-integration-guide">tích hợp SDK AppsFlyer</Anchor> **và** có thể nhận thông báo đẩy.
+
+<div id="steps" />
 
 ## Các bước
 
@@ -68,12 +76,16 @@ Trước khi tiếp tục, hãy đảm bảo rằng ứng dụng của bạn đ�
 
 Trước tiên, hãy tạo thông báo đẩy chứa dữ liệu phân bổ bằng một trong các phương thức sau.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Trong phần minh họa sau, chúng tôi sử dụng Firebase làm nhà cung cấp dịch vụ thông báo đẩy. Hướng dẫn phải được áp dụng cho mọi nhà cung cấp dịch vụ đẩy, với những khác biệt rất nhỏ (nếu có). Tham khảo tài liệu của nhà cung cấp dịch vụ thông báo đẩy tương ứng.
 
 <Tabs>
 <Tab title="Sử dụng OneLink (được đề xuất)">
+
+<div id="using-onelink-recommended" />
 
 #### **Sử dụng OneLink (được đề xuất)**
 
@@ -82,6 +94,8 @@ Trước tiên, hãy tạo thông báo đẩy chứa dữ liệu phân bổ bằ
 1. Tạo một <Anchor target="_blank" href="/marketers/vi/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">liên kết OneLink và thiết lập để nhắm mục tiêu lại.</Anchor>  
    **Lưu ý**: Cả URL rút gọn và đầy đủ của OneLink đều được hỗ trợ.
 2. Trong dữ liệu tùy chỉnh thông báo đẩy, hãy thêm OneLink chứa dữ liệu phân bổ mà bạn muốn gửi đến AppsFlyer.
+
+<div id="note-1" />
 
 > 📄 **Ví dụ về Firebase**
 >
@@ -95,7 +109,11 @@ Trước tiên, hãy tạo thông báo đẩy chứa dữ liệu phân bổ bằ
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **Sử dụng JSON (kế thừa)**
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -106,6 +124,8 @@ Trong dữ liệu tùy chỉnh của thông báo đẩy, hãy thêm mã khóa t�
 * `PID`
 * `is_retargeting`
 * `c`
+
+<div id="note-3" />
 
 > 📄 **Ví dụ về Firebase**
 >

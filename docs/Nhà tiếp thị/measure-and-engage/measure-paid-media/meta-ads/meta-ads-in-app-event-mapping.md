@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **Tổng quan:** Gửi các sự kiện phong phú trong ứng dụng của ứng dụng của bạn từ AppsFlyer đến quảng cáo Meta.
 
+<div id="meta-in-app-events-mapping" />
+
 ## Ánh xạ sự kiện Meta trong ứng dụng
 
 Nhà quảng cáo ánh xạ các sự kiện trong ứng dụng, SDK hoặc Máy chủ đến máy chủ của họ đến các sự kiện được xác định trước của Meta. Các nhà quảng cáo cũng có thể gửi các bài đăng lại trên Meta về mỗi lần <Anchor target="_blank" href="/marketers/vi/docs/measure-sessions">khởi chạy ứng dụng</Anchor> hoặc <Anchor target="_blank" href="/marketers/vi/docs/measure-uninstalls#ánh-xạ-sự-kiện-gỡ-cài-đặt">bất kỳ lượt gỡ cài đặt ứng dụng nào đã biết</Anchor>.
 
 Điều này cho phép nhà quảng cáo tận dụng các khả năng tối ưu hóa nâng cao của Meta, cũng như tạo phân đoạn Đối tượng Tương tự và Tùy chỉnh.
+
+<div id="predefined-event-mapping" />
 
 ### Ánh xạ sự kiện được xác định trước
 
@@ -52,6 +56,8 @@ Dưới đây là danh sách các sự kiện được xác định trước kh�
 | Liên hệ | Điện thoại hoặc SMS, email, trò chuyện hoặc loại hình liên hệ khác giữa khách hàng và doanh nghiệp của bạn. | af\_contact |
 | CustomizeProduct | Việc tùy biến sản phẩm thông qua một công cụ cấu hình hoặc ứng dụng khác mà doanh nghiệp của bạn sở hữu. | af\_customize\_product |
 
+<div id="custom-in-app-events-mapping" />
+
 ### Nối Sự kiện tuỳ chỉnh trong Ứng dụng Facebook
 
 AppsFlyer cho phép bạn ánh xạ bất kỳ sự kiện trong ứng dụng tùy chỉnh nào để gửi tới Meta, bằng cách sử dụng tùy chọn Mã định danh sự kiện Meta TÙY CHỈNH.
@@ -61,6 +67,8 @@ Tên sự kiện và giá trị sự kiện (bao gồm các thông số sự ki�
 Lưu ý rằng bạn có thể <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">sử dụng các sự kiện này để tùy chỉnh các chiến dịch của bạn</Anchor>.
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+
+<div id="automatic-parameter-mapping-with-the-custom-event" />
 
 ### Nối Thông số Tự động với sự kiện TÙY CHỈNH
 
@@ -119,6 +127,8 @@ Bảng sau liệt kê tất cả các thông số sự kiện của AppsFlyer, k
 | af\_travel\_end | fb\_travel\_end |
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
+
+<div id="event-and-parameter-limitations" />
 
 ## Giới hạn sự kiện và thông số
 

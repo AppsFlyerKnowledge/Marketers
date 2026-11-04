@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **Tổng quan:** Xem danh sách các tên sự kiện và thông số sự kiện được xác định trước để ghi nhận các sự kiện phong phú trong ứng dụng sau khi cài đặt (chẳng hạn như đăng nhập, đăng ký hoặc mua hàng trong ứng dụng).
 
+<div id="overview" />
+
 ## Tổng quan
 
 Các sự kiện trong ứng dụng mà bạn muốn gửi yêu cầu nhà phát triển của bạn phải triển khai mã, nếu có, trong ứng dụng của bạn. Bài viết này mô tả các tên sự kiện được xác định trước và thông số sự kiện được xác định trước.
 
 Để giúp bạn xác định những sự kiện và thông số nào cần ghi nhận, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#recommended-events-by-business-vertical">các bài viết của chúng tôi bao gồm các ví dụ và quy trình</Anchor> theo ngành dọc kinh doanh.
+
+<div id="predefined-event-names" />
 
 ## Tên sự kiện được xác định trước
 
@@ -634,6 +638,8 @@ Nhấp vào liên kết để xem ánh xạ tới SRN.
 * [af\_currency](/docs/in-app-events-event-structure#af_currency)
 * [af\_subscription\_id](/docs/in-app-events-event-structure#af_subscription_id)
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Nếu bạn đang ánh xạ sự kiện này với sự kiện StartTrial của quảng cáo Meta và muốn liên kết doanh thu, hãy sử dụng thông số af\_price thay vì thông số af\_revenue.
@@ -765,13 +771,19 @@ Nhấp vào liên kết để xem ánh xạ tới SRN.
 
 </Accordion>
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > Ngoài các tên sự kiện xác định trước được mô tả trong phần này, <Anchor target="_blank" href="/marketers/vi/docs/meta-ads-in-app-event-mapping#ánh-xạ-sự-kiện-được-xác-định-trước">quảng cáo Meta còn cung cấp các sự kiện bổ sung</Anchor> được gửi đi mà không phân bổ.
 
+<div id="predefined-event-parameters" />
+
 ## Các thông số sự kiện được xác định trước
 
 Phần sau cung cấp danh sách các thông số sự kiện được xác định trước. Mỗi thông số sự kiện bao gồm ánh xạ được sử dụng cho quảng cáo Meta, Google Ads, Snap, Twitter và Criteo. Bạn có thể chọn đưa bất kỳ thông số sự kiện nào vào một sự kiện.
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -1329,6 +1341,8 @@ Phần sau cung cấp danh sách các thông số sự kiện được xác đ�
 
 **Mô tả**: Tổng số tiền mua hàng. af\_revenue được xem là doanh thu trong nền tảng AppsFlyer. Thông số này cũng gồm cả <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#revenue-events">doanh thu âm</Anchor>, do việc hủy hoặc hoàn lại tiền.
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > Giá trị doanh thu không được chứa dấu phẩy phân tách, đơn vị tiền tệ, ký tự đặc biệt hoặc văn bản. Ví dụ: giá trị doanh thu phải là 1234.56. AppsFlyer cung cấp giá trị doanh thu với độ chính xác lên đến năm chữ số sau dấu thập phân.
@@ -1509,6 +1523,8 @@ Sau đây là danh sách các thông số sự kiện được xác định trư
 * af\_tutorial\_id
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

@@ -20,15 +20,21 @@ x-zendesk:
   url: >-
     https://support.appsflyer.com/hc/en-us/articles/24853411853329-Brands-Directory-Overview-and-FAQs
 ---
+<div id="what-is-the-brands-directory" />
+
 ## What is the Brands Directory?
 
 The Brand Directory is an exclusive network of AppsFlyer advertisers receiving top priority on introductions to Commerce Media Networks (CMNs).
+
+<div id="key-advantages-for-advertisers" />
 
 ### Key advantages for advertisers
 
 * **Exposure to Commerce Media Networks:** CMNs can discover your brand and send you offers without any proactive effort on your part.
 * **Free for advertisers:** Joining the Brands Directory and using AppsFlyer's Data Collaboration Platform (DCP) are both free of charge for advertisers.
 * **No commitment:** You can express your interest in connecting with CMNs, and we'll make an introduction only after getting your approval.
+
+<div id="faq" />
 
 ## FAQ
 

@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **Khái quát:** Xác định mức độ ảnh hưởng trên diện rộng của những nguồn truyền thông đã thu hút người dùng của bạn và đã hỗ trợ nền trước tương tác cuối cùng.
 
+<div id="assisted-installs" />
+
 ## Lượt cài đặt được hỗ trợ (Assisted Installs)
 
 <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">Lượt cài đặt được hỗ trợ</Anchor> (còn gọi là phân bổ đa điểm chạm) là các lượt cài đặt trong đó nguồn truyền thông/chiến dịch không có lượt chạm cuối cùng nhưng đã tương tác với người dùng trước khi cài đặt và trong khoảng thời gian phân bổ.
 
 Dữ liệu phân tích về số lượt cài đặt được hỗ trợ có sẵn ở cả cấp độ nguồn truyền thông và chiến dịch để đo lường tác động rộng hơn của từng nguồn truyền thông và chiến dịch.
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### Xem số liệu về số lượt cài đặt được hỗ trợ trong bảng điều khiển Tổng quan
 
@@ -48,9 +52,13 @@ Dữ liệu phân tích về số lượt cài đặt được hỗ trợ có s�
 
    ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### Tại sao lượt hỗ trợ lại quan trọng
 
 Trong nhiều trường hợp, người dùng tiềm năng biết đến một ứng dụng thông qua nguồn hỗ trợ, nhưng không cài đặt được vì một số lý do. Do đó, việc đo lường và ghi nhận các lượt hỗ trợ là rất quan trọng trong việc tối ưu hóa và đo lường chiến dịch.
+
+<div id="assisted-installs-reporting" />
 
 ### Báo cáo lượt cài đặt được hỗ trợ
 
@@ -68,6 +76,8 @@ AppsFlyer phân bổ tối đa ba mạng đóng góp ngoài nguồn cài đặt 
 * Loại so khớp (so khớp ID, Liên kết giới thiệu Google Play hoặc SRN)
 
 Xem <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview#báo-cáo-hành-trình-của-người-dùng">dữ liệu thô về hành trình của người dùng.</Anchor>
+
+<div id="note-1" />
 
 > 📘 **Những điều đại lý cần lưu ý**
 >

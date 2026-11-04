@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **Khái quát:** Các chiến dịch nhắm mục tiêu lại (tiếp thị lại) thúc đẩy người dùng mở và thu hút lại với ứng dụng hoặc khiến những người dùng đã xóa ứng dụng thì giờ cài đặt lại.
 
+<div id="retargeting-fundamentals" />
+
 ## Các nguyên tắc cơ bản về nhắm mục tiêu lại
 
 Nhắm mục tiêu lại cho phân bổ xảy ra khi một người dùng thu hút với chiến dịch nhắm mục tiêu lại bằng cách nhấp vào [đường dẫn nhắm mục tiêu lại cho phân bổ](/docs/retargeting-attribution-guide#retargeting-attribution-links) hoặc <Anchor target="_blank" href="/marketers/vi/docs/create-a-onelink-template">liên kết sâu</Anchor>. Điều này dẫn đến một trong các sự kiện phân bổ sau:
@@ -38,6 +40,8 @@ Nhắm mục tiêu lại cho phân bổ xảy ra khi một người dùng thu h�
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 Trước khi chạy các chiến dịch nhắm mục tiêu lại, hãy xem lại các quy tắc thu hút lại và các trường hợp ví dụ trong các phần tiếp theo, sau đó thiết lập tính năng nhắm mục tiêu lại như được mô tả trong phần quy trình nhắm mục tiêu lại. Để dễ hiểu, bạn nên làm quen với <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model">mô hình phân bổ</Anchor> của AppsFlyer và các khung thời gian phân bổ liên quan.
+
+<div id="tip" />
 
 > 👍 **Lời khuyên**
 >
@@ -62,6 +66,8 @@ Sơ đồ sau chứa tập hợp các quy tắc thu hút lại. Sử dụng sơ 
 
 Các bảng sau chứa thông tin tham khảo về các khung thời gian liên quan đến nhắm mục tiêu lại cho phân bổ.
 
+<div id="inclusion-windows" />
+
 #### Khung thời gian đưa vào
 
 | Loại khung thời gian | Mô tả |
@@ -70,6 +76,8 @@ Các bảng sau chứa thông tin tham khảo về các khung thời gian liên 
 | Xem lại lượt nhấp | Thời lượng tối đa từ lúc người dùng nhấp vào quảng cáo cho đến khi họ mở một ứng dụng.<br /><br />**Vị trí cấu hình**: Đường dẫn phân bổ<br /><br />**Thời lượng** :<ul><li>Mặc định: 7 ngày</li><li>Phạm vi: 1-23 giờ/1-30 ngày</li></ul>**Lưu ý về SRN:** Kiểm tra với SRN xem chính sách khung thời gian xem lại cụ thể của họ là gì. |
 | Thu hút lại | Hãy cân nhắc những điều sau liên quan đến khung thời gian thu hút lại:<ul><li>Khung thời gian bắt đầu khi người dùng mở ứng dụng lần đầu sau khi thu hút với nguồn truyền thông nhắm mục tiêu lại.</li><li>Các sự kiện trong ứng dụng được <Anchor target="_blank" href="/marketers/vi/docs/resolve-retargeting-double-attribution">phân bổ kép</Anchor> cho các nguồn truyền thông nhắm mục tiêu lại và thu hút người dùng trong suốt thời lượng của khung thời gian</li><li>Thời lượng của khung thời gian này được xác định bằng cài đặt của ứng dụng hoặc SRN.</li><li>Nếu người dùng tương tác với một chiến dịch nhắm mục tiêu lại khác trong khung thời gian thu hút lại không bị chặn bởi khung thời gian loại trừ thì khung thời gian thu hút lại sẽ kết thúc ngay lập tức và một khung thời gian thu hút lại mới sẽ bắt đầu.</li><li>Trong trường hợp phân bổ lại: thời lượng của **cửa sổ phân bổ** là không giới hạn (tương tự các lượt cài đặt). Tuy nhiên, cửa sổ này sẽ đóng trong trường hợp có lượt cài đặt mới, lượt cài đặt lại hoặc do các hạn chế lưu giữ dữ liệu.</li></ul>**Nơi đặt:** Đường dẫn phân bổ<ul><li>Mặc định: 30 ngày</li><li>Phạm vi: 1-23 giờ/1-90 ngày/trọn đời</li></ul>**Lưu ý về SRN**: Có thể cấu hình được đối với các SRN<br /><br />Nếu bạn thay đổi cài đặt khung thời gian, thay đổi sẽ ảnh hưởng đến các lượt thu hút lại trong tương lai. Nhưng sẽ không ảnh hưởng đến các lượt thu hút lại hiện có. |
 
+<div id="exclusion-windows" />
+
 #### Khung thời gian loại trừ
 
 | Loại khung thời gian | Mô tả |
@@ -77,6 +85,8 @@ Các bảng sau chứa thông tin tham khảo về các khung thời gian liên 
 | Thời gian tối thiểu giữa các chuyển đổi thu hút lại | Không ghi nhận lượt thu hút lại trong khung thời gian loại trừ.<br /><br />**Thời gian tối thiểu giữa các chuyển đổi thu hút lại**<ul><li>Khi thu hút lại, một khung thời gian trong đó các sự kiện trong ứng dụng được phân bổ cho cả chiến dịch nhắm mục tiêu lại (chính) và UA (phụ) sẽ mở ra.</li><li>Điều này cho phép đo lường hiệu suất chiến dịch nhắm mục tiêu lại.</li><li>Nếu một mạng khác hoặc chiến dịch mang đến lượt thu hút lại trong khung thời gian này:<ul><li>[Mặc định] khung thời gian thu hút lại hiện có sẽ bị đóng, một lượt thu hút lại khác được ghi nhận và các sự kiện trong ứng dụng tiếp theo được phân bổ cho lượt thu hút lại gần đây nhất.</li><li>Để ngăn chặn điều này, hãy đặt Thời gian tối thiểu giữa các lượt chuyển đổi thu hút lại. Trong trường hợp này, chỉ có thể ghi nhận một lượt thu hút lại tiếp theo sau khi khoảng thời gian tối thiểu đã trôi qua.</li></ul></li><li>Cài đặt này không ảnh hưởng trong trường hợp khung thời gian thu hút lại ngắn hơn thời gian của cài đặt này. Ví dụ: Nếu thời gian thu hút lại là 1 ngày và cài đặt này là 4 ngày thì cài đặt này không có ảnh hưởng gì.</li><li>Các cài đặt này không ảnh hưởng đến thời gian giữa cài đặt và thu hút lại.</li></ul>**Vị trí đặt**: Trang cài đặt của ứng dụng<br /><br />**Thời lượng**:<ul><li>Mặc định: Không</li><li>Phạm vi: 1-23 giờ/1-30 ngày</li></ul> |
 | <Anchor target="_blank" href="/marketers/vi/docs/set-retargeting-inactivity-window">Khoảng thời gian không hoạt động tối thiểu</Anchor> | Không ghi lại lượt thu hút lại hoặc phân bổ lại trong khung thời gian loại trừ.<br /><br />**Nơi đặt:** Trang cài đặt đối tác tích hợp trong tab Integration.<br /><br />**Thời lượng**:<ul><li>Mặc định: Không</li><li>0-30 ngày</li></ul>**Lưu ý về SRN**: Lưu ý rằng SRN thường có các quy tắc về khoảng thời gian không hoạt động riêng. Nếu cài đặt của bạn khác với cài đặt của SRN, điều này có thể dẫn đến khác biệt. |
 | <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window">Ghi công lại</Anchor> | Khung thời gian phân bổ lại ảnh hưởng đến các lượt phân bổ lại nhưng không ảnh hưởng đến các lượt thu hút lại.<br /><br />Người dùng cài đặt lại trong khung thời gian phân bổ lại sau khi thu hút với chiến dịch nhắm mục tiêu lại được phân bổ cho các nguồn truyền thông nhắm mục tiêu lại. Bài viết liên quan: <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model#reinstalls">Lượt cài đặt lại</Anchor><br /><br />**Vị trí đặt:** Cài đặt của ứng dụng |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### **Quy trình mẫu thực hiện các quy tắc**
 
@@ -104,6 +114,8 @@ Danh sách kiểm tra quy tắc thu hút lại người dùng để phân bổ l
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## Hoạt động nhắm mục tiêu lại
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ Yêu cầu các tùy chọn cài đặt sau tùy thuộc vào tình huống.
 | --- | --- | --- |
 | Thu hút lại | <ol><li>Đi đến **Configuration** > **App settings.**</li><li>Xác minh đảm bảo rằng đang bật tùy chọn **Phân bổ** **thu hút lại**.</li><li>Đối với SRN: Đi đến **Configuration** > **Active integrations,** chọn SRN.</li><li>Bật tùy chọn **Re-engagement attribution**.</li></ol> | <ol><li>Đi đến **Configuration** > **App settings.**</li><li>Xác minh đảm bảo rằng đang bật tùy chọn **Phân bổ thu hút lại**.</li><li>Đối với mạng không phải SRN: Nối thông số nhắm mục tiêu lại vào các đường dẫn phân bổ như được nêu chi tiết trong phần này</li></ol> |
 | Ghi công lại | <ol><li>Đi đến **Configuration** > **Active integrations,** chọn SRN.</li><li>Bật tùy chọn **Reinstall attribution** (Phân bổ lượt cài đặt lại).</li></ol> | <ol><li>Không cần các cài đặt cụ thể.</li><li>Nối thông số nhắm mục tiêu lại vào các đường dẫn phân bổ như được nêu chi tiết trong phần này.</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **Cài đặt mạng không phải SRN**
 
@@ -169,6 +183,8 @@ Các thông số đường dẫn phân bổ nhắm mục tiêu lại
 | Bộ định thời xem lại lượt xem hết nhắm mục tiêu lại | <ul><li><Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">Khung thời gian xem lại lượt xem hết</Anchor> nhắm mục tiêu lại cũng hoạt động tương tự như của chiến dịch thu hút người dùng.</li><li>Khung thời gian này xác định khoảng thời gian tối đa có thể trôi qua sau khi một người dùng xem quảng cáo cho đến khi người dùng đó được phân bổ.</li><li>Thời gian mặc định là 1 ngày.</li><li>Khung thời gian xem lại được đặt bằng</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>Ví dụ:**<br />Để đặt thời gian xem lại lượt xem hết trong 5 giờ, hãy thêm thông số sau vào đường dẫn phân bổ chiến dịch nhắm mục tiêu lại: `&af_viewthrough_lookback=5h` | Không |
 | Thời gian tương tác lại | <ul><li>**Khung thời gian thu hút lại** có thể được đặt trong giao diện người dùng của đường dẫn phân bổ. Thao tác này sẽ đặt thông số **af\_reengagement\_window** vào đường dẫn phân bổ. Thông số này có thể được thêm theo cách thủ công.</li><li>Thời gian mặc định là 30 ngày.</li><li>Các giá trị thời gian tương tác lại sau có sẵn:</li><li>Giờ: 1- 23 giờ</li><li>Ngày: 1-90 ngày</li><li>Trọn đời: Duy trì cho đến khi người dùng gỡ cài đặt hoặc thực hiện thu hút lại khác, ví dụ: af\_reengagement\_window=lifetime</li></ul>Ví dụ: **af\_reengagement\_window=60d** có nghĩa là các sự kiện được báo cáo trong vòng 60 ngày kể từ ngày thu hút lại được phân bổ cho nguồn truyền thông nhắm mục tiêu lại. | Không |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### Khoảng thời gian xem lại lượt xem hết nhắm mục tiêu lại
 
 ```http
@@ -211,6 +227,8 @@ Diễn giải các báo cáo dữ liệu thô trong ngữ cảnh nhắm mục ti
 | Trường người đóng góp | Không có sẵn dành cho thu hút lại |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 
@@ -257,6 +275,8 @@ Xác minh rằng các lượt nhấp chuột được gửi bao gồm <Anchor ta
 | **Khi nào thì thời gian tiếp xúc được phân bổ giống với thời gian cài đặt?**<ul><li>Khi người dùng liên kết chung hoặc liên kết ứng dụng Android thực hiện liên kết sâu, họ được chuyển hướng về ứng dụng mà không thông qua AppsFlyer trước đó.</li><li>Khi ứng dụng khởi chạy và SDK báo cáo một lượt tương tác mới, AppsFlyer tái tạo dữ liệu của lượt nhấp bằng cùng dấu thời gian của lượt khởi chạy. Điều này khiến thời gian của lượt tương tác và khởi chạy giống nhau.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

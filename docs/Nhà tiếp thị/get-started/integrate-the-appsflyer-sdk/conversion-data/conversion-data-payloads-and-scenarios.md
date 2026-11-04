@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **Khái quát:** Sử dụng <span id="snapchat-conversion-data"></span><span id="twitter-conversion-data"></span>dữ liệu chuyển đổi để xác định các tình huống chuyển đổi khác nhau, tùy chỉnh trải nghiệm người dùng, v.v.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Hướng dẫn sau đây có các tình huống chuyển đổi người dùng khác nhau và tải trọng dữ liệu chuyển đổi tương ứng:
@@ -43,7 +45,11 @@ Dữ liệu chuyển đổi được cung cấp trong nền tảng bằng bất 
 
 Do sự đánh đổi về độ chính xác/độ trễ nên dữ liệu chuyển đổi cho cùng một ID thiết bị có thể khác nhau giữa các API.
 
+<div id="non-organic-conversion-data-payload-fields" />
+
 ### Các trường tải trọng dữ liệu chuyển đổi không tự nhiên
+
+<div id="fields-always-available" />
 
 #### Các trường luôn khả dụng
 
@@ -67,11 +73,15 @@ Bảng sau đây liệt kê các trường luôn tồn tại cho lượt chuyể
 | `retargeting_conversion_type` | Loại lượt chuyển đổi nhắm mục tiêu lại | "none" hoặc retargeting\_conversion\_type |
 | `af_sub[n] (n=1—5)` | Thông số Phụ [n] (n=1–5) |  |
 
+<div id="fields-available-in-some-cases" />
+
 #### Các trường khả dụng trong một số trường hợp
 
 Các trường trong bảng sau đây sẽ khả dụng trong một số trường hợp, tùy thuộc vào cách SRN điền vào mỗi sự kiện riêng.
 
 <table><thead><tr><th>Tên trường tải trọng</th><th>Tên trường dữ liệu thô</th><th>Lưu ý</th></tr></thead><tbody><tr><td><code>af_channel</code></td><td>Kênh</td><td><p>SRN điền thông số này:</p><ul><li>AppLovin</li><li>Google Ads</li><li>Quảng cáo Meta</li><li>Snapchat</li><li>TikTok for Business</li><li>Twitter</li></ul><p>Ví dụ: Facebook—Instagram, Google—YouTube </p></td></tr><tr><td><code>orig_cost</code></td><td> </td><td><p>Lưu ý (1)</p></td></tr><tr><td><code>costs_cents_USD</code></td><td> </td><td><p>Lưu ý (1)</p></td></tr><tr><td><code>af_cpi</code></td><td> </td><td><p>Lưu ý (1)</p></td></tr></tbody><tbody><tr><td colspan="4"><p><strong>Lưu ý</strong></p><p>(1) Các trường chi phí được điền bằng các giá trị được mạng quảng cáo chia sẻ. Để mạng quảng cáo chia sẻ dữ liệu chi phí với AppsFlyer, bạn phải bật tích hợp chi phí trên trang <a href="./roi360-cost-aggregation-overview#ad-networks-supporting-cost-api" target="_blank"><strong>Active integrations</strong></a>. Một số SRN hỗ trợ chia sẻ chi phí hàng loạt. Trong trường hợp này, các trường chi phí cấp sự kiện sẽ trả về 0. </p></td></tr></tbody></table>
+
+<div id="additional-fields" />
 
 ### Các Trưởng Bổ Sung
 
@@ -79,6 +89,8 @@ Các trường trong bảng sau đây sẽ khả dụng trong một số trườ
 * Bạn có thể thêm các thông số vào đường dẫn phân bổ, chúng có sẵn trong tải trọng
 
 Xem <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary#data-fields-dictionary">từ điển trường dữ liệu thô</Anchor> để biết thêm thông tin.
+
+<div id="limitations" />
 
 ### Điểm hạn chế
 
@@ -94,6 +106,8 @@ Nếu một thông số được đặt là `name`, thì thông số đó sẽ b
 
 ---
 
+<div id="ua-conversion-data-with-srns" />
+
 ## Dữ liệu chuyển đổi UA với SRN
 
 <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns">Mạng tự báo cáo</Anchor> (SRN) là mạng quảng cáo triển khai các cơ chế phân bổ của riêng mình, chẳng hạn như Meta ads và Google.
@@ -105,6 +119,8 @@ SRN không sử dụng đường dẫn phân bổ. Có nghĩa là:
 
 SRN báo cáo lượt chuyển đổi cho AppsFlyer. Dữ liệu chuyển đổi được cung cấp trong ứng dụng. Các trường khả dụng sẽ khác nhau tùy theo SRN và được trình bày chi tiết trong các tab SRN riêng lẻ theo sau.
 
+<div id="a-note-about-meta-ads" />
+
 #### Lưu ý về Meta ads
 
 Nếu bạn chạy các chiến dịch trên Meta ads và không ký vào điều khoản dịch vụ của Meta, AppsFlyer sẽ ghi nhận lượt cài đặt. Tính khả dụng của báo cáo bị giới hạn như sau:
@@ -114,6 +130,8 @@ Nếu bạn chạy các chiến dịch trên Meta ads và không ký vào điề
 
 <Tabs>
 <Tab title="Meta ads">
+
+<div id="meta-ads-conversion-data" />
 
 ### Dữ liệu chuyển đổi Meta ads
 
@@ -227,6 +245,8 @@ Nếu bạn chạy các chiến dịch trên Meta ads và không ký vào điề
 </Tab>
 </Tabs>
 
+<div id="ua-conversion-with-other-ad-networks" />
+
 ## Chuyển đổi UA với các mạng quảng cáo khác
 
 Đối với các mạng quảng cáo khác, dữ liệu trong tải trọng bị ảnh hưởng trực tiếp bởi <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters">các thông số trong đường dẫn phân bổ</Anchor>.
@@ -239,6 +259,8 @@ Kiểm tra các tải trọng JSON sau đây.
 
 <Accordion title="Applovin">
 
+<div id="attribution-link" />
+
 #### Đường dẫn phân bổ:
 
 ```http HTTPS
@@ -248,6 +270,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
   &af_click_lookback=7d&clickid=10****************
   &advertising_id=50********************************&af_ip=
 ```
+
+<div id="payload" />
 
 #### Tải trọng:
 
@@ -296,6 +320,8 @@ https://app.appsflyer.com/com.company.app?af_ad=ad_name&af_ad_type=INTER
 
 <Accordion title="ironSource">
 
+<div id="attribution-link-1" />
+
 #### Đường dẫn phân bổ:
 
 ```http HTTPS
@@ -308,6 +334,8 @@ https://app.appsflyer.com/id123456789?
   &idfa=01**********************************&af_siteid=123_site_id&
   af_enc_data=cN*********************************************************************
 ```
+
+<div id="payload-1" />
 
 #### Tải trọng:
 
@@ -356,6 +384,8 @@ Tuy nhiên, dữ liệu liên quan đến chi phí **không xuất hiện trong 
 
 </Accordion>
 
+<div id="retargeting-conversion-data" />
+
 ## Nhắm mục tiêu lại dữ liệu chuyển đổi
 
 Nhắm mục tiêu lại bao gồm hai loại chuyển đổi, phân bổ lại hoặc thu hút lại.
@@ -363,6 +393,8 @@ Nhắm mục tiêu lại bao gồm hai loại chuyển đổi, phân bổ lại 
 > 👍 **Lời khuyên**
 >
 > Dữ liệu chuyển đổi dùng cho việc nhắm mục tiêu lại không phải lúc nào cũng đưa ra dấu hiệu rõ ràng về loại chuyển đổi. Xem [các nguồn dữ liệu chuyển đổi thay thế](#nguồn-dữ-liệu-chuyển-đổi-thay-thế).
+
+<div id="re-attribution-with-srns" />
 
 ### Phân bổ lại với SRN
 
@@ -374,6 +406,8 @@ Khi người dùng được phân bổ lại thông qua SRN, tải trọng dữ 
 >
 > Việc đặt tên chiến dịch sao cho có thể chỉ ra việc nhắm mục tiêu lại **không phải là một cách lý tưởng**. Xem [các ví dụ để tìm hiểu thêm](#ví-dụ-về-thu-hút-người-dùng-và-phân-bổ-lại-kết-hợp).
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ### Phân bổ lại với các mạng quảng cáo thông thường
 
 Phân bổ cho các mạng quảng cáo dựa trên các đường dẫn phân bổ. Dù là đường dẫn phân bổ thông thường hay OneLink, với việc nhắm mục tiêu lại, đường dẫn phân bổ luôn có thông số `is_retargeting=true` được đặt trong đó.
@@ -382,6 +416,8 @@ Phân bổ cho các mạng quảng cáo dựa trên các đường dẫn phân b
 
 <Accordion title="Chiến dịch nhắm mục tiêu lại với Criteo">
 
+<div id="attribution-link-2" />
+
 #### Đường dẫn phân bổ
 
 ```http
@@ -389,6 +425,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### Tải trọng dữ liệu chuyển đổi
 
@@ -430,6 +468,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ### Phân bổ lại với liên kết sâu bị trì hoãn
 
 Thông thường, bạn muốn liên kết sâu với những người dùng được phân bổ lại, những người mà theo định nghĩa là được phân bổ lại, chưa cài đặt ứng dụng. Ví dụ: bạn đặt một chiến dịch nhằm mang lại những người dùng đã gỡ cài đặt ứng dụng quay lại. Chiến dịch quảng cáo một sản phẩm hoặc dịch vụ và bạn muốn cung cấp cho người dùng nội dung liên quan đến sản phẩm hoặc dịch vụ mà bạn quảng cáo.
@@ -441,6 +481,8 @@ Thông thường, bạn muốn liên kết sâu với những người dùng đ�
 <Accordion title="Liên kết sâu gián tiếp với SRN">
 
 Thông số Liên kết sâu được xác định trong các chiến dịch SRN không có sẵn bên ngoài SRN. Điều này bao gồm thông số `af_dp`, chứa đường dẫn lược đồ trong ứng dụng. Ngoại lệ duy nhất cho điều này là khi sử dụng <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#sử-dụng-liên-kết-sâu-gián-tiếp-rong-chiến-dịch-ứng-dụng">Chiến dịch ứng dụng của Google trong Nguồn cấp dữ liệu</Anchor>. Để triển khai liên kết sâu bị trì hoãn, logic bổ sung phải được áp dụng cho các chiến dịch SRN. Sử dụng dữ liệu trong phản hồi `onConversionSuccess`, chẳng hạn như chiến dịch, bộ quảng cáo, nhóm quảng cáo để chuyển hướng người dùng của bạn theo chương trình.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Dữ liệu chuyển đổi cho liên kết sâu bị trì hoãn với Meta ads
 
@@ -528,6 +570,8 @@ Bạn có thể sử dụng dữ liệu trong phản hồi getConversionData, ch
 
 Có ba cách để liên kết sâu người dùng:
 
+<div id="uri-schemes" />
+
 #### Lược đồ URI
 
 Khi sử dụng Lược đồ URI, đối với cả đường dẫn phân bổ và OneLink, đường dẫn phân bổ và tải trọng sẽ như sau:
@@ -584,6 +628,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - khi thông số này xuất hiện và được đặt thành true, hãy tìm các trường `scheme` và `host`
 * `scheme` và `host` - các trường này đến từ thông số `af_dp` trong đường dẫn phân bổ và cho biết lược đồ và hoạt động mà người dùng sẽ được liên kết sâu
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### Liên kết chung iOS và liên kết ứng dụng Android
 
 Đây là hai trong số ba cách khác để thực hiện liên kết sâu.
@@ -636,13 +682,19 @@ Khi sử dụng liên kết chung hoặc liên kết ứng dụng, OneLink và t
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ### Thu hút lại với SRN
 
 Giống như các chiến dịch Phân bổ lại, khi người dùng được thu hút lại thông qua SRN, dữ liệu chuyển đổi không cho biết đây là chiến dịch thu hút lại. Bạn có thể đặt tên chiến dịch sao cho tên đó biểu thị là chiến dịch thu hút lại.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ### Thu hút lại bằng các mạng quảng cáo thông thường
 
 Ở đây cũng vậy, tải trọng dữ liệu chuyển đổi không cho biết rằng người dùng đến từ một chiến dịch thu hút lại. Để khắc phục hạn chế này, bạn có thể đặt tên chiến dịch để biểu thị hoạt động thu hút lại.
+
+<div id="re-engagement-with-deep-linking" />
 
 ### Thu hút lại bằng liên kết sâu
 
@@ -694,10 +746,14 @@ Một lý do khác để sử dụng phiên bản rút gọn của OneLink là c
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ### Nguồn dữ liệu chuyển đổi thay thế
 
 * API Push cung cấp tải trọng chuyển đổi chi tiết cho biết đó là phân bổ lại hay thu hút lại. Tải trọng API Push bao gồm một trường được gọi là `re_targeting_conversion_type`. Trường này cho biết loại chuyển đổi, là phân bổ lại hay thu hút lại. Để tìm hiểu thêm, hãy xem phần <Anchor target="_blank" href="/marketers/vi/docs/push-api-streaming-raw-data">hướng dẫn API Push</Anchor> của chúng tôi.
 * Báo cáo Dữ liệu Thô cũng chứa các chỉ số cho loại chuyển đổi. Trong báo cáo dữ liệu thô đối với chuyển đổi nhắm mục tiêu lại, có một cột được gọi là ***Event Name***. Giá trị trong cột này là ***lượt thu hút lại*** hoặc ***phân bổ lại*** theo loại chuyển đổi.
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ### Ví dụ về thu hút người dùng và phân bổ lại kết hợp
 

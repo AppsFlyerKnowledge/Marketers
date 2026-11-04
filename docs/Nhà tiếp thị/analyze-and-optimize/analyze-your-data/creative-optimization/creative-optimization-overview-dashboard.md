@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## Giới thiệu về bảng điều khiển Tổng quan
 
 Bảng điều khiển <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide">**Tối ưu hóa Quảng cáo**</Anchor> cho phép bạn đo lường hiệu suất quảng cáo của mình bằng cách tập hợp tất cả quảng cáo từ mọi kênh truyền thông vào một nơi. Phân tích hiệu suất của chúng theo các phương diện đã chọn, trên nhiều chiến dịch, kênh, v.v., để có được thông tin chi tiết trọng yếu trước khi lập kế hoạch, chọn và tạo lập loạt quảng cáo tiếp theo của bạn.
@@ -43,9 +45,13 @@ Sử dụng bảng điều khiển để xem dữ liệu của bạn được tr
 * Xem hiệu suất quảng cáo theo thời gian.
 * Và nhiều hơn nữa
 
+<div id="get-started" />
+
 ## Bắt đầu
 
 Nếu chưa định cấu hình Tối ưu hóa Quảng cáo, bạn có thể tìm thấy hướng dẫn về cách thực hiện <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide#bắt-đầu">tại đây</Anchor>.
+
+<div id="charts" />
 
 ## Biểu đồ
 
@@ -67,6 +73,8 @@ Sử dụng biểu đồ để xem cách trình bày trực quan nhanh chóng, t
 ## Bảng
 
 Sử dụng bảng để truy cập sâu vào thông tin chi tiết. Nhóm theo nhiều phương diện khác nhau hoặc tùy chỉnh cài đặt bảng để thêm phương diện và phép đo bổ sung vào bảng, sau đó sắp xếp, xem và so sánh dữ liệu để có được thông tin chi tiết bạn cần.
+
+<div id="zd-table" />
 
 <div id="table" />
 

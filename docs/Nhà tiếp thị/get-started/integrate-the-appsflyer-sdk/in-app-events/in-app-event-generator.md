@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tự động tạo mã ứng dụng (Android và iOS gốc, Unity) để gửi các sự kiện trong ứng dụng bằng cách xác định tên và nội dung sự kiện theo nhu cầu kinh doanh của bạn.
 
+<div id="introduction" />
+
 ## Giới thiệu
 
 Sự kiện trong ứng dụng là công cụ chính để **chủ sở hữu ứng dụng đo lường chất lượng người dùng của họ đến từ các nguồn khác nhau** dựa trên hành động họ thực hiện sau khi cài đặt ứng dụng. Các sự kiện cũng thường được sử dụng để thực hiện các chiến dịch tiếp thị dựa trên CPA.
@@ -37,9 +39,13 @@ Bằng cách sử dụng Trình tạo sự kiện trong ứng dụng, nhà tiế
 * **Gửi mã được tạo tự động** cho các nhà phát triển ứng dụng di động trên Android và iOS của họ – **rút ngắn số ngày làm việc,** những cuộc trao đổi liên lạc dư thừa và các lỗi tiềm ẩn.
 * **Sử dụng lại sản phẩm của họ** nếu sau này họ cập nhật sự kiện, thêm sự kiện mới hoặc thêm ứng dụng mới.
 
+<div id="using-the-in-app-event-generator" />
+
 ## Sử dụng Trình tạo sự kiện trong ứng dụng
 
 **Sử dụng Trình tạo sự kiện trong ứng dụng để tạo một nhóm sự kiện cho một ứng dụng mới hoặc để cập nhật một nhóm hiện có.**
+
+<div id="creating-a-new-event-set" />
 
 ### Tạo một nhóm sự kiện mới
 
@@ -51,6 +57,8 @@ Bằng cách sử dụng Trình tạo sự kiện trong ứng dụng, nhà tiế
 4. Nhấp vào nút **`</>` Code** để xem và sao chép mã được tạo cho nhà phát triển của bạn: Java (Android gốc), Obj-C/Swift (iOS gốc) hoặc C# (Unity).
 5. Nhấp vào **Download .zip** để lưu nhóm sự kiện nhằm sử dụng trong tương lai hoặc cộng tác với các nhà phát triển và đồng nghiệp.
 
+<div id="updating-an-existing-event-set" />
+
 ### Cập nhật một nhóm sự kiện hiện có
 
 **Để cập nhật một nhóm sự kiện hiện có:**
@@ -61,6 +69,8 @@ Bằng cách sử dụng Trình tạo sự kiện trong ứng dụng, nhà tiế
 4. Nhấp vào nút **`</>` Code** để xem và sao chép mã được tạo cho nhà phát triển của bạn: Java (Android gốc), Obj-C/Swift (iOS gốc) hoặc C# (Unity).
 5. Nhấp vào **Download .zip** để lưu nhóm sự kiện nhằm sử dụng trong tương lai hoặc cộng tác với các nhà phát triển và đồng nghiệp.
 
+<div id="adding-events" />
+
 ### Thêm sự kiện
 
 **Để thêm một sự kiện mới vào nhóm sự kiện:**
@@ -70,6 +80,8 @@ Bằng cách sử dụng Trình tạo sự kiện trong ứng dụng, nhà tiế
 3. Nhập mục đích của sự kiện, mô tả tình huống kinh doanh.
 4. Nhập hành động kích hoạt cho sự kiện, giải thích thời gian trong hành trình của người dùng mà sự kiện sẽ được gửi. Giải thích này được thêm vào dưới dạng nhận xét trong mã được tạo để các nhà phát triển tham khảo nhanh.
 5. [Tùy chọn] Thêm một hoặc nhiều thông số vào sự kiện.
+
+<div id="adding-parameters" />
 
 ### Thêm thông số
 
@@ -82,6 +94,8 @@ Bằng cách sử dụng Trình tạo sự kiện trong ứng dụng, nhà tiế
 5. Để trợ giúp nhà phát triển của bạn, hãy nhập một mô tả chung, loại trường hoặc nguồn tương ứng cho giá trị thông số trong ứng dụng của bạn. Những nội dung này xuất hiện dưới dạng nhận xét cho từng thông số sự kiện trong mã được tạo.
 
 **Lưu ý**: <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#predefined-and-custom-events">Đặt tên được xác định trước</Anchor> cho phép tự động ánh xạ các sự kiện và thông số tới các đối tác và là phương pháp nên thực hiện.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

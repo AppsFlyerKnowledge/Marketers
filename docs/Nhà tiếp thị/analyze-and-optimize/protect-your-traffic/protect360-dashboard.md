@@ -31,6 +31,8 @@ x-zendesk:
 
 [![p360_dashboard_main.png](https://support.appsflyer.com/hc/article_attachments/5218491552273)](https://support.appsflyer.com/hc/article_attachments/5218491552273)
 
+<div id="about-protect360-dashboard" />
+
 ## Giới thiệu về bảng điều khiển Protect360
 
 Bảng điều khiển Protect360:
@@ -81,6 +83,8 @@ Các tùy chọn lọc và nhóm sau đây có sẵn:
   * **Địa lý**: so sánh gian lận được xác định từ tất cả các quốc gia
 
 </Accordion>
+
+<div id="installs-dashboard" />
 
 ## Bảng điều khiển lượt cài đặt
 
@@ -134,6 +138,8 @@ Số liệu sự kiện trong ứng dụng bị chặn hiển thị số sự ki
 
 <Accordion title="Lượt cài đặt—b iểu đồ">
 
+<div id="identified-fraud-trend-chart" />
+
 #### Biểu đồ xu hướng gian lận được xác định
 
 Biểu đồ xu hướng gian lận được xác định hiển thị số lượt cài đặt, phân bổ lại và tương tác lại gian lận mỗi ngày, được chia nhỏ theo:
@@ -143,6 +149,8 @@ Biểu đồ xu hướng gian lận được xác định hiển thị số lư�
 * **Loại nguồn**: Không tự nhiên và tự nhiên
 
 Hiển thị có thể là biểu đồ đường hoặc biểu đồ thanh.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### Biểu đồ điều chỉnh phân bổ số lượt cài đặt bị đánh cắp
 
@@ -160,6 +168,8 @@ Bạn có thể:
 * Khi hoạt động đánh cắp bị chặn theo thời gian thực, thì các phân bổ chính xác sẽ hiển thị trong báo cáo và bảng điều khiển AppsFlyer (không chỉ Protect360). Khi hoạt động đánh cắp được xác định hậu phân bổ thì các lượt phân bổ chính xác chỉ được hiển thị trong dữ liệu thô của Protect360.
 * Biểu đồ này có thể hiển thị điều chỉnh **đến** nguồn tự nhiên, nhưng không hiển thị điều chỉnh **từ** nguồn tự nhiên.
 
+<div id="identified-fraud-chart" />
+
 #### Biểu đồ gian lận được xác định
 
 Biểu đồ gian lận được xác định hiển thị các loại gian lận mà bạn gặp phải theo tỷ lệ phần trăm. Phân tích gian lận có thể theo:
@@ -176,6 +186,8 @@ Biểu đồ gian lận được xác định hiển thị các loại gian lậ
 <div id="installs-table" />
 
 <Accordion title="Lượt cài đặt—bảng">
+
+<div id="identified-fraud-breakdown" />
 
 #### Phân tích gian lận đã xác định
 
@@ -196,6 +208,8 @@ Cấu trúc bảng động:
 * Là theo mỗi người dùng, vì vậy mọi người dùng tài khoản có quyền truy cập vào Protect360 đều có thể tự tùy chỉnh cấu trúc bảng của riêng họ. Xem [thêm các tùy chọn bảng](/docs/protect360-dashboard#tùy-chọn-bảng-bổ-sung).
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Nội dung của bảng phân tích gian lận đã xác định
 
@@ -260,6 +274,8 @@ Cấu trúc bảng động:
 | CTIT > Trên 60 phút | Lượt cài đặt, phân bổ lại và thu hút lại trong đó thời gian giữa lần nhấp chuột và lần khởi chạy ứng dụng đầu tiên là hơn 60 phút. Phép tính chỉ bao gồm các lượt cài đặt có CTIT dưới 25 giờ (và không phải tất cả các lượt cài đặt). Thông thường, khoảng 30% các lượt khởi chạy ứng dụng đầu tiên diễn ra hơn 60 phút sau khi tải xuống. |
 | CTIT > Trên 5 giờ | Lượt cài đặt, phân bổ lại và thu hút lại trong đó thời gian giữa lần nhấp chuột và lần khởi chạy ứng dụng đầu tiên là hơn 5 giờ. Phép tính chỉ bao gồm các lượt cài đặt có CTIT dưới 25 giờ (và không phải tất cả các lượt cài đặt). Thông thường, khoảng 20% các lượt khởi chạy ứng dụng đầu tiên diễn ra hơn 5 giờ sau khi tải xuống. |
 
+<div id="additional-table-options" />
+
 #### Tùy chọn bảng bổ sung
 
 * Nhấp vào **Export CSV** (Xuất CSV) để tải bảng về máy tính để bàn dưới định dạng CSV
@@ -304,6 +320,8 @@ Các số liệu dạng tiêu đề cho phép bạn xem:
 
 <Accordion title="Sự kiện trong ứng dụng —b iểu đồ">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **Xu hướng gian lận thể hiện qua biểu đồ thời gian**
 
 Biểu đồ xu hướng gian lận theo thời gian hiển thị số sự kiện mỗi ngày, được chia thành:
@@ -311,6 +329,8 @@ Biểu đồ xu hướng gian lận theo thời gian hiển thị số sự ki�
 * **Thời gian thực**: Các sự kiện trong ứng dụng gian lận bị chặn theo thời gian thực
 * **Hậu phân bổ**: Các sự kiện gian lận được xác định hậu phân bổ
 * **Không gian lận**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **Gian lận IAE hàng đầu theo biểu đồ nguồn truyền thông**
 
@@ -346,6 +366,8 @@ Cấu trúc bảng động:
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### Nội dung của bảng phân tích gian lận sự kiện trong ứng dụng
 
 | Cột bảng | Mô tả |
@@ -370,6 +392,8 @@ Cấu trúc bảng động:
 | IAE bị chặn | IAE bị chặn bởi các quy tắc xác thực. |
 | Đã sửa thành tự nhiên | Lượt cài đặt bị đánh cắp với nguồn không gian lận cuối cùng là tự nhiên. |
 | Đã sửa thành nguồn không tự nhiên | Lượt cài đặt bị đánh cắp với nguồn không gian lận cuối cùng là nguồn truyền thông không tự nhiên. |
+
+<div id="additional-table-options-1" />
 
 #### Tùy chọn bảng bổ sung
 
@@ -486,6 +510,8 @@ Vùng bị chiếm bởi một nguồn truyền thông đại diện cho tổng 
 | Dữ liệu lịch sử | Dữ liệu có sẵn từ khi bắt đầu đăng ký Protect360 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

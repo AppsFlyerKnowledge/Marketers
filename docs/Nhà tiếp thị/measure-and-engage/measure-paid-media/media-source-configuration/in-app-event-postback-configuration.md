@@ -24,18 +24,26 @@ x-zendesk:
 ---
 > **Tổng quan:** Đo lường mức độ tương tác với ứng dụng và chất lượng của người dùng, đồng thời tối ưu hóa các chiến dịch bằng cách sử dụng dữ liệu sự kiện trong ứng dụng.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Sự kiện trong ứng dụng cho phép các nhà tiếp thị đo lường lượt tương tác với ứng dụng và chất lượng của người dùng từ các nguồn khác nhau, đồng thời xây dựng chiến lược thu hút người dùng phù hợp. Mạng quảng cáo sử dụng thông tin của sự kiện trong ứng dụng để tối ưu hóa chiến dịch và chạy chiến dịch trả phí cho mỗi hành động/sự kiện. Mạng quảng cáo nhận dữ liệu về các sự kiện trong ứng dụng thông qua đăng lại—được gửi theo thời gian thực. <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Tìm hiểu thêm về các sự kiện phong phú trong ứng dụng</Anchor>.
+
+<div id="postback-in-app-event-selection" />
 
 ## Đăng lại lựa chọn sự kiện trong ứng dụng
 
 Nhà tiếp thị có thể chọn các sự kiện trong ứng dụng mà họ muốn gửi đăng lại đến các mạng quảng cáo, bằng cách sử dụng các tùy chọn cài đặt được mô tả trong bài viết này.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > * Các sự kiện trong ứng dụng bao gồm **các sự kiện bị từ chối**, nghĩa là các sự kiện trong ứng dụng bị Protect360 chặn hoặc các sự kiện được phát hiện là không tuân thủ các quy tắc xác thực mục tiêu.
 > * Nếu phần **In-app event postbacks** không tồn tại trong tab **Integration**, thì có nghĩa là đối tác chưa thiết lập ghi nhận sự kiện trong ứng dụng với AppsFlyer trong cấu hình sơ bộ. Đối tác có thể liên hệ với AppsFlyer bằng <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">tiện ích trợ lý đối tác</Anchor> để hoàn tất quá trình tích hợp.
+
+<div id="in-app-event-postback-window" />
 
 ## Khung thời gian đăng lại sự kiện trong ứng dụng
 
@@ -56,13 +64,19 @@ Các đăng lại luôn được gửi dựa trên phần cài đặt khung th�
 | Ngày 15 tháng 1 | Khung thời gian được thay đổi thành 20 ngày. |
 | Ngày 18 tháng 1 | Người dùng thực hiện một giao dịch mua khác.<br /><br />Lần này, đăng lại được gửi đi—vì sự kiện diễn ra trong khoảng thời gian hiện tại (20 ngày). |
 
+<div id="default-postback-window" />
+
 ### Thời gian đăng lại mặc định
 
 Khi bắt đầu thiết lập đăng lại sự kiện trong ứng dụng, thời gian mặc định sẽ tự động được đặt thành sáu tháng.
 
+<div id="note-2" />
+
 > 📘 **Lưu ý**
 >
 > Nếu bạn đã bắt đầu sử dụng đăng lại sự kiện trong ứng dụng với một đối tác cụ thể trước ngày 30 tháng 7 năm 2019, thì cài đặt mặc định cho khoảng thời gian là Trọn đời. Điều này có nghĩa là các đăng lại sự kiện trong ứng dụng luôn được gửi.
+
+<div id="who-can-configure-postback-windows" />
 
 ### Ai có thể định cấu hình khung thời gian đăng lại
 
@@ -70,6 +84,8 @@ Khi bắt đầu thiết lập đăng lại sự kiện trong ứng dụng, th�
 * Đại lý, nếu họ được cấp quyền **Cho phép định cấu hình đăng lại sự kiện trong ứng dụng**<Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#cấp-quyền-cho-đại-lý">.</Anchor>  
   **Lưu ý:** Nhà tiếp thị và đại lý làm việc với cùng một mạng quảng cáo có thể định cấu hình các khung thời gian đăng lại riêng biệt với nhau, dựa trên hợp đồng của họ với mạng.
 * Đối tác, nếu họ được cấp quyền **Cho phép định cấu hình đăng lại sự kiện trong ứng dụng**.
+
+<div id="event-mapping" />
 
 ## Ánh xạ sự kiện
 
@@ -79,9 +95,13 @@ Ví dụ, khi người dùng mua thứ gì đó thông qua một ứng dụng, m
 
 Để đảm bảo rằng các sự kiện của nhà tiếp thị khớp với các sự kiện giống như các sự kiện của đối tác thì tên sự kiện phải được ánh xạ.
 
+<div id="note-3" />
+
 > 📘 **Lưu ý**
 >
 > Các sự kiện được ánh xạ trong tab Integration cho một đối tác cụ thể có thể áp dụng cho cả đăng lại tiêu chuẩn và <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">SKAN</Anchor>.
+
+<div id="mapping-methods" />
 
 ### Phương thức ánh xạ
 
@@ -90,6 +110,8 @@ Mỗi đối tác sẽ tự quyết định sử dụng phương thức nào tro
 * [Nhập ID sự kiện của đối tác](/docs/in-app-event-postback-configuration#h_c513e6d4-d46f-4070-a98d-1888a5ea939d)
 * [Chọn ID sự kiện từ danh sách](/docs/in-app-event-postback-configuration#select-an-event-id-from-the-list)
 * [Gửi các sự kiện như vốn có (chưa được ánh xạ)](/docs/in-app-event-postback-configuration#send-events-as-they-are-unmapped)
+
+<div id="note-4" />
 
 > 📘 **Lưu ý**
 >
@@ -102,6 +124,8 @@ Mỗi đối tác sẽ tự quyết định sử dụng phương thức nào tro
 
 * **Sự kiện AppsFlyer**: Từ danh sách các sự kiện trong ứng dụng của bạn, hãy chọn một sự kiện.
 * **được ánh xạ tới sự kiện đối tác**: Trong trường văn bản, hãy nhập ID sự kiện nhận được từ đối tác, tương ứng với sự kiện trong ứng dụng của bạn (sự kiện AppsFlyer)
+
+<div id="note-5" />
 
 > 📘 **Lưu ý**
 >
@@ -134,6 +158,8 @@ Bạn có thể chọn những sự kiện chưa được ánh xạ để gửi 
 * **Thêm theo cách thủ công:** Chọn các sự kiện cụ thể.
 * **Gửi tất cả sự kiện (không bao gồm lượt gỡ cài đặt và phiên)**: Gửi tất cả sự kiện của bạn. Điều này không bao gồm lượt gỡ cài đặt, phiên (lượt khởi chạy ứng dụng) và sự kiện `af_app_opened` .
 
+<div id="note-6" />
+
 > 📘 **Lưu ý**
 >
 > Để ngăn các nhà quảng cáo vô tình chia sẻ quá nhiều thông tin với nền tảng Analytics của bên thứ ba, kể từ tháng 3 năm 2019, chúng tôi đã xóa tùy chọn **Gửi tất cả các sự kiện (không bao gồm lượt gỡ cài đặt và phiên)** cho các nền tảng này. Nền tảng Analytics được định cấu hình trước đó sẽ vẫn giữ tùy chọn cài đặt này.
@@ -162,12 +188,16 @@ Bạn có thể chọn những sự kiện chưa được ánh xạ để gửi 
 
 Để biết thêm thông tin về các sự kiện ánh xạ, hãy xem phần <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">đăng lại sự kiện trong ứng dụng</Anchor>.
 
+<div id="options-for-sending-postbacks" />
+
 ### Tùy chọn để gửi đăng lại
 
 Đối với mỗi sự kiện, bạn có thể chọn trường hợp nào cần gửi đăng lại (trong khoảng thời gian đăng lại):
 
 * **Chỉ đối tác này**: Chỉ gửi đăng lại khi sự kiện được phân bổ cho đối tác này—nghĩa là người dùng thực hiện sự kiện đến từ đối tác này.
 * **All media sources including organic**: Gửi đăng lại tới tất cả các nguồn truyền thông cho các sự kiện được phân bổ cho bất kỳ đối tác nào và cho các sự kiện không phải trả tiền—nghĩa là khi người dùng thực hiện sự kiện đến từ bất kỳ nguồn truyền thông nào.
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### Dữ liệu cần đưa vào đăng lại
 
@@ -182,6 +212,8 @@ Bạn nên chia sẻ doanh thu nếu muốn mạng quảng cáo tối ưu hóa c
 Trong các lần gửi lại, `af_revenue` và `af_currency` được ghi bên ngoài JSON event\_value dưới dạng **tiền tệ** và **đơn vị tiền tệ** và có thể được gửi riêng. Cấu trúc đăng lại ví dụ: `https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&content_id=(af_content_id)`
 
 **Lưu ý**: Khi chọn các tùy chọn có **Không có giá trị & không có doanh thu** hoặc **Có giá trị & không có doanh thu**, thì các thông số tương ứng được ẩn bằng N/A.
+
+<div id="h_01HBZCRNKGBEDSBZEY87KYQ60G" />
 
 > 📄 **Ví dụ**
 >
@@ -198,6 +230,8 @@ Trong các lần gửi lại, `af_revenue` và `af_currency` được ghi bên n
 > | **Có giá trị và không có doanh thu** | `{"af_currency":"N/A","af_content_id":"1234567",`<br /><br />`"af_revenue":"N/A","af_content_type":"category_a"}`<br /><br />`&monetary=N/A&content_id=1234567` | Không áp dụng | Không áp dụng |
 > | **Có giá trị và doanh thu** | `"af_currency":"USD","af_content_id":"1234567",`<br /><br />`"af_revenue":200,"af_content_type":"category_a"}`<br /><br />`&monetary=1.856918&content_id=1234567` | 50,87 | USD |
 
+<div id="conditional-in-app-event-postbacks" />
+
 ### Đăng lại sự kiện trong ứng dụng có điều kiện
 
 Lọc đăng lại sự kiện trong ứng dụng bằng nhiều điều kiện có thể được ánh xạ tới các sự kiện khác nhau. Chỉ những sự kiện đáp ứng các điều kiện của bộ lọc mới được gửi tới các đối tác, bao gồm cả SRN và đối tác Analytics. Sử dụng tính năng này cho:
@@ -205,6 +239,8 @@ Lọc đăng lại sự kiện trong ứng dụng bằng nhiều điều kiện 
 * Tối ưu hóa phân khúc người dùng, cá nhân hóa và giữ chân người dùng
 * Giảm thiểu dữ liệu
 * Bảo vệ quyền riêng tư của người dùng
+
+<div id="h_01HBZCRNKHRTMHP3JPFVCS8D6N" />
 
 > 📄 **Ví dụ**
 >
@@ -230,6 +266,8 @@ Lọc đăng lại sự kiện trong ứng dụng bằng nhiều điều kiện 
    * Sự kiện đối tác cần ánh xạ điều kiện tới (sử dụng bất kỳ [tùy chọn ánh xạ](/docs/in-app-event-postback-configuration#phương-thức-ánh-xạ) nào trong số này)
 4. Bạn có thể thêm nhiều điều kiện hơn, trước tiên chỉ cần đảm bảo rằng bạn nhập tất cả các trường của điều kiện hiện có.
 5. Nhấp vào **Save integration** (Lưu tích hợp).
+
+<div id="considerations" />
 
 #### Những điều cần lưu ý
 
@@ -258,10 +296,14 @@ Khi định cấu hình các điều kiện, hãy đảm bảo đáp ứng các 
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **Lưu ý**
 >
 > * Bạn nên thử nghiệm tính năng này với một ứng dụng thử nghiệm hoặc cho các sự kiện nhỏ để hiểu rõ tác động của nó đối với việc tối ưu hóa chiến dịch.
 > * Để xem <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">nội dung đăng lại</Anchor>, bạn có thể tải xuống báo cáo đăng lại dữ liệu thô.
+
+<div id="editing-multiple-events" />
 
 ### Chỉnh sửa nhiều sự kiện
 
@@ -282,6 +324,8 @@ Trong khi ánh xạ các sự kiện, giá trị trong các trường **dành ch
 
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### Sự kiện tùy chỉnh
 
 Danh sách các sự kiện có sẵn để ánh xạ chỉ hiển thị các sự kiện đã được SDK báo cáo hoặc các sự kiện từ máy chủ đến máy chủ đến AppsFlyer. Nếu sự kiện bạn muốn ánh xạ không xuất hiện trong danh sách thả xuống, thì có thể do những nguyên nhân sau:
@@ -299,6 +343,8 @@ Danh sách các sự kiện có sẵn để ánh xạ chỉ hiển thị các s�
 3. Ánh xạ sự kiện với mã định danh đối tác.
 4. Hãy nhấp vào **Save Integration** để đảm bảo ánh xạ được ghi lại.
 
+<div id="note-10" />
+
 > 📘 **Lưu ý**
 >
 > * Khi một sự kiện tùy chỉnh được thêm vào theo một đối tác nhất định, thì sự kiện đó sẽ được thêm vào danh sách sự kiện cho tất cả các đối tác. Có nghĩa là bạn có thể thấy sự kiện này trong bất kỳ danh sách sự kiện thả xuống nào của đối tác.
@@ -308,6 +354,8 @@ Danh sách các sự kiện có sẵn để ánh xạ chỉ hiển thị các s�
 
 * Không thể thêm sự kiện tùy chỉnh
 * Chỉ có thể xem và/hoặc ánh xạ sự kiện sau khi nhà tiếp thị đã thêm sự kiện và cấp <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">các quyền</Anchor> cần thiết
+
+<div id="event-mapping-by-ad-networks" />
 
 ## Ánh xạ sự kiện theo mạng quảng cáo
 
@@ -319,6 +367,8 @@ Nhà tiếp thị có thể tự cho phép các mạng quảng cáo ánh xạ c�
 ![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
 
 Khi đã được cấp quyền, mạng quảng cáo có thể ánh xạ các sự kiện theo hướng dẫn trong phần [Nhập ID sự kiện vào trường văn bản](/docs/in-app-event-postback-configuration#phương-thức-ánh-xạ).
+
+<div id="event-mapping-by-agencies" />
 
 ## Ánh xạ sự kiện theo đại lý
 
@@ -332,6 +382,8 @@ Nhà tiếp thị có thể cho phép các đại lý định cấu hình đăng
 4. Chọn các sự kiện cụ thể mà đại lý được phép chia sẻ.
 
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+
+<div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
 > 📄 **Xem thêm**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Khái quát:** Ghi chú phát hành SDK iOS `phiên bản V4 trở lên`.
 
+<div id="ios-sdk-release-notes" />
+
 ## SDK iOS V6
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk">Hướng dẫn tích hợp SDK iOS dành cho nhà phát triển</Anchor>
@@ -396,6 +398,8 @@ AppsFlyer sử dụng tính năng tổng kiểm tra md5:
 | 4.7.0 | c3c0a453caa9971492ef8acd8bee04ae | cadeab0479c4a723173943d77d253051 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

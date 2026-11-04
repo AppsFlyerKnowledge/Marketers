@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > Sơ lược: Hãy xem ghi chú phát hành SDK để biết tổng quan nhanh về những thay đổi mới nhất đối với SDK Android. Các nhà phát triển đang tìm kiếm thông tin chi tiết toàn diện hơn nên xem lại <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-release-notes">Ghi chú phát hành Android trên Dev Hub</Anchor>.
 
+<div id="android-sdk-releases" />
+
 ## SDK Android V6
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk">Hướng dẫn tích hợp SDK Android dành cho nhà phát triển</Anchor>
@@ -256,6 +258,8 @@ GCD trả về cùng một cấu trúc bất kể loại dữ liệu. Nếu mộ
 
 </Accordion>
 
+<div id="unsupported-sdk-versions" />
+
 <div id="deprecated-versions" />
 
 <Accordion title="Ghi chú phát hành Android V4.0.0">
@@ -294,6 +298,8 @@ GCD trả về cùng một cấu trúc bất kể loại dữ liệu. Nếu mộ
 | 4.7.0 | 13-02-2017 | <ul><li>Thông số sự kiện bổ sung</li><li>Hỗ trợ đo lường lượt gỡ cài đặt dựa trên Firebase</li><li>Sửa lỗi và bảo trì</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

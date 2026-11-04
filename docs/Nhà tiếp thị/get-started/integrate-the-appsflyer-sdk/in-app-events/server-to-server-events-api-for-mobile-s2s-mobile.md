@@ -33,6 +33,8 @@ x-zendesk:
 
 [![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## API sự kiện máy chủ đến máy chủ cho thiết bị di động
 
 Đối với các ứng dụng iOS, bắt đầu từ iOS 14, bạn phải gửi thông số OS (hệ điều hành).
@@ -45,6 +47,8 @@ AppsFlyer sẽ điền vào các sự kiện S2S với:
 * Một số giá trị phân bổ lượt cài đặt AppsFlyer, chẳng hạn như thời gian cài đặt, nguồn truyền thông.
 
 Để gửi sự kiện qua API, hãy bảo nhà phát triển của bạn tuân theo <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">hướng dẫn API sự kiện từ máy chủ đến máy chủ</Anchor> của họ.
+
+<div id="populating-parameters" />
 
 ## Điền các thông số
 
@@ -168,6 +172,8 @@ Hệ thống có thể gửi các sự kiện có giá trị doanh thu âm. Ví 
 Nếu bạn điền `af_quantity`, bạn có thể muốn điền một giá trị âm vào trường đó, tùy thuộc vào logic hệ thống của bạn. AppsFlyer không sử dụng `af_quantity`.
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Xử lý sự cố
 

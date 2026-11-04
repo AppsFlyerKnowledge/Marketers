@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **Sơ lược:** Tìm hiểu về cách tích hợp quảng cáo Meta với AppsFlyer.
 
+<div id="meta-ads-setup-guide" />
+
 ## Hướng dẫn thiết lập quảng cáo Meta
 
 Mất bao lâu để bắt đầu phân bổ quảng cáo ứng dụng thiết bị di động trên quảng cáo Meta của bạn với AppsFlyer?
@@ -55,6 +57,8 @@ Bạn không cần thực hiện Đăng nhập Facebook hoặc tích hợp ứng
    ![meta-ads-for-developters.jpg](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
 
 AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụng cùng một ID Ứng dụng Facebook cho [cả ứng dụng Android và iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Lưu ý rằng, đối với phiên bản iOS 14 trở lên, quảng cáo Meta giới hạn số lượng tài khoản quảng cáo ở mức 9 tài khoản cho mỗi ứng dụng.
+
+<div id="basic-meta-ads-attribution-setup" />
 
 ## Thiết lập phân bổ quảng cáo Meta cơ bản
 
@@ -103,6 +107,8 @@ Bạn vẫn không thấy kết quả trên AppsFlyer? Tham khảo Khắc phục
 
 </Accordion>
 
+<div id="advanced-meta-ads-attribution-setup" />
+
 ## Thiết lập phân bổ quảng cáo Meta nâng cao
 
 Với tính năng phân bổ cơ bản đã được thiết lập cho quảng cáo Meta, đã đến lúc bạn nên thiết lập phân bổ nâng cao nhanh.
@@ -126,6 +132,8 @@ Có hiệu lực từ ngày 29 tháng 10 năm 2021, chỉ báo cáo tổng hợp
 Điều này áp dụng cho tất cả các nhà quảng cáo, hệ điều hành và MMP. Điều này liên quan đến dữ liệu cấp thiết bị cho tất cả những người dùng hệ điều hành iOS và Android, bất kể trạng thái chấp thuận ATT hoặc việc cá nhân hóa quảng cáo.
 
 AppsFlyer tiếp tục nhận dữ liệu cấp thiết bị từ quảng cáo Meta, có nghĩa là khả năng phân bổ và báo cáo của chúng ta (bao gồm phân bổ đa điểm chạm, LTV, ROI, nhóm người, báo cáo giữ chân người dùng, bảo vệ chống gian lận, Đối tượng và các dịch vụ khác) vẫn không thay đổi. Xem phần <Anchor target="_blank" href="/marketers/vi/docs/aggregated-and-analytics-reporting-overview">các công cụ báo cáo hợp nhất và phân tích</Anchor>.
+
+<div id="getting-userlevel-data-for-android-installs" />
 
 #### Nhận dữ liệu cấp người dùng cho lượt cài đặt Android và sự kiện trong ứng dụng
 
@@ -159,6 +167,8 @@ Do đó, bạn có thể thấy sự gia tăng của Meta-attributed Báo cáo d
 >   * SDK AppsFlyer phải là **V5.4.0+** để dữ liệu liên kết giới thiệu được chuyển Đúng. Dữ liệu liên kết giới thiệu được ưu tiên trên dữ liệu do API cung cấp và không Hạn chế Giải pháp này áp dụng Phân bổ lượt nhấp qua Phân bổ lượt xem qua
 >   * Trường Channel được xác định bởi giá trị kênh nhận được từ API Liên kết giới thiệu của Google Play (do Meta gửi đến Google Play). Nếu nhận được một chuỗi rỗng, trường Channel sẽ hiển thị "Không có".
 > * **Đối với liên kết giới thiệu cài đặt Meta:** Tham khảo đến <Anchor target="_blank" href="/marketers/vi/docs/bulletin-get-meta-ads-attribution-in-raw-data-reports-with-the-meta-install-refe">Điều kiện tiên quyết và hành động cần thiết</Anchor> được mô tả trong bản tin.
+
+<div id="meta-install-referrerfaq" />
 
 #### Liên kết giới thiệu cài đặt Meta—FAQ
 
@@ -237,10 +247,14 @@ Tích hợp này cung cấp dữ liệu tổng hợp về chi phí, nhấp chu�
 
 **Để xóa tài khoản quảng cáo Meta đã kết nối: IN Trong cột actions, di chuột qua một tài khoản và nhấp vào Delete connection. Xóa kết nối**
 
+<div id="notes" />
+
 > 📘 **Lưu ý**
 >
 > * Nếu bạn đã đăng nhập vào quảng cáo Meta, Khi bạn nhấp vào biểu tượng **Đăng nhập f** , cửa sổ ngay lập tức mở ra và Đóng. Đây là trạng thái bình thường.
 > * Nếu bạn có nhiều người dùng có quyền đối với Meta ads, phương pháp hay nhất là thực hiện đăng nhập cho tất cả chúng, để <Anchor target="_blank" href="/marketers/vi/docs/meta-ads-faq#why-doesnt-cost-data-include-data-from-all-campaigns">Tránh lấy một phần dữ liệu</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### Trạng thái đồng bộ dữ liệu chi phí
 
@@ -281,6 +295,8 @@ Tìm hiểu thêm về cách làm phong phú thêm dữ liệu của bạn với
   * Dấu chấm (.)
   * Bộ ký tự không phải tiếng La tinh (tiếng Anh): Như Ngày 12/1/2020, Meta Ads từ chối Chữ Hán. AppsFlyer thì không đã thử nghiệm các bộ ký tự khác và bạn nên chỉ sử dụng những thứ này sau khi xác minh với Meta quảng cáo nếu chúng hỗ trợ các bộ ký tự này trong postbacks.
 * Tên sự kiện có phân biệt chữ hoa và chữ thường. Để tránh sự khác biệt, Hãy chắc chắn rằng bạn sử dụng đúng trường hợp trong trường hợp Tên cho tất cả các nguồn phương tiện và phiên bản ứng dụng.
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -352,6 +368,8 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/send-ope
 
 Nếu ứng dụng của bạn sử dụng Doanh thu quảng cáo trên Meta Audience Network Để kiếm tiền từ quảng cáo, bạn có thể ghi lại doanh thu của mình từ quảng cáo Meta trên AppsFlyer. Điều này, có hoặc không có Dữ liệu doanh thu mua hàng trong ứng dụng cung cấp cho bạn **Bức tranh toàn cảnh về doanh thu của người dùng**.
 
+<div id="record-meta-audience-network-ad-revenue" />
+
 #### Ghi nhận doanh thu quảng cáo từ Mạng đối tượng Meta
 
 1. Chuyển đến tab **Doanh thu Quảng cáo**. Bật tùy chọn Nhận dữ liệu doanh thu quảng cáo.
@@ -380,9 +398,13 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-a
 
 </Accordion>
 
+<div id="aggregate-event-measurement-aem-for-ios" />
+
 ## Đo lường Sự kiện Hợp nhất (AEM) cho iOS
 
 <Anchor target="_blank" href="/marketers/vi/docs/meta-ads-aggregate-event-measurement-aem-for-ios">AppsFlyer hỗ trợ giải pháp Đo lường Sự kiện Hợp nhất (AEM) của quảng cáo Meta. Giải pháp này giúp tối ưu hóa chuyển đổi iOS và sự kiện trong ứng dụng, đồng thời phân bổ lượt tái tương tác iOS trên quảng cáo Meta.</Anchor>
+
+<div id="meta-ads-integration-troubleshooting" />
 
 ## Khắc phục sự cố khi tích hợp quảng cáo Meta
 
@@ -455,9 +477,13 @@ Thiết lập không đúng cách - phân bổ không thành công.
 > Lưu ý rằng dữ liệu cấp người dùng có thể được nhận qua Liên kết Giới thiệu Cài đặt Google.
 > Hãy xem <Anchor target="_blank" href="/marketers/vi/docs/bulletin-action-required-get-meta-ads-raw-data-using-google-install-referrer">bản tin</Anchor> để biết thêm thông tin chi tiết.
 
+<div id="ios-14-updates-relating-to-meta-ads" />
+
 ### Các bản cập nhật iOS 14 liên quan đến quảng cáo Meta
 
 AppsFlyer xác nhận rằng tích hợp MMP của chúng tôi với quảng cáo Meta luôn triển khai cờ báo *Đã bật Theo dõi Nhà quảng cáo*. Có nghĩa là, bạn không cần thực hiện bất kỳ hành động nào trong AppsFlyer. Thông tin này được cung cấp theo danh sách kiểm tra hướng dẫn ứng dụng quảng cáo Meta dành cho iOS 14 vào tháng 2 năm 2021.
+
+<div id="see-also-1" />
 
 > 📄 **Xem thêm**
 >

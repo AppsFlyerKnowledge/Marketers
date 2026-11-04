@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sơ lược:** Đo lường các chiến dịch nhắm mục tiêu lại của Google Ads.
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Chiến dịch nhắm lại mục tiêu của Google Ads
 
 Với AppsFlyer, bạn có thể đo lường kết quả của **Chiến dịch Ứng dụng Google Ads dành cho Thu hút**.  
@@ -33,6 +35,8 @@ Chiến dịch nhắm lại mục tiêu nhắm vào người dùng trước đâ
 * Tương tác nhắm lại mục tiêu theo người dùng, những người chưa cài đặt ứng dụng của bạn, được gọi là **Lượt cài đặt lại** hay **Lượt phân bổ lại**.
 
 Để biết thêm thông tin, vui lòng xem <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">Google Ads để biết về tài liệu hỗ trợ tương tác</Anchor>.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Thiết lập các chiến dịch ứng dụng Google Ads để tham gia
 
@@ -70,6 +74,8 @@ Sự kiện này xuất hiện trong Google Ads nếu có ít nhất một ngư�
 
 Để tìm hiểu cách nhập chuyển đổi trong Google Ads, vui lòng xem thông tin <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">tại đây</Anchor>.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Không giống như tất cả các sự kiện khác, session\_start có thể được yêu cầu bởi API Google Ads, ngay cả khi bạn không nhập session\_start vào Google Ads từ AppsFlyer.
@@ -87,6 +93,8 @@ Không cần thêm bất kỳ tham số bổ sung nào vào liên kết sâu (is
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## Tiếp thị lại năng động và chiến dịch mua sắm
 
 Tiếp thị lại năng động cho các ứng dụng và chiến dịch mua sắm được hỗ trợ trong AppsFlyer. Nền tảng AppsFlyer xử lý chúng giống như bất kỳ chiến dịch tương tác lại nào khác.
@@ -94,6 +102,8 @@ Tiếp thị lại năng động cho các ứng dụng và chiến dịch mua s�
 Để tìm hiểu về tiếp thị lại năng động cho các ứng dụng, nhấp vào <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">đây</Anchor>.  
  Để tìm hiểu về các chiến dịch Mua sắm, nhấp vào <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">đây</Anchor>.  
  Để tìm hiểu thêm về Google Ads dành cho Tương tác, nhấp vào <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">đây</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

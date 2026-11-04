@@ -32,6 +32,8 @@ Báo cáo hiệu suất cấp nội dung đầy đủ được cung cấp, bao g
 
 ETL Tối ưu hóa Quảng cáo sử dụng <Anchor target="_blank" href="/marketers/vi/docs/data-locker-for-marketers">Hộp khóa Dữ liệu</Anchor> để gửi dữ liệu báo cáo Tối ưu hóa Quảng cáo của bạn tới bộ lưu trữ đám mây. Bạn có thể chọn từ nhiều đích lưu trữ khác nhau, chẳng hạn như bộ chứa thuộc sở hữu của AppsFlyer trong Amazon Web Services (AWS) hoặc bộ lưu trữ của riêng mình trong AWS, GCS, Yandex, BigQuery, Snowflake, v.v. Hộp khóa Dữ liệu hỗ trợ nhiều đích, nghĩa là bạn có thể gửi tất cả dữ liệu đến một hoặc nhiều đích, gửi dữ liệu cụ thể đến một số đích nhất định và tùy chỉnh hoạt động phân phối dữ liệu theo nhu cầu của bạn. ETL Tối ưu hóa Sáng tạo **có sẵn với gói đăng ký Tối ưu hóa Sáng tạo Premium.**
 
+<div id="get-started" />
+
 ## Bắt đầu
 
 Phần này mô tả cách thiết lập Khóa dữ liệu cho báo cáo Tối ưu hóa quảng cáo.

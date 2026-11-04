@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Get aggregate marketing cost data, including cost-related LTV (Lifetime Value) performance metrics, using Cost API at the media source account level.
 
+<div id="overview" />
+
 ## Overview
 
 ROI360 provides aggregate marketing cost data, including cost-related LTV performance metrics, at the ad account level.
@@ -35,9 +37,13 @@ Cost integrations are configured in **Cost settings**, where each integration co
 
 Cost integrations can also be created and edited from the **Cost** tab in Partner Marketplace. Either entry point produces the same account-level integration.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Access to **Cost settings** is controlled by role permissions. If you can't open **Cost settings**, ask your administrator to update your role permissions on the **User Management** page. The relevant capability is **Cost Connections**.
+
+<div id="create-a-new-api-cost-integration" />
 
 ## Create a new API cost integration
 
@@ -74,11 +80,15 @@ If the media source requires an additional step, continue to [Step 3](#additiona
 
 Some media sources require one additional step after you select apps. Add either mapping to package names and bundle IDs, or to site IDs.
 
+<div id="map-apps-to-package-names-or-bundle-ids" />
+
 #### Map apps to package names or bundle IDs
 
 There are media sources that identify apps by Android package name or iOS bundle ID, for example, AppLovin.
 
 As part of the cost configuration, after you select your apps, enter the exact package name or bundle ID for each app, as it appears in the media source's system. Every app requires a mapping value. Click **Save integration**.
+
+<div id="map-apps-to-site-ids" />
 
 #### Map apps to site IDs
 
@@ -93,15 +103,21 @@ After you select your apps, choose a default site ID parameter. It applies to ev
 
 To override the default for a specific app, select a different parameter from that app's **Site ID** dropdown. Use this when an app's site ID is formatted differently in the media source's system. Click **Save integration**.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Site ID mapping makes sure the AppsFlyer attribution link site ID macros match the value the media source expects. If your attribution link uses macros that differ from the mapping you select, site ID data won't populate correctly.
+
+<div id="select-which-ad-account-to-pull-cost-from" />
 
 #### Select which ad account to pull cost from
 
 For some media sources, like TikTok, one login can have access to several ad accounts. After you log in to the media source, you need to select the specific ad account yourself.
 
 </Accordion>
+
+<div id="edit-and-delete-an-integration" />
 
 ## Edit and delete an integration
 
@@ -140,6 +156,8 @@ Cost data collection stops immediately. Historical cost data isn't affected.
 Cost integrations are disconnected automatically when an app is transferred to a different account.
 
 </Accordion>
+
+<div id="view-cost-api-status" />
 
 ## View Cost API status
 
@@ -201,11 +219,15 @@ The following table lists every cost integration status and what it means.
 
 </Accordion>
 
+<div id="cost-integration-and-agencies" />
+
 ## Cost integration and agencies
 
 If an advertiser uses an agency to run their campaigns, we recommend that the agency, and not the advertiser, integrate with the relevant partners. Otherwise, cost data is duplicated if both the advertiser and agency integrate with a media source using the same credentials for the same app.
 
 If an advertiser stops working with an agency, cost data is still pulled if the agency still has cost configured for the app. The advertiser must ask the agency to delete their cost integration to stop this data from being pulled.
+
+<div id="traits-and-limitations" />
 
 ## Traits and limitations
 

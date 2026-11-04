@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu điểm khác biệt trong các mô hình phân bổ giữa Meta ads và AppsFlyer.
 
+<div id="meta-ads-discrepancies-with-appsflyer" />
+
 ## Không nhất quán giữa Meta ads và AppsFlyer
 
 Tương tự như bất kỳ 2 đơn vị tham gia chính nào trong hệ sinh thái thu hút người dùng di động, AppsFlyer và Meta ads đều khác nhau trong mô hình phân bổ của họ. Điều này có thể dẫn đến sự không nhất quán giữa các bảng điều khiển của Meta ads và AppsFlyer.
 
 Mặc dù chúng tôi hợp tác chặt chẽ với Meta ads để giảm thiểu tình trạng không nhất quán này, nhưng các nhà quảng cáo nên nắm được các nguyên nhân dưới đây.
 
+<div id="detect-a-discrepancy-between-appsflyer-and-meta-ads" />
+
 ### Phát hiện sự không nhất quán giữa AppsFlyer và Meta ads
 
 So sánh các sự kiện được liệt kê trong **Event Manager** của Meta ads với các sự kiện trong báo cáo của AppsFlyer. Nếu số lượng sự kiện khác nhau nhiều thì có thể xuất hiện tình trạng không nhất quán.
 
+<div id="differences-in-attribution-models" />
+
 ## Sự khác biệt trong mô hình phân bổ
 
 <table><thead><tr><th>Nguyên nhân</th><th>Quảng cáo Meta</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><p><strong>Cửa sổ xem lại phân bổ lượt clicks</strong></p></td><td><p>7 ngày (Lưu ý rằng <a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">có một số trường hợp cụ thể mà giá trị mặc định sẽ khác</a>).</p></td><td><p>1-30 ngày. Đảm bảo đặt thành 7 ngày đối với Meta ads.</p></td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><p><strong>Cửa sổ xem lại phân bổ lượt xem qua</strong></p></td><td><p>1 ngày (Lưu ý rằng <a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">có một số trường hợp cụ thể mà giá trị mặc định sẽ khác</a>).</p></td><td><p>Mặc định 1 ngày, nhưng  có thể được định cấu hình là 1-48 giờ (giữ giá trị mặc định này)</p></td></tr><tr><td><span id="multichannel-sourceattribution"></span><p><strong>Phân bổ<br/>Nguồn đa kênh</strong></p></td><td><p>Meta ads tự phân bổ lượt cài đặt bất kể các nguồn truyền thông khác.</p></td><td><p>AppsFlyer sử dụng phân bổ lượt nhấp chuột cuối cùng (thông tin thêm về phân bổ AppsFlyer có sẵn <a href="./appsflyer-attribution-model" title="Mô hình Phân bổ của AppsFlyer" target="_blank">tại đây</a>)</p></td></tr><tr><td><span id="crossdevice-attribution"></span><p><strong>Phân bổ trên nhiều thiết bị</strong></p></td><td><p>Meta ads phân bổ người dùng đã nhấp và cài đặt trên các thiết bị khác nhau, ví dụ như iOS/Android/máy tính để bàn.</p></td><td><p>AppsFlyer phân bổ các thiết bị đơn, thực hiện cả thu hút lẫn cài đặt</p></td></tr><tr><td><span id="different-time-zones"></span><p><strong>Múi giờ Khác nhau</strong></p></td><td><p>Múi giờ báo cáo mặc định trong Meta ads là PST. Đảm bảo <a href="https://www.facebook.com/business/help/754049591334898" target="_blank">đổi múi giờ trong Meta ads Manager</a> để khớp với múi giờ trên ứng dụng được xác định trong cài đặt của ứng dụng tại AppsFlyer.</p></td><td><p>Múi giờ mặc định trên ứng dụng của AppsFlyer là UTC+0. Bạn có thể đổi múi giờ được đặt cho ứng dụng tại <a href="./app-settings#localization-time-zone" target="_blank">trang cài đặt của ứng dụng</a> để khớp với múi giờ được xác định trong Meta ads Manager.</p></td></tr><tr><td><span id="google-install-referrer"></span><p><strong>Liên kết giới thiệu cài đặt của Google</strong></p></td><td colspan="2"><p>Khi một lượt cài đặt không có ID nhà quảng cáo được phân bổ cho Meta ads bằng cách sử dụng liên kết giới thiệu cài đặt của Google Play, AppsFlyer sẽ không báo cáo lại lượt cài đặt đó cho Meta ads. Điều này sẽ dẫn đến tình trạng không nhất quán vì lượt cài đặt sẽ hiển thị trong AppsFlyer chứ không phải trong Meta ads.  </p></td></tr><tr><td><span id="AEM-for-data-sharing"></span><p><strong>AEM cho chia sẻ dữ liệu</strong></p></td><td colspan="2"><p><span>Đối với <a href="./meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing" target="_blank">chia sẻ dữ liệu AEM</a>, quảng cáo Meta nhận tất cả các sự kiện chuyển đổi. Phân bổ bổ sung này không hiển thị trong AppsFlyer. Do đó, sẽ có hiện tượng tăng mức độ sai lệch dữ liệu giữa cả hai nền tảng về lượt cài đặt (trong hầu hết các trường hợp) và sự kiện trong ứng dụng, bao gồm cả phiên</span>.</p></td></tr></tbody></table>
+
+<div id="click-through-and-view-through-attribution" />
 
 ## Phân bổ lượt Xem qua và Clicks qua
 
@@ -48,6 +56,8 @@ Khung thời gian xem lại lượt nhấp qua mặc định của Meta ads đư
 Để so sánh khung thời gian phân bổ lượt nhấp qua và lượt xem hết trên Meta ads với các khung thời gian trên AppsFlyer, hãy truy cập Meta ads. Bạn nên cấu hình khung thời gian phân bổ trên AppsFlyer theo các giá trị của Meta ads như được hiển thị trong ảnh chụp màn hình sau:
 
 ![Facebook_Discrepancies.png](https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png)
+
+<div id="example" />
 
 > 📄 **Ví dụ**
 >
@@ -69,6 +79,8 @@ Do Meta ads không gửi dữ liệu ở mức người dùng nên AppsFlyer có
 
 Tuy nhiên, đối với phân bổ lượt nhấp qua, nếu mục quảng cáo chuyển hướng người dùng đến Google Play Store, các trường phân bổ khả dụng cho các nhà quảng cáo trong Google Install Referrer. Các trường được cung cấp qua người giới thiệu sẽ nhập các báo cáo dữ liệu thô AppsFlyer được cung cấp cho bạn và cho phép AppsFlyer phân bổ người dùng không có ID quảng cáo (Bật LAT).
 
+<div id="in-app-events-differences" />
+
 ## Những sự khác biệt của sự kiện trong ứng dụng
 
 Những điểm khác biệt giữa các nền tảng cũng có thể xuất hiện cùng với các sự kiện sau khi cài đặt (ví dụ: mua hàng trong ứng dụng), được hiển thị trên Meta ads và AppsFlyer. Bảng sau mô tả các lý do phổ biến nhất đối với những điểm khác biệt này và đưa ra lời khuyên để giảm thiểu những điểm khác biệt đó:
@@ -81,6 +93,8 @@ Những điểm khác biệt giữa các nền tảng cũng có thể xuất hi�
 | <span id="unsent-revenue"></span>**Doanh thu chưa gửi** | AppsFlyer nhận doanh thu từ các sự kiện mà SDK tạo ra, nhưng các sự kiện này không được gửi tới Meta ads. | Đảm bảo luôn đánh dấu vào các ô **Send Revenue** (Gửi Doanh thu) của sự kiện trong ứng dụng, ví dụ: sự kiện mua hàng trong ảnh chụp bên dưới. |
 | <span id="missing-event-values-on-facebook"></span>**Thiếu các giá trị sự kiện trên Meta ads** | AppsFlyer gửi các thông số và giá trị cho Meta ads như nằm trong quá trình ánh xạ sự kiện, nếu thông số và giá trị này có cấu trúc chính xác. | Tạo các sự kiện trong ứng dụng SDK của bạn theo <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-event-structure">cấu trúc được đề xuất của AppsFlyer</Anchor> để ánh xạ đầy đủ các giá trị sự kiện với Meta ads. |
 
+<div id="installs-from-re-engagement-campaigns-in-my-ua-dashboard" />
+
 ## Cài đặt từ các chiến dịch Thu hút lại trong Bảng điều khiển UA của tôi?
 
 Chiến dịch thu hút lại có thể khiến người dùng mở ứng dụng đã được cài đặt (**thu hút lại**). Cách khác, khi AppsFlyer nhận ra một lượt cài đặt ứng dụng trước đó đã tồn tại trên cùng một thiết bị, AppsFlyer có thể tham khảo chuyển đổi đó dưới dạng **phân bổ lại**.
@@ -89,17 +103,25 @@ Trong một chiến dịch thu hút lại, nếu Meta ads nhắm mục tiêu **n
 
 Mặt khác, các lượt cài đặt diễn ra **trong khung thời gian phân bổ lại đã đặt** sau lần cài đặt ban đầu được coi là lượt phân bổ lại và hiển thị trên trang nhắm mục tiêu lại của AppsFlyer, trong khi các lượt cài đặt có thể xuất hiện dưới dạng lượt cài đặt mới của Meta ads.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Mặc dù Meta ads hiển thị tất cả lượt cài đặt của một chiến dịch nhắm mục tiêu lại ở cùng một nơi, trên bảng điều khiển của AppsFlyer, các lượt cài đặt được chia ra giữa trang Tổng quan (lượt cài đặt mới) và trang Nhắm mục tiêu lại (phân bổ lại và thu hút lại).
+
+<div id="cross-device-attribution" />
 
 ## Phân bổ trên nhiều thiết bị
 
 Các báo cáo của Meta ads về phân bổ trên nhiều thiết bị. Điều này đôi khi có thể gây ra sự cố khiến một chiến dịch cho một nền tảng (iOS/Android) hiển thị lượt cài đặt trên một nền tảng khác.
 
+<div id="example-1" />
+
 > 📄 **Ví dụ**
 >
 > Linda nhấp vào quảng cáo trên điện thoại di động của GreatApp trên Facebook thông qua điện thoại Android của cô ấy. Meta ads ghi nhận lượt nhấp do Linda thực hiện trong chiến dịch được nhắm mục tiêu ban đầu của Android "Android Females". Linda quyết định cài đặt GreatApp trên iPad của mình. Khi khởi chạy lần đầu tiên, AppsFlyer truy vấn Meta ads về nguồn gốc của lượt cài đặt trên iOS này và Meta ads trả lời là chiến dịch "Android Females".
+
+<div id="validation-rules-and-protect360" />
 
 ## Quy tắc xác thực và Protect360
 
@@ -107,10 +129,14 @@ Nếu bạn sử dụng <Anchor target="_blank" href="/marketers/vi/docs/impleme
 
 Tương tự, nếu bạn sử dụng giải pháp chống gian lận của AppsFlyer, Protect360, có thể có các lượt cài đặt vì Meta ads sẽ tự báo cáo trong khi AppsFlyer từ chối.
 
+<div id="example-2" />
+
 > 📄 **Ví dụ**
 >
 > Jeff, người quản lý UA của GreatApp, tạo ra chiến dịch SPNA để chỉ nhắm mục tiêu đến người nói tiếng Tây Ban Nha ở Bắc Mỹ. Để xác minh điều này, Jeff xác định một quy tắc xác thực chỉ chấp nhận người dùng từ Canada và Hoa Kỳ.
 > Khi người dùng Meta ads đến từ Tây Ban Nha nhấp vào và cài đặt ứng dụng, Meta ads sẽ tự báo cáo lượt cài đặt, trong khi AppsFlyer từ chối lượt cài đặt đó vì không vượt qua quy tắc xác thực.
+
+<div id="sdk-related-discrepancies" />
 
 ## Sự không nhất quán liên quan đến SDK
 

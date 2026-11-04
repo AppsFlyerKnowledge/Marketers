@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về cấu trúc và thông số đường dẫn phân bổ của AppsFlyer.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Đường dẫn phân bổ cho phép nhà quảng cáo thu thập dữ liệu về mức độ tương tác của người dùng với quảng cáo. Các đường dẫn phân bổ được đặt sau quảng cáo và thông báo cho AppsFlyer khi người dùng tương tác với một quảng cáo. Tương tác có thể xảy ra thông qua một lượt nhấp vào quảng cáo hoặc khi người dùng xem một lượt hiển thị quảng cáo. Một bản sao của URL phân bổ được gửi tới AppsFlyer.
@@ -78,10 +80,14 @@ x-zendesk:
 | Cấu trúc URL | `https://{subdomain}.onelink.me/  <br />{templateid}?pid={media_source}  <br />&af_siteid={ApplicationID}  <br />&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | Ví dụ: | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int  <br />&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&  <br />c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="attribution-link-parameters" />
+
 ## Thông số đường dẫn phân bổ
 
 * Các thông số được liệt kê có sẵn để sử dụng trong đường dẫn phân bổ.
 * Cột **loại trường** giá trị là giới hạn ký tự của giá trị thông số. Tìm hiểu thêm về các giới hạn liên quan đến độ dài của các giá trị thông số <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary">tại đây.</Anchor>
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### Thông số đường dẫn phân bổ—UA và nhắm mục tiêu lại
 
@@ -134,12 +140,16 @@ Có thể [tải xuống bảng sau dưới dạng tệp tin `.csv`](https://doc
 | <span id="af_og_description"></span>af\_og\_description | Không áp dụng | Khi một liên kết được đăng lên mạng xã hội, mô tả biểu đồ mở (OG) sẽ tạo ra bản xem trước của mô tả. | Chuỗi 300 |
 | <span id="af_og_image"></span>af\_og\_image | Không áp dụng | Khi một liên kết được đăng lên mạng xã hội, hình ảnh biểu đồ mở (OG) sẽ tạo ra bản xem trước của hình ảnh. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### Thông số đường dẫn phân bổ—chỉ nhắm mục tiêu lại
 
 | Tham số | Hiển thị tên trong dữ liệu thô | Mô tả | Loại và chiều rộng của trường |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | Đang nhắm lại mục tiêu (chiến dịch) | URL lượt nhấp của tất cả các chiến dịch nhắm lại mục tiêu phải bao gồm `&is_retargeting=true`.  <br />Nếu tham số không được bao gồm hoặc có giá trị là "false" thì chiến dịch được coi là chiến dịch thu hút người dùng bình thường. | Enum 5 ký tự |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | Thời gian tương tác lại | Thay đổi cửa sổ <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window#setting-the-re-attribution-window">thuộc tính thu hút lại</Anchor> bằng cách thêm tham số này vào liên kết phân bổ.<br /><br />Các tùy chọn khoảng thời gian có thể là:<ul><li>Ngày: 1-90 hoặc Giờ 1-36</li><li>Trọn đời: Điều này có nghĩa là khung thời gian thu hút lại không giới hạn. Ví dụ:`&af_reengloyment_window=lifetime`</li></ul>Giá trị mặc định: 30 ngày<br /><br />Ví dụ - `&af_reengagement_window=60d` đặt cửa sổ thu hút lại là 60 ngày. | Không áp dụng |
+
+<div id="viewability-parameters" />
 
 ### Thông số loại quảng cáo
 
@@ -156,6 +166,8 @@ Tùy thuộc vào loại quảng cáo, bạn cũng có thể gửi tham số kh�
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | Tỷ lệ phần trăm tối đa của đơn vị quảng cáo hiển thị trên màn hình thiết bị |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | giây | Tổng thời lượng có thể của âm thanh |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | giây | Âm thanh được nghe trong bao lâu |
+
+<div id="android-specific-parameters" />
 
 ### Các tham số cụ thể cho Android
 
@@ -178,6 +190,8 @@ Tùy thuộc vào loại quảng cáo, bạn cũng có thể gửi tham số kh�
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | Không áp dụng | ID Quảng cáo Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Trang thông tin tùy chỉnh trên Google Console | chuỗi |
 
+<div id="ios-specific-parameters" />
+
 ### Các thông số cụ thể cho iOS
 
 | Tham số | Tên hiển thị | Mô tả |
@@ -193,6 +207,8 @@ Tùy thuộc vào loại quảng cáo, bạn cũng có thể gửi tham số kh�
 | <span id="md5_idfv"></span>md5\_idfv | Không áp dụng | IDFV băm với MD5 |
 | <span id="sha1_mac"></span>sha1\_mac | Không áp dụng | Địa chỉ mac của thiết bị biến đổi hash với SHA1. Yêu cầu hỗ trợ mạng quảng cáo |
 
+<div id="example" />
+
 > 📄 **Ví dụ**
 >
 > ```http
@@ -201,6 +217,8 @@ Tùy thuộc vào loại quảng cáo, bạn cũng có thể gửi tham số kh�
 > ```
 
 Tất cả các thông số có sẵn trong <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">Báo cáo cài đặt</Anchor> và <Anchor target="_blank" href="/marketers/vi/docs/analytics-and-aggregate-reporting-apis">Phân tích, Báo cáo và API</Anchor>.
+
+<div id="custom-parameters" />
 
 ### Thông số tùy chỉnh
 
@@ -227,6 +245,8 @@ Mỗi <Anchor target="_blank" href="http://appsflyer.com/partners">đối tác t
 
 Ví dụ về các ID nhà phát hành tích hợp quan trọng: tự nhiên, googleadwords\_int (Google AdWords), quảng cáo Meta và Twitter. Bạn có thể sử dụng bất kỳ tên nào cho những nguồn không tích hợp, chẳng hạn như email, SMS hoặc bồ câu đưa thư.
 
+<div id="avoid-common-pid-issues" />
+
 #### Tránh các sự cố PID phổ biến:
 
 * **Luôn đưa PID vào đường dẫn phân bổ của bạn.** Nếu không có PID trên đường dẫn phân bổ, người dùng được tự động phân bổ vào nguồn truyền thông "None" và nguồn cài đặt ban đầu biến mất.
@@ -235,6 +255,8 @@ Ví dụ về các ID nhà phát hành tích hợp quan trọng: tự nhiên, go
   * Lượt nhấp hoặc lượt cài đặt xuất hiện trong bảng điều khiển trong ***af\_invalid\_param***
   * Đường dẫn phân bổ sẽ không được phân bổ
   * Chức năng liên kết sâu sẽ không hoạt động đối với lượt nhấp
+
+<div id="tip" />
 
 > 👍 **Lời khuyên**
 >
@@ -259,6 +281,8 @@ Thông số ID trang web chỉ bao gồm ID của nhà phát hành phục vụ q
 
 Để đưa vào thông tin bổ sung, chẳng hạn như loại quảng cáo, vị trí đặt hoặc cả hai trong ứng dụng, ví dụ như biểu ngữ, quảng cáo xen kẽ hoặc video, hãy sử dụng thông số ID trang phụ.
 
+<div id="example-1" />
+
 > 📄 **Ví dụ**
 >
 > Đường dẫn phân bổ sau đây bao gồm:
@@ -274,6 +298,8 @@ Thông số ID trang web chỉ bao gồm ID của nhà phát hành phục vụ q
 > * ABCD = Nguồn liên kết (nhà phát hành phụ) mà nhà phát hành đang hợp tác làm việc
 > * 4567 = Vị trí đặt loại quảng cáo trong ứng dụng, chẳng hạn như biểu ngữ, quảng cáo xen kẽ hoặc video
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **Câu hỏi thường gặp: Tại sao lưu lượng truy cập dẫn đến nhiều lượt cài đặt bị chặn?**
 
 Lượt cài đặt bị chặn có thể do những nguyên nhân sau:
@@ -285,6 +311,8 @@ Lượt cài đặt bị chặn có thể do những nguyên nhân sau:
 Để tránh lượt cài đặt bị chặn, hãy đảm bảo bạn gửi một thông số ID trang web cho mỗi nhà phát hành, như được minh họa trong ví dụ.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## Mức độ Chi tiết Dữ liệu
 
@@ -302,6 +330,8 @@ Các tham số là:
 * `tên chiến dịch (c=)`
 * `Bộ quảng cáo (af_adset=)`
 * `Tên quảng cáo (af_ad=)`
+
+<div id="example-2" />
 
 > 📄 **Ví dụ**
 >
@@ -370,6 +400,8 @@ Thông thường, các ký tự này nằm trong liên kết vì chúng là các
 <Accordion title="Tham số Người đăng ký có mục đích gì?">
 
 Thông số Người đăng ký, nghĩa là af\_sub1, af\_sub2, ..., af\_sub\_5 có thể được sử dụng để ghi nhận bất kỳ KPI hữu ích nào. Các thông số này được phân tích và xuất hiện trong báo cáo dữ liệu thô, giúp chúng trở nên rất tiện dụng để thực hiện hợp nhất hoặc lọc dữ liệu.
+
+<div id="example-3" />
 
 > 📄 **Ví dụ**
 >

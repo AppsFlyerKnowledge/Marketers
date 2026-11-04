@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="activate-partner" />
+
 ## Kích hoạt đối tác
 
 **Điều kiện tiên quyết:** Trước khi thiết lập tích hợp, hãy nhớ <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations#liên-hệ-với-đối-tác">liên hệ với đối tác</Anchor> và mở tài khoản với họ.
@@ -38,9 +40,13 @@ Quá trình thiết lập được thực hiện trên trang **Active Integratio
    **Lưu ý:** Nút bật/tắt phải luôn ở trạng thái bật (<Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">được kích hoạt</Anchor>) trong thời gian bạn làm việc với đối tác.
 5. Hoàn thành cấu hình bằng cách sử dụng các thẻ có liên quan, như được mô tả ở phần tiếp theo.
 
+<div id="setting-up-amazon-ads" />
+
 ## Thiết lập tích hợp Amazon DSP
 
 Việc tích hợp với Amazon DSP hỗ trợ phân bổ lượt nhấp chuột và lượt hiển thị. Cửa sổ cấu hình bao gồm các thẻ sau: Integration, Attribution link, Cost, Ad revenue và Permissions. Amazon DSP sử dụng thẻ Integration và Permissions.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -52,6 +58,8 @@ Việc tích hợp với Amazon DSP hỗ trợ phân bổ lượt nhấp chuột
 <Accordion title="Thẻ Integration">
 
 Thẻ **Integration** bao gồm một số phần, như được mô tả bên dưới.
+
+<div id="activate-partner-1" />
 
 #### Kích hoạt đối tác
 
@@ -66,6 +74,8 @@ Chỉ dành cho ứng dụng iOS: Quyền kiểm soát dữ liệu của bạn �
 | Chỉ gửi các bài đăng lại về những sự kiện được phân bổ cho đối tác | Gửi các bài đăng lại theo cấu hình của bạn:<ul><li>**Tất cả các nguồn truyền thông, bao gồm nguồn tự nhiên**</li><li>**Chỉ đối tác này**</li></ul> |
 | Gửi các bài đăng lại theo <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks">biểu mẫu Quyền riêng tư Nâng cao</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">Dữ liệu hợp nhất và ẩn danh</Anchor> được chia sẻ với đối tác, đồng nghĩa với việc không chia sẻ dữ liệu ở cấp người dùng (ID thiết bị). |  |
+
+<div id="general-settings" />
 
 #### Cài đặt chung
 
@@ -85,6 +95,8 @@ Cấu hình cách thức gửi bài đăng lại cho lượt cài đặt:  
 > * Chỉ dành cho ứng dụng iOS: Quyền kiểm soát dữ liệu của bạn được chia sẻ với đối tác thông qua các bài đăng lại và <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions">báo cáo</Anchor> tùy thuộc vào **trạng thái của nút chuyển đổi** <Anchor target="_blank" href="/marketers/vi/docs/tiktok-for-business-advanced-srn-integration-setup#quyền-riêng-tư-nâng-cao">Quyền riêng tư nâng cao (dành cho iOS 14.5+ trở lên)</Anchor>.
 > * Các bài đăng lại được chia sẻ qua Data Locker trong báo cáo hàng giờ chứ không phải theo thời gian thực.
 
+<div id="install-attribution" />
+
 #### Phân bổ lượt cài đặt
 
 Đặt khung thời gian phân bổ lượt nhấp qua và lượt xem hết cho lượt cài đặt (lần khởi chạy đầu tiên). Lưu ý rằng chỉ có thể phân bổ lượt cài đặt trong khung thời gian xem lại đến Amazon DSP.
@@ -92,6 +104,8 @@ Cấu hình cách thức gửi bài đăng lại cho lượt cài đặt:  
 1. Đặt **Install click-through lookback window** thành 1-23 giờ hoặc 1-30 ngày.  
    **Lưu ý:** Amazon DSP khuyên bạn nên đặt khung thời gian xem lại lượt nhấp qua thành 14 ngày để phù hợp với khung thời gian phân bổ của họ.
 2. [Tùy chọn] Bật **Install view-through attribution** và đặt **Install view-through attribution window** thành 1-24 giờ.
+
+<div id="in-app-event-postbacks" />
 
 #### Đăng lại sự kiện trong ứng dụng
 
@@ -156,12 +170,16 @@ Doanh thu quảng cáo không có sẵn đối với Amazon DSP.
 
 Chọn các quyền cho phép Amazon DSP có thể truy cập dữ liệu của bạn và thực hiện các hành động khác nhau.
 
+<div id="note-3" />
+
 > 📘 **Lưu ý**
 >
 > * Nếu tích hợp bị <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">hủy kích hoạt</Anchor> trong khi vẫn bật nút Permissions, thì các quyền vẫn được cấp.
 > * Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">cấp quyền</Anchor>.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

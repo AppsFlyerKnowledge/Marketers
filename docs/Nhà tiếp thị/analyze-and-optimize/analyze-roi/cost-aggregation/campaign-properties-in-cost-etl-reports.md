@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về các thuộc tính của chiến dịch và cách chúng hiển thị trong dữ liệu ETL Chi phí của AppsFlyer.
 
+<div id="about-campaign-properties" />
+
 ## Giới thiệu về thuộc tính của chiến dịch
 
 Thuộc tính của chiến dịch là một nhóm các phương diện đặc biệt đại diện cho các tùy chọn cài đặt khác nhau của một chiến dịch quảng cáo, bao gồm mục tiêu chiến dịch, loại hình đấu thầu và số tiền đấu thầu. Đây là các tùy chọn cài đặt bạn thường xem và chỉnh sửa trong bảng điều khiển mạng quảng cáo của mình, nhưng AppsFlyer kéo các phương diện thuộc tính chiến dịch và cung cấp dữ liệu trong ETL Chi phí, giống như bạn xem các phương diện khác.

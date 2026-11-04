@@ -25,6 +25,8 @@ x-zendesk:
 
 > **Sơ lược:** Bảo vệ ứng dụng của bạn khỏi việc sử dụng trái phép bằng cách thêm Thư viện Xác minh Giấy phép (LVL) của Google để xử lý tất cả các giao tiếp liên quan đến giấy phép với Google Play.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Thư viện Xác minh Giấy phép (LVL) là thư viện bạn có thể thêm vào ứng dụng của mình (có thể tải xuống từ SDK Android) để xử lý tất cả các giao tiếp liên quan đến cấp phép với dịch vụ cấp phép của Google Play.
@@ -34,6 +36,8 @@ Thư viện này bổ sung thêm một lớp bảo vệ khác, bên cạnh các 
 Dịch vụ Cấp phép của Google Play xác định xem người dùng có được cấp phép sử dụng ứng dụng hay không. Google Play coi người dùng là đã cấp phép nếu họ là người mua ứng dụng được ghi nhận. Giấy phép này là duy nhất cho mỗi ứng dụng và có thể được sử dụng để tăng cường bảo vệ. <Anchor target="_blank" href="https://developer.android.com/google/play/licensing">Tìm hiểu thêm</Anchor>
 
 SDK AppsFlyer thu thập dữ liệu từ phía khách hàng và Protect360 thực hiện xác minh giấy phép phía máy chủ, chặn các lượt cài đặt gian lận không xác minh thành công cho cả lượt cài đặt tự nhiên và không tự nhiên. “Lý do chặn” bạn sẽ thấy trong bảng điều khiển Protect360 và các báo cáo sẽ là “Bot”.
+
+<div id="set-up-lvl" />
 
 ## Thiết lập LVL
 
@@ -106,6 +110,8 @@ Sau khi chúng tôi nhận được yêu cầu của bạn, nhóm Protect360 s�
 * CSM của bạn sẽ thông báo cho bạn và giúp bạn khắc phục sự cố triển khai trong ứng dụng.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Câu hỏi thường gặp
 

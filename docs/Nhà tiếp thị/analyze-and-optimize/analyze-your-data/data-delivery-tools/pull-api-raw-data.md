@@ -26,6 +26,8 @@ x-zendesk:
 
 [![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 
+<div id="pull-api-raw-data" />
+
 ## Dữ liệu thô API Pull
 
 * API Pull cho phép bạn truy cập các báo cáo dữ liệu thô trong tệp tin CSV. <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">Tìm hiểu thêm về báo cáo dữ liệu thô</Anchor>
@@ -33,6 +35,8 @@ x-zendesk:
 * Các khả năng khác trong API Pull là:
   * Chọn đơn vị tiền tệ
   * Chọn múi giờ
+
+<div id="raw-data-reports-available-via-pull-api" />
 
 #### Báo cáo dữ liệu thô có sẵn qua API Pull
 
@@ -48,6 +52,8 @@ x-zendesk:
 2. Cung cấp cho nhà phát triển của bạn mã thông báo API cần dùng trong tiêu đề xác thực.
 3. Cung cấp cho nhà phát triển các thông số đầu vào khi họ thực hiện lệnh gọi API, như được mô tả trong phần tiếp theo. Các thông số xác định nội dung chính trong báo cáo, cách tổ chức báo cáo và cung cấp khung thời gian báo cáo.
 4. Yêu cầu nhà phát triển làm theo <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-5">hướng dẫn về dữ liệu thô API Pull</Anchor> trong trung tâm nhà phát triển.
+
+<div id="parameters" />
 
 #### Tham số
 
@@ -198,6 +204,8 @@ Các trường báo cáo bổ sung không được thêm vào danh sách trườ
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Thông tin bổ sung
 
 <div id="traits-and-limitations" />
@@ -231,6 +239,8 @@ Các trường báo cáo bổ sung không được thêm vào danh sách trườ
 | Báo cáo không chứa dữ liệu được dự kiến theo phạm vi thời gian được chọn hoặc có sự khác biệt giữa báo cáo dữ liệu thô và báo cáo dữ liệu hợp nhất. | Xác minh rằng bạn đã đặt thông số `timezone`. Nếu không, dữ liệu sẽ được gửi bằng UTC chứ không phải múi giờ ứng dụng của bạn. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

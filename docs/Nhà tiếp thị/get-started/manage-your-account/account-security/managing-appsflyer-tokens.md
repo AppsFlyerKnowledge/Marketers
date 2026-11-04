@@ -32,6 +32,8 @@ x-zendesk:
 > * Giữ an toàn cho mã thông báo của bạn vì với mã này thì có thể truy cập được dữ liệu của bạn. Không cho mã thông báo vào kho lưu trữ mã công khai.
 > * Nên đặt lại mã thông báo API sau mỗi 180 ngày.
 
+<div id="retrieve-tokens" />
+
 ## Truy xuất mã thông báo API
 
 **Để truy xuất mã thông báo API:**
@@ -61,6 +63,8 @@ x-zendesk:
 
 ## Loại mã thông báo được yêu cầu cho mỗi API
 
+<div id="advertiser" />
+
 ### Mã thông báo V2.0—API của nhà quảng cáo
 
 | API |
@@ -75,6 +79,8 @@ x-zendesk:
 | API thuế doanh thu thực |
 | <Anchor target="_blank" href="/marketers/vi/docs/send-opendsr-api-requests">API OpenDSR</Anchor> |
 | <Anchor target="_blank" href="/marketers/vi/docs/master-api-user-acquisition-metrics-via-api">API chính</Anchor> |
+
+<div id="ad-network" />
 
 ### Mã thông báo V2.0—API mạng quảng cáo
 

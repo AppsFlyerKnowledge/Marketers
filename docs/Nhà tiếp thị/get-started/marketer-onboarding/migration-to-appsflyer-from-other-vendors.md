@@ -24,6 +24,8 @@ x-zendesk:
 
 ![quy trình di chuyển](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="about-migrating-to-appsflyer-from-other-vendors" />
+
 ## Tổng quan
 
 Việc di chuyển sang AppsFlyer từ một nhà cung cấp khác sẽ bao gồm các nhiệm vụ chính sau:
@@ -42,13 +44,19 @@ Bạn có thể xử lý các nhiệm vụ này đồng thời. Tuy nhiên, chú
 >
 > Nếu bạn muốn so sánh phép đo phân bổ giữa MMP hiện tại và AppsFlyer cho cùng một chiến dịch và nguồn truyền thông, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/measuring-attribution-with-multiple-mmps">bài viết này</Anchor>.
 
+<div id="tasks" />
+
 ## Công việc
 
 Bảng sau đây mô tả phạm vi công việc cần thiết cho mỗi tác vụ. Để xem phân tích chính xác các tác vụ chung theo thứ tự, bạn phải hoàn thành chúng, cũng như để ghi lại tiến trình của bạn, hãy tải xuống <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/1x6kdhfnfKLYHJgsROPUv7pQYC6i-Q5H3DdejBr8jKjw/export?format=xlsx">bảng tính này</Anchor>
 
+<div id="scope-of-work" />
+
 #### Phạm vi công việc
 
 <table><thead><tr><th>Nhiệm vụ</th><th>Hành động cần thiết</th><th>Đối tượng tham gia</th><th>Thời gian dự kiến</th><th>Nhận xét</th></tr></thead><tbody><tr><td>Điều kiện tiên quyết</td><td><ol><li> <a href="https://www.appsflyer.com/get-started" target="_blank">Tạo tài khoản AppsFlyer</a>.</li><li> <a href="./adding-an-app-to-appsflyer" target="_blank">Thêm ứng dụng</a> vào AppsFlyer.</li><li>[Tùy chọn] Thay đổi <a href="./set-up-re-attribution-window" target="_blank">khung thời gian phân bổ lại</a> mặc định 90 ngày để phù hợp <span>với định nghĩa về người dùng đang hoạt động.</span> </li></ol></td><td>Nhà tiếp thị/Người dùng bảng điều khiển AppsFlyer</td><td><p>2 giờ</p></td><td> </td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#tích-hợp-sdk">Tích hợp SDK</a></td><td><ul><li>Tích hợp SDK AppsFlyer vào ứng dụng của bạn.</li><li>Ánh xạ S2S hoặc các sự kiện trong ứng dụng SDK.</li><li>Cập nhật phiên bản ứng dụng trong các cửa hàng ứng dụng.</li></ul></td><td>Nhà phát triển ứng dụng</td><td><p>1-2 tuần</p></td><td><ul><li> <strong>Khuyến nghị</strong>: Tích hợp SDK AppsFlyer vào ứng dụng tiền sản xuất để thử nghiệm.</li><li>Ứng dụng sản xuất phải được cập nhật trong cửa hàng ứng dụng sau khi hoàn thành tất cả các tác vụ khác.</li></ul></td></tr><tr><td> <a href="./migration-to-appsflyer-from-other-vendors#di-chuyển-thiết-bịtùy-chọn">Di chuyển thiết bị</a> [tùy chọn]</td><td>Di chuyển ID thiết bị để tránh phân bổ hai lần cho người dùng hiện có của bạn.</td><td>Kỹ sư dữ liệu</td><td>1-2 tuần</td><td rowspan="2"><ul><li>Xem xét tạm dừng các chiến dịch hiện có trước khi di chuyển và tiếp tục các chiến dịch đó sau khi đã cập nhật phiên bản ứng dụng. </li><li>Cân nhắc việc lặp lại quy trình di chuyển thiết bị vào ngày di chuyển cuối cùng để đảm bảo phạm vi hoàn chỉnh. </li></ul></td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#di-chuyển-chiến-dịch">Di chuyển chiến dịch</a></td><td><ul><li>Tích hợp mạng quảng cáo vào AppsFlyer</li><li>Di chuyển các chiến dịch hiện tại từ:  <ul><li>SRN</li><li>Mạng quảng cáo không phải SRN</li><li>Truyền thông Sở hữu</li></ul></li></ul></td><td>Nhà tiếp thị/Quản lý UA</td><td>1-3 tuần</td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#thiết-lập-báo-cáo-dữ-liệu">Thiết lập báo cáo dữ liệu</a></td><td><ul><li>Điều chỉnh/ánh xạ cấu trúc báo cáo hiện tại của bạn với cấu trúc của AppsFlyer.</li><li>Chuẩn bị nhận báo cáo AppsFlyer.</li></ul></td><td>Kỹ sư dữ liệu</td><td>2-4 tuần</td><td> </td></tr></tbody></table>
+
+<div id="sdk-integration" />
 
 ### Tích hợp SDK
 
@@ -80,6 +88,8 @@ SDK AppsFlyer được tích hợp vào ứng dụng là liên kết giữa ứn
 
 </Accordion>
 
+<div id="device-migrationoptional" />
+
 ### Di chuyển thiết bị—tùy chọn
 
 <div id="about-device-migration" />
@@ -89,6 +99,8 @@ SDK AppsFlyer được tích hợp vào ứng dụng là liên kết giữa ứn
 Di chuyển thiết bị là quá trình tải lên danh sách các ID thiết bị người dùng hiện có của bạn (IDFA, IDFV, GAID, CUID) vào AppsFlyer. Bạn nên thực hiện quy trình này trước khi phát hành phiên bản ứng dụng mới - phiên bản sẽ bao gồm SDK AppsFlyer. Có hai tùy chọn khi di chuyển thiết bị, [di chuyển có phân bổ](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) hoặc [di chuyển không được phân bổ](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration).
 
 Việc di chuyển thiết bị giúp giải quyết các vấn đề về dữ liệu liên quan đến người dùng ứng dụng hiện tại của bạn, những người đã tải xuống ứng dụng và được nhà cung cấp trước đó của bạn phân bổ. Ví dụ: SRN tính phí gấp đôi, xảy ra khi người dùng ban đầu được phân bổ cho một SRN theo nhà cung cấp trước của bạn và những người vẫn còn trong khung thời gian xem lại, được SRN xác nhận quyền sở hữu lại trong AppsFlyer.
+
+<div id="example" />
 
 > 📄 **Ví dụ**
 >
@@ -128,6 +140,8 @@ Sau khi bạn di chuyển thiết bị, dữ liệu sẽ phản ánh trong AppsF
 
 Các thiết bị được di chuyển sang AppsFlyer bằng phương thức này sẽ được ghi nhận và hiển thị sự kiện trong ứng dụng và phiên của chúng theo nguồn truyền thông được báo cáo bởi nhà cung cấp phân bổ trước đó và theo chính sách lưu giữ dữ liệu của mạng quảng cáo.
 
+<div id="attributed-device-migration-csv-structure" />
+
 #### Cấu trúc CSV di chuyển thiết được phân bổ
 
 | Tên  <br />cột | Mô tả | Bắt buộc | Ví dụ: |
@@ -165,6 +179,8 @@ Các thiết bị được di chuyển sang AppsFlyer bằng phương thức nà
 
 Các thiết bị được di chuyển sang AppsFlyer bằng phương thức này sẽ được ghi nhận (nhưng không hiển thị) dưới dạng người dùng tự nhiên. Dữ liệu phiên và sự kiện trong ứng dụng của họ cũng được ghi nhận và hiển thị dưới dạng tự nhiên.
 
+<div id="non-attributed-device-migration-csv-file-structure" />
+
 #### Cấu trúc tệp tin CSV di chuyển thiết bị không phân bổ
 
 | Cột | Thời điểm sử dụng | Ví dụ: |
@@ -188,6 +204,8 @@ Các thiết bị được di chuyển sang AppsFlyer bằng phương thức nà
 
 </Accordion>
 
+<div id="campaign-migration" />
+
 ### Di chuyển chiến dịch
 
 Chuyển các chiến dịch tiếp thị hiện tại sang AppsFlyer để bật tính năng phân bổ AppsFlyer và tránh phí gấp đôi và mất dữ liệu phân bổ.
@@ -203,6 +221,8 @@ SRN phản hồi Đối tác Đo lường trên Thiết bị di động (MMP) kh
 **Để di chuyển các chiến dịch SRN**:
 
 * Kích hoạt và cấu hình <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns#srn-được-tích-hợp-với-appsflyer">SRN</Anchor> có liên quan trong AppsFlyer.
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >
@@ -257,6 +277,8 @@ Truyền thông sở hữu tìm đến các đường dẫn phân bổ mà bạn
 <Anchor target="_blank" href="/marketers/vi/docs/skan-conversion-studio">Tìm hiểu về cách thiết lập giá trị chuyển đổi SKAN trong AppsFlyer.</Anchor>
 
 </Accordion>
+
+<div id="data-report-setup" />
 
 ### Thiết lập báo cáo dữ liệu
 

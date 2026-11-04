@@ -22,15 +22,21 @@ x-zendesk:
 ---
 > **At a glance:** Control and update your app’s Dev Key directly in the App Settings. Giving you greater flexibility and security.
 
+<div id="what-is-a-dev-key" />
+
 ## What is a Dev Key?
 
 The Developer Key (Dev Key) is a unique identifier for your app, used to authenticate event data sent from the SDK and server-to-server (S2S) integrations to AppsFlyer. It’s essential for enabling attribution, sessions, and in-app event measurement.  
 By default, all apps in your account share the same Dev Key. But if needed, you can create a unique Dev Key for each app.  
 To give you greater control, the Dev Key Management tab in your app settings allows admin users to view and manage Dev keys, including updating or replacing an existing Dev Key.
 
+<div id="where-to-find-your-dev-keys" />
+
 ## Where to find your Dev Keys
 
 In AppsFlyer, from the side menu, select **Settings** > **App Settings** > **Dev Key Management**.
+
+<div id="dev-key-management" />
 
 ## Dev Key Management
 
@@ -40,6 +46,8 @@ Admins can use the Dev Key Management tab to:
 * Assign a Dev Key already in use by another app in the account.
 * Enable default generation of unique Dev keys for new apps.
 
+<div id="why-you-might-need-to-change-your-dev-key" />
+
 ### Why you might need to change your Dev Key
 
 You may want to change your Dev Key for several reasons:
@@ -47,6 +55,8 @@ You may want to change your Dev Key for several reasons:
 * **Security**: Rotate the key if it has been exposed to prevent unauthorized access.
 * **Account transfers**: Generate a new Dev Key after moving an app to a different account, to align it with the current account.
 * **Granularity**: Assign unique keys per app to simplify monitoring, troubleshooting, or access control.
+
+<div id="how-to-set-up-and-change-a-dev-key" />
 
 ### How to set up and change a Dev Key
 
@@ -60,6 +70,8 @@ After you generate or assign a new Dev Key, it is important to:
   * The existing Dev Key remains active
   * The new Dev Key will stay in a *Pending* state
   * No changes will apply to data collection
+
+<div id="important" />
 
 > 🚧 **Important!**
 >
@@ -79,6 +91,8 @@ After you generate or assign a new Dev Key, it is important to:
       2. Your current Dev Key will remain active until activation
       3. **Activation is required** after the updated app version is live
 
+      <div id="important-1" />
+
       > 🚧 **Important!**
       >
       > Regardless of which option you choose, the Dev Key change only takes effect after you manually activate the Dev Key.
@@ -89,11 +103,15 @@ After you generate or assign a new Dev Key, it is important to:
 8. Click Activate Dev Key.
 9. The Dev Key goes from pending to active.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > * Until users update to the latest app version, in-app events and sessions from earlier versions won’t be recorded. However, installs (attribution) will still be processed correctly.
 > * If you're using the S2S API (API2), Dev Key changes may interrupt server-to-server events.
 > * Once the Dev Key is activated, it can take up to 30 minutes for data to begin flowing into the system.
+
+<div id="how-to-set-a-unique-dev-key-for-future-apps-coming-soon---q2-2026" />
 
 ### How to set a unique Dev Key for future apps (coming soon - Q2, 2026)
 

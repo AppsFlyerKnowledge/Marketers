@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Sơ lược:** Tìm hiểu cách thêm ứng dụng của bạn vào AppsFlyer để bạn có thể nhận dữ liệu phân bổ về số lượt cài đặt và sự kiện trong ứng dụng, đồng thời phân tích dữ liệu bằng các công cụ khác nhau trên AppsFlyer.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Nếu bạn chưa thêm ứng dụng vào bảng điều khiển của mình thì trang Giới thiệu Ứng dụng sẽ hiển thị khi bạn đăng nhập vào AppsFlyer. Quá trình giới thiệu ứng dụng sẽ hướng dẫn bạn tất cả các bước để thêm ứng dụng và chuẩn bị sẵn sàng cho quy trình phân bổ. 
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### Truy cập vào trình hướng dẫn này để thêm ứng dụng
 
@@ -37,6 +41,8 @@ Bạn có thể thêm tất cả các ứng dụng của mình thông qua trang 
 **Để vào trình hướng dẫn từ trang giới thiệu ứng dụng:**
 
 * Ở bước **Thêm ứng dụng của bạn**, hãy nhấp vào **Add app** và thực hiện theo hướng dẫn để thêm ứng dụng.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -52,6 +58,8 @@ Bạn có thể thêm tất cả các ứng dụng của mình thông qua trang 
 
 <Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## Thêm một ứng dụng
 
 Sau khi bạn đã [truy cập vào trình hướng dẫn **Thêm ứng dụng**](/docs/adding-an-app-to-appsflyer#truy-cập-vào-trình-hướng-dẫn-này-để-thêm-ứng-dụng), hãy thực hiện theo các bước sau:
@@ -61,6 +69,8 @@ Sau khi bạn đã [truy cập vào trình hướng dẫn **Thêm ứng dụng**
 3. Nhấp vào **Add my app**.
 4. Sao chép Dev key để sử dụng trong <Anchor target="_blank" href="/marketers/vi/docs/getting-started-onboarding-for-marketers#bước-2-tích-hợp-sdk">quá trình tích hợp SDK</Anchor> (bạn có thể truy xuất mã khóa này sau từ trang <Anchor target="_blank" href="/marketers/vi/docs/app-settings#cài-đặt-ứng-dụng-chung">App Settings</Anchor>).
 5. Nhấp vào **Done** hoặc **+ Add another app** để thêm nhiều ứng dụng hơn.
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >
@@ -73,6 +83,8 @@ Sau khi đăng ký, ứng dụng sẽ xuất hiện trên bảng điều khiển
 * Kết nối ứng dụng đến các đối tác trong Partner Marketplace
 
 Xem <Anchor target="_blank" href="/marketers/vi/docs/getting-started-onboarding-for-marketers">tất cả các bước</Anchor> để hoàn thành quá trình giới thiệu.
+
+<div id="enter-app-details" />
 
 ### Nhập thông tin ứng dụng
 
@@ -94,7 +106,7 @@ Sử dụng tùy chọn này cho các nền tảng sau:
 | --- | --- | --- |
 | <span id="in-store"></span>In store (Trong cửa hàng) | Ứng dụng của bạn hiện có sẵn trên cửa hàng Google Play | **URL Google Play** (được sao chép từ Google Play)<ul><li>**Ví dụ:** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest&hl=en&gl=GB</li><li>**Quan trọng!**<ul><li>Nếu ứng dụng của bạn **không** được liệt kê trên cửa hàng Google Play Hoa Kỳ:<ul><li>URL phải bao gồm mã quốc gia của bất kỳ cửa hàng nào được liệt kê, như chỉ ra trong ví dụ ở trên: **&gl=`{country_code}.** Nếu bạn không bao gồm mã quốc gia, bạn sẽ nhận lỗi khi cố thêm ứng dụng.</li><li>Mã ngôn ngữ là tùy chọn: **&hl={language_code}`**</li></ul></li><li>Nếu cửa hàng của bạn **có** được liệt kê trong cửa hàng Google Play Hoa Kỳ, cả mã quốc gia và mã ngôn ngữ là tùy chọn.</li></ul></li></ul> |
 | <span id="pending-approval-not-published"></span>Đang chờ phê duyệt/chưa được công bố | Ứng dụng của bạn chưa được phát hành hoặc đang chờ phê duyệt từ Google Play | **Tên gói Android**<ul><li>**Ví dụ:** com.appsflyer.adNetworkTest</li><li>**Lưu ý:** Tên gói có phân biệt chữ hoa chữ thường</li><li>**Định dạng:**<ul><li>Ít nhất hai phân đoạn (một hoặc nhiều dấu chấm)</li><li>Mỗi phân đoạn phải bắt đầu bằng một chữ cái</li><li>Tất cả các ký tự phải là chữ và số hoặc dấu gạch dưới (az, AZ, 0-9 hoặc \_)</li><li>Độ dài tối đa là 100 ký tự</li></ul></li></ul>Để biết thêm thông tin, hãy xem <Anchor target="_blank" href="https://developer.android.com/studio/build/application-id">tài liệu dành cho nhà phát triển Android</Anchor> |
-| <span id="third-party-store-out-of-store"></span>cửa hàng của bên thứ 3/ngoài cửa hàng | Ứng dụng của bạn đang ở trên một cửa hàng ứng dụng Android không phải Google Play và/hoặc ứng dụng này có thể được tải xuống từ một vị trí không phải cửa hàng ứng dụng | **Tên gói Android**<br /><br />Để biết các yêu cầu chi tiết, hãy xem hàng trước (Đang chờ phê duyệt/chưa được xuất bản)<br /><br />**Tên kênh:** là tên duy nhất bạn đặt cho từng cửa hàng của bên thứ 3/vị trí trong APK riêng được chuẩn bị cho cửa hàng/vị trí đó<ul><li>**Ví dụ:** Amazon</li><li>**Định dạng:** Chỉ chữ hoa hoặc chữ thường (a-z hoặc A-Z). Không được phép sử dụng các ký tự khác, chẳng hạn như dấu gạch ngang (-) hoặc dấu gạch dưới (\_).</li></ul>**URL Ứng dụng** (được sao chép từ cửa hàng ứng dụng của bên thứ 3 hoặc vị trí ngoài cửa hàng)<br /><br /><br /><br />**<span id="01H815FE641Q6N5JY5846QE59Y"></span>Quan trọng!**<br />Nếu ứng dụng của bạn có sẵn từ nhiều nguồn (cụ thể là bất cứ kết hợp nào giữa Google Play, cửa hàng của bên thứ 3 hoặc vị trí ngoài cửa hàng) thì quan trọng là bạn phải xem xét các tùy chọn để <Anchor target="_blank" href="/marketers/vi/docs/set-up-multi-store-android-attribution">thiết lập phân bổ Android cho nhiều cửa hàng</Anchor>. Việc thực hiện đúng ngay từ đầu sẽ đảm bảo rằng bạn có thể truy cập dữ liệu ở định dạng mà bạn cần. |
+| <span id="third-party-store-out-of-store"></span>cửa hàng của bên thứ 3/ngoài cửa hàng | Ứng dụng của bạn đang ở trên một cửa hàng ứng dụng Android không phải Google Play và/hoặc ứng dụng này có thể được tải xuống từ một vị trí không phải cửa hàng ứng dụng | **Tên gói Android**<br /><br />Để biết các yêu cầu chi tiết, hãy xem hàng trước (Đang chờ phê duyệt/chưa được xuất bản)<br /><br />**Tên kênh:** là tên duy nhất bạn đặt cho từng cửa hàng của bên thứ 3/vị trí trong APK riêng được chuẩn bị cho cửa hàng/vị trí đó<ul><li>**Ví dụ:** Amazon</li><li>**Định dạng:** Chỉ chữ hoa hoặc chữ thường (a-z hoặc A-Z). Không được phép sử dụng các ký tự khác, chẳng hạn như dấu gạch ngang (-) hoặc dấu gạch dưới (\_).</li></ul>**URL Ứng dụng** (được sao chép từ cửa hàng ứng dụng của bên thứ 3 hoặc vị trí ngoài cửa hàng)<br /><br /><br /><br />**<span id="important"></span><span id="01H815FE641Q6N5JY5846QE59Y"></span>Quan trọng!**<br />Nếu ứng dụng của bạn có sẵn từ nhiều nguồn (cụ thể là bất cứ kết hợp nào giữa Google Play, cửa hàng của bên thứ 3 hoặc vị trí ngoài cửa hàng) thì quan trọng là bạn phải xem xét các tùy chọn để <Anchor target="_blank" href="/marketers/vi/docs/set-up-multi-store-android-attribution">thiết lập phân bổ Android cho nhiều cửa hàng</Anchor>. Việc thực hiện đúng ngay từ đầu sẽ đảm bảo rằng bạn có thể truy cập dữ liệu ở định dạng mà bạn cần. |
 
 </Accordion>
 
@@ -135,6 +147,8 @@ Sử dụng tùy chọn này cho các nền tảng sau:
 
 <Accordion title="Web (PBA)">
 
+<div id="note-3" />
+
 > 📘 **Lưu ý**
 >
 > Ứng dụng web là nơi bạn xác định một trang web cần đưa vào gói thương hiệu cho tính năng Phân bổ trên cơ sở người dùng (PBA) của chúng tôi.
@@ -158,6 +172,8 @@ Bao gồm –
 
 * Độ dài tối đa = 100 ký tự
 * Không được phép sử dụng thẻ XSS
+
+<div id="important-1" />
 
 > 🚧 **Quan trọng!**
 >
@@ -317,6 +333,8 @@ Bao gồm –
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### Nhập thông tin bổ sung (không áp dụng cho ứng dụng web):
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
@@ -324,6 +342,8 @@ Bao gồm –
 1. **Chọn đơn vị tiền tệ**
 
    Chọn đơn vị tiền tệ để hiển thị dữ liệu của ứng dụng này trong bảng điều khiển. Các sự kiện doanh thu và chi tiêu được chuyển đổi sang đơn vị tiền tệ này bằng cách sử dụng tỷ giá hối đoái có hiệu lực tại thời điểm diễn ra sự kiện. <Anchor target="_blank" href="/marketers/vi/docs/app-settings#localization-currency">Tìm hiểu thêm</Anchor> về cài đặt đơn vị tiền tệ của ứng dụng và tác động của cài đặt này.
+
+   <div id="important-2" />
 
    > 🚧 **Quan trọng!**
    >
@@ -340,10 +360,14 @@ Bao gồm –
    1. Mở và đọc <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">hướng dẫn</Anchor> về cách triển khai tuân thủ với các ứng dụng hướng đến trẻ em.
    2. Chọn ô để xác nhận rằng bạn đã đọc hướng dẫn và sẽ triển khai các biện pháp kiểm soát mà hướng dẫn chỉ định.
 
+      <div id="note-6" />
+
       > 📘 **Lưu ý**
       >
       > Hai tuần sau khi thêm ứng dụng, bạn sẽ nhận được thông báo yêu cầu bạn xác nhận rằng bạn đã triển khai các biện pháp kiểm soát quyền riêng tư cho các ứng dụng hướng tới trẻ em của mình. Sau khi xác nhận, bạn sẽ nhận được thông báo xác nhận. Bạn luôn có thể truy cập thông báo xác nhận từ trung tâm Thông báo hoặc xem chi tiết xác nhận trong <Anchor target="_blank" href="/marketers/vi/docs/audit-log">Nhật ký kiểm tra</Anchor>.
 
+
+<div id="about-pending-apps" />
 
 ## Giới thiệu về các ứng dụng đang chờ xử lý
 
@@ -352,6 +376,8 @@ Làm việc với một ứng dụng ở trạng thái đang chờ xử lý có 
 Trạng thái của ứng dụng trên bảng điều khiển là đang chờ xử lý sẽ không ảnh hưởng đến quá trình thu thập và đo lường dữ liệu. Dù ứng dụng là đang chờ xử lý hay đang hoạt động trên cửa hàng ứng dụng, nếu người dùng cài đặt và tương tác với ứng dụng đó thì dữ liệu lượt cài đặt và sự kiện trong ứng dụng đều sẽ được ghi nhận lên bảng điều khiển.
 
 Khi ứng dụng đang chờ xử lý của bạn hoạt động, AppsFlyer sẽ phát hiện và tự động cập nhật trạng thái của ứng dụng đó. Vì vậy bạn không cần phải thêm lại ứng dụng đó. <Anchor target="_blank" href="/marketers/vi/docs/why-is-my-app-still-pending">Tìm hiểu thêm</Anchor> về các ứng dụng đang chờ xử lý và quy trình tùy chọn cho trạng thái làm mới theo cách thủ công.
+
+<div id="troubleshooting" />
 
 ## Xử lý sự cố
 

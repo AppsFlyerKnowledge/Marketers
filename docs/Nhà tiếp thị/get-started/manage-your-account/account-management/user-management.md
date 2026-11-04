@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tạo và quản lý người dùng AppsFlyer trong tài khoản của bạn, đồng thời chỉ định cho họ quyền truy cập vào các tính năng, ứng dụng và dữ liệu.
 
+<div id="overview" />
+
 ## Thông tin cơ bản
 
 Tài khoản AppsFlyer cho phép nhiều người dùng, mỗi người dùng lại có các quyền được quản lý riêng. Số lượng người dùng tối đa trên mỗi tài khoản được xác định theo gói đăng ký của bạn.
@@ -37,11 +39,15 @@ Quyền trong mỗi phương diện này được chỉ định độc lập. N�
 
 Một tính năng mới, hiện đang ở giai đoạn Beta, cho phép bạn [thêm người dùng vào nhiều tài khoản](#multiple-accounts) để họ có thể dễ dàng chuyển đổi giữa các tài khoản.
 
+<div id="manage-roles" />
+
 ## Vai trò
 
 Mỗi người dùng tài khoản AppsFlyer của bạn phải được chỉ định một vai trò. Mỗi vai trò xác định các tính năng cụ thể của AppsFlyer mà người dùng có thể truy cập và các chức năng họ có thể thực hiện. Danh sách đầy đủ các khả năng của mỗi vai trò được cung cấp trên thẻ [Role](/docs/user-management#thẻ-roles) của trang **User management**.
 
 Vai trò trong AppsFlyer có thể là [vai trò được xác định trước](/docs/user-management#vai-trò-được-xác-định-trước), [vai trò tùy chỉnh](/docs/user-management#vai-trò-tùy-chỉnh) hoặc [vai trò tạm thời](/docs/user-management#vai-trò-tạm-thời) (trong một số trường hợp nhất định).
+
+<div id="predefined-roles" />
 
 ### Vai trò được xác định trước
 
@@ -59,6 +65,8 @@ AppsFlyer được cấu hình với nhiều vai trò được xác định trư
 
 Đối với mỗi vai trò được xác định trước này, các khả năng chức năng là cố định: không cho phép "kết hợp tùy chỉnh". Tuy nhiên, bạn có thể thay đổi khả năng chức năng của người dùng bất kỳ lúc nào bằng cách chỉ định một vai trò tùy chỉnh hoặc được xác định trước khác cho họ (ngoại trừ [chủ sở hữu tài khoản](#chủ-tài-khoản), như được thảo luận bên dưới).
 
+<div id="example-1" />
+
 > 📄 **Ví dụ**
 >
 > Bạn đã giao cho Bill Bates vai trò **Quản lý nhóm.** Vai trò này mang cấp cho Bill quyền quản lý **các mẫu OneLink** nhưng không cho phép anh truy cập vào các trang **My plan** và **Payments**.
@@ -67,11 +75,15 @@ AppsFlyer được cấu hình với nhiều vai trò được xác định trư
 >
 > **Trả lời:** Không. Trong khi Bill vẫn đang giữ vai trò là Quản lý nhóm thì bạn sẽ không thể cấp cho anh ấy quyền truy cập trang My Plan và Payments. Bạn cũng không thể tước bỏ quyền quản lý các mẫu OneLink của anh ấy. Tất nhiên, bạn có thể chỉ định Bill vào một vai trò được xác định trước khác và khả năng của anh ấy sẽ thay đổi thành những khả năng được xác định theo vai trò đó. Hoặc bạn có thể tạo vai trò tùy chỉnh cho Bill để thay đổi khả năng của anh ấy theo nhu cầu của bạn.
 
+<div id="custom-roles" />
+
 ### Vai trò tùy chỉnh
 
 Các vai trò được xác định trước trong AppsFlyer đã được cấu hình với các kết hợp khả năng cụ thể cần thiết trong hầu hết các tình huống. Vì lý do này, nhiều nhà quảng cáo nhận thấy rằng họ không cần tùy chỉnh thêm các vai trò. Tuy nhiên, khi cần tùy chỉnh thêm, các vai trò được xác định trước vẫn là điểm khởi đầu tuyệt vời để quản lý các khả năng của người dùng.
 
 Tìm hiểu thêm về [quản lý vai trò tùy chỉnh](/docs/user-management#quản-lý-vai-trò-tùy-chỉnh).
+
+<div id="temp-roles" />
 
 ### Vai trò tạm thời
 
@@ -79,9 +91,13 @@ Nếu tài khoản AppsFlyer của bạn tồn tại trong hệ thống quản l
 
 Tìm hiểu thêm về [quản lý vai trò tạm thời](/docs/user-management#managing-temp-roles).
 
+<div id="admin" />
+
 ### Quản trị viên—một vai trò đặc biệt
 
 Tài khoản AppsFlyer có thể có **một hoặc nhiều Quản trị viên**. Vai trò đặc biệt này có một số đặc điểm độc đáo:
+
+<div id="access" />
 
 #### Quyền truy cập
 
@@ -93,9 +109,13 @@ Vai trò Quản trị viên có quyền truy cập vào **tất cả** các kh�
 
 Đặc điểm "toàn quyền truy cập" này của vai trò Quản trị viên sẽ không thể bị thay đổi hoặc có giới hạn.
 
+<div id="role-duplication" />
+
 #### Sao chép vai trò
 
 Vai trò Quản trị viên **không được trùng lặp** khi tạo [vai trò tùy chỉnh](/docs/user-management#quản-lý-vai-trò-tùy-chỉnh).
+
+<div id="account-owner" />
 
 #### Chủ tài khoản
 
@@ -109,12 +129,16 @@ Chủ tài khoản có những đặc điểm riêng:
   * Truy xuất hoặc đặt lại <Anchor target="_blank" href="/marketers/vi/docs/managing-appsflyer-tokens">token API AppsFlyer</Anchor>
   * Cấu hình hoặc thay đổi <Anchor target="_blank" href="/marketers/vi/docs/push-api-streaming-raw-data">cài đặt API Push</Anchor>
 
+<div id="user-management-page" />
+
 ## Trang User management
 
 **Cách truy cập trang User management:**
 
 1. Trên thanh menu, nhấp vào danh sách thả xuống địa chỉ email.
 2. Chọn **User management.**
+
+<div id="users-tab" />
 
 ### Thẻ Users
 
@@ -132,6 +156,8 @@ Gợi ý để điều hướng trong thẻ Users:
 * Chỉ dành cho quản trị viên: Nhấp vào biểu tượng tải xuống <Image alt="download_icon.png" src="https://files.readme.io/fba5d56ceb7f6b3dc3191e5ec33c85ccbba0f7dc409ad0390de238c12b479b61-31780969029777.png" width="24px" /> ở góc trên bên phải của trang để tải xuống toàn bộ bảng người dùng dưới dạng tập tin CSV.
   * Tập tin đã tải xuống bao gồm các cột giống như trong bảng ở thẻ **Users**.
 
+<div id="roles-tab" />
+
 ### Thẻ Roles
 
 Thẻ **Roles** hiển thị danh sách tất cả các vai trò được xác định trong tài khoản của bạn, bao gồm:
@@ -143,6 +169,8 @@ Thẻ **Roles** hiển thị danh sách tất cả các vai trò được xác �
 Bên cạnh mỗi vai trò, bạn có thể thấy số lượng người dùng hiện được chỉ định cho vai trò đó.
 
 Nhấp vào tên của bất kỳ vai trò nào trong bảng bên trái để hiển thị toàn bộ chi tiết về khả năng của vai trò đó.
+
+<div id="manage-users" />
 
 ## Quản lý người dùng
 
@@ -160,6 +188,8 @@ Nhấp vào tên của bất kỳ vai trò nào trong bảng bên trái để hi
    * Có thể bao gồm các chữ cái, chữ số, dấu nháy đơn ('), dấu và (&), ký hiệu đô la ($), ký hiệu thăng (#), dấu gạch nối (-), dấu gạch dưới (\_) và dấu chấm (.)
    * Không được phép sử dụng hai dấu chấm liền nhau (..) và các ký tự đặc biệt khác.
    * Phải kết thúc bằng một miền email hợp lệ.
+
+   <div id="important" />
 
    > 🚧 **Quan trọng!**
    >
@@ -207,6 +237,8 @@ Nhấp vào tên của bất kỳ vai trò nào trong bảng bên trái để hi
 
 Có thể thêm người dùng vào nhiều tài khoản và chỉ định cho các vai trò khác nhau trong từng tài khoản. Điều này giúp người dùng làm việc trong các tài khoản khác nhau mà không cần nhập lại thông tin đăng nhập.
 
+<div id="supported-accounts-and-users" />
+
 #### Tài khoản và người dùng được hỗ trợ
 
 Các tài khoản sau hỗ trợ có cùng người dùng trong nhiều tài khoản:
@@ -219,6 +251,8 @@ Các giới hạn sau được áp dụng khi thêm người dùng vào nhiều 
 * Chỉ người dùng có quyền quản lý Người dùng phù hợp mới sử dụng được tính năng này.
 * [Chủ tài khoản](#chủ-tài-khoản) chỉ có thể tồn tại trong một tài khoản. Người dùng này không thể tồn tại trong bất kỳ tài khoản nào khác, kể cả trong vai trò khác.
 * Không thể thêm người dùng chưa [kích hoạt tài khoản](#activation) vào tài khoản khác.
+
+<div id="add-users-to-multiple-accounts" />
 
 #### Thêm người dùng vào nhiều tài khoản
 
@@ -238,6 +272,8 @@ Các giới hạn sau được áp dụng khi thêm người dùng vào nhiều 
 
 Người dùng có thể được chỉnh sửa theo cá nhân hoặc theo nhóm.
 
+<div id="individual-editing" />
+
 #### Chỉnh sửa theo cá nhân
 
 **Để chỉnh sửa một người dùng cá nhân:**
@@ -248,9 +284,13 @@ Người dùng có thể được chỉnh sửa theo cá nhân hoặc theo nhóm
 4. Tất cả các cài đặt ngoài địa chỉ email đều có thể chỉnh sửa được (bao gồm vai trò, ứng dụng, nguồn truyền thông và địa lý).
 5. Nhấp vào **Save** (Lưu).
 
+<div id="multi-user-editing" />
+
 #### Chỉnh sửa nhiều người dùng
 
 Chỉnh sửa nhiều người dùng là một cách hiệu quả để thay đổi quyền tài khoản của nhiều người dùng cùng một lúc. Sử dụng tính năng này kết hợp với khả năng tìm kiếm và lọc của thẻ **Users** có thể giúp tính năng này đặc biệt hữu ích cho việc quản lý số lượng lớn người dùng.
+
+<div id="note-4" />
 
 > 📘 **Lưu ý**
 >
@@ -268,6 +308,8 @@ Chỉnh sửa nhiều người dùng là một cách hiệu quả để thay đ�
    * Hãy nhớ rằng các thay đổi của bạn sẽ áp dụng cho tất cả người dùng đã chọn!
 5. Người dùng đã chỉnh sửa được tô sáng trong bảng và người dùng sẽ xuất hiện như cách họ sẽ được hiển thị sau khi lưu thay đổi. Tuy nhiên, bạn vẫn có cơ hội xem lại các thay đổi của mình và xác nhận hoặc hủy chúng trong bước tiếp theo.
 6. Xem lại các thay đổi của bạn. Nhấp vào **Save** để xác nhận hoặc **Cancel** để hoàn tác thay đổi.
+
+<div id="example" />
 
 > 📄 **Ví dụ**
 >
@@ -302,6 +344,8 @@ Chỉnh sửa nhiều người dùng là một cách hiệu quả để thay đ�
 2. Chọn **Delete** từ menu.
 
 </Accordion>
+
+<div id="manage-custom-roles" />
 
 ## Quản lý vai trò tùy chỉnh
 
@@ -348,6 +392,8 @@ Quá trình tạo vai trò tùy chỉnh liên quan đến việc sao chép vai t
 4. Khi bạn hài lòng với tất cả các lựa chọn của mình, hãy nhấp vào nút **Save role**.
 5. Cấp độ quyền của vai trò áp dụng thay đổi cho tất cả người dùng mới và người dùng hiện có.
 
+<div id="important-1" />
+
 > 🚧 **Quan trọng!**
 >
 > Mọi thay đổi bạn thực hiện đối với vai trò tùy chỉnh sẽ tự động được áp dụng cho **tất cả người dùng hiện có** trong vai trò đó.
@@ -367,6 +413,8 @@ Quá trình tạo vai trò tùy chỉnh liên quan đến việc sao chép vai t
 
 </Accordion>
 
+<div id="special-situations-and-additional-procedures" />
+
 ## Các tình huống đặc biệt và quy trình bổ sung
 
 <div id="managing-temp-roles" />
@@ -378,6 +426,8 @@ Nếu tài khoản của bạn trước đây đã sử dụng hệ thống qu�
 * Những người dùng có cùng khả năng đã được chỉ định cùng một vai trò tạm thời.
 * Sử dụng các tính năng của thẻ [Roles](/docs/user-management#thẻ-roles) để xem lại khả năng của từng vai trò tạm thời và danh sách người dùng hiện đang có vai trò đó.
 
+<div id="temp-role-limitations" />
+
 #### Hạn chế của vai trò tạm thời
 
 Vai trò tạm thời được thiết kế đặc biệt để cho phép chuyển đổi liền mạch từ hệ thống quản lý người dùng trước đây của chúng tôi. Do vậy, chúng chỉ có sẵn trong các tình huống hạn chế:
@@ -387,6 +437,8 @@ Vai trò tạm thời được thiết kế đặc biệt để cho phép chuy�
   * Lưu ý rằng **không thể** thay đổi quyền truy cập của người dùng vào các ứng dụng trong tương lai khi người dùng đang ở vai trò tạm thời.
 * Khi người dùng có vai trò tạm thời được thay đổi thành vai trò được xác định trước, họ không thể chuyển về lại vai trò tạm thời đã chỉ định trước đó (hoặc bất kỳ vai trò tạm thời nào khác).
 * Nếu người dùng cuối cùng giữ vai trò tạm thời bị xóa khỏi vai trò đó, thì vai trò đó sẽ không còn xuất hiện trong tài khoản của bạn nữa.
+
+<div id="example-2" />
 
 > 📄 **Ví dụ**
 >
@@ -429,9 +481,13 @@ Ngoài ra, các tính năng sau của AppsFlyer **không khả dụng** đối v
 
 Vì tất cả Quản trị viên về cơ bản đều có quyền giống như chủ sở hữu tài khoản nên việc thay đổi chủ sở hữu tài khoản thường không cần thiết. Nhưng nếu bạn thấy rằng bạn phải thay đổi chủ sở hữu tài khoản, hãy làm theo các bước sau để thực hiện.
 
+<div id="important-2" />
+
 > 🚧 **Quan trọng!**
 >
 > Phải thay đổi chủ sở hữu tài khoản thủ công theo các bước dưới đây. Không thể thực hiện các thao tác này từ trang **User management**.
+
+<div id="1assign-a-team-member-the-admin-role" />
 
 #### #1–Gửi yêu cầu qua email
 
@@ -451,6 +507,8 @@ Vì tất cả Quản trị viên về cơ bản đều có quyền giống như
 Sử dụng email mẫu này để tham khảo:
 
 ![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+
+<div id="3next-steps" />
 
 #### #2–Các bước tiếp theo
 

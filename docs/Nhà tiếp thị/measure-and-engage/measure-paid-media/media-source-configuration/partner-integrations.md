@@ -34,6 +34,8 @@ Từ Thị trường đối tác, bạn có thể [Truy cập các tiện ích t
 >
 > Thị trường đối tác hiện có sẵn cho các nhà tiếp thị, chưa có cho các đại lý và đối tác.
 
+<div id="quick-start" />
+
 ## 2. Bắt đầu nhanh
 
 Khám phá Thị trường đối tác, khám phá các cơ hội mới và bắt đầu kết nối với các đối tác.
@@ -44,6 +46,8 @@ Khám phá Thị trường đối tác, khám phá các cơ hội mới và bắ
 2. **[Khám phá đối tác](/docs/partner-integrations#khám-phá-đối-tác)**
 3. **[Tìm hiểu về đối tác](/docs/partner-integrations#tìm-hiểu-về-đối-tác):** Chọn một đối tác để truy cập trang chi tiết đối tác
 4. **[Tích hợp với đối tác](/docs/partner-integrations#tích-hợp-với-đối-tác-mới)**
+
+<div id="discover-partners" />
 
 ## Khám phá đối tác
 
@@ -63,6 +67,8 @@ Có một số cách để khám phá các đối tác trên thị trường và
 * [**Đối tác của Data Clean Room (DCR):**](#đối-tác-dcr) Các đối tác công nghệ cung cấp dữ liệu của bên thứ 1 và bên thứ 3 mà bạn có thể Tận dụng để làm phong phú dữ liệu của bạn và tối ưu hóa hiệu suất chiến dịch.
 * **Phổ biến trong danh mục của bạn:** Đối tác từ danh mục chính của bạn với các tích hợp tích cực nhất.
 * **Truy cập lần cuối:** Đối tác mà bạn đã xem gần đây trên thị trường.
+
+<div id="partner-cards" />
 
 #### Thẻ đối tác
 
@@ -105,6 +111,8 @@ Sử dụng các bộ lọc ở đầu trang để tìm đối tác có liên qu
 >
 > Khi sử dụng thanh tìm kiếm, mọi bộ lọc được áp dụng sẽ bị xóa trong tìm kiếm. Để áp dụng kết quả kết hợp, trước tiên hãy sử dụng thanh tìm kiếm và sau khi kết quả được hiển thị, hãy áp dụng các bộ lọc.
 
+<div id="search-for-partners" />
+
 ### Tìm kiếm đối tác
 
 ![partner search3.png](https://support.appsflyer.com/hc/article_attachments/18891644678417)
@@ -116,6 +124,8 @@ Sử dụng thanh tìm kiếm trên Trung tâm đối tác để tìm các đố
 * Một chấm màu xanh lá cây hoặc màu cam ở bên trái logo đối tác cho biết <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation#integration-activity-indication">Mức độ hoạt động</Anchor> để tích hợp.
 * Khi bạn đã tìm kiếm và truy cập các đối tác, năm đối tác gần đây sẽ hiển thị trong các tìm kiếm tiếp theo của bạn
 * Bạn cũng có thể tìm kiếm [Trong tích hợp đối tác đang hoạt động của bạn](/docs/partner-integrations#tích-hợp-tích-cực)
+
+<div id="learn-about-partners" />
 
 ## Tìm hiểu về đối tác
 
@@ -181,6 +191,8 @@ Cung cấp thông tin về mức độ dịch vụ của đối tác theo các t
 
 Biểu đồ mặc định hiển thị 10 danh mục và khu vực địa lý hàng đầu mà đối tác đang hoạt động, trên tất cả các nền tảng. Bạn có thể thay đổi cài đặt mặc định bằng cách chọn tối đa 10 vị trí địa lý hoặc danh mục khác và bất kỳ nền tảng nào có sẵn từ góc trên cùng bên phải.
 
+<div id="integrate-with-a-new-partner" />
+
 ## Tích hợp với đối tác mới
 
 Sau [Khám phá đối tác mới](/docs/partner-integrations#khám-phá-đối-tác) và tìm hiểu về [Hiệu suất của họ](/docs/partner-integrations#tìm-hiểu-về-đối-tác), bạn có thể thiết lập tích hợp.  Sau khi ứng dụng của bạn được kết nối với đối tác, Bạn sẽ bắt đầu thấy dữ liệu không phải tự nhiên trên trang tổng quan của mình.
@@ -198,9 +210,13 @@ Sau [Khám phá đối tác mới](/docs/partner-integrations#khám-phá-đối-
 
 Sau khi tích hợp được thiết lập, đối tác trở thành <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation#active-partners">hoạt động</Anchor>. Sau đó, bạn có thể lọc trang để chỉ hiển thị các đối tác đang hoạt động của mình bằng cách nhấp vào **Hiển thị các đối tác đang hoạt động trong các phần**.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 ### Mời các đối tác mới vào AppsFlyer
 
 Nếu mạng quảng cáo bạn đang làm việc chưa được tích hợp với AppsFlyer, bạn có thể gửi cho họ liên kết lời mời.
+
+<div id="validation-period-for-new-integrations" />
 
 #### Thời gian xác thực cho các tích hợp mới
 

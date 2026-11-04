@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Khái quát**: Lượt cài đặt lại phát sinh khi người dùng cài đặt ứng dụng, gỡ cài đặt ứng dụng và sau đó cài đặt lại. Lượt cài đặt lại dẫn đến một trong các loại phân bổ sau: lượt cài đặt lại không tự nhiên, lượt cài đặt lại tự nhiên hoặc phân bổ lại (nhắm mục tiêu lại). Lượt cài đặt lại giúp tránh việc tính phí nhiều lần cho người dùng gỡ cài đặt rồi cài đặt lại.
 
+<div id="what-is-a-reinstall" />
+
 ## Lượt cài đặt lại là gì
 
 Lượt cài đặt lại xảy ra khi người dùng ứng dụng xóa một ứng dụng rồi cài đặt lại ứng dụng đó trong <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window#re-attribution-window">khung thời gian phân bổ lại.</Anchor>
@@ -43,11 +45,15 @@ Bảng bên dưới cho biết AppsFlyer sẽ gọi những lượt cài đặt 
 | Từ một nguồn tự nhiên hoặc không tự nhiên | Có | Không | Có hoặc Không | Lượt cài đặt lại |
 | Từ một nguồn tự nhiên hoặc không tự nhiên | Không | Không | Có hoặc Không | Lượt cài đặt mới |
 
+<div id="why-are-reinstalls-important" />
+
 ## Tại sao lượt cài đặt lại có ý nghĩa quan trọng
 
 Ngoài việc là một dấu hiệu tốt cho thấy người dùng đang quay lại ứng dụng của bạn và các chiến dịch của bạn đang có hiệu quả, thì việc phân bổ lượt cài đặt lại phù hợp cũng rất quan trọng để giúp tránh tính phí nhiều lần cho những người dùng gỡ cài đặt rồi cài đặt lại trong <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window#re-attribution-window">khung thời gian phân bổ lại.</Anchor>
 
 Tương tự như vậy, việc phân bổ các sự kiện trong ứng dụng từ lượt cài đặt lại cho nguồn truyền thông ban đầu (cài đặt lần đầu) mang đến cho nhà quảng cáo bức tranh toàn cảnh hơn về cách người dùng tương tác. Nó cũng cho thấy mức độ hiệu quả của các chiến dịch UA và quảng cáo Nhắm mục tiêu lại. Để biết thêm thông tin, hãy xem [các sự kiện trong ứng dụng](/docs/measure-reinstalls#sự-kiện-trong-ứng-dụng) bên dưới.
+
+<div id="reinstall-flow-and-outcome" />
 
 ## Luồng cài đặt lại và kết quả
 
@@ -81,6 +87,8 @@ Trường hợp sau đây sẽ xảy ra:
 Để biết thêm thông tin về Nhắm mục tiêu lại cho phân bổ, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">đây</Anchor>.
 
 </Accordion>
+
+<div id="post-reinstall-in-app-events" />
 
 ## Sự kiện trong ứng dụng
 
@@ -138,6 +146,8 @@ Mang đến cho nhà quảng cáo bức tranh toàn cảnh hơn về cách ngư�
 
 (2) Bạn sẽ chỉ thấy điều này trong dữ liệu thô.
 
+<div id="note-1" />
+
 #### Lưu ý
 
 Dữ liệu KPI tự nhiên trong bảng điều khiển có thể hiển thị giá trị thấp hơn khi **Post Reinstall Events Attribution** được đặt thành **Attributed to the first install** vì một vài trong số đó hiện có thể được phân bổ cho nguồn truyền thông không tự nhiên.
@@ -147,6 +157,8 @@ Dữ liệu KPI tự nhiên trong bảng điều khiển có thể hiển thị 
 <div id="examples" />
 
 <Accordion title="Ví dụ">
+
+<div id="examples-for-first-install-mode-attribution" />
 
 #### Với **Attributed to the first install** được bật.
 
@@ -202,11 +214,17 @@ Ngày hôm sau (ngày 1), người dùng cài đặt lại ứng dụng từ chi
 
 </Accordion>
 
+<div id="how-does-the-data-appear-in-the-appsflyer-dashboards" />
+
 ## Dữ liệu xuất hiện như thế nào trong bảng điều khiển AppsFlyer
 
 <table><tbody><tr><th colspan="2"> </th><th>Lượt cài đặt lại không tự nhiên</th><th>Lượt cài đặt lại tự nhiên </th><th>Phân bổ lại</th></tr><tr><td colspan="2">Lượt cài đặt lại đó</td><td>Không thấy</td><td>Không thấy</td><td><span>Nguồn truyền thông nhắm mục tiêu lại\*</span></td></tr><tr><td rowspan="2">Phân bổ sự kiện trong ứng dụng trong tương lai</td><td>Post Reinstall Events được đặt thành <strong>Attributed as organic in-apps</strong> </td><td>Tự nhiên và không được phân bổ</td><td>Tự nhiên và không được phân bổ</td><td><span>Nguồn truyền thông nhắm mục tiêu lại</span></td></tr><tr><td>Post Reinstall Events được đặt thành <strong>Attributed to the first install</strong> </td><td>Nguồn truyền thông đầu tiên</td><td>Nguồn truyền thông đầu tiên</td><td>Chiến dịch nhắm mục tiêu lại</td></tr><tr><td colspan="5">\*Chỉ trong bảng điều khiển tổng quan.</td></tr></tbody></table>
 
+<div id="reinstalls-raw-data-reports" />
+
 ## Báo cáo dữ liệu thô về lượt cài đặt lại
+
+<div id="prerequisites" />
 
 > 🚧 **Điều kiện tiên quyết**
 >
@@ -214,9 +232,13 @@ Ngày hôm sau (ngày 1), người dùng cài đặt lại ứng dụng từ chi
 
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtlerXtCVImurv-JyuG7JMPvLN6p2w79pmbMNBx6WBnLwnYq5bUqXiUuoy2l_UTzEjIr8UkDdclRxf/pub?output=csv">Cài đặt lại báo cáo mẫu dưới dạng tệp CSV</Anchor>
 
+<div id="how-the-install-and-in-app-events-are-attributed" />
+
 #### Cách phân bổ lượt cài đặt và sự kiện trong ứng dụng
 
 <table><tbody><tr><th colspan="2"> </th><th>Lượt cài đặt lại không tự nhiên</th><th>Lượt cài đặt lại tự nhiên </th><th>Phân bổ lại</th><th>Lượt cài đặt không tự nhiên</th><th>Lượt cài đặt tự nhiên</th></tr><tr><td colspan="2">Được phân bổ cho </td><td>Chiến dịch UA</td><td>Tự nhiên</td><td>Chiến dịch nhắm mục tiêu lại</td><td>Chiến dịch UA</td><td>Tự nhiên</td></tr><tr><td rowspan="2">Phân bổ sự kiện trong tương lai</td><td>Post Reinstall Events được đặt thành <strong>Attributed as organic in-apps</strong> </td><td>Tự nhiên</td><td>Tự nhiên</td><td>Chiến dịch nhắm mục tiêu lại</td><td>Chiến dịch UA</td><td>Tự nhiên</td></tr><tr><td>Post Reinstall Events được đặt thành <strong>Attributed to the first install</strong> </td><td>Lượt cài đặt đầu tiên</td><td>Lượt cài đặt đầu tiên</td><td>Chiến dịch nhắm mục tiêu lại</td><td>Chiến dịch UA</td><td>Tự nhiên</td></tr></tbody></table>
+
+<div id="availability-of-reinstall-reports" />
 
 ### Tính sẵn có của các báo cáo về lượt cài đặt lại
 

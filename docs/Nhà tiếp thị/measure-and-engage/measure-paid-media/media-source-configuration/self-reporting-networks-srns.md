@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về các mạng tự báo cáo (SRN)—phân bổ, liên kết sâu, ý nghĩa của iOS và Câu hỏi thường gặp.
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## SRN được tích hợp với AppsFlyer
 
 | **SRN** | **Biểu tượng** |
@@ -47,6 +49,8 @@ x-zendesk:
 
 **Lưu ý:** SRN có <Anchor target="_blank" href="/marketers/vi/docs/user-level-data-retention">các hạn chế về lưu trữ và sử dụng dữ liệu ở mức người dùng.</Anchor>
 
+<div id="attribution" />
+
 ## Phân bổ
 
 Không giống như các mạng không phải SRN (mạng quảng cáo) sử dụng các đường dẫn phân bổ để báo cáo các sự kiện cho AppsFlyer, các SRN tự phân bổ bằng cách sử dụng ID thiết bị khi được AppsFlyer thông báo về một lượt cài đặt.
@@ -55,6 +59,8 @@ Phân bổ AppsFlyer cho mạng SRN và mạng không phải SRN dựa trên:
 
 * Phương thức điểm chạm cuối và đa điểm chạm.
 * Logic phân bổ tiêu chuẩn của AppsFlyer để sắp xếp dữ liệu về lượt hiển thị và lượt nhấp có liên quan theo thứ tự.
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### Phương thức phân bổ hoạt động như thế nào với SRN?
 
@@ -66,9 +72,13 @@ SRN báo cáo các sự kiện, chẳng hạn như lượt cài đặt mới và
 
 Sau khi AppsFlyer phân bổ, các đăng lại trong ứng dụng sẽ được gửi tới SRN trong <Anchor target="_blank" href="/marketers/vi/docs/user-level-data-retention#partner-data-retention-periods">khoảng thời gian cho phép lưu giữ dữ liệu của đối tác</Anchor>.
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### Phương thức phân bổ hoạt động như thế nào với các SRN nâng cao?
 
 SRN nâng cao phân bổ cũng tương tự như SRN. Tuy nhiên, các SRN nâng cao còn có thể phân bổ các lượt thu hút khi không có ID thiết bị (IDFA)—bằng cách sử dụng khung <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-knowledge-base-glossary#quyền-riêng-tư-nâng-cao-hợp-nhất">Quyền riêng tư Nâng cao Hợp nhất</Anchor>.
+
+<div id="install-attribution" />
 
 ### Phân bổ lượt cài đặt
 
@@ -81,6 +91,8 @@ Khi một ứng dụng được khởi chạy lần đầu:
   * Người dùng có ID quảng cáo.
 * Nếu cả hai điều kiện đều đúng, AppsFlyer sẽ truy vấn SRN bằng ID quảng cáo.
 * AppsFlyer phân bổ sau khi xem xét các yêu cầu tính cho SRN.
+
+<div id="install-attribution-examples" />
 
 #### Ví dụ về phân bổ lượt cài đặt
 
@@ -116,6 +128,8 @@ AppsFlyer cung cấp dữ liệu hỗ trợ cho nhà quảng cáo (các lượt 
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### Khung thời gian phân bổ
 
 Khoảng thời gian phân bổ bao gồm lượt xem lại và lượt xem hết. Một số SRN thu phí các nhà quảng cáo cho một lượt cài đặt dựa trên Chi phí trên mỗi Lượt hiển thị (CPM) và Chi phí trên mỗi Hành động (CPA)—những thông số này được tính dựa trên số lượt nhấp hoặc hiển thị xảy ra trong vòng từ 1-28 ngày.
@@ -128,6 +142,8 @@ Khoảng thời gian phân bổ bao gồm lượt xem lại và lượt xem hế
 * Tại sao ư? Bởi vì AppsFlyer báo cáo eCPI và eCPA thực tế dựa trên các điều khoản do nhà quảng cáo xác định.
 * SRN có thể được lợi trong thời gian ngắn vì họ thường xác định các điều khoản thanh toán của riêng mình. Tuy nhiên, các nhà quảng cáo điều chỉnh điều này bằng cách sử dụng các nhà cung cấp phương thức phân bổ bên thứ ba.
 
+<div id="deep-linking-with-srns" />
+
 ## Liên kết sâu với SRN
 
 Để người dùng mở ứng dụng của bạn khi nhấp vào liên kết, bạn chỉ cần thiết lập Liên kết Ứng dụng/Liên kết Chung/Lược đồ URI. Tuy nhiên, để thực hiện liên kết sâu hoặc liên kết sâu bị trì hoãn tới một trang hoặc hoạt động cụ thể trong ứng dụng của bạn, SRN sẽ sử dụng các phương thức riêng—không liên quan đến phương thức liên kết sâu của AppsFlyer.
@@ -139,6 +155,8 @@ Vậy làm cách nào để liên kết sâu người dùng và nhận được 
 <Accordion title="Liên kết sâu trực tiếp">
 
 Khi thực hiện liên kết sâu, thiết bị người dùng có thể liên kết sâu trực tiếp với các SRN mà không cần gọi ra phương thức liên kết sâu của AppsFlyer. Trong ví dụ bên dưới, người dùng hiện có nhấp vào một quảng cáo và được chuyển hướng trực tiếp đến hoạt động bằng các phương thức của Facebook, trong khi người dùng mới sẽ có trải nghiệm tương tự khi sử dụng dữ liệu chuyển đổi của AppsFlyer. Tìm hiểu cách <Anchor target="_blank" href="/marketers/vi/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta ads sử dụng OneLink để liên kết sâu</Anchor>
+
+<div id="example" />
 
 > 📄 **Ví dụ**
 >
@@ -165,6 +183,8 @@ Tuy nhiên, với SRN, các thông số liên kết sâu thông thường của 
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## Ý nghĩa của iOS
 
 Hầu hết các SRN đều hỗ trợ SKAdNetwork và có tích hợp cần thiết với AppsFlyer.
@@ -174,6 +194,8 @@ Hầu hết các SRN đều hỗ trợ SKAdNetwork và có tích hợp cần thi
 <Accordion title="Phân bổ SRN trên iOS 14.5">
 
 Bắt đầu từ iOS 14.5, khi người dùng đồng ý với ATT trong các ứng dụng của nhà quảng cáo và nhà phát hành (<Anchor target="_blank" href="/marketers/vi/docs/appsflyer-knowledge-base-glossary#đồng-ý-kép">đồng ý kép</Anchor>), lượt cài đặt SRN, được ghi nhận trong <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">bảng điều khiển SKAdNetwork</Anchor>, cũng được hiển thị trên bảng điều khiển truyền thống.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -192,12 +214,16 @@ SRN nhận đăng lại sự kiện dựa vào việc đưa ID thiết bị vào
 * Giảm số lượng đăng lại sự kiện được gửi tới SRN
 * Có sự không nhất quán về số lượng đăng lại sự kiện giữa SRN và AppsFlyer—chủ thể ghi nhật ký tất cả các sự kiện.
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > * Nếu không có IDFA thì đăng lại cho lượt cài đặt, lần mở ứng dụng hoặc sự kiện trong ứng dụng sẽ không được gửi tới SRN ([ngoại trừ tình huống này trong Google ads](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid)). Tuy nhiên, một số SRN nâng cao cũng nhận được đăng lại hợp nhất khi không có IDFA.
 > * Các mạng quảng cáo tính phí theo lượt nhấp không bị ảnh hưởng vì sử dụng các ID giao dịch riêng, không phải ID thiết bị, để tự phân bổ thông tin đăng lại sự kiện.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Câu hỏi thường gặp
 
@@ -236,6 +262,8 @@ Nếu dùng một SRN để chạy cả chiến dịch thu hút người dùng v
 
 **Kết luận:** Việc nhận các sự kiện nhắm mục tiêu lại từ chiến dịch thu hút người dùng thật lãng phí.
 
+<div id="is-mistargeting-a-problem" />
+
 #### Việc nhắm sai mục tiêu có phải là vấn đề?
 
 Các nhà phân tích dữ liệu của AppsFlyer đã kiểm tra các chiến dịch **thu hút người dùng** của Meta ads trong một tháng nhất định.
@@ -246,6 +274,8 @@ Các nhà phân tích dữ liệu của AppsFlyer đã kiểm tra các chiến d
 * **Kết luận: Trong các chiến dịch thu hút người dùng trên SRN, cứ 10 người dùng được nhắm mục tiêu thì có 1 người dùng hiện có.**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### Giải quyết vấn đề nhắm mục tiêu nhầm
 

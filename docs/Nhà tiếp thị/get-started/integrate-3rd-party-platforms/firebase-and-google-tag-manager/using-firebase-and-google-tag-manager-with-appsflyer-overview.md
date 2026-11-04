@@ -36,10 +36,14 @@ Các sự kiện gửi bằng GTM được mô hình hóa dựa trên các sự 
 
 Làm theo các bước và hướng dẫn trong hướng dẫn này để gửi sự kiện. 
 
+<div id="considerations" />
+
 ### Những điều cần lưu ý
 
 * **Nguồn sự kiện trong dữ liệu thô:** Các sự kiện do GTM tạo ra đặt nguồn thành S2S trong báo cáo dữ liệu thô. Điều này có thể dẫn đến một số nhầm lẫn khi SDK báo cáo các sự kiện.
 * **Cập nhật giá trị chuyển đổi SKAdNetwork**: Các sự kiện do GTM tạo ra và báo cáo cho SDK như được mô tả trong hướng dẫn này sẽ khiến SDK cập nhật giá trị chuyển đổi theo cách tương tự như các sự kiện SDK thông thường. Tất cả những gì bạn cần làm là bật và đặt <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide">cài đặt đo lường SKAdNetwork</Anchor> của mình.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -50,6 +54,8 @@ Làm theo các bước và hướng dẫn trong hướng dẫn này để gửi 
 >   * Khi gửi đăng lại sự kiện trong ứng dụng tới SRN, cần có thông số `att`.
 >   * Khi gửi đăng lại sự kiện trong ứng dụng tới Meta ads, cần có thông số `att` và `os`.
 
+<div id="prerequisites" />
+
 ### Điều kiện tiên quyết
 
 Trước khi có thể bắt đầu gửi sự kiện tới AppsFlyer bằng GTM, bạn cần triển khai SDK GTM trong ứng dụng của mình. Bạn cần:
@@ -59,6 +65,8 @@ Trước khi có thể bắt đầu gửi sự kiện tới AppsFlyer bằng GTM
 3. <Anchor target="_blank" href="/marketers/vi/docs/integrate-the-appsflyer-sdk">Tích hợp SDK AppsFlyer</Anchor> nếu bạn chưa làm như vậy.
 
 Khi mọi thứ đã sẵn sàng, hãy tiến hành <Anchor target="_blank" href="/marketers/vi/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">thiết lập GTM</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="Bắt đầu—Hướng dẫn làm quen dành cho các nhà tiếp thị" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## Giới thiệu
 
 Tài liệu này giúp người quản lý sản phẩm của nhà tiếp thị (chủ sở hữu ứng dụng) **lập kế hoạch và thực hiện việc làm quen với AppsFlyer**. Đối với mỗi mục, thông tin chủ sở hữu và thời gian thực hiện ước chừng sẽ được cung cấp.
 
 Lưu ý rằng thời gian ước tính trong bài viết này chỉ nhằm mục đích hướng dẫn chung. Các ước tính này dựa trên kinh nghiệm của chúng tôi khi làm việc với nhiều khách hàng mới, nhưng chúng tôi nhận thấy rằng mỗi chủ sở hữu ứng dụng, ứng dụng và cách thực hiện lại khác nhau. Yêu cầu về thời gian thực tế của bạn có thể khác.
+
+<div id="account-setup" />
 
 ## Thiết lập tài khoản
 
@@ -44,9 +48,13 @@ Lưu ý rằng thời gian ước tính trong bài viết này chỉ nhằm mụ
 
 **Kết quả:** Chào mừng! Bây giờ bạn có một tài khoản AppsFlyer đang hoạt động và người dùng tài khoản có thể truy cập tài khoản đó.
 
+<div id="tip" />
+
 > 👍 **Lời khuyên**
 >
 > Bạn mới sử dụng AppsFlyer và tự hỏi AppsFlyer có thể giúp bạn được gì? <Anchor target="_blank" href="/marketers/vi/docs/welcome-to-appsflyer#bạn-có-thể-làm-gì-với-appsflyer">Hãy xem video thời lượng 6 phút này</Anchor>.
+
+<div id="app-onboarding" />
 
 ## Giới thiệu ứng dụng
 
@@ -58,6 +66,8 @@ Bạn có thể làm theo các bước bằng cách sử dụng hướng dẫn n
 
 1. Trong thanh menu, nhấp vào menu người dùng (danh sách thả xuống địa chỉ email)
 2. Chọn App onboarding
+
+<div id="step-1-app-setup" />
 
 ## Bước 1: Thiết lập ứng dụng
 
@@ -71,6 +81,8 @@ Bạn có thể làm theo các bước bằng cách sử dụng hướng dẫn n
 | [Tùy chọn] Di chuyển thiết bị người dùng hiện có vào AppsFlyer | 2 giờ | Nếu ứng dụng của bạn đã có cơ sở người dùng đáng kể, hãy cân nhắc <Anchor target="_blank" href="/marketers/vi/docs/migration-to-appsflyer-from-other-vendors#di-chuyển-thiết-bịtùy-chọn">chuyển ứng dụng vào AppsFlyer</Anchor> để tránh bị tính phí hai lần.<br /><br />**Lưu ý:** Với sự hỗ trợ của CSM AppsFlyer hoặc nhóm hỗ trợ theo địa chỉ [hello@appsflyer.com](mailto:hello@appsflyer.com)). |
 
 **Kết quả:** Ứng dụng của bạn hiện đã được xác định trong bảng điều khiển AppsFlyer.
+
+<div id="step-2-sdk--api-integration" />
 
 ## Bước 2: Tích hợp SDK
 
@@ -87,6 +99,8 @@ Hoàn thành các bước sau cho mọi ứng dụng đã xác định trong App
 
 **Kết quả:** Ứng dụng của bạn đã sẵn sàng cho việc phân bổ lượt cài đặt, đo lường sự kiện trong ứng dụng và các chức năng khác của AppsFlyer mà không yêu cầu thêm tài nguyên phát triển.
 
+<div id="step-3-attribution-setup" />
+
 ## Bước 3: Thiết lập phân bổ
 
 Hoàn thành các bước sau cho mọi ứng dụng đã xác định trong AppsFlyer trong [Bước 1: Thiết lập ứng dụng](/docs/getting-started-onboarding-for-marketers#bước-1-thiết-lập-ứng-dụng):
@@ -100,6 +114,8 @@ Hoàn thành các bước sau cho mọi ứng dụng đã xác định trong App
 | [Tùy chọn] Bật các chiến dịch nhắm mục tiêu lại | Quản lý sản phẩm | 2 phút | <Anchor target="_blank" href="/marketers/vi/docs/app-settings#reengagement-attribution">Kích hoạt tùy chọn Nhắm mục tiêu lại trên trang App Settings</Anchor>.<br /><br />Tìm hiểu thêm: <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">Hướng dẫn nhắm mục tiêu lại</Anchor> |
 
 **Kết quả:** Tất cả các nguồn truyền thông mang lại lưu lượng truy cập cho ứng dụng của bạn đều được phân bổ, bất cứ khi nào người dùng mới hoặc người dùng trở lại thu hút với nguồn truyền thông.
+
+<div id="step-4-additional-setup" />
 
 ## Bước 4: Thiết lập bổ sung
 
@@ -119,6 +135,8 @@ Một số bước mang tính bắt buộc để đáp ứng các mục tiêu ki
 | Có được cái nhìn hợp nhất về hành trình của khách hàng trên các kênh, nền tảng và thiết bị | Quản lý sản phẩm/  <br />Nhà phát triển | <Anchor target="_blank" href="/marketers/vi/docs/people-based-attribution-pba-overview">Phân bổ trên Cơ sở Người dùng (PBA)</Anchor> |
 | Đảm bảo tuân thủ các quy định về quyền riêng tư: GDPR, CCPA, v.v. | Quản lý sản phẩm/  <br />Nhà phát triển | Cho phép người dùng <Anchor target="_blank" href="/marketers/vi/docs/apply-privacy-preserving-sdk-methods">lựa chọn không tham gia</Anchor> phân bổ. |
 
+<div id="enrich-your-knowledge" />
+
 ## Giúp bạn tăng vốn kiến thức
 
 Được đề xuất cho tất cả người dùng AppsFlyer:
@@ -131,11 +149,17 @@ Một số bước mang tính bắt buộc để đáp ứng các mục tiêu ki
 | Tìm hiểu về <Anchor target="_blank" href="/marketers/vi/docs/aggregated-and-analytics-reporting-overview">các công cụ báo cáo hợp nhất và phân tích</Anchor> | 30 phút |
 | Tìm hiểu về <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">báo cáo dữ liệu thô</Anchor> | 30 phút |
 
+<div id="related" />
+
 ## Liên quan
+
+<div id="tip-1" />
 
 > 👍 **Lời khuyên**
 >
 > Bạn chưa biết về UA (thu hút người dùng)? Tìm hiểu <Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">tất cả về</Anchor> những thách thức lớn nhất và các yếu tố quan trọng của việc lập kế hoạch, thực hiện và liên tục tối ưu hóa nỗ lực thu hút người dùng của bạn.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >

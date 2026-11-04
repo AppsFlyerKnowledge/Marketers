@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Tổng quan về Protect360
 
 * Bảo vệ chống gian lận phân bổ. Giải pháp bao gồm các công cụ năng động có thể phát hiện gian lận và chặn phân bổ gian lận.
@@ -112,6 +114,8 @@ Bảng dưới đây phác thảo các loại cài đặt gian lận và các s�
 
 <table><caption>Phát hiện gian lận và kết quả trong Protect360</caption><thead><tr><th>Hình thức gian lận</th><th>Thời gian phát hiện</th><th>Điều gì xảy ra đối với lượt cài đặt</th><th>Điều gì xảy ra đối với sự kiện trong ứng dụng</th></tr></thead><tbody><tr><td rowspan="2"><span>Lượt cài đặt giả mạo</span></td><td><span>Thời gian thực</span></td><td><span>Bị chặn theo thời gian thực</span></td><td><span>Bị chặn theo thời gian thực</span></td></tr><tr><td><span>Hậu phân bổ</span></td><td><span>Được đánh dấu trong báo cáo Lượt cài đặt Hậu Phân bổ</span></td><td><ul><li><span>Các sự kiện trong ứng dụng xảy ra trước khi phát hiện gian lận sẽ được đánh dấu trong báo cáo Sự kiện Trong Ứng dụng Hậu Phân bổ.</span></li><li><span>Sau khi phát hiện: bị chặn theo thời gian thực</span></li></ul></td></tr><tr><td rowspan="2"><span>Đánh cắp phân bổ lượt cài đặt</span></td><td><span>Thời gian thực</span></td><td><ul><li><span>Bị chặn theo thời gian thực</span></li><li><span>Phân bổ được sửa thành nguồn hợp lệ cuối</span></li></ul></td><td><ul><li><span>Xuất hiện trong báo cáo Sự kiện Trong Ứng dụng bị Chặn</span></li><li><span>Được phân bổ cho cùng một nguồn hợp lệ như lượt cài đặt</span></li></ul></td></tr><tr><td><span>Hậu phân bổ</span></td><td><span>Được đánh dấu trong báo cáo Lượt cài đặt Hậu Phân bổ</span></td><td><ul><li><span>Các sự kiện trong ứng dụng xảy ra trước khi phát hiện gian lận sẽ được đánh dấu trong báo cáo Sự kiện Trong Ứng dụng Hậu Phân bổ.</span></li><li><p>Sau khi phát hiện gian lận: đánh dấu vào báo cáo Sự kiện Trong Ứng dụng Hậu Phân bổ tối đa 30 ngày kể từ thời điểm cài đặt.\*</p><p>\*Các sự kiện trong ứng dụng được sửa thành nguồn truyền thông hợp lệ cuối cùng trong 30 ngày kể từ khi cài đặt. Các sự kiện xảy ra sau 30 ngày không được sửa.</p></li></ul></td></tr><tr><td rowspan="2"><span>Gian lận sự kiện trong ứng dụng</span></td><td><span>Thời gian thực</span></td><td>-</td><td><span>Bị chặn theo thời gian thực</span></td></tr><tr><td><span>Hậu phân bổ</span></td><td>-</td><td><span>Được đánh dấu trong báo cáo Sự kiện Trong Ứng dụng Hậu Phân bổ</span></td></tr></tbody></table>
 
+<div id="using-protect360" />
+
 ## Sử dụng Protect360
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Bạn cũng có thể sử dụng dữ liệu Protect360 để đối chiếu v�
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Đặc điểm và hạn chế
 
 <div id="traits-and-limitations::a07033c3" />
@@ -205,6 +211,8 @@ Bạn cũng có thể sử dụng dữ liệu Protect360 để đối chiếu v�
 | Điểm hạn chế | <ul><li>Bảng giới hạn tối đa 20.000 hàng.</li><li>Nếu bạn truy vấn một tập dữ liệu lớn hơn, một số nguồn truyền thông có thể bị loại trừ. Để khắc phục hạn chế này, chúng tôi khuyến nghị như sau:<ul><li>Truy vấn bộ dữ liệu nhỏ hơn - khoảng thời gian ngắn hơn, ứng dụng cụ thể và nguồn phương tiện cụ thể</li><li>Xuất <Anchor target="_blank" href="/marketers/vi/docs/protect360-raw-data-reports">báo cáo dữ liệu thô Protect360</Anchor></li><li>Xuất Báo cáo Phát hiện Nâng cao Hợp nhất Protect360 <Anchor target="_blank" href="/marketers/vi/docs/pull-api-aggregate-data">thông qua API Pull</Anchor></li></ul></li></ul> |
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## Câu hỏi thường gặp và mẹo
 
@@ -245,9 +253,13 @@ Bạn cũng có thể sử dụng dữ liệu Protect360 để đối chiếu v�
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Lời khuyên**
 >
 > Bạn muốn hiểu rõ hơn về bảo vệ chống lại gian lận? Hãy xem khóa học <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">ngắn, bổ ích này trên Cổng thông tin Học tập AppsFlyer</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

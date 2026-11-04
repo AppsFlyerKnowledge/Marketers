@@ -31,6 +31,8 @@ x-zendesk:
 
 **Tuyên bố của luật sư chúng tôi:** *Không nội dung nào được nêu ở đây là thông tin tư vấn pháp lý. Những nội dung này chỉ nhằm cung cấp thông tin và sự tiện lợi cho bạn. Bạn nên hợp tác chặt chẽ với các cố vấn pháp lý và cố vấn chuyên môn khác để xác định chính xác cách thức mà các chính sách của Apple áp dụng đối với bạn.*
 
+<div id="nutrition-labels-and-the-app-store-review" />
+
 ## Nhãn dinh dưỡng và duyệt xét trên App Store
 
 * Để tạo nhãn quyền riêng tư, nhà phát triển ứng dụng phải trả lời bảng câu hỏi khi gửi ứng dụng của họ đến App Store Connect bao gồm các phần sau:
@@ -44,6 +46,8 @@ x-zendesk:
 * Theo hiểu biết của AppsFlyer về chính sách của Apple, AppsFlyer không *theo dõi.* Tuy nhiên, các nhà phát triển Ứng dụng phải trả lời bảng câu hỏi phù hợp với mục đích sử dụng cụ thể và tích hợp đối tác của họ.
 * Nếu bạn sử dụng dữ liệu đã thu thập cho mục đích theo dõi, bạn phải triển khai lời nhắc ATT.
 * Phần sau giả định cấu hình mặc định của phần mềm AppsFlyer. Các nhà phát triển ứng dụng chịu trách nhiệm đảm bảo các ứng dụng điều chỉnh phù hợp với cấu hình và mục đích sử dụng cụ thể của họ.
+
+<div id="data-types-collected" />
 
 #### Các loại dữ liệu đã thu thập
 
@@ -64,6 +68,8 @@ x-zendesk:
 | **Dữ liệu chẩn đoán**<ul><li>Dữ liệu sự cố</li><li>Dữ liệu hiệu suất</li><li>Dữ liệu chẩn đoán khác</li></ul> | <ul><li>Không</li><li>Có</li><li>Không</li></ul> | Có thể nhận thông tin thời gian khởi động và/hoặc mức pin để phát hiện gian lận. |
 | **Dữ liệu khác**<ul><li>Các loại dữ liệu khác</li><li>IDFV</li></ul> | Có | <ul><li>Thông tin thiết bị kỹ thuật (ví dụ: hệ điều hành, loại thiết bị, ngôn ngữ, kích thước màn hình, v.v.) hoặc thông tin mạng (ví dụ: địa chỉ IP, tác nhân người dùng HTTP) được AppsFlyer nhận.</li><li>AppsFlyer áp dụng ID cài đặt cho mỗi lượt cài đặt ứng dụng được gọi là ID AF.</li><li>IDFV được thu thập</li></ul> |
 
+<div id="data-use-purposes" />
+
 ### Mục đích sử dụng dữ liệu
 
 Apple có một danh sách các mục đích mà các nhà phát triển ứng dụng phải chọn, như được nêu chi tiết trong bảng sau. Bạn phải xác định các mục đích liên quan cho từng loại dữ liệu liên quan đến mục đích sử dụng cụ thể của mình.
@@ -77,11 +83,15 @@ Apple có một danh sách các mục đích mà các nhà phát triển ứng d
 | Chức năng ứng dụng | Có |
 | Các mục đích khác | Chọn nếu bạn sử dụng dữ liệu cho bất kỳ mục đích nào khác không được đề cập. |
 
+<div id="data-linked-to-an-identity" />
+
 ### Dữ liệu liên kết với danh tính
 
 Các loại dữ liệu được thu thập thông qua AppsFlyer thường được liên kết với một mã định danh như ID thiết bị (nếu có) hoặc các mã định danh khác như ID do khách hàng cấp khi được cấu hình.
 
 Do đó, các nhà phát triển ứng dụng nên chọn **Yes** (Có) khi được hỏi liệu dữ liệu có được liên kết với danh tính hay không.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## Giới thiệu về gói thương hiệu
 
 Các thương hiệu hoạt động trong một hệ sinh thái bao gồm cả thuộc tính web và di động. Với tư cách là nhà quảng cáo, một bức tranh đầy đủ về hiệu quả của thương hiệu trên các nền tảng–web và thiết bị di động–là điều cần thiết. Trong PBA, các gói thương hiệu hợp nhất dữ liệu của các thuộc tính web và di động thành một thực thể duy nhất để phân tích và dữ liệu thô.
+
+<div id="what-is-a-web-app" />
 
 > 📘 **Ứng dụng web là gì?**
 >
@@ -45,6 +49,8 @@ Các thương hiệu hoạt động trong một hệ sinh thái bao gồm cả t
 * Không thể xóa ứng dụng khỏi một gói hay chuyển ứng dụng giữa các gói mà không [xóa gói gốc](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
   * AppsFlyer sẽ ngừng phân bổ dữ liệu PBA cho gói bị xóa và thu hồi quyền truy cập vào dữ liệu lịch sử của gói đó.
 
+<div id="accessing-brand-bundles" />
+
 ## Truy cập các gói thương hiệu
 
 Truy cập trang **Brand Bundles** để quản lý các gói thương hiệu và cài đặt của chúng:
@@ -52,6 +58,8 @@ Truy cập trang **Brand Bundles** để quản lý các gói thương hiệu v�
 * Đi đến **My Apps** > **View brand bundles.**  
                            - hoặc -
 * Từ cây điều hướng bên trái trên trang tổng quan, đi đến **Configuration** > **Brand Bundles.**
+
+<div id="managing-brand-bundles" />
 
 ## Quản lý gói thương hiệu
 
@@ -85,6 +93,8 @@ Trước khi tiếp tục, hãy đảm bảo rằng tất cả ứng dụng bạ
      * Không bắt buộc phải có ứng dụng di động khi tạo gói.
      * Không giới hạn về số lượng ứng dụng di động bạn có thể đưa vào một gói.
 4. Nhấp vào Create bundle.
+
+<div id="important" />
 
 > 🚧 **Quan trọng!**
 >
@@ -163,6 +173,8 @@ Triển khai cơ chế loại trừ miền, một phần của <Anchor target="_
 
 </Accordion>
 
+<div id="faq" />
+
 ## Câu hỏi thường gặp
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -195,6 +207,8 @@ Triển khai cơ chế loại trừ miền, một phần của <Anchor target="_
 
 <Accordion title="Điều gì sẽ xảy ra nếu tôi xóa một gói?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### câu hỏi thường gặp điều gì xảy ra nếu tôi xóa một gói
 
 Nếu bạn xóa một gói:
@@ -214,6 +228,8 @@ Nếu bạn xóa một gói:
 * **Người dùng tài khoản khác:** Kiểm tra với quản trị viên tài khoản để đảm bảo bạn có vai trò và quyền cần thiết để truy cập vào ứng dụng bạn đang cố gắng thêm.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

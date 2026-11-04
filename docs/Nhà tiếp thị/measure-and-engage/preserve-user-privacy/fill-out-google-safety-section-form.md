@@ -24,11 +24,15 @@ x-zendesk:
 
 Khách hàng cần hợp tác chặt chẽ với các cố vấn pháp lý và chuyên gia khác để xác định chính xác cách các chính sách Google sẽ được áp dụng với họ và nên điều chỉnh câu trả lời của họ phù hợp với cấu hình và mục đích sử dụng cụ thể của họ.
 
+<div id="disclaimer" />
+
 #### **Tuyên bố từ chối trách nhiệm**
 
 Thông tin trong bài viết này nhằm mục đích hỗ trợ trả lời Bảng câu hỏi Mục An toàn của Google **chỉ** liên quan đến những gì AppsFlyer xử lý thay mặt khách hàng.
 
 Bài viết chỉ nhằm mục đích cung cấp thông tin và tăng tính thuận tiện. Khách hàng cần hợp tác chặt chẽ với các cố vấn pháp lý và chuyên gia khác để xác định chính xác cách các chính sách Google sẽ được áp dụng với họ và nên điều chỉnh câu trả lời của họ phù hợp với cấu hình và mục đích sử dụng cụ thể của họ.
+
+<div id="introduction" />
 
 ## Giới thiệu
 
@@ -36,9 +40,13 @@ Kể từ tháng 4 năm 2022, nhà phát triển ứng dụng cần phải cung 
 
 Thông tin do mỗi ứng dụng cung cấp sẽ được hiển thị trong trang thông tin cửa hàng Google, giúp người dùng cuối hiểu rõ hơn về các phương thức bảo vệ quyền riêng tư của ứng dụng.
 
+<div id="audience" />
+
 ## Đối tượng
 
 Tất cả các nhà phát triển ứng dụng sẽ cần phải hoàn thành bảng câu hỏi mục an toàn và đăng liên kết đến chính sách quyền riêng tư ngay cả khi họ không thu thập bất kỳ loại dữ liệu nào do Google chỉ định.
+
+<div id="google-safety-form-questionnaire" />
 
 ## Biểu mẫu an toàn của Google (bảng câu hỏi)
 
@@ -54,6 +62,8 @@ Liên quan đến việc sử dụng AppsFlyer, các nhà phát triển ứng d�
 
 Các nhà phát triển ứng dụng phải trả lời bảng câu hỏi tùy theo các trường hợp sử dụng, cấu hình và tích hợp đối tác cụ thể của họ.
 
+<div id="data-collection-and-security" />
+
 ### Thu thập và bảo mật dữ liệu
 
 Trong mục này, sẽ có một số câu hỏi có/không chung chung:
@@ -63,6 +73,8 @@ Trong mục này, sẽ có một số câu hỏi có/không chung chung:
 3. Bạn có nêu rõ cách để người dùng yêu cầu xóa dữ liệu của họ không?
 
 Đối với việc bạn sử dụng AppsFlyer, AppsFlyer mã hóa tất cả dữ liệu trong quá trình chuyển tiếp được truyền qua SDK. AppsFlyer cũng cho phép khách hàng xóa dữ liệu người dùng cuối cụ thể thông qua khung OpenGDPR của mình. Đối với các loại dữ liệu được thu thập, hãy xem bảng trong mục [Loại dữ liệu](/docs/fill-out-google-safety-section-form#loại-dữ-liệu).
+
+<div id="data-types" />
 
 ### Loại dữ liệu
 
@@ -105,13 +117,19 @@ Các trường hợp ngoại lệ bao gồm:
 
 Điều quan trọng cần lưu ý là mặc dù AppsFlyer chỉ hoạt động như một nhà cung cấp dịch vụ thay mặt bạn và theo chỉ thị của bạn, nhưng nếu bạn đang chia sẻ dữ liệu với các mạng bên thứ ba (ví dụ: thông qua đăng lại, SRN và đối tượng) thì đây sẽ được coi là hành động chia sẻ.  Do đó, mỗi nhà phát triển ứng dụng sẽ cần đánh giá cấu hình và tích hợp đối tác của mình và trả lời tương ứng theo.
 
+<div id="ephemeral-processing" />
+
 ## Xử lý ngắn hạn
 
 Xử lý ngắn hạn là việc dữ liệu được xử lý trong bộ nhớ, chỉ trong khoảng thời gian cần thiết để xử lý một hành động cụ thể theo thời gian thực và không nhằm mục đích nào khác. Do bản chất của các dịch vụ AppsFlyer, dữ liệu do AppsFlyer thay mặt bạn xử lý sẽ không được xử lý ngắn hạn.
 
+<div id="user-choice" />
+
 ## Lựa chọn của người dùng
 
 Nói chung, dữ liệu được thu thập là bắt buộc để thực hiện các dịch vụ. Vì thế, nhà phát triển ứng dụng có thể đưa hoạt động thu thập dữ liệu vào cài đặt kiểm soát việc lựa chọn tham gia hoặc lựa chọn không tham gia.
+
+<div id="purpose" />
 
 ## Mục đích
 
@@ -126,6 +144,8 @@ Google đã cung cấp danh sách các mục đích mà các nhà phát triển 
 | Gian lận, phòng ngừa, bảo mật và tuân thủ | Có |
 | Cá nhân hóa | Hãy chọn nếu bạn sử dụng dữ liệu cho bất kỳ loại cá nhân hóa sản phẩm nào |
 | Quản lý tài khoản | Hãy chọn nếu bạn sử dụng dữ liệu để thiết lập và quản lý tài khoản người dùng |
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

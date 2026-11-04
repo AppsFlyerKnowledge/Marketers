@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Khái quát**: Mô hình AppsFlyer hợp nhất dữ liệu mà báo cáo SKAdNetwork cơ bản không thể cung cấp.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Báo cáo SKAdNetwork (SKAN) có thể bị hạn chế bởi vì:
@@ -35,6 +37,8 @@ Dữ liệu theo mô hình SKAN giải quyết các vấn đề sau:
 * Nhà quảng cáo sẽ có được bức tranh toàn cảnh hơn về hiệu suất LTV của ứng dụng và chiến dịch
 
 **Lưu ý**: Khi thay đổi lược đồ giá trị chuyển đổi, bạn phải mất 2 ngày mới có dữ liệu được lập mô hình.
+
+<div id="modeled-data-types-and-availability" />
 
 ## Loại dữ liệu được lập mô hình và tính có sẵn
 

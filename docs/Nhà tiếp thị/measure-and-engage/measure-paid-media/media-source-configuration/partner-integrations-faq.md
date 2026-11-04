@@ -38,6 +38,8 @@ Các số liệu và biểu đồ được dựa trên dữ liệu từ lưu lư
 
 </Accordion>
 
+<div id="use-partner-integrations" />
+
 ## Sử dụng Partner Marketplace
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -84,6 +86,8 @@ Việc tích hợp vốn đã được thực hiện từ trang thiết lập t�
 Xem <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">cách tích hợp với đối tác mới từ Partner Marketplace</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Xử lý sự cố
 

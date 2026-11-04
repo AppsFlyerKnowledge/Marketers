@@ -32,6 +32,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## Báo cáo doanh thu quảng cáo ở mức lượt hiển thị qua trình kết nối SDK
 
 **Tùy chọn báo cáo doanh thu quảng cáo**
@@ -45,6 +47,8 @@ Doanh thu quảng cáo được báo cáo cho AppsFlyer dựa trên độ chi ti
 
 * Những lượt hiển thị này được thu thập và xử lý trong AppsFlyer, nhưng không bị tính vào gói trong ứng dụng của bạn.
 * Có một <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad_revenue_unity_connector">trình cắm doanh thu quảng cáo của AppsFlyer cho Unity</Anchor>.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### Báo cáo doanh thu quảng cáo qua trình kết nối SDK
 
@@ -80,6 +84,8 @@ Trình kết nối SDK **gửi dữ liệu doanh thu đến nền tảng tại t
 * **Chủ đề về mức lượt hiển thị của DataLocker lúc 1 giờ sáng và mỗi 1 giờ sau đó,**
 * **Báo cáo hoạt động và nhóm (cohort) của AppsFlyer lúc 5 giờ sáng theo giờ UTC và mỗi 4 giờ sau đó.**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## Triển khai trình kết nối SDK doanh thu quảng cáo chung của AppsFlyer
 
 **Để triển khai trình kết nối SDK doanh thu quảng cáo chung của AppsFlyer**:
@@ -87,6 +93,8 @@ Trình kết nối SDK **gửi dữ liệu doanh thu đến nền tảng tại t
 1. <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Bật mục doanh thu quảng cáo cấp SDK trong AppsFlyer</Anchor> cho đối tác bạn muốn kết nối. **Lưu ý**: Bạn cần thực hiện thao tác này cho từng ứng dụng riêng lẻ.
 2. Yêu cầu nhà phát triển của bạn tích hợp trình kết nối SDK doanh thu quảng cáo chung của AppsFlyer theo <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">các hướng dẫn sau</Anchor>.
 3. Để ghi lại doanh thu quảng cáo trong bảng điều khiển SKAdNetwork của bạn, hãy làm theo <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">hướng dẫn về doanh thu quảng cáo trong SKAN</Anchor>.
+
+<div id="traits-and-limitations" />
 
 ## Đặc điểm và hạn chế
 

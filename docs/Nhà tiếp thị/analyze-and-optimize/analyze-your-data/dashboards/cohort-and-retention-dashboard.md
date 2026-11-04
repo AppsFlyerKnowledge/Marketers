@@ -28,6 +28,8 @@ x-zendesk:
 
 ![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Bảng điều khiển nhóm người
 
 Để sử dụng Nhóm người, hãy chọn người dùng từ một hoặc nhiều ứng dụng và tạo phân khúc theo thời gian chuyển đổi. Có sẵn các số liệu nhóm người như doanh thu, ROI và tỷ lệ chuyển đổi sự kiện. Chia nhỏ nhóm người, cho mục đích so sánh, thành các phương diện như chiến dịch hoặc nguồn truyền thông. Điều này có thể giúp biết rõ được các dạng hoặc thay đổi về hiệu suất của người dùng hoặc chu kỳ hoạt động của chiến dịch. Xem phần <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Các trường hợp sử dụng theo nhóm người</Anchor>.
@@ -85,6 +87,8 @@ Trong ví dụ này, cùng một dữ liệu thô được sử dụng để t�
 <table><thead><tr><th> </th><th> </th><th colspan="6">Hàm</th></tr><tr><th rowspan="2">Luôn luôn/ Tùy chọn </th><th rowspan="2"><p>Số liệu</p></th><th>Số đếm</th><th>cvr (tỷ lệ chuyển đổi)</th><th>Xếp hạng</th><th>Tổng</th><th>Người dùng duy nhất</th><th>eCPA</th></tr><tr><th>Số</th><th>Tỷ lệ phần trăm</th><th>Tỷ lệ phần trăm</th><th>Số</th><th>Số</th><th>Số</th></tr></thead><tbody><tr><td>Luôn luôn</td><td>Người dùng (4)</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Luôn luôn</td><td>Chi phí (3)</td><td><span>-</span></td><td><span>-</span></td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Luôn luôn</td><td>eCPI trung bình</td><td><span>-</span></td><td><span>-</span></td><td><span>✓</span></td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td><code>"event_name"</code></td><td> </td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td><span>✓</span></td><td> <span>✓</span><span><span>(5)</span></span> </td></tr><tr><td>Tùy chọn</td><td>Doanh thu</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td>ROAS (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td>ROI (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td>Phiên (2)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td> <span>✓</span><span>(1)</span> </td><td><span><span>-</span></span></td></tr><tr><td>Tùy chọn</td><td>Lượt gỡ cài đặt (3)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr></tbody><tfoot><tr><td colspan="8"><p>(1) Các phiên độc nhất trả về khi aggregation_type=on_day<br/>(2) Các phiên nhắm mục tiêu lại (thu hút lại và phân bổ lại) có sẵn cho các phiên diễn ra bắt đầu từ ngày 13 tháng 7 năm 2020. Điều này có nghĩa là các phiên diễn ra cho đến ngày 12 tháng 7 năm 2020 sẽ không được hiển thị. <br/>(3) Không áp dụng trong các trường hợp sau:</p><ul><li>Dạng xem được thống nhất</li><li>Mức độ chi tiết tính theo giờ. Được tính toán hàng ngày theo giờ UTC. </li></ul><p>(4) Số liệu <em>Người dùng</em> tính số lượt phân bổ (lượt cài đặt, thu hút lại, phân bổ lại) diễn ra trong khoảng thời gian đã chọn.   </p><p>(5) Chi phí hiệu quả trên mỗi hành động (eCPA): Chi phí / Số lượng người dùng duy nhất tích lũy thực hiện sự kiện.</p></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="using-cohort" />
 
 ## Sử dụng Nhóm người
 
@@ -255,6 +259,8 @@ Dữ liệu không hoàn chỉnh là gì?
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Thông tin
 
 <div id="cohort-for-agencies" />
@@ -274,6 +280,8 @@ Dữ liệu không hoàn chỉnh là gì?
 
 <Accordion title="Các trường hợp sử dụng">
 
+<div id="revenue-sum-by-geo" />
+
 #### Tổng doanh thu theo quốc gia
 
 **Biểu đồ: Doanh thu tích lũy trên mỗi người dùng**
@@ -283,6 +291,8 @@ Dữ liệu không hoàn chỉnh là gì?
 **Bảng: Doanh thu mỗi ngày**
 
 [![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
+
+<div id="in-app-event-conversion" />
 
 #### Chuyển đổi sự kiện trong ứng dụng
 

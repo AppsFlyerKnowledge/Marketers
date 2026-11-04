@@ -27,15 +27,21 @@ x-zendesk:
 
 [![Main Discovery image New.jpg](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## Giới thiệu về bảng điều khiển Khám phá
 
 Bảng điều khiển <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide">**Tối ưu hóa Quảng cáo**</Anchor> cho phép bạn đo lường hiệu suất quảng cáo của mình bằng cách tập hợp tất cả các quảng cáo từ mọi kênh truyền thông vào một nơi duy nhất. Phân tích hiệu suất của chúng theo các phương diện đã chọn, trên nhiều chiến dịch, kênh, v.v., để có được thông tin chi tiết trọng yếu trước khi lập kế hoạch, chọn và tạo lập loạt quảng cáo tiếp theo của bạn.
 
 **Bảng điều khiển Khám phá** được AI hỗ trợ cung cấp cho đội ngũ quảng cáo của bạn mọi thông tin họ cần thiết để tạo ra những quảng cáo thành công. Bảng điều khiển này sẽ cung cấp dữ liệu hiệu suất chi tiết, giúp đưa ra các quyết định sáng suốt dựa trên các yếu tố hoặc tính năng cụ thể trong quảng cáo góp phần nâng cao hiệu quả của quảng cáo. Với bảng điều khiển này, bạn có thể tạo lập và duy trì một cách nhất quán các quảng cáo thành công dựa trên dữ liệu và được tối ưu hóa để có tác động tối đa. Dựa trên các lựa chọn bộ lọc chính, bạn có thể xem thư viện quảng cáo của mình hoặc phân chia chúng thành các cảnh và thành phần riêng lẻ.
 
+<div id="get-started" />
+
 ## Bắt đầu
 
 Nếu chưa định cấu hình Tối ưu hóa Quảng cáo, bạn có thể tìm thấy hướng dẫn về cách thực hiện <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide#bắt-đầu">tại đây</Anchor>.
+
+<div id="concepts" />
 
 ## Lọc, Truy vấn Nhanh và sắp xếp
 
@@ -110,6 +116,8 @@ Các phép đo khả dụng bao gồm:
 Xem <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide#standard-metrics-and-dimensions">danh sách</Anchor> chuyên sâu về định nghĩa số liệu.
 
 </Accordion>
+
+<div id="discovery-tabs" />
 
 ## Thẻ Discovery
 

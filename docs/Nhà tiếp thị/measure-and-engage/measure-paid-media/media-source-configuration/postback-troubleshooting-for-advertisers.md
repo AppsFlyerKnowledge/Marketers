@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm các nguyên nhân và giải pháp chính cho lý do tại sao đối tác của bạn không nhận được các bài đăng lại như mong đợi. Kiểm tra kỹ lưỡng từng chủ đề bên dưới và xem liệu chúng có phải là nguyên nhân hay không.
 
+<div id="check-the-integration-toggles" />
+
 ## Kiểm tra các nút chuyển đổi tích hợp
 
 Các nút chuyển đổi khác nhau kiểm soát các phần khác nhau của quy trình tích hợp. Trạng thái của nút chuyển đổi có thể gây ra sự cố không nhận được bài đăng lại. 
@@ -64,6 +66,8 @@ Nút **<Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-co
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## Kiểm tra cấu hình sự kiện
 
@@ -137,6 +141,8 @@ Nếu đường dẫn phân bổ bao gồm tham số `af_installpostback=false`,
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## Hạn chế về quyền riêng tư
 
 Trong các trường hợp sau, AppsFlyer không gửi bài đăng lại do các hạn chế về quyền riêng tư.
@@ -168,6 +174,8 @@ Bộ lọc chia sẻ đã được triển khai trong SDK để ngăn đối tá
 Để biết thêm thông tin, hãy xem: <Anchor target="_blank" href="/marketers/vi/docs/apply-privacy-preserving-sdk-methods#prevent-data-sharing-with-third-parties">Ngăn chặn chia sẻ dữ liệu với bên thứ ba</Anchor> và <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setsharingfilterforpartners">setSharingFilterForPartners</Anchor>.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## Các nội dung khác
 
@@ -233,11 +241,15 @@ Có một số <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-n
 
 <div id="media-source-restrictions-on-thirdparty-platforms::40092c14" />
 
+<div id="advanced-privacy-postbacks" />
+
 <Accordion title="Hạn chế nguồn truyền thông trên các nền tảng của bên thứ ba">
 
 <Anchor target="_blank" href="/marketers/vi/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms">Một số nguồn truyền thông</Anchor> hạn chế chia sẻ dữ liệu với các bên thứ ba. AppsFlyer không thể chia sẻ dữ liệu ở cấp độ người dùng có được thông qua các nguồn truyền thông này với nền tảng hoặc dịch vụ của bên thứ ba. Do đó, tất cả các lượt cài đặt từ những nguồn truyền thông đó sẽ được gửi dưới dạng tự nhiên. Lưu ý rằng quảng cáo Meta không chia sẻ bất kỳ dữ liệu nào với nền tảng của bên thứ ba.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

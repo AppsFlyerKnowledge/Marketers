@@ -31,17 +31,23 @@ x-zendesk:
 ---
 > **Khái quát:** Ghi nhận các sự kiện phong phú trong ứng dụng hậu cài đặt (chẳng hạn như đăng nhập, đăng ký hoặc mua hàng trong ứng dụng) được phân bổ cho các nguồn truyền thông và chiến dịch.
 
+<div id="why-record-in-app-events" />
+
 ## Tại sao phải ghi nhận các sự kiện trong ứng dụng?
 
 Sự kiện trong ứng dụng cung cấp thông tin chi tiết về những gì đang diễn ra trong ứng dụng của bạn và là công cụ lý tưởng để xác định giá trị của người dùng ứng dụng và **chất lượng của lưu lượng truy cập bắt nguồn từ các nguồn truyền thông khác nhau**. Việc ghi nhận sự kiện trong ứng dụng cho phép bạn đo lường các KPI như ROI (Lợi tức Đầu tư) và LTV (Giá trị Vòng đời).
 
 Khi người dùng thực hiện đăng ký, xem xong hướng dẫn, thêm các mặt hàng vào giỏ hàng hoặc thực hiện mua hàng, thì dữ liệu sự kiện trong ứng dụng có thể ghi nhận các sự kiện kèm theo thông tin chi tiết. Việc triển khai các sự kiện trong ứng dụng là bắt buộc đối với tất cả các mục đích phân tích hậu cài đặt.
 
+<div id="about-in-app-events" />
+
 ## Giới thiệu về các sự kiện trong ứng dụng
 
 Sự kiện trong ứng dụng bao gồm tên sự kiện và có thể gồm cả các thông số sự kiện. Khi bạn thêm thông số sự kiện vào một sự kiện trong ứng dụng thì nó được gọi là sự kiện phong phú trong ứng dụng. Các thông số sự kiện cung cấp cho bạn thêm ngữ cảnh và thông tin về sự kiện đang xảy ra. Ví dụ: mặc dù giúp bạn biết rằng một người dùng đã đặt trước, nhưng các thông số sự kiện có thể cung cấp cho bạn những thông chi tiết như loại giao dịch mua, điểm đến và doanh thu.
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+
+<div id="tip" />
 
 > 👍 **Lời khuyên**
 >
@@ -109,7 +115,11 @@ Sơ đồ trên thể hiện quá trình sau đây:
 
 AppsFlyer sử dụng <Anchor target="_blank" href="https://openexchangerates.org/">Tỷ giá Hối đoái Mở</Anchor> để quy đổi đơn vị tiền tệ. Tỷ giá hối đoái được cập nhật theo giờ. Bất cứ khi nào AppsFlyer thực hiện quy đổi đơn vị tiền tệ, nền tảng sẽ sử dụng tỷ giá hối đoái theo lần cập nhật theo giờ gần nhất.
 
+<div id="currency-conversion" />
+
 #### Quy đổi đơn vị tiền tệ
+
+<div id="h_01HDBZW9XERK3VN1GS8GHM911W" />
 
 > 📄 **Ví dụ**
 >
@@ -126,9 +136,13 @@ AppsFlyer sử dụng <Anchor target="_blank" href="https://openexchangerates.or
 >
 > Trong trường hợp này, AppsFlyer quy đổi doanh thu từ EUR sang USD và sau đó sang GBP. Giả sử tỷ giá hối đoái là €1 = $1,13. Vậy €200 sẽ thành $226,85. Tiếp theo, AppsFlyer sẽ quy đổi từ USD sang GBP. Giả sử tỷ giá hối đoái là $1 = £0,78. Vậy $226,85 sẽ thành £176,92.
 
+<div id="currency-display" />
+
 #### Hiển thị Tiền tệ
 
 <Anchor target="_blank" href="/marketers/vi/docs/app-settings#localization-currency">Đơn vị tiền tệ được đặt trong cài đặt ứng dụng</Anchor>. Đơn vị tiền tệ mà bạn đặt trong cài đặt ứng dụng là đơn vị tiền tệ xuất hiện trong bảng điều khiển. Bất kể bạn gửi sự kiện trong ứng dụng bằng đơn vị tiền tệ nào, doanh thu trong bảng điều khiển luôn xuất hiện bằng đơn vị tiền tệ mà bạn đã đặt trong cài đặt ứng dụng.
+
+<div id="h_01HDBZW9XEQNG1RDH7A8H002ZD" />
 
 > 📄 **Ví dụ**
 >
@@ -140,7 +154,7 @@ AppsFlyer sử dụng <Anchor target="_blank" href="https://openexchangerates.or
 > 2. Sự kiện B có doanh thu là **171** và **EUR** là đơn vị tiền tệ
 > 3. Sự kiện C có doanh thu là **171** nhưng **không chỉ định đơn vị tiền tệ**
 >
-> #### Dữ liệu doanh thu trong bảng điều khiển
+> #### <span id="revenue-data-in-the-dashboard"></span>Dữ liệu doanh thu trong bảng điều khiển
 >
 > Doanh thu xuất hiện trong bảng điều khiển là **giá trị được quy đổi** từ đơn vị tiền tệ của sự kiện trong ứng dụng sang USD, sau đó sang đơn vị tiền tệ trong cài đặt ứng dụng.
 >
@@ -156,7 +170,7 @@ AppsFlyer sử dụng <Anchor target="_blank" href="https://openexchangerates.or
 >
 >
 >
-> #### Dữ liệu doanh thu trong báo cáo dữ liệu thô
+> #### <span id="revenue-data-in-raw-data-reports"></span>Dữ liệu doanh thu trong báo cáo dữ liệu thô
 >
 > Nếu bạn đặt đơn vị tiền tệ là **GBP** trong cài đặt ứng dụng nhưng lại gửi các sự kiện trong ứng dụng bằng các đơn vị tiền tệ khác, thì báo cáo dữ liệu thô sẽ hiển thị doanh thu bằng cả đơn vị tiền tệ của cài đặt ứng dụng và đơn vị tiền tệ của sự kiện trong ứng dụng.
 >
@@ -174,6 +188,8 @@ AppsFlyer sử dụng <Anchor target="_blank" href="https://openexchangerates.or
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## Gửi sự kiện
 
 Có một số cách để gửi các sự kiện trong ứng dụng tới AppsFlyer:
@@ -182,6 +198,8 @@ Có một số cách để gửi các sự kiện trong ứng dụng tới AppsF
 * **<Anchor target="_blank" href="/marketers/vi/docs/server-to-server-events-api-for-mobile-s2s-mobile">API máy chủ đến máy chủ:</Anchor>** Sử dụng API máy chủ đến máy chủ để gửi trực tiếp các sự kiện xảy ra bên ngoài ứng dụng dành cho thiết bị di động đến AppsFlyer. Ví dụ: nếu bạn có một người dùng đang hoạt động trên cả giao diện web và thiết bị di động, bạn có thể ghi nhận các sự kiện từ cả hai nguồn và phân bổ chúng cho cùng một người dùng trong AppsFlyer. Đó có thể là sự kiện trong ứng dụng hoặc các sự kiện khác, chẳng hạn như các sự kiện trang web, sự kiện tổng đài hoặc mua hàng tại cửa hàng thực tế.
 * **<Anchor target="_blank" href="/marketers/vi/docs/legacy-receipt-validation-for-in-app-purchases">Xác thực biên nhận</Anchor>:** Đây là một cơ chế bảo mật trong đó nền tảng thanh toán, chẳng hạn như Apple và Google, xác nhận rằng giao dịch mua trong ứng dụng đã diễn ra như được báo cáo. Xác thực mua là công cụ chính để ngăn chặn các sự kiện doanh thu gian lận. Đồng thời, việc này cũng giúp bạn xem doanh thu thực tế và lọc ra các hoạt động mua hàng trong ứng dụng chưa hoàn tất.
 * **<Anchor target="_blank" href="/marketers/vi/docs/in-app-events-for-hybrid-apps">Ứng dụng lai</Anchor>**: Các ứng dụng này kết hợp các chế độ xem gốc và nội dung HTML và cũng có thể ghi nhận các sự kiện trong ứng dụng. Tuy nhiên, vì SDK chỉ có thể gửi các sự kiện từ phía gốc nên các nhà phát triển phải chuyển tiếp tất cả dữ liệu sự kiện sang mã gốc.
+
+<div id="setting-up-in-app-events" />
 
 ## Thiết lập sự kiện trong ứng dụng
 
@@ -203,6 +221,8 @@ Sau khi bạn xác định các sự kiện trong ứng dụng mà bạn muốn 
 1. Chọn tên sự kiện phù hợp nhất với tình huống bạn muốn ghi nhận.
 2. Chọn các thông số sự kiện mà bạn muốn liên kết với sự kiện. Chọn các thông số sẽ cung cấp ngữ cảnh bổ sung cho sự kiện và làm phong phú dữ liệu.
 3. Tải xuống tệp tin đã hoàn thành từ trình tạo sự kiện trong ứng dụng, sau đó chia sẻ tệp tin đó với nhà phát triển của bạn.
+
+<div id="h_01HDBZW9XFN2B8AC18VW99G8Z6" />
 
 > 📄 **Ví dụ**
 >
@@ -298,6 +318,8 @@ Hãy lưu ý những chi tiết sau khi xác định tên và thông số sự k
 
 </Accordion>
 
+<div id="faq" />
+
 ## Câu hỏi thường gặp
 
 Phần sau bao gồm các Câu hỏi thường gặp về sự kiện trong ứng dụng.
@@ -344,6 +366,8 @@ Nếu người dùng bắt đầu một sự kiện khi không có kết nối i
 2. Nếu SDK không nhận được phản hồi thành công thì sự kiện sẽ được lưu trữ trong bộ nhớ đệm.
 3. Khi nhận được phản hồi thành công tiếp theo thì sự kiện đã lưu trữ sẽ được gửi lại đến máy chủ.
 4. Nếu có nhiều sự kiện trong bộ nhớ đệm thì chúng sẽ được gửi lần lượt đến máy chủ.
+
+<div id="note-3" />
 
 > 📘 **Lưu ý**
 >
@@ -441,6 +465,10 @@ Hai sự kiện được coi là giống hệt nhau nếu các trường sau đ�
 * Giá trị của sự kiện
 * ID ứng dụng
 * ID AppsFlyer
+
+<div id="note-4" />
+
+<div id="notes" />
 
 > 📘 **Lưu ý**
 >

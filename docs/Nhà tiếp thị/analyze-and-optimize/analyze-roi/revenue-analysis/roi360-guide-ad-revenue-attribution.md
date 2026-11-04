@@ -31,6 +31,8 @@ x-zendesk:
 
 [![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## Phân bổ doanh thu quảng cáo
 
 * Quảng cáo hiển thị trong ứng dụng trên biểu ngữ, mục làm nhiệm vụ nhận ưu đãi, quảng cáo xen kẽ, v.v. và tạo doanh thu quảng cáo.
@@ -59,6 +61,8 @@ Phân bổ doanh thu quảng cáo hỗ trợ các phương thức về mức đ�
 | Cấp lượt hiển thị (qua SDK) với cấp thiết bị (qua API S2S) | <ul><li>Cho phép phân bổ và báo cáo dữ liệu cấp lượt hiển thị đến qua SDK vào Ngày X, đồng thời chuyển đổi dữ liệu này với dữ liệu cấp thiết bị đến qua API vào Ngày 1 trở đi. **Lưu ý**: Đối với Android, dữ liệu được báo cáo qua SDK từ các thiết bị không xác định (không có ID thiết bị) sẽ không được thay thế bằng dữ liệu đến từ API.</li><li>Cho phép cập nhật dữ liệu với độ chuẩn xác. Có nghĩa là, bạn nhận được lợi ích từ việc cập nhật dữ liệu cho Ngày X với độ chuẩn xác dữ liệu cho Ngày X+1 trở đi.</li><li>Hỗ trợ SKAN.</li></ul> |
 
 </Accordion>
+
+<div id="implementation" />
 
 ## Thực hiện
 
@@ -146,12 +150,16 @@ Mức độ chi tiết hợp nhất cho doanh thu quảng cáo hoạt động nh
   * Sự kiện **af\_app\_opened** có sẵn theo mặc định.
 * Không báo cáo số tiền doanh thu quảng cáo trong các sự kiện trong ứng dụng song song với tích hợp doanh thu quảng cáo. Nếu làm vậy, doanh thu quảng cáo sẽ bị trùng lặp trong bảng điều khiển vì AppsFlyer lấy dữ liệu doanh thu từ mạng kiếm tiền bằng cách tích hợp.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### Hợp nhất doanh thu quảng cáo sử dụng các sự kiện
 
 | Phương thức sự kiện | Cách triển khai | Những điều cần lưu ý |
 | --- | --- | --- |
 | Sự kiện kiếm tiền duy nhất trong ứng dụng | <ul><li>Sự kiện trong ứng dụng được đặt tại thời điểm hiển thị quảng cáo</li><li>Điều này sẽ cung cấp số lượng các hành động riêng biệt của người dùng cho phép tính toán eRPA tốt hơn</li><li>Có thể tinh chỉnh thêm tính năng này bằng cách có một sự kiện trong ứng dụng khác nhau cho mỗi mạng kiếm tiền, làm như vậy sẽ cho phép bạn chia nhỏ doanh thu theo mạng kiếm tiền<br />Xem bảng sau để có nội dung thảo luận đầy đủ.</li></ul> | <ul><li>Yêu cầu nhà phát triển phải sửa đổi ứng dụng</li><li>Doanh thu có thể được chia nhỏ theo mạng kiếm tiền trong Bảng điều khiển</li></ul> |
 | sự kiện af\_app\_opened | <ul><li>Sự kiện af\_app\_opened được SDK Appsflyer gửi theo mặc định</li><li>Tính năng được kích hoạt bởi mỗi phiên người dùng</li></ul> | <ul><li>Không cần sửa đổi ứng dụng</li><li>Triển khai nhanh chóng</li><li>Giá trị eRPA sẽ bị sai lệch đáng kể trừ khi bạn chỉ hiển thị một ứng dụng mỗi phiên</li><li>Không có phân tích doanh thu theo mạng kiếm tiền</li><li>Sự kiện liên quan đến tất cả người dùng khởi chạy ứng dụng và sẽ không có chỉ dấu nào cho bạn biết rằng người dùng sẵn sàng xem quảng cáo</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### So sánh các phương thức sự kiện trong ứng dụng
 
@@ -181,6 +189,8 @@ Mức độ chi tiết hợp nhất cho doanh thu quảng cáo hoạt động nh
 
 </Accordion>
 
+<div id="ad-revenue-data" />
+
 ## Dữ liệu doanh thu quảng cáo
 
 Dữ liệu doanh thu quảng cáo có sẵn qua bảng điều khiển AppsFlyer và báo cáo dữ liệu thô.
@@ -204,6 +214,8 @@ Phân bổ doanh thu quảng cáo có sẵn như sau:
   * Bảng điều khiển: Hoạt động
   * Dữ liệu thô về doanh thu quảng cáo
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Bảng điều khiển tổng quan - báo cáo hiệu suất hợp nhất**
 
 [![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
@@ -220,6 +232,8 @@ Trong Bảng điều khiển hoạt động:
 
 * Giá trị bao gồm cả doanh thu là dựa trên ngày hoạt động. Xem <Anchor target="_blank" href="/marketers/vi/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">So sánh giữa LTV và dữ liệu hoạt động</Anchor>.
 * **Số hành động Trung bình trên Mỗi Người dùng** cho biết xu hướng tương tác của người dùng với các quảng cáo được hiển thị trong ứng dụng.
+
+<div id="examples" />
 
 > 📄 **Ví dụ:**
 >
@@ -310,6 +324,8 @@ Các trường trong báo cáo doanh thu quảng cáo được điền:
   * **Ngữ cảnh:** Các trường có ý nghĩa tương tự trong các báo cáo dữ liệu thô khác. Ví dụ: tên sự kiện, giá trị sự kiện, đơn vị tiền tệ.
 * Do việc phân bổ sự kiện cho nguồn truyền thông đã mang đến người dùng. Có nghĩa là các trường này được sao chép từ sự kiện chuyển đổi đã mang đến người dùng. Ví dụ: nguồn truyền thông và chiến dịch. Các trường này không được liệt kê trong bảng sau.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### Các trường được điền bằng doanh thu quảng cáo
 
 | api\_name | Tên trường | Loại trường | Mô tả |
@@ -325,6 +341,8 @@ Các trường trong báo cáo doanh thu quảng cáo được điền:
 | monetization\_network | Mạng Kiếm tiền | Cụ thể | Mạng gửi quảng cáo |
 | impressions | Lượt hiển thị | Cụ thể | Số lần người dùng nhìn thấy quảng cáo |
 | mediation\_network | Mạng mediation | Cụ thể | Mạng mediation báo cáo sự kiện cho AppsFlyer |
+
+<div id="fields-by-network" />
 
 #### Trường theo mạng
 
@@ -374,6 +392,8 @@ Tính cập nhật của dữ liệu tùy thuộc vào loại tích hợp và ph
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 

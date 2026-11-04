@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **Khái quát:** Các trường trong một số báo cáo dữ liệu thô bị hạn chế do các giới hạn về quyền riêng tư. Trong các trường hợp khác, đối tác yêu cầu biên tập lại nguồn truyền thông khi chia sẻ đăng lại lên nền tảng của bên thứ ba. Bài viết này mô tả các hạn chế và ý nghĩa của chúng.
 
+<div id="raw-data-restriction" />
+
 ## Hạn chế dữ liệu thô
 
 AppsFlyer hạn chế tính khả dụng của một số trường trong báo cáo dữ liệu thô để duy trì quyền riêng tư người dùng. Điều này phù hợp với cài đặt <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">AAP</Anchor> của nhà quảng cáo hoặc theo chính sách chia sẻ dữ liệu của các mạng quảng cáo để cung cấp dữ liệu. Các hạn chế khác nhau tùy thuộc vào loại báo cáo và lý do hạn chế. Các hạn chế ảnh hưởng đến dữ liệu thô được cung cấp bằng <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">các công cụ phân phối dữ liệu thô</Anchor>.
 
+<div id="media-source-restrictions" />
+
 ### Hạn chế nguồn truyền thông
 
 Bảng sau đây liệt kê các hạn chế đối với mỗi nguồn truyền thông.
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -48,6 +54,8 @@ Bảng sau đây liệt kê các hạn chế đối với mỗi nguồn truyền
 | <span id="snapchat"></span>Snapchat | <ul><li>Bắt đầu từ ngày 1 tháng 3 năm 2023, không đưa các lượt gỡ cài đặt Snapchat vào báo cáo dữ liệu thô</li><li>Kể từ ngày 13 tháng 9 năm 2023, phân bổ lượt xem hết bị hạn chế. Dưới đây là các trường **được điền** vào các công cụ phân phối dữ liệu thô:<ul><li>Nguồn truyền thông (snapchat\_int)</li><li>Kênh</li><li>Loại tương tác được phân bổ (lượt hiển thị)</li><li>Thời gian tương tác được phân bổ (chỉ được báo cáo dưới dạng ngày - "dd/mm/yyyy")</li><li>Chiến dịch được báo cáo là *"restricted"*</li></ul></li></ul> |
 | <span id="tiktok-for-business"></span>TikTok dành cho Doanh nghiệp | <ul><li>Từ ngày 28 tháng 7 đến ngày 23 tháng 10 năm 2021, dữ liệu phân bổ lượt xem qua bị hạn chế.</li><li>Kể từ ngày 23 tháng 10 năm 2021, phân bổ lượt xem qua bị hạn chế. Dưới đây là các trường **được điền** vào các công cụ phân phối dữ liệu thô:<ul><li>Nguồn truyền thông (bytedanceglobal\_int và tiktokglobal\_int)</li><li>Kênh</li><li>Loại tương tác được phân bổ (lượt hiển thị)</li><li>Thời gian tương tác được phân bổ (chỉ được báo cáo dưới dạng ngày - "dd/mm/yyyy")</li><li>Chiến dịch được báo cáo là *"restricted"*</li></ul></li></ul> |
 | <span id="twitter"></span>Twitter | Trong một số trường hợp, Twitter không cho phép cung cấp dữ liệu thô trên nền tảng AppsFlyer. Trong những trường hợp này, sự kiện không xuất hiện trong báo cáo dữ liệu thô. |
+
+<div id="raw-data-context" />
 
 ### Ngữ cảnh dữ liệu thô
 
@@ -161,6 +169,8 @@ Khi hạn chế mã định danh, các trường được liệt kê trong bản
 
 </Accordion>
 
+<div id="faq" />
+
 ## Câu hỏi thường gặp
 
 <div id="what-events-are-restricted" />
@@ -181,6 +191,8 @@ Các sự kiện bị hạn chế, như được nêu chi tiết trong [bảng 
 **Ví dụ về báo cáo:** <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vScXJznEex0WwdCy78Bm8LtrhbCk1jNy14O_t7etrq5ab5v4CIEiInfFD4B1EsZCE-_w-dVRAxl_cu4/pub?output=csv">Dữ liệu thô bị hạn chế lượt cài đặt</Anchor> trong tập tin CSV. Các báo cáo dữ liệu thô khác được điền theo cách tương tự.
 
 </Accordion>
+
+<div id="how-does-the-restricted-media-source-impact-postbacks-sent-to-partners" />
 
 <div id="what-is-the-impact-on-postbacks-to-partners-when-the-media-source-is-restricted" />
 
@@ -213,6 +225,8 @@ Bài đăng lại cho các mạng quảng cáo được phân bổ được li�
 Dữ liệu liên quan đến lượt hỗ trợ được coi là dữ liệu phân bổ và không có sẵn.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

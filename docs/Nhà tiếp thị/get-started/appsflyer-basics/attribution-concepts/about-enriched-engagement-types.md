@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Sơ lược:** Mặc dù các loại quảng cáo hiện nay đã trở nên tinh vi và phức tạp, nhưng phạm vi báo cáo vẫn rất hẹp, chỉ tập trung vào việc phân bổ lượt xem hết và lượt nhấp. Mô hình tương tác phong phú giúp thay đổi tình trạng đó bằng cách phản ánh toàn bộ mức độ tương tác và chủ ý của người dùng khi xem hoặc tương tác với một mục quảng cáo.
 
+<div id="introduction" />
+
 ## Giới thiệu
 
 Trong vài năm qua, các loại quảng cáo sáng tạo mới như quảng cáo video có thể phát, có thể bỏ qua và video dạng ngắn đã được giới thiệu ra thị trường, cung cấp những phương thức mới để kết nối với người dùng. Các loại quảng cáo mới này khác biệt đáng kể so với các biểu ngữ tĩnh và các đoạn video chất lượng thấp trước đây cũng như mang đến cho các nhà quảng cáo khả năng và định dạng rộng hơn.
@@ -28,6 +30,8 @@ Trong vài năm qua, các loại quảng cáo sáng tạo mới như quảng cá
 Tuy nhiên, mặc dù các loại quảng cáo đã trở nên tinh vi, phức tạp hơn và độ tương tác cao hơn, nhưng phạm vi báo cáo vẫn rất hẹp, chỉ tập trung vào việc phân bổ lượt xem hết và lượt nhấp. Các loại tương tác khác nhau có trọng số, mức độ ý định và tác động khác nhau, nhưng các phương pháp đo lường hiện tại đã bỏ qua thực tế mới này. Đương nhiên, các mạng quảng cáo muốn đảm bảo rằng mức độ ý định và mức độ tương tác được thể hiện rõ nhất có thể, điều này đã dẫn đến việc thiếu tiêu chuẩn hóa trên toàn hệ sinh thái. Điều này cuối cùng khiến các nhà quảng cáo chỉ hiểu được một phần về hiệu suất chi tiêu cho quảng cáo của họ.
 
 Phối hợp với các mạng hàng đầu, AppsFlyer đang giới thiệu một tiêu chuẩn tương tác mới để mang lại sự tin tưởng và minh bạch trong toàn bộ hệ sinh thái. Mô hình tương tác phong phú phản ánh toàn bộ mức độ tương tác và chủ ý của người dùng khi xem hoặc tương tác với một mục quảng cáo, từ tiếp xúc tạm thời đến phản hồi trực tiếp. Khuôn khổ giúp này đảm bảo các tiêu chuẩn này được lưu giữ trong toàn bộ hệ sinh thái đối tác của AppsFlyer và hơn thế nữa. Thông qua Mô hình tương tác phong phú, nhà quảng cáo có thể đảm bảo có được bức tranh tổng quan và tiêu chuẩn cao về hiệu suất chi tiêu cho quảng cáo, đồng thời có thể tận dụng những thông tin chi tiết này để cải thiện việc phân bổ ngân sách và tăng ROAS.
+
+<div id="what-are-enriched-engagement-types" />
 
 ## Mô hình tương tác phong phú
 
@@ -45,6 +49,8 @@ Sau đây là danh sách các loại tương tác mới:
 | <span id="view"></span>view | Lượt xem quảng cáo là khi quảng cáo được hiển thị và lượt hiển thị diễn ra. |
 | <span id="listening"></span>listening | Lượt nghe là khi người dùng nghe quảng cáo âm thanh, chẳng hạn như quảng cáo podcast. |
 
+<div id="eet-attribution-priority-and-lookback-window" />
+
 ## **Ưu tiên phân bổ EET và khoảng thời gian xem lại**
 
 Khung Loại tương tác phong phú không ảnh hưởng đến mức độ ưu tiên phân bổ loại tương tác. Do đó, tỷ lệ cài đặt và chuyển đổi của bạn dự kiến sẽ không bị ảnh hưởng khi giới thiệu EET.
@@ -56,6 +62,8 @@ Bảng dưới đây chỉ định <Anchor target="_blank" href="/marketers/vi/d
 Khi một loại tương tác không được báo cáo, mức độ ưu tiên mặc định sẽ được đặt (*click\_to\_app* cho lượt nhấp, *view* cho lượt hiển thị).
 
 ** Cửa sổ lookback cho `engaged_click` và `engaged_view` chỉ có thể được đặt cho các mạng không phải SRN.
+
+<div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## Những mạng nào có thể báo cáo EET cho AppsFlyer?
 
@@ -191,6 +199,8 @@ Danh sách mạng được phép bao gồm các đối tác có thể báo cáo 
 
 </Accordion>
 
+<div id="set-lookback-windows-for-engaged-clicks-and-engaged-views" />
+
 ## Đặt khoảng thời gian xem lại cho các nhấp chuột tương tác và chế độ xem tương tác
 
 **Để đặt khoảng thời gian xem lại cho các nhấp chuột đã tương tác và chế độ xem đã tương tác:**
@@ -199,13 +209,19 @@ Danh sách mạng được phép bao gồm các đối tác có thể báo cáo 
 2. Chọn đối tác tích hợp.
 3. Đặt khoảng thời gian xem lại cho việc phân bổ lượt xem hết và lượt nhấp đã tương tác.
 
+   <div id="note-1" />
+
    > 📘 **Lưu ý:**
    >
    > Cửa sổ xem lại nhấp chuột và xem tương tác luôn được đặt trong đối tác **Tab Tích hợp**, trái ngược với cửa sổ xem qua và xem qua lookback, có thể được đặt trên các liên kết phân bổ.
 
 4. Nhấp vào **Save integration**.
 
+<div id="view-and-analyze-eet-data" />
+
 ## Xem và phân tích dữ liệu EET
+
+<div id="raw-data-reports" />
 
 ### Báo cáo dữ liệu thô
 
@@ -219,6 +235,8 @@ Các trường hợp dưới đây sẽ dẫn đến trường mới trong các 
 * Khi `af_engagement_type` không được gửi hoặc gửi với giá trị trống.
 
 Để xem loại tương tác trong báo cáo dữ liệu thô, các nhà quảng cáo cần chọn các trường này trong sản phẩm dữ liệu thô có liên quan (loại tương tác và loại tương tác của người đóng góp không được chọn theo mặc định).
+
+<div id="dashboards" />
 
 ### Bảng điều khiển
 

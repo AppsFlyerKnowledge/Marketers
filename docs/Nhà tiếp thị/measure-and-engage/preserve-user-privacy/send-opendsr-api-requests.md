@@ -26,6 +26,8 @@ x-zendesk:
 
 **Tuyên bố của luật sư chúng tôi:** *Không nội dung nào được nêu trong tài liệu này là thông tin tư vấn pháp lý. Những nội dung này chỉ nhằm cung cấp thông tin và sự tiện lợi cho bạn. Bạn nên hợp tác chặt chẽ với các cố vấn pháp lý và các cố vấn chuyên môn khác để xác định chính xác cách thức mà GDPR, CCPA hay bất kỳ luật nào khác có khả năng có hoặc không áp dụng đối với bạn.* Mối quan hệ riêng tư giữa bạn và AppsFlyer được điều chỉnh bởi <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">Chính sách Quyền riêng tư về Dịch vụ của AppsFlyer</Anchor>. Đối với bất kỳ câu hỏi nào liên quan đến Chính sách Quyền riêng tư về Dịch vụ này hoặc để liên hệ với nhân viên bảo vệ dữ liệu của chúng tôi, vui lòng gửi thư cho chúng tôi theo địa chỉ [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Theo mục đích của Điều 27 của Quy định chung về bảo vệ dữ liệu, đại diện trong Liên minh Châu Âu của AppsFlyer là AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Đức (liên hệ [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 
+<div id="privacy-regulations" />
+
 ## Quy định về quyền riêng tư
 
 Trong bài viết này, các tham chiếu đến các quy định về quyền riêng tư sẽ bao gồm các quy định được liệt kê trong bảng sau đây.
@@ -39,6 +41,8 @@ Trong bài viết này, các tham chiếu đến các quy định về quyền r
 
 Các thuật ngữ như quy định về quyền riêng tư, GDPR, CCPA, LGPD và PDPA được sử dụng có thể thay thế cho nhau trong bài viết này.
 
+<div id="the-opendsr-initiative" />
+
 ### Sáng kiến OpenDSR
 
 Để giải quyết và quản lý các yêu cầu do Chủ thể Dữ liệu gửi theo các quy định về quyền riêng tư, AppsFlyer, cùng với mParticle, Amplitude và Braze, đã khởi tạo giao thức OpenDSR (trước đây gọi là OpenGDPR).
@@ -47,6 +51,8 @@ OpenDSR là một khuôn khổ mã nguồn mở giúp tạo điều kiện cho h
 
 <Anchor target="_blank" href="https://www.appsflyer.com/company/newsroom/pr/opengdpr-initiative/">Tìm hiểu thêm về sáng kiến OpenDSR</Anchor>.
 
+<div id="definitions" />
+
 ### Các định nghĩa
 
 | Điều khoản DSR | Thuật ngữ AppsFlyer | Mô tả |
@@ -54,6 +60,8 @@ OpenDSR là một khuôn khổ mã nguồn mở giúp tạo điều kiện cho h
 | Chủ thể Dữ liệu | Người dùng Ứng dụng hoặc Người dùng cuối | Người dùng Ứng dụng là người dùng có dữ liệu được thu thập |
 | Người kiểm soát Dữ liệu | Chủ sở hữu Ứng dụng hoặc Nhà quảng cáo | Chủ sở hữu Ứng dụng xác định mục đích và phương tiện xử lý dữ liệu cá nhân. |
 | Người xử lý Dữ liệu | AppsFlyer và các đối tác của mình | AppsFlyer và các đối tác xử lý dữ liệu cá nhân thay mặt cho người kiểm soát dữ liệu |
+
+<div id="dsr-requirements" />
 
 ### Yêu cầu DSR
 
@@ -65,6 +73,8 @@ DSR quy định chi tiết các quyền bắt buộc của Chủ thể Dữ li�
 | **Tính khả chuyển** | Người dùng Ứng dụng cần nhận tất cả dữ liệu cá nhân của họ theo định dạng có cấu trúc, thường được sử dụng và có thể đọc được – chẳng hạn như tệp CSV. | Chủ sở hữu Ứng dụng nhận được một bản sao dữ liệu cá nhân đã xử lý của Người dùng Ứng dụng. |
 | **Quyền hiệu chỉnh** | Cho phép Người dùng Ứng dụng sửa dữ liệu của họ nếu họ thấy không chính xác hoặc không trung thực. Chủ sở hữu Ứng dụng được yêu cầu phải xóa hoặc sửa dữ liệu không chính xác hoặc không đầy đủ. | <ul><li>AppsFlyer xóa dữ liệu của Người dùng Ứng dụng nhận được trước ngày yêu cầu *hiệu chỉnh*.</li><li>Dữ liệu nhận được sau đó được AppsFlyer ghi lại.</li></ul> |
 | **Quyền xóa** | Quyền xóa yêu cầu Chủ sở hữu Ứng dụng xóa dữ liệu cá nhân trong vòng 14 ngày kể từ ngày nhận được yêu cầu. | Dữ liệu bị xóa |
+
+<div id="appsflyer-gdpr-requests-api" />
 
 ## GDPR của AppsFlyer Yêu cầu API
 
@@ -81,6 +91,8 @@ Chủ sở hữu Ứng dụng cần thực hiện các thay đổi về giao di�
 
 <Accordion title="1. Yêu cầu GDPR">
 
+<div id="gdpr-request-flow" />
+
 ### Quy trình yêu cầu GDPR
 
 Các loại yêu cầu GDPR, quyền truy cập, tính khả chuyển, quyền xóa và hiệu chính, có cùng một luồng:
@@ -96,6 +108,8 @@ Các loại yêu cầu GDPR, quyền truy cập, tính khả chuyển, quyền x
 
    **Lưu ý:** Thời hạn 14 ngày này bắt đầu sau khi thời gian ***chờ xử lý*** 48 giờ kết thúc. Do đó, tổng thời gian để thực hiện yêu cầu là 16 ngày kể từ khi Chủ sở hữu Ứng dụng gửi yêu cầu đến AppsFlyer.
 
+<div id="gdpr-request-format" />
+
 ### Định dạng yêu cầu GDPR
 
 API Yêu cầu GDPR có thể được gửi qua HTTP POST tới điểm cuối sau:
@@ -106,9 +120,13 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 
 Đối với việc cấp quyền API, hãy sử dụng cùng mã thông báo API V2 như đối với API Pull. Người dùng quản trị có thể <Anchor target="_blank" href="/marketers/vi/docs/managing-appsflyer-tokens#truy-xuất-mã-thông-báo-api">truy xuất mã thông báo</Anchor> từ trang mã thông báo API trong bảng điều khiển. Thêm mã thông báo vào tiêu đề yêu cầu như sau: `'Authorization': 'Bearer %AuthTokenV2%'`
 
+<div id="parameters" />
+
 #### Tham số
 
 <table><thead><tr><th><strong>Tên Thuộc tính</strong></th><th><strong>Bắt buộc</strong></th><th><strong>Mô tả</strong></th></tr></thead><tbody><tr><td><strong>subject_request_id</strong></td><td>Có</td><td>Chuỗi UUID v4. Được Người kiểm soát tạo tại thời điểm gửi yêu cầu tới Người xử lý. Sau đó, chuỗi này có thể được sử dụng để kiểm tra trạng thái của yêu cầu, cập nhật hoặc hủy bỏ yêu cầu.</td></tr><tr><td><strong>subject_request_type</strong></td><td>Có</td><td><p>Giá trị chuỗi đại diện cho loại Yêu cầu GDPR. Các giá trị được hỗ trợ:</p><ul><li>xóa</li><li>khả năng di chuyển</li><li>truy cập</li><li>hiệu chỉnh</li></ul></td></tr><tr><td><strong>subject_identities</strong></td><td>Có</td><td><ul><li>Một chuỗi đối tượng nhận dạng xác định danh tính của người yêu cầu (xem bên dưới).</li><li>Mỗi yêu cầu chỉ có thể chứa một danh tính chủ thể.</li></ul></td></tr><tr><td><strong>submitted_time</strong></td><td>Có</td><td><ul><li>Chuỗi ngày RFC 3339 về thời gian yêu cầu ban đầu của chủ thể dữ liệu</li><li>Nhãn thời gian theo giờ UTC</li></ul></td></tr><tr><td><strong>property_id</strong></td><td>Có</td><td><p>Chuỗi đại diện cho ứng dụng dành cho thiết bị di động trong phạm vi của yêu cầu</p><p><strong>Ví dụ</strong>:</p><ul><li> iOS: id123456789</li><li> <strong>Android</strong>: com.example, com.publishers.name </li><li> <strong>Ứng dụng Android không có trên cửa hàng</strong>: com.publisher.name-channel<br/> <strong>Lưu ý</strong>  Trong một số trường hợp, chủ sở hữu ứng dụng ghi nhận phân bổ ngoài cửa hàng bằng cách sử dụng tên ứng dụng Android trên Google Play. Trong những trường hợp này, hãy sử dụng tên ứng dụng thông thường vì tên này sẽ hiển thị trong Bảng điều khiển.</li></ul></td></tr><tr><td><strong>phiên_bản_api</strong></td><td>Không</td><td>Chuỗi phiên bản đại diện cho phiên bản mong muốn của API yêu cầu GDPR</td></tr><tr><td><strong>status_callback_urls</strong> </td><td>Không, nhưng khuyến nghị</td><td><ul><li>Chuỗi tối đa 3 điểm cuối cho các lệnh gọi lại trạng thái sẽ được gửi đến các thay đổi trạng thái yêu cầu sau đây.</li><li>Chỉ <span>hỗ trợ các điểm cuối HTTPS.</span> </li><li><span>URL không hợp lệ bị từ chối.</span></li></ul></td></tr><tr><td rowspan="2"> <strong>platform</strong><br/><br/> </td><td>Không</td><td><p>Giá trị là một trong những nền tảng DSR được hỗ trợ:<br/><code>android</code>, <code>ios</code>, <code>web</code>, <code>windowsphone</code></p></td></tr><tr><td>Có</td><td><p>Đối với yêu cầu nền tảng CTV, PC hoặc Console, sẽ tính cả bất kỳ nền tảng nào sau đây: </p><p><span> </span><code>nativepc</code><span>, </span><code>playstation</code><span>, </span><code>roku</code><span>, </span><code>steam</code><span>, </span><code>webos</code><span>, <br/></span><code>vidaa</code><span>,</span><code>tizen</code><span>, </span><code>smartcast</code><span>, </span><code>chatgpt</code><span>, </span><code>battlenet</code><span>, <br/></span><code>quest</code><span>, </span><code>switch</code><span>, </span><code>xbox</code><span>, </span><code>epic</code></p></td></tr></tbody></table>
+
+<div id="subject_identities-objects" />
 
 #### Đối tượng Subject\_identities
 
@@ -117,6 +135,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests
 | identity\_type | Có | <ul><li>Loại danh tính trong định dạng chuỗi cho các nền tảng `android`, `ios`, `web`, `windowsphone` là bất kỳ loại nào sau đây:<ul><li>ios\_advertising\_id</li><li>android\_advertising\_id</li><li>fire\_advertising\_id</li><li>microsoft\_advertising\_id</li><li>appsflyer\_id</li></ul></li></ul><ul><li>Loại nhận dạng ở định dạng chuỗi cho nền tảng `CTV`, `PC` và `Console`:<ul><li>appsflyer\_id</li><li>customer\_user\_id (CUID)</li></ul></li></ul><ul><li>Ví dụ: `android_advertising_id`</li></ul> |
 | identity\_value | Có | <ul><li>Định dạng: Chuỗi</li><li>Ví dụ: "a7551968-d5d6-44b2-9831-815ac9017798"</li></ul> |
 | identity\_format | Có | <ul><li>Phương thức được sử dụng để mã hóa identity\_value: chỉ hỗ trợ giá trị `chưa xử lý`:</li><li>Ví dụ: "chưa xử lý"</li></ul> |
+
+<div id="example-gdpr-erasure-request" />
 
 ### Ví dụ: yêu cầu xóa GDPR
 
@@ -174,6 +194,8 @@ curl --location --request POST 'https://hq1.appsflyer.com/api/gdpr/v1/opendsr_re
  ]
 }'
 ```
+
+<div id="zd-gdpr-erasure-request-code-example" />
 
 <div id="gdpr-erasure-request-code-example" />
 
@@ -351,6 +373,8 @@ Mỗi yêu cầu GDPR đã gửi đi, sau này có thể được truy vấn v�
 3. ***đã hoàn thành*** - Yêu cầu đã được hoàn thành
 4. ***đã hủy*** - Yêu cầu đã bị hủy
 
+<div id="status-request-format" />
+
 ### Định dạng yêu cầu trạng thái
 
 Yêu cầu trạng thái có thể được gửi qua HTTP GET tới điểm cuối dưới đây:
@@ -358,6 +382,8 @@ Yêu cầu trạng thái có thể được gửi qua HTTP GET tới điểm cu�
 ```http
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
+
+<div id="status-response-example" />
 
 ### Ví dụ về phản hồi trạng thái
 
@@ -374,6 +400,8 @@ kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j083461xLZ+mUloo3tpsmyI
  "request_status":"pending",
 }
 ```
+
+<div id="status-postbacks" />
 
 ### Postback trạng thái
 
@@ -396,6 +424,8 @@ X-OpenGDPR-Signature: kiGlog3PdQx+FQmB8wYwFC1fekbJG7Dm9WdqgmXc9uKkFRSM4uPzylLi7j
 "Request_status":"pending"
 }
 ```
+
+<div id="validate-postback" />
 
 ### Xác thực đăng lại
 
@@ -440,6 +470,8 @@ Báo cáo được tạo sẽ khả dụng trong mười bốn ngày kể từ t
 https://hq1.appsflyer.com/api/gdpr/v1/discovery
 ```
 
+<div id="discovery-response-example" />
+
 ### Ví dụ về yêu cầu phát hiện
 
 ```http
@@ -474,6 +506,8 @@ Có thể hủy yêu cầu GDPR, dựa trên `subject_request_id`, nhưng chỉ
 https://hq1.appsflyer.com/api/gdpr/v1/opendsr_requests/<req_id>
 ```
 
+<div id="cancellation-response" />
+
 ### Phản hồi Hủy
 
 Khi nhận được yêu cầu hủy GDPR, AppsFlyer sẽ trả về phản hồi HTTP có mã trạng thái 202 và một số thông số khác.
@@ -487,6 +521,8 @@ Sau khi đã hủy bỏ yêu cầu, AppsFlyer sẽ gửi một đăng lại vớ
 <Accordion title="6. API Kiểm tra yêu cầu GDPR">
 
 API này của AppsFlyer là một API kiểm tra của API Yêu cầu GDPR.
+
+<div id="how-does-it-work" />
 
 ### Nó hoạt động như thế nào?
 
@@ -562,6 +598,8 @@ Người dùng quản trị có thể truy cập các yêu cầu GDPR được g
 
 Thông báo lỗi và mã trả về HTTP cho API GDPR được trình bày chi tiết trong phần này.
 
+<div id="gdpr-api-return-codes" />
+
 #### Mã trả về cho API GDPR
 
 | Mã trả về | Mô tả |
@@ -570,11 +608,15 @@ Thông báo lỗi và mã trả về HTTP cho API GDPR được trình bày chi 
 | 202 | Đã nhận yêu cầu hủy |
 | 400 | Lỗi yêu cầu. Phần nội dung có chứa mã lỗi và thông báo như được liệt kê trong bảng bên dưới. |
 
+<div id="http-return-code-400---bad-request" />
+
 ### Mã trả về HTTP 400 - lỗi yêu cầu
 
 Thông báo có mã trả về là 400 có chứa JSON kèm theo mã lỗi và thông báo.
 
 `{ "error":{ "code":400, "af_gdpr_code": "%AF error code%", "message":"%error message text%"}}`
+
+<div id="return-code-400-bad-request-messages" />
 
 #### Thông báo lỗi yêu cầu có mã trả về 400
 
@@ -606,6 +648,8 @@ Thông báo có mã trả về là 400 có chứa JSON kèm theo mã lỗi và t
 | e511 | Đã xảy ra sự cố nội bộ, vui lòng chờ 60 phút và thử lại. Nếu sự cố vẫn tiếp diễn, vui lòng liên hệ bộ phận hỗ trợ AppsFlyer. support@AppsFlyer.com |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Đặc điểm và hạn chế
 

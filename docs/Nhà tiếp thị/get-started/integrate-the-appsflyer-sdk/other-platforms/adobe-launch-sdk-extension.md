@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **Sơ lược:** Gửi dữ liệu đến Adobe Launch SDK và AppsFlyer SDK chỉ bằng một lần triển khai Tiện ích mở rộng AppsFlyer Adobe Launch SDK.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Adobe Launch SDK là một phần không thể thiếu của Nền tảng Adobe Experience. Nền tảng Adobe Experience giúp các doanh nghiệp thu thập, hợp nhất và phân tích dữ liệu từ nhiều ứng dụng và nền tảng. Nền tảng này giúp chủ doanh nghiệp và nhà phát triển hiểu rõ hơn về hành vi của khách hàng để tối ưu hóa trải nghiệm và phân phối nội dung. Nếu ứng dụng của bạn triển khai cả Adobe Launch SDK và AppsFlyer SDK, bạn có thể gửi dữ liệu đến cả hai chỉ bằng một lần triển khai **Tiện ích mở rộng AppsFlyer Adobe Launch SDK**. Điều này giúp bạn đơn giản hóa tổng thể quá trình phát triển cũng như giúp cơ sở trở nên gọn gàng và có thể duy trì.
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > Nếu bạn đang sử dụng tiện ích mở rộng Adobe Launch thì không cần tích hợp Adobe Analytics <Anchor target="_blank" href="/marketers/vi/docs/adobe-analytics-integration-with-appsflyer">tiêu chuẩn.</Anchor>
+
+<div id="prerequisites" />
 
 ## Điều kiện tiên quyết
 
@@ -58,6 +64,8 @@ Một vài điểm cần thực hiện trước khi tích hợp Tiện ích mở
 * Đối với iOS - ID ứng dụng là ID iTunes của ứng dụng không có tiền tố *id* ví dụ: 123456748.
 
 </Accordion>
+
+<div id="step-1-configuring-adobe-launch" />
 
 ## Bước 1: Định cấu hình Adobe Launch
 
@@ -91,6 +99,8 @@ Cài đặt các tiện ích mở rộng sau vào Adobe Launch:
 * Adobe Profile - cho phép SDK lưu trữ dữ liệu vào hồ sơ phía máy khách.
 * Adobe Mobile Core - cho phép cấu hình SDK của thiết bị di động và cung cấp quyền truy cập vào các sự kiện và điều kiện vòng đời mặc định.
 
+<div id="installing-adobe-analytics-extension" />
+
 #### Cài đặt tiện ích mở rộng Adobe Analytics
 
 1. Đăng nhập vào Adobe Analytics.
@@ -102,6 +112,8 @@ Cài đặt các tiện ích mở rộng sau vào Adobe Launch:
 7. Trong ***Report Suites***, chỉ định bộ báo cáo mà bạn đã tạo ở bước 2.
 8. Nhấp vào ***Save***.
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### Cài đặt Tiện ích mở rộng AppsFlyer SDK
 
 1. Chọn ***Extensions*** lại lần nữa.
@@ -111,6 +123,8 @@ Cài đặt các tiện ích mở rộng sau vào Adobe Launch:
 5. Bật tùy chọn ***Send attribution data to Adobe Analytics***. Lưu ý rằng có một số <Anchor target="_blank" href="/marketers/vi/docs/user-level-data-retention">hạn chế về việc chia sẻ dữ liệu cấp người dùng với các nền tảng phân tích của bên thứ 3</Anchor>.
 6. Nhấp vào ***Save***.
 
+<div id="install-profile-and-mobile-core-extension" />
+
 #### Cài đặt tiện ích mở rộng Profile và Mobile Core
 
 1. Chọn ***Extensions*** lại lần nữa.
@@ -119,6 +133,8 @@ Cài đặt các tiện ích mở rộng sau vào Adobe Launch:
    * Khi cài đặt Mobile Core, chỉ cần lưu nguyên trạng tiện ích mở rộng. Không cần chỉ định ***Máy chủ Experience Cloud***.
 
 </Accordion>
+
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
 
 ## Bước 2: Triển khai Tiện ích mở rộng AppsFlyer Adobe SDK
 
@@ -161,6 +177,8 @@ Làm theo hướng dẫn trong phần này để triển khai Tiện ích mở r
 <Accordion title="2.3 Thêm liên kết giới thiệu cài đặt Android vào ứng dụng của bạn">
 
 Liên kết giới thiệu cài đặt Android cải thiện độ chính xác phân bổ, bảo vệ khỏi gian lận cài đặt và hơn thế nữa. Liên kết này được hỗ trợ từ Android SDK của AppsFlyer phiên bản 4.8.6.
+
+<div id="note-1" />
 
 > 📘 **Lưu ý**
 >
@@ -213,6 +231,8 @@ Nếu bạn đang sử dụng ProGuard và muốn sử dụng API liên kết gi
 
 Thêm quyền truy cập giúp tăng tỷ lệ <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model#probabilistic-modeling">Phân bổ mô hình xác suất</Anchor>. Nó cũng cho phép SDK gửi thêm dữ liệu như Wifi và dữ liệu mạng của nhà mạng. Bạn có thể tìm thấy dữ liệu này trong <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">báo cáo dữ liệu thô</Anchor> và sử dụng nó để phân tích và tối ưu hóa các chiến dịch.
 
+<div id="add-required-permissions" />
+
 #### Thêm Quyền truy cập Bắt buộc
 
 1. Thêm các quyền truy cập sau vào AndroidManifest.xml:  
@@ -227,9 +247,13 @@ Thêm quyền truy cập giúp tăng tỷ lệ <Anchor target="_blank" href="/ma
 
 </Accordion>
 
+<div id="using-the-adobe-sdk-extension" />
+
 ## Sử dụng tiện ích mở rộng Adobe SDK
 
 Đến đây, bạn có thể bắt đầu sử dụng tiện ích mở rộng Adobe SDK để gửi dữ liệu đến Adobe và AppsFlyer.
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -353,6 +377,8 @@ Trong AppDelegate.m, hãy triển khai mã sau:
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## Kết nối dữ liệu chuyển đổi AppsFlyer
 
 Dữ liệu chuyển đổi được gửi cùng với các sự kiện đến nền tảng Adobe. Các biến này cho phép bạn áp dụng logic và quy tắc đối với các phương diện, chỉ số hoặc bộ lọc báo cáo.
@@ -377,6 +403,8 @@ Xem bảng sau để ánh xạ các biến ngữ cảnh AppsFlyer:
 | Thời gian Nhấp chuột của AppsFlyer | appsflyer.click\_time |
 | Chi phí Ban đầu của AppsFlyer | appsflyer.orig\_cost |
 | Chiến dịch AppsFlyer | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### Sử dụng dữ liệu chuyển đổi được AppsFlyer ánh xạ cho Giải tích và Phân tích
 

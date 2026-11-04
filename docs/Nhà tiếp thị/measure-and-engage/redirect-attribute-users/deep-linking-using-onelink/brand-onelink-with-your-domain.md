@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## Tên miền có thương hiệu
 
 * Tên miền có Thương hiệu được sử dụng để gắn thương hiệu trong các đường dẫn phân bổ bằng thương hiệu và tên miền của bạn. Ví dụ như được minh họa trong hình trước:
@@ -38,6 +40,8 @@ x-zendesk:
   * Đẩy mạnh nhận diện thương hiệu: Thương hiệu của bạn đánh dấu các chiến dịch của bạn, thay vì một liên kết chung.
   * Cho phép các email tránh bị gắn cờ là thư rác do liên kết không khớp với email người gửi.
 
+<div id="principles-of-implementation" />
+
 ### Nguyên tắc thực hiện
 
 Triển khai Tên miền có Thương hiệu bằng cách liên kết tên miền đầy đủ được xác định trong Hệ thống Tên Miền (DNS) của bạn với tên miền phụ OneLink (đích đến CNAME của AppsFlyer). Quá trình này được thực hiện bằng cách sử dụng cài đặt tiêu chuẩn trong DNS của bạn và thiết lập Tên miền có Thương hiệu trong AppsFlyer. Ngoài ra, bạn sẽ cần thực hiện một số thay đổi nhỏ trong ứng dụng của mình để hỗ trợ Tên miền có Thương hiệu.
@@ -45,6 +49,8 @@ Triển khai Tên miền có Thương hiệu bằng cách liên kết tên miề
 Bạn sẽ cần sự hỗ trợ từ quản trị viên DNS, thường là thành viên trong nhóm CNTT hoặc nhà cung cấp dịch vụ lưu trữ DNS của bạn và nhà phát triển ứng dụng.
 
 Nhiều tên miền đầy đủ có thể được liên kết với một tên miền phụ OneLink. Điều này có nghĩa là bạn có thể có nhiều thương hiệu sử dụng cùng một tên miền phụ OneLink.
+
+<div id="setting-up-branded-domains" />
 
 ### Thiết lập Tên miền có Thương hiệu
 
@@ -56,6 +62,8 @@ Hoàn thành danh sách hành động để thiết lập Tên miền có Thươ
 | 2 | Nhà phát triển | [Thiết lập Tên miền có Thương hiệu trong ứng dụng](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Thực hiện những thay đổi nhỏ đối với mã ứng dụng. |
 | 3 | Nhà tiếp thị | [Sử dụng và thử nghiệm Tên miền có Thương hiệu](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | Khi cần thiết | Nhà tiếp thị | [Chỉnh sửa và xóa Tên miền có Thương hiệu](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### Quy trình
 
@@ -257,6 +265,8 @@ Việc chỉnh sửa cho phép bạn thay đổi ánh xạ của một tên mi�
 * Liên hệ với CSM AppsFlyer của bạn hoặc <Anchor target="_blank" href="hello@appsflyer.com">hello@appsflyer.com</Anchor>.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Khắc phục sự cố, đặc điểm và hạn chế
 

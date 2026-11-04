@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## Giới thiệu về tích hợp đối tác
 
 Tích hợp đối tác sẽ nhập một cách liền mạch và liên tục quảng cáo của bạn từ các chiến dịch chạy thông qua đối tác vào Tối ưu hóa Quảng cáo.
+
+<div id="data-availability" />
 
 ### Tính khả dụng của dữ liệu
 
@@ -41,6 +45,8 @@ Sau khi tích hợp đối tác được thêm vào:
 Bảng điều khiển Tối ưu hóa Quảng cáo hiển thị dữ liệu kết hợp từ tất cả các quy trình trên.
 
 **Lưu ý:** Để xem dữ liệu chi phí của AppsFlyer (chẳng hạn như ROAS), bắt buộc phải có <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview">gói đăng ký ROI360</Anchor>.
+
+<div id="media-partner-integrations" />
 
 ## Tích hợp đối tác truyền thông
 
@@ -404,6 +410,8 @@ Bạn phải có quyền tài khoản quảng cáo đối với các ứng dụn
 
 Khi đã đáp ứng các điều kiện tiên quyết ở trên, lúc đó bạn có thể [thêm tích hợp Unity vào bảng điều khiển Creative Optimization.](/docs/creative-optimization-partner-integrations#để-thêm-tích-hợp-unity-vào-bảng-điều-khiển-quảng-cáo)
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### Hướng dẫn truy xuất thông tin xác thực
 
 **Để lấy ID Khóa và Mã khóa bí mật:**
@@ -439,6 +447,8 @@ Thao tác này sẽ hiển thị ID Khóa và Khóa bí mật.
 
 5. Sao chép **ID cốt lõi của tổ chức**.
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **Để chọn vai trò tài khoản dịch vụ (tổ chức):**
 
 1. Trong bảng điều khiển Unity, nhấp vào **Administration**.
@@ -462,6 +472,8 @@ Thao tác này sẽ hiển thị ID Khóa và Khóa bí mật.
 5. Nhấp vào **Save**.
 
 **Lưu ý:** Nếu bạn không có quyền truy cập vào các vai trò này, vui lòng liên hệ với nhà quản lý sự thành công của khách hàng Unity hoặc gửi email tới [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) để yêu cầu các quyền bắt buộc.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Để thêm tích hợp Unity vào bảng điều khiển Quảng cáo:**
 
@@ -507,6 +519,8 @@ Bạn có thể liên hệ với người quản lý tài khoản của mình tr
 6. Nhấp vào **Save**.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Tích hợp đại lý
 

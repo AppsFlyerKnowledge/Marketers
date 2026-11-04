@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Khái quát:** Loại trừ người dùng hiện có khỏi chiến dịch thu hút người dùng (UA) để có được nhiều lượt cài đặt hơn với cùng ngân sách và cải thiện ROAS.
 
+<div id="issues-and-consequences" />
+
 ## Vấn đề và hậu quả
 
 Nếu ứng dụng của bạn nhận được lưu lượng truy cập từ nhiều nguồn truyền thông thì những nguồn này có thể nhắm mục tiêu vào người dùng hiện có của bạn trong các chiến dịch UA của nguồn đó.
@@ -39,9 +41,13 @@ Hiệu suất chiến dịch có thể bị ảnh hưởng vì những lý do sa
 
 <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns#what-is-srn-mistargeting">Nhắm sai mục tiêu SRN</Anchor> là một vấn đề tương tự và rất phổ biến về hiệu suất. Vấn đề quan trọng này có thể xảy ra nếu cả chiến dịch UA và nhắm mục tiêu lại của bạn đều có cùng SRN. <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns#việc-nhắm-sai-mục-tiêu-có-phải-là-vấn-đề">Tìm hiểu thêm</Anchor>
 
+<div id="solutions" />
+
 ## Giải pháp
 
 Các giải pháp này đưa ra cách cập nhật mạng quảng cáo để loại trừ người dùng hiện có khỏi các chiến dịch UA.
+
+<div id="manual-update" />
 
 ### Cập nhật thủ công
 
@@ -53,6 +59,8 @@ Thu thập dữ liệu thô về lượt cài đặt cấp người dùng của 
 * Sử dụng Yêu cầu API Pull dữ liệu thô định kỳ
 * Sử dụng API Push để tiến hành thu thập theo thời gian thực
 * Nhận dữ liệu chuyển đổi từ SDK
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >

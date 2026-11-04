@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Khái quát:** Bắt đầu với sự phát hành rộng rãi của iOS 14.5+ và việc thực thi ATT của Apple, nhà quảng cáo sử dụng khung Quyền riêng tư Nâng cao Hợp nhất (AAP) để kiểm soát tính khả dụng của dữ liệu phân bổ cấp người dùng từ nền tảng.
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## Khung Quyền riêng tư Nâng cao Hợp nhất (AAP)
 
 Khung Quyền riêng tư Nâng cao Hợp nhất (AAP) của AppsFlyer ngăn chặn việc theo dõi trên các ứng dụng và trang web thuộc sở hữu của các công ty khác nhau và khả năng nhận dạng duy nhất một người dùng hoặc thiết bị. AAP sử dụng các mức độ quyền riêng tư của Apple App Tracking Transparency làm điểm chuẩn tối thiểu cho các ngưỡng bảo vệ quyền riêng tư của mình.
@@ -35,6 +37,8 @@ Khuôn khổ này giúp cho các nhà quảng cáo khả năng kiểm soát tín
 Bắt đầu với  sự phát hành rộng rãi của iOS 14.5 và việc thực thi ATT của  Apple, nếu AAP được bật, dữ liệu phân bổ cấp người dùng cho những người dùng không đồng ý mà chạy iOS 14.5+ trở lên sẽ không có sẵn cho các nhà quảng cáo hoặc đối tác. 
 
 AAP không ảnh hưởng đến tính khả dụng của dữ liệu phân bổ hợp nhất và báo cáo phân tích đối với các nhà quảng cáo và đối tác.
+
+<div id="aap-impacted-features" />
 
 ### Các tính năng bị ảnh hưởng bởi AAP
 
@@ -52,6 +56,8 @@ Tính khả dụng của dữ liệu bị ảnh hưởng khi AAP được bật 
 * **Dữ liệu phân bổ và gian lận (Protect360):** <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions">Một số trường phân bổ bị hạn chế hoặc không khả dụng.</Anchor>
 * **Dữ liệu về lượt nhấp chuột, lượt hiển thị và lượt nhấp chuột bị chặn (gian lận):** <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions#identifier-restriction">Các mã định danh liên quan đến thiết bị và người dùng</Anchor> sẽ không khả dụng.
 * **Deferred deep linking**: Nếu bạn triển khai deferred deep linking trong truyền thông trả phí, hãy sử dụng <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">API liên kết sâu hợp nhất (UDL).</Anchor> Không thể sử dụng API cũ mà sử dụng GCD, trong bối cảnh người dùng không đồng ý. Trong trường hợp truyền thông sở hữu, deferred deep linking cho truyền thông sở hữu được hỗ trợ thông qua GCD và API deferred deep linking gần đây nhất.
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## Các nguyên tắc về tính khả dụng của dữ liệu trong Quyền riêng tư Nâng cao Hợp nhất
 
@@ -75,6 +81,8 @@ Các thuật ngữ đã xác định được sử dụng trong hình và các p
 
 Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng trên web và phải sử dụng thông số af\_media\_type=web hoặc af\_media\_type=app. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">tại đây</Anchor> để biết thêm thông tin chi tiết.
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### Tính khả dụng của dữ liệu truyền thông sở hữu và trả phí
 
 <div id="paid-media" />
@@ -82,6 +90,8 @@ Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng t
 <Accordion title="Truyền thông trả phí">
 
 Truyền thông trả phí bao gồm các mạng quảng cáo trên điện thoại di động có tích hợp trong nền tảng AppsFlyer với mạng mà các nhà quảng cáo cùng chạy chiến dịch. 
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### Tính khả dụng của dữ liệu truyền thông trả phí theo trạng thái ATT
 
@@ -99,6 +109,8 @@ Truyền thông sở hữu bao gồm các chiến dịch tiếp thị kỹ thu�
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## Kiểm soát AAP
 
 <div id="aap-central-switch" />
@@ -108,6 +120,8 @@ Truyền thông sở hữu bao gồm các chiến dịch tiếp thị kỹ thu�
 AAP là một nút chuyển đổi cấp ứng dụng kiểm soát cài đặt Quyền riêng tư Nâng cao đối với tất cả các đối tác của ứng dụng đã chọn. Nút chuyển đổi AAP nằm trên trang **App Settings**. Khi nút chuyển đổi AAP ở trạng thái bật, các nút chuyển đổi **Quyền riêng tư Nâng cao** đối với tất cả các đối tác của ứng dụng đã chọn sẽ tự động được bật và không sửa đổi được. Khi tắt, nhà quảng cáo có thể đi đến từng tích hợp đối tác riêng lẻ và bật **Quyền riêng tư Nâng cao**.
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+
+<div id="aap-enabled" />
 
 #### **AAP được bật**
 
@@ -161,6 +175,8 @@ Như đã nêu trước đây, cài đặt AAP ghi đè cài đặt Quyền riê
 
 <Accordion title="Mạng quảng cáo">
 
+<div id="postbacks-to-ad-network-partners" />
+
 #### **Đăng lại đến các đối tác mạng quảng cáo**
 
 <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks">AAP ảnh hưởng đến mạng quảng cáo</Anchor> liên quan đến dữ liệu được chia sẻ với chúng và phù hợp với các nguyên tắc AAP áp dụng đối với nhà quảng cáo trong bối cảnh của mạng quảng cáo. Dữ liệu được chia sẻ với các mạng quảng cáo là thông qua đăng lại, khác nhau giữa mạng quảng cáo được phân bổ và mạng quảng cáo không được phân bổ.
@@ -169,6 +185,8 @@ Quy tắc chia sẻ dữ liệu được mô tả áp dụng cho một mạng qu
 
 * AAP: Chuyển đổi cấp ứng dụng
 * AP: Chuyển đổi cấp độ đối tác
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **Đăng lại đến các mạng quảng cáo được phân bổ**
 
@@ -184,6 +202,8 @@ Các tình huống khác nhau về sự đồng ý của người dùng và lo�
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng trên web và phải sử dụng thông số af\_media\_type=web hoặc af\_media\_type=app. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">tại đây</Anchor> để biết thêm thông tin chi tiết.
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **Đăng lại cho các đối tác chưa được phân bổ**
 
@@ -242,6 +262,8 @@ Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng t
 3. Nhấp vào **Save** (Lưu).
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

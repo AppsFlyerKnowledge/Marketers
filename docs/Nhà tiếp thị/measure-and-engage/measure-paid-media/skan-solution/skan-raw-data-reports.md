@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Tổng quan:** Báo cáo dữ liệu thô SKAN chứa dữ liệu cấp hàng được tạo sau khi dịch và giải mã đăng lại mà AppsFlyer nhận được từ iOS, cũng như các lượt đăng lại SKAN thô. Dữ liệu có sẵn thông qua <Anchor target="_blank" href="/marketers/vi/docs/data-locker-for-marketers">Data Locker</Anchor> và <Anchor target="_blank" href="/marketers/vi/docs/push-api-streaming-raw-data">API Push</Anchor>. Nếu gói đăng ký của bạn gồm dữ liệu thô thì không cần đăng ký Data Locker.
 
+<div id="skan-raw-data-reports" />
+
 ## Báo cáo dữ liệu thô SKAN
 
 Nguyên tắc: 
@@ -59,6 +61,8 @@ Các loại báo cáo có sẵn là:
 
 * Các trường bổ sung không bắt buộc như campaign\_name, ad\_network\_campaign\_id, ip mà mạng quảng cáo không cung cấp.
 * Apple đã giữ lại dữ liệu do chính sách ngưỡng áp dụng của Apple. Các trường như source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
+
+<div id="skan-raw-data-report-format-and-content" />
 
 ## Định dạng và nội dung báo cáo dữ liệu thô SKAN
 
@@ -207,6 +211,8 @@ Các loại báo cáo có sẵn là:
 
 <Accordion title="Các loại định dạng trường dữ liệu thô">
 
+<div id="field-formats" />
+
 #### Định dạng trường
 
 | Tên định dạng | Mô tả |
@@ -237,6 +243,8 @@ Các loại báo cáo có sẵn là:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Thông tin bổ sung
 
 <div id="traits-and-limitations" />
@@ -257,6 +265,8 @@ Các loại báo cáo có sẵn là:
 | Quyền truy cập tài khoản của người dùng | Có sẵn. Theo quyền tài khoản |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

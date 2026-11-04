@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Locker cho phép bạn truyền dữ liệu đến giải pháp lưu trữ mà bạn đã chọn và sở hữu, cho dù đó là bộ chứa hay kho dữ liệu. Thiết lập dịch vụ đám mây bằng một trong các quy trình sau.
 
+<div id="bucket-cloud-storage" />
+
 ## Bộ lưu trữ đám mây có bộ chứa
 
 <div id="gcs-storage" />
@@ -197,6 +199,8 @@ Data Locker là giải pháp AppsFlyer để truyền dữ liệu đến bộ l�
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## Bộ lưu trữ đám mây kho dữ liệu
 
 <div id="bigquery" />
@@ -242,6 +246,8 @@ Kết nối Data Locker với tài khoản Snowflake của bạn. Bằng cách �
   2. Mỗi lần bạn chạy quy trình nhập, chỉ nhập những hàng có `_ingestion_time > max_ingestion_time`
 
 Hoàn thành các quy trình sau để kết nối Snowflake với Data Locker.
+
+<div id="snowflake-connector-procedures" />
 
 #### **Quy trình kết nối bộ kết nối Snowflake**
 

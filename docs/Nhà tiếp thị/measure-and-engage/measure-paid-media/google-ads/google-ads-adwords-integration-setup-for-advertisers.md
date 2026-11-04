@@ -43,6 +43,8 @@ Giao diện người dùng của Google Ads chỉ cho phép bạn định cấu 
 
 Để định cấu hình các loại chiến dịch cụ thể khác ngoài Chiến dịch Ứng dụng, hãy liên hệ với đại diện Google của bạn.
 
+<div id="configuring-google-ads-attribution-for-advertisers" />
+
 ## Định cấu hình phân bổ Google Ads cho nhà quảng cáo
 
 Để bắt đầu phân bổ các chiến dịch Google Ads với AppsFlyer, hãy làm theo các bước sau:
@@ -102,6 +104,8 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 8. Để bật phân bổ lượt cài đặt lại, hãy bật **Reinstall attribution**.  
    Không cần định cấu hình khung thời gian xem lại đối với phân bổ lượt cài đặt lại, vì các giá trị được lấy từ các tùy chọn cài đặt phân bổ lượt cài đặt.  
 
+   <div id="important" />
+
    > 🚧 **Quan trọng!**
    >
    > Dữ liệu chuyển đổi cài đặt lại được **trình bày dưới dạng session\_start** trên bảng điều khiển của Google Ads. Trong AppsFlyer, dữ liệu được phân bổ và được xem là phân bổ lại.
@@ -126,6 +130,8 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 13. Nhấp vào nút **Connect Google Ads** và đăng nhập vào tài khoản Google của bạn để nhận tất cả chi phí chiến dịch Google Ads trên AppsFlyer. <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-cost-and-ad-revenue">Thông tin chi tiết tại đây</Anchor>.
 14. Nhấp vào **Save**.
 
+<div id="stop" />
+
 > ❗️ **Dừng lại!**
 >
 > Bạn PHẢI **[qua bước 4](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory) để xem lượt cài đặt Google Ads trong AppsFlyer.** Nếu bạn cũng cần ánh xạ các sự kiện trong ứng dụng của mình tới Google Ads, trước tiên hãy hoàn thành [bước 3](/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended).
@@ -141,6 +147,8 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
 
 1. Chuyển đến tab **Integration** và cuộn xuống phần **In-app event postbacks**.
+
+   <div id="note-1" />
 
    > 📘 **Lưu ý**
    >
@@ -172,6 +180,8 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 
 <Accordion title="Bước 4: Đo lường chuyển đổi ứng dụng của bạn (bắt buộc)">
 
+<div id="important-1" />
+
 > 🚧 **Quan trọng!**
 >
 > Để Google Ads đăng ký lượt chuyển đổi mới, bạn phải **khởi chạy ứng dụng của mình và thực hiện ít nhất một lần các sự kiện trong ứng dụng được ánh xạ**. Để thử nghiệm ứng dụng iOS, bạn phải thu thập IDFA để xem sự kiện. Có thể mất đến 6 giờ cho đến khi các lượt chuyển đổi sự kiện được thêm vào hàng đợi. Sau khi các lượt chuyển đổi được thêm vào, bạn có thể nhập chúng và lượt chuyển đối mới sẽ thay đổi trạng thái từ "No recent conversion" thành "recording conversion".
@@ -194,9 +204,13 @@ Xin chúc mừng! Giờ đây, bạn đang đo lường các chiến dịch di �
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Mẹo**
 >
 > Tích hợp API Google Ads tự động đưa vào tính năng tiếp thị lại Google Ads. Bằng cách hoàn thành tích hợp này và gửi các sự kiện tới Google Ads, bạn có thể tạo danh sách đối tượng tiếp thị lại trong Google Ads mà không cần bất kỳ tích hợp bổ sung nào.
+
+<div id="granting-permissions-to-google-ads-team-members" />
 
 ## Cấp quyền cho các thành viên nhóm Google Ads
 
@@ -215,15 +229,21 @@ Do các yêu cầu về quyền riêng tư của Google, Google chỉ có thể 
 
 Đọc thêm về cách <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">cấp quyền cho Mạng quảng cáo</Anchor>.
 
+<div id="enabling-google-ads-attribution-for-agencies" />
+
 ## Bật phân bổ Google Ads cho đại lý
 
 AppsFlyer hỗ trợ thiết lập cấu hình đại lý với Google Ads. Điều quan trọng là nhà quảng cáo và đại lý phải có tài khoản Google Ads riêng biệt để cho phép AppsFlyer xác định chính xác dữ liệu. Để biết chi tiết, hãy nhấp <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-agencies">vào đây</Anchor>.
+
+<div id="running-with-multiple-google-ads-accounts" />
 
 ## Chạy với nhiều Tài khoản Google Ads
 
 AppsFlyer hỗ trợ làm việc với nhiều tài khoản Google Ads cho cùng một ứng dụng. Điều này được thực hiện thông qua việc chia sẻ ID Liên kết trong Google Ads và nhập các sự kiện vào từng tài khoản Google Ads.
 
 Để biết thêm chi tiết về cách chia sẻ ID liên kết Google Ads của bạn, hãy nhấp vào <Anchor target="_blank" href="https://support.google.com/google-ads/answer/7365001">đây</Anchor>.
+
+<div id="ios-app-campaigns" />
 
 ## Chiến dịch Ứng dụng iOS
 
@@ -241,6 +261,8 @@ Vì chuyển đổi được mô hình hóa không phụ thuộc vào ID của t
 * Khoảng không quảng cáo/kênh YouTube ACI iOS không được phân bổ vì ứng dụng YouTube không nhắc ATT nên không thể sử dụng IDFA.
 * Khoảng không quảng cáo/kênh Hiển thị ACI iOS chỉ có thể được phân bổ khi có ID của thiết bị, trong trường hợp có sự đồng ý trên ứng dụng của cả nhà quảng cáo và nhà phát hành.
 
+<div id="using-deferred-deep-linking-in-app-campaigns" />
+
 ## Sử dụng liên kết sâu gián tiếp rong Chiến dịch ứng dụng
 
 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9959794?hl=en&ref_topic=10011599">Nguồn cấp dữ liệu của Google trong Chiến dịch ứng dụng</Anchor> giúp bạn mang đến trải nghiệm mượt mà theo nội dung cụ thể cho người dùng di động mới.
@@ -255,11 +277,15 @@ Khi một người dùng tiềm năng nhấp vào nguồn cấp dữ liệu, h�
 4. Trong tab **Integration**, bật **Deferred deep linking with Google Ads.**
 5. Nhấp vào **Save integration**.
 
+<div id="google-ads-parameter-mapping" />
+
 ## Ánh xạ tham số Google Ads
 
 Bảng sau đây mô tả ánh xạ tham số giữa Google Ads và AppsFlyer. Lưu ý rằng nhà quảng cáo không thể thêm các than số được cá nhân hóa vào bất kỳ chiến dịch Google Ads nào.
 
 <table><thead><tr><th><p><strong>Loại mạng</strong></p></th><th><strong>Tìm kiếm</strong></th><th><strong>Hiển thị</strong></th><th><strong>YouTube</strong></th></tr></thead><tbody><tr><td>Kênh (af_channel)</td><td>Xem bảng bên dưới, <a href="./google-ads-adwords-integration-setup-for-advertisers#cách-điền-tham-số-kênh">Cách điền tham số <kbd>Kênh</kbd></a> </td></tr><tr><td>Chiến dịch (c)</td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td><p>ID Chiến dịch (af_c_id)</p></td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td>Bộ quảng cáo (af_adset)<br/>Được điền bằng tham số ad_group_name.<br/>Nếu tham số này rỗng, thì AF sẽ điền af_adset với ad_group_id.</td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td>ID Bộ quảng cáo (af_adset_id) được điền bằng tham số ad_group_id của Google</td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td><p>Quảng cáo (af_ad)</p></td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr><tr><td>ID Quảng cáo (af_ad_id)</td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr><tr><td>Loại quảng cáo (af_ad_type)</td><td>Có\*</td><td>Có\*</td><td>Có\*</td></tr><tr><td>ID Trang (af_siteid)</td><td>GoogleSearch/<br/>SearchPartners</td><td>Không áp dụng</td><td>YouTubeVideos/<br/>VideoPartners</td></tr><tr><td>Từ khóa</td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr></tbody></table>
+
+<div id="populate-the-channel-parameter" />
 
 ### Cách điền tham số `Kênh`
 
@@ -269,7 +295,11 @@ Google Ads không gửi tham số `Channel(af_channel)`. AppsFlyer quyết đ�
 
 Để biết thêm thông tin về loại quảng cáo nào có sẵn trong phản hồi của Google, hãy xem <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">tại đây</Anchor>.
 
+<div id="campaign-type-app-campaigns" />
+
 ### Loại chiến dịch: chiến dịch ứng dụng
+
+<div id="changes-to-campaign-names-by-google-ads" />
 
 #### Các thay đổi đối với tên chiến dịch của Google Ads
 
@@ -281,15 +311,21 @@ Google Ads không gửi tham số `Channel(af_channel)`. AppsFlyer quyết đ�
 
 **Lưu ý:** Loại tên chiến dịch được đặt theo ngày của lượt nhấp hoặc ngày của lượt hiển thị, không phải ngày cài đặt.
 
+<div id="engaged-view-parameter-in-raw-data-reports" />
+
 ### Tham số lượt xem thu hút trong báo cáo dữ liệu thô
 
 Lượt xem tương tác là lượt hiển thị một quảng cáo video dài hơn 10 giây cho người dùng. Lượt này tính là một lượt nhấp. Đối với Android, các lượt này hiển thị trong báo cáo dữ liệu thô, điền vào mục “sub param 5”.  
 Tham số này được hiển thị nếu lượt xem thu hút xảy ra trong khung thời gian xem lại lượt nhấp đã xác định trong AppsFlyer, nhưng tối đa là 3 ngày.
 
+<div id="important-2" />
+
 > 🚧 **Quan trọng!**
 >
 > * Google là một SRN (Mạng Tự Báo cáo). Để biết thêm thông tin về cách hoạt động của luồng phân bổ cho các mạng này, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns">đây</Anchor>.
 > * AppsFlyer có thể hiển thị bất kỳ thông tin chiến dịch nào được Google cung cấp. Loại chiến dịch (Tìm kiếm, Video, Hiển thị) và thông tin liên quan được xác định bởi Google. Để biết thêm thông tin chi tiết, hãy nhấp vào <Anchor target="_blank" href="https://developers.google.com/app-conversion-tracking/api/request-response-specs">đây</Anchor>.
+
+<div id="optimize-google-ads-campaigns-for-conversions-without-device-id" />
 
 ## Tối ưu hóa các chiến dịch Google Ads cho các lượt chuyển đổi mà không cần ID thiết bị
 
@@ -304,6 +340,8 @@ Bắt đầu với iOS14.5 trở lên và Android 12 trở lên, Google Ads đã
 Khi AppsFlyer nhận được các mã định danh này và gửi chúng trong các đăng lại của Google Ads, Google Ads có thể xác nhận các lượt chuyển đổi dựa trên các mã định danh đó. AppsFlyer sử dụng xác nhận quyền sở hữu và xem xét các tham số để phân bổ và liên kết các sự kiện LTV.  
 **Để cho phép nhận các tham số này, nhà quảng cáo không cần thực hiện bất kỳ hành động nào.**
 
+<div id="data-visibility-by-operating-system" />
+
 ### Khả năng hiển thị dữ liệu theo hệ điều hành
 
 **Ứng dụng Android:**
@@ -313,6 +351,8 @@ Trong AppsFlyer và Google Ads, nhà quảng cáo có thể nhận toàn bộ d�
 **Ứng dụng iOS:**
 
 Trong Google Ads và AppsFlyer, nhà quảng cáo có thể nhận dữ liệu chiến dịch đầy đủ về lưu lượng truy cập mà không cần ID thiết bị cho hoạt động tương tác lại của họ.
+
+<div id="h_01HDP0SBEE75MAT4A4S9E7Y7FF" />
 
 > 📄 **Xem thêm**
 >

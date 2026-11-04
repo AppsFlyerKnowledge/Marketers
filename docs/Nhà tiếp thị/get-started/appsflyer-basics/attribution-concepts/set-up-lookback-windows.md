@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tùy chỉnh khung thời gian xem lại lượt nhấp và lượt xem, dựa trên thỏa thuận của bạn với các nguồn truyền thông.
 
+<div id="lookback-windows" />
+
 ## Khung thời gian xem lại
 
 Khung thời gian xem lại phân bổ có thể cấu hình cho phép bạn tùy chỉnh khoảng thời gian phân bổ dựa trên thỏa thuận của bạn với các nguồn truyền thông.
@@ -34,9 +36,13 @@ Bằng cách đặt khung thời gian xem lại phân bổ cho mỗi nguồn tru
 * **Khung thời gian xem lại lượt nhấp**: Khoảng thời gian tối đa sau khi một quảng cáo được nhấp vào, trong thời gian đó lượt cài đặt có thể được phân bổ cho quảng cáo. Các lượt cài đặt diễn ra sau khung thời gian xem lại được coi là Tự nhiên.
 * **Khung thời gian xem lại lượt xem**: Khoảng thời gian tối đa sau khi một quảng cáo được xem, trong thời gian đó lượt cài đặt có thể được phân bổ cho quảng cáo.Các lượt cài đặt diễn ra sau khung thời gian xem lại được coi là Tự nhiên.
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### Khung thời gian xem lại có thể cấu hình cho mỗi loại phân bổ
 
 <table><thead><tr><th rowspan="2"><p><strong>Loại ghi công</strong></p></th><th rowspan="2"><p><strong>Phương thức phân bổ</strong></p></th><th colspan="2"><p><strong>Khung thời gian xem lại lượt nhấp</strong> </p></th></tr><tr><th><p><strong>Phạm vi</strong></p></th><th><p><strong><strong>Mặc định</strong></strong></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Lượt nhấp</p><p>(Tất cả các nguồn truyền thông)</p></td><td><p>Liên kết giới thiệu, khớp ID</p></td><td><p>1-30 ngày HOẶC<br/>1-23 giờ</p></td><td><p>7 ngày</p></td></tr><tr><td><p>Mô hình xác suất</p></td><td><p><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Thích ứng</a></p></td><td><p>Lên đến 24 giờ</p></td></tr><tr><td rowspan="3"><p>Lượt xem qua</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Nguồn truyền thông</a> được chọn)</p></td><td><p>Khớp ID</p></td><td><p>1-24 giờ</p><p>[Cho đến ngày 15 tháng 12 năm 2021, giới hạn tối đa là 7 ngày]</p></td><td><p>24 giờ</p></td></tr><tr><td><p>Mô hình xác suất</p></td><td><p><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Thích ứng</a></p></td><td><p>Lên đến 24 giờ</p></td></tr><tr><td><p>Mô hình xác suất (đa nền tảng)</p></td><td><p>1-72 giờ</p></td><td><p>24 giờ</p></td></tr></tbody></table>
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### Khung thời gian xem lại mô hình xác suất
 
@@ -49,12 +55,16 @@ Khung thời gian xem lại mô hình xác suất, được sử dụng để du
 
 Để tìm hiểu thêm, hãy đọc về <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model#probabilistic-modeling">phương thức mô hình xác suất của AppsFlyer</Anchor>.
 
+<div id="lookback-window-setup" />
+
 ## Thiết lập khung thời gian xem lại
 
 Sau đây, chúng tôi liệt kê quy trình thiết lập khung thời gian xem lại cho SRN và Đường dẫn Phân bổ
 
 <Tabs>
 <Tab title="Khung thời gian Xem lại cho SRN">
+
+<div id="attribution-lookback-window-for-srns" />
 
 ### Khung thời gian xem lại phân bổ cho SRN
 
@@ -115,6 +125,8 @@ Bạn cũng có thể đặt khung thời gian xem lại trong OneLink.
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## Phân bổ các lần khởi chạy ứng dụng đầu tiên
 
 Dưới đây là biểu đồ thể hiện sự phân bổ các lần khởi chạy ứng dụng đầu tiên kể từ ngày tương tác.
@@ -126,6 +138,8 @@ Biểu đồ có thể giúp bạn hiểu rõ hơn về số lượng người d
 Phần lớn người dùng, hơn 97%, khởi chạy ứng dụng đã làm điều đó trong vòng 7 ngày kể từ khi tương tác với quảng cáo. 2% còn lại đã làm điều đó trong khoảng thời gian từ ngày 7 đến cuối khung thời gian xem lại (ngày 30).
 
 Trên thực tế, gần 62% số người dùng khởi chạy ứng dụng đã làm điều đó trong vòng 15 phút sau khi tương tác với quảng cáo. 72% người dùng đã làm điều đó trong vòng một giờ đầu tiên.
+
+<div id="scenarios-and-examples" />
 
 ## Các tình huống và ví dụ
 

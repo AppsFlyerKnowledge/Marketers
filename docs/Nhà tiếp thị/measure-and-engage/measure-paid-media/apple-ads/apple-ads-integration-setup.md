@@ -36,6 +36,8 @@ Mức độ liên quan của ứng dụng xác định xem quảng cáo của b�
 
 ASA cung cấp [phân bổ di động dựa trên lượt nhấp](/docs/apple-ads-integration-setup#asa-attribution), <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">nhắm mục tiêu lại</Anchor> người dùng và dữ liệu <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview">chi phí</Anchor> thông qua API (với đăng ký ROI360).
 
+<div id="set-up-apple-ads-integration" />
+
 ## Thiết lập tích hợp ASA
 
 <div id="get-started" />
@@ -106,6 +108,8 @@ Tích hợp chi phí cung cấp dữ liệu tổng hợp sau:
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## Thiết lập đại lý và đối tác tiếp thị ASA
 
 <div id="principles" />
@@ -118,6 +122,8 @@ Các nhà quảng cáo và đại lý có thể chọn làm việc với Đối 
 
 Sự khác biệt giữa đại lý và đối tác tiếp thị được liệt kê trong bảng sau.
 
+<div id="agency-vs-marketing-partner" />
+
 #### So sánh đại lý và đối tác tiếp thị
 
 |  | Đại lý | Đối tác tiếp thị |
@@ -125,9 +131,13 @@ Sự khác biệt giữa đại lý và đối tác tiếp thị được liệt
 | AppsFlyer gửi đăng lại | Không | Có |
 | Công nghệ | Chạy các chiến dịch thay cho bạn | Có giải pháp công nghệ giá trị gia tăng để tối ưu hóa các chiến dịch |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### Cấu hình đại lý và đối tác tiếp thị
 
 Sử dụng danh sách kiểm tra sau để đảm bảo rằng bạn hoàn thành tất cả các bước trong quy trình định cấu hình. Hướng dẫn chi tiết được nêu rõ theo từng loại đối tác trong các mục tiếp theo.
+
+<div id="configuration-steps-checklist" />
 
 #### Danh sách kiểm tra các bước định cấu hình
 
@@ -183,6 +193,8 @@ Nhà quảng cáo cho phép các đại lý thay mặt họ chạy các chiến 
 * Không sử dụng ký tự đặc biệt và dấu cách cho tên nhóm.
 * Khi bạn đăng nhập bằng Apple, quyền của các nhóm chiến dịch ASA sẽ không được tích lũy. Điều này có nghĩa là khi bạn tích hợp một ứng dụng mới, quyền cho các nhóm chiến dịch đã chọn cho ứng dụng trước đó sẽ bị thu hồi trừ khi được chọn lại. Bạn sẽ cần chọn **Quyền truy cập Hạn chế** và từng nhóm chiến dịch có liên quan (liên quan đến ứng dụng bạn muốn kết nối cho nhà quảng cáo).
 
+<div id="advertiser-actions" />
+
 #### **Hành động của nhà quảng cáo**
 
 **Điều kiện tiên quyết**:
@@ -196,6 +208,8 @@ Nhà quảng cáo cho phép các đại lý thay mặt họ chạy các chiến 
 3. Đi đến tab **Integration** (Tích hợp), bật **Activate partner** (Kích hoạt đối tác).
 4. [Tùy chọn] Nếu bạn muốn phân bổ người dùng cài đặt lại ứng dụng trong khung thời gian phân bổ lại, hãy bật tùy chọn **Phân bổ lượt cài đặt lại.**
 5. Nhấp vào **Lưu**.
+
+<div id="agency-actions" />
 
 #### **Hành động của đại lý**
 
@@ -211,6 +225,8 @@ Nhà quảng cáo cho phép các đại lý thay mặt họ chạy các chiến 
 > 📘 **Lưu ý**
 >
 > Khi một đại lý làm việc với Đối tác Tiếp thị Apple Search Ads, đại lý đó phải cấu hình cùng ID nhóm chiến dịch trong cả trang cấu hình Apple Search Ads và trang cấu hình Đối tác Tiếp thị.
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### Dữ liệu Chi phí, Nhấp chuột và Hiển thị
 
@@ -239,6 +255,8 @@ Nếu bạn bật API chi phí, AppsFlyer sẽ nhận dữ liệu về chi phí,
 4. Nhấp vào **Save integration** (Lưu tích hợp).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 
@@ -269,6 +287,8 @@ AppsFlyer và Apple Search Ads sử dụng logic phân bổ khác nhau, dẫn đ
 * Những thông tin sau không được báo cáo: Số lượt hiển thị, số lượt nhấp hoặc chi phí của vùng địa lý có ít hơn 100 lượt hiển thị đối với một chiến dịch nhất định.
 * Khi nhóm theo Địa lý trong AppsFlyer, các khu vực Địa lý với dữ liệu không có sẵn sẽ không được hiển thị và tổng dữ liệu không có sẵn sẽ xuất hiện trong N/A (Không).
 
+<div id="retargeting-related-discrepancies" />
+
 ### Các khác biệt liên quan đến nhắm mục tiêu lại
 
 Cơ chế phân bổ nhắm mục tiêu lại AppsFlyer cho phép nhà quảng cáo đo lường và phân tích các chiến dịch nhắm mục tiêu lại, ngoài các chiến dịch thu hút người dùng.
@@ -282,6 +302,8 @@ Các số liệu sau đây minh họa sự khác biệt có thể xảy ra như 
 **Tính năng nhắm mục tiêu lại tắt**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### Các lý do sai lệch khác
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Define your own metrics and use them to view data in My Dashboards.
 
+<div id="about-custom-metrics" />
+
 ## About custom metrics
 
 Custom metrics let you tailor data analysis to your unique business needs by defining calculations based on existing data. They provide more control and flexibility than standard metrics, enabling you to combine multiple metrics, create projections, and customize KPIs.
@@ -37,6 +39,8 @@ For example, instead of generic metrics like "Revenue" or "Clicks," you can crea
 Custom metrics are compatible with all widget types in My Dashboards, including tables, charts, and KPIs. Whether you're a marketer tracking campaign ROI, a product manager monitoring engagement, or an analyst forecasting performance, custom metrics enhance your ability to analyze trends, identify opportunities, and make data-driven decisions for your unique business needs—all directly from your dashboard.
 
 **Note**: The custom metrics you create are at the account level, meaning different apps in the same AppsFlyer account can use the same custom metrics.
+
+<div id="procedures" />
 
 ## Procedures
 
@@ -101,6 +105,8 @@ You can delete a custom metric either from the dashboard or from within a specif
 * In any chart or table, in the **Metrics** dropdown menu, find the metric you want to delete and click the **Delete** icon.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Additional information
 

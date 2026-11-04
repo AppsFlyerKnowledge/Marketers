@@ -38,6 +38,8 @@ x-zendesk:
 > * <Anchor target="_blank" href="/marketers/vi/docs/additional-sdk-integration-guide">Tích hợp SDK bổ sung</Anchor>
 > * <Anchor target="_blank" href="/marketers/vi/docs/ctv-pc-and-console-platform-attribution-concepts">Tổng quan về TV được kết nối (CTV) và over-the-top (OTT)</Anchor>
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## Truy xuất dev key
 
 Trước khi nhà phát triển của bạn có thể cài đặt và tích hợp SDK, bạn phải truy xuất dev key. AppsFlyer sử dụng dev key để xác định duy nhất tài khoản của bạn. Dev key là bắt buộc vì nó cho phép SDK gửi và truy xuất an toàn dữ liệu thuộc tài khoản của bạn.
@@ -49,6 +51,8 @@ Trước khi nhà phát triển của bạn có thể cài đặt và tích hợ
 
    ![af_devkey.png](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 3. Cung cấp cho nhà phát triển thiết bị di động các hướng dẫn <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">cài đặt</Anchor> và <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">tích hợp SDK</Anchor>.
+
+<div id="attribution" />
 
 ## Phân bổ
 
@@ -87,6 +91,8 @@ Các phần sau đây mô tả những vấn đề cần lưu ý về phân bổ
 <div id="attribute-apps-published-on-google-play" />
 
 <Accordion title="Các ứng dụng phân bổ được xuất bản trên Google Play">
+
+<div id="google-play-install-referrer" />
 
 #### **Người giới thiệu Cài đặt Google Play**
 
@@ -131,6 +137,8 @@ Kể từ phiên bản iOS 14.5, chức năng thu thập IDFA yêu cầu phải 
 Để biết thông tin giới thiệu về ATT, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/about-att-and-skan#att-principles">các nguyên tắc về ATT</Anchor> .
 
 Khi phân bổ xảy ra bằng cách sử dụng IDFA, quan trọng là IDFA phải được gửi vào **lần khởi chạy đầu tiên.** Vì lý do này, SDK cung cấp tiện ích <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#enabling-app-tracking-transparency-att-support">waitForATTUserAuthorization</Anchor>.
+
+<div id="waitforattuserauthorization-overview" />
 
 #### **Tổng quan về waitForATTUserAuthorization**
 
@@ -204,6 +212,8 @@ SKAN là một lớp được iOS sử dụng để xác thực các lượt cà
 
 </Accordion>
 
+<div id="recording-in-app-events" />
+
 ## Ghi nhận sự kiện trong ứng dụng
 
 Các sự kiện trong ứng dụng (IAE) cung cấp thông tin chi tiết về những gì đang xảy ra trong ứng dụng của bạn. Việc ghi nhận sự kiện trong ứng dụng giúp bạn đo lường các giá trị KPI như Lợi tức đầu tư (ROI) và Giá trị vòng đời (LTV). Bạn nên dành thời gian xác định các sự kiện bạn muốn ghi nhận.
@@ -239,6 +249,8 @@ SDK của AppsFlyer cung cấp xác minh máy chủ cho các giao dịch mua tro
 <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#recommended-events-by-business-vertical">Xem danh sách các sự kiện trong ứng dụng được đề xuất</Anchor> theo ngành, ví dụ, du lịch, trò chơi hoặc Thương mại điện tử.
 
 </Accordion>
+
+<div id="deep-linking-with-onelink" />
 
 ## Liên kết sâu với OneLink
 
@@ -286,6 +298,8 @@ Xem hướng dẫn của chúng tôi về cách thiết lập deferred deep link
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## Truy cập dữ liệu phân bổ và liên kết sâu
 
 Bảng sau mô tả các phương thức có sẵn để truy xuất dữ liệu phân bổ và liên kết sâu:
@@ -309,6 +323,8 @@ Lưu ý những điều sau đối với người dùng iOS 14.5+ không đồng
 >
 > * Sử dụng API Push khi truy xuất dữ liệu phân bổ và gửi đến máy chủ của bạn để xử lý thêm. Phương thức này sẽ chờ khi có dữ liệu và do đó có độ chính xác cao và gần với theo thời gian thực. GCD trả về dữ liệu theo thời gian thực, nhưng có thể không chính xác khi các quyết định phân bổ cuối cùng được xác định sau hơn 5 giây.
 > * Sử dụng API Pull để bổ sung định kỳ (ví dụ: hàng ngày) dữ liệu phân bổ theo thời gian thực và để bù cho bất kỳ lỗi giao tiếp nào có thể xảy ra.
+
+<div id="testing-your-sdk-integration" />
 
 ## Kiểm tra tích hợp SDK
 

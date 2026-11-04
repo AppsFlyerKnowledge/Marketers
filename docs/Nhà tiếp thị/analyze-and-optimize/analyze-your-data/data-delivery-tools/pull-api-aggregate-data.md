@@ -34,9 +34,13 @@ x-zendesk:
 
 [![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
 
+<div id="looking-for-pull-api-raw-data" />
+
 > 👍 **Tìm kiếm dữ liệu thô API Pull?**
 >
 > Tìm hiểu chi tiết đầy đủ <Anchor target="_blank" href="/marketers/vi/docs/pull-api-raw-data">ở đây</Anchor>.
+
+<div id="pull-api-aggregate-data" />
 
 ## Dữ liệu hợp nhất API Pull
 
@@ -46,6 +50,8 @@ x-zendesk:
 * Các khả năng khác trong API Pull là:
   * Thêm loại tương tác được phân bổ
   * Chọn múi giờ
+
+<div id="aggregate-performance-reports-available-via-pull-api" />
 
 #### Báo cáo hiệu suất hợp nhất có sẵn thông qua API Pull
 
@@ -103,6 +109,8 @@ x-zendesk:
 | Thay đổi tên chiến dịch | Báo cáo API Pull không hỗ trợ thay đổi tên chiến dịch |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

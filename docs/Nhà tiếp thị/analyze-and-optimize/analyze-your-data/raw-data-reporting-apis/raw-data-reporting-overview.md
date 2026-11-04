@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **Khái quát:** Dữ liệu cấp hàng (hay còn gọi là dữ liệu thô) mô tả các sự kiện liên quan đến người dùng như lượt cài đặt, sự kiện trong ứng dụng, lượt truy cập trang web, lượt cài đặt bị chặn trong Protect360, doanh thu quảng cáo được tạo và lượt đăng lại liên kết với người dùng được gửi cho đối tác. Báo cáo dữ liệu thô có sẵn thông qua tải xuống, API và Data Locker.
 
+<div id="raw-data-reportingtools-and-reports" />
+
 ## Báo cáo dữ liệu thô—công cụ và báo cáo
 
 Báo cáo dữ liệu thô cho phép bạn phân tích hành vi và hành trình của người dùng, đối chiếu các tài khoản mạng quảng cáo và làm phong phú thêm cho hệ thống CRM và BI. Bằng cách sử dụng dữ liệu thô, bạn tăng khả năng phân tích, tối ưu hóa và cải thiện hiệu suất của ứng dụng.
 
 Báo cáo được tạo sẵn thông qua các công cụ báo cáo. Các công cụ có đặc điểm khác nhau phù hợp với các trường hợp sử dụng khác nhau. Ví dụ: để đối chiếu một tài khoản mạng quảng cáo nhất định, hãy tải xuống báo cáo, nếu cần, qua trang Export data. Để tải dữ liệu hiệu suất của người dùng vào hệ thống BI, hãy tải dữ liệu theo cách lập trình bằng Data Locker hoặc API Pull.
+
+<div id="tip" />
 
 > 👍 **Lời khuyên**
 >
@@ -51,13 +55,19 @@ Những điều cần lưu ý:
 * Phạm vi ngày báo cáo liên quan đến ngày hoạt động (thực tế) mà diễn ra sự kiện. Điều này trái ngược với các báo cáo hợp nhất trong đó phạm vi ngày là <Anchor target="_blank" href="/marketers/vi/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">dựa trên LTV</Anchor>.
 * Mô tả trường—xem <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary">từ điển trường dữ liệu</Anchor>.
 
+<div id="reporting-tools" />
+
 #### Công cụ báo cáo
 
 <table><thead><tr><th>Công cụ</th><th>Mô tả</th><th>Một /nhiều ứng dụng (1)</th><th>Khả năng cập nhật dữ liệu (2)</th><th>Nhúng vào tập lệnh</th><th>Múi giờ</th><th>Tiền tệ</th></tr></thead><tbody><tr><td><a href="./raw-data-export-page" target="_blank">Trang xuất dữ liệu thô</a></td><td><ul><li>Tải xuống báo cáo sử dụng giao diện người dùng</li><li>Định dạng: tệp tin CSV</li></ul></td><td>Một</td><td>Cập nhật liên tục</td><td><strong><span>x</span></strong></td><td><p>Dành riêng cho ứng dụng</p></td><td>Dành riêng cho ứng dụng</td></tr><tr><td><a href="./pull-api-raw-data" target="_blank">API Pull\*</a></td><td><ul><li>Tải xuống báo cáo bằng lệnh gọi API.</li><li>Định dạng: tệp tin CSV</li></ul></td><td>Một</td><td>Cập nhật liên tục</td><td><span>✓</span></td><td><ul><li>Có thể lựa chọn</li><li>Mặc định: UTC</li></ul></td><td><ul><li>Có thể lựa chọn</li><li>Mặc định: USD</li></ul></td></tr><tr><td> <a href="./data-locker-for-marketers" target="_blank">Hộp khoá Dữ liệu</a> <strong><span>P</span></strong> </td><td><ul><li>Dữ liệu được truyền trực tiếp tới một <a href="./data-locker-cloud-service-setup" target="_blank">bộ chứa trên đám mây</a> </li><li>Không có giới hạn về khối lượng</li><li>Khung thời gian dữ liệu khả dụng: 14 ngày.</li><li>Định dạng: CSV hoặc  parquet</li></ul></td><td>Nhiều</td><td>Cập nhật liên tục với độ trễ vài giờ</td><td><span>✓</span></td><td>UTC</td><td>USD </td></tr><tr><td> <a href="./push-api-streaming-raw-data" target="_blank">API Push<span></span></a> <strong><span>P</span></strong> </td><td><ul><li>Dữ liệu hành trình của người dùng (lượt cài đặt, hoạt động trong ứng dụng, nhắm mục tiêu lại, SKAN) được gửi đến máy chủ của bạn trong thời gian thực.</li><li>Định dạng: JSON hoặc thông số truy vấn</li></ul></td><td>Có thể sử dụng cùng một điểm cuối</td><td>Vài phút sau khi sự kiện được ghi nhận trong AppsFlyer</td><td><span>✓</span></td><td>UTC + dành riêng cho ứng dụng</td><td>USD + dành riêng cho ứng dụng</td></tr><tr><td> <a href="./conversion-data-payloads-and-scenarios" target="_blank">Dữ liệu Chuyển đổi SDK</a> (3)</td><td><ul><li>Lấy dữ liệu chuyển đổi phân bổ trong ứng dụng.</li><li>Định dạng: JSON</li></ul></td><td>Không áp dụng</td><td> Thời gian thực &lt;5 giây</td><td> <span>✓</span> </td><td>UTC</td><td>Không áp dụng</td></tr></tbody><tfoot><tr><td colspan="7"><p><strong>Ghi chú và viết tắt:</strong><br/>(1) Hỗ trợ nhiều ứng dụng<br/>(2) Cập nhật dữ liệu thực tế phụ thuộc vào bản thân báo cáo, vì một số báo cáo là báo cáo Hàng ngày.<br/>(3) Dữ liệu chuyển đổi SDK truy xuất dữ liệu phân bổ người dùng trong chưa đầy 5 giây kể từ lần khởi chạy ứng dụng đầu tiên và do đó là phương thức kém chính xác nhất.<br/><strong><span>(P) </span></strong><span>Tính năng cao cấp<br/></span><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Có áp dụng hạn mức tạo báo cáo</a></p></td></tr></tfoot></table>
 
+<div id="tool-limitations" />
+
 #### Hạn chế của công cụ
 
 <table><thead><tr><th>Hạn chế </th><th>API Pull (\*)</th><th>API Push</th><th>Hộp khóa dữ liệu</th><th>Dữ liệu Chuyển đổi<br/>SDK</th></tr></thead><tbody><tr><td>Giới hạn dữ liệu</td><td>1 triệu hàng cho mỗi lệnh gọi</td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr><tr><td>Tùy chọn lựa chọn dữ liệu</td><td>Chọn loại dữ liệu. Các tùy chọn lựa chọn trường hạn chế</td><td>Chọn loại dữ liệu, trường và sự kiện trong ứng dụng</td><td>Chọn loại dữ liệu, trường và sự kiện trong ứng dụng</td><td>Không</td></tr><tr><td>Khung thời gian dữ liệu khả dụng</td><td>90 ngày</td><td>Không áp dụng</td><td>14 ngày </td><td>Trọn đời (có sẵn trong SDK)</td></tr><tr><td colspan="5"><p><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Có áp dụng hạn mức tạo báo cáo</a></p></td></tr></tbody></table>
+
+<div id="integration-considerations" />
 
 #### Những điều cần lưu ý về tích hợp
 
@@ -93,6 +103,8 @@ Từ điển trường <Anchor target="_blank" href="/marketers/vi/docs/raw-data
 
 Để dễ hiểu, các trường hành trình của người dùng được chia thành các nhóm dựa trên ngữ cảnh.
 
+<div id="user-journey-raw-data-field-groups" />
+
 #### Nhóm trường dữ liệu thô của hành trình người dùng
 
 | Nhóm trường | Có liên quan đến người dùng tự nhiên | Các trường ví dụ |
@@ -105,6 +117,8 @@ Từ điển trường <Anchor target="_blank" href="/marketers/vi/docs/raw-data
 | Sự kiện | Có | Được điền vào báo cáo sự kiện trong ứng dụng:<br /><br />Tên sự kiện, giá trị sự kiện, doanh thu sự kiện |
 
 </Accordion>
+
+<div id="user-journey-reports" />
 
 ## Báo cáo hành trình của người dùng
 
@@ -150,6 +164,8 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
 * Báo cáo có thể bao gồm người dùng tự nhiên, người dùng không tự nhiên hoặc cả hai, theo chỉ định.
 * Chính sách lưu giữ áp dụng cho các báo cáo dữ liệu thô lịch sử tùy thuộc vào công cụ báo cáo và nguồn gốc của dữ liệu thô. Nói chung, dữ liệu khả dụng trong 90 ngày trước đó. **Lưu ý**! Chính sách lưu giữ không áp dụng cho dữ liệu hợp nhất.
 
+<div id="user-journey-reports-1" />
+
 #### Báo cáo hành trình của người dùng
 
 <table><thead><tr><th>danh mục</th><th>Là đặc biệt đối với Hộp khóa Dữ liệu</th><th>Chủ đề báo cáo</th><th>Tự nhiên</th><th>Không tự nhiên</th></tr></thead><tbody><tr><td>Thu hút người dùng</td><td><span>✓</span></td><td>Lượt nhấp</td><td colspan="2">Không áp dụng</td></tr><tr><td>Nhắm mục tiêu lại</td><td><span>✓</span></td><td>Lượt nhấp từ các chiến dịch nhắm mục tiêu lại </td><td colspan="2">Nhắm mục tiêu lại luôn là không tự nhiên</td></tr><tr><td>Thu hút người dùng</td><td><span>✓</span></td><td>Lượt hiển thị</td><td colspan="2">Không áp dụng</td></tr><tr><td>Nhắm mục tiêu lại</td><td><span>✓</span></td><td>Lượt hiển thị từ các chiến dịch nhắm lại mục tiêu</td><td colspan="2">Nhắm mục tiêu lại luôn là không tự nhiên</td></tr><tr><td>Thu hút người dùng</td><td>-</td><td>Lượt cài đặt </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Thu hút người dùng</td><td>-</td><td>Sự kiện trong ứng dụng </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Thu hút người dùng</td><td>-</td><td>Doanh thu quảng cáo được phân bổ</td><td>-</td><td><span>✓</span></td></tr><tr><td>Thu hút người dùng</td><td>-</td><td>Doanh thu quảng cáo tự nhiên</td><td><span>✓</span></td><td>-</td></tr><tr><td>Nhắm mục tiêu lại</td><td>-</td><td>Doanh thu quảng cáo nhắm mục tiêu lại</td><td colspan="2">Nhắm mục tiêu lại luôn là không tự nhiên</td></tr><tr><td>Nhắm mục tiêu lại</td><td>-</td><td>Lượt chuyển đổi nhắm mục tiêu lại (thu hút lại và phân bổ lại)</td><td colspan="2">Nhắm mục tiêu lại luôn là không tự nhiên</td></tr><tr><td>Nhắm mục tiêu lại</td><td>-</td><td>Các sự kiện trong ứng dụng nhắm mục tiêu lại (thu hút lại và phân bổ lại)</td><td colspan="2">Nhắm mục tiêu lại luôn là không tự nhiên</td></tr><tr><td>Nhắm mục tiêu lại</td><td> <span>✓</span> </td><td>Phiên nhắm mục tiêu lại (thu hút lại và phân bổ lại)</td><td colspan="2">Nhắm mục tiêu lại luôn là không tự nhiên</td></tr><tr><td>Thu hút người dùng</td><td> <span>✓</span> </td><td>Các phiên</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Thu hút người dùng</td><td>-</td><td>Các lượt Gỡ cài đặt không tự nhiên</td><td>-</td><td><span>✓</span></td></tr><tr><td>Thu hút người dùng</td><td>-</td><td>Các lượt gỡ cài đặt tự nhiên</td><td><span>✓</span></td><td>-</td></tr><tr><td>Thu hút người dùng</td><td><span>✓</span></td><td>Tương tác đa nền tảng</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
@@ -159,6 +175,8 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
 <div id="user-journey-report-descriptions" />
 
 <Accordion title="Mô tả báo cáo hành trình của người dùng">
+
+<div id="clicks-and-impressions" />
 
 #### Nhấp chuột và Hiển thị
 
@@ -171,9 +189,13 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
 | Lưu ý | Dữ liệu SRN không có sẵn. |
 | Người dùng bị hạn chế | Trong một số trường hợp, do các quy tắc bảo mật, dữ liệu lượt hiển thị và lượt nhấp bị hạn chế (không có mã định danh người dùng) hoặc hoàn toàn không có sẵn. Tính khả dụng phụ thuộc vào nguồn truyền thông và nền tảng. |
 
+<div id="installs-and-retargeting-conversions" />
+
 #### Lượt cài đặt và chuyển đổi nhắm mục tiêu lại
 
 <table><thead><tr><th rowspan="2">Tên báo cáo </th><th rowspan="2"><p>Thu hút người dùng: Lượt cài đặt</p></th><th rowspan="2">Nhắm mục tiêu lại: Lượt chuyển đổi</th></tr></thead><tbody><tr><td> <br/>Ngữ cảnh</td><td><p>Khi người dùng mở một ứng dụng lần đầu.</p></td><td><p>Sau khi người dùng thu hút với một quảng cáo nhắm mục tiêu lại và sau đó mở ứng dụng. Chuyển đổi nhắm mục tiêu lại là thu hút lại hoặc phân bổ lại.</p> Xem <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">hướng dẫn Phân bổ nhắm mục tiêu lại.</a> </td></tr><tr><td>Các trường hợp sử dụng</td><td><ul><li>Tạo báo cáo hợp nhất bằng cách sử dụng các trường không có sẵn thông qua công cụ phân tích AppsFlyer.</li><li>Kết hợp với các báo cáo khác để phân tích chéo, nâng cao.</li><li>Phân tích hiệu suất với nhiều phương diện khác nhau, chẳng hạn như thành phố, khu vực đô thị, v.v. </li><li>Phân đoạn người dùng theo quốc gia, thành phố và ngôn ngữ cho các mục đích nhắm mục tiêu.</li><li>Nhận ID thiết bị của người dùng cho mục đích nhắm mục tiêu lại.</li></ul></td><td>Tương tự với lượt cài đặt.</td></tr><tr><td>So sánh tự nhiên và không tự nhiên</td><td><ul><li> <strong>Không tự nhiên:</strong> Các nhóm trường phân bổ và phân bổ người đóng góp được điền</li><li> <strong>Tự nhiên:</strong> Trường nguồn truyền thông, rỗng, trống hoặc tự nhiên. Hãy cân nhắc điều này khi bạn tải dữ liệu vào hệ thống của mình. </li></ul></td><td>Không áp dụng</td></tr><tr><td>Báo cáo ví dụ</td><td><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcNRnKgPP5ZRL51o3b9PDhbFv6VFG7xe9xHqCsIC7HwqO2ERLV5dh4bS7pr-WONxpUXvsCc64eTzzN/pub?gid=0&amp;single=true&amp;output=csv" target="_blank">Lượt cài đặt</a></td><td>Báo cáo chuyển đổi nhắm mục tiêu lại có cấu trúc giống với báo cáo lượt cài đặt. Một số trường được điền trong trường hợp nhắm mục tiêu lại. Xem <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">dữ liệu thô nhắm mục tiêu lại</a>. </td></tr></tbody></table>
+
+<div id="in-app-events" />
 
 #### Sự kiện trong Ứng dụng
 
@@ -263,6 +285,8 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
   </tbody>
 </Table>
 
+<div id="sessions" />
+
 #### Các phiên
 
 | Báo cáo | Đặc điểm |
@@ -271,6 +295,8 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
 | Đặc điểm | Cấu trúc báo cáo giống với báo cáo sự kiện trong ứng dụng. Phiên (sự kiện phiên) nằm trong một báo cáo riêng biệt do các sự kiện như vậy có số lượng rất lớn. |
 | Trường hợp sử dụng | Hiểu mức độ người dùng thu hút với ứng dụng. |
 | Báo cáo ví dụ | Báo cáo phiên tương tự như báo cáo sự kiện trong ứng dụng. Lưu ý: Trong dữ liệu thô, các phiên có tên sự kiện là *launch*. |
+
+<div id="uninstalls" />
 
 #### Gỡ cài đặt
 
@@ -288,9 +314,13 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
 
 <Accordion title="Tính khả dụng của báo cáo hành trình của người dùng trên mỗi công cụ">
 
+<div id="ad-engagement-report-by-tool" />
+
 #### Báo cáo mức độ thu hút với quảng cáo theo công cụ
 
 <table><tbody><tr><th>Báo cáo</th><th>Xuất dữ liệu</th><th>API Pull</th><th>Hộp khóa dữ liệu</th><th>API Push</th><th>Dữ liệu Chuyển đổi<br/> SDK</th></tr><tr><td>Lượt hiển thị (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td>Lượt nhấp (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td colspan="6">(1) Dữ liệu về lượt nhấp và lượt hiển thị được cung cấp bởi các mạng không phải SRN. SRN không cung cấp dữ liệu này.</td></tr></tbody></table>
+
+<div id="user-acquisition-reports-by-tool" />
 
 #### Báo cáo thu hút người dùng theo công cụ
 
@@ -300,6 +330,8 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
 | Các phiên | - | - | ✓ | - | - |
 | Sự kiện trong Ứng dụng | ✓ | ✓ | ✓ | ✓ | - |
 | Gỡ cài đặt | ✓ | ✓ | ✓ | - | - |
+
+<div id="retargeting-raw-data-reports-by-tool" />
 
 #### Báo cáo dữ liệu thô nhắm mục tiêu lại theo công cụ
 
@@ -334,18 +366,18 @@ Vì báo cáo sự kiện cài đặt và trong ứng dụng có cấu trúc gi�
 
 > 📄 **Ví dụ**
 >
-> #### Người dùng thu hút—mạnh
+> #### <span id="engaged-userstrong"></span>Người dùng thu hút—mạnh
 >
 > * Một người dùng cài đặt ứng dụng vào lúc 09:31 ngày 20 tháng 8.
 > * Báo cáo hợp nhất cho thấy người này đã thực hiện giao dịch mua hàng vào lúc 10:31 ngày 20 tháng 8, 15:22 ngày 22 tháng 8 và 16:47 ngày 25 tháng 8.
 > * Từ đó, chúng tôi kết luận rằng người dùng là người dùng thu hút. Họ đã mua sau một giờ khởi chạy ứng dụng và tiếp tục mua vào các ngày sau đó.
 >
-> #### Người dùng thu hút—yếu
+> #### <span id="engaged-userweak"></span>Người dùng thu hút—yếu
 >
 > * Một người dùng cài đặt ứng dụng vào ngày 30 tháng 7. Báo cáo hợp nhất cho thấy rằng họ đã thêm một mặt hàng vào giỏ vào ngày 15 tháng 8, nhưng không có sự kiện mua hàng nào sau đó.
 > * Bạn có thể cho rằng người dùng do dự khi mua hàng và chọn nhắm mục tiêu lại đối với họ cho các mặt hàng họ đã thêm vào giỏ hàng.
 >
-> #### Phân tích hành trình của người dùng để tối ưu hóa chiến dịch
+> #### <span id="analyzing-the-user-journey-for-campaign-optimization"></span>Phân tích hành trình của người dùng để tối ưu hóa chiến dịch
 >
 > * Người quản lý thu hút người dùng (UA) của một ứng dụng du lịch tải xuống báo cáo lượt cài đặt và sự kiện trong ứng dụng và hợp nhất chúng.
 > * Sau đó, để xem hành trình của người dùng trong ứng dụng, họ lọc hoặc tổng hợp dữ liệu bằng cách sử dụng ID AppsFlyer.
@@ -355,6 +387,8 @@ Vì báo cáo sự kiện cài đặt và trong ứng dụng có cấu trúc gi�
 > * Bằng cách phân tích hành trình của người dùng, người quản lý UA có thể kết luận rằng chiến dịch đã tập trung phạm vi quá hẹp và ứng dụng không đủ thu hút người dùng.
 
 </Accordion>
+
+<div id="feature-reports" />
 
 ## Báo cáo tính năng
 
@@ -382,6 +416,8 @@ Sử dụng báo cáo đăng lại, để xem xét các bản sao dữ liệu đ
 * Bắt đầu từ tháng 3 năm 2021, các trường được điền theo tùy chọn cài đặt Quyền riêng tư Nâng cao của mạng. Có nghĩa là, nếu Quyền riêng tư Nâng cao được bật, thì một số trường, chẳng hạn như mã định danh người dùng sẽ không được đưa vào. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">thông số kỹ thuật đăng lại Quyền riêng tư Nâng cao dành cho mạng quảng cáo.</Anchor>
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTs4MUZTBKRQF24n-T8JM1L6EhU4TayYneX6MB5HjM9iwnrQtX8tlPLBA-J7zmqDcJqYTCpRxhStdGg/pub?output=xlsx">URI dành cho báo cáo đăng lại thông qua API Pull</Anchor>
 
+<div id="postback-reports-available-via-the-export-data-page-and-pull-api" />
+
 #### Báo cáo đăng lại (có sẵn qua trang Export Data và API Pull)
 
 | Chủ đề báo cáo | Các sự kiện được gửi đến nguồn truyền thông được phân bổ |
@@ -390,6 +426,8 @@ Sử dụng báo cáo đăng lại, để xem xét các bản sao dữ liệu đ
 | Sự kiện trong Ứng dụng | Sự kiện trong Ứng dụng không tự nhiên |
 | Đăng lại lượt chuyển đổi nhắm mục tiêu lại | Nhắm mục tiêu lại (thu hút lại và phân bổ lại) |
 | Nhắm lại mục tiêu Sự kiện trong Ứng dụng | Nhắm lại mục tiêu Sự kiện trong Ứng dụng |
+
+<div id="additional-fields-in-postback-reports" />
 
 #### Các trường bổ sung trong báo cáo đăng lại
 
@@ -417,6 +455,8 @@ Sử dụng báo cáo đăng lại, để xem xét các bản sao dữ liệu đ
 4. Để cấp quyền truy cập vào bảng điều khiển Sự kiện trong ứng dụng (CPA), hãy bật tùy chọn **Access aggregate in-app events data**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

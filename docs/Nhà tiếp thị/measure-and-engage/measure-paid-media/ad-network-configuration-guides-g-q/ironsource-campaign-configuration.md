@@ -55,28 +55,40 @@ Cửa sổ cấu hình của ironSource bao gồm 5 thẻ: Tích hợp (Integrat
 
 <Accordion title="Thẻ Integration">
 
+<div id="activate-partners" />
+
 ### Kích hoạt đối tác
 
 Trong **lần đầu truy cập** tại đây, bạn sẽ cần phải bật **Kích hoạt Đối tác** (Activate Partner) để kích hoạt cài đặt các thông số của thẻ tích hợp (integration). Nút chuyển đổi phải giữ bật chừng nào bạn còn làm việc với đối tác.  
 Để biết thêm chi tiết về kích hoạt đối tác, vui lòng nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">đây</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Quyền riêng tư Nâng cao
 
 Chỉ với ứng dụng iOS, khi bật **Quyền riêng tư Nâng cao (đối với iOS 14.5+ trở lên)** (Advanced Privacy (for iOS 14.5+ and later)), bạn có thể <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#b">kiểm soát dữ liệu nào được chia sẻ</Anchor> với ironSource qua postback và báo cáo.
+
+<div id="transaction-id" />
 
 ### ID Giao dịch
 
 Chỉ với ứng dụng iOS, khi bật **Chia sẻ ID giao dịch SKAN** (Share SKAN transaction ID), bạn sẽ  cho phép AppsFlyer <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">chia sẻ ID giao dịch của các postback SKAdNetwork</Anchor> với ironSource. Theo đó, ironSource có thể giải mã các Giá trị Chuyển đổi SKAdNetwork của bạn.
 
+<div id="note-2" />
+
 > 📘 **Lưu ý**
 >
 > Để biết khả năng tương tác của SKAN với AppsFlyer, hãy liên hệ với quản lý tài khoản ironSource của bạn để <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">kích hoạt gửi dữ liệu SKAN đến các MMP</Anchor>.
+
+<div id="general-settings" />
 
 ### Cài đặt chung
 
 **ID nhà quảng cáo**
 
 ironSource kết nối với AppsFlyer qua một ID nhà quảng cáo duy nhất (số có 6 chữ số) và mật khẩu. Nếu bạn chưa có ID nhà quảng cáo và mật khẩu, bạn phải lấy chúng từ ironSource để tiếp tục với việc tích hợp. Nếu không, sao chép ID và mật khẩu và dán chúng vào các trường tương ứng.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Phân bổ Lượt cài đặt và Tương tác lại
 
@@ -92,6 +104,8 @@ Hai nút chuyển đổi này cho phép phân bổ đến ironSource các lượ
 1. Bật **Phân bổ qua lượt xem tái tương tác** (Re-engagement view-through attribution).
 2. Cấu hình độ dài của cửa sổ xem lại **qua lượt xem** trong [thẻ Đường dẫn phân bổ](/docs/ironsource-campaign-configuration#attribution-link-tab) (Attribution link).
 
+<div id="default-postbacks" />
+
 ### Các bài đăng lại mặc định
 
 Gửi postback tự động đến ironSource sau các lượt cài đặt và tái tương tác người dùng. Sử dụng phần này để xác định **nguồn của người dùng** cho phép gửi các postback này.
@@ -99,9 +113,13 @@ Gửi postback tự động đến ironSource sau các lượt cài đặt và t
 Chọn **Chỉ các sự kiện được phân bổ cho đối tác này** (Only events attributed to this partner) cho các sự kiện chỉ đến từ người dùng được phân bổ tới ironSource.  
 Chọn **Sự kiện được phân bổ tới bất kỳ đối tác nào hoặc tự nhiên** (Events attributed to any partner, or organic) để cho cả cơ sở người dùng của bạn khả dụng để được báo cáo tới ironSource.
 
+<div id="note-3" />
+
 > 📘 **Lưu ý**
 >
 > Là một mạng cho tất cả lượt cài đặt, ironSource ưu tiên nhận postback cho tất cả lượt cài đặt mới ứng dụng của bạn từ bất kỳ nguồn nào, bao gồm cả nguồn tự nhiên. Để làm vậy, hãy chọn **Sự kiện được phân bổ tới bất kỳ đối tác nào hoặc tự nhiên** (Events attributed to any partner, or organic) để gửi mọi postback cài đặt đến ironSource.
+
+<div id="in-app-event-postbacks" />
 
 ### Đăng lại sự kiện trong ứng dụng
 
@@ -123,6 +141,8 @@ Chọn **Sự kiện được phân bổ tới bất kỳ đối tác nào hoặ
    1. Từ góc trên cùng bên trái, dưới tên đối tác, hãy nhấp vào tên ứng dụng để mở danh sách ứng dụng.
    2. Chọn một ứng dụng khác từ danh sách thả xuống.
    3. Lặp lại <Anchor target="_blank" href="/marketers/vi/docs/amazon-ads-campaign-configuration#integration-tab">các bước tích hợp</Anchor> đối với ứng dụng đã chọn.
+
+<div id="note-4" />
 
 > 📘 **Lưu ý**
 >
@@ -182,6 +202,8 @@ Trong thẻ này, bạn có thể chọn quyền cấp cho ironSource, cho dù �
 
 Sử dụng các tính năng chuyển đổi này để cấp quyền cho mạng quảng cáo xử lý cấu hình riêng cho ứng dụng của bạn:
 
+<div id="ad-network-permissions" />
+
 ### Quyền truy cập mạng quảng cáo
 
 * **Allow to configure integration** - cho phép đối tác thiết lập thẻ cấu hình (ngoại trừ đăng lại sự kiện trong ứng dụng)
@@ -193,6 +215,8 @@ Sử dụng các tính năng chuyển đổi này để cấp quyền cho mạng
 * **Allow access to your Protect360 dashboard** - chỉ với dữ liệu Protect360 của chính đối tác và miễn là tính năng được kích hoạt cho nhà quảng cáo
 
 Tìm hiểu thêm về việc cấp <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">quyền truy cập mạng quảng cáo</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Cấp quyền cho Đại lý
 

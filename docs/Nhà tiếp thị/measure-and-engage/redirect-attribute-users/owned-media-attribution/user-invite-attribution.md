@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## Giới thiệu về phân bổ lời mời người dùng
 
 Lời mời của người dùng có nghĩa là người dùng ứng dụng hiện tại của bạn chia sẻ các liên kết chuyển hướng người khác (ví dụ: bạn bè của họ) để họ tải xuống/mở ứng dụng của bạn.
@@ -45,6 +47,8 @@ Bạn cũng có thể sử dụng dữ liệu từ các đường liên kết đ
 
 Liên kết lời mời người dùng mà người dùng chia sẻ với người khác thực chất là liên kết tùy chỉnh OneLink (URL rút gọn) mà SDK AppsFlyer tạo được tích hợp vào ứng dụng của bạn. Cài đặt OneLink của bạn đảm bảo rằng người dùng nhận được lời mời sẽ được chuyển hướng đến đúng nơi—đến đúng cửa hàng ứng dụng, vào ứng dụng của bạn hoặc được liên kết sâu/trì hoãn liên kết sâu đến một trang cụ thể trong ứng dụng của bạn. <Anchor target="_blank" href="/marketers/vi/docs/onelink-guide">Tìm hiểu thêm về OneLink</Anchor>
 
+<div id="flow" />
+
 ### Quy trình
 
 Quy trình hoạt động như sau:
@@ -57,6 +61,8 @@ Quy trình hoạt động như sau:
    * Chưa cài đặt ứng dụng, họ sẽ được gửi đến đúng cửa hàng ứng dụng. Người dùng B có thể được trì hoãn liên kết sâu đến một trang cụ thể trong ứng dụng sau khi khởi chạy ứng dụng lần đầu và/hoặc Người dùng A có thể được thưởng.
    * Thực hiện một sự kiện trong ứng dụng, Người dùng A có thể được thưởng.
 
+<div id="viewing-data" />
+
 ## Xem dữ liệu
 
 Dữ liệu lời mời người dùng có sẵn thông qua bảng điều khiển và báo cáo của AppsFlyer. Trong bảng điều khiển AppsFlyer, bạn có thể lọc phân bổ lời mời của người dùng theo:
@@ -66,6 +72,8 @@ Dữ liệu lời mời người dùng có sẵn thông qua bảng điều khi�
 * **Chiến dịch**: Theo quyết định của nhà tiếp thị.
 
 Trong báo cáo, nguồn truyền thông (tham số `pid`) được SDK gửi với giá trị mặc định `af_app_invites`. 
+
+<div id="procedures" />
 
 ## Quy trình
 
@@ -105,6 +113,8 @@ Trong báo cáo, nguồn truyền thông (tham số `pid`) được SDK gửi v�
 
 <Accordion title="Tham số">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### Thông số/giá trị được cung cấp cho nhà phát triển để triển khai trong SDK
 
 <table><thead><tr><th><span>Thông số/giá trị</span></th><th><span>Lưu ý</span></th><th><span>Ghi lại giá trị/trường hợp sử dụng mà nhà phát triển nên triển khai</span></th></tr></thead><tbody><tr><td><span>ID mẫu OneLink</span></td><td><p>ID của mẫu OneLink với các cài đặt cơ bản mà tất cả các liên kết mời của người dùng sẽ dựa vào đó. Ví dụ: H5hv</p></td><td></td></tr><tr><td><span>Kênh</span></td><td><p>Tên kênh. Điều này giúp bạn sắp xếp và xem các phân bổ theo kênh trong UI AppsFlyer.</p></td><td></td></tr><tr><td><span>Chiến dịch</span></td><td><p>Tên chiến dịch. Điều này giúp bạn sắp xếp và xem các phân bổ theo chiến dịch trong UI AppsFlyer.</p></td><td></td></tr><tr><td> <span>is_retargeting=true</span><span><br/></span> </td><td><p>Đã thêm nếu chiến dịch của bạn nhắm mục tiêu lại người dùng hiện tại.</p></td><td></td></tr><tr><td><span>deep_link_value</span></td><td><p>Một thông số được sử dụng trên thiết bị của người dùng được giới thiệu để cung cấp cho họ trải nghiệm cụ thể. Thông thường, điều này được sử dụng để <span>đặt tên cho trang cụ thể mà người dùng sẽ được chuyển hướng tới. Ví dụ, nếu ứng dụng của bạn bán trái cây, bạn có thể liên kết sâu người dùng với trang táo.</span></p></td><td></td></tr><tr><td><span>deep_link_sub1</span></td><td rowspan="10"><p>Một thông số được sử dụng trên thiết bị của người dùng được giới thiệu để cung cấp cho họ trải nghiệm cụ thể. Vì deep_link_value thường được sử dụng để đưa người dùng đến một trang cụ thể nên thông số này có thể được sử dụng cho bất kỳ chức năng mong muốn nào khác. Ví dụ: để thêm phần thưởng hoặc giảm giá hoặc ghi lại người dùng đã giới thiệu. </p></td><td></td></tr><tr><td><span>deep_link_sub2</span></td><td></td></tr><tr><td><span>deep_link_sub3</span></td><td></td></tr><tr><td><span>deep_link_sub4</span></td><td></td></tr><tr><td><span>deep_link_sub5</span></td><td></td></tr><tr><td><span>deep_link_sub6</span></td><td></td></tr><tr><td><span>deep_link_sub7</span></td><td></td></tr><tr><td><span>deep_link_sub8</span></td><td></td></tr><tr><td><span>deep_link_sub9</span></td><td></td></tr><tr><td><span>deep_link_sub10</span></td><td></td></tr><tr><td><span>[Tùy chọn] pid</span></td><td><p>Theo mặc định, các liên kết bạn tạo bao gồm<span> nguồn truyền thông (thông số <code>pid</code>) với giá trị <code>af_app_invites</code>. </span></p><p><span>Để thay đổi giá trị, nhà phát triển của bạn cần phải thêm một thông số tùy chỉnh gọi là <code>pid</code> với giá trị bạn muốn. <strong>Lưu ý</strong>: Đối với Android, điều này chỉ hoạt động đối với SDK V6.4.2 trở lên.</span></p></td><td></td></tr><tr><td><span>Tên gắn thương hiệu</span></td><td><p>Tên miền gắn thương hiệu. Điều này giúp bạn sắp xếp và xem các phân bổ theo miền gắn thương hiệu trong UI AppsFlyer.</p></td><td></td></tr></tbody></table>
@@ -131,6 +141,8 @@ Anh ấy muốn liên kết này có thể được gửi qua lời mời của 
 | Chiến dịch | summer\_sale | Để phân bổ và xem dữ liệu trong AppsFlyer. |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Thông tin bổ sung
 

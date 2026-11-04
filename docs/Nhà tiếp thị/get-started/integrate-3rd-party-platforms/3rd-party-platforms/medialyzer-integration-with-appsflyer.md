@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **Khái quát:** Medialyzer, một đối tác tích hợp của AppsFlyer, phát triển và tiếp thị phần mềm dưới dạng giải pháp dịch vụ. Giải pháp này cho phép các nhà lập kế hoạch truyền thông tối ưu hóa các chiến dịch truyền hình của họ cho các doanh nghiệp trực tuyến dựa trên số lượt truy cập và chuyển đổi được tạo ngay lập tức mỗi lần phát quảng cáo trên truyền hình.
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions#hạn-chế-nguồn-truyền-thông">Một số nguồn truyền thông</Anchor> hạn chế chia sẻ dữ liệu với các bên thứ ba. Do đó, đăng lại cho các sự kiện bị hạn chế sẽ không được gửi tới đối tác này, bất kể lựa chọn đã định cấu hình để gửi đăng lại là gì.
+
+<div id="setting-up-medialyzer" />
 
 ## Thiết lập Medialyzer
 
@@ -50,13 +54,19 @@ Cửa sổ cấu hình chỉ sử dụng thẻ **Integration**.
 
 <Accordion title="Thẻ Integration">
 
+<div id="activate-partner" />
+
 #### Kích hoạt đối tác
 
 Trong lần truy cập đầu tiên, bạn sẽ cần bật nút bật/tắt **Activate partner** để thiết lập tích hợp. Nút bật/tắt phải luôn bật trong thời gian bạn làm việc với Medialyzer. Tìm hiểu thêm về kích <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">hoạt đối tác</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Quyền riêng tư Nâng cao
 
 Đối với ứng dụng iOS, nút bật/tắt <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">Advance Privacy</Anchor> sẽ xuất hiện. Khi được bật, tính năng này sẽ giới hạn việc chia sẻ mã định danh người dùng với đối tác. Lưu ý rằng khi bật nút <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">Aggregated Advanced Privacy</Anchor> trong App Settings, **Advanced Privacy (for iOS 14.5+ and later)** cũng sẽ được bật và khóa theo mặc định.
+
+<div id="default-postbacks" />
 
 #### Postback Mặc định
 
@@ -66,6 +76,8 @@ AppsFlyer gửi postback mặc định đến Medialyzer sau các lượt cài �
 * **All media sources, including organic**: Postback cài đặt được gửi cho các sự kiện được phân bổ cho bất kỳ đối tác và sự kiện tự nhiên nào.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Postback sự kiện trong ứng dụng
 

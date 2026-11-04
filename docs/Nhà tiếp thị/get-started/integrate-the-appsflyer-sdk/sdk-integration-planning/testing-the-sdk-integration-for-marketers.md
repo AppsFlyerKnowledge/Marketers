@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Khái quát:** Thử nghiệm tích hợp ứng dụng Android hoặc iOS của bạn với AppsFlyer.
 
+<div id="overview" />
+
 ## Tổng quan
 
 Tích hợp được thử nghiệm cẩn thận đảm bảo việc thu thập dữ liệu sẽ chính xác và toàn diện. Bằng cách thử nghiệm tích hợp SDK, bạn có thể xác nhận rằng SDK đang giao tiếp thành công với máy chủ AppsFlyer và các lượt cài đặt, sự kiện trong ứng dụng và nhắm mục tiêu lại được ghi nhận và phân bổ chính xác.
@@ -101,6 +103,8 @@ Thực hiện một trong các quy trình sau để thêm ứng dụng gỡ lỗ
 
 </Tab>
 </Tabs>
+
+<div id="testing-ctv" />
 
 ### Các trường hợp thử nghiệm đặc biệt
 
@@ -210,6 +214,8 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
    ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
 
 </Accordion>
+
+<div id="testing-using-attribution-links" />
 
 ## Thử nghiệm sử dụng đường dẫn phân bổ
 
@@ -339,6 +345,8 @@ Bên cạnh đó, OneLink cho phép liên kết sâu (deeplinking). Liên kết 
 Để biết thêm thông tin chi tiết, vui lòng xem hướng dẫn của chúng tôi về <Anchor target="_blank" href="/marketers/vi/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#testing">thử nghiệm các URL OneLink</Anchor>.
 
 </Accordion>
+
+<div id="testing-retargeting-using-attribution-links" />
 
 ## Thử nghiệm nhắm mục tiêu lại bằng đường dẫn phân bổ
 

@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **Khái quát**: Sự khác nhau giữa Phân bổ trên cơ sở Người dùng (PBA) và Google Analytics
 
+<div id="pba-compared-to-google-analytics" />
+
 ## PBA so với Google Analytics
 
 PBA và Google Analytics là các giải pháp đo lường lượt chuyển đổi và phân tích trang web. Mỗi một giải pháp tập trung vào các khía cạnh đo lường khác nhau. Ngoài ra, PBA cũng mang đến những lợi ích bổ sung.
 
 * PBA là một cơ quan phân bổ độc lập, khách quan, tập trung vào hoạt động đo lường phân bổ. PBA phân bổ lượt chuyển đổi và doanh thu cho các nguồn và chiến dịch truyền thông đưa người dùng đến trang web của bạn.
 * Google Analytics tập trung nhiều hơn vào hoạt động phân tích trang web. Giải pháp này thu thập, phân tích và hợp nhất dữ liệu liên quan đến hành vi của người dùng. Với Google Analytics, bạn có thể phân tích những yếu tố như hành vi người dùng, kênh, sự kiện web.
+
+<div id="benefits-of-pba-over-google-analytics" />
 
 ### Lợi ích của PBA so với Google Analytics
 
@@ -41,9 +45,13 @@ Sau đây là những lợi ích của PBA so với Google Analytics:
   * Đo lường chuyển đổi web sang ứng dụng. Phép đo này cho bạn biết có bao nhiêu người dùng chuyển từ trang web của bạn sang ứng dụng của bạn. Giải pháp cũng cho bạn biết các nguồn truyền thông và chiến dịch nào đưa người dùng đến trang web, rồi cuối cùng là cài đặt ứng dụng của bạn.
   * <Anchor target="_blank" href="/marketers/vi/docs/pba-raw-data-reports">Dữ liệu thô về lượt chuyển đổi và sự kiện</Anchor> mà bạn có thể kéo vào các hệ thống BI của riêng mình. Điều này giúp bạn có khả năng và năng lực để chạy phân tích của mình.
 
+<div id="reasons-for-differences" />
+
 ### Nguyên nhân dẫn đến sự khác biệt
 
 Nếu bạn so sánh dữ liệu từ PBA và Google Analytics, hãy tham khảo các nguyên nhân dẫn đến sự khác biệt về dữ liệu như sau.
+
+<div id="sdk-implementation" />
 
 #### Thực hiện SDK
 
@@ -53,9 +61,13 @@ Cách bạn triển khai PBA và Google Analytics có thể ảnh hưởng đế
 
 <Accordion title="Google Analytics hiển thị nhiều phiên và lượt khách truy cập hơn">
 
+<div id="cause" />
+
 #### Nguyên nhân
 
 Nếu Google Analytics tải trước khi người dùng SDK Web thoát trang hoặc người dùng dành thời gian trên trang web của bạn ngắn hơn sẽ không được tính vào PBA. Điều này dẫn đến sự khác nhau về dữ liệu phiên và lượt khách truy cập.
+
+<div id="solution" />
 
 #### Giải pháp
 
@@ -69,15 +81,21 @@ Cho dù bạn tải <Anchor target="_blank" href="/marketers/vi/docs/pba-web-sdk
 
 <Accordion title="Google Analytics hiển thị nhiều dữ liệu hơn cho các phiên, chiến dịch và lượt chuyển đổi">
 
+<div id="cause-1" />
+
 #### Nguyên nhân
 
 SDK Web chỉ hiện diện trên một số trang nhất định. Google Analytics có mặt trên tất cả các trang. Do đó, Google Analytics thu thập dữ liệu từ tất cả các trang web của bạn trong khi SDK Web chỉ thu thập dữ liệu từ một số trang nhất định. Điều này dẫn đến sự khác nhau về dữ liệu phiên, lượt khách truy cập, chiến dịch và lượt chuyển đổi.
+
+<div id="solution-1" />
 
 #### Giải pháp
 
 Triển khai SDK Web trên tất cả các trang của trang web của bạn.
 
 </Accordion>
+
+<div id="dashboard-settings" />
 
 ### Cài đặt bảng điều khiển
 
@@ -87,15 +105,21 @@ Cài đặt bảng điều khiển như múi giờ và bộ lọc dữ liệu c�
 
 <Accordion title="Cài đặt múi giờ - khác nhau về dữ liệu">
 
+<div id="cause-2" />
+
 #### Nguyên nhân
 
 Nếu thông số cài đặt múi giờ trong Google Analytics khác với cài đặt trong bảng điều khiển của PBA thì có thể sẽ có sự sai lệch.
+
+<div id="example" />
 
 > 📄 **Ví dụ:**
 >
 > Bảng điều khiển AppsFlyer của bạn được cấu hình thành UTC và bảng điều khiển GA của bạn được cấu hình thành UTC +13. Điều này có nghĩa là thời gian của bảng điều khiển GA sẽ trước một ngày so với thời gian của bảng điều khiển AppsFlyer.
 >
 > Do đó, dữ liệu xuất hiện trong bảng điều khiển AppsFlyer cho ngày 2 tháng 3 chỉ xuất hiện trong bảng điều khiển GA nếu bạn chọn ngày 3 tháng 3 trong bộ lọc phạm vi ngày.
+
+<div id="solution-2" />
 
 #### Giải pháp
 
@@ -107,15 +131,21 @@ Nếu thông số cài đặt múi giờ trong Google Analytics khác với cài
 
 <Accordion title="Bộ lọc dữ liệu - khác nhau về dữ liệu">
 
+<div id="issue" />
+
 #### Vấn đề
 
 Cả AppsFlyer và Google Analytics đều cho phép bạn lọc dữ liệu theo ngày, nguồn truyền thông, chiến dịch và sự kiện được phân bổ. Các bộ lọc khác nhau trong AppsFlyer và Google Analytics có thể tạo các chế độ xem khác nhau cho cùng một dữ liệu.
+
+<div id="solution-3" />
 
 #### Giải pháp
 
 Khi bạn so sánh dữ liệu từ hai bảng điều khiển, hãy đảm bảo không áp dụng bộ lọc nào cho tập dữ liệu.
 
 </Accordion>
+
+<div id="conversions-and-events" />
 
 ### Lượt chuyển đổi và sự kiện
 
@@ -125,9 +155,13 @@ Các mô hình phân bổ, khung thời gian xem lại, cách bạn gửi sự k
 
 <Accordion title="Khung thời gian xem lại - khác nhau về đo lường lượt chuyển đổi">
 
+<div id="cause-3" />
+
 #### Nguyên nhân
 
 Nếu khung thời gian xem lại của bạn trong Google Analytics và PBA là khác nhau thì có thể có sự khác nhau về dữ liệu phân bổ.
+
+<div id="solution-4" />
 
 #### Giải pháp
 
@@ -139,9 +173,13 @@ Khung thời gian xem lại của PBA luôn là 30 ngày. Bạn phải đảm b�
 
 <Accordion title="Mô hình phân bổ - khác nhau về đo lường lượt chuyển đổi">
 
+<div id="cause-4" />
+
 #### Nguyên nhân
 
 Các mô hình phân bổ trong PBA và Google Analytics khác nhau có thể dẫn đến sự khác nhau về dữ liệu phân bổ.
+
+<div id="solution-5" />
 
 #### Giải pháp
 
@@ -153,9 +191,13 @@ Google Analytics cung cấp <Anchor target="_blank" href="https://support.google
 
 <Accordion title="Gửi sự kiện">
 
+<div id="issue-1" />
+
 #### Vấn đề
 
 Cả SDK Google Analytics và SDK Web đều cho phép bạn gửi sự kiện. Nếu bạn thực thi một logic để gửi sự kiện tới Google Analytics và một logic khác để gửi sự kiện tới PBA, thì có thể phát sinh sự sai khác.
+
+<div id="solution-6" />
 
 #### Giải pháp
 
@@ -174,13 +216,19 @@ Nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/pba-web-sdk-integra
 
 Cả PBA và Google Analytics đều sử dụng cookie để nhận dạng người dùng.
 
+<div id="cookie-settings-in-google-analytics" />
+
 #### Cài đặt cookie trong Google Analytics
 
 Mặc dù nên để SDK Google Analytics tự động xử lý cài đặt cookie, nhưng bạn vẫn có thể <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id">cấu hình và thay đổi cài đặt cookie</Anchor>. Mọi thay đổi về cài đặt cookie đều có thể là nguyên nhân dẫn đến sự sai khác.
 
+<div id="setting-cookie-expiration" />
+
 #### Cài đặt thời gian hết hạn của cookie
 
 Google Analytics cho phép bạn đặt thời gian hết hạn của cookie. Nếu bạn đặt cookie Google Analytics hết hạn trước khi cookie SDK Web hết hạn thì hiện tượng sai khác có thể xảy ra.
+
+<div id="example-1" />
 
 > 📄 **Ví dụ**
 >
@@ -194,9 +242,13 @@ Google Analytics cho phép bạn đặt thời gian hết hạn của cookie. N�
 >
 > Điều này có nghĩa là tỷ lệ chuyển đổi của bạn trong Google Analytics thấp hơn so với trong PBA.
 
+<div id="setting-cookie-subdomain" />
+
 #### Đặt Miền phụ của Cookie
 
 Google Analytics cho phép bạn đặt cookie cho miền phụ trong khi PBA chỉ đặt cookie trên miền cấp cao nhất.
+
+<div id="example-2" />
 
 > 📄 **Ví dụ**
 >

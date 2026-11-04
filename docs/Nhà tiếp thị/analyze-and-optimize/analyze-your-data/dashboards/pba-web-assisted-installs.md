@@ -28,9 +28,13 @@ x-zendesk:
 
 Tìm hiểu thêm về các bảng điều khiển PBA khác: <Anchor target="_blank" href="/marketers/vi/docs/pba-website-attribution-dashboard">Phân bổ Trang web</Anchor> | Đường dẫn chuyển đổi
 
+<div id="web-assisted-installs-analysis" />
+
 ## Phân tích Lượt cài đặt được Web Hỗ trợ
 
 Lượt cài đặt được Web Hỗ trợ đo lường tác động của các nỗ lực tiếp thị web nhằm thúc đẩy người dùng cài đặt ứng dụng. Các nhà quảng cáo xem sự tham gia của web trong bối cảnh của sự kiện cài đặt; họ có thể xác định nguồn truyền thông đã thúc đẩy khách truy cập trang web cài đặt ứng dụng. 
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### Số liệu dạng tiêu đề về Lượt cài đặt được Web Hỗ trợ
 
@@ -46,6 +50,8 @@ Xem xét các trường hợp sử dụng, trong bảng sau đây, để phân t
 | Lượt cài đặt tự nhiên | Lượt cài đặt ứng dụng mà không thu hút một nguồn truyền thông di động nào. | <ul><li>Phần nào trong số lượt cài đặt tự nhiên được thúc đẩy hoàn toàn bởi lưu lượng truy cập web, nếu có?</li><li>Những kênh truyền thông nào đang chiếm ưu thế?</li><li>Tỷ lệ giữa các loại phương tiện truyền thông trả tiền, sở hữu và lan truyền là bao nhiêu?</li></ul> |
 | Các lượt cài đặt không tự nhiên | Hành trình của người dùng bắt đầu trên web. Ứng dụng được cài đặt sau đó sau khi thu hút bằng chiến dịch trên điện thoại di động. | <ul><li>Khối lượng lượt cài đặt không tự nhiên bị ảnh hưởng bởi web là bao nhiêu?</li><li>Loại và kênh truyền thông web nào ảnh hưởng đến lượt cài đặt không tự nhiên?</li><li>Các nguồn truyền thông di động trả phí của bạn có trùng lặp với các nguồn truyền thông web không?</li></ul> |
 
+<div id="web-assisted-installs-dashboard" />
+
 ## Bảng điều khiển Lượt cài đặt được Web Hỗ trợ
 
 **Để đi tới bảng điều khiển Lượt cài đặt được Web Hỗ trợ:**
@@ -53,6 +59,8 @@ Xem xét các trường hợp sử dụng, trong bảng sau đây, để phân t
 | Tùy chọn 1 | Tùy chọn 2 |
 | --- | --- |
 | <ol><li>**My Apps** *(Ứng dụng của Tôi) >* **View brand bundles** (Xem các gói thương hiệu)</li><li>Nhấp vào bảng điều khiển PBA.</li><li>Đi tới tab **Web-Assisted Installs** (Lượt cài đặt được Hỗ trợ Trên Web).</li></ol> | Đi tới menu điều hướng > **People-based Attribution** (Phân bổ trên cơ sở Người dùng) > tab **Web-Assisted Installs** (Lượt cài đặt được Web Hỗ trợ) |
+
+<div id="website-assisted-installs-and-reinstalls" />
 
 <Accordion title="Lượt cài đặt và cài đặt lại được trang web hỗ trợ">
 
@@ -63,6 +71,8 @@ Các lượt cài đặt được coi là đã bị ảnh hưởng bởi một t
 Để biết thông tin về độ mới của dữ liệu, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/about-data-freshness-and-timezone-support#pba-daily-8">PBA hàng ngày</Anchor>.
 
 </Accordion>
+
+<div id="dashboard-features" />
 
 <Accordion title="Các tính năng của bảng điều khiển">
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 <Embed title="SKAN 4 Conversion Studio (bao gồm cả khóa khung thời gian)" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="skan-conversion-studio-basics" />
+
 ## Các khái niệm cơ bản về SKAN Conversion Studio
 
 Trong luồng phân bổ SKAdNetwork (SKAN), thiết bị iOS gửi các postback SKAN chứa giá trị chuyển đổi (CV) gần đây nhất sau mỗi cửa sổ đo lường.
@@ -87,6 +89,8 @@ Conversion Studio mang lại cho bạn sự linh hoạt tối đa để tận d�
   * Bố cục cập nhật hàng ngày dựa trên chế độ hoạt động vào lúc nửa đêm, theo giờ UTC. Theo dự kiến, bố cục cập nhật sẽ có trước 05:00 UTC.
   * Trong SKAN 4, chế độ Tùy chỉnh và Giải mã, dữ liệu tự nhiên cho các sự kiện trong ứng dụng và doanh thu tổng không có sẵn.
 
+<div id="s2s-principles" />
+
 #### **Nguyên tắc S2S**
 
 API [máy chủ đến máy chủ (S2S)](/docs/skan-conversion-studio#report-events-by-servertoserver-api) có thể báo cáo những hành động có thể đo lường. Hãy xem xét các mục sau cho mỗi chế độ:
@@ -96,6 +100,8 @@ API [máy chủ đến máy chủ (S2S)](/docs/skan-conversion-studio#report-eve
 * Các chế độ doanh thu, lượt chuyển đổi và lượt tương tác: Bạn phải bật [S2S event recording](/docs/skan-conversion-studio#report-events-by-servertoserver-api) trước khi gửi sự kiện.
 
 </Accordion>
+
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
 
 ## Cài đặt giá trị chuyển đổi trong SKAN Conversion Studio
 
@@ -109,6 +115,8 @@ Có một số chế độ có sẵn trong SKAN Conversion Studio để đặt g
   * Tương tác
 
 Tìm hiểu thêm về các chế độ đo lường khác trong các phần tiếp theo.
+
+<div id="important" />
 
 > 🚧 **Quan trọng!**
 >
@@ -230,6 +238,8 @@ Khi bạn thay đổi các cài đặt chế độ, tóm tắt **Conversion-valu
 5. Nhấp vào **Save**.
 6. Xác minh rằng ánh xạ đăng lại sự kiện trong ứng dụng đối tác của bạn ánh xạ các sự kiện bạn đã cấu hình.
 
+<div id="fixed-mode-measurement" />
+
 #### Đo lường ở chế độ cố định
 
 | Chế độ đo lường | Mô tả |
@@ -256,6 +266,8 @@ Tạo ánh xạ CV tới sự kiện của riêng bạn và tự đặt CV trong
 4. Xác minh rằng ánh xạ đăng lại sự kiện trong ứng dụng đối tác của bạn ánh xạ các sự kiện bạn đã cấu hình.
 
 </Accordion>
+
+<div id="measurement-components" />
 
 ## Thành phần đo lường
 
@@ -580,6 +592,8 @@ Mỗi ưu tiên (tối đa 63) có thể chứa doanh thu, sự kiện trong ứ
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Thông tin bổ sung
 
 <div id="view-cv-mapping" />
@@ -591,6 +605,8 @@ Mỗi ưu tiên (tối đa 63) có thể chứa doanh thu, sự kiện trong ứ
 * Nhận ánh xạ CV bằng <Anchor target="_blank" href="/marketers/vi/docs/skan-cv-schema-api-for-advertisers">API lược đồ SKAN CV dành cho nhà quảng cáo</Anchor>.
 
 ![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
+
+<div id="csv-mapping-file-columns" />
 
 #### Các cột tệp tin ánh xạ CSV
 
@@ -630,6 +646,8 @@ Như đã giải thích trước đây, số giá trị chuyển đổi hiện c
 
 <Accordion title="Các ví dụ về CV Tùy chỉnh được Tối đa hóa">
 
+<div id="example-1" />
+
 #### Ví dụ 1
 
 | Thành phần | Mô tả |
@@ -638,6 +656,8 @@ Như đã giải thích trước đây, số giá trị chuyển đổi hiện c
 | Doanh thu | <ul><li>Doanh thu được báo cáo bằng cách sử dụng một sự kiện trong ứng dụng (tổng thể)</li><li>Phạm vi doanh thu: 15</li></ul> |
 | Trong ứng dụng | Không |
 | Kênh | 3 sự kiện trong ứng dụng |
+
+<div id="example-2" />
 
 #### Ví dụ 2
 
@@ -648,6 +668,8 @@ Như đã giải thích trước đây, số giá trị chuyển đổi hiện c
 | Sự kiện trong ứng dụng được đặt để đo lượt chuyển đổi | 1 sự kiện trong ứng dụng để đo lường lượt chuyển đổi; mỗi sự kiện trong ứng dụng yêu cầu 1 phạm vi |
 | Kênh | Không |
 
+<div id="example-3" />
+
 #### Ví dụ 3
 
 | Thành phần | Mô tả |
@@ -656,6 +678,8 @@ Như đã giải thích trước đây, số giá trị chuyển đổi hiện c
 | Doanh thu | <ul><li>Doanh thu được báo cáo bằng cách sử dụng một sự kiện trong ứng dụng (tổng thể)</li><li>Phạm vi doanh thu: 3</li></ul> |
 | Sự kiện trong ứng dụng được đặt để đo mức độ thu hút | <ul><li>2 sự kiện trong ứng dụng để đo lường số lần xuất hiện tương tác</li><li>Phạm vi xuất hiện: 3 lần cho mỗi sự kiện trong ứng dụng</li></ul> |
 | Kênh | Không |
+
+<div id="example-4" />
 
 #### Ví dụ 4
 
@@ -686,6 +710,8 @@ Cân nhắc:
 * Mỗi ưu tiên bao gồm phạm vi doanh thu hoặc phạm vi số lần xuất hiện sự kiện trong ứng dụng hoặc cả hai.
 * Giá trị phạm vi: Giá trị thấp hơn của giới hạn không thuộc phạm vi nhưng giá trị giới hạn cao hơn lại thuộc phạm vi. Ví dụ: phạm vi 5 USD - 10 USD không bao gồm giá trị 5 nhưng bao gồm giá trị 10.
 
+<div id="measurement-priorities-setting-example" />
+
 #### Ví dụ về thiết lập các ưu tiên đo lường
 
 <table><tbody><tr><th><p>Số Ưu tiên</p></th><th><p>Phạm vi doanh thu</p></th><th>Sự kiện trong Ứng dụng</th></tr><tr><td>1 [Ưu tiên cao nhất]</td><td>5 USD - 10 USD</td><td>send_recommendation</td></tr><tr><td>2</td><td>5 USD - 10 USD</td><td>--</td></tr><tr><td>3</td><td>0 USD - 5 USD</td><td>send_recommendation</td></tr><tr><td>4</td><td>0 USD - 5 USD</td><td>--</td></tr><tr><td>5</td><td>--</td><td>send_recommendation<br/>add_to_cart</td></tr><tr><td>6</td><td>--</td><td><p>send_recommendation</p></td></tr><tr><td>7 [Ưu tiên thấp nhất]</td><td>--</td><td>add_to_cart</td></tr><tr><td colspan="3">-- Không có giá trị được đặt</td></tr></tbody></table>
@@ -696,6 +722,8 @@ Trong bảng:
 
 * Hành động nhiều hơn một sẽ được phân tách bằng >
 * Giá trị trong ngoặc đơn () là ưu tiên do AppsFlyer xác định được đặt sau khi người dùng hoàn thành hành động. Sử dụng ưu tiên mà AppsFlyer cập nhật CV trong ứng dụng.
+
+<div id="user-journey-scenarios" />
 
 #### Các tình huống trong hành trình của người dùng
 
@@ -713,6 +741,8 @@ Trong bảng:
 
 <Accordion title="Ví dụ về chế độ cố định">
 
+<div id="example-a-revenue-measurement" />
+
 #### Ví dụ A: Đo lường doanh thu
 
 | Yếu tố | Lưu ý |
@@ -722,6 +752,8 @@ Trong bảng:
 | Các số liệu đã chọn | Các số liệu liên quan đến doanh thu có sẵn<ul><li>Số lượt cài đặt: 20</li><li>Doanh thu: $125</li><li>Số lượt chuyển đổi: 15</li><li>ARPU: $6,25</li><li>ROI: 316%</li></ul> |
 | Số hàng dữ liệu thô trên mỗi báo cáo | <Anchor target="_blank" href="/marketers/vi/docs/skan-raw-data-reports">Báo cáo dữ liệu thô có sẵn qua Data Locker</Anchor><ul><li>Đăng lại trên thiết bị: 20 hàng</li><li>Số lượt cài đặt: 20 hàng</li><li>Số sự kiện trong ứng dụng: 15 hàng. Lưu ý! Người dùng thực hiện nhiều giao dịch mua được biểu thị bằng một hàng duy nhất là $10.</li></ul> |
 | Cân nhắc của nhà phát triển | Các sự kiện có doanh thu được ghi nhận |
+
+<div id="example-b-conversion-measurement" />
 
 #### Ví dụ B: Đo lường lượt chuyển đổi
 
@@ -746,6 +778,8 @@ Trong bảng:
         * 5 người dùng (AE) cài đặt ứng dụng
         * Họ thực hiện 0-3 sự kiện khác nhau trong ứng dụng, như được mô tả trong bảng sau
         * Dữ liệu chi phí do API cung cấp từ mạng quảng cáo: $30
+
+        <div id="inapp-events-performed-by-users" />
 
         #### Sự kiện trong ứng dụng do người dùng thực hiện
 
@@ -774,6 +808,8 @@ Trong bảng:
         Các số liệu đã chọn
       </td>
       <td>
+        <div id="inapp-related-metrics-available" />
+
         #### Các số liệu liên quan trong ứng dụng có sẵn
 
         | Số liệu | Ứng dụng | trong-ứng-dụng-1 | trong-ứng-dụng -2 | trong-ứng-dụng -3 |
@@ -810,6 +846,8 @@ Trong bảng:
   </tbody>
 </Table>
 
+<div id="example-c-engagement-measurement" />
+
 #### Ví dụ C: Đo lường mức độ thu hút
 
 <Table>
@@ -831,6 +869,8 @@ Trong bảng:
       </td>
       <td>
         5 người dùng cài đặt ứng dụng và mở ứng dụng với số lần được liệt kê trong bảng.
+
+        <div id="app-opens" />
 
         #### Ứng dụng mở ra
 
@@ -910,6 +950,8 @@ Nếu bạn có nhiều ứng dụng mà bạn muốn cấu hình giá trị chu
 * API SKAN Conversion Studio không khả dụng đối với các đại lý.
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Các quy trình bổ sung
 

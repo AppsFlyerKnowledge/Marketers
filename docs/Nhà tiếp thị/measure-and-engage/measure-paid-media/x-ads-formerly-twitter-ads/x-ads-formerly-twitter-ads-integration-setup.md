@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Tổng quan:** Tích hợp tài khoản X Ads của bạn với AppsFlyer để hiển thị dữ liệu phân bổ của các chiến dịch X Ads.
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Kết nối tài khoản X Ads của bạn với AppsFlyer
 
 <Accordion title="Xem">
@@ -63,6 +65,8 @@ x-zendesk:
 
 </Accordion>
 
+<div id="x-ads-attribution-setup" />
+
 ## Thiết lập phân bổ qua X Ads
 
 Để xem mô tả chi tiết về tiêu đề trang cấu hình đối tác, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner">đây</Anchor>.
@@ -73,11 +77,15 @@ x-zendesk:
 
 Tab **Integration** được chia thành các phần khác nhau như được mô tả dưới đây. <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">Đối tác phải được kích hoạt</Anchor> trong lần truy cập đầu tiên để cho phép thiết lập diễn ra.
 
+<div id="ad-account-connected" />
+
 ### Đã kết nối Tài khoản Quảng cáo
 
 Chọn tài khoản để cho phép phân bổ.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+
+<div id="click-through-attribution" />
 
 ### Phân bổ lượt nhấp qua
 
@@ -87,6 +95,8 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-30 ngày
 
 ![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### Cửa sổ xem lại phân bổ lượt xem qua
 
 Thanh trượt này cho phép bạn đặt **thời gian tối đa từ khi hiển thị tới khi cài đặt**. Chỉ các lượt cài đặt (lần khởi chạy đầu tiên) diễn ra trong khung thời gian xem lại này, sau một lần hiển thị quảng cáo, được phân bổ cho X Ads, miễn là không có nhấp chuột quảng cáo liên quan khác.
@@ -95,17 +105,23 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-7 ngày.
 
 ![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
 
+<div id="re-engagement-settings" />
+
 ### Cài đặt tương tác lại
 
 Phân bổ nhắm mục tiêu lại trên X Ads chỉ bao gồm những chuyển đổi thu hút lại.
 
 Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác lại cho X Ads.
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### Thời gian xem lại lượt nhấp tương tác lại
 
 Đặt thời lượng cho **Re-engagement click-through lookback window** (thời gian tối đa sau khi một quảng cáo được nhấp vào, trong thời gian đó người dùng được nhắm lại mục tiêu có thể được phân bổ cho quảng cáo). Bạn có thể đặt giá trị theo giờ (tối đa 23 giờ) hoặc ngày (1-30 ngày).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Thời gian xem lại lượt xem hết tương tác lại
 
@@ -115,11 +131,15 @@ Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác l
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
 
+<div id="re-engagement-window" />
+
 #### Thời gian tương tác lại
 
 Đặt thời lượng cho **Re-engagement window** (Khung thời gian tương tác lại) (thời gian khi sự kiện trong ứng dụng của người dùng được phân bổ cho nguồn truyền thông nhắm lại mục tiêu). Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời:
 
 ![Twitter-reengagement-window.png](https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png)
+
+<div id="in-app-event-postback-settings" />
 
 ### Cài đặt đăng lại sự kiện trong ứng dụng
 
@@ -151,6 +171,10 @@ Trong phần này, bạn có thể ánh xạ các sự kiện AppsFlyer của m�
 <Accordion title="Tab Liên kết Phân bổ">
 
 X Ads không sử dụng đường dẫn phân bổ để phân bổ.
+
+<div id="h_01HDJVBAEZATGM580CNC7BCVTN" />
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -192,6 +216,8 @@ Trong tab này, bạn có thể chọn quyền cấp cho X Ads, cho dù đối t
 
 Sử dụng các chuyển đổi này để cấp quyền cho mạng quảng cáo xử lý cấu hình của riêng nó cho ứng dụng của bạn:
 
+<div id="ad-network-permissions" />
+
 ### Quyền truy cập mạng quảng cáo
 
 * **Allow to configure integration** (Cho phép thiết lập cấu hình tích hợp) - cho phép đối tác thiết lập thanh cấu hình (ngoại trừ postback sự kiện trong ứng dụng)
@@ -203,6 +229,8 @@ Sử dụng các chuyển đổi này để cấp quyền cho mạng quảng cá
 * **Allow access to your Protect360 dashboard** (Cho phép truy cập vào bảng điều khiển Protect360 của bạn) - chỉ với dữ liệu Protect360 của đối tác và miễn là tính năng được kích hoạt cho nhà quảng cáo
 
 Tìm hiểu thêm về việc cấp <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">quyền truy cập mạng quảng cáo</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Cấp quyền cho Đại lý
 

@@ -27,12 +27,16 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## Nguyên tắc PBA
 
 * PBA hợp nhất dữ liệu trang web và ứng dụng dành cho thiết bị di động để cung cấp cái nhìn tổng thể về hiệu suất chiến dịch về các thuộc tính kỹ thuật số của thương hiệu. Các nhà quảng cáo sử dụng PBA để hiểu hành trình của khách hàng về khía cạnh người dùng, thay vì thiết bị.
 * Dữ liệu PBA—trên bảng điều khiển PBA và trong báo cáo dữ liệu thô—được sử dụng để phân tích tiếp thị và tối ưu hóa chiến dịch.
 * Dữ liệu bao gồm lượt truy cập trang web và các sự kiện của người dùng được thu thập bằng cách sử dụng <Anchor target="_blank" href="/marketers/vi/docs/pba-web-sdk-integration-guide">SDK và/hoặc API.</Anchor>
 * Đối với mỗi lượt truy cập vào trang web: nguồn truyền thông chịu trách nhiệm đưa đến lượt truy cập sẽ được xác định. Mọi sự kiện kết quả (chuyển đổi) đều được <Anchor target="_blank" href="/marketers/vi/docs/pba-media-source-attribution-rules">phân bổ</Anchor> cho nguồn truyền thông gây ra lượt truy cập.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### Bảng điều khiển phân tích PBA và dữ liệu thô
 
@@ -43,11 +47,15 @@ x-zendesk:
   * Báo cáo dữ liệu thô
 * Dữ liệu trong bảng điều khiển <Anchor target="_blank" href="/marketers/vi/docs/using-pba-dashboards">được lọc và nhóm lại</Anchor> bằng cách sử dụng các phương diện như nền tảng di động, kênh truyền thông và loại truyền thông, Điều này cho phép bạn truy cập sâu và phân tích dữ liệu.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/vi/docs/pba-website-attribution-dashboard">Phân bổ Trang web</Anchor>
 
 [![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
 
 Phân tích các nguồn lưu lượng truy cập web và các chiến dịch tiếp thị thúc đẩy lượt truy cập và chuyển đổi của người dùng trên trang web của bạn. Khám phá sự khác biệt về hiệu suất chi tiết đến cấp quảng cáo. Hỗ trợ tất cả các thông số truy vấn AppsFlyer trong liên kết mà không cần chuyển hướng người dùng đến máy chủ AppsFlyer.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/vi/docs/pba-web-assisted-installs">Lượt cài đặt được Web Hỗ trợ</Anchor>
 
@@ -59,6 +67,8 @@ Sử dụng Lượt cài đặt được Web Hỗ trợ để kiểm tra tác đ
 * Phân bổ lượt cài đặt tự nhiên do nỗ lực web của bạn thúc đẩy.
 * Kiểm tra sự tương tác giữa các nỗ lực web và các lượt cài đặt không tự nhiên.
 
+<div id="raw-data" />
+
 ### <Anchor target="_blank" href="/marketers/vi/docs/pba-raw-data-reports">Dữ liệu thô</Anchor>
 
 Dữ liệu thô cung cấp thông tin chi tiết chuyên sâu và bao gồm nguồn truyền thông được phân bổ/chịu trách nhiệm đưa người dùng đến trang web.
@@ -67,6 +77,8 @@ Dữ liệu thô cung cấp thông tin chi tiết chuyên sâu và bao gồm ngu
 * **Sự kiện web**: các hành động được thực hiện trên trang web như đăng ký hoặc mua hàng
 * **Lượt cài đặt được Web Hỗ trợ** và hành trình **đường dẫn Chuyển đổi** được cung cấp đầy đủ.
 * Các công cụ BI được sử dụng để phân tích dữ liệu để có thêm thông tin chi tiết.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

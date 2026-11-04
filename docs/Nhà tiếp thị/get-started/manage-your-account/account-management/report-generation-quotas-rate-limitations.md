@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Khái quát:** Cơ chế định mức (giới hạn lưu lượng) giới hạn số lượng báo cáo có thể được tạo mỗi ngày bởi cả API Pull và các trang xuất dữ liệu.
 
+<div id="rate-limits-for-reports" />
+
 ## Giới hạn lưu lượng cho các báo cáo
 
 Định mức giới hạn số lượng báo cáo có thể được tạo mỗi ngày cho mỗi loại báo cáo. Định mức sẽ khác nhau tùy theo gói đăng ký của bạn.
@@ -33,6 +35,8 @@ x-zendesk:
 * **Mạng quảng cáo**: Báo cáo do mạng quảng cáo tạo không được tính vào định mức của nhà quảng cáo.
 * **Ngày**: Định mức theo ngày bắt đầu từ 00:00 UTC
 
+<div id="aggregated-and-analytics-reports" />
+
 ### Báo cáo hợp nhất và phân tích
 
 | Công cụ phân phối dữ liệu | Định mức |
@@ -42,6 +46,8 @@ x-zendesk:
 | API chính | Không giới hạn |
 | API Nhóm người | 60 lệnh gọi/phút/tài khoản |
 | Báo cáo hợp nhất của SKAN | 10 lệnh gọi/phút/tài khoản |
+
+<div id="raw-data" />
 
 ### Dữ liệu thô
 
@@ -58,12 +64,16 @@ x-zendesk:
 
 Để cho dễ hiểu, hãy xem Câu hỏi thường gặp ở cuối các bảng.
 
+<div id="ad-network-postback-reports-daily-quota" />
+
 #### Định mức hàng ngày về dữ liệu thô của mạng quảng cáo
 
 | Nhóm | Loại báo cáo  <br />(mỗi loại báo cáo có một định mức riêng) | Định mức cấp ứng dụng | Định mức cấp tài khoản |
 | --- | --- | --- | --- |
 | Phân bổ | <ul><li>Lượt cài đặt tự nhiên</li><li>Các lượt Cài đặt không tự nhiên</li><li>Nhắm lại mục tiêu Chuyển đổi</li><li>Gỡ cài đặt</li><li>Doanh thu quảng cáo được phân bổ</li><li>Doanh thu quảng cáo tự nhiên</li><li>Doanh thu quảng cáo nhắm mục tiêu lại</li></ul> | 24 | Không áp dụng |
 | Sự kiện trong Ứng dụng | <ul><li>Lượt cài đặt tự nhiên</li><li>Các lượt Cài đặt không tự nhiên</li><li>Nhắm lại mục tiêu Chuyển đổi</li><li>Gỡ cài đặt</li></ul> | 12 | Không áp dụng |
+
+<div id="faq" />
 
 #### **Câu hỏi thường gặp**
 
@@ -73,6 +83,8 @@ x-zendesk:
   Đáp: Có thể. Định mức cho mỗi loại báo cáo là riêng biệt.
 * Hỏi: Tôi có 25 ứng dụng trong tài khoản của mình. Tôi có thể tạo 10 báo cáo về lượt cài đặt tự nhiên cho mỗi ứng dụng không?  
   Đáp: Không thể. Điều này dẫn đến tổng cộng có 250 báo cáo, vượt quá định mức cấp tài khoản là 120 báo cáo.
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

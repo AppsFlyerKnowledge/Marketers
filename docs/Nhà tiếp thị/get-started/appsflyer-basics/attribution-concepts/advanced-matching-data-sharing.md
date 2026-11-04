@@ -22,15 +22,21 @@ x-zendesk:
 ---
 > **At a glance:** Advanced-Matching Data Sharing enables hashed user identifiers, such as email and phone number, to be forwarded from AppsFlyer to selected ad networks, allowing partners to attribute events to ad engagements without a device ID.
 
+<div id="about-advanced-matching-data-sharing" />
+
 ## About Advanced-Matching Data Sharing
 
 As device identifiers become less available, ad networks increasingly rely on first-party data to match ad engagements. Advanced-Matching Data Sharing addresses this gap by forwarding hashed identifiers to supported partners in a privacy-compliant format.
 
 The feature is optional and configured per partner. When enabled on a supported network, AppsFlyer forwards hashed identifiers alongside event data for installs, re-engagements, and in-app events.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > All identifiers must be hashed with SHA-256 before reaching AppsFlyer, either on-device via the SDK or server-side via the server-to-server (S2S) API. Plain-text data is never received, stored, or forwarded, and any value that fails validation is dropped at ingestion.
+
+<div id="supported-partners" />
 
 ### Supported partners
 
@@ -54,6 +60,8 @@ Advanced-Matching Data Sharing is available for the following networks:
 | Roku | rokuads\_int | Hashed email, hashed phone number |
 | Smadex | smadex\_int | Hashed email, hashed phone number, hashed first name, hashed last name |
 
+<div id="the-end-to-end-flow" />
+
 ## The end-to-end flow
 
 Here's what happens from the moment an identifier is retrieved to the moment it reaches a partner:
@@ -64,9 +72,13 @@ Here's what happens from the moment an identifier is retrieved to the moment it 
 4. If Advanced-Matching Data Sharing is enabled for the partner, AppsFlyer forwards the hash alongside the event payload.
 5. The partner uses the hash to match the event to a known user, improving attribution accuracy and match quality.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > Hashed identifiers are only forwarded to partners where Advanced-Matching Data Sharing is enabled. When the setting is turned off for a partner, no hashed data is shared with that partner, even if identifiers are present on the event.
+
+<div id="how-hashed-user-identifiers-reach-appsflyer" />
 
 ## How hashed user identifiers reach AppsFlyer
 
@@ -85,6 +97,8 @@ The SDK performs the following steps in sequence:
 3. Sends only the hashed value to AppsFlyer. The raw input never leaves the device.
 
 The SDK rejects invalid values with an error and doesn't send them to AppsFlyer.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -117,11 +131,15 @@ When sending events via the S2S in-app events API, identifiers must be normalize
 | `last_name_hashed` | Hashed last name |
 | `fb_login_id` | Facebook login ID (not hashed; passed as-is) |
 
+<div id="important-1" />
+
 > 🚧 **Important**
 >
 > Every field in this table (except `fb_login_id`) is validated against the SHA-256 format. AppsFlyer silently drops values that don't match and doesn't forward them to any partner. It processes the other fields in the event normally.
 
 </Accordion>
+
+<div id="why-are-there-two-phone-number-fields" />
 
 ### Why are there two phone number fields?
 
@@ -129,6 +147,8 @@ Networks match events by comparing the hash that AppsFlyer forwards to their own
 
 * `phone_number_hashed`: for Meta and Snapchat. Normalization format before hashing: `16501234567`
 * `phone_number_e164_hashed`: for Google and TikTok. Normalization format before hashing: `+16501234567`
+
+<div id="normalize-and-hash-identifiers" />
 
 ## Normalize and hash identifiers
 
@@ -203,6 +223,8 @@ Send the raw Facebook login ID as provided by the Facebook Login SDK. This field
 
 </Accordion>
 
+<div id="turn-on-advanced-matching-data-sharing" />
+
 ## Turn on Advanced-Matching Data Sharing
 
 Advanced-Matching Data Sharing is controlled per partner and per app and must be explicitly enabled for each network.
@@ -216,9 +238,13 @@ Advanced-Matching Data Sharing is controlled per partner and per app and must be
 
 When Advanced-Matching Data Sharing is turned on, any event that includes one or more supported identifier fields will have those fields forwarded to the partner.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > Turning off Advanced-Matching Data Sharing immediately stops hashed data sharing with that partner. Other integration settings, including postbacks and event data, are not affected.
+
+<div id="privacy-and-data-handling" />
 
 ## Privacy and data handling
 
@@ -228,9 +254,13 @@ When Advanced-Matching Data Sharing is enabled for a partner, AppsFlyer begins f
 * You've updated your privacy policy and, where required, obtained user consent.
 * Your data-sharing practices align with the partner's terms.
 
+<div id="important-2" />
+
 > 🚧 **Important**
 >
 > AppsFlyer does not process or store plain-text Personally Identifiable Information (PII). All identifier fields are validated at ingestion: values that don't conform to the SHA-256 format are dropped and never forwarded to any partner.
+
+<div id="faq" />
 
 ## FAQ
 

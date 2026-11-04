@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Bidalgo, an AppsFlyer integrated partner, is a leading provider of Artificial Intelligence solutions to help app marketers scale their growth.
 
+<div id="set-up-bidalgo-integration" />
+
 ## Set up Bidalgo integration
 
 **Prerequisite:** Before setting up the integration, make sure you contact the partner and open an account with them.
@@ -40,6 +42,8 @@ x-zendesk:
 
 In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations** tab, search for the partner, and make your changes.
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > The Google Ads Customer ID must be entered **without** hyphens.
@@ -50,6 +54,8 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 
 7. Enter the number in the **Google Ads Customer ID** field.
 
+<div id="in-app-events" />
+
 ### In-app events
 
 1. To send in-app event postbacks to Bidalgo, toggle the In-App Events Postback to **ON**.
@@ -59,6 +65,8 @@ In AppsFlyer, go to **Collaborate > Partner Integrations > Active integrations**
 3. Select **Send Revenue** to send all the parameters including the revenue value (if it exists in the event).
 
 4. Click **Save**.
+
+<div id="important-note" />
 
 > 📘 **Important Note**
 >

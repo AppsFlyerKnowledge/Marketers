@@ -30,6 +30,8 @@ x-zendesk:
 
 ![roi360_image.png](https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png)
 
+<div id="cost-aggregation" />
+
 ## Tổng hợp chi phí
 
 **ROI360**:
@@ -43,6 +45,8 @@ Các số liệu sau được cung cấp cho các nhà quảng cáo không đăn
 
 * <Anchor target="_blank" href="/marketers/vi/docs/view-aggregated-cost-data-for-attribution-links">Dữ liệu chi phí theo lượt nhấp</Anchor>.
 * Dữ liệu về lượt nhấp và lượt hiển thị SRN, được cấu hình qua tab **Cost** (Chi phí) của đối tác tích hợp SRN.
+
+<div id="principles-of-cost-data-aggregation" />
 
 ## Nguyên tắc tổng hợp dữ liệu chi phí
 
@@ -71,6 +75,8 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 * UA: Dữ liệu chi phí cho các chiến dịch chuyển đổi người dùng có ít nhất 1 lượt cài đặt được ghi nhận gần đây (nghĩa là trong khoảng 7 ngày qua).
 * Hợp nhất: Dữ liệu chi phí của tất cả các chiến dịch, bao gồm cả những chiến dịch không có bất kỳ lượt cài đặt nào được ghi nhận gần đây (nghĩa là trong khoảng 7 ngày qua). Bảng cho biết thời điểm dữ liệu chỉ có sẵn cho các chiến dịch có ít nhất 1 lượt cài đặt được ghi nhận gần đây.
 * Nếu việc thay đổi tên chiến dịch không được hỗ trợ thì cả hai tên chiến dịch đều hiển thị, một tên có dữ liệu phân bổ và một tên có dữ liệu chi phí. Cả hai tên chiến dịch được hiển thị đều sẽ không bao gồm hình ảnh dữ liệu đầy đủ.
+
+<div id="cost-data-availability-and-reports-table" />
 
 #### Tính khả dụng của dữ liệu chi phí và các báo cáo
 
@@ -111,6 +117,8 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 * Cơ chế này tác động đến các báo cáo dữ liệu hợp nhất và trang tổng quan.
 * Dữ liệu chi phí nhấp chuột có trong báo cáo dữ liệu thô không bị tác động bởi cơ chế ưu tiên.
 
+<div id="example-1" />
+
 > 📄 **Ví dụ**
 >
 > **Kịch bản:** Một mạng quảng cáo báo cáo chi phí mỗi lần nhấp chuột, nhưng bạn quyết định kích hoạt API chi phí của mạng quảng cáo.
@@ -133,6 +141,8 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Danh sách các mạng quảng cáo
 
 <div id="ad-networks-supporting-cost-api" />
@@ -150,6 +160,8 @@ Tải xuống tệp tin: [CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1v
 <Embed title="ROI360—tổng quan về tổng hợp chi phí" typeOfEmbed="iframe" url="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0acJlUFIwS5NUuD8tJ5MA7OmL0N9a55qLp4ib5FYL_eat1H4IWNW9ZCtAEeDa1kTZK5bRD2ez-ee/pubhtml?widget=true&amp;headers=false" providerUrl="https://docs.google.com" height="500px" />
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Đặc điểm và hạn chế
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## Nguyên tắc bảng điều khiển
 
 Bảng điều khiển chứa dữ liệu hiệu suất chiến dịch SKAN và tuân thủ các nguyên tắc sau:
@@ -40,6 +42,8 @@ Bảng điều khiển chứa dữ liệu hiệu suất chiến dịch SKAN và 
   * Các bài đăng lại nhận được vào một ngày nhất định sẽ được xử lý vào cuối ngày theo giờ UTC. Dữ liệu có sẵn vào 08:00 UTC của ngày hôm sau. Có nghĩa là các bài đăng lại nhận được vào thứ Hai có sẵn trong bảng điều khiển vào sáng thứ Ba.
   * Xem <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">thời gian cập nhật bảng điều khiển dự kiến.</Anchor>
 
+<div id="skan-dashboard-view-options" />
+
 ## Các tùy chọn xem bảng điều khiển SKAN
 
 Hiển thị dữ liệu bằng cách sử dụng [ngày cài đặt hoặc ngày có bài đăng lại](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options).
@@ -47,6 +51,8 @@ Hiển thị dữ liệu bằng cách sử dụng [ngày cài đặt hoặc ngà
 **Để chọn tùy chọn hiển thị ngày tháng**, trong AppsFlyer, từ menu bên, chọn **Analyze** (Phân tích) > **SKAN Overview (Tổng quan SKAN).** Trong thanh lọc, chọn tùy chọn ngày **Hiển thị theo**.
 
 Các bộ lọc và tùy chọn hiển thị bổ sung được mô tả trong các phần sau.
+
+<div id="dashboard-use" />
 
 ## Sử dụng bảng điều khiển
 
@@ -284,6 +290,8 @@ Các định nghĩa:
 * **SDK:** SDK AppsFlyer được nhúng trong ứng dụng.
 * **Quy tắc**: <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model">Mô hình phân bổ của AppsFlyer</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### Sự khác biệt khung phân bổ
 
 | Khái niệm | SKAN | AppsFlyer |
@@ -297,6 +305,8 @@ Các định nghĩa:
 | Số lượt cài đặt được báo cáo bởi | <ul><li>**SKAN**: Giới hạn ở các lượt cài đặt không tự nhiên và lượt tải lại không tự nhiên.</li><li>**SDK**: Tất cả các lượt cài đặt được báo cáo. Chỉ những lượt cài đặt lần đầu mới được tính cho mục đích số liệu. Có nghĩa là phân bổ lại bị bỏ qua.</li></ul> | SDK báo cáo tất cả các lượt cài đặt được phân loại bằng Quy tắc thành lượt cài đặt lần đầu và lượt cài đặt lại nhắm mục tiêu lại (phân bổ lại). |
 | Mức độ chi tiết quảng cáo | Chiến dịch, bộ quảng cáo, ID bộ quảng cáo, quảng cáo và ID quảng cáo. | Thứ bậc hoàn chỉnh: Chiến dịch, ID chiến dịch, bộ quảng cáo, các thông số bổ sung như kênh và đối tác. |
 | Lượt tải lại so với lượt cài đặt lại | Lượt tải lại liên quan đến hành động của người dùng Apple ID nhất định. Chúng không song song với phân bổ lại. | Nhắm mục tiêu lại (phân bổ lại tương tác lại) được phản ánh trong bảng điều khiển Nhắm mục tiêu lại. Chúng không song song với lượt tải lại. |
+
+<div id="metric-differences" />
 
 #### Sự khác biệt về số liệu
 
@@ -337,6 +347,8 @@ Các định nghĩa:
 | Múi giờ | Đối với dữ liệu, lượt cài đặt và sự kiện do SKAN báo cáo hiển thị bằng UTC, ngoại trừ dữ liệu Meta và Google SKAN, trong đó múi giờ dựa trên múi giờ được cấu hình tương ứng trong tài khoản Meta và Google của bạn. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Xem thêm**
 >

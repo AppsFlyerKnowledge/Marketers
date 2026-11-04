@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tạo mẫu để tạo cơ sở logic chuyển hướng cho tất cả các liên kết OneLink mà bạn tạo cho các chiến dịch tiếp thị khác nhau của mình. Cần có mẫu để tạo liên kết và trải nghiệm người dùng cuối.
 
+<div id="onelink-templates" />
+
 ## Mẫu OneLink
 
 <Embed title="Trình phát video YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ Mẫu OneLink:
   * **Người dùng mới chưa cài đặt ứng dụng của bạn**: Vào đúng cửa hàng ứng dụng hoặc URL web
   * **Người dùng hiện có đã cài đặt ứng dụng của bạn**: Mở ứng dụng qua Liên kết Ứng dụng Android, Liên kết Chung iOS hoặc lược đồ URI. Điều này liên quan đến một số công việc cần nhà phát triển thiết lập.
   * **Lưu ý**: Cài đặt chuyển hướng cho trang web hoặc cửa hàng ứng dụng có thể bị ghi đè ở cấp liên kết.
+
+<div id="create-a-onelink-template" />
 
 ## Quy trình
 
@@ -60,6 +64,8 @@ Mẫu OneLink:
 
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. Trong trường tên mẫu của **OneLink**, hãy nhập tên.  
+
+   <div id="note" />
 
    > 📘 **Lưu ý**
    >
@@ -201,6 +207,8 @@ Người dùng ứng dụng hiện có thường mong đợi được chuyển h
 
 5. Nhấp vào **Update OneLink template** (Cập nhật mẫu OneLink).
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > * Khi bạn lưu hoặc cập nhật mẫu OneLink của mình, AppsFlyer sẽ tự động tạo tệp tin AASA và/hoặc Liên kết Tài sản Kỹ thuật số JSON để xác minh miền ứng dụng của bạn và lưu trữ miền ứng dụng đó cho bạn. Điều này rất quan trọng để Liên kết Chung và Liên kết Ứng dụng của bạn hoạt động đúng cách.
@@ -239,6 +247,8 @@ Bạn có thể tùy chỉnh mã QR được tạo qua OneLink bằng cách:
 
 </Accordion>
 
+<div id="key-traits-and-limitations" />
+
 <div id="traits-and-limitations" />
 
 <Accordion title="Đặc điểm và hạn chế">
@@ -255,6 +265,8 @@ Bạn có thể tùy chỉnh mã QR được tạo qua OneLink bằng cách:
 </Accordion>
 
 Bạn có câu hỏi về các mẫu OneLink? Hãy xem phần <Anchor target="_blank" href="/marketers/vi/docs/onelink-troubleshooting-and-faq#câu-hỏi-thường-gặp-về-mẫu-onelink">Câu hỏi thường gặp</Anchor> của chúng tôi!
+
+<div id="next-step" />
 
 ## Bước tiếp theo
 

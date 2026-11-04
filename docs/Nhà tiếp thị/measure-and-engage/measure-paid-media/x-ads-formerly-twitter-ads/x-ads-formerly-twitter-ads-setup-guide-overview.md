@@ -24,9 +24,13 @@ x-zendesk:
 
 <Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 ## Quảng cáo ứng dụng di động trên X Ads
 
 Quảng cáo ứng dụng di động X Ads là một phương thức quảng cáo ứng dụng trên X Ads. Phương thức này cho phép các nhà quảng cáo có thể quảng cáo ứng dụng di động của họ bằng thiết kế thẻ Ứng dụng tuyệt vời thúc đẩy lượt cài đặt, tương tác với ứng dụng và liên kết sâu. Người dùng có thể dễ dàng cài đặt và tương tác trực tiếp với ứng dụng từ dòng thời gian X Ads.
+
+<div id="x-ads-user-privacy" />
 
 ## Quyền riêng tư của người dùng X Ads
 
@@ -44,6 +48,8 @@ Thông qua Chương trình AMM, nhà quảng cáo có thể nhận được dữ
 Lưu ý rằng không thể xuất dữ liệu cấp người dùng nhận được trước khi tham gia chương trình AMM.
 
 Để biết thêm thông tin chi tiết, hãy liên hệ với Người quản lý Tài khoản X Ads của bạn.
+
+<div id="x-ads-and-appsflyer-skan-interoperation" />
 
 ## Tương tác giữa X Ads và AppsFlyer SKAN
 

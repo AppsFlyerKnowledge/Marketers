@@ -54,12 +54,18 @@ Quá trình thiết lập được thực hiện từ trang **Tích hợp hoạt
 
 Thẻ Integration được chia thành các phần khác nhau như được mô tả dưới đây.
 
+<div id="activate-partner" />
+
 ### Kích hoạt đối tác
 
 Trong **lần đầu truy cập** tại đây, bạn sẽ cần phải bật **Activate Partner** để kích hoạt việc thiết lập các thông số của thẻ tích hợp. Nút bật/tắt phải luôn ở trạng thái bật trong thời gian bạn làm việc với đối tác.  
 Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">kích hoạt đối tác</Anchor>.
 
+<div id="general-settings" />
+
 ### Cài đặt chung
+
+<div id="advanced-data-sharing" />
 
 #### Chia sẻ dữ liệu nâng cao
 
@@ -79,10 +85,14 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/partner-
 | af\_sub2 | af\_sub2 |
 | app\_version | app\_version |
 
+<div id="amplitude-eu-data-center" />
+
 #### Trung tâm Dữ liệu Liên minh Châu Âu của Amplitude
 
 Khi **Amplitude EU Data Center** ở trạng thái tắt, bài đăng lại lượt cài đặt sẽ được gửi đến trung tâm dữ liệu của Hoa Kỳ.  
 Để gửi các bài đăng lại lượt cài đặt tới trung tâm dữ liệu Liên minh Châu Âu của Amplitude, hãy bật Amplitude EU Data Center.
+
+<div id="api-key" />
 
 #### Mã khóa API
 
@@ -104,9 +114,13 @@ Amplitude kết nối với AppsFlyer thông qua Mã khóa API duy nhất. Nếu
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Tiếp tục cấu hình Amplitude trong Bảng điều khiển AppsFlyer.
 
+<div id="default-postbacks" />
+
 ### Postback Mặc định
 
 AppsFlyer chỉ gửi các đăng lại tự động tới các lượt cài đặt của người dùng Amplitude khi chúng được phân bổ cho Amplitude.
+
+<div id="in-app-event-settings" />
 
 ### Cài đặt sự kiện trong ứng dụng
 
@@ -121,6 +135,8 @@ Khi bạn đã lưu cấu hình, AppsFlyer sẽ gửi dữ liệu sau tới Ampl
 * Tên chiến dịch
 
 Gửi IDFA cho các thiết bị iOS phải tuân theo <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework">quyết định có đồng ý ATT hay không của người dùng và cài đặt Quyền riêng tư Nâng cao</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 ### Đăng lại sự kiện trong ứng dụng
 
@@ -159,6 +175,8 @@ Doanh thu quảng cáo không được hỗ trợ khi tích hợp với đối t
 Quyền không khả dụng đối với Amplitude.
 
 </Accordion>
+
+<div id="viewing-attribution-data-in-the-amplitude-console" />
 
 ## Xem dữ liệu phân bổ trong bảng điều khiển của Amplitude
 

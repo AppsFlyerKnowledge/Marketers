@@ -59,6 +59,8 @@ Các cột trong bảng từ điển là:
   * **Enum n char**: Các trường Enum chỉ có thể chứa các giá trị cụ thể. Ví dụ: tiền tệ chi phí có 3 ký tự và chỉ có thể chứa mã tiền tệ như được chỉ định
   * **Enum 5 ký tự boolean:** Giá trị của trường có thể là `TRUE` hoặc `FALSE`
 
+<div id="tip" />
+
 > 👍 **Lời khuyên**
 >
 > * Để sắp xếp bảng, hãy nhấp vào tên cột.

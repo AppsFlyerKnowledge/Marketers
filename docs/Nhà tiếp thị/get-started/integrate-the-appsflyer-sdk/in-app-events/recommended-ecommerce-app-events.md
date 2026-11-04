@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Khái quát:** Đo lường chất lượng của người dùng trong suốt hành trình người dùng của họ bằng cách ghi nhận các sự kiện trong ứng dụng được đề xuất này cho ứng dụng Thương mại điện tử của bạn.
 
+<div id="-ecommerce" />
+
 ## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" /> Thương mại điện tử
 
 Ứng dụng Thương mại điện tử cho phép người mua dễ dàng tìm kiếm và mua hàng trực tuyến. Các sự kiện điển hình mà bạn nên ghi nhận là tìm kiếm, giao dịch mua, thêm vào giỏ hàng và thêm vào danh sách yêu thích.
@@ -34,6 +36,8 @@ Việc ghi nhận các sự kiện có thể giúp bạn xác định:
 * Có bao nhiêu người mua đã hoàn tất thanh toán
 * Có bao nhiêu người mua định kỳ và bao nhiêu người mua một lần
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > * Hãy nhớ đọc các <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#thiết-lập-sự-kiện-trong-ứng-dụng">hướng dẫn</Anchor> dành cho nhà tiếp thị về cách triển khai các sự kiện trong ứng dụng.
@@ -44,6 +48,8 @@ Việc ghi nhận các sự kiện có thể giúp bạn xác định:
 > Để biết thêm thông tin về cách ghi lại các sự kiện trong ứng dụng, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Cấu trúc đề xuất cho các sự kiện đã xác định trước
 
@@ -270,6 +276,8 @@ Thời điểm người dùng truy cập trang cảm ơn sau khi mua hàng thàn
 | af\_receipt\_id | ID đặt xe<br /><br />**Thông số bắt buộc cho CRITEO và Google Ad Words để xác thực mua** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Cấu trúc đề xuất cho các sự kiện tùy chỉnh
 

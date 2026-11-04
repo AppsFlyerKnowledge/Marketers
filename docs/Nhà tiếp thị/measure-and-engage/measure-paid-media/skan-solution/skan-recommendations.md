@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance**: Use SKAN recommendations to optimize your conversion value settings and receive more accurate post-install activity measurements.
 
+<div id="overview" />
+
 ## Tổng quan
 
 SKAdNetwork (SKAN), part of Apple iOS, lets advertisers measure campaign performance while simultaneously preserving user privacy. With SKAdNetwork, post-install activity is measured using only numbers—conversions values— between 0-63.
