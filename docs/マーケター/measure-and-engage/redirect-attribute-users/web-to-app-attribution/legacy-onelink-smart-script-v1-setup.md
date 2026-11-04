@@ -66,7 +66,7 @@ OneLink Smart Scriptには、次の2つのバージョンがあります。
 | --- | --- | --- |
 | oneLinkURL（必須） | <ul><li>OneLinkテンプレートのドメインとテンプレートIDを指定します。**注意：** OneLinkのカスタムリンクURLではありません。</li><li>例：**yourbrand.onelink.me/A1b2**</li><li>ブランドドメインの例：**click.yourbrand.com/A1b2**</li></ul> |  |
 | pidKeysList（メディアソース） | <ul><li>受信URLに含まれるメディアソースのパラメータのうち、送信URLのメディアソース（pid）に値を引き継ぐものを、すべて指定します。</li><li>例：['af\_pid', 'utm\_source']</li></ul> |  |
-| pidOverrideList | <ul><li>送信リンクでメディアソースの値を変更する場合は、受信URL内の元の値と、置き換え後の値を組み合わせて指定します。</li><li>例：`{<br />'twitter': 'twitter_int',<br />'snapchat': 'snapchat_int',<br />'some_social_net': 'some_social_net_int'<br />}`</li></ul> |  |
+| pidOverrideList | <ul><li>送信リンクでメディアソースの値を変更する場合は、受信URL内の元の値と、置き換え後の値を組み合わせて指定します。</li><li>例：`{`<br />`'twitter': 'twitter_int',`<br />`'snapchat': 'snapchat_int',`<br />`'some_social_net': 'some_social_net_int'`<br />`}`</li></ul> |  |
 | pidStaticValue | <ul><li>該当するパラメータが見つからない場合に、代わりに使用するメディアソースを指定します。</li><li>pidKeysListで指定したメディアソースパラメータが見つからない場合、送信URLのメディアソース（pid）にはpidStaticValueが使用されます。</li><li>例：'website'または'landing\_page'</li></ul> |  |
 | campaignKeysList（キャンペーン） | <ul><li>受信URLに含まれるキャンペーンのパラメータのうち、送信URLのキャンペーン（c）に値を引き継ぐものを、すべて指定します。</li><li>例：['af\_campaign', 'utm\_campaign']</li></ul> |  |
 | campaignStaticValue | <ul><li>該当するパラメータが見つからない場合に、代わりに使用するキャンペーンを指定します。</li><li>campaignKeysListで指定したキャンペーンパラメータが見つからない場合、送信URLのキャンペーン（c）にはcampaignStaticValueが使用されます。</li><li>例：'website'または'landing\_page'</li></ul> |  |
