@@ -316,11 +316,11 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
        >
        > 在上文的示例场景中，市场人员和开发人员共同决定将水果种类设置为**deep\_link\_value**，然后开发人员将该参数值设置为动态，这样市场人员就能够对任何水果页面启用深度链接，无需再引入开发人员。
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=apples``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=apples...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=bananas``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=bananas...`
        >
-       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month``&deep_link_value=peaches``...`
+       > `https://onelink-sample-app.onelink.me/H5hv?pid=Email&c=fruit_of_the_month&deep_link_value=peaches...`
 
 2. 开发人员确认应用能基于指定的参数和值进行跳转后，请在链接设置页面的**深度链接与跳转**部分输入您与开发人员共同设定的**深度链接值**。
 3. 【可选】如果您需要通过深度链接把用户带入多个应用内体验（比如先跳转到产品页然后领取优惠券），可以在深度链接数据内容里再添加一个**其他深度链接值**（使用deep\_link\_sub1参数）。您还可以在**其它参数**部分进一步添加更多深度链接参数（deep\_link\_sub2-10）。

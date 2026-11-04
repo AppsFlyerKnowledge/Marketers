@@ -448,7 +448,8 @@ Ad fraud attempts to illegally generate attribution revenue by defrauding market
 Unique, user-resettable identifier for Google Play Android users. It is used by marketers to record data so they can deliver customized advertising.
 
 #### GCD
-**Get Conversion Data**General name for SDK methods that, upon install, fetch attribution data into the SDK.
+**Get Conversion Data**  
+General name for SDK methods that, upon install, fetch attribution data into the SDK.
 
 #### Geo
 Also, **Country**  

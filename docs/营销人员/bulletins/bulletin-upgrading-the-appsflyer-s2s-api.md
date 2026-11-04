@@ -25,7 +25,7 @@ x-zendesk:
 | **生效日期** | 2021年12月 |
 | **前期准备**： |  |
 | **亟需处理** | 2. URL/span><Anchor target="_blank" href="https://api2.appsflyer.com/inappevent">:</Anchor>[https://api2.appsflyer.com/inappevent/](https://api2.appsflyer.com/inappevent/)   <br />   To <Anchor target="_blank" href="https://api3.appsflyer.com/inappevent">https://api3.appsflyer.com/inappevent</Anchor> |
-| **建议采取的行动** |  |
+| **<u>建议采取的行动</u>** |  |
 | **须知事项** |  |
 |  |  |
 |  |  |

@@ -210,7 +210,8 @@ x-zendesk:
 
 **请按以下步骤在您的WordPress网站中添加智能横幅代码**：
 
-1. 进入您的WordPress面板，点击Appearance > **Theme Editor**。 **打开Edit Themes页面，页面中会显示您网站的CSS代码。**
+1. 进入您的WordPress面板，点击Appearance > **Theme Editor**。  
+   **打开Edit Themes页面，页面中会显示您网站的CSS代码。**
 2. 在Theme Files下，点击**Theme Header (header.php)**。
 3. 界面显示代码，将智能横幅代码粘贴到代码中的&lt;head>下方。
 4. 点击Update File。

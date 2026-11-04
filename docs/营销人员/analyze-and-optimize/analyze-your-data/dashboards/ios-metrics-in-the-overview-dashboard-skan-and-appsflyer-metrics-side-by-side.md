@@ -34,7 +34,7 @@ x-zendesk:
 
 通过并列显示两种归因框架的指标，您可以看到两组投放效果数据，便于您对两者进行对比，并选出最能体现真实投放效果的指标。
 
-如果面板中未显示SKAN指标，您需要更新[表格设置](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table)。
+<mark>如果面板中未显示SKAN指标，您需要更新[表格设置](/docs/ios-metrics-in-the-overview-dashboard-skan-and-appsflyer-metrics-side-by-side#display-skan-metrics-in-the-table)。</mark>
 
 并列视图能让您深入考察投放指标。您可以利用该视图从以下各方面来评估投放效果指标：
 

@@ -173,7 +173,7 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
 
 * 格式：CSV文件
 * 行数上限：640 + 标题行；共641行。
-* 标题行中的栏位必须与下表所列的栏位完全一致。建议您使用超链接中的CSV示例文件作为模板，完成<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor>和<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>的解析模式映射配置。
+* 标题行<mark>中的栏位必须与下表所列的栏位完全一致。</mark>建议您使用超链接中的CSV示例文件作为模板，完成<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor>和<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>的解析模式映射配置。
 * 栏位字段切勿以下列字符开头：`=`、`+`、`-`和`@`。
 
 ### 解析模式中的CSV文件内容及格式要求
@@ -182,11 +182,11 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
 | --- | --- | --- | --- |
 | conversion\_value | 在下列场景中必须配置：<ul><li>使用SKAN 3及以下</li><li>SKAN 4中postback\_sequence\_index为0时</li></ul> | 1–63的整数值 | 同一个精细转化值可对应多个事件。详见示例说明。 |
 | coarse\_conversion\_value | 仅适用于SKAN 4 | 字符串：<ul><li>low</li><li>medium</li><li>high</li></ul> | 同一个粗略转化值可对应多个事件。 |
-| event\_name | 是 | 字符串 | 即应用内事件的名称。可以是AppsFlyer SDK从未上报过的事件。<br /><br />请注意：应用内事件名称区分大小写。<br /><br />【推荐方式】：建议将收入事件的名称设置为af\_skad\_revenue。 |
+| event\_name | 是 | 字符串 | 即应用内事件的名称。可以是AppsFlyer SDK从未上报过的事件。<br /><br />请注意：应用内事件名称<mark>区分大小写。</mark><br /><br />【推荐方式】：建议将收入事件的名称设置为af\_skad\_revenue。 |
 | event\_value | 否 | 字符串 | 由开发人员设置的字符串，其中的数据需由广告主侧的内部系统解析。这些字符串一般为JSON格式。 |
 | min\_revenue | 否 | 整数或浮点数 | 请使用min\_revenue和max\_revenue来设置以美元为单位的收入范围。<ul><li>如果转化值不需要关联到收入，请将min\_revenue和 max\_revenue设置为空值。</li><li>min\_revenue的值不包含在收入范围内。比如该参数的值为0时，其收入范围中的最小值无限接近并大于0，类似于0.0001。</li><li>max\_value的值包含在收入范围中。</li><li>示例：假设min\_revenue为0且 max\_revenue为4，则收入范围是0.0001-4</li><li>max\_revenue必须大于min\_revenue</li></ul>**请注意：** 如果您使用Excel编辑文件，请先在列格式中设置逗号分隔符，然后再保存。切勿使用货币格式，否则Excel会自动在生成的CSV文件中添加$符号。 |
 | max\_revenue | 否 |  | 如果您设置了非空值的min\_revenue，则max\_revenue的值必须大于 0。<br /><br />详见min\_revenue部分的说明。 |
-| event\_revenue\_usd | 否 |  | 自2021年6月7日起已弃用。请使用min\_revenue和max\_revenue |
+| ~~event\_revenue\_usd~~ | 否 |  | 自2021年6月7日起已弃用。请使用min\_revenue和max\_revenue |
 | event\_counter | 是 | 整数 | <ul><li>解析后得出的事件重复次数，通常表示用户完成某个操作的次数。</li><li>最小值为1。</li></ul>示例：如果用户完成某事件共5次，则会生成5个事件。<br /><br />注意事项：如果您发送收入，则最终上报的总收入是事件收入乘以 event\_counter值得出的金额（以美元计）。举例来说，假设min\_revenue = 0、max\_revenue = 3且event\_counter = 4，则上报的总收入为1.5 X 4 = 6。<br /><br />详见示例说明。 |
 | hours\_from\_install | 是 | 整数 | <ul><li>激活后的小时数</li><li>最小值：1</li><li>最大值：1512（63天）</li><li>如果一个转化值对应多个事件，则所有这些事件（行）中该参数的值必须完全一致。不同转化值所对应的事件中，该参数的值可以不同。</li></ul>AppsFlyer会使用该信息来推算并设置激活日期，具体如下：<ul><li>根据SKAN 4的回传推算激活日期的方式如下：激活日期 = 回传送达时间 - [累计窗口期时长] - [平均回传延时]。<ul><li>第1次回传：激活日期 = 回传接收时间 - 48h - 36h</li></ul></li><li>根据SKAN 3的回传推算激活日期的方式如下：激活日期 = 回传送达时间 - 36小时 - [用户上次打开应用的时间距激活的平均小时数]。<ul><li>上述公式中的平均激活后小时数默认为12小时。</li><li>对于转化值为0的事件（即激活），则平均激活后小时数为0。</li></ul></li></ul> |
 | postback\_sequence\_index | 仅在SKAN 4中是必须配置的参数 | 整数：<ul><li>0</li><li>1</li><li>2</li></ul> | 对于精细转化值，该参数的值只能为0。 |

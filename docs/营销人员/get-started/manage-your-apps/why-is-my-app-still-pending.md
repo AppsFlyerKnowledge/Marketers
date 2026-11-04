@@ -47,7 +47,8 @@ For the status of the app to change to active, AppsFlyer checks its status in th
 **To manually update the app status:**
 
 1. From the top menu bar, click **My Apps**.
-2. Next to the pending app, click **Refresh Status.** If the status of the app is unchanged, the app is still displayed as Pending. If it has been updated, the status is shown as Live, and the logo is updated.  
+2. Next to the pending app, click **Refresh Status.**  
+   If the status of the app is unchanged, the app is still displayed as Pending. If it has been updated, the status is shown as Live, and the logo is updated.  
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 

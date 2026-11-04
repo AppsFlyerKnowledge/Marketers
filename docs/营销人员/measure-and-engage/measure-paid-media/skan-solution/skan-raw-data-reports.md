@@ -128,7 +128,8 @@ x-zendesk:
       <td>
         **首次应用激活**
 
-        SKAN上报*redownload=false*,代表该用户（以Apple ID表示）首次下载相关应用。 *详情请见[可下载的激活报告示例](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4rNJAio8Ub2cffUEiYhzdavVfXaJAD6OpjhRBjVpGQsAlibOWCkZpfLl29n1OCDBZ2eToO4_gOvbl/pub?gid=1472391837&single=true&output=csv)（CSV格式）。*
+        SKAN上报*redownload=false*,代表该用户（以Apple ID表示）首次下载相关应用。  
+        *详情请见[可下载的激活报告示例](https://docs.google.com/spreadsheets/d/e/2PACX-1vS4rNJAio8Ub2cffUEiYhzdavVfXaJAD6OpjhRBjVpGQsAlibOWCkZpfLl29n1OCDBZ2eToO4_gOvbl/pub?gid=1472391837&single=true&output=csv)（CSV格式）。*
 
         **Data Locker中的主题名称**：skad\_installs
       </td>

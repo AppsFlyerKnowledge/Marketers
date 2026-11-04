@@ -129,7 +129,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 有效负载参数分为用户标识符和事件参数。
 
-* \_user\_id您必须至少发送一个用户ID参数。
+* \_user\_id<mark>您必须至少发送一个用户ID参数。</mark>
 * event\_根据需要发送必需参数和可选参数。
 
 <div id="user-identifier-parameters-send-at-least-one-parameter" />
@@ -290,7 +290,8 @@ print(response.text.encode('utf8'))
 **要从访问者的浏览器获取afUserId：**
 
 1. 在您的浏览器中，访问您的网站。
-2. 右键单击，选择 ***检查***浏览器的检查元素窗口打开。
+2. 右键单击，选择 ***检查***  
+   浏览器的检查元素窗口打开。
 
    [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
 3. 转到 (A) ***应用程序*** 选项卡。

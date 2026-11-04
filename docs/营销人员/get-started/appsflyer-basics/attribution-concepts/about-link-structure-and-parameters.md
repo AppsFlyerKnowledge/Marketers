@@ -77,8 +77,8 @@ x-zendesk:
 | 需包含的信息 | <ul><li>[媒体渠道](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[广告系列](#c)</li><li>[子渠道ID/次级子渠道ID](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | <ul><li>[媒体渠道](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[广告系列](#c)</li><li>[子渠道ID/次级子渠道ID](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> |
 | 基础链接 | `{subdomain}`.onelink.me | app.appsflyer.com |
 | 独立标识符 | 模板ID | app\_id |
-| 链接结构 | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
-| 示例 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
+| 链接结构 | `https://{subdomain}.onelink.me/`<br />`{templateid}?pid={media_source}`<br />`&af_siteid={ApplicationID}`<br />`&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
+| 示例 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int`<br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`<br />`c=GreatCampaign&af_siteid=A1b1` |
 
 <div id="important" />
 

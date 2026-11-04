@@ -50,9 +50,10 @@ Campaign and ad hierarchy data is available in dashboards and raw data as follow
 
 **To connect to Google Ads:**
 
-1. In AppsFlyer, from the side menu, select **Settings**> **Brand Bundles**
+1. In AppsFlyer, from the side menu, select **Settings** > **Brand Bundles**
 2. Go to **Google Ads integration** tab.
-3. Click **Connect account.** The Google Ads sign-in page opens.
+3. Click **Connect account.**  
+   The Google Ads sign-in page opens.
 4. Sign in to the Google Ads account. Complete the process to give AppsFlyer access.
 
 **Manage Google Ads connections**

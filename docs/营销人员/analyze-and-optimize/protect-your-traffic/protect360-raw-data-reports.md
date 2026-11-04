@@ -169,7 +169,7 @@ x-zendesk:
 | event\_name | 【可选】适用于归因后识别的应用内事件假量<br /><br />按应用内事件筛选数据，让报告仅呈现特定的事件，  其中可包含一个或多个事件。<br /><br />示例：`&event_name=af_purchase,af_login` | 字符串 | 否 |
 | additional\_fields=rejected\_reason\_value | 【可选】适用于归因后识别的应用内事件假量<br /><br />**<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor>** 字段用于说明被劫持的激活/应用内事件的实际助攻渠道，可能出现的值为<Anchor target="_blank" href="/marketers/zh/docs/raw-data-field-dictionary#attribution::2a6fd501">**contributor[1-3]**</Anchor>或者**organic**。 | 字符串 | 否 |
 | detect-from | 【可选】适用于归因后识别的激活假量<br /><br />假量检测日期范围的起始时间（默认为from）。 | YYYY-MM-DD | 否 |
-| detect-to | 【可选】适用于归因后识别的激活假量<br /><br />假量检测日期范围的结束时间（默认为to）。 | YYYY-MM-DD | 否 |
+| detect-to | 【可选】适用于归因后识别的激活假量<br /><br />假量检测日期范围的结束时间（默认为<u>to</u>）。 | YYYY-MM-DD | 否 |
 
 </Accordion>
 
@@ -325,7 +325,7 @@ Protect360原始数据中包含由再营销广告代带来的激活和应用打�
 
 Protect360再营销原始数据中包含实时拦截以及归因后识别的假量，具体如下：
 
-<table><thead><tr><th>报告 </th><th>导出数据</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>激活假量</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>归因后判定为假量的激活</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\*再互动数据不可用</span><span><br/></span> </td></tr></tbody></table>
+<table><thead><tr><th>报告 </th><th>导出数据</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>激活假量</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>归因后判定为假量的激活</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\*再互动数据不可用</span><span></span><br/> </td></tr></tbody></table>
 
 <div id="hijacked-installs-attribution-correction" />
 

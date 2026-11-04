@@ -174,7 +174,7 @@ x-zendesk:
 1. **获取Project ID**（项目ID）：
    1. 进入<Anchor target="_blank" href="https://console.firebase.google.com/">FCM Console</Anchor>（FCM控制台）。
    2. 选择一个项目。
-   3. 进入**Project Overview**（项目总览）> **Project settings（项目设置）。**
+   3. 进入**Project Overview**（项目总览）> **Project settings（项目设置）。**  
 
       ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
    4. 复制Project ID。您会在后面的步骤中用到这个ID。

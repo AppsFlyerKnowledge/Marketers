@@ -40,7 +40,7 @@ x-zendesk:
 
 **请按以下方式启用或修改该对接：**
 
-1. **启用方式：** 从AppsFlyer的侧边栏中选择**协作**> **Partner Marketplace**。  
+1. **启用方式：** 从AppsFlyer的侧边栏中选择**协作** > **Partner Marketplace**。  
    **修改方式**：从AppsFlyer的侧边栏中选择**协作** > **活跃对接**。
 2. 搜索并选择**Pinterest**。
 3. 点击**设置对接**。界面会跳转到对接设置页。
