@@ -89,7 +89,7 @@ LINE 広告プラットフォームは、一意の LINE\_Ad\_account\_id と LI
 > 📄 **例**
 >
 > ```http
-> https://app.appsflyer.com/id123456789?pid=example_int;...line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&...;redirect=false
+> https://app.appsflyer.com/id123456789?pid=example_int;...<mark>line_ad_account_id=A123456789123&line_ad_app_id=1234567891234&</mark>...;redirect=false
 > ```
 
 <div id="default-postbacks" />

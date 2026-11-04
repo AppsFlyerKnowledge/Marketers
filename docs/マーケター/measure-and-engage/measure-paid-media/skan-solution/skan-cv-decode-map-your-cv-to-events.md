@@ -211,7 +211,7 @@ CVは、1つ以上のアプリ内イベントにマッピングされます。
 
 * 形式：CSVファイル
 * 最大行数：640行＋ヘッダー行、合計641行。
-* ヘッダー行には、ここに示す列名をすべて、表記を変えずに含める必要があります。推奨：添付のサンプルファイルをテンプレートとして使用してください。 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor>および<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>のデコードCSVサンプルを参照してください。
+* ヘッダー行<mark>には、ここに示す列名をすべて、表記を変えずに含める必要があります。</mark>推奨：添付のサンプルファイルをテンプレートとして使用してください。 <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=0&single=true&output=csv">SKAN 3</Anchor>および<Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSCbqgR0D0hqJni36FTOr0MEAaIJSx9h2qaUQ-vWmCUGj7j_-00Ap3J8k4LohMQPndkooLrFFpFPtnH/pub?gid=1187444449&single=true&output=csv">SKAN 4</Anchor>のデコードCSVサンプルを参照してください。
 * 列の先頭文字に、`=`、`+`、`-`、`@`を使用しないでください（編集済み）。
 
 ### デコードCSVファイルの仕様
@@ -220,11 +220,11 @@ CVは、1つ以上のアプリ内イベントにマッピングされます。
 | --- | --- | --- | --- |
 | conversion\_value | 以下の場合に必須：<ul><li>SKAN 3以前</li><li>SKAN 4でpostback\_sequence\_indexが0の場合</li></ul> | 1〜63の整数 | 同じ細かいCVを複数行に記載できます。詳細は、例を参照してください。 |
 | coarse\_conversion\_value | SKAN 4のみが対象 | 文字列：<ul><li>low</li><li>medium</li><li>high</li></ul> | 同じ粗いCVを複数行に記載できます。 |
-| event\_name | はい | 文字列 | アプリ内イベント。 AppsFlyerに既に存在するイベントである必要はありません。<br /><br />注意！アプリ内イベント名は、大文字と小文字を区別します。<br /><br />［推奨］収益のイベント名にはaf\_skad\_revenueを使用します。 |
+| event\_name | はい | 文字列 | アプリ内イベント。 AppsFlyerに既に存在するイベントである必要はありません。<br /><br />注意！アプリ内イベント名は、<mark>大文字と小文字を区別します。</mark><br /><br />［推奨］収益のイベント名にはaf\_skad\_revenueを使用します。 |
 | event\_value | いいえ | 文字列 | 開発者が設定する文字列。広告主が自社システムでデコードするためのデータを含みます。通常はJSON形式です。 |
 | min\_revenue | いいえ | 整数または浮動小数点数 | min\_revenueとmax\_revenueを使用して、USDの収益範囲を設定します。<ul><li>CVに収益を関連付けない場合は、min\_revenueとmax\_revenueを空欄にします。</li><li>min\_revenueに設定した値は、範囲に含まれません。 0の場合は、0より大きい値が対象です。たとえば、0.0001のような値です。</li><li>max\_valueに設定した値は、範囲に含まれます。</li><li>例：min\_revenueが0、max\_revenueが4の場合、範囲は0.0001〜4です。</li><li>max\_revenueは、min\_revenueより大きい値である必要があります。</li></ul>**注意！** Excelでファイルを作成する場合は、CSVに$記号が入らないよう、保存前に列の書式を通貨ではなく桁区切り形式に変更してください。 |
 | max\_revenue | いいえ |  | min\_revenueを入力する場合、max\_revenueには0より大きい値が必要です。<br /><br />説明は、min\_revenueを参照してください。 |
-| event\_revenue\_usd | いいえ |  | 2021年6月7日以降、廃止されています。 min\_revenueとmax\_revenueを使用してください。 |
+| ~~event\_revenue\_usd~~ | いいえ |  | 2021年6月7日以降、廃止されています。 min\_revenueとmax\_revenueを使用してください。 |
 | event\_counter | はい | 整数 | <ul><li>デコード時に、そのイベントを生成する回数。通常は、ユーザーがその操作を実行した回数を表します。</li><li>最小値は1です。</li></ul>例：ユーザーが同じイベントを5回実行した場合、5件のイベントが生成されます。<br /><br />注意点：収益を送信する場合、報告される金額（USD）には、event\_counterの値が掛けられます。つまり、min\_revenue=0、max\_revenue=3、event\_counter=4の場合、報告される総収益は1.5×4＝6です。<br /><br />例を参照してください。 |
 | hours\_from\_install | はい | 整数 | <ul><li>インストール後の経過時間（時間単位）</li><li>最小値：1</li><li>最大値：1,512（63日）</li><li>同じconversion\_valueに対応する行には、すべて同じ値を設定する必要があります。 conversion\_valueが異なれば、別の値を設定できます。</li></ul>AppsFlyerは、この値を使用して、以下のようにインストール日を算出・設定します。<ul><li>SKAN V4のポストバックでは、次の式を使用します。インストール日＝ポストバック到着時刻−［累積ウィンドウ期間］−［平均ポストバック遅延時間］。<ul><li>ポストバック1：インストール日＝ポストバック到着時刻−48時間−36時間</li></ul></li><li>SKAN V3のポストバックでは、次の式を使用します。インストール日＝ポストバック到着時刻−36時間−［最終アクティブ時間帯の平均値］。<ul><li>［最終アクティブ時間帯の平均値］のデフォルトは12時間です。</li><li>CVが0の場合、最終アクティブ時間帯の平均値は0に設定されます。</li></ul></li></ul> |
 | postback\_sequence\_index | 必須。ただし、SKAN 4のみが対象 | 整数：<ul><li>0</li><li>1</li><li>2</li></ul> | 細かいCVの場合、受信する値は0のみです。 |

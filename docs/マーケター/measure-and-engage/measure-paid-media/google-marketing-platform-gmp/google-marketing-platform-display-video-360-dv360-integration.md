@@ -228,7 +228,7 @@ AppsFlyerがGMPを照会すると、レスポンスにてリストされたパ�
 
 DV360のクリック数をAppsFlyerで計測したい場合、DV360の管理画面にてAppsFlyer計測リンクを追加する必要があります。その際に、計測URL内のキャンペーン名が、GMPの**Placement ID**と一致することを確認してください。こうすることで、AppsFlyerはクリックデータを正しいキャンペーンに追加することができます。
 
-AppsFlyerで**クリック**をカウントする場合は、次のリンクを使用します。   
+AppsFlyerで**クリック**をカウントする場合は、次のリンクを使用します。
 
 ```http
 https://app.appsflyer.com/ADD-APP-ID?pid=dv360_int&af_siteid=${UNIVERSAL_SITE_ID}

@@ -128,7 +128,7 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 Payload パラメーターは、ユーザー識別子とイベントパラメータに分かれています。
 
-* User ID：少なくとも1つのユーザーIDパラメータを送信する必要があります。
+* User ID：<mark>少なくとも1つのユーザーIDパラメータを送信する必要があります。</mark>
 * Event：必須パラメータと、必要に応じてオプションのパラメータを送信してください。
 
 <div id="user-identifier-parameters-send-at-least-one-parameter" />
@@ -152,7 +152,7 @@ Payload パラメーターは、ユーザー識別子とイベントパラメー
 | <span id="timestamp"></span>timestamp | 任意 | イベントが発生した時間（ミリ秒単位）です。13桁の <Anchor target="_blank" href="https://www.unixtimestamp.com/">Unix タイムスタンプ</Anchor>として送信してください。<ul><li>タイムスタンプが送信されない場合は、サーバー時刻が使用・設定されます。</li><li>**遅れて到着したイベントには、現在のサーバ時刻がタイムスタンプとしてが使用されます** これは、イベントが発生した翌日の午前0時（UTC）よりも後にデータが届いた場合に適用されます。例えば、月曜日に発生したイベントは、UTCタイムゾーンで火曜日の深夜までに処理される**必要があります**。</li><li>未来のタイムスタンプ（現在のサーバー時刻との比較）を持つイベントはサーバー時刻でタイムスタンプが記録されます。</li><li>形式：Int</li><li>例：`"timestamp" : 1584835200123`</li><li>ローデータで入力される項目：`event_time`</li></ul> |
 | <span id="eventvalue"></span>eventValue | 任意 | イベントの詳細を説明する、イベントパラメータの一覧です。このパラメーターを使用して、製品、アイテム価格などの情報をアプリ内イベントで送信してください。<ul><li>**収益に関する注意点**：このパラメーターに収益の詳細データを入力してください。さらに、*eventRevenue* と *eventRevenueCurrency* を入力する必要があります。</li></ul><ul><li>形式：JSON</li><li>例： SKU ABC123を送信するために、青色で単価が$3.99のイベント値を設定する場合：<br />`{"Purchase": {"sku" : "ABC123", "color": "blue", "unit_price":3.99,"currency": "USD"}}`</li><li>制限： 1000文字を超えないようにしてください。超過したものは切り捨てられます。</li><li>ローデータで入力される項目：`event_value`</li></ul> |
 | <span id="eventrevenuecurrency"></span>eventRevenueCurrency | 任意 | 収益イベントの通貨コードです。3文字で構成されている <Anchor target="_blank" href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</Anchor> 通貨コードを設定してください。<ul><li>デフォルト：USD</li><li>形式：文字列</li><li>例：  `"eventRevenueCurrency" : "EUR"`</li><li>ローデータで入力される項目：`event_revenue_currency`</li></ul> |
-| <span id="eventrevenue"></span>eventRevenue | 任意 | イベントに紐づく収益額（通貨値）です。<br /><br />**注意：** 収益が *eventValue* でレポートされている場合は、*eventRevenue* でも値を送信し、eventRevenueCurrency を添えてください。<ul><li>負の値も入力できます。（例：ユーザーによる返金など）</li><li>形式：Float</li><li>値の例：`1``1.2``1234.20``-1234.20`</li><li>ローデータで入力される項目：`event_revenue`</li></ul> |
+| <span id="eventrevenue"></span>eventRevenue | 任意 | イベントに紐づく収益額（通貨値）です。<br /><br />**注意：** 収益が *eventValue* でレポートされている場合は、*eventRevenue* でも値を送信し、eventRevenueCurrency を添えてください。<ul><li>負の値も入力できます。（例：ユーザーによる返金など）</li><li>形式：Float</li><li>値の例：`1` `1.2` `1234.20` `-1234.20`</li><li>ローデータで入力される項目：`event_revenue`</li></ul> |
 | <span id="eventcategory"></span>eventCategory | 任意 | このパラメーターは非推奨で、廃止日以降（今後発表予定）に削除されます。代わりに eventValue を使用してください。 |
 | <span id="eventlabel"></span>eventLabel | 任意 | このパラメーターは非推奨で、廃止日以降（今後発表予定）に削除されます。代わりに eventValue を使用してください。 |
 | <span id="referrer"></span>referrer | 任意 | HTTP referrer<ul><li>形式：文字列</li><li>例：`"referrer" : "https://www.google.com/"`</li><li>ローデータで入力される項目：`http_referrer`</li></ul> |

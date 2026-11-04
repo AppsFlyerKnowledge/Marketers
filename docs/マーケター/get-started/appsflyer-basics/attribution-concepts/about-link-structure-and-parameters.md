@@ -77,8 +77,8 @@ x-zendesk:
 | 含める情報 | <ul><li>[メディアソース](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[キャンペーン](#c)</li><li>[サイトID／サブサイトID](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> | <ul><li>[メディアソース](/docs/about-link-structure-and-parameters#partner-id-pid-parameter)</li><li>[キャンペーン](#c)</li><li>[サイトID／サブサイトID](/docs/about-link-structure-and-parameters#site-id-parameter)</li></ul> |
 | ベースURL | `{subdomain}`.onelink.me | app.appsflyer.com |
 | 一意の識別子 | テンプレートID | app\_id |
-| URLの構造 | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
-| 例 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
+| URLの構造 | `https://{subdomain}.onelink.me/`<br />`{templateid}?pid={media_source}`<br />`&af_siteid={ApplicationID}`<br />`&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
+| 例 | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int`<br />`&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&`<br />`c=GreatCampaign&af_siteid=A1b1` |
 
 <div id="important" />
 

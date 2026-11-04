@@ -34,7 +34,7 @@ x-zendesk:
 
 **連携を有効にする方法：**
 
-1. AppsFlyerのサイドメニューから**Collaborate**> **Partner Marketplace**を選択します。
+1. AppsFlyerのサイドメニューから**Collaborate** > **Partner Marketplace**を選択します。
 2. パートナーを検索し選択してください。
 3. **連携の設定**をクリックします。
 4. 連携の設定ページに移動します。
