@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="tv-screens" />
+
 <div id="the-appsflyer-cross-platform-solution" />
 
 ## Giải pháp đa nền tảng AppsFlyer
@@ -36,6 +38,8 @@ Trong bối cảnh kỹ thuật số ngày nay, các chuyên gia tăng trưởng
 AppsFlyer cung cấp một giải pháp đa nền tảng mở rộng bổ sung cho các công cụ phân bổ di động thông thường. Nó hỗ trợ các chuyên gia tăng trưởng đo lường chính xác và quy định các nỗ lực tiếp thị khi người dùng tương tác trên nhiều nền tảng và thiết bị. Giải pháp này tập trung vào các nền tảng CTV, PC và console.
 
 Nhà quảng cáo có thể quảng bá một ứng dụng trên cùng một nền tảng hoặc các nền tảng khác nhau như quảng cáo hiển thị. Ví dụ: nhà quảng cáo có thể hiển thị quảng cáo cho ứng dụng Steam trên nền tảng Steam. Hoặc, họ có thể hiển thị quảng cáo cho ứng dụng Steam trên web máy tính để bàn, ví dụ như thông qua Google Ads. Dù chiến lược tiếp thị của họ là gì, các nhà quảng cáo đều tích hợp với AppsFlyer để nhận dữ liệu phân bổ và đo lường hiệu suất về các nguồn (không phải tự nhiên hoặc tự nhiên) và các chiến dịch thúc đẩy cài đặt ứng dụng CTV, PC và nền tảng giao diện điều khiển và các sự kiện sau cài đặt. Các nhà tiếp thị sử dụng những thông tin chi tiết này để tính toán giá trị trọn đời người dùng (LTV) và đo lường và tối ưu hóa các hoạt động tiếp thị. <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model">Tìm hiểu thêm về phân bổ AppsFlyer</Anchor>
+
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
 
 <div id="supported-platforms" />
 
@@ -145,6 +149,8 @@ Thông tin bổ sung
 * <Anchor target="_blank" href="/marketers/vi/docs/cross-platform-landing-pages-with-smart-script">Tìm hiểu cách thiết lập trang đích đa nền tảng với Smart Script</Anchor>
 
 </Accordion>
+
+<div id="note" />
 
 <div id="data-availability" />
 

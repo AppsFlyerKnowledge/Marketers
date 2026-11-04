@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Khái quát:** Từ điển trường dữ liệu (thông số kỹ thuật dữ liệu thô) mô tả nội dung của trường. Từ điển này nên được sử dụng để giúp bạn hiểu ý nghĩa của các trường, cách trường được định dạng và khi nào trường khả dụng. <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">Báo cáo dữ liệu thô, công cụ và API.</Anchor>
 
+<div id="overview" />
+
 ## Từ điển trường dữ liệu thô
 
 Bảng sau đây là một từ điển liệt kê các trường dữ liệu thô khả dụng trong nhiều báo cáo AppsFlyer khác nhau. Bảng này liên tục được cập nhật khi các trường dữ liệu thô được bổ sung thêm vào AppsFlyer.
@@ -58,6 +60,232 @@ Các cột trong bảng từ điển là:
       * Đối với các trường nhãn thời gian trong múi giờ đã chọn: định dạng `yyyy-mm-dd hh:mm:ss.±th:tm`. Ví dụ `2019-01-20 04:51:16.000+0000`.
   * **Enum n char**: Các trường Enum chỉ có thể chứa các giá trị cụ thể. Ví dụ: tiền tệ chi phí có 3 ký tự và chỉ có thể chứa mã tiền tệ như được chỉ định
   * **Enum 5 ký tự boolean:** Giá trị của trường có thể là `TRUE` hoặc `FALSE`
+
+<div id="pba-event::c1d28dd1" />
+
+<div id="device-info::x8471310d" />
+
+<div id="attribution::32f28e6f" />
+
+<div id="xapp" />
+
+<div id="attribution::a543f19e" />
+
+<div id="time::tzcc0001" />
+
+<div id="time::tzc00001" />
+
+<div id="protect360::c64c1afb" />
+
+<div id="protect360::d46f7957" />
+
+<div id="protect360::3b89b7c1" />
+
+<div id="attribution::x9fdff16d" />
+
+<div id="attribution::subp5" />
+
+<div id="attribution::subp4" />
+
+<div id="attribution::ef045054" />
+
+<div id="attribution::b75cae23" />
+
+<div id="device-location::stc00001" />
+
+<div id="attribution::b09cbd8f" />
+
+<div id="attribution::xe9b53459" />
+
+<div id="monetary::rvo00001" />
+
+<div id="monetary::nrusd" />
+
+<div id="monetary::nrvcust" />
+
+<div id="monetary::1248941c" />
+
+<div id="monetary::cf660373" />
+
+<div id="device-info::195c85df" />
+
+<div id="product-line::d5e0225b" />
+
+<div id="product-line" />
+
+<div id="device-info::bbda346b" />
+
+<div id="device-info::3d0f4698" />
+
+<div id="app::1f608704" />
+
+<div id="device-info::ovc00001" />
+
+<div id="attribution::rlw00001" />
+
+<div id="attribution::929e716c" />
+
+<div id="attribution::41d00e54" />
+
+<div id="attribution::80f36786" />
+
+<div id="attribution::x9dd48973" />
+
+<div id="protect360::1e7f166b" />
+
+<div id="event::ife00001" />
+
+<div id="event::isa00001" />
+
+<div id="device-location::xf8003308" />
+
+<div id="attribution::869dd814" />
+
+<div id="attribution::instappdl" />
+
+<div id="attribution::6bcef26e" />
+
+<div id="attribution::fe9e4cb0" />
+
+<div id="device-info::e7bb2cb9" />
+
+<div id="event::evtorder" />
+
+<div id="time" />
+
+<div id="event::55b76d8f" />
+
+<div id="event::556034db" />
+
+<div id="event::origevttime" />
+
+<div id="event::devevttime" />
+
+<div id="event::isattributed" />
+
+<div id="event::isfirstevent" />
+
+<div id="event-2" />
+
+<div id="attribution::18bbe871" />
+
+<div id="attribution::f7713604" />
+
+<div id="attribution::8cea583a" />
+
+<div id="attribution::isintegrated" />
+
+<div id="attribution::engcat" />
+
+<div id="attribution::8aab1f4d" />
+
+<div id="lifetime-value-events" />
+
+<div id="device-location::dmac0001" />
+
+<div id="protect360::detstate" />
+
+<div id="device-info::40b02bb7" />
+
+<div id="monetary::rco00001" />
+
+<div id="monetary" />
+
+<div id="device-location::ccc00001" />
+
+<div id="attribution::x5647f309" />
+
+<div id="attribution::x8733a05b" />
+
+<div id="attribution::x8c179e3b" />
+
+<div id="attribution::942d31ab" />
+
+<div id="attribution::afacec40" />
+
+<div id="attribution::860c6c0d-2" />
+
+<div id="device-location::11aea02f" />
+
+<div id="attribution::civ00001" />
+
+<div id="attribution::cit00001" />
+
+<div id="device-location::ctc00001" />
+
+<div id="attribution::760ee8ed" />
+
+<div id="attribution::x1d1e08b5" />
+
+<div id="attribution::76ae00fe" />
+
+<div id="attribution::d8d5132b" />
+
+<div id="attribution::64d77c36" />
+
+<div id="attribution::x274e74d5" />
+
+<div id="attribution::f8b1a2e" />
+
+<div id="attribution::x75430560" />
+
+<div id="device-info::63466612" />
+
+<div id="device-info::5aed5231" />
+
+<div id="device-info::b482a05" />
+
+<div id="app::avc00001" />
+
+<div id="attribution::b4bcbe76" />
+
+<div id="attribution::fbb2666c" />
+
+<div id="attribution::ba8e1da9" />
+
+<div id="attribution::x9067a60e" />
+
+<div id="iapsubscription::a49872e9" />
+
+<div id="iapsubscription::a56bb9e9" />
+
+<div id="attribution::4c444ee7" />
+
+<div id="attribution::reqloopback" />
+
+<div id="attribution::be9cb893" />
+
+<div id="attribution::929faa8" />
+
+<div id="device-info-advertising-id" />
+
+<div id="attribution::f348c026" />
+
+<div id="attribution::x5209dd66" />
+
+<div id="attribution::9964905a" />
+
+<div id="attribution::x9b2f9ab6" />
+
+<div id="device-info::ce4bb08e" />
+
+<div id="attribution::x5954755967" />
+
+<div id="ad-revenue::e2b62d09" />
+
+<div id="ad-revenue::a77b252f" />
+
+<div id="device-info::e7dfb109" />
+
+<div id="attribution::ce2d519c" />
+
+<div id="xattribution" />
+
+<div id="attribution::b19119e4" />
+
+<div id="attribution::xde448d77" />
+
+<div id="field-dictionary" />
 
 <div id="tip" />
 

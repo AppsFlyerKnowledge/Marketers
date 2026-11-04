@@ -60,6 +60,14 @@ Khi AppsFlyer xử lý các sự kiện trong ứng dụng S2S, hệ thống s�
 
 Điều này có nghĩa rằng một số dữ liệu mà AppsFlyer liên kết với các sự kiện trong ứng dụng S2S không tự nhiên thì không được liên kết với các sự kiện trong ứng dụng S2S tự nhiên.
 
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
+
+<div id="increasing-the-volume-of-data-transactions" />
+
+<div id="note-1" />
+
+<div id="note" />
+
 > 📄 **Ví dụ**
 >
 > Ví dụ, nếu bạn so sánh báo cáo dữ liệu thô của các sự kiện trong ứng dụng S2S tự nhiên và không tự nhiên, các sự kiện không tự nhiên có chứa dữ liệu mà các sự kiện trong ứng dụng tự nhiên không có.
@@ -172,6 +180,8 @@ Hệ thống có thể gửi các sự kiện có giá trị doanh thu âm. Ví 
 Nếu bạn điền `af_quantity`, bạn có thể muốn điền một giá trị âm vào trường đó, tùy thuộc vào logic hệ thống của bạn. AppsFlyer không sử dụng `af_quantity`.
 
 </Accordion>
+
+<div id="S2S_in-app_events_are_wrongly_attributed_as_organic" />
 
 <div id="troubleshooting" />
 

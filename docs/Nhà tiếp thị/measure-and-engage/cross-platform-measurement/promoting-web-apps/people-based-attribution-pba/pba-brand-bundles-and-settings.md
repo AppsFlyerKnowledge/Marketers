@@ -207,6 +207,8 @@ Triển khai cơ chế loại trừ miền, một phần của <Anchor target="_
 
 <Accordion title="Điều gì sẽ xảy ra nếu tôi xóa một gói?">
 
+<div id="page-404" />
+
 <div id="faqs-what-happens-if-i-delete-a-bundle" />
 
 #### câu hỏi thường gặp điều gì xảy ra nếu tôi xóa một gói

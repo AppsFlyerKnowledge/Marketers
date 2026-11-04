@@ -58,6 +58,8 @@ Dữ liệu phân tích về số lượt cài đặt được hỗ trợ có s�
 
 Trong nhiều trường hợp, người dùng tiềm năng biết đến một ứng dụng thông qua nguồn hỗ trợ, nhưng không cài đặt được vì một số lý do. Do đó, việc đo lường và ghi nhận các lượt hỗ trợ là rất quan trọng trong việc tối ưu hóa và đo lường chiến dịch.
 
+<div id="note" />
+
 <div id="assisted-installs-reporting" />
 
 ### Báo cáo lượt cài đặt được hỗ trợ
@@ -76,6 +78,10 @@ AppsFlyer phân bổ tối đa ba mạng đóng góp ngoài nguồn cài đặt 
 * Loại so khớp (so khớp ID, Liên kết giới thiệu Google Play hoặc SRN)
 
 Xem <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview#báo-cáo-hành-trình-của-người-dùng">dữ liệu thô về hành trình của người dùng.</Anchor>
+
+<div id="note-2" />
+
+<div id="total-candidates-field" />
 
 <div id="note-1" />
 

@@ -80,6 +80,12 @@ Lưu ý: Nếu vì lý do nào đó mà không cài đặt được CUID, thì 
 
 Nếu muốn liên kết CUID với sự kiện cài đặt khi bắt đầu từ một lớp `Activity`, bạn không cần trì hoãn việc gửi sự kiện cài đặt. Chỉ cần gọi ra lệnh `setCustomerUserId` trước khi gọi lệnh `start`.
 
+<div id="developer-instructions-3" />
+
+<div id="developer-instructions-2" />
+
+<div id="developer-instructions-1" />
+
 <div id="developer-instructions" />
 
 #### HƯỚNG DẪN DÀNH CHO NHÀ PHÁT TRIỂN

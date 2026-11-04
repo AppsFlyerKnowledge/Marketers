@@ -84,6 +84,8 @@ Sau khi đăng ký, ứng dụng sẽ xuất hiện trên bảng điều khiển
 
 Xem <Anchor target="_blank" href="/marketers/vi/docs/getting-started-onboarding-for-marketers">tất cả các bước</Anchor> để hoàn thành quá trình giới thiệu.
 
+<div id="note-2" />
+
 <div id="enter-app-details" />
 
 ### Nhập thông tin ứng dụng
@@ -172,6 +174,16 @@ Bao gồm –
 
 * Độ dài tối đa = 100 ký tự
 * Không được phép sử dụng thẻ XSS
+
+<div id="amazon-vega-os" />
+
+<div id="web" />
+
+<div id="note-4" />
+
+<div id="to-add-a-web-app" />
+
+<div id="before-you-begin" />
 
 <div id="important-1" />
 
@@ -333,6 +345,8 @@ Bao gồm –
 
 </Accordion>
 
+<div id="select-currency" />
+
 <div id="enter-additional-information-not-applicable-to-web-apps" />
 
 ### Nhập thông tin bổ sung (không áp dụng cho ứng dụng web):
@@ -342,6 +356,12 @@ Bao gồm –
 1. **Chọn đơn vị tiền tệ**
 
    Chọn đơn vị tiền tệ để hiển thị dữ liệu của ứng dụng này trong bảng điều khiển. Các sự kiện doanh thu và chi tiêu được chuyển đổi sang đơn vị tiền tệ này bằng cách sử dụng tỷ giá hối đoái có hiệu lực tại thời điểm diễn ra sự kiện. <Anchor target="_blank" href="/marketers/vi/docs/app-settings#localization-currency">Tìm hiểu thêm</Anchor> về cài đặt đơn vị tiền tệ của ứng dụng và tác động của cài đặt này.
+
+   <div id="define-app-audience" />
+
+   <div id="note-5" />
+
+   <div id="select-timezone" />
 
    <div id="important-2" />
 
@@ -360,6 +380,14 @@ Bao gồm –
    1. Mở và đọc <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">hướng dẫn</Anchor> về cách triển khai tuân thủ với các ứng dụng hướng đến trẻ em.
    2. Chọn ô để xác nhận rằng bạn đã đọc hướng dẫn và sẽ triển khai các biện pháp kiểm soát mà hướng dẫn chỉ định.
 
+      <div id="note-8" />
+
+      <div id="add-a-debug-or-testing-app" />
+
+      <div id="note-7" />
+
+      <div id="manage-your-apps-in-bulk-via-api" />
+
       <div id="note-6" />
 
       > 📘 **Lưu ý**
@@ -376,6 +404,12 @@ Làm việc với một ứng dụng ở trạng thái đang chờ xử lý có 
 Trạng thái của ứng dụng trên bảng điều khiển là đang chờ xử lý sẽ không ảnh hưởng đến quá trình thu thập và đo lường dữ liệu. Dù ứng dụng là đang chờ xử lý hay đang hoạt động trên cửa hàng ứng dụng, nếu người dùng cài đặt và tương tác với ứng dụng đó thì dữ liệu lượt cài đặt và sự kiện trong ứng dụng đều sẽ được ghi nhận lên bảng điều khiển.
 
 Khi ứng dụng đang chờ xử lý của bạn hoạt động, AppsFlyer sẽ phát hiện và tự động cập nhật trạng thái của ứng dụng đó. Vì vậy bạn không cần phải thêm lại ứng dụng đó. <Anchor target="_blank" href="/marketers/vi/docs/why-is-my-app-still-pending">Tìm hiểu thêm</Anchor> về các ứng dụng đang chờ xử lý và quy trình tùy chọn cho trạng thái làm mới theo cách thủ công.
+
+<div id="product-line" />
+
+<div id="my-ios-app" />
+
+<div id="other-information" />
 
 <div id="troubleshooting" />
 

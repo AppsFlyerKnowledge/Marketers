@@ -27,6 +27,16 @@ x-zendesk:
 ---
 > **Khái quát:** Thử nghiệm tích hợp ứng dụng Android hoặc iOS của bạn với AppsFlyer.
 
+<div id="note-1" />
+
+<div id="perform-the-integration-tests" />
+
+<div id="prepare-a-test-device" />
+
+<div id="note" />
+
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 <div id="overview" />
 
 ## Tổng quan
@@ -104,6 +114,10 @@ Thực hiện một trong các quy trình sau để thêm ứng dụng gỡ lỗ
 </Tab>
 </Tabs>
 
+<div id="traits-and-limitations" />
+
+<div id="note-5" />
+
 <div id="testing-ctv" />
 
 ### Các trường hợp thử nghiệm đặc biệt
@@ -115,6 +129,8 @@ Các trường hợp thử nghiệm đặc biệt bao gồm:
 * **Ứng dụng tvOS chưa được xuất bản:** Yêu cầu nhà tiếp thị và nhà phát triển làm việc cùng nhau (xem <Anchor target="_blank" href="/marketers/vi/docs/testing-tvos-integration-before-publishing">Thử nghiệm tích hợp tvOS trước khi xuất bản</Anchor>).
 * **Amazon Fire TV:** Nhà tiếp thị có thể [thử nghiệm tích hợp](/docs/testing-the-sdk-integration-for-marketers#thử-nghiệm-từ-bảng-điều-khiển) bằng phương thức thử nghiệm Android SDK trong bảng điều khiển AppsFlyer. (Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/setting-up-amazon-fire-tv-ad-attribution">phân bổ Amazon Fire TV</Anchor>).
 * **Sự kiện web PBA:** Yêu cầu nhà tiếp thị và nhà phát triển làm việc cùng nhau (xem <Anchor target="_blank" href="/marketers/vi/docs/test-pba-web-sdk-integration">Kiểm tra tích hợp SDK web PBA</Anchor>).
+
+<div id="testing-organic-installs" />
 
 ## Thử nghiệm chức năng SDK cơ bản
 
@@ -214,6 +230,12 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
    ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
 
 </Accordion>
+
+<div id="tip" />
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 <div id="testing-using-attribution-links" />
 
@@ -346,6 +368,8 @@ Bên cạnh đó, OneLink cho phép liên kết sâu (deeplinking). Liên kết 
 
 </Accordion>
 
+<div id="note-4" />
+
 <div id="testing-retargeting-using-attribution-links" />
 
 ## Thử nghiệm nhắm mục tiêu lại bằng đường dẫn phân bổ
@@ -425,6 +449,8 @@ Giờ đây, bạn có thể thử nghiệm phân bổ lại và thu hút lại.
    Bạn sẽ thấy lượt cài đặt được phân bổ cho nguồn truyền thông và chiến dịch. Cho phép tối đa 30 phút để lượt cài đặt nhắm mục tiêu lại xuất hiện trong bảng điều khiển.
 
    [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+
+<div id="tip-1" />
 
 > 👍 **Lời khuyên**
 >

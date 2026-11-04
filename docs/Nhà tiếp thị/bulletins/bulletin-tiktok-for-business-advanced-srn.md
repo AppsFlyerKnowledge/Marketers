@@ -20,6 +20,20 @@ x-zendesk:
   section_id: 6551161473041
   url: https://support.appsflyer.com/hc/vi/articles/7925111265041
 ---
+<div id="example-illustrating-the-process" />
+
+<div id="what-does-this-new-integration-mean" />
+
+<div id="transition-date" />
+
+<div id="required-actions" />
+
+<div id="where-is-it-changing" />
+
+<div id="effective-date" />
+
+<div id="headline" />
+
 <div id="note" />
 
 > 📘 **Lưu ý**

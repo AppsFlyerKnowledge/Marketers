@@ -38,6 +38,16 @@ Các bước thiết lập liên kết cần thiết được mô tả chi tiế
 * Cài đặt liên kết sâu và chuyển hướng
 * Cài đặt thông số bổ sung
 
+<div id="url-id" />
+
+<div id="important" />
+
+<div id="note" />
+
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## Tạo liên kết OneLink
@@ -116,6 +126,8 @@ Cài đặt chung là một phần của quy trình tạo liên kết OneLink á
 6. [Tùy chọn] Trong tiểu mục **Link branding**:
    * Chọn một miền khác để phản ánh thương hiệu của bạn. <Anchor target="_blank" href="/marketers/vi/docs/brand-onelink-with-your-domain">Tìm hiểu thêm</Anchor>
    * Chỉnh sửa ID URL để làm nổi bật các dịch vụ cung cấp của chiến dịch. ID URL phải có tối đa 50 ký tự và có thể sử dụng kết hợp chữ cái và số. Theo mặc định, ID này gồm 8 ký tự.
+
+<div id="note-1" />
 
 <div id="enable-retargeting-for-the-app" />
 
@@ -233,6 +245,8 @@ Khi người dùng tương tác với nút CTA trong trang đích:
 3. Đăng URL OneLink rút gọn trên ứng dụng mạng xã hội.
 
 Phân bổ được xác định dựa trên cài đặt phân bổ của bạn.
+
+<div id="note-3" />
 
 <div id="to-set-up-the-social-apps-landing-page" />
 
@@ -596,6 +610,18 @@ Giải pháp DDL trang đích sao chép/dán yêu cầu:
 </Accordion>
 
 </Accordion>
+
+<div id="xiaomi-browser" />
+
+<div id="telegram-webview" />
+
+<div id="chrome-browser-on-ios" />
+
+<div id="deep-linking-is-not-supported-on-android-naver-blog-app" />
+
+<div id="ad-networks" />
+
+<div id="maximum-links" />
 
 <div id="additional-information" />
 

@@ -184,6 +184,8 @@ Người dùng ứng dụng hiện có thường mong đợi được chuyển h
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **Lời khuyên**
       >
       > * Cả Apple và Google đều không yêu cầu đặt tên duy nhất cho các lược đồ ứng dụng. **Hãy chọn tên lược đồ riêng cho nhãn hiệu của bạn** để tránh xung đột lược đồ ở các ứng dụng khác. Tên lược đồ phù hợp có thể là ID gói ứng dụng của bạn, ví dụ: **com.company.app**
@@ -206,6 +208,10 @@ Người dùng ứng dụng hiện có thường mong đợi được chuyển h
    </Tabs>
 
 5. Nhấp vào **Update OneLink template** (Cập nhật mẫu OneLink).
+
+<div id="h_favicon" />
+
+<div id="note-2" />
 
 <div id="note-1" />
 

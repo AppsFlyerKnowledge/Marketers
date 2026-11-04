@@ -63,6 +63,8 @@ Khi một loại tương tác không được báo cáo, mức độ ưu tiên m
 
 ** Cửa sổ lookback cho `engaged_click` và `engaged_view` chỉ có thể được đặt cho các mạng không phải SRN.
 
+<div id="note" />
+
 <div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## Những mạng nào có thể báo cáo EET cho AppsFlyer?
@@ -221,6 +223,8 @@ Danh sách mạng được phép bao gồm các đối tác có thể báo cáo 
 
 ## Xem và phân tích dữ liệu EET
 
+<div id="note-2" />
+
 <div id="raw-data-reports" />
 
 ### Báo cáo dữ liệu thô
@@ -235,6 +239,20 @@ Các trường hợp dưới đây sẽ dẫn đến trường mới trong các 
 * Khi `af_engagement_type` không được gửi hoặc gửi với giá trị trống.
 
 Để xem loại tương tác trong báo cáo dữ liệu thô, các nhà quảng cáo cần chọn các trường này trong sản phẩm dữ liệu thô có liên quan (loại tương tác và loại tương tác của người đóng góp không được chọn theo mặc định).
+
+<div id="owned-media-support" />
+
+<div id="cross-platform-engaged-view-support" />
+
+<div id="why-cant-i-see-the-engagement-type-i2" />
+
+<div id="traits-and-limitations" />
+
+<div id="faqs" />
+
+<div id="how-to-calculate-installs-per-mille-ipm" />
+
+<div id="note-3" />
 
 <div id="dashboards" />
 

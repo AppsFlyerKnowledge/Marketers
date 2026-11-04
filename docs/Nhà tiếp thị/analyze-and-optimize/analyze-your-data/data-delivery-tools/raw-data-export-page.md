@@ -152,6 +152,8 @@ Trang xuất dữ liệu thô cung cấp các báo cáo có các tính năng đ�
 
 </Accordion>
 
+<div id="note" />
+
 <div id="procedures" />
 
 ## Quy trình

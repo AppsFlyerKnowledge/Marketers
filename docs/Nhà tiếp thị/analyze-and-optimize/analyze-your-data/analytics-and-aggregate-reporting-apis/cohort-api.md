@@ -29,6 +29,20 @@ x-zendesk:
 
 > **Sơ lược:** API báo cáo Nhóm người cung cấp cho nhà quảng cáo theo cách có lập trình để lấy dữ liệu Nhóm người. Sử dụng API để tích hợp dữ liệu Nhóm người vào BI và hệ thống tự động hóa tiếp thị.
 
+<div id="per_user" />
+
+<div id="aggregation_type" />
+
+<div id="preferred_timezone" />
+
+<div id="preferred_currency" />
+
+<div id="kpis" />
+
+<div id="groupings" />
+
+<div id="bearer" />
+
 <div id="cohort-api" />
 
 ## API báo cáo Nhóm người

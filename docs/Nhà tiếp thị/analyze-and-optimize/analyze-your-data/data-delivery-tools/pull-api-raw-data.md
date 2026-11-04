@@ -36,6 +36,16 @@ x-zendesk:
   * Chọn đơn vị tiền tệ
   * Chọn múi giờ
 
+<div id="raw-data-reports-nonorganic" />
+
+<div id="protect360-fraud" />
+
+<div id="ad-revenue-raw-data" />
+
+<div id="retargeting" />
+
+<div id="raw-data-reports-organic" />
+
 <div id="raw-data-reports-available-via-pull-api" />
 
 #### Báo cáo dữ liệu thô có sẵn qua API Pull

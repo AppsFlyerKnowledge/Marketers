@@ -568,6 +568,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > * Mã thông báo API V2 hợp lệ phải được chèn vào tiêu đề yêu cầu như sau: `'Authorization': 'Bearer %AuthTokenV2%'`

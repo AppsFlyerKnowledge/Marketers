@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm các nguyên nhân và giải pháp chính cho lý do tại sao đối tác của bạn không nhận được các bài đăng lại như mong đợi. Kiểm tra kỹ lưỡng từng chủ đề bên dưới và xem liệu chúng có phải là nguyên nhân hay không.
 
+<div id="1703758710.321359" />
+
 <div id="check-the-integration-toggles" />
 
 ## Kiểm tra các nút chuyển đổi tích hợp
@@ -52,6 +54,8 @@ Trong trường hợp khác, nếu nút <Anchor target="_blank" href="/marketers
 </Accordion>
 
 <div id="the-inapp-event-postbacks-toggle-was-turned-off" />
+
+<div id="1703760110.503549" />
 
 <Accordion title="Nút In-app event postbacks đã bị tắt">
 

@@ -69,6 +69,16 @@ Thẻ Integration được chia thành các phần khác nhau như được mô 
 Trong **first visit** tại đây, bạn phải bật **Activate Partner** để bật thiết lập.  
 Để biết thêm chi tiết về kích hoạt đối tác, hãy nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">đây</Anchor>.
 
+<div id="note-1" />
+
+<div id="install-attribution" />
+
+<div id="advanced-matching-data-sharing" />
+
+<div id="note" />
+
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### Cài đặt chung
@@ -111,6 +121,12 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-7 ngày.
 Thông tin chi tiết về <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">phân bổ lượt xem hết tại đây</Anchor>.
 
 ![snap-viewthrough-window.png](https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png)
+
+<div id="note-3" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="note-2" />
 
 <div id="re-engagement-attribution" />
 
@@ -171,6 +187,14 @@ Nếu bạn là đại lý, hãy yêu cầu nhà quảng cáo làm điều đó 
 <Accordion title="Thẻ Attribution link">
 
 Đường dẫn phân bổ không có sẵn cho Snapchat.
+
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
+<div id="note-6" />
+
+<div id="note-5" />
+
+<div id="note-4" />
 
 > 📘 **Lưu ý**
 >
@@ -273,6 +297,8 @@ Tìm hiểu thêm về việc cấp <Anchor target="_blank" href="/marketers/vi/
 
 </Accordion>
 
+<div id="note-7" />
+
 <div id="deep-linking-with-snapchat" />
 
 ## Liên kết sâu với Snapchat
@@ -311,6 +337,10 @@ Bạn có thể truy cập trực tiếp vào dữ liệu chuyển đổi của 
 <Anchor target="_blank" href="/marketers/vi/docs/conversion-data-payloads-and-scenarios#snapchat-conversion-data">Dữ liệu chuyển đổi Snapchat</Anchor> bao gồm thông số **af\_dp**, cho phép bạn liên kết sâu và cung cấp nội dung tùy chỉnh, dựa trên mức độ tương tác của người dùng với quảng cáo của bạn trong Snapchat.
 
 Ngoài ra, bạn có thể sử dụng các thông số dữ liệu chuyển đổi khác như **af\_adset** hoặc **af\_channel**.
+
+<div id="important" />
+
+<div id="agency-limitations" />
 
 <div id="set-up-snapchat-for-agencies" />
 

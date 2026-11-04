@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về cấu trúc và thông số đường dẫn phân bổ của AppsFlyer.
 
+<div id="important" />
+
 <div id="overview" />
 
 ## Tổng quan
@@ -86,6 +88,10 @@ x-zendesk:
 
 * Các thông số được liệt kê có sẵn để sử dụng trong đường dẫn phân bổ.
 * Cột **loại trường** giá trị là giới hạn ký tự của giá trị thông số. Tìm hiểu thêm về các giới hạn liên quan đến độ dài của các giá trị thông số <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary">tại đây.</Anchor>
+
+<div id="af_engagement_destination" />
+
+<div id="af_ad_format" />
 
 <div id="attribution-link-parametersua-and-retargeting" />
 
@@ -190,6 +196,8 @@ Tùy thuộc vào loại quảng cáo, bạn cũng có thể gửi tham số kh�
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | Không áp dụng | ID Quảng cáo Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Trang thông tin tùy chỉnh trên Google Console | chuỗi |
 
+<div id="md5_idfa" />
+
 <div id="ios-specific-parameters" />
 
 ### Các thông số cụ thể cho iOS
@@ -217,6 +225,8 @@ Tùy thuộc vào loại quảng cáo, bạn cũng có thể gửi tham số kh�
 > ```
 
 Tất cả các thông số có sẵn trong <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">Báo cáo cài đặt</Anchor> và <Anchor target="_blank" href="/marketers/vi/docs/analytics-and-aggregate-reporting-apis">Phân tích, Báo cáo và API</Anchor>.
+
+<div id="note" />
 
 <div id="custom-parameters" />
 
@@ -331,6 +341,8 @@ Các tham số là:
 * `Bộ quảng cáo (af_adset=)`
 * `Tên quảng cáo (af_ad=)`
 
+<div id="frequently-asked-questions" />
+
 <div id="example-2" />
 
 > 📄 **Ví dụ**
@@ -341,6 +353,22 @@ Các tham số là:
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="telegram-webview-attribution" />
+
+<div id="uri-scheme-validity-requirements" />
+
+<div id="a-popup-appears-when-clicking-on-a-uri-scheme-link-from-chrome-browser-on-ios" />
+
+<div id="deep-linking-is-not-supported-in-the-android-naver-blog-app" />
+
+<div id="agencies" />
+
+<div id="url-characteravailable" />
+
+<div id="redirection-parameters" />
+
+<div id="special-characters" />
 
 <div id="traits-and-limitations" />
 

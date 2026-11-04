@@ -36,6 +36,16 @@ AppsFlyer hạn chế tính khả dụng của một số trường trong báo c
 
 Bảng sau đây liệt kê các hạn chế đối với mỗi nguồn truyền thông.
 
+<div id="x-ads-formerly-twitter" />
+
+<div id="uber" />
+
+<div id="reddit" />
+
+<div id="discord" />
+
+<div id="amazon-ads" />
+
 <div id="note" />
 
 > 📘 **Lưu ý**
@@ -54,6 +64,8 @@ Bảng sau đây liệt kê các hạn chế đối với mỗi nguồn truyền
 | <span id="snapchat"></span>Snapchat | <ul><li>Bắt đầu từ ngày 1 tháng 3 năm 2023, không đưa các lượt gỡ cài đặt Snapchat vào báo cáo dữ liệu thô</li><li>Kể từ ngày 13 tháng 9 năm 2023, phân bổ lượt xem hết bị hạn chế. Dưới đây là các trường **được điền** vào các công cụ phân phối dữ liệu thô:<ul><li>Nguồn truyền thông (snapchat\_int)</li><li>Kênh</li><li>Loại tương tác được phân bổ (lượt hiển thị)</li><li>Thời gian tương tác được phân bổ (chỉ được báo cáo dưới dạng ngày - "dd/mm/yyyy")</li><li>Chiến dịch được báo cáo là *"restricted"*</li></ul></li></ul> |
 | <span id="tiktok-for-business"></span>TikTok dành cho Doanh nghiệp | <ul><li>Từ ngày 28 tháng 7 đến ngày 23 tháng 10 năm 2021, dữ liệu phân bổ lượt xem qua bị hạn chế.</li><li>Kể từ ngày 23 tháng 10 năm 2021, phân bổ lượt xem qua bị hạn chế. Dưới đây là các trường **được điền** vào các công cụ phân phối dữ liệu thô:<ul><li>Nguồn truyền thông (bytedanceglobal\_int và tiktokglobal\_int)</li><li>Kênh</li><li>Loại tương tác được phân bổ (lượt hiển thị)</li><li>Thời gian tương tác được phân bổ (chỉ được báo cáo dưới dạng ngày - "dd/mm/yyyy")</li><li>Chiến dịch được báo cáo là *"restricted"*</li></ul></li></ul> |
 | <span id="twitter"></span>Twitter | Trong một số trường hợp, Twitter không cho phép cung cấp dữ liệu thô trên nền tảng AppsFlyer. Trong những trường hợp này, sự kiện không xuất hiện trong báo cáo dữ liệu thô. |
+
+<div id="delivery-of-raw-data" />
 
 <div id="raw-data-context" />
 

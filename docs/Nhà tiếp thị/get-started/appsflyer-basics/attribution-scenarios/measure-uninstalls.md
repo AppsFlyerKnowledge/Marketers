@@ -29,6 +29,8 @@ x-zendesk:
 
 Để hiểu giá trị của người dùng ứng dụng, bạn phải phân tích cả tỷ lệ lượt cài đặt và lượt gỡ cài đặt. Số liệu lượt gỡ cài đặt có thể giúp bạn đo lường hiệu suất của ứng dụng, đồng thời hiểu rõ thời điểm và lý do người dùng rời khỏi ứng dụng của bạn.
 
+<div id="note" />
+
 <div id="how-does-it-work" />
 
 ### Nó hoạt động như thế nào?
@@ -46,6 +48,8 @@ Sau đây là một số ví dụ về những điều bạn có thể biết đ
 <Accordion title="So sánh chất lượng các nguồn">
 
 Bằng cách so sánh chất lượng người dùng có được từ các nguồn khác nhau (nguồn truyền thông, chiến dịch, quảng cáo và địa lý), bạn có thể xác định nguồn truyền thông có tỷ lệ lượt gỡ cài đặt thấp nhất và phân bổ lại tiền cho chúng.
+
+<div id="note-1" />
 
 > 📄 **Ví dụ**
 >
@@ -66,6 +70,10 @@ Bằng cách so sánh chất lượng người dùng có được từ các ngu�
 <Accordion title="Chia sẻ dữ liệu lượt gỡ cài đặt với các mạng quảng cáo để tối ưu hóa">
 
 Việc gửi đăng lại sự kiện lượt gỡ cài đặt tới các mạng quảng cáo mà bạn đang hợp tác rất hữu ích để tối ưu hóa các chiến dịch thu hút người dùng. Bạn có thể gửi sự kiện gỡ cài đặt bằng cách [ánh xạ af\_uninstall tới mạng quảng cáo của mình](/docs/measure-uninstalls#ánh-xạ-sự-kiện-gỡ-cài-đặt). Sau khi ánh xạ hoàn tất, một sự kiện sẽ được gửi mỗi khi người dùng được xác định là đã gỡ cài đặt ứng dụng. Mạng quảng cáo có thể sử dụng thông tin này để xác định người dùng nào ít thu hút hơn và tập trung vào việc có được nhiều người dùng thu hút hơn.
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 > 📄 **Ví dụ**
 >
@@ -142,6 +150,8 @@ Luồng cho nhà tiếp thị và nhà phát triển như sau:
 
 Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích hợp cơ chế phản hồi thông báo đẩy vào ứng dụng của bạn. Hướng dẫn thực hiện sẽ khác nhau tùy theo hệ điều hành.
 
+<div id="note-4" />
+
 <div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Kết nối Firebase Cloud Messaging với AppsFlyer (Android)
@@ -191,6 +201,8 @@ Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích
 
 <Accordion title="[Đã ngừng hỗ trợ] HTTP cũ">
 
+<div id="important" />
+
 > 🚧 **Quan trọng!**
 >
 > API HTTP cũ đã bị Firebase ngừng hỗ trợ vào ngày 20 tháng 6 năm 2023 và sẽ bị xóa vào tháng 6 năm 2024. Nếu bạn đang sử dụng API cũ, chúng tôi khuyên bạn nên [sử dụng API HTTP v1](/docs/measure-uninstalls#http-v1). <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">Tìm hiểu thêm</Anchor>
@@ -210,6 +222,8 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 </Accordion>
 
 <div id="configure-uninstall-measurement-in-appsflyer" />
+
+<div id="note-5" />
 
 ### Cấu hình đo lường lượt gỡ cài đặt trong AppsFlyer
 
@@ -250,6 +264,8 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 
 </Tab>
 </Tabs>
+
+<div id="note-6" />
 
 <div id="testing-uninstall-measurement" />
 

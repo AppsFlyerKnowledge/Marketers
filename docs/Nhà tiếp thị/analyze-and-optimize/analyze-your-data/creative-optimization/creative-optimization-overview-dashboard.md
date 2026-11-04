@@ -51,6 +51,8 @@ Sử dụng bảng điều khiển để xem dữ liệu của bạn được tr
 
 Nếu chưa định cấu hình Tối ưu hóa Quảng cáo, bạn có thể tìm thấy hướng dẫn về cách thực hiện <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide#bắt-đầu">tại đây</Anchor>.
 
+<div id="h_01JJS288YJ31DH3RMK395X998N" />
+
 <div id="charts" />
 
 ## Biểu đồ
@@ -75,6 +77,8 @@ Sử dụng biểu đồ để xem cách trình bày trực quan nhanh chóng, t
 Sử dụng bảng để truy cập sâu vào thông tin chi tiết. Nhóm theo nhiều phương diện khác nhau hoặc tùy chỉnh cài đặt bảng để thêm phương diện và phép đo bổ sung vào bảng, sau đó sắp xếp, xem và so sánh dữ liệu để có được thông tin chi tiết bạn cần.
 
 <div id="zd-table" />
+
+<div id="in-app-events" />
 
 <div id="table" />
 

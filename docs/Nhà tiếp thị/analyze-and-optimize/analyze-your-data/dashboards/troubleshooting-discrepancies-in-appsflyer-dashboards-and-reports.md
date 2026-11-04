@@ -60,6 +60,26 @@ Cả hai phương pháp đều hữu ích với các nhà quảng, nhưng với 
 * Bạn có thể so sánh những trang và báo cáo nào trên AppsFlyer?
 * Làm thế nào bạn có thể so sánh dữ liệu LTV và dữ liệu hoạt động?
 
+<div id="compare-inapp-event-raw-data-with-the-activity-view" />
+
+<div id="compare-appsflyer-data-with-external-data" />
+
+<div id="compare-different-appsflyer-aggregated-data-dashboards-and-reports" />
+
+<div id="compare-ltv-and-activity-data-in-appsflyer" />
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
+
+<div id="to-retrieve-activity-data-out-of-ltv-data" />
+
+<div id="to-retrieve-ltv-data-out-of-raw-activity-data" />
+
+<div id="compare-data-between-different-dashboards-and-reports" />
+
+<div id="appsflyer-dashboards-and-reportsltv-or-activity" />
+
+<div id="the-train-analogy" />
+
 ### Phép tương tự về tàu
 
 **Hoạt động**: Tưởng tượng bạn xem một chuyến tàu đi qua. Khi tàu đi qua, bạn chỉ thấy những hành động mà các hành khách trên tàu thực hiện khi họ đi ngang qua. Đây là dữ liệu hoạt động.

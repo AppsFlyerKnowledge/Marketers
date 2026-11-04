@@ -176,6 +176,10 @@ Quyền không khả dụng đối với Amplitude.
 
 </Accordion>
 
+<div id="sending-amplitude-events-to-appsflyer" />
+
+<div id="important-1" />
+
 <div id="viewing-attribution-data-in-the-amplitude-console" />
 
 ## Xem dữ liệu phân bổ trong bảng điều khiển của Amplitude

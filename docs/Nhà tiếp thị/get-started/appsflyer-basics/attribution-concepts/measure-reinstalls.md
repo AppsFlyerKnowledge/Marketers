@@ -88,6 +88,10 @@ Trường hợp sau đây sẽ xảy ra:
 
 </Accordion>
 
+<div id="postreinstall-events-attribution-state" />
+
+<div id="note" />
+
 <div id="post-reinstall-in-app-events" />
 
 ## Sự kiện trong ứng dụng
@@ -157,6 +161,8 @@ Dữ liệu KPI tự nhiên trong bảng điều khiển có thể hiển thị 
 <div id="examples" />
 
 <Accordion title="Ví dụ">
+
+<div id="confirm-inapps-are-attributed-to-the-original-install" />
 
 <div id="examples-for-first-install-mode-attribution" />
 

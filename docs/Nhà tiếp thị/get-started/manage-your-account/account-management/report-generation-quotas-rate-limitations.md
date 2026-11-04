@@ -47,6 +47,10 @@ x-zendesk:
 | API Nhóm người | 60 lệnh gọi/phút/tài khoản |
 | Báo cáo hợp nhất của SKAN | 10 lệnh gọi/phút/tài khoản |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### Dữ liệu thô

@@ -69,6 +69,8 @@ Trong AppsFlyer, có thể xảy ra một sự kiện phân bổ khi xảy ra b�
   * **Thu hút lại**
   * **Phân bổ lại**
 
+<div id="attribution-method-priorities-attribution-waterfall" />
+
 <div id="attribution-methods" />
 
 ## Phương thức phân bổ
@@ -230,6 +232,10 @@ Xem các phần tiếp theo để biết phân tích đầy đủ về các phư
 <table><thead><tr><th rowspan="2">Nguồn truyền thông</th><th colspan="3">Phương thức phân bổ</th></tr><tr><th>Android</th><th>iOS</th><th><strong>Nền tảng CTV, PC và bảng điều khiển</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN</a></td><td><p>Khớp ID thiết bị</p></td><td><ul><li>Khớp ID thiết bị</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td><p>Khớp ID thiết bị</p></td></tr><tr><td><ul><li>Mạng quảng cáo (không phải SRN) thông qua <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">đường dẫn phân bổ cho đối tác</a> </li><li><span>Nền tảng CTV, PC và bảng điều khiển</span></li></ul></td><td><ul><li>Người giới thiệu cài đặt</li><li>Khớp ID thiết bị</li><li>Mô hình xác suất</li></ul></td><td><ul><li>Khớp ID thiết bị</li><li>Mô hình xác suất (trước iOS 14.5)</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><p><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Được cài đặt sẵn trên thiết bị</a></p></td><td>Trước khi cài đặt</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="engaged-view-attribution" />
+
+<div id="engaged-click-attribution" />
 
 <div id="user-engagement-attribution-types" />
 

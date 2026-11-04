@@ -93,6 +93,8 @@ Không cần thêm bất kỳ tham số bổ sung nào vào liên kết sâu (is
 
 </Accordion>
 
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
+
 <div id="dynamic-remarketing-and-shopping-campaigns" />
 
 ## Tiếp thị lại năng động và chiến dịch mua sắm

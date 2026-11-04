@@ -52,6 +52,8 @@ ASA cung cấp [phân bổ di động dựa trên lượt nhấp](/docs/apple-ad
 
 Quá trình thiết lập được thực hiện từ trang **Active Integrations**, nhưng để tìm đối tác mới, trước tiên bạn phải truy cập <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations">Partner Marketplace</Anchor>. Hoàn thành cấu hình bằng cách sử dụng các tab có liên quan, như được mô tả dưới đây.
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > Trước khi thiết lập tích hợp, hãy nhớ <Anchor target="_blank" href="/marketers/vi/docs/partner-integrations#liên-hệ-với-đối-tác">liên hệ với đối tác</Anchor> và mở tài khoản với họ.
@@ -83,6 +85,8 @@ Tích hợp chi phí cung cấp dữ liệu tổng hợp sau:
 * Dữ liệu chi phí cho các chiến dịch, bộ quảng cáo, vùng địa lý/quốc gia và từ khóa của bạn. Xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">bảng tích hợp chi phí mạng quảng cáo</Anchor> để biết chi tiết đầy đủ về các phương diện, phép đo và tính năng được hỗ trợ.  
   **Lưu ý:** Dữ liệu chi phí yêu cầu phải có đăng ký ROI360.
 * Dữ liệu về lượt chuột, lượt hiển thị và dữ liệu phong phú—từ khóa, tên chiến dịch và bộ quảng cáo.
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -209,6 +213,8 @@ Nhà quảng cáo cho phép các đại lý thay mặt họ chạy các chiến 
 4. [Tùy chọn] Nếu bạn muốn phân bổ người dùng cài đặt lại ứng dụng trong khung thời gian phân bổ lại, hãy bật tùy chọn **Phân bổ lượt cài đặt lại.**
 5. Nhấp vào **Lưu**.
 
+<div id="note-3" />
+
 <div id="agency-actions" />
 
 #### **Hành động của đại lý**
@@ -225,6 +231,8 @@ Nhà quảng cáo cho phép các đại lý thay mặt họ chạy các chiến 
 > 📘 **Lưu ý**
 >
 > Khi một đại lý làm việc với Đối tác Tiếp thị Apple Search Ads, đại lý đó phải cấu hình cùng ID nhóm chiến dịch trong cả trang cấu hình Apple Search Ads và trang cấu hình Đối tác Tiếp thị.
+
+<div id="note-4" />
 
 <div id="cost-clicks-and-impressions-data" />
 
@@ -255,6 +263,10 @@ Nếu bạn bật API chi phí, AppsFlyer sẽ nhận dữ liệu về chi phí,
 4. Nhấp vào **Save integration** (Lưu tích hợp).
 
 </Accordion>
+
+<div id="before-september-1-2026" />
+
+<div id="after-september-1-2026" />
 
 <div id="additional-information" />
 
@@ -302,6 +314,22 @@ Các số liệu sau đây minh họa sự khác biệt có thể xảy ra như 
 **Tính năng nhắm mục tiêu lại tắt**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="20260901" />
+
+<div id="h_01M0YZYCC5S0E3HA296KAA0SDZ" />
+
+<div id="missing-conversion-payload-for-gender-and-age-targeted-users" />
+
+<div id="preregistration-click-and-impression-lookback-window-discrepancy" />
+
+<div id="impression-lookback-window" />
+
+<div id="see-also" />
+
+<div id="before-september-1-2026-1" />
+
+<div id="after-september-1-2026-1" />
 
 <div id="additional-reasons-for-discrepancies" />
 

@@ -25,6 +25,28 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm câu trả lời cho các câu hỏi thường gặp về việc sử dụng Meta ads trong AppsFlyer.
 
+<div id="can-i-use-get" />
+
+<div id="conversion-events-are-not-sent-to-meta-ads" />
+
+<div id="aem-attribution-is-not-working" />
+
+<div id="are-ios-universal-links-and-android-app-links-supported-in-metas-non-paid-content" />
+
+<div id="how-can-i-get-device-level" />
+
+<div id="note" />
+
+<div id="submitting-the-decryption-key" />
+
+<div id="sdk-and-setup-notes" />
+
+<div id="campaign-attribution-fields" />
+
+<div id="meta-install-referrer" />
+
+<div id="google-play-install-referrer-api" />
+
 <div id="meta-ads-faq" />
 
 ## Câu hỏi thường gặp về Meta ads

@@ -118,6 +118,12 @@ Các đơn vị có thể làm cơ sở cho phần phụ trợ được đo lư�
 | --- | --- | --- |
 | Đơn vị đô la của ROI360 | Đơn vị đô la được ghi nhận của chi phí quảng cáo, doanh thu quảng cáo trong ứng dụng và doanh thu mua hàng trong ứng dụng (bao gồm cả các gói đăng ký), được đo lường bằng phần bổ trợ ROI360. Mỗi đơn vị đại diện cho 1 đô la trong phép đo ROI360 được ghi nhận. | <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-cost-and-revenue-data">ROI360—dữ liệu chi phí và doanh thu</Anchor> |
 
+<div id="understand-billing-for-extended-platform-apps" />
+
+<div id="what-isnt-billed" />
+
+<div id="what-is-billed" />
+
 <div id="roi360-dollar-units" />
 
 #### Đơn vị đô la của ROI360
@@ -173,6 +179,26 @@ Từ thẻ **My plan**, bạn có thể xem thông tin chi tiết về gói hi�
 | <span id="addons"></span>**Phần bổ trợ** | Các phần bổ trợ có trong gói của bạn và ngày bắt đầu/kết thúc của các phần bổ trợ đó. Đây là những tính năng cao cấp, ví dụ:<ul><li><Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Chống gian lận trên di động</li><li><Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Dữ liệu chi phí</li><li><Anchor target="_blank" href="/marketers/vi/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/vi/docs/pivot-table-user-metrics">Bảng Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/vi/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>Để tìm hiểu thêm về các tính năng này và những lợi ích tiềm năng của chúng đối với doanh nghiệp của bạn, hãy kiểm tra với CSM của bạn hoặc liên hệ theo địa chỉ [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Gói trong tương lai** | Phần này chỉ xuất hiện khi bạn đã mua một gói trong tương lai. Nếu đúng như vậy, bạn sẽ thấy thông tin chi tiết về gói tiếp theo của mình tại đây. |
 
+<div id="partial::64822c61" />
+
+<div id="partial" />
+
+<div id="complete" />
+
+<div id="roi360" />
+
+<div id="measurement" />
+
+<div id="usage-report-fields" />
+
+<div id="note-3" />
+
+<div id="data-included-in-the-usage-report" />
+
+<div id="note-2" />
+
+<div id="access-to-the-usage-report-page" />
+
 <div id="usage-report" />
 
 ### Báo cáo mức sử dụng
@@ -202,6 +228,8 @@ Báo cáo mức độ sử dụng hiển thị các lượt chuyển đổi hợ
 | <span id="conversion-source"></span>**Nguồn chuyển đổi** | Nguồn dữ liệu phân bổ hợp nhất. Giá trị có thể có bao gồm:<ul><li>**Real-time attribution (RTA):** AppsFlyer là nguồn dữ liệu phân bổ hợp nhất</li><li>**SKAd Network:** SKAdNetwork là nguồn dữ liệu phân bổ hợp nhất</li><li>**Protect360 - post attribution:** Điều chỉnh đối với các lượt phân bổ và sự kiện trong ứng dụng trước đó được <Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">AppsFlyer Protect360</Anchor> xác định là gian lận</li><li>**People-based attribution (PBA):** Lượt chuyển đổi web được phân bổ làm lượt truy cập được giới thiệu bởi AppsFlyer PBA</li></ul> |
 | <span id="conversion-type"></span>**Loại chuyển đổi** | Loại lượt chuyển đổi được phân bổ. Các giá trị [đơn vị](/docs/account-management-plans-payments-and-billing#đơn-vị-gói) có thể có bao gồm:<ul><li>Các lượt cài đặt không tự nhiên (NOI)</li><li>Tương tác lại</li><li>Phân bổ lại</li><li>Số người dùng hoạt động hàng tháng (MAU)</li><li>Sự kiện trong ứng dụng</li><li>Chuyển đổi web không trực tiếp</li></ul>Trường **Loại chuyển đổi** không được điền cho chuyển đổi **Protect360 - hậu phân bổ**. |
 | <span id="total-conversions"></span>**Tổng lượt chuyển đổi** | Tổng số lượng đơn vị bị tính phí.<ul><li>**Protect360 - post attribution** Các lượt chuyển đổi luôn mang giá trị **âm** vì chúng đảo ngược các lượt chuyển đổi bị tính phí được xác định là gian lận.</li><li>Để biết thêm thông tin về cách tính lượt chuyển đổi trên ứng dụng iOS, hãy xem [Thanh toán cho ứng dụng iOS](/docs/account-management-plans-payments-and-billing#tùy-chọn-đo-lường-lượt-chuyển-đổi-đối-với-thanh-toán-qua-ứng-dụng-ios) (ở trên).</li></ul> |
+
+<div id="note-4" />
 
 <div id="download-a-usage-report" />
 
@@ -260,6 +288,26 @@ Bạn có thể yêu cầu nâng cấp tài khoản trực tiếp thông qua nú
 > 📘 **Lưu ý**
 >
 > Thẻ **Payments and invoices** chỉ khả dụng cho các gói yêu cầu thanh toán (các gói khác ngoài gói [Welcome hoặc Zero](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
+
+<div id="other-payment-methods" />
+
+<div id="credit-card" />
+
+<div id="ach-for-us-customers-recurring-or-paynow" />
+
+<div id="managing-payment-methods" />
+
+<div id="set-up" />
+
+<div id="paynow-manual-invoice-payment" />
+
+<div id="note-6" />
+
+<div id="hands-free-recurring-payments" />
+
+<div id="payment-types" />
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 <div id="payment-methods-easy--secure-invoicing" />
 

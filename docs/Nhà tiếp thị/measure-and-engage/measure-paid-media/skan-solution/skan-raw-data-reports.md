@@ -62,6 +62,18 @@ Các loại báo cáo có sẵn là:
 * Các trường bổ sung không bắt buộc như campaign\_name, ad\_network\_campaign\_id, ip mà mạng quảng cáo không cung cấp.
 * Apple đã giữ lại dữ liệu do chính sách ngưỡng áp dụng của Apple. Các trường như source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
 
+<div id="decoded-event::5dac9cbb" />
+
+<div id="decoded-event::b8f2b4a4" />
+
+<div id="decoded-event::5c7e459f" />
+
+<div id="decoded-event" />
+
+<div id="postback::315d5a62" />
+
+<div id="postback" />
+
 <div id="skan-raw-data-report-format-and-content" />
 
 ## Định dạng và nội dung báo cáo dữ liệu thô SKAN

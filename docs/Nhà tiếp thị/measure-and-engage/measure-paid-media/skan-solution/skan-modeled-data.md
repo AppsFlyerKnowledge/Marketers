@@ -38,6 +38,8 @@ Dữ liệu theo mô hình SKAN giải quyết các vấn đề sau:
 
 **Lưu ý**: Khi thay đổi lược đồ giá trị chuyển đổi, bạn phải mất 2 ngày mới có dữ liệu được lập mô hình.
 
+<div id="inapp-event-ltv" />
+
 <div id="modeled-data-types-and-availability" />
 
 ## Loại dữ liệu được lập mô hình và tính có sẵn

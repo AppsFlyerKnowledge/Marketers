@@ -26,7 +26,7 @@ x-zendesk:
   section_id: 6551287787537
   url: https://support.appsflyer.com/hc/vi/articles/360000726098
 ---
-> **Khái quát:** Sử dụng <span id="snapchat-conversion-data"></span><span id="twitter-conversion-data"></span>dữ liệu chuyển đổi để xác định các tình huống chuyển đổi khác nhau, tùy chỉnh trải nghiệm người dùng, v.v.
+> **Khái quát:** Sử dụng <span id="tiktok-conversion-data"></span><span id="tiktok-for-business-conversion-data"></span><span id="x-ads-conversion-data"></span><span id="snapchat-conversion-data"></span><span id="twitter-conversion-data"></span>dữ liệu chuyển đổi để xác định các tình huống chuyển đổi khác nhau, tùy chỉnh trải nghiệm người dùng, v.v.
 
 <div id="overview" />
 
@@ -384,6 +384,8 @@ Tuy nhiên, dữ liệu liên quan đến chi phí **không xuất hiện trong 
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="retargeting-conversion-data" />
 
 ## Nhắm mục tiêu lại dữ liệu chuyển đổi
@@ -393,6 +395,8 @@ Nhắm mục tiêu lại bao gồm hai loại chuyển đổi, phân bổ lại 
 > 👍 **Lời khuyên**
 >
 > Dữ liệu chuyển đổi dùng cho việc nhắm mục tiêu lại không phải lúc nào cũng đưa ra dấu hiệu rõ ràng về loại chuyển đổi. Xem [các nguồn dữ liệu chuyển đổi thay thế](#nguồn-dữ-liệu-chuyển-đổi-thay-thế).
+
+<div id="note" />
 
 <div id="re-attribution-with-srns" />
 
@@ -481,6 +485,8 @@ Thông thường, bạn muốn liên kết sâu với những người dùng đ�
 <Accordion title="Liên kết sâu gián tiếp với SRN">
 
 Thông số Liên kết sâu được xác định trong các chiến dịch SRN không có sẵn bên ngoài SRN. Điều này bao gồm thông số `af_dp`, chứa đường dẫn lược đồ trong ứng dụng. Ngoại lệ duy nhất cho điều này là khi sử dụng <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#sử-dụng-liên-kết-sâu-gián-tiếp-rong-chiến-dịch-ứng-dụng">Chiến dịch ứng dụng của Google trong Nguồn cấp dữ liệu</Anchor>. Để triển khai liên kết sâu bị trì hoãn, logic bổ sung phải được áp dụng cho các chiến dịch SRN. Sử dụng dữ liệu trong phản hồi `onConversionSuccess`, chẳng hạn như chiến dịch, bộ quảng cáo, nhóm quảng cáo để chuyển hướng người dùng của bạn theo chương trình.
+
+<div id="note-1" />
 
 <div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
@@ -628,6 +634,10 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - khi thông số này xuất hiện và được đặt thành true, hãy tìm các trường `scheme` và `host`
 * `scheme` và `host` - các trường này đến từ thông số `af_dp` trong đường dẫn phân bổ và cho biết lược đồ và hoạt động mà người dùng sẽ được liên kết sâu
 
+<div id="note-2" />
+
+<div id="important" />
+
 <div id="ios-universal-links-and-android-app-links" />
 
 #### Liên kết chung iOS và liên kết ứng dụng Android
@@ -732,6 +742,8 @@ Ví dụ:
 
 * Nhà phát triển ứng dụng có thể sử dụng các thông số như vậy, như `af_dp` và tên chiến dịch, để đưa người dùng đến một hoạt động cụ thể và cung cấp nội dung có liên quan.
 
+<div id="important-1" />
+
 > 🚧 **Quan trọng!**
 >
 > Chúng tôi đề nghị bạn nên sử dụng phiên bản rút gọn của OneLink. Nhấp vào <Anchor target="_blank" href="/marketers/vi/docs/understand-onelink-short-vs-long-urls">đây</Anchor> để tìm hiểu thêm.
@@ -752,6 +764,8 @@ Một lý do khác để sử dụng phiên bản rút gọn của OneLink là c
 
 * API Push cung cấp tải trọng chuyển đổi chi tiết cho biết đó là phân bổ lại hay thu hút lại. Tải trọng API Push bao gồm một trường được gọi là `re_targeting_conversion_type`. Trường này cho biết loại chuyển đổi, là phân bổ lại hay thu hút lại. Để tìm hiểu thêm, hãy xem phần <Anchor target="_blank" href="/marketers/vi/docs/push-api-streaming-raw-data">hướng dẫn API Push</Anchor> của chúng tôi.
 * Báo cáo Dữ liệu Thô cũng chứa các chỉ số cho loại chuyển đổi. Trong báo cáo dữ liệu thô đối với chuyển đổi nhắm mục tiêu lại, có một cột được gọi là ***Event Name***. Giá trị trong cột này là ***lượt thu hút lại*** hoặc ***phân bổ lại*** theo loại chuyển đổi.
+
+<div id="note-3" />
 
 <div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 

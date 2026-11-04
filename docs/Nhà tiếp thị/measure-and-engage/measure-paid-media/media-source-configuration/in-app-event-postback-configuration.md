@@ -43,6 +43,8 @@ Nhà tiếp thị có thể chọn các sự kiện trong ứng dụng mà họ 
 > * Các sự kiện trong ứng dụng bao gồm **các sự kiện bị từ chối**, nghĩa là các sự kiện trong ứng dụng bị Protect360 chặn hoặc các sự kiện được phát hiện là không tuân thủ các quy tắc xác thực mục tiêu.
 > * Nếu phần **In-app event postbacks** không tồn tại trong tab **Integration**, thì có nghĩa là đối tác chưa thiết lập ghi nhận sự kiện trong ứng dụng với AppsFlyer trong cấu hình sơ bộ. Đối tác có thể liên hệ với AppsFlyer bằng <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">tiện ích trợ lý đối tác</Anchor> để hoàn tất quá trình tích hợp.
 
+<div id="note-1" />
+
 <div id="in-app-event-postback-window" />
 
 ## Khung thời gian đăng lại sự kiện trong ứng dụng
@@ -196,6 +198,14 @@ Bạn có thể chọn những sự kiện chưa được ánh xạ để gửi 
 
 * **Chỉ đối tác này**: Chỉ gửi đăng lại khi sự kiện được phân bổ cho đối tác này—nghĩa là người dùng thực hiện sự kiện đến từ đối tác này.
 * **All media sources including organic**: Gửi đăng lại tới tất cả các nguồn truyền thông cho các sự kiện được phân bổ cho bất kỳ đối tác nào và cho các sự kiện không phải trả tiền—nghĩa là khi người dùng thực hiện sự kiện đến từ bất kỳ nguồn truyền thông nào.
+
+<div id="tip" />
+
+<div id="note-8" />
+
+<div id="share-revenue" />
+
+<div id="note-7" />
 
 <div id="data-to-include-in-the-postbacks" />
 
@@ -384,6 +394,8 @@ Nhà tiếp thị có thể cho phép các đại lý định cấu hình đăng
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
+
+<div id="note-11" />
 
 > 📄 **Xem thêm**
 >

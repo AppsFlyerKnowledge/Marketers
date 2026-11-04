@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Tổng quan:** Tích hợp tài khoản X Ads của bạn với AppsFlyer để hiển thị dữ liệu phân bổ của các chiến dịch X Ads.
 
+<div id="note" />
+
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
 ## Kết nối tài khoản X Ads của bạn với AppsFlyer
@@ -77,6 +79,10 @@ x-zendesk:
 
 Tab **Integration** được chia thành các phần khác nhau như được mô tả dưới đây. <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">Đối tác phải được kích hoạt</Anchor> trong lần truy cập đầu tiên để cho phép thiết lập diễn ra.
 
+<div id="note-1" />
+
+<div id="advanced-privacy" />
+
 <div id="ad-account-connected" />
 
 ### Đã kết nối Tài khoản Quảng cáo
@@ -95,6 +101,8 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-30 ngày
 
 ![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="reinstall-settings" />
+
 <div id="view-through-attribution-lookback-window" />
 
 ### Cửa sổ xem lại phân bổ lượt xem qua
@@ -104,6 +112,8 @@ Thanh trượt này cho phép bạn đặt **thời gian tối đa từ khi hi�
 Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-7 ngày. Bạn nên đặt thời gian xem lại Lượt xem qua thành 1 ngày, để phù hợp với X Ads.
 
 ![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+
+<div id="important" />
 
 <div id="re-engagement-settings" />
 
@@ -130,6 +140,8 @@ Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác l
 Đặt thời lượng cho **Thời gian xem lại lượt xem hết tương tác lại** (thời gian tối đa sau khi một quảng cáo được xem, trong thời gian đó người dùng được nhắm lại mục tiêu có thể được phân bổ cho quảng cáo). Bạn có thể đặt giá trị theo giờ (tối đa 23) hoặc ngày (1-7):
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+
+<div id="ignore-active-users-for-retargeting" />
 
 <div id="re-engagement-window" />
 
@@ -229,6 +241,22 @@ Sử dụng các chuyển đổi này để cấp quyền cho mạng quảng cá
 * **Allow access to your Protect360 dashboard** (Cho phép truy cập vào bảng điều khiển Protect360 của bạn) - chỉ với dữ liệu Protect360 của đối tác và miễn là tính năng được kích hoạt cho nhà quảng cáo
 
 Tìm hiểu thêm về việc cấp <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">quyền truy cập mạng quảng cáo</Anchor>.
+
+<div id="twitter-user-privacy" />
+
+<div id="twitter-ads-and-appsflyer-skan-interoperation" />
+
+<div id="webtoapp-measuring-app-activity-for-nonapp-campaigns-android-only" />
+
+<div id="mobile-app-promotion-on-x-ads" />
+
+<div id="traits-and-limitations" />
+
+<div id="advanced-srn-parameter-names" />
+
+<div id="important-1" />
+
+<div id="x-ads-features" />
 
 <div id="agency-permissions" />
 

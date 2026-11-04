@@ -31,6 +31,10 @@ Nhà quảng cáo ánh xạ các sự kiện trong ứng dụng, SDK hoặc Máy
 
 Điều này cho phép nhà quảng cáo tận dụng các khả năng tối ưu hóa nâng cao của Meta, cũng như tạo phân đoạn Đối tượng Tương tự và Tùy chỉnh.
 
+<div id="availability-limitations" />
+
+<div id="mapping-ad-revenue-data-for-campaign-optimization" />
+
 <div id="predefined-event-mapping" />
 
 ### Ánh xạ sự kiện được xác định trước
@@ -67,6 +71,18 @@ Tên sự kiện và giá trị sự kiện (bao gồm các thông số sự ki�
 Lưu ý rằng bạn có thể <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">sử dụng các sự kiện này để tùy chỉnh các chiến dịch của bạn</Anchor>.
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+
+<div id="important" />
+
+<div id="example-unified-format-compatible-with-meta-and-tiktok" />
+
+<div id="note-1" />
+
+<div id="send-complex-in-app-events-to-meta-ads" />
+
+<div id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter" />
+
+<div id="note" />
 
 <div id="automatic-parameter-mapping-with-the-custom-event" />
 
@@ -127,6 +143,8 @@ Bảng sau liệt kê tất cả các thông số sự kiện của AppsFlyer, k
 | af\_travel\_end | fb\_travel\_end |
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
+
+<div id="important-1" />
 
 <div id="event-and-parameter-limitations" />
 

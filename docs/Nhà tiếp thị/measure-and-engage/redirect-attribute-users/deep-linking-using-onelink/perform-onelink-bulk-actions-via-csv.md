@@ -34,6 +34,8 @@ Liên kết hàng loạt cho phép bạn tạo và xem các liên kết được
    2. **Create a OneLink template** - Cần có mẫu OneLink để tạo tập hợp. Xem <Anchor target="_blank" href="/marketers/vi/docs/create-a-onelink-template">các mẫu OneLink</Anchor>.
    3. **Upgrade** -  Liên kết hàng loạt không khả dụng với gói hiện tại của bạn. Liên hệ với CSM của bạn hoặc gửi thư đến [hello@appsflyer.com](mailto:hello@appsflyer.com) về việc nâng cấp gói của bạn.
 
+<div id="managing-your-bulk-links-with-collections" />
+
 <div id="creating-your-first-collection" />
 
 ## Tạo tập hợp đầu tiên của bạn
@@ -55,6 +57,20 @@ Liên kết hàng loạt được quản lý trong các tập hợp.
   * Hiện tại, giới hạn mặc định là 20.000 lượt tạo liên kết mỗi tháng
 * Phần **Collections** cho phép bạn tạo một tập hợp mới và thực hiện các hành động khác đối với các tập hợp liên kết hiện tại của bạn.
 * Nếu có nhiều hơn bảy tập hợp, bạn có thể tìm kiếm và lọc danh sách tập hợp của mình.
+
+<div id="downloading-a-collection-of-qr-codes" />
+
+<div id="downloading-a-collection-of-links" />
+
+<div id="empty-collections" />
+
+<div id="important-notes" />
+
+<div id="notes" />
+
+<div id="note" />
+
+<div id="important" />
 
 <div id="other-actions" />
 
@@ -181,6 +197,20 @@ Tập hợp có thể trống do:
 * Quá trình tạo tập hợp mới đã bị hủy bỏ hoặc không thể hoàn thành trước khi liên kết được tạo. Trường hợp này sẽ tạo ra một tập hợp trống.
 
 </Accordion>
+
+<div id="can-you-bulk-create-qr-codes" />
+
+<div id="what-options-are-available-for-generating-qr-codes-in-appsflyer" />
+
+<div id="can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example" />
+
+<div id="qr-with-long-links-vs-short-links---is-there-any-difference" />
+
+<div id="parameters-in-the-uploaded-csv" />
+
+<div id="faq" />
+
+<div id="note-1" />
 
 <div id="general-information" />
 

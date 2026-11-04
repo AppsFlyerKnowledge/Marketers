@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về các thuộc tính của chiến dịch và cách chúng hiển thị trong dữ liệu ETL Chi phí của AppsFlyer.
 
+<div id="snap" />
+
 <div id="about-campaign-properties" />
 
 ## Giới thiệu về thuộc tính của chiến dịch

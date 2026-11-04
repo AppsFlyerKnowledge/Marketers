@@ -38,6 +38,26 @@ The **Activate partner** setting controls attribution and postback sending accor
 
 The **Activate partner** control is located on the partner **Integration** tab.
 
+<div id="deactivating-a-partner" />
+
+<div id="example-2" />
+
+<div id="example-1" />
+
+<div id="disabled-agency-permissions" />
+
+<div id="note" />
+
+<div id="agency-permissions" />
+
+<div id="partner-visibility" />
+
+<div id="partner-and-agency-access-to-dashboards" />
+
+<div id="deactivate-a-partner-integration" />
+
+<div id="who-can-activate-an-integration" />
+
 > ❗️ **Caution**
 >
 > Don't use the **Activate partner** setting to pause or end campaigns. Doing so could cause irreversible damage to active campaign measurement.

@@ -35,11 +35,43 @@ Bảng điều khiển <Anchor target="_blank" href="/marketers/vi/docs/creative
 
 **Bảng điều khiển Khám phá** được AI hỗ trợ cung cấp cho đội ngũ quảng cáo của bạn mọi thông tin họ cần thiết để tạo ra những quảng cáo thành công. Bảng điều khiển này sẽ cung cấp dữ liệu hiệu suất chi tiết, giúp đưa ra các quyết định sáng suốt dựa trên các yếu tố hoặc tính năng cụ thể trong quảng cáo góp phần nâng cao hiệu quả của quảng cáo. Với bảng điều khiển này, bạn có thể tạo lập và duy trì một cách nhất quán các quảng cáo thành công dựa trên dữ liệu và được tối ưu hóa để có tác động tối đa. Dựa trên các lựa chọn bộ lọc chính, bạn có thể xem thư viện quảng cáo của mình hoặc phân chia chúng thành các cảnh và thành phần riêng lẻ.
 
+<div id="set-discovery-card-metrics" />
+
+<div id="set-up-the-dashboard" />
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
+
 <div id="get-started" />
 
 ## Bắt đầu
 
 Nếu chưa định cấu hình Tối ưu hóa Quảng cáo, bạn có thể tìm thấy hướng dẫn về cách thực hiện <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-guide#bắt-đầu">tại đây</Anchor>.
+
+<div id="traits-and-limitations" />
+
+<div id="discovery-card-drilldown" />
+
+<div id="texts" />
+
+<div id="coming-soon--smart-tags" />
+
+<div id="discovery-ai-search" />
+
+<div id="additional-information" />
+
+<div id="notes" />
+
+<div id="combining-properties" />
+
+<div id="narrative-and-high-level-concepts" />
+
+<div id="audio" />
+
+<div id="text" />
+
+<div id="visual" />
+
+<div id="what-you-can-search-for" />
 
 <div id="concepts" />
 

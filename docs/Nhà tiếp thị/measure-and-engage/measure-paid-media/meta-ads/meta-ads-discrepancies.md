@@ -79,6 +79,8 @@ Do Meta ads không gửi dữ liệu ở mức người dùng nên AppsFlyer có
 
 Tuy nhiên, đối với phân bổ lượt nhấp qua, nếu mục quảng cáo chuyển hướng người dùng đến Google Play Store, các trường phân bổ khả dụng cho các nhà quảng cáo trong Google Install Referrer. Các trường được cung cấp qua người giới thiệu sẽ nhập các báo cáo dữ liệu thô AppsFlyer được cung cấp cho bạn và cho phép AppsFlyer phân bổ người dùng không có ID quảng cáo (Bật LAT).
 
+<div id="different-event-count" />
+
 <div id="in-app-events-differences" />
 
 ## Những sự khác biệt của sự kiện trong ứng dụng
@@ -135,6 +137,8 @@ Tương tự, nếu bạn sử dụng giải pháp chống gian lận của Apps
 >
 > Jeff, người quản lý UA của GreatApp, tạo ra chiến dịch SPNA để chỉ nhắm mục tiêu đến người nói tiếng Tây Ban Nha ở Bắc Mỹ. Để xác minh điều này, Jeff xác định một quy tắc xác thực chỉ chấp nhận người dùng từ Canada và Hoa Kỳ.
 > Khi người dùng Meta ads đến từ Tây Ban Nha nhấp vào và cài đặt ứng dụng, Meta ads sẽ tự báo cáo lượt cài đặt, trong khi AppsFlyer từ chối lượt cài đặt đó vì không vượt qua quy tắc xác thực.
+
+<div id="meta-probabilistic-modeling-aem-discrepancies-in-ios-apps" />
 
 <div id="sdk-related-discrepancies" />
 

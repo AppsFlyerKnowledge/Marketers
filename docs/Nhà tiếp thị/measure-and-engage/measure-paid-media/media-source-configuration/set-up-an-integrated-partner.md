@@ -120,6 +120,8 @@ Trang này có cấu trúc như sau:
 
 </Accordion>
 
+<div id="important" />
+
 <div id="set-up-a-partner-non-srn" />
 
 ## Thiết lập đối tác (không phải SRN)
@@ -144,6 +146,26 @@ Tích hợp đối tác sẽ có yêu cầu khác nhau và có thể chứa mộ
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Hoàn thành các mục theo yêu cầu.
+
+<div id="i-connect-more-apps-optional" />
+
+<div id="g-in-app-event-postback-configuration" />
+
+<div id="default-postbacks" />
+
+<div id="e-cross-platform-attribution" />
+
+<div id="reengagement-window" />
+
+<div id="non-eu-users" />
+
+<div id="d-general-settings" />
+
+<div id="c-transaction-id" />
+
+<div id="b-advanced-privacy" />
+
+<div id="a-activate-partner" />
 
 <div id="integration-sections" />
 
@@ -558,6 +580,8 @@ Nếu bạn là nhà phát hành hiển thị quảng cáo trong ứng dụng, t
 * **Mạng quảng cáo do đại lý thiết lập:** Khi việc thiết lập đối tác do đại lý thực hiện thì nhà quảng cáo không thể xem trạng thái kích hoạt mạng quảng cáo cũng như các quyền được cấp.
 * Nếu mối quan hệ của bạn với đối tác chỉ là đại lý, thì hãy bỏ qua phần **Quyền cấp cho Mạng Quảng cáo** và đặt phần **Quyền cấp cho Đại lý**.
 
+<div id="note-3" />
+
 <div id="ad-network-permissions" />
 
 #### Quyền truy cập mạng quảng cáo
@@ -588,6 +612,8 @@ Nếu bạn là nhà phát hành hiển thị quảng cáo trong ứng dụng, t
 | <span id="use-ad-spend-ingestion"></span>Sử dụng nhập chi tiêu quảng cáo | Mạng quảng cáo có thể:<ul><li>Truy cập cửa sổ <Anchor target="_blank" href="/marketers/vi/docs/import-cost-data">Ad Spend Ingestion</Anchor>. Cửa sổ này chỉ hiển thị các ứng dụng họ có quyền truy cập.</li><li>Gửi tệp chi tiêu quảng cáo để nhập.</li></ul> |
 | <span id="access-protect360-dashboard-raw-data"></span>Truy cập bảng điều khiển Protect360 & dữ liệu thô | Mạng quảng cáo có thể:<ul><li>Truy cập bảng điều khiển Protect360 của họ (bao gồm <Anchor target="_blank" href="/marketers/vi/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Truy cập Protect360, Quy tắc xác thực và dữ liệu thô nếu nằm trong gói đăng ký. ProtectLITE không bao gồm quyền truy cập vào dữ liệu thô.</li></ul>**Lưu ý:** Khi bạn có đăng ký <Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">Protect360</Anchor>, mạng quảng cáo có thể xem toàn bộ bảng điều khiển. Nếu không có đăng ký Protect360, họ có thể xem bảng điều khiển thu gọn. |
 | <span id="access-ad-revenue-raw-data"></span>Truy cập dữ liệu thô về doanh thu quảng cáo | Mạng quảng cáo có thể truy cập <Anchor target="_blank" href="/partners/vi/docs/ad-revenue-signals-for-ua-ad-networks">dữ liệu doanh thu quảng cáo của họ để tối ưu hóa UA</Anchor>.   <br />**Lưu ý:** Quyền này chỉ khả dụng cho các ứng dụng có đăng ký <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>. |
+
+<div id="important-1" />
 
 <div id="agency-permissions" />
 

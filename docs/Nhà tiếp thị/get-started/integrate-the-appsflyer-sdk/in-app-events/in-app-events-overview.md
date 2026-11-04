@@ -53,6 +53,10 @@ Sự kiện trong ứng dụng bao gồm tên sự kiện và có thể gồm c�
 >
 > Bạn muốn biết thêm về các sự kiện trong ứng dụng? Hãy xem <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">khóa học ngắn, bổ ích</Anchor> này trên Cổng thông tin Học tập AppsFlyer.
 
+<div id="note" />
+
+<div id="revenue-in-in-app-events" />
+
 <div id="predefined-and-custom-events" />
 
 <Accordion title="Các sự kiện tùy chỉnh và xác định trước">
@@ -96,6 +100,8 @@ Giá trị doanh thu chỉ được chứa số (và dấu thập phân, nếu c
 **af\_currency** đại diện cho đơn vị tiền tệ được thể hiện bằng af\_revenue (hoặc af\_price). Nếu thiếu af\_currency trong các thông số của sự kiện, thì AppsFlyer sẽ gửi bằng giá trị mặc định "USD".
 
 Bạn có thể dùng **af\_price** như một thông số tiền tệ mà không tính là doanh thu (ví dụ như trong sự kiện “Thêm vào Giỏ hàng”). Thông số này đề cập đến giá của từng mặt hàng. Tổng số tiền của tất cả các giao dịch mua sẽ xuất hiện trong thông số af\_revenue.
+
+<div id="note-1" />
 
 ### Tiền tệ doanh thu
 
@@ -198,6 +204,8 @@ Có một số cách để gửi các sự kiện trong ứng dụng tới AppsF
 * **<Anchor target="_blank" href="/marketers/vi/docs/server-to-server-events-api-for-mobile-s2s-mobile">API máy chủ đến máy chủ:</Anchor>** Sử dụng API máy chủ đến máy chủ để gửi trực tiếp các sự kiện xảy ra bên ngoài ứng dụng dành cho thiết bị di động đến AppsFlyer. Ví dụ: nếu bạn có một người dùng đang hoạt động trên cả giao diện web và thiết bị di động, bạn có thể ghi nhận các sự kiện từ cả hai nguồn và phân bổ chúng cho cùng một người dùng trong AppsFlyer. Đó có thể là sự kiện trong ứng dụng hoặc các sự kiện khác, chẳng hạn như các sự kiện trang web, sự kiện tổng đài hoặc mua hàng tại cửa hàng thực tế.
 * **<Anchor target="_blank" href="/marketers/vi/docs/legacy-receipt-validation-for-in-app-purchases">Xác thực biên nhận</Anchor>:** Đây là một cơ chế bảo mật trong đó nền tảng thanh toán, chẳng hạn như Apple và Google, xác nhận rằng giao dịch mua trong ứng dụng đã diễn ra như được báo cáo. Xác thực mua là công cụ chính để ngăn chặn các sự kiện doanh thu gian lận. Đồng thời, việc này cũng giúp bạn xem doanh thu thực tế và lọc ra các hoạt động mua hàng trong ứng dụng chưa hoàn tất.
 * **<Anchor target="_blank" href="/marketers/vi/docs/in-app-events-for-hybrid-apps">Ứng dụng lai</Anchor>**: Các ứng dụng này kết hợp các chế độ xem gốc và nội dung HTML và cũng có thể ghi nhận các sự kiện trong ứng dụng. Tuy nhiên, vì SDK chỉ có thể gửi các sự kiện từ phía gốc nên các nhà phát triển phải chuyển tiếp tất cả dữ liệu sự kiện sang mã gốc.
+
+<div id="note-2" />
 
 <div id="setting-up-in-app-events" />
 
@@ -367,6 +375,12 @@ Nếu người dùng bắt đầu một sự kiện khi không có kết nối i
 3. Khi nhận được phản hồi thành công tiếp theo thì sự kiện đã lưu trữ sẽ được gửi lại đến máy chủ.
 4. Nếu có nhiều sự kiện trong bộ nhớ đệm thì chúng sẽ được gửi lần lượt đến máy chủ.
 
+<div id="h_01HDBZW9XFB9TAT8W4CGNP1892" />
+
+<div id="h_01KSMX2ECGTDXQP3G9PZW1PFQD" />
+
+<div id="important" />
+
 <div id="note-3" />
 
 > 📘 **Lưu ý**
@@ -465,6 +479,8 @@ Hai sự kiện được coi là giống hệt nhau nếu các trường sau đ�
 * Giá trị của sự kiện
 * ID ứng dụng
 * ID AppsFlyer
+
+<div id="see-also" />
 
 <div id="note-4" />
 

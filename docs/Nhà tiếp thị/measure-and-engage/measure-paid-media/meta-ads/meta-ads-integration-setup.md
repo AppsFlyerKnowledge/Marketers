@@ -58,6 +58,16 @@ Bạn không cần thực hiện Đăng nhập Facebook hoặc tích hợp ứng
 
 AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụng cùng một ID Ứng dụng Facebook cho [cả ứng dụng Android và iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Lưu ý rằng, đối với phiên bản iOS 14 trở lên, quảng cáo Meta giới hạn số lượng tài khoản quảng cáo ở mức 9 tài khoản cho mỗi ứng dụng.
 
+<div id="optional--configure-recommended-settings" />
+
+<div id="set-the-meta-ads-active-integration" />
+
+<div id="enable-meta-ads-device-level-data" />
+
+<div id="create-and-retreive-facebook-app-id" />
+
+<div id="important" />
+
 <div id="basic-meta-ads-attribution-setup" />
 
 ## Thiết lập phân bổ quảng cáo Meta cơ bản
@@ -106,6 +116,16 @@ AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụn
 Bạn vẫn không thấy kết quả trên AppsFlyer? Tham khảo Khắc phục sự cố khi tích hợp quảng cáo Meta
 
 </Accordion>
+
+<div id="note-1" />
+
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
+<div id="note" />
+
+<div id="meta-install-referrer" />
+
+<div id="google-play-install-referrer-api" />
 
 <div id="advanced-meta-ads-attribution-setup" />
 
@@ -192,6 +212,8 @@ Cần nhắm mục tiêu rộng để nhận dữ liệu cài đặt lượt xem
 * Đối với "thoải mái", "Nhắm mục tiêu chi tiết lợi thế" Hộp cho các chiến dịch quảng cáo phải được chọn:  
 
   <Image alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Dữ liệu được mã hóa từ API liên kết giới thiệu Google Play hoặc liên kết giới thiệu cài đặt Meta
 
@@ -295,6 +317,16 @@ Tìm hiểu thêm về cách làm phong phú thêm dữ liệu của bạn với
   * Dấu chấm (.)
   * Bộ ký tự không phải tiếng La tinh (tiếng Anh): Như Ngày 12/1/2020, Meta Ads từ chối Chữ Hán. AppsFlyer thì không đã thử nghiệm các bộ ký tự khác và bạn nên chỉ sử dụng những thứ này sau khi xác minh với Meta quảng cáo nếu chúng hỗ trợ các bộ ký tự này trong postbacks.
 * Tên sự kiện có phân biệt chữ hoa và chữ thường. Để tránh sự khác biệt, Hãy chắc chắn rằng bạn sử dụng đúng trường hợp trong trường hợp Tên cho tất cả các nguồn phương tiện và phiên bản ứng dụng.
+
+<div id="use-deep-links-in-meta-ads-campaigns" />
+
+<div id="advanced_matching_data_sharing" />
+
+<div id="see-also" />
+
+<div id="note-3" />
+
+<div id="whatsapp-retargeting-campaign-attribution" />
 
 <div id="note-2" />
 
@@ -403,6 +435,8 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-a
 ## Đo lường Sự kiện Hợp nhất (AEM) cho iOS
 
 <Anchor target="_blank" href="/marketers/vi/docs/meta-ads-aggregate-event-measurement-aem-for-ios">AppsFlyer hỗ trợ giải pháp Đo lường Sự kiện Hợp nhất (AEM) của quảng cáo Meta. Giải pháp này giúp tối ưu hóa chuyển đổi iOS và sự kiện trong ứng dụng, đồng thời phân bổ lượt tái tương tác iOS trên quảng cáo Meta.</Anchor>
+
+<div id="aem-attribution-is-not-working" />
 
 <div id="meta-ads-integration-troubleshooting" />
 

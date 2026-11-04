@@ -275,6 +275,8 @@ Các nhà phân tích dữ liệu của AppsFlyer đã kiểm tra các chiến d
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
 
+<div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
+
 <div id="solving-the-mistargeting-problem" />
 
 #### Giải quyết vấn đề nhắm mục tiêu nhầm

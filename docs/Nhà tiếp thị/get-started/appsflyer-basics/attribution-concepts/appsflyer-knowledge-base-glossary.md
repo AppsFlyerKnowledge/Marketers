@@ -1473,6 +1473,8 @@ Nền tảng thuộc về các nhà siêu phát hành độc lập thực hiện
 
 <Accordion title="W">
 
+<div id="x-marketing-partners" />
+
 <div id="web-app" />
 
 #### Ứng dụng web

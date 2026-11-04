@@ -28,6 +28,8 @@ x-zendesk:
 
 ![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
 
+<div id="tip" />
+
 <div id="cohort-and-retention-dashboard" />
 
 ## Bảng điều khiển nhóm người
@@ -39,6 +41,8 @@ x-zendesk:
 > Bạn muốn biết thêm về các báo cáo nhóm người? Hãy xem khóa học ngắn, bổ ích này trên <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">Cổng thông tin Học tập AppsFlyer</Anchor>.
 
 <div id="cohort-principles" />
+
+<div id="view-types" />
 
 <Accordion title="Nguyên tắc nhóm người">
 
@@ -87,6 +91,16 @@ Trong ví dụ này, cùng một dữ liệu thô được sử dụng để t�
 <table><thead><tr><th> </th><th> </th><th colspan="6">Hàm</th></tr><tr><th rowspan="2">Luôn luôn/ Tùy chọn </th><th rowspan="2"><p>Số liệu</p></th><th>Số đếm</th><th>cvr (tỷ lệ chuyển đổi)</th><th>Xếp hạng</th><th>Tổng</th><th>Người dùng duy nhất</th><th>eCPA</th></tr><tr><th>Số</th><th>Tỷ lệ phần trăm</th><th>Tỷ lệ phần trăm</th><th>Số</th><th>Số</th><th>Số</th></tr></thead><tbody><tr><td>Luôn luôn</td><td>Người dùng (4)</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Luôn luôn</td><td>Chi phí (3)</td><td><span>-</span></td><td><span>-</span></td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Luôn luôn</td><td>eCPI trung bình</td><td><span>-</span></td><td><span>-</span></td><td><span>✓</span></td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td><code>"event_name"</code></td><td> </td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td><span>✓</span></td><td> <span>✓</span><span><span>(5)</span></span> </td></tr><tr><td>Tùy chọn</td><td>Doanh thu</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td>ROAS (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td>ROI (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>Tùy chọn</td><td>Phiên (2)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td> <span>✓</span><span>(1)</span> </td><td><span><span>-</span></span></td></tr><tr><td>Tùy chọn</td><td>Lượt gỡ cài đặt (3)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr></tbody><tfoot><tr><td colspan="8"><p>(1) Các phiên độc nhất trả về khi aggregation_type=on_day<br/>(2) Các phiên nhắm mục tiêu lại (thu hút lại và phân bổ lại) có sẵn cho các phiên diễn ra bắt đầu từ ngày 13 tháng 7 năm 2020. Điều này có nghĩa là các phiên diễn ra cho đến ngày 12 tháng 7 năm 2020 sẽ không được hiển thị. <br/>(3) Không áp dụng trong các trường hợp sau:</p><ul><li>Dạng xem được thống nhất</li><li>Mức độ chi tiết tính theo giờ. Được tính toán hàng ngày theo giờ UTC. </li></ul><p>(4) Số liệu <em>Người dùng</em> tính số lượt phân bổ (lượt cài đặt, thu hút lại, phân bổ lại) diễn ra trong khoảng thời gian đã chọn.   </p><p>(5) Chi phí hiệu quả trên mỗi hành động (eCPA): Chi phí / Số lượng người dùng duy nhất tích lũy thực hiện sự kiện.</p></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="trend-types" />
+
+<div id="cohort-periods" />
+
+<div id="kpi-by-attribution-time" />
+
+<div id="user-lifetime-performance" />
+
+<div id="cohort-concepts" />
 
 <div id="using-cohort" />
 

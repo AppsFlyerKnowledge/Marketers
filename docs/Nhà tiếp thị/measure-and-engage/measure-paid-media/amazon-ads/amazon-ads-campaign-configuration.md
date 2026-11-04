@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="complete-the-setup-in-amazon-ads" />
+
 <div id="activate-partner" />
 
 ## Kích hoạt đối tác
@@ -95,6 +97,12 @@ Cấu hình cách thức gửi bài đăng lại cho lượt cài đặt:  
 > * Chỉ dành cho ứng dụng iOS: Quyền kiểm soát dữ liệu của bạn được chia sẻ với đối tác thông qua các bài đăng lại và <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions">báo cáo</Anchor> tùy thuộc vào **trạng thái của nút chuyển đổi** <Anchor target="_blank" href="/marketers/vi/docs/tiktok-for-business-advanced-srn-integration-setup#quyền-riêng-tư-nâng-cao">Quyền riêng tư nâng cao (dành cho iOS 14.5+ trở lên)</Anchor>.
 > * Các bài đăng lại được chia sẻ qua Data Locker trong báo cáo hàng giờ chứ không phải theo thời gian thực.
 
+<div id="note-1" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="re-engagement-attribution" />
+
 <div id="install-attribution" />
 
 #### Phân bổ lượt cài đặt
@@ -110,6 +118,8 @@ Cấu hình cách thức gửi bài đăng lại cho lượt cài đặt:  
 #### Đăng lại sự kiện trong ứng dụng
 
 Cấu hình ánh xạ các sự kiện trong ứng dụng với các sự kiện của Amazon DSP, được gửi qua các bài đăng lại.
+
+<div id="note-2" />
 
 > 📘 **Lưu ý**
 >
@@ -178,6 +188,24 @@ Chọn các quyền cho phép Amazon DSP có thể truy cập dữ liệu của 
 > * Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#permissions-tab">cấp quyền</Anchor>.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
+
+<div id="see-also-1" />
+
+<div id="note-5" />
+
+<div id="dma-consent-methods" />
+
+<div id="note-4" />
+
+<div id="support-amazon-eu-consent-policy" />
+
+<div id="ctv-to-mobile-attribution" />
+
+<div id="raw-data-restrictions" />
+
+<div id="deferred-deep-linking" />
 
 <div id="see-also" />
 

@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Khái quát:** Báo cáo dữ liệu thô mô tả lượt cài đặt và các sự kiện trong ứng dụng bị chặn bởi công cụ Protect360, cũng như từ các Quy tắc Xác thực được thêm vào theo cách thủ công.
 
+<div id="note" />
+
 <div id="about-protect360-raw-data-reports" />
 
 ## Giới thiệu về báo cáo dữ liệu thô của Protect360
@@ -47,6 +49,18 @@ Báo cáo dữ liệu thô:
 <div id="report-types" />
 
 <Accordion title="Loại báo cáo">
+
+<div id="blocked-install-postbacks" />
+
+<div id="clicks" />
+
+<div id="postattribution-inapp-events" />
+
+<div id="blocked-inapp-events" />
+
+<div id="postattribution-installs" />
+
+<div id="installs" />
 
 <div id="protect360-raw-data-report-types" />
 
@@ -320,6 +334,8 @@ Dữ liệu thô của Protect360 bao gồm các lượt cài đặt gian lận 
 Dữ liệu thô nhắm mục tiêu lại của Protect360 có sẵn cho các lượt chặn thời gian thực và gian lận được phát hiện hậu phân bổ như sau:
 
 <table><thead><tr><th>Báo cáo </th><th>Xuất dữ liệu</th><th>API Pull</th><th>Hộp khóa dữ liệu</th></tr></thead><tbody><tr><td>Lượt cài đặt</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Lượt cài đặt hậu phân bổ</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Dữ liệu thu hút lại không có sẵn</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="traits-and-limitations" />
 
 <div id="hijacked-installs-attribution-correction" />
 

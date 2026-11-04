@@ -180,6 +180,8 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 
 <Accordion title="Bước 4: Đo lường chuyển đổi ứng dụng của bạn (bắt buộc)">
 
+<div id="note" />
+
 <div id="important-1" />
 
 > 🚧 **Quan trọng!**
@@ -261,6 +263,8 @@ Vì chuyển đổi được mô hình hóa không phụ thuộc vào ID của t
 * Khoảng không quảng cáo/kênh YouTube ACI iOS không được phân bổ vì ứng dụng YouTube không nhắc ATT nên không thể sử dụng IDFA.
 * Khoảng không quảng cáo/kênh Hiển thị ACI iOS chỉ có thể được phân bổ khi có ID của thiết bị, trong trường hợp có sự đồng ý trên ứng dụng của cả nhà quảng cáo và nhà phát hành.
 
+<div id="note-2" />
+
 <div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## Sử dụng liên kết sâu gián tiếp rong Chiến dịch ứng dụng
@@ -284,6 +288,8 @@ Khi một người dùng tiềm năng nhấp vào nguồn cấp dữ liệu, h�
 Bảng sau đây mô tả ánh xạ tham số giữa Google Ads và AppsFlyer. Lưu ý rằng nhà quảng cáo không thể thêm các than số được cá nhân hóa vào bất kỳ chiến dịch Google Ads nào.
 
 <table><thead><tr><th><p><strong>Loại mạng</strong></p></th><th><strong>Tìm kiếm</strong></th><th><strong>Hiển thị</strong></th><th><strong>YouTube</strong></th></tr></thead><tbody><tr><td>Kênh (af_channel)</td><td>Xem bảng bên dưới, <a href="./google-ads-adwords-integration-setup-for-advertisers#cách-điền-tham-số-kênh">Cách điền tham số <kbd>Kênh</kbd></a> </td></tr><tr><td>Chiến dịch (c)</td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td><p>ID Chiến dịch (af_c_id)</p></td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td>Bộ quảng cáo (af_adset)<br/>Được điền bằng tham số ad_group_name.<br/>Nếu tham số này rỗng, thì AF sẽ điền af_adset với ad_group_id.</td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td>ID Bộ quảng cáo (af_adset_id) được điền bằng tham số ad_group_id của Google</td><td>Có</td><td>Có</td><td>Có</td></tr><tr><td><p>Quảng cáo (af_ad)</p></td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr><tr><td>ID Quảng cáo (af_ad_id)</td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr><tr><td>Loại quảng cáo (af_ad_type)</td><td>Có\*</td><td>Có\*</td><td>Có\*</td></tr><tr><td>ID Trang (af_siteid)</td><td>GoogleSearch/<br/>SearchPartners</td><td>Không áp dụng</td><td>YouTubeVideos/<br/>VideoPartners</td></tr><tr><td>Từ khóa</td><td>Không áp dụng</td><td>Không áp dụng</td><td>Không áp dụng</td></tr></tbody></table>
+
+<div id="note-3" />
 
 <div id="populate-the-channel-parameter" />
 
@@ -318,6 +324,8 @@ Google Ads không gửi tham số `Channel(af_channel)`. AppsFlyer quyết đ�
 Lượt xem tương tác là lượt hiển thị một quảng cáo video dài hơn 10 giây cho người dùng. Lượt này tính là một lượt nhấp. Đối với Android, các lượt này hiển thị trong báo cáo dữ liệu thô, điền vào mục “sub param 5”.  
 Tham số này được hiển thị nếu lượt xem thu hút xảy ra trong khung thời gian xem lại lượt nhấp đã xác định trong AppsFlyer, nhưng tối đa là 3 ngày.
 
+<div id="send-complex-in-app-events-to-google-ads" />
+
 <div id="important-2" />
 
 > 🚧 **Quan trọng!**
@@ -339,6 +347,10 @@ Bắt đầu với iOS14.5 trở lên và Android 12 trở lên, Google Ads đã
 
 Khi AppsFlyer nhận được các mã định danh này và gửi chúng trong các đăng lại của Google Ads, Google Ads có thể xác nhận các lượt chuyển đổi dựa trên các mã định danh đó. AppsFlyer sử dụng xác nhận quyền sở hữu và xem xét các tham số để phân bổ và liên kết các sự kiện LTV.  
 **Để cho phép nhận các tham số này, nhà quảng cáo không cần thực hiện bất kỳ hành động nào.**
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
+
+<div id="advertising-without-the-firebase-sdk" />
 
 <div id="data-visibility-by-operating-system" />
 

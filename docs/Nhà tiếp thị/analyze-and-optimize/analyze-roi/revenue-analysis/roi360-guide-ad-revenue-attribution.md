@@ -62,6 +62,10 @@ Phân bổ doanh thu quảng cáo hỗ trợ các phương thức về mức đ�
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="note" />
+
 <div id="implementation" />
 
 ## Thực hiện
@@ -158,6 +162,8 @@ Mức độ chi tiết hợp nhất cho doanh thu quảng cáo hoạt động nh
 | --- | --- | --- |
 | Sự kiện kiếm tiền duy nhất trong ứng dụng | <ul><li>Sự kiện trong ứng dụng được đặt tại thời điểm hiển thị quảng cáo</li><li>Điều này sẽ cung cấp số lượng các hành động riêng biệt của người dùng cho phép tính toán eRPA tốt hơn</li><li>Có thể tinh chỉnh thêm tính năng này bằng cách có một sự kiện trong ứng dụng khác nhau cho mỗi mạng kiếm tiền, làm như vậy sẽ cho phép bạn chia nhỏ doanh thu theo mạng kiếm tiền<br />Xem bảng sau để có nội dung thảo luận đầy đủ.</li></ul> | <ul><li>Yêu cầu nhà phát triển phải sửa đổi ứng dụng</li><li>Doanh thu có thể được chia nhỏ theo mạng kiếm tiền trong Bảng điều khiển</li></ul> |
 | sự kiện af\_app\_opened | <ul><li>Sự kiện af\_app\_opened được SDK Appsflyer gửi theo mặc định</li><li>Tính năng được kích hoạt bởi mỗi phiên người dùng</li></ul> | <ul><li>Không cần sửa đổi ứng dụng</li><li>Triển khai nhanh chóng</li><li>Giá trị eRPA sẽ bị sai lệch đáng kể trừ khi bạn chỉ hiển thị một ứng dụng mỗi phiên</li><li>Không có phân tích doanh thu theo mạng kiếm tiền</li><li>Sự kiện liên quan đến tất cả người dùng khởi chạy ứng dụng và sẽ không có chỉ dấu nào cho bạn biết rằng người dùng sẵn sàng xem quảng cáo</li></ul> |
+
+<div id="note-2" />
 
 <div id="comparison-of-in-app-event-methods" />
 
@@ -324,6 +330,30 @@ Các trường trong báo cáo doanh thu quảng cáo được điền:
   * **Ngữ cảnh:** Các trường có ý nghĩa tương tự trong các báo cáo dữ liệu thô khác. Ví dụ: tên sự kiện, giá trị sự kiện, đơn vị tiền tệ.
 * Do việc phân bổ sự kiện cho nguồn truyền thông đã mang đến người dùng. Có nghĩa là các trường này được sao chép từ sự kiện chuyển đổi đã mang đến người dùng. Ví dụ: nguồn truyền thông và chiến dịch. Các trường này không được liệt kê trong bảng sau.
 
+<div id="customer_user_id" />
+
+<div id="mediation_network" />
+
+<div id="impressions" />
+
+<div id="monetization_network" />
+
+<div id="segment" />
+
+<div id="ad_unit" />
+
+<div id="country" />
+
+<div id="event_revenue_xxx" />
+
+<div id="event_revenue_currency" />
+
+<div id="event_revenue" />
+
+<div id="event_name" />
+
+<div id="event_time" />
+
 <div id="fields-populated-by-ad-revenue" />
 
 #### Các trường được điền bằng doanh thu quảng cáo
@@ -341,6 +371,8 @@ Các trường trong báo cáo doanh thu quảng cáo được điền:
 | monetization\_network | Mạng Kiếm tiền | Cụ thể | Mạng gửi quảng cáo |
 | impressions | Lượt hiển thị | Cụ thể | Số lần người dùng nhìn thấy quảng cáo |
 | mediation\_network | Mạng mediation | Cụ thể | Mạng mediation báo cáo sự kiện cho AppsFlyer |
+
+<div id="h_01KRKHJN2G5SER73D3EZB14GDS" />
 
 <div id="fields-by-network" />
 

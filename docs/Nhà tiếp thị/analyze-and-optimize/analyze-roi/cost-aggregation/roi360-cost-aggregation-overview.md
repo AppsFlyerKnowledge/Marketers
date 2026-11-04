@@ -46,6 +46,14 @@ Các số liệu sau được cung cấp cho các nhà quảng cáo không đăn
 * <Anchor target="_blank" href="/marketers/vi/docs/view-aggregated-cost-data-for-attribution-links">Dữ liệu chi phí theo lượt nhấp</Anchor>.
 * Dữ liệu về lượt nhấp và lượt hiển thị SRN, được cấu hình qua tab **Cost** (Chi phí) của đối tác tích hợp SRN.
 
+<div id="example" />
+
+<div id="cost-in-the-unified-view" />
+
+<div id="note" />
+
+<div id="cost-in-the-ua-view" />
+
 <div id="principles-of-cost-data-aggregation" />
 
 ## Nguyên tắc tổng hợp dữ liệu chi phí
@@ -75,6 +83,8 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 * UA: Dữ liệu chi phí cho các chiến dịch chuyển đổi người dùng có ít nhất 1 lượt cài đặt được ghi nhận gần đây (nghĩa là trong khoảng 7 ngày qua).
 * Hợp nhất: Dữ liệu chi phí của tất cả các chiến dịch, bao gồm cả những chiến dịch không có bất kỳ lượt cài đặt nào được ghi nhận gần đây (nghĩa là trong khoảng 7 ngày qua). Bảng cho biết thời điểm dữ liệu chỉ có sẵn cho các chiến dịch có ít nhất 1 lượt cài đặt được ghi nhận gần đây.
 * Nếu việc thay đổi tên chiến dịch không được hỗ trợ thì cả hai tên chiến dịch đều hiển thị, một tên có dữ liệu phân bổ và một tên có dữ liệu chi phí. Cả hai tên chiến dịch được hiển thị đều sẽ không bao gồm hình ảnh dữ liệu đầy đủ.
+
+<div id="note-1" />
 
 <div id="cost-data-availability-and-reports-table" />
 
@@ -117,6 +127,16 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 * Cơ chế này tác động đến các báo cáo dữ liệu hợp nhất và trang tổng quan.
 * Dữ liệu chi phí nhấp chuột có trong báo cáo dữ liệu thô không bị tác động bởi cơ chế ưu tiên.
 
+<div id="closed-beta--cost-split" />
+
+<div id="limitations" />
+
+<div id="equal-split-no-conversions" />
+
+<div id="note-2" />
+
+<div id="proportional-split-by-conversions" />
+
 <div id="example-1" />
 
 > 📄 **Ví dụ**
@@ -140,6 +160,14 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 | Lượt nhấp | Mức độ ưu tiên thấp nhất |
 
 </Accordion>
+
+<div id="cost-currency-conversion" />
+
+<div id="costs-without-installs" />
+
+<div id="changing-campaign-names" />
+
+<div id="example-2" />
 
 <div id="additional-information" />
 

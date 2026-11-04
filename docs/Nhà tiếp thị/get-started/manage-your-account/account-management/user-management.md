@@ -47,6 +47,8 @@ Mỗi người dùng tài khoản AppsFlyer của bạn phải được chỉ đ
 
 Vai trò trong AppsFlyer có thể là [vai trò được xác định trước](/docs/user-management#vai-trò-được-xác-định-trước), [vai trò tùy chỉnh](/docs/user-management#vai-trò-tùy-chỉnh) hoặc [vai trò tạm thời](/docs/user-management#vai-trò-tạm-thời) (trong một số trường hợp nhất định).
 
+<div id="note-6" />
+
 <div id="predefined-roles" />
 
 ### Vai trò được xác định trước
@@ -83,6 +85,8 @@ Các vai trò được xác định trước trong AppsFlyer đã được cấu
 
 Tìm hiểu thêm về [quản lý vai trò tùy chỉnh](/docs/user-management#quản-lý-vai-trò-tùy-chỉnh).
 
+<div id="get-roles-data-via-api" />
+
 <div id="temp-roles" />
 
 ### Vai trò tạm thời
@@ -97,6 +101,8 @@ Tìm hiểu thêm về [quản lý vai trò tạm thời](/docs/user-management#
 
 Tài khoản AppsFlyer có thể có **một hoặc nhiều Quản trị viên**. Vai trò đặc biệt này có một số đặc điểm độc đáo:
 
+<div id="manage-tokens" />
+
 <div id="access" />
 
 #### Quyền truy cập
@@ -108,6 +114,8 @@ Vai trò Quản trị viên có quyền truy cập vào **tất cả** các kh�
 * Tất cả các nguồn truyền thông và địa lý
 
 Đặc điểm "toàn quyền truy cập" này của vai trò Quản trị viên sẽ không thể bị thay đổi hoặc có giới hạn.
+
+<div id="invite-new-partners-to-appsflyer" />
 
 <div id="role-duplication" />
 
@@ -170,6 +178,8 @@ Bên cạnh mỗi vai trò, bạn có thể thấy số lượng người dùng 
 
 Nhấp vào tên của bất kỳ vai trò nào trong bảng bên trái để hiển thị toàn bộ chi tiết về khả năng của vai trò đó.
 
+<div id="user-details" />
+
 <div id="manage-users" />
 
 ## Quản lý người dùng
@@ -188,6 +198,26 @@ Nhấp vào tên của bất kỳ vai trò nào trong bảng bên trái để hi
    * Có thể bao gồm các chữ cái, chữ số, dấu nháy đơn ('), dấu và (&), ký hiệu đô la ($), ký hiệu thăng (#), dấu gạch nối (-), dấu gạch dưới (\_) và dấu chấm (.)
    * Không được phép sử dụng hai dấu chấm liền nhau (..) và các ký tự đặc biệt khác.
    * Phải kết thúc bằng một miền email hợp lệ.
+
+   <div id="custom_media_sources" />
+
+   <div id="note-2" />
+
+   <div id="user-activation" />
+
+   <div id="geos" />
+
+   <div id="note-1" />
+
+   <div id="media-sources" />
+
+   <div id="note" />
+
+   <div id="data-access" />
+
+   <div id="app-access" />
+
+   <div id="role" />
 
    <div id="important" />
 
@@ -237,7 +267,13 @@ Nhấp vào tên của bất kỳ vai trò nào trong bảng bên trái để hi
 
 Có thể thêm người dùng vào nhiều tài khoản và chỉ định cho các vai trò khác nhau trong từng tài khoản. Điều này giúp người dùng làm việc trong các tài khoản khác nhau mà không cần nhập lại thông tin đăng nhập.
 
+<div id="limitations-on-adding-users-to-multiple-accounts" />
+
 <div id="supported-accounts-and-users" />
+
+<div id="note-3" />
+
+<div id="log-in-to-multiple-accounts" />
 
 #### Tài khoản và người dùng được hỗ trợ
 
@@ -308,6 +344,12 @@ Chỉnh sửa nhiều người dùng là một cách hiệu quả để thay đ�
    * Hãy nhớ rằng các thay đổi của bạn sẽ áp dụng cho tất cả người dùng đã chọn!
 5. Người dùng đã chỉnh sửa được tô sáng trong bảng và người dùng sẽ xuất hiện như cách họ sẽ được hiển thị sau khi lưu thay đổi. Tuy nhiên, bạn vẫn có cơ hội xem lại các thay đổi của mình và xác nhận hoặc hủy chúng trong bước tiếp theo.
 6. Xem lại các thay đổi của bạn. Nhấp vào **Save** để xác nhận hoặc **Cancel** để hoàn tác thay đổi.
+
+<div id="to-delete-users" />
+
+<div id="manage-users-in-bulk-via-api" />
+
+<div id="note-5" />
 
 <div id="example" />
 
@@ -438,6 +480,10 @@ Vai trò tạm thời được thiết kế đặc biệt để cho phép chuy�
 * Khi người dùng có vai trò tạm thời được thay đổi thành vai trò được xác định trước, họ không thể chuyển về lại vai trò tạm thời đã chỉ định trước đó (hoặc bất kỳ vai trò tạm thời nào khác).
 * Nếu người dùng cuối cùng giữ vai trò tạm thời bị xóa khỏi vai trò đó, thì vai trò đó sẽ không còn xuất hiện trong tài khoản của bạn nữa.
 
+<div id="combined-media-source-and-agency-access" />
+
+<div id="example-3" />
+
 <div id="example-2" />
 
 > 📄 **Ví dụ**
@@ -486,6 +532,8 @@ Vì tất cả Quản trị viên về cơ bản đều có quyền giống như
 > 🚧 **Quan trọng!**
 >
 > Phải thay đổi chủ sở hữu tài khoản thủ công theo các bước dưới đây. Không thể thực hiện các thao tác này từ trang **User management**.
+
+<div id="2send-an-email-request" />
 
 <div id="1assign-a-team-member-the-admin-role" />
 

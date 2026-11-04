@@ -43,6 +43,18 @@ Dưới đây là phần giải thích về các thuật ngữ về tính cập 
 
 </Accordion>
 
+<div id="h_01K9CROSSPLATFORMREPORT" />
+
+<div id="conversion-report" />
+
+<div id="advanced-reports" />
+
+<div id="note-1" />
+
+<div id="note" />
+
+<div id="advanced-raw-data-reports-beta" />
+
 <div id="raw-data-reports" />
 
 ## Báo cáo dữ liệu thô
@@ -158,6 +170,10 @@ Xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-guide-ad-revenue-att
 Xem <Anchor target="_blank" href="/marketers/vi/docs/ctv-pc-and-console-data-via-data-locker">dữ liệu nền tảng CTV, PC và console thông qua Data Locker</Anchor>
 
 </Accordion>
+
+<div id="creative-optimization-etl" />
+
+<div id="advanced-aggregated-reports" />
 
 <div id="aggregated-reports" />
 

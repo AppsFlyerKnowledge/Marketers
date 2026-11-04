@@ -55,6 +55,8 @@ Quá trình thiết lập được thực hiện từ trang **Active Integration
 
 Cửa sổ cấu hình bao gồm các thẻ sau: Integration, Attribution link, Cost, Ad revenue và Permissions. Thẻ **Attribution link** không khả dụng đối với TikTok for Business, các thẻ còn lại là tùy chọn.
 
+<div id="note-1" />
+
 > 📘 **Lưu ý**
 >
 > * Một số tùy chọn cài đặt sẽ khác nhau giữa các thiết bị iOS và Android
@@ -73,6 +75,10 @@ Thẻ **Integration** bao gồm một số phần, như được mô tả bên d
 
 Để cấu hình tích hợp, trước tiên bạn phải [bật](#kích-hoạt-đối-tác) nút bật/tắt **Activate partner**. Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation#activating-a-partner">kích hoạt và hủy kích hoạt tích hợp</Anchor> đối tác.
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-2" />
+
 <div id="advanced-data-sharing" />
 
 #### Quyền riêng tư Nâng cao
@@ -90,6 +96,8 @@ Chỉ dành cho ứng dụng iOS: Bạn có thể chia sẻ quyền kiểm soát
 > * Khi kích hoạt chức năng tích hợp (`tiktokglobal_int`), nút chuyển đổi **Advanced Privacy** được bật theo mặc định.
 > * Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), nút chuyển đổi **Advanced Privacy** được bật theo mặc định, bất kể trạng thái trước khi di chuyển.
 > * Theo TikTok for Business, giữ nút **on** chuyển đổi **Advanced Privacy** có thể dẫn đến các sự kiện chiến dịch không được báo cáo đầy đủ và hạn chế cải thiện hiệu suất chiến dịch trong tương lai trên TikTok
+
+<div id="note-3" />
 
 <div id="general-settings" />
 
@@ -112,6 +120,8 @@ Một mã duy nhất được tạo trong Trình quản lý Quảng cáo TikTok 
 > * Khi di chuyển sang tích hợp mới (`tiktokglobal_int`), mọi giá trị từ tích hợp cũ (`bytedanceglobal_int`) đều được tự động nhập vào trường này.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">Tìm hiểu thêm về yêu cầu ID Ứng dụng TikTok đối với iOS 14</Anchor>
 
+<div id="note-4" />
+
 <div id="default-postbacks" />
 
 #### Các bài đăng lại mặc định
@@ -127,6 +137,14 @@ Cấu hình cách gửi các bài đăng lại cho **lượt cài đặt**, **l�
 >
 > * Chỉ dành cho ứng dụng iOS: Quyền kiểm soát dữ liệu của bạn được chia sẻ với đối tác thông qua các bài đăng lại và <Anchor target="_blank" href="/marketers/vi/docs/about-raw-data-identifier-restrictions">báo cáo</Anchor> tùy thuộc vào trạng thái chuyển đổi **Quyền riêng tư Nâng cao (dành cho iOS 14.5+ trở lên)**.
 > * Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), trạng thái mặc định của cài đặt bài đăng lại là **This partner only**, bất kể trạng thái trước khi di chuyển.
+
+<div id="note-7" />
+
+<div id="reinstall-attribution" />
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="install-attribution" />
 
@@ -150,6 +168,14 @@ Cấu hình cách gửi các bài đăng lại cho **lượt cài đặt**, **l�
 >   * Chiến dịch được báo cáo là "bị hạn chế"
 >     Dữ liệu này không có sẵn trong GCD. Báo cáo dữ liệu tổng hợp tiếp tục hiển thị các chuyển đổi lượt xem qua.
 > * Khi di chuyển từ tích hợp cũ (`bytedanceglobal_int`) và kích hoạt tích hợp mới (`tiktokglobal_int`), cài đặt cửa sổ xem lại (lượt nhấp qua và lượt xem qua) được đặt về **các giá trị mặc định**, bất kể trạng thái trước khi di chuyển. Bạn có thể cập nhật các cài đặt này.
+
+<div id="note-9" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="warning" />
+
+<div id="note-8" />
 
 <div id="re-engagement-attribution" />
 
@@ -191,6 +217,10 @@ Cấu hình ánh xạ các sự kiện trong ứng dụng với các sự kiện
    1. Từ góc trên cùng bên trái, dưới tên đối tác, hãy nhấp vào tên ứng dụng để mở danh sách ứng dụng.
    2. Chọn một ứng dụng khác từ danh sách thả xuống.
    3. Lặp lại các bước tích hợp đối với ứng dụng đã chọn.
+
+<div id="note-11" />
+
+<div id="note-10" />
 
 > 📘 **Lưu ý**
 >
@@ -234,6 +264,12 @@ Việc tích hợp này cung cấp dữ liệu hợp nhất về chi phí, lư�
 
 6. Nhấp vào **Save Cost**.
 
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
+
+<div id="deep-linking-with-tiktok-for-business" />
+
 <div id="for-roi360-subscribers" />
 
 #### Đối với người đăng ký ROI360
@@ -275,6 +311,18 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-a
 ## Thiết lập TikTok For Business dành cho đại lý
 
 Các đại lý làm việc thay mặt cho nhà quảng cáo có thể bật chức năng tích hợp TikTok for Business và bắt đầu nhận phân bổ cho các chiến dịch của họ. Tuy nhiên, chức năng tích hợp này có một số hạn chế đối với các đại lý.
+
+<div id="note-12" />
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
+
+<div id="how-smart-plus-campaigns-are-structured" />
+
+<div id="smart-plus-campaigns-reporting" />
+
+<div id="send-complex-in-app-events-to-tiktok" />
+
+<div id="important" />
 
 <div id="agency-limitations" />
 

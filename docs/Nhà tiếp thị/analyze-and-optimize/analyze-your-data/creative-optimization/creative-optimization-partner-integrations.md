@@ -32,6 +32,8 @@ x-zendesk:
 
 Tích hợp đối tác sẽ nhập một cách liền mạch và liên tục quảng cáo của bạn từ các chiến dịch chạy thông qua đối tác vào Tối ưu hóa Quảng cáo.
 
+<div id="note" />
+
 <div id="data-availability" />
 
 ### Tính khả dụng của dữ liệu
@@ -45,6 +47,20 @@ Sau khi tích hợp đối tác được thêm vào:
 Bảng điều khiển Tối ưu hóa Quảng cáo hiển thị dữ liệu kết hợp từ tất cả các quy trình trên.
 
 **Lưu ý:** Để xem dữ liệu chi phí của AppsFlyer (chẳng hạn như ROAS), bắt buộc phải có <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview">gói đăng ký ROI360</Anchor>.
+
+<div id="smadex" />
+
+<div id="revx" />
+
+<div id="reddit" />
+
+<div id="personaly" />
+
+<div id="mintegral" />
+
+<div id="notes" />
+
+<div id="note-1" />
 
 <div id="media-partner-integrations" />
 
@@ -473,6 +489,8 @@ Thao tác này sẽ hiển thị ID Khóa và Khóa bí mật.
 
 **Lưu ý:** Nếu bạn không có quyền truy cập vào các vai trò này, vui lòng liên hệ với nhà quản lý sự thành công của khách hàng Unity hoặc gửi email tới [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) để yêu cầu các quyền bắt buộc.
 
+<div id="x-ads" />
+
 <div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Để thêm tích hợp Unity vào bảng điều khiển Quảng cáo:**
@@ -519,6 +537,12 @@ Bạn có thể liên hệ với người quản lý tài khoản của mình tr
 6. Nhấp vào **Save**.
 
 </Accordion>
+
+<div id="creative-integrations-dashboard" />
+
+<div id="grant-dashboard-access-to-an-agency" />
+
+<div id="add-an-agency-integration" />
 
 <div id="additional-information" />
 

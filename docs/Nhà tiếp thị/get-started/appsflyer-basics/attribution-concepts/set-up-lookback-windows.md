@@ -64,6 +64,14 @@ Sau đây, chúng tôi liệt kê quy trình thiết lập khung thời gian xem
 <Tabs>
 <Tab title="Khung thời gian Xem lại cho SRN">
 
+<div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
+
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
+<div id="important" />
+
 <div id="attribution-lookback-window-for-srns" />
 
 ### Khung thời gian xem lại phân bổ cho SRN
@@ -107,6 +115,8 @@ Xem từng khung thời gian xem lại cho SRN bên dưới:
 7. Chọn các thông số tương ứng với chiến dịch, tức là tên chiến dịch, bộ quảng cáo, v.v.
 8. Sao chép và lưu liên kết - đây là liên kết mà bạn cung cấp cho mạng quảng cáo.
 
+<div id="tip" />
+
 > 👍 **Lời khuyên**
 >
 > * Bạn muốn biết một số gợi ý và thủ thuật để cấu hình khung thời gian xem lại? Hãy xem <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7768/play/18612/attribution-102-tips-and-tricks">khóa học ngắn, bổ ích</Anchor> này trên Cổng thông tin Học tập AppsFlyer.
@@ -138,6 +148,8 @@ Biểu đồ có thể giúp bạn hiểu rõ hơn về số lượng người d
 Phần lớn người dùng, hơn 97%, khởi chạy ứng dụng đã làm điều đó trong vòng 7 ngày kể từ khi tương tác với quảng cáo. 2% còn lại đã làm điều đó trong khoảng thời gian từ ngày 7 đến cuối khung thời gian xem lại (ngày 30).
 
 Trên thực tế, gần 62% số người dùng khởi chạy ứng dụng đã làm điều đó trong vòng 15 phút sau khi tương tác với quảng cáo. 72% người dùng đã làm điều đó trong vòng một giờ đầu tiên.
+
+<div id="tip-1" />
 
 <div id="scenarios-and-examples" />
 

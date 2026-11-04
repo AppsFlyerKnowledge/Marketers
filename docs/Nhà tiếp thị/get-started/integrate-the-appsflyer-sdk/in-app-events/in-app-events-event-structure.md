@@ -34,6 +34,10 @@ Các sự kiện trong ứng dụng mà bạn muốn gửi yêu cầu nhà phát
 
 Để giúp bạn xác định những sự kiện và thông số nào cần ghi nhận, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview#recommended-events-by-business-vertical">các bài viết của chúng tôi bao gồm các ví dụ và quy trình</Anchor> theo ngành dọc kinh doanh.
 
+<div id="lead-lead" />
+
+<div id="app-open-af_app_opened" />
+
 <div id="predefined-event-names" />
 
 ## Tên sự kiện được xác định trước
@@ -782,6 +786,12 @@ Nhấp vào liên kết để xem ánh xạ tới SRN.
 ## Các thông số sự kiện được xác định trước
 
 Phần sau cung cấp danh sách các thông số sự kiện được xác định trước. Mỗi thông số sự kiện bao gồm ánh xạ được sử dụng cho quảng cáo Meta, Google Ads, Snap, Twitter và Criteo. Bạn có thể chọn đưa bất kỳ thông số sự kiện nào vào một sự kiện.
+
+<div id="af_projected_revenue" />
+
+<div id="h_01NEWAFNETREVENUE0001" />
+
+<div id="note-3" />
 
 <div id="note-2" />
 

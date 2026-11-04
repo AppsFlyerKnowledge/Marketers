@@ -54,11 +54,19 @@ Có một số cách đăng nhập vào tài khoản AppsFlyer của bạn:
 * Đăng nhập bằng Google: Đăng nhập bằng Tài khoản Google của bạn
 * <Anchor target="_blank" href="/marketers/vi/docs/set-up-sso-authentication-with-your-identity-provider-idp">Đăng nhập bằng SSO</Anchor>
 
+<div id="primary-account" />
+
+<div id="note-1" />
+
+<div id="using-multiple-accounts" />
+
 <div id="note" />
 
 > 📘 **Lưu ý**
 >
 > Nếu quản trị viên của bạn đã định cấu hình xác thực hai yếu tố (<Anchor target="_blank" href="/marketers/vi/docs/implementing-and-using-2fa-login">2FA</Anchor>) cho tài khoản của bạn, bạn sẽ được yêu cầu xác minh thông tin đăng nhập bằng phương thức xác thực khác.
+
+<div id="note-2" />
 
 <div id="switch-between-accounts" />
 

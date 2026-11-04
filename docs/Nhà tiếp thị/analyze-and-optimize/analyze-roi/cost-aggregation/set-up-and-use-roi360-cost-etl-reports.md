@@ -164,6 +164,18 @@ part-<number>
 | bid\_amount | Thành phần của thuộc tính chiến dịch. <Anchor target="_blank" href="/marketers/vi/docs/campaign-properties-in-cost-etl-reports">Tìm hiểu thêm</Anchor> | Không | Số nguyên | - |
 | original\_bid\_amount | Thành phần của thuộc tính chiến dịch. <Anchor target="_blank" href="/marketers/vi/docs/campaign-properties-in-cost-etl-reports">Tìm hiểu thêm</Anchor> | Không | Số nguyên | - |
 
+<div id="edit-or-change-connection" />
+
+<div id="set-up-cost-etl" />
+
+<div id="change-from-cost-etl-to-data-locker-connection" />
+
+<div id="change-data-locker-connection" />
+
+<div id="edit-connection" />
+
+<div id="procedures" />
+
 <div id="metrics" />
 
 #### Số liệu
@@ -296,6 +308,12 @@ Trong AWS, theo mặc định, khi AppsFlyer ghi đối tượng vào bộ chứ
 6. Nhấp vào **Save**.
 
 </Accordion>
+
+<div id="combine-cost-etl-and-cohort-reports" />
+
+<div id="combine-geo-report-and-all-cost-report" />
+
+<div id="report-schedule" />
 
 <div id="best-practices" />
 

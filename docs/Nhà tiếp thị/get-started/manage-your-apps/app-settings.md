@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Khái quát:** Tìm hiểu về các tùy chọn cài đặt ảnh hưởng đến phân bổ và phân tích ứng dụng của bạn trên tất cả các nguồn truyền thông.
 
+<div id="note" />
+
 <div id="app-settings" />
 
 ## Cài đặt Ứng dụng
@@ -40,6 +42,8 @@ x-zendesk:
 1. Trong AppsFlyer, đi tới **Configuration** (Cấu hình) > **App Settings** (Cài đặt của Ứng dụng).
 2. Xem phần cài đặt và thực hiện thay đổi nếu cần trong trang Cài đặt của Ứng dụng.
 3. Nhấp vào **Save settings** (Lưu cài đặt).
+
+<div id="minimum-time-between-sessions" />
 
 <div id="general-app-settings" />
 
@@ -144,6 +148,10 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="minimum-time-between-reengagement-conversions" />
+
+<div id="note-1" />
 
 <div id="attribution-settings" />
 

@@ -59,6 +59,12 @@ Dữ liệu hiệu suất chiến dịch tương tác tải trước/nhấp đ�
 * **Bảng điều khiển tổng quan:** Tương tác được tính là lượt nhấp trong báo cáo hợp nhất và bảng điều khiển. Chúng được hợp nhất ở cấp đối tác tải trước (nguồn truyền thông) và cấp chiến dịch.
 * **Dữ liệu thô:** Tương tác được cung cấp trong báo cáo lượt nhấp chỉ có sẵn qua Data Locker. Chúng được tìm thấy trong trường URL gốc và có thể được xác định trong thông số af\_engagement\_type dưới dạng preload hoặc click\_to\_download. Đối với lượt cài đặt, hãy xem bảng trong phần trước để biết loại so khớp được hiển thị như thế nào trong dữ liệu thô.
 
+<div id="traits-and-limitations" />
+
+<div id="set-up-samsung-preload-referrer-attribution" />
+
+<div id="samsung-preload-referrer" />
+
 <div id="set-up-preload-referrer-attribution" />
 
 ### Thiết lập phân bổ liên kết giới thiệu tải trước

@@ -118,6 +118,8 @@ Tìm hiểu thêm về các chế độ đo lường khác trong các phần ti�
 
 <div id="important" />
 
+<div id="note" />
+
 > 🚧 **Quan trọng!**
 >
 > Việc đặt giá trị chuyển đổi trong SKAN Converter Studio phải được thực hiện bởi quản trị viên hoặc người dùng tài khoản có quyền **Quản lý** trong **SKAN Converter Studio**.
@@ -723,6 +725,8 @@ Trong bảng:
 * Hành động nhiều hơn một sẽ được phân tách bằng >
 * Giá trị trong ngoặc đơn () là ưu tiên do AppsFlyer xác định được đặt sau khi người dùng hoàn thành hành động. Sử dụng ưu tiên mà AppsFlyer cập nhật CV trong ứng dụng.
 
+<div id="note-1" />
+
 <div id="user-journey-scenarios" />
 
 #### Các tình huống trong hành trình của người dùng
@@ -846,6 +850,14 @@ Trong bảng:
   </tbody>
 </Table>
 
+<div id="skan-schema-analysis" />
+
+<div id="events-tab" />
+
+<div id="revenue-tab" />
+
+<div id="conversion-values-tab" />
+
 <div id="example-c-engagement-measurement" />
 
 #### Ví dụ C: Đo lường mức độ thu hút
@@ -950,6 +962,26 @@ Nếu bạn có nhiều ứng dụng mà bạn muốn cấu hình giá trị chu
 * API SKAN Conversion Studio không khả dụng đối với các đại lý.
 
 </Accordion>
+
+<div id="ssot-mapping-patterns" />
+
+<div id="support-anonymized-users" />
+
+<div id="conversion-value-decrease" />
+
+<div id="faq" />
+
+<div id="how-to-configure-mapping-patterns" />
+
+<div id="pairing" />
+
+<div id="half-and-half" />
+
+<div id="important-1" />
+
+<div id="examples" />
+
+<div id="note-2" />
 
 <div id="additional-procedures" />
 

@@ -26,6 +26,10 @@ x-zendesk:
 
 > **Khái quát:** OneLink API giúp bạn thu hút người dùng cuối và tận dụng truyền thông sở hữu bằng cách tạo các liên kết được cá nhân hóa trong các chiến dịch quy mô lớn, qua SMS, v.v. Yêu cầu cả nhà quảng cáo và nhà phát triển triển khai.
 
+<div id="get-started" />
+
+<div id="example" />
+
 <div id="about-onelink-api" />
 
 ## API OneLink
@@ -61,6 +65,16 @@ Bạn có thể liên hệ với CSM của mình để tăng giới hạn truy v
    * Nếu mã khóa API OneLink không có trong đó cho người dùng quản trị, thì điều đó có nghĩa là bạn không có gói cần thiết và bạn cần liên hệ với CSM của mình.
 4. Cung cấp ID OneLink và mã khóa API OneLink cho nhà phát triển.
 5. Yêu cầu nhà phát triển làm theo <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink_rest_api">hướng dẫn trong trung tâm nhà phát triển</Anchor>.
+
+<div id="referral-and-advocate-sharing" />
+
+<div id="offline-and-qrbased-engagement" />
+
+<div id="crmpowered-channels-sms-email-whatsapp" />
+
+<div id="crossplatform-journeys-ctv-desktop-webtoapp" />
+
+<div id="use-cases" />
 
 <div id="dashboard" />
 

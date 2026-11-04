@@ -33,6 +33,8 @@ x-zendesk:
 
 **Lưu ý!** AppsFlyer vẫn phải nhận các đăng lại của mạng quảng cáo vì chúng chứa dữ liệu bổ sung do mạng quảng cáo cung cấp (ví dụ: tên chiến dịch).
 
+<div id="important" />
+
 <div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Cấu hình ứng dụng của bạn để gửi các bản sao đăng lại tới AppsFlyer
@@ -49,6 +51,8 @@ Theo tài liệu của Apple, bạn có thể đặt một điểm cuối đăng
 <div id="common-misconceptions" />
 
 ## Những quan niệm sai lầm phổ biến
+
+<div id="traits-and-limitations" />
 
 <div id="dont-believe-everything-you-hear" />
 

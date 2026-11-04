@@ -37,6 +37,8 @@ Dịch vụ Cấp phép của Google Play xác định xem người dùng có đ
 
 SDK AppsFlyer thu thập dữ liệu từ phía khách hàng và Protect360 thực hiện xác minh giấy phép phía máy chủ, chặn các lượt cài đặt gian lận không xác minh thành công cho cả lượt cài đặt tự nhiên và không tự nhiên. “Lý do chặn” bạn sẽ thấy trong bảng điều khiển Protect360 và các báo cáo sẽ là “Bot”.
 
+<div id="note" />
+
 <div id="set-up-lvl" />
 
 ## Thiết lập LVL

@@ -168,6 +168,8 @@ Bạn có thể:
 * Khi hoạt động đánh cắp bị chặn theo thời gian thực, thì các phân bổ chính xác sẽ hiển thị trong báo cáo và bảng điều khiển AppsFlyer (không chỉ Protect360). Khi hoạt động đánh cắp được xác định hậu phân bổ thì các lượt phân bổ chính xác chỉ được hiển thị trong dữ liệu thô của Protect360.
 * Biểu đồ này có thể hiển thị điều chỉnh **đến** nguồn tự nhiên, nhưng không hiển thị điều chỉnh **từ** nguồn tự nhiên.
 
+<div id="affiliate-attribution-model" />
+
 <div id="identified-fraud-chart" />
 
 #### Biểu đồ gian lận được xác định

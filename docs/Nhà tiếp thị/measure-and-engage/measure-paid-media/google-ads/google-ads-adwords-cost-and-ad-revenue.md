@@ -48,6 +48,10 @@ Tích hợp chi phí cung cấp dữ liệu tổng hợp sau:
   **Lưu ý**: Dữ liệu chi phí yêu cầu phải có đăng ký <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>.
 * Dữ liệu về lượt chuột, lượt hiển thị và dữ liệu phong phú (từ khóa, tên chiến dịch và bộ quảng cáo).
 
+<div id="tip" />
+
+<div id="note" />
+
 > 📘 **Lưu ý**
 >
 > * Có hỗ trợ Tài khoản MCC.

@@ -63,6 +63,8 @@ Sau khi bạn đăng ký và thiết lập tài khoản, bảng điều khiển 
 | 4 | Tìm hiểu bảng điều khiển của bạn:<br /><br /><Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-overview-dashboard">Bảng điều khiển Tổng quan</Anchor> - Sử dụng để phân tích hiệu suất mục sáng tạo và tối đa mức tác động của chiến dịch.<br /><br /><Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-discovery-ai-dashboard">Bảng điều khiển Khám phá</Anchor> - Sử dụng để liên tục tạo và duy trì các mục sáng tạo thành công. |
 | 5 | Phân tích dữ liệu hiệu suất mục sáng tạo và tối ưu hóa các mục sáng tạo và/hoặc chiến dịch của bạn dựa trên những phát hiện. |
 
+<div id="notes" />
+
 <div id="creative-assets" />
 
 ## Nội dung mục sáng tạo
@@ -112,6 +114,8 @@ Meta Advantage+ (mục sáng tạo động) và Google Universal App Campaigns (
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="creative-optimization-roi360" />
 
 <div id="using-the-dashboard" />
 
@@ -387,6 +391,12 @@ e. Sao chép và dán khóa vào cửa sổ tích hợp mới Creative Optimizat
 
 <Image alt="Unity - tìm ID tổ chức.jpg" src="https://files.readme.io/2cab075ad07eec5d0acdadea27400133dd5edff168c2728e1f624132158a47cf-18564718445969.jpg" width="455px" />
 
+<div id="share-view-url" />
+
+<div id="save-shared-dashboard-view" />
+
+<div id="save-private-dashboard-view" />
+
 <div id="note" />
 
 > 📘 **Lưu ý**
@@ -418,6 +428,10 @@ Nhấp vào biểu tượng ở phía trên bên phải trang tổng quan để 
 <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
+
+<div id="h_01HA282W8WHHNDG75XZNSV2QQF" />
+
+<div id="additional-information" />
 
 <div id="custom-tags" />
 

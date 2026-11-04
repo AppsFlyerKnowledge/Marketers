@@ -38,6 +38,36 @@ x-zendesk:
 > * <Anchor target="_blank" href="/marketers/vi/docs/additional-sdk-integration-guide">Tích hợp SDK bổ sung</Anchor>
 > * <Anchor target="_blank" href="/marketers/vi/docs/ctv-pc-and-console-platform-attribution-concepts">Tổng quan về TV được kết nối (CTV) và over-the-top (OTT)</Anchor>
 
+<div id="starting-the-sdk-in-react" />
+
+<div id="starting-the-sdk-in-Unity" />
+
+<div id="starting-the-sdk-in-ios" />
+
+<div id="select-your-privacy-preserving-strategy" />
+
+<div id="starting-the-sdk-in-react-native" />
+
+<div id="starting-the-sdk-in-unity" />
+
+<div id="ios-developer-instructions" />
+
+<div id="delay-the-sdk-start-in-ios" />
+
+<div id="starting-the-sdk-in-ios-native" />
+
+<div id="android-developer-instructions" />
+
+<div id="select-in-what-class-to-start-the-sdk" />
+
+<div id="starting-the-sdk-in-android-native" />
+
+<div id="where-to-start-the-sdk" />
+
+<div id="provide-the-dev-key-to-your-developer" />
+
+<div id="retrieve-the-dev-key" />
+
 <div id="implementing-the-dev-key-in-your-app" />
 
 ## Truy xuất dev key
@@ -142,6 +172,8 @@ Khi phân bổ xảy ra bằng cách sử dụng IDFA, quan trọng là IDFA ph�
 
 #### **Tổng quan về waitForATTUserAuthorization**
 
+<div id="important" />
+
 > ❗️ **Quan trọng!**
 >
 > Không gọi ra `waitForATTUserAuthorization` nếu bạn không có ý định gọi ra lời nhắc ATT.
@@ -190,6 +222,8 @@ Sau khi thông báo đã hoàn tất, hãy cung cấp cho nhà phát triển ứ
 <div id="support-for-skan-attribution" />
 
 <Accordion title="Hỗ trợ phân bổ SKAN">
+
+<div id="note" />
 
 > 📘 **Lưu ý**
 >
@@ -298,6 +332,8 @@ Xem hướng dẫn của chúng tôi về cách thiết lập deferred deep link
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="accessing-attribution-and-deep-linking-data" />
 
 ## Truy cập dữ liệu phân bổ và liên kết sâu
@@ -323,6 +359,8 @@ Lưu ý những điều sau đối với người dùng iOS 14.5+ không đồng
 >
 > * Sử dụng API Push khi truy xuất dữ liệu phân bổ và gửi đến máy chủ của bạn để xử lý thêm. Phương thức này sẽ chờ khi có dữ liệu và do đó có độ chính xác cao và gần với theo thời gian thực. GCD trả về dữ liệu theo thời gian thực, nhưng có thể không chính xác khi các quyết định phân bổ cuối cùng được xác định sau hơn 5 giây.
 > * Sử dụng API Pull để bổ sung định kỳ (ví dụ: hàng ngày) dữ liệu phân bổ theo thời gian thực và để bù cho bất kỳ lỗi giao tiếp nào có thể xảy ra.
+
+<div id="note-1" />
 
 <div id="testing-your-sdk-integration" />
 

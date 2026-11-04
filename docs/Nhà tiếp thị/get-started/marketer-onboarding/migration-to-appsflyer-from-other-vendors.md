@@ -24,6 +24,8 @@ x-zendesk:
 
 ![quy trình di chuyển](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="compare-measurement-between-appsflyer-and-other-mmps" />
+
 <div id="about-migrating-to-appsflyer-from-other-vendors" />
 
 ## Tổng quan
@@ -99,6 +101,8 @@ SDK AppsFlyer được tích hợp vào ứng dụng là liên kết giữa ứn
 Di chuyển thiết bị là quá trình tải lên danh sách các ID thiết bị người dùng hiện có của bạn (IDFA, IDFV, GAID, CUID) vào AppsFlyer. Bạn nên thực hiện quy trình này trước khi phát hành phiên bản ứng dụng mới - phiên bản sẽ bao gồm SDK AppsFlyer. Có hai tùy chọn khi di chuyển thiết bị, [di chuyển có phân bổ](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) hoặc [di chuyển không được phân bổ](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration).
 
 Việc di chuyển thiết bị giúp giải quyết các vấn đề về dữ liệu liên quan đến người dùng ứng dụng hiện tại của bạn, những người đã tải xuống ứng dụng và được nhà cung cấp trước đó của bạn phân bổ. Ví dụ: SRN tính phí gấp đôi, xảy ra khi người dùng ban đầu được phân bổ cho một SRN theo nhà cung cấp trước của bạn và những người vẫn còn trong khung thời gian xem lại, được SRN xác nhận quyền sở hữu lại trong AppsFlyer.
+
+<div id="note" />
 
 <div id="example" />
 
