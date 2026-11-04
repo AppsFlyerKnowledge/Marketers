@@ -342,7 +342,8 @@ Modifying an existing bucket that you used previously only for Data Locker requi
 2. Go to the S3 service.
 3. Select the bucket used previously only for Data Locker.
 4. Go to the **Permissions** tab.
-5. In the **Bucket policy** section, click **Edit.** The **Edit bucket policy** window opens.
+5. In the **Bucket policy** section, click **Edit.**  
+   The **Edit bucket policy** window opens.
 6. **Replace the contents** of the window with following code snippet:
 
    ```json

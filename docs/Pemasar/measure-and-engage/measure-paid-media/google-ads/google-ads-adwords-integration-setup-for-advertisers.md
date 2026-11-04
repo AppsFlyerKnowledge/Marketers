@@ -134,7 +134,8 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 
 > ❗️ **Berhenti!**
 >
-> Anda HARUS **[melalui langkah 4](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory) untuk melihat penginstalan Google Ads di AppsFlyer.** Jika Anda juga perlu memetakan in-app event Anda ke Google Ads, ikuti [langkah 3](/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended) terlebih dahulu.
+> Anda HARUS **[melalui langkah 4](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory) untuk melihat penginstalan Google Ads di AppsFlyer.**
+> Jika Anda juga perlu memetakan in-app event Anda ke Google Ads, ikuti [langkah 3](/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended) terlebih dahulu.
 
 </Accordion>
 

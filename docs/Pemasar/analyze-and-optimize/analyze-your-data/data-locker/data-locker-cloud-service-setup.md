@@ -134,7 +134,7 @@ Setelah membuat bucket, beri izin kepada AppsFlyer untuk menggunakan prosedur be
       }
       ```
 5. Di potongan kode tersebut, ganti `af-data-locker-my-bucket` dengan nama bucket yang Anda buat.
-6. [Opsional] Tambahkan dukungan untuk bucket terenkripsi KMS. Untuk melakukannya, di bagian **Kebijakan Kunci** , pilih **Beralih ke tampilan kebijakan** dan rekatkan cuplikan berikut di **array Pernyataan.**
+6. [Opsional] Tambahkan dukungan untuk bucket terenkripsi KMS. Untuk melakukannya, di bagian **Kebijakan Kunci** , pilih **Beralih ke tampilan kebijakan** dan rekatkan cuplikan berikut di **array Pernyataan.**  
 
    ```json
    {

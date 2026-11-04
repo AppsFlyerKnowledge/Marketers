@@ -331,7 +331,7 @@ Data lengkap Protect360 mencakup penginstalan dan sesi penipuan dari kampanye pe
 
 Data lengkap penargetan ulang Protect360 tersedia untuk pemblokiran waktu aktual dan kecurangan yang teridentifikasi pasca-atribusi sebagai berikut:
 
-<table><thead><tr><th>Laporan </th><th>Ekspor data</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>Install</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalasi pasca atribusi</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Data interaksi ulang tidak tersedia</span><span><br/></span> </td></tr></tbody></table>
+<table><thead><tr><th>Laporan </th><th>Ekspor data</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>Install</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalasi pasca atribusi</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Data interaksi ulang tidak tersedia</span><span></span><br/> </td></tr></tbody></table>
 
 <div id="traits-and-limitations" />
 

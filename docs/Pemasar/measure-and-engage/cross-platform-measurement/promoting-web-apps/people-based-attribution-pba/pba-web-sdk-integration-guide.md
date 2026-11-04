@@ -192,7 +192,7 @@ If your website enforces a Content Security Policy (CSP) using a nonce, see [Con
 | Place the snippet code [that you selected above](#selecting-a-code-snippet) so that it loads as early as possible in the page scope. Do so by placing the code near the top of the head tag. |
 | If you are integrating the SDK using Google Tag Manager (GTM):<ul><li>Ensure that the SDK loads once per page load.</li><li>Set the SDK to load as soon as the page loads using <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">GTM prioritization.</Anchor></li></ul> |
 | You can implement the Web SDK **with** or **without** Smart Banners. Follow the relevant instructions in the sections that follow. |
-| Integration mandatory requirements<ul><li>Visit recording</li><li>Event recording</li><li>Setting the [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) (CUID) : If you don't have a CUID, reach out to your CSM to discuss alternatives.</li></ul>Validate the integration using the <Anchor target="_blank" href="/marketers/id/docs/test-pba-web-sdk-integration">test tool</Anchor> |
+| Integration mandatory requirements<ul><li>Visit recording</li><li>Event recording</li><li>Setting the [Customer User ID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid) <mark>(CUID)</mark> : If you don't have a CUID, reach out to your CSM to discuss alternatives.</li></ul>Validate the integration using the <Anchor target="_blank" href="/marketers/id/docs/test-pba-web-sdk-integration">test tool</Anchor> |
 
 **Before you start**:
 

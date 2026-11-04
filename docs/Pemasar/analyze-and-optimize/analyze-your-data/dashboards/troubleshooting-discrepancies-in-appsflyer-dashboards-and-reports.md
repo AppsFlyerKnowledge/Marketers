@@ -41,7 +41,7 @@ Penting untuk memahami apa arti dan di mana data tersebut ditemukan. Perhatikan 
 
 #### **Data aktivitas**
 
-* Data aktivitas adalah event yang dilakukan olehpengguna aplikasi aktifselama rentang tanggal yang ditentukan.
+* Data aktivitas adalah event yang dilakukan oleh<u>pengguna aplikasi aktif</u>selama rentang tanggal yang ditentukan.
 * Data aktivitas menunjukkan rincian peristiwa kronologis. Hal ini bermanfaat untuk mengukur kinerja keseluruhan sumber media selama rentang tanggal tertentu.
 * Misalnya, gunakan data aktivitas untuk melihat berapa banyak event pembelian yang dilakukan oleh semua pengguna aplikasi selama bulan Januari.
 * Gunakan data aktivitas untuk membandingkan perilaku pengguna di bulan berjalan dibandingkan dengan bulan sebelumnya.

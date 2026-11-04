@@ -97,7 +97,7 @@ Tindakan terukur dapat dilaporkan oleh API [server-to-server (S2S)](/docs/skan-c
 
 * SKAN 4 dan Kustom: S2S selalu aktif.
 * Decode: S2S tidak cocok untuk S2S dan tidak tersedia. AppsFlyer tidak mengatur CV dalam mode ini.
-* Model pendapatan, konversi, dan interaksi: Anda harus mengaktifkan [perekaman event S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) sebelum mengirim events.
+* Model pendapatan, konversi, dan interaksi: <mark>Anda harus mengaktifkan [perekaman event S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api)</mark> sebelum mengirim events.
 
 </Accordion>
 
@@ -246,7 +246,7 @@ Saat Anda membuat perubahan terhadap pengaturan mode, **ringkasan Kapasitas nila
 
 | Mode pengukuran | Deskripsi |
 | --- | --- |
-| [Default] Pendapatan | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Pendapatan yang dihasilkan selama jendela aktivitas 24 jam.**<br /><br />Pilih kurs unit-ke-USD dari salah satu dari berikut ini:<ul><li>$0,01 untuk mengukur hingga $0,63</li><li>$1 untuk mengukur hingga $63</li><li>$10 untuk mengukur hingga $630</li></ul>AppsFlyer secara otomatis mengisi 63 rentang pengukuran pendapatan. `af_skad_revenue` harus dipetakan. Di dasbor, pendapatan dicatat sebagai rentang maksimum. Misalnya, jika kisarannya adalah $60-$61, pendapatan yang dicatat adalah $61. Perhatikan! Pendapatan kustom menggunakan metode yang berbeda untuk menghitung pendapatan.<br /><br />**Metrik yang tersedia:**<ul><li>Pendapatan</li><li>ROI</li><li>ROAS</li><li>ARPU: Pendapatan/pengguna menginstal aplikasi</li><li>Tingkat konversi pengguna: Pengguna melakukan pembelian/pengguna menginstal aplikasi</li><li>eCPA</li></ul> |
+| [Default] Pendapatan | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Pendapatan yang dihasilkan selama jendela aktivitas 24 jam.**<br /><br />Pilih kurs unit-ke-USD dari salah satu dari berikut ini:<ul><li>$0,01 untuk mengukur hingga $0,63</li><li>$1 untuk mengukur hingga $63</li><li>$10 untuk mengukur hingga $630</li></ul>AppsFlyer secara otomatis mengisi 63 rentang pengukuran pendapatan. `af_skad_revenue` harus dipetakan. Di dasbor, <mark>pendapatan dicatat sebagai rentang maksimum.</mark> Misalnya, jika kisarannya adalah $60-$61, pendapatan yang dicatat adalah $61. Perhatikan! Pendapatan kustom menggunakan metode yang berbeda untuk menghitung pendapatan.<br /><br />**Metrik yang tersedia:**<ul><li>Pendapatan</li><li>ROI</li><li>ROAS</li><li>ARPU: Pendapatan/pengguna menginstal aplikasi</li><li>Tingkat konversi pengguna: Pengguna melakukan pembelian/pengguna menginstal aplikasi</li><li>eCPA</li></ul> |
 | Konversi | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**In-app event dilakukan satu kali atau lebih selama jendela aktivitas 24 jam**<br /><br />**Pengaturan** :<ul><li>Pilih 1-6 in-app event untuk diukur dari daftar drop-down. Batasan: Daftar ini terbatas pada 300 event teratas selama 30 hari sebelumnya.</li><li>Di dasbor SKAdNetwork, pilih event tertentu sebagai <Anchor target="_blank" href="/marketers/id/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">event konversi</Anchor>.</li></ul>**Metrik per in-app event:**<ul><li>Jumlah pengguna yang melakukan event</li><li>Tingkat konversi: Pengguna yang melakukan Event Konversi/pengguna yang menginstal aplikasi</li><li>eCPA</li><li>Sesi (menggunakan event *af\_app\_opened* )</li></ul>Contoh jumlah pengguna:<ul><li>Penyelesaian pendaftaran</li><li>Melakukan pembelian</li><li>Mencapai level permainan</li></ul>**Klarifikasi!** Gunakan pengukuran konversi untuk menghitung **apakah** pengguna melakukan suatu event. Untuk menghitung berapa kali pengguna melakukan suatu event, gunakan pengukuran interaksi. |
 | Interaksi | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Berapa kali pengguna melakukan in-app event tertentu selama Jendela Aktivitas**<br /><br />**Pengaturan:**<ul><li>Pilih in-app event dari daftar tarik-turun.</li><li>Pilihan in-app juga ditetapkan sebagai Event Konversi.</li><li>Rentang nilai: 0-63</li></ul>**Metrik untuk in-app event**:<ul><li>Jumlah pengguna yang melakukan event</li><li>Jumlah rata-rata event per pengguna</li><li>Rasio konversi</li><li>eCPA</li><li>Sesi</li></ul>Contoh:<ul><li>Ukur berapa kali:<ul><li>pengguna membuka aplikasi</li><li>pengguna melihat iklan</li></ul></li></ul> |
 
@@ -422,7 +422,7 @@ Buat CV Anda sendiri ke pemetaan event dan atur sendiri CV di aplikasi. Gunakan 
         * **In-app event**
           * Pendapatan yang dilaporkan menurut jenis dialokasikan ke in-app event yang dipilih dan dicatat oleh SKAN menggunakan in-app event yang dipilih. Event harus dipetakan; `af_skad_revenue` tidak boleh dipetakan.
           * Komponen dapat digunakan beberapa kali.
-          * Jika Anda melaporkan pendapatan melalui postback ke jaringan iklan, verifikasi bahwa pemetaan postback in-app event Anda menyertakan peristiwa pendapatan dalam aplikasi yang Anda tetapkan.
+          * <mark>Jika Anda melaporkan pendapatan melalui postback ke jaringan iklan, verifikasi bahwa pemetaan postback in-app event Anda menyertakan peristiwa pendapatan dalam aplikasi yang Anda tetapkan.</mark>
       </td>
     </tr>
     <tr>
@@ -445,7 +445,7 @@ Buat CV Anda sendiri ke pemetaan event dan atur sendiri CV di aplikasi. Gunakan 
         **Mencatat pendapatan menggunakan rentang**
 
         * Saat pendapatan dilaporkan, SKAN mengaitkan pendapatan yang dilaporkan dengan rentang yang sesuai. Pendapatan yang dicatat sama dengan nilai rata-rata rentang.
-        * Jika pendapatan yang dilaporkan melebihi nilai rata-rata dari rentang nilai tertinggi, pendapatan dikaitkan dengan rentang nilai tertinggi. **Perhatikan**! Pendapatan yang dicatat adalah nilai rata-rata dari rentang ini. Dengan kata lain, jumlah pendapatan aktual diabaikan.
+        * Jika pendapatan yang dilaporkan melebihi nilai rata-rata dari rentang nilai tertinggi, pendapatan dikaitkan dengan rentang nilai tertinggi. **Perhatikan**! <mark>Pendapatan yang dicatat adalah nilai rata-rata dari rentang ini.</mark> Dengan kata lain, jumlah pendapatan aktual diabaikan.
         * Dalam data lengkap, pendapatan yang dicatat dan rentang terkait tersedia.
 
         **Contoh:**
@@ -1041,7 +1041,7 @@ S2S alurnya adalah sebagai berikut:
    * Jika mode yang Anda pilih adalah pendapatan, konversi, atau interaksi:
      1. Di AppsFlyer, buka **Configuration**  >  **SKAN Conversion Studio.**
      2. Klik options (⋮).
-     3. Aktifkan **Catat in-app event yang dikirim oleh API server-ke-server** .
+     3. Aktifkan <mark>**Catat in-app event yang dikirim oleh API server-ke-server**</mark> .
 2. Kirim event dengan S2S.
 
 **Batasan**

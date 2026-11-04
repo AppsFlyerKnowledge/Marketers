@@ -44,7 +44,7 @@ Penyiapan dilakukan dari laman **Integrasi aktif** , tetapi untuk menemukan mitr
 1. Di AppsFlyer, di bawah **Konfigurasi** buka **Pasar Mitra**.
 2. Pencarian untuk **TikTok untuk Bisnis** dan pilih.
 3. Klik **Siapkan integrasi**. Anda diarahkan ke halaman pengaturan integrasi.
-4. Dalam tab **Integrasi**, aktifkan **Aktifkan mitra**.  
+4. Dalam tab **Integrasi** , aktifkan **Aktifkan mitra**.  
    **Catatan:** Tombol harus tetap aktif (<Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">diaktifkan</Anchor>) selama Anda bekerja dengan mitra<Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">.</Anchor>
 5. Klik **Simpan Integrasi**.
 6. Selesaikan konfigurasi menggunakan tab yang relevan, seperti yang dijelaskan di bagian berikutnya.

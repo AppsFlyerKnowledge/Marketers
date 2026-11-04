@@ -302,7 +302,8 @@ Deferred deep linking berarti Anda memberikan pengalaman deep linking serupa kep
 1. Hubungi pengembang iOS dan Android Anda untuk merencanakan pengaturan **deep\_link\_value**di tautan Anda.
    * **Deep\_link\_value** adalah nama nilai untuk konten dalam aplikasi tertentu yang akan diarahkan oleh pengguna. Pengembang menerapkan perilaku yang diinginkan dari **deep\_link\_value** dalam kode.
    * Pengembang menerapkan perilaku yang dipilih dalam kode. Bagikan panduan ini agar pengembang memahami alur teknis dan lihat contohnya:
-     * Untuk [penautan langsung DAN penautan langsung yang ditangguhkan](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl) pengguna baru atau yang sudah ada, dengan atau tanpa aplikasi Anda. **Pertimbangan untuk UDL:** 
+     * Untuk [penautan langsung DAN penautan langsung yang ditangguhkan](https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl) pengguna baru atau yang sudah ada, dengan atau tanpa aplikasi Anda.  
+       **Pertimbangan untuk UDL:** 
        * Memerlukan SDK V6.1 atau yang lebih baru.
        * Maksimum klik lookback window adalah 15 menit.
      * **Catatan**: Pelanggan yang sudah menggunakan OneLink untuk deep linking mungkin menggunakan metode lama untuk <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">Android</Anchor> dan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor>, bukan UDL.  

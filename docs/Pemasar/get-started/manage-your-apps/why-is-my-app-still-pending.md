@@ -52,7 +52,8 @@ Agar status aplikasi berubah menjadi aktif, AppsFlyer memeriksa statusnya di tok
 
 1. Di dashboard, klik **My Apps (Aplikasi Saya)** di pojok kanan atas.  
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
-2. Di samping aplikasi yang tertunda, klik  **Refresh Status (Segarkan Status).** Jika status aplikasi tidak berubah, aplikasi tetap ditampilkan sebagai Tertunda. Jika sudah diperbarui, statusnya ditampilkan sebagai Live (Aktif) dan logo diperbarui.
+2. Di samping aplikasi yang tertunda, klik  **Refresh Status (Segarkan Status).**  
+   Jika status aplikasi tidak berubah, aplikasi tetap ditampilkan sebagai Tertunda. Jika sudah diperbarui, statusnya ditampilkan sebagai Live (Aktif) dan logo diperbarui.
 
 <div id="store-country" />
 

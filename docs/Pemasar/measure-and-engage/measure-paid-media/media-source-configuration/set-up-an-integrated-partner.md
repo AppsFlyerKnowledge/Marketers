@@ -227,7 +227,8 @@ Tabel berikut mencakup berbagai bagian berbeda dari halaman integrasi. Beberapa 
         Pengaturan Umum
       </td>
       <td>
-        **ID Mitra—Kredensial**Beberapa mitra memerlukan kredensial untuk AppsFlyer untuk diintegrasikan dengan mereka. Mitra menyebut ID ini sebagai ID aplikasi, ID akun, ID pengguna, atau ID jaringan. Jika bidang ini ditampilkan, dapatkan ID dari dashboard mitra dan masukkan ke bidang.
+        **ID Mitra—Kredensial**  
+        Beberapa mitra memerlukan kredensial untuk AppsFlyer untuk diintegrasikan dengan mereka. Mitra menyebut ID ini sebagai ID aplikasi, ID akun, ID pengguna, atau ID jaringan. Jika bidang ini ditampilkan, dapatkan ID dari dashboard mitra dan masukkan ke bidang.
       </td>
     </tr>
     <tr>

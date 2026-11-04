@@ -317,7 +317,7 @@ Jika Anda mengatur Data Locker menggunakan layanan penyimpanan cloud milik pemas
       * [Default] **Terpadu**
       * **Dipisahkan berdasarkan aplikasi**
 6. Lengkapi bagian **konten Data Locker** :
-7. Pilih satu atau beberapa **Aplikasi** untuk disertakan dalam laporan. Pilih **semua** untuk menyertakan aplikasi yang ditambahkan di masa mendatang secara otomatis.
+7. Pilih satu atau beberapa **Aplikasi** untuk disertakan dalam laporan. <mark>Pilih **semua** untuk menyertakan aplikasi yang ditambahkan di masa mendatang secara otomatis.</mark>
 8. Klik **Terapkan** .
 9. [Opsional] Pilih satu atau beberapa **Sumber Media** untuk disertakan dalam laporan.
    * Default=Semua. Ini artinya sumber media yang ditambahkan di masa mendatang ditambahkan secara otomatis.
@@ -521,7 +521,8 @@ Sebelum Anda mulai:
 
    <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Masukkan **Nama bucket.** Nama Bucket memiliki format berikut: `{Bucket Name}/{Home Folder}`. Nilai yang diperlukan untuk nama bucket dan folder beranda muncul di jendela kredensial.
-6. Klik **Tambahkan bucket eksternal.** Bucket dibuat dan ditampilkan di panel kiri jendela.   
+6. Klik **Tambahkan bucket eksternal.**  
+   Bucket dibuat dan ditampilkan di panel kiri jendela.   
    Anda sekarang dapat mengakses file Data Locker.
 
 </Accordion>

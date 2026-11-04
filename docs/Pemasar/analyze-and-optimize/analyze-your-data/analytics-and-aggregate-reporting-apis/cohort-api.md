@@ -284,7 +284,8 @@ Pendapatan per kampanye kelompok hari ke-3 setelah penginstalan
 }
 ```
 
-**Contoh 3: Aktivitas kemarin**Aktivitas apa yang dilakukan pengguna yang melakukan konversi (menginstal, berinteraksi kembali, mengatribusikan ulang) selama periode konversi tertentu kemarin?
+**Contoh 3: Aktivitas kemarin**   
+Aktivitas apa yang dilakukan pengguna yang melakukan konversi (menginstal, berinteraksi kembali, mengatribusikan ulang) selama periode konversi tertentu kemarin?
 
 Gunakan data yang tersedia melalui <Anchor target="_blank" href="/marketers/id/docs/cohort-analytics-via-data-locker">Kelompok untuk Data Locker</Anchor>. Periode konversi dibatasi hingga 360 hari sebelumnya.
 

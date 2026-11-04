@@ -184,7 +184,8 @@ Perincian agregat untuk pendapatan iklan berfungsi sebagai berikut:
   * <Anchor target="_blank" href="/marketers/id/docs/dashboard-cost-and-ad-revenue-status">Dashboard status integrasi biaya dan pendapatan iklan</Anchor>: Daftar mitra terpusat yang integrasi pendapatan iklannya diaktifkan untuk satu atau beberapa aplikasi yang ada di akun Anda.
   * Beberapa mitra memungkinkan Anda menguji koneksi API. Jika tersedia, tombol  **Test connection (Tes Koneksi)** ditampilkan. <Image alt="mceclip0.png" src="https://support.appsflyer.com/hc/article_attachments/360006975517" width="104px" />
   * Untuk memverifikasi bahwa koneksi API beroperasi:
-  * Klik  **Test connection (Tes koneksi).** Pesan **kode API terverifikasi ditampilkan.** Jika tidak demikian, ikuti panduan tindakan korektif dalam tabel berikut.
+  * Klik  **Test connection (Tes koneksi).**   
+     Pesan **kode API terverifikasi ditampilkan.** Jika tidak demikian, ikuti panduan tindakan korektif dalam tabel berikut.
 
 | Status | Artinya | Keterangan/diperlukan tindakan |
 | --- | --- | --- |

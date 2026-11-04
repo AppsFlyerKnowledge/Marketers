@@ -641,7 +641,8 @@ Menunjukkan berapa besar CPA jika pemasar membayar untuk tindakan pengguna yang 
 #### eCPC
 
 **Biaya Efektif per Klik**  
-Mengindikasikan seperti apa CPC jika pemasar membeli klik, bukan impresi atau konversi. Lihat [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Rumus:* Total pembelanjaan / Jumlah klik = eCPC (sebagaimana dianalisis oleh AppsFlyer)
+Mengindikasikan seperti apa CPC jika pemasar membeli klik, bukan impresi atau konversi. Lihat [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc)  
+*Rumus:* Total pembelanjaan / Jumlah klik = eCPC (sebagaimana dianalisis oleh AppsFlyer)
 
 #### eCPI
 
@@ -724,7 +725,8 @@ Pengidentifikasi unik yang dapat disetel ulang oleh pengguna untuk pengguna Goog
 
 #### GCD
 
-**Dapatkan Data Konversi** Nama umum untuk metode SDK yang, setelah diinstal, mengambil data atribusi ke dalam SDK.
+**Dapatkan Data Konversi**  
+ Nama umum untuk metode SDK yang, setelah diinstal, mengambil data atribusi ke dalam SDK.
 
 #### Geo
 

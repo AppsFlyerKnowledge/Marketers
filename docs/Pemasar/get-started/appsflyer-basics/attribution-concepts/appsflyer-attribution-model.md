@@ -275,7 +275,7 @@ Untuk mengaktifkan atribusi lihat-tayang, atur jendela lookback di jendela konfi
 
 Hal ini sangat membantu untuk ad network video yang biasanya memiliki CTRs rendah pada iklan-iklan video mereka, juga untuk ad network biasa yang melayani iklan-iklan reguler.
 
-<table><thead><tr><th><strong>Jenis Atribusi</strong></th><th><p><strong>Metode Atribusi</strong></p></th><th><p><strong>Jangkauan</strong></p></th><th><p><strong>Default<br/></strong></p></th></tr></thead><tbody><tr><td rowspan="2"><p>View-Through</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Mitra Terintegrasi yang Dipilih</a>)</p></td><td><p>Pencocokan ID</p></td><td><p>0-24 jam</p></td><td><p>1 Hari</p></td></tr><tr><td><p>Pemodelan probabilistik</p></td><td><p>0-24 jam</p></td><td><ul><li>Adaptif</li><li>Ditentukan oleh AppsFlyer</li></ul></td></tr></tbody></table>
+<table><thead><tr><th><strong>Jenis Atribusi</strong></th><th><p><strong>Metode Atribusi</strong></p></th><th><p><strong>Jangkauan</strong></p></th><th><p><strong>Default</strong><br/></p></th></tr></thead><tbody><tr><td rowspan="2"><p>View-Through</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Mitra Terintegrasi yang Dipilih</a>)</p></td><td><p>Pencocokan ID</p></td><td><p>0-24 jam</p></td><td><p>1 Hari</p></td></tr><tr><td><p>Pemodelan probabilistik</p></td><td><p>0-24 jam</p></td><td><ul><li>Adaptif</li><li>Ditentukan oleh AppsFlyer</li></ul></td></tr></tbody></table>
 
 Pada kasus di mana terjadi sebuah klik dan tayangan iklan, klik selalu mendahului, karena klik merupakan interaksi aktif.
 
