@@ -74,7 +74,7 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
 
 1. **Ingestion des données :** Le rapport peut provenir du connecteur SDK des revenus publicitaires, ou de la requête d'API S2S (voir la section ci-dessus).
 2. **Traitement des données :** AppsFlyer ROI360 des revenus publicitaires effectue les opérations suivantes :
-   1. Normalisation des données
+   1. <span class="af-ol-a"></span>Normalisation des données
    2. Attribution à la source d'installation et enrichissement des données
    3. Génération des événements de revenus publicitaires
    4. Les événements sont agrégés au niveau de l'appareil
@@ -184,7 +184,7 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
 
 1. **Ingestion des données :** Le rapport peut provenir soit du SDK, soit de la requête d'API S2S (voir la section ci-dessus).
 2. **Traitement des données :** AppsFlyer ROI360 des revenus publicitaires effectue les opérations suivantes :
-   1. Normalisation des données
+   1. <span class="af-ol-a"></span>Normalisation des données
    2. Attribution à la source d'installation et enrichissement des données
    3. Génération des événements de revenus publicitaires
    4. Les événements sont agrégés au niveau de l'appareil
@@ -305,7 +305,7 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
 
 1. **Ingestion des données :** Les données du rapport proviennent des données de niveau impression envoyées par le connecteur SDK des revenus publicitaires ROI360 et nécessitent une intégration de type SDK.
 2. **Traitement des données :** AppsFlyer ROI360 des revenus publicitaires effectue les opérations suivantes :
-   1. Normalisation des données
+   1. <span class="af-ol-a"></span>Normalisation des données
    2. Attribution à la source d'installation et enrichissement des données
    3. Génération des événements de revenus publicitaires de niveau impression
 3. **Fourniture des données :** Les événements d'impression sont inscrits dans des fichiers, divisés par dossiers selon l'heure où l’impression a eu lieu. Chaque dossier contient exclusivement les impressions qui se sont produites durant cette heure.
