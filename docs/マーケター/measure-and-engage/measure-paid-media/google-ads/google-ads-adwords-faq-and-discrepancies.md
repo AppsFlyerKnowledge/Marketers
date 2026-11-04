@@ -96,16 +96,16 @@ AppsFlyerとGoogle Ads間でアプリ内イベントが正しく設定・同期�
 以下の手順で、よくある問題を迅速に解消できます。
 
 1. **AppsFlyerでイベントポストバックを確認する**（詳細な手順については、「<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">AppsFlyerでGoogle Adsを設定する</Anchor>」を参照してください。)
-   1. AppsFlyerで**Google Ads連携タブ**を開きます。
+   1. <span class="af-ol-a"></span>AppsFlyerで**Google Ads連携タブ**を開きます。
    2. 計測したい各アプリ内イベントについて、ポストバックが正しく設定されていることを確認します。
    3. Google Adsがイベントデータを受信できるよう、［**送信対象ユーザー**］で［*オーガニックを含むすべてのメディアソース*］を選択します。
    4. （任意）初期設定後、必要に応じてイベントごとにこの選択を変更します。
 2. **テスト用のアプリ内イベントを発生させる**
-   1. アプリを起動します。
+   1. <span class="af-ol-a"></span>アプリを起動します。
    2. iOSアプリの場合は、アプリのトラッキングを許可し、IDFAの収集が有効になっていること を確認してください。
    3. 手動で、マッピング済みのアプリ内イベント（購入や会員登録など）を実行します。
 3. **Google Adsでイベントをインポートする**
-   1. Google Adsで <strong>［ツール］＞［コンバージョン］</strong>をクリックします。
+   1. <span class="af-ol-a"></span>Google Adsで <strong>［ツール］＞［コンバージョン］</strong>をクリックします。
    2. ［**コンバージョンアクションの概要**］を確認します。
    3. 対象のアプリ内イベントをインポートします。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">アプリのコンバージョンのインポート</Anchor>を参照してください。
 

@@ -520,7 +520,7 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
      6. 対象のページとトリガーの条件を設定します。
      7. <strong>Save（保存）</strong>をクリックします。
      8. トリガーをAppsFlyer Web SDKのタグに関連付けます。
-        1. **GTM**のメイン画面で、<strong>Tags（タグ）</strong>を選択します。
+        1. <span class="af-ol-a"></span> **GTM**のメイン画面で、<strong>Tags（タグ）</strong>を選択します。
         2. 先ほど作成したタグを選択します。
         3. トリガーの設定パネルで、鉛筆アイコンをクリックします。
         4. 先ほど作成したページビューのトリガーを選択します。
@@ -820,7 +820,7 @@ window.onload = function(){
 
 #### 2. GTMの変数とトリガーの設定
 
-1. GTMで**Variables（変数）** > <strong>Configure（設定）</strong>をクリックし、Built-In Variables（組み込み変数）の一覧で<strong>Click Element（クリック要素）</strong>を有効にします。
+1. <span class="af-ol-a"></span>GTMで**Variables（変数）** > <strong>Configure（設定）</strong>をクリックし、Built-In Variables（組み込み変数）の一覧で<strong>Click Element（クリック要素）</strong>を有効にします。
 2. 新しいユーザー定義変数を作成します（種類：**All Elements（すべての要素）**）。
 3. 新しい<strong>Trigger（トリガー）</strong>を作成します。
    * トリガーの種類：**Click - All Elements（クリック：すべての要素）**。
@@ -831,7 +831,7 @@ window.onload = function(){
 
 #### 3. ユーザー操作用のタグの作成
 
-1. 購入手続きの操作用に、新しい<strong>Custom HTML（カスタムHTML）</strong>タグを作成します。
+1. <span class="af-ol-a"></span>購入手続きの操作用に、新しい<strong>Custom HTML（カスタムHTML）</strong>タグを作成します。
 2. 操作時に実行するスクリプトを貼り付けます。
 
    ```javascript

@@ -33,7 +33,7 @@ x-zendesk:
 
 ### 計測の仕組み
 
-1. AppsFlyerは、Firebase Cloud Messaging（FCM）とApple Push Notification Services（APNS）に日次でAPIリクエストを送信します。
+1. <span class="af-ol-a"></span>AppsFlyerは、Firebase Cloud Messaging（FCM）とApple Push Notification Services（APNS）に日次でAPIリクエストを送信します。
 2. FCMとAPNSは、画面に表示されないプッシュ通知（サイレントプッシュ通知）を送信し、対象のデバイスにアプリが引き続きインストールされているかを確認します。
 3. 応答からアプリがアンインストールされたと判断できる場合（FCMとAPNS）、または過去270日間にユーザーのアクティビティが記録されていない場合（FCMのみ）、アンインストールとして記録されます。
 4. AppsFlyerは、アンインストールを、そのユーザーを最初に獲得したメディアソースに紐づけます。

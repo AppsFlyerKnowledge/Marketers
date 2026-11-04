@@ -265,7 +265,7 @@ SDKがページごとに1回のみ読み込まれるように設定し、GTMの�
      6. 必要に応じてページ条件とトリガー条件を設定します。
      7. **保存**をクリックします。
      8. 作成したトリガーをAppsFlyer Web SDKタグに関連付ける
-        1. **GTM**のメイン画面で「**Tags**」を選択します。
+        1. <span class="af-ol-a"></span> **GTM**のメイン画面で「**Tags**」を選択します。
         2. 以前に作成したタグを選択してください。
         3. トリガーパネル内のペンアイコンをクリックします。
         4. 前に作成したページビュートリガーを選択してください。
@@ -575,7 +575,7 @@ window.onload = function(){
 
 #### 2. GTM変数とトリガーの設定
 
-1. GTMで「**Variables**」>「**Configure**」をクリックし、Built-In Variablesリストで「**Click Element**」を有効にします。
+1. <span class="af-ol-a"></span>GTMで「**Variables**」>「**Configure**」をクリックし、Built-In Variablesリストで「**Click Element**」を有効にします。
 2. 新しいユーザー定義変数(タイプ:**すべての要素**).
 3. 新しい**トリガー**を作成し、以下のとおり設定します：
    * トリガータイプ:**クリック - 全要素**.
@@ -586,7 +586,7 @@ window.onload = function(){
 
 #### 3. インタラクションタグを作成する
 
-1. checkoutアクション用に、新しい**Custom HTML**タグを作成します。
+1. <span class="af-ol-a"></span>checkoutアクション用に、新しい**Custom HTML**タグを作成します。
 2. 以下のインタラクションスクリプトを貼り付けます。
 
    ```html

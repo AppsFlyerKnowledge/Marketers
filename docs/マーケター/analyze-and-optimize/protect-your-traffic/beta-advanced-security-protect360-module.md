@@ -90,7 +90,7 @@ Advanced Security Moduleを設定すると、アプリ内のトラフィック�
 #### **ステップ2：証明書の追加**
 
 1. 次の項目を入力します。
-   1. 証明書名（Certificate name）
+   1. <span class="af-ol-a"></span>証明書名（Certificate name）
    2. 証明書の値（Certificate Value）
 2. <strong>［次へ］</strong>をクリックします。
 

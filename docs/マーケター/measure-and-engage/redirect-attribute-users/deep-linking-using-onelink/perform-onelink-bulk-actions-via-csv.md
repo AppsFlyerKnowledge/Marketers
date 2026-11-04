@@ -30,7 +30,7 @@ x-zendesk:
 
 1. AppsFlyerで、［**Engage**］>［**リンクの一括管理**］に移動します。
 2. 案内ページに、以下のいずれかのボタンが表示されます。
-   1. ［**利用を開始**］：クリックして、最初のコレクションを作成します。
+   1. <span class="af-ol-a"></span> ［**利用を開始**］：クリックして、最初のコレクションを作成します。
    2. ［**OneLinkテンプレートを作成**］：アカウントにOneLinkテンプレートが少なくとも1つあり、GrowthまたはEnterpriseプランを契約していることを確認してください。 <Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template">OneLinkテンプレート</Anchor>を参照してください。
    3. ［**アップグレード**］：リンクの一括管理は、EnterpriseまたはGrowthプランで利用できます。プランのアップグレードについては、CSMに連絡するか、[hello@appsflyer.com](mailto:hello@appsflyer.com)までお問い合わせください。
 
@@ -75,7 +75,7 @@ x-zendesk:
 
 1. ［**新しいコレクション**］をクリックします。
 2. 案内に従って操作します。
-   1. 作成方法は、「[最初のコレクションの作成](/docs/perform-onelink-bulk-actions-via-csv#最初のコレクションの作成)」と同じです。
+   1. <span class="af-ol-a"></span>作成方法は、「[最初のコレクションの作成](/docs/perform-onelink-bulk-actions-via-csv#最初のコレクションの作成)」と同じです。
 
 </Accordion>
 

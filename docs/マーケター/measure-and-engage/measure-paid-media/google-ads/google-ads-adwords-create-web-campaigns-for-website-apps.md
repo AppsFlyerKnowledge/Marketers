@@ -83,7 +83,7 @@ WebアプリのキャンペーンでGoogle Ads連携を有効にする前に、�
 
 6. **Advanced Matching Data Sharing：** オンにすると、AppsFlyerに送信するイベント情報に、ハッシュ化されたメールアドレス、電話番号、名、姓などのAdvanced Matchingの項目が含まれている場合、それらの項目がGoogleと共有されます。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>を参照してください。
 7. ［**お客様ID**］を入力します。このIDは、Google Adsの管理画面で取得できます。
-   1. Google Adsアカウントにログインします。
+   1. <span class="af-ol-a"></span>Google Adsアカウントにログインします。
    2. 右上のGoogleアカウントのアイコンをクリックし、お客様IDが表示される位置までスクロールします。
    3. 次のいずれかを実行します。
       * 同じアプリのキャンペーンを複数のGoogle Adsアカウントで配信している場合、クロスアカウントコンバージョントラッキングにはマネージャー（MCC）アカウントのお客様IDを使用します。個別アカウントのお客様IDではなく、MCC IDを［お客様ID］欄と［MCCのお客様ID］欄の両方に貼り付けます（両方に同じIDを入力）。  詳細は、<Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">MCCアカウントの設定に関するGoogleの手順</Anchor>を参照してください。

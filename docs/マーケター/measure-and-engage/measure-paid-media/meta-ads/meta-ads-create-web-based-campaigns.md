@@ -72,7 +72,7 @@ Meta広告のWeb連携を有効にするには、以下の手順に従ってく�
 4. iOSアプリの連携を設定する場合は、<strong>［高度なプライバシー］</strong>をオフにします。
 5. **詳細マッチングデータの共有：** オンにすると、AppsFlyerに送信されたイベント情報に、ハッシュ化したメールアドレス、電話番号、名、姓、FacebookログインIDなどの詳細マッチング用の項目が含まれる場合、それらがMetaと共有されます。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/advanced-matching-data-sharing">詳細マッチングデータの共有</Anchor>を参照してください。
 6. <strong>［ピクセルID］</strong>欄に入力します。ピクセルIDは、Meta広告マネージャで取得できます。
-   1. [広告マネージャ](https://www.facebook.com/ads/manager)のサイドメニューから、**［すべてのツール］**><strong>［イベントマネージャ］</strong>に移動します。 **注意：** 右上のドロップダウンで、対象のビジネスが選択されていることを確認してください。
+   1. <span class="af-ol-a"></span> [広告マネージャ](https://www.facebook.com/ads/manager)のサイドメニューから、**［すべてのツール］**><strong>［イベントマネージャ］</strong>に移動します。 **注意：** 右上のドロップダウンで、対象のビジネスが選択されていることを確認してください。
    2. **イベントマネージャ**のサイドメニューで、<strong>［データソース］</strong>を選択します。ピクセルの一覧が表示されます。 選択したビジネスのピクセルがない場合は、同じ画面から作成できます。
    3. ピクセル名の下に表示されるピクセルIDをコピーします。  
       AppsFlyerの<strong>［ピクセルID］</strong>欄に貼り付けます。
@@ -127,7 +127,7 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 8. ［任意］<strong>［条件を追加］</strong>アイコンをクリックして、イベントの<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#条件付きアプリ内イベントポストバック">条件を設定します</Anchor>。
 9. <strong>［連携を保存］</strong>をクリックします。
 10. ［任意］連携を保存した後、設定ページを開いたまま、同じパートナーに他のアプリも連携できます。
-    1. 左上のパートナー名の下にあるアプリ名をクリックし、アプリの一覧を開きます。
+    1. <span class="af-ol-a"></span>左上のパートナー名の下にあるアプリ名をクリックし、アプリの一覧を開きます。
     2. ドロップダウンリストから、別のアプリを選択します。
     3. 選択したアプリで連携手順を繰り返します。
 
@@ -154,7 +154,7 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
    * **売上**：特定のイベント（主要なKPI）に向けてMetaが最適化します。
    * **トラフィック**：広告クリックに向けてMetaが最適化します。他にKPIがない場合、または他のKPIイベントの件数が少なすぎる場合にのみ使用してください。
 3. ［任意］上記の選択肢にカスタムの目的を追加する場合は、以下の手順に従ってください。
-   1. Meta広告で、キャンペーンの目的に設定するカスタムイベントを選択し、コンバージョンアクションとして指定します。
+   1. <span class="af-ol-a"></span>Meta広告で、キャンペーンの目的に設定するカスタムイベントを選択し、コンバージョンアクションとして指定します。
    2. AppsFlyerの**Meta Web連携**ページで、<strong>［アプリ内イベントポストバック］</strong>の<strong>［マッピング先のパートナーイベント］</strong>列から、AppsFlyerのイベントをカスタムパートナーイベントにマッピングし、Meta広告のコンバージョンアクションと同じ名前を付けます。
 
       <div id="note-3" />
