@@ -388,7 +388,7 @@ Otra razón para utilizar la versión corta de OneLink es la estructura de los d
 >
 > 1. Un usuario instala tu aplicación y luego la desinstala. La acción de instalación pone al usuario en una <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor>. Configuras una campaña de adquisición de usuarios (sin retargeting) con Meta anuncios. También configuras la integración de AppsFlyer con Meta Ads para permitir el retargeting. Mientras el usuario siga dentro de la ventana de reatribución, ve el anuncio, hace clic en él y vuelve a instalar la aplicación. Desde el punto de vista de AppsFlyer, el usuario es un usuario reatribuido. Esto se debe a dos factores:
 >
->    1. La configuración con Meta Ads permite el retargeting.
+>    1. <span class="af-ol-a"></span>La configuración con Meta Ads permite el retargeting.
 >    2. El usuario se encuentra dentro de la ventana de reatribución.
 >
 >    En este caso, el nombre de la campaña no indica reatribución.

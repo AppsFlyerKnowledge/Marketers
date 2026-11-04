@@ -79,7 +79,7 @@ Para activar la integración de Meta Ads:
    > El interruptor debe permanecer (<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.
 
 5. Completa el campo **ID del píxel**. Para obtener el ID del píxel desde Meta Ads Manager:
-   1. En el menú lateral de <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Administrador de anuncios</Anchor>, ve a **Todas las herramientas** > **Administrador de eventos**.
+   1. <span class="af-ol-a"></span>En el menú lateral de <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Administrador de anuncios</Anchor>, ve a **Todas las herramientas** > **Administrador de eventos**.
 
       <div id="note-2" />
 

@@ -512,7 +512,7 @@ Asegúrate de que el SDK se cargue una sola vez por carga de página y configúr
      6. Configura la página y las condiciones de activación según sea necesario.
      7. Haz clic en **Guardar**.
      8. Asocia el activador a la etiqueta de AppsFlyer Web SDK:
-        1. En la ventana principal de **GTM**, selecciona **Etiquetas**.
+        1. <span class="af-ol-a"></span>En la ventana principal de **GTM**, selecciona **Etiquetas**.
         2. Selecciona la etiqueta que creaste anteriormente.
         3. En el panel de activación, haz clic en el ícono de lápiz.
         4. Seleccione el activador de vista de página que creaste anteriormente.
@@ -812,7 +812,7 @@ Este método captura acciones específicas, como hacer clic en un botón de **Ch
 
 #### 2. Configurar variables y activadores de GTM
 
-1. En GTM, haz clic en **Variables** > **Configurar** y habilita **Elemento de clic** en la lista de variables integradas.
+1. <span class="af-ol-a"></span>En GTM, haz clic en **Variables** > **Configurar** y habilita **Elemento de clic** en la lista de variables integradas.
 2. Crea una nueva variable definida por el usuario (tipo: **Todos los elementos**).
 3. Crea un nuevo **Activador**:
    * Tipo de activador: **Clic - Todos los elementos**.
@@ -823,7 +823,7 @@ Este método captura acciones específicas, como hacer clic en un botón de **Ch
 
 #### 3. Crear la etiqueta de interacción
 
-1. Crea una nueva etiqueta de **HTML personalizado** para la acción de checkout.
+1. <span class="af-ol-a"></span>Crea una nueva etiqueta de **HTML personalizado** para la acción de checkout.
 2. Pega el script de interacción:
 
    ```html

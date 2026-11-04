@@ -403,7 +403,7 @@ Hay tres tipos de reglas disponibles:
 2. En la sección **Geo design policy**, haz clic en **+ New geo design rule**.
 3. En el cuadro de diálogo **New geo design rule**, selecciona la **App** y el **país** a los que se aplica esta regla.
 4. En **Rules**, configura cada regla:
-   1. Selecciona el tipo de **Geo design rule**: Don't holdout, Don't target o Exclude from analysis.
+   1. <span class="af-ol-a"></span>Selecciona el tipo de **Geo design rule**: Don't holdout, Don't target o Exclude from analysis.
    2. Selecciona las **regiones** (estados o regiones subestatales, según el país). Puedes buscar por nombre o código.
 5. Para añadir otro tipo de regla para la misma aplicación y el mismo país, haz clic en **+ Add rule**.
 6. Revisa el panel **Summary** de la derecha, que se actualiza en tiempo real a medida que haces selecciones.

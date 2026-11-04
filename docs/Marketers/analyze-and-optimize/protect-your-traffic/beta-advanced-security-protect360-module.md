@@ -90,7 +90,7 @@ Configura el módulo de seguridad avanzada para validar que el tráfico in-app p
 #### **Paso 2: Añadir certificado**
 
 1. Agrega:
-   1. Nombre del certificado
+   1. <span class="af-ol-a"></span>Nombre del certificado
    2. Valor del certificado
 2. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer
 

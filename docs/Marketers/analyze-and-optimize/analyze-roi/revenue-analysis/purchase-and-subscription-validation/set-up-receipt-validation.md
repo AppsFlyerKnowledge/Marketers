@@ -183,7 +183,7 @@ En el paso 1, obtén las siguientes credenciales de *Google Play* y *Google C
 
 1. Crea o localiza la **cuenta de servicio**:
 
-   1. Ve a la sección **Cuentas de servicio** de Google Cloud platform y haz clic **CREATE SERVICE ACCOUNT**.[![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+   1. <span class="af-ol-a"></span>Ve a la sección **Cuentas de servicio** de Google Cloud platform y haz clic **CREATE SERVICE ACCOUNT**.[![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
    2. Rellena los datos de la cuenta de servicio.[![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
    3. Copia la dirección de correo electrónico.[![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
    4. Haz clic en **Create and continue**.[![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
@@ -193,7 +193,7 @@ En el paso 1, obtén las siguientes credenciales de *Google Play* y *Google C
       [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
 2. Descarga la clave privada de la cuenta de servicio:
 
-   1. En Google Cloud platform, ve a la sección **Cuentas de servicio** , busca en la lista la cuenta que quieres (la que acabas de crear) y haz clic en el icono **More actions** .
+   1. <span class="af-ol-a"></span>En Google Cloud platform, ve a la sección **Cuentas de servicio** , busca en la lista la cuenta que quieres (la que acabas de crear) y haz clic en el icono **More actions** .
    2. Haz clic en **Manage keys**.[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. Haz clic en **Agregar clave** > **Crear nueva clave**.
 

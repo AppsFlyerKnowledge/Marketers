@@ -98,7 +98,7 @@ Para crear un ID de enlace se necesita **acceso administrativo de Google** a la 
 
    Además, cuando **Advanced Data Sharing** está activado, AppsFlyer atribuye estos eventos. Cuando está desactivado, solo se envían y atribuyen los postbacks y eventos de dispositivos con IDFA.
 8. Configuración de la **atribución de instalación**:
-   1. Define la **ventana de lookback click-through de instalación**.  
+   1. <span class="af-ol-a"></span>Define la **ventana de lookback click-through de instalación**.  
       Selecciona las unidades de la ventana de lookback (horas o días) y ajusta el control deslizante al valor que desees. Recomendamos configurar la ventana de lookback en 30 días para alinear con Google Ads.
    2. [Opcional] Si realizas campañas de preinscripción para aplicaciones Android, configura la **ventana de lookback de la campaña de preinscripción** (el valor por defecto es de 90 días). Este control deslizante define la ventana de lookback para atribuir instalaciones a campañas de preinscripción.
    3. Activa la **atribución view-through de instalación.**

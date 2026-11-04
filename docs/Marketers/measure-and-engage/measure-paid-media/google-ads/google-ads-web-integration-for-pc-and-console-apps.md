@@ -272,7 +272,7 @@ En Google Ads, puedes seleccionar de la lista predefinida de acciones y objetivo
 7. Para **Optimización de objetivos y acciones**, selecciona una categoría para asignar tu acción de conversión.  
    **Nota**: La optimización de la campaña de Google Ads es por categoría; no por acción específica). Si solo deseas que tus campañas se optimicen para una sola acción, asegúrate de asignar solo esa acción a esta categoría. Por ejemplo, si deseas que tu campaña se optimice hacia la acción "instalar", asegúrate de asignar la acción "instalar" a su propia categoría, por ejemplo, "Otro". Luego podrás seleccionar esta categoría como objetivo de la campaña al crear la campaña.
 8. Copia el ID de acción de conversión de Google Ads y pégalo en el campo mapeado al evento del partner. El ID de acción de conversión se utiliza como el ID de evento del partner al mapear el nombre del evento de AppsFlyer al ID de evento del partner en la configuración de postbacks de eventos in-app. Para copiar el ID de acción de conversión de Google Ads, realiza lo siguiente:
-   1. En la página de **Objetivos de conversión** de Google Ads, haz clic en la acción de conversión creada.
+   1. <span class="af-ol-a"></span>En la página de **Objetivos de conversión** de Google Ads, haz clic en la acción de conversión creada.
    2. En la página de **Detalles** de acción de conversión, copia el **ID de acción de conversión** del parámetro `ctId=` de la URL y pégalo.
 9. Haz clic en **Finalizar**.
 10. Haz clic en **Crear y continuar**.

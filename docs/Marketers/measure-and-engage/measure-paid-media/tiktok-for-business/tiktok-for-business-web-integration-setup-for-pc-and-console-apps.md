@@ -132,7 +132,7 @@ Configura la asignación de postbacks de eventos in-app enviados a TikTok Web. E
 4. Establece la **ventana de postbacks de eventos in-app**, si es necesario (lee más sobre la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">configuración de la ventana de postbacks de eventos in-app</Anchor>).
 5. Haz clic en **Guardar integración**.
 6. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
-   1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+   1. <span class="af-ol-a"></span>En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
    2. Selecciona una aplicación diferente en la lista desplegable.
    3. Repite los pasos de integración para la aplicación seleccionada.
 

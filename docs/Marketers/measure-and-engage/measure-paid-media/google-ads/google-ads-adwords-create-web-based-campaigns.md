@@ -90,7 +90,7 @@ Empieza por activar la integración con Google Ads para campañas web y configur
 > Si aún necesitas establecer la acción "Primer acceso" en Google Ads, puedes introducir un valor de marcador de posición temporalmente hasta que la acción esté completamente configurada.
 
 1. Introduce tu **ID de cliente**. Puedes recuperarlo desde tu Administrador de Google Ads:
-   1. Inicia sesión en tu cuenta de Google Ads.
+   1. <span class="af-ol-a"></span>Inicia sesión en tu cuenta de Google Ads.
    2. En la esquina superior derecha, haz clic en el icono de la cuenta de Google y desplázate hacia abajo hasta donde se muestra el ID de cliente.
 2. Si tienes varias cuentas de Google Ads que ejecutan campañas para tu aplicación, debes usar el ID de cliente de un administrador (MCC) para el seguimiento de conversiones de varias cuentas. Pega el **ID de MCC** (y no el ID de cliente de una cuenta específica) en el cuadro de texto **Customer ID** y también en el cuadro de texto **MCC Customer ID** text box (el mismo ID en ambos cuadros).   
    Si solo utilizas una cuenta de Google Ads para publicar anuncios, pega el ID de la cuenta en el cuadro de texto **Customer ID** y deja vacío el cuadro de texto **MCC Customer ID**. Consulta las <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">instrucciones de Google sobre cómo configurar una cuenta MCC</Anchor>.
@@ -145,7 +145,7 @@ Actualmente, las instalaciones son los únicos eventos que activan postbacks aut
 
    **Para encontrar el ID de acción de conversión en Google Ads:**
 
-   1. Ve a Google Ads.
+   1. <span class="af-ol-a"></span>Ve a Google Ads.
    2. Abre la página de la acción de conversión que deseas mapear.
    3. Abre la pestaña **Detalles**.
    4. En la URL de la página, copia el valor del parámetro de consulta `ctid=*`.
@@ -156,7 +156,7 @@ Actualmente, las instalaciones son los únicos eventos que activan postbacks aut
 8. [Opcional] Haz clic en el **icono Añadir condición** para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.
 9. Haz clic **Guardar integración**.
 10. [Opcional] Después de guardar la integración, desde la página de configuración, puedes integrar más de tus aplicaciones con el partner:
-    1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
+    1. <span class="af-ol-a"></span>En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
     2. Selecciona una aplicación diferente del desplegable.
     3. Repite los pasos de integración para la aplicación seleccionada.
 

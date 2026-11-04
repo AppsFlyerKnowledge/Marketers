@@ -30,7 +30,7 @@ Los enlaces en masa te permiten crear y ver enlaces creados de forma masiva. Est
 
 1. En AppsFlyer, ve a **Engage** > **Enlaces masivos**.
 2. Verás una página de introducción con uno de los siguientes botones:
-   1. **Comenzar**: envía para crear tu primera colección.
+   1. <span class="af-ol-a"></span> **Comenzar**: envía para crear tu primera colección.
    2. **Crear una plantilla de OneLink**: se necesita una plantilla de OneLink para crear una colección. Consulta <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">plantillas de OneLink</Anchor>.
    3. **Actualizar**: los enlaces en masa no están disponibles con tu paquete actual. Contacta a tu CSM o escríbenos a [hello@appsflyer.com](mailto:hello@appsflyer.com) sobre la actualización de tu paquete.
 
@@ -74,7 +74,7 @@ La creación de una nueva colección está disponible cuando no se ha superado e
 
 1. Haz clic en **Nueva colección**.
 2. Sigue las instrucciones.
-   1. El proceso sigue los mismos pasos que [Crear tu primera colección](/docs/perform-onelink-bulk-actions-via-csv#crear-tu-primera-colección).
+   1. <span class="af-ol-a"></span>El proceso sigue los mismos pasos que [Crear tu primera colección](/docs/perform-onelink-bulk-actions-via-csv#crear-tu-primera-colección).
 
 </Accordion>
 

@@ -206,7 +206,7 @@ Puede crear un informe personalizado configurando sus filtros y campos.
    * **Geografía:** [Opcional] Solo se incluirán los eventos de las áreas geográficas seleccionadas en el informe.
    * **Filtro específico del tipo de informe**: Cada tipo de informe puede tener su propio filtro, desde el cual puede seleccionar un criterio de filtrado.
 6. [Opcional]: Los informes se completan automáticamente con los campos necesarios. Puede añadir o eliminar campos de la siguiente manera:
-   1. Acceda a la pestaña **Campos del informe**. Se mostrará la lista de campos seleccionados. No puede cambiar la selección de los campos obligatorios.
+   1. <span class="af-ol-a"></span>Acceda a la pestaña **Campos del informe**. Se mostrará la lista de campos seleccionados. No puede cambiar la selección de los campos obligatorios.
    2. Seleccione o deseleccione los campos según sea necesario.
    3. [Opcional] Establezca **Orden de los campos del informe (CSV)** para definir la secuencia de columnas.
    4. [Opción] Haga clic en **Restaurar valores predeterminados** si es necesario.
