@@ -218,6 +218,8 @@ AppsFlyer использует следующее сопоставление и�
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
 
+<div id="ai-answer-engine-referrer-mapping" />
+
 <div id="search-engine-mapping" />
 
 #### **Сопоставление поисковых систем**

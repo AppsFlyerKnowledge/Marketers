@@ -47,6 +47,10 @@ x-zendesk:
 | Когортный API | 60 вызовов в минуту на аккаунт |
 | Агрегированные отчеты SKAN | 10 вызовов в минуту на аккаунт |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### Сырые данные

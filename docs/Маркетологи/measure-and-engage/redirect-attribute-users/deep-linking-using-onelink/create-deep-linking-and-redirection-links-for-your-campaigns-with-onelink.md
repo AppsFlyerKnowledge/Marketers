@@ -38,6 +38,10 @@ x-zendesk:
 * Настройки диплинкинга и переадресации
 * Настройка дополнительных параметров
 
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## Создание ссылки OneLink

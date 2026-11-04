@@ -72,6 +72,8 @@ x-zendesk:
 >
 > Хэшированные идентификаторы передаются партнерам только в том случае, если включена функция Advanced-Matching Data Sharing. Когда переключатель «включено/выключено» находится в положении «выключено», хешированные данные не передаются партнеру, даже если идентификаторы присутствуют в событии.
 
+<div id="send-hashed-identifiers-with-the-sdk" />
+
 <div id="how-hashed-user-identifiers-reach-appsflyer" />
 
 ## Как хешированные идентификаторы пользователей попадают в AppsFlyer
@@ -90,6 +92,8 @@ SDK выполняет следующие шаги в указанной пос�
 3. Отправляет в AppsFlyer только хешированное значение . Сырые данные никогда не покидают устройство.
 
 Неверные значения отклоняются SDK с ошибкой и не отправляются в AppsFlyer.
+
+<div id="send-hashed-identifiers-with-the-s2s-api" />
 
 > 📘 **Note**
 >
@@ -129,6 +133,16 @@ SDK выполняет следующие шаги в указанной пос�
 
 </Tab>
 </Tabs>
+
+<div id="facebook-login-id-fbloginid" />
+
+<div id="first-name-firstnamehashed-and-last-name-lastnamehashed" />
+
+<div id="phone-number-e164-phonenumbere164hashed" />
+
+<div id="phone-number-digits-only-phonenumberhashed" />
+
+<div id="email-emailhashed" />
 
 <div id="normalize-and-hash-identifiers" />
 
@@ -227,6 +241,16 @@ SDK выполняет следующие шаги в указанной пос�
 > 🚧 **Important**
 >
 > AppsFlyer не обрабатывает и не хранит персональные данные (PII) в открытом текстовом виде. Все поля идентификаторов проходят проверку при приеме: значения, не соответствующие формату SHA-256, отбрасываются и никогда не передаются партнёрам.
+
+<div id="does-appsflyer-ever-receive-plaintext-user-identifiers" />
+
+<div id="will-advancedmatching-data-sharing-improve-install-attribution" />
+
+<div id="do-i-need-to-send-all-supported-fields" />
+
+<div id="what-happens-if-i-send-an-invalid-hash-value" />
+
+<div id="is-advancedmatching-data-sharing-the-same-as-the-audiences-hashed-email-and-phone-feature" />
 
 <div id="faq" />
 

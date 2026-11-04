@@ -206,6 +206,8 @@ AppsFlyer может помогать вам связаться с партне�
 > 2. Найдите партнера и выберите его. Чтобы открыть страницу настройки интеграции, нажмите на карточку партнера или кнопку **Интеграция**.
 > 3. Включите **Активация партнера** и <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner">настройте остальные разделы интеграции</Anchor>.
 
+<div id="partner-verification" />
+
 <div id="invite-new-partners-to-appsflyer" />
 
 ## Приглашайте новых партнеров в AppsFlyer

@@ -568,7 +568,11 @@ x-zendesk:
   * 1.0.01
   * 2.0.01
 
+<div id="how-appsflyer-determines-the-latest-version" />
+
 <div id="understand-how-the-condition-works-with-multiple-apps" />
+
+<div id="example-latest-version-calculation" />
 
 ##### **Понять, как условие работает с несколькими приложениями**
 

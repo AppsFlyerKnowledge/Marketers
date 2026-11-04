@@ -242,6 +242,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 </Accordion>
 
+<div id="note-3" />
+
 <div id="create-a-landing-page-with-onelink-smart-script" />
 
 ## Создание целевой страницы с помощью OneLink Smart Script
@@ -289,6 +291,8 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
      1. Выберите **Пользовательский параметр** в разделе **Сопоставление для**.
      2. Введите **ttclid** в полях **Outgoing URL parameter** и **Incoming URL parameters**.
+
+     <div id="note-4" />
 
      > 📘 **Примечание:**
      >
