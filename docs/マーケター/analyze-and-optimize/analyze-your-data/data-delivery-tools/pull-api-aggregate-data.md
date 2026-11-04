@@ -78,7 +78,7 @@ x-zendesk:
 | --- | --- |
 | app\_id | アプリID |
 | 開始 | <ul><li>日付範囲はおよびパラメータで構成されています。</li><li>形式：</li><li>例：2010-01-01</li></ul> |
-| 終了 | 終了日。`fromfrom`について |
+| 終了 | 終了日。`from` `from`について |
 | media\_source | 特定のメディアソースに制限（フィルタ）するために使用します。<ul><li>例：`media_source=facebook`</li></ul> |
 | attribution\_touch\_type | このパラメーターを例に示すように設定して、[ビュースルーアトリビューション](/docs/pull-api-aggregate-data) (VTA) のKPI を取得します。<br /><br />例：`attribution_touch_type=impression`<br /><br />クリック数、インプレッション数、コスト API など、一部のビュースルーKPI には値が関連付けられていないため、代わりにN/Aという値が表示されます。 |
 | currency | 収益とコストの通貨<br /><br />集計Pull APIレポートは常にアプリ固有の通貨を使用します。 |

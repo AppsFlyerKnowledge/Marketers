@@ -205,7 +205,7 @@ x-zendesk:
 | [上記で選択した](#コードスニペットの選択)スニペットコードを、ページスコープ内でできるだけ早く読み込まれるように配置してください。そのため、head タグのなるべく上部にコードを配置します。 |
 | Googleタグマネージャー(GTM)を使用してSDKを実装する場合：<ul><li>SDKが1ページ読み込みにつき1回のみ読み込まれるようにしてください。</li><li><Anchor target="_blank" href="https://support.google.com/tagmanager/answer/2772421?hl=en">GTM の優先度設定</Anchor>を使用して、ページ読み込み時にできるだけ早くSDKが読み込まれるように設定してください。</li></ul> |
 | Web SDKは、Smart Banners **あり**／**なし**のいずれでも実装できます。以降の該当セクションの手順に従ってください。 |
-| 実装の必須要件<ul><li>サイト訪問の計測</li><li>イベントの計測</li><li>[カスタマーユーザーID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid)(CUID)の設定：CUIDがない場合は、代替案についてCSMに連絡してください。</li></ul><Anchor target="_blank" href="/marketers/ja/docs/test-pba-web-sdk-integration">テストツール</Anchor>を使用して実装を検証してください |
+| 実装の必須要件<ul><li>サイト訪問の計測</li><li>イベントの計測</li><li>[カスタマーユーザーID](/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid)<mark>(CUID)の設定</mark>：CUIDがない場合は、代替案についてCSMに連絡してください。</li></ul><Anchor target="_blank" href="/marketers/ja/docs/test-pba-web-sdk-integration">テストツール</Anchor>を使用して実装を検証してください |
 
 **はじめる前に**
 
