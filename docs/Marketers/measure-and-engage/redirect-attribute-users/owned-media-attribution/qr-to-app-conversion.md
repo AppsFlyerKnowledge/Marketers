@@ -26,6 +26,8 @@ x-zendesk:
 
 ![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
 
+<div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
+
 ## Conversión del tráfico móvil, no móvil y offline en usuarios de aplicaciones móviles
 
 Publicar códigos QR generados por OneLink en anuncios para desktop, TV, CTV u offline, como en pantallas de tiendas, folletos y empaques, brinda los siguientes beneficios:
@@ -43,6 +45,8 @@ Los códigos QR se pueden crear de una de las siguientes opciones:
 <div id="qr-to-app-conversion" />
 
 <Accordion title="Configura la conversión de QR a aplicación">
+
+<div id="manual-qr-code-setup" />
 
 #### Configuración manual del código QR
 
@@ -139,6 +143,8 @@ Los siguientes son consejos para maximizar las conversiones de QR a la aplicaci�
   [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
 
 </Accordion>
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

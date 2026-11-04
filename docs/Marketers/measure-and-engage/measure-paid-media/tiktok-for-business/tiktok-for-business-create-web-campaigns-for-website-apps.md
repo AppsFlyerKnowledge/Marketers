@@ -23,19 +23,27 @@ x-zendesk:
 ---
 > **Resumen:** Configura una integración de TikTok Web Ads para tu aplicación web a fin de enviar señales de conversión web a TikTok mediante la Events API.
 
+<div id="overview" />
+
 ## Descripción general
 
 AppsFlyer admite la integración con TikTok Web Ads (`tiktokweb_int`) para campañas de aplicaciones web, lo que te permite reportar datos de atribución y conversión directamente mediante la Events API de TikTok. TikTok puede utilizar estos datos para optimizar la segmentación de anuncios, medir el performance y crear audiencias personalizadas.
 
 Así es como funciona: cuando un usuario hace clic en un anuncio de TikTok, llega a tu sitio web y completa un evento web (por ejemplo, una compra o un registro), AppsFlyer envía la señal de conversión a TikTok mediante la Events API. TikTok utiliza estos datos para optimizar la segmentación de anuncios y medir el performance de las campañas.
 
+<div id="see-also" />
+
 > 📄 **Ver también**
 >
 > * <Anchor target="_blank" href="/marketers/es/docs/web-performance-measurement-overview">Medición del rendimiento web: descripción general</Anchor>
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Actualmente, la integración no admite el envío de postbacks de re-engagement mediante la Events API.
+
+<div id="prerequisites" />
 
 ### Requisitos previos
 
@@ -44,12 +52,16 @@ Antes de activar la integración de TikTok Web Ads para tu aplicación web, aseg
 * Una aplicación web configurada en AppsFlyer
 * Una cuenta empresarial en <Anchor target="_blank" href="https://getstarted.tiktok.com/grow-your-business-gb">TikTok Ads Manager</Anchor>
 
+<div id="how-to-set-up-tiktok-web-ads-for-your-website-app" />
+
 ### Cómo configurar TikTok Web Ads para tu aplicación web
 
 La configuración consiste en definir la integración entre TikTok Web Ads y AppsFlyer, y configurar la campaña en TikTok Ads Manager. Incluye las siguientes partes:
 
 * [Parte 1: Configura la integración de TikTok Web Ads en AppsFlyer](#parte-1-configura-la-integración-de-tiktok-web-ads-en-appsflyer) (obligatorio)
 * [Parte 2: Configura la integración de AppsFlyer en TikTok Web Ads](#parte-2-configura-la-integración-de-appsflyer-en-tiktok-web-ads) (obligatorio)
+
+<div id="part-1-set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## Parte 1: Configura la integración de TikTok Web Ads en AppsFlyer
 
@@ -93,6 +105,8 @@ Para configurar los postbacks de eventos in-app:
    * **Todas las fuentes de medios, incluido el tráfico orgánico**,\n para enviar todos los eventos independientemente de la fuente de atribución.
 7. En la columna **incluyendo**, selecciona si los eventos se enviarán con sus valores de ingresos. Consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks">Datos que se deben incluir en los postbacks</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Nota**
    >
    > * Si estás configurando un evento de compra, establece la columna **incluyendo** en **Valores e ingresos**. Si seleccionas cualquier otra opción, el postback fallará.
@@ -100,6 +114,8 @@ Para configurar los postbacks de eventos in-app:
 
 8. [Opcional] Haz clic en el icono **Agregar condición** para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.
 9. Haz clic en **Guardar integración**.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -115,6 +131,8 @@ Para configurar los postbacks de eventos in-app:
 > Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">[Beta] Integrar el SDK web de AppsFlyer</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-tiktok-web-ads" />
 
 ## Parte 2: Configura la integración de AppsFlyer en TikTok Web Ads
 
@@ -150,6 +168,8 @@ Puedes elegir cualquier evento in-app predefinido enviado desde AppsFlyer como o
 | `af_anuncio` | `__cid_name__` |
 | `id_del_anuncio_af` | `__cid__` |
 
+   <div id="note-3" />
+
    > 📘 **Nota**
    >
    > Para simplificar el análisis de las campañas, incluye el tipo de campaña (web o móvil) como prefijo o sufijo en el nombre de la campaña; por ejemplo, `campaign-name_web`.
@@ -163,6 +183,8 @@ Puedes elegir cualquier evento in-app predefinido enviado desde AppsFlyer como o
    https://www.example.com?pid=tiktokweb_int&c=__campaign_name__&af_c_id=__campaign_id__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__
    ```
 
+   <div id="note-4" />
+
    > 📘 **Nota**
    >
    > TikTok añade automáticamente `ttclid={{ttclid}}` a la URL de destino cuando el usuario hace clic en el anuncio.
@@ -170,11 +192,15 @@ Puedes elegir cualquier evento in-app predefinido enviado desde AppsFlyer como o
 
 </Accordion>
 
+<div id="view-web-attribution-data" />
+
 ## Ver datos de atribución web
 
 Los eventos de conversión web se reportan con el PID `tiktokweb_int` en el campo `media_source`. Para ver los datos de atribución web, utiliza los reportes de raw data y filtra por `media_source = tiktokweb_int` para aislar las conversiones de aplicaciones web de TikTok.
 
 Los reportes en el dashboard para campañas de aplicaciones web aún no están disponibles. Está previsto incorporar en una futura versión una vista unificada de reportes que te permitirá analizar el performance de las campañas web junto con el de otros canales.
+
+<div id="measure-cost-clicks-and-impressions" />
 
 ## Mide el costo, los clics y las impresiones
 
@@ -183,6 +209,8 @@ Mide el costo, los clics y las impresiones de TikTok junto con tus datos de atri
 1. Los datos de costos de las campañas de aplicaciones web de TikTok Ads (`tiktokglobal_int`) no se muestran en el dashboard ni en los reportes Cost ETL, excepto en el reporte **Todos los costos**.   
    Para obtener los datos de costos de TikTok para las campañas de aplicaciones web en el reporte **Todos los costos**, conecta tu cuenta publicitaria de TikTok a la integración de costos de TikTok (`tiktokglobal_int`) desde la página **Configuración de costos** o la pestaña **Costo**.
 2. **Añade el ID de campaña a la URL de tu página de destino:** Incluye `af_c_id` junto con toda la jerarquía de la campaña en la URL de la página de destino. Esto garantiza que el costo, los clics y las impresiones se correspondan con tus datos de atribución web al nivel más granular.
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

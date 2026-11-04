@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **At a glance:** Obtén datos de atribución detallados sobre los re-engagements (usuarios que ya tienen tu app instalada) procedentes de motores de búsqueda orgánicos y motores de respuestas de IA, para que puedas optimizar tus conversiones de búsqueda orgánica y las impulsadas por IA.
 
+<div id="overview" />
+
 ## Descripción
 
 La atribución de re-engagement de búsqueda orgánica (SEO) y respuestas orgánicas de IA (AEO) es una solución de atribución que permite a los clientes de AppsFlyer atribuir los re-engagements (es decir, las aperturas de aplicaciones móviles por parte de usuarios que ya tienen tu app instalada) a varios motores de búsqueda orgánica y motores de respuestas de IA.
 
 Tener acceso a estos datos únicos es muy útil para los equipos de SEO (optimización para motores de búsqueda) y AEO (optimización para motores de respuestas), y proporciona información muy valiosa sobre sus esfuerzos de SEO y AEO.
+
+<div id="flow" />
 
 ### Flujo
 
@@ -39,6 +43,8 @@ El flujo de atribución de búsqueda orgánica funciona de la siguiente manera:
 2. Tu desarrollador web asigna algunos de estos resultados de búsqueda para que abran tu aplicación móvil mediante Android App Links y iOS Universal Links. Si un usuario tiene la aplicación instalada, cuando hace clic en el resultado de la búsqueda, la aplicación se abre (sin redireccionar primero a una tienda de aplicaciones).
 3. Al iniciar la aplicación, AppsFlyer recopila la información requerida y puede atribuir la apertura de la aplicación al motor de búsqueda del usuario.
 4. Si el usuario no tiene la app instalada, se le envía a una página de destino web, donde puedes usar cualquiera de las soluciones Web-to-app de AppsFlyer (como Smart Banners, Smart Script o QR code) para redirigirlo y atribuirlo.
+
+<div id="setup" />
 
 ## Configuración
 
@@ -60,6 +66,8 @@ El flujo de atribución de búsqueda orgánica funciona de la siguiente manera:
 >
 > performOnDeepLinking consume y resuelve de forma forzada la URL de Deep Linking cuando se invoca. Esto evitará que la función de atribución SEO funcione correctamente y hará que la atribución no se reporte a la fuente de medios SEO correcta.
 
+<div id="data-availability" />
+
 ## Disponibilidad de datos
 
 Los datos están disponibles de la siguiente manera:
@@ -69,6 +77,8 @@ Los datos están disponibles de la siguiente manera:
   * El campo `media_source` indica desde qué motor de búsqueda llegó el usuario. Ejemplo: `google_organic_seo`.
   * El campo `http_referrer` incluye la URL completa de la página de resultados de la búsqueda, desde la cual el usuario fue enviado a la app o landing page móvil.
   * El campo `channel` tiene el valor `seo` para el tráfico orgánico de motores de búsqueda, o `aeo` para el tráfico de motores de respuestas de IA.
+
+<div id="additional-information" />
 
 ## Información adicional
 

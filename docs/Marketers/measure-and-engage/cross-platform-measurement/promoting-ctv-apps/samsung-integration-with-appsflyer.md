@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Integra tu aplicación Samsung Connected TV (CTV) con AppsFlyer para recibir datos de atribución y eventos para tus campañas en Samsung.
 
+<div id="about-samsung-ctv-attribution" />
+
 ## Acerca de la atribución de CTV de Samsung
 
 El sistema operativo Samsung Tizen para streaming se ejecuta en todos los televisores Samsung.
@@ -35,9 +37,13 @@ La integración de la API de Samsung admite:
 * Smart TVs de Samsung.
 * Atribución de CTV a CTV y registro de eventos, lo que significa que la atribución y el registro se realizan en el dispositivo Samsung del usuario.
 
+<div id="samsung-attribution-flow" />
+
 ### Flujo de atribución de Samsung
 
 ![[CONFIRM: Diagrama del flujo de atribución de Samsung CTV, que muestra los datos de instalación, Sesión y evento in-app moviéndose desde la Aplicación de Samsung a AppsFlyer a través de la API S2S o del SDK]](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## Procedimientos de integración
 
@@ -50,6 +56,8 @@ La siguiente tabla enumera las tareas necesarias para integrar tu aplicación Sa
 | Integración de partners | Agrega Samsung como red publicitaria (partner integrado) en AppsFlyer.<ol><li><Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#a-activate-partner">Activar partner</Anchor></li><li>[Opcional] Activa la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#e-install-attribution">**atribución view-through**</Anchor>.</li></ol> | Comercializador |
 | Configuración de OneLink | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor> | Comercializador |
 | Configuración de reportes/ver datos | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Aprender más sobre la disponibilidad de datos en paneles de control y reportes</Anchor> | Marketer/Ingeniero de datos |
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 

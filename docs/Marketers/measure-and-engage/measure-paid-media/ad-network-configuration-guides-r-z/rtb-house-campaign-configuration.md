@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** RTB House, un partner integrado de la red de publicidad de AppsFlyer, proporciona tecnología de retargeting para empresas de comercio electrónico y gaming. RTB House ha desarrollado su propia solución de retargeting, basada en algoritmos de aprendizaje profundo, para la compra de anuncios online en el modelo de ofertas en tiempo real (RTB). Además de la atribución móvil basada en clics, RTB House ofrece atribución de retargeting, que se puede registrar con AppsFlyer.
 
+<div id="setting-up-rtb-house" />
+
 ## Configuración de RTB House
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -39,6 +41,8 @@ x-zendesk:
 
 La ventana de configuración de RTB House incluye 3 pestañas activas: Integración, Enlace de atribución y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
@@ -50,27 +54,39 @@ La ventana de configuración de RTB House incluye 3 pestañas activas: Integraci
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar partner
 
 En la pestaña **Integración**, haz clic en **Activar partner**.  
  El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a RTB House luego de las instalaciones y reengagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
 > Como red de TODAS las instalaciones, RTB House prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a RTB House.
 
+<div id="in-app-events-settings" />
+
 ### Configuración de eventos in-app
 
 En esta sección puedes asignar tus eventos de AppsFlyer a RTB House vía postbacks.
 
+<div id="region" />
+
 #### Región
 
 Introduce la región de tu centro de datos de RTB House. Opciones posibles: **emea**, **us**, **asia**.
+
+<div id="in-app-event-postback-settings" />
 
 #### Configuración de postbacks de eventos in-app
 
@@ -121,6 +137,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 <Accordion title="Pestaña de permisos">
 
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a RTB House, ya sea que el partner actúe como red de publicidad, agencia o ambas. Ten en cuenta que incluso si la atribución está deshabilitada para RTB House, la pestaña de permisos está activa y puedes otorgar el control a RTB House.
+
+<div id="ad-network-permissions" />
 
 ### Permisos para red de publicidad
 

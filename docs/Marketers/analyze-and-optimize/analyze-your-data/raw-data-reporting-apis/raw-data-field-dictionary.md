@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** El diccionario de campos de datos (especificación de raw data) describe el contenido de los campos. Debe usarse para ayudarle a entender qué significan los campos, cómo se formatean y cuándo están disponibles.
 
+<div id="overview" />
+
 ## Visión general
 
 La tabla del diccionario de campos de raw data enumera los campos de raw data disponibles en varios reportes de AppsFlyer. La tabla se actualiza constantemente a medida que se agregan campos de raw data adicionales en AppsFlyer.
@@ -59,6 +61,8 @@ Las columnas de la tabla del diccionario son:
   * **Enum n char**: los campos Enum solo pueden contener valores específicos. Por ejemplo, la divisa de costo tiene 3 caracteres y solo puede contener códigos de divisa tal como se especifica.
   * **Enum 5 char boolean:** el valor del campo puede ser `TRUE` o `FALSE`
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * También puedes <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDdd2FKVQ0eISEwGVYyTeF4JD0rlOLnrepz8Nf1R3Kc6o7AESDwXQLOuSB41xN6wIuhmIFlb5b9Gvp/pub?output=xlsx">descargar la tabla</Anchor>.
@@ -69,6 +73,8 @@ Las columnas de la tabla del diccionario son:
 >     * Al configurar tus sistemas de BI, es recomendable configurar todos los campos principales del esquema de AppsFlyer, incluso si un reporte determinado siempre los devuelve como valores nulos o vacíos. Esto te permite incorporar fácilmente los datos cuando estén disponibles.
 >     * Si un campo no forma parte del esquema principal de reportes de AppsFlyer, solo estará incluido en reportes específicos. Por ejemplo, reportes de SKAN.
 >   * **Método de entrega de reportes**: el CSV descargado indica si un campo determinado está disponible a través de Push API, Exportar datos/Pull API y Data Locker. **Nota**: Incluso si un campo forma parte del esquema principal de reportes de AppsFlyer, puede que no forme parte de los reportes entregados por un método específico. Por ejemplo, el campo de ubicación forma parte del esquema principal de AppsFlyer, pero solo aparece en reportes entregados mediante Data Locker, Pull API o la página Export Data; no mediante Push API.
+
+<div id="field-dictionary" />
 
 ## Diccionario de campos
 

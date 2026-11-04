@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Agrega el código Smart Banners tu sitio web para convertir a los visitantes de tu sitio web en usuarios de aplicaciones móviles.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > El SDK web de AppsFlyer para Smart Banners v1 quedó en desuso el 8 de noviembre de 2023. Para mostrar Smart Banners en tu sitio web, necesitas actualizar a la v2. <Anchor target="_blank" href="/marketers/es/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Aprender más</Anchor>
+
+<div id="website-code-implementation" />
 
 ## Implementación del código del sitio web
 
@@ -213,6 +217,8 @@ Para implementar el código en tu sitio web de Wix:
 4. Haz clic en **Actualizar archivo**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

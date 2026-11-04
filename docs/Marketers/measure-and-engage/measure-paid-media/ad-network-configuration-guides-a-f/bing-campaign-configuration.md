@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Bing, un partner integrado de ad network de AppsFlyer, es uno de los principales motores de búsqueda del mundo. Puedes gestionar campañas de adquisición de usuarios a través de Bing y atribuirlas con AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Microsoft exige que los proveedores de atribución eliminen sus datos de nivel de usuario 13 meses después de la instalación. Esto significa que los eventos efectuados por estos usuarios 13 meses después de que hayan instalado la aplicación se cuentan como orgánicos. Los datos agregados anteriores permanecen iguales.
+
+<div id="set-up-bing" />
 
 ## Configurar Bing
 
@@ -47,14 +51,20 @@ Consulta la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrate
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 #### Activar socio
 
 En la **primera visita**, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="default-postbacks" />
+
 #### Postbacks predeterminados
 
 Envía postbacks automáticos a Bing después de las instalaciones de los usuarios.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >

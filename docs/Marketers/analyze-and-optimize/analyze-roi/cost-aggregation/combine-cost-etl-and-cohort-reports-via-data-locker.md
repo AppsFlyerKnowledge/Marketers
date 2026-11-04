@@ -23,6 +23,8 @@ x-zendesk:
 
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
+<div id="about-combining-cost-etl-and-cohort-reports" />
+
 ## Acerca de la combinación de reportes de costos, ETL y de cohorte
 
 Los reportes ETL de costos y los reportes de cohortes a través de Data Locker (agregados regulares y avanzados) tienen cada uno sus propias cualidades únicas. Por ejemplo, los reportes de ETL de costos incluyen datos de impresiones, clics y costos, mientras que los reportes de cohortes incluyen datos detallados de atribución, eventos in-app e ingresos.
@@ -34,6 +36,8 @@ Combinados, ellos:
 * Proporciona una imagen completa de tu rendimiento de marketing, con la mejor actualización, precisión y granularidad disponibles.
 * Haz coincidir tu BI interna con los datos que ves en los paneles de AppsFlyer.
 * Te permiten calcular métricas importantes, como el retorno de la inversión publicitaria (ROAS) y el coste por acción (CPA).
+
+<div id="queries-to-combine-reports" />
 
 ## Consultas para combinar reportes
 
@@ -246,6 +250,8 @@ GROUP BY ALL;
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

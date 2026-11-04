@@ -24,19 +24,27 @@ x-zendesk:
 ---
 > **Resumen:** Sigue las instrucciones de onboarding que se incluyen en esta guía para configurar la atribución web de AppsFlyer. Una vez configurado, podrás medir y atribuir las visitas y los eventos web a las fuentes de marketing, comprender qué factores impulsan los resultados significativos del sitio web y proporcionar soporte para la medición multiplataforma.
 
+<div id="about-web-performance-measurement" />
+
 ## Acerca de la medición del rendimiento web
 
 La medición del rendimiento web te ayuda a relacionar lo que ocurre en tu sitio web, como las visitas y los eventos web, con las fuentes de marketing que los impulsaron. En otras palabras, te muestra qué fuentes de medios y campañas atraen a los usuarios a tu sitio web e influyen en sus acciones posteriores, para que puedas medir el rendimiento y optimizar el ROI.
 
+<div id="create-a-web-app-in-appsflyer" />
+
 ### Sobre la atribución web de AppsFlyer
 
 <Embed title="Incorpora la medición del rendimiento web" typeOfEmbed="youtube" url="https://www.youtube.com/embed/tJ_LoaQinzY" providerUrl="https://www.youtube.com" />
+
+<div id="set-up-network-integrations-postbacks-and-cost-measurement" />
 
 ### Configura integraciones de red, postbacks y medición de costes
 
 <Embed title="Incorpora la medición del rendimiento web" typeOfEmbed="youtube" url="https://www.youtube.com/embed/-sYIv3YQEwo" providerUrl="https://www.youtube.com" />
 
 Para empezar a realizar la medición de las visitas al sitio web y los eventos web en AppsFlyer, sigue los pasos de onboarding que se indican en la siguiente lista de verificación para la configuración de la atribución web de AppsFlyer.
+
+<div id="web-performance-measurement-setup-checklist" />
 
 ## Lista de comprobación para la configuración de la atribución web de AppsFlyer
 

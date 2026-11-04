@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **De un vistazo**: Usa filtros avanzados y opciones de agrupación en los paneles de control de eventos y actividades.
 
+<div id="advanced-filter-by-and-group-by-options-in-dashboards" />
+
 ## Filtro avanzado y opciones de agrupación en los paneles de control
 
 * **Filtrar por**: Fuente de medios, Geolocalización
@@ -35,6 +37,8 @@ x-zendesk:
 * **Bajar de nivel**: datos a nivel de conjunto de anuncios y anuncio
 
 Al filtrar y agrupar la información en el panel de control mediante las opciones avanzadas, puedes ver los datos más precisos y relevantes para tus aplicaciones.
+
+<div id="filter-by-options" />
 
 ## Opciones de filtrado
 
@@ -59,6 +63,8 @@ Selecciona la fuente de medios cuyos datos deseas ver.
 Utiliza el menú desplegable **Geolocalización** para seleccionar una región de geolocalización específica y ver las actividades de la aplicación para esa región.
 
 ![](https://files.readme.io/1380a2be502c104a04f9c6a4b84d16a27100765a8353fa96fecae180492d94e0-49753041990033.png)
+
+<div id="group-by-options" />
 
 ## Opciones de agrupación
 
@@ -91,6 +97,8 @@ Por defecto se muestra **Fuente de medios/Campaña**.
 
 Si seleccionas **ID de sitio**, los datos que se muestran se basan en tus selecciones de filtro para ID de sitio.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Los datos de Site\_id están disponibles a partir del 16 de mayo de 2016.
@@ -105,6 +113,8 @@ Al seleccionar la opción **Geolocalización**, se muestra un desglose de los da
 
 ![](https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png)
 
+<div id="advanced-filtering" />
+
 ## Filtrado avanzado
 
 Para ver las opciones avanzadas de filtrado haz clic en![](https://files.readme.io/278e2ad18a60859c446a7a5a6cbc708c012b2200d01c1886c17a662816d1ff27-206127343.png).
@@ -113,6 +123,8 @@ Las opciones de filtrado se amplían:
 
 ![](https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png)
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Si seleccionas una Campaña/Canal, pero no una Fuente de medios, se mostrará una notificación de advertencia indicando que debes seleccionar primero una fuente de medios.
@@ -120,6 +132,8 @@ Las opciones de filtrado se amplían:
 ![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
 
 Cuando se muestran los resultados, el icono de Filtro avanzado cambia de color azul a verde ![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
+
+<div id="example-user-story" />
 
 ## Ejemplo de caso de usuario
 

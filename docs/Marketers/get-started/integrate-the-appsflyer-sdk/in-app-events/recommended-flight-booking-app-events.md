@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de reserva de vuelos.
 
+<div id="-flight-booking" />
+
 ## <Image alt="Eventos_en_la_aplicación_vuelo.png" src="https://files.readme.io/7a09c4a641dd5e797bffc41a6e66b20efe5660721f37abac3dd12ac83688b37b-20659533911697.png" width="100px" /> Reserva de vuelo
 
 Las aplicaciones de reserva de vuelos les permiten a los viajeros reservar vuelos con facilidad y, al mismo tiempo, elegir entre las mejores ofertas. Los eventos típicos que recomendamos atribuir son: reservar un vuelo, buscar vuelos y ver ofertas.
@@ -32,6 +34,8 @@ La atribución de eventos puede ayudarte a:
 * Conocer los destinos populares
 * Analizar las tendencias estacionales
 * Conocer las líneas aéreas populares con las cuales prefieren viajar los usuarios
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -43,6 +47,8 @@ La atribución de eventos puede ayudarte a:
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 [![Diagrama de flujo para eventos recomendados recorrido del usuario de la app de reserva de vuelos](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -227,6 +233,8 @@ Cuando el usuario llega a la página de agradecimiento después de una compra ex
 | af\_receipt\_id | ID de pedido, necesario para la integración de retargeting de CRITEO y Google AdWords | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

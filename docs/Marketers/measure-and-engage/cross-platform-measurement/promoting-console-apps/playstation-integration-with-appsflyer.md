@@ -27,6 +27,8 @@ Este artículo abarca dos integraciones relacionadas, pero distintas.
 * [Integra tu aplicación de PlayStation con AppsFlyer](#integra-tu-aplicación-de-playstation-con-appsflyer): recibe datos de atribución y de eventos de tu aplicación de PlayStation, independientemente de dónde procedan tus usuarios.
 * [Mide los anuncios que se ejecutan en PlayStation](#mide-anuncios-que-se-publican-en-playstation): activa la integración de PlayStation Ads para medir los anuncios que se ejecutan en las consolas PlayStation e impulsar las instalaciones de tu aplicación.
 
+<div id="integrate-your-playstation-app-with-appsflyer" />
+
 ## Integra tu aplicación de PlayStation con AppsFlyer
 
 El sistema operativo de PlayStation para las apps de consola y CTV (Connected TV) se ejecuta en todos los dispositivos PlayStation.
@@ -37,6 +39,8 @@ La integración de la API de PlayStation admite:
 
 * PlayStations.
 * Atribución y registro de eventos para aplicaciones de PlayStation, lo que significa atribución y registro en el dispositivo PlayStation de un usuario.
+
+<div id="example-attribution-flow" />
 
 ### Ejemplo de flujo de atribución
 
@@ -50,6 +54,8 @@ El siguiente es un flujo de ejemplo que destaca los pasos más importantes del v
 3. Página de la aplicación: Esta es la URL de la página de tu aplicación de PlayStation que aloja tu aplicación para que los clientes la descarguen.
 4. Instalación del juego: El usuario instala el juego, lo que activa la atribución y la grabación de eventos y sesiones en la aplicación.
 
+<div id="integration-procedures" />
+
 ### Procedimientos de integración
 
 En la siguiente tabla se enumeran las tareas necesarias para integrar tu aplicación PlayStation con AppsFlyer.
@@ -62,6 +68,8 @@ En la siguiente tabla se enumeran las tareas necesarias para integrar tu aplicac
 | Configuración del enlace | Si no utilizas una landing page multiplataforma, puedes crear enlaces de atribución directos para colocarlos detrás de los anuncios.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor> | Comercializador |
 | Configuración/visualización de datos de reportes | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Obtén más insights sobre la disponibilidad de datos en dashboards y reportes</Anchor> | Marketer/Ingeniero de datos |
 
+<div id="measure-ads-that-run-on-playstation" />
+
 ## Mide anuncios que se publican en PlayStation
 
 AppsFlyer admite la medición de anuncios que se publican en consolas PlayStation y generan instalaciones de tu aplicación de PlayStation. Este flujo es independiente de la integración general de [Procedimientos de integración](#procedimientos-de-integración) anterior. Solo se aplica si PlayStation también es una de tus fuentes de anuncios y está disponible para anunciantes que ya tengan una aplicación de PlayStation activa configurada en AppsFlyer.
@@ -73,9 +81,13 @@ Para ejecutar y medir anuncios de PlayStation:
 3. **Activa la integración de anuncios de PlayStation en AppsFlyer.** Usa el ID de partner `playstation_int`. Para consultar los pasos generales de activación, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">Configurar un partner integrado</Anchor>.
 4. **Consulta los resultados en AppsFlyer.** La performance aparece en tus dashboards y reportes estándar de AppsFlyer, atribuida a la fuente de medios de PlayStation.
 
+<div id="important" />
+
 > 🚧 **Importante**
 >
 > En esta fase, no puedes compartir señales, como conversiones, eventos o postbacks, con el equipo de anuncios de PlayStation. Los datos de medición permanecen en AppsFlyer y no se envían de vuelta a PlayStation para su optimización.
+
+<div id="sample-attribution-links" />
 
 ### Ejemplos de enlaces de atribución
 
@@ -109,11 +121,15 @@ https://engagements.appsflyer.com/v1.0/s2s/impression/app/playstation/10000000
 | `{campaign_name}` | Parámetro de consulta | Nombre de la campaña, completado por PlayStation. |
 | `{USER_IP}` | Parámetro de consulta | Dirección IP del usuario final, completada por PlayStation. |
 
+<div id="traits-and-limitations" />
+
 ## Especificaciones y limitaciones
 
 | Caducado | Descripción |
 | --- | --- |
 | Datos de costo | Envía los datos de costo mediante <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Ad Spend Ingestion</Anchor>, usando el método de carga de archivos por correo electrónico. |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **De un vistazo:** Encuentra KPI de tasa de conversión en AppsFlyer para comprender las fortalezas y debilidades que se encuentran en diferentes etapas de tu embudo de marketing.
 
+<div id="marketing-funnel-stages" />
+
 ## Etapas del embudo de marketing
 
 Los nuevos usuarios pasan por un embudo de marketing, desde la primera visualización del anuncio hasta que se generan los ingresos. Cada una de las etapas del embudo tiene su propio nivel de éxito. Cuanto más avance un usuario, mejores serán los resultados para el anunciante móvil. La siguiente imagen muestra las etapas del embudo de marketing.
 
 ![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+
+<div id="marketing-funnel-stages-and-conversion-rates" />
 
 ## Etapas del embudo de marketing y tasas de conversión
 
@@ -43,6 +47,8 @@ Consulta la siguiente tabla para ver:
   * **AppsFlyer**: panel de control general y <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">reportes de estadísticas agregadas y análisis</Anchor>
   * **App Store**: los datos solo están disponibles en la App Store
 * Cómo los anunciantes pueden usar las métricas para mejorar sus resultados de marketing
+
+<div id="marketing-funnel-stages-and-conversion-rates-1" />
 
 #### Etapas del embudo de marketing y tasas de conversión
 
@@ -59,6 +65,8 @@ Consulta la siguiente tabla para ver:
 | tasa de conversión | **Tasa de clics a instalación (instalaciones/clics)\*100** | Mide cuántos usuarios instalaron la aplicación después de hacer clic en el anuncio. | AppsFlyer | <ul><li>Mejora la segmentación de la audiencia.</li><li>Reduce el tiempo de instalación de la aplicación.</li></ul> |
 | 6 | Evento in-app | El usuario realiza una acción en la aplicación, como una compra. | AppsFlyer |  |
 | tasa de conversión | **Tasa de conversión de eventos (Event CVR)**<br /><br />**(eventos in-app/instalaciones)\*100** | <ul><li>Mide cuántos usuarios realizan un evento in-app después de la instalación. <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary#cvr-de-eventos">[Artículo]</Anchor></li><li>Ejemplos: registra, realiza una compra, completa un nivel, etc.</li><li>Habilita los cálculos de costo por acción (CPA).</li></ul> | AppsFlyer | <ul><li>Proporciona mensajería oportuna y llamadas a la acción.</li><li>Mejora la interfaz de usuario.</li><li>Organiza las campañas de retargeting mediante enlaces profundos. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Artículo]</Anchor></li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

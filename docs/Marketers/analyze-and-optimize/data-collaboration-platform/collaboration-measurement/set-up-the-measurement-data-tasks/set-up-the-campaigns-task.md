@@ -23,9 +23,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#campaign-mapping">La fuente de la campaña</Anchor> conecta los eventos de conversión on-site con sus respectivas campañas off-site, on-site y combinadas, lo que permite una atribución precisa y la elaboración de informes de rendimiento. A diferencia de otras tareas en DCP (como conversiones o engagement), la **tarea de campañas es idéntica tanto para las campañas on-site como para las campañas off-site**. Esto significa que sigues el mismo proceso de configuración independientemente del tipo de campaña.
 
+<div id="prerequisites" />
+
 ## Prerrequisitos
 
 Antes de poder configurar la tarea de campañas, el propietario de la colaboración debe asignársela al colaborador que sea propietario de la plataforma donde se generan los eventos de conversión. Para obtener más información, consulta Asignar tareas de configuración
+
+<div id="set-up-the-campaigns-task" />
 
 ## Configurar la tarea de campañas
 
@@ -60,6 +64,8 @@ Para abrir la página **Configuración de la medición**, sigue estos pasos:
 3. En la parte inferior de la página de colaboración, haz clic en **Configurar medición.**
    * Si el enlace está desactivado, configura las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">fuentes de datos</Anchor> y las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiencias</Anchor> de la colaboración.
 4. En la página **Configuración de la medición**, haz clic en el panel **Campañas** para abrir el cuadro de diálogo **Campañas**.
+
+   <div id="note" />
 
    > 📘 **Nota:**
    >

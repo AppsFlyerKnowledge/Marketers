@@ -23,6 +23,8 @@ El phishing es una táctica engañosa que utilizan los ciberdelincuentes para ob
 
 En AppsFlyer, nos comprometemos a mantener la seguridad y la integridad de nuestro entorno digital. En este artículo se explica cómo identificar intentos de phishing y protegerte frente a actividades maliciosas, con especial atención a verificar la legitimidad de las comunicaciones relacionadas con AppsFlyer.
 
+<div id="official-appsflyer-domain" />
+
 ## **Dominio oficial de AppsFlyer**
 
 El único dominio oficial de AppsFlyer es: [https://www.appsflyer.com](https://www.appsflyer.com)
@@ -30,6 +32,8 @@ El único dominio oficial de AppsFlyer es: [https://www.appsflyer.com](https://w
 Cualquier otro dominio no está afiliado a AppsFlyer y puede usarse como parte de un esquema de phishing. Se recomienda encarecidamente a los usuarios que extremen la precaución al acceder a sitios web o hacer clic en enlaces que pretendan representar a AppsFlyer.
 
 Verifica siempre que el dominio utilizado sea correcto y coincida exactamente con nuestro sitio web oficial.
+
+<div id="identifying-a-phishing-attempt" />
 
 ## **Cómo identificar un intento de phishing**
 
@@ -60,6 +64,8 @@ Si te encuentras con solicitudes inusuales de información, acciones o pagos por
 
 Si recibes solicitudes para comunicarte a través de apps de mensajería, como WhatsApp, Telegram, etc., debes considerarlas muy sospechosas y evitarlas. 
 
+<div id="be-aware-of-employment-scams" />
+
 ## **Mantente alerta ante las estafas de empleo**
 
 Una estafa común reciente es una estafa de empleo en la que los estafadores fingen ser empleadores o reclutadores para engañar a la gente y lograr que entregue información personal, pague por ofertas de trabajo falsas u otras formas de explotación financiera.   
@@ -69,6 +75,8 @@ Por eso, debes estar atento a las siguientes señales de alerta:
 * Solicitud de pagos por adelantado: los empleadores legítimos nunca piden dinero para tramitar solicitudes, formación, el trabajo o el equipo.
 * Descripciones vagas del puesto: los estafadores suelen ofrecer descripciones del puesto poco claras o demasiado generales.
 * Solicitudes de información personal: los empleadores legítimos no piden información personal sensible (como números de la Seguridad Social o datos de cuentas bancarias) al inicio del proceso de contratación.
+
+<div id="reporting-suspicious-activity" />
 
 ## **Cómo reportar actividades sospechosas**
 
@@ -80,6 +88,8 @@ Si recibes una comunicación o encuentras un sitio web que parece estar afiliado
 * Reporta la actividad lo antes posible a nuestro equipo de seguridad en: security@appsflyer.com.
 
 Tu reporte proactivo nos permite responder con rapidez y ayuda a proteger a la comunidad en general.
+
+<div id="best-practices-for-online-safety" />
 
 ## **Mejores prácticas para la seguridad online**
 

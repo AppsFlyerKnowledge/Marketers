@@ -32,6 +32,8 @@ Al establecer una conexión entrante entre tu cuenta de Braze y AppsFlyer Audien
 > * Es necesario que los SDK de Braze y AppsFlyer estén integrados en tu aplicación.
 > * Debes registrarte en la función **Currents** en Braze.
 
+<div id="set-up-the-braze-incoming-connection" />
+
 ## Configurar la conexión entrante de Braze
 
 Hay 3 pasos principales para configurar la conexión entrante de Braze:
@@ -46,6 +48,8 @@ Para crear una conexión entrante desde Braze, el SDK de AppsFlyer en tus aplica
 
 * Parámetro ID externo de Braze
 * Campo CUID
+
+<div id="using-a-braze-external-id-parameter" />
 
 #### **Uso de un parámetro ID Externo de Braze**
 
@@ -74,6 +78,8 @@ partnerInfo:brazeInfo];
 
 </Tab>
 </Tabs>
+
+<div id="using-the-cuid-field" />
 
 #### **Uso del campo CUID**
 
@@ -127,6 +133,8 @@ En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro
 9. En la sección Comportamiento del cliente y eventos del usuario, mantén desactivada la opción **Track Customer Behavior and User Events**.
 10. Haz clic en el botón **Launch Current** para guardar la configuración y empezar a enviar eventos de engagement de mensajes de Braze a audiencias.
 
+<div id="supported-events" />
+
 #### eventos admitidos
 
 > 📘 **Note**
@@ -149,6 +157,8 @@ En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro
 > * Envío de SMS/MMS
 
 </Accordion>
+
+<div id="using-braze-data-in-audiences" />
 
 ## Uso de Datos de Braze en Audiencias
 

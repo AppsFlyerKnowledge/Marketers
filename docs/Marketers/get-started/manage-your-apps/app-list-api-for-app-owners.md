@@ -28,6 +28,8 @@ Si eres una ad network, usa la API de <Anchor target="_blank" href="/partners/e
 
 **Más información**: <Anchor target="_blank" href="/marketers/es/docs/about-advertiser-apis">Lista de API para anunciantes</Anchor>
 
+<div id="get-app-list-api" />
+
 ## Obtener la API de lista de apps
 
 Las siguientes secciones incluyen la información necesaria para usar la API.
@@ -59,6 +61,8 @@ Obtener los parámetros obligatorios de la lista de apps:
 | Parámetro de consulta | Descripción |
 | --- | --- |
 |  | No hay parámetros de consulta obligatorios para esta API |
+
+<div id="pagination-mechanism" />
 
 #### **Mecanismo de paginación**
 

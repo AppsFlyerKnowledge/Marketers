@@ -25,6 +25,8 @@ x-zendesk:
 
 Para configurar tus campañas con Ströer Mobile Performance, sigue los pasos a continuación.
 
+<div id="setting-up-ströer-mobile-performance" />
+
 ## Configuración de Ströer Mobile Performance
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -41,6 +43,8 @@ Para configurar tus campañas con Ströer Mobile Performance, sigue los pasos a 
 
 La ventana de configuración de Ströer Mobile Performance incluye 3 pestañas activas: Integración, enlace de atribución y permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
@@ -51,6 +55,8 @@ La ventana de configuración de Ströer Mobile Performance incluye 3 pestañas a
 <Accordion title="Pestaña de Integración">
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
+
+<div id="activate-partners" />
 
 ### Activar los partners
 
@@ -63,11 +69,15 @@ Configuración general
 
 Ströer Mobile Performance se conecta con AppsFlyer mediante un Security Token único. Si aún no lo tienes, debes obtenerlo de Ströer Mobile Performance para continuar con la integración.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Ströer Mobile Performance tras las instalaciones y los re-engagement de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos que provienen únicamente de usuarios atribuidos a Ströer Mobile Performance.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -96,6 +106,8 @@ En esta pestaña, puedes crear los enlaces de atribución que deseas enviar a St
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -115,6 +127,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse al partner.
@@ -122,6 +136,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Más detalles sobre la ventana de lookback de clic <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">aquí</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -154,6 +170,8 @@ Este partner no admite ingresos por publicidad.
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Ströer Mobile Performance, tanto si el partner actúa como ad network, agencia o ambas. Ten en cuenta que, aunque la atribución esté desactivada para Ströer Mobile Performance, la pestaña Permisos está activa y puedes concederle el control a Ströer Mobile Performance.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación.
+
+<div id="ad-network-permissions" />
 
 ### Permisos para Redes de Publicidad
 

@@ -27,13 +27,19 @@ x-zendesk:
 ---
 > **De un vistazo:** Utiliza AppsFlyer con actividades web de confianza (TWA) para medir las instalaciones y registrar eventos in-app.
 
+<div id="introduction" />
+
 ## Introducción
+
+<div id="what-are-trusted-web-activities" />
 
 ### ¿Qué son las actividades web de confianza?
 
 Las actividades web de confianza (TWA, por sus siglas en inglés) son una nueva forma de integrar contenido web con tu aplicación de Android. El desafío con las TWA es poder registrar los eventos in-app. Hablamos sobre este desafío en este artículo. Para obtener más información sobre las TWA, consulta <Anchor target="_blank" href="https://developers.google.com/web/updates/2019/02/using-twa">aquí</Anchor>.
 
 Las TWA también se pueden utilizar con aplicaciones web progresivas.
+
+<div id="what-are-progressive-web-apps" />
 
 ### ¿Qué son las aplicaciones web progresivas?
 
@@ -52,6 +58,8 @@ Esta forma de PWA te permite medir las instalaciones. La otra forma de PWA, aque
 <Accordion title="Envío de eventos in-app desde TWA">
 
 Los eventos in-app se envían mediante el SDK de AppsFlyer desde actividades de la aplicación nativa. Dado que la TWA está basada en la web y no es una actividad nativa, no puedes enviar eventos in-app utilizando el SDK de AppsFlyer. Puedes utilizar <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">eventos in-app de servidor a servidor</Anchor> como alternativa. Sigue las instrucciones a continuación para enviar eventos de servidor a servidor con TWA.
+
+<div id="prerequisites" />
 
 ### Requisitos previos
 
@@ -92,6 +100,8 @@ Antes de que puedas comenzar a enviar eventos desde TWA a AppsFlyer, haz lo sigu
        import androidx.browser.trusted.TrustedWebActivityIntentBuilder;
        ```
 
+<div id="getting-the-appsflyer-id" />
+
 ### Obtención del ID de AppsFlyer
 
 Para enviar eventos de servidor a servidor, necesitas el ID de AppsFlyer. Puedes obtener el ID de AppsFlyer desde el SDK de AppsFlyer para Android.
@@ -101,6 +111,8 @@ Primero, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/sdk-inte
 ```java
 String appsflyerId = AppsFlyerLib.getInstance().getAppsFlyerUID(this);
 ```
+
+<div id="sending-the-appsflyer-id-to-twa" />
 
 ### Envío del ID de AppsFlyer a TWA
 
@@ -141,6 +153,8 @@ private void launchTwa(String cuid, String af_id) {
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="retrieving-the-appsflyer-id" />
 
 #### Obtención del ID de AppsFlyer
 
@@ -199,6 +213,8 @@ private void launchTwa(String cuid, String af_id) {
 }
 ```
 
+<div id="retrieving-the-appsflyer-id-1" />
+
 #### Obtención del ID de AppsFlyer
 
 JavaScript no proporciona una API que permita a los desarrolladores acceder a los encabezados. Por lo tanto, el servidor debe enviar los datos de conversión a la actividad web como una cookie. El servidor obtiene los encabezados personalizados que contienen el ID de AppsFlyer, analiza los datos y los envía a la página web como una cookie.
@@ -226,6 +242,8 @@ console.log(appsflyer_id);
 
 </Accordion>
 
+<div id="sending-the-in-app-event" />
+
 ### Envío del evento in-app
 
 Para enviar eventos in-app, debes enviar los datos del evento a tu servidor y hacer que tu servidor envíe el evento a AppsFlyer. Existen algunos otros requisitos previos para enviar eventos in-app:
@@ -249,6 +267,8 @@ El SDK de AppsFlyer te proporciona datos de conversión a través de dos API:
 * <Anchor target="_blank" href="https://dev.appsflyer.com/docs/api-reference#onappopenattribution">Atribución de apertura de la aplicación</Anchor>: se llama cuando la aplicación tiene un enlace profundo para usar OneLink.
 
 Puedes utilizar datos de conversión para personalizar el contenido web.
+
+<div id="sending-conversion-data-to-twa" />
 
 ### Envío de datos de conversión a TWA
 
@@ -287,6 +307,8 @@ private void launchTwa(Map<String, String> conversionData, String cuid, String a
     CustomTabsClient.bindCustomTabsService(getApplicationContext(), "com.android.chrome", customTabsServiceonnection);
 }
 ```
+
+<div id="fetching-the-conversion-data-from-the-client-side" />
 
 ### Obtención de datos de conversión del lado del cliente
 

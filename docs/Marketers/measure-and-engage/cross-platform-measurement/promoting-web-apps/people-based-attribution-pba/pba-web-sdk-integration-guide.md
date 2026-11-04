@@ -24,6 +24,8 @@ x-zendesk:
 
 ![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Guía de integración y del usuario del SDK web
 
 * La etiqueta JavaScript del SDK web:
@@ -33,6 +35,8 @@ x-zendesk:
   * Tamaño: 40-60 Kb.
 * Implementa el SDK web junto con el SDK móvil de AppsFlyer para registrar y asignar la actividad del usuario en tu aplicación móvil y tus entornos web.
 * Los eventos que ocurren fuera del sitio web se pueden registrar mediante la <Anchor target="_blank" href="/marketers/es/docs/web-server-to-server-events-api-for-pba-web-s2s">API de eventos web server-to-server</Anchor> (Web S2S).
+
+<div id="selecting-a-code-snippet" />
 
 ## Selección de un fragmento de código
 
@@ -201,11 +205,15 @@ Si tu sitio web aplica una Política de Seguridad de Contenido (CSP) mediante un
 
 </Accordion>
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Integración del SDK web en el sitio web
 
 <div id="installation-and-integration" />
 
 <Accordion title="Instalación e integración">
+
+<div id="considerations-and-actions-required" />
 
 #### Consideraciones y acciones requeridas
 
@@ -242,15 +250,21 @@ Si tu sitio web aplica una Política de Seguridad de Contenido (CSP) mediante un
 <Tabs>
 <Tab title="Nativo">
 
+<div id="javascript-code-snippet" />
+
 #### Fragmento de código JavaScript
 
 Integra el SDK web utilizando uno de los siguientes métodos.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **Para instalar el SDK web sin Smart Banners:**
 
 1. Repite el procedimiento que sigue en todas las páginas de tu sitio web.
 2. En el fragmento de código que se indica a continuación, reemplaza `WEB_DEV_KEY` con la clave especificada en los requisitos previos.
 3. Pega el fragmento de código [que has seleccionado anteriormente](#selección-de-un-fragmento-de-código) en la etiqueta de encabezado de tu sitio web. Pégalo cerca de la parte superior de la etiqueta de encabezado.
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **Para implementar el SDK web con Smart Banners:**
 
@@ -442,12 +456,16 @@ Consideración:
   * Caducan después de un período establecido por el SDK web o según lo determine el navegador. Después de que caduquen las cookies, el SDK web vuelve a la configuración del estado inicial.
   * La cookie del SDK web no interfiere y siempre está sujeta a la configuración de cookies específica del navegador.
 
+<div id="sdk-initial-state-setting" />
+
 #### Configuración del estado inicial del SDK
 
 | Configuración | Se requiere fragmento |
 | --- | --- |
 | [Predeterminado] Enviar eventos | Haz el siguiente cambio en el fragmento del SDK web. Si es necesario, agrega el parámetro measurementStatus:<br /><br />Establece measurementStatus=true<br /><br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:true}` |
 | No enviar eventos | Haz el siguiente cambio en el fragmento del SDK web. Si es necesario, agrega el parámetro measurementStatus:<br /><br />Establece measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************", measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### Control explícito
 
@@ -463,6 +481,8 @@ Consideración:
 <Accordion title="Implementar una política de Política de Seguridad de Contenido (CSP)">
 
 Si tu sitio web requiere estrictos protocolos de seguridad o privacidad de datos, utiliza los siguientes mecanismos para configurar cómo interactúa el SDK web con tu entorno y tus datos.
+
+<div id="content-security-policy-csp" />
 
 #### Política de Seguridad de Contenido (CSP)
 
@@ -481,6 +501,8 @@ La siguiente tabla muestra qué políticas de CSP son compatibles con la variant
 | `script-src 'nonce-...' 'strict-dynamic'` | Sí (recomendado) | Nonce cubre el script en línea y el loader; `strict-dynamic` propaga confianza a la etiqueta del SDK inyectada dinámicamente. No se necesita origen de CDN en la lista de permitidos. |
 
 Compatibilidad con políticas de CSP
+
+<div id="advanced-sdk-verification-with-csp-nonce-snippets" />
 
 #### Advanced SDK Verification con fragmentos de CSP nonce
 
@@ -566,6 +588,8 @@ Si los parámetros de consulta contienen datos que no deseas que AppsFlyer regis
 
 Puedes implementar los métodos descritos en relación con URL, referentes y header\_referer.
 
+<div id="query-discard-options" />
+
 #### Opciones de descarte de consultas
 
 | Método | Descripción |
@@ -574,6 +598,8 @@ Puedes implementar los métodos descritos en relación con URL, referentes y hea
 | Descartar parámetros de consulta especificados | Al establecer una máscara de parámetro de consulta, especifica qué parámetros se descartan.  Establece la máscara de descarte usando `af_url_mask=param`, donde param es el nombre del parámetro.<br /><br />Ejemplo:<br /><br />**URL con máscara:**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**URL después del descarte:**<br /><br />`param1=value1&af_url_mask=param2;param3` |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## Principios de registro de eventos.
 
@@ -586,6 +612,8 @@ Puedes implementar los métodos descritos en relación con URL, referentes y hea
 * Los datos de los eventos de conversión están disponibles en los paneles de control de la PBA.
 * Los datos de los eventos estándar y de conversión están disponibles en los <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">reportes de raw data</Anchor>.
 
+<div id="conversion-events" />
+
 ### Eventos de conversión
 
 * Los eventos de conversión brindan insights sobre tus esfuerzos comerciales y de marketing. Los eventos de conversión incluyen compras, descargas, registros y suscripciones.
@@ -594,11 +622,15 @@ Puedes implementar los métodos descritos en relación con URL, referentes y hea
 * Los eventos de conversión se utilizan para registrar los ingresos y calcular el ROI.
 * Utilízalos para comparar el presupuesto de los anuncios de fuentes de medios específicas con los ingresos generados por los usuarios que provienen de estas fuentes de medios.
 
+<div id="standard-events" />
+
 ### Eventos estándar
 
 * Los eventos estándar se utilizan para validar la trayectoria del usuario y los embudos que generan conversiones.
 * Utilízalos para medir la actividad de los usuarios y resaltar las fuentes de medios que atraen a los usuarios comprometidos.
 * Registra la actividad de los usuarios para marcarlos para campañas de reengagement.
+
+<div id="recording-events" />
 
 ### Registro de eventos
 
@@ -657,6 +689,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 Los eventos que envías dependen de la naturaleza de tu aplicación web. Por ejemplo, una aplicación de tienda en línea requiere un conjunto de eventos diferentes a los de un medio de comunicación. Mira los escenarios siguientes para tener una idea de los eventos que debes enviar y cuándo.
 
+<div id="online-store" />
+
 #### Tienda en línea
 
 Supongamos que administras una tienda en línea. Algunos eventos estándar que quizás quieras registrar serían:
@@ -700,6 +734,8 @@ Esta parte está destinada a desarrolladores web.
    2. La carga útil de solicitud se alinea con los parámetros del evento.
 
 </Accordion>
+
+<div id="examples" />
 
 ## Ejemplos
 
@@ -1061,6 +1097,8 @@ La función setCustomerUserId se puede enviar en cualquier etapa del flujo del u
 Utiliza el mismo valor CUID que utilizas en la función setCustomerUserId en la aplicación móvil (consulta el setCustomerUserId móvil para: <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">iOS</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Android,</Anchor> Unity)
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## Información adicional
 

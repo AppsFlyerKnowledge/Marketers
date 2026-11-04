@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Consulta los datos de atribución en iTunes Connect integrando iTunes App Analytics con AppsFlyer.
 
+<div id="enabling-the-integration" />
+
 ## Habilitar la integración
 
 ![itunes-connect-app-analytics.png](https://files.readme.io/e1e480c1af63a3404e40ba4049dac13497a4db8b298a1735812524392232f2d9-11523192862353.png)

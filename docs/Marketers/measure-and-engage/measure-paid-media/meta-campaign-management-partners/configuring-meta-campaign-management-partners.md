@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **En resumen:** Optimiza las campañas de Anuncios de Meta utilizando partners de administración de campañas de Meta (antes conocidos como partners de marketing de Facebook), como Kenshoo, Bidalgo y Smartly. Una vez configurados, AppsFlyer les envía los postbacks.
 
+<div id="configure-meta-campaign-management-partners" />
+
 ## Configurar partners de administración de campañas de Meta
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -40,6 +42,8 @@ x-zendesk:
 4. En la pestaña de **Integración**, selecciona la aplicación para la integración y activa **Activar partner** .  
     **Nota:** El selector debe estar <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor> mientras trabajes con el partner. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
 5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación.
+
+<div id="in-app-event-postback-setup" />
 
 ## Configuración de postbacks de eventos in-app
 
@@ -67,6 +71,8 @@ Para que el partner obtenga postbacks, los nombres de las campañas **deben** te
 3. [Opcional] Haz clic en ![conditional-iae-postbacks-icon.png](https://files.readme.io/5345c5ebe95b3f1a0d0858b88ce29f9965178ce750df86c04cb131a93d006a5e-14050481317393.png) para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para enviar ciertos eventos in-app al partner.
 4. [Opcional] Haz clic en **Agregar evento** para agregar otro SDK o evento de servidor a servidor a la lista.
 5. Haz clic en **Guardar integración**.
+
+<div id="important-notes" />
 
 > 📘 **Notas importantes**
 >

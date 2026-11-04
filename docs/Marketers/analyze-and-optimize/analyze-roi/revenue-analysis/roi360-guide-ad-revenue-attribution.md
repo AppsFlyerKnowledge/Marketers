@@ -31,6 +31,8 @@ x-zendesk:
 
 ![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## Atribución de ingresos por publicidad
 
 * Los anuncios se muestran en la aplicación en banners, muros de ofertas, intersticiales, etc., y generan ingresos por publicidad.
@@ -60,6 +62,8 @@ La precisión y la actualización de los datos dependen del tipo de integración
 
 </Accordion>
 
+<div id="implementation" />
+
 ## Implementación
 
 Las siguientes secciones describen los tipos de atribución de ingresos por publicidad disponibles, así como los flujos de trabajo y los pasos necesarios para la implementación y el mantenimiento.
@@ -77,6 +81,8 @@ Las siguientes secciones describen los tipos de atribución de ingresos por publ
 3. Selecciona un partner de ingresos por publicidad y haz clic en **Siguiente**.
 
    ![ingresos por anuncios 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+
+   <div id="note" />
 
    > 📘 **Advertencia**
    >
@@ -131,6 +137,8 @@ Cuando una aplicación utiliza dos <Anchor target="_blank" href="/marketers/es/d
   1. En AppsFlyer, ve a **ROI360** > **Configuración de ingresos** > **Ingresos por publicidad**.
   2. En **Configuración general**, haz clic en **Desduplicar los ingresos por publicidad cuando hay referencias cruzadas entre dos partners de mediación**. **Nota**: No marques la casilla si las 2 plataformas de mediación median formatos de anuncios diferentes. Por ejemplo, cuando la plataforma 1 muestra Banner e Interstitial, y la plataforma 2 muestra anuncios de AppOpen y Native.
 
+     <div id="note-1" />
+
      > 📘 **Nota:**
      >
      > Este ajuste siempre se ignora para:
@@ -158,12 +166,16 @@ La granularidad agregada para los ingresos por publicidad funciona de la siguien
   * Evento **af\_app\_opened** , que está disponible de forma predeterminada.
 * No reportes los montos de ingresos por publicidad en eventos in-app en paralelo a una integración de ingresos por publicidad. Si lo haces, los ingresos por publicidad se duplicarán en el dashboard porque AppsFlyer obtiene los datos de ingresos de la red de monetización mediante la integración.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### Ingresos por publicidad agregados mediante eventos
 
 | Método de evento | ¿Cómo se implementa? | consideraciones |
 | --- | --- | --- |
 | Evento in-app único de monetización | <ul><li>Un evento in-app se establece en el momento de la visualización del anuncio.</li><li>Esto proporciona un recuento distinto de las acciones de los usuarios, lo que permite cálculos de eRPA superiores</li><li>Esto se puede perfeccionar aún más si se usa un evento in-app distinto para cada red de monetización. Esto te permite desglosar los ingresos por red de monetización<br />Consulta la tabla siguiente para ver un análisis completo.</li></ul> | <ul><li>Requiere que el desarrollador modifique la aplicación.</li><li>Los ingresos se pueden desglosar por red de monetización en el panel de control.</li></ul> |
 | evento af\_app\_opened | <ul><li>El SDK de Appsflyer envía el evento af\_app\_opened de forma predeterminada</li><li>Se activa por cada sesión de usuario</li></ul> | <ul><li>No se requiere modificación de la aplicación.</li><li>Rápido de implementar.</li><li>eRPA values are significantly distorted unless you show only one ad per session</li><li>Sin desglose de los ingresos por red de monetización.</li><li>El evento corresponde a todos los usuarios que abren la aplicación, y no tienes ninguna indicación de la disposición del usuario a ver anuncios</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### Comparación de métodos de eventos in-app
 
@@ -194,11 +206,15 @@ Para verificar que la integración esté operativa:
 | Faltan detalles de configuración | Uno o más de los campos de credenciales están incompletos | Recupera las credenciales en el panel de control del partner de ingresos por publicidad o comunícate con el partner y solicita las credenciales. |
 | No se encontraron eventos | No se han recibido recientemente del SDK eventos válidos de ingresos por anuncios. | Confirma que la integración del SDK está completa y que se están enviando eventos de prueba. Puedes verificar la entrega de eventos en tiempo real usando el <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers#view-live-events">visor de eventos en vivo</Anchor>. |
 
+<div id="note-2" />
+
 > 📘 **Advertencia**
 >
 > En las integraciones de SDK, también puedes verificar que los eventos de ingresos por anuncios se registran en tiempo real con el <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers#view-live-events">visor de eventos en vivo</Anchor>. Ten en cuenta que solo muestra eventos enviados desde dispositivos de prueba registrados.
 
 </Accordion>
+
+<div id="ad-revenue-data" />
 
 ## Datos de ingresos por publicidad
 
@@ -221,6 +237,8 @@ La atribución de ingresos por publicidad está disponible de la siguiente maner
   * Panel de control: Actividad
   * Raw data de ingresos por publicidad
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Panel de información general - Reporte de estadísticas agregadas de rendimiento**
 
 ![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
@@ -239,6 +257,8 @@ En el panel de control de actividad:
 
 * Los valores, incluidos los ingresos, se basan en la fecha de actividad. Consulta <Anchor target="_blank" href="/marketers/es/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">Valor de vida útil (LTV) vs. actividad</Anchor>.
 * El 0**Promedio de acciones por usuario** indica la tendencia de los usuarios a interactuar con los anuncios presentados en la aplicación.
+
+<div id="examples" />
 
 #### Ejemplos
 
@@ -314,6 +334,8 @@ Los campos de los reportes de ingresos por publicidad se rellenan:
   * **Contexto:** campos que tienen un significado similar en otros reportes de raw data. Por ejemplo, el nombre del evento, el valor del evento y la moneda.
 * Como resultado de la atribución del evento a la fuente de medios que trajo al usuario. Es decir, estos campos se copian del evento de conversión que trajo al usuario. Por ejemplo, la fuente de medios y una campaña. Estos campos no se enumeran en la siguiente tabla.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### Campos rellenados por ingresos por publicidad
 
 | api\_name | Nombre de campo | Tipo de campo | Descripción |
@@ -330,6 +352,8 @@ Los campos de los reportes de ingresos por publicidad se rellenan:
 | <span id="impressions"></span>Impresiones | Impresiones | Específico | Número de veces que el usuario vio el anuncio |
 | <span id="mediation_network"></span>mediation\_network | Mediation network | Específico | Red de mediación que informa el evento a AppsFlyer |
 | <span id="customer_user_id"></span>ID de usuario | ID de usuario | Motive | Se completa si está disponible por parte del anunciante:<ul><li>Para las integraciones a nivel de impresión (SDK): se recopila mediante `setCustomerUserId()` en el SDK de AppsFlyer.</li><li>Para las integraciones de nivel de dispositivo (API): Se recopila desde la API de mediación (ID de usuario o ID de usuario del publisher configurado mediante el SDK de mediación).</li><li>Odeeo y Appodeal no lo admiten.</li></ul> |
+
+<div id="fields-by-network" />
 
 #### Campos por red
 
@@ -383,6 +407,8 @@ Para **Raw Data Export and Pull API**, independientemente del tipo de integraci�
 * <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports">Clave de reporte</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

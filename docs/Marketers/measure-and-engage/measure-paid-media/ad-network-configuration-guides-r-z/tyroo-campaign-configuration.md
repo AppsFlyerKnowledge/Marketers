@@ -25,6 +25,8 @@ x-zendesk:
 
 Para configurar tus campañas con Tyroo, sigue los pasos a continuación.
 
+<div id="setting-up-tyroo" />
+
 ## Configuración de Tyroo
 
 **Requisito previo:** Una cuenta con el socio. Si no tienes una cuenta, ponte en contacto con el socio para abrir una antes de configurar la integración.
@@ -45,14 +47,20 @@ Para configurar tus campañas con Tyroo, sigue los pasos a continuación.
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, deberás activar el selector ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red de TODAS las instalaciones, Tyroo prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Tyroo.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -64,12 +72,16 @@ Tyroo se conecta con AppsFlyer mediante una clave de acción única. Si aún no 
 
 Actívalo si quieres atribuir las instalaciones view-through de Tyroo. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Tyroo después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para los eventos que provengan únicamente de usuarios atribuidos a Tyroo.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para ser reportada a Tyroo.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -98,6 +110,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a T
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -117,6 +131,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Tyroo.
@@ -125,9 +141,13 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Haz clic en el enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Tyroo para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -138,6 +158,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 **Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 

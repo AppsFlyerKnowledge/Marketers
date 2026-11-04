@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **En resumen:** Integra AppsFlyer en tus aplicaciones Cordova para medir las instalaciones, los eventos in-app, las fuentes de medios y más.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > El 1 de marzo de 2020, AppsFlyer dejó de usar las versiones antiguas del SDK. Para saber qué versiones han dejado de usarse, cómo te afecta y cómo actualizar a la última versión del SDK, haz clic <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview#sobre-el-sdk">aquí</Anchor>.

@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **En resumen:** AppsFlyer ayuda a los marketers a cumplir la Ley de Mercados Digitales (DMA) y a mejorar el valor de sus anuncios en Google. Encuentra respuestas a las preguntas más frecuentes sobre el cumplimiento de la DMA y la optimización del valor de los anuncios.
 
+<div id="overview" />
+
 ## Visión general
 
 Google está actualizando su <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">política de consentimiento de usuarios de la UE</Anchor> en preparación para la aplicación de la <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">Ley de Mercados Digitales</Anchor> (DMA). Como <Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">App Attribution Partner</Anchor> de Google, AppsFlyer se está adaptando a los cambios de política al tiempo que permite a los anunciantes sacar el máximo partido de sus anuncios en Google. La política actualizada está en vigor desde el 6 de marzo de 2024.
+
+<div id="relevant-integrations-and-continued-use-of-google-features" />
 
 ## Integraciones relevantes y uso continuo de las funciones de Google
 
@@ -39,6 +43,8 @@ Las siguientes integraciones son relevantes para la nueva política de consentim
 * GMP DV360 (`dv360_int`)
 
 Si los usuarios finales de tus aplicaciones a través de estas integraciones se encuentran en el Espacio Económico Europeo (EEE), asegúrate de tomar las medidas necesarias para cumplir con la nueva política de consentimiento de la UE de Google.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -54,6 +60,8 @@ Los marketers deben obtener el consentimiento de los usuarios finales en el EEE 
 
 </Accordion>
 
+<div id="updating-the-appsflyer-sdk" />
+
 ## Actualización del SDK de AppsFlyer
 
 <div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
@@ -66,6 +74,8 @@ El SDK de AppsFlyer (v6.13.0+) puede enviar los datos de consentimiento necesari
 * Una vez actualizado el SDK, <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance">consulta aquí</Anchor> las instrucciones de implementación para admitir la DMA.
 
 </Accordion>
+
+<div id="sending-consent-data" />
 
 ## Enviando datos de consentimiento
 
@@ -101,6 +111,8 @@ Los valores de consentimiento del usuario final se envían a Google para las int
 
 </Accordion>
 
+<div id="sending-consent-datafaq" />
+
 ### Enviando datos de consentimiento—FAQ
 
 <div id="do-i-have-control-over-consent-data-for-nonue-users" />
@@ -108,6 +120,8 @@ Los valores de consentimiento del usuario final se envían a Google para las int
 <Accordion title="¿Existe alguna opción para no enviar datos de consentimiento a Google?">
 
 AppsFlyer permite a los anunciantes que creen que los requisitos de la DMA no se aplican a sus usuarios finales (por ejemplo, cuando no pertenecen a la UE) evitar el envío de datos de consentimiento a Google. Esto se hará activando un interruptor en las páginas de integración relevantes.
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >
@@ -170,19 +184,27 @@ Sí. Google requiere que los datos de consentimiento se incluyan en cada evento 
 
 </Accordion>
 
+<div id="preparing-for-the-upcoming-changes" />
+
 ## Preparándose para los próximos cambios
 
 <div id="how-can-i-prepare-for-the-upcoming-changes" />
 
 <Accordion title="Adopta las siguientes medidas preparatorias">
 
+<div id="address-user-consent-in-the-european-economic-area-eea" />
+
 #### Abordar el consentimiento del usuario en el Espacio Económico Europeo (EEE)
 
 Colabora con el asesor jurídico de tu empresa. Pueden proporcionar insights sobre las implicaciones de las políticas europeas de consentimiento del usuario en los datos que compartes con partners como Google. Si es relevante, implementa indicaciones de privacidad como "Configuración de la Privacidad" o "Opciones de Privacidad" para recoger señales de consentimiento de usuario relacionadas con marketing y publicidad de los usuarios de tu aplicación.
 
+<div id="verify-cmp-compliance-and-tcf-2223-support" />
+
 #### Verifica el cumplimiento de la CMP y el soporte de TCF 2.2/2.3
 
 Asegúrate de que tu plataforma de gestión del consentimiento (CMP) sea compatible con TCF 2.2/2.3, las versiones más recientes del Transparency and Consent Framework (TCF). Tu CMP también debe estar bien informada sobre los nuevos requisitos de consentimiento de Google en la UE y puede asesorarte sobre cómo darles soporte conforme al TCF.
+
+<div id="implement-the-newest-sdkserver-to-server-s2s-apis" />
 
 #### Implementa las nuevas APIs SDK/Server-to-server (S2S)
 
@@ -194,11 +216,15 @@ Considera las siguientes opciones para enviar los nuevos campos de consentimient
 * <strong>Utilizando las</strong> llamadas a la API <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile?"><strong>S2S</strong></Anchor>:
   * Antes de enviar eventos in-app a AppsFlyer, actualiza tus llamadas a la API para incluir el objeto `consent_data` para cada evento. Descubre <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">cómo hacerlo</Anchor>.
 
+<div id="transition-from-the-legacy-gmp-integration-doubleclick" />
+
 #### Transición desde la antigua integración GMP (DoubleClick)
 
 Si todavía utilizas la antigua integración GMP de AppsFlyer (doubleclick\_int), pasa a la versión más reciente (dv360\_int), que ya está disponible. La integración antigua **no es compatible con el consentimiento de la UE** y quedará obsoleta pronto. Saber más <Anchor target="_blank" href="/marketers/es/docs/bulletin-google-marketing-platform-gmp-integration-transition">aquí</Anchor>.
 
 </Accordion>
+
+<div id="impact-on-advertising-activityfaq" />
 
 ## Impacto en la actividad publicitaria—Preguntas frecuentes
 
@@ -220,6 +246,8 @@ El cambio puede afectar al número de usuarios del EEE que aparecen en tus audie
 
 </Accordion>
 
+<div id="further-information-and-contact-details" />
+
 ## Saber más y detalles de contacto
 
 Si tienes alguna duda o pregunta, puedes ponerte en contacto con nosotros:
@@ -227,6 +255,8 @@ Si tienes alguna duda o pregunta, puedes ponerte en contacto con nosotros:
 * Para conocer los requisitos de Google o cómo pueden afectar estas actualizaciones a tus datos de Google, consulta los <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy-help/">artículos de ayuda de Google</Anchor> o ponte en contacto directamente con tu representante de Google.
 * Si tienes preguntas sobre el soporte de AppsFlyer para los campos de consentimiento del usuario final de la UE, ponte en contacto con tu CSM de AppsFlyer o escribe a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 * Consulta el <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/13802165?hl=en">artículo sobre el modo de consentimiento</Anchor> de Google para obtener definiciones de referencia.
+
+<div id="see-also" />
 
 > 📄 **Consulte también**
 >

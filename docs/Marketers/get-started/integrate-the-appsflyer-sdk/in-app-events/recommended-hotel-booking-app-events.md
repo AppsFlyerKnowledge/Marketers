@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de reserva de hoteles.
 
+<div id="-hotel-booking" />
+
 ## <Image alt="Eventos_InApp_hotel.png" src="https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png" width="100px" /> Reserva de hoteles
 
 Las aplicaciones de reserva de hoteles les permiten a los viajeros reservar hoteles con facilidad y, al mismo tiempo, elegir entre las mejores ofertas. Los eventos típicos que te recomendamos registrar son: busqueda, compra, reserva de viaje y agregar a la lista de deseos.
@@ -34,6 +36,8 @@ Registrar estos eventos puede ayudarte a determinar:
 
 Podrás atribuir preferencias como la puntuación del hotel, la temporada, el país y la cantidad de niños a los usuarios provenientes de determinadas fuentes de medios. Luego, puedes optimizar tus campañas apuntando a estas preferencias de usuario.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
@@ -44,6 +48,8 @@ Podrás atribuir preferencias como la puntuación del hotel, la temporada, el pa
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 [![Diagrama de flujo del recorrido del usuario en la aplicación de reservas de hoteles para eventos recomendados](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -292,6 +298,8 @@ Cuando el usuario llega a la página de agradecimiento después de reservar un h
 | new\_booking | La primera reserva del usuario | Verdadero |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

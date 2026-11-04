@@ -23,17 +23,25 @@ x-zendesk:
 ---
 > **En resumen:** Aprende a integrar Snapchat Ads web para aplicaciones de PC y consola con AppsFlyer y a configurar campañas en Snapchat Ads web.
 
+<div id="warning" />
+
 > ❗️ **Advertencia**
 >
 > Esta integración solo está disponible para aplicaciones de PC y consola, como Steam, Epic o Native PC. Para aplicaciones móviles, consulta la página de <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup">configuración de la integración de Snapchat Ads</Anchor> .
+
+<div id="overview" />
 
 ## Visión general
 
 Este artículo contiene información y pasos sobre cómo configurar y utilizar Snapchat Ads web para aplicaciones de PC y consola con AppsFlyer.
 
+<div id="prerequisite" />
+
 ### Requisitos previos
 
 Antes de activar la integración de Snapchat Ads web, asegúrate de tener una cuenta comercial en <Anchor target="_blank" href="https://businesshelp.snapchat.com/s/topic/0TO8b000000KfssGAC/ads-manager?language=en_US">Snapchat Ads Manager.</Anchor>
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Activación del partner en AppsFlyer
 
@@ -44,6 +52,8 @@ Antes de activar la integración de Snapchat Ads web, asegúrate de tener una cu
 3. Haz clic **Integrar**. Se te redirige a la página de configuración.
 4. En la pestaña **Integración** , activa **Activar partner**. El interruptor debe permanecer (<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.
 5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación.
+
+<div id="setting-up-snapchat-ads-web-in-appsflyer" />
 
 ## Configuración de Snapchat Ads web en AppsFlyer
 
@@ -212,6 +222,8 @@ Actualmente, no se conceden permisos para Snapchat Ads Web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-snapchat-ads-web-for-pc-and-console-apps" />
+
 ## Configuración de campañas en Snapchat Ads Web para aplicaciones de PC y consola
 
 Configura tu campaña en Snapchat Ads Manager. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/snapchat-create-web-based-campaigns#configurar-la-integración-de-appsflyer-en-snapchat-ads">Configurar la integración de AppsFlyer en Snapchat Ads</Anchor>.
@@ -224,20 +236,28 @@ Cuando configuras tu nueva campaña:
   * Página de aterrizaje web (recomendada cuando tienes una aplicación en múltiples plataformas)
   * URL de la tienda (se recomienda cuando tu aplicación está en una sola tienda de aplicaciones, en una sola plataforma)
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Ver datos de atribución web-to-app
 
 Aunque los eventos de conversión web se envían a Snapchat bajo el PID original `snapweb_int`, se reportan en el Dashboard de AppsFlyer y en los Reportes de raw data bajo el PID `snapchat_int`. Esto se aplica tanto a los eventos de conversión primarios como a los eventos de asistencia a la conversión.
 
 Esta vista unificada de reportes te permite analizar el rendimiento de campañas web y de aplicación en un solo lugar, incluidos reportes completos de costos web y móvil.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver en el dashboard
 
 Todas las atribuciones web-to-app de Snapchat aparecen bajo `snapchat_int` en los dashboards Overview y Activity. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico de aplicaciones y web dentro de tus datos de Snapchat Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver en reportes raw data y API
 
 * **Las exportaciones de raw data y las respuestas de la API** incluyen el PID `snapchat_int` en el campo `media_source` para la actividad web de Snapchat. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url`, que muestra `snapweb_int` como el PID utilizado durante la creación de campañas web.
 * **Los reportes de postbacks** muestran `snapweb_int` como la fuente de medios original a la que se envió el postback.
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 

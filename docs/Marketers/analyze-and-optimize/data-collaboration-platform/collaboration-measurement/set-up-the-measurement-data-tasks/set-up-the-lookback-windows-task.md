@@ -19,15 +19,21 @@ x-zendesk:
   section_id: 38035061674769
   url: https://support.appsflyer.com/hc/es/articles/38191154658193
 ---
+<div id="set-lookback-windows" />
+
 ## Configurar ventanas de lookback
 
 > **De un vistazo:** configura las ventanas de atribución para campañas on-site y off-site a fin de determinar hasta qué punto en el tiempo se pueden asociar los engagements de los usuarios con las conversiones.
 
 Las ventanas de lookback definen el tiempo máximo entre un engagement del usuario (clic o visualización) y la conversión resultante con fines de atribución. Cada colaboración puede establecer una duración personalizada de la ventana de lookback. Los Partners de medios, como Google Ads o Meta Ads, suelen aplicar reglas distintas para configurar estas ventanas. Este artículo explica cómo configurar ventanas de lookback tanto para colaboradores como para Google y Meta.
 
+<div id="prerequisites" />
+
 ## Prerrequisitos
 
 Antes de que un colaborador que no sea el propietario de la colaboración pueda configurar la tarea de ventanas de lookback, el propietario primero debe asignársela. Para obtener más información, consulta Asignar tareas de configuración.
+
+<div id="open-the-lookback-windows-task" />
 
 ## Abrir la tarea de ventanas de lookback
 
@@ -41,10 +47,14 @@ Para abrir la tarea de ventanas de lookback, sigue estos pasos:
    * Si el enlace aparece en gris, configura las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">fuentes de datos</Anchor> y las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiencias</Anchor> de la colaboración.
 4. En la página **Measurement Setting**, haz clic en el panel de tareas **Lookback windows** para abrir el cuadro de diálogo **Lookback windows**.
 
+   <div id="note" />
+
    > 📘 **Nota**
    >
    > Si el panel **Lookback windows** aparece en gris, pide al propietario de la colaboración que te asigne la tarea de ventanas de lookback.
 
+
+<div id="set-the-collaboration-lookback-window" />
 
 ## Configurar la ventana de lookback de la colaboración
 
@@ -53,6 +63,8 @@ Para configurar la ventana de lookback de la colaboración, sigue estos pasos:
 1. Si estás configurando una <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#on-site-and-off-site-campaigns">campaña combinada on-site y off-site</Anchor> en el cuadro de diálogo **Lookback Windows**, expande el panel <Image alt="AppsFlyer.png" src="https://files.readme.io/2536fe45ebde303e110c7b90cb3b2a95fc28672a5fa095efff485cdebbd466df-38392816916369.png" width="2.61%" /> **CMN Attribution**. De lo contrario, pasa al siguiente paso.
 2. En los controles deslizantes de **Click-through** o **View-through lookback window**, arrastra el puntero para elegir la duración de la ventana en días.
 3. Haz clic en **Guardar**.
+
+<div id="set-the-meta-ads-lookback-window" />
 
 ## Configurar la ventana de lookback de Meta Ads
 
@@ -63,6 +75,8 @@ Si estás ejecutando una campaña off-site con Meta Ads, la tarea de Ventanas de
    * **1 día**
    * **7 días**
    * **28 días**
+
+<div id="google-ads-lookback-window" />
 
 ## Ventana de lookback de Google Ads
 

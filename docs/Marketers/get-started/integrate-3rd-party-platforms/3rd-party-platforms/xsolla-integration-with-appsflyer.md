@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En resumen:** Xsolla, un partner integrado de AppsFlyer, es un partner tecnológico de comercio de juegos especializado en el procesamiento de pagos fuera de las plataformas de aplicaciones tradicionales. La integración entre Xsolla y AppsFlyer permite a Xsolla automatizar las compras de la tienda web y enviar ingresos a AppsFlyer para presentar el ROAS y el LTV completos del juego, incluidas las compras realizadas en la tienda web de Xsolla.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="integration-types" />
 
 ## Tipos de integración
 
@@ -36,6 +40,8 @@ Hay dos métodos de integración disponibles con Xsolla:
 
 * Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 * Para que la integración funcione correctamente, asegúrate de compartir el ID de usuario de cliente (CUID) con AppsFlyer y de que coincida con el ID de usuario compartido con Xsolla. Esta alineación permite a los usuarios iniciar sesión en la tienda web de Xsolla y garantiza que los datos de los usuarios se envíen con precisión a AppsFlyer.
+
+<div id="setting-up-the-tech-partner-integration" />
 
 ## Configuración de la integración de partners tecnológicos
 
@@ -56,13 +62,19 @@ La ventana de configuración solo hace uso de la pestaña **Integración**.
 
 <Accordion title="Pestaña de integración">
 
+<div id="activate-partner" />
+
 #### Activar partner
 
 La configuración se realiza desde la página **Integraciones activas**, pero para encontrar al partner primero debes ir al <Anchor target="_blank" href="/marketers/es/docs/partner-integrations">marketplace</Anchor>. El conmutador debe permanecer encendido durante todo el tiempo que se trabaje con Xsolla. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privacidad avanzada
 
 Para las aplicaciones de iOS, aparece el selector de <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada</Anchor>. Cuando se activa, limita el intercambio de identificadores de usuario con el partner. Ten en cuenta que cuando la opción <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada</Anchor> está activada en la Configuración de la aplicación, la **Privacidad avanzada (para iOS 14.5+ y versiones posteriores)** está activada y bloqueada de forma predeterminada.
+
+<div id="default-postbacks" />
 
 #### Postbacks predeterminados
 
@@ -73,6 +85,8 @@ AppsFlyer envía postbacks predeterminados a Xsolla después de las instalacione
 * **Todas las fuentes de medios, incluidas las orgánicas:** Los postbacks de instalaciones se envían para los eventos atribuidos a cualquier partner y para los eventos orgánicos.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -127,6 +141,8 @@ Los permisos no están disponibles para Xsolla.
 
 </Accordion>
 
+<div id="setting-up-the-pba-web-sdk-integration" />
+
 ## Configuración de la integración del SDK web de la PBA
 
 Esta integración permite disponer de datos e insights actuales sobre el LTV para analizar el rendimiento de la aplicación dentro del dashboard de PBA.
@@ -148,6 +164,8 @@ Esta integración permite disponer de datos e insights actuales sobre el LTV par
    5. En el campo **Clave de desarrollador** de AppsFlyer, ingresa la clave del desarrollador web de AppsFlyer. Mira a continuación cómo [encontrar esta clave en AppsFlyer](/docs/xsolla-integration-with-appsflyer#cómo-encontrar-la-clave-del-desarrollador-web-en-appsflyer).
    6. Haz clic en **Conectar**.
 
+<div id="finding-the-web-dev-key-in-appsflyer" />
+
 #### Cómo encontrar la clave del desarrollador web en AppsFlyer
 
 1. Desde la página **Mis aplicaciones**, haz clic en **Ver paquetes de marca**.
@@ -155,7 +173,11 @@ Esta integración permite disponer de datos e insights actuales sobre el LTV par
 
 ![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
 
+<div id="identifying-xsollas-events-in-appsflyer" />
+
 ## Identificación de eventos de Xsolla en AppsFlyer
+
+<div id="tech-partner-s2s-integration" />
 
 ### Integración de partners tecnológicos (S2S):
 
@@ -165,6 +187,8 @@ Xsolla envía a AppsFlyer 2 eventos in-app:
 * **xsolla-billing-refund** - Reembolso de compra de artículos
 
 Ambos eventos son parte de los eventos in-app de la aplicación móvil.
+
+<div id="web-sdk-integration" />
 
 ### Integración del SDK web:
 
@@ -178,6 +202,8 @@ Los eventos web de Xsolla aparecerán en los reportes de DataLocker de raw "Even
 Compatibilidad con PC/consolas: la integración de AppsFlyer con Xsolla no es compatible con aplicaciones de PC/consolas en esta fase.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

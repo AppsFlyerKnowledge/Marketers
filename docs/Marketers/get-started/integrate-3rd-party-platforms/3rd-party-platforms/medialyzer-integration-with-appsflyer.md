@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Medialyzer, un partner integrado de AppsFlyer, desarrolla y comercializa el software como una solución de servicio. La solución permite a los planificadores de medios optimizar sus campañas de TV para negocios en línea, en función de las visitas y conversiones generadas inmediatamente por la emisión del anuncio de televisión.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-medialyzer" />
 
 ## Configuración de Medialyzer
 
@@ -44,13 +48,19 @@ Para ver una descripción detallada del Encabezado de la Ventana de Configuraci�
 
 <Accordion title="Pestaña Integración">
 
+<div id="activate-partner" />
+
 #### Activar el partner
 
 La configuración se realiza desde la página **Integraciones activas**, pero para encontrar al partner primero debes ir al <Anchor target="_blank" href="/marketers/es/docs/partner-integrations">marketplace</Anchor>. El selector debe estar activado mientras trabajes con Medialyzer. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privacidad avanzada
 
 Para las aplicaciones de iOS, aparece el selector de <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada</Anchor>. Cuando se activa, limita el intercambio de identificadores de usuario con el partner. Ten en cuenta que cuando el selector <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada</Anchor> está activado en la Configuración de la aplicación, la **Privacidad avanzada (para iOS 14.5+ y versiones posteriores)** está activada y bloqueada de forma predeterminada.
+
+<div id="default-postbacks" />
 
 #### Postbacks predeterminados
 
@@ -60,6 +70,8 @@ AppsFlyer envía postbacks predeterminados a Medialyzer después de las instalac
 * **Todas las fuentes de medios, incluidas las orgánicas**: los postbacks de instalaciones se envían para los eventos atribuidos a cualquier partner y para los eventos orgánicos.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1)
 
+<div id="setting-up-vk-ads" />
+
 ## Configuración de VK Ads
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -43,22 +45,32 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activar Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="general-settings" />
+
 ### Configuración general
 
 Los siguientes ajustes generales están disponibles para VK Ads.
+
+<div id="app-id" />
 
 ### Identificación de la aplicación
 
 Este campo no es obligatorio y su funcionalidad está por determinar. Si tienes alguna otra pregunta, ponte en contacto con VK Ads.
 
+<div id="enable-view-through-attribution" />
+
 ### Habilitar la atribución view-through
 
 Actívalo si deseas atribuir las instalaciones por impresiones de VK Ads. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de [***atribución***](/docs/vk-ads-mytarget-mail-ru-campaign-configuration#attribution-link-tab) (se describe a continuación).
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -66,6 +78,8 @@ Envía postbacks automáticos a VK Ads tras las instalaciones y los re-engagemen
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a VK Ads.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada a VK Ads.
+
+<div id="in-app-events-postbacks" />
 
 ### Postbacks de eventos in-app
 
@@ -127,6 +141,8 @@ AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_b
 * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">En la columna «Acciones», desplaza el cursor sobre una cuenta, haz clic en ***Eliminar conexión***</Anchor>
 
 </Accordion>
+
+<div id="notes" />
 
 > 📘 **Notas**
 >

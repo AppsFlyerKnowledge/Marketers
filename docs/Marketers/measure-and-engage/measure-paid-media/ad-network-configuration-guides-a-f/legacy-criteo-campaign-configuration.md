@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Criteo (Legacy), un partner integrado de ad network de AppsFlyer, es una empresa de retargeting personalizado que trabaja con minoristas de Internet para mostrar anuncios de display online personalizados a consumidores que ya han visitado el sitio web del anunciante. Además de la atribución móvil basada en clics, Criteo (Legacy) también ofrece retargeting, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-criteo-legacy" />
+
 ## Configuración de Criteo (legacy)
 
 **Requisito previo:** una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -45,6 +47,8 @@ La ventana de configuración de Criteo (Legacy) incluye 4 pestañas: Integració
 
 Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
@@ -56,14 +60,20 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red de TODAS las instalaciones, Criteo (Legacy) prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Se recomienda seleccionar **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Criteo (Legacy).
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -71,6 +81,8 @@ Envía postbacks automáticos a Criteo (Legacy) después de las instalaciones y 
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a Criteo (Legacy).  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada a Criteo (Legacy).
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -99,6 +111,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a C
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -117,6 +131,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configuraciones de retargeting
 
@@ -151,6 +167,8 @@ Defina el plazo posterior al re-engagement, durante el cual los eventos in-app d
 
 **Parámetro del enlace de atribución:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeros inicios) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Criteo (Legacy).
@@ -158,6 +176,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Más información sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -192,6 +212,8 @@ Usa estos selectores para otorgarle permisos a una ad network para que maneje su
 * ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
 Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permisos de la agencia
 

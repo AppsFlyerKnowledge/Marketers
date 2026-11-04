@@ -21,17 +21,25 @@ x-zendesk:
 ---
 > **Resumen:** Usa las campañas web de TikTok Ads para atribuir conversiones Web-to-app de TikTok Ads
 
+<div id="overview" />
+
 ## Visión general
 
 AppsFlyer admite la integración con TikTok Ads (`tiktokweb_int`) para campañas web de adquisición de usuarios, lo que te permite reportar datos de atribución y conversión directamente mediante la API de eventos de TikTok. TikTok puede utilizar estos datos para optimizar la segmentación de anuncios, medir el rendimiento y crear audiencias personalizadas.
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >
 > Actualmente, la integración con TikTok Web no admite el envío de postbacks de re-engagement a CAPI.
 
+<div id="prerequisites" />
+
 ### Prerrequisitos
 
 Antes de activar la integración de TikTok Web, asegúrate de tener una cuenta comercial en [TikTok Ads Manager](https://getstarted.tiktok.com/grow-your-business-gb?lang=en&attr_source=google&attr_source=google&attr_medium=search-br-ad&attr_medium=search-br-ad&attr_adgroup_id=155057567247&attr_adgroup_id=155057567247&attr_term=tiktok%20ads%20manager&attr_term=tiktok%20ads%20manager&no_parent_redirect=1&no_parent_redirect=1&creative=%7BGenZCopy%7D&matchtype=e&gad_source=1&gad_campaignid=20368896948&gbraid=0AAAAACeGRgRdqveOjiUJwxN0-j9g7VjPg&gclid=Cj0KCQjwmYzIBhC6ARIsAHA3IkTKsL0d1xAZLIO_9GIkDDIJR-jZs9jDGVa1hTDbsLzcxZl2j6p7ITcaAhf1EALw_wcB).
+
+<div id="how-to-create-a-tiktok-web-ads-campaign" />
 
 ### Cómo crear una campaña de TikTok Web Ads
 
@@ -46,6 +54,8 @@ Y los siguientes pasos opcionales:
 
 * <Anchor target="_blank" href="/marketers/es/docs/meta-ads-create-web-based-campaigns#crear-una-landing-page-con-smart-script-de-onelink">#create-a-landing-page-with-onelink-smart-script</Anchor> (Opcional)
 * [Crear una landing page con OneLink Smart Banners](#crear-una-landing-page-con-onelink-smart-banners) (Opcional)
+
+<div id="set-up-tiktok-web-ads-integration-in-appsflyer" />
 
 ## Configura la integración de TikTok Web Ads en AppsFlyer
 
@@ -65,6 +75,8 @@ Para activar la integración de TikTok Web Ads:
 6. **Pixel ID:** Ingresa el Pixel ID. Puedes generarlo u obtenerlo desde tu TikTok Ads Manager siguiendo las instrucciones detalladas <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">AQUÍ</Anchor>.
 7. **Token de acceso:** Ingresa el token de acceso. Para generarlo u obtenerlo, sigue <Anchor target="_blank" href="https://business-api.tiktok.com/portal/docs?id=1771100865818625">estas instrucciones</Anchor>
 8. **Limitar el uso de la información personal de los usuarios en anuncios de TikTok (CCPA):** Activa esta opción para habilitar el cumplimiento de las <Anchor target="_blank" href="/marketers/es/docs/send-opendsr-api-requests">leyes de protección de datos</Anchor>.
+
+   <div id="note" />
 
    > 📘 **Nota:**
    >
@@ -109,6 +121,8 @@ Para configurar postbacks de eventos in-app, realiza lo siguiente:
 6. En la columna **Para usuarios de** column, selecciona **Solo este partner** para asegurarte de que los postbacks de eventos in-app se envíen exclusivamente para los eventos realizados por usuarios provenientes de este partner.
 7. En la columna **incluyendo** column, selecciona si los eventos se enviarán con sus valores de ingresos. Consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks">Datos para incluir en los postbacks</Anchor>.
 
+   <div id="note-1" />
+
    > 📘 **Nota:**
    >
    > * Si estás configurando un evento de compra, establece la columna **incluyendo** en **Valores e ingresos**. Seleccionar cualquier otra opción hará que el postback falle.
@@ -123,6 +137,8 @@ Para configurar postbacks de eventos in-app, realiza lo siguiente:
 
 </Accordion>
 
+<div id="set-up-appsflyer-integration-in-tiktok-ads" />
+
 ## Configura la integración de AppsFlyer en TikTok Ads
 
 Realiza los siguientes pasos en TikTok Ads Manager.
@@ -132,6 +148,8 @@ Realiza los siguientes pasos en TikTok Ads Manager.
 <Accordion title="1. Configurar el tipo de campaña, objetivo y metas">
 
 Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como objetivo de campaña, o elegir «Download» si deseas optimizar para la instalación de la app en una aplicación móvil.
+
+<div id="warning" />
 
 > ❗️ **Advertencia**
 >
@@ -154,6 +172,8 @@ Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como ob
 2. Haz clic en **Crear un parámetro URL** para agregar parámetros a la URL (ya sea una URL de landing page o un enlace de atribución de AF).
 3. En **Parámetros personalizados**, haz clic en **Agregar parámetro**
 4. Asocia los parámetros de AppsFlyer con sus valores correspondientes en TikTok. Los parámetros que asignes dependerán de si la URL de destino apunta a una landing page, un enlace de atribución o una tienda de PC o consola.
+
+   <div id="landing-page-or-attribution-link" />
 
    #### Landing page o enlace de atribución
 
@@ -178,6 +198,8 @@ Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como ob
    ```
 
    Si el APK de tu app NO está alojado en Google Play Store, agrega el parámetro <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#af_r">`af_r`</Anchor> y asígnale la URL de la tienda, por ejemplo, `https://Add-your-store-url.com`
+
+   <div id="pc-or-console-store" />
 
    #### Tienda de PC o consola
 
@@ -210,6 +232,8 @@ Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como ob
    ```
    https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=tiktokweb_int&af_campaign_id=__campaign_id__&af_campaign=__campaign_name__&af_adset=__aid_name__&af_adset_id=__aid__&af_ad=__cid_name__&af_ad_id=__cid__&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello
    ```
+
+   <div id="note-2" />
 
    > 📘 **Nota:**
    >
@@ -252,6 +276,10 @@ Para configurar tus campañas de TikTok Ads con Smart Script, haz lo siguiente:
 1. Configura la plantilla para los enlaces de atribución de OneLink de la campaña. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">Cómo crear plantillas OneLink</Anchor>.
 2. Crea un Smart Script. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">Cómo crear un Smart Script de OneLink</Anchor>.
 
+   <div id="note-6" />
+
+   <div id="note-3" />
+
    > 📘 **Nota:**
    >
    > Las instrucciones a continuación se centran en los pasos específicos necesarios para configurar una campaña de TikTok Ads con Smart Script. Para una guía completa sobre cómo configurar campañas con Smart Script, consulta la sección <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">Cómo crear un OneLink Smart Script</Anchor> del artículo <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#how-to-create-a-onelink-smart-script">Configuración de OneLink Smart Script V2</Anchor>.
@@ -263,6 +291,8 @@ Para configurar tus campañas de TikTok Ads con Smart Script, haz lo siguiente:
 
      1. En **Mapeo para**, selecciona **Parámetro personalizado**.
      2. En **Parámetro URL saliente** y **Parámetros URL entrantes** introduce **ttclid**.
+
+     <div id="note-4" />
 
      > 📘 **Nota:**
      >
@@ -292,12 +322,16 @@ Para configurar tus campañas de TikTok Ads con Smart Script para landing pages 
 
 * Recuerda a tu desarrollador que incluya el parámetro entrante `ttclid` en la URL saliente.
 
+  <div id="note-5" />
+
   > 📘 **Nota:**
   >
   > Para mostrarse en los reportes de raw data de AppsFlyer, el parámetro entrante `ttclid` también debe mapearse (además del parámetro saliente `ttclid` ) a uno de los parámetros salientes `af_sub[1-5]` parámetros.
 
 
 </Accordion>
+
+<div id="create-a-landing-page-with-onelink-smart-banners" />
 
 ## Crear una landing page con OneLink Smart Banners
 
@@ -337,19 +371,27 @@ Para configurar tus campañas de TikTok Ads de Smart Banners, haz lo siguiente:
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Ver datos de atribución web-to-app
 
 Aunque los eventos de conversión basados en web se envían a TikTok con el PID original `tiktokweb_int`, se reportan en el dashboard de AppsFlyer y en los reportes de raw data con el PID `tiktokglobal_int`. Esto se aplica tanto a los eventos de conversión primarios como a los eventos de asistencia a la conversión.
 
 Esta vista unificada de reportes te permite analizar el rendimiento de las campañas web y de app en un solo lugar, incluidos reportes completos de costos web y móviles.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver en el dashboard
 
 Todas las atribuciones Web-to-app de TikTok aparecen bajo `tiktokglobal_int` en los dashboards Overview y Activity. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico de app y web dentro de tus datos de TikTok Ads.
 
+<div id="view-in-raw-data-and-api-reports" />
+
 ### Ver en reportes raw data y API
 
 Las exportaciones de raw data y las respuestas de la API incluyen el PID `tiktokglobal_int` en el campo `media_source` para la actividad web de TikTok. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url`, que muestra el PID `tiktokweb_int` utilizado durante la creación de la campaña web.
+
+<div id="measure-cost-clicks-and-impressions" />
 
 ## Medir costos, clics e impresiones
 
@@ -359,6 +401,8 @@ Puedes medir el costo, los clics y las impresiones de TikTok junto con tus datos
    Ve a la pestaña **Cost** o a la página **Cost Settings** y conecta mediante `tiktokglobal_int`. Para obtener instrucciones paso a paso, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data">Configurar la API de costo de ROI360 para medir datos de costo</Anchor>.
 2. Añade el ID de la campaña a la URL de tu página de destino:  
    Incluye `af_c_id` junto con toda la jerarquía de la campaña en la URL de la página de destino. Esto garantiza que el costo, los clics y las impresiones coincidan con tus datos de atribución web en el nivel más granular.
+
+<div id="note-7" />
 
 > 📘 **Advertencia**
 >

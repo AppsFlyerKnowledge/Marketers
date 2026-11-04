@@ -27,6 +27,8 @@ x-zendesk:
 * **A quién afecta**: propietarios de aplicaciones, agencias
 * **Dónde cambia**: Básicamente, la alineación de los datos con el día del evento de visualización del anuncio está activa en todos los reportes y las API, para todo tipo de integraciones de red. Consulta la siguiente tabla para ver dónde y cuándo entró en vigor la alineación.
 
+<div id="ad-revenue-reporting-change" />
+
 #### Cambio en el reporte de ingresos publicitarios
 
 | Método de reporte | Fecha de entrada en vigor (cuando se produce el cambio de fecha) | Fecha de publicación (fecha del anuncio) |
@@ -38,11 +40,15 @@ x-zendesk:
 | Data Locker (carpeta h=23) | Agosto 3, 2020 | Agosto 3, 2020 |
 | Pull API (para datos agregados) | 1 de septiembre de 2020 | 31 de agosto de 2020 |
 
+<div id="before-the-change" />
+
 ### Antes del cambio
 
 La fecha de los datos de ingresos publicitarios en la plataforma es el día posterior al propio evento de visualización del anuncio. Esto significa que, si un anuncio se muestra el lunes, los ingresos se muestran el martes. Los datos están disponibles en la plataforma el miércoles, después del procesamiento.
 
 Esto significa que la fecha de los ingresos por anuncios no está alineada con el engagement real de los usuarios. En algunos verticales, esta falta de alineación distorsiona significativamente los KPI.
+
+<div id="after-the-change" />
 
 ### Después del cambio
 
@@ -54,6 +60,8 @@ El cambio depende del tipo de integración entre la app y la red de monetizació
 * Los ingresos en la fecha de entrada en vigor incluyen los ingresos de dos días: los de la fecha de entrada en vigor y los del día anterior. Según el escenario de reportes, es posible que detectes un pico de ingresos ese día.
 
 Mira el ejemplo que sigue.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >

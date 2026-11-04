@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** Encuentra las guías de integración del SDK de AppsFlyer de 2016 en adelante, en formato PDF.
 
+<div id="overview" />
+
 ## Visión general
 
 A medida que pasa el tiempo, nuestras guías de integración del SDK también evolucionan. Se reemplazan por SDKs más recientes, ágiles, flexibles y avanzados tecnológicamente.
@@ -30,6 +32,8 @@ A medida que pasa el tiempo, nuestras guías de integración del SDK también ev
 En este artículo, puedes encontrar las guías de integración del SDK de AppsFlyer de  2016 o incluso anteriores, en formato PDF.
 
 **Si tus aplicaciones todavía usan uno de estos SDK muy (muy) antiguos, te recomendamos encarecidamente que actualices a la versión más reciente del SDK**, para <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Android</Anchor> o para <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">iOS</Anchor>.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -55,6 +59,8 @@ A continuación se muestran los enlaces a las guías de integración anteriores 
 * [Guía de integración del SDK de AppsFlyer para Android V.4.5.0](https://support.appsflyer.com/hc/article_attachments/360001397718)
 * [Guía de integración del SDK de AppsFlyer para Android V.4.5.1](https://support.appsflyer.com/hc/article_attachments/360001322017)
 * [Guía de integración del SDK de AppsFlyer para Android V.4.6.0](https://support.appsflyer.com/hc/article_attachments/360001322037)
+
+<div id="ios" />
 
 ## apps de iOS,
 

@@ -25,6 +25,8 @@ x-zendesk:
 
 ![ActividadDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
+<div id="activity-dashboard" />
+
 ## Dashboard de actividad
 
 * Contiene tráfico orgánico y no orgánico.
@@ -34,9 +36,13 @@ x-zendesk:
   * **Promedio:** A diario. Ejemplo: MAU, DAU promedio, MAU promedio
 * El filtro Geo se refiere a la ubicación del usuario en el momento de la instalación.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > ¿Quieres saber más sobre el dashboard de actividad? Consulta este breve <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">curso informativo en el portal de aprendizaje de AppsFlyer</Anchor>.
+
+<div id="dashboard-features-and-layout" />
 
 ## Características y diseño del dashboard
 
@@ -123,6 +129,8 @@ x-zendesk:
         Ingresos promedio por usuario activo diario.  
         Fórmula: Suma de (Ingresos del día [n] / DAU del día [n]) / Número de días.
 
+        <div id="h_01HHYHP1HFZBRTWB8MJ1F6XKZS" />
+
         > 📄 **Ejemplo: Cálculo del ARPDAU**
         >
         > | Día | Ingresos ($) por día | DAU | Ingresos diarios promedio por usuario ($) |
@@ -194,6 +202,8 @@ La pestaña ofrece una visión general del rendimiento de la actividad de la apl
 * Ganancias brutas mensuales: ingresos, costos, beneficios brutos
 
 </Accordion>
+
+<div id="specifications-and-limitations" />
 
 ## Especificaciones y limitaciones
 

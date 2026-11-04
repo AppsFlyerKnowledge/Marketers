@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-rockerbox" />
 
 ## Configuración de Rockerbox
 
@@ -47,10 +51,14 @@ x-zendesk:
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 Este selector debe estar activado mientras trabajes con el partner.  
 Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación del partner</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -59,11 +67,15 @@ Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/do
 **Para conectar tu cuenta de Rockerbox con AppsFlyer,** introduce tu ID de cuenta en **ID de cuenta de Rockerbox**.   
 Tu ID de cuenta de Rockerbox está disponible en la plataforma de Rockerbox, en **Settings** > **Account** > **General**.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 AppsFlyer puede enviar postbacks automáticos a Rockerbox tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los que se envían los postbacks para cada evento. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks predeterminados</Anchor>.
 
 Para enviar postbacks de cualquier usuario que descargue la aplicación a Rockerbox, selecciona **Todas las fuentes de medios, incluidas las orgánicas**.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 

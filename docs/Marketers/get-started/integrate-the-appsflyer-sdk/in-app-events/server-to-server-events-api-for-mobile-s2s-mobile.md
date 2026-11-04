@@ -31,6 +31,8 @@ x-zendesk:
 
 ![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## API de eventos de servidor a servidor para móviles
 
 Para apps de iOS, a partir de iOS 14, debes enviar el parámetro os (sistema operativo).
@@ -43,6 +45,8 @@ AppsFlyer completa los eventos S2S con:
 * Algunos valores de atribución de instalación de AppsFlyer, como la hora de instalación y la fuente de medios.
 
 Para enviar eventos a través de API, indica a tu desarrollador que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">instrucciones de API de eventos de servidor a servidor</Anchor>.
+
+<div id="populating-parameters" />
 
 ## Completando parámetros
 
@@ -181,6 +185,8 @@ AppsFlyer incluye `ua` y `ip` automáticamente para los eventos notificados a tr
 >
 > Para ser medido en <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">Incrementality</Anchor>, los eventos S2S deben incluir el ID de publicidad en su payload (IDFA para iOS, GAID para Android).
 
+<div id="increasing-the-volume-of-data-transactions" />
+
 ## Aumentar el volumen de transacciones de datos
 
 Con el uso de un escalado gradual, AppsFlyer puede gestionar un alto volumen de transacciones por segundo (TPS) utilizando soluciones de auto-escalado. Por ejemplo:
@@ -193,6 +199,8 @@ Con el uso de un escalado gradual, AppsFlyer puede gestionar un alto volumen de 
   * 00:04:00 - aumentar a 18K TPS
   * …
 * Implementa un mecanismo de reintento cuando se reciban errores.
+
+<div id="troubleshooting" />
 
 ## Solución de problemas
 

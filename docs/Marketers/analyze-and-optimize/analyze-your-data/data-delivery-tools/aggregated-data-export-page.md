@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Descarga reportes agregados de valor de vida útil (LTV) filtrados por fecha de atribución y fuente de medios.
 
+<div id="aggregate-data-reports" />
+
 ## Reportes de datos agregados
 
 Los reportes de <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">adquisición de usuarios</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview#retargeting">retargeting</Anchor> tienen estas características:
@@ -37,6 +39,8 @@ Los reportes de <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-
 * Los reportes pueden contener hasta 200 000 filas.
 * <Anchor target="_blank" href="/marketers/es/docs/report-generation-quotas-rate-limitations">Limitaciones de velocidad</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### Descargar reportes de datos agregados
 
 **Para descargar un informe:**
@@ -45,6 +49,8 @@ Los reportes de <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-
 2. [Opcional] Selecciona una fuente de medios
 3. Selecciona el rango de fechas del evento de atribución.
 4. Selecciona un reporte y haz clic en **Descargar.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

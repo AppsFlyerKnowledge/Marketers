@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** cómo enmascarar las direcciones IP de los usuarios de la app en los Reportes de raw data de AppsFlyer y en los postbacks enviados a Partners.
 
+<div id="ip-masking" />
+
 ## Enmascaramiento de IP
 
 Al activar el enmascaramiento de IP:
@@ -30,10 +32,14 @@ Al activar el enmascaramiento de IP:
 * Las direcciones IP de los usuarios no aparecen en los Reportes de raw data ni se proporcionan mediante postbacks a Partners
 * El campo de dirección IP se rellena con el valor 1.1.1.1
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > * Las instalaciones que se produjeron antes de activar el enmascaramiento de IP no se enmascaran
 > * El <Anchor target="_blank" href="/marketers/es/docs/meta-ads-aggregate-event-measurement-aem-for-ios#compartición-de-datos-de-aem">uso compartido de datos de AEM</Anchor> para anuncios de Meta no es compatible ni con eventos de servidor a servidor ni con eventos de SDK cuando el enmascaramiento de IP está activado. Esto significa que los datos no se comparten con Anuncios de Meta.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -65,6 +71,8 @@ Al activar el enmascaramiento de IP:
 > | 9 de enero | Desactivado | Usuario\_A 192.0.2.1  <br />Usuario\_B 1.1.1.1 |
 > | 15 de enero | Desactivado | Usuario\_A 192.0.2.1  <br />Usuario\_B 1.1.1.1  <br />Usuario\_C 203.0.113.1 |
 
+<div id="turn-on-ip-masking" />
+
 ## Activar el enmascaramiento de IP
 
 El enmascaramiento de IP se configura por app y afecta a las instalaciones de todas las fuentes.
@@ -74,6 +82,8 @@ El enmascaramiento de IP se configura por app y afecta a las instalaciones de to
 1. En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación.**
 2. Desplázate hasta **Configuración avanzada**.
 3. Activa **Enmascarar direcciones IP**.
+
+<div id="ip-masking-in-raw-data-reports" />
 
 ## Enmascaramiento de IP en reportes de raw data
 

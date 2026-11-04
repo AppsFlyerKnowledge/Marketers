@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Descripción general de Protect360
 
 * Protege contra el fraude de atribución. Consiste en herramientas dinámicas capaces de detectar fraudes y bloquear la atribución fraudulenta.
@@ -117,6 +119,8 @@ La tabla a continuación describe los diversos tipos de instalaciones y eventos 
 
 Detección del fraude de Protect360 y sus resultados
 
+<div id="using-protect360" />
+
 ## Uso de Protect360
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ También puedes usar los datos de Protect360 para conciliar con las ad network y
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 <div id="traits-and-limitations::a07033c3" />
@@ -207,6 +213,8 @@ También puedes usar los datos de Protect360 para conciliar con las ad network y
 Características y limitaciones
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## Preguntas frecuentes y consejos
 
@@ -252,9 +260,13 @@ Consejos antifraude avanzados
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > ¿Quieres entender más sobre la protección contra el fraude? Consulta este curso breve e informativo en el <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">Portal de Aprendizaje de AppsFlyer</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

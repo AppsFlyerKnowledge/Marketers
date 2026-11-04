@@ -29,11 +29,15 @@ x-zendesk:
 ---
 > **En resumen:** De un vistazo: Aprende sobre la ventana de reatribución, durante la cual las reinstalaciones no se atribuyen como instalaciones nuevas.
 
+<div id="re-attribution-window" />
+
 ## Ventana de reatribución
 
 La ventana de reatribución es una ventana de tiempo que comienza la primera vez que un usuario instala la aplicación y continúa durante la duración establecida por el anunciante (por defecto 90 días). Durante la ventana de reatribución, las reinstalaciones de la aplicación no se registran como nuevas instalaciones y no generan un postback de nueva instalación a menos que se originen en una campaña de **retargeting**.
 
 [![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+
+<div id="setting-the-re-attribution-window" />
 
 ### Configuración de la ventana de reatribución
 
@@ -54,6 +58,8 @@ Las instalaciones se evalúan en relación con la configuración en el momento d
   * La ventana de reatribución cambia el 2 de septiembre.
   * Una reinstalación el 15 de octubre es una reinstalación debido a la ventana actual de 90 días.
   * Una reinstalación el 15 de diciembre es una instalación nueva porque han transcurrido más de 90 días desde la instalación el 1 de septiembre.
+
+<div id="re-attribution-window-use-cases" />
 
 ## Casos de uso de la ventana de reatribución
 

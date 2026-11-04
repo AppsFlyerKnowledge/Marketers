@@ -31,9 +31,13 @@ x-zendesk:
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > El SDK web de AppsFlyer para Smart Banners v1 quedó en desuso el 8 de noviembre de 2023. Para mostrar Smart Banners en tu sitio web, necesitas actualizar a la v2. <Anchor target="_blank" href="/marketers/es/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">Saber más</Anchor>
+
+<div id="smart-banners" />
 
 ## Banners inteligentes
 
@@ -87,6 +91,8 @@ Aproximadamente 20 minutos.
 
 ---
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > Mark trabaja como marketer para el exitoso servicio de entrega de comida llamado "Feed Me".
@@ -99,9 +105,13 @@ Aproximadamente 20 minutos.
 >
 > AppsFlyer **atribuye el clic/instalación a la fuente de medios y la campaña definidas por Mark**.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > Utiliza Smart Banners de AppsFlyer o el Smart Banner de la aplicación de Safari de iOS, pero no ambos. El uso de ambos puede causar problemas de visualización en tu sitio web móvil y dar lugar a discrepancias de atribución.
+
+<div id="setup" />
 
 ## Configuración
 
@@ -113,6 +123,8 @@ Completa los siguientes procedimientos para configurar un Smart Banner que:
 <div id="1-website-workplace-setup" />
 
 <Accordion title="1. Configuración del workplace del sitio web">
+
+<div id="prepare-your-mobile-site-to-display-smart-banners-for-the-first-time" />
 
 #### Para preparar tu sitio móvil para mostrar Smart Banners por primera vez
 
@@ -126,6 +138,8 @@ Completa los siguientes procedimientos para configurar un Smart Banner que:
    * Para agregar el código a través de otras plataformas o para realizar cambios en el código según las necesidades (incluyendo agregar parámetros, deep linking, ocultar el banner o integrar la PBA con Smart Banners), consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_banner_v2">Implementación de código de sitio web de Smart Banners para desarrolladores.</Anchor>
 7. [opcional] Copia la **clave web**. (Esta clave ya existe como parte del fragmento de código).
 8. Haz clic en **Continuar**.
+
+<div id="to-create-website-workplaces-after-the-first-time" />
 
 #### Para crear workplaces del sitio web después de la primera vez
 
@@ -186,6 +200,8 @@ Los grupos de banners contienen uno o más banners. Desde aquí, podrás:
 9. [Recomendado] Configura el parámetro de atribución por defecto **Nombre del canal** para atribuir todas las instalaciones procedentes del Smart Banner al canal especificado. Esto te permite agregar información de varias fuentes de medios bajo el mismo canal en el **reporte de cohortes**, el **dashboard general**, el **reporte de retención** y más.
 10. <span id="2-banner-group-setup-step10"></span>[Opcional] Activa el **Retargeting** si planeas usar el grupo de banners para registrar los re-engagements realizados por los usuarios que hacen clic en el banner. Para obtener más información sobre el Retargeting, consulta la <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">guía de atribución de retargeting</Anchor>.
 
+    <div id="important-1" />
+
     > 🚧 **Importante**
     >
     > Para que el retargeting funcione, también necesitas:
@@ -227,6 +243,8 @@ Los grupos de banners contienen uno o más banners. Desde aquí, podrás:
 1. Haz clic en **Crear grupo de banners**.
 2. [Opcional] Para volver a editar el grupo de banners, pasa el cursor por encima de **Targeting y comportamiento** y haz clic en **Editar**.
 
+<div id="example-1" />
+
 > 📄 **Ejemplo**
 >
 > Mark es el marketer de un servicio de entrega de comida llamado "Feed Me". Decide crear una campaña para la venta de ciruelas de la aplicación. Mark decide usar un envío masivo de SMS, así como redes de publicidad y Google para la campaña.
@@ -248,6 +266,8 @@ Los grupos de banners contienen uno o más banners. Desde aquí, podrás:
 > * Llegan a la aplicación Feed Me, la descargan y la instalan.
 > * Al iniciar la aplicación, son dirigidos a la venta de ciruelas.
 > * Se atribuyen a las fuentes de medios correctas que los llevaron al sitio móvil de Feed Me.
+
+<div id="targeting--behavior" />
 
 #### Targeting y comportamiento
 
@@ -300,6 +320,8 @@ El panel Targeting y comportamiento te muestra la configuración que establecist
 5. Tras finalizar y guardar la creatividad nueva, el estado del banner pasa a activo. Usa el conmutador de **Estado** para cambiar entre los estados **Activo** y **Pausado**.
 6. Haz clic en **Guardar todo** para guardar tu trabajo o en **Guardar todo y cerrar** para guardar tu trabajo y cerrar la página de configuración del banner.
 
+<div id="example-2" />
+
 > 📄 **Ejemplo**
 >
 > Para obtener consejos y trucos, consulta nuestra <Anchor target="_blank" href="https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing">hoja de referencia sobre Smart Banners</Anchor>.
@@ -322,6 +344,8 @@ Una vez que la creatividad está lista, es el momento de probarla **antes** de 
 4. Haz clic en **Editar creatividad** para volver a la configuración de la creatividad, o haz clic en **Listo** para guardar la creatividad.
 
 </Accordion>
+
+<div id="view-banner-performance" />
 
 ## Para ver el rendimiento del banner:
 
@@ -375,6 +399,8 @@ Puedes ver los datos de rendimiento de los últimos 7 días para cualquier banne
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Información adicional
 
 <div id="banner-group-display-logic" />
@@ -403,6 +429,8 @@ Si la respuesta a ambas preguntas es sí, es decir, hay reglas, y el usuario cal
 Puedes realizar pruebas A/B de los banners comparando su rendimiento en el dashboard de rendimiento. Para obtener datos adicionales relacionados con la atribución, se recomienda agregar el `af_adset` , `af_ad` u otros parámetros de atribución (excepto`pid`,`c`, y`channel`) con un valor único para cada creatividad de banner o grupo de banners. Utiliza esos parámetros para comparar el rendimiento de cada grupo de banners cuando visualices datos en los dashboards y reportes de AppsFlyer.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 
@@ -498,6 +526,8 @@ Ten en cuenta que varios cambios en el Smart Banner pueden afectar su compatibil
 N.º Los datos de atribución no se eliminan si se elimina un Smart Banner.
 
 </Accordion>
+
+<div id="troubleshooting--traits-and-limitations" />
 
 ## Solución de problemas, características y limitaciones
 

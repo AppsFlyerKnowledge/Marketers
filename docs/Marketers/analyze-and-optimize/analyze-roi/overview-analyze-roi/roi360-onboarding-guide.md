@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
 
+<div id="about-roi360" />
+
 ## Sobre ROI360
 
 ROI360 es un conjunto de herramientas únicas para reportes de costos e ingresos que te ofrece datos precisos y actualizados. Gracias a la combinación de datos de costos e ingresos, podrás obtener una visión completa de tu retorno publicitario (ROAS) y de inversión (ROI), permitiéndote optimizar y mejorar.

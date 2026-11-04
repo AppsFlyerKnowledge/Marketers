@@ -24,6 +24,8 @@ x-zendesk:
 
 > **De un vistazo:** Permite que los partners reciban información de ingresos publicitarios de redes de mediación para que puedan optimizar sus campañas de UA (adquisición de usuarios). **Nota**: Esto requiere una suscripción avanzada a ROI360.
 
+<div id="about-sharing-ad-revenue-data-with-partners" />
+
 ## Sobre el uso compartido de datos de ingresos publicitarios con partners
 
 Puedes permitir que las ad networks responsables de la adquisición de usuarios reciban datos de ingresos publicitarios de las redes de medios. Los partners pueden utilizar esta información para optimizar sus campañas de UA.
@@ -39,6 +41,8 @@ La siguiente tabla compara las 2 soluciones para compartir datos de ingresos pub
 | --- | --- | --- | --- | --- |
 | Señales UA | A diario | Datos precisos y completos, comúnmente utilizados para la optimización D3 y D7. | <ul><li>Nivel de impresión o nivel de dispositivo</li><li>Si ambos están configurados, se envían datos a nivel de dispositivo</li></ul> | ROI360 Avanzado |
 | Devoluciones de mensajes | En tiempo real | Datos frescos, comúnmente utilizados para la optimización D0 y D1. | Nivel de impresión | ROI360 Avanzado |
+
+<div id="procedures" />
 
 ## Procedimientos
 
@@ -86,6 +90,8 @@ Es posible que desees trabajar con ad networks que puedan recibir señales de UA
 <Accordion title="Postbacks de eventos de ingresos publiciarios para ad networks">
 
 Puedes configurar los postbacks de los ingresos por publicidad para las ad networks. Esto significa que las ad networks responsables de la adquisición de usuarios pueden recibir datos en tiempo real de las redes de medios sobre los ingresos por publicidad y usarlos para optimizar las campañas de UA de sus clientes. 
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -140,6 +146,8 @@ Puedes configurar los postbacks de los ingresos por publicidad para las ad netwo
 * Mediación personalizada
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

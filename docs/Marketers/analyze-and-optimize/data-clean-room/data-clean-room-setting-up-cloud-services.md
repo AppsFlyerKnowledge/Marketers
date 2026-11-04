@@ -24,6 +24,8 @@ x-zendesk:
 
 > **De un vistazo:** Configura uno o más almacenes de datos (BigQuery, Snowflake) y/o buckets de almacenamiento en la nube (Amazon S3, GCS) para compartir datos con Data Clean Room y recibir reportes.
 
+<div id="overview" />
+
 ## Visión general
 
 La preparación para usar Data Clean Room (DCR) implica configurar:
@@ -36,6 +38,8 @@ Crear una conexión entrante o saliente es un proceso de 2 pasos:
 * **Paso 1:** Usa las interfaces de tus servicios en la nube seleccionados para prepararlos para su uso con DCR (este artículo).
 * **Paso 2:** Usa la plataforma AppsFlyer para conectarlos a DCR. (Consulta <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections">Data Clean Room: trabajar con conexiones</Anchor>).
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Consulta <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#requisitos-de-los-datos-de-las-fuentes">Data Clean Room: trabajar con fuentes</Anchor> para obtener información detallada sobre los requisitos de los datos de origen:
@@ -43,6 +47,8 @@ Crear una conexión entrante o saliente es un proceso de 2 pasos:
 > * Formato de los datos *(para todas las fuentes)*
 > * Columnas de la tabla *(para fuentes en almacenes de datos)*
 > * Nombre y formato del archivo *(para fuentes en buckets de almacenamiento en la nube)*
+
+<div id="supported-cloud-services" />
 
 ### Servicios en la nube compatibles
 
@@ -53,14 +59,20 @@ Se admiten dos tipos de servicios en la nube para las conexiones entrantes y sal
 
 Puedes usar uno o cualquier combinación de estos servicios para conexiones entrantes y salientes.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * Si vas a utilizar varias fuentes personalizadas para un solo reporte, deben ubicarse en buckets de almacenamiento en la nube.
 > * Es muy común usar el mismo bucket de almacenamiento en la nube en Amazon S3 o GCS tanto para conexiones entrantes como salientes. Asegúrate de seguir las [instrucciones específicas para esa configuración](/docs/data-clean-room-setting-up-cloud-services#configuración-del-mismo-bucket-de-almacenamiento-en-la-nube-para-conexiones-entrantes-y-salientes).
 
+<div id="setting-up-cloud-services-for-inbound-connections" />
+
 ## Configuración de servicios en la nube para conexiones entrantes
 
 Prepara tus servicios en la nube seleccionados para su uso con conexiones entrantes de DCR, de acuerdo con las instrucciones de las siguientes pestañas.
+
+<div id="data-warehouses--bigquery-and-snowflake" />
 
 ### Almacenes de datos: BigQuery y Snowflake
 
@@ -128,6 +140,8 @@ Prepara tus servicios en la nube seleccionados para su uso con conexiones entran
 9. Haz clic en el botón **Create Share (Crear compartición)** .
 
 </Accordion>
+
+<div id="cloud-storage-buckets--amazon-s3-and-gcs" />
 
 ### Buckets de almacenamiento en la nube: Amazon S3 y GCS
 
@@ -235,6 +249,8 @@ Puedes utilizar uno o más buckets para cargar datos en DCR (en Amazon S3, GCS o
 
 </Accordion>
 
+<div id="setting-up-cloud-services-for-outbound-connections" />
+
 ## Configuración de servicios en la nube para conexiones salientes
 
 DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>.
@@ -242,6 +258,8 @@ DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor
 * **Nota:** Recibir reportes de DCR no requiere una suscripción Premium a Data Locker. Si estás interesado en recibir otros reportes de AppsFlyer a través de Data Locker, comunícate con tu CSM o envía un correo electrónico a [hello@appsflyer.com](mailto:hello@appsflyer.com).
 
 Tus reportes de DCR se pueden entregar a una o más ubicaciones de tus servicios en la nube (independientemente de que utilices o no los mismos servicios para las conexiones entrantes). Prepáralos para su uso con conexiones salientes de acuerdo con las instrucciones de las siguientes pestañas.
+
+<div id="data-warehouses--bigquery-and-snowflake-1" />
 
 ### Almacenes de datos: BigQuery y Snowflake
 
@@ -287,6 +305,8 @@ El procedimiento para preparar Snowflake para conexiones salientes se completa e
 
 </Accordion>
 
+<div id="cloud-storage-buckets--amazon-s3-and-gcs-1" />
+
 ### Buckets de almacenamiento en la nube: Amazon S3 y GCS
 
 El procedimiento para preparar buckets de almacenamiento en la nube para conexiones salientes es muy similar al de preparación para [conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#configuración-de-servicios-en-la-nube-para-conexiones-entrantes) (incluyendo las instrucciones relevantes para ambos servicios de almacenamiento en la nube).
@@ -312,6 +332,8 @@ Sigue las instrucciones para crear un [bucket de GCS para conexiones entrantes](
 
 </Accordion>
 
+<div id="setting-up-the-same-cloud-storage-bucket-for-both-inbound-and-outbound-connections" />
+
 ## Configuración del mismo bucket de almacenamiento en la nube para conexiones entrantes y salientes
 
 Como se mencionó anteriormente, es común usar el mismo bucket en Amazon S3 o GCS para las conexiones entrantes y salientes.
@@ -327,9 +349,13 @@ Las instrucciones para ambos escenarios se incluyen en las pestañas a continuac
 
 <Accordion title="Amazon S3">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections" />
+
 #### Creación de un nuevo bucket para conexiones entrantes/salientes
 
 Sigue las instrucciones para crear un [bucket de Amazon S3 para conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#amazon-s3-inbound) (sin cambios en ese procedimiento).
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker" />
 
 #### Modificación de un bucket existente que se usaba anteriormente solo para Data Locker
 
@@ -380,11 +406,15 @@ Modificar un bucket existente que anteriormente usaste solo para Data Locker req
 
 <Accordion title="GCS">
 
+<div id="creating-a-new-bucket-for-inboundoutbound-connections-1" />
+
 #### Creación de un nuevo bucket para conexiones entrantes/salientes
 
 Sigue las instrucciones para crear un [bucket de GCS para conexiones entrantes](/docs/data-clean-room-setting-up-cloud-services#gcs-inbound). Modifica el paso 4 de ese procedimiento para introducir las siguientes **2 cuentas** en la casilla **New members (Nuevos miembros)**:  
 `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`  
 `af-data-delivery@af-raw-data.iam.gserviceaccount.com`
+
+<div id="modifying-an-existing-bucket-previously-used-only-for-data-locker-1" />
 
 #### Modificación de un bucket existente que se usaba anteriormente solo para Data Locker
 

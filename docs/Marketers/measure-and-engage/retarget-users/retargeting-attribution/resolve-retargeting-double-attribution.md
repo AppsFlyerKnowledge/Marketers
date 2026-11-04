@@ -26,6 +26,8 @@ x-zendesk:
 
 ![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
 
+<div id="overview" />
+
 ## Visión general
 
 En el modelo de atribución de AppsFlyer, los eventos que ocurren como resultado del engagement de usuario con una campaña de retargeting se atribuyen tanto a la fuente de medios que motiva la instalación como a la fuente de medios que motiva el re-engagement.
@@ -47,6 +49,8 @@ Para explicarlo mejor, la tabla a seguir contiene un escenario de cómo se atrib
   * [Mejor opción] **conversion\_type**: instalación o re-engagement.
   * is\_retargeting: si es cierto, los datos se relacionan con la campaña de retargeting.
 
+<div id="attribution-relative-to-the-re-engagement-window" />
+
 #### Atribución relativa a la ventana de re-engagement
 
 | Fuente de medios | Antes del re-engagement | Durante el re-engagement | Después del re-engagement |
@@ -54,15 +58,21 @@ Para explicarlo mejor, la tabla a seguir contiene un escenario de cómo se atrib
 | Adquisición de usuarios | Principal<br /><br />is\_primary: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) | Secundario<br /><br />is\_primary: False<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: False) | Principal<br /><br />is\_primary: True<br /><br />conversion\_type: install<br /><br />(is\_retargeting: False) |
 | Reorientación | N/D | Principal<br /><br />is\_primary: True<br /><br />conversion\_type: re-engagement<br /><br />(is\_retargeting: True) | N/D |
 
+<div id="support-for-dashboard-view-types" />
+
 ## Compatibilidad con los tipos de vista del dashboard
 
 Algunos dashboards y reportes de cohortes contienen múltiples opciones de vista unificadas, adquisición de usuarios y retargeting. Estos tipos de vista emplean una lógica similar a la empleada en los raw data.
 
 ![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
 
+<div id="data-filtering-by-view-type-using-the-conversion_type-field" />
+
 #### Filtrado de datos por tipo de vista mediante el campo conversion\_type
 
 <table><thead><tr><th>Tipo de vista</th><th>tipo_de_conversión</th><th>es_primario</th><th>Atribución</th></tr></thead><tbody><tr><td rowspan="2">Adquisición de usuarios</td><td>instalar</td><td>True o False</td><td>Atribuyen eventos de la UA a la fuente de medios de UA</td></tr><tr><td>re-engagement</td><td>Falso</td><td>Eventos de retargeting atribuidos a la fuente de medios de UA.</td></tr><tr><td>Reorientación</td><td>Re-engagement o reatribución</td><td>Verdadero</td><td>Eventos de retargeting atribuidos a la fuente de medios de retargeting</td></tr><tr><td>Unificado</td><td>instalación o re-engagement</td><td>Verdadero</td><td>Todos los eventos atribuidos a la fuente de medios de último toque</td></tr></tbody></table>
+
+<div id="how-do-i-identify-double-attributed-retargeting-events-in-user-acquisition-in-app-reports" />
 
 ## ¿Cómo identifico eventos de retargeting de doble atribución en los reportes de adquisición de usuarios en la aplicación?
 

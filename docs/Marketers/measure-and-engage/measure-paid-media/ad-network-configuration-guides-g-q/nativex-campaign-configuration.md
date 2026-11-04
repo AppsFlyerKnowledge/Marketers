@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1" width="150px" />
 
+<div id="setting-up-nativex" />
+
 ## Configuración de NativeX
 
 **Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, contacta con el Partners para abrir una antes de configurar la integración.
@@ -50,6 +52,8 @@ La ventana de configuración de NativeX incluye 4 pestañas activas: Integració
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
@@ -65,11 +69,15 @@ NativeX se conecta con AppsFlyer a través de un ID de App w3i único. Si todav�
 
 Activa esta opción si quieres atribuir instalaciones view-through desde NativeX. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a NativeX después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir la **fuente de los usuarios** que permite enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para los eventos procedentes únicamente de usuarios atribuidos a NativeX.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -99,6 +107,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a N
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -118,6 +128,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a NativeX.
@@ -126,9 +138,13 @@ Este control deslizante te permite establecer el **tiempo máximo del clic a la 
 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Haz clic en el enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a NativeX para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -139,6 +155,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 **Parámetro de enlace de atribución:** af\_viewthrough\_lookback
 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución view-through aquí</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 
@@ -169,6 +187,8 @@ Los datos de ingresos por publicidad no son compatibles con NativeX.
 En esta pestaña, puedes seleccionar los permisos que quieres otorgar a NativeX, tanto si el partner actúa como ad network, agencia o incluso ambas cosas. Ten en cuenta que, aunque la atribución esté desactivada para NativeX, la pestaña Permisos sigue activa y puedes otorgar el control a NativeX.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

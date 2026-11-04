@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Los anunciantes y las agencias pueden consultar el estado de las integraciones de costos e ingresos por publicidad.
 
+<div id="cost-and-ad-revenue-integration-status" />
+
 ## Estado de la integración de costos e ingresos por publicidad
 
 * El dashboard muestra el estado operativo actual de tus integraciones de costo/ingresos por publicidad.
@@ -36,6 +38,8 @@ x-zendesk:
 * En las integraciones que requieren acciones correctivas, se muestra la acción requerida.
 * Para ver el estado de costos e ingresos por anuncios, en AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Estado de costos e ingresos por anuncios**.
 * La imagen y la tabla siguientes desglosan los componentes del dashboard.
+
+<div id="cost--ad-revenue-status-dashboard" />
 
 #### Dashboard de estado de costo e ingresos por anuncios
 

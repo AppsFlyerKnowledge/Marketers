@@ -25,11 +25,15 @@ x-zendesk:
 
 > En resumen: Importe segmentos de audiencia predefinidos desde sus sistemas internos (como BI y CRM) a AppsFlyer Audiences, lo que le permite utilizar Audiences para conectar y mantener estos segmentos con sus socios publicitarios.
 
+<div id="why-import-audiences" />
+
 ## ¿Por qué importar audiencias?
 
 En ciertas ocasiones, puede que ya tenga segmentos de audiencia predefinidos en sus sistemas internos. Importar estas audiencias (como listas de identificadores de dispositivos y/o usuarios) a AppsFlyer le permite usar Audiences como el punto central para conectar y mantener todos sus segmentos de audiencia con sus socios publicitarios. Además, le ofrece la posibilidad de sacar el máximo partido de otras funciones de Audiences, como la coincidencia de identificadores, el enriquecimiento de datos y las métricas de campañas conectadas.
 
 Considere los siguientes ejemplos:
+
+<div id="examples" />
 
 > 📄 **Ejemplos**
 >
@@ -52,9 +56,13 @@ Considere los siguientes ejemplos:
 > 2. Conecte la audiencia con los socios con los que desea ejecutar campañas.
 > 3. Configure campañas con los socios pertinentes para llegar a estos usuarios adecuadamente.
 
+<div id="audiences-import-v20" />
+
 ## Importación de audiencias V2.0
 
 Este artículo describe los conceptos y procedimientos relacionados con la nueva función de importación de Audiencias V2.0 (con opciones para importar mediante CSV y API).
+
+<div id="imported-audience-types" />
 
 ## Tipos de audiencias importadas
 
@@ -72,12 +80,16 @@ Al importar una audiencia, se le asigna uno de dos tipos, lo que determina cómo
 * Se carga a socios sin tener en cuenta la política de identificadores de usuario de su cuenta (es decir, todos los identificadores importados se cargan a los socios).
 * Se puede importar utilizando la función de importación V2.0 (descrita en este artículo).
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * Todas las audiencias existentes a partir del 23 de noviembre de 2021 **se designan como audiencias tal como están y no se pueden cambiar a audiencias estándar.** Puede seguir actualizando estas audiencias según sea necesario utilizando la función de importación V2.0 (descrita en este artículo).
 > * Puedes tener hasta 500 audiencias importadas activas al mismo tiempo.
 > * Solo un administrador puede designar una nueva audiencia importada como una audiencia tal como está.
 > * Al importar una audiencia con CUID como identificador, AppsFlyer debe haber recibido la asociación de CUID en el momento de la instalación (no solo en eventos post-instalación) para garantizar una asociación completa con los dispositivos relevantes y un enriquecimiento exitoso con identificadores de dispositivos (es decir, GAID, IDFA). <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Más información</Anchor>
+
+<div id="audience-import-procedures" />
 
 ## Procedimientos de importación de audiencias
 
@@ -99,7 +111,11 @@ Prepara un archivo CSV con las siguientes especificaciones:
 
 <Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
+<div id="identifier-hash" />
+
 #### hash del identificador
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -185,6 +201,8 @@ Tu audiencia ahora es visible en el panel de Audiencias y se ha importado y cone
 
 Tu audiencia se ha actualizado usando el archivo CSV. Sin embargo, tenga en cuenta que la lista de audiencia revisada aún no se ha cargado para los socios, ya que las audiencias importadas se procesan con una <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#eod">actualización diaria de datos</Anchor>.
 
+<div id="error-messages" />
+
 ### Mensajes de error
 
 | Mensaje | Causa | Qué hacer |
@@ -243,6 +261,8 @@ La API de Importación de Audiencia se usa para agregar o eliminar dispositivos 
 12. Prepara la solicitud de API, incluyendo los identificadores de usuario/dispositivo, y envíala a AppsFlyer.
 
 **Nota:** Al importar mediante la API, la audiencia tardará 24 horas en actualizarse.
+
+<div id="response-codes" />
 
 ### Códigos de respuesta
 

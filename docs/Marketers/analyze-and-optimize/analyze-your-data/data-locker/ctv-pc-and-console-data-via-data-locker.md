@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En resumen:** Reportes multiplataforma (plataformas de CTV, PC y consola) disponibles a través de AppsFlyer. **Nota**: En el caso de las plataformas con sistemas operativos Android e iOS, la disponibilidad de los reportes de <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">datos agregados</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">raw data</Anchor> es la misma que para las aplicaciones móviles.
 
+<div id="cross-platform-reports" />
+
 ## Reportes multiplataforma
 
 Reportes multiplataforma
@@ -31,6 +33,8 @@ Reportes multiplataforma
 * Contiene datos para todas las fuentes de medios, tanto orgánicas como no orgánicas.
 * Las descripciones de los campos del reporte están en el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">diccionario de campos de raw data</Anchor>.
 
+<div id="report-types-and-availability" />
+
 ### Tipos de reportes y disponibilidad
 
 | Reporte | Observaciones | Muestra del reporte |
@@ -39,6 +43,8 @@ Reportes multiplataforma
 | Eventos in-app multiplataforma | Requiere una suscripción a Data Locker | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrOchvROUOrhb4JuHTT1IqGXD94rhsu2sQ6v_i9bGoavSUXV7IU6kktxTEYHeIPXw4XujZY2aUEzRh/pub?output=csv">Descargar</Anchor> |
 | Sesiones multiplataforma | Requiere una suscripción a Data Locker |  |
 | Impresiones multiplataforma | <ul><li>Incluye datos de impresiones de enlaces OneLink multiplataforma.</li><li>No requiere una suscripción a Data Locker</li></ul> | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_d8Tf0AzwOybJQG1L7d42l7LhMO5SuAcHwguRcV32mdvTZVSk6U-jTVuYFfQtTCo0rte-k7pDeOqi/pub?gid=964292901&single=true&output=csv">Descargar</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

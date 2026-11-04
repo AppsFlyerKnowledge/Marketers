@@ -19,18 +19,26 @@ x-zendesk:
   section_id: 26230608274065
   url: https://support.appsflyer.com/hc/es/articles/45669216166417
 ---
+<div id="at-a-glance" />
+
 ## Resumen general
 
 Conecta tus audiencias con partners de medios para activar tus campañas personalizadas y obtener los máximos resultados.
+
+<div id="about-partner-connections" />
 
 ## Acerca de las conexiones de partners
 
 Las conexiones de Partners de <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-guide">Data Collaboration Platform (DCP)</Anchor> te permiten conectar de forma segura tus audiencias de DCP con Partners de medios compatibles, para que puedas activar campañas personalizadas en sus plataformas. Una vez que un Partner está conectado a una audiencia, DCP entrega la audiencia según el flujo de actualización y activación configurado, utilizando los datos de fuente disponibles más recientes y los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#permisos-de-uso-compartido">permisos</Anchor>.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > * La audiencia se envía para su activación como una lista de identificadores de usuario. Cada envío representa una instantánea completa de la audiencia en el momento de la exportación.
 > * Las actualizaciones de audiencia no son continuas ni en tiempo real. En su lugar, se activan según la política definida, basada en una cadencia, que comprueba si los datos de la fuente se han actualizado. Cada actualización genera y envía la lista de audiencias a los destinos seleccionados.
+
+<div id="supported-partner-connections" />
 
 ## Conexiones de Partners compatibles
 
@@ -79,6 +87,8 @@ Después, DCP carga las audiencias automáticamente a través del enlace del Par
 * **App Campaigns**   
   App Campaigns para instalaciones (ACi) usan las audiencias subidas solo como señales de optimización, mientras que las campañas de re-engagement (ACe) admiten targeting determinista y son el método principal de activación de audiencias.
 
+<div id="app-campaigns-aci--ace-guidelines" />
+
 #### Directrices de campañas de aplicaciones (ACi & ACe)
 
 Las campaigns de apps de Google (antes conocidas como Universal App Campaign - UAC) se comportan de forma distinta a otros tipos de campaña cuando usan audiencias de Customer Match:
@@ -101,6 +111,8 @@ Los anunciantes pueden:
 * Ejecutar campañas del ciclo de vida (upsell, cross-sell, retención)
 
 Las listas de audiencias de DCP se usan como criterio principal de targeting, igual que en otras plataformas.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -425,6 +437,8 @@ Las audiencias de DCP en The Trade Desk se usan para el targeting directo en tod
 * Actualización de audiencias recomendada: diaria o semanal, según el caso de uso de activación y la volatilidad del segmento
 
 </Accordion>
+
+<div id="create-a-partner-connection" />
 
 ## Crear una conexión de partner
 

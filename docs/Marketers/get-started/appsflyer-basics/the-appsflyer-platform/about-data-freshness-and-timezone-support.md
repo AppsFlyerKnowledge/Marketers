@@ -36,7 +36,11 @@ x-zendesk:
 
 ![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
 
+<div id="data-freshness-and-support-for-app-specific-time-zones" />
+
 ## Actualización de los datos y soporte para zonas horarias específicas de la aplicación
+
+<div id="data-freshness" />
 
 ### Actualización de los datos
 
@@ -46,6 +50,8 @@ Ejemplo: Índices de actualización de datos en el panel de control de Eventos:
 
 * Métrica KPI: en tiempo real
 * KPI promedio: diario
+
+<div id="time-zones" />
 
 ### Zonas horarias
 
@@ -60,6 +66,8 @@ Hemisferios
 * Este: Las zonas horarias designadas como UTC+ son aquellas ubicadas al este de UTC.
 * Occidental: las zonas horarias designadas como UTC son aquellas ubicadas al oeste de UTC.
 
+<div id="app-specific-time-zone" />
+
 #### Zona horaria específica de la aplicación
 
 Puedes establecer una zona horaria específica de la aplicación. Esto significa que los datos se agrupan en días utilizando la hora local en lugar de UTC.
@@ -70,11 +78,15 @@ Ejemplo:
 
 **Los Ángeles**: si la zona horaria específica de la aplicación se establece en Los Ángeles (UTC -8), entonces el día comienza a las 08:01 UTC y finaliza a las 08:00 UTC del día siguiente.
 
+<div id="time-zone-guidelines" />
+
 #### Lineamientos de zona horaria
 
 * Alinea tu zona horaria específica de la aplicación con la zona horaria que establezcas para otros proveedores de servicios de atribución, como Google y Anuncios de Meta.
 * Si tienes más de una aplicación, la mejor práctica es configurar todas las aplicaciones en la misma zona horaria. Para ver la configuración de la zona horaria de una aplicación, ve a **Configuración** > **Configuración de la aplicación.**
 * La mayoría de los reportes y las herramientas de extracción de datos admiten zonas horarias específicas de la aplicación. Esto incluye reportes de varias aplicaciones si todas las aplicaciones están configuradas en la misma zona horaria específica de la aplicación.
+
+<div id="daily-processing" />
 
 #### Procesamiento diario
 
@@ -129,6 +141,8 @@ Algunos reportes y listas desplegables se procesan una vez al día, esto se cono
 <Accordion title="Tasas de actualización de datos y soporte de zona horaria">
 
 <table><thead><tr><th>Datos relacionados</th><th>Cómo se presenta</th><th>Tasa de actualización de los datos<br/>(Consulta la sección anterior para conocer la clave de las tasas)</th><th>Visualizaciones de datos usando la zona horaria específica de la aplicación</th></tr></thead><tbody><tr><td>Instalaciones</td><td>KPI</td><td><p>Continua</p><p>Live Alerts</p><ul><li>Las alertas de Protect360 se actualizan a la hora UTC diaria.<ul><li>Se actualiza diariamente a las 16:00 UTC</li></ul></li></ul></td><td><span>✓</span></td></tr><tr><td>Sesiones, clics, impresiones, usuarios fieles</td><td>KPI</td><td><ul><li>Enlaces de atribución: Continua</li><li>SRN: Intradía</li></ul></td><td><span>✓</span></td></tr><tr><td>Eventos in-app de ingresos</td><td>KPI</td><td>Continua</td><td><span>✓</span></td></tr><tr><td>Ingresos por publicidad</td><td>KPI</td><td>Ingresos por publicidad</td><td><span>✓</span></td></tr><tr><td>Gasto publicitario (costo)</td><td>KPI</td><td><ul><li>Enlace de atribución: Continua (máximo hasta 2 horas después del clic)</li><li>API: Intradía</li><li>Procesamiento de gastos publicitarios Hasta 4 horas después de la ingestión</li></ul></td><td><span>✓</span></td></tr><tr><td>Desinstalar</td><td>KPI</td><td>Diaria. AppsFlyer hace ping a las tiendas de aplicaciones cada 24 horas. La hora del evento de la desinstalación representa el momento en que AppsFlyer lanzó la notificación push que no se ve y descubrió que la aplicación se desinstaló. Esta no es la hora real de la desinstalación.</td><td><span>.</span></td></tr><tr><td>Eventos in-app en la interfaz</td><td>Lista desplegable</td><td><p>Los nombres de eventos in-app que se muestran en las listas desplegables se actualizan diariamente.</p><p>Esto no afecta la tasa de actualización de los datos en sí.</p><p><strong>Ejemplos:</strong> Listas desplegables de eventos in-app en Push API, dashboards y audiencias.</p></td><td><span>✓</span></td></tr><tr><td>Panel de vista general</td><td>Página</td><td>Continua</td><td><span>✓</span></td></tr><tr><td>Panel de control de Protect360</td><td>Página</td><td>Diaria</td><td> <span>✓ </span>(1)</td></tr><tr><td>Panel de control de SKAN</td><td>Página</td><td>Diaria</td><td><span>.</span></td></tr><tr><td>Página de actividad</td><td>Página</td><td><ul><li>KPIs Continua</li><li>Promedios: A medianoche de la zona horaria específica de la aplicación</li></ul></td><td><p><span>✓</span></p><p>Excepción: Los datos MAU son UTC</p></td></tr><tr><td>Página de eventos</td><td>Página</td><td>Continua</td><td><span>✓</span></td></tr><tr><td> </td><td> </td><td>(Esta fila se ha dejado en blanco intencionalmente)</td><td> </td></tr><tr><td>Retención</td><td>Página</td><td><p>Los KPI de retención están disponibles con granularidad diaria y semanal. La actualización de los datos para cada uno es diferente.</p><ul><li>KPI regulares:</li><li>KPI semanales de retención: La semana comienza el lunes y termina el domingo. La retención se calcula el lunes a las 12:00 UTC. La falta de soporte para la zona horaria específica de la aplicación para el KPI semanal resulta en una diferencia insignificante.</li></ul></td><td><p>Diario: <span>✓</span></p><p>Semanal: <span><strong>x</strong></span></p></td></tr><tr><td>Cohorte</td><td>Página</td><td>Continua</td><td> <span>✓ </span>(2)</td></tr><tr><td>Panel de control personalizado</td><td>Página</td><td>Continuo</td><td> <span>✓ </span>(3)</td></tr><tr><td>Audiencias</td><td>Página</td><td><ul><li>Las actualizaciones se envían a los partners cada 24 horas.</li><li>La base de usuarios se actualiza diariamente y almacena hasta 90 días de datos del dispositivo</li></ul></td><td><span>✓</span></td></tr><tr><td>Página de información del SDK</td><td>Página</td><td>Diaria</td><td><span>.</span></td></tr><tr><td>Exportar datos</td><td>Página</td><td><p>Continua</p><p>Excepciones a tener en cuenta:</p><ul><li>Raw data de ingresos por publicidad: Diaria</li><li>Protect360:<ul><li>Reportes agregados:</li><li>Raw data bloqueado: Continua</li><li>Final del día</li></ul></li><li>Eventos in-app orgánicos: Actualización con un desfase de varias horas.</li></ul></td><td><span>✓</span></td></tr><tr><td>API Pull</td><td>API</td><td>La actualización de los datos de API Pull es la misma que la de Datos exportados.</td><td><p><span>✓</span></p><p><span>Predeterminado: UTC</span></p></td></tr><tr><td>Pivot</td><td>Página</td><td>Diaria</td><td><p><span>✓</span></p><p>KPI semanales de retención: <strong><span>x</span></strong></p></td></tr><tr><td>API maestra</td><td>API</td><td>Diaria</td><td> <span>✓ </span>(3)</td></tr><tr><td>Casillero de datos</td><td>API</td><td>Como se especifica en el artículo de Data Locker.</td><td><p><span>.</span></p><p><span><strong>UTC</strong></span></p></td></tr><tr><td>Devoluciones de mensajes</td><td>API</td><td>Continua</td><td>N/D</td></tr><tr><td>API Push</td><td>API</td><td>Continuo (4)</td><td><p><span>✓</span></p><p><span><strong>Ambos</strong></span></p></td></tr><tr><td>Eventos in-app de servidor a servidor</td><td>API</td><td>Continua</td><td>N/D</td></tr><tr><td colspan="4"><p>Notas:</p><p>(1) Todas las aplicaciones para las que el usuario tenga permiso deben usar la misma zona horaria específica de la aplicación. De lo contrario, la zona horaria vuelve a ser UTC.</p><p>(2) Consulta en <a href="./cohort-and-retention-dashboard#traits-and-limitations" target="_blank">Rasgos y limitaciones de la cohorte</a> cuándo la zona horaria volverá a ser UTC.</p><p>(3) Todas las aplicaciones seleccionadas deben utilizar la misma zona horaria específica de la aplicación. De lo contrario, la zona horaria vuelve a ser UTC.</p><p>(4) Los datos del reporte SKAN estarán disponibles todos los días entre las 08:00 y las 10:00 UTC.</p></td></tr></tbody></table>
+
+<div id="exception-my-dashboards-cohort-and-activity-metrics" />
 
 > 📘 **Excepción: métricas de cohorte y actividad de My Dashboards**
 >

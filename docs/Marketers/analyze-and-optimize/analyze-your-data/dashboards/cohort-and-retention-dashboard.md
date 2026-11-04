@@ -26,15 +26,21 @@ x-zendesk:
 
 [![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Panel de control de cohorte y retención
 
 Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview#cohort-flavors">Diferencias entre los tipos de cohorte</Anchor>
 
 Para utilizar la cohorte, selecciona usuarios de una o más aplicaciones y segméntalos por tiempo de conversión. Se encuentran disponibles métricas de la cohorte como ingresos, ROI y tasas de conversión de eventos. La cohorte se puede desglosar más, con fines comparativos, en dimensiones como campaña o fuente de medios. De este modo, se pueden descubrir patrones o cambios en el rendimiento sobre los ciclos de vida de los usuarios o de las campañas. Consulta <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Casos de uso de la cohorte</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > ¿Quieres saber más sobre los reportes de cohortes? ¿Quieres saber más sobre los reportes de cohortes? Consulta este breve <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">curso informativo en el portal de aprendizaje de AppsFlyer</Anchor>.
+
+<div id="using-cohort" />
 
 ## Uso de la Cohorte
 
@@ -111,6 +117,8 @@ Para utilizar la cohorte, selecciona usuarios de una o más aplicaciones y segm�
 
 </Accordion>
 
+<div id="cohort-concepts" />
+
 ## Principios de la cohorte
 
 <div id="cohort-periods" />
@@ -155,16 +163,22 @@ Tipo de tendencia:
 * **Tipo de tendencia: rendimiento de la vida útil del usuario**
 * **KPI por momento de atribución**
 
+<div id="user-lifetime-performance" />
+
 #### **Usuarios (4)**
 
 * Cada columna de la tabla o punto del gráfico representa otro período de cohorte (hora/día/semana/mes). El período de conversión se denomina período de cohorte 0. El primer período posterior a la conversión es el período de cohorte 1, y así sucesivamente. Esto permite comparar el rendimiento del usuario posterior a la conversión, empezando por el día de la conversión, denominado día 0 de la cohorte.
 * Puedes seleccionar para qué períodos de cohorte quieres obtener datos, hasta el máximo de cada opción de granularidad (hora/día/semana/mes).
+
+<div id="kpi-by-attribution-time" />
 
 #### **KPI por momento de atribución**
 
 * **KPI por momento de atribución:** los usuarios se agrupan por **tiempo** de conversión. Esto te permite evaluar el rendimiento de la campaña a lo largo del tiempo y ver los KPI de la campaña en relación con el momento de la conversión.
 * El número máximo de períodos de cohorte que puedes seleccionar para obtener datos es 5.
 * Si seleccionas ver los datos como gráfico en lugar de como tabla, el gráfico muestra solo 1 período de cohorte (el período más bajo seleccionado).
+
+<div id="example-user-lifetime-performance-trend-vs-kpi-by-attribution-time-trend" />
 
 #### No está disponible para la tendencia de KPI por momento de atribución.
 
@@ -253,6 +267,8 @@ Utiliza el control de datos parciales/completos para seleccionar el modo de visu
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Información adicional
 
 <div id="cohort-for-agencies" />
@@ -272,6 +288,8 @@ Utiliza el control de datos parciales/completos para seleccionar el modo de visu
 
 <Accordion title="CASOS DE USO">
 
+<div id="revenue-sum-by-geo" />
+
 #### Suma de ingresos por país
 
 **Gráfico: ingresos acumulados por usuario**
@@ -281,6 +299,8 @@ Utiliza el control de datos parciales/completos para seleccionar el modo de visu
 **Tabla: ingresos por día**
 
 [![Full_cohort2_us-en.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+
+<div id="in-app-event-conversion" />
 
 #### Conversión de eventos in-app
 

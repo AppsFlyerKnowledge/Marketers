@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Refuerza la protección de tu cuenta con el **Enterprise-Grade Security Package,** una oferta premium diseñada para la gestión de identidades de nivel empresarial, el control de acceso a tokens y una visibilidad ampliada de auditoría.
 
+<div id="intro" />
+
 ## Introducción
 
 El Enterprise-Grade Security Package reúne tres funciones clave que refuerzan la seguridad de tu organización:
@@ -29,6 +31,8 @@ El Enterprise-Grade Security Package reúne tres funciones clave que refuerzan l
 * **API de registro de auditoría con retención ampliada**: Obtén visibilidad a largo plazo de la actividad de la plataforma e integra eventos de auditoría en tu pila de monitoreo.
 * **Aprovisionamiento SCIM**: Automatiza y centraliza el control de acceso de los usuarios a través de tu proveedor de identidad.
 * **Lista de permitidos de IP para login:** Evita el acceso no autorizado y garantiza que solo se pueda iniciar sesión en el dashboard de AppsFlyer desde redes e IP de confianza
+
+<div id="compare-the-standard-and-enterprise-grade-packages" />
 
 ### Compara los paquetes estándar y Enterprise-Grade:
 
@@ -48,6 +52,8 @@ El Enterprise-Grade Security Package reúne tres funciones clave que refuerzan l
 
 Crea y gestiona hasta **30 tokens** por tipo (API, S2S, OneLink) con **restricciones por servicio** para mejorar la escalabilidad, la seguridad y el control sobre los tokens.
 
+<div id="key-features" />
+
 #### Características principales
 
 * Los administradores pueden crear hasta **30 tokens por tipo**, frente a los 2 tokens del paquete estándar, lo que da soporte a equipos más grandes y flujos de trabajo complejos.​
@@ -55,6 +61,8 @@ Crea y gestiona hasta **30 tokens** por tipo (API, S2S, OneLink) con **restricci
 * Los tokens se pueden revocar o rotar sin interrumpir integraciones ni automatizaciones.
 * Restringe un token a una aplicación concreta para que solo pueda acceder a datos o realizar acciones de esa aplicación.
 * Simplifica la colaboración con equipos internos y Partners externos mediante permisos específicos por token.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -66,9 +74,13 @@ Crea y gestiona hasta **30 tokens** por tipo (API, S2S, OneLink) con **restricci
 >
 > **Token de acceso específico de la app:** Crea un token que funcione solo para una app. Usa este token cuando un equipo interno, un partner externo o una automatización deban acceder solo a una aplicación específica.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > Para obtener información general sobre los tokens estándar, consulta <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">administrar los tokens de AppsFlyer</Anchor>.
+
+<div id="how-to-access-and-control-tokens" />
 
 #### Cómo acceder a los tokens y controlarlos
 
@@ -98,6 +110,8 @@ Desde aquí, podrás:
 * Eliminar tokens individualmente
 * Monitorizar la actividad de los tokens en los registros de auditoría
 
+<div id="note-1" />
+
 > 📘 **Advertencia**
 >
 > Los tokens no se pueden editar. Para cambiar el acceso, elimina el token y vuelve a crearlo.
@@ -110,6 +124,8 @@ Desde aquí, podrás:
 
 Esta función mejora las capacidades actuales del registro de auditoría, ya que incorpora una API para consumir registros de auditoría y amplía la retención de datos de 90 a 180 días. Ideal para equipos que necesitan acceso a largo plazo a los registros de acciones de los usuarios o integrar eventos de auditoría en herramientas externas de monitoreo como SOC y SEIM.
 
+<div id="key-features-1" />
+
 #### Características principales
 
 * Accede a los registros de auditoría mediante programación con una API específica
@@ -118,9 +134,13 @@ Esta función mejora las capacidades actuales del registro de auditoría, ya que
 * Usa tokens específicos del servicio para aislar el acceso a los registros
 * Exporta datos a herramientas SIEM, dashboards o almacenamiento en la nube
 
+<div id="note-2" />
+
 > 📘 **Advertencia**
 >
 > Para obtener información general sobre Audit log estándar, consulta <Anchor target="_blank" href="/marketers/es/docs/audit-log">Standard audit log</Anchor>.
+
+<div id="how-to-access-the-audit-log-via-api" />
 
 ### **Cómo acceder a Audit log a través de la API**
 
@@ -132,6 +152,8 @@ Para usar la API de Audit log:
 4. Usa uno existente o crea un **token de API** nuevo.
 5. En **Access restriction**, selecciona el servicio **Audit log**.
 6. Usa el token para autenticar solicitudes en el endpoint de la API de Audit log.
+
+<div id="note-3" />
 
 > 📘 **Advertencia**
 >
@@ -147,11 +169,15 @@ El aprovisionamiento SCIM mejora las capacidades de SSO de AppsFlyer al automati
 
 Al sincronizar usuarios mediante SCIM, mantienes un control total sobre los permisos de acceso en tiempo real. Combinado con SAML 2.0 SSO, esto forma una solución completa de gestión de identidades y accesos para clientes enterprise.
 
+<div id="key-features-2" />
+
 #### **Características principales**
 
 * Crea automáticamente usuarios en AppsFlyer en función de los registros del proveedor de identidades (IdP).
 * Los cambios en los roles o el estado de los usuarios en el IdP se reflejan al instante en AppsFlyer.
 * Utiliza **SAML 2.0** para un SSO seguro y **SCIM** para el aprovisionamiento; es compatible con IdP líderes como Okta y Azure AD.
+
+<div id="how-to-set-up-scim-provisioning" />
 
 #### **Cómo configurar el aprovisionamiento SCIM**
 
@@ -159,6 +185,8 @@ Para empezar a usar el aprovisionamiento SCIM en AppsFlyer, debes:
 
 1. [Configura SSO con tu IdP](/docs/enterprise-grade-security-package#configurar-sso)
 2. [Habilitar SCIM](/docs/enterprise-grade-security-package#habilitar-scim)
+
+<div id="sso-set-up" />
 
 #### Configurar SSO
 
@@ -168,7 +196,11 @@ Para configurar SSO, debes:
 * <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-set-up-appsflyer">Configurar SSO en AppsFlyer</Anchor>
 * <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-configuration">Probar la configuración de SSO</Anchor>
 
+<div id="enable-scim" />
+
 #### Habilitar SCIM
+
+<div id="note-4" />
 
 > 📘 **Advertencia**
 >
@@ -182,9 +214,15 @@ Para habilitar SCIM, debes seguir estos pasos:
 * Añade [roles](/docs/enterprise-grade-security-package#roles)
 * Añade [el espacio de nombres externo](/docs/enterprise-grade-security-package#external-namespace)
 
+<div id="idp-instruction-links" />
+
 #### Enlaces de instrucciones del IdP
 
+<div id="the-instructions-for-the-idps-can-be-found-below-okta-entra-id-azure-onelogin-jumpcloud" />
+
 ##### A continuación encontrarás las instrucciones para los IdP. <Anchor target="_blank" href="https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_scim.htm">Okta</Anchor>, <Anchor target="_blank" href="https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups#integrate-your-scim-endpoint-with-the-microsoft-entra-provisioning-service">Entra ID (Azure)</Anchor>, <Anchor target="_blank" href="https://onelogin.service-now.com/kb_view_customer.do?sysparm_article=KB0010298">OneLogin</Anchor> y <Anchor target="_blank" href="https://jumpcloud.com/support/get-started-identity-management-connectors">JumpCloud</Anchor>
+
+<div id="scim-connections" />
 
 #### Conexiones SCIM
 
@@ -195,6 +233,8 @@ En las conexiones SCIM, debes completar los siguientes campos:
 | URL base del conector SCIM (endpoint de SCIM) | https://hq1.appsflyer.com/api/scim/v2 |
 | Campo de identificador único para los usuarios | userName |
 | Método de autenticación: cabecera HTTP llamada "Authorization" | Bearer &lt;<Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">Tu token de API de AppsFlyer</Anchor>> |
+
+<div id="scim-attributes" />
 
 #### Atributos SCIM
 
@@ -221,6 +261,8 @@ Los roles deben coincidir con los <Anchor target="_blank" href="/marketers/es/do
 | Garantía de calidad | quality\_assurance |
 | Rol personalizado | [introduce el valor del rol personalizado] |
 
+<div id="limitations" />
+
 #### Limitaciones
 
 | **Limitación** | **Description** |
@@ -235,11 +277,15 @@ Los roles deben coincidir con los <Anchor target="_blank" href="/marketers/es/do
 
 La lista ampliada de IP permitidas mejora la seguridad al evitar accesos no autorizados y garantizar que solo las redes de confianza puedan interactuar con la plataforma. Esta función es especialmente valiosa para empresas que aplican políticas de seguridad estrictas o gestionan el acceso remoto.
 
+<div id="key-features-3" />
+
 #### Características principales
 
 * Reduce los ataques al bloquear intentos de login desde IP desconocidas.
 * Permite especificar direcciones IP o rangos para garantizar que solo los usuarios y las redes autorizados puedan acceder a la plataforma.
 * Ideal para organizaciones que usan VPN o requieren controles de acceso más estrictos.
+
+<div id="adding-ips-to-the-list" />
 
 #### Agregar IP a la lista
 
@@ -253,11 +299,15 @@ La lista ampliada de IP permitidas mejora la seguridad al evitar accesos no auto
 4. Las IP añadidas se mostrarán en el lado derecho, en **Ver tus IP en la lista de IP permitidas**.
 5. Haz clic en **Guardar lista**.
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > * Asegúrate de que las direcciones IP o los rangos que añadas sean correctos. Si introduces datos incorrectos, es posible que no puedas acceder a tu cuenta.
 > * La lista de permitidos debe contener al menos una dirección IP o un rango antes de que puedas guardarla y activarla, y puedes añadir hasta 100 direcciones IP o rangos a la lista de permitidos.
 > * Después de hacer clic en Guardar lista, las restricciones de IP se aplicarán a partir de tu próximo inicio de sesión.
+
+<div id="removing-ips-from-the-list" />
 
 #### Eliminar IP de la lista
 
@@ -273,41 +323,61 @@ La lista ampliada de IP permitidas mejora la seguridad al evitar accesos no auto
 
 <Accordion title="Preguntas frecuentes sobre nuestro paquete seguridad">
 
+<div id="what-is-appsflyers-enterprise-grade-security-package" />
+
 #### ¿Qué es el paquete de seguridad de nivel empresarial de AppsFlyer?
 
 Escala segura con capacidades de seguridad avanzadas que van más allá de las protecciones estándar. Obtén SSO con aprovisionamiento SCIM, controles de acceso granulares, registros de auditoría ampliados y herramientas de cumplimiento diseñadas para líderes de seguridad empresarial y TI.
+
+<div id="who-is-the-enterprise-grade-security-package-designed-for" />
 
 #### ¿Para quién está diseñado el paquete de seguridad de nivel empresarial?
 
 Responsables de seguridad empresarial y TI que se preparan para auditorías, equipos de compras y jurídicos de sectores regulados que evalúan proveedores de SaaS, y administradores de plataformas que gestionan requisitos de acceso complejos en múltiples equipos e integraciones.
 
+<div id="how-does-scim-provisioning-work" />
+
 #### ¿Cómo trabajo el aprovisionamiento SCIM?
 
 Automatiza la gestión del ciclo de vida del usuario conectándote directamente con tu proveedor de identidad. SCIM sincroniza automáticamente el acceso y los roles de usuarios, gestiona el onboarding y offboarding instantáneo, y elimina la administración manual de cuentas y los riesgos de acceso.
+
+<div id="what-compliance-standards-does-this-support" />
 
 #### ¿Qué estándares de cumplimiento tiene este soporte?
 
 Soporte para requisitos de auditoría SOC2, ISO 27001 y GDPR con retención de registro de auditoría de 180 días, documentación de acceso integral e integración SIEM en tiempo real para monitoreo continuo y verificación de cumplimiento.
 
+<div id="how-many-roles-and-api-tokens-can-i-create" />
+
 #### ¿Cuántos roles y tokens API puedo crear?
 
 Crea hasta 50 roles personalizables adaptados a la estructura de tu organización y hasta 30 restricciones específicas del servicio o de la aplicación. Aislar acceso para diferentes integraciones y funciones laborales manteniendo los principios de menos privilegios.
+
+<div id="can-i-integrate-with-my-existing-security-tools" />
 
 #### ¿Puedo integrarme con mis herramientas de seguridad existentes?
 
 Sí. Transmite datos de auditoría directamente a tus herramientas SIEM y seguridad mediante la transmisión de registros basada en APIs. Permite el monitoreo en tiempo real, detección de anomalías y respuestas de seguridad automatizadas dentro de tu infraestructura SOC existente.
 
+<div id="what-network-restrictions-can-i-apply" />
+
 #### ¿Qué restricciones de red puedo aplicar?
 
 Control de acceso a la plataforma mediante listas de IP permitidas y restricciones geográficas. Define redes y ubicaciones de confianza para evitar accesos no autorizados y, al mismo tiempo, admite situaciones de trabajo remoto y asegura la colaboración de los partners.
+
+<div id="how-long-are-audit-logs-retained" />
 
 #### ¿Cuánto tiempo se conservan los registros de auditoría?
 
 Acceso a pistas de auditoría completas con retención de registros de 180 días que capturan la interacción de cada plataforma. Obtén una visibilidad completa de las acciones del usuario, llamadas a la API y patrones de acceso para investigaciones exhaustivas de cumplimiento e investigaciones de seguridad.
 
+<div id="does-this-replace-standard-security-features" />
+
 #### ¿Esto reemplaza las funciones de seguridad estándar?
 
 N.º El paquete de seguridad de nivel empresarial agrega capacidades avanzadas además de las funciones de seguridad estándar. Obtén controles, automatización y visibilidad mejorados al tiempo que mantienes todas las protecciones de seguridad existentes.
+
+<div id="how-quickly-can-i-implement-these-security-controls" />
 
 #### ¿Con qué rapidez puedo implementar estos controles de seguridad?
 

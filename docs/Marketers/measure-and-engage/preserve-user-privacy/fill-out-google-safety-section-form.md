@@ -24,11 +24,15 @@ x-zendesk:
 
 Los clientes deben trabajar estrechamente con asesores legales y otros asesores profesionales para determinar exactamente cómo se aplican las políticas de Google y deben adaptar sus respuestas de acuerdo con sus configuraciones y usos específicos.
 
+<div id="disclaimer" />
+
 #### **Advertencia**
 
 La información contenida en este artículo está destinada a ayudar a responder el cuestionario de la sección de seguridad de Google en relación **únicamente** con lo que AppsFlyer procesa en nombre de los clientes.
 
 Se proporciona únicamente con fines informativos y de conveniencia. Los clientes deben trabajar estrechamente con asesores legales y otros asesores profesionales para determinar exactamente cómo se aplican las políticas de Google y deben adaptar sus respuestas de acuerdo con sus configuraciones y usos específicos.
+
+<div id="introduction" />
 
 ## Introducción
 
@@ -36,9 +40,13 @@ A partir de abril de 2022, los desarrolladores de aplicaciones deberán proporci
 
 La información proporcionada por cada aplicación se mostrará en la ficha de la tienda de Google para ayudar a los usuarios finales a comprender mejor las prácticas de privacidad de una aplicación.
 
+<div id="audience" />
+
 ## audiencia
 
 Todos los desarrolladores de aplicaciones deberán completar el cuestionario de la sección de seguridad y publicar un enlace a una política de privacidad, incluso si no recopilan ninguno de los tipos de datos especificados por Google.
+
+<div id="google-safety-form-questionnaire" />
 
 ## Formulario de seguridad de Google (cuestionario)
 
@@ -54,6 +62,8 @@ Con respecto al uso de AppsFlyer, se recuerda a los desarrolladores de aplicacio
 
 Los desarrolladores de aplicaciones deben responder al cuestionario de acuerdo con sus casos de uso, configuraciones e integraciones de partners específicos.
 
+<div id="data-collection-and-security" />
+
 ### Recopilación y seguridad de datos
 
 En esta sección, se te harán algunas preguntas generales de tipo sí/no:
@@ -63,6 +73,8 @@ En esta sección, se te harán algunas preguntas generales de tipo sí/no:
 3. ¿Proporcionas una forma para que los usuarios puedan solicitar que se eliminen sus datos?
 
 Con respecto a tu uso de AppsFlyer, AppsFlyer cifra todos los datos en tránsito que se transmiten a través del SDK. AppsFlyer también brinda a los clientes la capacidad de eliminar datos específicos del usuario final a través de su marco OpenGDPR. Para los tipos de datos recopilados, consulta la tabla en la sección [Tipos de datos](/docs/fill-out-google-safety-section-form#tipos-de-datos).
+
+<div id="data-types" />
 
 ### Tipos de datos
 
@@ -103,13 +115,19 @@ Las excepciones incluyen lo siguiente:
 
 Es importante tener en cuenta que si bien AppsFlyer actúa únicamente como un proveedor de servicios en tu nombre y según tus instrucciones, si estás compartiendo datos con redes de terceros (por ejemplo, a través de postbacks, SRN y audiencias), esto se considerará compartido.  Por lo tanto, cada desarrollador de aplicaciones deberá evaluar sus configuraciones e integraciones de partners y responder en consecuencia.
 
+<div id="ephemeral-processing" />
+
 ## Procesamiento efímero
 
 El procesamiento efímero se refiere a los datos procesados en la memoria, solo durante el período de tiempo necesario para procesar una acción específica en tiempo real y sin otro propósito. Dada la naturaleza de los servicios de AppsFlyer, los datos procesados por AppsFlyer en tu nombre no se procesan efímeramente.
 
+<div id="user-choice" />
+
 ## Elección del usuario
 
 Con carácter general, los datos recopilados son necesarios para la realización de los servicios. Dicho esto, los desarrolladores de aplicaciones tienen la capacidad de someter cualquier recopilación de datos a controles de aceptación o exclusión opcional.
+
+<div id="purpose" />
 
 ## Finalidad
 
@@ -124,6 +142,8 @@ Google ha proporcionado una lista de propósitos de los cuales los desarrollador
 | Fraude, prevención, seguridad y cumplimiento | Sí |
 | Personalización | Selecciona esta opción si utilizas los datos para cualquier tipo de personalización de productos. |
 | Gestión de cuentas | Selecciona esta opción si utilizas los datos para la configuración y gestión de cuentas de usuario. |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

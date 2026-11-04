@@ -33,11 +33,15 @@ El reporte de medición de colaboración es un reporte agregado que resume los d
 
 Los campos del reporte se dividen en dos tipos: *dimensiones* y *métricas*. Cada uno puede dividirse además en *campos básicos* y *campos calculados*.
 
+<div id="dimensions" />
+
 ### Dimensiones
 
 Una dimensión es una categoría de agrupación que agrega datos a nivel de evento en registros de reporte. Por ejemplo, si se selecciona la fuente de medios como dimensión del reporte, cada fila contendrá datos agregados de todos los eventos atribuidos a esa fuente de medios. El número de filas equivale al número de fuentes de medios.
 
 Añadir más dimensiones aumenta la granularidad de la agrupación. Por ejemplo, seleccionar Fecha del evento, Fuente de medios y Campaña da como resultado una fila por cada combinación única de esos campos.
+
+<div id="metrics" />
 
 ### Comenzar
 
@@ -49,6 +53,8 @@ Cuando se seleccionan varias dimensiones, como Fecha del evento, Fuente de medio
 
 Al seleccionar una métrica, elige su función de agregación. Por ejemplo, para la métrica de ingresos, seleccionarías la función **SUM**.
 
+<div id="what-are-basic-and-calculated-fields" />
+
 ### ¿Qué son los campos básicos y los campos calculados?
 
 Las dimensiones y las métricas pueden ser campos básicos o campos calculados.
@@ -58,6 +64,8 @@ Las dimensiones y las métricas pueden ser campos básicos o campos calculados.
 
 </Accordion>
 
+<div id="create-a-predefined-report" />
+
 ## Crear un reporte predefinido
 
 Para generar un reporte predefinido, sigue estos pasos:
@@ -66,6 +74,8 @@ Para generar un reporte predefinido, sigue estos pasos:
 2. En la **Plataforma de Colaboración de Datos** página, selecciona la colaboración correspondiente.
 3. En la página de colaboración, haz clic en **Crear reporte.**
 4. En el cuadro de diálogo que aparece, haz clic en **Aprobar reporte.** El reporte se envía a tu servicio en la nube conectado con un nombre y una programación predefinidos.
+
+<div id="create-a-custom-report" />
 
 ## Crear un informe personalizado
 
@@ -133,6 +143,8 @@ Para configurar las dimensiones y las métricas del reporte, sigue estos pasos:
    * **Recuento:** El valor de la métrica es el recuento de los valores a nivel de evento agregados en el registro del reporte. Por ejemplo, la métrica de conversiones es el recuento de todas las conversiones incluidas en el registro agrupado.
    * **Recuento distinto**: El valor de la métrica es el número de valores únicos de un campo determinado en todos los eventos agrupados en el registro del reporte. Por ejemplo, si la métrica seleccionada es el recuento distinto de `sku` y un registro agrupado incluye 10 eventos que contienen 4 SKU diferentes, el valor de la métrica será **4**.
 5. Para cambiar el nombre para mostrar del campo, coloca el cursor sobre el campo y haz clic en **Edit display name.**
+
+<div id="create-calculated-field" />
 
 #### Crear campo calculado
 
@@ -214,6 +226,8 @@ DCP entrega reportes a tus servicios en la nube seleccionados mediante <Anchor t
 6. El nuevo reporte ahora se muestra en la **Reportes** pestaña.
 
 </Accordion>
+
+<div id="report-scheme" />
 
 ## Esquema del reporte
 

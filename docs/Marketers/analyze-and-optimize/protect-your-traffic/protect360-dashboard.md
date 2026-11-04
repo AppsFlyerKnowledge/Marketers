@@ -29,6 +29,8 @@ x-zendesk:
 
 > **En resumen:** El panel de control de Protect360 proporciona información sobre el tráfico fraudulento y las instalaciones bloqueadas debido a la aplicación de reglas de validación.
 
+<div id="about-protect360-dashboard" />
+
 ## Acerca del panel de control de Protect360
 
 El panel de control de Protect360:
@@ -78,6 +80,8 @@ Las siguientes opciones de filtrado y agrupación están disponibles:
   * **Geolocalización**: compara los casos de fraude identificados de todos los países.
 
 </Accordion>
+
+<div id="installs-dashboard" />
 
 ## Panel de control de instalaciones
 
@@ -145,6 +149,8 @@ Instalaciones en las que la lógica de atribución de AppsFlyer detectó que el 
 
 <Accordion title="Instalaciones : gráficos">
 
+<div id="identified-fraud-trend-chart" />
+
 #### Gráfico de tendencias del fraude identificado
 
 El gráfico de tendencias del fraude identificado muestra el número de instalaciones, reatribuciones y re-engagements fraudulentos por día, desglosado por:
@@ -156,6 +162,8 @@ El gráfico de tendencias del fraude identificado muestra el número de instalac
 * **Tasa de comprometidas**: total de atribuciones marcadas como comprometidas del total de atribuciones.
 
 Se puede mostrar como un gráfico de líneas o un gráfico de barras.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### Gráfico de corrección de atribución de instalaciones secuestradas
 
@@ -173,6 +181,8 @@ Podrás hacer lo siguiente:
 * Cuando los secuestros se bloquean en tiempo real, las atribuciones correctas se muestran en los paneles de control y reportes de AppsFlyer (no solo en Protect360). Cuando se identifican secuestros después de la atribución, las atribuciones correctas se muestran solo en el raw data de Protect360.
 * Este gráfico puede mostrar la corrección **a** orgánico, pero no **desde** orgánico.
 
+<div id="identified-fraud-chart" />
+
 #### Gráfico de fraude identificado
 
 El gráfico de fraude identificado muestra los tipos de fraude que experimentas, por porcentaje. El desglose del fraude puede realizarse por:
@@ -186,6 +196,8 @@ El gráfico de fraude identificado muestra los tipos de fraude que experimentas,
 * Campaña
 * Geolocalización
 * Aplicación
+
+<div id="affiliate-attribution-model" />
 
 #### Modelo de atribución de afiliados
 
@@ -208,6 +220,8 @@ Las instalaciones comprometidas son instalaciones en las que la lógica de atrib
 
 <Accordion title="Instalaciones: tabla">
 
+<div id="identified-fraud-breakdown" />
+
 #### Desglose de casos de fraude identificados
 
 La tabla de **desglose de casos de fraude identificados** muestra los siguientes datos:
@@ -227,6 +241,8 @@ Estructura dinámica de la tabla:
 * Es por usuario, por lo que cada usuario de cuenta con acceso a Protect360 puede personalizar personalmente su propia estructura de tabla. Ver [más opciones de tabla](/docs/protect360-dashboard#opciones-adicionales-de-la-tabla).
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Contenido de la tabla de desglose de casos de fraude identificados
 
@@ -289,6 +305,8 @@ Estructura dinámica de la tabla:
 | CTIT > Más de 60 minutos | Instalaciones, reatribuciones y re-engagements en los que el tiempo entre el clic y el primer inicio de la aplicación es de más de 60 minutos. El cálculo solo incluye las instalaciones cuyo CTIT sea inferior a 25 horas (y no todas las instalaciones). Normalmente, alrededor del 30 % de los primeros inicios de la aplicación tienen lugar más de 60 minutos después de la descarga. |
 | CTIT > Más de 5 horas | Instalaciones, reatribuciones y re-engagements en los que el tiempo entre el clic y el primer inicio de la aplicación es de más de 5 horas. El cálculo solo incluye las instalaciones cuyo CTIT sea inferior a 25 horas (y no todas las instalaciones). Normalmente, alrededor del 20 % de los primeros inicios de la aplicación tienen lugar más de 5 horas después de la descarga. |
 
+<div id="additional-table-options" />
+
 #### Opciones adicionales de la tabla
 
 * Haz clic en el botón **Exportar CSV** para descargar la tabla en tu escritorio en formato CSV.
@@ -307,6 +325,8 @@ Ten en cuenta que las tasas poco comunes de cualquiera de estos KPIs no indican 
 Los datos de eventos in-app en el panel de control de costo por instalación (CPI) se basan en LTV, lo que significa que son todos los eventos in-app asociados con las instalaciones que ocurrieron durante el rango de fechas especificado.
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## Panel de control de eventos in-app
 
@@ -333,6 +353,8 @@ Las métricas principales te permiten ver:
 
 <Accordion title="Eventos in-app: gráficos">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **Gráfico de tendencia del fraude en el tiempo**
 
 El gráfico de tendencia del fraude en el tiempo muestra la cantidad de eventos por día, desglosados en:
@@ -340,6 +362,8 @@ El gráfico de tendencia del fraude en el tiempo muestra la cantidad de eventos 
 * **Tiempo real.** : Eventos in-app fraudulentos en la aplicación bloqueados en tiempo real
 * **Posterior a la atribución**: Eventos fraudulentos identificados después de la atribución
 * **No fraudulentos**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **Gráfico de los principales eventos in-app fraudulentos por fuente de medios**
 
@@ -375,6 +399,8 @@ Estructura dinámica de la tabla:
 
 [![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### Contenido de la tabla de desglose de eventos in-app fraudulentos
 
 | Columna de tabla | Descripción |
@@ -399,6 +425,8 @@ Estructura dinámica de la tabla:
 | IAE bloqueado | IAE bloqueados por reglas de validación. |
 | Corregido a orgánico | Instalaciones secuestradas con la última fuente no fraudulenta orgánica. |
 | Corregido a la fuente no orgánica | Instalaciones secuestradas con la última fuente de medios no fraudulenta no orgánica. |
+
+<div id="additional-table-options-1" />
 
 #### Opciones adicionales de la tabla
 
@@ -455,6 +483,8 @@ Para configurar los eventos de pago:
 | Impresiones bloqueadas debido a la limitación de impresiones | Si una fuente de medios no está disponible en el filtro, puede deberse a que todo su tráfico esté bloqueado.<br /><br />Para filtrar según la fuente de medios, puedes usar su enlace en la tabla de desglose de fraude identificado |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Ver también**
 >

@@ -26,6 +26,8 @@ x-zendesk:
 | **Lo que debes saber:** | Meta aplica esta activación automáticamente en las cuentas de cliente de AppsFlyer. No necesitas hacer nada antes del 6 de agosto.<ul><li>Si después del 6 de agosto faltan tus datos de costo desglosados por canal o tus datos de rendimiento de creatividades desglosados por canal, la activación automática todavía no se ha aplicado a tu cuenta.</li></ul> |
 | **Lo que debes hacer** | Sigue estos pasos:<ol><li>Después del 6 de agosto, revisa tus datos de costo desglosados por canal (My Dashboards) y tus datos de rendimiento de creatividades desglosados por canal.</li><li>Si observas un hueco, ponte en contacto directamente con Meta para que te orienten sobre cómo habilitar la activación, o contacta con tu representante de AppsFlyer para obtener ayuda.</li><li>Cuando la activación se aplique a tu cuenta, tus datos se completarán automáticamente poco después mediante backfill.</li><li>También puedes comprobar directamente en Ads Manager si Impression Device ya está habilitado para la cuenta. Consulta más abajo [Comprobar Impression Device en Ads Manager](#comprobar-impression-device-en-ads-manager) para ver los pasos.</li></ol> |
 
+<div id="check-impression-device-in-ads-manager" />
+
 ## Comprobar Impression Device en Ads Manager
 
 Para comprobar si Impression Device ya está habilitado para una cuenta publicitaria:

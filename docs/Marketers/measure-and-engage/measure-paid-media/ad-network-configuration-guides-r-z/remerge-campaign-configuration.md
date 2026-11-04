@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Remerge, un partner integrado de ad network de AppsFlyer, permite a los especialistas en marketing de aplicaciones ofrecer anuncios personalizados y mejor ubicados. Además de la atribución móvil basada en clics, Remerge ofrece atribución móvil view-through y retargeting basado en clics, que puede registrarse con AppsFlyer.
 
+<div id="setting-up-remerge" />
+
 ## Configuración de Remerge
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -43,14 +45,20 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red de TODAS las instalaciones, Remerge prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Remerge.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Atribución de instalaciones y re-engagements
 
@@ -59,12 +67,16 @@ Estos dos interruptores te permiten atribuir a Remerge a los usuarios que solo v
 * Activa ***Atribución view-through de instalaciones*** para atribuir a Remerge las nuevas instalaciones posteriores solo a impresiones.
 * Activa ***Atribución view-through de re-engagement*** para atribuir a Remerge los nuevos re-engagements de tus usuarios existentes posteriores solo a impresiones.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Remerge después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para los eventos que proceden solo de usuarios atribuidos a Remerge.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para reportarla a Remerge.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -94,6 +106,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a R
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -112,6 +126,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configuraciones de retargeting
 
@@ -146,6 +162,8 @@ Defina el plazo posterior al re-engagement, durante el cual los eventos in-app d
 
 **Parámetro del enlace de atribución:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo entre el clic y la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Remerge.
@@ -153,6 +171,8 @@ Este control deslizante te permite establecer el **tiempo máximo entre el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -189,6 +209,8 @@ Remerge no es compatible con los ingresos por anuncios.
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Remerge, tanto si el partner actúa como ad network, como agencia o incluso como ambas. Ten en cuenta que, aunque la atribución esté deshabilitada para Remerge, la pestaña de permisos está activa y puedes concederle el control a Remerge.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

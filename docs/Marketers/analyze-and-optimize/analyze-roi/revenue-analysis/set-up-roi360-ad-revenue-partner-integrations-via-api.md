@@ -27,6 +27,8 @@ x-zendesk:
 
 > **De un vistazo:** Configura integraciones de Partners de ingresos por anuncios para tu cuenta de AppsFlyer o para apps individuales mediante API.
 
+<div id="ad-revenue-partner-integration-api" />
+
 ## API de integración de Partners de ingresos por anuncios
 
 La API de integración de Partners de ingresos por anuncios se utiliza para:
@@ -44,6 +46,8 @@ La API de integración de Partners de ingresos por anuncios se utiliza para:
 2. Prepara los parámetros que debes incluir en la solicitud de API, como se describe en la tabla siguiente.
 3. Proporciona a tu desarrollador los valores de los parámetros y dile que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">instrucciones de la API de configuración de integraciones</Anchor> en el centro para desarrolladores.  
    La integración entra en vigor a las 00:00 UTC del día siguiente.
+
+<div id="request-parameters" />
 
 #### Parámetros de la solicitud
 
@@ -71,6 +75,8 @@ La API de integración de Partners de ingresos por anuncios se utiliza para:
 2. Dile a tu desarrollador que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/post_integrations">instrucciones de la API de lista de integraciones</Anchor> en el centro de desarrolladores.
 
 </Accordion>
+
+<div id="specs-and-limitations" />
 
 ### Especificaciones y limitaciones
 

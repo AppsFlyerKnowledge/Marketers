@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En resumen:** Recopila el OAID de Android para atribuir las instalaciones de tiendas de aplicaciones Android de terceros.
 
+<div id="about-oaid" />
+
 ## Acerca del OAID
 
 El identificador de dispositivo anónimo abierto (OAID) es un identificador único que el usuario puede restablecer para dispositivos Android. Fue presentado por la Mobile Security Alliance (MSA), el Instituto de Investigación de la Información y las Comunicaciones de China y los fabricantes de dispositivos, como una alternativa para preservar la privacidad a los identificadores de dispositivos que no se pueden restablecer, como el IMEI.
@@ -29,6 +31,8 @@ El identificador de dispositivo anónimo abierto (OAID) es un identificador úni
 El OAID generalmente se usa para la medición de anuncios y la atribución de instalaciones en dispositivos donde los servicios de Google Play no están disponibles (es decir, donde el ID de publicidad de Google no existe).
 
 <span id="supported-devices"></span>El OAID se puede leer en todos los dispositivos que utilizan un SDK proporcionado por MSA, o en dispositivos Huawei que utilizan el SDK principal de Huawei Mobile Service (HMS).
+
+<div id="integration" />
 
 ## Integración
 
@@ -65,6 +69,8 @@ La integración del OAID consta de 3 pasos:
 * Diles a tus desarrolladores que sigan sus <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/oaid#huawei-hms-sdk-integration">instrucciones de integración</Anchor>.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

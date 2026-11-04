@@ -44,6 +44,8 @@ La integración funciona notificando a Swrve las instalaciones a su API mediante
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
+<div id="integrating-swrve-and-appsflyer" />
+
 ## Integración de Swrve y AppsFlyer
 
 Configurar un postback que permita a Swrve medir el LTV y el comportamiento de los usuarios para diferentes fuentes de adquisición:
@@ -79,6 +81,8 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 **Paso 2**: Configura un postback en tu dashboard de AppsFlyer realizando las siguientes acciones:
 
+<div id="setting-up-swrve" />
+
 ## Configuración de Swrve
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -102,10 +106,14 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, debes activar el botón ***Activate Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -121,6 +129,8 @@ Realiza los siguientes pasos, según sea necesario:
 * Introduce la **api\_key**
 * Selecciona **UE** para los clientes de la UE
 * Selecciona **Uso compartido avanzado de datos** para enviar la siguiente información adicional a Swrve: cost\_value, canal, keywords, siteID y c (campaña)
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -172,6 +182,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 Los permisos no están disponibles para Swrve.
 
 </Accordion>
+
+<div id="swrve-reporting-with-appsflyer-data" />
 
 ## Reportes de Swrve con datos de AppsFlyer
 

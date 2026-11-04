@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:**  Comienza en la medición colaborativa aprendiendo sus conceptos fundamentales y el procedimiento de configuración.
 
+<div id="the-three-data-sources-of-measurement" />
+
 ## Las tres fuentes de datos de medición
 
 El modelo de medición DCP atribuye los eventos de conversión a los eventos de engagement que se producen en un contexto de colaboración. Este proceso requiere datos de tres fuentes de datos clave: conversiones, engagements y mapeo de campañas. Cada fuente desempeña un papel fundamental en el flujo de atribución.
@@ -92,6 +94,8 @@ La información de mapeo anterior se proporciona a AppsFlyer como una fuente de 
 
 </Accordion>
 
+<div id="on-site-vs-off-site-campaigns" />
+
 ## Medición de campañas on-site y off-site
 
 DCP mide las campañas on-site de forma diferente a las campañas off-site. Mientras que las campañas on-site se ejecutan en una de las plataformas del colaborador, las campañas off-site se ejecutan en plataformas de terceros, como Facebook, Google Ads y otras SRNs. Estas diferencias afectan a cómo se llega a las audiencias, cómo se recopilan los datos y cómo se realiza la atribución.
@@ -129,6 +133,8 @@ Las campañas combinadas implican engagements de usuarios que se producen tanto 
 
 </Accordion>
 
+<div id="the-dcp-measurement-process" />
+
 ## El proceso de medición DCP
 
 El proceso de medición de DCP define cómo se validan, normalizan y relacionan los registros de conversión procedentes de eventos in-app del SDK y archivos de fuente personalizados con los engagements de campaña en las [campañas on-site y off-site](https://www.notion.so/Collaboration-measurement-Overview-255b7b13af5f80fa83d2dc77e337c960?pvs=21).
@@ -146,6 +152,8 @@ El flujo de medición on-site procesa datos de conversión y de engagement proce
 
 Ambos tipos de eventos se normalizan en una estructura unificada y se procesan mediante el mismo motor de atribución.
 
+<div id="1-configure-measurement-sources" />
+
 ### 1. Configurar fuentes de medición
 
 A continuación se describen las etapas de este proceso.
@@ -153,12 +161,16 @@ A continuación se describen las etapas de este proceso.
 * **Eventos in-app:** Los colaboradores identifican qué eventos in-app (p. ej., compra o registro) deben medirse como conversiones o engagement. Estos eventos ya deben recopilarse mediante el SDK de AppsFlyer, y los nombres de la aplicación y del evento deben seleccionarse explícitamente en la configuración de DCP.
 * **Archivos de eventos de fuente personalizados:** Los colaboradores configuran el acceso a archivos de datos externos (por ejemplo, de BigQuery, S3 o Snowflake) y asignan campos clave como user\_id, campaign\_id y SKU al esquema de DCP para dar soporte a la atribución.
 
+<div id="2-prepare-and-map-conversion-data" />
+
 ### 2. Preparar y asignar datos de conversión
 
 Los eventos de conversión incluyen SKU e identificadores de usuario que DCP usa para determinar la actividad desencadenada por la campaña.
 
 * La fuente de mapeo de campaña vincula las conversiones con los engagements mediante el mapeo del SKU del evento de conversión con el ID de campaña del evento de engagement.
 * Las conversiones que no se pueden asociar a ninguna campaña se marcan como **orgánico**.
+
+<div id="3-link-conversions-to-engagements" />
 
 ### 3. Vincular conversiones a engagements
 
@@ -169,6 +181,8 @@ DCP vincula las conversiones coincidentes con engagements mediante los siguiente
 
 Esto da como resultado registros de conversión atribuidos enriquecidos con metadatos tanto de campaña como de engagement.
 
+<div id="4-split-multi-sku-conversions" />
+
 ### 4. Dividir conversiones con varios SKU
 
 Si un evento de conversión incluye varios SKU:
@@ -176,11 +190,15 @@ Si un evento de conversión incluye varios SKU:
 * DCP divide los registros de conversión atribuidos con varias SKUs en registros individuales, cada uno de los cuales representa una única SKU.
 * Cada registro refleja la atribución de un único **objetivo de conversión**.
 
+<div id="5-filter-non-target-skus" />
+
 ### 5. Filtrar SKU que no son objetivo
 
 Para garantizar que solo se conserven las conversiones relevantes:
 
 * DCP filtra los registros de SKU que no son objetivos de conversión para la campaña.
+
+<div id="6-deduplicate-conversion-events" />
 
 ### 6. Eliminar eventos de conversión duplicados
 
@@ -188,6 +206,8 @@ Antes de la atribución, DCP elimina los duplicados:
 
 * Los registros duplicados de la misma fuente personalizada (por ejemplo, cargas repetidas) se descartan.
 * Si existe un evento in-app (IAE) coincidente, sustituye al registro de la fuente personalizada.
+
+<div id="7-apply-attribution-logic" />
 
 ### 7. Aplicar la lógica de atribución
 
@@ -197,6 +217,8 @@ DCP aplica el modelo de atribución de último toque de AppsFlyer con las siguie
 * **Un engagement vinculado a varias conversiones**: solo la **primera** conversión se atribuye al engagement; las conversiones adicionales permanecen sin atribuir.
 
 > Para más información, consulta Prioridades del método de atribución (Cascada de atribución).
+
+<div id="8-output-attributed-conversion-dataset" />
 
 ### 8. Resultado: conjunto de datos de conversiones atribuidas
 
@@ -215,6 +237,8 @@ El resultado final incluye:
 
 Los **eventos de conversión off-site** los proporcionan los colaboradores mediante **archivos fuente personalizados** y deben incluir los identificadores necesarios para la atribución, como el ID de clic de Google (`gclid`) o el ID de clic de Facebook (`fbclid`). Estos eventos se comparten con plataformas externas como Google y Meta, que cotejan los datos con sus registros de campaña y devuelven **metadatos enriquecidos**, incluidos identificadores de campaña, conjunto de anuncios y material creativo.
 
+<div id="1-prepare-conversion-data" />
+
 ### 1. Preparar datos de conversión
 
 Los registros de conversiones se estandarizan en función de la configuración de la colaboración:
@@ -222,9 +246,13 @@ Los registros de conversiones se estandarizan en función de la configuración d
 * Los colaboradores asignan campos personalizados a un esquema DCP unificado de conversión.
 * Google Ads y Meta Ads requieren campos específicos; las reglas de validación garantizan que las asignaciones cumplan los estándares de cada partner antes de continuar.
 
+<div id="2-deduplicate-conversion-events" />
+
 ### 2. Eliminar duplicados de eventos de conversión
 
 Antes de la atribución, DCP elimina los registros duplicados de la misma fuente personalizada (por ejemplo, cargas repetidas) y los descarta.
+
+<div id="3-filter-for-sharing-eligibility" />
 
 ### 3. Filtrar por elegibilidad para compartir
 
@@ -238,12 +266,16 @@ DCP comprueba si las conversiones offsite cumplen los criterios para compartirse
 
 Las conversiones que no cumplan alguno de los criterios se excluyen de la compartición con Partners.
 
+<div id="4-filter-according-to-last-touch-attribution" />
+
 ### 4. Filtra según la atribución de último toque
 
 La atribución se asigna en función del punto de contacto más reciente:
 
 * Si un ID de clic válido de Google o Meta es más reciente, la atribución se asigna a ese partner y se comparte solo con ese partner.
 * Si ambos ID de clic existen en la conversión, prevalece el más reciente.
+
+<div id="5-share-with-google-and-meta" />
 
 ### 5. Compartir con Google y Meta
 
@@ -253,6 +285,8 @@ Las conversiones aptas se comparten de forma segura mediante las API de Partners
 * **Google:** Offline Conversion API (OCI)
 
 Cada conversión se envía a un solo partner. Los colaboradores deben configurar la cuenta de destino (ID del conjunto de datos de Meta o ID de la acción de conversión de Google).
+
+<div id="6-google-and-meta-response-enrichment" />
 
 ### 6. Enriquecimiento de respuestas de Google y Meta
 
@@ -264,6 +298,8 @@ Google y Meta devuelven datos de atribución enriquecidos a través de sus API d
 * Creative ID
 
 AppsFlyer realiza la atribución en función de los registros enriquecidos.
+
+<div id="7-output-attributed-conversion-dataset" />
 
 ### 7. Resultado: conjunto de datos de conversiones atribuidas
 
@@ -288,12 +324,16 @@ El flujo de atribución off-site y on-site de DCP deduplica, atribuye, enriquece
 
 [<Image alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)
 
+<div id="1-on-site-and-off-site-record-processing-is-performed" />
+
 ### 1. Se realiza el procesamiento de registros on-site y off-site
 
 Los registros de conversión se estandarizan según la configuración de la colaboración:
 
 * Procesamiento on-site hasta e incluido el paso 6 en la atribución on-site.
 * Procesamiento off-site hasta e incluido el paso 4 en la atribución off-site.
+
+<div id="2-apply-last-touch-attribution" />
 
 ### 2. Aplicar la atribución de último toque
 
@@ -302,6 +342,8 @@ La atribución se asigna en función del punto de contacto más reciente:
 * Si un evento de CMN (on-site) es el más reciente, la conversión se atribuye a CMN y no se comparte con Meta ni con Google.
 * Si un ID de clic válido de Google o Meta es más reciente, la atribución se asigna a ese partner y se comparte solo con ese partner.
 * Si ambos ID de clic existen en la conversión, prevalece el más reciente.
+
+<div id="3-share-with-google-and-meta" />
 
 ### 3. Compartir con Google y Meta
 
@@ -312,6 +354,8 @@ Las conversiones aptas se comparten de forma segura a través de las API de part
 
 Cada conversión se envía solo a un partner. Los anunciantes deben configurar la cuenta de destino (ID del conjunto de datos de Meta o ID de la acción de conversión de Google).
 
+<div id="4-off-site-response-enrichment" />
+
 ### 4. Enriquecimiento de respuestas off-site
 
 Google y Meta devuelven datos de atribución enriquecidos a través de sus API de Insights, incluidos:
@@ -320,6 +364,8 @@ Google y Meta devuelven datos de atribución enriquecidos a través de sus API d
 * ID de conjunto de anuncios
 * Retargeting: Primer inicio después del re-engagement o la reatribución.
 * Creative ID
+
+<div id="5-on-site-and-off-site-conversion-merge" />
 
 ### 5. Combinación de conversiones on-site y off-site
 
@@ -330,6 +376,8 @@ DCP combina estas conversiones off-site con las conversiones on-site en un conju
 * Lista para dashboards, exportaciones y análisis de rendimiento
 
 </Accordion>
+
+<div id="set-up-collaboration-measurement" />
 
 ## Configura la medición de colaboración
 

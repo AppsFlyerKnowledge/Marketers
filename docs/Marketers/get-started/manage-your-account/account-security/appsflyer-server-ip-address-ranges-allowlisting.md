@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Direcciones IP de AppsFlyer utilizadas para solicitudes de API salientes.
 
+<div id="appsflyer-server-ip-address-ranges" />
+
 ## Rangos de direcciones IP del servidor de AppsFlyer
 
 Las direcciones IP enumeradas están controladas por y para el uso de AppsFlyer. La lista cambia de vez en cuando de acuerdo con nuestra capacidad y los requisitos operativos. Hacemos todo lo posible por hacer cambios en la lista con poca frecuencia.
@@ -45,11 +47,15 @@ Las direcciones permitidas utilizan los siguientes bloques CIDR:
 * [45.92.116.0/22]
 * [194.28.46.0/23]
 
+<div id="uploading-audiences" />
+
 ### Cargar Audiences
 
 Si usas dispositivos de perímetro de red, como firewalls y servidores proxy, debes pedirle a tu equipo de seguridad que te permita agregar las direcciones IP de AppsFlyer como se indica en esta [lista de IP permitidas para Audiences](https://support.appsflyer.com/hc/article_attachments/16888953497617).
 
 Aprende más sobre <Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiences</Anchor>.
+
+<div id="pull-api-and-server-to-server-s2s" />
 
 ### Pull API y servidor a servidor (S2S)
 

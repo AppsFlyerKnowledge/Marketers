@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Advanced-Matching Data Sharing permite que los identificadores de usuario con Hashing, como el correo electrónico y el número de teléfono, se reenvíen de AppsFlyer a las ad network seleccionadas, lo que permite a los Partners atribuir eventos a engagement con anuncios sin un ID de dispositivo.
 
+<div id="about-advanced-matching-data-sharing" />
+
 ## Acerca de la compartición de datos de Advanced Matching
 
 A medida que los identificadores de dispositivo están menos disponibles, las ad network dependen cada vez más de datos propios para hacer coincidir el engagement con anuncios. La compartición de datos de Advanced Matching cubre esta carencia reenviando identificadores con hash a los Partners compatibles en un formato conforme con la privacidad.
@@ -30,6 +32,8 @@ La función es opcional y se configura por Partners. Cuando está habilitada en 
 > 🚧 **Important**
 >
 > Todos los identificadores deben estar hashed con SHA-256 antes de llegar a AppsFlyer, ya sea en el dispositivo mediante el SDK o del lado del servidor mediante la Server-to-Server (S2S) API. Los datos en texto sin formato nunca se reciben, almacenan ni reenvían, y cualquier valor que no supere la validación se descarta en el momento de la ingesta.
+
+<div id="supported-partners" />
 
 ### Socios compatibles
 
@@ -53,6 +57,8 @@ Advanced-Matching Data Sharing está disponible para las siguientes redes:
 | Roku | rokuads\_int | Correo electrónico hashed, número de teléfono hashed |
 | Smadex | smadex\_int | Correo electrónico hashed, número de teléfono hashed, nombre hashed, apellido hashed |
 
+<div id="the-end-to-end-flow" />
+
 ## Flujo integral
 
 Esto es lo que ocurre desde el momento en que se recupera un identificador hasta el momento en que llega a un partner:
@@ -66,6 +72,8 @@ Esto es lo que ocurre desde el momento en que se recupera un identificador hasta
 > 📘 **Note**
 >
 > Los identificadores con hashing solo se reenvían a los partners para los que Advanced-Matching Data Sharing está habilitado. Cuando la configuración está desactivada para un partner, no se comparte ningún dato con hash con ese partner, incluso si hay identificadores en el evento.
+
+<div id="how-hashed-user-identifiers-reach-appsflyer" />
 
 ## Cómo llegan los identificadores de usuario con hashing a AppsFlyer
 
@@ -122,12 +130,16 @@ Al enviar eventos mediante la API S2S de eventos in-app, los identificadores deb
 
 </Accordion>
 
+<div id="why-are-there-two-phone-number-fields" />
+
 ### ¿Por qué hay dos campos de número de teléfono?
 
 Las redes comparan eventos al cotejar el hash que AppsFlyer reenvía con el hash del número de teléfono del usuario que tienen almacenado. Como el mismo número, al normalizarse en un formato diferente, genera un hash distinto, ambas partes deben aplicar el hash a partir del mismo formato para que haya coincidencia. Como las redes normalizan los números de teléfono de forma distinta y AppsFlyer recibe valores ya hasheados, deben enviarse ambas versiones para cubrir todos los partners compatibles.
 
 * `phone_number_hashed`: para Meta y Snapchat. Formato de normalización antes de aplicar el hash: `16501234567`
 * `phone_number_e164_hashed`: para Google y TikTok. Formato de normalización antes de aplicar el hash: `+16501234567`
+
+<div id="normalize-and-hash-identifiers" />
 
 ## Normalizar y aplicar hashing a los identificadores
 
@@ -202,6 +214,8 @@ Envía el ID de login de Facebook sin procesar tal como lo proporciona el SDK de
 
 </Accordion>
 
+<div id="turn-on-advanced-matching-data-sharing" />
+
 ## Activa el uso compartido de datos de Advanced Matching
 
 Advanced-Matching Data Sharing se controla por partner y por aplicación, y debe habilitarse explícitamente para cada red.
@@ -219,6 +233,8 @@ Cuando el uso compartido de datos de Advanced Matching está activado, cualquier
 >
 > Desactivar el uso compartido de datos de Advanced Matching detiene inmediatamente el uso compartido de datos con Hashing con ese partner. No afecta a otros ajustes de integración, incluidos los postbacks y los datos de eventos.
 
+<div id="privacy-and-data-handling" />
+
 ## Privacidad y tratamiento de datos
 
 Cuando el uso compartido de datos de Advanced Matching está activado para un partner, AppsFlyer empieza a reenviar a esa red identificadores de usuario con Hashing junto con los datos de eventos. Antes de activarlo, confirma lo siguiente:
@@ -230,6 +246,8 @@ Cuando el uso compartido de datos de Advanced Matching está activado para un pa
 > 🚧 **Important**
 >
 > AppsFlyer no procesa ni almacena información de identificación personal (PII) en texto sin formato. Todos los campos de ID se validan en la ingesta: los valores que no se ajustan al formato SHA-256 se descartan y nunca se reenvían a ningún Partner.
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Adikteev, un partner integrado de ad network de AppsFlyer, es una empresa de tecnología publicitaria centrada en el retargeting in-app y la tecnología publicitaria de engagement. Adikteev ofrece atribución móvil basada en clics y view-through. Además, Adikteev también ofrece retargeting basado en clics que puedes registrar con AppsFlyer.
 
+<div id="setting-up-adikteev" />
+
 ## Configuración de Adikteev
 
 **Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el Partners para abrir una antes de configurar la integración.
@@ -42,6 +44,8 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
@@ -53,12 +57,16 @@ Configuración general
 
 Activa esta opción si quieres atribuir instalaciones view-through de Adikteev. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Adikteev después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permite enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes únicamente de usuarios atribuidos a Adikteev.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para reportarla a Adikteev.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -87,6 +95,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a A
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -105,6 +115,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configuraciones de retargeting
 
@@ -139,6 +151,8 @@ Defina el plazo posterior al re-engagement, durante el cual los eventos in-app d
 
 **Parámetro del enlace de atribución:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeros inicios) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Adikteev.
@@ -147,9 +161,13 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Haz clic en el enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Adikteev para que se active cuando los leads hagan clic en el anuncio correspondiente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -160,6 +178,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 **Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 
@@ -196,6 +216,8 @@ La integración de ingresos por anuncios no está disponible para Adikteev.
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Adikteev. Ten en cuenta que, incluso si la atribución está deshabilitada para Adikteev, la pestaña de permisos está activa y puedes otorgarle el control a Adikteev.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

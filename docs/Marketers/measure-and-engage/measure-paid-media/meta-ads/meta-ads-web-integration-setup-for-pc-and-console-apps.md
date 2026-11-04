@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En resumen:** Aprende a integrar Meta Web para aplicaciones de PC y consola con AppsFlyer y a configurar campañas en Meta Web.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Esta integración solo está disponible para aplicaciones de PC y consola, como Steam, Epic o Native PC. Para aplicaciones móviles, consulta la página de <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup">configuración de la integración de Meta Ads</Anchor>.
+
+<div id="overview" />
 
 ## General
 
@@ -33,9 +37,13 @@ Este artículo contiene información e instrucciones sobre cómo configurar y us
 * [Configuración de Meta Web en AppsFlyer](#configuración-de-meta-web-en-appsflyer).
 * [Configuración de campañas en Meta para aplicaciones de PC y consola](/docs/meta-ads-web-integration-setup-for-pc-and-console-apps#configuración-de-campañas-en-meta-web-para-aplicaciones-de-pc-y-consola).
 
+<div id="prerequisite" />
+
 ### Requisito previo
 
 Antes de activar la integración de Meta Web, asegúrate de tener una [cuenta comercial en Meta Business Manager](https://www.facebook.com/business/help/1710077379203657?id=180505742745347).
+
+<div id="activating-partner-in-appsflyer" />
 
 ## Activación del partner en AppsFlyer
 
@@ -47,6 +55,8 @@ Antes de activar la integración de Meta Web, asegúrate de tener una [cuenta co
 4. En la pestaña **Integración**, selecciona **Activar partner**.  
    **Nota: <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">El interruptor debe permanecer ON (</Anchor><Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.**
 5. Completa la configuración utilizando las pestañas correspondientes, como se describe en la sección a continuación.
+
+<div id="setting-up-meta-web-in-appsflyer" />
 
 ## Configuración de Meta Web en AppsFlyer
 
@@ -60,9 +70,13 @@ La integración con Meta Web solo admite el envío de postbacks para instalacion
 
 La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
+<div id="activate-partner" />
+
 #### Activar partner
 
 Para configurar la integración, primero debes activar el interruptor **Activar partner**.
+
+<div id="general-settings" />
 
 #### Configuración general
 
@@ -75,6 +89,8 @@ Para configurar la integración, primero debes activar el interruptor **Activar 
 * **Token de acceso:** Ingresa el token de acceso. Para recuperarlo, sigue [estas instrucciones](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token).
 * **Limitar el uso de la información personal de los usuarios en Meta Ads (CCPA):** Activa esta opción para habilitar el cumplimiento de las <Anchor target="_blank" href="/marketers/es/docs/send-opendsr-api-requests">leyes de protección de datos</Anchor>.  
   **Nota:** Cumplir con las regulaciones de privacidad de la CCPA limita los datos provenientes de los usuarios de Meta Ads que residen en California, EE.UU.
+
+<div id="enable-view-through-attribution" />
 
 #### Habilitar la atribución view-through
 
@@ -92,12 +108,16 @@ Cuando un usuario hace clic en un anuncio de Meta Web y llega a una landing page
 6. Desplázate a la sección **Atribución view-through** y configura la **ventana de lookback por view-through** (hasta 24 horas).
 7. Haz clic en **Guardar integración** para aplicar tu configuración.
 
+<div id="default-postbacks" />
+
 #### Postbacks predeterminados
 
 Los postbacks de las instalaciones se envían automáticamente a Meta Web. En el campo **For Users From**, selecciona una de las siguientes opciones:
 
 * **Sólo este partner:** Los postbacks de eventos in-app se envían solo para eventos atribuidos a este partner, es decir, el usuario que los realizó proviene de este partner.
 * **Todas las fuentes de medios, incluidas las orgánicas,** sirven para garantizar que los postbacks de eventos in-app se envíen para eventos realizados por usuarios que proceden de este partner, de otros partners o de fuentes orgánicas.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -160,6 +180,8 @@ Actualmente, no se otorgan permisos a Meta Web.
 
 </Accordion>
 
+<div id="setting-up-campaigns-in-meta-web-for-pc-and-console-apps" />
+
 ## Configuración de campañas en Meta Web para aplicaciones de PC y consola
 
 **Cuando configures tu nueva campaña**:
@@ -174,20 +196,28 @@ Actualmente, no se otorgan permisos a Meta Web.
   * Página de aterrizaje web (recomendada cuando tienes una aplicación en múltiples plataformas)
   * URL de la tienda (se recomienda cuando tu aplicación está en una sola tienda de aplicaciones, en una sola plataforma)
 
+<div id="view-web-to-app-attribution-data" />
+
 ## Ver datos de atribución web-to-app
 
 Aunque los eventos de conversión basados en web se envían a Meta con el PID de `metaweb_int` original, se reportan en el dashboard de AppsFlyer y en los reportes de raw data con el PID de `Facebook Ads`. Esto se aplica tanto a los eventos de conversión primarios como a los eventos de asistencia a la conversión.
 
 Esta vista unificada de reportes te permite analizar el rendimiento de las campañas web y app en un solo lugar, incluidos reportes completos de costos web y móvil.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver en el dashboard
 
 Todas las atribuciones web-to-app de Meta aparecen en `Facebook Ads` en los dashboards General y Actividad. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico web y de aplicaciones dentro de tus datos de Meta Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver en reportes raw data y API
 
 * **Las exportaciones de raw data y las respuestas de la API** incluyen el PID `Facebook Ads` en el campo `media_source` para la actividad web de Meta. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url` que muestra `metaweb_int` como el PID utilizado durante la creación de campañas web.
 * Los **reportes de postbacks** muestran a `metaweb_int` como la fuente de medios original a la que se envió el postback.
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 

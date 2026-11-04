@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** DataLift, un partner integrado de ad network de AppsFlyer, permite a los app marketers acceder de forma programática a los principales inventarios de anuncios móviles de todo el mundo y controlar sus campañas a través de una única plataforma tecnológica propietaria, lo que proporciona integración avanzada de datos y capacidades ampliadas de targeting y gestión de audiencias. Además de la atribución móvil basada en clics, DataLift también ofrece retargeting, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-datalift" />
+
 ## Configuración de DataLift
 
 **Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el Partners para abrir una antes de configurar la integración.
@@ -43,12 +45,18 @@ La ventana de configuración de DataLift incluye 3 pestañas activas: Integraci�
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="general-settings" />
+
 ### Configuración general
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -56,6 +64,8 @@ Envía postbacks automáticos a DataLift después de las instalaciones y los re-
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos procedentes solo de usuarios atribuidos a DataLift.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para reportarla a Datalift Retargeting.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -85,6 +95,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a D
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -103,6 +115,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**Estructura y parámetros del enlace de atribución de AppsFlyer**</Anchor>.
+
+<div id="retargeting-settings" />
 
 ### Configuraciones de retargeting
 
@@ -137,6 +151,8 @@ Defina el plazo posterior al re-engagement, durante el cual los eventos in-app d
 
 **Parámetro del enlace de atribución:** af\_reengagement\_window
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeros inicios) que tengan lugar dentro de la ventana de lookback pueden atribuirse a DataLift.
@@ -144,6 +160,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 

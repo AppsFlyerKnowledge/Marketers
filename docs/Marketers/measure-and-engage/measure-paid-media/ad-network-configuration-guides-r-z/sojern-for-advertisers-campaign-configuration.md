@@ -25,6 +25,8 @@ x-zendesk:
 
 Para configurar tus campañas con Sojern for Advertisers, sigue los pasos a continuación.
 
+<div id="setting-up-sojern-for-advertisers" />
+
 ## Configuración de Sojern for Advertisers para anunciantes
 
 **Requisito previo:** una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -45,14 +47,20 @@ Para configurar tus campañas con Sojern for Advertisers, sigue los pasos a cont
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, deberás activar el interruptor ***Activar partner*** para habilitar la configuración de los parámetros de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red de TODAS las instalaciones, Sojern for Advertisers prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Sojern for Advertisers.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -62,12 +70,16 @@ Sojern for Advertisers se conecta con AppsFlyer a través de un ID de partner ú
 
 ![Sojern_msc_new_2.png](https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Sojern for Advertisers después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos que provienen únicamente de usuarios atribuidos a Sojern for Advertisers.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para reportarla a Sojern for Advertisers.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -87,6 +99,8 @@ En esta sección, puedes asignar tus eventos de AppsFlyer a Sojern for Advertise
 | **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
 | **Identificador de evento de partner** | El nombre o ID único de cada evento según se define del lado de Sojern for Advertisers.  <br />Obtén el ID de evento correspondiente de Sojern for Advertisers y configúralo en el campo de texto. |
 | **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
+
+<div id="event-types" />
 
 ### Tipos de evento
 
@@ -154,6 +168,8 @@ Sojern for Advertisers requiere la implementación de los siguientes eventos:
 | Resultado de búsqueda | VACATION\_SEARCH | af\_list\_view | Página de resultados de búsqueda que muestra una lista de opciones |
 | Producto | VACATION\_PRODUCT | af\_content\_view | Vista de un producto/opción específico de los resultados de búsqueda |
 | Confirmación | VACATION\_CONFIRMATION | af\_compra | Compra del/de los artículo(s) |
+
+<div id="correct-configuration-of-in-app-events" />
 
 #### Configuración correcta de los eventos in-app
 
@@ -227,6 +243,8 @@ A continuación se muestra un ejemplo de la búsqueda y la confirmación para el
 |  | Precio de compra | hp | af\_revenue |
 |  | Moneda de compra | hcu | af\_currency |
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > Valores del evento de búsqueda de vuelos:
@@ -242,6 +260,8 @@ A continuación se muestra un ejemplo de la búsqueda y la confirmación para el
 En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a Sojern for Advertisers para atribuir campañas, conjuntos de anuncios o incluso anuncios individuales. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
 Esta pestaña se divide en distintas secciones:
+
+<div id="attribution-link-parameters" />
 
 ### Parámetros de enlaces de atribución
 
@@ -262,6 +282,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeros inicios) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Sojern for Advertisers.
@@ -269,6 +291,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 

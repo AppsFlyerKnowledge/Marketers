@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **De un vistazo:** Por qué algunas dimensiones de datos agregados se muestran como *superadas* y cómo evitar que se alcancen los límites de cardinalidad.
 
+<div id="what-are-exceeded-dimensions" />
+
 ## ¿Qué son las dimensiones superadas?
 
 AppsFlyer recopila tus datos de instalación y eventos y los agrega. Los datos se agregan mediante valores únicos que llenan una dimensión determinada. El número de valores únicos en una dimensión se denomina cardinalidad. La mayoría de las herramientas de análisis y reportes agregados tienen límites de cardinalidad por dimensión. Cuando el número de valores únicos de una dimensión supera el límite de cardinalidad, los datos restantes se agrupan en un grupo *superado*. Y cuando el número de valores únicos en la dimensión de la fuente de medios supera el límite de cardinalidad, los datos restantes de la fuente de medios, **así como todas las dimensiones basadas en las fuentes de medios restantes**, se agrupan en grupos *superados*.
 
 Los siguientes ejemplos ilustran la cardinalidad y cómo afecta a tus reportes.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -64,6 +68,8 @@ La siguiente tabla muestra los límites de cardinalidad por día y por aplicaci�
 
 <table><tbody><tr><th>Dimensión</th><th>Nombre de grupo excedido</th><th>Tipo de límite por...</th><th>Límite de cardinalidad por día </th><th>Cardinalidad para Protect360 por día</th></tr><tr><td>Anuncio</td><td>Límite de anuncios superado</td><td>Fuente de medios</td><td>1000</td><td>-</td></tr><tr><td>ID de anuncio</td><td>Exceeded_AdID_Limit</td><td>Fuente de medios</td><td>1000</td><td>-</td></tr><tr><td>Conjunto de anuncios</td><td>Límite de conjuntos de anuncios superado</td><td>Fuente de medios</td><td>1000</td><td>-</td></tr><tr><td>ID de conjunto de anuncios</td><td>Exceeded_AdSetID_Limit</td><td>Fuente de medios</td><td>1000</td><td>-</td></tr><tr><td>Campaña</td><td>Exceeded_Campaign_Limit</td><td>Fuente de medios</td><td>3000</td><td><ul><li>Instalaciones/eventos in-app: 3000</li><li>Impresiones, clics 100 </li></ul></td></tr><tr><td>ID de campaña</td><td>Exceeded_CampaignID_Limit</td><td>Fuente de medios</td><td>3000</td><td><ul><li>Instalaciones/eventos in-app: 3000</li><li>Impresiones, clics 100 </li></ul></td></tr><tr><td>Canal</td><td>Límite de canales superado</td><td>Fuente de medios</td><td>20</td><td>20</td></tr><tr><td>ID de sitio</td><td>Exceeded_SiteID_Limit</td><td>Fuente de medios</td><td>1000\*\*</td><td><ul><li>Instalaciones/eventos in-app: 1000</li></ul></td></tr><tr><td>Eventos</td><td>Exceeded_Events_Limit</td><td>Aplicación </td><td>300</td><td>Instalaciones/eventos in-app: 300</td></tr><tr><td>Palabras clave</td><td>Límite de palabras clave superado</td><td>Fuente de medios</td><td>1000</td><td>-</td></tr><tr><td>Nombre de fuente de medios.</td><td>Límite de fuente de medios superado</td><td>Aplicación</td><td>1000</td><td><ul><li>Instalaciones/eventos in-app: 1000</li><li>Impresiones, clics 100 </li></ul></td></tr><tr><td colspan="5"><p>\* Si <span>el número de valores únicos en la dimensión de la fuente de medios supera el límite de cardinalidad, los datos restantes de la fuente de medios</span>, <strong>así como todas las dimensiones basadas en las fuentes de medios restantes</strong>, <span>se agrupan en</span> <span>grupos</span> <em>superados</em>.</p><p><span>\*\* Consulta <a href="./measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">Exceeded_SiteID_Limit</a> para obtener más detalles y conocer los límites.</span></p></td></tr></tbody></table>
 
+<div id="cardinality-limits-per-dimension" />
+
 ## Límites de cardinalidad por dimensión
 
 <div id="exceeded_adset_limit-and-exceeded_ad_limit" />
@@ -72,6 +78,8 @@ La siguiente tabla muestra los límites de cardinalidad por día y por aplicaci�
 
 * Están disponibles hasta 1000 nombres de conjuntos de anuncios únicos y 1000 nombres de anuncios únicos por fuente de medios.
   * En un día determinado, la información del conjunto de anuncios del conjunto de anuncios número 1001 y superiores se agrupa en la fuente **Exceeded\_AdSet\_Limit**. Lo mismo se aplica a la fuente **Exceeded\_Ad\_Limit**.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -99,6 +107,8 @@ La siguiente tabla muestra los límites de cardinalidad por día y por aplicaci�
 
 * Hay disponibles hasta 3000 nombres de campaña únicos por día.
   * En un día, la información de la campaña número 3001 y posteriores se agrupa en la fuente **Exceeded\_Campaign\_Limit**.
+
+<div id="tip-1" />
 
 > 👍 **Consejo**
 >
@@ -134,12 +144,16 @@ La siguiente tabla muestra los límites de cardinalidad por día y por aplicaci�
 * Hay disponibles hasta 300 nombres de eventos únicos por día.
   * En un día, toda la información del evento número 301 y posteriores se atribuye al nombre del evento denominado **Exceeded\_Events\_Limit**.
 
+<div id="tip-2" />
+
 > 👍 **Consejo**
 >
 > Para dejar de ver **Exceeded\_Events\_Limit**, considera usar:
 >
 > * <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">Eventos in-app enriquecidos</Anchor>. En lugar de informar sobre cientos de eventos diferentes, define una pequeña cantidad de nombres de eventos generales (idealmente hasta 20). Utiliza valores de eventos dinámicos para diferenciar entre estos eventos. Esto te permite optimizar según los parámetros de los valores y realizar análisis en función de los valores de los eventos, que están disponibles a través del <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">reporte de raw data de eventos in-app</Anchor>.
 > * <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud">Reglas de validación</Anchor> para eliminar los eventos in-app innecesarios de la plataforma AppsFlyer.
+
+<div id="example-1" />
 
 > 📄 **Ejemplo**
 >
@@ -175,11 +189,15 @@ El ID del sitio (por clics, impresiones, instalaciones y eventos in-app) tiene 2
   * En un día, la información del identificador del sitio número 1001 y superior por fuente multimedia se agrupa en un único identificador de sitio denominado **Exceeded\_siteid\_limit.** Por lo tanto, si ves el ID del sitio **Exceeded\_siteid\_limit**, significa que hay demasiados ID de sitio usados por la fuente multimedia en cuestión, y tratar de optimizar el tráfico de la fuente de acuerdo con los ID del sitio se vuelve menos preciso y menos efectivo.
 * A partir del 19 de agosto de 2024, si hay más de 5000 ID de sitio al día por fuente de medios, solo se muestran 10 ID de sitio. Todos los demás ID del sitio se agrupan en un único ID del sitio titulado **Exceeded\_SiteID\_Limit**.
 
+<div id="tip-3" />
+
 > 👍 **Consejo**
 >
 > «Divide y vencerás». En lugar de usar miles de ID de sitios por fuente multimedia, lo que distorsiona los datos agregados, usa un segundo parámetro en los enlaces de atribución llamado **af\_sub\_siteid.** Define un número reducido de ID de sitios generales (idealmente hasta 50) y asigna todos los ID de sitios anteriores como ID de subsitios en estos ID de sitios generales. Esto te permite:
 > 1. Prevenir ver **Exceeded\_SITEID\_LIMIT**2. Optimizar de manera eficiente de acuerdo con el tráfico significativo de ID del sitio
 > 3. Realizar un análisis profundo basado en los ID del sitio y los ID de los subsitios en los raw data.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -187,7 +205,11 @@ El ID del sitio (por clics, impresiones, instalaciones y eventos in-app) tiene 2
 
 </Accordion>
 
+<div id="how-to-avoid-getting-exceeded-sources" />
+
 ## ¿Cómo evitar que se superen las fuentes?
+
+<div id="the-long-term-solution" />
 
 ### La solución a largo plazo
 
@@ -195,11 +217,15 @@ La mayoría de los anunciantes no encontrarán fuentes de **Exceeded** (superada
 
 Si encuentras fuentes **Superadas**, probablemente se deba a que una o más fuentes multimedia utilizan valores dinámicos para los nombres de las campañas, los ID de los sitios, los conjuntos de anuncios o los anuncios. Los eventos in-app dinámicos en la aplicación dentro del código de la aplicación pueden hacer que aparezcan los datos de origen de **Exceeded\_Events\_Limit**.
 
+<div id="tip-4" />
+
 > 👍 **Consejo**
 >
 > Usa solo valores estáticos para los nombres de los eventos in-app, las campañas, los ID de sitios, los conjuntos de anuncios y los anuncios para evitar que se **Superen** las fuentes.
 >
 > Consulta también los consejos específicos de cualquier fuente de **Superada** anterior.
+
+<div id="the-short-term-solution" />
 
 ### La solución a corto plazo
 
@@ -208,6 +234,8 @@ La solución a largo plazo puede tardar entre unos días y unas semanas en imple
 Pero, ¿qué pasa si quieres ver tus datos ahora mismo?
 
 Como se explicó antes, una fuente **Superada** ocurre cuando AppsFlyer recibe la fuente de N+1 clics (o eventos) durante un solo día. Es posible que las fuentes multimedia más destacadas que utilizas lleguen más tarde y, por lo tanto, se combinen con los datos de una fuente **Superada**. Este es un truco sencillo para minimizar el efecto de cualquier fuente **Superada** que veas.
+
+<div id="tip-5" />
 
 > 👍 **Consejo**
 >

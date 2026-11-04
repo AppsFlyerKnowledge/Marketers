@@ -27,6 +27,8 @@ x-zendesk:
 
 ![CrossPromo_recorridoDelUsuario](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
+<div id="about-cross-promotion" />
+
 ## Sobre la promoción cruzada
 
 Son una de las mejores maneras de promocionar tus aplicaciones existentes o de guiar a los usuarios hacia las nuevas aplicaciones lanzadas por tu empresa. Este tipo de campañas pueden generar tasas de conversión y retención más altas en comparación con la mayoría de las demás fuentes de tráfico. Dado que la promoción cruzada es publicidad en medios propios, puedes usar la [coincidencia de ID de dispositivo](/docs/cross-promotion-attribution-for-marketers#atribución-de-promociones-cruzadas) para atribuir de forma determinística las nuevas instalaciones. La atribución entre promociones está disponible para todas las cuentas, independientemente de tu plan de AppsFlyer.
@@ -34,6 +36,8 @@ Son una de las mejores maneras de promocionar tus aplicaciones existentes o de g
 La siguiente imagen muestra el dashboard de la aplicación promocionada con un desglose de las métricas de las campañas que se publican en medios propios (**af\_cross\_promotion**) y otras fuentes de medios. Puedes ver que el número de descargas y la tasa de conversión de la campaña de promoción cruzada son mucho más altos que los de otras fuentes de medios.
 
 [![CrossPromo_origenDeMedios](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+
+<div id="how-does-cross-promotion-work" />
 
 ### ¿Cómo funciona la promoción cruzada?
 
@@ -46,6 +50,8 @@ La siguiente imagen muestra el dashboard de la aplicación promocionada con un d
    * La aplicación que impulsa la instalación, la aplicación nativa, aparece como **ID de sitio** de esta fuente de medios.
 6. El SDK genera automáticamente un evento in-app.  
    El nombre del evento para Android es `af_cross_promotion` y para iOS es `af_cross_promotion_clicked`.
+
+<div id="attributing-cross-promotion" />
 
 ## Atribución de promociones cruzadas
 
@@ -63,6 +69,8 @@ El identificador de dispositivo utilizado para la coincidencia depende de lo sig
 | GNA Company | Dispositivos Android con servicios de Google Play |  |  |
 | OAID, ID de Android, IMEI, ID de Fire | Dispositivos Android sin servicios de Google Play |  |  |
 
+<div id="setting-up-cross-promotion" />
+
 ## Configuración de la promoción cruzada
 
 El proceso de configurar la atribución de promociones cruzadas requiere que el marketer y el desarrollador trabajen juntos para implementar código adicional en el SDK de AppsFlyer.
@@ -77,7 +85,11 @@ El flujo para el marketer y el desarrollador es el siguiente:
 | 4 | Comercializador | En el [dashboard de la aplicación promocionada](/docs/cross-promotion-attribution-for-marketers#dashboard-de-aplicaciones-promocionadas), consulta el tráfico que proviene de la campaña de promoción cruzada y optimiza tus campañas en consecuencia. |  |
 | 5 [Opcional] | Comercializador | Crea un [dashboard personalizado](/docs/cross-promotion-attribution-for-marketers#dashboard-personalizado) para comparar el tráfico de promociones cruzadas y compartir datos con los usuarios de la cuenta. |  |
 
+<div id="viewing-cross-promotion-data" />
+
 ## Visualización de datos de promociones cruzadas
+
+<div id="promoted-app-dashboard" />
 
 ### Dashboard de aplicaciones promocionadas
 
@@ -89,9 +101,13 @@ Te permite determinar qué aplicaciones nativas envían el mejor tráfico a la a
 2. Selecciona la fuente de medios **af\_cross\_promotion** (o tu fuente de medios personalizada).
 3. Agrupa por **ID de sitio** para ver la lista de aplicaciones nativas.[![CrossPromo_IDDelSitio](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
 
+<div id="analysis" />
+
 #### Análisis
 
 Al ver los datos sobre las instalaciones, los clics, las impresiones y la tasa de conversión de varias aplicaciones existentes que publican anuncios para la misma aplicación promocionada, puedes realizar un análisis de afinidad. Las aplicaciones nativas (ID de sitio) con las mejores tasas de conversión son las que mejor se adaptan a la aplicación promocionada y es más probable que sus usuarios la instalen. Basándote en esta información, puedes optimizar tus campañas de promoción cruzada en consecuencia.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -106,11 +122,15 @@ Al ver los datos sobre las instalaciones, los clics, las impresiones y la tasa d
 > * Lleva a cabo una campaña de promoción cruzada a gran escala en Golfing.
 > * Empieza a <Anchor target="_blank" href="/marketers/es/docs/measure-view-through-engagements#flujo-de-atribución-por-impresiones">atribuir las impresiones</Anchor> además de los clics. Dado que inicialmente configuraste tu campaña para medir solo los clics, las instalaciones de los usuarios que ven el anuncio sin hacer clic y luego lo instalan más tarde se cuentan como instalaciones orgánicas y no como no orgánicas. Esto significa que aún no tienes una imagen completa del rendimiento de la campaña para cada aplicación nativa.
 
+<div id="custom-dashboard" />
+
 ### Dashboard personalizado
 
 El dashboard de la aplicación promocionada es ideal para hacerte una idea de qué aplicaciones nativas generan el mejor tráfico. Pero, ¿qué pasa si quieres evaluar el rendimiento de una sola aplicación existente que se utiliza para promocionar varias aplicaciones? Aquí es donde un dashboard personalizado puede hacer exactamente lo que necesita.
 
 Un <Anchor target="_blank" href="/marketers/es/docs/custom-dashboards">dashboard personalizado</Anchor> te permite ver la información de varias aplicaciones promocionadas en un solo lugar, incluido el tráfico de promociones cruzadas. Además, es una forma rápida y sencilla de compartir datos con los usuarios de la cuenta.
+
+<div id="example-1" />
 
 > 📄 **Ejemplo**
 >

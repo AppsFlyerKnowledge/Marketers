@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **At a glance:** Descripción y comparación de reportes de atribución agregados y analíticos, herramientas y API disponibles.
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## Generación de reportes de rendimiento agregados y analíticos: herramientas y reportes
 
 Las herramientas de agregado y análisis de la plataforma proporcionan a los anunciantes métricas que les permiten evaluar el rendimiento de sus aplicaciones, campañas y usuarios.
@@ -86,6 +88,8 @@ Diferencias entre los tipos de cohorte
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### Reportes de trayectoria del usuario
 
 Los reportes descritos están disponibles a través de la página Datos exportados o mediante el uso de datos agregados de Pull API.
@@ -103,9 +107,13 @@ Son reportes de <Anchor target="_blank" href="/marketers/es/docs/troubleshooting
 
 Los campos de fecha en los archivos CSV tienen el formato aaaa-mm-dd. Cuando abres un archivo CSV en Excel, los campos de fecha se formatean según la configuración de fecha y hora de tu computadora. Asegúrate de seleccionar el formato de visualización de fecha adecuado en <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel.</Anchor>
 
+<div id="examples-of-aggregate-reports" />
+
 #### Ejemplos de reportes agregados
 
 [Ejemplos de reporte en una hoja de cálculo](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### Campos en reportes agregados de UA
 
@@ -121,6 +129,8 @@ En los reportes de retargeting, no existe distinción entre los usuarios orgáni
 
 Para obtener reportes de retargeting a través de Pull API, añade el parámetro *&reattr=true* a los URI de los reportes de rendimiento.
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### Reportes agregados de retargeting de LTV
 
 | Nombre del reporte | Agrupado por |
@@ -130,6 +140,8 @@ Para obtener reportes de retargeting a través de Pull API, añade el parámetro
 | Actividad por fecha | Fecha, agencia, fuente de medios, campaña |
 | País | País, agencia, fuente de medios, campaña |
 | País por fecha | Fecha, país, agencia, fuente de medios, campaña |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### Reportes agregados de retargeting de LTV
 
@@ -155,6 +167,8 @@ Para obtener reportes de retargeting a través de Pull API, añade el parámetro
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## Reportes de funciones
 
 <Accordion title="SKAdNetwork">
@@ -173,6 +187,8 @@ Los reportes están disponibles a través de la Pull API. Estos reportes no est�
 
 El rango de fechas se refiere a la fecha de instalación.
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Reportes agregados de Protect360 disponibles a través de Pull API
 
 | Nombre del reporte |
@@ -186,6 +202,8 @@ El rango de fechas se refiere a la fecha de instalación.
 **Limitación:** El motivo de bloqueo **Bots** se muestra incluso en casos en los que el motivo debería ser **versión de la app** o **falta el ID de usuario del cliente**.
 
 </Accordion>
+
+<div id="see-also" />
 
 #### Consulta también
 

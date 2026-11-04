@@ -23,15 +23,21 @@ x-zendesk:
 ---
 > **En resumen:** Aprende a crear fuentes de datos de medición y a proporcionar acceso a ellas de forma que puedan ser digeridas por el trabajo de atribución.
 
+<div id="overview" />
+
 ## Nota
 
 El primer paso para establecer el proceso de medición es preparar las tres entradas que lo alimentan: conversiones, engagements y mapeo de campaña. Estas entradas deben prepararse basándose en el esquema predefinido o en la estructura de eventos, dependiendo del modo de suministro de datos: eventos in-app o archivos fuente personalizados.
 
 Cuando el modo de provisión es archivos de origen personalizados, el trabajo de atribución se activa automáticamente cuando se suben a la nube las carpetas de conversión y registro de engagement necesarias. En el modo de eventos in-app, el trabajo se activa cuando se seleccionan los eventos in-app relevantes.
 
+<div id="prepare-in-app-events" />
+
 ## Preparar eventos in-app
 
 Puedes enviar datos de conversión y engagement a través de eventos in-app enviados por el SDK de AppsFlyer integrado en tu aplicación.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -112,6 +118,8 @@ Para proporcionar datos de conversión y engagement a través de eventos in-app,
 
 </Accordion>
 
+<div id="prepare-custom-source-files" />
+
 ## Preparar archivos fuente personalizados
 
 Si está realizando una [campaña on-site](#onsite-and-offsite-campaign-measurement), puedes utilizar archivos de origen personalizados como fuente de tus conversiones y engagement con el esquema que se indica en las tablas a seguir.
@@ -123,11 +131,15 @@ Si está realizando una [campaña on-site](#onsite-and-offsite-campaign-measurem
 Utiliza el esquema de la tabla a seguir para crear un archivo fuente personalizado de conversión.   
 El esquema de conversión es único para los tipos de campaña off-site y on-site, y para los distintos Partners de medios.
 
+<div id="media-partners" />
+
 #### Partners de medios seleccionados:
 
 **G**: Google
 
 **M**: Meta
+
+<div id="background-colors" />
 
 #### Colores de fondo:
 
@@ -148,6 +160,8 @@ El esquema de conversión es único para los tipos de campaña off-site y on-sit
 <Accordion title="Obligatorio en la fuente de datos personalizada">
 
 Utiliza el siguiente esquema para crear la fuente de datos de engagement.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -180,9 +194,13 @@ Utiliza el siguiente esquema para crear la fuente de datos de engagement.
 
 Para más información sobre cómo preparar fuentes y cargarlas en tu servicio en la nube, consulta la sección [Crear y conectar fuentes de datos personalizadas](#crear-y-conectar-fuentes-de-datos-personalizadas) de este documento.
 
+<div id="prepare-campaign-mapping-source" />
+
 ## Preparar la fuente de mapeo de la campaña
 
 La fuente de tus datos de mapeo de campaña es un archivo de fuente de datos personalizado con el esquema descrito en la tabla a seguir.
+
+<div id="note-2" />
 
 > 📘 **Nota:**
 >
@@ -205,6 +223,8 @@ Utiliza el siguiente esquema para crear la fuente de mapeo de campañas.
 </Accordion>
 
 Para más información sobre cómo crear archivos fuente y subirlos a tu servicio en la nube, consulta la sección [Crear y conectar fuentes de datos personalizadas](#crear-y-conectar-fuentes-de-datos-personalizadas) de este documento.
+
+<div id="attribution-job-ingestion-flow" />
 
 ## Flujo de ingestión de trabajos de atribución
 
@@ -257,6 +277,8 @@ Los datos de conversión y engagement pueden proceder de eventos in-app, fuentes
 Al configurar eventos in-app para conversiones, engagements o ambos, debes especificar el ID de la aplicación y el nombre del evento de conversión o engagement. Al final del día, el trabajo de atribución selecciona todos los eventos con el nombre y el ID de aplicación especificados que tengan la misma fecha de evento que el día de conversión.
 
 </Accordion>
+
+<div id="create-and-connect-custom-data-sources" />
 
 ## Crear y conectar fuentes de datos personalizadas
 

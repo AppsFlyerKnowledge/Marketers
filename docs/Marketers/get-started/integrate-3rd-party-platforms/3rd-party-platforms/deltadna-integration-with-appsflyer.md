@@ -31,6 +31,8 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
+<div id="integrating-with-deltadna" />
+
 ## Integración con deltaDNA
 
 > 🚧 **Important**
@@ -105,6 +107,8 @@ Una vez que hayas guardado la configuración, AppsFlyer envía los siguientes da
 > **Nota:**
 >
 > deltaDNA rechaza los postbacks de instalación de AppsFlyer si no se ha definido ningún ID de usuario del cliente ni UserID.
+
+<div id="viewing-the-attribution-data-in-the-deltadna-console" />
 
 ## Ver los datos de atribución en la consola de deltaDNA
 

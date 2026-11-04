@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Youdao DSP es un partner integrado de ad network de AppsFlyer.
 
+<div id="setting-up-youdao-dsp" />
+
 ## Configurar Youdao DSP
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -46,10 +48,14 @@ La ventana de configuración de Youdao DSP incluye 3 pestañas activas: Integrac
 
 La integración con Youdao DSP solo admite el evento de instalación en el postback predeterminado.
 
+<div id="activate-partner" />
+
 ### Activación de socios
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -64,6 +70,8 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Youdao DSP para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Youdao DSP. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
 Esta pestaña se divide en distintas secciones:
+
+<div id="attribution-link-parameters" />
 
 ### Parámetros de enlaces de atribución
 
@@ -86,6 +94,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de Atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clics
 
 Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Youdao DSP.
@@ -95,6 +105,8 @@ Este control deslizante te permite establecer el **tiempo máximo del clic a la 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### Enlace de atribución
 
@@ -125,6 +137,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Youdao DSP, tanto si el partner actúa como ad network, agencia o incluso como ambas. Ten en cuenta que, aunque la atribución esté desactivada para Youdao DSP, la pestaña de permisos está activa y puedes otorgar control a Youdao DSP.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Permisos para Redes de Publicidad
 

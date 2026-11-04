@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **Resumen:** Desde iOS 15, configura tu aplicación para enviar copias de postback a AppsFlyer además de enviarlas a las redes publicitarias. Haciéndolo, AppsFlyer puede validar el valor de conversión (CV) y verificar la integridad del postback. Configura el Push API de AppsFlyer para reenviar copias de postback a un punto final adicional que elijas.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > A lo largo de este artículo, las referencias a **SKAN** incluyen tanto **SKAdNetwork** como el framework más reciente **AdAttributionKit (AAK)**.
+
+<div id="why-send-postback-copies-to-appsflyer" />
 
 ## ¿Por qué enviar copias de postback a AppsFlyer?
 
@@ -35,6 +39,8 @@ x-zendesk:
 * Revisa el tipo de interacción táctil
 
 **¡Nota!** AppsFlyer aún necesita recibir los postbacks de la red publicitaria, ya que contienen datos adicionales proporcionados por esta (como el nombre de la campaña).
+
+<div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Configura tu aplicación para enviar copias de postback a AppsFlyer
 
@@ -47,11 +53,17 @@ Según la documentación de Apple, puedes establecer un único punto final de po
 3. Los postbacks se enviarán a AppsFlyer una vez que se publique la nueva versión (no desde TestFlight).
 4. Puedes ver los postbacks recibidos en el <Anchor target="_blank" href="/marketers/es/docs/skan-raw-data-reports">informe de copia de postbacks</Anchor>.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Las aplicaciones sin tráfico SKAN verán el siguiente mensaje incluso después de completar la configuración: Tu aplicación no está configurada para enviar copias de postback de iOS (iOS 15+) a AppsFlyer. Esto es necesario para garantizar la integridad de tu medición SKAN.
 
+<div id="common-misconceptions" />
+
 ## Conceptos erróneos comunes
+
+<div id="dont-believe-everything-you-hear" />
 
 > 📘 **¡No creas todo lo que escuches!**
 >
@@ -64,9 +76,13 @@ Según la documentación de Apple, puedes establecer un único punto final de po
 > * En cuanto configuro un punto final adicional, se envían copias de todos los postbacks allí.
 >   * Falso. La función de punto final adicional solo está disponible para dispositivos con iOS 15 o superior. No se envían copias de postbacks desde dispositivos con versiones anteriores.
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 Tras configurar una aplicación para enviar copias de postbacks a AppsFlyer, podría tardar un par de días en aparecer en el panel de control.
+
+<div id="see-also" />
 
 > 📄 **Consulte también**
 >

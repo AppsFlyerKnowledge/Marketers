@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Descubre las configuraciones que influyen en la atribución y el análisis de tu aplicación a través de todas las fuentes de medios.
 
+<div id="app-settings" />
+
 ## Configuración de la aplicación
 
 **Acceso:**
@@ -39,9 +41,13 @@ x-zendesk:
 2. Consulta las configuraciones y realiza los cambios necesarios en la página de configuración de la aplicación.
 3. Haz clic en **Guardar configuración.**
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > También puedes cambiar muchos de estos ajustes para varias apps a la vez, en lugar de hacerlo de una en una. Busca el botón **Aplicar a apps adicionales** junto a un ajuste modificado. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar ajustes a varias aplicaciones a la vez</Anchor>.
+
+<div id="general-app-settings" />
 
 ### Configuración general de la aplicación
 
@@ -145,6 +151,8 @@ x-zendesk:
           * En el caso de nuevas aplicaciones, la moneda se establece al añadir la aplicación.
         * El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>.
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### Herramientas de reportes afectadas por la moneda de la aplicación
 
         | Herramienta de reportes | Opciones de moneda disponibles |
@@ -160,7 +168,11 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### Configuración de atribución
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -175,6 +187,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>Atribución de re-engagement de aplicaciones móviles para SEO (búsqueda orgánica) y AEO | Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Atribución de búsqueda orgánica</Anchor><br /><br />**Para activar la atribución de SEO/AEO:**<ul><li>En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación** y activa la **atribución de re-engagement de aplicaciones móviles en SEO (búsqueda orgánica) y AEO.**</li></ul>También puedes cambiar esta configuración para varias aplicaciones a la vez. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
 | <span id="uninstall-measurement"></span>Medición de desinstalaciones | <Anchor target="_blank" href="/marketers/es/docs/measure-uninstalls">La medición de desinstalaciones</Anchor> está relacionada con las instalaciones que ocurren cuando la medición está activa.<br /><br />Este ajuste está disponible solo para aplicaciones de iOS y Android.<br /><br />**Para habilitar la medición de desinstalaciones:**<ol><li>Completa lo siguiente según el sistema operativo:<ul><li>**iOS**: Las aplicaciones que implementan la función de atribución de desinstalación en iOS deben cargar aquí el certificado P12.</li><li>**Android**: Para la atribución de desinstalación en Android, las aplicaciones requieren definir una clave de servidor Firebase/GCM aquí.</li></ul></li><li>Activa la **Medición de desinstalaciones**.</li><li>Haz clic en **Guardar configuración**.</li></ol>**Para detener la medición de desinstalaciones:**<ol><li>Desactiva la **Medición de desinstalaciones**.</li><li>Haz clic en **Guardar configuración.**</li></ol>El soporte para cambiar esta configuración en varias aplicaciones a la vez estará disponible pronto. Saber más en <Anchor target="_blank" href="/marketers/es/docs/apply-settings-to-multiple-apps-at-once">Aplicar la configuración a varias aplicaciones a la vez</Anchor>. |
 
+<div id="advanced-settings" />
+
 ### Configuraciones avanzadas
 
 | Configuración | Descripción |
@@ -184,6 +198,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>Alternativa de redirección en iOS 10.3 | [Obsoleto] Para iOS 10.3+. Hemos simplificado el flujo para los usuarios de iOS y ya no se utiliza este parámetro. <Anchor target="_blank" href="/marketers/es/docs/uri-scheme-fallback-for-ios">Redirecciones en iOS</Anchor>.<br /><br />Esta opción está disponible únicamente para aplicaciones iOS. |
 | <span id="change-app-name"></span>Cambiar nombre de la aplicación | <ul><li>El nombre de la app se muestra en el dashboard y en los reportes de datos. Esto es útil si tienes distintas versiones de la misma app, por ejemplo, por motivos de distribución regional.</li><li>Este cambio afecta cómo se muestra la app. El ID de la app, que se utiliza para identificarla al usar varias APIs de AppsFlyer, **permanece igual**.</li><li>Los nombres están limitados a 50 caracteres.</li></ul> |
 | <span id="outofstore-app-url"></span>URL de la app fuera de la tienda | <ul><li>Configura la URL de descarga de la app como destino predeterminado de redirección para los enlaces de atribución asociados con la app.</li><li>Este campo es obligatorio para las aplicaciones de Android especificadas como fuera de la tienda.</li><li>Una vez configurada, la URL se aplicará como destino predeterminado de redirección en aproximadamente una hora.</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

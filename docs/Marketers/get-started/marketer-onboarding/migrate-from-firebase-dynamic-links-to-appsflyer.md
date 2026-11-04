@@ -23,11 +23,15 @@ x-zendesk:
 
 ## ![53375 imagen de la migración de Firebase KB.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
 
+<div id="about-the-migration" />
+
 ## Migración
 
 Los <Anchor target="_blank" href="https://firebase.google.com/docs/dynamic-links">Firebase Dynamic Links</Anchor> de Google quedarán obsoletos el 25 de agosto de 2025. A partir de esa fecha, todos los enlaces proporcionados por Firebase Dynamic Links (tanto los alojados en dominios personalizados como en subdominios page.link) dejarán de funcionar y se deshabilitará la creación de nuevos enlaces. Si usas Firebase Dynamic Links, es fundamental que tomes medidas proactivas lo antes posible para migrar tus enlaces a otro lugar y evitar interrupciones en los recorridos de los usuarios desde tus campañas.
 
 AppsFlyer OneLink te permite crear fácilmente enlaces con capacidades de atribución, redirección y deep linking en medios propios o pagados, independientemente del dispositivo, sistema operativo, canal o plataforma. Colabora con AppsFlyer para crear recorridos de usuario personalizados y contextuales que lleven a los usuarios a tu aplicación para maximizar la conversión y los ingresos. Sigue las instrucciones de abajo para empezar a migrar tus Firebase Dynamic Links a AppsFlyer.
+
+<div id="migrate-from-firebase-to-appsflyer" />
 
 ## Cómo migrar de Firebase a AppsFlyer
 
@@ -88,6 +92,8 @@ El SDK de AppsFlyer integrado en la aplicación es el enlace entre la aplicació
 
 Integra el SDK de AppsFlyer en tu aplicación siguiendo los pasos a continuación.
 
+<div id="appsflyer-sdk-integration-steps" />
+
 #### Pasos para la integración del SDK de AppsFlyer
 
 1. Integra el SDK de AppsFlyer en la aplicación.  
@@ -124,6 +130,8 @@ En la siguiente tabla, se enumeran todos los parámetros de Firebase y los pará
 
 Usa esta tabla como referencia para todos los parámetros que usas actualmente cuando migras a AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Si un parámetro de Firebase no aparece en la lista, es porque AppsFlyer lo cubre en la configuración de la plantilla de OneLink sin necesidad de poner un parámetro en tus enlaces.
@@ -153,6 +161,8 @@ Utiliza la siguiente tabla para determinar qué método funciona mejor para tu u
 |  | <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors">Script inteligente</Anchor> | Si deseas crear un enlace largo de forma dinámica en una página web para una experiencia de la web a la aplicación. |  |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

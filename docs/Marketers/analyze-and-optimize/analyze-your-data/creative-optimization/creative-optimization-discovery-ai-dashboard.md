@@ -27,11 +27,15 @@ x-zendesk:
 
 [![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## Sobre el dashboard Discovery AI de la Optimización Creativa
 
 Los dashboard de <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-guide">**Optimización creativa**</Anchor> te permiten medir el rendimiento de tus creatividades al extraer todas tus creatividades de todos los canales de medios en un solo lugar. Analiza su rendimiento por dimensiones seleccionadas, a través de múltiples campañas, canales y más, para obtener insights críticos antes de planificar, seleccionar y producir tu próximo lote de creatividades.
 
 El **dashboard Discovery AI** de **Optimización Creativa** le brinda a tu equipo creativo toda la información que necesita para producir creativos ganadores. Proporciona datos granulares de rendimiento, lo que permite tomar decisiones informadas basadas en los elementos o características específicas dentro de una creatividad que contribuyen en la efectividad. Con este dashboard, puedes producir y mantener de manera consistente creatividades exitosas basadas en datos y optimizadas para lograr el máximo impacto. Según las selecciones de filtros principales, puedes ver una galería de tus creatividades o dividirlas en escenas y elementos individuales.
+
+<div id="get-started" />
 
 ## Comienza
 
@@ -41,6 +45,8 @@ Si aún no has configurado la Optimización Creativa, puedes encontrar instrucci
 
 * Las métricas de datos de costos se muestran de manera diferente en los dashboards según si tienes o no una suscripción a ROI360 de AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-guide#creative-optimization-roi360">Saber más</Anchor>
 * Los datos de impresiones y clics requieren que el costo esté activado en las integraciones de partners. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#cost-tab">Saber más</Anchor>
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
 
 ## Procedimientos: uso del dashboard Discovery AI
 
@@ -104,6 +110,8 @@ Mira una <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-
 
 </Accordion>
 
+<div id="concepts" />
+
 ## Conceptos
 
 <div id="discovery-ai-search" />
@@ -120,6 +128,8 @@ La barra de búsqueda con IA te permite analizar cómo elementos creativos espec
 2. Introduce una consulta en lenguaje natural en la barra de búsqueda de Discovery AI que describa lo que quieres explorar.
 
 Las consultas de búsqueda solo deben referirse al contenido creativo, como elementos visuales, texto, audio, temas o elementos narrativos. No busques por métricas de rendimiento, por ejemplo, «creativos con un IPM superior a 2», ni por el nombre del creativo.
+
+<div id="what-you-can-search-for" />
 
 #### Qué puedes buscar
 
@@ -139,7 +149,7 @@ La búsqueda admite consultas en lenguaje natural en varias dimensiones del cont
 
 «Escena urbana callejera con coches de carreras»
 
-* ##### **Característica**
+* ##### <span id="text"></span>**Característica**
 
   Busca mensajes, titulares o microtexto específicos.
 
@@ -161,7 +171,7 @@ Llamada a la acción «Descargar ahora»
 
 «Locución motivadora»
 
-* ##### **Narrativa y conceptos generales**
+* ##### <span id="narrative-and-high-level-concepts"></span>**Narrativa y conceptos generales**
 
 Busca temas más amplios, líneas narrativas y tonos emocionales.
 
@@ -172,6 +182,8 @@ Busca temas más amplios, líneas narrativas y tonos emocionales.
 «Escena dramática de jugabilidad»
 
 «Narrativa de problema-solución»
+
+<div id="combining-properties" />
 
 #### Combinación de propiedades
 
@@ -186,6 +198,8 @@ Ejemplos:
 «Escena en la playa al atardecer con una historia alegre y música suave de piano»
 
 Combinar atributos te ayuda a aislar patrones creativos más claros y reduce el ruido en tu análisis.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -354,6 +368,8 @@ También puedes cambiar a la pestaña **Similitudes**, donde puedes obtener una 
 Para creatividades y elementos, puedes abrir la pestaña **Similitudes** haciendo clic en **Buscar similares** en una tarjeta de descubrimiento específica.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

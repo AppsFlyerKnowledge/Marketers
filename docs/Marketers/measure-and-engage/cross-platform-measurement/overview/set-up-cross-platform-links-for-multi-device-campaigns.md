@@ -24,15 +24,21 @@ x-zendesk:
 ---
 > **En resumen:** Cómo promover, atribuir y medir las instalaciones de aplicaciones en plataformas a vistas de anuncios en otras plataformas. Por ejemplo, las instalaciones de aplicaciones móviles a partir de anuncios vistos en dispositivos CTV, las instalaciones de aplicaciones de consolas de videojuegos a partir de anuncios vistos en dispositivos móviles o de ordenador (web) y las instalaciones de aplicaciones CTV de anuncios vistos en dispositivos móviles o de ordenador (web).
 
+<div id="overview" />
+
 ## Descripción general
 
 Con los enlaces multiplataforma de OneLink de AppsFlyer (URLs de impresión), puedes atribuir las aplicaciones de una plataforma a las vistas de anuncios que se muestran en otra plataforma. Varias instalaciones dentro del mismo hogar se pueden atribuir a la misma impresión de anuncios multiplataforma.
+
+<div id="how-does-the-attribution-logic-work" />
 
 ### ¿Cómo funciona la lógica de atribución?
 
 * Las impresiones se identifican en AppsFlyer por el ID de su plantilla OneLink y se asignan a cada plataforma configurada en la plantilla.
 * Las instalaciones se identifican por su app y plataforma.
 * Lógica de coincidencia: las impresiones a nivel de plantilla se asignan al inicio específico de la aplicación mediante atribución probabilística. Se puede asociar cualquier variante de la app del grupo.
+
+<div id="create-a-onelink-templatefor-cross-platform-attribution" />
 
 ## Crea o edita una plantilla de OneLink para la atribución multiplataforma.
 
@@ -42,9 +48,13 @@ Una sola plantilla admite tu aplicación en múltiples plataformas (lo que signi
 2. En la sección **atribución multiplataforma**, haz clic en el **botón de editar ->** **Habilitar atribución multiplataforma**
 3. Desde los menús desplegables de la plataforma relevante, selecciona la aplicación correspondiente. **Nota**: Cada aplicación solo puede añadirse a una plantilla de OneLink con la atribución multiplataforma habilitada. [<Image alt="Atribución multiplataforma.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
 
+<div id="set-up-cross-platform-partner-integration" />
+
 ## Configura la integración de partners multiplataforma
 
 Para configurar la atribución multiplataforma utilizando URLs de impresión multiplataforma, configura la integración de partners para cada aplicación objetivo.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -90,6 +100,8 @@ Para crear un <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integra
    ```
 8. Proporciona el enlace a la ad network para colocarlo detrás del anuncio que se muestra en plataformas CTV, PC o consola.
 
+<div id="important-1" />
+
 > 🚧 **¡Importante!**
 >
 > Para medios propios y partners no integrados, añade parámetros según sea necesario.  <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">Saber más</Anchor> sobre los parámetros que puedes agregar para obtener datos y métricas adicionales.
@@ -107,11 +119,15 @@ Opcionalmente, puedes asignar la **misma prioridad** a los clics e impresiones e
 1. En la sección de configuración multiplataforma, selecciona la casilla **Misma prioridad**.
 2. Haz clic en **Guardar**.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Habilitar la prioridad igual puede hacer que AppsFlyer priorice su propia atribución sobre otras fuentes. Utiliza esta configuración con precaución y solo si se alinea con tu estrategia general de atribución.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 
@@ -127,6 +143,8 @@ Opcionalmente, puedes asignar la **misma prioridad** a los clics e impresiones e
 | <span id="cross-platform-attribution-links-in-mobile-devices"></span>Enlaces de atribución multiplataforma en dispositivos móviles | Cuando se visualiza un enlace de atribución multiplataforma en un dispositivo móvil, la atribución se determina por la lógica estándar de modelado probabilístico móvil, no por el flujo de atribución multiplataforma diseñado para <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>, PC y consolas. En consecuencia, las impresiones móviles no serán elegibles para la [misma prioridad](#step-3-enable-equal-priority-for-crossplatform-impressions), [ventana de lookback extendida](#attribution-window) o [atribución por hogar](#household-attribution) que está disponible para impresiones genuinas multiplataforma. |
 | <span id="agency-permissions"></span>Permisos de la agencia | Las agencias no pueden activar ni desactivar la "Misma prioridad de atribución multiplataforma" desde su lado. Esta configuración se copia directamente de la configuración del anunciante para la ad network específica. |
 
+<div id="discrepancies" />
+
 ## Discrepancias
 
 AppsFlyer y tvScientific difieren en sus modelos de atribución. Esto puede hacer que surjan discrepancias entre los dashboards de tvScientific y de AppsFlyer. Consulta las razones de las discrepancias en la siguiente tabla:
@@ -137,6 +155,8 @@ AppsFlyer y tvScientific difieren en sus modelos de atribución. Esto puede hace
 | Ventana de lookback | Hasta 30 días | Hasta 72 horas |
 | Reorientación | Atribución tanto de nuevos usuarios (instalaciones) como de usuarios que regresan (re-engagements) | Atribución solo de nuevos usuarios (instalaciones) |
 | Asignación de costos | El costo se asigna a la impresión independientemente del sistema operativo | El costo se asigna a la impresión en sistemas separados para iOS y Android |
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

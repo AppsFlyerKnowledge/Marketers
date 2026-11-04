@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Atribución de dispositivos Android sin GAID mediante OAID o IMEI. Mejores prácticas para ver datos de atribución en AppsFlyer.
 
+<div id="attribution-android-apps-in-the-chinese-domestic-market" />
+
 ## Atribución de aplicaciones Android en el mercado nacional chino
 
 En China, los propietarios de aplicaciones se enfrentan a varios retos:
@@ -39,6 +41,8 @@ Con AppsFlyer, estos retos pueden superarse de las siguientes formas:
 * Usar el IMEI del dispositivo como alternativa al GAID en dispositivos con Android 28 o una versión anterior
 * Preparar APKs con identificadores únicos para detectar el Hijacking de tiendas Android
 * Configurar enlaces de atribución que se reconozcan en China
+
+<div id="preparing-the-app" />
 
 ## Preparar la aplicación
 
@@ -310,6 +314,8 @@ Selecciona cómo se muestran los datos de atribución en AppsFlyer entre estas o
 * **Aplicación única consolidada con Google Play Store:** La atribución tanto de las tiendas de aplicaciones de terceros como de Google Play Store se muestra como una sola entidad. Esta opción requiere que el nombre del paquete de la tienda Google Play y de las tiendas de terceros sea idéntico. El uso de esta opción supone que la aplicación ya está definida en AppsFlyer. Para usar este método, continúa con [la preparación del APK/manifest](/docs/measure-attribution-in-the-chinese-domestic-market#preparación-del-apkmanifiesto) en la sección siguiente.
 * **Varias aplicaciones** significa que los datos de atribución de cada tienda se muestran en una aplicación independiente. Por ejemplo, cada una de las siguientes se muestra por separado: Google Play Store, tienda de terceros A, tienda de terceros B, etc. Para usar este método, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution">varias aplicaciones</Anchor>.
 
+<div id="adding-the-app-in-appsflyer" />
+
 ### Agregar la aplicación en AppsFlyer
 
 **Para agregar la aplicación en AppsFlyer**:
@@ -324,6 +330,8 @@ Selecciona cómo se muestran los datos de atribución en AppsFlyer entre estas o
    * **App URL**
 
 **Nota**: puedes crear la app con la opción **Pendiente de aprobación o sin publicar**, pero no se recomienda. Consulta con tu CSM antes de usar este método.
+
+<div id="preparing-the-apkmanifest" />
 
 ### Preparación del APK/manifiesto
 
@@ -356,6 +364,8 @@ Los métodos descritos establecen el parámetro AF\_STORE, que a su vez establec
 * <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">Reportes de raw data</Anchor>
 
 </Accordion>
+
+<div id="additional-attribution-considerations" />
 
 ## Consideraciones adicionales sobre la atribución
 

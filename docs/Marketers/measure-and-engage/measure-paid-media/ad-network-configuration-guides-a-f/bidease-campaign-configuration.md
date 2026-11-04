@@ -23,6 +23,8 @@ x-zendesk:
 
 <Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="100px" />
 
+<div id="setting-up-bidease" />
+
 ## Configuración de Bidease
 
 La integración con Bidease soporta la atribución click-through y view-through.
@@ -41,6 +43,8 @@ La integración con Bidease soporta la atribución click-through y view-through.
 
 La ventana de configuración incluye las siguientes pestañas: Integración, Enlace de atribución, Costo, Ingreso publicitario y Permisos. Para Bidease, las pestañas disponibles son Integración, Enlace de atribución y Permisos.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Algunas configuraciones difieren para dispositivos iOS y Android
@@ -52,10 +56,14 @@ La ventana de configuración incluye las siguientes pestañas: Integración, Enl
 
 La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
+<div id="activate-partner" />
+
 #### Activar partner
 
 Activa el selector **Activar partner** .  
 **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner.**
+
+<div id="advanced-privacy" />
 
 #### Privacidad avanzada
 
@@ -67,13 +75,19 @@ Activa el selector **Activar partner** .
 | Los postbacks se envían de acuerdo con la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad avanzada</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Los datos agregados y anónimos</Anchor> se comparten con el partner, lo que significa que no se comparten datos a nivel de usuario (ID de dispositivo). |  |
 
+<div id="transaction-id" />
+
 #### ID de transacción
 
 **Solo para aplicaciones iOS:** Cuando **Compartir ID de transacción SKAN** está activado, estás permitiendo que AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">comparta el ID de transacción de los postbacks de SKadNetwork</Anchor> con Reddit. Al hacerlo, Reddit podría decodificar tus valores de conversión de SkadNetwork .
 
+<div id="install-attribution" />
+
 #### Atribución de instalación.
 
 Para atribuir instalaciones de visualización a través de Bidease, activa **Instalar atribución view-through**. El control deslizante de view-through está disponible en la [pestaña Enlace de atribución](#attribution-link-tab).
+
+<div id="default-postbacks" />
 
 #### Postbacks predeterminados
 
@@ -83,6 +97,8 @@ Define el origen de los usuarios para enviar postbacks automáticos a los partn
   * **Solo este partner:** Envía postbacks solo cuando la instalación se atribuya a este partner, es decir, el usuario que instaló la aplicación provenía de Bidease.
   * **Todas las fuentes de medios, incluidas las orgánicas:** Envía postbacks para las instalaciones atribuidas a cualquier partner y para eventos orgánicos, es decir, el usuario que instaló la aplicación provenía de cualquier fuente de medios.
 * Para **instalaciones rechazadas** y **Re-engagements:** Los postbacks se envían únicamente a Bidease.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -105,6 +121,8 @@ Configura el mapeo de eventos en la aplicación con eventos de Bidease, enviados
    1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
    2. Selecciona una aplicación diferente en la lista desplegable.
    3. Repite los pasos de integración para la aplicación seleccionada.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -143,6 +161,8 @@ Genera y guarda los enlaces de atribución y envíalos al partner para atribuir 
 <Accordion title="Pestaña de permisos">
 
 Selecciona qué <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos otorgar</Anchor> a Bidease para acceder a tus datos y realizar diversas acciones.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >

@@ -31,9 +31,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Atribuye tus aplicaciones en varias tiendas de Android y visualiza los datos en un solo panel de control de aplicaciones o en un panel de control de aplicaciones por tienda.
 
+<div id="multi-store-android-attribution" />
+
 ## Atribución de múltiples tiendas de Android
 
 AppsFlyer atribuye las aplicaciones independientemente de la tienda de aplicaciones. Es decir, la tienda de Google Play y las tiendas de terceros de Android como Amazon, Opera, GetJar, Baidu y Huawei. (También conocidas como tiendas fuera del mercado o tiendas de aplicaciones alternativas de Android). Los propietarios de aplicaciones que comercializan la aplicación a través de múltiples tiendas pueden elegir entre un **único** **panel de control** con los datos de todas las tiendas juntas o un **panel de control por tienda.**
+
+<div id="note" />
 
 > 📘 **Nota: Los parámetros distinguen entre mayúsculas y minúsculas.**
 >
@@ -42,6 +46,8 @@ AppsFlyer atribuye las aplicaciones independientemente de la tienda de aplicacio
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
 
+<div id="single-dashboard-vs-dashboard-per-store" />
+
 ### Un solo panel de control vs. un panel de control por tienda
 
 * **Panel de control único:** un panel de control que combina los datos de todas las tiendas, incluida Google Play Store.
@@ -49,11 +55,15 @@ AppsFlyer atribuye las aplicaciones independientemente de la tienda de aplicacio
 
 <table><thead><tr><th> </th><th>Panel de control único<br/> [Práctica recomendada]</th><th> Panel de control por tienda</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>Nombre del paquete de Android</td><td colspan="2">Usa el mismo nombre de paquete (idéntico) independientemente de la opción seleccionada. </td></tr><tr><td><span id="channel-name"></span>Nombre del canal</td><td>No hay que configurar nada</td><td><ul><li><span>Al agregar la aplicación en el panel de control de AppsFlyer mediante la opción de <strong>APK fuera de la tienda de Android</strong>, debes configurar el canal.</span></li><li><span>El canal identifica la tienda.</span></li><li>La combinación del nombre del paquete de Android y el canal identifica de manera exclusiva cada panel de control de AppsFlyer.</li><li>Ejemplo: El nombre del paquete de Android es com.abc.def y el canal es xyz_device_store. El identificador exclusivo del panel de control es com.abc.def-xyz_device_store.</li><li>Si el APK tiene una configuración de canal pero no hay ninguna aplicación con esta configuración, el tráfico se atribuye a la aplicación predeterminada, siendo esta la aplicación con una configuración de canal en blanco en Google Play Store. </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>Rellenar el campo install_app_store</td><td><ul><li>Identifica de manera exclusiva la tienda que proporciona la aplicación por cada descarga.</li><li>En el caso de Google Play Store, esto está en blanco.</li><li>El nombre de la tienda se establece en el <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">manifiesto/APK.</a> </li></ul></td><td>N/D</td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#crear-una-plantilla-de-onelink" target="_blank">Plantilla de OneLink</a></td><td>Cuando se trabaja con OneLink, se recomienda este método. </td><td>N/D </td></tr><tr><td><span id="measurementattribution-links"></span>Enlaces de medición/atribución </td><td><ul><li>Los enlaces son los mismos independientemente de la tienda.</li><li>Para redirigir a la tienda correcta, usa <a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">af_r</a> para establecer la URL de redirección.</li></ul></td><td><ul><li>Se requiere un enlace exclusivo para cada tienda.</li><li>Créalos desde la página <strong>Integraciones activas</strong>.</li><li>El ID de aplicación es el nombre del canal agregado al nombre del paquete de Android. P. ej.: com.abc.def-def_store.<br/>Por lo tanto, los enlaces de atribución serán diferentes.</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>Opciones de reportes disponibles con el campo install_app_store</td><td>Los reportes de información general, cohortes y raw data incluyen el campo. Ponte en contacto con tu CSM pidiéndole que agregue la marca de función SFDC necesaria. </td><td>N/D </td></tr><tr><td><span id="considerations"></span>consideraciones</td><td><ul><li>Precisión de la atribución: las reinstalaciones desde diferentes tiendas no resultan en números de instalación inflados.</li><li><span>Las instalaciones orgánicas reflejarán las instalaciones orgánicas del APK de todas las tiendas bajo un solo panel de control.</span></li><li><span>Las opciones de reportes, desglosadas por tienda, se limitan actualmente a información general, cohortes y raw data.</span></li></ul></td><td><ul><li>Precisión de la atribución: se cuentan las reinstalaciones, lo que resulta en una atribución menos precisa.</li><li><span><span>Las instalaciones </span><span>orgánicas</span><span> y </span><span>no orgánicas</span><span> y los datos de eventos in-app se visualizan por tienda (canal) en paneles de control de aplicaciones separados en AppsFlyer.</span></span></li><li><span>Usa la Cohorte para mostrar reportes combinados de todas las tiendas juntas.</span></li><li><p>Asegúrate de que los partners con los que estás trabajando estén <strong>activos</strong> (<a href="./partner-activation-deactivation" target="_blank">Activar partner</a> está activado) en <strong>todos</strong> los paneles de control. Esto es <span>para evitar discrepancias (más comunes al comparar datos con SRN</span>).<br/> </p></li></ul></td></tr></tbody></table>
 
+<div id="set-up-tasks" />
+
 ## Configuración de tareas
 
 En el flujo de trabajo que sigue se enumeran las actividades necesarias para configurar la opción deseada. Las tareas se dividen entre el marketer y el desarrollador.
 
 Para la opción de Panel de control por tienda, repite las tareas para cada tienda.
+
+<div id="before-you-begin" />
 
 ### **Antes de comenzar:**
 
@@ -63,6 +73,8 @@ Para la opción de Panel de control por tienda, repite las tareas para cada tien
 
 <table><thead><tr><th>Parámetro</th><th>Instrucción</th><th>Panel de control único<br/> [Práctica recomendada]</th><th>Panel de control por tienda</th></tr></thead><tbody><tr><td>Nombre del paquete de Android</td><td>Nombre de paquete idéntico para todas las opciones del panel de control.</td><td colspan="2">Si la aplicación ya está en Google Play Store, usa el nombre del paquete existente. Ejemplo: comb.abc.def.</td></tr><tr><td>Nombre del canal</td><td>Un valor exclusivo para cada tienda.</td><td>No se configura. Déjalo en blanco. </td><td><p>Exclusivo para cada tienda. Configura el valor en el APK individual preparado para la tienda y al agregar la aplicación en AppsFlyer. </p><p>No configures un canal para el APK de Google Play Store. </p></td></tr><tr><td>Instalar tienda de aplicaciones AF_STORE</td><td>Un valor exclusivo que identifica la tienda</td><td><span>Exclusivo para cada tienda. Configúralo en el APK a través del manifiesto. Cada tienda tiene su propio APK. </span></td><td> No se configura.</td></tr></tbody></table>
 
+<div id="tasks" />
+
 ### Tareas
 
 | Paso | Responsabilidad | Panel de control único | Panel de control por tienda |
@@ -71,6 +83,8 @@ Para la opción de Panel de control por tienda, repite las tareas para cada tien
 | 2 | Comercializador | No se requiere ninguna acción. Se supone que la aplicación ya está activa en AppsFlyer. | [Agrega la aplicación](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) en AppsFlyer. |
 | 3 | Comercializador | [Prepara los enlaces de atribución.](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | Prepara los enlaces de atribución con el ID de aplicación combinado con el nombre del canal. |
 | 4 | Desarrollador y marketer | [Pruebas](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [Pruebas](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## Procedimientos
 
@@ -118,6 +132,8 @@ El valor establecido aquí aparece en el campo install\_app\_store del raw data 
 Tanto si creas tu enlace de atribución <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">para que lo use una red publicitaria</Anchor> como <Anchor target="_blank" href="/marketers/es/docs/onelink-onboarding-guide#sobre-onelink">para tus medios propios</Anchor>, sigue estos pasos para asegurarte de que todos los engagement de tus enlaces de atribución aparezcan en un único dashboard.
 
 1. En la pestaña **Enlace de atribución**, establece el parámetro de **URL de fuera de la tienda**. Esto completa la macro `af_r` en el enlace de atribución para redirigir a los usuarios a la página de aterrizaje correcta de la tienda de aplicaciones. Por ejemplo, `&af_r=https://www.destinationurl.com`
+
+   <div id="note-1" />
 
    > 📘 **Nota**
    >
@@ -182,6 +198,8 @@ Agrega un panel de control (aplicación) identificado por la combinación del no
 
 <Accordion title="Pruebas: ambas opciones de panel de control">
 
+<div id="non-organic-installs" />
+
 #### **instalaciones no orgánicas**
 
 **Para probar instalaciones no orgánicas:**
@@ -201,6 +219,8 @@ Agrega un panel de control (aplicación) identificado por la combinación del no
 | --- | --- |
 | <ol><li>Verifica el reporte de raw data de la instalación de tu aplicación en la página Datos exportados.</li><li>Deberías ver una conversión de instalación con la fuente de medio de prueba. En la columna **Tienda de aplicaciones de la instalación**, deberías ver el nombre de la tienda tal como aparece en el archivo manifest.xml.</li><li>También puedes ver el param "af\_installstore": "STORE\_NAME" en los registros de la instalación.</li></ol> | <ol><li>Ve a la aplicación necesaria del panel de control por tienda.</li><li>Verifica el reporte de raw data de las instalaciones de la aplicación en la página Datos exportados o consulta la página de información general de la aplicación.</li><li>Deberías ver una conversión de instalación con la fuente de medios de "prueba".</li></ol> |
 
+<div id="organic-installs" />
+
 #### **Instalaciones orgánicas**
 
 **Para probar instalaciones orgánicas:**
@@ -209,6 +229,8 @@ Agrega un panel de control (aplicación) identificado por la combinación del no
 2. Instala la versión beta actualizada de la aplicación con el SDK de atribución de AppsFlyer insertado e iníciala.
 3. Revisa los resultados:
 
+<div id="expected-results" />
+
 #### Resultados esperados
 
 | Panel de control único | Panel de control por tienda |
@@ -216,6 +238,8 @@ Agrega un panel de control (aplicación) identificado por la combinación del no
 | Revisa la página de información general para observar si hay una instalación orgánica nueva (clasificada como "orgánica" con respecto a la fuente de medios). Actualmente, con el método de aplicación única, no existen indicaciones con respecto al origen de las instalaciones orgánicas. | <ol><li>Ve al panel de control y a la página de información general de la aplicación específicos de la tienda evaluada.</li><li>Deberías ver una conversión de instalación en fuente de medios "orgánica".</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## Características adicionales
 
@@ -281,11 +305,17 @@ La atribución de referencia por parte de una tienda de terceros se refleja en l
 
 </Accordion>
 
+<div id="troubleshooting" />
+
 ## Resolución de Problemas
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### Instalaciones atribuidas a la aplicación predeterminada
 
 Si creas un APK de aplicación con una configuración de canal, pero no creas un panel de control para este en la cuenta de AppsFlyer: las instalaciones se atribuyen a la aplicación predeterminada, normalmente la aplicación Google Play Store de tu cuenta. Si no hay una aplicación predeterminada, no se registran datos para la aplicación.
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 

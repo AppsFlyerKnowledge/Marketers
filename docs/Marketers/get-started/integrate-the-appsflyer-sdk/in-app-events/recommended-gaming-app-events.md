@@ -42,6 +42,8 @@ Estos eventos también son relevantes para aplicaciones de gaming compatibles co
 * Xbox
 * Dispositivos móviles con Windows
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
@@ -52,6 +54,8 @@ Estos eventos también son relevantes para aplicaciones de gaming compatibles co
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 [![Flowchart_for_recommended_events recorrido del usuario de la app de gaming](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -217,6 +221,8 @@ Cuando el usuario invitó con éxito a un amigo a descargar e instalar la aplica
 | af\_description | Contexto de la invitación | Prueba esta aplicación |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

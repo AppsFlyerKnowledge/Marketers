@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **En resumen:** Localytics, un partner integrado de AppsFlyer, es una plataforma de marketing y análisis para apps móviles y web. Los análisis de aplicaciones de Localytics proporcionan análisis de retención basados en cohortes, funnels, segmentación de clientes y análisis en tiempo real para identificar grupos de usuarios con las tasas de fidelidad y el valor del ciclo de vida más altos. El marketing de aplicaciones de Localytics ofrece servicios de automatización de marketing para apps al medir el éxito a largo plazo de las campañas de adquisición de clientes y enviar mensajes in-app y push enriquecidos y procesables a los clientes pertinentes cuando pueden tener el mayor impacto.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-localytics" />
 
 ## Configuración de Localytics
 
@@ -52,12 +56,16 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
 [![](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -77,6 +85,8 @@ Obtención de la App Key de Localytics en Localytics
 [![](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)
 
 Configura Localytics en el dashboard de AppsFlyer.
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -127,6 +137,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 Los permisos no están disponibles para Localytics.
 
 </Accordion>
+
+<div id="viewing-the-attribution-data-in-the-localytics-console" />
 
 ## Visualización de los datos de atribución en la consola de Localytics
 

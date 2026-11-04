@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Appgrowth, un partner integrado de ad network de AppsFlyer, es un productor de contenido original para profesionales del crecimiento de aplicaciones móviles. Además de la atribución móvil basada en clics, Appgrowth también ofrece atribución por impresiones, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-appgrowth" />
+
 ## Configuración de Appgrowth
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -41,14 +43,20 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, tendrás que activar el botón **Activate Partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 #### Nota:
 
 Como red de TODAS las instalaciones, Appgrowth prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Se recomienda seleccionar **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Appgrowth.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -56,12 +64,16 @@ Como red de TODAS las instalaciones, Appgrowth prefiere recibir postbacks de tod
 
 Activa esta opción si quieres atribuir las instalaciones por impresiones de Appgrowth. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Appgrowth después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos que procedan solo de usuarios atribuidos a Appgrowth.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para ser reportada a Appgrowth.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -90,6 +102,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a A
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -109,6 +123,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Appgrowth.
@@ -117,9 +133,13 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Haz clic en el enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Appgrowth para que se active cuando los leads hagan clic en el anuncio correspondiente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -130,6 +150,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 **Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 

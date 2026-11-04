@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **En resumen:** Integra tu cuenta de X Ads con AppsFlyer para mostrar los datos de atribución de las campañas de X Ads.
 
+<div id="overview" />
+
 ## Observaciones
 
 X Ads es una Red Avanzada de Autorreporte (SRN), que permite a AppsFlyer atribuir eventos de conversión para todos los usuarios, incluso aquellos sin un ID de publicidad.
+
+<div id="x-ads-attribution-flow-in-appsflyer" />
 
 ### Flujo de atribución de X-Ads en AppsFlyer
 
@@ -43,7 +47,11 @@ X Ads es una Red Avanzada de Autorreporte (SRN), que permite a AppsFlyer atribui
 
    [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Conexión de tu cuenta de X Ads a AppsFlyer
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -69,6 +77,8 @@ X Ads es una Red Avanzada de Autorreporte (SRN), que permite a AppsFlyer atribui
     **Nota:** El activador debe permanecer encendido (activado) mientras trabajes con el partner. Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación de partners</Anchor>.
 13. Selecciona tus cuentas de X Ads para activarlas y, a continuación, haz clic en **Guardar y cerrar**.
 
+<div id="x-ads-attribution-setup" />
+
 ## Configuración de la atribución de X Ads
 
 Para ver una descripción detallada del encabezado de la página de configuración del partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">aquí</Anchor>.
@@ -79,6 +89,8 @@ Para ver una descripción detallada del encabezado de la página de configuraci�
 
 La pestaña **Integración** está dividida en diferentes secciones, tal como se describe a continuación. El <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">partner debe estar activado</Anchor> al momento de la primera visita para permitir su configuración.
 
+<div id="ad-account-connected" />
+
 ### Cuenta de anuncios conectada
 
 Selecciona las cuentas para habilitar la atribución.
@@ -86,6 +98,8 @@ Selecciona las cuentas para habilitar la atribución.
 ![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
 
 **Nota:** Puedes conectar hasta 200 cuentas de anuncios en AppsFlyer. Para evitar alcanzar este límite y asegurar la atribución continua para todas las cuentas activas, recomendamos eliminar cualquier cuenta de anuncios que ya no esté en uso.
+
+<div id="advanced-privacy" />
 
 ### Privacidad avanzada
 
@@ -95,10 +109,14 @@ Cuando el interruptor de AP está ACTIVADO:
 * Los postbacks siguen la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad Avanzada</Anchor>.
 * Solo se comparten <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">datos agregados y anónimos</Anchor>. No se incluyen identificadores a nivel de dispositivo.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > * El interruptor de Privacidad Avanzada está **activado por defecto** al activar la integración de X Ads.
 > * Según X Ads, mantener la Privacidad Avanzada en **ON** puede resultar en **subreportes** de eventos de campaña y limitar la optimización del rendimiento en X Ads.
+
+<div id="click-through-attribution" />
 
 ### Atribución click-through
 
@@ -108,6 +126,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-30 días. Te re
 
 ![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### Ventana de lookback de atribución view-through
 
 Este control deslizante te permite establecer el **tiempo máximo de la impresión a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de esta ventana de lookback, tras la impresión de un anuncio, se atribuyen a X Ads, siempre que no haya habido ningún otro clic en el anuncio correspondiente.
@@ -116,15 +136,21 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días. Te re
 
 ![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
 
+<div id="reinstall-settings" />
+
 ### Configuración de reinstalación
 
 Para habilitar la atribución de reinstalación, activa el interruptor de **Atribución de reinstalación**. La atribución de reinstalaciones te permite medir a los usuarios que reinstalan tu app durante su ventana de reatribución.
 
 No es necesario configurar ventanas de lookback para la atribución de reinstalación, ya que los valores se toman de la configuración de atribución de instalación. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls">Medir reinstalaciones</Anchor>.
 
+<div id="re-engagement-settings" />
+
 ### Configuración de re-engagement
 
 Para campañas de retargeting en X Ads, AppsFlyer solo admite la medición de **re-engagement**. Eso es un engagement con una campaña de retargeting por parte de un usuario que ya tiene la aplicación instalada en el momento del engagement.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -134,11 +160,15 @@ La atribución de retargeting de X Ads incluye solo las conversiones de re-engag
 
 Activa el selector **Atribución de re-engagement** para comenzar a atribuir los re-engagements de X Ads.
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### Ventana de lookback por click-through de re-engagement
 
 Define la duración de la **ventana de lookback por click-through de re-engagement** (el período de tiempo máximo después de hacer clic en un anuncio, dentro del cual un usuario reorientado puede atribuirse al anuncio). Puedes definir el valor en horas (hasta 23) o en días (1-30).
 
 ![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Ventana de lookback por view-through de re-engagement
 
@@ -148,15 +178,21 @@ Luego, define la duración de la **ventana de lookback por view-through de re-en
 
 ![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
 
+<div id="re-engagement-window" />
+
 #### Ventana de re-engagement
 
 Define la duración de la **Ventana de re-engagement** (el período dentro del cual los eventos in-app del usuario se atribuyen a la fuente de medios de retargeting). Puede configurar el valor en días (1-90), horas (hasta 23) o incluso de por vida:
 
 <Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignorar usuarios activos para el retargeting
 
 Configura un periodo de inactividad para evitar registrar conversiones de retargeting en usuarios activos durante el periodo especificado. Saber más sobre el <Anchor target="_blank" href="/marketers/es/docs/set-retargeting-inactivity-window">Período de inactividad para retargeting</Anchor>.
+
+<div id="in-app-event-postback-settings" />
 
 ### Configuración de postbacks de eventos in-app
 
@@ -188,6 +224,8 @@ En esta sección, puedes asignar tus eventos de AppsFlyer con tus partners a tra
 <Accordion title="Pestaña de enlace de atribución">
 
 X Ads no utiliza enlaces de atribución para la atribución.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -229,6 +267,8 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a X Ads,
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
+<div id="ad-network-permissions" />
+
 ### Permisos de ad network
 
 * **Permitir la configuración de la integración**: permite que el partner configure la pestaña integración (con excepción de postbacks de eventos in-app).
@@ -241,11 +281,15 @@ Usa estos selectores para otorgarle permisos a una ad network para que maneje su
 
 Saber más sobre cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos de ad network.</Anchor>
 
+<div id="agency-permissions" />
+
 ### Permisos de la agencia
 
 Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">concesión de permisos de agencia</Anchor>.
 
 </Accordion>
+
+<div id="x-ads-features" />
 
 ## Características de X-Ads
 
@@ -269,6 +313,8 @@ Para medir la actividad de la aplicación de campañas que no son de aplicación
 
 1. Ve al formulario de creación de campañas en el administrador de X Ads.
 2. En la sección **Entrega**, activa la medición de **Conversiones de la aplicación** para habilitar el seguimiento de instalaciones y conversiones in-app resultantes de la campaña. Consulta más detalles en la <Anchor target="_blank" href="https://business.x.com/en/help/campaign-setup/create-an-app-installs-campaign/mobile-app-measurement-and-attribution">documentación de X Ads</Anchor> (bajo *"Medición de conversiones de aplicaciones en objetivos no de aplicación"*).
+
+<div id="important-1" />
 
 > 🚧 **¡Importante!**
 >
@@ -309,6 +355,8 @@ A través del programa AMM, los anunciantes pueden recibir datos de usuario a ni
 
 </Accordion>
 
+<div id="advanced-srn-parameter-names" />
+
 ## Nombres de parámetros SRN avanzados
 
 Los siguientes campos en la integración SRN avanzada para X Ads **reemplazan** sus contrapartes heredadas en el dashboard de AppsFlyer, reportes agregados y raw data a nivel de evento.
@@ -323,6 +371,8 @@ Los siguientes campos en la integración SRN avanzada para X Ads **reemplazan** 
 | **Nombre del anuncio** | ID del Tweet | Nombre del anuncio  <br />(si está disponible) |
 | **ID del anuncio** | ID del Tweet | ID del Tweet |
 | **Tipo de coincidencia** | srn | id\_matching / probabilistic |
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

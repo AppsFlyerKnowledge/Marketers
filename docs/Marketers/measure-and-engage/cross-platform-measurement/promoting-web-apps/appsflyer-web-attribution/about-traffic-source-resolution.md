@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **At a glance:** Usa la resolución de la fuente de tráfico para identificar la fuente de medios, la campaña y el canal iniciales de cada visita web, a partir de los parámetros de la URL y de los datos de referencia disponibles cuando se carga la página de destino. Esto proporciona a la atribución el contexto de la fuente de tráfico que necesita para atribuir con precisión los eventos web posteriores, incluido el evento de adquisición de usuarios.
 
+<div id="what-is-traffic-source-resolution" />
+
 ## ¿Qué es la resolución de la fuente de tráfico?
 
 En la atribución web, la carga de la página de destino (**visita web**) es la primera interacción del usuario con el sitio web. AppsFlyer se basa en la información disponible en ese momento, como los parámetros de la URL y los datos de referencia, para identificar la fuente de medios, la campaña y el canal del usuario.
@@ -36,6 +38,8 @@ La función de la resolución de la fuente de tráfico no termina con la visita.
 
 Entender cómo funciona la resolución de la fuente de tráfico es esencial para crear URL precisas. Para saber cómo crear una URL bien estructurada, consulta <Anchor target="_blank" href="/marketers/es/docs/choose-attribution-parameters-for-landing-page-urls">Elegir parámetros de atribución para las URL de las páginas de destino</Anchor>.
 
+<div id="the-traffic-source-resolution-flow" />
+
 ## El flujo de resolución de la fuente de tráfico
 
 La resolución de la fuente de tráfico sigue un flujo estructurado de varios pasos que va construyendo progresivamente el contexto de atribución de cada visita web. Cada paso aporta una capa específica de información, desde capturar la propia visita hasta clasificar el tráfico para reportar. Los datos que utiliza el flujo de resolución de la fuente de tráfico se capturan a través del SDK web o de Web S2S.
@@ -47,11 +51,15 @@ El flujo consta de los siguientes pasos:
 3. [Resolución de campaña](#paso-3-resolución-de-la-campaña): resuelve los detalles granulares de la campaña asociados a la fuente de medios identificada, lo que permite un análisis detallado del rendimiento.
 4. [Clasificación de canales](#paso-4-clasificación-de-canales): asigna cada visita a un canal de tráfico de alto nivel en función de la fuente de medios resuelta, lo que proporciona una vista estandarizada para reportar.
 
+<div id="step-1-visit-recording" />
+
 ## Paso 1: Registro de visitas
 
 El registro de visitas es el paso inicial del flujo de medición del rendimiento web. Ocurre antes de la resolución de la fuente de medios y de la atribución, y actúa como una capa de preprocesamiento que captura la actividad sin procesar del usuario.
 
 La lógica funciona en dos etapas. Primero, clasifica el **referrer** (el dominio del que procedía el usuario antes de llegar a tu sitio). Después, según el tipo de referrer, evalúa el estado de la sesión del usuario y la presencia de información de la fuente de medios para decidir si debe registrar la visita.
+
+<div id="stage-1-referrer-classification" />
 
 #### Fase 1: Clasificación del referrer
 
@@ -60,6 +68,8 @@ AppsFlyer clasifica el referrer en uno de tres tipos:
 * **Externo excluido** (por ejemplo, un procesador de pagos o cualquier dominio que hayas excluido)
 * **Interno excluido** (por ejemplo, tus propios subdominios o flujos de login)
 * **Resto** (todos los demás referrers)
+
+<div id="stage-2-session-evaluation-and-visit-recording" />
 
 #### Fase 2: Evaluación de la sesión y registro de visitas
 
@@ -75,6 +85,8 @@ Según el tipo de referrer, AppsFlyer evalúa el estado de la sesión y decide s
   * Si hay una sesión activa y no hay información de la fuente de medios, no registres una visita nueva dentro de esa sesión.
 
 <Image alt="flujo de resolución del tráfico" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+
+<div id="step-2-media-source-resolution" />
 
 ## Paso 2: Resolución de la fuente de medios
 
@@ -121,12 +133,16 @@ Si el dominio no está excluido, AppsFlyer busca el parámetro `pid=` en la URL.
 
 Si no se encuentra ningún PID en la URL, AppsFlyer evalúa los parámetros `utm_source` y `utm_medium` para identificar la fuente de medios. La combinación de estos dos campos determina la resolución resultante.
 
+<div id="how-utm-logic-works" />
+
 #### **Cómo funciona la lógica de UTM**
 
 * En la mayoría de los casos, AppsFlyer determina la fuente de medios extrayendo el valor sin procesar de `utm_source` y usándolo como fuente de medios.
 * Si `utm_medium` es `email`, `mail` o `e-mail`, la fuente de medios se resuelve automáticamente en `e-mail`.
 * Si `utm_medium` está presente y no es un valor de correo electrónico, AppsFlyer comprueba el valor con reglas específicas de asignación personalizada (consulta la tabla de asignación a continuación).
 * Si falta `utm_medium` o no coincide con ninguna regla personalizada, AppsFlyer recurre a `utm_source` como fuente de medios.
+
+<div id="utm-mapping-rules" />
 
 #### **Reglas de asignación de UTM**
 
@@ -185,6 +201,8 @@ AppsFlyer usa la siguiente asignación de ID de clic para atribuir la visita:
 
 Si no se encuentran parámetros de consulta (PID, UTMs o click ID) en la URL, AppsFlyer usa el `http_referrer` para identificar la fuente de tráfico. Esto se basa en un mecanismo de análisis interno que extrae el host del dominio y lo asigna a una fuente de medios.
 
+<div id="the-parsing-mechanism" />
+
 #### **El mecanismo de análisis**
 
 Para identificar la fuente, AppsFlyer limpia el string del referente de la siguiente manera:
@@ -195,6 +213,8 @@ Para identificar la fuente, AppsFlyer limpia el string del referente de la sigui
 
 *Ejemplo: un referente de* `www.mywebsite.com?param=example` *se resuelve en una fuente de medios* `mywebsite`.
 
+<div id="referrer-mapping-rules" />
+
 #### **Reglas de asignación de referentes**
 
 | Si el host del dominio contiene… | Fuente de medios resuelta |
@@ -203,6 +223,8 @@ Para identificar la fuente, AppsFlyer limpia el string del referente de la sigui
 | `t.co` | twitter |
 | `googleads.g.doubleclick.net` | googleadwords\_int |
 | `tpc.googlesyndication.com` | dv360\_int |
+
+<div id="search-engine-mapping" />
 
 #### **Asignación de motores de búsqueda**
 
@@ -224,6 +246,8 @@ Para identificar la fuente, AppsFlyer limpia el string del referente de la sigui
 
 Todas las filas de esta tabla se asignan al canal `seo`.
 
+<div id="ai-answer-engine-referrer-mapping" />
+
 #### **Asignación de referentes de motores de respuesta de IA**
 
 | Si el host del dominio contiene… | Fuente de medios | Channel |
@@ -236,6 +260,8 @@ Todas las filas de esta tabla se asignan al canal `seo`.
 | `manus.im` | manus\_organic\_aeo | aeo |
 | `grok.com` | grok\_organic\_aeo | aeo |
 | `copilot.microsoft.com` | copilot\_organic\_aeo | aeo |
+
+<div id="android-app-referrers" />
 
 #### **Referentes de apps de Android**
 
@@ -250,6 +276,8 @@ Si la visita procede de una aplicación de Android, el host del referente se asi
 | `org.telegram.messenger` | telegram |
 
 </Accordion>
+
+<div id="step-3-campaign-resolution" />
 
 ## Paso 3: resolución de la campaña
 
@@ -267,15 +295,21 @@ AppsFlyer extrae la información de la campaña de los siguientes parámetros de
 | `id_del_anuncio_af` | Retargeting: Primer inicio después del re-engagement o la reatribución. | — |
 | `af_palabras_clave` | Información del dispositivo | — |
 
+<div id="step-4-channel-classification" />
+
 ## Paso 4: clasificación de canales
 
 Además de identificar la fuente de medios, AppsFlyer clasifica cada visita en un canal. Esta clasificación ofrece una visión general de alto nivel de los tipos de tráfico en los Reportes de raw data y en el Dashboard.
+
+<div id="overriding-the-channel-with-af_channel" />
 
 ### Sobrescribir el canal con af\_channel
 
 Para asignar un valor de canal personalizado, añade el parámetro `af_channel` a la URL de la página de destino. Por ejemplo, `af_channel=ig` establece el canal como `ig`, lo que te permite desglosar el tráfico a un nivel que las categorías estándar no captan, por ejemplo, por ubicación del anuncio.
 
 `af_channel` solo se resuelve cuando también se identifica una fuente de medios para la visita. Si la visita es orgánica (no se identifica ninguna fuente de medios), siempre se resuelve como `Direct`, esté o no presente `af_channel`.
+
+<div id="default-channel-classification" />
 
 ### Clasificación predeterminada del canal
 

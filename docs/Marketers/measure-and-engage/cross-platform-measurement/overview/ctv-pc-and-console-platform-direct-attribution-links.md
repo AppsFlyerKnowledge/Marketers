@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En resumen:**  Aprende sobre la estructura y los parámetros del enlace de atribución de AppsFlyer para las plataformas de CTV, PC y consola. **Nota**: Para aplicaciones de Android e iOS, incluidos los juegos de PC Android, sigue las <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">instrucciones del enlace de atribución móvil</Anchor>.
 
+<div id="overview" />
+
 ## General
 
 Los enlaces de atribución directa de plataformas CTV, PC y consola permiten a los anunciantes redireccionar a los usuarios y recopilar datos después de los clics. Estos enlaces de atribución directa son enlaces de AppsFlyer que admiten la redirección y la atribución **de una sola aplicación de destino en una sola plataforma a la vez**. El destino de la redirección es el valor del parámetro af\_r incluido en el enlace.
@@ -31,6 +33,8 @@ Los enlaces de atribución directa de plataformas CTV, PC y consola permiten a l
 Puedes crear enlaces de atribución directamente y colocarlos detrás de los anuncios. Para crear dichos enlaces, sigue las instrucciones de este artículo.
 
 Alternativamente, se pueden crear enlaces a través de S2S utilizando la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">API de Engagements</Anchor>. Esto requiere algo de trabajo de desarrollo. **Nota**: Los enlaces creados a través de S2S también pueden recopilar datos de impresiones.
+
+<div id="attribution-link" />
 
 ### Enlace de atribución
 
@@ -42,6 +46,8 @@ Alternativamente, se pueden crear enlaces a través de S2S utilizando la <Anchor
 | Otros parámetros | [Ver todos los parámetros](/docs/ctv-pc-and-console-platform-direct-attribution-links#parámetros) |
 | Estructura de URL | `https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}?af_media_source={media_source}&af_campaign_id={campaign_id}&af_r={app_store_url}` |
 | URL de muestra | `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=aloha&af_campaign_id=1234&af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello` |
+
+<div id="parameters" />
 
 ### Parámetros
 
@@ -71,6 +77,8 @@ Alternativamente, se pueden crear enlaces a través de S2S utilizando la <Anchor
 | af\_device\_id\_type | N/D | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>Tipo de identificador de dispositivo. Elige entre:<ul><li>VIDA</li><li>TIFA</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>custom</li></ul> | Cadena |
 | af\_device\_id\_value | N/D | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>Tipo de identificador de dispositivo | Cadena |
 | af\_r | N/D | <ul><li>Contiene el enlace a la tienda de aplicaciones o landing page correcta.</li><li>Todo dentro del parámetro af\_r debe estar codificado. Esto incluye cualquier valor de parámetro UTM, si se adjunta.</li></ul>**Nota:** Asegúrate de que el dominio URL de af\_r esté incluido en tu <Anchor target="_blank" href="/marketers/es/docs/set-up-your-domain-redirect-allowlist">lista de redireccionamientos permitidos</Anchor>. | Cadena |
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 

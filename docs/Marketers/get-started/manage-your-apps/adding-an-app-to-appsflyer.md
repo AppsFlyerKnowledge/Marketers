@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **Resumen breve:** Descubre cómo añadir tu aplicación a AppsFlyer para obtener datos de atribución sobre instalaciones y eventos dentro de la aplicación, y analiza los datos con las diversas herramientas de AppsFlyer.
 
+<div id="overview" />
+
 ## Visión general
 
 Si todavía no has agregado una aplicación a tu panel, la página de incorporación de aplicaciones aparecerá al iniciar sesión en AppsFlyer. El onboarding de aplicaciones te guía a través de todos los pasos necesarios para añadir tu aplicación y prepararla para la atribución.
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### Acceder al asistente para añadir una aplicación
 
@@ -37,6 +41,8 @@ Puedes acceder al asistente para añadir aplicaciones desde la plataforma o medi
 **Para acceder al asistente desde la página de incorporación de la aplicación:**
 
 * En el paso **Agregar tu aplicación**, haz clic en **Añadir aplicación** y sigue las instrucciones para hacerlo.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -52,6 +58,8 @@ Puedes acceder al asistente para añadir aplicaciones desde la plataforma o medi
 
 <Image alt="agregar una aplicación (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## Agregar una aplicación
 
 Después de [acceder al asistente para añadir una aplicación](#acceder-al-asistente-para-añadir-una-aplicación), sigue estos pasos:
@@ -61,6 +69,8 @@ Después de [acceder al asistente para añadir una aplicación](#acceder-al-asis
 3. Haz clic en **Añadir mi aplicación**.
 4. Copia la clave de desarrollo, que se utilizará en la <Anchor target="_blank" href="/marketers/es/docs/getting-started-onboarding-for-marketers#paso-2-integración-de-sdk--api">integración del SDK</Anchor> (puedes recuperarla más tarde desde la página <Anchor target="_blank" href="/marketers/es/docs/app-settings#configuración-general-de-la-aplicación">Configuración de la aplicación</Anchor>).
 5. Haz clic en **Finalizar** o **+ Añadir otra aplicación** para incluir más aplicaciones. Repite el proceso para añadir más aplicaciones.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -73,6 +83,8 @@ Después de registrar la aplicación, esta aparecerá en el panel de control. Pa
 * Conectar la aplicación con socios en el Marketplace de Socios
 
 Consulta <Anchor target="_blank" href="/marketers/es/docs/getting-started-onboarding-for-marketers">todos los pasos</Anchor> para completar el proceso de incorporación.
+
+<div id="enter-app-details" />
 
 ### Introduce los detalles de la aplicación
 
@@ -167,9 +179,13 @@ Utiliza esta opción para las siguientes plataformas:
         </application>Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
         ```
 
+        <div id="note-2" />
+
         > 📘 **Nota:**
         >
         > No se recomienda usar el parámetro channel para la atribución multitienda. Para una implementación más sencilla y estandarizada, usa el parámetro af\_store en su lugar.
+
+        <div id="important" />
 
         > 🚧 **¡Importante!**
         >
@@ -218,6 +234,8 @@ Utiliza esta opción para las siguientes plataformas:
 
 <Accordion title="Web (PBA)">
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Una aplicación web es aquella en la que defines un sitio web para incluirlo en un paquete de marca para nuestra función de Atribución Basada en Personas (PBA).
@@ -242,6 +260,8 @@ Incluir –
 * Longitud máxima: 100 caracteres
 * No se permiten etiquetas XSS
 
+<div id="important-1" />
+
 > 🚧 **¡Importante!**
 >
 > Una vez que creas una aplicación web, no puedes editar sus propiedades (URL y nombre de la aplicación) sin eliminarla y volver a crearla, **lo que significa que también debes <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle">eliminar el paquete de marca</Anchor> del que forma parte.**
@@ -260,10 +280,14 @@ Incluir –
 
 Usa la plataforma web para crear una nueva aplicación web y medir las visitas al sitio web y las conversiones mediante Web Performance Measurement.
 
+<div id="before-you-begin" />
+
 #### **Antes de comenzar:**
 
 * Visión general
 * Si migras desde una aplicación web PBA heredada, puedes usar tu PBA Web Dev Key actual.
+
+<div id="to-add-a-web-app" />
 
 #### **Nota**
 
@@ -346,6 +370,8 @@ Cada clave de desarrollo de PBA solo se puede asignar a **UNA** aplicación web.
 * El dominio principal se añade automáticamente a **Dominios excluidos** como tipo **PRIMARY**.
 
 Cada **Web Dev Key heredada solo se puede reutilizar para una** nueva aplicación web.
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >
@@ -533,26 +559,38 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### Introduzca información adicional (no aplicable a aplicaciones web):
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+
+<div id="select-currency" />
 
 #### **Seleccionar moneda**
 
 Seleccione la moneda en la que se mostrarán los datos de esta aplicación en el panel de control. Los eventos de ingresos y gastos se convertirán a esta moneda utilizando el tipo de cambio vigente en el momento del evento. <Anchor target="_blank" href="/marketers/es/docs/app-settings#localization-currency">Obtenga más información</Anchor> sobre la configuración de la moneda de la aplicación y su impacto.
 
+<div id="important-2" />
+
 > 🚧 **¡Importante!**
 >
 > Tenga cuidado al seleccionar la moneda que desea usar para la aplicación. No podrá cambiarla una vez que se hayan registrado los costos y los ingresos.
+
+<div id="select-timezone" />
 
 #### **Seleccionar zona horaria**
 
 Alinee la zona horaria seleccionada aquí con la zona horaria que configure con otros socios de atribución (como anuncios de Meta y Google Ads). Esto garantiza la mayor coincidencia posible entre los datos informados en el panel de AppsFlyer y los que recibe de estos socios.
 
+<div id="note-5" />
+
 > 📘 **Nota:**
 >
 > * Una vez establecida, la zona horaria permanecerá bloqueada y no podrá cambiarse hasta el día siguiente.
 > * <Anchor target="_blank" href="/marketers/es/docs/changing-app-time-zone-settings">Conozca más</Anchor> sobre la configuración de la zona horaria de la aplicación y su impacto.
+
+<div id="define-app-audience" />
 
 #### **Definir el público objetivo de la aplicación**
 
@@ -562,22 +600,32 @@ Si ha elegido **Sí:**
 1. Acceda y lea la <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guía</Anchor> sobre cómo cumplir con los requisitos para aplicaciones dirigidas a niños.
 2. Marque la casilla para confirmar que ha leído la guía y aplicará los controles que indica.
 
+<div id="note-6" />
+
 > 📘 **Nota:**
 >
 > * Dos semanas después de añadir la aplicación, recibirás una notificación solicitando que confirmes la implementación de controles de privacidad para las aplicaciones dirigidas a niños. Tras confirmar, recibirás un mensaje de confirmación. Puedes acceder al mensaje de confirmación desde el Centro de notificaciones o ver los detalles de confirmación en el <Anchor target="_blank" href="/marketers/es/docs/audit-log">Registro de auditoría</Anchor>.
 > * Consulta las <Anchor target="_blank" href="/marketers/es/docs/child-directed-apps-faq">preguntas frecuentes sobre aplicaciones dirigidas a niños</Anchor>.
 
+<div id="manage-your-apps-in-bulk-via-api" />
+
 #### Gestiona tus aplicaciones en bloque a través de la API
 
 Los administradores de cuentas pueden <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/app-management-v2-overview">gestionar múltiples aplicaciones en bloque</Anchor> empleando una API dedicada que admite las funciones principales de la interfaz. Esto incluye añadir y eliminar aplicaciones, así como actualizar su configuración. La API también incluye los mismos mecanismos de verificación de errores.
+
+<div id="note-7" />
 
 > 📘 **Nota:**
 >
 > En esta fase, añadir aplicaciones y actualizar su configuración a través de API solo es posible para aplicaciones móviles. Eliminar aplicaciones es posible en todas las plataformas.
 
+<div id="add-a-debug-or-testing-app" />
+
 ### Añadir una aplicación de depuración o de prueba
 
 Si tu desarrollador crea una **aplicación de depuración**, de **sandbox** o de **prueba**, debes añadir la aplicación al dashboard. Una vez que tu desarrollador empiece a hacer pruebas con la aplicación, los datos se mostrarán en el dashboard de la aplicación.
+
+<div id="note-8" />
 
 > 📘 **Nota**
 >
@@ -588,6 +636,8 @@ Para obtener instrucciones para desarrolladores sobre cómo crear una aplicació
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-android#creating-an-android-debug-app">Nombre del paquete de Android</Anchor>
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/testing-ios#creating-an-ios-debug-app">Instrucciones para iOS</Anchor>
 
+<div id="about-pending-apps" />
+
 ## Acerca de las aplicaciones en estado pendiente
 
 Trabajar con una aplicación en estado pendiente puede ser útil cuando la estás probando para el SDK de AppsFlyer.
@@ -595,6 +645,8 @@ Trabajar con una aplicación en estado pendiente puede ser útil cuando la está
 El estado pendiente de la aplicación en el panel no afecta la recopilación y medición de datos. Tanto si una aplicación está en estado pendiente como activa en una tienda, si los usuarios la instalan e interactúan con ella, esos datos se registran en el tablero.
 
 Una vez que tu aplicación pendiente se active, AppsFlyer detectará automáticamente el cambio de estado, sin necesidad de volver a agregarla. <Anchor target="_blank" href="/marketers/es/docs/why-is-my-app-still-pending">Aprenda más</Anchor> sobre las aplicaciones pendientes y el procedimiento opcional para actualizar manualmente el estado.
+
+<div id="troubleshooting" />
 
 ## Resolución de problemas
 
@@ -643,6 +695,8 @@ Una posible causa de este error es intentar añadir una aplicación de Android s
 Esto sucede porque los usuarios pueden reinstalar una aplicación a través del sistema operativo si anteriormente existía en su dispositivo. Incluso si la aplicación ya no está disponible en la App Store, los usuarios aún pueden instalarla, y estas instalaciones se contarán en AppsFlyer.
 
 </Accordion>
+
+<div id="other-information" />
 
 ## Otra información
 

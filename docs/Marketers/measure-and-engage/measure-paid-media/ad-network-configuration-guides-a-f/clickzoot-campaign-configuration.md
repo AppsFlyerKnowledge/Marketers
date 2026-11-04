@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Clickzoot, un partner integrado de ad network de AppsFlyer, ofrece soluciones para móvil, generación de leads, correo electrónico y optimización de datos.
 
+<div id="setting-up-clickzoot" />
+
 ## Configuración de ClickZoot
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -41,10 +43,14 @@ La ventana de configuración de Clickzoot incluye 3 pestañas activas: Integraci
 
 Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
 > * Todos los demás pasos son descriptivos u **opcionales**.
+
+<div id="activate-partner" />
 
 ### Activar socio
 
@@ -57,17 +63,23 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="general-settings" />
+
 ### Configuración general
 
 **Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.**
 
 Clickzoot se conecta con AppsFlyer a través de un ID de oferta único. Si aún no lo tienes, debes obtenerlo de Clickzoot para continuar con la integración.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Clickzoot tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para los eventos que provengan únicamente de usuarios atribuidos a Clickzoot.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -97,6 +109,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a C
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -116,6 +130,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo entre el clic y la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Clickzoot.
@@ -123,6 +139,8 @@ Este control deslizante te permite establecer el **tiempo máximo entre el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Aquí puedes encontrar más información sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -153,6 +171,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Clickzoot, tanto si el partner actúa como ad network, agencia o incluso ambas cosas. Ten en cuenta que, aunque la atribución esté deshabilitada para Clickzoot, la pestaña de permisos está activa y puedes conceder el control a Clickzoot.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

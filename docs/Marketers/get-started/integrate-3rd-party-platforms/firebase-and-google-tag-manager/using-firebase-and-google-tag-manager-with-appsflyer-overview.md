@@ -36,10 +36,14 @@ Los eventos enviados con GTM se modelan en eventos in-app de AppsFlyer. El nombr
 
 Sigue los pasos y las instrucciones de esta guía para enviar eventos. 
 
+<div id="considerations" />
+
 ### consideraciones
 
 * **Fuente del evento en el raw data:** los eventos generados por GTM tienen la fuente establecida como S2S en los reportes de raw data. Esto puede llevar a cierta confusión ya que los eventos son reportados por el SDK.
 * **Actualización del valor de conversión de SKAdNetwork**: los eventos generados por GTM y reportados al SDK como se describe en esta guía hacen que el SDK actualice el valor de conversión de forma similar a los eventos regulares del SDK. Solo tienes que activarlo y establecer tu <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">configuración de medición de SKAdNetwork</Anchor>.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -50,6 +54,8 @@ Sigue los pasos y las instrucciones de esta guía para enviar eventos. 
 >   * Cuando se envían postbacks de eventos in-app a SRN, se requiere el parámetro `att`.
 >   * Cuando se envían postbacks de eventos in-app a Anuncios de Meta, se requieren los parámetros `att` y `os`.
 
+<div id="prerequisites" />
+
 ### Requisitos previos
 
 Antes de empezar a enviar eventos a AppsFlyer utilizando GTM, debes implementar el SDK de GTM en tu aplicación. Necesitas:
@@ -59,6 +65,8 @@ Antes de empezar a enviar eventos a AppsFlyer utilizando GTM, debes implementar 
 3. <Anchor target="_blank" href="/marketers/es/docs/integrate-the-appsflyer-sdk">Integrar el SDK de AppsFlyer</Anchor> si no lo has hecho.
 
 Una vez que lo tengas todo listo, continúa a la <Anchor target="_blank" href="/marketers/es/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">configuración de GTM</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

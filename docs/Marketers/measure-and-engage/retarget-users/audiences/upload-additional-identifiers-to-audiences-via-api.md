@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Utiliza la API de identificadores adicionales de audiencias para cargar masivamente identificadores de usuarios desde tus sistemas internos (como BI y CRM) a AppsFlyer Audiences, lo que permite una comunicación más amplia con socios relevantes basándose en estos identificadores.
 
+<div id="about-the-api" />
+
 ## Acerca de la API
 
 La API de identificadores adicionales de audiencias se puede usar para añadir los siguientes identificadores de usuario desde tus sistemas internos a AppsFlyer Audiences:
@@ -34,9 +36,13 @@ La API de identificadores adicionales de audiencias se puede usar para añadir l
 
 Luego puedes optar por enviar estos identificadores a tus socios de Audiencias (sujeto a tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel de cuenta</Anchor>), lo que les permitirá identificar de manera más precisa tus audiencias objetivo. Ten en cuenta que no todos los socios publicitarios admiten todos los identificadores.
 
+<div id="when-should-i-use-this-api" />
+
 ### ¿Cuándo debo utilizar esta API?
 
 Esta API está diseñada para usarse cuando necesitas cargar un gran volumen de datos de identificadores. Generalmente, esto se refiere a datos recopilados a lo largo del tiempo (por ejemplo, correos electrónicos en formato hash recopilados de todos los usuarios de una aplicación durante los últimos 12 meses). Para actualizaciones individuales en tiempo real de identificadores de dispositivos específicos, <Anchor target="_blank" href="/marketers/es/docs/audiences-configure-additional-identifiers-for-partner-audience-creation">configura identificadores adicionales</Anchor> en el SDK de AppsFlyer o la API S2S-mobile.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -44,14 +50,20 @@ Esta API está diseñada para usarse cuando necesitas cargar un gran volumen de 
 >
 > **Tiempo:** Para asegurar una coincidencia precisa de los identificadores, la API de identificadores adicionales de audiencias puede utilizarse tan pronto como el **día posterior** al reporte de los identificadores clave a través del SDK de AppsFlyer (UTC). Por ejemplo, los identificadores clave reportados el 3 de enero de 2022 (UTC) pueden actualizarse a través de esta API el 4 de enero de 2022 (UTC) o después.
 
+<div id="actions" />
+
 ## Acciones
 
 * [Añadir/modificar identificadores](/docs/upload-additional-identifiers-to-audiences-via-api#addmodify-identifiers-put)
 * [Eliminar identificadores](/docs/upload-additional-identifiers-to-audiences-via-api#remove-identifiers-delete)
 
+<div id="authentication" />
+
 ## Autenticación
 
 La solicitud debe incluir un encabezado HTTP que contenga el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens">token API de AppsFlyer V2.0</Anchor> de tu cuenta. Pide al administrador de tu cuenta que obtenga este token desde el panel de AppsFlyer.
+
+<div id="api-specifications-and-sample-code" />
 
 ## Especificaciones de la API y código de ejemplo
 
@@ -111,6 +123,8 @@ https://hq1.appsflyer.com/api/audience-bulk-api/v1/additional-identifiers/app/{a
 | `{hashed_emails}` | Un array de hasta dos direcciones de correo electrónico cifradas<br /><br />Formato:<ul><li>En minúsculas</li><li>Sin espacios en blanco</li><li>Con hash SHA256</li></ul>Valor de ejemplo antes del hash: nombre@dominio.com | No |
 | `{phone_number_sha256}` | Número de teléfono (ver nota a continuación)<br /><br />Formato:<ul><li>Sin símbolos, letras ni ceros iniciales</li><li>Incluir código de país</li><li>Con hash SHA256</li></ul>Valor de ejemplo antes del hash:<br /><br />442070313000 | No |
 | `{phone_number_e164_sha256}` | Número de teléfono en formato E164 (ver nota a continuación)<br /><br />Formato<ul><li>Número de teléfono E164</li><li>Con hash SHA256</li></ul>Valor de ejemplo antes del hash:<br /><br />+442070313000 | No |
+
+<div id="notes" />
 
 > 📘 **Notas**
 >

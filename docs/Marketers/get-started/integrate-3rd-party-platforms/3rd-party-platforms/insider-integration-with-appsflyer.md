@@ -24,9 +24,13 @@ x-zendesk:
 
 ![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-insider" />
 
 ## Configuración de Insider
 
@@ -47,10 +51,14 @@ x-zendesk:
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 Este selector debe estar activado mientras trabajes con el partner.  
 Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación del partner</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -60,11 +68,15 @@ Insider se conecta con AppsFlyer a través de un identificador de partner único
 
 ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 AppsFlyer puede enviar postbacks automáticos a Insider tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los cuales se envían los postbacks de cada evento. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks predeterminados</Anchor>.
 
 **Para enviar postbacks de cualquier usuario que descargue la aplicación a Insider**, selecciona **Todas las fuentes de medios, incluidas las orgánicas**.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -87,6 +99,8 @@ En esta sección, asignas los eventos de AppsFlyer al partner mediante postbacks
    * **Con valores y sin ingresos:** envía todos los parámetros, excepto el valor de ingresos.
    * **Con valores e ingresos**: envía todos los parámetros del evento, incluido el valor de ingresos (si existe en el evento).
 8. Para completar la configuración de la integración, haz clic en **Guardar integración**.
+
+<div id="note" />
 
 > 📘 **Advertencia**
 >

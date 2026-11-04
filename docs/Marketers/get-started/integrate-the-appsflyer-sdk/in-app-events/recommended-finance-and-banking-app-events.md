@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de finanzas y banca.
 
+<div id="-finance-and-banking" />
+
 ## <Image alt="bancos.png" src="https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png" width="100px" /> Finanzas y banca
 
 Las aplicaciones de finanzas y banca ofrecen a los usuarios la posibilidad de llevar a cabo una amplia gama de objetivos relacionados con las finanzas, entre ellos, la suscripción de tarjetas de crédito nuevas o la solicitud de préstamos. Los típicos eventos que recomendamos registrar incluyen aperturas de cuentas, solicitudes de tarjetas de crédito y solicitudes de préstamos.
@@ -32,6 +34,8 @@ Registrar estos eventos puede ayudarte a determinar:
 * Qué tipo de cuenta prefieren los usuarios y brindarte ideas para el retargeting.
 * Qué beneficios buscan los usuarios en una tarjeta de crédito.
 * Para qué necesitan los usuarios asistencia financiera y cuánta asistencia quieren.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -44,6 +48,8 @@ Registrar estos eventos puede ayudarte a determinar:
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 [![Diagrama_de_flujo_para_eventos_recomendados recorrido_del_usuario_de_la_aplicación_de_finanzas_y_banca](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -86,6 +92,8 @@ Cuando el usuario completa el proceso de registro.
 | af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

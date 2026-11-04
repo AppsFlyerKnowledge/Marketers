@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## Medición de la atribución en un entorno ATT
 
 AppsFlyer te proporciona múltiples métodos de atribución que te brindan una gama completa de soluciones de atribución. El requisito de consentimiento de [ATT](/docs/about-att-and-skan#att-principles) afecta la atribución en el contexto de las campañas pagadas de aplicación a aplicación. Como tal, los anunciantes necesitan usar una combinación de soluciones de atribución y reportes. 
@@ -109,7 +111,11 @@ En iOS 14 se puede atribuir una instalación tanto a los paneles de control trad
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## Conocimientos importantes de iOS 14
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### Artículos y enlaces de iOS 14 y SKAN
 
@@ -131,6 +137,8 @@ En iOS 14 se puede atribuir una instalación tanto a los paneles de control trad
 
 <Accordion title="Impacto de la disponibilidad del IDFA en la atribución y la medición">
 
+<div id="metrics" />
+
 #### **Métricas**
 
 Ten en cuenta que, cuando un IDFA no está disponible, las siguientes métricas pueden verse afectadas:
@@ -142,6 +150,8 @@ Ten en cuenta que, cuando un IDFA no está disponible, las siguientes métricas 
 | Reorientación | Instalaciones orgánicas y eventos in-app | Re-engagements, reatribuciones |  |
 | Apple Search Ads | -- | -- | Sin cambios. Tanto los usuarios que dan su consentimiento, como los que no, se atribuyen correctamente. |
 
+<div id="deep-linking" />
+
 #### **Enlaces profundos**
 
 Los enlaces profundos diferidos que utilizan el <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-legacy-apis#deferred-deep-linking">método heredado de onConversionDataSuccess</Anchor> pueden no funcionar para iOS 14.5+, ya que requieren datos de atribución que pueden no estar disponibles debido a la protección de la privacidad.
@@ -149,6 +159,8 @@ Los enlaces profundos diferidos que utilizan el <Anchor target="_blank" href="ht
 Recomendamos el uso de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">enlaces profundos unificados (UDL)</Anchor>. Los UDL cumplen con los estándares de privacidad de iOS 14.5+ y solo devuelven los parámetros relevantes para los enlaces profundos y enlaces profundos diferidos: `deep_link_value` y `deep_link_sub1.` Los parámetros de atribución como `media_source`, `campaign` y `af_sub1-5` devuelven null y no se pueden usar para propósitos de enlaces profundos.
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## Preguntas frecuentes: iOS 14+
 
@@ -172,6 +184,8 @@ Para aplicaciones que usan un SDK anterior a V6.10: SKAN 4 no funcionará.
 N.º Solo necesitas pedir el consentimiento de ATT si quieres hacer un *seguimiento* de un usuario, recopilar el IDFA, o ambos.
 
 </Accordion>
+
+<div id="faqskan" />
 
 ## Preguntas frecuentes:
 
@@ -230,6 +244,8 @@ A menudo, esta discrepancia se debe a que se miran los reportes de Data Locker e
 Ejemplo: En el reporte del 12 de junio, se muestran 100 instalaciones de Google ocurridas el 11 de junio. En el reporte del 24 de junio, se indica que ocurrieron 100 instalaciones MÁS el pasado 11 de junio. Deberás consultar todos los reportes de los últimos 13 días (del 12 al 24 de junio) y agregarlos en función del momento de la instalación o de la marca de tiempo de la red de publicidad, para obtener una lectura precisa de las 200 instalaciones totales ocurridas el 11 de junio.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

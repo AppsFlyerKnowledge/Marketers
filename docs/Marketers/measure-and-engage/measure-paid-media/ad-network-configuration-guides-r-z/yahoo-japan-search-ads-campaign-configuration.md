@@ -26,6 +26,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
+<div id="yahoo-japan-search-ads-integration-principles" />
+
 ## Principios de la integración de Yahoo Japan Search Ads
 
 La integración de AppsFlyer con Yahoo Japan Search Ads solo es relevante para aplicaciones Android. 
@@ -80,6 +82,8 @@ Consulta la siguiente tabla de asignación en el contexto de los eventos in-app 
 
 Cuando Yahoo Japan Search Ads atribuye una conversión, nos proporciona los parámetros de la fuente de medios que se enumeran en la tabla. Estos parámetros completan los reportes de análisis y raw data. La tabla siguiente contiene la asignación entre los parámetros de Yahoo Japan Search Ads y AppsFlyer.
 
+<div id="yahoo-japan-search-ads-appsflyer-media-source-mapping" />
+
 #### Asignación de la fuente de medios de Yahoo Japan Search Ads a AppsFlyer
 
 | Yahoo Japan Search Ads | AppsFlyer |
@@ -93,6 +97,8 @@ Cuando Yahoo Japan Search Ads atribuye una conversión, nos proporciona los par�
 | account\_id | network\_account\_id |
 
 </Accordion>
+
+<div id="integration-procedures" />
 
 ## Procedimientos de integración
 
@@ -188,6 +194,8 @@ Completa las secciones de la siguiente manera:
 
 Las agencias pueden ejecutar campañas con Yahoo Japan Search Ads en tu nombre.
 
+<div id="agency-setup" />
+
 #### Configuración de agencias
 
 | Procedimiento realizado por | Procedimiento |
@@ -196,6 +204,8 @@ Las agencias pueden ejecutar campañas con Yahoo Japan Search Ads en tu nombre.
 | El código de moneda de los ingresos del evento reportado al SDK. | <ol><li>En AppsFlyer, ve a **Colaborar** > **Integraciones de partners** > **Integraciones activas**.</li><li>Selecciona **Yahoo! Search Ads (Yahoo! JAPÓN Búsqueda patrocinada) - API nueva.**</li><li>Ve a la pestaña **Integración**.</li><li>Verifica que **Activar Partner** esté **encendido.** Si no es así, el anunciante debe completar la [integración de Yahoo Japan Search Ads del anunciante](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections)</li><li>Comprueba que el resto de la configuración, como las ventanas de lookback y la asignación de eventos in-app, sea correcta. Si es necesario, pídele al anunciante que haga cambios.</li><li>Introduce tu **ID de cliente de Yahoo Japan Search Ads**. El ID está disponible en la <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=36745&o=default#:~:text=How%20to%20check%20Account%20ID">herramienta de gestión de campañas</Anchor>. Ten en cuenta que solo se puede conectar un ID de cliente.</li><li>Haga clic en **Guardar**.</li></ol> |
 
 </Accordion>
+
+<div id="subsidiary-procedures" />
 
 ## Procedimientos adicionales
 

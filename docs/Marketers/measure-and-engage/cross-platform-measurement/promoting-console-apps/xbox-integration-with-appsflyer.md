@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Integra tu aplicación Xbox con AppsFlyer para recibir datos de eventos y atribuciones para tus campañas en Xbox.
 
+<div id="about-xbox-attribution" />
+
 ## Acerca de la atribución de Xbox
 
 El sistema operativo Xbox para consolas y aplicaciones CTV se ejecuta en todas las Xbox.
@@ -31,6 +33,8 @@ La integración de la API de Xbox admite:
 
 * Xbox.
 * Atribución y grabación de eventos para aplicaciones de Xbox. Significado, atribución y grabación en el dispositivo Xbox de un usuario.
+
+<div id="integration-procedures" />
 
 ## Procedimientos de integración
 
@@ -52,6 +56,8 @@ La siguiente tabla enumera las tareas necesarias para integrar tu aplicación Xb
 | Datos de costos | Los datos de costos deben enviarse a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Importación de costos</Anchor> utilizando el método de upload del archivo por correo electrónico. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

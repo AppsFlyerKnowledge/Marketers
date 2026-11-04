@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumen:** Inicia sesión en AppsFlyer, añade varias cuentas y restablece las contraseñas de los usuarios.
 
+<div id="log-in-instructions" />
+
 ## Instrucciones de inicio de sesión
 
 Instrucciones de inicio de sesión para usuarios nuevos y existentes. Esto incluye la creación de una cuenta nueva, la invitación a un usuario nuevo o cómo iniciar sesión como usuario existente.
@@ -74,6 +76,8 @@ Si la 2FA está habilitada en la configuración de gestión de seguridad, se act
 [Para restablecer el 2FA de un usuario, consulta este enlace](/docs/account-login-and-password-reset#resetting-twofactor-authentication-2fa).
 
 </Accordion>
+
+<div id="password-login-or-2fa-reset" />
 
 ## Restablecimiento de contraseña, login o 2FA
 

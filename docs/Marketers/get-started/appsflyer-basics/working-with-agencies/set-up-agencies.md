@@ -31,6 +31,8 @@ Mira el vídeo a continuación para aprender:
 * ¿Cómo configurar una integración de agencia con tu app?
 * ¿Cómo puedes obtener los datos de atribución tanto de la agencia como de la red publicitaria?
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Al trabajar con agencias, desactivar un partner integrado no desactiva automáticamente ciertas capacidades de atribución para las agencias vinculadas a ese partner:

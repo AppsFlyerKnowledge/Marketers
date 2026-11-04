@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Fyber, un partner integrado de ad network de AppsFlyer, desarrolla una plataforma de monetización de última generación para publishers móviles.
 
+<div id="setting-up-fyber" />
+
 ## Configurar Fyber
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -41,10 +43,14 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -56,12 +62,16 @@ Fyber se conecta con AppsFlyer a través de un ID de red único. Si aún no tien
 
 Activa esta opción si quieres atribuir instalaciones view-through de Fyber. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Fyber tras las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos procedentes solo de usuarios atribuidos a Fyber.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para que toda tu base de usuarios esté disponible para ser reportada a Fyber.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -91,6 +101,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a F
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -110,6 +122,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo del clic a la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Fyber.
@@ -118,9 +132,13 @@ Este control deslizante te permite establecer el **tiempo máximo del clic a la 
 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Haz clic en el enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Fyber para que se active cuando los clientes potenciales hagan clic en el anuncio correspondiente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -131,6 +149,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 **Parámetro del enlace de atribución:** af\_viewthrough\_lookback
 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones aquí</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 
@@ -172,6 +192,8 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Fyber,
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
 
+<div id="ad-network-permissions" />
+
 ### Permisos de ad network
 
 * ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
@@ -183,6 +205,8 @@ Usa estos selectores para otorgarle permisos a una ad network para que maneje su
 * ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
 Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permisos de la agencia
 

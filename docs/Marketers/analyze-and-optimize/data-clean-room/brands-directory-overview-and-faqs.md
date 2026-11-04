@@ -19,15 +19,21 @@ x-zendesk:
   section_id: 4591191779217
   url: https://support.appsflyer.com/hc/es/articles/24853411853329
 ---
+<div id="what-is-the-brands-directory" />
+
 ## ¿Qué es el Directorio de marcas?
 
 El Directorio de marcas es una red exclusiva de anunciantes de AppsFlyer que reciben la máxima prioridad en las presentaciones a redes de medios de comercio (CMN).
+
+<div id="key-advantages-for-advertisers" />
 
 ### Ventajas clave para los anunciantes
 
 * **Exposición a redes de medios de comercio:** las CMN pueden descubrir tu marca y enviarte ofertas sin que tengas que hacer ningún esfuerzo proactivo.
 * **Gratis para los anunciantes:** unirse al Directorio de marcas y usar la Data Collaboration Platform (DCP) de AppsFlyer no tiene ningún coste para los anunciantes.
 * **Sin compromiso:** puedes expresar tu interés en conectar con las CMN, y solo haremos una presentación después de obtener tu aprobación.
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

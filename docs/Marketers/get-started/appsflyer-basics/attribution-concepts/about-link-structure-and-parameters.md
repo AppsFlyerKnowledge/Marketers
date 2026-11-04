@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **En resumen:**  Descubre la estructura y los parámetros del enlace de atribución de AppsFlyer.
 
+<div id="overview" />
+
 ## Visión general
 
 Los enlaces de atribución permiten a los anunciantes recopilar datos sobre cómo interactúan los usuarios con un anuncio. Estos enlaces se colocan detrás de los anuncios y notifican a AppsFlyer cuando los usuarios interactúan. La interacción puede ser un clic en un anuncio o simplemente ver el anuncio. AppsFlyer recibe una copia de la URL de atribución.
@@ -78,14 +80,20 @@ Los enlaces de atribución se generan utilizando **OneLink** o un **enlace de pl
 | Estructura de URL | `https://{subdomain}.onelink.me/``{templateid}?pid={media_source}``&af_siteid={ApplicationID}``&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | Ejemplo | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int``&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&``c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > AppsFlyer admite solo el protocolo HTTPS para el tráfico entrante de engagement, es decir, clics e impresiones.
+
+<div id="attribution-link-parameters" />
 
 ## Parámetros del enlace de atribución
 
 * Los parámetros enumerados están disponibles para su uso en el enlace de atribución.
 * La columna **tipo de campo** indica el límite de caracteres del valor del parámetro. Para más información sobre las limitaciones de longitud de los valores de los parámetros, haz clic <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">aquí.</Anchor>
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### Parámetros de enlace de atribución: UA y retargeting
 
@@ -140,12 +148,16 @@ La siguiente tabla se puede [descargar como archivo `.csv`](https://docs.google.
 | <span id="af_og_description"></span>af\_og\_description | N/D | Al publicar un enlace en redes sociales, la descripción de Open Graph (OG) generará una vista previa de la descripción. | Cadena 300 |
 | <span id="af_og_image"></span>af\_og\_image | N/D | Cuando se publica un enlace en redes sociales, la imagen de Open Graph (OG) generará una vista previa de la imagen. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### Parámetros de enlace de atribución—solo para retargeting
 
 | Parámetro | Nombre para mostrar en raw data | Descripción | Tipo de campo y ancho |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>es\_retargeting | Es retargeting (campaña) | La URL de clic de todas las campañas de retargeting debe incluir `&is_retargeting=true`.  <br />Si el parámetro no está incluido o su valor es "false", la campaña se considera una campaña normal de adquisición de usuarios. | Enumeración de 5 caracteres |
 | <span id="af_reengagement_window"></span>af\_ventana\_de\_reengagement | Ventana de re-engagement | Cambia la <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#reengagement-rules-and-windows">ventana de atribución de re-engagement</Anchor> añadiendo este parámetro al enlace de atribución.<br /><br />Las opciones posibles para el rango de la ventana son:<ul><li>Días: 1-90 o 1-36 horas</li><li>Duración: Esto significa que la ventana de re-engagement es ilimitada. Ejemplo: `&af_reengagement_window=lifetime`</li></ul>Valor por defecto: 30 días<br /><br />Ejemplo: `&af_reengagement_window=30d` establece la ventana de re-engagement en 30 días. | N/D |
+
+<div id="viewability-parameters" />
 
 ### Parámetros de visibilidad
 
@@ -160,6 +172,8 @@ Dependiendo del tipo de anuncio, puedes enviar el parámetro de visibilidad rele
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | Porcentaje máximo de visibilidad del anuncio en pantalla |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | seconds | Duración total posible del audio |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | seconds | Cuánto del audio fue escuchado |
+
+<div id="android-specific-parameters" />
 
 ### Parámetros específicos de Android
 
@@ -182,6 +196,8 @@ Dependiendo del tipo de anuncio, puedes enviar el parámetro de visibilidad rele
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | N/D | ID de publicidad de Amazon Fire. |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Listado de tienda personalizado en Google Console. | string |
 
+<div id="ios-specific-parameters" />
+
 ### Parámetros específicos de iOS.
 
 | Parámetros | Nombre para mostrar. | Descripción |
@@ -198,6 +214,8 @@ Dependiendo del tipo de anuncio, puedes enviar el parámetro de visibilidad rele
 | <span id="md5_idfv"></span>md5\_idfv | N/D | IDFV codificado con MD5. |
 | <span id="sha1_mac"></span>sha1\_mac | N/D | Dirección MAC del dispositivo codificada con SHA1. Requiere compatibilidad con ad networks. |
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > ```http
@@ -206,6 +224,8 @@ Dependiendo del tipo de anuncio, puedes enviar el parámetro de visibilidad rele
 > ```
 
 Todos los parámetros están disponibles en el <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">reporte de instalación</Anchor> y en <Anchor target="_blank" href="/marketers/es/docs/analytics-and-aggregate-reporting-apis">Análisis, reportes y APIs</Anchor>.
+
+<div id="custom-parameters" />
 
 ### Parámetros personalizados
 
@@ -230,11 +250,15 @@ De todos los parámetros de enlace de atribución disponibles, el PID es obligat
 
 Cada uno <Anchor target="_blank" href="http://appsflyer.com/partners">El partner integrado con</Anchor> tiene un valor de PID único, que termina con el sufijo *\_int.*  Cuando se utilizan <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">enlaces de OneLink,</Anchor> puedes establecer el PID en el valor que prefieras, siempre que no sea no esté reservado por un partner integrado.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > AppsFlyer bloquea los enlaces de atribución que utilizan nombres de <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#srns-integradas-con-appsflyer">SRN</Anchor> reservados como valores de PID en fuentes de medios personalizadas, como correos electrónicos y SMS. Esta restricción **no** se aplica a las ASRNs.
 
 Ejemplos de ID de publisher reservados integrados importantes: organic, googleadwords\_int (Google AdWords), facebook\_int (Meta ads), y twitter\_int (X Ads). Puedes usar cualquier nombre para fuentes no integradas fuentes como correo electrónico, SMS o palomas mensajeras.
+
+<div id="avoid-common-pid-issues" />
 
 #### Evita problemas comunes con el PID:
 
@@ -245,6 +269,8 @@ Ejemplos de ID de publisher reservados integrados importantes: organic, googlead
   * El clic o la instalación aparecerán en el dashboard debajo de ***af\_invalid\_param***
   * Los enlaces de atribución no se atribuirán.
   * Las capacidades de deep linking no funcionarán en los clics.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -269,6 +295,8 @@ El parámetro de ID del sitio solo incluye el ID del publisher que publica el an
 
 Para incluir información adicional, como el tipo de anuncio, la ubicación o ambos dentro de la aplicación, por ejemplo, banner, intersticial o video, utiliza el parámetro ID de subsitio.
 
+<div id="example-1" />
+
 > 📄 **Ejemplo**
 >
 > El siguiente enlace de atribución incluye:
@@ -284,6 +312,8 @@ Para incluir información adicional, como el tipo de anuncio, la ubicación o am
 > * ABCD = Fuente afiliada (subpublisher) con la que colabora el publisher está trabajando con
 > * 4567 = Ubicación del tipo de anuncio dentro de la aplicación, como banner, intersticial, o video
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **Preguntas frecuentes: ¿Por qué el tráfico resulta en muchas instalaciones bloqueadas?**
 
 Las instalaciones bloqueadas pueden deberse a lo siguiente:
@@ -295,6 +325,8 @@ Las instalaciones bloqueadas pueden deberse a lo siguiente:
 Para evitar instalaciones bloqueadas, asegúrate de enviar un único parámetro de ID de sitio por publisher, como se muestra en el ejemplo.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## Niveles de granularidad de datos
 
@@ -313,6 +345,8 @@ Los parámetros son:
 * `Conjunto de anuncios (af_adset=)`
 * `Nombre de anuncio (af_ad=)`
 
+<div id="example-2" />
+
 > 📄 **Ejemplo**
 >
 > El siguiente enlace de atribución utiliza 4 niveles de granularidad para registrar el anuncio "cachemira" en el conjunto de anuncios "abrigos" de la campaña "invierno" que se ejecuta en la fuente de medios integrada "red".
@@ -321,6 +355,8 @@ Los parámetros son:
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="frequently-asked-questions" />
 
 ## Preguntas frecuentes
 
@@ -371,6 +407,8 @@ Normalmente, estos caracteres están en el enlace porque son macros y se sustitu
 
 Los parámetros del suscriptor, es decir, af\_sub1, af\_sub2, ..., af\_sub\_5, se pueden usar para registrar cualquier KPI útil. Estos parámetros se interpretan y se muestran en el reporte de raw data, lo que los hace muy prácticos para la agregación o el filtrado de datos.
 
+<div id="example-3" />
+
 > 📄 **Ejemplo**
 >
 > Una aplicación de transporte, Luber, tiene creatividades con 3 plantillas de colores: azul, amarillo y rojo. Linda, la marketer móvil de Luber, quiere evaluar qué plantilla de color genera más instalaciones. Para ello, añade `&af_sub3=blue` en los enlaces de atribución de todos los anuncios azules en TODAS las fuentes de medios no SRNs. Se realiza el mismo procedimiento para los anuncios amarillos y rojos. Con esta información analizada y presentada en los reporte de raw data, Linda puede analizar el éxito de los anuncios de diferentes colores y seleccionar el que mejor convierta.
@@ -385,6 +423,8 @@ Los parámetros del suscriptor, es decir, af\_sub1, af\_sub2, ..., af\_sub\_5, s
 * El nombre de la campaña no debe comenzar ni terminar con un espacio en blanco, ya que podría causar discrepancias en los dashboards y reportes.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

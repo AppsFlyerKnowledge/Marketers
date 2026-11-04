@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** vivo Ads es un partner integrado de ad network de AppsFlyer.
 
+<div id="setting-up-vivo-ads" />
+
 ## Configuración de vivo Ads
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -43,14 +45,20 @@ La ventana de configuración de vivo Ads incluye 2 pestañas activas: Integraci�
 
 La integración con vivo Ads solo admite el evento de instalación en el postback predeterminado.
 
+<div id="activate-partner" />
+
 ### Activación de socios
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="enable-view-through-attribution" />
+
 ### Habilitar la atribución por impresiones
 
 Cambia esta opción a ON si quieres atribuir instalaciones view-through de vivo Ads. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -65,6 +73,8 @@ Cambia esta opción a ON si quieres atribuir instalaciones view-through de vivo 
 En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a vivo Ads para atribuir campañas, conjuntos de anuncios o incluso anuncios individuales de vivo Ads. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
 Esta pestaña se divide en distintas secciones:
+
+<div id="attribution-link-parameters" />
 
 ### Parámetros de enlaces de atribución
 
@@ -87,6 +97,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a vivo Ads.
@@ -97,9 +109,13 @@ Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/markete
 
 ![viewthrough_en-us.png](https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png)
 
+<div id="attribution-link" />
+
 ### Enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a vivo Ads para que se active cuando los clientes potenciales hagan clic en un anuncio correspondiente. 
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -112,6 +128,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución view-through aquí</Anchor>.
 
 [![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 

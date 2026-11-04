@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Configura una integración de Meta Ads para la app de tu sitio web a fin de enviar señales de conversión web a Meta mediante la Conversions API (CAPI). Meta utiliza estas señales para optimizar el targeting de anuncios y medir la performance de la campaña.
 
+<div id="overview" />
+
 ## Descripción general
 
 AppsFlyer admite la integración con Meta Ads (`metaweb_int`) para campañas de aplicaciones web. La integración te permite reportar datos de atribución y conversión directamente mediante la Conversions API (CAPI) de Meta, que Meta utiliza para optimizar la segmentación de anuncios, medir el performance y crear audiencias personalizadas.
@@ -33,6 +35,8 @@ Así es como funciona: un usuario hace clic en un anuncio de Meta y llega a tu s
 >
 > La integración actual de Meta Web no admite el envío de postbacks de re-engagement a CAPI.
 
+<div id="prerequisites" />
+
 ### Requisitos previos
 
 Antes de activar la integración de Meta Ads, asegúrate de tener lo siguiente:
@@ -42,12 +46,16 @@ Antes de activar la integración de Meta Ads, asegúrate de tener lo siguiente:
   * <Anchor target="_blank" href="/marketers/es/docs/configure-web-performance-measurement-settings">Configurar los ajustes de atribución web de AppsFlyer</Anchor>
 * Una <Anchor target="_blank" href="https://www.facebook.com/business/help/1710077379203657?id=180505742745347">cuenta empresarial en Meta Business Manager</Anchor>.
 
+<div id="set-up-meta-ads-web-campaigns-for-website-apps" />
+
 ## Configura campañas web de Meta Ads para aplicaciones web
 
 La configuración consiste en definir la integración entre Meta Ads y AppsFlyer y configurar la campaña en ambas plataformas. Completa ambas partes en orden.
 
 * [Parte 1: Configura la integración de Meta Ads en AppsFlyer](#parte-1-configura-la-integración-de-meta-ads-en-appsflyer) (obligatorio)
 * [Parte 2: Configura la integración de AppsFlyer en Meta Ads](#parte-2-configurar-la-integración-de-appsflyer-en-anuncios-de-meta) (obligatorio)
+
+<div id="part-1-set-up-meta-ads-integration-in-appsflyer" />
 
 ## Parte 1: Configura la integración de Meta Ads en AppsFlyer
 
@@ -64,12 +72,16 @@ Para activar la integración de Meta Ads:
 3. Haz clic en **Configurar integración**. Se te redirigirá a la página de configuración de **Integraciones activas**.
 4. En la pestaña **Integración**, selecciona **Activar partner**.
 
+   <div id="note-1" />
+
    > 📘 **Nota**
    >
    > El interruptor debe permanecer (<Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.
 
 5. Completa el campo **ID del píxel**. Para obtener el ID del píxel desde Meta Ads Manager:
    1. En el menú lateral de <Anchor target="_blank" href="https://www.facebook.com/ads/manager">Administrador de anuncios</Anchor>, ve a **Todas las herramientas** > **Administrador de eventos**.
+
+      <div id="note-2" />
 
       > 📘 **Nota**
       >
@@ -79,6 +91,8 @@ Para activar la integración de Meta Ads:
    3. Copia el ID del píxel que aparece debajo del nombre del píxel y pégalo en el campo **ID del píxel** de AppsFlyer.
 6. Completa el campo **Token de acceso**. Para obtener el token de acceso, sigue <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token">estas instrucciones</Anchor>.
 7. Activa **Limitar el uso que Meta Ads hace de la información personal de los usuarios (CCPA)** para cumplir con las <Anchor target="_blank" href="/marketers/es/docs/send-opendsr-api-requests">leyes de protección de datos</Anchor>.
+
+   <div id="note-3" />
 
    > 📘 **Nota**
    >
@@ -105,12 +119,16 @@ Para configurar los postbacks de eventos in-app:
    * **Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks para los eventos atribuidos a cualquier partner y para los eventos orgánicos.
 7. En la columna **Incluyendo**, selecciona si los eventos se envían con sus valores de ingresos. Consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks">Datos a incluir en los postbacks</Anchor>.
 
+   <div id="important" />
+
    > 🚧 **¡Importante!**
    >
    > Si estás configurando un evento de compra, configura la columna **Incluyendo** en **Valores e ingresos**. Seleccionar cualquier otra opción hará que el postback falle.
 
 8. [Opcional] Haz clic en el icono **Agregar condición** para <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#postbacks-condicionales-de-eventos-in-app">establecer condiciones</Anchor> para un evento.
 9. Haz clic en **Guardar integración**.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -125,11 +143,15 @@ Para configurar los postbacks de eventos in-app:
 >
 > Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">[beta] Integrate AppsFlyer Web SDK</Anchor>.
 
+<div id="note-5" />
+
 > 📘 **Nota**
 >
 > Si envías eventos S2S y quieres que AppsFlyer envíe postbacks para Meta Ads, asegúrate de que cada evento incluya al menos uno de estos campos: `ip`, `user_agent` o `customer_user_id`. Si faltan los tres, AppsFlyer no envía el postback. Para ver todos los campos de evento compatibles, consulta <Anchor target="_blank" href="/marketers/es/docs/server-to-server-s2s-api-for-web-performance-measurement#medir-un-evento">Server-to-Server (S2S) API for Web Performance Measurement</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-meta-ads" />
 
 ## Parte 2: Configurar la integración de AppsFlyer en Anuncios de Meta
 
@@ -147,6 +169,8 @@ Completa los siguientes pasos en Meta Ads Manager.
 
    1. En Meta Ads, selecciona el evento personalizado que quieras establecer como objetivo de la campaña y márcalo como acción de conversión.
    2. En AppsFlyer, en la página **integración de Meta Web**, en **Postback de eventos in-app**, asigna un evento de AppsFlyer a un evento de partner personalizado en la columna **Mapped to partner event**. Asígnale el mismo nombre que la acción de conversión en Meta Ads.
+
+   <div id="note-6" />
 
    > 📘 **Nota**
    >
@@ -166,6 +190,8 @@ Completa los siguientes pasos en Meta Ads Manager.
 
    * **URL del sitio web**: Utiliza la URL de tu sitio web cuando quieras que los usuarios lleguen directamente a él y completen eventos de conversión web, como una compra o un registro.
    * **Enlace de atribución de AF (OneLink)**: Utiliza un enlace de atribución de AF cuando quieras redirigir a los usuarios a tu app móvil, con una redirección alternativa a tu sitio web si la app no está instalada. Esto resulta útil cuando tu campaña se dirige tanto a usuarios de la aplicación como a usuarios de la web. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">los enlaces y experiencias de OneLink</Anchor> .
+
+   <div id="important-1" />
 
    > 🚧 **¡Importante!**
    >
@@ -192,13 +218,19 @@ Ejemplo de una URL resultante:
 https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_source_name}}&af_c_id={{campaign.id}}&af_adset={{adset.name}}&af_adset_id={{adset.id}}&af_ad={{ad.name}}&af_ad_id={{ad.id}}
 ```
 
+<div id="note-7" />
+
 > 📘 **Nota**
 >
 > Meta añade automáticamente `fbclid={{fbclid}}` a la URL de destino cuando el usuario hace clic en el anuncio.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > Para simplificar el análisis de las campañas, incluye el tipo de campaña (web o móvil) como prefijo o sufijo en el nombre de la campaña; por ejemplo, `campaign-name_web`.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >
@@ -212,11 +244,15 @@ https://www.example.com?pid=metaweb_int&c={{campaign.name}}&af_siteid={{site_sou
 
 Utiliza la sección **Seguimiento** para seleccionar los eventos de conversión promocionados por tu anuncio. Configura los eventos mediante el <Anchor target="_blank" href="https://www.facebook.com/business/help/898185560232180?id=1205376682832142">Administrador de eventos</Anchor>.
 
+<div id="important-2" />
+
 > 🚧 **¡Importante!**
 >
 > No selecciones **Eventos de la app**. Si lo haces, Meta atribuirá esas conversiones mediante la API de SRN, lo que puede provocar discrepancias en los reportes y la optimización.
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## Ver datos de atribución web
 
@@ -225,6 +261,8 @@ Esto es lo que puedes esperar al revisar los datos de atribución después de la
 * **Dashboard:** En <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#crossplatform-dashboard">el dashboard multiplataforma</Anchor>, los datos web y de la app se muestran uno al lado del otro, lo que te ofrece una vista unificada del rendimiento de las campañas en todas las plataformas.
 * Las **exportaciones de raw data y las respuestas de la API** incluyen Meta Web en el campo `media_source` para la actividad web de Meta.
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## Medir datos de atribución web con costo web
 
 Puedes obtener una vista completa del rendimiento de los datos de atribución web y los datos de costo de Meta Ads en el dashboard y en los <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">reportes de Cost ETL</Anchor>. Para hacerlo, asegúrate de tener <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide#sobre-roi360">el paquete ROI360</Anchor> y completa la siguiente configuración:
@@ -232,12 +270,16 @@ Puedes obtener una vista completa del rendimiento de los datos de atribución we
 1. Conecta el costo a tu aplicación web mediante `facebook_int` (no mediante `metaweb_int`) desde la pestaña **Costo** o la página **Configuración de costos**. Para más información sobre cómo conectar el costo, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">Configurar la API de costos de ROI360 para medir los datos de costos</Anchor>.
 2. Incluye el ID de la campaña (`af_c_id`) en la URL de la landing page. Asegúrate de que la URL incluya la jerarquía completa de la campaña para ver los costos, clics e impresiones asociados a la atribución web con el mayor nivel de detalle posible.
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 | Caducado | Observaciones |
 | --- | --- |
 | Clics e impresiones | Los clics y las impresiones de las campañas web requieren una <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide">suscripción a ROI360</Anchor>. |
 | Reengagement | Actualmente no se admite el envío de postbacks de re-engagement a través de CAPI. |
+
+<div id="see-also-1" />
 
 > 📄 **Consulta también**
 >

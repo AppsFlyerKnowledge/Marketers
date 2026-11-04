@@ -24,9 +24,13 @@ x-zendesk:
 
 > **At a glance:** Automatiza la creación y la gestión de reglas de validación a gran escala. La API de reglas de Validación permite a los equipos técnicos crear, actualizar, aplicar parches y eliminar reglas de forma programática, superando los límites de valor de la IU y eliminando la carga operativa de la gestión manual de reglas.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > La API de reglas de validación está disponible para los clientes de Protect360. Actualmente está en beta cerrada, y el acceso es limitado y se habilita por cuenta. Ponte en contacto con tu responsable de Customer Success (CSM) para solicitar acceso.
+
+<div id="about-the-validation-rules-api" />
 
 ## Acerca de la API de reglas de validación
 
@@ -61,6 +65,8 @@ La API de Reglas de validación está disponible para los clientes de Protect360
 
 </Accordion>
 
+<div id="how-it-works" />
+
 ## Cómo funciona
 
 <Accordion title="Autenticar">
@@ -70,6 +76,8 @@ La API utiliza la autenticación con token Bearer (JWT).
 1. En tu cuenta de AppsFlyer, ve a **Centro de Seguridad** > **tokens de API**.
 2. Genera un token.
 3. Incluye el token en el encabezado **Authorization** de tus solicitudes a la API.
+
+<div id="note-1" />
 
 > 📘 **Advertencia**
 >
@@ -92,6 +100,8 @@ La API utiliza la autenticación con token Bearer (JWT).
 El endpoint de parche es especialmente útil para actualizaciones de alta frecuencia. Actualizas solo lo que ha cambiado, no toda la regla. Esto funciona bien para flujos de trabajo como las actualizaciones diarias de la lista de bloqueo de fuentes de fraude.
 
 </Accordion>
+
+<div id="scope-and-supported-configurations" />
 
 ## Alcance y configuraciones compatibles
 
@@ -156,6 +166,8 @@ Para consultar todos los detalles técnicos, incluidas las referencias de endpoi
 
 </Accordion>
 
+<div id="faq" />
+
 ## Preguntas frecuentes
 
 <Accordion title="¿Quién puede usar la API de reglas de validación?">
@@ -211,6 +223,8 @@ N.º Solo se admite la lógica "AND" entre dimensiones.
 Solo eventos de instalación. Los eventos in-app no tienen soporte en esta versión.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

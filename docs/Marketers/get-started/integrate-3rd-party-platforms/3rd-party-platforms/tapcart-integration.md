@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza Tapcart para aprovechar las capacidades de AppsFlyer en tu aplicación.
 
+<div id="introduction" />
+
 ## Introducción
 
 Tapcart facilita el envío de tus datos a AppsFlyer y la utilización de sus capacidades. Al desarrollar tu aplicación con Tapcart, el SDK de AppsFlyer se implementa en la aplicación de forma predeterminada. Una vez que hayas registrado tus datos a través de Tapcart, los datos, incluidos las instalaciones orgánicas y no orgánicas, se muestran en AppsFlyer.
+
+<div id="integrating-tapcart-with-appsflyer" />
 
 ## Integrando Tapcart con AppsFlyer
 
 El SDK de AppsFlyer te permite medir instalaciones, desinstalaciones, referencias, interacciones de usuarios con push notifications, realizar deep linking, manejar escenarios de privacidad de usuarios y más.
 
 Sigue <Anchor target="_blank" href="https://tapcart.com/integrations/appsflyer">esta página de Tapcart</Anchor> para aprender cómo integrar Tapcart con AppsFlyer.
+
+<div id="default-in-app-events-configured-in-the-appsflyer-sdk" />
 
 ## Eventos predeterminados en la aplicación configurados en el SDK de AppsFlyer
 
@@ -47,6 +53,8 @@ Después de que Tapcart haya integrado el SDK de AppsFlyer en tu aplicación, lo
 * Compra finalizada
 * Eliminar del carrito
 * Primera compra
+
+<div id="enable-deep-linking-with-appsflyer" />
 
 ## Habilitar deep linking con AppsFlyer
 

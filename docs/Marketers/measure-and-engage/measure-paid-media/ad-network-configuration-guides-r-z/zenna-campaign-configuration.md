@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Zenna, un partner de ad network integrado con AppsFlyer, ofrece una solución de adquisición de usuarios basada en el rendimiento exclusivamente para juegos móviles.
 
+<div id="setting-up-zenna" />
+
 ## Configuración de Zenna
 
 **Requisito previo:** una cuenta con el Partners. Si no tienes una cuenta, contacta con el Partners para abrir una antes de configurar la integración.
@@ -41,6 +43,8 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, tendrás que activar el selector ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector **debe** estar activado mientras trabajes con el partner.  
@@ -50,9 +54,13 @@ Postbacks predeterminados
 
 Envía postbacks automáticos a Zenna después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > La opción **Only events attributed to this partner** es la única opción disponible con Zenna y está seleccionada de forma predeterminada.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -78,6 +86,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Z
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -97,6 +107,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Zenna.
@@ -104,6 +116,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -134,6 +148,8 @@ La integración de ingresos por publicidad no está disponible para este partner
 En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Zenna, tanto si el partner actúa como ad network, como agencia o incluso como ambas cosas. Ten en cuenta que, aunque la atribución esté desactivada para Zenna, la pestaña de permisos está activa y puedes otorgar el control a Zenna.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

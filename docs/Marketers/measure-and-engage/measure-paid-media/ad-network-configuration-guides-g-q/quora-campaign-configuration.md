@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
 
+<div id="setting-up-quora" />
+
 ## Configuración de Quora
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -42,6 +44,8 @@ La ventana de configuración de Quora incluye 3 pestañas activas: **Integració
 
 Para ver una descripción detallada del Encabezado de la Ventana de Configuración de Partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio para todos los partners**.
@@ -51,6 +55,8 @@ Para ver una descripción detallada del Encabezado de la Ventana de Configuraci�
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, tendrás que activar el botón ***Activar Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
@@ -59,6 +65,8 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 Postbacks predeterminados
 
 Envía postbacks automáticos a Quora después de las instalaciones de los usuarios.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -100,6 +108,8 @@ La integración de ingresos por publicidad no está disponible para este partner
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Quora, tanto si el partner actúa como ad network, agencia o ambas cosas. Ten en cuenta que, incluso si la atribución está deshabilitada para Quora, la pestaña de permisos está activa y puedes otorgarle el control a Quora.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

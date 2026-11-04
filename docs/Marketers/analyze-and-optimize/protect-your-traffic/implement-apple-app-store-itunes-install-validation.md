@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Evita la atribución de actividades fraudulentas usando el servicio de validación de instalación de Apple para cualquier instalación de iOS (tanto orgánica como no orgánica).
 
+<div id="receipt-validation-flow" />
+
 ## Flujo de validación de recibos
 
 El flujo de validación de recibos es el siguiente:
@@ -38,6 +40,8 @@ El flujo de validación de recibos es el siguiente:
    * La instalación se rechaza y no aparece en nuestro Dashboard
    * La ad network no recibe ningún postback ni ninguna llamada a la API para la instalación invalidada
    * La instalación y todos los eventos in-app correspondientes se registran en los Reportes de raw data de Protect360: Installs y Blocked in-app events.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >

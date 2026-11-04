@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En resumen:** Safari implementa una función de <Anchor target="_blank" href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">banner de app</Anchor> que proporciona una forma estandarizada de promocionar apps en la tienda de aplicaciones de Apple. **Esto no está relacionado con la solución** <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">**Smart Banner**</Anchor> **recomendada de AppsFlyer.**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Te recomendamos usar AppsFlyer Smart Banners para convertir a los visitantes de tu sitio web en usuarios de la aplicación.
@@ -33,6 +35,8 @@ x-zendesk:
 > * Compatible con todos los navegadores
 > * Son personalizables
 > * Funciona en todos los dispositivos Android e iOS
+
+<div id="ios-app-banner" />
 
 ## Banner de la App para iOS
 
@@ -47,6 +51,8 @@ Antes de implementar banners de aplicaciones de iOS, ten en cuenta lo siguiente:
 * No implementes a la vez el banner de aplicación de iOS y AppsFlyer Smart Banners. Si lo haces, puede haber problemas de visualización en tu sitio web móvil.
 * La solución de banner de aplicación es específica de iOS, lo que significa que no funciona en OS X.
 * El banner de app solo funciona en Safari.
+
+<div id="setting-a-web-page-with-an-app-banner-and-click-attribution-link" />
 
 ### Configurar una página web con un banner de aplicación y un enlace de atribución de clics
 

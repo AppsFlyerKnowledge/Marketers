@@ -24,11 +24,15 @@ x-zendesk:
 
 <Embed title="Dimensiones personalizadas" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/tvcdofnwjo" providerUrl="https://fast.wistia.com" />
 
+<div id="overview" />
+
 ## Resumen general
 
 Las dimensiones personalizadas te permiten usar las dimensiones existentes para crear tus propias dimensiones para el análisis de datos relevantes para tus propósitos comerciales. Estas dimensiones se pueden usar en todos los widgets del panel de control de resumen general para agrupar datos y ayudarte a obtener insights más profundos y tomar decisiones basadas en datos que se alineen con tus objetivos comerciales.
 
 Las dimensiones personalizadas que creas están a nivel de cuenta, lo que significa que diferentes aplicaciones en la misma cuenta de AppsFlyer pueden usar las mismas dimensiones personalizadas.
+
+<div id="benefits" />
 
 ### Ventajas
 
@@ -36,6 +40,8 @@ Las dimensiones personalizadas que creas están a nivel de cuenta, lo que signif
 * Análisis segmentado: agrupa y analiza tus datos en función de atributos o características específicas relevantes para obtener una visión más detallada del comportamiento de los usuarios, los segmentos de clientes o el rendimiento del producto.
 * Reportes mejorados: crea paneles de control y reportes personalizados que se alineen con tus requisitos de reportes únicos.
 * Mejora en la toma de decisiones: al capturar dimensiones personalizadas que se alinean con tus objetivos comerciales, puedes tomar decisiones más informadas. Las dimensiones personalizadas proporcionan el contexto necesario para evaluar el impacto de diferentes variables y factores en tus indicadores claves de rendimiento (KPI), lo que te ayuda a identificar tendencias, patrones y oportunidades de optimización.
+
+<div id="example-use-cases" />
 
 ### Ejemplos de casos de uso
 
@@ -46,6 +52,8 @@ Las dimensiones personalizadas que creas están a nivel de cuenta, lo que signif
 | Medios propios vs. medios pagados | <ul><li>Basado en fuentes de medios.</li><li>Agrupa diferentes fuentes de medios en "propios" y "pagados". Por ejemplo: agrupa SMS y publicaciones de Facebook en el valor "propios", y Facebook y Google en el valor de "pagados".</li><li>AppsFlyer agrupa los datos de estas fuentes de medios en los valores "propios" y "pagados", respectivamente.</li></ul> |
 | Ciudades | <ul><li>Basado en los nombres de tu campaña.</li><li>Los valores incluyen las ciudades para las que tienes campañas específicas en los nombres de tus campañas. Por ejemplo: "US\_Facebook\_NY" para Nueva York y "US\_Google\_SF" para San Francisco.</li><li>AppsFlyer realiza un análisis del nombre de la campaña y agrupa los datos en función de las ciudades.</li></ul> |
 | Gerente de UA | <ul><li>Basado en fuentes de medios.</li><li>Agrupa diferentes fuentes de medios de acuerdo con miembros específicos del equipo. Por ejemplo: agrupa las campañas de Google y Facebook en el valor "Kevin" y TikTok e las campañas de Instagram en el valor "Natasha".</li><li>AppsFlyer agrupa los datos de estas fuentes de medios en los valores "Kevin" y "Natasha", respectivamente.</li></ul> |
+
+<div id="procedures" />
 
 ## Procedimientos
 

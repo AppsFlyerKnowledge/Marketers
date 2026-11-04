@@ -29,6 +29,8 @@ La validación básica de recibos es gratuita para todos los planes de cuenta.
 >
 > Considera usar nuestra solución de ingresos de tienda premium ROI360 para beneficiarte del cálculo de ingresos netos, cobertura completa del funnel de suscripción, manejo de reembolsos y detección y deduplicación de compras automatizadas. Para más información y una comparación entre las dos soluciones, consulta Las dos soluciones para la validación de compras y suscripciones.
 
+<div id="how-does-receipt-validation-work" />
+
 ## ¿Cómo funciona la validación de recibos?
 
 El flujo de validación de recibos es el siguiente:
@@ -43,6 +45,8 @@ El flujo de validación de recibos es el siguiente:
 8. El servicio de validación de AppsFlyer transfiere la respuesta al SDK.
 9. El SDK transfiere la respuesta de validación de recibos a la aplicación (ya sea éxito o fallo).
 
+<div id="activate-receipt-validation" />
+
 ## Activar la validación de recibos
 
 Para activar la validación de recibos, sigue estos pasos:
@@ -52,9 +56,13 @@ Para activar la validación de recibos, sigue estos pasos:
 3. En el paso 1, **elegir tipo de producto**, selecciona **Validación de recibos**.
 4. Haz clic en **Guardar y siguiente** para proceder a configurar la validación de recibos.
 
+<div id="set-up-receipt-validation" />
+
 ## Configurar la validación de recibos
 
 Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation">Configurar la validación de recibos</Anchor><Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation#3-verificar-la-implementación-del-sdk">.</Anchor>
+
+<div id="in-app-purchase-events-and-parameters-for-receipt-validation" />
 
 ## Eventos y parámetros de compra in-app para la validación de recibos
 
@@ -91,6 +99,8 @@ Todos los eventos predefinidos comparten las siguientes propiedades:
 
 * Cualquier parámetro personalizado adicional enviado en la llamada del SDK aparecerá en el campo `custom_data` en los reportes de raw data
 
+<div id="switch-from-roi360-store-revenue-to-receipt-validation" />
+
 ## Cambiar de ingresos de tienda de ROI360 a validación de recibos
 
 Si actualmente usas ingresos de tienda de ROI360 y deseas cambiar a validación de recibos, sigue estos pasos:
@@ -108,6 +118,8 @@ Si actualmente usas ingresos de tienda de ROI360 y deseas cambiar a validación 
 7. Después de cambiar, el **Tipo de producto** se actualiza a **Validación de recibos,** y la pantalla refleja la configuración simplificada.
 8. Necesitarás volver a validar lo siguiente:
    * **Implementación del SDK** para el método validateAndLog
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

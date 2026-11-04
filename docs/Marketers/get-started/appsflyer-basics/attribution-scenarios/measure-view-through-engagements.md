@@ -22,19 +22,27 @@ x-zendesk:
 ---
 > **De un vistazo:** Un usuario que ve un anuncio (impresión) y posteriormente instala la aplicación, se atribuye mediante atribución por impresiones.
 
+<div id="overview" />
+
 ## Visión general
 
 La atribución por impresiones mide las instalaciones, las reatribuciones y los re-engagements de los usuarios que vieron un anuncio pero no hicieron clic en él.
 
+<div id="view-through-attribution-flow" />
+
 ### Flujo de atribución por impresiones
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### Terminología
 
 * **Impresión:** la visualización de un anuncio a un usuario, independientemente de cualquier clic u otro engagement de usuario.
 * **Instalación**: en este artículo, significa instalaciones, reatribuciones y re-engagements.
 * **Atribución por impresiones:** la atribución de instalaciones a una fuente de medios después de que el usuario vea una impresión.
+
+<div id="view-through-attribution-principles" />
 
 ### Principios de la atribución por impresiones
 
@@ -47,12 +55,16 @@ Las impresiones son candidatas a la atribución por impresiones mediante los sig
 * Si se encuentran varias impresiones, se considera la impresión más reciente.
 * Los clics tienen prioridad sobre las impresiones. Esto significa que si hay clics en la ventana retrospectiva por clics, gana el clic más reciente. La impresión más reciente se atribuye como colaborador (asistencia).
 
+<div id="view-through-lookback-window" />
+
 ### Ventana retrospectiva por impresiones
 
 * Para no SRN, la duración de la ventana de atribución retrospectiva por impresiones es de 1 a 24 horas. Para SRN, la ventana retrospectiva puede ser más larga.
 * Para establecer la ventana:
   * **Redes de publicidad:** establece la duración mediante enlaces de atribución para impresiones configurando el parámetro `af_viewthrough_lookback`. Si el parámetro no está configurado, se utiliza una ventana predeterminada de 24 horas.
   * **SRN**: la ventana es determinada por la SRN. Recomendamos establecer el mismo valor que la SRN en AppsFlyer.
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### Métricas y reportes de atribución por impresiones
 
@@ -63,6 +75,8 @@ Las impresiones son candidatas a la atribución por impresiones mediante los sig
   * Los datos de nivel de usuario (raw data) de los usuarios atribuidos a través de la atribución por impresiones están disponibles y son similares a los de los usuarios atribuidos por clics. Sin embargo, algunos partners restringen la disponibilidad de estos datos.
   * Los datos de impresiones (similares a los datos de clics) están disponibles.
   * El campo attributed\_touch\_type contiene el valor *impression.*
+
+<div id="view-through-operations" />
 
 ## Operaciones por impresiones
 

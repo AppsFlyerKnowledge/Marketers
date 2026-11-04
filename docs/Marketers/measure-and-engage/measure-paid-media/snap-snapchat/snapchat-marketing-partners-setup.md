@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Integra con partners de marketing de Snapchat para medir las campañas que ejecutas con ellos. Cuando se configura, AppsFlyer envía postbacks al partner de marketing de Snapchat configurado.
 
+<div id="setting-up-a-snapchat-marketing-partner" />
+
 ## Configurar un partner de marketing de Snapchat
 
 Sigue los pasos a continuación para configurar tus campañas con cualquiera de los partners de marketing de Snapchat.
@@ -40,6 +42,8 @@ Cuando hayas activado Snapchat y obtenido el Snap Account ID, configura el partn
 5. Pega el **Snap account ID** obtenido del dashboard de Snapchat (con los guiones) en el campo **Snap Account ID**.
 6. Haga clic en **Guardar**.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 AppsFlyer puede enviar postbacks automáticos de instalación y re-engagement a partners. Utiliza esta sección para definir la **fuente de los usuarios** que permite enviar estos postbacks. En algunos casos, el origen de los usuarios está predefinido y no se puede cambiar:
@@ -49,14 +53,20 @@ AppsFlyer puede enviar postbacks automáticos de instalación y re-engagement a 
 Selecciona **Solo eventos atribuidos a este partner** para eventos procedentes solo de usuarios atribuidos a este partner.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para reportarla a este partner.
 
+<div id="in-app-events" />
+
 ### Eventos dentro de la aplicación
 
 1. Para enviar postbacks de eventos in-app al partner de marketing de Snapchat que estás configurando, activa Postback de eventos in-app en **ON**.
 2. Añade individualmente los eventos in-app (eventos de SDK) que quieras enviar al partner y <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#mapeo-de-eventos">mapéalos según sea necesario.</Anchor>
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > Deshabilitar la atribución de Snapchat impide enviar postbacks a los partners de marketing de Snapchat.
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

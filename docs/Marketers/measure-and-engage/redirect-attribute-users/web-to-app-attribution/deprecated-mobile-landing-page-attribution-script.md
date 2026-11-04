@@ -38,15 +38,21 @@ Las páginas de destino son una técnica muy común entre los marketers digital.
 
 Sin embargo, para la adquisición de usuarios móviles, la estrategia de la página de destino tiene ventajas y desventajas.
 
+<div id="the-upsides" />
+
 #### Ventajas:
 
 * Los clientes potenciales, que eventualmente puedan instalarla, deberían estar más comprometidos con la aplicación.
 * Los servicios más complicados (por ejemplo, los servicios financieros) requieren más explicaciones para convertir sus clientes potenciales, lo que se habilita en las páginas de destino.
 
+<div id="the-downsides" />
+
 #### Desventajas:
 
 * El embudo más largo reduce el número final de clientes potenciales convertidos.
 * Es más difícil atribuirlo desde el punto de vista técnico.
+
+<div id="the-challenges-of-mobile-attribution-on-landing-pages" />
 
 ## Desafíos de la atribución móvil en las páginas de destino
 
@@ -54,6 +60,8 @@ Sin embargo, para la adquisición de usuarios móviles, la estrategia de la pág
 * **El modelo de atribución del último clic puede provocar la pérdida de la atribución correcta** si la página de destino tiene sus propios enlaces de atribución.
 * **Los visitantes directos del sitio web se registran como orgánicos**, a menos que la página de destino tenga sus propios enlaces de atribución.
 * **Los visitantes de escritorio se registran como orgánicos**, a menos que la página de destino tenga un método para registrar sus conversiones en usuarios móviles.
+
+<div id="the-solution" />
 
 ## La solución
 
@@ -63,6 +71,8 @@ En algunos casos, también tendrás que hacer algunos ajustes en tus campañas.
 
 Los siguientes escenarios cubren los requisitos para todos los casos posibles de fuentes de medios.
 
+<div id="landing-page-scenarios" />
+
 ## Escenarios de páginas de destino
 
 Sigue las instrucciones de implementación que aparecen a continuación **para todas las fuentes de medios** que envían clientes potenciales a tus páginas de destino.
@@ -71,6 +81,8 @@ Sigue las instrucciones de implementación que aparecen a continuación **para t
 
 <Accordion title="Anuncios de Meta: atribución multiplataforma">
 
+<div id="description" />
+
 #### Descripción:
 
 Los Anuncios de Meta son un SRN, que no utiliza enlaces de atribución externos.
@@ -78,6 +90,8 @@ Los Anuncios de Meta son un SRN, que no utiliza enlaces de atribución externos.
 Cuando se lanza la primera aplicación, AppsFlyer consulta los Anuncios de Meta para ver si el usuario ha interactuado anteriormente (en los últimos 28 días) con un anuncio publicado por un anunciante en la aplicación de Facebook. Si lo han hecho, los Anuncios de Meta se autoatribuyen.
 
 Los Anuncios de Meta también se atribuyen a la multiplataforma, lo que significa que el usuario puede interactuar con cualquier tipo de campaña, móvil o no, en cualquier plataforma, para que los Anuncios de Meta lo atribuyan a sí mismo.
+
+<div id="conclusion" />
 
 #### Conclusión:
 
@@ -89,11 +103,15 @@ Sin embargo, cuando los usuarios optan por no compartir su ID de dispositivo, co
 * Los usuarios nuevos que compartan la ID de su dispositivo se atribuirán correctamente a los Anuncios de Meta.
 * Los usuarios nuevos que no compartan su ID de dispositivo se atribuirán a «Facebook\_LP».
 
+<div id="instructions" />
+
 #### Instrucciones:
 
 1. En tu cuenta de Anuncios de Meta, crea una **campaña de «Tráfico» o «Conversiones» con la atribución móvil habilitada** para enviar clientes potenciales a tu página de destino.
 2. Botón de descarga de Android de la página de destino: enlace directo a Google Play.
 3. Botón de descarga de la página de destino para iOS: enlace directo a iTunes (O enlace de atribución **sin el ID del dispositivo**).
+
+<div id="what-the-script-does" />
 
 #### ¿Qué hace el script?
 
@@ -107,11 +125,15 @@ En el script, busca un método llamado ***isFacebook ()*** para aprender más so
 
 <Accordion title="Google Ads: Carga de conversiones sin conexión a GCLID +">
 
+<div id="description-1" />
+
 #### Descripción:
 
 El proceso habitual para instalar la atribución de las campañas de Google Ads requiere que los clientes potenciales que hacen clic se redirijan a la URL de la página de la tienda de la aplicación.
 
 Por lo tanto, cuando redirijas clientes potenciales de Google Ads a una página de destino, utiliza un mediador para establecer la conexión entre la instalación móvil y el clic original en la campaña de Google Ads para dispositivos no móviles.
+
+<div id="conclusion-1" />
 
 #### Conclusión:
 
@@ -121,11 +143,15 @@ La primera parte se ocupa de **atribuir en AppsFlyer** a los usuarios móviles q
 
 La segunda parte se ocupa de **notificar a Google Ads** sobre estas instalaciones móviles mediante el método de subida de conversiones offline de Google.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Esta solución GCLID no es oficialmente compatible ni recomendada por Google.
 > En caso de que Google deje de utilizar el parámetro GCLID, cambiaremos el script para admitir los cambios.
 > Recomendamos seguir este artículo haciendo clic en el botón ***Seguir*** en el encabezado del artículo para estar informado cuando haya una actualización del artículo o del script adjunto.
+
+<div id="instructions-1" />
 
 #### Instrucciones:
 
@@ -158,6 +184,8 @@ Las conversiones se pueden subir manualmente o mediante una API de Adwords (más
 
 Puedes exportar los CSV con esta información desde tu cuenta de AppsFlyer o puedes obtener estos datos de la Push API en tiempo real para cada instalación.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > También puedes ver las palabras clave que tus usuarios buscaron en el raw data de AppsFlyer de forma similar a como obtuviste el GCLID:
@@ -169,6 +197,8 @@ Puedes exportar los CSV con esta información desde tu cuenta de AppsFlyer o pue
 >    Ejemplo de URL de OneLink: `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
 >
 > La siguiente función JS ya contiene el código para analizar también el parámetro de la palabra clave.
+
+<div id="what-the-script-does-1" />
 
 #### ¿Qué hace el script?
 
@@ -182,16 +212,22 @@ En el script, busca **gclidValue** para saber cómo el script detecta los usuari
 
 <Accordion title="Otros SRN: agregar parámetro">
 
+<div id="description-2" />
+
 #### Descripción:
 
 Otras <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#srns-integradas-con-appsflyer">SRN</Anchor>, por ejemplo, Snapchat o Twitter, no son multiplataforma como los Anuncios de Meta y requieren un poco de trabajo para que se les atribuya a los usuarios móviles.
 
 Tus campañas con otras SRN llevan a tus usuarios a la página de destino y se le factura en función de los clientes potenciales que hacen clic, sin relación con ningún usuario móvil derivado.
 
+<div id="conclusion-2" />
+
 #### Conclusión:
 
 Al definir la URL de la página de destino de una campaña en SRN (además de los Anuncios de Meta y Google Ads), añade un parámetro de ID de partner a la URL, que indique el SRN original.  
 La página de destino lanza un código JavaScript (ver más abajo) que analiza ese parámetro y crea una URL de OneLink, que tiene el valor de ID de partner. Cuando los usuarios de dispositivos móviles hacen clic en ese OneLink y lo instalan, se les atribuye a la fuente de medios indicada.
+
+<div id="instructions-2" />
 
 #### Instrucciones:
 
@@ -212,6 +248,8 @@ Si especificas el nombre real del SRN, por ejemplo, twitter\_int, es posible que
 
 El script en sí contiene lógica para evitar que utilices estos nombres. Búscalo `var SRNs` en el script. Deberías ver una lista de nombres de SRN y una condición que comprueba si `pidValue` es alguno de estos nombres. Elimina esta lógica cuando hayas terminado de probar el script.
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > Si vas a enviar usuarios a tu página de destino, te recomendamos que incluyas el siguiente parámetro en la URL de la página de destino:
@@ -221,6 +259,8 @@ El script en sí contiene lógica para evitar que utilices estos nombres. Búsca
 > * Para Doubleclick: usa "***&af\_pid=doubleclick\_lp***"
 > * Para publicaciones de Anuncios de Meta (no pagadas): usa "***&af\_pid=fbpost\_lp***»
 > * Para Oath (anteriormente Yahoo Gemini): usa "***&af\_pid=oath\_lp***»
+
+<div id="what-the-script-does-2" />
 
 #### ¿Qué hace el script?
 
@@ -234,17 +274,23 @@ Para obtener más información sobre lo que hace el script, busca **pidValue** e
 
 <Accordion title="Enlaces de atribución: redirigir con af_r">
 
+<div id="description-3" />
+
 #### Descripción:
 
 Los enlaces de atribución se utilizan para cualquier fuente de medios que no sea una SRN. Esto incluye miles de partners integrados y cualquier medio propio al que desee atribuir.
 
 Por suerte, la solución para la atribución de páginas de destino cuando se utilizan los enlaces de atribución de AppsFlyer es sencilla (y similar a la solución para los Anuncios de Meta).
 
+<div id="conclusion-3" />
+
 #### Conclusión:
 
 el enlace de atribución redirige al cliente potencial a una página de destino y, de este modo, también se encarga de la atribución correcta (si sigue una instalación móvil).
 
 Todo lo que queda por hacer es NO impedir la atribución correcta con otro último clic.
+
+<div id="instructions-3" />
 
 #### Instrucciones:
 
@@ -256,10 +302,14 @@ Todo lo que queda por hacer es NO impedir la atribución correcta con otro últi
 5. Botón de descarga de Android de la página de destino: enlace directo a Google Play.
 6. Botón de descarga de iOS de la página de destino: enlace directo a iTunes  
 
+   <div id="note-2" />
+
    > 📘 **Nota:**
    >
    > El script y la página de muestra HTML ofrecen la opción de configurar un botón de descarga que sirva tanto para Android como para iOS. Lea los comentarios del script para obtener información sobre cómo implementarlo.
 
+
+<div id="what-the-script-does-3" />
 
 #### ¿Qué hace el script?
 
@@ -273,15 +323,21 @@ Para obtener más información sobre lo que hace el script para gestionar los ca
 
 <Accordion title="Enlaces con parámetros utm: OneLink dinámico">
 
+<div id="description-4" />
+
 #### Descripción
 
 Es posible que tengas fuentes de tráfico que redirijan a los usuarios a tu página de destino mediante enlaces con parámetros UTM.
+
+<div id="conclusion-4" />
 
 #### Conclusión:
 
 ISi la URL original NO es un enlace de atribución de AppsFlyer, el script busca los parámetros ***utm\_source*** y ***utm\_campaign*** en el enlace. Si existen, el script prepara una URL de OneLink, que los tiene como nombre de la fuente de medios (pid) y nombre de la campaña (c), respectivamente.
 
 Ten en cuenta que con los enlaces de atribución de AppsFlyer, que también contienen parámetros UTM, se utilizan los parámetros de AppsFlyer, en lugar de los UTM.
+
+<div id="instructions-4" />
 
 #### Instrucciones:
 
@@ -298,6 +354,8 @@ Al cargar tu página de destino -
 4. Los nuevos usuarios móviles se atribuyen al valor de ***utm\_source*** como fuente de medios.
 5. No se envía ningún postback a la fuente de medios.
 
+<div id="what-the-script-does-4" />
+
 #### ¿Qué hace el script?
 
 El script busca los parámetros UTM en la URL de la página de destino. Si encuentra alguno, lo convierte en parámetros de OneLink. De esta forma, la información de la campaña se transfiere a la atribución final.
@@ -308,13 +366,19 @@ El script busca los parámetros UTM en la URL de la página de destino. Si encue
 
 <Accordion title="Visitantes orgánicos móviles: OneLink con pid=website">
 
+<div id="description-5" />
+
 #### Descripción
 
 Los visitantes orgánicos móviles son, por definición, clientes potenciales directos de la web móvil de fuentes desconocidas. Rara vez visitan páginas de destino dedicadas, pero es posible que la gran mayoría de las instalaciones móviles provengan del sitio web del anunciante.
 
+<div id="conclusion-5" />
+
 #### Conclusión:
 
 Si tienes una cantidad significativa de tráfico orgánico móvil desde tu sitio web, es muy recomendable registrar los datos de atribución de tu propio tráfico.
+
+<div id="instructions-5" />
 
 #### Instrucciones:
 
@@ -322,10 +386,14 @@ Para atribuir a los visitantes orgánicos móviles, el sitio web debe tener boto
 
 Para obtener información sobre cómo configurar y crear las URL de OneLink, haz clic <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">aquí.</Anchor>
 
+<div id="tip-1" />
+
 > 👍 **Consejo**
 >
 > Añade «&pid=website» a tu enlace de atribución para atribuir a todos estos visitantes a tu sitio web.
 > En cada página de tu sitio web, que tenga un botón de descarga/instalación con un enlace de atribución, añade «&c= `{PAGE NAME}`». Esto puede ayudarte a encontrar las páginas con mayor y menor conversión en tu sitio web.
+
+<div id="what-the-script-does-5" />
 
 #### ¿Qué hace el script?
 
@@ -337,6 +405,8 @@ Al agotar todas las demás opciones, el script determina que el usuario es un us
 
 <Accordion title="Visitantes de escritorio: formulario de teléfono/correo electrónico">
 
+<div id="description-6" />
+
 #### Descripción
 
 Todas las opciones mencionadas anteriormente suponen que los usuarios utilizan dispositivos móviles cuando interactúan con la campaña y la página de destino.
@@ -345,9 +415,13 @@ Pero, ¿qué pasa con los usuarios de escritorio?
 
 Los usuarios de escritorio pueden llegar a tu página de destino o sitio web y, después, visitar «de forma independiente» la tienda de aplicaciones con sus dispositivos móviles e instalar la aplicación móvil. Sin el compromiso anterior con los dispositivos móviles, es imposible atribuir a estos usuarios y, por lo tanto, se los etiqueta como «orgánicos».
 
+<div id="conclusion-6" />
+
 #### Conclusión:
 
 Una excelente solución a este problema de atribución es usar un **formulario de texto para descargar en la página de destino**, solo para usuarios de escritorio. A continuación, se enviará al dispositivo móvil un SMS/correo electrónico con la URL de OneLink.
+
+<div id="instructions-6" />
 
 #### Instrucciones:
 
@@ -357,6 +431,8 @@ Una excelente solución a este problema de atribución es usar un **formulario d
 4. Añade «&pid=desktop\_website» a la URL de OneLink para identificar esta fuente.
 5. Añade «&c= `{PAGE NAME}`» para ayudarte a encontrar las páginas con mayor y menor conversión en tu sitio web para usuarios de escritorio.
 
+<div id="what-the-script-does-6" />
+
 #### ¿Qué hace el script?
 
 El script detecta el dispositivo o la plataforma en la que se encuentra el usuario. Si es de escritorio, el script devuelve un enlace a la URL de un formulario web y lo coloca detrás de los botones de descarga. Cuando el usuario hace clic en descargar, se le envía a un formulario web donde rellena sus datos para recibir un SMS o un correo electrónico con un enlace para descargar la aplicación.
@@ -364,6 +440,8 @@ El script detecta el dispositivo o la plataforma en la que se encuentra el usuar
 Eres tú quien debes crear el formulario web y proporcionar la URL del mismo en el script. Para obtener más información, busca **isMobileDevice () en el script**.
 
 </Accordion>
+
+<div id="landing-page-javascript" />
 
 ## Javascript de página de destino
 
@@ -601,13 +679,19 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
+<div id="tip-2" />
+
 > 👍 **Consejo**
 >
 > Puedes implementar el fragmento de código javascript con Google Tag Manager. Google Tag Manager te facilita el control de cuándo y dónde se debe usar el javascript de la página de destino.
 
+<div id="instructions-7" />
+
 ### Instrucciones
 
 1. Activa el script ***GenerateURL*** al cargar cualquier página de su sitio web, a la que los visitantes puedan acceder directamente y que tenga botones de ***descarga*** para tus aplicaciones móviles.  
+
+   <div id="important" />
 
    > 🚧 **Importante:**
    >
@@ -620,6 +704,8 @@ function generateUrl(isDebug) {
 4. Sustituye el valor del parámetro ***PartnerIDParam*** si deseas que los usuarios orgánicos móviles se atribuyan a una fuente de medios distinta a «sitio web».
 5. De forma predeterminada, los usuarios se atribuyen a la página web en la que se encuentran cuando hacen clic en el botón ***Descargar***, a menos que se especifique otro nombre de campaña en la URL de la página de destino (`&c={CAMPAIGN_NAME}`). Para cambiarlo, sustituye el valor del parámetro ***campaignParam.***  
    Opcional para TODOS los escenarios, excepto los anuncios de pago de Anuncios de Meta.
+
+<div id="viewing-the-results" />
 
 ## Visualización de los resultados
 
@@ -640,6 +726,8 @@ Si tu embudo de marketing móvil siempre lleva a tu página de destino, estas fu
 | **ID de partner integrado** | Usuarios que provienen del anuncio de un partner integrado, que usa el enlace de atribución de AppsFlyer. Por ejemplo, inmobi\_int, tapjoy\_int |
 | **Escritorio** | Los usuarios de escritorio rellenan el formulario web y completan una instalación después de hacer clic en el SMS o correo electrónico enviado a sus dispositivos móviles |
 | **Otras fuentes** | Usuarios que provienen de fuentes de medios propios, que utilizan los enlaces de atribución de AppsFlyer. Por ejemplo, correo electrónico, sms, blog\_post, etc. |
+
+<div id="onelink-for-landing-page-solution" />
 
 ## Solución OneLink para páginas de destino
 

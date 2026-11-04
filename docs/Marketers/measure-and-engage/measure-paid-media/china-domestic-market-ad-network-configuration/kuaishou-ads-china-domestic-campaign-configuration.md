@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Información general:** Kuaishou es un partner integrado de ad network de AppsFlyer.
 
+<div id="setting-up-kuaishou" />
+
 ## Configurar Kuaishou
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -41,14 +43,20 @@ La ventana de configuración de Kuaishou incluye 3 pestañas activas: Integraci�
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activación de socios
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 ![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -102,6 +110,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Kuaishou, tanto si el partner actúa como ad network, como agencia o incluso ambas cosas. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para Kuaishou, la pestaña Permisos se encontraría activa y podrías otorgarle el control a Kuaishou.
 
 ![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+
+<div id="ad-network-permissions" />
 
 ### Permisos para Redes de Publicidad
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo:** La plataforma contiene varios paneles de control. Estos paneles te permiten ver el rendimiento de tu campaña y el comportamiento de las aplicaciones.
 
+<div id="appsflyer-dashboards" />
+
 ## Paneles de control de AppsFlyer
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)

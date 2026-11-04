@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En resumen:** A partir de la disponibilidad general de iOS 14.5+ y la aplicación de la ATT por parte de Apple, los anunciantes utilizan el framework de Privacidad Avanzada Agregada (AAP) para controlar la disponibilidad de los datos de atribución a nivel de usuario de la plataforma.
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## Framework de Privacidad Avanzada Agregada (AAP)
 
 El framework de Privacidad Avanzada Agregada (AAP) de AppsFlyer evita el seguimiento de aplicaciones y sitios web propios de diferentes empresas y la capacidad de identificar de forma exclusiva a un usuario o dispositivo. AAP utiliza los niveles de privacidad de Apple App Tracking Transparency como referencia mínima para sus umbrales de preservación de la privacidad.
@@ -35,6 +37,8 @@ El framework brinda a los anunciantes la capacidad de controlar la disponibilida
 A partir de iOS 14.5, la disponibilidad general y el cumplimiento de la ATT de Apple, si la AAP está activada, los datos de atribución a nivel de usuario para usuarios sin consentimiento que ejecutan iOS 14.5+ no estarán disponibles para anunciantes o partners. **Nota**: Incluso cuando AAP está desactivado, los datos a nivel de usuario no se pueden usar para identificar de forma única un dispositivo.
 
 La AAP no tiene impacto alguno en la disponibilidad de los datos de atribución agregados y los reportes de análisis para anunciantes y partners.
+
+<div id="aap-impacted-features" />
 
 ### Funciones afectadas por la AAP
 
@@ -52,6 +56,8 @@ La disponibilidad de datos se ve afectada cuando la AAP está activada de la sig
 * Activa o desactiva la **Privacidad avanzada agregada** según sea necesario.
 * **Clic, impresión y datos de clics bloqueados (fraude):** <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#identifier-restriction">Los identificadores relacionados con el usuario y el dispositivo</Anchor> no están disponibles.
 * **Deferred deep linking**: Si implementas el Deferred Deep Linking en medios pagados, usa la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">API de dep links unificados (UDL).</Anchor> La antigua API, que utiliza GCD, no se puede usar en el contexto de usuarios que no consienten. En el caso de los medios propios, el deferred deep linking es compatible a través de GCD y la API de deferred deep linking más reciente.
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## Principios de disponibilidad de datos en la Privacidad Avanzada Agregada
 
@@ -73,6 +79,8 @@ Los términos definidos se utilizan en la figura y las secciones siguientes para
 
 La privacidad avanzada se comporta de manera diferente cuando se sirve en la web y se debe utilizar el parámetro af\_media\_type=web o af\_media\_type=app. Consulta <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campañas-web">aquí</Anchor> para obtener más información.
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### Disponibilidad de datos de medios pagados y propios
 
 <div id="paid-media" />
@@ -80,6 +88,8 @@ La privacidad avanzada se comporta de manera diferente cuando se sirve en la web
 <Accordion title="Medios pagados">
 
 Los medios pagados incluyen ad networks móviles con integraciones en la plataforma de AppsFlyer con las que los anunciantes ejecutan campañas.
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### Disponibilidad de datos de medios pagados por estado de la ATT
 
@@ -97,6 +107,8 @@ Los medios propios incluyen campañas de marketing digital utilizadas por los an
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## Controlando la Privacidad Agregada Avanzada
 
 <div id="aap-central-switch" />
@@ -107,11 +119,15 @@ La AAP es un selector de nivel de aplicación que controla la configuración de 
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
 
+<div id="aap-enabled" />
+
 #### AAP habilitada
 
 * La atribución agregada está disponible. Esto incluye, por ejemplo, dashboard general y herramientas de reportes como Cohorte y Master API.
 * [Los interruptores de partners de privacidad avanzada](#partner-advanced-privacy-switch) están activados y no se pueden modificar. ¡Atención! ¡Nota! Están bloqueados en posición.
 * La disponibilidad de los datos a nivel de usuario hacia anunciantes y partners es limitada, tal como se define en la [sección anterior](/docs/apply-aggregated-advanced-privacy-framework#principios-de-disponibilidad-de-datos-en-la-privacidad-avanzada-agregada).
+
+<div id="aap-disabled" />
 
 #### AAP deshabilitada
 
@@ -153,11 +169,15 @@ Como se indicó anteriormente, la configuración de la AAP anula la configuraci�
 
 </Accordion>
 
+<div id="advanced-aggregated-privacy-implications-for-your-partners" />
+
 ## Implicaciones de la Privacidad Avanzadas Agregada para tus partners
 
 <div id="ad-networks" />
 
 <Accordion title="Redes publicitarias">
+
+<div id="postbacks-to-ad-network-partners" />
 
 #### **Postbacks a partners de ad networks**
 
@@ -167,6 +187,8 @@ Las reglas de compartición de datos descritas se aplican a una ad network deter
 
 * AAP: Toggle a nivel de aplicación
 * AP: Toggle a nivel de partner
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **Postbacks para ad networks atribuidas**
 
@@ -182,6 +204,8 @@ Los diversos escenarios de consentimiento del usuario y los tipos de postback ut
 ![AAP: anuncio atribuido networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 La privacidad avanzada se comporta de manera diferente cuando se sirve en la web y se debe utilizar el parámetro af\_media\_type=web o af\_media\_type=app. Consulta <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campañas-web">aquí</Anchor> para obtener más información.
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **Postbacks para partners no atribuidos**
 
@@ -241,6 +265,8 @@ La privacidad avanzada se comporta de manera diferente cuando se sirve en la web
 4. Haz clic en **Guardar**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

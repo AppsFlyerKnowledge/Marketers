@@ -26,9 +26,13 @@ x-zendesk:
 
 ![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
 
+<div id="web-assisted-installs-analysis" />
+
 ## Análisis de instalaciones asistidas por web
 
 Las instalaciones asistidas por web miden el impacto de los esfuerzos de marketing web para impulsar a los usuarios a instalar una aplicación. Los anunciantes ven la implicación en la web en el contexto del evento de instalación; pueden determinar la fuente de medios que llevó a los visitantes del sitio web a instalar la aplicación. Los mejores resultados en las instalaciones asistidas por web se logran si configuras el CUID en la aplicación y en el <Anchor target="_blank" href="/marketers/es/docs/onboarding-guide-to-people-based-attribution#2">sitio web.</Anchor> 
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### Métricas principales de las instalaciones asistidas por web
 
@@ -43,6 +47,8 @@ Considera los escenarios de casos de uso en la tabla a continuación para el an�
 | Instalaciones Totales | Todas las instalaciones se involucran, en algún momento, con una fuente de medios web. | <ul><li>¿Cuál es la contribución del marketing web en relación con todas las instalaciones de la aplicación?</li><li>¿Cómo se distribuyen los esfuerzos de marketing web entre las fuentes y los canales de medios?</li><li>¿Realizan alguna contribución los Smart Banners? ¿Cuál?</li></ul> |
 | Instalaciones orgánicas | La aplicación se instala sin involucrarse con una fuente de medios móvil. | <ul><li>¿Qué parte, si es que hay alguna, de las instalaciones orgánicas están impulsadas puramente por el tráfico web?</li><li>¿Cuáles son los canales de medios predominantes?</li><li>¿Cuál es la proporción entre los tipos de medios pagados, propios y obtenidos?</li></ul> |
 | Instalaciones no orgánicas | Las trayectorias de los usuarios comienzan en la web. La aplicación se instala después de involucrarse con una campaña móvil. | <ul><li>¿Qué volumen de instalaciones no orgánicas está influenciado por la web?</li><li>¿Qué tipos y canales de medios web influyen en las instalaciones no orgánicas?</li><li>¿Tus fuentes de medios móviles pagados se superponen con las fuentes de medios web?</li></ul> |
+
+<div id="web-assisted-installs-dashboard" />
 
 ## Panel de control de instalaciones asistidas por web
 

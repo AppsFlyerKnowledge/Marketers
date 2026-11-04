@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **En resumen:** Integra AppsFlyer en aplicaciones desarrolladas con Xamarin para medir instalaciones, eventos in-app, fuentes de medios y mucho más.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > El 1 de marzo de 2020, AppsFlyer dejó de usar versiones antiguas del SDK. Para saber qué versiones se han dejado de usar, cómo te afecta y cómo actualizar a la última versión del SDK, haz clic aquí.

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > Utiliza "My Dashboards" para diseñar tu propio dashboard, añadiendo y personalizando widgets, gráficos y tablas que muestren las métricas de rendimiento exactas que deseas, de la manera que deseas verlas.
 
+<div id="about-my-dashboards" />
+
 ## Sobre My Dashboards
 
 <Embed title="[Beta] My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/euXEfhL0cmE?si=SI8qQAd7EpSeEaJk" providerUrl="https://www.youtube.com" />
@@ -41,11 +43,15 @@ My Dashboards te permite:
 * Obtener insights críticos que te ayuden a optimizar tu estrategia de marketing y planificar el futuro.
 * Crea dimensiones personalizadas para agrupar y filtrar los datos del dashboard por categorías de negocio que se ajusten a tus necesidades de reporte.
 
+<div id="get-started" />
+
 ## Comienza
 
 La interfaz de usuario de My Dashboards está diseñada para la construcción de dashboards interactivos. Utiliza la información en este artículo para aprender a crear nuevos dashboards, añadir widgets, entender qué métricas, filtros y dimensiones de agrupación están disponibles, y más.
 
 **¡Consejo!** Familiarízate y experimenta con la plataforma para tener una idea de ella antes de revisar este artículo en detalle.
+
+<div id="proceduresusing-the-platform" />
 
 ## Procedimientos—Usando la plataforma
 
@@ -136,6 +142,8 @@ Las dimensiones personalizadas te ayudan a:
 * Mejora los informes: crea vistas personalizadas de dashboard que se adapten a tus necesidades de reportando.
 * Toma decisiones más inteligentes: añade contexto específico de tu negocio a tus KPI para identificar más fácilmente tendencias, patrones y oportunidades de optimización.
 
+<div id="suggested-custom-dimensions" />
+
 #### Dimensiones personalizadas sugeridas
 
 | **Dimensión sugerida** | **Texto descriptivo para la imagen** |
@@ -143,6 +151,8 @@ Las dimensiones personalizadas te ayudan a:
 | Objetivo de la campaña | Clasifica las campañas por objetivo de optimización para comparar el rendimiento en paralelo. |
 | Regiones | Asigna geolocalizaciones individuales a regiones de negocio para analizar el rendimiento de geolocalización. |
 | Datos de pago frente a datos propios | Agrupa las fuentes de medios en categorías de alto nivel para comparar el rendimiento de medios pagados, orgánicos y propios. |
+
+<div id="pre-built-retargeting-campaigns-dimension" />
 
 #### Dimensión predefinida de campañas de retargeting
 
@@ -165,6 +175,8 @@ Si la convención de nomenclatura de tu campaña es diferente, puedes hacer lo s
 * Duplica la dimensión. Haz clic en **Duplicate now**, cambia las reglas y haz clic en **Save**. La dimensión original no cambia.
 * Crea tu propia dimensión desde cero. Consulta [Crear una dimensión personalizada](#create-a-custom-dimension).
 
+<div id="example-use-cases" />
+
 #### Ejemplos de casos de uso
 
 | **Caso de uso** | **Descripción** |
@@ -173,6 +185,8 @@ Si la convención de nomenclatura de tu campaña es diferente, puedes hacer lo s
 | Agrupa las fuentes de medios por responsable de UA | Crea una dimensión personalizada basada en fuente de medios para agrupar distintas fuentes de medios por miembros del equipo. Por ejemplo, agrupa las campañas de Google y Meta bajo Kevin, y las campañas de TikTok e Instagram bajo Natasha. |
 | Compara niveles de geolocalización | Agrupa los países por prioridad empresarial o potencial de ingresos para comparar el rendimiento entre niveles. |
 | Analizar el rendimiento del producto o la línea de negocio | Crea una dimensión personalizada basada en Campaña para agrupar las campañas por el producto o servicio que promocionan. Esto te ayuda a ver qué producto impulsa más instalaciones o ingresos cuando se ejecutan campañas de varios productos en distintas redes. |
+
+<div id="procedures" />
 
 ### **Procedimientos**
 
@@ -285,6 +299,8 @@ En los widgets de tabla, puedes ordenar los datos por una métrica específica p
 
 De forma predeterminada, My Dashboards ordena los datos de la tabla mediante la lógica de ordenación predeterminada de la tabla. Cuando eliges una métrica por la que ordenar, AppsFlyer recupera y muestra las filas superiores en función de la métrica seleccionada.
 
+<div id="limitations" />
+
 #### Limitaciones
 
 Algunas métricas no admiten ordenación. Actualmente no se admite la ordenación para:
@@ -298,6 +314,8 @@ Algunas métricas no admiten ordenación. Actualmente no se admite la ordenació
 <div id="skan-data" />
 
 <Accordion title="Datos de SKAN">
+
+<div id="skan-and-appsflyer-data-scope-differences" />
 
 #### Diferencias en el alcance de los datos de SKAN y AppsFlyer
 
@@ -314,6 +332,8 @@ La siguiente tabla explica las diferencias clave entre los datos de SKAN y los d
 | Truemoney | Moneda específica de la aplicación | USD (Dólar estadounidense) |
 
 Puedes explorar una amplia gama de **métricas de SKAdNetwork (SKAN)** directamente en My Dashboards, lo que te permite ver la mayor parte del **rendimiento de iOS (SKAN, Classic y SSOT)** en un solo lugar. Los usuarios avanzados que necesiten ventanas posteriores a la instalación más largas o datos CV nulos pueden seguir usando <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">**SKAN Overview**</Anchor> para obtener insights más completos.
+
+<div id="available-skan-metrics" />
 
 #### Métricas de SKAN disponibles
 
@@ -334,6 +354,8 @@ Puedes explorar una amplia gama de **métricas de SKAdNetwork (SKAN)** directame
 | Eventos in-app | CPA | Usuarios únicos de eventos SKAN / Costo | D1-D2 |
 | Eventos in-app | Ingresos totales | Ingresos de eventos SKAN | D1-D2 |
 
+<div id="supported-dimensions" />
+
 #### Dimensiones admitidas
 
 1. Identificación de la aplicación
@@ -346,6 +368,8 @@ Puedes explorar una amplia gama de **métricas de SKAdNetwork (SKAN)** directame
 8. El código de moneda de los ingresos del evento reportado al SDK.
 9. Tipo de interacción atribuida
 10. Tipo de atribución
+
+<div id="how-to-use" />
 
 #### Cómo usarlo
 
@@ -361,9 +385,13 @@ Puedes explorar una amplia gama de **métricas de SKAdNetwork (SKAN)** directame
 
 <Accordion title="Dashboard multiplataforma">
 
+<div id="intro" />
+
 #### Introducción
 
 Tradicionalmente, la atribución se ha centrado en el dispositivo y ha asociado los eventos y las conversiones a dispositivos individuales. Con el nuevo modelo multiplataforma, esto puede pasar a una atribución basada en el usuario. Las interacciones de los usuarios en varios dispositivos y plataformas se unifican mediante un único identificador: el ID de usuario del cliente (CUID). Proporciona insights más claros sobre todo el viaje del usuario, mejora la precisión de la atribución y permite tomar decisiones de marketing mejor fundamentadas.
+
+<div id="prerequisites" />
 
 #### Prerrequisitos
 
@@ -372,6 +400,8 @@ Para configurar la atribución multiplataforma, debes aplicar algunas configurac
 * En AppsFlyer, asigna tus aplicaciones a una línea de producto, opta por la atribución multiplataforma, la atribución multiplataforma de re-engagement y especifica la ventana de restauración de inactividad. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution#cómo-configurar-una-product-line">Configurar una línea de producto</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-re-engagement-attribution">Atribución multiplataforma de re-engagement</Anchor>
 * En tu aplicación, configura el SDK de AppsFlyer para enviar eventos con CUID. Para obtener instrucciones para desarrolladores, consulta [Configurar ID de usuario del cliente](https://dev.appsflyer.com/hc/docs/set-customer-user-id).  
   También puedes enviar CUID mediante la integración de servidor a servidor (S2S).
+
+<div id="dashboard-overview" />
 
 #### Información general del Dashboard
 
@@ -404,9 +434,13 @@ De forma predeterminada, la plantilla incluye los widgets que se indican a conti
 * **Re-engagements**: los re-engagements contabilizan el total de conversiones de re-engagement entre plataformas aptas atribuidas a la fuente de medios que hizo volver a un usuario existente, entre plataformas, dentro del intervalo de fechas seleccionado.  
   **Nota:** Cuando la atribución de re-engagement entre plataformas está habilitada, los resultados del Dashboard pueden reflejar tanto la fuente de adquisición original como la fuente de medios a la que se atribuye el re-engagement entre plataformas, según la métrica, el widget y el contexto de atribución seleccionados.
 
+<div id="metrics-and-dimensions" />
+
 #### Las métricas SKAN no están disponibles cuando se seleccionan múltiples aplicaciones.
 
 Todas las métricas que se encuentran en [My Dashboards](/docs/my-dashboards#metrics) se pueden usar para la atribución entre plataformas. Hay algunas métricas y dimensiones únicas que solo son relevantes para la atribución entre plataformas.
+
+<div id="note" />
 
 > 📘 **Advertencia**
 >
@@ -420,6 +454,8 @@ Estas son:
 * **Grupo de plataformas**: una agrupación de todas las plataformas en grupos. Por ejemplo, un grupo de plataformas móviles estaría formado por Android e iOS. Un grupo de plataformas de CTV estaría formado por Roku, Samsung, LG, etc. <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#plataformas-compatibles">consulta aquí la lista completa</Anchor>.
 * Línea de producto: aplicaciones específicas de cada plataforma que pertenecen a una sola marca. Consulta más detalles <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution">aquí</Anchor>
 
+<div id="web-attribution-in-the-cross-platform-dashboard" />
+
 #### Atribución web en el Dashboard entre plataformas
 
 Las sesiones y los eventos web se incluyen en el Dashboard entre plataformas una vez que tu aplicación web forma parte de una línea de producto con la atribución entre plataformas habilitada (consulta los requisitos previos anteriores). La actividad web se une con la actividad móvil, de CTV, PC y consola mediante el CUID, para que veas el viaje completo del usuario en lugar de la visita web de forma aislada.
@@ -430,6 +466,8 @@ Esto es lo que debes tener en cuenta al analizar datos web en este dashboard:
 * **Los eventos anteriores a un evento personalizado de adquisición de usuarios se excluyen de las cohortes**: si has configurado un evento personalizado de adquisición de usuarios en lugar de la primera visita predeterminada, los eventos web que ocurran antes de ese evento se clasifican como `PRE_USER_ACQUISITION` y se excluyen de las métricas de cohortes, porque las cohortes se basan en la fecha de adquisición.
 * **Los resultados pueden diferir del reporte independiente de Atribución web**: una vez que la actividad web se integra en la visión completa entre plataformas, la atribución puede variar en comparación con el <Anchor target="_blank" href="/marketers/es/docs/export-web-performance-measurement-report-data-from-data-locker">reporte de Atribución web</Anchor>.
 * **Comprueba el método de atribución de cada métrica**: las métricas etiquetadas como Classic reflejan la atribución a nivel de dispositivo o de plataforma, no la vista entre plataformas (basada en CUID). Selecciona Entre plataformas para ver los datos web unidos en el viaje unificado del usuario.
+
+<div id="limitations-1" />
 
 #### **Limitaciones**
 
@@ -471,15 +509,21 @@ Para configurar las preferencias de My Dashboards:
 
    <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
+<div id="theme" />
+
 #### Tema
 
 Elige el tema del dashboard. Selecciona el modo claro u oscuro.
+
+<div id="auto-save" />
 
 #### Guardado automático
 
 Guarda automáticamente los cambios de diseño y los ajustes de los widgets.
 
 Nota: Los [cambios de filtro](/docs/my-dashboards#view-dashboard) no se guardan automáticamente y debes guardarlos manualmente para que se apliquen la próxima vez que abras el dashboard.
+
+<div id="data-labels" />
 
 #### Etiquetas de datos
 
@@ -489,6 +533,8 @@ Los cambios en las preferencias se aplican de inmediato.
 
 </Accordion>
 
+<div id="concepts" />
+
 ## Conceptos
 
 <div id="metrics" />
@@ -496,6 +542,8 @@ Los cambios en las preferencias se aplican de inmediato.
 <Accordion title="Métricas">
 
 Las métricas disponibles para widgets (tablas, KPIs y gráficos) se describen en la siguiente tabla.
+
+<div id="custom-metrics" />
 
 > 🚧 **Métricas personalizadas**
 >
@@ -596,6 +644,8 @@ Las dimensiones personalizadas también se pueden usar para agrupar y filtrar lo
 | Destino de engagement | La plataforma en la que se ejecuta la aplicación, como Android, iOS, Samsung, LG, Roku, etc. |
 | Grupo de plataforma | Una agrupación de todas las plataformas (consulta Plataforma más arriba) en grupos. Por ejemplo, un grupo de plataformas móviles estaría compuesto por Android e iOS. Un grupo de plataformas CTV estaría compuesto por Roku, Samsung, LG, etc. <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#plataformas-compatibles">consulta aquí la lista completa</Anchor>. |
 
+<div id="ssot-supported-dimension-metrics" />
+
 #### Métricas de dimensiones soportadas por SSOT.
 
 | Dimensión | Observaciones |
@@ -619,11 +669,15 @@ Las dimensiones personalizadas también se pueden usar para agrupar y filtrar lo
 No todas las métricas de My Dashboards admiten todos los agrupamientos. La compatibilidad de las métricas depende de la configuración de la métrica, incluidos el periodo, el desglose temporal y el método de atribución.  
 Consulta a continuación qué agrupamientos se admiten para cada conjunto de métricas.
 
+<div id="installs-re-attributions-re-engagements" />
+
 #### Instalaciones, reatribuciones y re-engagements
 
 | **Comenzar** | **Desglose de tiempo** | **Solo relevante para instalaciones de adquisición de usuarios a través del método de atribución clásico.** | **Dimensiones admitidas** |
 | --- | --- | --- | --- |
 | - | Los datos parciales solo están disponibles para marcos de tiempo diarios; no para semanales o mensuales. | Clásico | Todas las dimensiones admitidas |
+
+<div id="cost-impressions-clicks-ctr-click-to-install-rate-ipm-ecpi" />
 
 #### Costo, impresiones, clics, CTR, tasa de clic a instalación, IPM, eCPI
 
@@ -637,6 +691,8 @@ Consulta a continuación qué agrupamientos se admiten para cada conjunto de mé
 | --- | --- | --- | --- |
 | - | Diaria | Clásico | Línea de producto, plataforma, grupo de plataformas, tipo de conversión, versión de la aplicación, versión del SO |
 
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions" />
+
 #### Ingresos totales, ROAS, ROI, ARPU, beneficio bruto, sesiones
 
 | **Comenzar** | **Desglose de tiempo** | **Prioridades de métodos de atribución 23.png** | **Dimensiones no admitidas** |
@@ -648,6 +704,8 @@ Consulta a continuación qué agrupamientos se admiten para cada conjunto de mé
 
 Los ingresos netos, el ROAS neto, el ROI neto, el ARPU neto y el beneficio neto admiten los mismos desgloses que sus equivalentes brutos, solo para los **periodos de actividad y cohortes** (no LTV).
 
+<div id="total-revenue-roas-roi-arpu-gross-profit-sessions-retention-rate" />
+
 #### Ingresos totales, ROAS, ROI, ARPU, beneficio bruto, sesiones, tasa de retención
 
 | **Comenzar** | **Desglose de tiempo** | **Prioridades de métodos de atribución 23.png** | **Dimensiones no admitidas** |
@@ -657,6 +715,8 @@ Los ingresos netos, el ROAS neto, el ROI neto, el ARPU neto y el beneficio neto 
 | M0–36 | Los desgloses de tiempo por semana y mes están disponibles solo para métricas de cohorte y para la métrica de actividad "Usuarios Activos" (que solo admite desglose mensual). | Clásico | Fuente, línea de producto, plataforma, grupo de plataformas, tienda de aplicaciones de instalación, página de producto de la tienda, tipo de engagement |
 
 Nota: La tasa de retención solo está disponible para las métricas basadas en cohortes.
+
+<div id="in-app-events-unique-users-count-revenue-ecpi-conversion-rate-average-count" />
 
 #### Eventos in-app: usuarios únicos, recuento, ingresos, eCPI, tasa de conversión, recuento medio
 
@@ -670,12 +730,16 @@ Nota: La tasa de retención solo está disponible para las métricas basadas en 
 | D0–1 | Diario | SKÁN | Línea de producto, plataforma, grupo de plataformas, tipo de conversión |
 | D2, D7 | Diario | Métricas orgánicas del día 7 | Línea de producto, plataforma, grupo de plataformas, tipo de conversión |
 
+<div id="active-users" />
+
 #### Usuarios activos
 
 | **Comenzar** | **Desglose de tiempo** | **Prioridades de métodos de atribución 23.png** | **Dimensiones admitidas** |
 | --- | --- | --- | --- |
 | Real | Diario | Clásico | App, fuente de medios, campaña, ID de campaña, geolocalización, agencia |
 | Real | Los desgloses de tiempo por semana y mes están disponibles solo para métricas de cohorte y para la métrica de actividad "Usuarios Activos" (que solo admite desglose mensual). | Clásico | App, fuente de medios, campaña, ID de campaña, geolocalización, agencia |
+
+<div id="active-users-last-31-days" />
 
 #### Usuarios activos en los últimos 31 días
 
@@ -690,6 +754,8 @@ Nota: La tasa de retención solo está disponible para las métricas basadas en 
 | Real | Diario | Clásico | Aplicación, fuente de medios, campaña, ID de campaña, GEO, agencia |
 | contenido de la celda de la fila 2 | contenido de la celda de la fila 2 | contenido de la celda de la fila 2 |  |
 
+<div id="uninstalls" />
+
 #### Desinstalaciones
 
 | **Comenzar** | **Desglose de tiempo** | **Prioridades de métodos de atribución 23.png** | **Dimensiones admitidas** |
@@ -699,17 +765,23 @@ Nota: La tasa de retención solo está disponible para las métricas basadas en 
 | W0–156 | Semanalmente | Clásico | Fuente, línea de producto, plataforma, grupo de plataformas, instalación desde la tienda de aplicaciones, página del producto de la tienda |
 | M0–36 | Los desgloses de tiempo por semana y mes están disponibles solo para métricas de cohorte y para la métrica de actividad "Usuarios Activos" (que solo admite desglose mensual). | Clásico | Fuente, línea de producto, plataforma, grupo de plataformas, instalación desde la tienda de aplicaciones, página del producto de la tienda |
 
+<div id="assisted-installs" />
+
 #### Atribución de reinstalación en el mismo dispositivo.
 
 | **Comenzar** | **Desglose de tiempo** | **Prioridades de métodos de atribución 23.png** | **Dimensiones admitidas** |
 | --- | --- | --- | --- |
 | - | Diaria | Clásico | Aplicación, fuente de medios, campaña |
 
+<div id="skan-duplicates" />
+
 #### Duplicados de SKAN
 
 | **Comenzar** | **Desglose de tiempo** | **Prioridades de métodos de atribución 23.png** | **Dimensiones admitidas** |
 | --- | --- | --- | --- |
 | - | Diario | Métricas orgánicas del día 7 | Línea de producto, plataforma, grupo de plataformas, tipo de conversión, versión de la aplicación, versión del SO |
+
+<div id="first-visits-re-visits" />
 
 #### Primeras visitas y revisitas
 
@@ -719,12 +791,16 @@ Las primeras visitas y las revisitas no son compatibles con ningún periodo, des
 | --- | --- | --- | --- |
 | Todos | Todos | Todos | Página del producto de la tienda, grupo de plataformas, línea de producto, tipo de conversión |
 
+<div id="multiple-metrics-in-a-table" />
+
 #### Varias métricas en una tabla
 
 * Si algunas métricas no son compatibles con la agrupación seleccionada, solo esas métricas muestran **N/A**.  
   Las métricas compatibles siguen mostrando datos.
 * Si una métrica no es aplicable a la configuración seleccionada, aparece el siguiente mensaje:  
   **«Esta métrica no es aplicable a las agrupaciones o filtros seleccionados.»**
+
+<div id="multiple-groupings-in-a-table" />
 
 #### Varias agrupaciones en una tabla
 
@@ -741,6 +817,8 @@ Cuando se usan **dos agrupaciones**:
 
 Los usuarios pueden configurar el rango de fechas tanto a nivel de dashboard como a nivel de widget.
 
+<div id="dashboard-level" />
+
 #### Nivel de dashboard
 
 <Image alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
@@ -748,6 +826,8 @@ Los usuarios pueden configurar el rango de fechas tanto a nivel de dashboard com
 * Por defecto, el dashboard sigue el rango de fechas **Por widget**. En este modo, cada widget muestra datos de acuerdo con sus configuraciones individuales.
 * El rango de tiempo seleccionado para cada widget se muestra siempre como un título secundario.
 * Al aplicar un rango de fechas diferente **Por widget**, todos los widgets en el dashboard se actualizan para reflejar el marco de tiempo elegido.
+
+<div id="widget-level" />
 
 #### Nivel de widget
 
@@ -844,6 +924,8 @@ La comparación añade:
 
 También puedes ordenar la tabla por porcentaje de cambio para identificar rápidamente los segmentos con los mayores aumentos o descensos.
 
+<div id="comparison-period-options" />
+
 ### Opciones del periodo de comparación
 
 Según el intervalo de fechas seleccionado, están disponibles los siguientes periodos de comparación:
@@ -854,12 +936,16 @@ Según el intervalo de fechas seleccionado, están disponibles los siguientes pe
 * **Mes anterior:** Para un intervalo del último mes, compara cada fecha con la fecha de exactamente 4 semanas antes (el mismo número de días, no necesariamente un mes natural).
 * **Personalizado:** Al seleccionar una fecha de finalización personalizada, el periodo anterior coincide automáticamente con el mismo número de días.
 
+<div id="how-to-add-a-compare-to-in-tables" />
+
 ### Cómo añadir una comparación en tablas
 
 1. En un widget de tabla, ve a Editar tabla.
 2. En el encabezado de configuración del widget, haz clic en **Comparar con**
 3. Selecciona un periodo. El periodo comparado debe elegirse según el periodo seleccionado.
 4. Guardar cambios.
+
+<div id="use-case-example" />
 
 ### Ejemplos de casos de uso
 
@@ -873,6 +959,8 @@ Añade una comparación con la semana anterior y ordena por **% de cambio DESC**
 <Accordion title="Formato condicional">
 
 El formato condicional ayuda a visualizar las tendencias de rendimiento en tu dashboard de un vistazo. Al aplicar indicadores basados en colores directamente en tus widgets de tabla, puedes identificar rápidamente patrones, valores atípicos y valores que requieren atención, sin revisar manualmente los números.
+
+<div id="available-formatting-types" />
 
 #### Tipos de formato disponibles
 
@@ -897,6 +985,8 @@ Puedes aplicar una de las siguientes opciones de formato a las celdas de tu tabl
   Este enfoque destaca qué actividades ofrecen resultados sólidos, lo que te permite tomar decisiones más rápidas y basadas en datos sobre la optimización de campañas y la asignación de presupuesto.
 
   <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+
+<div id="how-to-apply-conditional-formatting" />
 
 #### Cómo aplicar el formato condicional
 
@@ -937,13 +1027,19 @@ Nota: La vista de retargeting no contiene ninguna métrica relacionada con los c
 
 <Accordion title="Fechas tardías de eventos">
 
+<div id="understand-event-dates-and-late-events" />
+
 #### Comprende las fechas de los eventos y los eventos tardíos
 
 Algunos widgets del dashboard agregan datos mediante un servicio de procesamiento diario que se ejecuta **una vez al día**, aproximadamente a las **02:00 UTC**. Por este motivo, los **eventos in-app que llegan poco después de la medianoche UTC** pueden mostrar una **fecha de evento** distinta de la que esperas en el dashboard.
 
+<div id="what-are-late-events" />
+
 ##### ¿Qué son los eventos tardíos?
 
 Los eventos tardíos son **eventos in-app que llegan a AppsFlyer entre las 00:00 y las 02:00 UTC**.
+
+<div id="how-dashboards-determine-the-event-date" />
 
 ##### Cómo determinan los dashboards la fecha del evento
 
@@ -953,6 +1049,8 @@ Las fechas de los eventos en el dashboard se ven afectadas por:
 * **Vista de zona horaria del dashboard** (por ejemplo, **UTC** o una **zona horaria local** seleccionada)
 
 Los eventos que llegan entre las **00:00–02:00 UTC** pueden mostrarse con la **fecha UTC del día anterior**.
+
+<div id="example-event-date-differences-between-utc-and-utc-8" />
 
 ##### Ejemplo: diferencias en la fecha del evento entre UTC y UTC-8
 
@@ -964,6 +1062,8 @@ Los eventos que llegan entre las **00:00–02:00 UTC** pueden mostrarse con la *
 **Nota:** Si la zona horaria que has seleccionado está **por detrás de UTC** (por ejemplo, **UTC-8**), el Dashboard puede mostrar la fecha del evento como **Día-1** en comparación con la vista UTC, especialmente alrededor de la medianoche y durante el procesamiento tardío del evento.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 
@@ -1003,6 +1103,8 @@ My Dashboards sustituye a los dashboards heredados de Events, Overview y Activit
 
 Después del **30 de junio de 2026**, los dashboards heredados Eventos, General y Actividad ya no serán accesibles.
 
+<div id="match-legacy-dashboards-to-my-dashboards" />
+
 #### Relaciona los dashboards heredados con My Dashboards
 
 | Dashboard heredado | Usa esta plantilla o esta vista en My Dashboards | Úsalo para |
@@ -1010,6 +1112,8 @@ Después del **30 de junio de 2026**, los dashboards heredados Eventos, General 
 | Eventos | Plantilla de Eventos | Analiza el rendimiento de los eventos in-app, los eventos de ingresos y los KPI basados en eventos. |
 | Saber más | Plantilla de Análisis de rendimiento o Resumen de marketing | Analiza el rendimiento de marketing, los resultados de las campañas y los KPI de negocio de alto nivel. |
 | Puedes activar/desactivar los mapas de calor en cualquier momento. | Vista de actividad | Analiza los datos de actividad, los usuarios activos, las sesiones y las tendencias de actividad. |
+
+<div id="open-the-replacement-template-or-view" />
 
 #### Abre la plantilla o vista de sustitución
 
@@ -1034,6 +1138,8 @@ Puedes exportar grandes volúmenes de datos desde tu dashboard a un archivo CSV 
 * Se pueden descargar tablas de hasta 100.000 filas.
 * Los datos estarán listos para su descarga en un plazo de 15 minutos.
 
+<div id="how-it-works" />
+
 #### Cómo funciona
 
 1. Selecciona Exportar en tu dashboard.
@@ -1051,6 +1157,8 @@ Puedes exportar grandes volúmenes de datos desde tu dashboard a un archivo CSV 
 
 Los KPI disponibles en **My Dashboards** dependen de los **permisos otorgados por el anunciante** a agencias y ad networks. Estos permisos controlan a qué fuentes de datos, métricas y vistas de atribución pueden acceder los Partners.
 
+<div id="agency-access" />
+
 #### Acceso a la agencia
 
 Cuando los anunciantes otorgan **permisos de agencia**, las agencias pueden ver los datos de rendimiento atribuidos a las campañas que gestionan. El acceso a los eventos in-app y a los ingresos está disponible de forma predeterminada. Según los permisos adicionales, las agencias también pueden ver datos orgánicos y datos agregados.
@@ -1064,6 +1172,8 @@ Según los permisos otorgados, las agencias pueden ver las siguientes categoría
 
   **Nota:** Las agencias solo pueden ver los KPI incluidos en los permisos otorgados por el anunciante.
 
+<div id="ad-network-access" />
+
 #### Acceso a la red publicitaria
 
 Cuando los anunciantes otorgan **permisos de ad network**, las ad networks pueden ver datos de rendimiento relacionados con el tráfico que generan. A diferencia de las agencias, la visibilidad de los eventos in-app y los ingresos depende de los permisos específicos habilitados por el anunciante.
@@ -1076,6 +1186,8 @@ Según los permisos otorgados, las ad networks pueden ver:
 * Métricas de **SKAN**, cuando corresponda
 
 **Nota:** Los anunciantes controlan si los eventos in-app y los ingresos están disponibles. Las ad networks pueden ver datos del tráfico asociado a su fuente de medios.
+
+<div id="configure-settings" />
 
 #### Configurar ajustes
 

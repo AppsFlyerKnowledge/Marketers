@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Agrupa aplicaciones específicas de cada plataforma bajo una sola marca con Product Line. Desbloquea la atribución multiplataforma y los insights sobre el viaje del usuario en aplicaciones móviles, web y CTV con un Customer User ID (CUID) unificado.
 
+<div id="about-product-line" />
+
 ## Acerca de Product Line
 
 Product Line te permite organizar distintas versiones para cada plataforma de la misma aplicación (como Android, iOS, web y CTV) bajo una misma marca. Esto simplifica la gestión de aplicaciones y permite una atribución multiplataforma fluida basada en un identificador de usuario del cliente (CUID).
@@ -38,13 +40,19 @@ Por ejemplo, si un usuario instala tu aplicación en iOS, inicia sesión en la a
 
 Para obtener una visión más completa de Product Lines, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-attribution">Atribución multiplataforma basada en el usuario</Anchor>.
 
+<div id="how-to-set-up-a-product-line" />
+
 ## Cómo configurar una Product Line
+
+<div id="prerequisites" />
 
 ### Prerrequisitos
 
 * El **CUID (Customer User Identifier)** debe ser un identificador coherente (como un ID de login o un correo electrónico con hash) en todas las plataformas.
 * Implementa la configuración de **CUID SDK o** [**s2s**](https://dev.appsflyer.com/hc/docs/set-customer-user-id).
 * Asegúrate de que la aplicación establezca el CUID en cada inicio para reconocer al mismo usuario en todos los dispositivos y sesiones.
+
+<div id="how-to-create-a-product-line" />
 
 ### Cómo crear una línea de producto
 
@@ -68,6 +76,8 @@ Para obtener una visión más completa de Product Lines, consulta <Anchor target
 <div id="how-to-remove-an-app-from-a-product-line" />
 
 <Accordion title="Cómo eliminar una aplicación de una línea de productos">
+
+<div id="important" />
 
 > 🚧 **Dos puntos (:)**
 >
@@ -97,6 +107,8 @@ Para obtener una visión más completa de Product Lines, consulta <Anchor target
 
 <Accordion title="Cómo eliminar una línea de producto">
 
+<div id="important-1" />
+
 > 🚧 **Dos puntos (:)**
 >
 > No se recomienda eliminar una línea de producto. Cuando se elimina una línea de producto, su configuración de atribución multiplataforma se restablece y los eventos futuros no podrán optar a la atribución multiplataforma hasta que se cree una nueva asignación.
@@ -106,6 +118,8 @@ Para obtener una visión más completa de Product Lines, consulta <Anchor target
 3. Selecciona **Eliminar línea de producto**.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 
@@ -117,6 +131,8 @@ Para obtener una visión más completa de Product Lines, consulta <Anchor target
 | Requisito de CUID | Obligatorio solo para la atribución multiplataforma |
 | Ventana de restauración de inactividad | 14-390 días (predeterminado: 90 días) |
 | Impacto de eliminar una aplicación | Eliminar una aplicación restablece la configuración de atribución<br /><br />Eliminar una aplicación de una línea de productos afecta a la atribución entre plataformas a partir de ese momento.<br /><br />• Los futuros eventos in-app de la aplicación eliminada no podrán optar a la atribución multiplataforma en esa línea de producto, porque los eventos deben proceder de aplicaciones que pertenezcan a la línea de producto.<br /><br />• Los resultados históricos no se reprocesan de forma retroactiva |
+
+<div id="faqs" />
 
 ## Preguntas Frecuentes
 

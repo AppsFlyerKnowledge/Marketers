@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **Resumen:** Las campañas de retargeting (remarketing) alientan a los usuarios a abrir nuevamente e interactuar con la aplicación o a reinstalarla si la eliminaron.
 
+<div id="retargeting-fundamentals" />
+
 ## Fundamentos del retargeting
 
 La atribución de retargeting se produce cuando un usuario interactúa con una campaña haciendo clic en un [enlace de atribución de retargeting](/docs/retargeting-attribution-guide#retargeting-attribution-links) o en un <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">deep link</Anchor>. Esto genera uno de los siguientes eventos de atribución:
@@ -38,6 +40,8 @@ La atribución de retargeting se produce cuando un usuario interactúa con una c
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 Antes de comenzar con las campañas de retargeting, revisa las reglas de re-engagement y los casos de ejemplo en las secciones siguientes, luego configura el retargeting según las instrucciones en la sección de procedimientos de retargeting. Para una mejor comprensión, debes familiarizarte con el <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">modelo de atribución</Anchor> de AppsFlyer y las ventanas de atribución asociadas.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -62,6 +66,8 @@ El diagrama a continuación presenta el conjunto de reglas de re-engagement. Uti
 
 Las tablas a continuación contienen información de referencia relacionada con las ventanas vinculadas a la atribución de retargeting.
 
+<div id="inclusion-windows" />
+
 #### Ventanas de inclusión
 
 | Tipo de ventana | Descripción |
@@ -70,6 +76,8 @@ Las tablas a continuación contienen información de referencia relacionada con 
 | Lookback del clic | La duración máxima desde que un usuario hace clic en un anuncio hasta que abre una aplicación.<br /><br />**Dónde se configura:** Enlace de atribución<br /><br />**Duración** :<ul><li>Por defecto: 7 días</li><li>Rango: 1-23 horas/1-30 días</li></ul>**Comentarios de la SRN:** Consulta con la SRN cuál es su política específica de ventana de lookback. |
 | Reengagement | Considera lo siguiente respecto a la ventana de re-engagement:<ul><li>La ventana comienza cuando el usuario abre la aplicación por primera vez después de interactuar con la fuente de medios de retargeting.</li><li>Los eventos in-app se <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">atribuyen doblemente</Anchor> tanto a las fuentes de medios de adquisición de usuarios como de retargeting durante la ventana.</li><li>La duración de la ventana se determina por la configuración de la aplicación o por la SRN.</li><li>Si el usuario interactúa con otra campaña de retargeting durante la ventana de re-engagement que no está bloqueada por una ventana de exclusión, la ventana de re-engagement actual finaliza inmediatamente y comienza una nueva.</li><li>En el contexto de una reatribución: La **ventana de atribución** tiene una duración ilimitada en tiempo (similar a las instalaciones). Sin embargo, esta ventana finaliza en el caso de una nueva instalación, reinstalación o debido a limitaciones de retención de datos.</li></ul>**Dónde se establece:** Enlace de atribución<ul><li>Por defecto: 30 días</li><li>Rango: 1-23 horas/1-90 días/vida útil</li></ul>**Comentarios de la SRN**: Configurable para SRNs<br /><br />Si cambias la configuración de la ventana, el cambio afectará los re-engagements futuros. No tiene impacto en los re-engagements existentes. |
 
+<div id="exclusion-windows" />
+
 #### Ventanas de exclusión
 
 | Tipo de ventana | Descripción |
@@ -77,6 +85,8 @@ Las tablas a continuación contienen información de referencia relacionada con 
 | Tiempo mínimo entre conversiones de re-engagement | No registres un re-engagement durante la ventana de exclusión.<br /><br />**Tiempo mínimo entre conversiones de re-engagement**<ul><li>Durante un re-engagement, se abre una ventana en la que los eventos in-app se atribuyen tanto a las campañas de retargeting (primaria) como a las de UA (no primaria).</li><li>Esto permite medir el rendimiento de la campaña de retargeting.</li><li>Si otra red o campaña trae un re-engagement durante esta ventana:<ul><li>[Por defecto] se cierra la ventana de re-engagement existente, se registra otro re-engagement y los eventos posteriores en la aplicación se atribuyen al re-engagement más reciente.</li><li>Para impedir esto, establece el Tiempo mínimo entre conversiones de re-engagement. En este caso, solo después del tiempo mínimo transcurrido se puede registrar un nuevo re-engagement.</li></ul></li><li>Esta configuración no tiene impacto en los casos donde la ventana de re-engagement es más corta que la duración de esta configuración. Ejemplo: Si la ventana de re-engagement es de 1 día, y esta configuración es de 4 días, entonces esta configuración no tiene impacto alguno.</li><li>Estas configuraciones no afectan la duración entre la instalación y el re-engagement.</li></ul>**Dónde se establece**: Página de configuración de la aplicación<br /><br />**Duración**:<ul><li>Por defecto: Ninguno</li><li>Rango: 1-23 horas/1-30 días</li></ul> |
 | <Anchor target="_blank" href="/marketers/es/docs/set-retargeting-inactivity-window">Período mínimo de inactividad</Anchor> | No registres un re-engagement o una reatribución durante la ventana de exclusión.<br /><br />**Dónde se establece:** Página de configuración de partners integrados en la pestaña de Integración.<br /><br />**Duración**:<ul><li>Por defecto: Ninguno</li><li>0-30 días</li></ul>**Comentarios de la SRN**: Considera que las SRNs suelen tener sus propias reglas de período de inactividad. Si tu configuración difiere de la del SRN, esto puede causar discrepancias. |
 | <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">Reatribución</Anchor> | La ventana de reatribución afecta las reatribuciones pero no los re-engagements.<br /><br />Los usuarios que reinstalan durante la ventana de reatribución después de interactuar con una campaña de retargeting se atribuyen a las fuentes de medios de retargeting. Lectura complementaria: <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#reinstalls">Reinstalaciones</Anchor><br /><br />**Dónde se establece:** Configuración de la aplicación |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### Ejemplo de flujo que implementa las reglas
 
@@ -104,6 +114,8 @@ Lista de comprobación de reglas de re-engagement para click-through y view-thro
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## Operaciones de retargeting
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ Las siguientes configuraciones son necesarias según el escenario.
 | --- | --- | --- |
 | Reengagement | <ol><li>En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.</li><li>Verifica que la **Atribución de re-engagement** esté activada.</li><li>Para SRN:</li><li>En el menú lateral, selecciona **Colaborar** > **Integraciones activas** y selecciona el SRN.</li><li>Activa la **Atribución de re-engagement**.</li></ol> | <ol><li>En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**.</li><li>Verifica que la **atribución** de **Re-engagement** esté activada.</li><li>Para no-SRN: Añade el parámetro de retargeting a los enlaces de atribución como se detalla en esta sección</li></ol> |
 | Re-atribución | <ol><li>Desde el menú lateral, selecciona **Colaborar** > **Integraciones activas** y</li><li>Activa **Reinstalar atribución**.</li></ol> | <ol><li>No se requieren configuraciones explícitas.</li><li>Añade el parámetro de retargeting a los enlaces de atribución como se detalla en esta sección.</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **Configuraciones para no-SRN**
 
@@ -169,6 +183,8 @@ Parámetros de enlaces de atribución de retargeting
 | Temporizador de lookback de view-through de retargeting | <ul><li>La <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de view-through</Anchor> de retargeting funciona como la de las campañas de adquisición de usuarios.</li><li>Define el período máximo que puede pasar desde que un usuario ve un anuncio hasta que se le atribuya.</li><li>El valor predeterminado es de 1 día.</li><li>La ventana de lookback se configura mediante</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>Ejemplo**<br />Para configurar una ventana de lookback de view-through de 5 horas, añade lo siguiente al enlace de atribución de la campaña de retargeting: `&af_viewthrough_lookback=5h` | No |
 | Ventana de re-engagement | <ul><li>La **ventana de re-engagement** se puede establecer en la interfaz de usuario del enlace de atribución. Esto configura el parámetro **af\_reengagement\_window** en el enlace de atribución. El parámetro se puede añadir manualmente.</li><li>El valor por defecto es de 30 días.</li><li>Los siguientes valores de ventana de re-engagement están disponibles:</li><li>Horas: 1-23 horas</li><li>Días: 1-90 días</li><li>De por vida: Persiste hasta que el usuario desinstale la aplicación o realice otra reactivación, por ejemplo, af\_reengagement\_window=lifetime</li></ul>Por ejemplo, **af\_reengagement\_window=60d** significa que los eventos reportados dentro de los 60 días desde la reactivación se atribuyen a la fuente de medios de retargeting. | No |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### Periodo de lookback de view-through de retargeting
 
 ```http
@@ -212,6 +228,8 @@ Interpretación de reportes de raw data en el contexto de retargeting
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Información adicional
 
 <div id="app-requirements" />
@@ -246,6 +264,8 @@ Para ejecutar campañas de retargeting, la aplicación debe cumplir con los sigu
 | **¿Cuándo es el tiempo de toque atribuido idéntico al tiempo de instalación?**<ul><li>Cuando los usuarios de Universal Links o Android App Links realizan un deep linking, son dirigidos directamente a la aplicación, sin pasar antes por AppsFlyer.</li><li>Cuando la app se inicia y el SDK reporta un nuevo re-engagement, AppsFlyer reproduce los datos del clic utilizando la misma marca de tiempo del lanzamiento. Esto hace que el tiempo de interacción y el de lanzamiento sean idénticos.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

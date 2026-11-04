@@ -16,6 +16,8 @@ x-zendesk:
 ---
 > **At a glance:** Integra AppsFlyer con Salesforce Marketing Cloud (SFMC) para usar Deep Linking y dirigir a los usuarios desde campañas de correo electrónico hasta contenido in-app. Sincroniza los datos de eventos in-app en SFMC para crear audiencias y activar viajes en función del comportamiento real de la aplicación.
 
+<div id="about-the-integration" />
+
 ## Sobre la integración
 
 SFMC te permite volver a interactuar con los usuarios existentes mediante campañas de correo electrónico, usando Deep Linking para dirigirlos a contenido in-app específico, como una promoción o una oferta personalizada.
@@ -24,6 +26,8 @@ Hay dos opciones de integración:
 
 * **Deep Linking estándar de correo electrónico de SFMC**: crea los enlaces OneLink de tu campaña en AppsFlyer y luego añádelos a tus correos electrónicos.
 * **Integración avanzada con AppExchange de SFMC**: crea enlaces OneLink de campaña directamente en Salesforce e importa automáticamente datos de eventos in-app para poder crear audiencias de re-engagement. Esta es una función premium.
+
+<div id="comparison-standard-vs-advanced" />
 
 ## Comparación: Standard vs. Advanced
 
@@ -34,6 +38,8 @@ Hay dos opciones de integración:
 | Medición de Deep Linking | Sí | Sí |
 | Creación de enlaces | En AppsFlyer | En la aplicación de Salesforce dedicada |
 | Postbacks de SFMC (sincronización de eventos in-app) | No | Sí |
+
+<div id="prerequisites" />
 
 ## Prerrequisitos
 
@@ -52,6 +58,8 @@ Hay dos opciones de integración:
 
 </Tab>
 </Tabs>
+
+<div id="set-up-standard-sfmc-email-deep-linking" />
 
 ## Configura Deep Linking estándar de correo electrónico de SFMC
 
@@ -82,6 +90,8 @@ Para habilitar el enlace profundo desde los correos electrónicos de SFMC:
 
    <Image alt="[SE NECESITA TEXTO ALT: describe la pantalla de configuración de Deep Linking de SFMC]" src="https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png" width="3348px" />
 4. Para crear una nueva configuración, haz clic en el botón **Crear** e introduce tu AppID. El valor AppID es una combinación de tu ID de equipo de desarrollador de Apple y el ID de paquete. Ambos valores pueden recuperarse desde tu cuenta de desarrollador de Apple.
+
+   <div id="example" />
 
    > 📄 **Ejemplo**
    >
@@ -124,6 +134,8 @@ Después de configurar tu dominio de registro de clics para que admita enlaces u
 
 </Accordion>
 
+<div id="send-emails-with-standard-sfmc-email-deep-linking" />
+
 ## Envía correos electrónicos con Deep Linking de correo electrónico estándar de SFMC
 
 **Para enviar correos electrónicos con Deep Linking de correo electrónico estándar de SFMC:**
@@ -147,6 +159,8 @@ Después de configurar tu dominio de registro de clics para que admita enlaces u
 ```
 https://example.onelink.me/ABcd?pid=Email&c=Spring_Newsletter&af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 ```
+
+<div id="set-up-the-advanced-sfmc-app-exchange-integration" />
 
 ## Configura la integración avanzada de intercambio de aplicaciones de SFMC
 
@@ -207,6 +221,8 @@ Crea un enlace de atribución independiente para cada campaña.
    <Image alt="[SE NECESITA TEXTO ALT: describe el selector de enlaces de OneLink que se muestra]" src="https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png" width="415px" />
 8. Guarda el correo electrónico y envíalo.
 
+<div id="example-1" />
+
 > 📄 **Ejemplo**
 >
 > Para facilitar la lectura, los parámetros URL no están codificados:
@@ -235,17 +251,23 @@ Crea un enlace de atribución independiente para cada campaña.
 
 </Accordion>
 
+<div id="dynamic-emails" />
+
 ## Correos electrónicos dinámicos
 
 Si necesitas generar enlaces dinámicamente para representar contenido dinámico por usuario, usa la API de OneLink.
 
 Para hacerlo, usa una actividad de script de Automation Studio en Journey Builder de SFMC que llame a la API de OneLink antes del envío, escriba el enlace profundo generado en un campo de la Data Extension de envío para cada contacto y, después, haz que el correo electrónico extraiga ese campo con una búsqueda sencilla de AMPscript.
 
+<div id="advanced-sfmc-in-app-events-data-sync" />
+
 ## Sincronización avanzada de datos de eventos in-app de SFMC
 
 Esta función permite que AppsFlyer envíe automáticamente datos de eventos in-app desde tu aplicación a Salesforce Marketing Cloud, donde se almacenan en una Data Extension específica. Usa estos datos para crear audiencias, activar viajes y personalizar campañas en función del comportamiento real de la aplicación, como compras, registros o niveles completados.
 
 Esta es una función premium, disponible como parte de la integración avanzada de AppExchange de SFMC.
+
+<div id="how-it-works" />
 
 ### Cómo funciona
 
@@ -261,6 +283,8 @@ Cuando un usuario realiza un evento in-app (por ejemplo, al completar una compra
 4. Desplázate hasta **Postbacks de eventos in-app** y activa el selector.
 5. Haz clic en **Añadir evento** y asigna los eventos de AppsFlyer que quieras enviar a SFMC. Para cada evento, selecciónalo en la lista de eventos de tu aplicación y establece la condición de envío: **Solo este partner** (envía solo los eventos atribuidos al tráfico de SFMC) o **Todas las fuentes de medios, incluido el orgánico** (recomendado para crear audiencias, ya que envía cada ocurrencia del evento independientemente de la atribución).
 6. Haz clic en **Guardar integración**.
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
@@ -293,6 +317,8 @@ Si la Data Extension no se creó automáticamente, confirma que la aplicación d
 > Usa el parámetro af\_sub1 en tus OneLinks para pasar la clave de suscriptor de SFMC como identificador de usuario. Esto permite que los postbacks coincidan con el registro de contacto correcto en Salesforce, lo que habilita la personalización a nivel de contacto en lugar de solo la atribución a nivel de campaña.
 
 </Accordion>
+
+<div id="postback-data-fields" />
 
 ### Campos de datos de postback
 
@@ -353,6 +379,8 @@ Todos los campos de instalación anteriores, además de:
 | Ingresos del evento en USD | No | Existe en el esquema, no está escrito |
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ### Resolución de problemas
 

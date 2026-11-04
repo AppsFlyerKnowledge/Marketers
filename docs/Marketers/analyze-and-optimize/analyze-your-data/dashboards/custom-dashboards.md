@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## Paneles de control personalizados
 
 Cada panel de control personalizado consta de uno o más widgets que contienen métricas de adquisición de usuarios. Puedes configurar el widget utilizando el asistente del widget para seleccionar las métricas, el formato de presentación, las aplicaciones, etc.
@@ -32,6 +34,8 @@ Cada panel de control personalizado consta de uno o más widgets que contienen m
 Las métricas disponibles son similares a las métricas de adquisición de usuarios del panel de control general. ¡Atención! Nota: **no** lo compares con la vista general unificada **ni** con la vista de retargeting.
 
 Una vez definido un panel de control personalizado, estará disponible para todos los usuarios de la cuenta.
+
+<div id="dashboard-personalization" />
 
 ## Personalización del panel de control
 
@@ -42,6 +46,8 @@ Puedes personalizar un panel de control moviendo y dimensionando widgets.
 | Cambiar el tamaño del widget | Arrastra la esquina inferior derecha de un widget para cambiar su tamaño. |
 | Posición del widget | Arrastra y suelta un widget para cambiar su ubicación en un panel de control. |
 | Acciones | Coloca el cursor sobre un widget en la esquina superior derecha y haz clic en acciones. Las siguientes acciones están disponibles por widget:<ul><li>Editar</li><li>Duplicar</li><li>Borrar</li><li>Exportar CSV</li></ul> |
+
+<div id="procedures" />
 
 ## Procedimientos
 
@@ -116,6 +122,8 @@ Puedes personalizar un panel de control moviendo y dimensionando widgets.
    Las fechas en los archivos CSV tienen el formato dd/mm/aaaa. Puedes <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">convertirlas a un formato diferente</Anchor>, como mm/dd/aaaa en Excel.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

@@ -24,12 +24,18 @@ x-zendesk:
 
 Puedes optar por recibir notificaciones por el correo electrónico de AppsFlyer cuando se produzcan ciertos eventos en tu cuenta. En tus **preferencias de notificación**, puedes optar por recibir o no recibir estas notificaciones.
 
+<div id="accessing-and-configuring-notification-preferences" />
+
 ## Accediendo y configurando las preferencias de notificación
+
+<div id="to-access-notifications" />
 
 ### Para acceder a las notificaciones
 
 * Desde la barra superior, abre el menú de la cuenta (menú desplegable de la dirección de correo electrónico) > Notificaciones
 * Desde el ícono de la campana dentro de la plataforma > **Ícono de configuración.**
+
+<div id="configuring-notifications" />
 
 ### Configuración de notificaciones
 
@@ -38,6 +44,8 @@ Para optar por recibir una notificación, actívalas de la lista de notificacion
 Para dejar de recibirlos, debes desactivarlas.
 
 Nota: Algunas notificaciones están disponibles solo por correo electrónico. La pestaña de notificación solo por correo electrónico contiene estas configuraciones de [notificaciones](/docs/notifications#notificaciones-solo-por-correo-electrónico).
+
+<div id="what-notifications-can-i-receive" />
 
 ## ¿Qué notificaciones puedo recibir?
 
@@ -58,6 +66,8 @@ Para optar por una notificación en particular, debe:
   * Por ejemplo, si tu empresa no se suscribe a la función de Push API de AppsFlyer, el conmutador relacionado con esta función no será visible.
 * **Disponible para ti, según tus permisos de usuario.** Si una notificación está relacionada con una capacidad o función a la que no se te han asignado permisos, el botón para activar y desactivar estará deshabilitado.
   * * Por ejemplo, si no tienes permisos para agregar o editar partners integrados, el botón para activar o desactivar una notificación relacionada con la configuración de partners integrados está deshabilitado.
+
+<div id="when-will-i-receive-notifications" />
 
 ## ¿Cuándo recibiré notificaciones?
 
@@ -85,6 +95,8 @@ Resultado:
 
 </Accordion>
 
+<div id="where-will-i-receive-notifications" />
+
 ## ¿Cuándo recibiré notificaciones?
 
 Las notificaciones se pueden recibir a través del icono de [campana](/docs/notifications#bell-notification), [correo electrónico](/docs/notifications#email-notification) o integración de [Slack](/docs/notifications#slack-notification).
@@ -107,9 +119,13 @@ Las notificaciones se envían por correo electrónico a la dirección de correo 
 
 Algunas notificaciones están disponibles solo por correo electrónico. Estos ajustes de notificación se pueden encontrar en la pestaña **Notificación solo por correo electrónico**.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Todos los correos electrónicos de notificación de AppsFlyer se envían desde [notifications@appsflyer.com](mailto:notifications@appsflyer.com)
+
+<div id="email-only-notifications" />
 
 #### Notificaciones solo por correo electrónico
 

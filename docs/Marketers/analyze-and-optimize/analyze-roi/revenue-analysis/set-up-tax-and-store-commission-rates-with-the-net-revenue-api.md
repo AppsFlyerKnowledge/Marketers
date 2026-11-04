@@ -34,9 +34,13 @@ La API de Net Revenue se implementa mediante dos API REST que te permiten config
 
 Para obtener más información sobre cómo se calculan los ingresos netos, consulta <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue#true-revenue">Ingresos netos</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Los ingresos netos se muestran en los reportes de raw data y en My Dashboards como las métricas netas (ingresos netos, ROI neto, ROAS neto, ARPU neto, beneficio neto).
+
+<div id="update-tax-rate-rules" />
 
 ## Actualizar reglas de tipos impositivos
 
@@ -69,6 +73,8 @@ Para configurar las reglas de tipos impositivos con la API de Net Revenue, sigue
    * Los parámetros y valores que contienen información sobre qué impuestos calcular, como se indica en la tabla a seguir.
 3. Dile a tu desarrollador que siga las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-tax-rate-rule">instrucciones de la Tax API</Anchor> para crear las reglas de tasas de impuestos. **Nota**: La API permite incluir un archivo JSON en el cuerpo de la solicitud de publicación. <Anchor target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vSl3DwlK2Gt2aa5gmDzD3-K3CtnIM85oMNrqx3PCTamwCERWYU48GugNpD31BFjA2PJjZnqaXIVe2Hx/pub">Este archivo JSON</Anchor> incluye todos los países compatibles y sus impuestos predeterminados. El desarrollador puede editarlo o utilizarlo tal y como está en la API.
 
+<div id="tax-rate-api-parameters" />
+
 ### Parámetros y valores a utilizar en la API
 
 | Parámetro | Obligatorio | Observaciones |
@@ -80,6 +86,8 @@ Para configurar las reglas de tipos impositivos con la API de Net Revenue, sigue
 | `subdivision` | No | <ul><li>Para algunos países, puede existir un estado/subdivisión adicional.</li><li>Se maneja de acuerdo con los <Anchor target="_blank" href="https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm">códigos de subdivisión ISO 3166-2.</Anchor></li><li>Debe incluir el código de país y el código de subdivisión.</li><li>Ejemplo: US-CA</li></ul> |
 | `postal_code` | No | <ul><li>Cadena de letras y/o números</li><li>Ejemplo: L4J8E3</li></ul> |
 | `deduction_order` | No | <ul><li>Valor enumerado: **0**, **1** o **2**:<ul><li>0 significa que la comisión de la tienda se deduce primero de los ingresos brutos y los impuestos se deducen del monto restante.</li><li>1 significa que la comisión de la tienda se deduce primero de los ingresos brutos y los impuestos se deducen del monto restante.</li><li>2 significa que tanto el impuesto como la comisión de la tienda se deducen de los ingresos totales.</li></ul></li></ul> |
+
+<div id="set-up-store-commission-rates" />
 
 ## Configurar tasas de comisión de la tienda
 
@@ -93,6 +101,8 @@ Algunos ejemplos:
 * La comisión de la tienda cambia con el tiempo y, como AppsFlyer no tiene visibilidad del estado de la comisión de tu tienda, debes actualizar manualmente la tarifa aplicada mediante la API de ingresos netos, por ejemplo:
   * Aplicar una comisión reducida cuando tu aplicación pase a cumplir los requisitos para una tarifa más baja de la tienda
   * Volver a la lógica predeterminada de comisión de la tienda cuando deje de aplicarse la tarifa reducida
+
+<div id="update-store-commission-with-the-net-revenue-api" />
 
 ### Actualiza la comisión de la tienda con la API de ingresos netos
 

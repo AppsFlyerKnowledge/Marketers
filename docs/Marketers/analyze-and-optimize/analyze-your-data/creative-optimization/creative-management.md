@@ -24,6 +24,8 @@ x-zendesk:
 
 > **En resumen:** La gestión de creatividades te ayuda a centralizar, revisar y lanzar las creatividades con mayor rapidez. Úsala para sincronizar creatividades desde tu almacenamiento de creatividades, consultar el estado de actividad en distintas fuentes de medios, encontrar fácilmente las creatividades relevantes y subirlas directamente a campañas de fuentes de medios compatibles.
 
+<div id="about-creative-management" />
+
 ## Sobre la gestión de creatividades
 
 La gestión de creatividades es un centro para gestionar los activos creativos durante todo su ciclo de vida, desde sincronizar el almacenamiento hasta cargar la fuente de medios.
@@ -38,6 +40,8 @@ Utiliza la gestión de creatividades para:
 * Revisar los resultados de las subidas y comprobar qué creatividades se han subido correctamente o no.
 
 Creada para la escala, la gestión de creatividades ayuda a los equipos creativos y de marketing a reducir el trabajo manual, optimizar el tiempo de lanzamiento y aumentar el performance de la campaña.
+
+<div id="get-started" />
 
 ## Comienza
 
@@ -59,6 +63,8 @@ Actualmente, la gestión de creatividades es compatible con Google Drive y Dropb
 
 * [Google Drive](#conectar-google-drive)
 * [Dropbox](#conectar-dropbox)
+
+<div id="connect-google-drive" />
 
 #### Conectar Google Drive
 
@@ -84,6 +90,8 @@ Actualmente, la gestión de creatividades es compatible con Google Drive y Dropb
 <Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Haz clic en **Conectar**.
+
+<div id="connect-dropbox" />
 
 #### Conectar Dropbox
 
@@ -117,6 +125,8 @@ La galería de gestión creativa es el lugar donde se revisan, buscan, filtran y
 Cada tarjeta creativa representa una creatividad. Una creatividad puede incluir varias versiones, como diferentes resoluciones o formatos. Desde la tarjeta, puedes comprender rápidamente si la creatividad es nueva, está activa o inactiva en todas las fuentes de medios y ver metadatos de alto nivel, como cuándo se lanzó por primera vez y cuándo se sincronizó con la gestión de creatividades. Cada creatividad nueva se analiza y califica automáticamente para ayudarte a elegir las mejores antes de su lanzamiento. Las puntuaciones van de C (menos probable que tenga éxito) a A (listo para escalar), ayudándote a priorizar creativos de alto rendimiento con confianza.
 
 <Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+
+<div id="filter-creatives" />
 
 #### Filtrar creatividades
 
@@ -155,6 +165,8 @@ Para todas las fuentes de medios compatibles, puedes cargar creatividades en var
 * [Unity Ads](#unity-ads)
 * [AppLovin](#applovin)
 
+<div id="google-ads" />
+
 #### Anuncios de Google
 
 En el caso de Google Ads, puedes subir creatividades a los grupos de anuncios de promoción de aplicaciones existentes.
@@ -173,9 +185,13 @@ En el caso de Google Ads, puedes subir creatividades a los grupos de anuncios de
 
 <Image alt="clic Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Antes de subir un lote grande por primera vez, te recomendamos que pruebes con una sola creatividad para confirmar que aparece correctamente en la fuente de medios seleccionada.
+
+<div id="meta-ads" />
 
 #### Anuncios de Meta
 
@@ -201,6 +217,8 @@ En el caso de Meta, puedes crear anuncios dentro de los conjuntos de anuncios ex
 
 <Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
+<div id="tiktok-ads" />
+
 #### Anuncios Tik Tok
 
 En el caso de los anuncios de TikTok, puedes subir creatividades a los anuncios de promoción de aplicaciones existentes.
@@ -218,6 +236,8 @@ En el caso de los anuncios de TikTok, puedes subir creatividades a los anuncios 
 
 #### Unity Ads
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > En el caso de Unity Ads, actualmente solo puedes subir creatividades a la biblioteca creativa de Unity. La subida directa a las campañas se añadirá pronto.
@@ -231,6 +251,8 @@ En el caso de los anuncios de TikTok, puedes subir creatividades a los anuncios 
 
 #### Mintegral
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > En el caso de Mintegral, actualmente solo puedes subir creatividades a la biblioteca creativa de Mintegral. La subida directa a las campañas se añadirá pronto.
@@ -243,6 +265,8 @@ En el caso de los anuncios de TikTok, puedes subir creatividades a los anuncios 
 6. Haz clic en **Cargar a Mintegral**.
 
 #### AppLovin
+
+<div id="note-3" />
 
 > 📘 **Nota:**
 >
@@ -322,6 +346,8 @@ Utiliza la información de estado para responder a preguntas como:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 | Caducado | Descripción |
@@ -332,6 +358,8 @@ Utiliza la información de estado para responder a preguntas como:
 | El método de carga varía según la red | El método de carga varía según la red.  <br />Google Ads, Meta Ads y TikTok admiten la carga directa a las campañas (como anuncios o conjuntos creativos); actualmente, Unity Ads y Mintegral solo admiten la carga a la biblioteca creativa de la red. |
 | Requisitos de los recursos | Los formatos, las dimensiones, la duración y el tamaño de los archivos creativos deben cumplir los requisitos de cada red. |
 | Alcance del historial de subidas | El historial de subidas refleja el resultado de la subida, no el estado de publicación o moderación en curso de la creatividad. |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

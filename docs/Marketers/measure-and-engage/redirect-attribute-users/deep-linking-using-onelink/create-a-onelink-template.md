@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Crea una plantilla para sentar las bases de la lógica de redireccionamiento de todos los enlaces de OneLink que crees para tus distintas campañas de marketing. Se necesita una plantilla para crear enlaces y experiencias de usuario final.
 
+<div id="onelink-templates" />
+
 ## Plantillas de OneLink
 
 <Embed title="Crear una plantilla de OneLink" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ Plantilla de OneLink:
   * **Nuevos usuarios sin la aplicación instalada**: A la tienda de aplicaciones o a la URL web correcta
   * **Usuarios existentes que ya tienen tu aplicación instalada**: Abrir la aplicación mediante Android App Links, iOS Universal Links o esquemas URI. Esto implica algún trabajo de desarrollador para configurar.
   * **Nota**: La configuración de redireccionamiento para el sitio web o la tienda de aplicaciones se puede anular en el nivel de enlace.
+
+<div id="create-a-onelink-template" />
 
 ## Crear una plantilla de OneLink
 
@@ -54,6 +58,8 @@ Plantilla de OneLink:
    Se abre la página de configuración de la plantilla de OneLink.  
    [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
 3. En el campo **Nombre de la plantilla de OneLink**, introduce un nombre.
+
+   <div id="note" />
 
    > 📘 **Nota**
    >
@@ -187,6 +193,8 @@ Para obtener la mejor experiencia de usuario, seguridad y cobertura de dispositi
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **Consejo**
       >
       > * Ni Apple ni Google exigen nombres exclusivos para los esquemas de aplicaciones. **Elige un nombre de esquema exclusivo para tu marca** para evitar conflictos entre esquemas de distintas aplicaciones. Un buen nombre de esquema podría ser el ID del paquete de la app, por ejemplo, **com.company.app**
@@ -210,6 +218,8 @@ Para obtener la mejor experiencia de usuario, seguridad y cobertura de dispositi
    </Tabs>
 
 6. Haz clic en **Actualizar la plantilla de OneLink**.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -254,6 +264,8 @@ Puedes personalizar los QR codes generados a través de OneLink de la siguiente 
 
 Un favicon es el pequeño icono que aparece junto al título de tu enlace cuando se comparte en redes sociales o en aplicaciones de mensajería. Personaliza su aspecto añadiendo aquí tu propio icono. Se aplica a todos los enlaces basados en esta plantilla y se muestra en las plataformas compatibles cuando se comparte un enlace con una vista previa personalizada de redes sociales configurada.
 
+<div id="note-2" />
+
 > 📘 **Nota:**
 >
 > Este favicon solo aparece en las vistas previas de enlaces en las plataformas compatibles, y solo cuando se configura **Custom preview (image and tags)** a nivel de enlace. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-media-preview-og-tags">Saber más</Anchor>
@@ -274,6 +286,8 @@ Un favicon es el pequeño icono que aparece junto al título de tu enlace cuando
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 <div id="key-traits-and-limitations" />
@@ -293,6 +307,8 @@ Un favicon es el pequeño icono que aparece junto al título de tu enlace cuando
 </Accordion>
 
 ¿Tienes alguna pregunta sobre las plantillas de OneLink? ¡Consulta nuestras <Anchor target="_blank" href="/marketers/es/docs/onelink-troubleshooting-and-faq#preguntas-frecuentes-sobre-las-plantillas-de-onelink">Preguntas frecuentes</Anchor>!
+
+<div id="next-step" />
 
 ## Paso siguiente
 

@@ -31,6 +31,8 @@ x-zendesk:
 
 **Notas de nuestros abogados:** *Nada de lo que se indica aquí es asesoramiento legal. Se proporciona para tu información y comodidad. Debes trabajar estrechamente con asesores legales y otros asesores profesionales para exactamente determinar cómo se te aplican las políticas de Apple a ti.* Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
+<div id="nutrition-labels-and-the-app-store-review" />
+
 ## Etiquetas de nutrición y revisión de la App Store
 
 * Para generar las etiquetas de privacidad, los desarrolladores de aplicaciones deben responder a un cuestionario al enviar su aplicación a App Store Connect que incluya las siguientes secciones:
@@ -44,6 +46,8 @@ x-zendesk:
 * Según la comprensión de la política de Apple por parte de AppsFlyer, AppsFlyer no realiza ningún *seguimiento.* Dicho esto, los desarrolladores de aplicaciones deben responder al cuestionario de acuerdo con sus usos específicos e integraciones de partners.
 * Si utilizas los datos recopilados con fines de seguimiento, debes implementar el aviso de ATT.
 * A continuación se asumen las configuraciones predeterminadas del software de AppsFlyer. Los desarrolladores de aplicaciones son responsables de asegurarse de que se adapten en consonancia con sus configuraciones y usos específicos.
+
+<div id="data-types-collected" />
 
 #### Tipos de datos recopilados
 
@@ -64,6 +68,8 @@ x-zendesk:
 | **Datos de diagnóstico**<ul><li>Datos de bloqueo</li><li>Datos de rendimiento</li><li>Otros datos de diagnóstico</li></ul> | <ul><li>No</li><li>Sí</li><li>No</li></ul> | Se puede recibir la hora de inicio y/o los niveles de batería para detectar el fraude. |
 | **Otros datos**<ul><li>Otros tipos de datos</li><li>IDFV</li></ul> | Sí | <ul><li>AppsFlyer recibe información técnica del dispositivo (p. ej., SO, tipo de dispositivo, idioma, tamaño de pantalla, etc.) o la información de la red (p. ej., la dirección IP, el agente de usuario HTTP).</li><li>AppsFlyer aplica un ID de instalación a cada instalación de aplicación llamada ID de AF.</li><li>Se recopila el identificador de proveedor (IDFV).</li></ul> |
 
+<div id="data-use-purposes" />
+
 ### Fines del uso de datos
 
 Los desarrolladores de aplicaciones deben elegir de una lista de fines que tiene Apple, tal como se detalla en la siguiente tabla. Debes identificar los fines relevantes para cada tipo de datos relacionados con tu uso específico.
@@ -77,11 +83,15 @@ Los desarrolladores de aplicaciones deben elegir de una lista de fines que tiene
 | Funcionalidad de la aplicación | Sí |
 | Otros fines | Selecciona si utilizas los datos para cualquier fin que no esté indicado. |
 
+<div id="data-linked-to-an-identity" />
+
 ### Datos vinculados a una identidad
 
 Los tipos de datos recopilados a través de AppsFlyer generalmente están conectados a un identificador como el ID de dispositivo (cuando está disponible) u otros identificadores, como los ID emitidos por el cliente, cuando se configuran.
 
 Por lo tanto, los desarrolladores de aplicaciones deben seleccionar **Sí** cuando se les pregunte si los datos están vinculados a una identidad.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

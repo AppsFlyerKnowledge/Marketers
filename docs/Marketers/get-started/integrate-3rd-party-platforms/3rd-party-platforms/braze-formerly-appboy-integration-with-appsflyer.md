@@ -34,6 +34,8 @@ Aprender más en <Anchor target="_blank" href="https://www.braze.com/">braze.com
 > * <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 > * No se enviarán postbacks si la fuente es orgánica.
 
+<div id="integration-overview" />
+
 ## Resumen general de la integración
 
 Siga las instrucciones a continuación para configurar la integración con Braze.
@@ -123,6 +125,8 @@ AppsFlyer.setAdditionalData(customData);
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Configuración de Braze
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -141,10 +145,14 @@ AppsFlyer.setAdditionalData(customData);
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar partner
 
 En la **primera visita** aquí, debes ***Activar el Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -166,6 +174,8 @@ Una vez que haya guardado la configuración, AppsFlyer envía los siguientes dat
 * Nombre de la campaña
 * Nombre adgroup
 * Nombre de anuncio
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -208,6 +218,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 Los permisos no están disponibles para Braze.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Visualización de datos de atribución de usuarios en Braze
 

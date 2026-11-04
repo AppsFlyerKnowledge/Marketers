@@ -34,9 +34,13 @@ La configuración permite a AppsFlyer atribuir conversiones a una agencia desde 
 
 Antes de que la agencia pueda comenzar el proceso, el anunciante primero debe configurar la integración de Google Ads. Para más detalles, haz clic <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">aquí</Anchor>.
 
+<div id="enabling-agency-attribution-of-google-ads" />
+
 ## Habilitación de la atribución de Google Ads a las agencias
 
 AppsFlyer admite las configuraciones de agencias con Google Ads. Es esencial que el anunciante y la agencia tengan cuentas separadas de Google Ads para permitir que AppsFlyer atribuya los datos correctamente.
+
+<div id="setting-up-google-ads-attribution-for-agencies" />
 
 ## Configurar la atribución de Google Ads para agencias
 
@@ -157,11 +161,15 @@ Una agencia puede configurar varios ID de cliente de Google Ads, si es necesario
 
 4. Haz clic en ***Guardar***.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Importa las acciones de primera apertura e in-app a Google Ads para comenzar a contar las conversiones tanto en Google Ads como en tu panel de control de AppsFlyer.
 >
 > Para poder importar, debes iniciar la aplicación y realizar los eventos in-app asignados al menos una vez.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -177,6 +185,8 @@ Una agencia puede configurar varios ID de cliente de Google Ads, si es necesario
 
 (**Solo para administradores de Google Ads** )
 
+<div id="important-1" />
+
 > 🚧 **¡Importante!**
 >
 > Para que Google Ads registre tus conversiones nuevas, **debes iniciar tu aplicación y ejecutar tus eventos in-app asignados** por lo menos una vez. Para probar aplicaciones de iOS, debes recopilar el identificador de anunciante (IDFA) para ver el evento. Las conversiones de eventos pueden tardar hasta 6 horas en agregarse a la cola. Una vez agregadas, puedes importarlas, y las conversiones nuevas cambian de estado y pasan de “No recent conversion” (Ninguna conversión reciente) a “recording conversion" (registro de conversión en curso).
@@ -188,6 +198,8 @@ Una agencia puede configurar varios ID de cliente de Google Ads, si es necesario
 3. Selecciona **App** (Aplicación) en la lista de tipos de conversión, luego selecciona **Third-party app analytics** (Analíticas de aplicaciones de terceros) y haz clic en **Continue** (Continuar).  
    [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
 4. Marca la casilla junto a **first\_open** de todas tus aplicaciones, y de cada evento que quieras importar.
+
+   <div id="note-1" />
 
    > 📘 **Nota**
    >
@@ -202,6 +214,8 @@ Una agencia puede configurar varios ID de cliente de Google Ads, si es necesario
    [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
 7. ¡Felicitaciones! ¡Felicitaciones! Ya estás midiendo campañas móviles de Google Ads con AppsFlyer.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > Asegúrese de que su configuración de "include in conversions" (incluir en conversiones) esté alineada con los objetivos de su campaña de Google Ads. Para más información, consulta con tu representante de Google o consulta la documentación de Google <Anchor target="_blank" href="https://support.google.com/google-ads/answer/4677036?hl=en&co=ADWORDS.IsAWNCustomer=false">aquí</Anchor>.
@@ -213,6 +227,8 @@ Una agencia puede configurar varios ID de cliente de Google Ads, si es necesario
 Para ver el vídeo «Configuración de la atribución de Google Ads para anunciantes», <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers#configuración-de-la-atribución-de-google-ads-para-anunciantes">haz clic aquí</Anchor>.
 
 Para obtener detalles sobre cómo los anunciantes pueden atribuir varias agencias/cuentas de Google Ads de MCC, haz clic <Anchor target="_blank" href="/marketers/es/docs/recording-multiple-agency-mcc-google-ads-accounts">aquí</Anchor>.
+
+<div id="agencies-collecting-cost-clicks-and-impression-data" />
 
 ## Agencias: recopilación de datos de costos, clics e impresiones
 

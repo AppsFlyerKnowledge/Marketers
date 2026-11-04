@@ -23,6 +23,8 @@ x-zendesk:
 
 ![51523_Image_3.jpg](https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg)
 
+<div id="what-are-chatgpt-plugins" />
+
 ## ¿Qué son los plugins de ChatGPT?
 
 Los plugins de ChatGPT son como apps dentro del chat, que los usuarios pueden obtener en el marketplace de plugins.
@@ -31,27 +33,39 @@ Hay una API sencilla que permite a esos plugins generar algunas acciones directa
 
 Puedes leer sobre los plugins de ChatGPT y unirte a la lista de espera <Anchor target="_blank" href="https://openai.com/blog/chatgpt-plugins">aquí</Anchor>.
 
+<div id="how-do-marketers-use-chatgpt-plugins" />
+
 ### ¿Cómo usan los profesionales del marketing los plugins de ChatGPT?
 
 OpenAI todavía tiene los plugins de ChatGPT en beta, y muy pocas empresas los han implementado hasta ahora. Sin embargo, las posibilidades para los profesionales del marketing son casi infinitas.  
 
 AppsFlyer permite a los profesionales del marketing medir el uso y el LTV de los usuarios en esas «aplicaciones» en varias plataformas a la vez, para obtener una visión realmente holística de los usuarios.
 
+<div id="chatgpt-attribution-examples" />
+
 ### Ejemplos de atribución de ChatGPT
 
 A continuación encontrarás 3 casos de uso en los que se combinan datos del plugin de ChatGPT con otras plataformas.
+
+<div id="use-case-1---holistic-ltv" />
 
 #### Caso de uso 1 - LTV holístico
 
 Un usuario de una aplicación de viajes ya existente instala el plugin de ChatGPT de la aplicación, que requiere la autenticación del usuario. Cuando el usuario reserva un hotel a través del plugin del chat, el plugin envía a AppsFlyer un evento in-app de compra. Según la configuración del profesional del marketing, los eventos de ChatGPT se atribuyen a la fuente de medios original del usuario en la aplicación móvil, donde se muestra el LTV holístico del usuario en la aplicación móvil y en el plugin de ChatGPT.
 
+<div id="use-case-2---platform-performance-comparison" />
+
 #### Caso de uso 2 - Comparación de rendimiento entre plataformas
 
 Ori Mind Me es una aplicación de recordatorios que permite generar recordatorios tanto desde la aplicación móvil como desde el plugin de ChatGPT. Todos los recordatorios se registran en AppsFlyer como eventos in-app. Esto permite al profesional del marketing comparar en AppsFlyer la cantidad y el tipo de recordatorios generados por cada plataforma.
 
+<div id="use-case-3---show-me-the-movie" />
+
 #### Caso de uso 3 - Muéstrame la película
 
 Webmovs es un servicio de streaming que promociona un nuevo plugin de ChatGPT en anuncios en CTV. El plugin permite a los usuarios describir detalles sobre la película que quieren ver y reproducirla en streaming. AppsFlyer puede atribuir la actividad del plugin a las impresiones en CTV.
+
+<div id="join-the-beta" />
 
 ## Únete a la Beta
 

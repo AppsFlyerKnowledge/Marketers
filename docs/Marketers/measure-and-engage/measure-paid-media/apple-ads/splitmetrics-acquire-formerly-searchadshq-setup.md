@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Optimiza las campañas de Apple Ads usando SplitMetrics Acquire. Cuando se configura, AppsFlyer envía postbacks a SplitMetrics Acquire.
 
+<div id="enabling-apple-ads-attribution" />
+
 ## Activación de la atribución de Apple Ads
 
 Tanto los anunciantes como las agencias pueden activar la atribución para Apple Ads.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -33,7 +37,11 @@ Tanto los anunciantes como las agencias pueden activar la atribución para Apple
 * **Anunciantes**: sigan las instrucciones que aparecen a continuación para activar la atribución para Apple Ads.
 * **Agencias**: <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup#agency-setup">sigan estas instrucciones</Anchor> para activar la atribución para Apple Ads.
 
+<div id="setting-up-splitmetrics-acquire-on-appsflyer" />
+
 ## Configuración de SplitMetrics Acquire en AppsFlyer
+
+<div id="getting-required-information-from-splitmetrics-acquire" />
 
 ### Obtención de la información necesaria de SplitMetrics Acquire
 
@@ -41,6 +49,8 @@ Antes de empezar a configurar SplitMetrics Acquire en AppsFlyer, obtén tu **cli
 
 * Para client\_id, ve al Dashboard de SplitMetrics Acquire y haz clic en **Integrations** > **AppsFlyer**. En la ventana emergente que se abre, copia el ID.
 * Para el Apple  Ads Campaign Group ID: **en tu dashboard de Apple Ads,** obtén el parámetro Apple Ads Campaign Group ID relacionado con SplitMetrics Acquire. Utiliza la captura de pantalla a seguie como guía para localizar el ID.  ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+
+<div id="setting-up-campaigns-on-appsflyer" />
 
 ### Configuración de campañas en AppsFlyer
 
@@ -60,6 +70,8 @@ Antes de empezar a configurar SplitMetrics Acquire en AppsFlyer, obtén tu **cli
    2. Busca y selecciona al partner. Serás dirigido a la página de configuración del partner.
    3. En la pestaña **Integración**, selecciona **Activar partner**.
    4. Haz clic en **Guardar integración**.
+
+<div id="configuring-in-app-event-postbacks" />
 
 #### Configuración de postbacks de eventos in-app
 

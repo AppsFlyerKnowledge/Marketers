@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Comunícate con el soporte de AppsFlyer a través del Customer Assistant Chatbot para obtener ayuda con la resolución de problemas u orientación sobre el producto. El chatbot también te ayuda a abrir tickets al equipo correcto cuando es necesario.
 
+<div id="overview" />
+
 ## Visión general
 
 El chatbot del asistente de atención al cliente dirige tus problemas al equipo adecuado, cubriendo las inquietudes relacionadas con la aplicación, la administración de cuentas, la facturación, la orientación del producto y el soporte técnico. Los pasos del chatbot te piden que proporciones los detalles necesarios para una asistencia precisa, lo que reduce la necesidad de información adicional.
@@ -35,6 +37,8 @@ El chatbot del asistente de atención al cliente dirige tus problemas al equipo 
    <Image alt="Captura de pantalla 2026-08-26 a las 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
    3. Haz clic en **Enviar**
+
+<div id="viewing-support-tickets" />
 
 ## Visualización de tickets de soporte
 

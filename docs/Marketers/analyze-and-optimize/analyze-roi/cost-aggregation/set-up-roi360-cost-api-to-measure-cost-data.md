@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Obtén datos de costo de marketing agregados, incluidos datos de rendimiento de LTV (Lifetime value) relacionados con el costo, mediante la API de Costo a nivel de cuenta de fuente de medios.
 
+<div id="overview" />
+
 ## Resumen
 
 ROI360 proporciona datos de costo de marketing agregados, incluidas las métricas de rendimiento de LTV relacionadas con el costo, a nivel de cuenta publicitaria.
@@ -34,9 +36,13 @@ Las integraciones de costos se configuran en **Configuración de costos**, donde
 
 También puedes crear y editar integraciones de costos desde la pestaña **Costo** de Partner Marketplace. Ambos puntos de entrada generan la misma integración a nivel de cuenta.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > El acceso a **Configuración de costos** está controlado por permisos de rol. Si no puedes abrir **Configuración de costos**, pídele a tu administrador que actualice los permisos de tu rol en la página **Gestión de usuarios**. La capacidad relevante es **Conexiones de costos**.
+
+<div id="create-a-new-api-cost-integration" />
 
 ## Crear una nueva integración de costos mediante API
 
@@ -73,11 +79,15 @@ Si la fuente de medios requiere un paso adicional, continúa con el [paso 3](#ad
 
 Algunas fuentes de medios requieren un paso adicional después de seleccionar las aplicaciones. Añade la asignación a nombres de paquete e ID de bundle, o a ID de sitio.
 
+<div id="map-apps-to-package-names-or-bundle-ids" />
+
 #### Asigna aplicaciones a nombres de paquete o ID de paquete
 
 Hay fuentes de medios que identifican las aplicaciones por el nombre de paquete de Android o el ID de paquete de iOS, por ejemplo, AppLovin.
 
 Como parte de la configuración de costos, después de seleccionar las aplicaciones, introduce el nombre de paquete o el ID de paquete exactos de cada aplicación, tal como aparecen en el sistema de la fuente de medios. Cada aplicación requiere un valor de asignación. Haz clic en **Guardar integración**.
+
+<div id="map-apps-to-site-ids" />
 
 #### Asigna aplicaciones a ID de sitio
 
@@ -92,15 +102,21 @@ Después de seleccionar las aplicaciones, elige un parámetro predeterminado de 
 
 Para anular el valor predeterminado de una aplicación concreta, selecciona un parámetro distinto en el menú desplegable de **ID de sitio** de esa aplicación. Úsalo cuando el ID de sitio de una aplicación tenga un formato diferente en el sistema de la fuente de medios. Haz clic en **Guardar integración**.
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > La asignación del ID de sitio garantiza que las macros de ID de sitio del enlace de atribución de AppsFlyer coincidan con el valor que espera la fuente de medios. Si tu enlace de atribución usa macros distintas de la asignación que seleccionaste, los datos del ID de sitio no se completarán correctamente.
+
+<div id="select-which-ad-account-to-pull-cost-from" />
 
 #### Selecciona de qué cuenta publicitaria extraer el costo
 
 En algunas fuentes de medios, como TikTok, un mismo login puede tener acceso a varias cuentas publicitarias. Después de iniciar sesión en la fuente de medios, tienes que seleccionar tú mismo la cuenta publicitaria concreta.
 
 </Accordion>
+
+<div id="edit-and-delete-an-integration" />
 
 ## Editar y eliminar una integración
 
@@ -139,6 +155,8 @@ La recopilación de datos de costo se detiene de inmediato. Los datos histórico
 Las integraciones de costos se desconectan automáticamente cuando una aplicación se transfiere a otra cuenta.
 
 </Accordion>
+
+<div id="view-cost-api-status" />
 
 ## Ver el estado de la API de costos
 
@@ -200,11 +218,15 @@ La siguiente tabla enumera todos los estados de integración de costos y lo que 
 
 </Accordion>
 
+<div id="cost-integration-and-agencies" />
+
 ## Integración de costos y agencias
 
 Si un anunciante utiliza una agencia para ejecutar sus campañas, recomendamos que sea la agencia, y no el anunciante, quien se integre con los partners relevantes. De lo contrario, si tanto el anunciante como la agencia se integran con un partner utilizando las mismas credenciales para la misma aplicación, los datos de costos se duplican.
 
 Si un anunciante deja de trabajar con una agencia, los datos de costo se siguen extrayendo si la agencia sigue teniendo configurado el costo para la aplicación. El anunciante debe pedir a la agencia que elimine su integración de costos para dejar de extraer estos datos.
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 

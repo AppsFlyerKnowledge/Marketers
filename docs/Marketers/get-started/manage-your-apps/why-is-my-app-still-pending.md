@@ -30,6 +30,8 @@ Las aplicaciones pendientes en AppsFlyer tienen el mismo aspecto que las aplicac
 
 ![App_pendiente.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## ¿Qué ocurre?
 
 AppsFlyer comprueba automáticamente el estado de las aplicaciones varias veces al día.
@@ -37,6 +39,8 @@ AppsFlyer comprueba automáticamente el estado de las aplicaciones varias veces 
 Si la aplicación aún no está activa en la tienda cuando AppsFlyer comprueba el estado de la aplicación, aparece como pendiente en el dashboard. Una vez que la aplicación finalmente se envía a iTunes o Google, se actualiza a "activa" y el logotipo cambia al logotipo original de la aplicación.
 
 El estado de la aplicación en el panel de control no tiene ningún efecto sobre la recopilación y medición de datos. Si la aplicación está disponible en Google Play o en la App Store y los usuarios instalan la aplicación e interactúan con ella, los datos de instalación y de los eventos in-app se muestran en el panel de control de la misma manera.
+
+<div id="refreshing-the-app-status" />
 
 ## Actualizar el estado de la aplicación
 
@@ -51,9 +55,13 @@ Para que el estado de la aplicación cambie a "activo", AppsFlyer verifica su es
 
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 
+<div id="store-country" />
+
 ## País de la tienda
 
 Algunas aplicaciones solo están disponibles en Google Play o iTunes para ciertos países. **Es importante configurar el país correcto para una aplicación** para que AppsFlyer pueda verificar y actualizar su estado.
+
+<div id="ios" />
 
 ### apps de iOS,
 

@@ -31,11 +31,15 @@ x-zendesk:
 ---
 > **At a glance:** Registra eventos in-app posteriores a la instalación (como inicio de sesión, registro o compras dentro de la aplicación) atribuidos a fuentes de medios y campañas.
 
+<div id="why-record-in-app-events" />
+
 ## ¿Por qué registrar eventos in-app?
 
 Los eventos in-app ofrecen información sobre lo que ocurre en tu aplicación y son la herramienta ideal para determinar el valor de los usuarios y la **calidad del tráfico proveniente de diferentes fuentes de medios**. Registrar eventos in-app te ayuda a medir indicadores clave de rendimiento (KPI), como el ROI (Return on Investment) y el LTV (Lifetime Value).
 
 Cuando los usuarios se registran, completan tutoriales, añaden artículos al carrito de compras o realizan compras, los datos de eventos in-app pueden registrar estos eventos con detalles específicos. La implementación de eventos in-app es obligatoria para todos los análisis posteriores a la instalación.
+
+<div id="about-in-app-events" />
 
 ## Sobre los eventos in-app
 
@@ -43,9 +47,13 @@ Un evento in-app comprende un nombre de evento y puede incluir parámetros de ev
 
 ![viaje.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > ¿Quieres saber más sobre los eventos in-app? Consulta este breve e informativo <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">curso en el portal de aprendizaje de AppsFlyer</Anchor>.
+
+<div id="predefined-and-custom-events" />
 
 ### Eventos predefinidos y personalizados
 
@@ -55,6 +63,8 @@ Para enviar eventos in-app, es necesario que el desarrollador implemente el cód
   * La nomenclatura predefinida permite una asignación fluida de eventos a partners.
   * Si AppsFlyer decide cambiar el nombre de cualquier evento o parámetro de evento, la implementación seguirá siendo compatible con versiones anteriores.
 * **Personalizado:** Estos son los nombres de eventos y parámetros que defines para escenarios específicos de usuario que ocurren en tu aplicación. Puedes utilizar cualquier nombre de evento o de parámetro personalizado, pero recuerda que estos eventos requieren mantenimiento por parte de tu desarrollador. Consulta [Consejos](/docs/in-app-events-overview#tips) y [Limitaciones](/docs/in-app-events-overview#limitations).
+
+<div id="revenue-in-in-app-events" />
 
 ## Ingresos en eventos in-app
 
@@ -79,6 +89,8 @@ El valor de ingresos debe contener solo números (y un punto decimal si es neces
 * Ejemplo: 1234,56
 * Cuando los ingresos se envían como una cadena, el valor dentro de las comillas debe ser válido. Por ejemplo: "1234,56".
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > AppsFlyer muestra los ingresos exactos tal como se envían desde el SDK. No se incluye ningún cálculo de IVA ni comisiones de la tienda de aplicaciones, etc., a menos que estos hayan sido añadidos por el desarrollador en el SDK antes de enviarlo a AppsFlyer. Si quieres reportar los ingresos después de esas deducciones, envíalos además en `af_net_revenue` (consulta [Ingresos netos](#net-revenue)).
@@ -98,6 +110,8 @@ El parámetro `af_net_revenue` ofrece una forma opcional y adicional de reportar
 * La divisa sigue `af_currency` (USD de forma predeterminada), igual que `af_revenue`.
 * Como no hay ninguna constante del SDK predefinida para `af_net_revenue`, debes enviarlo como un parámetro personalizado con la clave `af_net_revenue`.
 * Los ingresos netos impulsan las métricas Net (ingresos netos, ROI neto, ROAS neto, ARPU neto y beneficio neto) en <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#metrics">Mis Dashboards</Anchor>.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -123,6 +137,8 @@ El diagrama anterior explica el siguiente proceso:
 
 AppsFlyer utiliza <Anchor target="_blank" href="https://openexchangerates.org/">Open Exchange Rates</Anchor> para la conversión de moneda. El tipo de cambio se actualiza cada hora. Cada vez que AppsFlyer realiza una conversión de moneda, utiliza el tipo de cambio de la última actualización.
 
+<div id="currency-conversion" />
+
 #### Conversión de moneda
 
 <span id="h_01HDBZW9XERK3VN1GS8GHM911W"></span>**Ejemplo**
@@ -140,6 +156,8 @@ AppsFlyerLib.getInstance().trackEvent(getApplicationContext() , AFInAppEventType
 
 En este caso, AppsFlyer convierte los ingresos de EUR a USD y luego a GBP. Supongamos que el tipo de cambio es €1 = $1,13. Por lo tanto, €200 se convierten en $226,85. Luego, AppsFlyer convierte de USD a GBP. Supongamos que el tipo de cambio es $1 = £0,78. Entonces $226,85 se convierten en £176,92.
 
+<div id="currency-display" />
+
 #### Visualización de la moneda
 
 <Anchor target="_blank" href="/marketers/es/docs/app-settings#localization-currency">La moneda se establece en la configuración de la aplicación</Anchor>. La moneda que establezcas en la configuración de la aplicación será la moneda que aparecerá en el dashboard. No importa en qué moneda envíes eventos in-app, los ingresos en el dashboard siempre aparecen en la moneda que configures en los ajustes de la aplicación.
@@ -154,6 +172,8 @@ Envías tres eventos in-app a AppsFlyer.
 2. El Evento B tiene ingresos de **171** y **EUR** como moneda.
 3. El Evento C tiene ingresos de **171** pero **ninguna moneda especificada**.
 
+<div id="revenue-data-in-the-dashboard" />
+
 #### Datos de ingresos en el dashboard
 
 Los ingresos que aparecen en el dashboard son el **valor convertido** de la moneda del evento in-app a USD y luego a la moneda configurada en la aplicación.
@@ -165,6 +185,8 @@ Si no se especifica una moneda en el evento, **AppsFlyer usa USD por defecto**. 
 | A | 1 | 1 | £234 |
 | B | 1 | 1 | £149,4 - convertido de EUR a USD y luego a GBP. |
 | C | 1 | 1 | £132,9 - predeterminado a USD ya que no se especifica ninguna moneda. Convertido directamente de USD a GBP. |
+
+<div id="revenue-data-in-raw-data-reports" />
 
 #### Datos de ingresos en reportes de raw data
 
@@ -182,6 +204,8 @@ El reporte de raw data de eventos in-app muestra el evento y los ingresos de la 
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## Envío de eventos
 
 Existen varias formas de enviar eventos in-app a AppsFlyer:
@@ -190,6 +214,8 @@ Existen varias formas de enviar eventos in-app a AppsFlyer:
 * <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">**Server-to-Server (S2S) API:**</Anchor> Usa la API de servidor a servidor (S2S) para enviar eventos que se produzcan fuera de la aplicación móvil, directamente a AppsFlyer. Por ejemplo, si tienes un usuario que es activo en ambas interfaces, web y móvil, puedes registrar eventos de ambas fuentes y atribuirlos al mismo usuario en AppsFlyer. Puede ser un evento in-app u otros eventos, como eventos en el sitio web, eventos de call-centers o compras en tu tienda física.
 * <Anchor target="_blank" href="/marketers/es/docs/legacy-receipt-validation-for-in-app-purchases">**Validación de recibos**</Anchor>: Este es un mecanismo seguro donde la plataforma de pago, como Apple y Google, valida que la compra in-app se haya realizado tal y como se ha informado. La validación de compras es la herramienta principal para prevenir eventos de ingresos fraudulentos. También te ayuda a ver cuáles son los ingresos reales y filtra las compras in-app incompletas.
 * <Anchor target="_blank" href="/marketers/es/docs/in-app-events-for-hybrid-apps">**Apps híbridas:**</Anchor> Estas aplicaciones combinan vistas nativas y contenido HTML, y también pueden registrar eventos in-app. Sin embargo, dado que el SDK solo puede enviar eventos desde el lado nativo, los desarrolladores deben reenviar todos los datos de eventos al código nativo.
+
+<div id="setting-up-in-app-events" />
 
 ## Configuración de eventos in-app
 
@@ -264,6 +290,8 @@ Puedes consultar tus datos de eventos in-app en los siguientes lugares:
 
   Ten en cuenta que el reporte de raw data es una función premium.
 
+<div id="note-2" />
+
 > 📘 **Nota:**
 >
 > Los valores de los parámetros de eventos in-app están disponibles exclusivamente en los reportes de eventos in-app en raw data. No se muestran en los Dashboards General, Evento o Actividad, ni en los reportes de datos agregados.
@@ -297,6 +325,8 @@ Ten en cuenta lo siguiente al definir nombres de eventos y parámetros en la app
 * Meta Ads tiene algunas limitaciones con respecto a los nombres y parámetros de los eventos. Lee sobre las limitaciones <Anchor target="_blank" href="https://developers.facebook.com/docs/app-events/faq#limits">aquí</Anchor>.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 
@@ -337,6 +367,8 @@ Si un usuario inicia un evento sin conexión a internet, AppsFlyer aún puede re
 2. Si el SDK no recibe una respuesta exitosa, el evento se guarda en caché.
 3. Una vez que se recibe la siguiente respuesta exitosa, el evento almacenado se envía nuevamente al servidor.
 4. Si hay múltiples eventos en la caché, se envían al servidor uno tras otro.
+
+<div id="note-3" />
 
 > 📘 **Nota:**
 >
@@ -379,6 +411,8 @@ Como alternativa, también puedes estructurar el evento con `af_content` como un
 }
 ```
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > Si la string `af_content` supera los 1.000 caracteres, AppsFlyer podría enviar el evento a Meta sin el parámetro `fb_content`. Si en ese caso tampoco está presente `af_content_list`, Meta no recibe datos de identificación de producto. Mantén `af_content` por debajo de 1.000 caracteres en los eventos que incluyan muchos elementos.
@@ -403,6 +437,8 @@ En la misma transacción, el Sr. Smith compra dos camisas idénticas, un par de 
 
 Los múltiples artículos se envían como un conjunto en <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration">postbacks</Anchor>. Por el momento, los anuncios de Meta y X Ads no pueden analizar correctamente los parámetros de los conjuntos. Para ayudar con este problema, AppsFlyer suma el número de artículos (`af_quantity`) en lugar de enviarlo a estas redes de autorreporte (SRN) como un array. En nuestro ejemplo, los anuncios de Meta recibirían `af_quantity=4`.
 
+<div id="notes" />
+
 > 📘 **Notas**
 >
 > * En <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#limitations">Audiences</Anchor> de AppsFlyer, los array no son compatibles dentro de los atributos de evento; solo se admiten números o string.
@@ -421,6 +457,8 @@ Dos eventos se consideran idénticos si los siguientes campos en ambos eventos s
 * Valor del evento
 * Identificación de la aplicación
 * Identificación de AppsFlyer
+
+<div id="note-4" />
 
 > 📘 **Nota:**
 >
@@ -454,6 +492,8 @@ Si el mismo evento también se carga directamente en la red (por ejemplo, desarr
 Esta solución es compatible con `metaweb_int`, `tiktokweb_int`, `snapweb_int`, `pinterest_int`  y `pinterest_int`.
 
 </Accordion>
+
+<div id="see-also" />
 
 ## Véase también
 

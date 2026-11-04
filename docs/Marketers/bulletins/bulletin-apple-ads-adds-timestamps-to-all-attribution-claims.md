@@ -22,6 +22,8 @@ x-zendesk:
 | Lo que debes saber | <ul><li>En la mayoría de las campañas de Apple Ads, la precisión de la atribución mejora porque ahora los engagements se evalúan según la ventana de lookback definida por el anunciante, en lugar de las ventanas predeterminadas anteriores, incluidos los engagements de usuarios que no dieron su consentimiento y que antes se reclamaban sin timestamps.</li><li>Por separado, los grupos de anuncios con targeting por edad o sexo devolverán un payload de atribución false. Apple Ads no reclama los engagements de esos grupos de anuncios y, por tanto, no pueden atribuirse a ellos.</li></ul> |
 | Lo que debes hacer | No se requiere ninguna acción. Tu integración de Apple Ads refleja este cambio automáticamente. Si ejecutas grupos de anuncios segmentados por edad o sexo, revisa los reportes de Apple Ads después del 1 de septiembre para entender cualquier cambio en las conversiones atribuidas. |
 
+<div id="see-also" />
+
 #### Consulte también
 
 * <Anchor target="_blank" href="/marketers/es/docs/apple-ads-integration-setup">Configuración de la integración de Apple Ads</Anchor>

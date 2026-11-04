@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza campañas web de Google Ads para promocionar tus aplicaciones en plataformas de PC y consolas y habilita la atribución. AppsFlyer admite campañas web de Google que utilizan landing pages multiplataforma o enlaces de atribución directa.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Este artículo se centra en campañas web que promueven aplicaciones de PC o consola. Si deseas crear campañas web que promuevan aplicaciones móviles, consulta <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-create-web-based-campaigns">Google Ads (AdWords): Crea campañas basadas en la web</Anchor>.
+
+<div id="overview" />
 
 ## Nota
 
@@ -35,6 +39,8 @@ Este artículo contiene información y pasos sobre cómo configurar y utilizar G
 * /docs/google-ads-web-integration-for-pc-and-console-apps#setting-up-Googleadsweb-in-appsflyer
 * [Configuración de campañas en Google Ads para aplicaciones de PC y consola](/docs/google-ads-web-integration-for-pc-and-console-apps#configura-campañas-en-google-ads-web-para-aplicaciones-de-pc-y-consola).
 
+<div id="prerequisites" />
+
 ### Requisitos previos
 
 Antes de activar la integración de Google Ads Web, asegúrate de tener:
@@ -43,6 +49,8 @@ Antes de activar la integración de Google Ads Web, asegúrate de tener:
 * Una cuenta de AppsFlyer
 * Un token de acceso de Google con el <Anchor target="_blank" href="https://www.googleapis.com/auth/adwords">alcance OAuth requerido</Anchor>. Poder verificar los alcances asociados con tu token de acceso en Google Developer Console.
 * <Anchor target="_blank" href="/marketers/es/docs/user-management">Usuarios de AppsFlyer con roles/permisos apropiados</Anchor> y acceso a las aplicaciones relevantes
+
+<div id="activate-partner-in-appsflyer" />
 
 ## Activar partners en AppsFlyer
 
@@ -54,6 +62,8 @@ Antes de activar la integración de Google Ads Web, asegúrate de tener:
 4. En la pestaña **Integración**, activa **Activar partner**.  
    **Nota: <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">El conmutador debe permanecer activado (</Anchor><Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.**
 5. Completa la configuración usando las pestañas relevantes, como se describe en la siguiente sección.
+
+<div id="set-up-google-ads-web-in-appsflyer" />
 
 ## Configura Google Ads Web en AppsFlyer
 
@@ -67,11 +77,17 @@ La integración con Google Ads Web solo admite el envío de postbacks para insta
 
 La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
+<div id="activate-partner" />
+
 #### Activar partner
 
 Para configurar la integración, primero debes activar el selector **Activar partner**.
 
+<div id="general-settings" />
+
 #### Configuración general
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -88,6 +104,8 @@ Para configurar la integración, primero debes activar el selector **Activar par
 3. Para permitir que AppsFlyer suba conversiones a Google Ads, haz clic en **Iniciar sesión con Google**.
 4. Selecciona la cuenta de administrador de la cuenta MCC de la que recuperaste el ID de cliente en el paso 7.
 5. Haz clic en **Permitir**.
+
+<div id="enable-view-through-attribution" />
 
 #### Habilitar la atribución view-through
 
@@ -107,9 +125,13 @@ Cuando está disponible, AppsFlyer incluye `gclid` en el postback a Google.
 6. Desplázate a la sección **Atribución view-through** y establece la **ventana de lookback view-through** preferida (hasta 24 horas).
 7. Haz clic en **Guardar integración** para aplicar los cambios.
 
+<div id="default-postbacks" />
+
 #### Postbacks predeterminados
 
 Los postbacks de instalaciones se envían automáticamente solo a Google Ads Web.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -146,11 +168,15 @@ La generación de un enlace de atribución en la interfaz de usuario de AppsFlye
 | Landing page multiplataforma | **Recomendado**: Para cuando tu campaña promociona una aplicación que también está disponible en múltiples plataformas, como Epic y Steam.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#landing-page">Más información sobre las landing pages multiplataforma</Anchor><br /><br /><Anchor target="_blank" href="/marketers/es/docs/cross-platform-landing-pages-with-smart-script">Más información sobre cómo configurar una landing page multiplataforma</Anchor><ul><li>Asegúrate de que todos los parámetros de URL relevantes (que luego son capturados por Smart Script) se anexen a la URL del anuncio.</li><li>Asegúrate de que el script tome el GCLID de la URL de entrada y lo agregue al enlace generado. Es decir, asignar el parámetro de URL GCLID de salida `gclid` al parámetro de URL de entrada `gclid`.<br />[Práctica recomendada]: ¡**Importante**! Para mostrarlo en los reportes de raw data de AppsFlyer, el parámetro de entrada `gclid` también debe asignarse a uno de los parámetros de salida `af_sub[1-5]`.</li></ul> | Marketer (puede requerir la asistencia del desarrollador) |
 | Enlace de atribución directa | Si no utilizas una landing page multiplataforma porque solo tienes 1 aplicación en 1 plataforma, puedes crear enlaces de atribución directa para colocarlos detrás de los anuncios.<br /><br /><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor><ul><li>Asegúrate de que los siguientes parámetros estén incluidos en tu enlace:<ul><li>media\_source</li><li>af\_campaign\_id</li><li>af\_r<br />**Nota**: El <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9744275?hl=en">identificador de clic de Google (GCLID)</Anchor> se añade automáticamente por Google Ads a cualquier clic de salida si estás utilizando el <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3095550?hl=en">etiquetado automático</Anchor>. Si el etiquetado automático está desactivado en tu cuenta de Google Ads, añade `gclid={gclid}` a la URL de la plantilla de seguimiento de Google Ads.</li></ul></li><li>Para los parámetros af\_camapign\_id, af\_adset\_id y af\_ad\_id, puedes utilizar las macros de [parámetros de seguimiento de valor](https://support.google.com/google-ads/answer/6305348) de Google (parámetro de URL dinámica). Todos los demás parámetros deben configurarse manualmente.</li><li>No incluyas el parámetro af\_dp.</li></ul>**Plantilla para usar en la mayoría de las plataformas (Epic, Steam, Xbox, PlayStation, etc.)**:<br /><br />`https://engagements.appsflyer.com/v1.0/c2s/click/app/{platform}/{app_id}? af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Enlace de muestra que conduce a Steam**: `https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Plantilla para usar SÓLO con las aplicaciones de Google para PC y Mac**:<br /><br />`https://app.appsflyer.com/{app_id}?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=ACTUAL_CAMPAIGN_NAME&af_adset=ACTUAL_ADGROUP_NAME&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}`<br /><br />**Enlace de muestra que conduce a Google PC**: `https://app.appsflyer.com/123456?af_media_source=googleads_int&af_campaign_id={campaignid}&af_campaign=campaign1&af_adset=adgroup1&af_adset_id={adgroupid}&af_ad_id={creative}&af_r={lpurl}` | Comercializador |
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > Para simplificar el análisis de campañas, incluye el tipo de campaña, web o móvil, como prefijo o sufijo en el nombre de la campaña (por ejemplo, campaign-name\_web)
 
 </Accordion>
+
+<div id="set-up-campaigns-in-google-ads-web-for-pc-and-console-apps" />
 
 ## Configura campañas en Google Ads Web para aplicaciones de PC y consola
 
@@ -231,6 +257,8 @@ En Google Ads, puedes seleccionar de la lista predefinida de acciones y objetivo
 3. Nota
 4. Selecciona **Importar** en la lista de tipos de conversión y luego selecciona **Importación manual mediante API o cargas** > **Seguimiento de conversiones a partir de clics**.
 
+   <div id="note-2" />
+
    > 📘 **Nota:**
    >
    > Si la **importación manual usando API o cargas** no está disponible:
@@ -251,20 +279,28 @@ En Google Ads, puedes seleccionar de la lista predefinida de acciones y objetivo
 
 </Accordion>
 
+<div id="view-web-to-app-attribution-data-from-november-2-2025" />
+
 ## Ver datos de atribución web-to-app (a partir del 2 de noviembre de 2025)
 
 Aunque los eventos de conversión basados en web se envían a Google con el PID `googleads_int` original, se reportan en el dashboard de AppsFlyer y en los reportes de raw data con el PID `googleadwords_int`. Esto aplica tanto para eventos de conversión primaria como para eventos de asistencia de conversión.
 
 Esta vista unificada de reportes te permite analizar el rendimiento de las campañas web y de apps en un solo lugar, incluidos los reportes completos de costos web y móviles.
 
+<div id="view-in-the-dashboard" />
+
 ### Ver en el dashboard
 
 Todas las atribuciones web-to-app de Google aparecen en `googleadwords_int` en los dashboards Resumen y Actividad. Esto proporciona una vista única y consolidada de los resultados de campañas en todas las plataformas. Utiliza filtros y desgloses estándar para comparar el tráfico de la app y de la web dentro de tus datos de Google Ads.
+
+<div id="view-in-raw-data-and-api-reports" />
 
 ### Ver en reportes raw data y API
 
 * **Las exportaciones de raw data y las respuestas de la API** incluyen el PID `googleadwords_int` en el campo `media_source` para la actividad web de Google. Para verificar los detalles de configuración de la campaña web, consulta el campo `original_url` que muestra `googleads_int` como el PID utilizado durante la creación de campañas web.
 * **Los reportes de postbacks** muestran `googleads_int` como la fuente de medios original a la que se envió el postback.
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 

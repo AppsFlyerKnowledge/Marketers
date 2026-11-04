@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En resumen:** A partir de iOS 14, iOS utiliza ATT para determinar las preferencias de privacidad del usuario y la función Limitar seguimiento de anuncios (LAT) queda obsoleta.
 
+<div id="att-values" />
+
 ### Valor ATT
 
 * A partir de iOS 14: Apple <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> (ATT) proporciona los valores de estado para la autorización de seguimiento de aplicaciones.
@@ -39,6 +41,8 @@ x-zendesk:
 * En algunos casos, ATT se completa con valores definidos por AppsFlyer. Se indican con el prefijo *af* en la tabla.
 * Si IDFA no está disponible, se completa con ceros.
 
+<div id="att-values-defined-by-apple" />
+
 #### Valores ATT definidos por Apple
 
 | Estado de ATT | Disponibilidad de IDFA | Comportamiento |
@@ -48,6 +52,8 @@ x-zendesk:
 | Denegado | No disponible | Ocurre si se cumple alguna de las siguientes situaciones:<ul><li>Se estableció después de mostrar el aviso.</li><li>El usuario desactivó *Permitir que las aplicaciones soliciten el seguimiento* (interruptor maestro a nivel de dispositivo).</li><li>Antes de instalar iOS 14 en el dispositivo, LAT estaba activado.</li></ul> |
 | autorizado | disponible | El usuario dio su consentimiento explícito. |
 
+<div id="additional-att-values-defined-by-appsflyer" />
+
 #### Valores ATT adicionales definidos por AppsFlyer
 
 | Estado de ATT | Nota | Disponibilidad de IDFA |
@@ -55,6 +61,8 @@ x-zendesk:
 | af\_unknown | El anunciante reportó el valor ATT pero no es un valor conocido según la especificación <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/">ATTrackingManager</Anchor> | Depende de la versión de iOS |
 | af\_authorized | El uso de IDFA está permitido por una de las siguientes razones:<ul><li>Versión iOS del dispositivo: anterior a iOS 14.</li><li>El evento reportado contenía IDFA pero no ATT. Por ejemplo, una aplicación que tiene SDK V5.X en un dispositivo que ejecuta una versión de iOS anterior a iOS 14.</li></ul> | disponible |
 | af\_unavailable | <ul><li>El anunciante no reportó ATT en el evento y el IDFA no está disponible.</li><li>La versión V5.X del SDK de AppsFlyer no puede obtener ATT y no obtuvo IDFA</li></ul> | No disponible |
+
+<div id="is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14" />
 
 ### ¿LAT está en iOS? Consideraciones y cómo se traduce LAT a ATT en iOS 14
 

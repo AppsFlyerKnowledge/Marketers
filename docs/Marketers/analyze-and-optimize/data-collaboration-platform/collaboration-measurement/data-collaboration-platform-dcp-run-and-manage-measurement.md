@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Después de configurar la medición on-site o off-site, ejecútala como una medición en vivo o como una medición histórica. Elige el modo que mejor se adapte a tu objetivo: mide el rendimiento continuamente o valida los resultados durante un período definido.
 
+<div id="about-the-measurement-run-modes" />
+
 ## Sobre los modos de ejecución de la medición
 
 Una vez que hayas <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configurar-la-medición-de-campañas-on-site-y-off-site">configurado la medición on-site o off-site</Anchor>, estarás listo para elegir cómo ejecutar la medición.
@@ -29,6 +31,8 @@ Tienes dos modos de ejecución disponibles:
 
 * **Medición en tiempo real**: Medición continua que se actualiza a intervalos regulares, para que puedas monitorear el rendimiento continuamente a medida que se agregan nuevos datos en el dashboard en tiempo real.
 * **Medición histórica**: Medición única en un intervalo de fechas específico que puedes ver y analizar en un dashboard histórico.
+
+<div id="live-vs-historical-measurements" />
 
 ### Mediciones en tiempo real vs históricas
 
@@ -39,6 +43,8 @@ Tienes dos modos de ejecución disponibles:
 | Tipos de fuentes compatibles | <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Agregar</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">sobrescribir (snapshot)</Anchor> | <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#step-3-set-source-update-method">Fuentes personalizadas de tipo append</Anchor> |
 | Selección del marco de tiempo | Selecciona una **fecha de inicio y fin** (a partir de los datos disponibles) | Selecciona una **fecha de inicio** (la plataforma calcula el período histórico de activación y continúa acumulando datos) |
 | Cuántos por medición | Múltiples | Uno |
+
+<div id="choose-the-measurement-you-need" />
 
 ### Elige la medición que necesitas
 
@@ -58,6 +64,8 @@ Utiliza la siguiente guía para decidir qué medición se ajusta a tu objetivo.
 
 **Consejo:** Si primero estás probando tu configuración o validando un período específico, comienza con la **medición histórica**. Cuando estés listo para el monitoreo continuo, cambia a **medición en tiempo real** para actualizaciones continuas.
 
+<div id="run-a-live-measurement" />
+
 ## Ejecutar una medición en tiempo real
 
 **Antes de empezar:**  <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-configure-collaboration-measurement#configurar-la-medición-de-campañas-on-site-y-off-site">Configura la campaña de medición on-site u off-site en la página de configuración de la medición</Anchor>.
@@ -66,6 +74,8 @@ Utiliza la siguiente guía para decidir qué medición se ajusta a tu objetivo.
 
    Si **Ejecutar ahora** está deshabilitado, tus tareas de medición están incompletas. Completa todas las tareas de configuración necesarias para ejecutar la medición.
 2. En el cuadro **Preparar para ejecutar**, selecciona **Dashboard en tiempo real**.
+
+   <div id="note" />
 
    > 📘 **Nota:**
    >
@@ -76,6 +86,8 @@ Utiliza la siguiente guía para decidir qué medición se ajusta a tu objetivo.
 4. Selecciona la **fecha de inicio** de la medición. El valor predeterminado es la fecha de hoy, pero puedes seleccionar una fecha pasada del selector de fechas. (Solo puedes seleccionar las fechas que existen en tus fuentes de datos).
 5. Haz clic en **Iniciar** para comenzar la medición en tiempo real. Serás redireccionado a la página de medición de la colaboración.
 6. En la página de medición de la colaboración, después de que las comprobaciones de validación automáticas se completen correctamente, haz clic en **Ejecutar ahora**.
+
+<div id="run-a-historical-measurement" />
 
 ## Ejecutar una medición histórica
 
@@ -91,9 +103,13 @@ Utiliza la siguiente guía para decidir qué medición se ajusta a tu objetivo.
 5. Haz clic en **Iniciar** para comenzar la medición histórica. Serás redireccionado a la página de medición de la colaboración.
 6. En la página de medición de la colaboración, después de que las comprobaciones de validación automáticas se completen correctamente, haz clic en **Ejecutar ahora**.
 
+<div id="manage-measurements" />
+
 ## Gestionar la medición
 
 Después de configurar y ejecutar la medición, administrala desde el panel de medición de la página de medición de la colaboración. Puedes pausarla o reiniciarla en tiempo real, ajustar las fechas, volver a ejecutar mediciones históricas o duplicar una medición para crear una nueva ejecución.
+
+<div id="the-collaboration-measurement-page" />
 
 ### La página de medición de la colaboración
 
@@ -102,6 +118,8 @@ Después de configurar y ejecutar la medición, administrala desde el panel de m
 <div id="pause-or-restart-live-measurement" />
 
 <Accordion title="Pausar o reiniciar la medición en tiempo real">
+
+<div id="legend" />
 
 #### Leyenda
 

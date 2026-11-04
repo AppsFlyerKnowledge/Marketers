@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Resumen:** Configure su política de identificador de usuario para ejercer control a **nivel de cuenta** sobre los datos que Audiences comparte con socios.
 
+<div id="about" />
+
 ## Acerca de
 
 Una vez que defina una audiencia, AppsFlyer Audiences envía identificadores de los miembros de esa audiencia a sus <Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections">socios publicitarios</Anchor> seleccionados. Esto les permite mostrar anuncios solo a estos usuarios.
@@ -35,6 +37,8 @@ Para cumplir con los requisitos de privacidad de iOS 14.5 y otras consideracione
 * a nivel de conexión de socios
 
 Este artículo explica el proceso para gestionar su política de identificador de usuario a nivel de cuenta. Para más información sobre cómo gestionar los identificadores compartidos a nivel de conexión de socios, consulte la sección <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#manage-connections">Gestionar conexiones</Anchor> de la guía de Audiencias.
+
+<div id="user-identifiers" />
 
 ## Identificadores de usuario
 
@@ -72,6 +76,8 @@ Para más información (incluidos los requisitos para usar identificadores espec
 
 </Accordion>
 
+<div id="setting-account-level-user-identifier-policy" />
+
 ## Configuración de la política de identificador de usuario a nivel de cuenta
 
 La política de identificador de usuario solo puede ser establecida por un usuario administrador.
@@ -84,6 +90,8 @@ La política de identificador de usuario solo puede ser establecida por un usuar
    * Si eliges permitir la compartición de identificadores distintos de IDFA, GAID, OAID e IMEI, primero debes revisar y aceptar los [Términos de uso de identificadores adicionales.](https://support.appsflyer.com/hc/article_attachments/360017900558)
    * Si decides no permitir los identificadores que son cargados por conexiones de socios existentes, se te pedirá que confirmes que deseas dejar de cargar estos identificadores.
 4. Haz clic en **Guardar**.
+
+<div id="privacy-regulations" />
 
 ## Regulaciones de privacidad
 
@@ -143,7 +151,7 @@ Como parte de la aplicación de la Ley de Mercados Digitales (DMA) por parte de 
   Todos los dispositivos que ya formaban parte de una audiencia en Google antes del 6 de marzo de 2024 no se verán afectados y seguirán siendo parte de la audiencia. Solo las nuevas audiencias o los nuevos dispositivos del EEE añadidos a una audiencia existente se cargarán en Google con consentimiento.
 * **Tamaño de carga de la audiencia**  
   El tamaño estimado y real de la carga de audiencia puede verse afectado dependiendo del número de usuarios que otorguen o nieguen su consentimiento.
-* #### **Importación de audiencias**
+* #### <span id="importing-audiences"></span>**Importación de audiencias**
 
   * **Importar audiencia estándar** - AppsFlyer agregará los datos de consentimiento que recopile del SDK y eliminará los dispositivos no especificados o sin consentimiento de la audiencia antes de enviarlos a Google.
   * **Importar audiencia “tal cual”** - Al importar una audiencia “tal cual” a través de <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>, dos campos de consentimiento adicionales deberán ser añadidos. Estos campos son:
@@ -154,6 +162,8 @@ Como parte de la aplicación de la Ley de Mercados Digitales (DMA) por parte de 
 | <span id="ad_user_data"></span>datos de usuario de anuncios habilitados | datos\_de\_usuario\_de\_anuncios | verdadero/falso | ¿El usuario dio su consentimiento para enviar sus datos a Google? |
 
 Si los campos de consentimiento no se rellenan con valores, se enviarán a Google como “No especificado”.
+
+<div id="note" />
 
 > 📘 **Nota**
 >

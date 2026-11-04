@@ -25,11 +25,15 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > Algunas fuentes de medios restringen el intercambio de datos con terceros. AppsFlyer no puede compartir datos de nivel de usuario de los usuarios adquiridos a través de estas fuentes de medios con plataformas o servicios de terceros. Por lo tanto, todas las instalaciones de dichas fuentes de medios se envían como orgánicas.
 >
 > Para obtener más detalles y una lista de las fuentes de medios que restringen el intercambio de datos con terceros, haz clic <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">aquí</Anchor>.
+
+<div id="setting-up-liftoff" />
 
 ## Configuración de Liftoff
 
@@ -51,9 +55,13 @@ x-zendesk:
 
 La pestaña **Integración** está dividida en diferentes secciones, tal como se describe a continuación.
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 El <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">partner debe activarse</Anchor> al activar el selector **Activar partner** en la primera visita para permitir su configuración.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -61,12 +69,16 @@ El <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivat
 
 Actívalo si deseas atribuir las instalaciones por view-through de Liftoff. El control deslizante de la ventana retrospectiva por view-through está disponible en la pestaña [**Enlace de atribución**](/docs/liftoff-campaign-configuration-in-appsflyer#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Liftoff después de las instalaciones de los usuarios, las instalaciones rechazadas y los reengagements. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo este partner** para los eventos que provienen solo de usuarios atribuidos a Liftoff.  
 Selecciona **Todas las fuentes, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada a Liftoff.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -129,6 +141,8 @@ Este partner no admite ingresos por publicidad.
 
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Liftoff. Ten en cuenta que, incluso si la atribución está deshabilitada para Liftoff, la pestaña Permisos está activa y puedes otorgarle el control a Liftoff.
 
+<div id="ad-network-permissions" />
+
 ### Permisos de ad network
 
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Liftoff. Ten en cuenta que, incluso si la atribución está deshabilitada para Liftoff, la pestaña Permisos está activa y puedes otorgarle el control a liftoff.
@@ -144,6 +158,8 @@ Usa estos selectores para otorgarle permisos a una ad network para que maneje su
 * **Permitir el acceso a tu dashboard de Protect360**: solo para los datos propios de Protect360 del partner, y siempre que la característica esté habilitada para el anunciante.
 
 Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permisos de la agencia
 
@@ -171,6 +187,8 @@ Saber más sobre <Anchor target="_blank" href="/partners/es/docs/about-agency-ac
 
 </Accordion>
 
+<div id="set-up-skadnetwork-integration-with-liftoff" />
+
 ## Configura la integración de SKAdNetwork con Liftoff
 
 **Para recibir datos de SKAdNetwork de Liftoff:**
@@ -184,6 +202,8 @@ Saber más sobre <Anchor target="_blank" href="/partners/es/docs/about-agency-ac
 4. Ponte en contacto con tu equipo de cuentas de Liftoff para confirmar que los postbacks de SKAdNetwork se están enviando con valores de conversión.
 5. [Opcional] Para compartir el ID de transacción de SKAdNetwork con Liftoff, activa **Compartir ID de transacción en modo SKAdNetwork**.  
    Saber más sobre el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">ID de transacción.</Anchor>
+
+<div id="product-feed-retargeting-with-liftoff" />
 
 ## Retargeting del feed de productos con Liftoff
 

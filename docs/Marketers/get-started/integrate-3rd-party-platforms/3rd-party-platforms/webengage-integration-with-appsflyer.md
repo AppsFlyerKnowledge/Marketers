@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **De un vistazo:** WebEngage, un partner integrado de AppsFlyer, es una Intelligent Marketing Cloud creada para un mundo mobile-first.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-webengage" />
 
 ## Configuración de WebEngage
 
@@ -49,9 +53,13 @@ Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-inte
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En tu primera visita, activa **Activar partner** para configurar la integración. El conmutador debe estar activado mientras trabajes con el partner. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -62,6 +70,8 @@ WebEngage se conecta con AppsFlyer mediante una clave de API y la región del ce
 
 ![web_mo_engage_general_settings_en-us.png](https://files.readme.io/1297a02a9e280b238a222b14972dc657acffe4566dc49d607178ea43fdc01a77-8089123842705.png) 
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 AppsFlyer puede enviar postbacks automáticos a WebEngage después de las instalaciones y re-engagements de los usuarios.
@@ -71,13 +81,19 @@ AppsFlyer puede enviar postbacks automáticos a WebEngage después de las instal
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red que rastrea todas las instalaciones, WebEngage prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde cualquier fuente, incluidas las orgánicas. WebEngage recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas**.
 
+<div id="in-app-event-settings" />
+
 ### Configuración de eventos in-app
 
 Asocia los eventos de AppsFlyer con WebEngage mediante postbacks. Si el envío de postbacks está activado, esto incluye los eventos in-app rechazados (eventos bloqueados por Protect360 o eventos que no cumplen con las reglas de validación del targeting).
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### Para configurar postbacks de eventos in-app
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En resumen:** Comprende el flujo cuando un usuario con un dispositivo iOS hace clic en un enlace personalizado de OneLink y Universal Links no puede abrir la aplicación.
 
+<div id="about-uri-fallback-for-ios" />
+
 ## Sobre el URI alternativo para iOS
 
 * La mejor manera de abrir aplicaciones en dispositivos iOS es usando los Universal Links. Desde 2016, existen importantes limitaciones del sistema operativo integradas en el uso de esquemas URI como opción alternativa para cuando los Universal Links de iOS no abren la aplicación. Estas limitaciones no están relacionadas con AppsFlyer y también afectarían a cualquier otro enlace con esquemas de URI que puedas usar para abrir la aplicación.
@@ -34,13 +36,19 @@ x-zendesk:
 * Los esquemas URI son impredecibles y, por lo tanto, no son compatibles de forma predeterminada. Es probable que los usuarios que hagan clic en el enlace sean redireccionados a la App Store (o, si se establece, a la URL establecida en el `af_ios_url` parámetro).
 * Consulta el diagrama de flujo de escenarios y los casos de uso que aparecen a continuación para obtener más información.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > X (Twitter) no admite esquemas de URI. Recomendamos usar una página de destino de una app social con la configuración de Universal Links para evitar problemas al abrir la app.
 
+<div id="scenarios-flowchart" />
+
 ### Diagrama de flujo de escenarios
 
 <Image alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
+
+<div id="use-cases" />
 
 ## Casos de uso
 

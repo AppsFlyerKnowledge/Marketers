@@ -28,6 +28,8 @@ x-zendesk:
 
 > **En resumen:** Descubre los métodos que utilizan los anunciantes para agregar y visualizar los datos de costos de marketing.
 
+<div id="cost-aggregation" />
+
 ## Agregación de costos
 
 ROI360 hace lo siguiente:
@@ -42,6 +44,8 @@ Los siguientes datos están disponibles para los anunciantes sin una suscripció
 
 * <Anchor target="_blank" href="/marketers/es/docs/view-aggregated-cost-data-for-attribution-links">Datos de costo en el enlace de atribución</Anchor>
 * Datos de clics e impresiones de redes de autorreporte (SRN), que configuras en la pestaña **Costo** del partner integrado de SRN
+
+<div id="principles-of-cost-data-aggregation" />
 
 ## Principios de agregación de datos de costos
 
@@ -67,6 +71,8 @@ La tabla al final de esta sección indica dónde están disponibles los datos de
 
 Para entender la tabla, se aplican las siguientes explicaciones, a menos que se indique lo contrario en las observaciones de la tabla:
 
+<div id="cost-in-the-ua-view" />
+
 #### Costos en la vista UA
 
 AppsFlyer clasifica los datos de costo de la campaña como adquisición de usuarios (UA) según reglas de correspondencia que varían según la fuente de medios, como se muestra a continuación.
@@ -76,13 +82,19 @@ AppsFlyer clasifica los datos de costo de la campaña como adquisición de usuar
 | Google Ads, DV360, Facebook, TikTok, Apple Search Ads y Aura | AppsFlyer clasifica el costo como UA si registra al menos una instalación, un clic o una impresión dentro de un margen de ±10 días desde la fecha de instalación (la fecha en que la fuente de medios reporta el costo). |
 | Todas las demás fuentes de medios | AppsFlyer clasifica el costo como UA si registra al menos una instalación, un clic o una impresión en la propia fecha de procesamiento de la fuente de medios. No se aplica ninguna ventana de ±10 días. |
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Esto se aplica a ambas filas. AppsFlyer basa las correspondencias en la fuente de medios, el ID de campaña y la agencia.
 
+<div id="cost-in-the-unified-view" />
+
 #### Costos en la vista unificada
 
 La vista unificada incluye datos de costos de todas las campañas de la app seleccionada, independientemente de si existen instalaciones, clics o impresiones dentro de ±10 días de la fecha en la que se reporta el costo (fecha de instalación).
+
+<div id="example" />
 
 #### Ejemplo
 
@@ -90,6 +102,8 @@ Los siguientes ejemplos muestran cómo la ventana de ±10 días afecta a dónde 
 
 * Si una fuente de medios que usa la ventana de ±10 días reporta el costo de la campaña X el 15 de marzo, y la campaña X tiene al menos un clic, una instalación o una impresión entre el 5 y el 25 de marzo, el costo del 15 de marzo aparece en UA y en Unified.
   * Si no existe actividad dentro de esa ventana de tiempo, el costo del 15 de marzo aparece **solo en Unified**. En las fuentes de medios que solo coinciden por fecha de procesamiento, se aplica la misma regla al propio 15 de marzo, sin ventana de ±10 días.
+
+<div id="cost-data-availability-and-reports-table" />
 
 #### Disponibilidad de datos de costos y reportes
 
@@ -109,6 +123,8 @@ Los siguientes ejemplos muestran cómo la ventana de ±10 días afecta a dónde 
 | API push | Datos de clics originales (no agregados) | No es relevante |  |
 | Pull API de raw data | Datos de clics originales (no agregados) | No es relevante |  |
 | Casillero de datos | Datos de clics originales (no agregados) | No es relevante | La cohorte de Data Locker no admite costos. |
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -137,6 +153,8 @@ El mecanismo de priorización de costos afecta los reportes y dashboards de dato
 * Si cambias los métodos de agregación de costos, el cambio tiene un efecto retroactivo. Los datos históricos de costos agregados pueden modificarse.
 * Un cambio en el método de Agregación de costo afecta del mismo modo al tráfico generado por agencias. Esto incluye tanto agencias transparentes como no transparentes.
 
+<div id="example-1" />
+
 > 📄 **Ejemplo**
 >
 > **Escenario:** Una fuente de medios reporta costos mediante el enlace de atribución, pero decides habilitar la API de costos de esa fuente de medios.
@@ -155,6 +173,8 @@ AppsFlyer asocia apps basándose en aquellas vinculadas a los clics, impresiones
 
 Si el proceso de completado de apps da como resultado varias apps coincidentes, AppsFlyer distribuye el costo de la campaña entre esas apps de la siguiente manera:
 
+<div id="proportional-split-by-conversions" />
+
 #### Distribución proporcional (por conversiones)
 
 Si existen conversiones (instalaciones, reatribuciones y re-engagements) en la fecha de costo reportada, AppsFlyer divide el costo proporcionalmente según el número de conversiones de cada aplicación.
@@ -164,9 +184,13 @@ Si existen conversiones (instalaciones, reatribuciones y re-engagements) en la f
 * iOS: **$60**
 * Android: **$40**
 
+<div id="note-2" />
+
 > 📘 **Advertencia**
 >
 > La división proporcional (basada en conversiones) solo se aplica cuando la granularidad de conversión disponible en atribución coincide exactamente con la granularidad que reporta la fuente de medios para sus datos de costo. Cuando ambas solo coinciden parcialmente, AppsFlyer no puede asignar el costo a las conversiones de cada app, así que en su lugar aplica una división equitativa entre las apps coincidentes.
+
+<div id="equal-split-no-conversions" />
 
 #### División equitativa (sin conversiones)
 
@@ -177,6 +201,8 @@ Si no existen conversiones en la fecha de costo reportada, AppsFlyer divide el c
 * iOS: **$50**
 * Android: **$50**
 
+<div id="limitations" />
+
 #### Limitaciones
 
 Esta función tiene las siguientes limitaciones:
@@ -185,6 +211,8 @@ Esta función tiene las siguientes limitaciones:
 * **Campañas de Google Performance Max (PMAX)**: la división proporcional (basada en conversiones) no se aplica. La API de Google no reporta la granularidad de Ad ID ni de geolocalización para las campañas PMAX, por lo que AppsFlyer divide el costo por igual entre las apps coincidentes, independientemente del número de conversiones por app. A nivel de campaña, cuando se seleccionan todas las plataformas (iOS, Android, etc.) en el dashboard, el costo total sigue coincidiendo con el costo reportado por Google.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 
@@ -224,6 +252,8 @@ Para evitar anomalías en la visualización, asegúrate de lo siguiente:
 **¿Por qué veo datos de costos sin instalaciones?** Esto ocurre cuando el costo se proporciona a nivel superior en la jerarquía (por ejemplo, a nivel de campaña), pero la información de rendimiento (clics e instalaciones) se ofrece a un nivel inferior (por ejemplo, adset). Esto ocurre cuando una fuente de medios proporciona el costo en un nivel superior de la jerarquía (por ejemplo, el nivel de campaña), pero proporciona información de rendimiento (clics e instalaciones) en un nivel inferior de la jerarquía publicitaria (por ejemplo, el nivel de anuncio o adset).
 
 AppsFlyer completa los datos de costo de las dimensiones faltantes desde un nivel más alto de la jerarquía. Esto asegura una visión completa de los datos de costos a cualquier nivel y minimiza discrepancias internas.
+
+<div id="example-2" />
 
 > 📄 **Ejemplo**
 >

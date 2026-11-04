@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
+<div id="setting-up-ironsource" />
+
 ## Configuración de ironSource
 
 **Requisito previo:** Una cuenta con Partners. Si no tienes una cuenta, ponte en contacto con Partners para abrir una antes de configurar la integración.
@@ -45,6 +47,8 @@ x-zendesk:
 
 La ventana de configuración de ironSource incluye 5 pestañas: Integración, Enlace de atribución, Costo, Ingresos por publicidad y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > * El paso de Configuración general de la pestaña Integración es **obligatorio** para todos los Partners
@@ -54,28 +58,40 @@ La ventana de configuración de ironSource incluye 5 pestañas: Integración, En
 
 <Accordion title="Pestaña Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, deberás activar el selector **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe permanecer activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privacidad avanzada
 
 Solo para aplicaciones iOS, cuando la **Privacidad avanzada (para iOS 14.5+ y posteriores)** está activada, puedes <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#b">controlar qué datos se comparten</Anchor> con ironSource a través de postbacks y reportes.
+
+<div id="transaction-id" />
 
 ### ID de transacción
 
 Solo para aplicaciones iOS, cuando **Compartir ID de transacción de SKAN** está activado, estás  permitiendo que AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">comparta el ID de transacción de los postbacks de SKAdNetwork</Anchor> con ironSource. Al hacerlo, ironSource podría decodificar tus valores de conversión de SKAdNetwork.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > Para la interacción de SKAN con AppsFlyer, comunícate con tu administrador de cuentas de ironSource para <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">habilitar el envío de datos SKAN a MMP</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
 **ID de anunciante**
 
 ironSource se conecta con AppsFlyer a través de un ID de anunciante único (número de 6 dígitos) y una contraseña. Si aún no tienes el ID y la contraseña del anunciante, debes obtenerlos de ironSource para continuar con la integración. De lo contrario, copia el ID y la contraseña y pégalos en los campos respectivos.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Atribución de instalaciones y re-engagements
 
@@ -91,6 +107,8 @@ Estas dos opciones permiten atribuir a ironSource nuevas instalaciones y reatrib
 1. Activa la **Atribución de re-engagements por impresiones**.
 2. Configura la longitud de la ventana retrospectiva **por impresiones** en la [pestaña de Enlace de atribución](/docs/ironsource-campaign-configuration#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a ironSource después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
@@ -98,9 +116,13 @@ Envía postbacks automáticos a ironSource después de las instalaciones y re-en
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a ironSource.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada a ironSource.
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Nota: Como red que rastrea todas las instalaciones, ironSource prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Para ello, selecciona Eventos atribuidos a cualquier partner para enviar todos los postbacks de instalación a ironSource.
+
+<div id="in-app-event-postbacks" />
 
 ### Postbacks de eventos in-app
 
@@ -122,6 +144,8 @@ Configura la asignación de eventos in-app con eventos de ironSource, enviados a
    1. En la esquina superior izquierda, debajo del nombre del partner, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
    2. Selecciona una aplicación diferente en la lista desplegable.
    3. Repite los <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#integration-tab">pasos de integración</Anchor> para la aplicación seleccionada.
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >
@@ -184,6 +208,8 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a ironSo
 
 Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 
+<div id="ad-network-permissions" />
+
 ### Permisos para red de publicidad
 
 * **Permitir la configuración de la integración**: permite que el partner configure la pestaña Integración (con excepción de postbacks de eventos in-app).
@@ -195,6 +221,8 @@ Utiliza estos selectores para otorgarle permisos a la red de publicidad para que
 * **Permitir el acceso a tu panel de control de Protect360**: solo para los datos propios de Protect360 del partner, y siempre que la característica esté habilitada para el anunciante.
 
 Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permisos para agencias
 

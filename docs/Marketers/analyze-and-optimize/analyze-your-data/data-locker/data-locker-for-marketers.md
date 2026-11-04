@@ -57,6 +57,8 @@ En Data Locker, selecciona tus aplicaciones, fuentes de medios, eventos y report
 
 </Accordion>
 
+<div id="set-data-locker-report-settings" />
+
 ## Configurar la configuración del reporte de Data Locker
 
 Para configurar Data Locker, sigue estos pasos para conectar tu servicio en la nube, definir la configuración de exportación y personalizar el contenido del reporte:
@@ -83,6 +85,8 @@ Puedes conectar tu Data Locker a uno o más proveedores de servicios en la nube.
 <Accordion title="2. Agrega una conexión a tu servicio en la nube">
 
 Después de configurar tu cuenta de servicio en la nube para trabajar con Data Locker (consulta "Configurar tu servicio en la nube" arriba), crea una conexión en Data Locker utilizando las credenciales de tu cuenta. Puedes crear hasta dos conexiones.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -190,6 +194,8 @@ Para crear una conexión para tu proveedor de nube, realiza los siguientes pasos
 
 6. Haz clic en **Guardar. Se muestra** la sección **Configuración de salida del reporte**.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Puedes [usar el registro de auditoría](#track-connection-changes-in-the-audit-log) para confirmar si se creó, actualizó o eliminó una conexión, y quién hizo el cambio.
@@ -210,6 +216,8 @@ Después de configurar la conexión con el servicio en la nube, puedes continuar
    * Snappy (solo disponible para archivos Parquet)
    * GZIP
 4. Selecciona el número máximo de filas que deseas en tu archivo: Ya sea 10k, 25k, 50, 100k, 200k o 500k. Más filas en el archivo significa menos archivos pero un tamaño de archivo más grande.
+
+   <div id="note-2" />
 
    > 📘 **Nota**
    >
@@ -335,9 +343,13 @@ Los campos heredados son aquellos que se incluyeron anteriormente en el esquema 
 1. Abre la pestaña de campos heredados.
 2. Desactivar: **Incluir campos antiguos en el reporte**.
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Si deseas incluir campos antiguos en el reporte pero no puedes porque la lista de campos antiguos está atenuada y bloqueada, contacta a tu Customer Success Manager.
+
+<div id="non-empty-legacy-fields" />
 
 #### Campos antiguos no vacíos
 
@@ -356,11 +368,15 @@ La mayoría de los campos antiguos están vacíos o `null`. Sin embargo, algunos
 
 Haz clic en **Guardar,** y la primera descarga de datos se escribirá en tu servicio en la nube en un plazo de 3 horas. Los calendarios de actualización de datos posteriores son específicos para cada reporte.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Todos los cambios en la configuración de Data Locker tardan hasta 3 horas en surtir efecto.
 
 </Accordion>
+
+<div id="set-user-permissions" />
 
 ## Permisos de usuario
 
@@ -369,11 +385,17 @@ Tanto los administradores como los miembros del equipo, con los permisos correct
 * Los administradores pueden acceder a la página del Data Locker, crear y gestionar todas las conexiones, añadir editores y asignar propietarios a las conexiones existentes.
 * Los miembros del equipo pueden acceder a la página del Data Locker, editar las conexiones existentes que poseen o crear nuevas conexiones. No pueden gestionar la propiedad (establecer el propietario y editores), incluso si son los propietarios de la cuenta.
 
+<div id="manage-data-locker-access-and-ownership-admins" />
+
 ### Administradores
+
+<div id="give-data-locker-access" />
 
 #### ¡**Importante**! Si no tienes una suscripción a Data Locker y accedes al análisis de cohortes o a los datos de SKAN, debes completar igualmente un procedimiento de servicio de almacenamiento en la nube propio del marketer.
 
 * Para proporcionar a un miembro del equipo permiso para acceder a Data Locker, asígnale un <Anchor target="_blank" href="/marketers/es/docs/user-management#gestionar-roles">rol</Anchor> con **Data Locker** configurado en '**Administrar**'.
+
+<div id="manage-ownership-and-editors" />
 
 #### Gestionar la propiedad y los editores
 
@@ -383,6 +405,8 @@ Para transferir la propiedad o añadir a un miembro del equipo como editor en un
 2. **Nota**:
 3. Cambia el propietario de la conexión o añade un editor.
 
+<div id="review-filters-after-changing-ownership" />
+
 #### Revisar los filtros después de cambiar la propiedad
 
 Si cambias el propietario de una conexión de Data Locker a un usuario con restricciones de acceso a los datos (por ejemplo, limitadas por aplicación, fuente de medios, agencia o país), los filtros existentes de [nivel global](#select-global-level-filters) o de [nivel de reporte](#7-select-the-reportlevel-filters) pueden restablecerse para ajustarse a los permisos del nuevo propietario.
@@ -391,11 +415,17 @@ Después de transferir la propiedad, revisa los filtros y confirma que la conexi
 
 <Anchor target="_blank" href="/marketers/es/docs/data-locker-cloud-service-setup#aws-storage">AWS</Anchor>: Configurado por ti Debe tener el prefijo af-.
 
+<div id="note-4" />
+
 > 📘 **Nota**
 >
 > En las conexiones de AF AWS, no hay opción de **Gestionar propiedad** incluso para Administradores, ya que solo los Administradores pueden editar, eliminar o crear nuevas conexiones de AF AWS. Esta precaución se toma para evitar la exposición de las credenciales del bucket.
 
+<div id="data-storage-architecture" />
+
 ## Arquitectura de almacenamiento de datos
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -458,6 +488,8 @@ Los archivos de datos dependen del tipo de segregación.
 
 <Accordion title="Opciones de almacenamiento">
 
+<div id="caution" />
+
 > ❗️ **¡Importante!**
 >
 > Si utilizas la opción de almacenamiento propia del marketer:
@@ -486,6 +518,8 @@ Los archivos de datos dependen del tipo de segregación.
 | Capacidad de almacenamiento | Gestionado por AppsFlyer | Gestionado por el marketer |
 | Control de acceso mediante puntos de conexión de VPC con políticas de bucket | No aplicable | [Opcional] En AWS, si implementas la seguridad de punto de conexión de VPC a nivel bucket, debes agregar a la lista los servidores de AppsFlyer. |
 
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
+
 #### **Aviso a los agentes de seguridad en el caso de almacenamiento controlado por el cliente**
 
 Ten en cuenta lo siguiente:
@@ -512,6 +546,8 @@ Al administrar tus conexiones, ten en cuenta lo siguiente:
 * Para ver los detalles de la conexión, duplicar una conexión o eliminar una conexión, haz clic en ⋮ (opciones).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 
@@ -573,6 +609,8 @@ Para más información, consulta: <Anchor target="_blank" href="/marketers/es/do
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## Recuperación de datos de AWS
 
 Utiliza tu herramienta de recuperación de datos de AWS preferida, AWS CLI, o una de las herramientas descritas en las secciones a continuación. ¡Atención! ¡Nota! Las instrucciones exactas son adecuadas para los buckets de propiedad de AppsFlyer. Adapta las instrucciones según sea necesario si la conexión es a tu bucket.
@@ -605,6 +643,8 @@ En los siguientes comandos, el valor de `{home-folder}` se puede encontrar
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### Enumeración de archivos y carpetas
 
@@ -694,6 +734,8 @@ Antes de comenzar:
    Ahora puedes acceder a los archivos de Data Locker.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

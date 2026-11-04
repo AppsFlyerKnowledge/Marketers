@@ -37,9 +37,13 @@ El SDK de AppsFlyer proporciona la funcionalidad de registro de eventos e instal
 
 Puedes registrar instalaciones, actualizaciones y sesiones (siguiendo los pasos obligatorios que se indican a continuación), y también registrar eventos in-app adicionales además de las instalaciones de la app (incluidas las compras in-app, los niveles de juego, etc.) para evaluar el ROI y los niveles de engagement de los usuarios.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > El SDK de AppsFlyer para Windows es compatible con todos los dispositivos de <Anchor target="_blank" href="https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide">Universal Windows Platform</Anchor> (UWP), incluidos teléfonos móviles con Windows, PC, HoloLens y Surface Hub.
+
+<div id="1-integration-steps" />
 
 ## 1. Pasos de integración
 
@@ -65,12 +69,16 @@ Si decides no usar el paquete NuGet, puedes integrar manualmente el SDK de AppsF
 
 [![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
 
+<div id="important-1" />
+
 > 🚧 **Importante:**
 >
 > AppsFlyer usa un paquete de Newtonsoft.json. Esta es una biblioteca estándar para analizar Json en Windows. Puedes añadir este paquete con NuGet en Visual Studio. Esto resuelve la excepción «File Not Found» en la DLL.
 >
 > * En Visual Studio, haz clic con el botón derecho en References, selecciona el paquete NuGet Newtonsoft.json y añádelo.
 > * Permite el acceso a Internet en el manifiesto de la aplicación o usa Visual Studio en la pestaña Capabilities.
+
+<div id="2-sdk-initialization--installation-event-minimum-requirement-for-attributing" />
 
 ## 2. Inicialización del SDK & evento de instalación (requisito mínimo para la atribución)
 
@@ -92,6 +100,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 ```
 
+<div id="recording-app-launchasynchronously" />
+
 ### Registro del inicio de la app de forma asíncrona
 
 Puedes registrar el inicio de la app de forma asíncrona. Esto es útil cuando la red no está disponible o no responde. Puedes gestionar estos casos en la función de callback que pasas al método `TrackAppLaunchAsync`.
@@ -108,6 +118,8 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 }
 ```
 
+<div id="3-in-app-event-recording-api-optional" />
+
 ## 3. API de registro de eventos in-app (opcional)
 
 Esta API permite a AppsFlyer registrar eventos posteriores a la instalación. Estos eventos los define el anunciante e incluyen un nombre de evento, además de valores de evento opcionales. Agrega el siguiente código para registrar eventos posteriores a la instalación:
@@ -120,6 +132,8 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 * *eventValues* es un diccionario de parámetros de evento que componen un evento. Puedes consultar una lista de parámetros recomendados <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">aquí</Anchor>.
 * Al contabilizar ingresos como parte de eventos in-app, utiliza el nombre de parámetro constante InAppEventParameterName.REVENUE («af\_revenue») para contabilizar los ingresos como parte de un evento in-app. Puede completarlo con cualquier valor numérico, positivo o negativo.
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > ```csharp
@@ -130,6 +144,8 @@ public void TrackEvent(string eventName, IDictionary<string, Object> eventValues
 >       eventValues.Add(AppsFlyerLib.AFInAppEventParameterName.CURRENCY, "USD");
 >       tracker.TrackEvent(AppsFlyerLib.AFInAppEventType.ADD_TO_CART, eventValues);
 > ```
+
+<div id="recording-events-asynchronously" />
 
 ### Registrar eventos de forma asíncrona
 
@@ -149,9 +165,13 @@ public void Callback(AppsFlyerLib.ServerStatusCode code)
 
 Para ver una lista completa de los eventos in-app enriquecidos de AppsFlyer, haz clic <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">aquí</Anchor>.
 
+<div id="4-advanced-integration" />
+
 ## 4. Integración avanzada
 
 Las siguientes API son opcionales y forman parte de la integración avanzada con el SDK de AppsFlyer.
+
+<div id="41-set-currency-code-optional" />
 
 ### 4.1 Establecer código de moneda (opcional)
 
@@ -165,6 +185,8 @@ Usa la siguiente API para configurar el código de moneda:
 tracker.currencyCode = "GBP";
 ```
 
+<div id="42-getappsflyeruid-optional" />
+
 ### 4.2 getAppsFlyeruid (opcional)
 
 Se crea un ID único de AppsFlyer para cada nueva instalación de una app.
@@ -175,6 +197,8 @@ Usa la siguiente API para obtener este ID:
 public string getAppsFlyerUID()
 ```
 
+<div id="43-customer-user-id-optional" />
+
 ### 4.3 ID de usuario del cliente (opcional)
 
 Configurar tu propio ID de cliente te permite establecer referencias cruzadas entre tu propio ID único, el ID de usuario de AppsFlyer y todos los demás ID de dispositivo. Este ID está disponible en los reportes CSV de AppsFlyer, junto con las API de postback, para establecer referencias cruzadas con tus ID internos.
@@ -184,6 +208,8 @@ Para configurar tu ID de usuario de cliente:
 ```csharp
 tracker.customerUserId = "YOUR_CUSTOMER_USER_ID";
 ```
+
+<div id="44-getconversiondataasync-optional" />
 
 ### 4.4 GetConversionDataAsync (opcional)
 
@@ -196,6 +222,8 @@ Task.Run(async () =>
    string conversionData = await tracker.GetConversionDataAsync();
 });
 ```
+
+<div id="45-c--cx-integration-example" />
 
 ### 4.5 Ejemplo de integración de C++ / CX
 

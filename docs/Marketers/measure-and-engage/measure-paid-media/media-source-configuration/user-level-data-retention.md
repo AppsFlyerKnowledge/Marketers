@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **En resumen:** Las políticas de retención y uso a nivel de usuario (raw data) están determinadas por AppsFlyer, las leyes pertinentes y las condiciones de uno de SRN ("**Partners**").
 
+<div id="caution" />
+
 > ❗️ **Importante**
 >
 > AppsFlyer proporciona las explicaciones de restricción de datos, en este artículo, solo con fines informativos.  *Nada de lo que se indica aquí es asesoramiento legal. Se proporciona para tu información y comodidad.*
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## Obligaciones de conservación y eliminación de datos
 
 AppsFlyer recibe datos a nivel de usuario de aplicaciones, partners y otras fuentes.
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### Disponibilidad de datos a nivel de usuario para los anunciantes
 
 Por lo general, los datos a nivel de usuario se ponen a disposición de los anunciantes a través de herramientas de generación de reportes de raw data si su paquete de suscripción incluye datos de raw data durante un período de acceso de 90 días (consultar <Anchor target="_blank" href="/marketers/es/docs/data-availability-windows">ventanas de disponibilidad de datos</Anchor>). En algunos casos, hay <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">Restricciones de raw data</Anchor>.
+
+<div id="data-retention" />
 
 ### Retención de datos
 
@@ -63,6 +71,8 @@ Ten en cuenta lo siguiente:
   * Política de uso compartido de datos de partner
   * La <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">privacidad avanzada agregada</Anchor> está activada.
 
+<div id="partner-data-retention-periods" />
+
 #### Periodos de conservación de los datos de partners
 
 | SRN/partner | ID de partner (PID) | Después de la instalación, elimina los datos después de [x] meses |
@@ -81,6 +91,8 @@ Ten en cuenta lo siguiente:
 | TikTok para empresas* | tiktokglobal\_int | 13 |
 | X Ads (anteriormente Twitter) | twitter\_int | 3 |
 | Walmart | walmart\_int | 6 |
+
+<div id="note" />
 
 > 📘 **Nota***
 >

@@ -29,6 +29,8 @@ x-zendesk:
 
 > **De un vistazo:** Los informes de datos sin procesar describen las instalaciones y los eventos in-app bloqueados por el motor Protect360, así como por las Reglas de Validación añadidas manualmente.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## Sobre los informes de datos sin procesar de Protect360
 
 Informes de datos sin procesar:
@@ -42,6 +44,8 @@ Informes de datos sin procesar:
 * Los tipos de informes y su disponibilidad para descarga, API y Data Locker (depósito S3) se describen en las secciones siguientes.
 * La retención de los informes históricos de datos sin procesar es de hasta 90 días, dependiendo de la herramienta de informes y la fuente de los datos sin procesar.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Debido a las restricciones de datos sin procesar relacionadas con la privacidad, los informes sin procesar pueden mostrar campos con valores vacíos. Un ejemplo de esto son los campos de colaboradores.
@@ -49,6 +53,8 @@ Informes de datos sin procesar:
 <div id="report-types" />
 
 <Accordion title="Tipos de informes">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Tipos de informes de datos sin procesar de Protect360
 
@@ -75,6 +81,8 @@ Informes de datos sin procesar:
   * Interfaz de usuario del panel: limitada a una fuente de medios durante un mes calendario.
   * API de extracción: contiene todas las fuentes de medios. (Limitación: Disponible solo para propietarios de aplicaciones.)
 
+<div id="using-post-attribution-reports" />
+
 #### **Uso de informes post-activos**
 
 * Seleccione cualquier combinación de rangos de fechas de instalación/IAE y de detección según sea necesario.
@@ -84,6 +92,8 @@ Informes de datos sin procesar:
   * Establezca el rango de fechas de instalación a 60 días antes del día actual.
   * Configure el rango de detección desde/hasta el día anterior al actual.  
     Esto significa que obtendrás la lista de fraudes detectados después de la atribución, ayer. Si no generaste el informe durante algunos días, ajusta el rango de fechas de detección y crea el informe.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -97,11 +107,15 @@ Informes de datos sin procesar:
 
 <Accordion title="Disponibilidad de datos sin procesar por tipo de herramienta">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### Disponibilidad de datos sin procesar de Protect360 por tipo de herramienta
 
 <table><thead><tr><th>Informe</th><th>Actualización de datos</th><th>API de extracción</th><th>Página de exportación de datos</th><th>Casillero de datos</th></tr></thead><tbody><tr><td>Instalaciones</td><td>En tiempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Eventos in-app bloqueados</td><td>En tiempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Clics</td><td>En tiempo real</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Postbacks de instalación bloqueados</td><td>En tiempo real</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Instalaciones posteriores a la atribución</td><td>Diariamente a las 10:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Eventos in-app posteriores a la atribución</td><td>Diariamente a las 10:00 UTC</td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr><tr><td colspan="5"><p>\* Limitaciones para los informes a través de Data Locker:</p><ul><li>No se admite la transparencia de la agencia. Esto significa que el tráfico gestionado por la agencia no contiene el nombre de la fuente de medios que envía la instalación.</li><li>El informe tiene un conjunto único de campos en comparación con otros informes de Data Locker. Esta lista no se puede modificar.</li><li>Los datos de retargeting no están disponibles en el informe de Instalaciones; solo en el informe de Instalaciones post-atribución. </li></ul></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## Obteniendo informes de datos sin procesar
 
@@ -141,6 +155,8 @@ Necesita un token Pull API. Obtenga el token de un <Anchor target="_blank" href=
 3. Complete los parámetros según sea necesario. La siguiente tabla enumera los parámetros.
 4. Extraiga el informe.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Parámetros del informe de datos sin procesar de la API de extracción
 
 | Parámetro | Descripción | Formato | Obligatorio |
@@ -168,11 +184,15 @@ Data Locker escribe datos sin procesar  en un depósito AWS S3.
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Estructura del informe de Protect360
 
 Los informes de Protect360 mantienen la misma estructura general que los campos de los informes de adquisición de usuarios.
 
 Además de los <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">campos habituales de informe de datos sin procesar</Anchor>, los informes de Protect360 también incorporan campos para motivos de redireccionamiento y bloqueo, de la siguiente manera:
+
+<div id="blocked-reasons" />
 
 ### Motivos de bloqueo
 
@@ -202,6 +222,8 @@ A nivel de instalación, identificamos suficiente información durante el moment
 
 Las siguientes tablas enumeran los posibles motivos de bloqueo a nivel de instalación:
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### Nivel de instalación: Motivos para el bloqueo de instalaciones falsas
 
 | Motivo del bloqueo | Submotivo de bloqueo | Descripción |
@@ -215,6 +237,8 @@ Las siguientes tablas enumeran los posibles motivos de bloqueo a nivel de instal
 | bots de validación | parámetros del dispositivo no válidos | Desajuste en las expectativas de campos específicos del dispositivo (definido por el cliente) |
 | bots de validación | reglas de validación | Reglas en las que el resultado son instalaciones bloqueadas basadas en una regla de validación definida manualmente |
 | Bots | capa\_ai | Los modelos de inteligencia artificial se emplean para analizar grandes volúmenes de datos, mejorando las capacidades de detección para identificar actividades fraudulentas en dispositivos e instalaciones. |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### anomalías en ctit, secuestro de instalación
 
@@ -240,6 +264,8 @@ Cuando se detecta un patrón de fraude, la fuente se coloca en una lista de excl
 
 Las siguientes tablas enumeran posibles motivos de bloqueo a nivel de clúster:
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### Nivel de clúster: Motivos para el bloqueo de instalaciones falsas
 
 | Motivo del bloqueo | Submotivo de bloqueo | Descripción |
@@ -248,6 +274,8 @@ Las siguientes tablas enumeran posibles motivos de bloqueo a nivel de clúster:
 | bots, lista negra de sitios | emuladores de dispositivos | Instalaciones generadas a gran escala por scripts automáticos funcionando en entornos virtuales |
 | lista negra de sitios | granjas de dispositivos | Altas tasas de dispositivos desconocidos (nuevos) |
 | anomalías en el comportamiento | anomalías en el comportamiento | Comportamiento sospechoso en la aplicación comparado con el patrón habitual de los usuarios |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### Nivel de clúster: Motivos por los que se bloquea el secuestro de atribución
 
@@ -272,6 +300,8 @@ Los eventos dentro de la aplicación pueden bloquearse por las siguientes razone
 
 La siguiente tabla enumera las posibles razones de bloqueo a nivel de aplicación.
 
+<div id="in-app-level-block-reasons" />
+
 #### Razones de bloqueo a nivel de aplicación
 
 | Motivo del bloqueo | Submotivo de bloqueo | Descripción |
@@ -282,6 +312,8 @@ La siguiente tabla enumera las posibles razones de bloqueo a nivel de aplicació
 | validación\_inapps | reglas de validación | Basado en una regla de validación definida manualmente |
 
 </Accordion>
+
+<div id="retargeting" />
 
 ### Redireccionamiento
 
@@ -295,6 +327,8 @@ Los datos sin procesar de Protect360 incluyen instalaciones y sesiones fraudulen
 Los datos sin procesar de retargeting de Protect360 están disponibles para bloqueos en tiempo real y fraudes identificados después de la atribución de la siguiente manera:
 
 <table><thead><tr><th>Informe </th><th>Exportar datos</th><th>API de extracción</th><th>Casillero de datos</th></tr></thead><tbody><tr><td>Instalaciones</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalaciones posteriores a la atribución</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Datos de reenganche no disponibles</span><br/> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### Corrección de atribución de instalaciones secuestradas
 

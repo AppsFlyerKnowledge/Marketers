@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## Dominios de marca
 
 * Los dominios de marca se utilizan para personalizar los enlaces de atribución con tu marca y dominio. Por ejemplo, como se muestra en la figura anterior:
@@ -39,6 +41,8 @@ x-zendesk:
   * Permite que los correos electrónicos eviten ser marcados como spam debido a que el enlace no coincide con el correo electrónico del remitente.
   * Los dominios de marca están incluidos en los <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing">planes de suscripción</Anchor> de pago de AppsFlyer.
 
+<div id="principles-of-implementation" />
+
 ### Principios de implementación
 
 Los Dominios de Marca se implementan asociando un dominio completo definido en tu Sistema de Nombres de Dominio (DNS) con un subdominio de OneLink (el destino CNAME de AppsFlyer). Esto se logra mediante la configuración estándar en tu DNS y la de un dominio de marca en AppsFlyer. Además, tendrás que realizar algunos cambios menores en tu aplicación para que sea compatible con los dominios de marca.
@@ -46,6 +50,8 @@ Los Dominios de Marca se implementan asociando un dominio completo definido en t
 Necesitarás la ayuda del administrador de DNS, normalmente un miembro de tu equipo de TI o de tu proveedor de hosting DNS, y del desarrollador de la aplicación.
 
 Se pueden asociar varios dominios completos con un solo subdominio de OneLink. Esto significa que puedes tener varias marcas utilizando el mismo subdominio OneLink.
+
+<div id="setting-up-branded-domains" />
 
 ### Configuración de dominios de marca
 
@@ -57,6 +63,8 @@ Completa la lista de acciones para configurar un dominio de marca.
 | 2 | desarrollador | [Configurar dominios de marca en la aplicación](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | Realiza cambios menores en el código de la aplicación. |
 | 3 | marketer | [Uso y prueba de dominios de marca](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | Según sea necesario | marketer | [Editar y eliminar dominios de marca](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### Procedimientos
 
@@ -111,6 +119,8 @@ Configurar un Dominio de Marca consiste en asociar un dominio completo en su DNS
    > * Un nuevo dominio de marca puede tardar hasta 24 horas en empezar a funcionar.
 
 
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
 #### Renovar el plazo de 7 días para asignar el registro CNAME
 
 El nuevo dominio de marca no funciona si el registro CNAME de tu dominio completo no se asigna a AppsFlyer en los 7 días siguientes a la creación de tu dominio de marca.
@@ -132,6 +142,8 @@ El nuevo dominio de marca no funciona si el registro CNAME de tu dominio complet
 > **Nota:**
 >
 > Puedes eliminar el dominio de marca haciendo clic en el icono Eliminar (<Image alt="delete-subdomain.png" src="https://files.readme.io/0029cc63db331d998182d46a63f9da9856de9b2351abd5b2d87fb2b47ae853c2-30192959748241.png" width="16px" />) si decides no renovar el periodo de 7 días. Solo se pueden eliminar los dominios de marca que aún no están asignados a AppsFlyer.
+
+<div id="custom-ssl-certificate-optional" />
 
 #### Certificado SSL personalizado (opcional)
 
@@ -304,6 +316,8 @@ Antes de utilizar y probar los Dominios de Marca, completa los pasos del [workfl
 
 <Accordion title="Editar, verificar y eliminar dominios de marca">
 
+<div id="edit-a-branded-domain-mapping" />
+
 #### **Editar una asignación de dominio de marca**
 
 Puedes cambiar la asignación de un dominio completo existente a un subdominio OneLink diferente. No es necesario establecer un CNAME.
@@ -321,6 +335,8 @@ Puedes cambiar la asignación de un dominio completo existente a un subdominio O
 >
 > La modificación de los dominios de marca de las campañas activas puede alterar o deshabilitar la funcionalidad del enlace.
 
+<div id="verify-a-branded-domain-mapping" />
+
 #### **Verificar la asignación de un dominio de marca**
 
 Después de cambiar el subdominio OneLink mapeado a tu dominio de marca verifica que el dominio de marca está mapeado correctamente:
@@ -336,15 +352,21 @@ Después de cambiar el subdominio OneLink mapeado a tu dominio de marca verifica
 > Si la verificación falla porque el registro CNAME aún no se ha asignado, dispones de un plazo de hasta 7 días para hacerlo, que finalizará en la fecha especificada en el cuadro de diálogo de error de verificación.
 > Si el registro CNAME no está asignado en la fecha especificada, deberás renovar el periodo de 7 días.
 
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
 #### **El registro CNAME del dominio ya no apunta a AppsFlyer**
 
 Cambiar tu registro CNAME para que ya no apunte a AppsFlyer resultará en la eliminación del dominio de marca de AppsFlyer.
+
+<div id="delete-a-branded-domain-mapping" />
 
 #### **Eliminar una asignación de dominio de marca**
 
 Para eliminar un dominio de marca, ponte en contacto con tu CSM de AppsFlyer o hello@appsflyer.com.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Solución de problemas, rasgos y limitaciones
 

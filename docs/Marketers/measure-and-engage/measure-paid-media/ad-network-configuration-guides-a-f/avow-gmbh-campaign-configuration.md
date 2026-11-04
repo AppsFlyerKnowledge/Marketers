@@ -25,6 +25,8 @@ x-zendesk:
 
 ![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
 
+<div id="activate-partner" />
+
 ## Activar partner
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -40,9 +42,13 @@ x-zendesk:
     **Nota:** El botón debe estar on <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con el partner.
 5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Para ver una descripción detallada del Encabezado de la ventana de configuración de partner, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
+<div id="setting-up-avow-gmbh" />
+
 ## Configuración de Avow GmbH
 
 La integración con Avow GmbH admite la atribución click-through y view-through. La ventana de configuración incluye las siguientes pestañas: Integración, Enlace de atribución, Costo, Ingresos por publicidad y Permisos. Para Avow GmbH, las pestañas disponibles son Integración, Enlace de atribución y Permisos.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -55,9 +61,13 @@ La integración con Avow GmbH admite la atribución click-through y view-through
 
 La pestaña **Integración** incluye una serie de secciones, como se describe a continuación.
 
+<div id="activate-partner-1" />
+
 #### Activar partner
 
 Para configurar la integración, primero debes <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#activar-socio">activar</Anchor> el selector **Activar partner**. Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activación y desactivación de integraciones de partners</Anchor>.
+
+<div id="advanced-privacy" />
 
 #### Privacidad Avanzada
 
@@ -69,25 +79,35 @@ Solo para aplicaciones de iOS: Tu control sobre los datos compartidos con el par
 | Los postbacks se envían de acuerdo con la <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks">plantilla de Privacidad avanzada</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Los datos agregados y anónimos</Anchor> se comparten con el partner, lo que significa que no se comparten datos a nivel de usuario (ID de dispositivo). |  |
 
+<div id="general-settings" />
+
 #### Configuración general
 
 **Token**
 
 Agrega el token de verificación proporcionado por el Especialista AVOW (AM/BDM).
 
+<div id="install-attribution" />
+
 #### Atribución de instalación.
 
 Para atribuir instalaciones de visualización a través de Avow GmbH, activa **Instalar atribución view-through**. El control deslizante de view-through está disponible en la pestaña del enlace de atribución (descrito a continuación).
 
+<div id="default-postbacks" />
+
 #### Postbacks predeterminados
 
 Los postbacks para instalaciones e instalaciones rechazadas se envían únicamente a este partner.
+
+<div id="in-app-event-settings" />
 
 #### Configuración de eventos in-app
 
 **Token**
 
 Agrega el token de verificación proporcionado por el Especialista AVOW (AM/BDM).
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -110,6 +130,8 @@ Configura el mapeo de eventos in-app+ con eventos de Avow GmbH, enviados a trav�
    1. En la esquina superior izquierda, debajo del nombre del socio, haz clic en el nombre de la aplicación para abrir la lista de aplicaciones.
    2. Selecciona una aplicación diferente en la lista desplegable.
    3. Repite los <Anchor target="_blank" href="/marketers/es/docs/amazon-ads-campaign-configuration#integration-tab">pasos de integración</Anchor> para la aplicación seleccionada.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -146,6 +168,8 @@ Avow GmbH no dispone de ingresos por publicidad.
 <Accordion title="Pestaña de permisos">
 
 Selecciona qué permisos otorgar a Avow GmbH para acceder a tus datos y realizar diversas acciones.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >

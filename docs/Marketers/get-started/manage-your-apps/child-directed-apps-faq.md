@@ -25,9 +25,13 @@ x-zendesk:
 ---
 **En resumen:** Obtén respuestas a preguntas frecuentes sobre apps para niños.
 
+<div id="overview" />
+
 ## Visión general
 
 Existen muchas políticas, leyes y regulaciones sobre aplicaciones para niños para proteger la privacidad de ellos. Los principales son [COPPA](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) y [GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2029-1-1). En los últimos años, plataformas como iOS y Android han implementado políticas para mejorar la privacidad de los niños. Al crear una app, una de las primeras cosas que hay que hacer es determinar si está dirigida solo a niños o a un público mixto (tanto niños como adultos). Aprende de <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">esta guía</Anchor> cómo implementar una solución de atribución compatible para aplicaciones dirigidas a niños.
+
+<div id="adding-a-child-directed-app" />
 
 ## Agregando una aplicación para niños
 
@@ -75,6 +79,8 @@ Una vez confirmado que una aplicación es para niños, hay dos formas de ver la 
 
 </Accordion>
 
+<div id="implementing-appsflyer-compliance-tools" />
+
 ## Implementando las herramientas de cumplimiento de AppsFlyer
 
 <div id="how-do-i-know-which-tool-to-use" />
@@ -82,6 +88,8 @@ Una vez confirmado que una aplicación es para niños, hay dos formas de ver la 
 <Accordion title="¿Cómo sé qué herramienta utilizar?">
 
 Cuando tu app está pensada para niños o un público mixto (niños y adultos), puedes usar cualquiera de las herramientas recomendadas de <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">esta guía</Anchor> que se alineen con los requisitos legales. Descubre más recursos del SDK en la parte inferior de esta página. 
+
+<div id="examples-of-compliance-tools-and-their-use" />
 
 #### Ejemplos de herramientas de cumplimiento de normas y su uso
 
@@ -149,6 +157,8 @@ A excepción de los postbacks, las redes publicitarias y las agencias tienen <An
 El SDK registra los eventos de tu app, como instalaciones, re-engagement y eventos in-app. Sin el SDK, no hay atribución. Puedes <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#privacidad-del-usuario">preservar la privacidad del usuario con el SDK</Anchor> y mostrar solo datos agregados.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

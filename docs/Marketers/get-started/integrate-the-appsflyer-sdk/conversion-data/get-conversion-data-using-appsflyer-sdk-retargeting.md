@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Descubre cómo las reatribuciones y los re-engagements se reflejan en los datos de conversión de los viajes de los usuarios SRN y no SRN.
 
+<div id="retargeting-conversion" />
+
 ## Conversión de retargeting
 
 El retargeting incluye dos tipos de conversiones, reatribución o re-engagement.
@@ -29,6 +31,8 @@ El retargeting incluye dos tipos de conversiones, reatribución o re-engagement.
 > 👍 **Tip**
 >
 > Los datos de conversión para retargeting no siempre dan una indicación clara del tipo de conversión. Ver [fuentes alternativas de datos de conversión](#fuentes-de-datos-de-conversión-alternativas).
+
+<div id="re-attribution-with-srns" />
 
 ## Reatribución con SRNs
 
@@ -40,11 +44,15 @@ Lo que esto significa es que no hay forma de determinar, a nivel de SDK, si una 
 >
 > Establecer el nombre de la campaña de tal manera que indique el retargeting **no es un método infalible**. Ver [ejemplos para saber más](#ejemplos-de-adquisición-y-reatribución-de-usuarios-mixtos).
 
+<div id="re-attribution-with-regular-ad-networks" />
+
 ## Reatribución con ad networks regulares
 
 La atribución a ad networks se basa en enlaces de atribución. Ya sean enlaces de atribución regulares o de OneLink, con el retargeting, el enlace de atribución siempre tiene el parámetro `is_retargeting=true` establecido.
 
 <Accordion title="Campaña de retargeting con Criteo">
+
+<div id="attribution-link" />
 
 #### Enlace de atribución
 
@@ -53,6 +61,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
   c=campaign_name&is_retargeting=true&redirect=false&idfa=68**********************************
   &af_reengagement_window=30d
 ```
+
+<div id="conversion-data-payload" />
 
 #### Payload de los datos de conversión
 
@@ -94,6 +104,8 @@ https://app.appsflyer.com/id1234567895?pid=criteo_int&af_click_lookback=30d&
 
 </Accordion>
 
+<div id="re-attribution-with-deferred-deep-linking" />
+
 ## Reatribución con deferred deep linking
 
 Muchas veces, quieres realizar deep linking a los usuarios reatribuidos que, por definición, no tienen la aplicación instalada. Por ejemplo, si estableces una campaña que tiene como objetivo traer de vuelta a los usuarios que desinstalaron la aplicación. La campaña promueve un producto o servicio y quieres servir a los usuarios contenido relacionado con el producto o servicio que anuncias.
@@ -103,6 +115,8 @@ Esto se conoce como deferred deep linking. La carga útil de los datos de conver
 <Accordion title="Deferred deep linking con SRNs">
 
 Para implementar Deferred deep linking con SRN, se debe aplicar una lógica adicional a las campañas de SRN. Usa los datos de la respuesta de `onConversionSuccess`, como campaign, adset y adgroup, para redirigir programáticamente a tus usuarios.
+
+<div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
 #### Datos de conversión para deferred deep linking con Meta Ads
 
@@ -188,6 +202,8 @@ Puedes usar los datos de la respuesta de getConversionData, como campaign, adset
 
 Hay tres formas de enlazar a los usuarios:
 
+<div id="uri-schemes" />
+
 #### Esquemas URI
 
 Al usar esquemas URI, tanto para los enlaces de atribución como para OneLink, el enlace de atribución y el payload son los siguientes:
@@ -244,6 +260,8 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - cuando este parámetro aparece y está establecido en true, busca los campos `scheme` y `host`
 * `scheme` y `host` - estos campos provienen del parámetro `af_dp` en el enlace de atribución e indican el esquema y la actividad a la que se debe dirigir al usuario mediante deep linking
 
+<div id="ios-universal-links-and-android-app-links" />
+
 #### Universal Links de iOS y App Links de Android
 
 Estas son las otras dos de las tres formas de realizar deep linking.
@@ -295,13 +313,19 @@ Al usar Universal Links o App Links, OneLink y el payload son los siguientes:
 
 </Accordion>
 
+<div id="re-engagement-with-srns" />
+
 ## Re-engagement con SRN
 
 Al igual que con las campañas de reatribución, cuando se vuelve a captar a un usuario a través de una SRN, los datos de conversión no indican que se trata de una campaña de re-engagement.
 
+<div id="re-engagement-with-regular-ad-networks" />
+
 ## Re-engagement con ad networks regulares
 
 Aquí también, la carga útil de los datos de conversión no indica que el usuario proviene de una campaña de re-engagement. Para superar esta limitación, puedes establecer el nombre de la campaña para indicar un re-engagement.
+
+<div id="re-engagement-with-deep-linking" />
 
 ## Re-engagement con deep linking
 
@@ -349,10 +373,14 @@ Otra razón para utilizar la versión corta de OneLink es la estructura de los d
 
 </Accordion>
 
+<div id="alternative-conversion-data-sources" />
+
 ## Fuentes de datos de conversión alternativas
 
 * La Push API ofrece un payload de conversión detallado que indica una reatribución o un re-engagement. Los payloads de Push API incluyen un campo llamado `re_targeting_conversion_type`. Este campo indica el tipo de conversión, ya sea reatribución o re-engagement. Para más información, consulta nuestra <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">guía de Push API</Anchor>.
 * Los reportes de raw data también contienen indicadores del tipo de conversión. En el reporte de raw data de conversiones de retargeting, hay una columna llamada ***Nombre del evento***. El valor en esta columna es ***re-engagemen*t** o ***reatribución***, según el tipo de conversión.
+
+<div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 
 ## Ejemplos de adquisición y reatribución de usuarios mixtos
 

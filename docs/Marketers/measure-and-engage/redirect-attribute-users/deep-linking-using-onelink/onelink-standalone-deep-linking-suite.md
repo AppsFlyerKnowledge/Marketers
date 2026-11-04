@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **De un vistazo:** la Standalone Deep Linking Suite de OneLink te ofrece Deep Linking y redirección para recorridos en medios propios (de correo electrónico a app, de web a app, de QR a app, de redes sociales a app, referencias, SMS/texto, etc.), sin necesidad de un paquete de atribución de medios pagados.
 
+<div id="about-the-onelink-standalone-deep-linking-suite" />
+
 ## Acerca de la Standalone Deep Linking Suite de OneLink
 
 La Standalone Deep Linking Suite está diseñada para equipos que necesitan **Deep Linking, redirección y atribución fiables y escalables para canales propios**, sin integraciones que impliquen canales de medios pagados ni postbacks de Partners.
@@ -30,6 +32,8 @@ Está disponible en tres planes de suscripción:
 * Estándar
 * Advanced
 * Premium
+
+<div id="whats-included" />
 
 ### Lo que incluye
 
@@ -41,7 +45,11 @@ Todos los planes de la Standalone Deep Linking Suite admiten casos de uso princi
 
 Los planes se diferencian principalmente por la escala, las capacidades de gestión de enlaces y el acceso a funciones avanzadas como dominios de marca, creación masiva de enlaces, Smart Banners, la API de OneLink, integración con ESP y Data Locker.
 
+<div id="standalone-deep-linking-suite-plans-comparison" />
+
 ## Comparación de planes de la Standalone Deep Linking Suite
+
+<div id="key-differences" />
 
 ### Diferencias clave
 
@@ -50,6 +58,8 @@ Los planes se diferencian principalmente por la escala, las capacidades de gesti
 | **Estándar** | Primeros pasos con Deep Linking de medios propios | Incluye funcionalidades principales de deep linking y deferred deep linking para recorridos de medios propios, así como Smart Script y User Invites. |
 | **Advanced** | Escalar las operaciones de enlaces entre equipos | Incluye todo lo de **Standard**, además de creación masiva de enlaces, dominios de marca, Smart Banners, la API de OneLink (hasta 100K solicitudes al mes) y exportación de raw data desde la interfaz de usuario. |
 | **Premium** | Ejecutar programas avanzados de Deep Linking de medios propios | Incluye todo lo de **Advanced**, además de límites más altos en la API de OneLink (hasta 7,5M solicitudes al mes), integración con ESP y Data Locker. |
+
+<div id="feature-comparison" />
 
 ### Comparación de funciones
 
@@ -65,6 +75,8 @@ Los planes se diferencian principalmente por la escala, las capacidades de gesti
 | Casillero de datos | . | . | ✓ |
 | Exportación de raw data desde la interfaz de usuario | . | ✓ | ✓ |
 | Gestor de Éxito de Clientes | . | ✓ | ✓ |
+
+<div id="notes" />
 
 > 📘 **Notas**
 >

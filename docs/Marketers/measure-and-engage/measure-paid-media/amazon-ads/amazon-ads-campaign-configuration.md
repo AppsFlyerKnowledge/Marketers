@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="activate-partner" />
+
 ## Activar socio
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -37,6 +39,8 @@ x-zendesk:
    **Nota:** El conmutador **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
 5. Completa la configuración utilizando las pestañas pertinentes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
+<div id="complete-the-setup-in-amazon-ads" />
+
 ## Busque la nueva integración del socio y selecciónela.
 
 Actualmente, esta integración está abierta a un grupo beta cerrado.
@@ -44,9 +48,13 @@ Actualmente, esta integración está abierta a un grupo beta cerrado.
 1. Los enlaces de atribución no son relevantes para Amazon Ads. La atribución se realiza combinando los datos de interacción de Amazon Ads con los datos de AppsFlyer, usando las ventanas de retroceso de clics y vistas configuradas en la [pestaña Integración](/docs/amazon-ads-campaign-configuration#integration-tab).
 2. Cuando crees campañas en Amazon Ads, asegúrate de asociar las conversiones relevantes a la campaña. Consulta <Anchor target="_blank" href="https://advertising.amazon.com/help/GMQBB4PRFK8C33AE">Asignar una definición de conversión a una campaña</Anchor> en la documentación de Amazon Ads.
 
+<div id="setting-up-amazon-ads" />
+
 ## Configuración de Amazon Ads
 
 La integración con Amazon Ads admite la atribución de clics e impresiones. La ventana de configuración incluye las siguientes pestañas: Integración, enlace de atribución, coste, ingresos por publicidad y permisos. Las pestañas disponibles para Amazon Ads son Integración y Permisos.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -58,9 +66,13 @@ La integración con Amazon Ads admite la atribución de clics e impresiones. La 
 
 La pestaña **Integración** incluye varias secciones, como se describe a continuación.
 
+<div id="activate-partner-1" />
+
 #### Activar socio
 
 Para configurar la integración, primero debes [activar](/docs/amazon-ads-campaign-configuration#activar-socio) el conmutador **Activar socio**. Obtenga más información sobre cómo <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">activar y desactivar integraciones de socios</Anchor>.
+
+<div id="general-settings" />
 
 #### Configuración general
 
@@ -83,6 +95,8 @@ Esta es una clave única de Amazon para el anunciante, generada por Amazon. Se r
 * **Para** <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution#un-solo-panel-de-control-vs-un-panel-de-control-por-tienda">**aplicaciones de panel unificado**</Anchor> (paneles que combinan datos de Google Play y Amazon Store para la misma aplicación de AppsFlyer): Introduzca el nombre del paquete de Android como el ID del paquete.  
   **Nota: <Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">Asegúrese de que la aplicación esté</Anchor> <Anchor target="_blank" href="https://advertising.amazon.com/help/GF97FJUFXBDM32P4">registrada</Anchor> como una aplicación de Android en la cuenta de Amazon Ads.**
 
+<div id="install-attribution" />
+
 #### Atribución de instalación
 
 Configure ventanas de atribución por clic y visualización para las instalaciones (primeros lanzamientos). Recuerde que solo las instalaciones dentro de la ventana retrospectiva son atribuidas a Amazon Ads.
@@ -94,6 +108,8 @@ Configure ventanas de atribución por clic y visualización para las instalacion
 2. [Opcional] Active **la atribución de visualización de instalación** y configure la **ventana de atribución de visualización de instalación** a 1-24 horas.   
    **Nota:** Amazon Ads recomienda configurar la ventana retrospectiva de visualización en 14 días para alinearse con su ventana de atribución y evitar discrepancias.
 
+<div id="re-engagement-attribution" />
+
 #### Atribución de reengagement
 
 Active el **alternador de atribución de reengagement** y configure las diferentes ventanas de atribución para asignar los reengagements de sus usuarios existentes que vieron, hicieron clic ***o interactuaron*** con su anuncio. Recuerde que solo los reengagements dentro de la ventana retrospectiva pueden ser atribuidos a Amazon Ads.
@@ -104,9 +120,13 @@ Active el **alternador de atribución de reengagement** y configure las diferent
    * Establezca la **ventana retrospectiva de visualización de reengagement** entre 1-23 horas o 1-14 días.
 3. Configure la **ventana de reengagement** a 1-23 horas, 1-90 días o **duración de por vida**.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignorar usuarios activos para retargeting
 
 Establece un período de tiempo para <Anchor target="_blank" href="/marketers/es/docs/set-retargeting-inactivity-window#periodo-de-inactividad">ignorar las re-engagements y reatribuciones</Anchor> de los usuarios que han iniciado tu aplicación. Esto significa que su actividad durante este período no se registra en AppsFlyer.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -115,6 +135,8 @@ Establece un período de tiempo para <Anchor target="_blank" href="/marketers/es
 1. Activa **Ignorar usuarios activos para retargeting**.
 2. Establece la **ventana de inactividad** entre 1 y 30 días.  
    **Nota:** Amazon Ads recomienda fijar la ventana de inactividad en 7 días para alinearse con ellos y evitar discrepancias.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -131,6 +153,8 @@ Configura la correspondencia de eventos in-app con eventos de Amazon Ads, enviad
 | **Asignado al evento del partner** | El nombre o ID único de cada evento, definido por el partner. Selecciona de la lista de eventos predefinidos del partner, el que corresponde al evento de tu app (evento AppsFlyer).<br /><br />**Notas:**<ul><li>**Nota:** Puedes seleccionar OTROS para eventos que no correspondan directamente con el evento de tu app.</li><li>Cuando la medición de re-engagement esté habilitada, te recomendamos no asignar el evento `af_app_opened` en absoluto, o asignarlo solo a `OTHER`. Esto evitará posibles duplicaciones al enviar este evento.</li></ul> |
 | **para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: Envía postbacks solo cuando este evento se atribuye a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks para eventos atribuidos a cualquier partner, así como eventos orgánicos.</li></ul> |
 | **incluyendo** | <ul><li>**Sin datos (por defecto)**: Envía solo el evento en sí sin ningún valor de evento.</li><li>**Valores e ingresos**: Envía todos los parámetros del evento, **incluido** el valor de ingresos (si está presente en el evento).</li><li>**Valores sin ingresos**: Envía todos los parámetros **excepto** el valor de ingresos.</li></ul> |
+
+   <div id="note-2" />
 
    > 📘 **Nota:**
    >
@@ -175,6 +199,8 @@ Los ingresos por publicidad no están disponibles para Amazon Ads.
 
 Selecciona qué permisos otorgar a Amazon Ads para acceder a tus datos y realizar diversas acciones.
 
+<div id="note-3" />
+
 > 📘 **Nota:**
 >
 > * Cuando la integración esté <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">desactivada</Anchor> mientras el interruptor de Permisos aún está activado, los permisos permanecen concedidos.
@@ -182,10 +208,14 @@ Selecciona qué permisos otorgar a Amazon Ads para acceder a tus datos y realiza
 
 </Accordion>
 
+<div id="see-also" />
+
 > 📄 **Véase también**
 >
 > * <Anchor target="_blank" href="/marketers/es/docs/setting-up-amazon-fire-tv-ad-attribution">Configuración de atribución de anuncios de Amazon Fire TV</Anchor>
 > * <Anchor target="_blank" href="/marketers/es/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer">Discrepancias de atribución entre AppsFlyer y Amazon Ads</Anchor>
+
+<div id="deferred-deep-linking" />
 
 ## Enlaces profundos diferidos
 
@@ -194,9 +224,13 @@ Selecciona qué permisos otorgar a Amazon Ads para acceder a tus datos y realiza
   * Esta integración no es compatible con agencias.
   * Aunque la API <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_work_flow#implement-unified-deep-linking-udl">UDL (enlace profundo unificado)</Anchor> es el método predeterminado para enlaces profundos diferidos con AppsFlyer, esta API no es aplicable cuando la instalación se atribuye a una SRN, como en el caso de Amazon Ads.
 
+<div id="raw-data-restrictions" />
+
 ## Restricciones de datos en bruto
 
 Los datos en bruto de Amazon Ads están <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">restringidos en la plataforma AppsFlyer</Anchor>. Por lo tanto, la fuente de medios se informa como “restringida” y los detalles de la campaña se muestran como nulos. Del mismo modo que con cualquier SRN, los clics y las impresiones de Amazon Ads no se incluyen en los informes de datos en bruto.
+
+<div id="ctv-to-mobile-attribution" />
 
 ## Atribución de CTV a móvil
 
@@ -204,15 +238,21 @@ Amazon puede atribuir instalaciones de aplicaciones móviles a campañas de CTV 
 
 **Nota:** No hay **ningún indicador de informes** que muestre explícitamente la campaña como CTV. Para mejorar la visibilidad y la medición, te recomendamos incluir `CTV` en el nombre de la campaña cuando corresponda.
 
+<div id="support-amazon-eu-consent-policy" />
+
 ## Soporte para la política de consentimiento de Amazon en la UE
 
 Amazon Ads está actualizando su política de consentimiento de los usuarios de la UE en preparación para la aplicación de la <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">Ley de Mercados Digitales (DMA)</Anchor>. Como Partner de atribución de apps de Amazon, AppsFlyer se está adaptando a estos cambios de política para ayudar a los anunciantes a sacar el máximo partido de sus anuncios en Amazon. La política actualizada entrará en vigor el 30 de junio de 2026.
+
+<div id="note-4" />
 
 > 📘 **Nota**
 >
 > La política actualizada de consentimiento de la UE se aplica solo a los datos (instalaciones, re-engagements y eventos in-app) de usuarios de la UE, el Reino Unido o Suiza (CH).
 
 Para cumplirla, envía la información de consentimiento DMA de AppsFlyer usando el mismo método que se utiliza para el <Anchor target="_blank" href="/marketers/es/docs/support-google-eu-consent-policy">consentimiento DMA de Google</Anchor>.
+
+<div id="dma-consent-methods" />
 
 ### Métodos de consentimiento DMA
 
@@ -223,14 +263,20 @@ Actualmente, AppsFlyer admite dos métodos para compartir el consentimiento DMA:
 | **Manual** | El único campo que requiere Amazon es `ad_user_data_enabled`. |
 | <Anchor target="_blank" href="https://iabeurope.eu/transparency-consent-framework/">**TCF**</Anchor> **(Marco de transparencia y consentimiento)** | Si usas una plataforma de gestión del consentimiento (CMP), asegúrate de que el ID del proveedor de Amazon Ads (**793**) esté incluido en la lista de proveedores permitidos. |
 
+<div id="note-5" />
+
 > 📘 **Nota**
 >
 > Amazon también admite señales de consentimiento a través de la <Anchor target="_blank" href="https://iabtechlab.com/gpp/">Global Privacy Platform (GPP)</Anchor>, pero AppsFlyer no admite actualmente este método.
+
+<div id="see-also-1" />
 
 > 📄 **Véase también**
 >
 > * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/send-consent-for-dma-compliance">Envía el consentimiento DMA a través del SDK de AppsFlyer</Anchor>
 > * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview">Envía el consentimiento DMA a través de S2S de AppsFlyer</Anchor> (busca `consent_data`)
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** vista del dashboard de las tasas de adopción del SDK y del sistema operativo (iOS, Android), así como de las métricas de consentimiento de ATT en iOS.
 
+<div id="version-adoption-and-att-consent-dashboard" />
+
 ## Dashboard de adopción de versiones y consentimiento de ATT
 
 Los datos del dashboard se derivan del evento af\_open (sesión) y no están relacionados con los eventos de instalación. El dashboard tiene las siguientes secciones principales: 
@@ -70,6 +72,8 @@ El <Anchor target="_blank" href="/marketers/es/docs/att-implications-ios-14-and-
 * Las métricas del gráfico se calculan mediante eventos únicos de apertura de la aplicación por parte de usuarios en una fecha determinada. Es decir, si un usuario no abrió la aplicación en una fecha determinada, ese usuario no se contabiliza en las métricas de esa fecha.
 * iOS y ATT metrics solo incluyen los <Anchor target="_blank" href="/marketers/es/docs/att-implications-ios-14-and-deprecation-of-lat#valores-att-definidos-por-apple">valores de ATT definidos por Apple</Anchor>; no los valores adicionales definidos por AppsFlyer.
 * Las métricas de la tasa de consentimiento se calculan con la fórmula: Autorizado / (Autorizado + Denegado) x 100
+
+<div id="att-and-ios-adoption-metrics-for-ios-apps" />
 
 #### Métricas de ATT y adopción de iOS para aplicaciones iOS
 

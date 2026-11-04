@@ -37,6 +37,8 @@ x-zendesk:
 
 [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
 
+<div id="what-is-attribution" />
+
 ## ¿Qué es la atribución?
 
 La **atribución** consiste en determinar qué ha motivado a un usuario a instalar una aplicación o a realizar acciones posteriores, como el reengagement o la reatribución. El resultado de la atribución puede ser:
@@ -45,6 +47,8 @@ La **atribución** consiste en determinar qué ha motivado a un usuario a instal
 * **Orgánico**: El usuario no interactuó con una fuente de medios. ¡Nota importante! Para simplificar, a menudo hablamos de un usuario *atribuido orgánicamente*. Sabemos que esto no es totalmente exacto, ya que los usuarios que instalan orgánicamente no están atribuidos.
 
 La atribución es fundamental para optimizar la adquisición de usuarios, las estrategias de reengagement y sus resultados.
+
+<div id="what-is-an-app-install" />
 
 ## ¿Qué es una instalación de la aplicación?
 
@@ -61,11 +65,15 @@ En AppsFlyer, un evento atribuible ocurre cuando pasa cualquiera de lo siguiente
   * **Reengagement**
   * **Re-atribución**
 
+<div id="attribution-methods" />
+
 ## Métodos de atribución
 
 AppsFlyer utiliza varios métodos de atribución, enumerados en la tabla a seguir:
 
 <table><tbody><tr><td>Emitido</td><td>Utiliza el ID del dispositivo</td><td>Técnica</td><td>Atribuido por</td><td>Android (Google Play y tiendas de terceros)</td><td>apps de iOS,</td><td>Universal Windows Platform (UWP)</td><td>Plataformas CTV, PC y consola (3)</td></tr><tr><td> <a href="#install-referrer-android-only">Referencia</a> (1)</td><td>No</td><td>Determinista</td><td>AppsFlyer</td><td>Sí (2)</td><td>No</td><td>Sí</td><td>No</td></tr><tr><td> <a href="#device-id-matching">Coincidencia de ID de dispositivo</a> (1)</td><td>Sí</td><td>Determinista</td><td>AppsFlyer</td><td>Sí</td><td>Sí</td><td>Sí</td><td>Sí</td></tr><tr><td> <a href="#probabilistic-modeling">Modelado probabilístico</a> (1)</td><td>No</td><td>Probabilístico</td><td>AppsFlyer</td><td>Sí</td><td>Sí</td><td>No</td><td>Sí</td></tr><tr><td> <a href="#preload-campaigns">Precarga</a> (1)</td><td>No</td><td>Determinista</td><td>AppsFlyer</td><td>Sí</td><td>No</td><td>Sí</td><td>No</td></tr><tr><td><a href="./skadnetwork-skan-solution-guide" target="_blank">SKAdNetwork (SKAN)</a></td><td>No</td><td>Determinista</td><td>Apple</td><td>No</td><td>Sí</td><td>No</td><td>No</td></tr><tr><td> <a href="./apple-ads-integration-setup" target="_blank">Apple Search Ads</a> (1)</td><td>No</td><td>Determinista</td><td>Apple</td><td>No</td><td>Sí</td><td>No</td><td>No</td></tr><tr><td> <a href="#deep-link">Enlace profundo</a> (1)</td><td>No</td><td>Determinista</td><td>AppsFlyer</td><td>Sí</td><td>Sí</td><td>Sí</td><td>No</td></tr><tr><td colspan="8">(1) A veces se denomina el método de Atribución «clásico» en los dashboard y reportes de AppsFlyer.<br/>(2) Compatible con algunas tiendas de terceros.<br/>(3) Consulta la <a href="./ctv-pc-and-console-platform-attribution-concepts#plataformas-compatibles" target="_blank">lista completa de plataformas CTV, PC y consola</a>.</td></tr></tbody></table>
+
+<div id="attribution-method-priorities-attribution-waterfall" />
 
 ### Prioridades de los métodos de atribución (cascada de atribución)
 
@@ -154,6 +162,8 @@ Un método clásico de atribución solo para re-engagements, cuando los usuarios
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### Métodos de atribución por fuente de medios y característica de AppsFlyer
 
 Consulta las siguientes secciones para obtener un desglose completo de los métodos de atribución compatibles, dependiendo de:
@@ -177,6 +187,8 @@ Consulta las siguientes secciones para obtener un desglose completo de los méto
 <table><thead><tr><th rowspan="2">Fuente de medios</th><th colspan="3">Prioridades de métodos de atribución 23.png</th></tr><tr><th>Android</th><th>apps de iOS,</th><th><strong>Plataformas CTV, PC y consolas</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN</a></td><td>Coincidencia de ID de dispositivo</td><td><ul><li>Coincidencia de ID de dispositivo</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td>Coincidencia de ID de dispositivo</td></tr><tr><td><ul><li>Ad networks (no SRN) a través de <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">enlaces de atribución para partners</a> </li><li><span>Plataformas CTV, PC y consolas</span></li></ul></td><td><ul><li>Referencia de instalación</li><li>Coincidencia de ID de dispositivo</li><li>Modelado probabilístico</li></ul></td><td><ul><li>Coincidencia de ID de dispositivo</li><li>Modelado probabilístico </li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Preinstalado en el dispositivo</a></td><td>Preinstalaciones</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## Tipos de atribución por engagement de usuario
 
@@ -269,6 +281,8 @@ Las visualizaciones comprometidas se producen cuando los usuarios ven un anuncio
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## Temas avanzados de atribución
 
 <div id="in-app-events" />
@@ -309,6 +323,8 @@ Una reinstalación ocurre cuando un usuario instala la aplicación, la desinstal
 Para probar el dispositivo y realizar múltiples instalaciones, <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">registra</Anchor> el dispositivo en AppsFlyer. Si no se registra el dispositivo, solo se registrará la primera instalación.
 
 Ten en cuenta que AppsFlyer permite mayor precisión al atribuir reinstalaciones de iOS sin un ID de anunciante. Puedes activar esta función en la <Anchor target="_blank" href="/marketers/es/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">página de configuración de la aplicación</Anchor>.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### Reinstalar aplicaciones de iOS respaldadas en iCloud
 

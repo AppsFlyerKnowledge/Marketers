@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## Sobre las integraciones de partners
 
 Una integración de partners importa de manera fluida y continua tus creatividades desde las campañas ejecutadas a través del partner hacia la <Anchor target="_blank" href="/marketers/es/docs/creative-optimization-guide">Optimización Creativa</Anchor>.
+
+<div id="data-availability" />
 
 ### Disponibilidad de datos
 
@@ -37,9 +41,13 @@ Una vez que se agrega una integración de partner:
 * El sistema rellena los datos de las creatividades y del rendimiento de AppsFlyer de los últimos 90 días. Por lo general, los datos están disponibles en Optimización Creativa dentro de las 24 horas.
 * Los datos de creatividades se siguen extrayendo de los partners integrados dos veces al día, todos los días. Los datos se incorporan y se comparan con otros puntos de datos de rendimiento de AppsFlyer, como atribución, gasto, clics, impresiones, ingresos, etc. (Los datos de rendimiento de AppsFlyer se actualizan cada hora). Los **dashboards de optimización creativa muestran los datos combinados de todos los procesos anteriores y se actualizan una vez al día** **en UTC + 10** (se actualizan todos los datos creativos de los últimos 90 días).
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Para ver los datos de costos de AppsFlyer (como el ROAS), se requiere una <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview">suscripción a ROI360</Anchor>.
+
+<div id="media-partner-integrations" />
 
 ## Integraciones de partners de medios
 
@@ -119,6 +127,8 @@ Esta sección describe cómo configurar integraciones con cada partner.
 4. Selecciona las aplicaciones que estás promocionando.
 5. Ingresa el **ID de cuenta** de AppLovin, la **clave de la API de gestión de campañas** y la **clave de la API de reportes**.
 6. Luego haz clic en **Guardar**.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -436,6 +446,8 @@ Esta sección describe cómo configurar integraciones con cada partner.
 6. Completa el inicio de sesión y proporciona tus permisos. Ten en cuenta que para que AppsFlyer extraiga datos completos, se recomienda que tengas permisos completos.
 7. Haz clic en **Guardar**.
 
+<div id="notes" />
+
 > 📘 **Notas**
 >
 > * El 30 de enero de 2023, se agregó la nueva integración `tiktokglobal_int` de **TikTok for Business—Advanced SRN**, mientras que la integración `bytedanceglobal_int` de **TikTok for Business [Legacy]** se está eliminando gradualmente y quedará obsoleta en marzo de 2024. Más información en este <Anchor target="_blank" href="/marketers/es/docs/bulletin-tiktok-for-business-advanced-srn">boletín</Anchor>.
@@ -466,6 +478,8 @@ Esta sección describe cómo configurar integraciones con cada partner.
 
 **Nota:** Si estos roles no están disponibles para ti, por favor contacta a tu CSM de Unity Ads.
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### Instrucciones para recuperar las credenciales
 
 **Para recuperar el ID de clave y la clave secreta:**
@@ -489,6 +503,8 @@ Esta sección describe cómo configurar integraciones con cada partner.
    ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
 5. Copia el **ID core de la organización**.
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **Para seleccionar un rol de cuenta de servicio (organización):**
 
 1. En el dashboard de Unity, haz clic en **Administración**.  
@@ -506,6 +522,8 @@ Esta sección describe cómo configurar integraciones con cada partner.
 5. Haz clic en **Guardar**.
 
 **Nota:** Si no tienes acceso a estos roles, contacta con tu Customer Success Manager de Unity o envía un correo electrónico a [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) para solicitar los permisos necesarios.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Para agregar una integración de Unity al dashboard de creatividades:**
 
@@ -570,6 +588,8 @@ Credenciales de YouAppi para la integración:
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Información adicional
 
 <div id="creative-integrations-dashboard" />
@@ -593,6 +613,8 @@ Una vez agregado, el dashboard muestra el estado de todas tus integraciones actu
 
 <Accordion title="Integraciones con agencias">
 
+<div id="add-an-agency-integration" />
+
 #### Agrega una integración de agencia
 
 Puedes integrarte con los partners de tu agencia para extraer tus datos en el dashboard de creatividades.
@@ -615,6 +637,8 @@ Puedes integrarte con los partners de tu agencia para extraer tus datos en el da
 * Para cada agencia cuyos datos de creatividades desees ver en el dashboard, deberás crear una integración de partner separada con la casilla de verificación "Agencia" seleccionada.
 * Los datos están disponibles únicamente en el caso de agencias transparentes. <Anchor target="_blank" href="/marketers/es/docs/view-agency-data">Saber más</Anchor>
 * Los datos de creatividades se extraerán únicamente de la agencia. Esto significa que si has seleccionado Google Ads como partner, como en el ejemplo anterior, pero también tienes campañas ejecutándose directamente con Google Ads, necesitarás crear una integración de partner adicional para Google Ads.
+
+<div id="grant-dashboard-access-to-an-agency" />
 
 #### Concede acceso al dashboard a una agencia
 

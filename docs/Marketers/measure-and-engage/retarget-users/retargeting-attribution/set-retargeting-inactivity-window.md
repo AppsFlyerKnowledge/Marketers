@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Eleva el aumento incremental reorientando a los usuarios inactivos. Configura las ventanas de inactividad por fuente multimedia.
 
+<div id="inactivity-period" />
+
 ## Periodo de inactividad
 
 Los anunciantes recuperan a los usuarios inactivos por medio de retargeting. Estas campañas suelen tener una buena tasa de conversión y generar un ROAS significativo. Sin embargo, muchas campañas de retargeting tienen un rendimiento inferior, ya que no filtran a los usuarios activos. Para elevar el aumento incremental de las campañas de retargeting, implementa **un tiempo de inactividad mínimo** para filtrar a los usuarios activos.
@@ -35,6 +37,8 @@ Al establecer un tiempo de inactividad mínimo, los anunciantes no atribuyen a l
 * **Atribuidos:** Usuarios inactivos que no han usado la aplicación durante más tiempo que el período de inactividad definido. Se atribuyen los re-engagements y reinstalaciones de retargeting.
 * **No atribuido**: Los usuarios activos que abren la aplicación y no superan el período mínimo de inactividad no se tienen en cuenta y no se atribuyen a la campaña de retargeting.
 
+<div id="retargeting-inactivity-terminology" />
+
 ### Terminología de inactividad de retargeting
 
 | Término | Definición |
@@ -43,6 +47,8 @@ Al establecer un tiempo de inactividad mínimo, los anunciantes no atribuyen a l
 | Valor predeterminado | 0 (ninguno)  <br />La función **Período de inactividad** no está activa de forma predeterminada para las fuentes multimedia. |
 | Actividad del usuario | Instalaciones o sesiones informadas por el SDK o mediante S2S. |
 | Dispositivos migrados | La hora de migración es la hora de la última actividad. |
+
+<div id="scenarios" />
 
 ## Escenarios
 
@@ -86,7 +92,11 @@ El escenario del usuario se muestra en la figura siguiente. El usuario:
 
 </Accordion>
 
+<div id="partner-setup" />
+
 ## Configuración de partners
+
+<div id="zd-srn" />
 
 <div id="srn" />
 
@@ -142,6 +152,8 @@ Agencia (permiso otorgado por el anunciante)
 | Anuncios de Google | <ul><li>No se puede activar o desactivar el retargeting</li><li>Si una agencia tiene permisos, puede configurar un período de inactividad</li></ul> |
 | Meta ads/X Ads/Snapchat | No puedo acceder a la configuración del **Período de inactividad** y retargeting |
 
+<div id="non-srn" />
+
 #### Sin SRN
 
 partner (admite el retargeting)
@@ -152,6 +164,8 @@ partner (admite el retargeting)
 2. Selecciona una red de publicidad que no sea de SRN. Ve a la pestaña > **Enlace de atribución.**
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 

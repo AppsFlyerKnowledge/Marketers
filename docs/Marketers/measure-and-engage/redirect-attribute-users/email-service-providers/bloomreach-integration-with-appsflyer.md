@@ -23,11 +23,15 @@ x-zendesk:
 
 <Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 
+<div id="about-the-integration" />
+
 ## Sobre la integración
 
 Bloomreach es una plataforma de automatización del marketing por correo electrónico y un proveedor de servicios de correo electrónico (ESP) que ayuda a las marcas a crear experiencias personalizadas en todos los canales.
 
 La integración entre AppsFlyer y Bloomreach permite un Deep Linking sin interrupciones desde campañas de correo electrónico, da soporte a una medición precisa del tráfico tanto en Bloomreach como en AppsFlyer y ayuda a crear experiencias de usuario fluidas que impulsan la conversión.
+
+<div id="set-up-the-integration" />
 
 ## Configura la integración
 
@@ -39,6 +43,8 @@ Configurar la integración requiere acciones tanto en AppsFlyer como en Bloomrea
 
 Primero, configura OneLink en AppsFlyer y confirma que la configuración necesaria de alojamiento y dominio esté implementada.
 
+<div id="when-your-app-is-installed" />
+
 #### Cuando la aplicación está instalada
 
 Define el comportamiento de redirección para los usuarios que ya tienen tu app instalada.
@@ -48,12 +54,16 @@ Define el comportamiento de redirección para los usuarios que ya tienen tu app 
 1. <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">Crea una plantilla de OneLink</Anchor> y configura Universal Links/App Links. Esta plantilla se utilizará más tarde para crear enlaces de OneLink para tus campañas de correo electrónico.
 2. Si ya tienes una plantilla de OneLink existente configurada que habilita Universal Links/App Links, puedes usarla.
 
+<div id="hosting-and-ssl" />
+
 #### Hosting y SSL
 
 * Los enlaces de OneLink están protegidos con SSL y alojados por AppsFlyer.
 * El archivo AASA y los archivos de App Link también están alojados por AppsFlyer.
 
 Consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-your-esp-integration-with-appsflyer#configura-tu-aplicación-para-soportar-deep-linking">información e instrucciones adicionales.</Anchor>
+
+<div id="app-domain-definition" />
 
 #### Definición del dominio de la aplicación
 
@@ -81,6 +91,8 @@ Consulta <Anchor target="_blank" href="https://documentation.bloomreach.com/enga
 
 <Image alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > A continuación se muestra un ejemplo de un enlace Universal sin encapsular, con los parámetros de tracking de Bloomreach añadidos:
@@ -96,6 +108,8 @@ Consulta <Anchor target="_blank" href="https://documentation.bloomreach.com/enga
 <Accordion title="Paso 3: Implementa los SDK móviles y web de Bloomreach">
 
 Por último, implementa los SDK de Bloomreach correspondientes para garantizar que la medición de clics funcione correctamente en las aplicaciones móviles y en la web.
+
+<div id="ios" />
 
 #### apps de iOS,
 
@@ -138,11 +152,15 @@ Cuando completes la configuración, envía un correo electrónico de prueba para
 
 Cuando se completen todas las validaciones, la configuración de la integración estará completa.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > Si los clics no aparecen en la plataforma Bloomreach, ponte en contacto con el equipo de soporte de Bloomreach.
 
 </Accordion>
+
+<div id="important-notes" />
 
 > 📘 **Notas importantes**
 >

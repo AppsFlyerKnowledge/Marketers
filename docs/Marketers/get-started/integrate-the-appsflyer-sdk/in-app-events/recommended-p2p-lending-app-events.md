@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de préstamos P2P.
 
+<div id="-p2p-lending" />
+
 ## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> Préstamos P2P
 
 Los préstamos P2P son una manera en que las personas y las empresas prestan y toman prestado dinero entre ellas. Los eventos típicos que sugerimos registrar son las actividades de prestamistas y prestatarios individuales, los tipos de préstamos que ofrecen las personas y las tasas de aceptación y rechazo de préstamos.
 
 Los datos que recopilas del registro de eventos permiten destacar los prestatarios confiables y ofrecerles mejores tasas de interés. De manera similar, podrás ver quiénes son los prestamistas más activos y ofrecerles tarifas más bajas. Además, una vez que sepas cuáles son los tipos de préstamos más populares entre los usuarios, podrás lanzar campañas de marketing dirigidas a tales audiencias.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -39,6 +43,8 @@ Los datos que recopilas del registro de eventos permiten destacar los prestatari
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 [![Diagrama de flujo del recorrido del usuario de la app de préstamos P2P para eventos recomendados](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -81,6 +87,8 @@ Cuando el usuario accede correctamente.
 Se puede enviar sin ningún parámetro adicional.
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 
@@ -126,6 +134,8 @@ Cuando un prestatario envía un formulario.
 **Parámetros del evento**
 
 Se puede enviar sin ningún parámetro adicional.
+
+<div id="note" />
 
 > 📘 **Nota**
 >

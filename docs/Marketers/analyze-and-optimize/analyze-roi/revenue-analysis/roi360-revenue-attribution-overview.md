@@ -25,12 +25,16 @@ x-zendesk:
 
 ![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
 
+<div id="overview" />
+
 ## Visión general
 
 Los ingresos son la mitad del ROI (la otra mitad son los costos). Cuando se dispone de datos precisos sobre los ingresos, atribuidos a las fuentes de medios y campañas que los originaron, puedes:
 
 * Ver la imagen completa de tu ROI y ROAS. Es decir, puedes ver qué ad networks, campañas y anuncios aportan los usuarios más valiosos, y no sólo instalaciones o engagements.
 * Ajusta tu gasto publicitario y tus campañas de marketing en consecuencia.
+
+<div id="premium-revenue-reporting" />
 
 ### Reportes premium de ingresos
 
@@ -39,6 +43,8 @@ Hay tres fuentes principales para generar ingresos.
 * **Compras in-app**: Esto incluye los ingresos procedentes de la venta de cualquier producto o servicio dentro de tu aplicación. AppsFlyer es capaz de validar y medir automáticamente los ingresos procedentes de las compras in-app (incluyendo las compras pendientes, las compras, los reembolsos, las cancelaciones, los impuestos, las comisiones de las tiendas de aplicaciones, etc.). Saber más sobre configuración y reportes
 * **Ingresos por suscripción**: Esto incluye los ingresos derivados de las suscripciones a tu aplicación o servicios. También incluye cualquier cambio en las suscripciones, incluidas actualizaciones, cancelaciones, reembolsos, etc. Saber más sobre configuración y reportes
 * <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">**Ingresos publicitarios**</Anchor>: Esto incluye los ingresos generados por alojar anuncios y mostrarlos a los usuarios de tu aplicación. Por ejemplo, tu aplicación puede mostrar anuncios de otras aplicaciones. Si tus usuarios hacen clic en estos anuncios, generas ingresos por cada clic. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">Saber más sobre la configuración y los reportes de los ingresos publicitarios</Anchor>
+
+<div id="basic-revenue-reporting" />
 
 ### Reportes básicos de ingresos
 

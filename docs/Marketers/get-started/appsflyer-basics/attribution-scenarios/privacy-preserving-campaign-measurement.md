@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Obtén respuestas a las preguntas frecuentes más comunes sobre los métodos de medición de campañas que preservan la privacidad, las redes implicadas y sus efectos en el retargeting, el view-through y las limitaciones de las aplicaciones dirigidas a menores.
 
+<div id="overview" />
+
 ## Visión general
 
 En la actual era centrada en la privacidad, las plataformas y las tecnologías limitan cada vez más el uso de los ID de anunciante, lo que impulsa a la industria hacia métodos de medición que cumplen los requisitos de privacidad y, al mismo tiempo, permiten una medición eficaz de las campañas. Para estos casos, AppsFlyer admite varios métodos de medición de campañas que preservan la privacidad tanto para ad networks SRN como para ad networks no SRN, como se describe a continuación.
@@ -102,6 +104,8 @@ La disponibilidad de un ID de publicidad puede afectar al comportamiento del Dee
 En determinados escenarios con restricciones de privacidad, la cobertura de la medición puede ser más limitada. AppsFlyer sigue proporcionando una medición significativa de campañas al tiempo que preserva la privacidad del usuario.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

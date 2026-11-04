@@ -34,6 +34,8 @@ Registrar estos eventos puede ayudarte a determinar:
 * Cuántos compradores finalizaron el checkout.
 * Cuántos de los compradores son recurrentes y cuántos son compradores de una sola vez.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
@@ -44,6 +46,8 @@ Registrar estos eventos puede ayudarte a determinar:
 > Para más información sobre la grabación de eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía de eventos in-app</Anchor>.
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -270,6 +274,8 @@ Cuando el usuario llega a la página de agradecimiento después de una compra ex
 | af\_receipt\_id | ID de pedido<br /><br />**Parámetro obligatorio para CRITEO y Google Ad Words para la validación de compra** | X123ABC |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

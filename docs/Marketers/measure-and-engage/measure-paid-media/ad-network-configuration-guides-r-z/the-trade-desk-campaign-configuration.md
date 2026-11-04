@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** The Trade Desk, un partner integrado de la red de publicidad de AppsFlyer, utiliza su solución mejorada de publicidad móvil para cultivar campañas estratégicas, escalables e inteligentes para satisfacer las necesidades de los usuarios de dispositivos cruzados. The Trade Desk ofrece atribución móvil basada en los clics, atribución móvil por impresiones y retargeting basado en los clics, lo cual puede registrarse a través de AppsFlyer.
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## Configuración de The Trade Desk (TTD)
 
 Sigue estos pasos para habilitar la medición de campañas de AppsFlyer.
@@ -98,6 +100,8 @@ En este paso, agregarás los rastreadores de clics e impresiones que se crearon 
 
 </Accordion>
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Si has elegido que las conversiones sean atribuidas por TTD (en el [Paso 1](/docs/the-trade-desk-campaign-configuration#step-1-define-conversion-events-in-ttd)), puedes editar las ventanas de atribución:
@@ -108,6 +112,8 @@ En este paso, agregarás los rastreadores de clics e impresiones que se crearon 
 >    * **De-duplication Windows** (Ventanas de desduplicación): el número de conversiones que se pueden ver en un determinado periodo de tiempo.
 >    * **Campaign Attribution Windows** (Ventanas de atribución de campañas): el periodo de tiempo desde la exposición del anuncio hasta la conversión.
 > 4. Haz clic en **SAVE** (Guardar).
+
+<div id="integrating-ttd-with-appsflyer" />
 
 ## Integración de TTD con AppsFlyer
 
@@ -131,14 +137,20 @@ Para ver una descripción detallada del encabezado de la ventana de configuraci�
 
 <Accordion title="Pestaña Integración">
 
+<div id="activate-partner" />
+
 #### Activar el partner
 
 En la primera visita, tendrás que activar el conmutador **Activar partner** para configurar la integración. El conmutador debe permanecer encendido durante todo el tiempo que se trabaje con TTD.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privacidad avanzada
 
 En las aplicaciones de iOS, aparece el selector <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Habilitar privacidad avanzada</Anchor>. Cuando está activado, limita el uso compartido de identificadores de usuario con el partner. Ten en cuenta que cuando la opción <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada</Anchor> está activada en la configuración de la aplicación, **Habilitar privacidad avanzada** se activa y se bloquea de forma predeterminada. 
+
+<div id="general-settings" />
 
 #### Configuración general
 
@@ -152,6 +164,8 @@ The Trade Desk se conecta con AppsFlyer a través de un ID de red y único. Si a
 
 Activa **Habilitar atribución por impresiones** para atribuir las instalaciones por impresiones desde The Trade Desk. El control deslizante de retrospectiva por impresiones está disponible en la pestaña del enlace de atribución (descrito a continuación).
 
+<div id="default-postbacks" />
+
 #### Postbacks predeterminados
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -161,9 +175,13 @@ Envía postbacks automáticos a The Trade Desk después de las instalaciones y r
 * **Solo este partner**: para eventos que provienen solo de usuarios atribuidos a The Trade Desk.
 * **Todas las fuentes de medios, incluidas las orgánicas**: para que toda tu base de usuarios esté disponible para reportarla a The Trade Desk.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Como red de instalaciones, The Trade Desk prefiere recibir postbacks de todas las nuevas instalaciones de tu app desde cualquier fuente, y recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas** para enviar todos los postbacks de instalación a The Trade Desk.
+
+<div id="in-app-events-settings" />
 
 #### Configuración de eventos in-app
 
@@ -196,6 +214,8 @@ Asigna eventos de AppsFlyer con TTD a través de postbacks. Si el envío de post
 
 Genera y guarda enlaces de atribución y envíalos a TTD para atribuir campañas específicas, conjuntos de anuncios o anuncios individuales, tanto para campañas de UA como de retargeting. Puedes usar tanto un enlace de una sola plataforma como <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.
 
+<div id="attribution-link-parameters" />
+
 #### Parámetros de enlaces de atribución
 
 Agregar parámetros al enlace de atribución te permitirá realizar análisis detallados. Los parámetros que ya están definidos en el enlace de atribución pueden editarse agregándolos junto con sus valores nuevos en esta sección. Al guardar el enlace de atribución, se guardan todos los parámetros configurados en esta pestaña.
@@ -203,6 +223,8 @@ Agregar parámetros al enlace de atribución te permitirá realizar análisis de
 Selecciona los parámetros que quieres agregar al enlace de atribución.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### Parámetros por defecto
 
@@ -216,6 +238,8 @@ Selecciona los parámetros que quieres agregar al enlace de atribución.
 
 Puede agregar más parámetros para el enlace de atribución. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">cómo configurar el enlace de atribución</Anchor> y sobre la <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">estructura y los parámetros del enlace de atribución</Anchor>.
 
+<div id="parameters-for-measuring-ctv" />
+
 #### Parámetros para medir el CTV
 
 Puedes medir el tráfico de CTV con AppsFlyer agregando los siguientes parámetros y valores:
@@ -224,6 +248,8 @@ Puedes medir el tráfico de CTV con AppsFlyer agregando los siguientes parámetr
 | --- | --- | --- |
 | Redirigir | false |  |
 | af\_xplatform\_vt\_lookback | 1 - 72 horas | Se puede ingresar cualquier valor entre 1 y 72 horas |
+
+<div id="click-through-attribution" />
 
 #### Atribución por clics
 
@@ -238,6 +264,8 @@ Parámetro de enlace de atribución: af\_click\_lookback
 Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
 
 **Enlace de atribución por clic:** Contiene todos los parámetros que incluiste en la configuración del enlace de atribución. Puedes copiar el enlace y enviarlo al partner para que se active cuando tus clientes potenciales hagan clic en un anuncio correspondiente.
+
+<div id="view-through-attribution" />
 
 #### Atribución por view-through
 
@@ -280,6 +308,8 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a The Tr
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
+
+<div id="ad-network-permissions" />
 
 #### **Permisos para red de anuncios**
 

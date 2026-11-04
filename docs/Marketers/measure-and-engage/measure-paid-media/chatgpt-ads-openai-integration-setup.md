@@ -16,6 +16,8 @@ x-zendesk:
 ---
 > **Resumen:** ChatGPT Ads, un partner integrado con AppsFlyer, es la plataforma publicitaria de OpenAI. Configura la integración para medir y atribuir las instalaciones de apps móviles, los eventos in-app y las conversiones del sitio web generadas por tus campañas de ChatGPT Ads.
 
+<div id="about-the-integration-with-chatgpt-ads" />
+
 ## Sobre la integración con ChatGPT Ads
 
 La integración de AppsFlyer con ChatGPT Ads (OpenAI) te permite medir y atribuir las instalaciones de apps, los eventos in-app y las conversiones del sitio web generadas por tus campañas de ChatGPT Ads. Es compatible con la medición tanto de apps móviles como de sitios web.
@@ -26,6 +28,8 @@ La integración de AppsFlyer con ChatGPT Ads (OpenAI) te permite medir y atribui
 Si también utilizas el píxel de ChatGPT Ads en tu sitio web, ChatGPT Ads elimina los duplicados de los eventos del lado del servidor (enviados a través de la API de conversiones, o CAPI) frente a los eventos del píxel mediante un ID de evento compartido, para que puedas ejecutar CAPI y el píxel en paralelo sin inflar el recuento de conversiones.
 
 Incluye ese ID compartido como `af_customer_event_id` en la carga útil del evento que envíes a AppsFlyer. Consulta [Integra tu sitio web](#integra-tu-sitio-web) a continuación.
+
+<div id="set-up-the-integration" />
 
 ## Configura la integración
 
@@ -45,6 +49,8 @@ Configura la integración por separado para cada app móvil y sitio web que quie
 * [**App móvil**](#integra-tu-app-móvil): atribuye instalaciones, re-engagements y eventos in-app a las campañas de ChatGPT Ads.
 * [**Sitio web**](#integra-tu-sitio-web): reenvía eventos de conversión web a la Conversions API de ChatGPT Ads, con deduplicación respecto al píxel de ChatGPT Ads.
 
+<div id="integrate-your-mobile-app" />
+
 ## Integra tu app móvil
 
 Sigue estos pasos para configurar la atribución y los postbacks de eventos in-app de ChatGPT Ads para tu app móvil.
@@ -61,6 +67,8 @@ Sigue estos pasos para configurar la atribución y los postbacks de eventos in-a
 
 <Accordion title="Pestaña de integración">
 
+<div id="activate-partner" />
+
 #### Activar partner
 
 **Para activar la integración:**
@@ -70,6 +78,8 @@ Activa el interruptor **Activar partner**.
 **Nota importante:** El interruptor **debe permanecer activado** mientras trabajes con ChatGPT Ads. Si desactivas la integración, se desactivarán la atribución y los postbacks de tus campañas.  
 Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
+<div id="general-settings" />
+
 #### Configuración general
 
 Introduce las siguientes credenciales:
@@ -77,6 +87,8 @@ Introduce las siguientes credenciales:
 * **ID del píxel**: se crea un píxel en tu ChatGPT Ads Manager. Puedes obtenerlo en la pestaña “Conversiones” de tu cuenta de Ads Manager.
 * **Clave de API**: se requiere una clave de API para autenticar las llamadas a la Events API. Puedes obtenerla en la pestaña “Conversiones” de tu cuenta de ChatGPT Ads Manager.   
   **Nota:** Asegúrate de utilizar la clave de API de conversiones y no la clave de API de Ads Management, ya que los permisos necesarios requieren la clave de CAPI.
+
+<div id="advanced-privacy" />
 
 ##### **Privacidad Avanzada**
 
@@ -89,15 +101,21 @@ El interruptor de Privacidad avanzada (AP) controla cómo se envían los eventos
 >
 > OpenAI no recopila ni comparte el IDFA en dispositivos iOS, por lo que la única forma de garantizar que se envíen postbacks sin atribuir es desactivar la privacidad avanzada.
 
+<div id="advanced-matching-data-sharing" />
+
 ##### **Compartición avanzada de datos de coincidencias avanzadas**
 
 Actívalo para compartir los campos de coincidencias avanzadas, como el correo electrónico hashed, el número de teléfono hashed, el nombre hashed y el apellido hashed, con ChatGPT Ads, si estos campos se incluyen en la información del evento enviada a AppsFlyer. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
+
+<div id="default-postbacks" />
 
 #### Postbacks predeterminados
 
 Un postback es una notificación de servidor a servidor que AppsFlyer envía a ChatGPT Ads para informar de un evento atribuido (como una instalación o una acción in-app). En esta sección se muestran tus postbacks. Obtén información sobre cómo <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">configurar los postbacks de instalaciones y reatribuciones</Anchor>.
 
 Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">configuración de postbacks predeterminados</Anchor>.
+
+<div id="in-app-event-settings" />
 
 #### Configuración de eventos in-app
 
@@ -107,6 +125,8 @@ Para poder enviar postbacks de eventos in-app a ChatGPT Ads, introduce las crede
 * Clave de la API
 
 Para más información, consulta la sección [Configuración general](#configuración-general) anterior.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -162,6 +182,8 @@ Para más información, consulta Integrate AppsFlyer Web SDK.
 
 ChatGPT Ads (OpenAI) admite enlaces de atribución.
 
+<div id="choose-your-attribution-type" />
+
 #### Elige tu tipo de atribución
 
 Decide si quieres:
@@ -170,6 +192,8 @@ Decide si quieres:
 
    O
 2. Usa una landing page como destino del anuncio y, después, usa <Anchor target="_blank" href="/marketers/es/docs/onelink-smart-script-overview">Smart Script</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banner</Anchor> para dirigir al usuario a la tienda de aplicaciones o a Google Play (mientras creas un enlace que permitirá la atribución).
+
+<div id="select-parameters" />
 
 #### Seleccionar parámetros
 
@@ -183,6 +207,8 @@ Selecciona los parámetros del enlace de atribución que quieres incluir.
   * `af_ad_id={ad_id}`
   * `clickid={oppref}`
 * Las macros del campo de nombre no son compatibles.
+
+<div id="important" />
 
 > 🚧 **Importante**
 >
@@ -221,6 +247,8 @@ Obtén más información sobre los <Anchor target="_blank" href="/marketers/es/d
 
 </Accordion>
 
+<div id="integrate-your-website" />
+
 ## Integra tu sitio web
 
 Sigue estos pasos para configurar el reenvío de eventos del lado del servidor a ChatGPT Ads para tu sitio web.
@@ -236,6 +264,8 @@ Sigue estos pasos para configurar el reenvío de eventos del lado del servidor a
 
 <Accordion title="Pestaña de integración">
 
+<div id="activate-partner-1" />
+
 #### Activar partner
 
 **Para activar la integración:**
@@ -245,6 +275,8 @@ Activa el interruptor **Activar partner**.
 **Nota importante:** El interruptor **debe permanecer activado** mientras trabajes con ChatGPT Ads. Si desactivas la integración, se desactivará el reenvío de eventos de tu sitio web.  
 Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
+<div id="in-app-event-settings-1" />
+
 #### Configuración de eventos in-app
 
 Para poder enviar postbacks de eventos a ChatGPT Ads, introduce las siguientes credenciales:
@@ -253,6 +285,8 @@ Para poder enviar postbacks de eventos a ChatGPT Ads, introduce las siguientes c
 * **Clave de API**: se requiere una clave de API para autenticar las llamadas a la Events API. Puedes obtenerla en la pestaña “Conversiones” de tu cuenta de ChatGPT Ads Manager.
 
 **Uso compartido de datos de Advanced Matching:** Actívalo para compartir con ChatGPT Ads los campos de Advanced Matching, como el correo electrónico con hash, el número de teléfono con hash, el nombre con hash y el apellido con hash, si estos campos se incluyen en la información del evento enviada a AppsFlyer. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
+
+<div id="in-app-event-postbacks-1" />
 
 #### Postbacks de eventos in-app
 
@@ -300,11 +334,15 @@ Los permisos no están disponibles para las integraciones de sitios web con Chat
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 | Caducado | Descripción |
 | --- | --- |
 | Países compatibles | <Anchor target="_blank" href="https://help.openai.com/en/articles/20001245-ads-manager-availability">Lista de países</Anchor> donde ChatGPT Ads Manager está disponible. |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

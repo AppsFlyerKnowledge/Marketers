@@ -18,6 +18,8 @@ x-zendesk:
 ---
 > **At a glance:** Utiliza la página de prueba del SDK web para validar la instalación del SDK web y el registro de eventos en tiempo real. Ejecútala cuando integres el SDK por primera vez y cada vez que añadas o cambies un evento.
 
+<div id="overview" />
+
 ## Vista general
 
 La página de prueba del SDK web abre tu sitio web en una nueva pestaña del navegador con una sesión de prueba específica. Toda la actividad del SDK web en esa pestaña, incluidas las cargas de página, los eventos y las llamadas de identidad, se transmite en directo a la página de prueba, donde puedes inspeccionar cada evento y sus propiedades. Esto te permite verificar tu implementación en cuestión de minutos, sin esperar a que los datos aparezcan en los reportes.
@@ -30,12 +32,16 @@ La página de prueba del SDK web abre tu sitio web en una nueva pestaña del nav
 
 Ejecuta una prueba cada vez que integres el SDK por primera vez o cambies la configuración de eventos.
 
+<div id="prerequisites" />
+
 ## Prerrequisitos
 
 Antes de ejecutar una prueba, asegúrate de que tienes:
 
 * Una aplicación web en AppsFlyer. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer#web">Crear una aplicación web en AppsFlyer</Anchor> en Onboard Web Performance Measurement.
 * El SDK web de AppsFlyer está implementado en las páginas que quieres probar. Para obtener más información, consulta la sección <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">Integrar el SDK web de AppsFlyer</Anchor>.
+
+<div id="run-a-test" />
 
 ## Ejecutar una prueba
 
@@ -53,6 +59,8 @@ Una vez que se cumplan los requisitos previos, ejecuta una prueba de la siguient
 >
 > La prueba solo captura la actividad de la pestaña del navegador que abre. Si visitas tu sitio web directamente sin iniciar una prueba, no se mostrarán eventos en esta página.
 
+<div id="view-the-live-events-table" />
+
 ## Ver la tabla de eventos en directo
 
 Cada fila de la tabla **Live events** muestra la marca de tiempo del evento, el tipo, el nombre y el estado de validación.
@@ -69,6 +77,8 @@ La tabla **Live events** también admite lo siguiente:
 * **Search:** Usa el cuadro de búsqueda para encontrar un evento específico.
 * **Export:** Haz clic en **Export CSV** para descargar los resultados.
 
+<div id="restart-or-clear-a-test" />
+
 ## Reiniciar o borrar una prueba
 
 Usa una de estas opciones para reiniciar o borrar una prueba:
@@ -76,6 +86,8 @@ Usa una de estas opciones para reiniciar o borrar una prueba:
 * **Restart test:** Borra la lista de eventos y abre una nueva pestaña del navegador con una nueva sesión de prueba. Puedes usar esto para iniciar una ejecución limpia.
 * **Restart with new app / URL:** Vuelve a abrir el cuadro de configuración para probar una aplicación web o una página diferente.
 * **Clear logs:** Borra solo la lista de eventos. La sesión de prueba actual y la pestaña del navegador permanecen activas, por lo que los nuevos eventos siguen transmitiéndose.
+
+<div id="common-testing-scenarios" />
 
 ## Escenarios de prueba habituales
 

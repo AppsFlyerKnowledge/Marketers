@@ -30,9 +30,13 @@ x-zendesk:
 
 <Image alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
 
+<div id="petal-ads-global-introduction" />
+
 ## Introducción a Petal Ads Global
 
 Petal Ads Global está integrado en varias apps de terceros y apps de Huawei, como HUAWEI Browser, HUAWEI Video, HUAWEI Assistant, HUAWEI Reader y HUAWEI Music, que son subpublishers de la red de anuncios de display de Petal Ads Global. Además, las ubicaciones de anuncios estándar de AppGallery y App Gallery Search Ads también ofrecen soporte para la atribución de AppsFlyer.
+
+<div id="setting-up-petal-ads-global" />
 
 ## Configuración de Petal Ads Global
 
@@ -43,6 +47,8 @@ Petal Ads Global requiere el uso de **OAID** para la atribución. Consulta <Anch
 | Anuncios en pantalla | huaweiadsglobal | Coincidencia de ID (OAID o GAID), modelado probabilístico, referente de Huawei | Haz clic <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">aquí</Anchor> para consultar la guía de implementación de OAID en el SDK de Android. La atribución del referente de Huawei requiere Android SDK 6.14.0 |
 | App Gallery | huaweiappgalleryglobal | Coincidencia de ID (OAID o GAID), referente de Huawei | La atribución del referente de Huawei requiere Android SDK 6.14.0 |
 | Petal Search | valor vacío | Coincidencia de ID (OAID o GAID), modelado probabilístico | Haz clic <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">aquí</Anchor> para consultar la guía de implementación de OAID en el SDK de Android |
+
+<div id="setting-up-the-petal-ads-global-integration" />
 
 ### Configuración de la integración con Petal Ads Global
 
@@ -64,11 +70,15 @@ Petal Ads Global requiere el uso de **OAID** para la atribución. Consulta <Anch
 
 La **Pestaña integración** se divide en diferentes secciones:
 
+<div id="activate-partner" />
+
 #### Activar socio
 
 Para habilitar la configuración, <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation#activar-la-integración-de-un-partner">Activar el partner</Anchor>.
 
 Este conmutador debe estar activado mientras trabajes con el partner.
+
+<div id="general-settings" />
 
 #### Configuración general
 
@@ -76,9 +86,13 @@ Este conmutador debe estar activado mientras trabajes con el partner.
 
 Para atribuir instalaciones view-through de Petal Ads Global, activa este conmutador. El control deslizante de la ventana de lookback view-through está disponible en la pestaña **Enlace de atribución**.
 
+<div id="default-postbacks" />
+
 #### Postbacks predeterminados
 
 Envía postbacks automáticos a Petal Ads Global tras las instalaciones de usuarios atribuidos solo a Petal Ads Global. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks por defecto</Anchor>.
+
+<div id="in-app-events-settings" />
 
 #### Configuración de eventos in-app
 
@@ -152,6 +166,8 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Petal Ad
 
 </Accordion>
 
+<div id="configuring-campaigns-on-petal-ads-global" />
+
 ## Configuración de campañas en Petal Ads Global
 
 **Para configurar la atribución de AppsFlyer en Petal Ads Global, haz clic** [**aquí**](https://developer.huawei.com/consumer/en/doc/distribution/promotion/appsflyer-0000001122291488) **para saber más en el Centro de soporte de Huawei.**
@@ -164,11 +180,15 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgar a Petal Ad
 6. Crea una tarea de anuncio en Petal Ads Global.
 7. [Ver los datos de conversión](https://developer.huawei.com/consumer/en/doc/distribution/promotion/tracking-shu-0000001139892541) en Petal Ads Global.
 
+<div id="data-discrepancies" />
+
 ## Discrepancias en los datos
 
 **Nota:** En el dashboard de Petal Ads Global, los datos de conversión (p. ej., instalaciones/activaciones) tienen 2 fuentes de datos: una es AppsFlyer y la otra es HMS. Si quieres comparar los datos, como las instalaciones, entre AppsFlyer y el dashboard de Petal Ads Global, selecciona "Activations" en lugar de "Activations(HMS)" en el dashboard de Huawei.
 
 [![](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)
+
+<div id="data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy" />
 
 #### Reporte de datos en Petal Ads Global y preguntas frecuentes sobre discrepancias de datos
 

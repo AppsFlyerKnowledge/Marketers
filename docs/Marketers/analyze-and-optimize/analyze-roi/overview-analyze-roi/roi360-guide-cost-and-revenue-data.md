@@ -29,11 +29,15 @@ x-zendesk:
 
 ![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
 
+<div id="overview" />
+
 ## Descripción general
 
 ROI360 es un conjunto de herramientas únicas de reportes de costos e ingresos que te proporcionan los datos más precisos, lo más rápido posible.
 
 Con los insights combinados de costos e ingresos, obtienes una imagen completa de tu retorno del gasto publicitario (ROAS) y el retorno de la inversión (ROI).
+
+<div id="cost-tools" />
 
 ### Herramientas de costos
 
@@ -42,6 +46,8 @@ Anteriormente conocida como Xpend, las herramientas de costos de ROI360 agregan 
 <table><thead><tr><th>Herramienta</th><th>Descripción</th></tr></thead><tbody><tr><td><a href="./roi360-cost-aggregation-overview" target="_blank">Costo atribuido</a></td><td><p><span>Datos de costos vinculados a atribución, clics e impresiones al nivel más granular disponible.</span></p><p><span>Esto incluye el acceso a más de 80 integraciones de API, lo que te permite conectarte fácilmente a ad networks globales o locales.</span></p></td></tr><tr><td><a href="./import-cost-data" target="_blank">Importación de archivos</a></td><td><span>Importación de costos para registrar datos de costos no recibidos a través de la API.</span></td></tr><tr><td><a href="./incorporate-agency-fees-into-campaign-costs" target="_blank">Tarifas de la agencia</a></td><td><span>Cálculos de las tarifas de agencia incluidas en tu costo.</span></td></tr><tr><td><a href="./set-up-and-use-roi360-cost-etl-reports" target="_blank">ETL de costo\*</a></td><td>Entrega datos de costos de campaña, actualizados 4 veces al día, a tu bucket de AWS S3 o GCS, listos para cargarlos en los sistemas de BI del anunciante.</td></tr><tr><td colspan="2">\* Disponible con el paquete avanzado de ROI360</td></tr></tbody></table>
 
 **Nota**: También puedes agregar <Anchor target="_blank" href="/marketers/es/docs/view-aggregated-cost-data-for-attribution-links">datos de costo reportados en el enlace de atribución</Anchor> sin ROI360. Sin embargo, este método es solo para el modelo de costo por instalación (CPI), no para otros modelos, como CPA, CPC y CPM.
+
+<div id="revenue-tools" />
 
 ### Herramientas de ingresos
 

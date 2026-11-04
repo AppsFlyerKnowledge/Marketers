@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Luna Labs es una plataforma integral que permite a sus clientes crear, gestionar y optimizar playables y anuncios de video.
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-luna-labs" />
 
 ## Configuración de Luna Labs
 
@@ -48,18 +52,26 @@ x-zendesk:
 
 Busca al partner y selecciónalo.
 
+<div id="integration" />
+
 ## Integración
 
 Usa la pestaña de integración para la configuración. Las pestañas restantes están inactivas.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
 > Luna Labs no usa sus propios enlaces de atribución. Reciben postbacks de ad networks que ejecutan campañas con anunciantes. Luna Labs solo recibe postbacks de sus propios creativos y solo postbacks que incluyen el parámetro y valor `af_addpb=1`. Consulta más abajo una explicación detallada.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, debes activar **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. **El selector debe estar activado mientras trabajes con el partner**.  
 Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación/desactivación del partner</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 

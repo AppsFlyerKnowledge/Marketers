@@ -39,6 +39,8 @@ La siguiente tabla muestra los reportes de ingresos disponibles. **Nota**: Con l
 | [Ingresos de tiendas a nivel de transacción](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | Integración de ingresos por suscripción e IAP de ROI360 | <ul><li>Contiene raw data de compras in-app y suscripciones validados por ROI360 a nivel de transacción.</li><li>Proporciona la máxima frescura y granularidad de los datos.</li><li>Incluye datos e ingresos netos únicos relacionados con la monetización del ROI360.</li></ul> | Por hora |
 | [Ingresos de tiendas a nivel de dispositivo [versionados]](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | Integración de ingresos por suscripción e IAP de ROI360 | <ul><li>Contiene raw data de compras in-app y raw data de suscripciones validados por ROI360 a nivel de dispositivo.</li><li>Incluye datos únicos de ingresos netos de ROI360.</li></ul> | Cada 8 horas |
 
+<div id="reports" />
+
 ## Reportes
 
 Los detalles sobre los diferentes reportes (cómo funcionan, cómo suscribirse a ellos y cómo acceder a ellos) se encuentran en las secciones siguientes.
@@ -53,6 +55,8 @@ El reporte muestra una versión única de los datos de ingresos por publicidad d
 
 <span id="download-the-report-data-sample"></span>Descarga el ejemplo de datos del reporte de la versión única de ingresos por publicidad.
 
+<div id="data-sources" />
+
 #### Fuentes de datos
 
 Según el tipo de integración de partners que genere ingresos por publicidad, los datos del reporte pueden proceder de una de las siguientes maneras:
@@ -61,6 +65,8 @@ Según el tipo de integración de partners que genere ingresos por publicidad, l
 * **S2S:** Reportes a nivel de dispositivo obtenidos mediante una solicitud de API de los partners (redes de mediación o monetización).
 
 Para obtener información sobre cómo configurar el tipo de integración, consulta: Conéctate a partners integrados en los ingresos por publicidad.
+
+<div id="data-flow" />
 
 #### Flujo de datos
 
@@ -75,12 +81,16 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
    **Nota:** Un reporte puede tener más de una agregación a nivel de dispositivo para el mismo dispositivo. Esto puede deberse a que la agregación a nivel de dispositivo se basa en dimensiones relacionadas con la monetización, como la red de monetización, la ubicación y el tipo de anuncio. Por ejemplo, si la aplicación muestra anuncios en dos ubicaciones diferentes, los eventos de ingresos de cada ubicación se agregan por separado en el nivel del dispositivo.
 3. **Entrega de datos**: Los datos a nivel de dispositivo se escriben en la versión única del reporte.
 
+<div id="when-is-the-report-data-available" />
+
 #### ¿Cuándo están disponibles los datos del reporte?
 
 | Tipo de integración | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en | La versión incluye los eventos de ingresos que se producen entre |
 | --- | --- | --- | --- |
 | SDK | Día X+1 | 20:00 | 00:00 — 24:00 |
 | SDK + S2S | Día X+1 | 17:00 | 00:00 — 24:00 |
+
+<div id="how-to-subscribe-to-the-report" />
 
 #### ¿Cómo suscribirse al reporte?
 
@@ -90,11 +100,15 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 
 **Nota:** También puedes seleccionar el mismo reporte para el retargeting y el orgánico (retargeting o ingresos por publicidad orgánica [versión única]).
 
+<div id="how-to-access-the-report-in-your-bucket" />
+
 #### ¿Cómo acceder al reporte de tu bucket?
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
 Con el siguiente formato: `<bucket-name>/t=attributed_ad_revenue/dt=<dt=yyyy-mm-dd>/h=23/`
+
+<div id="report-folder-hierarchy" />
 
 #### Jerarquía de carpetas de reportes
 
@@ -151,6 +165,8 @@ El propósito de recopilar varias versiones del mismo día es capturar las varia
 
 [Descarga el ejemplo de datos del reporte versionado de ingresos por anuncios](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv).
 
+<div id="data-sources-1" />
+
 #### Fuentes de datos
 
 Según el tipo de integración de partners que genere ingresos por publicidad, los datos del reporte pueden proceder de una de las siguientes maneras:
@@ -160,6 +176,8 @@ Según el tipo de integración de partners que genere ingresos por publicidad, l
 * **S2S + SDK:** Cargas útiles que se originan tanto en SDK como en S2S.
 
 Para obtener información sobre cómo configurar el tipo de integración, consulta: Conéctate a partners integrados en los ingresos por publicidad.
+
+<div id="data-flow-1" />
 
 #### Flujo de datos
 
@@ -173,6 +191,8 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 
    **Nota:** Un reporte puede tener más de una agregación a nivel de dispositivo para el mismo dispositivo. Esto puede deberse a que la agregación a nivel de dispositivo se basa en dimensiones relacionadas con la monetización, como la red de monetización, la ubicación y el tipo de anuncio. Por ejemplo, si la aplicación muestra anuncios en dos ubicaciones diferentes, los eventos de ingresos de cada ubicación se agregan por separado en el nivel del dispositivo.
 3. **Entrega de datos**: Los datos a nivel de dispositivo se escriben en varias versiones de reportes de acuerdo con un cronograma predeterminado (que se especifica a continuación).
+
+<div id="when-are-the-report-versions-available" />
 
 #### ¿Cuándo están disponibles las versiones del reporte?
 
@@ -198,6 +218,8 @@ La tabla que se proporciona a continuación describe los programas de generació
 | S2S | Día X+14 | 11:00-12:00 | 00:00 — 24:00 |
 | SDK + S2S | Todas las versiones de SDK y S2S anteriores |  |  |
 
+<div id="how-to-subscribe-to-the-report-1" />
+
 #### ¿Cómo suscribirse al reporte?
 
 1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
@@ -206,11 +228,15 @@ La tabla que se proporciona a continuación describe los programas de generació
 
 **Nota:** También puedes seleccionar el mismo reporte para el retargeting y el orgánico (retargeting o ingresos por publicidad orgánica [versionados]).
 
+<div id="how-to-access-the-report-in-your-bucket-1" />
+
 #### ¿Cómo acceder al reporte de tu bucket?
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
 `<bucket-name>/t=attributed_ad_revenue_v2/dt=<dt=yyyy-mm-dd>/version=<9999999>/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### Jerarquía de carpetas de reportes
 
@@ -278,11 +304,15 @@ El reporte muestra los datos a nivel de impresión divididos en carpetas por hor
 
 [Descarga el ejemplo de datos del reporte sobre el nivel de impresión de ingresos por publicidad](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
 
+<div id="data-source" />
+
 #### Fuente de datos
 
 Los datos del reporte provienen de datos a nivel de impresión enviados por el conector SDK de ingresos por publicidad de ROI360 y requieren una integración tipo SDK.
 
 Para obtener información sobre cómo configurar el tipo de integración, consulta: Conéctate a partners integrados en los ingresos por publicidad.
+
+<div id="data-flow-2" />
 
 #### Flujo de datos
 
@@ -293,11 +323,15 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
    3. Generación de eventos de ingresos por publicidad a nivel de impresión.
 3. **Entrega de datos**: Los eventos de impresión se escriben en archivos divididos por carpetas según la hora de aparición. Cada carpeta solo contiene las impresiones que se produjeron durante esa hora.
 
+<div id="when-is-the-report-data-available-1" />
+
 #### ¿Cuándo están disponibles los datos del reporte?
 
 | Tipo de integración | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en |
 | --- | --- | --- |
 | SDK | Día X | Al final de cada hora reportada |
+
+<div id="how-to-subscribe-to-the-report-2" />
 
 #### ¿Cómo suscribirse al reporte?
 
@@ -305,11 +339,17 @@ Para obtener información sobre cómo configurar el tipo de integración, consul
 2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
 3. Selecciona **Ingresos por publicidad [nivel de impresión del SDK]**.
 
+<div id="how-to-access-the-report-in-your-bucket-3" />
+
+<div id="how-to-access-the-report-in-your-bucket-2" />
+
 #### ¿Cómo acceder al reporte de tu bucket?
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
 `<bucket-name>/t=attributed_adrevenue_sdk_impression_level/dt=<dt=yyyy-mm-dd>/h=<hh>`
+
+<div id="report-folder-hierarchy-2" />
 
 #### Jerarquía de carpetas de reportes
 
@@ -362,9 +402,15 @@ Este reporte presenta raw data diarios a nivel de transacción, divididos en car
 
 [Descarga el ejemplo de datos del reporte de tiendas a nivel de transacciones](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
 
+<div id="data-sources-3" />
+
+<div id="data-sources-2" />
+
 #### Fuentes de datos
 
 Los datos del reporte provienen de las transacciones recopiladas a través del conector de compra del SDK ROI360 y de las notificaciones de almacenamiento de servidor a servidor.
+
+<div id="data-flow-3" />
 
 #### Flujo de datos
 
@@ -372,11 +418,15 @@ Los datos del reporte provienen de las transacciones recopiladas a través del c
 2. El ROI360 de AppsFlyer mediante VIAP/subscripciones procesa los datos, los atribuye y crea eventos y valores a nivel de transacción.
 3. Los eventos a nivel de transacción se escriben en el reporte y se dividen en carpetas por hora.
 
+<div id="when-is-the-report-data-available-2" />
+
 #### ¿Cuándo están disponibles los datos del reporte?
 
 | Día de la versión (X = día de aparición del evento de ingresos) | Versión disponible en |
 | --- | --- |
 | Día X | Al final de cada hora reportada |
+
+<div id="how-to-subscribe-to-the-report-3" />
 
 #### ¿Cómo suscribirse al reporte?
 
@@ -448,11 +498,15 @@ Los datos del reporte provienen de transacciones recopiladas a través de:
 1. El conector de compra SDK de ROI360.
 2. Las tiendas (por ejemplo, la App Store y la tienda Google Play) mediante notificaciones de servidor a servidor.
 
+<div id="data-flow-4" />
+
 #### Flujo de datos
 
 1. Los datos del reporte provienen de las transacciones recopiladas a través de las cargas útiles del conector de compras del SDK ROI360 o de las notificaciones de las tiendas S2S.
 2. El ROI360 de AppsFlyer mediante VIAP/subscripciones procesa los datos, los atribuye y crea eventos in-app.
 3. Los eventos in-app se agregan al nivel del dispositivo y se escriben en una versión de reporte cada cuatro horas.
+
+<div id="when-are-the-report-versions-available-1" />
 
 #### ¿Cuándo están disponibles las versiones del reporte?
 
@@ -463,17 +517,25 @@ Los datos del reporte provienen de transacciones recopiladas a través de:
 | Día X | 20:00 — 21:00 | 00:00 — 20:00 |
 | Día X+1 | 05:00 — 06:00 | 00:00 — 24:00 |
 
+<div id="how-to-subscribe-to-the-report-4" />
+
 #### ¿Cómo suscribirse al reporte?
 
 1. En AppsFlyer, en el menú lateral, selecciona **Reporte >** Data Locker.
 2. En el panel de **contenido de Data Locker**, desplázate hacia abajo hasta el mosaico **ROI360 RevenueETL**.
 3. Selecciona el **reporte de ingresos de tiendas a nivel de dispositivo [versionado]**.
 
+<div id="how-to-access-the-report-in-your-bucket-4" />
+
 #### ¿Cómo acceder al reporte de tu bucket?
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
 `<bucket-name>/t=stores_devicedata/dt=<dt=yyyy-mm-dd>/version=<999999999>`
+
+<div id="report-folder-hierarchy-4" />
+
+<div id="report-folder-hierarchy-3" />
 
 #### Jerarquía de carpetas de reportes
 

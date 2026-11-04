@@ -25,6 +25,8 @@ x-zendesk:
 
 ![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
 
+<div id="website-visits-and-web-events" />
+
 ## Visitas al sitio web y eventos web
 
 * **Reconocimiento de una visita:** PBA registra una visita según las [reglas de reconocimiento de visitas.](/docs/pba-media-source-attribution-rules#visit-recognition-rules)
@@ -58,6 +60,8 @@ Para facilitar la comprensión, la tabla siguiente contiene ejemplos de la fuent
 | Correo electrónico | Propios | Correo electrónico |
 | googleadwords\_int | Paga | El valor puede tener hasta 4 dígitos. |
 | usatoday.com | Obtenido | Referencia |
+
+<div id="determining-the-media-source" />
 
 ## Determinación de la fuente de medios
 
@@ -194,6 +198,8 @@ El canal de medios se determina según las reglas que se indican aquí.
 | utm\_source | utm\_campaign |
 
 </Accordion>
+
+<div id="additional-attribution-rules" />
 
 ## Reglas de atribución adicionales
 

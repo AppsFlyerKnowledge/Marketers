@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **En resumen:** La interoperabilidad de SKAN permite a TikTok compartir postbacks de SKAN con AppsFlyer y permite a AppsFlyer compartir tu mapeo de medición de valor de conversión con TikTok.
 
+<div id="skan-interoperability-appsflyer---tiktok" />
+
 ## Interoperabilidad de SKAN: AppsFlyer &lt;-> TikTok
 
 Si trabajas con varios partners de ad networks, es mejor configurarlo en AppsFlyer. Al hacerlo, las métricas de rendimiento de SKAN, enriquecidas con otras métricas como el costo, están disponibles a través de la plataforma de AppsFlyer.
 
+<div id="scope-of-skan-interoperability-with-tiktok" />
+
 ### Alcance de la interoperabilidad de SKAN con TikTok
 
 La interoperabilidad permite que AppsFlyer y TikTok compartan el mapeo del valor de conversión de SKAN (establecido en AppsFlyer). Esto permite a ambas partes proporcionar métricas de rendimiento. Al habilitar la integración de TikTok for Business (ya sea la integración antigua o la <Anchor target="_blank" href="/marketers/es/docs/tiktok-for-business-advanced-srn-integration-setup">integración avanzada de SRN</Anchor> ), AppsFlyer proporciona eventos de TikTok con fines de optimización. Consulta la <Anchor target="_blank" href="/marketers/es/docs/skan-integrated-partners-list">lista de campos de enriquecimiento</Anchor> admitidos por TikTok.
+
+<div id="tiktok-for-business-guidance" />
 
 ### Orientación de TikTok for Business
 
@@ -56,6 +62,8 @@ TikTok es compatible con SKAN de la siguiente manera:
 * Medición y optimización a través de la API de medición de conversiones.
 * Reportes de campañas dedicadas de iOS 14 en TikTok for Business.
 
+<div id="campaign-limits-for-dedicated-ios-14-campaigns" />
+
 ### Límites de campaña para campañas dedicadas de iOS 14
 
 Debido a las limitaciones de la API de SKAN, TikTok for Business admite lo siguiente al crear campañas dedicadas de iOS 14 (aplicables a los anuncios de instalación de aplicaciones y a los anuncios dinámicos de productos para la prospección de aplicaciones):
@@ -64,6 +72,8 @@ Debido a las limitaciones de la API de SKAN, TikTok for Business admite lo sigui
 * Campañas dedicadas de iOS 14:
   * Se puede crear a partir de varias cuentas publicitarias, pero el número total de campañas activas está limitado a 15.
   * En todos los objetivos relevantes, se tiene en cuenta el límite (15) y, después de alcanzarlo, los anunciantes deben esperar al menos 72 horas después de que una campaña se haya pausado, desactivado o eliminado para liberar un espacio de campaña antes de comenzar una nueva.
+
+<div id="enabling-interoperation" />
 
 ### Habilitación de la interoperabilidad
 
@@ -76,6 +86,8 @@ La interoperabilidad se logra a través de la configuración en los dashboards d
 | <span id="1"></span>1 | Requisitos previos de la aplicación | <ul><li>Integra la última versión del SDK de AppsFlyer en tu aplicación.</li></ul> |
 | <span id="2"></span>2 | Revisión de la configuración de SKAN | Configura y activa la <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">Solución SKAN</Anchor> de AppsFlyer<br /><br />**Para ver los ajustes de SKAN**:<ol><li>En AppsFlyer, ve a **Configuración** > **SKAN Conversion Studio**.</li><li>Haz clic en opciones (⋮), y revisa que la **Medición de SKAN** esté encendida.<br />![skan-settings.png](https://files.readme.io/5a5b9b8b8a809336055340a14e49dacc16c5c0e95cda62c6dfb2ca9a11618d71-27548444964497.png)</li><li>Selecciona el modo de medición que prefieras.<br />Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor>.</li><li>Toma nota de los nombres exactos de los eventos configurados. Los necesitarás en el siguiente paso.</li></ol> |
 | <span id="3"></span>3 | Mapeo de eventos in-app | Revisa y, si es necesario, realiza cambios en tus asignaciones de eventos in-app de TikTok for Business.<br /><br />**Para ver y configurar asignaciones de eventos in-app**:<ol><li>En AppsFlyer, ve a **Configuración** > **Integraciones activas**.</li><li>Busca y selecciona **TikTok for Business**.</li><li>En la pestaña **Integración** asegúrate de que la integración con TikTok for Business esté activada y configurada.</li><li>En la sección **Postback de eventos in app:**<ol><li>[Obligatorio] Si no está activado, activa **Postback de eventos in-app**.</li><li>Verifica que los eventos in-app que establezcas en <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio">SKAN Conversion Studio</Anchor> estén asignados a los nombres de los eventos de TikTok for Business o a los eventos de tu <Anchor target="_blank" href="/marketers/es/docs/skan-cv-decode-map-your-cv-to-events">mapa de conversión personalizado</Anchor>.<br />**Nota:** Solo mapea `af_skad_revenue` al evento `Purchase` de TikTok cuando tu esquema de conversión SKAN mide los ingresos generales.<br />[![](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)](https://files.readme.io/a5b5f9cccacd4cc531a09413e4e5040a8214abc3a8a7f795fbec678e81ab603e-25706935571217.jpg)</li></ol></li><li>Haz clic en **Guardar integración**.</li></ol> |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

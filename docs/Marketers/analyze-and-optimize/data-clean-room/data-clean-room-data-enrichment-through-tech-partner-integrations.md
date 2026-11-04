@@ -28,13 +28,19 @@ x-zendesk:
 
 > **De un vistazo:** Enriquece tus datos y mejora tus reportes de Data Clean Room (DCR) con datos de nuestros partners tecnológicos integrados.
 
+<div id="try-out-this-new-feature" />
+
 > 📘 **¡Prueba esta nueva funcionalidad!**
 >
 > La función de integración con partners tecnológicos está actualmente en beta abierta. Si te interesa activar cualquiera de las integraciones disponibles, solo tienes que ponerte en contacto con tu CSM. Esperamos tu feedback.
 
+<div id="overview" />
+
 ## Visión general
 
 Aunque la comparación de datos de conversión y datos de fuente personalizados es la base del DCR, las posibilidades no terminan ahí. Las integraciones disponibles con nuestros Partners tecnológicos te permiten afinar tu enfoque y mejorar el rendimiento de las campañas.
+
+<div id="cost-considerations" />
 
 > 📘 **Consideraciones de costos**
 >
@@ -47,11 +53,15 @@ Aunque la comparación de datos de conversión y datos de fuente personalizados 
 >
 >    Mientras esta función esté en beta, los datos utilizados de partners tecnológicos **no** se añadirán al número de filas procesadas para las ejecuciones de reportes y no afectarán al cálculo de los créditos utilizados. Los créditos por ejecución de reporte se seguirán cobrando con normalidad (incluso durante los periodos de prueba gratuitos de acceso a los datos).
 
+<div id="available-integrations" />
+
 ## Integraciones disponibles
 
 Haz clic en el nombre del Partner para ver los detalles de activación.
 
 <table><thead><tr><th colspan="2">Fuente de medios</th><th>Tipo de datos y valor empresarial</th></tr></thead><tbody><tr><td><a href="#braze">Braze</a></td><td><img alt="braze_logo.png" src="https://files.readme.io/bbe30eb298ddc9c70bd993ca88bcd100cb02f3eecf7dc4563b2ef9b5e3c394d1-14036503933841.png"/></td><td><p>Braze permite a los anunciantes gestionar y medir el engagement y la conversión de los usuarios después de que se haya instalado una app.</p><p>Conectar el DCR con tus datos de Braze te permite analizar el éxito de tus campañas a la luz de las interacciones de los usuarios con canales de medios propios, como correos electrónicos, notificaciones push y mensajes in-app.</p><p>Por ejemplo, ¿los usuarios adquiridos en una determinada campaña acaban realizando compras o se convierten en suscriptores después de recibir notificaciones push?</p><p><strong>Nota:</strong> Hemos abierto la beta con soporte para el evento <strong>push notification open</strong>, pero podemos añadir de inmediato soporte para cualquier otro evento de Braze que estés midiendo. ¡Solo tienes que decírnoslo!</p></td></tr><tr><td><a href="#startio">Start.io</a></td><td><img alt="start.io_logo.png" src="https://files.readme.io/3aa0db6ddf43d1999bf7014648aa163aa5c535da4d289b039be35a44b97b5aef-14036504920081.png"/></td><td><p><span>Start.io mantiene una gran base de datos de perfiles de usuarios con información sobre sus intereses.</span></p><p><span>Conectar el DCR a esta base de datos puede proporcionarte insights valiosos sobre los intereses de los usuarios que has adquirido, lo que te permite analizar el posible éxito de tus campañas en funcionamiento.</span></p><p><span>Por ejemplo, ¿los usuarios que has adquirido para una aplicación de juego de casino suelen mostrar interés en los juegos de casino? ¿O muestran más bien interés en los juegos de rol? Si no son usuarios habituales de juegos de casino, ¿cumplirá el ROI de la campaña tus expectativas?</span></p><p><span><strong>Notas:</strong></span></p><ul><li> <span>Consulta el </span><a href="https://www.start.io/syndicated-segments/" target="_blank"><span>sitio web de Start.io</span></a><span> para ver los tipos de temas de interés de los usuarios disponibles.</span> </li><li><span>Los datos de Start.io solo están disponibles para usuarios de Estados Unidos.</span></li></ul></td></tr><tr><td><a href="#techsalerator">Techsalerator</a></td><td><img alt="techsalerator" src="https://files.readme.io/072a1b27e4121f8edc15ad478ca16fc35f3e090f110b7761055bd44b14522b0d-16487439752849.png"/></td><td><p><span>Techsalerator mantiene una amplia base de datos de datos de consumidores obtenidos localmente en 144 países, incluidos perfiles demográficos, estilos de vida y comportamientos.</span></p><p>Conectar el DCR a esta base de datos puede proporcionarte insights valiosos sobre los usuarios que has adquirido o a los que has vuelto a captar a través de tus campañas. Después, puedes usar esos insights para optimizar las campañas.</p><p>Por ejemplo, ¿la mayoría de los usuarios adquiridos o vueltos a captar por una campaña pertenecen a un grupo de edad distinto del que la campaña estaba diseñada para alcanzar? ¿Te interesa ampliar el alcance de la campaña para dirigirte a grupos de edad adicionales?</p><p><span><strong>Notas:</strong></span></p><ul><li> <span>Para ver los campos de datos disponibles relevantes, consulta la pestaña <strong>Individual</strong> del </span><a href="https://www.techsalerator.com/data-catalog" target="_blank"><span>catálogo de datos</span></a><span> de Techsalerator.</span> </li><li> <span>Para consultar la disponibilidad de campos de datos por país, echa un vistazo a su </span><a href="https://www.techsalerator.com/data-marketplace" target="_blank"><span>marketplace de datos por país</span></a><span>.</span> </li></ul></td></tr><tr><td><a href="#evorra">Evorra</a></td><td><img alt="evorra.png" src="https://files.readme.io/4b45749fb072fef75ddccec4be35f6231a6d28fee2614d58244fe3e071aa7126-17613191508241.png"/></td><td><p><span>Evorra es un marketplace de datos sin cookies que incluye los ID de más de 1 billón de usuarios de más de 35 proveedores de todo el mundo. Todos los datos cuentan con consentimiento y cumplen la normativa de privacidad.</span></p><p><span>Evorra puede ofrecer una alta tasa de coincidencia basada en correos electrónicos con hash en la mayoría de las principales regiones geográficas, lo que te permite enriquecer los datos de tus usuarios con los siguientes tipos de atributos: demográficos, socioeconómicos, de Retail, de intereses/intención, de entretenimiento, deportes, negocios, tecnología, automóviles y más.</span><br/> </p><p><span>Después, puedes utilizar estos datos de usuario para evaluar y optimizar tus campañas en función de si alcanzan a sus audiencias previstas. Por ejemplo: ejecutaste una campaña de retargeting dirigida a usuarios con intención de comprar billetes de avión para vacaciones familiares. ¿Realmente interactuó con esos usuarios? ¿O en cambio llegó a usuarios con intención de reservar cruceros para solteros?</span></p><p><span><strong>Note:</strong></span></p><ul><li>Ponte en contacto con tu CSM o con <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a> para obtener más información sobre <span>la extensa lista de atributos de usuario disponibles a través de Evorra.</span> </li></ul></td></tr></tbody></table>
+
+<div id="getting-started" />
 
 ## Primeros pasos
 
@@ -61,12 +71,16 @@ Sigue las instrucciones en las pestañas a continuación para activar una o vari
 
 <Accordion title="Braze">
 
+<div id="prerequisites" />
+
 > 🚧 **Prerrequisitos**
 >
 > La integración de Braze utiliza el uso compartido de datos a través de Snowflake. Para utilizar la integración, debes tener:
 >
 > * Una suscripción a Braze que incluya Secure Data Sharing con Snowflake
 > * Los SDK de Braze y AppsFlyer integrados en tu app
+
+<div id="activating-the-integration" />
 
 #### Activar la integración
 
@@ -86,6 +100,8 @@ Una vez que hayas hecho las gestiones necesarias por parte de Braze, no habrá c
 
 <Accordion title="Start.io">
 
+<div id="activating-the-integration-1" />
+
 #### Activar la integración
 
 **Para activar la integración de Start.io, solo tienes que avisarnos.**
@@ -98,6 +114,8 @@ Una vez que hayas hecho las gestiones necesarias por parte de Braze, no habrá c
 <div id="techsalerator" />
 
 <Accordion title="Techsalerator">
+
+<div id="activating-the-integration-2" />
 
 #### Activar la integración
 
@@ -112,6 +130,8 @@ Una vez que hayas hecho las gestiones necesarias por parte de Braze, no habrá c
 <div id="evorra" />
 
 <Accordion title="Evorra">
+
+<div id="activating-the-integration-3" />
 
 #### Activar la integración
 

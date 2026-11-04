@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su viaje como usuarios registrando estos eventos in-app sugeridos para tu aplicación de apuestas deportivas.
 
+<div id="-sports-betting" />
+
 ## <Image alt="balón_de_fútbol.png" src="https://files.readme.io/2c5150b2c50ec166878cd976154dc81c0dc8a1e710fa8869aa582b535313b464-4413968925585.png" width="71px" /> Apuestas deportivas
 
 Las aplicaciones de apuestas deportivas permiten a los apostantes realizar apuestas en una variedad de mercados deportivos. Los eventos típicos que sugerimos registrar son los depósitos, realizar apuestas y las retiradas.
@@ -33,6 +35,8 @@ Registrar estos eventos puede ayudarte a determinar:
 * Ingresos generados a través de las apuestas
 * Qué tipos de apuestas generan los ingresos más bajos o más altos
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > * Asegúrate de leer las <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#configuración-de-eventos-in-app">instrucciones</Anchor> para marketers sobre la implementación de eventos in-app.
@@ -43,6 +47,8 @@ Registrar estos eventos puede ayudarte a determinar:
 > Para obtener más información sobre la grabación de eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía de eventos in-app</Anchor>.
 
 [![In_appEvents_UserJourneys_-_Sports_betting__5_.png](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)](https://files.readme.io/7a47ba917ebc5a6e661efb23b078675c16ce43c59c41f9c6fd6fd89d37c242bf-4424606611473.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -85,6 +91,8 @@ Cuando el usuario completa el proceso de registro y la aplicación confirma el r
 | af\_registration\_method | El tipo de método de registro | correo electrónico, facebook |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

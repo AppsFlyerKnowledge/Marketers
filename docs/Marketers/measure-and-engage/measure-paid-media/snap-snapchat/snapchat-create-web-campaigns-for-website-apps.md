@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **At a glance:** Configura una integración de anuncios de Snapchat para la aplicación de tu sitio web a fin de enviar señales de conversión web a Snapchat mediante la API de conversiones.
 
+<div id="overview" />
+
 ## Descripción general
 
 AppsFlyer admite la integración con anuncios de Snapchat (`snapweb_int`) para campañas de aplicaciones de sitios web, lo que te permite reportar datos de atribución y datos de conversión directamente mediante la API de conversiones de Snapchat. Snapchat puede utilizar estos datos para optimizar la segmentación de anuncios, medir el performance y crear audiencias personalizadas.
 
 Así funciona: un usuario hace clic en un anuncio de Snapchat y llega a tu sitio web. Cuando el usuario completa un evento del sitio web (por ejemplo, una compra o un registro), AppsFlyer envía la señal de conversión a Snapchat mediante la API de conversiones. Snapchat utiliza estos datos para optimizar la segmentación de anuncios y medir el performance de las campañas.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Actualmente, la integración no admite el envío de postbacks de re-engagement mediante la Conversions API.
+
+<div id="prerequisites" />
 
 ### Requisitos previos
 
@@ -38,12 +44,16 @@ Antes de activar la integración de anuncios de Snapchat para la aplicación de 
 * Una aplicación web configurada en AppsFlyer
 * Una cuenta empresarial en <Anchor target="_blank" href="https://ads.snapchat.com/">Snapchat Ads Manager</Anchor>
 
+<div id="how-to-set-up-snapchat-ads-for-your-website-app" />
+
 ### Cómo configurar los anuncios de Snapchat para la aplicación de tu sitio web
 
 La configuración consiste en definir la integración entre los anuncios de Snapchat y AppsFlyer, y configurar la campaña en Snapchat Ads Manager. Incluye los siguientes pasos:
 
 * [Parte 1: Configura la integración de anuncios de Snapchat en AppsFlyer (Obligatorio)](#part-1-configura-la-integraci%C3%B3n-de-snapchat-ads-en-appsflyer)
 * [Parte 2: Configura la integración de AppsFlyer en los anuncios de Snapchat (Obligatorio)](#part-2-configura-la-integraci%C3%B3n-de-appsflyer-en-snapchat-ads)
+
+<div id="part-1-set-up-snapchat-ads-integration-in-appsflyer" />
 
 ## Parte 1: Configura la integración de anuncios de Snapchat en AppsFlyer
 
@@ -90,6 +100,8 @@ Para configurar los postbacks de eventos in-app:
 
 9. Haz clic en **Guardar integración**.
 
+<div id="note-1" />
+
 > 📘 **Note**
 >
 > Si también usas Snap Pixel en tu sitio web, envía el mismo ID de evento a AppsFlyer y Snapchat para que AppsFlyer pueda deduplicar los eventos:
@@ -103,11 +115,15 @@ Para configurar los postbacks de eventos in-app:
 >
 > Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/integrate-appsflyer-web-sdk">[Beta] Integrar AppsFlyer Web SDK</Anchor>.
 
+<div id="note-2" />
+
 > 📘 **Nota**
 >
 > Si envías eventos S2S y quieres que AppsFlyer envíe postbacks de esos eventos a los anuncios de Snapchat, asegúrate de que cada evento incluya `ip` o `user_agent`. Si faltan ambos, AppsFlyer no envía el postback. Para ver todos los campos de evento compatibles, consulta <Anchor target="_blank" href="/marketers/es/docs/server-to-server-s2s-api-for-web-performance-measurement#medir-un-evento">Server-to-Server (S2S) API for Medición del performance web</Anchor>.
 
 </Accordion>
+
+<div id="part-2-set-up-appsflyer-integration-in-snapchat-ads" />
 
 ## Parte 2: Configura la integración de AppsFlyer en Snapchat Ads
 
@@ -152,11 +168,15 @@ Puedes elegir cualquier evento in-app predefinido enviado desde AppsFlyer como o
    https://www.example.com?pid=snapweb_int&c={{campaign.name}}&af_c_id={{campaign.id}}&af_adset={{adSet.name}}&af_adset_id={{adSet.id}}&af_ad={{creative.name}}&af_ad_id={{ad.id}}&af_channel={{site_source_name}}
    ```
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > Snapchat añade automáticamente `ScCid={{ScCid}}` a la URL de destino cuando el usuario hace clic en el anuncio.
 
 </Accordion>
+
+<div id="view-web-attribution-data" />
 
 ## Ver datos de atribución web
 
@@ -165,6 +185,8 @@ Esto es lo que puedes esperar al revisar los datos de atribución después de la
 * **Dashboard:** En <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#crossplatform-dashboard">el dashboard multiplataforma</Anchor>, los datos web y de la aplicación se muestran uno al lado del otro, lo que te ofrece una vista unificada del rendimiento de las campañas en todas las plataformas.
 * Las **exportaciones de raw data y las respuestas de la API** incluyen Snap Web en el campo `media_source` para la actividad web de Snap.
 
+<div id="measure-web-attribution-data-with-web-cost" />
+
 ## Medir datos de atribución web con costo web
 
 Puedes obtener una visión completa del rendimiento de los datos de atribución web y los datos de costo web de Snapchat Ads en el dashboard y en los <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports#set-up-cost-etl">informes de Cost ETL</Anchor>. Para hacerlo, asegúrate de tener <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide#sobre-roi360">el paquete ROI360</Anchor> y completa la siguiente configuración:
@@ -172,12 +194,16 @@ Puedes obtener una visión completa del rendimiento de los datos de atribución 
 1. Conecta el costo a tu aplicación web mediante `snapchat_int` (no mediante `snapweb_int`) desde la pestaña **Costo** o la página **Configuración de costos**. Para más información sobre cómo conectar el costo, consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enabling-cost-api">Configurar la API de costos de ROI360 para medir los datos de costos</Anchor>.
 2. Incluye el ID de la campaña (`af_c_id`) en la URL de la landing page. Asegúrate de que la URL incluya la jerarquía completa de la campaña para ver los costos, clics e impresiones asociados a la atribución web con el mayor nivel de detalle posible.
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 | Caducado | Observaciones |
 | --- | --- |
 | Clics e impresiones | Los clics y las impresiones de las campañas web requieren una <Anchor target="_blank" href="/marketers/es/docs/roi360-onboarding-guide">suscripción a ROI360</Anchor>. |
 | Reengagement | Actualmente no se admite el envío de postbacks de re-engagement mediante la Conversions API. |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

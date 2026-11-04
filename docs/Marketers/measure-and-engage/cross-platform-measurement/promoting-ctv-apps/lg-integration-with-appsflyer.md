@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En resumen:** Integra tu aplicación LG Connected TV (CTV) con AppsFlyer para recibir datos de eventos y atribuciones para tus campañas en LG.
 
+<div id="about-lg-ctv-attribution" />
+
 ## Sobre la atribución de LG CTV
 
 El sistema operativo LG Webos para streaming se ejecuta en todos los televisores LG.
@@ -34,6 +36,8 @@ La integración de LG API admite:
 
 * Smart TVs LG.
 * Atribución CTV-to-CTV y grabación de eventos. Significado, atribución y grabación en el dispositivo LG de un usuario.
+
+<div id="integration-procedures" />
 
 ## Procedimientos de integración
 
@@ -60,6 +64,8 @@ La siguiente tabla enumera las tareas necesarias para integrar tu aplicación LG
 | Atribución determinista | Hay una opción para habilitar la coincidencia determinista del ID de anuncio para Atribución. Para ello, se deben cumplir los siguientes requisitos:<ul><li>LG debe llevar a cabo una revisión legal antes de que se puedan habilitar las aplicaciones de partners de contenido para mostrar el ID de anuncio.</li><li>Esta revisión legal implica que el partner de contenido trabaje directamente con LG Electronics y requiere que ambas partes firmen un acuerdo legal.</li><li>Las aplicaciones de partners de contenido deben integrar la funcionalidad para recopilar y transmitir el ID de anuncio de LG, y lanzar una actualización de la aplicación iniciada por el usuario para empezar a mostrar el ID de anuncio a AppsFlyer.</li><li>Para obtener más información, ponte en contacto con tu CSM de AppsFlyer y con  [partnerships@lgads.tv](mailto:partnerships@lgads.tv)</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

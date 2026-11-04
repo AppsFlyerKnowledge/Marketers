@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **En resumen:** La disponibilidad de los datos depende del tipo de reporte y del período de disponibilidad definido.
 
+<div id="data-availability-windows" />
+
 ## Períodos de disponibilidad de los datos
 
 * Los términos **período de disponibilidad** y **retención de datos** tienen significados diferentes. La <Anchor target="_blank" href="https://www.appsflyer.com/legal/services-privacy-policy/">retención de datos</Anchor> corresponde al período durante el que conservamos los raw data en nuestros servidores y tiene una duración mayor que el período de disponibilidad.
 * La duración del período depende de tu paquete de suscripción.
 * Este artículo no se aplica a <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">Data Locker</Anchor>.
+
+<div id="raw-data-availability-window" />
 
 ### Período de disponibilidad de los raw data
 
@@ -38,6 +42,8 @@ El período de disponibilidad limita los raw data proporcionados por Pull API y 
 | Atribuciones | Instalaciones orgánicas, instalaciones no orgánicas, conversiones de retargeting y desinstalaciones | 60 de los últimos 90 días |
 | Eventos in-app | Eventos orgánicos in-app, eventos no orgánicos in-app y eventos in-app de retargeting | 31 de los últimos 90 días |
 
+<div id="aggregated-data-availability-window" />
+
 ### Período de disponibilidad de los datos agregados
 
 Un período de disponibilidad limita los datos proporcionados por Pull API y la página de exportación de datos agregados. La duración del período depende del tipo de reporte, como se detalla en la siguiente tabla.
@@ -45,6 +51,8 @@ Un período de disponibilidad limita los datos proporcionados por Pull API y la 
 | Reporte | Ventana de disponibilidad |
 | --- | --- |
 | Reportes agregados | 25 meses (2 años + 1 mes), <Anchor target="_blank" href="/marketers/es/docs/bulletin-aggregated-ltv-data-availability">a partir de la primera instalación de la app</Anchor> |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

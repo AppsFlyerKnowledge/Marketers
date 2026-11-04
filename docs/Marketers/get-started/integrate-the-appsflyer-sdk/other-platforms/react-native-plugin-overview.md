@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En resumen:** Integra el SDK de AppsFlyer en aplicaciones iOS/Android desarrolladas con React Native para medir las instalaciones, los eventos in-app, las fuentes de medios y más.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * El plugin es de código abierto y está disponible en <Anchor target="_blank" href="https://github.com/AppsFlyerSDK/appsflyer-react-native-plugin">GitHub</Anchor>.

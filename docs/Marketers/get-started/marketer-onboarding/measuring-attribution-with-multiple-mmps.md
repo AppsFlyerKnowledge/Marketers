@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Descubre qué fuentes de medios son capaces de medir la atribución cuando se trabaja con múltiples MMPs simultáneamente para que puedas comparar los resultados de atribución entre AppsFlyer y tu otro MMP.
 
+<div id="overview" />
+
 ## Visión general
 
 Al buscar migrar de otro MMP a AppsFlyer, los anunciantes pueden querer comparar simultáneamente ambas mediciones de MMP con las mismas fuentes de medios y campañas. Para ello, se deben cumplir los siguientes requisitos:
@@ -30,9 +32,13 @@ Al buscar migrar de otro MMP a AppsFlyer, los anunciantes pueden querer comparar
 
 Sin embargo, no todas las fuentes de medios soportan la medición con más de un MMP.  
 
+<div id="details-and-limitations-of-media-source-measurement" />
+
 ## Detalles y limitaciones de la medición de fuentes de medios
 
 A continuación se muestran los detalles y las limitaciones de la medición de fuentes de medios cuando se trabaja con múltiples MMPs simultáneamente.
+
+<div id="self-reporting-networks" />
 
 ### Redes de autorreporte
 
@@ -46,9 +52,13 @@ A continuación se muestran los detalles y las limitaciones de la medición de f
 | TikTok para empresas | El envío de postbacks a TikTok for Business solo es compatible con un MMP. Al migrar desde otro MMP, para permitir que AppsFlyer atribuya conversiones a TikTok for Business, primero tendrás que desactivar los postbacks del otro MMP y luego configurar AppsFlyer. | X |
 | Anuncios X | X Ads no admite la integración múltiple de MMP | X |
 
+<div id="skan" />
+
 ### SKÁN
 
 El envío de <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#aspectos-básicos-del-skan-conversion-studio">postbacks de conversión SKAN</Anchor> **no es compatible con múltiples MMPs**. Sólo un SDK puede activar el envío de postbacks SKAN a los partners. Esto significa que cuando se integra más de un SDK en tu aplicación, los postbacks de SKAN solo se envían a un SDK.
+
+<div id="non-srn-ad-networks" />
 
 ### Redes de publicidad no SRN
 
@@ -60,9 +70,13 @@ Los enlaces de atribución MMP registran las contrataciones de los usuarios en r
 | Los postbacks de instalación recibidos deben ser deduplicados | Las redes publicitarias reciben postbacks de instalación de ambos MMPs. Para evitar cargos dobles, la red de anuncios debe deduplicar uno de estos postbacks. |
 | Los postbacks de eventos in-app recibidos deben deduplirse | Cuando cada uno de los MMPs está configurado para enviar postbacks de eventos in-app, las redes publicitarias reciben postbacks de eventos in-app de ambos MMPs. Para evitar una doble atribución que resulte en cargos dobles, la red de anuncios debe deduplicar uno de estos postbacks. Si la red de anuncios no puede deduplicar las postbacks dobles de eventos in-app, asegúrate de que los postbacks de eventos in-app estén configurados en un solo MMP. |
 
+<div id="owned-media" />
+
 ### Medios propios
 
 Al igual que con las redes publicitarias no SRN, la atribución de instalaciones desde medios propios requiere el uso de enlaces de atribución MMP. Sin embargo, para algunos tipos de medios propios, como listas de correo electrónico, SMS o códigos QR, los MMPs pueden enviar datos en una sola contratación una sola vez. La solución de <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">atribución móvil web-to-app</Anchor> de AppsFlyer permite medir las **instalaciones provenientes de un sitio web o una landing page**. La ventaja de utilizar medios propios para comparar la atribución de MMP es el hecho de que no se necesita ninguna instalación o deduplicación de eventos.
+
+<div id="avoiding-attribution-discrepancies" />
 
 ## Evita discrepancias de atribución
 

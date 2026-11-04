@@ -32,6 +32,8 @@ Uno de los desafíos con los ESP es realizar una atribución y unos enlaces prof
 
 Sin embargo, los enlaces profundos y el registro de clics siguen siendo posibles con los ESP que admiten enlaces universales y enlaces de aplicaciones además de su dominio de grabación de clics. Además, puedes configurar tu propio dominio de clic para que actúe como dominio de registro de clics.
 
+<div id="prerequisites" />
+
 ## Requisitos previos
 
 * Configura tu aplicación para admitir <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">enlaces profundos con OneLink</Anchor>.
@@ -51,9 +53,13 @@ Sin embargo, los enlaces profundos y el registro de clics siguen siendo posibles
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Configuración del dominio de clic de Oracle Responsys
 
 Sigue esta sección para configurar tu dominio de clic (dominio de registro del clic) en Oracle Responsys.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### Paso 1: Configura un dominio de clic en Oracle Responsys
 
@@ -64,6 +70,8 @@ Para configurar un dominio de clic, sigue la guía oficial de Oracle Responsys s
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 Una vez que configures los dominios de clic en las tablas de enlaces, Responsys utiliza estos dominios para encapsular los OneLink que incluyas en campañas de correo electrónico. De esta manera, Responsys puede registrar clics en su sistema mientras conserva los OneLinks y la funcionalidad de enlaces profundos.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Paso 2: Proporciona a Responsys un archivo AASA (iOS) y un archivo Asset Links (Android)
 
@@ -95,11 +103,15 @@ Cuando configuras OneLink con enlaces de aplicaciones, ya tienes un archivo Asse
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Configuración de tu aplicación
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Paso 1 para Android: Configuración de tu aplicación para que sea compatible con App Links">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Agregar el dominio de clic a la actividad en el manifiesto de Android
 
@@ -117,6 +129,8 @@ En el manifiesto de Android, agrega el host del dominio de clic y cualquier pref
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### Configuración de la aplicación para resolver dominios de clic
 
@@ -145,6 +159,8 @@ Para resolver dominios de clic:
 
 En esta sección se explica cómo configurar tu aplicación para que sea compatible con enlaces universales.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Asociar dominios de clic en Xcode
 
 1. En Xcode, haz clic en tu proyecto.
@@ -153,6 +169,8 @@ En esta sección se explica cómo configurar tu aplicación para que sea compati
 4. Haz clic en el signo + y agrega tu dominio de clic. Por ejemplo, applinks:click.example.com.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### Paso 2: Configurar la aplicación para resolver dominios de clic
 
@@ -223,6 +241,8 @@ Para resolver dominios de clic:
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## Envío de tu primer correo electrónico
 
 1. Crea una URL de OneLink en la página de Gestión de enlaces (o manualmente).
@@ -253,6 +273,8 @@ Para resolver dominios de clic:
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Prueba tus enlaces
 

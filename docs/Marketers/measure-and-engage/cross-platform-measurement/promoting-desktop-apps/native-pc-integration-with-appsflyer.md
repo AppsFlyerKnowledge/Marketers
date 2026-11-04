@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** integra tu juego o aplicación de PC con AppsFlyer para recibir datos de eventos y atribuciones para tus campañas de PC. La integración de Native PC admite la atribución y la grabación de eventos in-app para aplicaciones de PC (en otras palabras, atribución y grabación en la PC de un usuario).
 
+<div id="about-native-pc-attribution" />
+
 ## Acerca de la atribución nativa de PC
 
 La PC nativa se ejecuta en dispositivos Windows, mediante la instalación de una extensión de archivo .EXE o .MSI.
@@ -28,6 +30,8 @@ La PC nativa se ejecuta en dispositivos Windows, mediante la instalación de una
 Esto es diferente del <Anchor target="_blank" href="/marketers/es/docs/windows-sdk-integration-for-developers">SDK 2.4.1 de AppsFlyer para Windows</Anchor>, que funciona con instalaciones de Microsoft App Store, teléfonos Windows y UWP.
 
 Las aplicaciones que se ejecutan en PC pueden integrarse con AppsFlyer a través de API o SDK de S2S para recibir datos de atribución y mediciones de rendimiento sobre qué fuentes y campañas impulsan la apertura de aplicaciones y los eventos in-app. Los marketers se basan en estos insights para medir y optimizar las actividades de marketing.
+
+<div id="example-attribution-flow" />
 
 ### Ejemplo de flujo de atribución
 
@@ -40,6 +44,8 @@ El siguiente es un flujo de ejemplo que destaca los pasos más importantes en el
    La página de inicio también es útil porque proporciona enlaces a las distintas plataformas compatibles con tu juego. Por ejemplo, también puedes tener enlaces a tu Xbox, tienda de Microsoft y página de Steam en tu página de inicio.
 3. Página de la aplicación: Esta es la URL de la página de tu aplicación Native PC, donde los clientes pueden descargar tu aplicación.
 4. Instalación del juego: El usuario instala el juego, lo que activa la atribución y el registro de eventos in-app y sesiones.
+
+<div id="integration-procedures" />
 
 ## Procedimientos de integración
 
@@ -55,9 +61,13 @@ La siguiente tabla enumera las tareas necesarias para integrar tu aplicación pa
 | Configuración del enlace de atribución directa | <ul><li>Si no utilizas una página de destino multiplataforma, puedes crear enlaces de atribución directa para colocarlos detrás de los anuncios.</li><li>Si usas una página de destino multiplataforma, te recomendamos que también uses enlaces de atribución directa y los coloques detrás de los botones específicos de cada plataforma en la página de destino.</li><li><Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">Aprende a crear enlaces de atribución directa</Anchor></li></ul> | Comercializador |
 | Configuración de reportes/ver datos | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilidad-de-datos">Aprender más sobre la disponibilidad de datos en paneles de control y reportes</Anchor> | Marketer/Ingeniero de datos |
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Eliminar los datos de AppsFlyer al desinstalar la aplicación
 
 Para eliminar todos los datos del SDK de AppsFlyer al desinstalar la aplicación, pide a tus desarrolladores que realicen los pasos especificados [aquí](https://dev.appsflyer.com/hc/docs/nativepc-vanilla#deleting-appsflyer-data-on-uninstall).
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 
@@ -65,6 +75,8 @@ Para eliminar todos los datos del SDK de AppsFlyer al desinstalar la aplicación
 | --- | --- |
 | Reorientación | Actualmente no es compatible |
 | Datos de costos | Importa datos de costo a través de <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">Importación de costos</Anchor> usando el método de carga de archivos **por correo electrónico**. También puedes extraer datos **mediante API** para Google, Meta o TikTok. |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

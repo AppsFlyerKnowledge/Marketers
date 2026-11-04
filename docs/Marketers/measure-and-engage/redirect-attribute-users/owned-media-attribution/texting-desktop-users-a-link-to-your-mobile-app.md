@@ -27,6 +27,8 @@ x-zendesk:
 
 ![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
 
+<div id="introduction" />
+
 ## Introducción
 
 Si tu marca tiene tanto una aplicación web como una aplicación móvil, es posible que los usuarios de la web de desktop decidan en algún momento que quieren instalar la aplicación móvil.
@@ -35,9 +37,13 @@ Para ayudarles a hacerlo y ofrecer una mejor experiencia de usuario, puedes envi
 
 Así, no tienen que abrir la tienda de aplicaciones en su móvil, buscar tu aplicación e instalarla. Cuando ahorras tiempo y esfuerzo a los usuarios, es más probable que conviertan e instalen tu aplicación móvil.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Ofrecemos otra solución para la <Anchor target="_blank" href="/marketers/es/docs/qr-to-app-conversion">conversión de desktop a web</Anchor> que solo requiere publicar un código QR (generado a partir de tu OneLink) en tu sitio de desktop.
+
+<div id="requirements" />
 
 ## Requisitos
 
@@ -47,9 +53,13 @@ Para enviar un enlace a tu aplicación móvil por SMS a usuarios de escritorio, 
 2. Un entorno de backend donde puedas gestionar la lógica para enviar enlaces a los usuarios por SMS.
 3. Un enlace personalizado multiplataforma como <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>.
 
+<div id="setting-up" />
+
 ## Configuración
 
 La siguiente sección ofrece una visión general de alto nivel de los requisitos tratados anteriormente.
+
+<div id="sms-provider-account-to-text-a-link-to-the-app" />
 
 ### Cuenta con un proveedor de SMS para enviar un enlace a la aplicación
 
@@ -65,17 +75,25 @@ Consulta la siguiente lista para ver algunos proveedores populares que ofrecen s
 * [Swrve](https://docs.swrve.com/user-documentation/campaigns/campaign-channels/intro-to-sms/)
 * <Anchor target="_blank" href="https://help.mixpanel.com/hc/en-us/articles/115004730066-Send-SMS-Messages-From-Mixpanel">Mixpanel</Anchor>
 
+<div id="a-backend-environment-to-communicate-with-the-sms-provider" />
+
 ### Un entorno de backend para comunicarte con el proveedor de SMS
 
 Los proveedores de SMS requieren tokens de autenticación para usar sus servicios. Además, los números de teléfono de los usuarios son datos sensibles. Por estos motivos, lo mejor es gestionar todo desde tu backend.
+
+<div id="a-multi-platform-custom-link" />
 
 ### Un enlace personalizado multiplataforma
 
 Un enlace personalizado multiplataforma redirige al usuario a la tienda de aplicaciones o al destino correctos según el dispositivo que tenga. De este modo, puedes enviar el mismo enlace a cualquier usuario, independientemente del dispositivo que tenga.
 
+<div id="texting-the-app-to-users" />
+
 ## Enviar la aplicación a los usuarios por SMS
 
 En esta sección se describe el flujo para enviar a los usuarios un enlace a la aplicación por SMS. También se explica cómo hacer el seguimiento del número de usuarios que instalan la aplicación desde el enlace.
+
+<div id="create-a-multi-platform-onelink" />
 
 ### Crear un OneLink multiplataforma
 
@@ -88,19 +106,27 @@ Al enviar OneLink por SMS, lo mejor es usar la versión de enlace corto de OneLi
 
 Para obtener información sobre cómo crear el enlace, consulta <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">aquí</Anchor>.
 
+<div id="set-up-an-sms-topic-in-your-sms-provider-account" />
+
 ### Configura un tema de SMS en la cuenta de tu proveedor de SMS
 
 En este paso, creas un tema o mensaje de SMS que contiene el OneLink a la aplicación. Este SMS se envía cuando los usuarios rellenan y envían un formulario con su número de teléfono. Cuando los usuarios envían el formulario, tu backend recibe la solicitud y se comunica con la API del proveedor de SMS para enviar el enlace.
 
+<div id="set-up-a-web-form-to-collect-phone-numbers" />
+
 ### Configura un formulario web para recopilar números de teléfono
 
 En tu sitio web, en las páginas que elijas, configura una llamada a la acción para animar a los usuarios a instalar tu aplicación. La llamada a la acción debe abrir un formulario web a través del cual los usuarios puedan enviar sus números de teléfono.
+
+<div id="apply-logic-in-your-backend" />
 
 ### Aplica la lógica en tu backend
 
 Al enviar el formulario, el sitio web debe enviar una solicitud a tu backend. El backend recibe el número de teléfono y envía una solicitud al proveedor de SMS para enviar por SMS un enlace a la aplicación al teléfono del usuario.
 
 Consulta la API y la documentación de tu proveedor de SMS para saber cómo crear la lógica en tu backend.
+
+<div id="how-attribution-works-when-sending-a-link-to-the-app" />
 
 ## Cómo funciona la atribución al enviar un enlace a la App
 
@@ -113,6 +139,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windo
 * Android (fuera de la tienda): hasta 24 horas
 
 Anima a tus usuarios a instalar lo más cerca posible del clic para que AppsFlyer pueda atribuir con precisión la instalación al enlace enviado por mensaje de texto. Puedes hacerlo ofreciendo cupones, descuentos o créditos del juego.
+
+<div id="people-based-attribution" />
 
 ## Atribución basada en las personas.
 

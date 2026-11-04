@@ -41,6 +41,8 @@ ProtectLITE <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data
 
 * Está disponible en el reporte de instalaciones de Protect360 a través de la página Export Data y Pull API.
 
+<div id="dashboard" />
+
 ## Panel de Control
 
 Para ver el dashboard de ProtectLITE, en AppsFlyer ve a **Protect360**.
@@ -90,6 +92,8 @@ Las métricas son relevantes para el periodo de tiempo seleccionado en el filtro
 
 Para los KPI de ahorro estimado e instalaciones identificadas, hay un valor porcentual. Este valor muestra la relación del KPI presentado con el rango de fechas paralelo anterior. Por ejemplo, esta semana comparada con la anterior, o cualquier día seleccionado en el rango de fechas comparado con la misma cantidad de días que vinieron antes: si muestra un aumento del X % en el ahorro estimado, significa que el rango de fechas paralelo anterior tuvo un X % menos de instalaciones fraudulentas.
 
+<div id="estimated-savings" />
+
 #### Métricas de ahorro estimado:
 
 [![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
@@ -102,11 +106,15 @@ Métricas de ahorro estimado:
 
 Para conocer más detalles sobre cómo se calcula esta cantidad, lee esta <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide#faq">FAQ</Anchor>.
 
+<div id="identified-installs" />
+
 #### Instalaciones identificadas
 
 [![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
 
 Las métricas de instalaciones identificadas muestran el número de instalaciones identificadas y bloqueadas en tiempo real por ProtectLITE y las Reglas de validación.
+
+<div id="suspected-overall-fraud-threat" />
 
 #### Se sospecha una amenaza de fraude general
 
@@ -123,6 +131,8 @@ El nivel general de amenaza sospechado:
 
 <Accordion title="Instalaciones: gráfico">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### Gráfico de tendencia del fraude en el tiempo
 
 El gráfico muestra el número de instalaciones por día bloqueadas por ProtectLITE y las Reglas de validación durante el periodo seleccionado en el filtro de fechas.
@@ -132,6 +142,8 @@ El gráfico muestra el número de instalaciones por día bloqueadas por ProtectL
 <div id="installs-table" />
 
 <Accordion title="Instalaciones: tabla">
+
+<div id="identified-fraud-breakdown" />
 
 #### Desglose de casos de fraude identificados
 
@@ -150,6 +162,8 @@ La estructura dinámica de la tabla te permite:
 * Cambia el orden de las columnas arrastrando las secciones de columnas en la configuración de columnas.
 
 [![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Contenido de la tabla de desglose de casos de fraude identificados
 

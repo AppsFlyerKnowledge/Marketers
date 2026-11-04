@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **En resumen:** Descubre más sobre las redes de autorreporte (SRN): atribución, deep linking, implicaciones para iOS y preguntas frecuentes.
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## SRNs integradas con AppsFlyer
 
 | **nombres de SRN reservados** | **Logotipo** |
@@ -49,6 +51,8 @@ x-zendesk:
 
 **Nota:** Las SRNs tienen <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">restricciones para el uso y retención de datos a nivel de usuario.</Anchor>
 
+<div id="attribution" />
+
 ## Atribución
 
 A diferencia de las redes no SRN (ad networks), que utilizan enlaces de atribución para reportar eventos a AppsFlyer, las SRNs se autoatribuyen utilizando el ID del dispositivo cuando AppsFlyer notifica sobre una instalación. Para las aplicaciones de iOS, se emplean <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">SKAN</Anchor> y el <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">framework de privacidad avanzada agregada</Anchor> para la atribución.
@@ -57,6 +61,8 @@ La atribución de AppsFlyer tanto para SRN como para no SRN se fundamenta en dos
 
 * Metodologías de último toque y multitoque.
 * Logica estándar de atribución de AppsFlyer para secuenciar los datos relevantes de impresiones y clics.
+
+<div id="how-does-attribution-work-with-srns" />
 
 ### ¿Cómo funciona la atribución con las SRNs?
 
@@ -68,9 +74,13 @@ Las SRN reportan eventos, como nuevas instalaciones y eventos en la aplicación,
 
 Después de que AppsFlyer realice la atribución, se envían postbacks in-app a la SRN durante el <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention#periodos-de-conservación-de-los-datos-de-partners">período de retención de datos del partner</Anchor>.
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### ¿Cómo funciona la atribución con las SRNs Avanzadas?
 
 Las SRN avanzadas efectúan la atribución de la misma manera que las SRNs. Sin embargo, las SRNs avanzadas también pueden atribuir interacciones cuando no hay un ID de dispositivo (IDFA), utilizando el framework de <Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary#privacidad-avanzada-agregada">Privacidad Avanzada Agregada</Anchor>. En ocasiones, la atribución se realiza mediante <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#device-id-matching">coincidencia de ID</Anchor> con doble consentimiento y, para algunas SRNs avanzadas, mediante <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">modelado probabilístico</Anchor> a través de la comunicación por API sobre clics e impresiones.
+
+<div id="install-attribution" />
 
 ### Atribución de instalación.
 
@@ -83,6 +93,8 @@ Cuando se lanza una aplicación por primera vez:
   * El usuario tenga un ID de publicidad.
 * Si ambas condiciones se cumplen, AppsFlyer consulta a las SRNs usando el ID de publicidad.
 * AppsFlyer realiza la atribución tras considerar las afirmaciones de la SRN.
+
+<div id="install-attribution-examples" />
 
 #### Ejemplos de atribución de instalaciones
 
@@ -118,6 +130,8 @@ AppsFlyer proporciona a los anunciantes datos de asistencia (interacciones sin a
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### Ventanas de atribución
 
 Las ventanas de atribución incluyen la retrospectiva y la view-through. Algunas SRNs cobran a los anunciantes por una instalación basada en el costo por mil impresiones (CPM) y el costo por acción (CPA); estos se basan en clics o impresiones que ocurren durante un período de 1 a 28 días.
@@ -130,6 +144,8 @@ Las ventanas de atribución incluyen la retrospectiva y la view-through. Alguna
 * ¿Por qué? Porque AppsFlyer informa el eCPI y eCPA reales según los términos definidos por el anunciante.
 * Las SRNs pueden beneficiarse a corto plazo, dado que generalmente definen sus propias condiciones de pago. No obstante, los anunciantes corrigen esto usando proveedores de atribución de terceros.
 
+<div id="deep-linking-with-srns" />
+
 ## Deep linking con SRNs
 
 Para que los usuarios abran tu aplicación al hacer clic en el enlace, solo necesitas configurar App Links/Universal Links/Esquemas URI. Sin embargo, para realizar deep linking o deferred deep linking a una página o actividad específica de tu app, las SRNs utilizan sus propios métodos, sin involucrar el método de deep linking de AppsFlyer.
@@ -141,6 +157,8 @@ Entonces, ¿cómo puedes integrar a tus usuarios y obtener los datos relevantes 
 <Accordion title="Direct deep linking">
 
 Cuando un dispositivo de usuario realiza un deep linking, el direct deep linking con SRNs se efectúa sin llamar al método de deep linking de AppsFlyer. En el ejemplo a continuación, los usuarios existentes que hacen clic en un anuncio son redireccionados a la actividad directamente mediante los métodos de Facebook, mientras que los usuarios nuevos obtienen la misma experiencia a través de los datos de conversión de AppsFlyer. Descubre cómo <Anchor target="_blank" href="/marketers/es/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta Ads utilizan OneLink para crear deep linking</Anchor>
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -165,6 +183,8 @@ Sin embargo, con otras SRNs, los parámetros de deep linking normales de AppsFly
 
 </Accordion>
 
+<div id="ios-implications" />
+
 ## Implicaciones para iOS
 
 La mayoría de las SRNs son compatibles con SKAdNetwork y tienen la integración necesaria con AppsFlyer.
@@ -174,6 +194,8 @@ La mayoría de las SRNs son compatibles con SKAdNetwork y tienen la integración
 <Accordion title="Atribución de SRN en iOS 14.5">
 
 A partir de iOS 14.5, cuando los usuarios dan su consentimiento de la ATT en ambas aplicaciones, tanto del anunciante como del publisher (<Anchor target="_blank" href="/marketers/es/docs/appsflyer-knowledge-base-glossary#doble-consentimiento">consentimiento dual</Anchor>), las instalaciones de SRN, que se registran en el <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">dashboard de SKAdNetwork</Anchor>, también se muestran en los dashboards tradicionales.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -192,12 +214,16 @@ Las SRNs que reciben postbacks de eventos dependen de la inclusión del ID del d
 * Una disminución en el número de postbacks de eventos enviados a SRNs
 * Discrepancias en el número de postbacks de eventos entre las SRNs y AppsFlyer, que registra todos los eventos.
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > * Si no hay IDFA, los postbacks de instalaciones, aperturas de aplicaciones o eventos internos no se envían a las SRNs. [No obstante, en algunos casos, AppsFlyer envía postbacks a SRNs incluso cuando no hay un ID de publicidad](/docs/self-reporting-networks-srns#does-appsflyer-send-postbacks-for-missing-advertising-ids-idfagaid).
 > * Las ad networks de clics no se ven afectadas, ya que utilizan sus propios identificadores de transacción, en lugar de identificadores de dispositivos, para autoatribuirse la información de los postbacks de eventos.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 
@@ -236,6 +262,8 @@ Si se utiliza una SRN para ejecutar campañas de adquisición de usuarios y reta
 
 **Conclusión:** Es un desperdicio obtener eventos de retargeting a partir de una campaña destinada a adquisición de usuarios.
 
+<div id="is-mistargeting-a-problem" />
+
 #### ¿La orientación incorrecta es un problema?
 
 Analistas de AppsFlyer revisaron campañas de **adquisición de usuarios** de Meta Ads durante un mes específico.
@@ -246,6 +274,8 @@ Analistas de AppsFlyer revisaron campañas de **adquisición de usuarios** de Me
 * **Conclusión: En campañas de adquisición de usuarios SRN, 1 de cada 10 usuarios dirigidos ya es un usuario existente.**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### Solucionar el problema de orientación incorrecta
 

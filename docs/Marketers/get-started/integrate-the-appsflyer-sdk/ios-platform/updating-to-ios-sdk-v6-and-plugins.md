@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **At a glance:** Actualiza una integración existente del SDK/wrapper de AppsFlyer para iOS al SDK V6 para iOS.
 
+<div id="about-ios-sdk-v6" />
+
 ## Acerca del SDK V6 para iOS
 
 Referencia en este artículo al SDK V6.
@@ -38,6 +40,8 @@ El SDK V6 de AppsFlyer para iOS:
 * Incluye cambios significativos en el método de API con respecto a versiones anteriores.
 
 Para obtener información completa sobre el SDK V6 e integrarlo en una nueva aplicación que no tenga una versión anterior del SDK de AppsFlyer, lee nuestra <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">guía de integración del SDK para iOS para marketers</Anchor>.
+
+<div id="update-to-ios-sdk-v6" />
 
 ## Actualización al SDK V6 para iOS
 

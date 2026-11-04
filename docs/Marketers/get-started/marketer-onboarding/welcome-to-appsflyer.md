@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > **De un vistazo:** Descubre qué es la atribución de publicidad móvil y cómo AppsFlyer ayuda a los marketers a precisar su targeting, optimizar su gasto en anuncios y aumentar el ROI.
 
+<div id="what-is-app-attribution" />
+
 ## ¿Qué es la atribución de aplicaciones?
 
 La atribución de aplicaciones móviles **determina qué campañas, partners y canales impulsan las instalaciones de tu aplicación** y los eventos post-instalación, como las compras in-app. Los marketers se basan en estos insights para medir y optimizar tus actividades de marketing tanto en campañas de adquisición de usuarios como de retargeting.
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## ¿qué puedes hacer con AppsFlyer?
 
 <Embed title="Te damos la bienvenida a AppsFlyer" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **De un vistazo:** Cómo iniciar sesión en tu cuenta por primera vez y cómo cambiar entre tus cuentas.
+
+<div id="first-login" />
 
 ## Primer inicio de sesión
 
@@ -48,18 +54,26 @@ Hay varias formas de iniciar sesión en tu cuenta de AppsFlyer:
 * Iniciar sesión con Google: inicie sesión con tu cuenta de Google
 * <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp">Iniciar sesión usando SSO</Anchor>
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Si tu administrador configuró una autenticación de dos factores (<Anchor target="_blank" href="/marketers/es/docs/implementing-and-using-2fa-login">2FA</Anchor>) para tu cuenta, se te pedirá que verifiques el inicio de sesión mediante otro método de autenticación.
+
+<div id="using-multiple-accounts" />
 
 ## multiple accounts.png
 
 Los usuarios pueden existir en varias cuentas con diferentes roles y permisos. Pueden navegar entre sus cuentas sin necesidad de volver a introducir sus credenciales.
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > * Cambiar entre cuentas y cambiar la cuenta principal es compatible con todos los métodos de login: nombre de usuario y contraseña, 2FA e inicio de sesión único (SSO). Para cambiar de cuenta también se necesita un código de verificación de 6 dígitos enviado al correo electrónico del usuario, independientemente del método de login utilizado.
 > * En esta etapa, el cambio entre cuentas está restringido únicamente a las cuentas de anunciante.
+
+<div id="primary-account" />
 
 ### Cuenta principal
 
@@ -73,6 +87,8 @@ La cuenta principal es la cuenta inicial que se creó y actúa como cuenta de in
 2. Accede a la lista de tus cuentas: selecciona **Todas las cuentas (x)**, donde x indica el número total de cuentas.
 3. En el cuadro de diálogo **Mis cuentas**, haz clic en el icono del menú de 3 puntos de la cuenta que quieras establecer como principal y, a continuación, selecciona **Establecer como principal**. Un mensaje confirma el cambio de cuenta.
 
+<div id="switch-between-accounts" />
+
 ### Cambiar entre tus cuentas
 
 1. Cerrar sesión en tu cuenta actual: En la barra de menú, haz clic en el **menú desplegable de direcciones de correo electrónico** > **Cerrar sesión**.  
@@ -84,19 +100,27 @@ La cuenta principal es la cuenta inicial que se creó y actúa como cuenta de in
 4. Haz clic en Cambiar de cuenta.  
    <Image alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
+<div id="note-2" />
+
 > 📘 **Nota:**
 >
 > El código de verificación es válido durante 15 minutos y solo se puede usar una vez.
 
+<div id="get-started" />
+
 ## Comienza
 
 Para comenzar a usar AppsFlyer, consulta nuestra <Anchor target="_blank" href="/marketers/es/docs/getting-started-onboarding-for-marketers">guía paso a paso</Anchor>.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
 > ¿Quieres saber más sobre el ecosistema móvil? Consulta este breve <Anchor target="_blank" href="https://elevate.appsflyer.com/lms/index.php?r=course/deeplink&course_id=7767&generated_by=14109&hash=b421539db1c0352890d6f3e82e7fe9a74c0e5cce">curso informativo en el portal de aprendizaje de AppsFlyer</Anchor>.
 
 Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">Atribución móvil</Anchor> | <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Atribución de CTV</Anchor>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

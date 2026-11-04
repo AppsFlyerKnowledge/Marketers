@@ -32,6 +32,8 @@ x-zendesk:
 ---
 > **At a glance:** Conoce las funcionalidades del SDK de AppsFlyer que están disponibles y decide qué APIs debería usar tu aplicación en Android o iOS.
 
+<div id="about-the-sdk" />
+
 ## Sobre el SDK
 
 Mira este video para obtener una imagen completa de la integración del SDK.
@@ -79,6 +81,8 @@ La documentación adicional incluye lo siguiente:
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## Compatibilidad del SDK
 
 El SDK de AppsFlyer es compatible con las siguientes plataformas:
@@ -110,13 +114,19 @@ Desde la versión SDK V6.0.8, está disponible la <Anchor target="_blank" href="
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## Integración de SDK
 
 El proceso de instalación e integración del SDK requiere la colaboración entre el gerente de producto y el desarrollador móvil. **Antes** de integrar el SDK con tu aplicación, revisa todas las tareas de integración y considera qué funcionalidades deseas que tu aplicación utilice.
 
+<div id="sdk-planning-checklist" />
+
 ### Lista de verificación para la planificación del SDK
 
 Para ayudarte a comenzar, hemos preparado una <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">lista de verificación</Anchor> que te guiará en el proceso de planificación. Para cada tarea, hay enlaces a la documentación para marketers y desarrolladores.
+
+<div id="sdk-integration-tasks" />
 
 ### Tareas de integración del SDK
 

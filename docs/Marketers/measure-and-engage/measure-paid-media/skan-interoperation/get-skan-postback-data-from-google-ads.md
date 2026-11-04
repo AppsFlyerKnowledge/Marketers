@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Permite que Google comparta el contenido de tus postbacks de iOS de la aplicación SKAdNetwork (SKAN) con AppsFlyer.
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Obtener datos de postbacks de SKAN de Google Ads
 
 Si trabajas con varios partners de redes de publicidad, es mejor configurarlo en AppsFlyer. Al hacerlo, las métricas de rendimiento de SKAN para todos tus partners de redes de publicidad, enriquecidas con otras métricas como el costo, están disponibles a través de la plataforma AppsFlyer.
@@ -40,6 +42,8 @@ Debido a la metodología de generación de reportes de clics de Google y su actu
 
 * Los informes de estadísticas agregadas y el panel de control se actualizan retroactivamente.
 * Los <Anchor target="_blank" href="/marketers/es/docs/skan-raw-data-reports">reportes de raw data</Anchor> no cambian retroactivamente. Los datos (proporcionados a través de Data Locker) se proporcionan en carpetas según la fecha en que Google proporcionó los datos a AppsFlyer (fecha de llegada de datos).
+
+<div id="set-up-interoperation" />
 
 ## Configurar la interoperación
 
@@ -80,6 +84,8 @@ Para poder ver las instalaciones de SKAN atribuidas a Google Ads en el panel de 
 11. Lee sobre las [diferencias de medición](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 
@@ -166,6 +172,8 @@ Si has completado los pasos anteriores y las instalaciones siguen sin mostrarse,
 * Solo se admiten campañas de iOS Web-to-app y App-to-app para la medición de SKAN.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

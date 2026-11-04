@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Appcharge, partner integrado de AppsFlyer, es un proveedor de tecnología de comercio para juegos especializado en procesar pagos fuera de los ecosistemas tradicionales de tiendas de aplicaciones. A través de su integración con AppsFlyer, Appcharge puede enviar automáticamente a AppsFlyer datos de compras y reembolsos de la tienda web, lo que permite obtener una visión más completa del retorno de la inversión publicitaria (ROAS) y del valor del ciclo de vida (LTV).
 
+<div id="about-appcharge" />
+
 ## Acerca de Appcharge
 
 <Anchor target="_blank" href="https://appcharge.com/">Appcharge</Anchor>, partner integrado de AppsFlyer, es una plataforma direct-to-consumer (D2C) creada para publishers de juegos para móviles. La integración ayuda a los publishers a monitorizar las compras de su tienda web, un canal de ingresos crítico fuera de las tiendas de aplicaciones tradicionales. Al enviar datos de compras y reembolsos directamente a AppsFlyer, Appcharge permite calcular con precisión el retorno de la inversión publicitaria (ROAS) basándose en los ingresos netos, lo que ofrece mejores insights sobre el rendimiento de la campaña y el valor del ciclo de vida del jugador (LTV).
@@ -33,6 +35,8 @@ La integración de Appcharge te ayuda a:
 * Mantener la coherencia con los datos de tu campaña móvil
 
 Esta guía te explica cómo configurar la integración de Appcharge.
+
+<div id="set-up-the-integration" />
 
 ## Configura la integración
 
@@ -58,13 +62,19 @@ Busca al partner y selecciónalo.
 
 <Accordion title="Pestaña de integración">
 
+<div id="activate-partner" />
+
 #### Activar partner
 
 En tu primera visita, tendrás que activar el conmutador **Activar partner** para configurar la integración. El conmutador debe estar activado mientras trabajes con Appcharge. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Privacidad avanzada
 
 Para las aplicaciones de iOS, aparece el selector de <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada</Anchor>. Cuando se activa, limita el intercambio de identificadores de usuario con el partner. Ten en cuenta que cuando el conmutador <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">Privacidad avanzada agregada</Anchor> toggle se activa en la Configuración de la aplicación, **Privacidad avanzada (para iOS 14.5+ y versiones posteriores)** se activa y se bloquea de forma predeterminada.
+
+<div id="default-postbacks" />
 
 #### Postbacks predeterminados
 
@@ -75,6 +85,8 @@ AppsFlyer envía postbacks predeterminados a Appcharge después de las instalaci
 * **Todas las fuentes de medios, incluidas las orgánicas:** Los postbacks de instalación se envían para los eventos atribuidos a cualquier partner y para eventos orgánicos.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -120,6 +132,8 @@ Los datos de ingresos publicitarios no se admiten en la integración con Appchar
 Los permisos no están disponibles para Appcharge.
 
 </Accordion>
+
+<div id="identify-appcharge-events-in-appsflyer" />
 
 ## Identificar eventos de Appcharge en AppsFlyer
 

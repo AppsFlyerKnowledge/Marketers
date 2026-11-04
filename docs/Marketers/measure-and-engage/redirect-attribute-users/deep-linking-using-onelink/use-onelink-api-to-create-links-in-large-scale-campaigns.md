@@ -26,6 +26,8 @@ x-zendesk:
 
 > **En resumen:** La API de OneLink te ayuda a captar la atención de los usuarios finales y a aprovechar los medios propios mediante la generación de enlaces personalizados en campañas a gran escala, a través de SMS y mucho más. Úsalo para crear viajes fluidos entre canales, profundizar el engagement y mejorar la conversión.
 
+<div id="about-onelink-api" />
+
 ## API de OneLink
 
 La API de OneLink es una función premium que te permite convertir cualquier canal propio en una ruta directa a tu aplicación móvil. Al generar enlaces cortos personalizados de forma programática, puedes ofrecer viajes de usuario personalizados a escala, profundizar el engagement e impulsar más conversiones en SMS, correo electrónico, sitios web, publicaciones en redes sociales y mucho más. Con la API de OneLink, puedes:
@@ -38,9 +40,13 @@ La API de OneLink es una función premium que te permite convertir cualquier can
 * Aplica una validación estricta de parámetros para garantizar un comportamiento de redirección predecible y una medición fiable.
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get-onelink-v2-link-quota">Consulta el uso de la cuota</Anchor> para gestionar el consumo.
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > Una aplicación global de viaje genera millones de enlaces cortos contextuales al día en experiencias de CRM, correo electrónico y QR. Con la API de OneLink v2.0, su plataforma de automatización crea enlaces profundos por usuario que respetan la configuración regional, el nivel de fidelización y los destinos específicos in-app, al tiempo que mantiene la gobernanza y una medición coherente en todos los mercados. Prácticas recomendadas:
+
+<div id="get-started" />
 
 ## Comienza
 
@@ -56,6 +62,8 @@ La API de OneLink es una función premium que te permite convertir cualquier can
    [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
 4. Comparte el ID de la plantilla y el token de API con el desarrollador y pídele que siga estas <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">instrucciones</Anchor>.
 
+<div id="dashboard" />
+
 ## **Panel de Control**
 
 El dashboard de la API de OneLink muestra nuestro uso diario, mensual y trimestral de la API. Esto te ayuda a llevar el monitoreo de tu consumo frente al límite de cuota mensual. 
@@ -63,6 +71,8 @@ El dashboard de la API de OneLink muestra nuestro uso diario, mensual y trimestr
 **Para ver el dashboard de la API de OneLink**: 
 
 En AppsFlyer, en el menú lateral, selecciona **Engage** > **API de OneLink**.
+
+<div id="use-cases" />
 
 ## CASOS DE USO
 
@@ -107,6 +117,8 @@ Habilita enlaces cortos compartibles para programas de referencias de influencer
 **Valor:** Medición escalable y atribución precisa para las referencias.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## **Características y limitaciones**
 

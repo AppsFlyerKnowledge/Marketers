@@ -24,11 +24,15 @@ x-zendesk:
 
 <Embed title="Asistente de IA" typeOfEmbed="youtube" url="https://www.youtube.com/embed/F9PDfKmoUEo" providerUrl="https://www.youtube.com" />
 
+<div id="about-ai-assistant" />
+
 ## **Acerca del Asistente de IA**
 
 El Asistente de IA es tu herramienta de analítica y orientación de autoservicio, creada para ayudarte a descubrir insights y tomar decisiones más inteligentes con AppsFlyer. Úsalo junto con los datos de tu Dashboard para explorar y entender rápidamente el rendimiento de tu marketing.
 
 <Image alt="Demo animada de la ventana de chat del Asistente de IA en AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+
+<div id="what-you-can-do" />
 
 ## **Qué puedes hacer**
 
@@ -40,6 +44,8 @@ Haz preguntas en lenguaje claro al Asistente de IA para obtener:
 * **Análisis de ejecución de Agent Hub**: haz preguntas sobre una ejecución completada de Agent Hub, directamente desde donde la estás revisando. Consulta la <Anchor target="_blank" href="/marketers/es/docs/beta-agent-hub-overview#analizar-la-actividad-con-el-asistente-de-ia">Vista general de Agent Hub [Beta]</Anchor> para saber más.
 
 Las respuestas pueden mostrarse como texto, tablas o gráficos, según lo que mejor se adapte a tu pregunta.
+
+<div id="where-to-open-it" />
 
 ## **Dónde abrirlo**
 
@@ -54,6 +60,8 @@ Las respuestas pueden mostrarse como texto, tablas o gráficos, según lo que me
 3. Consulta las respuestas en texto, tabla o gráficos.
 4. Usa las sugerencias de seguimiento para afinar tu análisis o tu pregunta.
 
+<div id="tip" />
+
 > 👍 **Consejo:**
 >
 > El Asistente de IA responderá de forma distinta según la página desde la que hagas la pregunta.
@@ -61,6 +69,8 @@ Las respuestas pueden mostrarse como texto, tablas o gráficos, según lo que me
 > * Si usas el chat en **My Dashboards**, las respuestas se mostrarán según las aplicaciones seleccionadas, a menos que le indiques otra cosa a la IA.
 > * En cualquier otra página, la respuesta se basará en la primera aplicación de la cuenta, a menos que le indiques otra cosa a la IA.
 > * Se pueden analizar hasta 20 aplicaciones a la vez.
+
+<div id="other-features" />
 
 ### Otras funciones
 
@@ -92,6 +102,8 @@ Desde una ejecución completada en Agent Hub
 
 </Accordion>
 
+<div id="conversation-history" />
+
 ## **Historial de conversaciones**
 
 El Asistente de IA guarda un historial de tus conversaciones para que puedas retomarlas donde las dejaste en lugar de tener que volver a explicar el contexto. Tu historial es privado. Solo tú puedes ver las conversaciones que has tenido; otros usuarios de tu cuenta no pueden verlas.
@@ -115,6 +127,8 @@ El Asistente de IA guarda un historial de tus conversaciones para que puedas ret
 
 * Cuando vuelves a abrir una conversación antigua, cualquier dato que se muestre refleja el momento en que se recuperó originalmente. Si haces una pregunta nueva en esa conversación, el Asistente de IA usa datos actuales para responderla.
 * Se inicia automáticamente un chat nuevo tras un periodo de inactividad, cuando haces clic en "Nuevo chat" o cuando vuelves a iniciar sesión. Tu conversación anterior se guarda en el historial.
+
+<div id="other-information" />
 
 ## **Otra información**
 

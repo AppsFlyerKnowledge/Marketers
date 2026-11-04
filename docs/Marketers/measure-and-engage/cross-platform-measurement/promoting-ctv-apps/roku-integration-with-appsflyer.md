@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen** Rokuads\_int es una integración de SRN que permite a los anunciantes integrar su aplicación móvil o de Roku CTV con Roku Ads para recibir atribuciones y datos de eventos para sus campañas en Roku Ads.
 
+<div id="about-roku-ads-attribution" />
+
 ## Sobre Roku Ads Attribution
 
 Roku es una ad network única que tiene inventario publicitario tanto en Connected TV (CTV) como en aplicaciones móviles. La integración de SRN entre AppsFlyer y Roku Ads permite a los anunciantes medir múltiples trayectorias de usuario, incluyendo:
@@ -31,9 +33,13 @@ Roku es una ad network única que tiene inventario publicitario tanto en Connect
 * Mobile-to-mobile: Anuncios de aplicaciones móviles que impulsan instalaciones y eventos de aplicaciones móviles.
 * CTV-to-mobile y mobile-to-CTV: Impresiones de anuncios en una plataforma que conducen a instalaciones y eventos en una plataforma diferente.
 
+<div id="roku-attribution-flow" />
+
 ### Flujo de atribución de Roku
 
 [<Image alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39654452910737)
+
+<div id="setting-up-roku-ads-integration-for-advertisers" />
 
 ## Configurando la integración de Roku Ads para anunciantes
 
@@ -55,6 +61,8 @@ Roku es una ad network única que tiene inventario publicitario tanto en Connect
 
 <Accordion title="Pestaña integración">
 
+<div id="general-settings" />
+
 #### Configuración general
 
 * **ID del grupo de eventos:** Introduce el ID del grupo de eventos para conectar tu aplicación a AppsFlyer.
@@ -64,12 +72,16 @@ Roku es una ad network única que tiene inventario publicitario tanto en Connect
 * **Uso compartido de datos de Advanced Matching:** Cuando está activado, Roku recibe campos de Advanced Matching, como el correo electrónico con hash, el número de teléfono con hash, el nombre y el apellido con hash, si estos campos se incluyen en la información del evento enviada a AppsFlyer. Para más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/advanced-matching-data-sharing">Uso compartido de datos de Advanced Matching</Anchor>.
 * **Uso limitado de datos:** Activa para indicar que Roku Ads debe limitar su uso de información personal para un evento dado, en estados específicos de Estados Unidos. Para más información, consulta la <Anchor target="_blank" href="https://help.ads.roku.com/en/articles/8766138-limited-data-use">documentación de Roku Ads</Anchor>.
 
+<div id="install-attribution" />
+
 #### Atribución de instalación
 
 Configura las diferentes ventanas de atribución para atribuir nuevas instalaciones (primeros lanzamientos) de usuarios que vieron, hicieron clic o interactuaron con tu anuncio. **Nota:** No se admite la atribución de reinstalaciones (cualquier instalación que no sea la inicial en el dispositivo).
 
 * Establece la **ventana de lookback de click-through** en 1-23 horas o 1-14 días. **Nota:** Roku Ads recomienda establecerlo en 14 días.
 * [Opcional] Activa la **Atribución de instalaciones view-through** y establece la **Ventana de lookback view-through de instalaciones** en 1-23 horas o 1-14 días. **Nota:** Roku Ads recomienda 14 días.
+
+<div id="re-engagement-attribution" />
 
 #### Atribución de re-engagement
 
@@ -79,6 +91,8 @@ Configura las diferentes ventanas de atribución para atribuir nuevas instalacio
 
 [Saber más sobre las reglas y ventanas de re-engagement](#).
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignorar usuarios activos para el retargeting
 
 Establece un marco de tiempo para ignorar los re-engagements de usuarios que lanzaron tu aplicación dentro del marco de tiempo. Esto significa que su actividad durante el marco de tiempo no se atribuye. Para más información, consulta el <Anchor target="_blank" href="/marketers/es/docs/set-retargeting-inactivity-window#periodo-de-inactividad">período de inactividad</Anchor>.
@@ -86,12 +100,16 @@ Establece un marco de tiempo para ignorar los re-engagements de usuarios que lan
 1. Activa **Ignorar usuarios activos para retargeting**.
 2. Configura la **ventana de inactividad**.
 
+<div id="cross-platform-attribution" />
+
 #### Atribución multiplataforma
 
 La atribución multiplataforma está habilitada por defecto para esta integración.
 
 * Establece la **ventana de lookback multiplataforma** en 1-23 horas o 1-3 días.
 * La ventana de prioridad igual multiplataforma está configurada en 3 horas. Cuando está habilitado, las impresiones multiplataforma reportadas por Roku se elevan a la misma prioridad que los clics de otras redes.
+
+<div id="in-app-events-postbacks" />
 
 #### Postbacks de eventos in-app
 
@@ -154,10 +172,14 @@ Después de habilitar los permisos para Roku Ads, puedes agregar miembros del eq
 2. Ingresa el correo electrónico del miembro del equipo de la ad network.
 3. Haz clic en **Añadir**.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > * Cuando le otorgas permiso a Roku Ads para configurar la integración y cambiar los postbacks de eventos in-app, les permites acceder potencialmente a todos los eventos de atribución, incluido el tráfico orgánico y no orgánico de todas las fuentes de medios.
 > * Los cambios que realiza Roku Ads anulan la configuración actual, incluso si tu (el anunciante) los estableces.
+
+<div id="types-of-permissions-advertisers-can-grant-to-roku-ads" />
 
 #### Tipos de permisos que los anunciantes pueden otorgar a Roku Ads
 
@@ -176,9 +198,13 @@ Después de habilitar los permisos para Roku Ads, puedes agregar miembros del eq
 
 </Accordion>
 
+<div id="setting-up-roku-ads-integration-for-agencies" />
+
 ## Configurando la integración de Roku Ads para agencias
 
 Las agencias que trabajan en nombre de los anunciantes pueden activar la integración de Roku Ads y comenzar a obtener atribución por sus campañas. Sin embargo, esta integración tiene algunas limitaciones para las agencias.
+
+<div id="agency-limitations" />
 
 ### Limitaciones para agencias
 
@@ -191,6 +217,8 @@ Las agencias que trabajan en nombre de los anunciantes pueden activar la integra
 2. Encuentra **Roku Ads (rokuads\_int)** y selecciónalo.
 3. Ingresa el **ID de Cuenta de Roku Ads** de tu agencia. Esto identifica el tráfico de la agencia y lo distingue del anunciante.
 4. Haz clic en **Guardar integración**.
+
+<div id="warning" />
 
 > ❗️ **Advertencia**
 >

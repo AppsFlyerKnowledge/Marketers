@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Descubre qué es la atribución multiplataforma basada en usuarios, cómo funciona y cómo configurarla en AppsFlyer.
 
+<div id="what-is-user-based-attribution" />
+
 ## ¿Qué es la atribución basada en usuarios?
 
 Es un modelo multiplataforma que se basa en un <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">ID de usuario cliente (CUID)</Anchor> persistente para vincular eventos de conversión entre plataformas. Mediante el uso del CUID, el modelo atribuye toda la actividad a la fuente de medios original que impulsó el primer evento de conversión del usuario.
@@ -29,11 +31,15 @@ Es un modelo multiplataforma que se basa en un <Anchor target="_blank" href="/ma
 >
 > Si quieres usar re-engagement entre plataformas, asegúrate de seguir leyendo este artículo, ya que aborda el modelo de atribución fundamental. Después, puedes consultar las directrices específicas en "Re-engagement" entre plataformas para atribución basada en usuarios.
 
+<div id="a-cross-platform-user-journey-example" />
+
 ### Un ejemplo de viaje de usuario multiplataforma
 
 Por ejemplo, un usuario hace clic en un anuncio web de Google, se registra y completa una compra en un navegador de desktop. Más tarde, el mismo usuario hace clic en un anuncio móvil de Instagram, instala la aplicación móvil y realiza otra compra in-app. Una semana después, el usuario instala la aplicación CTV de la marca, inicia sesión con el mismo CUID y también inicia una suscripción de pago allí.
 
 Debido a que el CUID identifica constantemente al usuario en todas las plataformas y a que la campaña web de Google fue el primer evento de lanzamiento no orgánico asociado a ese CUID, toda la actividad posterior, incluida la compra de aplicaciones móviles y la suscripción a CTV, se atribuye a la campaña de Google.
+
+<div id="user-based-vs-device-based-attribution" />
 
 ### Atribución basada en usuarios vs basada en dispositivos
 
@@ -53,6 +59,8 @@ La atribución basada en dispositivos acredita $0 a Meta Ads, mientras que la at
 | **Compra en la app para PC** ($100) | Atribuido a **YouTube** (según la interacción reciente a nivel de dispositivo) | Atribuido a **Meta** (el mismo usuario identificado a través del CUID) |
 | **Total de compras** ($150) | **$50 para Orgánico**, **$100 para YouTube** (dividido en campañas) | **$150 total** atribuidos a Meta (fuente única unificada) |
 
+<div id="what-makes-an-event-a-candidate-for-cross-platform-attribution" />
+
 ### ¿Por qué un evento es candidato para la atribución multiplataforma?
 
 Un evento se considera **candidato a atribución multiplataforma** si cumple **todas** las condiciones a seguir:
@@ -63,6 +71,8 @@ Un evento se considera **candidato a atribución multiplataforma** si cumple **t
 * **Pertenece a una línea de productos:** La aplicación que genera el evento debe formar parte de una **línea de productos**, es decir, una agrupación de aplicaciones relacionadas (por ejemplo, iOS, Android, CTV) bajo la misma marca, para las que la atribución se amplía y configura colectivamente. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution#acerca-de-product-line">Agrupar aplicaciones para la atribución multiplataforma</Anchor>.
 * **Dentro de la ventana de restauración de inactividad:** El evento debe estar dentro de la **ventana de inactividad**, es decir, un período configurable (por ejemplo, de 7 a 390 días) durante el cual un CUID se considera activo y elegible para la atribución dentro de una línea de productos determinada. Si el CUID no se ha visto dentro de esta ventana, se descarta su asignación de atribución anterior.
 * **Los campos de atribución a nivel de dispositivo están presentes:** El evento ya debe contener **parámetros de atribución válidos** a nivel de dispositivo (por ejemplo, fuente de medios, ID de campaña) derivados del modelo clásico de atribución basada en dispositivos de AppsFlyer.
+
+<div id="how-is-the-attribution-source-determined" />
 
 ### ¿Cómo se determina la fuente de atribución?
 
@@ -79,6 +89,8 @@ La fuente de medios original atribuida se determina siguiendo la siguiente lógi
 > 📘 **Note**
 >
 > AppsFlyer solo coincide con CUID idénticos **dentro de la misma línea**. No intentamos emparejar, inferir o compartir CUID entre diferentes líneas de productos o clientes. Esto garantiza un enfoque estricto que prioriza la privacidad, manteniendo los datos de cada cliente aislados e independientes.
+
+<div id="the-cuid-enrichment-processing-window" />
 
 #### La ventana de procesamiento de enriquecimiento de CUID
 
@@ -107,6 +119,8 @@ Es el período (de 1-4 horas) durante el cual AppsFlyer procesa los eventos in-a
 >
 > Para maximizar la coincidencia entre plataformas, siempre incluye un CUID en cada evento in-app enviado.
 
+<div id="set-up-cross-platform-attribution" />
+
 ## Configuración de la atribución multiplataforma
 
 Para configurar la atribución multiplataforma, debes aplicar algunas configuraciones en AppsFlyer e implementar funciones específicas del SDK en el código de tu aplicación.
@@ -114,10 +128,14 @@ Para configurar la atribución multiplataforma, debes aplicar algunas configurac
 * **En AppsFlyer**, asigna tus aplicaciones a una línea de producto, opta por la atribución multiplataforma y especifica la ventana de restauración de inactividad. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution#cómo-configurar-una-product-line">Configurar una línea de productos</Anchor>.
 * **En tu aplicación**, configura el SDK de AppsFlyer para enviar eventos con CUID. Para obtener instrucciones para desarrolladores, consulta [Configurar ID de usuario de cliente](https://dev.appsflyer.com/hc/docs/set-customer-user-id).
 
+<div id="view-cross-platform-attribution-results" />
+
 ## Ver resultados de atribución multiplataforma
 
 * Para ver los resultados de la atribución multiplataforma, consulta el <Anchor target="_blank" href="/marketers/es/docs/end-user-events-cross-platform-report-in-data-locker">reporte multiplataforma de eventos de usuario final de Data Locker</Anchor>.
 * **My Dashboards:** Disponible mediante la plantilla «Cross Platform». Para obtener más información sobre cómo seleccionar una plantilla de dashboard, consulta <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#create-dashboard">Crear un dashboard personalizado</Anchor>.
+
+<div id="frequently-asked-questions-faqs" />
 
 ## Preguntas frecuentes (FAQs)
 
@@ -125,12 +143,16 @@ Para configurar la atribución multiplataforma, debes aplicar algunas configurac
 
 Hay varias razones que pueden explicar las diferencias.
 
+<div id="different-attribution-logic" />
+
 #### Lógica de atribución diferente
 
 * **La atribución entre plataformas se basa en el usuario.** Vincula la actividad mediante el CUID y atribuye toda la actividad posterior del Usuario a la cohorte de Campaña del usuario dentro de la línea de Producto.
 * **La atribución clásica de AppsFlyer se centra en el dispositivo** (un ID de AppsFlyer por dispositivo). Esto significa que el mismo usuario real en varios dispositivos o plataformas puede contabilizarse como usuarios distintos y atribuirse a diferentes puntos de contacto.
 
 **Impacto:** Aunque los ingresos totales sean similares, los ingresos por fuente de medios o campaña pueden variar significativamente.
+
+<div id="different-attribution-date" />
 
 #### Fecha de atribución diferente
 

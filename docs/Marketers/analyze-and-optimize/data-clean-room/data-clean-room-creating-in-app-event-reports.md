@@ -24,6 +24,8 @@ x-zendesk:
 
 > **En resumen:** Crea reportes de eventos in-app para centrarte en la actividad del usuario que se produce después de instalar una aplicación. Extrae parámetros de eventos específicos del raw data de tus eventos in-app, haz coincidir los datos con fuentes personalizadas y, luego, procésalos y preséntalos en forma agregada.
 
+<div id="creating-an-in-app-event-report" />
+
 ## Creación de un reporte de eventos in-app
 
 **Para crear un reporte de eventos in-app, sigue los pasos que se detallan en las pestañas a continuación.**
@@ -58,6 +60,8 @@ x-zendesk:
 
 Especifica los datos de origen que se utilizarán para el reporte:
 
+<div id="in-app-event-sources" />
+
 #### **Fuentes de eventos in-app**
 
 * **Aplicaciones:** selecciona una o más de las aplicaciones en tu cuenta de AppsFlyer.
@@ -70,6 +74,8 @@ Especifica los datos de origen que se utilizarán para el reporte:
 | --- | --- |
 | Reengagements | Eventos in-app relacionados con reengagements<ul><li>Un reengagement se registra cuando un usuario inactivo de una aplicación específica interactúa con una campaña de retargeting para la aplicación y posteriormente la abre.</li></ul> |
 | Reatribuciones | Eventos in-app relacionados con las reatribuciones<ul><li>Una reatribución se registra cuando un antiguo usuario de una aplicación específica (que la había desinstalado) participa en una campaña de retargeting para la aplicación y, posteriormente, la reinstala.</li></ul> |
+
+<div id="data-sources" />
 
 #### **Fuentes de datos**
 
@@ -92,6 +98,8 @@ Con el fin de hacer coincidir los datos entre las fuentes, cada una de las fuent
 
 * Los reportes de eventos in-app incluyen **todos** los eventos seleccionados que coincidan con el identificador clave durante el período de tiempo seleccionado.
 
+<div id="what-is-a-key-identifier" />
+
 #### **¿Qué es un identificador clave?**
 
 Puedes asignar a cualquiera de estos identificadores de datos de eventos in-app como **identificadores clave:**
@@ -102,13 +110,19 @@ Puedes asignar a cualquiera de estos identificadores de datos de eventos in-app 
 * **ID de usuario de cliente (CUID):** un identificador de usuario único, generalmente generado y establecido por el propietario de la aplicación en el momento del registro del usuario.
   * El uso de CUID para asignar datos requiere que la aplicación esté configurada para <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">enviar el CUID a AppsFlyer</Anchor> a través del SDK o de la API de servidor a servidor (S2S).
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > No todas las fuentes de medios permiten la coincidencia mediante el CUID. Se recomienda encarecidamente utilizar el ID de AppsFlyer.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Esquemas de asignación (directa/indirecta)**
 
 Si el reporte incluye más de una fuente personalizada, solo es necesario asignar una de ellas **directamente** a un identificador clave de evento in-app. Se pueden asignar otras fuentes personalizadas **directa o indirectamente**, como se ilustra en el siguiente ejemplo:
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -136,6 +150,8 @@ Las pestañas restantes son relevantes para **todos los reportes de eventos in-a
 Recuerda que los datos a nivel de usuario no pueden ser reportados por DCR. En su lugar, te proporciona la información necesaria para la toma de decisiones agregando (o agrupando) los datos por las dimensiones que elijas.
 
 Por lo general, una dimensión es un atributo por el que se clasifican los usuarios de la aplicación (por ejemplo, geolocalización, fecha de instalación, campaña, etc.).
+
+<div id="extracting-dimensions-from-event_value" />
 
 #### **Extracción de dimensiones de event\_value**
 
@@ -173,6 +189,8 @@ Una de las principales ventajas de los reportes de eventos in-app es que te perm
 3. Selecciona **Eliminar campo**.
    * **¡Importante!** Si eliminas un campo extraído de la lista **Dimensiones del reporte**, se eliminará la definición del campo extraído. Si deseas quitar el campo del reporte conservando su definición, selecciona el campo y usa el comando **Quitar** en su lugar.
 
+<div id="selecting-report-dimensions" />
+
 #### **Selección de las dimensiones del reporte**
 
 Las dimensiones del reporte de eventos in-app pueden incluir:
@@ -190,6 +208,8 @@ Las dimensiones del reporte de eventos in-app pueden incluir:
 
 **Nota:** De forma predeterminada, todos los reportes se agrupan por la dimensión de evento in-app **media\_source**. Si no deseas utilizar esta dimensión en el reporte, puedes quitarla de la lista **Dimensiones del reporte**.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Opcional] Personalización de nombres para mostrar de las dimensiones**
 
 De forma predeterminada, los nombres de las dimensiones se muestran en el reporte exactamente como se nombran en los datos de eventos in-app o en las fuentes personalizadas. Si lo deseas, puede personalizar los nombres de las dimensiones para el reporte.
@@ -203,11 +223,15 @@ De forma predeterminada, los nombres de las dimensiones se muestran en el report
 
 **Nota:** Si deseas cambiar el nombre de una **dimensión extraída**, sigue los pasos para editar las dimensiones extraídas (arriba).
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### **Preservación de la privacidad mientras se agrupa por dimensión (reagrupación)**
 
 En función del tamaño del conjunto de datos, el número de dimensiones que elijas y otros factores, es posible que un reporte incluya uno o varios grupos que contengan muy pocos usuarios para permitir la generación de reportes. Si los datos se reportaran de esta manera, se infringirían las restricciones contra el suministro de datos a nivel de usuario.
 
 Sin embargo, en lugar de eliminar u ocultar los datos del reporte por completo, DCR utiliza un **Mecanismo de reagrupamiento** para proporcionar tantos detalles como sea posible mientras se mantiene la privacidad del usuario.
+
+<div id="regrouping-example" />
 
 > 📄 **Ejemplo de reagrupamiento**
 >
@@ -267,6 +291,8 @@ Sin embargo, en lugar de eliminar u ocultar los datos del reporte por completo, 
 >
 > * *Consulta a continuación una opción avanzada que puedes usar para aplicar también el reagrupamiento a las dimensiones de fuentes personalizadas.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Opcional] Administración de la prioridad de las dimensiones**
 
 De forma predeterminada, las dimensiones de eventos in-app se eliminan en orden inverso al orden en el que aparecen en la lista **Dimensiones del reporte**. Sin embargo, puedes modificar la secuencia predeterminada y/o aplicar el reagrupamiento a las dimensiones de fuentes personalizadas seleccionadas (si corresponde) para conservar las dimensiones más importantes para ti.
@@ -291,6 +317,8 @@ De forma predeterminada, las dimensiones de eventos in-app se eliminan en orden 
 <Accordion title="Seleccionar métricas">
 
 Las métricas son los datos numéricos que has recopilado con respecto a un usuario de la aplicación (por ejemplo, pueden incluir ingresos, número de aperturas de la aplicación, LTV, etc.) y pueden ser cualquier campo de datos numéricos de tus fuentes que hayas categorizado como métrica.
+
+<div id="extracting-metrics-from-event_value" />
 
 #### **Extracción de métricas de event\_value**
 
@@ -326,6 +354,8 @@ Al igual que para las [dimensiones del reporte](/docs/data-clean-room-creating-i
 3. Selecciona **Eliminar campo**.
    * **¡Importante!** **Precaución:** Si eliminas un campo extraído de la lista **Métricas del reporte**, se eliminará la definición del campo extraído. Si deseas quitar el campo del reporte conservando su definición, selecciona el campo y usa el comando **Quitar** en su lugar.
 
+<div id="select-report-metrics" />
+
 #### **Seleccionar métricas del reporte**
 
 **Para seleccionar las métricas que se incluirán en el reporte, sigue estos pasos:**
@@ -337,6 +367,8 @@ Al igual que para las [dimensiones del reporte](/docs/data-clean-room-creating-i
    * un recuento de valores distintos
 3. Para quitar una métrica, selecciónala en la lista **Métricas del reporte** y usa la función **Quitar** para devolverla a la lista **Métricas de las fuentes**.
 4. Repite este proceso hasta que hayas agregado cada métrica que desees incluir en el reporte.
+
+<div id="optional-customizing-metric-display-names" />
 
 #### **[Opcional] Personalización de nombres para mostrar de las métricas**
 
@@ -350,6 +382,8 @@ De forma predeterminada, los nombres de las métricas se muestran en el reporte 
 4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
 
 **Nota:** Si deseas cambiar el nombre de una **métrica extraída**, sigue los pasos para editar las métricas extraídas (arriba).
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Opcional] Seleccionar los identificadores que se van a contar**
 
@@ -368,6 +402,8 @@ De forma predeterminada, cada fila del reporte termina con una columna que conti
 
 <Accordion title="Configurar los ajustes del reporte y guardarlo">
 
+<div id="schedule-only-for-reports-without-custom-sources" />
+
 #### **Programación (solo para reportes sin fuentes personalizadas)**
 
 Los reportes sin fuentes personalizadas se ejecutan de acuerdo con la programación que definas.
@@ -376,6 +412,8 @@ Los reportes sin fuentes personalizadas se ejecutan de acuerdo con la programaci
 
 1. Selecciona si desea ejecutar el reporte diariamente o uno o más días a la semana.
 2. Selecciona la hora a la que deseas ejecutar el reporte (la zona horaria es UTC).
+
+<div id="important-1" />
 
 > 🚧 **¡Importante!**
 >
@@ -386,6 +424,8 @@ Los reportes sin fuentes personalizadas se ejecutan de acuerdo con la programaci
 > * Para las fuentes ubicadas en **buckets de almacenamiento en la nube** (Amazon S3 y GCS), DCR reconoce que se ha creado una nueva versión de una fuente cuando detecta que <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#actualización-de-las-fuentes-para-activar-el-procesamiento-de-reportes">se ha cargado una nueva versión de un archivo de fuente</Anchor> junto con el archivo \_SUCCESS que lo acompaña.
 >
 > AppsFlyer busca continuamente nuevas versiones de fuentes para la **fecha actual y 2 días antes**.
+
+<div id="report-destination" />
 
 #### **Destino del reporte**
 
@@ -407,6 +447,8 @@ DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Ancho
 3. El nuevo reporte ahora se muestra en la pestaña **Reportes** de **Data Clean Room**.
 
 </Accordion>
+
+<div id="reference" />
 
 ## Referencia
 

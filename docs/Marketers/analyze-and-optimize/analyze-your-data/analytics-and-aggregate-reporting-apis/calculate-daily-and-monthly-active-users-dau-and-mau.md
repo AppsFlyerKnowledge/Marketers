@@ -21,21 +21,29 @@ x-zendesk:
 ---
 > **En resumen:** Aprende a calcular usuarios activos diarios y mensuales para obtener insights valiosos sobre tus campañas
 
+<div id="overview" />
+
 ## Visión general
 
 Los usuarios activos diarios (DAU) y los usuarios activos mensuales (MAU) son métricas clave para entender el engagement de la aplicación y el comportamiento general del usuario. Proporcionan insights valiosos sobre tu base de usuarios activos, incluyendo la retención de usuarios, el rendimiento de las campañas y las tendencias de crecimiento a lo largo del tiempo.
 
 Este artículo explica cómo calcular DAU y MAU utilizando consultas en dos tablas de raw data de Data Locker que representan la adquisición de usuarios y el tráfico de retargeting: las tablas `sessions` y `sessions_retargeting`.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > A partir de febrero de 2025, el dashboard de actividad en AppsFlyer muestra datos unificados (UA y Retargeting) por defecto. Puedes notar una pequeña diferencia entre los raw data y los números del dashboard debido a <Anchor target="_blank" href="/marketers/es/docs/activity-metrics-in-my-dashboards#especificaciones-y-limitaciones">ajustes algorítmicos aprobados</Anchor>.
+
+<div id="querying-for-active-unique-users" />
 
 ### Consultando usuarios únicos activos
 
 Para calcular usuarios únicos, utiliza `advertising_id` como el identificador principal en tu consulta. Si `advertising_id` no está disponible, sustitúyelo por `appsflyer_id`. Este método se aplica solo a aplicaciones configuradas en <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#attributed-to-the-first-install">modo de primera instalación</Anchor>.
 
 Para aplicaciones que no utilizan este modo, recomendamos aplicar `count(distinct appsflyer_id)`.
+
+<div id="calculate-daily-active-users-dau" />
 
 ## Calcular usuarios activos diarios (DAU)
 
@@ -123,6 +131,8 @@ FROM all_sessions;
 ```
 
 </Accordion>
+
+<div id="calculate-monthly-active-users-mau" />
 
 ## **Calcular Usuarios Activos Mensuales (MAU)**
 

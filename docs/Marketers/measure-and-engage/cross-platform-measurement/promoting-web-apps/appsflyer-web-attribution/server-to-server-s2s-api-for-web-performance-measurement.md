@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **At a glance:** La API S2S para la Medición del performance web te permite enviar visitas web y eventos a AppsFlyer directamente desde tu Servidor, eludiendo las limitaciones del navegador, como los bloqueadores de anuncios y las restricciones de cookies. Úsala junto con el SDK web o por sí sola para obtener Datos de atribución más completos y de mayor calidad y mejor recursos.
 
+<div id="about-the-s2s-api-for-web-attribution" />
+
 ## Sobre la API S2S para la atribución web
 
 AppsFlyer admite dos formas de enviar datos web para la Atribución: el SDK web (del lado del cliente) y la API S2S (server-to-server, o S2S). Puedes usar cualquiera de los dos métodos de forma independiente o combinarlos según tu configuración y tus necesidades.
 
 El SDK web se ejecuta en el navegador. La API S2S te permite enviar los mismos datos desde tu propio backend. Aquí es donde entra en juego: los navegadores centrados en la privacidad y los bloqueadores de anuncios, como Safari ITP, Firefox ETP y Brave, pueden bloquear o limitar la medición del lado del cliente. Las estimaciones del sector sitúan el bloqueo a nivel de navegador entre el 25 y el 40% de los usuarios web. Como las llamadas S2S se originan en tu servidor y nunca pasan por el navegador, no se ven afectadas en absoluto por estas restricciones.
 
+<div id="how-it-works" />
+
 ### Cómo funciona
 
 1. Un usuario visita tu sitio web o activa un evento en el navegador.
 2. Tu servidor recibe el evento.
 3. Tu servidor envía el evento directamente al servidor de AppsFlyer para su atribución.
+
+<div id="why-use-s2s" />
 
 ### ¿Por qué usar S2S?
 
@@ -43,9 +49,13 @@ Esto es lo que implica para ti usar la API S2S, desglosado por ventaja:
 * **Enriquecimiento de datos desde el backend:** Con S2S, tu Servidor puede añadir datos adicionales a los eventos antes de enviarlos, incluidos los ID de Usuario del cliente, el correo electrónico hashed o los números de teléfono hashed, los atributos de CRM, el estado de suscripción o cualquier identificador interno. Esto mejora la resolución de identidades y fortalece la calidad de la señal.
 * **Seguridad:** Las claves de desarrollador, los identificadores de usuario y cualquier dato adicional permanecen en tu servidor y se envían a través de una conexión segura, lo que te brinda un control total sobre lo que sale de tu infraestructura.
 
+<div id="api-specification" />
+
 ## Especificación de la API
 
 URL base: `https://events.appsflyer.com`
+
+<div id="authentication" />
 
 ### Autenticación
 
@@ -56,9 +66,13 @@ Todas las solicitudes deben incluir un token válido de la API S2S y el tipo de 
 | `Autorización` | Token de API: | Tu token de la API S2S se incluye en el encabezado con el siguiente formato:<br /><br />`Authorization: Bearer {s2s-token}` |
 | `Tipo de contenido` | string | Debe ser `application/json`. Obligatorio en todas las solicitudes. |
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Para crear un token de la API S2S, consulta las instrucciones en <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#gestiona-tus-tokens">Gestión de tokens de AppsFlyer</Anchor>.
+
+<div id="measure-an-event" />
 
 ### Medir un evento
 
@@ -117,6 +131,8 @@ Mide un evento web (por ejemplo, una compra, un registro o una acción personali
 
 </Accordion>
 
+<div id="measure-a-visit" />
+
 ### Medir una visita
 
 `POST /v2.0/s2s/visits/app/web/{appId}`
@@ -171,6 +187,8 @@ Mide una visita de página para una aplicación web determinada. Este endpoint c
 
 </Accordion>
 
+<div id="set-up-a-fully-server-side-integration" />
+
 ## Configurar una integración completamente del lado del servidor.
 
 Si estás ejecutando el SDK web junto con S2S, usa [Extracción del afUserID del SDK web](#extracting-the-web-sdk-afuserid) en su lugar. Esta sección es solo para integraciones sin SDK.
@@ -211,6 +229,8 @@ Cada llamada necesita un objeto `user_id` con al menos uno de estos identificado
 Esto es lo que debes recordar: las visitas son mayoritariamente anónimas, así que envía siempre el valor de la cookie. En los eventos del sitio, añade `customer_user_id` una vez que se identifique al usuario y sigue enviando la cookie junto con él. En los eventos que no se originan en el navegador, `customer_user_id` por sí solo es suficiente, siempre que AppsFlyer ya conozca a ese usuario por una sesión identificada anterior.
 
 </Accordion>
+
+<div id="things-to-consider" />
 
 ## Cosas a considerar
 
@@ -268,6 +288,8 @@ Todos los campos de datos personales deben estar hashed con SHA256 antes de envi
 
 </Accordion>
 
+<div id="send-events-via-segment-cdp" />
+
 ## Envía eventos a través de Segment (CDP)
 
 **Puedes usar Segment para enrutar eventos a tu API S2S.** (Segment es una plataforma de datos de clientes, una herramienta que se usa para recopilar eventos de clientes y enviarlos a los destinos configurados)
@@ -286,6 +308,8 @@ AppsFlyer: visita + evento, unidos
 
 El SDK web y Segment son dos rutas paralelas hacia AppsFlyer, unidas por un identificador compartido.
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > Esto abarca los eventos **web** enviados mediante S2S desde un destino personalizado de Segment. Para el wrapper del SDK móvil de Segment, que conecta las instalaciones de la app y los eventos in-app con el SDK móvil de AppsFlyer, consulta en su lugar la <Anchor target="_blank" href="/marketers/es/docs/segment-integration">integración con Segment</Anchor>; se trata de una integración distinta para una plataforma diferente.
@@ -293,6 +317,8 @@ El SDK web y Segment son dos rutas paralelas hacia AppsFlyer, unidas por un iden
 <Accordion title="Configura el destino en Segment">
 
 AppsFlyer todavía no tiene un destino de Segment predefinido para la API S2S, así que tendrás que configurarlo como un destino personalizado en Segment que envíe cada evento al endpoint de S2S. Hay dos formas de hacerlo, según cuánto control necesites sobre el formato de los datos.
+
+<div id="option-1-webhooks-actions-destination" />
 
 #### Opción 1: destino de Webhooks (acciones)
 
@@ -303,6 +329,8 @@ Para configurarlo:
 1. En Segment, añade el destino de Webhooks desde el catálogo de destinos.
 2. Conéctalo a la fuente que recopila los eventos que quieres enviar.
 3. Para cada tipo de evento, crea una asignación que defina la URL de AppsFlyer, establezca el método en POST, añada los encabezados obligatorios y genere el payload JSON a partir de los campos del evento.
+
+<div id="option-2-destination-function" />
 
 #### Opción 2: función de destino
 

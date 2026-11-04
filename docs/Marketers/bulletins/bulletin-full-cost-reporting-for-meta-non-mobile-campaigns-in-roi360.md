@@ -30,7 +30,11 @@ x-zendesk:
 | **Lo que debes hacer** | Si aplicas una lógica interna para completar el costo de Meta en los reportes de canal y geolocalización, elimina esta lógica cuando la actualización se ponga en marcha para evitar reportar el costo de más. |
 | **Lo que debes saber** | **Reporte de canal**<ul><li>Cambio: Hoy, ROI360 solo mide el costo que se asigna claramente a una aplicación móvil (iOS o Android). Después de esta actualización, ROI360 reporta el costo total de las campañas no móviles de Meta y resuelve las aplicaciones mediante datos de atribución y lógica de división de costos. Esto cierra la discrepancia conocida con Meta.</li><li>Impacto: el costo total en el reporte de canal aumenta en los niveles de campaña y aplicación para coincidir con tu gasto real en Meta.</li></ul>Para ver un ejemplo, consulta el [ejemplo de reporte de canal](#REPLACE_CHANNEL_EXAMPLE_ID).<br /><br />**Reporte de geolocalización**<ul><li>Cambio: Hoy, el costo a nivel de geolocalización para las campañas no móviles de Meta solo está disponible para clientes beta. Después de esta actualización, el costo a nivel de geolocalización está disponible para todos los clientes en el dashboard y en el reporte de geolocalización de Cost ETL. ROI360 asigna los costos entre geolocalizaciones y aplicaciones atribuidas mediante lógica de división de costos.</li><li>Impacto: el costo total medido de Meta con granularidad de geolocalización aumenta en los niveles de campaña y aplicación.</li></ul>Para ver un ejemplo, consulta el [ejemplo de reporte de geolocalización](#REPLACE_GEO_EXAMPLE_ID).<br /><br />**Métrica de clics**<ul><li>Cambio: **después de esta actualización, ROI360 usa una métrica de clics de Meta diferente.** Hoy, ROI360 usa la métrica de clics en línea de Meta, que mide solo el número de clics en enlaces a destinos o experiencias seleccionados, dentro o fuera de las propiedades de Meta. Después de esta actualización, ROI360 usa la métrica de clics de Meta, que mide el número total de clics en anuncios. Esto puede incluir clics en enlaces en línea, Me gusta en la página, comentarios en publicaciones y respuestas a eventos.</li><li>Impacto: aumentan los clics que reporta Meta.</li></ul> |
 
+<div id="examples" />
+
 ## Ejemplos
+
+<div id="channel-report-example" />
 
 ### Ejemplo de informe de canal
 
@@ -63,6 +67,8 @@ ROI360 reporta solo el costo que se asigna claramente a las aplicaciones móvile
 | **Total** |  | **$350** |
 
 ROI360 reporta todo el costo a nivel de campaña, en línea con los reportes de Meta. Divide el costo entre las aplicaciones atribuidas (móviles y no móviles).
+
+<div id="geo-report-example" />
 
 ### Ejemplo de reporte por geolocalización
 

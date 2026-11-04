@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** Rendimiento de SKAN enriquecido con puntos de datos adicionales. Similar a los datos en el dashboard de SKAdNetwork. Agrega utilizando la fecha de instalación o la fecha de llegada del postback.
 
+<div id="skan-aggregated-performance-report-api" />
+
 ## API del reporte de rendimiento agregado de SKAN
 
 La API devuelve métricas de atribución informadas por el SKAdNetwork de Apple (datos reales) y otros puntos de datos utilizando la fecha de llegada de instalación o postbacks. El reporte es similar en estructura a los datos presentados en el<Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-overview-dashboard-by-appsflyer">dashboard SKAN</Anchor>.
@@ -37,6 +39,8 @@ La API devuelve métricas de atribución informadas por el SKAdNetwork de Apple 
 2. Entrega a tu desarrollador el token API que se utilizará en el encabezado de autenticación.
 3. Proporciona a tus desarrolladores los parámetros que deben ingresar cuando realicen la llamada a la API, como se describe en la sección siguiente. Los parámetros determinan en qué se enfoca el reporte, cómo se organiza y proporcionan un marco de tiempo para la presentación de reportes.
 4. Dile a tu desarrollador que siga su <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-performance-report-api-get">API de reporte de rendimiento agregado de SKAN</Anchor> en el centro de desarrolladores.
+
+<div id="parameters" />
 
 #### Parámetros
 
@@ -60,6 +64,8 @@ La API devuelve un archivo CSV.
 * Algunas métricas (ingresos, engagement, conversión) dependen de la <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio">configuración de medición del desempeño de SKAN.</Anchor>
 * El reporte incluye solo los eventos in-app que realizaron los usuarios durante el período del reporte. Como tal, el número y la secuencia de las columnas de eventos in-app pueden cambiar de un reporte a otro. No confíes en la secuencia de columnas al diseñar tu proceso de importación de datos.
 * Ejemplos: [V1](https://docs.google.com/spreadsheets/d/e/2PACX-1vSmnyUITQjRxNp6-rz8Xzscu-Rr4Kn2DW1du2VppS-QrpyQSZ0GKQ_qZdWNdNoLuwJAmgh2O-bWiuU3/pub?gid=0&single=true&output=csv) | <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQogLd4w3xgrjQBmEiHLfcvz1e9dtWez_Rdg1OxV8bSRHRE-wxZJItfT6azLr4iZAgsW2Vxr_WVmEYo/pub?gid=0&single=true&output=csv">V2</Anchor>
+
+<div id="report-fields" />
 
 #### Campos de reporte
 

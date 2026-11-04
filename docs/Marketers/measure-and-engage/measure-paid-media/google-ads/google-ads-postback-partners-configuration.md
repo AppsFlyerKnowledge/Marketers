@@ -31,6 +31,8 @@ Algunos partners (por ejemplo, Bidalgo, Adquant), denominados **partners de post
 
 Estos partners de postback de Google Ads (GAPP) también pueden recopilar postbacks para las instalaciones de Google Ads adquiridas directamente por el anunciante, o incluso por otras agencias (consulta los [casos de uso](/docs/google-ads-postback-partners-configuration#casos-de-uso-de-partners-de-postback-de-google-ads)). Utilizando la información de postbacks, los GAPP pueden optimizar las campañas de Google Ads para la aplicación.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Los partners de postback de Google Ads **NO** se atribuyen con instalaciones ni eventos en AppsFlyer.
@@ -39,11 +41,15 @@ El anunciante necesita una cuenta activa de Google Ads <Anchor target="_blank" h
 
 Otros GAPP integrados con AppsFlyer: Blackbox, Appreciate, Marin Software, Miramedia, Mpbisummer, Protonads, Springrain.
 
+<div id="google-ads-postback-partner-setup" />
+
 ## Configuración del partner de postback de Google Ads
 
 1. En AppsFlyer, en el menú lateral, selecciona**Colaborar**>**Integraciones activas** .
 
 2. Escribe el nombre del GAPP con el que te gustaría trabajar en el cuadro de búsqueda y selecciónalo de la lista desplegable.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -61,6 +67,8 @@ Otros GAPP integrados con AppsFlyer: Blackbox, Appreciate, Marin Software, Miram
 
 7. Haz clic en **Guardar**.
 
+<div id="important-notes" />
+
 > 📘 **Notas importantes**
 >
 > * Desactivar la atribución para Google Ads también deja de enviar postbacks a los GAPP.
@@ -68,6 +76,8 @@ Otros GAPP integrados con AppsFlyer: Blackbox, Appreciate, Marin Software, Miram
 >
 >   ![zds_Agency_multiple.png](https://files.readme.io/36112b9a08ca1e6a2150523e1ec39eda5c28a4be826e9f776f5dbd7b1d0c5378-21414553418897.png)
 > * Para trabajar con múltiples GAPP, las campañas para cada GAPP deben ejecutarse desde cuentas de Google separadas. Si cambias de un GAPP a otro, asegúrate de desactivar primero la configuración de GAPP en AppsFlyer.
+
+<div id="google-ads-postback-partners-use-cases" />
 
 ## Casos de uso de partners de postback de Google Ads
 
@@ -127,6 +137,8 @@ Ten en cuenta que estos deben ser CID diferentes entre el anunciante y la agenci
 
 </Accordion>
 
+<div id="available-parameters-for-gapps" />
+
 ## Parámetros disponibles para GAPP
 
 **El contenido de los postbacks depende de la integración inicial de las GAPP con AppsFlyer** y no está relacionado con ninguna configuración de anunciante. Por lo tanto, dos GAPP cualesquiera pueden tener parámetros de postback definidos de manera diferente.
@@ -155,6 +167,8 @@ Hay dos fuentes para los parámetros de postback de GAPP:
    * Tipo de anuncio
    * Métrica de conversión
    * Ubicación
+
+<div id="note" />
 
 > 📘 **Nota**
 >

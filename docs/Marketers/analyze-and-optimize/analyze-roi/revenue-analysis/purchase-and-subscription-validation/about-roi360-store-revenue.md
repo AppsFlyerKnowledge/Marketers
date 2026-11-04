@@ -24,6 +24,8 @@ x-zendesk:
 
 > **En resumen:** usa los ingresos de tienda de ROI360 para validar las compras y suscripciones in-app, evitar duplicados y calcular los ingresos netos.
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > Los ingresos de la tienda ROI360 solo están disponibles para los clientes del plan premium de ROI360. Para verificar tu plan o realizar una actualización, ponte en contacto con tu Customer Success Manager (CSM).
@@ -37,9 +39,13 @@ Los ingresos de tienda de ROI360 son la solución premium de AppsFlyer para la m
 | Fuentes de datos | <ul><li>Conector del SDK de compra de AppsFlyer para Android e iOS</li><li>Notificaciones del servidor de la App Store</li><li>Notificaciones para desarrolladores en tiempo real de Google Play (RTDN)</li></ul> |
 | Reportes y disponibilidad de datos | Los datos de ingresos están disponibles en los dashboards y reportes de AppsFlyer, y también se pueden compartir con partners mediante postbacks. |
 
+<div id="warning" />
+
 > ❗️ **Advertencia**
 >
 > Cuando uses los ingresos de tienda de ROI360, no envíes eventos de compra in-app, ya que esto dará lugar a informes de ingresos duplicados.
+
+<div id="how-does-roi360-store-revenue-work" />
 
 ## ¿Cómo funcionan los ingresos de tienda de ROI360?
 
@@ -55,6 +61,8 @@ Los ingresos de tienda de ROI360 son la solución premium de AppsFlyer para la m
    * Se eliminan las notificaciones relativas a transacciones desconocidas.
    * Para iOS, todas las notificaciones del servidor se pueden redirigir a tus propios servidores.
 
+<div id="activate-roi360-store-revenue" />
+
 ## Activa los ingresos de tienda de ROI360
 
 Para activar la medición de ingresos de tienda de ROI360, sigue estos pasos:
@@ -64,13 +72,19 @@ Para activar la medición de ingresos de tienda de ROI360, sigue estos pasos:
 3. En **1 Choose Product type**, selecciona **ROI360**.
 4. Haz clic en **Siguiente** para continuar.
 
+<div id="set-up-roi360-store-revenue" />
+
 ## Configuración de Store Revenue de ROI360
 
 Consulta el artículo <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue">Configurar los ingresos de tienda de ROI360</Anchor>
 
+<div id="reference" />
+
 ## Referencia
 
 En las siguientes secciones se ofrecen más detalles sobre aspectos clave de la medición de compras in-app (IAP) e ingresos por suscripción de ROI360. Esto incluye eventos y parámetros para eventos de IAP y suscripción, ingresos netos, que admiten cálculos de ingresos brutos a netos, y las características generales y limitaciones de la solución de medición de ingresos de IAP y suscripción de ROI360.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -987,11 +1001,15 @@ En la siguiente tabla se describen los parámetros de raw data disponibles en lo
 
 Los ingresos netos son una capa de lógica empresarial creada para dar servicio a la solución de ingresos de tienda de ROI360. Calcula automáticamente el valor de los ingresos netos de cada transacción entrante en tiempo real y lo incluye en los reportes.
 
+<div id="note-1" />
+
 > 📘 **Advertencia**
 >
 > Los ingresos netos se muestran en los reportes de raw data y se pueden enviar en tiempo real mediante postbacks de eventos in-app. También está disponible en <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards</Anchor> como métricas netas (ingresos netos, ROI neto, ROAS neto, ARPU neto, beneficio neto).
 >
 > Para enviar los ingresos netos en los postbacks, configura el evento in-app con la opción **Valores, ingresos & ingresos netos**. Consulta <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks">Configuración del postback de eventos in-app</Anchor> para obtener más información.
+
+<div id="tip" />
 
 > 📘 **Consejo**
 >

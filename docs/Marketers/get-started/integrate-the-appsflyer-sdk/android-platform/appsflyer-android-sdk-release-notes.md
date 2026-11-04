@@ -26,9 +26,13 @@ x-zendesk:
 
 **Las versiones antiguas del SDK para iOS y Android dejarán de ser compatibles con un ciclo fijo de seis meses.** Este ciclo está diseñado para proporcionar aviso previo, lo que ayuda a los equipos a planificar con anticipación y mantener la funcionalidad completa de la aplicación sin interrupciones. La actualización a la última versión del SDK garantiza el acceso a las funciones más recientes, una estabilidad mejorada y soporte continuo.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > Para garantizar una transición fluida, se anima a los desarrolladores de aplicaciones a actualizar a la última versión del SDK antes de la fecha de finalización del soporte.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## Fin del soporte vs Obsoleto
 
@@ -36,6 +40,8 @@ AppsFlyer distingue entre las versiones del SDK **obsoletas** y las de **fin del
 
 * **Versiones obsoletas:** Versiones del SDK que ya no se recomiendan debido a problemas conocidos, como errores críticos. Estas versiones aún pueden enviar datos a AppsFlyer, pero se desaconseja su uso continuo y se recomienda encarecidamente actualizar a una versión compatible. Se recomienda encarecidamente actualizar a una versión compatible.
 * **Versiones de fin del soporte:** Versiones del SDK para las que la medición está completamente detenida en todas las plataformas. Tanto para Android como para iOS, no se medirán las instalaciones, sesiones y eventos in-app. Cualquier tráfico de estas versiones (a menos que el equipo de producto lo excluya específicamente) recibirá un código de estado 400, lo que significa que el SDK intentará enviar llamadas de API como de costumbre, pero los servidores de AppsFlyer las rechazarán y los datos no se procesarán.
+
+<div id="android-sdk-releases" />
 
 ## Lanzamientos del SDK para Android
 
@@ -66,6 +72,8 @@ La siguiente tabla proporciona notas de lanzamiento para las versiones compatibl
 | 6.14.0  <br />Fin del soporte:  <br />2027-03-08 | 18-12-2023 | <ul><li>Se ha agregado compatibilidad con el flujo de validación de compras actualizado. Esta función se encuentra actualmente en beta cerrada. Saber más</li><li>Se actualizó la integración de Huawei Referrer. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/install-android-sdk#huawei-install-referrer">Saber más</Anchor>.</li></ul> |
 | 6.13.1  <br />Fin del soporte:  <br />2027-03-08 | 25-10-2023 | Mantenimiento del SDK |
 | 6.13.0  <br />Fin del soporte:  <br />2027-03-08 | 31-08-2023 | <ul><li>Se agregó soporte para la nueva política de consentimiento de la UE de Google.</li></ul> |
+
+<div id="unsupported-sdk-versions" />
 
 ## Versiones del SDK no compatibles
 
@@ -118,6 +126,8 @@ Las siguientes versiones del SDK han alcanzado el estado de **finalización del 
 | 6.1.0  <br />Fin del soporte: 2024-08-31 | 09-11-2020 | <ul><li>Se agregó soporte para la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl">API de deep linking unificado</Anchor></li></ul> |
 | 6.0.1  <br />Fin del soporte: 2024-08-31 | 28-10-2020 | Mantenimiento del SDK |
 | 6.0.0  <br />Fin del soporte: 2024-08-31 | 2020-10-14 | <ul><li>Cambios importantes en la funcionalidad del SDK y en la API, incluidos cambios en los nombres de los métodos y en las versiones obsoletas. [Saber más](/docs/appsflyer-android-sdk-release-notes#android-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

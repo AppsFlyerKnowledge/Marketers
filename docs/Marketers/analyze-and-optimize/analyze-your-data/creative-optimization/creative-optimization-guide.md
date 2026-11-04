@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
 
+<div id="about-creative-optimization" />
+
 ## Sobre la Optimización Creativa
 
 La **Optimización Creativa** es tu ventanilla única para medir el rendimiento de las creatividades utilizadas en todas tus campañas. Te permite extraer sin esfuerzo todos tus recursos creativos de todos los canales de medios en una sola plataforma, o en tu sistema de BI, y analizar su rendimiento por dimensiones seleccionadas, a través de múltiples campañas, canales y mucho más. La Optimización Creativa te permite dividir y segmentar por diferentes métricas y KPIs para obtener insights críticos antes de planificar, seleccionar y producir tu próximo lote de creatividades.
@@ -48,6 +50,8 @@ Con la Optimización Creativa puedes:
 * Identificar la disminución de la eficacia de las creatividades a lo largo del tiempo/canales/campañas y tomar decisiones informadas para la optimización
 * Y más
 
+<div id="creative-assets" />
+
 ## Recursos creativos
 
 Esta sección proporciona información sobre los recursos creativos que medimos.
@@ -63,6 +67,8 @@ Los tipos de recursos compatibles con el dashboard de optimización creativa inc
 * Anuncios en carrusel (solo Meta)
 * HTML (incluido ejecutable)
 * Texto
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -91,6 +97,8 @@ La optimización creativa tiene la capacidad única de identificar qué recursos
 
 Meta Advantage+ (creatividades dinámicas) y Google Universal App Campaigns (UAC) pueden incluir creatividades publicitarias con múltiples recursos. Sin embargo, AppsFlyer no desglosa los datos a nivel de recurso. Anuncios de Meta proporciona datos hasta el **nivel de anuncio** y Google proporciona datos solo hasta el **nivel del grupo de anuncios**. Para estos tipos de creatividades publicitarias, AppsFlyer utiliza el modelado de datos para dividir los datos de rendimiento entre los recursos.
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > Supongamos que hay un anuncio creativo en Facebook con múltiples recursos. Facebook lo atribuye con 100 instalaciones en total, desglosado en activos de la siguiente manera: el **recurso A** tiene 60 instalaciones y el **recurso B** tiene 40 instalaciones, según lo medido por Facebook. En AppsFlyer, digamos que al anuncio se le atribuyen 50 instalaciones (debido a diferencias de atribución inherentes entre AppsFlyer y SRN). Para permitir el análisis a nivel de activos, AppsFlyer distribuye los datos de performance (impresiones, clics, instalaciones y costo) en función de la relación de métricas de activos del total, como se ilustra a continuación.
@@ -109,6 +117,8 @@ Meta Advantage+ (creatividades dinámicas) y Google Universal App Campaigns (UAC
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## Uso del dashboard
 
@@ -276,6 +286,8 @@ La siguiente tabla enumera todos los partners de optimización creativa, con la 
 
 Descargar archivo: <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=csv">CSV</Anchor>, <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTQLUxhNMmBPTlm1_KsfLTupNL6tgZeqAt5OFwzLJUmhSXZ7K18aX6enuV4ST1mUVarUV-KPrUnMYS6/pub?output=xlsx">XLS</Anchor>
 
+<div id="to-set-up-partner-metrics" />
+
 #### **Para configurar las métricas de partners:**
 
 Simplemente agrega una nueva integración de partners y las métricas para los partners compatibles se incorporarán automáticamente a la Optimización Creativa (Unity Ads es una excepción y tiene **instrucciones especiales**). Una vez que se configuran, estas métricas se indican con "Partner" junto a la métrica.
@@ -349,6 +361,8 @@ Simplemente agrega una nueva integración de partners y las métricas para los p
         ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
      5. Copia el **ID de la organización**
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Recomendamos ingresar las credenciales de métricas de partners al configurar una nueva integración de partners. Sin embargo, no es obligatorio. Puedes guardar la integración y agregar las credenciales en un momento posterior. Pero ten en cuenta que extraemos 90 días de datos de partners desde el momento en que se crea la integración del partner, por lo que no ingresar las credenciales de la métrica del partner puede resultar en la falta de datos.
@@ -365,6 +379,8 @@ Después de seleccionar tus filtros, puedes guardar tus selecciones para tener a
 
 **Nota**: Un indicador naranja aparece junto a la vista actual si has realizado cambios en la configuración del dashboard sin guardar la vista.
 
+<div id="save-private-dashboard-view" />
+
 #### **Guardar vista del dashboard privado**
 
 **Para guardar una vista del dashboard privado (solo visible para ti):**
@@ -373,6 +389,8 @@ Después de seleccionar tus filtros, puedes guardar tus selecciones para tener a
    ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
 2. Ingresa un nombre para el dashboard y hax clic en **Guardar**.
 3. Utiliza los íconos del menú para editar y eliminar vistas del dashboard, cambiar la configuración de uso compartido de privada a compartida, o marcar una vista como favorita, estableciéndola como la vista predeterminada que se mostrará al iniciar sesión.
+
+<div id="save-shared-dashboard-view" />
 
 #### **Guardar vista de dashboard compartido**
 
@@ -384,6 +402,8 @@ Después de seleccionar tus filtros, puedes guardar tus selecciones para tener a
    La vista está guardada y aparece en la lista de vistas del dashboard para todos los demás usuarios de la cuenta.
 3. Utiliza los íconos del menú para editar y eliminar vistas del dashboard, cambiar la configuración de uso compartido de compartida a privada, o marcar una vista como favorita, estableciéndola como la vista predeterminada que se mostrará al iniciar sesión.
 
+<div id="share-view-url" />
+
 #### **Compartir URL de vista**
 
 **Para compartir una URL de vista con otro usuario de cuenta:**
@@ -393,6 +413,8 @@ Después de seleccionar tus filtros, puedes guardar tus selecciones para tener a
   **Nota**: Las URL de vista se pueden compartir incluso para dashboards privados. Cuando se abre la URL del dashboard privado, el nombre del reporte que se muestra es "Reporte no guardado".
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## Etiquetas personalizadas
 
@@ -524,6 +546,8 @@ Esto es útil para equipos creativos y de marketing cuyas creatividades se nombr
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

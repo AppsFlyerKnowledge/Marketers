@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **En resumen:** Activa o desactiva las integraciones de partners para permitir o denegarles el acceso a tus datos y la realización de acciones.
 
+<div id="activation-overview" />
+
 ## Resumen general de la activación
 
 Las integraciones de partners pueden estar activas o inactivas. Se activa una integración encendiendo primero el interruptor **Activar partner** en la página principal de integración. Existen varios tipos de integración. Una integración también se considera activa si cualquier otro [tipo de integración](#id) (ver la tabla a continuación) está activado, incluso si el interruptor **Activar partner** está desactivado.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -66,6 +70,8 @@ La siguiente tabla presenta el impacto de las configuraciones de activación de 
 
 </Accordion>
 
+<div id="activate-a-partner-integration" />
+
 ## Activar la integración de un partner
 
 **Para activar o editar la integración principal (pestaña Integración) de la aplicación seleccionada actualmente:**
@@ -78,9 +84,13 @@ La siguiente tabla presenta el impacto de las configuraciones de activación de 
 
 Consulta [otros tipos de integración](#id).
 
+<div id="caution" />
+
 > ❗️ **Precaución**
 >
 > Asegúrate de no utilizar la configuración **Activar partner** para pausar o finalizar campañas. Hacerlo podría causar daños irreversibles a la medición de campañas que están en curso.
+
+<div id="who-can-activate-an-integration" />
 
 #### ¿Quién puede activar una integración?
 
@@ -90,6 +100,8 @@ Las integraciones con partners pueden ser activadas por marketers y agencias seg
 | --- | --- | --- |
 | Comercializador | Se activa para uso propio y en nombre de las agencias. | Se activa para uso personal |
 | Agencia | No se puede activar | Activa los no SRN designados por la agencia |
+
+<div id="deactivate-a-partner-integration" />
 
 ## Desactivar la integración de un partner
 
@@ -109,9 +121,13 @@ Puede desactivar la integración de un partner en tu aplicación desactivando el
    2. Selecciona una aplicación diferente de la lista desplegable.
    3. Repite los pasos 2 a 4.
 
+<div id="partner-and-agency-access-to-dashboards" />
+
 ## Acceso de partner y agencias a los dashboards
 
 Los partners y las agencias tienen diferentes vistas del dashboard y opciones de configuración, de acuerdo con sus permisos.
+
+<div id="partner-visibility" />
 
 ### Visibilidad de los partners
 
@@ -122,6 +138,8 @@ Los partners y las agencias tienen diferentes vistas del dashboard y opciones de
 | --- | --- |
 | Comercializador | Sí |
 | Agencia | No |
+
+<div id="agency-permissions" />
 
 ### Permisos de la agencia
 
@@ -134,10 +152,14 @@ Puede otorgar permiso a las agencias para trabajar con tu aplicación y generar 
 3. Ve a la pestaña **Permisos** y activa los **Permisos de agencia.**
 4. [Opcional] Concede a la agencia <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permisos-de-la-agencia">permisos</Anchor> adicionales.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > * Una **agencia** puede activar o desactivar la opción **Activar partner** para **partners no SRN**.
 > * Un **marketer** puede activar o desactivar la opción **Activar partner** para las **SRNs**. Al hacerlo, las instalaciones de ese SRN **no se atribuyen a la agencia**.
+
+<div id="disabled-agency-permissions" />
 
 #### Permisos de agencia desactivados
 
@@ -152,6 +174,8 @@ Cuando los permisos están desactivados para las agencias:
 
 Los siguientes ejemplos describen lo que ocurre con el tráfico que continúa siendo enviado después de que un marketer retire los permisos de la agencia:
 
+<div id="example-1" />
+
 > 📄 **Ejemplo 1**
 >
 > **Campaña de agencia con un no SRN (partner de enlace de atribución)**
@@ -159,6 +183,8 @@ Los siguientes ejemplos describen lo que ocurre con el tráfico que continúa si
 > El tráfico se atribuye como orgánico o a un engagement previo si aún está dentro de su ventana de lookback. La agencia no se atribuye.
 >
 > Este ejemplo también se aplica a escenarios en los que AppsFlyer recibe enlaces de atribución de clics y consulta la API del partner.
+
+<div id="example-2" />
 
 > 📄 **Ejemplo 2**
 >

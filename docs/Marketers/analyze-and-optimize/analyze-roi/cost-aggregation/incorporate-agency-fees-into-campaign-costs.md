@@ -28,6 +28,8 @@ x-zendesk:
 
 > **Resumen:** Las reglas de tarifas de agencia forman parte de la función premium ROI360 de AppsFlyer, que permite a los anunciantes añadir los porcentajes de tarifas que las agencias cobran por el tráfico para poder ver el costo total de la campaña.
 
+<div id="overview" />
+
 ## Visión general
 
 El anunciante (con privilegios de administrador de la cuenta de AppsFlyer) define las reglas de tarifas de agencia en el creador de reglas mediante condiciones personalizadas que añaden porcentajes de tarifa al costo de las campañas de agencia para aplicaciones y/o fuentes de medios específicas.
@@ -40,6 +42,8 @@ Las reglas de agencia ayudan a los anunciantes a:
 * Ahorrar tiempo y esfuerzo manual al reportar datos de costo
 * Gestionar el rendimiento de la agencia
 * Analizar con precisión los datos históricos de costo
+
+<div id="procedures" />
 
 ## Procedimientos
 
@@ -82,6 +86,8 @@ La interfaz de usuario del creador de reglas está diseñada para la creación d
 8. Introduce el porcentaje de la tarifa de agencia. Puede ser un número entre 100 y -100 (para reflejar descuentos o reembolsos de la agencia).
 9. Haz clic en **Crear regla**.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Los siguientes errores pueden impedir que se cree la regla:
@@ -107,6 +113,8 @@ Cuando editas o eliminas una regla, se sobrescriben los datos calculados previam
 1. En la [lista de reglas](/docs/incorporate-agency-fees-into-campaign-costs#view-rule-list), coloca el cursor sobre la regla que quieres editar, duplicar o eliminar.
 2. Haz clic en **Menu** ⋮ en el lado derecho.
 3. Selecciona la acción que quieres realizar.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

@@ -23,13 +23,19 @@ x-zendesk:
 
 <span id="ssot-reports-in-data-locker"></span>Nota: El reporte de SSOT Data Locker contiene datos basados en el LTV, no en actividades. Esto significa que los datos reflejan el lifetime value de los usuarios en todos los puntos de contacto, en lugar de su actividad o eventos in-app.
 
+<div id="what-is-data-locker" />
+
 ## Qué es Data Locker
 
 Data Locker es una solución segura que entrega tus datos directamente a las principales plataformas en la nube, como AWS, GCS y Snowflake. Esto permite a los marketers integrar y consumir datos fácilmente en sus sistemas de BI internos para realizar análisis y reportes completos. <Anchor target="_blank" href="/marketers/es/docs/data-locker-advertiser-reports?query=data%20locker">Saber más</Anchor>.
 
+<div id="what-is-single-source-of-truth-ssot" />
+
 ## ¿Qué es Single Source of Truth (SSOT)?
 
 Tiene como objetivo resolver los problemas de fragmentación de datos al ofrecer una vista general unificada y precisa del rendimiento de las campañas de aplicaciones mediante la combinación de datos de varios métodos de atribución, como la coincidencia de ID y SKAN. <Anchor target="_blank" href="/marketers/es/docs/single-source-of-truth-ssot-guide-for-ios-attribution">Saber más</Anchor>.
+
+<div id="benefits-of-ssot-reports-in-data-locker" />
 
 ## Ventajas de los reportes SSOT en Data Locker
 
@@ -66,6 +72,8 @@ Para habilitar los reportes de Single Source of Truth o SSOT, completa uno de lo
 | Actualización de datos | <ul><li>A diario.</li><li>Las métricas se calculan con los datos disponibles a medianoche en UTC, que es el final del día.</li><li>SLA: Los nuevos reportes estarán disponibles en Data Locker antes de las 16:00 UTC. Cada día se crea una nueva versión para las últimas 15 fechas de instalación. [Ver más](/docs/single-source-of-truth-ssot-data-locker-report-for-marketers#report-folder-hierarchy)</li></ul> |
 
 </Accordion>
+
+<div id="directory-structure" />
 
 ## Estructura de directorios
 
@@ -135,6 +143,8 @@ Leyenda:
 * Versión: Marca de tiempo de Unix que indica cuándo se creó la versión.
 
 </Accordion>
+
+<div id="report-structure" />
 
 ## Estructura del reporte
 
@@ -530,6 +540,8 @@ Nota: La misma lógica se aplica a los datos de SKAN para los días 14, 21 y 30.
 
 </Accordion>
 
+<div id="bi-developer-considerations" />
+
 ## Consideraciones para desarrolladores de BI
 
 **Alcance de los datos en el reporte:**
@@ -555,6 +567,8 @@ Puedes cargar reportes unificados, de adquisición de usuarios y de retargeting 
 <div id="days-postattribution" />
 
 <Accordion title="Días después de la atribuación">
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >

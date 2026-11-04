@@ -27,6 +27,8 @@ x-zendesk:
 
 > **De un vistazo**: Ver diferentes métricas de usuario—LTV, actividad, Protect360 y retención. Descarga los resultados en archivos CSV para que los procesen tus sistemas de Business Intelligence. Pivote admite varias aplicaciones en una sola consulta. Úsalo para generar llamadas a la API maestra.
 
+<div id="about-pivot-reports-page" />
+
 ## Acerca de la página de informes de pivote
 
 Con Pivote, genera reportes personalizados que contienen métricas de adquisición de usuarios. Pivote viene con una serie de reportes predefinidos que puedes utilizar como base a partir de la cual creas tus reportes personalizados. Los reportes creados por un usuario de la cuenta determinado están disponibles para todos los usuarios.
@@ -38,6 +40,8 @@ Los reportes de pivote predefinidos disponibles son:
 * Análisis de costos
 
 **Nota**: Para que los datos de la campaña sean visibles en los pivotes, las campañas deben tener instalaciones.
+
+<div id="pivot-procedures" />
 
 ## Procedimientos de pivote
 
@@ -168,6 +172,8 @@ Crea y modifica pivotes existentes en la interfaz de usuario. Para hacerlo, util
 | (5) Acciones | Puedes acceder a las mismas acciones por reporte de pivote que están disponibles en la [lista de reportes de pivote](/docs/pivot-table-user-metrics#view-a-pivot-report). |
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 

@@ -27,6 +27,8 @@ x-zendesk:
 
 > **Resumen:** Web Performance Measurement te permite identificar qué fuentes de medios y campañas impulsan a los usuarios a visitar tu sitio web y medir cómo esas visitas influyen en las acciones posteriores a lo largo del tiempo. Te permite capturar y atribuir las interacciones de los usuarios de principio a fin, tanto para la adquisición de usuarios (visitantes por primera vez) como para el re-engagement, desde la visita inicial hasta la medición del valor de vida útil.
 
+<div id="about-web-performance-measurement" />
+
 ## Acerca de Web Performance Measurement
 
 La atribución web es el proceso de identificar qué fuentes de medios y campañas impulsan a los usuarios a visitar un sitio web e influyen en sus acciones posteriores.
@@ -35,9 +37,13 @@ Una visita web representa tanto una actividad de navegación como un engagement 
 
 El objetivo de este artículo es describir el proceso integral de Web Performance Measurement y explicar cómo se capturan, identifican y miden las interacciones de los usuarios desde la visita inicial al sitio web hasta el valor de vida útil. Este proceso permite que el motor sea compatible tanto con la adquisición de usuarios, para identificar y atribuir a los visitantes por primera vez, como con el retargeting o el re-engagement, para medir el impacto de las campañas dirigidas específicamente a los usuarios que regresan.
 
+<div id="if-you-use-people-based-attribution-pba" />
+
 #### Si usas la atribución basada en personas (PBA)
 
 Si actualmente usas <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba">la atribución basada en personas (PBA)</Anchor>, valora cambiar a Web Performance Measurement para obtener una atribución más granular y señales adicionales.
+
+<div id="the-web-performance-measurement-flow" />
 
 ### El flujo de Web Performance Measurement
 
@@ -52,6 +58,8 @@ El flujo de Web Performance Measurement sigue una secuencia estructurada de paso
 7. [Periodo previo a la adquisición](#7-preacquisition-period): Atribuye los eventos intermedios que se producen entre la primera visita y el evento de UA.
 8. [Re-engagement y readquisición](#8-reengagement-and-reacquisition): Atribuye a los usuarios que regresan (revisitas) en función de ventanas de inactividad y determina si el regreso es un re-engagement o una readquisición.
 9. [Medición de LTV](#9-ltv-measurement): Atribuye los eventos e ingresos continuos para medir el valor de vida útil del Usuario, regido por la Ventana de atribución.
+
+<div id="the-web-performance-measurement-process---step-by-step" />
 
 ## El proceso de Web Performance Measurement, paso a paso
 

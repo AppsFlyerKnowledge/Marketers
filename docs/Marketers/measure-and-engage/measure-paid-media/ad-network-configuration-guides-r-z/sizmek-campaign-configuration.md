@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Sizmek, un partner integrado de ad network de AppsFlyer, es una plataforma publicitaria independiente orientada a la compra y un Servidor de anuncios. Además de la atribución móvil basada en clics, Sizmek ofrece atribución view-through, que se puede registrar con AppsFlyer.
 
+<div id="setting-up-sizmek" />
+
 ## Configuración de Sizmek
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -41,6 +43,8 @@ La ventana de configuración de Sizmek incluye 3 pestañas activas: Integración
 
 Para ver una descripción detallada del Partner Configuration Window Header, haz clic <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#about-the-integrated-partner-page">aquí</Anchor>.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
@@ -50,14 +54,20 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red de TODAS las instalaciones, Sizmek prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Para hacerlo, selecciona **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Sizmek.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -69,6 +79,8 @@ Sizmek se conecta con AppsFlyer mediante un ID de etiqueta de Postback único. S
 
 Cambia esta opción a ON si quieres atribuir las instalaciones view-through de Sizmek. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Sizmek después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
@@ -76,9 +88,13 @@ Envía postbacks automáticos a Sizmek después de las instalaciones y re-engage
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a Sizmek.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para tener toda tu base de usuarios disponible para ser reportada a Sizmek.
 
+<div id="in-app-events-settings" />
+
 ### Configuración de eventos in-app
 
 En esta sección puedes asignar tus eventos de AppsFlyer a Sizmek mediante postbacks.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
@@ -132,6 +148,8 @@ La integración de ingresos de Anuncios no tiene soporte para Sizmek
 <Accordion title="Pestaña de permisos">
 
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Sizmek, tanto si el partner actúa como ad network, agencia o incluso ambos. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para Sizmek, la pestaña Permisos seguiría activa y podrías otorgarle el control a Sizmek.
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

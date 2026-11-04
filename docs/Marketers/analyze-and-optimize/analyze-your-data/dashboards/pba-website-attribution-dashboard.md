@@ -23,6 +23,8 @@ x-zendesk:
 
 [![Website_Atribución.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
 
+<div id="pba-website-attribution" />
+
 ## Atribución de sitios web de la PBA
 
 Usando el panel de control de atribución del sitio web, los anunciantes obtienen una visión de las fuentes de medios que impulsan a los visitantes y las conversiones.
@@ -36,6 +38,8 @@ Usando el panel de control de atribución del sitio web, los anunciantes obtiene
 | --- | --- |
 | ![Icon1.png](https://files.readme.io/b20da70a56d881dd2fe31b18df8919db43b47e3e2338b89da7ef5ef6467590d6-360013383937.png) | **Efectividad**<br /><br />¿Qué canales de adquisición ofrecen los KPI de mejor rendimiento, como la tasa de conversión o los ingresos promedio por usuario (ARPU)? |
 | ![s4.png](https://files.readme.io/9a426232668022a9b4d006e685d2384d61efe4814c377aa9295e9b7887f14fef-360013383957.png) | **Análisis comparativo**<br /><br />¿Cómo se comparan mis campañas pagas con mis canales propios y el tráfico ganado? ¿En qué tipos de dispositivos y plataformas mis usuarios web se convierten? |
+
+<div id="dashboard-reference" />
 
 ## Referencia del panel de control
 

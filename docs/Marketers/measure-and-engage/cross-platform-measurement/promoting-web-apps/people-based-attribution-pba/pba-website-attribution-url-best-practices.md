@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En resumen:** Prácticas recomendadas para atribuir a las campañas de atribución de tu sitio web la mejor granularidad de campaña disponible.
 
+<div id="pba-website-attribution-urls" />
+
 ## URL de atribución de sitios web de PBA
 
 Para obtener los mejores resultados de granularidad de la campaña combinados con la atribución más precisa en los datos de atribución de tu sitio web, rellena las URL (enlaces) y lleva a los usuarios a tu sitio web mediante las prácticas que se detallan en este artículo.
+
+<div id="url-parametersgroup-and-priority" />
 
 ### Parámetros de URL: grupo y prioridad
 
@@ -34,6 +38,8 @@ La solución de atribución de sitios web de AppsFlyer admite varias clases de p
 * [Prioridad más baja] UTM
 
 Las <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules">reglas de atribución de fuentes de medios de la PBA</Anchor> determinan cómo se atribuye a un usuario determinado. Las clases de parámetros se clasifican por prioridad. Si se encuentra más de una clase de parámetros en un enlace, la clase que tenga la prioridad más alta recibe la atribución.
+
+<div id="supported-parameters" />
 
 #### Parámetros compatibles
 
@@ -50,7 +56,11 @@ Las <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attributio
 | 9 | utm\_medium | Media Type | UTM | Sí | media\_type |
 | 10 | utm\_campagin | Campaña | UTM | Sí | campaña única |
 
+<div id="url-parameter-best-practices" />
+
 ## Mejores prácticas para los parámetros de URL
+
+<div id="selecting-url-parameters" />
 
 ### Selección de parámetros de URL
 
@@ -65,6 +75,8 @@ El uso de parámetros de varias clases se ilustra en el contexto de los anuncios
   * Sin embargo, la campaña no se puede determinar porque *c=* forma parte de la clase PID, pero pid no está incluido.
   * Para resolver esto, asumiendo que necesitas el utm\_source para otros fines, considera esta opción: `www.website.com?pid=facebook_int&c={{campaign.name}}&utm_source=facebook` Con esta estructura, AppsFlyer usa la clase PID para identificar la fuente de medios. Con esta estructura, AppsFlyer usa la clase PID para identificar la fuente de medios. Se pueden incluir otros parámetros PID, como c=, y no se tiene en cuenta el utm\_source porque tiene una prioridad más baja.
 
+<div id="implement-dynamic-urls-using-ad-network-macros" />
+
 ### Implementa URL dinámicas mediante macros de redes de publicidad
 
 Usa macros de red (también conocidas como parámetros de valuetrack) para ahorrar tiempo al crear plantillas y aplicar parámetros de URL a las campañas de pago.
@@ -77,15 +89,23 @@ Las redes utilizan diferentes macros para rellenar los parámetros de la URL. Po
 * Anuncios de Snapchat: `www.website.com?af_c_id={{campaign.id}}`
 * Anuncios de Microsoft (Bing): `www.website.com?af_c_id={campaignid}`
 
+<div id="consistent-case-within-parameters" />
+
 ### Mayúsculas y minúsculas dentro de los parámetros
 
 Los valores de los parámetros distinguen mayúsculas de minúsculas. Por ejemplo, utm\_source=channel1 y utm\_source=CHANNEL1 se consideran fuentes de medios diferentes. Por lo tanto, verifica que es coherente con respecto a la mayúscula.
+
+<div id="use-google-ads-integration-to-automate-granularity" />
 
 ### Usa la integración de Google Ads para automatizar la granularidad
 
 En el caso de las campañas de Google Ads, puedes obtener la granularidad de la campaña integrando PBA con tu cuenta de <Anchor target="_blank" href="/marketers/es/docs/integrating-google-ads-auto-tagging-gclid-campaign-data-into-pba">Google Ads</Anchor>. Esto garantiza que tus datos se rellenen con todos los datos de la jerarquía de la campaña sin necesidad de parámetros PID o UTM en la URL.
 
+<div id="common-url-parameter-mistakes-to-avoid" />
+
 ## Errores comunes en los parámetros de URL que se deben evitar
+
+<div id="question-marks" />
 
 ### Signos de interrogación
 
@@ -99,6 +119,8 @@ Ejemplo de usos **incorrectos**: 
 `www.website.com??parameters`
 
 `www.website.com?parameter1?parameter2`
+
+<div id="anchor-signs" />
 
 ### Señales de anclaje
 

@@ -25,6 +25,8 @@ x-zendesk:
 | **Lo que debes saber:** | <ul><li>Unity presenta una nueva integración de API de costos.</li><li>La antigua integración de la API de costos puede obtener datos de costos hasta su fecha de caducidad, el 1 de octubre de 2024.</li></ul> |
 | **Lo que debes hacer** | Debes actualizar tus credenciales para la nueva integración de la API de costos de Unity para seguir recibiendo datos de costos después del 1 de octubre de 2024.<br /><br />Las credenciales requeridas son:<ul><li>ID principal de organización</li><li>Clave secreta de la cuenta de servicio</li><li>ID de clave de cuenta de servicio</li></ul>Sigue las instrucciones de las siguientes secciones para actualizar la integración de costos de Unity en AppsFlyer. La integración consta de 2 pasos:<ol><li>[Obtén las nuevas credenciales de Unity](/docs/bulletin-unity-ads-cost-api-integration-update#get-unity-credentials).</li><li>[Actualiza la integración de la API de costos de Unity introduciendo las credenciales en AppsFlyer.](/docs/bulletin-unity-ads-cost-api-integration-update#set-up-unity-cost-api-integration-in-appsflyer)</li></ol> |
 
+<div id="unity-cost-api-integration-procedures" />
+
 ## Procedimientos de integración de API de costos de Unity
 
 La integración de la API de costos de Unity requiere dos pasos:

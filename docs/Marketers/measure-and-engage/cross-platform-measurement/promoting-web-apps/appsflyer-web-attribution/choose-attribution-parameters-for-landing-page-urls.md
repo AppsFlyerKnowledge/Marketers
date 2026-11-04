@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Usa parámetros de URL coherentes y completos en los enlaces a las páginas de destino de tu sitio web para obtener la mejor granularidad de campaña y, al mismo tiempo, mantener una atribución precisa en Web Performance Measurement.
 
+<div id="about-url-attribution-parameter-classes" />
+
 ## Información sobre las clases de parámetros de atribución de URL
 
 AppsFlyer lee los parámetros de campaña de la URL de tu página de destino (el enlace en el que hace clic un usuario) y los usa para atribuir sesiones y eventos a la **fuente de medios**, la **campaña** y (cuando está disponible) a niveles más profundos de la jerarquía, como el **conjunto de anuncios** y el **anuncio**, correctos.
@@ -36,6 +38,8 @@ Los parámetros de URL pueden pertenecer a una de estas dos clases: PID y UTM.
 * La clase UTM incluye los parámetros UTM estándar.
 
 Para obtener más información sobre cómo Web Performance Measurement procesa los parámetros de URL, consulta <Anchor target="_blank" href="/marketers/es/docs/about-traffic-source-resolution">Información sobre la resolución de la fuente de tráfico</Anchor>.
+
+<div id="supported-pid-and-utm-parameters" />
 
 ### Parámetros PID y UTM compatibles
 
@@ -54,6 +58,8 @@ Web Performance Measurement admite los siguientes parámetros.
 | 9 | `utm_medium` | Media Type | UTM | No | `media_type` |
 | 10 | `utm_campaign` | Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>. | UTM | Sí | `campaign_name` |
 
+<div id="choose-the-right-attribution-parameters" />
+
 ## Elige los parámetros de atribución adecuados
 
 AppsFlyer evalúa los parámetros de URL de forma independiente para cada campo de reporte (como Fuente de medios o Campaña) mediante una cascada de prioridades específica. Este enfoque te permite usar la atribución de AppsFlyer junto con otras herramientas, como Google Analytics, mediante el uso de la **clase PID** (nativa de AppsFlyer) y la **clase UTM** (marketing estándar) en la misma URL.
@@ -65,6 +71,8 @@ Web Performance Measurement comprueba el orden de prioridad de cada campo por se
 <Accordion title="Escenario A. URL solo con la clase PID (reporte de AppsFlyer)">
 
 Usa la clase PID cuando los informes de AppsFlyer sean tu objetivo principal.
+
+<div id="example" />
 
 #### Ejemplo
 
@@ -81,6 +89,8 @@ www.website.com?pid=facebook_int&c={{campaign.name}}&af_c_id={{campaign.id}}
 <Accordion title="Escenario B. URL solo con la clase UTM (alternativa)">
 
 Si falta `pid`, AppsFlyer recurre a la clase UTM.
+
+<div id="example-1" />
 
 #### Ejemplo
 
@@ -100,6 +110,8 @@ AppsFlyer te permite incluir parámetros de distintas clases (por ejemplo, PID y
 
 AppsFlyer procesa los campos de atribución, como Fuente de medios y Campaña, de forma independiente. Para cada campo específico, el sistema sigue una cascada de prioridad para determinar qué valor registrar. Por lo general, la **clase PID** tiene prioridad sobre la **clase UTM** para ese campo específico.
 
+<div id="example-1-overlapping-parameters" />
+
 #### Ejemplo 1: Parámetros superpuestos
 
 ```http
@@ -109,6 +121,8 @@ www.website.com?pid=facebook_ads&c=summer_sale&utm_source=facebook&utm_campaign=
 * **Fuente de medios:** AppsFlyer detecta tanto `pid` como `utm_source`. Siguiendo la cascada de prioridad de este campo, registra `facebook_ads`.
 * **Campaña:** AppsFlyer detecta tanto `c` como `utm_campaign`. Siguiendo la cascada de prioridad de este campo, registra `summer_sale`.
 * **Resultado:** AppsFlyer usa los valores de la clase PID, que tiene mayor prioridad, mientras que las herramientas externas aún pueden leer los valores UTM.
+
+<div id="example-2-mixed-parameter-classes" />
 
 #### Ejemplo 2: Clases de parámetros mixtas
 
@@ -121,6 +135,8 @@ www.website.com?utm_source=facebook&c=summer_sale
 * **Resultado:** AppsFlyer atribuye correctamente el evento usando valores de ambas clases, porque cada campo se resuelve de forma independiente.
 
 </Accordion>
+
+<div id="other-best-practices" />
 
 ## Otras Mejores prácticas
 

@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **En resumen:** Crear enlaces con capacidades de atribución, redirección y deep linking que convierten a los usuarios de medios propios o pagos en usuarios de la aplicación, independientemente del dispositivo, sistema operativo, canal o plataforma. Estos enlaces te ayudan a proporcionar la mejor experiencia a tus usuarios, sin importar desde cuál de tus fuentes de medios propias realicen la conversión: sitios web, banners, publicaciones en redes sociales, correos electrónicos, textos y más.
 
+<div id="introduction-video" />
+
 ## Video de introducción
 
 <Embed title="Guía de OneLink" typeOfEmbed="youtube" url="https://www.youtube.com/embed/golT4p9D8MA" providerUrl="https://www.youtube.com" />
+
+<div id="benefits" />
 
 ## Ventajas
 
@@ -39,6 +43,8 @@ El paquete de experiencia del cliente y deep linking de AppsFlyer impulsado por 
 
 Las funciones de OneLink están disponibles a través de <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">los planes de suscripción de AppsFlyer</Anchor>. Para que tus experiencias de OneLink sigan en funcionamiento sin problemas, asegúrate de que tu plan siga activo.
 
+<div id="experiences" />
+
 ## Experiencias
 
 El paquete de experiencia del cliente y deep linking de AppsFlyer con tecnología OneLink te permite crear enlaces que proporcionen una experiencia óptima a tus usuarios, independientemente de su procedencia. Las experiencias del cliente que puedes configurar incluyen:
@@ -51,6 +57,8 @@ El paquete de experiencia del cliente y deep linking de AppsFlyer con tecnologí
 * **De texto a aplicación**: Crea enlaces para tus campañas de SMS y mensajería e interactúa con los usuarios a través de mensajes de texto.
 * **De referencia a aplicación**: Crea enlaces de invitación que permiten a usuarios e influencers invitar a otros a tu aplicación o compartir contenido específico dentro de la aplicación, como un artículo.
 * Personalizado: No importa de dónde provengan tus usuarios, ya sea a través de ordenadores o dispositivos móviles, online y offline, medios propios o de pago, utiliza OneLink para enviar fácilmente a tus usuarios al lugar correcto.
+
+<div id="setting-up-onelink" />
 
 ## Configuración de OneLink
 
@@ -73,6 +81,8 @@ La siguiente tabla describe los detalles de las tareas del marketer y del desarr
 | Crear plantilla de OneLink | <ul><li>El marketer/gerente de producto configura la plantilla en AppsFlyer.</li><li>El desarrollador de Android configura los métodos de apertura de la aplicación para los usuarios existentes (Android App Link y esquema URI).</li><li>El desarrollador de iOS configura los métodos de apertura de aplicaciones para los usuarios existentes (iOS Universal Links y esquema URI).</li></ul> | <ul><li>Dashboard de AppsFlyer</li><li><Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">Instrucciones para el marketer</Anchor></li><li>Instrucciones para desarrolladores de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_init_setup#app-opening-methods">Android</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup">iOS</Anchor></li></ul> |
 | Crear enlace de OneLink | <ul><li>El marketer/gerente de producto configura el enlace en AppsFlyer, incluida la selección de la experiencia del cliente deseada y agregando cualquier atribución deseada o parámetros de deep linking.</li><li>Los desarrolladores de Android e iOS implementan el método UDL para deep linking (si se requieren).</li></ul> | <ul><li><Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">Instrucciones para el marketer</Anchor></li><li>Instrucciones para desarrolladores de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_unified_deep_linking">Android</Anchor> e <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_unified_deep_linking">iOS</Anchor></li><li>Aplicaciones de muestra (Github)</li></ul> |
 
+<div id="additional-options" />
+
 ## Opciones adicionales
 
 Después de completar una parte o la totalidad de la configuración en la interfaz de usuario, considera la posibilidad de implementar las funciones adicionales que se describen a continuación.
@@ -84,9 +94,13 @@ Después de completar una parte o la totalidad de la configuración en la interf
 * <Anchor target="_blank" href="/marketers/es/docs/understand-onelink-short-vs-long-urls">URLs largas</Anchor>: Agrega parámetros a tus enlaces personalizados de OneLink o genera una gran cantidad de enlaces personalizados de OneLink aplicando tus propias fórmulas simples en una hoja de cálculo.
 * <Anchor target="_blank" href="/marketers/es/docs/redirect-app-users-to-a-website">Redirección app-to-web</Anchor>: Redirecciona a los usuarios desde tu aplicación a un sitio web o página de redes sociales.
 
+<div id="troubleshooting-and-faq" />
+
 ## Resolución de problemas y preguntas frecuentes
 
 Encuentra rápidamente soluciones para probar y depurar problemas de comportamiento y redirección de enlaces personalizados de OneLink con nuestra <Anchor target="_blank" href="/marketers/es/docs/onelink-troubleshooting-and-faq">guía de resolución de problemas de OneLink</Anchor>.
+
+<div id="limitations" />
 
 ## Limitaciones
 

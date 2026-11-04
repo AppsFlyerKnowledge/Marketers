@@ -34,6 +34,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="about-onelink-smart-script" />
+
 ## Sobre Smart Script de OneLink
 
 Los usuarios llegan a tu sitio web móvil antes de llegar a la página de tu tienda de aplicaciones, ya sea orgánicamente o después de interactuar con campañas publicitarias. Sin embargo, hay dos clics:
@@ -59,9 +61,13 @@ Hay dos versiones de Smart Script de OneLink:
 
 <Anchor target="_blank" href="/marketers/es/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (antigua)**</Anchor>: Si ya tienes configurado Onelink Smart Script, utiliza la documentación de esta versión para mantener y editar este script. **Nota**: Aunque no es obligatorio, considera la posibilidad de migrar a la V2. 
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > ¿No estás seguro de si Smart Script de OneLink es la solución adecuada para ti? ¿No estás seguro de si Smart Script de OneLink es la solución adecuada para ti? <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">Compara</Anchor> Smart Script de OneLink con otras soluciones web-to-app de AppsFlyer.
+
+<div id="examples" />
 
 ### Ejemplos
 
@@ -90,6 +96,8 @@ El enlace del correo electrónico es el siguiente: https://hotel.me?type=email&c
 Cuando hace clic en el enlace, se la envía al sitio web móvil del hotel. Allí, ve botones que la invitan a descargar la aplicación móvil del hotel. El Smart Script de OneLink genera automáticamente una URL que contiene los mismos parámetros **pid** y **c** que el enlace original del correo electrónico. El enlace es el siguiente: https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
 **Cuando Emma pulsa los botones del sitio web móvil, es redireccionada a la tienda de aplicaciones. Y cuando descarga e inicia la aplicación, se encuentra con la página de vacaciones de Orlando en la aplicación.**
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >

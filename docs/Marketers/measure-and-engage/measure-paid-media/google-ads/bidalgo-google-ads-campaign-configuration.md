@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En pocas palabras:** Bidalgo, un partner integrado de AppsFlyer, es un proveedor líder de soluciones de inteligencia artificial para ayudar a los app marketers a escalar su crecimiento.
 
+<div id="set-up-bidalgo-integration" />
+
 ## Configurar la integración de Bidalgo
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de ponerte en contacto con el partner y abrir una cuenta con ellos.
@@ -40,6 +42,8 @@ x-zendesk:
 
 Busca al partner y selecciónalo.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > El ID de cliente de Google Ads debe introducirse **sin** guiones.
@@ -50,6 +54,8 @@ Busca al partner y selecciónalo.
 
 7. Introduce el número en el campo **ID de cliente de Google Ads**.
 
+<div id="in-app-events" />
+
 ### Eventos dentro de la aplicación
 
 1. Para enviar postbacks de eventos in-app a Bidalgo, cambia el interruptor de In-App Events Postback a **ON**.
@@ -59,6 +65,8 @@ Busca al partner y selecciónalo.
 3. Selecciona **Send Revenue** para enviar todos los parámetros, incluido el valor de ingresos (si existe en el evento).
 
 4. Haga clic en **Guardar**.
+
+<div id="important-note" />
 
 > 📘 **Nota Importante**
 >

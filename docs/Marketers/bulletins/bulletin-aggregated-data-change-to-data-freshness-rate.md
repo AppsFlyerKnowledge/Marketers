@@ -49,6 +49,8 @@ x-zendesk:
       <td>
         La tasa de actualización de los datos de instalaciones y de eventos in-app está cambiando. La tabla detalla la tasa de actualización de los datos antes y después del cambio.
 
+        <div id="data-freshness-rate-per-event-type" />
+
         #### Tasa de actualización de los datos por tipo de evento
 
         | Tipo de evento | Antes del cambio (minutos) | Después del cambio<br /><br />(minutos) |
@@ -101,6 +103,8 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="see-also" />
 
 > 📄 **Consulte también**
 >

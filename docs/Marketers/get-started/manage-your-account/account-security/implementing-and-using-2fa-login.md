@@ -26,12 +26,16 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza la autenticación de dos factores (2FA) para agregar una capa adicional de seguridad al proceso de inicio de sesión. Las credenciales de inicio de sesión para los usuarios de la cuenta se complementan con Google Authenticator o verificación por SMS.
 
+<div id="highlights" />
+
 ## Aspectos destacados
 
 * 2FA es una función opcional activada por un usuario administrador.
 * Las opciones son **Google Authenticator** y **verificación por SMS**.
 * La activación/desactivación se aplica a todos los usuarios de la cuenta.
 * Los usuarios de la cuenta en el momento de la activación podrán iniciar sesión y se les pedirá que configuren el 2FA en su próximo inicio de sesión.
+
+<div id="-admin-managing-2fa" />
 
 ## ![admin.png](https://files.readme.io/d54680123b25ab7929285cebd778e0e74bd0d032df994b04d1bca106381c3dc6-360014518718.png) Administrador: Gestionando 2FA
 
@@ -42,6 +46,8 @@ Solo un usuario administrador puede activar, restablecer o desactivar la configu
 <Accordion title="Activar">
 
 Si un administrador activa **Google Authenticator** y **verificación por SMS**, los usuarios de la cuenta pueden elegir qué método prefieren usar.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -86,6 +92,8 @@ Si 2FA está desactivado, los usuarios de la cuenta iniciarán sesión utilizand
 4. Confirma la desactivación.
 
 </Accordion>
+
+<div id="account-users-using-google-or-microsoft-authenticator" />
 
 ## Usuarios de la cuenta: Usando Google Authenticator
 
@@ -132,6 +140,8 @@ Antes de usar 2FA por primera vez, cada usuario de la cuenta debe descargar **Go
 4. Haz clic en **Verificar**, y serás redireccionado a la página de **Mis aplicaciones**.
 
 </Accordion>
+
+<div id="account-users-using-sms-verification" />
 
 ## Usuarios de la cuenta: Usando la verificación por SMS
 

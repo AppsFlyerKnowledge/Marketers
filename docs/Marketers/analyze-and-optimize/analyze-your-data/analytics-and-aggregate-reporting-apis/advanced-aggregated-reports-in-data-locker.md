@@ -25,6 +25,8 @@ x-zendesk:
 
 > **En resumen:** Los reportes agregados avanzados en Data Locker contienen datos agregados con una calidad, precisión, granularidad y volumen óptimos e ilimitados.
 
+<div id="advanced-aggregated-reports-in-data-locker" />
+
 ## Reportes agregados avanzados en Data Locker
 
 Reportes agregados avanzados en Data Locker:
@@ -33,6 +35,8 @@ Reportes agregados avanzados en Data Locker:
 * Puedes cargar los datos en tus sistemas de BI y utilizarlos como parte de los procesos de optimización y rendimiento de tu campaña.
 * Obtén la mejor calidad con precisión: Los datos llegan <Anchor target="_blank" href="/marketers/es/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">varias veces al día</Anchor> y se actualizan con cada versión posterior de un reporte con todos los datos disponibles para ese día.
 * Te ayuda a aumentar los raw data que pueden estar limitados y <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">restringidos</Anchor> debido a las políticas de intercambio de datos de fuentes de medios o tus <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">políticas de preservación de la privacidad</Anchor>. Las restricciones afectan campos relacionados con la atribución, como campaña y anuncio.
+
+<div id="setup" />
 
 ## Configuración
 
@@ -43,11 +47,15 @@ Para obtener reportes agregados avanzados, completa uno de los siguientes proced
 | Sí | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)Para agregar los reportes a Data Locker:<ol><li>En AppsFlyer, en el menú lateral, selecciona **Reporte > Data Locker**.</li><li>Selecciona todos los reportes que desees obtener.</li><li>Haz clic en **Guardar configuración**.<br />Los reportes estarán disponibles al día siguiente.</li></ol> |
 | No | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)**Para configurar Data Locker**:<ol><li>Completa la configuración inicial de Data Locker (<Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#set-up-data-locker">anunciante</Anchor> \| <Anchor target="_blank" href="/partners/es/docs/data-locker-for-partners">partner</Anchor>).</li><li>Agrega los reportes a Data Locker:<ol><li>En AppsFlyer, en el menú lateral, selecciona **Reporte > Data Locker**.</li><li>Selecciona todos los reportes que desees obtener.</li><li>Haz clic en **Guardar configuración**.<br />Los reportes estarán disponibles al día siguiente.</li></ol></li></ol> |
 
+<div id="reports-available" />
+
 ## Reportes disponibles
 
 <div id="cohort-versioned-report" />
 
 <Accordion title="Reporte versionado de cohorte">
+
+<div id="report-facts" />
 
 ### Reportar hechos
 
@@ -61,6 +69,8 @@ Para obtener reportes agregados avanzados, completa uno de los siguientes proced
 | Estructura de directorios y nombres de archivos | [Saber más](/docs/advanced-aggregated-reports-in-data-locker#estructura-del-reporte) |
 | Impacto de las políticas de retención de partners | Considera que algunos partners implementan una política de retención de datos. En este caso, los eventos que ocurren después del final del período de retención no se tienen en cuenta en los reportes de cohorte.<br /><br />Ejemplo: SRN A tiene una política de retención de datos de 180 días. Los eventos de usuario hasta el día 180 se atribuyen al SRN A. Los eventos que ocurren después de 180 días no se tienen en cuenta. |
 
+<div id="report-structure" />
+
 ### Estructura del reporte
 
 El reporte se compone de dimensiones y métricas.
@@ -70,6 +80,8 @@ El formato de los campos es el siguiente:
 * **Dimensiones**: String. La longitud máxima del string es dinámica y en la mayoría de los casos depende de cómo se completan los elementos de la jerarquía publicitaria.
 * **Métricas**: Number. **Nota:** El formato del campo moneda\_seleccionada es tipo string.  
   Las métricas disponibles son los ingresos, los usuarios únicos que realizan un evento y el número de ocurrencias del evento. Para calcular métricas relacionadas con los costos, como el ROI y el ROAS, necesitas métricas tanto de ingresos como de costos. Las métricas de ingresos están en Cohorte y las métricas de costos las proporciona <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
+
+<div id="dimensions" />
 
 #### Dimensiones
 
@@ -283,6 +295,8 @@ El formato de los campos es el siguiente:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Métricas
 
 | Nombre de campo | Descripción | Formato |
@@ -294,11 +308,15 @@ El formato de los campos es el siguiente:
 | revenue\_selected\_currency | <ul><li>Cantidad de ingresos en la moneda seleccionada. Por ejemplo, si la moneda seleccionada es EUR, entonces 1234,56 € se refleja como 1234,56</li><li>Máximo de 2 lugares después del punto decimal</li></ul> | Cantidad |
 | first\_inapp | <ul><li>Número de usuarios que realizan el evento por primera vez después de su conversión.</li><li>La suma de las métricas de first\_inapp te da el recuento acumulado de usuarios únicos para el evento.</li></ul> | Cantidad |
 
+<div id="directory-and-filename-structure" />
+
 #### Estructura de directorios y nombres de archivos
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
 Con el siguiente formato: `/t=cohort_unified_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy" />
 
 #### Jerarquía de carpetas de reportes
 
@@ -338,6 +356,8 @@ bucket
 * **t:** tipo de reporte.
 * **versión**: Marca de tiempo de Unix cuando se creó la versión.
 
+<div id="report-versions-and-data-freshness" />
+
 ### Versiones de reportes y calidad de los datos
 
 * A diario. Los reportes se envían cada pocas horas.
@@ -363,6 +383,8 @@ bucket
 
 <Accordion title="Reporte versionado de la zona horaria de cohorte">
 
+<div id="report-facts-1" />
+
 ### Reportar hechos
 
 | Resumen general | El reporte versionado de la zona horaria de cohorte contiene todos los datos agregados, agrupados en cohortes, con la granularidad de todas las dimensiones de la campaña, según las zonas horarias localizadas. El reporte se actualiza cada pocas horas para maximizar la actualidad y precisión de los datos.<br /><br /><Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk1cZkeJhlx3trW13SjGbD4aWX3LmXZJRDJRApuAJkjB7XAg4nSFUyN0_YoirX-QMHkhFeMHwEmiVj/pub?output=xlsx">Descargar un reporte de muestra</Anchor> |
@@ -375,6 +397,8 @@ bucket
 | Estructura de directorios y nombres de archivos | [Saber más](/docs/advanced-aggregated-reports-in-data-locker#estructura-del-reporte-1) |
 | Impacto de las políticas de retención de partners | Considera que algunos partners implementan una política de retención de datos. En este caso, los eventos que ocurren después del final del período de retención no se tienen en cuenta en los reportes de cohorte.<br /><br />Ejemplo: SRN A tiene una política de retención de datos de 180 días. Los eventos de usuario hasta el día 180 se atribuyen al SRN A. Los eventos que ocurren después de 180 días no se tienen en cuenta.<br /><br />**Nota**: Los eventos se muestran en el dashboard general como orgánicos. |
 
+<div id="report-structure-1" />
+
 ### Estructura del reporte
 
 El reporte se compone de dimensiones y métricas.
@@ -384,6 +408,8 @@ El formato de los campos es el siguiente:
 * **Dimensiones**: String. La longitud máxima del string es dinámica y en la mayoría de los casos depende de cómo se completan los elementos de la jerarquía publicitaria.
 * **Métricas**: Number. **Nota:** El formato del campo moneda\_seleccionada es tipo string.  
   Las métricas disponibles son los ingresos, los usuarios únicos que realizan un evento y el número de ocurrencias del evento. Para calcular métricas relacionadas con los costos, como el ROI y el ROAS, necesitas métricas tanto de ingresos como de costos. Las métricas de ingresos están en Cohorte y las métricas de costos las proporciona <Anchor target="_blank" href="/marketers/es/docs/set-up-and-use-roi360-cost-etl-reports">ROI360 Cost ETL</Anchor>.
+
+<div id="dimensions-1" />
 
 #### Dimensiones
 
@@ -609,6 +635,8 @@ El formato de los campos es el siguiente:
   </tbody>
 </Table>
 
+<div id="metrics-1" />
+
 #### Métricas
 
 | Nombre de campo | Descripción | Formato |
@@ -620,11 +648,15 @@ El formato de los campos es el siguiente:
 | revenue\_selected\_currency | <ul><li>Cantidad de ingresos en la moneda seleccionada. Por ejemplo, si la moneda seleccionada es EUR, entonces 1234,56 € se refleja como 1234,56</li><li>Máximo de 2 lugares después del punto decimal</li></ul> | Cantidad |
 | first\_inapp | <ul><li>Número de usuarios que realizan el evento por primera vez después de su conversión.</li><li>La suma de las métricas de first\_inapp te da el recuento acumulado de usuarios únicos para el evento.</li></ul> | Cantidad |
 
+<div id="directory-and-filename-structure-1" />
+
 #### Estructura de directorios y nombres de archivos
 
 La ruta al reporte consta de la siguiente jerarquía de carpetas:
 
 Con el siguiente formato: `/t=cohort_unified_timezone_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### Jerarquía de carpetas de reportes
 
@@ -664,6 +696,8 @@ bucket
 * **t:** tipo de reporte.
 * **versión**: Marca de tiempo de Unix cuando se creó la versión.
 
+<div id="report-versions-and-data-freshness-1" />
+
 ### Versiones de reportes y calidad de los datos
 
 * A diario. Los reportes se envían cada pocas horas.
@@ -696,6 +730,8 @@ bucket
 | 21 | Día 8 a las 00:00h | Datos completos de conversión y eventos in-app para el día 0, y datos completos de ingresos publicitarios enviados a través de S2S, teniendo en cuenta cualquier problema potencial que pueda haber ocurrido en el lado de la red de ingresos publicitarios. | Día 8 a las 6h |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 
@@ -748,6 +784,8 @@ Los datos de todas las aplicaciones son configurables; Puede proporcionarse en u
 
 Los siguientes son ejemplos de algunas aplicaciones prácticas y populares de los datos que los desarrolladores de BI pueden extraer a través de Data Locker. Cada ejemplo está ilustrado por una declaración SQL y un objeto visual de Excel de muestra.
 
+<div id="1-calculate-retention" />
+
 #### **1. Calculando la retención**
 
 En el siguiente ejemplo, nosotros:
@@ -779,6 +817,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15 % |
 | 07315466 | 613770 | 300 | 20% | 12 % |
+
+<div id="2-calculate-arpu-of-multiple-in-app-events" />
 
 #### **2. Calculando el ARPU de múltiples eventos en la aplicación**
 
@@ -815,6 +855,8 @@ group by 1
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | Reatribución | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. Calculando la tasa de conversión de eventos in-app para un día de cohorte específico**
 
 En el siguiente ejemplo, nosotros:
@@ -845,6 +887,8 @@ group by 1,2,3,4,5
 | 7 de noviembre de 2022 | Estados Unidos | 12345678 | 123456 | site\_123 | 45% |
 | 5 de noviembre de 2022 | Reino Unido | 98765432 | nulo | site\_654 | 70% |
 | 31 de octubre de 2022 | Corea | 07315466 | nulo | nulo | El 63 % |
+
+<div id="4-calculate-daily-installs" />
 
 #### **4. Calculando instalaciones diarias**
 
@@ -881,6 +925,8 @@ group by 1,2,3,4,5
 | id123456789 | 5 de noviembre de 2022 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 31 de octubre de 2022 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculate-revenue-from-facebook-ads" />
+
 #### **5. Calculando los ingresos de los anuncios de Facebook**
 
 En el siguiente ejemplo, nosotros:
@@ -915,6 +961,8 @@ group by 1,2,3
 | 5 de noviembre de 2022 | id123456789 | adnet2\_int | 99.23 |
 | 31 de octubre de 2022 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. Calculando el ARPU por ID de palabra clave de ASA para hasta 365 días de cohorte**
 
 En el siguiente ejemplo, nosotros:
@@ -945,6 +993,8 @@ group by 1
 | adnet1\_int | 123456 | 57.019,93 |
 | adnet2\_int | 987654 | 64.867,84 |
 | adnet3\_int | 666854 | 48.160,02 |
+
+<div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calculando el ARPU del Día 7 por tiempo de atribución por geo**
 
@@ -986,6 +1036,8 @@ limit 20
 | Canadá | 35.099 | $64.867,84 | $7.050,19 | $5.656,33 | $9.553,75 | $8.632,41 | $11.308,06 |
 | Chile | 26.750 | $48.160,02 | $21.249,55 | $22.584,57 | $22.584,57 | $31.118,91 | $41.145,22 |
 
+<div id="8-calculate-purchases-day-7-after-conversion" />
+
 #### **8. Calculando compras del Día 7 después de la conversión**
 
 En el siguiente ejemplo, nosotros:
@@ -1026,6 +1078,8 @@ group by 1,2,3,4,5
 | id123456789 | 10-03-2025 | adnet1\_int | campaña\_1 | adset\_1 | 100 | 20 | 20% |
 | id123456789 | 2024-03-07 | adnet2\_int | campaña\_2 | adset\_2 | 200 | 10 | 5 % |
 | id123456789 | 2024-03-31 | adnet3\_int | campaña\_3 | adset\_3 | 150 | 15 | 10% |
+
+<div id="9-calculate-dau" />
 
 #### **9. Calcular DAU**
 
@@ -1095,6 +1149,8 @@ group by 1,2,3,4,5
 | Reinstalaciones | <ul><li>Reinstalaciones: si los eventos posteriores a la reinstalación se consideran orgánicos no atribuidos, no se incluyen en la Cohorte.<ul><li>Se incluirán solo a partir del 26 de mayo de 2024. <Anchor target="_blank" href="/marketers/es/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Más información</Anchor></li><li>El tiempo de instalación se basa en el campo <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>.</li><li>No se cuentan para las mediciones de usuarios únicos y de retención.</li></ul></li><li>Si los eventos post-reinstalación se atribuyen a la primera instalación, siempre se incluyen. <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#inapp-events-and-how-they-are-attributed">Aprender más</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

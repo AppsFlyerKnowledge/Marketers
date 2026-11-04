@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Criteo, un partner integrado de ad network de AppsFlyer, impulsa el crecimiento mediante tecnología de aprendizaje automático, datos y rendimiento a escala, y un ROI medible para sus clientes. Además de la atribución móvil basada en clics, Criteo también ofrece atribución de retargeting, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-criteo" />
+
 ## Configuración de Criteo
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -41,14 +43,20 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activación de socios
 
 En la **primera visita**, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como red de TODAS las instalaciones, Criteo prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluida la orgánica. Se recomienda seleccionar **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Criteo.
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -56,6 +64,8 @@ Envía postbacks automáticos a Criteo después de las instalaciones y los re-en
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a Criteo.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada a Criteo.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -73,6 +83,8 @@ En esta sección, puedes asignar tus eventos de AppsFlyer a Criteo mediante post
 | **Nombre de evento del SDK** | El nombre del evento tal como lo recibe AppsFlyer, ya sea del SDK integrado en tu aplicación o de eventos de servidor a servidor.  <br />**Consejo**: Si no ves el evento que buscas en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a verificar. |
 | **Identificador de evento de partner** | El nombre único o ID de cada evento según lo define Criteo.  <br />Obtén el ID de evento correspondiente de Criteo e introdúcelo en el campo de texto. |
 | **Enviar ingresos** | **Si esta opción no está marcada**: se envían al partner todos los parámetros del evento in-app enriquecido, con excepción del parámetro de ingresos, que está incluido en el parámetro **af\_revenue**.  <br />**Si está marcada**: AppsFlyer envía todos los parámetros, incluido el de valor correspondiente a los ingresos (si existe en el evento). |
+
+<div id="warning" />
 
 > ❗️ **Advertencia**
 >

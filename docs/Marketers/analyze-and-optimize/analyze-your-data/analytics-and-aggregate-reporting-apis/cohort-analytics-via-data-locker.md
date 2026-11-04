@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** El análisis de cohortes en Data Locker incluye datos agregados de todos los elementos de la estructura publicitaria. Los reportes recogen datos de los usuarios atribuidos en los últimos 365 días. Este reporte está disponible para los anunciantes que tengan raw data, API de cohorte o ambos, como parte de su suscripción. Esto significa que no se requiere una suscripción a Data Locker para este reporte.
 
+<div id="cohort-analytics-in-data-locker" />
+
 ## Análisis de cohortes en Data Locker
 
 En algunas ocasiones, la atribución de raw data en AppsFlyer está <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">restringida</Anchor> debido a políticas de compartición de datos de las fuentes de medios o de tus <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">políticas de preservación de la privacidad.</Anchor> Esta restricción incluye todos los campos relacionados con la atribución, como campaña y conjunto de anuncios. Los reportes de cohorte te proporcionan datos agregados que se pueden utilizar como alternativa a los raw data.
@@ -72,6 +74,8 @@ El formato de los campos es como se indica a continuación:
 
 * **Dimensiones**: Cadena. La longitud máxima de la cadena es dinámica y, en la mayoría de los casos, depende de cómo se llenen los elementos de la jerarquía publicitaria.
 * **Métricas**: Número. **Nota:** El formato del campo selected\_currency es una cadena de texto.
+
+<div id="dimensions" />
 
 #### Dimensiones
 
@@ -285,6 +289,8 @@ El formato de los campos es como se indica a continuación:
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Métricas
 
 | Nombre del campo | Descripción | Formato |
@@ -333,6 +339,8 @@ Los datos de todas las aplicaciones se proporcionan en un solo archivo. Usa el c
 
 A continuación, algunos ejemplos de aplicaciones prácticas y populares de datos de cohorte que los desarrolladores de BI pueden extraer a través de Data Locker. Cada ejemplo se ilustra mediante una declaración SQL y un ejemplo visual en Excel.
 
+<div id="1-calculating-retention" />
+
 #### **1. Cálculo de la retención**
 
 En el siguiente ejemplo:
@@ -363,6 +371,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30% | 10% |
 | 98765432 | 123456 | 200 | 25% | 15 % |
 | 07315466 | 613770 | 300 | 20% | 12 % |
+
+<div id="2-calculating-arpu-of-multiple-in-app-events" />
 
 #### **2. Cálculo del ARPU de múltiples eventos in-app**
 
@@ -399,6 +409,8 @@ group by 1
 | 98765432 | re-engagement | 3.57 | 1.34 | 4.86 |
 | 07315466 | Reatribución | 7.41 | 6.79 | 5.29 |
 
+<div id="3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. Cálculo de la tasa de conversión de eventos in-app para un día de cohorte específico**
 
 En el siguiente ejemplo:
@@ -429,6 +441,8 @@ group by 1,2,3,4,5
 | 7 de noviembre de 2022 | Estados Unidos | 12345678 | 123456 | site\_123 | 45% |
 | 5 de noviembre de 2022 | Reino Unido | 98765432 | nulo | site\_654 | 70% |
 | 31 de octubre de 2022 | Corea | 07315466 | nulo | nulo | El 63 % |
+
+<div id="4-calculating-daily-installs" />
 
 #### **4. Cálculo de instalaciones diarias**
 
@@ -465,6 +479,8 @@ group by 1,2,3,4,5
 | id123456789 | 5 de noviembre de 2022 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 31 de octubre de 2022 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculating-revenue-from-facebook-ads" />
+
 #### **5. Cálculo de los ingresos de Facebook Ads**
 
 En el siguiente ejemplo:
@@ -499,6 +515,8 @@ group by 1,2,3
 | 5 de noviembre de 2022 | id123456789 | adnet2\_int | 99.23 |
 | 31 de octubre de 2022 | id123456789 | adnet3\_int | 13.34 |
 
+<div id="6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. Cálculo del ARPU por ID de palabra clave de ASA para hasta 365 días de cohorte**
 
 En el siguiente ejemplo:
@@ -529,6 +547,8 @@ group by 1
 | adnet1\_int | 123456 | 57.019,93 |
 | adnet2\_int | 987654 | 64.867,84 |
 | adnet3\_int | 666854 | 48.160,02 |
+
+<div id="7-calculating-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calculando el ARPU del día 7 por tiempo de atribución por geo**
 
@@ -573,6 +593,8 @@ limit 20
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Información adicional
 
 <div id="traits-and-limitations" />
@@ -595,6 +617,8 @@ limit 20
 | Reinstalaciones | <ul><li>Si los eventos posteriores a la reinstalación son considerados orgánicos no atribuidos:<ul><li>Se incluirán solo a partir del 26 de mayo de 2024. <Anchor target="_blank" href="/marketers/es/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">Saber más</Anchor></li><li>El tiempo de instalación se basa en el campo <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary#device-info::dfd9504e">device\_download\_time</Anchor>.</li><li>No se cuentan para las mediciones de usuarios únicos y de retención.</li></ul></li><li>Si los eventos posteriores a la reinstalación se atribuyen a la primera instalación, siempre se incluyen. <Anchor target="_blank" href="/marketers/es/docs/unique-users">Saber más</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

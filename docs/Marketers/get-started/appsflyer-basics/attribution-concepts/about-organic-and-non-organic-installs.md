@@ -30,6 +30,8 @@ x-zendesk:
 
 Los usuarios no orgánicos se atribuyen a la fuente de medios que motiva la instalación o el engagement. En el caso de los usuarios orgánicos, no existe ninguna fuente de medios identificada con la instalación o el engagement.
 
+<div id="organic-vs-non-organic" />
+
 ## Orgánico vs. no orgánico
 
 | Instalaciones orgánicas  <br />No se atribuyen a ninguna fuentes de medios. | Instalaciones no orgánicas (NOI)  <br />Atribuido a fuentes de los medios |

@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## Principios del panel de control
 
 El panel de control contiene datos de rendimiento de la campaña de SKAN y se adhiere a los siguientes principios:
@@ -40,6 +42,8 @@ El panel de control contiene datos de rendimiento de la campaña de SKAN y se ad
   * Los postbacks recibidos en un día determinado se procesan al final del día UTC. Los datos están disponibles antes de las 08:00 UTC del día siguiente. Lo que significa que los postbacks recibidos el lunes están disponibles en los paneles de control el martes por la mañana.
   * Consulta la <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">hora prevista de actualización del panel de control.</Anchor>
 
+<div id="skan-dashboard-view-options" />
+
 ## Opciones de vista del panel de control de SKAN
 
 Muestra los datos utilizando la [fecha de instalación o de llegada del postback](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options).
@@ -47,6 +51,8 @@ Muestra los datos utilizando la [fecha de instalación o de llegada del postback
 **Para seleccionar una opción de visualización de la fecha**, en AppsFlyer, ve a **Panel de control** > **Vista general de SKAN.** En la barra de filtros, selecciona una opción de fecha en **Mostrar por**.
 
 En las secciones siguientes se describen otros filtros y opciones de visualización.
+
+<div id="dashboard-use" />
 
 ## Uso del panel de control
 
@@ -282,6 +288,8 @@ Definiciones:
 * **SDK:** SDK de AppsFlyer integrado en la aplicación.
 * **Reglas**: <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">modelo de atribución de AppsFlyer</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### Diferencias en el marco de atribución
 
 | Concepto | SKÁN | AppsFlyer |
@@ -295,6 +303,8 @@ Definiciones:
 | Instalaciones reportadas por | <ul><li>**SKAN**: limitado a las instalaciones no orgánicas y a las redescargas no orgánicas.</li><li>**SDK**: se reportan todas las instalaciones. A efectos de la medición, solo se cuentan las primeras instalaciones. Lo que significa que no se tienen en cuenta las reatribuciones.</li></ul> | El SDK reporta todas las instalaciones categorizadas mediante las reglas en primeras instalaciones y reinstalaciones de retargeting (reatribuciones). |
 | Nivel de granularidad de la publicidad | Campaña, conjunto de anuncios, ID de conjunto de anuncios, anuncio e ID de anuncio. | Jerarquía completa: campaña, ID de campaña, conjunto de anuncios, parámetros adicionales como canal y partner. |
 | Redescargas vs. reinstalaciones | Las redescargas se refieren a las acciones de un determinado usuario del ID de Apple. No son paralelas a las reatribuciones. | El retargeting (reatribuciones de re-engagements) se refleja en el panel de control de retargeting. No es paralelo a las redescargas. |
+
+<div id="metric-differences" />
 
 #### Diferencias entre métricas
 
@@ -337,6 +347,8 @@ Definiciones:
 | Anuncios en la búsqueda de Apple | Apple Search Ads no comparte datos a nivel de campaña. Las campañas de agencia que requieran un prefijo no aparecerán en la vista de agencia. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

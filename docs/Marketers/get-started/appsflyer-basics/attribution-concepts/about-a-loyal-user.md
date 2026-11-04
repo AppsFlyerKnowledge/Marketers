@@ -28,14 +28,20 @@ x-zendesk:
 ---
 > **De un vistazo:** descubre qué define a un usuario fiel en AppsFlyer y cómo puedes personalizarlo.
 
+<div id="what-is-a-loyal-user" />
+
 ## ¿Qué es un usuario fiel?
 
 * Según la configuración predeterminada de AppsFlyer, un usuario fiel es un usuario que, después de descargar y abrir la aplicación por primera vez, la abre 3 veces más.
 * Este es un KPI importante para el engagement del usuario.
 
+<div id="changing-the-loyal-user-definition" />
+
 ## Cambiar la definición de usuario fiel
 
 Puedes definir un usuario fiel por aplicación especificando un desencadenador de evento in-app. Para cambiar el activador del evento de usuario fiel, consulta <Anchor target="_blank" href="/marketers/es/docs/app-settings">Configuración de la app</Anchor>.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >

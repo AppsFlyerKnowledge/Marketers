@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app de muestra para tu aplicación del cuidado de la salud.
 
+<div id="-healthcare" />
+
 ## <Image alt="5669_Icono_de_salud_3.png" src="https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png" width="100px" /> Cuidado de la salud
 
 Las aplicaciones para el cuidado de la salud permiten a los usuarios realizar tareas, como adquirir seguros de salud, reservar citas y recibir consejo médico. Los eventos típicos que sugerimos registrar incluyen inicios de sesión, registros y otros eventos generales sin información personal o de salud.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -38,6 +42,8 @@ Las aplicaciones para el cuidado de la salud permiten a los usuarios realizar ta
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 ![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -132,6 +138,8 @@ Cuando el usuario llega a la página de agradecimiento después de una compra ex
 | payment\_method\_type | Método de pago utilizado | tarjeta de crédito, local |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

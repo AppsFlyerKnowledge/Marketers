@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Utiliza tu sitio web móvil para convertir a los visitantes de la web móvil en nuevos usuarios de la aplicación móvil.
 
+<div id="mobile-web-to-app-attribution-solutions" />
+
 ## Soluciones móviles de atribución de la web a la aplicación
 
 ![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
+
+<div id="benefits-of-web-to-app-campaigns" />
 
 ### Beneficios de las campañas de la web a la aplicación
 
@@ -37,6 +41,8 @@ El uso de campañas de la web a la aplicación te ayuda a:
 * Encontrar tus páginas web/de aterrizaje de mejor y menor conversión.
 * Crear ofertas más específicas para el retargeting de tus usuarios web móviles, que también son usuarios de tu aplicación.
 * Enlazar profundamente sin problemas a los usuarios desde el sitio a una página específica de la aplicación.
+
+<div id="attribution-solutions" />
 
 ### Soluciones de atribución
 
@@ -77,9 +83,13 @@ En la siguiente tabla se comparan las dos soluciones para que puedas elegir e im
 
 **Nota:** Smart Banners y OneLink Smart Script solo están disponibles con <Anchor target="_blank" href="/marketers/es/docs/account-management-plans-payments-and-billing#appsflyer-plans">planes de suscripción</Anchor> pagados aptos. Depende de tu plan de cuenta de AppsFlyer
 
+<div id="web-assisted-installs" />
+
 ### Instalaciones asistidas por web
 
 Las instalaciones asistidas por web ocurren cuando los usuarios descargan tu app, pero no necesariamente por una campaña específica. Antes de que descarguen tu app, visitaron tu sitio web por cualquier motivo, quizá días o semanas antes. Usa <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">PBA</Anchor> Web-Assisted Installs para ver un desglose general de estos *puntos de contacto de asistencia* que finalmente conducen a la instalación de la app.  
+
+<div id="web-to-app-solutions-vs-web-assisted-installs" />
 
 #### Soluciones móviles de atribución de la web a la aplicación
 

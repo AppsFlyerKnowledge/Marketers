@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En resumen:** crea reportes de datos de atribución para hacer coincidir los datos a nivel de usuario de los eventos de instalación o retargeting con los datos de tus sistemas.
 
+<div id="creating-an-attribution-data-report" />
+
 ## Creación de un reporte de datos de atribución
 
 **Para crear un reporte de datos de atribución, sigue los pasos que se detallan en las pestañas siguientes.**
@@ -56,6 +58,8 @@ x-zendesk:
 
 Especifica los datos que se van a utilizar para el reporte:
 
+<div id="attribution-data-sources" />
+
 #### **Datos de atribución:**
 
 * **Aplicaciones:** selecciona una o más de las aplicaciones en tu cuenta de AppsFlyer.
@@ -70,6 +74,8 @@ Especifica los datos que se van a utilizar para el reporte:
 
 * **Periodo de tiempo:** Selecciona el número de días de datos históricos en los que deseas que el DCR busque eventos de atribución que coincidan con tus eventos de origen personalizados (de 1 a 180 días).
 
+<div id="custom-sources" />
+
 #### **Fuentes personalizadas**
 
 Al definir la estructura del reporte, puede elegir usar datos de cualquiera de las <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources">fuentes personalizadas que hayas configurado</Anchor>.
@@ -82,6 +88,8 @@ Al definir la estructura del reporte, puede elegir usar datos de cualquiera de l
 
 Para hacer coincidir los datos entre las fuentes, cada una de las fuentes **personalizadas** utilizadas en el reporte debe incluir un <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services">identificador</Anchor> asignado a un **identificador clave** en los datos de atribución.
 
+<div id="what-is-a-key-identifier" />
+
 #### **¿Qué es un identificador clave?**
 
 Puedes asignarlos a cualquiera de estos identificadores de datos de atribución como identificadores **clave**:
@@ -92,13 +100,19 @@ Puedes asignarlos a cualquiera de estos identificadores de datos de atribución 
 * **ID de usuario de cliente (CUID):** un identificador de usuario único, generalmente generado y establecido por el propietario de la aplicación en el momento del registro del usuario.
   * El uso de CUID para asignar datos requiere que la aplicación esté configurada para <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">enviar el CUID a AppsFlyer</Anchor> a través del SDK o de la API de servidor a servidor (S2S).
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > No todas las fuentes de medios permiten la coincidencia mediante el CUID. Se recomienda encarecidamente utilizar el ID de AppsFlyer.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Esquemas de asignación (directa/indirecta)**
 
 Si el reporte usa más de una fuente personalizada, solo es necesario asignar una de ellas **directamente** a un identificador de clave de datos de atribución. Se pueden asignar otras fuentes personalizadas **directa o indirectamente**, como se ilustra en el siguiente ejemplo:
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -121,11 +135,15 @@ Si el reporte usa más de una fuente personalizada, solo es necesario asignar un
 
 <Accordion title="Determinar el tratamiento de varios eventos coincidentes">
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Si los tipos de atribución seleccionados para este reporte **incluyen solo instalaciones u instalaciones orgánicas, esta sección es** irrelevante. Ve a **[Seleccionar dimensiones](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).**
 
 **reengagements o reatribuciones,** es posible que los datos de atribución incluyan más de un evento durante el período seleccionado con el mismo identificador clave. Cuando este sea el caso, debes indicar al DCR qué eventos coincidentes debe incluir en el reporte.
+
+<div id="matching-all-events" />
 
 #### **Coincidir con todos los eventos**
 
@@ -133,6 +151,8 @@ El método de coincidencia más completo permite que tu reporte incluya todos lo
 
 * El identificador del código fuente que está asignado a install\_time debe tener el siguiente formato: **aaaa-mm-dd hh:mm:ss.**
 * **Nota:** Aunque el nombre del identificador de datos de atribución es install\_time, en realidad significa **hora del evento** cuando se hace referencia a los eventos de reinstalación, reengagement o reatribución.
+
+<div id="matching-a-single-event" />
 
 #### **Emparejar un solo evento**
 
@@ -147,6 +167,8 @@ El comportamiento de coincidencia de un solo evento difiere cuando la fuente de 
 
 Haz esta selección en función del evento que consideres más relevante para la información que deseas obtener del reporte.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > En caso de registros duplicados, DCR elimina los duplicados de los registros con el mismo `appsflyer_id` y selecciona el evento más reciente en función de `event_time`.
@@ -160,6 +182,8 @@ Haz esta selección en función del evento que consideres más relevante para la
 Recuerda que los datos a nivel de usuario no pueden ser reportados por DCR. En su lugar, te proporciona la información necesaria para la toma de decisiones agregando (o agrupando) los datos por las dimensiones que elijas.
 
 Por lo general, una dimensión es un atributo por el que se clasifican los usuarios de la aplicación (por ejemplo, geolocalización, fecha de instalación, campaña, etc.).
+
+<div id="selecting-report-dimensions" />
 
 #### **Selección de las dimensiones del reporte**
 
@@ -177,6 +201,8 @@ Las dimensiones del reporte de datos de atribución pueden incluir:
 
 **Nota:** De forma predeterminada, todos los reportes se agrupan según la dimensión de datos de atribución **media\_source.** Si no deseas utilizar esta dimensión en tu reporte, puedes eliminarla de la lista de **dimensiones del reporte**.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Opcional] Personalización de nombres para mostrar de las dimensiones**
 
 De forma predeterminada, los nombres de las dimensiones se muestran en el reporte exactamente como aparecen en los datos de atribución o en las fuentes personalizadas. Si lo deseas, puedes personalizar los nombres de las dimensiones para el reporte.
@@ -188,6 +214,8 @@ De forma predeterminada, los nombres de las dimensiones se muestran en el report
 3. Cambia el nombre por el nombre para mostrar de la dimensión que se utilizará en el reporte (hasta 50 caracteres).
 4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### Preservación de la privacidad mientras se agrupa por dimensión (reagrupación)
 
 En función del tamaño del conjunto de datos, el número de dimensiones que elijas y otros factores, es posible que un reporte incluya uno o varios grupos que contengan muy pocos usuarios para permitir la generación de reportes. Si los datos se reportaran de esta manera, se infringirían las restricciones contra el suministro de datos a nivel de usuario.
@@ -195,6 +223,8 @@ En función del tamaño del conjunto de datos, el número de dimensiones que eli
 * **Nota:** **Importante:** La cantidad mínima de usuarios requerida para permitir la presentación de reportes varía según la fuente de medios.
 
 Sin embargo, en lugar de eliminar u ocultar los datos del reporte por completo, DCR utiliza un **Mecanismo de reagrupamiento** para proporcionar tantos detalles como sea posible mientras se mantiene la privacidad del usuario.
+
+<div id="regrouping-example" />
 
 > 📄 **Ejemplo de reagrupamiento**
 >
@@ -254,6 +284,8 @@ Sin embargo, en lugar de eliminar u ocultar los datos del reporte por completo, 
 >
 > * *Consulta a continuación una opción avanzada que puedes usar para aplicar también el reagrupamiento a las dimensiones de fuentes personalizadas.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Opcional] Administración de la prioridad de las dimensiones**
 
 De forma predeterminada, las dimensiones de los datos de atribución se eliminan en orden inverso al orden en que aparecen en la lista de **dimensiones del reporte**. Sin embargo, puedes modificar la secuencia predeterminada o aplicar la reagrupación a las dimensiones de origen personalizadas seleccionadas para conservar las dimensiones más importantes para usted.
@@ -289,6 +321,8 @@ Las métricas son los datos numéricos que has recopilado con respecto a un usua
 3. Para quitar una métrica, selecciónala en la lista **Métricas del reporte** y usa la función **Quitar** para devolverla a la lista **Métricas de las fuentes**.
 4. Repite este proceso hasta que hayas agregado cada métrica que quieras incluir en el reporte.
 
+<div id="optional-customizing-metric-display-names" />
+
 #### **[Opcional] Personalización de nombres para mostrar de las métricas**
 
 De forma predeterminada, los nombres de las métricas se muestran en tu reporte exactamente como aparecen en los datos de atribución o en tus fuentes personalizadas. Si lo deseas, puedes personalizar los nombres de las métricas para el reporte.
@@ -299,6 +333,8 @@ De forma predeterminada, los nombres de las métricas se muestran en tu reporte 
 2. Haz clic en el botón Editar ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) que se muestra a la derecha de la métrica.
 3. Cambia el nombre por el nombre para mostrar de la métrica que se utilizará en el reporte (hasta 50 caracteres).
 4. Haz clic en **Aceptar** para guardar el nombre para mostrar, o en **X** para cancelar.
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Opcional] Seleccionar los identificadores que se van a contar**
 
@@ -336,6 +372,8 @@ DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Ancho
 
 </Accordion>
 
+<div id="when-does-the-report-run" />
+
 ## ¿Cuándo se publica el reporte?
 
 Una vez que hayas creado y guardado un reporte, se ejecuta cada vez que se detectan nuevas versiones de todas [las fuentes personalizadas que utiliza](/docs/data-clean-room-creating-attribution-data-reports#fuentes-personalizadas):
@@ -345,6 +383,8 @@ Una vez que hayas creado y guardado un reporte, se ejecuta cada vez que se detec
 * Para las fuentes ubicadas en **buckets de almacenamiento en la nube** (Amazon S3 y GCS), DCR reconoce que se ha creado una nueva versión de una fuente cuando detecta que <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-sources#actualización-de-las-fuentes-para-activar-el-procesamiento-de-reportes">se ha cargado una nueva versión de un archivo de fuente</Anchor> junto con el archivo \_SUCCESS que lo acompaña.
 
 AppsFlyer busca continuamente nuevas versiones de fuentes para la **fecha actual y 2 días antes**.
+
+<div id="reference" />
 
 ## Referencia
 

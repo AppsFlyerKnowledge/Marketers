@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Descripción general:** Adform, un partner integrado de ad network de AppsFlyer, proporciona tecnologías abiertas y transparentes que conectan a anunciantes y agencias con publisher para habilitar la publicidad digital en todos los dispositivos. Además de la atribución móvil basada en clics, Adform también ofrece la atribución view-through, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-adform" />
+
 ## Configuración de Adform
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -39,6 +41,8 @@ x-zendesk:
 
 La ventana de configuración de Adform incluye 2 pestañas activas: **Integración** y **Enlace de atribución**. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
@@ -50,14 +54,20 @@ La ventana de configuración de Adform incluye 2 pestañas activas: **Integraci�
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Como red de TODAS las instalaciones, Adform prefiere recibir postbacks de todas las nuevas instalaciones de tu app desde CUALQUIER fuente, incluida la orgánica. Se recomienda seleccionar **Eventos atribuidos a cualquier partner** para enviar todos los postbacks de instalación a Adform.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -71,12 +81,16 @@ Adform se conecta con AppsFlyer a través de un ID de tracking del cliente únic
 
 Cambia esta opción a ON si quieres atribuir las instalaciones view-through de Adform. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Adform tras las instalaciones y los re-engagement de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos procedentes solo de usuarios atribuidos a Adform.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para reportarla a Adform.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 

@@ -24,9 +24,13 @@ x-zendesk:
 
 ![Atribución basada en personas de AppsFlyer_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
 
+<div id="pba-dashboards" />
+
 ## Paneles de control de la PBA
 
 Las siguientes secciones se refieren a los dashboards de <Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-dashboard">Atribución web</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/pba-web-assisted-installs">Instalaciones asistidas por web</Anchor> dashboards.
+
+<div id="settings" />
 
 ## Configuración
 
@@ -35,6 +39,8 @@ Las siguientes secciones se refieren a los dashboards de <Anchor target="_blank"
 <Accordion title="Opciones de filtro">
 
 Refina los resultados del dashboard PBA usando el selector de fecha (A), los filtros principales (B) y los filtros adicionales (C) para adaptar el análisis a tus necesidades.
+
+<div id="filter-panel-in-pba-dashboards" />
 
 #### Panel de filtros en los dashboards de PBA
 
@@ -54,6 +60,8 @@ Refina los resultados del dashboard PBA usando el selector de fecha (A), los fil
 * Los filtros disponibles por dashboard varían, como se indica en la tabla siguiente.
 * Filtros con contexto: algunos filtros, como se indica en la tabla, requieren asociarse a un contexto. Por ejemplo, en el dashboard de Instalaciones asistidas por web, el filtro de geolocalización requiere el contexto de la fuente de medios web o de la fuente de medios móvil. Puedes configurar un filtro de geolocalización para cada uno definiendo dos filtros de geolocalización: uno para cada contexto.
 
+<div id="available-filter-dimensions-per-dashboard" />
+
 #### Dimensiones de filtro disponibles por dashboard
 
 <table><tbody><tr><th>Filtro</th><th>Descripción/valores</th><th>Atribución del sitio web </th><th>Instalaciones asistidas por web</th><th>Rutas de<br/>conversión</th></tr><tr><td>Selector de fecha</td><td><p>La fecha en la que se produjo uno de los siguientes eventos de conversión de PBA: </p><ul><li>Instalación de aplicaciones</li><li>Conversión web</li><li>Conversión móvil</li></ul></td><td><p>Sí</p></td><td><p>Sí</p></td><td><p>Sí</p></td></tr><tr><td>Geografía </td><td><p>Lista de países/territorios </p></td><td>Sí</td><td><span>Sí (1)</span></td><td><p><span>Sí (2)</span></p></td></tr><tr><td>Contador máximo de eventos</td><td>Orgánico, banner inteligente, enlace personalizado, pagado</td><td>--</td><td><span>Sí</span></td><td><span>--</span></td></tr><tr><td>Valor de ejemplo: store_commission</td><td>Anuncio, directo, correo electrónico, referencia, búsqueda orgánica, social</td><td>Sí</td><td><span>Sí</span></td><td><span>Sí (2)</span></td></tr><tr><td>Plataforma móvil</td><td>Android, iOS</td><td>--</td><td><span>Sí</span></td><td><span>--</span></td></tr><tr><td>Nombre de la app </td><td><p>Fuente de medios a la que se atribuye el evento<span></span></p></td><td><p>Sí</p></td><td><span>Sí(1)</span></td><td><span> <font>Sí (2)</font> </span></td></tr><tr><td><p>Media Type</p></td><td><p>Incluye pagado, <a href="./owned-media-attribution" target="_blank">owned</a> y ganado</p></td><td><p>Sí</p></td><td>Sí</td><td>Sí (2)</td></tr><tr><td><p>Eventos de conversión</p></td><td><p>Muestra las rutas que llevan al evento de conversión para la ruta de conversión</p></td><td><p>Sí</p></td><td><p>--</p></td><td><p><span>Sí</span></p></td></tr><tr><td><p>Longitud de la ruta (pasos) </p></td><td><p>Número de pasos en la vista actual de la ruta de conversión: fuente de medios, canal de medios, tipo de medio</p></td><td><p>--</p></td><td><p>--</p></td><td><p>Sí</p></td></tr><tr><td><p>Duración de la ruta (días)</p></td><td>Duración de la conversión desde el primer punto de contacto</td><td>--</td><td>--</td><td>Sí</td></tr><tr><td colspan="5"><p><strong>(1)</strong> En el dashboard de instalaciones asistidas por web, asocias el filtro con la fuente de medios web o la fuente de medios móvil. Puedes configurar varias instancias del filtro. Caso de ejemplo</p></td></tr></tbody></table>
@@ -70,6 +78,8 @@ Los datos del dashboard se agrupan, por ejemplo, por fuente de medios, dispositi
 
 * Grupo predeterminado: **Fuente de medios/Campaña**
 * En la lista desplegable, selecciona 1 o más opciones.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -101,6 +111,8 @@ Los datos del dashboard se agrupan, por ejemplo, por fuente de medios, dispositi
 | Configuración de la PBA | <ul><li>Configurar eventos de conversión</li><li>Cambiar la configuración del paquete</li></ul> |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

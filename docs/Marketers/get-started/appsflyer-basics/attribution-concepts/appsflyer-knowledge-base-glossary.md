@@ -34,40 +34,58 @@ x-zendesk:
 
 <Accordion title="A">
 
+<div id="account-owner" />
+
 #### Propietario de cuenta
 
 También, **Administrador**  
  Usuario principal de la cuenta con acceso y permisos de administrador con privilegios de superusuario para una cuenta de AppsFlyer.   
  [Artículo] y [Artículo]
 
+<div id="ad" />
+
 #### Anuncio
 
 AppsFlyer registra el nombre de una creatividad utilizada para promocionar un producto, marca o servicio.
 
+<div id="ad-cost" />
+
 #### Costo del anuncio
 
 (EN: Ad cost) Cantidad de dinero gastado en un anuncio. AppsFlyer registra el costo del anuncio por clic, la API de costos y la carga de archivos CSV. <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview">[Artículo]</Anchor>
+
+<div id="ad-group" />
 
 #### Grupo de anuncios
 
 Contiene uno o más anuncios que comparten objetivos similares (como diferentes tipos de productos o servicios). Cada campaña incluye uno o más conjuntos de anuncios.  
  *Ejemplo:* Google Ads los usa para organizar palabras clave que se relacionan con anuncios específicos.
 
+<div id="ad-hierarchy" />
+
 #### Jerarquía de anuncios
 
 (EN: Ad hierarchy) Anuncio > Conjunto de anuncios (también conocido como Grupo de anuncios) > Campaña > Fuente de medios
+
+<div id="ad-network" />
 
 #### Red de publicidad
 
 (EN: Ad network) Reúne aplicaciones y sitios web como fuentes de medios de tráfico para los marketers. Las ad networks agregan el espacio publicitario del publisher y lo combinan con la demanda del marketer. <Anchor target="_blank" href="/partners/es/docs/ad-network-onboarding">[Artículo]</Anchor>
 
+<div id="ad-revenue" />
+
 #### Ingresos por anuncios
 
 Los ingresos por publicidad son el dinero que las aplicaciones generan a partir de la publicidad in-app. Usa los datos de ingresos por publicidad en AppsFlyer para ver automáticamente el ROI de los usuarios de diferentes fuentes de medios. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">[Artículo]</Anchor>
 
+<div id="ad-set" />
+
 #### Conjunto de anuncios
 
 (EN: Ad set) Contiene uno o más anuncios. Se utilizan para definir el targeting, el presupuesto, la programación, las ofertas y la ubicación.
+
+<div id="ad-spend" />
 
 #### Gasto publicitario
 
@@ -76,13 +94,19 @@ Los ingresos por publicidad son el dinero que las aplicaciones generan a partir 
  *Fórmula:* Ingresos generados por publicidad / Gasto publicitario = Retorno de la inversión publicitaria (ROAS)  
  <Anchor target="_blank" href="/marketers/es/docs/import-cost-data">[Artículo]</Anchor> y <Anchor target="_blank" href="/partners/es/docs/cost-import-for-ad-networks">[Artículo]</Anchor>
 
+<div id="ad-types" />
+
 #### Tipos de anuncios
 
 *Incluye:* audio, banner, intersticial, playable (vista previa interactiva de la experiencia de la app), vídeo recompensado (vídeo que ofrece una recompensa in-app a cambio de verlo), contenido patrocinado, texto y vídeo <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">[Artículo]</Anchor>
 
+<div id="ad-network-integration" />
+
 #### Integración con redes de publicidad
 
 Proceso de configuración de una ad network como partner de AppsFlyer para fines de registro y atribución. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">[Artículo]</Anchor>
+
+<div id="admin" />
 
 #### Administrador
 
@@ -90,14 +114,20 @@ También, **Propietario de la cuenta**
  Usuario principal de la cuenta con acceso y permisos de superusuario (Administrador) para una cuenta de AppsFlyer.  
  [Artículo] y [Artículo]
 
+<div id="advanced-privacy" />
+
 #### Privacidad avanzada
 
 (EN: Advanced Privacy) **Se aplica solo a los usuarios de iOS 14.5+ que no dan su consentimiento.** La privacidad avanzada proporciona a los anunciantes control sobre la disponibilidad de los datos de atribución a nivel de usuario en el **nivel de partner individual** (a diferencia de la Privacidad avanzada agregada, que se aplica a nivel de aplicación). Cuando está activada para un partner específico, los datos de postback y de eventos compartidos con **ese partner** son agregados y anónimos. Los raw data a nivel de usuario **están disponibles** para el propio anunciante. <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">[Artículo]</Anchor>
+
+<div id="advertiser" />
 
 #### AppsFlyer
 
 Relacionado con **Marketer** y **propietario de la app**  
  Es propietario de una app o un sitio web y la promociona/comercializa a través de varios canales para aumentar las conversiones.
+
+<div id="advertising-id" />
 
 #### ID de publicidad
 
@@ -108,41 +138,59 @@ También, **ID de anuncio**
 
 Ahora, Google Ads <Anchor target="_blank" href="/marketers/es/docs/google-ads-adwords-integration-setup-for-advertisers">[Artículo]</Anchor>
 
+<div id="affiliate-networks" />
+
 #### Redes de afiliados
 
 También, **Publisher**  
  Usa el espacio de su sitio web para promocionar ofertas de marketers y recibe un pago por cada usuario referido. Los publishers reciben una parte de los ingresos generados por los visitantes de la app O una tarifa por cada visitante de la app que completa una acción específica. [Artículo]
 
+<div id="agency" />
+
 #### Agencia
 
 (EN: Agency) Terceros que ejecutan, atribuyen y miden campañas de marketing de aplicaciones para clientes. Los clientes de las agencias incluyen anunciantes/marketers y propietarios de aplicaciones. <Anchor target="_blank" href="/partners/es/docs/about-agency-accounts">[Artículo]</Anchor>
+
+<div id="aggregate-data" />
 
 #### Datos agregados
 
 Datos de alto nivel, por ejemplo, a nivel de cuenta o aplicación, compilados como un resumen utilizando datos más granulares. <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">[Artículo]</Anchor>
 
+<div id="aggregated-advanced-privacy" />
+
 #### Privacidad avanzada agregada
 
 (EN: Aggregated Advanced Privacy) **Se aplica solo a los usuarios de iOS 14.5+ que no dan su consentimiento.** La privacidad avanzada agregada proporciona a los anunciantes control sobre la disponibilidad de los datos de atribución a nivel de usuario en el **nivel de aplicación** (a diferencia de la Privacidad avanzada, que se aplica a nivel de partner individual). Cuando se activa, los datos de postback y de eventos compartidos con **TODOS los partners** son agregados y anónimos, y los datos de atribución a nivel de usuario **NO están disponibles** para el propio anunciante. Esto anula cualquier configuración de Privacidad avanzada realizada a nivel de partner individual. <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework">[Artículo]</Anchor>
+
+<div id="all-installs-network" />
 
 #### Redes que rastrean todas las instalaciones
 
 Ad network que acepta postbacks, de todas las fuentes, para cada nueva instalación de la app, incluso si una instalación no se atribuye a su red.
 
+<div id="all-launches-network" />
+
 #### Redes que rastrean todos los inicios
 
 Ad network que acepta postbacks, de todas las fuentes, para cada nuevo lanzamiento de la app, incluso si un lanzamiento no se atribuye a su red.
+
+<div id="analytics-platform" />
 
 #### Plataforma de analíticas
 
 Solución diseñada para satisfacer las necesidades de los usuarios, especialmente de las grandes empresas basadas en datos, mediante una biblioteca de elementos.  
  *Incluye:* gráficos y otras herramientas de visualización de datos, componentes de Dashboard, temas de personalización
 
+<div id="android-app-link" />
+
 #### Enlace de aplicación de Android
 
 (EN: Android App Link) URL que vincula a un usuario con un enlace profundo desde una página web a un contenido específico dentro de una aplicación de Android. Son enlaces HTTP/HTTPS asociados de forma exclusiva a tu App y están diseñados para ofrecer una experiencia de usuario más fluida e integrada.
 
 Cuando un usuario hace clic en un Android App Link, el sistema operativo Android puede determinar de forma inteligente si debe abrir el enlace en un navegador web o dentro de una App. Los Android App Links requieren verificación mediante la incorporación de enlaces de activos digitales y deben configurarse tanto en el código de la App como en el dominio asociado del sitio web. <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">[Artículo]</Anchor>
+
+<div id="android-id" />
 
 #### ID de Android
 
@@ -156,9 +204,13 @@ Consulta <Anchor target="_blank" href="https://www.google.com/url?q=https://deve
  Rutinas, protocolos y herramientas que se utilizan para transferir datos entre AppsFlyer y sus clientes y partners comerciales.  
  *Ejemplos:* API Push, Pull API, API maestra, API de cohortes, y API de servidor a servidor
 
+<div id="api-call" />
+
 #### Llamada de API
 
 (EN: API call) Un proceso que tiene lugar cuando envías una solicitud. La solicitud se transfiere, se procesa y se devuelven comentarios.
+
+<div id="app-id-android--ios" />
 
 #### ID de aplicación (Android y iOS)
 
@@ -169,15 +221,21 @@ Identificador único que distingue entre mayúsculas y minúsculas y que aparece
 
 iOS app ID = ID + ID de App Store de 9/10 dígitos, como ***id123456789***
 
+<div id="app-launch" />
+
 #### Lanzamiento de la aplicación
 
 (EN: App launch) Se abre una aplicación. El recuento se basa en los inicios del SDK o en la lógica definida por el propietario de una App.  
  *Ejemplo:* Un día de uso de una App antivirus puede contar como una sesión. <Anchor target="_blank" href="/marketers/es/docs/measure-sessions">[Artículo]</Anchor>
 
+<div id="app-owner" />
+
 #### Propietario de aplicación
 
 Relacionado con, **Anunciante** y **Marketer**  
  Es el propietario de una App y la anuncia/comercializa en varias plataformas para aumentar la base de usuarios.
+
+<div id="app-store-analytics" />
 
 #### Analíticas de las tiendas de aplicaciones
 
@@ -186,6 +244,8 @@ Recopila y analiza datos de apps para tiendas de aplicaciones (Google Play, Appl
 #### AppsFlyer
 
 En los artículos de la base de conocimiento de AppsFlyer, se refiere a la plataforma de la empresa.
+
+<div id="appsflyer-id" />
 
 #### ID de AppsFlyer
 
@@ -196,6 +256,8 @@ En los artículos de la base de conocimiento de AppsFlyer, se refiere a la plata
 **Ingresos promedio por usuario activo diario**  
  Ingresos promedio generados por usuarios activos a diario.  
  *Fórmula:* Ingresos totales / Número de usuarios activos (ambos dentro de un periodo de 24 horas)
+
+<div id="arpu" />
 
 #### OPCIONAL
 
@@ -214,19 +276,27 @@ En los artículos de la base de conocimiento de AppsFlyer, se refiere a la plata
 **Optimización de la tienda de aplicaciones**  
  Se utiliza para mejorar la visibilidad de la app en la App Store.
 
+<div id="assisted-installs" />
+
 #### Instalaciones asistidas
 
 También, **Atribución multi-touch**  
  engagement, a través de fuentes de medios, que contribuyen al último engagement atribuido antes de una instalación. <Anchor target="_blank" href="/marketers/es/docs/measure-assisted-installs">[Artículo]</Anchor>
 
+<div id="attribution" />
+
 #### Atribución
 
 Instalaciones y otros eventos asociados con una fuente de medios a través de clics e impresiones. <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">[Artículo]</Anchor>
+
+<div id="attribution-link" />
 
 #### Enlace de atribución
 
 URL de anuncio que contiene la información necesaria para registrar un clic y redirigir a un usuario para descargar una aplicación. Incluye información utilizada para la atribución y el análisis.    
  *Ejemplo:* un usuario hace clic en un enlace de atribución, AppsFlyer registra la información y redirige al usuario para descargar la aplicación.
+
+<div id="audiences" />
 
 #### Audiencias
 
@@ -240,22 +310,32 @@ Función de AppsFlyer que permite a los marketers segmentar a los usuarios en gr
 
 (EN: Banner) Anuncio gráfico del sitio web que enlaza con el sitio web o la aplicación que anuncia. Los marketers usan banners inteligentes de AppsFlyer para atribuir y medir la calidad de las instalaciones de aplicaciones derivadas de los visitantes de sus sitios web móviles. <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">[Artículo]</Anchor>
 
+<div id="bi-system" />
+
 #### Sistema de Business Intelligence
 
 Conjunto de procesos, arquitecturas y tecnologías que convierten los raw data en información que ayuda a orientar las acciones empresariales.
+
+<div id="bid" />
 
 #### Oferta
 
 El precio que paga un marketer por una campaña pagada en base a [CPM, CPI, CPC o CPA](#c).
 
+<div id="brand-bundle" />
+
 #### Paquete de marca
 
 Consolida los datos de atribución, actividad e ingresos de aplicaciones web y móviles relacionadas con la marca. <Anchor target="_blank" href="/marketers/es/docs/pba-brand-bundles-and-settings">[Artículo]</Anchor>
+
+<div id="branded-link" />
 
 #### Enlace de marca
 
 Versión más corta de una URL que se basa en un nombre de marca o un término relacionado. <Anchor target="_blank" href="/marketers/es/docs/brand-onelink-with-your-domain">[Artículo]</Anchor>  
  *Ejemplo:* si tu marca es *Great App*, entonces un enlace de marca podría ser *promotions.greatapp.com*.
+
+<div id="bundle-id" />
 
 #### ID de paquete
 
@@ -272,22 +352,32 @@ Versión más corta de una URL que se basa en un nombre de marca o un término r
  Costo para adquirir un usuario que instala una aplicación o realiza otra acción posterior a la instalación.  
  *Fórmula:* Gastos de ventas y marketing / Cantidad de clientes nuevos
 
+<div id="campaign" />
+
 #### Campaña
 
 (EN: Campaign) Contiene uno o más conjuntos de anuncios. Caracterizada por un objetivo y KPI, audiencia objetivo, presupuesto y planificación, plataformas de preferencia, creativo y formato del anuncio, estrategia, etc. <Anchor target="_blank" href="/marketers/es/docs/measure-paid-media">[Artículo]</Anchor>.
+
+<div id="campaign-id" />
 
 #### ID de campaña
 
 (EN: Campaign ID) Identificador único de campaña dentro de una fuente de medios.
 
+<div id="carrier" />
+
 #### Operador
 
 (EN: Carrier) El proveedor de servicios inalámbricos tiene conexiones de datos móviles (pero no Wi-Fi).
+
+<div id="channel" />
 
 #### Canal
 
 Segmentación del tráfico dentro de las fuentes de medios, en particular Google Ads y anuncios de Meta.  
  *Ejemplos:* YouTube para Google, Instagram para anuncios de Meta
+
+<div id="churn" />
 
 #### Abandono
 
@@ -295,18 +385,26 @@ También **desgaste del cliente**, **rotación** y **deserción** 
  Los marketers pueden estimar su churn (pérdida de clientes) mediante el reporte de retención de AppsFlyer y las mediciones de desinstalación.  
  *Fórmula:* Número de usuarios perdidos durante un período de tiempo / Número de usuarios al inicio del período de tiempo
 
+<div id="click" />
+
 #### Clic
 
 Engagement del usuario (dentro de una fuente de medios) que redirige al usuario a una página anunciada o a una actividad de la aplicación.
+
+<div id="click-flooding" />
 
 #### Inundación de clics
 
 También, **Click spamming**   
  La ad network envía grandes cantidades de clics fraudulentos con la esperanza de entregar el último clic antes de las instalaciones.
 
+<div id="click-url" />
+
 #### URL de clic
 
 También, **Enlace de atribución**
+
+<div id="client" />
 
 #### Cliente
 
@@ -317,32 +415,46 @@ También, **Enlace de atribución**
 **Costo de adquisición**  
  Costo en el que incurre una empresa al adquirir un nuevo cliente, activo o bien. <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview">[Artículo]</Anchor>
 
+<div id="cohort-analysis" />
+
 #### análisis de cohortes
 
 (EN: Cohort analysis) Conjunto de datos agregados que divide a los usuarios en grupos para identificar patrones de comportamiento. Los grupos, o cohortes, generalmente comparten características o experiencias comunes dentro de un período de tiempo definido. <Anchor target="_blank" href="/marketers/es/docs/cohort-and-retention-dashboard">[Artículo]</Anchor>
+
+<div id="contributor" />
 
 #### Contribuyente
 
 También, **Asistencia**  
  La fuente de medios/campaña proporcionó un engagement del usuario antes de una instalación y dentro de la ventana de lookback de atribución, pero no se atribuyó.
 
+<div id="conversion" />
+
 #### Conversión
 
 Se produce cuando un usuario completa una acción relacionada con un anuncio que se considera beneficiosa para el negocio. En AppsFlyer, los engagements, las reinstalaciones y las instalaciones atribuidas se consideran conversiones. Ejemplo: el usuario hace clic en un anuncio y luego instala. La instalación es una conversión nueva. <Anchor target="_blank" href="/marketers/es/docs/about-conversion-rates">[Artículo]</Anchor>
+
+<div id="conversion-chain" />
 
 #### Cadena de conversión
 
 Secuencia de eventos de conversión, desde ver un anuncio hasta realizar una acción in-app.  
  *Ejemplo:*\n Un usuario hace clic en un anuncio, visita una página de destino, hace clic en un Smart Banner, instala la app y, a continuación, se registra y realiza una compra.
 
+<div id="conversion-event" />
+
 #### Evento de conversión
 
 (EN: Conversion event) Hito que alcanzan los usuarios de la aplicación que es importante para tu negocio. Incluye: clics e impresiones antes de una instalación o eventos in-app realizados por el usuario.   
 *Ejemplo*: instalación de la aplicación, agregar a un carrito, iniciar un proceso de pago, realizar una compra
 
+<div id="conversion-rate" />
+
 #### tasa de conversión
 
 Porcentaje de usuarios que avanzan a lo largo de la cadena de conversión, de un paso a otro. <Anchor target="_blank" href="/marketers/es/docs/about-conversion-rates">[Artículo]</Anchor>
+
+<div id="conversion-types" />
 
 #### Tipos de conversión
 
@@ -386,6 +498,8 @@ También, **cookie web**, **cookie de Internet**,\n o **cookie del navegador**
  Modelo de precios. El marketer paga por los contactos visuales generados al solicitar un medio publicitario (anuncios de vídeo) en la plataforma de un publisher.  
  *Fórmula:* Costos publicitarios totales / Cantidad de impresiones
 
+<div id="creative" />
+
 #### Creatividad
 
 (EN: Creative) El concepto, diseño y material gráfico que se emplean en un anuncio determinado. En la página **Banners inteligentes**, los marketers establecen imágenes de banners, textos y botones para la creatividad de cada banner, sin necesidad de un desarrollador web. <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">[Artículo]</Anchor>
@@ -395,6 +509,8 @@ También, **cookie web**, **cookie de Internet**,\n o **cookie del navegador**
 **Gestión de la relación con el cliente**  
  Tecnología utilizada para gestionar las relaciones e interacciones de la empresa con clientes y clientes potenciales.
 
+<div id="cross-promotion-attribution" />
+
 #### Atribución de promociones cruzadas
 
 (EN: Cross-promotion attribution) Método para atribuir y registrar instalaciones de campañas de promoción cruzada. Estas campañas involucran una aplicación específica, así como otras de tu propiedad.
@@ -403,6 +519,8 @@ También, **cookie web**, **cookie de Internet**,\n o **cookie del navegador**
 
 (EN: CSM) **Gerente de éxito del cliente.** Si no tienes o no conoces a tu CSM, ponte en contacto con [hello@appsflyer.com](mailto:hello@appsflyer.com).  
 \n También, **Gerente de cuenta**
+
+<div id="csv-file" />
 
 #### Archivo CSV
 
@@ -450,6 +568,8 @@ También, **cookie web**, **cookie de Internet**,\n o **cookie del navegador**
 
 <Accordion title="D">
 
+<div id="data-locker" />
+
 #### Casillero de datos
 
 Función de AppsFlyer para la entrega de raw data a un bucket de AWS (repositorio exclusivo). Los marketers obtienen raw data del bucket de AWS. <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">[Artículo]</Anchor>
@@ -459,29 +579,43 @@ Función de AppsFlyer para la entrega de raw data a un bucket de AWS (repositori
 **Usuarios activos diarios**  
  Número de usuarios únicos que abren una aplicación específica en un periodo de 24 horas.
 
+<div id="daumau-rate" />
+
 #### Tasa de DAU/MAU
 
 (EN: DAU/MAU rate) Mide la adherencia de tu producto. Por ejemplo, cuántos usuarios visitan o interactúan con un producto o servicio durante un intervalo determinado.
+
+<div id="deep-linking" />
 
 #### Enlaces profundos
 
 Enlace que envía a un usuario a contenido específico dentro de una aplicación y no a una tienda de aplicaciones o a un sitio web. <Anchor target="_blank" href="/marketers/es/docs/deep-linking-using-onelink">[Artículo]</Anchor>
 
+<div id="deferred-deep-linking" />
+
 #### Enlaces profundos diferidos
 
 El enlace primero envía a un usuario a una tienda de aplicaciones o sitio web para descargar e instalar una aplicación. Luego, usando los datos de atribución del enlace, se redirige al usuario a contenido específico dentro de la aplicación. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking">[Artículo]</Anchor>
+
+<div id="deprecation-notice" />
 
 #### Aviso de desuso
 
 Notificación de que toda o parte de una versión concreta de una función y/o el soporte relacionado dejarán de estar disponibles a partir de una fecha determinada (fecha de retirada).
 
+<div id="dev-key" />
+
 #### Clave de desarrollador
 
 Identificador único y token de autenticación utilizados para configurar un SDK, cifrar sus mensajes y autenticar una cuenta de cliente o un programa que llama a una API. Las aplicaciones en la misma cuenta generalmente tienen la misma clave de desarrollador.
 
+<div id="device-id" />
+
 #### ID de dispositivos
 
 Identificador único en forma de IDFA, GAID, y OAID restablecibles por el usuario, o IMEI y SSAID no restablecibles. AppsFlyer puede usar este ID para fines de atribución de dispositivos.
+
+<div id="direct-publisher" />
 
 #### Publisher directo
 
@@ -492,6 +626,8 @@ Identificador único en forma de IDFA, GAID, y OAID restablecibles por el usuari
 **Área de mercado designada**; también, **mercado de medios**  
  Área geográfica, clasificada por tamaño de población, que se utiliza para medir audiencias. Los DMA reciben las mismas emisoras locales de TV y radio, así como periódicos y contenido en línea.
 
+<div id="domain" />
+
 #### Dominio
 
 Dirección de un sitio web que las personas escriben en el navegador para visitar el sitio web. Por ejemplo: yourwebsite.com.
@@ -501,6 +637,8 @@ Dirección de un sitio web que las personas escriben en el navegador para visita
 **Plataforma orientada a la demanda**  
  Los compradores de publicidad digital usan una plataforma DSP para gestionar varias cuentas de intercambio de anuncios y de datos.
 
+<div id="dual-consent" />
+
 #### Doble consentimiento
 
 Cuando los usuarios con dispositivos iOS 14.5+ dan su consentimiento de ATT tanto en la aplicación del anunciante como en la del publisher.
@@ -509,9 +647,13 @@ Cuando los usuarios con dispositivos iOS 14.5+ dan su consentimiento de ATT tant
 
 <Accordion title="E">
 
+<div id="earned" />
+
 #### Obtenido
 
 (EN: Earned) Tipo de fuente de medios. Los usuarios llegan por medio de tráfico directo o de tráfico procedente de motores de búsqueda.
+
+<div id="ecpa" />
 
 #### Costo Efectivo por Adquisición (eCPA)
 
@@ -524,6 +666,8 @@ Cuando los usuarios con dispositivos iOS 14.5+ dan su consentimiento de ATT tant
 **Costo efectivo por clic**  
  Indica cuál habría sido el CPC si un profesional del marketing hubiera comprado clics en lugar de impresiones o conversiones. Consulta [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Fórmula:* Gasto total / Cantidad de clics = eCPC (según lo analizado por AppsFlyer)
 
+<div id="ecpi" />
+
 #### IPC electrónico
 
 **Costo efectivo por instalación**  
@@ -535,6 +679,8 @@ Cuando los usuarios con dispositivos iOS 14.5+ dan su consentimiento de ATT tant
 **Costo efectivo por millar / Costo efectivo por mil**  
  Por definición, la tasa de CPM es idéntica al valor de eCPM de una campaña. Consultar [CPM.](/docs/appsflyer-knowledge-base-glossary#cpm)  
  *Fórmula:* Costo total / Número total de impresiones (en miles) = eCPM (según lo analizado por AppsFlyer)
+
+<div id="engagement" />
 
 #### Participación
 
@@ -552,21 +698,29 @@ Cuando los usuarios con dispositivos iOS 14.5+ dan su consentimiento de ATT tant
 **Proveedor de servicios de correo electrónico**  
  Una empresa que ofrece servicios de marketing por correo electrónico o correo masivo. <Anchor target="_blank" href="/marketers/es/docs/email-service-provider-esp-integration-guide">[Artículo]</Anchor>
 
+<div id="event" />
+
 #### Evento
 
 También, **evento in-app**  
  Cualquier acción que un usuario realiza en una aplicación. Los eventos se reportan a AppsFlyer a través del SDK o de una API de servidor a servidor.  
  *Ejemplos:* iniciar sesión, pasar un nivel de un juego, hacer una compra, etc.
 
+<div id="event-counter" />
+
 #### Contador de eventos
 
 (EN: Event Counter) Cantidad total de eventos in-app efectuados.
+
+<div id="event-cvr" />
 
 #### CVR de eventos
 
 **Tasa de conversión de eventos**  
  % de usuarios que completaron una acción deseada. Indica cuántos usuarios convirtió un anuncio.  
  *Fórmula:* Eventos únicos / Atribuciones
+
+<div id="event-time" />
 
 #### Hora del evento
 
@@ -575,6 +729,8 @@ También, **evento in-app**
 </Accordion>
 
 <Accordion title="F">
+
+<div id="fraud" />
 
 #### Fraude
 
@@ -588,6 +744,8 @@ El fraude publicitario intenta generar ilegalmente ingresos de atribución al de
 
 <Accordion title="G">
 
+<div id="gaid" />
+
 #### GNA Company
 
 **Google Advertising ID**  
@@ -596,6 +754,8 @@ El fraude publicitario intenta generar ilegalmente ingresos de atribución al de
 #### GCD
 
 **Obtener datos de conversión**Nombre general de los métodos del SDK que, tras la instalación, obtienen datos de atribución en el SDK.
+
+<div id="geo" />
 
 #### Geolocalización
 
@@ -606,10 +766,14 @@ También, **País**
 
 <Accordion title="I">
 
+<div id="id-matching" />
+
 #### Emparejamiento de ID
 
 (EN: ID matching) Método de atribución que utiliza identificadores de dispositivo únicos. Los identificadores, recuperados de los enlaces de atribución, se corresponden con los identificadores recuperados por el SDK de AppsFlyer.   
  *Identificadores:* IDFA, GAID, OAID, ID de Android y IMEI
+
+<div id="idfa" />
 
 #### Identificador de anunciante (IDFA)
 
@@ -626,31 +790,45 @@ También, **País**
 **Identidad internacional de equipo móvil**  
  Identificador único de dispositivo móvil que no se puede restablecer. Versión de Android anterior a Android 10: si GAID no está disponible, el IMEI se puede usar con fines de atribución. <Anchor target="_blank" href="https://developer.android.com/about/versions/10/privacy/changes">Cambios de privacidad en Android 10</Anchor>
 
+<div id="impression" />
+
 #### Impresión
 
 (EN: Impression) Acto de visualizar un anuncio que realiza un usuario de la aplicación o visitante del sitio web. Las ad network pueden tener definiciones específicas para las impresiones. <Anchor target="_blank" href="/marketers/es/docs/about-conversion-rates#etapas-del-embudo-de-marketing-y-tasas-de-conversión-1">[Artículo]</Anchor>
+
+<div id="in-app-events" />
 
 #### Eventos in-app
 
 (EN: In-app events) Después de la instalación de una aplicación, cualquier acción que realice un usuario. Consulta [Evento](/docs/appsflyer-knowledge-base-glossary#evento).  
  *Ejemplos:* iniciar sesión, completar un tutorial, realizar una compra, etc.
 
+<div id="install" />
+
 #### Solo disponible en <Anchor target="_blank" href="/marketers/es/docs/about-data-locker-advanced-reports">reportes avanzados</Anchor>.
 
 (EN: Install) En AppsFlyer, una instalación queda registrada cuando un usuario descarga, instala e inicia una aplicación móvil.
+
+<div id="install-hijacking" />
 
 #### Secuestro de instalaciones
 
 (EN: Install hijacking) También conocido como **Inyección de clics**, **Secuestro de referentes** y **Secuestro de clics**  
 Clase de fraude móvil que utiliza malware móvil para robar la atribución de instalaciones reales de aplicaciones.
 
+<div id="install-referrer" />
+
 #### Referente de instalación
 
 Método de atribución que usa un parámetro de referente de *Google Play*. <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#install-referrer-android-only">[Artículo]</Anchor>
 
+<div id="integrated-partner" />
+
 #### Partner integrado
 
 (EN: Integrated partner) Una red de publicidad, agencia o herramienta de marketing que está integrada con AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">[Artículo]</Anchor>
+
+<div id="integrated-partner-types" />
 
 #### Tipos de partners integrados
 
@@ -674,9 +852,13 @@ KPI
 
 <Accordion title="L">
 
+<div id="landing-page" />
+
 #### Página de destino
 
 (EN: Landing Page) La primera página que ve un usuario después de hacer clic en un anuncio.
+
+<div id="last-click-attributions" />
 
 #### Atribuciones al último clic
 
@@ -687,21 +869,31 @@ KPI
 **Limit ad tracking**  
  Función de iOS (hasta iOS 14) que impide el acceso al ID de anunciante del dispositivo de un usuario. Cuando está habilitado, AppsFlyer no recibe el ID de dispositivo y el usuario no puede ver los anuncios dirigidos. [Artículo]
 
+<div id="link-management" />
+
 #### Gestión de enlaces
 
 Capacidad para organizar, editar, analizar y tener un control completo sobre todos tus enlaces. [Artículo]
+
+<div id="localization" />
 
 #### Localización
 
 (EN: Localization) Proceso de adaptación de la atribución y los reportes a una zona horaria específica. Por defecto, AppsFlyer reporta todos los datos de la aplicación en base a la zona horaria UTC (GMT).
 
+<div id="lookback-window" />
+
 #### Ventana retrospectiva
 
 Período máximo de tiempo, desde el engagement hasta la instalación, durante el cual una instalación puede atribuirse a un anuncio específico. <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">[Artículo]</Anchor>
 
+<div id="loyal-user" />
+
 #### Usuario fiel
 
 (EN: Loyal user) KPI para el engagement del usuario. De forma predeterminada, este es un usuario que abre una aplicación instalada al menos tres veces después del primer inicio de la aplicación. En la página **Configuración de la aplicación**, los marketers pueden seleccionar eventos in-app específicos para designar a los usuarios fieles. <Anchor target="_blank" href="/marketers/es/docs/about-a-loyal-user">[Artículo]</Anchor>
+
+<div id="ltv" />
 
 #### Característica
 
@@ -716,14 +908,20 @@ Período máximo de tiempo, desde el engagement hasta la instalación, durante e
 
 (EN: Macros) Parámetros utilizados por partners en enlaces de atribución y postbacks. Las macros, cuando se colocan en un postback, se reemplazan automáticamente por datos relacionados con el usuario. <Anchor target="_blank" href="/partners/es/docs/postback-macros-for-ad-networks#macros-solo-para-eventos-in-app">[Artículo]</Anchor>
 
+<div id="marketer" />
+
 #### Comercializador
 
 Relacionado con **anunciante** y **propietario de la aplicación**  
  La persona que trabaja para el propietario de la aplicación, utiliza AppsFlyer y ejecuta campañas de marketing a través de varios canales para aumentar las conversiones.
 
+<div id="marketing-automation" />
+
 #### Automatización de marketing
 
 Incluye plataformas que realizan campañas de correo electrónico móvil, push y/o mensajes in-app. Después de la integración, AppsFlyer proporciona datos de atribución para estas campañas.
+
+<div id="master-api" />
 
 #### API maestra
 
@@ -734,14 +932,20 @@ API de datos agregados que permite a los usuarios crear reportes personalizados 
 **Usuarios activos mensuales**  
  Número de usuarios únicos (contados solo una vez) que abren una aplicación específica en un período de 30 días. <Anchor target="_blank" href="/marketers/es/docs/activity-dashboard#metric-definitions">[Artículo]</Anchor>
 
+<div id="media-source" />
+
 #### Fuente de medios
 
 (EN: Media source) Responsable de captar a los usuarios con anuncios. <Anchor target="_blank" href="/marketers/es/docs/about-media-source-types">[Artículo]</Anchor>  
  *Tipos de fuentes de medios:* Redes de autorreporte (SRN), no SRN y medios propios
 
+<div id="mediation-platform" />
+
 #### Plataforma de mediación
 
 Las plataformas de mediación centralizan el acceso a múltiples ad networks en una única integración de SDK, aprovechando un algoritmo de optimización para determinar qué ad network mediada puede cubrir el inventario del desarrollador de apps con el CPM más alto.
+
+<div id="meta-campaign-management-partners" />
 
 #### Partners de gestión de campañas de Meta
 
@@ -760,18 +964,26 @@ Los partners de marketing de anuncios de Meta se especializan en trabajar con an
 
 *Ejemplo:* AppsFlyer
 
+<div id="mobile-app" />
+
 #### Aplicación móvil
 
 Software diseñado específicamente para dispositivos móviles, como smartphones o tabletas.
+
+<div id="monetization-network" />
 
 #### attributed\_touch \_time
 
 Las redes de monetización (también conocidas como ad networks) conectan a los desarrolladores de apps (también conocidos como publishers) y a los anunciantes. Los desarrolladores de apps usan ad networks para servir anuncios a sus usuarios con el fin de monetizar sus apps, mientras que los anunciantes usan ad networks para promocionar sus productos.
 
+<div id="multi-platform" />
+
 #### Multiplataforma
 
 (EN: Multi-platform) Solución que se puede utilizar en diferentes plataformas.   
 *Ejemplo:* OneLink de AppsFlyer es un enlace de atribución que se puede utilizar para registrar instalaciones y eventos en dispositivos Android e iOS.
+
+<div id="multi-touch-attribution" />
 
 #### Atribución multi-toque
 
@@ -781,10 +993,14 @@ Las redes de monetización (también conocidas como ad networks) conectan a los 
 
 <Accordion title="N/A">
 
+<div id="native-ad" />
+
 #### Anuncio nativo
 
 (EN: Native ad) Anuncio que coincide con la forma y la función de la plataforma en la que aparece.   
 *Ejemplo:* artículo de noticias patrocinado que aparece igual que otros artículos no pagados en el sitio.
+
+<div id="native-app" />
 
 #### Aplicación nativa
 
@@ -809,13 +1025,19 @@ Las redes de monetización (también conocidas como ad networks) conectan a los 
 
 (EN: OneLink™) Enlace de atribución multiplataforma único de AppsFlyer. Utiliza un único enlace para redirigir a los leads a la tienda correspondiente o hacer deep-linking para los usuarios actuales de la aplicación. <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">[Artículo]</Anchor>
 
+<div id="onelink-id" />
+
 #### ID de OneLink™
 
 (EN: OneLink™ ID) Identificador único generado automáticamente para las plantillas de OneLink. Se necesita cuando se utiliza la API de OneLink. <Anchor target="_blank" href="/marketers/es/docs/use-onelink-api-to-create-links-in-large-scale-campaigns">[Artículo]</Anchor>
 
+<div id="onelink-template" />
+
 #### Plantilla de OneLink™
 
 (EN: OneLink™ template) Plantilla donde se definen todos los destinos, por tipo de dispositivo. Una vez que se completa la configuración básica, puedes crear muchos enlaces personalizados con diferentes parámetros, y todos conducen a los destinos indicados en la plantilla de OneLink.
+
+<div id="organic-install" />
 
 #### Instalación orgánica
 
@@ -826,6 +1048,8 @@ Una instalación de una aplicación móvil que se produce sin ningún esfuerzo d
 **Over-the-top**  
  Contenido transmitido por internet, sin pasar por plataformas de cable, difusión ni satélite. <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">[Artículo]</Anchor>
 
+<div id="owned-media" />
+
 #### Medios propios
 
 (EN: Owned) Tipo de fuente de medios que es propiedad o que está administrada por un propietario de la aplicación. <Anchor target="_blank" href="/marketers/es/docs/owned-media-attribution">[Artículo]</Anchor>  
@@ -835,10 +1059,14 @@ Una instalación de una aplicación móvil que se produce sin ningún esfuerzo d
 
 <Accordion title="P">
 
+<div id="package-id" />
+
 #### ID de paquete
 
 También, [ID de aplicación (Android & iOS)](#a)  
 Identificador único que aparece en la dirección URL de la página de la aplicación de una tienda. El formato refleja el sistema operativo asociado.
+
+<div id="paid" />
 
 #### Paga
 
@@ -849,6 +1077,8 @@ Identificador único que aparece en la dirección URL de la página de la aplica
 
 **Atribución basada en las personas**  
  Función premium de AppsFlyer que ofrece una visión completa de los flujos de adquisición de usuarios y conversión en distintas plataformas, dispositivos y canales de marketing. Se utiliza para centrarse en métricas específicas y filtrar o agrupar datos de acuerdo con la ubicación, el tipo de dispositivo, las fuentes de medios, las campañas y más. <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">[Artículo]</Anchor>
+
+<div id="pid" />
 
 #### PID no integrados.
 
@@ -864,13 +1094,19 @@ Notificación de instalación o evento in-app enviada desde un anunciante a un p
 **Pago por clic**  
  Modelo publicitario comúnmente asociado con motores de búsqueda de primer nivel. Los marketers pagan a los publishers cuando se hace clic en sus anuncios. 
 
+<div id="probabilistic-modeling" />
+
 #### Modelado probabilístico
 
 Método de atribución estadística para medios propios que aprovecha el aprendizaje automático para estimar el rendimiento de la campaña.
 
+<div id="programmatic-advertising" />
+
 #### Publicidad estructurada
 
 La ad network se conecta con distintas plataformas y compra medios (espacios publicitarios) sin utilizar un intermediario.
+
+<div id="protect360" />
 
 #### Las alertas de Protect360 se actualizan a la hora UTC diaria.
 
@@ -880,9 +1116,13 @@ Función premium de AppsFlyer que ofrece protección antifraude automática e in
 
 En AppsFlyer, una fuente de medios, un sitio o una aplicación que vende espacio publicitario a ad networks o marketers.
 
+<div id="pull-api" />
+
 #### API pull
 
 (EN: Pull API) API basada en URL que obtiene datos agregados y raw data de AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/pull-api-aggregate-data">[Artículo]</Anchor>
+
+<div id="push-api" />
 
 #### API push
 
@@ -891,6 +1131,8 @@ En AppsFlyer, una fuente de medios, un sitio o una aplicación que vende espacio
 </Accordion>
 
 <Accordion title="Q">
+
+<div id="qr-code" />
 
 #### Código QR
 
@@ -904,61 +1146,89 @@ Código de barras bidimensional que puede escanearse y convertirse en un enlace.
 
 (EN: Raw data) Datos a nivel del usuario proporcionados por AppsFlyer que describen eventos específicos como instalaciones, compras, visitas al sitio web y postbacks a partners. <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">[Artículo]</Anchor>
 
+<div id="re-attribution" />
+
 #### Reatribución
 
 (EN: Re-attribution) Antiguo usuario de la aplicación vuelve a instalar la aplicación después de participar en una campaña de retargeting (para esta misma aplicación). <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">[Artículo]</Anchor>
+
+<div id="re-attribution-window" />
 
 #### Ventana de reatribución
 
 Período de tiempo, después de una instalación, durante el cual las reinstalaciones no se consideran instalaciones nuevas. <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">[Artículo]</Anchor>
 
+<div id="re-engagement" />
+
 #### Reengagement
 
 (EN: Re-engagement) Usuario de una aplicación determinada que participa en una campaña de retargeting para esta aplicación y posteriormente la inicia. <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">[Artículo]</Anchor>
+
+<div id="registered-device" />
 
 #### Dispositivo registrado
 
 Se utiliza para fines de prueba. Los dispositivos registrados atribuyen a cada instalación, independientemente de las reglas de reatribución de AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">[Artículo]</Anchor>
 
+<div id="request" />
+
 #### Solicitud
 
 (EN: Request) También denominado [Llamada de API](#a)
+
+<div id="retargeting" />
 
 #### Reorientación
 
 (EN: Retargeting) Llegar a usuarios existentes o anteriores mediante campañas publicitarias.
 
+<div id="retargeting-network" />
+
 #### Red de retargeting
 
 (EN: Retargeting network) Se especializa en el targeting a usuarios actuales o anteriores. <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide#retargeting-dashboard">[Artículo]</Anchor>
+
+<div id="retention-report" />
 
 #### Reporte de retención
 
 (EN: Retention report) Producto de AppsFlyer que mide el rendimiento de las sesiones de usuario dentro de una aplicación. [Artículo]
 
+<div id="revenue" />
+
 #### Ingresos
 
 (EN: Revenue) Ingresos registrados por eventos in-app y visualizaciones de anuncios (ingresos por publicidad).
 
+<div id="revenue-attribution" />
+
 #### Atribución de ingresos
 
 Asocia un evento de ingresos determinado con una campaña/fuente de medios específica. <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution">[Artículo]</Anchor>
+
+<div id="revenue-event" />
 
 #### Evento generador de ingresos
 
 Cualquier evento in-app que se registra con un valor de ingresos asociado.   
  *Parámetro:* af\_revenue es el único parámetro que acumula los ingresos del usuario. Úsalo siempre con los eventos in-app que representan una generación real de ingresos en tu lógica empresarial.
 
+<div id="rich-media-ad" />
+
 #### Anuncio enriquecido
 
 Incluye funciones avanzadas que animan a la audiencia a interactuar e implicarse con el contenido. Ofrece más formas de involucrar a una audiencia con un anuncio.  
  *Ejemplos:* Video y anuncios reproducibles
+
+<div id="roas" />
 
 #### ROAS (Retorno de la Inversión Publicitaria)
 
 **Retorno del gasto en anuncios**  
  Métrica que mide el rendimiento de la campaña calculando los ingresos generados por unidad de gasto en anuncios.  
  *Fórmula:* Ingresos producidos por publicidad / Gasto de publicidad = Retorno del gasto de publicidad (ROAS).
+
+<div id="roi" />
 
 #### ROI (Retorno de la Inversión)
 
@@ -980,18 +1250,26 @@ Incluye funciones avanzadas que animan a la audiencia a interactuar e implicarse
 **Kit de desarrollo de software**  
  Código integrado en una aplicación con fines de atribución y análisis. <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-planning">[Artículo]</Anchor>
 
+<div id="segmentation" />
+
 #### Segmentación
 
 Técnica de marketing que utiliza criterios para agrupar a los usuarios en subgrupos con el fin de mostrarles anuncios personalizados.
+
+<div id="session" />
 
 #### Sesión
 
 (EN: Session) Se debe iniciar una aplicación. El número de sesiones se basa en los inicios del SDK o en la lógica definida por el propietario de una aplicación.  
  *Ejemplo:* En una aplicación antivirus, un día de uso equivale a una sesión. <Anchor target="_blank" href="/marketers/es/docs/measure-sessions">[Artículo]</Anchor>
 
+<div id="single-platform" />
+
 #### Plataforma única
 
 Enlace de atribución que permite a los clientes realizar la atribución para una plataforma (Android, iOS, etc.) a la vez.  (También hay un enlace de atribución multiplataforma).
+
+<div id="single-source-of-truth-ssot" />
 
 #### Única fuente de verdad (SSOT)
 
@@ -1001,6 +1279,8 @@ Mecanismo de AppsFlyer que reúne los datos de atribución de iOS de diferentes 
 
 La infraestructura SKAdNetwork, que forma parte de iOS de Apple, ayuda a los profesionales del marketing a medir el éxito de las campañas mientras mantiene la privacidad del usuario. <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">[Artículo]</Anchor>
 
+<div id="skan" />
+
 #### SKÁN
 
 Abreviatura de SKAdNetwork.
@@ -1009,9 +1289,13 @@ Abreviatura de SKAdNetwork.
 
 (EN: Slug) También conocido como [ID de aplicación (Android y iOS)](#a)
 
+<div id="smart-banner" />
+
 #### Banner inteligente
 
 (EN: Smart Banner) La función de AppsFlyer que permite a los marketers atribuir y medir la calidad de las instalaciones de aplicaciones derivadas de los visitantes de sus sitios web móviles. <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">[Artículo]</Anchor>
+
+<div id="srn" />
 
 #### nombres de SRN reservados
 
@@ -1024,9 +1308,13 @@ Abreviatura de SKAdNetwork.
 **Plataforma del lado de la oferta**  
  Permite a los publishers maximizar el rendimiento de su inventario. Esto se consigue gestionando automáticamente y de forma eficiente las ventas de inventario.
 
+<div id="subdomain" />
+
 #### Subdominio
 
 Un dominio adicional a tu nombre de dominio principal, creado para organizar y navegar a diferentes secciones de un sitio web. El dominio principal puede tener varios subdominios. Por ejemplo: app.yourwebsite.com
+
+<div id="sunset-date" />
 
 #### Fecha de baja
 
@@ -1041,17 +1329,25 @@ Fecha en la que toda o parte de una función o versión obsoleta concreta se «d
 (EN: Targeting) Centrar una campaña de marketing en una [audiencia](#a) específica.  
  *Criterios:* ubicación, demografía, operador de telefonía móvil, etc.
 
+<div id="account-user" />
+
 #### Usuario de la cuenta
 
 (EN: Account user) Usuario con credenciales de inicio de sesión para una cuenta de AppsFlyer. Un usuario de la cuenta recibe acceso por parte de un administrador. [Artículo]
+
+<div id="touch-time" />
 
 #### Tiempo de toque
 
 (EN: Touch time) Fecha y hora registradas (marca de tiempo) del engagement de un usuario (clic o impresión).
 
+<div id="touch-type" />
+
 #### Tipo de toque
 
 (EN: Touch type) Tipo de engagement, clic o impresión que un usuario tiene con un anuncio.
+
+<div id="touchpoint" />
 
 #### Punto de contacto
 
@@ -1067,30 +1363,44 @@ Fecha en la que toda o parte de una función o versión obsoleta concreta se «d
 **Identificador único de dispositivo**  
  Identificador único para un único dispositivo iOS. Se obtiene de los servidores de Apple cuando un usuario intenta activar su dispositivo mediante iCloud o la app Configuración.
 
+<div id="uninstall-measurement" />
+
 #### Medición de desinstalaciones
 
 (EN: Uninstall measurement) Medición de usuarios que eliminan una aplicación de su dispositivo, desglosada por sus fuentes de medios atribuidas. <Anchor target="_blank" href="/marketers/es/docs/measure-uninstalls">[Artículo]</Anchor>
 
+<div id="unique-user" />
+
 #### Usuario único
 
 (EN: Unique user) El ID de AppsFlyer se usa para determinar usuarios únicos.
+
+<div id="universal-links" />
 
 #### enlaces universales
 
 Los enlaces universales mantienen una experiencia de usuario fluida al garantizar que los usuarios vayan directamente al contenido enlazado sin el paso intermedio de abrir primero un navegador web.  
  Los enlaces universales funcionan a través de iOS, que utiliza un archivo Apple App Site Association (AASA) alojado en tu servidor web. El archivo AASA contiene información que asocia tu dominio web con tu aplicación, lo que permite abrir contenido de forma fluida dentro de la aplicación desde enlaces del dominio.
 
+<div id="user" />
+
 #### Usuario
 
 Persona que descarga, instala e inicia una app usando su dispositivo móvil.
+
+<div id="user-acquisition" />
 
 #### La adquisición de usuarios
 
 (EN: User acquisition) Campañas publicitarias destinadas a conseguir usuarios nuevos.
 
+<div id="user-agent" />
+
 #### Agente de usuario
 
 Información técnica para dispositivos de usuario, como tipo de navegador, sistema operativo y versión de software. AppsFlyer lo utiliza para la atribución de modelos probabilísticos.
+
+<div id="user-invite-attribution" />
 
 #### Atribución de invitaciones de usuarios
 
@@ -1100,9 +1410,13 @@ Atribución y análisis de nuevos usuarios que instalan una app después de que 
 
 <Accordion title="V">
 
+<div id="validation-rules" />
+
 #### Reglas de validación
 
 (EN: Validation rules) Reglas para la validación de targeting y la detección personalizada de fraudes que permiten a los propietarios de aplicaciones bloquear la atribución de instalaciones no conformes. <Anchor target="_blank" href="/marketers/es/docs/implement-validation-rules-to-prevent-fraud">[Artículo]</Anchor>
+
+<div id="verticals" />
 
 #### Verticales
 
@@ -1110,10 +1424,14 @@ También, **Industrias**
  Mercados (con necesidades específicas) que tienen más probabilidades de estar interesados en ofertas especializadas. AppsFlyer recomienda utilizar reportes de eventos in-app específicos basados en la vertical de un marketer. <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview#recommended-events-by-business-vertical">[Artículo]</Anchor>  
  *Ejemplos:* gaming, comercio electrónico, viajes
 
+<div id="video-ad" />
+
 #### Anuncio de video
 
 Se refiere a la publicidad que aparece antes, durante y/o después de una transmisión de vídeo en Internet.  
  *Ejemplos:* anuncios con banners o intersticiales con vídeo incrustado.
+
+<div id="visitor-website" />
 
 #### Visitante (sitio web)
 
@@ -1128,6 +1446,8 @@ Se refiere a la publicidad que aparece antes, durante y/o después de una transm
 
 <Accordion title="W">
 
+<div id="web-app" />
+
 #### Aplicación web
 
 (EN: Web app) Se ejecuta en un navegador web. (Las aplicaciones nativas se ejecutan en una plataforma específica del sistema operativo).
@@ -1135,6 +1455,8 @@ Se refiere a la publicidad que aparece antes, durante y/o después de una transm
 </Accordion>
 
 <Accordion title="X">
+
+<div id="x-marketing-partners" />
 
 #### Partners de marketing de X
 

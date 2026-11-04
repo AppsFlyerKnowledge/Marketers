@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **De un vistazo:** MoEngage, una plataforma de engagement de clientes de terceros integrada con AppsFlyer, es una plataforma de engagement de clientes agéntica diseñada para un mundo mobile first.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-moengage" />
 
 ## Configuración de MoEngage
 
@@ -48,9 +52,13 @@ Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-inte
 
 La pestaña **Integración** está dividida en diferentes secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En tu primera visita, activa **Activar partner** para configurar la integración. El conmutador debe estar activado mientras trabajes con el partner. Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activación del partner</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -62,6 +70,8 @@ MoEngage se conecta con AppsFlyer mediante un ID de app único, una App Key y el
 
 ![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 AppsFlyer puede enviar postbacks automáticos a MoEngage tras las instalaciones de los usuarios. Selecciona una de las siguientes opciones:
@@ -70,6 +80,8 @@ AppsFlyer puede enviar postbacks automáticos a MoEngage tras las instalaciones 
 * **Todas las fuentes de medios, incluidas las orgánicas**: Envía postbacks para eventos atribuidos a cualquier partner y para eventos orgánicos.
 
 ![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+
+<div id="note" />
 
 > 📘 **Nota:**
 >

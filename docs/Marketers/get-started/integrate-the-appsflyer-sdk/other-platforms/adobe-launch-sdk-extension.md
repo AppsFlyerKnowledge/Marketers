@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Envía datos al SDK de Adobe Launch y al SDK de AppsFlyer con la implementación única de la extensión del SDK de Adobe Launch de AppsFlyer.
 
+<div id="overview" />
+
 ## Visión general
 
 El SDK de Adobe Launch es una parte integral de Adobe Experience Platform. Adobe Experience Platform permite a las empresas recopilar, consolidar y analizar datos de varias aplicaciones y plataformas. Permite a los propietarios y desarrolladores de negocios comprender mejor el comportamiento de los clientes para optimizar la experiencia y la entrega de contenido. Si tu aplicación implementa tanto el SDK de Adobe Launch como el SDK de AppsFlyer, puedes enviar datos a ambos con una sola implementación de la **extensión del SDK de Adobe Launch de AppsFlyer**. Reduce la complejidad general de tu proceso de desarrollo y hace que la base de código sea más limpia y fácil de mantener.
@@ -36,6 +38,8 @@ El SDK de Adobe Launch es una parte integral de Adobe Experience Platform. Adobe
 > **Nota:**
 >
 > Si utilizas la extensión de Adobe Launch, no es necesaria la <Anchor target="_blank" href="/marketers/es/docs/adobe-analytics-integration-with-appsflyer">integración estándar de Adobe Analytics</Anchor>.
+
+<div id="prerequisites" />
 
 ## Requisitos previos
 
@@ -60,6 +64,8 @@ Se requieren algunas cosas antes de integrar la extensión del SDK de Adobe de A
 * Para iOS: el ID de la aplicación es el ID de iTunes de la aplicación sin el prefijo *id*; por ejemplo, 123456748.
 
 </Accordion>
+
+<div id="step-1-configuring-adobe-launch" />
 
 ## Paso 1: Configuración de Adobe Launch
 
@@ -93,6 +99,8 @@ Instala las siguientes extensiones en Adobe Launch:
 * Adobe Profile: permite que el SDK almacene datos en un perfil del lado del cliente.
 * Adobe Mobile Core: permite la configuración del SDK móvil y proporciona acceso a los eventos y condiciones predeterminados del ciclo de vida.
 
+<div id="installing-adobe-analytics-extension" />
+
 #### Instalación de la extensión de Adobe Analytics
 
 1. Inicia sesión en Adobe Analytics.
@@ -104,6 +112,8 @@ Instala las siguientes extensiones en Adobe Launch:
 7. En ***Report Suites*** (Grupos de reportes), especifica el grupo de reportes que creaste en el paso 2.
 8. Haz clic en ***Save*** (Guardar).
 
+<div id="installing-appsflyer-sdk-extension" />
+
 #### Instalación de la extensión del SDK de AppsFlyer
 
 1. Vuelve a seleccionar ***Extensions*** (Extensiones).
@@ -113,6 +123,8 @@ Instala las siguientes extensiones en Adobe Launch:
 5. Habilita ***Send attribution data to Adobe Analytics*** (Enviar datos de atribución a Adobe Analytics). Ten en cuenta que existen algunas <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">restricciones para compartir datos a nivel de usuario con plataformas de análisis de terceros</Anchor>.
 6. Haz clic en ***Save*** (Guardar).
 
+<div id="install-profile-and-mobile-core-extension" />
+
 #### Instalación de la extensión de Profile y Mobile Core
 
 1. Vuelve a seleccionar ***Extensions*** (Extensiones).
@@ -121,6 +133,8 @@ Instala las siguientes extensiones en Adobe Launch:
    * Al instalar Mobile Core, simplemente guarda la extensión tal como está. No es necesario especificar el ***servidor de Experience Cloud***.
 
 </Accordion>
+
+<div id="step-2-implementing-appsflyer-adobe-sdk-extension" />
 
 ## Paso 2: Implementación de la extensión del SDK de Adobe de AppsFlyer
 
@@ -215,6 +229,8 @@ Si utilizas ProGuard y quieres utilizar la nueva API de referente de Google, est
 
 Agregar permisos ayuda a aumentar la velocidad de la <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">atribución de modelo probabilístico</Anchor>. Esto también permite que el SDK envíe más datos como los datos de redes de proveedores y WiFi. Puedes encontrar estos datos en los <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">reportes de raw data</Anchor> y usarlos para analizar y optimizar las campañas.
 
+<div id="add-required-permissions" />
+
 #### Agregar los permisos necesarios
 
 1. Agrega los siguientes permisos a AndroidManifest.xml:  
@@ -228,6 +244,8 @@ Agregar permisos ayuda a aumentar la velocidad de la <Anchor target="_blank" hre
    ```
 
 </Accordion>
+
+<div id="using-the-adobe-sdk-extension" />
 
 ## Uso de la extensión del SDK de Adobe
 
@@ -357,6 +375,8 @@ En AppDelegate.m, implementa el código siguiente:
 
 </Accordion>
 
+<div id="connecting-appsflyer-conversion-data" />
+
 ## Conexión de datos de conversión de AppsFlyer
 
 Los datos de conversión se envían con eventos a la plataforma de Adobe. Estas variables te permiten aplicar lógica y reglas a las dimensiones, métricas o filtros de los reportes.
@@ -381,6 +401,8 @@ Consulta la siguiente tabla para asignar las variables de contexto de AppsFlyer:
 | Hora de clic de AppsFlyer | appsflyer.click\_time |
 | Costo original de AppsFlyer | appsflyer.orig\_cost |
 | Campaña de AppsFlyer | appsflyer.campaign |
+
+<div id="using-appsflyer-mapped-conversion-data-for-analytics-and-analysis" />
 
 ### Uso de datos de conversión asignados de AppsFlyer para Analytics y Análisis
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** AppLovin, un partner integrado de AppsFlyer, es una conocida ad network de tráfico de aplicaciones móviles. Además de la atribución móvil basada en clics, AppLovin también ofrece atribución de costos, ingresos por publicidad y por impresiones, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-applovin" />
+
 ## Configuración de AppLovin
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -41,14 +43,20 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En esta **primera visita**, tendrás que activar el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > Como red de TODAS las instalaciones, AppLovin prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde CUALQUIER fuente, incluidas las orgánicas. Se recomienda seleccionar *Eventos atribuidos a cualquier partner* para enviar todos los postbacks de instalación a AppLovin.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -64,12 +72,16 @@ AppLovin se conecta con AppsFlyer mediante una sdk\_key única. Si todavía no t
 
 Activa esta opción si quieres atribuir instalaciones view-through de AppLovin. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a AppLovin después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para los eventos que proceden únicamente de usuarios atribuidos a AppLovin.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para reportarla a AppLovin.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -114,6 +126,8 @@ AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_b
 
 <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes en el panel de control de estado de la integración de costos (e ingresos por publicidad) o en el panel de control de la red de publicidad individual. 
 
+<div id="applovin-billable-cost" />
+
 > 🚧 **Costo facturable de AppLovin**
 >
 > A partir del 1 de agosto de 2024, AppLovin factura a todos sus clientes en función de las instalaciones probabilísticas. Antes de esa fecha, a algunos clientes se les facturaba en función de las instalaciones de SKAN. <Anchor target="_blank" href="https://support.applovin.com/hc/en-us/articles/28531589437965-iOS-Billing-Method">Consulta Applovin para obtener información adicional</Anchor>
@@ -133,6 +147,8 @@ AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_b
 
 * Sigue <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">estas instrucciones de integración</Anchor>.
 
+<div id="note-1" />
+
 > 📘 **Advertencia**
 >
 > * AppLovin envía los ingresos por anuncios que genera por sí mismo.
@@ -145,6 +161,8 @@ AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_b
 <Accordion title="Pestaña de permisos">
 
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a AppLovin. Ten en cuenta que, aunque la atribución esté deshabilitada para AppLovin, la pestaña de permisos está activa y puedes otorgar control a AppLovin.
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

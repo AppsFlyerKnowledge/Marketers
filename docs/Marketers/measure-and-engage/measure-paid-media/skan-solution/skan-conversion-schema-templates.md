@@ -21,10 +21,14 @@ x-zendesk:
 ---
 > **En resumen:** las plantillas de esquemas de conversión de SKAN son plantillas listas para usar. Simplifican la configuración de SKAN al ofrecer plantillas basadas en una combinación de datos de la industria y datos específicos de la aplicación, y proporcionan insights del sector y mejores prácticas. Las plantillas de esquemas de conversión de SKAN se encuentran en Conversion Studio.
 
+<div id="key-benefits" />
+
 ## Beneficios clave
 
 * Estas plantillas agilizan la configuración de SKAN al permitir crear un esquema de conversión en solo unos clics.
 * Al aprovechar las mejores prácticas de la industria y los insights, los profesionales del marketing pueden perfeccionar su esquema y aumentar la confianza en su eficacia utilizando plantillas basadas en datos del sector combinados con datos específicos de la aplicación.
+
+<div id="how-to-get-started" />
 
 ## Cómo empezar
 
@@ -41,9 +45,13 @@ x-zendesk:
 7. Se te redirigirá a la página de edición de **Conversion Studio**
    1. Usa las <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#componentes-de-medición">funciones y herramientas estándar</Anchor> de Conversion Studio para personalizar la plantilla según las necesidades de tu aplicación
 
+<div id="what-are-skan-conversion-schema-templates" />
+
 ## ¿Qué son las plantillas de esquemas de conversión de SKAN?
 
 Las plantillas de conversión de SKAN sugieren asignaciones de valores de conversión para actividades significativas del usuario posteriores a la instalación, adaptadas por industria y vertical. Las sugerencias se pueden personalizar para adaptarse a las necesidades específicas de la aplicación, combinando insights basados en datos y experiencia del sector.
+
+<div id="template-structure" />
 
 ### Estructura de la plantilla
 
@@ -54,9 +62,13 @@ Las plantillas de conversión de SKAN sugieren asignaciones de valores de conver
   * Los eventos preseleccionados se adaptan a cada plantilla.
   * Los rangos de ingresos se personalizan en función de los datos específicos de la aplicación mediante modelos avanzados de recomendación de ingresos  Cuando no hay suficientes datos históricos, se usan datos de la industria para hacer sugerencias.
 
+<div id="what-is-skan-conversion-schema" />
+
 ## ¿Qué es el esquema de conversión de SKAN?
 
 El esquema de conversión de SKAN define la configuración de medición del framework SKAdNetwork (SKAN). Especifica qué métricas de engagement del usuario (por ejemplo, eventos in-app o ingresos) se medirán y se reportarán. SKAdNetwork no reporta directamente el engagement posterior a la instalación con la app. En su lugar, reporta «Valores de conversión», que el Desarrollador de apps asigna a actividades significativas posteriores a la instalación. Esta asignación se conoce como el esquema de conversión de SKAN.
+
+<div id="what-are-these-templates-based-on" />
 
 ## ¿En qué se basan estas plantillas?
 

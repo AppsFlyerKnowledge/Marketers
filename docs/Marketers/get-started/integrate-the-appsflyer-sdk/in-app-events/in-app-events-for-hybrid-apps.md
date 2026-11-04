@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **En resumen:** Registra eventos in-app a partir de vistas web integradas en tu aplicación móvil, lo que permite la medición completa de eventos incluso cuando la interacción ocurre dentro del contenido web de la aplicación.
 
+<div id="introduction" />
+
 ## Introducción
 
 Los <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">eventos in-app</Anchor> que ocurren dentro de la aplicación se reportan mediante el SDK. ¿Qué pasa con los eventos que ocurren fuera de la aplicación?
@@ -41,11 +43,15 @@ Hay algunos escenarios en los que ocurren eventos fuera del contexto de la aplic
 
 Esta guía se refiere al escenario híbrido. Aprende a cerrar la brecha entre la vista HTML y las vistas nativas, lo que te permite atribuir eventos en la vista HTML y enviarlos a la aplicación.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Si tu aplicación integra AppsFlyer **mediante un complemento híbrido** (por ejemplo, Cordova, Ionic, React Native o Flutter), el método de puente descrito en esta guía no es aplicable.
 >
 > Te recomendamos enviar eventos basados en WebView mediante la <Anchor target="_blank" href="/marketers/es/docs/server-to-server-events-api-for-mobile-s2s-mobile">API server-to-server (S2S) de AppsFlyer</Anchor>.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -57,12 +63,16 @@ Esta guía se refiere al escenario híbrido. Aprende a cerrar la brecha entre la
 >
 > [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
 
+<div id="recording-in-app-events-in-hybrid-apps" />
+
 ### Registro de eventos in-app en aplicaciones híbridas
 
 En esta guía proporcionamos dos métodos para registrar eventos in-app en aplicaciones híbridas:
 
 * **[Recomendado]** [**Interfaz de JavaScript**](/docs/in-app-events-for-hybrid-apps#interfaz-de-javascript): Utiliza la interfaz nativa de JavaScript para establecer la comunicación entre la vista HTML o web y el código nativo. De esta manera, puedes enviar datos relacionados con eventos in-app desde la vista web al código nativo. Una vez que el código nativo obtiene los datos, los envía a AppsFlyer usando el SDK.
 * [**Carga de URL**](/docs/in-app-events-for-hybrid-apps#carga-de-url): En este método, el código nativo escucha los eventos de carga de URL. Puedes establecer el código nativo para escuchar los eventos de carga de URL específicas y extraer datos de los parámetros de URL. Los datos se transfieren al SDK.
+
+<div id="javascript-interface" />
 
 ## Interfaz de JavaScript
 
@@ -86,6 +96,8 @@ La implementación consta de los siguientes pasos:
 <div id="android" />
 
 <Accordion title="Android">
+
+<div id="html-code-for-android" />
 
 #### Código HTML para Android
 
@@ -118,6 +130,8 @@ Cuando pases el valor del evento, ten presente lo siguiente:
   ```
 * Para evitar cualquier posible problema, AppsFlyer recomienda usar sólo caracteres alfanuméricos en minúscula (a-z y 0-9) dentro de la aplicación para los nombres de los eventos.
 
+<div id="webactivity-class" />
+
 #### Clase WebActivity
 
 Crea una clase de actividad web con el siguiente código:
@@ -139,6 +153,8 @@ public class WebActivity extends AppCompatActivity {
 ```
 
 El código anterior crea un objeto llamado **app** que actúa como puente entre la vista web y el código nativo.
+
+<div id="javascript-interface-class" />
 
 #### Clase de la interfaz de JavaScript
 
@@ -190,6 +206,8 @@ En el código HTML, puedes ver que se llama al método usando `app.recordEvent(e
 
 <Accordion title="apps de iOS,">
 
+<div id="html-code-for-ios" />
+
 #### Código HTML para iOS
 
 Agrega el siguiente código HTML a la vista web o página web:
@@ -225,11 +243,15 @@ Cuando pases el valor del evento, ten presente lo siguiente:
   ```
 * Para evitar cualquier posible problema, AppsFlyer recomienda usar sólo caracteres alfanuméricos en minúscula (a-z y 0-9) dentro de la aplicación para los nombres de los eventos.
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > El código HTML es tanto para Objective C como para Swift.
 
 #### Objective C
+
+<div id="web-view-controller" />
 
 #### Controlador de vista web
 
@@ -283,6 +305,8 @@ En tu controlador de vista web, agrega el siguiente código en el controlador de
 ```
 
 El código anterior recibe el mensaje de la vista web. El mensaje contiene el nombre y el valor del evento. Cuando el código detecta al mensaje entrante, lo pasa al método `recordEvent` que analiza los valores y llama al método nativo `logEvent` del SDK.
+
+<div id="swift-webview-controller" />
 
 #### Controlador Swift WebView
 
@@ -354,6 +378,8 @@ El código anterior recibe el mensaje de la vista web. El mensaje contiene el no
 
 </Accordion>
 
+<div id="url-loading" />
+
 ## Carga de URL
 
 Tanto Android como iOS implementan un método nativo que escucha los eventos de carga de URL. Este método te permite hacer lo siguiente:
@@ -367,7 +393,11 @@ La implementación a continuación consta de dos pasos:
 1. Código HTML para vista web o página web
 2. Implementación de código nativo para la carga de URL
 
+<div id="webview-implementation" />
+
 ### Implementación de WebView
+
+<div id="html-code-for-both-android-webview-and-ios-wkwebview" />
 
 #### Código HTML (tanto para Android WebView como para iOS WKWebView)
 
@@ -414,10 +444,14 @@ Cuando pases el valor del evento, ten presente lo siguiente:
   ```
 * Para evitar posibles problemas, AppsFlyer recomienda usar únicamente caracteres alfanuméricos en minúsculas (a-z y 0-9) para tus nombres de eventos in-app.
 
+<div id="native-implementation" />
+
 ### Implementación nativa
 
 <Tabs>
 <Tab title="Android">
+
+<div id="android-implementation" />
 
 #### Implementación de Android
 

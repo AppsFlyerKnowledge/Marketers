@@ -23,9 +23,13 @@ x-zendesk:
 
 <Embed title="Acerca de los reportes avanzados de Data Locker" typeOfEmbed="youtube" url="https://www.youtube.com/embed/0Myz1hxZJH0" providerUrl="https://www.youtube.com" />
 
+<div id="about-advanced-reports" />
+
 ## El reporte incluye eventos que ocurren entre
 
 Las secciones siguientes explican cómo los reportes avanzados consolidan los datos por producto, llegan listos para usar sin preparación adicional y te permiten controlar exactamente lo que devuelve cada reporte.
+
+<div id="consolidated-data-by-data-product" />
 
 ### Datos consolidados por producto de datos
 
@@ -33,6 +37,8 @@ Los reportes avanzados organizan la raw data a nivel de evento en torno a los pr
 
 * Cada reporte abarca un producto de datos completo, por lo que no hay archivos fragmentados que tengas que unir.
 * Los datos de móvil, web y CTV se reúnen en un único archivo con un esquema compartido.
+
+<div id="data-that-is-ready-to-use" />
 
 ### Datos listos para usar
 
@@ -42,6 +48,8 @@ Los reportes heredados devolvían todos los campos como cadenas de texto simples
 * **Esquema unificado:** estructura coherente y validada en todos los productos de datos.
 * **Nombres de campos autoexplicativos:** coherentes y autoexplicativos en todos los reportes, lo que facilita trabajar con los datos directamente en herramientas de BI (business intelligence), flujos de trabajo de analistas y aplicaciones impulsadas por IA.
 
+<div id="precise-control-over-what-you-receive" />
+
 ### Control preciso sobre lo que recibes
 
 Los reportes avanzados te permiten adaptar cada reporte a tus necesidades exactas sin posprocesamiento:
@@ -49,6 +57,8 @@ Los reportes avanzados te permiten adaptar cada reporte a tus necesidades exacta
 * **Personalización del esquema:** añade o elimina campos para ajustarlos a tus requisitos posteriores.
 * **Filtros a nivel de reporte:** limita los datos a una plataforma, un tipo de conversión, un país o un evento específicos.
 * **Plantillas predefinidas:** empieza al instante con configuraciones de campos y filtros diseñadas para casos de uso habituales.
+
+<div id="advanced-reports-vs-legacy-reports" />
 
 ## Reportes avanzados vs. reportes heredados
 
@@ -63,6 +73,8 @@ La tabla siguiente destaca las principales diferencias entre los reportes avanza
 | **Cobertura de plataformas** | Reportes independientes por plataforma con esquemas distintos | Móvil, web y CTV consolidados en un solo reporte con un esquema compartido |
 | **Filtros** | Selección básica de filtros | Filtros de selección múltiple a nivel de reporte para varias dimensiones, además de plantillas predefinidas para casos de uso habituales |
 | **Preparado para IA y BI** | Se requerían conversiones de tipo, alineación de esquemas, normalización de campos y cambio de nombre de campos | Tipados, validados y con nombres coherentes, con nombres de campo **autoexplicativos** que tanto las personas como las aplicaciones impulsadas por IA pueden interpretar fácilmente |
+
+<div id="available-reports" />
 
 ## Reporte disponible en
 
@@ -115,6 +127,8 @@ El reporte de conversiones multiplataforma con asistencias muestra el recorrido 
 
 </Accordion>
 
+<div id="report-templates" />
+
 ## ¿Cómo me suscribo al reporte?
 
 Las plantillas son preajustes de reportes preconfigurados diseñados para casos de uso habituales. Cada plantilla está asociada a un producto de datos específico y viene precargada con los campos y filtros más relevantes para los casos de uso habituales de ese reporte. Al seleccionar una plantilla, se cargan automáticamente los campos y filtros correctos. Puedes editar el nombre del reporte rellenado previamente antes de guardarlo.
@@ -127,6 +141,8 @@ Están disponibles las siguientes plantillas predefinidas:
 | --- | --- | --- |
 | **Conversiones web** | Conversiones | Puntos de atribución para web, incluidas las primeras visitas, las revisitas y los eventos de adquisición de usuarios. Todos los eventos de usuario posteriores heredan los detalles de la campaña de estas conversiones. |
 | **Eventos web** | Eventos de usuario final | Todos los eventos web y las sesiones. Úsalo como tu reporte principal para el análisis a nivel de visita y de evento. |
+
+<div id="report-level-filters" />
 
 ## Filtros a nivel de reporte
 

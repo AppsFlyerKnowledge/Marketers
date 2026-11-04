@@ -25,11 +25,15 @@ x-zendesk:
 ---
 > **En resumen:** Simula una instalación no orgánica desde tu dispositivo AppleTV con la app de prueba de tvOS.
 
+<div id="overview" />
+
 ## Visión general
 
 AppleTV no tiene navegador. Por lo tanto, no puedes probar clics ni instalaciones en el dispositivo para una **aplicación** no publicada. (Para las **apps** publicadas, puedes <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers#pruebas-mediante-enlaces-de-atribución">hacer pruebas con enlaces de atribución</Anchor>).
 
 Para probar la atribución en apps no publicadas, puedes usar la **app de prueba de tvOS.**
+
+<div id="how-does-the-tvos-test-app-work" />
 
 ### ¿Cómo funciona la App de prueba de tvOS?
 

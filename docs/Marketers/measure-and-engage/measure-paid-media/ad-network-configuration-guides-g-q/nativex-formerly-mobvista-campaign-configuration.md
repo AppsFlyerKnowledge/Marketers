@@ -25,6 +25,8 @@ x-zendesk:
 
 ![nativex.png](https://files.readme.io/840450215d38dc171452049ce1e9ce8c5f289e489fcb985a8d7ecb745fd11ede-49783409596049.png)
 
+<div id="setting-up-nativex" />
+
 ## Configuración de Nativex
 
 **Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, ponte en contacto con el Partners para abrir una antes de configurar la integración.
@@ -41,6 +43,8 @@ x-zendesk:
 
 La ventana de configuración de Nativex incluye 4 pestañas activas: Integración, enlace de atribución, Costo y Permisos. Haz clic en los elementos que aparecen a continuación para obtener más información sobre la configuración de las pestañas.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">General Settings</Anchor> de la pestaña Integración es **obligatorio** para todos los Partners
@@ -50,10 +54,14 @@ La ventana de configuración de Nativex incluye 4 pestañas activas: Integració
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -65,12 +73,16 @@ Nativex se conecta con AppsFlyer a través de un ID de red único. Si todavía n
 
 Activa esta opción si quieres atribuir instalaciones view-through de Nativex. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Nativex después de las instalaciones y los re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
 Selecciona **Solo eventos atribuidos a este partner** para eventos provenientes solo de usuarios atribuidos a Nativex.  
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para que toda tu base de usuarios esté disponible para ser reportada a Nativex.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -100,6 +112,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a N
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -119,6 +133,8 @@ Agregar parámetros al enlace de atribución aquí te permite realizar análisis
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Nativex.
@@ -127,9 +143,13 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic</Anchor>.
 
+<div id="click-attribution-link" />
+
 ### Haz clic en el enlace de atribución
 
 Este es el enlace de atribución que contiene toda la información de configuración que definiste para dicho enlace. Envíalo a Nativex para que se active cuando los leads hagan clic en un anuncio correspondiente.
+
+<div id="view-through-attribution-lookback-window" />
 
 ### Ventana de lookback de atribución view-through
 
@@ -140,6 +160,8 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 **Parámetro de enlace de atribución:** af\_viewthrough\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución por impresiones</Anchor>.
+
+<div id="impressions-attribution-link" />
 
 ### Enlace de atribución de impresiones
 
@@ -171,6 +193,8 @@ Este partner no admite ingresos por publicidad.
 
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Nativex, tanto si el partner actúa como ad network, agencia o ambos. Ten en cuenta que, incluso si la atribución está deshabilitada para Nativex, la pestaña Permisos está activa y puedes otorgarle el control a Nativex.
 
+<div id="ad-network-permissions" />
+
 ### Permisos de ad network
 
 Utiliza estos selectores para otorgar permisos a Nativex para que gestione su propia configuración para tu app:
@@ -181,6 +205,8 @@ Utiliza estos selectores para otorgar permisos a Nativex para que gestione su pr
 * ***Permitir el acceso a tu dashboard de Protect360*** - solo a los datos de Protect360 propios de Nativex, siempre que la funcionalidad esté habilitada para el anunciante
 
 Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permisos de la agencia
 

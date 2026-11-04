@@ -28,6 +28,8 @@ x-zendesk:
 
 > **En resumen:** Crea campañas de correo electrónico con ESP integrados mediante enlaces de la marca OneLink y deep linking para disfrutar de experiencias de usuario fluidas que impulsen la conversión.
 
+<div id="about-esp-integration" />
+
 ## Acerca de la integración ESP
 
 El marketing por correo electrónico es una forma sencilla, potente y eficaz de interactuar con los clientes y clientes potenciales. Muchos marketers confían en los proveedores de servicios de correo electrónico (ESP) para enviar campañas de correo electrónico a gran escala a sus usuarios. Y si bien este debería ser un proceso sencillo y directo, que ofrezca la experiencia de usuario móvil perfecta que imaginas, no suele ser así.
@@ -46,6 +48,8 @@ Los problemas surgen como resultado de la forma en que el ESP típico maneja sus
 Para evitar estos problemas y ofrecer a los usuarios móviles la mejor experiencia, haz clic en tu ESP en la sección siguiente y sigue las instrucciones de integración específicas. Algunos ESPs son compatibles con una solución de integración de AppsFlyer que permite a AppsFlyer actuar como intermediario entre el servidor ESP y tu nombre de dominio. Su función como proxy permite el suministro de archivos de asociación (AASA o enlaces de activos), lo que facilita el deep linking.
 
 La solución de integración ESP de AppsFlyer es una función premium. Si quieres saber más o empezar, ponte en contacto con nosotros en [hello@appsflyer.com](mailto:hello@appsflyer.com).
+
+<div id="supported-esps" />
 
 ## ESPs compatibles
 
@@ -75,6 +79,8 @@ Las campañas de correo electrónico ESP para usuarios de aplicaciones móviles 
 | <Anchor target="_blank" href="/marketers/es/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Logo de Sailthru" src="https://files.readme.io/61b721936f4f9cc64ee9551a213865eca2bea188599311f79d92d945204a713b-32378022253841.png" height="40px" /></Anchor> | Sí |
 | <Anchor target="_blank" href="/marketers/es/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Logo de SendGrid" src="https://files.readme.io/f4c3217e956db7e922a6150597d596c2c4848e5aa0a43b2347824aacbeb2caa3-32378022256785.png" height="40px" /></Anchor> | Sí |
 | <Anchor target="_blank" href="/marketers/es/docs/set-up-your-esp-integration-with-appsflyer"><Image alt="Logo de SparkPost" src="https://files.readme.io/bec55e3c96bb80b736777e110d05df9009e015ef2c1cdd8b3d8088880264f593-32377991460369.png" height="40px" /></Anchor> | Sí |
+
+<div id="other-esps" />
 
 ## Otros ESPs
 

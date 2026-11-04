@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **De un vistazo:** Controla y actualiza la Dev Key de tu aplicación directamente en la Configuración de la aplicación. Para ofrecerte una mayor flexibilidad y seguridad.
 
+<div id="what-is-a-dev-key" />
+
 ## ¿Qué es una Dev Key?
 
 La Developer Key (Dev Key) es un identificador único de tu aplicación que se utiliza para autenticar los datos de eventos enviados desde el SDK y las integraciones de servidor a servidor (S2S) a AppsFlyer. Es esencial para habilitar la atribución, las sesiones y la medición de eventos in-app.  
 De forma predeterminada, todas las aplicaciones de tu cuenta comparten la misma Dev Key. Pero, si lo necesitas, puedes crear una Dev Key única para cada aplicación.  
 Para darte un mayor control, la pestaña Gestión de Dev Keys de la configuración de tu aplicación permite a los usuarios administradores ver y gestionar las Dev Keys, incluida la actualización o sustitución de una Dev Key existente.
 
+<div id="where-to-find-your-dev-keys" />
+
 ## Dónde encontrar tus Dev Keys
 
 En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Configuración de la aplicación** > **Gestión de Dev Key**.
+
+<div id="dev-key-management" />
 
 ## Gestión de Dev Keys
 
@@ -39,6 +45,8 @@ Los administradores pueden usar la pestaña Gestión de Dev Key para:
 * Asignar una Dev Key ya en uso por otra aplicación de la cuenta.
 * Habilitar la generación predeterminada de Dev Keys únicas para las aplicaciones nuevas.
 
+<div id="why-you-might-need-to-change-your-dev-key" />
+
 ### Por qué podrías necesitar cambiar tu Dev Key
 
 Puede que quieras cambiar tu Dev Key por varios motivos:
@@ -46,6 +54,8 @@ Puede que quieras cambiar tu Dev Key por varios motivos:
 * **Seguridad**: rota la clave si ha quedado expuesta para evitar accesos no autorizados.
 * **Transferencias de cuenta**: Genera una nueva clave de desarrollador después de mover una aplicación a otra cuenta, para alinearla con la cuenta actual.
 * **Granularidad**: asigna claves únicas por aplicación para simplificar la supervisión, la resolución de problemas o el control de acceso.
+
+<div id="how-to-set-up-and-change-a-dev-key" />
 
 ### Cómo configurar y cambiar una Dev Key
 
@@ -59,6 +69,8 @@ Después de generar o asignar una nueva Dev Key, es importante que:
   * La clave de desarrollador actual permanecerá activa
   * La nueva clave de desarrollador permanecerá en estado *Pendiente*
   * No se aplicará ningún cambio a la recopilación de datos
+
+<div id="important" />
 
 > 🚧 **Dos puntos (:)**
 >
@@ -78,6 +90,8 @@ Después de generar o asignar una nueva Dev Key, es importante que:
       2. Tu clave de desarrollador actual seguirá activa hasta la activación
       3. **La activación es obligatoria** una vez que la versión actualizada de la aplicación esté publicada
 
+      <div id="important-1" />
+
       > 🚧 **Dos puntos (:)**
       >
       > Independientemente de la opción que elijas, el cambio de clave de desarrollador solo surte efecto después de que actives manualmente la clave de desarrollador.
@@ -88,11 +102,15 @@ Después de generar o asignar una nueva Dev Key, es importante que:
 8. Haz clic en Activar clave de desarrollador.
 9. La clave de desarrollador pasa de pendiente a activa.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > * Hasta que los usuarios actualicen a la versión más reciente de la app, no se registrarán los eventos in-app ni las sesiones de versiones anteriores. Sin embargo, las instalaciones (atribución) se seguirán procesando correctamente.
 > * Si usas la API S2S (API2), los cambios en la Dev Key pueden interrumpir los eventos de servidor a servidor.
 > * Una vez activada la Dev Key, los datos pueden tardar hasta 30 minutos en empezar a fluir al sistema.
+
+<div id="how-to-set-a-unique-dev-key-for-future-apps-coming-soon---q2-2026" />
 
 ### Cómo establecer una clave Dev única para futuras apps (próximamente - T2 de 2026)
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 > **At a glance:** La serie de eventos de las reglas de validación permite a los anunciantes definir una secuencia de eventos por la que debe pasar un usuario real. Cualquier desviación del orden definido, o del tiempo entre eventos, se detecta y se bloquea.
 
+<div id="intro" />
+
 ## Introducción
 
 Los anunciantes pueden definir una secuencia de eventos por la que debe pasar un usuario real en tu aplicación. AppsFlyer evalúa esta secuencia mediante una ventana de evaluación que comienza el día en que se guarda la regla: crece cada día hasta los 30 días y, después, se convierte en una ventana móvil de 30 días que avanza diariamente. Los eventos activados antes de que se creara la regla no se evalúan nunca.
@@ -39,6 +41,8 @@ Si la secuencia se rompe, ya sea en el orden o en el tiempo, el usuario se consi
 
 Nota: si editas la regla de cualquier forma, incluida la selección de la aplicación, las condiciones, la fuente de tráfico, la secuencia de eventos o la activación/desactivación, la ventana de evaluación se restablece al día 0.
 
+<div id="who-is-this-for" />
+
 ## ¿A quién va dirigido?
 
 Esta función solo es adecuada para:
@@ -46,6 +50,8 @@ Esta función solo es adecuada para:
 * **Eventos del SDK**: aplicaciones que crearán reglas solo con eventos del SDK.
 * **Eventos no repetitivos**: aplicaciones que tienen una secuencia de eventos en la que los eventos no se producirán más de una vez en la secuencia. Si el mismo evento se produce más de una vez en la secuencia (por ejemplo, el evento C se envía dos veces), se trata como una infracción y los eventos asociados se bloquean.
 * **Tráfico NOI**: esta función solo está disponible para el tráfico NOI
+
+<div id="how-to-set-up-a-series-of-event-rule" />
 
 ## Cómo configurar una regla de serie de eventos
 
@@ -67,9 +73,13 @@ Sigue estas instrucciones para configurar una regla de serie de eventos:
 11. Revisa la sección **Resultado de la regla** para confirmar el estado de la ventana de evaluación y el tiempo total mínimo de la secuencia
 12. Haz clic en **Save**
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > No selecciones todos los eventos de tu aplicación. Selecciona solo los eventos en los que normalmente podría haber fraude
+
+<div id="accessing-data" />
 
 ## Acceso a los datos
 
@@ -80,6 +90,8 @@ Cuando una regla de Serie de eventos bloquea una instalación o un evento in-app
 | Instalaciones posteriores a la atribución | <ul><li>Motivo del fraude = bots de validación</li><li>Submotivo del fraude = reglas de validación pa</li><li>Valor del motivo de bloqueo = nombre de la regla</li></ul> |
 | Eventos in-app posteriores a la atribución | <ul><li>fraud\_reason = bots de validación</li><li>fraud\_sub\_reason = reglas de validación pa</li></ul> |
 | Eventos in-app bloqueados | <ul><li>Motivo del bloqueo = bots de validación</li><li>Submotivo del bloqueo = reglas de validación pa</li><li>Valor del motivo de bloqueo = nombre de la regla</li></ul> |
+
+<div id="examples" />
 
 ## Ejemplos
 
@@ -337,6 +349,8 @@ Fraude. Dado que el mismo evento (evento B) se produjo dos veces, presumimos fra
 * Solo se admite la lógica AND entre condiciones. La lógica OR no es compatible.
 
 </Accordion>
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

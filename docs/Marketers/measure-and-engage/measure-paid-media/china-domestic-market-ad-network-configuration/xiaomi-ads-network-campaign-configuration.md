@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **Resumen:** Xiaomi, partner integrado de ad network de AppsFlyer, opera la tienda de aplicaciones Android de Xiaomi, que se encuentra entre las 5 principales plataformas de distribución de aplicaciones Android en China, con 5 billion descargas de aplicaciones al mes. Además de la atribución móvil basada en clics, Xiaomi también ofrece atribución por impresiones, que puedes registrar con AppsFlyer.
 
+<div id="setting-up-xiaomi" />
+
 ## Configuración de Xiaomi
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -43,6 +45,8 @@ La ventana de configuración de Xiaomi incluye 3 pestañas activas: Integración
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita**, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
@@ -55,6 +59,8 @@ Configuración general
 Activa esta opción si quieres atribuir instalaciones view-through de Xiaomi. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
 ![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -100,6 +106,8 @@ En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Xiaomi
 ![ad_network_permissions.png](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

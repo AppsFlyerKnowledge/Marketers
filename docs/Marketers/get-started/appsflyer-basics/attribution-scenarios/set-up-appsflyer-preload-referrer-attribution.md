@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **A simple vista:** AppsFlyer utiliza la referencia de precarga para atribuir las instalaciones a las campañas de precarga, donde los marketers contratan a fabricantes de equipos originales (OEM), operadores móviles y partners de descubrimiento de aplicaciones para precargar su aplicación en la fábrica o en el momento en que el usuario enciende el dispositivo por primera vez.
 
+<div id="overview" />
+
 ## Visión general
 
 En las campañas de precarga, los fabricantes de dispositivos originales (OEM), los operadores móviles y los partners de descubrimiento de aplicaciones precargan las aplicaciones en los dispositivos antes de que lleguen al usuario. Esto puede ser realizado por el OEM en la fábrica o por los proveedores al momento de la activación del primer dispositivo.
@@ -35,11 +37,15 @@ La solución proporciona:
 * Soporte transparente para las actualizaciones de las aplicaciones y las redescargas de las mismas.
 * Capacidades de visibilidad y medición entre la primera activación del dispositivo y el primer inicio de la aplicación. Esto te permite ver cuántos dispositivos fueron activados con la aplicación precargada por un partner específico y luego observar cuándo se lanza la aplicación por primera vez.
 
+<div id="partners-supporting-preload-referrer-campaigns" />
+
 ## Partners que soportan las campañas de referencia de precarga
 
 La información en este artículo es relevante para los anunciantes que están integrados con los partners especificados en la siguiente tabla:
 
 <table><thead><tr><th rowspan="2">Fuente de medios</th><th rowspan="2">PID no integrados.</th><th colspan="2">Opciones de campaña de referencia de precarga <a href="./set-up-appsflyer-preload-referrer-attribution#opciones-de-referencia-de-precarga"><span>Saber más</span></a> </th></tr><tr><th>Precarga</th><th>Click-to-download</th></tr></thead><tbody><tr><td><a href="#referencia-de-precarga-de-samsung">Samsung</a></td><td>samsung_int</td><td><span>✓</span></td><td> </td></tr><tr><td>Digital Turbine On Device</td><td>digitalturbine_int</td><td><span>✓</span></td><td>En breve</td></tr><tr><td>Aura de Unity</td><td>aura_int</td><td><span>✓</span></td><td>En breve</td></tr><tr><td>Appnext</td><td>appnext_int</td><td><span>✓</span></td><td>En breve</td></tr><tr><td>Glance<br/> </td><td>glance_int</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
+
+<div id="preload-referrer-options" />
 
 ## Opciones de referencia de precarga
 
@@ -52,12 +58,16 @@ AppsFlyer da la mayor prioridad a la atribución de precarga. Esto significa que
 | Precarga | <ul><li>La aplicación se precargó en la fábrica o se precargó la primera vez que se activó el dispositivo. Alternativamente, un asistente pide a los usuarios que descarguen la aplicación cuando el dispositivo se activa por primera vez.</li><li>Un evento de precarga, equivalente a un clic, se comunica a AppsFlyer cuando el dispositivo se enciende por primera vez.</li><li>La atribución se produce cuando el usuario abre la aplicación por primera vez.</li><li>El evento de precarga tiene la prioridad de atribución más alta (a menos que se haya activado la misma prioridad de atribución).</li></ul> | `preload_rfr` |
 | Click-to-download | <ul><li>La instalación de la aplicación se llevará a cabo más tarde en el ciclo de vida del dispositivo a través de push notifications, tiendas alternativas de partners, etc.</li><li>Cuando el usuario interactúa con un anuncio o con un mensaje push notification, la aplicación se descarga e instala automáticamente en el dispositivo sin redireccionar a la tienda.</li><li>La atribución se otorga utilizando las reglas de último clic de AppsFlyer.</li></ul> | `af_referrer` |
 
+<div id="view-preload-attribution-data" />
+
 ## Ver datos de atribución de precarga
 
 La precarga/clic para descargar los datos de rendimiento de la campaña de engagement está disponible de la siguiente manera:
 
 * **Dashboard general:** Los engagements cuentan como clics en los reportes y dashboards agregados. Se agregan a nivel de partner de precarga (fuente de medios) y campaña.
 * **Raw data:** Las interacciones están disponibles en los reportes de clics disponibles solo a través de Data Locker. Se encuentran en el campo de URL original y se pueden identificar en el parámetro af\_engagement\_type como precarga o click\_to\_download. Para las instalaciones, consulta la tabla en la sección anterior para ver cómo se muestra el tipo de coincidencia en raw data.
+
+<div id="set-up-preload-referrer-attribution" />
 
 ## Configurar la atribución de referencias de precarga
 
@@ -78,13 +88,19 @@ La precarga/clic para descargar los datos de rendimiento de la campaña de engag
 6. Haz clic en **Guardar integración**.
 7. Informa al partner de precarga de que estás listo para atribuir sus campañas.
 
+<div id="samsung-preload-referrer" />
+
 ## Referencia de precarga de Samsung
 
 La integración de referencia de precarga de Samsung con AppsFlyer te proporciona una visibilidad detallada desde la descarga inicial de la aplicación hasta el primer lanzamiento, lo que permite una comprensión más clara del comportamiento del usuario.
 
+<div id="set-up-samsung-preload-referrer-attribution" />
+
 ### Configurar la atribución de referencias de precarga de Samsung
 
 Para configurar la atribución de referencia de precarga de Samsung, consulta las [instrucciones generales para las referencias de precarga](#configurar-la-atribución-de-referencias-de-precarga).
+
+<div id="traits-and-limitations" />
 
 ### Rasgos y limitaciones
 

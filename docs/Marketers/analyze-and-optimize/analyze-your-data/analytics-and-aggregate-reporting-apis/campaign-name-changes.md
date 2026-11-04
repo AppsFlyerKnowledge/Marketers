@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En resumen:** Cambia los nombres de las campañas sin crear visualizaciones de datos duplicados.
 
+<div id="campaign-name-changes" />
+
 ## Cambios de nombres de campañas
 
 Cambiar los nombres de las campañas afecta la visualización de los **datos agregados** en los paneles de control y reportes. AppsFlyer muestra las campañas usando el ID de campaña como clave. Si hay más de un nombre asociado con el mismo ID de campaña, se utiliza el nombre reportado más recientemente para mostrar los datos.
@@ -52,12 +54,14 @@ La siguiente tabla muestra qué paneles de control y reportes admiten cambios de
 | ETL de costos | Sí |
 | Panel de control general de SKAN | No |
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > * El 1 de enero comenzó a ejecutarse la campaña **example\_a1**.
 > * El 2 de enero, el nombre de la campaña cambió de **example\_a1**a **example\_a2**.
 >
-> #### Ejemplo de datos de campaña
+> #### <span id="example-campaign-data"></span>Ejemplo de datos de campaña
 >
 >
 >
@@ -68,11 +72,13 @@ La siguiente tabla muestra qué paneles de control y reportes admiten cambios de
 >
 >
 >
-> #### Visualización del panel de control general
+> #### <span id="overview-dashboard-display"></span>Visualización del panel de control general
 >
 >
 >
 > <table><tbody><tr><th><p><span>Campaña</span></p></th><th><p><span>ID de campaña</span></p></th><th><p><span>Instalaciones</span></p></th><th><p><span>Gasto publicitario</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>$300</span></p></td></tr><tr><td colspan="4"><p>Resultado: Los datos se muestran bajo el nombre de campaña más reciente.</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### Práctica recomendada
 

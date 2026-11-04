@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png?v=1" width="119px" />
 
+<div id="setting-up-mobusi" />
+
 ## Configuración de Mobusi
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -43,14 +45,20 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, debes activar el botón ***Activate Partner*** para habilitar la configuración de los parámetros de la pestaña Integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 Envía postbacks automáticos a Mobusi después de las instalaciones y los re-engagements de usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
+
+<div id="in-app-event-postbacks-settings" />
 
 ### Configuración de postbacks de eventos in-app
 
@@ -79,6 +87,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a M
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -98,6 +108,8 @@ Agregar parámetros al enlace de atribución aquí te permite realizar análisis
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras aperturas) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Mobusi.
@@ -105,6 +117,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 **Parámetro del enlace de atribución:** af\_click\_lookback
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics</Anchor>.
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -135,6 +149,8 @@ Mobusi no admite los ingresos por publicidad.
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Mobusi, tanto si el partner actúa como ad network, agencia o ambos. Ten en cuenta que, aunque la atribución esté deshabilitada para Mobusi, la pestaña de permisos está activa y puedes otorgarle el control a Mobusi.
 
 Usa estos selectores para otorgarle permisos a una ad network para que maneje su propia configuración de tu aplicación:
+
+<div id="ad-network-permissions" />
 
 ### Permisos de ad network
 

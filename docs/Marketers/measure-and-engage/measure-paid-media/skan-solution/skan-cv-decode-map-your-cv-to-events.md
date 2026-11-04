@@ -24,11 +24,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## Decodificar el valor de conversión de SKAN
 
 Los anunciantes utilizan la decodificación del valor de conversión como alternativa a las opciones disponibles en <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio">Conversion Studio</Anchor>. Si usas Decodificar, significa que eres responsable de configurar <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">updatePostbackConversionValue</Anchor> de acuerdo con la lógica de tu aplicación.
 
 Además de establecer el valor de conversión (CV) en la aplicación, el resto del flujo, las funciones y las opciones de reportes son los mismos que los descritos en la <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">guía de soluciones de SKAN</Anchor>. Esto significa que, al expirar el período de actividad (controlado por ti), iOS envía el postback a la red de publicidad que la reenvía a AppsFlyer. AppsFlyer decodifica el CV de acuerdo con tu asignación en eventos procesados de la misma manera que los CV decodificados establecidos por el SDK.
+
+<div id="custom-conversion-valuedecode" />
 
 ## Valor de conversión personalizado: decodificar
 
@@ -66,6 +70,8 @@ Ten en cuenta lo siguiente:
   * En los reportes y paneles de control agregados, los ingresos se calculan como el promedio del rango. Ejemplo: min\_revenue=4 y max\_revenue=10. Los ingresos calculados son 7.
   * Los reportes de raw data incluyen los ingresos calculados (skad\_revenue), min\_revenue y max\_revenue.
 
+<div id="meta-specific-rules" />
+
 #### **Reglas específicas de Meta**
 
 Si te integras con Anuncios de Meta, sigue las siguientes reglas:
@@ -73,6 +79,8 @@ Si te integras con Anuncios de Meta, sigue las siguientes reglas:
 * Los valores de ingresos mínimos y máximos de un valor de conversión determinado deben ser diferentes. Lo que significa que no es igual.
 * Los valores no deben superponerse y deben estar en orden consecutivo, como se muestra para los valores de conversión del 1 al 2 y 62 en la tabla siguiente.
 * event\_counter: Los Anuncios de Meta no tienen en cuenta este valor. [Práctica recomendada] Llénalo con un valor de 1.
+
+<div id="example-decode-mapping" />
 
 ### Ejemplo: Decodificar la asignación
 
@@ -90,12 +98,16 @@ Si te integras con Anuncios de Meta, sigue las siguientes reglas:
 | 62 | af\_compra | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### Ejemplo A : Valor de conversión preciso 1
 
 | nombre\_del\_evento | ingresos\_skad | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | instalar |  |  |  |  |
 | af\_compra | 1.5 | 0 | 3 | `{abc}` |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### Ejemplo B: Valor de conversión preciso
 
@@ -105,6 +117,8 @@ Si te integras con Anuncios de Meta, sigue las siguientes reglas:
 | af\_compra | 6.5 | 3 | 10 | `{def}` |
 | af\_compra | 6.5 | 3 | 10 | `{def}` |
 | af\_compra | 6.5 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### Ejemplo C: Valor de conversión preciso 21
 
@@ -121,6 +135,8 @@ Si te integras con Anuncios de Meta, sigue las siguientes reglas:
 | event\_e |  |  |  |  |
 | evento\_f |  |  |  |  |
 | evento\_g |  |  |  |  |
+
+<div id="example-d-fine-conversion-value-62" />
 
 ### Ejemplo D: Valor de conversión preciso 62
 
@@ -139,9 +155,13 @@ Si te integras con Anuncios de Meta, sigue las siguientes reglas:
 
 <Accordion title="Soporte de SSOT para el modo Decode">
 
+<div id="overview" />
+
 #### Visión general
 
 Los clientes del modo Decode ahora pueden acceder a la atribución de SSOT (Single Source of Truth), lo que aporta ventajas de deduplicación que antes solo estaban disponibles para los usuarios del modo Encode. Esto mejora la medición del rendimiento no orgánico sin requerir la implementación del modo Encode.
+
+<div id="key-benefits" />
 
 #### Beneficios clave
 
@@ -152,6 +172,8 @@ Los clientes del modo Decode ahora pueden acceder a la atribución de SSOT (Sing
 * Deduplica instalaciones no orgánicas entre redes.
 * Permite una atribución y unos reportes más precisos.
 * Reduce la complejidad del desarrollo y del control de calidad.
+
+<div id="how-to-enable-ssot-for-decode-mode" />
 
 #### Cómo habilitar SSOT para el modo Decode
 
@@ -164,6 +186,8 @@ Los clientes del modo Decode ahora pueden acceder a la atribución de SSOT (Sing
 5. **Accede a los reportes**  
    Los dashboards de SSOT y los archivos de DataLocker ahora incluyen datos del modo de descodificación.
 
+<div id="faq" />
+
 #### Preguntas frecuentes
 
 **P: ¿Cuándo debo consultar la API para obtener el indicador de atribución de SSOT?**  
@@ -174,6 +198,8 @@ Los clientes del modo Decode ahora pueden acceder a la atribución de SSOT (Sing
 * Como alternativa, consúltala una vez al menos 25 segundos después de la instalación para garantizar la precisión.
 
 </Accordion>
+
+<div id="zd-decode-csv-file-specification" />
 
 <div id="decode-csv-file-specification" />
 
@@ -230,6 +256,8 @@ Los valores de conversión se asignan a uno o más eventos in-app.
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## Solución de problemas del archivo de errores de carga de CSV
 
 <div id="upload-error-messages" />
@@ -247,6 +275,8 @@ Uno o más valores del archivo no coinciden con el formato requerido: El formato
 Al usar hojas de cálculo de Excel/Google para crear un archivo CSV, la columna event\_revenue\_usd debe tener el formato correcto antes de guardar el archivo como archivo CSV.
 
 Después de guardar el archivo CSV, comprueba que el contenido tenga el formato correcto. **Nota**: No utilices Excel para hacer la verificación, utiliza un [editor](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel).
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### Formatear celdas event\_revenue\_usd en Excel
 

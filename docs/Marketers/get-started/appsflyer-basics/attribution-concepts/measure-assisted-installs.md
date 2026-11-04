@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide el impacto más amplio de las fuentes de medios que involucraron a tus usuarios y ayudaron antes del último toque.
 
+<div id="assisted-installs" />
+
 ## Instalaciones asistidas
 
 Las <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">instalaciones asistidas</Anchor> (también conocida como atribución multi-touch) son instalaciones en las que la fuente de medios/campaña no tuvo el último toque, pero sí llegó al usuario antes de la instalación y durante la ventana de atribución. Una instalación puede tener hasta 3 instalaciones asistidas.
 
 Los datos analíticos de las instalaciones asistidas están disponibles tanto a nivel de fuente de medios como de campaña para medir el impacto más amplio de cada fuente de medios y campaña.
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### Ver métricas de instalaciones asistidas en el panel de control general
 
@@ -47,9 +51,13 @@ Los datos analíticos de las instalaciones asistidas están disponibles tanto a 
 5. Selecciona la métrica **Instalaciones asistidas**.  
    Se muestra el gráfico de instalaciones asistidas. El azul indica las instalaciones no orgánicas y el naranja indica las instalaciones asistidas. ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### ¿Por qué son importantes las asistencias?
 
 En muchos casos, los usuarios potenciales se familiarizan con una aplicación a través de la fuente de asistencia, pero no la instalan por algún motivo. Por lo tanto, medir y reconocer las asistencias es importante en la optimización y medición de las campañas.
+
+<div id="assisted-installs-reporting" />
 
 ### Reportes de instalaciones asistidas
 
@@ -72,16 +80,22 @@ Para cada una de las redes contribuyentes, el reporte de raw data incluye lo sig
 
 Consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview#reportes-del-viaje-del-usuario">raw data de la trayectoria del usuario.</Anchor>
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > **Fuentes de medios con restricciones de datos a nivel de usuario**
 >  Si una <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions">fuente de medios restringe los datos a nivel de usuario</Anchor>, no se le puede atribuir como colaboradora ni como asistencia en una atribución ganadora. Esto significa que determinadas fuentes no aparecen como colaboradoras aunque hayan interactuado con el usuario antes de la instalación.
+
+<div id="note-1" />
 
 > 📘 **Advertencia**
 >
 > Varias de las principales redes de publicidad <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention">restringen el intercambio de datos con plataformas de terceros</Anchor>, incluidas las agencias. Por lo tanto, las instalaciones asistidas no aparecen en el panel de control de la agencia para estas redes.
 
 En los reportes de raw data, los datos de las redes contribuyentes se desglosan en campos separados para **Colaboradores 1–3**.
+
+<div id="total-candidates-field" />
 
 ### Campo de candidatos totales
 
@@ -100,6 +114,8 @@ En la práctica, esto significa:
 * Si no hay colaboradores, es por la misma razón: los engagement registrados en `total_candidates` no podían servir como colaboradores.
 
 En resumen, `total_candidates` indica los engagement recibidos, que no son necesariamente candidatos válidos para la atribución. Es posible ver un valor en este campo y que la instalación siga atribuida a orgánico o sin colaboradores.
+
+<div id="note-2" />
 
 > 📘 **Consideraciones para agencias**
 >

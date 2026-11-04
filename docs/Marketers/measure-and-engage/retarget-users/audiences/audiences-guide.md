@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
+<div id="audiences-basics" />
+
 ## Conceptos básicos de Audiences
 
 Audiences de AppsFlyer te permite crear fácilmente segmentos de audiencia y conectarlos con tus canales propios y pagos, para que puedas ofrecer campañas personalizadas para lograr un mejor engagement y rendimiento. Y una vez enviada tu campaña, también podrás ver las métricas de rendimiento en Audiences.
@@ -41,9 +43,13 @@ Una audiencia es un segmento de usuarios actuales o anteriores de tu aplicación
 
 Toda la información necesaria para cargar datos de audiencia a un partner anunciante se especifica en una conexión de partner. Puedes tener varias conexiones para un solo partner anunciante (utilizando diferentes cuentas, información de inicio de sesión, etc.) Puedes tener varias conexiones para un solo partner anunciante (utilizando diferentes cuentas, información de inicio de sesión, etc.) Con el fin de permitir el cumplimiento de los requisitos de privacidad de iOS 14.5 y otras consideraciones de privacidad de los usuarios, **Audiences te permite tener un control total para determinar qué identificadores se comparten con los partners**, tanto a nivel cuenta como para cada conexión de partner.
 
+<div id="audience-split-and-incrementality-testing" />
+
 ### Pruebas de incrementalidad y división de audiencia
 
 Las pruebas de <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">incrementalidad</Anchor> miden el impacto real de tus campañas con pruebas A/B que miden con precisión el “aumento incremental”, es decir la diferencia entre las conversiones que ocurrieron como resultado de tus campañas de marketing y las que habrían sucedido de todos modos. AppsFlyer Audiences establece el escenario para las pruebas con una función opcional que divide la audiencia entre los partners de medios seleccionados y un grupo de control, para que puedas usar el dashboard de incrementalidad para comprender el verdadero valor de tus campañas.
+
+<div id="get-started" />
 
 ## Empezar
 
@@ -57,6 +63,8 @@ Sigue estos pasos para comenzar con Audiencias:
 | 4 | Conecta la audiencia con uno o varios partners de medios. |
 | Opcional | [Dividir la audiencia entre partners y un grupo de control](/docs/audiences-guide#audience-split-and-control-groups) |
 | Opcional | <Anchor target="_blank" href="/marketers/es/docs/audiences-create-better-audiences-with-user-attribute-data">Importar atributos de usuario</Anchor> |
+
+<div id="create-and-manage-audiences" />
 
 ## Crear y gestionar las audiencias
 
@@ -87,6 +95,8 @@ Una audiencia personalizada se construye desde cero utilizando cualquier conjunt
 13. Completa la definición de la audiencia y haz clic en **Siguiente**.  
     Aparece la ventana **Conexión de audiencia**. Aquí es donde [conectas la audiencia a tus partners de medios](/docs/audiences-guide#connect-an-audience-to-media-partners).
 
+<div id="notes" />
+
 > 📘 **Características**
 >
 > * Puedes tener hasta 100 audiencias personalizadas/sugeridas activas a la vez.
@@ -109,6 +119,8 @@ Elige entre más de 30 audiencias dentro de las **categorías de Adquirir, Activ
 * Fomentar la compra
 * Monetizar a los compradores
 * Y mucho más...
+
+<div id="example-use-case" />
 
 > 📄 **Ejemplo de caso de uso**
 >
@@ -133,6 +145,8 @@ Elige entre más de 30 audiencias dentro de las **categorías de Adquirir, Activ
    * **ID de cliente**: evalúa las reglas agrupando dispositivos utilizando el CUID. (Usa este método después de verificar que tus datos tienen CUID válidos.)
 10. Si deseas personalizar aún más la audiencia añadiendo [conjuntos de reglas](/docs/audiences-guide#todo-sobre-los-conjuntos-de-reglas) adicionales, puedes hacerlo haciendo clic en **+ Filtro**. Cuando hayas terminado, haz clic en **Siguiente**.   
     Aparece la ventana **Conexión de audiencia**. Aquí es donde [conectas la audiencia a tus partners de medios](/docs/audiences-guide#connect-an-audience-to-media-partners).
+
+<div id="notes-1" />
 
 > 📘 **Característica**
 >
@@ -189,6 +203,8 @@ La evaluación de reglas de audiencia se realiza utilizando un identificador de 
     * Al construir una audiencia con CUID como identificador, la asociación CUID debe haber sido recibida por AppsFlyer en la instalación (no solo en eventos posteriores a la instalación) para una asociación completa con los dispositivos relevantes y un enriquecimiento exitoso con identificadores de dispositivos (es decir, GAID, IDFA). <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Saber más</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+
+<div id="example-device-id-vs-cuid" />
 
 > 📄 **Notas relacionadas con eventos in-app :**
 >
@@ -348,6 +364,8 @@ Usa el botón de alternancia que divide la audiencia entre los partners y un gru
 
 </Accordion>
 
+<div id="all-about-rulesets" />
+
 ## Todo sobre los conjuntos de reglas
 
 Aprende a utilizar los conjuntos de reglas para definir tus audiencias.
@@ -373,11 +391,15 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 
 <Accordion title="Ejemplos de conjuntos de reglas">
 
+<div id="example-location-based-rule" />
+
 > 📄 **Ejemplo: Regla basada en la ubicación**
 >
 > Usuarios de Nueva York que desinstalaron la aplicación en el último mes
 >
 > ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
+
+<div id="example-user-attributes-based-rule" />
 
 > 📄 **Ejemplo: Regla basada en atributos de usuario**
 >
@@ -385,11 +407,15 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 >
 > ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
 
+<div id="example-revenue" />
+
 > 📄 **Ejemplo: Ingresos**
 >
 > Usuarios que instalaron la aplicación durante los últimos siete días y gastaron 1 $
 >
 > ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
+
+<div id="example-owned-media-filter" />
 
 > 📄 **Ejemplo: Filtro de medios propios**
 >
@@ -400,6 +426,8 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 > ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
 >
 > La audiencia se puede utilizar para volver a captar a estos usuarios con mensajes personalizados en medios propios o de pago, o como una lista de exclusión para evitar que vean anuncios irrelevantes o innecesarios al ejecutar campañas.
+
+<div id="example-remarketing" />
 
 > 📄 **Ejemplo: Remarketing**
 >
@@ -421,7 +449,7 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 * Hay varias categorías de filtros de conjuntos de reglas como Eventos, Ingresos, Geolocalización, Atribución, Atributos de usuario, Dispositivos y Medios propios.
 * Las reglas tienen diferentes parámetros y configuraciones, tal como se indica en la tabla a continuación.
 
-<table><tbody><tr><td colspan="3"><h4><span id="events"></span>Eventos</h4><p><img alt="engagement_filter_with_A___B.jpg" src="https://files.readme.io/ea3063532ff666f6d8a0f90d55c86007d8a54b25017d93ed7bc19e0d727d9193-46335625077777.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Visualizó un anuncio</li><li>Hizo clic en un anuncio</li><li>Instaló la aplicación</li><li>No instaló la aplicación</li><li>Inició la aplicación</li><li>No inició la aplicación</li><li>Desinstaló la aplicación </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Período y frecuencia </p></td></tr><tr><td colspan="3"><h4><span id="inapp-events"></span>Eventos in-app</h4><p><img alt="in-app_event_filter.jpg" src="https://files.readme.io/1bb8a78b3c64ab8e0d01c1e2be63e9bdd00b2be2396335b3a01289b0b0837593-46335625078929.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Realizó el evento [<em>nombre del evento</em>]</li><li>No realizó el evento [<em>nombre del evento]</em> </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Período y frecuencia </p></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Atributo del evento + valor:</p><ul><li>Es</li><li>No es</li><li>Mayor que</li><li>Menor que</li><li><a href="./audiences-guide#contains-does-not-contain-logic">Obtener similares</a></li><li><a href="./audiences-guide#contains-does-not-contain-logic">Ten en cuenta:</a></li></ul></td></tr><tr><td colspan="3"><p><br /><br /><strong><span id="h_01K5EHGKDPWS16HP9Q7KX9JXFY"></span>Notas sobre eventos in-app</strong><br /></p><ul><li>La lista de eventos in-app se actualiza <a href="./about-data-freshness-and-timezone-support#procesamiento-diario" target="_blank">diariamente.</a> </li><li>Si se selecciona <strong>Realizó el evento</strong> y el evento in-app tiene atributos asociados a este, puedes filtrar por valor de atributo de evento in-app. </li><li><p>Los eventos in-app, de forma predeterminada, están limitados a 100 valores únicos por atributo. Por ejemplo, si el evento es "purchase" y el atributo es "content-type", solo puede haber 100 (o menos) tipos de contenido posibles. Sin embargo, los valores numéricos son ilimitados.<br/>Si hay atributos (parámetros) de eventos in-app y valores que no aparecen en la lista, puedes añadirlos manualmente haciendo clic en <strong>Agregar atributo de evento</strong> &gt; <strong>Agregar elemento</strong>.<br/> </p><p><strong><img alt="Add_item.jpg" src="https://files.readme.io/00d62c7edfa556c3ecb50842003fb64ecde848413f1b81fd100f3da7257bc38e-46335625079825.jpg"/></strong></p></li><li>- Todos los elementos de eventos agregados manualmente deben introducirse solo como tipo de cadena (texto). No deben agregarse valores numéricos y no funcionarán correctamente.</li><li>- Cuando se agrega un elemento de evento manualmente, el "Tamaño estimado de la audiencia" puede no reflejarse con precisión. <br/>Si necesitas que aparezcan más de 100 atributos/valores en la lista, también puedes ponerte en contacto con tu CSM o enviar un correo electrónico a hello@appsflyer.com.</li></ul><h4><strong><span id="contains-does-not-contain-logic"></span>Lógica de contiene / no contiene:</strong></h4><p><strong>Contiene:</strong> Hace coincidir a los usuarios cuyos valores de atributos del evento contienen una palabra o varias palabra(s) específicas. La coincidencia es parcial y no distingue entre mayúsculas y minúsculas. Por ejemplo, la palabra clave "bag" coincide con atributos como "handbag" o "Bag".</p><p><strong>No contiene:</strong> Hace coincidir a los usuarios cuyos valores de atributos del evento no contienen las palabras especificadas. La lógica de coincidencia también es parcial y no distingue entre mayúsculas y minúsculas.</p><p><br /><br /><strong><span id="h_01K5EH9WVTEX56980MCR81ZAHH"></span>Notas sobre la lógica de Contiene</strong><br /></p><ul><li>Longitud mínima de la palabra clave: 2 caracteres.</li><li>Número máximo de entradas permitidas por regla: 1 palabra clave por condición AND.</li><li>No se admiten atributos formados solo por números y caracteres especiales.</li><li>La compatibilidad multilingüe incluye caracteres acentuados y no latinos (p. ej., é, ü o caracteres coreanos).</li><li>Cuando se utilizan los operadores "Contiene" o "No contiene", el tamaño estimado de la audiencia y el tamaño estimado de la carga no están disponibles. </li></ul></td></tr><tr><td colspan="3"><h4><span id="revenue::3358edf4"></span>Ingresos</h4><p><img alt="revenue_filter.jpg" src="https://files.readme.io/e896abde88511e5675074d5e4d995ed810637be8327c7c157ddf65668839fd4a-46335625080209.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Ingresos totales por compras in-app</li><li>Ingresos totales por publicidad</li><li>Ingresos totales </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>Mayor que</li><li>Menor que </li></ul><p><strong>Definiciones:</strong></p><ul><li> <strong>Ingresos totales por compras in-app:</strong> valor total de todos los eventos reportados usando el parámetro <code>af_revenue</code> para un dispositivo/CUID específico</li><li> <strong>Ingresos totales por publicidad:</strong> ingresos totales por publicidad generados por un dispositivo/CUID específico</li><li> <strong>Ingresos totales:</strong> Ingresos totales por compras in-app + Ingresos totales por publicidad</li></ul><p><strong>Notas:</strong></p><ul><li>Para usar los filtros de <strong>Ingresos totales por publicidad</strong> e <strong>Ingresos totales</strong>, la <a href="./roi360-guide-ad-revenue-attribution" target="_blank">Atribución de ingresos por publicidad</a> debe estar implementada en tu cuenta de AppsFlyer.</li><li>Todas las opciones de filtrado de los ingresos se miden en USD.</li></ul></td></tr><tr><td colspan="3"><h4><span id="geo"></span>Geografía</h4><p><img alt="location_filter.jpg" src="https://files.readme.io/62f6144d23ef23070e2d6d8891a420691633a466d1b8d76365b4d82f40c725c6-46335625081361.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Ubicación </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p><strong>Opciones de ubicación</strong></p><ul><li>País</li><li>Estado</li><li>Ciudad</li></ul></td></tr><tr><td colspan="3"><p><strong>Notas relativas a la ubicación:</strong></p><ul><li>Si seleccionas varios países, no podrás seleccionar estados.</li><li>Si seleccionas varios estados, puedes seleccionar ciudades.</li></ul></td></tr><tr><td colspan="3"><h4><span id="owned-media"></span>Medios propios</h4><p><img alt="doctored_owned_media_image_with_app_specified__final_version_.jpg" src="https://files.readme.io/0d15fa734e11164e6e525e26c66291c52144586c8c35dad77a71e471cbf3326d-46335667621649.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Fuente de medios propia</li><li>Campaña en medios propios</li><li>Conjunto de anuncios en medios propios</li><li>Anuncio en medios propios</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Valores como:</p><ul><li>Correo electrónico</li><li>SMS</li><li>Web</li><li>Redes sociales (excluyendo la publicidad pagada)</li><li>Códigos QR</li><li>Referencias</li><li>Campañas de medios, conjuntos de anuncios y anuncios específicos</li></ul></td></tr><tr><td colspan="3"><p>Puedes crear audiencias objetivo que consistan en usuarios que fueron atribuidos a fuentes de medios propias específicas. Además, puedes elegir el nivel de granularidad y dirigirte a los usuarios que proceden de una fuente de medios propia, campaña, conjunto de anuncios y/o anuncio individual específicos.</p><p>Utiliza las audiencias que crees para volver a captar a los usuarios con mensajes personalizados en medios propios o de pago, o como listas de exclusión para evitar que vean anuncios irrelevantes o innecesarios al ejecutar campañas de adquisición de usuarios o reengagement.</p></td></tr><tr><td colspan="3"><h4><span id="device"></span>Dispositivo</h4><p><img alt="device_filter.jpg" src="https://files.readme.io/184cd84f83b94c38f53ca5a9ef67a4f2c6ad8f8a78d832f6c7979a2c88f61cb5-46335667623441.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Marca del dispositivo</li><li>Modelo de dispositivo</li><li>Versión de la aplicación</li><li>Versión de SO</li><li>Operador</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es </li></ul></td><td> <img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/> Valor seleccionado</td></tr><tr><td colspan="3"><h4><span id="attribution"></span>Atribución</h4><p><img alt="Attribution_filter.jpg" src="https://files.readme.io/c7aee01564562bc7d468d6b2bd59ff3d26a028d19382dfdbc35c3fe700f214e7-46335625087249.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Orgánico</li><li>Reorientación</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Falso</li><li>Verdadero</li></ul></td><td> </td></tr><tr><td colspan="3"><h4><a href="./audiences-create-better-audiences-with-user-attribute-data" target="_blank"><span id="user-attributes"></span>Atributos de usuario</a></h4><p><img alt="user_attribute_filter.jpg" src="https://files.readme.io/add34f52509bf733f10364691e32ab88331a1caee4bbc4627fb665ec3826422d-46335625088145.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><p>Nombre de atributo de usuario</p></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Tipo de cadena<ul><li>Es</li><li>No es</li></ul></li><li>Tipo de número<ul><li>Es</li><li>Es mayor a</li><li>Es inferior a</li></ul></li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/><br/>Para cadena: Selecciona un valor</p><p>Para el número: Introduce un valor</p></td></tr></tbody></table>
+<table><tbody><tr><td colspan="3"><h4><span id="events"></span>Eventos</h4><p><img alt="engagement_filter_with_A___B.jpg" src="https://files.readme.io/ea3063532ff666f6d8a0f90d55c86007d8a54b25017d93ed7bc19e0d727d9193-46335625077777.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Visualizó un anuncio</li><li>Hizo clic en un anuncio</li><li>Instaló la aplicación</li><li>No instaló la aplicación</li><li>Inició la aplicación</li><li>No inició la aplicación</li><li>Desinstaló la aplicación </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Período y frecuencia </p></td></tr><tr><td colspan="3"><h4><span id="in-app-events"></span><span id="inapp-events"></span>Eventos in-app</h4><p><img alt="in-app_event_filter.jpg" src="https://files.readme.io/1bb8a78b3c64ab8e0d01c1e2be63e9bdd00b2be2396335b3a01289b0b0837593-46335625078929.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Realizó el evento [<em>nombre del evento</em>]</li><li>No realizó el evento [<em>nombre del evento]</em> </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><p>Período y frecuencia </p></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Atributo del evento + valor:</p><ul><li>Es</li><li>No es</li><li>Mayor que</li><li>Menor que</li><li><a href="./audiences-guide#contains-does-not-contain-logic">Obtener similares</a></li><li><a href="./audiences-guide#contains-does-not-contain-logic">Ten en cuenta:</a></li></ul></td></tr><tr><td colspan="3"><p><br /><br /><strong><span id="h_01K5EHGKDPWS16HP9Q7KX9JXFY"></span>Notas sobre eventos in-app</strong><br /></p><ul><li>La lista de eventos in-app se actualiza <a href="./about-data-freshness-and-timezone-support#procesamiento-diario" target="_blank">diariamente.</a> </li><li>Si se selecciona <strong>Realizó el evento</strong> y el evento in-app tiene atributos asociados a este, puedes filtrar por valor de atributo de evento in-app. </li><li><p>Los eventos in-app, de forma predeterminada, están limitados a 100 valores únicos por atributo. Por ejemplo, si el evento es "purchase" y el atributo es "content-type", solo puede haber 100 (o menos) tipos de contenido posibles. Sin embargo, los valores numéricos son ilimitados.<br/>Si hay atributos (parámetros) de eventos in-app y valores que no aparecen en la lista, puedes añadirlos manualmente haciendo clic en <strong>Agregar atributo de evento</strong> &gt; <strong>Agregar elemento</strong>.<br/> </p><p><strong><img alt="Add_item.jpg" src="https://files.readme.io/00d62c7edfa556c3ecb50842003fb64ecde848413f1b81fd100f3da7257bc38e-46335625079825.jpg"/></strong></p></li><li>- Todos los elementos de eventos agregados manualmente deben introducirse solo como tipo de cadena (texto). No deben agregarse valores numéricos y no funcionarán correctamente.</li><li>- Cuando se agrega un elemento de evento manualmente, el "Tamaño estimado de la audiencia" puede no reflejarse con precisión. <br/>Si necesitas que aparezcan más de 100 atributos/valores en la lista, también puedes ponerte en contacto con tu CSM o enviar un correo electrónico a hello@appsflyer.com.</li></ul><h4><span id="contains--does-not-contain-logic"></span><strong><span id="contains-does-not-contain-logic"></span>Lógica de contiene / no contiene:</strong></h4><p><strong>Contiene:</strong> Hace coincidir a los usuarios cuyos valores de atributos del evento contienen una palabra o varias palabra(s) específicas. La coincidencia es parcial y no distingue entre mayúsculas y minúsculas. Por ejemplo, la palabra clave "bag" coincide con atributos como "handbag" o "Bag".</p><p><strong>No contiene:</strong> Hace coincidir a los usuarios cuyos valores de atributos del evento no contienen las palabras especificadas. La lógica de coincidencia también es parcial y no distingue entre mayúsculas y minúsculas.</p><p><br /><br /><strong><span id="h_01K5EH9WVTEX56980MCR81ZAHH"></span>Notas sobre la lógica de Contiene</strong><br /></p><ul><li>Longitud mínima de la palabra clave: 2 caracteres.</li><li>Número máximo de entradas permitidas por regla: 1 palabra clave por condición AND.</li><li>No se admiten atributos formados solo por números y caracteres especiales.</li><li>La compatibilidad multilingüe incluye caracteres acentuados y no latinos (p. ej., é, ü o caracteres coreanos).</li><li>Cuando se utilizan los operadores "Contiene" o "No contiene", el tamaño estimado de la audiencia y el tamaño estimado de la carga no están disponibles. </li></ul></td></tr><tr><td colspan="3"><h4><span id="revenue::3358edf4"></span>Ingresos</h4><p><img alt="revenue_filter.jpg" src="https://files.readme.io/e896abde88511e5675074d5e4d995ed810637be8327c7c157ddf65668839fd4a-46335625080209.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Ingresos totales por compras in-app</li><li>Ingresos totales por publicidad</li><li>Ingresos totales </li></ul></td><td colspan="2"><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>Mayor que</li><li>Menor que </li></ul><p><strong>Definiciones:</strong></p><ul><li> <strong>Ingresos totales por compras in-app:</strong> valor total de todos los eventos reportados usando el parámetro <code>af_revenue</code> para un dispositivo/CUID específico</li><li> <strong>Ingresos totales por publicidad:</strong> ingresos totales por publicidad generados por un dispositivo/CUID específico</li><li> <strong>Ingresos totales:</strong> Ingresos totales por compras in-app + Ingresos totales por publicidad</li></ul><p><strong>Notas:</strong></p><ul><li>Para usar los filtros de <strong>Ingresos totales por publicidad</strong> e <strong>Ingresos totales</strong>, la <a href="./roi360-guide-ad-revenue-attribution" target="_blank">Atribución de ingresos por publicidad</a> debe estar implementada en tu cuenta de AppsFlyer.</li><li>Todas las opciones de filtrado de los ingresos se miden en USD.</li></ul></td></tr><tr><td colspan="3"><h4><span id="geo"></span>Geografía</h4><p><img alt="location_filter.jpg" src="https://files.readme.io/62f6144d23ef23070e2d6d8891a420691633a466d1b8d76365b4d82f40c725c6-46335625081361.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Ubicación </li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p><strong>Opciones de ubicación</strong></p><ul><li>País</li><li>Estado</li><li>Ciudad</li></ul></td></tr><tr><td colspan="3"><p><strong>Notas relativas a la ubicación:</strong></p><ul><li>Si seleccionas varios países, no podrás seleccionar estados.</li><li>Si seleccionas varios estados, puedes seleccionar ciudades.</li></ul></td></tr><tr><td colspan="3"><h4><span id="owned-media"></span>Medios propios</h4><p><img alt="doctored_owned_media_image_with_app_specified__final_version_.jpg" src="https://files.readme.io/0d15fa734e11164e6e525e26c66291c52144586c8c35dad77a71e471cbf3326d-46335667621649.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Fuente de medios propia</li><li>Campaña en medios propios</li><li>Conjunto de anuncios en medios propios</li><li>Anuncio en medios propios</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es</li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/></p><p>Valores como:</p><ul><li>Correo electrónico</li><li>SMS</li><li>Web</li><li>Redes sociales (excluyendo la publicidad pagada)</li><li>Códigos QR</li><li>Referencias</li><li>Campañas de medios, conjuntos de anuncios y anuncios específicos</li></ul></td></tr><tr><td colspan="3"><p>Puedes crear audiencias objetivo que consistan en usuarios que fueron atribuidos a fuentes de medios propias específicas. Además, puedes elegir el nivel de granularidad y dirigirte a los usuarios que proceden de una fuente de medios propia, campaña, conjunto de anuncios y/o anuncio individual específicos.</p><p>Utiliza las audiencias que crees para volver a captar a los usuarios con mensajes personalizados en medios propios o de pago, o como listas de exclusión para evitar que vean anuncios irrelevantes o innecesarios al ejecutar campañas de adquisición de usuarios o reengagement.</p></td></tr><tr><td colspan="3"><h4><span id="device"></span>Dispositivo</h4><p><img alt="device_filter.jpg" src="https://files.readme.io/184cd84f83b94c38f53ca5a9ef67a4f2c6ad8f8a78d832f6c7979a2c88f61cb5-46335667623441.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Marca del dispositivo</li><li>Modelo de dispositivo</li><li>Versión de la aplicación</li><li>Versión de SO</li><li>Operador</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Es</li><li>No es </li></ul></td><td> <img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/> Valor seleccionado</td></tr><tr><td colspan="3"><h4><span id="attribution"></span>Atribución</h4><p><img alt="Attribution_filter.jpg" src="https://files.readme.io/c7aee01564562bc7d468d6b2bd59ff3d26a028d19382dfdbc35c3fe700f214e7-46335625087249.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><ul><li>Orgánico</li><li>Reorientación</li></ul></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Falso</li><li>Verdadero</li></ul></td><td> </td></tr><tr><td colspan="3"><h4><a href="./audiences-create-better-audiences-with-user-attribute-data" target="_blank"><span id="user-attributes"></span>Atributos de usuario</a></h4><p><img alt="user_attribute_filter.jpg" src="https://files.readme.io/add34f52509bf733f10364691e32ab88331a1caee4bbc4627fb665ec3826422d-46335625088145.jpg"/></p></td></tr><tr><td><p><img alt="A_.jpg" src="https://files.readme.io/5fbc4d182835a4896c37fc8e1fd06f2844420a2c5a8de00e62d4a145f38c8559-46335625078033.jpg"/></p><p>Nombre de atributo de usuario</p></td><td><p><img alt="B.jpg" src="https://files.readme.io/4b530dbfc66cf23e14e4045804ce9f7e97f63993adbd9a745fbea4c969cac041-46335667616017.jpg"/></p><ul><li>Tipo de cadena<ul><li>Es</li><li>No es</li></ul></li><li>Tipo de número<ul><li>Es</li><li>Es mayor a</li><li>Es inferior a</li></ul></li></ul></td><td><p><img alt="C.jpg" src="https://files.readme.io/9008324dc6fae630fd64a13e0cae65107f966d905c951151b1f908617bd4933c-46335625079441.jpg"/><br/>Para cadena: Selecciona un valor</p><p>Para el número: Introduce un valor</p></td></tr></tbody></table>
 
 </Accordion>
 
@@ -449,6 +477,8 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 * No se puede utilizar una audiencia importada.
 
 </Accordion>
+
+<div id="create-and-manage-partner-connections" />
 
 ## Crear y administrar conexiones de partners
 
@@ -500,6 +530,8 @@ La pestaña **Conexiones** muestra todas las conexiones de tus partners y el est
 
 </Accordion>
 
+<div id="dashboard-and-metrics" />
+
 ## Dashboard y métricas
 
 Esta sección describe las características y las métricas de la campaña que aparecen en el dashboard.
@@ -526,7 +558,11 @@ Esta sección describe las características y las métricas de la campaña que a
 
 <Accordion title="Métricas de campaña">
 
+<div id="metrics-hash" />
+
 #### hash de métricas
+
+<div id="campaign-metrics-basics" />
 
 #### Conceptos básicos de métricas de campaña
 
@@ -547,6 +583,8 @@ La sección **Métricas de campaña** del dashboard de Audiences muestra datos d
 2. Una vez que se ha generado el archivo, se descarga automáticamente.
 
 
+<div id="summary-view" />
+
 #### Resumen
 
 La vista de **métricas de campaña** inicial muestra datos de campaña resumidos para cada audiencia:
@@ -558,6 +596,8 @@ La vista de **métricas de campaña** inicial muestra datos de campaña resumido
 | <span id="campaigns"></span>Campañas | Número total de campañas que utilizaron la audiencia para el targeting durante el período de tiempo seleccionado (las campañas se ejecutan solo con partners admitidos) |
 | <span id="campaign-cost"></span>Costo de la campaña | Costo total de estas campañas durante el plazo seleccionado |
 | <span id="campaign-revenue"></span>Ingresos de la campaña | Ingresos totales atribuidos a estas campañas durante el plazo seleccionado |
+
+<div id="detailed-view" />
 
 #### Vista detallada
 
@@ -579,6 +619,8 @@ Haz clic en el enlace **dashboard general** ![pin_B.png](https://files.readme.io
 | <span id="cost"></span>Costo | Costo de la campaña durante el plazo seleccionado (en total, luego desglosado por partners y campaña compatibles) |
 | <span id="revenue"></span>Ingresos | Ingresos atribuidos a las campañas durante el período de tiempo seleccionado (en total, luego desglosados por partners y campañas compatibles) |
 | <span id="daily-reach"></span>Alcance diario | El número promedio de usuarios únicos por día que vieron anuncios de la campaña durante el período de tiempo seleccionado (según lo informado por el partner) |
+
+<div id="data-sources-and-availability" />
 
 #### Fuentes de datos y disponibilidad
 
@@ -626,6 +668,8 @@ Los datos de métricas de campaña solo están disponibles para:
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Características y limitaciones
 
 Ten en cuenta las siguientes características y limitaciones.
@@ -669,6 +713,8 @@ Ten en cuenta las siguientes características y limitaciones.
 | Reporte S2S | Asegúrate de que los identificadores de usuario (IDFV o IDFA) se envíen en la carga útil de eventos in-app S2S y que el IDFV o IDFA sea consistente con la recopilación del SDK de AppsFlyer. Esto asegurará que no se pierda ningún dato y que los cálculos de la audiencia sean precisos. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

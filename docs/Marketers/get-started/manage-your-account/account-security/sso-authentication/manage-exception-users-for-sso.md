@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Los usuarios con excepciones son usuarios que no tienen que iniciar sesión mediante SSO. SSO sigue estando habilitado para la cuenta, y los administradores pueden dar a usuarios concretos acceso a un método de login alternativo asignado.
 
+<div id="about-exception-users" />
+
 ## **Información sobre los usuarios con excepciones**
 
 Los usuarios con excepciones proporcionan acceso controlado a los usuarios que necesitan un método de login que no sea SSO. Por ejemplo, los administradores pueden usar usuarios con excepciones para acceso de emergencia o para usuarios que no pueden usar el proveedor de identidad de la cuenta.
@@ -28,6 +30,8 @@ Los usuarios con excepciones proporcionan acceso controlado a los usuarios que n
 Los usuarios con excepciones pueden iniciar sesión con SSO o con el método de login alternativo que tengan asignado. Los usuarios que no se añadan como usuarios con excepciones deben iniciar sesión mediante SSO.
 
 Recomendamos añadir al menos un administrador de confianza como usuario con excepciones durante la configuración inicial de SSO. Si la configuración de SSO es incorrecta, el administrador puede iniciar sesión con el método de login alternativo que tenga asignado y actualizar la configuración.
+
+<div id="prerequisites" />
 
 ## **Prerrequisitos**
 

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **At a glance:** Un mecanismo de cuota (limitación de tasa) limita el número de reportes que puedes generar al día, tanto a través de Pull API como de las páginas de exportación de datos.
 
+<div id="rate-limits-for-reports" />
+
 ## Límites de frecuencia para reportes
 
 La cuota limita el número de reportes que puedes generar al día por tipo de reporte. La cuota varía según tu plan de suscripción.
@@ -33,6 +35,8 @@ La cuota limita el número de reportes que puedes generar al día por tipo de re
 * **Ad networks:** Los reportes que generan las ad network no cuentan para la cuota del anunciante.
 * **Día:** Las cuotas se aplican por día natural, a partir de las 00:00 UTC.
 
+<div id="aggregated-and-analytics-reports" />
+
 ### Reportes agregados y análisis
 
 | Herramienta de entrega de datos | Cuota |
@@ -42,6 +46,8 @@ La cuota limita el número de reportes que puedes generar al día por tipo de re
 | API maestra | Ilimitado |
 | API de cohorte | 60 llamadas por minuto por cuenta |
 | Reportes agregados de SKAN | 10 llamadas por minuto por cuenta |
+
+<div id="raw-data" />
 
 ### Datos sin procesar
 
@@ -57,6 +63,8 @@ La cuota limita el número de reportes que puedes generar al día por tipo de re
 
 Para ver ejemplos, consulta las Preguntas frecuentes a continuación.
 
+<div id="pull-api-raw-data-daily-quota" />
+
 #### Cuota diaria de raw data de Pull API
 
 Los reportes de raw data de Pull API tienen las siguientes cuotas diarias:
@@ -66,9 +74,13 @@ Los reportes de raw data de Pull API tienen las siguientes cuotas diarias:
 | Instalaciones | 24 | 120 |
 | Eventos in-app | 12 | 60 |
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Las cuotas se aplican por tipo de reporte, por lo que cada tipo de reporte tiene una cuota independiente.
+
+<div id="ad-network-postback-reports-daily-quota" />
 
 #### El postback de la ad network reporta la cuota diaria
 
@@ -78,6 +90,8 @@ Las ad networks pueden extraer los siguientes tipos de reportes de postback:
 | --- | --- | --- | --- |
 | Postbacks para atribución | <ul><li>Instalaciones</li><li>Conversiones de retargeting</li></ul> | 24 | 120 |
 | Postbacks para eventos in-app | <ul><li>Eventos dentro de la app</li><li>Retargeting de eventos in-app</li></ul> | 12 | 60 |
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 
@@ -89,6 +103,8 @@ Las ad networks pueden extraer los siguientes tipos de reportes de postback:
   R: No. Esto da como resultado un total de 250 reportes, lo que supera la cuota a nivel de cuenta de 120.
 * P: ¿Los reportes de Pull API generados por la agencia cuentan para la cuota del anunciante?  
   R: No. Las agencias y los anunciantes tienen cuotas de Pull API separadas. Es posible que los reportes generados por la agencia cuenten para la cuota del anunciante. La única excepción es cuando una agencia utiliza el token de API del anunciante en lugar del suyo propio, en cuyo caso esas solicitudes se cuentan como solicitudes del anunciante.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

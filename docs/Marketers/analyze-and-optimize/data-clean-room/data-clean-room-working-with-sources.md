@@ -25,6 +25,8 @@ x-zendesk:
 
 > **At a glance:** Configura las fuentes de datos personalizadas que compartes con Data Clean Room (DCR) para emparejarlas con los datos de atribución y crear reportes de DCR.
 
+<div id="introduction" />
+
 ## Introducción
 
 Muchos reportes de DCR están diseñados para emparejar tus **datos de atribución** con los datos de tus **fuentes personalizadas.** Este artículo contiene todo lo que necesitas saber para trabajar con tus fuentes personalizadas, incluyendo cómo:
@@ -49,6 +51,8 @@ Muchos reportes de DCR están diseñados para emparejar tus **datos de atribuci�
 >   * **Buckets de almacenamiento en la nube:** Amazon S3 (AWS) y GCS
 > * [Opcional] <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#crear-conexiones-entrantes">Crea conexiones entrantes</Anchor> en la plataforma AppsFlyer para conectar estos servicios en la nube a DCR.
 >   * Si estas conexiones no se configuraron previamente, se te pedirá que las establezcas durante la creación de la fuente.
+
+<div id="source-requirements" />
 
 ## Requisitos de los datos de las fuentes
 
@@ -105,6 +109,8 @@ Los archivos de fuentes almacenados en Amazon S3 o GCS deben cumplir los siguien
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## Crear una fuente
 
 El proceso de creación de una fuente consiste en **todos los pasos descritos a continuación.** Se separan en pestañas simplemente para facilitar la lectura.
@@ -143,6 +149,8 @@ El proceso de creación de una fuente consiste en **todos los pasos descritos a 
    * Si tienes conexiones existentes pero quieres usar una nueva, haz clic en el botón ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) para abrir el cuadro de diálogo **Nueva conexión**. Sigue <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-working-with-connections#completa-la-conexión">estas instrucciones</Anchor> para crearla.
 2. Continúa con las instrucciones relevantes a continuación, en función de dónde se encuentren los datos de tu fuente.
 
+<div id="source-locations-in-bigquery" />
+
 #### Fuentes ubicadas en BigQuery
 
 **Para terminar de especificar la ubicación de las fuentes de BigQuery:**
@@ -151,6 +159,8 @@ El proceso de creación de una fuente consiste en **todos los pasos descritos a 
 2. Selecciona la tabla en la que se encuentran los datos de la fuente.
 
 Las listas a partir de las que haces estas selecciones contienen los conjuntos de datos y tablas disponibles, respectivamente, en el proyecto de BigQuery que especificaste al crear la conexión.
+
+<div id="source-locations-in-snowflake" />
 
 #### Fuentes ubicadas en Snowflake
 
@@ -161,6 +171,8 @@ Las listas a partir de las que haces estas selecciones contienen los conjuntos d
 3. Selecciona la tabla en la que se encuentran los datos de la fuente.
 
 Las listas a partir de las que haces estas selecciones contienen los recursos compartidos, esquemas y tablas, respectivamente, en la cuenta de Snowflake que especificaste al crear la conexión.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Fuentes ubicadas en buckets de almacenamiento en la nube
 
@@ -208,6 +220,8 @@ Para todas las fuentes que compartas con DCR para su procesamiento, AppsFlyer ne
   * **Dimensión:** Un atributo por el que categorizas a los usuarios de la aplicación (por ejemplo, geolocalización, fecha de instalación, campaña, etc.)
   * **Métrica:** Datos numéricos que has recopilado con respecto a un usuario de la aplicación (algunos ejemplos podrían ser los ingresos, el número de aperturas de la aplicación, el valor de vida útil (LTV), etc.)
     * Un campo de datos identificado como métrica puede contener **solo valores numéricos.**
+
+<div id="loading-source-fields" />
 
 #### Cargar los campos de la fuente
 
@@ -275,6 +289,8 @@ Para definir la estructura de la fuente:
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### Clasificar los campos
 
 Después de cargar los campos, AppsFlyer analiza el archivo y se muestra una lista de todos los campos de datos (columnas) en la lista **Campos disponibles**.
@@ -315,6 +331,8 @@ Después de cargar los campos, AppsFlyer analiza el archivo y se muestra una lis
    La nueva fuente se muestra en la lista de todas las fuentes existentes en la pestaña **Fuentes** de Data Clean Room.
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## Actualización de las fuentes para activar el procesamiento de reportes
 
@@ -373,6 +391,8 @@ Después de cargar los archivos fuente en 2 días (y de crear programáticamente
 ![dcr_file_structure_after_uploads.png](https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png)
 
 </Accordion>
+
+<div id="working-with-existing-sources" />
 
 ## Trabajar con fuentes existentes
 
@@ -441,6 +461,8 @@ Para editar la estructura de la fuente:
 
 </Accordion>
 
+<div id="reference" />
+
 ## Referencia
 
 <div id="manually-creating-a-folder-structure" />
@@ -448,6 +470,8 @@ Para editar la estructura de la fuente:
 <Accordion title="Creación manual de una estructura de carpetas del bucket de almacenamiento (relevante solo si eliges hacerlo)">
 
 En general, es más fácil permitir que AppsFlyer genere automáticamente la estructura de carpetas requerida como parte del proceso de creación de la fuente. Sin embargo, si deseas crear estas carpetas manualmente, puedes hacerlo de la siguiente manera.
+
+<div id="create-a-dcr-key-folder" />
 
 #### Crear una carpeta de claves de DCR
 
@@ -463,6 +487,8 @@ Después de crear la carpeta de clave DCR, tu estructura de bucket/carpetas se v
 
 ![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
 
+<div id="top-level-input-folder" />
+
 #### Carpeta de entrada de nivel superior
 
 Aunque no es obligatorio, la práctica recomendada es crear una carpeta de entrada de nivel superior directamente debajo de la carpeta de claves DCR. Esta carpeta estará dedicada a los archivos que subas a DCR.
@@ -475,6 +501,8 @@ Por lo general, la carpeta de entrada de nivel superior se crea manualmente util
 Después de crear la carpeta de entrada de nivel superior, tu estructura de bucket/carpetas se verá así:
 
 ![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### Carpeta de segundo nivel para cada fuente de datos
 

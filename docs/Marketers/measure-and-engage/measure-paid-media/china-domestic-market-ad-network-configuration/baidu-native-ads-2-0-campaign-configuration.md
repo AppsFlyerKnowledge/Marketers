@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumen:** Baidu Native Ads 2.0 es un partner integrado de ad network de AppsFlyer.
 
+<div id="setting-up-baidu-native-ads-20" />
+
 ## Configurar Baidu Native Ads 2.0
 
 **Requisito previo:** Tener una cuenta con el partner. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -41,10 +43,14 @@ La ventana de configuración de Baidu Native Ads 2.0 incluye 3 pestañas activas
 
 <Accordion title="Pestaña Integración">
 
+<div id="activate-partner" />
+
 ### Activación de socios
 
 En la **primera visita** aquí, deberás alternar a continuación. ACTIVA el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -52,9 +58,13 @@ Baidu Native Ads 2.0 se conecta con AppsFlyer a través de una **akey** única. 
 
 <Image alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 <Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="552px" />
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -82,6 +92,8 @@ En esta pestaña, puedes crear los enlaces de atribución que deseas enviar a Ba
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -103,6 +115,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clics
 
 Este control deslizante te permite establecer el **tiempo máximo entre el clic y la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a Baidu Native Ads 2.0.
@@ -112,6 +126,8 @@ Este control deslizante te permite establecer el **tiempo máximo entre el clic 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
 ![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+
+<div id="attribution-link" />
 
 ### Enlace de atribución
 

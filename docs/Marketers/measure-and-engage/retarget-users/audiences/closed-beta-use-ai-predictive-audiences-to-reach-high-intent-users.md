@@ -29,13 +29,19 @@ x-zendesk:
 
 <Embed title="[Beta cerrada] Utiliza AI Predictive Audiences para llegar a usuarios con alta intención" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LuEJrfARo5g" providerUrl="https://www.youtube.com" />
 
+<div id="about-predictive-audiences" />
+
 ## Sobre Predictive Audiences
 
 Predictive Audiences, parte de <Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiences</Anchor> de AppsFlyer, te ayuda a crear audiencias impulsadas por IA de usuarios con mayor probabilidad de realizar una acción clave. Utilízalo para predecir quién tiene más probabilidades de realizar una compra durante los próximos 7 días, para que puedas enfocar tus campañas en usuarios con alta intención y mejorar la eficiencia de las campañas.
 
 Puedes ajustar el rango de probabilidad para crear una audiencia más reducida de usuarios con mayor intención o una audiencia más amplia con mayor alcance, y luego conectar la audiencia con tus partners para activarla. Una vez creada, la audiencia se actualiza diariamente y se envía de forma automática y continua a los partners conectados.
 
+<div id="create-a-predictive-audience" />
+
 ## Crear una audiencia predictiva
+
+<div id="prerequisites" />
 
 ### Requisitos previos
 
@@ -83,6 +89,8 @@ Puedes seleccionar una configuración predefinida sugerida o arrastrar los marca
 
    El **Tamaño estimado de la audiencia** se actualiza en tiempo real según tus selecciones.
 
+<div id="compare-audiences-optional" />
+
 #### Comparar audiencias (opcional):
 
 Comparar Audiences es una funcionalidad opcional que te permite comparar tu audiencia predictiva con una o más audiencias existentes. Te permite comparar el rendimiento según indicadores clave (KPIs), como el retorno de la inversión publicitaria (ROAS) y la tasa de conversión. Puedes seleccionar cualquier audiencia para comparar; sin embargo, los datos de rendimiento actualmente solo están disponibles para campañas conectadas a Facebook, TikTok, Google o Snap.
@@ -108,6 +116,8 @@ Tu primera audiencia predictiva estará lista dentro de las próximas 24 horas y
 Después de su creación, tu nueva audiencia predictiva aparecerá en la tabla **Audiences**.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

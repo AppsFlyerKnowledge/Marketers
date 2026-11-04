@@ -111,6 +111,8 @@ Ahora que ya has creado la aplicación SAML de Ping Identity, crea grupos de usu
 
 <Accordion title="Concede acceso a tus grupos y activa la aplicación">
 
+<div id="provide-access-to-your-groups" />
+
 ### Concede acceso a tus grupos
 
 1. En el menú de administración de Ping Identity, ve a **Connections** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** y selecciona la aplicación que has creado.  
@@ -118,6 +120,8 @@ Ahora que ya has creado la aplicación SAML de Ping Identity, crea grupos de usu
    ![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
 2. En la sección que se abre a la derecha, selecciona la pestaña **Access** y haz clic en el botón Editar.
 3. Selecciona el grupo o los grupos que has creado y haz clic en **Save**.
+
+<div id="activate-the-app" />
 
 ### Activa la aplicación
 
@@ -135,6 +139,8 @@ Ahora que ya has creado la aplicación SAML de Ping Identity, crea grupos de usu
 Ahora que has configurado la parte del IdP, vuelve a AppsFlyer para <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">completar la configuración</Anchor>. Después, puedes hacer una <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-3-test-the-sso-process">prueba</Anchor> para comprobar que funciona.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza las métricas de actividad en <Anchor target="_blank" href="/marketers/es/docs/my-dashboards">My Dashboards</Anchor> para evaluar rápidamente el rendimiento de la aplicación, detectar tendencias de engagement, analizar ingresos y detectar problemas con antelación, en cualquier rango de fechas, con mayor precisión y flexibilidad.
 
+<div id="note" />
+
 > 📘 **Advertencia**
 >
 > Las métricas de ingresos netos se implementarán gradualmente para los clientes durante julio-agosto de 2026. Si todavía no las ves, no hace falta hacer nada; estarán disponibles para tu cuenta durante este periodo. Consulta <Anchor target="_blank" href="/marketers/es/docs/bulletin-cohort-and-activity-metrics-update-in-my-dashboards">Boletín: Actualización de métricas de cohortes y actividad en My Dashboards</Anchor>.
+
+<div id="about-activity-metrics" />
 
 ## Acerca de las métricas de actividad
 
@@ -37,6 +41,8 @@ Las métricas de actividad en My Dashboards permiten a los usuarios analizar dat
 * Personalizar informes utilizando **desglose diario o mensual** (Usuarios activos).
 
 Nota: En Mis Tableros, el término A**ctividad** ha sido renombrado a **Actual**. Este cambio aclara que estas métricas reflejan acciones reales de los usuarios durante el rango de fechas seleccionado y no están vinculadas a la agregación de LTV. Actual también es el período predeterminado para Sesiones, Ganancia Bruta y Ingresos Totales.
+
+<div id="dashboard-information" />
 
 ## Información del dashboard
 
@@ -56,6 +62,8 @@ Luego puedes agregar una dimensión Agrupar por y seleccionar Filtros.
 
 Puedes encontrar instrucciones detalladas <Anchor target="_blank" href="/marketers/es/docs/my-dashboards#add-metric">aquí</Anchor>
 
+<div id="available-activity-metrics" />
+
 ## Métricas de actividad disponibles
 
 * Todas las métricas además de Usuarios activos, Usuarios activos en los últimos 31 días y DAU/MAU también admiten períodos de cohorte y LTV.
@@ -71,6 +79,8 @@ Puedes encontrar instrucciones detalladas <Anchor target="_blank" href="/markete
 | Primeras visitas | Número de primeras visitas a una aplicación web. Se contabiliza en las filas donde conversion\_name = first\_visit. Disponible solo para aplicaciones web. |
 | Revisitas | Número de visitas recurrentes no orgánicas a una aplicación web. Se contabiliza en las filas donde conversion\_name = revisit. Disponible solo para aplicaciones web. |
 | Adquisición de usuarios | Disponible para atribución multiplataforma o aplicaciones web. En las aplicaciones web, Adquisición de usuarios refleja Primeras visitas, a menos que se configure un evento de adquisición de usuarios. En las aplicaciones móviles, Adquisición de usuarios equivale a instalaciones. Al ver varias aplicaciones juntas, Adquisición de usuarios = instalaciones + primeras visitas (o el evento web personalizado configurado por el cliente). |
+
+<div id="available-in-app-metrics" />
 
 ## Métricas disponibles en la aplicación
 
@@ -105,6 +115,8 @@ Cómo se rellena el valor:
 * Si ninguna de las dos opciones proporciona ingresos netos, la métrica muestra N/A.
 
 Consulta <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue">Acerca de los ingresos de tienda de ROI360</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/in-app-events-event-structure">Eventos in-app: estructura del evento</Anchor>.
+
+<div id="supported-filter-and-group-by-dimensions" />
 
 ## Dimensiones de filtro y agrupación soportadas
 
@@ -141,6 +153,8 @@ Puede agrupar y filtrar métricas de actividad usando:
   * Mes
   * Fuente de medios
   * Agencia
+
+<div id="specifications-and-limitations" />
 
 ## Especificaciones y limitaciones
 

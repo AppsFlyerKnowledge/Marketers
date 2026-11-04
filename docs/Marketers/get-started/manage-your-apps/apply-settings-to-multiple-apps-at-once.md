@@ -28,13 +28,19 @@ x-zendesk:
 ---
 > **At a glance:** Aplica el mismo cambio de configuración a varias aplicaciones a la vez, en lugar de repetirlo para cada aplicación por separado.
 
+<div id="about-bulk-app-settings" />
+
 ## Acerca de la configuración masiva de aplicaciones
 
 Ahora puedes aplicar los mismos cambios de configuración a varias aplicaciones a la vez usando la configuración masiva de aplicaciones en la página Configuración de la aplicación. Así puedes hacer un cambio una sola vez y aplicarlo a otras aplicaciones aptas en una sola operación.
 
 Para acceder a Configuración de la aplicación, en el menú lateral, selecciona **Configuración** > **Configuración de la aplicación**. O bien, en **Mis aplicaciones**, selecciona una aplicación y abre su Configuración de la aplicación.
 
+<div id="apply-a-setting-to-multiple-apps" />
+
 ## Aplicar una configuración a varias aplicaciones
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -63,9 +69,13 @@ Para acceder a Configuración de la aplicación, en el menú lateral, selecciona
    <Image alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
 8. Haz clic en **Confirmar & Guardar**. Esto guarda la aplicación desde la que empezaste junto con todas las aplicaciones adicionales del lote, en una sola operación.
 
+<div id="note-1" />
+
 > 📘 **Nota:**
 >
 > En Aggregated Advanced Privacy, siempre verás un paso de confirmación antes de que el cambio se aplique. En la atribución de re-engagement, verás este paso de confirmación solo cuando apliques el cambio de forma masiva.
+
+<div id="important" />
 
 > 🚧 **Importante**
 >
@@ -74,6 +84,8 @@ Para acceder a Configuración de la aplicación, en el menú lateral, selecciona
 > 1. Se actualizan correctamente todas las aplicaciones.
 > 2. Se produce un error y no se actualiza ninguna aplicación.
 >    1. Si se produce un error al guardar, puedes volver a intentarlo.
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 
@@ -84,6 +96,8 @@ Para acceder a Configuración de la aplicación, en el menú lateral, selecciona
 | <span id="not-supported"></span>No es compatible | Autenticación del SDK (clave de desarrollador), país de la tienda de aplicaciones, cambio del nombre de la aplicación, carga del certificado de desinstalación de iOS, ID del proyecto de Firebase y configuración de puestos de agencia y partner. |
 | <span id="why-an-app-might-be-grayed-out"></span>Por qué una aplicación puede aparecer atenuada | Una aplicación atenuada no cumple los requisitos para este cambio en este intento concreto. Se mostrará uno de los siguientes motivos:<ul><li>**Incompatibilidad de plataforma:** la configuración no existe en la plataforma de esa aplicación.</li><li>**Ya configurado:** la aplicación ya tiene el valor que estás aplicando.</li><li>**Falta un requisito previo:** por ejemplo, el modelado probabilístico requiere que fingerprinting ya esté activado.</li><li>**Periodo de espera:** la zona horaria no se puede volver a cambiar en los dos días posteriores a un cambio anterior. La descripción emergente muestra la fecha en la que vuelve a estar disponible.</li><li>**Sin permisos:** no tienes acceso de gestión a la configuración de la app.</li></ul> |
 | <span id="limits"></span>Límites | No hay ningún límite práctico en el número de aplicaciones que puedes incluir en un cambio masivo. |
+
+<div id="see-also" />
 
 > 📄 **Consulte también**
 >

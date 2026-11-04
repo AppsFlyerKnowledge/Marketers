@@ -25,6 +25,8 @@ x-zendesk:
 
 Para configurar tus campañas con Unity Ads, sigue los pasos a continuación.
 
+<div id="setting-up-unity-ads" />
+
 ## Configuración de Unity Ads
 
 **Requisito previo:** Una cuenta con el Partners. Si no tienes una cuenta, contacta con el partner para abrir una antes de configurar la integración.
@@ -43,10 +45,14 @@ Para configurar tus campañas con Unity Ads, sigue los pasos a continuación.
 
 <Accordion title="Pestaña Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la primera visita, tendrás que activar el selector **Activar partner** para configurar la integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -70,6 +76,8 @@ Activa esta opción para atribuir las instalaciones por impresiones de Unity Ads
 
 ![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 ![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
@@ -79,15 +87,21 @@ Envía postbacks automáticos a Unity Ads después de las instalaciones y re-eng
 * **Solo este partner**: para eventos que provienen solo de usuarios atribuidos a Unity Ads.
 * **Todas las fuentes de medios, incluidas las orgánicas**: para que toda tu base de usuarios esté disponible para ser reportada a Unity Ads.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Como red que rastrea todas las instalaciones, Unity Ads prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde cualquier fuente, y recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas** para enviar todos los postbacks de instalaciones a Unity Ads.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
 Asigna eventos de AppsFlyer con el partner a través de postbacks. Si el envío de postbacks está activado, esto incluye los eventos in-app rechazados (eventos bloqueados por Protect360 o eventos que no cumplen con las reglas de validación del targeting).
 
 [![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+
+<div id="to-configure-in-app-event-postbacks" />
 
 #### Para configurar postbacks de eventos in-app
 
@@ -104,9 +118,13 @@ Asigna eventos de AppsFlyer con el partner a través de postbacks. Si el envío 
 | **Para usuarios de** | Selecciona la opción de envío para el evento:<ul><li>**Solo este partner**: envía postbacks solo cuando este evento se atribuya a este partner.</li><li>**Todas las fuentes de medios, incluidas las orgánicas**: envía postbacks para eventos atribuidos a cualquier partner, así como para eventos orgánicos. Según Unity Ads, se recomienda esta opción.</li></ul> |
 | **Incluyendo** | <ul><li>**Sin datos (predeterminado)**: envía solo el evento en sí sin el valor del evento.</li><li>**Valores e ingresos**: envía todos los parámetros del evento, **incluido** el valor de ingresos (si existe en el evento). Según Unity Ads, se recomienda esta opción.</li><li>**Valores sin ingresos**: envía todos los parámetros **excluyendo** el valor de ingresos.</li></ul> |
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Selecciona el evento de SDK/servidor a servidor correcto y el identificador de evento del partner correspondiente. No dupliques eventos (no transmitas los mismos eventos bajo diferentes nombres de eventos de SDK/servidor a servidor).
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >

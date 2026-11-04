@@ -32,6 +32,8 @@ x-zendesk:
   * Tu dispositivo no debe tener la actualización Windows 10 Anniversary Update.
   * Tu dispositivo no debe haber tenido nunca la aplicación (el referrer de Windows es vitalicio; incluso si estás en la lista de permitidos o has esperado más de 90 días, no recibirás atribución del referrer).
 
+<div id="test-sdk-integration" />
+
 ## Probar la integración del SDK
 
 1. Es necesario probar la integración del SDK en un dispositivo de prueba registrado. Para registrar tu dispositivo de prueba, sigue los pasos <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">aquí</Anchor>.
@@ -45,6 +47,8 @@ x-zendesk:
 
 [![](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)
 
+<div id="testing-non-organic-install" />
+
 ## Prueba de instalación no orgánica
 
 1. Desde la lista desplegable, selecciona uno de tus dispositivos registrados
@@ -52,11 +56,15 @@ x-zendesk:
 3. Escanea el código QR generado con tu dispositivo de prueba registrado y sigue las instrucciones que aparecen en el dispositivo.
 4. Espera hasta que la instalación no orgánica se registre en la página de Prueba de integración, lo que indica que la prueba se realizó correctamente. Esto puede tardar hasta dos minutos. Si para entonces la aplicación no ha registrado una instalación no orgánica, consulta la guía de resolución de problemas que aparece en la página de Prueba de integración.
 
+<div id="testing-in-app-events" />
+
 ## Probando eventos in-app
 
 1. Desde el menú desplegable, selecciona uno de tus dispositivos de prueba registrados y haz clic en Siguiente.
 2. Abre tu aplicación y comienza a generar eventos in-app.
 3. Verás un registro de estos eventos a medida que se van registrando en tiempo real.
+
+<div id="testing-deep-linking" />
 
 ## Pruebas de Deep Linking
 

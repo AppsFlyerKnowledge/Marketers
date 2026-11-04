@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
 
+<div id="setting-up-vungle" />
+
 ## Configuración de Vungle
 
 **Requisito previo:** Una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -39,6 +41,8 @@ x-zendesk:
     **Nota:** El interruptor **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
 5. Completa la configuración utilizando las pestañas pertinentes, como se describe a continuación. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > * El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña de Integración es **obligatorio** para todos los partners.
@@ -50,9 +54,13 @@ x-zendesk:
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 Conéctate a Vungle activando y configurando los parámetros en la pestaña de integración. Vungle debe proporcionar su ID de red único, ***app\_id***; esto es necesario para conectarse con AppsFlyer.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -127,6 +135,8 @@ Puedes darle a Vungle permiso para ver información o configurar cambios en la i
 
 **Nota**: Es posible darle permisos a Vungle aunque no haya una integración activa con ellos.
 
+<div id="ad-network-permissions" />
+
 ### Permisos de ad network
 
 **Para habilitar los permisos de ad network:**
@@ -145,6 +155,8 @@ Puedes darle a Vungle permiso para ver información o configurar cambios en la i
 | Permitir el acceso a tu panel de control de Protect360 | [Si está habilitado] Datos de Protect360 del partner |
 
 Saber más sobre cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos de ad network</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Permisos de la agencia
 

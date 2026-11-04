@@ -148,6 +148,8 @@ La página de exportación de datos en bruto proporciona informes con las caract
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Procedimientos
 
 <div id="create-a-default-report" />
@@ -194,6 +196,8 @@ Puede crear un informe personalizado configurando sus filtros y campos.
    * **Máximo de filas por archivo:** [Opcional] Establezca la cantidad máxima de filas que puede incluir un archivo. Elija entre 100, 200K, 500K o 1 millón de filas.
    * **Fuente de medios:** [Opcional] Solo se incluirán los eventos atribuidos a las fuentes de medios seleccionadas en el informe. Puede añadir una fuente de medios a la lista haciendo clic en **Agregar elemento**.
 
+     <div id="note" />
+
      > 📘 **Nota**
      >
      > Los PID web de las redes de autorreporte (SRN), como `metaweb_int`, `googleds_int` o `tiktokweb_int`, no aparecen automáticamente en la lista desplegable de fuente de medios. Para filtrar los postbacks web de SRN, haz clic en **Add item** e introduce manualmente el PID de la fuente de medios web.
@@ -238,6 +242,8 @@ Puede crear un informe personalizado configurando sus filtros y campos.
    * Durante la generación del informe, puede seguir trabajando, crear informes adicionales o navegar a otras páginas.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

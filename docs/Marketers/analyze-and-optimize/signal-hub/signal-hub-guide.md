@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="Guía de Signal Hub" typeOfEmbed="youtube" url="https://www.youtube.com/embed/B71XCosnTXo" providerUrl="https://www.youtube.com" />
 
+<div id="about-signal-hub" />
+
 ## Sobre el Signal Hub
 
 El Signal Hub de AppsFlyer es una solución avanzada y segura para la privacidad que empodera a las marcas para acceder a datos de first-party de alto valor de marcas líderes, incluidas las principales empresas financieras, para desbloquear información sobre los usuarios que va más allá de sus propios datos. Al enriquecer las audiencias con señales de compra del mundo real, los marketers pueden identificar a los usuarios de alto valor antes, personalizar campañas basadas en comportamientos de gasto probados y activar audiencias al instante en las principales plataformas de medios, como Meta, Google y TikTok.
@@ -44,6 +46,8 @@ Usando la infraestructura de Clean Room de AppsFlyer e integraciones con proveed
   Activa de forma segura en un entorno de clean room utilizando identificadores pseudonimizados con hash. No se trasladan, comparten ni exportan nunca los raw data.
 * **Obtén claridad de embudo completo**  
   Mide el impacto de los segmentos enriquecidos en instalaciones, compras, retención, medición a nivel de SKU e ingresos mediante la medición omnicanal de embudo completo de AppsFlyer.
+
+<div id="get-started-using-signal-hub" />
 
 ## Comienza a usar el Signal Hub
 
@@ -77,6 +81,8 @@ Después de ejecutar tus campañas, consulta los resultados en tus dashboard de 
 
 </Accordion>
 
+<div id="use-cases" />
+
 ## Casos de uso
 
 Los casos de uso para Signal Hub son casi infinitos. Aquí hay algunos ejemplos específicos de la industria.
@@ -98,6 +104,8 @@ Una cadena hotelera planea impulsar las reservas para una promoción del Día de
 Una marca de electrónica de consumo quiere promocionar nuevas Smart TVs. Al aprovechar los datos de plataformas de streaming (como la propiedad de dispositivos, compras de suscripción y engagement con aplicaciones de entretenimiento), pueden identificar hogares premium y ejecutar campañas altamente dirigidas. Esto mejora las conversiones para artículos de alto valor.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

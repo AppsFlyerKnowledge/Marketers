@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza la página de **Configuración de la cuenta** para gestionar tu perfil personal, la configuración a nivel de cuenta y las capacidades de IA desde un solo lugar.
 
+<div id="about-account-settings" />
+
 ## **Acerca de la configuración de la cuenta**
 
 La página de **Configuración de la cuenta** tiene tres pestañas:
@@ -29,11 +31,15 @@ La página de **Configuración de la cuenta** tiene tres pestañas:
 * [**Cuenta**](/docs/account-settings#cuenta): Configuraciones a nivel de cuenta
 * [**Capacidades**](/docs/account-settings#capacidades-de-ia): Controles para productos impulsados por IA y acceso
 
+<div id="profile" />
+
 ## **Perfil**
 
 La sección de **Perfil** muestra los detalles de tu cuenta personal, como el nombre de la cuenta, correo electrónico del propietario, sitio web y el ID de la cuenta.
 
 Utiliza esta sección para revisar la información de tu cuenta y actualizar los campos de perfil admitidos.
+
+<div id="account" />
 
 ## **Cuenta**
 
@@ -47,9 +53,13 @@ Cuando se habilita la opción de **crear una Unique Dev Key por aplicación para
 
 Nota: Esta configuración solo se aplica a las aplicaciones creadas después de que se active la opción. No cambia las Dev Keys de las aplicaciones existentes.
 
+<div id="ai-capabilities" />
+
 ## **Capacidades de IA**
 
 La sección de **capacidades de IA** permite a los administradores gestionar qué productos impulsados por IA están disponibles para la cuenta.
+
+<div id="ai-assistant" />
 
 ### <Anchor target="_blank" href="/marketers/es/docs/ai-assistant">Asistente de IA</Anchor>
 
@@ -72,6 +82,8 @@ Deshabilitando el MCP:
 
 **Importante:** Si se está utilizando un token MCP, primero debes eliminarlo en **Centro de Seguridad > Tokens de AppsFlyer**.
 
+<div id="agent-hub" />
+
 ### <Anchor target="_blank" href="/marketers/es/docs/beta-agent-hub-overview">Hub de agentes</Anchor>
 
 El Agent Hub es la plataforma centralizada de AppsFlyer para gestionar agentes impulsados por IA que ofrecen insights de marketing procesables de forma proactiva directamente en tu flujo de trabajo. Estos agentes analizan constantemente tus datos para ofrecer resultados valiosos y recomendar pasos procesables, todo ello dentro del entorno colaborativo de tu equipo.
@@ -84,6 +96,8 @@ Deshabilitar Agent Hub:
 * Todos los agentes existentes se eliminarán de forma permanente y no podrán restaurarse.
 * Todas las ejecuciones activas de agentes se detendrán.
 * Si Agent Hub se vuelve a habilitar más adelante, los usuarios podrán acceder a él nuevamente, pero deberán crear agentes desde cero.
+
+<div id="permissions" />
 
 ## **Permisos**
 

@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **At a glance:** Mide la tasa de desinstalación de tu aplicación y determina qué fuentes (medios de comunicación, campañas, creatividades publicitarias y regiones) atraen a usuarios de calidad.
 
+<div id="overview" />
+
 ## Visión general
 
 Para comprender el valor de los usuarios de tu aplicación, es esencial analizar tanto las tasas de instalación como las de desinstalación. La métrica de desinstalación te permite medir el rendimiento de tu aplicación y entender cuándo y por qué los usuarios deciden abandonarla.
+
+<div id="how-does-it-work" />
 
 ### ¿Cómo funciona?
 
@@ -39,6 +43,8 @@ Para comprender el valor de los usuarios de tu aplicación, es esencial analizar
 > **Nota:**
 >
 > Las métricas de desinstalación están disponibles en el dashboard unificado y en la vista de adquisición de usuarios.
+
+<div id="how-to-use-uninstall-data" />
 
 ## Cómo utilizar los datos de desinstalación
 
@@ -111,6 +117,8 @@ Los métodos para excluir usuarios incluyen los siguientes:
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## Configuración de la medición de desinstalación
 
 El proceso para configurar la métrica de desinstalación requiere la colaboración entre el especialista en marketing y el desarrollador. Las instrucciones de implementación dependen del sistema operativo en el que funcione tu aplicación.
@@ -143,9 +151,13 @@ El flujo para el especialista en marketing y el desarrollador es el siguiente:
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## Procedimientos de implementación
 
 La implementación requiere que tu desarrollador móvil integre un mecanismo que responda a las notificaciones push dentro de tu aplicación. Las instrucciones de implementación varían según el sistema operativo.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Conectar Firebase Cloud Messaging a AppsFlyer (Android)
 
@@ -224,6 +236,8 @@ La medición de desinstalación con Firebase Messaging es compatible con Android
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### Configura la medición de desinstalación en AppsFlyer.
 
 <Tabs>
@@ -272,6 +286,8 @@ Para configurar la medición de desinstalación en AppsFlyer:
 </Tab>
 </Tabs>
 
+<div id="testing-uninstall-measurement" />
+
 ## Prueba de medición de desinstalación
 
 Una vez que hayas completado los procedimientos de implementación, puedes instalar y luego desinstalar la aplicación para verificar que las desinstalaciones se registran correctamente. Las desinstalaciones y las tasas de desinstalación se muestran en el panel de descripción general.
@@ -313,6 +329,8 @@ Tenga presente lo siguiente al probar aplicaciones iOS:
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## Mapeo del evento de desinstalación
 
  ![Desinstalación_evento_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png) 
@@ -324,10 +342,14 @@ Considere lo siguiente:
 * AppsFlyer solo puede enviar el postback si el evento realmente ocurre y es registrado por AppsFlyer.
 * Si no ves desinstalaciones en la página de descripción general del panel o en el informe de datos sin procesar, significa que no se enviaron postbacks de desinstalación al socio, incluso si el evento **af\_uninstall** fue asignado.
 
+<div id="limitations" />
+
 #### Limitaciones
 
 * Los eventos de desinstalación no se incluyen en los informes de postback de eventos dentro de la aplicación.
 * El evento **af\_uninstall** es compatible con todos los socios. Si deseas asignarlo a un socio, pero el evento no está disponible en la pestaña de Integración del socio, contacta con tu CSM o escribe a [hello@appsflyer.com](mailto:hello@appsflyer.com).
+
+<div id="turning-off-uninstall-measurement" />
 
 ## Desactivar medición de desinstalación
 
@@ -346,6 +368,8 @@ Si se proporciona y valida un certificado P12, la medición de desinstalación d
 </Tabs>
 
 **Nota:** Para que se informe una desinstalación, la opción **Habilitar medición de desinstalación** debe estar activada al momento de instalar la aplicación. Las instalaciones que ocurren cuando **Habilitar medición de desinstalación** está desactivada no se informan.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **Para desactivar la medición de desinstalaciones**:
 

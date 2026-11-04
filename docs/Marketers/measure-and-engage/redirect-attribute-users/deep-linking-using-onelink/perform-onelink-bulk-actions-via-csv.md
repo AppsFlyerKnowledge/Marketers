@@ -24,6 +24,8 @@ x-zendesk:
 
 Los enlaces en masa te permiten crear y ver enlaces creados de forma masiva. Estos enlaces en masa se agrupan en un conveniente formato de colección que te permite realizar acciones en toda la colección, como agregar nuevos enlaces o descargarlos.
 
+<div id="getting-started" />
+
 ## Primeros pasos
 
 1. En AppsFlyer, ve a **Engage** > **Enlaces masivos**.
@@ -31,6 +33,8 @@ Los enlaces en masa te permiten crear y ver enlaces creados de forma masiva. Est
    1. **Comenzar**: envía para crear tu primera colección.
    2. **Crear una plantilla de OneLink**: se necesita una plantilla de OneLink para crear una colección. Consulta <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template">plantillas de OneLink</Anchor>.
    3. **Actualizar**: los enlaces en masa no están disponibles con tu paquete actual. Contacta a tu CSM o escríbenos a [hello@appsflyer.com](mailto:hello@appsflyer.com) sobre la actualización de tu paquete.
+
+<div id="creating-your-first-collection" />
 
 ## Crear tu primera colección
 
@@ -43,6 +47,8 @@ Los enlaces en masa te permiten crear y ver enlaces creados de forma masiva. Est
    Consulta [Formato de subida](/docs/perform-onelink-bulk-actions-via-csv#upload-format) para asegurarte de que tu CSV es compatible y se sube correctamente. Una vez que se sube el archivo CSV, se valida. Si hay filas no válidas, un reporte de validez CSV estará disponible para descargar para ayudarte a reparar tu archivo. Sigue las instrucciones de la interfaz de usuario y sube un archivo corregido.
 6. Haz clic en **Crear colección.**
 
+<div id="managing-your-bulk-links-with-collections" />
+
 ## Gestionar tus enlaces en masa con colecciones
 
 Los enlaces en masa se gestionan en colecciones.
@@ -53,6 +59,8 @@ Los enlaces en masa se gestionan en colecciones.
 * La sección **Colecciones** te permite crear una nueva colección y realizar otras acciones a tus colecciones de enlaces actuales.
 * Si hay más de siete colecciones, puedes buscar y filtrar tu lista de colecciones.
 * Máximo de 2000 enlaces por colección.
+
+<div id="other-actions" />
 
 ## Otras acciones
 
@@ -86,6 +94,8 @@ Para descargar una colección:
 3. Selecciona el dominio para la URL corta resultante.
 4. Haz clic en **Descargar**.
 
+<div id="important" />
+
 > 🚧 **¡Importante!,**
 >
 > AppsFlyer recomienda usar dominios de marca, ya que pueden mejorar el rendimiento de la campaña al impulsar la confianza y promover el conocimiento de la marca. <Anchor target="_blank" href="/marketers/es/docs/brand-onelink-with-your-domain">Aprende más aquí.</Anchor>
@@ -106,6 +116,8 @@ Puedes crear imágenes de QR code para toda la colección.
    * **Formato del nombre de archivo de QR code:** Selecciona el parámetro cuyos valores se usarán como prefijo de los nombres de archivo de las imágenes de QR code. Asegúrate de que los valores de este parámetro aporten un contexto significativo a los nombres de archivo para ayudarte a identificar el propósito de cada imagen QR.
 4. Haz clic en **Generar.** Puedes supervisar el proceso de generación de archivos en el panel **Descargar imágenes de QR code**.
 5. Para descargar el archivo ZIP, haz clic en el icono de descarga <Image alt="download-bulk.png" src="https://files.readme.io/8436aed2633bbed2f6cb65c00690711766c153c97042b5b157c199333e8723c2-21656949409041.png" width="18px" />.
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -151,6 +163,8 @@ La opción de editar enlaces está disponible cuando:
    * Una vez que se sube el archivo CSV, se valida.
    * Si hay filas no válidas, un reporte de validez CSV está disponible para descargar para ayudarte a reparar tu archivo. Sigue las instrucciones de la interfaz de usuario y sube un archivo corregido.
 6. Haz clic en **Actualizar enlaces**.
+
+<div id="notes" />
 
 > 📘 **Notas**
 >
@@ -206,11 +220,15 @@ Selecciona una plantilla de OneLink  Nota: Todos los enlaces de la colección s
 1. Las agencias necesitan agregar manualmente el parámetro `af_prt` a sus enlaces.
 2. Si una colección está vacía y tienes permisos de acceso a la aplicación para al menos una de las aplicaciones móviles de la plantilla de OneLink relacionada con la colección, se puede eliminar haciendo clic en las **opciones del menú -> Eliminar colección**.
 
+<div id="important-notes" />
+
 > 📘 **Notas importantes**
 >
 > * Asegúrate de que quieres eliminar la colección. Eliminar una colección con enlaces activos hará que los enlaces dejen de funcionar, lo que significa que los usuarios que hagan clic en ellos no se atribuirán ni se redirigirán correctamente. **Eliminar una colección es irreversible.**
 > * Si quieres conservar un registro de los enlaces que has eliminado, puedes descargar la colección antes de eliminarla. **Para descargarla como archivo CSV:**
 >   Haz clic en **Descargar la colección** en el mensaje de confirmación.
+
+<div id="empty-collections" />
 
 ### Eliminar colecciones vacías
 
@@ -223,7 +241,11 @@ Máximo de 35 columnas de parámetros.
 
 </Accordion>
 
+<div id="general-information" />
+
 ## Información general
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -254,6 +276,8 @@ Para asegurarte de que tu CSV se suba sin errores, comprueba que tu archivo cump
 * Incluso si se establece un esquema URI en la plantilla de OneLink, para los enlaces creados en masa, el parámetro af\_dp con el esquema URI debe especificarse en tu archivo CSV.
 
 </Accordion>
+
+<div id="faq" />
 
 ## PREGUNTAS FRECUENTES
 

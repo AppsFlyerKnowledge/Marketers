@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En resumen:** Crea una vista de datos personalizada a partir de una fuente de datos utilizando funciones de transformación y agregación y una herramienta de filtrado de datos. Puedes obtener una vista previa de una muestra de los datos modificados, que refleja los cambios a medida que avanzas.
 
+<div id="about-data-views" />
+
 ## Configurar los detalles generales de la vista de datos
 
 Data View Builder te permite crear una versión personalizada de tu fuente de datos y hacerla relevante para tu audiencia prevista sin modificar el conjunto de datos original. Te permiten realizar funciones que modifican, refinan y resumen los datos para que puedas compartir solo lo relevante, manteniendo los datos que compartes claros y enfocados, y manteniendo todos los demás datos privados y seguros. Diseñado para usuarios no técnicos, no se requieren conocimientos de SQL ni ser experto o ingeniero de datos.
+
+<div id="data-view-functions" />
 
 ### Funciones de vista de datos
 
@@ -35,9 +39,13 @@ La herramienta Data View Builder incluye las siguientes funciones:
   * **Agregación:** Combinación de múltiples registros de datos para producir resúmenes o grupos mediante funciones como Suma, Promedio, Recuento, Mínimo y Máximo.
 * **Selecciona campos** para incluir solo las columnas que necesitas en tu vista de datos y mantener un resultado limpio y con un propósito claro.
 
+<div id="the-data-view-builder" />
+
 ## Data View Builder
 
 **<Image alt="Nueva vista de datos - Predeterminado.png" src="https://files.readme.io/b34b61b2fbc092884270ce0daab9a86deae6b423775bcc648ee0eba6f319e8e5-41945719130897.png" width="1598px" />**
+
+<div id="create-a-data-view" />
 
 ## Configurar vista de datos
 
@@ -61,6 +69,8 @@ Una <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">cuenta</An
 4. Configura los siguientes campos:
    * **Nombre de la vista de datos:** Ingresa un nombre para la vista de datos. Este puede ser cualquier nombre único que te ayude a identificarlo. Consulta los [requisitos y pautas de nomenclatura](#requisitos-y-directrices-sobre-nomenclatura) a continuación.
    * **Descripción:** Proporciona una descripción. Esto aparece como un consejo al pasar el cursor sobre el nombre de la vista de datos en la pestaña **Fuentes**. Se recomienda destacar los objetivos principales y las manipulaciones de datos realizadas.
+
+<div id="naming-requirements-and-guidelines" />
 
 #### Requisitos y directrices sobre nomenclatura
 
@@ -114,6 +124,8 @@ Los campos calculados te permiten usar funciones para añadir campos nuevos, cam
 4. Para los campos de **agregación** :  La sección **Agrupar por** se abrirá automáticamente y podrás seleccionar el campo que define cómo se agruparán los datos agregados.
 5. [Opcional] Haz clic en **+ Campo nuevo** para agregar más campos de **transformación** o **agregación**. Puedes agregar tantas como sea necesario.
 
+<div id="group-by" />
+
 #### **Agrupar por**
 
 Agrupa tus datos en categorías significativas al aplicar una agregación. Cuando añades una función de agregación, la sección Agrupar por se abre automáticamente y te permite seleccionar el campo(s) que determinan cómo se agrupan los datos. Por ejemplo, puedes agrupar los resultados por país, ID de usuario o línea de producto para calcular totales o recuentos de cada grupo.
@@ -130,9 +142,13 @@ Una vez creado, el nuevo campo:
 * Incluido en la lista de campos disponibles para usar en todas las funciones y filtros.
 * Incluido en la lista de campos en la sección [Seleccionar campos](#select-fields).
 
+<div id="zd-list-of-functions-and-use-case-examples" />
+
 <div id="list-of-functions-and-use-case-examples" />
 
 #### Lista de funciones y ejemplos de casos de uso
+
+<div id="transformation-functions" />
 
 #### **Funciones de transformación**
 
@@ -142,9 +158,13 @@ Una vez creado, el nuevo campo:
 * **LEAST:** Devuelve el menor de dos valores
 * **GREATEST:** Devuelve el mayor de dos valores
 
+<div id="example-transformation" />
+
 #### **Ejemplo: Transformación**
 
 Quieres indicar los productos comprados al colaborador mientras enmascaras las compras de otras marcas con las que trabajas.
+
+<div id="aggregate-functions" />
 
 #### **Funciones agregadas**
 
@@ -154,9 +174,13 @@ Quieres indicar los productos comprados al colaborador mientras enmascaras las c
 * **MIN:** Devuelve los valores mínimos de dos números
 * **MAX:** Devuelve los valores máximos de dos números
 
+<div id="example-aggregation" />
+
 #### **Ejemplo: Agregación**
 
 Quieres contar la cantidad total de compras por usuario y sumar el precio total que pagaron.
+
+<div id="example-aggregation-with-a-condition" />
 
 #### Ejemplo: Agregación con una condición
 
@@ -239,6 +263,8 @@ Puedes <Anchor target="_blank" href="You%20can%20share%20(associate)%20your%20da
 
 </Accordion>
 
+<div id="use-cases" />
+
 ## CASOS DE USO
 
 En esta sección se describen algunos casos de uso habituales de las vistas de datos.
@@ -289,6 +315,8 @@ Los conjuntos de datos transaccionales pueden contener varios registros por usua
 <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">Descubre cómo crear audiencias</Anchor>
 
 </Accordion>
+
+<div id="manage-data-views" />
 
 ## Guardar vista de datos
 

@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En resumen:** Descubre cómo se cuentan los usuarios únicos y cómo se utilizan en las métricas de los paneles de control y reportes de AppsFlyer.
 
+<div id="about-unique-users" />
+
 ## Acerca de los usuarios únicos
 
 Un usuario único es un término que se refiere a un dispositivo atribuido cuya presencia se cuenta solo una vez, independientemente de cuántas acciones realice un usuario en el dispositivo.
@@ -34,6 +36,8 @@ Es un cálculo que se utiliza en una amplia variedad de métricas de marketing, 
 * Y muchos más.
 
 El cálculo de usuarios únicos se basa en el ID del dispositivo (como el IDFA o GAID). Si no hay ningún ID de dispositivo disponible (como para iOS SKAN), se utiliza el ID de AppsFlyer en su lugar. Esto garantiza que un usuario se cuente una sola vez, ya que el ID del dispositivo o el ID de AppsFlyer es el mismo para todas las acciones, sin importar cuántas sesiones o acciones realice.
+
+<div id="use-cases" />
 
 ## Casos de uso
 

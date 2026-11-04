@@ -26,9 +26,13 @@ x-zendesk:
 
 **Las versiones antiguas del SDK para iOS y Android dejarán de ser compatibles con un ciclo fijo de seis meses.** Este ciclo está diseñado para proporcionar aviso previo, lo que ayuda a los equipos a planificar con anticipación y mantener la funcionalidad completa de la aplicación sin interrupciones. La actualización a la última versión del SDK garantiza el acceso a las funciones más recientes, una estabilidad mejorada y soporte continuo.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > Para garantizar una transición fluida, se anima a los desarrolladores de aplicaciones a actualizar a la última versión del SDK antes de la fecha de finalización del soporte.
+
+<div id="end-of-support-vs-deprecated" />
 
 ## Fin del soporte vs Obsoleto
 
@@ -36,6 +40,8 @@ AppsFlyer distingue entre las versiones del SDK **obsoletas** y las de **fin del
 
 * **Versiones obsoletas:** Versiones del SDK que ya no se recomiendan debido a problemas conocidos, como errores críticos. Estas versiones aún pueden enviar datos a AppsFlyer, pero se desaconseja su uso continuo y se recomienda encarecidamente actualizar a una versión compatible. Se recomienda encarecidamente actualizar a una versión compatible.
 * **Versiones de fin del soporte:** Versiones del SDK para las que la medición está completamente detenida en todas las plataformas. Tanto para Android como para iOS, no se medirán las instalaciones, sesiones y eventos in-app. Cualquier tráfico de estas versiones (a menos que AppsFlyer lo excluya específicamente) recibirá un código de estado 400, lo que significa que el SDK intentará enviar llamadas de API como de costumbre, pero los servidores de AppsFlyer las rechazarán y los datos no se procesarán.
+
+<div id="ios-sdk-release-notes" />
 
 ## Notas de la versión del SDK de iOS
 
@@ -75,6 +81,8 @@ La siguiente tabla proporciona notas de lanzamiento para las versiones compatibl
 | 6.13.2  <br />Fin del soporte técnico:  <br />2027-03-08 | 20-07-2023 | <ul><li>Se ha corregido un problema que provocaba un error en el lanzamiento de aplicaciones que usaban SPM en Xcode 15.3. Mira las <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-release-notes#version-6132">Notas de la versión para desarrolladores</Anchor> para obtener más información.</li></ul> |
 | 6.13.1  <br />Fin del soporte técnico:  <br />2027-03-08 | 10-03-2025 | <ul><li>Se solucionó un problema con el envío de datos de consentimiento para usuarios que no pertenecen al GDPR en un flujo de consentimiento de CMP (DMA).</li></ul> |
 | 6.13.0   <br />Fin del soporte técnico:  <br />2027-03-08 | 13-06-2023 | <ul><li>Se agregó soporte para la nueva política de consentimiento de la UE de Google.</li></ul> |
+
+<div id="unsupported-sdk-versions" />
 
 ## Versiones del SDK no compatibles
 
@@ -135,6 +143,8 @@ Las siguientes versiones del SDK han alcanzado el estado de **finalización del 
 | 6.0.2   <br />Fin del soporte: 2024-08-31 | 27-08-2020 | <ul><li>Cambio del nombre de la API:<br />deviceLoggingDisabled --> anonymizeUser</li><li>Se requiere el diálogo AppTrackingTransparency (ATT) para recopilar el IDFA para iOS 14</li><li>Se agregó soporte para la atribución de promoción cruzada del IDFV</li></ul> |
 | 6.0.1 beta  <br />Fin del soporte: 2024-08-31 | 06-08-2020 | <ul><li>Se agregó soporte para la <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide">atribución de SKAdNetwork</Anchor>, para ayudar a los anunciantes a medir el éxito de la campaña mientras se mantiene la privacidad del usuario</li></ul> |
 | 6.0.0 beta  <br />Fin del soporte: 2024-08-31 | 04-08-2020 | <ul><li>Capacidades de depuración extendidas</li><li>Cambios importantes en la funcionalidad del SDK y la API. [Saber más](/docs/appsflyer-ios-sdk-release-notes#ios-v600-release-notes)</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Ver también**
 >

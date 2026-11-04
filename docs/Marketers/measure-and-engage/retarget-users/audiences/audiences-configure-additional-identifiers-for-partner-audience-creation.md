@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **At a glance:** Configure identificadores de usuario adicionales para enviar audiencias personalizadas a socios publicitarios.
 
+<div id="about-additional-identifiers" />
+
 ## Acerca de los identificadores adicionales
 
 AppsFlyer Audiences admite automáticamente los siguientes identificadores de dispositivos al enviar audiencias personalizadas a <Anchor target="_blank" href="/marketers/es/docs/audiences-partner-connections">socios publicitarios</Anchor>:
@@ -39,6 +41,8 @@ Algunos socios publicitarios también admiten la coincidencia de audiencias pers
 
 Estos identificadores adicionales pueden incluir números de teléfono y correos electrónicos, pero **solo se pueden utilizar si están cifrados con el hash SHA256**.  El uso de dichos identificadores adicionales está sujeto a los [Términos de uso de identificadores adicionales](https://support.appsflyer.com/hc/article_attachments/16567368205201).
 
+<div id="next-steps" />
+
 ## Próximos pasos
 
 1. Seleccione los identificadores adicionales que desea utilizar (si hay alguno) de la [tabla de identificadores disponibles](/docs/audiences-configure-additional-identifiers-for-partner-audience-creation#additional-identifiers%E2%80%94parameters-and-formatting). Tenga en cuenta que no todos los socios publicitarios admiten todos los identificadores.
@@ -49,6 +53,8 @@ Estos identificadores adicionales pueden incluir números de teléfono y correos
    * Establezca su <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel de cuenta</Anchor>.
    * Seleccione los identificadores que se cargarán en cada una de sus <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#manage-connections">conexiones de socios</Anchor>.
 
+<div id="available-identifiers" />
+
 ## Identificadores disponibles
 
 Puede optar por configurar uno o más identificadores, que se muestran en la siguiente tabla.
@@ -58,6 +64,8 @@ Puede optar por configurar uno o más identificadores, que se muestran en la sig
 <table><tbody><tr><td>Identificador</td><td>Nombre del parámetro</td><td>Formato</td><td>Valor de ejemplo (antes del hash)</td></tr><tr><td>Correo electrónico</td><td>correo electrónico_sha256</td><td><p><strong>SDK v7.0.0 y versiones anteriores:</strong></p><ul><li>Minúsculas</li><li>Sin espacios en blanco</li><li>Con hash en el cliente (SHA256) antes de enviarlo</li></ul><p><strong>SDK v7.0.1 y versiones posteriores:</strong> Texto sin formato. El SDK lo normaliza y aplica Hashing automáticamente.</p></td><td>name@domain.com</td></tr><tr><td>Número de teléfono<br/>(ver nota a continuación)</td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong> phone_number_sha256</p><p><strong>v7.0.1 y versiones posteriores:</strong> phone_number_hashed</p></td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong></p><ul><li>Sin símbolos, letras ni ceros iniciales</li><li>Incluir código de país</li><li>Hash SHA256</li></ul><p><strong>v7.0.1 y versiones posteriores:</strong> Texto sin formato. El SDK concatena el código de país y el número, lo normaliza y aplica Hashing automáticamente.</p></td><td>442070313000</td></tr><tr><td><p>Número de teléfono E164</p><p>(ver nota a continuación)</p></td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong> phone_number_e164_sha256</p><p><strong>v7.0.1 y versiones posteriores:</strong> phone_number_e164_hashed</p></td><td><p><strong>v7.0.0 y versiones anteriores (o S2S):</strong></p><ul><li>Número de teléfono E164</li><li>Hash SHA256</li></ul><p><strong>v7.0.1 y versiones posteriores:</strong> Texto sin formato. El SDK concatena el código de país y el número, lo normaliza y aplica Hashing automáticamente.</p></td><td>+442070313000</td></tr><tr><td colspan="4"><p><br /><br /><strong>Note</strong><br /></p><p><strong><span id="h_01HNZNWZ9XSY47T58Z5YR7Q65S"></span>Nota</strong></p><p>Diferentes socios publicitarios admiten distintos formatos de números de teléfono. Por tanto, si eliges usar el número de teléfono, configura ambos identificadores: <em>Número de teléfono</em> y <em>Número de teléfono E164</em></p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="sdk-reference-and-code-samples" />
 
 ## Referencia del SDK y ejemplos de código
 
@@ -80,9 +88,13 @@ Al enviar identificadores para audiencias mediante el SDK:
 > * **Correo electrónico:** A partir del SDK v7.0.1, setUserEmails (iOS/Android) se ha eliminado por completo y se ha sustituido por setUserEmail. Este es un cambio incompatible, no una descontinuación. Las apps en v7.0.0 y anteriores deben seguir usando setUserEmails. Las apps en v7.0.1 y posteriores deben cambiar a setUserEmail. Comprueba qué versión del SDK tienes integrada antes de elegir qué ejemplo seguir.
 > * **Teléfono:** A partir del SDK v7.0.1, hay disponible una API específica setUserPhone. Es la forma recomendada de enviar identificadores de número de teléfono para Advanced Matching. Este no es un cambio disruptivo: setAdditionalData sigue funcionando. Para las nuevas integraciones y para los clientes que actualicen a la versión 7.0.1 y posteriores, recomendamos migrar a setUserPhone. Las aplicaciones con la versión 7.0.0 y anteriores deben seguir usando setAdditionalData, porque setUserPhone no existe en esas versiones del SDK.
 
+<div id="ios-sdk-configuration" />
+
 ## Configuración del SDK para iOS
 
 Para establecer el *número de teléfono* con hashing como identificador adicional de usuario:
+
+<div id="sdk-v700-and-earlier--setadditionaldata" />
 
 ### **SDK v7.0.0 y anteriores — setAdditionalData**
 
@@ -116,7 +128,11 @@ número de teléfono_sha256
 >
 > Debes aplicar un hash previo a ambos valores (SHA-256) antes de pasarlos.
 
+<div id="sdk-v701-and-later--setuserphone-recommended" />
+
 ### **SDK v7.0.1 y versiones posteriores — setUserPhone (recomendado)**
+
+<div id="method-signature" />
 
 #### Firma del método
 
@@ -124,6 +140,8 @@ número de teléfono_sha256
 - (void)setUserPhone:(NSString *_Nonnull)countryCode
 phoneNumber:(NSString *_Nonnull)phoneNumber;
 ```
+
+<div id="usage-example" />
 
 #### Ejemplo de uso
 
@@ -153,7 +171,11 @@ AppsFlyerLib.shared().setUserPhone(countryCode: "1", phoneNumber: "(650) 555-121
 
 Para establecer una dirección de correo electrónico codificada como un identificador de usuario adicional:
 
+<div id="sdk-v700-and-earlier" />
+
 ### **SDK v7.0.0 y versiones anteriores**
+
+<div id="method-signature-1" />
 
 #### Firma del método
 
@@ -161,6 +183,8 @@ Para establecer una dirección de correo electrónico codificada como un identif
 - (void)setUserEmails:(NSArray<NSString *> *_Nullable)userEmails 
 withCryptType: (EmailCryptType)type;
 ```
+
+<div id="usage-example-1" />
 
 #### Ejemplo de uso
 
@@ -184,13 +208,19 @@ AppsFlyerLib.shared().setUserEmails(emails, with: EmailCryptTypeSHA256)
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later" />
+
 ### **SDK v7.0.1 y versiones posteriores**
+
+<div id="method-signature-2" />
 
 #### Firma del método
 
 ```objectivec
 - (void)setUserEmail:(NSString *_Nonnull)email;
 ```
+
+<div id="usage-example-2" />
 
 #### Ejemplo de uso
 
@@ -218,9 +248,13 @@ AppsFlyerLib.shared().setUserEmail("name@domain.com")
 >
 > Pasa el correo electrónico en texto sin formato. El SDK lo normaliza y aplica hashing localmente (SHA-256). No apliques hashing previamente. Solo se acepta un único correo electrónico por llamada: si vuelves a llamar a setUserEmail, se sobrescribe el valor establecido anteriormente en lugar de añadirse.
 
+<div id="android-sdk-configuration" />
+
 ## Configuración del SDK para Android
 
 Para establecer un *número de teléfono* codificado como identificador de usuario adicional:
+
+<div id="sdk-v700-and-earlier--setadditionaldata-1" />
 
 ### **SDK v7.0.0 y versiones anteriores — setAdditionalData**
 
@@ -258,13 +292,19 @@ AppsFlyerLib.getInstance().setAdditionalData(customDataMap)
 >
 > Debes aplicar hashing previamente a ambos valores (SHA-256) antes de pasarlos.
 
+<div id="sdk-v701-and-later--setuserphone-recommended-1" />
+
 ### **SDK v7.0.1 y versiones posteriores — setUserPhone (recomendado)**
+
+<div id="method-signature-3" />
 
 #### Firma del método
 
 ```java
 public abstract void setUserPhone(String countryCode, String phoneNumber);
 ```
+
+<div id="usage-example-3" />
 
 #### Ejemplo de uso
 
@@ -294,7 +334,11 @@ AppsFlyerLib.getInstance().setUserPhone("1", "(650) 555-1212")
 
 Para establecer una dirección de correo electrónico codificada como un identificador de usuario adicional:
 
+<div id="sdk-v700-and-earlier-1" />
+
 ### **SDK v7.0.0 y versiones anteriores**
+
+<div id="method-signature-4" />
 
 #### Firma del método
 
@@ -304,6 +348,8 @@ public abstract void setUserEmails(
   String... emails
 );
 ```
+
+<div id="usage-example-4" />
 
 #### Ejemplo de uso
 
@@ -333,13 +379,19 @@ AppsFlyerLib.getInstance().setUserEmails(
 </Tab>
 </Tabs>
 
+<div id="sdk-v701-and-later-1" />
+
 ### **SDK v7.0.1 y versiones posteriores**
+
+<div id="method-signature-5" />
 
 #### Firma del método
 
 ```java
 public abstract void setUserEmail(String email);
 ```
+
+<div id="usage-example-5" />
 
 #### Ejemplo de uso
 
@@ -352,6 +404,8 @@ AppsFlyerLib.getInstance().setUserEmail("name@domain.com");
 > **Nota:**
 >
 > Solo se acepta un único correo electrónico por llamada en la versión 7.0.1 y posteriores. No se admiten varios correos electrónicos: si vuelves a llamar a setUserEmail, se sobrescribe el valor establecido anteriormente en lugar de añadirse.
+
+<div id="s2s-reference-and-code-samples" />
 
 ## Referencia y ejemplos de código S2S
 

@@ -25,11 +25,17 @@ x-zendesk:
 
 > **De un vistazo:** Configura la solución de ingresos de tienda ROI360 de AppsFlyer.
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > Los ingresos de la tienda ROI360 solo están disponibles para los clientes del plan premium de ROI360. Para verificar tu plan o realizar una actualización, ponte en contacto con tu Customer Success Manager (CSM).
 
+<div id="overview" />
+
 ## Visión general
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -47,6 +53,8 @@ Para configurar los ingresos de tienda de ROI360, completa los siguientes pasos 
 4. [Verifica la implementación del SDK](#paso-4-verifica-la-implementación-del-sdk): Prueba las compras in-app y las suscripciones de sandbox en ambas plataformas para confirmar que AppsFlyer recibe y procesa correctamente los eventos del SDK y las notificaciones de servidor.
 5. [Verifica y actualiza la configuración](#paso-5-verifica-y-actualiza-la-configuración): Revisa y confirma los estados de la validación de compras, la gestión de reembolsos, la medición de suscripciones y la integración con la tienda para garantizar una atribución de ingresos precisa y continua en todas las plataformas.
 6. [Publica las versiones de la app](#paso-6-lanza-las-versiones-de-la-aplicación-con-el-conector-del-sdk): Publica versiones actualizadas de la app con el SDK Connector integrado, asegurándote de que los indicadores de sandbox estén desactivados y de que las reglas de validación permitan los eventos de ingresos necesarios.
+
+<div id="step-1-ios-set-up-app-store-connect-keys" />
 
 ## Paso 1 (iOS): Configura las claves de App Store Connect
 
@@ -102,6 +110,8 @@ Para configurar las credenciales de iOS, sigue estos pasos:
 5. haz clic en **Guardar y siguiente**
 
 </Accordion>
+
+<div id="step-1-android-set-up-service-account-key-and-permissions" />
 
 ## Paso 1 (Android): Configurar la clave de cuenta de servicio y los permisos
 
@@ -226,12 +236,16 @@ Carga y valida la clave JSON de Google que descargaste en el [paso 1.2](#12-con
 
 </Accordion>
 
+<div id="step-2-ios-set-up-app-store-server-notifications" />
+
 ## Paso 2 (iOS): Configura las notificaciones del servidor de App Store
 
 Configura cómo se reciben las notificaciones de la App Store en AppsFlyer.
 
 * Si ya tienes configurado un endpoint de notificaciones del servidor de la App Store en App Store Connect (por ejemplo, tu propio backend u otro servicio), elige entre la **Opción 1 (recomendada)** o la **Opción 2**.
 * Si todavía no has configurado un endpoint en App Store Connect, elige la **Opción 1**.
+
+<div id="option-1-recommended---appsflyer-as-the-primary-endpoint" />
 
 #### Opción 1 (recomendada): AppsFlyer como endpoint principal
 
@@ -245,11 +259,15 @@ El flujo de notificaciones de esta opción es el siguiente:
 
 Para usar esta opción, completa los pasos [2.1](#21-copy-the-appsflyer-server-notifications-endpoint), [2.2](#22-send-notifications-directly-to-appsflyer) y [2.4](#24-test-the-server-notifications-integration).
 
+<div id="option-2---your-endpoint-as-the-primary-endpoint" />
+
 #### Opción 2: tu endpoint como endpoint principal
 
 Si prefieres mantener tu endpoint existente como destino principal, configura tu servidor para reenviar las notificaciones del servidor de App Store a AppsFlyer.
 
 Para usar esta opción, omite los pasos 2.1 y 2.2 y completa los pasos [2.3](#23--optional--forward-notifications-from-your-endpoint-to-appsflyer) y [2.4](#24-test-the-server-notifications-integration)
+
+<div id="note-1" />
 
 > 📘 **Advertencia**
 >
@@ -335,6 +353,8 @@ Para confirmar que AppsFlyer está recibiendo correctamente las notificaciones d
    * Una confirmación de si se recibieron notificaciones válidas.
    * Un mensaje de estado que indica que no se encontró ninguna notificación.
 
+   <div id="note-2" />
+
    > 📘 **Nota:**
    >
    > Apple puede tardar unos segundos en enviar el mensaje de prueba.
@@ -344,6 +364,8 @@ Para confirmar que AppsFlyer está recibiendo correctamente las notificaciones d
    * Cuando la prueba se complete correctamente o cuando estés listo para continuar, haz clic en **Guardar y siguiente**.
 
 </Accordion>
+
+<div id="step-2-android-set-up-google-play-server-notifications" />
 
 ## Paso 2 (Android): Configura las notificaciones del servidor de Google Play
 
@@ -463,6 +485,8 @@ Para verificar que AppsFlyer recibe correctamente las notificaciones para desarr
 
 </Accordion>
 
+<div id="step-3-implement-sdk-connector" />
+
 ## Paso 3: Implementa el conector SDK
 
 En este paso, prepararás a tus desarrolladores para integrar el conector del SDK de compras de AppsFlyer y configurar el entorno de pruebas.
@@ -478,9 +502,13 @@ Para implementar el conector del SDK, sigue estos pasos:
 
 Este mensaje proporciona toda la información que tus desarrolladores necesitan para completar la integración y comenzar las pruebas.
 
+<div id="note-3" />
+
 > 📘 **Nota:**
 >
 > El conector utiliza la detección automática de transacciones. Como alternativa, puedes implementar el método del SDK `validateAndLog` para registrar manualmente cada transacción. Este método no ofrece soporte para todas las funciones disponibles con el conector. Para obtener más información sobre ambas opciones de integración del SDK, consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/purchase-and-subscription-validation">la documentación de DevHub</Anchor>.
+
+<div id="step-4-verify-sdk-implementation" />
 
 ## Paso 4: Verifica la implementación del SDK
 
@@ -494,6 +522,8 @@ Para comprobar si AppsFlyer ha recibido cargas útiles válidas de eventos de co
 
 1. En el paso **Verifica la implementación del SDK**, haz clic en **Probar la implementación del SDK**.
 2. Revisa los resultados, incluida la marca de tiempo de la carga útil más reciente recibida por AppsFlyer.
+
+   <div id="note-4" />
 
    > 📘 **Nota:**
    >
@@ -562,6 +592,8 @@ Asegúrate de que cada evento de compra en sandbox incluya:
 
 </Accordion>
 
+<div id="step-5-verify-and-update-settings" />
+
 ## Paso 5: Verifica y actualiza la configuración
 
 Después de completar la configuración anterior y guardar el último paso, se te redirige a la vista de configuración activa, donde puedes verificar o actualizar la siguiente configuración:
@@ -576,6 +608,8 @@ Después de completar la configuración anterior y guardar el último paso, se t
    * La **App Store key** configuración
    * La **Server notification endpoint** configuración
    * Implementa & prueba el conector SDK
+
+<div id="step-6-release-the-app-versions-with-the-sdk-connector" />
 
 ## Paso 6: Lanza las versiones de la aplicación con el conector del SDK
 
@@ -592,6 +626,8 @@ Una vez lanzada la aplicación con el conector SDK, se generarán y estarán dis
 
 **Nota:** Sólo se generarán eventos para los usuarios que hayan actualizado a una versión de la aplicación que incluya el conector SDK. Como resultado, se espera una discrepancia entre los datos de ingresos de la aplicación y los datos de la tienda hasta que la versión actualizada de la aplicación se adopte por completo.
 
+<div id="switch-to-roi360-store-revenue-from-receipt-validation" />
+
 ## Cambiar a los ingresos de tienda de ROI360 (desde Validación de recibos)
 
 Si has completado el onboarding de Validación de recibos, pero quieres activar el producto ROI360 Store revenue, haz lo siguiente:
@@ -603,6 +639,8 @@ Si has completado el onboarding de Validación de recibos, pero quieres activar 
 5. Realiza el paso **Enable App Store Server Notification**. Para obtener más información, consulta [Configurar las notificaciones del servidor de la tienda de aplicaciones](#paso-2-ios-configura-las-notificaciones-del-servidor-de-app-store) o [Configurar las notificaciones del servidor de Google Play](#paso-2-android-configura-las-notificaciones-del-servidor-de-google-play).
 6. En la sección **Purchases & subscriptions**, verifica que el **Tipo de producto** esté ahora configurado como **ROI360**.
 7. Revisa la configuración actual de tu SDK para asegurarte de que puede dar soporte a la funcionalidad de ingresos de la tienda de ROI360 Store que necesitas.
+
+<div id="note-5" />
 
 > 📘 **Nota:**
 >

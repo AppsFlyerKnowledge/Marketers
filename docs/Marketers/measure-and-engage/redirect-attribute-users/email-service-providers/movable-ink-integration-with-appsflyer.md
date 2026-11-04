@@ -23,9 +23,13 @@ x-zendesk:
 
 ## ![53374 Imagen de la base de conocimientos de Movable Ink.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
 
+<div id="about-the-integration" />
+
 ## Sobre la integración
 
 Movable Ink es un partner de optimización de contenido dinámico que ofrece experiencias personalizadas al cliente en varios canales, como correo electrónico, notificaciones push y SMS. La integración entre AppsFlyer y Movable Ink te permite crear recorridos únicos y personalizados impulsados por IA en tus campañas de marketing y en tu contenido in-app.
+
+<div id="set-up-the-integration" />
 
 ## Configura la integración
 
@@ -72,12 +76,16 @@ Movable Ink es un partner de optimización de contenido dinámico que ofrece exp
 | `{{pid_value}}` | ID del ESP o de la fuente de medios | Nombre del ESP |  | UI de AppsFlyer |
 | `{{mi_link_from_creative<br /><br />\n<br /><br />_tag}}` | El enlace HREF de clic de la etiqueta creativa de Movable Ink. Disponible en la página Finish & Export (consulta la imagen en el paso 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | El enlace debe estar codificado. | Movable Ink |
 
+   <div id="note" />
+
    > 📘 **Advertencia**
    >
    > Si los valores de `af_android_url`, `af_ios_url` y `af_web_dp` son idénticos, puedes acortar el enlace usando `af_r` en su lugar. Si hay otro parámetro con el mismo valor, pide a tu gerente de éxito del cliente de AppsFlyer que active la función de duplicación de parámetros.
 
 6. Utiliza el nuevo enlace en tu campaña.  
    **Nota:** El enlace HREF de Movable Ink que has copiado y pegado debería estar codificado. Sin embargo, **si utilizas el enlace en una campaña de correo electrónico a través de tu ESP, los parámetros del ESP no deben codificarse**.
+
+<div id="traits-and-limitations" />
 
 ## Especificaciones y limitaciones
 

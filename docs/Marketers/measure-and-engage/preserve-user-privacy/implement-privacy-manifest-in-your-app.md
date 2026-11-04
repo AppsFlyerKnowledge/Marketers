@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **En resumen:** En la WWDC23, Apple presentó nuevos avisos de privacidad. Con los avisos de privacidad, los desarrolladores de aplicaciones pueden proporcionar descripciones más precisas de las prácticas de privacidad de sus aplicaciones. AppsFlyer ha creado un aviso de privacidad para el SDK de AppsFlyer y los detalles se explican a continuación.
 
+<div id="background" />
+
 ## Antecedentes
 
 Con los avisos de privacidad, un desarrollador de aplicaciones podrá crear un registro de las categorías de datos que recopila a través de su aplicación de forma independiente y mediante el uso de dependencias de terceros, como los SDK de terceros utilizados por la aplicación. Esta información ayuda a los desarrolladores de aplicaciones a representar con precisión las prácticas de privacidad en sus aplicaciones, incluso a través de las etiquetas nutricionales que proporcionan a sus usuarios.
 
 En muchos casos, los desarrolladores de aplicaciones no saben qué datos recopilan los SDK de terceros ni para qué usa los datos un SDK específico. El aviso de privacidad permite a los SDK de terceros transmitir fácilmente esta información a los desarrolladores de la aplicación, lo que les ayuda a crear etiquetas nutricionales precisas.
 
+<div id="what-are-nutrition-labels" />
+
 ### ¿Qué son las etiquetas nutricionales?
 
 Las etiquetas nutricionales proporcionan información sobre las prácticas de privacidad de las aplicaciones en un formato fácil de leer y entender. Los usuarios finales tienen más transparencia en cuanto a los datos que recopila la aplicación y con qué propósito. Para obtener más información sobre las etiquetas nutricionales, consulta <Anchor target="_blank" href="/marketers/es/docs/preparing-for-the-app-store-review-nutrition-labels">aquí</Anchor>.
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## ¿Qué contiene el aviso de privacidad de AppsFlyer?
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -44,6 +52,8 @@ El SDK 6.14.0 de AppsFlyer incluye el aviso de privacidad de AppsFlyer. Esto inc
 * [APIs de Razón Requerida](#apis-de-razón-requerida)
 * [Seguimiento de dominios](#dominios-de-seguimiento)
 
+<div id="data-usage" />
+
 ### Uso de datos
 
 Apple exige a los desarrolladores de apps y SDK que registren la categoría de datos y los motivos por los que la app o el SDK de terceros recopilan dichos datos.
@@ -51,6 +61,8 @@ Apple exige a los desarrolladores de apps y SDK que registren la categoría de d
 Luego, los desarrolladores de aplicaciones pueden usar Xcode para crear un reporte de privacidad en el que se resuma la información sobre los datos recopilados.
 
 Los siguientes son los tipos de datos recopilados por el SDK de AppsFlyer y que se incluyen en el aviso de privacidad:
+
+<div id="note" />
 
 > 📘 **Nota**
 >
@@ -60,6 +72,8 @@ Los siguientes son los tipos de datos recopilados por el SDK de AppsFlyer y que 
 | --- | --- | --- | --- | --- |
 | ID del dispositivo (IDFA, IDFV) | NSPrivacyCollectedDataTypeDeviceID | Sí | Sí | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | Interacción con el producto (lanzamientos) | NSPrivacyCollectedDataTypeProductInteraction | No | No | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### APIs de Razón Requerida
 
@@ -125,9 +139,13 @@ Para tu comodidad, puedes copiar el siguiente fragmento de código, que incluye 
 
 </Accordion>
 
+<div id="tracking-domains" />
+
 ### Dominios de seguimiento
 
 Cualquier dominio de seguimiento utilizado en una aplicación o en un SDK de terceros debe registrarse en el aviso de privacidad. Si los usuarios no conceden permisos (exclusión voluntaria) a través del marco de transparencia del seguimiento de aplicaciones (ATT), el sistema operativo iOS bloqueará todo el tráfico saliente a ese dominio. El SDK de AppsFlyer comprueba el estado de ATT del usuario antes de cualquier solicitud del servidor y ejecuta la solicitud en función de si el usuario ha optado por participar.
+
+<div id="faq" />
 
 ## Preguntas frecuentes
 

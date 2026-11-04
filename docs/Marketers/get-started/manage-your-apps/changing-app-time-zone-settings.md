@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Establece o cambia una zona horaria específica de la aplicación para ver los datos de la aplicación más alineados con tu zona horaria o con la de tus partners publicitarios. Comprende el efecto de los cambios de zona horaria en los reportes de datos dentro de la plataforma AppsFlyer.
 
+<div id="why-change-the-time-zone" />
+
 ## ¿Por qué cambiar la zona horaria?
 
 La zona horaria predeterminada para las nuevas aplicaciones es UTC (UTC +0). Si se cambia la zona horaria de la aplicación, esto afecta la forma en que aparecen los datos en la plataforma.
@@ -36,6 +38,8 @@ La zona horaria predeterminada para las nuevas aplicaciones es UTC (UTC +0). Si 
 
 * Agencias: visualizan los datos usando la zona horaria establecida por el propietario de la aplicación. Las agencias no pueden establecer la zona horaria.
 * Redes de publicidad: visualizan los datos utilizando UTC en todo momento, independientemente de la zona horaria establecida por el anunciante.
+
+<div id="changing-the-time-zone" />
 
 ## Cambiar la zona horaria
 
@@ -51,6 +55,8 @@ The account admin can make time-zone changes. Los cambios se pueden realizar una
 6. Haz clic en **Guardar configuración**.  
    El cambio entra en efecto al comienzo del día siguiente a las 00:00 UTC.
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > * October 24 at 22:00, the time zone is changed.
@@ -62,9 +68,13 @@ Después de cambiar la zona horaria:
 * Los reportes agregados tendrán algunas anomalías el día y el día siguiente al cambio de zona horaria.
   * Cost data is duplicated on the day of the change.
 
+<div id="aggregate-data" />
+
 #### Datos agregados
 
 <table><thead><tr><th rowspan="2">Método de reporte </th><th colspan="3">Intervalo de fechas del reporte</th></tr><tr><th>Comienza y termina <span>antes</span> del cambio </th><th>Comienza y termina <span>después</span> del cambio </th><th>Comienza antes y termina después del cambio</th></tr></thead><tbody><tr><td>[Beta] My Dashboards</td><td><p>No está soportado. Los datos solo están disponibles en UTC cuando se cambia la zona horaria del dashboard.</p></td><td>Zona horaria actual</td><td>Los datos solo se muestran para las fechas posteriores al cambio.</td></tr><tr><td>Panel de vista general</td><td>Zona horaria anterior</td><td>Zona horaria actual</td><td><p>Divide:</p><ul><li>Antes del cambio: UTC</li><li>Después del cambio: zona horaria actual</li></ul></td></tr><tr><td>Paneles de control de eventos y personalizados</td><td>UTC</td><td>Zona horaria actual</td><td><p>Divide:</p><ul><li>Antes del cambio: UTC</li><li>Después del cambio: zona horaria actual</li></ul></td></tr><tr><td>Panel de control de actividades</td><td>Zona horaria anterior</td><td>Zona horaria actual</td><td>UTC</td></tr><tr><td>Cohorte, Retención, Pivote</td><td>UTC</td><td>Zona horaria actual (1)</td><td>UTC</td></tr><tr><td>API maestra</td><td colspan="3"><ul><li>Predeterminado: UTC</li><li>Option: <a href="./pull-api-aggregate-data#aggregate-report-uri-and-parameters" target="_blank">Select the time zone when you pull data</a> </li></ul></td></tr><tr><td colspan="4">Notas:<br/>(1) Todas las aplicaciones deben usar la misma zona horaria específica de la aplicación durante un período de reporte determinado. De lo contrario, la zona horaria vuelve a UTC.</td></tr></tbody></table>
+
+<div id="raw-data-reports" />
 
 #### Reportes de raw data
 

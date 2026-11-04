@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **At a glance:** El reporte de conversiones multiplataforma muestra el viaje completo del usuario detrás de cada conversión multiplataforma, incluida toda la cadena de engagement asistido y el contexto de ingresos, no solo el último punto de contacto.
 
+<div id="about-the-report" />
+
 ## Sobre el reporte
 
 El reporte de conversiones multiplataforma es un reporte de raw data que proporciona registros de conversiones a nivel de usuario, vinculados entre plataformas mediante tu <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/set-customer-user-id">Customer User ID (CUID)</Anchor>. Esto te permite analizar el viaje completo del usuario que llevó a una conversión, no solo el último punto de contacto.
 
 Para obtener más información sobre el flujo y la configuración de atribución basada en el usuario, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-attribution">Atribución multiplataforma basada en el usuario</Anchor>.
+
+<div id="report-fields" />
 
 ## Campos de reporte
 
@@ -40,6 +44,8 @@ El reporte contiene tres grupos de campos:
 * **Campos de assists (1, 2 y 3):** para cada una de las tres posiciones de assist, la fuente de medios, campaña, conjunto de anuncios, anuncio, agencia, canal, tipo y subtipo de engagement, ID del sitio y hora del evento correspondientes. Estos campos utilizan la convención de nomenclatura `<field>__assist_1`, `<field>__assist_2` y `<field>__assist_3`.
 * **Campos de enriquecimiento:** permiten el análisis del lifetime value (LTV) a nivel de usuario y a nivel de evento. Por ejemplo, combina estos campos con los registros de conversión de un usuario para crear una vista del LTV por usuario en todas las plataformas.
 
+<div id="report-data-freshness" />
+
 ## Actualización de los datos del reporte
 
 El reporte ejecuta un proceso por lotes cada 4 horas. Cada ejecución del proceso por lotes procesa los eventos que ingresaron en la base de datos durante las 4 horas anteriores. Por ejemplo, la ejecución por lotes de las 8:00 procesa los eventos que ingresaron en la base de datos entre las 3:00 y las 7:00.
@@ -49,6 +55,8 @@ El proceso por lotes asigna los eventos a sus intervalos horarios correspondient
 > 📘 **Note**
 >
 > Normalmente hay un breve retraso entre el momento real de un evento y su entrada en la base de datos. El reporte utiliza la hora de entrada en la base de datos para mantener una agrupación por horas precisa y coherente.
+
+<div id="example-the-8-am-batch-run" />
 
 ### Ejemplo: la ejecución por lotes de las 8:00
 
@@ -64,6 +72,8 @@ Algunas notas sobre este ejemplo:
 * El lote no procesa eventos de la última hora antes de la ejecución, para dejar suficiente tiempo para enriquecer los eventos con su CUID relacionado. En el ejemplo anterior, el proceso por lotes de las 8:00 procesa los eventos que ingresaron en la base de datos entre las 3:00 y las 7:00. Los eventos que ingresaron en la base de datos entre las 7:00 y las 8:00 no se procesan en esa ejecución.
 * El reporte está disponible una hora después de la ejecución del proceso por lotes, ya que durante esa hora un proceso interno actualiza el lote. En el ejemplo anterior, el proceso por lotes de las 8:00 a. m. está disponible a las 9:00 a. m.
 
+<div id="subscribe-to-the-report" />
+
 ## Regístrate en el reporte
 
 Para registrarte en el reporte:
@@ -72,6 +82,8 @@ Para registrarte en el reporte:
 2. En el panel **Contenido de Data Locker**, desplázate hacia abajo hasta la sección **Reportes avanzados**.
 3. Selecciona **Conversiones multiplataforma**.
 
+<div id="access-the-report-data-in-your-cloud-bucket" />
+
 ## Accede a los datos del reporte en tu bucket de la nube
 
 La ruta del reporte consta de la siguiente jerarquía de carpetas:
@@ -79,6 +91,8 @@ La ruta del reporte consta de la siguiente jerarquía de carpetas:
 ```text
 <bucket-name>/<DataLocker connection name>/t=conversions_user_level_cross_platform/dt=<yyyy-mm-dd>/h=<hour>/
 ```
+
+<div id="business-intelligence-bi-developer-considerations" />
 
 ## Consideraciones para desarrolladores de business intelligence (BI)
 

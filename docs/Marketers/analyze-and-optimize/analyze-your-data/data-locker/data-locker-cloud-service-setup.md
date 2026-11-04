@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Locker te permite transmitir datos a tu solución de almacenamiento seleccionada y propia, ya sea un bucket o un almacén de datos. Configura tu servicio en la nube usando uno de los siguientes procedimientos.
 
+<div id="bucket-cloud-storage" />
+
 ## Almacenamiento en la nube de bucket
 
 <div id="gcs-storage" />
@@ -151,6 +153,8 @@ Una vez creado el bucket, concede los permisos a AppsFlyer mediante el siguiente
 7. Haz clic en **Guardar cambios**.
 8. Completa la <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#set-up-data-locker">configuración del Data Locker.</Anchor>
 
+<div id="supported-aws-regions" />
+
 #### **Regiones AWS admitidas**
 
 Data Locker admite las siguientes regiones de AWS:
@@ -244,6 +248,8 @@ Data Locker es la solución de AppsFlyer para la transmisión de datos al almace
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## Almacenamiento en la nube de almacén de datos
 
 <div id="bigquery" />
@@ -265,6 +271,8 @@ Data Locker es la solución de AppsFlyer para la transmisión de datos al almace
 1. En BigQuery, crea un proyecto o usa un proyecto existente.
 2. En el proyecto, haz clic en **CREAR CONJUNTO DE DATOS**. [![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
 3. Proporciona al conjunto de datos un ID adecuado.
+
+   <div id="note" />
 
    > 📘 **Nota:**
    >
@@ -293,6 +301,8 @@ Conecta Data Locker a tu cuenta de Snowflake. Al hacerlo, los datos se envían a
 
 Completa los procedimientos siguientes para conectar Snowflake a Data Locker.
 
+<div id="snowflake-connector-procedures" />
+
 #### **Procedimientos de conector de Snowplake**
 
 **Para obtener tu ID de cuenta y región de Snowflake**:
@@ -320,6 +330,8 @@ Completa los procedimientos siguientes para conectar Snowflake a Data Locker.
 6. En tu base de datos, se muestran las tablas importadas. Los nombres y estructuras de las tablas son equivalentes a los de los buckets de Data Locker.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Rasgos y limitaciones
 

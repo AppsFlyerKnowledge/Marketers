@@ -29,6 +29,8 @@ x-zendesk:
 | **Donde** | Reportes de raw data posteriores a la atribución de Protect360 disponibles a través de:<ul><li>Exportar datos (descarga): reportes de raw data</li><li>Reportes de raw data de Pull API</li></ul> |
 | **Qué** | <ul><li>Hasta ahora, los reportes posteriores a la atribución no mostraban la fuente de medios del colaborador válido. Los campos **contributor[1-3]** y **organic** mostraban las fuentes de medios colaboradoras, pero no permitían saber cuál de ellas justificaba la atribución.</li><li>A partir del 23 de noviembre de 2020, el valor del campo **rejected\_reason\_value** muestra **contributor[1-3]** o **organic**.<ul><li>En Data Locker, se muestra como **validation\_reason\_value**.</li></ul></li><li>Los anunciantes pueden consultar los campos **contributor[1-3]** para ver cuál debería ser la fuente de medios atribuida y usar esta información para conciliar.<ul><li>Si los campos del colaborador no aparecen en tu reporte, puedes añadirlos desde la página **Export data**.</li></ul></li></ul> |
 
+<div id="see-also" />
+
 > 📄 **Consulte también**
 >
 > * <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#postattribution-reports">Reportes posteriores a la atribución:</Anchor>

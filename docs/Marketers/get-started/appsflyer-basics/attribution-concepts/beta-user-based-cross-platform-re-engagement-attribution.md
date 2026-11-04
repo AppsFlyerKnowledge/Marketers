@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **Resumen:** Descubre cómo la atribución de re-engagement multiplataforma asigna crédito a las fuentes de medios que hacen que los usuarios existentes regresen a tu producto en distintas plataformas.
 
+<div id="about-cross-platform-re-engagement-attribution" />
+
 ## Acerca de la atribución de re-engagement multiplataforma
 
 La atribución de re-engagement multiplataforma amplía el modelo de <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-attribution">Atribución multiplataforma basada en usuarios</Anchor> para incluir la medición de cohortes de usuarios basada en el engagement publicitario más reciente, además de la fuente de adquisición original.
@@ -40,6 +42,8 @@ Así es como se relacionan ambos modelos:
 
 La atribución de re-engagement funciona junto con la adquisición de usuarios, por lo que puedes ver tanto la fuente que adquirió inicialmente a un usuario como la fuente que hizo que regresara, todo en la misma vista de reporte.
 
+<div id="how-does-re-engagement-attribution-work" />
+
 ## ¿Cómo funciona la atribución de re-engagement?
 
 Para que un evento in-app se atribuya a una fuente de medios de re-engagement, deben cumplirse todas las siguientes condiciones:
@@ -48,6 +52,8 @@ Para que un evento in-app se atribuya a una fuente de medios de re-engagement, d
 * **El CUID está presente:** El evento debe incluir un Customer User ID (CUID) válido que coincida con un CUID visto anteriormente en la misma línea de producto. Así es como AppsFlyer identifica a un usuario recurrente en lugar de uno nuevo.
 * **La ventana de inactividad de retargeting ha finalizado:** El CUID no debe haberse visto durante al menos el período definido por la ventana de inactividad para re-engagement desde su última aparición. Si el evento ocurre dentro de esta ventana, no se considera un re-engagement y se atribuye a la fuente de adquisición original.
 * **El evento ocurre dentro de la ventana de re-engagement:** Una vez que se detecta una atribución de re-engagement válida, se abre la ventana de re-engagement. Solo los eventos in-app que ocurren dentro de esta ventana se atribuyen a la fuente de medios de re-engagement. Los eventos que ocurren después de que se cierra la ventana se atribuyen a la fuente de adquisición original.
+
+<div id="cross-platform-re-engagement-user-journey-example" />
 
 ## Ejemplo de viajes de usuario con re-engagement multiplataforma
 
@@ -89,11 +95,17 @@ Una vez que Meta recibe crédito por el re-engagement, se abre la ventana de re-
 
 </Accordion>
 
+<div id="set-up-cross-platform-re-engagement-attribution" />
+
 ## Configurar la atribución de re-engagement multiplataforma
 
 Para configurar la atribución de re-engagement multiplataforma, debes aplicar algunos ajustes específicos de re-engagement en AppsFlyer además de la configuración de tu línea de producto. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/product-line-group-apps-for-cross-platform-attribution#cómo-crear-una-línea-de-producto">Cómo crear una línea de producto</Anchor>.
 
+<div id="view-cross-platform-attribution-results" />
+
 ## Ver resultados de atribución multiplataforma
+
+<div id="see-also" />
 
 > 📄 **Ver también**
 >

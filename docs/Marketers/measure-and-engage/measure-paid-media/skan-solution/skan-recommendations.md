@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo**: Utiliza las recomendaciones de SKAN para optimizar la configuración de los valores de conversión y recibir mediciones de la actividad post-instalación más precisas.
 
+<div id="overview" />
+
 ## Visión general
 
 SKAdNetwork (SKAN), parte de Apple iOS, permite a los anunciantes medir el rendimiento de la campaña y al mismo tiempo preservar la privacidad del usuario. Con SKAdNetwork, la actividad post-instalación se mide utilizando solo los números (valores de conversión) entre 0 y 63.
@@ -37,11 +39,15 @@ Recomendaciones de AppsFlyer SKAN:
 * Resuelven las dificultades que puedas tener para tomar decisiones sobre la configuración del CV.
 * Se basan en tu vertical y geolocalización específicas, los datos de la aplicación SKAN y no SKAN, y el comportamiento de los usuarios.
 
+<div id="recommendations" />
+
 ## Recomendaciones
 
 <div id="revenue" />
 
 <Accordion title="Ingresos">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **Comprender las recomendaciones sobre ingresos**
 
@@ -57,13 +63,19 @@ Las recomendaciones:
 * Te ahorran valores de conversión utilizando menos rangos para medir con precisión los ingresos.
 * Ten en cuenta tanto las compras in-app como los ingresos por publicidad.
 
+<div id="revenue-recommendations-layout" />
+
 #### **Disposición de las recomendaciones de ingresos**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>A</span></p></td><td><span>Ventana de actividad guardada en tu configuración de Conversion Studio, durante la cual se miden los ingresos de SKAN.</span></td></tr><tr><td><p><span>B</span></p></td><td><span>Ingresos medios reales de la aplicación por usuario de pago (ARPPU), basados en datos precisos de usuarios orgánicos y no orgánicos atribuidos a través de los métodos de AppsFlyer (AF).</span></td></tr><tr><td><p><span>C</span></p></td><td><p><span>ARPPU con la configuración actual (SKAN ARPPU), es decir el ARPPU medido <span>según tu configuración actual en Conversion Studio para la ventana de actividad y la configuración de CV para los reportes de ingresos.</span></span></p></td></tr><tr><td><span>D</span></td><td><p>ARPPU estimado: el ARPPU previsto para el número de rangos seleccionado. Se calcula tomando todos los datos de ingresos de los últimos 14 días de la aplicación, independientemente del método de atribución (como SKAN o el método clásico), y dividiéndolos entre el número de usuarios de pago. <span>Consulta F y G</span></p><p><span><strong>Nota:</strong> </span><span>Es importante destacar que este número no está disponible en otros dashboards de AF.</span> Aquí mostramos el ARPPU (ingresos medios por usuario de pago), mientras que en otros dashboards presentamos el ARPU (Ingreso promedio por usuario).</p></td></tr><tr><td><p><span>E</span></p></td><td><p>Error aproximado: la d<span>iferencia entre B y C. Puede ser un error positivo o negativo, dependiendo de si tu SKAN ARPPU está reportado de más o de menos.</span></p><p><span>Ejemplo: si el ARPPU real es de 10 USD y el SKAN ARPPU es de 7 USD, el error aproximado es un reporte del 30 % menos (-3 USD por usuario).</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>Recomendaciones para la configuración de tus ingresos en SKAN. Selecciona el número de rangos que deseas incluir en tu configuración.</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>Tu configuración actual de ingresos tal y como está establecida en Conversion Studio.</span><span></span></p></td></tr></tbody></table>
 
+<div id="using-revenue-recommendations" />
+
 #### **Utilizar las recomendaciones de ingresos**
 
 **Requisito previo:** las recomendaciones de ingresos requieren al menos 14 días de datos de ingresos.
+
+<div id="note" />
 
 > 📘 **Advertencia**
 >

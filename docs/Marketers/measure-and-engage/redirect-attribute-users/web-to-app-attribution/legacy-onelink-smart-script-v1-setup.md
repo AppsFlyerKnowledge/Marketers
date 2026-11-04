@@ -27,6 +27,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/89302407b5a7fb98299ce5255393651cc147ed963b0b17a6f74effbc0f7e16e0-4723094404753.png)
 
+<div id="setup" />
+
 ## instalación
 
 Hay dos versiones de Smart Script de OneLink:
@@ -56,6 +58,8 @@ Hay dos versiones de Smart Script de OneLink:
 
 <Accordion title="Parámetros">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-the-smart-script" />
+
 #### Parámetros/valores proporcionados al desarrollador para implementar el Smart Script
 
 | Parámetro/valor | Nota | Registra tus respuestas (para que el desarrollador las utilice) |
@@ -71,6 +75,8 @@ Hay dos versiones de Smart Script de OneLink:
 | Otros parámetros de consulta | <ul><li>Enumera cualquier otro parámetro que quieras incluir en la URL saliente de OneLink para Atribución o Deep Linking.</li><li>Añade un **deep\_link\_value** para Deep Linking.<ul><li>Además de añadir el parámetro, tú y tu desarrollador tenéis que implementar la lógica de Deep Linking. <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">Saber más</Anchor></li></ul></li><li>Puedes usar parámetros de la URL entrante o forzar un valor estático.</li></ul> |  |
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## CASOS DE USO
 
@@ -119,6 +125,8 @@ Con el etiquetado automático habilitado, la URL contiene el *GCLID* parámet
 1. Obtén los datos GCLID del parámetro af\_sub[1-5] a través de CSV o Push API en tiempo real para cada instalación.
 2. Sube los datos de GCLID a Google, ya sea <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">manualmente</Anchor> o mediante una <Anchor target="_blank" href="https://developers.google.com/adwords/api/docs/guides/conversion-tracking#importing_conversions">API de Adwords</Anchor>.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Esta solución GCLID no es oficialmente compatible ni recomendada por Google. En caso de que Google deje de utilizar el parámetro GCLID, cambiaremos el script para admitir los cambios. Sigue este artículo, haciendo clic en el botón **Seguir** en la cabecera del artículo, para recibir notificaciones cuando haya una actualización del artículo o del script adjunto.
@@ -141,6 +149,8 @@ Para estas SRN, la configuración del script es la misma que para los enlaces de
 
 **Resultado**: Para estas SRN/fuentes de medios, los valores de los parámetros de fuente de medios y campaña del enlace entrante se utilizan para rellenar los valores de los parámetros **pid** y **c** en el enlace saliente.
 
+<div id="example" />
+
 > 📄 **Ejemplo**
 >
 > **URL entrante**: https://hotel.me/af_pid=twitter&af_c=big_social
@@ -156,6 +166,8 @@ Para estas SRN, la configuración del script es la misma que para los enlaces de
 Los enlaces de atribución de AppsFlyer pueden utilizarse cuando la fuente de medios es una red de publicidad de clic. Cuando configuras un enlace de este tipo en AppsFlyer, tienes la opción de añadir un parámetro de ***ruta URL de redirección (af\_r)*** con la ruta URL deseada a tu sitio web móvil para la atribución de campaña web a aplicación. 
 
 **Resultado**: Si los parámetros **af\_r** y **af\_redirect=true** están en el enlace entrante, el script de la página de destino no realiza cambios. Deja los enlaces directos de la página web/de destino a las tiendas de aplicaciones tal como están. 
+
+<div id="example-1" />
 
 > 📄 **Ejemplo**
 >

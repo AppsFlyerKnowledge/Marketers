@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## Sobre los paquetes de marca
 
 Las marcas operan en un ecosistema que abarca tanto propiedades web como móviles. Como anunciante, se necesita una imagen completa del rendimiento de la marca en todas las plataformas (web y móvil). En PBA, los paquetes de marca consolidan los datos de las propiedades web y móviles en una sola entidad para fines de análisis y raw data. Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
+
+<div id="what-is-a-web-app" />
 
 > 📘 **¿Qué es una aplicación web?**
 >
@@ -45,6 +49,8 @@ Las marcas operan en un ecosistema que abarca tanto propiedades web como móvile
 * Las aplicaciones no se pueden eliminar de un paquete ni mover de un paquete a otro sin [eliminar el paquete original](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle).
   * Al eliminar el paquete, AppsFlyer deja de atribuir datos de PBA para el paquete y el acceso a sus datos históricos ya no está disponible.
 
+<div id="accessing-brand-bundles" />
+
 ## Acceso a paquetes de marca
 
 Accede a la página **Paquetes de marca** para administrar los paquetes de marca y su configuración:
@@ -52,6 +58,8 @@ Accede a la página **Paquetes de marca** para administrar los paquetes de marca
 * En AppsFlyer, en el menú superior, selecciona **Mis aplicaciones** > **Ver paquetes de marcas**.  
   - o -
 * En AppsFlyer, en el menú lateral, selecciona **Configuración** > **Paquetes de marca**.
+
+<div id="managing-brand-bundles" />
 
 ## Gestión de paquetes de marca
 
@@ -85,6 +93,8 @@ Antes de continuar, asegúrate de que todas las aplicaciones que deseas incluir 
      * No se requieren aplicaciones móviles para crear un paquete.
      * No hay límite para la cantidad de aplicaciones móviles que puedes incluir en un paquete.
 4. Haz clic en Crear paquete.
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >
@@ -161,6 +171,8 @@ Se implementa un mecanismo de exclusión de dominios, que forma parte de las <An
 
 </Accordion>
 
+<div id="faq" />
+
 ## Preguntas frecuentes
 
 <div id="can-i-include-the-same-app-in-more-than-one-bundle" />
@@ -193,6 +205,8 @@ Para cambiar el paquete en el que se incluye una aplicación, elimina el paquete
 
 <Accordion title="¿Qué sucede si elimino un paquete?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### Preguntas frecuentes ¿Qué sucede si elimino un paquete?
 
 Si eliminas un paquete:
@@ -220,6 +234,8 @@ Si eliminas un paquete:
 Probablemente no te suscrito a PBA. Contacta con tu CSM o con [hello@appsflyer.com](mailto:hello@appsflyer.com) para actualizar tu paquete.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

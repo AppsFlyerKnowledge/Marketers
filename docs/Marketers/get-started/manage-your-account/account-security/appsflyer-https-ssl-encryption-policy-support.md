@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **Resumen:** Descubre qué suites de cifrado SSL salientes admite AppsFlyer.
 
+<div id="introduction" />
+
 ## Introducción
 
 Las API de AppsFlyer usan protocolos seguros.
@@ -40,6 +42,8 @@ El perfil de seguridad SSL de AppsFlyer admite los siguientes protocolos SSL:
 * TLS v1.2+
 
 AppsFlyer admite distintos cifrados para los mensajes salientes, como se detalla a continuación.
+
+<div id="outgoing-messages-appsflyer-as-client" />
 
 ## Mensajes salientes: AppsFlyer como cliente
 

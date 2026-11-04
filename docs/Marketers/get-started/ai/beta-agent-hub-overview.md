@@ -27,9 +27,13 @@ x-zendesk:
 
 <Embed title="[Beta] Descripción general del Agent Hub" typeOfEmbed="youtube" url="https://www.youtube.com/embed/LEuqdVEXBD0" providerUrl="https://www.youtube.com" />
 
+<div id="about-agent-hub" />
+
 ## Sobre el Agent Hub
 
 Cada agente se encarga de un trabajo de marketing de principio a fin: analiza tus datos, extrae sus conclusiones y las entrega allí donde trabaja tu equipo. Agent Hub te da acceso a una variedad de agentes creados por AppsFlyer, diseñados para ayudarte a optimizar la actividad de marketing y descubrir oportunidades de crecimiento, además de Custom Agent, que se encarga de un trabajo que tú mismo defines. Todos los agentes operan con integridad para respaldar la toma de decisiones de tu equipo.
+
+<div id="agent-hub-page" />
 
 ## Página de Agent Hub
 
@@ -48,9 +52,13 @@ Utiliza esta pestaña para:
 * Gestionar agentes desplegados.
 * Supervisar el estado de ejecución más reciente desde la tarjeta de agente.
 
+<div id="prerequisites-and-permissions" />
+
 #### Requisitos previos y permisos
 
 Algunas capacidades de Agent Hub requieren configuración adicional, dependiendo de los canales de notificación que utilice.
+
+<div id="slack-optional" />
 
 ##### Slack (opcional)
 
@@ -81,12 +89,16 @@ Selecciona **AppsFlyer Agent Hub** -> **Agregar.**
 
 * **Otros roles:** Requieren que la funcionalidad de herramientas de IA esté habilitada a través de <Anchor target="_blank" href="/marketers/es/docs/user-management">Gestión de usuarios</Anchor>.
 
+<div id="email-optional" />
+
 ##### Correo electrónico (opcional)
 
 * Los correos electrónicos solo pueden enviarse a direcciones asociadas a una cuenta de AppsFlyer.
 * Los usuarios deben estar suscritos a la lista de correo de AppsFlyer. <Anchor target="_blank" href="/marketers/es/docs/notifications#qué-notificaciones-puedo-recibir">Consulta aquí para más información</Anchor>.
 
 Nota: En cada agente, puedes configurar hasta 5 direcciones de correo electrónico.
+
+<div id="set-up-an-agent" />
 
 #### Configurar un agente
 
@@ -129,6 +141,8 @@ Puedes filtrar la actividad por:
 
 Nota: El filtro de agentes se basa en la instancia específica del agente, no en el tipo de agente.
 
+<div id="view-activity-output" />
+
 #### Ver resultados de actividad
 
 Para ver los resultados de actividad:
@@ -146,6 +160,8 @@ Desde la ejecución expandida, puedes:
 * Proporcionar feedback positivo o negativo.
 * Añadir comentarios por escrito.
 * Haz clic en **Analizar actividad** para hacer preguntas al Asistente de IA sobre la ejecución.
+
+<div id="analyze-activity-with-ai-assistant" />
 
 #### Analizar la actividad con el asistente de IA
 
@@ -171,6 +187,8 @@ Por ejemplo, puedes preguntar:
 * ¿Qué factores consideró el agente?
 * ¿Qué factores descartó el agente?
 
+<div id="supported-and-unsupported-questions" />
+
 ##### Preguntas compatibles y no compatibles
 
 | Puedes preguntar sobre | No puedes preguntar sobre |
@@ -179,6 +197,8 @@ Por ejemplo, puedes preguntar:
 | Qué datos utilizó el agente para la ejecución | Nuevos análisis que no formaron parte de la ejecución |
 | Por qué ciertos hallazgos fueron priorizados o descartados | Predicciones futuras |
 | El contexto y razonamiento de la ejecución seleccionada | Recomendaciones generales de optimización fuera del contexto de la ejecución |
+
+<div id="notes" />
 
 #### Notas
 
@@ -190,6 +210,8 @@ Ten en cuenta lo siguiente al utilizar la pestaña **Actividad** y **Analizar ac
 * Asistente de IA responde únicamente preguntas sobre la ejecución seleccionada. No realiza nuevos análisis, no accede a datos fuera de la ejecución ni realiza predicciones.
 
 </Accordion>
+
+<div id="agent-types" />
 
 ## Tipos de agentes
 
@@ -205,9 +227,13 @@ Analiza los datos, ejecuta la tarea especificada y entrega los resultados solici
 
 Le das instrucciones igual que se las darías a un analista de tu equipo, y funciona del mismo modo: confirma lo que ha entendido, te muestra cómo piensa abordar el trabajo y cómo define cada término, y solo se ejecuta cuando das tu visto bueno.
 
+<div id="create-a-custom-agent" />
+
 #### Crear un agente personalizado
 
 Tres pasos: define el agente, revisa el plan y luego configura e implementa.
+
+<div id="step-1-define-the-agent" />
 
 ##### Paso 1: Define el agente
 
@@ -217,6 +243,8 @@ Tres pasos: define el agente, revisa el plan y luego configura e implementa.
 4. (Opcional) Configura los filtros de **Geolocalización** y **Fuente de medios**. Déjalos vacíos para incluirlo todo.
 5. En **Tarea**, describe el trabajo o haz clic en un prompt listo para usar y edítalo según tus necesidades.
 6. Haz clic en **Generar plan**.
+
+<div id="step-2-review-the-agent-plan" />
 
 ##### Paso 2: Revisa el plan del agente
 
@@ -234,6 +262,8 @@ Desde aquí:
 * **Editar**: modifica cualquier campo y, después, **Guardar cambios**.
 * **Empezar de nuevo** te devuelve a la tarea.
 * **Aceptar plan** te permite continuar.
+
+<div id="step-3-configure-and-deploy" />
 
 ##### Paso 3: Configura y despliega
 
@@ -286,6 +316,8 @@ Los datos agregados están en USD y en la moneda de tu cuenta. Los datos agregad
 * Cuando no hay datos, el agente muestra 0, no N/A.
 * "Primeras visitas" y "re-visitas" están disponibles solo para aplicaciones web.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Puede haber discrepancias entre las cifras de eventos sin procesar y los datos del dashboard. Las cifras a nivel de evento (raw data) y las cifras agregadas (dashboard) no siempre coincidirán; es normal que haya pequeñas diferencias entre ambas. Las cifras agregadas deberían coincidir con My Dashboards para la misma app y las mismas fechas.
@@ -318,6 +350,8 @@ Las ejecuciones completadas aparecen en **actividad** con el mismo contenido env
 Si una ejecución vuelve vacía o no cumple el objetivo, lee el razonamiento antes de cambiar la tarea. En [Analizar actividad](#analizar-la-actividad-con-el-asistente-de-ia), pregunta qué datos ha usado el agente, por qué ha llegado a ese resultado y qué debes cambiar en el plan. Reescribir la tarea a ciegas suele dar una respuesta distinta, pero igual de incorrecta. Después, edita el plan o la tarea y vuelve a ejecutar el agente.
 
 Si el razonamiento también vuelve vacío, es posible que hayas solicitado datos que todavía no existen. Consulta **Limitaciones** más arriba, revisa el prompt y vuelve a intentarlo.
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -512,6 +546,8 @@ Las palabras clave que están dentro del objetivo o que aún no tienen recomenda
 **Configuración. Para desplegar el agente:**
 
 1. En **Configuración de costos**, conecta Apple Ads con la cuenta que ejecuta tus palabras clave.
+
+   <div id="note-2" />
 
    > 📘 **Nota:**
    >

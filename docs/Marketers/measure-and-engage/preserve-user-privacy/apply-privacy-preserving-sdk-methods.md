@@ -39,9 +39,13 @@ Después de considerar qué opciones deseas utilizar, comparte la información d
 
 Analicemos cada método.
 
+<div id="use-start-and-stop-methods" />
+
 ## Usar métodos de start y stop
 
 El SDK envía instalaciones y eventos in-app a AppsFlyer solo después de que se llama al método de `start`. Cualquier evento que preceda a la llamada de `start` no será reportado por el SDK. De manera similar, si la llamada de `start` se invierte posteriormente invocando el método `stop`, no se enviarán eventos a partir de entonces.
+
+<div id="impact-on-attribution" />
 
 ### Impacto en la atribución
 
@@ -50,6 +54,8 @@ La atribución **no** ocurre cuando:
 * no se llama al método de `start`.
 * se llama al método `stop` para revertir un inicio anterior.
 
+<div id="common-use-cases" />
+
 ### Casos de uso comunes
 
 | Caso de uso | Descripción |
@@ -57,6 +63,8 @@ La atribución **no** ocurre cuando:
 | Opt-in o opt-out en la apertura | El `start` de llamada después de que el usuario acepte compartir datos en la primera apertura.  <br />Si el usuario no da su consentimiento para compartir datos, no llames   <br />`start`. |
 | Opt-out de la sesión | En cada sesión de la aplicación, solicita su consentimiento y llama o no a `start` en consecuencia. |
 | Opt-out única (cuando un usuario opta por el opt-in y luego decide cambiar). | El `stop` de la llamada evita que el SDK envíe más eventos. |
+
+<div id="developer-reference" />
 
 ### Referencia del desarrollador
 
@@ -76,11 +84,15 @@ Para referencia del desarrollador y documentación sobre cómo usar los métodos
 </Tab>
 </Tabs>
 
+<div id="prevent-sharing-data-with-networks" />
+
 ## Evita el uso compartido de datos con las redes
 
 En el momento de la integración con una red de anuncios o una red de autoreporte (SRN), puedes optar por compartir o no compartir información a nivel de usuario con ese partner. En el SDK, puedes filtrar aún más el uso compartido de datos con todos o algunos asociados de negocios de **acuerdo con las preferencias del usuario final** mediante el método `setSharingFilterForPartners`.
 
 Cuando utilizas este método, AppsFlyer deshabilitará el intercambio de datos del usuario con el partner excluido por cualquier medio, incluidos postbacks, APIs, reportes de raw data, etc.
+
+<div id="impact-on-attribution-1" />
 
 ### Impacto en la atribución
 
@@ -93,6 +105,8 @@ Cuando utilizas este método, AppsFlyer deshabilitará el intercambio de datos d
   >
   > AppsFlyer no puede atribuir datos de engagement a ningún SRN excluido de la obtención de tus datos.
 
+
+<div id="developer-reference-1" />
 
 ### Referencia del desarrollador
 
@@ -112,6 +126,8 @@ Para referencia del desarrollador y documentación sobre cómo evitar el interca
 </Tab>
 </Tabs>
 
+<div id="anonymize-user-information" />
+
 ## Anonimiza la información del usuario
 
 Puedes configurar el SDK para indicar a AppsFlyer que elimine toda la información que identifique al usuario mediante el método `anonymizeUser`. En este caso, el SDK envía instalaciones y eventos in-app a AppsFlyer, donde toda la información de identificación se elimina o se aplica hash:
@@ -122,6 +138,8 @@ Puedes configurar el SDK para indicar a AppsFlyer que elimine toda la informaci�
 La siguiente imagen muestra una fila de ejemplo de raw data después de la anonimización (eliminación y hash).
 
 ![Ejemplo de fila de raw data que muestra campos eliminados y con Hashing tras la anonimización](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+
+<div id="impact-on-attribution-2" />
 
 ### Impacto en la atribución
 
@@ -148,6 +166,8 @@ Como resultado, estos eventos in-app se contabilizan como **orgánicos** o se **
 >
 > Se admiten <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#atribución">SRN</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#probabilistic-modeling">PMOD (probabilístico)</Anchor> y <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#install-referrer-android-only">Atribución basada en el referrer</Anchor> en modo anonimizado. Esto incluye <Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide#referencia-de-instalación-de-google-play">Google Play Install Referrer</Anchor>, otros referrers de tiendas (como <Anchor target="_blank" href="/marketers/es/docs/set-up-multi-store-android-attribution#referrer-implementation-thirdparty-android-app-stores">Xiaomi, Huawei,</Anchor> <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution#referencia-de-precarga-de-samsung">y Samsung</Anchor>) y <Anchor target="_blank" href="/marketers/es/docs/set-up-appsflyer-preload-referrer-attribution?utm_source=chatgpt.com">AppsFlyer preload referrer</Anchor>
 
+<div id="developer-reference-2" />
+
 ### Referencia del desarrollador
 
 Para referencia del desarrollador y documentación sobre cómo anonimizar la información del usuario, consulte:
@@ -166,11 +186,15 @@ Para referencia del desarrollador y documentación sobre cómo anonimizar la inf
 </Tab>
 </Tabs>
 
+<div id="remove-specific-device-identifiers" />
+
 ## Elimina identificadores de dispositivos específicos
 
 Puedes evitar que el SDK recopile y envíe identificadores de dispositivo específicos a AppsFlyer. A diferencia de usar el método `anonymizeUser`, deshabilitar identificadores específicos te permite decidir los identificadores que desea conservar.
 
 La API del SDK incluye los siguientes métodos para deshabilitar identificadores.
+
+<div id="android-identifiers" />
 
 ### Identificadores de Android
 
@@ -179,12 +203,16 @@ La API del SDK incluye los siguientes métodos para deshabilitar identificadores
 | [`Las instalaciones de los SRNs excluidos no se atribuyen y sus datos no se comparten con tus partners integrados.`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setdisableadvertisingidentifiers) | <ul><li>Google Advertising ID (GAID)</li><li>Open Anonymous Device Identifier (OAID)</li><li>Amazon Advertising ID (AAID)</li></ul> |
 | [`setcollectoaid`](https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectoaid) | Open Anonymous Device Identifier (OAID) |
 
+<div id="ios-identifiers" />
+
 ### Identificadores de iOS
 
 | Método | Identificador deshabilitado |
 | --- | --- |
 | [`Si llamas a anonymizeUser antes del start de la llamada, no se producirá ninguna atribución.`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableadvertisingidentifier) | IDFA (iOS 13 y anteriores) |
 | [`disableIDFVCollection`](https://dev.appsflyer.com/hc/docs/ios-sdk-reference-appsflyerlib#disableidfvcollection) | IDFV |
+
+<div id="developer-reference-3" />
 
 ### Referencia del desarrollador
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En resumen:** Supera el reto de la atribución de la publicidad de aplicaciones móviles en podcasts utilizando una de las soluciones de AppsFlyer.
 
+<div id="podcast-attribution-methods" />
+
 ## Métodos de atribución de podcasts
 
 Los podcasts son una fuente de tráfico de usuarios móviles relativamente poco explotada. Los usuarios de podcasts pueden reaccionar favorablemente a los anuncios de aplicaciones móviles, pero la atribución supone un reto. Esto se debe a que los podcasts no tienen una interfaz visual que genere impresiones o clics de los usuarios.
@@ -34,6 +36,8 @@ Sin embargo, hay opciones que permiten superar estas limitaciones para realizar 
 * Página de aterrizaje específica
 * Activación de un clic de OneLink desde una aplicación de podcast específica
 
+<div id="dedicated-landing-page" />
+
 ### Página de aterrizaje específica
 
 Una llamada a la acción (CTA) en un podcast, cuando anuncia una aplicación móvil, suele consistir en mencionar el nombre de una aplicación para que los usuarios puedan buscarla.
@@ -41,6 +45,8 @@ Una llamada a la acción (CTA) en un podcast, cuando anuncia una aplicación mó
 * En un escenario con una página de aterrizaje específica, la CTA es un destino web concreto dentro de una página de aterrizaje.
 * Esta página incluye un elemento web (botón, banner, etc.) impulsado por OneLink. Para crear fácilmente banners dinámicos para páginas de aterrizaje sin necesidad de programar, recomendamos usar <Anchor target="_blank" href="/marketers/es/docs/smart-banners-mobile-web-to-app-for-marketers">Smart Banners</Anchor>.
 * Los usuarios que interactúan con este elemento e instalan la aplicación móvil se atribuyen según los parámetros de OneLink.
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -52,6 +58,8 @@ Una llamada a la acción (CTA) en un podcast, cuando anuncia una aplicación mó
 >
 > Los usuarios que hacen clic en la URL de OneLink e instalan la aplicación se atribuyen, en la plataforma de AppsFlyer, a la fuente de medios «podcast» y a la campaña «joe».
 
+<div id="firing-onelink-click-from-a-podcast-app" />
+
 ### Activación de un clic de OneLink desde una aplicación de podcast
 
 Este método supera la falta de interfaz visual y permite la atribución de usuarios sin visitar una página de aterrizaje específica.
@@ -60,6 +68,8 @@ Este método supera la falta de interfaz visual y permite la atribución de usua
 * Normalmente esto ocurre al final de un anuncio, pero se puede programar de otra forma.
 * Los usuarios que instalan una aplicación después de escuchar un anuncio de podcast se atribuyen según los parámetros de OneLink.
 
+<div id="example-1" />
+
 > 📄 **Ejemplo**
 >
 > Decides promocionar tu aplicación en el pódcast «Making history», que permite activar OneLink directamente después de que los usuarios escuchen el anuncio.
@@ -67,6 +77,8 @@ Este método supera la falta de interfaz visual y permite la atribución de usua
 > La URL de OneLink contiene el ID de dispositivo, la fuente de medios «podcast» (&pid=podcast) y el nombre de la campaña «making history» (&c=making%20history).
 >
 > El anuncio menciona varias veces el nombre de tu aplicación, pero sin una URL específica. Sin embargo, en AppsFlyer, los usuarios que instalan la aplicación se atribuyen a la fuente de medios «podcast» y a la campaña «making history».
+
+<div id="who-gets-the-attribution" />
 
 #### ¿Quién obtiene la atribución?
 

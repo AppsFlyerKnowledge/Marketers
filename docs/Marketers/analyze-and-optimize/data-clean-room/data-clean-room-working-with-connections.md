@@ -24,12 +24,16 @@ x-zendesk:
 
 > **En resumen:** Conecta tus servicios en la nube a Data Clean Room para cargar datos y recibir reportes.
 
+<div id="overview" />
+
 ## Visión general
 
 Una vez que hayas configurado tus servicios en la nube para usarlos con Data Clean Room (DCR), el siguiente paso es conectarlos al DCR.
 
 * Las conexiones desde las que el DCR lee datos propios de tus sistemas se llaman **conexiones entrantes.** Utilizas estas conexiones al configurar tus fuentes de datos personalizadas.
 * Las conexiones a través de las que el DCR entrega reportes después del procesamiento se llaman **conexiones salientes.** Utilizas estas conexiones al configurar tus reportes.
+
+<div id="creating-inbound-connections" />
 
 ## Crear conexiones entrantes
 
@@ -56,6 +60,8 @@ En ambos casos, el proceso es el mismo y puedes usar las conexiones creadas exac
    * Si no hay conexiones definidas en tu cuenta, se abrirá el cuadro de diálogo **Nueva conexión**, pidiéndote que crees una.
    * Si tienes conexiones existentes pero quieres usar una nueva, haz clic en el ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) botón para abrir el **cuadro de diálogo Nueva conexión**.
 2. Continúa con las instrucciones en la sección [Completa la conexión](#completa-la-conexión) a continuación.
+
+<div id="complete-the-connection" />
 
 #### Completa la conexión
 
@@ -95,6 +101,8 @@ En el cuadro de diálogo **Nueva conexión**, introduce el nombre del <Anchor ta
 
 </Accordion>
 
+<div id="creating-outbound-connections" />
+
 ## Crear conexiones de salida
 
 DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers">AppsFlyer Data Locker</Anchor>. Como los reportes se entregan a través de Data Locker, las conexiones DCR de salida son en realidad conexiones de Data Locker. Puedes elegir crear estas conexiones de la siguiente manera:
@@ -103,6 +111,8 @@ DCR entrega reportes a tus servicios en la nube seleccionados utilizando <Anchor
 * Como parte del proceso de creación del reporte (desde la página de DCR en AppsFlyer).
 
 En cualquier caso, el proceso es prácticamente el mismo y puedes utilizar las conexiones creadas exactamente de la misma manera.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -127,7 +137,11 @@ En cualquier caso, el proceso es prácticamente el mismo y puedes utilizar las c
 2. Continúa con las instrucciones de la [Completa la conexión](#completa-la-conexión-1) sección, a continuación.
 3. Después de crear la conexión, vuelve a la pestaña DCR de tu navegador y selecciona la conexión recién creada de la lista de conexiones de Data Locker.
 
+<div id="complete-the-connection-1" />
+
 #### Completa la conexión
+
+<div id="important" />
 
 > 🚧 **Importante:**
 >

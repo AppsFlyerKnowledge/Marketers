@@ -24,6 +24,8 @@ x-zendesk:
 
 > **En resumen:** Define tus propias métricas y úsalas para ver datos en My Dashboards.
 
+<div id="about-custom-metrics" />
+
 ## Acerca de métricas personalizadas
 
 Las métricas personalizadas te permiten adaptar el análisis de datos a las necesidades únicas de tu negocio al definir cálculos basados en datos existentes. Proporcionan más control y flexibilidad que las métricas estándar, lo que te permite combinar múltiples métricas, crear proyecciones y personalizar KPIs.
@@ -36,6 +38,8 @@ Por ejemplo, en lugar de métricas genéricas como "Ingresos" o "Clics", puedes 
 Las métricas personalizadas son compatibles con todos los tipos de widgets en My Dashboards, incluidos tablas, gráficos y KPIs. Ya sea que seas un marketer que rastrea el ROI de la campaña, un gerente de producto que monitorea el compromiso o un analista que pronostica el rendimiento, las métricas personalizadas mejoran tu capacidad para analizar tendencias, identificar oportunidades y tomar decisiones basadas en datos para las necesidades únicas de tu negocio, todo directamente desde tu dashboard.
 
 **Nota**: Las dimensiones personalizadas que creas están a nivel de cuenta, lo que significa que diferentes aplicaciones en la misma cuenta de AppsFlyer pueden usar las mismas dimensiones personalizadas.
+
+<div id="procedures" />
 
 ## Procedimientos
 
@@ -102,6 +106,8 @@ Puedes eliminar una métrica personalizada ya sea desde el dashboard o desde den
 * En cualquier gráfico o tabla, en el menú desplegable **Métricas**, encuentra la métrica que deseas eliminar y haz clic en el ícono **Eliminar**.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Leanplum, partner integrado de AppsFlyer, es una plataforma de marketing móvil diseñada para la acción inteligente. Su solución integrada ofrece engagement a través de los mensajes y la experiencia in-app. Leanplum ofrece Mensajes, automatización, edición de apps, personalización, pruebas A/B y analíticas.
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-leanplum" />
 
 ## Configuración de Leanplum
 
@@ -58,10 +62,14 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activate Partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -79,6 +87,8 @@ Si la opción está inactiva, el IDFA se envía en un postback. Si no se encuent
 
 Si no hay ninguno disponible, no se envía ningún postback.
 
+<div id="obtaining-the-app-id-and-client-key" />
+
 ### Obtener el ID de la app y la clave de cliente
 
 Haz clic en tu nombre en la parte superior derecha de la pantalla y selecciona **App Settings**
@@ -90,6 +100,8 @@ Selecciona una aplicación y haz clic en **Keys & Settings**
 [![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
 
 ![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -134,6 +146,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 Los permisos no están disponibles para Leanplum.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-leanplum" />
 
 ## Visualización de datos de atribución de usuarios en Leanplum
 

@@ -27,12 +27,16 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## Los principios de la PBA
 
 * La PBA consolida los datos de los sitios web y las aplicaciones móviles para proporcionar una visión holística del rendimiento de la campaña a través de las propiedades digitales de una marca. Los anunciantes usan la PBA para entender las trayectorias de los clientes en términos de personas, en lugar de dispositivos.
 * Los datos de la PBA, en los paneles de control de la PBA y en los reportes de raw data, se utilizan para los análisis de marketing y la optimización de las campañas.
 * Los datos consisten en las visitas a sitios web y los eventos de usuarios que se adquieren usando <Anchor target="_blank" href="/marketers/es/docs/pba-web-sdk-integration-guide">SDK o API</Anchor>.
 * Para cada visita al sitio web: se determina la fuente de medios responsable de llevar la visita. Cualquier evento resultante (conversión) se <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules">atribuye</Anchor> a la fuente de medios que causó la visita.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### Paneles de control analíticos y raw data de la PBA
 
@@ -42,11 +46,15 @@ x-zendesk:
   * Reportes de raw data
 * Los datos en los paneles de control <Anchor target="_blank" href="/marketers/es/docs/using-pba-dashboards">se filtran y agrupan</Anchor> usando dimensiones como plataforma móvil, canal de medios y tipo de medios.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-dashboard">Atribución del sitio web</Anchor>
 
 [![WebsiteAttributionTable](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
 
 Analiza las fuentes de tráfico web y las campañas de marketing que impulsan las visitas de los usuarios y las conversiones en tu sitio web. Descubre las diferencias de rendimiento hasta el nivel de anuncio. Admite todos los parámetros de consulta de AppsFlyer en el enlace sin necesidad de redirigir a los usuarios a los servidores de AppsFlyer.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/es/docs/pba-web-assisted-installs">Instalaciones asistidas por web</Anchor>
 
@@ -67,6 +75,8 @@ Los reportes de raw data están disponibles a través de Data Locker. El raw dat
 * Las trayectorias de la **ruta de conversión** y de las **instalaciones asistidas por web** se proporcionan en su totalidad.
 * Las herramientas de Business Intelligence se utilizan para analizar los datos y así obtener insights adicionales.
 * <Anchor target="_blank" href="/marketers/es/docs/pba-raw-data-reports">Saber más sobre raw data de PBA</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **Consulta también**
 >

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Aprende más sobre las propiedades de las campañas y cómo se muestran en los datos de ETL de costos de AppsFlyer.
 
+<div id="about-campaign-properties" />
+
 ## Acerca de las propiedades de campaña
 
 Las propiedades de campaña son un grupo especial de dimensiones que representan varias configuraciones de una campaña publicitaria, incluidos el objetivo de la campaña, el tipo de oferta y el monto de la oferta. Estas son las configuraciones que normalmente ves y editas en el panel de control de tu red de publicidad, pero AppsFlyer extrae las dimensiones de las propiedades de la campaña y hace que los datos estén disponibles en el ETL de costos, al igual que ves otras dimensiones.

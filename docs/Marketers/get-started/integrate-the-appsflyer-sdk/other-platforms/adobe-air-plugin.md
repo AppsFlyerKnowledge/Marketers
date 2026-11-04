@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En resumen:** Integra el SDK de AppsFlyer en aplicaciones iOS/Android desarrolladas con la plataforma de desarrollo Adobe AIR para medir las instalaciones, los eventos in-app, las fuentes de medios y más.
 
+<div id="plugin-information" />
+
 ## Información del plugin
 
 Plataformas compatibles:
@@ -37,6 +39,8 @@ Basado en:
 
 * iOS AppsFlyer SDK V6.0.3
 * SDK para Android de AppsFlyer V5.4.1
+
+<div id="installation-and-implementation" />
 
 ## Instalación e implementación
 
@@ -53,6 +57,8 @@ Si lo siguiente no se ha añadido automáticamente, añádelo a APP\_NAME-app.xm
   <extensionID>com.appsflyer.adobeair</extensionID>
 </extensions>
 ```
+
+<div id="notes-for-android-apps" />
 
 > 📘 **Notas para aplicaciones Android**
 >
@@ -238,6 +244,8 @@ appsFlyer.setAndroidIdData("AndroidIDString");
 ```
 
 </Accordion>
+
+<div id="api-reference" />
 
 ## Referencia de API
 

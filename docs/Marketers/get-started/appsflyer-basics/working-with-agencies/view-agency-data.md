@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **En resumen:** Obtén información sobre los datos de las agencias para comprender su impacto en la presentación de tus datos en AppsFlyer.
 
+<div id="about-agency-data" />
+
 ## Sobre los datos de la agencia
 
 Al trabajar con agencias, podrás ver el tráfico que han generado en los dashboards y reportes de AppsFlyer. Esto significa que se revelan tus fuentes de medios.
+
+<div id="viewing-agency-traffic-in-reports" />
 
 ### Visualización del tráfico de las agencias en los reportes
 
@@ -43,6 +47,8 @@ Al trabajar con agencias, podrás ver el tráfico que han generado en los dashbo
 1. En AppsFlyer, en el menú lateral, selecciona **Reporte** > **Exportación de Datos Agregados**.
 2. Descarga un reporte que incluya la atribución de fuentes de medios.
 
+<div id="viewing-agency-traffic-in-the-overview-dashboard" />
+
 ### Visualización del tráfico de las agencias en el panel de control general
 
 **Para ver el tráfico de las agencias:**
@@ -53,6 +59,8 @@ Al trabajar con agencias, podrás ver el tráfico que han generado en los dashbo
    El dashboard muestra las fuentes de medios utilizadas por las agencias.
 
 **Nota**: Con el filtro **Agrupar por**, también puedes agrupar los datos por agencia. Al seleccionar varias agencias en el filtro de agencias y agrupar por agencia, puedes comparar en tu dashboard el rendimiento de las diferentes agencias con las que estás realizando campañas.
+
+<div id="viewing-agency-traffic-in-the-retention-dashboard" />
 
 ### Visualización del tráfico de las agencias en el dashboard de retención
 

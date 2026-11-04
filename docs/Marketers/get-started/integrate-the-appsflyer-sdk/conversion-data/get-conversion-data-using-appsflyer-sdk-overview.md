@@ -27,6 +27,8 @@ Usa los datos de conversión para:
 * Envía usuarios a actividades específicas
 * Asístelos con contenido personalizado
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > **Limitaciones de los datos de conversión del SDK**
@@ -36,6 +38,8 @@ Usa los datos de conversión para:
 > **Recomendación:**
 > No uses el método Get Conversion Data (GCD) para recopilar o validar Datos de atribución.
 > Para obtener resultados de atribución precisos y completos, usa los dashboards, los reportes o las API de AppsFlyer.
+
+<div id="get-conversion-data" />
 
 ## Obtener datos de conversión
 

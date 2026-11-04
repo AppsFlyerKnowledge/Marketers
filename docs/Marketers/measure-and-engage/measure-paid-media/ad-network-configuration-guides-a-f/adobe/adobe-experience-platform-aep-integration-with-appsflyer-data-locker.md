@@ -22,9 +22,13 @@ x-zendesk:
 ---
 > **De un vistazo:** configura una solución integrada con Adobe Experience Platform (AEP) para enviar datos de eventos sin procesar al lago de datos de Adobe. AEP es la capa de datos para todos los clientes, ya que centraliza los datos en Adobe, una plataforma de datos de clientes que captura los viajes del cliente, los analiza y los proporciona.
 
+<div id="overview" />
+
 ## Visión general
 
 La integración de Data Locker con AEP te permite usar los datos de AppsFlyer dentro de Adobe Experience Platform. La integración usa el componente listo para usar (OOTB), respaldado por la plataforma de datos de clientes en tiempo real (RTCDP). Para subir datos de AppsFlyer a Adobe Experience Platform (AEP), los clientes primero deben configurar una conexión del bucket de Data Locker (GCS y AWS) y después configurar AEP para cargar los datos desde el bucket en un conjunto de datos existente o nuevo.
+
+<div id="setting-up-the-integration" />
 
 ## Configuración de la integración
 
@@ -59,6 +63,8 @@ La integración de Data Locker con AEP te permite usar los datos de AppsFlyer de
    5. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
    6. En **Scheduling**, establece la frecuencia en 60 minutos.
    7. Repite el proceso para cada reporte de Data Locker que desees.
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

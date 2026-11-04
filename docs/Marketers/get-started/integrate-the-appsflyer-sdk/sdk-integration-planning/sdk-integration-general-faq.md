@@ -23,15 +23,21 @@ x-zendesk:
 ---
 > **At a glance:** El SDK de AppsFlyer te permite publicitar de forma segura tu aplicación, atribuir, hacer enlaces profundos y recopilar información de comportamiento de tus usuarios móviles. Puedes configurar y comenzar a trabajar con cualquier red de publicidad y/o plataforma en cuestión de minutos, ¡no semanas o meses!
 
+<div id="how-to-install-and-update-the-appsflyer-sdk" />
+
 ## ¿Cómo instalar y actualizar el SDK de AppsFlyer?
 
 Para saber cómo instalar y actualizar el SDK de AppsFlyer, consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">el Centro de desarrollo</Anchor>. **Nota**: actualizar el SDK implica lanzar una nueva versión de tu app en las tiendas.
+
+<div id="is-it-hard-to-integrate-the-appsflyer-sdk" />
 
 ## ¿Es difícil integrar el SDK de AppsFlyer?
 
 En menos de una hora, un desarrollador experimentado puede preparar aplicaciones para la atribución con AppsFlyer. Luego, solo necesitan Unos minutos por aplicación.
 
 Echa un vistazo a las guías de integración del SDK de AppsFlyer para <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Android</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">iOS</Anchor>, Unity, o estas <Anchor target="_blank" href="/marketers/es/docs/other-platforms">otras plataformas</Anchor>.
+
+<div id="does-the-appsflyer-sdk-affect-app-download-time" />
 
 ## ¿El SDK de AppsFlyer afecta el tiempo de descarga de la aplicación?
 
@@ -40,11 +46,15 @@ Los paquetes del SDK de AppsFlyer están diseñados y desarrollados para tener u
 * **SDK de Android:** ~300KB
 * **SDK de iOS:** ~3,4 MB
 
+<div id="does-the-appsflyer-sdk-affect-app-performance" />
+
 ## ¿El SDK de AppsFlyer afecta el rendimiento de la aplicación?
 
 Las API del SDK de AppsFlyer son principalmente métodos *setter*/*getter* o métodos rápidos de servicios web asíncronos que envían/reciben datos de los servidores de AppsFlyer. Esto significa que las API del SDK tienen un efecto insignificante en el rendimiento de la aplicación.
 
 En otras palabras, **el SDK de AppsFlyer no tiene ningún efecto en el rendimiento de la aplicación ni en la experiencia del usuario**.
+
+<div id="can-i-record-in-app-events-that-occur-outside-my-app" />
 
 ## ¿Puedo registrar eventos in-app que ocurran fuera de mi aplicación?
 

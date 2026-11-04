@@ -27,11 +27,15 @@ x-zendesk:
 
 <Embed title="Primeros pasos: Onboarding para marketers" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/gamcb25kgu" providerUrl="https://fast.wistia.com" />
 
+<div id="introduction" />
+
 ## Introducción
 
 Este documento ayuda a los gerentes de producto del marketer (propietario de la aplicación) a **planificar y ejecutar su onboarding con AppsFlyer**. Para cada elemento, se proporcionan el propietario y el tiempo aproximado de implementación.
 
 Ten en cuenta que las estimaciones de tiempo en este artículo están pensadas como orientación general únicamente. Se basan en nuestra experiencia de trabajo con muchos clientes nuevos, pero reconocemos que cada propietario, aplicación e implementación de cada aplicación es diferente. Tus requisitos de tiempo real pueden variar.
+
+<div id="account-setup" />
 
 ## Configuración de la cuenta
 
@@ -44,9 +48,13 @@ El **administrador de la cuenta** debe completar los siguientes pasos:
 
 **Resultado:** ¡Bienvenido! **Resultado:** ¡Bienvenido! Ahora tienes una cuenta de AppsFlyer activa y usuarios de la cuenta que pueden acceder a ella.
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > ¿Eres nuevo en AppsFlyer y te preguntas qué puede hacer por ti? ¿Eres nuevo en AppsFlyer y te preguntas qué puede hacer por ti? <Anchor target="_blank" href="/marketers/es/docs/welcome-to-appsflyer#qué-puedes-hacer-con-appsflyer">Mira este video de 6 minutos</Anchor>.
+
+<div id="app-onboarding" />
 
 ## Onboarding de la aplicación
 
@@ -58,6 +66,8 @@ Puedes seguir los pasos usando esta guía o a través de la página de onboardin
 
 1. En la barra de menú, haz clic en el menú de usuario (desplegable de dirección de correo electrónico).
 2. Selecciona onboarding de aplicaciones.
+
+<div id="step-1-app-setup" />
 
 ## Paso 1: Configuración de la aplicación
 
@@ -71,6 +81,8 @@ El **administrador de la cuenta** debe completar los siguientes pasos para cada 
 | [Opcional] Migra los dispositivos de usuarios existentes a AppsFlyer | 2 horas | Si tu aplicación ya tiene una base de usuarios considerable, piensa en <Anchor target="_blank" href="/marketers/es/docs/migration-to-appsflyer-from-other-vendors#migración-de-dispositivosopcional">migrarlos a AppsFlyer</Anchor> para evitar cargos dobles.<br /><br />**Nota:** Con la ayuda de tu CSM de AppsFlyer o del equipo de soporte en [hello@appsflyer.com](mailto:hello@appsflyer.com)). |
 
 **Resultado:** Tus aplicaciones ahora están definidas en el dashboard de AppsFlyer.
+
+<div id="step-2-sdk--api-integration" />
 
 ## Paso 2: Integración de SDK / API
 
@@ -88,6 +100,8 @@ Completa los siguientes pasos para cada aplicación definida en AppsFlyer en el 
 
 **Resultado:** Tus aplicaciones están listas para la atribución de instalación, la medición de eventos in-app y otras funcionalidades de AppsFlyer que no requerirán recursos de desarrollo adicionales.
 
+<div id="step-3-attribution-setup" />
+
 ## Paso 3: Configuración de atribución
 
 Completa los siguientes pasos para cada aplicación definida en AppsFlyer en el [Paso 1: Configuración de la aplicación](/docs/getting-started-onboarding-for-marketers#paso-1-configuración-de-la-aplicación):
@@ -101,6 +115,8 @@ Completa los siguientes pasos para cada aplicación definida en AppsFlyer en el 
 | [Opcional] Habilita campañas de retargeting | Gerente de producto | 2 minutos | Activa el Retargeting en la página de Configuración de la aplicación.<br /><br />Saber más: <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">Guía de retargeting</Anchor> |
 
 **Resultado:** Todas las fuentes de medios que atraen tráfico a tus aplicaciones se atribuyen cada vez que los usuarios nuevos o recurrentes interactúan con ellos.
+
+<div id="step-4-additional-setup" />
 
 ## Paso 4: Configuración adicional
 
@@ -120,6 +136,8 @@ Ciertos pasos pueden ser obligatorios para cumplir con tus objetivos comerciales
 | Consigue una vista unificada de las trayectorias de los clientes en todos los canales, plataformas y dispositivos | Gerente de producto/  <br />Desarrolladores | <Anchor target="_blank" href="/marketers/es/docs/people-based-attribution-pba-overview">Atribución people-based (PBA)</Anchor> |
 | Asegurar el cumplimiento de las regulaciones de privacidad: GDPR, CCPA, etc. | Gerente de producto/  <br />Desarrolladores | Permitir a los usuarios <Anchor target="_blank" href="/marketers/es/docs/apply-privacy-preserving-sdk-methods">excluirse</Anchor> de la atribución. |
 
+<div id="enrich-your-knowledge" />
+
 ## Enriquece tus conocimientos
 
 Recomendado para todos los usuarios de AppsFlyer:
@@ -132,11 +150,17 @@ Recomendado para todos los usuarios de AppsFlyer:
 | Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/aggregated-and-analytics-reporting-overview">análisis y herramientas de reportes agregadas</Anchor> | 30 minutos |
 | Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">reportes de raw data</Anchor> | 30 minutos |
 
+<div id="related" />
+
 ## Relacionado
+
+<div id="tip-1" />
 
 > 👍 **Consejo**
 >
 > ¿Eres nuevo en UA (adquisición de usuarios)? Aprende <Anchor target="_blank" href="https://www.appsflyer.com/resources/ecommerce/getting-started-user-acquisition-apps-complete-guide/">todo sobre</Anchor> los desafíos principales y elementos esenciales de la planificación, ejecución y optimización continua de tus esfuerzos de adquisición de usuarios.
+
+<div id="note" />
 
 > 📘 **Nota**
 >

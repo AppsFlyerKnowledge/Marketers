@@ -30,6 +30,8 @@ x-zendesk:
 >
 > **¡Importante!** Debes tener una suscripción a Data Locker para usar los reportes de medición del rendimiento web en Data Locker.
 
+<div id="about-the-web-performance-measurement-reports" />
+
 ## Acerca de los reportes de medición de rendimiento web
 
 Data Locker proporciona dos reportes para la medición de rendimiento web, **End User Events** y **Conversions**, cada uno diseñado para distintas necesidades de análisis.
@@ -46,6 +48,8 @@ Data Locker proporciona dos reportes para la medición de rendimiento web, **End
 
 La interfaz de Informes avanzados de Data Locker también muestra **Engagements** y **Eventos de usuario final multiplataforma** como opciones independientes de reportes de medición del rendimiento web. Este artículo abarca **Eventos de usuario final** y **Conversiones**, los dos reportes que se usan para la mayoría de los análisis de medición del rendimiento web.
 
+<div id="select-a-web-performance-measurement-report" />
+
 ## Selecciona un reporte de medición del rendimiento web
 
 Antes de exportar datos de medición del rendimiento web, selecciona el reporte correspondiente en Data Locker.
@@ -54,6 +58,8 @@ Antes de exportar datos de medición del rendimiento web, selecciona el reporte 
 2. Haz clic en la pestaña **Informes avanzados**.
 3. Selecciona **Eventos de usuario final** o **Conversiones** en la lista de reportes de medición del rendimiento web.
 4. Haz clic en **Guardar configuración**.
+
+<div id="report-fields" />
 
 ## Campos de reporte
 
@@ -64,12 +70,16 @@ Para conocer qué campos contienen los reportes, descarga un ejemplo de cada rep
 
 El reporte de ejemplo incluye todos los campos del reporte y sus valores. Para ver las definiciones de los campos, consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">diccionario de campos</Anchor>.
 
+<div id="report-timing-and-data-freshness" />
+
 ## Frecuencia del reporte y actualización de los datos
 
 Usa estos detalles para entender cuándo se añaden datos nuevos y cuándo los eventos recientes pasan a estar disponibles en el reporte.
 
 * **Frecuencia del reporte**: Se añaden datos nuevos cada hora.
 * **Actualización de los datos**: Los eventos suelen aparecer en el reporte en un plazo de 2 a 3 horas desde que se producen.
+
+<div id="heres-how-each-batch-works" />
 
 ### Así es como funciona cada lote:
 
@@ -80,9 +90,13 @@ Usa estos detalles para entender cuándo se añaden datos nuevos y cuándo los e
 
 [![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
 
+<div id="when-will-these-events-appear-in-the-report" />
+
 ### ¿Cuándo aparecerán estos eventos en el reporte?
 
 Los eventos se escriben en los reportes **cuando termina el procesamiento**. Por ejemplo, los eventos de **08:00–09:00**, atribuidos en el lote de las 10:00, aparecerán en la **versión del reporte de las 11:00**.
+
+<div id="example-what-the-1000-am-batch-does" />
 
 ### Ejemplo: qué hace el lote de las 10:00
 
@@ -92,9 +106,13 @@ Los eventos se escriben en los reportes **cuando termina el procesamiento**. Por
 | 01-28-2026 | 12:00 | 09:00 — 10:00 | 10:00-10:30 |
 | 01-28-2026 | 13:00 | 10:00 — 11:00 | 10:00-11:30 |
 
+<div id="download-report-data-from-your-cloud-bucket" />
+
 ## Descarga los datos del reporte desde tu cloud bucket
 
 Para obtener más información sobre cómo descargar los datos del reporte desde tu cloud bucket, consulta <Anchor target="_blank" href="/marketers/es/docs/data-locker-for-marketers#folder-structure">la estructura de carpetas de Data Locker</Anchor>.
+
+<div id="bi-developer-considerations" />
 
 ## Consideraciones para desarrolladores de BI
 
@@ -158,6 +176,8 @@ Aplica los siguientes filtros para asegurarte de que tus consultas de raw data s
 
 * **Filtrar por tipo de conversión (opcional):** Incluye `WHERE conversion_type = 'USER_ACQUISITION'` o `WHERE conversion_type = 'RETARGETING'` para aislar los datos de atribución según el tipo de campaña.
 
+<div id="filter-summary-table" />
+
 #### Tabla de resumen de filtros
 
 | Requisito del filtro | Lógica SQL | Contexto de implementación |
@@ -194,6 +214,8 @@ Usa `COALESCE(customer_user_id, appsflyer_id_value)` siempre que necesites:
 * Filtrar por usuarios específicos
 * Unir tablas por usuario
 * Calcular cualquier métrica a nivel de usuario
+
+<div id="example-count-distinct-users" />
 
 #### Ejemplo: contar usuarios distintos
 
@@ -428,6 +450,8 @@ ORDER BY cohort_date, cohort_users DESC
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Especificaciones y limitaciones
 
 Los siguientes campos **no son compatibles con los datos web** y siempre estarán vacíos:
@@ -439,6 +463,8 @@ Los siguientes campos **no son compatibles con los datos web** y siempre estará
 | `platform_group` | conversiones |
 | `app_version__conversion` | end\_user\_events |
 | Todos los campos `__assist_*` | conversiones |
+
+<div id="see-also" />
 
 ## Consulte también
 

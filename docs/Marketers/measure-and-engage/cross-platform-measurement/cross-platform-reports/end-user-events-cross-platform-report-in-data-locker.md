@@ -25,11 +25,15 @@ El reporte de eventos de usuario final multiplataforma es un reporte de raw data
 
 Para obtener más información sobre el flujo y la configuración de atribución basada en el usuario, consulta <Anchor target="_blank" href="/marketers/es/docs/beta-user-based-cross-platform-attribution">Atribución multiplataforma basada en el usuario</Anchor>.
 
+<div id="report-fields" />
+
 ## Campos de reporte
 
 Para saber qué campos contiene el reporte, [descarga una muestra del reporte](https://docs.google.com/spreadsheets/d/e/2PACX-1vRhOl-tyaJvgPd9rxGkGMNrgzHPpr7ZsMMnONOHkzdObor158gJPt7XwCBkreM4ka4OkGIyDmqCp_hh/pub?output=csv).
 
 El reporte de ejemplo incluye todos los campos del reporte y sus valores. Para las definiciones de los campos, consulta el <Anchor target="_blank" href="/marketers/es/docs/raw-data-field-dictionary">diccionario de campos</Anchor>.
+
+<div id="report-data-freshness" />
 
 ## Actualización de los datos del reporte
 
@@ -40,9 +44,13 @@ El reporte de ejemplo incluye todos los campos del reporte y sus valores. Para l
 * Los eventos se asignan al intervalo horario correspondiente.
   * Ejemplo: Los eventos que ingresaron en la base de datos entre las 3:00 y las 4:00 aparecerán en el bucket de las 3:00 a. m.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > Normalmente hay un breve retraso entre el momento real de un evento y su entrada en la base de datos. El reporte utiliza la hora de entrada en la base de datos para garantizar una agrupación por horas precisa y coherente.
+
+<div id="example-of-the-800-am-batch-run" />
 
 ### Ejemplo de la ejecución del proceso por lotes de las 8:00
 
@@ -58,11 +66,15 @@ Notas sobre el ejemplo anterior:
 * Los eventos de la última hora antes de la ejecución no se procesan para disponer del tiempo suficiente para enriquecerlos con su CUID correspondiente. En el ejemplo anterior, el proceso por lotes de las 8:00 procesa los eventos que ingresaron en la base de datos entre las 3:00 y las 7:00. Los eventos que ingresaron en la base de datos entre las 7:00 y las 8:00 no se procesan.
 * El reporte solo está disponible una hora después de la ejecución del proceso por lotes, ya que durante esa hora un proceso interno actualiza el lote. En el ejemplo anterior, el proceso por lotes de las 8:00 está disponible a las 9:00.
 
+<div id="how-to-subscribe-to-the-report" />
+
 ## ¿Cómo me suscribo al reporte?
 
 1. En AppsFlyer, desde el menú lateral, selecciona **Exportar** > **Data Locker**.
 2. En el **panel de contenido de Data Locker** , desplázate hacia abajo hasta la **sección de reportes avanzados**.
 3. Selecciona **Eventos de usuarios finales multiplataforma.**
+
+<div id="how-to-access-the-report-data-in-your-cloud-bucket" />
 
 ## ¿Cómo accedo a los datos del reporte en tu bucket de la nube?
 
@@ -72,9 +84,13 @@ La ruta del reporte consta de la siguiente jerarquía de carpetas:
 <bucket-name>/<DataLocker connection name>/t=end_user_events_user_level_cross_platform/dt=<dt=yyyy-mm-dd>/h=<hour>/
 ```
 
+<div id="dl-report-folder-hierarchy" />
+
 ### Jerarquía de carpetas del reporte de Data Locker
 
 [![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+
+<div id="bi-developer-considerations" />
 
 ## Consideraciones para desarrolladores de BI
 
@@ -82,6 +98,8 @@ La ruta del reporte consta de la siguiente jerarquía de carpetas:
 * Los eventos de ingresos por publicidad aún no están incluidos.
 * Todos los datos de la aplicación se proporcionan en un único archivo. Usa el campo ID de aplicación para segregar datos por aplicación o configura Data Locker para que segregue por aplicación. Se recomienda utilizar el tipo de segregación unificada.
 * Los datos previos a la atribución, como los costos, los clics y las impresiones, deben extraerse del reporte ETL de costos.
+
+<div id="query-examples" />
 
 ### Ejemplos de consultas
 

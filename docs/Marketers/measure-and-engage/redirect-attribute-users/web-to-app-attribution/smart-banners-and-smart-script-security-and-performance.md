@@ -23,6 +23,8 @@ x-zendesk:
 
 En estas preguntas y respuestas, abordamos consultas habituales sobre Smart Banners & la integración de Smart Script, con especial atención a su impacto en la seguridad y la velocidad del sitio.
 
+<div id="smart-banners-api-security" />
+
 ## Seguridad de la API de Smart Banners
 
 <div id="what-data-does-the-smart-banner-capture-when-someone-clicks-or-views-it" />
@@ -67,6 +69,8 @@ Sí. La clave web única del cliente actúa como identificador en las llamadas a
 N.º No es posible acceder al código que determina la clave web utilizada en la llamada a la API del banner ni modificarlo. Esto significa que las entidades maliciosas no pueden manipular el cálculo del banner ni la URL de OneLink generada para la CTA del banner.
 
 </Accordion>
+
+<div id="smart-banners-script-hosting-security" />
 
 ## Seguridad del alojamiento del script de Smart Banners
 
@@ -121,6 +125,8 @@ El propietario del sitio web debe <Anchor target="_blank" href="https://dev.apps
 
 </Accordion>
 
+<div id="smart-banners-performance" />
+
 ## Rendimiento de Smart Banners
 
 <div id="does-the-smart-banner-web-sdk-impact-website-load-speed" />
@@ -163,6 +169,8 @@ El tiempo de carga del banner se ve afectado por el Largest Contentful Paint (LC
 * Usa el mismo grosor de fuente en todo el banner.
 
 </Accordion>
+
+<div id="smart-script-security-and-performance" />
 
 ## Seguridad y rendimiento de Smart Script
 

@@ -23,9 +23,13 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#engagements">Los eventos de engagement</Anchor> capturan interacciones de los usuarios, como visualizaciones de anuncios o clics, que se producen antes de una conversión. Se configuran solo para campañas on-site, ya sea por sí solas o combinadas con campañas off-site. (En el caso de las campañas off-site, los datos de engagement los proporcionan directamente partners externos, como Meta o Google. En este artículo se explica cómo configurar engagements por tipo de campaña.
 
+<div id="prerequisites" />
+
 ## Prerrequisitos
 
 Antes de poder configurar la tarea de Engagements, el propietario de la colaboración debe asignársela al colaborador propietario de la plataforma donde se generan los eventos de engagement. Para obtener más información, consulta Asignar tareas de configuración
+
+<div id="set-up-engagements-for-on-site-or-combined-campaigns" />
 
 ## Configurar engagements para campañas on-site o combinadas
 
@@ -55,6 +59,8 @@ Para abrir la página **Configuración de la medición**, sigue estos pasos:
 3. En la parte inferior de la página de colaboración, haz clic en **Configurar medición.**
    * Si el enlace aparece atenuado, configura las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">fuentes de datos</Anchor> y las <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-build-and-activate-audiences">audiencias</Anchor> de la colaboración.
 4. En la página **Configuración de la medición**, haz clic en el panel **Engagements** para abrir el cuadro de diálogo **Engagements**.
+
+   <div id="note" />
 
    > 📘 **Nota:**
    >
@@ -112,6 +118,8 @@ Si se usa una fuente personalizada para proporcionar eventos de engagement a DCP
 <Accordion title="5. Asignar campos de la fuente de engagement">
 
 Si se usa una fuente personalizada para proporcionar eventos de engagement a DCP, asigna los campos de tu fuente de engagement personalizada a sus campos correspondientes en DCP.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >

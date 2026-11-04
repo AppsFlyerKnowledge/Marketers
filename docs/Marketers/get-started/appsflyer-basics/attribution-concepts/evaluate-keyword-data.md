@@ -21,15 +21,21 @@ x-zendesk:
 ---
 > **En resumen:** Obtén datos detallados de palabras clave que te permiten ver qué términos de búsqueda son los más populares, para que puedas optimizar las conversiones orgánicas.
 
+<div id="keyword-data" />
+
 ## Datos de palabras clave
 
 La búsqueda orgánica es una fuente de tráfico valiosa para tus aplicaciones. Los usuarios orgánicos no incurren en costos de adquisición y suelen estar entre las cohortes más comprometidas.
 
 Con algunos ajustes en la página de tu aplicación, es posible aumentar la cantidad de nuevas instalaciones orgánicas. Para optimizar las búsquedas orgánicas, necesitas obtener datos de palabras clave orgánicas para tu aplicación.
 
+<div id="ios-keywords" />
+
 ### palabras clave de iOS
 
 Si trabajas con Apple Search Ads, puedes obtener datos detallados de palabras clave para tus usuarios no orgánicos atribuidos a Apple Search Ads. En iOS, los datos de palabras clave orgánicas no están disponibles.
+
+<div id="android-keywords" />
 
 ### Palabras clave de Android
 
@@ -47,9 +53,13 @@ Se espera que menos del 1% de los usuarios orgánicos de Android sigan este embu
 
 En otros escenarios, Google no comparte datos de palabras clave orgánicas. Por ejemplo, los usuarios que buscan en Google Play no tienen datos de palabras clave orgánicas.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Esta limitación es aplicada por Google a todos los proveedores externos, incluidos todos los proveedores de atribución.
+
+<div id="using-thekeyworddata" />
 
 ### Usando los datos de palabras clave
 
@@ -61,6 +71,8 @@ Los datos de palabras clave orgánicas se encuentran en lo siguiente:
   Ve a los informes de Pivot, Retención y Cohorte y agrupa por palabras clave.  
   Compara la calidad de los usuarios orgánicos según sus palabras clave.
 * Mensajes de <Anchor target="_blank" href="/marketers/es/docs/push-api-streaming-raw-data">Push API</Anchor>
+
+<div id="testing-organickeyworddata" />
 
 ### Pruebas de datos de palabras clave orgánicas
 

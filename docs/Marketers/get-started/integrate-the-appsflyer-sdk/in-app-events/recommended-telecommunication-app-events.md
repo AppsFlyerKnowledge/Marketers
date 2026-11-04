@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide la calidad de tus usuarios a lo largo de su trayectoria de usuario registrando estos eventos in-app sugeridos para tu aplicación de telecomunicaciones.
 
+<div id="-telecommunication" />
+
 ## <Image alt="icono_de_telecomunicaciones.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Telecomunicaciones
 
 Las aplicaciones de telecomunicaciones permiten a los usuarios comprar y gestionar planes de telefonía móvil, planes de datos, etc. Los eventos típicos que recomendamos registrar incluyen las compras, las recargas y las suscripciones.
@@ -32,6 +34,8 @@ Registrar estos eventos puede ayudarte a determinar:
 * Qué planes de acceso son los más populares.
 * Qué productos o paquetes pueden pagar los usuarios.
 * Qué planes tienen más probabilidades de conseguir un compromiso a largo plazo por parte de los clientes.
+
+<div id="important" />
 
 > 🚧 **¡Importante!**
 >
@@ -43,6 +47,8 @@ Registrar estos eventos puede ayudarte a determinar:
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
 [![Diagrama de flujo del recorrido del usuario de la app de telecomunicaciones para eventos recomendados](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Estructuras recomendadas para eventos predefinidos
 
@@ -161,6 +167,8 @@ Cuando el usuario llega a la página de agradecimiento después de una compra ex
 | payment\_method\_type | Tipo de método de pago | credit card, local payment |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Estructuras recomendadas para eventos personalizados
 

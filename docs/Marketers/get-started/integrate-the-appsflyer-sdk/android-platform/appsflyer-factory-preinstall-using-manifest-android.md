@@ -32,7 +32,11 @@ x-zendesk:
 
 ![pre-install-intro-breakdown.png](https://files.readme.io/28b0a0dc5bde0b600011b16de97501fa358e4b710c532118ba6bc09c2c5dc1ce-49753458858385.png)
 
+<div id="introduction" />
+
 ## Introducción
+
+<div id="what-is-a-pre-install-campaign" />
 
 ### ¿Qué es una campaña de preinstalación?
 
@@ -42,9 +46,13 @@ En las campañas de preinstalación, los propietarios de aplicaciones pueden sol
 
 Las campañas de preinstalación también pueden ser una colaboración con fuentes de medios de terceros, que trabajan con diversos fabricantes en nombre de los propietarios de aplicaciones.
 
+<div id="important" />
+
 > 🚧 **¡Importante!**
 >
 > AppsFlyer cuenta una instalación una vez que una aplicación se inicia por primera vez. Por lo tanto, el número de preinstalaciones mostradas es el número de usuarios que inician tu aplicación, y no el número de dispositivos en los que está preinstalada.
+
+<div id="benefits-of-recording-installs-from-pre-install-campaigns" />
 
 ### Ventajas de registrar las instalaciones de las campañas de preinstalación
 
@@ -54,17 +62,25 @@ La atribución de campañas de preinstalación permite medir el:
 * número de usuarios de aplicaciones que aporta cada fabricante
 * LTV de cada usuario y determinar qué fabricante aporta usuarios de alto valor
 
+<div id="how-can-i-measure-pre-install-campaigns" />
+
 ### ¿Cómo puedo medir las campañas de preinstalación?
 
 Hay cuatro formas de medir las campañas de preinstalación. Para más información, consulta la [sección Configuración](/docs/appsflyer-factory-preinstall-using-manifest-android#configuración) de este artículo.
+
+<div id="viewing-pre-install-data" />
 
 ### Visualización de los datos de preinstalación
 
 Las preinstalaciones aparecen en el panel de control de AppsFlyer bajo la fuente de medios atribuida, como cualquier otro evento de instalación. Sin embargo, el nombre de su campaña es siempre **Preinstalación**.
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > Puedes especificar diferentes nombres de campaña para las preinstalaciones con el [método API del SDK](/docs/appsflyer-factory-preinstall-using-manifest-android#sdk-api-method).
+
+<div id="note-1" />
 
 > 📘 **Nota**
 >
@@ -72,6 +88,8 @@ Las preinstalaciones aparecen en el panel de control de AppsFlyer bajo la fuente
 >
 > * Match\_type para las campañas de preinstalación de fábrica se muestra como `preload_conf` en los reportes de raw data.
 > * AppsFlyer muestra en los paneles de control la red de publicidad que impulsó la precarga y las redes de publicidad que contribuyeron al primer inicio de la aplicación. Más información sobre las <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model#preload-campaigns">campañas de precarga</Anchor>.
+
+<div id="setup" />
 
 ## Configuración
 
@@ -94,6 +112,8 @@ Se recomienda este método porque es el más sólido de todos; sin embargo, ten 
 
 El método de propiedades del sistema requiere acciones tanto por parte del desarrollador como del fabricante.
 
+<div id="developer" />
+
 #### desarrollador
 
 Debe proporcionar el APK al fabricante o a la fuente de medios. Se proporciona el APK por defecto. Este método no requiere un APK separado.
@@ -114,6 +134,8 @@ En el archivo **pre\_install.appsflyer**, transmite los parámetros adicionales 
 com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
 ```
 
+<div id="important-1" />
+
 > 🚧 **¡Importante!**
 >
 > Es importante tener en cuenta el siguiente comportamiento al utilizar esta opción:
@@ -125,11 +147,15 @@ com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some
 
 Una vez que tengas el archivo pre\_install.appsflyer, entrégalo a la fuente de medios o al fabricante junto con el APK.
 
+<div id="manufacturer" />
+
 #### Fabricante
 
 El fabricante coloca el archivo ***pre\_install.appsflyer*** en una ruta de archivo de su elección. Los permisos del archivo **pre\_install.appsflyer** deben establecerse en 744.
 
 A continuación, el fabricante edita el archivo de propiedades del sistema para que apunte al archivo ***pre\_install.appsflyer***. Para ello, el fabricante debe agregar un par clave-valor a las propiedades del sistema.
+
+<div id="note-2" />
 
 > 📘 **Nota**
 >
@@ -153,11 +179,15 @@ adb shell chmod 644 /system/build.prop
 adb reboot
 ```
 
+<div id="advantages" />
+
 #### Ventajas
 
 No hay necesidad de mantener diferentes APK para cada fuente de medios o fabricante. No es necesario hacer cambios y agregar rutas a la aplicación en Google Play. Los fabricantes pueden utilizar rutas personalizadas y no hay dependencias entre varias aplicaciones preinstaladas que se ejecuten en distintos dispositivos.
 
 Este método garantiza la atribución a campañas de preinstalación y fuentes de medios. Incluso si un usuario actualiza la aplicación antes de iniciarla o la instala después de hacer clic en un anuncio, la preinstalación se sigue atribuyendo a la fuente de medios de preinstalación o al fabricante.
+
+<div id="disadvantages" />
 
 #### Desventajas
 
@@ -175,11 +205,15 @@ Para utilizar este método, agrega la siguiente llamada al método en la clase A
 
 `setPreinstallAttribution(String mediaSource, String campaign, String siteId)`
 
+<div id="when-working-with-a-media-source" />
+
 #### Al trabajar con una fuente de medios
 
 ```java
 AppsFlyerLib.getInstance().setPreinstallAttribution("MEDIA_SOURCE_NAME", "CAMPAIGN_NAME", "123");\nAppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
+
+<div id="when-working-with-a-manufacturer" />
 
 #### Al trabajar con un fabricante
 
@@ -187,17 +221,23 @@ AppsFlyerLib.getInstance().setPreinstallAttribution("MEDIA_SOURCE_NAME", "CAMPAI
 AppsFlyerLib.getInstance().setPreinstallAttribution(android.os.Build.MANUFACTURER, "CAMPAIGN_NAME", "123");\nAppsFlyerLib.getInstance().init(AF_DEV_KEY , conversionListener , getApplicationContext());
 ```
 
+<div id="note-3" />
+
 > 📘 **Nota**
 >
 > * El parámetro de fuente de medios es obligatorio.
 > * La propiedad `android.os.Build.MANUFACTURER` contiene el nombre del fabricante configurado por el sistema operativo. El uso de esta propiedad no garantiza que se obtenga el nombre del fabricante en el mismo formato en todos los dispositivos de ese fabricante. Asegúrate de que esta propiedad contiene el nombre del fabricante tal y como se espera.
 > * Los parámetros `campaign` y `siteId` son opcionales, pero son necesarios para el método `setPreinstallAttribution`. Si no deseas especificar `campaign` y `siteId`, indica null en ambos.
 
+<div id="advantages-1" />
+
 #### Ventajas
 
 El método de la API del SDK te permite recuperar el nombre del fabricante mediante programación. Independientemente del fabricante, el método del SDK recupera el nombre directamente del dispositivo. Esto significa que puedes mantener un APK para todos los fabricantes con los que colabores.
 
 El método `setPreinstallAttribution` permite especificar el nombre de la campaña. Puedes separar cada fabricante o fuente de medios en diferentes campañas, en lugar de tenerlos todos bajo la campaña "Pre-install".
+
+<div id="disadvantages-1" />
 
 #### Desventajas
 
@@ -209,6 +249,8 @@ En algunos casos, es posible que la instalación no se atribuya a la fuente de m
 
 * Si un usuario con un dispositivo nuevo actualiza la aplicación preinstalada directamente desde Google Play sin iniciarla antes, la instalación se considera orgánica.
 * Si un usuario con un dispositivo nuevo actualiza la aplicación desde Google Play tras hacer clic en un anuncio, la instalación se atribuye a la fuente de medios que sirve el anuncio.
+
+<div id="tip" />
 
 > 👍 **Consejo**
 >
@@ -236,9 +278,13 @@ Agrega una etiqueta de metadatos antes de la etiqueta de cierre de la aplicació
 
 Cuando la aplicación se inicia por primera vez, el SDK de AppsFlyer detecta esta etiqueta de metadatos en el archivo de manifiesto y atribuye la instalación en consecuencia.
 
+<div id="advantages-2" />
+
 #### Ventajas
 
 El método del nombre en el manifiesto se considera un método sencillo para atribuir campañas de preinstalación. Sólo hay que agregar una etiqueta al manifiesto. Además, la fuente de medios o el fabricante no tienen que hacer nada por su parte para permitir la medición de campañas.
+
+<div id="disadvantages-2" />
 
 #### Desventajas
 
@@ -255,17 +301,23 @@ En algunos casos, es posible que la instalación no se atribuya a la fuente de m
 
 <Accordion title="Método de ruta">
 
+<div id="note-4" />
+
 > 📘 **Nota**
 >
 > Compatible con SDK versión 4.5.0 o posterior.
 
 Este método requiere que tanto el desarrollador como el fabricante realicen algunas acciones por su parte.
 
+<div id="developer-1" />
+
 #### desarrollador
 
 El método de ruta te permite especificar una ruta a un archivo que contiene el nombre de la fuente de medios o del fabricante. Debes seguir tres pasos:
 
 1. Crear un archivo que contenga un par clave-valor. El archivo debe llamarse ***pre\_install.appsflyer***. En el archivo, especifica el par clave-valor con el formato `<NOMBRE_DE_PAQUETE>`=`<FUENTE_DE_MEDIOS>`. Por ejemplo, `com.appsflyer.sampleapp=my_media_source`.  
+
+   <div id="passing-additional-pre-install-parameters" />
 
    #### Transmitir parámetros adicionales de preinstalación
 
@@ -274,6 +326,8 @@ El método de ruta te permite especificar una ruta a un archivo que contiene el 
    ```json
    com.appsflyer.sampleapp={"pid":"huawei", "c":"special_campaign","af_adset":"some_adset"}
    ```
+
+   <div id="important-2" />
 
    > 🚧 **¡Importante!**
    >
@@ -294,11 +348,15 @@ El método de ruta te permite especificar una ruta a un archivo que contiene el 
          android:value="/data/local/temp/pre_install.appsflyer" />Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
    ```
 
+<div id="manufacturer-1" />
+
 #### Fabricante
 
 El fabricante debe colocar el archivo en la ruta acordada. Los permisos del archivo pre\_install.appsflyer deben establecerse en 744.
 
 Una vez que la aplicación se inicia, el SDK mira dentro del archivo de manifiesto, ve la ruta especificada y busca el archivo allí. Cuando la encuentra, atribuye la instalación según la fuente de medios que se especifique en ella.
+
+<div id="advantages-3" />
 
 #### Ventajas
 
@@ -310,11 +368,15 @@ AppsFlyer busca el archivo **pre\_install.appsflyer** en dos rutas por defecto:
 
 Algunos fabricantes prefieren colocar el archivo en una ruta no predeterminada. En tal caso, puedes especificar esta ruta no predeterminada en el archivo de manifiesto.
 
+<div id="important-3" />
+
 > 🚧 **¡Importante!**
 >
 > La ruta no predeterminada requiere SDK versión 4.8 o posterior
 >
 > Aunque se permiten rutas no predeterminadas, recomendamos implementar el [método Propiedades del sistema](/docs/appsflyer-factory-preinstall-using-manifest-android#system-properties-method-recommended) en su lugar.
+
+<div id="disadvantages-3" />
 
 #### Desventajas
 
@@ -329,9 +391,13 @@ Si se utiliza una **ruta no predeterminada**, es posible que la instalación no 
 
 </Accordion>
 
+<div id="testing-pre-install-configuration" />
+
 ## Probar la configuración de preinstalación
 
 Esta sección muestra cómo probar y verificar la configuración de preinstalación.
+
+<div id="important-4" />
 
 > 🚧 **¡Importante!**
 >
@@ -345,6 +411,8 @@ Esta sección muestra cómo probar y verificar la configuración de preinstalaci
 <div id="verifying-the-configuration-in-the-app" />
 
 <Accordion title="Verificación de la configuración en la aplicación">
+
+<div id="tip-1" />
 
 > 👍 **Consejo**
 >
@@ -378,6 +446,8 @@ Accede a tu cuenta de AppsFlyer y abre el panel de control de la aplicación que
 3. Repite el proceso para todos los fabricantes o fuentes de medios con los que colabores para las campañas de preinstalación.
 
 </Accordion>
+
+<div id="special-cases" />
 
 ## Casos especiales
 

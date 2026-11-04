@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **En resumen:** Visualización de los datos de costos agregados de cada clic en el anuncio según lo informado por las redes publicitarias.
 
+<div id="basic-cost-reporting" />
+
 ## Reportes básicos de costos
 
 Los datos de costos se reportan a AppsFlyer de la siguiente manera:

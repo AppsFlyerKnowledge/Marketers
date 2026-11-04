@@ -27,6 +27,8 @@ x-zendesk:
 
 ![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
 
+<div id="about-the-experiment" />
+
 ## Sobre el experimento
 
 Las pruebas de <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview">Incrementalidad</Anchor> evalúan el impacto real de tus campañas mediante pruebas A/B, que miden con precisión el “impulso incremental”, es decir, la diferencia entre las conversiones que resultan de tus campañas de remarketing y las que habrían ocurrido de todas formas.
@@ -34,6 +36,8 @@ Las pruebas de <Anchor target="_blank" href="/marketers/es/docs/incrementality-f
 Los resultados son fundamentales para entender el valor real generado por tus inversiones en marketing. Con las pruebas de Incrementalidad, puedes ver de manera objetiva el impacto de canales y campañas específicas, lo que te permite tomar mejores decisiones sobre la asignación de presupuesto y la optimización de campañas.
 
 AppsFlyer hace que las pruebas de Incrementalidad sean sencillas gracias a un proceso automatizado que comienza al crear la audiencia. La audiencia nueva se divide automáticamente entre los socios de medios conectados y un grupo de control mediante el interruptor habilitado “Medir el impacto incremental”. El grupo de control es la porción de la audiencia que se mantiene al margen de los socios y es esencial para las pruebas. Una vez que guardas la audiencia, se crea automáticamente un experimento de Incrementalidad. Después de lanzar tus campañas con los socios y asegurarte de que las campañas correctas estén enlazadas, podrás ver los resultados del experimento en el panel de Incrementalidad.
+
+<div id="get-started" />
 
 ## Comienza
 
@@ -45,6 +49,8 @@ La incrementalidad es una función premium. Después de suscribirte, sigue estos
 | 2 | [**Crea la audiencia objetivo y divide los grupos**](/docs/run-an-incrementality-for-remarketing-experiment#create-the-target-audience-and-split-groups)<br /><br />En <Anchor target="_blank" href="/marketers/es/docs/audiences-guide">Audiencias</Anchor>:<ul><li>Configura la audiencia.</li><li>Conéctala a redes publicitarias.</li><li>La audiencia se divide automáticamente en grupos de prueba y de control mediante un interruptor habilitado (para suscriptores de Incrementality, en audiencias creadas después del 11 de enero de 2023).AppsFlyer Audiences sube a los miembros del grupo de prueba a las redes publicitarias y reserva a los miembros del grupo de control.</li></ul> |
 | 3 | [**Lanza la campaña y el experimento**](/docs/run-an-incrementality-for-remarketing-experiment#launch-the-campaign-and-experiment)<ul><li>En las redes publicitarias, crea y lanza una campaña dirigida a los usuarios de la audiencia.</li><li>El experimento de Incrementalidad se genera automáticamente (para suscriptores de Incrementalidad).</li></ul>Los participantes del grupo de prueba están expuestos a anuncios. El grupo de control no lo está. |
 | 4 | [**Analiza los resultados**](/docs/run-an-incrementality-for-remarketing-experiment#analyze-the-results)<ul><li>El análisis de Incrementalidad se muestra en el <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview#dashboard-de-incrementality">panel de Incrementalidad</Anchor>.</li><li>Los datos de usuario a nivel de fila están disponibles en los <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview#reportes-de-raw-data">informes de datos sin procesar de Incrementalidad</Anchor> (a través de Data Locker).</li></ul>Los conocimientos adquiridos de experimentos de Incrementalidad bien realizados te permiten optimizar tus campañas de marketing para lograr un impacto positivo máximo. Por ejemplo, pueden ayudarte a identificar el mejor mensaje para una audiencia objetivo, el diseño más creativo o promoción, la fuente de medios más efectiva y más. |
+
+<div id="set-up-the-experiment" />
 
 ## Configura el experimento
 
@@ -62,6 +68,8 @@ Como en cualquier experimento, es esencial definir exactamente qué estás evalu
 | Porcentaje del grupo de control | El grupo de control se establece automáticamente en el 15% del tamaño de la audiencia (la mejor práctica es entre el 15% y el 25%). |
 | Grupo de prueba | Determina las redes publicitarias que deseas evaluar. El porcentaje se dividirá equitativamente entre ellas (pero puedes ajustar el porcentaje de audiencia que irá a cada una).<br /><br />**Mejor práctica:** 1-3 redes publicitarias |
 | Hipótesis | Define el resultado esperado del experimento.<br /><br />Aunque puede parecer un poco contradictorio predecir el resultado antes de comenzar, establecer una hipótesis es una parte fundamental del diseño experimental; es lo que te ayuda a interpretar los resultados.<br /><br />**Mejor práctica:** Plantea una hipótesis que sea fácilmente comprobable utilizando porcentajes reales en lugar de estimaciones vagas. Por ejemplo:<ul><li>***Un 15% más de usuarios comprarán una actualización*** es una hipótesis fácilmente comprobable.</li><li>***Un número significativamente mayor de usuarios comprará una actualización*** es más difícil de probar.</li></ul> |
+
+<div id="example" />
 
 > 📄 **Ejemplo**
 >
@@ -105,7 +113,7 @@ Una vez que hayas guardado tu audiencia con la división habilitada, se iniciar�
 * Mientras se esté ejecutando el experimento, no realices cambios en la configuración de la audiencia. Modificar socios, el nombre de la audiencia u otras configuraciones provocará inexactitudes en el análisis estadístico.  
   **Mejor práctica:** Incluso tras finalizar un experimento, si necesitas realizar cambios en la definición de una audiencia previamente probada, primero duplica la audiencia y aplica las modificaciones en la nueva copia. Esto garantiza la integridad continua de los datos históricos en el panel de Incrementalidad.
 * Modificar la división y la configuración de socios de una audiencia existente finalizará el experimento de Incrementalidad actual y generará uno nuevo.
-* #### Revisa las funciones de expansión de audiencia:
+* #### <span id="check-for-audience-expansion-features"></span>Revisa las funciones de expansión de audiencia:
 
 Tanto los anuncios de Meta como los de Google Ads tienen una función opcional que permite que las campañas apunten a audiencias fuera de una lista configurada para ampliar su alcance. Si esta función se mantiene activada, sesgará los experimentos de Incrementalidad y producirá resultados inexactos. **Por favor, verifica que esta función esté desactivada.**
 
@@ -124,12 +132,16 @@ En Google Ads, se denomina “Expansión de audiencia”.
 
 **Realiza las siguientes acciones:**
 
+<div id="1-configure-campaigns-on-ad-networks" />
+
 #### 1. Configura campañas en redes publicitarias
 
 El primer paso es crear una campaña que apunte a los usuarios de tu audiencia y lanzarla en la red publicitaria correspondiente (para cada red donde se cargue la audiencia).
 
 * **¡Importante!** Para obtener resultados de prueba precisos, configura la campaña para que se dirija **únicamente** a los usuarios de la audiencia en prueba; no incluyas usuarios de otras fuentes.
 * Si la audiencia probada es nueva, puede tardar hasta 24 horas en estar disponible en la plataforma de la red publicitaria.
+
+<div id="2-ensure-the-correct-campaign-is-linked-to-the-experiment" />
 
 #### 2. Asegúrese de que la campaña correcta esté vinculada al experimento.
 
@@ -159,6 +171,8 @@ Se mostrará una ventana que te permitirá vincular campañas.
 
 La campaña ahora está asociada al experimento.
 
+<div id="manually-create-an-experiment" />
+
 #### Crear manualmente un experimento
 
 Si eres suscriptor de Incrementalidad y creaste tu audiencia después del 11 de enero de 2023, no necesitas crear un experimento manualmente. Los experimentos se crean automáticamente para tus audiencias (y aparecen en el panel de Incrementalidad con "[Auto]" antes del título). Si deseas crear un experimento manual para una audiencia más antigua o por otra razón, sigue estos pasos.
@@ -168,6 +182,8 @@ Si eres suscriptor de Incrementalidad y creaste tu audiencia después del 11 de 
 * En AppsFlyer, desde el menú lateral, selecciona **Optimizar** > **Incrementalidad**.
 * Desde la página **Experimentos de Incrementalidad**, haz clic en el botón **Nuevo experimento**.
 * Siga los pasos del asistente para crear el experimento. Se proporcionan instrucciones detalladas a medida que avanza en cada paso.
+
+  <div id="notes" />
 
   > 📘 **Notas**
   >
@@ -211,6 +227,8 @@ Los resultados iniciales del experimento están disponibles en el <Anchor target
 <Anchor target="_blank" href="/marketers/es/docs/incrementality-for-remarketing-overview#reportes-de-raw-data">Los informes de datos sin procesar de incrementabilidad</Anchor> están disponibles a través de Data Locker.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

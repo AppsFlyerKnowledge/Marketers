@@ -30,6 +30,8 @@ x-zendesk:
 | **¿Qué debo saber?** | Los datos del referente tienen prioridad sobre los datos proporcionados por la integración de anuncios de Meta y están disponibles en los Reportes de raw data. Esta solución se aplica tanto a la atribución por clics como a la atribución por impresiones. |
 | **¿Cuál es el impacto?** | <ul><li>Es posible que veas un aumento de las instalaciones atribuidas a Meta en los reportes de raw data</li><li>Ahora se incluyen dos nuevos campos de tipo de coincidencia en los reportes de raw data: `fb_referrer` y `ig_referrer`:<ul><li>`fb_referrer` para la atribución desde la aplicación de Facebook</li><li>`ig_referrer` para la atribución desde la aplicación de Instagram</li><li>`fb_referrer` o `ig_referrer` para la atribución desde Audience Network.</li></ul></li></ul> |
 
+<div id="see-also" />
+
 > 📄 **Consulte también**
 >
 > * <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup#userlevel-data">Meta install referrer</Anchor>

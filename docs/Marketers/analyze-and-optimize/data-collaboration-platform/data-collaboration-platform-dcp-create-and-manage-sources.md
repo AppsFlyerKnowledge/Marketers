@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Crea y gestiona fuentes para compartir de forma segura tus datos de first-party con otros colaboradores.
 
+<div id="about-dcp-sources" />
+
 ## Sobre las fuentes de DCP
 
 En la Plataforma de colaboración de datos (DCP), una fuente es un conjunto de datos que normalmente se carga en AppsFlyer desde tu almacenamiento en la nube. Estas fuentes constituyen la base de cualquier colaboración, ya que proporcionan los datos que tus colaboradores pueden usar para la creación y activación de audiencias. Este artículo contiene todo lo que necesitas saber sobre cómo crear y gestionar tus fuentes, incluidos estos temas:
@@ -28,6 +30,8 @@ En la Plataforma de colaboración de datos (DCP), una fuente es un conjunto de d
 * [Requisitos de los datos de las fuentes](#requisitos-de-los-datos-de-las-fuentes)
 * [Crear fuentes](#crear-una-fuente)
 * [Gestionar tus fuentes](#gestiona-tus-fuentes)
+
+<div id="source-data-requirements" />
 
 ## Requisitos de los datos de las fuentes
 
@@ -79,6 +83,8 @@ Los archivos de fuentes almacenados en Amazon S3 o GCS deben cumplir los siguien
 
 </Accordion>
 
+<div id="create-a-source" />
+
 ## Crear una fuente
 
 **Requisito previo:** Antes de crear tu fuente, <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-set-up-your-cloud-services">configura los servicios en la nube</Anchor> que AppsFlyer DCP usará para recuperar los datos de la fuente. Si estas conexiones no están configuradas, se te pedirá que lo hagas durante la creación de la fuente.
@@ -100,6 +106,8 @@ Los archivos de fuentes almacenados en Amazon S3 o GCS deben cumplir los siguien
 <Accordion title="Paso 2: Establece el nombre de la fuente">
 
 Introduce el nombre de la fuente. Puede ser cualquier nombre único que te ayude a identificar la fuente. También puedes añadir una descripción opcional sobre la fuente para ayudarte a identificar fácilmente lo que contiene (por ejemplo, «Todas las compras de 2025»).
+
+<div id="requirements-and-guidelines" />
 
 #### Requisitos y directrices
 
@@ -128,6 +136,8 @@ Introduce el nombre de la fuente. Puede ser cualquier nombre único que te ayude
 
 **Nota:** Para obtener el mejor rendimiento cuando hay un gran volumen de datos, es posible que se almacene por separado un subconjunto de tus datos. Estos datos se actualizarán cada vez que se actualice la fuente y se eliminarán cuando se elimine la fuente.
 
+<div id="source-locations-in-bigquery" />
+
 #### Fuentes ubicadas en BigQuery
 
 **Para terminar de especificar la ubicación de las fuentes de BigQuery:**
@@ -136,6 +146,8 @@ Introduce el nombre de la fuente. Puede ser cualquier nombre único que te ayude
 2. Selecciona la tabla en la que se encuentran los datos de la fuente.
 
 Las listas a partir de las que haces estas selecciones contienen los conjuntos de datos y tablas disponibles, respectivamente, en el proyecto de BigQuery que especificaste al crear la conexión.
+
+<div id="source-locations-in-snowflake" />
 
 #### Fuentes ubicadas en Snowflake
 
@@ -146,6 +158,8 @@ Las listas a partir de las que haces estas selecciones contienen los conjuntos d
 3. Selecciona la tabla en la que se encuentran los datos de la fuente.
 
 Las listas a partir de las que haces estas selecciones contienen los recursos compartidos, esquemas y tablas, respectivamente, en la cuenta de Snowflake que especificaste al crear la conexión.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Fuentes ubicadas en buckets de almacenamiento en la nube
 
@@ -165,10 +179,14 @@ Si AppsFlyer genera las carpetas, la única información adicional que necesitas
     * La carpeta **de entrada** no es obligatoria, y puedes eliminarla o ponerle otro nombre, siempre que cumpla con los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-set-up-your-cloud-services#dcr-naming-requirements">requisitos de nomenclatura de DCR</Anchor>.
     * Aunque esta carpeta no es obligatoria, se considera una buena práctica tener una carpeta **de entrada** (o una carpeta equivalente con otro nombre). Se recomienda aún más cuando se utiliza el mismo bucket de almacenamiento en la nube, tanto para subir archivos de datos (entrada) como para recibir reportes (salida).
 
+<div id="important" />
+
 > 🚧 **Dos puntos (:)**
 >
 > Si creaste manualmente la ruta de la carpeta, asegúrate de que la conexión y la ruta que introduzcas en la sección **Ubicación de la fuente** coincidan con la ruta que creaste manualmente.
 
+
+<div id="source-location-as-local-files" />
 
 #### Ubicación de la fuente como archivos locales
 
@@ -179,6 +197,8 @@ También puedes subir datos de la fuente mediante un archivo local. Sin embargo,
 Al seleccionar la ubicación de la fuente, haz clic en **Sistema de archivos local** y en **Siguiente**; así se añade la opción de subir archivos locales desde tu dispositivo.
 
 <Image alt="Selecciona Sistema de archivos local.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+
+<div id="note" />
 
 > 📘 **Nota:**
 >
@@ -197,10 +217,14 @@ Al configurar una fuente en la Plataforma de colaboración de datos (DCP), debes
 
 <Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
+<div id="important-1" />
+
 > 🚧 **Dos puntos (:)**
 >
 > Determina qué método es el mejor antes de seleccionar uno. Una vez que selecciones una opción y hagas clic en **Generate folders**, se creará una ruta de archivo junto con instrucciones para gestionar las cargas de datos dentro del servicio en la nube que hayas seleccionado. Para evitar duplicaciones de carpetas y errores, solo puedes **cambiar el método de sincronización una vez** después de la selección inicial.
 
+
+<div id="snapshot-upload-requirements" />
 
 #### Requisitos para cargar Snapshot
 
@@ -228,6 +252,8 @@ Usa este método para subir un archivo completo y autónomo que sustituya por co
 | `subcarpeta` **data/** | Organiza tus archivos | Almacena archivos Parquet / CSV / Avro en esta carpeta |
 | `_SUCCESS` **marcador** | Indica que puede comenzar la ingesta de DCP | Sube un archivo vacío llamado `_SUCCESS` dentro de la carpeta `v=` después de que se hayan cargado todos los archivos de datos |
 | **Tipo y tamaño de archivo compatibles** |  | <ul><li>Tipos de archivo compatibles: .csv o .gz</li><li>Tamaño máximo de archivo: 5 GB</li></ul> |
+
+<div id="important-2" />
 
 > 🚧 **Dos puntos (:)**
 >
@@ -279,6 +305,8 @@ Este es un ejemplo de cómo debería verse la estructura de carpetas después de
 
 [<Image alt="Ejemplo de bucket de instantánea.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
 
+
+<div id="append-upload-requirements" />
 
 #### Requisitos de carga de Append
 
@@ -360,6 +388,8 @@ Asigna los campos de la fuente a los campos de DCP, pruébalo y guarda los datos
 4. [Probar los datos de la fuente](#4-probar-los-datos-de-la-fuente)
 5. [Guardar la fuente](#5-guardar-la-fuente)
 
+<div id="1-load-your-source-fields" />
+
 #### 1. Carga tus  campos de la fuente
 
 Los campos de la fuente se cargan automáticamente. En caso de que sea necesario realizar una carga manual, sigue las instrucciones que aparecen a continuación según la ubicación de la fuente:
@@ -367,6 +397,8 @@ Los campos de la fuente se cargan automáticamente. En caso de que sea necesario
 **Fuentes de almacén de datos**
 
 Para cargar campos desde una fuente ubicada en un data warehouse (BigQuery o Snowflake), haz clic en **Cargar campos desde la fuente**.
+
+<div id="important-3" />
 
 > 🚧 **Importante:**
 >
@@ -424,14 +456,20 @@ Para asignar los campos de la fuente a los campos de DCP:
 </Tab>
 </Tabs>
 
+<div id="2-configure-the-source-fields" />
+
 #### 2. Configura los campos de la fuente
 
 Después de cargar los campos de la fuente, cada campo de la fuente (columna) se muestra con un campo DCP. Revisa cada campo de la fuente y asígnalo al campo DCP correspondiente en la lista desplegable que aparece junto a él. Ten en cuenta lo siguiente:
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
 > * Cuando ambas party comparten sus datos fuente, **al menos un campo debe configurarse como identificador** para que los datos a nivel de usuario coincidan entre las fuentes correspondientes. Un identificador es un campo que identifica de forma única a un usuario de la aplicación (por ejemplo, CUID, AppsFlyer ID o correo electrónico con hash).
 > * Aunque no es obligatorio configurar cada uno de los campos fuente (columnas) cargados, es importante para la categorización, la interpretación eficaz de los datos, ayudar a la creación de audiencias, sugerir insights y facilitar de forma eficaz las validaciones.
+
+<div id="ai-assisted-field-type-detection" />
 
 #### Detección del tipo de campo asistida por IA
 
@@ -448,10 +486,14 @@ Cada campo queda en uno de estos estados:
 * **Asignado:** la IA ha encontrado una única coincidencia fiable. Revísala y acéptala, o cámbiala manualmente.
 * **No se ha podido asignar:** la IA no ha podido determinar un campo. Asígnalo manualmente o déjalo sin asignar.
 
+<div id="limitations" />
+
 #### Limitaciones
 
 * **Límite de columnas:** la detección por IA es compatible con hasta 100 columnas por fuente. Las fuentes con más columnas muestran un mensaje de «límite superado».
 * **Longitud del nombre del campo:** la detección por IA no es compatible con nombres de columna de más de 100 caracteres.
+
+<div id="important-4" />
 
 > 🚧 **Importante:**
 >
@@ -524,17 +566,25 @@ Esta opción te permite incluir en la audiencia un campo que actualmente no est�
   * ID de aplicación
   * Lista de texto
 
+<div id="identifier-vs-list-of-identifiers" />
+
 #### **Identificador frente a lista de identificadores:**
 
 Los tipos de identificador contienen un único valor por fila (por ejemplo, un correo electrónico o un CUID por fila). Los tipos de lista de identificadores contienen una matriz de valores por fila (por ejemplo, una sola fila puede contener varios correos electrónicos con hashing o ID de dispositivo). Usa esto cuando una fuente necesite hacer coincidir más de un identificador por registro.
+
+<div id="important-5" />
 
 > 🚧 **Importante:**
 >
 > Si una fuente incluye algún campo asignado a **Lista de...** tipo (Lista de identificadores, Lista de números o Lista de texto), el archivo fuente debe subirse o conectarse como Parquet. Los archivos CSV y GZ no admiten columnas de tipo matriz, por lo que es posible que los campos de lista no se ingieran correctamente desde esos formatos.
 
+<div id="reload-source-fields" />
+
 #### Recargar campos de la fuente
 
 Si la configuración de uno de tus archivos de datos ha cambiado, puedes actualizar el archivo de la fuente para reflejar los cambios.
+
+<div id="note-2" />
 
 > 📘 **Nota:**
 >
@@ -548,15 +598,21 @@ Si la configuración de uno de tus archivos de datos ha cambiado, puedes actuali
    * Para un archivo de tu servicio en la nube: haz clic en **Cargar desde cloud bucket** y sigue las instrucciones.
 3. Haz clic en **OK**. Ahora se muestran los archivos actualizados.
 
+<div id="3-verify-eu-user-inclusion" />
+
 #### 3. Verificar la inclusión de usuarios de la UE
 
 * Selecciona **Sí** o **No** para la pregunta: **¿Tu fuente incluye usuarios europeos a los que se aplica la normativa DMA de la UE?**
 
 Más información sobre la normativa de privacidad de la Ley de Mercados Digitales de la UE.
 
+<div id="4-test-the-source-data" />
+
 #### 4. Probar los datos de la fuente
 
 * [Opcional] Haz clic en **Test** para comprobar si hay errores en el formato o la validez de los campos de la fuente.
+
+<div id="5-save-the-source" />
 
 #### 5. Guardar la fuente
 
@@ -564,11 +620,15 @@ Más información sobre la normativa de privacidad de la Ley de Mercados Digital
 
 Después de confirmar, la nueva fuente se añade en la pestaña **Sources** .
 
+<div id="note-3" />
+
 > 📘 **Nota:**
 >
 > Si has cargado la fuente desde un archivo local, al guardar la fuente se activa la creación automática de la estructura de carpetas, y el mensaje de confirmación que aparece incluye un enlace a la carpeta de la fuente.
 
 </Accordion>
+
+<div id="manage-your-sources" />
 
 ## Gestiona tus fuentes
 
@@ -581,9 +641,13 @@ Las fuentes que has creado se muestran en la pestaña **Sources**. Desde aquí, 
 3. En la página **Editar fuente**, edita los campos correspondientes, como se detalla a continuación.
 4. Haga clic en **Guardar**.
 
+<div id="edit-the-source-name" />
+
 #### Editar el nombre de la fuente
 
 Al editar el nombre de la fuente, asegúrate de [seguir estos requisitos de nomenclatura](#requisitos-y-directrices).
+
+<div id="edit-the-source-location" />
 
 #### Editar la ubicación de la fuente
 
@@ -592,10 +656,14 @@ Al editar el nombre de la fuente, asegúrate de [seguir estos requisitos de nome
 3. [Opcional] [Probar la fuente](#4-probar-los-datos-de-la-fuente).
 4. Haga clic en **Guardar**.
 
+<div id="edit-the-field-mapping" />
+
 #### Editar la asignación de campos
 
 1. Ve a la asignación de campos y realiza los cambios necesarios: cambia el campo o actualiza el campo de DCP asignado.
 2. Haga clic en **Guardar**.
+
+<div id="important-6" />
 
 > 🚧 **Importante:**
 >
@@ -617,9 +685,13 @@ Puedes eliminar cualquier fuente, excepto cuando se esté usando en una audienci
 
 </Accordion>
 
+<div id="sharing-permissions" />
+
 ## Permisos de uso compartido
 
 La concesión de permisos a tus colaboradores para ver y usar los datos de tu fuente se realiza al <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-a-collaboration">crear colaboraciones</Anchor>. <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-sharing-permissions">Saber más</Anchor> sobre los permisos de uso compartido.
+
+<div id="additional-information" />
 
 ## Información adicional
 
@@ -628,6 +700,8 @@ Esta sección proporciona algunas referencias adicionales e información útil.
 <Accordion title="Crear manualmente una estructura de carpetas del bucket de almacenamiento (opcional)">
 
 En general, es más fácil permitir que AppsFlyer genere automáticamente la estructura de carpetas requerida como parte del proceso de creación de la fuente. Sin embargo, si deseas crear estas carpetas manualmente, puedes hacerlo de la siguiente manera.
+
+<div id="create-a-dcr-key-folder" />
 
 #### Crear una carpeta de claves de DCR
 
@@ -645,6 +719,8 @@ Después de crear la carpeta de clave DCR, tu estructura de bucket/carpetas se v
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### Carpeta de entrada de nivel superior
 
 Aunque no es obligatorio, la práctica recomendada es crear una carpeta de entrada de nivel superior directamente debajo de la carpeta de claves DCR. Esta carpeta estará dedicada a los archivos que subas a DCR.
@@ -657,6 +733,8 @@ Por lo general, la carpeta de entrada de nivel superior se crea manualmente util
 Después de crear la carpeta de entrada de nivel superior, tu estructura de bucket/carpetas se verá así:
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### Carpeta de segundo nivel para cada fuente de datos
 
@@ -674,6 +752,8 @@ Debajo de cada carpeta de fuente de datos, se deben crear [subcarpetas anidadas 
 
 </Accordion>
 
+<div id="privacy-regulations" />
+
 ## Regulaciones de privacidad
 
 Esta sección describe información importante sobre la normativa de privacidad actual.
@@ -682,12 +762,16 @@ Esta sección describe información importante sobre la normativa de privacidad 
 
 Como parte de la aplicación de la Ley de Mercados Digitales (DMA) por parte de Google, Google actualizó su política de consentimiento de usuarios de la UE el 6 de marzo de 2024. Como partner de atribución de apps de Google, AppsFlyer realizó los cambios necesarios para dar soporte a los requisitos de su política, al tiempo que garantiza que los anunciantes maximicen el valor de sus canales de marketing de Google Ads.
 
+<div id="note-4" />
+
 > 📘 **Nota:**
 >
 > * La aplicación de la Ley de Mercados Digitales (DMA) por parte de Google se aplica a todas las plataformas.
 > * Leer más sobre esto:
 >   * <Anchor target="_blank" href="https://www.appsflyer.com/hubs/dma/">Insights y recursos sobre la Ley de Mercados de los Comercializadores Digitales</Anchor>
 >   * <Anchor target="_blank" href="https://support.google.com/google-ads/answer/14310715">Preguntas frecuentes de Google</Anchor>
+
+<div id="adding-consent-fields" />
 
 #### Añadir campos de consentimiento
 
@@ -696,6 +780,8 @@ Al configurar una fuente destinada a la activación de audiencias en Google y co
 **Campos de consentimiento adicionales y sus valores de respuesta:**
 
 <table><thead><tr><th>AppsFlyer</th><th>Valor de respuesta</th><th>Campo explicado</th></tr></thead><tbody><tr><td><span id="eea"></span><code>eea</code></td><td>verdadero/falso</td><td>¿El usuario está ubicado en el EEE (Espacio Económico Europeo), donde se aplica la DMA?</td></tr><tr><td><span id="ad_personalization"></span><code>personalización de anuncios</code></td><td>\*true/false</td><td>¿El usuario dio su consentimiento a Google para usar sus datos en publicidad personalizada?</td></tr><tr><td><span id="ad_user_data"></span><code>datos_de_usuario_de_anuncios</code></td><td>\*true/false</td><td>¿El usuario dio su consentimiento para enviar sus datos a Google? </td></tr><tr><td colspan="3"><span id="when--true--appsflyer-sends-user-identifiers-for-users-who-have-granted-consent-to-google--when--false--appsflyer-abstains-from-sending-them"></span>\* Cuando es «<strong>true</strong>», AppsFlyer incluye los identificadores de usuario que has enviado para los usuarios que dieron su consentimiento.<br/>   Cuando es «<strong>false</strong>»: AppsFlyer no los incluye, ya que no se enviaron a AppsFlyer.</td></tr></tbody></table>
+
+<div id="potential-impact-on-the-audience-size" />
 
 #### Posible impacto en el tamaño de la audiencia
 

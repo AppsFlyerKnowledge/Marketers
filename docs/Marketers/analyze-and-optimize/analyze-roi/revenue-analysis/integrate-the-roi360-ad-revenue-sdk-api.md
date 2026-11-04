@@ -32,6 +32,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## Informe de ingresos publicitarios a nivel de impresiones mediante la API del SDK
 
 **Opciones de informe de ingresos publicitarios**
@@ -46,6 +48,8 @@ Los ingresos publicitarios se informan a AppsFlyer con granularidad agregada (v�
 
 * Las impresiones de ingresos publicitarios se recopilan y procesan en AppsFlyer, pero no se contabilizan en su paquete de aplicaciones.
 * Hay un <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue-unity">complemento de ingresos publicitarios de AppsFlyer para Unity</Anchor>.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### Informe de ingresos publicitarios mediante la API del SDK
 
@@ -82,6 +86,8 @@ La API del SDK **envía los datos de ingresos a la plataforma en el momento en q
 * **El tema del nivel de impresión de DataLocker a la 1 a. m. y cada hora desde entonces,**
 * **Los informes de actividad y cohorte de AppsFlyer se generan a las 5 a. m. UTC, y cada 4 horas desde entonces.**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## Implementación de la API del SDK de ingresos publicitarios de AppsFlyer
 
 **Para implementar la API del SDK de ingresos publicitarios de AppsFlyer**:
@@ -92,6 +98,8 @@ La API del SDK **envía los datos de ingresos a la plataforma en el momento en q
 4. Prueba tu integración: una vez integrada, verifica que los eventos de ingresos por anuncios se estén recibiendo con uno de los siguientes métodos:
    * En el <Anchor target="_blank" href="/marketers/es/docs/testing-the-sdk-integration-for-marketers#view-live-events">visor de eventos en vivo</Anchor>, comprueba que los eventos de ingresos por anuncios aparezcan en tiempo real. Ten en cuenta que el visor de eventos en vivo solo muestra eventos enviados desde dispositivos de prueba registrados.
    * En la página **Revenue Settings**, edita la integración de ingresos por anuncios correspondiente y haz clic en **Test Connection** para comprobar si se ha procesado recientemente algún evento válido de ingresos por anuncios. Para obtener más información, consulta <Anchor target="_blank" href="/marketers/es/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Conéctate con partners integrados en los ingresos por anuncios</Anchor>.
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

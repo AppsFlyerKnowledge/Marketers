@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En resumen:** Reportes de datos agregados y raw data disponibles a través de Data Locker
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## Reportes disponibles a través de Data Locker para anunciantes
 
 <table><colgroup><col/><col/><col/></colgroup><thead><tr><th>Tipo de datos</th><th>Grupo de reportes</th><th>Se requiere suscripción a Data Locker</th></tr></thead><tbody><tr><td>Raw</td><td>Trayectoria del usuario: raw data</td><td>Sí (2)</td></tr><tr><td>Raw</td><td>Las alertas de Protect360 se actualizan a la hora UTC diaria.</td><td>Sí</td></tr><tr><td>Raw</td><td>Atribución people-based (PBA) </td><td>No </td></tr><tr><td>Raw</td><td>Incrementalidad</td><td>No </td></tr><tr><td>Raw</td><td>SKÁN</td><td>No (1)</td></tr><tr><td>Raw</td><td>Ingresos</td><td><p>El reporte de versión única de ingresos publicitarios requiere una suscripción a Data Locker.</p><p>Todos los demás reportes requieren una suscripción al paquete ROI360 Advanced.</p></td></tr><tr><td>Raw</td><td>Aplicaciones de CTV, PC y consola</td><td>Sí</td></tr><tr><td>Agregado</td><td>Análisis de cohortes</td><td>No (1)</td></tr><tr><td>Agregado avanzado</td><td>Análisis de cohortes</td><td>No (3)</td></tr><tr><td>Agregado</td><td>Optimización creativa</td><td><p>No (1)</p><p>Requiere un plan de suscripción Premium a la Optimización.</p></td></tr><tr><td>Agregado</td><td>Métricas orgánicas del día 7</td><td>No (1)</td></tr><tr><td colspan="3"><p>(1) Si no tienes una suscripción a Data Locker, debes proporcionar <a href="./data-locker-for-marketers#storage-options" target="_blank">almacenamiento de tu propiedad</a>.</p><p>(2) Excepto para engagements cross-platform.</p><p>(3) Disponible con suscripción a Data Locker o con el paquete de APIs de análisis.</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ La disponibilidad de reportes en Data Locker varía según el tipo de reporte. S
 | Versionado | Reportes en los que los datos del mismo día pueden publicarse varias veces a medida que hay datos más nuevos o completos disponibles, siendo la versión más reciente la más precisa. | <Anchor target="_blank" href="/marketers/es/docs/revenue-etl-reports#ad-revenue-versioned">Reporte de ingresos publicitarios atribuidos</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## Reportes de raw data
 
@@ -157,6 +161,8 @@ Consulta <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-dat
 
 </Accordion>
 
+<div id="advanced-raw-data-reports-beta" />
+
 ## Reportes avanzados de raw data (Beta)
 
 Los reportes avanzados presenta una nueva generación de reportes de raw data diseñados para ofrecer datasets estructurados, validados y **preparados para IA**. Permiten la ingesta y el análisis del **viaje completo del usuario, desde el primer engagement hasta la conversión y la actividad post-instalación, utilizando solo tres reportes**.  
@@ -184,6 +190,8 @@ El reporte de conversiones ofrece una vista completa de todas las instalaciones 
 | --- | --- | --- | --- |
 | Adquisición de usuarios y retargeting | Conversiones | 1–3 horas | ✅ |
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > * Las reinstalaciones no están incluidas en este reporte.
@@ -201,11 +209,15 @@ El Reporte de eventos de usuario final captura datos detallados de eventos in-ap
 | --- | --- | --- | --- |
 | Adquisición de usuarios y retargeting | Eventos de usuario final | 1–3 horas | ✅ |
 
+<div id="note-1" />
+
 > 📘 **Nota**
 >
 > Para apps de plataformas extendidas, incluidas CTV, PC y consolas, los eventos de usuario final de retargeting no están incluidos.
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## Reportes agregados
 

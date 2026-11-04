@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="Diagrama de la solución de atribución multiplataforma de AppsFlyer para CTV, PC y consola" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## La solución multiplataforma de AppsFlyer
 
 En el panorama digital actual, los profesionales de growth se enfrentan al desafío de llegar a los consumidores a través de múltiples dispositivos y plataformas. Los enfoques de medición tradicionales se quedan cortos a la hora de capturar el alcance completo de los viajes de los usuarios que abarcan las plataformas. La medición multiplataforma es esencial para comprender el impacto de las actividades de marketing y tomar decisiones informadas.
@@ -37,13 +39,19 @@ Los anunciantes pueden promocionar una aplicación en la misma plataforma o en p
 
 Cualquiera que sea su estrategia de marketing, los anunciantes se integran con AppsFlyer para recibir datos de atribución y mediciones de rendimiento sobre fuentes (orgánicas o no orgánicas) y campañas que impulsan las instalaciones de aplicaciones de plataformas CTV, PC y consola y eventos posteriores a la instalación. Los marketers utilizan estos insights para calcular el lifetime value (LTV) del usuario y medir y optimizar las actividades de marketing. <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">Saber más sobre la atribución de AppsFlyer</Anchor>
 
+<div id="supported-platforms" />
+
 ### Plataformas compatibles
 
 <table><thead><tr><th rowspan="2">Platform</th><th colspan="2">Método de integración de AppsFlyer</th></tr><tr><th>S2S</th><th>SDK</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>MacOS</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Amazon Fire TV</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Chromecast</td><td><span>-</span></td><td><span>✓</span></td></tr><tr><td>Roku</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Vizio</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>LG</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>PlayStation</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Vidaa</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>PC Nativo</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Epic Games</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Nintendo Switch</td><td><span>✓</span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span>✓</span></td><td><span>-</span></td></tr></tbody></table>
 
+<div id="integrate-with-ad-networks-that-support-specified-ctv-pc-and-console-platforms" />
+
 ### Intégrate con ad networks compatibles con las plataformas especificadas de CTV, PC y consolas
 
 Intégrate con ad networks que muestran anuncios en plataformas de CTV, PC y consola en <Anchor target="_blank" href="/marketers/es/docs/partner-integrations">Integraciones de partners</Anchor>.
+
+<div id="cross-platform-attribution-flows" />
 
 ## Flujos de atribución multiplataforma
 
@@ -145,6 +153,8 @@ Información adicional:
 
 </Accordion>
 
+<div id="data-availability" />
+
 ## Disponibilidad de datos
 
 Los datos de plataformas CTV, PC y consola incluyen datos de instalación, así como datos de eventos in-app que brindan a los anunciantes información sobre el lifetime value (LTV) de los usuarios orgánicos y no orgánicos, incluidos en la suscripción, las compras in-app y la monetización de anuncios. Las métricas de LTV se calculan desde la fecha de atribución hasta el presente.
@@ -157,6 +167,8 @@ Los datos están disponibles de la siguiente manera:
   * <Anchor target="_blank" href="/marketers/es/docs/raw-data-export-page">Exportación</Anchor>
   * <Anchor target="_blank" href="/marketers/es/docs/pull-api-raw-data">API Pull</Anchor>
 * **Las impresiones de las campañas multiplataforma** (por ejemplo, de CTV a móvil) no se muestran en los dashboards a nivel de aplicación. Una sola impresión de CTV puede dar lugar a varias conversiones móviles, por lo que es imposible dividir las impresiones con precisión entre aplicaciones. Para acceder al recuento total de impresiones, utiliza el <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-data-via-data-locker">reporte de engagements multiplataforma a través de Data Locker</Anchor>.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >

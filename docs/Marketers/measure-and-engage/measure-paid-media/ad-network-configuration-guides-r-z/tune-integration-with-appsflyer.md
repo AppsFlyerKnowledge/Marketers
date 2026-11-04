@@ -25,6 +25,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 
+<div id="setting-up-tune-integration" />
+
 ## Configuración de la integración con TUNE
 
 La integración de AppsFlyer con TUNE ofrece atribución de clic.
@@ -53,9 +55,13 @@ La integración de AppsFlyer con TUNE ofrece atribución de clic.
 
 Busca al partner y selecciónalo.
 
+<div id="enabling-deep-linking-into-your-app" />
+
 ## Habilitar el Deep Linking en tu aplicación
 
 Usa <Anchor target="_blank" href="/marketers/es/docs/brand-onelink-with-your-domain">enlaces de marca de OneLink</Anchor> generados en AppsFlyer para medir clics en TUNE. El siguiente proceso permite hacer Deep Linking de los usuarios a una página específica de tu aplicación.
+
+<div id="prerequisite" />
 
 ### Requisitos previos
 
@@ -63,6 +69,8 @@ Verifica  las versiones del SDK móvil de AppsFlyer:
 
 * iOS: V4.9.0 o posterior
 * Android: V4.9.0 o posterior
+
+<div id="step-1-configure-links-for-your-campaigns" />
 
 ### Paso 1: Configura enlaces para tus campañas
 
@@ -81,10 +89,14 @@ Verifica  las versiones del SDK móvil de AppsFlyer:
 
     Ignora este mensaje y cambia el CNAME tal como se indica arriba.
 
+<div id="step-2-set-up-the-attribution-link" />
+
 ### Paso 2: Configura el enlace de atribución
 
 1. Ve a la pestaña Enlace de atribución y copia únicamente los parámetros del enlace en **Click attribution link** , tal como se resalta a continuación.[![](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)](https://files.readme.io/51bb21c2fe4bd82965f30909fe5ed4ae6c5b906972789b143755982ea8b73f6e-4406164987537.png)
 2. Añade los parámetros copiados a tu enlace de marca.
+
+   <div id="example" />
 
    > 📄 **Ejemplo:**
    >

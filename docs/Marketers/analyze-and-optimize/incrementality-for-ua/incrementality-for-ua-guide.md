@@ -26,6 +26,8 @@ x-zendesk:
 
 <Embed title="Guía de Incrementalidad para UA" typeOfEmbed="youtube" url="https://www.youtube.com/embed/vGrLyOvgdN0?si=91ZV8Xw25mmShB_F" providerUrl="https://www.youtube.com" />
 
+<div id="about-incrementality-for-ua" />
+
 ## Información sobre Incrementalidad para UA
 
 En el entorno actual del marketing omnicanal, comprender la eficacia real de una campaña requiere algo más que una sola perspectiva. La atribución de último toque sigue siendo esencial para el monitoreo del rendimiento en tiempo real y para obtener insights granulares, pero no proporciona información sobre si una campaña generó un incremento causal real. Incrementalidad para UA añade una capa crítica al medir si las campañas realmente impulsan el crecimiento de nuevos usuarios.
@@ -49,6 +51,8 @@ Los equipos de adquisición de usuarios se enfrentan hoy a desafíos complejos, 
 Incrementalidad para UA utiliza un diseño experimental basado en la geolocalización. Las regiones geográficas se dividen en grupos estadísticamente similares, según las instalaciones históricas o el comportamiento de eventos de la app. Un grupo se expone a tu campaña de UA y al otro no se le expone. Después de que el experimento se ejecute durante un periodo determinado, se analiza la diferencia de rendimiento entre los dos grupos para revelar el lift incremental. La experimentación geográfica protege la privacidad, resiste los sesgos y no depende de datos a nivel de usuario.
 
 Incrementality for UA te proporciona los insights que necesitas para comprender el verdadero valor incremental de tus campañas de marketing, sin verse afectado por datos incoherentes a nivel de usuario ni por solapamientos de targeting. Esto te dará una imagen fiel de la eficacia de tus campañas y te ayudará a tomar mejores decisiones basadas en datos.
+
+<div id="experiment-design-and-insights" />
 
 ## Diseño de experimentos e insights
 
@@ -199,6 +203,8 @@ Cuando se utilizan juntos, los dos modelos ofrecen una visión holística del re
 
 </Accordion>
 
+<div id="get-started" />
+
 ## Comienza
 
 Para empezar con Incrementality for UA, sigue estos pasos:
@@ -232,10 +238,14 @@ El primer paso es crear el experimento.
       * **Listo** — Tu diseño de geolocalización está aprobado y listo para usar. Puedes continuar con el experimento.
       * **No disponible** — El diseño de geolocalización no cumple actualmente los requisitos para un experimento válido, según los datos disponibles para la combinación de aplicación, país y métrica seleccionada. Puedes volver a enviarlo al cabo de 30 días, ya que la elegibilidad puede cambiar a medida que tu aplicación recopila más datos.
 
+      <div id="note" />
+
       > 📘 **Advertencia**
       >
       > Si existen reglas de diseño de geolocalización para la aplicación y el país seleccionados, se aplican automáticamente cuando se calcula el diseño de geolocalización. Consulta la [política de diseño de geolocalización](#h_01_geo-design-policy) para obtener más información.
 
+
+      <div id="note-1" />
 
       > 📘 **Advertencia**
       >
@@ -277,6 +287,8 @@ El primer paso es crear el experimento.
 4. **Revisar resumen** - Comprueba que el resumen del experimento sea correcto y, a continuación, haz clic en **Iniciar experimento**.  
    El experimento comienza. Los resultados iniciales se mostrarán en un plazo de 24 horas.
 
+   <div id="note-2" />
+
    > 📘 **Advertencia**
    >
    > Una vez finalizado el experimento, las campañas conectadas volverán a su configuración anterior de geolocalización. Esto garantiza la continuidad y la coherencia de la campaña, y te permite reanudar las actividades de UA sin necesidad de volver a configurar el targeting de forma manual.
@@ -291,7 +303,7 @@ El primer paso es crear el experimento.
 
 <Accordion title="2. Analiza los resultados y obtén insights">
 
-<span id="access-the-experiment-dashboard"></span>Puedes ver los resultados del experimento en el dashboard del experimento.
+<span id="zd-access-the-experiment-dashboard"></span><span id="access-the-experiment-dashboard"></span>Puedes ver los resultados del experimento en el dashboard del experimento.
 
 #### Accede al dashboard del experimento
 
@@ -301,6 +313,8 @@ El primer paso es crear el experimento.
 2. Haz clic en el experimento específico para acceder al Dashboard del experimento.
 
    ![Tabla de experimentos (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+
+<div id="a-tour-of-the-dashboard" />
 
 #### Un tour por el dashboard
 
@@ -334,6 +348,8 @@ En la parte inferior del dashboard se encuentra el gráfico **Instalaciones incr
 
 </Accordion>
 
+<div id="manage" />
+
 ## Gestionar
 
 En esta sección se explica cómo gestionar tus conexiones, la política de diseño de geolocalización y los experimentos.
@@ -365,6 +381,8 @@ La política de diseño de geolocalización te permite definir reglas de diseño
 
 Usa reglas de diseño de geolocalización para adaptarte a restricciones legales, proteger mercados de alto valor o aislar regiones afectadas por pruebas paralelas.
 
+<div id="geo-design-rule-types" />
+
 #### Tipos de reglas de diseño de geolocalización
 
 Hay tres tipos de reglas disponibles:
@@ -374,6 +392,8 @@ Hay tres tipos de reglas disponibles:
 | **No incluir en el grupo de control** | Estas regiones nunca se incluyen en grupos de control, pero sí pueden estar en grupos expuestos. Tus campañas en estas regiones nunca se pausan ni se interrumpen por el experimento. | Un mercado de alto rendimiento que debe permanecer activo en todo momento. |
 | **No segmentar** | Estas regiones se excluyen por completo del targeting de la campaña. No aparecerán ni en los grupos expuestos ni en los grupos de control. | Un mercado donde la publicidad está legalmente restringida. |
 | **Excluir del análisis** | Estas regiones seguirán incluidas en el targeting de la campaña para mantener una actividad publicitaria normal, pero no se incluirán en grupos expuestos ni en grupos de control. | <ul><li>Regiones con pruebas paralelas de geo-lift en funcionamiento que podrían sesgar los resultados.</li><li>Regiones con pruebas de lift geolocalizadas en funcionamiento en paralelo o con iniciativas de marketing local previstas que puedan sesgar los resultados.</li></ul> |
+
+<div id="set-up-a-geo-design-rule" />
 
 #### Configurar una regla de diseño de geolocalización
 
@@ -391,6 +411,8 @@ Hay tres tipos de reglas disponibles:
 
 La regla ya está activa y se aplicará a todos los diseños de geolocalización calculados para la aplicación y el país seleccionados a partir de ahora.
 
+<div id="delete-a-geo-design-rule" />
+
 #### Eliminar una regla de diseño de geolocalización
 
 **Para eliminar una regla de diseño de geolocalización:**
@@ -399,9 +421,13 @@ La regla ya está activa y se aplicará a todos los diseños de geolocalización
 2. Abre el menú de acciones y selecciona **Delete**.
 3. Confirma en **Delete rule?** .
 
+<div id="note-3" />
+
 > 📘 **Advertencia**
 >
 > Eliminar una regla no afecta a los experimentos activos. Si había reglas anteriores (o no había ninguna regla), eso es lo que seguirá aplicándose a cualquier experimento que ya esté en funcionamiento. Eliminar una regla solo la quita de futuros diseños o experimentos de geolocalización.
+
+<div id="view-geo-design-rules-in-an-experiment" />
 
 #### Ver reglas de diseño de geolocalización en un experimento
 
@@ -412,6 +438,8 @@ Una vez aprobado un diseño de geolocalización y mientras configuras el experim
 * **Reglas de exclusión** - Las reglas activas (No incluir en holdout, No aplicar targeting, Excluir del análisis) y las regiones específicas que abarcan
 
 En el reporte del experimento, puedes ver el desglose geo completo seleccionando **Desglose del diseño geo** en el menú de acciones. Muestra el mismo desglose que aparece arriba e indica qué reglas estaban activas cuando se creó el experimento. Para gestionar tus reglas, haz clic en **Gestionar la política de diseño geo** al final del panel.
+
+<div id="traits-and-limitations" />
 
 #### Especificaciones y limitaciones
 
@@ -447,6 +475,8 @@ Para cada experimento, puedes ver lo siguiente:
 * **Fechas** - El intervalo de fechas del experimento
 * [**Estado**](#columna-estado) - Puedes ver cuántos días quedan del experimento o cuándo se ha completado.
 * **Elevación**
+
+<div id="status-column" />
 
 #### **Columna Estado**
 
@@ -494,6 +524,8 @@ En el experimento, haz clic en el icono de acciones ⠇ (arriba a la derecha) y 
 <Image alt="Detener experimento.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
+
+<div id="traits-and-limitations-1" />
 
 ## Especificaciones y limitaciones
 

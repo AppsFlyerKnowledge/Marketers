@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **Resumen:** Utilice una página de destino multiplataforma que ejecute el Smart Script de AppsFlyer para realizar la atribución de web a app. Es decir, transforme a los usuarios que ven un anuncio web desde cualquier fuente de medios en usuarios de la aplicación en plataformas como CTV, PC, consola o móviles.
 
+<div id="overview" />
+
 ## Descripción general
 
 Con una página de destino multiplataforma que ejecuta el Smart Script de AppsFlyer, puede realizar atribuciones de web a aplicación. Esto significa que puede atribuir instalaciones en cualquier plataforma a anuncios mostrados en la web.
@@ -33,7 +35,11 @@ El Smart Script en una página de destino multiplataforma utiliza el enlace entr
 * Crear un enlace OneLink multiplataforma que envía una impresión a AppsFlyer.
 * Crear enlaces de atribución directa para cada aplicación o plataforma.
 
+<div id="setup" />
+
 ## Configuración
+
+<div id="scope-of-work" />
 
 #### ALCANCE DEL TRABAJO
 

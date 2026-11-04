@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **De un vistazo:** UC Toutiao Ads, un partner integrado de ad network de AppsFlyer, es una de las principales aplicaciones agregadoras de noticias de China.
 
+<div id="setting-up-uc-toutiao" />
+
 ## Configuración de UC Toutiao
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -43,16 +45,22 @@ La ventana de configuración de UC Toutiao incluye 2 pestañas activas: integrac
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partners" />
+
 ### Activar los partners
 
 En la **primera visita** aquí, tendrás que activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
 De forma predeterminada, UC Toutiao recibe postbacks solo de eventos de nueva instalación atribuidos a él.
 
 ![uc-toutiao-integration.png](https://files.readme.io/1ed78bd49d9a49d134f5c48655765ad205515752d88528a0a453bd3a091492c0-360002074869.png)
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -86,6 +94,8 @@ En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a U
 
 Esta pestaña se divide en distintas secciones:
 
+<div id="attribution-link-parameters" />
+
 ### Parámetros de enlaces de atribución
 
 En esta sección, selecciona los parámetros que quieres agregar al enlace de atribución.
@@ -107,6 +117,8 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
+<div id="click-through-attribution" />
+
 ### Atribución por clic
 
 Este control deslizante te permite establecer el **tiempo máximo desde el clic hasta la instalación**. Solo las instalaciones (primeras ejecuciones) que tengan lugar dentro de la ventana de lookback pueden atribuirse a UC Toutiao.
@@ -116,6 +128,8 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clics aquí</Anchor>.
 
 ![uc-toutiao-click-through.png](https://files.readme.io/8128e80c365aa223105260a25aa99a61bd9eeccdf19d311804ed3e66b744ef39-360002074929.png)
+
+<div id="click-attribution-link" />
 
 ### Haz clic en el enlace de atribución
 
@@ -146,6 +160,8 @@ La integración de ingresos por publicidad no está disponible para este partner
 No hay ninguna configuración de permisos disponible para este partner.
 
 </Accordion>
+
+<div id="create-conversion-at-uc-toutiao-ads" />
 
 ## Crear conversión en uc toutiao ads
 

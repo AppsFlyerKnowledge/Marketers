@@ -25,15 +25,21 @@ x-zendesk:
 
 > **A simple vista:** Saca partido a tus datos propios sincronizando tus cohortes de Amplitude con AppsFlyer como audiencias importadas.
 
+<div id="about-the-amplitude-integration" />
+
 ## Acerca de la integración con Amplitude
 
 La **integración de Audiencias de AppsFlyer-Amplitude** te permite sincronizar las cohortes definidas en tu cuenta de Amplitude directamente con AppsFlyer como <Anchor target="_blank" href="/marketers/es/docs/audiences-import-audience-segments-from-internal-systems">audiencias importadas</Anchor>. AppsFlyer puede entonces servir como tu plataforma central para conectar y mantener estos segmentos de audiencia con socios, revisar las métricas de campañas y vincular tus datos propios de Amplitude y AppsFlyer para aprovechar al máximo el potencial de ambos.
 
 Las cohortes de Amplitude se pueden sincronizar con AppsFlyer de forma puntual o mediante una sincronización programada con actualizaciones diarias o por horas.
 
+<div id="setting-up-the-integration" />
+
 ## Configuración de la integración
 
 Configura la integración de Audiencias-Amplitude desde la plataforma Amplitude.
+
+<div id="define-appsflyer-data-destinations" />
 
 ### Definir destinos de datos en AppsFlyer
 
@@ -58,6 +64,8 @@ Configura la integración de Audiencias-Amplitude desde la plataforma Amplitude.
 | Identificador | Indique a AppsFlyer cómo conectar sus datos de Amplitude con sus datos de AppsFlyer seleccionando una propiedad de usuario de Amplitude a la izquierda y la clave de AppsFlyer para asignarla a la derecha. La clave de AppsFlyer que seleccione debe ser una de las siguientes:<ul><li>**Para audiencias de iOS:** ID de anunciante de iOS, ID de usuario de Amplitude o ID de usuario de cliente de AppsFlyer</li><li>**Para audiencias de Android:** ID de anunciante de Google, ID de usuario de Amplitude o ID de usuario de cliente de AppsFlyer</li></ul> |
 
 4. Haga clic en **Guardar** para guardar el nuevo destino de AppsFlyer.
+
+<div id="sync-amplitude-cohorts-to-appsflyer-destinations" />
 
 ### Sincronizar cohortes de Amplitude con destinos de AppsFlyer
 

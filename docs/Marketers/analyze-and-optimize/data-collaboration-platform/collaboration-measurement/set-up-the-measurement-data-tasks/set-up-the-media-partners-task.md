@@ -23,6 +23,8 @@ x-zendesk:
 
 Antes de poder compartir conversiones aptas con tus Partners de medios de la <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns">campaña off-site</Anchor> y recibir a cambio datos de rendimiento agregados, primero debes conectar DCP con la cuenta de medios que activa la campaña. Esta conexión indica a AppsFlyer cómo enviar los datos de conversión al partner de medios.
 
+<div id="prerequisites" />
+
 ## Prerrequisitos
 
 Antes de poder configurar la tarea de Partners de medios, el propietario de la colaboración debe asignársela al colaborador que sea propietario de la cuenta de terceros (p. ej., Facebook o Google). Para obtener más información, consulta Asignar tareas de configuración
@@ -31,6 +33,8 @@ Antes de poder configurar la tarea de Partners de medios, el propietario de la c
 
 <Accordion title="Crear una conexión con un partner de medios">
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > La tarea **Media Partners** aparece en la página **Configuración de la medición** solo cuando configuras una <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-collaboration-measurement-overview#off-site-campaigns">campaña off-site</Anchor> que utiliza una fuente personalizada como método de aprovisionamiento. Para obtener más información, consulta: <Anchor target="_blank" href="/marketers/es/docs/set-up-the-conversions-task#set-conversion-data-provision-method">Establecer el método de aprovisionamiento de datos de conversión</Anchor>
@@ -38,6 +42,8 @@ Antes de poder configurar la tarea de Partners de medios, el propietario de la c
 Sigue estos pasos para seleccionar o crear una conexión con un partner de medios:
 
 1. En la página **Configuración de la medición** , haz clic en la tarea **Media partners** .
+
+   <div id="note-1" />
 
    > 📘 **Nota**
    >
@@ -73,6 +79,8 @@ Para configurar el ID de la acción de conversión de Google Ads, sigue estos pa
    * **Acción de conversión web:** el ID de la acción de conversión que se usa para los eventos de conversión creados en el sitio web del colaborador. Debe ser una **acción de conversión** del tipo `UPLOAD_CLICKS`.
    * **Acción de conversión de aplicación (por aplicación):** el ID de la acción de conversión que se usa para los eventos de conversión creados en la aplicación del colaborador. Introduce el ID de la acción de conversión correspondiente, también del tipo `UPLOAD_CLICKS`.
 
+   <div id="note-2" />
+
    > 📘 **Nota**
    >
    > Estas acciones de conversión deben mantenerse **exclusivas para la medición de DCP** y no deben usarse para otro tráfico.
@@ -99,6 +107,8 @@ Para configurar el ID de la acción de conversión de Google Ads, sigue estos pa
    * **Meta Pixel:** El ID que se usa para los eventos de conversión creados en el sitio web del colaborador.
    * **ID del conjunto de datos (por aplicación):** El ID que se usa para los eventos de conversión creados en la aplicación del colaborador.
 
+   <div id="warning" />
+
    > ❗️ **Advertencia**
    >
    > El conjunto de datos y el Meta Pixel deben cumplir las siguientes condiciones:
@@ -107,6 +117,8 @@ Para configurar el ID de la acción de conversión de Google Ads, sigue estos pa
    > * No debe **recibir ninguna conversión directamente** del cliente.
    > * Meta Pixel y el ID del conjunto de datos son intercambiables.
 
+
+   <div id="note-3" />
 
    > 📘 **Nota**
    >

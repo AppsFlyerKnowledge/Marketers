@@ -32,7 +32,11 @@ Batch permite a los anunciantes maximizar el engagement de los usuarios y, al mi
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
 
+<div id="integrating-batch-and-appsflyer" />
+
 ## Integración de Batch con AppsFlyer
+
+<div id="setting-customer-user-id" />
 
 ### Configuración del ID de usuario de cliente
 
@@ -114,6 +118,8 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 </Tab>
 </Tabs>
 
+<div id="setting-up-batch" />
+
 ### Configuración de Batch
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -133,10 +139,14 @@ La configuración de Batch solo requiere la pestaña **Integración**. Las otras
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activación de socios
 
 En la **primera visita** aquí, tendrás que activar el botón **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -145,6 +155,8 @@ Antes de configurar la integración con Batch, asegúrate de obtener tu **Batch 
 Una vez que obtengas las dos claves, introduce cada una en el campo correspondiente. En **General Settings**, introduce tu **Batch Rest API Key** en el campo **BATCH\_REST\_API\_KEY** y tu **Batch API Key** en el campo **BATCH\_API\_KEY**.
 
 ![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -187,6 +199,8 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 Los permisos no están disponibles para Batch.
 
 </Accordion>
+
+<div id="viewing-appsflyer-data-in-the-batch-dashboard" />
 
 ## Ver los datos de AppsFlyer en el dashboard de Batch
 

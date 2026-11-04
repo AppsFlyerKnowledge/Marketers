@@ -25,9 +25,13 @@ x-zendesk:
 ---
 > **De un vistazo:** Eulerian, partner integrado con AppsFlyer, se centra en el análisis y la optimización en tiempo real de las operaciones de e-marketing. Basado en un sistema exhaustivo de recopilación de datos, el paquete de marketing de Eulerian ofrece una combinación de soluciones de atribución web de marketing y gestión de datos. Esta tecnología permite a los usuarios centralizar, analizar, gestionar y activar datos en tiempo real.
 
+<div id="important" />
+
 > 🚧 **Importante:**
 >
 > <Anchor target="_blank" href="/marketers/es/docs/about-raw-data-identifier-restrictions#restricciones-de-fuente-de-medios">Algunas fuentes de medios</Anchor> restringen el intercambio de datos con terceros. Por lo tanto, los postbacks para eventos restringidos no se enviarán a este partner, independientemente de la selección configurada para enviar postbacks.
+
+<div id="setting-up-eulerian" />
 
 ## Configuración de Eulerian
 
@@ -52,10 +56,14 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En la **primera visita** aquí, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El activador debe estar activado mientras trabajes con el partner.  
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
+
+<div id="general-settings" />
 
 ### Configuración general
 
@@ -70,6 +78,8 @@ Realiza los siguientes pasos, según sea necesario:
 * Introduce el **HostID**
 * Activa **Enable** para enviar todas las instalaciones a Eulerian
 
+<div id="default-postbacks" />
+
 ### Postbacks predeterminados
 
 AppsFlyer puede enviar postbacks automáticos a Eulerian tras las instalaciones de los usuarios. Usa esta sección para definir el envío de estos postbacks.
@@ -77,6 +87,8 @@ AppsFlyer puede enviar postbacks automáticos a Eulerian tras las instalaciones 
 ![Eulerian_new_2.png](https://files.readme.io/59cb41cdbec6c06dd4fc2086d238fe2015e5414a474591b23f9a18f8421fb030-360002795789.png)
 
 Selecciona **Eventos atribuidos a cualquier partner** para enviar postbacks a Eulerian.
+
+<div id="in-app-event-settings" />
 
 ### Configuración de eventos in-app
 

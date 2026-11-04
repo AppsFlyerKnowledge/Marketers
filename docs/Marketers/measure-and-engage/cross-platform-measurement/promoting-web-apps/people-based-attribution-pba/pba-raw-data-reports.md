@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **De un vistazo**: Los reportes de raw data de PBA están disponibles a través de Data Locker.
 
+<div id="pba-raw-data-reports" />
+
 ## Reportes de raw data de PBA
 
 Utiliza reportes de raw data de PBA para analizar las trayectorias y acciones de los usuarios.
+
+<div id="report-descriptions" />
 
 ### Descripciones de reportes
 
@@ -36,11 +40,15 @@ Temas del reporte de raw data de PBA
 | <span id="website-visits"></span>[Visitas al sitio web](#visitas-al-sitio-web-y-eventos-del-sitio-web) | <ul><li>Visitas al sitio web.</li><li>Mide la exposición y el engagement de los usuarios con las campañas de tráfico web.</li></ul> |
 | <span id="website-events"></span><Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-dashboard">Eventos del sitio web</Anchor> | <ul><li>Contienen las acciones realizadas por los visitantes del sitio web, como suscribirse o comprar.</li><li>Los eventos se atribuyen a la última visita web no directa que ocurrió en los últimos 30 días.</li><li>Los parámetros de atribución asociados con el evento pueden incluir la fuente de medios, canal de medios, campaña, etc.</li><li>Utiliza estos parámetros para optimizar tus esfuerzos de marketing.</li><li>Analiza el comportamiento de los usuarios por fuente de medios.</li><li>Los valores de estos campos se determinan a través de la visita atribuida mediante las <Anchor target="_blank" href="/marketers/es/docs/pba-media-source-attribution-rules">reglas de atribución de fuentes de medios de PBA.</Anchor></li><li>La intención es asociar eventos con una visita a un sitio web específico y no con una vista de página específica.</li><li>Utiliza esta opción para averiguar qué fuentes y campañas impulsan a los usuarios y qué acciones realizan estos.</li></ul> |
 
+<div id="raw-data-report-fields" />
+
 ## Campos de los reportes de raw data
 
 <div id="website-visits-and-website-events" />
 
 <Accordion title="Visitas al sitio web y eventos del sitio web">
+
+<div id="sample-reports" />
 
 #### Ejemplos de reportes
 
@@ -50,6 +58,8 @@ Temas del reporte de raw data de PBA
 Los campos de raw data se completan en parte a partir de los datos que se originan en el enlace de atribución del usuario de la aplicación móvil y en el evento de instalación de la aplicación.
 
 [Descargar lista de campos como CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmRBeUQS-xeiv069vIgnfBoJW8Wfl1ojv0rAK-pcOlAzNveG1lqvExVdhWfgCKIpJxczWksUiHjSa3/pub?gid=0&single=true&output=csv)
+
+<div id="field-list-website-visits-and-website-events-report" />
 
 #### Lista de campos del reporte de visitas y eventos del sitio web:
 
@@ -113,6 +123,8 @@ Los campos de raw data se completan en parte a partir de los datos que se origin
 
 </Accordion>
 
+<div id="procedures" />
+
 ### Procedimientos
 
 <div id="setting-up-pba-reports-in-data-locker" />
@@ -153,6 +165,8 @@ Combina los datos de la aplicación móvil y del sitio web.
   * La PBA puede determinar que un usuario web y uno móvil son la misma persona.
   * De ser así, los reportes web con PBA incluyen un ID de publicidad móvil: ID de publicidad de Android, identificador de anunciante (IDFA) de iOS, OAID o ID de publicidad de Amazon.
   * A continuación, combina reportes móviles y web basados en el ID de publicidad móvil.
+
+<div id="use-cases-for-pba-and-mobile" />
 
 #### **Casos prácticos para PBA y dispositivos móviles**
 

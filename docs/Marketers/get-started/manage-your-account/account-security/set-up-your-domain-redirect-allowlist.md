@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En resumen:** Configura una lista de redireccionamiento de dominios permitidos para garantizar que los usuarios sean enviados a dominios verificados y confiables, protegiendo sus datos y salvaguardando la integridad de tu marca.
 
+<div id="about-the-redirect-allowlist" />
+
 ## <Image alt="Imagen de la lista de permitidos de redirección principal.png" src="https://files.readme.io/a13b1c4641f4b265ef93ba9b65c57b0a7891336d6f6c21e94dd2ff5d83b948d6-30258741325713.png" width="1340px" />Sobre la lista de redireccionamientos permitidos
 
 Usa la lista de redireccionamientos permitidos para definir una lista específica de dominios raíz y subdominios a los que se permite redireccionar enlaces, con el fin de proteger tus enlaces de redireccionamientos no autorizados, ataques de phishing y fraudes. Una vez que tu lista de permitidos esté activa, los enlaces que crees a través de AppsFlyer solo redirigirán a los usuarios a las URL web cuyos dominios estén en la lista de permitidos. De lo contrario, los usuarios serán enviados a la app store. La lista de redireccionamientos permitidos se aplica a <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">OneLink</Anchor>, a los enlaces de atribución de una sola plataforma mediante la <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#attribution-link-tab">integración de partners</Anchor> y a los <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-direct-attribution-links">enlaces de atribución directa</Anchor> para plataformas de CTV, PC y consolas. La lista de redireccionamientos permitidos (y el redireccionamiento web personalizado) está disponible para los suscriptores del plan Growth y Enterprise. Para evitar abusos, los suscriptores del plan Zero deben tener una tarjeta de crédito registrada (no se realizará ningún cargo).
+
+<div id="set-up-your-redirect-allowlist" />
 
 ## Configura tu lista de redireccionamientos permitidos
 
@@ -108,6 +112,8 @@ Puedes agregar o eliminar dominios de la lista de permitidos en cualquier moment
 **Nota:** Una vez guardada, la lista de redireccionamientos permitidos actualizada se aplicará a los clics en aproximadamente una hora.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Características y limitaciones
 

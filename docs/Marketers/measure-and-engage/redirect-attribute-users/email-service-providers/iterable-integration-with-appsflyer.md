@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
 
+<div id="introduction" />
+
 ## Introducción
 
 Los ESP (proveedores de servicios de correo electrónico) pueden ser excelentes fuentes para el tráfico segmentado de usuarios.
@@ -35,6 +37,8 @@ Los ESP (proveedores de servicios de correo electrónico) pueden ser excelentes 
 Uno de los problemas con los ESP es registrar los clics mientras se mantiene intacta la funcionalidad de enlaces profundos. Los ESP envuelven las URL de enlaces profundos con su propio dominio de registro de clics del ESP. Este procedimiento a veces interrumpe el proceso de enlaces universales de iOS.
 
 Con Iterable, que admite enlaces universales además de su dominio de registro de clics, se pueden seguir realizando enlaces profundos y registro de clics.
+
+<div id="prerequisites" />
 
 ## Requisitos previos
 
@@ -54,7 +58,11 @@ Iterable no es compatible con los enlaces de aplicaciones de Android. Sin embarg
 </Tab>
 </Tabs>
 
+<div id="setting-up-iterable" />
+
 ## Configuración de Iterable
+
+<div id="step-1-setting-up-link-branding-in-iterable" />
 
 ### Paso 1: Configurar la marca del enlace en Iterable
 
@@ -62,9 +70,13 @@ Crea un dominio de registro de clics dedicado y configura un subdominio (por eje
 
 Para obtener más información sobre cómo configurar un dominio de registro de clics con Iterable, consulta <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">aquí</Anchor>.
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### Paso 2: Subir tu certificado SSL a Iterable
 
 Tu dominio de registro de clics debe incluir el certificado SSL de tu dominio. El certificado SSL debe estar instalado en tu cuenta de Iterable. Las instrucciones para instalar tus certificados SSL se pueden encontrar <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">aquí</Anchor>.
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Paso 2: Proporcionar a Iterable un archivo AASA (iOS) y un archivo de enlaces de recursos (Android)
 
@@ -97,6 +109,8 @@ Cuando configuras OneLink con enlaces de aplicaciones, ya tienes un archivo de e
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Configuración de tu aplicación
 
 Consulta lo siguiente para configurar tus aplicaciones para que admitan enlaces universales y de aplicaciones.
@@ -104,6 +118,8 @@ Consulta lo siguiente para configurar tus aplicaciones para que admitan enlaces 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Paso 1 para Android: Configurar la aplicación para que admita enlaces de aplicaciones">
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Paso 1: Agregar el dominio de clic a la actividad en el manifiesto de Android
 
@@ -121,6 +137,8 @@ En el manifiesto de Android, agrega el host del dominio de clic y cualquier pref
      </intent-filter>
 </activity>
 ```
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### Paso 2: Configurar la aplicación para resolver dominios de clic
 
@@ -142,6 +160,8 @@ Para resolver dominios de clic:
 <Accordion title="Paso 1 para iOS: Configurar la aplicación para que admita enlaces universales">
 
 En esta sección se explica cómo configurar tu aplicación para que admita enlaces universales.
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### Paso 1: Asociar dominios de clic en Xcode
 
@@ -240,6 +260,8 @@ Para resolver dominios de clic:
 
 </Accordion>
 
+<div id="sending-your-first-email" />
+
 ## Envío de tu primer correo electrónico
 
 1. Crea una URL de OneLink en la página Administración de enlaces (o manualmente).
@@ -270,6 +292,8 @@ Para resolver dominios de clic:
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Prueba tus enlaces
 

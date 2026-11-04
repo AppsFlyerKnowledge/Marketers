@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
 
+<div id="about-user-invite-attribution" />
+
 ## Sobre la atribución de invitaciones de usuarios
 
 Las invitaciones de usuario significan que los usuarios de tu aplicación actual comparten enlaces que redireccionan a otros (por ejemplo, sus amigos) para descargar/abrir tu aplicación.
@@ -45,6 +47,8 @@ También puedes utilizar los datos de los enlaces para:
 
 Los enlaces de invitaciones que los usuarios comparten con otros son en realidad enlaces personalizados (URL cortas) de OneLink generados por el SDK de AppsFlyer integrado en tu aplicación. La configuración de tu OneLink garantiza que los usuarios que reciben una invitación sean redireccionado al lugar correcto: a la tienda de aplicaciones correcta, a tu aplicación o a un deep link/deferred deep link a una página específica de tu aplicación. <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">Saber más sobre OneLink</Anchor>
 
+<div id="flow" />
+
 ### Flujo
 
 El flujo es el siguiente:
@@ -57,6 +61,8 @@ El flujo es el siguiente:
    * Si no tiene instalada la aplicación, se envía a la tienda de aplicaciones correcta. Se puede enviar al usuario B a una página específica en la aplicación mediante deferred deep linking después del primer inicio de la aplicación y/o se puede recompensar al usuario A.
    * Realiza un evento in-app, el Usuario A puede ser recompensado.
 
+<div id="viewing-data" />
+
 ## Visualización de datos
 
 Los datos de invitación de usuario están disponibles a través de los dashboards y reportes de AppsFlyer. En los dashboards de AppsFlyer, puedes filtrar la atribución de invitaciones de usuario por:
@@ -66,6 +72,8 @@ Los datos de invitación de usuario están disponibles a través de los dashboar
 * **Campaña**: Según lo decida el marketer.
 
 En los reportes, la fuente de medios (parámetro `pid`) es enviada por el SDK con el valor predeterminado `af_app_invites`.
+
+<div id="procedures" />
 
 ## Procedimientos
 
@@ -105,6 +113,8 @@ En los reportes, la fuente de medios (parámetro `pid`) es enviada por el SDK co
 
 <Accordion title="Parámetros">
 
+<div id="parametersvalues-provided-to-the-developer-to-implement-in-the-sdk" />
+
 #### Parámetros/valores proporcionados al desarrollador para implementar en el SDK
 
 <table><thead><tr><th>Parámetro/valor</th><th>Observaciones</th><th>Registra el valor/caso de uso que el desarrollador debe implementar</th></tr></thead><tbody><tr><td>ID de plantilla de OneLink</td><td>El ID de la plantilla de OneLink con la configuración básica en la que se basarán todos los enlaces de invitación de usuario. Por ejemplo: H5hv</td><td> </td></tr><tr><td>Canal</td><td>El nombre del canal. Esto te ayuda a ordenar y ver las atribuciones por canal en la interfaz de usuario de AppsFlyer.</td><td> </td></tr><tr><td>Campaña</td><td>El nombre de la campaña. Esto te ayuda a ordenar y ver las atribuciones por campaña en la interfaz de usuario de AppsFlyer.</td><td> </td></tr><tr><td> <span>is_retargeting=true</span><br/> </td><td>Se agrega si tu campaña es para reorientar a los usuarios existentes.</td><td> </td></tr><tr><td>deep_link_value</td><td>Un parámetro que se usará en el dispositivo del usuario referido para brindarle una experiencia específica. Por lo general, se utiliza para nombrar la página específica a la que se dirigirá a los usuarios. Por ejemplo, si tu aplicación vende frutas, puedes establecer deep links entre los usuarios y la página de manzanas.</td><td> </td></tr><tr><td>deep_link_sub1</td><td rowspan="10">Un parámetro que se usará en el dispositivo del usuario referido para brindarle una experiencia específica. Como el deep_link_value se utiliza normalmente para enviar usuarios a una página específica, este parámetro se puede usar para cualquier otra funcionalidad deseada. Por ejemplo, para agregar una recompensa o un descuento, o para registrar al usuario que hizo la recomendación. </td><td> </td></tr><tr><td>deep_link_sub2</td><td> </td></tr><tr><td>deep_link_sub3</td><td> </td></tr><tr><td>deep_link_sub4</td><td> </td></tr><tr><td>deep_link_sub5</td><td> </td></tr><tr><td>deep_link_sub6</td><td> </td></tr><tr><td>deep_link_sub7</td><td> </td></tr><tr><td>deep_link_sub8</td><td> </td></tr><tr><td>deep_link_sub9</td><td> </td></tr><tr><td>deep_link_sub10</td><td> </td></tr><tr><td>[Opcional] pid</td><td><p>De forma predeterminada, los enlaces que generes incluyen la fuente de medios (parámetro <code>pid</code>) con el valor <code>af_app_invites</code>. </p><p>Para cambiar el valor, tu desarrollador debe agregar un parámetro personalizado llamado <code>pid</code> con el valor que deseas. <strong>Nota</strong>: Para Android, esto solo funciona para el SDK V6.4.2+.</p></td><td> </td></tr><tr><td>Nombre de marca</td><td>El nombre de dominio de marca. Esto te ayuda a ordenar y ver las atribuciones por dominio de marca en la interfaz de usuario de AppsFlyer.</td><td> </td></tr></tbody></table>
@@ -131,6 +141,8 @@ Para que todo esto funcione, Mark envía a su desarrollador la siguiente lista d
 | Campaña | summer\_sale | Para la atribución y para ver datos en AppsFlyer. |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Información adicional
 

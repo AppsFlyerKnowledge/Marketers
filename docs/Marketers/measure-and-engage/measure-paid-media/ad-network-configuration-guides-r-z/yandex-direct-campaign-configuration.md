@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En resumen:** Yandex Direct es una plataforma publicitaria que te permite ejecutar campañas de adquisición de usuarios y campañas de retargeting en la Búsqueda de Yandex, así como en miles de aplicaciones y sitios web de la red publicitaria de Yandex.
 
+<div id="set-up-yandex-direct" />
+
 ## Configurar Yandex Direct
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -42,30 +44,44 @@ La ventana de configuración de Yandex Direct incluye 3 pestañas activas: **Int
 
 <Accordion title="Pestaña de Integración">
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 En tu **primera visita** aquí, tendrás que activar **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más sobre la activación/desactivación del partner</Anchor>.
 
+<div id="advanced-privacy" />
+
 ### Privacidad avanzada
 
 Solo para aplicaciones iOS, **Activar privacidad avanzada (para iOS 14.5 y versiones posteriores)** controla qué datos se comparten con el partner mediante postbacks y reportes. <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#b-advanced-privacy">Saber más sobre la privacidad avanzada</Anchor>.
+
+<div id="transaction-id" />
 
 ### ID de la transacción
 
 Solo para aplicaciones iOS. Cuando **Compartir ID de transacción de SKAN** está activado, estás <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">compartiendo el ID de transacción de los postbacks de SKAdNetwork</Anchor> con el partner. Al hacer esto, el partner podría decodificar tus valores de conversión de SKAdNetwork.
 
+<div id="general-settings" />
+
 ### Configuración general
 
 Los siguientes ajustes generales están disponibles para Yandex Direct.
+
+<div id="yandex-ecom-feed-counter-id" />
 
 #### ID del contador de Yandex Ecom Feed
 
 Introduce el número de etiqueta de Metrika en **ID del contador de Yandex Ecom Feed** si estás ejecutando campañas de Smart Banner con tu feed de productos.
 
+<div id="yandex-app-id" />
+
 #### ID de la App de Yandex
 
 Introduce el **ID de la App de Yandex** obtenido de Yandex Direct.
+
+<div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
@@ -75,6 +91,8 @@ Selecciona **Solo este partner** para los eventos que provienen solo de usuarios
 Selecciona **Todas las fuentes de medios, incluidas las orgánicas** para que toda tu base de usuarios esté disponible para ser reportada a Yandex Direct.
 
 Como red que registra todas las instalaciones, Yandex Direct prefiere recibir postbacks de todas las nuevas instalaciones de tu aplicación desde todas las fuentes, y recomienda seleccionar **Todas las fuentes de medios, incluidas las orgánicas**.
+
+<div id="in-app-events-postbacks" />
 
 ### Postbacks de eventos in-app
 

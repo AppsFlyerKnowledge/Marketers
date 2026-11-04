@@ -31,6 +31,8 @@ IDFV tiene los siguientes usos en AppsFlyer:
 * [Atribución de promociones cruzadas](/docs/idfv-attribution-and-test-device-registration#idfv-en-la-atribución-de-promoción-cruzada)
 * [Registro de dispositivos de prueba](/docs/idfv-attribution-and-test-device-registration#idfv-para-el-registro-de-dispositivos-de-prueba)
 
+<div id="idfv-in-cross-promotion-attribution" />
+
 ## IDFV en la atribución de promoción cruzada
 
 IDFV puede usarse para la coincidencia en un escenario de atribución de promoción cruzada. En este escenario, se muestra un anuncio al usuario dentro de una aplicación de tu empresa. El anuncio promociona otra aplicación que también es propiedad de tu empresa.
@@ -57,6 +59,8 @@ La coincidencia de IDFV se utiliza para la atribución de promoción cruzada en 
 
 </Accordion>
 
+<div id="idfv-for-test-device-registration" />
+
 ## IDFV para el registro de dispositivos de prueba
 
 Los anunciantes realizan pruebas durante el proceso de onboarding de AppsFlyer para verificar que su aplicación puede registrar y enviar correctamente eventos de instalación. El IDFV actúa como identificador único que permite a AppsFlyer reconocer los dispositivos utilizados para las pruebas.
@@ -76,6 +80,8 @@ AppsFlyer trata de forma diferente los eventos de instalación procedentes de di
 El registro del dispositivo de prueba también puede hacerse con IDFA. Sin embargo, una aplicación de iOS no tiene acceso al IDFA cuando la aplicación no implementa App Tracking Transparency (ATT) o cuando el usuario no da su consentimiento para compartir datos personales. En estos casos, podemos usar el acceso al IDFV para identificar el dispositivo de prueba, porque no depende de ATT.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Véase también**
 >

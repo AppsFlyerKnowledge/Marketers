@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **At a glance:** Entiende cómo AppsFlyer valida compras y suscripciones, y compara las dos soluciones disponibles: Validación de recibos e ingresos de la tienda ROI360.
 
+<div id="about-purchase-and-subscription-validation" />
+
 ## Sobre la validación de compras y suscripciones
 
 La validación de compras y suscripciones es esencial para garantizar la precisión y fiabilidad de tus datos de ingresos. Cuando los usuarios realizan compras en tu aplicación, ya sean puntuales o por suscripción, validar esas transacciones con las tiendas de aplicaciones (App Store de Apple y Google Play) asegura que solo se midan y atribuyan las transacciones legítimas y pagadas.
@@ -29,7 +31,11 @@ AppsFlyer ofrece dos soluciones que validan y miden las compras in-app y los ing
 
 El artículo ofrece una introducción general a cada solución y [una comparación de funcionalidades](#comparación-entre-la-validación-de-recibos-y-store-revenue-de-roi360) para ayudarte a determinar qué opción es la adecuada para tu aplicación.
 
+<div id="the-two-solutions-for-purchase-and-subscription-validation" />
+
 ## Las dos soluciones para la validación de compras y suscripciones
+
+<div id="receipt-validation" />
 
 ### Validación de recibos
 
@@ -44,7 +50,11 @@ Para más información, consulta:
 * <Anchor target="_blank" href="/marketers/es/docs/about-receipt-validation">Sobre la validación de recibos</Anchor>
 * <Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation">Configurar la validación de recibos</Anchor>
 
+<div id="roi360-store-revenuepremium" />
+
 ### Ingresos de la tienda ROI360 Premium
+
+<div id="important" />
 
 > 🚧 **Importante**
 >
@@ -60,6 +70,8 @@ Para más información, consulta:
 
 * <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue">Sobre Store Revenue de ROI360</Anchor>
 * <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue">Configuración de Store Revenue de ROI360</Anchor>
+
+<div id="compare-receipt-validation-and-roi360-store-revenue" />
 
 ## Comparación entre la validación de recibos y Store Revenue de ROI360
 

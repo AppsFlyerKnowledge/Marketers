@@ -21,6 +21,8 @@ x-zendesk:
 ---
 **Resumen:** Configura una integración de Pinterest para tu aplicación web a fin de enviar eventos de conversión web a Pinterest para la optimización de campañas y la creación de reportes.
 
+<div id="set-up-integration" />
+
 ## **Configurar la integración**
 
 **Requisitos previos:**
@@ -39,13 +41,19 @@ x-zendesk:
    **Nota:** El selector debe permanecer activado <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">(activado)</Anchor> mientras trabajes con Pinterest.
 5. Completa la configuración en la pestaña **Integración** como se describe a continuación.
 
+<div id="integration-tab" />
+
 ## **Pestaña de Integración**
+
+<div id="activate-partner" />
 
 ### **Activar socio**
 
 En la **primera visita**, activa el selector **Activar partner** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe permanecer activado mientras trabajes con Pinterest.
 
 Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">la activación del partner</Anchor>.
+
+<div id="in-app-event-settings" />
 
 ### **Configuración de eventos in-app**
 
@@ -60,6 +68,8 @@ Puedes encontrar el ID de la cuenta publicitaria y el Access Token en la interfa
 
 1. En AppsFlyer, en la página **Integración activa** de Pinterest > pestaña **Integración**, desplázate hasta **Configuración de eventos in-app**.
 2. Introduce los valores de ID de la cuenta publicitaria y Access Token en sus respectivos campos.
+
+<div id="in-app-event-postbacks" />
 
 ### **Habilitar la atribución por impresiones**
 

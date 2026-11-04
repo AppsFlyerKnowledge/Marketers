@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Yahoo, un partner integrado de ad network de AppsFlyer, ofrece publicidad de búsqueda y nativa en una sola plataforma publicitaria. Además de la atribución móvil basada en clics, Yahoo ofrece atribución de costos y view-through, que se pueden registrar en AppsFlyer.
 
+<div id="setting-up-yahoo" />
+
 ## Configuración de Yahoo
 
 **Requisito previo:** una cuenta con el partner. Si no tienes una cuenta, ponte en contacto con el partner para abrir una antes de configurar la integración.
@@ -40,6 +42,8 @@ x-zendesk:
    **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el partner**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
 5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners</Anchor>
 
+<div id="tip" />
+
 > 👍 **Consejo**
 >
 > El paso de <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#d-general-settings">Configuración general</Anchor> en la pestaña Integración es **obligatorio**. Todos los demás pasos son descriptivos u **opcional**.
@@ -48,9 +52,13 @@ x-zendesk:
 
 <Accordion title="Pestaña de Integración">
 
+<div id="advertiser-configuration" />
+
 ### Configuración del anunciante
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
+
+<div id="activate-partner" />
 
 ### Activar socio
 
@@ -58,9 +66,13 @@ En tu **primera visita** aquí, tendrás que activar el selector ***Activar part
 
 Para obtener más detalles sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
+<div id="general-settings" />
+
 ### Configuración general
 
 Sigue estos pasos para la configuración general de Yahoo.
+
+<div id="click-through-attribution" />
 
 ### Atribución por clic
 
@@ -75,6 +87,8 @@ Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-l
 Activa esta opción si quieres atribuir las instalaciones view-through de Yahoo. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
 Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días. Te recomendamos configurar la ventana de lookback view-through en 1 día para alinearla con Yahoo.
+
+<div id="agency-configuration" />
 
 ### Configuración de agencia
 
@@ -92,6 +106,8 @@ Para encontrar tu ID de cuenta, inicia sesión en el dashboard de Yahoo, haz cli
 ![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
 
 Las ventanas de lookback por clics y view-through están en modo de solo lectura y las debe configurar el anunciante.
+
+<div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
@@ -126,6 +142,8 @@ Para las agencias, la ***opción de envío*** y la lista de eventos disponibles 
 
 Esta pestaña no aplica a Yahoo.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Para todas las SRN, como anuncios de Meta, Apple Search Ads, Adwords, Snapchat, etc., esta pestaña no es funcional, ya que no utilizan enlaces de atribución externos.
@@ -135,6 +153,8 @@ Esta pestaña no aplica a Yahoo.
 <div id="cost-tab" />
 
 <Accordion title="Pestaña de costos">
+
+<div id="enabling-and-testing-yahoo-cost-integration" />
 
 ### Habilitar y probar la integración de costos de Yahoo
 
@@ -149,6 +169,8 @@ La integración de costos proporciona los siguientes datos agregados:
 * Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
 <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer datos de costos coincidentes, ya sea en el dashboard de estado de la integración de costos (y de ingresos por anuncios) o en el dashboard de la ad network individual.
+
+<div id="warning" />
 
 > ❗️ **Advertencia**
 >
@@ -184,11 +206,15 @@ Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es
 
 </Accordion>
 
+<div id="marking-events-as-conversions-in-yahoo" />
+
 ## Marcar eventos como conversiones en Yahoo
 
 Puedes marcar como conversiones los eventos que AppsFlyer envía a Yahoo mediante postbacks de eventos in-app:
 
 ![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
+
+<div id="yahoo-raw-report" />
 
 ## Reporte raw Yahoo
 
@@ -204,9 +230,13 @@ AppsFlyer recibe los siguientes parámetros de Yahoo y los asigna a los siguient
 | Nombre de la campaña | Apps asociadas que pertenecen a una plantilla OneLink relacionada para atribución multiplataforma |
 | Parámetros de seguimiento adicionales utilizados para la atribución. | Parámetros de seguimiento adicionales utilizados para la atribución. |
 
+<div id="limitations" />
+
 ## Limitaciones
 
 * Cuando habilitas la atribución por primera vez, pueden pasar hasta 4 horas antes de que se refleje en la interfaz de usuario de Yahoo.
+
+<div id="skadnetwork-support" />
 
 ## Soporte SKAdNetwork
 

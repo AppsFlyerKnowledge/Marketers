@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En resumen:** TVSquared (anteriormente WyWy), partner integrado de ad network de AppsFlyer, permite a toda la organización digital —especialistas en marketing, responsables de producto y científicos de datos— ejecutar el negocio basándose en datos. TVSquared crea una vista integrada de los consumidores en todos los dispositivos y proporciona herramientas para optimizar la experiencia del usuario en tiempo real.
 
+<div id="setting-up-tvsquared" />
+
 ## Configuración de TVSquared
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con él. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
@@ -47,6 +49,8 @@ Para ver una descripción detallada del Partner Configuration Window Header, haz
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
+<div id="activate-partner" />
+
 ### Activar socio
 
 1. Activa ***Activate Partner***.  
@@ -66,6 +70,8 @@ La pestaña Integración está dividida en distintas secciones, tal como se desc
 * (opcional) Activa ***Postback de eventos in-app***: asigna tus eventos in-app a TVSquared mediante postbacks. Configura los parámetros de la siguiente manera:
   * Haz clic en Agregar evento para añadir un evento del SDK a la lista y completa los parámetros.
 * Haz clic en **Guardar integración**.
+
+<div id="note" />
 
 > 📘 **Nota:**
 >

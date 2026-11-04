@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **De un vistazo:** Excluye a los usuarios existentes de las campañas de adquisición de usuarios (UA) para obtener más instalaciones con el mismo presupuesto y mejorar el ROAS.
 
+<div id="issues-and-consequences" />
+
 ## Problemas y consecuencias
 
 Si tu aplicación recibe tráfico de varias fuentes de medios, estas fuentes pueden **apuntar a tus usuarios existentes en sus campañas de UA**.
@@ -38,9 +40,13 @@ El rendimiento de la campaña puede verse afectado por los siguientes motivos:
 
 El <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#what-is-srn-mistargeting">error de targeting de SRN</Anchor> es un problema de rendimiento similar y común. Este problema significativo puede ocurrir si tanto tu UA como las campañas de retargeting tienen la misma SRN. <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns#la-orientación-incorrecta-es-un-problema">Aprender más</Anchor> 
 
+<div id="solutions" />
+
 ## Soluciones
 
 Estas soluciones describen cómo actualizar las redes de publicidad para excluir a los usuarios existentes de las campañas de UA.
+
+<div id="manual-update" />
 
 ### Actualización manual
 
@@ -53,9 +59,13 @@ Hay varias formas de agregar este raw data a tu sistema de Business Intelligence
 * Usar la Push API para implementar la recopilación en tiempo real
 * Obtener datos de conversión del SDK
 
+<div id="note" />
+
 > 📘 **Nota**
 >
 > En el intervalo de tiempo entre el envío manual de la siguiente lista a las redes de publicidad, las campañas de UA pueden apuntar a los usuarios más nuevos de la aplicación.
+
+<div id="audiences" />
 
 ### Audiencias
 

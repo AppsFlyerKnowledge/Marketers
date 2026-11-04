@@ -26,6 +26,8 @@ x-zendesk:
 
 > **De un vistazo:** la integración con Salesforce Data Cloud te permite llevar tus datos propios a la Plataforma de Colaboración de Datos de AppsFlyer con solo hacer clic en un botón.
 
+<div id="before-you-begin" />
+
 > 🚧 **Antes de comenzar**
 >
 > Antes de integrar Salesforce Data Cloud, debes **instalar la extensión de la app de AppsFlyer** desde Salesforce AppExchange. Esto debe hacerlo un usuario administrador de Salesforce con permiso para descargar paquetes de AppExchange.
@@ -36,13 +38,19 @@ x-zendesk:
 >
 > Cuando la instalación finalice correctamente, el proceso habrá terminado y no será necesaria ninguna configuración adicional del paquete.
 
+<div id="set-up-the-integration" />
+
 ## Configura la integración
 
 La integración consiste en crear una conexión de Salesforce Data Cloud y después crear fuentes. Solo necesitas una conexión para autenticar tu cuenta de Salesforce. Con esta conexión, puedes crear varias fuentes basadas en tablas de Salesforce.
 
+<div id="note" />
+
 > 📘 **Nota:**
 >
 > Si ya has configurado una conexión con Salesforce Data Cloud, no podrás crear otra.
+
+<div id="create-a-salesforce-data-cloud-connection" />
 
 ### Crear una conexión de Salesforce Data Cloud
 
@@ -57,6 +65,8 @@ La integración consiste en crear una conexión de Salesforce Data Cloud y despu
 6. Después de autenticarte correctamente, volverás al cuadro de diálogo **New connection** con una indicación de que tienes una conexión activa con Salesforce. Ahora ya puedes continuar y crear una fuente.
 7. Haz clic en **Create source** y sigue las [instrucciones que se indican a continuación](#crear-una-fuente-de-salesforce-data-cloud) para crear una fuente de Salesforce Data Cloud.
 
+<div id="create-a-salesforce-data-cloud-source" />
+
 ### Crear una fuente de Salesforce Data Cloud
 
 Después de autenticar tu cuenta de Salesforce y configurar la conexión con Salesforce Data Cloud, el siguiente paso es crear fuentes. Estas fuentes proporcionan a AppsFlyer los datos necesarios cada vez que realizas actualizaciones.
@@ -65,6 +75,8 @@ Accede a la pestaña **Sources** con uno de estos métodos:
 
 * Después de completar el paso anterior, haz clic en **Crear fuente**.
 * En el menú lateral de AppsFlyer, ve a **Collaborate** > **Data Clean Room** > **+ New Source**, que aparece en la esquina superior derecha de la página.
+
+<div id="note-1" />
 
 > 📘 **Nota:**
 >
