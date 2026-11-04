@@ -70,7 +70,7 @@ Movable Ink is a dynamic content optimization partner that provides personalized
 | `{{onelink.domain}}` | Your AppsFlyer domain | mink.onelink.com |  | AppsFlyer UI |
 | `{{template_id}}` | ID of the link template set up in AppsFlyer | 1a6f |  | AppsFlyer UI |
 | `{{pid_value}}` | ID of the ESP / media source | ESP Name |  | AppsFlyer UI |
-| `{{mi_link_from_creative<br /><br />_tag}}` | The HREF clickthrough link from Movable Ink’s creative tag. Available on the Finish & Export page (see image in step 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | The link should be encoded. | Movable Ink |
+| `{{mi_link_from_creative`<br /><br />`_tag}}` | The HREF clickthrough link from Movable Ink’s creative tag. Available on the Finish & Export page (see image in step 3.) | https://www.movable-ink-2563<br /><br />.com /p/cp /ee0e28529389f573<br /><br />/curl=https %3A%2 F%2Fwww.<br /><br />movableink2563 .com %2Fp%2<br /><br />Frp%2F9011ea048e c4b f03%2<br /><br />Furl&url \_sig=D4QtmtC8vqJhU7 | The link should be encoded. | Movable Ink |
 
    > 📘 **Note**
    >
