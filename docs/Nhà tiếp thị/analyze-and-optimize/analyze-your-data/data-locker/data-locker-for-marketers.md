@@ -317,7 +317,7 @@ Nếu bạn đang thiết lập Data Locker bằng dịch vụ lưu trữ đám 
       * [Mặc định] **Hợp nhất**
       * **Phân tách theo ứng dụng**
 6. Hoàn thành phần **nội dung Data Locker**:
-7. Chọn một hoặc nhiều **Ứng dụng** để đưa vào báo cáo. Chọn **tất cả** để tự động thêm cả các ứng dụng được thêm vào trong tương lai.
+7. Chọn một hoặc nhiều **Ứng dụng** để đưa vào báo cáo. <mark>Chọn **tất cả** để tự động thêm cả các ứng dụng được thêm vào trong tương lai.</mark>
 8. Nhấp vào **Apply** (Áp dụng).
 9. [Tùy chọn] Chọn một hoặc nhiều **Nguồn Truyền thông** để đưa vào báo cáo.
    * Default=All (Mặc định=Tất cả). Điều này có nghĩa là các nguồn truyền thông được thêm vào trong tương lai sẽ tự động được thêm vào.
@@ -521,7 +521,8 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 
    <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Nhập **Bucket name** (Tên Bộ chứa).Tên Bộ chứa có định dạng sau: `{Bucket Name}/{Home Folder}`. Các giá trị cần thiết cho tên bộ chứa và thư mục gốc hiện trong cửa sổ thông tin đăng nhập.
-6. Nhấp vào **Add External bucket** (Thêm Bộ chứa Ngoài).Bộ chứa được tạo và xuất hiện trong bảng điều khiển bên trái của cửa sổ.  
+6. Nhấp vào **Add External bucket**  
+    (Thêm Bộ chứa Ngoài).Bộ chứa được tạo và xuất hiện trong bảng điều khiển bên trái của cửa sổ.  
    Bây giờ bạn có thể truy cập các tệp tin Data Locker.
 
 </Accordion>

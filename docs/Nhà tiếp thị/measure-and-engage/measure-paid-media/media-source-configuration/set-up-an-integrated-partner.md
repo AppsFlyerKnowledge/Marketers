@@ -229,7 +229,8 @@ Bảng sau bao gồm các phần khác nhau của trang tích hợp. Một số 
         Cài đặt chung
       </td>
       <td>
-        **Partner ID—Credentials**Một số đối tác yêu cầu thông tin đăng nhập để AppsFlyer tích hợp với họ. Đối tác gọi ID này là ID ứng dụng, ID tài khoản, ID người dùng hoặc ID mạng. Nếu trường này hiển thị, hãy lấy ID từ bảng điều khiển của đối tác và nhập ID đó vào trường.
+        **Partner ID—Credentials**  
+        Một số đối tác yêu cầu thông tin đăng nhập để AppsFlyer tích hợp với họ. Đối tác gọi ID này là ID ứng dụng, ID tài khoản, ID người dùng hoặc ID mạng. Nếu trường này hiển thị, hãy lấy ID từ bảng điều khiển của đối tác và nhập ID đó vào trường.
       </td>
     </tr>
     <tr>

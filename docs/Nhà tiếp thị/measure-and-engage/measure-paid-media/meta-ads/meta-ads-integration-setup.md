@@ -90,7 +90,7 @@ AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụn
    3. Để sao chép ID ứng dụng của bạn, hãy nhấp vào ID đó ở trên cùng của màn hình. màn.  
 
       ![meta-ads-copy-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899342893585)
-   4. Trong AppsFlyer, từ menu bên, chọn**Collaborate**> **Partner Marketplace**
+   4. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Partner Marketplace**
    5. Tìm kiếm và chọn quảng cáo Meta.
    6. Nhấp vào **Set up integration**. Bạn đang được chuyển đến trang thiết lập tích hợp.
    7. Trong tab **Integration** (Tích hợp): Bật Activate Partner (Kích hoạt Đối tác).  

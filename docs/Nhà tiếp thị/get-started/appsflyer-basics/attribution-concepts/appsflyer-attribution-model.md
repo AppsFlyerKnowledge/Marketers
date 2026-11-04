@@ -275,7 +275,7 @@ Khung thời gian xem lại cho phân bổ lượt xem hết:
 
 Điều này đặc biệt hữu ích đối với các mạng quảng cáo video vốn có mức CTR thấp trên các quảng cáo video của mình, nhưng đồng thời cũng hữu ích với các mạng quảng cáo video phát các quảng cáo thông thường.
 
-<table><thead><tr><th><strong>Loại ghi công</strong></th><th><p><strong>Phương thức phân bổ</strong></p></th><th><p><strong>Phạm vi</strong></p></th><th><p><strong>Mặc định<br/></strong></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Lượt xem qua</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Đối tác tích hợp đã chọn</a>)</p></td><td><p>Khớp ID</p></td><td><p>0-24 giờ</p></td><td><p>1 ngày</p></td></tr><tr><td><p>Mô hình xác suất</p></td><td><p>0-24 giờ</p></td><td><ul><li>Thích ứng</li><li>Do AppsFlyer xác định</li></ul></td></tr></tbody></table>
+<table><thead><tr><th><strong>Loại ghi công</strong></th><th><p><strong>Phương thức phân bổ</strong></p></th><th><p><strong>Phạm vi</strong></p></th><th><p><strong>Mặc định</strong><br/></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Lượt xem qua</p><p>(<a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">Đối tác tích hợp đã chọn</a>)</p></td><td><p>Khớp ID</p></td><td><p>0-24 giờ</p></td><td><p>1 ngày</p></td></tr><tr><td><p>Mô hình xác suất</p></td><td><p>0-24 giờ</p></td><td><ul><li>Thích ứng</li><li>Do AppsFlyer xác định</li></ul></td></tr></tbody></table>
 
 Trong trường hợp cả lượt nhấp và lượt hiển thị đều xảy ra, lượt nhấp luôn chiếm ưu thế bởi đó là tương tác chủ động.
 

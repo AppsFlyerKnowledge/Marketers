@@ -341,7 +341,7 @@ Bao gồm –
 
 **Tên ứng dụng:** Tên bạn đã chọn cho ứng dụng của mình
 
-**ID ứng dụng:** ID ứng dụng của PC gốc (ký tự có thể sử dụng: `A-Z` `a-z` `0-9``.` `_` `-`)
+**ID ứng dụng:** ID ứng dụng của PC gốc (ký tự có thể sử dụng: `A-Z` `a-z` `0-9.` `_` `-`)
 
 </Accordion>
 

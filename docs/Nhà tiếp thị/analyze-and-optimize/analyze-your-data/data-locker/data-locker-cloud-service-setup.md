@@ -134,7 +134,7 @@ Sau khi tạo bộ chứa, hãy cấp quyền cho AppsFlyer bằng quy trình sa
       }
       ```
 5. Trong đoạn mã, thay thế `af-data-locker-my-bucket` bằng tên bộ chứa bạn đã tạo.
-6. [Tùy chọn] Thêm hỗ trợ cho các bộ chứa được mã hóa KMS. Để làm được như vậy, trong phần **Key Policy**, chọn **Switch to policy view** và dán đoạn mã sau vào **mảng Statement.**
+6. [Tùy chọn] Thêm hỗ trợ cho các bộ chứa được mã hóa KMS. Để làm được như vậy, trong phần **Key Policy**, chọn **Switch to policy view** và dán đoạn mã sau vào **mảng Statement.**  
 
    ```json
    {

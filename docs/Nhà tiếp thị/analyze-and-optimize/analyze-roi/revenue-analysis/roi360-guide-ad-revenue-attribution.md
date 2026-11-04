@@ -185,7 +185,8 @@ Mức độ chi tiết hợp nhất cho doanh thu quảng cáo hoạt động nh
   * <Anchor target="_blank" href="/marketers/vi/docs/dashboard-cost-and-ad-revenue-status">Bảng điều khiển trạng thái tích hợp chi phí và doanh thu quảng cáo</Anchor>: Danh sách tập trung các đối tác được bật tích hợp doanh thu quảng cáo cho một hoặc nhiều ứng dụng có trong tài khoản của bạn.
   * Một số đối tác cho phép bạn thử nghiệm kết nối API. Nếu có sẵn, nút **Test connection** (Thử nghiệm kết nối) sẽ hiển thị. <Image alt="mceclip0.png" src="https://support.appsflyer.com/hc/article_attachments/360006975517" width="104px" />
   * Để xác minh rằng kết nối API đang hoạt động:
-  * Nhấp vào **Test connection (Thử nghiệm kết nối).** Thông báo **Đã xác minh mã khóa API sẽ hiển thị.** Nếu không, hãy làm theo hướng dẫn hành động khắc phục trong bảng sau.
+  * Nhấp vào **Test connection (Thử nghiệm kết nối).**  
+    Thông báo **Đã xác minh mã khóa API sẽ hiển thị.** Nếu không, hãy làm theo hướng dẫn hành động khắc phục trong bảng sau.
 
 | Trạng thái | Ý nghĩa | Nhận xét/hành động cần thiết |
 | --- | --- | --- |

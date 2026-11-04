@@ -221,7 +221,7 @@ Sau [Khám phá đối tác mới](/docs/partner-integrations#khám-phá-đối-
 
 **Để thiết lập tiện ích tích hợp với đối tác mới:**
 
-1. Trong AppsFlyer, từ menu bên, chọn**Collaborate**>**Partner Marketplace**.
+1. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Partner Marketplace**.
 2. Tìm kiếm và chọn đối tác. Bạn được chuyển hướng đến [Trang chi tiết đối tác](/docs/partner-integrations#trang-đối-tác).
 3. Nhấp vào **Set up integration**. Bạn được chuyển hướng đến trang thiết lập tích hợp.
 4. Bật **Kích hoạt đối tác** và <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner">Thiết lập các phần tích hợp còn lại</Anchor>.
@@ -251,7 +251,7 @@ Trước khi có thể thêm tích hợp mạng quảng cáo mới vào Thị tr
 
 **Để mời một đối tác mới tích hợp với AppsFlyer:**
 
-1. Trong AppsFlyer, từ menu bên, chọn**Collaborate**> **Partner Marketplace**.
+1. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Partner Marketplace**.
 2. Từ góc trên cùng bên phải của trang Thị trường đối tác, nhấp vào dấu 3 chấm và chọn **Mời đối tác mới**.   
     [![invite_new_partner.png](https://support.appsflyer.com/hc/article_attachments/11264293319825)](https://support.appsflyer.com/hc/article_attachments/11264293319825)
 3. Nhập tên của đối tác và địa chỉ email có liên quan.  

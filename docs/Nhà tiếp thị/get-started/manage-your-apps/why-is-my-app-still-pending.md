@@ -52,7 +52,8 @@ Trạng thái ứng dụng trong bảng điều khiển không ảnh hưởng đ
 
 1. Trong bảng điều khiển, nhấp vào **My Apps** (Ứng dụng của tôi) ở góc phía trên bên phải.  
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
-2. Cạnh ứng dụng đang chờ xử lý, nhấp vào **Refresh Status (Làm mới Trạng thái).** Nếu trạng thái ứng dụng không thay đổi, thì ứng dụng vẫn hiển thị ở trạng thái Đang chờ xử lý. Nếu ứng dụng đã được cập nhật, trạng thái được hiển thị là Đang hoạt động và logo được cập nhật.
+2. Cạnh ứng dụng đang chờ xử lý, nhấp vào **Refresh Status (Làm mới Trạng thái).**  
+   Nếu trạng thái ứng dụng không thay đổi, thì ứng dụng vẫn hiển thị ở trạng thái Đang chờ xử lý. Nếu ứng dụng đã được cập nhật, trạng thái được hiển thị là Đang hoạt động và logo được cập nhật.
 
 <div id="store-country" />
 

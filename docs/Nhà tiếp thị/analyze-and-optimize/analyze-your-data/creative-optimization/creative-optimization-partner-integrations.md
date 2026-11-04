@@ -152,7 +152,7 @@ Bạn phải có quyền tài khoản quảng cáo đối với các ứng dụn
 2. Nhấp vào + **New integration**.
 3. Trong danh sách **Partner**, chọn **AppLovin**.
 4. Chọn ứng dụng mà bạn đang quảng cáo.
-5. Nhấp vào **Log in with AppLovin**. Cửa sổ sẻ mở ra.
+5. Nhấp vào **Log in with AppLovin**. Cửa sổ sẻ mở ra.
 6. Hoàn thành quy trình đăng nhập và cấp quyền của bạn.
 7. Nhấp vào **Save**.
 
@@ -367,7 +367,7 @@ Bạn phải có quyền tài khoản quảng cáo đối với các ứng dụn
 2. Nhấp vào **+ New integration**.
 3. Trong danh sách **Partner**, chọn **Snapchat**.
 4. Chọn ứng dụng mà bạn đang quảng cáo.
-5. Nhấp vào **Log in with Snap**. Cửa sổ sẻ mở ra.
+5. Nhấp vào **Log in with Snap**. Cửa sổ sẻ mở ra.
 6. Hoàn thành quá trình đăng nhập và cung cấp quyền của bạn. Lưu ý rằng để AppsFlyer lấy được dữ liệu hoàn chỉnh, bạn được khuyến nghị có đầy đủ các quyền.
 7. Nhấp vào **Save**.
 
@@ -395,7 +395,7 @@ Bạn phải có quyền tài khoản quảng cáo đối với các ứng dụn
 2. Nhấp vào **+ New integration**.
 3. Trong danh sách **Partner**, chọn **TikTok**.
 4. Chọn ứng dụng mà bạn đang quảng cáo.
-5. Nhấp vào **Log in with TikTok**. Cửa sổ sẻ mở ra.
+5. Nhấp vào **Log in with TikTok**. Cửa sổ sẻ mở ra.
 6. Hoàn thành quá trình đăng nhập và cung cấp quyền của bạn. Lưu ý rằng để AppsFlyer lấy được dữ liệu hoàn chỉnh, bạn được khuyến nghị có đầy đủ các quyền.
 7. Nhấp vào **Save**.
 

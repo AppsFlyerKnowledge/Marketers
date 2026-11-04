@@ -41,7 +41,7 @@ Có hai phương pháp phân tích dữ liệu sự kiện của người dùng
 
 #### **Dữ liệu hoạt động**
 
-* Dữ liệu hoạt động là các sự kiện được thực hiện bởi người dùng ứng dụng đang hoạt động trong phạm vi ngày đã xác định.
+* Dữ liệu hoạt động là các sự kiện được thực hiện bởi <u>người dùng ứng dụng đang hoạt động</u> trong phạm vi ngày đã xác định.
 * Dữ liệu hoạt động hiển thị bảng phân tích về các sự kiện theo thời gian. Bảng phân tích này rất hữu ích trong việc đo lường hiệu suất tổng thể của các nguồn phương tiện truyền thông trong các phạm vi ngày cụ thể.
 * Ví dụ: sử dụng dữ liệu hoạt động để xem có bao nhiêu sự kiện mua được tất cả người dùng ứng dụng thực hiện trong tháng một.
 * Sử dụng dữ liệu hoạt động để so sánh hành vi của người dùng trong tháng hiện tại so với tháng trước.

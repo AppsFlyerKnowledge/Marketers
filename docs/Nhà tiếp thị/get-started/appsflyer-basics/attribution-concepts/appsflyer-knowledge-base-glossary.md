@@ -668,7 +668,8 @@ Tệp tin **Giá trị Phân cách bằng Dấu phẩy**
 #### eCPC
 
 **Chi phí Hiệu quả trên mỗi Lượt nhấp**  
-(EN: Effective Cost per Click) Cho biết CPC sẽ là bao nhiêu nếu nhà tiếp thị đã mua số lượt nhấp thay vì số lượt hiển thị hoặc lượt chuyển đổi. Xem [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc) *Công thức:* Tổng chi tiêu / Số lượt nhấp = eCPC (như được phân tích bởi AppsFlyer)
+(EN: Effective Cost per Click) Cho biết CPC sẽ là bao nhiêu nếu nhà tiếp thị đã mua số lượt nhấp thay vì số lượt hiển thị hoặc lượt chuyển đổi. Xem [CPC.](/docs/appsflyer-knowledge-base-glossary#cpc)  
+*Công thức:* Tổng chi tiêu / Số lượt nhấp = eCPC (như được phân tích bởi AppsFlyer)
 
 #### eCPI
 
@@ -757,7 +758,8 @@ Tệp tin **Giá trị Phân cách bằng Dấu phẩy**
 
 #### GCD
 
-**Nhận Dữ liệu Chuyển đổi**(EN: Get Conversion Data) Tên chung cho các phương thức SDK mà khi cài đặt, sẽ tìm nạp dữ liệu phân bổ vào SDK.
+**Nhận Dữ liệu Chuyển đổi**  
+(EN: Get Conversion Data) Tên chung cho các phương thức SDK mà khi cài đặt, sẽ tìm nạp dữ liệu phân bổ vào SDK.
 
 <div id="geo" />
 

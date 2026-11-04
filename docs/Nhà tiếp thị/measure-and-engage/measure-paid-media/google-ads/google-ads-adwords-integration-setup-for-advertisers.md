@@ -83,7 +83,7 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 
 **(Bất kỳ thành viên nào trong tài khoản AppsFlyer)**
 
-1. Trong AppsFlyer, từ menu bên, chọn**Collaborate**>**Partner Marketplace**.
+1. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Partner Marketplace**.
 2. Tìm kiếm và chọn **Google Ads**.
 3. Nhấp vào **Set up integration**. Bạn được chuyển hướng đến trang thiết lập tích hợp.
 4. Từ thẻ **Integration**, bật tùy chọn **Activate partner**.  
@@ -134,7 +134,8 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 
 > ❗️ **Dừng lại!**
 >
-> Bạn PHẢI **[qua bước 4](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory) để xem lượt cài đặt Google Ads trong AppsFlyer.** Nếu bạn cũng cần ánh xạ các sự kiện trong ứng dụng của mình tới Google Ads, trước tiên hãy hoàn thành [bước 3](/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended).
+> Bạn PHẢI **[qua bước 4](/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory) để xem lượt cài đặt Google Ads trong AppsFlyer.**
+> Nếu bạn cũng cần ánh xạ các sự kiện trong ứng dụng của mình tới Google Ads, trước tiên hãy hoàn thành [bước 3](/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended).
 
 </Accordion>
 

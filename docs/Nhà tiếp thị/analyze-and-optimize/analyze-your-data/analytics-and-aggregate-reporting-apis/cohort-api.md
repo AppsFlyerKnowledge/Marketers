@@ -284,7 +284,8 @@ Doanh thu sau cài đặt nhóm người của ngày 3 trên mỗi chiến dịc
 }
 ```
 
-**Ví dụ 3: Hoạt động ngày hôm qua**Người dùng đã chuyển đổi (cài đặt, tương tác lại, phân bổ lại) trong khoảng thời gian chuyển đổi nhất định đã thực hiện hoạt động gì vào ngày hôm qua?
+**Ví dụ 3: Hoạt động ngày hôm qua**   
+Người dùng đã chuyển đổi (cài đặt, tương tác lại, phân bổ lại) trong khoảng thời gian chuyển đổi nhất định đã thực hiện hoạt động gì vào ngày hôm qua?
 
 Dữ liệu sử dụng có sẵn qua <Anchor target="_blank" href="/marketers/vi/docs/cohort-analytics-via-data-locker">Nhóm người cho Data Locker</Anchor>. Khoảng thời gian chuyển đổi được giới hạn trong 360 ngày trước đó.
 

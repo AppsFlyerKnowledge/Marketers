@@ -97,7 +97,7 @@ API [máy chủ đến máy chủ (S2S)](/docs/skan-conversion-studio#report-eve
 
 * SKAN 4 và chế độ Tùy chỉnh: S2S luôn bật.
 * Giải mã: S2S không phù hợp với S2S và không có sẵn. AppsFlyer không đặt CV ở chế độ này.
-* Các chế độ doanh thu, lượt chuyển đổi và lượt tương tác: Bạn phải bật [S2S event recording](/docs/skan-conversion-studio#report-events-by-servertoserver-api) trước khi gửi sự kiện.
+* Các chế độ doanh thu, lượt chuyển đổi và lượt tương tác: <mark>Bạn phải bật [S2S event recording](/docs/skan-conversion-studio#report-events-by-servertoserver-api)</mark> trước khi gửi sự kiện.
 
 </Accordion>
 
@@ -246,7 +246,7 @@ Khi bạn thay đổi các cài đặt chế độ, tóm tắt **Conversion-valu
 
 | Chế độ đo lường | Mô tả |
 | --- | --- |
-| [Mặc định] Doanh thu | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Doanh thu được tạo ra trong khung thời gian hoạt động 24 giờ.**<br /><br />Chọn tỷ giá đơn vị sang USD từ một trong các tùy chọn sau:<ul><li>$0,01 để đo lên đến $0,63</li><li>$1 để đo lên đến $63</li><li>$10 để đo lên đến $630</li></ul>AppsFlyer tự động điền 63 phạm vi đo lường doanh thu. `af_skad_revenue` phải được ánh xạ. Trong bảng điều khiển, doanh thu được ghi nhận là giá trị tối đa của phạm vi. Ví dụ: nếu phạm vi là từ 60 USD - 61 USD, doanh thu được ghi nhận là 61 USD. Lưu ý! Doanh thu trong Custom sử dụng một phương thức khác để tính toán.<br /><br />**Các số liệu có sẵn:**<ul><li>Doanh thu</li><li>ROI</li><li>ROAS</li><li>ARPU: Doanh thu/người dùng cài đặt ứng dụng</li><li>Tỷ lệ người dùng chuyển đổi: Người dùng mua hàng/người dùng cài đặt ứng dụng</li><li>eCPA</li></ul> |
+| [Mặc định] Doanh thu | ![RevenueFixed.png](https://files.readme.io/ee0882a8b76e50c6fc0ce9bdb04934f3c22324bcaeb15181caf685b00c014a80-4406058625809.png)<br /><br />**Doanh thu được tạo ra trong khung thời gian hoạt động 24 giờ.**<br /><br />Chọn tỷ giá đơn vị sang USD từ một trong các tùy chọn sau:<ul><li>$0,01 để đo lên đến $0,63</li><li>$1 để đo lên đến $63</li><li>$10 để đo lên đến $630</li></ul>AppsFlyer tự động điền 63 phạm vi đo lường doanh thu. `af_skad_revenue` phải được ánh xạ. Trong bảng điều khiển, <mark>doanh thu được ghi nhận là giá trị tối đa của phạm vi.</mark> Ví dụ: nếu phạm vi là từ 60 USD - 61 USD, doanh thu được ghi nhận là 61 USD. Lưu ý! Doanh thu trong Custom sử dụng một phương thức khác để tính toán.<br /><br />**Các số liệu có sẵn:**<ul><li>Doanh thu</li><li>ROI</li><li>ROAS</li><li>ARPU: Doanh thu/người dùng cài đặt ứng dụng</li><li>Tỷ lệ người dùng chuyển đổi: Người dùng mua hàng/người dùng cài đặt ứng dụng</li><li>eCPA</li></ul> |
 | Chuyển đổi | ![mceclip0.png](https://files.readme.io/29535e45638cb2b1eecdf43e4fbee0fa52665c90aefe064caaaac9d0fc98472f-4406052008593.png)<br /><br />**Các sự kiện trong ứng dụng được thực hiện một hoặc nhiều lần trong khung thời gian hoạt động 24 giờ**<br /><br />**Cài đặt**:<ul><li>Chọn 1-6 sự kiện trong ứng dụng để đo lường từ danh sách thả xuống. Giới hạn: Danh sách được giới hạn chỉ 300 sự kiện hàng đầu trong 30 ngày trước đó.</li><li>Trong bảng điều khiển SKAdNetwork, hãy chọn một sự kiện nhất định làm <Anchor target="_blank" href="/marketers/vi/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#dashboard-settings">sự kiện chuyển đổi</Anchor>.</li></ul>**Số liệu cho mỗi sự kiện trong ứng dụng:**<ul><li>Số lượng người dùng thực hiện một sự kiện</li><li>Tỷ lệ chuyển đổi: Người dùng thực hiện Sự kiện Chuyển đổi/người dùng cài đặt ứng dụng</li><li>eCPA</li><li>Phiên (sử dụng sự kiện *af\_app\_opened)*</li></ul>Ví dụ về số lượng người dùng:<ul><li>Hoàn tất đăng ký</li><li>Đã mua hàng</li><li>Đã đạt đến cấp độ trò chơi</li></ul>**Diễn giải!** Sử dụng phép đo chuyển đổi để tính **xem** người dùng có thực hiện sự kiện hay không. Để đếm số lần người dùng thực hiện một sự kiện, hãy sử dụng phép đo mức độ thu hút. |
 | Tương tác | ![mceclip1.png](https://files.readme.io/51b38d6693e843f04fe7ce02706ae2959d88a047606b41cccad6ed09a46eea39-4406058637841.png)<br /><br />**Số lần người dùng thực hiện một sự kiện trong ứng dụng cụ thể trong Khung thời gian Hoạt động**<br /><br />**Cài đặt:**<ul><li>Chọn một sự kiện trong ứng dụng từ danh sách thả xuống.</li><li>Lựa chọn trong ứng dụng cũng được chỉ định là Sự kiện Chuyển đổi.</li><li>Phạm vi giá trị: 0-63</li></ul>**Các số liệu cho sự kiện trong ứng dụng**:<ul><li>Số lượng người dùng thực hiện sự kiện</li><li>Số sự kiện trung bình trên mỗi người dùng</li><li>Tỷ lệ chuyển đổi</li><li>eCPA</li><li>Các phiên</li></ul>Ví dụ:<ul><li>Đo số lần:<ul><li>một người dùng đã mở ứng dụng</li><li>người dùng đã xem một quảng cáo</li></ul></li></ul> |
 
@@ -422,7 +422,7 @@ Tạo ánh xạ CV tới sự kiện của riêng bạn và tự đặt CV trong
         * **Sự kiện trong Ứng dụng**
           * Doanh thu được báo cáo theo loại được phân bổ cho một sự kiện trong ứng dụng được chọn và được SKAN ghi nhận bằng cách sử dụng sự kiện trong ứng dụng đã chọn. Phải ánh xạ sự kiện; không nên ánh xạ `af_skad_revenue`.
           * Thành phần có thể được sử dụng nhiều lần.
-          * Nếu bạn báo cáo doanh thu bằng đăng lại đến các mạng quảng cáo, hãy xác minh rằng ánh xạ đăng lại sự kiện trong ứng dụng của bạn bao gồm các sự kiện doanh thu trong ứng dụng do bạn đặt.
+          * <mark>Nếu bạn báo cáo doanh thu bằng đăng lại đến các mạng quảng cáo, hãy xác minh rằng ánh xạ đăng lại sự kiện trong ứng dụng của bạn bao gồm các sự kiện doanh thu trong ứng dụng do bạn đặt.</mark>
       </td>
     </tr>
     <tr>
@@ -445,7 +445,7 @@ Tạo ánh xạ CV tới sự kiện của riêng bạn và tự đặt CV trong
         **Ghi nhận doanh thu bằng cách sử dụng phạm vi**
 
         * Khi doanh thu được báo cáo, SKAN sẽ liên kết doanh thu với phạm vi thích hợp. Doanh thu được ghi nhận bằng giá trị trung bình của phạm vi.
-        * Nếu doanh thu được báo cáo vượt quá giá trị trung bình của phạm vi giá trị cao nhất, thì doanh thu sẽ được liên kết với phạm vi giá trị cao nhất. **Lưu ý**! Doanh thu được ghi nhận là giá trị trung bình của phạm vi này. Nói cách khác, số tiền doanh thu thực tế sẽ được bỏ qua.
+        * Nếu doanh thu được báo cáo vượt quá giá trị trung bình của phạm vi giá trị cao nhất, thì doanh thu sẽ được liên kết với phạm vi giá trị cao nhất. **Lưu ý**! <mark>Doanh thu được ghi nhận là giá trị trung bình của phạm vi này.</mark> Nói cách khác, số tiền doanh thu thực tế sẽ được bỏ qua.
         * Trong dữ liệu thô, doanh thu được ghi nhận và phạm vi được liên kết sẽ có sẵn.
 
         **Ví dụ:**
@@ -1041,7 +1041,7 @@ Quy trình S2S như sau:
    * Nếu chế độ bạn đã chọn là doanh thu, chuyển đổi hoặc thu hút:
      1. Trong AppsFlyer, đi tới **Configuration** (Cấu hình) > **SKAN Conversion Studio.**
      2. Nhấp vào tùy chọn (⋮).
-     3. Bật **Record in-app events sent by server-to-server API**.
+     3. Bật <mark>**Record in-app events sent by server-to-server API**</mark>.
 2. Gửi sự kiện bằng S2S.
 
 **Mức giới hạn**

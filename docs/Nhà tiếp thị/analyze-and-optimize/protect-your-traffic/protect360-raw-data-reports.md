@@ -178,7 +178,7 @@ Bạn cần mã thông báo API Pull. Nhận token từ <Anchor target="_blank" 
 | event\_name | [Tùy chọn đối với gian lận sự kiện trong ứng dụng Hậu phân bổ]<br /><br />Lọc sự kiện theo sự kiện trong ứng dụng. Giới hạn báo cáo chỉ các sự kiện cụ thể.  Có thể bao gồm một hoặc nhiều sự kiện.<br /><br />Ví dụ sử dụng: `&event_name=af_purchase,af_login` | chuỗi | Không |
 | additional\_fields=rejected\_reason\_value | [Tùy chọn đối với gian lận sự kiện trong ứng dụng Hậu phân bổ]<br /><br />**<Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary#protect360">rejected\_reason\_value</Anchor>** hiển thị người đóng góp hợp lệ (nguồn truyền thông) cho các lượt cài đặt/sự kiện trong ứng dụng bị đánh cắp. Được điền bằng <Anchor target="_blank" href="/marketers/vi/docs/raw-data-field-dictionary#attribution::2a6fd501">**người đóng góp[1-3]**</Anchor> hoặc **tự nhiên**. | chuỗi | Không |
 | ngày bắt đầu | [Tùy chọn đối với lượt cài đặt Hậu phân bổ]<br /><br />Bắt đầu của phạm vi ngày phát hiện gian lận. (Mặc định là from (từ).) (Được sử dụng trong gian lận cài đặt Hậu phân bổ.) (Được sử dụng trong gian lận cài đặt Hậu phân bổ.) | NĂM-THÁNG-NGÀY | Không |
-| ngày kết thúc | [Tùy chọn đối với lượt cài đặt Hậu phân bổ]<br /><br />Kết thúc của phạm vi ngày phát hiện gian lận. (Mặc định là to (đến).) | NĂM-THÁNG-NGÀY | Không |
+| ngày kết thúc | [Tùy chọn đối với lượt cài đặt Hậu phân bổ]<br /><br />Kết thúc của phạm vi ngày phát hiện gian lận. (Mặc định là to <u>(đến).)</u> | NĂM-THÁNG-NGÀY | Không |
 
 </Accordion>
 
@@ -333,7 +333,7 @@ Dữ liệu thô của Protect360 bao gồm các lượt cài đặt gian lận 
 
 Dữ liệu thô nhắm mục tiêu lại của Protect360 có sẵn cho các lượt chặn thời gian thực và gian lận được phát hiện hậu phân bổ như sau:
 
-<table><thead><tr><th>Báo cáo </th><th>Xuất dữ liệu</th><th>API Pull</th><th>Hộp khóa dữ liệu</th></tr></thead><tbody><tr><td>Lượt cài đặt</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Lượt cài đặt hậu phân bổ</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Dữ liệu thu hút lại không có sẵn</span><span><br/></span> </td></tr></tbody></table>
+<table><thead><tr><th>Báo cáo </th><th>Xuất dữ liệu</th><th>API Pull</th><th>Hộp khóa dữ liệu</th></tr></thead><tbody><tr><td>Lượt cài đặt</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Lượt cài đặt hậu phân bổ</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Dữ liệu thu hút lại không có sẵn</span><span></span><br/> </td></tr></tbody></table>
 
 <div id="traits-and-limitations" />
 

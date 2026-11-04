@@ -77,7 +77,8 @@ The table that follows lists the cardinality limits per day, per app.
 > 👍 **Tip**
 >
 > "Divide and Conquer" again. Define a small number of general ad set names (ideally up to 50), and assign all previous ad set names as single ads. You could also use the **af\_sub** parameters on AppsFlyer attribution links. This enables you to:
-> 1. Prevent seeing **Exceeded\_AdSet\_Limit** or **Exceeded\_Ad\_Limit.** 2. Efficiently optimize according to significant ad sets and ad traffic.
+> 1. Prevent seeing **Exceeded\_AdSet\_Limit** or **Exceeded\_Ad\_Limit.**
+> 2. Efficiently optimize according to significant ad sets and ad traffic.
 > 3. Perform deep analysis based on the ad set and ad names in the raw data.
 
 </Accordion>
@@ -178,7 +179,8 @@ Site ID (per clicks, impressions, installs, and in-app events) has 2 thresholds,
 > 👍 **Tip**
 >
 > "Divide and Conquer". Instead of using thousands of site IDs per media source, which distorts your aggregate data, use a second parameter on your attribution links called **af\_sub\_siteid.** Define a small number of general site IDs (ideally up to 50), and assign all previous site IDs as sub-site IDs under these general site IDs. This enables you to:
-> 1. Prevent seeing **Exceeded\_SiteID\_Limit**2. Efficiently optimize according to significant site IDs traffic
+> 1. Prevent seeing **Exceeded\_SiteID\_Limit**
+> 2. Efficiently optimize according to significant site IDs traffic
 > 3. Perform deep analysis based on the site IDs and sub-site IDs in the raw data
 
 > 📘 **Note**
