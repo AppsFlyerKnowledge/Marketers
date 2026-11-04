@@ -34,6 +34,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="about-onelink-smart-script" />
+
 ## À propos du Smart Script OneLink
 
 Les utilisateurs atterrissent sur votre site web mobile avant d’atteindre la page de votre app store, soit de manière organique, soit après s’être engagés dans une campagne publicitaire. Cependant, deux clics se produisent, comme suit :
@@ -59,9 +61,13 @@ Il existe deux versions du Smart Script OneLink :
 
 <Anchor target="_blank" href="/marketers/fr/docs/legacy-onelink-smart-script-v1-setup">**OneLink Smart Script V1 (version héritée)**</Anchor> : si vous avez déjà configuré Onelink Smart Script, suivez les instructions propres à cette version pour gérer et modifier le script. **Remarque** : bien que ce ne soit pas obligatoire, mieux vaut migrer vers la version 2.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Vous ne savez pas si OneLink Smart Script est la meilleure solution pour vous ? <Anchor target="_blank" href="/marketers/fr/docs/convert-your-mobile-web-visitors-to-app-users">Comparez</Anchor> OneLink Smart Script avec les autres solutions web-to-app AppsFlyer.
+
+<div id="examples" />
 
 ### Exemples
 
@@ -90,6 +96,8 @@ Le lien contenu dans l’e-mail est celui-ci : https://hotel.me?type=email&campa
 Lorsqu’elle clique sur le lien, elle est redirigée vers le site web mobile de l’hôtel. Le site contient des boutons l’invitant à télécharger l’app mobile de l’hôtel. Le Smart Script OneLink génère automatiquement une URL qui contient les mêmes paramètres **pid** et **c** que le lien contenu initialement dans l’e-mail. Le lien généré est le suivant : https://hotel.onelink.me/Ac4G?pid=email&c=Florida&deep_link_value=orlando
 
 **Emma clique sur les boutons du site mobile, et elle est redirigée vers l’app store. Lorsqu'elle télécharge et lance l'app, elle est deep linkée vers la page de l'app dédiée au séjour à Orlando.**
+
+<div id="note-1" />
 
 > 📘 **Remarque**
 >

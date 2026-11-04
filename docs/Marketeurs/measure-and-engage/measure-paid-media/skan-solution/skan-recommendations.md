@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref** : les recommandations de SKAN permettent d'optimiser les paramètres de vos valeurs de conversion et donnent ainsi des mesures d'activité post-installation plus précises.
 
+<div id="overview" />
+
 ## Présentation
 
 SKAdNetwork (SKAN), qui fait partie d'Apple iOS, permet aux annonceurs de mesurer les performances des campagnes tout en respectant la vie privée des utilisateurs. Avec SKAdNetwork, l'activité post-installation est mesurée à l'aide de nombres (valeurs de conversion) compris entre 0 et 63.
@@ -37,11 +39,15 @@ Recommandations de AppsFlyer pour SKAN :
 * Résout les difficultés que vous pouvez rencontrer lors du choix de paramètres en matière de CV.
 * Se basent sur votre verticalité, votre géo, les données SKAN et non-SKAN de l'app , et le comportement de l'utilisateur.
 
+<div id="recommendations" />
+
 ## Recommandations
 
 <div id="revenue" />
 
 <Accordion title="Revenus">
+
+<div id="understanding-revenue-recommendations" />
 
 #### **Comprendre les recommandations sur les revenus**
 
@@ -57,9 +63,13 @@ Nos recommandations :
 * Économisent les valeurs de conversion en utilisant moins de périodes différentes pour mesurer précisément les revenus.
 * Prenez en compte tant les achats in-app que les revenus publicitaires.
 
+<div id="revenue-recommendations-layout" />
+
 #### **Présentation des recommandations sur les revenus**
 
 <table><tbody><tr><td colspan="2"><p><img alt="revenue_recommendions_layout.png" src="https://files.readme.io/1595d3f59b6e30154da560a99430e231d8353d1bd54ebed6192ec0f13cd3f5b3-8976338886801.png"/></p></td></tr><tr><td><p><span>A</span></p></td><td><span>Fenêtre d'activité qui a été enregistrée dans la configuration de votre Conversion Studio, et durant laquelle le revenu SKAN est mesuré.</span></td></tr><tr><td><p><span>B</span></p></td><td><span>Revenu moyen réel par utilisateur payant (ARPPU), basé sur des données précises issues d'utilisateurs organiques et non organiques attribués via les procédés AppsFlyer (AF).</span></td></tr><tr><td><p><span>C</span></p></td><td><p><span>Configuration actuelle ARPPU (SKAN ARPPU), soit l'ARPPU mesurée <span>dans la fenêtre d'activité et la configuration de CV pour le rapport des revenus (d'après votre configuration dans Conversion Studio).</span></span></p></td></tr><tr><td><span>D</span></td><td><p><span>Prévision de l'ARPPU : l'ARPPU attendue sur le nombre de périodes que vous avez sélectionnées. Voir F et G.</span></p></td></tr><tr><td><p><span>E</span></p></td><td><p>Erreur approximative : la d<span>ifférence entre B et C. Il peut s'agir d'une erreur positive si votre SKAN ARPU est surestimée, ou négative si elle est sous-estimée.</span></p><p><span>Exemple : si l'ARPPU réelle est 10 dollars et l'ARPPU SKAN est 7 dollars, l'erreur approximative est sous-estimée à 30 % (- 3 dollars par utilisateur).</span></p></td></tr><tr><td><p><span>F</span></p></td><td><p>Recommandations pour la configuration de votre revenu SKAN. Sélectionnez le nombre de périodes que vous souhaitez inclure dans votre configuration.</p></td></tr><tr><td><p><span>G</span></p></td><td><p><span>La configuration de vos revenus, telle que vous l'avez définie dans Conversion Studio.</span><span></span></p></td></tr></tbody></table>
+
+<div id="using-revenue-recommendations" />
 
 #### **Appliquer les recommandations sur les revenus**
 

@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **En bref :** découvrez les règles de contrôle des différentes versions du SDK AppsFlyer, ainsi que celles que nous continuons à utiliser.
 
+<div id="about-versioning" />
+
 ## À propos des versions
 
 Au fil des ans, AppsFlyer a publié de nombreuses versions du SDK. Chaque version du SDK correspond à une version de l'API. L'objectif de la politique de contrôle des différentes versions du SDK est de définir la durée pendant laquelle chaque API repose sur l'une de ces versions.
+
+<div id="why-do-we-need-version-control" />
 
 ## Pourquoi faire un contrôle des versions ?
 
@@ -38,15 +42,21 @@ L'objectif du contrôle des versions est le suivant :
 * Améliorer la stabilité (la rétrocompatibilité est de 2 ans et demi), ce qui élimine les éventuelles erreurs lors de l'utilisation de versions du SDK très datées.
 * Vous pouvez profiter des nouvelles fonctionnalités qui requièrent les mises à jour du SDK.
 
+<div id="sdk-version-lifecycles" />
+
 ## Cycles de vie des versions du SDK
 
 La durée de vie d'une version d'API est garantie pour 2 ans et demi. Chaque fois qu'une nouvelle version (majeure ou mineure) du SDK est publiée, AppsFlyer fixe une date d'expiration pour la version mineure en cours (avec tous ses patchs correctifs).
+
+<div id="what-happens-when-an-sdk-version-has-reached-its-end-of-support-date" />
 
 ## Que se passe-t-il lorsqu'une version du SDK disparaît ?
 
 Une fois qu'une version du SDK est devenue obsolète, les serveurs d'AppsFlyer ne mesurent plus ses installations, sessions et événements in-app. Les événements qui atteignent ces points de terminaisons sont tout simplement refusés.
 
 Comme l'adoption d'une nouvelle version prend du temps, nous **recommandons fortement** à votre développeur d'anticiper les choses et de passer à la dernière version du SDK bien avant la date d'expiration.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

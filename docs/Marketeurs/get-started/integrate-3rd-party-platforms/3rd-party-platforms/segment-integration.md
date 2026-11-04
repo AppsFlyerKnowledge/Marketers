@@ -29,9 +29,13 @@ x-zendesk:
 
 Segment facilite l'envoi de vos données à AppsFlyer. Une fois que vous avez enregistré vos données à l'aide des bibliothèques open source de Segment, les données sont traduites et acheminées vers AppsFlyer dans le format approprié. AppsFlyer aide les marketeurs à affiner le ciblage, optimiser les dépenses publicitaires et augmenter le retour sur investissement.
 
+<div id="integrating-segment-with-appsflyer" />
+
 ## Intégrer Segment à AppsFlyer
 
 Suivez <Anchor target="_blank" href="https://segment.com/docs/destinations/appsflyer/">ce guide de Segment</Anchor> pour savoir comment intégrer Segment à AppsFlyer.
+
+<div id="faqs" />
 
 ## FAQ
 
@@ -65,6 +69,8 @@ Le wrapper du SDK Segment relie le SDK Segment et le SDK AppsFlyer.
 Lorsque vous utilisez le wrapper du SDK Segment pour appeler les méthodes de Segment pour enregistrer des installations et des événements in-app, le wrapper appelle à la fois les méthodes de Segment et celles d'AppsFlyer.
 
 Cela vous fait gagner du temps et des efforts, tout en réduisant la quantité de code nécessaire.
+
+<div id="warning" />
 
 > ❗️ **Avertissement**
 >

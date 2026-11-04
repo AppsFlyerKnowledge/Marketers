@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** Instructions pour configurer l'envoi d'événements signalés via le SDK Firebase à AppsFlyer dans votre app.
 
+<div id="configuring-events-in-the-app" />
+
 ## Configurer des événements dans l'app
 
 Cette section explique comment configurer et créer des événements dans l'app avec Google Tag Manager (GTM).
@@ -205,6 +207,8 @@ iOS
 
 </Accordion>
 
+<div id="sending-install-events-to-firebase" />
+
 ## Envoi d'événements d'installation à Firebase
 
 Vous pouvez également envoyer des événements d'installation à Firebase avec toutes les données relatives à l'installation.
@@ -215,6 +219,8 @@ Vous pouvez également envoyer des événements d'installation à Firebase avec 
 <Tab title="Java">
 
 Pour envoyer des événements d'installation à Firebase dans Android, vous pouvez utiliser l'objet `conversionData`.
+
+<div id="creating-the-send-event-method" />
 
 #### Création de la méthode d'envoi de l'événement
 
@@ -235,6 +241,8 @@ public void sendInstallToFirebase(Map<String, String> conversionData){
 
 Cette méthode accepte un objet `conversionData`. La méthode vérifie si l'heure d'installation, la source média et la campagne sont nulles, et, le cas échéant, définit l'heure d'installation à l'heure actuelle et la source média ainsi que la campagne comme étant organiques. Sinon, elle prend les données de l'objet `conversionData` et les envoie à Firebase.
 
+<div id="sending-the-install-event" />
+
 #### Envoi de l'événement d'installation
 
 Ajoutez le code suivant dans la méthode `onConversionDataSuccess`:
@@ -253,6 +261,8 @@ Ce code vérifie si l'app est lancée pour la première fois. Si c'est le cas, i
 
 Pour envoyer des événements d'installation à Firebase dans Android, vous pouvez utiliser l'objet `conversionData`.
 
+<div id="creating-the-send-event-method-1" />
+
 #### Création de la méthode d'envoi de l'événement
 
 Ajoutez la méthode suivante dans la classe `AFApplication`, juste en dessous de la méthode `onCreate`:
@@ -270,6 +280,8 @@ fun sendInstallToFirebase(conversionData: Map<String, Any>) {
 ```
 
 Cette méthode accepte un objet `conversionData`. La méthode vérifie si l'heure d'installation, la source média et la campagne sont nulles, et, le cas échéant, définit l'heure d'installation à l'heure actuelle et la source média ainsi que la campagne comme étant organiques. Sinon, elle prend les données de l'objet `conversionData` et les envoie à Firebase.
+
+<div id="sending-the-install-event-1" />
 
 #### Envoi de l'événement d'installation
 
@@ -292,6 +304,8 @@ Ce code vérifie si l'app est lancée pour la première fois. Si c'est le cas, i
 
 <Tabs>
 <Tab title="Objective-C">
+
+<div id="creating-the-send-event-method-2" />
 
 #### Création de la méthode d'envoi de l'événement
 
@@ -331,6 +345,8 @@ Cette méthode reçoit l'objet `installData` et vérifie si l'installation est o
 Si l'installation n'est pas organique, la méthode récupère les données d'installation non organiques correspondantes.
 
 Une fois les paramètres définis, la méthode envoie l'événement d'installation à Firebase.
+
+<div id="sending-the-install-event-2" />
 
 #### Envoi de l'événement d'installation
 
@@ -387,6 +403,8 @@ Si l'installation n'est pas organique, la méthode récupère les données d'ins
 
 Une fois les paramètres définis, la méthode envoie l'événement d'installation à Firebase.
 
+<div id="sending-the-install-event-3" />
+
 #### Envoi de l'événement d'installation
 
 Dans AppDelegate.swift, dans la méthode `didFinishLaunchingWithOptions`, ajoutez `FirebaseApp.configure();`
@@ -410,6 +428,8 @@ L'extrait de code ci-dessus vérifie si l'app est lancée pour la première fois
 
 </Tab>
 </Tabs>
+
+<div id="warning" />
 
 > ❗️ **Avertissement**
 >

@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app suggérés pour votre app de télécommunication.
 
+<div id="-telecommunication" />
+
 ## <Image alt="telecommunications_icon.png" src="https://files.readme.io/42f1aac3b825957d9d0584d83480c441b9d53665cc6cf1a6b8cd1803bb9b6121-20659194885393.png" width="100px" /> Télécommunication
 
 Les applications de télécommunications permettent aux utilisateurs d'acheter et de gérer des plans de téléphonie cellulaire, des plans de données, etc. Les principaux événements que nous suggérons d'enregistrer incluent les achats, les recharges et les abonnements.
@@ -32,6 +34,8 @@ L'enregistrement de ces événements peut vous aider à déterminer :
 * Quels forfaits d'opérateur sont les plus populaires
 * Quels produits ou forfaits les utilisateurs peuvent se permettre d'acheter
 * Quels forfaits sont susceptibles de générer le plus d'engagement à long terme chez les clients
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -44,9 +48,13 @@ L'enregistrement de ces événements peut vous aider à déterminer :
 
 [![Flowchart_for_recommended_events_telecommunication_app_user_journey](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur des télécommunications. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins
+
+<div id="login-af_login" />
 
 <Accordion title="Connexion (af_login)">
 
@@ -99,6 +107,8 @@ AppsFlyer.sendEvent ("af_login", null);
 </Tabs>
 
 </Accordion>
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -163,6 +173,8 @@ AppsFlyer.sendEvent ("af_complete_registration", CompleteRegistrationEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="content-view-af_content_view" />
 
 <Accordion title="Affichage du contenu (af_content_view)">
 
@@ -246,6 +258,8 @@ AppsFlyer.sendEvent("af_content_view", ContentViewEvent);
 
 </Accordion>
 
+<div id="list-view-af_list_view" />
+
 <Accordion title="Affichage de la liste (af_list_view)">
 
 **Objectif**
@@ -314,6 +328,8 @@ AppsFlyer.sendEvent("af_list_view", ListViewEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="purchase-af_purchase" />
 
 <Accordion title="Achat (af_purchase)">
 
@@ -403,9 +419,13 @@ AppsFlyer.sendEvent ("af_purchase", purchaseEvent);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une structure d'événement qui comprend un nom d'événement personnalisé et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="select-package-select_package" />
 
 <Accordion title="Sélection du forfait (select_package)">
 
@@ -471,6 +491,8 @@ AppsFlyer.sendEvent ("select_package", SelectPackageEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="topup-success-top_up_success" />
 
 <Accordion title="Recharge réussie (top_up_success)">
 
@@ -546,6 +568,8 @@ AppsFlyer.sendEvent ("top_up_success", TopUpSuccessEvent);
 
 </Accordion>
 
+<div id="topup-unsuccessful-top_up_unsuccessful" />
+
 <Accordion title="Échec de la recharge (top_up_unsuccessful)">
 
 **Objectif**
@@ -605,6 +629,8 @@ AppsFlyer.sendEvent (" top_up_unsuccessful" , TopUpUnsuccessfulEvent) ;
 </Tabs>
 
 </Accordion>
+
+<div id="subscription-complete-subscription_complete" />
 
 <Accordion title="Abonnement terminé (subscription_complete)">
 

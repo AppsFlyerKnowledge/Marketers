@@ -24,6 +24,8 @@ x-zendesk:
 
 ## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
 
+<div id="about-onelink" />
+
 ## À propos de OneLink
 
 AppsFlyer <Anchor target="_blank" href="/marketers/fr/docs/onelink-guide">OneLink</Anchor> vous permet de créer des liens pour vos campagnes avec des fonctionnalités d'attribution, de redirection et de liens profonds qui convertissent les utilisateurs des médias détenus en utilisateurs d'applications et engagent les utilisateurs existants avec des parcours contextuels fluides, indépendamment de l'appareil, du système d'exploitation, du canal ou de la plateforme. Utilisez OneLink pour créer des parcours utilisateur contextuels et personnalisés qui orientent vos utilisateurs vers votre application afin d'atteindre les taux de conversion et les revenus les plus élevés possibles. Les expériences personnalisées que vous pouvez créer comprennent :
@@ -36,6 +38,8 @@ AppsFlyer <Anchor target="_blank" href="/marketers/fr/docs/onelink-guide">OneLin
 * **Texte vers application** : Créez des liens pour vos campagnes SMS et de messagerie et engagez les utilisateurs via des messages texte.
 * **Référent vers application** : Créez des liens d'invitation utilisateur permettant aux utilisateurs et aux influenceurs d'inviter d'autres personnes à rejoindre votre application ou de partager du contenu spécifique dans l'application, par exemple un article.
 * **Personnalisé** : Créez une expérience hautement personnalisée avec une myriade d'options pour une personnalisation maximale. Peu importe d'où viennent vos utilisateurs, qu'ils soient sur un ordinateur de bureau ou un appareil mobile, en ligne ou hors ligne, à partir de médias détenus ou payés, utilisez OneLink pour les diriger facilement vers l'endroit approprié.
+
+<div id="onelink-onboarding" />
 
 ## Intégration de OneLink
 

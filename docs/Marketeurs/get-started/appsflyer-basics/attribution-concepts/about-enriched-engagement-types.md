@@ -29,6 +29,8 @@ Cependant, bien que les types de publicités soient devenus sophistiqués, plus 
 
 En collaboration avec les principaux réseaux, AppsFlyer introduit une nouvelle norme pour les engagements afin d'offrir confiance et transparence dans tout l'écosystème. Les types d'engagement enrichis reflètent le spectre complet de l'engagement et de l'intentionnalité des utilisateurs lorsqu'ils voient une publicité ou interagissent avec elle. Ce cadre garantit que ces normes sont maintenues dans l'écosystème des partenaires d'AppsFlyer et au-delà. Grâce aux types d'engagement enrichis, les annonceurs peuvent s'assurer d'avoir une vision standardisée et détaillée de la performance de leurs dépenses publicitaires et peuvent exploiter ces informations pour améliorer l'allocation de leur budget et augmenter leur ROAS.
 
+<div id="what-are-enriched-engagement-types" />
+
 ## Types d'engagements enrichis
 
 Le cadre des types d'engagement enrichis offre une visibilité sur les nuances du parcours utilisateur, en indiquant par exemple quand les vues (par exemple, les vidéos pouvant être sautées pendant plus de 5 secondes) et quand les clics ne mènent pas à l'ouverture de l'application ou à la boutique d'applications. Ce faisant, les marketeurs obtiennent plus d'informations sur les actions de leurs utilisateurs, ce qui conduit à une allocation de budget plus intelligente et à un meilleur ROI.
@@ -45,6 +47,8 @@ Voici la liste des nouveaux types d'engagement :
 | <span id="view"></span>Vue | On parle de vue d’annonce (ad view) lorsqu’une annonce est affichée et qu’une impression a lieu. |
 | <span id="listening"></span>écoute | On parle d’écoute lorsqu’un utilisateur écoute une publicité audio, telle qu’une publicité pour un podcast. |
 
+<div id="eet-attribution-priority-and-lookback-window" />
+
 ## Fenêtre rétrospective d'attribution de priorité égale
 
 Le cadre des types d'engagement enrichis n'a pas d'incidence sur la priorité d'attribution des types d'engagement. Par conséquent, l'introduction de l'EET ne devrait pas avoir d'incidence sur votre taux d'installation et de conversion.
@@ -56,6 +60,8 @@ Le tableau ci-dessous précise la <Anchor target="_blank" href="/marketers/fr/do
 Lorsqu'un type d'engagement n'est pas signalé, la priorité par défaut est définie*(click\_to\_app* pour les clics, *view* pour les impressions).
 
 Les fenêtres de rétroaction pour `engaged_click` et `engaged_view` ne peuvent être définies que pour les réseaux non-SRN.
+
+<div id="which-networks-can-report-engaged-views-and-engaged-clicks" />
 
 ## Quels réseaux peuvent signaler l'EET à AppsFlyer ?
 
@@ -191,6 +197,8 @@ La liste des réseaux autorisés comprend les partenaires qui peuvent signaler d
 
 </Accordion>
 
+<div id="set-lookback-windows-for-engaged-clicks-and-engaged-views" />
+
 ## Définir des fenêtres de rétroaction pour les clics et les vues engagés
 
 **Pour définir les fenêtres de rétroaction pour les clics engagés et les vues engagées :**
@@ -205,7 +213,11 @@ La liste des réseaux autorisés comprend les partenaires qui peuvent signaler d
 
 4. Cliquez sur **Enregistrer l'intégration**.
 
+<div id="view-and-analyze-eet-data" />
+
 ## Visualiser et analyser les données EET
+
+<div id="raw-data-reports" />
 
 ### Rapports de données brutes
 
@@ -219,6 +231,8 @@ Dans les scénarios ci-dessous, le nouveau champ restera vide dans les rapports 
 * Lorsque `af_engagement_type` n'est pas envoyé ou est envoyé avec une valeur vide.
 
 Pour voir le type d'engagement dans les rapports de données brutes, les annonceurs doivent sélectionner ces champs dans le produit de données brutes concerné (le type d'engagement et le type d'engagement des contributeurs ne sont pas sélectionnés par défaut).
+
+<div id="dashboards" />
 
 ### Tableaux de bord
 

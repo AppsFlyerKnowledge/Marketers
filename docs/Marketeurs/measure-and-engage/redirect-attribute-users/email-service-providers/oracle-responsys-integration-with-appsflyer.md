@@ -32,6 +32,8 @@ L'un des défis posés par les ESP est d'obtenir une attribution et un deep link
 
 Cependant, l'enregistrement des liens de deep linking et des clics est toujours possible avec les ESP qui prennent en charge les liens universels et les liens d'app en plus de leur domaine d'enregistrement des clics. Vous pouvez également configurer votre propre domaine de clics comme domaine d'enregistrement des clics.
 
+<div id="prerequisites" />
+
 ## Conditions préalables
 
 * Configurez votre application pour qu'elle prenne en charge le <Anchor target="_blank" href="/marketers/fr/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">deep linking avec OneLink</Anchor>.
@@ -51,9 +53,13 @@ Cependant, l'enregistrement des liens de deep linking et des clics est toujours 
 </Tab>
 </Tabs>
 
+<div id="setting-up-oracle-responsys-click-domain" />
+
 ## Configuration du domaine de clics dans Oracle Responsys
 
 Suivez cette section pour configurer votre domaine de clics (domaine d'enregistrement de clics) dans Oracle Responsys.
+
+<div id="step-1-set-up-a-click-domain-in-oracle-responsys" />
 
 ### Étape 1 : Configurer un domaine de clics dans Oracle Responsys
 
@@ -64,6 +70,8 @@ Pour configurer un domaine de clics, suivez le guide officiel d'Oracle Responsys
 ![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
 
 Une fois que vous avez défini des domaines de clics dans les tableaux de liens, Responsys utilise ces domaines pour encapsuler les OneLinks que vous incluez dans les campagnes d'e-mailing. De cette manière, Responsys peut enregistrer les clics dans son système tout en préservant les fonctionnalités de OneLink et de deep linking.
+
+<div id="step-2-give-responsys-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Étape 2 : Donner à Responsys un fichier AASA (iOS) et un fichier Asset Links (Android)
 
@@ -95,11 +103,15 @@ Lorsque vous configurez OneLink avec des liens d'app, un fichier Asset Links est
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Configuration de votre app
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Étape 1 pour Android : Configurer votre application pour qu'elle prenne en charge les liens d'app">
+
+<div id="adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Ajouter le domaine de clic à l'activité dans le manifeste Android
 
@@ -117,6 +129,8 @@ Dans le manifeste Android, ajoutez l'hôte du domaine de clic et son préfixe da
      </intent-filter>
 </activity>
 ```
+
+<div id="setting-up-the-app-to-resolve-click-domains" />
 
 #### Configurez l'application pour les domaines de clics
 
@@ -145,6 +159,8 @@ Pour résoudre les domaine de clics :
 
 Cette section explique comment configurer votre app pour qu'elle prenne en charge les liens universels.
 
+<div id="associating-click-domains-in-xcode" />
+
 #### Associer des domaines de clics dans Xcode
 
 1. Dans Xcode, cliquez sur votre projet.
@@ -153,6 +169,8 @@ Cette section explique comment configurer votre app pour qu'elle prenne en charg
 4. Cliquez sur le signe + et ajoutez votre domaine de clics. Par exemple, applinks:click.example.com.
 
 </Accordion>
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 ### Étape 2 : Configurer l'application pour les domaines de clics
 
@@ -223,6 +241,8 @@ Pour résoudre les domaine de clics :
    </Tab>
    </Tabs>
 
+<div id="sending-your-first-email" />
+
 ## Envoyer le premier e-mail
 
 1. Créez une URL OneLink dans la page de gestion des liens (ou manuellement).
@@ -242,6 +262,8 @@ Pour résoudre les domaine de clics :
 
    À ce stade, Responsys entoure le lien ci-dessus avec le domaine de clics que vous avez défini dans les étapes précédentes. Tout clic sur le domaine de clics redirige vers le lien d'attribution OneLink. Si l'application est installée sur l'appareil de l'utilisateur, le domaine de clics envoie le deep link dans l'app.
 
+<div id="note" />
+
 > 📄 **Exemple**
 >
 > Par souci de lisibilité, les paramètres d'URL ne sont pas encodés dans cet exemple :
@@ -251,6 +273,8 @@ Pour résoudre les domaine de clics :
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Tester vos liens
 

@@ -29,6 +29,8 @@ x-zendesk:
 ---
 > **En bref :** en partenariat avec votre développeur mobile ou d'app CTV, intégrez et installez le SDK dans vos apps Android ou iOS. Une fois les opérations d'intégration de base terminées, votre app sera prête à attribuer les installations et à mesurer les événements in-app.
 
+<div id="implementing-the-dev-key-in-your-app" />
+
 ## **Récupérer la clé dev**
 
 Avant que votre développeur ne puisse installer et intégrer le SDK, vous devez récupérer la clé dev. AppsFlyer utilise la clé dev pour identifier votre compte de manière unique. La clé dev est obligatoire car elle permet au SDK d'envoyer et de récupérer en toute sécurité les données appartenant à votre compte.
@@ -41,6 +43,8 @@ Avant que votre développeur ne puisse installer et intégrer le SDK, vous devez
    [![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
 3. Transférez à votre développeur mobile les instructions concernant <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">l'installation</Anchor> et <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">l'intégration du SDK</Anchor>.
 
+<div id="where-to-start-the-sdk" />
+
 ## **Quand démarrer le SDK ?**
 
 Lorsque vous planifiez l'intégration du SDK AppsFlyer, la première chose à savoir est : quand initialiser et démarrer le SDK dans le processus de lancement de votre app ?
@@ -52,7 +56,11 @@ Cependant, afin de suivre les règles de protection de la confidentialité telle
 <Tabs>
 <Tab title="Android natif">
 
+<div id="starting-the-sdk-in-android-native" />
+
 ### Démarrer le SDK dans Android natif
+
+<div id="select-in-what-class-to-start-the-sdk" />
 
 #### SÉLECTIONNER LA CLASSE DANS LAQUELLE DÉMARRER LE SDK
 
@@ -60,6 +68,8 @@ Choisissez de démarrer le SDK dans la classe globale `Application` ou dans la c
 
 * **Démarrez le SDK dans la **classe** globale `Application`** : il est recommandé d'initialiser le SDK dans la classe/sous-classe globale `Application` car la classe `Application` se charge et s'initialise avant que l'interface utilisateur de l'app ne s'affiche. Cela vous garantit que le SDK démarre dans n'importe quel contexte, y compris celui du deep linking.
 * **Lancez le SDK dans une classe** `Activity` **(démarrage différé)** pour permettre aux utilisateurs d'accepter le partage des données. Obtenir le consentement de l'utilisateur requiert en effet d'avoir une interface utilisateur (UI) rendue dans une classe `Activity`.
+
+<div id="android-developer-instructions" />
 
 #### INSTRUCTIONS POUR LES DEVS ANDROID
 
@@ -126,6 +136,8 @@ Indiquez à votre développeur <Anchor target="_blank" href="https://dev.appsfly
 </Tab>
 </Tabs>
 
+<div id="select-your-privacy-preserving-strategy" />
+
 ## Sélectionnez votre stratégie de protection de la vie privée
 
 Choisissez **comment protéger la confidentialité de l'utilisateur**. Par exemple, vous pouvez choisir d'arrêter le SDK à l'installation, d'empêcher le partage des données avec des tiers, d'anonymiser les données de l'utilisateur ou de désactiver des identifiants spécifiques.
@@ -169,6 +181,8 @@ Les sections suivantes présentes les possibilités d'attribution pour Google Pl
 <div id="attribute-apps-published-on-google-play" />
 
 <Accordion title="Attribuer les apps publiées sur Google Play">
+
+<div id="google-play-install-referrer" />
 
 #### RÉFÉRENT D'INSTALLATION GOOGLE PLAY
 
@@ -276,6 +290,8 @@ CF le Dev Hub pour voir les <Anchor target="_blank" href="https://dev.appsflyer.
 </Tabs>
 
 Lorsque l'attribution se produit à l'aide de l'IDFA, il est important que ce dernier soit envoyé lors du **premier lancement**.C'est la raison pour laquelle le SDK fournit la méthode `waitForATTUserAuthorization`.
+
+<div id="waitforattuserauthorization-overview" />
 
 #### Aperçu de waitForATTUserAuthorization
 
@@ -385,6 +401,8 @@ Pour désactiver l'attribution SKAN, utilisez `disableSKAd`
 
 </Accordion>
 
+<div id="recording-in-app-events" />
+
 ## **Enregistrer les événements in-app**
 
 Les événements in-app (IAE) permettent une analyse de ce qui se produit dans votre app. L'enregistrement des évènements in-app vous permet de mesurer certains KPI comme le ROI (retour sur investissement) et la LTV (lifetime value - durée vie). Nous vous recommandons de bien réfléchir aux événements que vous souhaitez enregistrer.
@@ -440,6 +458,8 @@ Consultez la liste des <Anchor target="_blank" href="/marketers/fr/docs/in-app-e
 
 </Accordion>
 
+<div id="deep-linking-with-onelink" />
+
 ## **Lien profond avec OneLink**
 
 OneLink est la solution d'AppsFlyer pour l'attribution multiplateforme, **la redirection et le deep linking**.
@@ -486,6 +506,8 @@ Consultez notre guide sur le paramétrage du <Anchor target="_blank" href="/mark
 
 </Accordion>
 
+<div id="accessing-attribution-and-deep-linking-data" />
+
 ## **Accéder aux données d'attribution et de deep linking**
 
 Le tableau suivant détaille les différentes méthodes qui permettent de récupérer les données d'attribution et de deep linking :
@@ -509,6 +531,8 @@ Ce qui suit s'applique uniquement aux utilisateurs d'iOS 14.5 et + qui n'ont pas
 >
 > * Utilisez l'API Push pour récupérer les données d'attribution et les envoyer à vos serveurs pour traitement. Cette méthode permet d'attendre que les données soient disponibles, elle est donc très précise et quasi en temps réel. La GCD renvoie des données en temps réel, mais peut être imprécise lorsque les décisions d'attribution finales sont déterminées après plus de 5 secondes.
 > * Utilisez l'API Pull pour traiter par cycle (par exemple chaque jour) les données d'attribution en temps réel, vous éviterez ainsi les éventuelles erreurs de communication.
+
+<div id="testing-your-sdk-integration" />
 
 ## **tester vZtre intégration SDK**
 

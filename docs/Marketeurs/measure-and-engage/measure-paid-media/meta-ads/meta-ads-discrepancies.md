@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **En bref :** découvrez les différences entre les modèles d'attribution des Meta ads et d'AppsFlyer.
 
+<div id="meta-ads-discrepancies-with-appsflyer" />
+
 ## Discordances entre les Meta ads et AppsFlyer
 
 En tant qu'acteurs majeurs dans l'écosystème d'acquisition des utilisateurs mobile, AppsFlyer et Meta ads diffèrent dans leurs modèles d'attribution. Cette situation peut entraîner des discordances entre les tableaux de bord de Meta ads et d'AppsFlyer.
 
 Même si nous travaillons en étroite collaboration avec Meta ads pour réduire ces discordances, les annonceurs doivent être conscients des conséquences suivantes.
 
+<div id="detect-a-discrepancy-between-appsflyer-and-meta-ads" />
+
 ### Comment détecter les écarts entre AppsFlyer et Meta ads
 
 Comparez les événements répertoriés dans le **Gestionnaire d'événements** de Meta ads à ceux des rapports AppsFlyer. Si le nombre d'événements varie considérablement, cela peut indiquer une anomalie.
 
+<div id="differences-in-attribution-models" />
+
 ## Discordances dans les modèles d'attribution
 
 <table><thead><tr><th>Cause</th><th>Meta Ads</th><th>AppsFlyer</th></tr></thead><tbody><tr><td><span id="click-attribution-lookback-window"></span><p><strong>Clic sur la fenêtre rétrospective d'attribution</strong></p></td><td><p>7 jours (sachez que <a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">dans certains cas précis la valeur par défaut est différente</a>).</p></td><td><p>1-30 jours. Assurez-vous de définir sur 7 jours avec Meta ads.</p></td></tr><tr><td><span id="viewthrough-attribution-lookback-window"></span><p><strong>Fenêtre rétrospective d'attribution post vue</strong></p></td><td><p>1 jour (sachez que <a href="https://www.facebook.com/business/help/395050428485124?id=428636648170202" target="_blank">dans certains cas précis la valeur par défaut est différente</a>).</p></td><td><p>1 jour par défaut, mais peut être configuré de 1 à 48 heures (conserver cette valeur par défaut)</p></td></tr><tr><td><span id="multichannel-sourceattribution"></span><p><strong>Attribution<br/>de sources multi-canaux</strong></p></td><td><p>Meta ads attribue les installations de manière indépendante sans se soucier des autres sources média. </p></td><td><p>AppsFlyer utilise l'attribution du dernier clic (plus d'informations sur l'attribution AppsFlyer disponibles <a href="./appsflyer-attribution-model" title="Modèle d'attribution AppsFlyer" target="_blank">ici</a>).</p></td></tr><tr><td><span id="crossdevice-attribution"></span><p><strong>Attribution inter-appareils</strong></p></td><td><p>Meta ads attribue ses utilisateurs qui cliquent puis installent sur différents appareils, par exemple iOS / Android / ordinateur de bureau.</p></td><td><p>AppsFlyer attribue des appareils uniques, qui effectuent à la fois l'engagement et l'installation</p></td></tr><tr><td><span id="different-time-zones"></span><p><strong>Différents fuseaux horaires</strong></p></td><td><p>Le fuseau horaire par défaut des Meta ads est PST. Veillez à le modifier <a href="https://www.facebook.com/business/help/754049591334898" target="_blank">dans Meta Ads Manager</a> pour qu'il corresponde à celui qui a été défini dans les paramètres de l'app du côté d'AppsFlyer.</p></td><td><p>Le fuseau horaire par défaut d'AppsFlyer est UTC + 0. Vous pouvez modifier le fuseau horaire défini pour l'app sur la page <a href="./app-settings#localization-time-zone" target="_blank">paramètres de l'app</a> afin de correspondre au fuseau horaire défini dans Meta Ads Manager.</p></td></tr><tr><td><span id="google-install-referrer"></span><p><strong>Référent d'installation Google</strong></p></td><td colspan="2"><p>Lorsqu'une installation dénuée d'ID d'annonceur a été attribuée à Meta Ads à l'aide du référent d'installation Google Play, AppsFlyer ne la rapportera pas à Meta Ads. Cela entraînera des résultats différents car elle s’affichera chez AppsFlyer, mais pas dans Meta Ads.</p></td></tr><tr><td><span id="AEM-for-data-sharing"></span><p><strong>AEM pour le partage des données</strong></p></td><td colspan="2"><p><span>Pour <a href="./meta-ads-aggregate-event-measurement-aem-for-ios#aem-data-sharing" target="_blank">le partage de données AEM</a>, Meta ads reçoit tous les événements de conversion. Ces attributions supplémentaires n'apparaissent pas dans AppsFlyer. Les écarts de résultat entre les deux plateformes sont donc plus importants en ce qui concerne le nombre d'installations (la majorité des cas), et le nombre d'événements in-app, ce qui inclut les sessions.</span></p></td></tr></tbody></table>
+
+<div id="click-through-and-view-through-attribution" />
 
 ## Attribution post clic et post vue
 
@@ -48,6 +56,8 @@ Par défaut, la fenêtre rétrospective post-clic des Meta ads est définie sur 
 Pour comparer les fenêtres d'attribution post clic et post vue sur Meta ads avec celles d'AppsFlyer, merci de consulter le site Meta ads. Nous vous recommandons de configurer les fenêtres d'attribution sur AppsFlyer d'après les valeurs de Meta ads, telles qu'indiquées dans la capture d'écran suivante :
 
 ![Facebook_Discrepancies.png](https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png)
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -68,6 +78,8 @@ Comme Meta ads ne transmet aucune données de niveau utilisateur, il peut arrive
 
 Toutefois, pour l'attribution posts clic, si l'annonce dirige les utilisateurs vers le Google Play Store, les champs d'attribution sont disponibles pour les annonceurs dans le référent d'installation Google. Les champs fournis via le référent peuplent les rapports de données brutes AppsFlyer mis à votre disposition et permettent à AppsFlyer d'attribuer des utilisateurs qui n'ont pas d'identifiant publicitaire (option LAT activée).
 
+<div id="in-app-events-differences" />
+
 ## Discordances entre les événements in-app
 
 Les différences entre les plateformes peuvent aussi se présenter avec les événements en post-installation (ex : achats in-app) qui s'affichent sur Meta ads et sur AppsFlyer. Le tableau suivant détaille les principales causes qui provoquent ces décalages, et propose des solutions pour les minimiser :
@@ -79,6 +91,8 @@ Les différences entre les plateformes peuvent aussi se présenter avec les év�
 | <span id="unmapped-events"></span>**Événements non mappés** | AppsFlyer reçoit les événements provenant du SDK, mais ils ne sont pas mappés sur Meta ads, et ne sont donc pas envoyés. | Assurez-vous <Anchor target="_blank" href="/marketers/fr/docs/meta-ads-in-app-event-mapping">de mapper à Meta ads</Anchor> tous les événements in-app qui indiquent la qualité des utilisateurs. |
 | <span id="unsent-revenue"></span>**Revenu non envoyé** | AppsFlyer obtient le revenu des événements générés par le SDK, mais ils ne sont pas envoyés à Meta ads. | Vérifiez que les cases **Envoyer les revenus** des événements in-app sont bien cochées, par exemple l'événement d'achat dans la capture d'écran ci-dessous. |
 | <span id="missing-event-values-on-facebook"></span>**Valeurs d'évenement manquantes dans Meta ads** | AppsFlyer envoie les paramètres et les valeurs à Meta ads dans le cadre du mappage des événements, s'ils possèdent les structures appropriées. | Créez vos événements in-app de SDK conformément aux <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-event-structure">structures recommandées par AppsFlyer</Anchor> pour assurer le mappage intégral des valeurs d'événement avec Meta ads. |
+
+<div id="installs-from-re-engagement-campaigns-in-my-ua-dashboard" />
 
 ## Installation à partir des campagnes de réengagement dans Mon tableau de bord AU
 
@@ -92,13 +106,19 @@ En revanche, les installations intervenant **pendant la fenêtre de réattributi
 >
 > Alors que Meta ads affiche toutes les installations d'une campagne de retargeting au même endroit, sur le tableau de bord AppsFlyer, les installations sont réparties entre la page Présentation (nouvelles installations) et la page Retargeting (réattribution et réengagements).
 
+<div id="cross-device-attribution" />
+
 ## Attribution inter-appareils
 
 Rapports Meta ads sur l'attribution inter-appareils. Cette opération peut parfois entraîner des problèmes lorsqu'une campagne pour une plate-forme (iOS/Android) montre des installations sur une autre plateforme.
 
+<div id="example-1" />
+
 > 📄 **Exemple**
 >
 > Sur son téléphone Android, Linda clique sur une annonce mobile de GreatApp dans Facebook. Facebook enregistre le clic effectué par Linda dans le cadre de la campagne d'origine ciblée Android «Android / Femmes». Linda décide d'installer GreatApp sur son iPad personnel. Au premier lancement, AppsFlyer demande à Meta ads l'origine de cette installation iOS, et Meta ads répond en indiquant la campagne « Android / Femmes ».
+
+<div id="validation-rules-and-protect360" />
 
 ## Règles de validation et Protect360
 
@@ -106,10 +126,14 @@ Si vous utilisez les <Anchor target="_blank" href="/marketers/fr/docs/implement
 
 De même, si vous utilisez la solution antifraude AppsFlyer, Protect360, vous pouvez constater des installations, puisque Meta ads s'auto-attribue tandis que AppsFlyer rejette.
 
+<div id="example-2" />
+
 > 📄 **Exemple**
 >
 > Jeff, directeur AU de GreatApp, crée une campagne appelée SPNA, qui cible uniquement les hispanophones basés en Amérique du Nord. Pour ce faire, Jeff définit une règle de validation qui accepte exclusivement les utilisateurs basés au Canada et aux États-Unis.
 > Lorsqu'un utilisateur Meta ads résidant en Espagne clique et installe l'app, Meta ads s'auto-attribue l'installation, tandis qu'AppsFlyer rejette toutes les installations qui ne suivent pas la règle de validation.
+
+<div id="sdk-related-discrepancies" />
 
 ## Écarts liés au SDK
 

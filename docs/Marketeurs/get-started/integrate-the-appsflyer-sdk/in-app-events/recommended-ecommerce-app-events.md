@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app suggérés pour votre app de eCommerce .
 
+<div id="-ecommerce" />
+
 ## <Image alt="InApp_Events_ecommerce.png" src="https://files.readme.io/c6497d250c22c7de5c13f01278ac72d8b3117bc60712ba3fe40ad24efcdc4947-360019350097.png" width="67px" />e-commerce
 
 Les apps d'e-commerce permettent aux acheteurs de rechercher et d'acheter facilement des produits en ligne. Nous vous recommandons d'enregistrer les évènements typiques de recherche, d'achat, d'ajout au panier et d'ajout à la liste d'envies.
@@ -33,6 +35,8 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 * Ce que les acheteurs recherchent
 * Combien d'acheteurs ont effectué un paiement
 * Combien d'acheteurs sont des acheteurs récurrents et combien sont des acheteurs uniques
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -45,9 +49,13 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 
 [![Flowchart_for_recommended_events e-Commerce_app_user_journey](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)](https://files.readme.io/81af149c4fbe9185af3dad4057147dbf9882eb30d30b0724f2ffad2714517084-360020063077.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur du eCommerce. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -113,6 +121,8 @@ AppsFlyer.sendEvent("af_complete_registration", CompleteRegistrationEvent);
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Connexion (af_login)">
 
 **Objectif**
@@ -164,6 +174,8 @@ AppsFlyer.sendEvent("af_login", null);
 </Tabs>
 
 </Accordion>
+
+<div id="search-af_search" />
 
 <Accordion title="Recherche (af_search)">
 
@@ -235,6 +247,8 @@ AppsFlyer.sendEvent("af_search", SearchEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="content-view-af_content_view" />
 
 <Accordion title="Affichage du contenu (af_content_view)">
 
@@ -318,6 +332,8 @@ AppsFlyer.sendEvent("af_content_view", ContentViewEvent);
 
 </Accordion>
 
+<div id="list-view-af_list_view" />
+
 <Accordion title="Affichage de la liste (af_list_view)">
 
 **Objectif**
@@ -386,6 +402,8 @@ AppsFlyer.sendEvent("af_list_view", ListViewEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="add-to-wishlist-af_add_to_wishlist" />
 
 <Accordion title="Ajouter à la liste de souhaits (af_add_to_wishlist)">
 
@@ -466,6 +484,8 @@ AppsFlyer.sendEvent("af_add_to_wishlist", AddToWishListEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="add-to-cart-af_add_to_cart" />
 
 <Accordion title="Ajouter au panier (af_add_to_cart)">
 
@@ -551,6 +571,8 @@ AppsFlyer.sendEvent("af_add_to_cart", AddToCartEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="initiated-checkout-af_initiated_checkout" />
 
 <Accordion title="Paiement initié (af_initiated_checkout)">
 
@@ -645,6 +667,8 @@ AppsFlyer.sendEvent ("af_initiated_checkout", InitiatedCheckoutEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="purchase-af_purchase" />
 
 <Accordion title="Achat (af_purchase)">
 
@@ -754,9 +778,13 @@ Dictionary<string, string> PurchaseEvent = new Dictionary<string, string>();Purc
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une liste de structures d'événements qui comprennent des noms d'événements personnalisés et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="first-purchase-first_purchase" />
 
 <Accordion title="Premier achat (first_purchase)">
 
@@ -862,6 +890,8 @@ FirstPurchaseEvent.Add("af_price", "4000");
 </Tabs>
 
 </Accordion>
+
+<div id="remove-from-cart-remove_from_cart" />
 
 <Accordion title="Supprimer du panier (remove_from_cart)">
 

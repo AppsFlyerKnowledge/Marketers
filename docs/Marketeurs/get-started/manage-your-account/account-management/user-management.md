@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** Créez et gérez les utilisateurs AppsFlyer de votre compte, et attribuez-leur des autorisations d’accès aux fonctionnalités, aux applications et aux données.
 
+<div id="overview" />
+
 ## Aperçu
 
 Les comptes AppsFlyer permettent d'avoir plusieurs utilisateurs, chacun ayant des autorisations gérées individuellement. Le nombre maximum d'utilisateurs par compte est déterminé par votre forfait.
@@ -36,6 +38,8 @@ Les autorisations de chaque utilisateur sont définies en fonction de trois dime
 Les autorisations au sein de chacune de ces dimensions sont attribuées de manière indépendante. En d'autres termes, vous pouvez attribuer à un utilisateur **un rôle** avec des capacités fonctionnelles étendues, mais lui permettre d'exercer ces capacités uniquement dans un cadre étroitement défini d'applications **, de sources média et de zones géo.** La seule exception est le rôle d'admin, comme indiqué ci-dessous, qui a accès à toutes les capacités, applications, sources média et zones géo.
 
 Les administrateurs peuvent [Ajouter des utilisateurs à plusieurs comptes](#multiple-accounts) Ils peuvent donc facilement passer d’un compte à l’autre.
+
+<div id="user-management-page" />
 
 ## Page de gestion des utilisateurs
 
@@ -83,6 +87,8 @@ Cliquez sur le nom d'un rôle dans le panneau de gauche pour afficher les détai
 
 Découvrez ci-dessous les actions disponibles pour gérer efficacement vos utilisateurs et leurs rôles.
 
+<div id="manage-users" />
+
 ## Gérer les utilisateurs
 
 Les administrateurs peuvent créer de nouveaux utilisateurs, les ajouter à plusieurs comptes, modifier leurs informations telles que leurs rôles et leur accès aux applications et aux données, et supprimer des utilisateurs. Certaines de ces actions peuvent être réalisées [en masse à l’aide d’une API dédiée](#gérez-les-utilisateurs-en-masse-via-lapi).
@@ -92,6 +98,8 @@ Les administrateurs peuvent créer de nouveaux utilisateurs, les ajouter à plus
 <Accordion title="Créer des utilisateurs">
 
 La page de création ou de modification d’un utilisateur comprend un certain nombre de sections. Assurez-vous de les remplir, comme décrit ci-dessous. Lorsque vous avez terminé d’apporter les modifications nécessaires, cliquez sur **Sauvegarder** en bas à droite de la page.
+
+<div id="user-details" />
 
 #### Détails de l’utilisateur
 
@@ -103,6 +111,8 @@ La page de création ou de modification d’un utilisateur comprend un certain n
    * Peut inclure des lettres, des chiffres, des apostrophes ('), des esperluettes (&), des signes du dollar ($), des hashtags (#), des traits d'union (-), des traits de soulignement (\_) et des points (.).
    * Deux points à la suite (..) ou tout autre caractère spécial ne sont pas autorisés.
    * Doit se terminer par un domaine e-mail valide.
+
+   <div id="important" />
 
    > 🚧 **Attention !**
    >
@@ -118,6 +128,8 @@ La page de création ou de modification d’un utilisateur comprend un certain n
 
 Sélectionnez le rôle de l'utilisateur (obligatoire) - soit un rôle prédéfini, soit un rôle personnalisé que vous avez déjà créé.
 
+<div id="app-access" />
+
 #### Accès à l'app
 
 Sélectionnez les applications auxquelles l’utilisateur peut accéder :
@@ -125,17 +137,25 @@ Sélectionnez les applications auxquelles l’utilisateur peut accéder :
 * Le paramètre par défaut permet d'accéder à toutes les apps actuelles et futures du compte. Pour modifier ce paramètre, utilisez les cases à cocher pour sélectionner et désélectionner les applications.
 * Un utilisateur ne peut avoir accès à toutes les applications futures que s'il a accès à toutes les applications actuelles.
 
+<div id="data-access" />
+
 #### Accès aux données
 
 Définissez les niveaux d’accès des utilisateurs pour les sources multimédias et les zones géographiques. Décidez d’accorder l’accès à tous les utilisateurs ou de sélectionner l’accès à des éléments spécifiques.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
 > Les utilisateurs ayant un accès limité à la source multimédia ou aux géos ne peuvent pas accéder à certains [Tableaux de bord et fonctionnalités](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
 
+<div id="media-sources" />
+
 #### Sources médias
 
 Par défaut, le paramètre **Tout** Permet d’accéder à toutes les sources multimédias du compte. Cela inclut ceux qui seront ajoutés à l’avenir. La sélection de sources multimédias spécifiques n’inclut pas l’accès aux sources multimédias futures.
+
+<div id="note-1" />
 
 > 📘 **Remarque**
 >
@@ -166,6 +186,8 @@ Deux types de sources multimédias sont affichés dans la liste :
 
 Une fois ces paramètres enregistrés, les tableaux de bord utilisateur affichent uniquement les données des sources multimédias sélectionnées.
 
+<div id="geos" />
+
 #### Géos
 
 Indiquez si les utilisateurs ont accès aux données pour **Tout** Geos ou Geos spécifiques uniquement. Le réglage par défaut permet d'accéder à toutes les zones géo. L’accès limité signifie que les utilisateurs ne peuvent pas accéder à certains [Tableaux de bord et fonctionnalités](/docs/user-management#dashboard-and-feature-availability-for-users-with-limited-media-sourcegeo-access).
@@ -175,9 +197,13 @@ Indiquez si les utilisateurs ont accès aux données pour **Tout** Geos ou Geos 
 1. Sous **Géos**cliquer **Tout**.
 2. Dans la liste déroulante, sélectionnez les zones géo auxquelles l'utilisateur peut accéder.
 
+<div id="user-activation" />
+
 #### Activer l'utilisateur
 
 Une fois l’utilisateur créé, vous pouvez le voir dans la table des utilisateurs avec une icône d’enveloppe ![pending_invitation_icon.png](https://files.readme.io/68ac08ab6e52191a592350f82996f7ade9d181773d0bdbc6e2cb60315b60a8f2-16162502609553.png). Elle indique qu'une invitation a été envoyée et que le compte est en attente d'activation. L'utilisateur doit activer son compte en utilisant le lien figurant dans l'e-mail. Le lien d'activation est valable pendant 48 heures. Une fois que l'utilisateur a activé son compte, l'enveloppe disparaît.
+
+<div id="note-2" />
 
 > 📘 **Remarque**
 >
@@ -191,19 +217,27 @@ Une fois l’utilisateur créé, vous pouvez le voir dans la table des utilisate
 
 Les utilisateurs peuvent être ajoutés à plusieurs comptes et se voir attribuer des rôles différents dans chaque compte. Cela permet aux utilisateurs de travailler avec différents comptes sans avoir à ressaisir leurs identifiants.
 
+<div id="log-in-to-multiple-accounts" />
+
 #### Connectez-vous à plusieurs comptes
 
 Les utilisateurs peuvent se connecter à plusieurs comptes en utilisant toutes les méthodes de connexion: les identifiants (nom d’utilisateur et mot de passe), <Anchor target="_blank" href="/marketers/fr/docs/implementing-and-using-2fa-login">2FAet</Anchor> <Anchor target="_blank" href="/marketers/fr/docs/set-up-sso-authentication-with-your-identity-provider-idp">SSO</Anchor>.
 
+<div id="supported-accounts-and-users" />
+
 #### Comptes et utilisateurs pris en charge
 
 Les comptes annonceurs permettent d’avoir le même utilisateur dans plusieurs comptes. Avec les bonnes autorisations, ils peuvent ajouter des utilisateurs à tous leurs comptes. (1) Voir les restrictions ci-dessous
+
+<div id="limitations-on-adding-users-to-multiple-accounts" />
 
 #### Limitations relatives à l’ajout d’utilisateurs à plusieurs comptes
 
 * Cette fonctionnalité n’est disponible que pour les comptes d’annonceurs et uniquement pour les utilisateurs disposant des autorisations de gestion des utilisateurs appropriées.
 * Un utilisateur peut avoir le rôle d’un [Propriétaire du compte](#propriétaire-de-compte) pour un seul compte. Dans d’autres comptes, ils peuvent occuper n’importe quel autre rôle.
 * Les utilisateurs qui n'ont pas encore [activé leur compte](#activer-lutilisateur) ne peuvent pas être ajoutés à un autre compte.
+
+<div id="add-users-to-multiple-accounts" />
 
 #### Ajouter des utilisateurs à plusieurs comptes
 
@@ -223,6 +257,8 @@ Les comptes annonceurs permettent d’avoir le même utilisateur dans plusieurs 
 
 Les utilisateurs peuvent être modifiés un par un, ou par groupes.
 
+<div id="individual-editing" />
+
 #### Modification individuelle
 
 **Pour modifier un seul utilisateur :**
@@ -233,9 +269,13 @@ Les utilisateurs peuvent être modifiés un par un, ou par groupes.
 4. Tous les paramètres autres que l'e-mail sont modifiables (y compris le rôle, les applications, les sources média et les zones géo).
 5. Cliquez sur **Enregistrer**.
 
+<div id="multi-user-editing" />
+
 #### Modification par groupes
 
 La modification par groupes est idéale pour modifier les autorisations de compte de plusieurs utilisateurs en même temps. Cette fonction associée au filtrage dans l'onglet **Utilisateurs** peut s'avérer particulièrement utile pour la gestion d'un grand nombre d'utilisateurs.
+
+<div id="note-4" />
 
 > 📘 **Remarque**
 >
@@ -253,6 +293,8 @@ La modification par groupes est idéale pour modifier les autorisations de compt
    * N'oubliez pas que vos modifications s'appliquent à tous les utilisateurs sélectionnés !
 5. Les utilisateurs modifiés s’affichent surlignés dans le tableau, et tels qu'ils seront une fois les modifications enregistrées. Cependant, vous aurez toujours la possibilité de revoir vos modifications et de les confirmer ou les annuler à l'étape suivante.
 6. Vérifiez vos modifications. Cliquez sur **Sauvegarder** ou sur **Annuler**.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -283,6 +325,8 @@ La modification par groupes est idéale pour modifier les autorisations de compt
 
 Plusieurs utilisateurs peuvent être supprimés du compte de manière groupée. 
 
+<div id="note-5" />
+
 > 📘 **Remarque**
 >
 > * Le [Propriétaire du compte](/docs/user-management#propriétaire-de-compte) ne peut pas être supprimé
@@ -296,6 +340,8 @@ Plusieurs utilisateurs peuvent être supprimés du compte de manière groupée.�
 
 </Accordion>
 
+<div id="manage-users-in-bulk-via-api" />
+
 ### Gérez les utilisateurs en masse via l’API
 
 Certaines actions de gestion des utilisateurs peuvent être effectuées en masse à l’aide de <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/create-bulk-users-overview">une API dédiée</Anchor>:
@@ -306,11 +352,15 @@ Certaines actions de gestion des utilisateurs peuvent être effectuées en masse
 
 L’API prend en charge les principales fonctionnalités de gestion des utilisateurs sur la plateforme et inclut les mêmes vérifications d’erreurs.
 
+<div id="manage-roles" />
+
 ## Gérer les rôles
 
 Un rôle doit être attribué à chaque utilisateur de votre compte AppsFlyer. Chaque rôle définit les fonctionnalités AppsFlyer auxquelles l'utilisateur peut accéder et les fonctions qu'il peut exécuter. La liste complète des capacités accordées à chaque rôle est disponible dans l'onglet [Rôles](#roles-tab) de la page **Gestion des utilisateurs**.
 
 Les rôles dans AppsFlyer peuvent être [des rôles prédéfinis](#rôles-prédéfinis), [des rôles personnalisés](#rôles-personnalisés), ou (dans certains cadres) [des rôles temporaires](#rôles-temporaires).
+
+<div id="predefined-roles" />
 
 ### Rôles prédéfinis
 
@@ -326,9 +376,13 @@ AppsFlyer propose de nombreux rôles prédéfinis :
 * Sécurité
 * Assurance qualité
 
+<div id="note-6" />
+
 > 📘 **Remarque**
 >
 > Pour chacun de ces rôles prédéfinis, les capacités fonctionnelles sont configurées de manière fixe : aucun mélange ni matching autorisés. Toutefois, vous pouvez modifier les capacités fonctionnelles d'un utilisateur à tout moment en lui attribuant un autre rôle prédéfini ou personnalisé (à l'exception du [propriétaire du compte](#propriétaire-de-compte)), comme indiqué ci-dessous.
+
+<div id="example-1" />
 
 > 📄 **Exemple**
 >
@@ -342,6 +396,8 @@ AppsFlyer propose de nombreux rôles prédéfinis :
 
 Un compte AppsFlyer peut avoir **un ou plusieurs admins**. Ce rôle présente plusieurs caractéristiques uniques :
 
+<div id="access" />
+
 #### Accès
 
 Le rôle d'admin permet d'accéder à **toutes les fonctionnalités du compte**, notamment :
@@ -352,17 +408,25 @@ Le rôle d'admin permet d'accéder à **toutes les fonctionnalités du compte**,
 
 Cette caractéristique d'accès illimité du rôle d'admin ne peut être ni modifiée ni limitée.
 
+<div id="manage-tokens" />
+
 #### Gérer les tokens
 
 Seul un utilisateur disposant d’un rôle d’administrateur peut <Anchor target="_blank" href="/marketers/fr/docs/managing-appsflyer-tokens">Gérer les tokens</Anchor>: créer, renommer et supprimer les jetons d’API et de serveur à serveur.
+
+<div id="role-duplication" />
 
 #### Duplication des rôles
 
 Le rôle d'admin **ne peut pas être dupliqué** lors de la création de [rôles personnalisés](#gérer-les-rôles-personnalisés).
 
+<div id="invite-new-partners-to-appsflyer" />
+
 #### Inviter de nouveaux partenaires dans AppsFlyer
 
 Un utilisateur disposant d’un rôle d’administrateur peut <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#inviter-de-nouveaux-partenaires-dans-appsflyer">Envoyer un lien d’invitation</Anchor> via le Partner Marketplace pour inviter un partenaire qui n’est pas intégré à AppsFlyer.
+
+<div id="account-owner" />
 
 ### Propriétaire de compte
 
@@ -370,11 +434,15 @@ L'utilisateur créé au moment de l'ouverture du compte (**le propriétaire du c
 
 Un propriétaire de compte possède des caractéristiques uniques au-delà de celles du rôle d’administrateur qui n’est pas le propriétaire du compte. Le propriétaire du compte ne peut pas être supprimé, retiré du rôle d'admin ou modifié d'une autre manière à partir de la page **[Gestion des utilisateurs](/docs/user-management#page-de-gestion-des-utilisateurs)**. Si vous devez changer de propriétaire du compte, suivez les étapes indiquées ci-dessous.
 
+<div id="custom-roles" />
+
 ### Rôles personnalisés
 
 Les rôles prédéfinis dans AppsFlyer ont été configurés avec les combinaisons de capacités requises dans la plupart des situations. Grâce à cette fonctionnalité, de nombreux annonceurs estiment qu'ils n'ont pas besoin de personnaliser davantage les rôles. Toutefois, lorsqu'une personnalisation supplémentaire est nécessaire, les rôles prédéfinis restent un excellent point de départ pour gérer les capacités de vos utilisateurs.
 
 En savoir plus sur [la gestion des rôles personnalisés](#gérer-les-rôles-personnalisés).
+
+<div id="temp-roles" />
 
 ### Rôles temporaires
 
@@ -382,9 +450,13 @@ Si votre compte AppsFlyer existait dans notre ancien système de gestion des uti
 
 En savoir plus sur la [gestion des rôles temporaires.](#managing-temp-roles)
 
+<div id="get-roles-data-via-api" />
+
 ### Obtenir les données des rôles via l’API
 
 Par le biais de la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_roles">API d’obtention des rôles</Anchor>, vous pouvez récupérer la liste des rôles actuels et leurs attributs correspondants spécifiques à votre compte.
+
+<div id="manage-custom-roles" />
 
 ## Gérer les rôles personnalisés
 
@@ -424,6 +496,8 @@ Par le biais de la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/re
 4. Lorsque vous êtes satisfait de toutes vos sélections, cliquez sur le bouton **Enregistrer le rôle**.
 5. Les niveaux d'autorisation du rôle sont modifiés pour tous les utilisateurs nouveaux et existants.
 
+<div id="important-1" />
+
 > 🚧 **Important !**
 >
 > Toute modification apportée à un rôle personnalisé est automatiquement appliquée à **tous les utilisateurs existants** dans ce rôle.
@@ -443,6 +517,8 @@ Par le biais de la <Anchor target="_blank" href="https://dev.appsflyer.com/hc/re
 
 </Accordion>
 
+<div id="special-situations-and-additional-procedures" />
+
 ## Situations particulières et procédures complémentaires
 
 <div id="managing-temp-roles" />
@@ -454,6 +530,8 @@ Si votre compte utilisait précédemment notre ancien système de gestion des ut
 * Les utilisateurs avec les mêmes capacités se sont vu attribuer le même rôle temporaire.
 * Utilisez les fonctionnalités de l'onglet [Rôles](/docs/user-management#roles-tab) pour consulter les capacités de chaque rôle temporaire, ainsi que la liste des utilisateurs avec un rôle temporaire.
 
+<div id="temp-role-limitations" />
+
 #### Limitations du rôle temporaire
 
 Les rôles temporaires ont été créés uniquement pour permettre un passage en douceur depuis notre ancien système de gestion des utilisateurs. Ils ne sont donc disponibles que dans des situations précises :
@@ -463,6 +541,8 @@ Les rôles temporaires ont été créés uniquement pour permettre un passage en
   * Notez que l'accès d'un utilisateur aux futures apps **ne peut pas** être modifié lorsque l'utilisateur a un rôle temporaire.
 * Lorsqu'un utilisateur ayant un rôle temporaire passe à un rôle prédéfini, il ne peut pas retrouver le rôle temporaire qui lui avait été attribué précédemment (ni d’ailleurs aucun autre rôle temporaire).
 * Si le dernier utilisateur avec un rôle temporaire quitte ce rôle, le rôle n'apparaîtra plus dans votre compte.
+
+<div id="example-2" />
 
 > 📄 **Exemple**
 >
@@ -505,9 +585,13 @@ Les fonctions suivantes d'AppsFlyer sont **non disponibles** pour ces utilisateu
 
 Comme tous les admins disposent de facto des mêmes autorisations que le propriétaire du compte, il n'est généralement pas nécessaire de modifier le propriétaire du compte. Mais si vous devez changer le propriétaire du compte, procédez comme suit.
 
+<div id="important-2" />
+
 > 🚧 **Important !**
 >
 > Le changement de propriétaire du compte doit être effectué manuellement en suivant les étapes ci-dessous. Il n'est pas possible de le faire depuis la page **Gestion des utilisateurs**.
+
+<div id="1assign-a-team-member-the-admin-role" />
 
 #### #1-Envoyer une demande par e-mail
 
@@ -527,6 +611,8 @@ Veuillez inclure les informations suivantes dans votre demande :
 Utilisez cet exemple d'e-mail comme référence :
 
 ![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+
+<div id="3next-steps" />
 
 #### #2-Étapes suivantes
 

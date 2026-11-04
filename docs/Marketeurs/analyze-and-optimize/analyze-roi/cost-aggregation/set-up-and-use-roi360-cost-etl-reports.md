@@ -130,6 +130,8 @@ part-<number>
 
 <Accordion title="Champs du fichier">
 
+<div id="fieldsdimensions" />
+
 #### Champs/Dimensions
 
 | **Champ** | **Remarques** | **Toujours rempli** | **Format** | **Inclus dans le fichier bilan** |
@@ -161,6 +163,8 @@ part-<number>
 | af\_bid\_strategy | Stratégie d'enchères mappée et normalisée par AppsFlyer. Composant des propriétés de campagne. <Anchor target="_blank" href="/marketers/fr/docs/campaign-properties-in-cost-etl-reports">En savoir plus</Anchor> | Non | Chaîne | - |
 | bid\_amount | Composant des propriétés de la campagne. <Anchor target="_blank" href="/marketers/fr/docs/campaign-properties-in-cost-etl-reports">En savoir plus</Anchor> | Non | Entier | - |
 | original\_bid\_amount | Composant des propriétés de la campagne. <Anchor target="_blank" href="/marketers/fr/docs/campaign-properties-in-cost-etl-reports">En savoir plus</Anchor> | Non | Entier | - |
+
+<div id="metrics" />
 
 #### Métriques
 
@@ -293,6 +297,8 @@ Par Défaut, lorsque AppsFlyer écrit des objets dans votre compartiment AWS, le
 
 </Accordion>
 
+<div id="best-practices" />
+
 ## Recommandations
 
 <div id="override-data" />
@@ -340,6 +346,8 @@ Tous les réseaux ne fournissent pas des données avec la même granularité. Pa
 l’ETL des coûts fournit des informations sur toutes vos données de coûts. Certaines campagnes de l’ETL des coûts n'apparaissent pas dans certains tableaux de bord AppsFlyer, par exemple les données des campagnes inactives (les campagnes sans aucune installation enregistrée). Pour comparer les données, recherchez un ID de campagne spécifique dans le tableau de bord général, puis comparez-le avec ses données de coût dans l’ETL des coûts. <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview#cost-data-availability-and-reports">En savoir plus sur la disponibilité des données de coûts</Anchor>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 

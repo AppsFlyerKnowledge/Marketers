@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref** : ne pas inclure les utilisateurs existants dans les campagnes d'acquisition d'utilisateurs (AU) permet d'obtenir un plus grand nombre d'installations avec le même budget, tout en améliorant le ROAS.
 
+<div id="issues-and-consequences" />
+
 ## Difficultés et conséquences
 
 Si votre app reçoit du trafic issu de différentes sources média, ces sources peuvent cibler vos utilisateurs existants dans leurs campagnes AU.
@@ -43,6 +45,8 @@ Typiquement, les performances sont également affectées par <Anchor target="_bl
 
 Ces solutions décrivent comment mettre à jour les ad networks afin d'exclure les utilisateurs existants des campagnes UA.
 
+<div id="manual-update" />
+
 ### Mise à jour manuelle
 
 Depuis AppsFlyer, collectez vos données d'installation brutes de niveau utilisateur afin de créer des listes d'ID d'appareil. Envoyez ensuite ces listes aux ad networks pour faire appliquer l'exclusion d'utilisateurs.
@@ -53,6 +57,8 @@ L'ajout de ces données brutes à votre système BI peut se faire de différente
 * Utilisez périodiquement des requêtes API Pull de données brutes
 * Utilisez l'API Push pour implémenter la collecte en temps réel
 * Obtenez les données de conversion depuis le SDK
+
+<div id="note" />
 
 > 📘 **Remarque**
 >

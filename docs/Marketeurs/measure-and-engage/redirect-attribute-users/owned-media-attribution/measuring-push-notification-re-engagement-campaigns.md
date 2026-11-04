@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez les campagnes de notification push sur iOS et sur Android.
 
+<div id="overview" />
+
 ## Présentation
 
 AppsFlyer prend en charge la mesure des campagnes de notification push pour l'ensemble des fournisseurs de push, ainsi que la mesure des campagnes implémentées directement sur Firebase Cloud Messaging ou Apple Push Notification Services (APNS).
@@ -36,6 +38,8 @@ L'intégration peut être implémentée de deux manières :
 * En envoyant un objet JSON avec une clé `af` dans la charge utile de la notification push (ancienne méthode).
 
 Les conversions s'affichent dans la vue d'ensemble du tableau de bord, dans les vues retargeting et unifiée.
+
+<div id="how-does-it-work" />
 
 ## Comment fonctionne l'API de test ?
 
@@ -49,9 +53,13 @@ Une fois les étapes décrites dans cet article terminées, votre application fo
 
 Dans le cas d'utilisation du OneLink, si le OneLink est configuré pour diriger l'utilisateur vers un lieu précis dans l'app, le flux de deep link est déclenché.
 
+<div id="prerequisites" />
+
 ## Conditions préalables
 
 Avant de continuer, vérifiez que <Anchor target="_blank" href="/marketers/fr/docs/basic-sdk-integration-guide">le SDK AppsFlyer est bien intégré à l'app</Anchor> **et** que cette dernière peut recevoir les notifications push.
+
+<div id="steps" />
 
 ## Étapes
 
@@ -75,6 +83,8 @@ Commencez par créer une notification push contenant des données d'attribution 
 <Tabs>
 <Tab title="Avec OneLink (recommandé)">
 
+<div id="using-onelink-recommended" />
+
 #### **Avec OneLink (recommandé)**
 
 Il s’agit de la méthode recommandée pour intégrer AppsFlyer aux notifications push.
@@ -95,7 +105,11 @@ Il s’agit de la méthode recommandée pour intégrer AppsFlyer aux notificatio
 
 <div id="using-json-legacy" />
 
+<div id="using-json" />
+
 #### **Avec JSON (ancienne méthode)**
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -106,6 +120,8 @@ Dans les données personnalisées de la notification push, ajoutez une clé pers
 * `PID`
 * `is_retargeting`
 * `C`
+
+<div id="note-3" />
 
 > 📄 **Exemple avec Firebase**
 >

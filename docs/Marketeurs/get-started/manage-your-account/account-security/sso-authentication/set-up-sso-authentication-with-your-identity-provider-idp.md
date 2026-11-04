@@ -29,11 +29,15 @@ x-zendesk:
 ---
 > **En bref :** En intégrant AppsFlyer à votre prestataire d'identité (IdP), les utilisateurs du compte AppsFlyer peuvent se connecter à AppsFlyer en utilisant l'authentification unique (SSO). Découvrez l'authentification SSO, comment configurer le SSO avec votre IdP et trouvez les réponses aux questions les plus fréquentes.
 
+<div id="note-1" />
+
 > 📘 **Remarque**
 >
 > **Pour les utilisateurs disposant de plusieurs comptes :**
 >
 > Lors du passage d'un compte configuré pour la connexion via SSO à un compte configuré pour la connexion via nom d'utilisateur et mot de passe ou via la connexion Google, vous devrez vous connecter en utilisant les identifiants du compte ou via le processus de connexion Google.
+
+<div id="set-up-sso" />
 
 ## Configurer le SSO avec votre IdP
 
@@ -59,6 +63,8 @@ Voir les procédures détaillées pour configurer l'authentification SSO dans l'
 * <Anchor target="_blank" href="/marketers/fr/docs/configure-appsflyer-sso-in-onelogin">OneLogin</Anchor>
 * <Anchor target="_blank" href="/marketers/fr/docs/configure-appsflyer-sso-in-ping-identity">Ping Identity</Anchor>
 
+<div id="setup-overview-for-other-idp-platforms" />
+
 #### Aperçu de la configuration pour d'autres plate-formes IdP
 
 Aperçu du processus de configuration sur d'autres plate-formes IdP :
@@ -66,6 +72,8 @@ Aperçu du processus de configuration sur d'autres plate-formes IdP :
 * Une application AppsFlyer est créée sur la plateforme IdP, basée sur le protocole SAML 2.0, et le [certificat d'authentification AppsFlyer](#the-authentication-certificate) est implémenté dans la plate-forme IdP.
 * Les utilisateurs sont affectés à la nouvelle app AppsFlyer
 * Le certificat IdP ou les métadonnées sont récupérés pour être utilisés dans AppsFlyer (à l'[étape 2)](#step-2-complete-the-configuration-at-appsflyer).
+
+<div id="note-2" />
 
 > 📘 **Remarque**
 >
@@ -122,6 +130,8 @@ Après avoir configuré la plate-forme IdP, retournez dans AppsFlyer pour termin
 
 Après avoir terminé la configuration du SSO sur les deux plateformes — le fournisseur d'identité (IdP) et AppsFlyer — assurez-vous que les utilisateurs peuvent se connecter à AppsFlyer via l'**une ou l'autre** des [méthodes de rappel d'URL](#configurer-lurl-de-rappel) : votre IdP ou le fournisseur de services (AppsFlyer), mais pas les deux.
 
+<div id="test-authentication-via-your-idp" />
+
 #### Tester l'authentification via votre IdP
 
 Si vous avez configuré l'authentification pour vous connecter via votre IdP, vérifiez que les utilisateurs peuvent entrer dans AppsFlyer à partir du plugin IdP ou de la page web :
@@ -130,6 +140,8 @@ Si vous avez configuré l'authentification pour vous connecter via votre IdP, v�
 2. Ouvrez une page web en mode incognito.
 3. Allez sur la page web de votre IdP. Comme vous n'êtes pas connecté à l'IdP, vous devez passer par un processus d'authentification. Se connecter avec l'utilisateur concerné.
 4. Recherchez et sélectionnez AppsFlyer. Vous êtes dirigé vers la page d'accueil d'AppsFlyer. Cela indique que le processus s'est déroulé avec succès.
+
+<div id="test-authentication-via-your-service-provider-appsflyer" />
 
 #### Testez l'authentification via votre fournisseur de services (AppsFlyer)
 

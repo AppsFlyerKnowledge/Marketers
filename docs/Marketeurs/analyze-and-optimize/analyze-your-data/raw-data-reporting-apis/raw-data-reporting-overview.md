@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **En bref :** les données au niveau des lignes (c'est à dire les données brutes) décrivent des événements déclenchés par les utilisateurs comme les installations, événements in-app, visites de sites web, installations bloquées par Protect360, revenus publicitaires et postbacks relatifs aux utilisateurs envoyés aux partenaires. Les rapports de données brutes sont disponibles via téléchargement, API et Data Locker.
 
+<div id="raw-data-reportingtools-and-reports" />
+
 ## Le reporting des données brutes : outils et rapports
 
 Les rapports de données brutes vous permettent d'analyser le comportement et le parcours des utilisateurs, de rapprocher les comptes de ad network et enfin d'enrichir vos systèmes CRM et BI. Grâce aux données brutes vous augmentez votre capacité d'analyse, d'optimisation et d'amélioration des performances.
 
 Les rapports sont proposés via des outils de reporting. Les outils présentent chacun des caractéristiques adaptées à des cas d'utilisation précis. Par exemple, pour rapprocher un compte de ad network précis, vous téléchargez le rapport selon les besoins depuis la page Données d'exportation. Pour obtenir les données de performances utilisateur à charger dans vos systèmes BI, vous récupérez les données par programme en utilisant Data Locker ou Pull API.
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
@@ -51,13 +55,19 @@ Attention :
 * La plage de dates du rapport correspond à la date de l'activité (réelle) à laquelle l'événement a eu lieu. Ce qui est très différent des rapports agrégés dont la plage de dates est <Anchor target="_blank" href="/marketers/fr/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">basée sur la LTV</Anchor>.
 * Descriptions des champs : cf <Anchor target="_blank" href="/marketers/fr/docs/raw-data-field-dictionary">dictionnaire des champs de données.</Anchor>
 
+<div id="reporting-tools" />
+
 #### Outil de reporting
 
 <table><thead><tr><th>Outil</th><th>Description</th><th>App multiple/unique (1)</th><th>Capacité d'actualisation des données (2)</th><th>Intégré dans des scripts</th><th>Fuseau horaire</th><th>Devise</th></tr></thead><tbody><tr><td><a href="./raw-data-export-page" target="_blank">Page d'exportation des données brutes</a></td><td><ul><li>Télécharger le rapport depuis l'interface utilisateur</li><li>Format : fichier CSV</li></ul></td><td>Unique</td><td>Mise à jour en continu</td><td><strong><span>X</span></strong></td><td><p>Spécifique à l'app</p></td><td>Spécifique à l'app</td></tr><tr><td><a href="./pull-api-raw-data" target="_blank">API pull\*</a></td><td><ul><li>Télécharger le rapport à l'aide des appels d'API.</li><li>Format : fichiers CSV</li></ul></td><td>Unique</td><td>Mise à jour en continu</td><td><span>✓</span></td><td><ul><li>Sélectionnable</li><li>Par défaut : UTC</li></ul></td><td><ul><li>Sélectionnable</li><li>Par défaut : USD</li></ul></td></tr><tr><td> <a href="./data-locker-for-marketers" target="_blank">Data Locker</a> <strong><span>P</span></strong> </td><td><ul><li>Données envoyées vers un <a href="./data-locker-cloud-service-setup" target="_blank">compartiment dans le Cloud.</a> </li><li>Pas de volume maximum</li><li>Fenêtre de disponibilité des données : 14 jours.</li><li>Format : CSV ou Parquet</li></ul></td><td>Multiple</td><td>Mise à jour continue avec un décalage de plusieurs heures</td><td><span>✓</span></td><td>UTC</td><td>USD </td></tr><tr><td> <a href="./push-api-streaming-raw-data" target="_blank">API Push<span></span></a> <strong><span>P</span></strong> </td><td><ul><li>Données sur les parcours utilisateurs (installations, événements in-app, retargeting, SKAN) transmises à vos serveurs en temps réel.</li><li>Format : JSON ou params de requête</li></ul></td><td>Peut utiliser le même point de terminaison</td><td>Minutes après l'enregistrement de l'événement dans AppsFlyer</td><td><span>✓</span></td><td>UTC + spécifique à l'app</td><td>USD + spécifique à l'app</td></tr><tr><td> <a href="./conversion-data-payloads-and-scenarios" target="_blank">Données de conversion SDK</a> (3)</td><td><ul><li>Permet d'obtenir les données de conversion d'attribution dans l'app.</li><li>Format : JSON</li></ul></td><td>S/O</td><td> Temps réel &lt;5 secondes</td><td> <span>✓</span> </td><td>UTC</td><td>S/O</td></tr></tbody><tfoot><tr><td colspan="7"><p><strong>Remarques/abréviations :</strong><br/> (1) Prend en charge le multi apps<br/>(2) L'actualisation effective des données dépend du rapport, car certains rapports sont quotidiens.<br/>(3) Les données de conversion du SDK récupèrent les données d'attribution des utilisateurs en moins de 5 secondes à compter du premier lancement de l'application, ce qui en fait la méthode la moins précise.<br/><strong><span>(P) </span></strong><span>Fonctionnalité Premium<br/></span><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Des limitations sur la génération des rapports s'appliquent</a></p></td></tr></tfoot></table>
 
+<div id="tool-limitations" />
+
 #### Limitations des outils
 
 <table><thead><tr><th>Limitation </th><th>API Pull (\*)</th><th>API push</th><th>Data Locker</th><th>Données de conversion SDK</th></tr></thead><tbody><tr><td>Limitation des données</td><td>1 million de lignes par appel</td><td>S/O</td><td>S/O</td><td>S/O</td></tr><tr><td>Options de sélection des données</td><td>Sélectionner les types de données. Options de sélection de champs limitées</td><td>Sélectionnez les types de données, les champs et les données in-app</td><td>Sélectionnez les types de données, les champs et les données in-app</td><td>Non</td></tr><tr><td>Fenêtre de disponibilité des données</td><td>90 jours</td><td>S/O</td><td>14 jours </td><td>À vie (disponible dans le SDK)</td></tr><tr><td colspan="5"><p><a href="./report-generation-quotas-rate-limitations" target="_blank">(\*) Des limitations sur la génération des rapports s'appliquent</a></p></td></tr></tbody></table>
+
+<div id="integration-considerations" />
 
 #### Considérations d'intégration
 
@@ -93,6 +103,8 @@ Le dictionnaire de champs des <Anchor target="_blank" href="/marketers/fr/docs/r
 
 Pour rendre les choses plus claires, les champs du parcours utilisateur sont divisés en groupes liés au contexte.
 
+<div id="user-journey-raw-data-field-groups" />
+
 #### Groupes de champs de données brutes du parcours utilisateur
 
 | Groupe du champ | Concerne les utilisateurs organiques | Exemples de champs |
@@ -105,6 +117,8 @@ Pour rendre les choses plus claires, les champs du parcours utilisateur sont div
 | Événement | Oui | Champs remplis dans les rapports d'événements in-app :<br /><br />Nom de l'événement, valeur de l'événement, revenu de l'événement |
 
 </Accordion>
+
+<div id="user-journey-reports" />
 
 ## Rapports de parcours utilisateur
 
@@ -150,6 +164,8 @@ Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien ave
 * Les rapports peuvent inclure des utilisateurs organiques, des utilisateurs non organiques ou les deux, comme indiqué.
 * Les politiques de rétention s'appliquent aux rapports données brutes historiques et dépendent de l'outil de reporting et de l'origine des données brutes. En général, les données sont disponibles pour les 90 derniers jours. **Important** ! Les politiques de rétention ne s'appliquent pas aux données agrégées.
 
+<div id="user-journey-reports-1" />
+
 #### Rapports de parcours utilisateur
 
 <table><thead><tr><th>Catégorie</th><th>Propre à Data Locker</th><th>Sujet du rapport</th><th>Trafic</th><th>Non organique</th></tr></thead><tbody><tr><td>Acquisition des utilisateurs</td><td><span>✓</span></td><td>Clics</td><td colspan="2">S/O</td></tr><tr><td>Retargeting</td><td><span>✓</span></td><td>Clics en provenance des campagnes de retargeting </td><td colspan="2">Retargeting non organique uniquement</td></tr><tr><td>Acquisition des utilisateurs</td><td><span>✓</span></td><td>Impressions</td><td colspan="2">S/O</td></tr><tr><td>Retargeting</td><td><span>✓</span></td><td>Impressions des campagnes de retargeting</td><td colspan="2">Retargeting non organique uniquement</td></tr><tr><td>Acquisition des utilisateurs</td><td>-</td><td>Installations </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Acquisition des utilisateurs</td><td>-</td><td>Évènements in-app </td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Acquisition des utilisateurs</td><td>-</td><td>Revenus publicitaires attribués</td><td>-</td><td><span>✓</span></td></tr><tr><td>Acquisition des utilisateurs</td><td>-</td><td>Revenus publicitaires organiques</td><td><span>✓</span></td><td>-</td></tr><tr><td>Retargeting</td><td>-</td><td>Revenus publicitaires de retargeting</td><td colspan="2">Retargeting non organique uniquement</td></tr><tr><td>Retargeting</td><td>-</td><td>Conversions de retargeting (réengagements et réattributions)</td><td colspan="2">Retargeting non organique uniquement</td></tr><tr><td>Retargeting</td><td>-</td><td>Événements in-app de retargeting (réengagements et réattributions)</td><td colspan="2">Retargeting non organique uniquement</td></tr><tr><td>Retargeting</td><td> <span>✓</span> </td><td>Sessions de retargeting (réengagements et réattributions)</td><td colspan="2">Retargeting non organique uniquement</td></tr><tr><td>Acquisition des utilisateurs</td><td> <span>✓</span> </td><td>Sessions</td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Acquisition des utilisateurs</td><td>-</td><td>Désinstallations non organiques </td><td>-</td><td><span>✓</span></td></tr><tr><td>Acquisition des utilisateurs</td><td>-</td><td>Désinstallations organiques</td><td><span>✓</span></td><td>-</td></tr><tr><td>Acquisition des utilisateurs</td><td><span>✓</span></td><td>Engagements multiplateformes</td><td><span>✓</span></td><td><span>✓</span></td></tr></tbody></table>
@@ -159,6 +175,8 @@ Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien ave
 <div id="user-journey-report-descriptions" />
 
 <Accordion title="Description des rapports du parcours utilisateur">
+
+<div id="clicks-and-impressions" />
 
 #### Clics et impressions
 
@@ -171,9 +189,13 @@ Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien ave
 | Remarques | Données SRN non disponibles. |
 | Utilisateurs restreints | Dans certains cas, en raison des règles de confidentialité, les données d'impression et de clic sont soit restreintes (elles n'ont pas d'identifiant utilisateur), soit non disponibles. La disponibilité dépend de la source média et de la plate-forme. |
 
+<div id="installs-and-retargeting-conversions" />
+
 #### Installations et conversions de retargeting
 
 <table><thead><tr><th rowspan="2">Nom de rapport </th><th rowspan="2"><p>Acquisition d'utilisateur : installations</p></th><th rowspan="2">Retargeting : conversions</th></tr></thead><tbody><tr><td> <br/>Contexte</td><td><p>Lorsqu'un utilisateur ouvre une app pour la première fois.</p></td><td><p>Lorsqu'un utilisateur s'engage avec une publicité de retargeting, puis finit par ouvrir l'app. Une conversion de retargeting est un réengagement ou une réattribution.</p> Voir notre <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">guide d'attribution du retargeting</a>. </td></tr><tr><td>CAS D'UTILISATION</td><td><ul><li>Générez des rapports agrégés en utilisant des champs non disponibles via les outils d'analyse d'AppsFlyer.</li><li>Cumulez avec d'autres rapports pour une analyse transversale avancée.</li><li>Analysez les performances à travers différentes dimensions comme les localités, zones métropolitaines, etc.</li><li>Segmentez les utilisateurs en fonction des pays, localités et langues à des fins de retargeting.</li><li>Obtenez des ID d'appareil utilisateur à des fins de retargeting.</li></ul></td><td>Identique aux installations.</td></tr><tr><td>Organique ou non organique</td><td><ul><li> <strong>Non-organique :</strong> les groupes de champs d'attribution et d'attribution des contributeurs sont renseignés.</li><li> <strong>Organique :</strong> le champ source média est soit vide, soit null, soit organique. Gardez ces éléments à l'esprit lorsque vous chargez les données dans votre système.</li></ul></td><td>Ne s'applique pas</td></tr><tr><td>Exemple de rapport</td><td><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcNRnKgPP5ZRL51o3b9PDhbFv6VFG7xe9xHqCsIC7HwqO2ERLV5dh4bS7pr-WONxpUXvsCc64eTzzN/pub?gid=0&amp;single=true&amp;output=csv" target="_blank">d'installations</a></td><td>Le rapport des conversions de retargeting possède la même structure que le rapport des installations. Certains champs sont renseignés dans le cadre du retargeting. Cf <a href="./retargeting-attribution-guide#retargeting-reports-and-raw-data" target="_blank">retargeting des données brutes</a>.</td></tr></tbody></table>
+
+<div id="in-app-events" />
 
 #### Évènement in-app
 
@@ -272,6 +294,8 @@ Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien ave
 | Cas d'utilisation | Comprendre l'engagement des utilisateurs dans l'application. |
 | Exemple de rapport | Le rapport des sessions est identique au rapport des événements in-app. Remarque : dans les données brutes, les sessions portent le nom d'événement *launch*. |
 
+<div id="uninstalls" />
+
 #### Désinstallations
 
 | Rapport | Caractéristiques |
@@ -288,9 +312,13 @@ Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien ave
 
 <Accordion title="Disponibilité du rapport de parcours utilisateur selon les outils">
 
+<div id="ad-engagement-report-by-tool" />
+
 #### Rapport d'engagement publicitaire selon les outils
 
 <table><tbody><tr><th>Rapport</th><th>Données d'exportation</th><th>API pull</th><th>Data Locker</th><th>API push</th><th>Données de conversion<br/>SDK</th></tr><tr><td>Impressions (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td>Clics (1)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td></tr><tr><td colspan="6">(1) Les données sur les clics et les impressions sont fournies par les non-SRN. Les SRN ne rendent pas ces données disponibles.</td></tr></tbody></table>
+
+<div id="user-acquisition-reports-by-tool" />
 
 #### Rapports d'acquisition d'utilisateurs par outil
 
@@ -300,6 +328,8 @@ Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien ave
 | Sessions | - | - | ✓ | - | - |
 | Évènement in-app | ✓ | ✓ | ✓ | ✓ | - |
 | Désinstallations | ✓ | ✓ | ✓ | - | - |
+
+<div id="retargeting-raw-data-reports-by-tool" />
 
 #### Rapports de données brutes de retargeting par outil
 
@@ -332,18 +362,20 @@ Vous pouvez identifier et mettre en évidence les parcours utilisateur à l'aide
 
 Les rapports d'installations et ceux des événements in-app ayant la même structure, ils peuvent être fusionnés en un seul rapport. Dans le rapport fusionné, vous pouvez agréger et filtrer en utilisant l'ID AppsFlyer et l'ID utilisateur du client (si disponible) dans le but d'analyser les parcours utilisateur.
 
+<div id="engaged-userstrong" />
+
 > 📄 **Un utilisateur engagé - fort**
 >
 > * Un utilisateur installe l'app le 20 août à 09h31.
 > * Le rapport fusionné indique qu'il a effectué des achats le 20 août à 10h31, le 22 août à 15h22 et le 25 août à 16h47.
 > * Nous en concluons que l'utilisateur est un utilisateur engagé. Il a effectué un achat une heure après avoir lancé l'application, et a continué ses achats les jours qui ont suivi.
 >
-> #### Utilisateur engagé - faible
+> #### <span id="engaged-userweak"></span>Utilisateur engagé - faible
 >
 > * Un utilisateur installe l'app le 30 juillet. Le rapport fusionné indique qu'il a ajouté un article à son panier le 15 août, mais qu'aucun événement d'achat n'a suivi.
 > * Vous pouvez partir du principe que l'utilisateur hésite à effectuer son achat, et ainsi le recibler avec les articles qu'il a ajoutés au panier.
 >
-> #### Analyser le parcours utilisateur pour optimiser vos campagnes
+> #### <span id="analyzing-the-user-journey-for-campaign-optimization"></span>Analyser le parcours utilisateur pour optimiser vos campagnes
 >
 > * Le manager de l'acquisition d'utilisateurs (UA) d'une app de voyage télécharge les rapports d'installation et d'événements in-app, puis il les fusionne.
 > * Ensuite, pour consulter les parcours utilisateur dans l'app, il filtre ou agrège les données avec l'ID AppsFlyer.
@@ -353,6 +385,8 @@ Les rapports d'installations et ceux des événements in-app ayant la même stru
 > * En analysant le parcours utilisateur, il a pu découvrir que la campagne était trop ciblée, et que les utilisateurs n'étaient pas suffisamment investis dans l'application.
 
 </Accordion>
+
+<div id="feature-reports" />
 
 ## Rapports de fonctionnalités
 
@@ -380,6 +414,8 @@ Utilisez les rapports de postback pour examiner les copies des données envoyée
 * Depuis mars 2021, les champs sont renseignés d'après les paramètres de confidentialité avancée du réseau. En d'autres termes, si la confidentialité avancée est activée, certains champs (comme les identifiants utilisateur) ne sont pas inclus. Cf <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#advanced-privacy-postback-specification">Spécifications caractéristiques des postbacks de confidentialité avancée pour les réseaux publicitaires.</Anchor>
 * <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTs4MUZTBKRQF24n-T8JM1L6EhU4TayYneX6MB5HjM9iwnrQtX8tlPLBA-J7zmqDcJqYTCpRxhStdGg/pub?output=xlsx">URI pour les rapports de postback via API Pull</Anchor>
 
+<div id="postback-reports-available-via-the-export-data-page-and-pull-api" />
+
 #### Rapports de postback (disponibles via la page Données d'exportation et API Pull)
 
 | Sujet du rapport | Événements envoyés à la source média attribuée |
@@ -388,6 +424,8 @@ Utilisez les rapports de postback pour examiner les copies des données envoyée
 | Évènement in-app | Les événements in-app non organiques |
 | Postbacks de conversion de retargeting | Retargeting (réengagement et réattribution) |
 | événements in-app de retargeting | Les événements in-app de retargeting |
+
+<div id="additional-fields-in-postback-reports" />
 
 #### Champs supplémentaires dans les rapports de postback
 
@@ -415,6 +453,8 @@ Utilisez les rapports de postback pour examiner les copies des données envoyée
 4. Pour donner accès au dashboard des événements in-app (CPA), activez **Accès aux données agrégées des événements in-app**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

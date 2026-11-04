@@ -32,6 +32,8 @@ Des rapports de performance complets de niveau ressource sont fournis, incluant 
 
 L'ETL de l'optimisation des créations utilise <Anchor target="_blank" href="/marketers/fr/docs/data-locker-for-marketers">Data Locker</Anchor> pour envoyer les données de rapport d'optimisation créative vers un stockage cloud. Vous pouvez choisir parmi différentes destinations de stockage, telles qu'un compartiment appartenant à AppsFlyer dans Amazon Web Services (AWS) ou votre propre stockage dans AWS, GCS, Yandex, BigQuery, Snowflake, etc. Data Locker prend en charge plusieurs destinations. Vous pouvez envoyer toutes les données à une ou plusieurs destinations, envoyer des données à certaines destinations et personnaliser la livraison des données en fonction de vos besoins. Creative Optimization ETL est **disponible avec un plan d'abonnement Creative Optimization Premium**.
 
+<div id="get-started" />
+
 ## Démarrer
 
 Cette section décrit comment configurer Data Locker pour les rapports d'optimisation créative.

@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** [créez des liens OneLink](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#créer-un-lien-onelink) pour offrir une expérience dédiée à vos utilisateurs. Les utilisateurs qui cliquent sur le lien sont redirigés vers l'App Store, l'URL web ou l'app de votre choix. Et les utilisateurs sont attribués à la source média qui correspond.
 
+<div id="onelink-links-and-experiences" />
+
 ## Liens et expériences OneLink
 
 <Embed title="Lecteur vidéo YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/KZBrxGEjVUE" providerUrl="https://www.youtube.com" />
@@ -35,6 +37,8 @@ Les étapes nécessaires à la configuration d'un lien sont détaillées dans la
 * Paramètres de l’expérience dédiée
 * Paramètres de deep linking et de redirection
 * Paramètres supplémentaires
+
+<div id="create-a-onelink-link" />
 
 ## Créer un lien OneLink
 
@@ -113,6 +117,8 @@ Les paramètres généraux sont une étape du processus de création de liens On
    * Sélectionnez un autre domaine pour refléter votre marque. <Anchor target="_blank" href="/marketers/fr/docs/brand-onelink-with-your-domain">En savoir plus</Anchor>
    * Modifiez l'identifiant d'URL pour mettre en avant l'offre de la campagne. L'ID d'URL peut comporter au maximum 50 caractères et peut inclure des lettres et des chiffres. Par défaut, il comporte 8 caractères.
 
+<div id="enable-retargeting-for-the-app" />
+
 #### Activer le retargeting pour l’app
 
 Si le retargeting n'a jamais été activé pour l'app, vous devez le faire une première fois. <Anchor target="_blank" href="/marketers/fr/docs/app-settings#paramètres-dattribution">En savoir plus</Anchor>
@@ -174,6 +180,8 @@ La fonction d'aperçu des réseaux sociaux est prise en charge par les plateform
 
 <Accordion title="Page d'accueil des apps sociales">
 
+<div id="important-1" />
+
 > 🚧 **Important !**
 >
 > Les liens universels iOS sont désormais pris en charge dans Meta ads.
@@ -209,9 +217,13 @@ Lorsque l'utilisateur interagit avec le bouton CTA sur la page de d'accueil :
 * **Si l'app est installée** : l'utilisateur clique sur l'app pour la lancer.
 * **Si l'app n'est PAS installée** : l'utilisateur est dirigé vers l'app store concerné. Lors de l'installation, il est possible de différer le deep linking de l'utilisateur (cf explications dans [Deep linking et deep linking différé](/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#deep-linking-and-deferred-deep-linking)).
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > La page d'accueil de l'app sociale prend uniquement en charge l'URL courte OneLink.
+
+<div id="to-use-the-social-app-landing-page" />
 
 #### **Pour configurer une page d'accueil d'app sociale :**
 
@@ -221,6 +233,8 @@ Lorsque l'utilisateur interagit avec le bouton CTA sur la page de d'accueil :
 3. Publiez l'URL courte OneLink sur l'app sociale.
 
 L'attribution est déterminée en fonction de vos  paramètres d'attribution.
+
+<div id="to-set-up-the-social-apps-landing-page" />
 
 #### **Pour configurer la page d'accueil des apps sociales :**
 
@@ -279,6 +293,8 @@ Le deferred deep linking permet d'offrir aux nouveaux utilisateurs une expérien
        * La fenêtre rétrospective de clic peut durer jusqu'à 15 minutes.
      * **Remarque** : les clients qui utilisent déjà OneLink pour le deep linking peuvent utiliser les anciennes méthodes pour <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_android_gcd_legacy">Android</Anchor> et <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_gcd_legacy">iOS</Anchor> au lieu du DLU.  
 
+       <div id="tips" />
+
        > 👍 **Conseils**
        >
        > La valeur **deep \_link\_value** peut être basée sur un SKU de produit, un ID de post sur les réseaux sociaux, un chemin d'URL, ou autre valeur.
@@ -319,6 +335,8 @@ Le deferred deep linking permet d'offrir aux nouveaux utilisateurs une expérien
       </Tabs>
 
    3. Dans la section **Paramètres supplémentaires**, ajoutez des paramètres personnalisés **deep\_link\_sub2-10** et des valeurs selon les besoins, en fonction de ce que vous avez décidé avec les développeurs.
+
+<div id="note-4" />
 
 > 📘 **Note**
 >
@@ -362,6 +380,8 @@ Vous pouvez vérifier si votre lien fonctionne pour rediriger :
 * Les nouveaux utilisateurs qui n'ont pas installé votre app
 * Les utilisateurs existants qui ont déjà installé votre app
 
+<div id="new-users-without-your-app-installed" />
+
 #### Les nouveaux utilisateurs qui n'ont pas installé votre app
 
 **Condition préalable** : un <Anchor target="_blank" href="/marketers/fr/docs/registering-test-devices">appareil de test enregistré</Anchor> où l'app n'a pas été installée.
@@ -384,6 +404,8 @@ Vous pouvez vérifier si votre lien fonctionne pour rediriger :
    Dans la source média, recherchez le nouveau clic et la nouvelle installation (ex : test) ainsi que le nom de la campagne que vous avez mis dans l'URL.
 
 Le lien ne fonctionne pas comme prévu ? Consultez la <Anchor target="_blank" href="/marketers/fr/docs/onelink-troubleshooting-and-faq">FAQ et le guide de dépannage OneLink.</Anchor>
+
+<div id="existing-users-with-your-app-installed" />
 
 #### Les utilisateurs existants qui ont déjà installé votre app
 
@@ -408,6 +430,8 @@ Le lien ne fonctionne pas comme prévu ? Consultez la <Anchor target="_blank" h
 Le lien ne fonctionne pas comme prévu ? Consultez la <Anchor target="_blank" href="/marketers/fr/docs/onelink-troubleshooting-and-faq">FAQ et le guide de dépannage OneLink.</Anchor>
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Procédures supplémentaires
 
@@ -489,6 +513,8 @@ Pour garantir le fonctionnement du deferred deep linking (DDL), vous devez mettr
 
 Cette solution qui combine des URL courtes OneLink avec la technologie App Clip disponible sur iOS vous permet d'envoyer des utilisateurs vers des flux spécifiques de votre app sans avoir besoin d'une installation complète. L'URL courte OneLink vous fournit des données d'attribution des utilisateurs et dirige ces derniers vers une expérience App Clip personnalisée similaire à celle que vous vouliez offrir via le DDL. Le clip d'app peut également inclure un flux pour diriger les utilisateurs vers votre application complète. **Note** : si les utilisateurs réinstallent l'app complète à partir de la solution basée sur App Clip, cela peut être considéré comme une installation organique dans AppsFlyer.
 
+<div id="flow" />
+
 #### **Flux**
 
 Le flux de la solution DDL basée sur App Clip est le suivant :
@@ -524,6 +550,8 @@ Le flux de la solution DDL basée sur App Clip est le suivant :
 
 <Accordion title="Solution basée sur le presse-papiers">
 
+<div id="flow-1" />
+
 #### **Flux**
 
 Le flux de la solution DDL basée sur le presse-papier est le suivant :
@@ -541,6 +569,8 @@ Le flux de la solution DDL basée sur le presse-papier est le suivant :
 5. L'utilisateur presse **Get the app (Obtenir l'app)**.
 6. L'utilisateur est envoyé sur l'App Store pour installer l'app. Ensuite, au premier lancement, il est envoyé vers la page spécifique de l'app.
 
+<div id="requirements" />
+
 #### **Exigences**
 
 La solution DDL Copier/Coller la page d'accueil nécessite les points suivants :
@@ -550,6 +580,8 @@ La solution DDL Copier/Coller la page d'accueil nécessite les points suivants 
 * SDK AppsFlyer iOS V6 et +.
 * Votre développeur iOS doit implémenter un code qui colle les données de deferred deep link dans l'URL à partir du presse-papiers. Il ne fait pas partie du SDK AppsFlyer.
 * L'utilisateur final doit cocher la case (par défaut). Si elle n'est pas cochée, l'URL n'est pas copiée et le deferred deep linking ne fonctionne pas.
+
+<div id="setup" />
 
 #### **Configuration**
 
@@ -564,6 +596,8 @@ La solution DDL Copier/Coller la page d'accueil nécessite les points suivants 
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 

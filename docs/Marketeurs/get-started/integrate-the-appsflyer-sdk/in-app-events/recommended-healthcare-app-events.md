@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces suggestions d'événements in-app pour votre app de soins de santé .
 
+<div id="-healthcare" />
+
 ## <Image alt="5669_Healthcare_icon_3.png" src="https://files.readme.io/bb4bb46d842d1f2d08da548724e7d69910b0a050302fcdbd1500a8ebef325516-20659200427281.png" width="100px" /> Soins médicaux
 
 Les apps de soins médicaux permettent aux utilisateurs d'effectuer des tâches telles que souscrire une assurance maladie, prendre des rendez-vous et recevoir des conseils médicaux. Les événements typiques que nous recommandons d'enregistrer incluent les achats et les réservations.
@@ -32,6 +34,8 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 * Quels médicaments sont les plus utilisés et demandés
 * Quels emballages préfèrent les utilisateurs
 * Quels problèmes de santé préoccupent le plus les utilisateurs
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -43,6 +47,8 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 > Pour plus d'informations sur l'enregistrement des événements in-app, consultez le <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">guide des événements in-app riches</Anchor>.
 
 [![In_appEvents__Healthcare__en-us.png](https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png)](https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Structures recommandées pour les événements prédéfinis
 
@@ -325,6 +331,8 @@ AppsFlyer.sendEvent ("af_purchase", purchaseEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Structures recommandées pour les événements personnalisés
 

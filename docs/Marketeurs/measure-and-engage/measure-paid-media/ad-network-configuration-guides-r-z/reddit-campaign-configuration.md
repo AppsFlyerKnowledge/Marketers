@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** Reddit, un partenaire intégré au réseau publicitaire d'AppsFlyer, compte 430 millions d'utilisateurs mensuels très engagés, qui ne peuvent être trouvés nulle part ailleurs.
 
+<div id="setting-up-reddit" />
+
 ## Mise en place de Reddit
 
 **Prérequis :** avant de configurer l’intégration, vous devez contacter le partenaire et ouvrir un compte chez lui.
@@ -46,17 +48,25 @@ x-zendesk:
 
 L'***onglet Intégration*** est divisé en différentes sections.
 
+<div id="activate-partners" />
+
 #### Activer les partenaires
 
 Pour activer la configuration, <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#activating-a-partner">activez le partenaire.</Anchor>
+
+<div id="advanced-privacy" />
 
 #### Protection de la vie privée avancée
 
 Pour les apps IOS uniquement, lorsque **la confidentialité avancée (pour iOS 14.5 et +)** est activée, vous pouvez choisir quelles données sont transmises à Reddit via les postbacks et les rapports.
 
+<div id="transaction-id" />
+
 #### ID de transaction
 
 **Pour les applications iOS uniquement, lorsque** l'option **<Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">Partager l'ID de transaction SKAN</Anchor>** est activée, vous autorisez AppsFlyer à partager l'ID de transaction des postbacks SKAdNetwork avec Reddit. Reddit peut ainsi décoder vos valeurs de conversion SKAdNetwork.
+
+<div id="general-settings" />
 
 #### Paramètres généraux
 
@@ -64,12 +74,16 @@ Pour les apps IOS uniquement, lorsque **la confidentialité avancée (pour iOS 1
 
 Activez-la si vous souhaitez attribuer des installations en mode post-vue à partir de Reddit. Le curseur de visualisation est disponible dans la rubrique [***Lien d'attribution***](/docs/reddit-campaign-configuration#attribution-link-tab) dans l'onglet Attribution.
 
+<div id="default-postbacks" />
+
 #### Postbacks par défaut
 
 Envoyez des postbacks automatiques à Reddit suite aux installations d'utilisateurs. Sélectionnez si vous souhaitez envoyer des postbacks pour les installations attribuées à :
 
 * Reddit uniquement
 * Toutes les sources, y compris organiques
+
+<div id="in-app-events-settings" />
 
 #### Paramètres des événements in-app
 
@@ -131,6 +145,8 @@ Les données relatives aux revenus publicitaires ne sont pas prises en charge pa
 
 Dans cet onglet, vous pouvez sélectionner les autorisations à accorder à Reddit. Notez que même si l'attribution est désactivée pour Reddit, l'onglet des autorisations est actif et vous pouvez accorder le contrôle à Reddit.
 
+<div id="ad-network-permissions" />
+
 #### Autorisations pour le réseau publicitaire
 
 Dans cet onglet, vous pouvez sélectionner les autorisations à accorder à Reddit. Notez que même si l'attribution est désactivée pour Reddit, l'onglet des autorisations est actif et vous pouvez accorder le contrôle à Reddit.
@@ -149,6 +165,8 @@ Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre 
 En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">l'octroi d'autorisations à un réseau publicitaire.</Anchor>
 
 </Accordion>
+
+<div id="raw-data-restrictions" />
 
 ## Restriction relatives aux données brutes
 

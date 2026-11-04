@@ -27,9 +27,13 @@ x-zendesk:
 ---
 > **En bref :** lors des tests d'attribution, enregistrez votre appareil de test pour vous assurer que chaque installation est enregistrée en tant que nouvelle installation. Un appareil de test enregistré empêche les installations d'être enregistrées comme des réinstallations.
 
+<div id="why-register-a-test-device" />
+
 ## Pourquoi enregistrer un appareil de test ?
 
 Lors des tests d'attribution, la fenêtre de réattribution limite les attributions d'installation à une par fenêtre de 90 jours. Ainsi, si vous utilisez plusieurs fois le même appareil pour tester les attributions d'installation, rien n'est enregistré. Un appareil de test enregistré empêche les installations d'être enregistrées comme des réinstallations.
+
+<div id="methods-for-registering-a-test-device" />
 
 ## Méthodes d'enregistrement d'un appareil de test
 
@@ -66,6 +70,8 @@ Les identifiants des appareils sont les suivants :
 * **Windows Phone :** ID publicitaire Windows
 
 </Accordion>
+
+<div id="managing-test-device-registration" />
 
 ## Gestion de l'enregistrement des appareils de test
 
@@ -207,6 +213,8 @@ Un maximum de 200 appareils par compte peut être enregistré. Seul l'admin est 
 
 </Accordion>
 
+<div id="registering-an-ios-test-device" />
+
 ## Enregistrement d'un appareil de test iOS
 
 L'organigramme ci-dessous illustre différentes étapes possibles lors de l'enregistrement de vos appareils de test iOS.
@@ -219,9 +227,13 @@ Sélectionnez l'une des options suivantes lors de l'enregistrement de votre appa
 
 <Accordion title="Enregistrez votre appareil de test avec l'IDFA">
 
+<div id="when-to-use-idfa-for-test-device-registration" />
+
 #### **Quand utiliser l'IDFA pour l'enregistrement d'un appareil de test ?**
 
 Enregistrez l'IDFA si la fonction AppTransparency Tracking (ATT) a été mise en place sur votre app et que vous souhaitez effectuer des tests en tant qu'utilisateur consentant. Lorsque vous lancez l'app pour la première fois, pensez à cliquer sur **Autoriser** lorsque la fenêtre de demande d'ATT s'affiche.
+
+<div id="how-to-register-your-test-device-with-an-idfa" />
 
 #### **Comment enregistrer votre appareil de test avec l'IDFA ?**
 
@@ -233,12 +245,16 @@ Pour obtenir votre IDFA, enregistrez un appareil à l'aide de l'application Apps
 
 <Accordion title="Enregistrez votre appareil de test avec l'IDFV">
 
+<div id="when-to-use-idfv-for-test-device-registration" />
+
 #### **Quand utiliser l'IDFV pour l'enregistrement d'un appareil de test ?**
 
 Lorsque l'IDFA n'est pas accessible, l'IDFV est votre seule option. Dans les scénarios suivants, vous **devez utiliser l'IDFV**:
 
 * **La fonction ATT a été implémentée** et vous souhaitez exécuter des tests en tant qu'utilisateur sans consentement. Lorsque vous lancez l'app pour la première fois, cliquez sur **Refuser** lorsque l'invitation ATT s'affiche.
 * **La fonction ATT n'a pas été implémentée.**
+
+<div id="how-to-register-your-device-with-idfv" />
 
 #### **Comment enregistrer votre appareil de test avec l'IDFV**
 

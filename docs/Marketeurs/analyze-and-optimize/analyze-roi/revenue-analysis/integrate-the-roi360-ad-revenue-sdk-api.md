@@ -32,6 +32,8 @@ x-zendesk:
 
 ![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
 
+<div id="impression-level-ad-revenue-reporting-by-sdk-api" />
+
 ## Rapports des revenus publicitaires de niveau impression par connecteur SDK
 
 **Rapport des revenus publicitaires**
@@ -45,6 +47,8 @@ Remarque :
 
 * Ces impressions sont collectées et traitées au sein d’AppsFlyer, mais elles ne sont pas comptabilisées dans votre forfait in-app.
 * Il existe <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad_revenue_unity_connector">un plug-in AppsFlyer pour Unity</Anchor>.
+
+<div id="reporting-ad-revenue-using-the-sdk-api" />
 
 ### Rapport sur les revenus publicitaires via le connecteur SDK
 
@@ -80,6 +84,8 @@ Le connecteur SDK **transmet les données de revenus à la plateforme au moment 
 * **1 heure du matin, puis chaque heure suivante pour le sujet DataLocker de niveau impression**
 * **5 heures du matin UTC, puis toutes les 4 heures pour les rapports de Cohorte et d’Activité AppsFlyer**
 
+<div id="implementing-appsflyer-ad-revenue-sdk-api" />
+
 ## Implémenter le connecteur SDK générique AppsFlyer pour les revenus publicitaires
 
 **Pour installer le connecteur SDK générique de revenus publicitaires AppsFlyer** :
@@ -87,6 +93,8 @@ Le connecteur SDK **transmet les données de revenus à la plateforme au moment 
 1. <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attribution#connect-to-ad-revenue-integrated-partners">Dans AppsFlyer, activez les revenus publicitaires de niveau SDK</Anchor> pour le partenaire que vous souhaitez connecter. **Remarque** : Cette opération doit s’effectuer séparément pour chaque application.
 2. Demandez à votre développeur d'intégrer le connecteur SDK générique de revenus publicitaires AppsFlyer en suivant <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ad-revenue">ces instructions</Anchor>.
 3. Pour enregistrer les revenus publicitaires dans votre tableau de bord SKAdNetwork, suivez les <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide#recording-ad-revenue">instructions relatives aux revenus publicitaires SKAN</Anchor>.
+
+<div id="traits-and-limitations" />
 
 ## Caractéristiques et limitations
 

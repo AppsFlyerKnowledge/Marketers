@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="activate-partner" />
+
 ## Activation du partenaire
 
 **Condition préalable :** avant de configurer l'intégration, assurez-vous de <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#contacter-le-partenaire">contacter le partenaire</Anchor> et d'ouvrir un compte chez lui.
@@ -38,9 +40,13 @@ La configuration se fait depuis la page **Intégrations actives**, mais pour tro
    **Remarque :** La case doit rester cochée (option <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">activée</Anchor>) tant que vous travaillez avec le partenaire.
 5. Terminez la configuration en suivant les onglets requis, cf description ci-dessous.
 
+<div id="setting-up-amazon-ads" />
+
 ## Configurer l'intégration Amazon DSP
 
 L'intégration avec Amazon DSP permet l'attribution des clics et impressions. La fenêtre de configuration comprend les onglets suivants : *Intégration*, *Lien d'attribution*, *Coût*, *Revenus publicitaires *et* Autorisations.* Les onglets disponibles dans Amazon DSP sont *Intégration* et *Autorisations*.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -52,6 +58,8 @@ L'intégration avec Amazon DSP permet l'attribution des clics et impressions. La
 <Accordion title="Onglet Intégration">
 
 L'onglet **Integration** comprend un certain nombre de sections, décrites ci-dessous.
+
+<div id="activate-partner-1" />
 
 #### Activation du partenaire
 
@@ -66,6 +74,8 @@ Pour les applications iOS uniquement : votre contrôle des données partagées 
 | Les postbacks sont envoyés uniquement pour les événements attribués au partenaire. | Les postbacks sont envoyés selon votre configuration :<ul><li>**Toutes les sources média, y compris organiques**</li><li>**Ce partenaire uniquement**</li></ul> |
 | Les postbacks sont envoyés selon le <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks">modèle de confidentialité avancée</Anchor> |  |
 | <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">Les données agrégées et anonymes</Anchor> sont partagées avec le partenaire, ce qui signifie qu'aucune donnée de niveau utilisateur (identifiant de l'appareil) n'est partagée. |  |
+
+<div id="general-settings" />
 
 #### Paramètres généraux
 
@@ -85,6 +95,8 @@ Configurez l'envoi de postbacks pour les installations :
 > * Pour les apps IOS uniquement : la manière dont vous pouvez gérer les données envoyées au partenaire via les postbacks et <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">rapports</Anchor> dépend si la **Confidentialité avancée (pour IOS 14.5 et +)** est <Anchor target="_blank" href="/marketers/fr/docs/tiktok-for-business-advanced-srn-integration-setup#protection-de-la-vie-privée-avancée">activée ou non.</Anchor>
 > * Les postbacks sont partagés via Data Locker dans un rapport horaire, et non en temps réel.
 
+<div id="install-attribution" />
+
 #### Attribution d'installation
 
 Définir les fenêtres d'attribution post-clic et post-vue pour les installations (premiers lancements). Notez que seules les installations réalisées dans la fenêtre rétrospective peuvent être attribuées à Amazon DSP.
@@ -92,6 +104,8 @@ Définir les fenêtres d'attribution post-clic et post-vue pour les installation
 1. Définissez la **Fenêtre rétrospective post-clic d'installation** sur 1-23 heures ou 1-30 jours.  
    **Remarque :** Amazon DSP recommande de régler la fenêtre rétrospective post-clic sur 14 jours, afin de vous aligner sur leur fenêtre d'attribution.
 2. [Facultatif] Activez l'option **Attribution des installations post vue** et réglez la **fenêtre rétrospective post-vue d'installation** entre 1 et 24 heures.
+
+<div id="in-app-event-postbacks" />
 
 #### Postback d'évènements in-app
 
@@ -156,12 +170,16 @@ Les revenus publicitaires ne sont pas disponibles avec Amazon DSP.
 
 Sélectionnez les autorisations données à Amazon DSP pour accéder à vos données et effectuer diverses actions.
 
+<div id="note-3" />
+
 > 📘 **Remarque**
 >
 > * Lorsque l'intégration est <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">désactivée</Anchor>, les autorisations sont toujours accordées même si l'option Autorisations est activée.
 > * En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">l'octroi d'autorisations</Anchor> à une agence.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

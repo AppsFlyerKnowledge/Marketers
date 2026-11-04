@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** AppsFlyer utilise Google Play Auto Install (PAI) pour attribuer les installations à des campagnes de préchargement, où les marketeurs s’engagent auprès des opérateurs mobile et partenaires de découverte d'apps pour précharger leur app au moment où l'appareil est allumé pour la première fois par l'utilisateur. **Remarque** : Cette méthode d'attribution diffère de l'<Anchor target="_blank" href="/marketers/fr/docs/appsflyer-factory-preinstall-using-manifest-android">attribution de la préinstallation APK.</Anchor>
 
+<div id="pai-preload-attribution" />
+
 ## Attribution des préchargements via PAI
 
 Dans les campagnes de préchargement, les fabricants d'appareils d'origine (OEM), les opérateurs de téléphonie mobile et partenaires de découverte d'app, préchargent des applications qui sont téléchargées lors de la première activation de l'appareil.
@@ -34,6 +36,8 @@ AppsFlyer donne la priorité à l'attribution des préchargements. Cela signifie
 
 **Remarque** : Les agences ne peuvent pas activer les campagnes de préchargement pour leurs clients.
 
+<div id="flow" />
+
 ### Procédé
 
 1. Un nouvel appareil est activé pour la première fois et des applications prédéfinies y sont automatiquement installées depuis Google Play, conformément aux règles établies par le partenaire de préchargement.
@@ -42,6 +46,8 @@ AppsFlyer donne la priorité à l'attribution des préchargements. Cela signifie
 4. AppsFlyer effectue l’attribution en fonction des données reçues.
 
 ![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+
+<div id="data-availability" />
 
 ### Disponibilité des données
 
@@ -56,6 +62,8 @@ Les données brutes incluent les champs suivants :
 * Match\_type = preload\_pai
 * Campaign\_name = campagne de préchargement par `<preloadpartner ID>`
 
+<div id="set-up-google-play-auto-install-pai-preload-attribution" />
+
 ### Configurer l'attribution de préchargement de Google Play Auto Install (PAI)
 
 **Pour configurer l'attribution de préchargement de PAI :**
@@ -67,9 +75,13 @@ Les données brutes incluent les champs suivants :
 5. Cliquez sur **Enregistrer l'intégration**.
 6. Informez le partenaire de préchargement que vous êtes en capacité d'attribuer ses campagnes.
 
+<div id="partners-supporting-google-play-auto-install-pai-preload-campaigns" />
+
 ### Partenaires prenant en charge les campagnes de préchargement Google Play Auto Install (PAI)
 
 <table><thead><tr><th rowspan="2">Partenaire</th><th rowspan="2">PID</th></tr></thead><tbody><tr><td><p>Xiaomi</p></td><td><span>xiaomipai_int</span></td></tr><tr><td><p>Transsion</p></td><td><span>shalltrypai_int</span></td></tr><tr><td><p>Oppo</p></td><td><span>oppopaipreinstall_int</span></td></tr><tr><td><p>Vivo</p></td><td><span>vivootapreload_int</span></td></tr><tr><td><p>TCL</p></td><td><span>tclpai_int</span></td></tr><tr><td><p>Motorola</p></td><td><span>motorola_int</span></td></tr><tr><td><p>MITV</p></td><td><span>mitvpai_int</span></td></tr><tr><td><p>ZTE</p></td><td><span>ztepai_int</span></td></tr><tr><td><p>Lenovotab</p></td><td><span>lenovotabpai4p_int</span></td></tr><tr><td><p>KDDI Pre-Install</p></td><td><span>kddipai_int</span></td></tr></tbody></table>
+
+<div id="postbacks-for-preload-partners" />
 
 ## Postbacks pour les partenaires de préchargement
 
@@ -91,6 +103,8 @@ Lorsqu'elles sont incluses dans un postback, les macros contiennent des données
 | app\_version | SDK | Version de l'app définie par le développeur de l'app dans le code de l'application |
 | device\_type | SDK | Le nom du modèle commercial de l'appareil. Ex. SM-GM284 ou iPhone7 |
 | os\_version | SDK | Version du système d'exploitation de l'appareil |
+
+<div id="postback-example" />
 
 #### Exemple de postback
 

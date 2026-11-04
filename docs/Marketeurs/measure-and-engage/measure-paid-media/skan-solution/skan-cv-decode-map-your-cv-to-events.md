@@ -24,11 +24,15 @@ x-zendesk:
 
 ![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
 
+<div id="decode-skan-conversion-value" />
+
 ## Décoder la valeur de conversion SKAN
 
 Les annonceurs utilisent le décodage de la valeur de conversion comme alternative aux options disponibles dans <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio">Conversion Studio</Anchor>. Si vous utilisez Decode, cela signifie que vous êtes responsable de la définition <Anchor target="_blank" href="https://developer.apple.com/documentation/storekit/skadnetwork/4097267-updatepostbackconversionvalue">de updatePostbackConversionValue</Anchor> en fonction de la logique de votre app.
 
 Outre la définition de la valeur de conversion (VC) dans l'app, le reste du flux, les fonctionnalités et les options de rapport sont les mêmes que ceux décrits dans le <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide">guide de solution SKAN</Anchor>. Cela signifie qu'à l'expiration de la fenêtre d'activité (contrôlée par vous), iOS envoie le postback au réseau publicitaire, qui le transmet à AppsFlyer. AppsFlyer décode la VC en fonction de votre mappage dans des événements traités comme les VC décodées définies par le SDK.
+
+<div id="custom-conversion-valuedecode" />
 
 ## Valeur de conversion personnalisée — Décoder
 
@@ -66,6 +70,8 @@ N'oubliez pas :
   * Dans les rapports et tableaux de bord agrégés, les revenus sont calculés comme la moyenne de la plage. Exemple : min\_revenue=4 et max\_revenue=10. Le revenu calculé est de 7.
   * Les rapports de données brutes incluent les revenus calculés (skad\_revenue), min\_revenue et max\_revenue.
 
+<div id="meta-specific-rules" />
+
 #### **Règles méta-spécifiques**
 
 Si vous intégrez des annonces Meta, respectez les règles suivantes :
@@ -73,6 +79,8 @@ Si vous intégrez des annonces Meta, respectez les règles suivantes :
 * Les valeurs de revenus minimales et maximales pour une valeur de conversion donnée doivent être différentes. Signifie pas égal.
 * Les valeurs ne doivent pas se chevaucher et doivent être dans un ordre consécutif comme illustré pour conversion\_value 1-2 et 62 dans le tableau suivant.
 * event\_counter : Les méta-annonces ne prennent pas en compte cette valeur. [Bonne pratique] Renseignez-la avec une valeur de 1.
+
+<div id="example-decode-mapping" />
 
 ### Ex. : Cartographie de décodage
 
@@ -90,12 +98,16 @@ Si vous intégrez des annonces Meta, respectez les règles suivantes :
 | 62 | af\_purchase | \{fgh) | 10 | 17 | 2 | 72 |
 | 62 | event\_a | `{klm}` |  |  | 3 | 72 |
 
+<div id="example-a-fine-conversion-value-1" />
+
 ### Exemple A : Valeur de conversion précise 1
 
 | event\_name | skad\_revenue | min\_revenue | max\_revenue | event\_value |
 | --- | --- | --- | --- | --- |
 | install |  |  |  |  |
 | af\_purchase | 1,5 | 0 | 3 | `{abc}` |
+
+<div id="example-b-fine-conversion-value-2" />
 
 ### Exemple B  : Valeur de conversion précise 2
 
@@ -105,6 +117,8 @@ Si vous intégrez des annonces Meta, respectez les règles suivantes :
 | af\_purchase | 6,5 | 3 | 10 | `{def}` |
 | af\_purchase | 6,5 | 3 | 10 | `{def}` |
 | af\_purchase | 6,5 | 3 | 10 | `{def}` |
+
+<div id="example-c-fine-conversion-value-21" />
 
 ### Exemple C : Valeur de conversion précise 21
 
@@ -122,6 +136,8 @@ Si vous intégrez des annonces Meta, respectez les règles suivantes :
 | event\_f |  |  |  |  |
 | event\_g |  |  |  |  |
 
+<div id="example-d-fine-conversion-value-62" />
+
 ### Exemple D : Valeur de conversion précise 62
 
 | event\_name | skad\_revenue | min\_revenue | max\_revenue | event\_value |
@@ -134,6 +150,8 @@ Si vous intégrez des annonces Meta, respectez les règles suivantes :
 | event\_a |  |  |  | `{klm}` |
 
 </Accordion>
+
+<div id="zd-decode-csv-file-specification" />
 
 <div id="decode-csv-file-specification" />
 
@@ -190,6 +208,8 @@ Les valeurs de conversion sont mappées à un ou plusieurs événements in-app.
 
 </Accordion>
 
+<div id="troubleshooting-the-csv-upload-errors-file" />
+
 ## Dépannage du fichier d'erreurs de téléchargement CSV
 
 <div id="upload-error-messages" />
@@ -207,6 +227,8 @@ Une ou plusieurs valeurs dans le fichier ne correspondent pas au format requis 
 Lorsque vous utilisez des feuilles Excel/Google pour créer un fichier CSV, la colonne event\_revenue\_usd doit être formatée correctement avant d'enregistrer le fichier en tant que fichier CSV.
 
 Après avoir enregistré le fichier CSV, vérifiez que le contenu est correctement formaté. **Remarque** : N'utilisez pas Excel pour effectuer la vérification ; utilisez plutôt un [éditeur](/docs/skan-cv-decode-map-your-cv-to-events#visual-inspection-of-the-csv-file-without-excel).
+
+<div id="formatting-event_revenue_usd-cells-in-excel" />
 
 #### Formatage des cellules event\_revenue\_usd dans Excel
 

@@ -31,6 +31,8 @@ x-zendesk:
 
 ![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
 
+<div id="push-api" />
+
 ## API push
 
 L'API Push transmet à vos serveurs les données brutes générés par l'attribution AppsFlyer ainsi que l'attribution SKAdNetwork (SKAN) sous forme de messages. Vous pouvez choisir le type et le contenu des messages, et définir les points de terminaison.
@@ -50,9 +52,13 @@ Caractéristiques du message
 | Éléments du message (champs) | <ul><li>Les messages possèdent la structure `key:value`.</li><li>Consultez les champs <Anchor target="_blank" href="/marketers/fr/docs/raw-data-field-dictionary#field-availability-by-reporting-tool">d'API Push</Anchor> proposés pour l'attribution AppsFlyer.</li><li>Chaque clé représente un champ de données brutes. Voir la <Anchor target="_blank" href="/marketers/fr/docs/raw-data-field-dictionary#data-fields-dictionary">description des champs de données brutes dans AppsFlyer</Anchor>.</li><li>Les clés vides ou nulles ne sont jamais envoyées.</li><li>L'exemple affiche des champs à la fois null et vides. Dans la réalité les postbacks n'ont jamais de champs vides ou null. L'exemple est au format JSON.<ul><li>[iOS](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=0&single=true&output=csv)</li><li>[Android](https://docs.google.com/spreadsheets/d/e/2PACX-1vRMoTZpgttICSjjjXTh4JU5m9p3ky7Ej_MYc0kZ3vYs7sNq6u_wNvWBgjFLF_VjdRbY54aE5e-4keLY/pub?gid=233131974&single=true&output=csv)</li></ul></li></ul> |
 | Format des champs horodateur | <ul><li>Horodateurs en UTC : `aaaa-mm-jj hh:mm:ss.sss`.Exemple d'affichage : `2019-09-17 00:09:00.123`. Un événement s'est produit à 18h00, heure de Tokyo. L'heure de l'événement est convertie en UTC, soit 05h00. L'heure qui est enregistrée est l'heure UTC.</li><li>Horodateur dans le fuseau horaire sélectionné (spécifique à l'app) : `yyyy-mm-dd hh:mm:ss.sss±th:tm`. Exemple : `2019-09-17 18:00:16.000+0900`. Un événement s'est produit à 18h00, heure de Tokyo. L'heure de l'événement est enregistrée ainsi : 18:00+09:00. 09:00 étant le fuseau horaire de Tokyo.</li></ul> |
 
+<div id="available-message-types" />
+
 #### Types de messages disponibles
 
 <table><tbody><tr><th>Contexte d'attribution</th><th>Type de message</th><th>conversion_type field</th><th>champ campaign_type</th><th>champ event_name</th><th>event_type field</th></tr><tr><td>Acquisition des utilisateurs</td><td>Installation\*</td><td><span>sans rapport</span></td><td><p>Non organique : UA</p><p>Organique : organic</p></td><td><p>sans rapport</p></td><td><ul><li><p>sans rapport</p></li><li><p>organic-install</p></li></ul></td></tr><tr><td>Acquisition d'utilisateurs </td><td>Événements in-app d'installation</td><td><span>sans rapport</span></td><td><p>Non organique : UA</p><p>Organique : organic</p></td><td><p>Noms d'événement définis par l'annonceur</p></td><td><ul><li><p>install-in-app-event</p></li><li><p>organic-install-in-app-event</p></li></ul></td></tr><tr><td><p>Retargeting</p></td><td>RÉENGAGEMENT</td><td><span>RÉENGAGEMENT</span></td><td>retargeting</td><td>RÉENGAGEMENT</td><td><p>RÉENGAGEMENT</p></td></tr><tr><td>Retargeting </td><td>Évènements in-app de réengagement</td><td>RÉENGAGEMENT</td><td>retargeting</td><td>Noms d'événement définis par l'annonceur</td><td><p>re-engagement-in-app-event</p></td></tr><tr><td>Retargeting </td><td>Réattribution </td><td>Réinstallation</td><td>retargeting</td><td>Réattribution</td><td><p>Réattribution</p></td></tr><tr><td>Acquisition d'utilisateurs </td><td>Réinstallation</td><td>Réinstallation</td><td><p>Non organique : UA</p><p>Organique : organic</p></td><td><p>Réinstallation</p></td><td><ul><li><p>Réinstallation</p></li><li><p>organic-reinstall</p></li></ul></td></tr><tr><td>Retargeting</td><td>Évènements in-app de réattribution</td><td>Réinstallation</td><td>retargeting</td><td>Noms d'événement définis par l'annonceur</td><td><p>re-attribution-in-app-event</p></td></tr><tr><td colspan="6">\* Certaines installations relatives à l'attribution post vue sont attribuées à la <a href="./about-raw-data-identifier-restrictions" target="_blank">source média restreinte</a>. </td></tr></tbody></table>
+
+<div id="unique-fields" />
 
 #### Champs uniques
 
@@ -76,6 +82,8 @@ Caractéristiques du message :
 | Actualisation des données | <ul><li>Installations, re-téléchargements et événements in-app :<ul><li>Traitement quotidien</li><li>Envoyé à votre point de terminaison le jour qui suit la réception du postback iOS par AppsFlyer</li><li>Les messages d'événement arrivent entre 05:00 et 08:00 UTC (l'heure exacte est fluctuante)</li><li>Exemple : des postbacks reçus le lundi seront envoyés à compter du mardi à 05:00 UTC</li></ul></li><li>Postbacks d'iOS et copie de Postbacks : les messages sont envoyés peu après leur arrivée chez AppsFlyer</li></ul> |
 | Exemples de messages | La feuille de calcul contient des exemples de messages. L'exemple présenté est au format JSON. <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS0CO6W7jgx6zxMeSGIo-hbqLbFh3AO0OT6qp4cWmgdbWVMjLJ-2dermVz49jmAXexewiOGzR1YjGzu/pub?output=xlsx">Exemple de messages SKAN</Anchor>. |
 
+<div id="message-types-for-skan-attribution" />
+
 #### Types de messages pour l'attribution SKAN
 
 | Type de message | champ event\_name | champ skad\_redownload | event\_type field |
@@ -94,7 +102,11 @@ Caractéristiques du message :
 
 </Accordion>
 
+<div id="set-up-push-api-endpoints" />
+
 ## Configurer les points de terminaison API Push
+
+<div id="caution" />
 
 > ❗️ **Attention**
 >
@@ -108,6 +120,8 @@ Caractéristiques du message :
 
 Pour configurer l'API Push, suivez les étapes suivantes.
 
+<div id="push-api-setup-checklist" />
+
 #### Marche à suivre pour configurer l'API Push
 
 <table><tbody><tr><th>Étape n°</th><th>Attribution AppsFlyer</th><th>Attribution SKAdNetwork </th></tr><tr><td>1</td><td colspan="2"><p>Si vous avez déjà un point de terminaison API Push actif, vous pouvez ignorer cette étape.</p><p>Suivez la procédure <a href="./push-api-streaming-raw-data#serverside-requirements-your-server">requise du côté du serveur</a>.</p></td></tr><tr><td>2</td><td><p>Pour l'attribution AppsFlyer, paramètrez les points de terminaison en suivant la <a href="./push-api-streaming-raw-data#push-api-planning-checklist-for-appsflyer-attribution">marche à suivre pour configurer l'API Push.</a></p></td><td><p>Ne s'applique pas</p></td></tr><tr><td>3</td><td><p><a href="./push-api-streaming-raw-data#set-up-appsflyer-attribution-endpoint">Configurez le point de terminaison d'attribution AppsFlyer</a></p></td><td><p><a href="./push-api-streaming-raw-data#set-up-skadnetwork-attribution-endpoint">Configurez le point de terminaison d'attribution SKAdNetwork</a></p></td></tr></tbody></table>
@@ -117,6 +131,8 @@ Pour configurer l'API Push, suivez les étapes suivantes.
 <Accordion title="Exigences côté serveur (votre serveur)">
 
 Votre serveur doit suivre conformément les exigences suivantes :
+
+<div id="server-side-requirements" />
 
 #### Exigences côté serveur
 
@@ -139,6 +155,8 @@ Votre serveur doit suivre conformément les exigences suivantes :
 **Point de terminaison**
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+
+<div id="endpoint-planning-table" />
 
 #### Table de planification des points de terminaison
 
@@ -210,6 +228,8 @@ Votre serveur doit suivre conformément les exigences suivantes :
 
 </Accordion>
 
+<div id="additional-proceduresmanaging-endpoints" />
+
 ## Procédures supplémentaires - gestion des points de terminaison
 
 <div id="change-an-endpoint" />
@@ -242,6 +262,8 @@ Votre serveur doit suivre conformément les exigences suivantes :
     Le point de terminaison est supprimé.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Dépannage, caractéristiques et seuils
 
@@ -315,6 +337,8 @@ Vous utilisez Amazon CloudFront comme point de terminaison ? Vérifiez si Cloud
 | <span id="account-owneruser-access"></span>Accès propriétaire / utilisateur du compte | Seuls les **propriétaires de compte** AppsFlyer sont habilités à modifier les paramètres API.<ul><li>Chaque compte AppsFlyer dispose d'un propriétaire de compte **unique**. Le propriétaire est le  premier utilisateur d'AppsFlyer (celui qui a été créé au moment de l'ouverture du compte).</li></ul>Les autres utilisateurs du compte peuvent consulter les paramètres d'API Push, mais ils ne peuvent pas les modifier. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

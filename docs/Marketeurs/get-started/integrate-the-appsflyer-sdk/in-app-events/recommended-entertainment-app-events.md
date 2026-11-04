@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app suggérés pour votre app de divertissement .
 
+<div id="-entertainment" />
+
 ## <Image alt="InApp_Events_streaming.png" src="https://files.readme.io/27f2f38b0ce7d242580c60edeff730079a3801f98ff0d7cb8a605380ed11071f-20659453813905.png" width="100px" /> Divertissement
 
 En raison de la demande croissante de contenu à la demande de la part des utilisateurs, le marché des apps de divertissement est devenu très compétitif. Les événements typiques que nous suggérons d'enregistrer sont les abonnements des utilisateurs, la diffusion de contenu en streaming, ainsi que le téléchargement et l'enregistrement de contenu.
@@ -39,6 +41,8 @@ Ces événements sont également pertinents pour les apps de divertissement qui 
 * Apple TV (tvOS)
 * Amazon Fire TV
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > * Veillez à lire les <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#introduction-setting-up-inapp-events">instructions</Anchor> à l'attention des marketeurs pour implémenter les événements in-app.
@@ -50,9 +54,13 @@ Ces événements sont également pertinents pour les apps de divertissement qui 
 
 [![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur du divertissement. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -118,6 +126,8 @@ AppsFlyer.sendEvent("af_complete_registration", CompleteRegistrationEvent);
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Connexion (af_login)">
 
 **Objectif**
@@ -170,6 +180,8 @@ AppsFlyer.sendEvent("af_login", null);
 
 </Accordion>
 
+<div id="start-trial-af_start_trial" />
+
 <Accordion title="Début de l'essai (af_start_trial)">
 
 **Objectif**
@@ -190,6 +202,8 @@ Lorsque l'utilisateur s'inscrit et active la période d'essai
 | --- | --- | --- |
 | trial\_method | Méthode pour activer l'essai | Offert avec un nouveau téléphone, offert avec un opérateur, promotion, code promo |
 | trial\_method\_identifier | Identifiant de la méthode d'essai | Nom de l'opérateur (ex : **Vodafone**)<br /><br />Nom du partenaire (ex : **Facebook**)<br /><br />Code promotionnel (ex : **TRA123)** |
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -246,6 +260,8 @@ AppsFlyer.sendEvent("af_start_trial", SubscriptionTrial);
 </Tabs>
 
 </Accordion>
+
+<div id="subscription-af_subscribe" />
 
 <Accordion title="Abonnement (af_subscribe)">
 
@@ -348,9 +364,13 @@ AppsFlyer.sendEvent("af_subscribe", Subscription);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une liste de structures d'événements qui comprennent des noms d'événements personnalisés et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="media-play-media_play" />
 
 <Accordion title="Lecture média (media_play)">
 
@@ -441,6 +461,8 @@ AppsFlyer.sendEvent("media_play", MediaPlay);
 </Tabs>
 
 </Accordion>
+
+<div id="media-minutes-media_minutes" />
 
 <Accordion title="Minutes de média (media_minutes)">
 
@@ -536,6 +558,8 @@ AppsFlyer.sendEvent("media_minutes", MediaMinutes);
 
 </Accordion>
 
+<div id="media-downloaded-media_downloaded" />
+
 <Accordion title="Média téléchargé (media_downloaded)">
 
 **Objectif**
@@ -622,6 +646,8 @@ AppsFlyer.sendEvent("media_downloaded", MediaDownloaded);
 </Tabs>
 
 </Accordion>
+
+<div id="media-saved-media_saved" />
 
 <Accordion title="Media enregistré (media_saved)">
 

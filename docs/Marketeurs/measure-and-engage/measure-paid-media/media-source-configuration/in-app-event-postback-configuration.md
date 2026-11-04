@@ -24,9 +24,13 @@ x-zendesk:
 ---
 > **En bref :** mesurez l'engagement dans l'app et la qualité de vos utilisateurs, et optimisez vos campagnes à l'aide des données sur les événements in-app.
 
+<div id="overview" />
+
 ## Présentation
 
 Les événements in-app permettent aux marketeurs de mesurer l'engagement dans l'app et la qualité des utilisateurs à partir de différentes sources pour élaborer la bonne stratégie d'acquisition d'utilisateurs.Les réseaux publicitaires utilisent les informations des événements in-app pour optimiser les campagnes et mener des campagnes de coût par action/événement. Les réseaux publicitaires reçoivent des données sur les événements in-app par l'intermédiaire de postbacks, envoyés en temps réel. <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">À propos des événements in-app riches</Anchor>.
+
+<div id="postback-in-app-event-selection" />
 
 ## Sélection du postback d'événement in-app
 
@@ -36,6 +40,8 @@ Les marketeurs peuvent sélectionner les événements in-app qu'ils souhaitent r
 >
 > * Les événements in-app incluent les événements **rejetés**, c'est-à-dire les événements in-app bloqués par Protect360 ou les événements jugés non conformes aux règles de validation cibles.
 > * Si la section **Postbacks d'événements in-app** n'apparait pas dans l'onglet **Intégration**, cela signifie que le partenaire n'a pas encore pré-configuré l'enregistrement de ses événements in-app avec AppsFlyer. Le partenaire peut contacter AppsFlyer via le <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget assistant du partenaire</Anchor> pour compléter l'intégration.
+
+<div id="in-app-event-postback-window" />
 
 ## Fenêtre des postbacks d'événements in-app
 
@@ -56,6 +62,8 @@ Les postbacks sont toujours envoyés d'après le paramètre de la fenêtre **en 
 | 15 Janvier | La fenêtre est modifiée et passe à 20 jours. |
 | 18 janvier | L'utilisateur effectue un autre achat.<br /><br />Cette fois, le postback est envoyé, puisque l'événement se situe dans la fenêtre actuelle (20 jours). |
 
+<div id="default-postback-window" />
+
 ### Fenêtre de postback par défaut
 
 Lorsque vous commencez à mettre en place des postbacks d'événements in-app, la fenêtre par défaut est automatiquement fixée à six mois.
@@ -64,12 +72,16 @@ Lorsque vous commencez à mettre en place des postbacks d'événements in-app, l
 >
 > Si vous avez commencé à utiliser les postbacks d'événements in-app avec un partenaire donné avant le 30 juillet 2019, le paramètre par défaut de la fenêtre est Lifetime (Durée de vie). Ce qui signifie que les postbacks d'événements in-app sont systématiquement envoyés.
 
+<div id="who-can-configure-postback-windows" />
+
 ### Qui peut configurer les fenêtres de postback ?
 
 * Marketeurs
 * Les agences, si elles ont l'<Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#autorisations-pour-lagence">autorisation</Anchor> **de configurer les postbacks d'événements in-app .**  
   **Remarque :** Un marketeur et une agence travaillant avec le même réseau publicitaire peuvent configurer les fenêtres de postback séparément l'un de l'autre, en fonction de leur contrat avec le réseau.
 * Les partenaires, s'ils ont l'<Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">autorisation</Anchor> **de configurer les postbacks d'événements in-app** .
+
+<div id="event-mapping" />
 
 ## Le mappage d'événement
 
@@ -82,6 +94,8 @@ Pour s'assurer que les événements du marketeur correspondent aux mêmes évén
 > 📘 **Note**
 >
 > Les événements de l'onglet Intégration qui sont mappés pour un partenaire précis s'appliquent à la fois aux postbacks standard et aux <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">postbacks SKAN.</Anchor>
+
+<div id="mapping-methods" />
 
 ### Les méthodes de mappage
 
@@ -162,12 +176,16 @@ Vous pouvez choisir les événements non mappés à envoyer au partenaire :
 
 Pour plus d'informations sur le mappage des événements, voir les <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks d'événements in-app</Anchor>.
 
+<div id="options-for-sending-postbacks" />
+
 ### Options pour l'envoi de postbacks
 
 Pour chaque événement, vous pouvez choisir dans quel cas envoyer les postbacks (dans la fenêtre de postback) :
 
 * **Ce partenaire uniquement** : envoi de postbacks uniquement lorsque l'événement est attribué à ce partenaire, c'est-à-dire lorsque l'utilisateur qui l'effectue provient de ce partenaire.
 * **Toutes les sources média, y compris organiques** : envoi de postbacks pour les événements attribués à n'importe quel partenaire, ainsi que pour les événements organiques (soit tout utilisateur qui réalise l'événement depuis n'importe quelle source média).
+
+<div id="data-to-include-in-the-postbacks" />
 
 ### Données à inclure dans les postbacks
 
@@ -182,6 +200,8 @@ Nous vous conseillons de partager les revenus si vous souhaitez que les réseaux
 Dans les postbacks, `af_revenue` et `af_currency` sont inscrits en dehors du JSON event\_value en tant que **monetary** et **currency** et peuvent être envoyés séparément. Exemple de structure de postback `: https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&content_id=(af_content_id)`
 
 **Remarque** : Lorsque l'on choisit l'option **Pas de valeurs et pas de revenus** ou **Valeurs et pas de revenus**, les paramètres respectifs sont masqués par la mention N/A.
+
+<div id="h_01HBZCRNKGBEDSBZEY87KYQ60G" />
 
 > 📄 **Exemple**
 >
@@ -198,6 +218,8 @@ Dans les postbacks, `af_revenue` et `af_currency` sont inscrits en dehors du JSO
 > | **Valeurs et pas de revenus** | `{"af_currency":"N/A","af_content_id":"1234567",`<br /><br />`"af_revenue":"N/A","af_content_type":"category_a"}`<br /><br />`&monetary=N/A&content_id=1234567` | N/A | S/O |
 > | **Valeurs et revenus** | `"af_currency":"USD","af_content_id":"1234567",`<br /><br />`"af_revenue":200,"af_content_type":"category_a"}`<br /><br />`&monetary=1.856918&content_id=1234567` | 50.87 | USD |
 
+<div id="conditional-in-app-event-postbacks" />
+
 ### Postbacks conditionnels d'événements in-app
 
 Filtrez les postbacks d'événements in-app à l'aide de plusieurs conditions qui peuvent être associées à différents événements. Seuls les événements répondant aux conditions de filtrage sont envoyés aux partenaires, y compris les SRN et les partenaires analytiques. Utilisez cette fonction pour :
@@ -205,6 +227,8 @@ Filtrez les postbacks d'événements in-app à l'aide de plusieurs conditions qu
 * Optimiser la segmentation, la personnalisation et la fidélisation des utilisateurs
 * Minimiser les données
 * Protéger la vie privée des utilisateurs
+
+<div id="h_01HBZCRNKHRTMHP3JPFVCS8D6N" />
 
 > 📄 **Exemple**
 >
@@ -230,6 +254,8 @@ Filtrez les postbacks d'événements in-app à l'aide de plusieurs conditions qu
    * Événement partenaire à associer à la condition (à l'aide de l'une des [options de mappage](/docs/in-app-event-postback-configuration#les-méthodes-de-mappage) suivantes)
 4. Vous pouvez ajouter d'autres conditions, mais veillez à saisir d'abord tous les champs de la condition existante.
 5. Cliquez sur **Enregistrer l'intégration**.
+
+<div id="considerations" />
 
 #### Attention
 
@@ -258,10 +284,14 @@ Lors de la configuration des conditions, assurez-vous que les points suivants so
 
 </Accordion>
 
+<div id="note-9" />
+
 > 📘 **Note**
 >
 > * Nous vous recommandons de tester cette fonctionnalité avec une application de test, ou pour des événements mineurs afin de comprendre son impact sur l'optimisation de la campagne.
 > * Pour voir le <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">contenu du postback</Anchor>, vous pouvez télécharger le rapport de postback des données brutes.
+
+<div id="editing-multiple-events" />
 
 ### Modification de plusieurs événements
 
@@ -282,6 +312,8 @@ Lors du mappage des événements, les valeurs des champs **Utilisateurs de**  et
 
 [![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
 
+<div id="custom-events" />
+
 ### Événements personnalisés
 
 La liste des événements disponibles pour le mappage ne comprend que les événements qui ont déjà été transmis à AppsFlyer par le SDK ou les évènements de serveur à serveur.Si l'événement que vous souhaitez mapper n'apparaît pas dans la liste déroulante, il peut y avoir différentes explications :
@@ -299,6 +331,8 @@ La liste des événements disponibles pour le mappage ne comprend que les évén
 3. Mappez l'événement à l'identifiant du partenaire.
 4. Cliquez sur **Enregistrer l'intégration** pour vous assurer que le mappage est sauvegardé.
 
+<div id="note-10" />
+
 > 📘 **Note**
 >
 > * Lorsqu'un événement personnalisé est ajouté à un certain partenaire, l'événement est ajouté à la liste des événements pour tous les partenaires. Cela signifie que vous pouvez voir cet événement dans la liste déroulante des événements de n'importe quel partenaire.
@@ -308,6 +342,8 @@ La liste des événements disponibles pour le mappage ne comprend que les évén
 
 * Impossible d'ajouter des événements personnalisés
 * Ne peut visualiser et/ou cartographier des événements qu'après que le marketeur a ajouté l'événement et accordé les <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">autorisations</Anchor> nécessaires.
+
+<div id="event-mapping-by-ad-networks" />
 
 ## Le mappage d'événements par les réseaux publicitaires
 
@@ -319,6 +355,8 @@ Les marketeurs peuvent également permettre aux réseaux publicitaires de mapper
 ![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
 
 Une fois que le réseau publicitaire a reçu les autorisations, il peut mapper les événements en suivant les instructions qui apparaissent dans la section [Tapez l'ID d'évènement dans le champ de texte](/docs/in-app-event-postback-configuration#les-méthodes-de-mappage).
+
+<div id="event-mapping-by-agencies" />
 
 ## Le mappage des événements par les agences
 
@@ -332,6 +370,8 @@ Les marketeurs peuvent autoriser les agences à configurer les postbacks d'évé
 4. Sélectionnez les événements précis que l'agence est autorisée à partager.
 
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+
+<div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
 > 📄 **À consulter également**
 >

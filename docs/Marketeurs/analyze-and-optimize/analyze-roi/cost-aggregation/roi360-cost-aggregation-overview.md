@@ -30,6 +30,8 @@ x-zendesk:
 
 ![roi360_image.png](https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png)
 
+<div id="cost-aggregation" />
+
 ## Agrégation des coûts
 
 **ROI360** :
@@ -43,6 +45,8 @@ Les indicateurs suivants sont disponibles pour les annonceurs ne disposant pas d
 
 * <Anchor target="_blank" href="/marketers/fr/docs/view-aggregated-cost-data-for-attribution-links">Données sur les coûts par clic</Anchor>.
 * Données de clics et d'impressions du SRN, configurées via l'onglet **Coût** du partenaire intégré du SRN.
+
+<div id="principles-of-cost-data-aggregation" />
 
 ## Principes de l'agrégation des données sur les coûts
 
@@ -71,6 +75,8 @@ Pour la compréhension du tableau, les explications suivantes s'appliquent, sauf
 * UA : Données sur les coûts pour les campagnes d'acquisition d'utilisateurs avec au moins une installation récemment enregistrée (non attribuée par SKAN) (c'est-à-dire au cours des 7 derniers jours environ).
 * Unifié : Données sur les coûts de toutes les campagnes de l'application sélectionnée, y compris celles pour lesquelles aucune installation n'a été enregistrée récemment (c'est-à-dire au cours des 7 derniers jours environ). Le tableau indique quand les données ne sont disponibles que pour les campagnes ayant au moins une installation récemment enregistrée.
 * Si les changements de nom de campagne ne sont pas pris en charge, les deux noms de campagne s'affichent, l'un avec les données d'attribution, l'autre avec les données de coût. Aucun des noms de campagne affichés ne comprendra l'ensemble des données.
+
+<div id="cost-data-availability-and-reports-table" />
 
 #### Disponibilité des données sur les coûts et rapports
 
@@ -117,6 +123,8 @@ Le mécanisme de hiérarchisation des coûts a une incidence sur les rapports de
 
 ![](https://support.appsflyer.com/hc/article_attachments/24855895951377)  
 
+<div id="example-1" />
+
 > 📄 **Exemple**
 >
 > **Scénario :** Un réseau publicitaire indique le coût par clic, mais vous décidez d'activer l'API des coûts du réseau publicitaire.
@@ -124,6 +132,8 @@ Le mécanisme de hiérarchisation des coûts a une incidence sur les rapports de
 > **Résultat :** Le coût est agrégé à la fois par les clics et par l'API des coûts. Mais comme l'API des coûts est prioritaire, les coûts des clics sont ignorés.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -165,6 +175,8 @@ Pour éviter les anomalies d'affichage, assurez-vous que
 **Pourquoi les données relatives aux coûts n'indiquent-elles aucune installation ?** Cela se produit lorsque le coût est fourni à un niveau hiérarchique supérieur (par exemple au niveau de la campagne), mais que les informations sur les performances (clics et installations) sont fournies à un niveau inférieur de la hiérarchie publicitaire (par exemple au niveau de l'adset).
 
 AppsFlyer complète les données de coûts pour les dimensions manquantes d'une hiérarchie de niveau supérieur. Cela garantit une vue d'ensemble des données relatives aux coûts à tous les niveaux et minimise les divergences internes.
+
+<div id="example-2" />
 
 > 📄 **Exemple**
 >

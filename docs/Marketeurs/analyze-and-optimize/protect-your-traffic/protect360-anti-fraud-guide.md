@@ -33,6 +33,8 @@ x-zendesk:
 
 ![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
 
+<div id="protect360-overview" />
+
 ## Présentation de Protect360
 
 * Il s'agit d'une solution de prévention de la fraude liée à l'attribution. Elle regroupe des outils dynamiques capables de détecter la fraude et de bloquer l'attribution frauduleuse.
@@ -112,6 +114,8 @@ Le tableau ci-dessous décrit les différents types d'installations frauduleuses
 
 <table><caption>Détection de la fraude par Protect360 et résultats</caption><thead><tr><th>Type de fraude</th><th>Délai de détection</th><th>Action niveau installation</th><th>Action niveau événement in-app</th></tr></thead><tbody><tr><td rowspan="2"><span>Fausse installation</span></td><td><span>temps réel</span></td><td><span>Blocage en temps réel</span></td><td><span>Blocage en temps réel</span></td></tr><tr><td><span>Post-attribution</span></td><td><span>Marqué dans le rapport sur les installations post-attribution</span></td><td><ul><li><span>Les événements in-app qui se sont produits avant la détection de la fraude seront notés dans le rapport comme «Événements in-app post-attribution»</span></li><li><span>Après détection : blocage en temps réel</span></li></ul></td></tr><tr><td rowspan="2"><span>Hijacking de l'attribution d'installation</span></td><td><span>temps réel</span></td><td><ul><li><span>Blocage en temps réel</span></li><li><span>L'attribution est corrigée et donnée à la dernière source valide</span></li></ul></td><td><ul><li><span>Apparaît dans le rapport des événements in-app bloqués</span></li><li><span>Attribution à la même source valide que l'installation</span></li></ul></td></tr><tr><td><span>Post-attribution</span></td><td><span>Marqué dans le rapport sur les installations post-attribution</span></td><td><ul><li><span>Les événements in-app qui se sont produits avant la détection de la fraude seront notés dans le rapport comme «Événements in-app post-attribution»</span></li><li><p>Après la détection de la fraude : noté dans le rapport comme étant un <em>événement in-app post-attribution</em> jusqu'à 30 jours après l'installation\*.</p><p>\*Les événements in-app sont corrigés en fonction de la dernière source média valide au cours des 30 jours suivant l'installation. Les événements survenus après plus de 30 jours ne sont pas corrigés.</p></li></ul></td></tr><tr><td rowspan="2"><span>Événement in-app frauduleux</span></td><td><span>temps réel</span></td><td>-</td><td><span>Blocage en temps réel</span></td></tr><tr><td><span>Post-attribution</span></td><td>-</td><td><span>Marqué dans le rapport des événements in-app post-attribution</span></td></tr></tbody></table>
 
+<div id="using-protect360" />
+
 ## Utiliser Protect360
 
 <div id="dashboard" />
@@ -186,6 +190,8 @@ Vous pouvez également utiliser les données Protect360 pour faire le point avec
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Particularités et limites
 
 <div id="traits-and-limitations::a07033c3" />
@@ -205,6 +211,8 @@ Vous pouvez également utiliser les données Protect360 pour faire le point avec
 | Limites | <ul><li>Les tableaux sont limités à 20 000 lignes.</li><li>Si votre demande porte sur un ensemble de données plus volumineux, certaines sources média peuvent en être exclues. Pour surmonter cette limitation, nous vous recommandons de procéder ainsi :<ul><li>Demande portant sur un ensemble réduit de données - plage de dates réduite, applications spécifiques et sources média spécifiques</li><li>Exporter les <Anchor target="_blank" href="/marketers/fr/docs/protect360-raw-data-reports">rapports de données brutes</Anchor> Protect360</li><li>Exporter les rapports de détection avancée Protect360 agrégés <Anchor target="_blank" href="/marketers/fr/docs/pull-api-aggregate-data">via l'API Pull</Anchor></li></ul></li></ul> |
 
 </Accordion>
+
+<div id="faq-and-tips" />
 
 ## FAQ et conseils
 
@@ -245,9 +253,13 @@ Vous pouvez également utiliser les données Protect360 pour faire le point avec
 
 </Accordion>
 
+<div id="tip" />
+
 > 👍 **Astuce**
 >
 > Vous voulez en savoir plus sur la protection anti fraude ? Suivez cette <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7809/play/18635/mobile-app-fraud-and-protect360">formation rapide sur le portail d'apprentissage AppsFlyer</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

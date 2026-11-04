@@ -25,6 +25,8 @@ x-zendesk:
 
 [![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
 
+<div id="custom-dashboards" />
+
 ## Tableaux de bord personnalisés
 
 Chaque tableau de bord personnalisé se compose d'un ou plusieurs widgets qui fournissent des métriques d'acquisition d'utilisateurs. Vous configurez le widget avec l'assistant de widget, puis vous choisissez vos métriques, le format de présentation, les apps, etc.
@@ -32,6 +34,8 @@ Chaque tableau de bord personnalisé se compose d'un ou plusieurs widgets qui fo
 Les métriques disponibles sont les mêmes que celles de l'acquisition d'utilisateur du tableau de bord général. Attention ! **Ne comparez jamais** les mesures du tableau de bord personnalisé avec celles de la vue d'ensemble unifiée **ni** de la vue de retargeting.
 
 Une fois qu'un tableau de bord personnalisé est défini, il est disponible pour tous les utilisateurs du compte. 
+
+<div id="dashboard-personalization" />
 
 ## Personnalisation du tableau de bord
 
@@ -42,6 +46,8 @@ Vous pouvez personnaliser un tableau de bord en déplaçant et redimensionnant s
 | Redimensionner le widget | Faites glisser l'angle situé en bas à droite d'un widget pour le modifier sa taille. |
 | Position du widget | Glissez-déposez un widget pour le changer de place dans le tableau de bord |
 | Actions | Survolez l'angle situé en haut à droite du widget, puis cliquez sur Actions. Les actions suivantes sont disponibles pour chaque widget :<ul><li>Modifier</li><li>Dupliquer</li><li>Supprimer</li><li>Exporter CSV</li></ul> |
+
+<div id="procedures" />
 
 ## Marche à suivre
 
@@ -116,6 +122,8 @@ Vous pouvez personnaliser un tableau de bord en déplaçant et redimensionnant s
    Les dates des fichiers CSV sont au format jj/mm/aaaa. Vous pouvez <Anchor target="_blank" href="https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_winother-mso_2010/how-to-convert-ddmmyyyy-to-mmddyyyy/41119ed6-4057-4598-a44c-1ebfdf301a43">les convertir dans un autre format</Anchor>, par exemple mm/jj/aaaa, en passant par Excel.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
 
 ## Caractéristiques et limitations
 

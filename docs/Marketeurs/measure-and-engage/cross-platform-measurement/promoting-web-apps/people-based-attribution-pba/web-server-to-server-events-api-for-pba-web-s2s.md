@@ -26,6 +26,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)
 
+<div id="web-server-to-server-events-api-for-pba" />
+
 ## API d'événements de serveur à serveur Web pour PBA
 
 L'API Web-S2S pour l'attribution basée sur les personnes complète le <Anchor target="_blank" href="/marketers/fr/docs/pba-web-sdk-integration-guide">SDK Web</Anchor> en permettant aux spécialistes du marketing de signaler les événements qui se produisent sur leurs sites web mais qui ne sont pas couverts par le SDK Web. Par exemple, un visiteur du site web (un internaute) déclenche un paiement en ligne, traité par des systèmes en arrière-plan. Après traitement, l’arrière-plan signale l'événement à AppsFlyer via l'API S2S.
@@ -35,6 +37,8 @@ L'API Web-S2S pour l'attribution basée sur les personnes complète le <Anchor t
 * sont enregistrés de la même manière que les événements signalés par le SDK Web
 * sont inclus dans les tableaux de bord PBA s'ils sont définis comme des événements de conversion
 * alimenter les données brutes PBA avec le *champ event\_source* réglé sur *web S2S*
+
+<div id="api-use-instructions" />
 
 ## Instructions d'utilisation de l'API
 
@@ -63,6 +67,8 @@ La mise en œuvre de l'API nécessite les informations d'identification suivante
    * ***ID de bundle de marques***
    * ***Clé dev web***
 
+<div id="web-s2s-api-basics" />
+
 #### Principes de base de l'API Web S2S
 
 | Chemin | `https://webs2s.appsflyer.com/v1/bundleId/method`<ul><li>`bundleId` : l'identifiant du bundle d'applications est-il disponible dans le tableau de bord ?</li><li>`method` soit l'un des éléments suivants :<ul><li>[event](/docs/web-server-to-server-events-api-for-pba-web-s2s#event-method): envoi pour les événements d’arrière-plan à signaler</li><li>[setCuId :](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method) envoyé lors de l'association de afUserId avec votre CUID</li></ul></li></ul> |
@@ -84,6 +90,8 @@ La mise en œuvre de l'API nécessite les informations d'identification suivante
 | Cas d'utilisation | Pour l'association d'un CUID à un visiteur de votre site web. Par exemple, chaque fois que vous faites correspondre le site web `afUserId` avec l'ID de votre client. Cela permet à la PBA de faire correspondre des données provenant de différentes sources. Cette fonction est similaire à <Anchor target="_blank" href="/marketers/fr/docs/pba-web-sdk-integration-guide#identifying-users-using-customer-user-id-cuid">setCustomerUserId</Anchor> sur le site web. |
 | Chemin de la méthode | `https://webs2s.appsflyer.com/v1/bundleId/setcuid` |
 | Charge utile | La charge utile JSON se compose des paramètres énumérés ici. Tous les paramètres sont obligatoires.<ul><li>[customerUserID](/docs/web-server-to-server-events-api-for-pba-web-s2s#setcuid-method)</li><li>[afUserId](/docs/web-server-to-server-events-api-for-pba-web-s2s#extracting-the-web-sdk-afuserid)</li><li>[webDevKey](/docs/web-server-to-server-events-api-for-pba-web-s2s#webdevkey)</li></ul> |
+
+<div id="curl-example-setcuid" />
 
 #### Exemple Curl setCuId
 
@@ -111,6 +119,8 @@ curl --location --request POST 'https://webs2s.appsflyer.com/v1/bundleId/setcuid
 
 </Accordion>
 
+<div id="event-method-details" />
+
 ## Détails de la méthode d'événement
 
 <div id="payload-parameters" />
@@ -122,12 +132,16 @@ Les paramètres de la charge utile sont divisés en identifiants d'utilisateurs 
 * ID utilisateur : Vous devez envoyer au moins un paramètre d'identification de l'utilisateur.
 * Événement : Envoyer les paramètres obligatoires et les paramètres optionnels si nécessaire.
 
+<div id="user-identifier-parameters-send-at-least-one-parameter" />
+
 #### Paramètres d'identification de l'utilisateur (envoyer au moins un paramètre)
 
 | Paramètre de l'ID utilisateur | Description |
 | --- | --- |
 | <span id="customeruserid"></span>customerUserId | L'<Anchor target="_blank" href="/marketers/fr/docs/customer-user-id-field-cuid">ID d'utilisateur client (CUID)</Anchor> est un identifiant unique que vous définissez.<ul><li>Utilisez le même identifiant pour les événements signalés à AppsFlyer par quelque moyen que ce soit. Cela signifie que le même identifiant est utilisé dans le SDK Web, le SDK mobile et les API S2S.</li><li><Anchor target="_blank" href="/marketers/fr/docs/pba-web-sdk-integration-guide#setting-customer-user-id-after-signup">ID utilisateur du client SDK Web</Anchor></li><li>Format : Chaîne</li><li>Exemple :`"customerUserId" : "663274"`</li><li>Remplit le champ de données brutes : `customer_user_id`</li></ul> |
 | <span id="afuserid"></span>afUserId | L'ID utilisateur unique attribué par le SDK Web à chaque utilisateur qui visite votre site web. Vous devrez transmettre la valeur du cookie à vos serveurs d’arrière-plan.<ul><li>Détails du cookie :<ul><li>Nom : afUserId</li><li>Valeur : attribuer cette valeur à *afUserId*</li><li>Domaine : website-domain</li></ul></li><li>Exemple : `"afUserId" : "unique_cookie_uuid"`</li><li>Remplit le champ de données brutes : `af_web_id`</li></ul> |
+
+<div id="event-parameters" />
 
 #### Paramètres d'événement
 
@@ -232,6 +246,8 @@ print(response.text.encode('utf8'))
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations supplémentaires
 
 <div id="getting-the-web-dev-key" />
@@ -255,10 +271,14 @@ print(response.text.encode('utf8'))
 * Le `afUserId` est un identifiant unique, défini par le SDK Web lorsqu'un utilisateur visite votre site pour la première fois.
 * Si vous avez besoin de `afUserId`, utilisez l'une des méthodes suivantes.
 
+<div id="get-afuserid-from-the-http-cookie-header" />
+
 #### **Obtenir afUserId à partir de l'en-tête du cookie HTTP**
 
 * `afUserId` est envoyé par le navigateur des visiteurs lorsqu'ils visitent votre site.
 * L'extraire de l'en-tête du cookie HTTP si nécessaire.
+
+<div id="viewing-afuserid-in-the-visitors-browser" />
 
 #### **Affichage de afUserId dans le navigateur du visiteur**
 

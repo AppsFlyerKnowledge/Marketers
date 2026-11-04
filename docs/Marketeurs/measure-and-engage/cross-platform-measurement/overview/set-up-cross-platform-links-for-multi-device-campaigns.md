@@ -24,13 +24,19 @@ x-zendesk:
 ---
 > **En bref :** découvrez comment promouvoir, attribuer et mesurer les installations d’applications sur des plateformes à des vues publicitaires sur d’autres plateformes. Par exemple, les installations d’apps mobile pour les publicités visionnées sur les appareils CTV, les installations d’apps de console de jeu pour les publicités affichées sur mobile ou ordinateur de bureau (Web), et les installations d’apps CTV pour les publicités affichées sur mobile ou sur ordinateur de bureau (Web).
 
+<div id="overview" />
+
 ## Présentation
 
 Avec les liens d’attribution multiplateforme AppsFlyer (URL d’impression), vous pouvez attribuer les installations d’une plateforme aux vues de publicités affichées sur une autre plateforme. Plusieurs installations au sein d’un même foyer peuvent être attribuées à la même impression d’une publicité multiplateforme.
 
+<div id="set-up-cross-platform-partner-integration" />
+
 ## Configurer l’attribution multiplateforme
 
 Pour configurer l’attribution multiplateforme à l’aide d’URL d’impression multiplateforme, suivez ces étapes :
+
+<div id="create-a-onelink-templatefor-cross-platform-attribution" />
 
 <div id="step-1-create-or-edit-a-onelink-template-for-crossplatform-attribution" />
 
@@ -95,6 +101,8 @@ Pour créer un<Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integra
    ```
 8. Transmettez le lien au réseau publicitaire pour qu’il le place après la publicité affichée sur les plateformes CTV, PC ou console.
 
+<div id="important-1" />
+
 > 🚧 **Attention !**
 >
 > Pour les médias propriétaire et les partenaires non intégrés, ajoutez les paramètres requis.  <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters">Plus d’infos ici</Anchor> sur les paramètres que vous pouvez ajouter pour obtenir des données et métriques supplémentaires.
@@ -104,6 +112,8 @@ Pour créer un<Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integra
 ## Liste des réseaux publicitaires
 
 La liste des réseaux publicitaires qui diffusent des publicités sur les plateformes CTV, PC et console, et qui prennent en charge l’attribution multiplateforme (ex. CTV vers app mobile) se trouve dans la section <Anchor target="_blank" href="https://hq1.appsflyer.com/partner-marketplace/explore?integrationLevels=CROSS_PLATFORM">Marketplace des partenaires AppsFlyer</Anchor>. Pour y accéder vous devrez vous connecter à votre compte AppsFlyer.
+
+<div id="traits-and-limitations" />
 
 ## Caractéristiques et limitations
 
@@ -117,6 +127,8 @@ La liste des réseaux publicitaires qui diffusent des publicités sur les platef
 | <span id="ip-masking"></span>Masquer l’IP | Le masquage de l’IP pour les engagements multiplateformes n’est pas pris en charge, car il s’agit d’une caractéristique au niveau de l’application. Si `ip_masking`  est configuré, l’installation ne sera pas attribuée à l’engagement multiplateforme. |
 | <span id="ctvto-mobile"></span>CTV-to-mobile | Les flux d’attribution CTV vers mobile ne sont disponibles que pour les partenaires intégrés qui ont l’autorisation de mener des campagnes multiplateformes. |
 | <span id="cross-platform-attribution-links-in-mobile-devices"></span>Liens d’attribution multiplateformes sur les appareils mobile | Lorsqu’un lien d’attribution multiplateforme s’affiche sur un appareil mobile, l’attribution est déterminée par modélisation probabiliste mobile standard, et non par le flux d’attribution multiplateforme conçu pour les <Anchor target="_blank" href="/marketers/fr/docs/ctv-pc-and-console-platform-attribution-concepts#tv-screens">CTV</Anchor>, PC et consoles. Par conséquent, les impressions mobile ne seront pas éligibles à la [Priorité égale](#step-3-enable-equal-priority-for-crossplatform-impressions), la [Période d’analyse prolongéeou](#attribution-window) l’[Attribution des foyers](#household-attribution) qui ne sont proposées qu’aux impressions multiplateformes véritables. |
+
+<div id="discrepancies" />
 
 ## Écarts dans les mesures
 

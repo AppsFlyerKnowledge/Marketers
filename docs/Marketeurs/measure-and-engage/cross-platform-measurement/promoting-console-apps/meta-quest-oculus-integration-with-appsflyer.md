@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **En bref :** Intégrez votre application Meta Quest (Oculus) à AppsFlyer pour recevoir des données d’attribution et d’événement pour vos campagnes sur Meta Quest (Oculus).
 
+<div id="about-meta-quest-oculus-attribution" />
+
 ## À propos de l’attribution de Meta Quest (Oculus)
 
 Le système d’exploitation Meta Quest (Oculus) pour les jeux fonctionne sur tous les appareils Meta Quest (Oculus).
 
 Les applications exécutées sur Meta Quest peuvent s’intégrer à AppsFlyer via l’API ou le SDK S2S pour recevoir des  données d’attribution et des mesures de performance sur les sources et les campagnes qui génèrent des événements ouverts et intégrés aux applications (in-app events). Les marketeurs s’appuient sur ces informations pour mesurer et optimiser les activités marketing.
+
+<div id="integration-procedures" />
 
 ## Procédures d'intégration
 
@@ -164,6 +168,8 @@ Le tableau suivant répertorie les tâches requises pour intégrer votre applica
 | Données de coûts | Les données de coût doivent être envoyées via  <Anchor target="_blank" href="/marketers/fr/docs/import-cost-data">Cost Import</Anchor> en utilisant la méthode de téléchargement de fichier par e-mail. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

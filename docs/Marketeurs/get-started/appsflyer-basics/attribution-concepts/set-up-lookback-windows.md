@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** personnalisez les fenêtres rétrospectives post-clic et post-vue, en fonction de vos accords avec les sources média.
 
+<div id="lookback-windows" />
+
 ## Fenêtre d'attribution
 
 La fenêtre d'attribution configurable vous permet de personnaliser la période d'attribution en fonction de votre accord avec les sources média.
@@ -34,9 +36,13 @@ En définissant des fenêtres d'attribution par source média, AppsFlyer attribu
 * **Fenêtre d'attribution post-clic** : période maximale après un clic sur une publicité pendant laquelle une installation peut être attribuée à la publicité. Les installations qui ont lieu après la fenêtre d'attribution sont considérées comme organiques.
 * **Fenêtre d'attribution post-vue**: période maximale après la visualisation d'une publicité pendant laquelle une installation peut être attribuée à la publicité. Les installations qui ont lieu après la fenêtre d'attribution sont considérées comme organiques.
 
+<div id="configurable-lookback-windows-per-attribution-type" />
+
 #### Fenêtres d'attribution configurables par type d'attribution
 
 <table><thead><tr><th rowspan="2"><p><strong>Type d'attribution</strong></p></th><th rowspan="2"><p><strong>Méthode d'attribution</strong></p></th><th colspan="2"><p><strong>Fenêtre rétrospective des clics</strong> </p></th></tr><tr><th><p><strong>Plage</strong></p></th><th><p><strong><strong>Par défaut</strong></strong></p></th></tr></thead><tbody><tr><td rowspan="2"><p>Post-clic</p><p>(Toutes les sources média)</p></td><td><p>Référent, correspondance des identifiants</p></td><td><p>1-30 jours OU<br/>1-23 heures</p></td><td><p>7 jours</p></td></tr><tr><td><p>Modélisation probabiliste</p></td><td><p><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptive</a></p></td><td><p>Jusqu'à 24 heures</p></td></tr><tr><td rowspan="3"><p>Fraude de visibilité</p><p>(Sélectionnez les <a href="./measure-view-through-engagements#view-vta-partner-list" target="_blank">sources média</a>)</p></td><td><p>ID Matching</p></td><td><p>1-24 heures</p><p>[Jusqu'au 15 décembre 2021, la limite supérieure était de 7 jours].</p></td><td><p>24 heures</p></td></tr><tr><td><p>Modélisation probabiliste</p></td><td><p><a href="./appsflyer-attribution-model#probabilistic-modeling" target="_blank">Adaptive</a></p></td><td><p>Jusqu'à 24 heures</p></td></tr><tr><td><p>Modélisation probabiliste (multiplateforme)</p></td><td><p>1-72 heures</p></td><td><p>24 heures</p></td></tr></tbody></table>
+
+<div id="probabilistic-modeling-lookback-window" />
 
 ### Fenêtre de recul de la modélisation probabiliste
 
@@ -49,12 +55,16 @@ La fenêtre d'attribution de la modélisation probabiliste, utilisée pour maint
 
 Pour en savoir plus, consultez le site <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model#probabilistic-modeling">Méthode de modélisation probabiliste AppsFlyer</Anchor>.
 
+<div id="lookback-window-setup" />
+
 ## Configuration de la fenêtre d'attribution
 
 Nous présentons ci-après le processus de configuration de la fenêtre d'attribution pour les SRN et les liens d'attribution.
 
 <Tabs>
 <Tab title="Fenêtre d'attribution du SRN">
+
+<div id="attribution-lookback-window-for-srns" />
 
 ### Attribution de la fenêtre d'attribution pour les SRN
 
@@ -115,6 +125,8 @@ Vous pouvez également définir la fenêtre d'attribution dans OneLink.
 </Tab>
 </Tabs>
 
+<div id="distribution-of-first-app-launches" />
+
 ## Distribution des premiers lancements d'applications
 
 Le graphique ci-dessous montre la distribution des premiers lancements d'applications à partir du jour de l'engagement.
@@ -126,6 +138,8 @@ Le graphique peut vous donner une meilleure idée du nombre d'utilisateurs qui i
 La majorité des utilisateurs, un peu plus de 97 %, qui lancent l'application le font dans les sept jours suivant l'affichage de la publicité. Les 2 % restants le font entre le 7ème jour et la fin de la fenêtre d'attribution (30ème jour).
 
 Près de 62 % des utilisateurs qui lancent l'application le font dans les 15 minutes qui suivent la diffusion de la publicité. 72 % des utilisateurs le font dans la première heure.
+
+<div id="scenarios-and-examples" />
 
 ## Scénarios et exemples
 

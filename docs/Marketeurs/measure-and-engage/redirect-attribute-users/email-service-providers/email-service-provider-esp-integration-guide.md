@@ -28,6 +28,8 @@ x-zendesk:
 
 > **En bref :** pour créer des campagnes d’e-mails avec des ESP intégrés avec des liens de marque OneLink et du deep linking pour améliorer l’expérience utilisateur et encourager sa conversion.
 
+<div id="about-esp-integration" />
+
 ## À propos de l'intégration ESP
 
 Le marketing par e-mail est un moyen simple, puissant et efficace pour interagir avec les clients, réguliers et nouveaux. De nombreux marketeurs font appel à des fournisseurs de services de messagerie (ESP) pour lancer des campagnes d’e-mail à grande échelle en direction de leurs utilisateurs. Vous pourriez penser que c’est un procédé simple et direct, qui offre le parfait parcours utilisateur mobile, mais ce n'est généralement pas le cas.
@@ -44,6 +46,8 @@ Les problèmes sont dus à la manière dont les ESP gèrent le plus souvent leur
 **Quelle solution ?**
 
 Pour éviter ces problèmes et offrir aux utilisateurs mobile la meilleure expérience possible, cliquez sur votre ESP dans la section ci-dessous et suivez les instructions d'intégration fournies. Certains ESP sont pris en charge par une solution d'intégration AppsFlyer qui permet à AppsFlyer de servir d'intermédiaire entre le serveur ESP et votre nom de domaine. Son rôle de proxy permet de fournir des fichiers d'association (AASA/liens vers des actifs), ce qui facilite le deep linking.
+
+<div id="supported-esps" />
 
 ## Les ESP pris en charge
 

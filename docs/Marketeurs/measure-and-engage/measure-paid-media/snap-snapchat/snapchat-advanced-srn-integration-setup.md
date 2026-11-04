@@ -29,9 +29,13 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
+<div id="overview" />
+
 ## Présentation
 
 Une intégration SRN avancée signifie que tout le trafic<Anchor target="_blank" href="/marketers/fr/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">à double consentement</Anchor> est attribué et rapporté comme du trafic SRN normal. Pour le trafic non consenti, AppsFlyer est en mesure d'attribuer et de mesurer l'attribution basée sur les clics et les impressions provenant de Snapchat en utilisant d'<Anchor target="_blank" href="/marketers/fr/docs/self-reporting-networks-srns#comment-fonctionne-lattribution-avec-les-srn-avancés">autres méthodes d'attribution</Anchor>, conformément aux restrictions de confidentialité.
+
+<div id="set-up-snapchat-integration" />
 
 ## Configurer l'intégration de Snapchat
 
@@ -58,10 +62,14 @@ Pour obtenir une description détaillée de l'en-tête de la fenêtre de configu
 
 L'intégration prend en charge l'attribution des clics et des impressions, les coûts, les revenus publicitaires et les audiences.
 
+<div id="activate-partner" />
+
 #### Activation du partenaire
 
 Lors de votre **première visite** ici, vous devez activer la fonction **Activer le partenaire** pour permettre la configuration.  
 Pour plus de détails sur l'activation des partenaires, cliquez <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">ici</Anchor>.
+
+<div id="general-settings" />
 
 #### Paramètres généraux
 
@@ -104,6 +112,8 @@ Obtenez plus de détails concernant <Anchor target="_blank" href="/marketers/fr/
 
 <Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
 
+<div id="re-engagement-attribution" />
+
 #### Attribution du ré-engagement
 
 Activez l'attribution de réengagement pour démarrer l'attribution des réengagements pour Snapchat.  
@@ -127,6 +137,8 @@ Définissez la durée de la fenêtre rétrospective de réengagement post vue (l
 Définissez la durée de la **Fenêtre de réengagement** (période au cours de laquelle les événements in-app de l'utilisateur sont attribués à la source média de retargeting). Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur vie :
 
 <Image alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
+
+<div id="in-app-event-postbacks" />
 
 #### Paramètres de postback d'évènements in-app
 
@@ -260,6 +272,8 @@ En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-in
 
 </Accordion>
 
+<div id="deep-linking-with-snapchat" />
+
 ## Deep linking avec Snapchat
 
 Le deep linking avec Snapchat est basé sur l'utilisation d'un deep linking natif à la plateforme de Snapchat, tout en y ajoutant des paramètres AppsFlyer.
@@ -278,12 +292,16 @@ Pour utiliser le deep linking avec Snapchat :
 >
 > client://home?pid=snapchat\_int&c=TEST&is\_retargeting=true
 
+<div id="set-up-deep-links-on-the-snap-platform" />
+
 ### Comment mettre en place le deep linking sur la plateforme Snapchat ?
 
 1. Sélectionnez le type d'opportunité **Diriger le trafic vers l'app**.
 2. Ajoutez l'URI de deep linking :  
      
     [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+
+<div id="deferred-deep-linking-with-snapchat" />
 
 ### Deep linking différé avec Snapchat
 
@@ -292,6 +310,8 @@ Vous pouvez accéder aux données de conversion des utilisateurs de Snapchat en 
 <Anchor target="_blank" href="/marketers/fr/docs/conversion-data-payloads-and-scenarios#snapchat-conversion-data">Les données de conversion Snapchat</Anchor> comprennent le paramètre **af\_dp**, qui vous permet d'utiliser le deep linking et de diffuser du contenu personnalisé en fonction de l'engagement de l'utilisateur avec votre publicité dans Snapchat.
 
 Vous pouvez également utiliser d'autres paramètres de données de conversion tels que **af\_adset** ou **af\_channel**.
+
+<div id="set-up-snapchat-for-agencies" />
 
 ## Configurer Snapchat pour les agences
 
@@ -309,6 +329,8 @@ Pour terminer la configuration, deux étapes sont nécessaires :
 >
 > Les identifiants des comptes Snapchat ne doivent pas être partagés entre l'annonceur et l'agence. S'ils sont partagés, TOUTES les installations de l'annonceur sont automatiquement attribuées sur le tableau de bord de l'agence.
 
+<div id="raw-data-restrictions" />
+
 ## Restriction relatives aux données brutes
 
 * Depuis le 1er mars 2023, les désinstallations de Snapchat ne sont pas incluses dans les rapports de données brutes.
@@ -319,6 +341,8 @@ Pour terminer la configuration, deux étapes sont nécessaires :
   * Type de touch attribué (impression)
   * Date de touch attribué (date uniquement - « jj/mm/aaaa »)
   * La campagne est marquée comme « restreinte »
+
+<div id="snapchat-data-retention" />
 
 ## Conserver les données de Snapchat
 

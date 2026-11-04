@@ -28,10 +28,14 @@ x-zendesk:
 ---
 > **En bref** : le CUID vous permet de regrouper les événements d'un même utilisateur sur plusieurs appareils, sources média ou canaux.
 
+<div id="what-is-cuid" />
+
 ## **Qu'est-ce qu'un CUID ?**
 
 Le Customer User ID (CUID) **est un**   
 identifiant utilisateur unique.Il est généralement produit et défini par le propriétaire de l'app au moment de l'inscription de l'utilisateur.Le CUID permet aux propriétaires d'app de suivre le parcours d'un utilisateur sur différents appareils.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -42,6 +46,8 @@ identifiant utilisateur unique.Il est généralement produit et défini par le p
 > * Les achats in-app effectués par le même utilisateur sur différents appareils (mobile, tablette, TV, ordinateur) peuvent être regroupés en une seule vue.
 > * Les performances de l'utilisateur pour un jeu installé sur plusieurs plateformes (ordinateur, mobile ou TV) peuvent être partagées entre les plateformes pour permettre au joueur de passer facilement d'une plateforme à l'autre.
 
+<div id="setting-the-cuid" />
+
 ## **Paramétrer le CUID**
 
 Il est recommandé de définir le CUID le plus tôt possible dans le flux d'initialisation du SDK afin que le plus grand nombre d'événements reçoivent une association CUID.
@@ -51,6 +57,8 @@ Il est recommandé de définir le CUID le plus tôt possible dans le flux d'init
 
 Une fois que le CUID est disponible, vous pouvez le définir en appelant  `setCustomerUserID` . Le CUID peut uniquement être associé à des événements in-app se produisant après qu'il a été défini. Par conséquent, l'événement d'installation n'est pas associé au CUID lorsque `start` est appelé avant `setCustomerUserID`.
 
+<div id="associate-the-cuid-with-the-install-event" />
+
 ### **Associer le CUID à l'événement d'installation**
 
 S'il est important pour vous d'associer l'événement d'installation au CUID, vous devez procéder à la configuration avant d'appeler `start`.
@@ -59,15 +67,21 @@ S'il est important pour vous d'associer l'événement d'installation au CUID, vo
 
 Dans Android, la méthode `start` et la configuration du CUID peuvent être exécutées depuis la classe globale `Application` ou une quelconque classe `Activity` selon la manière dont l'app a été implémentée. Pour plus d'informations, consultez <Anchor target="_blank" href="/marketers/fr/docs/basic-sdk-integration-guide#sélectionner-la-classe-dans-laquelle-démarrer-le-sdk">Choisir la classe pour démarrer le SDK.</Anchor>
 
+<div id="if-the-sdk-starts-in-the-application-class" />
+
 #### Si le SDK démarre dans la classe Application
 
 Si vous souhaitez associer le CUID à l'événement *install* lorsque vous démarrez depuis la classe globale `Application`, pensez à retarder l'envoi de l'événement d'installation avec la méthode `waitForCustomerUserId`. Cette méthode met le SDK en attente jusqu'à ce que le CUID soit défini.
 
 Remarque : Si le paramétrage du CUID échoue, le SDK reste en mode d'attente et n'envoie aucun événement.
 
+<div id="if-the-sdk-starts-in-an-activity-class" />
+
 #### Si le SDK démarre dans une classe Activity
 
 Si vous souhaitez associer le CUID à l'événement d'installation lorsque vous démarrez avec une classe `Activity` , vous ne devez pas retarder l'envoi de l'événement d'installation. Il suffit d'appeler `setCustomerUserId` avant d'appeler `start`.
+
+<div id="developer-instructions" />
 
 #### Instructions pour les développeurs
 
@@ -86,6 +100,8 @@ Passez par la méthode `customerUserId` pour définir le CUID. L'emplacement de 
 * Si `customerUserId` est appelé avant `start`, le CUID est associé à l'installation et aux événements in-app qui suivent
 * S'il est appelé après `start`, le CUID n'est associé qu'aux événements enregistrés après que le CUID a été défini.
 
+<div id="developer-instructions-1" />
+
 #### Instructions pour les développeurs
 
 Demandez à votre développeur de se référer à la rubrique [Définir l'ID utilisateur du client](https://dev.appsflyer.com/hc/docs/integrate-ios-sdk#setting-the-customer-user-id) dans le Dev Hub.
@@ -93,6 +109,8 @@ Demandez à votre développeur de se référer à la rubrique [Définir l'ID uti
 </Tab>
 
 <Tab title="iOS natif">
+
+<div id="developer-instructions-2" />
 
 #### Instructions pour les développeurs
 
@@ -102,12 +120,16 @@ Demandez à votre développeur de se référer à la rubrique [Définir l'ID uti
 
 <Tab title="UnityReact natif">
 
+<div id="developer-instructions-3" />
+
 #### Instructions pour les développeurs
 
 Référez votre développeur à la référence d'API [setCustomerUserId](https://dev.appsflyer.com/hc/docs/rn_api#setcustomeruserid) dans le Dev Hub.
 
 </Tab>
 </Tabs>
+
+<div id="cuid-and-privacy" />
 
 ## **CUID et confidentialité**
 
@@ -116,6 +138,8 @@ AppsFlyer respecte la vie privée de vos utilisateurs et [n'autorise donc ni la 
 Pour sécuriser la confidentialité de vos utilisateurs, il est interdit de concevoir le CUID en y incluant la moindre information qui identifie directement l'utilisateur. Il s'agit notamment des numéros de sécurité sociale ou d'identification nationale.
 
 En outre, si le CUID défini contient l'e-mail ou le numéro de téléphone d'un utilisateur, ces informations doivent toujours être cryptées lors de leur transfert vers AppsFlyer. Il est interdit d'envoyer à AppsFlyer des CUID non cryptés contenant des données personnelles.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

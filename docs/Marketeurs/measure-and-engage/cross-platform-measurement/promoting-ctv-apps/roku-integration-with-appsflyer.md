@@ -34,6 +34,8 @@ L'intégration de l'API Roku prend en charge :
 * Les appareils Roku Smart TV et CTV. L'intégration **ne prend pas** en charge les appareils mobiles, les tablettes ou les ordinateurs de bureau (desktop).
 * L’attribution CTV-to-CTV et enregistrement des événements. Cela sous-entend l’attribution et l’enregistrement des installations de l'application Roku et des événements qui se produisent sur l'appareil Roku d'un utilisateur.
 
+<div id="roku-attribution-flow" />
+
 ### Flux d'attribution Roku
 
 ![7435_CTV__3_.png](https://files.readme.io/51ab9ce816986134ed118ac7b8dd94336fff53d6a00daf5332eef2934c0048d8-4431541172241.png)

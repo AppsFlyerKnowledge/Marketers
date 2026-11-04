@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app suggérés pour votre app de prêts P2P .
 
+<div id="-p2p-lending" />
+
 ## <Image alt="InApp_Events_lending.png" src="https://files.readme.io/e3465ee913a65a215f1c224db20d4f1fd61fd0bf488b798073c94b4e8387d252-20659507679889.png" width="100px" /> Prêts P2P
 
 Le prêt P2P est une nouvelle façon pour les particuliers et les entreprises de prêter et d'emprunter de l'argent. Les événements typiques que nous vous conseillons d'enregistrer sont les activités des prêteurs et des emprunteurs individuels, les types de prêts proposés, et les taux d'acceptation et de rejet des prêts.
 
 Les données rassemblées via l'enregistrement d'évènements vous permettent de mettre en évidence les emprunteurs fiables et de leur offrir de meilleurs taux d'intérêt. De même, vous pouvez découvrir qui sont les prêteurs les plus actifs et leur proposer des frais réduits. De plus, une fois que vous savez quels types de prêts sont les plus populaires auprès de vos utilisateurs, vous pouvez lancer des campagnes marketing qui ciblent ces audiences.
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -40,9 +44,13 @@ Les données rassemblées via l'enregistrement d'évènements vous permettent de
 
 [![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur des prêts P2P. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -108,6 +116,8 @@ AppsFlyer.sendEvent("af_complete_registration", CompleteRegistration);
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Connexion (af_login)">
 
 **Objectif**
@@ -160,9 +170,13 @@ AppsFlyer.sendEvent("af_login", null);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une liste de structures d'événements qui comprennent des noms d'événements personnalisés et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="registration-submitted-registration_submitted" />
 
 <Accordion title="Enregistrement soumis (registration_submitted)">
 
@@ -231,6 +245,8 @@ AppsFlyer.sendEvent("registration_submitted", RegistrationSubmitted);
 
 </Accordion>
 
+<div id="fill-loan-form-fill_loan_form_form_name" />
+
 <Accordion title="Formulaire de prêt (fill_loan_form_&lt;FORM_NAME>)">
 
 **Objectif**
@@ -290,6 +306,8 @@ Peut être envoyé sans paramètre supplémentaire
 > </Tab>
 > </Tabs>
 >
+
+<div id="submit-loan-application-submit_loan_application" />
 
 <Accordion title="Soumettre une demande de prêt (submit_loan_application)">
 
@@ -369,6 +387,8 @@ AppsFlyer.sendEvent("submit_loan_application", SubmitLoanApplication);
 
 </Accordion>
 
+<div id="loan-form-loan_form" />
+
 <Accordion title="Formulaire de prêt (loan_form)">
 
 **Objectif**
@@ -443,6 +463,8 @@ AppsFlyer.sendEvent("loan_form", LoanForm);
 
 </Accordion>
 
+<div id="submit-credit-check-submit_credit_check" />
+
 <Accordion title="Soumettre une vérification de crédit (submit_credit_check)">
 
 **Objectif**
@@ -516,6 +538,8 @@ AppsFlyer.sendEvent("submit_credit_check", SubmitCreditCheck);
 </Tabs>
 
 </Accordion>
+
+<div id="loan-accepted-loan_accepted" />
 
 <Accordion title="Prêt accepté (loan_accepted)">
 
@@ -595,6 +619,8 @@ AppsFlyer.sendEvent("loan_accepted", LoanAccepted);
 
 </Accordion>
 
+<div id="loan-rejected-loan_rejected" />
+
 <Accordion title="Prêt rejeté (loan_rejected)">
 
 **Objectif**
@@ -664,6 +690,8 @@ AppsFlyer.sendEvent("loan_rejected", LoanRejected);
 </Tabs>
 
 </Accordion>
+
+<div id="payment-payment" />
 
 <Accordion title="Paiement (paiement)">
 
@@ -741,6 +769,8 @@ AppsFlyer.sendEvent("payment", Payment);
 
 </Accordion>
 
+<div id="payment-completed-payment_completed" />
+
 <Accordion title="Paiement effectué (payment_completed)">
 
 **Objectif**
@@ -806,6 +836,8 @@ AppsFlyer.sendEvent("payment_completed", PaymentCompleted);
 </Accordion>
 
 </Accordion>
+
+<div id="payment-received-payment_received" />
 
 <Accordion title="Paiement reçu (payment_received)">
 

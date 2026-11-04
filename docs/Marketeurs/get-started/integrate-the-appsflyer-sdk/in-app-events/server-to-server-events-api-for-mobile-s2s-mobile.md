@@ -31,6 +31,8 @@ x-zendesk:
 
 [![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
 
+<div id="server-to-server-events-api-for-mobile" />
+
 ## API pour mobile d'événements de serveur à serveur
 
 Pour les apps iOS, à partir d'iOS 14 vous devez envoyer le paramètre de système d'exploitation (OS).
@@ -43,6 +45,8 @@ AppsFlyer remplit les événements S2S en se basant sur :
 * Certaines AppsFlyer valeurs d'attribution d'installation AppsFlyer, comme l'heure ou la source du média.
 
 Pour envoyer des événements via l'API, dites à votre développeur de suivre les <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">instructions sur l'API pour les événements de serveur à serveur.</Anchor>
+
+<div id="populating-parameters" />
 
 ## Paramètres de remplissage
 
@@ -166,6 +170,8 @@ Les événements qui ont une valeur négative de revenus peuvent être envoyés.
 Lorsque vous remplissez `af_quantity`, vous pouvez avoir besoin de renseigner une valeur négative en fonction du fonctionnement de votre système. AppsFlyer n'utilise pas `af_quantity`.
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Dépannage
 

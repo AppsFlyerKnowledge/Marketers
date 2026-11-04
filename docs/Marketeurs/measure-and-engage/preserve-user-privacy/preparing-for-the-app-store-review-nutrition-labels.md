@@ -31,6 +31,8 @@ x-zendesk:
 
 **Un message de nos avocats :** *rien de ce qui est énoncé ici n'a valeur de conseil juridique. Les éléments ne sont fournis qu'à titre d'information. Vous devez travailler en étroite collaboration avec des conseillers juridiques ou assimilés pour déterminer avec précision comment les politiques d'Apple doivent s'appliquer à votre cas.*
 
+<div id="nutrition-labels-and-the-app-store-review" />
+
 ## Étiquettes nutritionnelles et examen de l'app store
 
 * Pour que les étiquettes de confidentialité soient générées, les développeurs d'app doivent répondre à un questionnaire au moment où ils soumettent leur application à App Store Connect. Il comprend les sections suivantes :
@@ -44,6 +46,8 @@ x-zendesk:
 * Selon les clauses des directives d'Apple, AppsFlyer n'effectue pas de *suivi.* Ceci étant dit, les développeurs d'app doivent répondre au questionnaire en fonction de leurs propres méthodes et intégrations de partenaire.
 * Si vous utilisez les données collectées à des fins de suivi, vous devez implémenter la boîte de dialogue de consentement ATT.
 * Ce qui suit suppose les configurations par défaut du logiciel AppsFlyer. Les développeurs sont tenus de s'assurer que leurs configurations et utilisations spécifiques sont conformes.
+
+<div id="data-types-collected" />
 
 #### Types de données collectées
 
@@ -64,6 +68,8 @@ x-zendesk:
 | **Données de diagnostic**<ul><li>Données sur les crashs</li><li>Données sur les performances</li><li>Autres données de diagnostic</li></ul> | <ul><li>Non</li><li>Oui</li><li>Non</li></ul> | L'heure de lancement et/ou les niveaux de batterie peuvent être transmis pour détecter les fraudes. |
 | **Autres données**<ul><li>Autres types de données</li><li>IDFV</li></ul> | Oui | <ul><li>Les informations techniques sur l'appareil (ex : système d'exploitation, type d'appareil, langue, taille d'écran, etc.) ou les informations sur le réseau (ex : adresse IP, agent utilisateur HTTP) sont transmises à AppsFlyer.</li><li>AppsFlyer applique un ID d'installation à chaque installation d'app : l'ID AF.</li><li>L'IDFV est collecté</li></ul> |
 
+<div id="data-use-purposes" />
+
 ### Les objectifs d'utilisation des données
 
 Apple dispose d'une liste d'objectifs dans laquelle les développeurs d'app doivent choisir, comme indiqué dans le tableau suivant. Vous devez cerner les motifs propres à chaque type de données en fonction de votre utilisation.
@@ -77,11 +83,15 @@ Apple dispose d'une liste d'objectifs dans laquelle les développeurs d'app doiv
 | Fonctionnalité de l'app | Oui |
 | Autres objectifs | À sélectionner si vous utilisez les données pour toute autre raison qui n'apparait pas dans la liste. |
 
+<div id="data-linked-to-an-identity" />
+
 ### Données liées à une identité
 
 Les types de données recueillis via AppsFlyer sont généralement liés à un identifiant, par exemple l'ID d'appareil (si disponible), ou les ID définis par le client lors de la configuration.  
 
 Les développeurs d'app doivent donc répondre **Oui** lorsqu'on leur demande si les données sont liées à une identité.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

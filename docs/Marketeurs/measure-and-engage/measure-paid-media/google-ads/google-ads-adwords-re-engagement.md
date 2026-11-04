@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** pour mesurer les campagnes de retargeting Google Ads.
 
+<div id="google-ads-retargeting-campaigns" />
+
 ## Campagnes de reciblage Google Ads
 
 AppsFlyer vous permet de mesurer les résultats des **campagnes Google Ads pour l'engagement**.  
@@ -33,6 +35,8 @@ Les campagnes de reciblage ciblent les utilisateurs ayant déjà installé votre
 * Les engagements de reciblage par les utilisateurs qui n'ont pas installé votre application sont appelés **Réinstallations** ou **Réattributions**.
 
 Pour plus d'informations, consultez la <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">documentation d'utilisation de Google Ads pour l'engagement</Anchor>.
+
+<div id="setting-up-google-ads-app-campaigns-for-engagement" />
 
 ## Configuration des campagnes d'apps Google Ads pour l'engagement
 
@@ -87,6 +91,8 @@ Il n'est pas nécessaire d'ajouter des paramètres supplémentaires au deep link
 
 </Accordion>
 
+<div id="dynamic-remarketing-and-shopping-campaigns" />
+
 ## Remarketing dynamique et campagnes de shopping
 
 Le remarketing dynamique pour les applications et les campagnes de shopping est pris en charge dans AppsFlyer. Pour AppsFlyer, il s'agit simplement de campagnes de réengagement.
@@ -94,6 +100,8 @@ Le remarketing dynamique pour les applications et les campagnes de shopping est 
 Pour en savoir plus sur le remarketing dynamique pour les applications, cliquez <Anchor target="_blank" href="https://support.google.com/adwords/answer/7538938">ici</Anchor>.  
  Pour en savoir plus sur les campagnes de shopping, cliquez <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2454022?hl=en">ici</Anchor>.  
  Pour en savoir plus sur Google Ads pour l'engagement, cliquez <Anchor target="_blank" href="https://support.google.com/google-ads/answer/9234180">ici</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

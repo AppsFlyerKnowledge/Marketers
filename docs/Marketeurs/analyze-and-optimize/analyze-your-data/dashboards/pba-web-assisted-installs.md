@@ -28,9 +28,13 @@ x-zendesk:
 
 En savoir plus sur les autres tableaux de bord PBA : <Anchor target="_blank" href="/marketers/fr/docs/pba-website-attribution-dashboard">Attribution Web</Anchor> | Chemins de conversion
 
+<div id="web-assisted-installs-analysis" />
+
 ## Analyse des installations web-assistées
 
 Les installations web-assistées mesurent l'impact des actions web marketing qui visent à inciter les utilisateurs à installer une app. Les annonceurs voient alors l'implication du web dans le contexte de l'événement d'installation, ils peuvent ainsi connaître la source média qui a poussé les internautes à installer l'application.
+
+<div id="web-assisted-installs-headline-metrics" />
 
 ### Métriques des installations web-assistées
 
@@ -46,6 +50,8 @@ Dans le cadre de l'analyse des installations web-assistées, tenez compte des sc
 | Installations organiques | L'app s'installe sans interaction avec une source média mobile. | <ul><li>Quelle est le pourcentage (s'il existe) des installations organiques qui sont motivées uniquement par le trafic Web ?</li><li>Quels sont les canaux média qui prédominent  ?</li><li>Quelle est la répartition entre les types de média : payants, propres et gagnés ?</li></ul> |
 | installations non organiques | Le parcours des utilisateurs commence sur le web. L'app est installée plus tard, après interaction avec une campagne mobile. | <ul><li>Quel part d'installations non organiques est influencée par le web ?</li><li>Quels sont les canaux ou types de média web qui influencent les installations non organiques  ?</li><li>Vos sources média mobile payantes se superposent-elles à vos sources média web  ?</li></ul> |
 
+<div id="web-assisted-installs-dashboard" />
+
 ## Tableau de bord des installations web-assistées
 
 **Pour accéder au tableau de bord des installations web-assistées :**
@@ -53,6 +59,8 @@ Dans le cadre de l'analyse des installations web-assistées, tenez compte des sc
 | Choix 1 | Choix 2 |
 | --- | --- |
 | <ol><li>**Mes apps** >**Voir les groupes de marques**</li><li>Cliquez sur Tableau de bord PBA.</li><li>Allez dans l'onglet **Installations web-assistées**</li></ol> | Accédez au menu de navigation > **Attribution basée sur les personnes**> onglet **Installations web-assistées** |
+
+<div id="website-assisted-installs-and-reinstalls" />
 
 <Accordion title="Installations et réinstallations web-assistées">
 
@@ -63,6 +71,8 @@ On considère que les installations ont été influencées par un site web si el
 Pour obtenir des détails sur la fraîcheur des données, consultez <Anchor target="_blank" href="/marketers/fr/docs/about-data-freshness-and-timezone-support#pba-daily-8">la PBA quotidienne</Anchor>.
 
 </Accordion>
+
+<div id="dashboard-features" />
 
 <Accordion title="Fonctionnalités du tableau de bord">
 

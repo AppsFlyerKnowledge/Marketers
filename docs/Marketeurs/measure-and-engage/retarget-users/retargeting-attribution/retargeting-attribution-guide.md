@@ -28,6 +28,8 @@ x-zendesk:
 ---
 > **En bref :** les campagnes de retargeting (remarketing) incitent les utilisateurs à ouvrir une application et à se réengager, elles poussent également ceux qui ont supprimé une app à la réinstaller à nouveau.
 
+<div id="retargeting-fundamentals" />
+
 ## Les bases du retargeting
 
 L'attribution de retargeting a lieu lorsqu'un utilisateur s'engage dans une campagne de retargeting en cliquant sur un [lien d'attribution de retargeting](/docs/retargeting-attribution-guide#retargeting-attribution-links) ou bien sur un <Anchor target="_blank" href="/marketers/fr/docs/create-a-onelink-template">deep link.</Anchor> Ce qui génère l'un des événements d'attribution suivants :
@@ -38,6 +40,8 @@ L'attribution de retargeting a lieu lorsqu'un utilisateur s'engage dans une camp
 ![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
 
 Avant de lancer une campagne de retargeting, consultez les règles de réengagement et les exemples pratiques des sections suivantes. Vous pourrez ensuite mettre en place le retargeting en suivant les es instructions du chapitre dédié au retargeting. Pour une meilleure compréhension, nous vous conseillons de prendre connaissance du <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model">modèle d'attribution</Anchor> AppsFlyer et des fenêtres d'attribution qui lui sont associées.
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
@@ -62,6 +66,8 @@ Le schéma suivant détaille l'ensemble des règles de réengagement. Il vous ai
 
 Les tableaux suivants contiennent des informations relatives aux fenêtres liées à l'attribution de retargeting.
 
+<div id="inclusion-windows" />
+
 #### Fenêtres d'inclusion
 
 | Type de fenêtre | Description |
@@ -70,6 +76,8 @@ Les tableaux suivants contiennent des informations relatives aux fenêtres liée
 | Rétrospective post-clic | Durée maximum entre le moment où l'utilisateur clique sur une publicité et celui où il ouvre une app.<br /><br />**Où est-elle configurée**: lien d'attribution<br /><br />**Durée** :<ul><li>Par défaut : 7 jours</li><li>Période : 1-23 heures / 1-30 jours</li></ul>**Spécificités SRN :** demandez au SRN quels sont les termes spécifiques à leur fenêtre rétrospective. |
 | RÉENGAGEMENT | Quelques éléments à prendre en compte au sujet des fenêtres de réengagement :<ul><li>La fenêtre démarre lorsque l'utilisateur ouvre l'app pour la première après son interaction avec la source média de retargeting.</li><li>À l'intérieur de la fenêtre, les événements in-app sont <Anchor target="_blank" href="/marketers/fr/docs/resolve-retargeting-double-attribution">doublement attribués</Anchor> aux sources média de retargeting et d'acquisition d'utilisateurs.</li><li>La durée de la fenêtre est déterminée par le paramètre de l'app ou par le SRN.</li><li>Si l'utilisateur s'engage dans une autre campagne de retargeting au cours de la fenêtre de réengagement (celle-ci n'étant pas bloquée par une fenêtre d'exclusion), alors la fenêtre de réengagement en cours se termine sur le champ et une nouvelle fenêtre de réengagement démarre.</li><li>Dans le cadre d'une réattribution : la  **fenêtre d'attribution**  est illimitée dans le temps (similaire aux installations). Notez cependant que la fenêtre prend fin dans le cas d'une nouvelle installation, d'une réinstallation, ou à cause d'une limitation de la rétention des données.</li></ul>**Où est-elle définie** : lien d'attribution<ul><li>Défaut : 30 jours</li><li>Période : 1-23 heures / 1-90 jours / valeur vie (lifetime).</li></ul>**Spécificités SRN**: configurable pour les SRN<br /><br />Si vous modifiez le paramètre de la fenêtre, les changements s'appliquent sur les réengagements à venir. Ils n'affectent pas les réengagements déjà existants. |
 
+<div id="exclusion-windows" />
+
 #### Fenêtres d'exclusion
 
 | Type de fenêtre | Description |
@@ -77,6 +85,8 @@ Les tableaux suivants contiennent des informations relatives aux fenêtres liée
 | Durée minimale entre les conversions de réengagement | N'enregistrez jamais un réengagement au cours de la fenêtre d'exclusion.<br /><br />**Durée minimale entre les conversions de réengagement**<ul><li>Lors du réengagement, une fenêtre pendant laquelle les événements in-app sont attribués à la fois aux campagnes de retargeting (primaires) et d'UA (non primaires) débute.</li><li>Cela permet de mesurer les performances des campagnes de retargeting.</li><li>Si un autre réseau ou une autre campagne génère un réengagement pendant cette fenêtre :<ul><li>[Par défaut], la fenêtre de réengagement existante est fermée, un autre réengagement est enregistré et les événements in-app suivants sont attribués au réengagement le plus récent.</li><li>Pour éviter que cela se produise, définissez un délai minimum entre les conversions de réengagement. Chaque nouvel engagement ne pourra ainsi être enregistré qu'une fois le temps minimum écoulé.</li></ul></li><li>Ce réglage n'a aucune incidence dans les cas où la durée de la fenêtre de réengagement est plus courte que la durée de ce réglage. Exemple : si les fenêtres de réengagement sont de 1 jour et que ce paramètre est de 4 jours, alors ce paramètre n'a aucun impact.</li><li>Ces paramètres n'affectent pas le délai entre l'installation et le réengagement.</li></ul>**Où la régler :** page des paramètres de l'app<br /><br />**Durée** :<ul><li>Par défaut : aucune</li><li>Période : 1-23 heures / 1-30 jours</li></ul> |
 | <Anchor target="_blank" href="/marketers/fr/docs/set-retargeting-inactivity-window">Période d'inactivité minimale</Anchor> | N'enregistre pas de réengagement ou de réattribution pendant la fenêtre d'exclusion.<br /><br />**Où définir :** la page des paramètres des partenaires intégrés, dans l'onglet Intégration.<br /><br />**Durée** :<ul><li>Par défaut : aucune</li><li>0-30 jours</li></ul>**Remarques sur les SRN** : Considérez que les SRN suivent généralement leurs propres règles en matière de période d'inactivité. Si votre réglage diffère de celui du SRN, cela peut entraîner des divergences. |
 | <Anchor target="_blank" href="/marketers/fr/docs/set-up-re-attribution-window">Réattribution</Anchor> | La fenêtre de réattribution influence les réattributions mais pas les réengagements.<br /><br />Les utilisateurs qui réinstallent au cours d'une fenêtre de réattribution après interaction avec une campagne de retargeting sont attribués aux sources média de retargeting. Lecture connexe : <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model#reinstalls">Les réinstallations</Anchor><br /><br />**Où la définir :** paramètres de l'app |
+
+<div id="example-flow-implementing-the-rules" />
 
 #### **Exemple d'implémentation des règles**
 
@@ -104,6 +114,8 @@ Liste des règles de réengagement pour l'attribution post clic et post vue :
 
 </Accordion>
 
+<div id="retargeting-operations" />
+
 ## Opérations de retargeting
 
 <div id="retargeting-settings" />
@@ -116,6 +128,8 @@ Les réglages suivants sont requis en fonction des différents cas.
 | --- | --- | --- |
 | RÉENGAGEMENT | <ol><li>Rendez-vous dans **Configuration** > **Paramètres de l'app**.</li><li>Vérifiez que l'option **attribution** de **réengagement** est bien activée.</li><li>Par SRN : allez dans **Configuration** > **Intégrations actives, puis** sélectionnez le SRN.</li><li>Activez **Attribution de réengagement.**</li></ol> | <ol><li>Rendez-vous dans **Configuration** > **Paramètres de l'app**.</li><li>Vérifiez que l'option **attribution** de **réengagement** est bien activée.</li><li>Par non-SRN : appliquer le paramètre de retargeting aux liens d'attribution tel que décrit dans cette section</li></ol> |
 | Réattribution | <ol><li>Allez dans **Configuration** > **Intégrations actives,** puis sélectionnez le SRN.</li><li>Activez l'**attribution de réinstallation.**</li></ol> | <ol><li>Aucun réglage particulier n'est requis.</li><li>Ajouter le paramètre de retargeting aux liens d'attribution tel que décrit dans cette section.</li></ol> |
+
+<div id="non-srn-settings" />
 
 #### **Paramètres non-SRN**
 
@@ -169,6 +183,8 @@ Paramètres du lien d'attribution de retargeting
 | Délai de la fenêtre rétrospective post vue de retargeting | <ul><li>La <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">fenêtre rétrospective post vue</Anchor> de retargeting fonctionne comme celles des campagnes d'acquisition utilisateur.</li><li>Elle définit la durée maximale qui peut s'écouler entre le moment où un utilisateur consulte une publicité et celui où il est attribué.</li><li>La valeur par défaut est de 1 jour.</li><li>La fenêtre rétrospective est définie avec</li></ul>`af_viewthrough_lookback={time}`<br /><br /><br /><br />**<span id="01ECF12NKTE8W4K72VATN9RM2X"></span>Exemple**<br />Pour fixer la fenêtre rétrospective post vue à 5 heures, ajoutez le code suivant au lien d'attribution de la campagne de retargeting : `&af_viewthrough_lookback=5h` | Non |
 | Fenêtre de réengagement | <ul><li>La **fenêtre de réengagement** peut être définie dans l'interface utilisateur du lien d'attribution. Cette action définit le paramètre **af\_reengagement\_window** du lien d'attribution. Le paramètre peut être ajouté manuellement.</li><li>La valeur par défaut est de 30 jours.</li><li>Les valeurs suivantes de la fenêtre de réengagement sont disponibles :</li><li>Heures : 1 à 23 heures</li><li>Jours : 1-90 jours</li><li>Valeur vie : dure jusqu'à ce que l'utilisateur désinstalle l'app ou procède à un autre réengagement, par exemple : af\_reengagement\_window=lifetime</li></ul>Par exemple, **af\_reengagement\_window=60d** signifie que les événements rapportés dans les 60 jours qui suivent le réengagement seront attribués à la source média de retargeting. | Non |
 
+<div id="retargeting-view-through-lookback-period" />
+
 #### Période rétrospective post vue de retargeting
 
 ```http
@@ -211,6 +227,8 @@ Interpréter les rapports de données brutes dans le contexte du retargeting
 | Champs contributeur | Non disponible pour les réengagements |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -257,6 +275,8 @@ Pour exécuter une campagne de retargeting, l'application doit répondre aux cri
 | **Dans quels cas l'heure de touch attribué est-elle identique à l'heure d'installation ?**<ul><li>Lorsque les utilisateurs de liens universels ou de liens d'apps Android emploient le deep linking, ils sont redirigés vers l'app sans transiter d'abord par AppsFlyer.</li><li>Lors du lancement d'une app lorsque le SDK signale un nouveau réengagement, AppsFlyer reproduit les données du clic en employant l'horodatage du lancement. L'heure d'engagement et l'heure de lancement sont ainsi identiques.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

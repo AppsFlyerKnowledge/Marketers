@@ -26,6 +26,8 @@ x-zendesk:
 
 ![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
 
+<div id="setup" />
+
 ## Configuration
 
 Il existe deux versions du Smart Script OneLink :
@@ -34,12 +36,16 @@ Il existe deux versions du Smart Script OneLink :
 
 <Anchor target="_blank" href="/marketers/fr/docs/legacy-onelink-smart-script-v1-setup">**Smart Script OneLink V1 (version héritée)**</Anchor>: Si vous avez déjà configuré Smart Script OneLink vous devez suivre les instructions propres à cette version pour configurer et modifier le script. **Remarque** : Vous n’êtes évidemment pas obligés de passer à la V2. En revanche, vous profiterez pleinement des <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">attributions post-vue</Anchor>  via Smart Script OneLink.
 
+<div id="set-up-onelink-smart-script" />
+
 ### Configurer Smart Script OneLink
 
 Pour configurer le Smart Script, vous pouvez :
 
 * Intégrer le script à votre site web ;
 * Utiliser Google Tag Manager.
+
+<div id="scope-of-work" />
 
 #### Mise en oeuvre
 
@@ -88,6 +94,8 @@ Pour configurer le Smart Script, vous pouvez :
     5. Communiquez les instructions au développeur web au sujet de la gestion de l’URL sortant généré. Par exemple, placez l’URL sortant sur un bouton de CTA sur votre site mobile ou affichez un QR code sur la version desktop de votre site. <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#use-google-tag-manager">Instructions pour les développeurs</Anchor>
 12. Les scripts qui ont été enregistrés se trouvent dans le [menu déroulant](/docs/set-up-smart-script-to-convert-web-visitors#how-to-edit-or-delete-a-script).
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > A chaque fois que le script est mis à jour, il doit être ré-implémenté.
@@ -105,6 +113,8 @@ Pour configurer le Smart Script, vous pouvez :
 2. Cliquez sur l'icône «Stylo» à côté du script que vous souhaitez modifier.
    1. Suivez les différentes étapes dans [Comment créer un Smart Script OneLink](/docs/set-up-smart-script-to-convert-web-visitors#configurer-smart-script-onelink)
 3. Cliquez sur l'icône Corbeille pour supprimer le Smart Script.
+
+<div id="important-1" />
 
 > 🚧 **Important !**
 >
@@ -142,6 +152,8 @@ Le Smart Script OneLink utilise des arguments pour générer un URL sortant en f
 
 Le Smart Script OneLink utilise des arguments pour générer un URL sortant en fonction des paramètres de l’URL entrant et des arguments définis dans le script.
 
+<div id="arguments-parameters-and-values-to-implement-the-smart-script" />
+
 #### Arguments (paramètres et valeurs) pour implémenter le Smart Script
 
 <table><thead><tr><th colspan="2">Argument</th><th>Remarques</th><th>Enregistrez vos réponses (pour votre développeur, ou pour vous)</th></tr></thead><tbody><tr><td colspan="2">oneLinkURL (obligatoire)</td><td><ul><li>Indiquez le domaine du template OneLink + l’ID du template. <strong>Remarque :</strong> Pas un URL de lien personnalisé OneLink !</li><li>Exemple : <strong>yourbrand.onelink.me/A1b2</strong> </li><li>Exemple de domaine de marque : <strong>click.yourbrand.com/A1b2</strong> </li></ul></td><td> </td></tr><tr><td rowspan="9"><p>afParameters</p><p>(obligatoire)</p><span><br/></span> </td><td><p>mediaSource</p><p>(obligatoire)</p></td><td><ul><li>Objet de configuration pour la source média.</li><li>Exemple :<br/><ul><li>Clés : ['incoming_mediasource'' 'utm_source']</li><li>Valeur par défaut : ['any_source']</li><li>Remplacer les valeurs : `{twitter : 'twitter_int', orig_src : 'new_src'}</li></ul></li></ul></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td><p>campaign</p></td><td><ul><li>Objet de configuration pour la campagne.</li><li>Exemple :<br/><ul><li>Clés : ['incoming_campaign', 'utm_campaign']</li><li>Valeur par défaut : ['any_campaign_name']</li><li>Remplacer les valeurs : {campaign_name : 'new_campaign_name'}</li></ul></li></ul></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td><p>channel</p></td><td><ul><li>Objet de configuration pour le canal.</li><li>Exemple :<br/><ul><li>Clés : ['incoming_channel', 'utm_channel']</li><li>Valeur par défaut : ['any_video']</li><li>Remplacer les valeurs : {video : 'new_video'}</li></ul></li></ul></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td><p>ad</p></td><td><ul><li>Objet de configuration pour la publicité.</li><li>Exemple :<br/><ul><li>Clés : ['incoming_ad', 'utm_ad']</li><li>Valeur par défaut : ['any_ad_name']</li><li>Remplacer les valeurs : {ad_name : 'new_ad_name'}</li></ul></li></ul></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td>adSet</td><td><ul><li>Objet de configuration pour l'adset.</li><li>Exemple :<br/><ul><li>Clés : ['incoming_adset', 'utm_adset']</li><li>Valeur par défaut : ['any_ad_name']</li><li>Remplacer les valeurs : {adset_name : 'new_adset_name'}</li></ul></li></ul></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td>deepLinkValue</td><td><ul><li>Objet de configuration pour <strong>deep_link_value</strong>.</li><li>Exemple :<br/><ul><li>Clés : ['product_id', 'page_name']</li><li>Valeur par défaut : 'new_offers_page'</li><li>Remplacer les valeurs : {twenty_percent_off : 'thirty_percent_off'}</li></ul></li></ul></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td>afSub1-5</td><td><p>Objet de configuration pour <strong>af_sub[1-5]</strong>.</p></td><td><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr><tr><td>googleClickIdKey</td><td><p>Indiquez comment appeler le paramètre qui transporte la <a href="https://support.google.com/google-ads/answer/9744275?hl=en" target="_blank">GCLID</a>.<br/><strong>Remarque</strong>  ! <span>Pour s'afficher dans les rapports de données brutes AppsFlyer, le paramètre doit être l'un de <strong>af_sub[1-5]</strong>.</span></p></td><td> </td></tr><tr><td> <span>Autres paramètres de requête (personnalisés)</span><span><br/></span> </td><td><ul><li>Répertoriez tous les autres paramètres que vous souhaitez inclure dans l’URL OneLink sortant pour l’attribution ou le deep linking, ainsi que leurs objets de configuration.</li><li>Le nom du paramètre personnalisé est inscrit par le développeur en tant que paramKey dans l’objet de configuration.<span></span> </li><li>Exemple : <ul><li>paramKey : 'deep_link_sub1'</li><li>Clés : ['page_id']</li><li>Valeur par défaut : 'page1'</li><li>Remplacer les valeurs : {page12 : 'new_page12'}`</li></ul></li></ul></td><td><p>Clé Param :</p><p>Clés :</p><p>Valeur par défaut :</p><p>Remplacer les valeurs :</p></td></tr></tbody></table>
@@ -154,11 +166,15 @@ Le Smart Script OneLink utilise des arguments pour générer un URL sortant en f
 
 Le tableau suivant décrit les arguments que les tech-savvy marketeurs ou les développeurs peuvent intégrer dans le Smart Script.
 
+<div id="advanced-arguments-parameters-and-values-to-implement-in-the-smart-script" />
+
 #### Arguments avancés (paramètres et valeurs) pour implémenter le Smart Script
 
 <table><thead><tr><th colspan="2">Argument</th><th>Remarques</th><th>Enregistrez vos réponses (pour votre développeur, ou pour vous)</th></tr></thead><tbody><tr><td colspan="2"> <span> </span><br/><span>referrerSkipList</span> </td><td><ul><li> <span>Liste des chaînes de caractères du référent HTTP pour un clic particulier (par exemple Twitter ou Facebook) qui, si elles sont trouvées, amènent le Smart Script à renvoyer un signal</span><code>null</code><span>. Cela peut être utile pour les SRN tels que les annonces X et Meta, pour lesquelles les clics sont déjà signalés.</span> </li><li><span>L'implémentation de cet argument entraîne la génération d'un URL OneLink dans le script.</span></li></ul></td><td><p><span> </span></p></td></tr><tr><td colspan="2"><span>urlSkipList</span></td><td><ul><li><span>Liste des chaînes dans l’URL pour clic particulier (par exemple af_r) qui, si elles sont trouvées, amènent le Smart Script à renvoyer un signal «<code>null</code>». Cela peut être utile si vous utilisez un lien d’attribution AppsFlyer avec af_r pour rediriger les utilisateurs vers votre site web mobile, et que vous ne souhaitez pas que les données du clic d’origine soient perdues. </span></li><li><span>L'implémentation de cet argument entraîne la génération d'un URL OneLink dans le script.</span></li></ul></td><td><p><span> </span></p></td></tr></tbody></table>
 
 </Accordion>
+
+<div id="use-cases" />
 
 ## Cas d’utilisation
 
@@ -206,6 +222,8 @@ Lorsque le tag automatique est activé, l'URL contient le paramètre *GCLID*.
 1. Obtenez les données GCLID du param **af\_sub[1-5]** via le CSV ou l'API Push en temps réel pour chaque installation.
 2. Téléchargez les données GCLID vers Google <Anchor target="_blank" href="https://support.google.com/adwords/answer/7014069">manuellement</Anchor> ou via l'<Anchor target="_blank" href="https://developers.google.com/google-ads/api/docs/start">API Google Ads</Anchor>.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Cette solution GCLID n’est pas officiellement prise en compte ou recommandée par Google. Si jamais Google déprécie le paramètre GCLID, nous modifierons le script pour prendre en compte les modifications. Suivez cet article, en cliquant sur le bouton **Suivre** dans l’en-tête, pour être informé lors d'une mise à jour de l’article ou du script.
@@ -242,6 +260,8 @@ Pour ces SRN, la configuration du script est la même que pour les liens provena
 
 **Résultat :** Pour ces SRN / sources média, les valeurs de la source média et les paramètres de campagne du lien entrant sont utilisés pour renseigner les valeurs des paramètres de **media\_source** et de **campagne** dans le lien sortant.
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > **URL entrant** : https://hotel.me/incoming_mediasource=twitter&incoming_campaign=big_social
@@ -259,6 +279,8 @@ Les liens d'attribution AppsFlyer peuvent être utilisés lorsque la source méd
 **Action** Utilisez l’argument **urlSkipList** pour répertorier le paramètre **af\_r**.
 
 **Résultat**: Lorsque le Smart Script trouve le paramètre **af\_r** dans le lien entrant, il ne produit pas d'URL sortant et le développeur doit décider quel lien placer en tant qu'URL sortant, puis l'intégrer.
+
+<div id="example-1" />
 
 > 📄 **Exemple**
 >
@@ -322,6 +344,8 @@ Smart Script affiche un QR code sur votre page web, au lieu d'un bouton contenan
 
 **Résultat :** Le script affiche un QR code au lieu d'un bouton avec un URL derrière.
 
+<div id="example-2" />
+
 > 📄 **Exemple**
 >
 > **URL entrant** :
@@ -355,11 +379,15 @@ Le Smart Script OneLink peut être utilisé pour compter les impressions sur vot
 2. Demandez à votre développeur <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/onelink-smart-script-v2web-to-app-url-generator#fire-an-impression">d’appeler la fonction d’impression</Anchor> dans Smart Script.
 3. Vérifiez que <Anchor target="_blank" href="/marketers/fr/docs/measure-view-through-engagements">l'attribution view-through soit bien activée</Anchor>.
 
+<div id="important-2" />
+
 > 🚧 **Important !**
 >
 > À compter du 1er février 2023 (version stable de Chrome 110), les modifications de Google pour <Anchor target="_blank" href="https://developer.chrome.com/en/docs/privacy-sandbox/user-agent/">réduire les données relatives aux User-Agent</Anchor> seront effectives. Pour obtenir des <Anchor target="_blank" href="https://www.appsflyer.com/glossary/view-through-attribution/">attributions view-thorough</Anchor> via Smart Script OneLink pleinement fonctionnelles, vous devez utiliser la version 2.3 (et au-delà) du Smart Script OneLink.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -367,13 +395,19 @@ Le Smart Script OneLink peut être utilisé pour compter les impressions sur vot
 
 <Accordion title="FAQ">
 
+<div id="will-the-incoming-url-for-onelink-link-generation-work-if-the-user-browses-to-a-different-page-on-the-website" />
+
 #### **Est-ce que l’URL entrant, qui sert à générer les liens OneLink, peut-il fonctionner** **si l'utilisateur navigue vers une autre page du site web ?**
 
 Oui. Oui. Les paramètres de l'URL entrant sont stockés pour la durée de la session de navigation et ils sont appliqués aux paramètres sortants du lien OneLink généré par Smart Script. Pour plus d'informations sur l'implémentation, consultez notre <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_smart_script_v2#preserve-incoming-url-parameters-across-pages">dev hub.</Anchor>
 
+<div id="why-do-i-get-an-error-when-implementing-smart-script-via-google-tag-manager" />
+
 #### **Pourquoi j'obtiens une erreur lorsque j'implémente Smart Script via Google Tag Manager  ?**
 
 Une erreur « JavaScript too long » s'affiche parfois lorsque vous générez le Smart Script dans AppsFlyer et que vous essayez de l'insérer dans Google Tag Manager (GTM). Si cela se produit, supprimez la balise GTM et créez-en une nouvelle.
+
+<div id="can-i-add-parameters-that-are-not-listed" />
 
 #### **Est-il possible d'ajouter un paramètre qui ne figure pas dans la liste ?**
 
@@ -387,9 +421,13 @@ Exemple : pour ajouter is\_retargeting comme paramètre, le paramètre Custom se
 
 ![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
 
+<div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
+
 #### **L'adset et les autres paramètres ne s'affichent pas dans la liste déroulante**
 
 Nous vous recommandons de désactiver les bloqueurs de publicité installés sur votre navigateur pour créer ou ajouter de nouveaux paramètres. Les bloqueurs de publicité suppriment parfois les options qui contiennent le mot « publicité » ( ad).
+
+<div id="what-browsers-does-smart-script-work-on" />
 
 #### **Quels navigateurs sont compatibles avec Smart Script ?**
 

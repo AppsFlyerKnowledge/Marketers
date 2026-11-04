@@ -26,9 +26,13 @@ x-zendesk:
 
 ![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
 
+<div id="about-partner-integrations" />
+
 ## À propos des intégrations de partenaires
 
 L'intégration d'un partenaire permet d'importer en continu dans l'Optimisation des créations toutes les créations issues des campagnes menées par ce même partenaire.
+
+<div id="data-availability" />
 
 ### Disponibilité des données
 
@@ -41,6 +45,8 @@ Une fois l'intégration d'un partenaire ajoutée :
 Les tableaux de bord de l'optimisation des créations affichent l'ensemble des données décrites ci-dessus.
 
 **Remarque :** Pour voir les données de coût AppsFlyer (comme le ROAS), l'<Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview">abonnement à ROI360</Anchor> est obligatoire.
+
+<div id="media-partner-integrations" />
 
 ## Intégration des partenaires média
 
@@ -404,6 +410,8 @@ Vous devez disposer des autorisations du compte publicitaire pour les apps que v
 
 Une fois que les conditions ci-dessus sont remplies, vous pouvez [ajouter une intégration Unity au tableau de bord de l'optimisation créative.](/docs/creative-optimization-partner-integrations#pour-ajouter-une-intégration-unity-au-tableau-de-bord-des-créations-)
 
+<div id="instructions-for-retrieving-the-credentials" />
+
 #### Instructions pour récupérer les identifiants
 
 **Pour récupérer l'ID de clé et la clé secrète :**
@@ -439,6 +447,8 @@ L'ID de la clé et la clé secrète s'affichent.
 
 2. Copiez l'**ID principal de l'organisation**.
 
+<div id="to-select-a-service-account-organization-role" />
+
 #### **Pour sélectionner un rôle de compte de service (organisation) :**
 
 1. Dans le tableau de bord Unity, cliquez sur **Administration**.
@@ -462,6 +472,8 @@ L'ID de la clé et la clé secrète s'affichent.
 5. Cliquez sur **Enregistrer**.
 
 **Remarque :** Si vous n'avez pas accès à ces rôles, veuillez contacter votre CSM Unity ou envoyez un e-mail à [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) pour demander les autorisations nécessaires.
+
+<div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Pour ajouter une intégration Unity au tableau de bord des créations :**
 
@@ -507,6 +519,8 @@ Pour plus d'informations, consultez la <Anchor target="_blank" href="https://sup
 6. Cliquez sur ***Enregistrer***.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Intégrations des agences
 

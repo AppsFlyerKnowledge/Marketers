@@ -28,6 +28,8 @@ x-zendesk:
 
 ![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
 
+<div id="cohort-and-retention-dashboard" />
+
 ## Tableau de bord des cohortes
 
 Pour utiliser la cohorte, sélectionnez des utilisateurs dans une ou plusieurs apps et segmentez-les par date de conversion. Les métriques de cohorte telles que le revenu, le ROI ou les taux de conversion d'événements sont disponibles. La cohorte peut être répartie en dimensions de type campagne ou source média afin de comparer certains éléments. Vous faites ainsi le jour sur des modèles ou changements de performances durant les cycles de vie d'utilisateurs ou de campagnes. Voir <Anchor target="_blank" href="https://www.appsflyer.com/blog/cohort-report-mobile-marketing-kpis/?utm_campaign=Blog%20Subscription%2003-2019&utm_source=hs_email&utm_medium=email&utm_content=76370689&_hsenc=p2ANqtz-8SX49xuEw2WX_Vrlh11_zxlDFvlfMpBzSQm1I-nFhc0WbZDf0ACC-VEi4qmKhesHCsUNdhU50Oinl-urwnGAOZMwwHSTp6UgdChCi7ARayJFUFTus&_hsmi=76370689">Cas d'utilisation des cohortes</Anchor>.
@@ -85,6 +87,8 @@ Dans cet exemple, les mêmes données brutes sont utilisées pour générer les 
 <table><thead><tr><th> </th><th> </th><th colspan="6">Fonctions</th></tr><tr><th rowspan="2">Toujours / Optionnel </th><th rowspan="2"><p>Métrique</p></th><th>Décompte</th><th>cvr (taux de conversion)</th><th>Taux</th><th>Total</th><th>Utilisateurs uniques</th><th>eCPA</th></tr><tr><th>Nombre</th><th>Pourcentage</th><th>Pourcentage</th><th>Nombre</th><th>Nombre</th><th>Nombre</th></tr></thead><tbody><tr><td>Toujours</td><td>Utilisateurs (4)</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Toujours</td><td>Coût (3)</td><td><span>-</span></td><td><span>-</span></td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Toujours</td><td>eCPI moyen</td><td><span>-</span></td><td><span>-</span></td><td><span>✓</span></td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>OPTIONNELLE</td><td><code>"event_name"</code></td><td> </td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td><span>✓</span></td><td> <span>✓</span><span><span>(5)</span></span> </td></tr><tr><td>OPTIONNELLE</td><td>Revenu</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>OPTIONNELLE</td><td>ROAS (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>OPTIONNELLE</td><td>ROI (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>OPTIONNELLE</td><td>Sessions (2)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td> <span>✓</span><span>(1)</span> </td><td><span><span>-</span></span></td></tr><tr><td>OPTIONNELLE</td><td>Désinstallations (3)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr></tbody><tfoot><tr><td colspan="8"><p>(1) Les sessions uniques reviennent lorsque aggregation_type=on_day<br/>(2) Les sessions de retargeting (réengagement et réattribution) sont disponibles pour les sessions qui ont lieu à compter du 13 juillet 2020. Ce qui signifie que les sessions qui se sont produites avant le 12 juillet 2020 ne s'affichent pas.<br/>(3) Non disponible dans les cas suivants :</p><ul><li>Le type de vue est unifié</li><li>La granularité se compte en heures. Calcul quotidien d'après l'heure UTC.</li></ul><p>(4) La métrique <em>Utilisateurs</em> comptabilise le nombre d'attributions (installations, réengagements, réattributions) survenues durant la période sélectionnée.   </p><p>(5) Coût effectif par action (eCPA) : Coût / Nombre cumulé d'utilisateurs uniques effectuant l'événement.</p></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="using-cohort" />
 
 ## Utiliser la cohorte
 
@@ -253,6 +257,8 @@ Pour un certain jour dans la plage de données de conversion, si le nombre de jo
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations
 
 <div id="cohort-for-agencies" />
@@ -272,6 +278,8 @@ Pour un certain jour dans la plage de données de conversion, si le nombre de jo
 
 <Accordion title="CAS D'UTILISATION">
 
+<div id="revenue-sum-by-geo" />
+
 #### Total des revenus par pays
 
 **Tableau : revenu par utilisateur cumulé**
@@ -281,6 +289,8 @@ Pour un certain jour dans la plage de données de conversion, si le nombre de jo
 **Tableau : revenu par jour**
 
 [![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
+
+<div id="in-app-event-conversion" />
 
 #### Conversion d'évènement in-app
 

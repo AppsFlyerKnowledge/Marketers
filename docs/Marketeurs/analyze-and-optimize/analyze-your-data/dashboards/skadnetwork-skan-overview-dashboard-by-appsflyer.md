@@ -24,6 +24,8 @@ x-zendesk:
 
 ![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
 
+<div id="dashboard-principles" />
+
 ## Les bases du tableau de bord
 
 Le tableau de bord contient les données de performance des campagnes SKAN, il se base sur les principes suivants :
@@ -40,6 +42,8 @@ Le tableau de bord contient les données de performance des campagnes SKAN, il s
   * Les postbacks reçus un jour donné sont traités en fin de journée UTC. Les données sont disponibles à 08:00 UTC le jour suivant. Cela signifie que des postbacks reçus le lundi seront disponibles dans le tableau de bord le mardi matin.
   * Cf <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide#timing-from-app-install-until-dashboard-and-reports-update">Horaires des mises à jour du tableau de bord.</Anchor>
 
+<div id="skan-dashboard-view-options" />
+
 ## Options d’affichage du tableau de bord SKAN
 
 Affichez les données soir selon la [date d’installation soit la date d’arrivée du postback](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#filter-options).
@@ -47,6 +51,8 @@ Affichez les données soir selon la [date d’installation soit la date d’arri
 **Pour sélectionner le type d’affichage de la date**, dans AppsFlyer, allez dans le menu latéral, sélectionnez **Analyser** > **SKAN général.** Dans la barre des filtres, sélectionnez l’une des options de date **Afficher par**.
 
 Des filtres et des options d’affichage supplémentaires sont abordés dans les sections qui suivent.
+
+<div id="dashboard-use" />
 
 ## Utilisation du tableau de bord
 
@@ -284,6 +290,8 @@ Postulat :
 * **SDK :** SDK AppsFlyer intégré à l’application.
 * **Règles**: <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model">Modèle d'attribution AppsFlyer</Anchor>
 
+<div id="attribution-framework-differences" />
+
 #### Différences dans le cadre d’attribution
 
 | Concept | SKAN | AppsFlyer |
@@ -297,6 +305,8 @@ Postulat :
 | Installations rapportées par | <ul><li>**SKAN** : limité aux installations non organiques et aux re-téléchargements non organiques.</li><li>**SDK** : toutes les installations sont rapportées. Seules les premières installations sont prises en compte dans les mesures. C’est-à-dire que les réattributions ne sont pas prises en compte.</li></ul> | Le SDK rapporte toutes les installations classées dans les Règles *premières installations* et *réinstallations de retargeting* (réattributions). |
 | Niveau de granularité publicitaire | Campagne, adset, ID d’adset, publicité et ID publicitaire. | Hiérarchie complète : Campagne, ID de campagne, adset, paramètres complémentaires de type canal ou partenaire. |
 | Re-téléchargements et réinstallations | Les re-téléchargements concernent les actions d’un utilisateur donné de l’ID Apple. Ils ne sont pas liés aux réattributions. | Le retargeting (ré-engagements, ré-attributions) apparaît reflété dans le tableau de bord de retargeting. Il n’est pas lié aux re-téléchargements. |
+
+<div id="metric-differences" />
 
 #### Différences entre les métriques
 
@@ -337,6 +347,8 @@ Postulat :
 | Fuseau horaire | Pour les données rapportées par SKAN, les installations et les événements s'affichent en utilisant UTC, à l'exception des données Meta et Google SKAN, pour lesquelles le fuseau horaire est celui que vous avez configuré dans chacun de vos comptes Meta et Google. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

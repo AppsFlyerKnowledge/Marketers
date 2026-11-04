@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** mettre à jour l’intégration existante du SDK/Wrapper iOS AppsFlyer vers le SDK iOS V6.
 
+<div id="about-ios-sdk-v6" />
+
 ## À propos du SDK iOS V6
 
 Référence au SDK V6 dans cet article.
@@ -38,6 +40,8 @@ Le SDK iOS V6 AppsFlyer :
 * Modifie grandement le fonctionnement des API par rapport aux versions précédentes.
 
 Pour obtenir plus d’infos sur le SDK V6 et savoir comment l'intégrer à une nouvelle app ne disposant pas de la version antérieure du SDK AppsFlyer, consultez notre <Anchor target="_blank" href="/marketers/fr/docs/sdk-integration-overview">guide d'intégration du SDK iOS pour les marketeurs.</Anchor>
+
+<div id="update-to-ios-sdk-v6" />
 
 ## Mise à jour vers le SDK iOS V6
 
@@ -326,6 +330,8 @@ Les informations suivantes sont nécessaires si l'intégration des notifications
 Suivez les <Anchor target="_blank" href="/marketers/fr/docs/measuring-push-notification-re-engagement-campaigns">instructions concernant les notifications push</Anchor> pour que les notifications push soient bien intégrées via la méthode handle Push NotificationData.
 
 </Accordion>
+
+<div id="plugins" />
 
 ## Les plugins
 

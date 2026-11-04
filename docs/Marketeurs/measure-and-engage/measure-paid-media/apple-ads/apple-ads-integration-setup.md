@@ -39,6 +39,8 @@ C'est la pertinence de l'application qui définit si votre publicité s'afficher
 > * ASA fournit des données via API pour [l'attribution mobile basée sur les clics](/docs/apple-ads-integration-setup#asa-attribution), <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">le retargeting d'utilisateur</Anchor> et les <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview">coûts</Anchor> (sous couvert d'un abonnement ROI360)
 > * Alors qu'ASA affiche des mesures de fréquentation dans son tableau de bord, l'intégration avec AppsFlyer reste basée sur les clics, ASA ne réagissant qu'aux clics publicitaires des utilisateurs pour l'attribution.
 
+<div id="set-up-apple-ads-integration" />
+
 ## Configurer l'intégration ASA
 
 <div id="get-started" />
@@ -101,6 +103,8 @@ L'intégration des coûts fournit les données agrégées suivantes :
 
 </Accordion>
 
+<div id="set-up-agencies-and-apple-ads-marketing-partners" />
+
 ## Configurer les agences et les partenaires marketing ASA
 
 <div id="principles" />
@@ -113,6 +117,8 @@ Les annonceurs et les agences peuvent choisir de collaborer avec des partenaires
 
 Le tableau ci-dessous liste les différences qui existent entre les agences et les partenaires marketing.
 
+<div id="agency-vs-marketing-partner" />
+
 #### Différence entre agence et partenaire marketing
 
 |  | Agence | Partenaire marketing |
@@ -120,9 +126,13 @@ Le tableau ci-dessous liste les différences qui existent entre les agences et l
 | AppsFlyer envoie des postbacks | Non | Oui |
 | technologie | Lancement de campagnes en votre nom | Proposent une solution technologique à valeur ajoutée pour optimiser les campagnes |
 
+<div id="configuring-agencies-and-marketing-partners" />
+
 #### Configurer les agences et les partenaires marketing
 
 La liste ci-dessous vous permet de vérifier si toutes les étapes du processus de configuration ont bien été remplies. Des instructions précises par type de partenaire sont disponibles dans les sections suivantes.
+
+<div id="configuration-steps-checklist" />
 
 #### Liste pour vérifier les étapes de la configuration
 
@@ -184,6 +194,8 @@ Voir la documentation de l'ASA sur la <Anchor target="_blank" href="https://sear
 * N'utilisez pas de caractère spécial ni d'espace dans le nom de groupe.
 * Lorsque vous vous connectez via Apple, l'autorisation des groupes de campagne de l'ASA n'est pas permanente. Cela signifie que lorsque vous intégrez une nouvelle application, l'autorisation pour les groupes de campagne choisie pour les applications précédentes est révoquée, à moins qu'elle ne soit à nouveau choisie. Vous devrez sélectionner **Accès limité** et chacun des groupes de campagne concernés (liés aux applications que vous souhaitez connecter pour l'annonceur).
 
+<div id="advertiser-actions" />
+
 #### **Actions de l'annonceur**
 
 **Conditions préalables** :
@@ -198,6 +210,8 @@ Voir la documentation de l'ASA sur la <Anchor target="_blank" href="https://sear
 4. [Optionnel] Si vous souhaitez attribuer les utilisateurs qui réinstallent l'app au cours de la fenêtre de réattribution, activez l'option **Attribution de réinstallation.**
 5. Cliquez sur **Enregistrer**.
 
+<div id="agency-actions" />
+
 #### **Actions de l'agence**
 
 1. **Dans votre tableau de bord Apple Search Ads** : Obtenez l'identifiant de votre groupe de campagne. La capture d'écran suivante vous indique comment localiser l'ID. N'obtenir que les chiffres. ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
@@ -210,6 +224,8 @@ Voir la documentation de l'ASA sur la <Anchor target="_blank" href="https://sear
 > 📘 **Remarque**
 >
 > Lorsqu'une agence travaille avec un partenaire marketing Apple Search Ads, l'agence doit définir le même nom de groupe de campagne sur la page de configuration d'Apple Search Ads et sur la page de configuration du partenaire marketing.
+
+<div id="cost-clicks-and-impressions-data" />
 
 ### Données sur le coût, les clics et les impressions
 
@@ -238,6 +254,8 @@ Si vous activez l'API de coût, AppsFlyer reçoit les données de coûts, de cli
 4. Cliquez sur **Enregistrer l'intégration**.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -268,6 +286,8 @@ AppsFlyer et Apple Search Ads utilisent une logique d'attribution différente, d
 * Les éléments suivants ne sont pas rapportés : Impressions, écoutes ou coût des géos ayant moins de 100 impressions pour une campagne donnée.
 * Lors du regroupement par géo dans AppsFlyer, les zones avec des données non disponibles ne sont pas affichées et le total des données non disponibles apparaît sous N/A.
 
+<div id="retargeting-related-discrepancies" />
+
 ### Écarts concernant le retargeting
 
 Le mécanisme d'attribution de retargeting d'AppsFlyer permet aux annonceurs de mesurer et analyser les campagnes de retargeting, ainsi que les campagnes d'acquisition d'utilisateur.
@@ -281,6 +301,8 @@ Les chiffres suivant illustrent les écarts qui peuvent survenir en cas de campa
 **Retargeting désactivé**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="additional-reasons-for-discrepancies" />
 
 ### Motifs supplémentaires d'écart
 

@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **At a glance:** Learn about agency data to understand its impact on how your data is presented in AppsFlyer.
 
+<div id="about-agency-data" />
+
 ## About agency data
 
 When working with agencies, you can view the traffic they generated in AppsFlyer dashboards and reports. This means their media sources are disclosed.
+
+<div id="viewing-agency-traffic-in-reports" />
 
 ### Viewing agency traffic in reports
 
@@ -44,6 +48,8 @@ When working with agencies, you can view the traffic they generated in AppsFlyer
 1. In AppsFlyer, from the side menu, select **Report** > **Aggregated Data Export**.
 2. Download a report that includes media source attribution.
 
+<div id="viewing-agency-traffic-in-the-overview-dashboard" />
+
 ### Viewing agency traffic in the Overview dashboard
 
 **To see traffic from agencies:**
@@ -54,6 +60,8 @@ When working with agencies, you can view the traffic they generated in AppsFlyer
    The dashboard displays media sources used by agencies.
 
 **Note**: Using the **Group By** filter, you can group the data by agency too. Selecting multiple agencies in the agency filter and grouping by agency, you can compare in your dashboard the performance of the different agencies with whom you are running campaigns.
+
+<div id="viewing-agency-traffic-in-the-retention-dashboard" />
 
 ### Viewing agency traffic in the Retention dashboard
 

@@ -23,13 +23,19 @@ x-zendesk:
 ---
 > **En bref** : mesurez le nombre de désinstallations de votre app et déterminez quelles sont les sources (sources média, campagnes, publicités ou géo) qui produisent des utilisateurs de qualité.
 
+<div id="overview" />
+
 ## Introduction
 
 Pour comprendre la valeur des utilisateurs de votre app, vous devez analyser à la fois le nombre d'installations et les taux de désinstallations. La mesure des désinstallations peut vous permettre d'évaluer les performances de votre app, et de comprendre dans quel cas et pour quel motif les utilisateurs abandonnent votre application.
 
+<div id="how-does-it-work" />
+
 ### Comment fonctionne l'API de test ?
 
 Une fois par jour, AppsFlyer envoie des notifications push silencieuses pour vérifier si une app est toujours installée sur un appareil donné. En l'absence de réponse, une désinstallation est enregistrée et celle-ci est attribuée à la source média qui a drainé initialement l'utilisateur.
+
+<div id="how-to-use-uninstall-data" />
 
 ## Comment utiliser les données de désinstallations
 
@@ -96,6 +102,8 @@ Les méthodes pour exclure les utilisateurs sont les suivantes :
 
 </Accordion>
 
+<div id="setting-up-uninstall-measurement" />
+
 ## Configurer la mesure des désinstallations
 
 Pour mettre en place la mesure des désinstallations, une collaboration entre le marketeur et le développeur est indispensable. La marche à suivre dépend du système d’exploitation de votre application.
@@ -128,9 +136,13 @@ Le marketeur et le développeur doivent suivre les étapes suivantes :
 </Tab>
 </Tabs>
 
+<div id="implementation-procedures" />
+
 ## Marche à suivre
 
 Pour permettre l'implémentation, votre développeur mobile doit intégrer un mécanisme qui répond aux notifications push envoyées sur votre application. Les étapes de la mise en œuvre varient en fonction du système d’exploitation.
+
+<div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Connecter la messagerie cloud Firebase à AppsFlyer (Android)
 
@@ -196,6 +208,8 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 
 </Accordion>
 
+<div id="configure-uninstall-measurement-in-appsflyer" />
+
 ### Configurer la mesure des désinstallations dans AppsFlyer
 
 <Tabs>
@@ -235,6 +249,8 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 
 </Tab>
 </Tabs>
+
+<div id="testing-uninstall-measurement" />
 
 ## Tester la mesure des désinstallations
 
@@ -277,6 +293,8 @@ Gardez à l’esprit les éléments suivants lorsque vous testez une application
 </Tab>
 </Tabs>
 
+<div id="mapping-the-uninstall-event" />
+
 ## Mappage de l'évènement de désinstallation
 
 ![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
@@ -287,6 +305,8 @@ Remarques :
 
 * AppsFlyer ne peut envoyer le postback que si l'événement a réellement lieu, et s'il est enregistré par AppsFlyer.
 * Si aucune désinstallation ne figure sur la page de présentation du tableau de bord, ou dans le rapport de données brutes, cela signifie qu'aucun postback de désinstallation n'a été transmis au partenaire, même si l'événement **af\_uninstall** a été mappé.
+
+<div id="limitations" />
 
 #### Limites
 
@@ -307,6 +327,8 @@ Règles GCM
 </Tab>
 </Tabs>
 
+<div id="turning-off-uninstall-measurement" />
+
 ## Désactiver la mesure des désinstallations
 
 <Tabs>
@@ -324,6 +346,8 @@ Si un certificat P12 est fourni et validé, la mesure de désinstallation de l'a
 </Tabs>
 
 **Important** ! Pour qu'une désinstallation soit signalée, l'option **Activer la mesure des désinstallations** doit être activée au moment de l'installation de l'app. Les installations qui se produisent lorsque l'option **Activer la mesure des désinstallations** est désactivée ne seront pas transmises.
+
+<div id="to-turn-off-uninstall-measurement" />
 
 #### **Pour désactiver la mesure des désinstallations** :
 

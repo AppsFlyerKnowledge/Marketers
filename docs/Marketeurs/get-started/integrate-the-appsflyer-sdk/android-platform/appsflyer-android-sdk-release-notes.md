@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** notes de version du SDK Android à partir de la V4.x.
 
+<div id="android-sdk-releases" />
+
 ## SDK Android V6
 
 <Anchor target="_blank" href="/marketers/fr/docs/sdk-integration-overview">Guide d'intégration du SDK Android pour les marketeurs</Anchor>
@@ -260,6 +262,8 @@ GCD renvoie la même structure, quelles que soient les données. Si un paramètr
 
 </Accordion>
 
+<div id="unsupported-sdk-versions" />
+
 <div id="deprecated-versions" />
 
 <Accordion title="Versions obsolètes">
@@ -400,6 +404,8 @@ AppsFlyer utilise des checksums md5 :
 | 4.7.0 | b060ad140ffd0c8f2b3febb26122d173 |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

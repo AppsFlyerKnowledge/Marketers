@@ -33,6 +33,8 @@ x-zendesk:
 
 [![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Le SDK web V1 AppsFlyer Smart Banner a été supprimé le 8 novembre 2023. Pour afficher les bannières intelligentes sur votre site web, vous devez passer à la version 2. <Anchor target="_blank" href="/marketers/fr/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">En savoir plus</Anchor>
@@ -89,6 +91,8 @@ Environ 20 minutes.
 
 ---
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > Mark est un marketeur travaillant pour le service de livraison de nourriture « Feed Me ».
@@ -105,6 +109,8 @@ Environ 20 minutes.
 >
 > Utilisez la bannière intelligente AppsFlyer ou les bannières Smart App pour iOS Safari, mais pas les deux. Si vous utilisez les deux, vous pouvez générer des problèmes d'affichage sur votre site web mobile et des divergences d'attribution.
 
+<div id="setup" />
+
 ## Configuration
 
 Suivez ces étapes pour définir une bannière intelligente qui :
@@ -115,6 +121,8 @@ Suivez ces étapes pour définir une bannière intelligente qui :
 <div id="1-website-workplace-setup" />
 
 <Accordion title="1. Configuration de l'espace de travail du site web">
+
+<div id="prepare-your-mobile-site-to-display-smart-banners-for-the-first-time" />
 
 #### Préparez votre site mobile à afficher des bannières intelligentes pour la première fois
 
@@ -128,6 +136,8 @@ Suivez ces étapes pour définir une bannière intelligente qui :
    * Pour ajouter le code via d'autres plateformes, ou pour apporter des modifications au code en fonction des besoins (y compris l'ajout de paramètres, le deep linking, le masquage de la bannière ou l'intégration de PBA avec Smart Banners), voir <Anchor target="_blank" href="/marketers/fr/docs/smart-banners-website-code-implementation-for-developers">Implémentation du code web Smart Banners pour les développeurs .</Anchor>
 7. [facultatif] Copier la **clé web** (cette clé existe déjà en tant que partie de l'extrait de code).
 8. Cliquez sur **Continuer**.
+
+<div id="to-create-website-workplaces-after-the-first-time" />
 
 #### Pour créer des pages web ensuite
 
@@ -183,6 +193,8 @@ Le groupe de bannières contient une ou plusieurs bannières. De là, vous pouve
 9. [Recommandé] Définissez le paramètre d'attribution par défaut **Nom du canal** pour attribuer toutes les installations provenant de la bannière intelligente au canal spécifié. Cela vous permet d'agréger des informations provenant de plusieurs sources média sous le même canal dans le **rapport de cohorte**, le **tableau de bord de présentation**, le **rapport de rétention**, etc.
 10. <span id="2-banner-group-setup-step10"></span>[Facultatif] Activez le **retargeting** si vous prévoyez d'utiliser le groupe de bannières pour enregistrer les réengagements effectués par les utilisateurs qui cliquent sur la bannière. Pour en savoir plus sur le retargeting, consultez le <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">guide d'attribution du retargeting.</Anchor>
 
+    <div id="important-1" />
+
     > 🚧 **Important**
     >
     > Pour que le retargeting fonctionne, vous devez également :
@@ -224,6 +236,8 @@ Le groupe de bannières contient une ou plusieurs bannières. De là, vous pouve
 19. Cliquez sur **Créer un groupe de bannières**.
 20. [Facultatif] Pour modifier à nouveau le groupe de bannières, survolez **Ciblage et comportement** et cliquez sur **Modifier**.
 
+<div id="example-1" />
+
 > 📄 **Exemple**
 >
 > Mark est le marketeur d'un service de livraison de courses appelé « Feed Me ». Il décide de créer une campagne pour la vente de prunes dans l'app. Mark décide d'utiliser les SMS, ainsi que des réseaux publicitaires et Google pour la campagne.
@@ -245,6 +259,8 @@ Le groupe de bannières contient une ou plusieurs bannières. De là, vous pouve
 > * Arrivent sur l'app Feed Me, la téléchargent et l'installent.
 > * Sont dirigés au lancement de l'app vers la vente de prunes.
 > * Sont attribués aux sources média qui les ont conduits au site mobile de Feed Me.
+
+<div id="targeting--behavior" />
 
 #### Ciblage et comportement
 
@@ -297,6 +313,8 @@ Le panneau *Targeting et comportement* affiche les paramètres que vous avez dé
 5. Après avoir terminé et enregistré la nouvelle création, le statut de la bannière devient actif. Utilisez le bouton **Statut** pour basculer entre les états **Actif** et **En pause**.
 6. Cliquez sur **Tout sauvegarder** pour enregistrer votre travail ou sur **Tout sauvegarder et fermer** pour enregistrer votre travail et fermer la page de configuration de la bannière.
 
+<div id="example-2" />
+
 > 📄 **Exemple**
 >
 > [Ce document](https://drive.google.com/file/d/1mr6g3uNwlLw6UQ_WgtQZprJMhauw7Xi3/view?usp=sharing) contient des conseils et des astuces, ainsi qu'une liste de contrôle.
@@ -319,6 +337,8 @@ Une fois que la création est prête,vous pouvez la tester **avant** de la mette
 4. Cliquez sur **Modifier la création** pour revenir à la configuration, ou cliquez sur **Terminé** pour enregistrer la création.
 
 </Accordion>
+
+<div id="view-banner-performance" />
 
 ## Afficher les performances de la bannière
 
@@ -370,6 +390,8 @@ Vous pouvez afficher les données de performance des 7 derniers jours pour n’i
 3. Passez la souris sur l'une des bannières du groupe. Les données de performance sur la semaine écoulée s'affichent.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -485,6 +507,8 @@ Toutefois, il est de votre seule responsabilité de déterminer les exigences d'
 Veuillez noter que diverses modifications apportées aux bannières intelligentes peuvent avoir un impact sur leur compatibilité avec les exigences d'accessibilité pertinentes, y compris, par exemple, en cas de modification des couleurs et de la taille des éléments internes de la bannière.
 
 </Accordion>
+
+<div id="troubleshooting--traits-and-limitations" />
 
 ## Particularités et limites
 

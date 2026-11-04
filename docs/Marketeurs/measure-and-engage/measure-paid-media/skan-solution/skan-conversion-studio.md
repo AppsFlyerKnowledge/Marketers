@@ -24,6 +24,8 @@ x-zendesk:
 
 <Embed title="Studio de conversion SKAN 4 (verrouillage de fenêtre inclus)" typeOfEmbed="iframe" url="https://player.vimeo.com/video/810457121?h=a3acc3ee41&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" providerUrl="https://player.vimeo.com" />
 
+<div id="skan-conversion-studio-basics" />
+
 ## Studio de conversion SKAN : présentation
 
 Dans le cadre du flux d'attribution SKAdNetwork (SKAN), un appareil iOS envoie des postbacks SKAN contenant la VC la plus récente à la fin de chaque fenêtre de mesure.
@@ -86,6 +88,8 @@ Le Studio de Conversion offre une flexibilité maximale pour que chaque valeur d
   * L'affichage est mis à jour quotidiennement en fonction du mode qui est actif à minuit UTC. La mise à jour est disponible à partir de 05:00 UTC.
   * Dans SKAN 4, en mode *Custom* et *Decode*, les données organiques des événements in-app ne sont pas disponibles.
 
+<div id="s2s-principles" />
+
 #### **Principes de base du S2S**
 
 Les actions mesurables peuvent être transmises via l'API [server-to-server (S2S)](/docs/skan-conversion-studio#report-events-by-servertoserver-api). En fonction des modes, veuillez noter ce qui suit :
@@ -95,6 +99,8 @@ Les actions mesurables peuvent être transmises via l'API [server-to-server (S2S
 * Revenus, conversion et modes d'engagement : vous devez forcément activer l'[enregistrement des événements S2S](/docs/skan-conversion-studio#report-events-by-servertoserver-api) avant d'envoyer les événements.
 
 </Accordion>
+
+<div id="setting-up-conversion-values-in-skan-conversion-studio" />
 
 ## Configuration des valeurs de conversion dans SKAN Conversion Studio
 
@@ -108,6 +114,8 @@ Plusieurs modes sont disponibles dans SKAN Conversion Studio pour définir les v
   * Engagement
 
 Pour en savoir plus sur les différents modes de mesure, consultez les sections suivantes.
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -228,6 +236,8 @@ Au fur et à mesure que vous modifiez les paramètres du mode, la synthèse **de
 5. Cliquez sur **Enregistrer**.
 6. Vérifiez que les mappages de postback d'événements in-app de votre partenaire mappent bien les événements que vous avez configurés.
 
+<div id="fixed-mode-measurement" />
+
 #### Mesures en mode fixe
 
 | Mode de mesure | Description |
@@ -254,6 +264,8 @@ Créez une valeur de conversion personnalisée pour le mappage d'événements et
 4. Vérifiez que les mappages de postback d'événements in-app de votre partenaire mappent bien les événements que vous avez configurés.
 
 </Accordion>
+
+<div id="measurement-components" />
 
 ## Composants de la mesure
 
@@ -577,6 +589,8 @@ Le principe de priorité est expliqué plus en détails dans cet [exemple](/docs
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations supplémentaires
 
 <div id="view-cv-mapping" />
@@ -588,6 +602,8 @@ Le principe de priorité est expliqué plus en détails dans cet [exemple](/docs
 * Pour obtenir le mappage des CV utilisez l'<Anchor target="_blank" href="/marketers/fr/docs/skan-cv-schema-api-for-advertisers">API de schéma CV SKAN pour les annonceurs</Anchor>.
 
 ![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
+
+<div id="csv-mapping-file-columns" />
 
 #### Les colonnes du fichier de mappage CSV
 
@@ -627,6 +643,8 @@ Vous pouvez modifier la formule pour inclure tous les composants de mesure
 
 <Accordion title="Exemples de VC personnalisées optimisées">
 
+<div id="example-1" />
+
 #### Exemple 1
 
 | Composante | Description |
@@ -635,6 +653,8 @@ Vous pouvez modifier la formule pour inclure tous les composants de mesure
 | Revenu | <ul><li>Le revenu est rapporté en fonction d'un seul événement in-app (global.</li><li>Plages de revenus : 15</li></ul> |
 | Achat | Aucun |
 | Tunnel | 3 événements in-app |
+
+<div id="example-2" />
 
 #### Exemple 2
 
@@ -645,6 +665,8 @@ Vous pouvez modifier la formule pour inclure tous les composants de mesure
 | Paramétrage in-app pour la conversion | 1 événement in-app pour mesurer la conversion, chaque événement in-app requiert une plage |
 | Tunnel | Aucun |
 
+<div id="example-3" />
+
 #### Exemple 3
 
 | Composante | Description |
@@ -653,6 +675,8 @@ Vous pouvez modifier la formule pour inclure tous les composants de mesure
 | Revenu | <ul><li>Le revenu est rapporté en fonction d'un seul événement in-app (global.</li><li>Plages de revenus : 3</li></ul> |
 | In-app paramétré pour l'engagement | <ul><li>2 événements in-app pour mesurer le nombre d'événements d'engagement</li><li>Plages d'occurrences : 3 par événement in-app</li></ul> |
 | Tunnel | Aucun |
+
+<div id="example-4" />
 
 #### Exemple 4
 
@@ -683,6 +707,8 @@ N'oubliez pas :
 * Chaque priorité contient une plage de revenus, ou une plage d'événements in-app, ou les deux.
 * Valeurs de la plage : la valeur la plus basse n'est pas comprise dans la plage, mais la valeur la plus haute l'est. Exemple, la plage $5-$10 n'inclut pas la valeur 5, mais elle comprend la valeur 10.
 
+<div id="measurement-priorities-setting-example" />
+
 #### Exemple de paramétrage des priorités de mesure
 
 <table><tbody><tr><th><p>Nº de priorité</p></th><th><p>Plages de revenus</p></th><th>Évènement in-app</th></tr><tr><td>1 [Priorité élevée]</td><td>$5-$10</td><td>send_recommendation</td></tr><tr><td>2</td><td>$5-$10</td><td>--</td></tr><tr><td>3</td><td>$0-$5</td><td>send_recommendation</td></tr><tr><td>4</td><td>$0-$5</td><td>--</td></tr><tr><td>5</td><td>--</td><td>send_recommendation<br/>add_to_cart</td></tr><tr><td>6</td><td>--</td><td><p>send_recommendation</p></td></tr><tr><td>7 [Priorité basse]</td><td>--</td><td>add_to_cart</td></tr><tr><td colspan="3">-- Aucune valeur définie</td></tr></tbody></table>
@@ -693,6 +719,8 @@ Dans le tableau :
 
 * Les actions multiples sont séparées par des >
 * La valeur entre parenthèses () correspond à la priorité définie par AppsFlyer une fois que l'utilisateur a réalisé l'action. En fonction de la priorité AppsFlyer met à jour la CV dans l'app.
+
+<div id="user-journey-scenarios" />
 
 #### Exemples de parcours utilisateur
 
@@ -710,6 +738,8 @@ Dans le tableau :
 
 <Accordion title="Exemples de mode fixe">
 
+<div id="example-a-revenue-measurement" />
+
 #### Exemple A : mesure du revenu
 
 | Facteur | Remarques |
@@ -719,6 +749,8 @@ Dans le tableau :
 | Métriques sélectionnées | Mesures liées au revenu disponibles<ul><li>Installations : 20</li><li>Revenus : 125 $</li><li>Conversions : 15</li><li>ARPU : 6,25 $</li><li>ROI : 316 %</li></ul> |
 | Nombre de lignes de données brutes par rapport | <Anchor target="_blank" href="/marketers/fr/docs/skan-raw-data-reports">Les rapports de données brutes sont disponibles via Data Locker</Anchor><ul><li>Postbacks de l'appareil : 20 lignes</li><li>Installations : 20 lignes</li><li>Événements in-app : 15 lignes. Important ! L'utilisateur effectuant plusieurs achats est représenté par une seule ligne de 10 $.</li></ul> |
 | Considérations pour les développeurs | Les événements générateurs de revenus sont reconnus |
+
+<div id="example-b-conversion-measurement" />
 
 #### Exemple B : mesure de conversion
 
@@ -743,6 +775,8 @@ Dans le tableau :
         * 5 utilisateurs (A-E) installent l'app
         * Ils effectuent 0 à 3 événements in-app différents, comme le montre le tableau suivant
         * Données de coût fournies par l'API de l'ad network : 30 $
+
+        <div id="inapp-events-performed-by-users" />
 
         #### Événements in-app effectués par des utilisateurs
 
@@ -771,6 +805,8 @@ Dans le tableau :
         Métriques sélectionnées
       </td>
       <td>
+        <div id="inapp-related-metrics-available" />
+
         #### Indicateurs liés à l'app disponibles
 
         | Métrique | App | in-app-1 | in-app-2 | in-app-3 |
@@ -807,6 +843,8 @@ Dans le tableau :
   </tbody>
 </Table>
 
+<div id="example-c-engagement-measurement" />
+
 #### Exemple C  : mesure de l'engagement
 
 <Table>
@@ -828,6 +866,8 @@ Dans le tableau :
       </td>
       <td>
         5 utilisateurs installent l'app et l'ouvrent le nombre de fois indiqué dans le tableau.
+
+        <div id="app-opens" />
 
         #### Ouverture de l'app
 
@@ -907,6 +947,8 @@ Si vous souhaitez appliquer les mêmes configurations de valeurs de conversion S
 * L'API Studio de conversion SKAN n'est pas disponible pour les agences.
 
 </Accordion>
+
+<div id="additional-procedures" />
 
 ## Procédures supplémentaires
 

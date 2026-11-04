@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **En bref :** affichez la liste des noms d’événements et des paramètres d’événement prédéfinis afin d'enregistrer les événements in-app riches post installation de type connexion, inscription ou achat in-app.
 
+<div id="overview" />
+
 ## Présentation
 
 Pour que vous puissiez envoyer des événements in-app, votre développeur doit ajouter du code dans votre app. Cet article détaille les noms d’événements prédéfinis ainsi que les paramètres d’événement prédéfinis.
 
 Pour vous aider à définir quels événements et paramètres doivent être enregistrés, consultez <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#recommended-events-by-business-vertical">nos articles avec différents exemples et flux</Anchor> en fonction des secteurs d'activité.
+
+<div id="predefined-event-names" />
 
 ## Noms d'événements prédéfinis
 
@@ -769,6 +773,8 @@ Cliquez sur le lien pour afficher le mappage vers les SRN.
 >
 > En plus des noms d'événements prédéfinis décrits dans cette section, <Anchor target="_blank" href="/marketers/fr/docs/meta-ads-in-app-event-mapping#mappage-des-événements-prédéfinis">Meta ads propose des événements supplémentaires</Anchor> envoyés sans attributs.
 
+<div id="predefined-event-parameters" />
+
 ## Paramètres d'événements prédéfinis
 
 La section suivante fournit une liste de paramètres d'événements prédéfinis. Chaque nom d'événement comprend le mappage utilisé pour Meta ads, Google Ads, Snap, Twitter et Criteo. Vous pouvez choisir d'inclure n'importe lequel des paramètres d'événement dans un événement.
@@ -1329,6 +1335,8 @@ Mappage des paramètres :
 
 **Description** : montant total des achats. af\_revenue est considéré comme un revenu sur la plate-forme AppsFlyer. Il comptabilise également les <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#revenue-events">revenus négatifs</Anchor> provenant des annulations ou des remboursements.
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > La valeur du revenu ne doit pas contenir de séparateurs de virgule, de devises, de caractères spéciaux ou de texte. Par exemple, une valeur de revenu peut être de 1234.56. AppsFlyer fournit une valeur de revenu avec une précision allant jusqu'à cinq décimales.
@@ -1509,6 +1517,8 @@ Voici une liste des paramètres d'événement prédéfinis qui n'incluent pas le
 * af\_tutorial\_id
 * af\_virtual\_currency\_name
 * af\_duration\_seconds
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

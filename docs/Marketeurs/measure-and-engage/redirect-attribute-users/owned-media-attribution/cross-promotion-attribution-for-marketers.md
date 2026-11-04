@@ -27,6 +27,8 @@ x-zendesk:
 
 ![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
 
+<div id="about-cross-promotion" />
+
 ## À propos de la promotion croisée
 
 La campagne de promotion croisée est ce qu’il y a de mieux pour promouvoir vos apps, ou diriger les utilisateurs vers les nouvelles apps produites par votre entreprise. Ces types de campagnes donnent souvent des taux de conversion et de rétention plus élevés que la plupart des autres sources de trafic. Comme la promotion croisée fait de la publicité sur des médias propriétaire, vous pouvez utiliser la [correspondance des ID d’appareil](/docs/cross-promotion-attribution-for-marketers#attribuer-une-promotion-croisée) pour attribuer de manière déterministe les nouvelles installations. L'attribution des promotions croisées est disponible dans tous les comptes, quel que soit votre forfait AppsFlyer.
@@ -34,6 +36,8 @@ La campagne de promotion croisée est ce qu’il y a de mieux pour promouvoir vo
 L'image suivante montre le tableau de bord de l'app mise en avant, avec la répartition des résultats des campagnes lancées sur les médias propriétaire (**af\_cross\_promotion**) ainsi que les autres sources média. Vous pouvez voir que le nombre d'installations et le taux de conversion de la campagne de promotion croisée sont bien plus importants que chez les autres sources média.
 
 [![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+
+<div id="how-does-cross-promotion-work" />
 
 ### Comment se passe la promotion croisée ?
 
@@ -46,6 +50,8 @@ L'image suivante montre le tableau de bord de l'app mise en avant, avec la répa
    * L'app qui supporte l'installation ( l'application source), apparaît en tant qu'**ID de site** de cette source média.
 6. Le SDK génère automatiquement un événement in-app.  
    Le nom de l’événement sous Android est `af_cross_promotion`, et sous IOS le nom est `af_cross_promotion_clicked`.
+
+<div id="attributing-cross-promotion" />
 
 ## Attribuer une promotion croisée
 
@@ -63,6 +69,8 @@ L’ID d'appareil utilisé pour la correspondance dépend des éléments suivant
 | GAID | Appareils Android dotés des services Google Play |  |  |
 | OAID, ID Android, IMEI, ID Fire | Appareils Android non dotés des services Google Play |  |  |
 
+<div id="setting-up-cross-promotion" />
+
 ## Mettre en place une promotion croisée
 
 Pour configurer une attribution des promotions croisées, le marketeur et le développeur doivent collaborer pour implémenter un code supplémentaire dans le SDK AppsFlyer.
@@ -77,7 +85,11 @@ Le marketeur et le développeur doivent suivre les étapes suivantes :
 | 4 | Marketeur | Dans le [tableau de bord de l'application mise en avant](/docs/cross-promotion-attribution-for-marketers#tableau-de-bord-de-lapp-mise-en-avant), consultez le trafic issu de la campagne de promotion croisée et optimisez vos campagnes en fonction des résultats. |  |
 | 5 [Facultatif] | Marketeur | Créez un [tableau de bord personnalisé](/docs/cross-promotion-attribution-for-marketers#tableau-de-bord-personnalisé) pour comparer le trafic des promotions croisées et partager les données avec les utilisateurs du compte. |  |
 
+<div id="viewing-cross-promotion-data" />
+
 ## Consulter les données des promotions croisées
+
+<div id="promoted-app-dashboard" />
 
 ### Tableau de bord de l’app mise en avant
 
@@ -89,9 +101,13 @@ Le tableau de bord de l'application mise en avant vous permet de déterminer que
 2. Sélectionnez la source média **af\_cross\_promotion** (ou votre source média personnalisée).
 3. Regroupez par **ID de site** pour afficher la liste des apps sources. [![CrossPromo_SiteID](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)](https://files.readme.io/e057085e90a4a8e56e6769a0af332785488d7757cb5430418e8db6b3cfa67210-4404613179025.png)
 
+<div id="analysis" />
+
 #### Analyse
 
 En consultant les données des installations, clics, impressions et taux de conversion des différentes applications qui font de la publicité pour une même application, vous pouvez obtenir des chiffres sur leur degré d’association. Les apps sources (ID de site) avec les meilleurs taux de conversion sont les plus associées à l'app mise en avant, leurs utilisateurs sont donc plus susceptibles de l'installer. Sur la base de ces informations, vous pouvez optimiser vos campagnes de promotion croisée.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -106,11 +122,15 @@ En consultant les données des installations, clics, impressions et taux de conv
 > * Lancez une campagne de promotion croisée à grande échelle autour de Golf.
 > * Commencez à <Anchor target="_blank" href="/marketers/fr/docs/measure-view-through-engagements#processus-dattribution-post-vue">attribuer les impressions</Anchor> en plus des clics. Comme vous avez initialement configuré votre campagne pour ne mesurer que les clics, les installations des utilisateurs qui voient la publicité sans cliquer, mais qui l'installent plus tard, sont considérées comme des installations organiques (et non comme des installations non organiques). Ce qui signifie que vous n’avez pas encore tous les éléments sur les performances des campagnes dans chaque application source.
 
+<div id="custom-dashboard" />
+
 ### Tableau de bord personnalisé
 
 Le tableau de bord de l'app mise en avant est idéal pour comprendre quelles apps sources génèrent le plus de trafic. Mais qu'en est-il si vous souhaitez évaluer les performances d'une application unique utilisée pour faire la publicité de plusieurs apps ? C'est là que le tableau de bord personnalisé entre en jeu.
 
 Un <Anchor target="_blank" href="/marketers/fr/docs/custom-dashboards">tableau de bord personnalisé</Anchor> vous permet de centraliser les informations de plusieurs applications dont vous faites la publicité, ce qui inclut le trafic lié aux promotions croisées. De plus, avec le tableau de bord personnalisé vous pouvez rapidement partager les données avec les utilisateurs du compte.
+
+<div id="example-1" />
 
 > 📄 **Exemple**
 >

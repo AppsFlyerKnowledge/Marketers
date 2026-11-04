@@ -27,15 +27,21 @@ x-zendesk:
 
 [![Main Discovery image New.jpg](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)
 
+<div id="about-the-creative-optimization-discovery-ai-dashboard" />
+
 ## À propos du tableau de bord Découverte
 
 Les tableaux de bord d'<Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide">**optimisation créative**</Anchor> vous permettent de mesurer la performance de vos créations en regroupant toutes vos créations de tous les canaux média en un seul endroit. Analysez leurs performances en fonction de certaines dimensions, sur plusieurs campagnes, canaux et autres, afin d'obtenir des informations essentielles avant de planifier, sélectionner et produire votre prochaine série de créations.
 
 Alimenté par l'IA, le **tableau de bord Découverte** donne à votre équipe créative toutes les informations dont elle a besoin pour produire des créations performantes. Il fournit des données granulaires sur les performances, ce qui permet de prendre des décisions éclairées basées sur les éléments ou caractéristiques d'une création qui contribuent à son efficacité. Ce tableau de bord vous permet de produire des créations performantes basées sur des données et optimisées pour un impact maximal. En fonction des principaux filtres sélectionnés, vous pouvez afficher une galerie de vos créations ou les regrouper par scènes ou éléments.
 
+<div id="get-started" />
+
 ## Démarrer
 
 Si vous n'avez pas encore configuré l'optimisation créative, vous trouverez des instructions <Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide#démarrer">ici</Anchor>.
+
+<div id="concepts" />
 
 ## Filtrage, requêtes rapides et tri
 
@@ -110,6 +116,8 @@ Les mesures disponibles sont les suivantes :
 Voir une <Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide#standard-metrics-and-dimensions">liste</Anchor> détaillée des définitions des métriques.
 
 </Accordion>
+
+<div id="discovery-tabs" />
 
 ## Onglets Découverte
 

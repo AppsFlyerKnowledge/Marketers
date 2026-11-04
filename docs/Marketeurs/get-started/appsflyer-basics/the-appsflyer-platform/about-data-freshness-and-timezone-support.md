@@ -36,7 +36,11 @@ x-zendesk:
 
 [![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
 
+<div id="data-freshness-and-support-for-app-specific-time-zones" />
+
 ## Actualisation des données et prise en charge des fuseaux horaires spécifiques à une application
+
+<div id="data-freshness" />
 
 ### Actualisation des données
 
@@ -46,6 +50,8 @@ Exemple : Taux d’actualisation des données dans le tableau de bord des évé
 
 * KPI mesuré : en temps réel
 * KPI moyen : quotidien
+
+<div id="time-zones" />
 
 ### Fuseaux horaires
 
@@ -62,6 +68,8 @@ Hémisphères
 * Oriental Les fuseaux horaires désignés par UTC  + sont situés à l'est de l'UTC.
 * Occidental Les fuseaux horaires désignés par UTC sont situés à l'ouest de l'UTC.
 
+<div id="app-specific-time-zone" />
+
 #### Fuseau horaire spécifique à l'app
 
 Vous pouvez définir un fuseau horaire spécifique à une application. Les données sont alors regroupées en jours, en utilisant l'heure locale au lieu de l'UTC.
@@ -72,11 +80,15 @@ Exemple :
 
 **Los Angeles** : Si le fuseau horaire spécifique à l'app est défini sur Los Angeles (UTC -8), alors la journée commence à 08:01 UTC et se termine à 08:00 UTC le jour suivant.
 
+<div id="time-zone-guidelines" />
+
 #### Consignes à propos des fuseaux horaires
 
 * Alignez le fuseau horaire spécifique à votre app avec celui que vous avez défini pour les autres fournisseurs de services d'attribution, comme Google et Meta Ads.
 * Si vous possédez plusieurs apps, nous vous conseillons de régler toutes vos applications sur le même fuseau horaire. Pour afficher les paramètres de fuseau horaire d'une app, allez dans **Paramètres** > **Paramètres de l'app.**
 * La plupart des rapports et outils d'extraction des données prennent en charge les fuseaux horaires spécifiques aux apps. Cela inclut les rapports multi-applications lorsque toutes les apps sont définies sur le même fuseau horaire spécifique à l'app.
+
+<div id="daily-processing" />
 
 #### Traitement quotidien
 

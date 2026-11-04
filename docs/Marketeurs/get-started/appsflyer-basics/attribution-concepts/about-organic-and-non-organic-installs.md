@@ -30,6 +30,8 @@ x-zendesk:
 
 Les utilisateurs non organiques sont attribués à la source média qui a porté l'installation ou l'engagement. Dans le cas des utilisateurs organiques, aucune source médiat n'est identifiée comme étant à l'origine de l'installation ou de l'engagement.
 
+<div id="organic-vs-non-organic" />
+
 ## Organique ou non organique
 
 | Installations organiques  <br />Non attribuées à des sources média | Installations non organiques (INO)  <br />Attribuées à des sources média |

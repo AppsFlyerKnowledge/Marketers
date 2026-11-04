@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app suggérés pour votre app de transport.
 
+<div id="-ride-hailing" />
+
 ## <Image alt="InApp_Events_ride.png" src="https://files.readme.io/3901cfcc0cc821cc9c93edbe806bc2d570698be366b76b3710cb60e9aa190d91-20659532208401.png" width="100px" /> Transport
 
 Les apps de transport sont récemment devenues très populaires, en particulier dans les zones urbaines où la plupart des résidents ne possèdent pas de voiture. Les événements typiques que nous recommandons d'enregistrer incluent les demandes et les réservations de transport.
@@ -32,6 +34,8 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 * La façon dont les passagers et les conducteurs interagissent
 * Les pays dans lesquels plus de personnes utilisent votre service de transport
 * Les métriques de prix, de trajets et de distance parcourue
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -44,9 +48,13 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 
 [![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur du transport. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -121,6 +129,8 @@ AppsFlyer.sendEvent("af_complete_registration", CompleteRegistrationEvent);
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Connexion (af_login)">
 
 **Objectif**
@@ -172,6 +182,8 @@ AppsFlyer.sendEvent("af_login", null);
 </Tabs>
 
 </Accordion>
+
+<div id="add-payment-info-af_add_payment_info" />
 
 <Accordion title="Ajouter des informations de paiement (af_add_payment_info)">
 
@@ -249,6 +261,8 @@ AppsFlyer.sendEvent("af_add_payment_info", AddPaymentInfoEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="spent-credits-af_spent_credits" />
 
 <Accordion title="Crédits dépensés (af_spent_credits)">
 
@@ -334,9 +348,13 @@ AppsFlyer.sendEvent("af_content_view", CreditsSpent);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une liste de structures d'événements qui comprennent des noms d'événements personnalisés et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="ride-booking-requested-ride_booking_requested" />
 
 <Accordion title="Demande de réservation de trajet (ride_booking_requested)">
 
@@ -463,6 +481,8 @@ AppsFlyer.sendEvent("ride_booking_requested", RideBookingRequestedEvent);
 
 </Accordion>
 
+<div id="ride-booking-confirmed-ride_booking_confirmed" />
+
 <Accordion title="Réservation de trajet confirmée (ride_booking_confirmed)">
 
 **Objectif**
@@ -474,6 +494,8 @@ Cet évènement peut vous aider à :
 * Voir le prix moyen et total des trajets pour chaque conducteur
 
 De plus, enregistrer cet évènement et les trois autres évènements liés à la réservation peut vous aider à mieux comprendre les activités du conducteur. Vous pouvez notamment voir les conducteurs qui confirment le plus de demandes de réservations de trajets, ceux qui préfèrent les trajets courts.
+
+<div id="trigger" />
 
 #### **Déclencheur**
 
@@ -591,6 +613,8 @@ AppsFlyer.sendEvent("ride_booking_confirmed", RideBookingConfirmedEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="ride-booking-canceled-ride_booking_canceled" />
 
 <Accordion title="Réservation de trajet annulée (ride_booking_canceled)">
 
@@ -729,6 +753,8 @@ AppsFlyer.sendEvent("ride_booking_cancelled", RideBookingCanceledEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="ride-booking-completed-ride_booking_completed" />
 
 <Accordion title="Réservation de trajet terminée (ride_booking_completed)">
 

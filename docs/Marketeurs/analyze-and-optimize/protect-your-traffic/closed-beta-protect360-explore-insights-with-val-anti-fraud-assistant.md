@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **At a glance:** Val is a preemptive anti-fraud assistant in Protect360 that provides weekly insights to help highlight trends, recommend actions, and improve fraud protection. By surfacing actionable intelligence, Val transforms fraud detection from reactive to proactive.
 
+<div id="about-val-anti-fraud-assistant" />
+
 ## About Val anti-fraud assistant
 
 Val is a data intelligence capability in Protect360 that automatically analyzes recent traffic patterns to uncover potential fraud risks. It delivers weekly insights that highlight trends, recommend actions, and provide benchmark comparisons to help reduce fraud, strengthen security, and optimize performance.
@@ -35,6 +37,8 @@ With Val, advertisers can:
 
 Note: Insights are not available to partners.
 
+<div id="insight-types" />
+
 ## Insight types
 
 Val provides the following insight types and the following user actions to take direct steps to improve fraud detection and overall security:
@@ -44,6 +48,8 @@ Val provides the following insight types and the following user actions to take 
 | **Fraud spike** | <ul><li>Highlights abnormal increases or decreases in fraud for specific networks or sources.</li><li>Provides a comparative analysis of fraud trends at the app level to better understand whether they are expected or an anomaly.</li></ul> | <ul><li>Investigate further in the Protect360 dashboard.</li><li>Share the insight as a PNG.</li><li>Dismiss the insight for one week.</li></ul> |
 | **Old SDK version** | Detects apps using SDKs older than one year, which may lack up-to-date fraud protection and be prone to fraud attacks. | <ul><li>Learn more about SDK updates.</li><li>Share the insight as a PNG.</li><li>Dismiss the insight for one week.</li></ul> |
 | **Fraudulent SDK version** | Identifies traffic originating from SDK versions, and broken down by app versions, known to have been affected by high fraud rates. | <ul><li>Access the Validation Rules setup page.</li><li>Share the insight as a PNG.</li><li>Dismiss the insight for one week.</li></ul> |
+
+<div id="how-val-works" />
 
 ## How Val works
 
@@ -60,6 +66,8 @@ To ensure insights remain relevant, they follow a predefined lifecycle:
 | Dismissed | Insights won't return unless a new issue is detected. |
 
 Note: Once an insight is dismissed, it won’t appear again for the current week.
+
+<div id="how-to-access-and-use-explore-insights-val" />
 
 ## How to access and use Explore Insights (Val)
 

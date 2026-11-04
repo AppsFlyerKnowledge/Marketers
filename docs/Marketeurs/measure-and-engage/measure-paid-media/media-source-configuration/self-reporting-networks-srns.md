@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **En bref :** tout savoir sur les réseaux sel reporting (SRN) - attribution, deep linking, recommandations selon l'iOS, et FAQ.
 
+<div id="srns-integrated-with-appsflyer" />
+
 ## SRN intégrés à AppsFlyer
 
 | **SRN** | **Logo** |
@@ -56,6 +58,8 @@ L'attribution AppsFlyer pour les SRN et les non-SRN suit les logiques ci-dessous
 * Utilisation des deux méthodes last-touch et multi-touch.
 * AppsFlyer applique sa méthode d'attribution habituelle pour séquencer les données d'impression et de clic.
 
+<div id="how-does-attribution-work-with-srns" />
+
 ### Comment fonctionne l'attribution avec les SRN ?
 
 Les SRN transmettent les événements (de type nouvelles installations et événements in-app) à AppsFlyer de la manière suivante :
@@ -66,9 +70,13 @@ Les SRN transmettent les événements (de type nouvelles installations et évén
 
 Une fois l'attribution réalisée par AppsFlyer, les postbacks in-app sont envoyés au SRN jusqu'à ce que la <Anchor target="_blank" href="/marketers/fr/docs/user-level-data-retention#périodes-de-conservation-des-données-des-partenaires">période de conservation des données du partenaire soit écoulée</Anchor>.
 
+<div id="how-does-attribution-work-with-advanced-srns" />
+
 ### Comment fonctionne l'attribution avec les SRN avancés ?
 
 La méthode d'attribution est la même pour les SRN avancés que pour les SRN classiques. Cependant, les SRN avancés peuvent également attribuer des engagements lorsqu'il n'y a pas d'identifiant de dispositif (IDFA), et ce en passant par la <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-knowledge-base-glossary#confidentialité-avancée-agrégée">confidentialité avancée agrégée</Anchor> et en utilisant le <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model#device-id-matching">matching d'identifiant</Anchor> et la <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model#probabilistic-modeling">modélisation probabiliste</Anchor> via lien d'attribution.
+
+<div id="install-attribution" />
 
 ### Attribution d'installation
 
@@ -81,6 +89,8 @@ Lorsqu'une app est lancée pour la première fois :
   * L'utilisateur a un ID publicitaire.
 * Si les deux conditions sont remplies, AppsFlyer interroge les SRN à l’aide de l’ID publicitaire.
 * AppsFlyer procède à l'attribution après avoir pris en compte les exigences du SRN.
+
+<div id="install-attribution-examples" />
 
 #### Exemples d'attribution d'installation
 
@@ -116,6 +126,8 @@ AppsFlyer fournit aux annonceurs les données d'assistance (c'est à dire les en
 
 </Accordion>
 
+<div id="attribution-windows" />
+
 ### Fenêtres d'attribution
 
 Les fenêtres d'attribution comprennent les fenêtres rétrospectives et post-vue.Certains SRN facturent les annonceurs en fonction des installations basées sur le coût par impression (CPM) ou le coût par action (CPA) (c'est à dire basées sur les clics ou impressions qui se produisent sur une période allant de 1 à 28 jours).
@@ -128,6 +140,8 @@ Les **annonceurs** peuvent avoir à payer les installations en fonction de la fe
 * Pourquoi ? Parce que AppsFlyer rapporte les eCPI et eCPA en fonction des termes qui ont été définis par l'annonceur.
 * Les SRN peuvent en bénéficier à court terme car ils imposent souvent leurs propres conditions de paiement. Mais les annonceurs font en sorte que cela ne se produise pas en passant par des fournisseurs d'attribution tiers.
 
+<div id="deep-linking-with-srns" />
+
 ## Deep Linking avec des SRN
 
 Pour que les utilisateurs ouvrent l'application lorsque le lien est cliqué, il vous suffit de configurer les Liens d'app / Liens universels / Schéma d'URI. Ceci étant dit, pour appliquer un deep linking direct ou différé à une certaine page ou activité de votre app, les SRN utilisent leurs propres méthodes, qui ne recourent pas au procédé de deep linking AppsFlyer.
@@ -139,6 +153,8 @@ Comment pouvez-vous rediriger vos utilisateurs via le Deep Linking et obtenir le
 <Accordion title="Deep linking direct">
 
 Lorsque l'appareil d'un utilisateur effectue un deep linking, le deep linking direct sans SRN se fait sans recourir à la méthode de deep linking AppsFlyer. Dans l'exemple ci-dessous, les utilisateurs existants qui cliquent sur une publicité sont redirigés vers l'activité en suivant le procédé Facebook, tandis que les nouveaux utilisateurs vivent la même chose en passant par les données de conversion AppsFlyer. Découvrez comment <Anchor target="_blank" href="/marketers/fr/docs/meta-ads-faq#who-needs-facebooks-sdk">Facebook utilise OneLink pour générer le deep linking.</Anchor>
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -165,6 +181,8 @@ Toutefois, les SRN ne disposent pas des paramètres de Deep Linking standard d'A
 **Remarque** : avec <Anchor target="_blank" href="/marketers/fr/docs/meta-ads-faq#who-needs-facebooks-sdk">Meta ads</Anchor>, le deferred deep linking via GCD est disponible pour les apps Android qui utilisent le procédé Google Install Referrer. Il n’est pas disponible pour les apps iOS.
 
 </Accordion>
+
+<div id="ios-implications" />
 
 ## Conditions de version iOS
 
@@ -237,6 +255,8 @@ Si un SRN est utilisé pour lancer à la fois des campagnes d'acquisition d'util
 
 **Conclusion :** il est contre-productif de vouloir obtenir les événements de retargeting à partir d'une campagne d'acquisition d'utilisateurs.
 
+<div id="is-mistargeting-a-problem" />
+
 #### Le mauvais ciblage pose-t-il des problèmes ?
 
 Les analystes de données AppsFlyer ont surveillé les campagnes **d'acquisition d'utilisateurs** de Meta ads pendant un mois donné.
@@ -247,6 +267,8 @@ Les analystes de données AppsFlyer ont surveillé les campagnes **d'acquisition
 * **Conclusion : dans les campagnes d'acquisition d'utilisateurs SRN, 1 utilisateur ciblé sur 10 est déjà un utilisateur existant.**
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+
+<div id="solving-the-mistargeting-problem" />
 
 #### Comment résoudre le problème du mauvais ciblage
 

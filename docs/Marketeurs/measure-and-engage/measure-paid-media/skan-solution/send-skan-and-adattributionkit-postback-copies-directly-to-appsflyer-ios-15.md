@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** depuis iOS 15, vous pouvez configurer votre app pour qu'elle envoie des copies de postback à AppsFlyer en plus de ceux transmis aux réseaux publicitaires. AppsFlyer peut ainsi valider la valeur de conversion (VC) et vérifier que le postback est correct. Il suffit de configurer l’API Push AppsFlyer pour envoyer les copies de postback au deuxième point de terminaison choisi.
 
+<div id="why-send-postback-copies-to-appsflyer" />
+
 ## Pourquoi transmettre des copies de postback à AppsFlyer ?
 
 * Tous les postbacks sont rassemblés au même endroit : les postbacks contiennent des informations très importantes pour les annonceurs, notamment la CV qui permet de mesurer la qualité des utilisateurs. La CV transmise dans les postbacks, n'est ni cryptée ni incluse dans la signature du postback. Une CV rapportée par un réseau publicitaire ne peut donc pas être vérifiée et elle est sujette à la manipulation. AppsFlyer envoie les copies de postback aux points de terminaison que vous avez définis, le transfert se fait via API Push.
@@ -30,6 +32,8 @@ x-zendesk:
 * L'engagement par type de touch est accessible
 
 **Remarque !** AppsFlyer doit malgré tout continuer à recevoir les postbacks des réseaux publicitaires car ils contiennent d'autres données relatives au réseau publicitaire (ex : le nom de la campagne).
+
+<div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Configurer votre app pour envoyer des copies de postback à AppsFlyer
 
@@ -42,7 +46,11 @@ Selon la documentation d'Apple, vous pouvez définir un seul point de terminaiso
 3. Les postbacks seront envoyées à AppsFlyer au fur et à mesure que la nouvelle version sera publiée (et non à partir de TestFlight).
 4. Vous pouvez voir les postbacks reçus dans le <Anchor target="_blank" href="/marketers/fr/docs/skan-raw-data-reports">rapport des copies de postbacks</Anchor>.
 
+<div id="common-misconceptions" />
+
 ## Infos ou intox ?
+
+<div id="dont-believe-everything-you-hear" />
 
 > 📘 **Certaines idées fausses circulent !**
 >
@@ -54,6 +62,8 @@ Selon la documentation d'Apple, vous pouvez définir un seul point de terminaiso
 >   * **Faux.** L'annonceur dépend toujours du réseau publicitaire pour déchiffrer les données sensibles. Exemple : seul le réseau publicitaire pourra mapper un ID de campagne SKAN au nom de la campagne.
 > * Dès que mon deuxième point de terminaison est défini, des copies de tous les postbacks lui sont transmises.
 >   * **Faux.** La fonctionnalité proposant un point de terminaison supplémentaire n'est disponible que pour les appareils sous iOS 15 et +. Les copies de postback ne seront pas transmises depuis un appareil avec une version IOS plus ancienne.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

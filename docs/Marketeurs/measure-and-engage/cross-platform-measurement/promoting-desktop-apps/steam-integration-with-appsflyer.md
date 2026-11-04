@@ -22,11 +22,15 @@ x-zendesk:
 ---
 > **En bref :** intégrez votre Steam/app de gaming à AppsFlyer pour recevoir les données d'attribution et d'événements de vos campagnes Steam. L'intégration de Steam prend en charge l'attributionet l'enregistrement des événements in-app pour les apps Steam présentes dans l'appareil Steam de l'utilisateur.
 
+<div id="about-steam-attribution" />
+
 ## À propos de l'attribution Steam
 
 Steam fonctionne sur les appareils Windows et Mac, Steam Deck et autres appareils Steam OS.
 
 Les applications exécutées sur Steam peuvent s’intégrer à AppsFlyer via l’API ou le SDK S2S pour recevoir les  données d’attribution et mesures des performances des sources et campagnes qui génèrent des ouvertures d’app et des événements in-app. Les marketeurs s'appuient sur ces informations pour mesurer et optimiser leurs activités marketing.
+
+<div id="example-attribution-flow" />
 
 ### Exemple de processus d'attribution
 
@@ -40,6 +44,8 @@ Voici un exemple de flux qui illustre les étapes les plus importantes du parcou
    ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
 3. <span id="marketing-touchpoint"></span>Page de l'application Steam : il s'agit de votre page d’accueil Steam, elle héberge votre app Steam que les clients peuvent télécharger.
 4. Installation du jeu : l'utilisateur installe le jeu, ce qui déclenche l'attribution et l'enregistrement d'événements et de sessions in-app.
+
+<div id="integration-procedures" />
 
 ## Étapes de l’intégration
 
@@ -171,9 +177,13 @@ Le tableau suivant indique la marche à suivre pour intégrer votre application 
   </tbody>
 </Table>
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Supprimer les données AppsFlyer lors de la désinstallation de l'app
 
 Pour supprimer toutes les données du SDK AppsFlyer lors de la désinstallation de l'application, demandez à votre développeur de suivre les étapes détaillées [ici.](https://dev.appsflyer.com/hc/docs/steam-vanilla#deleting-appsflyer-data-on-uninstall)
+
+<div id="traits-and-limitations" />
 
 ## Caractéristiques et limitations
 
@@ -181,6 +191,8 @@ Pour supprimer toutes les données du SDK AppsFlyer lors de la désinstallation 
 | --- | --- |
 | Retargeting | Non pris en charge actuellement |
 | Données de coûts | Les données des coûts doivent être envoyées via l’<Anchor target="_blank" href="/marketers/fr/docs/import-cost-data">Ingestion des dépenses publicitaires</Anchor> en utilisant la méthode d’envoi du fichier par e-mail. |
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

@@ -27,17 +27,25 @@ x-zendesk:
 ---
 > **En bref :** Les politiques de conservation et d'utilisation au niveau de l'utilisateur (données brutes) sont déterminées par AppsFlyer, la législation applicable, ainsi que les conditions d'utilisation des SRN ("**les partenaires**").
 
+<div id="caution" />
+
 > ❗️ **Attention !**
 >
 > AppsFlyer fournit dans cet article des explications sur les restrictions des données, et ce à titre d'information uniquement.  Rien de ce qui est inscrit dans cet article ne constitue un avis juridique. Ces indications sont fournies à titre d'information uniquement.
+
+<div id="data-retention-and-deletion-obligations" />
 
 ## Obligations concernant la conservation et l'effacement des données
 
 AppsFlyer reçoit des données sur les utilisateurs de la part d'applications, de partenaires et d'autres sources.
 
+<div id="availability-of-user-level-data-to-advertisers" />
+
 ### Disponibilité des données de niveau utilisateur pour les annonceurs
 
 En règle générale, les données de niveau utilisateur sont mises à la disposition des annonceurs via des <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">outils de reporting de données brutes</Anchor>, dans le cas où leur abonnement inclue les données brutes au cours d’une fenêtre d'accès de 90 jours<Anchor target="_blank" href="/marketers/fr/docs/report-generation-quotas-rate-limitations">(limitations du taux AppsFlyer</Anchor>). Dans certains cas, il existe des <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">restrictions concernant les données brutes</Anchor>.
+
+<div id="data-retention" />
 
 ### Conservation des données
 
@@ -58,6 +66,8 @@ Prenez en compte les éléments suivants :
   * Politique de partage des données des partenaires
   * <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">La confidentialité avancée agrégée</Anchor> est activée.
 
+<div id="partner-data-retention-periods" />
+
 #### Périodes de conservation des données des partenaires
 
 | SRN/partenaire | ID du partenaire (PID) | Après l'installation, supprime les données après [x] mois |
@@ -71,6 +81,8 @@ Prenez en compte les éléments suivants :
 | Snapchat<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/article/attribution-terms">(TOS</Anchor>) | snapchat\_int | 6 |
 | TikTok for Business | tiktokglobal\_int | 6 |
 | X Ads (anciennement Twitter) | twitter\_int | 3 |
+
+<div id="note" />
 
 > 📄 **Articles connexes**
 >

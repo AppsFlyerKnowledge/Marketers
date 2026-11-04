@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **En bref :** Optimiser les campagnes publicitaires Meta en utilisant les partenaires de gestion de campagne Meta (anciennement connus sous le nom de Facebook Marketing Partners), tels que Kenshoo, Bidalgo et Smartly. Lorsqu'ils sont configurés, AppsFlyer leur envoie les postbacks.
 
+<div id="configure-meta-campaign-management-partners" />
+
 ## Configurer les partenaires de gestion de la campagne Meta
 
 **Conditions préalables :**  avant de configurer une intégration, vous devez  <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#contacter-le-partenaire">contacter le partenaire</Anchor> et ouvrir un compte chez lui.
@@ -40,6 +42,8 @@ x-zendesk:
 4. Dans l'onglet  **Integration** , sélectionnez l'app à intégrer et cochez l’option  **Activer le partenaire** .  
    **Remarque :** La case doit rester cochée <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">(activée)</Anchor> tant que vous collaborez avec le partenaire.
 5. Terminez la configuration pour chacun des onglets détaillés ci-après.
+
+<div id="in-app-event-postback-setup" />
 
 ## Configuration du postback des événements in-app
 
@@ -66,6 +70,8 @@ Pour que le partenaire obtienne des postbacks, les noms de campagne **doivent ê
 3. [Facultatif] Cliquez sur ![conditional-iae-postbacks-icon.png](https://files.readme.io/5345c5ebe95b3f1a0d0858b88ce29f9965178ce750df86c04cb131a93d006a5e-14050481317393.png) pour <Anchor target="_blank" href="/marketers/fr/docs/in-app-event-postback-configuration#postbacks-conditionnels-dévénements-in-app">définir les conditions</Anchor> d'envoi de certains événements in-app au partenaire.
 4. [Facultatif] Cliquez sur **Ajouter un événement** pour ajouter un autre SDK ou un événement serveur à serveur à la liste.
 5. Cliquez sur **Enregistrer l'intégration**.
+
+<div id="important-notes" />
 
 > 📘 **Remarques importantes**
 >

@@ -27,6 +27,8 @@ x-zendesk:
 ---
 > **En bref :** Affichage des données de coût agrégées pour chaque clic sur une annonce, telles qu’elles sont signalées par les réseaux publicitaires.
 
+<div id="basic-cost-reporting" />
+
 ## Rapports de base sur les coûts
 
 Les données de coût sont communiquées à AppsFlyer par :

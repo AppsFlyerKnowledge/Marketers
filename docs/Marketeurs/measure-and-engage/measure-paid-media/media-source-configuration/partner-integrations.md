@@ -34,6 +34,8 @@ Depuis le Marketplace partenaires, vous pouvez [accéder aux intégrations de pa
 >
 > Le Marketplace partenaires est actuellement disponible pour les spécialistes du marketing, mais pas encore pour les agences et les partenaires.
 
+<div id="quick-start" />
+
 ## Démarrage rapide
 
 Explorez le Marketplace partenaires, découvrez de nouvelles opportunités et entrez en contact avec des partenaires.
@@ -44,6 +46,8 @@ Explorez le Marketplace partenaires, découvrez de nouvelles opportunités et en
 2. [**Découvrez les partenaires**](/docs/partner-integrations#découvrez-les-partenaires)
 3. [**Apprenez-en davantage sur le partenaire** :](/docs/partner-integrations#en-savoir-plus-sur-les-partenaires) sélectionnez un partenaire pour accéder à sa page de détails
 4. [**Procédez à l’intégration avec le partenaire**](/docs/partner-integrations#intégration-avec-un-nouveau-partenaire)
+
+<div id="discover-partners" />
 
 ## Découvrez les partenaires
 
@@ -63,6 +67,8 @@ Pour vous aider à trouver plus facilement les partenaires les mieux adaptés à
 * [**Partenaires de la Data Clean Room (DCR) :** des partenaires technologiques qui fournissent des données de première et de tierce partie que vous pouvez utiliser pour enrichir vos données et optimiser les performances de vos campagnes.](#partenaire-dcr)
 * **Populaires dans votre catégorie :** partenaires de votre catégorie principale avec les intégrations les plus actives.
 * **Dernière visite :** partenaires que vous avez récemment consultés sur le Marketplace.
+
+<div id="partner-cards" />
 
 #### Cartes partenaires
 
@@ -105,6 +111,8 @@ Utilisez les filtres en haut de la page pour trouver des partenaires pertinents 
 >
 > Lorsque vous utilisez la barre de recherche, tous les filtres appliqués sont effacés. Pour appliquer des résultats combinés, utilisez d'abord la barre de recherche et appliquez les filtres une fois les résultats affichés.
 
+<div id="search-for-partners" />
+
 ### Rechercher des partenaires
 
 ![partner search3.png](https://support.appsflyer.com/hc/article_attachments/18891644678417)
@@ -116,6 +124,8 @@ Utilisez la barre de recherche du Marketplace partenaires pour rechercher des pa
 * Un point vert ou orange à gauche du logo du partenaire indique le <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#integration-activity-indication">niveau d'activité</Anchor> pour l'intégration.
 * Une fois que vous avez recherché et visité des partenaires, les cinq résultats les plus récents s'affichent dans vos recherches suivantes.
 * Vous pouvez également effectuer une recherche [dans vos intégrations de partenaires actifs](/docs/partner-integrations#intégrations-actives).
+
+<div id="learn-about-partners" />
 
 ## En savoir plus sur les partenaires
 
@@ -181,6 +191,8 @@ Fournit des informations sur le niveau de service du partenaire selon les critè
 
 Les graphiques par défaut affichent les 10 principales catégories et zones géographiques dans lesquelles le partenaire est actif, sur toutes les plate-formes. Vous pouvez modifier les paramètres par défaut en sélectionnant jusqu'à 10 autres zones géographiques ou catégories, ainsi que toutes les plates-formes disponibles dans le coin supérieur droit.
 
+<div id="integrate-with-a-new-partner" />
+
 ## Intégration avec un nouveau partenaire
 
 Après [avoir découvert de nouveaux partenaires](/docs/partner-integrations#découvrez-les-partenaires) et pris connaissance de [leurs performances](/docs/partner-integrations#en-savoir-plus-sur-les-partenaires), vous pouvez mettre en place l'intégration.  Une fois vos applications connectées à des partenaires, des données non organiques commenceront à s’afficher sur vos tableaux de bord.
@@ -198,9 +210,13 @@ Après [avoir découvert de nouveaux partenaires](/docs/partner-integrations#dé
 
 Une fois l'intégration définie, le partenaire devient <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#active-partners">actif</Anchor>. Vous pouvez ensuite filtrer la page pour afficher uniquement vos partenaires actifs en cliquant sur **Afficher les partenaires actifs dans les sections**.
 
+<div id="invite-new-partners-to-appsflyer" />
+
 ### Inviter de nouveaux partenaires dans AppsFlyer
 
 Si le réseau publicitaire avec lequel vous travaillez n’est pas encore intégré à AppsFlyer, vous pouvez lui envoyer un lien d’invitation.
+
+<div id="validation-period-for-new-integrations" />
 
 #### Période de validation des nouvelles intégrations
 

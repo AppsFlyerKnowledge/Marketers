@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En bref :** Téléchargez des rapports agrégés sur la valeur lifetime (LTV), filtrés par date d'attribution et par source média.
 
+<div id="aggregate-data-reports" />
+
 ## Rapports de données agrégées
 
 Les rapports d’<Anchor target="_blank" href="/marketers/fr/docs/aggregated-and-analytics-reporting-overview#ua-ltv-aggregate-data-reports-containing-nonorganic-and-organic-users">'acquisition d'utilisateurs</Anchor> et de <Anchor target="_blank" href="/marketers/fr/docs/aggregated-and-analytics-reporting-overview#retargeting">retargeting</Anchor> ont ces caractéristiques :
@@ -37,6 +39,8 @@ Les rapports d’<Anchor target="_blank" href="/marketers/fr/docs/aggregated-and
 * Les rapports peuvent contenir jusqu'à 200 000 lignes.
 * <Anchor target="_blank" href="/marketers/fr/docs/report-generation-quotas-rate-limitations">Limitations des taux</Anchor>
 
+<div id="download-aggregate-data-reports" />
+
 ### Télécharger les rapports de données agrégées
 
 **Pour télécharger un rapport :**
@@ -45,6 +49,8 @@ Les rapports d’<Anchor target="_blank" href="/marketers/fr/docs/aggregated-and
 2. [Facultatif] Sélectionnez une source média.
 3. Sélectionnez la période des événements d'attribution.
 4. Sélectionnez un rapport puis cliquez sur **Télécharger.**
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

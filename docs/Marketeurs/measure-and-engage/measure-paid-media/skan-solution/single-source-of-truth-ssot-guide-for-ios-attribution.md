@@ -25,6 +25,8 @@ x-zendesk:
 
 <Embed title="Guide de l'attribution IOS en SSOT (Single Source Of Truth)" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/545isomgo1" providerUrl="https://fast.wistia.com" />
 
+<div id="about-single-source-of-truthtrue-ios-performance-data" />
+
 ## Comment obtenir des données de performances fidèles sous iOS 14 et + ?
 
 Lecture connexe : <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide">Guide de la solution SKAN</Anchor> | <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio">Studio de conversion SKAN</Anchor> | Tableau de bord général
@@ -54,6 +56,8 @@ Pour inclure l'indicateur SSOT dans vos données, vous devez d'abord activer SSO
 Voir <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio">Studio de conversion SKAN</Anchor>
 
 </Accordion>
+
+<div id="overview-dashboard-single-source-of-truth-view" />
 
 ## Tableau de bord général, fenêtre SSOT
 
@@ -109,6 +113,8 @@ Dans la fenêtre SSOT :
 * **Re-téléchargements** : compris dans la mesure des installations. Il n'y a pas de différence entre les installations et les re-téléchargements.
 * **Fuseau horaire**: les installations et les événements rapportés par AppsFlyer s'affichent en UTC ou dans le fuseau horaire local propre à l'application, tel que défini sur la  page des <Anchor target="_blank" href="/marketers/fr/docs/app-settings">paramètres de l'app.</Anchor> Pour les données rapportées par SKAN, les installations et les événements s'affichent en utilisant UTC, à l'exception des  données Meta et Google SKAN, pour lesquelles le fuseau horaire est basé sur le fuseau horaire configuré dans vos comptes Meta et Google, respectivement.
 * **Devise** : est affichée en USD, ou suit la devise propre à l'application qui a été définie sur la  <Anchor target="_blank" href="/marketers/fr/docs/app-settings">page des paramètres de l'app.</Anchor>
+
+<div id="filter-considerations" />
 
 #### Remarques concernant les filtres
 
@@ -169,6 +175,8 @@ Métriques disponibles dans le tableau de bord SSOT :
 
 </Accordion>
 
+<div id="how-does-ssot-work" />
+
 ## Comment fonctionne le SSOT ?
 
 <div id="understanding-skanaf-modeled-attribution-duplication" />
@@ -219,6 +227,8 @@ Le procédé SSOT agit dans le SDK AppsFlyer de votre app soit sur l'appareil ut
 **Attention**
 
 * En temps normal, AppsFlyer ne comptabilise pas les réinstallations. Dans le cadre du SSOT, l'état de réinstallation n'est pas pris en compte. Ce qui induit que le SSOT ne supprime pas les installations SKAN en double issues des réinstallations mesurées via SSOT, et que ces installations n'affectent pas les paramètres de af\_attribution.
+
+<div id="attribution-flag-field" />
 
 #### **Champ de l'indicateur d'attribution**
 
@@ -279,6 +289,8 @@ Formule permettant de calculer des exemples de métriques :
 | Évènement in-app | Les événements in-app (en tant que dimensions) et leurs mesures sont disponibles uniquement pour :<ul><li>Les événements configurés dans SKAN Conversion Studio sont disponibles.</li><li>Les événements survenus au cours de la fenêtre 1 sont disponibles.</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

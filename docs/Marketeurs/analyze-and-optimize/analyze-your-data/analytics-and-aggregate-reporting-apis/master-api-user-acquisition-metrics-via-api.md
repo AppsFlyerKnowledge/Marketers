@@ -29,6 +29,8 @@ x-zendesk:
 
 > **En bref :** Pour obtenir une certaine partie de la LTV, l’activité, la rétention, la cohorte et des KPI de performance des campagnes Protect360 via API, au format CSV ou JSON. Sélectionner un ou plusieurs événements in-app.
 
+<div id="master-apiuser-acquisition-metrics-via-api" />
+
 ## API principale : mesurer l’acquisition d’utilisateurs via API
 
 API principale :
@@ -242,6 +244,8 @@ Les cohortes AppsFlyer offrent aux annonceurs la possibilité d’afficher et de
 </Tab>
 </Tabs>
 
+<div id="calculated-kpis" />
+
 #### Calcul des KPI
 
 En plus des KPI décrits précédemment, vous pouvez ajouter des calculs de KPI à vos rapports de l'API principale. Cela vous permet d'inclure vos propres calculs de rapports dans les rapports de l'API principale.
@@ -251,6 +255,8 @@ Vous pouvez insérer autant d’objets KPI intégrés que vous le souhaitez dans
 Les opérateurs de calcul standard sont pris en charge : l'addition (+) dont le code est %2b, la soustraction (-), la multiplication (X), la division (/) dont le code est %2f.
 
 Les clés des champs de KPI calculés **doivent** commencer par «calculated\_kpi\_», suivi de n’importe quelle chaîne valide, par exemple «calculated\_kpi\_purchaserate».
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -310,6 +316,8 @@ Utilisez les paramètres suivants pour sélectionner le paramètre spécifique �
 | Fuseau horaire | Le fuseau horaire utilisé est celui du fuseau horaire spécifique à l’app | timezone=preferred | Non |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 

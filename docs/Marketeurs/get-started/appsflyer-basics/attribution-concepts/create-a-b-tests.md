@@ -24,11 +24,15 @@ x-zendesk:
 
 ![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
 
+<div id="what-is-ab-testing" />
+
 ## Qu'est-ce que le test A/B ?
 
 Le test A/B est une méthode utilisée par les marketers pour tester différents éléments de leurs publicités et de leurs campagnes. Chaque publicité contient des éléments (ciblage, visuels, textes) qui peuvent affecter les taux de conversion des utilisateurs potentiels. Trouver les variantes les plus performantes de vos éléments publicitaires peut avoir un impact significatif sur le résultat de vos efforts de marketing mobile.
 
 Cet article explique **comment les annonceurs peuvent effectuer des tests A/B à l'aide d'AppsFlyer, afin de trouver les éléments publicitaires les plus performants**.
+
+<div id="how-to-ab-test-mobile-campaigns" />
 
 ## Comment tester les campagnes mobiles A/B
 
@@ -50,6 +54,8 @@ Les étapes suivantes s'appliquent à un test A/B que vous réalisez avec AppsFl
 
 1. Utilisez le tableau de bord et les données d'AppsFlyer pour comparer les performances des principaux indicateurs clés de performance entre les deux campagnes.
 2. Sélectionnez la variante gagnante et utilisez-la dans vos campagnes en direct.
+
+<div id="ab-testing-creatives-and-targeting" />
 
 ## Tests A/B des créations et du ciblage
 
@@ -103,6 +109,8 @@ Nous expliquons ci-dessous deux méthodes de tests A/B :
 
 </Accordion>
 
+<div id="ab-testing-ad-placement-on-mobile-web" />
+
 ## Tests A/B de l'emplacement des publicités pour le web mobile
 
 ![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
@@ -128,6 +136,8 @@ Avec la fonction AppsFlyer <Anchor target="_blank" href="/marketers/fr/docs/smar
 1. Téléchargez les rapports de données brutes pour les installations ou les événements in-app. Utilisez la colonne du paramètre d'abonné sélectionné (par exemple af\_sub5) pour filtrer et trier vos données.
 2. Comparez les performances des deux emplacements publicitaires, c'est-à-dire l'emplacement qui a obtenu le plus d'installations ou d'événements post-installation.
 
+<div id="ab-testing-media-sources" />
+
 ## Test A/B des sources média
 
 AppsFlyer a été conçu pour aider les annonceurs à identifier les sources média les plus performantes (et les moins performantes) pour leurs applications. Toutefois, **si les annonceurs ne comparent pas correctement les sources média, ils risquent de tirer des conclusions erronées quant à la qualité du trafic.**
@@ -147,12 +157,16 @@ AppsFlyer a été conçu pour aider les annonceurs à identifier les sources mé
 3. Groupe par source média -> Campagne -> Adset -> Publicité.
 4. Comparez les indicateurs clés de performance pour identifier la source média la plus performante.
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
 >
 > * 1 et 2 sont des publicités différentes sur la même source média. Comparez un indicateur de performance unique, par exemple le taux de fidélisation au quatrième jour, pour tester les créations, le ciblage ou l'emplacement des publicités.
 > * 2 et 3 sont des publicités diffusées sur des supports différents. Si les créations et le ciblage des publicités sont identiques, la comparaison d'un seul KPI permet d'effectuer des tests A/B sur la source média.
+
+<div id="using-audiences-split-for-easy-ab-testing-of-media-sources" />
 
 ### Utilisation de la division des audiences pour faciliter les tests A/B des sources média
 

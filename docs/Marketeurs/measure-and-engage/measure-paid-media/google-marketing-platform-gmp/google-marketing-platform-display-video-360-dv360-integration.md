@@ -24,11 +24,15 @@ x-zendesk:
 ---
 > **En bref :** Google Marketing Platform - Display & Video 360 (GMP-DV360) est un partenaire du réseau self-reporting (SRN) d'AppsFlyer qui mêle la publicité et les analyses. L'intégration de GMP-DV360 (dv360\_int) offre la publicité et l’analyse pour améliorer la relation clientèle, obtenir des informations précieuses et booster les performances marketing.
 
+<div id="important" />
+
 > 🚧 **Attention !**
 >
 > Voir le bulletin sur la <Anchor target="_blank" href="/marketers/fr/docs/bulletin-supporting-the-new-google-eu-consent-policy">prise en charge de la nouvelle politique de consentement Google dans l'UE</Anchor>.
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+
+<div id="overview" />
 
 ## Présentation
 
@@ -36,6 +40,8 @@ L'intégration GMP-DV360 utilise les ID de lien pour la mesurer les conversions.
 
 * [DV360 pour les annonceurs](#configuration-de-gmp-dv360-pour-les-annonceurs) : à compléter une fois (obligatoire)
 * [DV360 pour les agences](#mettre-en-place-gmp-dv360-pour-les-agences) : facultatif pour chaque agence
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -49,6 +55,8 @@ Le tableau ci-dessous décrit les solutions d’intégration GMP :
 | DV360 | Intégrer DV360 à AppsFlyer pour mesurer l'attribution dv360\_int | Compléter l'[intégration de l'annonceur](#configuration-de-gmp-dv360-pour-les-annonceurs) |
 | CM360 & DV360 | Acheter du trafic DV360 via CM360, mesuré comme attribution dv360\_int dans AppsFlyer. | Compléter l'[intégration de l'annonceur](#configuration-de-gmp-dv360-pour-les-annonceurs) |
 | CM360 et source média tierce non DV360 | Acheter le trafic des sources média tierces et mesurer les conversions d'app mobile issues de ce trafic dans CM360. | <Anchor target="_blank" href="/marketers/fr/docs/gmp-use-case-of-traffic-measurement-from-3rd-parties-in-cmp360">Mesurer le trafic tiers avec CM360</Anchor> |
+
+<div id="data-sharing-between-appsflyer-and-gmp---dv360" />
 
 ### Partager les données entre AppsFlyer et GMP - DV360
 
@@ -66,6 +74,8 @@ Le tableau ci-dessous décrit les solutions d’intégration GMP :
 | product\_type | af\_channel |
 | external\_customer\_id | network\_account\_id |
 | site\_id | af\_siteid |
+
+<div id="setting-up-gmp-dv360-for-advertisers" />
 
 ## Configuration de GMP-DV360 pour les annonceurs
 
@@ -101,9 +111,13 @@ Lorsque AppsFlyer interroge GMP-DV360, il renvoie les paramètres contenus dans 
 
 <span id="activate-partner::e4f2f638"></span>L'onglet **Integration** comprend un certain nombre de sections, détaillées ci-dessous.
 
+<div id="activate-partner" />
+
 #### Activer le partenaire
 
 Pour configurer l'intégration, vous devez d'abord **déclencher** l’option<Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#activating-a-partner">Activer le partenaire</Anchor>. En savoir plus sur **l'activation et la désactivation des intégrations des partenaires.**
+
+<div id="general-settings" />
 
 #### Paramètres généraux
 
@@ -113,12 +127,16 @@ Pour configurer l'intégration, vous devez d'abord **déclencher** l’option<An
 
 <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
+<div id="install-attribution" />
+
 #### Attribution des installations
 
 Définissez les différentes fenêtres d'attribution pour attribuer les nouvelles installations (premiers lancements) des utilisateurs qui ont consulté, ou cliqué sur, votre publicité. Elles correspondent au temps maximum entre le moment du clic/de l'affichage, et celui de l'installation. Seules les installations effectuées au cours de la fenêtre rétrospective peuvent être attribuées à Google Marketing Platform - Display & Video 360 (DV360).
 
 1. Définissez la **Fenêtre rétrospective post-clic d'installation** sur 1-23 heures ou 1-30 jours.
 2. [Facultatif] Activez **l'attribution après affichage de l'installation** et définissez la fenêtre de rétrospection sur 1 à 23 heures ou 1 à 30 jours.
+
+<div id="re-engagement-attribution" />
 
 #### Attribution du ré-engagement
 
@@ -129,15 +147,21 @@ Définissez les différentes fenêtres d'attribution pour attribuer les réengag
 
 Pour en savoir plus sur les <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide#reengagement-rules-and-windows">règles et fenêtres du ré-engagement</Anchor>.
 
+<div id="re-engagement-window" />
+
 #### Fenêtre de ré-engagement
 
 Définissez la fenêtre pendant laquelle les événements in-app sont d’abord attribués à la conversion de ré-engagement <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide#setup-reengagement-window">En savoir plus</Anchor>.
 
 * Définissez la **fenêtre de ré-engagement** sur 1 à 23 heures, 1 à 90 jours ou **lifetime**.
 
+<div id="ignore-active-users-for-retargeting" />
+
 #### Ignorer les utilisateurs actifs pour le retargeting
 
 Définissez la période pendant laquelle les <Anchor target="_blank" href="/marketers/fr/docs/set-retargeting-inactivity-window#période-dinactivité">ré-engagements et réattributions</Anchor> des utilisateurs qui ont lancé votre application seront ignorés. Ce qui signifie que leur activité durant la fenêtre ne sera pas enregistrée dans AppsFlyer.
+
+<div id="note-3" />
 
 > 📘 **Remarque**
 >
@@ -145,6 +169,8 @@ Définissez la période pendant laquelle les <Anchor target="_blank" href="/mark
 
 1. Activez **Ignorer les utilisateurs actifs pour le retargeting**.
 2. Définissez la fenêtre d'inactivité.
+
+<div id="in-app-event-postbacks" />
 
 #### Postbacks d'évènements in-app
 
@@ -167,9 +193,13 @@ Configurer le mappage des événements in-app avec les événements GMP-DV360 en
    2. Sélectionnez une nouvelle app dans la liste déroulante.
    3. Répétez les différentes étapes d’intégration pour l’app sélectionnée.
 
+<div id="note-4" />
+
 > 📘 **Remarque**
 >
 > Pour les apps iOS uniquement : le contrôle que vous avez sur les données partagées avec le partenaire via les postbacks et <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">rapports</Anchor> dépend de **l'état d’activation de la Confidentialité avancée** (pour iOS 14.5 et +).
+
+<div id="u-parameter-mapping" />
 
 #### Mappage des paramètres U
 
@@ -219,6 +249,8 @@ Il est possible d'**utiliser les liens d'attribution d'AppsFlyer avec DV360 pour
 
 Si vous souhaitez pouvoir mesurer le nombre de clics provenant de DVM360 sur AppsFlyer, vous devez ajouter une URL d'attribution AppsFlyer à votre tableau de bord DVM360. Assurez-vous (si possible) que le nom de la campagne dans l'URL d'attribution **est identique** à l'ID d'emplacement sur GMP, et ce afin qu'AppsFlyer puisse récupérer et ajouter les données de clic aux campagnes appropriées.
 
+<div id="important-1" />
+
 > 🚧 **Important !**
 >
 > L'utilisation des liens d'attribution pour **DV360**n'est pas obligatoire.
@@ -263,9 +295,13 @@ Définissez <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrate
 
 </Accordion>
 
+<div id="setting-up-gmp-dv360-for-agencies" />
+
 ## Mettre en place GMP-DV360 pour les agences
 
 Les agences peuvent mener des campagnes avec GMP-DV360 en votre nom.
+
+<div id="agency-setup" />
 
 #### Configuration de l'agence
 
@@ -273,6 +309,8 @@ Les agences peuvent mener des campagnes avec GMP-DV360 en votre nom.
 | --- | --- |
 | Annonceur | <ol><li>Vérifiez que vous avez bien complété l’intégration de l’annonceur GMP-DV360.</li><li>Dans AppsFlyer, dans le menu latéral, choisissez Collaborer > **Intégrations actives**.</li><li>Sélectionnez une agence.</li><li>Allez dans l'onglet **Autorisations** et cliquez sur **Autorisations de l'agence.**</li><li>[Obligatoire] Dans l'onglet Integration, activez **Postbacks d'évènement in-app**. **Cela permettra à l'agence d'activer ou désactiver les postbacks de son côté.**</li></ol> |
 | Agence | <ol><li>Dans AppsFlyer, dans le menu latéral, choisissez Collaborer > **Intégrations actives**.</li><li>Sélectionnez **Google Marketing Platform - Display & Video 360 (DV360).**</li><li>Ouvrez l'onglet **Intégration**.<br />Le statut de l'intégration avec GMP s'affiche.</li></ol>[![mceclip2.png](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)](https://files.readme.io/153226084274c9e2bf0c5cfdca65f7d36076a2020c605e21177c8c71613b69f6-360017196637.png)<ol><li>Vérifiez que l’option **Activer le partenaire** est cochée. Si ce n’est pas encore fait, l’annonceur doit compléter [l’intégration de l’annonceur GMP-DV360.](#configuration-de-gmp-dv360-pour-les-annonceurs)</li><li>Vérifiez que les paramètres restants, comme les fenêtres rétrospectives et le mappage des événements in-app, sont corrects. Demandez à l'annonceur d'apporter les modifications nécessaires en cas de besoin.</li><li>Saisissez un ou plusieurs **ID d’annonceur DBM**. L'ID se trouve dans votre <Anchor target="_blank" href="https://support.google.com/displayvideo/answer/3423704?hl=en&ref_topic=9133452">tableau de bord GMP.</Anchor></li><li>Cliquez sur **Enregistrer**.</li></ol> |
+
+<div id="gmp-dv360-discrepancies" />
 
 ## Écarts de résultats dans GMP-DV360
 

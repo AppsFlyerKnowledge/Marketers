@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** The Trade Desk, partenaire intégré du réseau publicitaire AppsFlyer, utilise sa solution de publicité mobile améliorée pour mettre en place des campagnes stratégiques, évolutives et intelligentes afin de répondre aux besoins des utilisateurs sur tous les appareils. The Trade Desk propose une attribution mobile basée sur les clics, une attribution mobile basée sur les vues et un retargeting basé sur les clics, qui peuvent tous être enregistrés via AppsFlyer.
 
+<div id="setting-up-the-trade-desk-ttd" />
+
 ## Configuration de The Trade Desk (TTD)
 
 Suivez ces étapes pour activer la mesure des campagnes AppsFlyer.
@@ -108,6 +110,8 @@ Dans cette étape, vous ajouterez les trackers de clics et d'impressions qui ont
 >    * **Fenêtres d'attribution de la campagne :** période allant de l'exposition à la publicité jusqu'à la conversion.
 > 4. Cliquez sur **ENREGISTRER**.
 
+<div id="integrating-ttd-with-appsflyer" />
+
 ## Intégration avec AppsFlyer
 
 La configuration se fait depuis la page **Intégrations actives**, mais vous devez d'abord vous rendre dans le <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations">marketplace</Anchor> pour trouver le partenaire .
@@ -129,14 +133,20 @@ Pour obtenir une description détaillée de l'en-tête de la fenêtre de configu
 
 <Accordion title="Onglet Intégration">
 
+<div id="activate-partner" />
+
 #### Activation du partenaire
 
 Lors de votre première visite, vous devrez cocher l'option **Activer le partenaire** pour configurer l'intégration. L'option doit rester activée tant que vous travaillez avec TTD.  
 Pour plus de détails sur l'activation des partenaires, cliquez <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">ici</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Protection de la vie privée avancée
 
 Pour les applications iOS, le bouton <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">Activer la confidentialité avancée</Anchor> apparaît. Lorsqu'elle est activée, cette option limite le partage des identifiants des utilisateurs avec le partenaire. Notez que lorsque le bouton <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">Confidentialité avancée agrégée</Anchor> est activé dans les paramètres de l'application, **Activer la confidentialité avancée** est enclenché et verrouillé par défaut. 
+
+<div id="general-settings" />
 
 #### Paramètres généraux
 
@@ -150,6 +160,8 @@ The Trade Desk se connecte à AppsFlyer via un ID de réseau unique. Si vous n'a
 
 Enclenchez **Activer l'attribution post-vue** pour attribuer les installations post-vue via The Trade Desk. Le curseur de fenêtre d'attribution post-vue est disponible dans l'onglet du lien d'attribution (décrit ci-dessous).
 
+<div id="default-postbacks" />
+
 #### Postbacks par défaut
 
 ![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
@@ -162,6 +174,8 @@ Pour envoyer des messages automatiques à The Trade Desk lors d'installations et
 > 📘 **Note**
 >
 > En tant que réseau « toute installation », The Trade Desk préfère recevoir des postbacks pour toutes les nouvelles installations de votre application, quelle qu'en soit la source, et recommande de sélectionner **Toutes les sources média, y compris organiques**.
+
+<div id="in-app-events-settings" />
 
 #### Paramètres des événements in-app
 
@@ -194,6 +208,8 @@ Mappage des événements AppsFlyer avec TTD via postback. Si l'envoi de postback
 
 Générez et enregistrez les liens d’attribution et envoyez-les à TTD pour attribuer des campagnes spécifiques, des ad sets ou des publicités uniques, à la fois pour les campagnes UA et les campagnes de retargeting. Vous pouvez utiliser un lien à plateforme unique ou <Anchor target="_blank" href="/marketers/fr/docs/onelink-guide">OneLink</Anchor>.
 
+<div id="attribution-link-parameters" />
+
 #### Paramètres du lien d'attribution
 
 En ajoutant des paramètres au lien d'attribution vous pouvez effectuer des analyses beaucoup plus précises. Il est possible de modifier les paramètres déjà définis sur le lien d'attribution en les ajoutant, ainsi que leurs nouvelles valeurs, ici. Lors de l'enregistrement du lien d'attribution, tous les paramètres configurés dans cet onglet sont sauvegardés.
@@ -201,6 +217,8 @@ En ajoutant des paramètres au lien d'attribution vous pouvez effectuer des anal
 Sélectionnez les paramètres que vous souhaitez ajouter au lien d'attribution.
 
 ![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+
+<div id="default-parameters" />
 
 #### Paramètres par défaut
 
@@ -214,6 +232,8 @@ Sélectionnez les paramètres que vous souhaitez ajouter au lien d'attribution.
 
 Vous pouvez ajouter d'autres paramètres pour le lien d'attribution. En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#attribution-link-tab">la mise en place du lien d'attribution</Anchor> et sur <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters">la structure et les paramètres du lien d'attribution.</Anchor>
 
+<div id="parameters-for-measuring-ctv" />
+
 #### Paramètres de mesure CTV
 
 Vous pouvez mesurer le trafic CTV avec AppsFlyer en ajoutant les paramètres et valeurs suivants :
@@ -222,6 +242,8 @@ Vous pouvez mesurer le trafic CTV avec AppsFlyer en ajoutant les paramètres et 
 | --- | --- | --- |
 | Rediriger | false |  |
 | af\_xplatform\_vt\_lookback | 1h-72h | N'importe quelle valeur entre 1 et 72 heures peut être saisie |
+
+<div id="click-through-attribution" />
 
 #### Attribution post clic
 
@@ -236,6 +258,8 @@ Paramètre du lien d'attribution : af\_click\_lookback
 En savoir plus sur la <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">fenêtre rétrospective de clic.</Anchor>
 
 **Lien d'attribution post-clic :** contient tous les paramètres que vous avez inclus dans la configuration du lien d'attribution. Vous pouvez copier le lien et l'envoyer au partenaire pour qu'il soit activé lorsque vos prospects cliquent sur une publicité correspondante. 
+
+<div id="view-through-attribution" />
 
 #### Attribution post-vue
 
@@ -278,6 +302,8 @@ Dans cet onglet, vous pouvez sélectionner les autorisations à accorder à The 
 ![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
 
 Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre configuration pour votre application :
+
+<div id="ad-network-permissions" />
 
 #### **Autorisations pour le réseau publicitaire**
 

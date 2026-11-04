@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
 
+<div id="overview" />
+
 ## Vue d'ensemble
 
 Une intégration SRN avancée signifie que tout le trafic <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-knowledge-base-glossary?query=glossar#dual-consent">à consentement double</Anchor> est attribué et signalé comme un trafic SRN classique. Pour le trafic non consenti, AppsFlyer attribue et mesure l'attribution basée sur les clics et les impressions provenant de TikTok, conformément aux conditions de confidentialité.L'intégration prend en charge l'attribution des clics et des impressions, les coûts, les revenus publicitaires et les audiences.
@@ -47,6 +49,8 @@ La configuration se fait depuis la page **Intégrations actives**, mais pour tro
 5. Cliquez sur **Enregistrer l'intégration**.
 6. Terminez la configuration en suivant les onglets requis, cf description ci-dessous.
 
+<div id="set-up-tiktok-for-business" />
+
 ## Configurer TikTok For Business
 
 La fenêtre de configuration comprend les onglets suivants : Intégration, Lien d'attribution, Coût, Revenus publicitaires et Autorisations. L'onglet **Lien d'attribution** n'est pas disponible dans TikTok for Business, les autres onglets sont facultatifs.
@@ -63,9 +67,13 @@ La fenêtre de configuration comprend les onglets suivants : Intégration, Lien
 
 L'onglet **Integration** comprend un certain nombre de sections, décrites ci-dessous.
 
+<div id="activate-partner" />
+
 #### Activation du partenaire
 
 Pour configurer l'intégration, vous devez d'abord [activer](#activation-du-partenaire) la fonction **Activer le partenaire**. En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation#activating-a-partner">l'activation et la désactivation des intégrations des partenaires</Anchor>.
+
+<div id="advanced-data-sharing" />
 
 #### Protection de la vie privée avancée
 
@@ -82,6 +90,8 @@ Pour les apps iOS uniquement : votre contrôle des données partagées avec le 
 > * Lors de l'activation de l'intégration (`tiktokglobal_int`), l'option **Confidentialité avancée** est activée par défaut.
 > * Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), l'option **Confidentialité avancée** est activée par défaut, même si elle ne l'était pas avant la migration.
 > * D'après TikTok for Business, laisser la **Confidentialité avancée** **activée** peut générer une sous-déclaration du nombre d'événements de la campagne et limiter les performances des campagnes futures sur TikTok.
+
+<div id="general-settings" />
 
 #### Paramètres généraux
 
@@ -102,6 +112,8 @@ L'ID d'app TikTok est un code unique généré dans TikTok Ads Manager et utilis
 > * Après la migration vers la nouvelle intégration (`tiktokglobal_int`), toutes les valeurs de l'ancienne intégration (`bytedanceglobal_int`) sont automatiquement remplies.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">En savoir plus sur les conditions relatives à l'ID d'app TikTok pour iOS 14</Anchor>
 
+<div id="default-postbacks" />
+
 #### Postbacks par défaut
 
 **Cette section ne concerne que** **le trafic non autorisé**. Le trafic autorisé est envoyé directement à TikTok for Business via <Anchor target="_blank" href="/marketers/fr/docs/self-reporting-networks-srns?query=about%20srn">le mode SRN</Anchor>.
@@ -115,6 +127,8 @@ Configurer l'envoi des postbacks pour les **installations**, **installations rej
 >
 > * Pour les applications iOS uniquement : votre contrôle des données partagées avec le partenaire via les postbacks et les <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">rapports</Anchor> dépend de l'état de la fonction **Confidentialité avancée (pour iOS 14.5 et +)**.
 > * Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), les postbacks d'installations sont réglés par défaut sur **Ce partenaire uniquement**, sans aucun rapport avec leur statut avant la migration.
+
+<div id="install-attribution" />
 
 #### Attribution d'installation
 
@@ -137,6 +151,8 @@ Définir l'attribution post-clic et post-vue pour les installations (premiers la
 >     Ces données ne sont pas disponibles dans le GCD. Les rapports de données agrégées continuent d'afficher les conversions post-vue.
 > * Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), les fenêtres rétrospectives sont réglées sur les **Valeurs par défaut**, sans aucun rapport avec leur statut avant la migration. Vous pouvez mettre à jour ces paramètres.
 
+<div id="re-engagement-attribution" />
+
 #### Attribution du ré-engagement
 
 Définir des fenêtres de réengagement, y compris des attributions post clic et post vue :
@@ -150,6 +166,8 @@ Définir des fenêtres de réengagement, y compris des attributions post clic et
 > Après la migration depuis l'ancienne intégration (`bytedanceglobal_int`) et l'activation de la nouvelle intégration (`tiktokglobal_int`), l'option **Réengagement** est **désactivée par défaut,**, même si elle ne l'était pas avant la migration. Si votre ancienne intégration comporte <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">des campagnes de retargeting</Anchor>, veillez à **les activer** dans la nouvelle intégration **afin de ne pas interrompre le fonctionnement des opérations.**
 
 Pour en savoir plus sur les <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide#reengagement-rules-and-windows">règles et fenêtres de réengagement</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 #### Postback d'évènements in-app
 
@@ -216,6 +234,8 @@ Cette intégration fournit des données agrégées sur les coûts, les clics et 
 
 6. Cliquez sur **Sauvegarder les coûts**.
 
+<div id="for-roi360-subscribers" />
+
 #### Pour les abonnés à ROI360
 
 * Les annonceurs et les agences qui ont activé l'API de coût dans les intégrations ancienne `bytedanceglobal_int` et actuelle `tiktokglobal_int` risquent d'avoir des données de coûts en double. Pour éviter cela, allez dans l'onglet Intégration `bytedanceglobal_int` > **Coûts** et désactivez la fonctionnalité.Toutefois, lors de l'activation de la nouvelle intégration des coûts, les données de coûts des 5 jours précédant le jour de la transition sont automatiquement collectées. Cela signifie que la nouvelle intégration peut afficher des données de coûts en double pour ces 5 jours. **Par exemple**, si l'ancienne intégration des coûts a été désactivée le 15 janvier et que la nouvelle intégration des coûts a été activée le même jour, des données de coûts en double apparaissent dans la nouvelle intégration des coûts entre le 10 et le 14 janvier, même si elle n'a été activée qu'au 15 janvier.
@@ -249,9 +269,13 @@ En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-in
 
 </Accordion>
 
+<div id="set-up-tiktok-for-business-for-agencies" />
+
 ## Configuration de TikTok for Business pour les agences
 
 Les agences travaillant pour le compte d'annonceurs peuvent activer l'intégration de TikTok for Business et obtenir les attributions pour leurs campagnes. Toutefois, cette intégration présente certaines limites en ce qui concerne les agences.
+
+<div id="agency-limitations" />
 
 ### Limites de l'agence
 

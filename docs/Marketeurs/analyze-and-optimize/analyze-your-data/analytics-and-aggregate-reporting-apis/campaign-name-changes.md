@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** Modifier les noms des campagnes sans créer de doublons dans l'affichage des données.
 
+<div id="campaign-name-changes" />
+
 ## Changements de nom de campagne
 
 La modification des noms des campagnes affecte l'affichage des **données agrégées** dans les tableaux de bord et les rapports. AppsFlyer affiche les campagnes en utilisant l'ID de la campagne comme clé. Si plusieurs noms sont associés au même ID de campagne, le nom le plus récent est utilisé pour afficher les données.
@@ -52,12 +54,14 @@ Le tableau suivant indique les tableaux de bord et les rapports qui prennent en 
 | ETL des coûts | Oui |
 | Tableau de bord général SKAN | Non |
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > * Le 1er janvier, la campagne **exemple\_a1** a été lancée.
 > * Le 2 janvier, le nom de la campagne est passé d'**exemple\_a1** à **exemple\_a2**.
 >
-> #### Exemple de données de campagne
+> #### <span id="example-campaign-data"></span>Exemple de données de campagne
 >
 >
 >
@@ -68,11 +72,13 @@ Le tableau suivant indique les tableaux de bord et les rapports qui prennent en 
 >
 >
 >
-> #### Vue d'ensemble du tableau de bord
+> #### <span id="overview-dashboard-display"></span>Vue d'ensemble du tableau de bord
 >
 >
 >
 > <table><tbody><tr><th><p><span>Campagne</span></p></th><th><p><span>ID de campagne</span></p></th><th><p><span>Installations</span></p></th><th><p><span>Dépenses publicitaires</span></p></th></tr><tr><td><p><span>example_a2</span></p></td><td><p><span>123</span></p></td><td><p><span>300</span></p></td><td><p><span>300 $</span></p></td></tr><tr><td colspan="4"><p>Résultat : les données s'affichent sous le nom de la campagne la plus récente.</p></td></tr></tbody></table>
+
+<div id="best-practice" />
 
 ### Recommandations
 

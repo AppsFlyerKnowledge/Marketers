@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** créez des rapports de données d'attribution pour matcher les données de niveau utilisateur provenant des événements d'installation/ de retargeting avec les données de vos systèmes.
 
+<div id="creating-an-attribution-data-report" />
+
 ## Créer un rapport de données d’attribution
 
 **Pour créer un rapport de données d'attribution, suivez les étapes détaillées dans les onglets ci-dessous.**
@@ -56,6 +58,8 @@ x-zendesk:
 
 Pour définir les données sources à utiliser dans le rapport :
 
+<div id="attribution-data-sources" />
+
 #### **Source des données d'attribution**
 
 * **Apps :** Sélectionnez une ou plusieurs apps dans votre compte AppsFlyer.
@@ -70,6 +74,8 @@ Pour définir les données sources à utiliser dans le rapport :
 
 * **Fenêtre temporelle :** sélectionnez le nombre de jours de données historiques pendant lequel la DCR doit rechercher les événements d’attribution qui matchent les événements de votre source personnalisée (de 1 à 180 jours).
 
+<div id="custom-sources" />
+
 #### **Sources personnalisées**
 
 Pour la structure de votre rapport, vous pouvez choisir d’utiliser les données de n’importe quelle <Anchor target="_blank" href="/marketers/fr/docs/data-clean-room-working-with-sources">source personnalisée que vous avez créée.</Anchor> Vous devez sélectionner au moins une source personnalisée.
@@ -82,6 +88,8 @@ Pour la structure de votre rapport, vous pouvez choisir d’utiliser les donnée
 
 Pour matcher les données entre les sources, chacune des sources **personnalisées** utilisées dans le rapport doit inclure un <Anchor target="_blank" href="/marketers/fr/docs/data-clean-room-setting-up-cloud-services">identifiant</Anchor> mappé à un **identifiant de clé** dans les données d’attribution.
 
+<div id="what-is-a-key-identifier" />
+
 #### **Qu’est-ce qu’un identifiant de clé ?**
 
 Vous pouvez mapper l’un de ces identifiants de données d’attribution comme **identifiant de clé :**
@@ -92,13 +100,19 @@ Vous pouvez mapper l’un de ces identifiants de données d’attribution comme 
 * **ID utilisateur client (CUID) :** un identifiant utilisateur unique souvent généré et défini par le propriétaire de l’app au moment de l’inscription de l’utilisateur.
   * L’utilisation du CUID pour mapper des données nécessite que votre app soit configurée pour <Anchor target="_blank" href="/marketers/fr/docs/customer-user-id-field-cuid">envoyer le CUID à AppsFlyer</Anchor> via le SDK ou l’API de serveur à serveur (S2S).
 
+<div id="important" />
+
 > 🚧 **Attention !**
 >
 > Toutes les sources média ne permettent pas de matcher à l’aide du CUID. Il est fortement recommandé d’utiliser l’ID AppsFlyer.
 
+<div id="mapping-schemes-directindirect" />
+
 #### **Schémas de mappage (direct/indirect)**
 
 Si le rapport utilise plusieurs sources personnalisées, seule l’une d’entre elles doit être mappée **directement** à un identifiant de clé des données d'attribution. Les autres sources personnalisées peuvent être mappées **directement ou indirectement,** comme l’illustre cet exemple :
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -121,11 +135,15 @@ Si le rapport utilise plusieurs sources personnalisées, seule l’une d’entre
 
 <Accordion title="Définir le traitement de multiples événements de matching">
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Si les types d'attribution sélectionnés pour le rapport comprennent **uniquement les installations et/ou installations organiques**, cette section ne vous concerne pas. Veuillez vous rendre directement à la section [Sélection des dimensions](/docs/data-clean-room-creating-attribution-data-reports#select-dimensions).
 
 Si les types d'attribution que vous sélectionnez pour votre rapport incluent des **réinstallations**, des **réengagements ou des réattributions**, il est possible que les données d'attribution incluent plus qu’un seul événement avec le même identifiant de clé sur la période sélectionnée. Si cela se produit, vous devez dire à la DCR quels événements de matching doivent être inclus dans le rapport.
+
+<div id="matching-all-events" />
 
 #### **Matcher tous les événements**
 
@@ -133,6 +151,8 @@ La méthode de matching la plus complète permet à votre rapport d'inclure tous
 
 * L'identifiant dans votre source mappé à install\_time doit être au format suivant : **aaaa-MM-jj HH:mm:ss.**
 * **Remarque :** Même si le nom de l'identifiant des données d'attribution est install\_time, il indique en réalité **l'heure de l'événement** lorsqu'il fait référence aux événements de réinstallation, ré-engagement ou ré-attribution.
+
+<div id="matching-a-single-event" />
 
 #### **Matcher un événement unique**
 
@@ -153,6 +173,8 @@ N’oubliez pas que les données de niveau utilisateur ne peuvent pas être rapp
 
 Une dimension est généralement un attribut avec lequel vous catégorisez les utilisateurs d’une app (ex. géo, date d’installation, campagne, etc.)
 
+<div id="selecting-report-dimensions" />
+
 #### **Sélection des dimensions d’un rapport**
 
 Les dimensions du rapport des données d'attribution peuvent comprendre :
@@ -169,6 +191,8 @@ Les dimensions du rapport des données d'attribution peuvent comprendre :
 
 **Remarque :** Par défaut, tous les rapports sont regroupés par la dimension des données d'attribution **media\_source.** Si vous ne souhaitez pas utiliser cette dimension dans votre rapport, vous pouvez la retirer de la liste des **dimensions du rapport**.
 
+<div id="optional-customizing-dimension-display-names" />
+
 #### **[Facultatif] Personnaliser les noms d’affichage des dimensions**
 
 Par défaut, les noms des dimensions s’affichent dans votre rapport exactement tels que dans les données d’attribution ou dans vos sources personnalisées. Si vous le souhaitez, vous pouvez personnaliser les noms de dimension de votre rapport.
@@ -180,6 +204,8 @@ Par défaut, les noms des dimensions s’affichent dans votre rapport exactement
 3. Remplacez le nom par le nom d’affichage de la dimension à utiliser dans votre rapport (jusqu’à 50 caractères).
 4. Cliquez sur **OK** pour enregistrer le nom d’affichage, ou **X** pour l’annuler.
 
+<div id="preserving-privacy-while-grouping-by-dimension-regrouping" />
+
 #### Protection de la confidentialité lors du regroupement par dimension (regroupement)
 
 En fonction de la taille de votre ensemble de données, du nombre de dimensions choisies et de différents facteurs, il peut arriver qu’un rapport contienne un ou plusieurs groupes avec trop peu d’utilisateurs pour permettre le reporting. Si les données étaient rapportées de cette façon, cela enfreindrait les règles concernant la fourniture de données au niveau de l’utilisateur.
@@ -187,6 +213,8 @@ En fonction de la taille de votre ensemble de données, du nombre de dimensions 
 * **Attention !** Le nombre minimum d’utilisateurs pour autoriser le reporting varie d’une source média à l’autre.
 
 Toutefois, au lieu de retirer ou masquer complètement les données du rapport, la DCR utilise un **procédé de regroupement** pour fournir autant de détails que possible tout en préservant la confidentialité de l’utilisateur.
+
+<div id="regrouping-example" />
 
 > 📄 **Exemple de regroupement**
 >
@@ -246,6 +274,8 @@ Toutefois, au lieu de retirer ou masquer complètement les données du rapport, 
 >
 > * *Ci-dessous vous trouverez une fonctionnalité avancée que vous pouvez aussi utiliser pour appliquer le regroupement aux dimensions des sources personnalisées.*
 
+<div id="optional-managing-dimension-priority" />
+
 #### **[Facultatif] Gérer la priorité d’une dimension**
 
 Par défaut, les dimensions des données d'attribution sont éliminées dans l’ordre inverse de leur apparition dans la liste des **dimensions du rapport**. Toutefois, vous pouvez modifier la séquence par défaut et/ou appliquer le regroupement aux dimensions source personnalisées sélectionnées pour conserver les dimensions qui vous semblent les plus importantes.
@@ -281,6 +311,8 @@ Les métriques (mesures) sont les données numériques que vous avez collectées
 3. Pour retirer une métrique, sélectionnez-la dans la liste **Métriques du rapport** et utilisez la fonction **Supprimer** pour la remettre dans la liste **Métriques provenant des sources**.
 4. Répétez jusqu’à ce que vous ayez ajouté toutes les mesures que vous souhaitez inclure dans le rapport.
 
+<div id="optional-customizing-metric-display-names" />
+
 #### **[Facultatif] Personnaliser les noms d’affichage des métriques**
 
 Par défaut, les noms des mesures s’affichent dans votre rapport exactement tels que dans les données d’attribution ou dans vos sources personnalisées. Si vous le souhaitez, vous pouvez personnaliser les noms des mesures de votre rapport.
@@ -291,6 +323,8 @@ Par défaut, les noms des mesures s’affichent dans votre rapport exactement te
 2. Cliquez sur le bouton de modification ![edit_button.png](https://files.readme.io/4c3822661beac49fad247c7f5958a535e46031238e975a5323a5550722c89c8a-10753875375377.png) qui s’affiche à droite de la mesure.
 3. Remplacez le nom par le nom d’affichage de la métrique à utiliser dans votre rapport (jusqu’à 50 caractères).
 4. Cliquez sur **OK** pour enregistrer le nom d’affichage, ou sur **X** pour l’annuler.
+
+<div id="optional-select-identifiers-to-count" />
 
 #### **[Facultatif] Sélectionnez les identifiants à comptabiliser**
 
@@ -328,6 +362,8 @@ La DCR fournit des rapports aux services cloud que vous avez sélectionnés via�
 
 </Accordion>
 
+<div id="when-does-the-report-run" />
+
 ## Quand le rapport est-il généré ?
 
 Une fois qu’un rapport a été créé et enregistré, il s’exécute chaque fois que qu’une nouvelle version de n’importe quelle [source personnalisée qu’il utilise](/docs/data-clean-room-creating-attribution-data-reports#sources-personnalisées) est détectée :
@@ -337,6 +373,8 @@ Une fois qu’un rapport a été créé et enregistré, il s’exécute chaque f
 * Pour les sources situées dans des **compartiments de stockage sur le cloud** (Amazon S3 et GCS), la DCR décide que la nouvelle version d’une source a été créée lorsqu’elle détecte que <Anchor target="_blank" href="/marketers/fr/docs/data-clean-room-working-with-sources#mettre-à-jour-les-sources-pour-déclencher-lédition-des-rapports">l’importation d’une nouvelle version d’un fichier source</Anchor>, avec le dossier \_SUCCESS qui l’accompagne.
 
 AppsFlyer recherche en continu les nouvelles versions des fichiers sources pour **le jour en cours et les 2 jours qui le précèdent.**
+
+<div id="reference" />
 
 ## Référence
 

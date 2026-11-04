@@ -29,6 +29,8 @@ x-zendesk:
 
 <Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
+<div id="sessions-counting-principles" />
+
 ## Principes de comptage des sessions
 
 Le nombre de sessions, ou lancements, effectuées par les utilisateurs est un indicateur important qui sert à mesurer l'engagement des utilisateurs envers l'application. Elle est disponible via plusieurs rapports et tableaux de bord. Les sessions sont utilisées pour calculer les paramètres suivants :
@@ -39,6 +41,8 @@ Le nombre de sessions, ou lancements, effectuées par les utilisateurs est un in
 * Utilisateurs loyaux utilisant le réglage par défaut de l'ouverture de 3 applications
 
 **Attention !** Dans le cas des sessions organiques, l'indicateur est disponible dans les tableaux de bord Activité et Cohorte, mais pas dans le tableau de bord Vue d'ensemble.
+
+<div id="sessions-calculation" />
 
 ### Calcul des sessions
 
@@ -57,6 +61,8 @@ Une session est signalée par le SDK lorsque l'une des situations suivantes se p
 **Mesure des sessions**
 
 La métrique des sessions est comptabilisée en tenant compte d'un mécanisme de temps minimum entre les sessions avec une durée par défaut de 10 minutes comme décrit dans l'exemple qui suit.
+
+<div id="minimum-time-between-sessions-mechanism" />
 
 ## Mécanisme de délai minimum entre les sessions
 
@@ -101,6 +107,8 @@ Supposition: Le délai minimum autorisé entre les réglages des sessions est de
 
 </Accordion>
 
+<div id="sessions-related-topics" />
+
 ## Thèmes liés aux sessions
 
 <div id="retargeting-sessions" />
@@ -129,6 +137,8 @@ Vous pouvez envoyer des postbacks de sessions partenaires de manière à ce qu'u
 * Pour envoyer le postback : associer explicitement *af\_app\_opened* à un événement partenaire. Attention ! Dans le rapport de données brutes d'AppsFlyer disponible via Data Locker, cet événement est considéré comme un *lancement*.
 * Il faut tenir compte du fait qu'il s'agit d'un événement à fort volume et que de nombreux partenaires ne souhaitent pas le recevoir.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Le mappage de `af_app_opened` n'est pris en charge que par les partenaires dont les **sessions d'envoi** sont activées.
@@ -143,12 +153,16 @@ Vous pouvez envoyer des postbacks de sessions partenaires de manière à ce qu'u
 
 **Côté serveur :** Les sessions rapportées par l'application sont comptées et enregistrées après avoir pris en compte le mécanisme de temps minimum entre les sessions. Les sessions comptabilisées sont attribuées selon les mêmes <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model">règles d'attribution</Anchor> que les autres événements in-app.
 
+<div id="explicit-sessions-reporting-by-the-developer-android-apps-only" />
+
 #### **Signalement explicite des sessions par le développeur (applications Android uniquement)**
 
 Utilisez <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#logsession">logSession</Anchor> dans Android pour signaler explicitement une session. Un appel équivalent n'est pas disponible sous iOS.
 
 * Les applications qui fonctionnent en permanence en arrière-plan peuvent nécessiter une certaine logique mise en œuvre par le développeur pour signaler les sessions. Par exemple, les applications utilitaires telles que les économiseurs de batterie, les lanceurs, les verrouillages d'écran et les applications antivirus. Pour ces types d'applications, envisagez de déclarer une session tous les jours à minuit ou à un autre intervalle approprié à l'application.
 * Dans d'autres cas, vous pouvez vouloir compter les sessions lorsque les utilisateurs effectuent une action dans l'application, par exemple en appuyant sur le bouton d'*effacement de la mémoire*, etc.
+
+<div id="setting-minimum-time-between-app-launches" />
 
 #### **Fixer un délai minimum entre les lancements d'applications**
 

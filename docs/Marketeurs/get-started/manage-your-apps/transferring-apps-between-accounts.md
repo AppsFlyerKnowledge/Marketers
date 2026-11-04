@@ -31,15 +31,21 @@ x-zendesk:
 
 ![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
+<div id="app-transfer-between-accounts" />
+
 ## Transfert d'app entre les comptes
 
 Pour transférer une app entre deux comptes AppsFlyer, les propriétaires d'apps côté expéditeur et destinataire (tels que représentés par leur admin de compte AppsFlyer) doivent remplir les conditions préalables nécessaires au transfert et accepter le transfert.
+
+<div id="prerequisites" />
 
 ### Conditions techniques
 
 * Assurez-vous de posséder les e-mails des comptes de l'expéditeur et du destinataire (admin).
 * Les deux comptes sont actifs. Les comptes suspendus ne peuvent ni envoyer ni recevoir d'applications.
 * Aucun compte n'a de factures impayées
+
+<div id="app-transfer-process" />
 
 ### Procédure de transfert d'app
 
@@ -60,6 +66,8 @@ Le tableau suivant détaille les fonctionnalités et paramètres de l'app qui so
 <table><thead><tr><th>Élément</th><th>Transféré /<br/>non transféré</th><th>Détails / pouvoirs discrétionnaires</th></tr></thead><tbody><tr><td>Paramètres d'application </td><td><p>Transféré</p></td><td><p><strong>Discrétion :</strong> L'expéditeur peut supprimer la clé du serveur Firebase/GCM avant le transfert. </p></td></tr><tr><td rowspan="2">Partenaires intégrés</td><td>Transféré</td><td><p><span>Configuration de l'intégration, des coûts et des revenus (y compris les données relatives aux coûts et aux revenus)</span></p><p><strong>Discrétion :</strong> Si le destinataire n'a pas besoin que les partenaires intégrés soient transférés, l'expéditeur doit les désactiver et supprimer leurs configurations et identifiants (y compris les configurations de coût et de revenus publicitaires).</p></td></tr><tr><td>Non transféré</td><td><p>Autorisations du réseau publicitaire et de l'agence</p><p>Configurations et identifiants Twitter</p></td></tr><tr><td>Gestion des liens</td><td>Non transféré</td><td><p>Les modèles et les liens OneLink ne sont pas transférés automatiquement mais peuvent l'être par votre CSM.</p><strong>Discrétion :</strong> <ul><li>Pour transférer des modèles et des liens, contactez votre CSM ou envoyez un message à <a href="mailto:hello@appsflyer.com">hello@appsflyer.com</a>.</li><li>L'expéditeur peut supprimer les liens obsolètes avant le transfert.</li></ul></td></tr><tr><td>API Push</td><td>Transféré</td><td><p><strong>Discrétion :</strong></p><ul><li>Si le destinataire ne souhaite pas que les configurations de l'API Push (points de terminaison) soient transférées, l'expéditeur doit supprimer les paramètres. S'il ne le fait pas, les données continueront d'être envoyées aux points de terminaison définis par l'expéditeur.</li><li>Le destinataire peut également modifier les paramètres à réception pour s'assurer que l'expéditeur ne reçoive aucune données de niveau utilisateur. </li></ul></td></tr><tr><td>Smart Banners</td><td>Non transféré</td><td><p>Les bannières, les groupes de bannières, les créations et les sites web ne sont pas transférés. </p></td></tr><tr><td>Script intelligent</td><td>Non transféré</td><td><p><span>Les Smart Scrips créés dans l'interface utilisateur d'AppsFlyer ne seront pas disponibles dans le nouveau compte. </span></p></td></tr><tr><td>Agences</td><td>Non transféré</td><td>Les agences perdent l'accès à l'application.</td></tr><tr><td>Audiences</td><td>Non transféré</td><td>Les audiences sont supprimées.</td></tr><tr><td>Importation des coûts</td><td>N/A</td><td>Les fichiers d'importation des coûts historiques ne sont pas accessibles au destinataire. Ceci ne concerne pas l'historique des coûts. </td></tr><tr><td>Data Locker</td><td>Non transféré</td><td>L'app est supprimée de la configuration Data Locker et le compte de l'expéditeur ne reçoit plus les données de l'app. </td></tr><tr><td>Données historiques</td><td>Transféré</td><td> </td></tr><tr><td>Bundles de marque en PBA</td><td>Non transféré</td><td><p>Le bundle ne sera plus proposé à l'expéditeur si l'une des apps qu'il contient est transférée. Le destinataire ne peut pas accéder aux données PBA.</p><p>Cela signifie que si le client a besoin de continuer à utiliser PBA dans son nouveau compte, il doit supprimer son Bundle web avant que le transfert d'application ne soit terminé, sinon il ne pourra pas créer le même Bundle web dans son nouveau compte.</p></td></tr><tr><td>Données Protect 360</td><td>Transféré</td><td> </td></tr><tr><td>Données agrégées et brutes</td><td>Transféré</td><td> </td></tr><tr><td>Clé dev du SDK</td><td>Transféré</td><td> </td></tr><tr><td>Règles de validation</td><td>Transféré</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="transfer-procedures" />
 
 ## Procédures de transfert
 

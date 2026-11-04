@@ -37,9 +37,13 @@ En utilisant le générateur d'événements in-app, les marketeurs peuvent :
 * **Envoyer le code généré automatiquement** à leurs développeurs mobile Android et iOS, **ce qui permet à ces derneirs d'écoomiser beaucoup d'heures de travail,** de messages inutiles ou d'erreurs.
 * **Réutiliser le fruit de leur travail** s'ils décident ensuite de mettre à jour les événements, d'en ajouter de nouveaux ou d'ajouter d'autres applications.
 
+<div id="using-the-in-app-event-generator" />
+
 ## Utiliser le générateur d'événements in-app
 
 **Le générateur d'événements in-app permet de créer un ensemble d'événements pour une nouvelle application, ou de mettre à jour un ensemble d'événements existant.**
+
+<div id="creating-a-new-event-set" />
 
 ### Créer un nouvel ensemble d'événements
 
@@ -51,6 +55,8 @@ En utilisant le générateur d'événements in-app, les marketeurs peuvent :
 4. Cliquez sur le bouton **`< />` Code** pour afficher et copier le code généré à l'attention de vos développeurs : Java (Android natif), Obj-C/Swift (iOS natif), ou C# (Unity).
 5. Cliquez sur **Télécharger le .zip** pour enregistrer l'ensemble d'événements si vous souhaitez l'utiliser plus tard, par exemple avec vos collègues ou développeurs.
 
+<div id="updating-an-existing-event-set" />
+
 ### Mettre à jour d'un ensemble d'événements existant
 
 **Pour mettre à jour un ensemble d'événements existant :**
@@ -61,6 +67,8 @@ En utilisant le générateur d'événements in-app, les marketeurs peuvent :
 4. Cliquez sur le bouton **`< />` Code** pour afficher et copier le code généré à l'attention de vos développeurs : Java (Android natif), Obj-C/Swift (iOS natif), ou C# (Unity).
 5. Cliquez sur **Télécharger le .zip** pour enregistrer l'ensemble d'événements si vous souhaitez l'utiliser plus tard, par exemple avec vos collègues ou développeurs.
 
+<div id="adding-events" />
+
 ### Ajout d'événements
 
 **Pour ajouter un nouvel événement à l'ensemble d'événements :**
@@ -70,6 +78,8 @@ En utilisant le générateur d'événements in-app, les marketeurs peuvent :
 3. Saisissez l'objectif de l'événement, en décrivant le scénario d'entreprise.
 4. Saisissez l'action qui déclenche l'événement, en précisant à quel moment du parcours de l'utilisateur l'événement doit être envoyé. Cette précision sera ajoutée sous forme de commentaire dans le code généré pour que les développeurs sachent tout de suite de quoi il s'agit.
 5. [Optionnel] Ajoutez un ou plusieurs paramètres à l'événement.
+
+<div id="adding-parameters" />
 
 ### Ajouter des paramètres
 
@@ -82,6 +92,8 @@ En utilisant le générateur d'événements in-app, les marketeurs peuvent :
 5. Pour aider vos développeurs, donnez une description globale, le type de champ ou la source correspondante à la valeur du paramètre dans votre application. Cela apparaîtra sous forme de commentaire dans le code généré pour chacun des paramètres d'événement.
 
 **Remarque** :  <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#predefined-and-custom-events">utiliser un nom prédéfini</Anchor> permet de mapper automatiquement les événements et paramètres aux partenaires , c'est donc la méthode à privilégier.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

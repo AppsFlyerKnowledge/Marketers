@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** découvrez les rapports de revenus ROI360, leurs sources, comment ils sont générés, leur disponibilité et comment y accéder. Découvrez la structure et les champs des rapports en téléchargeant l’exemple de données.
 
+<div id="revenue-etl" />
+
 ## Revenus ETL
 
 Avec les Revenus ETL ROI360, les données de vos revenus sont envoyées via Data Locker dans le stockage sur le cloud pour être chargées dans vos systèmes BI.
@@ -38,6 +40,8 @@ Le tableau suivant indique les rapports de revenus disponibles. **Remarque** : 
 | [Revenus publicitaires [niveau impression du SDK]](/docs/revenue-etl-reports#impression-level-report) | <ul><li>Niveau impression (via SDK)</li><li>Niveau impression (via SDK) avec niveau appareil (via API S2S)</li></ul> | <ul><li>Contient les données des revenus publicitaires.</li><li>Précision et actualisation des données optimales.</li></ul> | Par heure. <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attribution#data-freshness">En savoir plus</Anchor> |
 | [Revenus des stores au niveau des transactions](/docs/revenue-etl-reports#transactionlevel-stores-revenue-report) | Intégration des revenus des IAP ROI360 et des abonnements | <ul><li>Contient les données brutes des achats in-app validés par ROI360 et les données brutes des abonnements de niveau transaction.</li><li>Précision et actualisation des données optimales.</li><li>Inclut les données uniques liées à la monétisation ROI360 et aux revenus nets.</li></ul> | Par heure |
 | [Revenus des stores au niveau de l’appareil (multiples versions)](/docs/revenue-etl-reports#devicelevel-stores-revenue-report) | Intégration des revenus des IAP ROI360 et des abonnements | <ul><li>Contient les données brutes des achats in-app validés par ROI360 et les données brutes des abonnements de niveau appareil.</li><li>Inclut les données de revenus nets ROI360 uniques.</li></ul> | Toutes les 8 heures |
+
+<div id="reports" />
 
 ## Rapports
 
@@ -53,6 +57,8 @@ Le rapport contient une seule version des données des revenus publicitaires sur
 
 <span id="download-the-report-data-sample"></span>[Téléchargez l’exemple de données du rapport en version unique des revenus publicitaires.](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv)
 
+<div id="data-sources" />
+
 #### Sources des données
 
 Selon le type d'intégration du partenaire de revenu publicitaire, les données du rapport proviennent de l'une des sources suivantes :
@@ -61,6 +67,8 @@ Selon le type d'intégration du partenaire de revenu publicitaire, les données 
 * **S2S** : Rapports de données de niveau appareil issues d’une requête d’API des partenaires (réseau de médiation ou monétisation)
 
 Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux partenaires intégrés de revenus publicitaires.
+
+<div id="data-flow" />
 
 #### Flux des données
 
@@ -74,12 +82,16 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
    **Remarque :** Un rapport peut avoir plusieurs agrégations au niveau de l'appareil pour le même appareil. Cela se produit quand l'agrégation de niveau appareil se base sur des dimensions liées à la monétisation, comme le réseau de monétisation, le placement et le type de publicité. Par exemple, si l'app affiche des publicités dans deux emplacements différents, les événements de revenus de chaque emplacement sont agrégés séparément au niveau de l'appareil.
 3. **Fourniture des données :** Les données de niveau appareil sont inscrites dans le rapport en version unique.
 
+<div id="when-is-the-report-data-available" />
+
 #### Quand les données du rapport sont-elles disponibles ?
 
 | Type d'intégration | Jour de la version (X = jour où l’événement s’est produit) | Version disponible à | La version inclut les événements de revenu qui se produisent entre |
 | --- | --- | --- | --- |
 | SDK | Jour X+1 | 20:00 | 00:00 — 24:00 |
 | SDK + S2S | Jour X+1 | 17:00 | 00:00 — 24:00 |
+
+<div id="how-to-subscribe-to-the-report" />
 
 #### Comment s’abonner au rapport ?
 
@@ -89,11 +101,15 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
 
 **Remarque :** Vous pouvez également sélectionner le même rapport pour le retargeting et l’organique (Revenus publicitaires de retargeting/organique [version unique]).
 
+<div id="how-to-access-the-report-in-your-bucket" />
+
 #### Comment accéder au rapport depuis votre compartiment ?
 
 Le chemin vers le rapport suit cette hiérarchie de dossiers :
 
 Avec le format suivant : `/t=attributed_ad_revenue/dt=`
+
+<div id="report-folder-hierarchy" />
 
 #### Hiérarchie des dossiers d’un rapport
 
@@ -150,6 +166,8 @@ Collecter plusieurs versions d’une même journée vise à saisir les différen
 
 [Téléchargez l’exemple de données du rapport en multiples versions des revenus publicitaires.](https://docs.google.com/spreadsheets/d/e/2PACX-1vQek1x3rYnYQq3jctSz5hnWG_Nk_LQk2ixMTQFVMb8K6w-UmeNKvKOif3-nudAyIqp9tyuoq9R-FhVz/pub?output=csv)
 
+<div id="data-sources-1" />
+
 #### Sources des données
 
 Selon le type d'intégration du partenaire, les données du rapport proviennent de l'une des sources suivantes :
@@ -159,6 +177,8 @@ Selon le type d'intégration du partenaire, les données du rapport proviennent 
 * **S2S + SDK :** Charges utiles provenant à la fois du SDK et du S2S.
 
 Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux partenaires intégrés de revenus publicitaires.
+
+<div id="data-flow-1" />
 
 #### Flux des données
 
@@ -171,6 +191,8 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
 
    **Remarque :** Un rapport peut avoir plusieurs agrégations au niveau de l'appareil pour le même appareil. Cela se produit quand l'agrégation de niveau appareil se base sur des dimensions liées à la monétisation, comme le réseau de monétisation, le placement et le type de publicité. Par exemple, si l'app affiche des publicités dans deux emplacements différents, les événements de revenus de chaque emplacement sont agrégés séparément au niveau de l'appareil.
 3. **Fourniture des données :** Les données de niveau appareil sont inscrites dans plusieurs versions du rapport selon un calendrier prédéterminé (voir ci-dessous).
+
+<div id="when-are-the-report-versions-available" />
 
 #### Quand les versions du rapport sont-elles disponibles ?
 
@@ -196,6 +218,8 @@ Le tableau ci-dessous indique les délais de génération des rapports pour les 
 
 **Remarque :** Certaines versions S2S peuvent ne pas être créées. Si les données du ou des partenaires n'ont pas changé depuis la dernière collecte, il n’y a PAS de nouvelle version générée.
 
+<div id="how-to-subscribe-to-the-report-1" />
+
 #### Comment s’abonner au rapport ?
 
 1. Dans AppsFlyer, dans le menu latéral, sélectionnez **Rapport > Data Locker**.
@@ -204,6 +228,8 @@ Le tableau ci-dessous indique les délais de génération des rapports pour les 
 
 **Remarque :** Vous pouvez également sélectionner le même rapport pour le retargeting et l’organique **(Revenus publicitaires de retargeting/organique [multiples versions])./strong>**
 
+<div id="how-to-access-the-report-in-your-bucket-1" />
+
 #### Comment accéder au rapport depuis votre compartiment ?
 
 Le chemin vers le rapport suit cette hiérarchie de dossiers :
@@ -211,6 +237,10 @@ Le chemin vers le rapport suit cette hiérarchie de dossiers :
 \`/t=attributed_ad_revenue_v2/dt=
 
 /version=&lt;9999999>/\`
+
+<div id="report-folder-hierarchy-2" />
+
+<div id="report-folder-hierarchy-1" />
 
 #### Hiérarchie des dossiers dans un rapport
 
@@ -261,11 +291,15 @@ Le rapport affiche les données de niveau impression divisées en dossiers qui c
 
 [Téléchargez l’exemple de données du rapport des revenus publicitaires de niveau impression.](https://docs.google.com/spreadsheets/d/e/2PACX-1vR5zVxFGaCMNZMbCCYPae6f7MmbtelxrqXb-A5DBENuyTFCN4deRfICvbL0_dNeYVipojmAeUdrGbKI/pub?output=csv)
 
+<div id="data-source" />
+
 #### Source des données
 
 Les données du rapport proviennent des données de niveau impression envoyées par le connecteur SDK des revenus publicitaires ROI360 et nécessitent une intégration de type SDK.
 
 Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux partenaires intégrés de revenus publicitaires.
+
+<div id="data-flow-2" />
 
 #### Flux des données
 
@@ -276,17 +310,25 @@ Pour savoir comment paramétrer le type d’intégration, cf Se connecter aux pa
    3. Génération des événements de revenus publicitaires de niveau impression
 3. **Fourniture des données :** Les événements d'impression sont inscrits dans des fichiers, divisés par dossiers selon l'heure où l’impression a eu lieu. Chaque dossier contient exclusivement les impressions qui se sont produites durant cette heure.
 
+<div id="when-is-the-report-data-available-1" />
+
 #### Quand les données du rapport sont-elles disponibles ?
 
 | Type d'intégration | Jour de la version (X = jour où l’événement s’est produit) | Version disponible à |
 | --- | --- | --- |
 | SDK | Jour X | À la fin de chaque heure rapportée |
 
+<div id="how-to-subscribe-to-the-report-2" />
+
 #### Comment s’abonner au rapport ?
 
 1. Dans AppsFlyer, dans le menu latéral, sélectionnez **Rapport > Data Locker**.
 2. Dans le panneau du **contenu Data Locker**, faites défiler jusqu’au volet **revenus ETL ROI360** .
 3. Sélectionnez **Revenus publicitaires (niveau impression du SDK)**
+
+<div id="how-to-access-the-report-in-your-bucket-3" />
+
+<div id="how-to-access-the-report-in-your-bucket-2" />
 
 #### Comment accéder au rapport depuis votre compartiment ?
 
@@ -347,9 +389,13 @@ Ce rapport présente les données brutes de la journée au niveau des transactio
 
 [Téléchargez l'exemple de données d’un rapport sur les stores au niveau des transactions](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGlRSg_Xrp2EsqK2uaisjhlqeSuZsypqKqSSRGX3AQBwBLlNdG_5LOOKCM9f9gCcLguMQgQwT--Dz7/pub?output=csv)
 
+<div id="data-sources-2" />
+
 #### Sources des données
 
 Les données du rapport proviennent des transactions collectées via le connecteur d'achat du SDK ROI360, et des notifications des stores de serveur à serveur.
+
+<div id="data-flow-3" />
 
 #### Flux des données
 
@@ -357,17 +403,23 @@ Les données du rapport proviennent des transactions collectées via le connecte
 2. AppsFlyer ROI360 VIAP/Abonnements traite les données, les attribue, puis crée des événements et des valeurs au niveau des transactions.
 3. Les événements de niveau transaction sont inscrits dans le rapport segmenté en différents dossiers horaires.
 
+<div id="when-is-the-report-data-available-2" />
+
 #### Quand les données du rapport sont-elles disponibles ?
 
 | Jour de la version (X = jour où l’événement s’est produit) | Version disponible à |
 | --- | --- |
 | Jour X | À la fin de chaque heure rapportée |
 
+<div id="how-to-subscribe-to-the-report-3" />
+
 #### Comment s’abonner au rapport ?
 
 1. Dans AppsFlyer, dans le menu latéral, sélectionnez **Rapport > Data Locker**.
 2. Dans le panneau du **contenu Data Locker**, faites défiler jusqu’au volet **revenus ETL ROI360** .
 3. Sélectionnez **Rapport sur les revenus des stores au niveau des transactions**
+
+<div id="how-to-access-the-report-in-your-bucket-4" />
 
 #### Comment accéder au rapport depuis votre compartiment ?
 
@@ -376,6 +428,8 @@ Le chemin vers le rapport suit cette hiérarchie de dossiers :
 \`/t=stores_rawdata/dt=
 
 /h=\`
+
+<div id="report-folder-hierarchy-3" />
 
 #### Hiérarchie des dossiers dans un rapport
 
@@ -428,6 +482,8 @@ Le rapport sur les revenus des stores au niveau de l'appareil contient les évé
 
 <span id="download-the-report-data-sample::8cbba4e3"></span>[Téléchargez l'exemple de données d’un rapport sur les revenus de stores au niveau appareil](https://docs.google.com/spreadsheets/d/e/2PACX-1vSpomvcf2axYeSFcCh0kEx3ShYYRGVfF9WYZXG1UYBkeymeVfh8mcypAOpq2drqE3zhdmbcmrMtahsl/pub?output=csv)
 
+<div id="data-sources-3" />
+
 #### Sources des données
 
 Les données du rapport proviennent des transactions collectées via :
@@ -435,11 +491,15 @@ Les données du rapport proviennent des transactions collectées via :
 1. Le connecteur d’achat SDK ROI360.
 2. Les stores (comme l’App Store ou Google Play) via des notifications de serveur à serveur.
 
+<div id="data-flow-4" />
+
 #### Flux des données
 
 1. Les données du rapport proviennent des transactions collectées via les charges utiles du connecteur d'achat du SDK ROI360, ou des notifications des stores S2S.
 2. AppsFlyer ROI360 VIAP/Abonnements traite les données, les attribue, puis crée des événements in-app.
 3. Les événements in-app sont agrégés au niveau de l'appareil et inscrits dans une version du rapport issue toutes les quatre heures.
+
+<div id="when-are-the-report-versions-available-1" />
 
 #### Quand les versions du rapport sont-elles disponibles ?
 
@@ -449,6 +509,8 @@ Les données du rapport proviennent des transactions collectées via :
 | Jour X | 12:00 - 13:00 | 00:00 - 12:00 |
 | Jour X | 20:00 - 21:00 | 00:00 - 20:00 |
 | Jour X+1 | 05:00 - 06:00 | 00:00 - 24:00 |
+
+<div id="how-to-subscribe-to-the-report-4" />
 
 #### Comment s’abonner au rapport ?
 
@@ -463,6 +525,8 @@ Le chemin vers le rapport suit cette hiérarchie de dossiers :
 \`/t=stores_devicedata/dt=
 
 /version=&lt;999999999>\`
+
+<div id="report-folder-hierarchy-4" />
 
 #### Hiérarchie des dossiers dans un rapport
 

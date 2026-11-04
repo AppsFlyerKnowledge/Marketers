@@ -25,6 +25,8 @@ x-zendesk:
 
 ![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
 
+<div id="integrating-google-ads-campaign-data-in-pba" />
+
 ## Integrating Google Ads campaign data in PBA
 
 Connect your Google Ads account (1 or more) to your brand bundle. Google Ads campaign data improves dashboard analytics capabilities and further enriches raw data reports.
@@ -62,6 +64,8 @@ On the Google Ads integration page, the following actions are available:
 
 * Delete connection
 * Enable/disable the connection
+
+<div id="pbagoogle-ads-status-messages" />
 
 ### PBA—Google Ads status messages
 

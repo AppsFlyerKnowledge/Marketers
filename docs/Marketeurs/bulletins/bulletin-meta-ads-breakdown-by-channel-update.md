@@ -27,6 +27,8 @@ x-zendesk:
 | **What you need to know** | Meta applies this opt-in automatically on AppsFlyer customer accounts. You do not need to take any action before August 6.<ul><li>If your cost data broken down by channel, or your creative performance data broken down by channel, is missing after August 6, the automatic opt-in has not yet applied to your account.</li></ul> |
 | **What you need to do** | Take the following steps:<ol><li>After August 6, check your cost data broken down by channel (My Dashboards) and your creative performance data broken down by channel.</li><li>If you notice a gap, contact Meta directly for guidance on enabling the opt-in, or reach out to your AppsFlyer representative for help.</li><li>Once the opt-in applies to your account, your data will catch up automatically through backfill shortly after.</li><li>You can also check directly in Ads Manager whether Impression Device is already enabled for the account. See [Check Impression Device in Ads Manager](#check-impression-device-in-ads-manager) below for the steps.</li></ol> |
 
+<div id="check-impression-device-in-ads-manager" />
+
 ## Check Impression Device in Ads Manager
 
 To check whether Impression Device is already enabled for an ad account:

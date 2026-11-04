@@ -24,6 +24,8 @@ x-zendesk:
 
 [![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
 
+<div id="web-sdk-user-and-integration-guide" />
+
 ## Guide d’utilisation et d’intégration du SDK Web
 
 * Balise JavaScript du SDK Web :
@@ -34,11 +36,15 @@ x-zendesk:
 * Implémentez le SDK Web en même temps que le SDK mobile AppsFlyer pour enregistrer et cartographier l’activité des utilisateurs dans votre application mobile et vos environnements web.
 * Les événements se produisant en dehors du site web peuvent être enregistrés à l’aide de <Anchor target="_blank" href="/marketers/fr/docs/web-server-to-server-events-api-for-pba-web-s2s">l’API d’événements web de serveur à serveur</Anchor> (Web S2S)
 
+<div id="integrating-the-web-sdk-into-the-website" />
+
 ## Intégration du SDK Web dans le site web
 
 <div id="installation-and-integration" />
 
 <Accordion title="Installation et intégration">
+
+<div id="considerations-and-actions-required" />
 
 #### Considérations et mesures requises
 
@@ -75,9 +81,13 @@ x-zendesk:
 <Tabs>
 <Tab title="">
 
+<div id="javascript-code-snippet" />
+
 #### Extrait de code JavaScript
 
 Intégrez le SDK web à l’aide de l’une des méthodes suivantes.
+
+<div id="to-install-the-web-sdk-without-smart-banners" />
 
 #### **Pour installer le SDK Web sans Smart Banners :**
 
@@ -94,6 +104,8 @@ o.src="https://websdk.appsflyer.com?"+(c.length>0?"st="+c.split(",").sort().join
 p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {webAppId: "WEB_DEV_KEY"}})
 </script>
 ```
+
+<div id="to-implement-the-web-sdk-with-smart-banners" />
 
 #### **Pour implémenter le SDK Web avec Smart Banners :**
 
@@ -320,12 +332,16 @@ N'oubliez pas :
   * Expire après une période définie par le SDK Web ou déterminée par le navigateur. Après l’expiration du cookie, le SDK Web revient à l’état initial.
   * Le cookie du SDK Web n’interfère pas avec les paramètres de cookies spécifiques au navigateur et y est toujours soumis.
 
+<div id="sdk-initial-state-setting" />
+
 #### Réglage de l’état initial du SDK
 
 | Paramètre | Extrait requis |
 | --- | --- |
 | [Par défaut] Envoyer des événements | Apportez la modification suivante à l’extrait de code du SDK Web. Si nécessaire, ajoutez le paramètre measurementStatus :<br /><br />Définir measurementStatus=true<br /><br />`{pba:{webAppId: "********-****-****-*****************",measurementStatus:true}` |
 | Ne pas envoyer d’événements | Apportez la modification suivante à l’extrait de code du SDK Web. Si nécessaire, ajoutez le paramètre measurementStatus :<br /><br />Définir measurementStatus=false  <br />  <br />`{pba: {webAppId: "********-****-****-*****************",measurementStatus:false}` |
+
+<div id="explicit-control" />
 
 #### Contrôle explicite :
 
@@ -362,6 +378,8 @@ Si vos paramètres de requête incluent des informations que vous ne souhaitez p
 
 Vous pouvez implémenter les méthodes décrites en ce qui concerne les URL, les référents et les header\_referer.
 
+<div id="query-discard-options" />
+
 #### Options de rejet de requête
 
 | Méthode | Description |
@@ -370,6 +388,8 @@ Vous pouvez implémenter les méthodes décrites en ce qui concerne les URL, les
 | Ignorer les paramètres de requête spécifiés | En définissant un masque de paramètre de requête, vous spécifiez les paramètres à ignorer.  Définissez le masque de rejet en utilisant `af_url_mask=param` où param est le nom du paramètre.<br /><br />Exemple :<br /><br />**Url avec masque :**<br /><br />`param1=value1&param2=value2&param3=value3&af_url_mask=param2;param3`<br /><br />**URL après rejet :**<br /><br />**`param1=value1&af_url_mask=param2;param3`** |
 
 </Accordion>
+
+<div id="principles-of-event-recording" />
 
 ## Principes de l’enregistrement des événements
 
@@ -382,6 +402,8 @@ Vous pouvez implémenter les méthodes décrites en ce qui concerne les URL, les
 * Les données relatives aux événements de conversion sont disponibles dans les tableaux de bord PBA.
 * Les données de conversion et d’événement standard sont disponibles dans <Anchor target="_blank" href="/marketers/fr/docs/pba-raw-data-reports">les rapports de données brutes.</Anchor>
 
+<div id="conversion-events" />
+
 ### Événements de conversion
 
 * Les événements de conversion fournissent des informations sur vos efforts marketing et commerciaux. Les événements de conversion comprennent les achats, les téléchargements, les inscriptions et les abonnements.
@@ -390,11 +412,15 @@ Vous pouvez implémenter les méthodes décrites en ce qui concerne les URL, les
 * Les événements de conversion sont utilisés pour enregistrer les revenus et calculer le ROI.
 * Utilisez-les pour comparer le budget des publicités pour des sources média spécifiques aux revenus générés par les utilisateurs provenant de ces sources.
 
+<div id="standard-events" />
+
 ### Événements standard
 
 * Les événements standard sont utilisés pour valider le parcours utilisateur et les tunnels qui mènent aux conversions.
 * Utilisez-les pour mesurer l’activité des utilisateurs et mettre en évidence les sources média qui suscitent l’intérêt.
 * Enregistrez l’activité des utilisateurs pour marquer ces derniers pour les campagnes de réengagement.
+
+<div id="recording-events" />
 
 ### Enregistrement d’événements
 
@@ -453,6 +479,8 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 
 Les événements que vous envoyez dépendent de la nature de votre application web. Par exemple, une application de boutique en ligne nécessite un ensemble d'événements différent de celui d'un site d'actualités. Consultez les scénarios qui suivent pour avoir une idée des événements que vous devez envoyer et quand.
 
+<div id="online-store" />
+
 #### Boutique en ligne
 
 Supposons que vous gériez une boutique en ligne. Voici quelques événements standard que vous voudrez peut-être enregistrer :
@@ -496,6 +524,8 @@ Cette section s’adresse aux développeurs web.
    2. La charge utile de la requête s’aligne sur les paramètres de l’événement.
 
 </Accordion>
+
+<div id="examples" />
 
 ## Exemples
 
@@ -905,6 +935,8 @@ La fonction setCustomerUserId peut être envoyée à n’importe quelle étape d
 Utilisez la même valeur CUID que dans la fonction setCustomerUserd dans l’application mobile (voir mobile setCustomerUserId pour : <Anchor target="_blank" href="/marketers/fr/docs/customer-user-id-field-cuid#paramétrer-le-cuid">iOS,</Anchor> <Anchor target="_blank" href="/marketers/fr/docs/customer-user-id-field-cuid#paramétrer-le-cuid">Android,</Anchor> Unity).
 
 </Accordion>
+
+<div id="addtional-information" />
 
 ## Informations supplémentaires
 

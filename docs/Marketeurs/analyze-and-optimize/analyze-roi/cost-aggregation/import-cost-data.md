@@ -33,6 +33,8 @@ x-zendesk:
 
 > **En bref :** Cost Import, qui fait partie d'AppsFlyer ROI360, permet aux annonceurs de couvrir 100 % de leurs besoins en matière de rapports sur les coûts de leurs campagnes. Les annonceurs et les réseaux publicitaires peuvent enregistrer le coût de la campagne à partir de sources médiatiques qui ne signalent pas les dépenses par API ou par clic.
 
+<div id="overview" />
+
 ## Importation des coûts
 
 ![Adspendimport.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
@@ -92,6 +94,8 @@ Les deux flux de travail sont expliqués dans les sections qui suivent.
 | 6 | Utilisez l'interface pour surveiller l'importation :<ul><li>Statut</li><li>[Lignes correspondantes](/docs/import-cost-data#row-matching-and-the-unmatched-report) (dans de nombreux cas, un faible pourcentage de lignes correspondantes signifie que vous avez des erreurs dans les données)</li></ul> | [Actions d'importation de coûts](/docs/import-cost-data#ad-spend-import-actions) |
 |  | Procédure supplémentaire : Remplacer l'importation précédente | [Remplacer les dépenses précédemment importées](/docs/import-cost-data#overwrite-correct-previously-imported-ad-spend) |
 
+<div id="procedures" />
+
 ### Procédures
 
 <div id="csv-file-format-and-schema" />
@@ -122,6 +126,8 @@ Le format de fichier CSV, le schéma et les règles de validation des dépenses 
 | Extension de nom de fichier | Exemple de fichier CSV : abc123.csv |
 | Structure des fichiers | <ul><li>Format Les fichiers sont au format CSV, ce qui signifie que chaque colonne est séparée par une virgule. Notez que c'est ainsi qu'Excel formate les fichiers CSV par défaut. Si Excel met en forme le fichier avec un point-virgule (;), cela est lié au réglage régional de votre ordinateur.</li><li>**Ligne d'en-tête** : La première ligne est une ligne d'en-tête qui correspond au schéma</li><li>**Lignes de données** : Contient les colonnes obligatoires. **Remarque** : Assurez-vous qu'il n'y a aucun espace à la fin de vos données. Par exemple, [USD] (un espace après le **D**) doit être remplacé par [USD].</li><li>**Lignes vides** : Non autorisé</li><li>**Lignes dupliquées** ayant la même clé : Non autorisé. La clé est dérivée de l'utilisation des champs obligatoires.</li><li>**Cellules vides :** Les valeurs vides ne sont pas autorisées dans le fichier. Si vous ne souhaitez pas charger certains champs, ils ne doivent pas figurer dans le fichier.</li></ul> |
 | Hiérarchie publicitaire | Toutes les données partielles téléchargées à un niveau hiérarchique inférieur remplaceront toutes les données depuis le niveau inférieur de la campagne.<br /><br />Exemple,  Si vous importez un fichier avec le coût de la campagne pour l'ensemble d'annonces 1 et que vous importez séparément un autre fichier pour l'ensemble d'annonces 2 de la même campagne, le coût total de la campagne sera remplacé et seules les données de l'ensemble d'annonces 2 seront affichées. Pour le coût total de la campagne, le fichier que vous importez doit inclure les ensembles d'annonces 1 et 2. |
+
+<div id="csv-schema" />
 
 #### Schéma CSV des dépenses publicitaires
 
@@ -420,6 +426,8 @@ Lorsque vous utilisez Excel/Google Sheets pour créer un fichier CSV, les colonn
 
 Après avoir enregistré le fichier CSV, vérifiez que le contenu est correctement formaté. **Remarque** : N'utilisez pas Excel pour effectuer la vérification, utilisez plutôt un [éditeur](/docs/import-cost-data#visual-inspection-of-the-csv-file-without-excel).
 
+<div id="format-date-cells" />
+
 #### Formatage des cellules de date dans Excel
 
 **Pour mettre en forme des cellules de date dans Excel au format YYYY-MM-DD** :
@@ -433,6 +441,8 @@ Après avoir enregistré le fichier CSV, vérifiez que le contenu est correcteme
 4. Dans le champ Type, saisissez **YYYY-MM-DD**
 5. Cliquez sur **OK**.  
    La date est formatée.
+
+<div id="formatting-spend-cells" />
 
 #### Formatage des cellules de dépenses dans Excel
 
@@ -516,6 +526,8 @@ Pour vous assurer que le type de contenu du message électronique est bien défi
 Les erreurs HTML peuvent empêcher le traitement correct de l'e-mail. Par exemple, la balise est vide ou manquante. Vérifiez que votre script ne contient pas d'erreurs HTML.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 

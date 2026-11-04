@@ -38,15 +38,21 @@ Les pages de renvoi sont une technique très répandue parmi les spécialistes d
 
 Cependant, pour l'acquisition d'utilisateurs mobiles, la stratégie de la page de renvoi présente des avantages et des inconvénients.
 
+<div id="the-upsides" />
+
 #### Les avantages :
 
 * Les prospects, qui finissent par installer l'app, sont plus engagés.
 * Les services plus complexes (par exemple, les services financiers) nécessitent davantage d'explications pour convertir leurs clients potentiels, ce que permettent les pages de renvoi.
 
+<div id="the-downsides" />
+
 #### Les inconvénients :
 
 * Le tunnel plus long réduit le nombre final de prospects convertis.
 * L'attribution est plus difficile sur le plan technique.
+
+<div id="the-challenges-of-mobile-attribution-on-landing-pages" />
 
 ## Les défis de l'attribution mobile sur les pages de renvoi
 
@@ -55,6 +61,8 @@ Cependant, pour l'acquisition d'utilisateurs mobiles, la stratégie de la page d
 * **Les visiteurs directs du site web sont enregistrés comme des visiteurs organiques**, sauf si la page de renvoi possède ses propres liens d'attribution.
 * **Les visiteurs de bureau sont enregistrés comme des visiteurs organiques**, sauf si la page de destination dispose d'une méthode d'enregistrement des conversions en utilisateurs mobiles.
 
+<div id="the-solution" />
+
 ## La solution
 
 Pour résoudre les problèmes d'attribution mentionnés ci-dessus, vous devez implémenter un flux javascript dans votre page de renvoi. Nous vous proposons un exemple de script à utiliser, veillez l’adapter à vos besoins.
@@ -62,6 +70,8 @@ Pour résoudre les problèmes d'attribution mentionnés ci-dessus, vous devez im
 Dans certains cas, vous devez également adapter vos campagnes.
 
 Les scénarios ci-dessous couvrent les exigences pour tous les cas possibles de sources média.
+
+<div id="landing-page-scenarios" />
 
 ## Scénarios de page de renvoi
 
@@ -95,6 +105,8 @@ Toutefois, lorsque les utilisateurs choisissent de ne pas partager leur ID d’a
 2. Bouton de téléchargement de la page de renvoi Android - lien direct vers Google Play.
 3. Bouton de téléchargement iOS de la page de renvoi - lien direct vers iTunes (OU lien d'attribution **sans l'ID d’appareil**).
 
+<div id="what-the-script-does" />
+
 #### Ce que fait le script
 
 Le script de la page de renvoi n'apporte aucune modification. Le script est conçu pour détecter un utilisateur venant de l'app Facebook. Si c'est le cas, il ne fait rien. Les liens directs de la page de renvoi vers les app store restent inchangés. Cela empêche l'enregistrement d'un autre clic, ce qui pourrait affecter le CTR.
@@ -121,11 +133,15 @@ La première partie permet d'**attribuer à AppsFlyer** les utilisateurs mobiles
 
 La deuxième partie consiste à **informer Google Ads** de ces installations mobiles, en utilisant la méthode de téléchargement des conversions hors ligne de Google.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Cette solution GCLID n’est pas officiellement prise en charge ou recommandée par Google.
 > Si jamais Google déprécie le paramètre GCLID, nous modifierons le script pour prendre en charge les modifications.
 > Nous vous recommandons de suivre cet article en cliquant sur le bouton ***Suivre*** dans l'en-tête, afin d'être informé de toute mise à jour de l'article ou du script joint.
+
+<div id="instructions-1" />
 
 #### Instructions :
 
@@ -158,6 +174,8 @@ Les conversions peuvent être téléchargées manuellement ou via une API Adword
 
 Vous pouvez exporter les CSV avec ces informations depuis votre compte AppsFlyer, ou vous pouvez obtenir ces données à partir de l'API Push en temps réel pour chaque installation.
 
+<div id="tip" />
+
 > 👍 **Astuce**
 >
 > Vous pouvez également voir les mots-clés recherchés par vos utilisateurs dans les données brutes d'AppsFlyer, de la même manière que vous obtenez le GCLID :
@@ -169,6 +187,8 @@ Vous pouvez exporter les CSV avec ces informations depuis votre compte AppsFlyer
 >    Exemple d'URL OneLink : `https://yourapp.onelink.me/abcd?pid=google_lp&c={CAMPAIGN_NAME}&af_sub1={USER_PARSED_GCLID}&af_keywords={USER_PARSED_KEYWORD}`
 >
 > La fonction JS ci-dessous contient déjà le code permettant d'analyser le paramètre de mot-clé.
+
+<div id="what-the-script-does-1" />
 
 #### Ce que fait le script
 
@@ -193,6 +213,8 @@ Vos campagnes avec d'autres SRN conduisent vos utilisateurs à la page de renvoi
 Lorsque vous définissez l'URL de la page de renvoi d'une campagne sur les SRN (en plus de Meta ads et Google ads), ajoutez un paramètre ID partenaire à l'URL, qui indique le SRN d'origine.  
 La page de renvoi lance un JavaScript (voir ci-dessous) qui analyse ce paramètre et crée une URL OneLink qui contient la valeur de l'ID du partenaire. Lorsque les utilisateurs mobiles cliquent sur ce OneLink et l'installent, ils sont attribués à la source média indiquée.
 
+<div id="instructions-2" />
+
 #### Instructions :
 
 Sur votre compte SRN -
@@ -212,6 +234,8 @@ Si vous spécifiez le vrai nom du SRN, par exemple twitter\_int, un postback peu
 
 Le script lui-même contient une logique qui vous empêche d'utiliser ces noms. Recherchez `var SRNs` dans le script. Vous devriez voir une liste de noms SRN et une condition qui vérifie si `pidValue` est l'un de ces noms. Supprimez cette logique après avoir testé le script.
 
+<div id="note-1" />
+
 > 📘 **Remarque**
 >
 > Si vous envoyez des utilisateurs vers votre page de renvoi, nous vous recommandons d'inclure le paramètre suivant dans l'URL de votre page :
@@ -221,6 +245,8 @@ Le script lui-même contient une logique qui vous empêche d'utiliser ces noms. 
 > * Pour Doubleclick : utilisez "***&af\_pid=doubleclick\_lp***"
 > * Pour Meta ads Post (non rémunéré) : utilisez "***&af\_pid=fbpost\_lp***"
 > * Pour Oath (anciennement Yahoo Gemini) : utilisez "***&af\_pid=oath\_lp***"
+
+<div id="what-the-script-does-2" />
 
 #### Ce que fait le script
 
@@ -246,6 +272,8 @@ le lien d'attribution redirige le prospect vers une page de renvoi, ce qui perme
 
 Il ne reste plus qu'à NE PAS empêcher l'attribution correcte avec un dernier clic.
 
+<div id="instructions-3" />
+
 #### Instructions :
 
 1. <Anchor target="_blank" href="/marketers/fr/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#créer-un-lien-onelink">Créez le lien d'attribution de</Anchor> la source média
@@ -256,10 +284,14 @@ Il ne reste plus qu'à NE PAS empêcher l'attribution correcte avec un dernier c
 5. Bouton de téléchargement de la page de renvoi Android - lien direct vers Google Play
 6. Bouton de téléchargement de la page de renvoi iOS - lien direct vers iTunes  
 
+   <div id="note-2" />
+
    > 📘 **Remarque**
    >
    > Le script et la page d'exemple HTML offrent la possibilité de définir un seul bouton de téléchargement pour Android et iOS. Lisez les commentaires du script pour savoir comment le mettre en œuvre.
 
+
+<div id="what-the-script-does-3" />
 
 #### Ce que fait le script
 
@@ -283,6 +315,8 @@ Si l'URL d'origine n'est PAS un lien d'attribution AppsFlyer, le script recherch
 
 Notez que pour les liens d'attribution AppsFlyer, qui contiennent également des paramètres UTM, ce sont les paramètres AppsFlyer qui sont utilisés, et non les paramètres UTM.
 
+<div id="instructions-4" />
+
 #### Instructions :
 
 Dans la source média -
@@ -297,6 +331,8 @@ Sur votre page de renvoi -
 3. Le bouton de téléchargement de la page de renvoi utilise l'URL OneLink générée
 4. Les nouveaux utilisateurs de téléphones mobiles sont attribués à la valeur de ***utm\_source*** en tant que source média
 5. Aucun postback n'est envoyé à la source média.
+
+<div id="what-the-script-does-4" />
 
 #### Ce que fait le script
 
@@ -316,16 +352,22 @@ Les visiteurs organiques mobiles sont, par définition, des prospects web mobile
 
 Si votre site web génère un volume important de trafic organique mobile, il est fortement recommandé d'enregistrer les données d'attribution de votre propre trafic.
 
+<div id="instructions-5" />
+
 #### Instructions :
 
 Afin d'attirer les visiteurs organiques mobiles, le site web doit comporter les boutons ***Télécharger*** ou ***Installer*** incluant un lien d'attribution OneLink. OneLink permet de diagnostiquer le type d'appareil et de rediriger l'utilisateur vers l’app store approprié.
 
 Pour savoir comment créer des URL OneLink, <Anchor target="_blank" href="/marketers/fr/docs/create-a-onelink-template">cliquez ici.</Anchor>
 
+<div id="tip-1" />
+
 > 👍 **Astuce**
 >
 > Ajoutez "&pid=website" à votre lien d'attribution pour attribuer tous ces visiteurs à votre site web.
 > Dans chaque page de votre site web qui comporte un bouton de téléchargement/d’installation avec un lien d'attribution, ajoutez "&c=`{PAGE NAME}`". Cela peut vous aider à identifier les pages les plus et les moins performantes de votre site web.
+
+<div id="what-the-script-does-5" />
 
 #### Ce que fait le script
 
@@ -349,6 +391,8 @@ Les utilisateurs d'ordinateurs de bureau peuvent arriver sur votre page de renvo
 
 Pour résoudre ce problème d'attribution, vous pouvez utiliser un **formulaire de téléchargement de texte sur votre page de renvoi**, uniquement pour les utilisateurs d'ordinateurs de bureau. Il faut ensuite envoyer à l'appareil mobile un SMS ou un e-mail contenant l'URL OneLink.
 
+<div id="instructions-6" />
+
 #### Instructions :
 
 1. Identifier les utilisateur d’ordinateurs de bureau
@@ -357,6 +401,8 @@ Pour résoudre ce problème d'attribution, vous pouvez utiliser un **formulaire 
 4. Ajoutez &pid=desktop\_website à l'URL OneLink pour identifier cette source.
 5. Ajoutez &c=`{PAGE NAME}` pour vous aider à trouver les pages les plus et les moins performantes de votre site web pour les utilisateurs d'ordinateurs de bureau.
 
+<div id="what-the-script-does-6" />
+
 #### Ce que fait le script
 
 Le script détecte l'appareil ou la plate-forme sur lequel l'utilisateur se trouve. S'il s'agit d'un ordinateur de bureau, le script renvoie un lien vers l'URL d'un formulaire web et le place derrière les boutons de téléchargement. Lorsque l'utilisateur clique sur télécharger, il est envoyé vers un formulaire web où il remplit ses coordonnées afin de recevoir un SMS ou un e-mail contenant un lien pour télécharger l'app.
@@ -364,6 +410,8 @@ Le script détecte l'appareil ou la plate-forme sur lequel l'utilisateur se trou
 Vous pouvez créer le formulaire web et le fournir à l'URL dans le script.  Pour en savoir plus, recherchez **isMobileDevice()** dans le script.
 
 </Accordion>
+
+<div id="landing-page-javascript" />
 
 ## Page de renvoi javascript
 
@@ -601,13 +649,19 @@ function generateUrl(isDebug) {
 
 </Accordion>
 
+<div id="tip-2" />
+
 > 👍 **Astuce**
 >
 > Vous pouvez implémenter le snippet javascript à l'aide de Google Tag Manager. Google Tag Manager vous permet de contrôler plus facilement quand et où le javascript de la page de renvoi doit être utilisé.
 
+<div id="instructions-7" />
+
 ### Instructions
 
 1. Activez la fonction ***generateUrl*** au chargement de n'importe quelle page de votre site web, sur laquelle les visiteurs peuvent atterrir directement, et qui propose un bouton ***Téléchargement*** pour votre/vos app(s) mobile(s).  
+
+   <div id="important" />
 
    > 🚧 **Attention !**
    >
@@ -620,6 +674,8 @@ function generateUrl(isDebug) {
 4. Remplacez le paramètre ***partnerIDParam*** si vous souhaitez que les utilisateurs mobiles organiques soient attribués à une autre source média que le site web.
 5. Par défaut, les utilisateurs se voient attribuer la page web sur laquelle ils se trouvent lorsqu'ils cliquent sur le bouton ***Télécharger*** à moins qu'un autre nom de campagne ne soit spécifié dans l'URL de la page de renvoi (`&c={CAMPAIGN_NAME}`). Pour modifier cela, remplacez la valeur du paramètre ***campaignParam***.  
    Facultatif pour TOUS les scénarios, à l'exception des publicités payantes Meta ads.
+
+<div id="viewing-the-results" />
 
 ## Visualisation des résultats
 
@@ -640,6 +696,8 @@ Si votre tunnel de marketing mobile mène toujours à votre page de renvoi, ces 
 | **ID de partenaire intégré** | Utilisateurs provenant d'une publicité d'un partenaire intégré qui utilise le lien d'attribution d'AppsFlyer. Par exemple, inmobi\_int, tapjoy\_int |
 | **ordinateur de bureau** | Les utilisateurs d'ordinateurs de bureau remplissent le formulaire web et procèdent à l'installation après avoir cliqué sur le SMS ou l'e-mail envoyé à leur appareil mobile. |
 | **Autres sources** | Utilisateurs provenant de sources média détenues, qui utilisent les liens d'attribution d'AppsFlyer. Par exemple, email, sms, blog\_post, etc. |
+
+<div id="onelink-for-landing-page-solution" />
 
 ## Solution OneLink pour les pages de renvoi
 

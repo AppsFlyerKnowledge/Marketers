@@ -27,6 +27,8 @@ x-zendesk:
 
 [![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)
 
+<div id="about-creative-optimization" />
+
 ## À propos de l'optimisation des créations
 
 **L'optimisation des créations** est votre guichet unique pour mesurer la performance des créations utilisées dans toutes vos campagnes. Elle vous permet de rassembler sans effort toutes vos ressources créatives issues de tous les canaux média sur une même plateforme, ou dans votre système de veille stratégique, pour analyser leurs performances en fonction des dimensions, sur plusieurs campagnes, canaux, etc. L'optimisation des créations vous permet de découper les créations en fonction de différents paramètres et KPI, afin d'obtenir des informations essentielles avant de planifier, sélectionner et produire votre prochaine série de créations.
@@ -60,6 +62,8 @@ Une fois que vous êtes abonné et que votre compte a été configuré, le table
 | OPTIONNEL | Configuration :<ul><li>[Balises personnalisées](/docs/creative-optimization-guide#balises-personnalisées)</li><li>[Mesures personnalisées](/docs/creative-optimization-guide#custom-metrics)</li><li>[Vues personnalisées du tableau de bord](/docs/creative-optimization-guide#save-and-share-views)</li></ul> |
 | 4 | Parcourez vos tableaux de bord :<br /><br /><Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-overview-dashboard">Tableau de bord général</Anchor> - Permet d'analyser les performances créatives et de maximiser l'impact de vos campagnes.<br /><br /><Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-discovery-ai-dashboard">Tableau de bord Découvertes</Anchor> - Permet de produire non stop des créations efficaces. |
 | 5 | Analysez les données de performance des créations et optimisez vos créations et/ou campagnes en fonction des résultats. |
+
+<div id="creative-assets" />
 
 ## Ressources de créations
 
@@ -99,6 +103,8 @@ L'optimisation créative a la capacité unique d'identifier les ressources ident
 
 Meta Advantage+ (créations dynamiques) et Google Universal App Campaigns (UAC) peuvent inclure des créations publicitaires à ressources multiples.Cependant, AppsFlyer ne ventile pas les données par ressources.Meta ads fournit des données jusqu'au **niveau publicitaire** et Google fournit des données de **niveau groupe publicitaire** maximum.Pour ces types de créations publicitaires, AppsFlyer utilise la modélisation des données pour répartir les données de performance entre les ressources.
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > Prenons une création publicitaire sur Facebook qui a plusieurs ressources. Facebook lui attribue 100 installations au total, réparties entre les ressources comme suit : la **ressource A** a 60 installations et la **ressource B** 40 installations, selon les mesures de Facebook. Dans AppsFlyer, disons que la publicité est attribuée à 50 installations (en raison des différences d'attribution qui existent entre AppsFlyer et les SRN). Pour permettre une analyse au niveau de la ressource, AppsFlyer distribue les données de performance (impressions, clics, installations et coûts) en fonction de taux des mesures de la ressource par rapport au total, comme indiqué ci-dessous.
@@ -117,6 +123,8 @@ Meta Advantage+ (créations dynamiques) et Google Universal App Campaigns (UAC) 
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="using-the-dashboard" />
 
 ## Filtrage et mesures
 
@@ -268,11 +276,15 @@ Les mesures personnalisées peuvent être facilement modifiées ou supprimées.
 
 </Accordion>
 
+<div id="partner-dimensions-and-metrics" />
+
 <div id="partner-metrics::e592ecd3" />
 
 <Accordion title="Mesures des partenaires">
 
 Les mesures des partenaires sont des données qui proviennent directement des partenaires médias intégrés (et non des données d'attribution AppsFlyer). Les mesures varient selon le partenaire et peuvent inclure les impressions, les clics, le coût, les installations, l'IPM, le CVR, le CTR, l'eCPI, le CPM, etc (cf le tableau ci-dessous pour les éléments propres aux partenaires). Les mesures peuvent être sélectionnées dans les filtres, elles sont consultables dans le tableau de bord.
+
+<div id="to-set-up-partner-metrics" />
 
 #### Table des partenaires
 
@@ -404,6 +416,8 @@ f. Copiez la clé API.
 
 5. Copiez l'**ID de l'organisation**.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Nous vous recommandons de saisir les références des mesures du partenaire lors de l'installation d'une nouvelle intégration de partenaire. Mais ce n'est pas ne obligation. Vous pouvez enregistrer l'intégration et ajouter les informations d'identification plus tard.Notez cependant que nous extrayons les données des partenaires sur 90 jours à compter du moment où l'intégration des partenaires est créée, si les informations d'identification de mesure du partenaire ne sont pas renseignées tout de suite, cela entraine donc l'absence de données.
@@ -433,6 +447,8 @@ Cliquez sur l'icône en haut à droite du tableau de bord pour copier l'URL de l
 <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
+
+<div id="custom-tags" />
 
 ## Balises personnalisées
 

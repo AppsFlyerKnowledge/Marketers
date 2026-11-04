@@ -31,6 +31,8 @@ x-zendesk:
 ---
 > **En bref :** attribuez vos apps dans plusieurs boutiques Android et consultez les données dans un tableau de bord des apps unique, ou dans un tableau de bord des apps par boutique.
 
+<div id="multi-store-android-attribution" />
+
 ## Attribution mutli-stores Android
 
 AppsFlyer attribue les apps, quel que soit l'app store.  C'est-à-dire le store Google Play et les stores Android tiers comme Amazon, Opera, GetJar, Baidu et Huawei. (En d'autres termes les stores hors-marché ou autres app store Android). Les propriétaires d'app qui commercialisent une app via plusieurs stores peuvent choisir entre un **tableau de bord** **unique** avec les données de tous les stores, ou bien un **tableau de bord pour chaque store**.
@@ -42,12 +44,16 @@ AppsFlyer attribue les apps, quel que soit l'app store.  C'est-à-dire le store
 
 ![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
 
+<div id="single-dashboard-vs-dashboard-per-store" />
+
 ### Tableau de bord unique et tableau de bord par store
 
 * **Tableau de bord unique** : un tableau de bord qui regroupe les données de tous les stores, y compris le Google Play Store
 * **Tableau de bord par store :** tableaux de bord multiples (chaque store a son propre tableau de bord). Ce qui veut dire que vous avez autant de tableaux de bord que de stores proposant l'app.
 
 <table><thead><tr><th> </th><th><p>Tableau de bord unique<br/> [Recommandé]</p></th><th> Tableau de bord par store</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>Nom du package Android</td><td colspan="2">Utilisez le même nom de package (identique) quelle que soit l'option choisie. </td></tr><tr><td><span id="channel-name"></span>Nom du canal</td><td>Rien à paramétrer</td><td><ul><li><span>Lorsque vous ajoutez l'app dans le tableau de bord AppsFlyer en utilisant l'option <strong>APK Android hors-store</strong> , vous devez paramétrer le canal.</span></li><li><span>Le canal identifie le store. </span></li><li>La combinaison entre le nom du package Android et le canal permet d'identifier de manière unique chaque tableau de bord AppsFlyer.</li><li>Exemple : le nom du package Android est com.abc.def et le canal est xyz_device_store. L'identifiant unique du tableau de bord sera com.abc.def-xyz_device_store.</li><li>Si l'APK a un paramètre de canal mais qu'il n'y a pas d'app avec ce paramètre, le trafic est attribué à l'app par défaut, c'est-à-dire l'app avec un paramètre de canal non rempli, c'est-à-dire Google Play Store.</li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>Remplissage du champ install_app_store</td><td><ul><li>Identifie de manière unique le store qui fournit l'app par téléchargement.</li><li>Dans le cas du Google Play Store, ce champ reste vide. </li><li>Le nom du store est défini dans le <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">manifeste / l'APK.</a> </li></ul></td><td><p>S/O</p></td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#procédures" target="_blank">Template OneLink</a></td><td>Cette méthode est recommandée si vous travaillez avec OneLink. </td><td>N/A </td></tr><tr><td><span id="measurementattribution-links"></span>Liens de mesures / d'attribution </td><td><ul><li>Les liens sont les mêmes quel que soit le store.</li><li>Pour rediriger vers le bon store, utilisez <a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">&amp;af_r</a> pour définir l'URL de redirection</li></ul></td><td><ul><li>Un lien unique est requis pour chaque store.</li><li>Vous pouvez les créer sur la page <strong>Integrations actives</strong>.</li><li>L'ID d'app résulte de l'assemblage entre le nom du canal et le nom du package Android. Ex : com.abc.def-def_store.<br/>Les liens d'attribution seront donc différents.</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>Options de reporting disponibles avec le champ install_app_store</td><td><p>Les rapports de cohortes et de données brutes comprennent ce champ.  Contactez votre CSM pour lui demander d'ajouter le flag de fonctionnalité SFDC requis. </p></td><td>N/A </td></tr><tr><td><span id="considerations"></span><p>Attention</p></td><td><ul><li>Exactitude des attributions : les réinstallations de différents stores ne gonflent pas le nombre d'installations.</li><li><span>Les installations organiques afficheront l'ensemble des installations organiques des APK de tous les stores sur un même tableau de bord.</span></li><li><span>Les options de reporting, ventilées par store, sont actuellement limitées à la cohorte et aux données brutes.</span></li></ul></td><td><ul><li>Exactitude des attributions : les réinstallations sont comptées, ce qui entraîne une attribution moins précise.</li><li> <span>Consultez </span><span>les installations organiques</span><span> et </span><span>non organiques</span><span> ainsi que les données d'évènements in-app pour chaque store (canal) sur les différents tableaux de bord d'app dans AppsFlyer.</span> </li><li><span>Utilisez le cohorte pour afficher les rapports combinés de tous les stores</span></li><li>Vérifiez que les partenaires avec qui vous travaillez sont <strong>actifs</strong> (l'option <a href="./partner-activation-deactivation" target="_blank">Activer le partenaire</a> est enclenchée) dans <strong>tous les tableaux de bord</strong>.  cela vous permettra <span>d'éviter les différences de résultat (plus fréquentes lors de la comparaison des données avec les SRN).</span><span></span> </li></ul></td></tr></tbody></table>
+
+<div id="set-up-tasks" />
 
 ## Opérations de mise en place
 
@@ -71,6 +77,8 @@ Opérations à effectuer
 | 2 | Marketeur | Aucune action requise. On part du principe que l'app est déjà active dans AppsFlyer. | [Ajout de l'app](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) dans AppsFlyer. |
 | 3 | Marketeur | [Préparation des liens d'attribution](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | Préparation des liens d'attribution en ajoutant l'ID de l'app au nom du canal. À effectuer sur la page des **Intégrations actives** en suivant la procédure habituelle. |
 | 4 | Développeur et marketeur | [Test](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [Test](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="procedures" />
 
 ## Procédures
 
@@ -174,6 +182,8 @@ Ajout d'un tableau de bord (app) qui sera identifié par l'assemblage du nom du 
 
 <Accordion title="Tests — les deux options du tableau de bord">
 
+<div id="non-organic-installs" />
+
 #### **installations non organiques**
 
 **Pour tester les installations non organiques :**
@@ -193,6 +203,8 @@ Ajout d'un tableau de bord (app) qui sera identifié par l'assemblage du nom du 
 | --- | --- |
 | <ol><li>Vérifiez le rapport des données brutes d'installation de votre app sur la page Données d'exportation.</li><li>Vous devriez voir s'afficher une conversion d'installation avec la source média test. Sous la colonne intitulée **Installer l'app store**, vous devriez voir le nom du store tel qu'il apparaît dans le fichier manifest.xml.</li><li>Vous pouvez également voir le paramètre "af\_installstore": "STORE\_NAME" dans les journaux de l'installation.</li></ol> | <ol><li>Rendez-vous sur le tableau de bord par app store concerné.</li><li>Vérifiez le rapport de données brutes des installations de l'app dans l'onglet Données d'exportation ou bien consultez la page de présentation de l'app.</li><li>Vous devriez voir une conversion d'installation avec la source média « test ».</li></ol> |
 
+<div id="organic-installs" />
+
 #### **Installations organiques**
 
 **Pour tester les installations organiques :**
@@ -201,6 +213,8 @@ Ajout d'un tableau de bord (app) qui sera identifié par l'assemblage du nom du 
 2. Installez la dernière version bêta de l'app avec le SDK d'attribution d'AppsFlyer intégré, puis lancez-la.
 3. Vérifiez les résultats :
 
+<div id="expected-results" />
+
 #### Résultats attendus
 
 | Tableau de bord unique | Tableau de bord par store |
@@ -208,6 +222,8 @@ Ajout d'un tableau de bord (app) qui sera identifié par l'assemblage du nom du 
 | Consultez la page de présentation pour vérifier la présence d'une nouvelle installation organique (sous la source média « organique »). Actuellement, avec la méthode d'app unique, il n'existe aucune indication sur l'origine des installations organiques. | <ol><li>Accédez au dashboard et à l'overview de l'application qui est spécifique au store testé</li><li>Vous devriez voir une conversion d'installation sous la source média « organique ».</li></ol> |
 
 </Accordion>
+
+<div id="additional-features" />
 
 ## Fonctionnalités supplémentaires
 
@@ -273,6 +289,8 @@ Stores Android tiers ayant des intégrations d'attribution par référent avec A
 <div id="troubleshooting" />
 
 <Accordion title="Dépannage">
+
+<div id="installs-attributed-to-the-default-app" />
 
 ### Installations attribuées à l'app par défaut
 

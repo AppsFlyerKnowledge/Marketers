@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **En bref :** Ajoutez le code des bannières intelligentes à votre site web pour convertir les internautes en utilisateurs d'app mobile.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Le SDK web V1 pour les bannières intelligentes AppsFlyer a été supprimé le 8 novembre 2023. Pour afficher les bannières intelligentes sur votre site web, vous devez passer à la version 2. <Anchor target="_blank" href="/marketers/fr/docs/bulletin-deprecation-of-appsflyer-smart-banner-web-sdk-v1">En savoir plus</Anchor>
+
+<div id="website-code-implementation" />
 
 ## Mettre en place le code d’un site web
 
@@ -214,6 +218,8 @@ Désormais, lorsque votre site web se chargera sur un mobile, la bannière activ
 4. Cliquez sur **Mettre à jour le lien**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

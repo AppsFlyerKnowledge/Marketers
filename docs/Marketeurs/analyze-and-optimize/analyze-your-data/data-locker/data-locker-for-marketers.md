@@ -58,7 +58,11 @@ Dans Data Locker, sélectionnez vos apps, sources média, événements et rappor
 
 </Accordion>
 
+<div id="data-storage-architecture" />
+
 ## Architecture de stockage des données
+
+<div id="zd-overview" />
 
 <div id="overview" />
 
@@ -121,6 +125,8 @@ Les fichiers de données dépendent du type de segmentation.
 
 <Accordion title="Options de stockage">
 
+<div id="caution" />
+
 > ❗️ **Attention !**
 >
 > Si vous utilisez l'option de stockage appartenant au marketeur :
@@ -148,6 +154,8 @@ Les fichiers de données dépendent du type de segmentation.
 | Sécurité | AppsFlyer contrôle le stockage. Le client a un accès en lecture seule. | Le marketeur contrôle le stockage.<ul><li>**AWS** : AppsFlyer demande l'autorisation pour GetObject, ListBucket, DeleteObject, PutObject au compartiment. Le compartiment doit être soumis à l'utilisation exclusive d'AppsFlyer. Ne l'utilisez pas à d'autres fins.</li><li>**GCS** : voir <Anchor target="_blank" href="/marketers/fr/docs/data-locker-cloud-service-setup">article sur la configuration GCS</Anchor>.</li></ul> |
 | Capacité de stockage | Géré par AppsFlyer | Géré par le marketeur |
 | Contrôle de l'accès à l'aide de points de terminaison VPC avec règles de compartiment | Non applicable | [Facultatif] Dans AWS, si vous installez la sécurité des points de terminaison VPC au niveau compartiment, vous devez autoriser les serveurs AppsFlyer. |
+
+<div id="notice-to-security-officers-in-the-case-of-customer-controlled-storage" />
 
 #### **Avis aux agents de sécurité dans le cas de stockage contrôlé par le client**
 
@@ -289,6 +297,8 @@ Un admin peut réinitialiser les identifiants du compartiment AppsFlyer à tout 
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations supplémentaires
 
 <div id="traits-and-limitations" />
@@ -326,6 +336,8 @@ Un admin peut réinitialiser les identifiants du compartiment AppsFlyer à tout 
 
 </Accordion>
 
+<div id="aws-data-retrieval" />
+
 ## Récupération des données AWS
 
 Utilisez votre outil de recherche de données AWS habituel, AWS CLI, ou l'un des outils décrits dans les sections qui suivent. Important ! Les instructions exactes conviennent aux compartiments appartenant à AppsFlyer. Si vous vous connectez à votre compartiment, ajustez les instructions si besoin.
@@ -358,6 +370,8 @@ Dans les commandes suivantes, la valeur de `{home-folder}` peut être trouvée
 ```bash
 aws s3 ls s3://af-ext-reports/{home-folder}/data-locker-hourly/
 ```
+
+<div id="listing-files-and-folders" />
 
 ### Liste des fichiers et des dossiers
 
@@ -452,6 +466,8 @@ Avant de commencer :
    Vous pouvez maintenant accéder aux fichiers Data Locker.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

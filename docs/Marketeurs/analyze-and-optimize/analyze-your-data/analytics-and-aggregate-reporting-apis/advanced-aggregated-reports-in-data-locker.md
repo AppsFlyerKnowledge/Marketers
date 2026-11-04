@@ -27,6 +27,8 @@ x-zendesk:
 
 > **En bref :** Les rapports agrégés avancés dans Data Locker contiennent des données agrégées qui sont des données récentes (fraîches), précises, dont la granularité et le volume illimité sont optimaux. Ces rapports sont actuellement en version bêta.
 
+<div id="advanced-aggregated-reports-in-data-locker" />
+
 ## Rapports agrégés avancés dans Data Locker
 
 Rapports agrégés avancés dans Data Locker :
@@ -35,6 +37,8 @@ Rapports agrégés avancés dans Data Locker :
 * Vous pouvez charger les données dans vos systèmes de BI et les utiliser dans le cadre de vos processus de performance et d’optimisation des campagnes ;
 * Avoir les données les plus récentes et précises : les données arrivent <Anchor target="_blank" href="/marketers/fr/docs/about-data-freshness-and-timezone-support#intraday-during-the-day">plusieurs fois par jour</Anchor> et sont mises à jour avec chaque nouvelle version du rapport contenant toutes les données disponibles pour cette même journée.
 * Vous aide à augmenter les données brutes qui peuvent être limitées et <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">restreintes</Anchor> en raison des politiques de partage des données des sources multimédias ou de vos <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">politiques de préservation de la confidentialité</Anchor>. Les restrictions ont un impact sur les champs liés à l’attribution telles que la campagne et le groupe d’annonces.
+
+<div id="setup" />
 
 ## Configuration
 
@@ -45,11 +49,15 @@ Pour obtenir des rapports agrégés avancés, effectuez l’une des procédures 
 | Oui | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/fd2f20f4365b0ccf2b4f39700587a960563f4087b6f576063c0e49b95e0907c1-23127074967441.png)Pour ajouter les rapports à Data Locker :<ol><li>Dans AppsFlyer, dans le menu latéral, sélectionnez **Signaler > Data Locker**.</li><li>Sélectionnez tous les rapports que vous souhaitez obtenir.</li><li>Cliquez sur **Enregistrer la configuration**.<br />Les rapports seront disponibles le lendemain.</li></ol> |
 | Non | ![AppsFlyerAdmin_us-en.png](https://files.readme.io/fd2f20f4365b0ccf2b4f39700587a960563f4087b6f576063c0e49b95e0907c1-23127074967441.png)**Pour configurer Data Locker** :<ol><li>Achevez la toute première configuration Data Locker (<Anchor target="_blank" href="/marketers/fr/docs/data-locker-for-marketers#set-up-data-locker">annonceur</Anchor> \| <Anchor target="_blank" href="/partners/fr/docs/data-locker-for-partners">partenaire</Anchor>).</li><li>Ajoutez des rapports à Data Locker :<ol><li>Dans AppsFlyer, dans le menu latéral, sélectionnez **Signaler > Data Locker**.</li><li>Sélectionnez tous les rapports que vous souhaitez obtenir.</li><li>Cliquez sur **Enregistrer la configuration**.<br />Les rapports seront disponibles le lendemain.</li></ol></li></ol> |
 
+<div id="reports-available" />
+
 ## Rapports disponibles
 
 <div id="cohort-versioned-report" />
 
 <Accordion title="Rapport de cohorte versionné">
+
+<div id="report-facts" />
 
 ### Faits rapportés
 
@@ -62,6 +70,8 @@ Pour obtenir des rapports agrégés avancés, effectuez l’une des procédures 
 | Fuseau horaire | UTC |
 | Structure des répertoires et des noms de fichiers | [En savoir plus](/docs/advanced-aggregated-reports-in-data-locker#structure-du-rapport) |
 | L'impact des politiques de rétention des partenaires | Considérez que certains partenaires mettent en œuvre une politique de conservation des données. Dans ce cas, les événements survenant après la fin de la période de conservation ne sont pas pris en compte dans les rapports de cohorte.<br /><br />Exemple : SRN «A» a une politique de conservation des données de 180 jours. Les événements utilisateur jusqu’au 180e jour sont attribués à SRN «A». Les événements qui se produisent après le 180e jour ne sont pas pris en compte.<br /><br />**Remarque** : Les événements s’affichent dans le tableau de bord «Vue d’ensemble» comme étant des événements organiques. |
+
+<div id="report-structure" />
 
 ### Structure du rapport
 
@@ -285,6 +295,8 @@ Le format des champs est le suivant :
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Métriques
 
 | Nom du champ | Description | Format |
@@ -296,11 +308,15 @@ Le format des champs est le suivant :
 | revenue\_selected\_currency | <ul><li>Montant du revenu dans la devise sélectionnée. Par exemple, si la devise sélectionnée est EUR, alors 1234,56 € est indiqué comme 1234,56</li><li>Maximum de 2 décimales après la virgule</li></ul> | Nombre |
 | first\_inapp | <ul><li>Nombre d’utilisateurs effectuant l’événement pour la première fois après leur conversion.</li><li>La somme des indicateurs first\_inapp vous donne le nombre cumulé d’utilisateurs uniques pour l’événement.</li></ul> | Nombre |
 
+<div id="directory-and-filename-structure" />
+
 #### Structure des répertoires et des noms de fichiers
 
 Le chemin vers le rapport consiste en la hiérarchie de dossiers suivante :
 
 Avec le format suivant : `/t=cohort_unified_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy" />
 
 #### Hiérarchie des dossiers de rapports
 
@@ -340,6 +356,8 @@ bucket
 * **t** : type de rapport.
 * **version**: Horodatage Unix lors de la création de la version.
 
+<div id="report-versions-and-data-freshness" />
+
 ### Versions des rapports et actualisation des données
 
 * Intraday. Les rapports sont envoyés toutes les heures.
@@ -365,6 +383,8 @@ bucket
 
 <Accordion title="Rapport versionné sur le fuseau horaire de la cohorte">
 
+<div id="report-facts-1" />
+
 ### Faits rapportés
 
 | Introduction | Le rapport versionné par fuseau horaire de cohorte contient toutes vos données agrégées, par cohorte, avec toute la granularité des mesures de campagne, en fonction des fuseaux horaires localisés. Le rapport est mis à jour quasiment toutes les heures pour maximiser la fraîcheur et la précision des données.<br /><br /><Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQk1cZkeJhlx3trW13SjGbD4aWX3LmXZJRDJRApuAJkjB7XAg4nSFUyN0_YoirX-QMHkhFeMHwEmiVj/pub?output=xlsx">Télécharger un exemple de rapport</Anchor> |
@@ -376,6 +396,8 @@ bucket
 | Fuseau horaire | N’importe quel fuseau horaire sauf UTC. Cela signifie que les rapports ne contiennent pas de données pour toutes les applications avec des paramètres de fuseau horaire UTC dans AppsFlyer. |
 | Structure des répertoires et des noms de fichiers | [En savoir plus](/docs/advanced-aggregated-reports-in-data-locker#structure-du-rapport-1) |
 | L'impact des politiques de rétention des partenaires | Considérez que certains partenaires mettent en œuvre une politique de conservation des données. Dans ce cas, les événements survenant après la fin de la période de conservation ne sont pas pris en compte dans les rapports de cohorte.<br /><br />Exemple : SRN «A» a une politique de conservation des données de 180 jours. Les événements utilisateur jusqu’au 180e jour sont attribués à SRN «A». Les événements qui se produisent après le 180e jour ne sont pas pris en compte.<br /><br />**Remarque** : Les événements s’affichent dans le tableau de bord «Vue d’ensemble» comme étant des événements organiques. |
+
+<div id="report-structure-1" />
 
 ### Structure du rapport
 
@@ -611,6 +633,8 @@ Le format des champs est le suivant :
   </tbody>
 </Table>
 
+<div id="metrics-1" />
+
 #### Métriques
 
 | Nom du champ | Description | Format |
@@ -622,11 +646,15 @@ Le format des champs est le suivant :
 | revenue\_selected\_currency | <ul><li>Montant du revenu dans la devise sélectionnée. Par exemple, si la devise sélectionnée est EUR, alors 1234,56 € est indiqué comme 1234,56</li><li>Maximum de 2 décimales après la virgule</li></ul> | Nombre |
 | first\_inapp | <ul><li>Nombre d’utilisateurs effectuant l’événement pour la première fois après leur conversion.</li><li>La somme des indicateurs first\_inapp vous donne le nombre cumulé d’utilisateurs uniques pour l’événement.</li></ul> | Nombre |
 
+<div id="directory-and-filename-structure-1" />
+
 #### Structure des répertoires et des noms de fichiers
 
 Le chemin vers le rapport consiste en la hiérarchie de dossiers suivante :
 
 Avec le format suivant : `/t=cohort_unified_timezone_versioned/dt=/version=/`
+
+<div id="report-folder-hierarchy-1" />
 
 #### Hiérarchie des dossiers de rapports
 
@@ -666,6 +694,8 @@ bucket
 * **t** : type de rapport.
 * **version**: Horodatage Unix lors de la création de la version.
 
+<div id="report-versions-and-data-freshness-1" />
+
 ### Versions des rapports et actualisation des données
 
 * Intraday. Les rapports sont envoyés toutes les heures.
@@ -697,6 +727,8 @@ bucket
 | 20 | Jour 8 à 00h00 | Données complètes sur les conversions et les événements in-app pour le jour 0, et données complètes sur les revenus publicitaires envoyées via S2S, en tenant compte de tout problème potentiel qui aurait pu se produire du côté du réseau de revenus publicitaires. | Jour 8 à 6h du matin |
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -749,6 +781,8 @@ Les données de toutes les applications sont configurables. Ces données peuvent
 
 Voici quelques exemples d’applications populaires et pratiques des données que les développeurs BI peuvent extraire via Data Locker. Chaque exemple est illustré par une requête SQL et un exemple de visuel Excel.
 
+<div id="1-calculate-retention" />
+
 #### **1. Calcul de la rétention**
 
 Dans l’exemple suivant, nous :
@@ -780,6 +814,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30 % | 10 % |
 | 98765432 | 123456 | 200 | 25 % | 15 % |
 | 07315466 | 613770 | 300 | 20 % | 12% |
+
+<div id="2-calculate-arpu-of-multiple-in-app-events" />
 
 #### **2. Calcul de l’ARPU de plusieurs événements dans l’application**
 
@@ -816,6 +852,8 @@ group by 1
 | 98765432 | Réengagement | 3,57 | 1,34 | 4,86 |
 | 07315466 | Réattribution | 7,41 | 6,79 | 5,29 |
 
+<div id="3-calculate-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. Calcul du taux de conversion des événements in-app pour un jour de cohorte spécifique**
 
 Dans l’exemple suivant, nous :
@@ -846,6 +884,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | États-Unis | 12345678 | 123456 | site\_123 | 45 % |
 | 2022-11-05 | GB | 98765432 | Nul | site\_654 | 70 % |
 | 2022-10-31 | KR | 07315466 | Nul | Nul | 63% |
+
+<div id="4-calculate-daily-installs" />
 
 #### **4. Calcul des installations quotidiennes**
 
@@ -882,6 +922,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculate-revenue-from-facebook-ads" />
+
 #### **5. Calcul des revenus à partir des publicités Facebook**
 
 Dans l’exemple suivant, nous :
@@ -915,6 +957,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99,23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13,34 |
 
+<div id="6-calculate-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. Calcul de l’ARPU par ID de mot-clé ASA pour un maximum de 365 jours de cohorte**
 
 Dans l’exemple suivant, nous :
@@ -945,6 +989,8 @@ group by 1
 | adnet1\_int | 123456 | 57,019.93 |
 | adnet2\_int | 987654 | 64,867.84 |
 | adnet3\_int | 666854 | 48,160.02 |
+
+<div id="7-calculate-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calcul du ARPU (revenu moyen par utilisateur) à J+7 par heure d'attribution et par zone géographique**
 
@@ -1049,6 +1095,8 @@ group by 1,2,3,4,5
 | Désinstallation des données | Les désinstallations sont traitées quotidiennement. Ainsi, elles n’apparaissent que dans les rapports qui contiennent des données complètes pour une journée (et non des données partielles). |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

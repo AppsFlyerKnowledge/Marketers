@@ -27,6 +27,8 @@ x-zendesk:
 
 ![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
 
+<div id="about-the-experiment" />
+
 ## À propos de l'expérience
 
 Les tests d'<Anchor target="_blank" href="/marketers/fr/docs/incrementality-for-remarketing-overview">incrémentalité</Anchor> mesurent l'impact réel de vos campagnes grâce à des tests A/B qui évaluent précisément « l'augmentation incrémentielle » — la différence entre les conversions générées par vos campagnes de remarketing et celles qui se seraient produites malgré tout.
@@ -34,6 +36,8 @@ Les tests d'<Anchor target="_blank" href="/marketers/fr/docs/incrementality-for-
 Les résultats sont essentiels pour comprendre la réelle valeur que vos investissements marketing génèrent. Avec les tests d'incrémentalité, vous pouvez objectivement observer l'impact de canaux et de campagnes spécifiques, et prendre de meilleures décisions concernant l'allocation budgétaire et l'optimisation des campagnes.
 
 AppsFlyer simplifie les tests d'incrémentalité grâce à un processus automatisé initié lors de la création de l'audience. La nouvelle audience est automatiquement répartie entre les partenaires média connectés et un groupe de contrôle via l'activation de l'option « Mesurer l'impact incrémentiel ». Le groupe de contrôle est la partie de l'audience retenue des partenaires, constituant un élément indispensable des tests. Une fois l'audience enregistrée, une expérience d'incrémentalité est automatiquement créée. Après avoir lancé vos campagnes auprès des partenaires et vous être assuré que les campagnes adéquates sont affectées, vous pourrez visionner les résultats de l'expérience dans le tableau de bord d'incrémentalité.
+
+<div id="get-started" />
 
 ## Commencez
 
@@ -45,6 +49,8 @@ Suivez ces étapes pour débuter les tests d'incrémentalité. Pour plus de dét
 | 2 | **[Créez le public cible et répartissez les groupes](/docs/run-an-incrementality-for-remarketing-experiment#create-the-target-audience-and-split-groups)**<br /><br />Dans <Anchor target="_blank" href="/marketers/fr/docs/audiences-guide">Audiences</Anchor> :<ul><li>Configurez l'audience.</li><li>Connectez-la aux réseaux publicitaires.</li><li>L'audience est automatiquement divisée en groupes de test et de contrôle, via une bascule activée (pour les abonnés Incrementality, dans les audiences créées après le 11 janvier 2023).</li></ul>AppsFlyer Audiences télécharge les membres du groupe de test sur les réseaux publicitaires et retient ceux du groupe de contrôle. |
 | 3 | [**Lancez la campagne et l'expérience**](/docs/run-an-incrementality-for-remarketing-experiment#launch-the-campaign-and-experiment)<ul><li>Sur les réseaux publicitaires, créez et lancez une campagne qui cible les utilisateurs de l'audience.</li><li>L'expérience d'incrémentalité est générée automatiquement (pour les abonnés à l'incrémentalité).</li></ul>Les membres du groupe test sont exposés aux publicités. Le groupe de contrôle ne l’est pas. |
 | 4 | **[Analyser les résultats](/docs/run-an-incrementality-for-remarketing-experiment#analyze-the-results)**<ul><li>L'analyse d'incrémentalité est visible sur le <Anchor target="_blank" href="/marketers/fr/docs/incrementality-for-remarketing-overview#tableau-de-bord-dincrémentalité">tableau de bord d'incrémentalité</Anchor>.</li><li>Les données utilisateur détaillées sont accessibles dans les <Anchor target="_blank" href="/marketers/fr/docs/incrementality-for-remarketing-overview#rapports-de-données-brutes">rapports de données brutes d'incrémentalité</Anchor> (via Data Locker).</li></ul>Les informations obtenues grâce à des expériences d'incrémentalité bien menées permettent d'optimiser vos campagnes marketing pour un impact positif maximal. Par exemple, elles peuvent vous orienter vers le meilleur message pour une audience cible, la meilleure création ou promotion, la source média la plus efficace, et bien plus encore. |
+
+<div id="set-up-the-experiment" />
 
 ## Configurer l'expérience
 
@@ -62,6 +68,8 @@ Comme dans toute expérience, il est essentiel de préciser exactement ce que vo
 | % du groupe de contrôle | Le groupe de contrôle est automatiquement défini à 15 % de la taille de l'audience (la bonne pratique est entre 15 % et 25 %). |
 | Groupe test | Identifiez les réseaux publicitaires que vous souhaitez tester. Le pourcentage sera réparti de manière égale entre eux (vous pouvez ajuster le pourcentage de l'audience envoyé à chacun).<br /><br />**Bonne pratique :** 1 à 3 réseaux publicitaires |
 | Hypothèse | Définir les résultats attendus de l'expérience.<br /><br />Bien qu'il puisse sembler un peu contre-intuitif de prévoir le résultat avant de commencer, formuler une hypothèse est un élément essentiel de la conception expérimentale ; c'est ce qui vous aide à interpréter vos résultats.<br /><br />**Bonne pratique :** Énoncez une hypothèse facilement testable en utilisant des pourcentages concrets au lieu d'estimations vagues. Par exemple :<ul><li>***15 % d'utilisateurs supplémentaires achèteront une mise à niveau*** est une hypothèse facilement testable.</li><li>***Beaucoup plus d'utilisateurs achèteront une mise à niveau*** est plus difficile à tester.</li></ul> |
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -105,7 +113,7 @@ Une fois que vous avez enregistré votre audience avec la division activée, une
 * Pendant que l'expérience est en cours, n'apportez aucune modification à la configuration de l'audience. Les modifications des partenaires, du nom de l'audience ou d'autres paramètres entraîneront des analyses statistiques inexactes.  
   **Bonne pratique :** Même après la conclusion d'une expérience, si vous devez modifier la définition d'une audience précédemment testée, dupliquez d'abord l'audience, puis effectuez les modifications sur la nouvelle copie. Cela garantit l’intégrité continue des données historiques sur le tableau de bord d’incrémentalité.
 * Modifier la répartition et la configuration des partenaires d'une audience existante mettra fin à l'expérience d'incrémentalité en cours et en créera une nouvelle.
-* #### Vérifiez les fonctionnalités d’extension d’audience :
+* #### <span id="check-for-audience-expansion-features"></span>Vérifiez les fonctionnalités d’extension d’audience :
 
 Les publicités Meta et Google Ads ont toutes deux une fonctionnalité optionnelle qui permet aux campagnes de cibler au-delà d'une liste d'audience configurée pour élargir la portée de la campagne. Cette fonctionnalité, si elle reste activée, influencera les expériences d'incrémentalité et faussera les résultats. **Veuillez vérifier que cette fonctionnalité est désactivée.**
 
@@ -124,12 +132,16 @@ Dans Google Ads, cela s'appelle « élargissement de l'audience ».
 
 **Prenez les mesures suivantes :**
 
+<div id="1-configure-campaigns-on-ad-networks" />
+
 #### 1. Configurez des campagnes sur les réseaux publicitaires
 
 La première étape consiste à créer une campagne qui cible les utilisateurs de votre audience et à la lancer sur le réseau publicitaire (pour chaque réseau publicitaire vers lequel l'audience est téléchargée).
 
 * **Important !** Pour obtenir des résultats de test précis, configurez la campagne pour qu'elle cible **uniquement** les utilisateurs de l'audience testée ; n'incluez pas les utilisateurs d'autres sources.
 * Si l'audience testée est une audience nouvellement créée, il peut falloir jusqu'à 24 heures pour que celle-ci soit disponible sur la plateforme du réseau publicitaire.
+
+<div id="2-ensure-the-correct-campaign-is-linked-to-the-experiment" />
 
 #### 2. Assurez-vous que la bonne campagne est liée à l'expérience.
 
@@ -159,6 +171,8 @@ Une fenêtre s'affiche, vous permettant de lier des campagnes.
 
 La campagne est maintenant liée à l'expérience.
 
+<div id="manually-create-an-experiment" />
+
 #### Créer manuellement une expérience
 
 Si vous êtes abonné à Incrementality et avez créé votre audience après le 11 janvier 2023, il n'est pas nécessaire de créer manuellement une expérience. Les expériences sont automatiquement créées pour vos audiences (et apparaissent sur le tableau de bord d'incrémentalité avec « [Auto] » avant le titre). Si vous souhaitez créer manuellement une expérience pour une audience antérieure ou pour une autre raison, suivez ces étapes.
@@ -168,6 +182,8 @@ Si vous êtes abonné à Incrementality et avez créé votre audience après le 
 * Dans AppsFlyer, dans le menu latéral, sélectionnez **Optimiser** > **Incrémentalité**.
 * Sur la page **Expériences d'incrémentalité**, cliquez sur le bouton **Nouvelle expérience**.
 * Suivez les étapes de l'assistant pour créer l'expérience. Des instructions détaillées vous sont fournies à chaque étape.
+
+  <div id="notes" />
 
   > 📘 **Remarques**
   >
@@ -207,6 +223,8 @@ Les premiers résultats de l'expérience sont disponibles sur le <Anchor target=
 <Anchor target="_blank" href="/marketers/fr/docs/incrementality-for-remarketing-overview#rapports-de-données-brutes">Les rapports de données brutes d'incrémentalité</Anchor> sont disponibles via Data Locker.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Voir aussi**
 >

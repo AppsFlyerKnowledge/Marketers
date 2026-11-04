@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** L'analyse des cohortes dans Data Locker contient des données agrégées de tous les éléments de la hiérarchie publicitaire. Les rapports contiennent des données sur les utilisateurs qui ont effectué des attributions au cours des 365 jours précédents. Ce rapport est accessible aux annonceurs qui disposent de données brutes ou de l'API Cohort, ou des deux, dans le cadre de leur abonnement. Cela signifie qu'aucun abonnement Data Locker n'est requis pour ce rapport.
 
+<div id="cohort-analytics-in-data-locker" />
+
 ## Analyse des cohortes dans Data Locker
 
 Dans certains cas, les données brutes d'attribution dans AppsFlyer sont <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">limitées</Anchor> en raison des politiques de partage des données des sources média ou de vos <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">politiques de protection de la vie privée.</Anchor> La restriction inclut tous les champs liés à l'attribution, tels que la campagne et l'adset. Les rapports de cohorte vous fournissent des données agrégées qui peuvent être utilisées comme alternative aux données brutes.
@@ -285,6 +287,8 @@ Le format des champs est le suivant :
   </tbody>
 </Table>
 
+<div id="metrics" />
+
 #### Métriques
 
 | Nom du champ | Description | Format |
@@ -333,6 +337,8 @@ Les données de toutes les applications sont fournies dans un seul fichier. Util
 
 Voici quelques exemples d’applications populaires et pratiques des données de cohorte que les développeurs BI peuvent extraire via Data Locker. Chaque exemple est illustré par une requête SQL et un exemple de visuel Excel.
 
+<div id="1-calculating-retention" />
+
 #### **1. Calcul de la rétention**
 
 Dans l’exemple suivant, nous :
@@ -364,6 +370,8 @@ group by 1,2
 | 12345678 | 987654 | 100 | 30 % | 10 % |
 | 98765432 | 123456 | 200 | 25 % | 15 % |
 | 07315466 | 613770 | 300 | 20 % | 12 % |
+
+<div id="2-calculating-arpu-of-multiple-in-app-events" />
 
 #### **2. Calcul de l’ARPU de plusieurs événements dans l’application**
 
@@ -400,6 +408,8 @@ group by 1
 | 98765432 | Réengagement | 3,57 | 1,34 | 4,86 |
 | 07315466 | Réattribution | 7,41 | 6,79 | 5,29 |
 
+<div id="3-calculating-in-app-event-conversion-rate-for-a-specific-cohort-day" />
+
 #### **3. Calcul du taux de conversion des événements in-app pour un jour de cohorte spécifique**
 
 Dans l’exemple suivant, nous :
@@ -430,6 +440,8 @@ group by 1,2,3,4,5
 | 2022-11-07 | États-Unis | 12345678 | 123456 | site\_123 | 45 % |
 | 2022-11-05 | GB | 98765432 | Nul | site\_654 | 70 % |
 | 2022-10-31 | KR | 07315466 | Nul | Nul | 63% |
+
+<div id="4-calculating-daily-installs" />
 
 #### **4. Calcul des installations quotidiennes**
 
@@ -466,6 +478,8 @@ group by 1,2,3,4,5
 | id123456789 | 2022-11-05 | adnet2\_int | af\_conversion | 216 |
 | id123456789 | 2022-10-31 | adnet3\_int | af\_conversion | 327 |
 
+<div id="5-calculating-revenue-from-facebook-ads" />
+
 #### **5. Calcul des revenus à partir des publicités Facebook**
 
 Dans l’exemple suivant, nous :
@@ -499,6 +513,8 @@ group by 1,2,3
 | 2022-11-05 | id123456789 | adnet2\_int | 99,23 |
 | 2022-10-31 | id123456789 | adnet3\_int | 13,34 |
 
+<div id="6-calculating-arpu-per-asa-keyword-id-for-up-to-365-cohort-days" />
+
 #### **6. Calcul de l’ARPU par ID de mot-clé ASA pour un maximum de 365 jours de cohorte**
 
 Dans l’exemple suivant, nous :
@@ -529,6 +545,8 @@ group by 1
 | adnet1\_int | 123456 | 57 019,93 |
 | adnet2\_int | 987654 | 64 867,84 |
 | adnet3\_int | 666854 | 48 160,02 |
+
+<div id="7-calculating-arpu-days-7-by-attribution-time-per-geo" />
 
 #### **7. Calcul du ARPU (revenu moyen par utilisateur) à J+7 par heure d'attribution et par zone géographique**
 
@@ -572,6 +590,8 @@ limit 20
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations supplémentaires
 
 <div id="traits-and-limitations" />
@@ -594,6 +614,8 @@ limit 20
 | Réinstallations | <ul><li>Si les événements survenus après la réinstallation sont considérés comme organiques non attribués :<ul><li>Ils ne sont inclus qu'à compter du 26 mai 2024. <Anchor target="_blank" href="/marketers/fr/docs/bulletin-cohort-data-includes-unattributed-sessions-and-events">En savoir plus</Anchor></li><li>La date d'installation attribuée aux événements organiques non attribués est la date de la première installation, à l'exception des événements liés aux revenus. <Anchor target="_blank" href="/marketers/fr/docs/measure-reinstalls#unattributed-organic-inapps">En savoir plus</Anchor></li></ul></li><li>S'ils sont attribués à la première installation, ils sont toujours inclus. <Anchor target="_blank" href="/marketers/fr/docs/measure-reinstalls#les-événements-in-app-et-leur-système-dattribution">En savoir plus</Anchor></li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

@@ -32,6 +32,8 @@ x-zendesk:
 > * Veillez à conserver vos jetons, car ils permettent d'accéder à vos données. Ne publiez pas de jetons dans les répertoires de code publics.
 > * Il est recommandé de réinitialiser le jeton d'API tous les 180 jours.
 
+<div id="retrieve-tokens" />
+
 ## Récupération des jetons d'API
 
 **Pour obtenir un jeton d'API :**
@@ -61,6 +63,8 @@ x-zendesk:
 
 ## Type de jeton requis selon le type d'API
 
+<div id="advertiser" />
+
 ### Jeton V2.0—API d'annonceurs
 
 | API |
@@ -75,6 +79,8 @@ x-zendesk:
 | API de taxe sur les revenus réels |
 | <Anchor target="_blank" href="/marketers/fr/docs/send-opendsr-api-requests">API OpenDSR</Anchor> |
 | <Anchor target="_blank" href="/marketers/fr/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor> |
+
+<div id="ad-network" />
 
 ### Jeton V2.0—API de réseaux publicitaires
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** trouvez les réponses aux questions les plus fréquemment posées sur l'utilisation des Meta ads dans AppsFlyer.
 
+<div id="meta-ads-faq" />
+
 ## FAQ Meta ads
 
 <div id="i-dont-see-facebook-campaign-clicks-in-appsflyers-dashboard" />
@@ -185,6 +187,8 @@ Oui. Les liens OneLink configurés avec des App Links, des Liens universels ou d
 
 </Accordion>
 
+<div id="meta-ads-cost-faq" />
+
 ## FAQ sur le coût des Meta ads
 
 <div id="getting-facebook-cost-data-in-the-appsflyer-dashboard" />
@@ -338,6 +342,8 @@ Si vous voulez passer à un nouveau compte publicitaire mais que votre coût Met
 
 </Accordion>
 
+<div id="facebook-sdk-faq" />
+
 ## FAQ sur le SDK Facebook
 
 <div id="who-needs-facebooks-sdk" />
@@ -386,6 +392,8 @@ Si vous avez <Anchor target="_blank" href="https://developers.facebook.com/docs/
 
 </Accordion>
 
+<div id="meta-ads-attribution-faq" />
+
 ## FAQ sur l'attribution des Meta ads
 
 <div id="attributing-agencies-with-facebook" />
@@ -421,6 +429,8 @@ Cependant, vous pouvez faire de la publicité et enregistrer les installations d
 3. La page d'accueil doit inclure un bouton **Télécharger l'app**, qui envoie directement sur le marché hors store où l'APK se situe.
 4. Le prospect clique sur le bouton et est redirigé vers le marché hors store. Après avoir terminé l'installation, AppsFlyer attribue l'utilisateur à Meta ads, via son API MMP.
 
+<div id="note-2" />
+
 > 📘 **Note**
 >
 > La même solution s'applique aux applications de Google Play et App Store qui <Anchor target="_blank" href="/marketers/fr/docs/set-up-smart-script-to-convert-web-visitors#facebook-click-id">nécessitent une page d'accueil</Anchor> avant de rediriger vers le marché.
@@ -436,6 +446,8 @@ Pour voir les instructions relatives à l'attribution des apps Amazon, cliquez <
 Meta ads identifie les utilisateurs sur la base de leur compte Meta ads. Certains utilisateurs ont un appareil iOS et un appareil Android associés à un même compte Meta ads.
 
 Si ce type d'utilisateur clique ou affiche une de vos publicités sur son appareil Android mais installe votre app sur son appareil iOS, alors Meta ads considèrent qu'elles sont à la source de l'installation. C'est donc le nom d'une campagne Android qui apparaîtra dans votre tableau de bord iOS.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >

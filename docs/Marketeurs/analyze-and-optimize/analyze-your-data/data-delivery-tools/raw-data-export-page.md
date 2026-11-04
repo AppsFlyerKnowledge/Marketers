@@ -152,6 +152,8 @@ La page d'exportation des données brutes offre des rapports avec les fonctionna
 
 </Accordion>
 
+<div id="procedures" />
+
 ## Marche à suivre
 
 <div id="create-a-default-report" />
@@ -237,6 +239,8 @@ Vous pouvez créer un rapport personnalisé en choisissant les filtres et champs
    * Pendant la génération du rapport, vous pouvez continuer à travailler, créer d’autres rapports, ou naviguer sur différentes pages.
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 

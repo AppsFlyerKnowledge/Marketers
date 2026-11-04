@@ -30,15 +30,21 @@ Le trafic Google Ads provient souvent de divers comptes, tels que des agences sp
 
 Cet article aborde ces cas, allant des mesures prises par les agences à l'utilisation des MCC et même des MCC de MCC.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Ce qui suit s'applique **uniquement** aux clients utilisant la nouvelle API Google Ads.
 
 Pour plus de détails sur la configuration du compte agence sur Google Ads, <Anchor target="_blank" href="/marketers/fr/docs/google-ads-adwords-integration-setup-for-agencies">cliquez ici</Anchor>.
 
+<div id="important-definitions" />
+
 ## Définitions importantes
 
 * **ID de lien** – **un** **identifiant unique d'une application mobile défini sur Google Ads**.
+
+<div id="note-1" />
 
 > 📘 **Remarque**
 >
@@ -49,9 +55,13 @@ Pour plus de détails sur la configuration du compte agence sur Google Ads, <Anc
 * **MCC** - Un compte gestionnaire Google Ads (MCC, anciennement appelé Centre Mes clients) est un **outil pour gérer plusieurs comptes Google Ads**.  
   Avec un compte MCC, vous pouvez lier plusieurs comptes afin de les consulter en un seul endroit (<Anchor target="_blank" href="https://support.google.com/google-ads/answer/6139186?hl=en&ref_topic=7554904">En savoir plus</Anchor>).
 
+<div id="setting-up-google-ads-recording" />
+
 ## Configuration de l'enregistrement Google Ads
 
 AppsFlyer peut enregistrer un seul ID de lien par application. **Lorsque plusieurs comptes gèrent la même application, ils doivent tous utiliser le même ID de lien.** Cette configuration doit être faite sur le tableau de bord d'AppsFlyer pour des fins d'attribution.
+
+<div id="sharing-google-link-id-with-another-account" />
 
 ### Partage de l'ID de lien Google avec un autre compte
 
@@ -64,11 +74,15 @@ Le propriétaire de l'application peut partager n'importe quel ID de lien avec u
 > * Si le MCC est le gestionnaire d'enregistrement pour les sous-comptes, il n'est pas nécessaire de partager l'ID de lien du MCC aux sous-comptes. Cependant, si un sous-compte sous le MCC est son propre gestionnaire d'enregistrement, le MCC doit partager l'ID de lien avec le gestionnaire d'enregistrement du sous-compte.
 > * Importation des conversions : Si le MCC est le gestionnaire d'enregistrement, il est responsable de l'importation des conversions pour les sous-comptes qu'il gère. Cependant, si un sous-compte sous le MCC est son propre gestionnaire d'enregistrement, ce sous-compte doit également importer les conversions.
 
+<div id="note-2" />
+
 > 📘 **Remarque**
 >
 > * Dans le tableau de bord Google Ads, cliquez sur (3 points) >> ***Comptes associés*** >> ***Détails des applications tierces***
 > * L'autre compte doit approuver le « partage ».
 > * Ainsi, l'autre compte est autorisé à lancer des campagnes Google Ads pour l'application.
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
@@ -86,9 +100,13 @@ Cette configuration peut être modifiée par la suite si nécessaire.
 
 ![paramètres-mmc-googleads.png](https://files.readme.io/d0f0ffda25f88d5a37c8466818170243ed9f0040b3a3ad03e860d9a92bf59d4d-11240341292049.png)
 
+<div id="mcc-of-mccs" />
+
 ## MCC de MCCs
 
 Les grands annonceurs travaillant avec plusieurs agences peuvent utiliser un compte MCC de MCCs. C'est similaire au compte MCC standard. Il est recommandé que le MCC de niveau le plus élevé ou l'annonceur soit celui qui génère l'identifiant de lien. La bonne configuration de cette structure nécessite que les sous-comptes sélectionnent le niveau approprié de MCC (probablement le niveau le plus élevé) comme gestionnaire d'enregistrement. Si c'est cette configuration qui est utilisée, alors l'identifiant de lien n'a pas besoin d'être partagé avec les sous-comptes et les conversions importées au niveau le plus élevé sont suffisantes.
+
+<div id="tip-1" />
 
 > 👍 **Astuce**
 >
@@ -99,6 +117,8 @@ Les grands annonceurs travaillant avec plusieurs agences peuvent utiliser un com
 > * <Anchor target="_blank" href="https://support.google.com/google-ads/topic/7554359?hl=en&ref_topic=6031997">Travailler avec des comptes gérés</Anchor>
 >
 > Pour toute question concernant les structures de compte et les recommandations, consultez votre représentant Google.
+
+<div id="opening-a-google-ads-campaign" />
 
 ## Ouverture d'une campagne Google Ads
 

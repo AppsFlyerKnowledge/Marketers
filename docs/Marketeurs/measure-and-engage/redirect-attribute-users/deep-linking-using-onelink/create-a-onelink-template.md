@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** créez un template pour former la base de redirection pour tous les liens OneLink que vous créez pour vos différentes campagnes marketing. Un template est requis pour créer des liens et des expériences d'utilisateur final.
 
+<div id="onelink-templates" />
+
 ## Templates OneLink
 
 <Embed title="Lecteur vidéo YouTube" typeOfEmbed="youtube" url="https://www.youtube.com/embed/d4AtCJ9122Q" providerUrl="https://www.youtube.com" />
@@ -34,6 +36,8 @@ Un template OneLink :
   * **Les nouveaux utilisateurs qui n'ont pas installé votre app** vers l'app store ou l'URL web appropriée.
   * **Les utilisateurs existants avec votre app installée** : ouverture de l’app via des liens d’app Android, des liens universels iOS ou des schémas d’URI. Cela nécessite un développeur.
   * **Remarque** : les paramètres de redirection pour le site web ou l’App Store peuvent être remplacés au niveau du lien.
+
+<div id="create-a-onelink-template" />
 
 ## Procédures
 
@@ -238,6 +242,8 @@ Les QR codes générés par OneLink peuvent être customisés des manières suiv
 
 </Accordion>
 
+<div id="key-traits-and-limitations" />
+
 <div id="traits-and-limitations" />
 
 <Accordion title="Particularités et limites">
@@ -254,6 +260,8 @@ Les QR codes générés par OneLink peuvent être customisés des manières suiv
 </Accordion>
 
 Vous avez une question sur les templates OneLink ? Consultez notre <Anchor target="_blank" href="/marketers/fr/docs/onelink-troubleshooting-and-faq#faq-sur-les-templates-onelink">FAQ</Anchor> !
+
+<div id="next-step" />
 
 ## Prochaine étape
 

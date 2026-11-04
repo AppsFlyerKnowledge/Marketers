@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :**  mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant les événements in-app que nous recommandons pour votre app de gestion financière et bancaire.
 
+<div id="-finance-and-banking" />
+
 ## <Image alt="banking.png" src="https://files.readme.io/260638f807a43f42c6ff99bb72b8d4113b2df09436b9322a820888ad3f8a01ae-20659476893969.png" width="100px" /> Gestion financière et bancaire
 
 Les apps financières et bancaires permettent aux utilisateurs d'effectuer un grand choix d'opérations en lien avec la gestion financière, comme l'inscription à une nouvelle carte de crédit ou une demande de prêt. Les principaux événements que nous conseillons d'enregistrer incluent les ouvertures de compte, les demandes de carte de crédit et les demandes de prêt.
@@ -32,6 +34,8 @@ L'enregistrement de ces événements peut vous aider à déterminer :
 * Le type de compte que les usagers recherchent le plus, ce qui peut donner des idées pour le retargeting
 * Les avantages que les utilisateurs recherchent dans une carte de crédit
 * Pourquoi les utilisateurs ont besoin d'un apport financier, et combien ils demandent
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -43,6 +47,8 @@ L'enregistrement de ces événements peut vous aider à déterminer :
 > Pour plus d'informations sur l'enregistrement des événements in-app, consultez le <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">guide des événements in-app riches</Anchor>.
 
 [![Flowchart_for_recommended_events finance_banking_app_user_journey](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Structures recommandées pour les événements prédéfinis
 
@@ -163,6 +169,8 @@ AppsFlyer.sendEvent ("af_complete_registration", CompletedRegistrationEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Structures recommandées pour les événements personnalisés
 

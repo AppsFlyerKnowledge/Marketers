@@ -23,11 +23,15 @@ x-zendesk:
 ---
 > **En bref :** envoyez les événements in-app riches de votre app depuis AppsFlyer vers Meta ads.
 
+<div id="meta-in-app-events-mapping" />
+
 ## Mappage des événements in-app dans Meta.
 
 Les annonceurs mappent leurs événements in-app, SDK ou Server-to-server, aux événements prédéfinis de Meta. Les annonceurs peuvent également envoyer à Meta des postbacks pour chaque <Anchor target="_blank" href="/marketers/fr/docs/measure-sessions">lancement d'app</Anchor> ou toute <Anchor target="_blank" href="/marketers/fr/docs/measure-uninstalls#mappage-de-lévènement-de-désinstallation">désinstallation d'app</Anchor> connue.
 
 Les annonceurs pourront ainsi utiliser les capacités d'optimisation avancées de Meta, et créer des segments d'audience personnalisés ou Lookalike.
+
+<div id="predefined-event-mapping" />
 
 ### Mappage des événements prédéfinis
 
@@ -52,6 +56,8 @@ Vous trouverez ci-dessous la liste d'autres événements Meta prédéfinis qui n
 | Contact | Appel, SMS, e-mail, chat ou tout autre type de contact entre un client et votre entreprise. | af\_contact |
 | Produit personnalisé | Personnalisation des produits via un outil de configuration ou une autre application dont votre entreprise est propriétaire. | af\_customize\_product |
 
+<div id="custom-in-app-events-mapping" />
+
 ### Mappage des événements in-app personnalisés
 
 AppsFlyer vous permet de mapper tous les événements in-app personnalisés à envoyer à Meta en utilisant l'option ID d’événement Meta PERSONNALISÉ.
@@ -61,6 +67,8 @@ Le nom et la valeur de l'événement (avec les paramètres de l'événement) con
 Veuillez noter que vous pouvez <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">utiliser ces événements pour optimiser vos campagnes</Anchor>.
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+
+<div id="automatic-parameter-mapping-with-the-custom-event" />
 
 ### Mappage automatique des paramètres avec l'événement CUSTOM
 
@@ -119,6 +127,8 @@ Le tableau suivant répertorie les paramètres d'événement AppsFlyer qui, lors
 | af\_travel\_end | fb\_travel\_end |
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
+
+<div id="event-and-parameter-limitations" />
 
 ## Limitations des événements et des paramètres
 

@@ -26,11 +26,15 @@ x-zendesk:
 ---
 > **En bref :** obtenez les KPI de taux de conversion dans AppsFlyer pour identifier vos atouts et faiblesses à différents stades du tunnel marketing.
 
+<div id="marketing-funnel-stages" />
+
 ## Les étapes du tunnel marketing
 
 Les nouveaux utilisateurs passent par un tunnel marketing, du premier visionnage d'une publicité à la génération des revenus. Chaque étape du tunnel a son propre niveau de réussite. Plus l'utilisateur progresse dans ce parcours, meilleurs sont les résultats pour l'annonceur mobile. L'image suivante présente les étapes du tunnel marketing.
 
 ![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+
+<div id="marketing-funnel-stages-and-conversion-rates" />
 
 ## Les étapes du tunnel marketing et les taux de conversion
 
@@ -43,6 +47,8 @@ Voir le tableau suivant pour plus d'informations :
   * **AppsFlyer**: Tableau de bord général et <Anchor target="_blank" href="/marketers/fr/docs/aggregated-and-analytics-reporting-overview">rapports et analyses agrégés</Anchor>
   * **App store**: les données ne sont disponibles qu'à partir de l'app store
 * Comment les annonceurs peuvent-ils utiliser les métriques pour améliorer leurs résultats marketing ?
+
+<div id="marketing-funnel-stages-and-conversion-rates-1" />
 
 #### Les étapes du tunnel marketing et les taux de conversion
 
@@ -59,6 +65,8 @@ Voir le tableau suivant pour plus d'informations :
 | de l'installation à la première commande | **Taux de clics à l'installation (installations/clics) X 100** | Mesure le nombre d'utilisateurs qui ont installé l'app après avoir cliqué sur la publicité. | AppsFlyer | <ul><li>Améliorez le ciblage de l'audience.</li><li>Réduisez le temps d'installation des applications.</li></ul> |
 | 6 | Évènement in-app | L'utilisateur effectue une action in-app telle qu'un achat. | AppsFlyer |  |
 | de l'installation à la première commande | **Taux de conversion des événements (TC)**<br /><br />**(événements in-app/installations) X 100** | <ul><li>Mesure le nombre d'utilisateurs qui effectuent un événement in-app après l'installation. <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-knowledge-base-glossary#en-event-cvr-taux-de-conversion-dévènement">[Article]</Anchor></li><li>Exemples : s'inscrire, faire un achat, terminer un niveau, etc.</li><li>Calculez le coût par action (CPA).</li></ul> | AppsFlyer | <ul><li>Exploitez des messages et CTA au bon moment.</li><li>Améliorez l'interface utilisateur.</li><li>Organisez des campagnes de retargeting à l'aide du deep linking. <Anchor target="_blank" href="/marketers/fr/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink">[Article]</Anchor></li></ul> |
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

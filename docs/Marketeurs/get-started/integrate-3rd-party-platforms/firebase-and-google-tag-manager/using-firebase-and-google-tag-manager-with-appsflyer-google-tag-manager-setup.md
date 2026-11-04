@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** Instructions pour configurer l'envoi d'événements signalés via le SDK Firebase à AppsFlyer dans Google Tag Manager.
 
+<div id="google-tag-manager-setup" />
+
 ## Configuration de Google Tag Manager
 
 Cette section décrit la configuration nécessaire dans l'interface utilisateur de Google Tag Manager (GTM). Toutes les étapes décrites dans cette section sont nécessaires pour que GTM puisse envoyer des événements à AppsFlyer. Suivez les étapes dans l’ordre indiqué.
@@ -32,6 +34,8 @@ Les étapes suivantes concernent Google Tag Manager pour les applications mobile
 
 1. Votre conteneur Google Tag Manager est configuré pour les applications mobiles.
 2. Le conteneur est en version 5. Pour plus d'informations, cliquez <Anchor target="_blank" href="https://support.google.com/tagmanager/answer/7003315">ici</Anchor>.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -58,11 +62,15 @@ Chaque fois que Google Tag Manager envoie un événement à AppsFlyer, il doit �
 5. Dans le champ ***Paramètre d'événement*** , saisissez « dev\_key » et enregistrez
 6. Répétez le processus pour l'ID AppsFlyer également : nommez la variable « AppsFlyer Device ID » et saisissez « af\_id » dans le champ ***Paramètre d'événement***
 
+<div id="note-1" />
+
 > 📄 **Exemple**
 >
 > Vous trouverez ci-dessous une capture d'écran de l'interface utilisateur de GTM. Elle montre la configuration finale du paramètre d'événement :
 >
 > ![event_parameter_variable_dev_key.png](https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png)
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -80,11 +88,15 @@ La plupart des événements intégrés nécessitent des paramètres de valeur d'
 2. Pour « af\_revenue », nommez la variable « Revenu » et définissez la clé de paramètre d'événement sur « af\_revenue »
 3. Pour « af\_price », nommez la variable « Prix » et définissez la clé de paramètre d'événement sur « af\_price »
 
+<div id="note-2" />
+
 > 📄 **Exemple**
 >
 > Vous trouverez ci-dessous une capture d'écran de l'interface utilisateur de GTM. Elle montre la configuration finale du paramètre d'événement :
 >
 > ![event_parameter_variable_revenue.png](https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png)
+
+<div id="note-3" />
 
 > 📘 **Remarque**
 >
@@ -108,6 +120,8 @@ Pour que Google Tag Manager sache si l'événement doit être envoyé à AppsFly
 5. Dans les conditions, définissez le déclencheur pour qu'il s'active lorsque le ***nom de l'événement*** est égal à « af\_purchase ».
 6. Cliquez sur ***Enregistrer***.
 
+<div id="note-4" />
+
 > 📄 **Exemple**
 >
 > Vous trouverez ci-dessous une capture d'écran de l'interface utilisateur de GTM. Voici la configuration finale du déclencheur :
@@ -127,6 +141,8 @@ Maintenant que les variables requises et le déclencheur de l'événement sont d
 3. Choisissez ***AppsFlyer***.
 4. Dans le champ ***ID d'application*** , définissez la variable intégrée ID d'application.
 
+   <div id="important-1" />
+
    > 🚧 **Important !**
    >
    > Pour iOS, définissez la variable personnalisée « apple\_app\_id » dans le champ ***ID d'application*** .
@@ -141,6 +157,8 @@ Maintenant que les variables requises et le déclencheur de l'événement sont d
     ***Clé*** : af\_price, ***Valeur*** : choisissez la variable de paramètre d'événement « Prix ».
 11. Dans la section ***Déclenchement***, définissez le ***Déclencheur de déclenchement***sur le déclencheur d'événement « Achat ».
 12. Cliquez sur ***Enregistrer***.
+
+<div id="note-5" />
 
 > 📄 **Exemple**
 >

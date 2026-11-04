@@ -25,6 +25,8 @@ x-zendesk:
 
 ![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
 
+<div id="activity-dashboard" />
+
 ## Tableau de bord d'activité
 
 * Comprend le trafic organique et non organique
@@ -34,9 +36,13 @@ x-zendesk:
   * **Moyenne :** quotidienne. Ex. MAU, DAU moyen, MAU moyen
 * Le filtre géo indique l'emplacement de l'utilisateur au moment de l'installation.
 
+<div id="tip" />
+
 > 👍 **Astuce**
 >
 > Vous voulez en savoir plus sur le tableau de bord d’activité ? Suivez cette <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7802/play/18621/the-activity-dashboard">brève formation sur le portail d'apprentissage AppsFlyer.</Anchor>
+
+<div id="dashboard-features-and-layout" />
 
 ## Fonctionnalités et contenu du tableau de bord
 
@@ -123,6 +129,8 @@ x-zendesk:
         Revenu moyen par utilisateur actif quotidien  
         Formule : Somme de (Revenu au jour [n] / DAU au jour [n])]/Nombre de jours.
 
+        <div id="h_01HHYHP1HFZBRTWB8MJ1F6XKZS" />
+
         > 📄 **Ex. Calcul de l'ARPDAU**
         >
         > | Jour | Revenu ($) au jour | DAU | Revenu quotidien moyen des utilisateurs ($) |
@@ -178,6 +186,8 @@ L'onglet contient l’historique sur douze mois des performances de l'activité 
 * Marge brute mensuelle : revenu, coût, profit brut
 
 </Accordion>
+
+<div id="specifications-and-limitations" />
 
 ## Caractéristiques et limitations
 

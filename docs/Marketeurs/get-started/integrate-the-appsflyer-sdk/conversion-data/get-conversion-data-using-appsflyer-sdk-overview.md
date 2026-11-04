@@ -29,6 +29,8 @@ Utilisez les données de conversion pour :
 
 En raison du rapport précision/latence, les données de conversion pour les mêmes ID d'appareils peuvent varier d'une API à l'autre.
 
+<div id="get-conversion-data" />
+
 ## Obtenir les données de conversion
 
 Le SDK AppsFlyer renvoie les données de conversion comme suit :

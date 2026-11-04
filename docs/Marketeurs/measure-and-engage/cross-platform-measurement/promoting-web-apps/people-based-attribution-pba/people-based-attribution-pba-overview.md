@@ -27,12 +27,16 @@ x-zendesk:
 
 ![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
 
+<div id="pba-principles" />
+
 ## Les principes de la PBA
 
 * La PBA consolide les données des sites web et des apps mobile pour offrir une vision globale des performances d'une campagne, et ce d'après les propriétés numériques d'une marque. Les annonceurs utilisent la PBA pour comprendre les parcours client en fonction des individus plutôt qu'en fonction des appareils.
 * Les données de la PBA - présentes dans les tableaux de bord de PBA et dans les rapports de données brutes - sont utilisées pour les analyses marketing et l'optimisation des campagnes.
 * Les données relatives aux visites de site et aux événements d'utilisateur sont collectées via un <Anchor target="_blank" href="/marketers/fr/docs/pba-web-sdk-integration-guide">SDK et/ou une API</Anchor>.
 * Pour chaque visite sur un site : la source média responsable de la visite est déterminée. Tout événement résultant (conversion) est <Anchor target="_blank" href="/marketers/fr/docs/pba-media-source-attribution-rules">attribué</Anchor> à la source média à l'origine de la visite.
+
+<div id="pba-analytics-dashboards-and-raw-data" />
 
 ### Tableaux de bord d'analyses et données brutes de la PBA
 
@@ -43,11 +47,15 @@ x-zendesk:
   * Rapports de données brutes
 * Les données des tableaux de bord sont <Anchor target="_blank" href="/marketers/fr/docs/using-pba-dashboards">filtrées et regroupées</Anchor> selon certaines dimensions telles que la plate-forme mobile, le canal média ou le type de média, ce qui vous permet de décomposer et analyser les données.
 
+<div id="website-attribution" />
+
 ### <Anchor target="_blank" href="/marketers/fr/docs/pba-website-attribution-dashboard">Attribution de site web</Anchor>
 
 [![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
 
 Analysez les sources de trafic web et les campagnes de marketing qui génèrent des visites et des conversions sur votre site. Découvrez les différences de performances jusqu'au niveau de la publicité. Prend en charge l'ensemble des paramètres AppsFlyer de requête de lien sans avoir à rediriger les utilisateurs vers les serveurs AppsFlyer.
+
+<div id="web-assisted-installs" />
 
 ### <Anchor target="_blank" href="/marketers/fr/docs/pba-web-assisted-installs">Installations web-assistées</Anchor>
 
@@ -59,6 +67,8 @@ Les installations web-assistées vous permettent d'examiner l'impact et les rés
 * Attribuez des installations organiques en fonction de vos actions sur le Web.
 * Découvrez dans quelle mesure les actions que vous déployez sur le Web génèrent des installations non organiques.
 
+<div id="raw-data" />
+
 ### <Anchor target="_blank" href="/marketers/fr/docs/pba-raw-data-reports">Données Brutes</Anchor>
 
 Les données brutes offrent des informations détaillées, elles indiquent notamment la source média attribuée qui a déclenché l'arrivée de l'utilisateur sur le site web.
@@ -67,6 +77,8 @@ Les données brutes offrent des informations détaillées, elles indiquent notam
 * **Événements web** : actions effectuées sur le site, comme une inscription ou un achat
 * Les parcours **Installations web-assistées** et **Chemin de conversion** sont complets.
 * Les outils de BI sont utilisés pour analyser les données afin d'obtenir des éléments supplémentaires.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

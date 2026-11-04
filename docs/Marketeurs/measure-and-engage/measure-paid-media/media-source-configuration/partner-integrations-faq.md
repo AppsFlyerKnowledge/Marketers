@@ -38,6 +38,8 @@ Les mesures et graphiques sont basés sur les données du trafic transmises à A
 
 </Accordion>
 
+<div id="use-partner-integrations" />
+
 ## Utilisation du Marketplace partenaire
 
 <div id="what-information-can-i-see-on-a-partner-card-without-entering-the-page" />
@@ -84,6 +86,8 @@ L'intégration proprement dite se fait à partir de la page de configuration de 
 Voir <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations?query=marketplace#integrate-with-a-new-partner">comment intégrer un nouveau partenaire à partir du marketplace partenaire</Anchor>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Dépannage
 

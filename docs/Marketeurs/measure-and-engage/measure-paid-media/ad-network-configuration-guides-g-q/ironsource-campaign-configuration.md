@@ -55,28 +55,40 @@ Pour obtenir une description détaillée de l'en-tête de la fenêtre de configu
 
 <Accordion title="Onglet Intégration">
 
+<div id="activate-partners" />
+
 ### Activer les partenaires
 
 Lors de votre **première visite**, vous devrez déclencher **Activer le partenaire** pour permettre la configuration des paramètres de l'onglet d'intégration. L'option doit rester activée tant que vous travaillez avec le partenaire.  
 Pour plus de détails sur l'activation des partenaires, cliquez <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">ici</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Protection de la vie privée avancée
 
 Pour les apps IOS uniquement, lorsque **la confidentialité avancée (pour iOS 14.5 et +)** est activée, vous pouvez <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#b">choisir quelles données sont transmises à ironSource</Anchor> via les postbacks et les rapports.
+
+<div id="transaction-id" />
 
 ### ID de transaction
 
 Pour les apps iOS uniquement, lorsque **Partager l'ID de transaction SKAN** est activé, vous  autorisez AppsFlyer à <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-guide#sending-postbacks-to-integrated-partners">partager l'ID de transaction des postbacks SKAdNetwork</Anchor> avec ironSource. ironSource peut alors décoder vos valeurs de conversion SKAdNetwork.
 
+<div id="note-2" />
+
 > 📘 **Remarque**
 >
 > Pour l'interopérabilité de SKAN avec AppsFlyer, contactez votre responsable ironSource afin <Anchor target="_blank" href="https://developers.is.com/ironsource-mobile/general/universal-skan-reporting/#step-1">d'autoriser l'envoi des données SKAN aux MMP</Anchor>.
+
+<div id="general-settings" />
 
 ### Paramètres généraux
 
 **ID d'annonceur**
 
 ironSource se connecte à AppsFlyer à l'aide d'un ID publicitaire unique (à 6 chiffres) et d'un mot de passe. Si vous n'avez pas encore l'identifiant et le mot de passe de l'annonceur, vous devez les récupérer dans ironSource avant de poursuivre l'intégration. Si vous les possédez déjà, copiez et collez l'ID et le mot de passe dans les champs concernés.
+
+<div id="install-and-re-engagement-attribution" />
 
 ### Attribution de l'installation et de réengagement
 
@@ -92,6 +104,8 @@ Ces deux boutons permettent d'attribuer à ironSource les nouvelles installation
 1. Activez **l'attribution de réengagement post-vue.**
 2. Configurez la durée de la fenêtre rétrospective **post-vue** dans l'onglet [Lien d'attribution](/docs/ironsource-campaign-configuration#attribution-link-tab).
 
+<div id="default-postbacks" />
+
 ### Postbacks par défaut
 
 Pour envoyer des messages automatiques à ironSource lors d'installations et de réengagements d'utilisateurs. Utilisez cette section pour définir **la source des utilisateurs** qui autorisent l'envoi de ces postbacks.
@@ -99,9 +113,13 @@ Pour envoyer des messages automatiques à ironSource lors d'installations et de 
 Sélectionnez **Uniquement les événements attribués à ce partenaire** pour les événements provenant uniquement des utilisateurs attribués à ironSource.  
 Sélectionnez **Événements attribués à tout partenaire, ou organique** pour que l'ensemble de votre base d'utilisateurs puisse être transmise à ironSource.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > En tant que réseau *toutes-installations*, ironSource préfère recevoir les postbacks pour toute nouvelle installation de votre app, quelle que soit la source, y compris organique. Pour ce faire, sélectionnez **Événements attribués à tout partenaire, ou organique** pour envoyer tous les postbacks d'installation à ironSource.
+
+<div id="in-app-event-postbacks" />
 
 ### Postback d'évènements in-app
 
@@ -123,6 +141,8 @@ Configurer le mappage des événements in-app avec les événements ironSource q
    1. Dans le coin en haut à gauche, sous le nom du partenaire, cliquez sur le nom de l’app pour ouvrir la liste des apps.
    2. Sélectionnez une autre app dans la liste déroulante.
    3. Répétez les différentes <Anchor target="_blank" href="/marketers/fr/docs/amazon-ads-campaign-configuration#integration-tab">étapes d’intégration</Anchor> pour l’app sélectionnée.
+
+<div id="note-4" />
 
 > 📘 **Remarque**
 >
@@ -181,6 +201,8 @@ Dans cet onglet, vous pouvez sélectionner les autorisations à accorder à iron
 
 Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre configuration pour votre application :
 
+<div id="ad-network-permissions" />
+
 ### Autorisations pour le réseau publicitaire
 
 * **Autoriser la configuration de l'intégration** : permet au partenaire de configurer l'onglet d'intégration (à l'exception des postbacks d'événement in-app)
@@ -192,6 +214,8 @@ Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre 
 * **Autoriser l'accès à votre tableau de bord Protect360** : valable uniquement pour les données Protect360 du partenaire, attendu que cette fonctionnalité est activée chez l'annonceur
 
 En savoir plus sur l'octroi <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">d'autorisations à un réseau publicitaire</Anchor>.
+
+<div id="agency-permissions" />
 
 ### Autorisations pour l'agence
 

@@ -38,6 +38,8 @@ De nombreux rapports DCR sont conçus pour faire correspondre vos données d'att
 * [Mettre à jour régulièrement les données sources](/docs/data-clean-room-working-with-sources#mettre-à-jour-les-sources-pour-déclencher-lédition-des-rapports) pour déclencher l'édition des rapports.
 * [Travailler avec les sources existantes](/docs/data-clean-room-working-with-sources#travailler-avec-les-sources-existantes)
 
+<div id="important" />
+
 > 🚧 **Avant de commencer**
 >
 > Avant de créer des sources personnalisées, vous devez :
@@ -47,6 +49,8 @@ De nombreux rapports DCR sont conçus pour faire correspondre vos données d'att
 >   * **Compartiment de stockage dans le cloud :** Amazon S3 (AWS) et GCS
 > * [Facultatif] <Anchor target="_blank" href="/marketers/fr/docs/data-clean-room-working-with-connections#creating-inbound-connections">Créer des connexions entrantes</Anchor> sur la plateforme AppsFlyer pour connecter ces services cloud à la DCR.
 >   * Si ces connexions n'ont pas déjà été définies, vous serez invité à les configurer lors de la création de la source.
+
+<div id="source-requirements" />
 
 ## Obligations concernant les données sources
 
@@ -103,6 +107,8 @@ Les fichiers sources stockés sur Amazon S3 ou GCS doivent suivre ces normes en 
 
 </Accordion>
 
+<div id="creating-a-source" />
+
 ## Créer une source
 
 Pour créer une source il faut suivre **toutes les étapes décrites ci-dessous.** Chaque étape apparait dans un onglet pour simplifier la lecture.
@@ -141,6 +147,8 @@ Pour créer une source il faut suivre **toutes les étapes décrites ci-dessous.
    * Si vous avez déjà des connexions mais que vous souhaitez en utiliser une nouvelle, cliquez sur le bouton ![dcr_new_connection_button.png](https://files.readme.io/0a6766bcb5deef0b2264b372592b82485cc59b11e454cdcbd4a1718de4df951d-14989643499153.png) pour ouvrir la boîte de dialogue **Nouvelle connexion**. Suivez <Anchor target="_blank" href="/marketers/fr/docs/data-clean-room-working-with-connections#complete-the-connection">ces instructions</Anchor> pour la créer.
 2. Suivez les instructions ci-dessous en fonction de là où se trouvent les données de votre source.
 
+<div id="source-locations-in-bigquery" />
+
 #### Emplacements des sources dans BigQuery
 
 **Pour terminer la définition de l'emplacement de la source pour les sources BigQuery :**
@@ -149,6 +157,8 @@ Pour créer une source il faut suivre **toutes les étapes décrites ci-dessous.
 2. Sélectionnez le tableau où se trouvent les données sources.
 
 Les listes où vous sélectionnez ces éléments contiennent les ensembles de données et les tableaux disponibles dans le projet BigQuery que vous avez défini en créant la connexion.
+
+<div id="source-locations-in-snowflake" />
 
 #### Emplacements de la source dans Snowflake
 
@@ -159,6 +169,8 @@ Les listes où vous sélectionnez ces éléments contiennent les ensembles de do
 3. Sélectionnez le tableau où se trouvent les données sources.
 
 Les listes où vous sélectionnez ces éléments contiennent les partages, schémas et tableaux disponibles dans le projet Snowflake que vous avez défini en créant la connexion.
+
+<div id="source-locations-in-cloud-storage-buckets" />
 
 #### Emplacements des sources dans les compartiments de stockage sur le cloud
 
@@ -177,6 +189,8 @@ Si AppsFlyer génère les dossiers, la seule information supplémentaire requise
   * Indique qu'il sera généré dans un dossier parent nommé **input.** Ce dossier sert de dossier parent pour toutes les sources que vous importez dans le DCR.
     * Le dossier **input** n'est pas obligatoire et vous pouvez le supprimer, ou le nommer différemment (tant que vous suivez la <Anchor target="_blank" href="/marketers/fr/docs/data-clean-room-setting-up-cloud-services#dcr-naming-requirements">nomenclature de la DCR.</Anchor>
     * Bien que ce dossier ne soit pas obligatoire, l'existence d'un dossier **input** (ou d'un dossier équivalent avec un nom différent) est souvent conseillé. Il est aussi fortement recommandé d'utiliser le même espace de stockage sur le cloud pour importer les fichiers de données (input) et recevoir des rapports (output).
+
+<div id="important-1" />
 
 > 🚧 **Important !**
 >
@@ -198,6 +212,8 @@ Pour toutes les sources que vous partagez avec la DCR en vue d'être traitées, 
   * **Métrique :** les données numériques que vous avez collectées au sujet d'un utilisateur d'app (ex. revenu, nombre d'ouvertures de l'appl, LTV, etc.)
     * Un champ de données défini comme étant une métrique ne peut contenir **que des valeurs numériques.**
 
+<div id="loading-source-fields" />
+
 #### Chargement des champs source
 
 Chargez les champs source en suivant les instructions ci-dessous :
@@ -205,6 +221,8 @@ Chargez les champs source en suivant les instructions ci-dessous :
 **Sources de l'entrepôt de données**
 
 Pour charger les champs depuis une source située dans un entrepôt de données (BigQuery ou Snowflake), cliquez sur le bouton  ![dcr_load_fields_from_source.png](https://files.readme.io/667761e044a45e9a63bf904ada0ba07917014b5b446379213742510278b5a2dd-14986195290897.png).
+
+<div id="important-2" />
 
 > 🚧 **Important !**
 >
@@ -262,6 +280,8 @@ Pour définir la structure de la source :
 </Tab>
 </Tabs>
 
+<div id="categorize-fields" />
+
 #### Classer les champs par catégorie
 
 Après avoir importé les champs, AppsFlyer analyse le fichier, puis la liste de tous les champs de données (colonnes) s'affiche dans les **Champs disponibles**.
@@ -300,6 +320,8 @@ Après avoir importé les champs, AppsFlyer analyse le fichier, puis la liste de
    La nouvelle source apparaît dans la liste de toutes les sources existantes dans l'onglet **Sources** de la Data Clean Room.
 
 </Accordion>
+
+<div id="updating-sources-to-trigger-report-processing" />
 
 ## Mettre à jour les sources pour déclencher l'édition des rapports
 
@@ -359,6 +381,8 @@ Après avoir importé des fichiers sources pendant deux jours (et créé par pro
 
 </Accordion>
 
+<div id="working-with-existing-sources" />
+
 ## Travailler avec les sources existantes
 
 Il y a différentes manières de travailler avec des sources existantes. Vous effectuez ces opérations depuis l'onglet **Sources** de la DCR :
@@ -401,6 +425,8 @@ Pour modifier la structure de la source :
 8. Sélectionnez un ou plusieurs champs dans la liste **Champs disponibles** sur la gauche, puis utilisez les boutons au milieu de l'écran pour les mettre dans la catégorie identifiant, dimension ou métrique.
 9. Une fois que vous avez effectué toutes les modifications nécessaires, cliquez sur le bouton **Enregistrer** pour enregistrer la source avec la structure mise à jour, ou choisissez **Annuler** pour annuler vos modifications.
 
+<div id="important-3" />
+
 > 🚧 **Important !**
 >
 > N'oubliez pas d'apporter les modifications pour que la nouvelle structure de la source apparaisse dans tous les rapports qui utilisent cette source :
@@ -424,6 +450,8 @@ Pour modifier la structure de la source :
 
 </Accordion>
 
+<div id="reference" />
+
 ## Référence
 
 <div id="manually-creating-a-folder-structure" />
@@ -431,6 +459,8 @@ Pour modifier la structure de la source :
 <Accordion title="Création manuelle d'une structure de dossiers pour les compartiments de stockage (si vous choisissez de le faire manuellement)">
 
 En général, il est plus facile d'autoriser AppsFlyer à générer automatiquement la structure d'un dossier lors de la création de la source. Toutefois, si vous souhaitez créer ces dossiers manuellement, vous pouvez procéder comme suit.
+
+<div id="create-a-dcr-key-folder" />
 
 #### Créer un dossier clé DCR
 
@@ -446,6 +476,8 @@ Après avoir créé le dossier de la clé DCR, la structure de votre compartimen
 
 <Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
+<div id="top-level-input-folder" />
+
 #### Dossier d'entrée de premier niveau
 
 Bien que cela ne soit pas obligatoire, le mieux consiste à créer un dossier d'entrée de premier niveau directement dans le dossier de la clé DCR. Ce dossier sera dédié aux fichiers que vous importez dans la DCR.
@@ -458,6 +490,8 @@ Le dossier d'entrée de premier niveau est généralement créé manuellement vi
 Après avoir créé le dossier d'entrée de premier niveau, la structure de votre compartiment/dossier sera celle-ci :
 
 <Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+
+<div id="second-level-folder-for-each-data-source" />
 
 #### Dossier de second niveau pour chaque source de données
 

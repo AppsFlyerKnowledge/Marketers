@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** AppsFlyer utilise le référent de préchargement pour attribuer les installations aux campagnes de préchargement, où les marketeurs signent un contrat avec les fabricants d'équipements d'origine (OEM), les opérateurs mobile et les partenaires de découverte d'apps pour précharger leur app au moment de la construction de l'appareil, ou lorsque l'utilisateur l'allume pour la première fois.
 
+<div id="overview" />
+
 ## Attribution du référent de préchargement AppsFlyer
 
 Dans les campagnes de préchargement, les fabricants d'appareils d'origine (OEM), les opérateurs mobile et les partenaires de découverte d'applications préchargent les applications dans les appareils avant que l'utilisateur n'y ait accès. Cette opération peut être effectuée par l'OEM en usine ou par les fournisseurs lorsque l'appareil est activé pour la première fois.
@@ -35,6 +37,8 @@ Cette solution fournit :
 * Une prise en charge transparente des mises à jour et re-téléchargements de l'app.
 * Une visibilité et un suivi des mesures entre le moment de la première activation de l'appareil et celui du premier lancement de l'app. Vous avez ainsi la possibilité de savoir combien d'appareils ayant l'app préchargée ont été activés pour un partenaire en particulier, puis de savoir quand l'application est lancée pour la première fois.
 
+<div id="preload-referrer-options" />
+
 ### Options du référent de préchargement
 
 Les référents peuvent être utilisés pour attribuer les installations via préchargement ou via clic de téléchargement. Cf le tableau suivant pour obtenir plus d'infos.
@@ -46,12 +50,16 @@ AppsFlyer donne la priorité à l'attribution de préchargement. Cela signifie q
 | Préchargement | <ul><li>L'application est préchargée au moment de l'assemblage de l'appareil, ou lors de sa première activation. Il est aussi possible d'inviter l'utilisateur à télécharger l'app lors de la première activation de l'appareil.</li><li>Un événement de préchargement, équivalent à un clic, est transmis à AppsFlyer lorsque l'appareil est allumé pour la première fois.</li><li>L'attribution a lieu lorsque l'utilisateur ouvre l'app pour la première fois.</li><li>L'événement de pré-chargement a la priorité d'attribution la plus haute (sauf si la priorité d'attribution égale est activée).</li></ul> | `preload_rfr` |
 | Clic de téléchargement | <ul><li>L'installation de l'application a lieu plus tard durant la vie de l'appareil, via des notifications push, des stores partenaires, etc.</li><li>Lorsque l'utilisateur réagit à une publicité ou à un message push, l'app est automatiquement téléchargée et installée sur l'appareil, sans qu'il y ait besoin de rediriger l'utilisateur vers un app store.</li><li>L'attribution se fait selon les règles AppsFlyer qui déterminent le dernier clic.</li></ul> | `af_referrer` |
 
+<div id="view-preload-attribution-data" />
+
 ### Disponibilité des données
 
 Les données de performance des campagnes d'engagement pour télécharger par préchargement/clic sont disponibles comme indiqué ci-dessous :
 
 * **Tableau de bord général :** les engagements sont comptabilisés comme des clics dans les rapports et tableaux de bord agrégés. Ils sont agrégés au niveau du partenaire de préchargement (source média) et de la campagne.
 * **Données brutes :** les engagements sont disponibles dans les rapports de clics disponibles uniquement via Data Locker. Ils se trouvent dans le champ URL d'origine et peuvent être définis dans le paramètre af\_engagement\_type soit comme *preload*, soit comme *click\_to\_download*. Pour les installations, cf le tableau de la section précédente pour voir comment le type de matching est indiqué dans les données brutes.
+
+<div id="set-up-preload-referrer-attribution" />
 
 ### Configurer l'attribution du référent de préchargement
 
@@ -71,6 +79,8 @@ Les données de performance des campagnes d'engagement pour télécharger par pr
 5. Activez l'option de **priorité égale pour les préchargements.** Cela donne aux clics déterministes la même priorité d'attribution que l'attribution de préchargement, ce qui signifie que si un clic déterministe est enregistré entre l'engagement du référent de préchargement et l'installation, le clic est attribué selon le principe du dernier touch, au lieu du référent de préchargement.
 6. Cliquez sur **Enregistrer l'intégration**.
 7. Faites savoir au partenaire de préchargement que vous êtes en capacité d'attribuer ses campagnes.
+
+<div id="partners-supporting-preload-referrer-campaigns" />
 
 ### Partenaires prenant en charge les campagnes de référent par préchargement
 

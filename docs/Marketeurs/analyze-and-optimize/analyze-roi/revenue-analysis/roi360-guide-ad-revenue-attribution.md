@@ -31,6 +31,8 @@ x-zendesk:
 
 [![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
 
+<div id="ad-revenue-attribution" />
+
 ## L'attribution des revenus publicitaires
 
 * Les publicités s'affichent dans l'application sur des bannières, des murs d'offres, des interstitiels, etc., et elles génèrent des revenus publicitaires.
@@ -59,6 +61,8 @@ L'attribution des revenus publicitaires prend en charge différentes méthodes d
 | Niveau impression (via le SDK) avec niveau appareil (via API S2S) | <ul><li>Permet aux données de niveau impression qui arrivent via SDK d'être attribuées et rapportées au Jour X, et d'être échangées avec les données de niveau appareil transmises par API le Jour 1, et les suivants. **Remarque** : Pour Android, les données communiquées via le SDK à partir d'appareils inconnus (sans ID d'appareil disponible) ne sont pas remplacées par les données qui arrivent via l'API.</li><li>Permet une actualisation des données précise. Vous bénéficiez ainsi de l'actualisation des données au jour X et de la précision des données pour les jours X + 1 et suivants.</li><li>Prend en charge SKAN.</li></ul> |
 
 </Accordion>
+
+<div id="implementation" />
 
 ## Implémentation
 
@@ -145,12 +149,16 @@ La granularité agrégée des revenus publicitaires fonctionne comme suit :
   * Évènement **af\_app\_opened** disponible par défaut.
 * Ne rapportez pas le montant des revenus publicitaires dans les événements in-app si l'intégration des revenus publicitaires est en cours. Si vous le faites les revenus publicitaires sont dupliqués dans le tableau de bord car AppsFlyer obtient les données de revenus du réseau de monétisation par intégration.
 
+<div id="aggregate-ad-revenue-using-events" />
+
 #### Agrégation des revenus publicitaires à l'aide d'événements
 
 | Méthode d'événement | Comment procéder à l'implémentation ? | Attention |
 | --- | --- | --- |
 | Événement d'app unique de monétisation | <ul><li>Un événement d'app est défini au moment de l'affichage de la publicité</li><li>Cela fournit un nombre distinct d'actions utilisateur, ce qui permet d'effectuer des calculs eRPA supérieurs</li><li>On peut augmenter le niveau de précision en créant un événement in-app différent pour chaque réseau de monétisation, ce qui permet de ventiler les revenus par réseau de monétisation<br />. Voir le tableau suivant pour une explication avancée.</li></ul> | <ul><li>Nécessite que le développeur modifie l'app</li><li>Les revenus peuvent être divisés par réseau de monétisation dans le tableau de bord</li></ul> |
 | af\_app\_opened event | <ul><li>L'événement af\_app\_opened est envoyé par le SDK Appsflyer par défaut</li><li>Est déclenché par chaque session d'utilisateur</li></ul> | <ul><li>Aucune modification requise dans l'app</li><li>Implémentation rapide</li><li>Les valeurs eRPA sont significativement déformées à moins que vous n'affichiez qu'une seule app par session</li><li>Pas de répartition des revenus par réseau de monétisation</li><li>L'événement concerne tous les utilisateurs qui lancent l'app, et dans le cas ou vous n'avez aucune indication de l'intention de l'utilisateur de regarder les publicités ou non</li></ul> |
+
+<div id="comparison-of-in-app-event-methods" />
 
 #### Comparaison des méthodes d'événements d'app
 
@@ -180,6 +188,8 @@ La granularité agrégée des revenus publicitaires fonctionne comme suit :
 
 </Accordion>
 
+<div id="ad-revenue-data" />
+
 ## Données sur les revenus publicitaires
 
 Les données sur les revenus publicitaires sont disponibles via les tableaux de bord AppsFlyer et les rapports de données brutes.
@@ -203,6 +213,8 @@ L'attribution des revenus publicitaires est disponible comme suit :
   * Tableau de bord : Activité
   * Données brutes des revenus publicitaires
 
+<div id="overview-dashboard---aggregated-performance-report" />
+
 #### **Tableau de bord général - rapport de performance agrégé**
 
 [![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
@@ -219,6 +231,8 @@ Dans le tableau de bord Activité :
 
 * Les valeurs qui incluent les revenus sont basées sur la date d'activité. Voir <Anchor target="_blank" href="/marketers/fr/docs/troubleshooting-discrepancies-in-appsflyer-dashboards-and-reports">La LTV et les données d'activité</Anchor>.
 * La **moyenne des actions par utilisateur** indique la tendance des utilisateurs en termes d'engagement avec les publicités présentées dans l'app.
+
+<div id="examples" />
 
 > 📄 **Exemples**
 >
@@ -309,6 +323,8 @@ Les champs des rapports sur les revenus publicitaires sont remplis :
   * **Contexte :** les champs ayant une signification similaire dans d'autres rapports de données brutes. Par exemple, nom de l'événement, valeur de l'événement, devise.
 * Correspond à l'attribution de l'événement à la source média qui a drainé l'utilisateur. Ce qui signifie que ces champs sont copiés depuis l'événement de conversion qui a drainé l'utilisateur. Par exemple, la source média et la campagne. Ces champs ne figurent pas dans le tableau qui suit.
 
+<div id="fields-populated-by-ad-revenue" />
+
 #### Champs alimentés par les revenus publicitaires
 
 | api\_name | Nom du champ | Type de champ | Description |
@@ -324,6 +340,8 @@ Les champs des rapports sur les revenus publicitaires sont remplis :
 | monetization\_network | Réseau de monétisation | Spécifique | Réseau qui envoie la publicité |
 | Impressions | Impressions | Spécifique | Nombre de fois où l'utilisateur a vu la publicité |
 | mediation\_network | Réseau de médiation | Spécifique | Réseau de médiation qui signale l'événement à AppsFlyer |
+
+<div id="fields-by-network" />
 
 #### Champs par réseau
 
@@ -373,6 +391,8 @@ Pour les intégrations héritées (antérieures à ROI360), les données sont ac
 </Accordion>
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 

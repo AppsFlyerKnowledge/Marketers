@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app suggérés pour votre app de formation en ligne.
 
+<div id="-online-education" />
+
 ## <Image alt="education.png" src="https://files.readme.io/fb036c8f3b0cb4cc06a5284c26089bbb361273ab628bc5b740692bc49e7a2c40-20659493109393.png" width="100px" /> Formation en ligne
 
 Les apps de formation en ligne permettent aux utilisateurs d'apprendre à distance. Les événements typiques que nous recommandons d'enregistrer comprennent l'inscription, les tutoriels et les cours suivis, ainsi que les certificats reçus.
@@ -32,6 +34,8 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 * Les cours que les utilisateurs souhaitent le plus, et des idées de ciblage
 * Quels utilisateurs peuvent être reciblés et contactés pour leur rappeler qu'ils disposent de tutoriels supplémentaires pour terminer un cours
 * Quels cours et certificats sont les plus demandés
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -44,9 +48,13 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 
 [![Flowchart_for_recommended_events_online_education_app_user_journey](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur des formations en ligne. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="login-af_login" />
 
 <Accordion title="Connexion (af_login)">
 
@@ -99,6 +107,8 @@ AppsFlyer.sendEvent ("af_login", null);
 </Tabs>
 
 </Accordion>
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -163,6 +173,8 @@ AppsFlyer.sendEvent ("af_complete_registration", CompleteRegistrationEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="tutorial-completion-af_tutorial_completion" />
 
 <Accordion title="Tutoriel achevé (af_tutorial_completion)">
 
@@ -242,6 +254,8 @@ AppsFlyer.sendEvent ("af_tutorial_completion", TutorialCompletiondEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="purchase-af_purchase" />
 
 <Accordion title="Achat (af_purchase)">
 
@@ -331,9 +345,13 @@ AppsFlyer.sendEvent ("af_purchase", purchaseEvent);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une liste de structures d'événements qui comprennent des noms d'événements personnalisés et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="complete-exercise-complete_excercise" />
 
 <Accordion title="Terminer l'exercice (complete_excercise)">
 
@@ -401,6 +419,8 @@ AppsFlyer.sendEvent ("complete_exercise", CompleteExerciseEvent);
 
 </Accordion>
 
+<div id="course-completed-course_completed" />
+
 <Accordion title="Cours terminé (course_completed)">
 
 **Objectif**
@@ -465,6 +485,8 @@ AppsFlyer.sendEvent ("course_completed", CourseCompletedEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="certificate-issued-certificate_issued" />
 
 <Accordion title="Certificat émis (certificate_issued)">
 

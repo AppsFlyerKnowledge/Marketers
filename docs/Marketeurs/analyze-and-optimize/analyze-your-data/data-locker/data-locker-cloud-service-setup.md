@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Locker vous permet de diffuser des données vers la solution de stockage que vous avez choisie et dont vous êtes propriétaire, qu'il s'agisse d'un compartiment ou d'un entrepôt de données. Configurez votre service cloud via l'une des procédures suivantes.
 
+<div id="bucket-cloud-storage" />
+
 ## Stockage cloud en compartiment
 
 <div id="gcs-storage" />
@@ -197,6 +199,8 @@ Data Locker est la solution AppsFlyer permettant d'envoyer les données vers un 
 
 </Accordion>
 
+<div id="data-warehouse-cloud-storage" />
+
 ## Stockage cloud en entrepôt de données
 
 <div id="bigquery" />
@@ -242,6 +246,8 @@ Connectez Data Locker à votre compte Snowflake. Les données sont envoyées à 
   2. Pour chaque processus d'ingestion, n'ingérez que les lignes qui suivent la règle suivante : `_ingestion_time > max_ingestion_time`
 
 Effectuez les opérations suivantes pour connecter Snowflake à Data Locker.
+
+<div id="snowflake-connector-procedures" />
 
 #### **Procédure pour connecter Snowflake**
 

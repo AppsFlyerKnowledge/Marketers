@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En bref :** Affichez toutes vos apps dans AppsFlyer, recherchez-les et filtrez-les, épinglez vos apps préférées et effectuez des actions spécifiques pour chaque app.
 
+<div id="overview" />
+
 ## Présentation
 
 [![New-My-apps.jpg](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)

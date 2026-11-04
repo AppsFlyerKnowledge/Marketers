@@ -31,6 +31,8 @@ En savoir plus sur <Anchor target="_blank" href="https://www.braze.com/">braze.c
 >
 > <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions#restrictions-des-sources-média">Certaines sources média</Anchor> restreignent le partage de données avec des tiers. Par conséquent, les postbacks pour les événements restreints ne seront pas envoyés à ce partenaire, peu importe la configuration choisie pour l'envoi des postbacks.
 
+<div id="integration-overview" />
+
 ## Présentation de l'intégration
 
 Suivez les instructions ci-dessous pour configurer l'intégration avec Braze.
@@ -120,6 +122,8 @@ AppsFlyer.setAdditionalData(customData);
 </Tab>
 </Tabs>
 
+<div id="setting-up-braze" />
+
 ## Configuration de Braze
 
 **Prérequis :** Avant de configurer l'intégration, assurez-vous de <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#contacter-le-partenaire">contacter le partenaire</Anchor> et d'ouvrir un compte chez lui.
@@ -142,10 +146,14 @@ Pour une description détaillée de l'en-tête de la fenêtre de configuration d
 
 L'onglet Intégration est divisé en plusieurs sections comme expliqué ci-dessous.
 
+<div id="activate-partner" />
+
 ### Activer le partenaire
 
 Lors de votre **première visite** ici, vous devez ***activer le partenaire*** pour permettre la configuration des paramètres de l'onglet Intégration. Le commutateur DOIT être activé tant que vous travaillez avec le partenaire.  
 Pour plus de détails sur l'activation du partenaire, veuillez cliquer <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">ici</Anchor>.
+
+<div id="general-settings" />
 
 ### Paramètres généraux
 
@@ -171,6 +179,8 @@ Une fois la configuration enregistrée, AppsFlyer envoie les données suivantes 
 * Nom de la campagne
 * Nom du groupe d'annonces
 * Nom de la publicité
+
+<div id="default-postbacks" />
 
 ### Postbacks par défaut
 
@@ -219,6 +229,8 @@ Les recettes publicitaires ne sont pas prises en charge dans l'intégration avec
 Les autorisations ne sont pas disponibles pour Braze.
 
 </Accordion>
+
+<div id="viewing-user-attribution-data-in-braze" />
 
 ## Visualisation des données d'attribution des utilisateurs dans Braze
 

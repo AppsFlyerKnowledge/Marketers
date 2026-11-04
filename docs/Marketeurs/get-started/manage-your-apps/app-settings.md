@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** découvrez les paramètres qui agissent sur l'attribution et l'analyse de votre app sur l'ensemble des sources média.
 
+<div id="app-settings" />
+
 ## Paramètres d'application
 
 **Accès :**
@@ -38,6 +40,8 @@ x-zendesk:
 1. Dans AppsFlyer, rendez-vous dans **Configuration** > **Paramètres de l'app.**
 2. Affichez les paramètres et faites les modifications requises sur la page Paramètres de l'app.
 3. Cliquez sur **Enregistrer les paramètres**.
+
+<div id="general-app-settings" />
 
 ### Paramètres généraux de l'app
 
@@ -125,6 +129,8 @@ x-zendesk:
         * Le changement de devise n'est disponible que pour les apps sans revenus ni coûts.
         * Pour les nouvelles apps, la devise est définie lorsque l'app est ajoutée.
 
+        <div id="reporting-tools-impacted-by-app-currency" />
+
         #### Outils de reporting impactés par la devise de l'app
 
         | Outil de reporting | Options de devise disponibles |
@@ -140,6 +146,8 @@ x-zendesk:
   </tbody>
 </Table>
 
+<div id="attribution-settings" />
+
 ### Paramètres d'attribution
 
 | Paramètre | Description |
@@ -150,6 +158,8 @@ x-zendesk:
 | <span id="organic-search-seo-mobile-app-attribution"></span>Attribution d'app mobile en recherche organique (SEO) | Lecture connexe : <Anchor target="_blank" href="/marketers/fr/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">Attribution de la recherche organique</Anchor><br /><br />**Pour activer l'attribution de recherche organique :**<ul><li>Allez dans **Paramètres** > **Paramètres de l'app**, activez l'**attribution d'app mobile en recherche organique (SEO**).</li></ul> |
 | <span id="uninstall-measurement"></span>Mesure des désinstallations | La mesure des désinstallations se rapporte aux installations qui ont lieu lorsque la mesure des désinstallations est activée.<br /><br />**Pour activer la mesure des désinstallations :**<ol><li>Effectuez les opérations suivantes selon le système d'exploitation :<ul><li>**iOS** : les apps qui implémentent la fonctionnalité d'attribution des désinstallations iOS doivent télécharger le certificat P12 ici.</li><li>**Android**: les apps nécessitent une clé de serveur Firebase/GCM (à définir ici) pour l'attribution des désinstallations Android.</li></ul></li><li>Activez la **mesure des désinstallations**.</li><li>Cliquez sur **Enregistrer les paramètres**.</li></ol>**Pour désactiver la mesure des désinstallations :**<ol><li>Désactivez la **mesure des désinstallations**.</li><li>Cliquez sur **Enregistrer les paramètres**.</li></ol> |
 
+<div id="advanced-settings" />
+
 ### Paramètres avancés
 
 | Paramètre | Description |
@@ -159,6 +169,8 @@ x-zendesk:
 | <span id="ios-103-redirect-fallback"></span>Redirection de secours iOS 10.3 | [Obsolète] Pour iOS 10.3 et +. Nous avons simplifié le flux pour les utilisateurs iOS et ce paramètre n'est désormais plus utilisé. <Anchor target="_blank" href="/marketers/fr/docs/uri-scheme-fallback-for-ios">Redirections IOS</Anchor>.<br /><br />Cette option est uniquement disponible pour les apps iOS. |
 | <span id="change-app-name"></span>Modifier le nom de l'application | <ul><li>L'administrateur de votre compte peut changer le nom de votre app, qui se sera ainsi modifiée sur le tableau de bord et dans les rapports de données. Cette option est particulièrement utile si vous disposez de plusieurs versions de la même application, par exemple pour des raisons de distribution régionale.</li><li>Cette modification agit sur l'affichage de l'app. L'ID d'app, utilisé pour identifier l'app lorsque vous utilisez plusieurs API AppsFlyer, **reste identique**.</li><li>Les noms sont limités à 50 caractères.</li></ul> |
 | <span id="outofstore-app-url"></span>URL d'app hors store | <ul><li>Définir l'URL de téléchargement de l'app utilisée pour remplir les liens d'attribution.</li><li>Ce paramètre ne modifie pas les liens d'attribution générés précédemment.</li></ul>**Limitation**: l'option ne s'affichera pas du tout si vous n'avez pas défini l'URL lors de l'ajout de l'app. Dans ce cas, voyez avec votre CSM ou contactez [hello@appsflyer.com](mailto:hello@Appsflyer.com) pour que nous le définissions pour vous. .<br /><br />Cette option est uniquement disponible pour les apps Android. |
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

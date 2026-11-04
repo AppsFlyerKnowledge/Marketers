@@ -23,12 +23,16 @@ x-zendesk:
 ---
 > **En bref :** Pinterest, un partenaire intégré à AppsFlyer, est l’un des principaux contributeurs de trafic pour les blogueurs et les marques. Pinterest propose à la fois une attribution mobile basée sur les clics et une attribution mobile post-vue. Pinterest propose également le retargeting basé sur les clics que vous pouvez enregistrer via AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > * Depuis juin 2021, Pinterest ne propose plus de campagnes CPI, par conséquent, AppsFlyer n’envoie aucun postbacks d’installation à Pinterest.
 > * Après avoir accepté les conditions d’utilisation des publicités Pinterest, vous devez accepter les conditions et termes des mesures de Pinterest Mobile <Anchor target="_blank" href="https://ads.pinterest.com/terms/app_install/">ici</Anchor>.
 > * Pinterest demande aux prestataires d'attribution de supprimer ses données de niveau utilisateur <Anchor target="_blank" href="/marketers/fr/docs/user-level-data-retention#périodes-de-conservation-des-données-des-partenaires">6 mois après l'installation.</Anchor> Cela signifie que les évènements effectués par ces utilisateurs 6 mois après l'installation de l'app sont considérés comme organiques. Les données agrégées précédentes restent les mêmes.
 > * Depuis le 4 septembre 2023, Pinterest demande aux fournisseurs d’attribution de <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions#restrictions-des-sources-média">restreindre l’affichage de certains champs dans les rapports de données brutes</Anchor>, et ce afin de préserver la confidentialité des utilisateurs et de respecter la législation en cours.
+
+<div id="set-up-pinterest" />
 
 ## Configurer Pinterest
 
@@ -52,10 +56,14 @@ Pour obtenir une description détaillée de l'en-tête de la fenêtre de configu
 
 <Accordion title="Onglet Intégration">
 
+<div id="activate-partner" />
+
 ### Activer le partenaire
 
 Lors de la **première visite**, vous devrez allumer le bouton **Activer le partenaire** pour permettre la configuration des paramètres de l’onglet intégration. Cette option doit rester activée tant que vous travaillez avec le partenaire.  
 Pour plus de détails sur l'activation des partenaires, cliquez sur <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">ici</Anchor>.
+
+<div id="general-settings" />
 
 ### Paramètres généraux
 
@@ -64,6 +72,8 @@ Voici les paramètres généraux de l’onglet Intégration de Pinterest.
 **Activer l'attribution post-vue**
 
 Activez cette option si vous souhaitez attribuer les installations post-vue de Pinterest. Le curseur rétroactif post-vue est disponible dans l'onglet Lien d'attribution (détails ci-dessous).
+
+<div id="in-app-events-settings" />
 
 ### Paramètres des événements in-app
 
@@ -108,11 +118,17 @@ Pour générer et enregistrer les liens d’attribution et les envoyer au parten
 
 **Pour générer un lien d’attribution, veuillez**suivre <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#attribution-link-tab">ces instructions</Anchor>.
 
+<div id="attribution-link-for-retargeting-campaign" />
+
 #### Lien d’attribution pour une campagne de retargeting
 
 Pinterest recommande d’utiliser les liens d’attribution propres au système d’exploitation pour les campagnes de retargeting. Sélectionnez l’icône **Utiliser un lien de plateforme unique** et ajoutez les paramètres nécessaires au lien d’attribution de retargeting.
 
+<div id="deep-link-url" />
+
 #### URL de deep link
+
+<div id="note-1" />
 
 > 📘 **Remarque**
 >
@@ -129,6 +145,8 @@ Utilisez ce champ si le lien est destiné à deep linker les utilisateurs à une
 
 Une fois que vous avez défini les coûts dans Pinterest, ne modifiez aucun nom de campagne en cours, adset ou publicité unique, et n’utilisez pas de macros dynamiques dans le paramètre du nom des campagnes, au risque de générer de grosses erreurs dans les résultats de coûts, ou de perdre ces données.
 
+<div id="enabling-and-testing-pinterest-integration" />
+
 ### Activer et tester l’intégration de Pinterest
 
 AppsFlyer reçoit les données de coûts par API. Consultez le <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tableau d'intégration des coûts du réseau publicitaire</Anchor> pour obtenir plus d'infos sur les dimensions, les métriques et les fonctionnalités prises en charge. **Remarque** : Les données de coût nécessitent un abonnement ROI360./span>
@@ -137,9 +155,13 @@ AppsFlyer reçoit les données de coûts par API. Consultez le <Anchor target="_
 
 * Suivez  <Anchor target="_blank" href="/marketers/fr/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">ces instructions d'intégration</Anchor>.
 
+<div id="cost-data-sync-status" />
+
 ### État de synchronisation des données de coût
 
 <Anchor target="_blank" href="/marketers/fr/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">Affichez le statut de votre API des coûts,</Anchor> ainsi que la dernière fois où AppsFlyer a pu extraire les données de coûts correspondantes, soit dans le tableau de bord du statut d'intégration des coûts (et des revenus publicitaires), soit dans le tableau de bord du réseau publicitaire individuel.
+
+<div id="stop-pinterest-cost-sync" />
 
 ### Arrêter la synchronisation des coûts Pinterest
 
@@ -166,6 +188,8 @@ En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-in
 </Accordion>
 
 </Accordion>
+
+<div id="troubleshooting" />
 
 ## Dépannage
 

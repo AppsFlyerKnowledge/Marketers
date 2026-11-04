@@ -30,6 +30,8 @@ Les apps en attente dans AppsFlyer s'affichent de la même manière que les apps
 
 ![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
 
+<div id="whats-happening" />
+
 ## Que se passe-t-il ?
 
 AppsFlyer vérifie automatiquement le statut des apps plusieurs fois par jour.
@@ -37,6 +39,8 @@ AppsFlyer vérifie automatiquement le statut des apps plusieurs fois par jour.
 Si votre app n'est toujours pas en ligne dans le store lorsque AppsFlyer vérifie son statut, celle-ci apparaît avec le statut « en attente » dans le tableau de bord. Une fois l'app soumise à iTunes ou Google, son statut est 1 active » et son logo devient le logo d'origine de l'app.
 
 Le statut de l'app dans le tableau de bord n'affecte ni la collecte ni la mesure des données. Si l'app est disponible sur Google Play ou sur l'App Store et que des utilisateurs l'installent et interagissent avec elle, les données des événements d'installation et des événements in-app seront toujours affichées dans le tableau de bord.
+
+<div id="refreshing-the-app-status" />
 
 ## Actualisation du statut de l'app
 
@@ -49,6 +53,8 @@ Pour que l'app devienne active, AppsFlyer vérifie son statut dans le store. Si 
 1. Dans le coin supérieur droit du tableau de bord, cliquez sur **Mes apps**.  
    ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
 2. À côté de l'app en attente, cliquez sur **Actualiser le statut.** Si le statut de l'app n'est pas modifié, celle-ci affiche toujours En attente. S'il a été mis à jour, l'app affiche En ligne et le logo est actualisé.
+
+<div id="store-country" />
 
 ## Pays du store
 

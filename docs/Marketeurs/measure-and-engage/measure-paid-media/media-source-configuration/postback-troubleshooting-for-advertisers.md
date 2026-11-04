@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** trouvez les principales causes et solutions en cas de non réception des postbacks attendus par votre partenaire. Examinez chacun des sujets ci-dessous et voyez s'ils peuvent en être la cause.
 
+<div id="check-the-integration-toggles" />
+
 ## Contrôler l'activation des fonctions d'intégration
 
 Différents boutons permettent de contrôler différentes parties de l'intégration. La désactivation pourrait être la cause de l'échec de l'envoi des postbacks. 
@@ -64,6 +66,8 @@ Le bouton **<Anchor target="_blank" href="/marketers/fr/docs/in-app-event-postba
    ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
 
 </Accordion>
+
+<div id="check-the-event-configuration" />
 
 ## Vérifier la configuration de l'événement
 
@@ -137,6 +141,8 @@ Lorsque le lien d'attribution inclut le paramètre `af_installpostback=false`, l
 
 </Accordion>
 
+<div id="privacy-restrictions" />
+
 ## Restrictions de confidentialité
 
 Dans les cas suivants, AppsFlyer n'envoie pas de postbacks en raison de restrictions de confidentialité.
@@ -158,6 +164,8 @@ Lorsque le mode <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregate
 <Anchor target="_blank" href="/marketers/fr/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms">Certaines sources média</Anchor> limitent le partage des données avec les tiers. AppsFlyer n'autorise pas le partage de données d'utilisateurs provenant de ces sources média avec des plateformes ou services tiers.Toute installation issue de ces sources média est donc transmise comme organique. Notez que Meta ads ne partage aucune donnée avec les plateformes tierces.
 
 </Accordion>
+
+<div id="miscellaneous" />
 
 ## Divers
 
@@ -228,6 +236,8 @@ Il existe un certain nombre de cas spécifiques <Anchor target="_blank" href="/m
 <Anchor target="_blank" href="/marketers/fr/docs/discrepancies-between-appsflyer-and-third-party-platforms#postback-restrictions-on-third-party-platforms">Certaines sources média</Anchor> limitent le partage des données avec les tiers. AppsFlyer n'a pas le droit de partager les données d'utilisateurs provenant de ces sources média avec des plateformes ou services tiers.Toute installation issue de ces sources média est donc transmise comme étant organique. Notez que Meta ads ne partage aucune donnée avec des plateformes tierces.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

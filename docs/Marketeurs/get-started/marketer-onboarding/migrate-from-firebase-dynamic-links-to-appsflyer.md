@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En bref :** Passez facilement de Firebase Dynamic Links à AppsFlyer grâce à notre guide de migration étape par étape
 
+<div id="about-the-migration" />
+
 ## Aperçu
 
 Avec l'<Anchor target="_blank" href="https://firebase.google.com/support/dynamic-links-faq">annonce de Google</Anchor> de la fermeture de Firebase Dynamic Links, c'est le moment idéal pour migrer facilement vers AppsFlyer.
+
+<div id="migrate-from-firebase-to-appsflyer" />
 
 ## Comment migrer de Firebase vers AppsFlyer
 
@@ -108,6 +112,8 @@ Le tableau ci-dessous répertorie tous les paramètres de Firebase avec leurs é
 
 Utilisez ce tableau comme référence pour tous les paramètres que vous utilisez actuellement lors de votre migration vers AppsFlyer.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Si un paramètre Firebase n'est pas répertorié, c'est parce qu'AppsFlyer le prend en charge dans la configuration du modèle OneLink sans que vous ayez besoin d'ajouter un paramètre dans vos liens.
@@ -132,6 +138,8 @@ Utilisez le tableau suivant pour déterminer quelle méthode convient le mieux �
 | Construction manuelle des liens | Liens longs | Vous souhaitez construire manuellement le lien avec ses paramètres de requête. À utiliser si vous n'avez pas besoin de liens courts. Par exemple, si le lien est derrière un bouton ou une bannière |  |
 |  | Page de liens en masse | Vous souhaitez migrer en masse tous vos liens dynamiques Firebase vers AppsFlyer.<br /><br />Ceci est recommandé pour transférer rapidement tous vos liens sans aucune erreur | <ul><li>Nécessite une étape préalable de [mappage des clés et valeurs de paramètres de lien selon les paramètres Firebase correspondants](/docs/migrate-from-firebase-dynamic-links-to-appsflyer#5-comprendre-le-mappage-des-paramètres)</li><li>Non disponible dans le forfait gratuit.</li></ul> |
 |  | Script intelligent | Si vous souhaitez créer un lien long de façon dynamique sur une page web pour une expérience web à app | <ul><li><Anchor target="_blank" href="/marketers/fr/docs/set-up-smart-script-to-convert-web-visitors">Cliquez ici</Anchor> pour découvrir si Smart Script offre des fonctionnalités qui vous conviendraient mieux.</li></ul> |
+
+<div id="see-also" />
 
 > 📄 **Voir aussi**
 >

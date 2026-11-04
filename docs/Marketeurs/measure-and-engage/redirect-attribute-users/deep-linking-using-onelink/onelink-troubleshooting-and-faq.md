@@ -22,9 +22,15 @@ x-zendesk:
 ---
 > **En bref :** trouvez rapidement des solutions pour tester et déboguer les problèmes de redirection/comportement des liens personnalisés OneLink.
 
+<div id="onelink-troubleshooting-guide" />
+
 ## Guide de dépannage OneLink
 
+<div id="onelink-frequently-asked-questions" />
+
 ## Questions fréquentes sur OneLink
+
+<div id="onelink-template-faq" />
 
 ### FAQ sur les templates OneLink
 
@@ -35,6 +41,8 @@ x-zendesk:
 **Liens universels :** requis pour plus de 98 % des utilisateurs iOS
 
 **Liens d’app :** pour les utilisateurs Android 6.0 et +. **Remarque** : un système d’exploitation Samsung ne pourra pas ouvrir les apps avec des liens d’app Android.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -184,6 +192,8 @@ Les utilisateurs de ordinateur de bureau peuvent interagir avec vos liens person
 
 Dans l'URL ou le template OneLink, vous pouvez rediriger les utilisateurs d’ordinateur de bureau (Windows ou Mac) vers une autre URL. Cette URL est ajoutée au lien dans le `af_web_dp` paramètre. **Remarque :** `af_web_dp`si votre lien contient `af_web_dp`, AppsFlyer n'enregistre pas les clics provenant d'un ordinateur de bureau.
 
+<div id="tip" />
+
 > 👍 **Astuce**
 >
 > Redirigez les utilisateurs d’ordinateur de bureau vers une URL qui contient un formulaire web spécifique qui permettra d'envoyer une URL OneLink (via SMS ou e-mail) sur l'appareil mobile de l'utilisateur de l’ordinateur. En savoir plus sur cette option dans le cadre de la solution <Anchor target="_blank" href="/marketers/fr/docs/set-up-smart-script-to-convert-web-visitors#desktop">OneLink Smart Script</Anchor>.
@@ -205,6 +215,8 @@ Sous Chromebook, pour rediriger les nouveaux utilisateurs sans que votre app soi
    Lorsqu'elle est ajoutée via les paramètres du lien, l'URL est ajoutée à votre lien dans le paramètre `af_android_url`.
 
 </Accordion>
+
+<div id="onelink-link-faq" />
 
 ### FAQ sur les liens OneLink
 
@@ -267,6 +279,8 @@ Il y a plusieurs explications possibles :
 
 Les URL de secours et le deep linking forcé sont deux solutions qui permettent d'améliorer l'expérience utilisateur.
 
+<div id="fallback-urls" />
+
 #### URL de secours
 
 Les URL de secours vous permettent de rediriger les utilisateurs vers des pages web spécifiques, dans le cas où l'ouverture de l'app ou le deep linking échoue pour une raison quelconque. **Attention !** Les utilisateurs qui n'ont pas installé votre app seront dirigés vers l'URL de secours et non vers l'app store approprié. Par conséquent, vous ne devez utiliser cette option que si vous redirigez des utilisateurs qui ont déjà installé votre app.
@@ -276,6 +290,8 @@ Pour implémenter une URL de secours, dans les paramètres du template OneLink o
 [![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
 
 L’utilisation de ce paramètre ajoute `af_ios_url` et `af_android_url` comme paramètres de destination pour la solution de secours, ce qui entraîne la redirection des utilisateurs iOS vers la page définie par `af_ios_url`, et la redirection des utilisateurs Android vers la page définie par `af_android_url`.
+
+<div id="tip-1" />
 
 > 📄 **Exemple**
 >
@@ -291,10 +307,14 @@ L’utilisation de ce paramètre ajoute `af_ios_url` et `af_android_url` comme p
 > * iOS: www.yoursite.com/ios-bonus
 > * Android : www.yoursite.com/android-bonus
 
+<div id="note-1" />
+
 > 📘 **Remarque**
 >
 > * Si vous incluez un symbole de hachage (#) dans une valeur de paramètre dans l'URL, vous devez l'encoder.
 > * En cas de redirection, les paramètres URL de OneLink passent sur la page de destination définie par `af_ios_url` ou `af_android_url`. Pour éviter ce comportement, ajoutez le paramètre `af_param_forwarding=false` à OneLink.
+
+<div id="forced-deep-linking" />
 
 #### Deep linking forcé
 
@@ -335,6 +355,8 @@ Oui. Cependant, sous Android, lorsqu’un utilisateur clique sur un lien OneLink
 L'activation du bouton **Coût par installation** (dans **Paramètres avancés**) vous permet d'appliquer une valeur CPI spécifique pour chaque installation provenant du lien.
 
 Sélectionnez le coût de la devise et une **valeur numérique UNIQUEMENT** (jusqu'à 4 chiffres après la virgule) représentant le CPI. Cela ajoute les paramètres af\_cost\_currency et af\_cost\_value au lien.
+
+<div id="tip-2" />
 
 > 📄 **Exemple**
 >
@@ -471,6 +493,8 @@ Les liens suivants sont identiques dans le principe et fonctionnent partout de l
 
 </Accordion>
 
+<div id="onelink-parameter-faq" />
+
 ### FAQ sur les paramètres OneLink
 
 <div id="what-parameters-are-mandatory-for-onelink-custom-links" />
@@ -488,6 +512,8 @@ Seul le paramètre de la source média (**pid**) est obligatoire.
 **Oui,** n'importe quel paramètre peut être ajouté à l'URL courte.
 
 **Important !** Les paramètres ajoutés à l'URL courte ne remplacent pas les paramètres à l'intérieur du lien.
+
+<div id="tip-3" />
 
 > 📄 **Exemple**
 >
@@ -549,6 +575,8 @@ Pour les données analysées, utilisez les paramètres d'abonné `af_sub1-5`, ch
 
 </Accordion>
 
+<div id="integrated-partner-faq" />
+
 ### FAQ sur les partenaires intégrés
 
 <div id="can-i-use-onelink-in-social-apps-unpaid" />
@@ -571,6 +599,8 @@ Le tableau suivant indique comment les OneLinks peuvent être utilisés avec les
 
 **Oui,** mais notez que OneLink est principalement utilisé avec les médias propres, pas avec les réseaux publicitaires. En effet, comme les réseaux publicitaires font généralement de la publicité in-app (ce qui induit qu’ils connaissent la plateforme de l’utilisateur, l’ID de l’appareil, etc.), les liens d’attribution spécifiques aux apps et aux plateformes sont suffisants, il n’est donc pas nécessaire d'avoir recours à OneLink. Cependant, lorsque les réseaux publicitaires ne connaissent pas la plateforme utilisateur à l'avance (par exemple lorsqu'ils exécutent eux-mêmes des campagnes par e-mail ou SMS), OneLink peut s'avérer utile.
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > Lorsque vous utilisez OneLink avec des réseaux publicitaires, vous devez utiliser l'URL longue OneLink.
@@ -580,6 +610,8 @@ Le tableau suivant indique comment les OneLinks peuvent être utilisés avec les
 * Suivez les <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#attribution-link-tab">instructions relatives au lien d'attribution d'un réseau publicitaire</Anchor>, et sélectionnez **Utiliser OneLink**.
 
 Une fois tous les paramètres pour Android et iOS bien ajoutés, lorsque l'utilisateur clique sur le lien personnalisé OneLink et qu'il est redirigé vers la plateforme choisie, les paramètres sont envoyés au réseau via postback après l'installation.
+
+<div id="tip-4" />
 
 > 📄 **Exemple**
 >
@@ -656,6 +688,8 @@ Il est généralement possible d’ouvrir l’application et de deep linker à p
 
 </Accordion>
 
+<div id="testing-faq" />
+
 ### FAQ sur les tests
 
 <div id="how-can-i-ab-test-the-social-app-landing-page" />
@@ -694,6 +728,8 @@ Si vous voyez la boîte de dialogue de sélection d'app lors du test de vos OneL
 
 </Accordion>
 
+<div id="deep-linking-faq" />
+
 ### FAQ sur le deep Linking
 
 <div id="what-deep-linking-methods-should-be-implemented" />
@@ -717,6 +753,8 @@ Après le lancement de l'app à l'aide de l'une de ces méthodes, le SDK AppsFly
 **Le mieux pour ajouter des paramètres personnalisés est de passer par la page de configuration du lien personnalisé**.
 
 </Accordion>
+
+<div id="ios-14-faq" />
 
 ### FAQ sur IOS 14
 

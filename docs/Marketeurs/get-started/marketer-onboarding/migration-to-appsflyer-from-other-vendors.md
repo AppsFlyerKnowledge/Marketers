@@ -24,6 +24,8 @@ x-zendesk:
 
 ![flux de migration](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="about-migrating-to-appsflyer-from-other-vendors" />
+
 ## Présentation
 
 La migration vers AppsFlyer depuis un autre fournisseur induit les étapes suivantes :
@@ -42,13 +44,19 @@ Vous pouvez travailler sur ces différentes opérations simultanément. Cependan
 >
 > Si vous souhaitez comparer la mesure d'attribution entre votre MMP actuelle et AppsFlyer pour les mêmes campagnes et la même source média, consultez <Anchor target="_blank" href="/marketers/fr/docs/measuring-attribution-with-multiple-mmps">cet article</Anchor>.
 
+<div id="tasks" />
+
 ## Opérations à effectuer
 
 Le tableau suivant contient le contenu de chaque opération et ses besoins. Pour obtenir une répartition des tâches et l'ordre dans lequel vous devez les accomplir, et pour suivre votre progression, téléchargez <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/1x6kdhfnfKLYHJgsROPUv7pQYC6i-Q5H3DdejBr8jKjw/export?format=xlsx">cette feuille de calcul</Anchor>.
 
+<div id="scope-of-work" />
+
 #### Mise en application
 
 <table><thead><tr><th>Tâche</th><th>Action requise</th><th>Personnes concernées</th><th>Temps estimé</th><th>Remarques</th></tr></thead><tbody><tr><td>Conditions préalables</td><td><ol><li> <a href="https://www.appsflyer.com/get-started" target="_blank">Créer un compte AppsFlyer</a>.</li><li> <a href="./adding-an-app-to-appsflyer" target="_blank">Ajouter l'app</a> dans AppsFlyer</li><li>[Facultatif] Modifiez la <a href="./set-up-re-attribution-window" target="_blank">fenêtre de réattribution</a> par défaut de 90 jours pour l'aligner sur votre <span>définition des utilisateurs actifs.</span> </li></ol></td><td>Utilisateur du tableau de bord AppsFlyer/Marketer</td><td><p>2 heures</p></td><td> </td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#intégration-sdk">Intégration SDK</a></td><td><ul><li>Intégrez le SDK AppsFlyer à votre app.</li><li>Mappez les événements in-app du S2S ou SDK.</li><li>Mettez à jour la version de l'app dans les app stores.</li></ul></td><td>Développeurs d'apps</td><td><p>1-2 semaines</p></td><td><ul><li> <strong>Recommandé</strong> : intégrer le SDK AppsFlyer dans une app de pré-production pour la tester.</li><li>Une fois toutes les autres tâches terminées, l'app de production doit être mise à jour dans les app stores.</li></ul></td></tr><tr><td> <a href="./migration-to-appsflyer-from-other-vendors#migration-dappareil-facultatif">Migration de l'appareil</a> [facultatif]</td><td>Migrez les ID d'appareil pour éviter la double attribution de vos utilisateurs existants.</td><td>Spécialiste des données</td><td>1-2 semaines</td><td rowspan="2"><ul><li>Pensez à interrompre les campagnes existantes avant la migration, et à les relancer une fois la version de l'app mise à jour. </li><li>Pour assurer une couverture complète, pensez à répéter la migration des appareils à la date de la migration finale. </li></ul></td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#migration-de-campagne">Migration de campagne</a></td><td><ul><li>Intégrez vos réseaux publicitaires dans AppsFlyer</li><li>Migrez les campagnes existantes depuis :  <ul><li>Les SRN</li><li>Ad networks non SRN</li><li>Médias propres</li></ul></li></ul></td><td>Marketeur/gestionnaire UA</td><td>1-3 semaines</td></tr><tr><td><a href="./migration-to-appsflyer-from-other-vendors#configuration-du-rapport-de-données">Configuration du rapport de données</a></td><td><ul><li>Adaptez/mappez les structures actuelles vos rapports aux structures d'AppsFlyer.</li><li>Préparez-vous à recevoir les rapports d'AppsFlyer.</li></ul></td><td>Spécialiste des données</td><td>2-4 semaines</td><td> </td></tr></tbody></table>
+
+<div id="sdk-integration" />
 
 ### Intégration SDK
 
@@ -79,6 +87,8 @@ Le SDK AppsFlyer intégré à l'app est le lien entre l'app et la plateforme App
 
 </Accordion>
 
+<div id="device-migrationoptional" />
+
 ### Migration d'appareil-facultatif
 
 <div id="about-device-migration" />
@@ -88,6 +98,8 @@ Le SDK AppsFlyer intégré à l'app est le lien entre l'app et la plateforme App
 La migration d'appareil consiste à importer dans AppsFlyer la liste des ID de vos appareils existants (IDFA, IDFV, GAID, CUID). Vous devez effectuer cette opération avant de publier la nouvelle version de l'app, qui inclura le SDK AppsFlyer. Il existe deux manières de migrer des appareils, via [migration attribuée](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) ou via [migration non attribuée](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration).
 
 La migration des appareils vient corriger les erreurs de données qui faisaient que les utilisateurs existants d'une app qui téléchargeaient l'application étaient attribués par votre précédent fournisseur. Par exemple la double facturation SRN, qui a lieu lorsque des utilisateurs initialement attribués à un SRN sous votre précédent fournisseur, et qui se trouvent toujours dans la fenêtre rétrospective, sont attribués une deuxième fois au SRN sous AppsFlyer.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -127,6 +139,8 @@ Une fois que vous avez migré les appareils, les données apparaissent dans Apps
 
 Les événements in-app et les sessions des appareils migrés vers AppsFlyer avec cette méthode sont enregistrés et affichés d'après la source média indiquée par le fournisseur d'attribution précédent, et selon les politiques de conservation des données des ad networks.
 
+<div id="attributed-device-migration-csv-structure" />
+
 #### Structure CSV de migration de l'appareil attribué
 
 | Nom de la  <br /> colonne | Description | Obligatoire | Exemples |
@@ -164,6 +178,8 @@ Les événements in-app et les sessions des appareils migrés vers AppsFlyer ave
 
 Les appareils migrés vers AppsFlyer avec cette méthode sont enregistrés comme utilisateurs organiques. Leurs données d'événements et de sessions in-app sont également enregistrées et affichées comme organiques.
 
+<div id="non-attributed-device-migration-csv-file-structure" />
+
 #### Structure de fichier CSV pour la migration des dispositifs non attribués
 
 | Colonnes | Quand l'utiliser | Exemple |
@@ -187,6 +203,8 @@ Les appareils migrés vers AppsFlyer avec cette méthode sont enregistrés comme
 
 </Accordion>
 
+<div id="campaign-migration" />
+
 ### Migration de campagne
 
 Passez d'une campagne marketing existante à AppsFlyer pour activer l'attribution AppsFlyer, et éviter la double facturation et la perte de données d'attribution.
@@ -202,6 +220,8 @@ Les SRN répondent aux MMP (Mobile Measurement Partners) lorsqu'ils sont interro
 **Pour migrer des campagnes SRN** :
 
 * Activez et configurez les <Anchor target="_blank" href="/marketers/fr/docs/self-reporting-networks-srns#srn-intégrés-à-appsflyer">SRN</Anchor> pertinents dans AppsFlyer.
+
+<div id="note-1" />
 
 > 📘 **Remarque**
 >
@@ -256,6 +276,8 @@ Pour l'attribution SKAdNetwork (SKAN), vous ne pouvez mettre la valeur de conver
 <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio">Découvrez comment configurer la valeur de conversion SKAN dans AppsFlyer.</Anchor>
 
 </Accordion>
+
+<div id="data-report-setup" />
 
 ### Configuration du rapport de données
 

@@ -24,6 +24,8 @@ x-zendesk:
 
 ![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
 
+<div id="branded-domains" />
+
 ## Domaines de marque
 
 * Les domaines de marque sont utilisés pour estampiller les liens d'attribution avec votre marque et votre domaine. Cf exemple ci-dessous :
@@ -38,6 +40,8 @@ x-zendesk:
   * Ils améliorent la visibilité de votre marque : vos liens de campagne portent le nom de votre marque, ils ne sont pas génériques.
   * Autorisez les e-mails pour qu'ils ne soient pas considérés comme des spams à cause du lien qui ne correspond pas à l'e-mail de l'expéditeur.
 
+<div id="principles-of-implementation" />
+
 ### Principes de mise en œuvre
 
 Les liens de marque sont implémentés en associant un domaine complet défini dans votre Domain Name System (DNS) à un sous-domaine OneLink (la destination CNAME AppsFlyer). Pour ce faire, vous utilisez les paramètres standard de votre DNS et configurez un domaine de marque dans AppsFlyer. Vous devrez également apporter quelques petites modifications à votre app pour qu'elle prenne en charge les domaines de marque.
@@ -45,6 +49,8 @@ Les liens de marque sont implémentés en associant un domaine complet défini d
 Vous devrez faire appel au développeur d'app et à l'admin DNS (généralement un membre de votre équipe informatique ou de votre hébergeur DNS).
 
 Différents domaines complets peuvent être associés à un seul sous-domaine OneLink. Il est donc possible d'avoir plusieurs marques qui utilisent le même sous-domaine OneLink.
+
+<div id="setting-up-branded-domains" />
 
 ### Configurer les domaines de marque
 
@@ -56,6 +62,8 @@ Suivez toutes les étapes de la procédure pour configurer un domaine de marque.
 | 2 | Développeur | [Configurer des domaines de marque dans l'app](/docs/brand-onelink-with-your-domain#set-up-branded-domains-in-the-app) | De petites modifications sont apportées au code de l'app. |
 | 3 | Marketeur | [Utiliser et tester des domaines de marque](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | Options | Marketeur | [Modifier et supprimer des domaines de marque](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
+
+<div id="procedures" />
 
 ### Procédures
 
@@ -257,6 +265,8 @@ La modification vous permet de changer le mappage d'un domaine complet pour qu'i
 * Contactez votre CSM AppsFlyer ou écrivez à <Anchor target="_blank" href="hello@appsflyer.com">hello@appsflyer.com</Anchor>.
 
 </Accordion>
+
+<div id="troubleshooting-traits-and-limitations" />
 
 ## Dépannage, caractéristiques et seuils
 

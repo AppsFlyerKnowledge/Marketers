@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :**  Découvrez la structure et les paramètres des liens d'attribution AppsFlyer pour les plateformes CTV, PC et consoles. **Remarque** : Pour les applications Android et iOS, y compris les jeux PC Android, utilisez les <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters">instructions relatives aux liens d'attribution mobile</Anchor>.
 
+<div id="overview" />
+
 ## Aperçu
 
 Les liens d'attribution directe pour les plateformes CTV, PC et consoles permettent aux annonceurs de rediriger les utilisateurs et de collecter des données après les clics. Ces liens d'attribution directe sont des liens AppsFlyer qui prennent en charge la redirection et l'attribution **pour une seule application de destination sur une seule plateforme à la fois**. La destination de la redirection est la valeur du paramètre af\_r inclus dans le lien.
@@ -32,9 +34,13 @@ Les liens d'attribution peuvent être directement créés par vous-même et plac
 
 Alternativement, des liens peuvent être créés via S2S en utilisant l'<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/get_click-app-platform-app-id">API Engagements</Anchor>. Cela nécessite un certain travail de développement. **Remarque** : Les liens créés via S2S peuvent également collecter des données d'impression.
 
+<div id="attribution-link" />
+
 ### Lien d'attribution
 
 <table><thead><tr><th colspan="2">Structure du lien d'attribution</th></tr></thead><tbody><tr><td>URL de base</td><td>engagements.appsflyer.com/v1.0/c2s/click/app/</td></tr><tr><td>Paramètres de chemin obligatoires</td><td><ul><li>plateforme<br/>Exemple : steam</li><li>identifiant_application<br/>Exemple : 123456</li></ul></td></tr><tr><td>Paramètres de requête obligatoires</td><td><ul><li>af_media_source</li><li>af_campaign_id</li><li>af_r</li></ul></td></tr><tr><td>Autres paramètres</td><td><a href="./ctv-pc-and-console-platform-direct-attribution-links#paramètres">Voir tous les paramètres</a></td></tr><tr><td>Structure de l'URL</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/`{platform}/{app_id}?af_media_source={media_source}&amp;af_campaign_id={campaign_id}&amp;af_r={app_store_url}`</code></td></tr><tr><td>Exemple d'URL</td><td><code>https://engagements.appsflyer.com/v1.0/c2s/click/app/steam/123456?af_media_source=aloha&amp;af_campaign_id=1234&amp;af_r=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F440%2FTest_app2%2F%3Futm_term%3Dhello</code></td></tr></tbody></table>
+
+<div id="parameters" />
 
 ### Paramètres
 
@@ -64,6 +70,8 @@ Alternativement, des liens peuvent être créés via S2S en utilisant l'<Anchor 
 | af\_device\_id\_type | N/A | <span id="query-getImpressionAppPlatformApp_id_af_device_id_type__description"></span>Type d'identifiant d'appareil Soit :<ul><li>vida</li><li>tifa</li><li>rida</li><li>lgudid</li><li>fire</li><li>advertising\_id</li><li>fire</li><li>personnalisé</li></ul> | String |
 | af\_device\_id\_value | N/A | <span id="query-getImpressionAppPlatformApp_id_af_device_id_value__description"></span>Type d'identifiant d'appareil | String |
 | af\_r | N/A | <ul><li>Obligatoire</li><li>Contient le lien vers la boutique d'applications ou la page de destination appropriée</li><li>Tout ce qui se trouve dans le paramètre af\_r doit être encodé. Cela inclut toutes les valeurs des paramètres UTM, si elles sont ajoutées.</li></ul> | String |
+
+<div id="traits-and-limitations" />
 
 ## Caractéristiques et limitations
 

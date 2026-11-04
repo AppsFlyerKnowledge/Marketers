@@ -26,6 +26,8 @@ x-zendesk:
 
 [![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
 
+<div id="pull-api-raw-data" />
+
 ## Données brutes d'API Pull
 
 * L'API Pull permet d'obtenir les rapports de données brutes en fichier de format CSV. <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">En savoir plus sur les rapports de données brutes</Anchor>
@@ -33,6 +35,8 @@ x-zendesk:
 * Les capacités supplémentaires de l'API Pull sont les suivantes :
   * Sélectionner une devise
   * Sélectionner un fuseau horaire
+
+<div id="raw-data-reports-available-via-pull-api" />
 
 #### Rapports de données brutes disponibles via API Pull
 
@@ -48,6 +52,8 @@ x-zendesk:
 2. Donnez à votre développeur le jeton d'API à utiliser dans l'en-tête d'authentification.
 3. Transmettez à vos développeurs les paramètres à saisir lorsqu'ils effectuent l'appel d'API, tels que décrits dans les paragraphes suivants. Les paramètres déterminent les points clés du rapport, comment il est organisé, et ils fournissent un calendrier de rapport.
 4. Demandez à votre développeur de suivre les instructions relatives aux <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/overview-5">données brutes de l'API Pull</Anchor> du dev hub.
+
+<div id="parameters" />
 
 #### Paramètres
 
@@ -198,6 +204,8 @@ Les champs de rapport complémentaires ne sont pas ajoutés à la liste des cham
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations supplémentaires
 
 <div id="traits-and-limitations" />
@@ -231,6 +239,8 @@ Les champs de rapport complémentaires ne sont pas ajoutés à la liste des cham
 | Le rapport ne contient pas les données correspondant à la période définie, ou il y a une différence de résultats entre le rapport de données brutes et le rapport de données agrégées. | Vérifiez que vous avez bien défini le paramètre `timezone`. Si timezone n'est pas configuré, les données sont envoyées en utilisant l'UTC et non le fuseau horaire de votre application. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

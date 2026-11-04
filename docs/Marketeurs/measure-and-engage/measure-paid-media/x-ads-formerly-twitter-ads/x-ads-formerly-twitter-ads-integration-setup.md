@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** intégrez votre compte X Ads dans AppsFlyer pour afficher les données d'attribution de l'ensemble de vos campagnes X Ads.
 
+<div id="connecting-your-x-ads-account-to-appsflyer" />
+
 ## Connecter votre compte X Ads à AppsFlyer
 
 <Embed title="Configuration de l'intégration de X Ads (anciennement Twitter Ads)" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/a65pnqoyxw" providerUrl="https://fast.wistia.com" />
@@ -58,6 +60,8 @@ x-zendesk:
     ![twitter_account_name.png](https://support.appsflyer.com/hc/article_attachments/4411046818193)
 
 
+<div id="x-ads-attribution-setup" />
+
 ## Configuration de l'attribution X Ads
 
 Pour obtenir une description détaillée de l'en-tête de page de configuration du partenaire, cliquez <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner">ici</Anchor>.
@@ -68,11 +72,15 @@ Pour obtenir une description détaillée de l'en-tête de page de configuration 
 
 L'**onglet Intégration** est divisé en différentes sections, comme indiqué ci-dessous. Le <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">partenaire doit être activé</Anchor> lors de sa première visite pour permettre sa configuration.
 
+<div id="ad-account-connected" />
+
 ### Compte publicitaire connecté
 
 Sélectionnez les comptes pour activer l'attribution.
 
 ![Twitter_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+
+<div id="click-through-attribution" />
 
 ### Attribution post clic
 
@@ -82,6 +90,8 @@ Vous pouvez personnaliser cette valeur en heures (de 1 à 23) ou en jours (de 1 
 
 ![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="view-through-attribution-lookback-window" />
+
 ### Fenêtre rétrospective d'attribution post vue
 
 Ce curseur vous permet de définir le **délai maximum entre l'impression et l'installation**. Seules les installations (premiers lancements) qui ont lieu dans cette fenêtre d'attribution, suite à une impression de publicité, sont attribuées à X Ads, à condition qu'il n'y ait pas eu d'autre clic pertinent sur la publicité.
@@ -90,17 +100,23 @@ Vous pouvez personnaliser cette valeur en heures (1 à 23) ou en jours (1 à 7).
 
 ![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
 
+<div id="re-engagement-settings" />
+
 ### Paramètres de réengagement
 
 L'attribution de retargeting de X Ads inclut uniquement les conversions de réengagement.
 
 Activez l'option **Attribution de réengagement** pour démarrer l'attribution des réengagements pour X Ads.
 
+<div id="re-engagement-click-through-lookback-window" />
+
 #### Fenêtre rétrospective de réengagement post clic
 
 Définissez la durée de la **Fenêtre rétrospective de réengagement post clic** (la période maximale après le clic sur une publicité pendant laquelle un utilisateur reciblé peut être attribué à celle-ci). Vous pouvez définir la valeur en heures (jusqu'à 23) ou en jours (1-30).
 
 ![twitter-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+
+<div id="re-engagement-view-through-lookback-window" />
 
 #### Fenêtre rétrospective de réengagement post vue
 
@@ -110,11 +126,15 @@ Définissez la durée de la **Fenêtre rétrospective de réengagement post vue*
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
 
+<div id="re-engagement-window" />
+
 #### Fenêtre de réengagement
 
 Définissez la durée de la **Fenêtre de réengagement** (période au cours de laquelle les événements in-app de l'utilisateur sont attribués à la source média de retargeting). Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur vie :
 
 ![Twitter-reengagement-window.png](https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png)
+
+<div id="in-app-event-postback-settings" />
 
 ### Paramètres de postback d'évènements in-app
 
@@ -146,6 +166,8 @@ Dans cette section, vous pouvez mapper vos événements AppsFlyer avec vos parte
 <Accordion title="Onglet Lien d'attribution">
 
 X Ads n'utilise pas les liens d'attribution à des fins d'attribution.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -186,6 +208,8 @@ Dans cet onglet, vous pouvez sélectionner les autorisations à accorder à X Ad
 
 Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre configuration pour votre application :
 
+<div id="ad-network-permissions" />
+
 ### Autorisations pour le réseau publicitaire
 
 * **Autoriser la configuration de l'intégration** : permet au partenaire de configurer l'onglet d'intégration (à l'exception des postbacks d'événement in-app)
@@ -197,6 +221,8 @@ Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre 
 * **Autoriser l'accès à votre tableau de bord Protect360** : valable uniquement pour les données Protect360 du partenaire, attendu que cette fonctionnalité est activée chez l'annonceur
 
 En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#permissions-tab">l'octroi d'autorisations à un réseau publicitaire.</Anchor>
+
+<div id="agency-permissions" />
 
 ### Autorisations pour l'agence
 

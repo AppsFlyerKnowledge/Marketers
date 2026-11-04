@@ -26,13 +26,19 @@ x-zendesk:
 ---
 > **En bref :** dans certains rapports de données brutes, les champs sont restreints pour des raisons de confidentialité. Dans d'autres cas, les partenaires exigent que la source média soit retirée lorsqu'ils transmettent les données à des plateformes tierces. Cet article vous détaille ces restrictions et leurs effets.
 
+<div id="raw-data-restriction" />
+
 ## Restriction des données brutes
 
 AppsFlyer limite la présence de certains champs dans les rapports de données brutes afin de respecter la vie privée des utilisateurs. Cette action se conforme aux paramètres <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">AAP</Anchor> des annonceurs, ainsi qu'aux politiques de partage des données des réseaux publicitaires qui fournissent les données. Les restrictions diffèrent selon le type de rapport et leur cadre d'application.Les restrictions concernent les données brutes émises par des <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview#reporting-tools-characteristics-and-features">outils de diffusion des données brutes.</Anchor>
 
+<div id="media-source-restrictions" />
+
 ### Restrictions des sources média
 
 Le tableau suivant répertorie les restrictions pour chaque source média.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -50,6 +56,8 @@ Le tableau suivant répertorie les restrictions pour chaque source média.
 | <span id="snapchat"></span>Snapchat | <ul><li>Depuis le 1er mars 2023, les désinstallations de Snapchat ne sont pas incluses dans les rapports de données brutes.</li><li>Depuis le 13 septembre 2023, l'attribution post-vue est soumise à limitation. Les champs suivants **sont renseignés** dans les outils de transmission des données brutes :<ul><li>Source média (snapchat\_int)</li><li>Canal</li><li>Type de touch attribué (impression)</li><li>Date de touch attribué (date uniquement - « jj/mm/aaaa »)</li><li>La campagne est marquée comme « *restreinte* »</li></ul></li></ul> |
 | <span id="tiktok-for-business"></span>TikTok pour les entreprises | <ul><li>Entre le 28 juillet 2021 et le 23 octobre 2021, la consultation des données d'attribution post-vue est restreinte.</li><li>Depuis le 23 octobre 2021, l'attribution post-vue est soumise à limitation. Les champs suivants **sont renseignés** dans les outils de transmission des données brutes :<ul><li>Source média (bytedanceglobal\_int et tiktokglobal\_int)</li><li>Canal</li><li>Type de touch attribué (impression)</li><li>Date de touch attribué (date uniquement - « jj/mm/aaaa »)</li><li>La campagne est marquée comme « *restreinte* »</li></ul></li></ul> |
 | <span id="twitter"></span>Twitter | Dans certains cas, Twitter refuse la mise à disposition des données brutes sur la plateforme AppsFlyer. Lorsque cela se produit, les événements n'apparaissent pas dans les rapports de données brutes. |
+
+<div id="raw-data-context" />
 
 ### Contexte des données brutes
 
@@ -184,6 +192,8 @@ Les événements restreints, tels que détaillés dans le [tableau ci-dessus](/
 
 </Accordion>
 
+<div id="how-does-the-restricted-media-source-impact-postbacks-sent-to-partners" />
+
 <div id="what-is-the-impact-on-postbacks-to-partners-when-the-media-source-is-restricted" />
 
 <Accordion title="En quoi une source média restreinte modifie-t-elle les postbacks envoyés aux partenaires ?">
@@ -215,6 +225,8 @@ Les postbacks destinés aux réseaux publicitaires attribués listés dans le [
 Les données des *assistances* sont considérées comme des données d'attribution et ne sont donc pas disponibles.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

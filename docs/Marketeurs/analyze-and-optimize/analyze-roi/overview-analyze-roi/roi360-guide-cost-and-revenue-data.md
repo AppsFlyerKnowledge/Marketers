@@ -29,11 +29,15 @@ x-zendesk:
 
 ![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
 
+<div id="overview" />
+
 ## Présentation
 
 ROI360 est une suite d'outils de reporting des coûts et revenus qui qui vous permet d'obtenir rapidement des données d'une grande précision.
 
 En comparant les informations sur les coûts et les revenus, vous pouvez tout connaître de votre retour sur investissement publicitaire (ROAS), et votre retour sur investissement (ROI).
+
+<div id="cost-tools" />
 
 ### Outils de coûts
 
@@ -42,6 +46,8 @@ Anciennement connus sous le nom de Xpend, les outils de coûts ROI360 permettent
 <table><thead><tr><th>Outil</th><th>Description</th></tr></thead><tbody><tr><td><a href="./roi360-cost-aggregation-overview" target="_blank">Coût attribué</a></td><td><p><span>Données sur les coûts liés à l'attribution, aux clics et aux impressions au niveau le plus précis possible.</span></p><p><span>Inclut l'accès à plus de 80 intégrations d'API qui facilite votre connexion aux réseaux publicitaires mondiaux et locaux.</span></p></td></tr><tr><td><a href="./import-cost-data" target="_blank">Ingestion des fichiers</a></td><td><p><span>Ingestion des dépenses publicitaires pour enregistrer les données de coûts qui n'ont pas été transmises par l'API.</span></p></td></tr><tr><td><a href="./incorporate-agency-fees-into-campaign-costs" target="_blank">Frais d'agence</a></td><td><p><span>Les frais d'agence sont inclus dans votre coût.</span></p></td></tr><tr><td><a href="./set-up-and-use-roi360-cost-etl-reports" target="_blank">ETL des coûts\*</a></td><td><span>Fournit des données sur les coûts des campagnes, celles-ci sont actualisées 4 fois par jour, transmises à votre compartiment AWS S3 ou GCS, et sont prêtes à être importées dans les systèmes BI des annonceurs.</span></td></tr><tr><td colspan="2"><span>\* Disponible avec le pack avancé ROI360</span></td></tr></tbody></table>
 
 **Remarque** : vous pouvez également agréger les <Anchor target="_blank" href="/marketers/fr/docs/view-aggregated-cost-data-for-attribution-links">données de coûts par clic</Anchor> sans passer par ROI360. Toutefois, cette méthode s'applique au modèle de coût CPI, mais pas aux autres modèles de type CPA, CPC et CPM.
+
+<div id="revenue-tools" />
 
 ### Outils de revenus
 

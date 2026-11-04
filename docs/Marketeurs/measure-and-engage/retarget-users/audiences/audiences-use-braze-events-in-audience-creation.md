@@ -25,10 +25,14 @@ x-zendesk:
 
 En établissant une connexion entrante entre votre compte Braze et AppsFlyer Audiences, vous intégrez les données des événements d'engagement des messages Braze dans Audiences. Vous pouvez alors utiliser ces données dans les <Anchor target="_blank" href="/marketers/fr/docs/audiences-guide#all-about-rulesets">ensembles de règles</Anchor> pour définir vos audiences.
 
+<div id="important" />
+
 > 🚧 **Conditions préalables**
 >
 > * Les SDK de Braze et AppsFlyer doivent être intégrés dans votre application.
 > * Vous devez être abonné à la fonctionnalité **Currents** dans Braze.
+
+<div id="set-up-the-braze-incoming-connection" />
 
 ## Configurer la connexion entrante de Braze
 
@@ -46,6 +50,8 @@ Pour créer une connexion entrante depuis Braze, le SDK AppsFlyer de vos applica
 
 * Le paramètre ID externe de Braze
 * Le champ CUID
+
+<div id="using-a-braze-external-id-parameter" />
 
 #### **Utilisation d’un paramètre ID externe Braze**
 
@@ -74,6 +80,8 @@ partnerInfo:brazeInfo];
 
 </Tab>
 </Tabs>
+
+<div id="using-the-cuid-field" />
 
 #### **Utilisation du champ CUID**
 
@@ -131,7 +139,11 @@ Dans ce cas, vous pouvez simplement sélectionner l'option **CUID** comme param�
 9. Dans la section Comportement du client et événements de l'utilisateur, laissez l'option **Suivre le comportement du client et événements utilisateur** désactivée.
 10. Cliquez sur le bouton **Lancer le flux** pour enregistrer la configuration et commencer à envoyer les événements d'engagement de messages Braze aux audiences.
 
+<div id="supported-events" />
+
 #### événements pris en charge
+
+<div id="note" />
 
 > 📘 **Événements Braze pris en charge**
 >
@@ -151,6 +163,8 @@ Dans ce cas, vous pouvez simplement sélectionner l'option **CUID** comme param�
 > * Envoi de SMS\/MMS
 
 </Accordion>
+
+<div id="using-braze-data-in-audiences" />
 
 ## Utilisation des données Braze dans Audiences
 

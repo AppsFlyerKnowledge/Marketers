@@ -23,9 +23,13 @@ x-zendesk:
 ---
 > **En bref :** AppsFlyer aide les annonceurs à se conformer à la Loi sur les marchés numériques (DMA) et à améliorer la valeur de leurs publicités sur Google. Trouvez des réponses aux questions fréquemment posées sur la conformité avec la DMA et l'optimisation de la valeur des publicités.
 
+<div id="overview" />
+
 ## Présentation
 
 Google met à jour sa <Anchor target="_blank" href="https://www.google.com/about/company/user-consent-policy/?sjid=15416941068016224808-NA">politique de consentement des utilisateurs dans l'UE</Anchor> en préparation de l'application de la <Anchor target="_blank" href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en">Loi sur les marchés numériques</Anchor> (DMA). En tant que <Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">partenaire de</Anchor> Google <Anchor target="_blank" href="https://ads.google.com/lp/appcampaigns/attribution/">Attribution</Anchor>, AppsFlyer s'adapte aux changements de politique tout en permettant aux annonceurs de tirer le meilleur parti de leurs publicités sur Google. La politique actualisée est en vigueur depuis le 6 mars 2024.
+
+<div id="relevant-integrations-and-continued-use-of-google-features" />
 
 ## Intégrations pertinentes et utilisation continue des fonctionnalités de Google
 
@@ -39,6 +43,8 @@ Les intégrations suivantes sont liées à la nouvelle politique de consentement
 * GMP DV360 (`dv360_int`)
 
 Si les utilisateurs finaux de vos applications provenant de ces intégrations se trouvent dans l'Espace économique européen (EEE), veillez à prendre les mesures nécessaires pour respecter les exigences de la nouvelle politique de consentement de Google pour l'UE.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -54,6 +60,8 @@ Les marketeurs doivent obtenir le consentement des utilisateurs finaux dans l'EE
 
 </Accordion>
 
+<div id="updating-the-appsflyer-sdk" />
+
 ## Mise à jour du SDK AppsFlyer
 
 <div id="what-steps-do-i-need-to-take-to-update-the-appsflyer-sdk" />
@@ -66,6 +74,8 @@ Le SDK AppsFlyer (v6.13.1+) peut envoyer les données de consentement nécessair
 * Une fois le SDK mis à jour, <Anchor target="_blank" href="/marketers/fr/docs/additional-sdk-integration-guide#send-consent-for-dma-compliance">voir ici</Anchor> les instructions d'implémentation pour la conformité avec la DMA.
 
 </Accordion>
+
+<div id="sending-consent-data" />
 
 ## Envoi des données de consentement
 
@@ -101,6 +111,8 @@ Les valeurs de consentement de l'utilisateur final sont envoyées à Google pour
 
 </Accordion>
 
+<div id="sending-consent-datafaq" />
+
 ### Envoi des données de consentement - FAQ
 
 <div id="do-i-have-control-over-consent-data-for-nonue-users" />
@@ -108,6 +120,8 @@ Les valeurs de consentement de l'utilisateur final sont envoyées à Google pour
 <Accordion title="Existe-t-il une option permettant de ne pas envoyer les données de consentement à Google ?">
 
 AppsFlyer permet aux annonceurs, lorsqu'ils estiment que les exigences de la DMA ne s'appliquent pas à leurs utilisateurs finaux (par exemple lorsqu'ils ne sont pas ressortissants de l'UE), d'empêcher l'envoi de données de consentement à Google. Pour ce faire, il suffit d'activer une option dans les pages d'intégration concernées.
+
+<div id="important" />
 
 > 🚧 **Attention !**
 >
@@ -170,19 +184,27 @@ Oui. Google exige que les données de consentement soient incluses dans chaque �
 
 </Accordion>
 
+<div id="preparing-for-the-upcoming-changes" />
+
 ## Se préparer aux changements à venir
 
 <div id="how-can-i-prepare-for-the-upcoming-changes" />
 
 <Accordion title="Étapes préparatoires">
 
+<div id="address-user-consent-in-the-european-economic-area-eea" />
+
 #### Traiter le consentement des utilisateurs dans l'Espace économique européen (EEE)
 
 Collaborez avec le conseiller juridique de votre entreprise. Il peut fournir des informations sur les implications des politiques de consentement des utilisateurs européens concernant les données que vous partagez avec des partenaires comme Google. Si nécessaire, mettez en place des invites de confidentialité telles que « Paramètres de confidentialité » ou « Choix de confidentialité » pour recueillir les signaux de consentement des utilisateurs de votre application en ce qui concerne le marketing et la publicité.
 
+<div id="verify-cmp-compliance-and-tcf-2223-support" />
+
 #### Vérifier la conformité de la CMP et le support du TCF 2.2
 
 Assurez-vous que votre plate-forme de gestion du consentement (CMP) prend en charge le TCF 2.2, qui est la version la plus récente du Transparency and Consent Framework (TCF). Votre TCF doit également être bien informé des nouvelles exigences de consentement de Google pour l'UE et peut vous conseiller sur la manière de les soutenir via le TCF.
+
+<div id="implement-the-newest-sdkserver-to-server-s2s-apis" />
 
 #### Mettre en œuvre les dernières versions des API SDK/Serveur-à-Serveur (S2S)
 
@@ -194,11 +216,15 @@ Envisagez les options suivantes pour envoyer les nouveaux champs de consentement
 * **Utilisation des appels de l'API <Anchor target="_blank" href="/marketers/fr/docs/server-to-server-events-api-for-mobile-s2s-mobile?">S2S :</Anchor>**
   * Avant d'envoyer des événements in-app à AppsFlyer, mettez à jour vos appels API pour inclure l'objet `consent_data` pour chaque événement. Voir <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/s2s-events-api3-post">comment procéder</Anchor>.
 
+<div id="transition-from-the-legacy-gmp-integration-doubleclick" />
+
 #### Transition depuis l'ancienne intégration GMP (DoubleClick)
 
 Si vous utilisez encore l'intégration AppsFlyer GMP héritée (doubleclick\_int), prévoyez de terminer la transition vers la version plus récente (dv360\_int) d'ici le premier trimestre 2024. L'intégration de l'ancienne version **n**'est **pas compatible avec le consentement de l'UE** et sera bientôt abandonnée. Plus de détails <Anchor target="_blank" href="/marketers/fr/docs/bulletin-google-marketing-platform-gmp-integration-transition">ici.</Anchor>
 
 </Accordion>
+
+<div id="impact-on-advertising-activityfaq" />
 
 ## Impact sur l'activité publicitaire-FAQ
 
@@ -217,6 +243,8 @@ Les utilisateurs de l'UE qui refusent que leurs données soient utilisées par G
 Cette modification peut avoir une incidence sur le nombre d'utilisateurs de l'EEE apparaissant dans vos audiences et exposés aux campagnes de remarketing de Google. Les utilisateurs basés dans l'EEE devront donner leur accord avant que leurs informations ne soient communiquées à Google. Les personnes qui n'ont pas donné leur accord seront exclues des audiences de Google et ne verront pas vos campagnes. Cela soulève la question de savoir comment obtenir le consentement de vos utilisateurs et quelles peuvent être les répercussions pour votre entreprise et vos efforts publicitaires. <Anchor target="_blank" href="/marketers/fr/docs/audiences-user-identifier-policy#eu-digital-markets-act">En savoir plus sur les changements apportés aux audiences</Anchor>.
 
 </Accordion>
+
+<div id="further-information-and-contact-details" />
 
 ## Informations complémentaires et coordonnées
 

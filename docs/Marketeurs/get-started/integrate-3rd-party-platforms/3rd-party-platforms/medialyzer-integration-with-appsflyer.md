@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En bref :** Medialyzer, un partenaire intégré d'AppsFlyer, développe et propose le logiciel comme service. Cette solution permet aux planificateurs de médias d'optimiser leurs campagnes TV visant les entreprises en mettant à profit les visites et conversions générées par les publicités TV diffusées.
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions#restrictions-des-sources-média">Certaines sources média</Anchor> limitent le partage de données avec des tiers .Par conséquent, les postbacks des événements limités ne seront pas envoyés à ce partenaire, quelle que soit la sélection configurée pour l'envoi de postbacks.
+
+<div id="setting-up-medialyzer" />
 
 ## Configurer Medialyzer
 
@@ -50,13 +54,19 @@ Pour obtenir une description détaillée de l'en-tête de fenêtre de configurat
 
 <Accordion title="Onglet Intégration">
 
+<div id="activate-partner" />
+
 #### Activation du partenaire
 
 Lors de votre première visite, vous devrez cocher l'option **Activer le partenaire** pour configurer l'intégration. L'option doit rester activée tant que vous travaillez avec Medialyzer. En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">l'activation d'un partenaire</Anchor>.
 
+<div id="advanced-privacy" />
+
 #### Protection de la vie privée avancée
 
 Pour les apps iOS, le bouton <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">Activer la confidentialité avancée</Anchor> apparaît. Lorsque cette fonction est activée, elle limite le partage des identifiants des utilisateurs avec le partenaire. Notez que lorsque l'option <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">Confidentialité avancée agrégée</Anchor> est activée dans les paramètres de l'app, l'option **Confidentialité avancée (pour iOS 14.5 et +)** est activée et verrouillée par défaut.
+
+<div id="default-postbacks" />
 
 #### Postbacks par défaut
 
@@ -66,6 +76,8 @@ Par défaut, AppsFlyer envoie un postback à Medialyzer après chaque installati
 * **Toutes les sources média, y compris organiques** : envoie un postback d'installation pour tout événement attribué à un partenaire ou tout événement organique.
 
 ![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+
+<div id="in-app-event-postbacks" />
 
 #### Postback d'évènements in-app
 

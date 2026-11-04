@@ -26,6 +26,8 @@ x-zendesk:
 
 > **En bref :** l'API OneLink vous aide à engager les utilisateurs finaux et à tirer parti des médias propres en générant des liens personnalisés dans les campagnes à grande échelle, par SMS, etc. Nécessite une implémentation côté annonceur et côté développeur.
 
+<div id="about-onelink-api" />
+
 ## API OneLink
 
 L'API OneLink est utilisée pour :
@@ -60,6 +62,8 @@ Vous pouvez contacter votre CSM pour augmenter le nombre de requêtes API autori
 4. Donnez l'ID OneLink et la clé API OneLink au développeur.
 5. Demandez au développeur de suivre les <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink_rest_api">instructions du dev hub</Anchor>.
 
+<div id="dashboard" />
+
 ### Tableau de bord
 
 Le tableau de bord OneLink API s'affiche :
@@ -70,6 +74,8 @@ Le tableau de bord OneLink API s'affiche :
 **Pour afficher le tableau de bord de l'API OneLink** : 
 
 Dans AppsFlyer, allez dans **Expériences et deep Linking** > **API OneLink**.
+
+<div id="traits-and-limitations" />
 
 ### Particularités et limites
 

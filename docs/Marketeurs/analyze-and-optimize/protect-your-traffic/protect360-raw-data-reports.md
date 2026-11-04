@@ -29,6 +29,8 @@ x-zendesk:
 
 > **En bref** : les rapports de données brutes détaillent les installations et événements in-app bloqués par le moteur Protect360, ainsi que par les règles de validation ajoutées manuellement.
 
+<div id="about-protect360-raw-data-reports" />
+
 ## À propos des rapports de données brutes Protect360
 
 Rapports de données brutes :
@@ -45,6 +47,8 @@ Rapports de données brutes :
 <div id="report-types" />
 
 <Accordion title="Types de rapport">
+
+<div id="protect360-raw-data-report-types" />
 
 #### Types de rapports de données brutes Protect 360
 
@@ -72,6 +76,8 @@ Rapports de données brutes :
   * Interface utilisateur du tableau de bord : limitée à une source média pendant un mois civil.
   * API Pull : contient toutes les sources média.  (Restriction : disponible uniquement pour les propriétaires d'app)
 
+<div id="using-post-attribution-reports" />
+
 #### **Utilisation des rapports post-attribution**
 
 * Sélectionnez n'importe quelle combinaison d'installation/IAE et détectez les plages de dates selon vos besoins.
@@ -81,6 +87,8 @@ Rapports de données brutes :
   * Définissez la plage de dates d'installation sur 60 jours à partir de la journée en cours.
   * Définissez la plage de détection detect-from/detect-to jusqu'à la veille du jour en cours.  
     Cela signifie que vous obtiendrez la liste des fraudes post-attribution détectées la veille. Si vous n'avez pas généré de rapport pendant quelques jours, ajustez la plage de dates de détection et extrayez le rapport.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -94,11 +102,15 @@ Rapports de données brutes :
 
 <Accordion title="Disponibilité des données brutes par type d'outil">
 
+<div id="protect360-raw-data-availability-by-tool-type" />
+
 #### Disponibilité des données brutes Protect 360 par type d'outil
 
 <table><thead><tr><th>Rapport</th><th>Actualisation des données</th><th>API pull</th><th>Page Données d'exportation</th><th>Data Locker</th></tr></thead><tbody><tr><td>d'installations</td><td>temps réel</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Événements in-app bloqués </td><td>temps réel</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Clics</td><td>temps réel</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td>Postbacks d'installations bloquées</td><td>temps réel</td><td>-</td><td><span>✓</span></td><td>-</td></tr><tr><td>Installations post-attribution</td><td><p>Tous les jours à 10:00 UTC</p></td><td><p><span>✓</span></p></td><td><span>✓</span></td><td><span>✓\*</span></td></tr><tr><td>Évènements in-app post-attribution</td><td><p>Tous les jours à 10:00 UTC</p></td><td><span>✓</span></td><td><span>✓</span></td><td>-</td></tr></tbody><tfoot><tr><td colspan="5"><p>\* Limitations du rapport via Data Locker :</p><ul><li>Transparence de l'agence non prise en charge. Ce qui signifie que le trafic généré par une agence ne contient pas le nom de la source média qui envoie l'installation. </li><li>Le rapport contient un ensemble de champs unique comparé aux autres rapports Data Locker. Cette liste n'est pas modifiable. </li><li>Les données de retargeting ne sont pas disponibles dans le rapport d'installations, elles apparaissent uniquement dans le rapport d'installations post-attribution. </li></ul></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="getting-raw-data-reports" />
 
 ## Obtenir des rapports de données brutes
 
@@ -138,6 +150,8 @@ Vous devez avoir un jeton d'API Pull. Le jeton s'obtient auprès d'un <Anchor ta
 3. Remplissez les paramètres selon vos besoins. Le tableau qui suit répertorie les paramètres.
 4. Extrayez le rapport.
 
+<div id="pull-api-raw-data-report-parameters" />
+
 #### Paramètres de rapport des données brutes de l'API Pull
 
 | Paramètre | Description | Format | Obligatoire |
@@ -165,11 +179,15 @@ Data Locker inscrit les données brutes dans un compartiment AWS S3.
 
 </Accordion>
 
+<div id="protect360-report-structure" />
+
 ## Structure de rapports Protect360
 
 Les rapports Protect360 ont la même structure globale de champs que les rapports d'acquisition utilisateur.
 
 En plus <Anchor target="_blank" href="/marketers/fr/docs/raw-data-field-dictionary">des champs de rapports des données brutes</Anchor> habituels, les rapports Protect360 incluent les champs de retargeting et de motifs de blocage suivants :
+
+<div id="blocked-reasons" />
 
 ### Motifs de blocage
 
@@ -200,6 +218,8 @@ Au niveau de l'installation, nous identifions suffisamment d'informations au mom
 
 Les tableaux suivants répertorient les différentes raisons qui peuvent bloquer une installation :
 
+<div id="install-level-fake-install-block-sub-reasons" />
+
 #### Niveau installation : causes de blocage des installations frauduleuses
 
 | Motif bloqué | Sous-motif bloqué | Description |
@@ -210,6 +230,8 @@ Les tableaux suivants répertorient les différentes raisons qui peuvent bloquer
 | install\_store\_validation | - | Échec de <Anchor target="_blank" href="/marketers/fr/docs/implement-apple-app-store-itunes-install-validation">validation du reçu d'installation</Anchor> de l'App Store Apple |
 | validation\_bots | invalid\_device\_parameters | Anomalie au niveau du contenu de certains champs de l'appareil - défini par le client |
 | validation\_bots | validation\_rules | Règles avec lesquelles les installations sont bloquées en fonction d'une règle de validation définie manuellement |
+
+<div id="install-level-attribution-hijacking-block-sub-reasons" />
 
 #### Niveau installation : causes de blocage des installations piratées
 
@@ -235,6 +257,8 @@ Lorsqu'un modèle de fraude est détecté, la source frauduleuse est classée da
 
 Les tableaux suivants répertorient les différentes raisons qui peuvent entraîner le blocage au niveau regroupement :
 
+<div id="cluster-level-fake-install-block-reasons" />
+
 #### Niveau regroupement : causes de blocage des installations frauduleuses
 
 | Motif bloqué | Sous-motif bloqué | Description |
@@ -243,6 +267,8 @@ Les tableaux suivants répertorient les différentes raisons qui peuvent entraî
 | bots, site\_blacklist | device\_emulators | Installations générées à grande échelle par des scripts automatiques s'exécutant dans un environnement virtuel. |
 | site\_blacklist | device\_farms | Taux élevés de (nouveaux) appareils inconnus |
 | behavioral\_anomalies | behavioral\_anomalies | Comportement in-app suspect par rapport au modèle de comportement utilisateur habituel de l'app |
+
+<div id="cluster-level-attribution-hijacking-block-reasons" />
 
 #### Niveau regroupement : causes de blocage des attributions piratées
 
@@ -265,6 +291,8 @@ Les événements in-app peuvent être bloqués pour les raisons suivantes :
 * Notre algorithme a détecté la fraude.
 
 Le tableaux suivant répertorient les différentes causes qui peuvent créer un blocage au niveau in-app :
+
+<div id="in-app-level-block-reasons" />
 
 #### Causes de blocage au niveau in-app
 
@@ -289,6 +317,8 @@ Les données brutes Protect360 incluent les installations et sessions frauduleus
 Les données brutes de retargeting Protect360 sont proposées pour les blocages en temps réel et la fraude identifiée en post attribution comme suit :
 
 <table><thead><tr><th>Rapport </th><th>Données d'exportation</th><th>API pull</th><th>Data Locker</th></tr></thead><tbody><tr><td>d'installations</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Installations post-attribution</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Données de réengagement non disponibles</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="hijacked-installs-attribution-correction" />
 
 ### Correction de l'attribution des installations détournées
 

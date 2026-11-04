@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En bref :** Salesforce Marketing Cloud MobilePush, partenaire intégré d'AppsFlyer, est une plateforme d'engagement des utilisateurs destinée aux équipes de marketing, de croissance et d'engagement.
 
+<div id="overview" />
+
 ## Vue d'ensemble
 
 Salesforce Marketing Cloud MobilePush vous permet de créer et d'envoyer des notifications Push ciblées basées sur des données utilisateurs multicanaux. Cela incite les utilisateurs à utiliser l'application, pour un ROI plus important. Avec MobilePush, découvrez comment les utilisateurs naviguent dans votre application, les produits qu'ils consultent ou le temps passé sur chaque page. En intégrant MobilePush, vous pourrez :
@@ -30,37 +32,55 @@ Salesforce Marketing Cloud MobilePush vous permet de créer et d'envoyer des not
 * Créer facilement des campagnes multicanaux
 * Segmenter et programmer les notifications
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions#restrictions-des-sources-média">Certaines sources média</Anchor> limitent le partage de données avec des tiers .Par conséquent, les postbacks pour les événements limités ne seront pas envoyés à ce partenaire, quelle que soit la sélection configurée pour l'envoi de postbacks.
+
+<div id="setting-up-salesforce-marketing-cloud-mobilepush" />
 
 ## Configurer Salesforce Marketing Cloud MobilePush
 
 La majeure partie de la configuration s'effectue dans Salesforce (étapes 1 à 4). L'étape 5 est réalisée dans AppsFlyer.
 
+<div id="step-1-set-up-mobilepush-sdk" />
+
 ### Étape 1 : configurer le SDK MobilePush
 
 * <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_get_started.htm&type=5">Installer le SDK MobilePush</Anchor>
+
+<div id="step-2-provision-for-push-notifications" />
 
 ### Étape 2 : prévoir les notifications push.
 
 * <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-provision.html">Créer un certificat `.p12` .</Anchor>
 
+<div id="step-3-enable-app-push-notifications" />
+
 ### Étape 3 : activer les notifications Push de l'application
 
 * <Anchor target="_blank" href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/get-started-configureforpush.html">Installer les notifications Push.</Anchor>
+
+<div id="step-4-set-up-app-push-notifications" />
 
 ### Étape 4 : configurer les notifications Push de l'application
 
 * <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_outbound_message.htm&type=5">Créer et envoyer des notifications Push aux appareils mobile.</Anchor>
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Pour créer une notification Push sur Salesforce Marketing Cloud, vous devez ajouter une <Anchor target="_blank" href="https://help.salesforce.com/s/articleView?id=sf.mc_mp_custom_keys.htm&type=5">clé personnalisée</Anchor> pour permettre à AppsFlyer d'attribuer correctement le PID et les attributs de la campagne. Utilisez `AF_xxxxxxxxx` comme clé personnalisée.
 
+<div id="step-5-set-up-push-notifications-in-appsflyer" />
+
 ### Étape 5 : configurer les notifications Push dans AppsFlyer
 
 * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/push-notifications-ios#addpushnotificationdeeplinkpath-recommended">Configurer le SDK iOS à l'aide de OneLink (étape 3 de ce lien).</Anchor>
+
+<div id="note-1" />
 
 > 📘 **Remarque**
 >

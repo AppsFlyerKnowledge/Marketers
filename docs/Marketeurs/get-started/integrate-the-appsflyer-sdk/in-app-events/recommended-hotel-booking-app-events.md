@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces suggestions d'événements in-app pour votre app de réservation d'hôtels .
 
+<div id="-hotel-booking" />
+
 ## <Image alt="InApp_Events_hotel.png" src="https://files.readme.io/ffc23cc65b6b6cfe99c12e988cca3df6667058b7e3a672db3639472a17602546-20659548553745.png" width="100px" /> Réservation d'hôtel
 
 Les apps de réservation d'hôtel permettent aux voyageurs de réserver facilement des hôtels et d'obtenir les meilleures offres. Nous vous recommandons d'enregistrer les évènements typiques de recherche, d'achat, de réservation de voyage et d'ajout à la liste d'envies.
@@ -33,6 +35,8 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 * Quelles campagnes et sources média amènent les utilisateurs qui réservent le plus et génèrent plus de revenus
 
 Vous pouvez attribuer des préférences telles que la note de l'hôtel, la saison, le pays et le nombre d'enfants pour les utilisateurs provenant de certaines sources média. Cela vous permettra d'optimiser vos campagnes en ciblant ces préférences des utilisateurs.
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -45,9 +49,13 @@ Vous pouvez attribuer des préférences telles que la note de l'hôtel, la saiso
 
 [![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante fournit une liste des structures d'événements typiques du secteur de la réservation d'hôtels. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -113,6 +121,8 @@ AppsFlyer.sendEvent ("af_complete_registration", CompletedRegistrationEvent);
 
 </Accordion>
 
+<div id="login-af_login" />
+
 <Accordion title="Connexion (af_login)">
 
 **Objectif**
@@ -167,6 +177,8 @@ AppsFlyer.sendEvent ("af_login", null);
 </Tabs>
 
 </Accordion>
+
+<div id="search-af_search" />
 
 <Accordion title="Recherche (af_search)">
 
@@ -256,6 +268,8 @@ AppsFlyer.sendEvent("af_add_to_wish_list", Search);
 </Tabs>
 
 </Accordion>
+
+<div id="content-view-af_content_view" />
 
 <Accordion title="Affichage du contenu (af_content_view)">
 
@@ -385,6 +399,8 @@ AppsFlyer.sendEvent("af_content_view", ContentView);
 </Tabs>
 
 </Accordion>
+
+<div id="add-to-wishlist-af_add_to_wishlist" />
 
 <Accordion title="Ajouter à la liste de souhaits (af_add_to_wishlist)">
 
@@ -523,6 +539,8 @@ AppsFlyer.sendEvent("af_add_to_wish_list", AddToWishList);
 </Tabs>
 
 </Accordion>
+
+<div id="initiated-checkout-af_initiated_checkout" />
 
 <Accordion title="Paiement initié (af_initiated_checkout)">
 
@@ -665,6 +683,8 @@ AppsFlyer.sendEvent("af_initiated_chekcout", InitiatedCheckout);
 
 </Accordion>
 
+<div id="purchase-af_purchase" />
+
 <Accordion title="Achat (af_purchase)">
 
 **Objectif**
@@ -780,6 +800,8 @@ AppsFlyer.sendEvent ("af_purchase", PurchaseEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="travel-booking-af_travel_booking" />
 
 <Accordion title="Réservation de voyage (travel_booking)">
 
@@ -935,9 +957,13 @@ AppsFlyer.sendEvent("af_travel_booking", TravelBookingEvent);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une liste de structures d'événements qui comprennent des noms d'événements personnalisés et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="first-purchase-first_purchase" />
 
 <Accordion title="Premier achat (first_purchase)">
 

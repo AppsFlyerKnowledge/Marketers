@@ -24,9 +24,13 @@ x-zendesk:
 
 <Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
+<div id="mobile-app-promotion-on-x-ads" />
+
 ## Promotion d'apps mobile sur X Ads
 
 X Ads Mobile App Promotion est une méthode permettant de promouvoir les apps sur X Ads. Elle permet aux annonceurs de promouvoir leurs applications mobile avec un excellent design de carte d'app qui booste les installations, les engagements des applications et le deep linking. Les utilisateurs d'app peuvent facilement installer et s'engager dans les applications directement depuis le fil d'actualités de X Ads.
+
+<div id="x-ads-user-privacy" />
 
 ## Confidentialité des utilisateurs sur X Ads
 
@@ -44,6 +48,8 @@ Avec le programme AMM, les annonceurs ont la possibilité de recevoir des donné
 Notez que les données de niveau utilisateur qui ont été reçues avant de rejoindre le programme AMM ne peuvent pas être exportées.
 
 Pour de plus amples informations, contactez votre responsable de compte X Ads.
+
+<div id="x-ads-and-appsflyer-skan-interoperation" />
 
 ## Interaction entre X Ads et AppsFlyer SKAN
 

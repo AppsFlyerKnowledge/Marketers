@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** Comprendre la différence entre les URL courtes et longues de OneLink, et comment créer des URL longues en dehors d'AppsFlyer.
 
+<div id="about-onelink-links" />
+
 ## URL longs de OneLink
 
 Liens personnalisés OneLink :
@@ -42,6 +44,8 @@ Liens personnalisés OneLink :
 
 * Les URL longues sont transparentes, ce qui signifie que tous les paramètres du lien sont visibles par l’audience et peuvent potentiellement être manipulés.
 * Les URL longues risquent de ne pas être adaptés aux navigateurs, aux SMS ou lorsque le nombre de caractères des URL est limité.
+
+<div id="procedures" />
 
 ### Procédures
 

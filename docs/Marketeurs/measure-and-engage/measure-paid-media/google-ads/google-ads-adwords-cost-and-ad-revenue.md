@@ -22,17 +22,23 @@ x-zendesk:
 ---
 > **En bref :** activer les données sur les coûts et les revenus publicitaires Google Ads dans AppsFlyer.
 
+<div id="cost-data-sync-status" />
+
 ## État de synchronisation des données de coût
 
 <Anchor target="_blank" href="/marketers/fr/docs/set-up-roi360-cost-api-to-measure-cost-data#view-cost-api-status">Affichez le statut de votre API de coûts</Anchor> ainsi que la dernière fois où AppsFlyer a pu extraire les données de coûts correspondantes, soit dans le tableau de bord du statut d'intégration des coûts (et des revenus publicitaires), soit dans le tableau de bord du réseau publicitaire individuel.
 
 Google Adwords vous permet de synchroniser plusieurs comptes pour extraire les données de coût. Pour chaque compte synchronisé, AppsFlyer indique l'état de l'intégration de coût ainsi que la dernière fois où AppsFlyer est parvenu à extraire les données de coût correspondantes.
 
+<div id="stopping-google-cost-sync" />
+
 ### Arrêt de Google Cost Sync
 
 **Pour arrêter la synchronisation des coûts Google, supprimez la connexion au compte Google :**
 
 * <Anchor target="_blank" href="/marketers/fr/docs/set-up-roi360-cost-api-to-measure-cost-data#deleting-connected-accounts-in-the-cost-tab">Rendez-vous dans l'onglet Coût, dans la colonne Actions, survolez un compte, cliquez sur Supprimer la connexion.</Anchor> Une fois supprimée, AppsFlyer cesse de recevoir les coûts.Le fait de supprimer la connexion ne supprime pas les données historiques.
+
+<div id="cost-clicks-and-impressions" />
 
 ## Coûts, clics et impressions
 
@@ -64,6 +70,8 @@ En savoir plus sur les <Anchor target="_blank" href="https://support.google.com/
 > Si le compte Google Ads est un sous-compte d'un compte MCC, l'ID en haut à droite est l'ID du compte MCC, et l'ID du sous-compte se trouve dans le coin supérieur gauche.
 >
 > Si le compte n'est pas correct, déconnectez-vous du compte et connectez-vous à nouveau à l'aide de l'adresse e-mail d'un autre compte Google.
+
+<div id="recording-ad-revenue-with-google-ads" />
 
 ## Enregistrement des revenus publicitaires avec Google Ads
 

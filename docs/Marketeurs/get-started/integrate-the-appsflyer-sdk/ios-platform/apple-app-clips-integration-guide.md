@@ -24,6 +24,8 @@ x-zendesk:
 
 ![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
 
+<div id="app-clip-integration" />
+
 ## Intégration des clips d’app
 
 * Les clips d'app permettent aux utilisateurs d'iOS 14 d'accéder rapidement et facilement à l'expérience d'une app, sans avoir à la télécharger entièrement.
@@ -35,11 +37,15 @@ x-zendesk:
     * Avec iOS 13 ou une version antérieure, ou Android, redirection en fonction de vos paramètres dans OneLink (vers l’app store, etc.).
   * Les utilisateurs qui ont installé l'app sont dirigés vers cette dernière en fonction du lien universel ou du lien d’app configuré dans OneLink.
 
+<div id="considerations" />
+
 ### Attention
 
 * Les clips d'app peuvent avoir une taille maximale de 10 Mo. Le SDK d'AppsFlyer fait ~1,5 Mo.
 * Aucun identifiant publicitaire n'est disponible.
 * Les clips d’app sont supprimés automatiquement par le système d'exploitation après une période d'inactivité de 30 jours.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -54,6 +60,8 @@ x-zendesk:
 > * S'il n’a pas l'app et qu'il dispose d'un appareil équipé d'iOS 13 ou d'une version antérieure, ou d'Android, la page de l'app du café dans l’app store s’ouvre.
 >
 > Mark utilise le tableau de bord et les rapports d'AppsFlyer pour connaître le nombre de clics et d'installations que reçoit le clip d’app - et le nombre d'utilisateurs qui finissent par télécharger l'app complète.
+
+<div id="metrics-and-reporting" />
 
 ## Mesures et rapports
 
@@ -74,9 +82,13 @@ Visualisez les performances du clip d’app dans le <Anchor target="_blank" href
 * Voyez combien de temps il faut aux utilisateurs pour passer du clip d’app à l'installation complète.
 * Utilisez l'indicateur de conversion in-app pour comparer les performances de différentes campagnes d'invocation.
 
+<div id="app-clip-implementation" />
+
 ## Mise en œuvre du clip d’app
 
 La procédure suivante détaille ce que vous et le développeur iOS devez faire pour développer et intégrer des clips d’app.
+
+<div id="scope-of-work" />
 
 #### Mise en application
 
@@ -192,6 +204,8 @@ Envoyez les liens suivants à votre développeur iOS et dites-lui de suivre les 
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Caractéristiques et limitations
 
 <div id="traits-and-limitations::26141033" />
@@ -206,6 +220,8 @@ Envoyez les liens suivants à votre développeur iOS et dites-lui de suivre les 
 | Protect360 | Protect360 ne prend pas en charge les clips d’app. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

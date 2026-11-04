@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** Postbacks SKAdNetwork agrégés par l'intermédiaire de l'API. Les données sont agrégées à l'aide de la date d'arrivée des postbacks.
 
+<div id="skan-aggregated-postback-arrival-date-api" />
+
 ## API de date d'arrivée de postback agrégé SKAN
 
 L'API renvoie les postbacks SKAdNetwork agrégés, en utilisant leur plage de dates d'arrivée.
@@ -38,6 +40,8 @@ L'API renvoie les postbacks SKAdNetwork agrégés, en utilisant leur plage de da
 2. Donnez à votre développeur le jeton API à utiliser dans l'en-tête d'authentification.
 3. Fournissez à vos développeurs les paramètres à saisir lors de l'appel d'API, comme décrit dans la section suivante. Les paramètres déterminent les éléments sur lesquels se concentre le rapport, comment il est organisé et ils fournissent un calendrier de reporting.
 4. Demandez à votre développeur de suivre leur <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/skan-agg-postback-arrival-date-api-get">API de rapport de performance agrégé SKAN</Anchor> dans le hub des développeurs.
+
+<div id="parameters" />
 
 #### Paramètres
 
@@ -112,6 +116,8 @@ Exemples : <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d
 | Accès utilisateur du compte | Le jeton d'autorisation est disponible pour un utilisateur administrateur dans le tableau de bord. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

@@ -26,15 +26,21 @@ x-zendesk:
 ---
 > **En bref :** familiarisez-vous avec l'attribution de la publicité mobile et découvrez comment AppsFlyer aide les marketeurs à préciser leur ciblage, à optimiser leurs dépenses publicitaires et à augmenter leur ROI.
 
+<div id="what-is-app-attribution" />
+
 ## Qu'est-ce que l'attribution d'app ?
 
 L'attribution d'app **détermine les campagnes, partenaires et les canaux à l'origine de vos installations d'app** et de vos événements de post-installation, tels que les achats in-app. Les marketeurs s'appuient sur ces informations pour mesurer et optimiser leurs activités marketing, notamment au cours de leurs campagnes d'acquisition utilisateur ou de retargeting.
+
+<div id="what-can-you-do-with-appsflyer" />
 
 ## Ce que vous pouvez faire avec AppsFlyer.
 
 <Embed title="Bienvenue sur AppsFlyer !" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/471j74dt90" providerUrl="https://fast.wistia.com" />
 
 > **En bref :** comment vous connecter à votre compte pour la première fois et comment passer d'un compte à l'autre.
+
+<div id="first-login" />
 
 ## Première connexion
 
@@ -48,9 +54,13 @@ Il y a plusieurs façons de se connecter à votre compte AppsFlyer :
 * Connexion avec Google : connectez-vous à l'aide de votre compte Google
 * <Anchor target="_blank" href="/marketers/fr/docs/set-up-sso-authentication-with-your-identity-provider-idp">Connexion via SSO</Anchor>
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Si votre admin a configuré une authentification à deux facteurs<Anchor target="_blank" href="/marketers/fr/docs/implementing-and-using-2fa-login">(2FA)</Anchor> pour votre compte, il vous sera demandé de vérifier la connexion à l'aide d'une autre méthode d'authentification.
+
+<div id="switch-between-accounts" />
 
 ### Passer d'un compte à l'autre
 
@@ -63,15 +73,21 @@ Si vous avez plus d'un compte, lorsque vous vous connectez à l'un d'entre eux, 
 
 ![multiple accounts.png](https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png)
 
+<div id="get-started" />
+
 ## Démarrer
 
 Pour commencer à utiliser AppsFlyer, suivez notre <Anchor target="_blank" href="/marketers/fr/docs/getting-started-onboarding-for-marketers">guide pas à pas</Anchor>.
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
 > Vous voulez en savoir plus sur l'écosystème mobile ? Suivez cette <Anchor target="_blank" href="https://elevate.appsflyer.com/lms/index.php?r=course/deeplink&course_id=7767&generated_by=14109&hash=b421539db1c0352890d6f3e82e7fe9a74c0e5cce">brève formation</Anchor> sur le portail d'apprentissage AppsFlyer.
 
 Lecture connexe : <Anchor target="_blank" href="/marketers/fr/docs/convert-your-mobile-web-visitors-to-app-users">Attribution mobile</Anchor> | <Anchor target="_blank" href="/marketers/fr/docs/ctv-pc-and-console-platform-attribution-concepts">Attribution CTV</Anchor>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

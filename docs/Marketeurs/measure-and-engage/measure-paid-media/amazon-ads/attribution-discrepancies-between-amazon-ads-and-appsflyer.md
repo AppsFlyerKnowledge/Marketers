@@ -21,9 +21,13 @@ x-zendesk:
 ---
 > **En bref :** Découvrez les différences entre les modèles d'attribution d'Amazon Ads et d'AppsFlyer.
 
+<div id="overview" />
+
 ## Aperçu
 
 En tant que deux acteurs majeurs de l'acquisition d'utilisateurs mobiles, Amazon Ads et AppsFlyer adoptent des modèles d'attribution distincts. Cela peut provoquer des divergences entre leurs tableaux de bord respectifs. Bien que nous collaborions étroitement avec Amazon Ads pour réduire ces divergences, les annonceurs doivent être conscients des causes potentielles.
+
+<div id="differences-in-attribution-models" />
 
 ## Différences dans les modèles d'attribution
 

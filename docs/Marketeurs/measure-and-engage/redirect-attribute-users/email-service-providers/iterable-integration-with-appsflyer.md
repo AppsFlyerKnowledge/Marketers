@@ -36,6 +36,8 @@ L'un des problèmes des ESP est d'enregistrer les clics tout en conservant la fo
 
 Avec Iterable, qui prend en charge les liens universels en plus de leur domaine d'enregistrement de clics, il est toujours possible d'effectuer du deep linking et de l'enregistrement de clics.
 
+<div id="prerequisites" />
+
 ## Conditions préalables
 
 <Tabs>
@@ -54,7 +56,11 @@ Iterable ne prend pas en charge les liens d’app Android. Toutefois, <Anchor ta
 </Tab>
 </Tabs>
 
+<div id="setting-up-iterable" />
+
 ## Mise en place d'Iterable
+
+<div id="step-1-setting-up-link-branding-in-iterable" />
 
 ### Étape 1 : Mise en place du marquage des liens dans Iterable
 
@@ -62,9 +68,13 @@ Créez un domaine dédié à l'enregistrement des clics et définissez un sous-d
 
 Pour plus d'informations sur la création d'un domaine d'enregistrement de clics avec Iterable, voir <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115002651226-Setting-up-mail-domains">ici.</Anchor>
 
+<div id="step-2-uploading-your-ssl-certificate-to-iterable" />
+
 ### Étape 2 : Téléchargement de votre certificat SSL sur Iterable
 
 Votre domaine d'enregistrement des clics doit inclure le certificat SSL de votre domaine. Le certificat SSL doit être installé dans votre compte Iterable. Les instructions relatives à l'installation de vos certificats SSL sont disponibles <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/115000427446-How-to-Set-up-HTTPS-for-Links-for-Click-Tracking">ici.</Anchor>
+
+<div id="step-2-give-iterable-an-aasa-ios-and-an-asset-links-file-android" />
 
 ### Étape 2 : Fournir à Iterable un fichier AASA (iOS) et un fichier Asset Links (Android).
 
@@ -97,6 +107,8 @@ Lorsque vous configurez OneLink avec des liens d'app, un fichier Asset Links est
 
 </Accordion>
 
+<div id="setting-up-your-app" />
+
 ## Configuration de votre app
 
 Pour configurer vos applications de manière à ce qu'elles prennent en charge les liens d’app et les liens universels, veuillez vous reporter à ce qui suit.
@@ -104,6 +116,8 @@ Pour configurer vos applications de manière à ce qu'elles prennent en charge l
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
 <Accordion title="Étape 1 pour Android : Configurer votre application pour qu'elle prenne en charge les liens d’app">
+
+<div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
 #### Étape 1 : Ajouter le domaine de clic à l'activité dans le manifeste Android
 
@@ -121,6 +135,8 @@ Dans le manifeste Android, ajoutez l'hôte du domaine de clic et son préfixe da
      </intent-filter>
 </activity>
 ```
+
+<div id="step-2-setting-up-the-app-to-resolve-click-domains" />
 
 #### Étape 2 : Configurer l'application pour les domaines de clics
 
@@ -142,6 +158,8 @@ Pour résoudre les domaine de clics :
 <Accordion title="Étape 1 pour iOS : Configurer votre application pour qu'elle prenne en charge les liens universels">
 
 Cette section explique comment configurer votre app pour qu'elle prenne en charge les liens universels.
+
+<div id="step-1-associating-click-domains-in-xcode" />
 
 #### Étape 1 : Associer des domaines de clics dans Xcode
 
@@ -240,6 +258,8 @@ Pour résoudre les domaine de clics :
 
 </Accordion>
 
+<div id="sending-your-first-email" />
+
 ## Envoyer le premier e-mail
 
 1. Créez une URL OneLink sur la page de gestion des liens (ou manuellement).
@@ -259,6 +279,8 @@ Pour résoudre les domaine de clics :
 
    À ce stade, Iterable enveloppe le lien ci-dessus avec le domaine de clic que vous avez défini dans les étapes précédentes. Tout clic sur le domaine de clics redirige vers le lien d'attribution OneLink. Si l'application est installée sur l'appareil de l'utilisateur, le domaine de clics envoie le deep link dans l'app.
 
+<div id="note" />
+
 > 📄 **Exemple**
 >
 > Par souci de lisibilité, les paramètres d'URL ne sont pas encodés dans cet exemple :
@@ -268,6 +290,8 @@ Pour résoudre les domaine de clics :
 > af_dp=testapp://path/to/content&af_web_dp=https://www.example.com/path/to/content&
 > af_ios_url=https://www.example.com/path/to/content&af_android_url=https://www.example.com/path/to/content
 > ```
+
+<div id="testing-your-links" />
 
 ### Tester vos liens
 

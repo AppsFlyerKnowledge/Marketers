@@ -36,6 +36,8 @@ Cette vidéo présente ce que vous devez savoir sur l'intégration du SDK.
 
 <Embed title="Présentation de l'intégration SDK" typeOfEmbed="iframe" url="https://fast.wistia.com/embed/iframe/4iybquc6q3" providerUrl="https://fast.wistia.com" />
 
+<div id="about-the-sdk" />
+
 ## À propos du SDK
 
 Le SDK offre des fonctionnalités d'enregistrement pour les installations d'app et événements. Vous pouvez enregistrer les installations, les sessions et les événements in-app. Les événements in-app peuvent inclure, par exemple, un achat in-app ou un nouveau niveau atteint dans un jeu. Enregistrer ces événements peut vous aider à évaluer le ROI et la qualité des utilisateurs. 
@@ -79,6 +81,8 @@ La documentation supplémentaire comprend les éléments suivants :
 </Tab>
 </Tabs>
 
+<div id="sdk-compatibility" />
+
 ## Compatibilité du SDK
 
 Le SDK AppsFlyer est compatible avec les plateformes suivantes :
@@ -110,13 +114,19 @@ Le SDK prend en charge <Anchor target="_blank" href="/marketers/fr/docs/appsflye
 </Tab>
 </Tabs>
 
+<div id="sdk-integration" />
+
 ## Intégration SDK
 
 L'installation et l'intégration du SDK requièrent la collaboration du responsable produit avec le développeur.  **Avant** d'intégrer le SDK à votre app, passez en revue l'ensemble des tâches liées à l'intégration et choisissez les fonctionnalités que vous voulez voir votre application utiliser.
 
+<div id="sdk-planning-checklist" />
+
 ### Checklist pour préparer le SDK
 
 Pour bien commencer, nous avons créé une <Anchor target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTD4OimHC93iw2AJCcAY45yAc9lOBfJe8PskI_0NFZTnWnrIq1hjPBvCztkbom9acMDDd4d1d5mMFfi/pub?output=xlsx">checklist</Anchor> qui vous guidera tout au long des étapes de préparation. Chaque opération contient des liens qui permettront au marketeur et au développeur de trouver les informations qui le concernent.
+
+<div id="sdk-integration-tasks" />
 
 ### Étapes d'intégration du SDK
 
@@ -139,6 +149,8 @@ Vous pouvez demander à vos développeurs mobile d'implémenter dans le SDK ces 
 | Définissez les <Anchor target="_blank" href="/marketers/fr/docs/additional-sdk-integration-guide#sessions">rapports de session utilisateur</Anchor>. | 30 min |
 | Déterminez quelles méthodes d'attribution seront utilisées pour les <Anchor target="_blank" href="/marketers/fr/docs/additional-sdk-integration-guide#médias-propres">sources média propriétaires</Anchor>. | 1 heure |
 | Faites en sorte que les politiques de <Anchor target="_blank" href="/marketers/fr/docs/additional-sdk-integration-guide#confidentialité-des-utilisateurs">confidentialité des utilisateurs</Anchor> de votre app soient conformes aux réglementations en matière de protection de la vie privée (RGPD, CCPA). | 1 heure |
+
+<div id="note" />
 
 > 📄 **À consulter également**
 >

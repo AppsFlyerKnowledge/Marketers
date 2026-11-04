@@ -29,17 +29,25 @@ x-zendesk:
 ---
 > **En bref :** Protégez votre compte AppsFlyer en définissant une liste d'autorisations API.
 
+<div id="" />
+
 ## [altListe d'autorisations APIalt](https://support.appsflyer.com/hc/article_attachments/4423224122385)
+
+<div id="overview" />
 
 ## Aperçu
 
 Protégez vos données contre tout accès non autorisé en configurant une liste d'autorisations API spécifiant les adresses IP pouvant effectuer des appels API sur votre compte AppsFlyer. Une fois votre liste d'autorisations active, seuls les appels API provenant de ces adresses IP seront autorisés, tous les autres seront refusés.
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
 > * Seuls les administrateurs peuvent accéder et gérer la liste d'autorisations.
 > * L'utilisation de la liste est facultative et désactivée par défaut.
 > * L'activation de la liste d'autorisations s'effectue au niveau du compte et s'applique à toutes les applications du compte.
+
+<div id="set-up-your-api-allowlist" />
 
 ## Configurer votre liste d'autorisations API
 

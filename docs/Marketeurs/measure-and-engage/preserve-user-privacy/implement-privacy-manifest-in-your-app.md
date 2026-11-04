@@ -22,17 +22,25 @@ x-zendesk:
 ---
 > **En bref :** Lors de la WWDC23, Apple a présenté de nouveaux manifestes concernant la confidentialité. Grâce aux manifestes sur la confidentialité, les développeurs d'apps peuvent maintenant fournir des informations plus détaillées sur la manière dont leurs apps gèrent la confidentialité. AppsFlyer a créé un manifeste sur la confidentialité pour le SDK AppsFlyer, dont vous trouverez les éléments ci-dessous.
 
+<div id="background" />
+
 ## Arrière-plan
 
 Grâce aux manifestes sur la confidentialité, un développeur d'app pourra créer un registre avec les catégories de données collectées par son app, ou par des services tiers (comme les SDK tiers utilisés par l'app). Ces éléments aident les développeurs d'apps à communiquer sur les pratiques de leurs apps en termes de protection de la vie privée, ce qui inclut les étiquettes nutritionnelles proposées aux utilisateurs.
 
 Dans de nombreux cas, les développeurs d'apps ne savent pas quelles données les SDK tiers collectent, ni comment ces données sont utilisées par les SDK. Le manifeste sur la confidentialité permet aux SDK tiers de bien transmettre ces informations aux développeurs d'apps, afin qu’ils puissent ensuite à créer des étiquettes nutritionnelles exactes.
 
+<div id="what-are-nutrition-labels" />
+
 ### Qu'est-ce qu’une étiquette nutritionnelle ?
 
 Les étiquettes nutritionnelles expliquent dans un langage simple et précis ce qu’un utilisateur doit attendre d’une app en matière de confidentialité. Les utilisateurs finaux ont accès à plus d’informations sur les données collectées par l'app, et sur la manière dont elles sont utilisées. Pour plus d'informations sur les étiquettes nutritionnelles, cf <Anchor target="_blank" href="/marketers/fr/docs/preparing-for-the-app-store-review-nutrition-labels">cet article</Anchor>.
 
+<div id="what-is-in-the-appsflyer-privacy-manifest" />
+
 ## Que contient le manifeste sur la confidentialité AppsFlyer ?
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -44,6 +52,8 @@ AppsFlyer SDK 6.14.0 inclut le manifeste sur la confidentialité AppsFlyer. Ce q
 * [Les API Required Reason](#les-api-required-reason)
 * [Le suivi des domaines](#suivi-des-domaines)
 
+<div id="data-usage" />
+
 ### L’utilisation des données
 
 Apple demande aux développeurs d'apps et de SDK d'enregistrer la catégorie des données, ainsi que les motifs pour lesquels l'app ou le SDK tiers collecte ces mêmes données.
@@ -51,6 +61,8 @@ Apple demande aux développeurs d'apps et de SDK d'enregistrer la catégorie des
 Les développeurs d'apps peuvent ensuite utiliser Xcode pour créer un rapport de confidentialité, qui vient résumer toutes les infos sur les données collectées.
 
 Voici les types de données collectées par le SDK AppsFlyer, qui sont inclus dans le Manifeste sur la confidentialité :
+
+<div id="note" />
 
 > 📘 **Remarque**
 >
@@ -60,6 +72,8 @@ Voici les types de données collectées par le SDK AppsFlyer, qui sont inclus da
 | --- | --- | --- | --- | --- |
 | ID d'appareil (IDFA, IDFV) | NSPrivacyCollectedDataTypeDeviceID | Oui | Oui | NSPrivacyCollectedDataTypePurposeThirdPartyAdvertising |
 | Interaction avec les produits (lancements) | NSPrivacyCollectedDataTypeProductInteraction | Non | Non | NSPrivacyCollectedDataTypePurposeAnalytics |
+
+<div id="required-reason-apis" />
 
 ### Les API Required Reason
 
@@ -124,6 +138,8 @@ Pour gagner du temps, vous pouvez copier l'extrait de code suivant, qui inclut l
 ```
 
 </Accordion>
+
+<div id="tracking-domains" />
 
 ### Suivi des domaines
 

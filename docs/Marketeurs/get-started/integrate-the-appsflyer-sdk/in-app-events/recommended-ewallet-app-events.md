@@ -33,6 +33,8 @@ En enregistrant ces événements vous pouvez savoir :
 * Pour quels types de services les utilisateurs utilisent souvent le eWallet pour régler les factures
 * Quels sont les marchands les plus populaires
 
+<div id="important" />
+
 > 🚧 **Attention !**
 >
 > * Veuillez lire les <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#configuration-des-événements-in-app">instructions</Anchor> à l'attention des marketeurs avant d’implémenter les événements in-app.
@@ -43,6 +45,8 @@ En enregistrant ces événements vous pouvez savoir :
 > Pour en savoir plus sur l’enregistrement des événements in-app, rendez-vous dans la section <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">Guide des événements in-app</Anchor>.
 
 [![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
+
+<div id="recommended-structures-for-predefined-events" />
 
 ## Structures recommandées pour les événements prédéfinis
 
@@ -109,6 +113,8 @@ Lorsque l’utilisateur consulte un élément ou un contenu de catégorie préci
 | merchant\_name | Nom du marchand | Cineplex |
 
 </Accordion>
+
+<div id="recommended-structures-for-custom-events" />
 
 ## Structures recommandées pour les événements personnalisés
 

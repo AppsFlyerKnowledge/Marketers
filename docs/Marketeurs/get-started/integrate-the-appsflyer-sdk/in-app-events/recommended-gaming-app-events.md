@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** mesurez la qualité de vos utilisateurs tout au long de leur parcours en enregistrant ces événements in-app que nous recommandons pour votre app de gaming.
 
+<div id="-gaming" />
+
 ## <Image alt="InApp_Events_games.png" src="https://files.readme.io/ee2d46ddf11a6a6cacc95399ffd778d6613ecdd905d237cd971073e095cada5b-20659444711953.png" width="100px" />Gaming
 
 Les apps de gaming comprennent les jeux d'arcade, de stratégie, éducatifs et les jeux d'argent. Les principaux événements que nous vous recommandons d'enregistrer sont les achats in-app, le partage sur les réseaux sociaux et les invitations d'amis. Vous pouvez aussi y inclure les événements de type «passage au niveau supérieur» et «tutoriel du jeu complété»
@@ -42,6 +44,8 @@ Ces événements sont également utiles pour les apps de gaming qui tournent sur
 * Xbox
 * Appareils mobiles Windows
 
+<div id="important" />
+
 > 🚧 **Important !**
 >
 > * Veillez à lire les <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview#introduction-setting-up-inapp-events">instructions</Anchor> à l'attention des marketeurs pour implémenter les événements in-app.
@@ -53,9 +57,13 @@ Ces événements sont également utiles pour les apps de gaming qui tournent sur
 
 [![Flowchart_for_recommended_events gaming_app_user_journey](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
 
+<div id="recommended-structures-for-predefined-events" />
+
 ## Structures recommandées pour les événements prédéfinis
 
 La section suivante propose une liste des structures d'événement qui sont le plus souvent utilisées dans le secteur du gaming. Chaque structure donne un nom d'événement prédéfini, ainsi que des suggestions de paramètres d'événement à appliquer. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="login-af_login" />
 
 <Accordion title="Connexion (af_login)">
 
@@ -108,6 +116,8 @@ AppsFlyer.sendEvent ("af_login", null);
 </Tabs>
 
 </Accordion>
+
+<div id="complete-registration-af_complete_registration" />
 
 <Accordion title="Inscription terminée (af_complete_registration)">
 
@@ -172,6 +182,8 @@ AppsFlyer.sendEvent ("af_complete_registration", CompletedRegistrationEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="purchase-af_purchase" />
 
 <Accordion title="Achat (af_purchase)">
 
@@ -248,6 +260,8 @@ purchaseEvent.Add("af_revenue", "199.99"); purchaseEvent.Add("af_currency", "USD
 
 </Accordion>
 
+<div id="level-achieved-af_level_achieved" />
+
 <Accordion title="Niveau atteint (af_level_achieved)">
 
 **Objectif**
@@ -320,6 +334,8 @@ AppsFlyer.sendEvent ("af_level_achieved", LevelAchievedEvent);
 </Tabs>
 
 </Accordion>
+
+<div id="tutorial-completion-af_tutorial_completion" />
 
 <Accordion title="Tutoriel achevé (af_tutorial_completion)">
 
@@ -399,6 +415,8 @@ AppsFlyer.sendEvent ("af_tutorial_completion", TutorialCompletiondEvent);
 
 </Accordion>
 
+<div id="share-af_share" />
+
 <Accordion title="Partage (af_share)">
 
 **Objectif**
@@ -468,6 +486,8 @@ AppsFlyer.sendEvent ("af_share", ShareEvent);
 
 </Accordion>
 
+<div id="invite-af_invite" />
+
 <Accordion title="Invitation (af_invite)">
 
 **Objectif**
@@ -531,9 +551,13 @@ AppsFlyer.sendEvent ("af_invite", InviteEvent);
 
 </Accordion>
 
+<div id="recommended-structures-for-custom-events" />
+
 ## Structures recommandées pour les événements personnalisés
 
 La section suivante fournit une structure d'événement qui comprend un nom d'événement personnalisé et les suggestions de paramètres d'événement à utiliser. Veuillez noter que les événements in-app peuvent inclure tous les paramètres d'événement qui correspondent à vos besoins.
+
+<div id="bonus-claimed-bonus_claimed" />
 
 <Accordion title="Bonus réclamé (bonus_claimed)">
 

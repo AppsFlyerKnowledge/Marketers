@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** pour comprendre ce qui se passe lorsqu'un utilisateur équipé d'un appareil iOS clique sur un lien personnalisé OneLink et que Universal Links ne parvient pas à ouvrir l'application.
 
+<div id="about-uri-fallback-for-ios" />
+
 ## À propos du schéma d'URI de secours pour iOS
 
 * La meilleure façon d'ouvrir une app sur les appareils iOS est d'utiliser les liens universels. Depuis 2016, d’importantes restrictions du système d'exploitation ont réduit l'efficacité des schémas d'URI comme solution de secours lorsqu’un lien universel iOS échoue à ouvrir une app. Ces limitations ne sont pas liées à AppsFlyer et impactent également tout autre lien avec un schéma d’URI que vous pourriez utiliser pour ouvrir l'app.
@@ -34,9 +36,13 @@ x-zendesk:
 * Les schémas d'URI sont assez imprévisibles et ne sont donc pas pris en charge par défaut. Les utilisateurs qui cliquent sur le lien sont susceptibles d'être redirigés vers l'App Store (ou vers l'URL définie dans le paramètre si il existe`af_ios_url`).
 * Pour plus de détails, voir les scénarios et cas d'utilisation qui suivent.
 
+<div id="scenarios-flowchart" />
+
 ### Les scénarios
 
 ![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://files.readme.io/4814c80b9622fd33adf32ea649c14e5d9516958cbedb4f1e5dc1a0dcff6682a3-4425164762257.png)
+
+<div id="use-cases" />
 
 ## Cas d’utilisation
 
@@ -53,6 +59,8 @@ Parfois, les liens universels ne parviennent pas à ouvrir l'application, soit p
 * Naver
 * Blog naver-blog
 * Weibo
+
+<div id="flowchart" />
 
 #### **Scénarios**
 
@@ -97,6 +105,8 @@ Les sections suivantes détaillent le parcours suivi par les utilisateurs lorsqu
   8. Si l'utilisateur clique sur **OK**, il est redirigé vers l'App Store.
   9. Si l'utilisateur clique sur **Annuler**, il reste sur la page d’accueil.
 
+<div id="flowchart-1" />
+
 #### **Scénarios**
 
 ![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
@@ -129,6 +139,8 @@ Les paragraphes suivants décrivent le cheminement des utilisateurs lorsque les 
 
    [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
 5. L'utilisateur clique sur le badge App Store et est redirigé vers l'App Store.
+
+<div id="flowchart-2" />
 
 #### **Scénario**
 

@@ -26,6 +26,8 @@ x-zendesk:
 
 [![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)
 
+<div id="about-the-creative-optimization-overview-dashboard" />
+
 ## À propos du tableau de bord général
 
 Les tableaux de bord d'<Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide">**optimisation créative**</Anchor> vous permettent de mesurer la performance de vos créations en regroupant l'ensemble de vos créations sur tous les canaux média en un même endroit. Analysez leurs performances en fonction de certaines dimensions, sur plusieurs campagnes, canaux et autres, afin d'obtenir des informations importantes avant de planifier, sélectionner et produire vos créations.
@@ -43,9 +45,13 @@ Le tableau de bord vous permet de consulter vos données sous forme de graphique
 * Suivez les performances de vos créations au fil du temps.
 * Autre
 
+<div id="get-started" />
+
 ## Démarrer
 
 Si vous n'avez pas encore configuré l'optimisation créative, vous trouverez des instructions <Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-guide#démarrer">ici</Anchor>.
+
+<div id="charts" />
 
 ## Diagrammes
 
@@ -67,6 +73,8 @@ Utilisez les diagrammes pour lire immédiatement les résultats et les comparer 
 ## Tableau
 
 Utilisez le tableau pour approfondir les détails. Regroupez les données par dimensions, ou personnalisez les paramètres du tableau pour y ajouter des dimensions et des mesures, puis triez et comparez les données pour obtenir les infos dont vous avez besoin.
+
+<div id="zd-table" />
 
 <div id="table" />
 

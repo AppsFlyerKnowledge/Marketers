@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
+<div id="yahoo-japan-search-ads-integration-principles" />
+
 ## Yahoo Japan Search Ads integration principles
 
 AppsFlyer integration with Yahoo Japan Search Ads is relevant only to Android apps. 
@@ -81,6 +83,8 @@ Consider the following mapping table in the context of AppsFlyer in-app events (
 
 When Yahoo Japan Search Ads claims a conversion, they provide us with the media source parameters listed in the table. These parameters populate analytics and raw data reports. The table that follows contains the mapping between Yahoo Japan Search Ads and AppsFlyer parameters.
 
+<div id="yahoo-japan-search-ads-appsflyer-media-source-mapping" />
+
 #### Yahoo Japan Search Ads-AppsFlyer media source mapping
 
 | Yahoo Japan Search Ads | AppsFlyer |
@@ -94,6 +98,8 @@ When Yahoo Japan Search Ads claims a conversion, they provide us with the media 
 | account\_id | network\_account\_id |
 
 </Accordion>
+
+<div id="integration-procedures" />
 
 ## Integration procedures
 
@@ -117,6 +123,8 @@ Complete the sections as follows:
 
 Agencies are able to run campaigns with Yahoo Japan Search Ads on your behalf.
 
+<div id="agency-setup" />
+
 #### Agency setup
 
 | Procedure performed by | Procedure |
@@ -125,6 +133,8 @@ Agencies are able to run campaigns with Yahoo Japan Search Ads on your behalf.
 | Agency | <ol><li>In AppsFlyer, go to **Collaborate** > **Partner Integrations** > **Active Integrations**.</li><li>Select **Yahoo! Search Ads (Yahoo! JAPAN Sponsored Search) - New API.**</li><li>Go to the **Integration tab**.</li><li>Verify that **Activate Partner** is **On.** If this is not the case, the advertiser must complete [Advertiser Yahoo Japan Search Ads integration.](/docs/yahoo-japan-search-ads-campaign-configuration#yahoo-japan-search-ads-integration-tab-sections)</li><li>Verify that the remaining settings, like lookback windows and in-app event mapping, are correct. If necessary, ask the advertiser to make changes.</li><li>Enter your **Yahoo Japan Search Ads customer ID**. The ID is available in the <Anchor target="_blank" href="https://ads-help.yahoo.co.jp/yahooads/search/articledetail?lan=en&aid=36745&o=default#:~:text=How%20to%20check%20Account%20ID">Campaign Management tool</Anchor>. Note that only one customer ID can be connected.</li><li>Click **Save**.</li></ol> |
 
 </Accordion>
+
+<div id="subsidiary-procedures" />
 
 ## Subsidiary procedures
 

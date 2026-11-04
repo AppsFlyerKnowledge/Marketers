@@ -23,6 +23,8 @@ x-zendesk:
 
 ![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
 
+<div id="about-combining-cost-etl-and-cohort-reports" />
+
 ## A propos de l’association de l'ETL des coûts et des rapports de cohorte
 
 Les rapports ETL des coûts et les rapports de cohorte via Data Locker (standard et agrégés avancés) ont chacun leur spécificité. Par exemple, les rapports ETL des coûts comprennent des données sur les impressions, les clics et les coûts, tandis que les rapports de cohortes offrent des données détaillées sur l'attribution, les événements in-app et les revenus.
@@ -34,6 +36,8 @@ En les associant :
 * Vous obtenez une vue d’ensemble de vos performances marketing, avec la meilleure actualisation, fiabilité et précision possible.
 * Pouvez comparer votre BI interne aux données affichées dans les tableaux de bord AppsFlyer.
 * Vous pouvez calculer des indicateurs importants, comme les dépenses publicitaires (ROAS) ou le coût par action (CPA).
+
+<div id="queries-to-combine-reports" />
 
 ## Demandes à effectuer pour associer les rapports
 
@@ -57,6 +61,8 @@ Les sections suivantes indiquent les actions et éléments nécessaires lorsque 
   * Il existe des différences au niveau de l’actualisation des rapports. Par exemple, l'ETL des coûts est mis à jour jusqu'à quatre fois par jour, tandis que les rapports de cohorte agrégés avancés sont mis à jour plusieurs fois par jour.
   * Les rapports de cohorte agrégés avancés incluent les utilisateurs convertis au cours des 1 095 derniers jours. S'ils ont été convertis avant, ils ne sont pas pris en compte.
   * Les rapports ETL des coûts utilisent comme fuseau horaire celui des données telles que stockées par AppsFlyer. Les rapports de cohorte agrégés avancés incluent de multiples versions des rapports selon l’UTC et le fuseau horaire. **Recommandation :** associez les rapports d'ETL des coûts et les différentes versions des rapports de cohorte par fuseau horaire.
+
+<div id="query" />
 
 #### Requête
 
@@ -161,6 +167,8 @@ GROUP BY ALL;
   * Il existe des différences au niveau de l’actualisation des rapports. Par exemple, l'ETL des coûts est mis à jour jusqu'à 4 fois par jour, tandis que les rapports de cohorte via Data Locker sont mis à jour une fois par jour.
   * Les rapports ETL des coûts utilisent comme fuseau horaire celui des données telles que stockées par AppsFlyer. Les rapports de cohorte via Data Locker utilisent l'UTC.
 
+<div id="query-1" />
+
 #### Requête
 
 ```sql
@@ -246,6 +254,8 @@ GROUP BY ALL;
 ```
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

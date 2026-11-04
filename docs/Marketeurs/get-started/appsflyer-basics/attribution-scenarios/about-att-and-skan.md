@@ -28,6 +28,8 @@ x-zendesk:
 
 ![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
 
+<div id="attribution-measurement-in-an-att-environment" />
+
 ## Mesure de l’attribution dans un environnement ATT
 
 AppsFlyer vous fournit plusieurs méthodes d'attribution vous offrant une gamme complète de solutions d'attribution. L’exigence de consentement [ATT](/docs/about-att-and-skan#att-principles) impacte l’attribution dans le contexte des campagnes payantes d’application à application. Les annonceurs doivent donc utiliser une combinaison de solutions d’attribution et de reporting. 
@@ -109,7 +111,11 @@ Dans iOS 14, une installation peut être attribuée à la fois aux tableaux de b
 
 </Accordion>
 
+<div id="ios-attribution-and-privacy-important-knowledge" />
+
 ## Connaissances importantes sur iOS 14
+
+<div id="ios-attribution-skan-and-privacy-articles-and-links" />
 
 #### Articles et liens iOS 14 et SKAN
 
@@ -131,6 +137,8 @@ Dans iOS 14, une installation peut être attribuée à la fois aux tableaux de b
 
 <Accordion title="Impact d’iOS 14 sur l’attribution et la mesure">
 
+<div id="metrics" />
+
 #### **Métriques**
 
 Considérez qu’en raison de l’ATT, les mesures relatives aux utilisateurs non consentants de l’ATT peuvent être affectées comme suit :
@@ -149,6 +157,8 @@ Le deep linking différé utilisant <Anchor target="_blank" href="https://dev.ap
 Nous vous recommandons d’utiliser <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unified-deep-linking-udl-1">le deep linking unifié (DLU).</Anchor> La DLU est conforme aux normes de confidentialité iOS 14.5+ et ne renvoie que les paramètres pertinents pour le deep linking et le deep linking différé : `deep_link_value` et `deep_link_sub1`. Les paramètres d’attribution tels que `media_source`, `campaign`et `af_sub1-5` renvoient null et ne peuvent pas être utilisés à des fins de deep linking. <Anchor target="_blank" href="https://content.appsflyer.com/ios-14-hub/deep-linking-deferred-deep-linking/">En savoir plus</Anchor>
 
 </Accordion>
+
+<div id="faqios-attribution-and-att" />
 
 ## FAQ – iOS 14+
 
@@ -230,6 +240,8 @@ Cette divergence est due au fait que les rapports de Data Locker sont consultés
 Exemple : Dans le rapport du 12 juin, il affiche 100 installations de Google qui ont eu lieu le 11 juin. Dans le rapport du 24 juin, il est indiqué que 100 installations DE PLUS ont eu lieu le 11 juin. Vous devrez examiner tous les rapports des 13 derniers jours (du 12 au 24 juin) et les agréger en fonction de l’heure d’installation ou de l’horodatage du réseau publicitaire pour obtenir une lecture précise des 200 installations totales qui ont eu lieu le 11 juin.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

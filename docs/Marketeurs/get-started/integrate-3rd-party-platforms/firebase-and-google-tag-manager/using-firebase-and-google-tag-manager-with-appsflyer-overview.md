@@ -36,6 +36,8 @@ Les événements envoyés via GTM sont calqués sur les événements in-app d'Ap
 
 Suivez les instructions de ce guide pour envoyer des événements. 
 
+<div id="considerations" />
+
 ### Attention
 
 * **Source de l'événement dans les données brutes :** les événements générés par GTM ont leur source définie sur S2S dans les rapports de données brutes. Cela peut entraîner une certaine confusion, car les événements sont rapportés par le SDK.
@@ -51,6 +53,8 @@ Suivez les instructions de ce guide pour envoyer des événements. 
 >   * Le paramètre `att` est requis lors de l'envoi de postbacks d'événements in-app aux SRN.
 >   * Les paramètres `att` et `os` sont nécessaires lors de l'envoi d'un postback d'événement in-app à Meta Ads.
 
+<div id="prerequisites" />
+
 ### Conditions préalables
 
 Avant de commencer à envoyer des événements à AppsFlyer via GTM, vous devez implémenter le SDK GTM dans votre application. Conditions :
@@ -60,6 +64,8 @@ Avant de commencer à envoyer des événements à AppsFlyer via GTM, vous devez 
 3. <Anchor target="_blank" href="/marketers/fr/docs/integrate-the-appsflyer-sdk">Intégrez le SDK AppsFlyer</Anchor> si vous ne l'avez pas encore fait.
 
 Une fois que tout est en place, passez à la <Anchor target="_blank" href="/marketers/fr/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup">mise en place de GTM</Anchor>.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

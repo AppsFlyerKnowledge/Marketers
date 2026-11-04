@@ -29,6 +29,8 @@ x-zendesk:
 
 > **En bref :** L'API de rapports des cohortes donne aux annonceurs un moyen pratique pour obtenir les données de cohorte. L'API permet d'intégrer les données de cohorte dans les BI et les systèmes d'automatisation marketing.
 
+<div id="cohort-api" />
+
 ## API de rapports des cohortes
 
 L'API de rapports des cohortes permet d'obtenir les performances des campagnes de cohorte depuis la plateforme AppsFlyer. Elle fonctionne comme le <Anchor target="_blank" href="/marketers/fr/docs/cohort-and-retention-dashboard">tableau de bord des cohortes</Anchor>.
@@ -108,6 +110,8 @@ Utilisez les paramètres de regroupement suivants pour inclure des colonnes supp
 | Paramètre | Valeurs | Paramètre obligatoire |
 | --- | --- | --- |
 | KPIs | Sélectionnez **un** KPI parmi les KPI disponibles. À l'avenir, nous prévoyons d'autoriser la sélection de plusieurs KPI.<ul><li>Pour chaque KPI demandé, toutes les fonctionnalités sont renvoyées.</li><li>Format : ensemble de chaînes</li><li>Example A: `"kpis": ["sessions"]`</li><li>Exemple B : `"kpis": ["event_name"]`</li></ul> | Oui |
+
+<div id="formatting-kpi-functions" />
 
 ### Présentation des fonctionnalités du KPI
 
@@ -272,6 +276,8 @@ Utiliser les données disponibles via <Anchor target="_blank" href="/marketers/f
 
 </Accordion>
 
+<div id="additional-information" />
+
 ## Informations supplémentaires
 
 <div id="response-codes-and-troubleshooting" />
@@ -324,6 +330,8 @@ Si la période couverte par votre rapport va du 1er au 11 janvier, les utilisate
 
 * La valeur de la période peut être une ou plusieurs des nombres suivants compris entre 0 et 180. Par exemple 0, 1, 2, 30, 180.
 * Si aucune période n'est spécifiée, les valeurs par défaut 0, 1, 2, etc jusqu'à 30, 60, 90 et 180 seront renvoyées.
+
+<div id="example-period-filter" />
 
 > 📄 **Exemple de filtre de période**
 >

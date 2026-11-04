@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** Utilisez une page de destination multiplateforme exécutant le script intelligent AppsFlyer pour réaliser une attribution Web vers application. Cela permet de convertir les utilisateurs voyant une publicité web de n'importe quelle source média en utilisateurs d'applications sur CTV, PC, console ou plateformes mobiles.
 
+<div id="overview" />
+
 ## Aperçu
 
 Avec une page de destination multiplateforme utilisant le script intelligent AppsFlyer, vous pouvez effectuer une attribution Web vers application. Cela signifie que vous pouvez attribuer des installations sur n'importe quelle plateforme aux publicités affichées sur le web.
@@ -33,7 +35,11 @@ Le script intelligent d'une page de destination multiplateforme utilise le lien 
 * Créer un lien OneLink multiplateforme qui envoie une impression à AppsFlyer.
 * Créer des liens d'attribution directe pour chaque application/plateforme.
 
+<div id="setup" />
+
 ## Configuration
+
+<div id="scope-of-work" />
 
 #### PORTÉE DES TRAVAUX
 

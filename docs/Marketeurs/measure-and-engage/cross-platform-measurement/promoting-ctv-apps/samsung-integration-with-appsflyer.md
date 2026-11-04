@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** Intégrez votre application Samsung Connected TV (CTV) à AppsFlyer pour recevoir des données d’attribution et d’événement pour vos campagnes sur Samsung.
 
+<div id="about-samsung-ctv-attribution" />
+
 ## À propos de l’attribution CTV de Samsung
 
 Le système d’exploitation Tizen de Samsung pour le streaming fonctionne sur tous les téléviseurs Samsung.
@@ -35,9 +37,13 @@ L’intégration de l’API Samsung prend en charge :
 * Les Smart TV Samsung.
 * L’attribution CTV-to-CTV et enregistrement d’événements. Signification, attribution et enregistrement sur l’appareil Samsung d’un utilisateur.
 
+<div id="samsung-attribution-flow" />
+
 ### Flux d’attribution Samsung
 
 ![CTV_attribution_flow_-_Samsung__1_.png](https://files.readme.io/a1031878e8aced81da5762d06ae0163770cd73b9a7c91224ea7665aa142d2ce8-7215151128209.png)
+
+<div id="integration-procedures" />
 
 ## Procédures d'intégration
 

@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** activez la mesure d'attribution, envoyez des postbacks aux partenaires et activez différentes fonctions d'intégration en configurant la connexion partenaire avec AppsFlyer.
 
+<div id="overview" />
+
 ## Présentation
 
 AppsFlyer s’intègre avec des partenaires, des sources média et des plateformes tierces via API. Cet article contient les instructions pour activer et configurer l'intégration, y compris la génération de liens d'attribution pour les ad networks non-SRN.
@@ -63,6 +65,8 @@ Tous les partenaires, sources média et autres plateformes intégrées à AppsFl
 **Pour rechercher et filtrer tous les partenaires, sources média ou autres plateformes sur le <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations">marketplace</Anchor> :**
 
 * Dans AppsFlyer, allez dans **Configuration** et ouvrez **Marketplace des partenaires**.  Vous pouvez utiliser les différents <Anchor target="_blank" href="/marketers/fr/docs/partner-integrations#filtrer-la-liste-des-partenaires">filtres</Anchor> de recherche.
+
+<div id="invite-new-partners-to-appsflyer" />
 
 #### Inviter de nouveaux partenaires dans AppsFlyer
 
@@ -106,11 +110,15 @@ La page est structurée comme suit :
   * **Annuler les modifications :** annule les dernières modifications sans les enregistrer.
   * **Sauvegarder :** Sauvegarde les paramètres de l'onglet en cours uniquement.
 
+<div id="applicable-settings-tabs-per-partner-type" />
+
 #### Onglets paramètres applicables selon le type de partenaire
 
 <table><thead><tr><th> </th><th colspan="2">Onglet paramètres</th><th> </th></tr><tr><th>Type de partenaire</th><th>Intégration </th><th>Autorisations</th><th>Remarques</th></tr></thead><tbody><tr><td>Source média</td><td>Y</td><td>Y</td><td><p><strong>Des onglets supplémentaires sont disponibles</strong>: coût, revenus publicitaires, lien d'attribution</p><p>Sont inclus : les réseaux publicitaires, les réseaux d'affiliation, les éditeurs directs, la publicité programmatique, les réseaux publicitaires nationaux chinois et les réseaux de retargeting.<br/>Pour les SRN, l'onglet du lien d'attribution est vide.</p></td></tr><tr><td>Agence</td><td>N</td><td>Y</td><td>Agences autonomes qui ne fonctionnent pas comme des réseaux publicitaires </td></tr><tr><td>Plateformes tierces</td><td>Y</td><td>N</td><td>Plateformes d'automatisation des solutions d'analyse ou du marketing</td></tr><tr><td>Partenaire marketing </td><td>Y</td><td>N</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="set-up-a-partner-non-srn" />
 
 ## Configurer un partenaire (non-SRN)
 
@@ -132,6 +140,8 @@ Les intégrations de partenaire varient d'un partenaire à l'autre et peuvent n�
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Veuillez renseigner les sections tel que demandé.
+
+<div id="integration-sections" />
 
 #### Sections concernant l'intégration
 
@@ -261,6 +271,8 @@ Le tableau suivant présente les différentes sections de la page d'intégration
       <td>
         Lorsque l'intégration du partenaire est activée, AppsFlyer envoie au partenaires des postbacks par défaut pour les actions que l'utilisateur initie avant de lancer l'app, comme les installations, installations rejetées et réengagements.
 
+        <div id="01H80XGTBQ4MPGGKSZW0D9GG9H" />
+
         > 📘 **Note**
         >
         > * Les événements rejetés sont les événements d'app qui ont été bloqués par <Anchor target="_blank" href="/marketers/fr/docs/protect360-anti-fraud-guide">Protect360</Anchor>, ou bien qui ont été jugés non conformes à la validation de cible. Dans le cas d'événements rejetés, vérifiez auprès du partenaire qu'il a bien activé l'intégration de l'événement rejeté auprès d'AppsFlyer.
@@ -372,6 +384,8 @@ Générez et enregistrez les liens d'attribution pour l'utilisation des réseaux
 3. Ajoutez des paramètres pour <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters#paramètres-android-spécifiques">Android</Anchor> et <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters#paramètres-spécifiques-à-ios">iOS</Anchor>, tel que nécessaire.
 4. [Facultatif] Sélectionnez des paramètres d'attribution supplémentaires.
 
+<div id="attribution-link-parameters" />
+
 #### Paramètres du lien d'attribution
 
 [![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
@@ -379,6 +393,8 @@ Générez et enregistrez les liens d'attribution pour l'utilisation des réseaux
 En ajoutant des paramètres au lien d'attribution vous pouvez effectuer des analyses beaucoup plus précises. Il est possible de modifier les paramètres déjà définis sur le lien d'attribution en les ajoutant, ainsi que leurs nouvelles valeurs, ici. Lors de l'enregistrement du lien d'attribution, tous les paramètres configurés dans cet onglet sont sauvegardés.
 
 Sélectionnez les paramètres que vous souhaitez ajouter au lien d'attribution.
+
+<div id="attribution-link-parameters-1" />
 
 #### Paramètres du lien d'attribution
 
@@ -391,6 +407,8 @@ Sélectionnez les paramètres que vous souhaitez ajouter au lien d'attribution.
 | Paramètres abonné | Utilisez l'un des 5 paramètres abonné pour insérer des valeurs utiles. Notez que ces paramètres sont analysés et apparaissent dans le rapport de données brutes, ce qui les rend très utiles pour l'agrégation de données ou le filtrage. | af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5 |
 
 Vous pouvez ajouter d'autres paramètres au lien d'attribution en le saisissant dans une nouvelle fenêtre de paramètres. Vous pouvez utiliser tous les <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters">paramètres URL AppsFlyer disponibles.</Anchor> Notez que seuls le schéma d'URI et les paramètres OneLink sont encodés sur le lien d'attribution.
+
+<div id="retargeting-settings" />
 
 #### Paramètres de retargeting
 
@@ -410,6 +428,8 @@ Pour utiliser votre lien pour le retargeting :
 
    * Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur vie.
    * La fenêtre de réengagement est ajoutée au lien dans le paramètre af\_reengagement\_window.
+
+<div id="click-through-attribution" />
 
 #### Attribution post clic
 
@@ -433,6 +453,8 @@ C'est le lien d'attribution qui contient toutes les informations de configuratio
 2. Copiez le lien généré.
 
 Envoyez le lien au partenaire, il sera activé lorsque vos clients potentiels cliqueront sur la publicité correspondante.
+
+<div id="view-through-attribution-lookback-window" />
 
 #### Fenêtre rétrospective d'attribution post vue
 
@@ -473,11 +495,15 @@ Envoyez-le au partenaire afin de l'activer lorsqu'une publicité correspondante 
 >
 > Si un annonceur fait appel à une agence pour gérer ses campagnes, c'est l'agence, et non l'annonceur, qui doit être intégrée aux partenaires concernés. Sinon, si l'annonceur et l'agence s'intègrent à un partenaire en utilisant les mêmes informations d'identification pour la même app, les données de coût sont dupliquées.
 
+<div id="enabling-cost-data-by-api" />
+
 #### Activation des données de coût par API
 
 **Pour activer l'API de coûts :**
 
 * Suivez  <Anchor target="_blank" href="/marketers/fr/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">ces instructions d'intégration</Anchor>.
+
+<div id="cost-data-sync-status" />
 
 #### État de synchronisation des données de coût
 
@@ -491,10 +517,14 @@ Envoyez-le au partenaire afin de l'activer lorsqu'une publicité correspondante 
 
 Si vous avez le rôle d'éditeur en diffusant les publicités dans votre app, l'option revenu publicitaire vous permet d'attribuer les revenus publicitaires à la source média qui a drainé l'utilisateur. <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attribution">A propos de l'attribution des revenus publicitaires.</Anchor>
 
+<div id="enable-ad-revenue-attribution" />
+
 #### Activer l'attribution des revenus publicitaires
 
 1. Vérifiez quelle type de méthode, <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attribution#list-of-ad-revenue-integrated-partners">attribution agrégée ou bien au niveau de l'utilisateur</Anchor>, le partenaire prend en charge.
 2. Suivez la procédure proposée dans <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attribution#implémentation">le guide d'intégration des revenus publicitaires</Anchor>.
+
+<div id="ad-revenue-api-status-messages" />
 
 #### Messages de statut de l'API des revenus publicitaires
 
@@ -519,6 +549,8 @@ Si vous avez le rôle d'éditeur en diffusant les publicités dans votre app, l'
 * Il n'est pas nécessaire d'activer l'intégration d'attribution avec un partenaire pour lui donner certaines autorisations.
 * **Réseau publicitaire configuré par une agence :** lorsque un partenaire est configuré par une agence, l'annonceur ne peut ni afficher l'état d'activation du réseau publicitaire, ni les autorisations qui ont été accordées.
 * Si vous collaborez avec le partenaire exclusivement en tant qu'agence, ignorez la section **Autorisations du réseau publicitaire** et paramétrez directement la section **Autorisations de l'agence**.
+
+<div id="ad-network-permissions" />
 
 #### Autorisations pour le réseau publicitaire
 
@@ -549,6 +581,8 @@ Si vous avez le rôle d'éditeur en diffusant les publicités dans votre app, l'
 | <span id="access-protect360-dashboard-raw-data"></span>Accéder au tableau de bord Protect360 et aux données brutes | Le réseau publicitaire peut :<ul><li>Accéder au tableau de bord Protect360 (inclut <Anchor target="_blank" href="/marketers/fr/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Accéder à Protect360, aux règles de validation et aux données brutes, si elles sont comprises dans la formule d'abonnement. ProtectLITE n'inclut pas l'accès aux données brutes.</li></ul>**Remarque :** si vous avez un abonnement <Anchor target="_blank" href="/marketers/fr/docs/protect360-anti-fraud-guide">Protect360</Anchor>, le réseau publicitaire peut voir le tableau de bord complet. Sans abonnement Protect360, il peut uniquement accéder au tableau de bord réduit. |
 | <span id="access-ad-revenue-raw-data"></span>Accédez aux données brutes des revenus publicitaires | Le réseau publicitaire peut accéder à ses <Anchor target="_blank" href="/partners/fr/docs/ad-revenue-signals-for-ua-ad-networks">données de revenus publicitaires afin d'optimiser l'AU</Anchor>.   <br />**Remarque :** Cette permission n'est disponible que pour les apps disposant d'un abonnement <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor>. |
 
+<div id="agency-permissions" />
+
 #### Autorisations pour l'agence
 
 * Lorsque vous accordez des autorisations aux agences, elles peuvent accorder des autorisations aux réseaux publicitaires avec lesquels elles collaborent de manière à ce que ces derniers gèrent vos apps. Cela revient à accorder des autorisations aux réseaux publicitaires.
@@ -575,6 +609,8 @@ Si vous avez le rôle d'éditeur en diffusant les publicités dans votre app, l'
 En savoir plus sur <Anchor target="_blank" href="/partners/fr/docs/about-agency-accounts#accès-des-agences-aux-données-des-marketeurs">le travail avec les agences</Anchor>.
 
 </Accordion>
+
+<div id="test-the-integration" />
 
 ## Tester l'intégration
 
@@ -635,6 +671,8 @@ Si votre forfait d'abonnement AppsFlyer comprend l'accès aux données brutes, v
 2. Sélectionnez la source média testée.
 3. Attendez jusqu'à 15 minutes après l'installation puis téléchargez le rapport des installations.
 4. Vérifiez que les enregistrements d'installation du partenaire existent bien et qu'ils incluent les paramètres de type : source média, nom de la campagne, heure et type de touch, ID de l'appareil (si fourni), nom de l'agence (apparait sous l'appellation « Partenaire » dans le rapport), etc.
+
+<div id="important-2" />
 
 > 🚧 **Important !**
 >

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** La plateforme contient plusieurs tableaux de bord. Ces tableaux de bord vous permettent de visualiser les performances de votre campagne et le comportement de l'app.
 
+<div id="appsflyer-dashboards" />
+
 ## Tableaux de bord AppsFlyer
 
 ![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)

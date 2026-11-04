@@ -37,6 +37,8 @@ x-zendesk:
 
 [![Mobile_user_journey.png](https://support.appsflyer.com/hc/article_attachments/19544107641105)](https://support.appsflyer.com/hc/article_attachments/19544107641105)
 
+<div id="what-is-attribution" />
+
 ## Qu’est-ce que l’attribution ?
 
 **L'attribution** vise à déterminer ce qui a motivé (poussé) un utilisateur à installer une app, ou à effectuer une action post-installation de type réengagement ou réattribution. Le résultat de l'attribution est soit :
@@ -49,6 +51,8 @@ L'attribution est essentielle à l'optimisation de l'acquisition utilisateur ain
 > 👍 **Astuce**
 >
 > Vous voulez en savoir plus sur l'attribution ? Suivez cette <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7766/play/18609/attribution-101-part-1">brève formation</Anchor> sur le portail d'apprentissage AppsFlyer.
+
+<div id="what-is-an-app-install" />
 
 ## Qu'est-ce qu'une installation d'app ?
 
@@ -64,6 +68,8 @@ Dans AppsFlyer, un événement attribuable se produit lorsque l'un des événeme
 * Dans le cas du retargeting  :
   * **RÉENGAGEMENT**
   * **Réattribution**
+
+<div id="attribution-methods" />
 
 ## Méthodes d'attribution
 
@@ -199,6 +205,8 @@ En cas de réengagement, les utilisateurs ne sont pas redirigés vers un app sto
 
 </Accordion>
 
+<div id="attribution-methods-per-media-source-and-appsflyer-feature" />
+
 ### Méthodes d'attribution par source média et fonctionnalité AppsFlyer
 
 Voir les sections suivantes pour le détail des cas où des méthodes d'attribution particulières sont prises en charge, en fonction des éléments suivants :
@@ -222,6 +230,8 @@ Voir les sections suivantes pour le détail des cas où des méthodes d'attribut
 <table><thead><tr><th rowspan="2">Source média</th><th colspan="3">Méthode d'attribution</th></tr><tr><th>Android</th><th>iOS</th><th><strong>Plateformes CTV, PC et console</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">Les SRN</a></td><td><p>Correspondance du Device ID</p></td><td><ul><li>Correspondance du Device ID</li><li>AAP (IOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td><p>Correspondance du Device ID</p></td></tr><tr><td><ul><li>Réseaux publicitaires (non SRN) via des <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">liens d'attribution pour les partenaires</a> </li><li><span>Plateformes CTV, PC et console</span></li></ul></td><td><ul><li>Référent d'installation</li><li>Correspondance du Device ID</li><li>Modélisation probabiliste</li></ul></td><td><ul><li>Correspondance du Device ID</li><li>Modélisation probabiliste (avant iOS 14.5)</li><li>AAP (IOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><p><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Préinstallé sur l'appareil</a></p></td><td>Préinstallations</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="user-engagement-attribution-types" />
 
 ## Types d'engagement utilisateur menant à une attribution
 
@@ -267,6 +277,8 @@ Dans les cas où à la fois un clic et une impression ont lieu, le clic prévaut
 
 </Accordion>
 
+<div id="advanced-attribution-topics" />
+
 ## Rubriques d'attribution avancée
 
 <div id="in-app-events" />
@@ -307,6 +319,8 @@ Une réinstallation se produit lorsqu'un utilisateur installe l'app, la désinst
 Pour les tests d'appareil et les installations multiples, vous devez <Anchor target="_blank" href="/marketers/fr/docs/registering-test-devices">enregistrer</Anchor> l'appareil dans AppsFlyer. Si vous n'enregistrez pas l'appareil, seule la première installation sera enregistrée.
 
 Veuillez noter qu'AppsFlyer offre une meilleure précision d'attribution des réinstallations iOS sans ID d'annonceur. Vous pouvez activer cette fonctionnalité sur la <Anchor target="_blank" href="/marketers/fr/docs/app-settings#reinstall-detection-using-ondevice-storage-ios-only">page Paramètres de l’app</Anchor>.
+
+<div id="reinstalling-ios-apps-that-are-backed-up-in-icloud" />
 
 #### Réinstallation des apps iOS sauvegardées dans iCloud
 

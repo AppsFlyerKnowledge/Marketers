@@ -25,19 +25,27 @@ x-zendesk:
 ---
 > **En bref :** [Adobe Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html) (anciennement Omniture) est un ensemble d'outils d'analyse prédictive et en temps réel intégrables dans des sources tierces. Il comprend les applications Marketing Reports and Analytics (SiteCatalyst), Ad hoc analysis (Adobe Discover) et Insight, qui permettent de créer une vision holistique des activités commerciales en transformant les interactions avec les clients en informations.
 
+<div id="overview" />
+
 ## Présentation
 
 Cette intégration consiste en un flux de données bidirectionnel entre Adobe et AppsFlyer. Pour que l'intégration soit réussie, elle nécessite l'implémentation d'un code dans votre app. Les exigences d'AppsFlyer et d'Adobe doivent être respectées pour que l'intégration soit pleinement réussie.
 
+<div id="setting-up-adobe-analytics-integration" />
+
 ## Configuration de l'intégration d'Adobe Analytics
 
 Si vous utilisez Adobe Analytics Report Suite pour l'analyse des performances globales de la campagne et la création de segments, intégrer AppsFlyer avec Adobe Analytics permettra de transférer automatiquement des données d'attribution d'AppsFlyer à Adobe pour vous aider à atteindre vos objectifs.
+
+<div id="prerequisites" />
 
 ### Conditions préalables :
 
 * Configuration des <Anchor target="_blank" href="https://developer.adobe.com/client-sdks/documentation/">documents relatifs au kit SDK mobile Adobe Experience Platform</Anchor>
 * <Anchor target="_blank" href="https://marketing.adobe.com/resources/help/en_US/mcvid/">Marketing Cloud Visitor ID</Anchor> ou Experience cloud ID service
 * Trois eVars dans chaque suite de rapports à utiliser dans le seul but de cette intégration
+
+<div id="step-1-share-adobe-experience-cloud-id-ecid-marketing-cloud-id-or-visitor-id-with-appsflyer" />
 
 ### Étape 1 : Partager l'identifiant Adobe Experience Cloud (ECID, Marketing Cloud ID ou Visitor ID) avec AppsFlyer.
 
@@ -167,6 +175,8 @@ NSDictionary *adobeInfo = @{@"external_user_id":@"some-adobe-external-id-value"}
 
 </Accordion>
 
+<div id="step-2-configure-adobe-analytics-in-appsflyer" />
+
 ### Étape 2 : Configurer Adobe analytics dans AppsFlyer
 
 **Conditions minimum :** Avant de configurer l'intégration, assurez-vous de [transmettre l'ID visiteur d'Adobe Marketing Cloud au SDK AppsFlyer.](/docs/adobe-analytics-integration-with-appsflyer#étape1-partager-lidentifiant-adobe-experience-cloud-ecid-marketing-cloud-id-ou-visitor-id-avec-appsflyer)
@@ -192,9 +202,13 @@ Une fois enregistré, AppsFlyer envoie les données suivantes à Adobe Analytics
 * Source média
 * Nom de la campagne
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Conformément aux conditions de service de Meta ads et de X Ads, AppsFlyer n'a pas le droit de partager les données des utilisateurs avec des tiers. Cela signifie que les installations via Meta ads et X Ads sont envoyées en tant qu'annonces organiques.
+
+<div id="step-3-map-data-to-evars-in-adobe-analytics" />
 
 ### Étape 3 : Cartographier les données vers les eVars dans Adobe Analytics
 
@@ -210,6 +224,8 @@ Les variables de données contextuelles d'AppsFlyer sont mappées en conséquenc
 
 Si vous rencontrez des problèmes lors du mappage des variables de données contextuelles d'AppsFlyer par le biais de règles de traitement, contactez l'équipe de votre compte Adobe pour obtenir de l'aide.
 
+<div id="step-4-optional-set-up-your-marketing-channel" />
+
 ### Étape 4 [facultatif] : Mettre en place votre canal de commercialisation
 
 Consultez la <Anchor target="_blank" href="https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels.html">documentation d'Adobe Analytics</Anchor> pour savoir comment configurer votre canal marketing sur leur plateforme. Veillez à sélectionner les champs suivants dans les règles d'identification :
@@ -217,6 +233,8 @@ Consultez la <Anchor target="_blank" href="https://experienceleague.adobe.com/do
 1. « La valeur de la variable de conversion définie par la balise web d'Adobe » : Sélectionnez **AppsFlyer** et **Exists**.
 2. « Identifier le canal comme » : Sélectionnez **Attribution app mobile.**
 3. « Régler la valeur du canal sur » : Sélectionnez **Campagne AppsFlyer**.
+
+<div id="domain-and-security-details" />
 
 ## Domaine et données de sécurité
 

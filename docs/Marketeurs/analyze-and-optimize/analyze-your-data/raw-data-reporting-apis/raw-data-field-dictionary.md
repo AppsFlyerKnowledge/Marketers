@@ -59,6 +59,8 @@ Les colonnes du tableau du dictionnaire sont les suivantes :
   * **Enum n char** : les champs Enum ne peuvent contenir que des valeurs spécifiques. Par exemple, la devise de coût a 3 caractères et peut contenir que les codes de devise spécifiés
   * **Enum 5 char boolean :** la valeur du champ peut être `TRUE` ou `FALSE`
 
+<div id="tip" />
+
 > 👍 **Astuce**
 >
 > * Pour trier le tableau, cliquez sur le nom d'une colonne.

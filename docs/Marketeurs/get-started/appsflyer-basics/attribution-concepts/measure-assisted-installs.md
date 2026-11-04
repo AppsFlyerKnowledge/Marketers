@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **En bref :** mesurez l'impact élargi des sources média qui ont provoqué l'engagement de vos utilisateurs et ont fourni une assistance avant le dernier contact.
 
+<div id="assisted-installs" />
+
 ## Installations assistées
 
 <Anchor target="_blank" href="https://www.appsflyer.com/mobile-fraud-glossary/assisted-installs-mobile-advertising-assists/">Les installations assistées</Anchor> (ou attribution multi-touch) sont des installations où la source média / campagne n'a pas eu le dernier touch, mais a bien touché l'utilisateur avant l'installation et au cours de la fenêtre d'attribution.
 
 Les données analytiques des installations assistées sont disponibles au niveau source média et au niveau campagne, vous pouvez ainsi mesurer plus largement les résultats de chaque source média et chaque campagne.
+
+<div id="view-assisted-installs-metrics-in-the-overview-dashboard" />
 
 ### Consulter les mesures d'installations assistées dans le tableau de bord général
 
@@ -48,9 +52,13 @@ Les données analytiques des installations assistées sont disponibles au niveau
 
    ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
 
+<div id="why-are-assists-important" />
+
 ### En quoi les installations assistées sont-elles importantes ?
 
 Il arrive souvent que des utilisateurs potentiels se familiarisent avec une app via la source d'assistance, mais qu'ils ne parviennent pas à l'installer, pour différentes raisons. Il est donc important de mesurer et repérer les assistances pour mieux mesurer les campagnes et les optimiser.
+
+<div id="assisted-installs-reporting" />
 
 ### Le reporting des installations assistées
 
@@ -68,6 +76,8 @@ Pour chacun des réseaux contributeurs, le rapport de données brutes contient l
 * Type de correspondance (ID, Google Play Referrer ou SRN)
 
 Cf <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview#rapports-de-parcours-utilisateur">Données brutes sur le parcours de l'utilisateur</Anchor>.
+
+<div id="note-1" />
 
 > 📘 **Remarque sur les agences**
 >

@@ -22,19 +22,27 @@ x-zendesk:
 ---
 > **En bref :** un utilisateur qui regarde une publicité (impression) et qui installe ensuite l'application est attribué via l'attribution post-vue.
 
+<div id="overview" />
+
 ## Présentation
 
 L'attribution post-vue mesure les installations, réattributions et réengagements des utilisateurs qui ont visionné une publicité mais sans cliquer dessus.
 
+<div id="view-through-attribution-flow" />
+
 ### Processus d'attribution post-vue
 
 ![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+
+<div id="terminology" />
 
 ### Terminologie
 
 * **Impression :** l'affichage d'une publicité, indépendamment du clic ou autre engagement produit par l'utilisateur.
 * **Installation** : dans cet article, il s'agit des installations, réattributions et réengagements.
 * **Attribution post-vue :** attribution des installations à une source média après visionnage d'une impression par l'utilisateur.
+
+<div id="view-through-attribution-principles" />
 
 ### Principes de l'attribution post-vue
 
@@ -47,12 +55,16 @@ Les impressions sont considérées comme attribution post-vue selon les critère
 * Si plusieurs impressions sont trouvées, la plus récente est prise en compte.
 * Les clics sont prioritaires sur les impressions. Cela signifie que s'il y a des clics dans la fenêtre rétrospective post-vue, c'est le clic le plus récent qui l'emporte. L'impression la plus récente est attribuée en tant que contributeur (assistance).
 
+<div id="view-through-lookback-window" />
+
 ### Fenêtre rétrospective post vue
 
 * Pour les SRN, la fenêtre rétrospective d'attribution post vue est comprise entre 1 et 24 heures.Pour les SRN, la fenêtre rétrospective peut être plus longue.
 * Pour paramétrer la fenêtre :
   * **Non-SRN :** définissez la durée avec les liens d'attribution d'impression en réglant le paramètre  `af_viewthrough_lookback.` Si le paramètre n'est pas défini, une fenêtre de 24 heures est utilisée par défaut.
   * **SRN**: la fenêtre est déterminée par le SRN. Nous recommandons de définir la même valeur que celle des SRN dans AppsFlyer.
+
+<div id="view-through-attribution-reporting-and-metrics" />
 
 ### Mesures et reporting de l'attribution post-vue
 
@@ -63,6 +75,8 @@ Les impressions sont considérées comme attribution post-vue selon les critère
   * Les données de niveau utilisateur (données brutes) des utilisateurs attribués en post-vue sont similaires à celles des utilisateurs attribués par clic. Cependant, certains partenaires limitent la disponibilité de ces données.
   * Des données d'impression (similaires aux données de clic) sont disponibles.
   * Le champ attributed\_touch\_type contient la valeur *impression*.
+
+<div id="view-through-operations" />
 
 ## Opérations post-vue
 

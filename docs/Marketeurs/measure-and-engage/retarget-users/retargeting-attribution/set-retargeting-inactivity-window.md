@@ -26,6 +26,8 @@ x-zendesk:
 >
 > ![](https://files.readme.io/f55130956ae4fcb32fff4f0590fc942f3d3c024bc09de99968e1f29933ceb26b-9479865167761.png)
 
+<div id="inactivity-period" />
+
 ## Période d'inactivité
 
 Les annonceurs retrouvent les utilisateurs inactifs en les reciblant. Ces campagnes ont généralement un bon taux de conversion et génèrent un ROAS significatif. Cependant, de nombreuses campagnes de retargeting sont moins performantes car elles ne filtrent pas les utilisateurs actifs. Pour augmenter le saut incrémentiel des campagnes de retargeting, mettez en place un **temps d'inactivité minimum** pour filtrer les utilisateurs actifs.
@@ -37,6 +39,8 @@ En fixant une durée d'inactivité minimum, les annonceurs n'attribuent pas les 
 * **Attribué :** les utilisateurs inactifs qui n'ont pas utilisé l'application pendant une durée plus longue que celle de la période d'inactivité définie. Les réengagements et les réinstallations de retargeting sont attribués.
 * **Non attribué** : les utilisateurs actifs qui ouvrent l'application mais ne dépassent pas la période minimale d'inactivité ne sont pas pris en compte et ne sont pas attribués à la campagne de retargeting.
 
+<div id="retargeting-inactivity-terminology" />
+
 ### Terminologie de l'inactivité de retargeting
 
 | Terme | Définition |
@@ -45,6 +49,8 @@ En fixant une durée d'inactivité minimum, les annonceurs n'attribuent pas les 
 | Valeur par défaut | 0 (aucun)  <br />La fonctionnalité **Période d'inactivité** n'est pas active par défaut pour les sources média. |
 | Activité de l'utilisateur | Installations ou sessions rapportées via SDK ou S2S. |
 | Appareils migrés | L'heure de la migration correspond à l'heure de la dernière activité. |
+
+<div id="scenarios" />
 
 ## Scénarios
 
@@ -87,6 +93,8 @@ Les actions de l’utilisateur sont les suivantes : L'utilisateur :
 | B | 7 jours | 4 jours<br /><br />**L'utilisateur a utilisé l'application** pendant la période d'inactivité définie. | <ul><li>**Session classique**</li><li>La source média de retargeting A n'est pas attribuée</li></ul> |
 
 </Accordion>
+
+<div id="partner-setup" />
 
 ## Configuration du partenaire
 

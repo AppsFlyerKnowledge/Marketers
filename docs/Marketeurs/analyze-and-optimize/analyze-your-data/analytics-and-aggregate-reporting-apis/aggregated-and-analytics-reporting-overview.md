@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** description et différences entre les rapports d'attribution agrégés et analytiques, les outils et les API disponibles.
 
+<div id="aggregated-and-analytics-performance-reporting-overview" />
+
 ## Rapports de performance agrégés et analytiques—outils et rapports
 
 Les outils d'agrégation et d'analyse proposés sur la plateforme permettent aux annonceurs de mesurer différentes métriques pour évaluer les performances de leurs apps, campagnes et utilisateurs.
@@ -91,6 +93,8 @@ Différentes *versions* de cohorte sont disponibles : <Anchor target="_blank" h
 
 </Accordion>
 
+<div id="user-journey-reports" />
+
 ### Rapports de parcours utilisateur
 
 * Les rapports détaillés sont disponibles depuis la page Données d'exportation ou bien à l'aide de l'API Pull agrégée.
@@ -107,9 +111,13 @@ Différentes *versions* de cohorte sont disponibles : <Anchor target="_blank" h
 
 Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous ouvrez un fichier CSV dans Excel, les champs de date sont formatés en fonction des paramètres de date et d'heure de votre ordinateur. Assurez-vous de sélectionner le format de date approprié dans <Anchor target="_blank" href="https://support.office.com/en-us/article/format-a-date-the-way-you-want-8e10019e-d5d8-47a1-ba95-db95123d273e#ID0EAACAAA=Windows">Excel</Anchor>.
 
+<div id="examples-of-aggregate-reports" />
+
 #### Exemples de rapports agrégés
 
 [Exemples de rapports dans une feuille de calcul](https://docs.google.com/spreadsheets/d/e/2PACX-1vQmzRons779Dk5QWVoPsOF8E7yJLwNPB1IF87shZr6rcMJLjszlSNIbAMVcdeQLysr8Bc4QAby5QB4u/pub?output=xlsx)
+
+<div id="fields-in-ua-aggregate-reports" />
 
 #### Champs présents dans les rapports agrégés AU
 
@@ -125,6 +133,8 @@ Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous
 * Dans les rapports de retargeting, il n'existe pas de distinction entre les utilisateurs organiques et non organiques.
 * Pour obtenir des rapports de retargeting via API Pull, ajoutez le paramètre *&reattr=true* aux URI des rapports de performance.
 
+<div id="aggregate-ltv-retargeting-reports" />
+
 #### Rapports de retargeting LTV agrégés
 
 | Nom du rapport | Regroupés par |
@@ -134,6 +144,8 @@ Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous
 | Activité par date | Date, agence, source média, campagne |
 | Pays | Pays, agence, source média, campagne |
 | Pays par date | Date, pays, agence, source média, campagne |
+
+<div id="aggregate-ltv-retargeting-reports-1" />
 
 #### Rapports de retargeting LTV agrégés
 
@@ -159,6 +171,8 @@ Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous
 
 </Accordion>
 
+<div id="feature-reports" />
+
 ## Rapports de fonctionnalités
 
 <div id="skadnetwork" />
@@ -179,6 +193,8 @@ Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous
 * Les rapports sont disponibles via API Pull. Ces rapports ne sont pas disponibles via la page des données d'exportation.
 * La plage de dates se rapporte à la date d'installation.
 
+<div id="aggregate-protect360-reports-available-via-pull-api" />
+
 #### Les rapports agrégés de Protect360 disponibles via API Pull
 
 | Nom du rapport |
@@ -192,6 +208,8 @@ Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous
 **Exception :** le motif de blocage **bots** est invoqué même dans le cas où il devrait être **version d'app** ou bien **id utilisateur du client manquant**.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

@@ -30,6 +30,8 @@ x-zendesk:
 ---
 > **En bref :** pensez à profiter des fonctionnalités de SDK complémentaires et avec la collaboration de votre développeur implémentez différentes API comme la mesure des désinstallations, l'attribution des invitations d'utilisateurs, les notifications push et les paramètres de confidentialité.
 
+<div id="additional-attribution-methods" />
+
 ## Méthodes d'attribution complémentaire
 
 Ces méthodes d'attribution complémentaire vous seront utiles si vous prévoyez de mesurer la TV, les désinstallations ou les applications préinstallées.
@@ -91,6 +93,8 @@ Le fait de définir la **durée personnalisée entre deux lancements sur une val
 Vous pouvez <Anchor target="_blank" href="/marketers/fr/docs/measure-sessions#session-reporting-by-the-app-sdk">créer manuellement des rapports de sessions utilisateur</Anchor>. Cela peut être utile pour les apps utilitaires qui s'exécutent en back-end.
 
 </Accordion>
+
+<div id="owned-media" />
 
 ## Médias propres
 
@@ -178,6 +182,8 @@ La documentation destinée aux développeurs est disponible ci-dessous :
 **Conseil** ! Les <Anchor target="_blank" href="/marketers/fr/docs/convert-your-mobile-web-visitors-to-app-users#attribution-solutions">smart scripts One Link</Anchor> permettent aux propriétaires d'app d'augmenter la conversion des visiteurs d'un site en utilisateurs d'app.
 
 </Accordion>
+
+<div id="user-privacy" />
 
 ## Confidentialité des utilisateurs
 

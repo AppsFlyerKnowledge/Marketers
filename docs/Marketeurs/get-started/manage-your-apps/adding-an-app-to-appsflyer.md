@@ -26,9 +26,13 @@ x-zendesk:
 ---
 > **En bref :** découvrez comment ajouter votre application à AppsFlyer pour obtenir des données d'attribution des installations et événements in-app, pour analyser ensuite les données à l'aide des différents outils AppsFlyer.
 
+<div id="overview" />
+
 ## Présentation
 
 Si vous n'avez pas encore ajouté d'app à votre tableau de bord, la page onboarding de l'app s'affichera lorsque vous vous connecterez à AppsFlyer. L'onboarding de l'app vous guidera étape par étape pour ajouter votre application et la préparer à l'attribution. 
+
+<div id="entering-the-wizard-for-adding-an-app" />
 
 ### Accéder à l'assistant pour ajouter une application
 
@@ -52,6 +56,8 @@ Vous pouvez accéder à l'assistant d'ajout d'applications depuis la plateforme,
 
 <Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
+<div id="adding-an-app" />
+
 ## Ajouter une application
 
 Une fois que vous avez [ouvert l'assistant **Ajouter une app**](/docs/adding-an-app-to-appsflyer#accéder-à-lassistant-pour-ajouter-une-application) , procédez comme suit :
@@ -74,6 +80,8 @@ Après avoir enregistré l'app, celle-ci apparaîtra dans le tableau de bord. Po
 
 Voir <Anchor target="_blank" href="/marketers/fr/docs/getting-started-onboarding-for-marketers">toutes les étapes</Anchor> du processus d'intégration.
 
+<div id="enter-app-details" />
+
 ### Saisir les infos de l'app
 
 Sélectionnez la plateforme de l'app et entrez les informations requises, comme indiqué ci-dessous :
@@ -94,7 +102,7 @@ Utilisez cette option pour les plateformes suivantes :
 | --- | --- | --- |
 | <span id="in-store"></span>Dans le store | Votre application est actuellement disponible dans le Google Play store | **URL de Google Play** (copiée depuis Google Play)<ul><li>**Exemple :** https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest& hl=en&gl=GB</li><li>**Important !**<ul><li>Si votre app n'est **pas** listée dans Google Play store États-Unis :<ul><li>L'URL doit inclure le code pays de tout store dans lequel l'app est répertoriée, comme indiqué dans l'exemple ci-dessus : **& gl=`{country_code}.** Si vous n'indiquez pas le code du pays, vous recevrez un message d'erreur lorsque vous tenterez d'ajouter l'application.</li><li>Le code de la langue est facultatif : **& hl={language_code}`**</li></ul></li><li>Si votre store **est** listé dans Google Play États-Unis, les codes de pays et de langue sont facultatifs.</li></ul></li></ul> |
 | <span id="pending-approval-not-published"></span>Approbation en attente / non publiée | Votre application n'est pas encore publiée ou attend d'être approuvée par Google Play | **Nom du package Android**<ul><li>**Exemple :** com.appsflyer.adNetworkTest</li><li>**Remarque** : le nom du package est sensible à la casse</li><li>**Format :**<ul><li>Deux segments minimum (un ou plusieurs points)</li><li>Chaque segment doit commencer par une lettre</li><li>Tous les caractères sont des chiffres, des lettres, ou des tirets du bas (a-z, A-Z, 0-9 ou \_).</li><li>Longueur maximale du paramètre : 100 caractères.</li></ul></li></ul>Pour plus d'informations, consultez la <Anchor target="_blank" href="https://developer.android.com/studio/build/application-id">documentation à l'usage des développeurs Android</Anchor> |
-| <span id="third-party-store-out-of-store"></span>Store tiers et hors-store | Votre application se trouve dans un app store Android autre que Google Play, et/ou elle peut être téléchargée ailleurs que depuis un app store. | **Nom du package Android**<br /><br />Pour connaître les infos détaillées, cf ligne précédente (approbation en attente/non publiée)<br /><br />**Nom du canal :** nom unique que vous avez défini pour chaque store tiers/location dans l'APK individuelle préparée pour le store ou la location<ul><li>**Exemple :** Amazon</li><li>**Format :** lettres majuscules ou minuscules uniquement (a-z ou A-Z). Aucun autre caractère, de type trait d'union (-) ou tiret du bas (\_), n'est autorisé.</li></ul>**URL de l'app** (copiée depuis l'app store tiers ou quelque part hors-store)<br /><br /><br /><br />**<span id="01H815FE641Q6N5JY5846QE59Y"></span>Important !**<br />Si votre application est disponible via plus d'une source (soit tout ensemble de Google Play, d'app stores tiers ou d'emplacements hors store), nous vous recommandons vivement d'étudier les options pour <Anchor target="_blank" href="/marketers/fr/docs/set-up-multi-store-android-attribution">mettre en place une attribution multi-stores Android.</Anchor> Si l'implémentation est la bonne dès le départ, vous pourrez accéder aux données que vous cherchez, et dans le format souhaité. |
+| <span id="third-party-store-out-of-store"></span>Store tiers et hors-store | Votre application se trouve dans un app store Android autre que Google Play, et/ou elle peut être téléchargée ailleurs que depuis un app store. | **Nom du package Android**<br /><br />Pour connaître les infos détaillées, cf ligne précédente (approbation en attente/non publiée)<br /><br />**Nom du canal :** nom unique que vous avez défini pour chaque store tiers/location dans l'APK individuelle préparée pour le store ou la location<ul><li>**Exemple :** Amazon</li><li>**Format :** lettres majuscules ou minuscules uniquement (a-z ou A-Z). Aucun autre caractère, de type trait d'union (-) ou tiret du bas (\_), n'est autorisé.</li></ul>**URL de l'app** (copiée depuis l'app store tiers ou quelque part hors-store)<br /><br /><br /><br />**<span id="important"></span><span id="01H815FE641Q6N5JY5846QE59Y"></span>Important !**<br />Si votre application est disponible via plus d'une source (soit tout ensemble de Google Play, d'app stores tiers ou d'emplacements hors store), nous vous recommandons vivement d'étudier les options pour <Anchor target="_blank" href="/marketers/fr/docs/set-up-multi-store-android-attribution">mettre en place une attribution multi-stores Android.</Anchor> Si l'implémentation est la bonne dès le départ, vous pourrez accéder aux données que vous cherchez, et dans le format souhaité. |
 
 </Accordion>
 
@@ -135,6 +143,8 @@ Utilisez cette option pour les plateformes suivantes :
 
 <Accordion title="web (PBA)">
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > Une application web permet de définir un site web à inclure dans un bundle de marques pour notre fonctionnalité People-Based Attribution (PBA).
@@ -158,6 +168,8 @@ Inclure –
 
 * Longueur maxi du paramètre : 100 caractères
 * Les balises XSS ne sont pas autorisées
+
+<div id="important-1" />
 
 > 🚧 **Important !**
 >
@@ -317,6 +329,8 @@ Inclure –
 
 </Accordion>
 
+<div id="enter-additional-information-not-applicable-to-web-apps" />
+
 ### #2 – Saisir les infos supplémentaires *(ne concerne pas les apps web) :*
 
 <Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
@@ -324,6 +338,8 @@ Inclure –
 1. **Sélectionner une devise**
 
    Sélectionnez la devise qui sera utilisée pour afficher les données de cette application dans le tableau de bord. Les événements de revenus et de dépenses seront convertis dans cette devise en se basant sur le taux de change en vigueur au moment de l'événement. <Anchor target="_blank" href="/marketers/fr/docs/app-settings#localization-currency">En savoir plus</Anchor> sur le paramétrage de la devise d'une app, et ses effets.
+
+   <div id="important-2" />
 
    > 🚧 **Important !**
    >
@@ -340,10 +356,14 @@ Inclure –
    1. Ouvrez et lisez le <Anchor target="_blank" href="https://www.appsflyer.com/gatedpdfs/KidsAppsComplianceGuide_03_22.pdf">guide</Anchor> sur la conformité des applications destinées aux enfants.
    2. Cochez la case pour confirmer que vous avez lu le guide et que vous mettrez en place les systèmes de vérifications qui y sont détaillés.
 
+      <div id="note-6" />
+
       > 📘 **Remarque**
       >
       > Deux semaines après avoir ajouté l'application, vous recevrez une notification vous demandant de confirmer que vous avez mis en place des contrôles de confidentialité des applications destinées aux enfants. Une fois fait, vous recevrez un message de confirmation. Vous pouvez accéder au message de confirmation à partir du centre de notification, ou consulter les détails de la confirmation dans le <Anchor target="_blank" href="/marketers/fr/docs/audit-log">journal d'audit</Anchor>.
 
+
+<div id="about-pending-apps" />
 
 ## À propos des applications en attente
 
@@ -352,6 +372,8 @@ Travailler avec une application en attente peut être utile lorsque vous corrige
 Lorsqu'une app a le statut *en attente* dans le tableau de bord, cela n'affecte ni la collecte ni la mesure des données. Si l'app est *en ligne* ou *en attente* sur un app store et que des utilisateurs l'installent et interagissent avec elle, les données des événements d'installation et des événements in-app seront toujours enregistrées dans le tableau de bord.
 
 Une fois que votre app n'est plus en attente et passe en ligne, AppsFlyer détecte et met automatiquement à jour son statut, vous n'avez donc pas à l'ajouter une nouvelle fois. <Anchor target="_blank" href="/marketers/fr/docs/why-is-my-app-still-pending">En savoir plus</Anchor> sur les apps en attente et sur l'opération facultative visant à actualiser manuellement leur statut.
+
+<div id="troubleshooting" />
 
 ## Dépannage
 

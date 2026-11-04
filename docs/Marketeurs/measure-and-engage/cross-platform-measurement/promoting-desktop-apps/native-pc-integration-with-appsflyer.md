@@ -21,6 +21,8 @@ x-zendesk:
 ---
 > **En bref :** Intégrez votre jeu ou application PC à AppsFlyer pour recevoir des données d'attribution et d'événements pour vos campagnes PC. L'intégration Native PC prend en charge l'attributionet l'enregistrement d'événements in-app pour les applications PC (en d'autres termes, l'attribution et l'enregistrement sur l'ordinateur de l'utilisateur).
 
+<div id="about-native-pc-attribution" />
+
 ## À propos de l'attribution Native PC
 
 Native PC fonctionne sur tous les appareils Windows, grâce à l'installation d'une extension de fichier .EXE ou .MSI.
@@ -28,6 +30,8 @@ Native PC fonctionne sur tous les appareils Windows, grâce à l'installation d'
 Le fonctionnement est différent de celui du <Anchor target="_blank" href="/marketers/fr/docs/windows-sdk-integration-for-developers">SDK Windows AppsFlyer 2.4.1</Anchor> qui fonctionne avec les installations à partir du Microsoft App Store, des téléphones Windows et de l'UWP.
 
 Les applications exécutées sur Steam peuvent s’intégrer à AppsFlyer via l’API ou le SDK S2S pour recevoir les données d’attribution et mesures des performances des sources et campagnes qui génèrent des ouvertures d’app et des événements in-app. Les marketeurs s'appuient sur ces informations pour mesurer et optimiser leurs activités marketing.
+
+<div id="example-attribution-flow" />
 
 ### Exemple de processus d'attribution
 
@@ -40,6 +44,8 @@ Voici un exemple de flux qui illustre les étapes les plus importantes du parcou
    La page d'accueil sert également à fournir des liens vers les différentes plateformes que votre jeu prend en charge. Par exemple, vous pouvez avoir des liens vers votre page Xbox, Microsoft Store et Steam sur votre page d'accueil.
 3. Page d'application Voici l'URL de votre page d'application Native PC qui héberge votre application pour que les clients puissent la télécharger.
 4. Installation du jeu : l'utilisateur installe le jeu, ce qui déclenche l'attribution et l'enregistrement d'événements et de sessions in-app.
+
+<div id="integration-procedures" />
 
 ## Étapes de l’intégration
 
@@ -55,9 +61,13 @@ Le tableau suivant répertorie les tâches nécessaires pour intégrer votre app
 | Configuration du lien | Si vous n'utilisez pas de page d’accueil multi-plateforme, vous pouvez créer des liens d'attribution directs à placer après les publicités.<br /><br /><Anchor target="_blank" href="/marketers/fr/docs/ctv-pc-and-console-platform-direct-attribution-links">Savoir comment créer des liens d’attribution directs</Anchor> | Marketeur |
 | Configuration du rapport/affichage des données | <Anchor target="_blank" href="/marketers/fr/docs/ctv-pc-and-console-platform-attribution-concepts#disponibilité-des-données">En savoir plus sur la disponibilité des données dans les tableaux de bord et les rapports</Anchor> | Marketeur/Ingénieur des données |
 
+<div id="removing-appsflyer-data-when-uninstalling-the-app" />
+
 ### Supprimer les données AppsFlyer lors de la désinstallation de l'app
 
 Pour supprimer toutes les données du SDK AppsFlyer lors de la désinstallation de l'application, demandez à votre développeur de suivre les étapes détaillées [ici.](https://dev.appsflyer.com/hc/docs/nativepc-vanilla#deleting-appsflyer-data-on-uninstall)
+
+<div id="traits-and-limitations" />
 
 ## Caractéristiques et limitations
 
@@ -65,6 +75,8 @@ Pour supprimer toutes les données du SDK AppsFlyer lors de la désinstallation 
 | --- | --- |
 | Reciblage | Non pris en charge actuellement |
 | Données de coûts | Les données des coûts doivent être envoyées via l’<Anchor target="_blank" href="/marketers/fr/docs/import-cost-data">Ingestion des dépenses publicitaires</Anchor> en utilisant la méthode d’envoi du fichier par e-mail. |
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

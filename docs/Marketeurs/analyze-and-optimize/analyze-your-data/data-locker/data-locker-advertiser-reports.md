@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** les rapports de données brutes et rapports agrégées disponibles via Data Locker
 
+<div id="reports-available-via-data-locker-for-advertisers" />
+
 ## Rapports disponibles via Data Locker pour les annonceurs
 
 <table><thead><tr><th>Type de données</th><th>Groupe de rapport</th><th>Abonnement à Data Locker requis</th></tr></thead><tbody><tr><td>Brut</td><td>Parcours de l'utilisateur - données brutes</td><td>Oui (2)</td></tr><tr><td>Brut</td><td>Protect360</td><td>Oui</td></tr><tr><td>Brut</td><td>Attribution basée sur les personnes (PBA)</td><td>Non (1)</td></tr><tr><td>Brut</td><td>Incrementality</td><td>Non (1)</td></tr><tr><td>Brut</td><td>SKAN</td><td>Non (1)</td></tr><tr><td>Brut</td><td>Revenus publicitaires</td><td>Oui</td></tr><tr><td>Brut</td><td>CTV</td><td>Oui</td></tr><tr><td>Agrégées</td><td>Analyse de cohorte</td><td>Non (1)</td></tr><tr><td colspan="3"><p>(1) Si vous n'avez pas l'abonnement Data Locker, vous devez fournir un stockage <a href="./data-locker-for-marketers#storage-options" target="_blank">dont vous êtes propriétaire</a>.</p><p>(2) À l'exception des engagements multiplateformes</p></td></tr></tbody></table>
@@ -40,6 +42,8 @@ Ce qui suit détaille les termes relatifs à l'actualisation des données utilis
 | Quotidien+1 | Les données de revenus publicitaires sont disponibles après 1 journée. Les données générées le lundi seront donc disponibles dans le dossier h=23 du lundi à partir de 20:00 UTC le mardi. Cf <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attribution#data-freshness">Actualisation des données des revenus publicitaires</Anchor> |
 
 </Accordion>
+
+<div id="raw-data-reports" />
 
 ## Rapports de données brutes
 
@@ -154,6 +158,8 @@ Cf <Anchor target="_blank" href="/marketers/fr/docs/roi360-guide-ad-revenue-attr
 Cf <Anchor target="_blank" href="/marketers/fr/docs/ctv-pc-and-console-data-via-data-locker">Les données des plateformes CTV, PC et console via Data Locker</Anchor>
 
 </Accordion>
+
+<div id="aggregated-reports" />
 
 ## Rapports agrégés
 

@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **En bref** : en savoir plus sur la structure et les paramètres des liens d’attribution.
 
+<div id="overview" />
+
 ## Présentation
 
 Les liens d'attribution permettent aux annonceurs de récupérer des données concernant l'engagement d'un utilisateur avec une publicité. Les liens d'attribution sont placés à la fin de la publicité, ils renseignent AppsFlyer lorsque un utilisateur interagit avec une publicité. L'engagement peut se faire via un clic sur une publicité ou lorsqu'un utilisateur affiche une impression publicitaire. Une copie de l'URL d'attribution est envoyée à AppsFlyer.
@@ -78,10 +80,14 @@ Les liens d’attribution sont générés via **OneLink** ou à partir d'un **li
 | Structure de l'URL | `https://{subdomain}.onelink.me/  <br />{templateid}?pid={media_source}  <br />&af_siteid={ApplicationID}  <br />&c={CampaignName}` | `https://app.appsflyer.com/{app_id}?pid={media_source}&af_siteid={ApplicationID}&c={CampaignName}` |
 | Exemple | `https://yourbrand.onelink.me/aAB1?pid=greatnetwork_int  <br />&c=GreatCampaign&af_siteid=A1b1` | `https://app.appsflyer.com/com.greatapp?pid=greatnetwork_int&  <br />c=GreatCampaign&af_siteid=A1b1` |
 
+<div id="attribution-link-parameters" />
+
 ## Paramètres du lien d'attribution
 
 * Les paramètres énumérés sont disponibles pour être utilisés dans le lien d'attribution.
 * La valeur dans la colonne **Type de champ** correspond à la limite de caractères de la valeur du paramètre. Pour des informations sur les limites de la longueur des valeurs du paramètre, cliquez <Anchor target="_blank" href="/marketers/fr/docs/raw-data-field-dictionary">ici.</Anchor>
+
+<div id="attribution-link-parametersua-and-retargeting" />
 
 ### Paramètres du lien d'attribution—UA et retargeting
 
@@ -134,12 +140,16 @@ Le tableau suivant peut être [téléchargé en `.csv`.](https://docs.google.com
 | <span id="af_og_description"></span>af\_og\_description | S/O | Lorsqu'un lien est publié sur les réseaux sociaux, la description de l'open graph (OG) génère un aperçu de description. | Chaîne 300 |
 | <span id="af_og_image"></span>af\_og\_image | S/O | Lorsqu’un lien est publié sur les médias sociaux, l’image de l'open graph (OG) génère un aperçu d’image. |  |
 
+<div id="attribution-link-parametersretargeting-only" />
+
 ### Paramètres du lien d'attribution—retargeting uniquement
 
 | Paramètre | Nom d'affichage dans les données brutes | Description | Type et longueur du champ |
 | --- | --- | --- | --- |
 | <span id="is_retargeting"></span>is\_retargeting | S'agit-il de retargeting (campagne) | Les URL cliquables des campagnes de retargeting doivent inclure `&is_retargeting=true`.  <br />Si le paramètre n'est pas inclus ou si sa valeur est « false », la campagne est considérée comme une campagne d'acquisition d'utilisateur normale. | Enum 5 car |
 | <span id="af_reengagement_window"></span>af\_reengagement\_window | Fenêtre de réengagement | Modifiez <Anchor target="_blank" href="/marketers/fr/docs/set-up-re-attribution-window#setting-the-re-attribution-window">la fenêtre d'attribution du réengagement</Anchor> en ajoutant ce paramètre au lien d'attribution.<br /><br />Les options de plage de fenêtres possibles sont les suivantes :<ul><li>Jours : 1-90  ou heures 1-36</li><li>Durée de vie : cela signifie que la fenêtre de réengagement est illimitée. Exemple :`&af_reengagement_window=lifetime`</li></ul>Valeur par défaut : 30 jours<br /><br />Exemple : `&af_reengagement_window=60d` définit la fenêtre de réengagement à 60 jours. | S/O |
+
+<div id="viewability-parameters" />
 
 ### Paramètres de type de publicité
 
@@ -156,6 +166,8 @@ En fonction du type de publicités, vous pouvez également envoyer le paramètre
 | <span id="af_ad_displayed_percent"></span>af\_ad\_displayed\_percent | % | Pourcentage maximal du modèle de publicité visible sur l'écran de l'appareil |
 | <span id="af_audio_total_length"></span>af\_audio\_total\_length | secondes | Durée possible totale de l'audio |
 | <span id="af_audio_played_length"></span>af\_audio\_played\_length | secondes | Durée de l'audio ayant été entendue |
+
+<div id="android-specific-parameters" />
 
 ### Paramètres Android spécifiques
 
@@ -178,6 +190,8 @@ En fonction du type de publicités, vous pouvez également envoyer le paramètre
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | S/O | Identifiant de publicité Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Liste personnalisée des stores dans Google Console | chaîne |
 
+<div id="ios-specific-parameters" />
+
 ### Paramètres spécifiques à iOS
 
 | Paramètres | Nom d'affichage | Description |
@@ -193,6 +207,8 @@ En fonction du type de publicités, vous pouvez également envoyer le paramètre
 | <span id="md5_idfv"></span>md5\_idfv | S/O | IDFV haché avec MD5 |
 | <span id="sha1_mac"></span>sha1\_mac | S/O | Adresse des appareils mac hachée avec SHA1. Doit être pris en charge par le réseau publicitaire |
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > ```http
@@ -201,6 +217,8 @@ En fonction du type de publicités, vous pouvez également envoyer le paramètre
 > ```
 
 Tous les paramètres sont disponibles dans le <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">Rapport d'installations</Anchor> et les <Anchor target="_blank" href="/marketers/fr/docs/analytics-and-aggregate-reporting-apis">Analyses, Rapports et API</Anchor>.
+
+<div id="custom-parameters" />
 
 ### Paramètres personnalisés
 
@@ -227,6 +245,8 @@ Chaque <Anchor target="_blank" href="http://appsflyer.com/partners">partenaire i
 
 Quelques ID d'éditeurs intégrés parmi les plus importants : organic, googleadwords\_int (Google AdWords), Meta ads, Twitter. Vous pouvez utiliser le nom que vous souhaitez pour les sources non intégrées, comme les e-mails, sms ou pigeons voyageurs.
 
+<div id="avoid-common-pid-issues" />
+
 #### Comment éviter les problèmes de PID les plus courants :
 
 * **Intégrez systématiquement le PID dans vos liens d'attribution.** En l'absence de PID dans le lien d'attribution, l'utilisateur est automatiquement attribué à une source média « inexistante »**, et la source d'installation originale disparaît**.
@@ -235,6 +255,8 @@ Quelques ID d'éditeurs intégrés parmi les plus importants : organic, googlea
   * Le clic ou l'installation s'affichera dans le tableau de bord comme ***af\_invalid\_param***
   * Les liens d'attribution ne seront pas attribués
   * Le deep linking ne fonctionnera pas après les clics
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
@@ -259,6 +281,8 @@ Le paramètre d'ID de site contient uniquement l'ID de l'éditeur qui diffuse la
 
 Pour inclure des informations supplémentaires, telles que le type de publicité, le placement ou les deux au sein de l'app, par exemple la bannière, l'intersection ou la vidéo, utilisez le paramètre ID de sous-site.
 
+<div id="example-1" />
+
 > 📄 **Exemple**
 >
 > Le lien d'attribution suivant comprend :
@@ -274,6 +298,8 @@ Pour inclure des informations supplémentaires, telles que le type de publicité
 > * ABCD = source affiliée (sous-éditeur) avec laquelle l'éditeur collabore
 > * 4567 = emplacement dans l'app du type de publicité, comme une bannière, un interstitiel ou une vidéo
 
+<div id="faq-why-does-traffic-result-in-many-blocked-installs" />
+
 #### **FAQ : pourquoi le trafic génère-t-il autant d'installations bloquées ?**
 
 Les installations peuvent être bloquées pour les motifs suivants :
@@ -285,6 +311,8 @@ Les installations peuvent être bloquées pour les motifs suivants :
 Pour éviter les blocages d'installations, veillez à n'envoyer qu'un seul paramètre d'ID de site par éditeur, comme indiqué dans notre exemple.
 
 </Accordion>
+
+<div id="levels-of-data-granularity" />
 
 ## Niveaux de granularité des données
 
@@ -302,6 +330,8 @@ Les paramètres sont :
 * `nom de campagne (c=)`
 * `Ensemble de publicités (af_adset=)`
 * `Nom de publicité (af_ad=)`
+
+<div id="example-2" />
 
 > 📄 **Exemple**
 >
@@ -370,6 +400,8 @@ Habituellement, ces caractères sont inclus dans le lien parce qu'il s'agit de m
 <Accordion title="À quoi servent les Paramètres de souscripteur ?">
 
 Les paramètres de souscripteur, c-à-d. af\_sub1, af\_sub2, jusqu'à af\_sub5, peuvent être utilisés pour enregistrer tout KPI utile. Ces paramètres sont analysés et apparaissent dans le rapport des données brutes, ce qui les rend très utiles pour l'agrégation ou le filtre des données.
+
+<div id="example-3" />
 
 > 📄 **Exemple**
 >

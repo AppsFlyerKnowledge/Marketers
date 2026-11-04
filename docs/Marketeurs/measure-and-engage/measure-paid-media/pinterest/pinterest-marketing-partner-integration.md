@@ -29,6 +29,8 @@ Chaque PMP doit être un PMP officiel. Il doit également avoir été approuvé 
 
 Pour que AppsFlyer envoie un postback au PMP, le paramètre *af\_mp=,* avec comme valeur le nom du compte AppsFlyer, doit être ajouté au lien d'attribution.
 
+<div id="note" />
+
 > 📄 **Exemple**
 >
 > <Tabs>

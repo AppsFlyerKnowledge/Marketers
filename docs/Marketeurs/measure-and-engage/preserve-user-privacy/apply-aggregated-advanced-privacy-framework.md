@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **En bref :** depuis iOS 14.5+ et le déploiement de la fonctionnalité ATT par Apple, les annonceurs utilisent le cadre de confidentialité avancée agrégée (CAA) pour contrôler la disponibilité des données d'attribution de niveau utilisateur à partir de la plateforme.
 
+<div id="aggregated-advanced-privacy-aap-framework" />
+
 ## Cadre Aggregated Advanced Privacy (AAP)
 
 Le cadre de confidentialité avancée agrégée (CAA) d'AppsFlyer empêche à la fois le suivi entre les applications et les sites web appartenant à différentes sociétés et la possibilité d'identifier de manière unique un utilisateur ou un appareil. La CAA prend comme référence les seuils de transparence du suivi d'app (ATT) d'Apple pour définir son niveau de protection de la vie privée.
@@ -35,6 +37,8 @@ Le cadre permet aux annonceurs de contrôler la disponibilité des données d'at
 Depuis iOS 14.5 et la mise en place de l'ATT par Apple, si la CAA s'applique, les données d'attribution de niveau utilisateur pour les utilisateurs non consentants sous iOS 14.5 et + ne sont pas disponibles pour les annonceurs ou les partenaires.
 
 La CAA n'affecte pas la disponibilité des données d'attribution agrégées et des rapports analytiques pour les annonceurs et les partenaires.
+
+<div id="aap-impacted-features" />
 
 ### Fonctionnalités affectées par la CAA
 
@@ -52,6 +56,8 @@ La disponibilité des données est affectée lorsque la CAA est activée comme s
 * **Données d'attribution et fraude (Protect360) :** <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions">certains champs d'attribution sont restreints ou non disponibles.</Anchor>
 * **Données sur les clics, les impressions et les clics bloqués (frauduleux) :** <Anchor target="_blank" href="/marketers/fr/docs/about-raw-data-identifier-restrictions#identifier-restriction">les identifiants liés aux utilisateurs et aux appareils</Anchor> ne sont pas disponibles.
 * **Deep linking différé** : si vous implémentez le deep linking différé dans les médias payants, utilisez <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/unifieddeeplink">l'API de deep linking unifié (UDL).</Anchor> L'ancienne API, qui utilise GCD, ne peut pas être utilisée avec des utilisateurs sans consentement. Dans le cas d'un média propre, le deep linking différé est pris en charge par GCD et la dernière API de deep linking différée.
+
+<div id="data-availability-principles-in-aggregated-advanced-privacy" />
 
 ## Principes de disponibilité des données dans le cadre de la CAA
 
@@ -75,6 +81,8 @@ Les termes définis sont utilisés dans la figure et les sections qui suivent po
 
 Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et que le paramètre af\_media\_type=web ou af\_media\_type=app doit être utilisé. Voir <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">cet article</Anchor> pour en savoir plus.
 
+<div id="paid-and-owned-media-data-availability" />
+
 ### Disponibilité des données sur les médias payants et propres
 
 <div id="paid-media" />
@@ -82,6 +90,8 @@ Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et 
 <Accordion title="Médias payants">
 
 Les médias payants comprennent les réseaux publicitaires mobile avec des intégrations dans la plate-forme AppsFlyer, avec lesquels les annonceurs mènent des campagnes. 
+
+<div id="paid-media-data-availability-by-att-status" />
 
 #### Disponibilité des données média payantes selon le statut ATT
 
@@ -99,6 +109,8 @@ Les médias propres comprennent les campagnes de marketing numérique utilisées
 
 </Accordion>
 
+<div id="controlling-advanced-aggregated-privacy" />
+
 ## Contrôle du cadre AAP
 
 <div id="aap-central-switch" />
@@ -108,6 +120,8 @@ Les médias propres comprennent les campagnes de marketing numérique utilisées
 Le CAA est un commutateur au niveau de l'application qui contrôle les paramètres de confidentialité avancés pour tous les partenaires de l'application sélectionnée. Le CAA se trouve sur la page **Paramètres de l'app**. Lorsque le CAA est activé, les commutateurs **Confidentialité avancée** pour tous les partenaires de l'application sélectionnée sont automatiquement activés et ne peuvent pas être modifiés. Lorsque ce commutateur est désactivé, les annonceurs peuvent aller sur le site de chaque partenaire individuellement et activer **Confidentialité avancée**.
 
 ![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+
+<div id="aap-enabled" />
 
 #### **CAA activée**
 
@@ -161,6 +175,8 @@ Comme indiqué précédemment, le paramètre CAA remplace le paramètre Confiden
 
 <Accordion title="Réseaux publicitaires">
 
+<div id="postbacks-to-ad-network-partners" />
+
 #### **Postbacks aux partenaires du réseau publicitaire**
 
 <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks">La CAA affecte les réseaux publicitaires</Anchor> par rapport aux données auxquelles ils ont accès et est conforme aux principes de CAA qui s'appliquent aux annonceurs dans le contexte d'un réseau publicitaire. Les données sont partagées avec les réseaux publicitaires via des postbacks qui diffèrent entre le réseau publicitaire attribué et le réseau publicitaire non attribué.
@@ -169,6 +185,8 @@ Les règles de partage des données décrites s'appliquent à un réseau publici
 
 * AAP : commutateur au niveau de l'application
 * AP : commutateur au niveau du partenaire
+
+<div id="postbacks-for-attributed-ad-networks" />
 
 #### **Postbacks pour les réseaux publicitaires attribués**
 
@@ -184,6 +202,8 @@ Les différents scénarios de consentement de l'utilisateur et les types de post
 ![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
 
 Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et que le paramètre af\_media\_type=web ou af\_media\_type=app doit être utilisé. Voir <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">cet article</Anchor> pour en savoir plus.
+
+<div id="postbacks-for-unattributed-partners" />
 
 #### **Postbacks pour les partenaires non attribués**
 
@@ -242,6 +262,8 @@ Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et 
 3. Cliquez sur ***Enregistrer***.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

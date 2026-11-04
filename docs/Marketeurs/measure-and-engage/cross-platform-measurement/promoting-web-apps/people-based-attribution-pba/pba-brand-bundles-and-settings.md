@@ -27,9 +27,13 @@ x-zendesk:
 
 ![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
 
+<div id="about-brand-bundles" />
+
 ## À propos des bundles de marques
 
 Les marques opèrent dans un écosystème qui englobe les propriétés web et mobile. En tant qu'annonceur, vous aurez besoin d'avoir une vision des performances globales de la marque sur l'ensemble des plateformes (web et mobile). Dans la PBA, les bundles de marques réunissent les données des propriétés mobile et web afin de générer des analyses et des données brutes.
+
+<div id="what-is-a-web-app" />
 
 > 📘 **Qu'est-ce qu'une application web ?**
 >
@@ -45,6 +49,8 @@ Les marques opèrent dans un écosystème qui englobe les propriétés web et mo
 * Les apps ne peuvent pas être supprimées transférées d'un bundle à l'autre sans devoir [supprimer le bundle d'origine.](/docs/pba-brand-bundles-and-settings#what-happens-if-i-delete-a-bundle)
   * Lors de la suppression d'un lot, AppsFlyer cesse d'attribuer des données PBA pour le bundle et l'accès aux données historiques n'est plus disponible.
 
+<div id="accessing-brand-bundles" />
+
 ## Accéder aux bundles de marques
 
 Accédez à la page **Bundles de marques** pour gérer les bundles de marques et leurs paramètres :
@@ -52,6 +58,8 @@ Accédez à la page **Bundles de marques** pour gérer les bundles de marques et
 * Allez dans **Mes apps** > **Voir les bundles de marques**.  
                            - ou -
 * Dans l'arborescence de navigation à gauche du tableau de bord, allez dans **Configuration** > **Bundles de marques**.
+
+<div id="managing-brand-bundles" />
 
 ## Gérer les bundles de marque
 
@@ -85,6 +93,8 @@ Avant de procéder, assurez-vous que toutes les apps que vous souhaitez inclure 
      * Les apps mobile ne sont pas nécessaires pour créer un bundle.
      * Il n'y a pas de limite au nombre d'apps mobile que vous pouvez inclure dans un bundle.
 4. Cliquez sur Créer un bundle.
+
+<div id="important" />
 
 > 🚧 **Important !**
 >
@@ -195,6 +205,8 @@ Pour modifier le bundle dans lequel une app est incluse, supprimez le bundle ini
 
 <Accordion title="Si je supprime un bundle, que se passe-t-il ?">
 
+<div id="faqs-what-happens-if-i-delete-a-bundle" />
+
 #### FAQ Que se passe-t-il si je supprime un bundle ?
 
 Si vous supprimez un bundle :
@@ -214,6 +226,8 @@ Si vous supprimez un bundle :
 * **Autres utilisateurs du compte :** vérifiez auprès d'un admin de compte que vous avez le rôle et les autorisations nécessaires pour accéder aux apps que vous essayez d'ajouter.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

@@ -30,11 +30,15 @@ x-zendesk:
 ---
 > **En bref :** comprendre pourquoi certaines dimensions de données agrégées s'affichent comme *dépassées*, et savoir comment respecter les limites de cardinalité.
 
+<div id="what-are-exceeded-dimensions" />
+
 ## Qu’est-ce qui fait qu’une dimension est dépassée ?
 
 AppsFlyer récupère vos données d'installation et d'événement et les agrège. Les données sont agrégées à l'aide des valeurs uniques en lien avec une dimension donnée. Le nombre de valeurs uniques dans une dimension est appelé *cardinalité*. La plupart des outils d'analyse et de reporting agrégés possède une limite de cardinalité par dimension. Lorsque le nombre de valeurs uniques dans une dimension dépasse la limite de cardinalité fixée, les données excédantes sont rassemblées dans un groupe *dépassement.* Et lorsque le nombre de valeurs uniques dans la dimension d’une source de média dépasse la limite de cardinalité, les données restantes de la source de média **ainsi que toutes les dimensions basées sur les sources média restantes** sont rassemblées dans des groupes *dépassement.*
 
 Les exemples suivants détaillent le principe de cardinalité, et vous expliquent comment elle se répercute dans vos rapports.
+
+<div id="example" />
 
 > 📄 **Exemple**
 >
@@ -64,6 +68,8 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 
 <table><tbody><tr><th>Dimension</th><th>Nom du groupe de dépassement</th><th>Type de limite par...</th><th>Limite de cardinalité par jour </th><th>Cardinalité pour Protect360 par jour</th></tr><tr><td>Publicité</td><td>Exceeded_Ad_Limit</td><td>Source média</td><td>1000</td><td>-</td></tr><tr><td>ID publicitaire</td><td>Exceeded_AdID_Limit</td><td>Source média</td><td>1000</td><td>-</td></tr><tr><td>Adset</td><td>Exceeded_AdSet_Limit</td><td>Source média</td><td>1000</td><td>-</td></tr><tr><td>ID d’adset</td><td>Exceeded_AdSetID_Limit</td><td>Source média</td><td>1000</td><td>-</td></tr><tr><td>Campagne</td><td>Exceeded_Campaign_Limit</td><td>Source média</td><td>3000</td><td><ul><li>Installations/événements in-app : 3000</li><li>Impressions/clics : 100 </li></ul></td></tr><tr><td>ID de campagne</td><td>Exceeded_CampaignID_Limit</td><td>Source média</td><td>3000</td><td><ul><li>Installations/événements in-app : 3000</li><li>Impressions/clics : 100 </li></ul></td></tr><tr><td>Canal</td><td>Exceeded_Channels_Limit</td><td>Source média</td><td>20</td><td>20</td></tr><tr><td>ID de site</td><td>Exceeded_SiteID_Limit</td><td>Source média</td><td>1000</td><td><ul><li>Installations/événements in-app : 1000</li><li>Impressions/clics : 100 </li></ul></td></tr><tr><td>Événements</td><td>Exceeded_Events_Limit</td><td>App </td><td>300</td><td>Installations/événements in-app : 300</td></tr><tr><td>Mots-clés</td><td>Exceeded_Keywords_Limit</td><td>Source média</td><td>1000</td><td>-</td></tr><tr><td>Noms des sources média\*</td><td>Exceeded_MediaSource_Limit</td><td>App</td><td>1000</td><td><ul><li>Installations/événements in-app : 1000</li><li>Impressions/clics : 100 </li></ul></td></tr><tr><td colspan="5">\* Si <span>le nombre de valeurs uniques dans la dimension de la source média dépasse la limite de cardinalité, les données restantes de la source média, </span><strong>ainsi que toutes les dimensions basées sur les sources média restantes,</strong><span> sont rassemblées dans des </span><span> groupes </span><em>dépassement.</em> </td></tr></tbody></table>
 
+<div id="cardinality-limits-per-dimension" />
+
 ## Limites de cardinalité par dimension
 
 <div id="exceeded_adset_limit-and-exceeded_ad_limit" />
@@ -72,6 +78,8 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 
 * Jusqu'à 1000 noms d'adset uniques et 1000 noms de publicité uniques par source média sont possibles.
   * Un jour donné, les informations pour les adsets au-delà du 1001ième sont regroupées dans la source **Exceeded\_AdSet\_Limit.** Il en va de même pour la source **Exceeded\_Ad\_Limit.**
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
@@ -98,6 +106,8 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 
 * Jusqu'à 3000 noms de campagne uniques par jour sont possibles.
   * Un jour donné, les informations des campagnes au delà de la 3001ième sont regroupées dans la source **Exceeded\_Campaign\_Limit.**
+
+<div id="tip-1" />
 
 > 👍 **Astuce**
 >
@@ -132,12 +142,16 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 * Jusqu'à 300 noms d'événements uniques par jour sont possibles.
   * Pour un jour donné, toutes les informations d’événements au delà du 301ième événement sont attribuées au nom d'événement **Exceeded\_Events\_Limit.**
 
+<div id="tip-2" />
+
 > 👍 **Astuce**
 >
 > Pour ne plus voir s’afficher **Exceeded\_Events\_Limit**, vous pouvez utiliser :
 >
 > * <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">Événements in-app riches</Anchor> : Plutôt que de rapporter des centaines d'événements différents, mieux vaut fixer un petit nombre de noms d'événements généraux (idéalement jusqu'à 20). Utilisez des valeurs d'événement dynamiques pour différencier ces événements. Vous pourrez ainsi optimiser selon les paramètres de valeur, et obtenir une analyse basée sur les valeurs des événements (disponibles dans le <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">rapport de données brutes des événements in-app).</Anchor>
 > * <Anchor target="_blank" href="/marketers/fr/docs/implement-validation-rules-to-prevent-fraud">Règles de validation</Anchor> pour retirer les événements in-app inutiles de la plateforme AppsFlyer.
+
+<div id="example-1" />
 
 > 📄 **Exemple**
 >
@@ -170,6 +184,8 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 * Jusqu'à 1000 ID de site uniques par jour et par source média sont possibles.
   * Un jour donné, les informations sur les ID de site au delà du 1001ième ID par source média, sont regroupées dans un seul ID de site **Exceeded\_SiteID\_Limit.** Si l'ID de site **Exceeded\_SiteID\_Limit** s’affiche, c’est qu'il y a trop d'ID de site utilisés par la source média en question, tenter d'optimiser le trafic de la source en fonction des ID de site sera donc beaucoup moins précis et efficace.
 
+<div id="tip-3" />
+
 > 👍 **Astuce**
 >
 > «Diviser pour mieux régner». Au lieu d'utiliser des milliers d'ID de site par source média, ce qui risque de fausser vos données agrégées, utilisez un second paramètre **af\_sub\_siteid** dans vos liens d'attribution. Fixez un petit nombre d'ID de sites généraux (idéalement jusqu'à 50), puis attribuez-leur tous les ID de sites précédents en tant qu’ID de sous-sites. Vous pourrez ainsi :
@@ -177,13 +193,19 @@ Le tableau ci-dessous détaille les limites de cardinalité par jour et par appl
 > 2. Optimiser correctement en fonction du trafic des ID de site.
 > 3. Effectuer des analyses approfondies basées sur les ID de site et les ID de sous-site dans les données brutes.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Dans le rapport de rétention, vous ne voyez pas s’afficher Exceeded\_SiteID\_Limit, mais tous les ID de site ne sont pas listés. Les ID de sites sont affichés de manière aléatoire, mais l'interface utilisateur choisit d’afficher l’ensemble des sites (ceux qui dépassent la limite). Pour éviter ce problème, récupérez les données de rétention depuis l'API principale.
 
 </Accordion>
 
+<div id="how-to-avoid-getting-exceeded-sources" />
+
 ## Comment éviter le dépassement des sources ?
+
+<div id="the-long-term-solution" />
 
 ### Une solution à long terme
 
@@ -191,11 +213,15 @@ La plupart des annonceurs ne rencontrent pas de **dépassement** de source, car 
 
 Si vous avez des **dépassements** de source, c'est probablement parce qu'une ou plusieurs sources média utilisent des valeurs dynamiques dans les noms de campagnes, ID de site, adsets ou publicités. Les événements dynamiques in-app dans le code de l'app peuvent provoquer l'apparition de données **Exceeded\_Events\_Limit.**
 
+<div id="tip-4" />
+
 > 👍 **Astuce**
 >
 > N'utilisez que des valeurs statiques pour les noms des événements in-app, campagnes, ID de site, adsets et publicités afin d'éviter le **dépassement** de vos sources.
 >
 > Veuillez également suivre nos conseils ci-dessus pour éviter le **dépassement** de source.
+
+<div id="the-short-term-solution" />
 
 ### Une solution à court terme
 
@@ -204,6 +230,8 @@ Mettre en place une solution à long terme peut prendre de quelques jours à que
 Mais qu'en est-il si vous souhaitez consulter vos données sans attendre ?
 
 Comme nous l’avons vu, un **dépassement** de source se produit lorsque AppsFlyer reçoit un nombre de clics (ou d’événements) N+1 au cours d'une même journée. Il est possible que les sources média que vous utilisez le plus arrivent plus tard dans la journée et soient mêlées aux données d’un **dépassement** de source. Voici une astuce pour minimiser l'effet de tout **dépassement** de source :
+
+<div id="tip-5" />
 
 > 👍 **Astuce**
 >

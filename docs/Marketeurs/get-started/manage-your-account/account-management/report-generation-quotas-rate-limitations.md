@@ -23,6 +23,8 @@ x-zendesk:
 ---
 > **En bref :** un principe de quota (seuil limite) limite le nombre de rapports qui peuvent être générés chaque jour via l'API Pull, et par la page d'exportation des données.
 
+<div id="rate-limits-for-reports" />
+
 ## Seuils limite pour les rapports
 
 Le nombre maximum de rapports pouvant être générés par jour et par type de rapport. Le quota varie en fonction de votre forfait d'abonnement.
@@ -33,6 +35,8 @@ Le nombre maximum de rapports pouvant être générés par jour et par type de r
 * **Réseaux publicitaires** : les rapports générés par les réseaux publicitaires ne sont pas comptabilisés dans le quota des annonceurs.
 * **Jour**: les chiffres sont calculés chaque jour à 00:00 UTC.
 
+<div id="aggregated-and-analytics-reports" />
+
 ### Rapports agrégés et analytiques
 
 | Outil de fourniture des données | Quota |
@@ -42,6 +46,8 @@ Le nombre maximum de rapports pouvant être générés par jour et par type de r
 | Master API | Illimité |
 | API de cohorte | 60 appels par minute et par compte |
 | Rapports agrégés SKAN | 60 appels par minute et par compte |
+
+<div id="raw-data" />
 
 ### Données Brutes
 
@@ -58,6 +64,8 @@ Le nombre maximum de rapports pouvant être générés par jour et par type de r
 
 Pour plus d'infos, consultez la FAQ qui suit le tableau.
 
+<div id="ad-network-postback-reports-daily-quota" />
+
 #### Quota quotidien de données brutes pour les réseaux publicitaires
 
 | Groupe | Type de rapport  <br />(chaque type de rapport a un quota propre) | Quota au niveau de l'app | Quota au niveau du compte |
@@ -72,6 +80,8 @@ Pour plus d'infos, consultez la FAQ qui suit le tableau.
 * Q : Pour une application donnée, est-il possible de générer 24 rapports d'installation organiques, plus 24 rapports d'installation non organiques, plus 24 rapports de conversion de retargeting ?R : Oui Chaque type de rapport a un quota propre.
 * Q: Mon compte contient 25 apps. Est-il possible de générer 10 rapports d'installations organiques pour chaque application ?  
   R : Non. Cela fait un total de 250 rapports, qui dépasse le seuil maxi au niveau du compte qui est de 120.
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

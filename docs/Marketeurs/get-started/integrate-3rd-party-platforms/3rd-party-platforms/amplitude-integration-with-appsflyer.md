@@ -54,12 +54,18 @@ Pour obtenir une description détaillée de l'en-tête de la fenêtre de configu
 
 L'onglet Intégration est divisé en différentes sections, comme décrit ci-dessous.
 
+<div id="activate-partner" />
+
 ### Activation du partenaire
 
 Lors de votre **première visite**, vous devrez activer l'option **Activer le partenaire** pour permettre la configuration des paramètres de l'onglet d'intégration. L'option doit rester activée tant que vous travaillez avec le partenaire.  
 En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">l'activation d'un partenaire.</Anchor>
 
+<div id="general-settings" />
+
 ### Paramètres généraux
+
+<div id="advanced-data-sharing" />
 
 #### Partage avancé des données
 
@@ -79,10 +85,14 @@ Pour partager des informations d'installation supplémentaires avec Amplitude, a
 | af\_sub2 | af\_sub2 |
 | app\_version | app\_version |
 
+<div id="amplitude-eu-data-center" />
+
 #### Centre de données UE Amplitude
 
 Lorsque **Centre de données UE Amplitude** est désactivé, les postbacks d'installation sont envoyés au centre de données des États-Unis.  
 Pour envoyer les postbacks d'installation au centre de données européen d'Amplitude, activez le centre de données UE d'Amplitude.
+
+<div id="api-key" />
 
 #### Clé API
 
@@ -104,9 +114,13 @@ Amplitude se connecte à AppsFlyer via une clé API unique. Si vous ne l'avez pa
    <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Procédez à la configuration d'Amplitude dans le tableau de bord d'AppsFlyer.
 
+<div id="default-postbacks" />
+
 ### Postbacks par défaut
 
 AppsFlyer envoie des postbacks automatiques pour les installations utilisateurs d'Amplitude uniquement lorsqu'elles sont attribuées à Amplitude.
+
+<div id="in-app-event-settings" />
 
 ### Paramètres des événements in-app
 
@@ -121,6 +135,8 @@ Une fois la configuration sauvegardée, AppsFlyer envoie les données suivantes 
 * Nom de la campagne
 
 L'envoi de l'IDFA pour les appareils iOS est soumis au <Anchor target="_blank" href="/marketers/fr/docs/apply-aggregated-advanced-privacy-framework">consentement ATT de l'utilisateur et aux paramètres de confidentialité avancés</Anchor>.
+
+<div id="in-app-event-postbacks" />
 
 ### Postback d'évènements in-app
 
@@ -159,6 +175,8 @@ Les revenus publicitaires ne sont pas pris en charge dans l'intégration avec ce
 Les autorisations ne sont pas disponibles pour Amplitude.
 
 </Accordion>
+
+<div id="viewing-attribution-data-in-the-amplitude-console" />
 
 ## Visualisation des données d'attribution dans la console Amplitude
 

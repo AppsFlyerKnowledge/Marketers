@@ -27,6 +27,8 @@ x-zendesk:
 
 <Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
+<div id="the-appsflyer-cross-platform-solution" />
+
 ## La solution multiplateforme AppsFlyer
 
 Dans le paysage numérique d'aujourd'hui, les professionnels de la croissance doivent relever le défi d'atteindre les consommateurs à travers de multiples dispositifs et plateformes. Les méthodes de mesure traditionnelles ne permettent pas d'appréhender l'ensemble des parcours des utilisateurs qui s'étendent sur plusieurs plateformes. La mesure multiplateforme est essentielle pour comprendre l'impact des activités de marketing et prendre des décisions éclairées.
@@ -35,9 +37,13 @@ AppsFlyer offre une solution multiplateforme étendue qui complète les outils d
 
 Les annonceurs peuvent faire la promotion d'une application sur la même plateforme ou sur une plateforme différente de celle sur laquelle la publicité est affichée. Par exemple, un annonceur peut afficher une publicité pour une application Steam sur la plateforme Steam. Ils peuvent également afficher une publicité pour une application Steam sur le web, par exemple via Google Ads. Quelle que soit leur stratégie marketing, les annonceurs s'intègrent à AppsFlyer pour recevoir des données d'attribution et des mesures de performance concernant les sources (non organiques ou organiques) et les campagnes qui génèrent des installations d'applications sur les plates-formes CTV, PC et consoles, ainsi que des événements post-installation. Les spécialistes du marketing utilisent ces informations pour calculer la valeur de la durée de vie de l'utilisateur (LTV) et pour mesurer et optimiser les activités de marketing. <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model">En savoir plus sur l'attribution d'AppsFlyer</Anchor>
 
+<div id="supported-platforms" />
+
 ### Plateformes prises en charge
 
 <table><thead><tr><th>Plateforme</th><th colspan="2">Méthode d'intégration AppsFlyer</th></tr><tr><th> </th><th>S2S</th><th>SDK</th></tr></thead><tbody><tr><td>Android TV</td><td><span>-</span></td><td><span><span>✓</span></span></td></tr><tr><td>tvOS (Apple TV)</td><td><span>-</span></td><td><span><span>✓</span></span></td></tr><tr><td>MacOS</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Amazon Fire TV</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Chromecast</td><td><span><span>-</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Roku</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Vizio</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Samsung</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>LG</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>PlayStation</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Vidaa</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Steam</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Native PC</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Meta Quest (Oculus)</td><td><span><span>✓</span></span></td><td><span><span><span>✓</span></span></span></td></tr><tr><td>Epic Games</td><td><span><span>✓</span></span></td><td><span><span>✓</span></span></td></tr><tr><td>Nintendo Switch</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr><tr><td>Xbox</td><td><span><span>✓</span></span></td><td><span>-</span></td></tr></tbody></table>
+
+<div id="cross-platform-attribution-flows" />
 
 ## Attribution multiplateforme
 
@@ -139,6 +145,8 @@ Informations supplémentaires
 * <Anchor target="_blank" href="/marketers/fr/docs/cross-platform-landing-pages-with-smart-script">Apprenez à créer des pages d'atterrissage multiplateformes avec Smart Script</Anchor>
 
 </Accordion>
+
+<div id="data-availability" />
 
 ## Disponibilité des données
 

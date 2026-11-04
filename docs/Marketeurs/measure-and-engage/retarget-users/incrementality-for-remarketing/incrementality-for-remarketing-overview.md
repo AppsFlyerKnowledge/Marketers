@@ -27,6 +27,8 @@ x-zendesk:
 
 > **En bref :** mesurez le saut incrémentiel généré par les campagnes de retargeting
 
+<div id="what-is-incrementality" />
+
 ## Qu'est-ce que l'incrémentalité ?
 
 La meilleure façon de comprendre le fonctionnement de l’incrémentalité est de voir un exemple :
@@ -43,11 +45,15 @@ Afin de répondre objectivement à ces questions, il faut prendre en compte plus
 
 Cette différence entre les conversions totales et celles qui auraient eu lieu de toute façon, c’est ce que l’on nomme **le saut incrémentiel** (ou simplement **«l’incrémentalité »**), et il est essentiel pour déterminer la véritable valeur d'une campagne. Il peut être assez difficile à mesurer, mais c'est précisément ce à quoi sert la solution d’AppsFlyer *Incrementality*.
 
+<div id="incrementality-experiments" />
+
 ### Expériences d'incrémentalité
 
 Avec Incrementality, il est facile de mesurer le saut incrémentiel en créant des expériences qui permettent de mesurer et comparer les comportements de groupes similaires. Ces groupes ne varient que dans la mesure où certains d’entre eux (les **« groupes test »**) sont soumis à votre campagne, quand un autre groupe (le **« groupe témoin »**) ne l'est pas.
 
 <Anchor target="_blank" href="/marketers/fr/docs/run-an-incrementality-for-remarketing-experiment">En savoir plus sur la création et la conduite d'expériences d'incrémentalité</Anchor>
+
+<div id="calculation-methodology" />
 
 ## Méthodologie de calcul
 
@@ -64,9 +70,13 @@ AppsFlyer Incrementality utilise 2 méthodes différentes pour calculer le saut�
 
 Bien que **la méthode basée sur l’effectivité soit préférable** pour évaluer les performances des campagnes, son calcul nécessite la mesure de points de données qui ne sont pas proposés par tous les réseaux publicitaires. Pour ces réseaux, la méthode de l’intention-de-traiter sera utilisée.
 
+<div id="note" />
+
 > 📘 **Remarque**
 >
 > Avant le 16 décembre 2021, le saut était calculé uniquement selon le principe de l’intention-de-traiter. Toutefois, les données des périodes antérieures à cette date ont été mises à jour pour calculer le taux avec la méthode basée sur l’effectivité, le cas échéant. Vous pouvez donc revoir certaines expériences anciennes pour obtenir de nouveaux résultats à la lumière de la nouvelle méthodologie.
+
+<div id="itt-based-lift" />
 
 #### Saut basé sur l'ITT
 
@@ -83,6 +93,8 @@ Bien que ce ne soit pas la meilleure méthode pour mesurer le saut dans notre co
 **Interprétation des résultats**
 
 L’hypothèse selon laquelle tous les membres du groupe test ont été véritablement touchés par une campagne produit souvent des taux de conversion bas, et de fait : un faible saut incrémentiel.
+
+<div id="reach-based-lift" />
 
 #### Saut basé sur l’effectivité
 
@@ -102,6 +114,8 @@ Si ces données ne sont pas transmises, la mesure de l'incrémentalité n'est pa
 **Interprétation des résultats**
 
 Comme le calcul du saut basé sur l’effectivité ne prend en compte que les membres du groupe test qui ont été *effectivement* touchés par une campagne, les réseaux mesurés via l'incrémentalité basée sur l’effectivité afficheront généralement des résultats gonflés (le saut positif sera beaucoup plus grand et le saut négatif sera beaucoup plus bas).
+
+<div id="best-practices" />
 
 #### Recommandations
 
@@ -134,6 +148,8 @@ Dans le tableau de bord d'incrémentalité, la probabilité statistique est indi
 
 Pour [les mesures au niveau du groupe test](/docs/incrementality-for-remarketing-overview#::2c5f08ec) (par opposition aux [mesures par utilisateur](/docs/incrementality-for-remarketing-overview#::6143ff4f)), le saut est calculé d’après un **groupe de contrôle mis à l'échelle**. En d’autres termes, la taille du groupe de contrôle s’ajuste à la taille du groupe de contrôle de chaque source média.
 
+<div id="example" />
+
 > 📄 **Exemple**
 >
 > Voyons le scénario suivant :
@@ -151,6 +167,8 @@ Pour [les mesures au niveau du groupe test](/docs/incrementality-for-remarketing
 > Le saut sera calculé sur la base d'un groupe témoin ajusté à 100 membres, et de 22 conversions incrémentielles.
 
 </Accordion>
+
+<div id="incrementality-dashboard" />
 
 ## Tableau de bord d'incrémentalité
 
@@ -360,6 +378,8 @@ Pour [les mesures au niveau du groupe test](/docs/incrementality-for-remarketing
 
 </Accordion>
 
+<div id="raw-data-reports" />
+
 ## Rapports de données brutes
 
 Les rapports de données brutes d'incrémentalité vous permettent d’analyser l'interaction des utilisateurs avec les campagnes de remarketing :
@@ -403,6 +423,8 @@ La logique de base de la structure du rapport est la suivante :
 
 La disponibilité des champs varie selon le type de rapport, comme indiqué ci-dessous :
 
+<div id="fields-unique-to-incrementality-per-report-type" />
+
 #### Champs spécifiques à l'incrémentalité (par type de rapport)
 
 | Champ | Description | Première vue | Événements in-app | Sessions | Désinstallations |
@@ -416,11 +438,15 @@ La disponibilité des champs varie selon le type de rapport, comme indiqué ci-d
 | <span id="timestamp"></span>timestamp | Horodatage de l'événement AAAA-MM-JJ HH:MM |  | Y | Y |  |
 | <span id="app_ids"></span>app\_ids | ID d'app associés aux règles de l’audience | Y |  |  |  |
 
+<div id="other-incrementality-report-fields-per-report-type" />
+
 #### Autres champs du rapport d'incrémentalité (par type de rapport)
 
 <table><thead><tr><th>Champ</th><th>Nom d'affichage\*</th><th>Première-vue</th><th>Événements in-app</th><th>Sessions</th><th>Désinstallations</th></tr></thead><tbody><tr><td><span id="advertising_id"></span>advertising_id</td><td>ID publicitaire (GAID)</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="android_id"></span>android_id</td><td>ID Android </td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="app_id"></span>app_id</td><td>ID d'app</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="app_name"></span>app_name</td><td>Nom de l'app</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="app_version"></span>app_version</td><td>Version de l'app</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="appsflyer_id"></span>appsflyer_id</td><td>ID AppsFlyer</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="revenue_alt"></span>revenue_alt</td><td>Devise spécifique à l'app</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="bundle_id"></span>bundle_id</td><td>ID de bundle</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="country"></span>country</td><td>Code pays</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="currency"></span>currency</td><td>Code de la devise</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="customer_user_id"></span>customer_user_id</td><td>ID utilisateurdu client</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="brand"></span>brand</td><td>Marque de l'appareil</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_category"></span>device_category</td><td>Catégorie de l'appareil</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="model"></span>model</td><td>Modèle de l'appareil</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_model"></span>device_model</td><td>Modèle de l'appareil</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="device_type"></span>device_type</td><td>Type d'appareil</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="event_name"></span>event_name</td><td>Nom de l'événement</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="event_revenue"></span>event_revenue</td><td>Revenu des évènements</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_currency"></span>event_revenue_currency</td><td>Devise du revenu des évènements</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_revenue_u_s_d"></span>event_revenue_u_s_d</td><td>Revenu de l'évènement en USD</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="event_time"></span>event_time</td><td>Heure de l'évènement</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="event_value"></span>event_value</td><td>Valeur de l'événement</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="idfa"></span>idfa</td><td>IDFA</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="idfv"></span>idfv</td><td>IDFV</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="imei"></span>imei</td><td>imei</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="is_purchase_validated"></span>is_purchase_validated</td><td>Est validé par reçu</td><td> </td><td>Y</td><td> </td><td> </td></tr><tr><td><span id="os_version"></span>os_version</td><td>Version OS</td><td> </td><td>Y</td><td>Y</td><td> </td></tr><tr><td><span id="platform"></span>platform</td><td>Plateforme</td><td> </td><td>Y</td><td>Y</td><td>Y</td></tr><tr><td><span id="sdk_version"></span>sdk_version</td><td>Version du SDK</td><td> </td><td>Y</td><td>Y</td><td> </td></tr></tbody><tfoot><tr><td colspan="6"><span id="-according-to-raw-data-specification"></span>\* <a href="./raw-data-field-dictionary#data-fields-dictionary" target="_blank">Selon les spécifications des données brutes</a> </td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="incrementality-specifications-and-limitations" />
 
 ## Spécifications et limitations de l'incrémentalité
 
@@ -436,6 +462,8 @@ La disponibilité des champs varie selon le type de rapport, comme indiqué ci-d
 | Actualisation des données | Tableau de bord : tous les jours à 18:00 UTC pour le jour précédent<br /><br />Rapports de données brutes dans Data Locker : tous les jours de 19:00 à 23:00 pour le jour précédent |
 | Données historiques | N/A |
 | Accès utilisateur du compte | Oui (selon autorisations du compte) |
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

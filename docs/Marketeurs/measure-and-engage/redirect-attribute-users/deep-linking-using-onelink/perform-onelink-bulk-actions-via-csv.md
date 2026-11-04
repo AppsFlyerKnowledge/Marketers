@@ -24,6 +24,8 @@ x-zendesk:
 
 Les groupes de liens vous permettent de créer et d'afficher des liens créés en groupes. Ces groupes de liens sont regroupés dans une collection qui vous permet d'effectuer des actions sur l'ensemble de la collection, notamment l'ajout de nouveaux liens ou leur téléchargement.
 
+<div id="getting-started" />
+
 ## Mise en route
 
 1. Dans AppsFlyer, allez dans **Expériences et Deep Linking** > **Groupes de liens OneLink**.
@@ -31,6 +33,8 @@ Les groupes de liens vous permettent de créer et d'afficher des liens créés e
    1. **Démarrer** - (envoyer pour créer votre première collection).
    2. **Créer un template OneLink** - Un template OneLink est nécessaire pour créer une collection. Voir <Anchor target="_blank" href="/marketers/fr/docs/create-a-onelink-template">Templates OneLink</Anchor>.
    3. **Mise à niveau** - Les groupes de liens ne sont pas disponibles avec votre package actuel. Contactez votre CSM ou écrivez à [hello@appsflyer.com](mailto:hello@appsflyer.com) pour obtenir une mise à niveau.
+
+<div id="creating-your-first-collection" />
 
 ## Créer votre première collection
 
@@ -51,6 +55,8 @@ Les groupes de liens sont gérés dans des collections.
   * Actuellement, la limite par défaut est fixée à 20 000 créations de liens par mois.
 * La section **Collections** vous permet de créer une nouvelle collection et d'effectuer d'autres actions sur vos collections de liens actuelles.
 * Si vous avez plus de sept collections, vous pouvez effectuer des recherches et filtrer votre liste de collections.
+
+<div id="other-actions" />
 
 ## Autres actions
 
@@ -175,6 +181,8 @@ Les collections peuvent être vides pour les raisons suivantes :
 * La création de nouvelle collection a été interrompu ou ne s'est pas achevé avant la création des liens. Ce qui crée une collection vide.
 
 </Accordion>
+
+<div id="general-information" />
 
 ## Informations générales
 

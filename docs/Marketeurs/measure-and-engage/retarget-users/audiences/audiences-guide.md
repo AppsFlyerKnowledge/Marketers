@@ -29,6 +29,8 @@ x-zendesk:
 
 ![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
 
+<div id="audiences-basics" />
+
 ## Les bases de l'audience
 
 Avec AppsFlyer Audiences vous créez rapidement des segments d’audience que vous connectez à vos canaux propriétaires et payants, ainsi, vous diffusez des campagnes sur mesure qui améliorent l’engagement et les performances. De plus, une fois la campagne lancée, vous pouvez suivre les résultats de performance dans Audiences.
@@ -45,9 +47,13 @@ Toutes les informations permettant d'importer les données d'une audience vers u
 >
 > Afin de garantir la conformité avec les règles de confidentialité d'iOS 14.5 et de protéger la vie privée des utilisateurs, Audiences vous laisse l'entière liberté de définir quels identifiants sont partagés avec les partenaires, que ce soit au niveau du compte ou pour chacune des connexions du partenaire.
 
+<div id="audience-split-and-incrementality-testing" />
+
 ### Partage d'audience et test d'incrémentalité
 
 Le test d'incrémentalité mesure l'impact réel de vos campagnes grâce à des tests A/B qui mesurent avec précision l’écart incrémentiel, c'est-à-dire la différence entre les conversions qui ont eu lieu suite à vos campagnes marketing et celles qui auraient eu lieu de toutes manières. AppsFlyer Audiences prépare les tests grâce à une fonctionnalité optionnelle qui répartit l'audience entre les partenaires média sélectionnés et un groupe de contrôle. Vous pouvez ainsi utiliser le tableau de bord d'incrémentalité pour savoir ce que vous rapporte vraiment vos campagnes.
+
+<div id="get-started" />
 
 ## Démarrer
 
@@ -61,6 +67,8 @@ Suivez ces étapes pour démarrer avec Audiences :
 | 4 | Connecter l'audience à un ou plusieurs partenaires média |
 | Optionnel | [Partagez l'audience entre les partenaires et un groupe de contrôle](/docs/audiences-guide#audience-split-and-control-groups) |
 | Optionnel | <Anchor target="_blank" href="/marketers/fr/docs/audiences-create-better-audiences-with-user-attribute-data">Importer les attributs d'utilisateur</Anchor> |
+
+<div id="create-and-manage-audiences" />
 
 ## Créer et gérer les audiences
 
@@ -111,6 +119,8 @@ Choisissez parmi plus de 30 audiences dans les catégories **acquisition, activa
 * Encourager l’achat
 * Monétiser les acheteurs
 * Et bien plus encore...
+
+<div id="example-use-case" />
 
 > 📄 **Exemple d'utilisation**
 >
@@ -186,6 +196,8 @@ L’évaluation des règles d’audience est effectuée à l’aide d’un ident
     * Lors de la création d’une audience avec CUID comme identifiant, l’appairage du CUID doit avoir été réceptionné par AppsFlyer lors de l’installation (et pas seulement lors des événements post-installation), ceci afin de garantir une association complète avec les appareils concernés, et un enrichissement réussi avec les ID d’appareil (soit GAID et IDFA). <Anchor target="_blank" href="/marketers/fr/docs/customer-user-id-field-cuid#paramétrer-le-cuid">En savoir plus</Anchor>
 
 <Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+
+<div id="example-device-id-vs-cuid" />
 
 > 📄 **Exemple : ID d’appareil et CUID**
 >
@@ -341,6 +353,8 @@ Activez l'option qui divise l'audience entre les partenaires et un groupe de con
 
 </Accordion>
 
+<div id="all-about-rulesets" />
+
 ## Tout savoir sur les ensembles de règles
 
 Apprenez à utiliser les ensembles de règles pour définir vos audiences.
@@ -366,11 +380,15 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 
 <Accordion title="Exemples d’ensembles de règles">
 
+<div id="example-location-based-rule" />
+
 > 📄 **Exemple : Règle basée sur la localisation**
 >
 > Utilisateurs de New York qui ont désinstallé l’app au cours du dernier mois
 >
 > ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/8862756141713)
+
+<div id="example-user-attributes-based-rule" />
 
 > 📄 **Exemple : Règle basée sur les attributs d’utilisateur**
 >
@@ -378,11 +396,15 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 >
 > ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/8862801164433)
 
+<div id="example-revenue" />
+
 > 📄 **Exemple : Revenus**
 >
 > Les utilisateurs qui ont installé l’application au cours des sept derniers jours et qui ont dépensé 1 $
 >
 > ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/8862765137041)
+
+<div id="example-owned-media-filter" />
 
 > 📄 **Exemple : Filtre de média propriétaire**
 >
@@ -443,6 +465,8 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 
 </Accordion>
 
+<div id="create-and-manage-partner-connections" />
+
 ## Créer et gérer les relations avec les partenaires
 
 Cette section explique comment créer et gérer des connexions avec des partenaires média.
@@ -489,6 +513,8 @@ L'onglet **Connexions** affiche toutes les connexions de votre partenaire et le 
 
 </Accordion>
 
+<div id="dashboard-and-metrics" />
+
 ## Tableau de bord et métriques
 
 Cette section décrit les fonctionnalités et les résultats de campagne qui apparaissent dans le tableau de bord.
@@ -515,7 +541,11 @@ Cette section décrit les fonctionnalités et les résultats de campagne qui app
 
 <Accordion title="Métriques de campagne">
 
+<div id="metrics-hash" />
+
 #### métriques codées
+
+<div id="campaign-metrics-basics" />
 
 #### Les métriques de campagne : ce qu'il faut savoir
 
@@ -535,6 +565,8 @@ La section **Métriques de campagne** du tableau de bord des Audiences regroupe 
 1. Cliquez sur le bouton **Exporter**, en haut du tableau de bord des Audiences.
 2. Une fois le fichier généré, il se téléchargera automatiquement.
 
+<div id="summary-view" />
+
 #### Aperçu
 
 L’aperçu des **Métriques de campagne** offre un résumé des données de la campagne pour chaque audience :
@@ -546,6 +578,8 @@ L’aperçu des **Métriques de campagne** offre un résumé des données de la 
 | <span id="campaigns"></span>Campagnes | Le nombre total de campagnes qui ont utilisé l'audience pour le ciblage sur la période choisie (uniquement les campagnes menées avec les partenaires pris en charge). |
 | <span id="campaign-cost"></span>Coût de la campagne | Le coût total de ces campagnes sur la période définie |
 | <span id="campaign-revenue"></span>Revenus de la campagne | Le total des revenus attribués à ces campagnes au cours de la période choisie |
+
+<div id="detailed-view" />
 
 #### Vue détaillée
 
@@ -567,6 +601,8 @@ Cliquez sur le lien ![](https://support.appsflyer.com/hc/article_attachments/440
 | <span id="cost"></span>Coût | Le coût de la campagne sur la période sélectionnée (coût total, puis coût regroupé par partenaire pris en charge et par campagne) |
 | <span id="revenue"></span>Revenus | Le revenu attribué aux campagnes sur la période sélectionnée (coût total, puis coût divisé par partenaire pris en charge et par campagne) |
 | <span id="daily-reach"></span>Portée quotidienne | Le nombre moyen et journalier d'utilisateurs uniques qui ont vu les publicités de la campagne durant la période choisie (tel que transmis par le partenaire) |
+
+<div id="data-sources-and-availability" />
 
 #### Sources de données et disponibilité
 
@@ -614,6 +650,8 @@ Les données des mesures de campagne sont disponibles uniquement pour :
 
 </Accordion>
 
+<div id="traits-and-limitations" />
+
 ## Caractéristiques et limitations
 
 Les caractéristiques et limitations suivantes s’appliquent :
@@ -657,6 +695,8 @@ Les caractéristiques et limitations suivantes s’appliquent :
 * Les audiences inactives sont mises en pause. Cela signifie qu'elles ne seront plus calculées, ni envoyées aux partenaires connectés. L'audience peut toujours être réactivée en cliquant sur **Importer maintenant.** Les calculs de l'audience et les envois automatiques aux partenaires reprendront alors leur fonctionnement.
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

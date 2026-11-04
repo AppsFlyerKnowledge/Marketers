@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **En bref :** autorisez Google à transmettre le contenu des postbacks iOS de votre app SKAdNewtork (SKAN) à AppsFlyer.
 
+<div id="get-skan-postback-data-from-google-ads" />
+
 ## Obtenir les données de postback SKAN depuis Google Ads
 
 Si vous travaillez avec différents partenaires de réseau publicitaire, nous vous conseillons de le configurer dans AppsFlyer. Les résultats de performance SKAN pour l'ensemble de vos partenaires de réseaux publicitaires (accompagnés de différentes mesures, comme le coût) seront ainsi disponibles via la plateforme AppsFlyer.
@@ -40,6 +42,8 @@ En raison du système employé par Google pour rapporter les clics et de sa mise
 
 * Les rapports agrégés et le tableau de bord sont mis à jour d'une manière rétroactive.
 * Les <Anchor target="_blank" href="/marketers/fr/docs/skan-raw-data-reports">rapports de données brutes</Anchor> ne sont pas modifiés d'une manière rétroactive. Les données (fournies via Data Locker) sont classées dans des dossiers en fonction du jour où Google a transmis les données à AppsFlyer (date d'arrivée des données).
+
+<div id="set-up-interoperation" />
 
 ## Configurer l'interopérabilité
 
@@ -90,6 +94,8 @@ Pour voir les installations SKAN attribuées à Google Ads dans le tableau de bo
 11. En savoir plus sur les [différences dans les mesures](/docs/get-skan-postback-data-from-google-ads#measurement-and-timing-differences-between-appsflyer-and-google-ads).
 
 </Accordion>
+
+<div id="additional-information" />
 
 ## Informations supplémentaires
 
@@ -145,6 +151,8 @@ Lorsque vous désactivez votre intégration Google Ads, il ne suffit pas seuleme
 | <span id="agencies"></span>Agences | Si l’agence a un rôle d’admin dans le compte Google Ads de l’annonceur, elle peut lancer la procédure détaillée dans cet article et activer l’interopérabilité Google SKAN au nom de l’annonceur. Les annonceurs n'ont pas besoin de se connecter à leur Google Ads. Le login de l'agence sera indiqué dans le compte de l'annonceur. |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **À consulter également**
 >

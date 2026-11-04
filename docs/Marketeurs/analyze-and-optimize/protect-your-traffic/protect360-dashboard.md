@@ -31,6 +31,8 @@ x-zendesk:
 
 [![p360_dashboard_main.png](https://support.appsflyer.com/hc/article_attachments/5218491552273)](https://support.appsflyer.com/hc/article_attachments/5218491552273)
 
+<div id="about-protect360-dashboard" />
+
 ## À propos du tableau de bord Protect360
 
 Le tableau de bord Protect360 :
@@ -80,6 +82,8 @@ Ces options de filtres et de regroupement sont disponibles :
   * **Geo**: compare la fraude identifiée entre chacun des pays
 
 </Accordion>
+
+<div id="installs-dashboard" />
 
 ## Tableau de bord des installations
 
@@ -133,6 +137,8 @@ Les métriques des événements in-app bloqués affichent le nombre d'événemen
 
 <Accordion title="Installations— diagrammes">
 
+<div id="identified-fraud-trend-chart" />
+
 #### Tableau des tendance de la fraude identifiée
 
 Le tableau des tendances de la fraude identifiée indique le nombre quotidien d'installations, de réattributions et de ré-engagements frauduleux, réparti par l’une de ces catégories :
@@ -142,6 +148,8 @@ Le tableau des tendances de la fraude identifiée indique le nombre quotidien d'
 * **Type de source :** Non-organique et organique
 
 Les résultats s'affichent sous la forme d'un graphique ou d'un diagramme en bâton.
+
+<div id="hijacked-installs-attribution-correction-chart" />
 
 #### Diagramme de correction de l'attribution des installations détournées
 
@@ -159,6 +167,8 @@ Vous pouvez :
 * Lorsque les détournements sont bloqués en temps réel, les attributions correctes s'affichent dans les tableaux de bord et dans les rapports AppsFlyer (pas seulement dans Protect360). Lorsque les détournements sont identifiés en post-attribution, les attributions correctes s'affichent uniquement dans les données brutes Protect360.
 * Ce tableau peut afficher la correction **vers l**'organique, mais pas **depuis l**'organique.
 
+<div id="identified-fraud-chart" />
+
 #### Diagramme des fraudes identifiées
 
 Le tableau des fraudes identifiées affiche les types de fraude rencontrés, sous forme de pourcentage. Le classement des différentes fraudes peut se faire par :
@@ -175,6 +185,8 @@ Le tableau des fraudes identifiées affiche les types de fraude rencontrés, sou
 <div id="installs-table" />
 
 <Accordion title="Installations—tableau">
+
+<div id="identified-fraud-breakdown" />
 
 #### Répartition des fraudes identifiées
 
@@ -195,6 +207,8 @@ Structure du tableau dynamique :
 * Correspond à un utilisateur, chaque utilisateur du compte ayant accès à Protect360 peut donc personnaliser la structure de son tableau. Voir [les différentes options du tableau](/docs/protect360-dashboard#options-supplémentaires-du-tableau).
 
 [![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+
+<div id="content-of-the-identified-fraud-breakdown-table" />
 
 #### Contenu du tableau de répartition des fraudes identifiées
 
@@ -259,6 +273,8 @@ Structure du tableau dynamique :
 | CTIT > Plus de 60 minutes | Installations, réattributions et ré-engagements lorsque le temps entre le clic et le premier lancement de l'app dépasse 60 minutes. Le calcul n'inclut que les installations dont le CTIT est inférieur à 25 heures (il ne prend donc pas en compte toutes les installations). En général, près de 30 % des premiers lancements d'applications ont lieu plus de 60 minutes après le téléchargement. |
 | CTIT > Plus de 5 heures | Installations, réattributions et ré-engagements lorsque le temps entre le clic et le premier lancement de l'app est supérieur à 5 heures. Le calcul n'inclut que les installations dont le CTIT est inférieur à 25 heures (il ne prend donc pas en compte toutes les installations). En général, près de 20 % des premiers lancements d'applications ont lieu plus 5 heures après le téléchargement. |
 
+<div id="additional-table-options" />
+
 #### Options supplémentaires du tableau
 
 * Cliquez sur **Exporter CSV** pour télécharger le tableau sur votre ordinateur au format CSV
@@ -277,6 +293,8 @@ Notez qu’un taux inhabituel pour l'un de ces KPI n'indiquent pas nécessaireme
 Les données des événements in-app affichées dans le tableau de bord CPI se basent sur la LTV, elles englobent donc tous les événements in-app associés aux installations qui ont lieu durant la période définie.
 
 </Accordion>
+
+<div id="in-app-events-dashboard" />
 
 ## Tableau de bord des événements in-app
 
@@ -303,6 +321,8 @@ Les métriques principales vous permettent d’afficher :
 
 <Accordion title="Événements in-app — Diagrammes">
 
+<div id="fraud-trend-over-time-chart" />
+
 #### **Diagramme des tendances en termes de fraude au fil du temps**
 
 Le diagramme d'évolution de la fraude au fil du temps affiche le nombre d'événements pour chaque jour, répartis comme suit :
@@ -310,6 +330,8 @@ Le diagramme d'évolution de la fraude au fil du temps affiche le nombre d'évé
 * **Temps réel** : blocage en temps réel des événements in-app frauduleux
 * Post-attribution Événements frauduleux identifiés après l'attribution
 * **Non-frauduleux**
+
+<div id="top-iae-fraud-by-media-source-chart" />
 
 #### **Diagramme des principaux EIA frauduleux par source média**
 
@@ -345,6 +367,8 @@ Structure du tableau dynamique :
 
 [![EIA_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
 
+<div id="content-of-the-in-app-event-fraud-breakdown-table" />
+
 #### Contenu du tableau de répartition des événements in-app frauduleux
 
 | Colonne du tableau | Description |
@@ -369,6 +393,8 @@ Structure du tableau dynamique :
 | EIA bloqué | Les EIA bloqués par les règles de validation. |
 | Corrigé en organique | Les installations détournées, dont la dernière source non frauduleuse est organique. |
 | Corrigé en source non organique | Les installations détournées dont la dernière source non frauduleuse était une source média non organique. |
+
+<div id="additional-table-options-1" />
 
 #### Options supplémentaires du tableau
 
@@ -425,6 +451,8 @@ Pour configurer les événements payables :
 | Actualisation des données | Mise à jour quotidienne.<ul><li>Installations (CPI) à 16:00 UTC</li><li>Événements in-app (CPA) à 21:00 UTC</li></ul> |
 
 </Accordion>
+
+<div id="see-also" />
 
 > 📄 **Articles connexes**
 >

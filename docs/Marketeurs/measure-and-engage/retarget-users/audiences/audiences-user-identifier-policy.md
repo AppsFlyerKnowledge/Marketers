@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **En bref :** Configurez votre politique d'identification d'utilisateur pour exercer un contrôle **au niveau du compte** sur les données qu'Audiences partage avec les partenaires.
 
+<div id="about" />
+
 ## À propos
 
 Une fois que vous avez défini une audience, AppsFlyer Audiences envoie les identifiants des membres de cette audience à vos <Anchor target="_blank" href="/marketers/fr/docs/audiences-partner-connections">partenaires publicitaires</Anchor> sélectionnés. Cela leur permet de diffuser vos publicités uniquement à ces utilisateurs.
@@ -35,6 +37,8 @@ Pour respecter les exigences de confidentialité d'iOS 14.5 et d'autres considé
 * au niveau des connexions partenaires
 
 Cet article explique le processus de gestion de votre politique d'identifiant utilisateur au niveau du compte. Pour plus d'informations sur la gestion des identifiants partagés au niveau des connexions partenaires, consultez la section <Anchor target="_blank" href="/marketers/fr/docs/audiences-guide#manage-connections">Gérer les connexions</Anchor> du guide Audiences.
+
+<div id="user-identifiers" />
 
 ## Identifiants utilisateur
 
@@ -72,6 +76,8 @@ Pour plus d'informations (y compris les exigences relatives à l'utilisation d'i
 
 </Accordion>
 
+<div id="setting-account-level-user-identifier-policy" />
+
 ## Définition de la politique d'identification des utilisateurs au niveau du compte
 
 La politique d'identification des utilisateurs ne peut être définie que par un utilisateur administrateur.
@@ -86,6 +92,8 @@ La politique d'identification des utilisateurs ne peut être définie que par un
 4. Cliquez sur **Enregistrer**.
 
 Les modifications apportées à votre politique IDFA entreront en vigueur à partir de la sortie d'iOS 14.5 par Apple. Toutes les autres modifications apportées à votre politique d'identification d'utilisateur prendront effet lors du prochain téléchargement vers les partenaires.
+
+<div id="privacy-regulations" />
 
 ## Réglementations en matière de confidentialité
 
@@ -145,7 +153,7 @@ Dans le cadre de l'application par Google de la loi sur les marchés numériques
   Tous les appareils déjà inclus dans une audience chez Google avant le 6 mars 2024 ne seront pas impactés et resteront dans l'audience. Seules les nouvelles audiences ou les nouveaux appareils EEE ajoutés à une audience existante seront téléchargés sur Google avec consentement.
 * **Taille de téléchargement de l'audience**  
   Les tailles estimées et réelles de téléchargement de l'audience peuvent être affectées selon le nombre d'utilisateurs accordant ou refusant leur consentement.
-* #### **Importer des audiences**
+* #### <span id="importing-audiences"></span>**Importer des audiences**
 
   * **Importer une audience standard** - AppsFlyer ajoutera les données de consentement qu'il collecte à partir du SDK AppsFlyer et supprimera les appareils non consentis ou non spécifiés avant de l'envoyer à Google.
   * **Importer une audience « telle quelle »** - Lorsque vous importez une audience « telle quelle » via <Anchor target="_blank" href="/marketers/fr/docs/audiences-import-audience-segments-from-internal-systems#import-a-csv-file">CSV</Anchor> ou <Anchor target="_blank" href="/marketers/fr/docs/audiences-import-audience-segments-from-internal-systems#use-the-import-audience-api">API</Anchor>, deux champs de consentement supplémentaires devront être ajoutés. Ces champs sont :
@@ -156,6 +164,8 @@ Dans le cadre de l'application par Google de la loi sur les marchés numériques
 | <span id="ad_user_data"></span>données utilisateur publicitaire activées | données\_utilisateur\_publicitaire | vrai\/faux | L'utilisateur a-t-il donné son consentement pour envoyer ses données utilisateur à Google ? |
 
 Si les champs de consentement ne sont pas renseignés avec des valeurs, ils seront envoyés à Google comme «Non spécifié».
+
+<div id="note" />
 
 > 📘 **Remarque**
 >

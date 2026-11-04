@@ -24,6 +24,8 @@ x-zendesk:
 ---
 > **En bref :** FAQ sur les écarts de résultats rencontrés avec X Ads.
 
+<div id="x-ads-faq-and-discrepancies" />
+
 ## FAQ et écarts de résultats X Ads
 
 <div id="who-can-perform-the-twitter-setup-on-appsflyer" />
@@ -228,6 +230,8 @@ Pour recevoir les données d'attribution d'AppsFlyer, votre compte Twitter doit 
 7. Connectez-vous avec votre compte X Ads.
 
 </Accordion>
+
+<div id="discrepancies-between-x-ads-and-appsflyer" />
 
 ## Différences entre Twitter et AppsFlyer
 

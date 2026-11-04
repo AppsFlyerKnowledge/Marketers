@@ -24,6 +24,8 @@ x-zendesk:
 
 > **En bref :**  connectez les audiences à vos partenaires média.
 
+<div id="about-partner-connections" />
+
 ## À propos des connexions de partenaires
 
 Une connexion de partenaire vous permet d'envoyer en continu vos audiences aux partenaires afin de diffuser vos campagnes personnalisées. Vous trouverez ci-dessous la liste des partenaires d'Audiences, les exigences de connexion et les ID d'utilisateur qu'ils prennent en charge.
@@ -156,6 +158,8 @@ Une connexion de partenaire vous permet d'envoyer en continu vos audiences aux p
 | Yeahmobi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yeahmobi.png" width="151px" /> | Clé d'API | <ul><li>idfa</li><li>GAID</li></ul> |
 | YouAppi | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/youappi.png" width="118px" /> | Clé API | <ul><li>idfa</li><li>GAID</li></ul> |
 | Zoomd DSP | <Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/zoomd.png" width="118px" /> | Clé API | <ul><li>idfa</li><li>GAID</li></ul> |
+
+<div id="we-love-working-with-new-audiences-partners" />
 
 > 📘 **Travailler avec de nouveaux partenaires Audiences est toujours un plaisir !**
 >
@@ -295,7 +299,7 @@ La création d'une intégration S3 permet à AppsFlyer d'envoyer les ID des appa
 > * Paramètre d'ID externe Braze
 > * Champ CUID
 >
-> #### AVEC UN PARAMÈTRE D'ID EXTERNE BRAZE
+> #### <span id="using-a-braze-external-id-parameter"></span>AVEC UN PARAMÈTRE D'ID EXTERNE BRAZE
 >
 > Pour importer des audiences sur Braze, utilisez la fonction `SetPartnerData` du SDK AppsFlyer pour transmettre l'ID externe Braze de chaque utilisateur à AppsFlyer. Voici des exemples d'utilisation :
 >
@@ -324,6 +328,8 @@ La création d'une intégration S3 permet à AppsFlyer d'envoyer les ID des appa
 > </Tab>
 > </Tabs>
 >
+
+<div id="using-the-cuid-field" />
 
 #### AVEC LE CHAMP CUID
 
@@ -470,6 +476,8 @@ Pour permettre à AppsFlyer d'envoyer des audiences vers Google Ads, les actions
 
 </Accordion>
 
+<div id="Kakao" />
+
 <div id="leanplum" />
 
 <Accordion title="Leanplum">
@@ -505,6 +513,8 @@ Dans un délai maxi de 30 minutes, l'audience et les utilisateurs qui la compose
 <div id="moengage" />
 
 <Accordion title="MOEngage">
+
+<div id="prerequisite-2" />
 
 > 🚧 **Conditions**
 >

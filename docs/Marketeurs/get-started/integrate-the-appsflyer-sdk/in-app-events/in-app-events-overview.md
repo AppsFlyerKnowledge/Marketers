@@ -31,17 +31,23 @@ x-zendesk:
 ---
 > **En bref :** enregistrez les événements in-app riches post-installation (tels que la connexion, l'inscription ou l'achat in-app) attribués aux sources média et aux campagnes.
 
+<div id="why-record-in-app-events" />
+
 ## Pourquoi enregistrer des évènements in-app ?
 
 Les événements in-app donnent un aperçu de ce qui se passe dans votre app et constituent l'outil idéal pour déterminer la valeur des utilisateurs de l'app et la **qualité du trafic en provenance de différentes sources média**. L'enregistrement des évènements in-app vous permet de mesurer les KPI tels que le ROI (retour sur investissement) et la LTV (lifetime value, durée de vie).
 
 Lorsque vos utilisateurs valident une inscription, complètent un tutoriel, ajoutent un article au panier ou font des achats, les données d’évènements in-app peuvent alors enregistrer les évènements accompagnés de leurs détails. L'implémentation d'événements in-app est obligatoire à toutes les fins d'analyse post-installation.
 
+<div id="about-in-app-events" />
+
 ## À propos des événements in-app
 
 Un événement in-app comprend un nom d'événement et peut inclure des paramètres d'événement. Lorsque vous ajoutez des paramètres d'événement à un événement in-app, ce dernier devient un événement in-app riche. Les paramètres d'événement vous fournissent plus de contexte et d'informations sur l'événement en cours. Par exemple, en plus de savoir qu'un utilisateur a effectué une réservation, les paramètres d'événement vous donnent accès à des détails tels que le type d'achat, la destination et les revenus.
 
 ![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+
+<div id="tip" />
 
 > 👍 **Astuce**
 >
@@ -109,7 +115,11 @@ Le diagramme ci-dessus illustre le processus suivant :
 
 AppsFlyer utilise <Anchor target="_blank" href="https://openexchangerates.org/">Open Exchange Rates</Anchor> pour la conversion de devise. Le taux de change est mis à jour toutes les heures. Chaque fois qu’AppsFlyer effectue une conversion de devise, le taux de change effectif l'heure précédente est utilisé.
 
+<div id="currency-conversion" />
+
 #### Conversion de devise
+
+<div id="h_01HDBZW9XERK3VN1GS8GHM911W" />
 
 > 📄 **Exemple**
 >
@@ -126,9 +136,13 @@ AppsFlyer utilise <Anchor target="_blank" href="https://openexchangerates.org/">
 >
 > Dans ce cas, AppsFlyer convertit les revenus de EUR en USD, puis en GBP. Supposons que le taux de change soit 1 = 1,13 $. 200 € deviennent 226,85 $. Ensuite, AppsFlyer convertit les USD en GBP. Supposons que le taux de change soit de 1 $ = 0,78 £. Donc 226,85 $ deviennent 176,92 £.
 
+<div id="currency-display" />
+
 #### Affichage de la devise
 
 <Anchor target="_blank" href="/marketers/fr/docs/app-settings#localization-currency">La devise est définie dans les paramètres de l'app</Anchor>. La devise que vous définissez dans les paramètres de l’app est la devise qui apparaît dans le tableau de bord. Quelle que soit la devise que vous envoyez aux événements in-app, les revenus du tableau de bord apparaissent toujours dans la devise définie dans les paramètres de l'app.
+
+<div id="h_01HDBZW9XEQNG1RDH7A8H002ZD" />
 
 > 📄 **Exemple**
 >
@@ -140,7 +154,7 @@ AppsFlyer utilise <Anchor target="_blank" href="https://openexchangerates.org/">
 > 2. L'événement B a un revenu de **171** et la devise **EUR**.
 > 3. L’événement C a un revenu de **171** et **aucune devise n'est spécifiée**.
 >
-> #### Données de revenus dans le tableau de bord
+> #### <span id="revenue-data-in-the-dashboard"></span>Données de revenus dans le tableau de bord
 >
 > Le revenu qui apparaît dans le tableau de bord est la **valeur convertie** de la devise en USD de l’événement in-app, puis dans la devise des paramètres de l’app.
 >
@@ -156,7 +170,7 @@ AppsFlyer utilise <Anchor target="_blank" href="https://openexchangerates.org/">
 >
 >
 >
-> #### Données sur les revenus dans les rapports de données brutes
+> #### <span id="revenue-data-in-raw-data-reports"></span>Données sur les revenus dans les rapports de données brutes
 >
 > Si vous définissez la devise sur **GBP** dans les paramètres de l'app mais que vous envoyez des événements in-app avec différentes devises, le rapport de données brutes affiche les revenus dans la devise des paramètres de l'app ainsi que dans la devise de l'événement in-app.
 >
@@ -174,6 +188,8 @@ AppsFlyer utilise <Anchor target="_blank" href="https://openexchangerates.org/">
 
 </Accordion>
 
+<div id="sending-events" />
+
 ## Envoi d'événements
 
 Vous pouvez envoyer des événements in-app à AppsFlyer de différentes manières :
@@ -182,6 +198,8 @@ Vous pouvez envoyer des événements in-app à AppsFlyer de différentes manièr
 * **<Anchor target="_blank" href="/marketers/fr/docs/server-to-server-events-api-for-mobile-s2s-mobile">API de serveur à serveur :</Anchor>** utilisez l'API de serveur à serveur pour envoyer directement à AppsFlyer des événements qui se produisent en dehors de l'app mobile. Par exemple, si un utilisateur est actif sur les interfaces web et mobile, vous pouvez enregistrer des événements provenant des deux sources puis les attribuer au même utilisateur dans AppsFlyer. Il peut s'agir d'un événement in-app ou d'un autre événement, comme les événements de site, événements de centre d'appels ou bien encore les achats dans votre boutique de matériaux de construction.
 * **<Anchor target="_blank" href="/marketers/fr/docs/legacy-receipt-validation-for-in-app-purchases">Validation de la réception</Anchor> :** il s'agit d'un mécanisme sécurisé où la plate-forme de paiement, par exemple Apple ou Google, vérifie que l'achat in-app a eu lieu comme indiqué. La validation de l'achat est le tout premier outil pour empêcher les événement de revenus frauduleux. Cela vous permet également de voir le revenu réel et d'éliminer les achats in-app incomplets.
 * **<Anchor target="_blank" href="/marketers/fr/docs/in-app-events-for-hybrid-apps">Apps hybrides</Anchor>** : combinent des vues natives et du contenu HTML, et peuvent également enregistrer des événements in-app. Cependant, étant donné que le SDK peut uniquement envoyer des événements du côté natif, les développeurs doivent transférer toutes les données d'événement au code natif.
+
+<div id="setting-up-in-app-events" />
 
 ## Configuration des événements in-app
 
@@ -203,6 +221,8 @@ Une fois que vous avez déterminé les événements in-app à mesurer, utilisez 
 1. Sélectionnez le nom d'événement qui convient le mieux au scénario que vous souhaitez enregistrer.
 2. Sélectionnez les paramètres d'événement que vous souhaitez associer à l'événement. Choisissez des paramètres qui donneront un contexte supplémentaire à l'événement et enrichiront les données.
 3. Téléchargez le fichier terminé à partir du générateur d'événements in-app, et transmettez-le à votre développeur.
+
+<div id="h_01HDBZW9XFN2B8AC18VW99G8Z6" />
 
 > 📄 **Exemple**
 >
@@ -345,6 +365,8 @@ Si un utilisateur initie un évènement lorsque la connexion Internet est indisp
 3. Une fois la réponse positive suivante reçue, l'événement stocké est renvoyé au serveur.
 4. S'il y a plusieurs événements dans le cache, ils sont envoyés au serveur les uns après les autres.
 
+<div id="note-3" />
+
 > 📘 **Remarque**
 >
 > Le cache du SDK peut stocker jusqu’à 40 événements, ce qui signifie que seuls les 40 premiers événements survenus hors ligne sont enregistrés. Tout ce qui vient après, jusqu'à la prochaine réponse positive, n'est pas retenu.
@@ -419,7 +441,7 @@ Vous pouvez combiner plusieurs éléments en une même transaction. Plutôt que 
 >
 > Plusieurs éléments à la fois sont transmis sous forme de tableau dans les <Anchor target="_blank" href="/marketers/fr/docs/in-app-event-postback-configuration">postbacks</Anchor>. À l'heure actuelle, Meta ads et Twitter ne peuvent pas analyser correctement les paramètres de ces tableaux. Pour résoudre ce problème, AppsFlyer additionne la quantité d'éléments (af\_quantity) au lieu de les envoyer à ces SRN sous forme de tableau. Dans notre exemple, Meta ads recevrait **af\_quantity=4**.
 >
-> **<span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>Remarque**
+> **<span id="notes"></span><span id="h_01HDBZW9XFJ68WSM3066NVRATS"></span>Remarque**
 >
 > Plusieurs articles peuvent être utilisés avec les événements in-app suivants :
 >
@@ -441,6 +463,8 @@ Deux événements sont considérés comme identiques si les champs suivants sont
 * Valeur de l'événement
 * ID d'app
 * ID AppsFlyer
+
+<div id="note-4" />
 
 > 📘 **Remarque**
 >
