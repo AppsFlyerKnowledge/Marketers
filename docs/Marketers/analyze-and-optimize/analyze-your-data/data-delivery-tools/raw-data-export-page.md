@@ -118,7 +118,7 @@ You can create a custom report by setting its filters and fields.
    * **Geo:** [Optional] Only the events that were attributed to the selected geographical areas will be included in the report.
    * **Report-type specific filter**: Each report type may have its own filter from which you can select a filtering criteria.
 6. [Optional]: Reports are populated automatically with the necessary fields. You can add or remove fields as follows:
-   1. Go to the **Report fields** tab.The list of selected fields displays. You can't change the selection of mandatory fields.
+   1. <span class="af-ol-a"></span>Go to the **Report fields** tab.The list of selected fields displays. You can't change the selection of mandatory fields.
    2. Select or clear select fields as required.
    3. [Optional] Set **Report (CSV) field Order** to set the sequence of columns.
    4. [Option] Click **Restore defaults** if needed.

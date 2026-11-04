@@ -99,7 +99,7 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 
    Furthermore, when **Advanced Data Sharing** is ON, AppsFlyer attributes these events. When OFF, only postbacks and events from devices with an IDFA are sent and attributed.
 8. Configuring **Install attribution**:
-   1. Set the **Install click-through lookback window**.  
+   1. <span class="af-ol-a"></span>Set the **Install click-through lookback window**.  
       Select the lookback window units (hours or days) and set the slider to the desired value. We recommend setting the lookback window to 30 days to match with Google Ads.
    2. [Optional] If you run pre-registration campaigns for Android apps, set the **Pre-registration campaign lookback window** (default is 90 days). This slider determines the lookback window for attributing installs to pre-registration campaigns.
    3. Enable **Install view-through attribution.**
@@ -118,7 +118,7 @@ Creating a link ID requires **Google administrative access** to the account. Fol
    > A reinstall conversion data is **presented as a session\_start** on Google Ads dashboard. In AppsFlyer, it is attributed and seen as a re-attribution.
 
 10. Configure **Re-engagement attribution**:
-    1. <Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">Enable retargeting in App Settings</Anchor>.
+    1. <span class="af-ol-a"></span><Anchor target="_blank" href="/marketers/docs/app-settings#reengagement-attribution">Enable retargeting in App Settings</Anchor>.
     2. Enable re-engagement attribution in Google Ads integration settings
     3. Set the **Re-engagement click-through lookback window**, which is the period of time, starting from an ad click, during which the app must be launched for the click to be recorded as a re-engagement. Select a lookback window in hours or days and set the slider to the desired value.
     4. Enable **Re-engagement view-through attribution**.  

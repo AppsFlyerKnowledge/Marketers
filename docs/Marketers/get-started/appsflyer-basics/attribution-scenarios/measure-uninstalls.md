@@ -34,7 +34,7 @@ To understand the value of your app users, you must analyze both install and uni
 
 ### How does it work?
 
-1. AppsFlyer sends a daily API request to Firebase Cloud Messaging (FCM) and Apple Push Notification Services (APNS).
+1. <span class="af-ol-a"></span>AppsFlyer sends a daily API request to Firebase Cloud Messaging (FCM) and Apple Push Notification Services (APNS).
 2. FCM and APNS then send a silent push notification to verify if an app is still installed on a given device.
 3. An uninstall is recorded if the response indicates that the app was uninstalled (FCM and APNS) or no user activity was recorded for the past 270 days (FCM only).
 4. AppsFlyer attributes the uninstall to the media source that originally brought the user.

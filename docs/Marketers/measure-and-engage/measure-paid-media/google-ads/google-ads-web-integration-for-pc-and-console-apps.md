@@ -144,7 +144,7 @@ Configure mapping of in-app event postbacks sent to Google Ads Web. These events
 | Parameter name | Description |
 | --- | --- |
 | **AppsFlyer event** | The name of the event, as received by AppsFlyer either from the SDK integrated into your app or from server-to-server events.<ul><li>Click **Add item**, enter the event name, and click ![check.png](https://files.readme.io/e35a3abe980b27d52189e5d75abac298090f85030adf7bbb56590efcee82f172-21884077142033.png).</li></ul> |
-| **mapped to partner event** | The Conversion Action ID of each event, as is defined on the partner's side.<ol><li>In Google Ads **Conversion Goals** page, click the conversion action you created.</li><li>In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=`.</li><li>Go back to AppsFlyer and paste it. For example if `ctid=123456789`, paste `123456789`.</li></ol> |
+| **mapped to partner event** | The Conversion Action ID of each event, as is defined on the partner's side.<ol><li><span class="af-ol-a"></span>In Google Ads **Conversion Goals** page, click the conversion action you created.</li><li>In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=`.</li><li>Go back to AppsFlyer and paste it. For example if `ctid=123456789`, paste `123456789`.</li></ol> |
 | **for users from** | **This partner only:** In-app event postbacks are sent only for events attributed to this partner—meaning, the user who performed it came from this partner. |
 | **including** | **Values and revenue:** All event parameters, including the revenue value (if exists in the event), are sent in the postback. |
 
@@ -264,7 +264,7 @@ In Google Ads, you can either select from the predefined list of conversion acti
    >
    > If **Manual import using API or uploads** is not available:
    >
-   > 1. Select **CRM, files, or other data sources** > **Track conversions from clicks.**
+   > 1. <span class="af-ol-a"></span>Select **CRM, files, or other data sources** > **Track conversions from clicks.**
    > 2. In **Data source** select **Skip this step and set up data source later.**
 
 5. Click **Continue**.  
@@ -273,7 +273,7 @@ In Google Ads, you can either select from the predefined list of conversion acti
 7. For **Goal and action optimization**, select a category to map your conversion action into.  
    **Note**: Google ads campaign optimization is per category; not per specific action). If you only want your campaigns to optimize to a single action, make sure to map only that action to this category. For example, if you want your campaign to optimize towards the "install" action, make sure to map the "install" action to its own category, for example, “Other.” You’ll then be able to select this category as the campaign goal when creating the campaign.
 8. Copy the conversion action ID from Google Ads and enter it in the **mapped to partner event** field. The **Conversion Action ID** is used as the partner event ID when mapping the AppsFlyer event name to the partner event ID  in the in-app event postbacks setup. To copy the conversion action ID from Google Ads perform the following:
-   1. In Google Ads **Conversion Goals** page, click the conversion action you created.
+   1. <span class="af-ol-a"></span>In Google Ads **Conversion Goals** page, click the conversion action you created.
    2. In the Conversion Action **Details** page, copy the **Conversion Action ID** from the URL parameter `ctId=` and paste it.
 9. Click **Create and continue**.
 10. Click **Finish**.

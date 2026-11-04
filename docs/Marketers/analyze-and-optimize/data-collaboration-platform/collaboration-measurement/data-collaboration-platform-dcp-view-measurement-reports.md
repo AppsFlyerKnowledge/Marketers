@@ -157,7 +157,7 @@ To create or edit a calculated field perform the following:
    * **Create**: Click **+ Calculated field.**
    * **Edit**: Hover over the calculated field and click the action menu → Edit calculated field.
 2. In the **Edit** or **New calculated field** dialog perform the following:
-   1. In the **Field** box enter the name of the field.
+   1. <span class="af-ol-a"></span>In the **Field** box enter the name of the field.
    2. In the **Set function** list, choose the function used to calculate the new value.
 3. Set the function according to the table below:
 
@@ -195,7 +195,7 @@ By default, dimensions are removed in reverse order of their position in the **R
 2. Drag the dimension to rearrange the order.
    * The dimension labeled as the **Highest priority** (at the top of the list) means it will be the last to be eliminated if regrouping is required.
 3. [Optional] To apply regrouping to custom source dimensions:
-   1. Click **Use advanced options to refine regrouping**
+   1. <span class="af-ol-a"></span>Click **Use advanced options to refine regrouping**
    2. Select custom source dimensions to which you'd like to apply regrouping.
    3. The selected dimensions are added to the **Manage dimension priority** list.
       * By default, these dimensions are added to the bottom of the list as the **Lowest priority** for regrouping. However, you can reorder them just like attribution data dimensions, as described above.

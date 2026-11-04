@@ -77,7 +77,7 @@ Start by activating the Google Ads integration for web campaigns and setting up 
    > The toggle must stay on (activated) for as long as you work with this partner.
 
 6. Enter your **Customer ID**. You can retrieve it from your Google Ads Manager:
-   1. Log in to your Google Ads account.
+   1. <span class="af-ol-a"></span>Log in to your Google Ads account.
    2. In the top-right corner, click the Google account icon and scroll down to where the Customer ID is displayed.
    3. Perform one of the following:
       * If you have multiple Google Ads accounts running campaigns for your app, use the Customer ID from a Manager (MCC) account for cross-account conversion tracking. Paste the MCC ID (and not a specific account’s Customer ID) in the Customer ID field and also in the MCC Customer ID text box (same ID in both boxes).  For more information, see <Anchor target="_blank" href="https://support.google.com/google-ads/answer/3061730?sjid=4528491462900554442-NC">Google's instructions on configuring an MCC account</Anchor>.

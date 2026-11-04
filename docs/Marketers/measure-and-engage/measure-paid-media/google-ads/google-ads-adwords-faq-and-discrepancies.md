@@ -97,16 +97,16 @@ Use this checklist to ensure your in-app events are correctly set up and synced 
 Follow these steps to quickly resolve the most common issues:
 
 1. **Verify event postbacks in AppsFlyer** (for step-by-step instructions, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">Set up Google Ads on AppsFlyer.</Anchor>)
-   1. Go to the **Google Ads integration tab** in AppsFlyer.
+   1. <span class="af-ol-a"></span>Go to the **Google Ads integration tab** in AppsFlyer.
    2. Ensure postbacks are configured correctly for each in-app event you want to measure.
    3. Under **For users from**, select *All media sources, including organic,* to ensure Google Ads receives event data.
    4. (Optional) After initial setup, adjust this selection for specific events if needed.
 2. **Trigger a test in-app event**
-   1. Launch your app.
+   1. <span class="af-ol-a"></span>Launch your app.
    2. For iOS apps, ensure IDFA collection is enabled by allowing the app to track.
    3. Perform the mapped in-app events manually (for example, purchase or signup).
 3. **Import events in Google Ads**
-   1. In Google Ads, click **Tools Conversions**.
+   1. <span class="af-ol-a"></span>In Google Ads, click **Tools Conversions**.
    2. Check the **Conversion Action Summary**.
    3. Import the relevant in-app events. For more information, see <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Import your app conversions</Anchor>.
 

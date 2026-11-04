@@ -73,7 +73,7 @@ To activate the Meta Web Ads integration:
 4. Turn off **Advanced Privacy** (if you are setting an iOS app integration).
 5. **Advanced Matching data sharing:** Turn on to share Advanced Matching fields, such as hashed email, hashed phone number, hashed first name, hashed last name, and Facebook login ID, with Meta, if these fields are included in the event information sent to AppsFlyer. For more information, see: <Anchor target="_blank" href="/marketers/docs/advanced-matching-data-sharing">Advanced Matching Data Sharing</Anchor>.
 6. Fill in the **Pixel ID** field. You can retrieve the pixel ID from your Meta ads Manager:
-   1. From the [Ads manager](https://www.facebook.com/ads/manager) side menu, go down to **All tools** > **Events Manager**. **Note:** Make sure you have the correct business selected from the drop-down on the top right.
+   1. <span class="af-ol-a"></span>From the [Ads manager](https://www.facebook.com/ads/manager) side menu, go down to **All tools** > **Events Manager**. **Note:** Make sure you have the correct business selected from the drop-down on the top right.
    2. From the **Events Manager** side menu, select **Data sources**. You'll see a list of your pixels. If you don't have a pixel for the selected business, you can create one through the same view.
    3. Copy the pixel ID showing under the pixel name.  
       and paste it into the  
@@ -129,7 +129,7 @@ To set in-app events postbacks perform the following:
 8. [Optional] Click the **Add condition** icon to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#conditional-in-app-event-postbacks">set conditions</Anchor> for an event.
 9. Click **Save integration**.
 10. [Optional] After saving the integration, while remaining on the configuration page, you can integrate more of your apps with the partner:
-    1. From the top-left corner, click the app name under the partner name to open the list of apps.
+    1. <span class="af-ol-a"></span>From the top-left corner, click the app name under the partner name to open the list of apps.
     2. Select a different app from the drop-down list.
     3. Repeat the integration steps for the selected app.
 
@@ -156,7 +156,7 @@ Perform the next steps in Meta Ads Manager.
    * **Sales**: This lets Meta optimize towards a specific event (your main KPI).
    * **Traffic**: This lets Meta optimize towards ad clicks. This should only be used if you don't have other KPIs or if the volume of other KPI events is too low.
 3. [Optional] If you want to add a custom objective to the above options perform the following:
-   1. In Meta Ads, select the custom event that you want to set as a campaign objective and mark it as a conversion action in Meta Ads.
+   1. <span class="af-ol-a"></span>In Meta Ads, select the custom event that you want to set as a campaign objective and mark it as a conversion action in Meta Ads.
    2. In AppsFlyer, in the **Meta Web integration** page, under **In-app event postbacks** map an AppsFlyer event to a custom partner event (under the **mapped to partner event** column) and name it with the same name as the conversion action in Meta Ads.
 
       <div id="note-3" />

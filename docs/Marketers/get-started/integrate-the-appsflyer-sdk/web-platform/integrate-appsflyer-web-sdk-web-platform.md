@@ -527,7 +527,7 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
      6. Set the page and trigger conditions as needed.
      7. Click **Save**.
      8. Associate the trigger to the AppsFlyer Web SDK tag:
-        1. In the **GTM** main window, select **Tags**.
+        1. <span class="af-ol-a"></span>In the **GTM** main window, select **Tags**.
         2. Select the tag you created earlier.
         3. In the triggering panel, click the pen icon.
         4. Select the page view trigger you created earlier.
@@ -835,7 +835,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 
 #### 2. Configure GTM variables and triggers
 
-1. In GTM, click **Variables** > **Configure** and enable **Click Element** in the Built-In Variables list.
+1. <span class="af-ol-a"></span>In GTM, click **Variables** > **Configure** and enable **Click Element** in the Built-In Variables list.
 2. Create a new User-Defined Variable (Type: **All Elements**).
 3. Create a new **Trigger**:
    * Trigger Type: **Click - All Elements**.
@@ -846,7 +846,7 @@ This method captures specific actions, such as clicking a **Checkout** button, u
 
 #### 3. Create the interaction tag
 
-1. Create a new **Custom HTML** tag for the checkout action.
+1. <span class="af-ol-a"></span>Create a new **Custom HTML** tag for the checkout action.
 2. Paste the interaction script:
 
    ```html

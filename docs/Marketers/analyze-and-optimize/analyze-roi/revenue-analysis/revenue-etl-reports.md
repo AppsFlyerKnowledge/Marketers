@@ -76,7 +76,7 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 1. **Data ingestion:** The report can originate from the ad revenue SDK connector or S2S API request (see the section above).
 2. **Data processing**: AppsFlyer ROI360 Ad Revenue performs the following:
 
-   1. Data normalization,
+   1. <span class="af-ol-a"></span>Data normalization,
    2. Attribution to the install source and data enrichment,
    3. Ad revenue events generation,
    4. Events are aggregated to the device level.
@@ -187,7 +187,7 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 1. **Data ingestion:** The report can either originate from the SDK or S2S API request (see the section above).
 2. **Data processing:** AppsFlyer ROI360 Ad Revenue performs the following:
 
-   1. Data normalization,
+   1. <span class="af-ol-a"></span>Data normalization,
    2. Attribution to the install source and data enrichment,
    3. Ad revenue events generation,
    4. Events are aggregated to the device level.
@@ -322,7 +322,7 @@ To learn how to set the integration type, see: Connect to ad revenue integrated 
 
 1. **Data ingestion:** The report data originates from impression-level data sent by the ROI360 Ad Revenue SDK connector and requires an SDK-type integration.
 2. **Data processing**: AppsFlyer ROI360 Ad Revenue performs the following:
-   1. Data normalization,
+   1. <span class="af-ol-a"></span>Data normalization,
    2. Attribution to the install source and data enrichment,
    3. Impression-level ad revenue event generation.
 3. **Data delivery**: Impression events are written to files divided by folders according to occurrence hour. Each folder only contains impressions that occurred during that hour.
