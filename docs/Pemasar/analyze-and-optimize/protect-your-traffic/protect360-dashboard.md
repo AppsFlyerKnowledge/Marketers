@@ -168,6 +168,8 @@ Anda dapat:
 * Saat pembajakan diblokir secara real-time, atribusi yang benar akan ditampilkan di dashboard dan laporan AppsFlyer (bukan hanya Protect360). Ketika pembajakan teridentifikasi setelah atribusi, atribusi yang benar hanya ditampilkan di data lengkap Protect360.
 * Bagan ini dapat menampilkan koreksi **ke** organik, tetapi tidak **dari** organik.
 
+<div id="affiliate-attribution-model" />
+
 <div id="identified-fraud-chart" />
 
 #### Bagan penipuan yang teridentifikasi

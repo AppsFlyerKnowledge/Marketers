@@ -62,6 +62,8 @@ x-zendesk:
 ---
 > **Sekilas:**  Pelajari tentang struktur dan parameter tautan atribusi AppsFlyer.
 
+<div id="important" />
+
 ## Overview
 
 Tautan atribusi memungkinkan pengiklan mengumpulkan data tentang interaksi pengguna dengan iklan. Tautan atribusi ditempatkan di belakang iklan dan memberi tahu AppsFlyer saat pengguna berinteraksi dengan iklan. Interaksi dapat terjadi melalui klik pada iklan atau saat pengguna melihat tayangan iklan Salinan URL atribusi dikirim ke AppsFlyer.
@@ -84,6 +86,10 @@ Tautan atribusi dibuat menggunakan **OneLink** atau **tautan platform tunggal**.
 
 * Parameter yang tercantum tersedia untuk digunakan di tautan atribusi.
 * Kolom **nilai jenis bidang** adalah batas karakter dari nilai parameter. Temukan lebih lanjut tentang batasan panjang nilai parameter <Anchor target="_blank" href="/marketers/id/docs/raw-data-field-dictionary">di sini.</Anchor>
+
+<div id="af_engagement_destination" />
+
+<div id="af_ad_format" />
 
 <div id="attribution-link-parametersua-and-retargeting" />
 
@@ -188,6 +194,8 @@ Bergantung pada jenis iklan, Anda juga dapat mengirim parameter visibilitas yang
 | <span id="fire_advertising_id"></span>fire\_advertising\_id | N/A | ID Iklan Amazon Fire |  |
 | <span id="af_android_store_csl"></span>af\_android\_store\_csl | store\_product\_page | Listing toko kustom di Google Console | string |
 
+<div id="md5_idfa" />
+
 <div id="ios-specific-parameters" />
 
 ### Parameter spesifik iOS
@@ -215,6 +223,8 @@ Bergantung pada jenis iklan, Anda juga dapat mengirim parameter visibilitas yang
 > ```
 
 Semua parameter tersedia di <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">Install report (Laporan penginstalan)</Anchor> dan <Anchor target="_blank" href="/marketers/id/docs/analytics-and-aggregate-reporting-apis">Analytics (Analisis), Reports (Laporan), serta APIs</Anchor>.
+
+<div id="note" />
 
 <div id="custom-parameters" />
 
@@ -329,6 +339,8 @@ Parameternya adalah:
 * `Set iklan (af_adset=)`
 * `Nama iklan (af_ad=)`
 
+<div id="frequently-asked-questions" />
+
 <div id="example-2" />
 
 > 📄 **Contoh**
@@ -339,6 +351,22 @@ Parameternya adalah:
 > https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&
 > af_adset=coats&af_ad=cashmere
 > ```
+
+<div id="telegram-webview-attribution" />
+
+<div id="uri-scheme-validity-requirements" />
+
+<div id="a-popup-appears-when-clicking-on-a-uri-scheme-link-from-chrome-browser-on-ios" />
+
+<div id="deep-linking-is-not-supported-in-the-android-naver-blog-app" />
+
+<div id="agencies" />
+
+<div id="url-characteravailable" />
+
+<div id="redirection-parameters" />
+
+<div id="special-characters" />
 
 <div id="traits-and-limitations" />
 

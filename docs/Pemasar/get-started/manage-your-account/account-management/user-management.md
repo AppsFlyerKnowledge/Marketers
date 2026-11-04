@@ -47,6 +47,8 @@ Setiap pengguna akun AppsFlyer Anda harus diberi peran. Setiap peran menentukan 
 
 Peran dalam AppsFlyer dapat berupa [peran yang telah ditentukan sebelumnya](/docs/user-management#peran-yang-telah-ditentukan), [peran khusus](/docs/user-management#peran-khusus), atau (dalam keadaan tertentu) [peran sementara](/docs/user-management#peran-sementara).
 
+<div id="note-6" />
+
 <div id="predefined-roles" />
 
 ### Peran yang telah ditentukan
@@ -83,6 +85,8 @@ Peran yang telah ditentukan sebelumnya di AppsFlyer telah dikonfigurasikan denga
 
 Pelajari lebih lanjut tentang [mengelola peran khusus](/docs/user-management#mengelola-peran-khusus).
 
+<div id="get-roles-data-via-api" />
+
 <div id="temp-roles" />
 
 ### Peran sementara
@@ -97,6 +101,8 @@ Pelajari lebih lanjut tentang [mengelola peran sementara](/docs/user-management#
 
 Akun AppsFlyer dapat memiliki **satu atau lebih Admin**. Peran khusus ini memiliki beberapa karakteristik unik:
 
+<div id="manage-tokens" />
+
 <div id="access" />
 
 #### Akses
@@ -108,6 +114,8 @@ Peran Admin memiliki akses ke **semua kemampuan akun**, termasuk:
 * Semua sumber media dan geo
 
 Karakteristik "akses penuh" dari peran Admin ini tidak dapat diubah atau dibatasi.
+
+<div id="invite-new-partners-to-appsflyer" />
 
 <div id="role-duplication" />
 
@@ -170,6 +178,8 @@ Di samping setiap peran, Anda dapat melihat jumlah pengguna yang saat ini diteta
 
 Klik nama peran apa pun di panel kiri untuk menampilkan detail lengkap kemampuan peran tersebut.
 
+<div id="user-details" />
+
 <div id="manage-users" />
 
 ## Mengelola pengguna
@@ -192,6 +202,22 @@ Ada dua tahap untuk membuat pengguna. Pertama, pengguna dibuat di platform. Sela
    * Dapat berisi huruf, angka, apostrof ('), ampersan (&), tanda dolar ($), simbol hash (#), tanda hubung (-), garis bawah (\_), dan tanda titik (.)
    * Dua titik berturut-turut (..) dan karakter khusus lainnya tidak diperbolehkan.
    * Harus diakhiri dengan domain email yang valid.
+
+   <div id="custom_media_sources" />
+
+   <div id="geos" />
+
+   <div id="note-1" />
+
+   <div id="media-sources" />
+
+   <div id="note" />
+
+   <div id="data-access" />
+
+   <div id="app-access" />
+
+   <div id="role" />
 
    <div id="important" />
 
@@ -250,7 +276,13 @@ Setelah pengguna dibuat, Anda dapat melihatnya di tabel pengguna dengan ikon amp
 
 Pengguna dapat ditambahkan ke beberapa akun dan ditetapkan ke peran berbeda di setiap akun. Ini membantu pengguna bekerja di akun yang berbeda tanpa perlu memasukkan kembali kredensial.
 
+<div id="limitations-on-adding-users-to-multiple-accounts" />
+
 <div id="supported-accounts-and-users" />
+
+<div id="note-3" />
+
+<div id="log-in-to-multiple-accounts" />
 
 #### Akun dan pengguna yang didukung
 
@@ -321,6 +353,12 @@ Pengeditan multi-pengguna adalah cara yang efisien untuk mengubah izin akun bebe
    * Ingatlah bahwa perubahan Anda berlaku untuk semua pengguna yang dipilih!
 5. Pengguna yang diedit disorot dalam tabel, dan pengguna muncul sebagaimana adanya setelah perubahan disimpan. Namun, Anda masih memiliki kesempatan untuk meninjau perubahan dan mengonfirmasi atau membatalkannya di langkah berikutnya.
 6. Tinjau perubahan Anda. Klik **Simpan** untuk mengonfirmasi atau **Batal** untuk membatalkannya.
+
+<div id="to-delete-users" />
+
+<div id="manage-users-in-bulk-via-api" />
+
+<div id="note-5" />
 
 <div id="example" />
 
@@ -451,6 +489,10 @@ Peran sementara dirancang khusus untuk memungkinkan transisi yang mulus dari sis
 * Saat pengguna dengan peran sementara diubah ke peran yang ditentukan sebelumnya, mereka tidak dapat dikembalikan ke peran sementara yang ditetapkan sebelumnya (atau ke peran sementara lainnya).
 * Jika pengguna terakhir dalam peran sementara dihapus darinya, peran tersebut tidak akan muncul lagi di akun Anda.
 
+<div id="combined-media-source-and-agency-access" />
+
+<div id="example-3" />
+
 <div id="example-2" />
 
 > 📄 **Contoh**
@@ -499,6 +541,8 @@ Karena semua Admin pada dasarnya memiliki izin yang sama dengan pemilik akun, ma
 > 🚧 **Penting!**
 >
 > Mengubah pemilik akun harus diselesaikan secara manual sesuai dengan langkah-langkah ini. Itu tidak dapat dilakukan dari halaman **Manajemen pengguna** .
+
+<div id="2send-an-email-request" />
 
 <div id="1assign-a-team-member-the-admin-role" />
 

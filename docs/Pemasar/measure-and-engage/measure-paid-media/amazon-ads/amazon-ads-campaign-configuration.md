@@ -23,6 +23,8 @@ x-zendesk:
 
 ![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
 
+<div id="complete-the-setup-in-amazon-ads" />
+
 <div id="activate-partner" />
 
 ## Aktifkan mitra
@@ -95,6 +97,12 @@ Konfigurasikan cara mengirim postback untuk penginstalan:  
 > * Hanya untuk aplikasi iOS: Kontrol Anda atas data yang dibagikan dengan mitra melalui postback dan <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions">laporan</Anchor> bergantung pada status sakelar **Privasi Lanjutan (untuk iOS 14.5+ dan yang lebih baru)** .
 > * Postback dibagikan melalui Data Locker dalam laporan per jam, bukan dalam waktu aktual.
 
+<div id="note-1" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="re-engagement-attribution" />
+
 <div id="install-attribution" />
 
 #### Instal atribusi
@@ -110,6 +118,8 @@ Atur jendela atribusi klik-tayang dan lihat-tayang untuk penginstalan (peluncura
 #### Postback in-app event
 
 Konfigurasikan pemetaan in-app event dengan event Amazon DSP, dikirim melalui postback.
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -178,6 +188,24 @@ Pilih izin mana yang akan diberikan kepada Amazon DSP untuk mengakses data Anda 
 > * Pelajari lebih banyak tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">pemberian izin</Anchor>.
 
 </Accordion>
+
+<div id="traits-and-limitations" />
+
+<div id="see-also-1" />
+
+<div id="note-5" />
+
+<div id="dma-consent-methods" />
+
+<div id="note-4" />
+
+<div id="support-amazon-eu-consent-policy" />
+
+<div id="ctv-to-mobile-attribution" />
+
+<div id="raw-data-restrictions" />
+
+<div id="deferred-deep-linking" />
 
 <div id="see-also" />
 

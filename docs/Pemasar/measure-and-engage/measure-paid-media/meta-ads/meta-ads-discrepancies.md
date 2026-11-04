@@ -78,6 +78,8 @@ Karena Meta ads tidak mengirimkan data tingkat pengguna, AppsFlyer mungkin tidak
 
 Namun, untuk atribusi klik-tayang, jika iklan mengarahkan pengguna ke Google Play Store, bidang atribusi tersedia untuk pengiklan di Google Install Referrer. Bidang ini tersedia melalui referrer yang mengisi laporan data lengkap AppsFlyer yang tersedia untuk Anda dan mengaktifkan AppsFlyer untuk mengatribusikan pengguna yang tidak memiliki ID iklan (LAT diaktifkan).
 
+<div id="different-event-count" />
+
 <div id="in-app-events-differences" />
 
 ## Perbedaan In-App Event
@@ -134,6 +136,8 @@ Demikian pula, jika Anda menggunakan solusi anti-penipuan AppsFlyer, Protect360,
 >
 > Jeff, manajer UA GreatApp, membuat kampanye yang disebut SPNA, yang hanya menargetkan penutur bahasa Spanyol di Amerika Utara. Untuk melakukan verifikasi hal ini, Jeff menetapkan aturan validasi, yang hanya menerima pengguna dari Kanada dan AS.
 > Saat pengguna iklan Meta dari Spanyol mengeklik dan menginstal aplikasi, Meta ads melaporkan sendiri penginstalan tersebut, sementara AppsFlyer menolak penginstalan yang tidak lulus aturan validasi.
+
+<div id="meta-probabilistic-modeling-aem-discrepancies-in-ios-apps" />
 
 <div id="sdk-related-discrepancies" />
 

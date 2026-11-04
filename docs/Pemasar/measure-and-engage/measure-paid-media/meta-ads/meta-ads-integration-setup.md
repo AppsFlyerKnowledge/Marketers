@@ -58,6 +58,16 @@ Untuk mengintegrasikan Meta ads dengan AppsFlyer, pertama, buat <Anchor target="
 
 AppsFlyer mengatribusikan data per ID Aplikasi. ID Aplikasi Facebook yang sama dapat digunakan untuk [aplikasi Android dan iOS Anda](https://developers.facebook.com/docs/app-ads/app-setup/). Perhatikan bahwa untuk iOS 14+, Meta ads membatasi akun iklan hingga sembilan akun per aplikasi.
 
+<div id="optional--configure-recommended-settings" />
+
+<div id="set-the-meta-ads-active-integration" />
+
+<div id="enable-meta-ads-device-level-data" />
+
+<div id="create-and-retreive-facebook-app-id" />
+
+<div id="important" />
+
 <div id="basic-meta-ads-attribution-setup" />
 
 ## Pengaturan atribusi Meta ads dasar
@@ -106,6 +116,16 @@ Untuk mulai mengatribusikan kampanye Meta ads dengan AppsFlyer, ikuti langkah-la
 Masih belum melihat hasilnya di AppsFlyer? Lihat Pemecahan masalah integrasi Meta ads
 
 </Accordion>
+
+<div id="note-1" />
+
+<div id="campaign-attribution-fields-available-via-the-referrer" />
+
+<div id="note" />
+
+<div id="meta-install-referrer" />
+
+<div id="google-play-install-referrer-api" />
 
 <div id="advanced-meta-ads-attribution-setup" />
 
@@ -190,6 +210,8 @@ Penargetan yang luas diperlukan untuk menerima data penginstalan *view-through*.
 * Untuk "santai", "Penargetan terperinci yang menguntungkan" untuk kampanye iklan harus dipilih:  
 
   <Image alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
+
+<div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
 #### Data terenkripsi dari Google Play Referrer API atau Meta install referrer
 
@@ -292,6 +314,16 @@ Pelajari lebih banyak tentang memperkaya data Anda dengan <Anchor target="_blank
   * Titik (.)
   * Set karakter non-Latin (Inggris): Sebagai tanggal 12 Januari 2020, iklan Meta menolak Karakter Cina. AppsFlyer belum menguji set karakter lain dan Anda harus gunakan ini hanya setelah memverifikasi dengan Meta iklan jika mereka mendukung set karakter ini di postback.
 * Nama *event* peka huruf besar-kecil. Untuk menghindari perbedaan, pastikan Anda menggunakan huruf besar yang benar dalam acara tersebut nama untuk semua sumber media dan versi aplikasi.
+
+<div id="use-deep-links-in-meta-ads-campaigns" />
+
+<div id="advanced_matching_data_sharing" />
+
+<div id="see-also" />
+
+<div id="note-3" />
+
+<div id="whatsapp-retargeting-campaign-attribution" />
 
 <div id="note-2" />
 
@@ -400,6 +432,8 @@ Pelajari lebih lanjut tentang SSOT <Anchor target="_blank" href="/marketers/id/d
 ## Pengukuran Event Gabungan (AEM) untuk iOS
 
 <Anchor target="_blank" href="/marketers/id/docs/meta-ads-aggregate-event-measurement-aem-for-ios">AppsFlyer mendukung Pengukuran Event Gabungan Meta ads (AEM). Solusi ini membantu mengoptimalkan konversi iOS dan *in-app event* sekaligus mengatribusikan interaksi ulang iOS pada Meta ads.</Anchor>
+
+<div id="aem-attribution-is-not-working" />
 
 <div id="meta-ads-integration-troubleshooting" />
 

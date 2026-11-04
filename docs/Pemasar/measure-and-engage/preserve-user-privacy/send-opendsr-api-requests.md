@@ -568,6 +568,8 @@ https://hq1.appsflyer.com/api/gdpr/v1/stubcertificate
 https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 ```
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > * Token API V2 yang valid harus dimasukkan ke dalam header permintaan sebagai berikut: `'Otorisasi': 'Pembawa %AuthTokenV2% '`

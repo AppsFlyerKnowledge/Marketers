@@ -43,6 +43,18 @@ Berikut ini penjelasan tentang istilah-istilah keaktualan data yang dirujuk dala
 
 </Accordion>
 
+<div id="h_01K9CROSSPLATFORMREPORT" />
+
+<div id="conversion-report" />
+
+<div id="advanced-reports" />
+
+<div id="note-1" />
+
+<div id="note" />
+
+<div id="advanced-raw-data-reports-beta" />
+
 <div id="raw-data-reports" />
 
 ## Laporan Data Lengkap
@@ -158,6 +170,10 @@ Lihat <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-a
 Lihat <Anchor target="_blank" href="/marketers/id/docs/ctv-pc-and-console-data-via-data-locker">data platform CTV, PC, dan konsol melalui Data Locker</Anchor>
 
 </Accordion>
+
+<div id="creative-optimization-etl" />
+
+<div id="advanced-aggregated-reports" />
 
 <div id="aggregated-reports" />
 

@@ -47,6 +47,10 @@ Kuota membatasi jumlah laporan yang dapat dihasilkan per hari per jenis laporan.
 | API Kelompok | 60 panggilan per menit per akun |
 | Laporan gabungan SKAN | 10 panggilan per menit per akun |
 
+<div id="note" />
+
+<div id="pull-api-raw-data-daily-quota" />
+
 <div id="raw-data" />
 
 ### Data Lengkap

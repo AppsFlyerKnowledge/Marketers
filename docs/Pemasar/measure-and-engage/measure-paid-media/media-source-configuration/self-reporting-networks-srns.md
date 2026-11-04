@@ -275,6 +275,8 @@ Analis data AppsFlyer memeriksa kampanye **akuisisi pengguna** Meta ads selama b
 
 [![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
 
+<div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
+
 <div id="solving-the-mistargeting-problem" />
 
 #### Memecahkan masalah salah sasaran

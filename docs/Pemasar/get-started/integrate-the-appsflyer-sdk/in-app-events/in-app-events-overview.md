@@ -53,6 +53,10 @@ In-app event terdiri dari nama event dan dapat menyertakan parameter event. Saat
 >
 > Ingin tahu lebih banyak tentang in-app event? Lihat <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7774/play/18613/in-app-events-and-integrated-partners-part-1">kursus singkat dan informatif ini di Portal Pembelajaran AppsFlyer</Anchor>.
 
+<div id="note" />
+
+<div id="revenue-in-in-app-events" />
+
 <div id="predefined-and-custom-events" />
 
 <Accordion title="Event kustom dan yang telah ditentukan sebelumnya">
@@ -96,6 +100,8 @@ Nilai pendapatan hanya boleh berisi angka (dan koma desimal, jika diperlukan):
 **af\_currency** mewakili mata uang yang dinyatakan dalam af\_revenue (atau af\_price). Jika af\_currency tidak ada di parameter event, AppsFlyer mengirimkannya dengan nilai default "USD".
 
 Anda dapat menggunakan**af\_price**sebagai parameter moneter yang tidak dihitung sebagai pendapatan (seperti di event “Tambah ke Keranjang Belanja”). Parameter ini mengacu pada harga barang individual. Jumlah total semua pembelian muncul di bawah parameter af\_revenue.
+
+<div id="note-1" />
 
 ### Mata uang pendapatan
 
@@ -198,6 +204,8 @@ Ada beberapa cara untuk mengirim in-app event ke AppsFlyer:
 * **<Anchor target="_blank" href="/marketers/id/docs/server-to-server-events-api-for-mobile-s2s-mobile">API server-ke-server:</Anchor>** Gunakan API server-ke-server untuk mengirim event yang terjadi di luar aplikasi seluler, langsung ke AppsFlyer. Misalnya, jika Anda memiliki pengguna yang aktif di antarmuka web dan seluler, Anda dapat mencatat event dari kedua sumber dan mengatribusikannya ke pengguna yang sama di AppsFlyer. Ini bisa berupa in-app event atau event lainnya, seperti event situs web, event pusat panggilan, atau pembelian di toko fisik Anda.
 * **<Anchor target="_blank" href="/marketers/id/docs/legacy-receipt-validation-for-in-app-purchases">Validasi tanda terima</Anchor>** Ini adalah mekanisme aman di mana platform pembayaran, misalnya, Apple dan Google, memvalidasi bahwa pembelian dalam aplikasi terjadi seperti yang dilaporkan. Memvalidasi pembelian adalah alat utama untuk mencegah penipuan event pendapatan. Fitur ini juga membantu Anda untuk melihat pendapatan sebenarnya, dan menyaring pembelian dalam aplikasi yang belum selesai.
 * **<Anchor target="_blank" href="/marketers/id/docs/in-app-events-for-hybrid-apps">Aplikasi hybrid:</Anchor>** Aplikasi ini menggabungkan tampilan asli dan konten HTML dan juga dapat merekam in-app event. Namun, karena SDK hanya dapat mengirim event dari sisi native, pengembang harus meneruskan semua data event ke kode native.
+
+<div id="note-2" />
 
 <div id="setting-up-in-app-events" />
 
@@ -367,6 +375,12 @@ Jika pengguna menginisiasi event (aktivitas) saat koneksi internet tidak tersedi
 3. Setelah respons berhasil berikutnya diterima, event yang disimpan dikirim ke server lagi.
 4. Jika ada beberapa event dalam cache, mereka akan dikirim ke server, satu demi satu.
 
+<div id="h_01HDBZW9XFB9TAT8W4CGNP1892" />
+
+<div id="h_01KSMX2ECGTDXQP3G9PZW1PFQD" />
+
+<div id="important" />
+
 <div id="note-3" />
 
 > 📘 **Catatan**
@@ -465,6 +479,8 @@ Dua event dianggap identik jika kolom berikut di kedua event itu sama:
 * nilai event
 * ID Aplikasi
 * AppsFlyer ID
+
+<div id="see-also" />
 
 <div id="note-4" />
 

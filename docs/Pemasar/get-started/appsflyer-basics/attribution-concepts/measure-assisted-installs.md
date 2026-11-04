@@ -56,6 +56,8 @@ Data analitik dari penginstalan terbantu tersedia di tingkat sumber media dan ka
 
 Dalam banyak kasus, calon pengguna menjadi terbiasa dengan aplikasi melalui sumber bantuan, tetapi gagal menginstal karena beberapa alasan. Oleh karena itu, mengukur dan mengenali bantuan adalah hal yang penting dalam pengoptimalan dan pengukuran kampanye.
 
+<div id="note" />
+
 <div id="assisted-installs-reporting" />
 
 ### Pelaporan assisted installs (penginstalan berbantuan)
@@ -74,6 +76,10 @@ Untuk masing-masing dari jaringan yang berkontribusi, laporan data lengkap menca
 * Jenis pencocokan (pencocokan ID, Google Play Referrer, atau SRN)
 
 Lihat <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview#laporan-perjalanan-pengguna">data lengkap perjalanan pengguna.</Anchor>
+
+<div id="note-2" />
+
+<div id="total-candidates-field" />
 
 <div id="note-1" />
 

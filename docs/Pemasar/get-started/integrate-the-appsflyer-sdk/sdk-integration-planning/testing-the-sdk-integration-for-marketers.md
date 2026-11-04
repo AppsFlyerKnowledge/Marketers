@@ -27,6 +27,16 @@ x-zendesk:
 ---
 > **Sekilas:** Uji integrasi aplikasi Android atau iOS Anda dengan AppsFlyer.
 
+<div id="note-1" />
+
+<div id="perform-the-integration-tests" />
+
+<div id="prepare-a-test-device" />
+
+<div id="note" />
+
+<div id="testing-using-the-sdk-integration-tests-page" />
+
 ## Overview
 
 Integrasi yang diuji dengan cermat memastikan pengumpulan data yang akurat dan komprehensif. Dengan menguji integrasi SDK, Anda dapat memverifikasi bahwa SDK berhasil berkomunikasi dengan server AppsFlyer, penginstalan, in-app event, dan penargetan ulang dicatat dan diatribusikan dengan benar.
@@ -102,6 +112,10 @@ Lakukan salah satu prosedur berikut untuk menambahkan aplikasi debug:
 </Tab>
 </Tabs>
 
+<div id="traits-and-limitations" />
+
+<div id="note-5" />
+
 <div id="testing-ctv" />
 
 ### Kasus uji khusus
@@ -113,6 +127,8 @@ Kasus uji khusus meliputi:
 * **Aplikasi tvOS yang tidak dipublikasikan:** Mewajibkan pemasar dan pengembang untuk bekerja sama (lihat <Anchor target="_blank" href="/marketers/id/docs/testing-tvos-integration-before-publishing">Menguji integrasi tvOS sebelum mempublikasikan</Anchor>).
 * **Amazon Fire TV:** Pemasar dapat [menguji integrasi](/docs/testing-the-sdk-integration-for-marketers#pengujian-dari-dashboard) menggunakan metode pengujian SDK Android di dashboard AppsFlyer. (Pelajari lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/setting-up-amazon-fire-tv-ad-attribution">atribusi Amazon Fire TV</Anchor>).
 * **PBA web event:** Mewajibkan pemasar dan pengembang untuk bekerja sama (lihat <Anchor target="_blank" href="/marketers/id/docs/test-pba-web-sdk-integration">Menguji integrasi SDK web PBA</Anchor>).
+
+<div id="testing-organic-installs" />
 
 ## Menguji fungsionalitas SDK dasar
 
@@ -212,6 +228,12 @@ Untuk kesalahan integrasi, hubungi pengembang Anda.
    ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
 
 </Accordion>
+
+<div id="tip" />
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 <div id="testing-using-attribution-links" />
 
@@ -344,6 +366,8 @@ Untuk informasi lebih lanjut, lihat panduan tentang <Anchor target="_blank" href
 
 </Accordion>
 
+<div id="note-4" />
+
 <div id="testing-retargeting-using-attribution-links" />
 
 ## Menguji penargetan ulang mengggunakan tautan atribusi
@@ -423,6 +447,8 @@ Anda sekarang dapat melanjutkan untuk menguji atribusi ulang dan interaksi ulang
    Anda akan melihat penginstalan yang diatribusikan ke sumber media dan kampanye. Tunggu hingga 30 menit hingga penginstalan yang ditargetkan muncul di dasbor.
 
    [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+
+<div id="tip-1" />
 
 > 👍 **Tips**
 >

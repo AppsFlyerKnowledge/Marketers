@@ -176,6 +176,10 @@ Izin tidak tersedia untuk Amplitude.
 
 </Accordion>
 
+<div id="sending-amplitude-events-to-appsflyer" />
+
+<div id="important-1" />
+
 <div id="viewing-attribution-data-in-the-amplitude-console" />
 
 ## Melihat data atribusi di konsol Amplitude

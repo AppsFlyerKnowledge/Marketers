@@ -24,6 +24,8 @@ x-zendesk:
 
 Data Locker memungkinkan Anda untuk mengalirkan data ke solusi penyimpanan yang Anda pilih dan miliki, baik itu bucket atau gudang data. Atur layanan cloud Anda menggunakan salah satu prosedur berikut.
 
+<div id="supported-aws-regions" />
+
 <div id="bucket-cloud-storage" />
 
 ## Penyimpanan cloud bucket
@@ -199,6 +201,8 @@ Data Locker adalah solusi AppsFlyer untuk streaming data ke penyimpanan.
 
 </Accordion>
 
+<div id="note" />
+
 <div id="data-warehouse-cloud-storage" />
 
 ## Penyimpanan cloud gudang data
@@ -246,6 +250,8 @@ Hubungkan Data Locker ke akun Snowflake Anda. Dengan melakukannya, data dikirim 
   2. Setiap kali Anda menjalankan proses penyerapan, hanya serap baris dengan `_ingestion_time > max_ingestion_time`
 
 Selesaikan prosedur berikut untuk menyambungkan Snowflake ke Data Locker.
+
+<div id="traits-and-limitations" />
 
 <div id="snowflake-connector-procedures" />
 

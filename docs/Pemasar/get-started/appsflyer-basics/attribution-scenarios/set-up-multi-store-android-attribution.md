@@ -37,6 +37,8 @@ x-zendesk:
 
 AppsFlyer mengatribusikan aplikasi, terlepas dari app store. Artinya Google Play store dan toko aplikasi Android pihak ketiga seperti Amazon, Opera, GetJar, Baidu, dan Huawei. (Toko di luar pasar AKA atau toko aplikasi Android alternatif.) Pemilik aplikasi, yang memasarkan aplikasi melalui beberapa toko, dapat memilih antara **satu** **dashboard** yang memiliki data semua toko secara bersamaan atau satu **dashboard per toko.**
 
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > * Atribusi Android AppsFlyer mendukung semua jenis pengidentifikasi perangkat termasuk GAID dan <Anchor target="_blank" href="/marketers/id/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>
@@ -52,6 +54,10 @@ AppsFlyer mengatribusikan aplikasi, terlepas dari app store. Artinya Google Play
 * **Dashboard per toko:** Beberapa dashboard—setiap toko memiliki dashboardnya sendiri. Ini berarti Anda memiliki dashboard sebanyak toko yang menyediakan aplikasi.
 
 <table><thead><tr><th> </th><th><p>Satu dashboard<br/>[Praktik terbaik]</p></th><th> Dashboard per toko</th></tr></thead><tbody><tr><td><span id="android-package-name"></span>Nama paket Android</td><td colspan="2">Gunakan nama paket yang sama (identik) terlepas dari opsi yang dipilih. </td></tr><tr><td><span id="channel-name"></span>Nama kanal</td><td>Tidak ada yang disetel</td><td><ul><li><span>Saat menambahkan Aplikasi di dashboard AppsFlyer menggunakan opsi <strong>Toko aplikasi Android selain Play Store APK</strong>, atur channelnya.</span></li><li><span>Kanal yang mengidentifikasi toko. </span></li><li>Kombinasi nama paket dan channel Android secara unik mengidentifikasi setiap dashboard AppsFlyer. </li><li>Misalnya: Nama paket Android-nya adalah com.abc.def dan channelnya adalah xyz_device_store. Pengenal dashboard uniknya adalah com.abc.def-xyz_device_store. </li><li>Jika APK memiliki pengaturan kanal tetapi tidak ada aplikasi dengan pengaturan ini, trafik diatribusikan ke aplikasi default, menjadi aplikasi dengan pengaturan kanal yang kosong menjadi Google Play Store. </li></ul></td></tr><tr><td><span id="populating-the-install_app_store-field"></span>Mengisi bidang install_app_store</td><td><ul><li>Secara unik mengidentifikasi toko yang menyediakan aplikasi melalui unduhan.</li><li>Dalam kasus Google Play Store, ini kosong. </li><li>Nama toko diatur dalam <a href="./set-up-multi-store-android-attribution#single-dashboard-apk-preparation">manifes/APK</a>.</li></ul></td><td><p>N/A</p></td></tr><tr><td><span id="onelink-template"></span><a href="./create-a-onelink-template#prosedur" target="_blank">Templat OneLink</a></td><td>Saat bekerja dengan OneLink, metode ini disarankan. </td><td>N/A </td></tr><tr><td><span id="measurementattribution-links"></span>Tautan Pengukuran/Atribusi </td><td><ul><li>Tautannya sama terlepas dari tokonya.</li><li>Untuk mengalihkan ke toko yang benar, gunakan <a href="./set-up-multi-store-android-attribution#single-dashboard-attribution-links">af_r</a> untuk menyetel URL pengalihan</li></ul></td><td><ul><li>Tautan unik diperlukan untuk setiap toko.</li><li>Buat ini menggunakan halaman <strong>Integrasi aktif</strong> .</li><li>ID aplikasi adalah nama kanal yang ditambahkan ke nama paket android. Contoh: com.abc.def-def_store.<br/>Karenanya tautan atribusi akan berbeda.</li></ul></td></tr><tr><td><span id="reporting-options-available-having-install_app_store-field"></span>Opsi pelaporan tersedia dengan bidang install_app_store</td><td><p>Ikhtisar, Laporan kelompok, dan data lengkap mencakup bidang tersebut. Hubungi CSM Anda untuk meminta mereka menambahkan bendera fitur SFDC yang diperlukan. </p></td><td>N/A </td></tr><tr><td><span id="considerations"></span><p>Pertimbangan</p></td><td><ul><li>Akurasi atribusi: Penginstalan ulang dari toko yang berbeda tidak menghasilkan jumlah penginstalan yang meningkat. </li><li><span>Penginstalan organik akan mencerminkan penginstalan organik APK dari semua toko di bawah satu dashboard.</span></li><li><span>Opsi pelaporan, yang diperinci per toko,  saat ini terbatas pada Gambaran Umum, Kelompok, dan data lengkap.</span></li></ul></td><td><ul><li>Akurasi atribusi: Penginstalan ulang dihitung, yang menghasilkan atribusi yang kurang akurat.</li><li> <span>Lihat </span>penginstalan<span>organik</span><span> dan </span><span>non-organik</span><span> serta data in-app event per toko (kanal) pada dashboard aplikasi terpisah di AppsFlyer.</span> </li><li><span>Gunakan Kelompok untuk menampilkan laporan gabungan dari semua toko secara bersamaan</span></li><li>Pastikan mitra yang bekerja sama dengan Anda <strong>aktif</strong> (<a href="./partner-activation-deactivation" target="_blank">Aktifkan partner</a> diaktifkan) di <strong>semua</strong> dashboard. Ini <span>untuk menghindari perbedaan (lebih umum saat membandingkan data dengan SRN).</span><span></span> </li></ul></td></tr></tbody></table>
+
+<div id="tasks" />
+
+<div id="before-you-begin" />
 
 <div id="set-up-tasks" />
 
@@ -77,6 +83,8 @@ Tugas
 | 2 | Pemasar | Tidak diperlukan tindakan. Asumsinya adalah aplikasi tersebut sudah aktif di AppsFlyer. | [Tambahkan aplikasi](/docs/set-up-multi-store-android-attribution#dashboard-per-store-adding-the-app) di AppsFlyer. |
 | 3 | Pemasar | [Siapkan tautan atribusi](/docs/set-up-multi-store-android-attribution#single-dashboard-attribution-links) | Persiapkan tautan atribusi dengan ID aplikasi yang digabungkan dengan nama kanal. Lakukan melalui halaman **Integrasi aktif** dengan cara biasa. |
 | 4 | Pengembang dan pemasar | [Pengujian](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) | [Pengujian](/docs/set-up-multi-store-android-attribution#testing-both-dashboard-options) |
+
+<div id="note-1" />
 
 <div id="procedures" />
 
@@ -225,6 +233,8 @@ Tambahkan dashboard (aplikasi) yang diidentifikasi dengan kombinasi nama paket A
 | Periksa halaman ikhtisar untuk penginstalan organik baru (di bawah sumber media "organik"). Saat ini, dengan metode aplikasi tunggal, tidak ada indikasi asal penginstalan organik. | <ol><li>Buka halaman dasbor dan ikhtisar aplikasi yang khusus untuk toko yang diuji.</li><li>Anda akan melihat satu konversi penginstalan di bawah sumber media "organik".</li></ol> |
 
 </Accordion>
+
+<div id="3rd-party-raw-data" />
 
 <div id="additional-features" />
 

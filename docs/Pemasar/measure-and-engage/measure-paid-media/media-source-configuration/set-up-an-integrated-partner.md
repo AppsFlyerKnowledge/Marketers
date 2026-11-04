@@ -118,6 +118,8 @@ Halaman ini disusun sebagai berikut:
 
 </Accordion>
 
+<div id="important" />
+
 <div id="set-up-a-partner-non-srn" />
 
 ## Siapkan mitra (non-SRN)
@@ -142,6 +144,26 @@ Integrasi mitra berbeda dalam persyaratannya dan dapat berisi sebagian dari semu
 ![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
 
 Selesaikan bagian sesuai kebutuhan.
+
+<div id="i-connect-more-apps-optional" />
+
+<div id="g-in-app-event-postback-configuration" />
+
+<div id="default-postbacks" />
+
+<div id="e-cross-platform-attribution" />
+
+<div id="reengagement-window" />
+
+<div id="non-eu-users" />
+
+<div id="d-general-settings" />
+
+<div id="c-transaction-id" />
+
+<div id="b-advanced-privacy" />
+
+<div id="a-activate-partner" />
 
 <div id="integration-sections" />
 
@@ -556,6 +578,8 @@ Jika Anda bertindak sebagai penerbit yang menampilkan iklan di aplikasi Anda, fu
 * **Jaringan iklan yang diatur oleh agensi:** Saat pengaturan mitra dilakukan oleh agensi, pemasang iklan tidak dapat melihat status aktivasi jaringan iklan atau hak akses yang diberikan.
 * Jika hubungan Anda dengan mitra hanya agensi, abaikan bagian **Hak Akses Jaringan Iklan** dan atur bagian **Hak Akses Agensi** .
 
+<div id="note-3" />
+
 <div id="ad-network-permissions" />
 
 #### Hak Akses Ad Network
@@ -586,6 +610,8 @@ Jika Anda bertindak sebagai penerbit yang menampilkan iklan di aplikasi Anda, fu
 | <span id="use-ad-spend-ingestion"></span>Gunakan penyerapan belanja iklan | Jaringan iklan dapat:<ul><li>Akses jendela <Anchor target="_blank" href="/marketers/id/docs/import-cost-data">Penyerapan Belanja Iklan</Anchor>. Jendela ini hanya menampilkan aplikasi yang izinnya mereka miliki.</li><li>Kirim file belanja iklan untuk pelaporan.</li></ul> |
 | <span id="access-protect360-dashboard-raw-data"></span>Akses dasboard Protect360 & data lengkap | Jaringan iklan dapat:<ul><li>Mengakses dashboard Protect360 mereka (termasuk <Anchor target="_blank" href="/marketers/id/docs/basic-fraud-detection-and-insights-with-protectlite-dashboard-and-reporting">ProtectLITE</Anchor>).</li><li>Akses Protect360, Aturan Validasi, dan data lengkap jika merupakan mereka merupakan bagian dari paket langganan Anda. ProtectLITE tidak menyertakan akses ke data lengkap.</li></ul>**Catatan:** Ketika Anda berlangganan <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">Protect360</Anchor> , jaringan iklan dapat melihat dashboard lengkap. Tanpa langganan Protect360, mereka dapat melihat dashboard lite. |
 | <span id="access-ad-revenue-raw-data"></span>Mengakses data lengkap pendapatan iklan | Jaringan iklan dapat mengakses <Anchor target="_blank" href="/partners/id/docs/ad-revenue-signals-for-ua-ad-networks">data pendapatan iklan mereka untuk digunakan demi pengoptimalan UA</Anchor>.   <br />**Catatan:** Izin ini hanya tersedia untuk aplikasi dengan langganan <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> . |
+
+<div id="important-1" />
 
 <div id="agency-permissions" />
 

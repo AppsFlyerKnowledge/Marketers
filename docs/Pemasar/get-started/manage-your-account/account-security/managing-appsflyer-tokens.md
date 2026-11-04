@@ -32,6 +32,16 @@ x-zendesk:
 > * Amankan token Anda karena memungkinkan akses ke data Anda. Jangan publikasikan token di repositori kode publik.
 > * Disarankan untuk menyetel ulang token API setiap 180 hari.
 
+<div id="applications-of-the-api-v2-token" />
+
+<div id="warning" />
+
+<div id="delete-a-token" />
+
+<div id="note-1" />
+
+<div id="create-a-token" />
+
 <div id="retrieve-tokens" />
 
 ## Mengambil token API
@@ -63,6 +73,8 @@ x-zendesk:
 
 ## Jenis token diperlukan per API
 
+<div id="advertiser-1" />
+
 <div id="advertiser" />
 
 ### Token V2.0—API Pemasang Iklan
@@ -79,6 +91,16 @@ x-zendesk:
 | API pajak Pendapatan Sebenarnya |
 | <Anchor target="_blank" href="/marketers/id/docs/send-opendsr-api-requests">API OpenDSR</Anchor> |
 | <Anchor target="_blank" href="/marketers/id/docs/master-api-user-acquisition-metrics-via-api">Master API</Anchor> |
+
+<div id="applications-for-the-mcp-token" />
+
+<div id="applications-for-the-onelink-token" />
+
+<div id="note-2" />
+
+<div id="applications-of-the-s2s-token" />
+
+<div id="ad-network-1" />
 
 <div id="ad-network" />
 

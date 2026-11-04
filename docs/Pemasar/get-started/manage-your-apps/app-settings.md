@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang pengaturan yang memengaruhi atribusi dan analitik aplikasi Anda di seluruh sumber media.
 
+<div id="note" />
+
 <div id="app-settings" />
 
 ## Pengaturan aplikasi
@@ -40,6 +42,8 @@ x-zendesk:
 1. Di AppsFlyer, buka ***Configuration (Konfigurasi)*** > ***App Settings (Pengaturan Aplikasi).***
 2. Lihat pengaturan dan buat perubahan sesuai kebutuhan di laman Pengaturan Aplikasi.
 3. Klik **Simpan Pengaturan**.
+
+<div id="minimum-time-between-sessions" />
 
 <div id="general-app-settings" />
 
@@ -144,6 +148,10 @@ x-zendesk:
     </tr>
   </tbody>
 </Table>
+
+<div id="minimum-time-between-reengagement-conversions" />
+
+<div id="note-1" />
 
 <div id="attribution-settings" />
 

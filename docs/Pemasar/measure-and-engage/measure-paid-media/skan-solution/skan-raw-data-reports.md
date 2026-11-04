@@ -62,6 +62,18 @@ Jenis laporan yang tersedia adalah:
 * Bidang pengayaan yang tidak wajib seperti campaign\_name, ad\_network\_campaign, ip yang tidak disediakan oleh jaringan iklan.
 * Apple menahan data karena kebijakan ambang batas Apple. Bidang seperti source\_app\_id, skad\_campaign\_id, skad\_conversion\_value.
 
+<div id="decoded-event::5dac9cbb" />
+
+<div id="decoded-event::b8f2b4a4" />
+
+<div id="decoded-event::5c7e459f" />
+
+<div id="decoded-event" />
+
+<div id="postback::315d5a62" />
+
+<div id="postback" />
+
 <div id="skan-raw-data-report-format-and-content" />
 
 ## Format dan konten laporan data lengkap SKAN

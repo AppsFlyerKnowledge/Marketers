@@ -31,6 +31,10 @@ x-zendesk:
 
 ![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
 
+<div id="app-transfer-process" />
+
+<div id="prerequisites" />
+
 ## App transfer between accounts
 
 In order to transfer an app between AppsFlyer accounts, both the sending and receiving app owners (as represented by their AppsFlyer account admins) must complete the necessary transfer prerequisites and agree to the transfer.

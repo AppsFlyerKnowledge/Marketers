@@ -32,6 +32,10 @@ In-app event yang ingin Anda kirim mewajibkan pengembang untuk menerapkan kode j
 
 Untuk membantu Anda menentukan event dan parameter apa yang akan dicatat, lihat <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview#recommended-events-by-business-vertical">artikel kami yang menyertakan contoh dan alur</Anchor> menurut vertikal bisnis.
 
+<div id="lead-lead" />
+
+<div id="app-open-af_app_opened" />
+
 <div id="predefined-event-names" />
 
 ## Nama event yang telah ditentukan sebelumnya
@@ -780,6 +784,12 @@ Klik tautan untuk melihat pemetaan ke SRN.
 ## Parameter event yang telah ditentukan sebelumnya
 
 Bagian berikut menyediakan daftar parameter event yang telah ditentukan sebelumnya. Setiap parameter peristiwa menyertakan pemetaan yang digunakan untuk Meta ads, Google Ads, Snap, Twitter, dan Criteo. Anda dapat memilih untuk menyertakan salah satu parameter peristiwa dalam suatu event.
+
+<div id="af_projected_revenue" />
+
+<div id="h_01NEWAFNETREVENUE0001" />
+
+<div id="note-3" />
 
 <div id="note-2" />
 

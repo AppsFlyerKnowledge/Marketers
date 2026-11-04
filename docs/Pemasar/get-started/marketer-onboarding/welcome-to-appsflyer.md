@@ -54,11 +54,19 @@ Ada beberapa cara untuk masuk ke akun AppsFlyer Anda:
 * Masuk dengan Google: Masuk menggunakan Akun Google Anda
 * <Anchor target="_blank" href="/marketers/id/docs/set-up-sso-authentication-with-your-identity-provider-idp">Masuk menggunakan SSO</Anchor>
 
+<div id="primary-account" />
+
+<div id="note-1" />
+
+<div id="using-multiple-accounts" />
+
 <div id="note" />
 
 > 📘 **Catatan**
 >
 > Jika administrator Anda mengonfigurasi autentikasi dua faktor (<Anchor target="_blank" href="/marketers/id/docs/implementing-and-using-2fa-login">2FA</Anchor>) untuk akun Anda, Anda akan diminta memverifikasi login menggunakan metode autentikasi lain.
+
+<div id="note-2" />
 
 <div id="switch-between-accounts" />
 

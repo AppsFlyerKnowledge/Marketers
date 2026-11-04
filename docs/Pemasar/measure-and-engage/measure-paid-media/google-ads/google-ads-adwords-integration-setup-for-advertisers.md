@@ -180,6 +180,8 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 
 <Accordion title="Langkah 4: Mengukur konversi aplikasi Anda (wajib)">
 
+<div id="note" />
+
 <div id="important-1" />
 
 > 🚧 **Penting!**
@@ -261,6 +263,8 @@ Karena konversi yang dimodelkan tidak bergantung pada ID perangkat, mulai dari r
 * Saluran/inventaris YouTube ACI iOS tidak diatribusikan, karena aplikasi YouTube tidak meminta ATT sehingga IDFA tidak dapat digunakan.
 * Saluran/inventaris Tampilan ACI iOS dapat diatribusikan, hanya jika ada ID perangkat, jika ada persetujuan pada aplikasi pemasang iklan dan penerbit.
 
+<div id="note-2" />
+
 <div id="using-deferred-deep-linking-in-app-campaigns" />
 
 ## Menggunakan penautan langsung yang ditangguhkan di Kampanye aplikasi
@@ -284,6 +288,8 @@ Saat calon pengguna mengeklik feed, mereka dialihkan ke halaman aplikasi. Setela
 Tabel berikut menjelaskan pemetaan parameter antara Google Ads dan AppsFlyer. Perhatikan bahwa pemasang iklan tidak dapat menambahkan parameter yang dipersonalisasi ke kampanye Google Ads mana pun.
 
 <table><thead><tr><th><p><strong>Jenis jaringan</strong></p></th><th><strong>Pencarian</strong></th><th><strong>Tampilan</strong></th><th><strong>YouTube</strong></th></tr></thead><tbody><tr><td>Channel (af_channel)</td><td>Lihat tabel di bawah, <a href="./google-ads-adwords-integration-setup-for-advertisers#cara-mengisi-parameter-channel">Cara mengisi parameter <kbd>Channel</kbd></a> </td></tr><tr><td>Campaign (c)</td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td><p>Campaign id (af_c_id)</p></td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td>Adset (af_adset)<br/>Diisi oleh parameter ad_group_name.<br/>Jika parameter ini null, AF mengisi af_adset dengan ad_group_id.</td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td>Adset ID (af_adset_id) diisi oleh parameter ad_group_id Google</td><td>Ya</td><td>Ya</td><td>Ya</td></tr><tr><td><p>Ad (af_ad)</p></td><td>T/A</td><td>T/A</td><td>T/A</td></tr><tr><td>Ad ID (af_ad_id)</td><td>T/A</td><td>T/A</td><td>T/A</td></tr><tr><td>Ad Type (af_ad_type)</td><td>Ya\*</td><td>Ya\*</td><td>Ya\*</td></tr><tr><td>Site ID (af_siteid)</td><td>GoogleSearch/<br/>SearchPartners</td><td>T/A</td><td>YouTubeVideos/<br/>VideoPartners</td></tr><tr><td>Kata Kunci</td><td>T/A</td><td>T/A</td><td>T/A</td></tr></tbody></table>
+
+<div id="note-3" />
 
 <div id="populate-the-channel-parameter" />
 
@@ -318,6 +324,8 @@ Untuk informasi lebih lanjut tentang jenis iklan apa yang tersedia di tanggapan 
 Engaged view adalah tayangan pengguna dari iklan video yang berlangsung lebih dari 10 detik. Ini dihitung sebagai satu klik. Untuk Android, ini ditampilkan dalam laporan data lengkap yang mengisi “sub param 5”.  
 Parameter ini ditampilkan jika tampilan interaksi terjadi dalam jendela lookback klik yang ditentukan di AppsFlyer, tetapi durasi maksimalnya adalah 3 hari.
 
+<div id="send-complex-in-app-events-to-google-ads" />
+
 <div id="important-2" />
 
 > 🚧 **Penting!**
@@ -339,6 +347,10 @@ Dimulai dengan iOS14.5+ dan Android 12+, Google Ads memperkenalkan beberapa peng
 
 Saat AppsFlyer menerima pengenal ini dan mengirimkannya dalam postback Google Ads, Google Ads dapat mengklaim konversi berdasarkan pengenal tersebut. AppsFlyer menggunakan klaim tersebut dan mempertimbangkan parameter untuk atribusi dan untuk mengaitkan event LTV.  
 **Tidak diperlukan tindakan dari pemasang iklan untuk mengaktifkan penerimaan parameter ini.**
+
+<div id="google-probabilistic-attribution-icm-traits-and-limitations" />
+
+<div id="advertising-without-the-firebase-sdk" />
 
 <div id="data-visibility-by-operating-system" />
 

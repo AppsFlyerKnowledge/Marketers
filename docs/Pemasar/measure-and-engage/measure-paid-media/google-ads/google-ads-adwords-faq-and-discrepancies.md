@@ -22,6 +22,20 @@ x-zendesk:
 ---
 > **Sekilas:** Pecahkan masalah umum dan perbedaan terkait dengan Google Ads.
 
+<div id="why-dont-i-see-inapp-events-in-the-google-ads-dashboard" />
+
+<div id="why-don-t-i-see-installs-from-google-ads" />
+
+<div id="still-not-working-1" />
+
+<div id="note" />
+
+<div id="quick-fix-checklist" />
+
+<div id="still-not-working" />
+
+<div id="quick-fix" />
+
 <div id="google-ads-faq" />
 
 ## FAQ Google Ads

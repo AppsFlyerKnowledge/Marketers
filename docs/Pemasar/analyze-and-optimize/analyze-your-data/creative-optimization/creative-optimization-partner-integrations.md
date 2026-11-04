@@ -32,6 +32,8 @@ x-zendesk:
 
 Integrasi mitra secara lancar dan terus-menerus mengimpor materi iklan Anda dari kampanye yang dijalankan melalui mitra ke Optimisasi Materi Iklan.
 
+<div id="note" />
+
 <div id="data-availability" />
 
 ### Ketersediaan data
@@ -45,6 +47,20 @@ Setelah integrasi mitra ditambahkan:
 Dashboard Optimisasi Materi Iklan menampilkan data gabungan dari semua proses di atas.
 
 **Catatan:** Untuk melihat data biaya AppsFlyer (seperti ROAS), diperlukan <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">langganan ROI360</Anchor> .
+
+<div id="smadex" />
+
+<div id="revx" />
+
+<div id="reddit" />
+
+<div id="personaly" />
+
+<div id="mintegral" />
+
+<div id="notes" />
+
+<div id="note-1" />
 
 <div id="media-partner-integrations" />
 
@@ -473,6 +489,8 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
 
 **Catatan:** Jika Anda tidak memiliki akses ke peran ini, silakan hubungi manajer kesuksesan pelanggan Unity Anda atau kirim email ke [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) untuk meminta izin yang diperlukan.
 
+<div id="x-ads" />
+
 <div id="to-add-a-unity-integration-to-the-creative-dashboard" />
 
 #### **Untuk menambahkan integrasi Unity ke dashboard Materi Iklan:**
@@ -519,6 +537,12 @@ Untuk informasi lebih lanjut, lihat <Anchor target="_blank" href="https://suppor
 6. Klik **Simpan**.
 
 </Accordion>
+
+<div id="creative-integrations-dashboard" />
+
+<div id="grant-dashboard-access-to-an-agency" />
+
+<div id="add-an-agency-integration" />
 
 <div id="additional-information" />
 

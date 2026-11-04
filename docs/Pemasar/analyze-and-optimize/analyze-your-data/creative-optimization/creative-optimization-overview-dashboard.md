@@ -51,6 +51,8 @@ Gunakan dashboard untuk melihat data Anda disajikan secara visual dalam berbagai
 
 Jika Anda belum mengonfigurasi Optimisasi Materi Iklan, Anda dapat menemukan instruksi tentang cara melakukannya <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide#memulai">di sini</Anchor>.
 
+<div id="h_01JJS288YJ31DH3RMK395X998N" />
+
 <div id="charts" />
 
 ## Grafik
@@ -75,6 +77,8 @@ Gunakan bagan untuk mendapatkan representasi visual sekilas dengan cepat tentang
 Gunakan tabel untuk menelusuri detailnya. Kelompokkan menurut berbagai dimensi atau sesuaikan pengaturan tabel untuk menambahkan dimensi dan metrik tambahan ke tabel, lalu urutkan, lihat, dan bandingkan data untuk mendapatkan wawasan yang Anda perlukan.
 
 <div id="zd-table" />
+
+<div id="in-app-events" />
 
 <div id="table" />
 

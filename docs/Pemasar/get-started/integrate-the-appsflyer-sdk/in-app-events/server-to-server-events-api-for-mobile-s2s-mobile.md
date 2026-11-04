@@ -58,6 +58,14 @@ Saat AppsFlyer memproses in-app event S2S, bidang atribusi diisi dengan mengguna
 
 Artinya, beberapa data yang AppsFlyer kaitkan dengan kejadian dalam aplikasi S2S non-organik, tidak terkait dengan in-app event S2S organik.
 
+<div id="h_01_including-user-agent-and-ip-address-in-s2s-events" />
+
+<div id="increasing-the-volume-of-data-transactions" />
+
+<div id="note-1" />
+
+<div id="note" />
+
 > 📄 **Contoh**
 >
 > Misalnya, jika Anda membandingkan laporan data lengkap dari in-app event S2S non-organik dan organik, event non-organik berisi data yang tidak dimiliki oleh in-app event organik.
@@ -170,6 +178,8 @@ Event yang memiliki nilai pendapatan negatif dapat dikirim. Misalnya, jika pembe
 Jika Anda mengisi `af_quantity`, Anda mungkin ingin mengisinya dengan nilai negatif tergantung pada logika sistem Anda. AppsFlyer tidak menggunakan `af_quantity`.
 
 </Accordion>
+
+<div id="S2S_in-app_events_are_wrongly_attributed_as_organic" />
 
 <div id="troubleshooting" />
 

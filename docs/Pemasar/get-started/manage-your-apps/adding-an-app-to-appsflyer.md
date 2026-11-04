@@ -66,6 +66,20 @@ Jika Anda belum menambahkan aplikasi ke dashboard, layar pertama yang muncul aka
 
 </Accordion>
 
+<div id="product-line" />
+
+<div id="my-ios-app" />
+
+<div id="something-went-wrong" />
+
+<div id="cant-access-marketplace" />
+
+<div id="app-not-in-the-store" />
+
+<div id="app-wasnt-added" />
+
+<div id="other-information" />
+
 ## Troubleshooting
 
 Temukan solusi untuk beberapa masalah umum:

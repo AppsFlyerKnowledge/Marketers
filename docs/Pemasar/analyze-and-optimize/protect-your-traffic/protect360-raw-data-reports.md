@@ -29,6 +29,8 @@ x-zendesk:
 
 > **Sekilas:** Laporan data lengkap menjelaskan penginstalan dan in-app event yang diblokir oleh mesin Protect360, serta dari Aturan Validasi yang ditambahkan secara manual.
 
+<div id="note" />
+
 <div id="about-protect360-raw-data-reports" />
 
 ## Tentang laporan data lengkap Protect360
@@ -47,6 +49,18 @@ Laporan data lengkap:
 <div id="report-types" />
 
 <Accordion title="Jenis laporan">
+
+<div id="blocked-install-postbacks" />
+
+<div id="clicks" />
+
+<div id="postattribution-inapp-events" />
+
+<div id="blocked-inapp-events" />
+
+<div id="postattribution-installs" />
+
+<div id="installs" />
 
 <div id="protect360-raw-data-report-types" />
 
@@ -318,6 +332,8 @@ Data lengkap Protect360 mencakup penginstalan dan sesi penipuan dari kampanye pe
 Data lengkap penargetan ulang Protect360 tersedia untuk pemblokiran waktu aktual dan kecurangan yang teridentifikasi pasca-atribusi sebagai berikut:
 
 <table><thead><tr><th>Laporan </th><th>Ekspor data</th><th>Pull API</th><th>Data Locker</th></tr></thead><tbody><tr><td>Install</td><td><span>✓\*</span></td><td><span>✓\*</span></td><td>-</td></tr><tr><td>Instalasi pasca atribusi</td><td><span>✓</span></td><td><span>✓</span></td><td><span>✓</span></td></tr><tr><td colspan="4"> <span>\* Data interaksi ulang tidak tersedia</span><span><br/></span> </td></tr></tbody></table>
+
+<div id="traits-and-limitations" />
 
 <div id="hijacked-installs-attribution-correction" />
 

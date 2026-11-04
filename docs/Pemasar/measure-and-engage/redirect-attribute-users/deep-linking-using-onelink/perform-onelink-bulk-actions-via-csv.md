@@ -34,6 +34,8 @@ Tautan massal memungkinkan Anda membuat dan melihat tautan yang dibuat secara ma
    2. **Membuat templat OneLink** - Templat OneLink diperlukan untuk membuat koleksi. Lihat <Anchor target="_blank" href="/marketers/id/docs/create-a-onelink-template">Templat OneLink</Anchor>.
    3. **Upgrade** - Tautan massal tidak tersedia dengan paket Anda saat ini. Hubungi CSM Anda atau kirim pesan ke [hello@appsflyer.com](mailto:hello@appsflyer.com) tentang meng-upgrade paket Anda.
 
+<div id="managing-your-bulk-links-with-collections" />
+
 <div id="creating-your-first-collection" />
 
 ## Membuat koleksi pertama Anda
@@ -55,6 +57,20 @@ Tautan massal dikelola dalam koleksi.
   * Saat ini, batas default adalah 20.000 pembuatan tautan per bulan
 * Bagian **Koleksi** memungkinkan Anda membuat koleksi baru dan melakukan tindakan lain ke koleksi tautan Anda saat ini.
 * Jika ada lebih dari tujuh koleksi, Anda dapat mencari dan memfilter daftar koleksi Anda.
+
+<div id="downloading-a-collection-of-qr-codes" />
+
+<div id="downloading-a-collection-of-links" />
+
+<div id="empty-collections" />
+
+<div id="important-notes" />
+
+<div id="notes" />
+
+<div id="note" />
+
+<div id="important" />
 
 <div id="other-actions" />
 
@@ -181,6 +197,20 @@ Koleksi dapat menjadi kosong karena:
 * Proses pengumpulan Baru dibatalkan atau gagal diselesaikan sebelum tautan dibuat. Ini menciptakan koleksi kosong.
 
 </Accordion>
+
+<div id="can-you-bulk-create-qr-codes" />
+
+<div id="what-options-are-available-for-generating-qr-codes-in-appsflyer" />
+
+<div id="can-you-create-a-qr-code-and-change-the-behavior-behind-it-retroactively-after-printing-the-qr-for-example" />
+
+<div id="qr-with-long-links-vs-short-links---is-there-any-difference" />
+
+<div id="parameters-in-the-uploaded-csv" />
+
+<div id="faq" />
+
+<div id="note-1" />
 
 <div id="general-information" />
 

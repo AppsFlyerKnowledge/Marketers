@@ -29,6 +29,20 @@ x-zendesk:
 
 > **Sekilas:** API pelaporan kelompok memberi pemasang iklan cara terprogram untuk mendapatkan data Kelompok. Gunakan API untuk mengintegrasikan data Kelompok ke dalam BI dan sistem otomasi pemasaran.
 
+<div id="per_user" />
+
+<div id="aggregation_type" />
+
+<div id="preferred_timezone" />
+
+<div id="preferred_currency" />
+
+<div id="kpis" />
+
+<div id="groupings" />
+
+<div id="bearer" />
+
 <div id="cohort-api" />
 
 ## API pelaporan kelompok

@@ -46,6 +46,14 @@ Metrik berikut tersedia bagi pemasang iklan tanpa langganan ROI360:
 * <Anchor target="_blank" href="/marketers/id/docs/view-aggregated-cost-data-for-attribution-links">Data biaya berdasarkan klik</Anchor>.
 * Data klik dan impresi SRN, dikonfigurasi melalui tab **Biaya** mitra terintegrasi SRN.
 
+<div id="example" />
+
+<div id="cost-in-the-unified-view" />
+
+<div id="note" />
+
+<div id="cost-in-the-ua-view" />
+
 <div id="principles-of-cost-data-aggregation" />
 
 ## Prinsip agregasi data biaya
@@ -75,6 +83,8 @@ Untuk keperluan pemahaman tabel, penjelasan berikut berlaku, kecuali dinyatakan 
 * UA: Data biaya untuk kampanye akuisisi pengguna dengan paling sedikit 1 penginstalan yang tercatat baru-baru ini (artinya dalam sekitar 7 hari terakhir).
 * Terpadu: Data biaya semua kampanye, termasuk kampanye yang tidak mencatat instalasi baru-baru ini (artinya dalam sekitar 7 hari terakhir). Tabel ini menunjukkan kapan data hanya tersedia untuk kampanye dengan setidaknya 1 penginstalan yang tercatat baru-baru ini.
 * Jika perubahan nama kampanye tidak didukung, kedua nama kampanye akan ditampilkan, satu dengan data atribusi, dan satu lagi dengan data biaya. Nama kampanye yang ditampilkan tidak akan menyertakan gambaran data lengkap.
+
+<div id="note-1" />
 
 <div id="cost-data-availability-and-reports-table" />
 
@@ -117,6 +127,16 @@ Untuk sumber media tertentu, biaya dapat diperoleh melalui lebih dari satu metod
 * Mekanisme ini berdampak pada laporan data agregat dan dashboard.
 * Data biaya klik yang tersedia dalam laporan data lengkap tidak terdampak oleh mekanisme penentuan prioritas.
 
+<div id="closed-beta--cost-split" />
+
+<div id="limitations" />
+
+<div id="equal-split-no-conversions" />
+
+<div id="note-2" />
+
+<div id="proportional-split-by-conversions" />
+
 <div id="example-1" />
 
 > 📄 **Contoh**
@@ -140,6 +160,14 @@ Untuk sumber media tertentu, biaya dapat diperoleh melalui lebih dari satu metod
 | Klik | Prioritas terendah |
 
 </Accordion>
+
+<div id="cost-currency-conversion" />
+
+<div id="costs-without-installs" />
+
+<div id="changing-campaign-names" />
+
+<div id="example-2" />
 
 <div id="additional-information" />
 

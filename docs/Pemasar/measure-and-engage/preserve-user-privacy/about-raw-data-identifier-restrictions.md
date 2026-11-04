@@ -36,6 +36,16 @@ AppsFlyer membatasi ketersediaan beberapa bidang dalam laporan data lengkap untu
 
 Tabel berikut mencantumkan batasan per sumber media.
 
+<div id="x-ads-formerly-twitter" />
+
+<div id="uber" />
+
+<div id="reddit" />
+
+<div id="discord" />
+
+<div id="amazon-ads" />
+
 <div id="note" />
 
 > 📘 **Catatan**
@@ -54,6 +64,8 @@ Tabel berikut mencantumkan batasan per sumber media.
 | <span id="snapchat"></span>Snapchat | <ul><li>Mulai 1 Maret 2023, Uninstall Snapchat tidak disertakan dalam laporan data lengkap</li><li>Mulai 13 September 2023, atribusi lihat-tayang dibatasi. Bidang berikut **diisi** di alat pengiriman data lengkap:<ul><li>Sumber media (snapchat\_int)</li><li>Channel</li><li>Jenis sentuhan yang diatribusikan (tayangan)</li><li>Waktu sentuh yang dikaitkan (dilaporkan sebagai tanggal saja - "hh/bb/tttt")</li><li>Kampanye dilaporkan sebagai *"dibatasi"*</li></ul></li></ul> |
 | <span id="tiktok-for-business"></span>TikTok untuk Bisnis | <ul><li>Antara 28 Juli 2021 hingga 23 Oktober 2021, data atribusi lihat-tayang dibatasi.</li><li>Mulai 23 Oktober 2021, atribusi lihat-tayang dibatasi. Bidang berikut **diisi** di alat pengiriman data lengkap:<ul><li>Sumber media (bytedanceglobal\_int dan tiktokglobal\_int)</li><li>Channel</li><li>Jenis sentuhan yang diatribusikan (tayangan)</li><li>Waktu sentuh yang dikaitkan (dilaporkan sebagai tanggal saja - "hh/bb/tttt")</li><li>Kampanye dilaporkan sebagai *"dibatasi"*</li></ul></li></ul> |
 | <span id="twitter"></span>Twitter | Dalam beberapa kasus, Twitter tidak mengizinkan data lengkap tersedia di platform AppsFlyer. Dalam kasus ini, event tidak muncul di laporan data lengkap. |
+
+<div id="delivery-of-raw-data" />
 
 <div id="raw-data-context" />
 

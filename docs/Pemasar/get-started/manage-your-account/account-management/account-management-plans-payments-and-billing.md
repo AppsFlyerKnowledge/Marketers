@@ -118,6 +118,12 @@ Unit-unit yang menjadi dasar add-on terukur tambahan:
 | --- | --- | --- |
 | unit dolar ROI360 | Unit dolar yang tercatat dari biaya iklan, pendapatan iklan dalam aplikasi, dan pendapatan pembelian dalam aplikasi Anda (termasuk langganan), diukur dengan add-on ROI360. Setiap unit mewakili $1 dari pengukuran ROI360 yang tercatat. | <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-cost-and-revenue-data">ROI360—data biaya dan pendapatan</Anchor> |
 
+<div id="understand-billing-for-extended-platform-apps" />
+
+<div id="what-isnt-billed" />
+
+<div id="what-is-billed" />
+
 <div id="roi360-dollar-units" />
 
 #### unit dolar ROI360
@@ -173,6 +179,26 @@ Dari tab **Paket saya**, Anda dapat melihat detail paket Anda saat ini, meninjau
 | <span id="addons"></span>**Add-on** | Add-on yang disertakan dalam paket Anda dan tanggal mulai/akhirnya. Ini adalah fitur premium, misalnya:<ul><li><Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">Protect360</Anchor>: Perlindungan penipuan seluler</li><li><Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview">ROI360</Anchor>: Data biaya</li><li><Anchor target="_blank" href="/marketers/id/docs/audiences-guide">Audiences</Anchor></li><li><Anchor target="_blank" href="/marketers/id/docs/pivot-table-user-metrics">Tabel Pivot</Anchor></li><li><Anchor target="_blank" href="/marketers/id/docs/data-locker-for-marketers">Data Locker</Anchor></li></ul>Untuk mempelajari lebih lanjut tentang fitur ini dan potensi manfaatnya bagi bisnis Anda, hubungi CSM Anda atau hubungi [hello@appsflyer.com](mailto:hello@appsflyer.com). |
 | <span id="future"></span>**Paket mendatang** | Bagian ini hanya muncul bila paket mendatang telah dibeli. Jika demikian, Anda akan melihat detail tentang paket Anda berikutnya di sini. |
 
+<div id="partial::64822c61" />
+
+<div id="partial" />
+
+<div id="complete" />
+
+<div id="roi360" />
+
+<div id="measurement" />
+
+<div id="usage-report-fields" />
+
+<div id="note-3" />
+
+<div id="data-included-in-the-usage-report" />
+
+<div id="note-2" />
+
+<div id="access-to-the-usage-report-page" />
+
 <div id="usage-report" />
 
 ### Laporan penggunaan
@@ -202,6 +228,8 @@ Laporan penggunaan menampilkan konversi gabungan yang dikelompokkan menurut tang
 | <span id="conversion-source"></span>**Sumber Konversi** | Sumber data atribusi gabungan. Nilai yang mungkin meliputi:<ul><li>**Atribusi waktu sebenarnya (RTA):** AppsFlyer adalah sumber data atribusi gabungan</li><li>**Jaringan SKAd:** SKAdNetwork adalah sumber data atribusi gabungan</li><li>**Protect360 - sesudah atribusi:** Penyesuaian untuk atribusi sebelumnya dan in-app event yang teridentifikasi sebagai penipuan oleh <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">AppsFlyer Protect360</Anchor></li><li>**Atribusi berbasis orang (PBA):** Konversi web diatribusikan sebagai kunjungan rujukan oleh PBA AppsFlyer</li></ul> |
 | <span id="conversion-type"></span>**Tipe konversi** | Jenis konversi yang diatribusikan. Nilai [unit](/docs/account-management-plans-payments-and-billing#unit-paket) yang mungkin meliputi:<ul><li>Penginstalan non-organik/Non-organic installs (NOI)</li><li>Interaksi ulang</li><li>Re-attribution (Atribusi ulang)</li><li>Pengguna aktif bulanan (PAB)</li><li>In-App Event</li><li>Konversi web tidak langsung</li></ul>Bidang **Conversion Type (Jenis Konversi)** tidak diisi untuk konversi **pasca-atribusi Protect360**. |
 | <span id="total-conversions"></span>**Total Konversi** | Jumlah total unit yang dibebankan.<ul><li>**Konversi setelah atribusi Protect360** selalu **negatif** karena mereka mengembalikan konversi yang ditagih, yang diidentifikasi sebagai penipuan.</li><li>Untuk informasi selengkapnya tentang cara penghitungan konversi aplikasi iOS, lihat [Penagihan untuk aplikasi iOS](/docs/account-management-plans-payments-and-billing#opsi-pengukuran-konversi-untuk-penagihan-aplikasi-ios) (di bawah).</li></ul> |
+
+<div id="note-4" />
 
 <div id="download-a-usage-report" />
 
@@ -260,6 +288,26 @@ Untuk menghapus atau menurunkan versi akun, hubungi CSM Anda atau kirim email ke
 > 📘 **Catatan**
 >
 > Tab **Pembayaran dan faktur** hanya tersedia untuk paket yang memerlukan pembayaran (paket selain [Selamat Datang atau Nol](/docs/account-management-plans-payments-and-billing#appsflyer-plans)).
+
+<div id="other-payment-methods" />
+
+<div id="credit-card" />
+
+<div id="ach-for-us-customers-recurring-or-paynow" />
+
+<div id="managing-payment-methods" />
+
+<div id="set-up" />
+
+<div id="paynow-manual-invoice-payment" />
+
+<div id="note-6" />
+
+<div id="hands-free-recurring-payments" />
+
+<div id="payment-types" />
+
+<div id="recommended-for-us-customers-ach-automated-clearing-house" />
 
 <div id="payment-methods-easy--secure-invoicing" />
 

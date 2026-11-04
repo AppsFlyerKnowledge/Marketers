@@ -93,6 +93,8 @@ Anda tidak perlu menambahkan parameter tambahan apa pun ke deep link (is\_retarg
 
 </Accordion>
 
+<div id="support-for-non-app-campaigns-demand-gen-and-sem" />
+
 <div id="dynamic-remarketing-and-shopping-campaigns" />
 
 ## Pemasaran ulang dinamis dan kampanye belanja

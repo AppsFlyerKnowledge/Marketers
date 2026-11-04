@@ -48,6 +48,10 @@ Integrasi biaya menyediakan data teragregasi berikut ini:
   **Catatan:** Data biaya memerlukan langganan <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview?query=xpend">ROI360</Anchor> .
 * Data klik, tayangan, dan data yang diperkaya (kata kunci, nama kampanye, dan adset).
 
+<div id="tip" />
+
+<div id="note" />
+
 > 📘 **Catatan**
 >
 > * Akun MCC didukung.

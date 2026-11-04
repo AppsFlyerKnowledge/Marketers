@@ -22,6 +22,8 @@ x-zendesk:
 ---
 > **Sekilas:** Integrasikan akun X Ads Anda dengan AppsFlyer untuk menampilkan data atribusi kampanye X Ads.
 
+<div id="note" />
+
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
 ## Menghubungkan akun X Ads Anda ke AppsFlyer
@@ -78,6 +80,10 @@ Untuk penjelasan rinci tentang Header halaman konfigurasi mitra, klik <Anchor ta
 
 **Tab Integrasi** dibagi menjadi beberapa bagian, seperti yang dijelaskan di bawah. <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">Mitra harus diaktifkan</Anchor> pada kunjungan pertama untuk mengaktifkan pengaturannya.
 
+<div id="note-1" />
+
+<div id="advanced-privacy" />
+
 <div id="ad-account-connected" />
 
 ### Akun iklan terhubung
@@ -96,6 +102,8 @@ Anda dapat menyesuaikan nilai ini ke 1-23 jam atau 1-30 hari. Kami merekomendasi
 
 ![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
 
+<div id="reinstall-settings" />
+
 <div id="view-through-attribution-lookback-window" />
 
 ### Lookback Window Atribusi View-Through
@@ -105,6 +113,8 @@ Slider ini memungkinkan Anda untuk mengatur **waktu maksimal mulai dari tayangan
 Anda dapat mengkustomisasi nilai ini ke 1-23 jam atau 1-7 hari. Kami merekomendasikan pengaturan Jendela lihat balik lihat-tayang menjadi 1 hari, agar selaras dengan X Ads.
 
 ![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+
+<div id="important" />
 
 <div id="re-engagement-settings" />
 
@@ -131,6 +141,8 @@ Untuk mulai mengatribusikan tayangan iklan penargetan ulang, aktifkan **Re-engag
 Tetapkan durasi **Re-engagement view-through lookback window (jendela lookback klik-tayang interaksi ulang)** (jangka waktu maksimum setelah iklan diklik, di mana pengguna yang ditargetkan ulang dapat diatribusikan ke iklan tersebut). Anda dapat menyetel nilai dalam jam (hingga 23) atau hari (1-7):
 
 ![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+
+<div id="ignore-active-users-for-retargeting" />
 
 <div id="re-engagement-window" />
 
@@ -230,6 +242,22 @@ Gunakan tombol ini untuk memberikan hak akses kepada ad network dalam menangani 
 * **Allow access to your Protect360 dashboard** (Izinkan akses ke dashboard Protect360 Anda) - hanya ke data Protect360 milik partner, dan dengan syarat fitur ini diaktifkan untuk pemasang iklan
 
 Pelajari lebih lanjut tentang memberikan <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#permissions-tab">izin jaringan iklan.</Anchor>
+
+<div id="twitter-user-privacy" />
+
+<div id="twitter-ads-and-appsflyer-skan-interoperation" />
+
+<div id="webtoapp-measuring-app-activity-for-nonapp-campaigns-android-only" />
+
+<div id="mobile-app-promotion-on-x-ads" />
+
+<div id="traits-and-limitations" />
+
+<div id="advanced-srn-parameter-names" />
+
+<div id="important-1" />
+
+<div id="x-ads-features" />
 
 <div id="agency-permissions" />
 

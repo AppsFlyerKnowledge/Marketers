@@ -52,6 +52,8 @@ ASA menawarkan [atribusi seluler berbasis klik](/docs/apple-ads-integration-setu
 
 Pengaturan dilakukan dari halaman **Integrasi aktif** , tetapi untuk menemukan mitra baru, Anda harus pergi ke <Anchor target="_blank" href="/marketers/id/docs/partner-integrations">Pasar Mitraterlebih</Anchor> dahulu. Selesaikan konfigurasi menggunakan tab yang relevan, seperti yang dijelaskan di bawah ini.
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > Sebelum mengatur integrasi, pastikan Anda <Anchor target="_blank" href="/marketers/id/docs/partner-integrations#contact-details">menghubungi mitra</Anchor> dan membuka akun dengan mereka.
@@ -83,6 +85,8 @@ Integrasi biaya menyediakan data teragregasi berikut ini:
 * Data biaya untuk kampanye, set iklan, lokasi/negara, dan kata kunci Anda. Lihat <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabel integrasi biaya jaringan iklan</Anchor> untuk detail lengkap tentang dimensi, metrik, dan fitur yang didukung.  
   **Catatan:** Data biaya memerlukan langganan ROI360.
 * Data tentang klik, tayangan, dan data yang diperkaya—kata kunci, nama kampanye, dan set iklan.
+
+<div id="note-2" />
 
 > 📘 **Catatan**
 >
@@ -209,6 +213,8 @@ Pemasang iklan mengizinkan agensi untuk menjalankan kampanye atas nama mereka me
 4. [Opsional] Jika Anda ingin mengatribusikan pengguna yang menginstal ulang aplikasi selama jendela atribusi ulang, aktifkan **Penginstalan ulang atribusi.**
 5. Klik ***Save***.
 
+<div id="note-3" />
+
 <div id="agency-actions" />
 
 #### **Tindakan agensi**
@@ -225,6 +231,8 @@ Pemasang iklan mengizinkan agensi untuk menjalankan kampanye atas nama mereka me
 > 📘 **Catatan**
 >
 > Saat agensi bekerja dengan Apple Search Ads Marketing Partner (Mitra Pemasaran Iklan Penelusuran Apple), agensi harus mengonfigurasi ID grup kampanye yang sama di laman konfigurasi Apple Search Ads dan laman konfigurasi Marketing Partner (Mitra Pemasaran).
+
+<div id="note-4" />
 
 <div id="cost-clicks-and-impressions-data" />
 
@@ -255,6 +263,10 @@ Jika Anda mengaktifkan API biaya, AppsFlyer menerima data biaya, klik, dan taya
 4. Klik **Save Integration (Simpan Integrasi)** .
 
 </Accordion>
+
+<div id="before-september-1-2026" />
+
+<div id="after-september-1-2026" />
 
 <div id="additional-information" />
 
@@ -302,6 +314,22 @@ Gambar berikut menggambarkan bagaimana perbedaan dapat terjadi dalam kaitannya d
 **Penargetan ulang dinonaktifkan**
 
 [![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+
+<div id="20260901" />
+
+<div id="h_01M0YZYCC5S0E3HA296KAA0SDZ" />
+
+<div id="missing-conversion-payload-for-gender-and-age-targeted-users" />
+
+<div id="preregistration-click-and-impression-lookback-window-discrepancy" />
+
+<div id="impression-lookback-window" />
+
+<div id="see-also" />
+
+<div id="before-september-1-2026-1" />
+
+<div id="after-september-1-2026-1" />
 
 <div id="additional-reasons-for-discrepancies" />
 

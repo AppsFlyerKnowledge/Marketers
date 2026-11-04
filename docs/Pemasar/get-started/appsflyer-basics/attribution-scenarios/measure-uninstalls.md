@@ -29,6 +29,8 @@ x-zendesk:
 
 Untuk memahami nilai pengguna aplikasi, Anda harus menganalisis tingkat penginstalan dan uninstall. Metrik uninstal dapat membantu Anda mengukur performa aplikasi, serta memahami kapan dan mengapa pengguna meninggalkan aplikasi Anda.
 
+<div id="note" />
+
 <div id="how-does-it-work" />
 
 ### Bagaimana Cara Kerja API ini?
@@ -46,6 +48,8 @@ Berikut adalah beberapa contoh yang dapat Anda pelajari dari mengukur uninstall,
 <Accordion title="Bandingkan kualitas sumber">
 
 Dengan membandingkan kualitas pengguna yang diperoleh dari berbagai sumber (sumber media, kampanye, materi iklan, dan geo), Anda dapat menentukan sumber media dengan tingkat uninstall terendah, dan mengalokasikan kembali dana ke sumber tersebut.
+
+<div id="note-1" />
 
 > 📄 **Contoh**
 >
@@ -66,6 +70,10 @@ Dengan membandingkan kualitas pengguna yang diperoleh dari berbagai sumber (sumb
 <Accordion title="Bagikan data uninstall dengan jaringan iklan untuk pengoptimalan">
 
 Mengirim postback event uninstall ke jaringan iklan tempat Anda bekerja berguna untuk mengoptimalkan kampanye akuisisi pengguna. Anda dapat mengirimkan event uninstall dengan [memetakan af\_uninstall ke jaringan iklan Anda](/docs/measure-uninstalls#memetakan-event-uninstall). Setelah pemetaan selesai, event dikirim setiap kali pengguna diidentifikasi telah uninstall aplikasi. Jaringan iklan dapat menggunakan informasi ini untuk menentukan pengguna mana yang kurang terlibat dan berfokus untuk mendapatkan lebih banyak pengguna yang terlibat.
+
+<div id="note-3" />
+
+<div id="note-2" />
 
 > 📄 **Contoh**
 >
@@ -142,6 +150,8 @@ Alur untuk pemasar dan pengembang adalah sebagai berikut:
 
 Implementasi mengharuskan pengembang seluler Anda untuk mengintegrasikan mekanisme yang merespons notifikasi push ke aplikasi Anda. Instruksi implementasi bervariasi sesuai dengan sistem operasi.
 
+<div id="note-4" />
+
 <div id="connect-firebase-cloud-messaging-to-appsflyer-android" />
 
 ### Hubungkan Firebase Cloud Messaging ke AppsFlyer (Android)
@@ -190,6 +200,8 @@ Pengukuran uninstal Android tersedia dengan mengonfigurasi pengukuran uninstal d
 
 <Accordion title="[Tidak digunakan lagi] HTTP lama">
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > API HTTP lama tidak digunakan lagi oleh Firebase pada tanggal 20 Juni 2023, dan akan dihapus pada Juni 2024. Jika Anda menggunakan API lama, kami sangat menyarankan agar Anda [menggunakan HTTP v1 API](/docs/measure-uninstalls#http-v1). <Anchor target="_blank" href="https://firebase.google.com/docs/cloud-messaging/http-server-ref">Pelajari lebih lanjut</Anchor>
@@ -209,6 +221,8 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 </Accordion>
 
 <div id="configure-uninstall-measurement-in-appsflyer" />
+
+<div id="note-5" />
 
 ### Untuk mengonfigurasi pengukuran uninstall di AppsFlyer
 
@@ -249,6 +263,8 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 
 </Tab>
 </Tabs>
+
+<div id="note-6" />
 
 <div id="testing-uninstall-measurement" />
 

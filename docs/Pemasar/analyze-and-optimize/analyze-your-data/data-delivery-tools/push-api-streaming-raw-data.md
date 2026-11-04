@@ -154,6 +154,12 @@ Pastikan server Anda mematuhi persyaratan berikut:
 
 [![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
 
+<div id="configure-authentication-token" />
+
+<div id="test-the-endpoint" />
+
+<div id="add-an-appsflyer-attribution-endpoint" />
+
 <div id="endpoint-planning-table" />
 
 #### Tabel perencanaan titik akhir
@@ -263,6 +269,10 @@ Pastikan server Anda mematuhi persyaratan berikut:
     Titik akhir dihapus.
 
 </Accordion>
+
+<div id="authentication-token-in-test-messages" />
+
+<div id="can-i-include-custom-headers-with-the-push-api-request" />
 
 <div id="troubleshooting-traits-and-limitations" />
 

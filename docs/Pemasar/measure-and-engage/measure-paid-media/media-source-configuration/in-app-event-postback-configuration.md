@@ -43,6 +43,8 @@ Pemasar dapat memilih untuk in-app event mana yang ingin mereka kirimkan postbac
 > * In-app event mencakup **event yang ditolak**, artinya in-app event diblokir oleh Protect360 atau event ditemukan tidak sesuai dengan aturan validasi target.
 > * Jika bagian **Postback in-app event** tidak ada di tab **Integrasi** , itu berarti mitra belum menyiapkan catatan in-app event dengan AppsFlyer dalam konfigurasi awalnya. Mitra dapat menghubungi AppsFlyer menggunakan <Anchor target="_blank" href="https://af-static-content.s3.eu-west-1.amazonaws.com/marketplace/static/logo/Help_GIF_Final-min.gif">widget asisten mitra</Anchor> untuk menyelesaikan integrasi.
 
+<div id="note-1" />
+
 <div id="in-app-event-postback-window" />
 
 ## Periode waktu postback in-app event
@@ -196,6 +198,14 @@ Untuk setiap event, Anda dapat memilih kapan akan mengirim postback (dalam perio
 
 * **Khusus mitra ini**: Kirim postback hanya jika event diatribusikan ke mitra ini—artinya, pengguna yang melakukannya berasal dari mitra ini.
 * **Semua sumber media termasuk organik**: Kirim postback ke semua sumber media untuk event yang diatribusikan ke mitra mana pun dan untuk event organik—artinya, jika pengguna yang melakukannya berasal dari sumber media mana pun.
+
+<div id="tip" />
+
+<div id="note-8" />
+
+<div id="share-revenue" />
+
+<div id="note-7" />
 
 <div id="data-to-include-in-the-postbacks" />
 
@@ -384,6 +394,8 @@ Pemasar dapat mengizinkan agensi untuk mengonfigurasi postback in-app event.
 ![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
+
+<div id="note-11" />
 
 > 📄 **Lihat juga**
 >

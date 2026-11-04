@@ -33,6 +33,8 @@ x-zendesk:
 
 **Perhatikan!** AppsFlyer tetap harus menerima postback jaringan iklan karena berisi data tambahan yang disediakan oleh jaringan iklan (misalnya, nama kampanye).
 
+<div id="important" />
+
 <div id="configure-your-app-to-send-postback-copies-to-appsflyer" />
 
 ## Konfigurasikan aplikasi Anda untuk mengirim salinan postback ke AppsFlyer
@@ -49,6 +51,8 @@ Menurut dokumentasi Apple, Anda dapat mengatur satu titik akhir postback SKAN.
 <div id="common-misconceptions" />
 
 ## Kesalahpahaman umum
+
+<div id="traits-and-limitations" />
 
 <div id="dont-believe-everything-you-hear" />
 

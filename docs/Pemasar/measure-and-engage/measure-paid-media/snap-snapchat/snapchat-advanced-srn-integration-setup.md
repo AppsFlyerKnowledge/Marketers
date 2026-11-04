@@ -69,6 +69,16 @@ Integrasi tersebut mendukung atribusi klik dan tayangan, biaya, pendapatan iklan
 Pada **kunjungan pertama** di sini, Anda harus mengaktifkan **Aktifkan Mitra** untuk mengaktifkan pengaturan.  
 Untuk detail lebih lanjut tentang aktivasi mitra klik <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">di sini</Anchor>.
 
+<div id="note-1" />
+
+<div id="install-attribution" />
+
+<div id="advanced-matching-data-sharing" />
+
+<div id="note" />
+
+<div id="advanced-privacy" />
+
 <div id="general-settings" />
 
 #### Pengaturan umum
@@ -111,6 +121,12 @@ Anda dapat mengkustomisasi nilai ini ke 1-23 jam atau 1-7 hari. Kami merekomend
 Detail lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">atribusi view-through di sini</Anchor>.
 
 <Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
+
+<div id="note-3" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="note-2" />
 
 <div id="re-engagement-attribution" />
 
@@ -171,6 +187,14 @@ Petakan event AppsFlyer dengan mitra melalui postback. Jika pengiriman postback 
 <Accordion title="Tab tautan atribusi">
 
 Tautan atribusi tidak tersedia untuk Snapchat.
+
+<div id="web-to-app-measuring-app-activity-for-non-app-campaigns" />
+
+<div id="note-6" />
+
+<div id="note-5" />
+
+<div id="note-4" />
 
 > 📘 **Catatan**
 >
@@ -273,6 +297,8 @@ Pelajari lebih lanjut tentang memberikan <Anchor target="_blank" href="/marketer
 
 </Accordion>
 
+<div id="note-7" />
+
 <div id="deep-linking-with-snapchat" />
 
 ## Deep linking dengan Snapchat
@@ -311,6 +337,10 @@ Anda dapat mengakses data konversi pengguna Snapchat secara aktual dan langsung 
 <Anchor target="_blank" href="/marketers/id/docs/conversion-data-payloads-and-scenarios#snapchat-conversion-data">Data konversi Snapchat</Anchor> termasuk parameter **af\_dp**, yang memungkinkan ANda untuk menautkan secara langsung dan menyajikan konten terkustomisasi, berdasarkan keterlibatan pengguna dengan iklan Anda di Snapchat.
 
 Sebagai tambahan, Anda dapat menggunakan parameter data konversi lain, seperti **af\_adset** atau **af\_channel**.
+
+<div id="important" />
+
+<div id="agency-limitations" />
 
 <div id="set-up-snapchat-for-agencies" />
 

@@ -25,6 +25,8 @@ x-zendesk:
 ---
 > **Sekilas:** Temukan penyebab utama dan solusi mengapa partner Anda tidak menerima postback yang diharapkan. Telusuri setiap topik di bawah ini dan lihat apakah mungkin itu penyebabnya.
 
+<div id="1703758710.321359" />
+
 <div id="check-the-integration-toggles" />
 
 ## Periksa tombol integrasi
@@ -52,6 +54,8 @@ Kasus lain mungkin jika sakelar <Anchor target="_blank" href="/marketers/id/docs
 </Accordion>
 
 <div id="the-inapp-event-postbacks-toggle-was-turned-off" />
+
+<div id="1703760110.503549" />
 
 <Accordion title="Postback in-app event dinonaktifkan">
 

@@ -36,6 +36,8 @@ Data model SKAN memecahkan masalah ini:
 
 **Catatan**: Saat Anda mengubah skema nilai konversi, perlu waktu 2 hari agar data sesuai model tersedia.
 
+<div id="inapp-event-ltv" />
+
 <div id="modeled-data-types-and-availability" />
 
 ## Jenis dan ketersediaan data yang dimodelkan

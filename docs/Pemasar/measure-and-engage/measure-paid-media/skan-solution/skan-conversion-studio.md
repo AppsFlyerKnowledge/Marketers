@@ -118,6 +118,8 @@ Pelajari lebih banyak tentang mode pengukuran berbeda di bagian berikut ini.
 
 <div id="important" />
 
+<div id="note" />
+
 > 🚧 **Penting!**
 >
 > Menetapkan nilai konversi di SKAN Conversion Studio harus dilakukan oleh admin atau pengguna akun yang memiliki izin **Kelola** di **SKAN Conversion Studio**.
@@ -723,6 +725,8 @@ Di tabel:
 * Beberapa tindakan dipisahkan menggunakan >
 * Nilai dalam tanda kurung (), adalah prioritas yang ditentukan oleh AppsFlyer yang ditetapkan setelah pengguna menyelesaikan tindakan. Menggunakan prioritas AppsFlyer, perbarui CV di aplikasi.
 
+<div id="note-1" />
+
 <div id="user-journey-scenarios" />
 
 #### Skenario perjalanan pengguna
@@ -846,6 +850,14 @@ Di tabel:
   </tbody>
 </Table>
 
+<div id="skan-schema-analysis" />
+
+<div id="events-tab" />
+
+<div id="revenue-tab" />
+
+<div id="conversion-values-tab" />
+
 <div id="example-c-engagement-measurement" />
 
 #### Contoh C: Pengukuran interaksi
@@ -950,6 +962,26 @@ Jika Anda memiliki banyak aplikasi yang menginginkan konfigurasi nilai konversi 
 * API Studio Konversi SKAN tidak tersedia untuk agensi.
 
 </Accordion>
+
+<div id="ssot-mapping-patterns" />
+
+<div id="support-anonymized-users" />
+
+<div id="conversion-value-decrease" />
+
+<div id="faq" />
+
+<div id="how-to-configure-mapping-patterns" />
+
+<div id="pairing" />
+
+<div id="half-and-half" />
+
+<div id="important-1" />
+
+<div id="examples" />
+
+<div id="note-2" />
 
 <div id="additional-procedures" />
 

@@ -63,6 +63,64 @@ Di Data Locker, pilih aplikasi, sumber media, event, dan laporan Anda untuk dise
 
 <div id="zd-overview" />
 
+<div id="9-save-the-connection" />
+
+<div id="8-remove-legacy-fields" />
+
+<div id="7-select-the-reportlevel-filters" />
+
+<div id="6-select-the-report-fields" />
+
+<div id="customize-or-duplicate" />
+
+<div id="5-select-the-report" />
+
+<div id="select-global-level-filters" />
+
+<div id="3-set-the-report-output-settings" />
+
+<div id="snowflake-data-warehouse-connection" />
+
+<div id="bigquery-data-warehouse-connection" />
+
+<div id="yandex-cloud-bucket-connection" />
+
+<div id="azure-cloud-bucket-connection" />
+
+<div id="gcs-cloud-bucket-connection" />
+
+<div id="aws-cloud-bucket-connection" />
+
+<div id="2-add-a-connection-to-your-cloud-service" />
+
+<div id="1-set-up-your-cloud-service" />
+
+<div id="note-4" />
+
+<div id="review-filters-after-changing-ownership" />
+
+<div id="manage-ownership-and-editors" />
+
+<div id="give-data-locker-access" />
+
+<div id="manage-data-locker-access-and-ownership-admins" />
+
+<div id="set-user-permissions" />
+
+<div id="important" />
+
+<div id="non-empty-legacy-fields" />
+
+<div id="note-3" />
+
+<div id="note-2" />
+
+<div id="note-1" />
+
+<div id="note" />
+
+<div id="set-data-locker-report-settings" />
+
 <div id="overview" />
 
 <Accordion title="Overview">
@@ -295,6 +353,8 @@ Admin dapat mereset kredensial bucket AppsFlyer kapan saja. Perhatikan! Jika And
    Tersedia pembaruan kredensial.
 
 </Accordion>
+
+<div id="track-connection-changes-in-the-audit-log" />
 
 <div id="additional-information" />
 

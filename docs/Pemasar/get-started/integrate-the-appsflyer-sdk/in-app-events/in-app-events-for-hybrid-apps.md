@@ -29,6 +29,10 @@ x-zendesk:
 ---
 > **Sekilas:** Rekam in-app event Aplikasi dari pengguna yang menginstal aplikasi Anda, tetapi melakukan event di situs web seluler Anda, dan bukan aplikasinya.
 
+<div id="example" />
+
+<div id="note" />
+
 <div id="introduction" />
 
 ## Pengantar
@@ -185,6 +189,8 @@ Dalam kode HTML, Anda dapat melihat bahwa metode tersebut dipanggil menggunakan 
 <div id="ios" />
 
 <Accordion title="iOS">
+
+<div id="note-1" />
 
 <div id="html-code-for-ios" />
 

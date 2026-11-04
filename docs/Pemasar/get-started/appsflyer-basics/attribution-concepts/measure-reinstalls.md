@@ -88,6 +88,10 @@ Untuk informasi Atribusi Penargetan Ulang lainnya, klik <Anchor target="_blank" 
 
 </Accordion>
 
+<div id="postreinstall-events-attribution-state" />
+
+<div id="note" />
+
 <div id="post-reinstall-in-app-events" />
 
 ## In-App Event
@@ -157,6 +161,8 @@ Data KPI organik di dashboard mungkin menampilkan nilai yang lebih rendah dengan
 <div id="examples" />
 
 <Accordion title="Contoh">
+
+<div id="confirm-inapps-are-attributed-to-the-original-install" />
 
 <div id="examples-for-first-install-mode-attribution" />
 

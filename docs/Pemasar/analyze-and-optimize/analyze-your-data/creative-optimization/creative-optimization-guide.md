@@ -63,6 +63,8 @@ Setelah Anda berlangganan dan akun Anda telah disiapkan, dashboard **Optimisasi 
 | 4 | Jelajahi dashboard Anda:<br /><br /><Anchor target="_blank" href="/marketers/id/docs/creative-optimization-overview-dashboard">Dashboard ikhtisar</Anchor> - Gunakan untuk menganalisis kinerja materi iklan dan memaksimalkan dampak kampanye Anda.<br /><br /><Anchor target="_blank" href="/marketers/id/docs/creative-optimization-discovery-ai-dashboard">Dasbor penemuan</Anchor> - Gunakan untuk terus memproduksi dan memelihara materi iklan pemenang. |
 | 5 | Analisis data kinerja materi iklan dan optimalkan materi iklan dan/atau kampanye Anda, berdasarkan temuan. |
 
+<div id="notes" />
+
 <div id="creative-assets" />
 
 ## Aset kreatif
@@ -123,6 +125,8 @@ Meta Advantage+ (materi iklan dinamis), dan Kampanye Aplikasi Universal Google (
 > ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
 
 </Accordion>
+
+<div id="creative-optimization-roi360" />
 
 <div id="using-the-dashboard" />
 
@@ -416,6 +420,12 @@ f. Salin kunci API.
 
 5. Salin **ID Organisasi**.
 
+<div id="share-view-url" />
+
+<div id="save-shared-dashboard-view" />
+
+<div id="save-private-dashboard-view" />
+
 <div id="note" />
 
 > 📘 **Catatan**
@@ -447,6 +457,10 @@ Klik ikon di kanan atas dashboard untuk menyalin URL halaman, lalu bagikan.
 <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
+
+<div id="h_01HA282W8WHHNDG75XZNSV2QQF" />
+
+<div id="additional-information" />
 
 <div id="custom-tags" />
 

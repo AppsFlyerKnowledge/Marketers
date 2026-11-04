@@ -51,6 +51,10 @@ The account admin can make time-zone changes.
 6. Click **Save settings**.  
    Change takes effect at the beginning of the next day at 00:00 UTC.
 
+<div id="raw-data-reports" />
+
+<div id="aggregate-data" />
+
 > 📄 **Example**
 >
 > * October 24 at 22:00, the time zone is changed.

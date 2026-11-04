@@ -60,6 +60,26 @@ Pengiklan, memahami bahwa kedua metode tersebut berguna tetapi untuk tujuan berb
 * Halaman dan laporan mana yang dapat Anda bandingkan di AppsFlyer?
 * Bagaimana Anda dapat membandingkan data LTV dan aktivitas?
 
+<div id="compare-inapp-event-raw-data-with-the-activity-view" />
+
+<div id="compare-appsflyer-data-with-external-data" />
+
+<div id="compare-different-appsflyer-aggregated-data-dashboards-and-reports" />
+
+<div id="compare-ltv-and-activity-data-in-appsflyer" />
+
+<div id="reconcile-raw-data-with-activity-event-metrics" />
+
+<div id="to-retrieve-activity-data-out-of-ltv-data" />
+
+<div id="to-retrieve-ltv-data-out-of-raw-activity-data" />
+
+<div id="compare-data-between-different-dashboards-and-reports" />
+
+<div id="appsflyer-dashboards-and-reportsltv-or-activity" />
+
+<div id="the-train-analogy" />
+
 ### Analogi kereta
 
 **Kegiatan** : Bayangkan Anda menyaksikan kereta yang lewat. Saat kereta lewat, Anda hanya melihat tindakan yang dilakukan oleh penumpang di kereta saat mereka lewat. Ini adalah data aktivitas.

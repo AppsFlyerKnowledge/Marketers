@@ -171,7 +171,7 @@ Jika Anda menjalankan kampanye di Meta ads dan tidak menandatangani persyaratan 
 
 <Tab title="ASA">
 
-<table><caption><h3><span id="apple-search-ads-conversion-data"></span>Data konversi Apple Search Ads</h3></caption><thead><tr><th>Nama kolom</th><th>Catatan</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Selalu <code>"srn"</code> </td></tr><tr><td><code>media_source</code></td><td>Selalu <code>"Apple Search Ads"</code> </td></tr><tr><td><code>{"<strike>adset</strike>"}</code></td><td>Catatan (2)</td></tr><tr><td><code>adset_id</code></td><td> </td></tr><tr><td><code>{"<strike>af_adset</strike>"}</code></td><td>Catatan (2)</td></tr><tr><td><code>af_adset_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Catatan (1)</td></tr><tr><td><code>{"<strike>af_keywords</strike>"}</code></td><td><p>Catatan (2)—Gunakan ID kata kunci</p></td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Selalu <code>"Non-organik"</code> </td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>agency</code></td><td> <code>null</code> atau nilai dari <code>af_prt</code> </td></tr><tr><td><code>{"<strike>campaign</strike>"}</code></td><td>Catatan (2)</td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> <code>true</code>, <code>false</code> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Catatan (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Catatan (1)</td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr></tbody><tbody><tr><td colspan="3"><p><strong>Catatan<br/></strong>(1) Apple Search Ads mendukung pembagian biaya secara massal, bukan dalam data konversi.<br/>(2) Tidak digunakan lagi mulai 15 Februari 2021, karena adopsi Apple Search Ads dari AdServices AP.</p></td></tr></tbody></table>
+<table><caption><h3><span id="tiktok-conversion-data"></span><span id="twitter-conversion-data"></span><span id="tiktok-for-business-conversion-data"></span><span id="x-ads-conversion-data"></span><span id="snapchat-conversion-data"></span><span id="apple-search-ads-conversion-data"></span>Data konversi Apple Search Ads</h3></caption><thead><tr><th>Nama kolom</th><th>Catatan</th></tr></thead><tbody><tr><td><code>match_type</code></td><td>Selalu <code>"srn"</code> </td></tr><tr><td><code>media_source</code></td><td>Selalu <code>"Apple Search Ads"</code> </td></tr><tr><td><code>{"<strike>adset</strike>"}</code></td><td>Catatan (2)</td></tr><tr><td><code>adset_id</code></td><td> </td></tr><tr><td><code>{"<strike>af_adset</strike>"}</code></td><td>Catatan (2)</td></tr><tr><td><code>af_adset_id</code></td><td> </td></tr><tr><td><code>af_c_id</code></td><td> </td></tr><tr><td><code>af_click_lookback</code></td><td> </td></tr><tr><td><code>af_cpi</code></td><td>Catatan (1)</td></tr><tr><td><code>{"<strike>af_keywords</strike>"}</code></td><td><p>Catatan (2)—Gunakan ID kata kunci</p></td></tr><tr><td><code>af_siteid</code></td><td> </td></tr><tr><td><code>af_status</code></td><td>Selalu <code>"Non-organik"</code> </td></tr><tr><td><code>af_sub[1-5]</code></td><td> </td></tr><tr><td><code>agency</code></td><td> <code>null</code> atau nilai dari <code>af_prt</code> </td></tr><tr><td><code>{"<strike>campaign</strike>"}</code></td><td>Catatan (2)</td></tr><tr><td><code>campaign_id</code></td><td> </td></tr><tr><td><code>click_time</code></td><td> </td></tr><tr><td><code>is_first_launch</code></td><td> <code>true</code>, <code>false</code> </td></tr><tr><td><code>cost_cents_USD</code></td><td>Catatan (1)</td></tr><tr><td><code>http_referrer</code></td><td> </td></tr><tr><td><code>install_time</code></td><td> </td></tr><tr><td><code>adgroup</code></td><td> </td></tr><tr><td><code>adgroup_id</code></td><td> </td></tr><tr><td><code>orig_cost</code></td><td>Catatan (1)</td></tr><tr><td><code>retargeting_conversion_type</code></td><td> </td></tr></tbody><tbody><tr><td colspan="3"><p><strong>Catatan<br/></strong>(1) Apple Search Ads mendukung pembagian biaya secara massal, bukan dalam data konversi.<br/>(2) Tidak digunakan lagi mulai 15 Februari 2021, karena adopsi Apple Search Ads dari AdServices AP.</p></td></tr></tbody></table>
 
 </Tab>
 
@@ -380,6 +380,8 @@ Namun, data terkait biaya **tidak muncul di tautan atribusi**. ironSource mengen
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="retargeting-conversion-data" />
 
 ## Menargetkan ulang data konversi
@@ -389,6 +391,8 @@ Penargetan ulang mencakup dua jenis konversi, atribusi ulang atau interaksi ulan
 > 👍 **Tips**
 >
 > Data konversi untuk penargetan ulang tidak selalu memberikan indikasi yang jelas tentang jenis konversi. Lihat [sumber data konversi alternatif](#sumber-data-konversi-alternatif).
+
+<div id="note" />
 
 <div id="re-attribution-with-srns" />
 
@@ -477,6 +481,8 @@ Ini disebut sebagai Deferred Deep Linking (Tautan Langsung yang Tertunda) Payloa
 <Accordion title="Deferred Deep Linking dengan SRN">
 
 Parameter Deep Link (Tautan Langsung) yang ditentukan dalam kampanye SRN tidak tersedia di luar SRN. Ini termasuk parameter `af_dp` , yang menyimpan jalur skema di aplikasi. Satu-satunya pengecualian untuk hal ini adalah saat menggunakan <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#menggunakan-penautan-langsung-yang-ditangguhkan-di-kampanye-aplikasi">kampanye Aplikasi Google pada Feeds</Anchor>. Untuk menerapkan deferred deep linking (tautan langsung yang tertunda), logika tambahan harus diterapkan untuk kampanye SRN. Gunakan data dalam tanggapan `onConversionSuccess` , seperti kampanye, set iklan, grup iklan, untuk mengalihkan pengguna Anda secara terprogram.
+
+<div id="note-1" />
 
 <div id="conversion-data-for-deferred-deep-linking-with-meta-ads" />
 
@@ -624,6 +630,10 @@ http://app.appsflyer.com/com.appsflyer.nivisampleapp?pid=media_source_name
 * `af_deeplink: true` - ketika parameter ini muncul dan diatur ke true, lihat untuk bidang skema dan `tuan rumah`
 * `skema` dan `tuan rumah` - bidang-bidang ini datang dari parameter `af_dp` di tautan atribusi dan mengindikasikan skema dan aktivitas yang seharusnya sudah ditautkan langsung dengan pengguna
 
+<div id="note-2" />
+
+<div id="important" />
+
 <div id="ios-universal-links-and-android-app-links" />
 
 #### Tautan universal iOS dan tautan aplikasi Android
@@ -728,6 +738,8 @@ Contoh:
 
 * Programmer aplikasi dapat menggunakan parameter seperti `af_dp` dan nama kampanye untuk mengirimkan pengguna ke aktivitas spesifik dan memberikan konten yang relevan.
 
+<div id="important-1" />
+
 > 🚧 **Penting!**
 >
 > Kami merekomendasikan untuk menggunakan OneLink versi pendek. Klik <Anchor target="_blank" href="/marketers/id/docs/understand-onelink-short-vs-long-urls">di sini</Anchor> untuk mempelajari lebih lanjut.
@@ -748,6 +760,8 @@ Alasan lain untuk menggunakan OneLink versi pendek adalah struktur data konversi
 
 * Push API menawarkan muatan konversi mendetail yang menunjukkan atribusi ulang atau keterlibatan ulang. Payload Push API menyertakan bidang yang disebut `re_targeting_conversion_type`. Kolom ini menunjukkan jenis konversi, baik atribusi ulang atau interaksi ulang. Untuk mempelajari lebih lanjut, lihat <Anchor target="_blank" href="/marketers/id/docs/push-api-streaming-raw-data">panduan Push APIkami</Anchor>.
 * Laporan Data Lengkap juga berisi indikator untuk jenis konversi. Di laporan data lengkap untuk penargetan ulang konversi, terdapat kolom bernama ***Nama Event***. Nilai dalam kolom ini adalah ***interaksi ulang*** atau ***atribusi ulang*** menurut jenis konversi.
+
+<div id="note-3" />
 
 <div id="examples-of-mixed-user-acquisition-and-re-attribution" />
 

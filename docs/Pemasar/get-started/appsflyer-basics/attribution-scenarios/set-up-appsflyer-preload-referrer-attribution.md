@@ -59,6 +59,12 @@ Pramuat/klik untuk mengunduh data kinerja kampanye keterlibatan tersedia sebagai
 * **Dashboard ikhtisar:** Interaksi dihitung sebagai klik dalam laporan gabungan dan dashboard. Mereka digabungkan pada tingkat mitra pramuat (sumber media) dan kampanye.
 * **Data lengkap:** Interaksi tersedia di laporan klik yang hanya tersedia melalui Data Locker. Mereka ditemukan di bidang URL asli dan dapat diidentifikasi di parameter af\_engagement\_type sebagai pramuat atau click\_to\_download. Untuk penginstalan, lihat tabel di bagian sebelumnya untuk melihat bagaimana jenis pencocokan ditampilkan dalam data lengkap.
 
+<div id="traits-and-limitations" />
+
+<div id="set-up-samsung-preload-referrer-attribution" />
+
+<div id="samsung-preload-referrer" />
+
 <div id="set-up-preload-referrer-attribution" />
 
 ### Siapkan atribusi perujuk pramuat

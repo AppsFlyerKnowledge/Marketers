@@ -63,7 +63,35 @@ Lengkapi daftar tindakan untuk menyiapkan Domain Bermerek.
 | 3 | Pemasar | [Menggunakan dan menguji Domain Bermerek](/docs/brand-onelink-with-your-domain#using-and-testing-branded-domains) |  |
 | Sesuai kebutuhan | Pemasar | [Mengedit dan menghapus Domain Bermerek](/docs/brand-onelink-with-your-domain#editing-and-deleting-branded-domains) |  |
 
+<div id="custom-ssl-certificate-optional" />
+
+<div id="note-3" />
+
+<div id="note-2" />
+
+<div id="renew-the-7-day-period-for-mapping-the-cname-record" />
+
+<div id="note-1" />
+
+<div id="note" />
+
 <div id="procedures" />
+
+<div id="editing-verifying-and-deleting-branded-domains" />
+
+<div id="delete-a-branded-domain-mapping" />
+
+<div id="domain-cname-record-no-longer-pointing-to-appsflyer" />
+
+<div id="note-5" />
+
+<div id="verify-a-branded-domain-mapping" />
+
+<div id="important" />
+
+<div id="edit-a-branded-domain-mapping" />
+
+<div id="note-4" />
 
 ### Prosedur
 

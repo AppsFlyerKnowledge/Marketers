@@ -29,6 +29,10 @@ x-zendesk:
 ---
 > **Sekilas:** Bekerja samalah dengan pengembang aplikasi seluler atau CTV Anda untuk mengintegrasikan dan menginstal SDK ke aplikasi Android atau iOS. Setelah tugas integrasi dasar selesai, aplikasi Anda siap untuk atribusi instalasi dan pengukuran in-app event.
 
+<div id="provide-the-dev-key-to-your-developer" />
+
+<div id="retrieve-the-dev-key" />
+
 <div id="implementing-the-dev-key-in-your-app" />
 
 ## **Mengambil kode pengembang**
@@ -69,6 +73,8 @@ Pilih apakah akan memulai SDK di kelas `Application` global atau kelas `Activ
 * **Memulai SDK di kelas** `Application` **global:** Secara umum, menginisialisasi SDK di kelas/subkelas `Aplikasi` global adalah praktik yang baik karena kelas `Application` dimuat dan diinisialisasi sebelum UI aplikasi apa pun ditampilkan. Hal ini memastikan bahwa SDK dapat dimulai dalam skenario apa pun, termasuk deep linking.
 * **Mulai SDK di** kelas`Activity`**(awal tertunda)** untuk memungkinkan pengguna ikut serta dalam berbagi data. Hal ini karena untuk mendapatkan izin pengguna memerlukan antarmuka pengguna (UI) yang dirender dalam kelas `Activity` .
 
+<div id="starting-the-sdk-in-ios-native" />
+
 <div id="android-developer-instructions" />
 
 #### INSTRUKSI PENGEMBANG ANDROID
@@ -99,6 +105,10 @@ Pertimbangan penting saat merencanakan cara memulai SDK adalah apakah akan menun
 SDK menyediakan metode `waitForATTUserAuthorization`  , yang memungkinkan Anda untuk **mengonfigurasi berapa lama SDK harus menunggu persetujuan pengguna sebelum mengirim data ke server AppsFlyer**.
 
 Untuk informasi selengkapnya tentang aliran data metode dan interaksinya dengan kerangka kerja ATT iOS, lihat bagian [dukungan Konfigurasikan Transparansi Pelacakan Aplikasi (ATT)](/docs/basic-sdk-integration-guide#ikhtisar-waitforattuserauthorization) .
+
+<div id="starting-the-sdk-in-react-native" />
+
+<div id="starting-the-sdk-in-unity" />
 
 <div id="ios-developer-instructions" />
 
@@ -297,6 +307,8 @@ Ketika atribusi terjadi menggunakan IDFA, penting agar IDFA dikirim pada **pelu
 
 #### Ikhtisar waitForATTUserAuthorization
 
+<div id="important" />
+
 > 🚧 **Penting!**
 >
 > Jangan panggil metode `waitForATTUserAuthorization` jika Anda tidak ingin menjalankan prompt ATT.
@@ -361,6 +373,8 @@ Lihat Dev Hub untuk [instruksi pengembang dalam menyesuaikan dialog izin ATT](ht
 <div id="support-for-skan-attribution" />
 
 <Accordion title="Dukungan untuk atribusi SKAN">
+
+<div id="note" />
 
 > 📘 **Catatan**
 >
@@ -508,6 +522,8 @@ Lihat panduan kami tentang mengatur <Anchor target="_blank" href="/marketers/id
 
 </Accordion>
 
+<div id="tip" />
+
 <div id="accessing-attribution-and-deep-linking-data" />
 
 ## **Mengakses data atribusi dan deep linking**
@@ -533,6 +549,8 @@ Perhatikan hal berikut untuk pengguna iOS 14.5+ yang tidak memberikan persetujua
 >
 > * Gunakan Push API saat mengambil data atribusi dan mengirimkannya ke server Anda untuk diproses lebih lanjut. Metode ini menunggu data tersedia, dan karena itu sangat akurat dan mendekati waktu aktual. GCD mengembalikan data secara waktu aktual, tetapi mungkin tidak akurat saat keputusan atribusi akhir ditentukan setelah lebih dari 5 detik.
 > * Gunakan Pull API untuk secara periodik (misalnya, setiap hari) melengkapi data atribusi waktu aktual, dan untuk mengompensasi kesalahan komunikasi yang mungkin terjadi.
+
+<div id="note-1" />
 
 <div id="testing-your-sdk-integration" />
 

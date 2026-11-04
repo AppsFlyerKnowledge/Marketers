@@ -37,6 +37,8 @@ Layanan Lisensi Google Play menentukan apakah pengguna memiliki lisensi untuk me
 
 SDK AppsFlyer mengumpulkan data dari sisi pelanggan dan Protect360 melakukan verifikasi lisensi sisi server, memblokir penginstalan palsu yang gagal diverifikasi baik untuk penginstalan organik maupun non-organik. "Alasan pemblokiran" yang akan Anda lihat di dasbor dan laporan Protect360 adalah "Bot".
 
+<div id="note" />
+
 <div id="set-up-lvl" />
 
 ## Mengatur LVL

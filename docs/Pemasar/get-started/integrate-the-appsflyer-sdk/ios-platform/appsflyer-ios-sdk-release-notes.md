@@ -26,6 +26,8 @@ x-zendesk:
 
 <div id="ios-sdk-release-notes" />
 
+<div id="unsupported-sdk-versions" />
+
 ## iOS SDK V6
 
 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/ios-sdk">Panduan integrasi SDK iOS bagi pengembang</Anchor>

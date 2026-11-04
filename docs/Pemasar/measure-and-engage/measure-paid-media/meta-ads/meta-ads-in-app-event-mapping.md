@@ -31,6 +31,10 @@ Pemasang iklan memetakan in-app event mereka, SDK atau Server-ke-server, ke even
 
 Hal ini memungkinkan pemasang iklan untuk memanfaatkan kemampuan optimisasi tingkat lanjut Meta serta membangun segmen Audiens Khusus dan Serupa.
 
+<div id="availability-limitations" />
+
+<div id="mapping-ad-revenue-data-for-campaign-optimization" />
+
 <div id="predefined-event-mapping" />
 
 ### Pemetaan event yang telah ditentukan sebelumnya
@@ -67,6 +71,18 @@ Nama event dan nilai event (termasuk parameter event) yang dikonfigurasi di SDK 
 Perhatikan bahwa Anda dapat <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">menggunakan event ini untuk mengoptimalkan kampanye Anda</Anchor>.
 
 [![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+
+<div id="important" />
+
+<div id="example-unified-format-compatible-with-meta-and-tiktok" />
+
+<div id="note-1" />
+
+<div id="send-complex-in-app-events-to-meta-ads" />
+
+<div id="predefined-events-automatic-mapping-to-the-_valuetosum-parameter" />
+
+<div id="note" />
 
 <div id="automatic-parameter-mapping-with-the-custom-event" />
 
@@ -127,6 +143,8 @@ Tabel berikut memerinci semua parameter event AppsFlyer, yang saat dipetakan mel
 | af\_travel\_end | fb\_travel\_end |
 | af\_travel\_start | fb\_travel\_start |
 | af\_user\_score | fb\_user\_score |
+
+<div id="important-1" />
 
 <div id="event-and-parameter-limitations" />
 

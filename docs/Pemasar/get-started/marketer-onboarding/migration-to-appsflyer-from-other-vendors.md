@@ -24,6 +24,8 @@ x-zendesk:
 
 ![alur migrasi](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
 
+<div id="compare-measurement-between-appsflyer-and-other-mmps" />
+
 <div id="about-migrating-to-appsflyer-from-other-vendors" />
 
 ## Overview
@@ -99,6 +101,8 @@ SDK AppsFlyer yang terintegrasi ke dalam aplikasi adalah penghubung antara aplik
 Migrasi perangkat adalah proses mengunggah daftar ID perangkat pengguna Anda yang sudah ada (IDFA, IDFV, GAID, CUID) ke AppsFlyer. Anda harus melakukan proses ini sebelum merilis versi aplikasi baru, yang akan menyertakan SDK AppsFlyer. Ada dua opsi saat memigrasi perangkat, migrasi yang [diatribusikan](/docs/migration-to-appsflyer-from-other-vendors#attributed-migration) atau yang [tidak diatribusikan](/docs/migration-to-appsflyer-from-other-vendors#nonattributed-migration) .
 
 Migrasi perangkat memecahkan masalah data yang terkait dengan pengguna aplikasi yang sudah ada yang mengunduh aplikasi, dan diatribusi oleh vendor Anda sebelumnya. Misalnya, biaya ganda SRN, yang terjadi ketika pengguna awalnya diatribusi ke SRN di bawah vendor sebelumnya, dan yang masih dalam jendela lookback, diklaim oleh SRN lagi di bawah AppsFlyer.
+
+<div id="note" />
 
 <div id="example" />
 

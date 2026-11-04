@@ -28,6 +28,8 @@ x-zendesk:
 
 ![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
 
+<div id="tip" />
+
 <div id="cohort-and-retention-dashboard" />
 
 ## Dashboard kohort
@@ -39,6 +41,8 @@ Untuk menggunakan Cohort (Kelompok), pilih pengguna dari salah satu aplikasi And
 > Ingin tahu lebih banyak tentang laporan kelompok? Lihat <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7804/play/18625/your-users-journey-with-retention-and-cohort-reports">kursus singkat dan informatif ini di Portal Pembelajaran AppsFlyer</Anchor>.
 
 <div id="cohort-principles" />
+
+<div id="view-types" />
 
 <Accordion title="Prinsip kohort">
 
@@ -87,6 +91,16 @@ Dalam contoh ini, data lengkap yang sama digunakan untuk menghasilkan dua jenis 
 <table><thead><tr><th> </th><th> </th><th colspan="6">Fungsi</th></tr><tr><th rowspan="2">Selalu/ Opsional </th><th rowspan="2"><p>Metrik</p></th><th>Count (Hitung)</th><th>cvr (rasio konversi)</th><th>Rating</th><th>Jumlah</th><th>Pengguna Unik</th><th>eCPA</th></tr><tr><th>Jumlah</th><th>Persentase</th><th>Persentase</th><th>Jumlah</th><th>Jumlah</th><th>Jumlah</th></tr></thead><tbody><tr><td>Selalu</td><td>Pengguna (4)</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>Selalu</td><td>Biaya (3)</td><td><span>-</span></td><td><span>-</span></td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>Selalu</td><td>eCPI Rata-Rata</td><td><span>-</span></td><td><span>-</span></td><td><span>✓</span></td><td><span>-</span></td><td><span>-</span></td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td><code>"event_name"</code></td><td> </td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td><span>✓</span></td><td> <span>✓</span><span><span>(5)</span></span> </td></tr><tr><td>OPSIONAL</td><td>Pendapatan</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td>ROAS (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td>ROI (3)</td><td>-</td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr><tr><td>OPSIONAL</td><td>Sesi (2)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td> ✓(1) </td><td><span><span>-</span></span></td></tr><tr><td>OPSIONAL</td><td>Uninstall (3)</td><td><span>✓</span></td><td>-</td><td><span>✓</span></td><td>-</td><td>-</td><td><span>-</span></td></tr></tbody><tfoot><tr><td colspan="8"><p>(1) Sesi unik muncul saat aggregation_type=on_day<br/>(2) Sesi penargetan ulang (interaksi ulang dan atribusi ulang) tersedia untuk sesi yang muncul mulai dari tanggal 13 Juli 2020. Artinya, sesi yang berlangsung hingga 12 Juli 2020 tidak ditampilkan. <br/>(3) Tidak tersedia dalam kasus berikut:</p><ul><li>Jenis tampilan disatukan</li><li>Rinciannya adalah per jam. Dihitung setiap hari menggunakan waktu UTC. </li></ul><p>(4) Metrik <em>Pengguna</em> menghitung jumlah atribusi (penginstalan, interaksi ulang, atribusi ulang) yang terjadi selama periode yang dipilih.   </p><p>(5) Biaya efektif per tindakan (eCPA): Biaya / Jumlah kumulatif pengguna unik yang melakukan event.</p></td></tr></tfoot></table>
 
 </Accordion>
+
+<div id="trend-types" />
+
+<div id="cohort-periods" />
+
+<div id="kpi-by-attribution-time" />
+
+<div id="user-lifetime-performance" />
+
+<div id="cohort-concepts" />
 
 <div id="using-cohort" />
 

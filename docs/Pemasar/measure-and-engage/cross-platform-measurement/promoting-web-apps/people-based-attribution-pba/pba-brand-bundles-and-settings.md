@@ -207,6 +207,8 @@ Untuk mengubah bundel yang menyertakan suatu aplikasi, hapus bundel asli dan bua
 
 <Accordion title="Apa yang terjadi jika saya menghapus bundel?">
 
+<div id="page-404" />
+
 <div id="faqs-what-happens-if-i-delete-a-bundle" />
 
 #### FAQ apa yang terjadi jika saya menghapus bundel

@@ -69,6 +69,8 @@ Di AppsFlyer, event yang dapat diatribusikan terjadi ketika salah satu dari hal 
   * **Re-engagement**
   * **Atribusi ulang**
 
+<div id="attribution-method-priorities-attribution-waterfall" />
+
 <div id="attribution-methods" />
 
 ## Metode Atribusi
@@ -230,6 +232,10 @@ Lihat bagian berikut untuk rincian lengkap tentang kapan metode atribusi tertent
 <table><thead><tr><th rowspan="2">Media Source</th><th colspan="3">Metode Atribusi</th></tr><tr><th>Android</th><th>iOS</th><th><strong>Platform CTV, PC, dan konsol</strong></th></tr></thead><tbody><tr><td><a href="./self-reporting-networks-srns" target="_blank">SRN</a></td><td><p>Pencocokan ID Device</p></td><td><ul><li>Pencocokan ID Device</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td><p>Pencocokan ID Device</p></td></tr><tr><td><ul><li>Jaringan iklan (non-SRN) melalui <a href="./set-up-an-integrated-partner#attribution-link-tab" target="_blank">tautan atribusi untuk mitra</a> </li><li><span>Platform CTV, PC, dan konsol</span></li></ul></td><td><ul><li>Install Referrer</li><li>Pencocokan ID Device</li><li>Pemodelan probabilistik</li></ul></td><td><ul><li>Pencocokan ID Device</li><li>Pemodelan probabilistik (sebelum iOS 14.5)</li><li>AAP (iOS 14.5+)</li><li>SKAdNetwork (iOS 14+)</li></ul></td><td> </td></tr><tr><td><p><a href="./appsflyer-factory-preinstall-using-manifest-android" target="_blank">Pra-penginstalan pada perangkat</a></p></td><td>Pra-install</td><td>--</td><td> </td></tr></tbody></table>
 
 </Accordion>
+
+<div id="engaged-view-attribution" />
+
+<div id="engaged-click-attribution" />
 
 <div id="user-engagement-attribution-types" />
 

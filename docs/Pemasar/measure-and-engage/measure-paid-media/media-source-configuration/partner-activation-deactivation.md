@@ -26,6 +26,8 @@ x-zendesk:
 ---
 > **Sekilas:** Mengaktifkan atau menonaktifkan integrasi mitra, mengizinkan atau menolak mereka untuk mendapatkan data Anda dan melakukan tindakan.
 
+<div id="important" />
+
 <div id="activation-overview" />
 
 ## Iktisar aktivasi
@@ -39,6 +41,8 @@ Integrasi mitra dapat bersifat aktif atau tidak aktif. Integrasi pertama kali di
 Bagian di bawah ini menjelaskan berbagai jenis integrasi, bagaimana tingkat aktivitas ditunjukkan, dan dampak pengaturan aktivasi mitra pada integrasi:
 
 <div id="data-title" />
+
+<div id="id" />
 
 <Accordion title="Jenis integrasi">
 

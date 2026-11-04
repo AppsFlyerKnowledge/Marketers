@@ -152,6 +152,8 @@ Halaman ekspor data lengkap menyediakan laporan yang memiliki fitur-fitur yang t
 
 </Accordion>
 
+<div id="note" />
+
 <div id="procedures" />
 
 ## Prosedur

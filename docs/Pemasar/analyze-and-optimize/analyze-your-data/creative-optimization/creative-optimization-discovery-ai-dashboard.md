@@ -35,11 +35,43 @@ Dashboard <Anchor target="_blank" href="/marketers/id/docs/creative-optimization
 
 **Dashboard Penemuan** yang didukung AI memberi tim kreatif Anda semua informasi yang mereka perlukan untuk menghasilkan materi iklan yang unggul. Hal ini memberikan data kinerja terperinci, memungkinkan keputusan yang tepat berdasarkan elemen atau fitur tertentu dalam materi iklan yang berkontribusi terhadap efektivitasnya. Dengan dashboard ini, Anda dapat secara konsisten memproduksi dan memelihara materi iklan sukses yang berdasarkan data dan dioptimalkan untuk dampak maksimal. Berdasarkan pilihan filter utama, Anda dapat melihat galeri materi iklan Anda, atau mengelompokkannya menjadi adegan dan elemen individual.
 
+<div id="set-discovery-card-metrics" />
+
+<div id="set-up-the-dashboard" />
+
+<div id="proceduresusing-the-discovery-ai-dashboard" />
+
 <div id="get-started" />
 
 ## Memulai
 
 Jika Anda belum mengonfigurasi Optimisasi Materi Iklan, Anda dapat menemukan instruksi tentang cara melakukannya <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-guide#memulai">di sini</Anchor>.
+
+<div id="traits-and-limitations" />
+
+<div id="discovery-card-drilldown" />
+
+<div id="texts" />
+
+<div id="coming-soon--smart-tags" />
+
+<div id="discovery-ai-search" />
+
+<div id="additional-information" />
+
+<div id="notes" />
+
+<div id="combining-properties" />
+
+<div id="narrative-and-high-level-concepts" />
+
+<div id="audio" />
+
+<div id="text" />
+
+<div id="visual" />
+
+<div id="what-you-can-search-for" />
 
 <div id="concepts" />
 

@@ -38,6 +38,16 @@ Langkah-langkah yang diperlukan untuk menyiapkan tautan dijelaskan secara rinci 
 * Deep linking dan pengaturan pengarahan
 * Pengaturan parameter tambahan
 
+<div id="url-id" />
+
+<div id="important" />
+
+<div id="note" />
+
+<div id="create-onelink-links-in-onelink-management" />
+
+<div id="create-onelink-links-from-your-ai-tool" />
+
 <div id="create-a-onelink-link" />
 
 ## Buat tautan OneLink
@@ -116,6 +126,8 @@ Pengaturan umum adalah bagian dari proses pembuatan tautan OneLink yang berlaku 
 6. [Opsional] Pada subbagian **Tautan merek** :
    * Pilih domain yang berbeda untuk mencerminkan merek Anda. <Anchor target="_blank" href="/marketers/id/docs/brand-onelink-with-your-domain">Pelajari lebih lanjut</Anchor>
    * Edit ID URL untuk menyoroti penawaran kampanye. Maksimal karakter ID URL adalah 50 karakter dan dapat berupa kombinasi huruf dan angka. Secara default, ini adalah 8 karakter.
+
+<div id="note-1" />
 
 <div id="enable-retargeting-for-the-app" />
 
@@ -233,6 +245,8 @@ Saat pengguna berinteraksi dengan tombol CTA di laman arahan:
 3. Posting URL pendek OneLink di aplikasi sosial.
 
 Atribusi ditentukan berdasarkan pada pengaturan atribusi Anda.
+
+<div id="note-3" />
 
 <div id="to-set-up-the-social-apps-landing-page" />
 
@@ -594,6 +608,18 @@ Solusi salin/rekat DDL laman arahan mewajibkan:
 </Accordion>
 
 </Accordion>
+
+<div id="xiaomi-browser" />
+
+<div id="telegram-webview" />
+
+<div id="chrome-browser-on-ios" />
+
+<div id="deep-linking-is-not-supported-on-android-naver-blog-app" />
+
+<div id="ad-networks" />
+
+<div id="maximum-links" />
 
 <div id="additional-information" />
 

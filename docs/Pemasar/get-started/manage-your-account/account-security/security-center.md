@@ -24,6 +24,20 @@ x-zendesk:
 ---
 > **Sekilas:** Tinjau dan kelola status semua fitur terkait keamanan akun AppsFlyer Anda dari satu lokasi.
 
+<div id="audit-log" />
+
+<div id="appsflyer-api-and-s2s-tokens" />
+
+<div id="enhanced-login-security" />
+
+<div id="api-allowlist" />
+
+<div id="list-of-authorized-agencies-for-ad-networks" />
+
+<div id="redirect-allowlist" />
+
+<div id="user-management" />
+
 <div id="what-can-i-do-from-the-security-center" />
 
 ## Apa yang dapat saya lakukan dari pusat Keamanan?

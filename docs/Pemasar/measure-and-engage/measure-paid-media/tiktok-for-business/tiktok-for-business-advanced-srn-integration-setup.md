@@ -55,6 +55,8 @@ Penyiapan dilakukan dari laman **Integrasi aktif** , tetapi untuk menemukan mitr
 
 Periode waktu konfigurasi mencakup tab berikut: Integrasi, Tautan Atribusi, Biaya, Pendapatan iklan, dan Izin. Tab **tautan Atribusi** tidak tersedia untuk TikTok untuk Bisnis, tab lainnya bersifat opsional.
 
+<div id="note-1" />
+
 > 📘 **Catatan**
 >
 > * Beberapa setelan berbeda untuk perangkat iOS dan Android
@@ -73,6 +75,10 @@ Tab **Integrasi** mencakup sejumlah bagian, seperti yang dijelaskan di bawah ini
 
 Untuk mengonfigurasi integrasi, Anda harus [mengaktifkan](#aktifkan-mitra) sakelar **Aktifkan mitra** terlebih dahulu. Pelajari lebih lanjut cara <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation#mengaktifkan-integrasi-mitra">mengaktifkan dan menonaktifkan integrasi mitra</Anchor> .
 
+<div id="advanced-matching-data-sharing" />
+
+<div id="note-2" />
+
 <div id="advanced-data-sharing" />
 
 #### Privasi Lanjutan
@@ -90,6 +96,8 @@ Hanya untuk aplikasi iOS: Kontrol Anda atas data yang dibagikan kepada mitra mel
 > * Saat mengaktifkan integrasi (`tiktokglobal_int`), sakelar **Privasi Lanjutan** diaktifkan secara default.
 > * Saat bermigrasi dari integrasi lama(`bytedanceglobal_int`) dan mengaktifkan integrasi baru (`tiktokglobal_int`), sakelar **Privasi Lanjutan** diaktifkan secara default, apa pun statusnya sebelum migrasi.
 > * Menurut TikTok untuk Bisnis, tetap **mengaktifkan** sakelar **Privasi Lanjutan** dapat menyebabkan event kampanye yang tidak dilaporkan dan membatasi peningkatan kinerja kampanye selanjutnya di TikTok
+
+<div id="note-3" />
 
 <div id="general-settings" />
 
@@ -112,6 +120,8 @@ Kode unik yang dihasilkan di Pengelola Iklan TikTok dan digunakan oleh TikTok un
 > * Saat bermigrasi ke integrasi baru (`tiktokglobal_int`), nilai apa pun dari integrasi lama (`bytedanceglobal_int`) diisi secara otomatis di kolom ini.
 > * <Anchor target="_blank" href="https://ads.tiktok.com/help/article?aid=10001070">Pelajari lebih banyak tentang persyaratan ID Aplikasi TikTok untuk iOS 14</Anchor>
 
+<div id="note-4" />
+
 <div id="default-postbacks" />
 
 #### Postback Default
@@ -127,6 +137,14 @@ Konfigurasikan cara mengirim postback untuk **penginstalan**, **penginstalan yan
 >
 > * Hanya untuk aplikasi iOS: Kontrol Anda atas data yang dibagikan dengan mitra melalui postback dan <Anchor target="_blank" href="/marketers/id/docs/about-raw-data-identifier-restrictions">laporan</Anchor> bergantung pada status sakelar **Privasi Lanjutan (untuk iOS 14.5+ dan yang lebih baru)** .
 > * Saat bermigrasi dari integrasi lama (`bytedanceglobal_int`) dan mengaktifkan integrasi baru (`tiktokglobal_int`), status penginstalan postback default yang dipilih adalah **Hanya mitra ini**, terlepas dari statusnya sebelum migrasi.
+
+<div id="note-7" />
+
+<div id="reinstall-attribution" />
+
+<div id="note-6" />
+
+<div id="note-5" />
 
 <div id="install-attribution" />
 
@@ -150,6 +168,14 @@ Tetapkan atribusi klik-tayang dan lihat-tayang untuk penginstalan (peluncuran pe
 >   * Kampanye dilaporkan sebagai "dibatasi"
 >     Data ini tidak tersedia di GCD.Laporan data gabungan terus menampilkan konversi lihat-tayang.
 > * Saat bermigrasi dari integrasi lama (`bytedanceglobal_int`) dan mengaktifkan integrasi baru (`tiktokglobal_int`), setelan jendela lookback (klik-tayang dan lihat-tayang) disetel ke **nilai default**, terlepas dari statusnya sebelum migrasi. Anda dapat memperbarui pengaturan ini.
+
+<div id="note-9" />
+
+<div id="ignore-active-users-for-retargeting" />
+
+<div id="warning" />
+
+<div id="note-8" />
 
 <div id="re-engagement-attribution" />
 
@@ -191,6 +217,10 @@ Konfigurasikan pemetaan in-app event dengan event TikTok untuk Bisnis, yang diki
    1. Dari pojok kiri atas, di bawah nama mitra, klik nama aplikasi untuk membuka daftar aplikasi.
    2. Pilih aplikasi lainnya dari daftar drop-down.
    3. Ulangi  langkah integrasi untuk aplikasi yang dipilih.
+
+<div id="note-11" />
+
+<div id="note-10" />
 
 > 📘 **Catatan**
 >
@@ -234,6 +264,12 @@ Integrasi ini memberikan data teragregasi untuk biaya, klik, dan tayangan untuk 
 
 6. Klik **Hemat Biaya**.
 
+<div id="web-to-app-measure-app-activity-for-non-app-campaigns" />
+
+<div id="access-tiktok-conversion-data-via-appsflyers-gcd-api-for-deep-linking" />
+
+<div id="deep-linking-with-tiktok-for-business" />
+
 <div id="for-roi360-subscribers" />
 
 #### Untuk pelanggan ROI360
@@ -275,6 +311,18 @@ Pelajari lebih banyak tentang <Anchor target="_blank" href="/marketers/id/docs/s
 ## Mengatur TikTok untuk Bisnis untuk agensi
 
 Agensi yang bekerja atas nama pemasang iklan dapat mengaktifkan integrasi TikTok untuk Bisnis dan mulai mendapatkan atribusi untuk kampanye mereka. Namun, integrasi ini memiliki beberapa keterbatasan jika menyangkut agensi.
+
+<div id="note-12" />
+
+<div id="how-smart-plus-data-is-reported-in-appsflyer" />
+
+<div id="how-smart-plus-campaigns-are-structured" />
+
+<div id="smart-plus-campaigns-reporting" />
+
+<div id="send-complex-in-app-events-to-tiktok" />
+
+<div id="important" />
 
 <div id="agency-limitations" />
 

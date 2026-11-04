@@ -64,6 +64,14 @@ Selanjutnya, kami mencantumkan proses pengaturan jendela lookback untuk SRN dan 
 <Tabs>
 <Tab title="Jendela Lookback SRN">
 
+<div id="h_01JKWVQB6TTA24VAZ9WVJMGY4X" />
+
+<div id="non-srn-attribution-lookback-window-for-engaged-click-through-and-engaged-view-through" />
+
+<div id="non-srn-attribution-lookback-window-for-click-through-and-view-through" />
+
+<div id="important" />
+
 <div id="attribution-lookback-window-for-srns" />
 
 ### Jendela lookback atribusi untuk SRN
@@ -107,6 +115,8 @@ Lihat di bawah setiap jendela lookback SRN:
 7. Pilih parameter yang sesuai dengan kampanye, yaitu nama kampanye, ad set, dll.
 8. Salin dan simpan tautan - ini adalah tautan yang Anda berikan ke jaringan iklan.
 
+<div id="tip" />
+
 > 👍 **Tips**
 >
 > * Ingin beberapa tips dan trik untuk konfigurasi jendela lookback? Lihat <Anchor target="_blank" href="https://elevate.appsflyer.com/learn/course/7768/play/18612/attribution-102-tips-and-tricks">kursus singkat dan informatif</Anchor> ini di Portal Pembelajaran AppsFlyer.
@@ -138,6 +148,8 @@ Grafik tersebut dapat memberikan gambaran yang lebih baik tentang jumlah penggun
 Mayoritas pengguna, sedikit di atas 97%, yang meluncurkan aplikasi melakukannya dalam waktu 7 hari setelah berinteraksi dengan iklan. 2% sisanya melakukannya dalam rentang antara hari ke-7 dan akhir jendela lookback (hari ke-30).
 
 Faktanya, hampir 62% pengguna yang meluncurkan aplikasi melakukannya dalam waktu 15 menit setelah berinteraksi dengan iklan. 72% pengguna melakukannya dalam satu jam pertama.
+
+<div id="tip-1" />
 
 <div id="scenarios-and-examples" />
 

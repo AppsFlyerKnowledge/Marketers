@@ -184,6 +184,8 @@ Untuk pengalaman pengguna, keamanan, dan jangkauan perangkat terbaik, kami merek
 
       <div id="h_01H9Q4E7VR4CAK0PJY269GQ9XJ" />
 
+      <div id="tip" />
+
       > 👍 **Tips**
       >
       > * Baik Apple maupun Google tidak memberlakukan penamaan unik untuk skema aplikasi. **Pilih nama skema yang unik untuk merek Anda** untuk menghindari skema yang saling bertentangan di berbagai aplikasi. Nama skema yang baik dapat berupa ID bundel aplikasi Anda,   misalnya,**com.company.app**
@@ -206,6 +208,10 @@ Untuk pengalaman pengguna, keamanan, dan jangkauan perangkat terbaik, kami merek
    </Tabs>
 
 5. Klik **Update OneLink template** (Perbarui templat OneLink).
+
+<div id="h_favicon" />
+
+<div id="note-2" />
 
 <div id="note-1" />
 

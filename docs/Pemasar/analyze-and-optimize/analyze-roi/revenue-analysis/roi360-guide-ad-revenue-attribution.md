@@ -62,6 +62,10 @@ Atribusi pendapatan iklan mendukung berbagai metode perincian. Perinciannya berg
 
 </Accordion>
 
+<div id="note-1" />
+
+<div id="note" />
+
 <div id="implementation" />
 
 ## Implementasi
@@ -157,6 +161,8 @@ Perincian agregat untuk pendapatan iklan berfungsi sebagai berikut:
 | --- | --- | --- |
 | Monetisasi unik dari in-app event | <ul><li>In-app event diatur pada saat iklan ditampilkan</li><li>Ini memberikan jumlah tindakan pengguna yang berbeda yang memungkinkan perhitungan eRPA yang unggul</li><li>Ini dapat disempurnakan lebih lanjut dengan memiliki in-app event yang berbeda untuk setiap jaringan monetisasi, sehingga memungkinkan Anda untuk membagi pendapatan dengan jaringan monetisasi<br />Lihat tabel berikut untuk pembahasan lengkapnya.</li></ul> | <ul><li>Mengharuskan pengembang untuk memodifikasi aplikasi</li><li>Pendapatan dapat diperinci berdasarkan jaringan monetisasi di Dashboard</li></ul> |
 | af\_app\_opened event | <ul><li>Event af\_app\_opened dikirim oleh SDK Appsflyer secara default</li><li>Ini dipicu oleh setiap sesi pengguna</li></ul> | <ul><li>Tidak diperlukan modifikasi aplikasi</li><li>Cepat diimplementasikan</li><li>Nilai eRPA terdistorsi secara signifikan kecuali jika Anda hanya menampilkan satu aplikasi per sesi</li><li>Tidak ada perincian pendapatan berdasarkan jaringan monetisasi</li><li>Acara terkait dengan semua pengguna yang meluncurkan aplikasi dan Anda tidak memiliki indikasi kesediaan pengguna untuk menonton iklan</li></ul> |
+
+<div id="note-2" />
 
 <div id="comparison-of-in-app-event-methods" />
 
@@ -323,6 +329,30 @@ Bidang dalam laporan pendapatan iklan diisi:
   * **Konteks:** Bidang yang memiliki arti serupa dalam laporan data lengkap lainnya. Misalnya, nama acara, nilai acara, mata uang.
 * Sebagai hasil dari mengatribusikan event tersebut ke sumber media yang menghadirkan pengguna. Artinya bidang ini disalin dari event konversi yang membawa pengguna. Misalnya, sumber media dan kampanye. Bidang ini tidak tercantum dalam tabel berikut.
 
+<div id="customer_user_id" />
+
+<div id="mediation_network" />
+
+<div id="impressions" />
+
+<div id="monetization_network" />
+
+<div id="segment" />
+
+<div id="ad_unit" />
+
+<div id="country" />
+
+<div id="event_revenue_xxx" />
+
+<div id="event_revenue_currency" />
+
+<div id="event_revenue" />
+
+<div id="event_name" />
+
+<div id="event_time" />
+
 <div id="fields-populated-by-ad-revenue" />
 
 #### Bidang yang diisi oleh pendapatan iklan
@@ -340,6 +370,8 @@ Bidang dalam laporan pendapatan iklan diisi:
 | monetization\_network | Jaringan Monetisasi | Spesifik | Jaringan mengirimkan iklan |
 | Tayangan | Tayangan | Spesifik | Berapa kali pengguna melihat iklan |
 | mediation\_network | Jaringan Mediasi | Spesifik | Jaringan mediasi melaporkan event tersebut ke AppsFlyer |
+
+<div id="h_01KRKHJN2G5SER73D3EZB14GDS" />
 
 <div id="fields-by-network" />
 
