@@ -87,10 +87,10 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 1. 在面板的右上角，单击 **+ 创建新微件**并选择您想要创建的微件类型：表格、KPI、图表、应用内事件表、应用内事件标、文本或自定义指标。  
    **请注意：应用内事件图表可快速显示头部事件和用户行为。**
 
-   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445429021073)
+   <Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />
 
    * 如果您选择图表，当图表打开时，您还可以选择图表的类型：折线图、条形图、柱状图、甜甜圈图、堆叠区域图或组合图（折线图和柱状图的混合）。  
-     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33733674242449)
+     <Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />
    * 文本微件的特性在于，它能够帮助您为面板各部分添加标题，分享使用指南、知识、洞察、目标或使用说明，帮助团队成员更好地理解内容，从而将面板打造成为清晰、便于使用的报告。
    * **事件插件**允许您按事件名称进行分组，以并排比较 LTV 和实际（活动）时段内不同来源、地理位置和其他维度的活动、收入和参与度。使用事件小工具查看哪些应用内事件带来了最独特的用户和收入，按媒体来源衡量收入趋势，并通过多达 4 个分组级别深入了解事件表现。
 2. [可选] 输入您的微件名称。

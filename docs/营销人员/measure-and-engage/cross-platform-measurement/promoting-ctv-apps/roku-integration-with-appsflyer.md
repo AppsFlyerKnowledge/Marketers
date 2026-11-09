@@ -37,7 +37,7 @@ Roku是一个独特的广告平台，其广告资源覆盖连接电视（CTV）�
 
 ### Roku归因流程
 
-[<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39815161656977)
+<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />
 
 <div id="setting-up-roku-ads-integration-for-advertisers" />
 

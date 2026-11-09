@@ -579,7 +579,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 初始的**投放指标**视图会呈现各人群包的投放数据摘要：
 
-[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />
 
 | 表头 | 描述 |
 | --- | --- |
@@ -595,7 +595,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 详情视图会显示按适用渠道和广告系列进行细分的数据。
 
-[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />](https://support.appsflyer.com/hc/article_attachments/30259018290321)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />
 
 如果您选定的人群包被用于多个应用的定向推广，请使用下拉菜单![pin_A.png](https://support.appsflyer.com/hc/article_attachments/30259018295697)按应用筛选数据。
 

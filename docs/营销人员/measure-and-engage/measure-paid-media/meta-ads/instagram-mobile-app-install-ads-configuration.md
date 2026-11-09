@@ -43,7 +43,7 @@ Meta documentation can be found <Anchor target="_blank" href="https://developers
    <Image align="center" alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Configure Meta ads under the Active Integrations Configuration by adding your Facebook App ID.
 4. If you do not have a Facebook App ID, create one <Anchor target="_blank" href="https://developers.facebook.com/apps">here</Anchor>.  
-   [<Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/51165506352913)
+   <Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />
 
 ## Instagram landing page for deep linking
 

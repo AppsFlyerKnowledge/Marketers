@@ -716,7 +716,7 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 * 点击右上角的 3 点（操作）菜单，然后选择 **DCR key**。
 
-[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50255899579281)
+<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 创建 DCR 密钥文件夹后，您的存储桶/文件夹结构大致如下：
 
