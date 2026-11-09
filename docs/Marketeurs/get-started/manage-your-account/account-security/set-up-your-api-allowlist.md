@@ -29,8 +29,6 @@ x-zendesk:
 ---
 > **En bref :** Protégez votre compte AppsFlyer en définissant une liste d'autorisations API.
 
-<div id="" />
-
 ## [altListe d'autorisations APIalt](https://support.appsflyer.com/hc/article_attachments/4423224122385)
 
 <div id="overview" />

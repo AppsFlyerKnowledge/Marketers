@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En bref :** Suivez les instructions d'intégration dans cet article pour mettre en place ROI360 afin d'obtenir des données sur les coûts et les revenus opérationnels.
 
-## ![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
+<Image align="center" alt="" src="https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png" />
 
 <div id="about-roi360" />
 
