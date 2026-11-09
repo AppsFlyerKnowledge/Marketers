@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要**：本文介绍了如何使用AppsFlyer的受众共享（Audiences）功能创建人群包，并将其连接到渠道平台用于投放，从而充分提升拉新和再营销广告的投放效率。
 
-## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
+<Image align="center" alt="53010_Audiences.jpg" src="https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg" />
 
 <div id="about-audiences" />
 

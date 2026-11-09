@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要**：您可以利用OneLink的多种强大功能，为用户打造定制化的跳转体验，实现深度链接，并对您的广告进行跨设备、跨平台、跨流量入口、跨操作系统的归因，充分提升转化和收入。
 
-## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
+<Image align="center" alt="53010_Onelink.jpg" src="https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg" />
 
 <div id="about-onelink" />
 

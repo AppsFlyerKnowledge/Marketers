@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **At a glance:** Set up an integration with Movable Ink to create unique AI-powered user journeys in your marketing campaigns and in-app content.
 
-## ![53374 Movable Ink KB image.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
+<Image align="center" alt="53374 Movable Ink KB image.png" src="https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png" />
 
 ## About the integration
 

@@ -151,7 +151,7 @@ AppsFlyer正在以移动端的衡量标准对网页端衡量能力进行更新�
 | **`original_url`** | 归因访问中的重定向URL | 已更名 | 已合并至`event_url`（在访问记录中，`event_url`与原始URL相同）。不再提供单独的列。 |
 | **`platform`** | 平台（「macOS」「Windows」） | 已重新定义 | 平台固定为「WEBSITE」。操作系统信息已移至`os_version`/`user_agent`。 |
 | **`postal_code`** | 根据IP地址识别 | 未变更 | `postal_code`。 |
-| **`query_params` **| 重定向URL中的查询参数，以JSON格式记录 | 已弃用 |** 原始查询字符串保存在`event_url`中，不再提供解析后的JSON列。** |
+| <strong>`query_params` </strong>| 重定向URL中的查询参数，以JSON格式记录 | 已弃用 |<strong> 原始查询字符串保存在`event_url`中，不再提供解析后的JSON列。</strong> |
 | **`referrer`** | 归因网站访问的HTTP Referrer | 已更名 | `http_referrer`。 |
 | **`region`** | 根据IP地址识别（「NA」） | 已更名 | `continent`，即大洲代码，例如「NA」。 |
 | **`state`** | 根据IP地址识别 | 未变更 | `state`。 |
@@ -279,12 +279,12 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 |  | PBA Web-S2S | 新版S2S API |
 | --- | --- | --- |
 | 基础URL | `https://webs2s.appsflyer.com` | `https://events.appsflyer.com` |
-| 事件调用 | **`POST /v1/{bundleId}/event` **|** `POST /v2.0/s2s/inapps/app/web/{appId}`** |
+| 事件调用 | <strong>`POST /v1/{bundleId}/event` </strong>|<strong> `POST /v2.0/s2s/inapps/app/web/{appId}`</strong> |
 | 访问调用 | 不支持（访问数据只能通过网页端SDK传入） | **`POST /v2.0/s2s/visits/app/web/{appId}`** |
 | 身份关联调用 | `POST /v1/{bundleId}/setcuid`（用于将CUID与网页端用户关联的单独调用） | 无需单独调用。身份信息通过每个事件或访问的`user_id`对象直接传入。 |
 | 应用标识符 | 路径中的`bundleId`（品牌组合ID） | 路径中的`appId`=网页端`unified_app_id`(「website-`{domain}`」) |
 | 身份验证 | 每次调用时，在JSON正文中传入`webDevKey` | 在Authorization请求头中传入S2S API密钥 |
-| 内容类型 | **`application/json` **|** `application/json`** |
+| 内容类型 | <strong>`application/json` </strong>|<strong> `application/json`</strong> |
 | 成功响应 | 200 OK | 202 Accepted |
 
 </Accordion>
@@ -295,18 +295,18 @@ Scan the codebase for any filter, CASE, join key, or dashboard grouping keyed on
 
 | PBA Web-S2S字段 | 新版S2S字段 | 备注 |
 | --- | --- | --- |
-| **`customerUserId` **|** `user_id.customer_user_id`** | 现已嵌套在`user_id`对象中。 |
-| **`afUserId` **|** `user_id.appsflyer_id`** | 现已嵌套在`user_id`对象中。至少传入`customer_user_id`或`appsflyer_id`中的一个；识别出用户身份后，请同时传入两个字段。 |
+| <strong>`customerUserId` </strong>|<strong> `user_id.customer_user_id`</strong> | 现已嵌套在`user_id`对象中。 |
+| <strong>`afUserId` </strong>|<strong> `user_id.appsflyer_id`</strong> | 现已嵌套在`user_id`对象中。至少传入`customer_user_id`或`appsflyer_id`中的一个；识别出用户身份后，请同时传入两个字段。 |
 | **`webDevKey`** | — | 已从请求正文中移除。身份验证已移至Authorization请求头，应用则通过路径中的`appId`进行识别。 |
 | `eventType`（固定为EVENT） | — | 已移除。类型由端点（/inapps或/visits）决定。 |
-| **`eventName` **|** `event_name`** | 长度为1-64个字符，不能包含`@ = + -`。 |
+| <strong>`eventName` </strong>|<strong> `event_name`</strong> | 长度为1-64个字符，不能包含`@ = + -`。 |
 | `timestamp`（Unix毫秒时间戳，13位） | `timestamp`（Unix毫秒时间戳） | 格式不变。建议每次调用时均传入；如果未传入，AppsFlyer将使用收到数据的时间。 |
-| **`eventValue` **|** `event_value`** | 支持自由格式，并可包含`custom_parameters`子对象。 |
-| **`eventRevenue` **|** `event_revenue`** | 现为可选字段（PBA要求必须传入，才能在面板中显示）。 |
-| **`eventRevenueCurrency` **|** `event_revenue_currency`** | 现为可选字段（PBA要求必须传入，才能在面板中显示）。 |
-| **`referrer` **|** `http_referrer`** | 已重命名。 |
-| **`userAgent` **|** `user_agent`** | 已重命名。 |
-| **`ip` **|** `ip`** | 未更改。 |
+| <strong>`eventValue` </strong>|<strong> `event_value`</strong> | 支持自由格式，并可包含`custom_parameters`子对象。 |
+| <strong>`eventRevenue` </strong>|<strong> `event_revenue`</strong> | 现为可选字段（PBA要求必须传入，才能在面板中显示）。 |
+| <strong>`eventRevenueCurrency` </strong>|<strong> `event_revenue_currency`</strong> | 现为可选字段（PBA要求必须传入，才能在面板中显示）。 |
+| <strong>`referrer` </strong>|<strong> `http_referrer`</strong> | 已重命名。 |
+| <strong>`userAgent` </strong>|<strong> `user_agent`</strong> | 已重命名。 |
+| <strong>`ip` </strong>|<strong> `ip`</strong> | 未更改。 |
 | — | **`event_url`** | 新增字段。访问调用必填，事件调用可选。 |
 | — | **`customer_dedup_id`** | 新增字段。用于对来自其他来源（例如网页端SDK）的同一事件进行去重。 |
 | — | `email_hashed` `phone_number_hashed` `phone_number_e164_hashed` `first_name_hashed` `last_name_hashed` | 新增字段。**对标准化后的值进行SHA256哈希处理（64位小写十六进制），用于补充身份信息。** |
@@ -424,7 +424,7 @@ Present this inventory to me and wait for my confirmation before proceeding.
 
 | 触发条件 | PBA值 | 新值 |
 | --- | --- | --- |
-| Google展示广告/视频广告（utm\_source=Google+utm\_medium=cpm/display/banner/video/listing） | **`doubleclick_int` **|** `dv360_int`** |
+| Google展示广告/视频广告（utm\_source=Google+utm\_medium=cpm/display/banner/video/listing） | <strong>`doubleclick_int` </strong>|<strong> `dv360_int`</strong> |
 | 通过UTM识别的Twitter（twitter+cpc） | X Ads | Twitter |
 
 网页端效果衡量还会将更多PID值映射为对应的显示名称，例如将`iossearchads_int`映射为Apple Search Ads、`metweb_int`映射为Facebook Ads、`twitterweb_int`映射为Twitter、`tiktokweb_int`映射为`tiktokglobal_int`、`snapweb_int`映射为`snapchat_int`。基于旧版原始值构建的报告需要调整，以适配新的字段值。
