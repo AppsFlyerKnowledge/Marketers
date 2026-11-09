@@ -589,7 +589,7 @@ A seção **Métricas da campanha** no dashboard do Audiences exibe dados de cam
 
 A visualização inicial das **Métricas da campanha** exibe dados resumidos da campanha para cada audiência:
 
-[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30626498333457)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />
 
 | Coluna | Descrição |
 | --- | --- |
@@ -605,7 +605,7 @@ Na visualização resumida, clique no ícone <Image alt="show_detailed_view_icon
 
 A visualização detalhada exibe dados detalhados por parceiros e campanhas compatíveis:
 
-[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />](https://support.appsflyer.com/hc/article_attachments/30626490281617)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />
 
 Se a audiência selecionada foi usada para direcionar mais de um aplicativo, use a lista suspensa ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) para filtrar os dados por aplicativo.
 

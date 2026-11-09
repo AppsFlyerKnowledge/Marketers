@@ -45,7 +45,7 @@ Você pode conferir a documentação da Meta <Anchor target="_blank" href="https
    <Image align="center" alt="atribuir-anuncio-inst-ao-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Configure o Meta Ads em “Integrações ativas” ao adicionar seu App ID do Facebook.
 4. Se você não tiver um App ID do Facebook, crie um <Anchor target="_blank" href="https://developers.facebook.com/apps">aqui</Anchor>.  
-   [<Image align="center" alt="id_app_facebook.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/49722356592913)
+   <Image align="center" alt="id_app_facebook.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />
 
 <div id="instagram-landing-page-for-deep-linking" />
 

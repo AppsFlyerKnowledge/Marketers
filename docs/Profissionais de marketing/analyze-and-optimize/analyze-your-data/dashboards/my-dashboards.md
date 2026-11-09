@@ -87,10 +87,10 @@ A interface do My Dashboards foi feita para a construção interativa de dashboa
 1. No canto superior direito do dashboard, clique em **+ Criar novo** e selecione o tipo de widget que deseja criar: tabela, KPI, gráfico, tabela de eventos in-app, gráfico de eventos in-app, widgets de evento, texto ou métrica personalizada.  
    **Atenção:** Tanto a tabela quanto o gráfico de eventos in-app mostram os [principais eventos e o comportamento dos usuários](/docs/my-dashboards#traits-and-limitations).
 
-   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445412931601)
+   <Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />
 
    * Se você escolher visualizar seus dados em um gráfico, quando ele abrir, você também escolhe o tipo de gráfico: linha, barra, coluna, donut ou combo (uma mistura de linha e coluna).  
-     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33651303262737)
+     <Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />
    * O widget de texto é um recurso exclusivo, pois ele permite que você adicione títulos para seções do dashboard, compartilhe diretrizes, conhecimentos, insights, metas ou orientações de uso com outros membros da equipe, ajudando a transformar seus dashboards em relatórios autoexplicativos.
    * Com os **widgets de eventos**, você pode agrupar por nome para comparar ações, receita e engajamento entre fontes, geolocalização e dimensões adicionais, considerando tanto o período de LTV quanto o real (dashboard de atividade). Use os widgets para ver quais eventos in-app geram receita e usuários exclusivos, mensure as tendências de receita por fonte de mídia e aprofunde a performance dos eventos com até quatro níveis de agrupamento.
 2. [Opcional] Insira um nome para seu widget.
@@ -491,7 +491,7 @@ Para visualizar seu dashboard de analytics:
 3. Se a visualização do dashboard que você deseja não estiver na lista, na parte superior do dashboard que está sendo exibido, selecione o que você deseja visualizar no menu suspenso.  
    <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. Selecione os aplicativos, tipo de visualização, datas de atribuição e filtros de exibição.  
-   [<Image align="center" alt="image__9_.png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445412943633)
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />
 
 </Accordion>
 

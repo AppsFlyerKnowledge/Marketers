@@ -713,7 +713,7 @@ A pasta de chaves DCR geralmente é criada manualmente usando a interface de seu
 
 * Clique no menu de 3 pontos (ações) no canto superior direito e selecione **chave DCR**.
 
-[<Image align="center" alt="Chave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49929203409169)
+<Image align="center" alt="Chave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 Após criar a pasta de chaves DCR, sua estrutura de bucket/pasta deve ficar assim:
 

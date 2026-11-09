@@ -184,7 +184,7 @@ Há 2 tipos de tendência de cohort:
 
 Nesse exemplo, os mesmos dados brutos são usados para gerar os dois tipos de tendência de coorte. A tabela de dados brutos contém eventos de atribuição relacionados a diferentes usuários A, B, C e D. Os usuários engajam com um anúncio, instalam o aplicativo e, após a conversão, fazem uma ou mais compras. O dia de coorte 0 é o dia da instalação.
 
-[<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49929174392337)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />
 
 </Accordion>
 

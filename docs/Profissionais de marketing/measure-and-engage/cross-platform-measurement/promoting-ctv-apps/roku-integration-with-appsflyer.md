@@ -37,7 +37,7 @@ A Roku é uma ad network única que possui um inventário de anúncios disponív
 
 ### Fluxo de atribuição da Roku
 
-[<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39539297351697)
+<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />
 
 <div id="setting-up-roku-ads-integration-for-advertisers" />
 
